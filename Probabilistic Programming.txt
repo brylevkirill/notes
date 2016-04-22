@@ -1,0 +1,224 @@
+"Probabilistic programming is a mechanism for compactly and compositionally representing a large set of richly expressive generative models, which are widely used in machine learning and current artificial intelligence research and applications, as well as performing general-purpose automatic algorithms to make inference in such models. Specifically, Turing-complete, higher-order probabilistic programming systems open up the possibility of doing inference over generative models themselves. The goal is to find an efficient, robust way to automatically produce and tune models based on training data and knowledge."
+
+"In the context of Turing-complete, higher-order probabilistic programming languages, a probabilistic program is simultaneously a generative model and a procedure for sampling from the same. All probabilistic programming procedures are program text that describe how to generate a sample value conditioned on the value of arguments. A probabilistic programming procedure is a constructivist description of a conditional distribution."
+
+"In probabilistic programming language the meaning of the program is the distribution it samples from."
+"From an AI perspective, probabilistic programs are an extremely general representation of knowledge, and one that identifies uncertainty with stochastic computation."
+"It's a way of doing machine learning without writing algorithms."
+"You write a simulator of the world, which is a probabilistic program, and environment takes that program and runs it backwards."
+"It's less coding, which allows rapid prototyping, makes it much faster to develop machine learning systems, is easier to debug - there are tons of advantages.”
+
+"Probabilistic programming systems represent generative models as programs in a language that has specialized syntax for definition and conditioning of random variables. A backend provides one or more general-purpose inference methods for any program in this language, resulting in an abstraction boundary between model and inference algorithm design. Models specified as programs are often concise, modular, and easy to modify or extend. This allows definition of structured priors that are specifically tailored to an application domain in a manner that is efficient in terms of the dimensionality of its latent variables, albeit at the expense of performing inference with generic methods that may not take advantage of model-specific optimizations."
+
+
+
+
+selected papers and books - https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
+
+probabilistic machine learning -
+	https://dropbox.com/s/m1hv2o5k9u12m20/Probabilistic%20Machine%20Learning.txt
+	https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
+
+
+
+
+[overview]
+
+  https://plus.google.com/+BeauCronin/posts/KpeRdJKR6Z1
+  http://americanscientist.org/libraries/documents/20158411291411312-2015-09Hayes.pdf
+  http://intelligence.org/2014/09/04/daniel-roy/
+
+  http://pl-enthusiast.net/2014/09/08/probabilistic-programming/
+
+  http://youtube.com/watch?v=ZHERrzVDTiU  (in russian)
+
+  http://habrahabr.ru/post/244625/  (in russian)
+  http://habrahabr.ru/post/242993/  (in russian)
+
+  https://moalquraishi.wordpress.com/2015/03/29/the-state-of-probabilistic-programming/
+
+  overview by Vikash Mansinghka - https://youtube.com/watch?v=-8QMqSWU76Q
+
+  tutorial by Frank Wood -
+	http://research.microsoft.com/apps/video/dl.aspx?id=259568
+	https://youtube.com/watch?v=6Lqt07enBGs + https://youtube.com/watch?v=DY5yuBNEuQs
+
+  Cam Davidson-Pilon - "Probabilistic Programming and Bayesian Methods for Hackers" -
+	http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/
+
+  Guy Van den Broeck - "Scalable Inference and Learning for High-Level Probabilistic Models" -
+	http://youtube.com/watch?v=EYzwMH-Y62o
+
+
+  http://probabilistic-programming.org
+
+  Goodman, Stuhlmuller - "The Design and Implementation of Probabilistic Programming Languages" - http://dippl.org
+
+
+
+
+[applications in cognitive science]
+
+  Goodman, Tenenbaum, Gerstenberg - "Concepts in a Probabilistic Language of Thought"
+	https://web.stanford.edu/~ngoodman/papers/ConceptsChapter-final.pdf
+
+	"Knowledge organizes our understanding of the world, determining what we expect given what we have already seen. Our predictive representations have two key properties: they are productive, and they are graded. Productive generalization is possible because our knowledge decomposes into concepts - elements of knowledge that are combined and recombined to describe particular situations. Gradedness is the observable effect of accounting for uncertainty - our knowledge encodes degrees of belief that lead to graded probabilistic predictions. To put this a different way, concepts form a combinatorial system that enables description of many different situations; each such situation specifies a distribution over what we expect to see in the world, given what we have seen. We may think of this system as a probabilistic language of thought in which representations are built from language-like composition of concepts and the content of those representations is a probability distribution on world states."
+	"Probabilistic language of thought hypothesis (informal version): Concepts have a language-like compositionality and encode probabilistic knowledge. These features allow them to be extended productively to new situations and support flexible reasoning and learning by probabilistic inference."
+
+  Noah Goodman - "Probabilistic Programs: A New Language for AI"
+	http://youtube.com/watch?v=fclvsoaUI-U
+
+	"How can logical and probabilistic approaches to understanding intelligence be reconciled? I will argue that probabilistic programming is the best way to merge logic and probability, providing a new set of tools for thinking about representation and inference in systems with human-like intelligence. I will illustrate these ideas by introducing the probabilistic programming language Church (a stochastic LISP), describing two universal inference algorithms (i.e. algorithms that can perform probabilistic inference for any Church program), and giving a series of examples. These examples, drawn from cognitive science and AI, will include multi-agent reasoning and concept learning."
+
+  Tenenbaum, Kemp, Griffiths, Goodman - "How to Grow a Mind: Statistics, Structure, and Abstraction"
+	http://videolectures.net/aaai2012_tenenbaum_grow_mind/
+	http://videolectures.net/nips2010_tenenbaum_hgm/
+	http://web.mit.edu/cocosci/Papers/tkgg-science11-reprint.pdf
+
+  Tenenbaum - "The Origins of Common Sense: Modeling human intelligence with Probabilistic Programs and Program Induction"
+	http://research.microsoft.com/apps/video/default.aspx?id=229021&l=i
+
+  Goodman, Tenenbaum - "Probabilistic Models of Cognition" - https://probmods.org
+
+  Andreas Stuhlmueller - "Modeling Cognition with Probabilistic Programs: Representations and Algorithms" (PhD thesis) - https://stuhlmueller.org/papers/stuhlmueller-phdthesis.pdf
+
+  Brenden Lake - "Towards more human-like concept learning in machines: compositionality, causality, and learning-to-learn" (PhD thesis) - http://cims.nyu.edu/~brenden/LakePhDThesis.pdf
+
+
+
+
+[applications]
+
+  Microsoft Office 365 (using Infer.NET) - https://cambridgenetwork.co.uk/news/email-clutter-machine-learning-probabilistic-programming/
+  Microsoft Excel plugin (using Infer.NET) - http://research.microsoft.com/en-us/projects/tabular/
+
+  graphics in reverse - http://newsoffice.mit.edu/2015/better-probabilistic-programming-0413
+
+  http://blogs.microsoft.com/next/2015/07/10/the-next-evolution-of-machine-learning-machine-teaching/
+
+
+
+
+[projects]
+
+  Forest - "a repository for generative models" - http://forestdb.org
+
+  Stan - http://dustintran.com/talks/post_advi.pdf
+	https://youtube.com/watch?v=6NXRCtWQNMg
+
+  PyMC3
+
+  Infer.NET and Csoft language (by Microsoft Research lead by Chris Bishop) - http://research.microsoft.com/infernet
+
+  FACTORIE (by UMass lead by Andrew McCallum) - http://factorie.cs.umass.edu
+	https://youtube.com/watch?v=MEhN9K36BfQ + http://youtube.com/watch?v=DkRLTToCw-0
+
+  Wolfe (by UMass lead by Sebastien Riedel) - http://wolfe.ml
+	"Aimed at simplifying the process of developing rich machine learning applications. Acknowledges that at the heart of most machine learning applications are two concepts: mathematical models that assign probabilities or scores to hypotheses (or possible worlds), and mathematical operators that interact with these models, most prominently maximization and summation."
+
+  Church (by Stanford Computation & Cognition Lab lead by Noah Goodman) - http://cocolab.stanford.edu/publications.html
+	"Any computable distribution can be represented by a Church expression. Mental representations (concepts) are functions in a stochastic lambda calculus."
+
+  BLOG (by UC Berkeley lead by Stuart Russel) - http://bayesianlogic.github.io
+
+  Venture
+	BayesDB - http://probcomp.csail.mit.edu/bayesdb/
+	Richard Tibbetts - https://youtube.com/watch?v=7_m7JCLKmTY
+
+  Picture (by MIT lead by Josh Tenenbaum) - http://mrkulk.github.io/www_cvpr15/
+	"A Probabilistic Programming Language for Scene Perception"
+
+  BUGS
+
+  Figaro
+	https://www.cra.com/work/case-studies/figaro
+	https://www.cra.com/sites/default/files/pdf/Figaro_Tutorial.pdf
+
+  Hakaru
+
+
+
+
+[higher-order probabilistic programming]
+
+One of the key characteristics of higher-order probabilistic programming languages equiped with eval is that program text both can be generated and evaluated. In higher-order languages (Lisp, Scheme, Church, Anglican and Venture) functions are first class objects - evaluating program text that defines a valid procedure returns a procedure that can be applied to arguments. The means that, among other things, program text can be programmatically generated by a program and then evaluated. In a probabilistic programming context this means that we can do inference about the program text that gave rise to an observed output or output relationship. In short, we can get computers to program themselves.
+
+"Performing Inference in the Spapce of Expressioans via Probabilistic Programming" by Frank Wood - http://www.robots.ox.ac.uk/~fwood/anglican/teaching/mlss2014/arithmetic_expression/questions.pdf
+	"In the following we set up what is essentially a regression problem and ask the computer to find a solution in the space of arithmetic expressions that could give rise to the observed relationship. Note very carefully that this approach stands in sharp contrast to picking a function family and looking for a parameterization of a member of this family that is optimal with respect to some cost function and observed input output values. The following program generates simple arithmetic expression code using a probabilistic context-fee grammar generative model (productions) and then evaluates those expressions on known input values and compares the output to known outputs. It then predicts both the procedure text and the value of the procedure applied to a new argument."
+
+"Learning Probabilistic Programs" by Yura Perov and Frank Wood - http://arxiv.org/abs/1407.2646
+
+
+
+
+[interesting quotes]
+
+  () "A probabilistic programming language provides syntax to instantiate random variables, as well as syntax to impose conditions on these random variables. The goal of inference in a probabilistic program is to characterize the distribution on its random variables, subject to the imposed conditions. When conditions define hard constraints (such as a=10, or a>5, for some variable a), execution of a probabilistic program can be interpreted as rejection sampling. Expectation values can, in principle, be calculated by repeatedly running the program and excluding executions that violate one or more conditions. In practice, the language design often implicitly or explicitly guarantees that conditions can be satisfied with a computable non-zero probability in any execution. Probabilistic programs in such languages can be seen as importance samplers; repeated execution yields samples from a prior, which are assigned an importance weight according to the probability that its conditions are satisfied. From a modeling point of view, a probabilistic program P defines a probability distribution. In a language that provides if-statements, recursion, higher-order functions, and primitive operations such as matrix inversion, this distribution can have an almost arbitrary structure. This means that from an inference point of view, a program P is a sequence of opaque deterministic operations that is interrupted by (1) sample statements, which require generation of a value for a random variable and (2) conditioning statements, which change the importance weight of the execution history."
+
+  (Andreas Stuhlmueller) "Probabilistic programs express generative models, i.e., formal descriptions of processes that generate data. To the extent that we can mirror mechanisms “out there in the world” in a formal language, we can pose queries within this language and expect the answer to line up with what happens in the real world. For example, if we can accurately describe how genes give rise to proteins, this helps us in predicting which genetic changes lead to desirable results and which lead to harm.
+  Traditionally, Bayesian networks have been used to formalize and reason about such processes. While extremely useful, this formalism is limited in its expressive power compared to programming languages in general. Probabilistic programming languages like Church provide a substrate for computational modeling that brings together Bayesian statistics and Turing-complete programming languages.
+  What is the structure of thought? The language of thought hypothesis proposes that thoughts are expressions in a mental language, and that thinking consists of syntactic manipulation of these expressions. The probabilistic language of thought hypothesis suggests that these representations have probabilistic meaning. If we treat concepts as stochastic programs and thinking as approximate Bayesian inference, can we predict human behavior in experimental settings better than using other approaches, e.g., prototype theory? If we learn more about the primitives and composition mechanisms used in the brain to represent abstract concepts, can this inform how we construct tools for reasoning?"
+
+  (Joshua Tenenbaum) "If our goal is to build knowledge representations sufficient for human-level AI, it is natural to draw inspiration from the content and form of knowledge representations in human minds. Cognitive science has made significant relevant progress in the last several decades, and I will talk about several lessons AI researchers might take from it. First, rather than beginning by trying to extract common-sense knowledge from language, we should begin (as humans do) by capturing in computational terms the core of common sense that exists in prelinguistic infants, roughly 12 months and younger. This is knowledge about physical objects, intentional agents, and their causal interactions -- an intuitive physics with concepts analogous to force, mass and the dynamics of motion, and an intuitive psychology with concepts analogous to beliefs, desires and intentions, or probabilistic expectations, utilities and plans -- which is grounded in perception but has at its heart powerful abstractions that can extend far beyond our direct perceptual experience. Second, we should explore approaches for linguistic meaning, language understanding and language-based common-sense reasoning that build naturally on top of this common-sense core. Both of these considerations strongly favor an approach to knowledge representation based on probabilistic programs, a framework that combines the assets of traditional probabilistic (though not neural) and symbolic approaches."
+
+  (Pedro Domingos) "Probabilistic graphical models provide a formal lingua franca for modeling and a common target for efficient inference algorithms. However, many of the most innovative and useful probabilistic models published by the AI, machine learning, and statistics community far outstrip the representational capacity of graphical models and associated inference techniques. Models are communicated using a mix of natural language, pseudo code, and mathematical formulae and solved using special purpose, one-off inference methods. Rather than precise specifications suitable for automatic inference, graphical models typically serve as coarse, high-level descriptions, eliding critical aspects such as fine-grained independence, abstraction and recursion.
+  Probabilistic programming languages aim to close this representational gap, unifying general purpose programming with probabilistic modeling; literally, users specify a probabilistic model in its entirety (e.g., by writing code that generates a sample from the joint distribution) and inference follows automatically given the specification. These languages provide the full power of modern programming languages for describing complex distributions, and can enable reuse of libraries of models, support interactive modeling and formal verification, and provide a much-needed abstraction barrier to foster generic, efficient inference in universal model classes."
+
+  "PyMC is an example of a probabilistic programming system. So are other "real-world" Bayesian modeling tools like BUGS, Stan, etc. There's a spectrum of probabilistic programming tools, from those like PyMC, BUGS, Stan, Infer.NET that allow you to describe (somewhat restricted) classes of graphical models and do efficient inference in them, to more ambitious tools that allow description of more sophisticated probability models (mixing discrete and continuous variables, potentially with unknown numbers of objects, potentially even defined recursively to include variables representing the results of inference on submodels, etc.) but can't necessarily do efficient inference for many of the models they can describe. The latter category is where most of the research effort is going, but it's certainly still an active research field, meaning that most of the tools (Venture, BLOG, Figaro, etc.) still don't work that well in practice and AFAIK the only current applications are carefully selected proofs-of-concept in research papers. Ultimately the vision is to make it very easy to experiment with building novel probability models. This means supporting a wide range of models (beyond what tools like PyMC can easily express) with reasonably reliable inference, since complex models or large datasets will easily overload most current tools. Another way to put it is that a wide range of current papers at NIPS, ICML, AAAI, CVPR, ACL, ICRA, etc. consist of "we thought up a new graphical model, had a team of grad students spend 6-12 months implementing an inference engine, and it performs better on some task." The vision of probabilistic programming is that those months of grad-student time could be reduced to an afternoon of just specifying the model in a simple description language and then letting the machine execute it automatically. It's not necessarily the solution to all problems in machine learning -- a lot of real-world problems are solvable as simple regression/classification/whatever and don't require developing new models, and not even all valuable new techniques are naturally expressed as Bayesian inference in some probability model (e.g. convnets in vision -- yes there are probabilistic interpretations, but that's not usually how people conceive of these models) -- but a flexible, efficient probabilistic programming system would be a very big deal for people doing model-based AI research."
+
+  (Daniel Roy) "The class of samplable distributions is, in a sense, the richest class you might hope to deal with. The question we asked was: is there an algorithm that, given a samplable distribution on two variables X and Y, represented by a program that samples values for both variables, can compute the conditional distribution of, say, Y given X=x, for almost all values for X? When X takes values in a finite, discrete set, e.g., when X is binary valued, there is a general algorithm, although it is inefficient. But when X is continuous, e.g., when it can take on every value in the unit interval [0,1], then problems can arise. In particular, there exists a distribution on a pair of numbers in [0,1] from which one can generate perfect samples, but for which it is impossible to compute conditional probabilities for one of the variables given the other. As one might expect, the proof reduces the halting problem to that of conditioning a specially crafted distribution. This pathological distribution rules out the possibility of a general algorithm for conditioning (equivalently, for probabilistic inference). The paper ends by giving some further conditions that, when present, allow one to devise general inference algorithms. Those familiar with computing conditional distributions for finite-dimensional statistical models will not be surprised that conditions necessary for Bayes’ theorem are one example."
+
+
+
+
+selected papers - https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
+
+
+
+
+[interesting papers]
+
+Gordon, Henzinger, Nori, Rajamani - "Probabilistic Programming" [http://research.microsoft.com/pubs/208585/fose-icse2014.pdf]
+	"Probabilistic programs are usual functional or imperative programs with two added constructs: (1) the ability to draw values at random from distributions, and (2) the ability to condition values of variables in a program via observations. Models from diverse application areas such as computer vision, coding theory, cryptographic protocols, biology and reliability analysis can be written as probabilistic programs. Probabilistic inference is the problem of computing an explicit representation of the probability distribution implicitly specified by a probabilistic program. Depending on the application, the desired output from inference may vary - we may want to estimate the expected value of some function f with respect to the distribution, or the mode of the distribution, or simply a set of samples drawn from the distribution. In this paper, we describe connections this research area called “Probabilistic Programming” has with programming languages and software engineering, and this includes language design, and the static and dynamic analysis of programs. We survey current state  of the art and speculate on promising directions for future research."
+
+Lake, Salakhutdinov, Tenenbaum - "Human-level Concept Learning Through Probabilistic Program Induction" [http://web.mit.edu/cocosci/Papers/Science-2015-Lake-1332-8.pdf]
+	"People learning new concepts can often generalize successfully from just a single example, yet machine learning algorithms typically require tens or hundreds of examples to perform with similar accuracy. People can also use learned concepts in richer ways than conventional algorithms - for action, imagination, and explanation. We present a computational model that captures these human learning abilities for a large class of simple visual concepts: handwritten characters from the world’s alphabets. The model represents concepts as simple programs that best explain observed examples under a Bayesian criterion. On a challenging one-shot classification task, the model achieves human-level performance while outperforming recent deep learning approaches. We also present several “visual Turing tests” probing the model’s creative generalization abilities, which in many cases are indistinguishable from human behavior."
+	--
+	"Vision program outperformed humans in identifying handwritten characters, given single training example"
+	"This work brings together three key ideas -- compositionality, causality, and learning-to-learn --- challenging (in a good way) the traditional deep learning approach"
+	-- http://youtube.com/watch?v=kzl8Bn4VtR8 (Lake)
+	-- http://research.microsoft.com/apps/video/default.aspx?id=259994 (Tenenbaum, 20:40)
+	-- https://reddit.com/r/MachineLearning/comments/3x4ml0/with_the_focus_on_deep_learning_what_problems/cy1nsuh
+	-- https://github.com/brendenlake/BPL
+	-- http://cims.nyu.edu/~brenden/supplemental/turingtests/turingtests.html
+
+Kulkarni, Kohli, Tenenbaum, Mansinghka - "Picture: A Probabilistic Programming Language for Scene Perception" [http://mrkulk.github.io/www_cvpr15/]
+	"Recent progress on probabilistic modeling and statistical learning, coupled with the availability of large training datasets, has led to remarkable progress in computer vision. Generative probabilistic models, or “analysis-by-synthesis” approaches, can capture rich scene structure but have been less widely applied than their discriminative counterparts, as they often require considerable problem-specific engineering in modeling and inference, and inference is typically seen as requiring slow, hypothesize-and-test Monte Carlo methods. Here we present Picture, a probabilistic programming language for scene understanding that allows researchers to ex- press complex generative vision models, while automatically solving them using fast general-purpose inference machinery. Picture provides a stochastic scene language that can express generative models for arbitrary 2D/3D scenes, as well as a hierarchy of representation layers for comparing scene hypotheses with observed images by matching not simply pixels, but also more abstract features (e.g., contours, deep neural network activations). Inference can flexibly integrate advanced Monte Carlo strategies with fast bottom-up datadriven methods. Thus both representations and inference strategies can build directly on progress in discriminatively trained systems to make generative vision more robust and efficient. We use Picture to write programs for generative 3D face analysis, 3D human pose estimation, and 3D object reconstruction – each in under 50 lines of code, and each competitive with specially engineered baselines."
+	-- https://youtu.be/-8QMqSWU76Q?t=44m8s (Mansinghka)
+
+Perov, Wood - "Learning Probabilistic Programs" [http://arxiv.org/abs/1407.2646]
+	"We develop a technique for generalising from data in which models are samplers represented as program text. We establish encouraging empirical results that suggest that Markov chain Monte Carlo probabilistic programming inference techniques coupled with higher-order probabilistic programming languages are now sufficiently powerful to enable successful inference of this kind in nontrivial domains. We also introduce a new notion of probabilistic program compilation and show how the same machinery might be used in the future to compile probabilistic programs for efficient reusable predictive inference."
+	"Higher-order probabilistic programming languages open up the possibility of doing inference over generative model program text directly via a generative prior over program text and the higher-order functionality of eval. This paper is a first step towards the ambitious goal of inferring generative model program text directly from example data. Inference in the space of program text is hard so, as a start, we present an account of our effort to directly infer sampler program text that, when evaluated repeatedly, produces samples with similar summary statistics to observational data."
+	"There are reasons to make this specific effort itself. One is the potential automation of the development of new entries in the special collection of efficient sampling procedures that humankind has painstakingly developed over many decades for common distributions, for example the Marsaglia and Box-Mulle samplers for the normal distribution. In this paper we develop preliminary evidence that suggests that such automated discovery might indeed be possible. In particular we perform successful leave-one-out experiments in which we are able to learn a sampling procedure for one distribution, i.e. Bernoulli, given only program text for others and observed samples. We do this by imposing a hierarchical generative model of sampling procedure text, fitting it to out-of-sample, human-written sampler program text, then inferring the program text for the left-out random variate distribution type given only sample values drawn from the same."
+	"The second reason for making such an effort has to do with “compiling” probabilistic programs. What we mean by compilation of probabilistic programs is somewhat more broad than both transformational compilation which compiles a probabilistic program into an MH sampler for the same and normal compilation of a probabilistic program to machine code that encodes a parallel forward inference algorithm. What we mean by probabilistic program compilation is the automatic generation of program text that when run will generate samples distributed ideally identically to the posterior distribution of quantities of interest in the original program, conditioned on the observed data. Concisely; given samples resulting from posterior inference in a probabilistic program, our aim is to learn program text that when evaluated generate samples from the same directly. The reason for expressing and approaching compilation in this generality is that simpler approaches to generalizing probabilistic programming posterior samples via a less-expressive model families will suffer precisely due to the compromise in expressivity. Distributions over expressions are valid posterior marginals in higher-order probabilistic programming languages. Compiled probabilistic programs must be capable of generating the same. This effort is also a first step towards such a compiler."
+	"Our approach to learning probabilistic programs relates to both program induction and statistical generalization from sampled observations. The former is usually treated as search in the space of program text where the objective is to find a deterministic function that exactly matches outputs given parameters. The latter, generalizing from data, is usually referred to as either density estimation or learning. We impose a prior on the program text and use Bayesian inference machinery to infer a distribution over program text given observations. Unlike other approaches we learn stochastic programs from sampled observation data rather than deterministic programs from input/output pairs."
+	"Generalizing from data is one of the main objectives of the fields of machine learning and statistics. It is important to note that what we are doing here is a substantial departure from almost all prior art in these fields in the sense that the learned representation of the observed data is that of generative sampling program text rather than, say, a parametric or nonparametric model from which samples can be drawn using some extrinsic algorithm. In our work the model is the sampler itself and it is represented as program code. We do full Bayesian inference, not greedy search, and the model family over which we search is ultimately more expressive as it is a high order language with stochastic primitives and, as a result, is capable of representing all computable probability distributions."
+	"While it is possible to manually specify production rule probabilities for the grammar we took a hierarchical Bayesian approach instead, learning from human-written sampler source code. We compute held-out production rules prior probabilities from this corpus in cross-validation way so that when we are inferring a probabilistic program to sample from F we update our priors using counts from all other sampling code in the corpus, specifically excluding the sampler we are attempting to learn. Our production rule probability estimates are smoothed by Dirichlet priors. Note that in the following experiments the production rule priors were updated then fixed during inference. True hierarchical coupling and joint inferences approaches are straightforward from a probabilistic programming perspective but result in inference runs that tak elonger to compute."
+	"The experiments we perform illustrate all three uses cases outlined for automatically learning probabilistic programs. We begin by illustrating the expressiveness of our prior over sampler program text. We then report results from experiments in which we test our approach in all three scenarios for how we can compute the ABC penalty d. The first set of experiments tests our ability to learn probabilistic programs that produce samples from known one-dimensional probability distributions. In these experiments d either probabilistically conditions on p-values of one-sample statistical hypothesis tests or on approximate moment matching. The second set of experiments addresses the cases where only a finite number of samples from an unknown real-world source are provided. The final experiment is a preliminary study in probabilistic program compilation where it is possible to gather a continuing set of samples."
+	"Our novel approach to program synthesis via probabilistic programming raises at least as many questions as it answers. One key high level question this kind of work sharpens is, really, what is the goal of program synthesis? By framing program synthesis as a probabilistic inference problem we are implicitly naming our goal to be that of estimating a distribution over programs that obey some constraints rather than as a search for a single best program that does the same. On one hand, the notion of regularising via a generative model is natural as doing so predisposes inference towards discovery of programs that preferentially possess characteristics of interest (length, readability, etc.). On the other hand, exhaustive computational inversion of a generative model that includes evaluation of program text will clearly remain intractable for the foreseeable future. For this reason greedy and stochastic search inference strategies are basically the only options available. We employ the latter, and MCMC in particular, to explore the posterior distribution of programs whose outputs match constraints knowing full-well that its actual effect in this problem domain, and, in particular finite time, is more-or-less that of stochastic search. We could add an annealing temperature and schedule to clarify our use of MCMC as search, however, while ergodic, our system is sufficiently stiff to not require quenching (and as a result almost certainly will not achieve maxima in general). It is pleasantly surprising, however, that the Monte Carlo techniques we use were able to find exemplar programs in the posterior distribution that actually do a good job of generalising observed data in the experiments we report. It remains an open question whether or not sampling procedures are the best stochastic search technique to use for this problem in general however. Perhaps by directly framing the problem as one of search we might do better, particularly if our goal is a single best program. Techniques ranging from genetic algorithms to Monte Carlo tree search all show promise and bear consideration. One interesting way to take this work forward is to introduce techniques from the cumulative/incremental learning community, perhaps by adding time-dependent and hierarchical dimensions to the program text generative model. In the specific context of learning sampler program text, it would be convenient if, for instance when learning the program text for sampling from a parameterised normal distribution, one had access to an already learned subroutine for sampling from a standard normal. In related work from the field of inductive programming large gains in performance were observed when the learning task was structured in this way. Our example inference tasks are just the start. What inspired and continues to inspire us is our the internal experience of our own ability to reason about procedure. Given examples, humans clearly are able to generate program text for procedures that compute or otherwise match examples. Humans can physically simulate Turing machines, and, it would seem clear, are capable doing something at least as powerful when deducing the action of a particular piece of program text from the text itself. No candidate artificial intelligence solution will be complete without the inclusion of such ability. Those without will always be deficient in the sense that it is apparent that humans can internally represent and reason about procedure. Perhaps some generalised representation of procedure is the actual expressivity class of human reasoning. It certainly can’t be less."
+	-- http://research.microsoft.com/apps/video/default.aspx?id=209278 (Perov, 37:00)
+
+Kucukelbir, Ranganath, Gelman, Blei - "Automatic Variational Inference in Stan" [http://arxiv.org/abs/1506.03431]
+	"Variational inference is a scalable technique for approximate Bayesian inference. Deriving variational inference algorithms requires tedious model-specific calculations; this makes it difficult to automate. We propose an automatic variational inference algorithm, automatic differentiation variational inference. The user only provides a Bayesian model and a dataset; nothing else. We make no conjugacy assumptions and support a broad class of models. The algorithm automatically determines an appropriate variational family and optimizes the variational objective. We implement ADVI in Stan (code available now), a probabilistic programming framework. We compare ADVI to MCMC sampling across hierarchical generalized linear models, nonconjugate matrix factorization, and a mixture model. We train the mixture model on a quarter million images. With ADVI we can use variational inference on any model we write in Stan."
+	"We develop automatic differentiation variational inference in Stan. ASVI leverages automatic transformations, an implicit non-Gaussian variational approximation, and automatic differentiation. This is a valuable tool. We can explore many models, and analyze large datasets with ease."
+	-- http://research.microsoft.com/apps/video/default.aspx?id=259601 (Kucukelbir, 18:30)
+
+Borgstrom, Lago, Gordon, Szymczak - "A Lambda-Calculus Foundation for Universal Probabilistic Programming" [http://arxiv.org/abs/1512.08990]
+	"We develop the operational semantics of a probabilistic λ-calculus with continuous distributions, as a foundation for universal probabilistic programming languages such as Church, Anglican, and Venture. Our first contribution is to adapt the classic operational semantics of λ-calculus to the continuous case, via creating a measure space on terms and defining step-indexed approximations. We prove equivalence of big-step and small-step formulations of this distributional semantics. Our second contribution is to formalize the implementation technique of trace MCMC for our calculus and to show correctness. A key step is defining a sampling semantics of a term as a function from a trace of random samples to a value, and showing that the distribution induced by integrating over all traces equals the distributional semantics. Another step is defining sufficient conditions for the distribution induced by trace MCMC to converge to the distributional semantics. To the best of our knowledge, this is the first rigorous correctness proof for trace MCMC for a higher-order functional language."
+	"The first problem we address in this work is to provide an operational semantics for universal probabilistic programming languages. Our example illustrates the common situation in machine learning that models are based on continuous distributions (such as uniform), but previous works on operational semantics for probabilistic λ-calculi are based on discrete distributions. We introduce a call-by-value λ-calculus with primitives for random draws from various continuous distributions, and exceptions to represent conditioning."
+	"We defined a probabilistic λ-calculus with draws from continuous probability distributions, defined its semantics as distributions on terms, and proved correctness of a trace MCMC inference algorithm via a sampling semantics for the calculus."
+
+
+
+
+<brylevkirill@gmail.com>

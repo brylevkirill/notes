@@ -1,0 +1,821 @@
+"The science of Artificial Intelligence is concerned with the study of intelligent forms of behaviour in computational terms."
+
+
+the most impressive accomplishments in AI (in russian) - https://dropbox.com/s/di5mxkj8c65h3e6/AI%20wonders.txt
+
+
+
+
+overviews/publications for research areas
+	AI and Artificial General Intelligence    - https://dropbox.com/sh/gmo2hort07gsydj/AACK0XoOOLsrzCyYC1eLwyOwa
+	knowledge representation and reasoning    - https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt + https://dropbox.com/sh/9ytscy4pwegbvhb/AACtB7tQGj-vigo0yExfciu0a
+	machine learning    - https://dropbox.com/s/v7kiore7w9xez5b/Machine%20Learning.txt + https://dropbox.com/sh/kpd5tvfnc29lstj/AAD3oGVCUdkoMS56_2g8Oj7_a
+	deep learning (representation learning)    - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt + https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
+	reinforcement learning    - https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt + https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va
+	probabilistic machine learning    - https://dropbox.com/s/m1hv2o5k9u12m20/Probabilistic%20Machine%20Learning.txt + https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
+	probabilistic programming    - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt + https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
+
+overviews/publications for applications
+	natural language processing    - https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt + https://dropbox.com/sh/rb7u9nwb16bg5xq/AADV3d_bS6-mqFW0_jaec1sZa
+	personal assistants    - https://dropbox.com/s/0fyarlwcfb8mjdq/Personal%20Assistants.txt + https://dropbox.com/sh/veqe3c800ztpkxe/AABwH6camduJrsTUJpeKobWUa
+	information retrieval    - https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt + https://dropbox.com/sh/pvpzyxfcpy39j8p/AACduJ-pVF9Lh-gn3_SExj1va
+	semantic web    - https://dropbox.com/s/ono4n5yij0y1366/RDF.txt + https://dropbox.com/sh/c427b94xex62a40/AABii9_MRHrCZPGJ_Adx_b3Ma
+
+
+
+
+[overview]
+
+Demis Hassabis
+	"Artificial Intelligence and The Future" - https://youtube.com/watch?v=4fjmnOQuqao
+	"General Learning Algorithms" - http://youtu.be/XAbLn66iHcQ?t=1h26m9s
+	"The Theory of Everything" - http://youtube.com/watch?v=rbsqaJwpu6A
+
+Juergen Schmidhuber
+	"How to Learn an Algorithm" - http://youtube.com/watch?v=mF5-tr7qAF4
+
+	"Deep Learning RNNaissance" - http://youtube.com/watch?v=h4FqFss9hEY
+
+	"Formal Theory of Fun & Creativity" -
+		https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber
+		https://vimeo.com/28759091
+		http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/
+		https://vimeo.com/7441291
+
+	"New Millennium AI and the Convergence of History" - https://youtube.com/watch?v=ktQLClGLWRc + http://people.idsia.ch/~juergen/newmillenniumai2012.pdf
+
+Marcus Hutter
+	"What is Intelligence? AIXI & Induction" - http://youtube.com/watch?v=F2bQ5TSB-cE
+	"Universal Artificial Intelligence" - http://videolectures.net/ssll09_hutter_uai/ + http://videolectures.net/mlss08au_hutter_fund/
+	"Soft Aspects of Hard Intelligence" - http://youtube.com/watch?v=vUUeHZJFN2Q
+
+Geoff Hinton
+	"Deep Learning and AI" - http://youtube.com/watch?v=izrG86jycck
+	"Deep Learning and Its Biological Plausibility" - http://sms.cam.ac.uk/media/2017973
+	"Aetherial Symbols" - https://drive.google.com/file/d/0B8i61jl8OE3XdHRCSkV1VFNqTWc
+
+Yoshua Bengio
+	"Deep Learning and General AI" - http://youtube.com/watch?v=exhdfIPzj24
+
+Richard Sutton
+	"Toward Learning Human-level Predictive Knowledge" - https://vimeo.com/16811494
+
+David Ferucci
+	"AI: A Return To Meaning" - https://youtube.com/watch?v=F_0hpnLdNjk
+
+Joshua Tenenbaum
+	"Computational Cognitive Science: Generative Models, Probabilistic Programs and Common Sense" -
+		https://youtube.com/watch?v=2WQO9e5Mdj4
+	"How to Grow a Mind: Statistics, Structure, and Abstraction" -
+		http://videolectures.net/aaai2012_tenenbaum_grow_mind/
+		http://videolectures.net/nips2010_tenenbaum_hgm/
+		http://web.mit.edu/cocosci/Papers/tkgg-science11-reprint.pdf
+	"The Origins of Common Sense: Modeling human intelligence with Probabilistic Programs and Program Induction" -
+		http://research.microsoft.com/apps/video/default.aspx?id=229021&l=i
+	"Computational Rationality: A Converging Paradigm for Intelligence in Brains, Minds and Machines" -
+		https://goo.gl/jWaJVf
+
+Gary Marcus
+	"Smart Machines And What They Can Still Learn From People" - https://youtube.com/watch?v=XmWneGydtng
+	"Commonsense Reasoning and Commonsense Knowledge in Artificial Intelligence" -
+		http://cacm.acm.org/magazines/2015/9/191169-commonsense-reasoning-and-commonsense-knowledge-in-artificial-intelligence/fulltext
+
+Stuart Russell
+	"Rationality and Intelligence: A Brief Update" - http://youtube.com/watch?v=Xg-Gt7tvTu8 + http://cs.berkeley.edu/~russell/papers/ptai13-intelligence.pdf
+	"The Long-Term Future of (Artificial) Intelligence" - https://youtube.com/watch?v=GYQrNfSmQ0M
+
+Tomas Mikolov
+	"A Roadmap Towards Machine Intelligence" - https://youtu.be/FUlTjKL-mVA?t=39m18s + http://youtu.be/gi4Zf59_IcU?t=34m10s
+	"Challenges in Development of Machine Intelligence" - https://b8ca8e88-a-62cb3a1a-s-sites.googlegroups.com/site/learningsemantics2014/TomasMikolov.pdf
+
+Laurent Orseau
+	https://intelligence.org/2013/09/06/laurent-orseau-on-agi/
+
+"Progress in AI: Myths, Realities, and Aspirations" - http://ll.ms-studiosmedia.com/events/2015/1507/FacultySummit/vod/FacultySummit-Panel.html
+
+http://beardedbrownman.com/20-bullets-on-ai
+
+"What you wanted to know about AI" (informal and funny) - http://fastml.com/what-you-wanted-to-know-about-ai/ + http://fastml.com/what-you-wanted-to-know-about-ai-part-ii/
+
+
+
+
+[state of progress]
+
+AI problems:
+
+#1 What is the space of possible beliefs? How do beliefs interact?
+   Can we formulate a knowledge representation which could in principle express any concept a human can conceive of?
+
+#2 How do we implement inference over these beliefs?
+   This makes perfect sense if we assume that "inference" is a catch-all term referring to the way beliefs move around in the space of possible beliefs.
+
+#3 How do beliefs conspire to produce actions?
+
+
+state of progress - solid theoretical foundations:
+ - rational decision making
+ - statistical learning
+ - perception, NLP as probabilistic inference
+
+state of progress - rapid advances:
+ - deep learning in speech, vision, RL
+ - universal probability languages
+ - long-term hierarchically structured behavior
+
+
+approaches:
+ - symbolic/computationalism/logical/causational/theory-driven/relational vs non-symbolic/connectionism/statistical/correlational/data-driven/numerical
+ - top-down vs bottom-up
+ - self-bootstrapped vs hand-coded knowledge
+ - reasoning-based vs connectionist
+ - narrow-and-deep vs broad-and-shallow
+ - few-key-principles vs hodgepodge-of-techniques
+ - must-look-at-nature vs anything-can-be-engineered
+
+
+logical vs statistical approaches:
+	"Beginning with Leibniz, scholars have attempted to unify logic and probability. For “classical” AI, based largely on first-order logic, the purpose of such a unification is to handle uncertainty and facilitate learning from real data; for “modern” AI, based largely on probability theory, the purpose is to acquire formal languages with sufficient expressive power to handle complex domains and incorporate prior knowledge. The world is uncertain and it has things in it. To deal with this, we have to unify logic and probability."
+
+	knowledge representation
+		logical - first-order logic
+		statistical - graphical models
+	automated reasoning (deduction)
+		logical - satisfiability testing/proving
+		statistical - Markov Chain Monte Carlo
+	machine learning (induction)
+		logical - inductive logic programming
+		statistical - neural networks
+	planning
+		logical - classical planning
+		statistical - markov decision processes
+	natural language processing
+		logical - definite clause grammars
+		statistical - probabilistica context-free grammars
+
+
+	Peter Norvig - "On Chomsky and the Two Cultures of Statistical Learning" [http://norvig.com/chomsky.html]:
+		"mathematical model specifies a relation among variables, either in functional or in relational form"
+		"statistical model is a mathematical model which is modified or trained by the input of data points"
+		"probabilistic model specifies a probability distribution over possible values of random variables"
+		"statistical models are often but not always probabilistic and probabilistic ones are statistical"
+
+	Pedro Domingos - "Unifying Logical and Statistical AI" -
+		http://youtube.com/watch?v=bW5DzNZgGxY
+		"logic handles complexity and statistics handles uncertainty"
+
+	Stuart Russell - "Unifying Logic and Probability" -
+		https://www.cs.berkeley.edu/~russell/papers/ipmu14-oupm.pdf
+		http://video.upmc.fr/differe.php?collec=S_C_colloquium_lip6_2012&video=3
+
+	Peter Cheeseman - "In Defense of Probability" [http://ijcai.org/Past%20Proceedings/IJCAI-85-VOL2/PDF/064.pdf]
+		"It is argued that probability theory, when used correctly, is suffrcient for the task of reasoning under uncertainty. Since numerous authors have rejected probability as inadequate for various reasons, the bulk of the paper is aimed at refuting these claims and indicating the scources of error. In particular, the definition of probability as a measure of belief rather than a frequency ratio is advocated, since a frequency interpretation of probability drastically restricts the domain of applicability. Other sources of error include the confusion between relative and absolute probability, the distinction between probability and the uncertainty of that probability. Also, the interaction of logic and probability is discusses and it is argued that many extensions of logic, such as "default logic" are better understood in a probabilistic framework. The main claim of this paper is that the numerous schemes for representing and reasoning about uncertainty that have appeared in the AI literature are unnecessary - probability is all that is needed."
+
+
+symbolic system:
+  - brittle, poor handling of uncertainty/ambiguity
+  - time-consuming to train
+  - poor at generalizing
+  - difficult to acquire new symbols
+  - symbol grounding problem
+
+non-symbolic system:
+  - computational ("congitive science"): "what" - the goals of the system
+  - algorithmic: "how" - the representations and algorithms
+  - implementation ("brain emulation"): "medium" - the physical realisation
+
+
+knowledge:
+  "Knowledge is in our minds and language is just orienting us within our common experiences."
+  "Language is complex indexing system that points to shared experiences of people on which meaning is grounded."
+  "Communicating using language is possible only after lining up experiences."
+  "Language is very flexible thing and not a formal mathematical structure at all."
+  "Computers may be programmed to analyze data and detect meaning but humans are the source of meaning."
+
+  - symbolic knowledge ("dog as word") - logic networks
+  - conceptual knowledge ("dog as mammal, a good companion, a good guardian") - <open research area>
+  - perceptual knowledge ("dog as something with certain physical appearance") - deep learning
+
+  symbolic -> conceptual (words have to be grounded in real world and actions to be not recursive)
+  perceptual -> conceptual (prediction and classification are not enough for some tasks without reasoning over concepts)
+
+
+induction vs deduction:
+	type of inference:
+		induction - generalization/prediction
+		deduction - specialization/derivation
+	framework:
+		induction - probability theory
+		deduction - logic axioms
+	assumptions:
+		induction - prior
+		deduction - non-logical axioms
+	inference rule:
+		induction - Bayes rule
+		deduction - Modus Ponens
+	results:
+		induction - posterior
+		deduction - theorems
+	universal scheme:
+		induction - Solomonoff probability distribution
+		deduction - Zermelo-Fraenkel set theory
+	universal inference:
+		induction - universal induction
+		deduction - universal theorem prover
+	limitation:
+		induction - incomputable
+		deduction - incomplete (Goedel)
+	in practice:
+		induction - approximations
+		deduction - semi-formal proofs
+	operation:
+		induction - computation
+		deduction - proof
+
+
+research challenges:
+  - abstract classification (categorization of empty/full cups of coffee from image requires concepts)
+  - statistical learning is not enough (can't predict the next digit in "1234567891012131")
+  - building sophisticated models of environment from raw data
+  - transfer learning (learning and abstracting in one context - applying in another)
+
+research areas:
+  - reinforcement learning
+  - model learning
+  - model-based planning
+  - imitation learning
+  - transfer learning
+  - intrinsic motivation
+
+research problems:
+  - reason
+  - achieve complex goals
+  - understand and generate language
+  - perceive and respond to sensory inputs
+  - prove mathematical theorems
+  - play challenging games
+  - synthesize and summarize information
+  - creativeness
+  - automated science
+
+
+
+
+[benchmarks and competitions]
+
+  "Tests of Machine Intelligence" by Legg and Hutter - http://arxiv.org/abs/0712.3825
+   - Turing test and derivatives
+   - compression tests
+   - linguistic complexity
+   - multiple cognitive abilities
+   - competitive games
+   - psychometric tests
+   - smith's test
+   - c-test
+   - universal intelligence test
+
+
+ * universal problem solving
+
+	"A Formal Measure of Machine Intelligence" by Legg and Hutter - http://arxiv.org/pdf/cs/0605024v1.pdf
+
+	"An Approximation of the Universal Intelligence Measure" by Legg and Veness - http://arxiv.org/abs/1109.5951
+
+	"Space-Time Embedded Intelligence" by Orseau and Ring - http://frontiersinai.com/turingfiles/December/orseau.pdf
+		"This paper presents the first formal measure of intelligence for agents fully embedded within their environment. Whereas previous measures such as Legg’s universal intelligence measure and Russell’s bounded optimality provide theoretical insights into agents that interact with an external world, ours describes an intelligence that is computed by, can be modified by, and is subject to the time and space constraints of the environment with which it interacts. Our measure merges and goes beyond Legg’s and Russell’s, leading to a new, more realistic definition of artificial intelligence that we call Space-Time Embedded Intelligence."
+
+
+ * automated science
+
+	https://datarobot.com/blog/automated-machine-learning-short-history/
+
+	AutoML - http://automl.chalearn.org
+		"Design the perfect machine learning “black box” capable of performing all model selection and hyper-parameter tuning without any human intervention."
+
+
+ * dialog interaction
+
+	"A Roadmap Towards Machine Intelligence" - http://arxiv.org/abs/1511.08130
+
+	"Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks" - http://arxiv.org/abs/1502.05698
+
+	"Artificial Tasks for Artificial Intelligence" by Bordes, Weston, Chopra, Mikolov, Joulin, Bottou
+		http://youtube.com/watch?v=d-Ma5PkDKG4
+		http://youtube.com/watch?v=0RGqJIhdva4
+		http://www.iclr.cc/lib/exe/fetch.php?media=iclr2015:abordes-iclr2015.pdf
+
+
+ * games
+
+	"Measuring Intelligence through Games" by Schaul, Togelius, Schmidhuber - http://arxiv.org/abs/1109.1314
+
+	"Why video games are essential for inventing artificial intelligence" by Julian Togelius - http://togelius.blogspot.ru/2016/01/why-video-games-are-essential-for.html
+
+
+	AAAI General Game Playing competition - http://www.aaai.org/ojs/index.php/aimagazine/article/download/1813/1711
+
+	General Video Game AI competition -
+		http://gvgai.net
+		http://youtube.com/watch?v=YPC7gEIE5j4
+		http://youtube.com/channel/UCMFCfXipQT55IK6R504naUQ/videos
+
+
+	"Mastering the Game of Go with Deep Neural Networks and Tree Search" by DeepMind - https://vk.com/doc-44016343_437229031?hash=9c999a03ee82850948&dl=56ce06e325d42fbc72
+
+	"Giraffe: Using Deep Reinforcement Learning to Play Chess" by Matthew Lai - http://arxiv.org/abs/1509.01549
+
+
+	"DeepMind Challenges for StarCraft" - http://gamasutra.com/blogs/BenWeber/20160314/267956/DeepMind_Challenges_for_StarCraft.php
+
+	"RTS AI: Problems and Techniques" - http://webdocs.cs.ualberta.ca/~cdavid/pdf/ecgg15_chapter-rts_ai.pdf
+
+
+	"A 'Brief' History of Game AI Up To AlphaGo" by Andrey Kurenkov -
+		http://andreykurenkov.com/writing/a-brief-history-of-game-ai/
+		http://andreykurenkov.com/writing/a-brief-history-of-game-ai-part-2/
+		http://andreykurenkov.com/writing/a-brief-history-of-game-ai-part-3/
+
+	classic games (state-of-the-art AI methods) by David Silver -
+		http://youtube.com/watch?v=kZ_AUmFcZtk + http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/games.pdf
+
+
+ * embodiment
+
+	MuJoCo physics simulator for robotics - http://mujoco.org/gallery.html
+
+
+
+
+[symbolic approach]
+
+https://en.wikipedia.org/wiki/Physical_symbol_system :
+	"Physical symbol system takes physical patterns (symbols), combining them into structures (expressions) and manipulating them (using processes) to produce new expressions."
+
+https://en.wikipedia.org/wiki/Symbol_grounding_problem
+
+
+Nils Nilsson - "The Physical Symbol System Hypothesis: Status and Prospects" - http://ai.stanford.edu/~nilsson/OnlinePubs-Nils/PublishedPapers/pssh.pdf
+	"I analyze some of the attacks against the Physical Symbol System Hypothesis - attacks based on the presumed need for symbol-grounding and non-symbolic processing for intelligent behavior and on the supposed non-computational and “mindless” aspects of brains."
+
+Rodney Brooks - "Elephants Don't Play Chess" - http://people.csail.mit.edu/brooks/papers/elephants.ps.Z
+
+
+Oren Etzioni on future directions for AI development beyond machine learning - http://videolectures.net/kdd2014_etzioni_data_mining/
+    classification and prediction are limited - structured prediction and multi-task learning are steps forward
+    AI needs a process that's constructive, multi-layered, knowledge-intensive
+    world knowledge is necessary for elementary understanding
+
+    data -> knowledge -> theories -> reasoning -> explanation
+
+    1. knowledge + tractable reasoning is necessary
+    2. knowledge acquisition has to be highly automated
+    3. large bodies of high-quality knowledge can be acquired from text, images and more
+
+Oren Etzioni - "Paradigm Shift in AI" - http://courses.cs.washington.edu/courses/cse590a/07au/future_of_AI.ppt
+
+
+
+
+[non-symbolic approach]
+
+https://en.wikipedia.org/wiki/Connectionism
+
+Geoffrey Hinton - "Aetherial Symbols" - https://drive.google.com/file/d/0B8i61jl8OE3XdHRCSkV1VFNqTWc
+
+	"The fathers of AI believed that formal logic provided insight into how human reasoning must work.  For implications to travel from one sentence to the next, there had to be rules of inference containing variables that got bound to symbols in the first sentence and carried the implications to the second sentence.  I shall demonstrate that this belief is as incorrect as the belief that a lightwave can only travel through space by causing disturbances in the luminiferous aether.   In both cases, scientists were misled by compelling but incorrect analogies to the only systems they knew that had the required properties. Arguments have little impact on such strongly held beliefs.  What is needed is a demonstration that it is possible to propagate implications in some quite different way that does not involve rules of inference and has no resemblance to formal logic. Recent results in machine translation using recurrent neural networks show that the meaning of a sentence can be captured by a "thought vector" which is simply the hidden state vector of a recurrent net that has read the sentence one word at a time.  In future, it will be possible to predict thought vectors from the sequence of previous thought vectors and this will capture natural human reasoning.  With sufficient effort, it may even be possible to train such a system to ignore nearly all of the contents of its thoughts and  to make predictions based purely on those features of the thoughts that capture the logical form of the sentences used to express them."
+	"Most people fall for the traditional AI fallacy that thought in the brain must somehow resemble lisp expressions. You can tell someone what thought you are having by producing a string of words that would normally give rise to that thought but this doesn't mean the thought is a string of symbols in some unambiguous internal language. The new recurrent network translation models make it clear that you can get a very long way by treating a thought as a big state vector."
+	"Traditional AI researchers will be horrified by the view that thoughts are merely the hidden states of a recurrent net and even more horrified by the idea that reasoning is just sequences of such state vectors. That's why I think its currently very important to get our critics to state, in a clearly decideable way, what it is they think these nets won't be able to learn to do. Otherwise each advance of neural networks will be met by a new reason for why that advance does not really count. So far, I have got both Garry Marcus and Hector Levesque to agree that they will be impressed if neural nets can correctly answer questions about "Winograd" sentences such as "The city councilmen refused to give the demonstrators a licence because they feared violence." Who feared the violence?"
+	"Most of our reasoning is by analogy; it's not logical reasoning. The early AI guys thought we had to use logic as a model and so they couldn't cope with reasoning by analogy. The honest ones, like Allen Newell, realized that reasoning by analogy was a huge problem for them, but they weren't willing to say that reasoning by analogy is the core kind of reasoning we do, and logic is just a sort of superficial thing on top of it that happens much later."
+
+Geoffrey Hinton - "Distributed Representations" - http://psych.stanford.edu/~jlm/papers/PDP/Chapter3.pdf
+
+Gary Marcus - "Towards a Neural Ontology" - https://drive.google.com/file/d/0B_hicYJxvbiONGRDWlB0b2RlZ1k/view
+
+
+
+
+[information theoretic approach]
+
+http://scholarpedia.org/article/Algorithmic_probability
+http://scholarpedia.org/article/Universal_search
+
+Li, Vitanyi - "An Introduction to Kolmogorov Complexity and Its Applications" - http://general-k-cut.googlecode.com/svn/trunk/books/An%20Introduction%20to%20Kolmogorov%20Complexity.pdf
+
+"Algorithmic information theory and algorithmic probability of objects" by Alexander Shen - http://youtube.com/watch?v=X0Lo5IWLjko (in russian)
+
+"Pattern Recognition and Machine Perception: Common Approach Based on Minimal Description Length Principle" by Alexey Potapov - http://aideus.com/research/doc/2007_Polytech_MDL-book.pdf (in russian)
+
+
+
+
+[frameworks]
+
+Reinforcement Learning
+	https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt
+
+	"Learning in Brains and Machines: Temporal Differences" by Shakir Mohhamed - http://blog.shakirm.com/2016/02/learning-in-brains-and-machines-1/
+
+
+
+AIXI
+	"The ultimate optimal Bayesian approach to machine learning is embodied by the AIXI model. Any computational problem can be phrased as the maximization of a reward function. AIXI is based on Solomonoff's universal mixture M of all computable probability distributions. If the probabilities of the world's responses to some reinforcement learning agent's actions are computable (there is no physical evidence against that), then the agent may predict its future sensory inputs and rewards using M instead of the true but unknown distribution. The agent can indeed act optimally by choosing those action sequences that maximize M-predicted reward. This may be dubbed the unbeatable, ultimate statistical approach to AI - it demonstrates the mathematical limits of what's possible. However, AIXI’s notion of optimality ignores computation time, which is the reason why we are still in business with less universal but more practically feasible approaches such as deep learning based on more limited local search techniques such as gradient descent."
+
+	"Sequential decision theory formally solves the problem of rational agents in uncertain worlds if the true environmental prior probability distribution is known. Solomonoff's theory of universal induction formally solves the problem of sequence prediction for unknown prior distribution. AIXI combines both ideas and develop an elegant parameter-free theory of an optimal reinforcement learning agent embedded in an arbitrary unknown environment that possesses essentially all aspects of rational intelligence. The theory reduces all conceptual AI problems to pure computational ones. There are strong arguments that the resulting AIXI model is the most intelligent unbiased agent possible."
+
+	http://hutter1.net/ai/uaibook.htm
+
+	http://wiki.lesswrong.com/wiki/AIXI :
+		"AIXI operates within the following agent model: There is an agent, and an environment, which is a computable function unknown to the agent. Thus the agent will need to have a probability distribution on the range of possible environments. On each clock tick, the agent receives an observation (a bitstring/number) from the environment, as well as a reward (another number). The agent then outputs an action (another number). To do this, AIXI guesses at a probability distribution for its environment, using Solomonoff induction, a formalization of Occam's razor: Simpler computations are more likely a priori to describe the environment than more complex ones. This probability distribution is then Bayes-updated by how well each model fits the evidence (or more precisely, by throwing out all computations which have not exactly fit the environmental data so far, but for technical reasons this is roughly equivalent as a model). AIXI then calculates the expected reward of each action it might choose--weighting the likelihood of possible environments as mentioned. It chooses the best action by extrapolating its actions into its future time horizon recursively, using the assumption that at each step into the future it will again choose the best possible action using the same procedure. Then, on each iteration, the environment provides an observation and reward as a function of the full history of the interaction; the agent likewise is choosing its action as a function of the full history. The agent's intelligence is defined by its expected reward across all environments, weighting their likelihood by their complexity."
+
+	Marcus Hutter
+		introduction - http://youtube.com/watch?v=F2bQ5TSB-cE
+
+		overview - http://youtube.com/watch?v=gb4oXRsw3yA :
+		"AI systems have to learn from experience, build models of the environment from the acquired knowledge, and use these models for prediction (and action). In philosophy this is called inductive inference, in statistics it is called estimation and prediction, and in computer science it is addressed by machine learning. I will first review unsuccessful attempts and unsuitable approaches towards a general theory of uncertainty and induction, including Popper’s denial of induction, frequentist statistics, much of statistical learning theory, subjective Bayesianism, Carnap’s confirmation theory, the big data paradigm, eliminative induction, pluralism, and deductive and other approaches. I will then argue that Solomonoff’s formal, general, complete, consistent, and essentially unique theory provably solves most issues that have plagued the other approaches."
+
+		technical overview - http://videolectures.net/ssll09_hutter_uai/ + http://videolectures.net/mlss08au_hutter_fund/
+		philosophical overview - http://youtube.com/watch?v=vUUeHZJFN2Q
+
+
+	AIXI = learning + prediction + planning + acting
+	algorithmic probability theory extended recently to the case of sequential decision theory
+	defines the universal algorithmic agent, which in effect simulates all possible programs that in agreement with the agent’s set of observations
+	while AIXI is uncomputable, the related agent AIXI-tl may be computed, and is superior to any other agent bounded by time t and space l
+
+	* Ockhams' razor (simplicity) principle
+	* Epicurus' principle of multiple explanations
+	* Bayes' rule for conditional probabilities
+	* Turing's universal machine
+	* Kolmogorov's complexity
+	* Solomonoff's universal prior distribution = Ockham + Epicurus + Bayes + Turing + Kolmogorov
+	* Bellman equations + Solomonoff = Universal Artificial Intelligence
+
+	No free lunch myth relies on unrealistic uniform sampling (which results mostly in white noise for real-world phenomena). Sampling from universal distribution permits free lunch.
+
+
+	applications (environments):
+	 - sequence prediction: predict weather or stock market (strong result - upper bound for approximation of true distribution)
+	 - strategic games: learn play well (minimax) zero-sum games (like chess) or even exploit limited capabilities of opponent
+	 - optimization: find (approximate) minimum of function with as few function calls as possible (difficult exploration versus exploitation problem)
+	 - supervised learning: learn functions by presenting (z, f(z)) pairs and ask for function values of z' presenting (z', ?) pairs (supervised learning is much faster than reinforcement learning)
+
+
+	limitations:
+		"AIXI it is not a feasible AI, because Solomonoff induction is not computable."
+
+		"AIXI only works over some finite time horizon, though any finite horizon can be chosen. But some environments may not interact over finite time horizons."
+
+		"AIXI lacks a self-model. It extrapolates its own actions into the future indefinitely, on the assumption that it will keep working in the same way in the future. Though AIXI is an abstraction, any real AI would have a physical embodiment that could be damaged, and an implementation which could change its behavior due to bugs; and the AIXI formalism completely ignores these possibilities."
+
+		"Solomonoff induction treats the world as a sort of qualia factory, a complicated mechanism that outputs experiences for the inductor. Its hypothesis space tacitly assumes a Cartesian barrier separating the inductor's cognition from the hypothesized programs generating the perceptions. Through that barrier, only sensory bits and action bits can pass. Real agents, on the other hand, will be in the world they're trying to learn about. A computable approximation of AIXI, like AIXItl, would be a physical object. Its environment would affect it in unseen and sometimes drastic ways; and it would have involuntary effects on its environment, and on itself. Solomonoff induction doesn't appear to be a viable conceptual foundation for artificial intelligence - not because it's an uncomputable idealization, but because it's Cartesian."
+
+
+	approximations:
+		"AI needs anytime algorithm powerful enough to approach Solomonoff/AIXI in the limit of infinite computation time."
+
+		https://intelligence.org/2013/09/06/laurent-orseau-on-agi/ :
+			"Approximating AIXI can be done in very many ways. The main ideas are building/finding good and simple models of the environment, and performing some planning on these models; i.e., it is a model-based approach (by contrast to Q-learning which is model-free for example: it does model the environment, but only learns to predict the expected rewards per action/state). This is a very common approach in reinforcement learning, because some may argue that model-free methods are “blind”, in the sense that they don’t learn about their environments, they just “know” what to do.  Another important component of AIXI is the interaction history (instead of a state-based observation), and approximations may need to deal appropriately with compressing this history, possibly with loss.
+			Finding computation-efficient approximations is not an easy task, and it will quite probably require a number of neat ideas that will make it feasible, but it’s certainly a path worth researching. However, personally, I prefer to think that the agent must learn how to model its environment, which is something deeper than a model-based approach.
+			Even without considering AIXI approximations, AIXI still is very important for AGI research because it unifies all important properties of cognition, like agency (interaction with an environment), knowledge representation and memory, understanding, reasoning, goals, problem solving, planning and action selection, abstraction, generalization without overfitting, multiple hypotheses, creativity, exploration and curiosity, optimization and utility maximization, prediction, uncertainty, with incremental, on-line, lifelong, continual learning in arbitrarily complex environments, without a restart state, no i.i.d. or stationarity assumption, etc. and does all this in a very simple, elegant and precise manner."
+
+
+		Algorithmic Information Theory (Minimum Description Length, Minimum Message Length)
+			use compression size as general performance measure (like perplexity is used in language models)
+			via code-length view, many approaches become comparable, and may be regarded as approximations to UI
+			this should lead to better compression algorithms which in turn should lead to better learning algorithms
+
+		A Monte-Carlo AIXI Approximation (MC-AIXI-CTW)
+			https://www.jair.org/media/3125/live-3125-5397-jair.pdf
+			http://jveness.info/publications/veness_phd_thesis_final.pdf
+
+			http://youtube.com/watch?v=yfsMHtmGDKE (Pacman demo)
+			http://jveness.info/software/mcaixi_jair_2010.zip
+			https://github.com/moridinamael/mc-aixi
+
+		Formal Theory of Fun and Creativity
+			(Juergen Schmidhuber) "Generally speaking, when it comes to Reinforcement Learning, it is indeed a good idea to train a recurrent neural network called M to become a predictive model of the world, and use M to train a separate controller network C which is supposed to generate reward-maximising action sequences. Marcus Hutter’s mathematically optimal universal AIXI also has a predictive world model M, and a controller C that uses M to maximise expected reward. Ignoring limited storage size, RNNs are general computers just like your laptop. That is, AIXI’s M is related to the RNN-based M above in the sense that both consider a very general space of predictive programs. AIXI’s M, however, really looks at all those programs simultaneously, while the RNN-based M uses a limited local search method such as gradient descent in program space (also known as backprop through time) to find a single reasonable predictive program (an RNN weight matrix). AIXI’s C always picks the action that starts the action sequence that yields maximal predicted reward, given the current M, which in a Bayes-optimal way reflects all the observations so far. The RNN-based C, however, uses a local search method (backprop through time) to optimise its program or weight matrix, using gradients derived from M. So in a way, my old RNN-based CM system of 1990 may be viewed as a limited, downscaled, sub-optimal, but at least computationally feasible approximation of AIXI."
+			Juergen Schmidhuber - "On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models" - http://arxiv.org/abs/1511.09249
+
+
+
+Goedel Machine
+	http://people.idsia.ch/~juergen/goedelmachine.html
+	compared to AIXI - http://people.idsia.ch/~juergen/gmweb2/node21.html
+
+	"Towards An Actual Goedel Machine Implementation: A Lesson in Self-Reflective Systems" by Steunebrink and Schmidhuber - http://people.idsia.ch/~juergen/selfreflection.pdf
+
+	(Juergen Schmidhuber)
+	"Self-improving universal methods have also been defined, including some that justify self-changes (including changes of the learning algorithm) through empirical evidence in a lifelong learning context and the Goedel Machine that self-improves via proving theorems about itself, and can improve any part of its software (including the learning algorithm itself) in a way that is provably time-optimal in a sense that takes constant overheads into account and goes beyond asymptotic optimality. At each step of the way, the Goedel Machine takes the action that it can prove, according to its axiom system and its perceptual data, will be the best way to achieve its goals. The current versions of the Goedel Machine are not computationally tractable in complex environments, however."
+	"Goedel machines are limited by the basic limits of math and computation identified by the founder of modern theoretical computer science himself, Kurt Goedel: some theorems are true but cannot be proven by any computational theorem proving procedure (unless the axiomatic system itself is flawed). That is, in some situations the GM may never find a proof of the benefits of some change to its own code."
+	"It’s currently not sufficiently formalized, so it’s difficult to state if and how it really works. Searching for proofs is extremely complicated: Making a parallel with Levin search, where given a goal output string (an improvement in the Goedel Machine), you enumerate programs (propositions in the GM) and run them to see if they output the goal string (search for a proof of improvement in GM). This last part is the problem: in LS, the programs are fast to run, whereas in GM there is an additional search step for each proposition, so this looks very roughly like going from exponential (LS) to double-exponential (GM). And LS is already not really practical. Theorem proving is even more complicated when you need to prove that there will be an improvement of the system at an unknown future step. Maybe it would work better if the kinds of proofs were limited to some class, for example use simulation of the future steps up to some horizon given a model of the world. These kinds of proofs are easier to check and have a guaranteed termination, e.g. if the model class for the environment is based on Schmidhuber’s Speed Prior. But this starts to look pretty much like an approximation of AIXI."
+	"We looked into existing proof verification systems. Some of them may turn out to be useful for limited AI applications. Unfortunately, however, off-the-shelf verifiers make implicit assumptions that are broken in self-referential proof-based Goedel Machines. They assume that (1) the thing being reasoned about is static (not an active and running program) and (2) the thing being reasoned about does not contain the reasoner itself."
+	"MC-AIXI is a probabilistic approximation of AIXI. What might be the equivalent for the self-referential proof searcher of a GM? One possibility comes to mind: Holographic proofs, where errors in the derivation of a theorem are 'apparent after checking just a negligible fraction of bits of the proof' - check out Leonid Levin’s exposé thereof: http://www.cs.bu.edu/fac/lnd/expo/holo.htm"
+	"A Goedel Machine may indeed change its utility function and target theorem, but not in some arbitrary way. It can do so only if the change is provably useful according to its initial utility function. E.g., it may be useful to replace some complex-looking utility function by an equivalent simpler one. In certain environments, a Goedel Machine may even prove the usefulness of deleting its own proof searcher, and stop proving utility-related theorems, e.g., when the expected computational costs of proof search exceed the expected reward."
+
+
+
+Artificial Curiosity and Creativity
+	"Which experiments should a robot’s RL controller, C, conduct to generate data that quickly improves its adaptive, predictive world model, M, which in turn can help to plan ahead? The theory says: use the learning progress of M (typically compression progress and speed-ups) as the intrinsic reward or fun for C. This motivates C to create action sequences (experiments) such that M can quickly discover new, previously unknown regularities. For example, a video of 20 falling apples can be greatly compressed after the discovery of the law of gravity, through predictive coding. This discovery is fun, and motivates the history-shaping C. I think this principle will be essential for future artificial scientists and artists."
+
+	http://idsia.ch/~juergen/creativity.html
+
+	https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber
+	https://vimeo.com/28759091
+	http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/
+	https://vimeo.com/7441291
+
+	Juergen Schmidhuber - "Artificial scientists and artists based on the formal theory of creativity" - http://people.idsia.ch/~juergen/agi10.pdf
+	Juergen Schmidhuber - "Driven by compression progress: A simple principle explains essential aspects of subjective beauty, novelty, surprise, interestingness, attention, curiosity, creativity, art, science, music, jokes" - http://arxiv.org/abs/0812.4360
+
+	"Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids" - http://goo.gl/FKNPth
+	"PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem" - http://goo.gl/M5uqF4
+	"Continually Adding Self-Invented Problems to the Repertoire: First Experiments with PowerPlay" - http://goo.gl/lTYm6o
+
+	"Toward Intelligent Humanoids" (application to iCub robot) - https://vimeo.com/51011081 (demo)
+
+	Juergen Schmidhuber - "On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models" - http://arxiv.org/abs/1511.09249
+
+
+
+Metalearning
+	(Juergen Schmidhuber) "Current commercial AI algorithms are still missing something fundamental. They are no self-referential general purpose learning algorithms. They improve some system’s performance in a given limited domain, but they are unable to inspect and improve their own learning algorithm. They do not learn the way they learn, and the way they learn the way they learn, and so on (limited only by the fundamental limits of computability)."
+
+	http://people.idsia.ch/~juergen/metalearner.html
+	http://scholarpedia.org/article/Metalearning
+
+	"Learning To Learn Using Gradient Desent" by Hochreiter, Younger, Conwell - http://www.bioinf.jku.at/publications/older/1504.pdf
+	(Juergen Schmidhuber)
+		"Self-referential RNNs with special output units for addressing and rapidly manipulating each of the RNN's own weights in differentiable fashion."
+		"This indicates that one can use gradient descent to metalearn learning algorithms that outperform gradient descent."
+		"Author trained LSTM networks with roughly 5000 weights to METALEARN fast online learning algorithms for nontrivial classes of functions, such as all quadratic functions of two variables. LSTM is necessary because metalearning typically involves huge time lags between important events, and standard RNNs cannot deal with these. After a month of metalearning on a slow PC of 15 years ago, all weights are frozen, then the frozen net is used as follows: some new function f is selected, then a sequence of random training exemplars of the form ...data/target/data/target/data... is fed into the INPUT units, one sequence element at a time. After about 30 exemplars the frozen recurrent net correctly predicts target inputs before it sees them. No weight changes! How is this possible? After metalearning the frozen net implements a sequential learning algorithm which apparently computes something like error signals from data inputs and target inputs and translates them into changes of internal estimates of f. Parameters of f, errors, temporary variables, counters, computations of f and of parameter updates are all somehow represented in form of circulating activations. Remarkably, the new - and quite opaque - online learning algorithm running on the frozen network is much faster than standard backprop with optimal learning rate. This indicates that one can use gradient descent to metalearn learning algorithms that outperform gradient descent. Furthermore, the metalearning procedure automatically avoids overfitting in a principled way, since it punishes overfitting online learners just like it punishes slow ones, simply because overfitters and slow learners cause more cumulative errors during metalearning."
+
+
+
+Algorithmic Composition
+	Marvin Minsky - http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-868j-the-society-of-mind-fall-2011/
+
+	Kris Thorisson on constructivist vs constructionist approaches - http://intelligence.org/2014/09/14/kris-thorisson/
+	Kristinn Thorisson - "A New Kind of AI" - http://youtube.com/watch?v=hQ20pwUkeak
+
+	constructionist approach: Artificially intelligent manmade system built by hand; learning is restricted to combining predefined situations and tasks, based on detailed specifications provided by a human programmer. While the system may automatically improve performance in some limited domain, the domain itself is decided and defined by the programmer.
+
+	constructivist approach: Self-constructive artificial intelligence system with general knowledge acquisition and integration skills. Systems capable of architectural self-modification and self-directed growth; develop from a seed specification; capable of learning to perceive, think and act in a wide range of novel situations and domains and learning to perform a number of different tasks.
+
+
+
+
+selected papers - https://dropbox.com/sh/gmo2hort07gsydj/AACK0XoOOLsrzCyYC1eLwyOwa
+
+knowledge representation and reasoning    - https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt
+machine learning    - https://dropbox.com/s/v7kiore7w9xez5b/Machine%20Learning.txt
+deep learning (representation learning)   - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt
+reinforcement learning    - https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt
+bayesian machine learning    - https://dropbox.com/s/ko8syl62ivsa34a/Bayesian%20Machine%20Learning.txt
+probabilistic programming    - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt
+semantic web    - https://dropbox.com/s/ono4n5yij0y1366/RDF.txt
+natural language processing    - https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt
+
+
+
+
+interesting papers (see below):
+ * definitions and measures of intelligence
+ * induction, prediction, intelligence
+ * artificial curiosity and creativity
+ * self-improvement and resource-boundedness
+
+ + reinforcement learning - https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt
+
+
+
+
+[interesting papers - definitions and measures of intelligence]
+
+Lake, Ullman, Tenenbaum, Gershman - "Building Machines That Learn and Think Like People" [http://arxiv.org/abs/1604.00289]
+	"Recent progress in artificial intelligence has renewed interest in building systems that learn and think like people. Many advances have come from using deep neural networks trained end-to-end in tasks such as object recognition, video games, and board games, achieving performance that equals or even beats humans in some respects. Despite their biological inspiration and performance achievements, these systems differ from human intelligence in crucial ways. We review progress in cognitive science suggesting that truly human-like learning and thinking machines will have to reach beyond current engineering trends in both what they learn, and how they learn it. Specifically, we argue that these machines should (a) build causal models of the world that support explanation and understanding, rather than merely solving pattern recognition problems; (b) ground learning in intuitive theories of physics and psychology, to support and enrich the knowledge that is learned; and (c) harness compositionality and learning-to-learn to rapidly acquire and generalize knowledge to new tasks and situations. We suggest concrete challenges and promising routes towards these goals that can combine the strengths of recent neural network advances with more structured cognitive models."
+
+Schmidhuber - "New Millennium AI and the Convergence of History" [http://people.idsia.ch/~juergen/newmillenniumai2012.pdf]
+	"Artificial Intelligence has recently become a real formal science: the new millennium brought the first mathematically sound, asymptotically optimal, universal problem solvers, providing a new, rigorous foundation for the previously largely heuristic field of General AI and embedded agents. There also has been rapid progress in not quite universal but still rather general and practical artificial recurrent neural networks for learning sequence-processing programs, now yielding state-of-the-art results in real world applications. And the computing power per Euro is still growing by a factor of 100-1000 per decade, greatly increasing the feasibility of neural networks in general, which have started to yield human-competitive results in challenging pattern recognition competitions. Finally, a recent formal theory of fun and creativity identifies basic principles of curious and creative machines, laying foundations for artificial scientists and artists."
+
+Legg, Hutter - "Universal Intelligence: A Definition of Machine Intelligence" [http://arxiv.org/abs/0712.3329]
+	"A fundamental problem in artificial intelligence is that nobody really knows what intelligence is. The problem is especially acute when we need to consider artificial systems which are significantly different to humans. In this paper we approach this problem in the following way: We take a number of well known informal definitions of human intelligence that have been given by experts, and extract their essential features. These are then mathematically formalised to produce a general measure of intelligence for arbitrary machines. We believe that this equation formally captures the concept of machine intelligence in the broadest reasonable sense. We then show how this formal definition is related to the theory of universal optimal learning agents. Finally, we survey the many other tests and definitions of intelligence that have been proposed for machines."
+
+Mikolov, Joulin, Baroni - "A Roadmap Towards Machine Intelligence" [http://arxiv.org/abs/1511.08130]
+	"The development of intelligent machines is one of the biggest unsolved challenges in computer science. In this paper, we propose some fundamental properties these machines should have, focusing in particular on communication and learning. We discuss a simple environment that could be used to incrementally teach a machine the basics of natural-language-based communication, as a prerequisite to more complex interaction with human users. We also present some conjectures on the sort of algorithms the machine should support in order to profitably learn from the environment."
+	"We defined basic desiderata for an intelligent machine, stressing learning and communication as its fundamental abilities. Contrary to common practice in current machine learning, where the focus is on modeling single skills in isolation, we believe that all aspects of intelligence should be holistically addressed within a single system. We proposed a simulated environment that requires the intelligent machine to acquire new facts and skills through communication in natural language. In this environment, the machine must learn to perform increasingly more ambitious tasks, being naturally induced to develop complex linguistic and reasoning abilities. We also presented some conjectures on the properties of the computational system that the intelligent machine may be based on. This includes learning of algorithmic patterns from a few examples without strong supervision, and development of long term memory that would store both data and learned skills. We tried to put this in contrast with currently accepted paradigms in machine learning, to show that current methods are far from adequate, and we must strive to develop non-incrementally novel techniques."
+	-- https://youtu.be/FUlTjKL-mVA?t=39m18s + http://youtu.be/gi4Zf59_IcU?t=34m10s (Mikolov)
+
+Rocki - "Thinking Required" [http://arxiv.org/abs/1512.01926]
+	"There exists a theory of a single general-purpose learning algorithm which could explain the principles of its operation. It assumes the initial rough architecture, a small library of simple innate circuits which are prewired at birth and proposes that all significant mental algorithms are learned. Given current understanding and observations, this paper reviews and lists the ingredients of such an algorithm from architectural and functional perspectives."
+
+Weston, Bordes, Chopra, Mikolov - "Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks" [http://arxiv.org/abs/1502.05698]
+	"One long-term goal of machine learning research is to produce methods that are applicable to reasoning and natural language, in particular building an intelligent dialogue agent. To measure progress towards that goal, we argue for the usefulness of a set of proxy tasks that evaluate reading comprehension via question answering. Our tasks measure understanding in several ways: whether a system is able to answer questions via chaining facts, simple induction, deduction and many more. The tasks are designed to be prerequisites for any system that aims to be capable of conversing with a human. We believe many existing learning systems can currently not solve them, and hence our aim is to classify these tasks into skill sets, so that researchers can identify (and then rectify) the failings of their systems. We also extend and improve the recently introduced Memory Networks model, and show it is able to solve some, but not all, of the tasks."
+	"Despite great recent advances, the road towards intelligent machines able to reason and adapt in real-time in multimodal environments remains long and uncertain. This final goal is so complex and further away that it is impossible to perform experiments and research directly in the desired final conditions, so one has to use intermediate and/or proxy tasks as midway goals. Some of those tasks like object detection in computer vision, or machine translation in natural language processing are very useful on their own and fuel many applications. However, such intermediate tasks are already very difficult and it is not obvious that they are suited testbeds for designing intelligent systems: their inherent complexity makes it hard to precisely interpret the behavior and true capabilities of algorithms, in particular regarding key sophisticated capabilities like reasoning and planning. We advocate the use of controlled artificial environments for developing research in AI, environments in which one can precisely study the behavior of algorithms and unambiguously assess their abilities."
+	-- http://fb.ai/babi
+	-- http://youtube.com/watch?v=d-Ma5PkDKG4 + https://youtube.com/watch?v=0RGqJIhdva4 (Bordes) + http://iclr.cc/lib/exe/fetch.php?media=iclr2015:abordes-iclr2015.pdf
+
+Orseau, Ring - "Space-Time Embedded Intelligence" [http://frontiersinai.com/turingfiles/December/orseau.pdf]
+	"This paper presents the first formal measure of intelligence for agents fully embedded within their environment. Whereas previous measures such as Legg’s universal intelligence measure and Russell’s bounded optimality provide theoretical insights into agents that interact with an external world, ours describes an intelligence that is computed by, can be modified by, and is subject to the time and space constraints of the environment with which it interacts. Our measure merges and goes beyond Legg’s and Russell’s, leading to a new, more realistic definition of artificial intelligence that we call Space-Time Embedded Intelligence."
+
+Schaul, Togelius, Schmidhuber - "Measuring Intelligence through Games" [http://arxiv.org/abs/1109.1314]
+	"Artificial general intelligence refers to research aimed at tackling the full problem of artificial intelligence, that is, create truly intelligent agents. This sets it apart from most AI research which aims at solving relatively narrow domains, such as character recognition, motion planning, or increasing player satisfaction in games. But how do we know when an agent is truly intelligent? A common point of reference in the AGI community is Legg and Hutter’s formal definition of universal intelligence, which has the appeal of simplicity and generality but is unfortunately incomputable. Games of various kinds are commonly used as benchmarks for “narrow” AI research, as they are considered to have many important properties. We argue that many of these properties carry over to the testing of general intelligence as well. We then sketch how such testing could practically be carried out. The central part of this sketch is an extension of universal intelligence to deal with finite time, and the use of sampling of the space of games expressed in a suitably biased game description language."
+
+Ontanon, Synnaeve, Uriarte, Richoux, Churchill, Preuss - "RTS AI: Problems and Techniques" [http://webdocs.cs.ualberta.ca/~cdavid/pdf/ecgg15_chapter-rts_ai.pdf]
+	"Real-Time Strategy games is a sub-genre of strategy games where players need to build an economy (gathering resources and building a base) and military power (training units and researching technologies) in order to defeat their opponents (destroying their army and base). Artificial Intelligence problems related to RTS games deal with the behavior of an artificial player. This consists among others to learn how to play, to have an understanding about the game and its environment, to predict and infer game situations from a context and sparse information."
+	"This entry has defined real-time strategy games from an AI point of view, and summarized the set of open problems in RTS game AI. After that, we have summarized existing work toward addressing those problems. RTS games can be seen as a simulation of real complex dynamic environments, in a finite and smaller world, but still complex enough to study a series of key interesting problems. Finding efficient techniques for tackling these problems on RTS games can thus benefit other AI disciplines and application domains, and also have concrete and direct applications in the ever growing industry of video games."
+
+
+
+
+[interesting papers - architectures]
+
+Mnih, Kavukcuoglu, Silver, Rusu, Veness, Bellemare, Graves, Riedmiller, Fidjeland, Ostrovski, Petersen, Beattie, Sadik, Antonoglou, King, Kumaran, Wierstra, Legg, Hassabis - "Human-level Control Through Deep Reinforcement Learning" [https://infotomb.com/k4sum.pdf]
+	"The theory of reinforcement learning provides a normative account, deeply rooted in psychological and neuroscientific perspectives on animal behaviour, of how agents may optimize their control of an environment. To use reinforcement learning successfully in situations approaching real-world complexity, however, agents are confronted with a difficult task: they must derive efficient representations of the environment from high-dimensional sensory inputs, and use these to generalize past experience to new situations. Remarkably, humans and other animals seem to solve this problem through a harmonious combination of reinforcement learning and hierarchical sensory processing systems, the former evidenced by a wealth of neural data revealing notable parallels between the phasic signals emitted by dopaminergic neurons and temporal difference reinforcement learning algorithms. While reinforcement learning agents have achieved some successes in a variety of domains, their applicability has previously been limited to domains in which useful features can be handcrafted, or to domains with fully observed, low-dimensional state spaces. Here we use recent advances in training deep neural networks to develop a novel artificial agent, termed a deep Q-network, that can learn successful policies directly from high-dimensional sensory inputs using end-to-end reinforcement learning. We tested this agent on the challenging domain of classic Atari 2600 games. We demonstrate that the deep Q-network agent, receiving only the pixels and the game score as inputs, was able to surpass the performance of all previous algorithms and achieve a level comparable to that of a professional human games tester across a set of 49 games, using the same algorithm, network architecture and hyperparameters. This work bridges the divide between high-dimensional sensory inputs and actions, resulting in the first artificial agent that is capable of learning to excel at a diverse array of challenging tasks."
+	-- http://nature.com/nature/journal/v518/n7540/full/nature14236.html
+	-- http://nature.com/nature/journal/v518/n7540/extref/nature14236-s1.pdf
+	-- http://youtube.com/watch?v=EfGD2qveGdQ (demo)
+	-- http://videolectures.net/rldm2015_silver_reinforcement_learning/ (demos, 57:56, 1:06:04, 1:15:15)
+	-- http://youtu.be/XAbLn66iHcQ?t=1h41m21s + http://youtube.com/watch?v=0xo1Ldx3L5Q (3D racing demo)
+	-- http://youtube.com/watch?v=nMR5mjCFZCw (3D labyrinth demo)
+	-- http://youtu.be/XAbLn66iHcQ?t=1h41m21s (demo)
+	-- http://youtube.com/user/eldubro/videos (demos)
+	-- http://youtube.com/watch?v=iqXKQf2BOSE (demo)
+	-- http://youtube.com/watch?v=lge-dl2JUAM + https://youtube.com/watch?v=xN1d3qHMIEQ (interviews and demos)
+	-- http://sodeepdude.blogspot.ru/2015/03/deepminds-atari-paper-replicated.html (demos)
+	-- http://videolectures.net/nipsworkshops2013_mnih_atari/ (Volodymyr Mnih)
+	-- http://youtube.com/watch?v=xzM7eI7caRk (Volodymyr Mnih)
+	-- http://youtube.com/watch?v=dV80NAlEins (Nando de Freitas)
+	-- http://youtube.com/watch?v=HUmEbUkeQHg (Nando de Freitas)
+	-- https://github.com/kuz/DeepMind-Atari-Deep-Q-Learner + https://sites.google.com/a/deepmind.com/dqn/
+	-- https://github.com/Kaixhin/Atari
+	-- https://github.com/tambetm/simple_dqn + http://youtu.be/KkIf0Ok5GCE + http://youtu.be/0ZlgrQS3krg
+	-- https://github.com/spragunr/deep_q_rl + http://sodeepdude.blogspot.ru/2015/03/deepminds-atari-paper-replicated.html
+	-- https://github.com/ugo-nama-kun/DQN-chainer + http://youtube.com/watch?v=N813o-Xb6S8
+	-- https://github.com/muupan/dqn-in-the-caffe
+	-- https://github.com/asrivat1/DeepLearningVideoGames
+	-- https://github.com/gliese581gg/DQN_tensorflow
+	-- http://cs.stanford.edu/people/karpathy/convnetjs/demo/rldemo.html
+
+Schmidhuber - "On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models" [http://arxiv.org/abs/1511.09249]
+	"This paper addresses the general problem of reinforcement learning in partially observable environments. In 2013, our large RL recurrent neural networks learned from scratch to drive simulated cars from high-dimensional video input. However, real brains are more powerful in many ways. In particular, they learn a predictive model of their initially unknown environment, and somehow use it for abstract (e.g., hierarchical) planning and reasoning. Guided by algorithmic information theory, we describe RNN-based AIs designed to do the same. Such an RNNAI can be trained on never-ending sequences of tasks, some of them provided by the user, others invented by the RNNAI itself in a curious, playful fashion, to improve its RNN-based world model. Unlike our previous model-building RNN-based RL machines dating back to 1990, the RNNAI learns to actively query its model for abstract reasoning and planning and decision making, essentially “learning to think.” The basic ideas of this report can be applied to many other cases where one RNN-like system exploits the algorithmic information content of another."
+	"Real brains seem to be learning a predictive model of their initially unknown environment, but are still far superior to present artificial systems in many ways. They seem to exploit the model in smarter ways, e.g., to plan action sequences in hierarchical fashion, or through other types of abstract reasoning, continually building on earlier acquired skills, becoming increasingly general problem solvers able to deal with a large number of diverse and complex task."
+	"We introduced novel combinations of a RNNs-based reinforcement learning controller, C, and an RNN-based predictive world model, M. In a series of trials, an RNN controller C steers an agent interacting with an initially unknown, partially observable environment. The entire lifelong interaction history is stored, and used to train an RNN world model M, which learns to predict new inputs of C (including rewards) from histories of previous inputs and actions, using predictive coding to compress the history. Controller C may uses M to achieve its goals more efficiently, e.g., through cheap, “mental” M-based trials, as opposed to expensive trials in the real world. M is temporarily used as a surrogate for the environment: M and C form a coupled RNN where M’s outputs become inputs of C, whose outputs (actions) in turn become inputs of M. Now a gradient descent technique can be used to learn and plan ahead by training C in a series of M-simulated trials to produce output action sequences achieving desired input events, such as high real-valued reward signals (while the weights of M remain fixed). Given an RL problem, C may speed up its search for rewarding behavior by learning programs that address/query/exploit M’s program-encoded knowledge about predictable regularities, e.g., through extra connections from and to (a copy of) M. This may be much cheaper than learning reward-generating programs from scratch. C also may get intrinsic reward for creating experiments causing data with yet unknown regularities that improve M."
+	"The most general CM systems implement principles of algorithmic as opposed to traditional information theory. M is actively exploited in arbitrary computable ways by C, whose program search space is typically much smaller, and which may learn to selectively probe and reuse M’s internal programs to plan and reason. The basic principles are not limited to RL, but apply to all kinds of active algorithmic transfer learning from one RNN to another. By combining gradient-based RNNs and RL RNNs, we create a qualitatively new type of self-improving, general purpose, connectionist control architecture. This RNNAI may continually build upon previously acquired problem solving procedures, some of them self-invented in a way that resembles a scientist’s search for novel data with unknown regularities, preferring still-unsolved but quickly learnable tasks over others."
+	"Early CM systems did not yet use powerful RNNs such as LSTM. A more fundamental problem is that if the environment is too noisy, M will usually only learn to approximate the conditional expectations of predicted values, given parts of the history. In certain noisy environments, Monte Carlo Tree Sampling and similar techniques may be applied to M to plan successful future action sequences for C. All such methods, however, are about simulating possible futures time step by time step, without profiting from human-like hierarchical planning or abstract reasoning, which often ignores irrelevant details."
+	"This approach is different from other, previous combinations of traditional RL and RNNs which use RNNs only as value function approximators that directly predict cumulative expected reward, instead of trying to predict all sensations time step by time step. The CM system in the present section separates the hard task of prediction in partially observable environments from the comparatively simple task of RL under the Markovian assumption that the current input to C (which is M’s state) contains all information relevant for achieving the goal."
+	"Our RNN-based CM systems of the early 1990s could in principle plan ahead by performing numerous fast mental experiments on a predictive RNN world model, M, instead of time-consuming real experiments, extending earlier work on reactive systems without memory. However, this can work well only in (near-)deterministic environments, and, even there, M would have to simulate many entire alternative futures, time step by time step, to find an action sequence for C that maximizes reward. This method seems very different from the much smarter hierarchical planning methods of humans, who apparently can learn to identify and exploit a few relevant problem-specific abstractions of possible future events; reasoning abstractly, and efficiently ignoring irrelevant spatio-temporal details."
+	"According to Algorithmic Information Theory, given some universal computer, U, whose programs are encoded as bit strings, the mutual information between two programs p and q is expressed as K(q | p), the length of the shortest program w that computes q, given p, ignoring an additive constant of O(1) depending on U (in practical applications the computation will be time-bounded). That is, if p is a solution to problem P, and q is a fast (say, linear time) solution to problem Q, and if K(q | p) is small, and w is both fast and much shorter than q, then asymptotically optimal universal search for a solution to Q, given p, will generally find w first (to compute q and solve Q), and thus solve Q much faster than search for q from scratch."
+	"Let both C and M be RNNs or similar general parallel-sequential computers. M’s vector of learnable real-valued parameters wM is trained by any SL or UL or RL algorithm to perform a certain well-defined task in some environment. Then wM is frozen. Now the goal is to train C’s parameters wC by some learning algorithm to perform another well-defined task whose solution may share mutual algorithmic information with the solution to M’s task. To facilitate this, we simply allow C to learn to actively inspect and reuse (in essentially arbitrary computable fashion) the algorithmic information conveyed by M and wM."
+	"It means that now C’s relatively small candidate programs are given time to “think” by feeding sequences of activations into M, and reading activations out of M, before and while interacting with the environment. Since C and M are general computers, C’s programs may query, edit or invoke subprograms of M in arbitrary, computable ways through the new connections. Given some RL problem, according to the AIT argument, this can greatly accelerate C’s search for a problem-solving weight vector wˆ, provided the (time-bounded) mutual algorithmic information between wˆ and M’s program is high, as is to be expected in many cases since M’s environment-modeling program should reflect many regularities useful not only for prediction and coding, but also for decision making."
+	"This simple but novel approach is much more general than previous computable, but restricted, ways of letting a feedforward C use a model M, by simulating entire possible futures step by step, then propagating error signals or temporal difference errors backwards. Instead, we give C’s program search an opportunity to discover sophisticated computable ways of exploiting M’s code, such as abstract hierarchical planning and analogy-based reasoning. For example, to represent previous observations, an M implemented as an LSTM network will develop high-level, abstract, spatio-temporal feature detectors that may be active for thousands of time steps, as long as those memories are useful to predict (and thus compress) future observations. However, C may learn to directly invoke the corresponding “abstract” units in M by inserting appropriate pattern sequences into M. C might then short-cut from there to typical subsequent abstract representations, ignoring the long input sequences normally required to invoke them in M, thus quickly anticipating a few possible positive outcomes to be pursued (plus computable ways of achieving them), or negative outcomes to be avoided."
+	"Note that M (and by extension M) does not at all have to be a perfect predictor. For example, it won’t be able to predict noise. Instead M will have learned to approximate conditional expectations of future inputs, given the history so far. A naive way of exploiting M’s probabilistic knowledge would be to plan ahead through naive step-by-step Monte-Carlo simulations of possible M-predicted futures, to find and execute action sequences that maximize expected reward predicted by those simulations. However, we won’t limit the system to this naive approach. Instead it will be the task of C to learn to address useful problem-specific parts of the current M, and reuse them for problem solving. Sure, C will have to intelligently exploit M, which will cost bits of information (and thus search time for appropriate weight changes of C), but this is often still much cheaper in the AIT sense than learning a good C program from scratch."
+	"While M’s weights are frozen, the weights of C can learn when to make C attend to history information represented by M’s state, and when to ignore such information, and instead use M’s innards in other computable ways. This can be further facilitated by introducing a special unit, uˆ, to C, where uˆ(t)all(t) instead of all(t) is fed into M at time t, such that C can easily (by setting uˆ(t) = 0) force M to completely ignore environmental inputs, to use M for “thinking” in other ways."
+	"Given a new task and a C trained on several previous tasks, such hierarchical/incremental methods may freeze the current weights of C, then enlarge C by adding new units and connections which are trained on the new task. This process reduces the size of the search space for the new task, giving the new weights the opportunity to learn to use the frozen parts of C as subprograms."
+	--
+	"What you describe is my other old RNN-based CM system from 1990: a recurrent controller C and a recurrent world model M, where C can use M to simulate the environment step by step and plan ahead. But the new stuff is different and much less limited - now C can learn to ask all kinds of computable questions to M (e.g., about abstract long-term consequences of certain subprograms), and get computable answers back. No need to simulate the world millisecond by millisecond (humans apparently don’t do that either, but learn to jump ahead to important abstract subgoals)."
+
+Gashler, Kindle, Smith - "A Minimal Architecture for General Cognition" [http://arxiv.org/abs/1508.00019]
+	"A minimalistic cognitive architecture called MANIC is presented. The MANIC architecture requires only three function approximating models, and one state machine. Even with so few major components, it is theoretically sufficient to achieve functional equivalence with all other cognitive architectures, and can be practically trained. Instead of seeking to trasfer architectural inspiration from biology into artificial intelligence, MANIC seeks to minimize novelty and follow the most wellestablished constructs that have evolved within various subfields of data science. From this perspective, MANIC offers an alternate approach to a long-standing objective of artificial intelligence. This paper provides a theoretical analysis of the MANIC architecture."
+	"We presented a cognitive architecture called MANIC. This architecture unifies a diversity of techniques in the subdisciplines of machine learning and artificial intelligence without introducing much novelty. Yet, while relying on existing methods, and with minimal complexity, MANIC is a powerful cognitive architecture. We showed that it is sufficiently general to accomplish arbitrary cognitive tasks, and that it can be practically trained using recent methods. We supported MANIC’s design by referring to existing works that validate its individual components, and we made theoretical arguments about the capabilities that should emerge from combining them in the manner outlined by MANIC. The primary contribution of this paper is to show that these existing methods can already accomplish more of cognitive intelligence than is generally recognized. Our ultimate intent is to argue that if general intelligence is one of the ultimate objectives of the fields of machine learning and artificial intelligence, then they are very much on the right track, and it is not clear that any critical piece of understanding necessary for implementing a rudimentary consciousness is definitely missing."
+
+
+
+
+[interesting papers - induction, prediction, intelligence]
+
+Hutter - "On Universal Prediction and Bayesian Confirmation" [http://arxiv.org/abs/0709.1516]
+	"The Bayesian framework is a well-studied and successful framework for inductive reasoning, which includes hypothesis testing and confirmation, parameter estimation, sequence prediction, classification, and regression. But standard statistical guidelines for choosing the model class and prior are not always available or fail, in particular in complex situations. Solomonoff completed the Bayesian framework by providing a rigorous, unique, formal, and universal choice for the model class and the prior. We discuss in breadth how and in which sense universal (non-i.i.d.) sequence prediction solves various (philosophical) problems of traditional Bayesian sequence prediction. We show that Solomonoff's model possesses many desirable properties: Strong total and weak instantaneous bounds, and in contrast to most classical continuous prior densities has no zero p(oste)rior problem, i.e. can confirm universal hypotheses, is reparametrization and regrouping invariant, and avoids the old-evidence and updating problem. It even performs well (actually better) in non-computable environments."
+
+Legg - "Is there an Elegant Universal Theory of Prediction?" [http://arxiv.org/pdf/cs/0606070.pdf]
+	"Solomonoff induction is an elegant and extremely general model of inductive learning. It neatly brings together the philosophical principles of Occam’s razor, Epicurus’ principle of multiple explanations, Bayes theorem and Turing’s model of universal computation into a theoretical sequence predictor with astonishingly powerful properties. If theoretical models of prediction can have such elegance and power, one cannot help but wonder whether similarly beautiful and highly general computable theories of prediction are also possible.
+	What we have shown here is that there does not exist an elegant constructive theory of prediction for computable sequences, even if we assume unbounded computational resources, unbounded data and learning time, and place moderate bounds on the Kolmogorov complexity of the sequences to be predicted. Very powerful computable predictors are therefore necessarily complex. We have further shown that the source of this problem is computable sequences which are extremely expensive to compute. While we have proven that very powerful prediction algorithms which can learn to predict these sequences exist, we have also proven that, unfortunately, mathematical analysis cannot be used to discover these algorithms due to problems of Goedel incompleteness.
+	These results can be extended to more general settings, specifically to those problems which are equivalent to, or depend on, sequence prediction. Consider, for example, a reinforcement learning agent interacting with an environment. In each interaction cycle the agent must choose its actions so as to maximise the future rewards that it receives from the environment. Of course the agent cannot know for certain whether or not some action will lead to rewards in the future, thus it must predict these. Clearly, at the heart of reinforcement learning lies a prediction problem, and so the results for computable predictors presented in this paper also apply to computable reinforcement learners. More specifically, it follows that very powerful computable reinforcement learners are necessarily complex, and it follows that it is impossible to discover extremely powerful reinforcement learning algorithms mathematically."
+	-- http://lo-tho.blogspot.ru/2012/08/truth-and-ai.html
+
+Levin - "Universal Search"
+...
+	-- https://rjlipton.wordpress.com/2011/03/14/levins-great-discoveries/
+
+Schmidhuber - "Discovering Neural Nets with Low Kolmogorov Complexity and High Generalization Capability" [ftp://ftp.idsia.ch/pub/juergen/loconet.pdf]
+	"Many neural net learning algorithms aim at finding "simple" nets to explain training data. The expectation is that the "simpler" the networks, the better the generalization on test data (-> Occam's razor). Previous implementations, however, use measures for "simplicity" that lack the power, universality and elegance of those based on Kolmogorov complexity and Solomonoff's algorithmic probability. Likewise, most previous approaches (especially those of the "Bayesian" kind) suffer from the problem of choosing appropriate priors. This paper addresses both issues. It first reviews some basic concepts of algorithmic complexity theory relevant to machine learing, and how the Solomonoff-Levin distribution (or universal prior) deals with the prior problem. The universal prior leads to a probabilistic method for finding "algorithmically simple" problem solutions with high generalization capability. The method is based on Levin complexity (a time-bounded generalization of Kolmogorov complexity) and inspired by Levin's optimal universal search algorithm. For a given problem, solution candidates are computed by efficient "self-sizing" programs that influence their own runtime and storage size. The probabilistic search algorithm finds the "good" programs (the ones quickly computing algorithmically probable solutions fitting the training data). Simulations focus on the task of discovering "algorithmically simple" neural networks with low Kolmogorov complexity and high generalization capability. It is demonstrated that the method, at least with certain toy problems where it is computationally feasible, can lead to generalization results unmatchable by previous neural network algorithms. Much remains to be done, however, to make large scale applications and "incremental learning" feasible."
+	-- application of Levin/Universal Search
+
+Schmidhuber, Zhao, Wiering - "Shifting Inductive Bias with Success-story Algorithm, Adaptive Levin Search, and Incremental Self-Improvement" [ftp://ftp.idsia.ch/pub/juergen/mljssalevin.pdf]
+	"We study task sequences that allow for speeding up the learner's average reward intake through appropriate shifts of inductive bias (changes of the learner's policy). To evaluate long-term effects of bias shifts setting the stage for later bias shifts we use the "success-story algorithm". SSA is occasionally called at times that may depend on the policy itself. It uses backtracking to undo those bias shifts that have not been empirically observed to trigger long-term reward accelerations (measured up until the current SSA call). Bias shifts that survive SSA represent a lifelong success history. Until the next SSA call, they are considered useful and build the basis for additional bias shifts. SSA allows for plugging in a wide variety of learning algorithms. We plug in (1) a novel, adaptive extension of Levin search and (2) a method for embedding the learner's policy modification strategy within the policy itself (incremental self-improvement). Our inductive transfer case studies involve complex, partially observable environments where traditional reinforcement learning fails."
+
+Hutter - "Self-Optimizing and Pareto-Optimal Policies in General Environments based on Bayes-Mixtures" [http://arxiv.org/abs/cs/0204040]
+	"The problem of making sequential decisions in unknown probabilistic environments is studied. In cycle t action yt results in perception xt and reward rt, where all quantities in general may depend on the complete history. The perception xt and reward rt are sampled from the (reactive) environmental probability distribution µ. This very general setting includes, but is not limited to, (partial observable, k-th order) Markov decision processes. Sequential decision theory tells us how to act in order to maximize the total expected reward, called value, if µ is known. Reinforcement learning is usually used if µ is unknown. In the Bayesian approach one defines a mixture distribution ξ as a weighted sum of distributions ν∈ M, where M is any class of distributions including the true environment µ. We show that the Bayes optimal policy pξ based on the mixture ξ is self-optimizing in the sense that the average value converges asymptotically for all µ∈ M to the optimal value achieved by the (infeasible) Bayes-optimal policy pµ which knows µ in advance. We show that the necessary condition that M admits self-optimizing policies at all, is also sufficient. No other structural assumptions are made on M. As an example application, we discuss ergodic Markov decision processes, which allow for self-optimizing policies. Furthermore, we show that pξ is Pareto-optimal in the sense that there is no other policy yielding higher or equal value in all environments ν∈ M and a strictly higher value in at least one."
+
+Hutter - "Universal Algorithmic Intelligence: A Mathematical Top-down Approach" [http://arxiv.org/abs/cs/0701125]
+	"Sequential decision theory formally solves the problem of rational agents in uncertain worlds if the true environmental prior probability distribution is known. Solomonoff’s theory of universal induction formally solves the problem of sequence prediction for unknown prior distribution. We combine both ideas and get a parameter-free theory of universal Artificial Intelligence. We give strong arguments that the resulting AIXI model is the most intelligent unbiased agent possible. We outline how the AIXI model can formally solve a number of problem classes, including sequence prediction, strategic games, function minimization, reinforcement and supervised learning. The major drawback of the AIXI model is that it is uncomputable. To overcome this problem, we construct a modified algorithm AIXItl that is still effectively more intelligent than any other time t and length l bounded agent. The computation time of AIXItl is of the order t·2^l . The discussion includes formal definitions of intelligence order relations, the horizon problem and relations of the AIXI theory to other AI approaches."
+
+Veness, Ng, Hutter, Uther, Silver - "A Monte-Carlo AIXI Approximation" [https://www.jair.org/media/3125/live-3125-5397-jair.pdf] (MC-AIXI-CTW)
+	"This paper introduces a principled approach for the design of a scalable general reinforcement learning agent. Our approach is based on a direct approximation of AIXI, a Bayesian optimality notion for general reinforcement learning agents. Previously, it has been unclear whether the theory of AIXI could motivate the design of practical algorithms. We answer this hitherto open question in the affirmative, by providing the first computationally feasible approximation to the AIXI agent. To develop our approximation, we introduce a new Monte-Carlo Tree Search algorithm along with an agent-specific extension to the Context Tree Weighting algorithm. Empirically, we present a set of encouraging results on a variety of stochastic and partially observable domains. We conclude by proposing a number of directions for future research."
+	"This paper presents the first computationally feasible general reinforcement learning agent that directly and scalably approximates the AIXI ideal. Although well established theoretically, it has previously been unclear whether the AIXI theory could inspire the design of practical agent algorithms. Our work answers this question in the affirmative: empirically, our approximation achieves strong performance and theoretically, we can characterise the range of environments in which our agent is expected to perform well. To develop our approximation, we introduced two new algorithms: ρUCT, a Monte-Carlo expectimax approximation technique that can be used with any online Bayesian approach to the general reinforcement learning problem and FAC-CTW, a generalisation of the powerful CTW algorithm to the agent setting. In addition, we highlighted a number of interesting research directions that could improve the performance of our current agent; in particular, model class expansion and the online learning of heuristic rollout policies for ρUCT."
+	-- http://youtube.com/watch?v=yfsMHtmGDKE (Pacman demo)
+	-- http://videolectures.net/nips09_veness_bfg/
+	-- http://jveness.info/publications/veness_phd_thesis_final.pdf
+	-- http://jveness.info/software/mcaixi_jair_2010.zip
+	-- https://github.com/moridinamael/mc-aixi
+
+Leike, Hutter - "On the Computability of Solomonoff Induction and Knowledge-Seeking" [http://arxiv.org/abs/1507.04124]
+	"Solomonoff induction is held as a gold standard for learning, but it is known to be incomputable. We quantify its incomputability by placing various flavors of Solomonoff's prior M in the arithmetical hierarchy. We also derive computability bounds for knowledge-seeking agents, and give a limit-computable weakly asymptotically optimal reinforcement learning agent."
+
+Leike, Hutter - "On the Computability of AIXI" [http://arxiv.org/abs/1507.04124]
+	"How could we solve the machine learning and the artificial intelligence problem if we had infinite computation? Solomonoff induction and the reinforcement learning agent AIXI are proposed answers to this question. Both are known to be incomputable. In this paper, we quantify this using the arithmetical hierarchy, and prove upper and corresponding lower bounds for incomputability. We show that AIXI is not limit computable, thus it cannot be approximated using finite computation. Our main result is a limit-computable ε-optimal version of AIXI with infinite horizon that maximizes expected rewards."
+
+Leike, Hutter - "Bad Universal Priors and Notions of Optimality" [http://jmlr.csail.mit.edu/proceedings/papers/v40/Leike15.pdf]
+	"A big open question of algorithmic information theory is the choice of the universal Turing machine. For Kolmogorov complexity and Solomonoff induction we have invariance theorems: the choice of the UTM changes bounds only by a constant. For the universally intelligent agent AIXI no invariance theorem is known. Our results are entirely negative: we discuss cases in which unlucky or adversarial choices of the UTM cause AIXI to misbehave drastically. We show that Legg-Hutter intelligence and thus balanced Pareto optimality is entirely subjective, and that every policy is Pareto optimal in the class of all computable environments. This undermines all existing optimality properties for AIXI. While it may still serve as a gold standard for AI, our results imply that AIXI is a relative theory, dependent on the choice of the UTM."
+	"The choice of the universal Turing machine has been a big open question in algorithmic information theory for a long time. While attempts have been made no answer is in sight. The Kolmogorov complexity of a string, the length of the shortest program that prints this string, depends on this choice. However, there are invariance theorems which state that changing the UTM changes Kolmogorov complexity only by a constant. When using the universal prior M introduced by Solomonoff to predict any deterministic computable binary sequence, the number of wrong predictions is bounded by (a multiple of) the Kolmogorov complexity of the sequence. Due to the invariance theorem, changing the UTM changes the number of errors only by a constant. In this sense, compression and prediction work for any choice of UTM. Hutter defines the universally intelligent agent AIXI, which is targeted at the general reinforcement learning problem. It extends Solomonoff induction to the interactive setting. AIXI is a Bayesian agent, using a universal prior on the set of all computable environments; actions are taken according to the maximization of expected future discounted rewards. Closely related is the intelligence measure defined by Legg and Hutter, a mathematical performance measure for general reinforcement learning agents: defined as the discounted rewards achieved across all computable environments, weighted by the universal prior. There are several known positive results about AIXI. It has been proven to be Pareto optimal, balanced Pareto optimal, and has maximal Legg-Hutter intelligence. Furthermore, AIXI asymptotically learns to predict the environment perfectly and with a small total number of errors analogously to Solomonoff induction, but only on policy: AIXI learns to correctly predict the value (expected future rewards) of its own actions, but generally not the value of counterfactual actions that it does not take. Orseau showed that AIXI does not achieve asymptotic optimality in all computable environments. So instead, we may ask the following weaker questions. Does AIXI succeed in every partially observable Markov decision process/(ergodic) Markov decision process/bandit problem/sequence prediction task? In this paper we show that without further assumptions on the UTM, we cannot answer any of the preceding questions in the affirmative. More generally, there can be no invariance theorem for AIXI. As a reinforcement learning agent, AIXI has to balance between exploration and exploitation. Acting according to any (universal) prior does not lead to enough exploration, and the bias of AIXI’s prior is retained indefinitely. For bad priors this can cause serious malfunctions. However, this problem can be alleviated by adding an extra exploration component to AIXI, similar to knowledge-seeking agents, or by the use of optimism. We give two examples of universal priors that cause AIXI to misbehave drastically. In case of a finite lifetime, the indifference prior makes all actions equally preferable to AIXI. Furthermore, for any computable policy π the dogmatic prior makes AIXI stick to the policy π as long as expected future rewards do not fall too close to zero. This has profound implications. We show that if we measure Legg-Hutter intelligence with respect to a different universal prior, AIXI scores arbitrarily close to the minimal intelligence while any computable policy can score arbitrarily close to the maximal intelligence. This makes the Legg-Hutter intelligence score and thus balanced Pareto optimality relative to the choice of the UTM. Moreover, we show that in the class of all computable environments, every policy is Pareto optimal. This undermines all existing optimality results for AIXI. We discuss the implications of these results for the quest for a natural universal Turing machine and optimality notions of general reinforcement learners."
+
+Hutter - "The Fastest and Shortest Algorithm for All Well-Defined Problems"
+...
+
+Schmidhuber - "The Speed Prior: A New Simplicity Measure Yielding Near-Optimal Computable Predictions"
+...
+
+Schmidhuber - "Bias-optimal Incremental Problem Solving"
+...
+
+Schmidhuber - "Optimal Ordered Problem Solver"
+...
+	"The Optimal Ordered Problem Solver searches for a universal algorithm that solves each task in a sequence of tasks. It continually organizes and exploits previously found solutions to earlier tasks, efficiently searching not only the space of domain-specific algorithms, but also the space of search algorithms. It can be used for efficient proof search by the even more general Gödel machine."
+
+Hutter - "Open Problems in Universal Induction & Intelligence" [http://arxiv.org/pdf/0907.0746.pdf]
+	"Specialized intelligent systems can be found everywhere: finger print, hand-writing, speech, and face recognition, spam filtering, chess and other game programs, robots, et al. This decade the first presumably complete mathematical theory of artificial intelligence based on universal induction-prediction-decision-action has been proposed. This information-theoretic approach solidifies the foundations of inductive inference and artificial intelligence. Getting the foundations right usually marks a significant progress and maturing of a field. The theory provides a gold standard and guidance for researchers working on intelligent algorithms. The roots of universal induction have been laid exactly half-a-century ago and the roots of universal intelligence exactly one decade ago. So it is timely to take stock of what has been achieved and what remains to be done. Since there are already good recent surveys, I describe the state-of-the-art only in passing and refer the reader to the literature. This article concentrates on the open problems in universal induction and its extension to universal intelligence."
+
+Solomonoff - "Algorithmic Probability, Heuristic Programming and AGI" [http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.172.6923]
+	"This paper is about Algorithmic Probability (ALP) and Heuristic Programming and how they can be combined to achieve AGI. We first describe ALP, giving the most common implementation of it, then the features of ALP relevant to its application to AGI. They are: Completeness, Incomputability, Subjectivity and Diversity. We then show how these features enable us to create a very general, very intelligent problem solving machine. For this we will devise “Training Sequences” — sequences of problems designed to put problem-solving information into the machine. We describe a few kinds of training sequences. The problems are solved by a “generate and test” algorithm, in which the candidate solutions are selected through a “Guiding Probability Distribution”. The use of Levin’s search procedure enables us to efficiently consider the full class of partial recursive functions as possible solutions to our problems. The guiding probability distribution is updated after each problem is solved, so that the next problem can profit from things learned in the previously solved problems. We describe a few updating techniques. Improvements in updating based on heuristic programming is one of the principal directions of current research. Designing training sequences is another important direction. For some of the simpler updating algorithms, it is easy to “merge” the guiding probabilities of machines that have been educated using different training sequences — resulting in a machine that is more intelligent than any of the component machines."
+
+
+
+
+[interesting papers - artificial curiosity and creativity]
+
+Schmidhuber - "Artificial Scientists and Artists Based on the Formal Theory of Creativity" [http://people.idsia.ch/~juergen/agi10.pdf]
+	"I have argued that a simple but general formal theory of creativity based on reward for creating or finding novel patterns allowing for data compression progress explains many essential aspects of intelligence including science, art, music, humor. Here I discuss what kind of general bias towards algorithmic regularities we insert into our robots by implementing the principle, why that bias is good, and how the approach greatly generalizes the field of active learning. I provide discrete and continuous time formulations for ongoing work on building an Artificial General Intelligence based on variants of the artificial creativity framework."
+	"In the real world external rewards are rare. But unsupervised AGIs using additional intrinsic rewards as described in this paper will be motivated to learn many useful behaviors even in absence of external rewards, behaviors that lead to predictable or compressible results and thus reflect regularities in the environment, such as repeatable patterns in the world’s reactions to certain action sequences. Often a bias towards exploring previously unknown environmental regularities through artificial curiosity / creativity is a priori desirable because goal-directed learning may greatly profit from it, as behaviors leading to external reward may often be rather easy to compose from previously learnt curiosity-driven behaviors. It may be possible to formally quantify this bias towards novel patterns in form of a mixture-based prior, a weighted sum of probability distributions on sequences of actions and resulting inputs, and derive precise conditions for improved expected external reward intake. Intrinsic reward may be viewed as analogous to a regularizer in supervised learning, where the prior distribution on possible hypotheses greatly influences the most probable interpretation of the data in a Bayesian framework (for example, the well-known weight decay term of neural networks is a consequence of a Gaussian prior with zero mean for each weight). Following the introductory discussion, some of the AGIs based on the creativity principle will become scientists, artists, or comedians."
+	-- http://idsia.ch/~juergen/creativity.html
+	-- https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber
+	-- https://vimeo.com/28759091
+	-- http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/
+	-- https://vimeo.com/7441291
+
+Orseau - "Universal Knowledge-Seeking Agents" [http://www.agroparistech.fr/mmip/maths/laurent_orseau/papers/orseau-TCS-2014-uksa.pdf]
+	"Reinforcement learning agents like Hutter’s universal, Pareto optimal, incomputable AIXI heavily rely on the definition of the rewards, which are necessarily given by some “teacher” to define the tasks to solve. Therefore, as is, AIXI cannot be said to be a fully autonomous agent. From the point of view of artificial general intelligence, this can be argued to be an incomplete definition of a generally intelligent agent. Furthermore, it has recently been shown that AIXI can converge to a suboptimal behavior in certain situations, hence showing the intrinsic difficulty of RL, with its non-obvious pitfalls. We propose a new model of intelligence, the knowledge-seeking agent, halfway between Solomonoff induction and AIXI, that defines a completely autonomous agent that does not require a teacher. The goal of this agent is not to maximize arbitrary rewards, but to entirely explore its world in an optimal way. A proof of strong asymptotic optimality for a class of horizon functions shows that this agent behaves according to expectation. Some implications of such an unusual agent are proposed."
+	"We defined a new kind of universal intelligent agents, named knowledge-seeking agents, which differ significantly from the traditional reinforcement learning framework and its associated universal optimal learner AIXI: Their purpose is not to solve particular, narrow tasks, given or defined by experts like humans, but to be fully autonomous and to depend on no external intelligent entity. Full autonomy is an important property if we are to create generally intelligent agents, that should match or surpass (collective) human intelligence. We believe such agents (or their computational variants) should turn out to be useful to humanity in a different way than RL agents, since they should constantly be creative and solve interesting problems that we may not yet know. It seems that this kind of agent can still be directed to some extent, either by using pieces of knowledge as rewards, or by controlling the parts of the environment the agent interacts with, or by giving it prior knowledge. But these are only temporary biases that decrease in strength as the agent acquires knowledge, in the convergence to optimality. In the real world, where all agents are mortal in some way, it is unlikely that a KSA would be too curious so as to threaten its own life, since a (predicted) death would prevent it from acquiring more knowledge. From a game theory perspective, knowledge-seeking is a positive-sum game, and all the players should cooperate to maximize their knowledge. This is an interesting property regarding the safety of other intelligent agents, as long as they are interested in knowledge (which humans seem to be, at least to some point). However, this alone cannot ensure complete safety because, as soon as several agents have limited resources, a conflict situation can occur, which is not good news for the less “powerful” of the agents."
+	"We proved convergence of Square-KSA to the optimal non-learning variant of this agent for a class of horizon functions, meaning that it behaves according to expectation, even in the limit, in all computable environments. If the horizon function grows incomputably fast, we also proved that any environment that is different from the true one sufficiently often is eventually discarded. If the horizon function grows only in a computable way, we showed that environments that may not be discarded tend to be indistinguishable from the true environment in the limit."
+	"The related agent, Shannon-KSA, based on Shannon entropy, has interesting properties and its value function can be interpreted in terms of how many bits of complexity (information) the agent can expect to gain by doing a particular string of actions. Its asymptotic optimality has been proven but with more restrictions than for Square-KSA, and it is not clear if it can be extended beyond the current limitations."
+	"As for AIXI, we hope that the various KSA properties to extend nicely to stochastic computable environments. We also expect Square-KSAρ or Shannon-KSAρ (or both) to be Pareto optimal, to converge quickly, in an optimal way to the true environment, i.e., no learning agent should acquire knowledge faster. We are currently trying to get rid of the horizon function in an optimal way. One possibility could be to choose an horizon function based on ρ(h), although having asymptotic optimality for a geometric discounting would also be a good property, as such discounting is time consistent and widely used in RL. Another important concern is how to optimally (for some definition of optimality) scale down SquareKSAρ to a computable agent."
+
+Schmidhuber - "PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem" [http://arxiv.org/pdf/1112.5309v2.pdf]
+	"Most of computer science focuses on automatically solving given computational problems. I focus on automatically inventing or discovering problems in a way inspired by the playful behavior of animals and humans, to train a more and more general problem solver from scratch in an unsupervised fashion. Consider the infinite set of all computable descriptions of tasks with possibly computable solutions. Given a general problem solving architecture, at any given time, the novel algorithmic framework PowerPlay searches the space of possible pairs of new tasks and modifications of the current problem solver, until it finds a more powerful problem solver that provably solves all previously learned tasks plus the new one, while the unmodified predecessor does not. Newly invented tasks may require to achieve a wow-effect by making previously learned skills more efficient such that they require less time and space. New skills may (partially) re-use previously learned skills. The greedy search of typical PowerPlay variants uses time-optimal program search to order candidate pairs of tasks and solver modifications by their conditional computational (time & space) complexity, given the stored experience so far. The new task and its corresponding task-solving skill are those first found and validated. This biases the search towards pairs that can be described compactly and validated quickly. The computational costs of validating new tasks need not grow with task repertoire size. Standard problem solver architectures of personal computers or neural networks tend to generalize by solving numerous tasks outside the self-invented training set; PowerPlay’s ongoing search for novelty keeps breaking the generalization abilities of its present solver. This is related to Goedel’s sequence of increasingly powerful formal theories based on adding formerly unprovable statements to the axioms without affecting previously provable theorems. The continually increasing repertoire of problem solving procedures can be exploited by a parallel search for solutions to additional externally posed tasks. PowerPlay may be viewed as a greedy but practical implementation of basic principles of creativity."
+
+Srivastava, Steunebrink, Stollenga, Schmidhuber - "Continually Adding Self-Invented Problems to the Repertoire: First Experiments with PowerPlay" [http://people.idsia.ch/~steunebrink/Publications/ICDL12_powerplay.pdf]
+	"Pure scientists do not only invent new methods to solve given problems. They also invent new problems. The recent PowerPlay framework formalizes this type of curiosity and creativity in a new, general, yet practical way. To acquire problem solving prowess through playing, PowerPlay-based artificial explorers by design continually come up with the fastest to find, initially novel, but eventually solvable problems. They also continually simplify or speed up solutions to previous problems. We report on results of first experiments with PowerPlay. A self-delimiting recurrent neural network (SLIM RNN) is used as a general computational architecture to implement the system’s solver. Its weights can encode arbitrary, self-delimiting, halting or non-halting programs affecting both environment (through effectors) and internal states encoding abstractions of event sequences. In open-ended fashion, our PowerPlay-driven RNNs learn to become increasingly general problem solvers, continually adding new problem solving procedures to the growing repertoire, exhibiting interesting developmental stages."
+
+Frank, Leitner, Stollenga, Forster, Schmidhuber - "Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids" [http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3881010/pdf/fnbot-07-00025.pdf]
+	"Most previous work on artificial curiosity and intrinsic motivation focuses on basic concepts and theory. Experimental results are generally limited to toy scenarios, such as navigation in a simulated maze, or control of a simple mechanical system with one or two degrees of freedom. To study AC in a more realistic setting, we embody a curious agent in the complex iCub humanoid robot. Our novel reinforcement learning framework consists of a state-of-the-art, low-level, reactive control layer, which controls the iCub while respecting constraints, and a high-level curious agent, which explores the iCub’s state-action space through information gain maximization, learning a world model from experience, controlling the actual iCub hardware in real-time. To the best of our knowledge, this is the first ever embodied, curious agent for real-time motion planning on a humanoid. We demonstrate that it can learn compact Markov models to represent large regions of the iCub’s configuration space, and that the iCub explores intelligently, showing interest in its physical constraints as well as in objects it finds in its environment."
+	-- https://vimeo.com/51011081
+	-- http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/
+
+Nguyen, Yosinski, Clune - Innovation Engines: Automated Creativity and Improved Stochastic Optimization via Deep Learning [http://www.evolvingai.org/files/InnovationEngine_gecco15.pdf]
+	"The Achilles Heel of stochastic optimization algorithms is getting trapped on local optima. Novelty Search avoids this problem by encouraging a search in all interesting directions. That occurs by replacing a performance objective with a reward for novel behaviors, as defined by a human-crafted, and often simple, behavioral distance function. While Novelty Search is a major conceptual breakthrough and outperforms traditional stochastic optimization on certain problems, it is not clear how to apply it to challenging, high-dimensional problems where specifying a useful behavioral distance function is difficult. For example, in the space of images, how do you encourage novelty to produce hawks and heroes instead of endless pixel static? Here we propose a new algorithm, the Innovation Engine, that builds on Novelty Search by replacing the human-crafted behavioral distance with a Deep Neural Network that can recognize interesting differences between phenotypes. The key insight is that DNNs can recognize similarities and differences between phenotypes at an abstract level, wherein novelty means interesting novelty. For example, a novelty pressure in image space does not explore in the low-level pixel space, but instead creates a pressure to create new types of images (e.g. churches, mosques, obelisks, etc.). Here we describe the long-term vision for the Innovation Engine algorithm, which involves many technical challenges that remain to be solved. We then implement a simplified version of the algorithm that enables us to explore some of the algorithm’s key motivations. Our initial results, in the domain of images, suggest that Innovation Engines could ultimately automate the production of endless streams of interesting solutions in any domain: e.g. producing intelligent software, robot controllers, optimized physical components, and art."
+	-- http://evolvingai.org/InnovationEngine
+
+
+
+
+[interesting papers - self-improvement and resource-boundedness]
+
+Schmidhuber - "Goedel Machines: Self-Referential Universal Problem Solvers Making Provably Optimal Self-Improvements" [http://arxiv.org/abs/cs/0309048]
+	"We present the first class of mathematically rigorous, general, fully self-referential, self-improving, optimally efficient problem solvers. Inspired by Kurt Goedel's celebrated self-referential formulas, such a problem solver rewrites any part of its own code as soon as it has found a proof that the rewrite is useful, where the problem-dependent utility function and the hardware and the entire initial code are described by axioms encoded in an initial proof searcher which is also part of the initial code. The searcher systematically and efficiently tests computable proof techniques (programs whose outputs are proofs) until it finds a provably useful, computable self-rewrite. We show that such a self-rewrite is globally optimal - no local maxima! - since the code first had to prove that it is not useful to continue the proof search for alternative self-rewrites. Unlike previous non-self-referential methods based on hardwired proof searchers, ours not only boasts an optimal order of complexity but can optimally reduce any slowdowns hidden by the O()-notation, provided the utility of such speed-ups is provable at all."
+	"The initial software p(1) of our Goedel machine runs an initial, typically sub-optimal problem solver, e.g., one of Hutter’s approaches which have at least an optimal order of complexity, or some less general method. Simultaneously, it runs an O()-optimal initial proof searcher using an online variant of Universal Search to test proof techniques, which are programs able to compute proofs concerning the system’s own future performance, based on an axiomatic system A encoded in p(1), describing a formal utility function u, the hardware and p(1) itself. If there is no provably good, globally optimal way of rewriting p(1) at all, then humans will not find one either. But if there is one, then p(1) itself can find and exploit it. This approach yields the first class of theoretically sound, fully self-referential, optimally efficient, general problem solvers. After the theoretical discussion, one practical question remains: to build a particular, especially practical Goedel machine with small initial constant overhead, which generally useful theorems should one add as axioms to A (as initial bias) such that the initial searcher does not have to prove them from scratch?"
+
+Hochreiter, Younger, Conwell - "Learning To Learn Using Gradient Desent" [http://www.bioinf.jku.at/publications/older/1504.pdf]
+	"This paper introdues the application of gradient desent methods to meta-learning. The conept of meta-learning", i.e. of a system that improves or disovers a learning algorithm, has been of interest in mahine learning for decades beause of its appealing applications. Previous meta-learning approahes have been based on evolutionary methods and, therefore, have been restrited to small models with few free parameters. We make meta-learning in large systems feasible by using recurrent neural networks with their attendant learning routines as meta-learning systems. Our system derived complex well performing learning algorithms from scratch. In this paper we also show that our approach performs non-stationary time series prediction."
+	"Previous approaches to meta-learning are infeasible for a large number of system parameters. To handle many free parameters this paper presented the application of gradient desent to meta-learning by using recurrent nets. Our theoretial analysis indicated that LSTM is a good meta-learner what was confirmed in the experiments. With an LSTM net our system derived a learning algorithm able to approximate any quadratic funtion after only 35 examples. Our approach requires a single training sequence, therefore, it may be relevant for lifelong learning and autonomous robots. The meta-learner proposed in this paper performed non-stationary time series prediction."
+	-- http://people.idsia.ch/~juergen/metalearner.html
+	(Juergen Schmidhuber) "Self-referential RNNs with special output units for addressing and rapidly manipulating each of the RNN's own weights in differentiable fashion."
+	"Author trained LSTM networks with roughly 5000 weights to METALEARN fast online learning algorithms for nontrivial classes of functions, such as all quadratic functions of two variables. LSTM is necessary because metalearning typically involves huge time lags between important events, and standard RNNs cannot deal with these. After a month of metalearning on a slow PC of 15 years ago, all weights are frozen, then the frozen net is used as follows: some new function f is selected, then a sequence of random training exemplars of the form ...data/target/data/target/data... is fed into the INPUT units, one sequence element at a time. After about 30 exemplars the frozen recurrent net correctly predicts target inputs before it sees them. No weight changes! How is this possible? After metalearning the frozen net implements a sequential learning algorithm which apparently computes something like error signals from data inputs and target inputs and translates them into changes of internal estimates of f. Parameters of f, errors, temporary variables, counters, computations of f and of parameter updates are all somehow represented in form of circulating activations. Remarkably, the new - and quite opaque - online learning algorithm running on the frozen network is much faster than standard backprop with optimal learning rate. This indicates that one can use gradient descent to metalearn learning algorithms that outperform gradient descent. Furthermore, the metalearning procedure automatically avoids overfitting in a principled way, since it punishes overfitting online learners just like it punishes slow ones, simply because overfitters and slow learners cause more cumulative errors during metalearning."
+	-- http://scholarpedia.org/article/Metalearning
+
+Thorisson - "A New Constructivist AI: From Manual Methods to Self-Constructive Systems" [http://xenia.media.mit.edu/~kris/ftp/Thorisson_chapt9_TFofAGI_Wang_Goertzel_2012.pdf]
+	"The development of artificial intelligence systems has to date been largely one of manual labor. This constructionist approach to AI has resulted in systems with limited-domain application and severe performance brittleness. No AI architecture to date incorporates, in a single system, the many features that make natural intelligence general-purpose, including system-wide attention, analogy-making, system-wide learning, and various other complex transversal functions. Going beyond current AI systems will require significantly more complex system architecture than attempted to date. The heavy reliance on direct human specification and intervention in constructionist AI brings severe theoretical and practical limitations to any system built that way. One way to address the challenge of artificial general intelligence (AGI) is replacing a top-down architectural design approach with methods that allow the system to manage its own growth. This calls for a fundamental shift from hand-crafting to self-organizing architectures and self-generated code – what we call a constructivist AI approach, in reference to the self-constructive principles on which it must be based. Methodologies employed for constructivist AI will be very different from today’s software development methods; instead of relying on direct design of mental functions and their implementation in a cognitive architecture, they must address the principles – the “seeds” – from which a cognitive architecture can automatically grow. In this paper I describe the argument in detail and examine some of the implications of this impending paradigm shift."
+	-- http://youtube.com/watch?v=_Pmz4BcrPo0
+
+Helgason, Nivel, Thorisson - "On Attention Mechanisms for AGI Architectures: A Design Proposal" [http://agi-conference.org/2012/wp-content/uploads/2012/12/paper_16.pdf]
+	"Many existing AGI architectures are based on the assumption of infinite computational resources, as researchers ignore the fact that real-world tasks have time limits, and managing these is a key part of the role of intelligence. In the domain of intelligent systems the management of system resources is typically called “attention”. Attention mechanisms are necessary because all moderately complex environments are likely to be the source of vastly more information than could be processed in realtime by an intelligence’s available cognitive resources. Even if sufficient resources were available, attention could help make better use of them. We argue that attentional mechanisms are not only nice to have, for AGI architectures they are an absolute necessity. We examine ideas and concepts from cognitive psychology for creating intelligent resource management mechanisms and how these can be applied to engineered systems. We present a design for a general attention mechanism intended for implementation in AGI architectures."
+
+Steunebrink, Koutnik, Thorisson, Nivel, Schmidhuber - "Resource-Bounded Machines are Motivated to be Effective, Efficient, and Curious" [http://people.idsia.ch/~steunebrink/Publications/AGI13_resource-bounded.pdf]
+	"Resource-boundedness must be carefully considered when designing and implementing artificial general intelligence algorithms and architectures that have to deal with the real world. But not only must resources be represented explicitly throughout its design, an agent must also take into account their usage and the associated costs during reasoning and acting. Moreover, the agent must be intrinsically motivated to become progressively better at utilizing resources. This drive then naturally leads to effectiveness, efficiency, and curiosity. We propose a practical operational framework that explicitly takes into account resource constraints: activities are organized to maximally utilize an agent’s bounded resources as well as the availability of a teacher, and to drive the agent to become progressively better at utilizing its resources. We show how an existing AGI architecture called AERA can function inside this framework. In short, the capability of AERA to perform self-compilation can be used to motivate the system to not only accumulate knowledge and skills faster, but also to achieve goals using less resources, becoming progressively more effective and efficient."
+	-- http://youtube.com/watch?v=mGaiXhcIZQY
+
+Nivel, Thorisson, Steunebrink, Dindo, Pezzulo, Rodriguez, Hernandez, Ognibene, Schmidhuber, Sanz, Helgason, Chella - "Bounded Seed-AGI" [http://people.idsia.ch/~steunebrink/Publications/AGI14_seed-AGI.pdf]
+	"Four principal features of autonomous control systems are left both unaddressed and unaddressable by present-day engineering methodologies: (1) The ability to operate effectively in environments that are only partially known at design time; (2) A level of generality that allows a system to reassess and redefine the fulfillment of its mission in light of unexpected constraints or other unforeseen changes in the environment; (3) The ability to operate effectively in environments of significant complexity; and (4) The ability to degrade gracefully - how it can continue striving to achieve its main goals when resources become scarce, or in light of other expected or unexpected constraining factors that impede its progress. We describe new methodological and engineering principles for addressing these shortcomings, that we have used to design a machine that becomes increasingly better at behaving in underspecified circumstances, in a goal-directed way, on the job, by modeling itself and its environment as experience accumulates. The work provides an architectural blueprint for constructing systems with high levels of operational autonomy in underspecified circumstances, starting from only a small amount of designer-specified code - a seed. Using value-driven dynamic priority scheduling to control the parallel execution of a vast number of lines of reasoning, the system accumulates increasingly useful models of its experience, resulting in recursive self-improvement that can be autonomously sustained after the machine leaves the lab, within the boundaries imposed by its designers. A prototype system named AERA has been implemented and demonstrated to learn a complex real-world task—real-time multimodal dialogue with humans - by on-line observation. Our work presents solutions to several challenges that must be solved for achieving artificial general intelligence."
+	-- http://youtube.com/watch?v=hQ20pwUkeak
+
+
+
+
+<brylevkirill@gmail.com>
