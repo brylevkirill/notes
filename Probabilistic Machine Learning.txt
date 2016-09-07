@@ -1,3 +1,5 @@
+"Probabilistic/statistical machine learning frames models as distributions over data and latent variables, allowing models to address a broad array of downstream tasks. The underlying statistical methodology of latent variable models is typically Bayesian."
+
 "Probability is the representation of uncertain or partial knowledge about the truth of statements."
 
 "Logical inference is about what is certain to be true. Statistical inference is about what is likely to be true."
@@ -32,33 +34,46 @@ selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91I
 
   Josh Tenenbaum - "Development of Intelligence: Bayesian Inference" - http://youtube.com/watch?v=icEdI0AIOlU
 
-  Marcus Hutter - "Foundations of Machine Learning and Universal Artificial Intelligence" (the most general bayesian approach to machine learning) -
+  Marcus Hutter - "Foundations of Machine Learning and Universal Artificial Intelligence" (general bayesian approach to machine learning) -
 	http://videolectures.net/ssll09_hutter_uai/ + http://videolectures.net/mlss08au_hutter_fund/
+
+  E.T. Jaynes - "How Does the Brain Do Plausible Reasoning" - http://bayes.wustl.edu/etj/articles/brain.pdf
 
 
 
 
 [introduction to probability and statistics]
 
+  http://johndcook.com/blog/probability-modeling/
+  http://johndcook.com/blog/2012/04/19/random-is-as-random-does/
+
   Chris Bishop - http://blogs.technet.com/b/machinelearning/archive/2014/10/22/embracing-uncertainty-the-role-of-probabilities.aspx
                  http://blogs.technet.com/b/machinelearning/archive/2014/10/30/embracing-uncertainty-probabilistic-inference.aspx
+
+  "Probabilistic Modelling" by Iain Murray -
+	https://youtube.com/watch?v=pOtvyVYAuW4 + https://youtube.com/watch?v=khagz6yWL9w + https://youtube.com/watch?v=U1IAMQYZjfw
+
 
   https://quora.com/What-is-the-most-important-mathematical-concept-in-statistics
 
   http://johndcook.com/blog/2008/03/19/plausible-reasoning/
 
+  http://zinkov.com/posts/2015-06-09-where-priors-come-from/
+
+
   http://www.brera.mi.astro.it/~andreon/inference/Inference.html
+
+  "Information Theory for Machine Learning" - https://github.com/mtomassoli/papers/blob/master/inftheory.pdf
 
   "Basics of Statistical Machine Learning" - http://pages.cs.wisc.edu/~jerryzhu/cs761/stat.pdf
 
-  "Probabilistic Modelling" by Iain Murray - https://youtube.com/watch?v=pOtvyVYAuW4 + http://homepages.inf.ed.ac.uk/imurray2/teaching/14mlss/
-
   http://matthias.vallentin.net/probability-and-statistics-cookbook/cookbook-en.pdf
-
-  course by Joe Blitzstein - https://youtube.com/playlist?list=PLCzY7wK5FzzPANgnZq5pIT3FOomCT1s36
 
   selected papers and books on probability and statistics - https://dropbox.com/sh/ff6xkunvb9emlc1/AAA3SCZx5kvdr1BlYq9ArEaka
 
+
+  course by Joe Blitzstein - https://youtube.com/playlist?list=PLCzY7wK5FzzPANgnZq5pIT3FOomCT1s36
+  "Bayesian Statistics" - https://coursera.org/learn/bayesian/
   "Математическая статистика" - https://compscicenter.ru/courses/math-stat/2015-spring/ (in russian)
   "Algorithmic Information Theory and Randomness" - http://youtube.com/watch?v=X0Lo5IWLjko (in russian)
 
@@ -67,9 +82,14 @@ selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91I
 
 [bayesian methods]
 
+  https://slackprop.wordpress.com/2016/08/28/the-three-faces-of-bayes/
+
   http://fastml.com/bayesian-machine-learning/
 
   https://reddit.com/r/MachineLearning/comments/3x470a/why_are_bayesian_methods_considered_more_elegant/
+
+  difference between bayesian and frequentist expected loss - https://en.wikipedia.org/wiki/Loss_function#Expected_loss
+
 
   Nando de Freitas - "Bayesian Learning" -
 	https://youtube.com/watch?v=7192wm3NWSY + https://youtube.com/watch?v=hhKFa12y0Iw
@@ -81,36 +101,22 @@ selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91I
 
   Chris Bishop - "Introduction to Bayesian Inference" - http://videolectures.net/mlss09uk_bishop_ibi/
 
-  Michael Jordan - "Bayesian or Frequentist, Which Are You?" - http://videolectures.net/mlss09uk_jordan_bfway/
+  Zoubin Ghahramani - "Bayesian Inference" -
+	https://youtube.com/watch?v=kjo9Y_Vrgn4 + https://youtube.com/watch?v=yzNbaAPKXA8 + https://youtube.com/watch?v=H7AMB0oo__4
+	http://webdav.tuebingen.mpg.de/mlss2013/2015/slides/ghahramani/lect1bayes.pdf
+	http://webdav.tuebingen.mpg.de/mlss2013/2015/slides/ghahramani/gp-neural-nets15.pdf
+	http://webdav.tuebingen.mpg.de/mlss2013/2015/slides/ghahramani/mlss15future.pdf
 
-  Zoubin Ghahramani - "Should all Machine Learning be Bayesian? Should all Bayesian models be non-parametric?" - http://videolectures.net/bark08_ghahramani_samlbb/
+  Bob Carpenter - "Bayesian Inference and MCMC" - https://youtube.com/watch?v=qQFF4tPgeWI
 
 
-  "Bayesian Methods for Machine Learning" by Radford Neal - http://www.cs.toronto.edu/~radford/ftp/bayes-tut.pdf
-  notes - http://frnsys.com/ai_notes/machine_learning/bayesian_learning.html
-
+  Radford Neal - "Bayesian Methods for Machine Learning" - http://www.cs.toronto.edu/~radford/ftp/bayes-tut.pdf
   Michael Tipping - "Bayesian Inference: An Introduction to Principles and Practice in Machine Learning" - http://miketipping.com/papers/met-mlbayes.pdf
+
+  notes - http://frnsys.com/ai_notes/machine_learning/bayesian_learning.html
 
   course by Dmitry Vetrov (in russian) - https://youtube.com/playlist?list=PLlb7e2G7aSpR8mbaShVBods-hGaFGifkl
   course by Dmitry Vetrov and Dmitry Kropotov (in russian) - http://machinelearning.ru/wiki/images/e/e1/BayesML-2007-textbook-1.pdf + http://machinelearning.ru/wiki/images/4/43/BayesML-2007-textbook-2.pdf
-
-
-  advantages of bayesian inference - http://bayesian-inference.com/advantagesbayesian
-  advantages of frequentist inference - http://bayesian-inference.com/advantagesfrequentist
-  frequentist vs bayesian vs machine learning - http://stats.stackexchange.com/a/73180
-
-  http://jakevdp.github.io/blog/2014/03/11/frequentism-and-bayesianism-a-practical-intro/
-  http://jakevdp.github.io/blog/2014/06/06/frequentism-and-bayesianism-2-when-results-differ/
-  http://jakevdp.github.io/blog/2014/06/12/frequentism-and-bayesianism-3-confidence-credibility/
-  http://jakevdp.github.io/blog/2014/06/14/frequentism-and-bayesianism-4-bayesian-in-python/
-  http://jakevdp.github.io/blog/2015/08/07/frequentism-and-bayesianism-5-model-selection/
-
-  "Frequentism and Bayesianism: A Python-driven Primer" - http://arxiv.org/abs/1411.5018
-
-  http://nowozin.net/sebastian/blog/becoming-a-bayesian-part-1.html
-  http://nowozin.net/sebastian/blog/becoming-a-bayesian-part-2.html
-  http://nowozin.net/sebastian/blog/becoming-a-bayesian-part-3.html
-
 
   http://bayesian-inference.com/bayesian
   http://metacademy.org/roadmaps/rgrosse/bayesian_machine_learning
@@ -120,28 +126,43 @@ selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91I
 
   "A reading list on Bayesian methods" - https://cocosci.berkeley.edu/tom/bayes.html
 
-  "Unsupervised Learning" tutorial by Zoubin Ghahramani - http://mlg.eng.cam.ac.uk/zoubin/papers/ul.pdf
-	"We briefly review basic models in unsupervised learning, including factor analysis, PCA, mixtures of Gaussians, ICA, hidden Markov models, state-space models, and many variants and extensions. We derive the EM algorithm and give an overview of fundamental concepts in graphical models, and inference algorithms on graphs. This is followed by a quick tour of approximate Bayesian inference, including Markov chain Monte Carlo (MCMC), Laplace approximation, BIC, variational approximations, and expectation propagation. The aim of this chapter is to provide a high-level view of the field. Along the way, many state-of-the-art ideas and future directions are also reviewed."
+
+  Michael Jordan - "Bayesian or Frequentist, Which Are You?" - http://videolectures.net/mlss09uk_jordan_bfway/
+  Zoubin Ghahramani - "Should all Machine Learning be Bayesian? Should all Bayesian models be non-parametric?" - http://videolectures.net/bark08_ghahramani_samlbb/
 
 
-  "Bayesian Reasoning and Deep Learning" tutorial by Shakir Mohamed -
+
+
+[deep learning]
+
+  Dmitry Vetrov - "Bayesian Inference and Deep Learning" (in russian) - https://youtu.be/_qrHcSdQ2J4?t=22m31s
+
+  Shakir Mohamed - "Bayesian Reasoning and Deep Learning" -
 	http://blog.shakirm.com/2015/10/bayesian-reasoning-and-deep-learning/ + http://blog.shakirm.com/wp-content/uploads/2015/10/Bayes_Deep.pdf
 
-  http://blog.shakirm.com/2015/10/machine-learning-trick-of-the-day-4-reparameterisation-tricks/
-  http://blog.shakirm.com/2015/11/machine-learning-trick-of-the-day-5-log-derivative-trick/
+  Shakir Mohamed - "A Statistical View of Deep Learning" -
+	http://blog.shakirm.com/2015/01/a-statistical-view-of-deep-learning-i-recursive-glms/
+	http://blog.shakirm.com/2015/03/a-statistical-view-of-deep-learning-ii-auto-encoders-and-free-energy/
+	http://blog.shakirm.com/2015/04/a-statistical-view-of-deep-learning-iii-memory-and-kernels/
+	http://blog.shakirm.com/2015/05/a-statistical-view-of-deep-learning-iv-recurrent-nets-and-dynamical-systems/
+	http://blog.shakirm.com/2015/05/a-statistical-view-of-deep-learning-v-generalisation-and-regularisation/
+
+  Yarin Gal - "What my deep model doesn't know" - http://mlg.eng.cam.ac.uk/yarin/blog_3d801aa532c1ce.html
 
 
 
 
 [books]
 
+  Chris Bishop - "Pattern Recognition and Machine Learning" - https://dropbox.com/s/pwtiuqs27lblvjz/Bishop%20-%20Pattern%20Recognition%20and%20Machine%20Learning.pdf
   Kevin Murphy - "Machine Learning - A Probabilistic Perspective" - https://dropbox.com/s/jdly520i5irx1h6/Murphy%20-%20Machine%20Learning%20-%20A%20Probabilistic%20Perspective.pdf
-  Chris Bishop - "Pattern Recognition and Machine Learning" ("Graphical Models" chapter) - http://research.microsoft.com/en-us/um/people/cmbishop/PRML/pdf/Bishop-PRML-sample.pdf
   Daphne Koller, Nir Friedman - "Probabilistic Graphical Models: Principles and Techniques" - https://dropbox.com/s/cc3mafx3wp0ad1t/Daphne%20Koller%20and%20Nir%20Friedman%20-%20Probabilistic%20Graphical%20Models%20-%20Principles%20and%20Techniques.pdf
-  Judea Pearl - "Probabilistic Reasoning in Intelligent Systems"
   David Barber - "Bayesian Reasoning and Machine Learning" - http://web4.cs.ucl.ac.uk/staff/D.Barber/pmwiki/pmwiki.php?n=Brml.Online
   David MacKay - "Information Theory, Inference and Learning Algorithms" - http://www.inference.phy.cam.ac.uk/mackay/itila/book.html
   Art Owen - "Monte Carlo theory, methods and examples" - http://statweb.stanford.edu/~owen/mc/
+  E.T. Jaynes - "Probability Theory: The Logic of Science" - https://dropbox.com/s/pt5tpm9i5wofbl5/Jaynes%20-%20Probability%20Theory%20-%20The%20Logic%20of%20Science.pdf
+  Judea Pearl - "Probabilistic Reasoning in Intelligent Systems"
+  Judea Pearl - "Causality: Models, Reasoning, and Inference"
   David Danks - "Unifying the Mind" - http://mitpress.mit.edu/books/unifying-mind
 
 
@@ -161,6 +182,10 @@ selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91I
 
 
 [theory]
+
+  "Statistical Inference is based on the probability (or probability density) of the observed data y0 given particular parameter values θ. This is known as the likelihood function, π(y0|θ). Since y0 is fixed this is a function of θ and so can be written L(θ). Approaches to inference involve optimising this, used in maximum likelihood methods, or exploring it, for Bayesian methods.
+  In Bayesian methods a probability distribution must be specified on the unknown parameters, usually through a density π(θ). This represents prior beliefs about the parameters before any data is observed. The aim is to learn the posterior beliefs resulting from updating the prior to incorporate the observations. Mathematically this is an application of conditional probability using Bayes theorem: the posterior is π(θ|y0)=kπ(θ)L(θ), where k is a constant of proportionality that is typically hard to calculate. A central aim of Bayesian inference is to produce methods which approximate useful properties of the posterior in a reasonable time."
+
 
 advantages of bayesian approach
   - deal with small sample size
@@ -225,6 +250,33 @@ bayesian inference
   MCMC inference: slow convergence, but estimates can become arbitrarily close to true posterior given long enough computation-time.
 
 
+myths and misconceptions about bayesian methods:
+  - bayesian methods make assumptions where other methods don't (all methods make assumptions otherwise it's impossible to predict, but bayesian methods are transparent in their assumptions whereas other methods are often opaque)
+  - if you don't have the right prior you won't do well (no such thing as the right prior, choose vague priors such as nonparametrics when in doubt)
+  - Maximum A Posteriori (MAP) is a bayesian method (MAP is similar to regularization, the key in bayesian methods is to average over uncertain variables and parameters rather than to optimize)
+  - bayesian methods don't have theoretical guarantees (frequentist style generalization error bounds such as PAC-Bayes can be applied, it is often possible to prove convergence, consistency and rates)
+  - bayesian methods are generative (can be used for both generative and discriminative learning such as in gaussian process classification)
+  - bayesian methods don't scale well (variational inference and MCMC can scale to very large datasets but averaging/integration is indeed more expensive than optimization)
+  - as the data set grows infinitly Bayes converges to maximum likelihood, prior washes out, integration becomes unnecessary (this assumes we want to learn a fixed simple model from infinitely large iid data points, while big data is more like large set of little data sets having structure to be learned, such as for per-user recommendations with millions of users or hundreds of thousands of items where there is little data points for each user/item and no data for new ones, and we would really like to learn models in which number of parameters grows with the size of the data set such as in nonparametric models and in to learn hierarchical models such as combination of models for particular users and model for person in general)
+
+
+challenges:
+
+  - inference in probabilistic programming systems and broad model families:
+
+    Gradient-based methods for parameter estimation, variational inference
+    Metropolis-Hastings variants with efficient rescoring
+    Message passing variants
+    Sequential Monte Carlo variants
+
+  - learning to infer using discriminative methods to amortize probabilistic inference:
+
+    Variational Autoencoders
+    Deep Latent Gaussian Models
+    Restricted Boltzmann Machines
+    Neural Network based MCMC proposals
+
+
 
 
 [graphical models]
@@ -257,10 +309,17 @@ bayesian inference
     - have both a causal and probabilistic semantics, and hence it is an ideal representation for combining prior knowledge (which often comes in causal form) and data
     - (like another bayesian statistical methods) offer an efficient and principled approach for avoiding the overfitting of data
 
+  https://theneural.wordpress.com/2011/07/17/undirected-models-are-better-at-sampling/ (Ilya Sutskever)
+
 
   Dmitry Vetrov (in russian)
 	http://youtube.com/watch?v=D_dNxrIazco
 	http://youtube.com/watch?v=q-dpXbp16Lk
+
+  Chris Bishop
+	http://youtube.com/watch?v=ju1Grt2hdko
+	http://youtube.com/watch?v=c0AWH5UFyOk
+	http://youtube.com/watch?v=QJSEQeH40hM
 
   Nando de Freitas
 	"Bayesian Networks" - https://youtube.com/watch?v=KJMJl1SWLIo + https://youtube.com/watch?v=XgP2hmf7X4U + https://youtube.com/watch?v=Xhdpk9HZQuo
@@ -274,19 +333,21 @@ bayesian inference
 	"Models" - http://youtube.com/watch?v=PskLJBjH0Pk
 	"Undirected Graphical Models" - http://youtube.com/watch?v=X3JudqgiffM
 
-  Chris Bishop
-	http://youtube.com/watch?v=ju1Grt2hdko
-	http://youtube.com/watch?v=c0AWH5UFyOk
-	http://youtube.com/watch?v=QJSEQeH40hM
+  Pedro Domingos
+	"Statistical Learning" course - https://class.coursera.org/machlearning-001/
 
-  Pedro Domingos - "Statistical Learning" course - https://class.coursera.org/machlearning-001/
+  Daphne Koller
+	"Probabilistic Graphical Models" course - https://coursera.org/course/pgm + https://youtube.com/playlist?list=PL50E6E80E8525B59C
 
-  Daphne Koller - "Probabilistic Graphical Models" course - https://coursera.org/course/pgm + https://youtube.com/playlist?list=PL50E6E80E8525B59C
+  Alexander Ihler
+	"Approximate Inference in Graphical Models" - https://youtube.com/watch?v=p50Fbv-3qaM
+
 
   Michael I. Jordan - "Introduction to Graphical Models" - https://goo.gl/hctNE5
 
   David Heckerman - "A Tutorial on Learning With Bayesian Networks" -
 	http://research.microsoft.com/en-us/um/people/heckerman/tutorial.pdf
+
   Charles Sutton, Andrew McCallum - "An Introduction to Conditional Random Fields for Relational Learning" -
 	http://people.cs.umass.edu/~mccallum/papers/crf-tutorial.pdf
   Charles Elkan - "Log-linear Models and Conditional Random Fields" -
@@ -300,20 +361,30 @@ bayesian inference
 
   The advantage for Bayesian nonparametrics leans toward the advantage of Bayesian methods as a whole - interpretability with incredibly intuitive ways to quantify uncertainty - as well as extending itself to infinite-dimensional parameter spaces. The former allows one to form significance tests and continue to pose all sorts of interesting questions, rather than to stop simply at the discriminative model; the latter makes the model theoretically more justified than a finite space and thus more promising as it is not as reliant on feature engineering.
 
-  The basic point of GPs is that they provide a prior distribution on real-valued functions. This lets you do regression as Bayesian inference: given observed data, Bayes' rule turns your prior on functions into a posterior distribution. Having a posterior distribution on functions, rather than just a single learned function, means you can reason about your uncertainty and use that to make decisions, e.g. collecting new data in the regions where your current beliefs are the most uncertain.
+  The basic point of GPs is that they provide a prior distribution on real-valued functions. This lets you do regression as Bayesian inference: given observed data, Bayes' rule turns your prior on functions into a posterior distribution. Having a posterior distribution on functions, rather than just a single learned function, means you can reason about uncertainty of your predictions at any set of points in terms of means and (co)variances. Generally this means you'll make very confident predictions in regions where you have a lot of training data, becoming less confident as you move away from the training data. And you can use that uncertainty estimates to make decisions, e.g. collecting new data in the regions where your current beliefs are the most uncertain.
 
   Gaussian Processes rather than fitting, say, a two-parameter line or four-parameter cubic curve, actually fit an infinite-dimensional model to data. They accomplish this by judicious use of certain priors on the model, along with a so-called "kernel trick" which solves the infinite dimensional regression implicitly using a finite-dimensional representation constructed based on these priors.
+
+  Gaussian processes are somewhat similar to Support Vector Machines - both use kernels and have similar scalability (which has been vastly improved throughout the years by using approximations). A natural formulation for GP is regression, with classification as an afterthought. For SVM it’s the other way around. Another difference is that GP are probabilistic from the ground up (providing error bars), while SVM are not. You can observe this in regression. Most “normal” methods only provide point estimates. Bayesian counterparts, like Gaussian processes, also output uncertainty estimates.
 
 
   "Yes, You Can Fit Models With More Parameters Than Data Points" - https://jakevdp.github.io/blog/2015/07/06/model-complexity-myth/
 
   https://reddit.com/r/MachineLearning/comments/3zwlpm/eli5_gaussian_processes/
 
-  Nando de Freitas - "Gaussian processes" -
-	https://youtube.com/watch?v=4vGiHC35j9s + https://youtube.com/watch?v=MfHKW5z-OOA
-	Bayesian optimization and Deep Learning - https://youtube.com/watch?v=PECQuDH73KY
+
+  Zoubin Ghahramani - https://youtu.be/H7AMB0oo__4?t=21m51s + http://webdav.tuebingen.mpg.de/mlss2013/2015/slides/ghahramani/gp-neural-nets15.pdf
+
+  Neil Lawrence - "Gaussian Processes" - https://youtube.com/watch?v=S9RbSCpy_pg + https://youtube.com/watch?v=MxeQIKGEXb8 + https://youtube.com/watch?v=Ead4TivIOmU
+
+  Nando de Freitas - https://youtube.com/watch?v=4vGiHC35j9s + https://youtube.com/watch?v=MfHKW5z-OOA
+
+  Neil Lawrence - https://dl.dropboxusercontent.com/u/16027344/ICML%202015%20Deep%20Learning%20Workshop/Neil%20Lawrence%2C%20Sheffield%20University.p2g/Default.html
+
+  Tamara Broderick - "Bayesian Nonparametrics" - https://youtube.com/watch?v=kKZkNUvsJ4M + https://youtube.com/watch?v=oPcv8MaESGY + https://youtube.com/watch?v=HpcGlr19vNk
 
   Zoubin Ghahramani - "Should all Machine Learning be Bayesian? Should all Bayesian models be non-parametric?" - http://videolectures.net/bark08_ghahramani_samlbb/
+
 
   Orbanz, Teh - "Bayesian Nonparametric Models" - http://www.stats.ox.ac.uk/~teh/research/npbayes/OrbTeh2010a.pdf
   Rasmussen, Williams - "Gaussian Processes for Machine Learning" - http://gaussianprocess.org/gpml/
@@ -342,17 +413,38 @@ bayesian inference
 
   introduction by Alex Smola - https://youtu.be/PpX6hllPVLs?t=1h1m22s (EM on single slide)
 
-  introduction by Dmitry Vetrov (in russian) - http://youtu.be/U0LylVL-zJM?t=35m59s + http://youtube.com/watch?v=CqjqTbUgbOo (Crisp EM, Variational EM, Stochastic EM)
+  introduction by Dmitry Vetrov (in russian) -
+	http://youtu.be/U0LylVL-zJM?t=35m59s + http://youtube.com/watch?v=CqjqTbUgbOo (Crisp EM, Variational EM, Stochastic EM)
 	http://lectoriy.mipt.ru/lecture/DeepHack-L04-150722.03
+
+  "EM Algorithm and Variants: an Informal Tutorial" by Alexis Roche - http://arxiv.org/abs/1105.1476
+
+
+  "So I think it's easier to understand EM through the lens of variational inference or the so called 'missing data' formulation. Say you have an observed variable x, parameters θ, and latent variables z. You want to maximize L = log p(x|θ) = log ∫ p(x,z|θ)dz. But you don't know z. To cope we'll define a 'variational distribution' (or 'inference model') q(z).
+  log ∫ p(x,z|θ)dz = log ∫ (q(z)/q(z))p(x,z|θ)dz ≥ <Jensen's inequality> ∫ q(z)log(p(x,z|θ)/q(z))dz = E[log p(x,z|θ)] + H[q(z)] where the expectation is over q and H[q(z)] is the entropy of the variational distribution. Since H[q(z)] is independent of θ, it can be dropped.
+  When EM is derived, q(z) is almost always set as q(z) = p(z|x,θ), but this isn't necessary. The above will be true for any distribution over z. Different choices will just vary how tight the lower-bound is.
+  Whatever we choose, what is have left is known as the 'Q-distribution': Q = E[log p(x,z|θ)] or Q = E[log p(x|θ)] if q(z) = p(z|x,θ) since p(x,z|θ)/q(z) = p(x|θ)(p(z|x,θ)/q(z))  
+  EM is usually written as first computing Q then optimizing wrt θ, but it really can be written in one step, EM update: argmax_θ E[log p(x,z|θ)]
+  Now if you want to think of p as a conditional classifier over labels y, you start out with L = log p(y|x,θ) = log ∫ p(y,z|θ,x)dz And the rest proceeds as above except conditioned on x."
+
+  "The EM algorithm is a class of optimizers specifically taylored to ML problems, which makes it both general and not so general. Perhaps the most salient feature of EM is that it works iteratively by maximizing successive local approximations of the likelihood function. Therefore, each iteration consists of two steps: one that performs the approximation (the E-step) and one that maximizes it (the M-step). But, let's make it clear, not any two-step iterative scheme is an EM algorithm. For instance, Newton and quasi-Newton methods work in a similar iterative fashion but do not have much to do with EM. What essentially defines an EM algorithm is the philosophy underlying the local approximation scheme - which, for instance, doesn't rely on differential calculus.
+  The key idea underlying EM is to introduce a latent variable Z whose PDF depends on θ with the property that maximizing p(z|θ) is easy or, say, easier than maximizing p(y|θ). Loosely speaking, we somewhat enhance the incomplete data by guessing some useful additional information. Technically, Z can be any variable such that θ -> Z -> Y is a Markov chain, i.e. we assume that p(y|z,θ) is independent from θ: p(z,y|θ) = p(z|θ)p(y|z).
+  Original EM formulation stems from a very simple variational argument. Under almost no assumption regarding the complete variable Z, except its PDF doesn't vanish to zero, we can bound the variation of the log-likelihood function L(θ) = log p(y|θ) as follows:
+  L(θ) - L(θ') = log (p(y|θ) / p(y|θ')) = log ∫ (p(z,y|θ) / p(y|θ'))dz = log ∫ (p(z,y|θ) / p(z,y|θ')) p(z|y,θ') dz = [step 1] log ∫ (p(z|θ) / p(z|θ')) p(z|y,θ') dz >= [step 2] (Q(θ,θ') = ∫ log(p(z|θ) / p(z|θ')) p(z|y,θ') dz)
+  Step 1 results from the fact that p(y|z,θ) is indepedent from θ because of p(z,y|θ) = p(z|θ)p(y|z). Step 2 follows from Jensen's inequality along with the well-known concavity property of the logarithm function. Therefore Q(θ,θ') is an auxiliary function for the log-likelihood, in the sense that: (i) the likelihood variation from θ' to θ is always greater than Q(θ,θ'), and (ii) we have Q(θ,θ') = 0. Hence, starting from an initial guess θ', we are guaranteed to increase the likelihood value if we can find a θ such that Q(θ,θ') > 0. Iterating such a process defines an EM algorithm."
+  There is no general convergence theorem for EM, but thanks to the above mentioned monotonicity property, convergence results may be proved under mild regularity conditions. Typically, convergence towards a non-global likelihood maximizer, or a saddle point, is a worst-case scenario. Still, the only trick behind EM is to exploit the concavity of the logarithm function!"
 
 
 
 
 [variational inference]
 
-  Variational inference is a paradigm where instead of trying to compute exactly the posterior distribution one searches through a parametric family for the closest (in relative entropy) distribution to the true posterior. The key observation is that one can perform stochastic gradient descent for this problem without having to compute the normalization constant in the posterior distribution (which is often an intractable problem). The only catch is that one needs to be able to sample from an element (conditioned on the observed data) of the parametric family under consideration, and this might itself be a difficult problem in large-scale applications.
+  The ever-increasing size of data sets has resulted in an immense effort in machine learning and statistics to develop more powerful and scalable probabilistic models. Efficient inference remains a challenge and limits the use of these models in large-scale scientific and industrial applications. Traditional unbiased inference schemes such as Markov Chain Monte Carlo are often slow to run and difficult to evaluate in finite time. In contrast, variational inference allows for competitive run times and more reliable convergence diagnostics on large-scale and streaming data - while continuing to allow for complex, hierarchical modelling. The recent resurgence of interest in variational methods includes new methods for scalability using stochastic gradient methods, extensions to the streaming variational setting, improved local variational methods, inference in non-linear dynamical systems, principled regularisation in deep neural networks, and inference-based decision making in reinforcement learning, amongst others. Variational methods have clearly emerged as a preferred way to allow for tractable Bayesian inference. Despite this interest, there remain significant trade-offs in speed, accuracy, simplicity, applicability, and learned model complexity between variational inference and other approximative schemes such as MCMC and point estimation.
+
+  Variational inference is a paradigm where instead of trying to compute exactly the posterior distribution one searches through a parametric family for the closest (in relative entropy) distribution to the true posterior. The key observation is that one can perform stochastic gradient descent for this problem without having to compute the normalization constant in the posterior distribution (which is often an intractable problem). The only catch is that in order to compute the required gradients one needs to be able to use sample from variational posterior (sample an element of the parametric family under consideration conditioned on the observed data), and this might itself be a difficult problem in large-scale applications.
 
   Variational inference provides an optimization-based alternative to the sampling-based Monte Carlo methods, and tend to be more efficient. They involve approximating the exact posterior using a distribution from a more tractable family, often a fully factored one, by maximizing a variational lower bound on the log-likelihood w.r.t. the parameters of the distribution. For a small class of models, using such variational posteriors allows the expectations that specify the parameter updates to be computed analytically. However, for highly expressive models such as the ones we are interested in, these expectations are intractable even with the simplest variational posteriors. This difficulty is usually dealt with by lower bounding the intractable expectations with tractable one by introducing more variational parameters. However, this technique increases the gap between the bound being optimized and the log-likelihood, potentially resulting in a poorer fit to the data. In general, variational methods tend to be more model-dependent than sampling-based methods, often requiring non-trivial model-specific derivations.
+
 
   https://reddit.com/r/MachineLearning/comments/4cr6z1/openai_hires_a_bunch_of_variational_dudes/d1l1h6z
   https://reddit.com/r/MachineLearning/comments/4cr6z1/openai_hires_a_bunch_of_variational_dudes/d1l1p0f
@@ -360,19 +452,21 @@ bayesian inference
   http://davmre.github.io/inference/2015/11/13/elbo-in-5min/
   http://davmre.github.io/inference/2015/11/13/general_purpose_variational_inference/
 
-  http://quora.com/What-is-variational-inference/answer/Sam-Wang-45?srid=3ryH
+  http://barmaley-exe.github.io/posts/2016-07-01-neural-variational-inference-classical-theory.html
+  http://barmaley-exe.github.io/posts/2016-07-04-neural-variational-inference-stochastic-variational-inference.html
+  http://barmaley-exe.github.io/posts/2016-07-05-neural-variational-inference-blackbox.html
+
+
+  "Variational Inference for Machine Learning" by Shakir Mohamed - http://shakirm.com/papers/VITutorial.pdf
+  introduction by Kay Brodersen - https://people.inf.ethz.ch/bkay/talks/Brodersen_2013_03_22.pdf
 
   introduction by Blei, Kucukelbir, McAuliffe - http://arxiv.org/abs/1601.00670
-  Jordan, Ghahramani, Jaakkola, Saul - "An Introduction to Variational Methods for Graphical Model" - https://www.cs.berkeley.edu/~jordan/papers/variational-intro.pdf
-  Shakir Mohamed - "Variational Inference for Machine Learning" - http://shakirm.com/papers/VITutorial.pdf
-
+  "An Introduction to Variational Methods for Graphical Model" by Jordan, Ghahramani, Jaakkola, Saul - https://www.cs.berkeley.edu/~jordan/papers/variational-intro.pdf
   introduction by Dmitry Vetrov (in russian) - https://dropbox.com/s/t3iyeu78o0c86kq/Dmitry%20Vetrov%20-%20Variational%20Inference.pdf
 
-  introduction by Jordan Boyd-Graber - http://youtube.com/watch?v=2pEkWk-LHmU
 
-  Chris Bishop - "Graphical Models and Variational Inference" - http://videolectures.net/mlss04_bishop_gmvm/
-
-  "Variational Inference" by Alexander Stepochkin (in russian) - https://vk.com/wall-44016343_6782
+  "Variational Inference" by Jordan Boyd-Graber - http://youtube.com/watch?v=2pEkWk-LHmU
+  "Graphical Models and Variational Inference" by Chris Bishop - http://videolectures.net/mlss04_bishop_gmvm/
   "Doubly Stochastic Variational Inference" by Dmitry Molchanov (in russian) - http://93.180.23.59/videos/video/2780/
 
  
@@ -380,69 +474,118 @@ bayesian inference
   - approximate graphical model by simpler one
   - minimize 'distance' between models
 
-  The ever-increasing size of data sets has resulted in an immense effort in machine learning and statistics to develop more powerful and scalable probabilistic models. Efficient inference remains a challenge and limits the use of these models in large-scale scientific and industrial applications. Traditional unbiased inference schemes such as Markov chain Monte Carlo are often slow to run and difficult to evaluate in finite time. In contrast, variational inference allows for competitive run times and more reliable convergence diagnostics on large-scale and streaming data - while continuing to allow for complex, hierarchical modelling. The recent resurgence of interest in variational methods includes new methods for scalability using stochastic gradient methods, extensions to the streaming variational setting, improved local variational methods, inference in non-linear dynamical systems, principled regularisation in deep neural networks, and inference-based decision making in reinforcement learning, amongst others. Variational methods have clearly emerged as a preferred way to allow for tractable Bayesian inference. Despite this interest, there remain significant trade-offs in speed, accuracy, simplicity, applicability, and learned model complexity between variational inference and other approximative schemes such as MCMC and point estimation.
 
-  For approximating a posterior probability, variational Bayes is an alternative to Monte Carlo sampling methods for taking a fully Bayesian approach to statistical inference over complex distributions that are difficult to directly evaluate or sample from. In particular, whereas Monte Carlo techniques provide a numerical approximation to the exact posterior using a set of samples, Variational Bayes provides a locally-optimal, exact analytical solution to an approximation of the posterior.
+  variational Bayes
 
-  Variational Bayes can be seen as an extension of the Expectation Maximization algorithm from maximum a posteriori estimation (MAP estimation) of the single most probable value of each parameter to fully Bayesian estimation which computes (an approximation to) the entire posterior distribution of the parameters and latent variables. As in EM, it finds a set of optimal parameter values, and it has the same alternating structure as does EM, based on a set of interlocked (mutually dependent) equations that cannot be solved analytically.
+	introduction by Zoubin Ghahramani - https://youtu.be/yzNbaAPKXA8?t=19m45s
+	introduction by David Blei - https://www.cs.princeton.edu/courses/archive/fall11/cos597C/lectures/variational-inference-i.pdf
 
-  For many applications, variational Bayes produces solutions of comparable accuracy to Gibbs sampling at greater speed. However, deriving the set of equations used to iteratively update the parameters often requires a large amount of work compared with deriving the comparable Gibbs sampling equations. This is the case even for many models that are conceptually quite simple, as is demonstrated below in the case of a basic non-hierarchical model with only two parameters and no latent variables.
+	For approximating a posterior probability, variational Bayes is an alternative to Monte Carlo sampling methods for taking a fully Bayesian approach to statistical inference over complex distributions that are difficult to directly evaluate or sample from. In particular, whereas Monte Carlo techniques provide a numerical approximation to the exact posterior using a set of samples, Variational Bayes provides a locally-optimal, exact analytical solution to an approximation of the posterior. Variational Bayes can be seen as an extension of the Expectation Maximization algorithm from maximum a posteriori estimation (MAP estimation) of the single most probable value of each parameter to fully Bayesian estimation which computes (an approximation to) the entire posterior distribution of the parameters and latent variables. As in EM, it finds a set of optimal parameter values, and it has the same alternating structure as does EM, based on a set of interlocked (mutually dependent) equations that cannot be solved analytically. For many applications, variational Bayes produces solutions of comparable accuracy to Gibbs sampling at greater speed. However, deriving the set of equations used to iteratively update the parameters often requires a large amount of work compared with deriving the comparable Gibbs sampling equations. This is the case even for many models that are conceptually quite simple, as is demonstrated below in the case of a basic non-hierarchical model with only two parameters and no latent variables.
 
-  https://people.inf.ethz.ch/bkay/talks/Brodersen_2013_03_22.pdf
-
-
-  variational autoencoders
-	  "The auto-encoding variational Bayes framework allows powerful generative models to be trained efficiently by replacing slow iterative inference algorithms with fast feedforward approximate inference networks. The inference networks, which map observations to samples from the variational posterior, are trained jointly with the model by maximizing a common objective. This objective is a variational lower bound on the marginal loglikelihood, and it is straight-forward to show that it is a stochastic computation graph with particular choice of cost."
-
-	p(x|z) = N(x | mu_p(z), sigma_p(z)) - decoder
-	q(z|x) = N(z | mu_q(x), sigma_q(x)) - encoder
-	where mu_p, sigma_p and mu_q, sigma_q are neural nets that generate parameters of a distribution
-
-	"First, we're talking about reconstruction process. In order to reconstruct the input x you need to obtain its latent representation z using encoder q(z|x). Since q(z|x) is a distribution, you sample z from that distribution. Now you can either take the mean of p(x|z) as your reconstruction, or, again, sample from this distribution. The difference shouldn't matter in low dimensional spaces since most of the mass of normal distribution is concentrated around the mean, and normal distribution has little probability mass on its tails (i.e. it's not heavy-tailed).
-	Then, there's also sampling process. Remember that VAE is a generative (unsupervised) model, so we'd like to sample unseen x's from the model. If we didn't see them, we can't compute corresponding q(z|x) to sample z from. This is where the prior p(z) comes in: during the learning we optimized both reconstruction error and "regularization" term KL(q(z|x)||p(z)), which kept our encoder close to the prior. Now in order to sample from the model we first sample z from p(z) (in the paper it's standard multivariate Gaussian N(0, I)), and then use that z in the decoder p(x|z)."
-
-	encoder ("inference network") performs Bayesian posterior inference over the latent variables of a generative neural network
-
-	"The difference between VAE and conventional autoencoder is, given a probability distribution, VAE learns the best possible representation that is parametrized by defined distribution. Let's say we want to fit gaussian distribution to the data. Then, it is able to learn mean and standard deviation of the multiple gaussian functions (corresponding VAE latent units) with backpropagation with a simple parametrization trick. Eventually, you obtain multiple gaussians with different mean and std on the latent units of VAE and you can sample new instances out of these."
-
-	"In AEVB (and all of its variants, including the papers you cite) there are two forces acting on the sampling layer. One is the likelihood (i.e. loss from the decoder p(x|z) ) which tries to make the samples as deterministic as possible. The second is the KL term between the prior and the posterior (i.e. encoder distribution), which tries to make the samples look like samples from the prior. Competition between these two terms is what makes learning the variance of the distribution work, if you take away the KL term then the variance of the encoder will collapse."
-
-	"The "trick" part of the reparameterization trick is that you make the randomness an input to your model instead of something that happens "inside" it, which means you never need to differentiate with respect to sampling (which you can't do). Since the randomness is an input the whole network is deterministic, and you can differentiate the whole thing as normal.
-It is worth spending time understanding the AEVB paper, the explanation there is very good if you take the time to unpack it. In particular, consider the following two ways of writing the objective in Eq 5 (where L=1 for simplicity):
-	f(z) where z = g_phi(eps, x) and eps ~ p(eps)
-	f(z) where z ~ p_phi(x)
-	In the first version you can compute the gradient of f with respect to phi, because the sampling has been "moved out of the way", but in the second version the sampling step "blocks" the gradient from z to phi.
-	The second part of your question is trickier to answer because there are really two things going on in AEVB that come together to make the setup make sense, it's not just a matter of applying the reparameterization trick."
-
-	"Challenge for VAE-type generative models is to fit posterior approximators that are both flexible and computationally cheap to sample from and differentiate. Simple posterior approximations, like normal distributions with diagonal covariances, are often insufficiently capable of accurately modeling the true posterior distributions. This leads to looseness of the variational bound, meaning that the objective that is optimized (the variational bound) lies far from the objective we’re actually interested in (the marginal likelihood). This leads to many of the problems we’ve encountered when trying to scale VAEs up to high-dimensional spatiotemporal datasets. This is an active research area, and we expect many further advances."
+	variational lower bound L[q(θ;φ),D] is a second term in sum: log p(D) = ∫ q(θ;φ)log(p(θ,D)/q(θ;φ))dθ + Dkl(q(θ;φ)||p(θ|D))
 
 
+  variational autoencoder
+
+	introduction - http://kvfrans.com/variational-autoencoders-explained/
 	introduction and demo - http://vdumoulin.github.io/morphing_faces/
+	tutorial - http://arxiv.org/abs/1606.05908
+	papers - http://dustintran.com/blog/variational-auto-encoders-do-not-train-complex-generative-models/
 
-	Durk Kingma - http://youtube.com/watch?v=rjZL7aguLAs
-	Karol Gregor - http://youtube.com/watch?v=P78QYjWh5sM
 	Aaron Courville - http://videolectures.net/deeplearning2015_courville_autoencoder_extension/
+	Dmitry Vetrov - https://youtu.be/_qrHcSdQ2J4?t=1h37m21s (in russian)
+	Karol Gregor - https://dl.dropboxusercontent.com/u/16027344/ICML%202015%20Deep%20Learning%20Workshop/Karol%20Gregor%2C%20GOOGLE%20Deepmind.p2g/Default.html
+	Karol Gregor - http://youtube.com/watch?v=P78QYjWh5sM
+	Durk Kingma - http://youtube.com/watch?v=rjZL7aguLAs
 	Alexander Stepochkin - http://vk.com/video-44016343_456239092 (in russian)
 	Feodor Chervinsky - https://youtu.be/0veUbpdBqyk?t=50m50s (in russian)
 
 	http://inference.vc/probabilistic-models-and-autoencoders-my-new-favourite-papers/
 
 
+	"VAE framework aims to maximize the log-likelihood of the observed data x by introducing a set of stochastic latent variables z and marginalizing them out of the joint distribution p(x,z). While exact marginalization of the latent variables is generally intractable, the VAE introduces an approximate posterior q(z|x) and maximizes a variational lower bound on the log-likelihood of p(x). VAE allows powerful generative models to be trained efficiently by replacing slow iterative inference algorithms with fast feedforward approximate inference neural networks. The inference networks, which map observations to samples from the variational posterior, are trained jointly with the model by maximizing a common objective. This objective is a variational lower bound on the marginal log-likelihood."
+
+	pθ(x|z) = N(x | mu_p(z), sigma_p(z)) - decoder (generative neural network)
+	qφ(z|x) = N(z | mu_q(x), sigma_q(x)) - encoder (inference neural network)
+	where mu_p, sigma_p and mu_q, sigma_q are neural networks that generate parameters of a distribution
+
+	encoder performs Bayesian posterior inference over the latent variables of decoder
+	encoder learns to approximate pθ(z|x) by maximizing a variational lower bound on the data log-likelihood: log pθ(x) ≥ L(θ,φ,x)
+
+
+	variational lower bound:
+		log pθ(x) = L(θ,φ,x) + Dkl(qφ(z|x) || pθ(z|x)), where
+			L(θ,φ,x) := ∫ qφ(z|x)log(pθ(x,z)/qφ(z|x))dz    (variational free energy)
+			Dkl(qφ(z|x) || pθ(z|x)) = ∫ qφ(z|x)log(qφ(z|x)/pθ(z|x))dz
+		Dkl(qφ(z|x) || pθ(z|x)) >=0  =>  L(θ,φ,x) <= log pθ(x) and L(θ,φ,x) is variational lower bound on the log-likelihood/evidence (ELBO)
+
+	varitional autoencoder:
+		L(θ,φ,x) = Lz(θ,φ,x) + Lx(θ,φ,x), where
+			Lz(θ,φ,x) := - Dkl(qφ(z|x) || pθ(z))    (regularization term, negative expected reconstruction error of x under the conditional likelihood with respect to qφ(z|x))
+			Lx(θ,φ,x) := ∫ qφ(z|x)log pθ(x|z) dz    (reconstruction term, decoder pθ(x|z) evaluating codes from the encoder qφ(z|x))
+
+	alternative derivation:
+		log pθ(x) = log ∫ pθ(x,z)dz = log ∫ (qφ(z|x)/qφ(z|x))pθ(x,z)dz ≥ <Jensen's inequality> [L(θ,φ,x):=] ∫ qφ(z|x)log(pθ(x,z)/qφ(z|x))dz = ∫ qφ(z|x)(log pθ(x,z) - log qφ(z|x))dz = ∫ qφ(z|x)((log pθ(x|z) + log pθ(z)) - log qφ(z|x))dz = ∫ qφ(z|x)(log pθ(x|z) - log(qφ(z|x) / pθ(z)))dz = ∫ qφ(z|x)log pθ(x|z)dz <reconstruction term> - Dkl(qφ(z|x) || pθ(z)) <regularization term>
+
+
+	"First, we're talking about reconstruction process. In order to reconstruct the input x you need to obtain its latent representation z using encoder q(z|x). Since q(z|x) is a distribution, you sample z from that distribution. Now you can either take the mean of p(x|z) as your reconstruction, or, again, sample from this distribution. The difference shouldn't matter in low dimensional spaces since most of the mass of normal distribution is concentrated around the mean, and normal distribution has little probability mass on its tails (i.e. it's not heavy-tailed).
+	Then, there's also sampling process. Remember that VAE is a generative (unsupervised) model, so we'd like to sample unseen x's from the model. If we didn't see them, we can't compute corresponding q(z|x) to sample z from. This is where the prior p(z) comes in: during the learning we optimized both reconstruction error and "regularization" term KL(q(z|x)||p(z)), which kept our encoder close to the prior. Now in order to sample from the model we first sample z from p(z) (in the paper it's standard multivariate Gaussian N(0, I)), and then use that z in the decoder p(x|z)."
+
+	"In variational auto-encoder there are two forces acting on the sampling layer. One is the likelihood (i.e. loss from the decoder p(x|z)) walks decoder to be able to reconstruct individual examples as best as it can. This term tries to make z as unique as possible so that it can reconstruct the x as accurately as possible. Another one is regularization term which wants posterior distribution to be as close to prior on z as possible. This term tries to make output of q indepedent of x. Competition between these two terms is what makes learning the variance of the distribution work, if you take away the KL term then the variance of the encoder will collapse."
+
+	"Reconstruction term will walk decoder to be able to reconstruct individual examples as best as it can. This term tries to make z as unique as possible so that it can reconstruct the x as accurately as possible. Regularization term wants posterior distribution to be as close to prior on z as possible. This term tries to make output of q indepedent of x."
+
+	"The difference between VAE and conventional autoencoder is, given a probability distribution, VAE learns the best possible representation that is parametrized by defined distribution. Let's say we want to fit gaussian distribution to the data. Then, it is able to learn mean and standard deviation of the multiple gaussian functions (corresponding VAE latent units) with backpropagation with a simple parametrization trick. Eventually, you obtain multiple gaussians with different mean and std on the latent units of VAE and you can sample new instances out of these."
+
+	"Current best practice in variational inference performs optimization of ELBO using mini-batches and stochastic gradient descent, which is what allows variational inference to be scaled to problems with very large data sets. There are two problems that must be addressed to successfully use the variational approach: 1) efficient computation of the derivatives of the expected log-likelihood ∇φEqφ(z)[log pθ(x|z)], and 2) choosing the richest, computationally-feasible approximate posterior distribution q(·). The bulk of research in variational inference over the years has been on ways in which to compute ∇φEqφ(z)[log p(x|z)]. Whereas we would have previously resorted to local variational methods, in general we now always compute such expectations using Monte Carlo approximations (including the KL term in the bound, if it is not analytically known). This forms what has been aptly named doubly stochastic estimation, since we have one source of stochasticity from the minibatch and a second from the Monte Carlo approximation of the expectation."
+
+	stochastic backpropagation or stochastic variational gradient bayes:
+		reparametrization trick:  E p(y|x) [g(y)] = ∫ g(f(x,ξ))ρ(ξ)dξ,
+			where ξ ~ ρ(.) a fixed noise distribution and y=f(x,ξ) is differentiable transformation (such as a location-scale transformation or cumulative distribution function)
+
+		"The "trick" part of the reparameterization trick is that you make the randomness an input to your model instead of something that happens "inside" it, which means you never need to differentiate with respect to sampling (which you can't do). Since the randomness is an input the whole network is deterministic, and you can differentiate the whole thing as normal. In particular, consider the following two ways of writing the objective:
+			f(z) where z = gφ(eps, x) and eps ~ p(eps)
+			f(z) where z ~ pφ(x)
+		In the first version you can compute the gradient of f with respect to phi, because the sampling has been "moved out of the way", but in the second version the sampling step "blocks" the gradient from z to phi."
+
+		location-scale transformation:  z∼ N(z|µ,σ^2) <=> z = µ+σε, ε∼ N(0,1)
+
+		backpropagation with Monte Carlo:  ∇φ(E qφ(z) [fθ(z)]) <=> E N(ε|0,1) [∇φfθ(µ + σε)]
+
+		"A number of general purpose approaches based on Monte Carlo control variate estimators exist as an alternative to stochastic backpropagation, and allow for gradient computation with latent variables that may be continuous or discrete. An important advantage of stochastic backpropagation is that, for models with continuous latent variables, it has the lowest variance among competing estimators."
+
+		http://blog.shakirm.com/2015/10/machine-learning-trick-of-the-day-4-reparameterisation-tricks/
+
+
+	comparison with Generative Adversarial Networks:
+	 - easier to train and get working
+	 - relatively easy to implement and robust to hyperparameter choices
+	 - tractable likelihood
+	 - has an explicit inference network so it lets one do reconstruction
+	 - if p(x|z) makes conditional independence assumptions then it might have the "blurring" effect
+
+	"Challenge for VAE-type generative models is to fit posterior approximators that are both flexible and computationally cheap to sample from and differentiate. Simple posterior approximations, like normal distributions with diagonal covariances, are often insufficiently capable of accurately modeling the true posterior distributions. This leads to looseness of the variational bound, meaning that the objective that is optimized (the variational bound) lies far from the objective we’re actually interested in (the marginal likelihood). This leads to many of the problems we’ve encountered when trying to scale VAEs up to high-dimensional spatiotemporal datasets. This is an active research area, and we expect many further advances."
+
+
 
 
 [sampling]
 
-  introduction by Alex Smola - https://youtube.com/watch?v=M6aoDSsq2ig
+  introduction - http://johndcook.com/blog/2016/01/23/introduction-to-mcmc/
+
+  introduction by Nando de Freitas - https://youtube.com/watch?v=TNZk8lo4e-Q + https://youtube.com/watch?v=sK3cg15g8FI
   introduction by Igor Kuralenok (in russian) - http://youtube.com/watch?v=4qfTUF9LudY
-  Nando de Freitas - "Importance sampling and MCMC" - https://youtube.com/watch?v=TNZk8lo4e-Q + https://youtube.com/watch?v=sK3cg15g8FI
+  introduction by Alex Smola - https://youtube.com/watch?v=M6aoDSsq2ig
+  introduction by Bob Carpenter - https://youtu.be/qQFF4tPgeWI?t=1h55m39s
+
+  "Monte Carlo Inference Methods" tutorial by Iain Murray - http://research.microsoft.com/apps/video/default.aspx?id=259575
+
 
   "Markov Chain Monte Carlo Without all the Bullshit" - http://jeremykun.com/2015/04/06/markov-chain-monte-carlo-without-all-the-bullshit/
 
   "The Markov Chain Monte Carlo Revolution" by Persi Diaconis - http://math.uchicago.edu/~shmuel/Network-course-readings/MCMCRev.pdf
 
   "Monte Carlo Methods, Stochastic Optimization" course by Kaynig-Fittkau and Protopapas - http://am207.org
-
-  "Monte Carlo Inference Methods" tutorial by Iain Murray - http://research.microsoft.com/apps/video/default.aspx?id=259575
 
 
   - want accurate distribution of the posterior
@@ -453,6 +596,7 @@ It is worth spending time understanding the AEVB paper, the explanation there is
   solutions:
     * Markov Chain Monte Carlo (complicated)
     * Gibbs Sampling (somewhat simpler): draw one group at a time and iterate
+
 
   Monte Carlo methods are a diverse class of algorithms that rely on repeated random sampling to compute the solution to problems whose solution space is too large to explore systematically or whose systemic behavior is too complex to model.
 
@@ -467,21 +611,23 @@ It is worth spending time understanding the AEVB paper, the explanation there is
 
 
 
-[challenges]
+[likelihood-free inference / Approximate Bayesian Computation]
 
-  - inference in probabilistic programming systems and broad model families:
+  http://dennisprangle.github.io/research/2016/06/07/bayesian-inference-by-neural-networks
+  http://dennisprangle.github.io/research/2016/06/07/bayesian-inference-by-neural-networks2
 
-    Gradient-based methods for parameter estimation, variational inference
-    Metropolis-Hastings variants with efficient rescoring
-    Message passing variants
-    Sequential Monte Carlo variants
+  Some statistical models are specified via a data generating process for which the likelihood function cannot be computed in closed form. Standard likelihood-based inference is then not feasible but the model parameters can be inferred by finding the values which yield simulated data that resemble the observed data.
 
-  - learning to infer using discriminative methods to amortize probabilistic inference:
+  Classical approaches to statistical inference are based on the probability (or probability density) of the observed data y0 given particular parameter values θ. This is known as the likelihood function, π(y0|θ). Since y0 is fixed this is a function of θ and so can be written L(θ). Approaches to inference involve optimising this, used in maximum likelihood methods, or exploring it, for Bayesian methods, which are described in more detail shortly. A crucial implicit assumption of both approaches is that it’s possible and computationally inexpensive to numerically evaluate the likelihood function.
 
-    Variational Autoencoders
-    Deep Latent Gaussian Models
-    Restricted Boltzmann Machines
-    Neural Network based MCMC proposals
+  As computing power has increased over the last few decades, there are an increasing number of interesting situations for which this assumption doesn’t hold. Instead models are available from which data can be simulated, but where the likelihood function is intractable, in that it cannot be numerically evaluated in a practical time. Examples include models of: climate, high energy physics reactions, variation in genetic sequences over a population, molecular level biological reactions, infectious diseases. One common reason for intractability is that there are a very large number of ways in which the observable data can be generated, and it would be necessary to sum the probability contributions of all of these.
+
+  Several methods have been proposed for inference using simulators rather than the likelihood function, sometimes called “likelihood-free inference”. One of the most popular is approximate Bayesian computation. The simplest version of this is based on rejection sampling:
+  - Sample θi values for 1≤i≤n from π(θ).
+  - Simulate datasets yi from the model given parameters θi for 1≤i≤n.
+  - Accept parameters for which d(yi,y0)≤ϵ, and reject the remainder.
+
+  This approach faces at least two major difficulties: The first difficulty is the choice of the discrepancy measure which is used to judge whether the simulated data resemble the observed data. The second difficulty is the computationally efficient identification of regions in the parameter space where the discrepancy is low.
 
 
 
@@ -491,6 +637,8 @@ It is worth spending time understanding the AEVB paper, the explanation there is
   (David Barber) "For me Bayesian Reasoning is probability theory extended to treating parameters and models as variables. In this sense, for me the question is essentially the same as `what makes probabiltiy appealing?' Probability is a (some people would say *the*) logical calculus of uncertainty. There are many aspects of machine learning in which we naturally need to deal with uncertainty. I like the probability approach since it naturally enables one to integrate prior knowledge about a problem into the solution. It does this also in a way that requires one to be explicit about the assumptions being made about the model. People have to be clear about their model specification some people might not agree with that model, but at least they know what the assumptions of the model are."
 
   (Alex Lamb) "Why we care about probabilistic models? The first question is complicated and still hotly debated. I suppose the main advantage to a probabilistic model is that problems have uncertainty, and probability provides a well-defined way of quantifying that uncertainty. You can rely on all of the existing research on sampling from distributions, doing inference over distributions, conditioning on distributions, and so on."
+
+  (Zoubin Ghahramani) "The key ingredient of Bayesian methods is not the prior, it's the idea of averaging over different possibilities."
 
   () "The frequentist vs. Bayesian debate that raged for decades in statistics before sputtering out in the 90s had more of a philosophical flavor. Starting with Fisher, frequentists argued that unless a priori probabilities were known exactly, they should not be "guessed" or "intuited", and they created many tools that did not require the specification of a prior. Starting with Laplace, Bayesians quantified lack of information by means of a "uninformative" or "objective" uniform prior, using Bayes theorem to update their information as more data came in. Once it became clear that this uniform prior was not invariant under transformation, Bayesian methods fell out of mainstream use. Jeffreys led a Bayesian renaissance with his invariant prior, and Lindley and Savage poked holes in frequentist theory. Statisticians realized that things weren't quite so black and white, and the rise of MCMC methods and computational statistics made Bayesian inference feasible in many, many new domains of science. Nowadays, few statisticians balk at priors, and the two strands have effectively merged (consider the popularity of empirical Bayes methods, which combine the best of both schools). There are still some Bayesians that consider Bayes theorem the be-all-end-all approach to inference, and will criticize model selection and posterior predictive checks on philosophical grounds. However, the vast majority of statisticians will use whatever method is appropriate. The problem is that many scientists aren't yet aware of/trained in Bayesian methods and will use null hypothesis testing and p-values as if they're still the gold standard in statistics."
 
@@ -526,6 +674,8 @@ It is worth spending time understanding the AEVB paper, the explanation there is
 
   (Yann LeCun) "I'm a big fan of the conceptual framework of factor graphs as a way to describe learning and inference models. But I think in their simplest/classical form (variable nodes, and factor nodes), factor graphs are insufficient to capture the computational issues. There are factors, say between two variables X and Y, that allow you to easily compute Y from X, but not X from Y, or vice versa. Imagine that X is an image, Y a description of the image, and the factor contains a giant convolutional net that computes a description of the image and measures how well Y matches the computed description. It's easy to infer Y from X, but essentially impossible to infer X from Y. In the real world, where variables are high dimensional and continuous, and where dependencies are complicated, factors are directional."
 
+  () "Broadly speaking there are two ways of doing inference in ML. One is integration (which tends to be Bayesian) and the other is optimization (which is usually not). A lot of things that "aren't" Bayesian turn out to be the same algorithm with a different interpretation when you view them from a Bayesian perspective (like ridge regression being a MAP estimate for linear regression with a Gaussian prior). However, there are plenty of things people do that don't fit easily into a Bayesian framework. A few of them that come to mind are random forests, energy based models (in the Yann LeCun sense), and the Apriori and DBSCAN algorithms."
+
 
 
 
@@ -536,20 +686,37 @@ selected papers - https://dropbox.com/sh/txqk44kqgn1f9t4/AAD3DCEDXjPxGPFOa0SJYJw
 
 [interesting papers]
 
+Sanders, Hangya, Kepecs - "Signatures of a Statistical Computation in the Human Sense of Confidence" [http://www.cell.com/neuron/fulltext/S0896-6273(16)30016-2]
+	"Human confidence judgments are thought to originate from metacognitive processes that provide a subjective assessment about one’s beliefs. Alternatively, confidence is framed in mathematics as an objective statistical quantity: the probability that a chosen hypothesis is correct. Despite similar terminology, it remains unclear whether the subjective feeling of confidence is related to the objective, statistical computation of confidence. To address this, we collected confidence reports from humans performing perceptual and knowledge-based psychometric decision tasks. We observed two counterintuitive patterns relating confidence to choice and evidence: apparent overconfidence in choices based on uninformative evidence, and decreasing confidence with increasing evidence strength for erroneous choices. We show that these patterns lawfully arise from statistical confidence, and therefore occur even for perfectly calibrated confidence measures. Furthermore, statistical confidence quantitatively accounted for human confidence in our tasks without necessitating heuristic operations. Accordingly, we suggest that the human feeling of confidence originates from a mental computation of statistical confidence."
+	-- http://www.eurekalert.org/pub_releases/2016-05/cp-obu042816.php
+
 Diaconis - "The Markov Chain Monte Carlo Revolution" [http://math.uchicago.edu/~shmuel/Network-course-readings/MCMCRev.pdf]
 	"The use of simulation for high dimensional intractable computations has revolutionized applied mathematics. Designing, improving and understanding the new tools leads to (and leans on) fascinating mathematics, from representation theory through micro-local analysis."
 
 Salimans, Kingma, Welling - "Markov Chain Monte Carlo and Variational Inference: Bridging the Gap" [http://jmlr.org/proceedings/papers/v37/salimans15.pdf]
 	"Recent advances in stochastic gradient variational inference have made it possible to perform variational Bayesian inference with posterior approximations containing auxiliary random variables. This enables us to explore a new synthesis of variational inference and Monte Carlo methods where we incorporate one or more steps of MCMC into our variational approximation. By doing so we obtain a rich class of inference algorithms bridging the gap between variational methods and MCMC, and offering the best of both worlds: fast posterior approximation through the maximization of an explicit objective, with the option of trading off additional computation for additional accuracy. We describe the theoretical foundations that make this possible and show some promising first results."
 
+Blei, Kucukelbir, McAuliffe - "Variational Inference: A Review for Statisticians" [http://arxiv.org/abs/1601.00670]
+	"One of the core problems of modern statistics is to approximate difficult-to-compute probability distributions. This problem is especially important in Bayesian statistics, which frames all inference about unknown quantities as a calculation about the posterior. In this paper, we review variational inference (VI), a method from machine learning that approximates probability distributions through optimization. VI has been used in myriad applications and tends to be faster than classical methods, such as Markov chain Monte Carlo sampling. The idea behind VI is to first posit a family of distributions and then to find the member of that family which is close to the target. Closeness is measured by Kullback-Leibler divergence. We review the ideas behind mean-field variational inference, discuss the special case of VI applied to exponential family models, present a full example with a Bayesian mixture of Gaussians, and derive a variant that uses stochastic optimization to scale up to massive data. We discuss modern research in VI and highlight important open problems. VI is powerful, but it is not yet well understood. Our hope in writing this paper is to catalyze statistical research on this widely-used class of algorithms."
+
 Kingma, Welling - "Auto-Encoding Variational Bayes" [http://arxiv.org/abs/1312.6114]
 	"How can we perform efficient inference and learning in directed probabilistic models, in the presence of continuous latent variables with intractable posterior distributions, and large datasets? We introduce a stochastic variational inference and learning algorithm that scales to large datasets and, under some mild differentiability conditions, even works in the intractable case. Our contributions is two-fold. First, we show that a reparameterization of the variational lower bound yields a lower bound estimator that can be straightforwardly optimized using standard stochastic gradient methods. Second, we show that for i.i.d. datasets with continuous latent variables per datapoint, posterior inference can be made especially efficient by fitting an approximate inference model (also called a recognition model) to the intractable posterior using the proposed lower bound estimator. Theoretical advantages are reflected in experimental results."
 	--
 	"Latent variable probabilistic models are ubiquitous, but often inference in such models is intractable. Variational inference methods based on approximation of the true posterior currently are most popular deterministic inference techniques. Recently one particularly interesting method for parametric variational approximation was proposed called Auto-encoding variational bayes. In this method, approximate posterior explicitly depends on data and may be almost arbitrary complex, e.g. a deep neural network. Thus, the problem of variational inference may be considered as a learning of auto-encoder where the code is represented by latent variables, encoder is the likelihood model and decoder is our variational approximation. Since neural networks can serve as universal function approximators, such inference method may allow to obtain better results than for "shallow" parametric approximations or free-form mean-field ones."
 	-- http://youtube.com/watch?v=rjZL7aguLAs (Kingma)
+	-- http://videolectures.net/deeplearning2015_courville_autoencoder_extension/ (Courville)
+	-- https://dl.dropboxusercontent.com/u/16027344/ICML%202015%20Deep%20Learning%20Workshop/Karol%20Gregor%2C%20GOOGLE%20Deepmind.p2g/Default.html (Gregor)
+	-- https://youtu.be/_qrHcSdQ2J4?t=1h37m21s (Vetrov, in russian)
 	-- http://vk.com/video-44016343_456239092 (Stepochkin, in russian)
 	-- http://youtu.be/0veUbpdBqyk?t=50m50s (Chervinsky, in russian)
+	-- http://arxiv.org/abs/1606.05908 (tutorial)
+	-- http://blog.fastforwardlabs.com/post/148842796218/introducing-variational-autoencoders-in-prose-and + http://blog.fastforwardlabs.com/post/149329060653/under-the-hood-of-the-variational-autoencoder-in
+	-- http://blog.keras.io/building-autoencoders-in-keras.html
+	-- https://github.com/fchollet/keras/blob/master/examples/variational_autoencoder.py
 	-- https://github.com/casperkaae/parmesan
+	-- https://github.com/arahuja/generative-tf
+	-- https://github.com/blei-lab/edward/blob/master/examples/convolutional_vae.py
+	-- https://github.com/Kaixhin/Autoencoders/blob/master/models/VAE.lua
 	-- https://jmetzen.github.io/2015-11-27/vae.html
 
 Rezende, Mohamed, Wierstra - "Stochastic Backpropagation and Approximate Inference in Deep Generative Models" [http://arxiv.org/abs/1401.4082]
@@ -557,13 +724,9 @@ Rezende, Mohamed, Wierstra - "Stochastic Backpropagation and Approximate Inferen
 	-- http://techtalks.tv/talks/stochastic-backpropagation-and-approximate-inference-in-deep-generative-models/60885/
 	-- https://dropbox.com/s/s1mgon5e7lf5svx/Stochastic%20Backpropagation%20and%20Approximate%20Variational%20Inference%20in%20Deep%20Generative%20Models%20%28slides%29.pdf (in russian)
 
-Gu, Levine, Sutskever, Mnih - "MuProp: Unbiased Backpropagation for Stochastic Neural Networks" [http://arxiv.org/abs/1511.05176]
-	"Deep neural networks are powerful parametric models that can be trained efficiently using the backpropagation algorithm. Stochastic neural networks combine the power of large parametric functions with that of graphical models, which makes it possible to learn very complex distributions. However, as backpropagation is not directly applicable to stochastic networks that include discrete sampling operations within their computational graph, training such networks remains difficult. We present MuProp, an unbiased gradient estimator for stochastic networks, designed to make this task easier. MuProp improves on the likelihood-ratio estimator by reducing its variance using a control variate based on the first-order Taylor expansion of a mean-field network. Crucially, unlike prior attempts at using backpropagation for training stochastic networks, the resulting estimator is unbiased and well behaved. Our experiments on structured output prediction and discrete latent variable modeling demonstrate that MuProp yields consistently good performance across a range of difficult tasks."
-	"In this paper, we presented MuProp, which is an unbiased estimator of derivatives in stochastic computational graphs that combines the statistical efficiency of backpropagation with the correctness of a likelihood ratio method. MuProp has a number of natural extensions. First, we might consider using other functions for the baseline rather than just the Taylor expansion, which could be learned in a manner that resembles Q-learning and target propagation. In reinforcement learning, fitted Q-functions obtained by estimating the expected return of a given policy πθ summarize all future costs, and a good Q-function can greatly simplify the temporal credit assignment problem. Combining MuProp with such fitted Q-functions could greatly reduce the variance of the estimator and make it better suited for very deep computational graphs, such as long recurrent neural networks and applications in reinforcement learning. The second extension is to make x¯ depend on samples of its parent nodes. This could substantially improve performance on deeper networks, where the value from a singletrunk mean-field pass may diverge significantly from any samples drawn with a fully stochastic pass. By drawing x¯ using mean-field passes originating at sampled values from preceding layers would prevent such divergence, though at additional computational cost, since the number of mean-field passes would depend on the depth n of the network, for a total of O(n^2) partial passes through the network. Intuitively, the single mean-field “chain” would turn into a “tree,” with a sampled trunk and a different mean-field branch at each layer."
-	"The versatility of stochastic neural networks motivates research into more effective algorithms for training them. Models with continuous latent variables and simple approximate posteriors can already be trained efficiently using the variational lower bound along with the reparameterization trick, which makes it possible to train both the model and the inference network using backpropagation. Training models with discrete latent variable distributions, such as Bernoulli or multinomial, is considerably more difficult. Unbiased estimators based on the likelihood-ratio method tend to be significantly less effective than biased estimators, such as the straight-through method and the estimator proposed by Gregor et al. (2014). We hypothesize that this is due to the fact that, unlike the biased estimators, the unbiased ones do not take advantage of the gradient information provided by the backpropagation algorithm. However, the biased estimators are heuristic and not well understood, which means that it is difficult to enumerate the situations in which these estimators will work well. We posit that an effective method for training stochastic neural networks should take advantage of the highly efficient backpropagation algorithm, while still providing the convergence guarantees of an unbiased estimator."
-	"To that end, we derive MuProp, an unbiased gradient estimator for deep stochastic neural networks that is based on backpropagation. To the best of our knowledge, it is the first unbiased estimator that can handle both continuous and discrete stochastic variables while taking advantage of analytic gradient information. MuProp’s simple and general formulation allows a straightforward derivation of unbiased gradient estimators for arbitrary stochastic computational graphs – directed acyclic graph with a mix of stochastic and deterministic computational nodes. While the algorithm is applicable to both continuous and discrete distributions, we used only discrete models in our experiments, since the reparameterization trick already provides an effective method for handling continuous variables. We present experimental results for training neural networks with discrete Bernoulli and multinomial variables for both supervised and unsupervised learning tasks. With these models, which are notoriously difficult to train, biased methods often significantly outperform the unbiased ones, except in certain cases. Our results indicate that MuProp’s performance is more consistent and often superior to that of the competing estimators. It is the first time that a well-grounded, unbiased estimator consistently performs as well or better than the biased gradient estimators across a range of difficult tasks."
-	-- http://dustintran.com/blog/muprop-unbiased-backpropagation-for-stochastic-neural-networks/
-	-- https://evernote.com/shard/s189/sh/29a7d673-a22c-4ca7-9638-fccfd9d18330/9074c362de09b3cd22983db2939456b7
+Rezende, Mohamed - "Variational Inference with Normalizing Flows" [http://arxiv.org/abs/1505.05770]
+	"The choice of approximate posterior distribution is one of the core problems in variational inference. Most applications of variational inference employ simple families of posterior approximations in order to allow for efficient inference, focusing on mean-field or other simple structured approximations. This restriction has a significant impact on the quality of inferences made using variational methods. We introduce a new approach for specifying flexible, arbitrarily complex and scalable approximate posterior distributions. Our approximations are distributions constructed through a normalizing flow, whereby a simple initial density is transformed into a more complex one by applying a sequence of invertible transformations until a desired level of complexity is attained. We use this view of normalizing flows to develop categories of finite and infinitesimal flows and provide a unified view of approaches for constructing rich posterior approximations. We demonstrate that the theoretical advantages of having posteriors that better match the true posterior, combined with the scalability of amortized variational approaches, provides a clear improvement in performance and applicability of variational inference."
+	"In this work we developed a simple approach for learning highly non-Gaussian posterior densities by learning transformations of simple densities to more complex ones through a normalizing flow. When combined with an amortized approach for variational inference using inference networks and efficient Monte Carlo gradient estimation, we are able to show clear improvements over simple approximations on different problems. Using this view of normalizing flows, we are able to provide a unified perspective of other closely related methods for flexible posterior estimation that points to a wide spectrum of approaches for designing more powerful posterior approximations with different statistical and computational tradeoffs. An important conclusion from the discussion in section 3 is that there exist classes of normalizing flows that allow us to create extremely rich posterior approximations for variational inference. With normalizing flows, we are able to show that in the asymptotic regime, the space of solutions is rich enough to contain the true posterior distribution. If we combine this with the local convergence and consistency results for maximum likelihood parameter estimation in certain classes of latent variables models, we see that we are now able overcome the objections to using variational inference as a competitive and default approach for statistical inference. Making such statements rigorous is an important line of future research. Normalizing flows allow us to control the complexity of the posterior at run-time by simply increasing the flow length of the sequence. The approach we presented considered normalizing flows based on simple transformations of the form (10) and (14). These are just two of the many maps that can be used, and alternative transforms can be designed for posterior approximations that may require other constraints, e.g., a restricted support. An important avenue of future research lies in describing the classes of transformations that allow for different characteristics of the posterior and that still allow for efficient, linear-time computation."
 
 Gal, Ghahramani - "Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning" [http://arxiv.org/abs/1506.02142]
 	"Deep learning has gained tremendous attention in applied machine learning. However such tools for regression and classification do not capture model uncertainty. Bayesian models offer a mathematically grounded framework to reason about model uncertainty, but usually come with a prohibitive computational cost. We show that dropout in neural networks can be cast as a Bayesian approximation. As a direct result we obtain tools to model uncertainty with dropout NNs - extracting information from existing models that has been thrown away so far. This mitigates the problem of representing uncertainty in deep learning without sacrificing computational complexity or test accuracy. We perform an extensive study of the dropout uncertainty properties. Various network architectures and non-linearities are assessed on tasks of regression and classification, using MNIST as an example. We show a considerable improvement in predictive log-likelihood and RMSE compared to existing state-of-the-art methods. We finish by using dropout uncertainty in a Bayesian pipeline, with deep reinforcement learning as a practical task."
@@ -573,7 +736,7 @@ Gal, Ghahramani - "Dropout as a Bayesian Approximation: Representing Model Uncer
 	"It has long been known that infinitely wide (single hidden layer) NNs with distributions placed over their weights converge to Gaussian processes. This known relation is through a limit argument that does not allow us to translate properties from the Gaussian process to finite NNs easily. Finite NNs with distributions placed over the weights have been studied extensively as Bayesian neural networks. These offer robustness to over-fitting as well, but with challenging inference and additional computational costs. Variational inference has been applied to these models, but with limited success. Recent advances in variational inference introduced new techniques into the field such as sampling-based variational inference and stochastic variational inference. These have been used to obtain new approximations for Bayesian neural networks that perform as well as dropout. However these models come with a prohibitive computational cost. To represent uncertainty, the number of parameters in these models is doubled for the same network size. Further, they require more time to converge and do not improve on existing techniques. Given that good uncertainty estimates can be cheaply obtained from common dropout models, this results in unnecessary additional computation. An alternative approach to variational inference makes use of expectation propagation and has improved considerably in RMSE and uncertainty estimation on VI approaches. In the results section we compare dropout to these approaches and show a significant improvement in both RMSE and uncertainty estimation."
 	-- http://arxiv.org/abs/1506.02157 (Appendix)
 	-- http://mlg.eng.cam.ac.uk/yarin/blog_3d801aa532c1ce.html (Gal)
-	-- https://evernote.com/shard/s189/sh/0b46fb48-dd1a-4e3b-ac5c-289f4925ff7e/3f0f03231757ded363b42ce71ebfcc70 (Larochelle)
+	-- https://www.evernote.com/shard/s189/sh/0b46fb48-dd1a-4e3b-ac5c-289f4925ff7e/3f0f03231757ded363b42ce71ebfcc70 (Larochelle)
 	-- https://plus.google.com/u/0/+AnkurHanda/posts/DnXB81efTwa
 
 Herlau, Morup, Schmidt - "Bayesian Dropout" [http://arxiv.org/abs/1508.02905]
@@ -586,6 +749,11 @@ Johnson, Duvenaud, Wiltschko, Datta, Adams - "Structured VAEs: Composing Probabi
 	"Our approach uses graphical models for representing structured probability distributions, and uses ideas from variational autoencoders for learning not only the nonlinear feature manifold but also bottom-up recognition networks to improve inference. Thus our method enables the combination of flexible deep learning feature models with structured Bayesian and even Bayesian nonparametric priors. Our approach yields a single variational inference objective in which all components of the model are learned simultaneously. Furthermore, we develop a scalable fitting algorithm that combines several advances in efficient inference, including stochastic variational inference, graphical model message passing, and backpropagation with the reparameterization trick."
 	-- http://github.com/mattjj/svae
 
+Papamakarios, Murray - "Fast Epsilon-free Inference of Simulation Models with Bayesian Conditional Density Estimation" [http://arxiv.org/abs/1605.06376]
+	"Many statistical models can be simulated forwards but have intractable likelihoods. Approximate Bayesian Computation (ABC) methods are used to infer properties of these models from data. Traditionally these methods approximate the posterior over parameters by conditioning on data being inside an Epsilon-ball around the observed data, which is only correct in the limit Epsilon→ 0. Monte Carlo methods can then draw samples from the approximate posterior to approximate predictions or error bars on parameters. These algorithms critically slow down as Epsilon→ 0, and in practice draw samples from a broader distribution than the posterior. We propose a new approach to likelihood-free inference based on Bayesian conditional density estimation. Preliminary inferences based on limited simulation data are used to guide later simulations. In some cases, learning an accurate parametric representation of the entire true posterior distribution requires fewer model simulations than Monte Carlo ABC methods need to produce a single sample from an approximate posterior."
+	"Conventional ABC algorithms such as the above suffer from three drawbacks. First, they only represent the parameter posterior as a set of (possibly weighted or correlated) samples. A sample-based representation easily gives estimates and error bars of individual parameters, and model predictions. However these computations are noisy, and it is not obvious how to perform some other computations using samples, such as combining posteriors from two separate analyses. Second, the parameter samples do not come from the correct Bayesian posterior, but from an approximation based on assuming a pseudo-observation that the data is within an Epsilon-ball centred on the data actually observed. Third, as the Epsilon-tolerance is reduced, it can become impractical to simulate the model enough times to match the observed data even once. When simulations are expensive to perform, good quality inference becomes impractical. In this paper, we propose an alternative approach to likelihood-free inference, which unlike conventional ABC does not suffer from the above three issues. Instead of returning a set of parameter samples from an approximate posterior, our approach learns a parametric approximation to the exact posterior, which can be made as accurate as required. Furthermore, we present a strategy for learning our parametric approximation by making efficient use of simulations from the model. We show experimentally that our approach is capable of closely approximating the exact posterior, while making efficient use of simulations compared to conventional ABC. Our approach is based on conditional density estimation using Bayesian neural networks, and draws upon advances in density estimation, stochastic variational inference, and recognition networks. To the best of our knowledge, this is the first work that applies such techniques to the field of likelihood-free inference."
+	-- http://dennisprangle.github.io/research/2016/06/07/bayesian-inference-by-neural-networks + http://dennisprangle.github.io/research/2016/06/07/bayesian-inference-by-neural-networks2
+
 
 
 
@@ -597,13 +765,14 @@ Lake, Salakhutdinov, Tenenbaum - "Human-level Concept Learning Through Probabili
 	"Vision program outperformed humans in identifying handwritten characters, given single training example"
 	"This work brings together three key ideas -- compositionality, causality, and learning-to-learn --- challenging (in a good way) the traditional deep learning approach"
 	-- http://youtube.com/watch?v=kzl8Bn4VtR8 (Lake)
-	-- http://research.microsoft.com/apps/video/default.aspx?id=259994 (Tenenbaum, 20:40)
+	-- http://youtu.be/quPN7Hpk014?t=21m5s (Tenenbaum)
 	-- https://reddit.com/r/MachineLearning/comments/3x4ml0/with_the_focus_on_deep_learning_what_problems/cy1nsuh
 	-- https://github.com/brendenlake/BPL
 	-- http://cims.nyu.edu/~brenden/supplemental/turingtests/turingtests.html
 
 Herbrich, Minka, Graepel - "TrueSkill(TM): A Bayesian Skill Rating System" [http://research.microsoft.com/apps/pubs/default.aspx?id=67956]
 	"We present a new Bayesian skill rating system which can be viewed as a generalisation of the Elo system used in Chess. The new system tracks the uncertainty about player skills, explicitly models draws, can deal with any number of competing entities and can infer individual skills from team results. Inference is performed by approximate message passing on a factor graph representation of the model. We present experimental evidence on the increased accuracy and convergence speed of the system compared to Elo and report on our experience with the new rating system running in a large-scale commercial online gaming service under the name of TrueSkill."
+	-- http://moserware.com/2010/03/computing-your-skill.html
 
 Stern, Herbrich, Graepel - "Matchbox: Large Scale Bayesian Recommendations" [http://research.microsoft.com/apps/pubs/default.aspx?id=79460]
 	"We present a probabilistic model for generating personalised recommendations of items to users of a web service. The Matchbox system makes use of content information in the form of user and item meta data in combination with collaborative filtering information from previous user behavior in order to predict the value of an item for a user. Users and items are represented by feature vectors which are mapped into a low-dimensional ‘trait space’ in which similarity is measured in terms of inner products. The model can be trained from different types of feedback in order to learn user-item preferences. Here we present three alternatives: direct observation of an absolute rating each user gives to some items, observation of a binary preference (like/ don’t like) and observation of a set of ordinal ratings on a userspecific scale. Efficient inference is achieved by approximate message passing involving a combination of Expectation Propagation and Variational Message Passing. We also include a dynamics model which allows an item’s popularity, a user’s taste or a user’s personal rating scale to drift over time. By using Assumed-Density Filtering for training, the model requires only a single pass through the training data. This is an on-line learning algorithm capable of incrementally taking account of new data so the system can immediately reflect the latest user preferences. We evaluate the performance of the algorithm on the MovieLens and Netflix data sets consisting of approximately 1,000,000 and 100,000,000 ratings respectively. This demonstrates that training the model using the on-line ADF approach yields state-of-the-art performance with the option of improving performance further if computational resources are available by performing multiple EP passes over the training data."
@@ -655,4 +824,4 @@ Teh, Hasenclever, Lienart, Vollmer, Webb, Lakshminarayanan, Blundell - "Distribu
 
 
 
-<brylevkirill@gmail.com>
+<brylevkirill (at) gmail.com>

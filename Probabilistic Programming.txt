@@ -37,6 +37,7 @@ probabilistic machine learning -
 
   https://moalquraishi.wordpress.com/2015/03/29/the-state-of-probabilistic-programming/
 
+
   overview by Vikash Mansinghka - https://youtube.com/watch?v=-8QMqSWU76Q
 
   tutorial by Frank Wood -
@@ -59,6 +60,21 @@ probabilistic machine learning -
 
 [applications in cognitive science]
 
+  Josh Tenenbaum - "Cognitive Foundations for Common-sense Knowledge Representation and Reasoning"
+	https://youtube.com/watch?v=oSAG57plHnI
+
+  Josh Tenenbaum - "Building Machines That Learn like Humans"
+	https://youtube.com/watch?v=quPN7Hpk014
+
+  Josh Tenenbaum - "The Origins of Common Sense: Modeling human intelligence with Probabilistic Programs and Program Induction"
+	http://research.microsoft.com/apps/video/default.aspx?id=229021&l=i
+
+  Tenenbaum, Kemp, Griffiths, Goodman - "How to Grow a Mind: Statistics, Structure, and Abstraction"
+	http://videolectures.net/aaai2012_tenenbaum_grow_mind/
+	http://videolectures.net/nips2010_tenenbaum_hgm/
+	http://web.mit.edu/cocosci/Papers/tkgg-science11-reprint.pdf
+
+
   Goodman, Tenenbaum, Gerstenberg - "Concepts in a Probabilistic Language of Thought"
 	https://web.stanford.edu/~ngoodman/papers/ConceptsChapter-final.pdf
 
@@ -70,19 +86,14 @@ probabilistic machine learning -
 
 	"How can logical and probabilistic approaches to understanding intelligence be reconciled? I will argue that probabilistic programming is the best way to merge logic and probability, providing a new set of tools for thinking about representation and inference in systems with human-like intelligence. I will illustrate these ideas by introducing the probabilistic programming language Church (a stochastic LISP), describing two universal inference algorithms (i.e. algorithms that can perform probabilistic inference for any Church program), and giving a series of examples. These examples, drawn from cognitive science and AI, will include multi-agent reasoning and concept learning."
 
-  Tenenbaum, Kemp, Griffiths, Goodman - "How to Grow a Mind: Statistics, Structure, and Abstraction"
-	http://videolectures.net/aaai2012_tenenbaum_grow_mind/
-	http://videolectures.net/nips2010_tenenbaum_hgm/
-	http://web.mit.edu/cocosci/Papers/tkgg-science11-reprint.pdf
-
-  Tenenbaum - "The Origins of Common Sense: Modeling human intelligence with Probabilistic Programs and Program Induction"
-	http://research.microsoft.com/apps/video/default.aspx?id=229021&l=i
 
   Goodman, Tenenbaum - "Probabilistic Models of Cognition" - https://probmods.org
 
   Andreas Stuhlmueller - "Modeling Cognition with Probabilistic Programs: Representations and Algorithms" (PhD thesis) - https://stuhlmueller.org/papers/stuhlmueller-phdthesis.pdf
 
   Brenden Lake - "Towards more human-like concept learning in machines: compositionality, causality, and learning-to-learn" (PhD thesis) - http://cims.nyu.edu/~brenden/LakePhDThesis.pdf
+
+  E.T. Jaynes - "How Does the Brain Do Plausible Reasoning" - http://bayes.wustl.edu/etj/articles/brain.pdf
 
 
 
@@ -103,8 +114,13 @@ probabilistic machine learning -
 
   Forest - "a repository for generative models" - http://forestdb.org
 
+  Edward - https://github.com/blei-lab/edward
+	http://dustintran.com/blog/a-quick-update-edward-and-some-motivations/
+	https://github.com/blei-lab/edward/wiki
+
   Stan - http://dustintran.com/talks/post_advi.pdf
 	https://youtube.com/watch?v=6NXRCtWQNMg
+	https://vimeo.com/132156595
 
   PyMC3
 
@@ -181,20 +197,35 @@ selected papers - https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXgh
 Gordon, Henzinger, Nori, Rajamani - "Probabilistic Programming" [http://research.microsoft.com/pubs/208585/fose-icse2014.pdf]
 	"Probabilistic programs are usual functional or imperative programs with two added constructs: (1) the ability to draw values at random from distributions, and (2) the ability to condition values of variables in a program via observations. Models from diverse application areas such as computer vision, coding theory, cryptographic protocols, biology and reliability analysis can be written as probabilistic programs. Probabilistic inference is the problem of computing an explicit representation of the probability distribution implicitly specified by a probabilistic program. Depending on the application, the desired output from inference may vary - we may want to estimate the expected value of some function f with respect to the distribution, or the mode of the distribution, or simply a set of samples drawn from the distribution. In this paper, we describe connections this research area called “Probabilistic Programming” has with programming languages and software engineering, and this includes language design, and the static and dynamic analysis of programs. We survey current state  of the art and speculate on promising directions for future research."
 
+Wingate, Goodman, Stuhlmuller, Siskind - "Nonstandard Interpretations of Probabilistic Programs for Efficient Inference" [https://web.stanford.edu/~ngoodman/papers/WGSS-NIPS11.pdf]
+	"Probabilistic programming languages allow modelers to specify a stochastic process using syntax that resembles modern programming languages. Because the program is in machine-readable format, a variety of techniques from compiler design and program analysis can be used to examine the structure of the distribution represented by the probabilistic program. We show how nonstandard interpretations of probabilistic programs can be used to craft efficient inference algorithms: information about the structure of a distribution (such as gradients or dependencies) is generated as a monad-like side computation while executing the program. These interpretations can be easily coded using special-purpose objects and operator overloading. We implement two examples of nonstandard interpretations in two different languages, and use them as building blocks to construct inference algorithms: automatic differentiation, which enables gradient based methods, and provenance tracking, which enables efficient construction of global proposals."
+	"We have shown how nonstandard interpretations of probabilistic programs can be used to extract structural information about a distribution, and how this information can be used as part of a variety of inference algorithms. The information can take the form of gradients, Hessians, fine-grained dependencies, or bounds. Empirically, we have implemented two such interpretations and demonstrated how this information can be used to find regions of high likelihood quickly, and how it can be used to generate samples with improved statistical properties versus random-walk style MCMC. There are other types of interpretations which could provide additional information. For example, interval arithmetic could be used to provide bounds or as part of adaptive importance sampling. Each of these interpretations can be used alone or in concert with each other; one of the advantages of the probabilistic programming framework is the clean separation of models and inference algorithms, making it easy to explore combinations of inference algorithms for complex models. More generally, this work begins to illuminate the close connections between probabilistic inference and programming language theory. It is likely that other techniques from compiler design and program analysis could be fruitfully applied to inference problems in probabilistic programs."
+	"With an outline of probabilistic programming in hand, we now turn to nonstandard interpretations. The idea of nonstandard interpretations originated in model theory and mathematical logic, where it was proposed that a set of axioms could be interpreted by different models. For example, differential geometry can be considered a nonstandard interpretation of classical arithmetic. In programming, a nonstandard interpretation replaces the domain of the variables in the program with a new domain, and redefines the semantics of the operators in the program to be consistent with the new domain. This allows reuse of program syntax while implementing new functionality. For example, the expression “a ∗ b” can be interpreted equally well if a and b are either scalars or matrices, but the “∗” operator takes on different meanings. Practically, many useful nonstandard interpretations can be implemented with operator overloading: variables are redefined to be objects with operators that implement special functionality, such as tracing, reference counting, or profiling."
+
+De Raedt, Kimmig - "Probabilistic (Logic) Programming Concepts" [https://lirias.kuleuven.be/bitstream/123456789/490338/1/deraedt_kimmig_mlj15.pdf]
+	"A multitude of different probabilistic programming languages exists today, all extending a traditional programming language with primitives to support modeling of complex, structured probability distributions. Each of these languages employs its own probabilistic primitives, and comes with a particular syntax, semantics and inference procedure. This makes it hard to understand the underlying programming concepts and appreciate the differences between the different languages. To obtain a better understanding of probabilistic programming, we identify a number of core programming concepts underlying the primitives used by various probabilistic languages, discuss the execution mechanisms that they require and use these to position and survey state-of-the-art probabilistic languages and their implementation. While doing so, we focus on probabilistic extensions of logic programming languages such as Prolog, which have been considered for over 20 years."
+	"First, there is an ongoing quest for efficient inference approaches for languages that support a broad range of programming concepts. Promising directions include lifted inference, which aims at exploiting symmetries and abstraction over individuals to speed up inference, knowledge compilation, which has contributed many data structures for compactly representing and efficiently querying various types of knowledge, and approximate methods such as MCMC, which is used in many probabilistic programming languages, but still requires proposal functions to be custom made for the program at hand. There also is a need for a clear understanding of the relative computational complexity of the various probabilistic languages and concepts that exist to date. Another question that has only seen partial answers so far is how to efficiently deal with evidence and constraints in different inference techniques. Adapting and extending program transformation and analysis techniques to the probabilistic setting promises opportunities to recognize and exploit program parts that are amenable to more efficient inference. Concepts such as time and dynamics require inference approaches that on the one hand exploit repeated structure, but on the other hand can also deal with changing structure over time. Last but not least, it still is a challenge to learn probabilistic programs, although a wide variety of learning techniques for probabilistic programming has already been developed. Many key challenges for both parameter and structure learning remain, many of which are related to efficient inference, as learning requires inference."
+	-- https://lirias.kuleuven.be/bitstream/123456789/504183/1/pp-tutorial-ijcai15.pdf
+
 Lake, Salakhutdinov, Tenenbaum - "Human-level Concept Learning Through Probabilistic Program Induction" [http://web.mit.edu/cocosci/Papers/Science-2015-Lake-1332-8.pdf]
 	"People learning new concepts can often generalize successfully from just a single example, yet machine learning algorithms typically require tens or hundreds of examples to perform with similar accuracy. People can also use learned concepts in richer ways than conventional algorithms - for action, imagination, and explanation. We present a computational model that captures these human learning abilities for a large class of simple visual concepts: handwritten characters from the world’s alphabets. The model represents concepts as simple programs that best explain observed examples under a Bayesian criterion. On a challenging one-shot classification task, the model achieves human-level performance while outperforming recent deep learning approaches. We also present several “visual Turing tests” probing the model’s creative generalization abilities, which in many cases are indistinguishable from human behavior."
 	--
 	"Vision program outperformed humans in identifying handwritten characters, given single training example"
 	"This work brings together three key ideas -- compositionality, causality, and learning-to-learn --- challenging (in a good way) the traditional deep learning approach"
 	-- http://youtube.com/watch?v=kzl8Bn4VtR8 (Lake)
-	-- http://research.microsoft.com/apps/video/default.aspx?id=259994 (Tenenbaum, 20:40)
+	-- http://youtu.be/quPN7Hpk014?t=21m5s (Tenenbaum)
 	-- https://reddit.com/r/MachineLearning/comments/3x4ml0/with_the_focus_on_deep_learning_what_problems/cy1nsuh
 	-- https://github.com/brendenlake/BPL
 	-- http://cims.nyu.edu/~brenden/supplemental/turingtests/turingtests.html
 
 Kulkarni, Kohli, Tenenbaum, Mansinghka - "Picture: A Probabilistic Programming Language for Scene Perception" [http://mrkulk.github.io/www_cvpr15/]
 	"Recent progress on probabilistic modeling and statistical learning, coupled with the availability of large training datasets, has led to remarkable progress in computer vision. Generative probabilistic models, or “analysis-by-synthesis” approaches, can capture rich scene structure but have been less widely applied than their discriminative counterparts, as they often require considerable problem-specific engineering in modeling and inference, and inference is typically seen as requiring slow, hypothesize-and-test Monte Carlo methods. Here we present Picture, a probabilistic programming language for scene understanding that allows researchers to ex- press complex generative vision models, while automatically solving them using fast general-purpose inference machinery. Picture provides a stochastic scene language that can express generative models for arbitrary 2D/3D scenes, as well as a hierarchy of representation layers for comparing scene hypotheses with observed images by matching not simply pixels, but also more abstract features (e.g., contours, deep neural network activations). Inference can flexibly integrate advanced Monte Carlo strategies with fast bottom-up datadriven methods. Thus both representations and inference strategies can build directly on progress in discriminatively trained systems to make generative vision more robust and efficient. We use Picture to write programs for generative 3D face analysis, 3D human pose estimation, and 3D object reconstruction – each in under 50 lines of code, and each competitive with specially engineered baselines."
+	-- https://youtube.com/watch?v=quPN7Hpk014 (Tenenbaum)
 	-- https://youtu.be/-8QMqSWU76Q?t=44m8s (Mansinghka)
+
+Krishnamurthy, Tafjord - "Semantic Parsing to Probabilistic Programs for Situated Question Answering" [http://arxiv.org/abs/1606.07046]
+	"Situated question answering is the problem of answering questions about an environment such as an image. This problem requires interpreting both a question and the environment, and is challenging because the set of interpretations is large, typically superexponential in the number of environmental objects. Existing models handle this challenge by making strong -- and untrue -- independence assumptions. We present Parsing to Probabilistic Programs (P3), a novel situated question answering model that utilizes approximate inference to eliminate these independence assumptions and enable the use of global features of the question/environment interpretation. Our key insight is to treat semantic parses as probabilistic programs that execute nondeterministically and whose possible executions represent environmental uncertainty. We evaluate our approach on a new, publicly-released data set of 5000 science diagram questions, finding that our approach outperforms several competitive baselines."
+	"We present Parsing to Probabilistic Programs (P3), a novel model for situated question answering that embraces approximate inference to enable the use of arbitrary features of the language and environment. P3 trains a semantic parser to predict logical forms that are probabilistic programs whose possible executions represent environmental uncertainty. We demonstrate this model on a challenging new data set of 5000 science diagram questions, finding that it outperforms several competitive baselines and that its global features improve accuracy. P3 has several advantageous properties. First, P3 can be easily applied to new problems: one simply has to write an initialization program and define the execution features. Second, the initialization program can be used to encode a wide class of assumptions about the environment. For example, the model can assume that every noun refers to a single object. The combination of semantic parsing and probabilistic programming makes P3 an expressive and flexible model with many potential applications."
 
 Perov, Wood - "Learning Probabilistic Programs" [http://arxiv.org/abs/1407.2646]
 	"We develop a technique for generalising from data in which models are samplers represented as program text. We establish encouraging empirical results that suggest that Markov chain Monte Carlo probabilistic programming inference techniques coupled with higher-order probabilistic programming languages are now sufficiently powerful to enable successful inference of this kind in nontrivial domains. We also introduce a new notion of probabilistic program compilation and show how the same machinery might be used in the future to compile probabilistic programs for efficient reusable predictive inference."
@@ -221,4 +252,4 @@ Borgstrom, Lago, Gordon, Szymczak - "A Lambda-Calculus Foundation for Universal 
 
 
 
-<brylevkirill@gmail.com>
+<brylevkirill (at) gmail.com>

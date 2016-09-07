@@ -1,34 +1,77 @@
 "Learning to act through trial and error with no models, no labels, no demonstrations, or any human-provided supervision signal other than scalar reward."
+"Reinforcement Learning problem is as hard as any problem of computer science, since any task with a computable description can be formulated in reinforcement learning framework."
 
-"Reinforcement learning problem is as hard as any problem of computer science, since any task with a computable description can be formulated in reinforcement learning framework."
+"Reinforcement Learning is a general-purpose framework for decision-making:
+ - Is for an agent with the capacity to act
+ - Each action influences the agent's future state
+ - Success is measured by a scalar reward signal
+ - Goal: select actions to maximise future reward"
+
+"Deep Learning is a general-purpose framework for representation learning:
+ - Given an objective
+ - Learn representation that is required to achieve objective
+ - Directly from raw inputs
+ - Using minimal domain knowledge"
+
+"We seek a single agent which can solve any human-level task:
+ - Reinforcement Learning defines the objective
+ - Deep Learning gives the mechanism
+ - Reinforcement Learning + Deep Learning = general intelligence"
+
+relations with other fields - https://goo.gl/XlgPJu
 
 
-(Demis Hassabis) "In our view reinforcement learning is going to be as big as deep learning in the next two or three years. The further we go with this, the more we feel our thesis is correct, and I think we’re changing the entire field." "Technology could surface in virtual assistants or improve recommendation systems, which are crucial to products such as YouTube (similar systems also power some of Google’s advertising products)." [https://www.technologyreview.com/s/601139/how-google-plans-to-solve-artificial-intelligence/]
+
+
+[applications]
+
+  Microsoft Multiworld Testing Decision Service (personalized news on MSN, contextual bandits) - https://mwtds.azurewebsites.net + http://research.microsoft.com/en-us/projects/mwt/ + http://hunch.net/?p=4464948
+
+  Google (datacenter cooling, Deep Q-Learning) - http://bloomberg.com/news/articles/2016-07-19/google-cuts-its-giant-electricity-bill-with-deepmind-powered-ai + https://deepmind.com/blog
+
+  Google (recommender system, Deep Q-Learning) - https://deepmind.com/blog
+	"We have also built a massively distributed deep RL system, known as Gorila, that utilises the Google Cloud platform to speed up training time by an order of magnitude; this system has been applied to recommender systems within Google."
+
+  (Demis Hassabis) "In our view reinforcement learning is going to be as big as deep learning in the next two or three years. The further we go with this, the more we feel our thesis is correct, and I think we’re changing the entire field." "Technology could surface in virtual assistants or improve recommendation systems, which are crucial to products such as YouTube (similar systems also power some of Google’s advertising products)." [https://www.technologyreview.com/s/601139/how-google-plans-to-solve-artificial-intelligence/]
 
 
 
 
 [overview]
 
-  introduction (non-technical) - http://thetalkingmachines.com/blog/2015/5/21/how-we-think-about-privacy-and-finding-features-in-black-boxes
+  introduction - http://thetalkingmachines.com/blog/2015/5/21/how-we-think-about-privacy-and-finding-features-in-black-boxes
 
+  introduction -
+	http://kvfrans.com/reinforcement-learning-basics/
+	http://kvfrans.com/markov-processes-in-reinforcement-learning/
+	http://kvfrans.com/planning-policy-evaluation-policy-iteration-value-iteration/
+	http://kvfrans.com/model-free-prediction-and-control/
+	http://kvfrans.com/the-policy-gradient/
+	http://kvfrans.com/making-use-of-the-model/
 
-  "Learning in Brains and Machines: Temporal Differences" by Shakir Mohhamed - http://blog.shakirm.com/2016/02/learning-in-brains-and-machines-1/
 
   introduction by Michael Littman - "Reinforcement Learning Improves Behaviour From Evaluative Feedback" - http://readcube.com/articles/10.1038%2Fnature14540
 
 
-  introduction by David Silver - https://youtube.com/watch?v=2pWv7GOvuf0
+  "Learning in Brains and Machines: Temporal Differences" by Shakir Mohamed - http://blog.shakirm.com/2016/02/learning-in-brains-and-machines-1/
+  "Synergistic and Modular Action" by Shakir Mohamed - http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/
 
-  introduction by Rich Sutton - http://research.microsoft.com/apps/video/default.aspx?id=259577 + https://gridworld.wordpress.com/2015/12/08/nips-2015-rl-tutorial/
 
-  introduction by Michael Littman - http://videolectures.net/rldm2015_littman_computational_reinforcement/
+  introduction by David Silver - https://youtube.com/watch?v=2pWv7GOvuf0 + http://techtalks.tv/talks/deep-reinforcement-learning/62360/ (latest developments)
+
+
+  tutorial by Rich Sutton - https://youtube.com/watch?v=Fsh1qMTg1xI + https://gridworld.wordpress.com/2015/12/08/nips-2015-rl-tutorial/
+
+  tutorial by Nando de Freitas
+	http://youtube.com/watch?v=kUiR0RLmGCo (Deep Policy Search)
+	http://youtube.com/watch?v=dV80NAlEins (Deep Q-Learning)
+	http://youtube.com/watch?v=HUmEbUkeQHg
 
 
   overview by David Silver
+	http://techtalks.tv/talks/deep-reinforcement-learning/62360/ + http://hunch.net/~beygel/deep_rl_tutorial.pdf (ICML 2016)
 	http://videolectures.net/rldm2015_silver_reinforcement_learning/
-	http://youtube.com/watch?v=qLaDWKd61Ig
-
+	http://youtube.com/watch?v=qLaDWKd61Ig (UAI 2015)
 	http://youtube.com/watch?v=EX1CIVVkWdE + http://youtube.com/watch?v=zXa6UFLQCtg +
 		http://www.iclr.cc/lib/exe/fetch.php?media=iclr2015:silver-iclr2015.pdf (ICLR 2015)
 	http://youtube.com/watch?v=3hWn5vMnpiM (NIPS 2014)
@@ -37,11 +80,6 @@
 	http://youtube.com/watch?v=evq4p1zhS7Q
 	http://research.microsoft.com/apps/video/default.aspx?id=260045 (NIPS 2015)
 	http://youtube.com/watch?v=xMHjkZBvnfU (NIPS 2014)
-
-  overview by Nando de Freitas
-	http://youtube.com/watch?v=HUmEbUkeQHg
-	http://youtube.com/watch?v=kUiR0RLmGCo (Deep Policy Search)
-	http://youtube.com/watch?v=dV80NAlEins (Deep Q-Learning)
 
   overview by Juergen Schmidhuber
 	https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber
@@ -70,6 +108,10 @@
 	* Integrating Learning and Planning
 	* Exploration and Exploitation
 
+  course by Michael Littman -
+	https://udacity.com/course/machine-learning-reinforcement-learning--ud820
+	https://udacity.com/course/reinforcement-learning--ud600
+
   course notes by Dustin Tran - http://dustintran.com/notes/cs282r.pdf
 
   course by Rich Sutton - https://dropbox.com/sh/3xowt7qvyadvejn/AABzXUHeN92grGu8R_24hJQCa/slides
@@ -88,6 +130,7 @@
   "A Short Introduction To Some Reinforcement Learning Algorithms" tutorial by Hado van Hasselt - http://webdocs.cs.ualberta.ca/~vanhasse/rl_algs/rl_algs.html
   "Reinforcement Learning in Continuous State and Action Spaces" tutorial by Hado van Hasselt - http://webdocs.cs.ualberta.ca/~vanhasse/papers/RL_in_Continuous_Spaces/index.html
 
+
   Sutton, Barto - "Reinforcement Learning: An Introduction" (second edition, draft) - https://dropbox.com/s/b3psxv2r0ccmf80/book2015oct.pdf
   Sutton, Barto - "Reinforcement Learning: An Introduction" (first edition) - http://webdocs.cs.ualberta.ca/~sutton/book/ebook/the-book.html
   Csaba Szepesvari - "Algorithms for Reinforcement Learning" - http://www.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf
@@ -100,10 +143,10 @@
 
 [reinforcement learning]
 
-  control physical systems: walk, fly, drive, swim, ...
-  interact with users: retain customers, personalise channel, optimise user experience, ...
+  play games: Atari, poker, Go, ...
+  control physical systems: manipulate, walk, drive, fly, ...
+  interact with users: recommend, retain customers, personalise, optimise user experience, ...
   solve logistical problems: scheduling, bandwidth allocation, elevator control, cognitive radio, power optimisation, ...
-  play games: chess, checkers, Go, Atari games, ...
   learn sequential algorithms: attention, memory, conditional computation, activations, ...
 
   - can learn _any_ function
@@ -120,19 +163,22 @@
   - stability (non-stationary, fleeting nature of time and online data)
   - credit assigment (delayed rewards and consequences)
   - exploration vs exploitation (need for trial and error)
+  - using learned model of environment
 
   open problems:
   - adaptive methods which work with fewer (or no) parameters under a large number of conditions
-  - addressing the exploration problem in large MDPs
+  - addressing exploration problem in large MDPs
   - large-scale empirical evaluations
-  - learning and acting under partial information (e.g., using Predictive State Representation)
-  - modular and hierarchical reinforcement learning
+  - learning and acting under partial information
+  - modular and hierarchical learning (over multiple time scales)
+  - sample efficiency
   - improving existing value-function and policy search methods
-  - algorithms that work well with large (or continuous) action spaces
+  - algorithms that work well with large or continuous action spaces
   - transfer learning
   - lifelong learning
   - efficient sample-based planning (e.g., based on Monte-Carlo tree search)
   - multiagent or distributed learning
+  - learning from demostrations
 
 
   methods:
@@ -143,30 +189,31 @@
   - model-based vs model-free
   - value-based vs policy-based
 
+
   * value-based
-        estimate the optimal value function Q*(s, a) (expected total reward from state s and action a under policy π)
+        estimate the optimal value function Q*(s,a) (expected total reward from state s and action a under policy π)
         this is the maximum value achievable under any policy
   * policy-based
-        search directly for the optimal policy π (behaviour function selecting actions given states) achieving maximum expected reward
-	often simpler to represent good policies than good value functions
+        search directly for the optimal policy (behaviour function selecting actions given states) achieving maximum expected reward
+	often simpler to represent and learn good policies than good state value or action value functions (such as for robot grasping an object)
+	state value function doesn't prescribe actions (dynamics model becomes necessary)
+	action value function requires to solve maximization problem over actions (challenge for continuous / high-dimensional action spaces)
 	focus on discriminating between several actions instead of estimating values for every state-action
 	true objectives of expected cost is optimized (vs a surrogate like Bellman error)
 	suboptimal values does not necessarily give suboptimal actions in every state (but optimal values do)
 	easier generalization to continuous action spaces
   * model-based
-        build a transition model of the environment p(r, s'|s, a) by deep network
+        build a transition model of the environment p(r,s'|s,a) by deep network
         define objective function measuring goodness of model
 	e.g. number of bits to reconstruct next state
         plan (e.g. by lookahead) using model
-        
+	allows reasoning about task-independent aspects of environment
+	allows for transfer learning across domains and faster learning
+
 
   - model-based (dynamic programming, value/policy iteration) vs experience-based (TD-lambda, SARSA, Q-Learning)
   - MDP (fully observable) vs POMDP
   - value learning vs policy learning
-
-  * policy iteration
-  * approximate dynamic programming
-  * actor-critic methods
 
 
   Model-Free RL
@@ -182,13 +229,25 @@
 	experience -[model learning]-> model -[planning]-> value/policy -[acting]-> experience -[direct RL]-> value/policy
 
 
-  policy gradient vs value-based methods
-  - often the policy is simpler to model than the value function
+  what's the right core model-free algorithm is not clear
+  - policy gradients (score function vs reparametrization, natural vs not natural) vs Q-learning vs derivative-free optimization
+  - desired properties: scalable, sample-efficient, robust, learning from off-policy data
+	policy gradient methods scalable, not sample-efficient, not robust, no off-policy
+	trust region methods less scalable, more sample-efficient, more robust, no off-policy
+	Q-Learning scalable in state space, little more sample-efficient, not robust, no off-policy (empirically)
+
+  advantages of policy-based over value-based methods:
+  - often the policy is simpler to model than value function
   - information about actual values may be redundant
   - policy gradient methods typically converge better
   - maximization of Q values may be too expensive
   - policy gradient methods may learn stochastic policies (for POMDPs)
-  - value functions are useful to reduce the variance (compared to policy gradient methods without value functions)
+
+  drawbacks of policy-based methods:
+  - only on-policy methods, unproductive use of experience gained, poor exploration
+  - tendency to converge to a local maximum rather than to a global one
+  - high gradient variance while converging, value functions are useful to reduce the variance
+  - need for some prior information on the system in order to select a proper policy distribution
 
 
   off-policy learning (evaluate target policy to compute control while following another behaviour policy):
@@ -233,11 +292,31 @@
   dimensions for classification of RL methods - https://webdocs.cs.ualberta.ca/~sutton/book/ebook/node105.html
 
 
-  inverse reinforcement learning
-	"The objective is to infer the underlying reward structure guiding an agent’s behaviour based on observations and a model of the environment. This may be done either to learn the reward structure for modelling purposes (reward learning) or to provide a framework to allow the agent to imitate a demonstrator’s specific behaviour (apprenticeship learning)."
+  hierarchical/modular RL
+	  - simplifies dimensionality of the action spaces over which we need to reason
+	  - enables quick planning and execution of low-level actions (such as robot movements)
+	  - provides a simple mechanism that connects plans and intentions to commands at the level of execution
+	  - supports rapid learning and generalisation (that humans are capable of)
 
-	introduction by Peter Abbeel - http://www.cs.berkeley.edu/~pabbeel/cs287-fa12/slides/inverseRL.pdf
-	"Deep Apprenticeship Learning for Playing Video Games" by Bogdanovic, Markovikj, Denil, Freitas - https://aaai.org/ocs/index.php/WS/AAAIW15/paper/view/10159
+	  http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/
+
+
+  bandits
+	"Removing the credit assignment problem from reinforcement learning yields the Contextual Bandit setting which is generically solvable in the same manner as common supervised learning problems."
+
+	http://iosband.github.io/2015/07/19/Efficient-experimentation-and-multi-armed-bandits.html
+
+	http://blog.getstream.io/introduction-contextual-bandits/
+
+	"Adversarial Bandits and the Exp3 Algorithm" - http://jeremykun.com/2013/11/08/adversarial-bandits-and-the-exp3-algorithm/
+
+	tutorial by Csaba Szepesvari - https://youtube.com/watch?v=VVcLnAoU9Gw + https://youtube.com/watch?v=cknukHreMdI + https://youtube.com/watch?v=ruIO79C2IQc
+
+	"Bandit Theory" by Sebastien Bubeck - https://blogs.princeton.edu/imabandit/2016/05/11/bandit-theory-part-i/ + https://blogs.princeton.edu/imabandit/2016/05/13/bandit-theory-part-ii/
+
+	"Multiworld Testing Decision Service" (first general purpose reinforcement-based learning system) - http://hunch.net/?p=4464948 + http://research.microsoft.com/en-us/projects/mwt/
+
+	papers - https://dropbox.com/sh/saxdz2c9ljr4ip2/AADS7U3FwHedmDe5whaRKqHPa
 
 
   feature reinforcement learning
@@ -250,77 +329,145 @@
 	reduce complex real-world problem to tractable structured Markov Decision Process (~Dynamic Bayesian Network, Neural Network, Memory) automatically by learning relevant features
 
 
+  inverse reinforcement learning
+	"The objective is to infer the underlying reward structure guiding an agent’s behaviour based on observations and a model of the environment. This may be done either to learn the reward structure for modelling purposes (reward learning) or to provide a framework to allow the agent to imitate a demonstrator’s specific behaviour (apprenticeship learning)."
+
+	introduction by Pieter Abbeel - http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/ (part 2, 20:40) + http://www.cs.berkeley.edu/~pabbeel/cs287-fa12/slides/inverseRL.pdf
+	"Deep Apprenticeship Learning for Playing Video Games" by Bogdanovic, Markovikj, Denil, Freitas - https://aaai.org/ocs/index.php/WS/AAAIW15/paper/view/10159
+
+
+
   "Novel Trends and Applications in RL" workshop at NIPS 2014 - https://tcrl14.wordpress.com/videos/
   "Reinforcement Learning" workshop at NIPS 2015 - https://gridworld.wordpress.com/2015/12/08/nips-2015-rl-tutorial/
   "Deep Reinforcement Learning" workshop at NIPS 2015 - http://rll.berkeley.edu/deeprlworkshop/ + https://gridworld.wordpress.com/2015/12/13/nips-2015-deep-rl-workshop/
+  "Deep Reinforcement Learning: Frontiers and Challenges" workshop at IJCAI 2016 - https://sites.google.com/site/deeprlijcai16/
+  "Abstraction in RL" workshop at ICML 2016 - http://rlabstraction2016.wix.com/icml
 
 
-  REINFORCEjs demos by Andrej Karpathy - http://cs.stanford.edu/people/karpathy/reinforcejs/index.html
-	- dynamic programming for finite and small MDPs: tabular value functions, model of environment
-	- tabular temporal difference learning (SARSA, Q-Learning, Eligibility Traces, Planning with priority sweeps): tabular value functions, no environment model, learning from experience
-	- Deep Q-Learning (experience replay, TD error clamping for robustness): approximating action-value function with neural network, support for continuous spaces, discrete number of actions
-	- policy gradients (REINFORCE, LSTMs): learning actor policy, learning value function, Determenistic Policy Gradients, continuous actions
+  benchmarks:
+  - OpenAI Gym
+	https://gym.openai.com
+	https://gym.openai.com/envs + https://gym.openai.com/envs#atari
+	https://openai.com/blog/openai-gym-beta/
+	http://arxiv.org/abs/1606.01540
+  - RLLab
+	https://github.com/rllab/rllab
+	"Benchmarking Deep Reinforcement Learning for Continuous Control" -
+		http://arxiv.org/abs/1604.06778
+		http://techtalks.tv/talks/benchmarking-deep-reinforcement-learning-for-continuous-control/62380/
+  - Parallel Game Engine
+	https://github.com/222464/PGE
+  - Project Malmo (Minecraft)
+	https://microsoft.com/en-us/research/project/project-malmo/
+	https://youtube.com/watch?v=399qJUBRA0o
 
 
 
 
 [deep reinforcement learning]
 
-  "Deep	Reinforcement Learning" by John Schulman - http://rll.berkeley.edu/deeprlcourse/docs/2015.08.26.Lecture01Intro.pdf
+  "Deep Reinforcement Learning" by John Schulman - http://rll.berkeley.edu/deeprlcourse/docs/2015.08.26.Lecture01Intro.pdf
 
   "Brief Review of Deep Reinforcement Learning" by Junlong Liu - https://plus.google.com/photos/103321132484611285919/albums/6164519479726594273
 
   http://nervanasys.com/demystifying-deep-reinforcement-learning/
 
+  Deep Reinforcement Learning tutorial from OpenAI - https://gym.openai.com/docs/rl
+
 
   course by David Silver
+	"Value Function Approximation" - http://youtube.com/watch?v=UoPei5o4fps
+	"Policy Gradient Methods" - http://youtube.com/watch?v=KHZVXao4qXs
 	http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html
 
   course by John Schulman and Pieter Abbeel
+	https://youtube.com/watch?v=aUrX-rP_ss4
+	https://youtube.com/watch?v=oPGVsoBonLM
+	https://youtube.com/watch?v=rO7Dx8pSJQw
+	https://youtube.com/watch?v=gb5Q2XL5c8A
+	http://goo.gl/5wsgbJ
 	http://rll.berkeley.edu/deeprlcourse/
 
 
-  Deep Reinforcement Learning workshop @ NIPS 2015 - https://gridworld.wordpress.com/2015/12/13/nips-2015-deep-rl-workshop/
+  Deep Reinforcement Learning workshop by @ NIPS 2015 - https://gridworld.wordpress.com/2015/12/13/nips-2015-deep-rl-workshop/
+
+  "Deep Reinforcement Learning through Policy Optimization" by Pieter Abbeel @ MLSS 2016 - http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/
+
+  "Latest Developments in Deep Reinforcement Learning" by Mikhail Pavlov and Alexey Seleznev (in russian) - https://youtube.com/watch?v=mrgJ53TIcQc
 
 
   applications:
    - Go
-	"Mastering the Game of Go with Deep Neural Networks and Tree Search" by DeepMind - https://vk.com/doc-44016343_437229031?hash=9c999a03ee82850948&dl=56ce06e325d42fbc72
+	"Mastering the Game of Go with Deep Neural Networks and Tree Search" - https://vk.com/doc-44016343_437229031?hash=9c999a03ee82850948&dl=56ce06e325d42fbc72
 	"Google AlphaGo is a historical tour of AI ideas: 70s (Alpha-Beta), 80s/90s (RL & self-play), 00's (Monte-Carlo), 10's (deep neural networks)."
 	history of ideas by Sutton, Szepesvari, Bowling, Hayward, Muller - http://youtube.com/watch?v=UMm0XaCFTJQ
 
 	https://youtu.be/yCALyQRN3hw?t=15m18s + https://youtu.be/qUAmTYHEyM8?t=15m31s + https://youtu.be/mzpW10DPHeQ?t=10m22s (Silver, Maddison)
+	http://icml.cc/2016/tutorials/AlphaGo-tutorial-slides.pdf
 	https://xcorr.net/2016/02/03/5-easy-pieces-how-deepmind-mastered-go/
-	https://gogameguru.com/alphago-defeats-lee-sedol-game-1/ + https://youtube.com/watch?v=bIQxOsRAXCo
-	https://gogameguru.com/alphago-races-ahead-2-0-lee-sedol/ + https://youtube.com/watch?v=1aMt7ulL6EI
-	https://gogameguru.com/alphago-shows-true-strength-3rd-victory-lee-sedol/ + https://youtube.com/watch?v=6hROM_bxZ9E
-	https://gogameguru.com/lee-sedol-defeats-alphago-masterful-comeback-game-4/ + https://youtube.com/watch?v=QxHdPdRcMhw
+	https://github.com/Rochester-NRT/RocAlphaGo/wiki
+
+	https://gogameguru.com/alphago-defeats-lee-sedol-game-1/ + http://deeplearningskysthelimit.blogspot.ru/2016/04/part-6-review-of-game-1-lee-sedol.html + https://youtube.com/watch?v=bIQxOsRAXCo
+	https://gogameguru.com/alphago-races-ahead-2-0-lee-sedol/ + http://deeplearningskysthelimit.blogspot.ru/2016/04/part-7-review-of-game-2-alphagos-new.html + https://youtube.com/watch?v=1aMt7ulL6EI
+	https://gogameguru.com/alphago-shows-true-strength-3rd-victory-lee-sedol/ + http://deeplearningskysthelimit.blogspot.ru/2016/04/part-8-review-of-game-3-lee-sedols.html + https://youtube.com/watch?v=6hROM_bxZ9E
+	https://gogameguru.com/lee-sedol-defeats-alphago-masterful-comeback-game-4/ + http://deeplearningskysthelimit.blogspot.ru/2016/04/part-9-review-of-game-4-lee-sedols.html + https://youtube.com/watch?v=G5gJ-pVo1gs
+	https://gogameguru.com/alphago-defeats-lee-sedol-4-1/ + http://deeplearningskysthelimit.blogspot.ru/2016/05/part-10-review-of-game-5-alphago.html + https://youtube.com/watch?v=QxHdPdRcMhw
 
    - Chess
-	"Giraffe: Using Deep Reinforcement Learning to Play Chess" by Matthew Lai - http://arxiv.org/abs/1509.01549
+	"Giraffe: Using Deep Reinforcement Learning to Play Chess" - http://arxiv.org/abs/1509.01549
 
    - Poker
 	"Deep Reinforcement Learning from Self-Play in Imperfect-Information Games" - http://arxiv.org/abs/1603.01121
 	"Poker-CNN: A Pattern Learning Strategy for Making Draws and Bets in Poker Games Using Convolutional Networks" - http://colinraffel.com/publications/aaai2016poker.pdf
 
+   - Bridge
+	"Automatic Bridge Bidding Using Deep Reinforcement Learning" - http://arxiv.org/abs/1607.03290
+
+   - 2048
+	https://arxiv.org/abs/1604.05085
+	https://github.com/wonjunyoon/2048_deepql_torch
+
    - robotics
 	"Making Robots Learn" by Pieter Abbeel -
 		https://youtu.be/xe-z4i3l-iQ?t=30m35s
 		http://on-demand.gputechconf.com/gtc/2016/video/S6812.html
-	"Learning Neural Network Policies for Robotic Manipulation with Guided Policy Search" by Pieter Abbeel -
 		http://youtube.com/watch?v=xMHjkZBvnfU
-	"Learning Deep Visuomotor Policies" by Trevor Darrell -
-		https://youtu.be/xgUZTvAZfDo?t=28m20s
-	"Robotic Visuomotor Learning" by Sergey Levine and Chelsea Finn -
-		https://youtube.com/watch?v=PcdMU-H9Jts
-	"Deep Learning for Decision Making and Control" by Sergey Levine -
+	"Deep Robotic Learning" by Sergey Levine -
+		http://videolectures.net/iclr2016_levine_deep_learning/
+		https://youtube.com/watch?v=f41JXf-ojrM
 		https://youtube.com/watch?v=EtMyH_--vnU
 		https://video.seas.harvard.edu/media/ME+Sergey+Levine+2015+-04-01/1_gqqp9r3o/23375211
+	"Learning Deep Visuomotor Policies" by Trevor Darrell -
+		https://youtu.be/xgUZTvAZfDo?t=28m20s
 
 	MuJoCo physics simulator - http://mujoco.org/gallery.html
+	V-REP - http://coppeliarobotics.com
+	Gazebo - http://gazebosim.org
+	Unreal Engine (Torch integration) - https://github.com/facebook/UETorch
 
 
-  * Deep Q-Network
+  methods:
+   - derivative free methods
+	CEM, Finite Differences, Fixed Random Seed
+   - likelihood ratio (LR) policy gradient
+	natural gradient / trust regions (TRPO)
+	actor-critic (GAE, A3C)
+   - path derivative (PD)
+	DPG, DDPG, SVG
+   - stochastic computation graphs (generalizes LR and PD)
+   - guided policy search (reduction to supervised learning)
+
+  "Benchmarking Deep Reinforcement Learning for Continuous Control" by Duan, Chen, Houthooft, Schulman, Abbeel - http://arxiv.org/abs/1604.06778 + http://techtalks.tv/talks/benchmarking-deep-reinforcement-learning-for-continuous-control/62380/
+
+
+  * Deep Q-Network methods
+
+	  http://videolectures.net/rldm2015_silver_reinforcement_learning/ (David Silver)
+	  https://youtu.be/qLaDWKd61Ig?t=9m16s (David Silver)
+	  http://youtube.com/watch?v=dV80NAlEins (Nando de Freitas)
+	  http://youtube.com/watch?v=HUmEbUkeQHg (Nando de Freitas)
+	  http://youtube.com/watch?v=mrgJ53TIcQc (Mikhail Pavlov, in russian)
+
 
 	  - use deep network to represent value function/policy/model
 	  - optimise value function/policy/model end-to-end using SGD
@@ -351,25 +498,22 @@
 	  - clip rewards or normalize network adaptively to sensible range
 	      robust gradients
 
-
-	  Deterministic Actor-Critic:
+	  deterministic actor-critic:
 	  - use two networks for actor and critic
 	  - actor is policy p(s, u) with parameters u
 	  - critic is value function Q(s, a, w)
 	  - critic provides loss function for actor
 	  - gradient backpropagates from critic into actor
 
-	
 	  challenges of Model-Based RL:
 	  - errors in the transition model compound over the trajectory
-	  - by the end of a long trajectory, rewards can be totally wrong
-	  - model-based RL has failed (so far) in Atari
+	  - planning trajectories differe from executed trajectories
+	  - at the end of long unusual trajectory, rewards can be totally wrong
 
 	  deep networks of value/policy can "plan" implicitly:
 	  - each layer of network performs arbitrary computational step
 	  - n-layer network can "lookahead" n steps
 	  - are transition models required at all?
-
 
 	  open research problems:
 	  - hierarchy
@@ -387,57 +531,237 @@
 	  - Q Learning is model-free, meaning that the agent builds no internal model of the world/reward dynamics. Unlike us, it doesn't know what will happen to the world if it perfoms some action. This also means that it does not have any capacity to plan anything. [not yet successful attempts to address]
 	    Of these, the biggest and most insurmountable problem is the first one: Random exploration of actions. As humans we have complex intuitions and an internal model of the dynamics of the world. This allows us to plan out actions that are very likely to yield a reward, without flailing our arms around greedily, hoping to get rewards at random at some point. Games like Starcraft will significantly challenge an algorithm like this. You could expect that the model would develop super-human micro, but have difficulties with the overall strategy. For example, performing an air drop to enemy base would be impossible with the current model: You'd have to plan it out over many actions: "load the marines into the ship, fly the ship in stealth around the map, drop it at the precise location of enemy base". Hence, DQN is best at games that provide immediate rewards, and where you can afford to "live in the moment" without much planning. Shooting things in space invaders is a good example."
 
+	  "Playing Atari with Deep Reinforcement Learning" - http://arxiv.org/abs/1312.5602
+	  "Human-Level Control through Deep Reinforcement Learning" - http://home.uchicago.edu/~arij/journalclub/papers/2015_Mnih_et_al.pdf
+	  "Deep Reinforcement Learning with Double Q-learning" - http://arxiv.org/abs/1509.06461
+	  "Dueling Network Architectures for Deep Reinforcement Learning" - http://arxiv.org/abs/1511.06581
+	  "Prioritized Experience Replay" - http://arxiv.org/abs/1511.05952
+	  "Deep Exploration via Bootstrapped DQN" - http://arxiv.org/abs/1602.04621
+	  "Asynchronous Methods for Deep Reinforcement Learning" - http://arxiv.org/abs/1602.01783
+	  "Continuous Deep q-Learning with Model-based Acceleration" - http://arxiv.org/abs/1603.00748
 
 	  implementations:
 	   - https://github.com/kuz/DeepMind-Atari-Deep-Q-Learner + https://sites.google.com/a/deepmind.com/dqn/
-	   - https://github.com/Kaixhin/Atari
+	   - https://github.com/carpedm20/deep-rl-tensorflow
+	   - https://github.com/Kaixhin/Atari (persistent advantage learning, dueling network architecture, Double Q-learning)
 	   - https://github.com/tambetm/simple_dqn + https://youtu.be/KkIf0Ok5GCE + https://youtu.be/0ZlgrQS3krg
+	   - https://github.com/tambetm/gymexperiments
 	   - https://github.com/spragunr/deep_q_rl + http://sodeepdude.blogspot.ru/2015/03/deepminds-atari-paper-replicated.html
 	   - https://github.com/ugo-nama-kun/DQN-chainer + http://youtube.com/watch?v=N813o-Xb6S8
 	   - https://github.com/muupan/dqn-in-the-caffe
 	   - https://github.com/brian473/neural_rl
 	   - https://github.com/kristjankorjus/Replicating-DeepMind
 	   - https://github.com/asrivat1/DeepLearningVideoGames
-	   - https://github.com/Kaixhin/Atari (persistent advantage learning, dueling network architecture, Double Q-learning)
-	   - https://github.com/gliese581gg/DQN_tensorflow
 	   - https://github.com/Jabberwockyll/deep_rl_ale
+	   - https://github.com/VinF/deer
+	   - https://github.com/sherjilozair/dqn
+	   - https://github.com/gliese581gg/DQN_tensorflow
+	   - https://github.com/devsisters/DQN-tensorflow
+	   - https://github.com/osh/kerlym
+	   - https://github.com/ludc/rltorch/blob/master/torch/policies/DeepQPolicy.lua
 	   - http://cs.stanford.edu/people/karpathy/convnetjs/demo/rldemo.html
-
 
 	  Google's patent on Deep Q-Networks [http://google.com/patents/US20150100530]:
 		"Further applications of the techniques we describe, which are merely given by way of example, include: robot control (such as bipedal or quadrupedal walking or running, navigation, grasping, and other control skills); vehicle control (autonomous vehicle control, steering control, airborne vehicle control such as helicopter or plane control, autonomous mobile robot control); machine control; control of wired or wireless communication systems; control of laboratory or industrial equipment; control of real or virtual resources (such as memory management, inventory management and the like); drug discovery (where the controlled action is, say, the definition of DNA sequence of a drug and the states are defined by states of a living entity to which the drug is applied); application to a system in which the state of or output from the system is defined by words (text and/or audio and/or image), such as a system employing natural language; application to a trading system such as a stock market (although the actions taken may have little effect on such a system, very small effects can be sufficient to achieve useful overall rewards); and others."
 
 
-  * Guided Policy Search
+  * Policy Gradient methods
+
+	(Andrej Karpathy) "Most people prefer to use Policy Gradients, including the authors of the original DQN paper who have shown Policy Gradients to work better than Q Learning when tuned well. PG is preferred because it is end-to-end: there’s an explicit policy and a principled approach that directly optimizes the expected reward."
+
+	optimization issues:
+	 - inefficient use of data, large number of samples required
+		each experience is only used to compute one gradient (on-policy)
+		given a batch of trajectories what's the most we can do with it?
+	 - hard to choose reasonable stepsize that works for the whole optimization
+		we have a gradient estimate, no objective for line search
+		statistics of data (observations and rewards) change during learning
+
+
+	REINFORCE / Likelihood Ratio Policy Gradient
+		https://theneural.wordpress.com/2011/09/13/the-useless-beauty-of-reinforce/ (Ilya Sutskever)
+		https://youtube.com/watch?v=oPGVsoBonLM + https://youtube.com/watch?v=rO7Dx8pSJQw + http://goo.gl/5wsgbJ (John Schulman)
+		http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/ (Pieter Abbeel, 0:16:40)
+
+		score function gradient estimator
+			∇θE x~θ[f(x)] = ∇θ ∫dx p(x|θ)f(x) = ∫dx ∇θp(x|θ)f(x) = ∫dx p(x|θ)∇θp(x|θ)/p(x|θ)*f(x) = ∫dx p(x|θ)∇θlog p(x|θ)f(x) = E x~θ[f(x)∇θlog p(x|θ)]
+			unbiased gradient estimator: sample xi ~ p(x|θ) and compute gi=f(xi)∇θlog p(xi|θ)
+			valid even if f(x) is discontinuous and unknown, or if sample space containing x is discrete
+
+			E x~θ[f(x)] = E x~θold[p(x|θ)/p(x|θold)*f(x)]  (alternative derivation using importance sampling)
+			∇θE x~θ[f(x)] = E x~θold[∇θp(x|θ)/p(x|θold)*f(x)]
+			∇θE x~θ[f(x)]|θ=θold = E x~θold[∇θp(x|θ)|θ=θold / p(x|θold)*f(x)] = E x~θold[∇θlog p(x|θ)|θ=θold*f(x)]
+
+			baseline: if ∀x f(x)>=0 then for any xi gradient estimator tries to push up it's density but it should push up density only for better-than-average xi
+			∇θE x~θ[f(x)] = ∇θE x~θ[f(x) - b] = E x~θ[∇θ log p(x|θ)(f(x) - b)] where optimal b is always E[f(x)]
+
+		∇θ Σx pθ(x)r(x) = Σx pθ(x)∇θlog(pθ(x))r(x)  (score function gradient estimator)
+		Σx pθ(x)∇θlog(pθ(x)) = Σx pθ(x)∇θpθ(x)/pθ(x) = ∇θ Σx pθ(x) = ∇θ[1] = 0 =>
+		∇θ Σx pθ(x)r(x) = Σx pθ(x)∇θlog(pθ(x))(r(x)-ravg)  (baseline)
+
+		τ=(s0,a0,r0,s1,a1,r1,...,sT)
+		∇θEτ[R(τ)]=Eτ[∇θ log p(τ|θ)R(τ)]
+		p(τ|θ) = μ(s0) Πt=0..T-1 [π(at|st,θ)P(s+1,rt|st,at)]
+		∇θ log p(τ|θ) = ∇θ Σt=0..T-1 log π(at|st,θ)
+		∇θEτ[R(τ)] = Eτ[(Σt=0..T-1 rt)(∇θ Σt=0..T-1 log π(at|st,θ))]
+
+		∇θEτ[rt] = E[rt*(Σt'=0..t ∇θ log π(at'|st',θ))]  (single reward depends only on previous actions)
+		∇θE[R(τ)] = E[Σt=0..T-1 rt*(Σt'=0..T-1 ∇θ log π(at'|st',θ))]  (summing rewards over t)
+		∇θE[R(τ)] = E[Σt'=0..T-1 (∇θ log π(at'|st',θ))(Σt=t'..T-1 rt)]
+		  (due to Markov property st summarizes all previous effects thus considering only future rewards for action)
+
+		Ex[∇θ log π(at'|st',θ)] = 0 => ∇θE[R(τ)] = (Σt'=0..T-1 ∇θ log π(at'|st',θ))(Σt=t'..T-1 rt - b(st))  (baseline)
+		Actor-Critic: use value function as suboptimal baseline to further isolate effect of action at the cost of bias
+
+		implementations:
+		 - https://gist.github.com/karpathy/a4166c7fe253700972fcbc77e4ea32c5 (Karpathy) + http://karpathy.github.io/2016/05/31/rl/
+		 - https://github.com/kvfrans/openai-cartpole/blob/master/cartpole-policygradient.py + http://kvfrans.com/simple-algoritms-for-solving-cartpole/
+		 - http://rl-gym-doc.s3-website-us-west-2.amazonaws.com/mlss/pg-startercode.py (Schulman)
+		 - https://github.com/osh/kerlym/blob/master/kerlym/pg.py
+		 - https://github.com/ludc/rltorch/blob/master/torch/policies/PolicyGradient.lua
+		 - https://github.com/ludc/rltorch/blob/master/torch/policies/RecurrentPolicyGradient.lua
+		 - https://github.com/rllab/rllab/blob/master/rllab/algos/vpg.py (Rocky Duan)
+
+
+	Trust Region Policy Optimization (improvement on Likelihood Ratio Policy Gradient)
+		second order policy gradient algorithm that is highly effective on both continuous and discrete control problems
+
+		https://youtube.com/watch?v=gb5Q2XL5c8A (Schulman)
+		http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/ (Abbeel, 0:27:10)
+
+		want to optimize η(θ) = η(θold) + Er~π[Aπ(s0,a0)+Aπ(s1,a1)+...]
+		collected data with policy parameters θold, now want to do update
+		can't use η(θ) = η(θold) + Es0..∞[Ea0..∞[Aπ(s0,a0)+Aπ(s1,a1)+...]] because state distribution has complicated dependence on π(θ)
+		derived local approximation Lθold(θ) = Es0..∞[Σt=1..T-1 Ea~θ[π(at|st,θ)/π(at|st,θold)*Aθ(st,at)]] which matches η(θ) to first order around θold
+		∇θ Lθold(θ) = Es0..∞[Σt=1..T-1 Ea~θ[∇θπ(at|st,θ)/π(at|st,θold)*Aθ(st,at)]] = Es0..∞[Σt=1..T-1 Ea~θ[∇θlog π(at|st,θ) Aθ(st,at)]] = ∇θη(θ)|θ=θold
+		optimizing KL penalized local approximation gives guaranteed improvement to η: η(θ) >= Lθold(θ) - C * max s[Dkl(π(.|θold,s) || π(.|θ,s))]
+
+		implementations:
+		 - https://github.com/joschu/modular_rl
+		 - https://github.com/rll/deeprlhw2/blob/master/ppo.py + https://github.com/rll/deeprlhw2
+		 - https://github.com/wojzaremba/trpo + https://github.com/wojzaremba/trpo_rnn
+		 - https://github.com/rllab/rllab/blob/master/rllab/algos/trpo.py
+		 - https://github.com/kvfrans/parallel-trpo
+
+
+	Actor-Critic (improvement on Likelihood Ratio Policy Gradient)
+		critic provides loss function for actor
+
+		http://videolectures.net/rldm2015_silver_reinforcement_learning/ (Silver, 1:07:23)
+		https://youtu.be/qLaDWKd61Ig?t=38m58s (Silver)
+		https://youtu.be/mrgJ53TIcQc?t=1h3m2s (Seleznev, in russian)
+		https://youtu.be/rO7Dx8pSJQw?t=50m (Schulman)
+		http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/ (Abbeel, 0:49:45)
+
+		http://www.rage.net/~greg/2016-07-05-ActorCritic-with-OpenAI-Gym.html
+
+		cumulative discounted reward
+			J(πθ) = ∫S ρπ(s) ∫A πθ(s,a)r(s,a)da = E s~ρπ,a~πθ[r(s,a)]
+			J(μθ) = ∫S ρμ(s)r(s,μθ(s))ds = E s~ρμ[r(s,μθ(s))]  (deterministic policy)
+			ρπ(s') = ∫S (Σt=1..∞ γ^(t-1)p1(s)p(s->s',t,π))ds
+
+		stochastic policy gradient theorem (Sutton, 1999)
+			∇θJ(πθ) = ∫S ρπ(s) ∫A ∇θπθ(a|s)Qπ(s,a)dads = E s~ρπ,a~πθ[∇θlogπθ(a|s)Qπ(s,a)]
+
+		Asynchronous Advantage Actor-Critic
+			implementations:
+			 - https://github.com/yandexdataschool/AgentNet/blob/master/agentnet/learning/a2c_n_step.py
+			 - https://github.com/Zeta36/Asynchronous-Methods-for-Deep-Reinforcement-Learning
+			 - https://github.com/miyosuda/async_deep_reinforce
+			 - https://github.com/muupan/async-rl
+			 - https://github.com/coreylynch/async-rl
+			 - https://github.com/carpedm20/deep-rl-tensorflow/blob/master/agents/async.py
+
+
+	Path Derivative Policy Gradient
+		http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/ (Abbeel, 01:02:04)
+		"Gradient Estimation Using Stochastic Computation Graphs" by Schulman, Heess, Weber, Abbeel - http://arxiv.org/abs/1506.05254
+
+
+		deterministic policy gradient theorem (Silver, 2014)
+			∇θJ(μθ) = ∫S ρμ(s)∇θμθ(s)∇aQμ(s,a)|a=μθ(s)ds = E s~ρμ[∇θμθ(s)∇aQμ(s,a)|a=μθ(s)]
+
+		deep deterministic policy gradient
+			"provides a continuous analogue to DQN, exploiting the differentiability of the Q-network"
+			"determinism of the policy allows the policy to be more efficiently and easily optimized with respect to the expected reward function due to the action no longer being a random variable which must be integrated over in the expectation"
+
+			in continuous multidimensional action space ∇aQπ(s,a) tells how to improve action
+			∇θEτ[R(τ)]=Eτ[∇θQπ(s0,a0) + ∇θQπ(s1,a1) + ...]
+
+			∇wL(w) = E s,a,r,s~D[(r+γQ(s',π(s'),w')-Q(s,a,w))∇wQ(s,a,w)]
+			∇uL(u) = E s,a,r,s~D[∇aQ(s,a,w)∇uπ(s,u)]
+			where w' is target Q-network to avoid oscillations
+
+			implementations:
+			 - http://pemami4911.github.io/blog_posts/2016/08/21/ddpg-rl.html
+			 - https://github.com/rllab/rllab/blob/master/rllab/algos/ddpg.py
+			 - https://github.com/yandexdataschool/AgentNet/blob/master/agentnet/learning/dpg_n_step.py
+			 - https://github.com/iassael/torch-policy-gradient
+
+		stochastic value gradient
+			generalized version with reparametrization trick and dynamics model
+			reparametrization trick: E p(y|x)[g(y)]=∫g(f(x,ξ))ρ(ξ)dξ where y=f(x,ξ) and ξ~ρ(.) a fixed noise distribution
+
+
+	Guided Policy Search
+		http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/ (Abbeel, part 2)
+
+		challenges:
+		 - much weaker supervision: cost for being in a state but current state is consequence of initial state, control, and noise (temporal credit assignment problem)
+		 - distribution over observed states determined by robot's own actions (need for exploration)
+	
+		 - optimal trajectories are not sufficiently informative -> distribution over near-optimal trajectories
+		 - representational mismatch trajectory distribution vs neural net -> constrained guided policy search
+
+		implementations:
+		 - http://rll.berkeley.edu/gps/ + http://rll.berkeley.edu/gps/faq.html
+		 - https://github.com/nivwusquorum/guided-policy-search/
+
+
+  * Model-based methods
+
+	planning (lookahead search for optimal actions) using transition model of environment p(r,s0|s,a)
 
 	challenges:
-	 - much weaker supervision: cost for being in a state but current state is consequence of initial state, control, and noise (temporal credit assignment problem)
-	 - distribution over observed states determined by robot's own actions (need for exploration)
-	
-	 - optimal trajectories are not sufficiently informative -> distribution over near-optimal trajectories
-	 - representational mismatch trajectory distribution vs neural net -> constrained guided policy search
+	 - compounding errors
+		errors in the transition model compound over the trajectory
+		by the end of a long trajectory rewards can be totally wrong
+		no success yet in Atari
+	 - deep networks of value/policy can plan implicitly
+		each layer of network performs arbitrary computational step
+		n-layer network can “lookahead” n steps
+		are transition models required at all?
 
-	implementations:
-	 - http://rll.berkeley.edu/gps/ + http://rll.berkeley.edu/gps/faq.html
-	 - https://github.com/nivwusquorum/guided-policy-search/
+	objective function measuring goodness of model such as number of bits to reconstruct next state
+		"Deep AutoRegressive Networks" by Gregor, Danihelka, Mnih, Blundell, Wierstra - http://arxiv.org/abs/1310.8499
+		https://youtu.be/-yX1SYeDHbg?t=49m25s (demo) + https://youtu.be/P78QYjWh5sM?t=20m50s (demo)
+
+	partially observable environments
+		"Deep Reinforcement Learning with Memory" by Sergey Bartunov @DeepMind - http://93.180.23.59/videos/video/2420/in/channel/1/ (in russian)
 
 
-  * Partially Observable Environments
+  frameworks:
 
-	"Deep Reinforcement Learning with Memory" by Sergey Bartunov, work at DeepMind - http://93.180.23.59/videos/video/2420/in/channel/1/
+   - https://github.com/5vision/deep-reinforcement-learning-networks
 
+   - https://github.com/rllab/rllab (Berkeley)
+	https://github.com/rllab/rllab/tree/master/rllab/algos
+	https://rllab.readthedocs.org/en/latest/user/implement_env.html
+	https://rllab.readthedocs.org/en/latest/user/implement_algo_basic.html
+	https://rllab.readthedocs.org/en/latest/user/implement_algo_advanced.html
 
-  implementations:
    - https://github.com/rll/deeprlhw2 (Berkeley RLL)
+   - https://github.com/Kaixhin/rlenvs/
+   - https://github.com/VinF/deer
+   - https://github.com/yandexdataschool/AgentNet
+   - https://github.com/matthiasplappert/keras-rl
+   - https://github.com/ludc/rltorch
 
-
-
-
-[bandits]
-
-"Adversarial Bandits and the Exp3 Algorithm" by Jeremy Kun - http://jeremykun.com/2013/11/08/adversarial-bandits-and-the-exp3-algorithm/
-
-tutorial by Csaba Szepesvari - https://youtube.com/watch?v=VVcLnAoU9Gw + https://youtube.com/watch?v=cknukHreMdI + https://youtube.com/watch?v=ruIO79C2IQc
+   - REINFORCEjs demos by Andrej Karpathy - http://cs.stanford.edu/people/karpathy/reinforcejs/index.html
+	- dynamic programming for finite and small MDPs: tabular value functions, model of environment
+	- tabular temporal difference learning (SARSA, Q-Learning, Eligibility Traces, Planning with priority sweeps): tabular value functions, no environment model, learning from experience
+	- Deep Q-Learning (experience replay, TD error clamping for robustness): approximating action-value function with neural network, support for continuous spaces, discrete number of actions
+	- policy gradients (REINFORCE, LSTMs): learning actor policy, learning value function, Determenistic Policy Gradients, continuous actions
 
 
 
@@ -456,6 +780,8 @@ tutorial by Csaba Szepesvari - https://youtube.com/watch?v=VVcLnAoU9Gw + https:/
 
   () "Stuart Russel is interested in RL agents that don't receive rewards directly but instead have Bayesian priors over their reward function, which they update by observing their environment (for example, a domestic robot might 'learn' about its reward function based on feedback from its human owner). This should lead to exploration-exploitation tradeoffs where the agent acts, at first, to learn more about what its reward function really is (observing its owner's behavior without interference, or even explicitly asking questions), so that it can better optimize it. This is not part of the traditional RL framework, but it's mathematically well defined: you could try to build such an agent, right now, in an appropriate toy environment (gridworld, etc.). What sort of issues come up? What priors are appropriate? What sort of behavior emerges?"
 
+  (Nando de Freitas) "RL is a useful learning strategy, and work by Peter Dayan and colleagues indicates that it may also play a role in how some animals behave. Is a scalar reward enough? Hmmm, I don't know. Certainly for most supervised learning - e.g. think ImageNet, there is a single scalar reward. Note that the reward happens at every time step - i.e. it is very informative for ImageNet. Most of what people dub as unsupervised learning can also be cast as reinforcement learning. RL is a very general and broad framework, with huge variation depending on whether the reward is rare, whether we have mathematical expressions for the reward function, whether actions are continuous or discrete, etc. etc. Don't think of RL as a single thing. I feel many criticisms of RL fail because of narrow thinking about RL."
+
 
 
 
@@ -464,6 +790,14 @@ deep reinforcement learning papers - https://github.com/junhyukoh/deep-reinforce
 
 
 selected papers/books - https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va
+
+
+interesting papers (see below):
+ * applications
+ * exploration
+ * deep reinforcement learning
+ * deep policy search
+ * inverse reinforcement learning
 
 
 
@@ -476,6 +810,8 @@ Mnih, Kavukcuoglu, Silver, Graves, Antonoglou, Wierstra, Riedmiller - "Playing A
 	-- http://videolectures.net/rldm2015_silver_reinforcement_learning/ (demos, 57:56, 1:06:04, 1:15:15)
 	-- http://youtu.be/XAbLn66iHcQ?t=1h41m21s + http://youtube.com/watch?v=0xo1Ldx3L5Q (3D racing demo)
 	-- http://youtube.com/watch?v=nMR5mjCFZCw (3D labyrinth demo)
+	-- http://youtube.com/watch?v=re6hkcTWVUY (Doom gameplay demo)
+	-- https://youtube.com/watch?v=6jlaBD9LCnM + https://youtube.com/watch?v=6JT6_dRcKAw (blockworld demo)
 	-- http://youtu.be/XAbLn66iHcQ?t=1h41m21s (demo)
 	-- http://youtube.com/user/eldubro/videos (demos)
 	-- http://youtube.com/watch?v=iqXKQf2BOSE (demo)
@@ -485,15 +821,22 @@ Mnih, Kavukcuoglu, Silver, Graves, Antonoglou, Wierstra, Riedmiller - "Playing A
 	-- http://youtube.com/watch?v=xzM7eI7caRk (Volodymyr Mnih)
 	-- http://youtube.com/watch?v=dV80NAlEins (Nando de Freitas)
 	-- http://youtube.com/watch?v=HUmEbUkeQHg (Nando de Freitas)
+	-- http://youtube.com/watch?v=mrgJ53TIcQc (Pavlov, in russian)
 	-- https://github.com/kuz/DeepMind-Atari-Deep-Q-Learner + https://sites.google.com/a/deepmind.com/dqn/
+	-- https://github.com/carpedm20/deep-rl-tensorflow
 	-- https://github.com/Kaixhin/Atari
 	-- https://github.com/tambetm/simple_dqn + http://youtu.be/KkIf0Ok5GCE + http://youtu.be/0ZlgrQS3krg
 	-- https://github.com/spragunr/deep_q_rl + http://sodeepdude.blogspot.ru/2015/03/deepminds-atari-paper-replicated.html
 	-- https://github.com/ugo-nama-kun/DQN-chainer + http://youtube.com/watch?v=N813o-Xb6S8
 	-- https://github.com/muupan/dqn-in-the-caffe
 	-- https://github.com/asrivat1/DeepLearningVideoGames
-	-- https://github.com/gliese581gg/DQN_tensorflow
 	-- https://github.com/Jabberwockyll/deep_rl_ale
+	-- https://github.com/VinF/deer
+	-- https://github.com/sherjilozair/dqn
+	-- https://github.com/gliese581gg/DQN_tensorflow
+	-- https://github.com/devsisters/DQN-tensorflow
+	-- https://github.com/osh/kerlym
+	-- https://github.com/ludc/rltorch/blob/master/torch/policies/DeepQPolicy.lua
 	-- http://cs.stanford.edu/people/karpathy/convnetjs/demo/rldemo.html
 
 Silver, Huang, Maddison, Guez, Sifre, Driessche, Schrittwieser, Antonoglou, Panneershelvam, Lanctot, Dieleman, Grewe, Nham, Kalchbrenner, Sutskever, Lillicrap, Leach, Kavukcuoglu, Graepel, Hassabis - "Mastering the Game of Go with Deep Neural Networks and Tree Search" [https://vk.com/doc-44016343_437229031?hash=9c999a03ee82850948&dl=56ce06e325d42fbc72] (Go)
@@ -505,12 +848,14 @@ Silver, Huang, Maddison, Guez, Sifre, Driessche, Schrittwieser, Antonoglou, Pann
 	-- http://youtu.be/yCALyQRN3hw?t=15m18s + http://youtu.be/qUAmTYHEyM8?t=15m31s + http://youtu.be/mzpW10DPHeQ?t=10m22s (Silver, Maddison)
 	-- http://youtube.com/watch?v=g-dKXOlsf98 + http://youtube.com/watch?v=SUbqykXVx0A (Silver, Hassabis)
 	-- http://youtube.com/watch?v=UMm0XaCFTJQ (Sutton, Szepesvari, Bowling, Hayward, Muller, history of ideas)
+	-- http://icml.cc/2016/tutorials/AlphaGo-tutorial-slides.pdf
 	-- https://xcorr.net/2016/02/03/5-easy-pieces-how-deepmind-mastered-go/ (overview)
-	-- https://gogameguru.com/alphago-defeats-lee-sedol-game-1/ + https://youtube.com/watch?v=bIQxOsRAXCo
-	-- https://gogameguru.com/alphago-races-ahead-2-0-lee-sedol/ + https://youtube.com/watch?v=1aMt7ulL6EI
-	-- https://gogameguru.com/alphago-shows-true-strength-3rd-victory-lee-sedol/ + https://youtube.com/watch?v=6hROM_bxZ9E
-	-- https://gogameguru.com/lee-sedol-defeats-alphago-masterful-comeback-game-4/ + https://youtube.com/watch?v=G5gJ-pVo1gs
-	-- https://gogameguru.com/alphago-defeats-lee-sedol-4-1/ + https://youtube.com/watch?v=QxHdPdRcMhw
+	-- https://github.com/Rochester-NRT/RocAlphaGo/wiki (overview)
+	-- https://gogameguru.com/alphago-defeats-lee-sedol-game-1/ + http://deeplearningskysthelimit.blogspot.ru/2016/04/part-6-review-of-game-1-lee-sedol.html + https://youtube.com/watch?v=bIQxOsRAXCo
+	-- https://gogameguru.com/alphago-races-ahead-2-0-lee-sedol/ + http://deeplearningskysthelimit.blogspot.ru/2016/04/part-7-review-of-game-2-alphagos-new.html + https://youtube.com/watch?v=1aMt7ulL6EI
+	-- https://gogameguru.com/alphago-shows-true-strength-3rd-victory-lee-sedol/ + http://deeplearningskysthelimit.blogspot.ru/2016/04/part-8-review-of-game-3-lee-sedols.html + https://youtube.com/watch?v=6hROM_bxZ9E
+	-- https://gogameguru.com/lee-sedol-defeats-alphago-masterful-comeback-game-4/ + http://deeplearningskysthelimit.blogspot.ru/2016/04/part-9-review-of-game-4-lee-sedols.html + https://youtube.com/watch?v=G5gJ-pVo1gs
+	-- https://gogameguru.com/alphago-defeats-lee-sedol-4-1/ + http://deeplearningskysthelimit.blogspot.ru/2016/05/part-10-review-of-game-5-alphago.html + https://youtube.com/watch?v=QxHdPdRcMhw
 	-- https://github.com/Rochester-NRT/AlphaGo/
 
 Lai - "Giraffe: Using Deep Reinforcement Learning to Play Chess" [http://arxiv.org/abs/1509.01549] (Chess)
@@ -529,11 +874,18 @@ Heinrich, Silver - "Smooth UCT Search in Computer Poker" [http://www0.cs.ucl.ac.
 Heinrich, Silver - "Deep Reinforcement Learning from Self-Play in Imperfect-Information Games" [http://arxiv.org/abs/1603.01121] (Poker)
 	"Many real-world applications can be described as large-scale games of imperfect information. To deal with these challenging domains, prior work has focused on computing Nash equilibria in a handcrafted abstraction of the domain. In this paper we introduce the first scalable end-to-end approach to learning approximate Nash equilibria without any prior knowledge. Our method combines fictitious self-play with deep reinforcement learning. When applied to Leduc poker, Neural Fictitious Self-Play (NFSP) approached a Nash equilibrium, whereas common reinforcement learning methods diverged. In Limit Texas Holdem, a poker game of real-world scale, NFSP learnt a competitive strategy that approached the performance of human experts and state-of-the-art methods."
 	"We have introduced NFSP, the first end-to-end deep reinforcement learning approach to learning approximate Nash equilibria of imperfect-information games from self-play. NFSP addresses three problems. Firstly, NFSP agents learn without prior knowledge. Secondly, they do not rely on local search at runtime. Thirdly, they converge to approximate Nash equilibria in self-play. Our empirical results provide the following insights. The performance of fictitious play degrades gracefully with various approximation errors. NFSP converges reliably to approximate Nash equilibria in a small poker game, whereas DQN’s greedy and average strategies do not. NFSP learned a competitive strategy in a real-world scale imperfect-information game from scratch without using explicit prior knowledge. In this work, we focussed on imperfect-information two-player zero-sum games. Fictitious play, however, is also guaranteed to converge to Nash equilibria in cooperative, potential games. It is therefore conceivable that NFSP can be successfully applied to these games as well. Furthermore, recent developments in continuous-action reinforcement learning (Lillicrap et al., 2015) could enable NFSP to be applied to continuous-action games, which current game-theoretic methods cannot deal with directly."
+	-- http://techtalks.tv/talks/deep-reinforcement-learning/62360/ (Silver, 1:05:00)
 
 Yakovenko, Cao, Raffel, Fan - "Poker-CNN: A Pattern Learning Strategy for Making Draws and Bets in Poker Games Using Convolutional Networks" [http://colinraffel.com/publications/aaai2016poker.pdf]
 	"Poker is a family of card games that includes many variations. We hypothesize that most poker games can be solved as a pattern matching problem, and propose creating a strong poker playing system based on a unified poker representation. Our poker player learns through iterative self-play, and improves its understanding of the game by training on the results of its previous actions without sophisticated domain knowledge. We evaluate our system on three poker games: single player video poker, two-player Limit Texas Hold’em, and finally two-player 2-7 triple draw poker. We show that our model can quickly learn patterns in these very different poker games while it improves from zero knowledge to a competitive player against human experts. The contributions of this paper include: (1) a novel representation for poker games, extendable to different poker variations, (2) a Convolutional Neural Network (CNN) based learning model that can effectively learn the patterns in three different games, and (3) a self-trained system that significantly beats the heuristic-based program on which it is trained, and our system is competitive against human expert players."
 
-Veness, Ng, Hutter, Uther, Silver - "A Monte-Carlo AIXI Approximation" [https://www.jair.org/media/3125/live-3125-5397-jair.pdf] (Pac-Man)
+Yeh, Lin - "Automatic Bridge Bidding Using Deep Reinforcement Learning" [http://arxiv.org/abs/1607.03290]
+	"Bridge is among the zero-sum games for which artificial intelligence has not yet outperformed expert human players. The main difficulty lies in the bidding phase of bridge, which requires cooperative decision making under partial information. Existing artificial intelligence systems for bridge bidding rely on and are thus restricted by human-designed bidding systems or features. In this work, we propose a pioneering bridge bidding system without the aid of human domain knowledge. The system is based on a novel deep reinforcement learning model, which extracts sophisticated features and learns to bid automatically based on raw card data. The model includes an upper-confidence-bound algorithm and additional techniques to achieve a balance between exploration and exploitation. Our experiments validate the promising performance of our proposed model. In particular, the model advances from having no knowledge about bidding to achieving superior performance when compared with a champion-winning computer bridge program that implements a human-designed bidding system. To the best of our knowledge, our proposed model is the first to tackle automatic bridge bidding from raw data without additional human knowledge."
+
+Jaskowski - "Mastering 2048 with Delayed Temporal Coherence Learning Multi-State Weight Promotion, Redundant Encoding and Carousel Shaping" [https://arxiv.org/abs/1604.05085]
+	"2048 is an engaging single-player, nondeterministic video puzzle game, which, thanks to the simple rules and hard-to-master gameplay, has gained massive popularity in recent years. As 2048 can be conveniently embedded into the discrete-state Markov decision processes framework, we treat it as a testbed for evaluating existing and new methods in reinforcement learning. With the aim to develop a strong 2048 playing program, we employ temporal difference learning with systematic n-tuple networks. We show that this basic method can be significantly improved with temporal coherence learning, multi-stage function approximator with weight promotion, carousel shaping and redundant encoding. In addition, we demonstrate how to take advantage of the characteristics of the n-tuple network, to improve the algorithmic effectiveness of the learning process by i) delaying the (decayed) update and applying lock-free optimistic parallelism to effortlessly make advantage of multiple CPU cores. This way, we were able to develop the best known 2048 playing program to date, which confirms the effectiveness of the introduced methods for discrete-state Markov decision problems."
+
+Veness, Ng, Hutter, Uther, Silver - "A Monte-Carlo AIXI Approximation" [https://www.jair.org/media/3125/live-3125-5397-jair.pdf] (Ms. Pac-man)
 	"This paper introduces a principled approach for the design of a scalable general reinforcement learning agent. Our approach is based on a direct approximation of AIXI, a Bayesian optimality notion for general reinforcement learning agents. Previously, it has been unclear whether the theory of AIXI could motivate the design of practical algorithms. We answer this hitherto open question in the affirmative, by providing the first computationally feasible approximation to the AIXI agent. To develop our approximation, we introduce a new Monte-Carlo Tree Search algorithm along with an agent-specific extension to the Context Tree Weighting algorithm. Empirically, we present a set of encouraging results on a variety of stochastic and partially observable domains. We conclude by proposing a number of directions for future research."
 	"This paper presents the first computationally feasible general reinforcement learning agent that directly and scalably approximates the AIXI ideal. Although well established theoretically, it has previously been unclear whether the AIXI theory could inspire the design of practical agent algorithms. Our work answers this question in the affirmative: empirically, our approximation achieves strong performance and theoretically, we can characterise the range of environments in which our agent is expected to perform well. To develop our approximation, we introduced two new algorithms: ρUCT, a Monte-Carlo expectimax approximation technique that can be used with any online Bayesian approach to the general reinforcement learning problem and FAC-CTW, a generalisation of the powerful CTW algorithm to the agent setting. In addition, we highlighted a number of interesting research directions that could improve the performance of our current agent; in particular, model class expansion and the online learning of heuristic rollout policies for ρUCT."
 	-- http://youtube.com/watch?v=yfsMHtmGDKE (Pac-Man demo)
@@ -554,10 +906,91 @@ Cuayahuitl, Keizer, Lemon - "Strategic Dialogue Management via Deep Reinforcemen
 Kober, Bagnell, Peters - "Reinforcement Learning in Robotics: A Survey" [http://www.ias.tu-darmstadt.de/uploads/Publications/Kober_IJRR_2013.pdf] (robotics)
 	"Reinforcement learning offers to robotics a framework and set of tools for the design of sophisticated and hard-to-engineer behaviors. Conversely, the challenges of robotic problems provide both inspiration, impact, and validation for developments in reinforcement learning. The relationship between disciplines has sufficient promise to be likened to that between physics and mathematics. In this article, we attempt to strengthen the links between the two research communities by providing a survey of work in reinforcement learning for behavior generation in robots. We highlight both key challenges in robot reinforcement learning as well as notable successes. We discuss how contributions tamed the complexity of the domain and study the role of algorithms, representations, and prior knowledge in achieving these successes. As a result, a particular focus of our paper lies on the choice between model-based and model-free as well as between value function-based and policy search methods. By analyzing a simple problem in some detail we demonstrate how reinforcement learning approaches may be profitably applied, and we note throughout open questions and the tremendous potential for future research."
 
+Microsoft Research - "A Multiworld Testing Decision Service" [http://arxiv.org/abs/1606.03966]
+	"Applications and systems are constantly faced with decisions to make, often using a policy to pick from a set of actions based on some contextual information. We create a service that uses machine learning to accomplish this goal. The service uses exploration, logging, and online learning to create a counterfactually sound system supporting a full data lifecycle. The system is general: it works for any discrete choices, with respect to any reward metric, and can work with many learning algorithms and feature representations. The service has a simple API, and was designed to be modular and reproducible to ease deployment and debugging, respectively. We demonstrate how these properties enable learning systems that are robust and safe. Our evaluation shows that the Decision Service makes decisions in real time and incorporates new data quickly into learned policies. A large-scale deployment for a personalized news website has been handling all traffic since Jan. 2016, resulting in a 25% relative lift in clicks. By making the Decision Service externally available, we hope to make optimal decision making available to all."
+	"We have presented the Decision Service: a powerful tool to support the complete data lifecycle, which automates many of the burdensome tasks that data scientists face such as gathering the right data and deploying in an appropriate manner. Instead, a data scientist can focus on more core tasks such as finding the right features, representation, or signal to optimize against. The data lifecycle support also makes basic application of the Decision Service feasible without a data scientist. To assist in lowering the barrier to entry, we are exploring techniques based on expert learning and hyperparameter search that may further automate the process. Since the policy evaluation techniques can provide accurate predictions of online performance, such automations are guaranteed to be statistically sound. We are also focusing on making the decision service easy to deploy and use because we believe this is key to goal of democratizing machine learning for everyone. The Decision Service can also naturally be extended to a greater variety of problems, all of which can benefit from data lifecycle support. Plausible extensions might address advanced variants like reinforcement and active learning, and simpler ones like supervised learning."
+	--
+	"It is the first general purpose reinforcement-based learning system. Wouldn’t it be great if Reinforcement Learning algorithms could easily be used to solve all reinforcement learning problems? But there is a well-known problem: It’s very easy to create natural RL problems for which all standard RL algorithms (epsilon-greedy Q-learning, SARSA, etc) fail catastrophically. That’s a serious limitation which both inspires research and which I suspect many people need to learn the hard way. Removing the credit assignment problem from reinforcement learning yields the Contextual Bandit setting which we know is generically solvable in the same manner as common supervised learning problems."
+	"Many people have tried to create online learning system that do not take into account the biasing effects of decisions. These fail near-universally. For example they might be very good at predicting what was shown (and hence clicked on) rather that what should be shown to generate the most interest."
+	"We need a system that explores over appropriate choices with logging of features, actions, probabilities of actions, and outcomes. These must then be fed into an appropriate learning algorithm which trains a policy and then deploys the policy at the point of decision. The system enables a fully automatic causally sound learning loop for contextual control of a small number of actions. It is strongly scalable, for example a version of this is in use for personalized news on MSN."
+	-- http://hunch.net/?p=4464948
+	-- http://research.microsoft.com/en-us/projects/mwt/
+	-- https://mwtds.azurewebsites.net
 
 
 
-[interesting papers]
+
+[interesting papers - exploration]
+
+Singh, Barto, Chentanez - "Intrinsically Motivated Reinforcement Learning" [http://www-anw.cs.umass.edu/pubs/2004/singh_bc_NIPS04.pdf]
+	"Psychologists call behavior intrinsically motivated when it is engaged in for its own sake rather than as a step toward solving a specific problem of clear practical value. But what we learn during intrinsically motivated behavior is essential for our development as competent autonomous entities able to efficiently solve a wide range of practical problems as they arise. In this paper we present initial results from a computational study of intrinsically motivated reinforcement learning aimed at allowing artificial agents to construct and extend hierarchies of reusable skills that are needed for competent autonomy."
+	"Psychologists distinguish between extrinsic motivation, which means being moved to do something because of some specific rewarding outcome, and intrinsic motivation, which refers to being moved to do something because it is inherently enjoyable. Intrinsic motivation leads organisms to engage in exploration, play, and other behavior driven by curiosity in the absence of explicit reward. These activities favor the development of broad competence rather than being directed to more externally-directed goals. In contrast, machine learning algorithms are typically applied to single problems and so do not cope flexibly with new problems as they arise over extended periods of time. Although the acquisition of competence may not be driven by specific problems, this competence is routinely enlisted to solve many different specific problems over the agent’s lifetime. The skills making up general competence act as the “building blocks” out of which an agent can form solutions to new problems as they arise. Instead of facing each new challenge by trying to create a solution out of low-level primitives, it can focus on combining and adjusting its higher-level skills. In animals, this greatly increases the efficiency of learning to solve new problems, and our main objective is to achieve a similar efficiency in our machine learning algorithms and architectures. This paper presents an elaboration of the reinforcement learning framework that encompasses the autonomous development of skill hierarchies through intrinsically motivated reinforcement learning."
+
+Still, Precup - "An Information-Theoretic Approach to Curiosity-Driven Reinforcement Learning" [http://www2.hawaii.edu/~sstill/StillPrecup2011.pdf]
+	"We provide a fresh look at the problem of exploration in reinforcement learning, drawing on ideas from information theory. First, we show that Boltzmann-style exploration, one of the main exploration methods used in reinforcement learning, is optimal from an information-theoretic point of view. Second, we address the problem of curiosity-driven learning. We propose that, in addition to maximizing the expected return, a learner should chose a policy that maximizes the predictive power of its own behavior, measured by the information that the most recent state-action pair carries about the future. This makes the world “interesting” and exploitable. The general result has the form of Boltzmann-style exploration with a bonus that contains a novel exploration-exploitation trade-off that emerges from the proposed optimization principle. Importantly, this exploration-exploitation trade-off is also present when the “ temperature”-like parameter in the Boltzmann distribution tends to zero, i.e. when there is no exploration due to randomness. As a result, exploration emerges as a directed behavior that optimizes information gain, rather than being modeled solely as behavior randomization."
+	"We showed that a soft policy similar to Boltzmann exploration optimally trades return and the coding cost (or complexity) of the policy. By postulating that an agent should, in addition to maximizing the expected return, also maximize its predictive power, at a fixed policy complexity, we derived a trade-off between exploration and exploitation that does not rely on randomness in the action policy, and thereby may be more adequate to model exploration than previous schemes."
+
+Salge, Glackin, Polani - "Empowerment - An Introduction" [https://arxiv.org/abs/1310.1863]
+	"Is it better for you to own a corkscrew or not? If asked, you as a human being would likely say “yes”, but more importantly, you are somehow able to make this decision. You are able to decide this, even if your current acute problems or task do not include opening a wine bottle. Similarly, it is also unlikely that you evaluated several possible trajectories your life could take and looked at them with and without a corkscrew, and then measured your survival or reproductive fitness in each. When you, as a human cognitive agent, made this decision, you were likely relying on a behavioural “proxy”, an internal motivation that abstracts the problem of evaluating a decision impact on your overall life, but evaluating it in regard to some simple fitness function. One example would be the idea of curiosity, urging you to act so that your experience new sensations and learn about the environment. On average, this should lead to better and richer models of the world, which give you a better chance of reaching your ultimate goals of survival and reproduction.
+	But how about questions such as, would you rather be rich than poor, sick or healthy, imprisoned or free? While each options offers some interesting new experience, there seems to be a consensus that rich, healthy and free is a preferable choice. We think that all these examples, in addition to the question of tool ownership above, share a common element of preparedness. Everything else being equal it is preferable to be prepared, to keep ones options open or to be in a state where ones actions have the greatest influence on ones direct environment.
+	The concept of Empowerment, in a nutshell, is an attempt at formalizing and quantifying these degrees of freedom (or options) that an organism or agent has as a proxy for “preparedness”; preparedness, in turn, is considered a proxy for prospective fitness via the hypothesis that preparedness would be a good indicator to distinguish promising from less promising regions in the prospective fitness landscape, without actually having to evaluate the full fitness landscape.
+	Empowerment aims to reformulate the options or degrees of freedom that an agent has as the agent’s control over its environment; and not only of its control - to be reproducible, the agent needs to be aware of its control influence and sense it. Thus, empowerment is a measure of both the control an agent has over its environment, as well as its ability to sense this control. Note that this already hints at two different perspectives to evaluate the empowerment of an agent. From the agent perspective empowerment can be a tool for decision making, serving as a behavioural proxy for the agent. This empowerment value can be skewed by the quality of the agent world model, so it should be more accurately described as the agent’s approximation of its own empowerment, based on its world model. The actual empowerment depends both on the agent’s embodiment, and the world the agent is situated in. More precisely, there is a specific empowerment value for the current state of the world (the agent’s current empowerment), and there is an averaged value over all possible states of the environment, weighted by their probability (the agent’s average empowerment).
+	Empowerment, as introduced by Klyubin et al. (2005), aims to formalize the combined notion of an agent controlling its environment and sensing this control in the language of information theory. The idea behind this is that this should provide us with a utility function that is inherently local, universal and task-independent.
+	1. Local means that the knowledge of the local dynamics of the agent is enough to compute it, and that it is not necessary to know the whole system to determine one’s empowerment. Ideally, the information that the agent itself can acquire should be enough.
+	2. Universal means that it should be possible to apply empowerment “universally” to every possible agent-world interaction. This is achieved by expressing it in the language of information theory and thus making it applicable for any system that can be probabilistically expressed.
+	3. Task-independent means that empowerment is not evaluated in regard to a specific goal or external reward state. Instead, empowerment is determined by the agent’s embodiment in the world. In particular, apart from minor niche-dependent parameters, the empowerment formalism should have the very same structure in most situations.
+	More concretely, the proposed formulation of empowerment defines it via the concept of potential information flow, or channel capacity, between an agent’s actuator state at earlier times and their sensor state at a later time. The idea behind this is that empowerment would quantify how much an agent can reliably and perceptibly influence the world."
+	"The different scenarios presented here, and in the literature on empowerment in general, are highlighting an important aspect of the empowerment flavour of intrinsic motivation algorithms, namely its universality. The same principle that organizes a swarm of agents into a pattern can also swing the pendulum into an upright position, seek out a central location in a maze, be driven towards a manipulable object, or drive the evolution of sensors. The task-independent nature reflected in this list can be both a blessing and a curse. In many cases the resulting solution, such as swinging the pendulum into the upright position, is the goal implied by default by a human observer. However, if indeed a goal is desired that differs from this default, then empowerment will not be the best solution. At present, the question of how to integrate explicit non-default goals into empowerment is fully open."
+	"Let us conclude with a remark regarding the biological empowerment hypotheses in general: the fact that the default behaviours produced by empowerment seem often to match what intuitive expectations concerning default behaviour seem to imply, there is some relevance in investigating whether some of these behaviours are indeed approximating default behaviours observed in nature. A number of arguments in favour of why empowerment maximizing or similar behaviour could be relevant in biology have been made in (Klyubin et al. 2008), of which in this review we mainly highlighted its role as a measure of sensorimotor efficiency and the advantages that an evolutionary process would confer to more informationally efficient perception-action configurations."
+
+Mohamed, Rezende - "Variational Information Maximisation for Intrinsically Motivated Reinforcement Learning" [http://arxiv.org/abs/1509.08731]
+	"The mutual information is a core statistical quantity that has applications in all areas of machine learning, whether this is in training of density models over multiple data modalities, in maximising the efficiency of noisy transmission channels, or when learning behaviour policies for exploration by artificial agents. Most learning algorithms that involve optimisation of the mutual information rely on the Blahut-Arimoto algorithm - an enumerative algorithm with exponential complexity that is not suitable for modern machine learning applications. This paper provides a new approach for scalable optimisation of the mutual information by merging techniques from variational inference and deep learning. We develop our approach by focusing on the problem of intrinsically-motivated learning, where the mutual information forms the definition of a well-known internal drive known as empowerment. Using a variational lower bound on the mutual information, combined with convolutional networks for handling visual input streams, we develop a stochastic optimisation algorithm that allows for scalable information maximisation and empowerment-based reasoning directly from pixels to actions."
+	"We have developed a new approach for scalable estimation of the mutual information by exploiting recent advances in deep learning and variational inference. We focussed specifically on intrinsic motivation with a reward measure known as empowerment, which requires at its core the efficient computation of the mutual information. By using a variational lower bound on the mutual information, we developed a scalable model and efficient algorithm that expands the applicability of empowerment to high-dimensional problems, with the complexity of our approach being extremely favourable when compared to the complexity of the Blahut-Arimoto algorithm that is currently the standard. The overall system does not require a generative model of the environment to be built, learns using only interactions with the environment, and allows the agent to learn directly from visual information or in continuous state-action spaces. While we chose to develop the algorithm in terms of intrinsic motivation, the mutual information has wide applications in other domains, all which stand to benefit from a scalable algorithm that allows them to exploit the abundance of data and be applied to large-scale problems."
+	--
+	"This paper presents a variational approach to the maximisation of mutual information in the context of a reinforcement learning agent. Mutual information in this context can provide a learning signal to the agent that is "intrinsically motivated", because it relies solely on the agent's state/beliefs and does not require from the ("outside") user an explicit definition of rewards. Specifically, the learning objective, for a current state s, is the mutual information between the sequence of K actions a proposed by an exploration distribution w(a|s) and the final state s' of the agent after performing these actions. To understand what the properties of this objective, it is useful to consider the form of this mutual information as a difference of conditional entropies: I(a,s'|s) = H(a|s) - H(a|s',s) Where I(.|.) is the (conditional) mutual information and H(.|.) is the (conditional) entropy. This objective thus asks that the agent find an exploration distribution that explores as much as possible (i.e. has high H(a|s) entropy) but is such that these actions have predictable consequences (i.e. lead to predictable state s' so that H(a|s',s) is low). So one could think of the agent as trying to learn to have control of as much of the environment as possible, thus this objective has also been coined as "empowerment".
+	"Interestingly, the framework allows to also learn the state representation s as a function of some "raw" representation x of states."
+	-- https://youtube.com/watch?v=tMiiKXPirAQ + https://youtube.com/watch?v=LV5jYY-JFpE (demo)
+	-- https://www.evernote.com/shard/s189/sh/8c7ff9d9-c321-4e83-a802-58f55ebed9ac/bfc614113180a5f4624390df56e73889 (Larochelle)
+
+Stadie, Levine, Abbeel - "Incentivizing Exploration In Reinforcement Learning With Deep Predictive Models" [http://arxiv.org/abs/1507.00814]
+	"Achieving efficient and scalable exploration in complex domains poses a major challenge in reinforcement learning. While Bayesian and PAC-MDP approaches to the exploration problem offer strong formal guarantees, they are often impractical in higher dimensions due to their reliance on enumerating the state-action space. Hence, exploration in complex domains is often performed with simple epsilon-greedy methods. To achieve more efficient exploration, we develop a method for assigning exploration bonuses based on a concurrently learned model of the system dynamics. By parameterizing our learned model with a neural network, we are able to develop a scalable and efficient approach to exploration bonuses that can be applied to tasks with complex, high-dimensional state spaces. We demonstrate our approach on the task of learning to play Atari games from raw pixel inputs. In this domain, our method offers substantial improvements in exploration efficiency when compared with the standard epsilon greedy approach. As a result of our improved exploration strategy, we are able to achieve state-of-the-art results on several games that pose a major challenge for prior methods."
+	"In the field of reinforcement learning, agents acting in unknown environments face the exploration versus exploitation tradeoff. Without adequate exploration, the agent might fail to discover effective control strategies, particularly in complex domains. Both PAC-MDP algorithms and Bayesian algorithms have managed this tradeoff by assigning exploration bonuses to novel states. In these methods, the novelty of a state-action pair is derived from the number of times an agent has visited that pair. While these approaches offer strong formal guarantees, their requirement of an enumerable representation of the agent’s environment renders them impractical for large-scale tasks. As such, exploration in large RL tasks is still most often performed using simple heuristics, such as the epsilon-greedy strategy, which can be inadequate in more complex settings. To achieve better exploration, we develop a method for assigning exploration bonuses based on a learned model of the system dynamics. Rather than requiring an a priori and enumerable representation of the agent’s environment, we instead propose to learn a state representation from observations, and then optimize a dynamics model concurrently with the policy. The misprediction error in our learned dynamics model is then used to assess the novelty of a given state; since novel states are expected to disagree more strongly with the model than those states that have been visited frequently in the past. These exploration bonuses are motivated by Bayesian exploration bonuses, in which state-action counts serve to capture the uncertainty in the belief space over a model’s transition matrices. Though it is intractable to construct such transition matrices for complex, partially observed tasks with high-dimensional observations such as image pixels, our method captures a similar notion of uncertainty via the misprediction error in the learned dynamics model over the observation space. Using learned model dynamics to assess a state’s novelty presents several challenges. Capturing an adequate representation of the agent’s environment for use in dynamics predictions can be accomplished by simply training a model to predict the next state from the previous ground-truth state-action pair. However, one would not expect pixel intensity values to adequately capture the salient features of a given state-space. To provide a more satisfying representation of the system’s state space, we devised several methods for encoding the state space into lower dimensional domains. To achieve sufficient generality and scalability, we modeled the system’s dynamics with a deep neural network. This allows for on-the-fly development of a model representation that can easily be trained in parallel to learning a policy."
+	"We presented a scalable and efficient algorithm for assigning exploration bonuses in reinforcement learning tasks with complex, high-dimensional observations. Our exploration method learns a model of the dynamics concurrently with the policy. This model predicts a learned representation of the state, and a function of this prediction error is added to the reward as an exploration bonus to encourage the policy to visit states with high novelty. Our experiments validate our approach on the complex task of learning to play Atari games from raw pixel inputs. We compare with the standard epsilon greedy approach. Our method exhibits substantial improvements in exploration efficiency for five of the games, comparable exploration efficiency for seven of the games, and worse exploration efficiency on one game. There are a number of directions for future work. Our method assumes unpredictability is a good indicator for the need for more exploration, but in highly stochastic environments there can be transitions that remain unpredictable even after sufficient exploration, and a distributional prediction (rather than a single next state prediction) would become important. An important question both in policy learning and model learning with complex, high-dimensional observations is the question of representation. In the case of our model, we learn a representation using an autoencoder trained on prior experience, in an unsupervised setting. More generally, one can imagine learning representations as part of the model learning process in a supervised way, or even sharing representations between the model and the policy. Furthermore, although our method learns a model of the dynamics, the reinforcement learning is performed in a model-free way. We make no attempt to incorporate the model into the policy update except via exploration bonuses. An interesting direction for future work is to incorporate model-based updates with the same type of predictive model."
+	--
+	"The work of aims to add an effective bonus through a variation of DQN. The resulting algorithm relies on a large number of hand-tuned parameters and is only suitable for application to deterministic problems."
+	-- http://research.microsoft.com/apps/video/default.aspx?id=260045 (Abbeel, 12:30)
+
+Osband, Blundell, Pritzel, van Roy - "Deep Exploration via Bootstrapped DQN" [http://arxiv.org/abs/1602.04621]
+	"Efficient exploration in complex environments remains a major challenge for reinforcement learning. We propose bootstrapped DQN, a simple algorithm that explores in a computationally and statistically efficient manner through use of randomized value functions. Unlike dithering strategies such as Epsilon-greedy exploration, bootstrapped DQN carries out temporally-extended (or deep) exploration; this can lead to exponentially faster learning. We demonstrate these benefits in complex stochastic MDPs and in the large-scale Arcade Learning Environment. Bootstrapped DQN substantially improves learning times and performance across most Atari games."
+	"In this paper we present bootstrapped DQN as an algorithm for efficient reinforcement learning in complex environments. We demonstrate that the bootstrap can produce useful uncertainty estimates for deep neural networks. Bootstrapped DQN can leverage these uncertainty estimates for deep exploration even in difficult stochastic systems; it also produces several state of the art results in Atari 2600. Bootstrapped DQN is computationally tractable and also naturally scalable to massive parallel systems as per (Nair et al., 2015). We believe that, beyond our specific implementation, randomized value functions represent a promising alternative to dithering for exploration. Bootstrapped DQN practically combines efficient generalization with exploration for complex nonlinear value functions.
+	"Our algorithm, bootstrapped DQN, modifies DQN to produce distribution over Q-values via the bootstrap. At the start of each episode, bootstrapped DQN samples a single Q-value function from its approximate posterior. The agent then follows the policy which is optimal for that sample for the duration of the episode. This is a natural extension of the Thompson sampling heuristic to RL that allows for temporally extended (or deep) exploration. Bootstrapped DQN exhibits deep exploration unlike the naive application of Thompson sampling to RL which resample every timestep."
+	"By contrast, Epsilon-greedy strategies are almost indistinguishable for small values of Epsilon and totally ineffectual for larger values. Our heads explore a diverse range of policies, but still manage to each perform well individually."
+	"Unlike vanilla DQN, bootstrapped DQN can know what it doesn’t know."
+	-- http://youtube.com/watch?v=Zm2KoT82O_M + http://youtube.com/watch?v=0jvEcC5JvGY (demo)
+	-- https://youtu.be/mrgJ53TIcQc?t=32m24s (Pavlov, in russian)
+	-- https://github.com/Kaixhin/Atari
+	-- https://github.com/iassael/torch-bootstrapped-dqn
+	-- https://github.com/carpedm20/deep-rl-tensorflow
+
+Houthooft, Chen, Duan, Schulman, Turck, Abbeel - "Curiosity-driven Exploration in Deep Reinforcement Learning via Bayesian Neural Networks" [http://arxiv.org/abs/1605.09674]
+	"Scalable and effective exploration remains a key challenge in reinforcement learning. While there are methods with optimality guarantees in the setting of discrete state and action spaces, these methods cannot be applied in high-dimensional greedy exploration or adding Gaussian noise to the controls. This paper introduces Variational Information Maximizing Exploration (VIME), an exploration strategy based on maximization of information gain about the agent’s belief of environment dynamics. We propose a practical implementation, using variational inference in Bayesian neural networks which efficiently handles continuous state and action spaces. VIME modifies the MDP reward function, and can be applied with several different underlying RL algorithms. We demonstrate that VIME achieves significantly better performance compared to heuristic exploration methods across a variety of continuous control tasks and algorithms, including tasks with very sparse rewards."
+	"We have proposed Variational Information Maximizing Exploration, a curiosity-driven exploration strategy for continuous control tasks. Variational inference is used to approximate the posterior distribution of a Bayesian neural network that represents the environment dynamics. Using information gain in this learned dynamics model as intrinsic rewards allows the agent to optimize for both external reward and intrinsic surprise simultaneously. Empirical results show that VIME performs significantly better than heuristic exploration methods across various continuous control tasks and algorithms. As future work, we would like to investigate measuring surprise in the value function and using the learned dynamics model for planning."
+	"This paper proposes a curiosity-driven exploration strategy, making use of information gain about the agent’s internal belief of the dynamics model as a driving force. This principle can be traced back to the concepts of curiosity and surprise (Schmidhuber). Within this framework, agents are encouraged to take actions that result in states they deem surprising - i.e., states that cause large updates to the dynamics model distribution. We propose a practical implementation of measuring information gain using variational inference. Herein, the agent’s current understanding of the environment dynamics is represented by a Bayesian neural networks. We also show how this can be interpreted as measuring compression improvement, a proposed model of curiosity (Schmidhuber). In contrast to previous curiosity-based approaches, our model scales naturally to continuous state and action spaces. The presented approach is evaluated on a range of continuous control tasks, and multiple underlying RL algorithms. Experimental results show that VIME achieves significantly better performance than naïve exploration strategies."
+	-- https://goo.gl/fyxLvI (demo)
+	-- https://github.com/openai/vime
+
+Osband, van Roy - "Why is Posterior Sampling Better than Optimism for Reinforcement Learning?" [http://arxiv.org/abs/1607.00215]
+	"Computational results demonstrate that posterior sampling for reinforcement learning (PSRL) dramatically outperforms algorithms driven by optimism, such as UCRL2. We provide insight into the extent of this performance boost and the phenomenon that drives it. We leverage this insight to establish an O(H√S√A√T) expected regret bound for PSRL in finite-horizon episodic Markov decision processes, where H is the horizon, S is the number of states, A is the number of actions and T is the time elapsed. This improves upon the best previous bound of O(HS√A√T) for any reinforcement learning algorithm."
+	"We consider a well-studied reinforcement learning problem in which an agent interacts with a Markov decision process with the aim of maximizing expected cumulative reward. Our focus is on the tabula rasa case, in which the agent has virtually no prior information about the MDP. As such, the agent is unable to generalize across state-action pairs and may have to gather data at each in order to learn an effective decision policy. Key to performance is how the agent balances between exploration to acquire information of long-term benefit and exploitation to maximize expected near-term rewards. In principle, dynamic programming can be applied to compute the so-called Bayes-optimal solution to this problem. However, this is computationally intractable for anything beyond the simplest of toy problems. As such, researchers have proposed and analyzed a number of heuristic reinforcement learning algorithms.
+	The literature on efficient reinforcement learning offers statistical efficiency guarantees for computationally tractable algorithms. These provably efficient algorithms predominantly address the exploration-exploitation trade-off via optimism in the face of uncertainty (OFU): when at a state, the agent assigns to each action an optimistically biased while statistically plausible estimate of future value and selects the action with the greatest estimate. If a selected action is not near-optimal, the estimate must be overly optimistic, in which case the agent learns from the experience. Efficiency relative to less sophisticated exploration strategies stems from the fact that the agent avoids actions that neither yield high value nor informative data.
+	An alternative approach, based on Thompson sampling, involves sampling a statistically plausibly set of action values and selecting the maximizing action. These values can be generated, for example, by sampling from the posterior distribution over MDPs and computing the state-action value function of the sampled MDP. This approach is called posterior sampling for reinforcement learning (PSRL). Computational results demonstrate that PSRL dramatically outperforms algorithms based on OFU. The primary aim of this paper is to provide insight into the extent of this performance boost and the phenomenon that drives it.
+	We argue that applying OFU in a manner that competes with PSRL in terms of statistical efficiency would require intractable computation. As such, OFU-based algorithms presented in the literature sacrifice statistical efficiency to attain computational tractability. We will explain how these algorithms are statistically inefficient. We will also leverage this insight to produce an O(H√S√A√T) expected regret bound for PSRL in finite-horizon episodic Markov decision processes, where H is the horizon, S is the number of states, A is the number of actions and T is the time elapsed. This improves upon the best previous bound of O(HS√A√T) for any reinforcement learning algorithm. We discuss why we believe PSRL satisfies a tighter O(√H√S√A√T), though we have not proved that. We present computational results chosen to enhance insight on how learning times scale with problem parameters. These empirical scalings match our theoretical predictions."
+	"PSRL is orders of magnitude more statistically efficient than UCRL and S-times less computationally expensive. In the future, we believe that analysts will be able to formally specify an OFU approach to RL whose statistical efficiency matches PSRL. However, we argue that the resulting confidence sets which address both the coupling over H and S will result in a computationally intractable optimization problem. For this reason, computationally efficient approaches to OFU RL will sacrifice statistical efficiency; this is why posterior sampling is better than optimism for reinforcement learning."
+
+
+
+
+[interesting papers - abstracting state and action spaces]
 
 Schmidhuber - "On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models" [http://arxiv.org/abs/1511.09249]
 	"This paper addresses the general problem of reinforcement learning in partially observable environments. In 2013, our large RL recurrent neural networks learned from scratch to drive simulated cars from high-dimensional video input. However, real brains are more powerful in many ways. In particular, they learn a predictive model of their initially unknown environment, and somehow use it for abstract (e.g., hierarchical) planning and reasoning. Guided by algorithmic information theory, we describe RNN-based AIs designed to do the same. Such an RNNAI can be trained on never-ending sequences of tasks, some of them provided by the user, others invented by the RNNAI itself in a curious, playful fashion, to improve its RNN-based world model. Unlike our previous model-building RNN-based RL machines dating back to 1990, the RNNAI learns to actively query its model for abstract reasoning and planning and decision making, essentially “learning to think.” The basic ideas of this report can be applied to many other cases where one RNN-like system exploits the algorithmic information content of another."
@@ -577,7 +1010,19 @@ Schmidhuber - "On Learning to Think: Algorithmic Information Theory for Novel Co
 	--
 	"What you describe is my other old RNN-based CM system from 1990: a recurrent controller C and a recurrent world model M, where C can use M to simulate the environment step by step and plan ahead. But the new stuff is different and much less limited - now C can learn to ask all kinds of computable questions to M (e.g., about abstract long-term consequences of certain subprograms), and get computable answers back. No need to simulate the world millisecond by millisecond (humans apparently don’t do that either, but learn to jump ahead to important abstract subgoals)."
 
-Mnih, Kavukcuoglu, Silver, Rusu, Veness, Bellemare, Graves, Riedmiller, Fidjeland, Ostrovski, Petersen, Beattie, Sadik, Antonoglou, King, Kumaran, Wierstra, Legg, Hassabis - "Human-level Control Through Deep Reinforcement Learning" [https://infotomb.com/k4sum.pdf]
+
+
+
+[interesting papers - deep reinforcement learning]
+
+Duan, Chen, Houthooft, Schulman, Abbeel - "Benchmarking Deep Reinforcement Learning for Continuous Control" [http://arxiv.org/abs/1604.06778]
+	"Recently, researchers have made significant progress combining the advances in deep learning for learning feature representations with reinforcement learning. Some notable examples include training agents to play Atari games based on raw pixel data and to acquire advanced manipulation skills using raw sensory inputs. However, it has been difficult to quantify progress in the domain of continuous control due to the lack of a commonly adopted benchmark. In this work, we present a benchmark suite of continuous control tasks, including classic tasks like cart-pole swing-up, tasks with very high state and action dimensionality such as 3D humanoid locomotion, tasks with partial observations, and tasks with hierarchical structure. We report novel findings based on the systematic evaluation of a range of implemented reinforcement learning algorithms. Both the benchmark and reference implementations are released open-source in order to facilitate experimental reproducibility and to encourage adoption by other researchers."
+	"In this work, a benchmark of continuous control problems for reinforcement learning is presented, covering a wide variety of challenging tasks. We implemented several reinforcement learning algorithms, and presented them in the context of general policy parameterizations. Results show that among the implemented algorithms, TNPG, TRPO, and DDPG are effective methods for training deep neural network policies. Still, the poor performance on the proposed hierarchical tasks calls for new algorithms to be developed. Implementing and evaluating existing and newly proposed algorithms will be our continued effort. By providing an open-source release of the benchmark, we encourage other researchers to evaluate their algorithms on the proposed tasks."
+	"This paper benchmarks performance over a wide range of tasks of Reinforce, (Truncated) Natural Policy Gradient, RWR, REPS, TRPO, CEM, CMA-ES, DDPG."
+	-- http://techtalks.tv/talks/benchmarking-deep-reinforcement-learning-for-continuous-control/62380/
+	-- https://github.com/rllab/rllab
+
+Mnih, Kavukcuoglu, Silver, Rusu, Veness, Bellemare, Graves, Riedmiller, Fidjeland, Ostrovski, Petersen, Beattie, Sadik, Antonoglou, King, Kumaran, Wierstra, Legg, Hassabis - "Human-Level Control Through Deep Reinforcement Learning" [http://home.uchicago.edu/~arij/journalclub/papers/2015_Mnih_et_al.pdf]
 	"The theory of reinforcement learning provides a normative account, deeply rooted in psychological and neuroscientific perspectives on animal behaviour, of how agents may optimize their control of an environment. To use reinforcement learning successfully in situations approaching real-world complexity, however, agents are confronted with a difficult task: they must derive efficient representations of the environment from high-dimensional sensory inputs, and use these to generalize past experience to new situations. Remarkably, humans and other animals seem to solve this problem through a harmonious combination of reinforcement learning and hierarchical sensory processing systems, the former evidenced by a wealth of neural data revealing notable parallels between the phasic signals emitted by dopaminergic neurons and temporal difference reinforcement learning algorithms. While reinforcement learning agents have achieved some successes in a variety of domains, their applicability has previously been limited to domains in which useful features can be handcrafted, or to domains with fully observed, low-dimensional state spaces. Here we use recent advances in training deep neural networks to develop a novel artificial agent, termed a deep Q-network, that can learn successful policies directly from high-dimensional sensory inputs using end-to-end reinforcement learning. We tested this agent on the challenging domain of classic Atari 2600 games. We demonstrate that the deep Q-network agent, receiving only the pixels and the game score as inputs, was able to surpass the performance of all previous algorithms and achieve a level comparable to that of a professional human games tester across a set of 49 games, using the same algorithm, network architecture and hyperparameters. This work bridges the divide between high-dimensional sensory inputs and actions, resulting in the first artificial agent that is capable of learning to excel at a diverse array of challenging tasks."
 	-- http://nature.com/nature/journal/v518/n7540/full/nature14236.html
 	-- http://nature.com/nature/journal/v518/n7540/extref/nature14236-s1.pdf
@@ -585,7 +1030,8 @@ Mnih, Kavukcuoglu, Silver, Rusu, Veness, Bellemare, Graves, Riedmiller, Fidjelan
 	-- http://videolectures.net/rldm2015_silver_reinforcement_learning/ (demos, 57:56, 1:06:04, 1:15:15)
 	-- http://youtu.be/XAbLn66iHcQ?t=1h41m21s + http://youtube.com/watch?v=0xo1Ldx3L5Q (3D racing demo)
 	-- http://youtube.com/watch?v=nMR5mjCFZCw (3D labyrinth demo)
-	-- http://youtu.be/XAbLn66iHcQ?t=1h41m21s (demo)
+	-- http://youtube.com/watch?v=re6hkcTWVUY (Doom gameplay demo)
+	-- http://youtube.com/watch?v=6jlaBD9LCnM + https://youtube.com/watch?v=6JT6_dRcKA (blockworld demo)
 	-- http://youtube.com/user/eldubro/videos (demos)
 	-- http://youtube.com/watch?v=iqXKQf2BOSE (demo)
 	-- http://youtube.com/watch?v=lge-dl2JUAM + https://youtube.com/watch?v=xN1d3qHMIEQ (interviews and demos)
@@ -594,15 +1040,25 @@ Mnih, Kavukcuoglu, Silver, Rusu, Veness, Bellemare, Graves, Riedmiller, Fidjelan
 	-- http://youtube.com/watch?v=xzM7eI7caRk (Volodymyr Mnih)
 	-- http://youtube.com/watch?v=dV80NAlEins (Nando de Freitas)
 	-- http://youtube.com/watch?v=HUmEbUkeQHg (Nando de Freitas)
+	-- http://youtube.com/watch?v=mrgJ53TIcQc (Pavlov, in russian)
 	-- https://github.com/kuz/DeepMind-Atari-Deep-Q-Learner + https://sites.google.com/a/deepmind.com/dqn/
-	-- https://github.com/Kaixhin/Atari
-	-- https://github.com/tambetm/simple_dqn + http://youtu.be/KkIf0Ok5GCE + http://youtu.be/0ZlgrQS3krg
+	-- https://github.com/carpedm20/deep-rl-tensorflow
+	-- https://github.com/Kaixhin/Atari (persistent advantage learning, dueling network architecture, Double Q-learning)
+	-- https://github.com/tambetm/simple_dqn + https://youtu.be/KkIf0Ok5GCE + https://youtu.be/0ZlgrQS3krg
+	-- https://github.com/tambetm/gymexperiments
 	-- https://github.com/spragunr/deep_q_rl + http://sodeepdude.blogspot.ru/2015/03/deepminds-atari-paper-replicated.html
 	-- https://github.com/ugo-nama-kun/DQN-chainer + http://youtube.com/watch?v=N813o-Xb6S8
 	-- https://github.com/muupan/dqn-in-the-caffe
+	-- https://github.com/brian473/neural_rl
+	-- https://github.com/kristjankorjus/Replicating-DeepMind
 	-- https://github.com/asrivat1/DeepLearningVideoGames
-	-- https://github.com/gliese581gg/DQN_tensorflow
 	-- https://github.com/Jabberwockyll/deep_rl_ale
+	-- https://github.com/VinF/deer
+	-- https://github.com/sherjilozair/dqn
+	-- https://github.com/gliese581gg/DQN_tensorflow
+	-- https://github.com/devsisters/DQN-tensorflow
+	-- https://github.com/osh/kerlym
+	-- https://github.com/ludc/rltorch/blob/master/torch/policies/DeepQPolicy.lua
 	-- http://cs.stanford.edu/people/karpathy/convnetjs/demo/rldemo.html
 
 Nair, Srinivasan, Blackwell, Alcicek, Fearon, De Maria, Panneershelvam, Suleyman, Beattie, Petersen, Legg, Mnih, Kavukcuoglu, Silver - "Massively Parallel Methods for Deep Reinforcement Learning" [http://arxiv.org/abs/1507.04296]
@@ -613,6 +1069,8 @@ van Hasselt, Guez, Silver - "Deep Reinforcement Learning with Double Q-Learning"
 	"The popular Q-learning algorithm is known to overestimate action values under certain conditions. It was not previously known whether, in practice, such overestimations are common, whether this harms performance, and whether they can generally be prevented. In this paper, we answer all these questions affirmatively. In particular, we first show that the recent DQN algorithm, which combines Q-learning with a deep neural network, suffers from substantial overestimations in some games in the Atari 2600 domain. We then show that the idea behind the Double Q-learning algorithm, which was introduced in a tabular setting, can be generalized to work with large-scale function approximation. We propose a specific adaptation to the DQN algorithm and show that the resulting algorithm not only reduces the observed overestimations, as hypothesized, but that this also leads to much better performance on several games."
 	"This paper has five contributions. First, we have shown why Q-learning can be overoptimistic in large-scale problems, even if these are deterministic, due to the inherent estimation errors of learning. Second, by analyzing the value estimates on Atari games we have shown that these overestimations are more common and severe in practice than previously acknowledged. Third, we have shown that Double Q-learning can be used at scale to successfully reduce this overoptimism, resulting in more stable and reliable learning. Fourth, we have proposed a specific implementation called Double DQN, that uses the existing architecture and deep neural network of the DQN algorithm without requiring additional networks or parameters. Finally, we have shown that Double DQN finds better policies, obtaining new state-of-the-art results on the Atari 2600 domain."
 	-- https://youtu.be/qLaDWKd61Ig?t=32m52s (Silver)
+	-- https://youtu.be/mrgJ53TIcQc?t=17m31s (Pavlov, in russian)
+	-- https://github.com/carpedm20/deep-rl-tensorflow
 	-- https://github.com/Kaixhin/Atari
 
 Schaul, Quan, Antonoglou, Silver - "Prioritized Experience Replay" [http://arxiv.org/abs/1511.05952]
@@ -626,15 +1084,25 @@ Schaul, Quan, Antonoglou, Silver - "Prioritized Experience Replay" [http://arxiv
 	"Feedback for Exploration: An interesting side-effect of prioritized replay is that the total number Mi that a transition will end up being replayed varies widely, and this gives a rough indication of how useful it was to the agent. This potentially valuable signal can be fed back to the exploration strategy that generates the transitions. For example, we could sample exploration hyper-parameters (such as the fraction of random actions, the Boltzmann temperature, or the amount of intrinsic reward to mix in) from a parameterized distribution at the beginning of each episode, monitor the usefulness of the experience via Mi, and update the distribution toward generating more useful experience. Or, in a parallel system like the Gorila agent, it could guide resource allocation between a collection of concurrent but heterogeneous “actors”, each with different exploration hyper-parameters."
 	"Prioritized Memories: Considerations that help determine which transitions to replay are likely to be relevant for determining which memories to store and when to erase them (i.e., when it becomes unlikely that we would ever want to replay them anymore). An explicit control over which memories to keep or erase can help reduce the required total memory size, because it reduces redundancy (frequently visited transitions will have low error, so many of them will be dropped), while automatically adjusting for what has been learned already (dropping many of the ‘easy’ transitions) and biasing the contents of the memory to where the errors remain high. This is a non-trivial aspect, because memory requirements for DQN are currently dominated by the size of the replay memory, no longer by the size of the neural network. Erasing is a more final decision than reducing the replay probability, thus an even stronger emphasis of diversity may be necessary, for example by tracking the age of each transitions and using it to modulate the priority in such a way as to preserve sufficient old experience to prevent cycles (related to ‘hall of fame’ ideas in multi-agent literature) or collapsing value functions. The priority mechanism is also flexible enough to permit integrating experience from other sources, such as from a planner or from human expert trajectories, since knowing the source can be used to modulate each transition’s priority, for example in such a way as to preserve a sufficient fraction of external experience in memory."
 	"Numerous neuroscience studies have identified mechanisms of experience replay in the hippocampus of rodents, where sequences of prior experience are replayed, either during awake resting or sleep, and in particular that this happens more for rewarded paths. Furthermore, there is a likely link between increased replay of an experience, and how much can be learned from it, or its TD-error."
+	-- https://youtu.be/mrgJ53TIcQc?t=25m43s (Pavlov, in russian)
 	-- https://github.com/Kaixhin/Atari
+	-- https://github.com/carpedm20/deep-rl-tensorflow
 
 Silver, Lever, Heess, Degris, Wierstra, Riedmiller - "Deterministic Policy Gradient Algorithms" [http://jmlr.org/proceedings/papers/v32/silver14.pdf]
 	"In this paper we consider deterministic policy gradient algorithms for reinforcement learning with continuous actions. The deterministic policy gradient has a particularly appealing form: it is the expected gradient of the action-value function. This simple form means that the deterministic policy gradient can be estimated much more efficiently than the usual stochastic policy gradient. To ensure adequate exploration, we introduce an off-policy actor-critic algorithm that learns a deterministic target policy from an exploratory behaviour policy. We demonstrate that deterministic policy gradient algorithms can significantly outperform their stochastic counter-parts in high-dimensional action spaces."
-	"Policy gradient algorithms are widely used in reinforcement learning problems with continuous action spaces. The basic idea is to represent the policy by a parametric probability distribution πθ(a|s) = P [a|s; θ] that stochastically selects action a in state s according to parameter vector θ. Policy gradient algorithms typically proceed by sampling this stochastic policy and adjusting the policy parameters in the direction of greater cumulative reward. In this paper we instead consider deterministic policies a = μ θ (s). It is natural to wonder whether the same approach can be followed as for stochastic policies: adjusting the policy parameters in the direction of the policy gradient. It was previously believed that the deterministic policy gradient did not exist, or could only be obtained when using a model. However, we show that the deterministic policy gradient does indeed exist, and furthermore it has a simple model-free form that simply follows the gradient of the action-value function. In addition, we show that the deterministic policy gradient is the limiting case, as policy variance tends to zero, of the stochastic policy gradient."
+	"Policy gradient algorithms are widely used in reinforcement learning problems with continuous action spaces. The basic idea is to represent the policy by a parametric probability distribution πθ(a|s) = P [a|s; θ] that stochastically selects action a in state s according to parameter vector θ. Policy gradient algorithms typically proceed by sampling this stochastic policy and adjusting the policy parameters in the direction of greater cumulative reward. In this paper we instead consider deterministic policies a=μθ(s). It is natural to wonder whether the same approach can be followed as for stochastic policies: adjusting the policy parameters in the direction of the policy gradient. It was previously believed that the deterministic policy gradient did not exist, or could only be obtained when using a model. However, we show that the deterministic policy gradient does indeed exist, and furthermore it has a simple model-free form that simply follows the gradient of the action-value function. In addition, we show that the deterministic policy gradient is the limiting case, as policy variance tends to zero, of the stochastic policy gradient."
 	"From a practical viewpoint, there is a crucial difference between the stochastic and deterministic policy gradients. In the stochastic case, the policy gradient integrates over both state and action spaces, whereas in the deterministic case it only integrates over the state space. As a result, computing the stochastic policy gradient may require more samples, especially if the action space has many dimensions. In order to explore the full state and action space, a stochastic policy is often necessary. To ensure that our deterministic policy gradient algorithms continue to explore satisfactorily, we introduce an off-policy learning algorithm. The basic idea is to choose actions according to a stochastic behaviour policy (to ensure adequate exploration), but to learn about a deterministic target policy (exploiting the efficiency of the deterministic policy gradient). We use the deterministic policy gradient to derive an off-policy actor-critic algorithm that estimates the action-value function using a differentiable function approximator, and then updates the policy parameters in the direction of the approximate action-value gradient. We also introduce a notion of compatible function approximation for deterministic policy gradients, to ensure that the approximation does not bias the policy gradient."
 	"We apply our deterministic actor-critic algorithms to several benchmark problems: a high-dimensional bandit; several standard benchmark reinforcement learning tasks with low dimensional action spaces; and a high-dimensional task for controlling an octopus arm. Our results demonstrate a significant performance advantage to using deterministic policy gradients over stochastic policy gradients, particularly in high dimensional tasks. In practice, the deterministic actor-critic significantly outperformed its stochastic counterpart by several orders of magnitude in a bandit with 50 continuous action dimensions, and solved a challenging reinforcement learning problem with 20 continuous action dimensions and 50 state dimensions. Furthermore, our algorithms require no more computation than prior methods: the computational cost of each update is linear in the action dimensionality and the number of policy parameters."
+	--
+	"DPG provides a continuous analogue to DQN, exploiting the differentiability of the Q-network to solve a wide variety of continuous control tasks."
 	-- http://videolectures.net/rldm2015_silver_reinforcement_learning/ (Silver, 1:07:23)
-	-- http://youtube.com/watch?v=EX1CIVVkWdE + http://youtube.com/watch?v=zXa6UFLQCtg + http://iclr.cc/lib/exe/fetch.php?media=iclr2015:silver-iclr2015.pdf (Silver)
+	-- http://youtube.com/watch?v=qLaDWKd61Ig&t=38m58s (Silver)
+	-- https://youtu.be/mrgJ53TIcQc?t=1h3m2s (Seleznev, in russian)
+	-- https://youtu.be/rO7Dx8pSJQw?t=50m (Schulman)
+	-- http://pemami4911.github.io/blog_posts/2016/08/21/ddpg-rl.html
+	-- https://github.com/rllab/rllab/blob/master/rllab/algos/ddpg.py
+	-- https://github.com/yandexdataschool/AgentNet/blob/master/agentnet/learning/dpg_n_step.py
+	-- https://github.com/iassael/torch-policy-gradient
 
 Lillicrap, Hunt, Pritzel, Heess, Erez, Tassa, Silver, Wierstra - "Continuous Control with Deep Reinforcement Learning" [http://arxiv.org/abs/1509.02971]
 	"We adapt the ideas underlying the success of Deep Q-Learning to the continuous action domain. We present an actor-critic, model-free algorithm based on the deterministic policy gradient that can operate over continuous action spaces. Using the same learning algorithm, network architecture and hyper-parameters, our algorithm robustly solves more than 20 simulated physics tasks, including classic problems such as cartpole swing-up, dexterous manipulation, legged locomotion and car driving. Our algorithm is able to find policies whose performance is competitive with those found by a planning algorithm with full access to the dynamics of the domain and its derivatives. We further demonstrate that for many of the tasks the algorithm can learn policies “end-to-end”: directly from raw pixel inputs."
@@ -647,37 +1115,20 @@ Lillicrap, Hunt, Pritzel, Heess, Erez, Tassa, Silver, Wierstra - "Continuous Con
 	-- http://videolectures.net/rldm2015_silver_reinforcement_learning/ (Silver, 1:07:23)
 	-- http://youtu.be/qLaDWKd61Ig?t=39m (Silver)
 	-- http://youtu.be/KHZVXao4qXs?t=52m58s (Silver)
+	-- https://youtu.be/mrgJ53TIcQc?t=1h3m2s (Seleznev, in russian)
+	-- https://youtu.be/rO7Dx8pSJQw?t=50m (Schulman)
+	-- https://github.com/iassael/torch-policy-gradient
+	-- https://github.com/yandexdataschool/AgentNet/blob/master/agentnet/learning/dpg_n_step.py
 
 Heess, Wayne, Silver, Lillicrap, Tassa, Erez - "Learning Continuous Control Policies by Stochastic Value Gradients" [http://arxiv.org/abs/1510.09142]
 	"We present a unified framework for learning continuous control policies using backpropagation. It supports stochastic control by treating stochasticity in the Bellman equation as a deterministic function of exogenous noise. The product is a spectrum of general policy gradient algorithms that range from model-free methods with value functions to model-based methods without value functions. We use learned models but only require observations from the environment instead of observations from model-predicted trajectories, minimizing the impact of compounded model errors. We apply these algorithms first to a toy stochastic control problem and then to several physics-based control problems in simulation. One of these variants, SVG(1), shows the effectiveness of learning models, value functions, and policies simultaneously in continuous domains."
 	"We have shown that two potential problems with value gradient methods, their reliance on planning and restriction to deterministic models, can be exorcised, broadening their relevance to reinforcement learning. We have shown experimentally that the SVG framework can train neural network policies in a robust manner to solve interesting continuous control problems. Furthermore, we did not harness sophisticated generative models of stochastic dynamics, but one could readily do so, presenting great room for growth."
 	"Policy gradient algorithms maximize the expectation of cumulative reward by following the gradient of this expectation with respect to the policy parameters. Most existing algorithms estimate this gradient in a model-free manner by sampling returns from the real environment and rely on a likelihood ratio estimator. Such estimates tend to have high variance and require large numbers of samples or, conversely, low-dimensional policy parameterizations. A second approach to estimate a policy gradient relies on backpropagation instead of likelihood ratio methods. If a differentiable environment model is available, one can link together the policy, model, and reward function to compute an analytic policy gradient by backpropagation of reward along a trajectory. Instead of using entire trajectories, one can estimate future rewards using a learned value function (a critic) and compute policy gradients from subsequences of trajectories. It is also possible to backpropagate analytic action derivatives from a Q-function to compute the policy gradient without a model. Following Fairbank, we refer to methods that compute the policy gradient through backpropagation as value gradient methods. In this paper, we address two limitations of prior value gradient algorithms. The first is that, in contrast to likelihood ratio methods, value gradient algorithms are only suitable for training deterministic policies. Stochastic policies have several advantages: for example, they can be beneficial for partially observed problems; they permit on-policy exploration; and because stochastic policies can assign probability mass to off-policy trajectories, we can train a stochastic policy on samples from an experience database in a principled manner. When an environment model is used, value gradient algorithms have also been critically limited to operation in deterministic environments. By exploiting a mathematical tool known as “re-parameterization” that has found recent use for generative models, we extend the scope of value gradient algorithms to include the optimization of stochastic policies in stochastic environments. We thus describe our framework as Stochastic Value Gradient methods. Secondly, we show that an environment dynamics model, value function, and policy can be learned jointly with neural networks based only on environment interaction. Learned dynamics models are often inaccurate, which we mitigate by computing value gradients along real system trajectories instead of planned ones, a feature shared by model-free methods. This substantially reduces the impact of model error because we only use models to compute policy gradients, not for prediction, combining advantages of model-based and model-free methods with fewer of their drawbacks. We present several algorithms that range from model-based to model-free methods, flexibly combining models of environment dynamics with value functions to optimize policies in stochastic or deterministic environments. Experimentally, we demonstrate that SVG methods can be applied using generic neural networks with tens of thousands of parameters while making minimal assumptions about plans or environments. By examining a simple stochastic control problem, we show that SVG algorithms can optimize policies where model-based planning and likelihood ratio methods cannot. We provide evidence that value function approximation can compensate for degraded models, demonstrating the increased robustness of SVG methods over model-based planning. Finally, we use SVG algorithms to solve a variety of challenging, under-actuated, physical control problems, including swimming of snakes, reaching, tracking, and grabbing with a robot arm, fall-recovery for a monoped, and locomotion for a planar cheetah and biped."
+	--
+	"In policy-based and actor-critic methods, stochastic policy is usually defined as a fixed distribution over action domain with parameters whose values are adapted when training. SVG suggests a synthesis of model-based with model-free approaches that allows optimizing the distribution as a function by means of the standard gradient descent."
 	-- https://youtu.be/PYdL7bcn_cM (demo)
-
-Mohamed, Rezende - "Variational Information Maximisation for Intrinsically Motivated Reinforcement Learning" [http://arxiv.org/abs/1509.08731]
-	"The mutual information is a core statistical quantity that has applications in all areas of machine learning, whether this is in training of density models over multiple data modalities, in maximising the efficiency of noisy transmission channels, or when learning behaviour policies for exploration by artificial agents. Most learning algorithms that involve optimisation of the mutual information rely on the Blahut-Arimoto algorithm - an enumerative algorithm with exponential complexity that is not suitable for modern machine learning applications. This paper provides a new approach for scalable optimisation of the mutual information by merging techniques from variational inference and deep learning. We develop our approach by focusing on the problem of intrinsically-motivated learning, where the mutual information forms the definition of a well-known internal drive known as empowerment. Using a variational lower bound on the mutual information, combined with convolutional networks for handling visual input streams, we develop a stochastic optimisation algorithm that allows for scalable information maximisation and empowerment-based reasoning directly from pixels to actions."
-	"We have developed a new approach for scalable estimation of the mutual information by exploiting recent advances in deep learning and variational inference. We focussed specifically on intrinsic motivation with a reward measure known as empowerment, which requires at its core the efficient computation of the mutual information. By using a variational lower bound on the mutual information, we developed a scalable model and efficient algorithm that expands the applicability of empowerment to high-dimensional problems, with the complexity of our approach being extremely favourable when compared to the complexity of the Blahut-Arimoto algorithm that is currently the standard. The overall system does not require a generative model of the environment to be built, learns using only interactions with the environment, and allows the agent to learn directly from visual information or in continuous state-action spaces. While we chose to develop the algorithm in terms of intrinsic motivation, the mutual information has wide applications in other domains, all which stand to benefit from a scalable algorithm that allows them to exploit the abundance of data and be applied to large-scale problems."
-	--
-	"A problem when dealing with quantities such as the mutual information between state and actions is that it tends to be intractable to compute or would assume a prior knowledge of the MDP (which is assumed to be unknown in reinforcement learning). This paper seems to propose to use variational methods to alleviate the problem of computing the MI in the context of intrinsically motivated RL. This is highly relevant in the context of exploration when you know little about your environment or when the reward structure is very sparse (as in "Montezuma's Revenge")."
-	-- https://evernote.com/shard/s189/sh/8c7ff9d9-c321-4e83-a802-58f55ebed9ac/bfc614113180a5f4624390df56e73889
-
-Stadie, Levine, Abbeel - "Incentivizing Exploration In Reinforcement Learning With Deep Predictive Models" [http://arxiv.org/abs/1507.00814]
-	"Achieving efficient and scalable exploration in complex domains poses a major challenge in reinforcement learning. While Bayesian and PAC-MDP approaches to the exploration problem offer strong formal guarantees, they are often impractical in higher dimensions due to their reliance on enumerating the state-action space. Hence, exploration in complex domains is often performed with simple epsilon-greedy methods. To achieve more efficient exploration, we develop a method for assigning exploration bonuses based on a concurrently learned model of the system dynamics. By parameterizing our learned model with a neural network, we are able to develop a scalable and efficient approach to exploration bonuses that can be applied to tasks with complex, high-dimensional state spaces. We demonstrate our approach on the task of learning to play Atari games from raw pixel inputs. In this domain, our method offers substantial improvements in exploration efficiency when compared with the standard epsilon greedy approach. As a result of our improved exploration strategy, we are able to achieve state-of-the-art results on several games that pose a major challenge for prior methods."
-	"In the field of reinforcement learning, agents acting in unknown environments face the exploration versus exploitation tradeoff. Without adequate exploration, the agent might fail to discover effective control strategies, particularly in complex domains. Both PAC-MDP algorithms and Bayesian algorithms have managed this tradeoff by assigning exploration bonuses to novel states. In these methods, the novelty of a state-action pair is derived from the number of times an agent has visited that pair. While these approaches offer strong formal guarantees, their requirement of an enumerable representation of the agent’s environment renders them impractical for large-scale tasks. As such, exploration in large RL tasks is still most often performed using simple heuristics, such as the epsilon-greedy strategy, which can be inadequate in more complex settings. To achieve better exploration, we develop a method for assigning exploration bonuses based on a learned model of the system dynamics. Rather than requiring an a priori and enumerable representation of the agent’s environment, we instead propose to learn a state representation from observations, and then optimize a dynamics model concurrently with the policy. The misprediction error in our learned dynamics model is then used to assess the novelty of a given state; since novel states are expected to disagree more strongly with the model than those states that have been visited frequently in the past. These exploration bonuses are motivated by Bayesian exploration bonuses, in which state-action counts serve to capture the uncertainty in the belief space over a model’s transition matrices. Though it is intractable to construct such transition matrices for complex, partially observed tasks with high-dimensional observations such as image pixels, our method captures a similar notion of uncertainty via the misprediction error in the learned dynamics model over the observation space. Using learned model dynamics to assess a state’s novelty presents several challenges. Capturing an adequate representation of the agent’s environment for use in dynamics predictions can be accomplished by simply training a model to predict the next state from the previous ground-truth state-action pair. However, one would not expect pixel intensity values to adequately capture the salient features of a given state-space. To provide a more satisfying representation of the system’s state space, we devised several methods for encoding the state space into lower dimensional domains. To achieve sufficient generality and scalability, we modeled the system’s dynamics with a deep neural network. This allows for on-the-fly development of a model representation that can easily be trained in parallel to learning a policy."
-	"We presented a scalable and efficient algorithm for assigning exploration bonuses in reinforcement learning tasks with complex, high-dimensional observations. Our exploration method learns a model of the dynamics concurrently with the policy. This model predicts a learned representation of the state, and a function of this prediction error is added to the reward as an exploration bonus to encourage the policy to visit states with high novelty. Our experiments validate our approach on the complex task of learning to play Atari games from raw pixel inputs. We compare with the standard epsilon greedy approach. Our method exhibits substantial improvements in exploration efficiency for five of the games, comparable exploration efficiency for seven of the games, and worse exploration efficiency on one game. There are a number of directions for future work. Our method assumes unpredictability is a good indicator for the need for more exploration, but in highly stochastic environments there can be transitions that remain unpredictable even after sufficient exploration, and a distributional prediction (rather than a single next state prediction) would become important. An important question both in policy learning and model learning with complex, high-dimensional observations is the question of representation. In the case of our model, we learn a representation using an autoencoder trained on prior experience, in an unsupervised setting. More generally, one can imagine learning representations as part of the model learning process in a supervised way, or even sharing representations between the model and the policy. Furthermore, although our method learns a model of the dynamics, the reinforcement learning is performed in a model-free way. We make no attempt to incorporate the model into the policy update except via exploration bonuses. An interesting direction for future work is to incorporate model-based updates with the same type of predictive model."
-	--
-	"The work of aims to add an effective bonus through a variation of DQN. The resulting algorithm relies on a large number of hand-tuned parameters and is only suitable for application to deterministic problems."
-	-- http://research.microsoft.com/apps/video/default.aspx?id=260045 (Abbeel, 12:30)
-
-Osband, Blundell, Pritzel, van Roy - "Deep Exploration via Bootstrapped DQN" [http://arxiv.org/abs/1602.04621]
-	"Efficient exploration in complex environments remains a major challenge for reinforcement learning. We propose bootstrapped DQN, a simple algorithm that explores in a computationally and statistically efficient manner through use greedy of randomized value functions. Unlike dithering strategies such as Epsilon-greedy exploration, bootstrapped DQN carries out temporally-extended (or deep) exploration; this can lead to exponentially faster learning. We demonstrate these benefits in complex stochastic MDPs and in the large-scale Arcade Learning Environment. Bootstrapped DQN substantially improves learning times and performance across most Atari games."
-	"In this paper we present bootstrapped DQN as an algorithm for efficient reinforcement learning in complex environments. We demonstrate that the bootstrap can produce useful uncertainty estimates for deep neural networks. Bootstrapped DQN can leverage these uncertainty estimates for deep exploration even in difficult stochastic systems; it also produces several state of the art results in Atari 2600. Bootstrapped DQN is computationally tractable and also naturally scalable to massive parallel systems as per (Nair et al., 2015). We believe that, beyond our specific implementation, randomized value functions represent a promising alternative to dithering for exploration. Bootstrapped DQN practically combines efficient generalization with exploration for complex nonlinear value functions.
-	"Our algorithm, bootstrapped DQN, modifies DQN to produce distribution over Q-values via the bootstrap. At the start of each episode, bootstrapped DQN samples a single Q-value function from its approximate posterior. The agent then follows the policy which is optimal for that sample for the duration of the episode. This is a natural extension of the Thompson sampling heuristic to RL that allows for temporally extended (or deep) exploration. Bootstrapped DQN exhibits deep exploration unlike the naive application of Thompson sampling to RL which resample every timestep."
-	"By contrast, Epsilon-greedy strategies are almost indistinguishable for small values of Epsilon and totally ineffectual for larger values. Our heads explore a diverse range of policies, but still manage to each perform well individually."
-	"Unlike vanilla DQN, bootstrapped DQN can know what it doesn’t know."
-	-- http://youtube.com/watch?v=Zm2KoT82O_M + http://youtube.com/watch?v=0jvEcC5JvGY (demo)
-	-- https://github.com/Kaixhin/Atari
-	-- https://github.com/iassael/torch-bootstrapped-dqn
+	-- https://youtu.be/mrgJ53TIcQc?t=1h10m31s (Seleznev, in russian)
+	-- https://youtu.be/rO7Dx8pSJQw?t=50m (Schulman)
 
 Schaul, Horgan, Gregor, Silver - "Universal Value Function Approximators" [http://jmlr.org/proceedings/papers/v37/schaul15.pdf]
 	"Value functions are a core component of reinforcement learning systems. The main idea is to construct a single function approximator V(s; θ) that estimates the long-term reward from any state s, using parameters θ. In this paper we introduce universal value function approximators V(s, g; θ) that generalise not just over states s but also over goals g. We develop an efficient technique for supervised learning of UVFAs, by factoring observed values into separate embedding vectors for state and goal, and then learning a mapping from s and g to these factored embedding vectors. We show how this technique may be incorporated into a reinforcement learning algorithm that updates the UVFA solely from observed rewards. Finally, we demonstrate that a UVFA can successfully generalise to previously unseen goals."
@@ -690,6 +1141,7 @@ Schaul, Horgan, Gregor, Silver - "Universal Value Function Approximators" [http:
 Guo, Singh, Lee, Lewis, Wang - "Deep Learning for Real-Time Atari Game Play Using Offline Monte-Carlo Tree Search Planning" [https://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning]
 	"The combination of modern Reinforcement Learning and Deep Learning approaches holds the promise of making significant progress on challenging applications requiring both rich perception and policy-selection. The Arcade Learning Environment provides a set of Atari games that represent a useful benchmark set of such applications. A recent breakthrough in combining model-free reinforcement learning with deep learning, called DQN, achieves the best realtime agents thus far. Planning-based approaches achieve far higher scores than the best model-free approaches, but they exploit information that is not available to human players, and they are orders of magnitude slower than needed for real-time play. Our main goal in this work is to build a better real-time Atari game playing agent than DQN. The central idea is to use the slow planning-based agents to provide training data for a deep-learning architecture capable of real-time play. We proposed new agents based on this idea and show that they outperform DQN."
 	-- https://youtube.com/watch?v=B3b6NLUxN3U (Singh)
+	-- https://youtube.com/watch?v=igm38BakyAg (Lee)
 
 Wierstra, Forster, Peters, Schmidhuber - "Recurrent Policy Gradients" [http://people.idsia.ch/~daan/papers/jof.pdf]
 	"Reinforcement learning for partially observable Markov decision problems is a challenge as it requires policies with an internal state. Traditional approaches suffer significantly from this shortcoming and usually make strong assumptions on the problem domain such as perfect system models, state-estimators and a Markovian hidden system. Recurrent neural networks offer a natural framework for dealing with policy learning using hidden state and require only few limiting assumptions. As they can be trained well using gradient descent, they are suited for policy gradient approaches. In this paper, we present a policy gradient method, the Recurrent Policy Gradient which constitutes a model-free reinforcement learning method. It is aimed at training limited-memory stochastic policies on problems which require long-term memories of past observations. The approach involves approximating a policy gradient for a recurrent neural network by backpropagating return-weighted characteristic eligibilities through time. Using a “Long Short-Term Memory” RNN architecture, we are able to outperform previous RL methods on three important benchmark tasks. Furthermore, we show that using history-dependent baselines helps reducing estimation variance significantly, thus enabling our approach to tackle more challenging, highly stochastic environments."
@@ -715,8 +1167,24 @@ Oh, Guo, Lee, Lewis, Singh - "Action-Conditional Video Prediction using Deep Net
 	"The encoding part computes high-level abstractions of input frames, the action-conditional transformation part predicts the abstraction of the next frame conditioned on the action, and finally the decoding part maps the predicted high-level abstraction to a detailed frame. The feedforward architecture takes the last 4 frames as input while the recurrent architecture takes just the last frame but has recurrent connections. Our experimental results on predicting images in Atari games show that our architectures are able to generate realistic frames over 100-step action-conditional future frames without diverging. We show that the representations learned by our architectures 1) approximately capture natural similarity among actions, and 2) discover which objects are directly controlled by the agent’s actions and which are only indirectly influenced or not controlled at all. We evaluated the usefulness of our architectures for control in two ways: 1) by replacing emulator frames with predicted frames in a previously-learned model-free controller (DQN; DeepMind’s state of the art Deep-Q-Network for Atari Games), and 2) by using the predicted frames to drive a more informed than random exploration strategy to improve a model-free controller (also DQN)."
 	"This paper introduced two different novel deep architectures that predict future frames that are dependent on actions and showed qualitatively and quantitatively that they are able to predict visually realistic and useful-for-control frames over 100-step futures on several Atari game domains. To our knowledge, this is the first paper to show good deep predictions in Atari games. Since our architectures were domain independent we expect that they will generalize to many vison-based RL problems. In future work we will learn models that predict future reward in addition to predicing future frames and evaluate the performance of our architectures in model-based RL."
 	-- https://sites.google.com/a/umich.edu/junhyuk-oh/action-conditional-video-prediction (demos)
+	-- https://youtu.be/igm38BakyAg?t=15m26s (Lee)
 	-- http://research.microsoft.com/apps/video/default.aspx?id=259646 (17:30)
 	-- https://github.com/junhyukoh/nips2015-action-conditional-video-prediction
+
+Peng, Berseth, van de Panne - "Terrain-Adaptive Locomotion Skills Using Deep Reinforcement Learning" [http://www.cs.ubc.ca/~van/papers/2016-TOG-deepRL/2016-TOG-deepRL.pdf]
+	"Reinforcement learning offers a promising methodology for developing skills for simulated characters, but typically requires working with sparse hand-crafted features. Building on recent progress in deep reinforcement learning, we introduce a mixture of actor-critic experts approach that learns terrain-adaptive dynamic locomotion skills using high-dimensional state and terrain descriptions as input, and parameterized leaps or steps as output actions. MACE learns more quickly than a single actor-critic approach and results in actor-critic experts that exhibit specialization. Additional elements of our solution that contribute towards efficient learning include Boltzmann exploration and the use of initial actor biases to encourage specialization. Results are demonstrated for multiple planar characters and terrain classes."
+	"We introduce a novel mixture of actor-critic experts architecture to enable accelerated learning. MACE develops n individual control policies and their associated value functions, which each then specialize in particular regimes of the overall motion. During final policy execution, the policy associated with the highest value function is executed, in a fashion analogous to Q-learning with discrete actions. We show the benefits of Boltzmann exploration and various algorithmic features for our problem domain."
+	-- https://youtube.com/watch?v=KPfzRSBzNX4 + https://youtube.com/watch?v=A0BmHoujP9k (demo)
+	-- https://youtube.com/watch?v=mazfn4dHPRM + https://youtube.com/watch?v=RTuSHI5FNzg (overview)
+	-- https://github.com/xbpeng/DeepTerrainRL
+
+Weber, Heess, Eslami, Schulman, Wingate, Silver - "Reinforced Variational Inference" [http://approximateinference.org/accepted/WeberEtAl2015.pdf]
+	"Recent years have seen an increase in the complexity and scale of probabilistic models used to understand and analyze data, with a corresponding increase in the difficulty of performing inference. An important enabling factor in this context has been the development of stochastic gradient algorithms for learning variational approximations to posterior distributions. In a separate line of work researchers have been investigating how to use probabilistic inference for the problem of optimal control. By viewing control as an inference problem, they showed that they could ‘borrow’ algorithms from the inference literature (e.g. belief propagation) and turn them into control algorithms. In this work, we do just the opposite: we formally map the problem of learning approximate posterior distributions in variational inference onto the policy optimization problem in reinforcement learning, explaining this connection at two levels. We first provide a high level connection, where draws from the approximate posterior correspond to trajectory samples, free energies to expected returns, and where the core computation involves computing gradients of expectations. We follow by a more detailed, sequential mapping where Markov Decision Processes concepts (state, action, rewards and transitions) are clearly defined in the inference context. We then illustrate how this allows us to leverage ideas from RL for inference network learning, for instance by introducing the concept of value functions in sequential variational inference. For concreteness and simplicity, in the main text we focus on inference for a particular model class and derive the general case in the appendix."
+
+
+
+
+[interesting papers - deep policy search]
 
 Levine, Koltun - "Learning Complex Neural Network Policies with Trajectory Optimization" [http://graphics.stanford.edu/projects/cgpspaper/index.htm]
 	"Direct policy search methods offer the promise of automatically learning controllers for complex, high-dimensional tasks. However, prior applications of policy search often required specialized, low-dimensional policy classes, limiting their generality. In this work, we introduce a policy search algorithm that can directly learn high-dimensional, general-purpose policies, represented by neural networks. We formulate the policy search problem as an optimization over trajectory distributions, alternating between optimizing the policy to match the trajectories, and optimizing the trajectories to match the policy and minimize expected cost. Our method can learn policies for complex tasks such as bipedal push recovery and walking on uneven terrain, while outperforming prior methods."
@@ -730,6 +1198,7 @@ Levine, Koltun - "Guided Policy Search" [http://vladlen.info/papers/guided-polic
 	"Policy gradient methods often require on-policy samples at each gradient step, do not admit off-policy samples, and cannot use line searches or higher order optimization methods such as LBFGS, which makes them difficult to use with complex policy classes. Our approach follows prior methods that use importance sampling to address these challenges. While these methods recycle samples from previous policies, we also introduce guiding samples, which dramatically speed up learning and help avoid poor local optima. We also regularize the importance sampling estimator, which prevents the optimization from assigning low probabilities to all samples. The regularizer controls how far the policy deviates from the samples, serving a similar function to the natural gradient, which bounds the information loss at each iteration. Unlike Tang and Abbeel’s ESS constraint, our regularizer does not penalize reliance on a few samples, but does avoid policies that assign a low probability to all samples. Our evaluation shows that the regularizer can be crucial for learning effective policies."
 	"We presented a guided policy search algorithm that can learn complex policies with hundreds of parameters by incorporating guiding samples into the policy search. These samples are drawn from a distribution built around a DDP solution, which can be initialized from demonstrations. We evaluated our method using general-purpose neural networks on a range of challenging locomotion tasks, and showed that the learned policies generalize to new environments. While our policy search is model-free, it is guided by a model-based DDP algorithm. A promising avenue for future work is to build the guiding distributions with model-free methods that either build trajectory following policies or perform stochastic trajectory optimization. Our rough terrain results suggest that GPS can generalize by learning basic locomotion principles such as balance. Further investigation of generalization is an exciting avenue for future work. Generalization could be improved by training on multiple environments, or by using larger neural networks with multiple layers or recurrent connections. It would be interesting to see whether such extensions could learn more general and portable concepts, such as obstacle avoidance, perturbation recoveries, or even higher-level navigation skills."
 	-- https://graphics.stanford.edu/projects/gpspaper/index.htm
+	-- http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/ (Abbeel, part 2)
 	-- http://youtube.com/watch?v=EtMyH_--vnU (Levine)
 	-- https://video.seas.harvard.edu/media/ME+Sergey+Levine+2015+-04-01/1_gqqp9r3o/23375211 (Levine)
 	-- http://youtube.com/watch?v=xMHjkZBvnfU (Abbeel)
@@ -766,13 +1235,21 @@ Schulman, Levine, Moritz, Jordan, Abbeel - "Trust Region Policy Optimization" [h
 	"We proposed and analyzed trust region methods for optimizing stochastic control policies. We proved monotonic improvement for an algorithm that repeatedly optimizes a local approximation to the expected cost of the policy with a KL divergence penalty, and we showed that an approximation to this method that incorporates a KL divergence constraint achieves good empirical results on a range of challenging policy learning tasks, outperforming prior methods. Our analysis also provides a perspective that unifies policy gradient and policy iteration methods, and shows them to be special limiting cases of an algorithm that optimizes a certain objective subject to a trust region constraint. In the domain of robotic locomotion, we successfully learned controllers for swimming, walking and hopping in a physics simulator, using general purpose neural networks and minimally informative costs. To our knowledge, no prior work has learned controllers from scratch for all of these tasks, using a generic policy search method and non-engineered, general-purpose policy representations. In the game-playing domain, we learned convolutional neural network policies that used raw images as inputs. This requires optimizing extremely high-dimensional policies, and only two prior methods report successful results on this task. Since the method we proposed is scalable and has strong theoretical foundations, we hope that it will serve as a jumping-off point for future work on training large, rich function approximators for a range of challenging problems. At the intersection of the two experimental domains we explored, there is the possibility of learning robotic control policies that use vision and raw sensory data as input, providing a unified scheme for training robotic controllers that perform both perception and control. The use of more sophisticated policies, including recurrent policies with hidden state, could further make it possible to roll state estimation and control into the same policy in the partially-observed setting. By combining our method with model learning, it would also be possible to substantially reduce its sample complexity, making it applicable to real-world settings where samples are expensive."
 	-- https://youtube.com/watch?v=jeid0wIrSn4 + https://vimeo.com/113957342 (demo)
 	-- https://youtu.be/xe-z4i3l-iQ?t=30m35s (Abbeel)
+	-- http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/ (Abbeel, 0:27:10)
+	-- https://youtube.com/watch?v=gb5Q2XL5c8A (Schulman)
+	-- https://github.com/joschu/modular_rl
 	-- https://github.com/rll/deeprlhw2/blob/master/ppo.py + https://github.com/rll/deeprlhw2
+	-- https://github.com/wojzaremba/trpo + https://github.com/wojzaremba/trpo_rnn
+	-- https://github.com/rllab/rllab/blob/master/rllab/algos/trpo.py
+	-- https://github.com/kvfrans/parallel-trpo
 
 Schulman, Moritz, Levine, Jordan, Abbeel - "High-Dimensional Continuous Control Using Generalized Advantage Estimation" [http://arxiv.org/abs/1506.02438]
 	"Policy gradient methods are an appealing approach in reinforcement learning because they directly optimize the cumulative reward and can straightforwardly be used with nonlinear function approximators such as neural networks. The two main challenges are the large number of samples typically required, and the difficulty of obtaining stable and steady improvement despite the nonstationarity of the incoming data. We address the first challenge by using value functions to substantially reduce the variance of policy gradient estimates at the cost of some bias, with an exponentially-weighted estimator of the advantage function that is analogous to TD(lambda). We address the second challenge by using trust region optimization procedure for both the policy and the value function, which are represented by neural networks. Our approach yields strong empirical results on highly challenging 3D locomotion tasks, learning running gaits for bipedal and quadrupedal simulated robots, and learning a policy for getting the biped to stand up from starting out lying on the ground. In contrast to a body of prior work that uses hand-crafted policy representations, our neural network policies map directly from raw kinematics to joint torques. Our algorithm is fully model-free, and the amount of simulated experience required for the learning tasks on 3D bipeds corresponds to 1-2 weeks of real time."
 	"Policy gradient methods provide a way to reduce reinforcement learning to stochastic gradient descent, by providing unbiased gradient estimates. However, so far their success at solving difficult control problems has been limited, largely due to their high sample complexity. We have argued that the key to variance reduction is to obtain good estimates of the advantage function. We have provided an intuitive but informal analysis of the problem of advantage function estimation, and justified the generalized advantage estimator, which has two parameters which adjust the bias-variance tradeoff. We described how to combine this idea with trust region policy optimization and a trust region algorithm that optimizes a value function, both represented by neural networks. Combining these techniques, we are able to learn to solve difficult control tasks that have previously been out of reach for generic reinforcement learning methods. One question that merits future investigation is the relationship between value function estimation error and policy gradient estimation error. If this relationship were known, we could choose an error metric for value function fitting that is well-matched to the quantity of interest, which is typically the accuracy of the policy gradient estimation. Some candidates for such an error metric might include the Bellman error or projected Bellman error, as described in Bhatnagar et al. (2009). Another enticing possibility is to use a shared function approximation architecture for the policy and the value function, while optimizing the policy using generalized advantage estimation. While formulating this problem in a way that is suitable for numerical optimization and provides convergence guarantees remains an open question, such an approach could allow the value function and policy representations to share useful features of the input, resulting in even faster learning. In concurrent work, researchers have been developing policy gradient methods that involve differentiation with respect to the continuous-valued action (Lillicrap et al., 2015; Heess et al., 2015). While we found empirically that the one-step return (lambda = 0) leads to excessive bias and poor performance, these papers show that such methods can work when tuned appropriately. However, note that those papers consider control problems with substantially lower-dimensional state and action spaces than the ones considered here. A comparison between both classes of approach would be useful for future work."
-	-- https://youtube.com/watch?v=ATvp0Hp7RUI + https://youtube.com/watch?v=Pvw28wPEWEo (demo)
+	-- https://youtu.be/gb5Q2XL5c8A?t=21m2s + https://youtube.com/watch?v=ATvp0Hp7RUI + https://youtube.com/watch?v=Pvw28wPEWEo (demo)
 	-- https://youtu.be/xe-z4i3l-iQ?t=30m35s (Abbeel)
+	-- https://youtu.be/rO7Dx8pSJQw?t=40m20s (Schulman)
+	-- https://github.com/joschu/modular_rl
 	-- https://github.com/rll/deeprlhw2/blob/master/ppo.py + https://github.com/rll/deeprlhw2
 
 Zhang, Kahn, Levine, Abbeel - "Learning Deep Control Policies for Autonomous Aerial Vehicles with MPC-Guided Policy Search" [http://arxiv.org/abs/1509.06791]
@@ -810,16 +1287,40 @@ Mordatch, Lowrey, Andrew, Popovic, Todorov - "Interactive Control of Diverse Com
 	-- http://youtube.com/watch?&v=IxrnT0JOs4o (demo)
 	-- http://research.microsoft.com/apps/video/default.aspx?id=259609 (Mordatch)
 
+
+
+
+[interesting papers - inverse reinforcement learning]
+
 Bogdanovic, Markovikj, Denil, Freitas - "Deep Apprenticeship Learning for Playing Video Games" [https://aaai.org/ocs/index.php/WS/AAAIW15/paper/view/10159]
 	"Recently it has been shown that deep neural networks can learn to play Atari games by directly observing raw pixels of the playing area. We show how apprenticeship learning can be applied in this setting so that an agent can learn to perform a task (i.e. play a game) by observing the expert, without any explicitly provided knowledge of the game’s internal state or objectives."
 
 Wulfmeier, Ondruska, Posner - "Maximum Entropy Deep Inverse Reinforcement Learning" [http://arxiv.org/abs/1507.04888]
 	"This paper presents a general framework for employing deep architectures - in particular neural networks - to solve the inverse reinforcement learning (IRL) problem. Specifically, we propose to exploit the representational capacity and favourable computational complexity of deep networks to approximate complex, nonlinear reward functions. We show that the Maximum Entropy paradigm for IRL lends itself naturally to the efficient training of deep architectures. At test time, the approach leads to a computational complexity independent of the number of demonstrations. This makes it especially well-suited for applications in life-long learning scenarios commonly encountered in robotics. We demonstrate that our approach achieves performance commensurate to the state-of-the-art on existing benchmarks already with simple, comparatively shallow network architectures while significantly outperforming the state-of-the-art on an alternative benchmark based on more complex, highly varying reward structures representing strong interactions between features. Furthermore, we extend the approach to include convolutional layers in order to eliminate the dependency on precomputed features of current algorithms and to underline the substantial gain in flexibility in framing IRL in the context of deep learning."
 
-Weber, Heess, Eslami, Schulman, Wingate, Silver - "Reinforced Variational Inference" [http://approximateinference.org/accepted/WeberEtAl2015.pdf]
-	"Recent years have seen an increase in the complexity and scale of probabilistic models used to understand and analyze data, with a corresponding increase in the difficulty of performing inference. An important enabling factor in this context has been the development of stochastic gradient algorithms for learning variational approximations to posterior distributions. In a separate line of work researchers have been investigating how to use probabilistic inference for the problem of optimal control. By viewing control as an inference problem, they showed that they could ‘borrow’ algorithms from the inference literature (e.g. belief propagation) and turn them into control algorithms. In this work, we do just the opposite: we formally map the problem of learning approximate posterior distributions in variational inference onto the policy optimization problem in reinforcement learning, explaining this connection at two levels. We first provide a high level connection, where draws from the approximate posterior correspond to trajectory samples, free energies to expected returns, and where the core computation involves computing gradients of expectations. We follow by a more detailed, sequential mapping where Markov Decision Processes concepts (state, action, rewards and transitions) are clearly defined in the inference context. We then illustrate how this allows us to leverage ideas from RL for inference network learning, for instance by introducing the concept of value functions in sequential variational inference. For concreteness and simplicity, in the main text we focus on inference for a particular model class and derive the general case in the appendix."
+Finn, Levine, Abbeel - "Guided Cost Learning: Deep Inverse Optimal Control via Policy Optimization" [https://arxiv.org/abs/1603.00448]
+	"Reinforcement learning can acquire complex behaviors from high-level specifications. However, defining a cost function that can be optimized effectively and encodes the correct task is challenging in practice. We explore how inverse optimal control (IOC) can be used to learn behaviors from demonstrations, with applications to torque control of high-dimensional robotic systems. Our method addresses two key challenges in inverse optimal control: first, the need for informative features and effective regularization to impose structure on the cost, and second, the difficulty of learning the cost function under unknown dynamics for high-dimensional continuous systems. To address the former challenge, we present an algorithm capable of learning arbitrary nonlinear cost functions, such as neural networks, without meticulous feature engineering. To address the latter challenge, we formulate an efficient sample-based approximation for MaxEnt IOC. We evaluate our method on a series of simulated tasks and real-world robotic manipulation problems, demonstrating substantial improvement over prior methods both in terms of task complexity and sample efficiency."
+	--
+	"technique that lets one apply Maximum Entropy Inverse Optimal Control without the double-loop procedure and using policy gradient techniques"
+	-- https://youtube.com/watch?v=hXxaepw0zAw (demo)
+	-- http://techtalks.tv/talks/guided-cost-learning-deep-inverse-optimal-control-via-policy-optimization/62472/
+
+Ho, Gupta, Ermon - "Model-Free Imitation Learning with Policy Optimization" [http://arxiv.org/abs/1605.08478]
+	"In imitation learning, an agent learns how to behave in an environment with an unknown cost function by mimicking expert demonstrations. Existing imitation learning algorithms typically involve solving a sequence of planning or reinforcement learning problems. Such algorithms are therefore not directly applicable to large, high-dimensional environments, and their performance can significantly degrade if the planning problems are not solved to optimality. Under the apprenticeship learning formalism, we develop alternative model-free algorithms for finding a parameterized stochastic policy that performs at least as well as an expert policy on an unknown cost function, based on sample trajectories from the expert. Our approach, based on policy gradients, scales to large continuous environments with guaranteed convergence to local minima."
+	"We showed that carefully blending state-of-the-art policy gradient algorithms for reinforcement learning with local cost function fitting lets us successfully train neural network policies for imitation in high-dimensional, continuous environments. Our method is able to identify a locally optimal solution, even in settings where optimal planning is out of reach. This is a significant advantage over competing algorithms that require repeatedly solving planning problems in an inner loop. In fact, when the inner planning problem is only approximately solved, competing algorithms do not even provide local optimality guarantees (Ermon et al., 2015). Our approach does not use expert interaction or reinforcement signal, fitting in a family of such approaches that includes apprenticeship learning and inverse reinforcement learning. When either of these additional resources is provided, alternative approaches (Kim et al., 2013; Daume III et al., 2009; Ross & Bagnell, 2010; Ross et al., 2011) may be more sample efficient, and investigating ways to combine these resources with our framework is an interesting research direction. We focused on the policy optimization component of apprenticeship learning, rather than the design of appropriate cost function classes. We believe this is an important area for future work. Nonlinear cost function classes have been successful in IRL (Ratliff et al., 2009; Levine et al., 2011) as well as in other machine learning problems reminiscent of ours, in particular that of training generative image models. In the language of generative adversarial networks (Goodfellow et al., 2014), the policy parameterizes a generative model of state-action pairs, and the cost function serves as an adversary. Apprenticeship learning with large cost function classes capable of distinguishing between arbitrary state-action visitation distributions would, enticingly, open up the possibility of exact imitation."
+	-- http://techtalks.tv/talks/model-free-imitation-learning-with-policy-optimization/62471/
+
+Ho, Ermon - "Generative Adversarial Imitation Learning" [http://arxiv.org/abs/1606.03476]
+	"Consider learning a policy from example expert behavior, without interaction with the expert or access to reinforcement signal. One approach is to recover the expert’s cost function with inverse reinforcement learning, then extract a policy from that cost function with reinforcement learning. This approach is indirect and can be slow. We propose a new general framework for directly extracting a policy from data, as if it were obtained by reinforcement learning following inverse reinforcement learning. We show that a certain instantiation of our framework draws an analogy between imitation learning and generative adversarial networks, from which we derive a model-free imitation learning algorithm that obtains significant performance gains over existing model-free methods in imitating complex behaviors in large, high-dimensional environments."
+	"As we demonstrated, our method is generally quite sample efficient in terms of expert data. However, it is not particularly sample efficient in terms of environment interaction during training. The number of such samples required to estimate the imitation objective gradient was comparable to the number needed for TRPO to train the expert policies from reinforcement signals. We believe that we could significantly improve learning speed for our algorithm by initializing policy parameters with behavioral cloning, which requires no environment interaction at all. Fundamentally, our method is model free, so it will generally need more environment interaction than model-based methods. Guided cost learning, for instance, builds upon guided policy search and inherits its sample efficiency, but also inherits its requirement that the model is well-approximated by iteratively fitted time-varying linear dynamics. Interestingly, both our Algorithm 1 and guided cost learning alternate between policy optimization steps and cost fitting (which we called discriminator fitting), even though the two algorithms are derived completely differently. Our approach builds upon a vast line of work on IRL, and hence, just like IRL, our approach does not interact with the expert during training. Our method explores randomly to determine which actions bring a policy’s occupancy measure closer to the expert’s, whereas methods that do interact with the expert, like DAgger, can simply ask the expert for such actions. Ultimately, we believe that a method that combines well-chosen environment models with expert interaction will win in terms of sample complexity of both expert data and environment interaction."
+	""Popular imitation approaches involve a two-stage pipeline: first learning a reward function, then running RL on that reward. Such a pipeline can be slow, and because it’s indirect, it is hard to guarantee that the resulting policy works well. This work shows how one can directly extract policies from data via a connection to GANs. As a result, this approach can be used to learn policies from expert demonstrations (without rewards)."
+	-- https://github.com/openai/imitation
+
+Hadfield-Menell, Dragan, Abbeel, Russell - "Cooperative Inverse Reinforcement Learning" [http://arxiv.org/abs/1606.03137]
+	"For an autonomous system to be helpful to humans and to pose no unwarranted risks, it needs to align its values with those of the humans in its environment in such a way that its actions contribute to the maximization of value for the humans. We propose a formal definition of the value alignment problem as cooperative inverse reinforcement learning. A CIRL problem is a cooperative, partial information game with two agents, human and robot; both are rewarded according to the human’s reward function, but the robot does not initially know what this is. In contrast to classical IRL, where the human is assumed to act optimally in isolation, optimal CIRL solutions produce behaviors such as active teaching, active learning, and communicative actions that are more effective in achieving value alignment. We show that computing optimal joint policies in CIRL games can be reduced to solving a POMDP, prove that optimality in isolation is suboptimal in CIRL, and derive an approximate CIRL algorithm."
+	"In this work, we presented a game-theoretic model for cooperative learning, CIRL. Key to this model is that the robot knows that it is in a shared environment and is attempting to maximize the human’s reward (as opposed to estimating the human’s reward function and adopting it as its own). This leads to cooperative learning behavior and provides a framework in which to design HRI algorithms and analyze the incentives of both actors in a learning environment. We reduced the problem of computing an optimal policy pair to solving a POMDP. This is a useful theoretical tool and can be used to design new algorithms, but it is clear that optimal policy pairs are only part of the story. In particular, when it performs a centralized computation, the reduction assumes that we can effectively program both actors to follow a set coordination policy. This may not be feasible in reality, although it may nonetheless be helpful in training humans to be better teachers. An important avenue for future research will be to consider the problem of equilibrium acquisition: the process by which two independent actors arrive at an equilibrium pair of policies. Returning to Wiener’s warning, we believe that the best solution is not to put a specific purpose into the machine at all, but instead to design machines that provably converge to the right purpose as they go along."
 
 
 
 
-<brylevkirill@gmail.com>
+<brylevkirill (at) gmail.com>

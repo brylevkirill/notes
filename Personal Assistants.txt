@@ -29,10 +29,14 @@
 
   http://languagengine.co/blog/the-conversational-ai-problem-landscape/
 
+  https://medium.com/@honnibal/a-natural-language-user-interface-is-just-a-user-interface-4a6d898e9721
+
 
 
 
 [overview]
+
+  https://linkedin.com/pulse/what-would-alexa-do-tim-o-reilly
 
   https://medium.com/chris-messina/2016-will-be-the-year-of-conversational-commerce-1586e85e3991
   http://searchengineland.com/how-google-now-siri-cortana-predict-what-you-want-229799
@@ -41,7 +45,9 @@
   http://the-vital-edge.com/virtual-personal-assistant/
   http://techcrunch.com/2015/09/07/facebooks-messenger-and-the-challenge-to-googles-search-dominance/
 
+  http://dangrover.com/blog/2016/04/20/bots-wont-replace-apps.html
   http://www.bloomberg.com/news/articles/2016-04-18/the-humans-hiding-behind-the-chatbots
+  https://medium.com/chat-bots/bots-hype-or-glory-656f4d614efb
 
   David Yann - http://rbc.ru/opinions/technology_and_media/01/03/2016/56d54a339a7947800b4c67cc (in russian)
   Ilya Gelfenbeyn - https://medium.com/@IlyaG/4-reasons-why-developers-should-adopt-voice-enabled-tech-now-15dd08a78f08
@@ -53,10 +59,35 @@
 
 [personal assistants]
 
+  ViV
+	http://youtube.com/watch?v=Rblb3sptgpQ
+	http://youtube.com/watch?v=L2zMQjr-3Ic
+	https://medium.com/@brianroemmele/what-is-the-technology-of-viv-the-next-generation-of-siri-baff7ed99e3b
+
+	http://wired.com/2014/08/viv/
+	"Whereas Siri can only perform tasks that Apple engineers explicitly implement, this new program, they say, will be able to teach itself, giving it almost limitless capabilities. In time, they assert, their creation will be able to use your personal preferences and a near-infinite web of connections to answer almost any query and perform almost any function."
+
   Amazon Echo
 	http://nytimes.com/2016/03/10/technology/the-echo-from-amazon-brims-with-groundbreaking-promise.html
 
-  Apple Siri
+  Apple Siri + VocalIQ
+	http://techinsider.io/how-apples-vocaliq-ai-works-2016-5
+
+	Blaise Thomson - "The Future of Human-Machine Conversation" - https://youtube.com/watch?v=XX4wlMQAK8o
+
+	Steve Young - http://www.fastcolabs.com/3027067/this-cambridge-researcher-just-embarrassed-siri
+
+	"Unlike Siri and Google Now, which work on flowchart systems, works by leveraging a small knowledge graph to begin with and then learns organically through conversation with the user about the world around it"
+	"VIQ essentially builds large classifiers that takes the words you speak and it doesn't try to do any rule-based grammatical analysis. It takes the words you speak, but more than that, it takes all of the things it thinks you might have said—not just the most likely thing, but all of the alternatives—and uses that as a set of features to go into a classifier. The classifier is trained to essentially identify the relevant node in the knowledge graph."
+	"VIQ will know exactly what to search for based on your likes. Matter of fact, the system is so smart it doesn’t need your implicit confirmation that you like a certain type of food. Simply saying "Give me directions to" or "Book a table at" the pizza place tells VIQ you’re happy with the decision and it then adds a probability rating onto similar restaurants and types of food that make future conversations and suggestions more accurate."
+	"In other words, VIQ operates virtually how a child does: At first it knows nothing, then it begins building a "belief state" about the user and the world around the user, which it learns from conversation. It’s able to remember things, change its probability ratings for any one thing on its knowledge graph based on future conversations, and return more relevant results each time."
+	"VIQ is learning across whole dialogues. What the system's trying to do is to get a reward from the user. The system's reward is to satisfy the user's need. It might take a long conversation before the user gets what they want, but as long as the system ends up with a positive reward for that interaction, it propagates the reward back amongst everything it's done over the dialogue."
+	"If the user asks for a pizza and VIQ doesn't know what it is, but then eventually though conversation gets to the fact it's food at an Italian restaurant, VIQ gets a positive reward because it knows the user is obviously happy with this. It then reviews all the decisions it took and reinforces its belief state based on those decisions."
+	"We call this reinforcement learning, and it does this every conversation. If I wasn't happy at the end of the dialogue, it would review what it did and think, ‘Well, I did some bad things there,’ and it'll do things to adjust things and next time it'll try something different. That's what I mean when I say there are no rules. It really is this completely data-driven system."
+	"Through this process, the users themselves are labeling the data via their feedback to VIQ. While at first this is slower than the rules-based and labeling methods of Siri and Google Now, over time VIQ learns more, more accurately, increasing its knowledge and belief state, enabling it to answer far more while also putting a user’s queries into historical and personal context—something that Siri with its flowcharts could never dream of."
+
+  Google Assistant
+	http://techcrunch.com/2016/05/18/google-unveils-google-assistant-a-big-upgrade-to-google-now/
 
   Google Now
 	http://time.com/google-now/
@@ -91,26 +122,8 @@
 	http://thenextweb.com/facebook/2015/08/30/heres-what-its-like-to-use-facebooks-virtual-assistant-m/
 	http://techcrunch.com/2015/09/07/facebooks-messenger-and-the-challenge-to-googles-search-dominance/
 
-  ViV
-	http://wired.com/2014/08/viv/
-	"Whereas Siri can only perform tasks that Apple engineers explicitly implement, this new program, they say, will be able to teach itself, giving it almost limitless capabilities. In time, they assert, their creation will be able to use your personal preferences and a near-infinite web of connections to answer almost any query and perform almost any function."
-
   MindMeld
 	http://prnewswire.com/news-releases/mindmeld-unveils-new-platform-to-enable-every-enterprise-to-build-their-own-star-trek-like-voice-assistant-300191005.html
-
-  VocalIQ
-	Blaise Thomson - "The Future of Human-Machine Conversation" - https://youtube.com/watch?v=XX4wlMQAK8o
-
-	Steve Young - http://www.fastcolabs.com/3027067/this-cambridge-researcher-just-embarrassed-siri
-
-	"Unlike Siri and Google Now, which work on flowchart systems, works by leveraging a small knowledge graph to begin with and then learns organically through conversation with the user about the world around it"
-	"VIQ essentially builds large classifiers that takes the words you speak and it doesn't try to do any rule-based grammatical analysis. It takes the words you speak, but more than that, it takes all of the things it thinks you might have said—not just the most likely thing, but all of the alternatives—and uses that as a set of features to go into a classifier. The classifier is trained to essentially identify the relevant node in the knowledge graph."
-	"VIQ will know exactly what to search for based on your likes. Matter of fact, the system is so smart it doesn’t need your implicit confirmation that you like a certain type of food. Simply saying "Give me directions to" or "Book a table at" the pizza place tells VIQ you’re happy with the decision and it then adds a probability rating onto similar restaurants and types of food that make future conversations and suggestions more accurate."
-	"In other words, VIQ operates virtually how a child does: At first it knows nothing, then it begins building a "belief state" about the user and the world around the user, which it learns from conversation. It’s able to remember things, change its probability ratings for any one thing on its knowledge graph based on future conversations, and return more relevant results each time."
-	"VIQ is learning across whole dialogues. What the system's trying to do is to get a reward from the user. The system's reward is to satisfy the user's need. It might take a long conversation before the user gets what they want, but as long as the system ends up with a positive reward for that interaction, it propagates the reward back amongst everything it's done over the dialogue."
-	"If the user asks for a pizza and VIQ doesn't know what it is, but then eventually though conversation gets to the fact it's food at an Italian restaurant, VIQ gets a positive reward because it knows the user is obviously happy with this. It then reviews all the decisions it took and reinforces its belief state based on those decisions."
-	"We call this reinforcement learning, and it does this every conversation. If I wasn't happy at the end of the dialogue, it would review what it did and think, ‘Well, I did some bad things there,’ and it'll do things to adjust things and next time it'll try something different. That's what I mean when I say there are no rules. It really is this completely data-driven system."
-	"Through this process, the users themselves are labeling the data via their feedback to VIQ. While at first this is slower than the rules-based and labeling methods of Siri and Google Now, over time VIQ learns more, more accurately, increasing its knowledge and belief state, enabling it to answer far more while also putting a user’s queries into historical and personal context—something that Siri with its flowcharts could never dream of."
 
   Hound
 	https://youtube.com/watch?v=M1ONXea0mXg
@@ -124,8 +137,6 @@
   Sirius
 	http://sirius.clarity-lab.org
 	https://github.com/jhauswald/sirius
-
-  Digital Genius, Kasisto, Howdy
 
 
   https://producthunt.com/@chrismessina/collections/convcomm
@@ -145,9 +156,13 @@
 		https://youtube.com/watch?v=jWeLajon9M8
 		https://youtube.com/watch?v=39L0Gv2EcSk
 
-  Maluuba
-	http://m.marketwired.com/press-release/maluuba-opens-deep-learning-r-d-research-lab-2109811.htm
-	"Maluuba is an early leader in using deep reinforcement learning to solve language-understanding problems and in training machines to model decision-making capabilities of the human brain."
+		uses http://arxiv.org/abs/1409.4814 for interactive learning according to http://arxiv.org/abs/1606.03966
+
+	Conditional Action Programmer
+		https://conditionalactionprogrammer.com
+
+  Google Cloud Natural Language
+	https://cloud.google.com/natural-language/
 
   Amazon Alexa Voice Service
 
@@ -162,6 +177,9 @@
 
   Yahoo SkyPhrase SDK
 	https://developer.yahoo.com/skyphrase-sdk/
+
+  https://medium.com/@Conversate/natural-language-apis-for-bots-e791f090e32f
+  https://stanfy.com/blog/advanced-natural-language-processing-tools-for-bot-makers/
 
 
 
@@ -250,6 +268,21 @@ Dodge, Gane, Zhang, Bordes, Chopra, Miller, Szlam, Weston - "Evaluating Prerequi
 	"We showed that some end-to-end neural networks models can perform reasonably across all tasks compared to standard per-task baselines. Specifically, Memory Networks that incorporate short and long term memory can utilize local context and knowledge bases of facts to boost performance. We believe this is promising because these same architectures also perform well on the synthetic but challenging bAbI tasks of Weston et al. (2015a), and have no special engineering for the tasks or domain. However, some limitations remain, in particular they do not perform as well as stand-alone QA systems for QA, and performance is also degraded rather than improved when training on all four tasks at once. Future work should try to overcome these problems. While our dataset focused on movies, there is nothing specific to the task design which could not be transferred immediately to other domains, for example sports, music, restaurants, and so on. Future work should create new tasks in this and other domains to ensure that models are firstly not overtuned for these goals, and secondly to test further skills – and to motivate the development of algorithms to be skillful at them."
 	-- http://youtube.com/watch?v=jRkm6PXRVF8 (Weston)
 
+Weston - "Dialog-based Language Learning" [https://arxiv.org/abs/1604.06045]
+	"A long-term goal of machine learning research is to build an intelligent dialog agent. Most research in natural language understanding has focused on learning from fixed training sets of labeled data, with supervision either at the word level (tagging, parsing tasks) or sentence level (question answering, machine translation). This kind of supervision is not realistic of how humans learn, where language is both learned by, and used for, communication. In this work, we study dialog-based language learning, where supervision is given naturally and implicitly in the response of the dialog partner during the conversation. We study this setup in two domains: the bAbI dataset and large-scale question answering. We evaluate a set of baseline learning strategies on these tasks, and show that a novel model incorporating predictive lookahead is a promising approach for learning from a teacher’s response. In particular, a surprising result is that it can learn to answer questions correctly without any reward-based supervision at all."
+	"We have presented a set of evaluation datasets and models for dialog-based language learning. The ultimate goal of this line of research is to move towards a learner capable of talking to humans, such that humans are able to effectively teach it during dialog. We believe the dialog-based language learning approach we described is a small step towards that goal. This paper only studies some restricted types of feedback, namely positive feedback and corrections of various types. However, potentially any reply in a dialog can be seen as feedback, and should be useful for learning. It should be studied if forward prediction, and the other approaches we tried, work there too. Future work should also develop further evaluation methodologies to test how the models we presented here, and new ones, work in those settings, e.g. in more complex settings where actions that are made lead to long-term changes in the environment and delayed rewards, i.e. extending to the reinforcement learning setting. Finally, dialog-based feedback could also be used as a medium to learn non-dialog based skills, e.g. natural language dialog for completing visual or physical tasks."
+	"task 1: imitating an expert student
+	task 2: positive and negatve feedback
+	task 3: answers supplied by teacher
+	task 4: hints supplied by teacher
+	task 5: supporting facts supplied by teacher
+	task 6: missing feedback
+	task 7: no feedback
+	task 8: imitation and feedback mixture
+	task 9: asking for corrections
+	task 10: asking for supporting facts"
+	-- http://shortscience.org/paper?bibtexKey=journals/corr/Weston16 (Larochelle)
+
 Henderson, Thomson, Young - "Word-Based Dialog State Tracking with Recurrent Neural Networks" [http://mi.eng.cam.ac.uk/~mh521/papers/Word_based_Dialog_State_Tracking_with_Recurrent_Neural_Networks.pdf]
 	"Recently discriminative methods for tracking the state of a spoken dialog have been shown to outperform traditional generative models. This paper presents a new word-based tracking method which maps directly from the speech recognition results to the dialog state without using an explicit semantic decoder. The method is based on a recurrent neural network structure which is capable of generalising to unseen dialog state hypotheses, and which requires very little feature engineering. The method is evaluated on the second Dialog State Tracking Challenge (DSTC2) corpus and the results demonstrate consistently high performance across all of the metrics."
 	-- http://superlectures.com/sigdial2014/word-based-dialog-state-tracking-with-recurrent-neural-networks
@@ -268,6 +301,9 @@ Vinyals, Le - "A Neural Conversational Model" [http://arxiv.org/abs/1506.05869]
 	"Unlike easier tasks like translation, however, a model like sequence to sequence will not be able to successfully “solve” the problem of modeling dialogue due to several obvious simplifications: the objective function being optimized does not capture the actual objective achieved through human communication, which is typically longer term and based on exchange of information rather than next step prediction. The lack of a model to ensure consistency and general world knowledge is another obvious limitation of a purely unsupervised model."
 	-- https://github.com/macournoyer/neuralconvo
 	-- https://github.com/deepcoord/seq2seq
+	-- https://github.com/farizrahman4u/seq2seq
+	-- https://github.com/nicolas-ivanov/lasagne_seq2seq
+	-- https://github.com/pbhatia243/Neural_Conversation_Models
 
 Sordoni, Galley, Auli, Brockett, Ji, Mitchell, Gao, Dolan, Nie - "A Neural Network Approach to Context-Sensitive Generation of Conversational Responses" [http://arxiv.org/abs/1506.06714]
 	"We present a novel response generation system that can be trained end to end on large quantities of unstructured Twitter conversations. A neural network architecture is used to address sparsity issues that arise when integrating contextual information into classic statistical models, allowing the system to take into account previous dialog utterances. Our dynamic-context generative models show consistent gains over both context-sensitive and non-context-sensitive Machine Translation and Information Retrieval baselines."
@@ -277,6 +313,12 @@ Serban, Sordoni, Bengio, Courville, Pineau - "Hierarchical Neural Network Genera
 	"The main contributions of this paper are the following. We have demonstrated that a hierarchical recurrent network generative model can outperform both n-gram based models and baseline neural network models on the task of predicting the next utterance and dialogue acts in a dialogue. To this end, we introduced a novel dataset called MovieTriples based on movie scripts, which is suitable for modeling long, open domain dialogues close to human spoken language. In addition to the recurrent hierarchical architecture, we found two crucial ingredients: the use of a large external monologue corpus to initialize the word embeddings, and the use of a large related, but non-dialogue, corpus in order to pretrain the recurrent net. This points to the need for larger dialogue datasets. Future work should study full length dialogues, as opposed to triples, and model other dialogue acts, such as interlocutors entering or leaving the dialogue and executing actions. It should focus on bootstrapping from other, large non-dialogue corpora, as well as expand MovieTriples to include other movie script corpora. Finally, our analysis of the model MAP outputs suggest that it would be beneficial to include longer and additional context, including other modalities such as video, and that MAP based evaluation metrics are inappropriate when the outputs are generic in nature."
 	-- https://github.com/sordonia/hed-dlg
 	-- https://github.com/julianser/hed-dlg-truncated
+
+Al-Rfou, Pickett, Snaider, Sung, Strope, Kurzweil - "Conversational Contextual Cues: The Case of Personalization and History for Response Ranking" [http://arxiv.org/abs/1606.00372]
+	"We investigate the task of modeling open-domain, multi-turn, unstructured, multi-participant, conversational dialogue. We specifically study the effect of incorporating different elements of the conversation. Unlike previous efforts, which focused on modeling messages and responses, we extend the modeling to long context and participant’s history. Our system does not rely on hand-written rules or engineered features; instead, we train deep neural networks on a large conversational dataset. In particular, we exploit the structure of Reddit comments and posts to extract 2.1 billion messages and 133 million conversations. We evaluate our models on the task of predicting the next response in a conversation, and we find that modeling both context and participants improves prediction accuracy."
+	"First, we model the history of what has been said before the last message, termed context. This allows the model to include medium-term signals, presumably references and entities, which disambiguate the most recent information. As the conversation continues and the context grows, we expect our model to make better predictions of the next message. Second, to capture longer-term contextual signals, we model each user’s personal history across all the conversations in which he or she participated in. We refer to this information as personal history. The model can personalize its predictions depending on specific users’ opinions, interests, experiences, and styles of writing or speaking. Both of these contextual signals give us the ability to make better predictions regarding future responses."
+	"Characterizing users, language, discourse coherence, and response diversity requires huge datasets and large models. To gather conversations at scale, we turn to web forums as a source of data. Specifically, we extract conversations from Reddit, a popular social news networking website. The website is divided into sub-forums (subreddits), each of which has its own theme of topics and interests. Registered users can submit URLs or questions, comment on a topic or on other users’ comments, and vote on submissions or comments. Unlike previous efforts that used Twitter as a source of conversations, Reddit does not have length constraints, allowing more natural text. We extracted 133 million posts from 326K different subforums, consisting of 2.1 billion comments. This dataset is several orders of magnitude larger than existing datasets."
+	"Instead of modeling message generation directly, the current work focuses on the ranking task of “response selection.” At each point in the conversation, the task is to pick the correct next message from a pool of random candidates. Picking the correct next message is likely to be correlated with implicit understanding of the conversation. We use Precision@kto characterize the accuracy of the system. We train a deep neural network as a binary classifier to learn the difference between positive, real examples of input / response pairs, and negative, random examples of input / response pairs. The classifier’s probabilities are used as scores to rank the candidates."
 
 Eshghi, Howes, Gregoromichelaki, Hough, Purver - "Feedback in Conversation as Incremental Semantic Update" [http://www.eecs.qmul.ac.uk/~mpurver/papers/eshghi-et-al15iwcs.pdf]
 	"In conversation, interlocutors routinely indicate whether something said or done has been processed and integrated. Such feedback includes backchannels such as ‘okay’ or ‘mhm’, the production of a next relevant turn, and repair initiation via clarification requests. Importantly, such feedback can be produced not only at sentence/turn boundaries, but also sub-sententially. In this paper, we extend an existing model of incremental semantic processing in dialogue, based around the Dynamic Syntax grammar framework, to provide a low-level, integrated account of backchannels, clarification requests and their responses; demonstrating that they can be accounted for as part of the core semantic structure-building mechanisms of the grammar, rather than via higher level pragmatic phenomena such as intention recognition, or treatment as an “unofficial” part of the conversation. The end result is an incremental model in which words, not turns, are seen as procedures for contextual update and backchannels serve to align participant semantic processing contexts and thus ease the production and interpretation of subsequent conversational actions. We also show how clarification requests and their following responses and repair can be modelled within the same DS framework, wherein the divergence and re-alignment effort in participants’ semantic processing drives conversations forward."
@@ -298,6 +340,15 @@ Cuayahuitl, Keizer, Lemon - "Strategic Dialogue Management via Deep Reinforcemen
 	"Artificially intelligent agents equipped with strategic skills that can negotiate during their interactions with other natural or artificial agents are still underdeveloped. This paper describes a successful application of Deep Reinforcement Learning for training intelligent agents with strategic conversational skills, in a situated dialogue setting. Previous studies have modelled the behaviour of strategic agents using supervised learning and traditional reinforcement learning techniques, the latter using tabular representations or learning with linear function approximation. In this study, we apply DRL with a high-dimensional state space to the strategic board game of Settlers of Catan - where players can offer resources in exchange for others and they can also reply to offers made by other players. Our experimental results report that the DRL-based learnt policies significantly outperformed several baselines including random, rule-based, and supervised-based behaviours. The DRL-based policy has a 53% win rate versus 3 automated players (‘bots’), whereas a supervised player trained on a dialogue corpus in this setting achieved only 27%, versus the same 3 bots. This result supports the claim that DRL is a promising framework for training dialogue systems, and strategic agents with negotiation abilities."
 	"The contribution of this paper is the first application of Deep Reinforcement Learning to optimising the behaviour of strategic conversational agents. Our learning agents are able to: (i) discover what trading negotiations to offer, (ii) discover when to accept, reject, or counteroffer; (iii) discover strategic behaviours based on constrained action sets - i.e. action selection from legal actions rather than from all of them; and (iv) learn highly competitive behaviour against different types of opponents. All of this is supported by a comprehensive evaluation of three DRL agents trained against three baselines (random, heuristic and supervised), which are analysed from a crossevaluation perspective. Our experimental results report that all DRL agents substantially outperform all the baseline agents. Our results are evidence to argue that DRL is a promising framework for training the behaviour of complex strategic interactive agents. Future work can for example carry out similar evaluations as above in other strategic environments, and can also extend the abilities of the agents with other strategic features and forms of learning. In addition, a comparison of different model architectures, training parameters and reward functions can be explored in future work. Last but not least, given that our learning agents trade at the semantic level, they can be extended with language understanding/generation abilities to communicate verbally."
 	-- http://blog.acolyer.org/2016/03/11/strategic-dialogue-management-via-deep-reinforcement-learning/
+
+Zhao, Eskenazi - "Towards End-to-End Learning for Dialog State Tracking and Management using Deep Reinforcement Learning" [http://arxiv.org/abs/1606.02560]
+	"This paper presents an end-to-end framework for task-oriented dialog systems using a variant of Deep Recurrent QNetworks. The model is able to interface with a relational database and jointly learn policies for both language understanding and dialog strategy. Moreover, we propose a hybrid algorithm that combines the strength of reinforcement learning and supervised learning to achieve faster learning speed. We evaluated the proposed model on a 20 Question Game conversational game simulator. Results show that the proposed method outperforms the modular-based baseline and learns a distributed representation of the latent dialog state."
+	"This paper identifies the limitations of the conventional SDS pipeline and describes a novel end-to-end framework for a task-oriented dialog system using deep reinforcement learning. We have assessed the model on the 20Q game. The proposed models show superior performance for both natural language understanding and dialog strategy. Furthermore, our analysis confirms our hypotheses that the proposed models implicitly capture essential information in the latent dialog states. Future studies will include developing full-fledged task-orientated dialog systems using the proposed approach and exploring methods that allow easy integration of domain knowledge so that the system can be more easily debugged and corrected."
+
+Williams, Zweig - "End-to-end LSTM-based Dialog Control Optimized with Supervised and Reinforcement Learning" [https://arxiv.org/abs/1606.01269]
+	"This paper presents a model for end-to-end learning of task-oriented dialog systems. The main component of the model is a recurrent neural network (an LSTM), which maps from raw dialog history directly to a distribution over system actions. The LSTM automatically infers a representation of dialog history, which relieves the system developer of much of the manual feature engineering of dialog state. In addition, the developer can provide software that expresses business rules and provides access to programmatic APIs, enabling the LSTM to take actions in the real world on behalf of the user. The LSTM can be optimized using supervised learning (SL), where a domain expert provides example dialogs which the LSTM should imitate; or using reinforcement learning (RL), where the system improves by interacting directly with end users. Experiments show that SL and RL are complementary: SL alone can derive a reasonable initial policy from a small number of training dialogs; and starting RL optimization with a policy trained with SL substantially accelerates the learning rate of RL."
+	"This paper has taken a first step toward end-to-end learning of task-oriented dialog systems. Our approach is based on a recurrent neural network which maps from raw dialog history to distributions over actions. The LSTM automatically infers a representation of dialog state, alleviating much of the work of hand-crafting a representation of dialog state. Code provided by the developer tracks entities, wraps API calls to external actuators, and can enforce business rules on the policy. Experimental results have shown that training with supervised learning yields a reasonable policy from a small number of training dialogs, and that this initial policy accelerates optimization with reinforcement learning substantially. To our knowledge, this is the first demonstration of end-to-end learning of dialog control for task-oriented domains."
+	"To our knowledge, this is the first end-to-end method for dialog control which can be trained with both supervised learning and reinforcement learning, and which automatically infers a representation of dialog history while also explicitly tracking entities."
 
 
 
@@ -325,7 +376,8 @@ Li, Galley, Brockett, Gao, Dolan - "A Persona-Based Neural Conversation Model" [
 Mesnil, Dauphin, Yao, Bengio, Deng, Hakkani-Tur, He, Heck, Tur, Yu, Zweig - "Using Recurrent Neural Networks for Slot Filling in Spoken Language Understanding" [http://www.iro.umontreal.ca/~lisa/pointeurs/taslp_RNNSLU.R1.pdf]
 	"Semantic slot filling is one of the most challenging problems in spoken language understanding. In this study, we propose to use recurrent neural networks for this task, and present several novel architectures designed to efficiently model past and future temporal dependencies. Specifically, we implemented and compared several important RNN architectures, including Elman, Jordan and hybrid variants. To facilitate reproducibility, we implemented these networks with the publicly available Theano neural network toolkit and completed experiments on the well-known airline travel information system benchmark. In addition, we compared the approaches on two custom SLU data sets from the entertainment and movies domains. Our results show that the RNN-based models outperform the conditional random field baseline by 2% in absolute error reduction on the ATIS benchmark. We improve the state-of-the-art by 0.5% in the Entertainment domain, and 6.7% for the movies domain."
 	"We carried out comprehensive investigations of RNNs for the task of slot filling in SLU. We implemented and compared several RNN architectures, including the Elman-type and Jordan-type networks with their variants. We also studied the effectiveness of word embeddings for slot filling. To make the results easy to reproduce and to compare, we implemented all networks on the common Theano neural network toolkit, and evaluated them on the ATIS benchmark. Our results show that both Elman and Jordan-type networks outperform the CRF baseline substantially, both giving similar performance. A bidirectional version of the Jordan-RNN gave the best performance, outperforming the CRF-based baseline by 14% in relative error reduction. Future work will explore more efficient training of RNNs and the choice of more comprehensive features [28] and using a different RNN training toolkit [14] incorporating more advanced features."
-	-- http://deeplearning.net/tutorial/rnnslu.html + https://github.com/mesnilgr/is13
+	-- http://deeplearning.net/tutorial/rnnslu.html
+	-- https://github.com/mesnilgr/is13
 
 Yao, Peng, Zweig, Yu, Li, Gao - "Recurrent Conditional Random Field for Language Understanding" [http://research.microsoft.com/apps/pubs/default.aspx?id=210167]
 	"Recurrent neural networks have recently produced record setting performance in language modeling and word-labeling tasks. In the word-labeling task, the RNN is used analogously to the more traditional conditional random field to assign a label to each word in an input sequence, and has been shown to significantly outperform CRFs. In contrast to CRFs, RNNs operate in an online fashion to assign labels as soon as a word is seen, rather than after seeing the whole word sequence. In this paper, we show that the performance of an RNN tagger can be significantly improved by incorporating elements of the CRF model; specifically, the explicit modeling of output-label dependencies with transition features, its global sequence-level objective function, and offline decoding. We term the resulting model a “recurrent conditional random field” and demonstrate its effectiveness on the ATIS travel domain dataset and a variety of web-search language understanding datasets."
@@ -382,4 +434,4 @@ ViV - "Dynamically Evolving Cognitive Architecture System Based on Third-Party D
 
 
 
-<brylevkirill@gmail.com>
+<brylevkirill (at) gmail.com>
