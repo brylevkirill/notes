@@ -25,11 +25,8 @@
   - perception (e.g. emotion recognition)
   - agent abilities (e.g. ability to draft emails, carry out complex tasks)
 
-  http://wildml.com/2016/04/deep-learning-for-chatbots-part-1-introduction/
-
-  http://languagengine.co/blog/the-conversational-ai-problem-landscape/
-
-  https://medium.com/@honnibal/a-natural-language-user-interface-is-just-a-user-interface-4a6d898e9721
+  use cases:
+  - http://www.semanticmachines.com/case
 
 
 
@@ -37,7 +34,6 @@
 [overview]
 
   https://linkedin.com/pulse/what-would-alexa-do-tim-o-reilly
-
   https://medium.com/chris-messina/2016-will-be-the-year-of-conversational-commerce-1586e85e3991
   http://searchengineland.com/how-google-now-siri-cortana-predict-what-you-want-229799
   http://theverge.com/2016/1/6/10718282/internet-bots-messaging-slack-facebook-m
@@ -45,19 +41,45 @@
   http://the-vital-edge.com/virtual-personal-assistant/
   http://techcrunch.com/2015/09/07/facebooks-messenger-and-the-challenge-to-googles-search-dominance/
 
+  https://medium.com/@tedlivingston/the-future-of-chat-isn-t-ai-b07f65bc252
+  https://chatbotsmagazine.com/a-rant-about-chatbots-from-annoyed-millennials-cfdac2dd672f
   http://dangrover.com/blog/2016/04/20/bots-wont-replace-apps.html
-  http://www.bloomberg.com/news/articles/2016-04-18/the-humans-hiding-behind-the-chatbots
+  http://bloomberg.com/news/articles/2016-04-18/the-humans-hiding-behind-the-chatbots
   https://medium.com/chat-bots/bots-hype-or-glory-656f4d614efb
+  https://medium.com/talla-inc/the-real-future-isnt-bots-its-distributed-apps-f34476bc6b86
+  http://fastml.com/on-chatbots/
 
-  David Yann - http://rbc.ru/opinions/technology_and_media/01/03/2016/56d54a339a7947800b4c67cc (in russian)
   Ilya Gelfenbeyn - https://medium.com/@IlyaG/4-reasons-why-developers-should-adopt-voice-enabled-tech-now-15dd08a78f08
+
   Svetlana Grigoryeva - "Search as a Dialog" - http://youtube.com/watch?v=wvSPInn-6V0 (in russian)
+  Boris Yangel - https://youtube.com/watch?v=lAFuBy-1khc (in russian)
   Igor Ashmanov - http://youtube.com/watch?v=Eatmixt9rek (in russian)
+
+  https://producthunt.com/@chrismessina/collections/convcomm
+  https://www.oreilly.com/ideas/infographic-the-bot-platform-ecosystem
 
 
 
 
 [personal assistants]
+
+  Google Assistant
+	https://backchannel.com/google-our-assistant-will-trigger-the-next-era-of-ai-3c72a4d7bc75
+	http://techcrunch.com/2016/05/18/google-unveils-google-assistant-a-big-upgrade-to-google-now/
+	http://nytimes.com/2016/09/29/technology/google-assistant.html
+
+  Google Now
+	http://time.com/google-now/
+	http://forwardthinking.pcmag.com/none/335221-apple-google-and-the-road-to-the-know-it-all-assistant
+	http://thenextweb.com/google/2015/03/14/a-google-now-open-api-is-in-the-works-and-support-for-theme-park-ride-queue-times/
+
+  Google Messenger
+	http://forbes.com/sites/theopriestley/2015/12/23/google-to-launch-an-artificial-intelligence-messenger-service-to-rival-facebook-m/
+	http://businessinsider.com/report-google-is-working-on-a-new-smart-messaging-app-2015-12
+	http://wired.co.uk/news/archive/2015-12/29/2016-predictions-technology-trends
+
+  Google Search
+	http://thesempost.com/google-working-on-conversational-shopping-in-search/
 
   ViV
 	http://youtube.com/watch?v=Rblb3sptgpQ
@@ -86,22 +108,6 @@
 	"We call this reinforcement learning, and it does this every conversation. If I wasn't happy at the end of the dialogue, it would review what it did and think, ‘Well, I did some bad things there,’ and it'll do things to adjust things and next time it'll try something different. That's what I mean when I say there are no rules. It really is this completely data-driven system."
 	"Through this process, the users themselves are labeling the data via their feedback to VIQ. While at first this is slower than the rules-based and labeling methods of Siri and Google Now, over time VIQ learns more, more accurately, increasing its knowledge and belief state, enabling it to answer far more while also putting a user’s queries into historical and personal context—something that Siri with its flowcharts could never dream of."
 
-  Google Assistant
-	http://techcrunch.com/2016/05/18/google-unveils-google-assistant-a-big-upgrade-to-google-now/
-
-  Google Now
-	http://time.com/google-now/
-	http://forwardthinking.pcmag.com/none/335221-apple-google-and-the-road-to-the-know-it-all-assistant
-	http://thenextweb.com/google/2015/03/14/a-google-now-open-api-is-in-the-works-and-support-for-theme-park-ride-queue-times/
-
-  Google Messenger
-	http://forbes.com/sites/theopriestley/2015/12/23/google-to-launch-an-artificial-intelligence-messenger-service-to-rival-facebook-m/
-	http://businessinsider.com/report-google-is-working-on-a-new-smart-messaging-app-2015-12
-	http://wired.co.uk/news/archive/2015-12/29/2016-predictions-technology-trends
-
-  Google Search
-	http://thesempost.com/google-working-on-conversational-shopping-in-search/
-
   Microsoft Cortana
 	http://blogs.wsj.com/digits/2015/11/13/microsofts-satya-nadella-for-one-welcomes-our-new-ai-overlords/
 	http://businessinsider.com/microsoft-ceo-satya-nadella-the-agent-is-the-new-app-model-2015-11
@@ -122,24 +128,31 @@
 	http://thenextweb.com/facebook/2015/08/30/heres-what-its-like-to-use-facebooks-virtual-assistant-m/
 	http://techcrunch.com/2015/09/07/facebooks-messenger-and-the-challenge-to-googles-search-dominance/
 
+  Maluuba
+	https://techcrunch.com/2016/09/23/maluuba-wants-to-make-chatbots-smarter-by-teaching-them-how-to-read/
+
+	"We realized two things: first, the current experience with personal assistants is fundamentally broken. You can’t inject external knowledge. Second: the conversations you have are very limited. We wanted to have a more conversational experience — and a more powerful experience."
+	"The problem is that when you ask a service like Siri or the Google Assistant any question outside of its domain, it simply passes you off to the web to do a search there. If these assistants could actually understand these unstructured documents better, then they could actually answer more questions. If it could do this in real time, even better. Maluuba’s technology can now do this and that’s a pretty big step forward, especially because the system doesn’t rely on external information when it analyzes a text to answer your questions."
+
+  Semantic Machines
+
   MindMeld
 	http://prnewswire.com/news-releases/mindmeld-unveils-new-platform-to-enable-every-enterprise-to-build-their-own-star-trek-like-voice-assistant-300191005.html
+
+	https://youtube.com/watch?v=Y91A0vBt6hg
+	https://youtube.com/watch?v=do_iwSusH3E 
+	http://technologyreview.com/summit/14/digital/video/watch/next-generation-computing-tuttle/
+
+	"Understanding the MindMeld API" - https://youtube.com/playlist?list=PLl94egYYc-K9ySe8eRfJWv_6naxmqN8n4
+	"Getting Started with the MindMeld API" - https://youtube.com/playlist?list=PLl94egYYc-K-grbk1RtadiAS1BI4YTLyQ
+	"MindMeld API Help Videos" - https://youtube.com/playlist?list=PLl94egYYc-K_Rcc34A1DQqmY7kwSkh8GE
 
   Hound
 	https://youtube.com/watch?v=M1ONXea0mXg
 
-  PARLANCE
-	"Current search engines work well only if the user has a single search goal and does not have multiple trade-offs to explore. For example, standard search works well if you want to know the phone number of a specific business but poorly if you are looking for a house with several different search criteria of varying importance, e.g. number of bedrooms versus bathrooms versus price etc. The latter requires the user to collaborate conversationally over several turns. To approach human performance requires interactional skills, which include recognising and generating conversational speech incrementally in real-time, adapting to new concepts without manual intervention, and personalising interaction. All of these skills will be learned or adapted using real data, and will be used to build systems for interactive hyper-local search in a number of languages."
-
-  x.ai
-	 https://medium.com/art-marketing/a-conversation-between-two-ais-c929d4f5f1d0
-
   Sirius
 	http://sirius.clarity-lab.org
 	https://github.com/jhauswald/sirius
-
-
-  https://producthunt.com/@chrismessina/collections/convcomm
 
 
 
@@ -161,32 +174,26 @@
 	Conditional Action Programmer
 		https://conditionalactionprogrammer.com
 
-  Google Cloud Natural Language
+  Google Cloud Platform Natural Language
 	https://cloud.google.com/natural-language/
 
   Amazon Alexa Voice Service
 
-  MindMeld API
-	https://youtube.com/watch?v=Y91A0vBt6hg
-	https://youtube.com/watch?v=do_iwSusH3E 
-	http://technologyreview.com/summit/14/digital/video/watch/next-generation-computing-tuttle/
-
-	"Understanding the MindMeld API" - https://youtube.com/playlist?list=PLl94egYYc-K9ySe8eRfJWv_6naxmqN8n4
-	"Getting Started with the MindMeld API" - https://youtube.com/playlist?list=PLl94egYYc-K-grbk1RtadiAS1BI4YTLyQ
-	"MindMeld API Help Videos" - https://youtube.com/playlist?list=PLl94egYYc-K_Rcc34A1DQqmY7kwSkh8GE
-
-  Yahoo SkyPhrase SDK
-	https://developer.yahoo.com/skyphrase-sdk/
-
   https://medium.com/@Conversate/natural-language-apis-for-bots-e791f090e32f
   https://stanfy.com/blog/advanced-natural-language-processing-tools-for-bot-makers/
+
+
+  http://wildml.com/2016/04/deep-learning-for-chatbots-part-1-introduction/
+
+  https://medium.com/@honnibal/a-natural-language-user-interface-is-just-a-user-interface-4a6d898e9721
+
+  http://languagengine.co/blog/the-conversational-ai-problem-landscape/
 
 
 
 
 [messaging platforms]
 
-  https://medium.com/@tedlivingston/the-future-of-chat-isn-t-ai-b07f65bc252
   https://blog.intercom.io/messaging-apps-just-getting-started/
   https://blog.intercom.io/the-end-of-apps-as-we-know-them/
   http://techcrunch.com/2015/08/11/its-operating-systems-vs-messaging-apps-in-the-battle-for-techs-next-frontier/
@@ -219,6 +226,8 @@
 
 
 [conferences]
+
+  Let's Discuss: Learning Methods For Dialogue workshop @ NIPS 2016 - http://letsdiscussnips2016.weebly.com
 
   SigDial
   ISSDS (dialog systems) - http://www.uni-ulm.de/in/iwsds2015/list-of-accepted-papers.html
@@ -260,13 +269,61 @@ interesting papers (see https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retr
 
 
 
+[latest interesting papers]
+
+http://arxiv.org/abs/1603.08023 - How NOT To Evaluate Your Dialogue System: An Empirical Study of Unsupervised Evaluation Metrics for Dialogue Response Generation + http://www.shortscience.org/paper?bibtexKey=journals/corr/LiuLSNCP16#shagunsodhani
+http://arxiv.org/abs/1508.03386 - Learning from Real Users: Rating Dialogue Success with Neural Networks for Reinforcement Learning in Spoken Dialogue Systems
+http://arxiv.org/abs/1605.07669 - On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems (Young)
+
+http://arxiv.org/abs/1611.06216 - Generative Deep Neural Networks for Dialogue: A Short Review (Pineau)
+http://arxiv.org/abs/1606.07056 - Emulating Human Conversations using Convolutional Neural Network-based IR
+http://arxiv.org/abs/1610.07149 - Two are Better than One: An Ensemble of Retrieval- and Generation-Based Dialog Systems
+
+http://arxiv.org/abs/1606.03152 - Policy Networks with Two-Stage Training for Dialogue Systems (Maluuba) + http://www.maluuba.com/blog/2016/11/23/deep-reinforcement-learning-in-dialogue-systems
+http://kdd.org/kdd2016/subtopic/view/towards-conversational-recommender-systems - Towards Conversational Recommender Systems (Hoffman)
+http://arxiv.org/abs/1608.05081 - Efficient Exploration for Dialog Policy Learning with Deep BBQ Networks & Replay Buffer Spiking (Deng)
+http://arxiv.org/abs/1606.01541 - Deep Reinforcement Learning for Dialogue Generation (Jurafsky)
+http://arxiv.org/abs/1605.07683 - Learning End-to-End Goal-Oriented Dialog (Weston)
+http://arxiv.org/abs/1606.01269 - End-to-End LSTM-based Dialog Control Optimized with Supervised and Reinforcement Learning (Zweig)
+http://arxiv.org/abs/1606.01541 - Deep Reinforcement Learning for Dialogue Generation (Jurafsky)
+http://arxiv.org/abs/1606.03777 - Neural Belief Tracker: Data-Driven Dialogue State Tracking (Young)
+http://arxiv.org/abs/1609.00777 - End-to-End Reinforcement Learning of Dialogue Agents for Information Access
+http://arxiv.org/abs/1606.00776 - Multiresolution Recurrent Neural Networks: An Application to Dialogue Response Generation (Bengio)
+http://arxiv.org/abs/1605.06069 - A Hierarchical Latent Variable Encoder-Decoder Model for Generating Dialogues (Bengio)
+http://arxiv.org/abs/1604.04562 - A Network-based End-to-End Trainable Task-oriented Dialogue System (Young) + http://videolectures.net/deeplearning2016_wen_network_based/
+http://arxiv.org/abs/1606.01292 - An Attentional Neural Conversation Model with Improved Specificity
+http://arxiv.org/abs/1511.04636 - Deep Reinforcement Learning with an Action Space Defined by Natural Language
+
+http://arxiv.org/abs/1606.02960 - Sequence-to-Sequence Learning as Beam-Search Optimization + http://shortscience.org/paper?bibtexKey=journals/corr/1606.02960
+http://arxiv.org/pdf/1606.03402 - Length Bias in Encoder Decoder Models and a Case for Global Conditioning (Google)
+
+http://arxiv.org/abs/1605.01652 - LSTM-based Mixture-of-Experts for Knowledge-Aware Dialogues
+http://arxiv.org/abs/1603.01232 - Multi-domain Neural Network Language Generation for Spoken Dialogue Systems
+http://arxiv.org/abs/1604.02038 - Sentence Level Recurrent Topic Model: Letting Topics Speak for Themselves
+
+http://arxiv.org/abs/1511.06349 - Generating Sentences from a Continuous Space
+http://arxiv.org/abs/1603.06155 - A Persona-Based Neural Conversation Model
+http://arxiv.org/abs/1606.00372 - Conversational Contextual Cues: The Case of Personalization and History for Response Ranking (Kurzweil)
+http://arxiv.org/abs/1607.00070 - A Sequence-to-Sequence Model for User Simulation in Spoken Dialogue Systems (Maluuba)
+
+http://research.microsoft.com/apps/pubs/default.aspx?id=256085 - Deep Contextual Language Understanding in Spoken Dialogue Systems
+http://arxiv.org/abs/1603.07954 - Improving Information Extraction by Acquiring External Evidence with Reinforcement Learning (Barzilay)
+
+
+
+
 [interesting papers - dialog state management]
+
+Gauthier, Mordatch -"A Paradigm for Situated and Goal-Driven Language Learning" [https://arxiv.org/abs/1610.03585]
+	"A distinguishing property of human intelligence is the ability to flexibly use language in order to communicate complex ideas with other humans in a variety of contexts. Research in natural language dialogue should focus on designing communicative agents which can integrate themselves into these contexts and productively collaborate with humans. In this abstract, we propose a general situated language learning paradigm which is designed to bring about robust language agents able to cooperate productively with humans. This dialogue paradigm is built on a utilitarian definition of language understanding. Language is one of multiple tools which an agent may use to accomplish goals in its environment. We say an agent “understands” language only when it is able to use language productively to accomplish these goals. Under this definition, an agent’s communication success reduces to its success on tasks within its environment. This setup contrasts with many conventional natural language tasks, which maximize linguistic objectives derived from static datasets. Such applications often make the mistake of reifying language as an end in itself. The tasks prioritize an isolated measure of linguistic intelligence (often one of linguistic competence, in the sense of Chomsky), rather than measuring a model’s effectiveness in real-world scenarios. Our utilitarian definition is motivated by recent successes in reinforcement learning methods. In a reinforcement learning setting, agents maximize success metrics on real-world tasks, without requiring direct supervision of linguistic behavior."
+	"We outlined a paradigm for grounded and goal-driven language learning in artificial agents. The paradigm is centered around a utilitarian definition of language understanding, which equates language understanding with the ability to cooperate with other language users in real-world environments. This position demotes language from its position as a separate task to be solved to one of several communicative tools agents might use to accomplish their real-world goals. While this paradigm does already capture a small amount of recent work in dialogue, on the whole it has not received the focus it deserves in the research communities of natural language processing and machine learning. We hope this paper brings focus to the task of situated language learning as a way forward for research in natural language dialogue."
 
 Dodge, Gane, Zhang, Bordes, Chopra, Miller, Szlam, Weston - "Evaluating Prerequisite Qualities for Learning End-to-end Dialog Systems" [http://arxiv.org/abs/1511.06931]
 	"A long-term goal of machine learning is to build intelligent conversational agents. One recent popular approach is to train end-to-end models on a large amount of real dialog transcripts between humans (Sordoni et al., 2015; Vinyals & Le, 2015; Shang et al., 2015). However, this approach leaves many questions unanswered as an understanding of the precise successes and shortcomings of each model is hard to assess. A contrasting recent proposal are the bAbI tasks (Weston et al., 2015b) which are synthetic data that measure the ability of learning machines at various reasoning tasks over toy language. Unfortunately, those tests are very small and hence may encourage methods that do not scale. In this work, we propose a suite of new tasks of a much larger scale that attempt to bridge the gap between the two regimes. Choosing the domain of movies, we provide tasks that test the ability of models to answer factual questions (utilizing OMDB), provide personalization (utilizing MovieLens), carry short conversations about the two, and finally to perform on natural dialogs from Reddit. We provide a dataset covering ~75k movie entities and with ~3.5M training examples. We present results of various models on these tasks, and evaluate their performance."
 	"We have presented a new set of benchmark tasks designed to evaluate end-to-end dialog systems. The movie dialog dataset measures how well such models can perform at both goal driven dialog, of both objective and subjective goals thanks to evaluation metrics on question answering and recommendation tasks, and at less goal driven chit-chat. A true end-to-end model should perform well at all these tasks, being a necessary but not sufficient condition for a fully functional dialog agent."
 	"We showed that some end-to-end neural networks models can perform reasonably across all tasks compared to standard per-task baselines. Specifically, Memory Networks that incorporate short and long term memory can utilize local context and knowledge bases of facts to boost performance. We believe this is promising because these same architectures also perform well on the synthetic but challenging bAbI tasks of Weston et al. (2015a), and have no special engineering for the tasks or domain. However, some limitations remain, in particular they do not perform as well as stand-alone QA systems for QA, and performance is also degraded rather than improved when training on all four tasks at once. Future work should try to overcome these problems. While our dataset focused on movies, there is nothing specific to the task design which could not be transferred immediately to other domains, for example sports, music, restaurants, and so on. Future work should create new tasks in this and other domains to ensure that models are firstly not overtuned for these goals, and secondly to test further skills – and to motivate the development of algorithms to be skillful at them."
 	-- http://youtube.com/watch?v=jRkm6PXRVF8 (Weston)
+	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/1511.06931
 
 Weston - "Dialog-based Language Learning" [https://arxiv.org/abs/1604.06045]
 	"A long-term goal of machine learning research is to build an intelligent dialog agent. Most research in natural language understanding has focused on learning from fixed training sets of labeled data, with supervision either at the word level (tagging, parsing tasks) or sentence level (question answering, machine translation). This kind of supervision is not realistic of how humans learn, where language is both learned by, and used for, communication. In this work, we study dialog-based language learning, where supervision is given naturally and implicitly in the response of the dialog partner during the conversation. We study this setup in two domains: the bAbI dataset and large-scale question answering. We evaluate a set of baseline learning strategies on these tasks, and show that a novel model incorporating predictive lookahead is a promising approach for learning from a teacher’s response. In particular, a surprising result is that it can learn to answer questions correctly without any reward-based supervision at all."
@@ -299,6 +356,7 @@ Vinyals, Le - "A Neural Conversational Model" [http://arxiv.org/abs/1506.05869]
 	"In this paper, we show that a simple language model based on the seq2seq framework can be used to train a conversational engine. Our modest results show that it can generate simple and basic conversations, and extract knowledge from a noisy but open-domain dataset. Even though the model has obvious limitations, it is surprising to us that a purely data driven approach without any rules can produce rather proper answers to many types of questions. However, the model may require substantial modifications to be able to deliver realistic conversations. Amongst the many limitations, the lack of a coherent personality makes it difficult for our system to pass the Turing test."
 	"We find it encouraging that the model can remember facts, understand contexts, perform common sense reasoning without the complexity in traditional pipelines. What surprises us is that the model does so without any explicit knowledge representation component except for the parameters in the word vectors. Perhaps most practically significant is the fact that the model can generalize to new questions. In other words, it does not simply look up for an answer by matching the question with the existing database. In fact, most of the questions presented above, except for the first conversation, do not appear in the training set. Nonetheless, one drawback of this basic model is that it only gives simple, short, sometimes unsatisfying answers to our questions as can be seen above. Perhaps a more problematic drawback is that the model does not capture a consistent personality. Indeed, if we ask not identical but semantically similar questions, the answers can sometimes be inconsistent."
 	"Unlike easier tasks like translation, however, a model like sequence to sequence will not be able to successfully “solve” the problem of modeling dialogue due to several obvious simplifications: the objective function being optimized does not capture the actual objective achieved through human communication, which is typically longer term and based on exchange of information rather than next step prediction. The lack of a model to ensure consistency and general world knowledge is another obvious limitation of a purely unsupervised model."
+	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/VinyalsL15
 	-- https://github.com/macournoyer/neuralconvo
 	-- https://github.com/deepcoord/seq2seq
 	-- https://github.com/farizrahman4u/seq2seq
@@ -363,6 +421,9 @@ Li, Galley, Brockett, Gao, Dolan - "A Diversity-Promoting Objective Function for
 	"Sequence-to-sequence neural network models for generation of conversational responses tend to generate safe, commonplace responses (e.g., I don’t know) regardless of the input. We suggest that the traditional objective function, i.e., the likelihood of output (responses) given input (messages) is unsuited to response generation tasks. Instead we propose using Maximum Mutual Information as objective function in neural models. Experimental results demonstrate that the proposed objective function produces more diverse, interesting, and appropriate responses, yielding substantive gains in BLEU scores on two conversational datasets."
 	"Our analysis suggests that the issue is at least in part attributable to the use of the traditional objective function, namely the unidirectional likelihood of output (responses) given input (messages), widely used in Statistical Machine Translation and other machine learning models. To remedy this problem, we have proposed using Maximum Mutual Information as the objective function in neural models, in order to capture not only the dependency of responses on messages but also the inverse. To the best of our knowledge, this paper represents the first work to address the issue of output diversity in the neural generation framework. We have focused on the algorithmic dimensions of the problem. Unquestionably numerous other factors such as grounding, persona (of both user and agent), and intent also play a significant role in generating diverse, conversationally interesting outputs, but those must be left for future investigation. The implications of this work extend beyond conversational response generation, since the challenge of producing interesting outputs also arises in other neural generation tasks, including image-description generation and question answering, and potentially any task where mutual correspondences must be modeled."
 	"Neural models using MMI as objective function outperform MT in BLEU, establishing a new state-ofthe-art result on the Twitter conversational dataset. More than that, they address several limitations inherent in the MT framework. First, neural models are more flexible in leveraging contextual information such as speaker characteristics, specific topics, domain information, and scenarios that are related to the dialogue. Second, these models are more scalable. Instead of relying on a big phrase translation table to memorize individual response pairs, they encode large amounts of contextual information using a low-dimensionality vector so that semantically similar messages lead to similar responses. Finally, neural models allow end-to-end optimization of model parameters, yielding significant performance gains over earlier methods."
+
+Shao, Gouws, Britz, Goldie, Strope, Kurzweil - "Generating Long and Diverse Responses with Neural Conversation Models" []
+	"Building general-purpose conversation agents is a very challenging task, but necessary on the road toward intelligent agents that can interact with humans in natural language. Neural conversation models – purely data-driven systems trained end-to-end on dialogue corpora – have shown great promise recently, yet they often produce short and generic responses. This work presents new training and decoding methods that improve the quality, coherence, and diversity of long responses generated using sequence-to-sequence models. Our approach adds self-attention to the decoder to maintain coherence in longer responses, and we propose a practical approach, called the glimpse-model, for scaling to large datasets. We introduce a stochastic beam-search algorithm with segment-by-segment reranking which lets us inject diversity earlier in the generation process. We trained on a combined data set of over 2.3B conversation messages mined from the web. In human evaluation studies, our method produces longer responses overall, with a higher proportion rated as acceptable and excellent as length increases, compared to baseline sequence-to-sequence models with explicit length-promotion. A backoff strategy produces better responses overall, in the full spectrum of lengths."
 
 Li, Galley, Brockett, Gao, Dolan - "A Persona-Based Neural Conversation Model" [http://arxiv.org/abs/1603.06155]
 	"We present persona-based models for handling the issue of speaker consistency in neural response generation. A speaker model encodes personas in distributed embeddings that capture individual characteristics such as background information and speaking style. A dyadic speaker-addressee model captures properties of interactions between two interlocutors. Our models yield qualitative performance improvements in both perplexity and BLEU scores over baseline sequence-to-sequence models, with similar gain in speaker consistency as measured by human judges."
@@ -430,6 +491,13 @@ ViV - "Dynamically Evolving Cognitive Architecture System Based on Third-Party D
 	Third-party developers provide the system with many types of objects through a set of tools, editors, and other mechanisms. These objects include concept objects that are structural definitions representing entities in the world. These objects also include action objects, which are similar to Application Programming Interfaces (APIs) or web service interfaces that define a set of concept object input dependencies, perform some computation or transaction, and return a set of zero or more resulting concept object values. These objects also include functions, which define specific logic that implement an action object interface created by a self-interested party, and monitors, which are specific types of action objects and associated functions that allow external services to keep track of the world, looking for certain conditions. Once the conditions become true, associated action objects are injected into the system for execution.
 	These objects additionally include tasks, for which a third-party developer specifies groupings of particular inference chains of action objects that make up an action object in a hierarchical way, and data, which provides instantiations of concept objects, such as product catalogs, business listings, contact records, and so forth. The objects further include linguistic data because there are many ways to interact with the system. Third-party developers may add new vocabulary, synonyms, and linguistic structures to the system that the system maps to concept objects and action objects to support the use case where natural language input is involved. The objects additionally include dialog and dialog templates provided by third-party developers, which contains all output strings and logic the system requires to communicate ideas back to the end user, either through visual interfaces or through eyes-free interfaces, and layout templates provided by third-party developers, which describe visually how the system presents information on a variety of devices. The objects may also include delight nuggets, which are domain oriented logic that enables the system to respond to situations in a way that surprises and delights an end user, providing additional information or suggestions that please and help the end user.
 	Third-party developers provide these new concepts, actions, data, monitors, and so forth to the system, in a self-interested way, with the intent of making available certain new capabilities with which an end user may interact. As each new capability is added to the system, an end user may access the new functionality and may do more than the end user was capable of doing before. The system knows more than it is taught, meaning that if a third-party developer adds ten new capabilities, the system will, through dynamic combinations of services, be able to do far more than ten new things. Given a request from an end user, the system, in a sense, writes automatic integration code that links individual capabilities into new dynamic plans that provide value for the end user."
+
+
+
+
+[interesting quotes]
+
+"Before, we were talking about discovery of apps, discovery of bots or products. There is a deeper problem, which is, when I'm in a conversation with a new bot, if the interface for every bot is kind of the same, it's some text interface, it's unclear exactly who I'm talking to and what they know and what they don't know and what I can ask. If it has some knowledge inside the bot's memory, it's unclear what it knows and what it doesn't know. I think part of the solution here is going to be either better UX in these messenger platforms, so that you could have a more clear sense of the options and of the menus, if you are texting. Then another thing is being very clear about what the bot is good for and what it isn't."
 
 
 

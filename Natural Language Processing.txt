@@ -407,7 +407,7 @@ Some people prefer log bilinear models because they are simpler and avoid the va
 
 [implementations]
 
-state-of-the-art methods and implementations for NLP tasks - http://aclweb.org/aclwiki/index.php?title=State_of_the_art
+state-of-the-art methods - https://github.com/andrewt3000/DL4NLP/blob/master/README.md
 
 
 Stanford CoreNLP
@@ -587,6 +587,10 @@ interesting papers (see https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retr
 
 [interesting papers]
 
+Gauthier, Mordatch -"A Paradigm for Situated and Goal-Driven Language Learning" [https://arxiv.org/abs/1610.03585]
+	"A distinguishing property of human intelligence is the ability to flexibly use language in order to communicate complex ideas with other humans in a variety of contexts. Research in natural language dialogue should focus on designing communicative agents which can integrate themselves into these contexts and productively collaborate with humans. In this abstract, we propose a general situated language learning paradigm which is designed to bring about robust language agents able to cooperate productively with humans. This dialogue paradigm is built on a utilitarian definition of language understanding. Language is one of multiple tools which an agent may use to accomplish goals in its environment. We say an agent “understands” language only when it is able to use language productively to accomplish these goals. Under this definition, an agent’s communication success reduces to its success on tasks within its environment. This setup contrasts with many conventional natural language tasks, which maximize linguistic objectives derived from static datasets. Such applications often make the mistake of reifying language as an end in itself. The tasks prioritize an isolated measure of linguistic intelligence (often one of linguistic competence, in the sense of Chomsky), rather than measuring a model’s effectiveness in real-world scenarios. Our utilitarian definition is motivated by recent successes in reinforcement learning methods. In a reinforcement learning setting, agents maximize success metrics on real-world tasks, without requiring direct supervision of linguistic behavior."
+	"We outlined a paradigm for grounded and goal-driven language learning in artificial agents. The paradigm is centered around a utilitarian definition of language understanding, which equates language understanding with the ability to cooperate with other language users in real-world environments. This position demotes language from its position as a separate task to be solved to one of several communicative tools agents might use to accomplish their real-world goals. While this paradigm does already capture a small amount of recent work in dialogue, on the whole it has not received the focus it deserves in the research communities of natural language processing and machine learning. We hope this paper brings focus to the task of situated language learning as a way forward for research in natural language dialogue."
+
 Cho - "Natural Language Understanding with Distributed Representation" [http://arxiv.org/abs/1511.07916]
 	"This is a lecture note for the course DS-GA 3001 <Natural Language Understanding with Distributed Representation> at the Center for Data Science , New York University in Fall, 2015. As the name of the course suggests, this lecture note introduces readers to a neural network based approach to natural language understanding/processing. In order to make it as self-contained as possible, I spend much time on describing basics of machine learning and neural networks, only after which how they are used for natural languages is introduced. On the language front, I almost solely focus on language modelling and machine translation, two of which I personally find most fascinating and most fundamental to natural language understanding."
 
@@ -699,6 +703,7 @@ Ghosh, Vinyals, Strope, Roy, Dean, Heck - "Contextual LSTM (CLSTM) Models for La
 
 Mikolov, Chen, Corrado, Dean - "Efficient Estimation of Word Representations in Vector Space" [http://arxiv.org/abs/1301.3781] (word2vec)
 	"We propose two novel model architectures for computing continuous vector representations of words from very large data sets. The quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks. We observe large improvements in accuracy at much lower computational cost, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set. Furthermore, we show that these vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities."
+	-- http://www.shortscience.org/paper?bibtexKey=mikolov2013efficient
 	-- http://alexminnaar.com/word2vec-tutorial-part-i-the-skip-gram-model.html
 	-- http://alexminnaar.com/word2vec-tutorial-part-ii-the-continuous-bag-of-words-model.html
 	-- http://www-personal.umich.edu/~ronxin/pdf/w2vexp.pdf
@@ -727,6 +732,7 @@ Pennington, Socher, Manning - "GloVe: Global Vectors for Word Representation" [h
 	"In some sense step back: word2vec counts co-occurrences and does dimensionality reduction together, GloVe is two-pass algorithm."
 	-- http://nlp.stanford.edu/projects/glove/
 	-- http://youtube.com/watch?v=RyTpzZQrHCs (Pennington)
+	-- http://www.shortscience.org/paper?bibtexKey=conf/emnlp/PenningtonSM14#shagunsodhani
 	-- https://github.com/shashankg7/glove-theano
 	-- https://github.com/GradySimon/tensorflow-glove
 
@@ -849,6 +855,7 @@ Dai, Olah, Le - "Document Embedding with Paragraph Vectors" [http://arxiv.org/ab
 
 Li, Luong, Jurafsky - "A Hierarchical Neural Autoencoder for Paragraphs and Documents" [http://arxiv.org/abs/1506.01057]
 	"Natural language generation of coherent long texts like paragraphs or longer documents is a challenging problem for recurrent networks models. In this paper, we explore an important step toward this generation task: training an LSTM (Long-short term memory) auto-encoder to preserve and reconstruct multi-sentence paragraphs. We introduce an LSTM model that hierarchically builds an embedding for a paragraph from embeddings for sentences and words, then decodes this embedding to reconstruct the original paragraph. We evaluate the reconstructed paragraph using standard metrics like ROUGE and Entity Grid, showing that neural models are able to encode texts in a way that preserve syntactic, semantic, and discourse coherence. While only a first step toward generating coherent text units from neural models, our work has the potential to significantly impact natural language generation and summarization."
+	-- https://github.com/fchollet/keras/blob/master/examples/mnist_hierarchical_rnn.py
 	-- https://github.com/jiweil/Hierarchical-Neural-Autoencoder
 
 Djuric, Wu, Radosavljevic, Grbovic, Bhamidipati - "Hierarchical Neural Language Models for Joint Representation of Streaming Documents and Their Content" [http://labs.yahoo.com/publication/hierarchical-neural-language-models-for-joint-representation-of-streaming-documents-and-their-content/]
@@ -862,6 +869,7 @@ Djuric, Wu, Radosavljevic, Grbovic, Bhamidipati - "Hierarchical Neural Language 
 Socher, Manning, Ng - "Learning Continuous Phrase Representations and Syntactic Parsing with Recursive Neural Networks" [http://jan.stanford.edu/pubs/2010SocherManningNg.pdf]
 	"Natural language parsing has typically been done with small sets of discrete categories such as NP and VP, but this representation does not capture the full syntactic nor semantic richness of linguistic phrases, and attempts to improve on this by lexicalizing phrases only partly address the problem at the cost of huge feature spaces and sparseness. To address this, we introduce a recursive neural network architecture for jointly parsing natural language and learning vector space representations for variable-sized inputs. At the core of our architecture are context-sensitive recursive neural networks. These networks can induce distributed feature representations for unseen phrases and provide syntactic information to accurately predict phrase structure trees. Most excitingly, the representation of each phrase also captures semantic information: For instance, the phrases “decline to comment” and “would not disclose the terms” are close by in the induced embedding space."
 	-- http://youtube.com/watch?v=mVfPGu8rrXM
+	-- https://github.com/bogatyy/cs224d/tree/master/assignment3
 	-- https://github.com/ofirnachum/tree_rnn
 
 Socher, Huang, Pennington, Ng, Manning - "Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection" [http://papers.nips.cc/paper/4204-dynamic-pooling-and-unfolding-recursive-autoencoders-for-paraphrase-detection.pdf]
@@ -1030,8 +1038,10 @@ Kim - "Convolutional Neural Networks for Sentence Classification" [http://arxiv.
 	"We report on a series of experiments with convolutional neural networks trained on top of pre-trained word vectors for sentence-level classification tasks. We first show that a simple CNN with little hyperparameter tuning and static vectors achieves excellent results on multiple benchmarks. Learning task-specific vectors through fine-tuning offers further gains in performance. We additionally propose a simple modification to the architecture to allow for the use of both task-specific and static word vectors. The CNN models discussed herein improve upon the state-of-the-art on 4 out of 7 tasks, which include sentiment analysis and question classification."
 	"In the present work, we train a simple CNN with one layer of convolution on top of word vectors obtained from an unsupervised neural language model. These vectors were trained by word2vec. We initially keep the word vectors static and learn only the other parameters of the model. Despite little tuning of hyperparameters, this simple model achieves excellent results on multiple benchmarks, suggesting that the pre-trained vectors are ‘universal’ feature extractors that can be utilized for various classification tasks. Learning task-specific vectors through fine-tuning results in further improvements. We finally describe a simple modification to the architecture to allow for the use of both pre-trained and task-specific vectors by having multiple channels."
 	"Despite little tuning of hyperparameters, a simple CNN with one layer of convolution performs remarkably well. Our results add to the well-established evidence that unsupervised pre-training of word vectors is an important ingredient in deep learning for NLP."
+	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/Kim14f
 	-- https://github.com/harvardnlp/sent-conv-torch
 	-- https://github.com/yoonkim/CNN_sentence
+	-- https://github.com/alexander-rakhlin/CNN-for-Sentence-Classification-in-Keras
 
 Weston, Chopra, Adams - "#TAGSPACE: Semantic Embeddings from Hashtags" [https://research.facebook.com/publications/279494668926031/-tagspace-semantic-embeddings-from-hashtags/]
 	"We describe a convolutional neural network that learns feature representations for short textual posts using hashtags as a supervised signal. The proposed approach is trained on up to 5.5 billion words predicting 100,000 possible hashtags. As well as strong performance on the hashtag prediction task itself, we show that its learned representation of text (ignoring the hashtag labels) is useful for other tasks as well. To that end, we present results on a document recommendation task, where it also outperforms a number of baselines."
@@ -1209,6 +1219,7 @@ Gulcehre, Ahn, Nallapati, Zhou, Bengio - "Pointing the Unknown Words" [http://ar
 Barone - "Towards Cross-Lingual Distributed Representations without Parallel Text Trained with Adversarial Autoencoders" [https://arxiv.org/abs/1608.02996]
 	"Current approaches to learning vector representations of text that are compatible between different languages usually require some amount of parallel text, aligned at word, sentence or at least document level. We hypothesize however, that different natural languages share enough semantic structure that it should be possible, in principle, to learn compatible vector representations just by analyzing the monolingual distribution of words. In order to evaluate this hypothesis, we propose a scheme to map word vectors trained on a source language to vectors semantically compatible with word vectors trained on a target language using an adversarial autoencoder. We present preliminary qualitative results and discuss possible future developments of this technique, such as applications to cross-lingual sentence representations."
 	"In this work we explore whether the assumption of a shared semantic structure between languages is strong enough that it allows to induce compatible distributed representations without using any parallel resource. We only require monolingual corpora that are thematically similar between languages in a general sense. We hypothesize there exist a suitable vectorial space such that each language can be viewed as a random process that produces vectors at some level of granularity (words, sentences, paragraphs, documents) which are then encoded as discrete surface forms, and we hypothesize that, if languages are used to convey thematically similar information in similar contexts, these random processes should be approximately isomorphic between languages, and that this isomorphism can be learned from the statistics of the realizations of these processes, the monolingual corpora, in principle without any form of explicit alignment."
+	"We hypothesize that, if languages are used to convey thematically similar information in similar contexts, these random processes should be approximately isomorphic between languages, and that this isomorphism can be learned from the statistics of the realizations of these processes, the monolingual corpora, in principle without any form of explicit alignment."
 
 
 

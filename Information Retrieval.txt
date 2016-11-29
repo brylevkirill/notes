@@ -66,12 +66,19 @@ course by Victor Lavrenko
 	http://homepages.inf.ed.ac.uk/vlavrenk/tts.html
 	http://youtube.com/user/victorlavrenko/playlists?view=1&sort=dd
 
+course by Yandex (in russian)
+	https://compscicenter.ru/courses/information-retrieval/2016-autumn/
+	https://compsciclub.ru/courses/informationretrieval
+
+course by Mail.ru (in russian)
+	http://habrahabr.ru/company/mailru/blog/257119/ (in russian)
+
 course by Nikita Zhiltsov (in russian)
 	http://nzhiltsov.github.io/IR-course/
 
-http://habrahabr.ru/company/mailru/blog/257119/ (in russian)
-http://compsciclub.ru/courses/informationretrieval (in russian)
-http://shad.yandex.ru/program/infosearch.xml (in russian)
+introduction to ranking by Nikita Volkov (in russian)
+	https://youtube.com/watch?v=GctrEpJinhI
+	https://youtube.com/watch?v=GZmXKBzIfkA
 
 IR seminars @ Yandex
 	http://youtube.com/playlist?list=PLJOzdkh8T5kqsYZSzcpKoS8dwf4uizFDk

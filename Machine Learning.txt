@@ -16,13 +16,13 @@ Jeff Dean: "Previously, we might use machine learning in a few sub-components of
 
 overviews and selected papers/books
 	machine learning    - https://dropbox.com/sh/kpd5tvfnc29lstj/AAD3oGVCUdkoMS56_2g8Oj7_a
-	deep learning (representation learning)    - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt + https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
+	deep learning    - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt + https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
 	reinforcement learning    - https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt + https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va
 	bayesian inference and learning    - https://dropbox.com/s/m1hv2o5k9u12m20/Probabilistic%20Machine%20Learning.txt + https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
 	probabilistic programming    - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt + https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
 
 areas
-	aritifical intelligence    - https://dropbox.com/s/7jb0rx9hc6gw3hc/Artificial%20Intelligence.txt + https://dropbox.com/sh/gmo2hort07gsydj/AACK0XoOOLsrzCyYC1eLwyOwa
+	artificial intelligence    - https://dropbox.com/s/7jb0rx9hc6gw3hc/Artificial%20Intelligence.txt + https://dropbox.com/sh/gmo2hort07gsydj/AACK0XoOOLsrzCyYC1eLwyOwa
 	knowledge representation and reasoning    - https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt + https://dropbox.com/sh/9ytscy4pwegbvhb/AACtB7tQGj-vigo0yExfciu0a
 	natural language processing    - https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt + https://dropbox.com/sh/rb7u9nwb16bg5xq/AADV3d_bS6-mqFW0_jaec1sZa
 	information retrieval    - https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt + https://dropbox.com/sh/pvpzyxfcpy39j8p/AACduJ-pVF9Lh-gn3_SExj1va
@@ -32,13 +32,14 @@ applications
 	http://insidesearch.blogspot.ru/2015/11/the-google-app-now-understands-you.html
 	http://bloomberg.com/news/articles/2015-10-26/google-turning-its-lucrative-web-search-over-to-ai-machines
 	http://wired.com/2015/07/google-says-ai-catches-99-9-percent-gmail-spam/
-	http://googleresearch.blogspot.com/2015/07/how-google-translate-squeezes-deep.html
+	http://research.googleblog.com/2016/09/a-neural-network-for-machine.html
 	http://googleresearch.blogspot.com/2015/08/the-neural-networks-behind-google-voice.html
 	http://googleresearch.blogspot.com/2015/09/google-voice-search-faster-and-more.html
 	http://googleresearch.blogspot.com/2015/10/improving-youtube-video-thumbnails-with.html
 	http://googleresearch.blogspot.com/2015/11/computer-respond-to-this-email.html
 	http://googlecloudplatform.blogspot.co.uk/2015/12/Google-Cloud-Vision-API-changes-the-way-applications-understand-images.html
 	http://googleresearch.blogspot.ru/2016/05/chat-smarter-with-allo.html
+	http://research.googleblog.com/2016/11/app-discovery-with-google-play-part-1.html
 	http://bloomberg.com/news/articles/2016-07-19/google-cuts-its-giant-electricity-bill-with-deepmind-powered-ai
 	http://quora.com/What-are-the-most-interesting-things-Facebook-is-doing-in-ML-research
 	http://code.facebook.com/posts/1478523512478471/teaching-machines-to-see-and-understand-advances-in-ai-research/
@@ -178,6 +179,8 @@ video courses
 	http://homepages.inf.ed.ac.uk/vlavrenk/iaml.html  (Victor Lavrenko, 60 short lectures on single page)
 	https://www.inf.ed.ac.uk/teaching/courses/iaml/  (Victor Lavrenko)
 
+	http://coursera.org/specializations/machine-learning-data-analysis/  (Yandex, in russian)
+
 	http://coursera.org/learn/introduction-machine-learning  (Konstantin Vorontsov, in russian)
 	http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC  (Konstantin Vorontsov, in russian)
 	http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC  (Igor Kuralenok, in russian)
@@ -212,6 +215,7 @@ books
 	Kevin Murphy - "Machine Learning - A Probabilistic Perspective" - https://dropbox.com/s/jdly520i5irx1h6/Murphy%20-%20Machine%20Learning%20-%20A%20Probabilistic%20Perspective.pdf
 	David MacKay - "Information Theory, Inference, and Learning Algorithms" - http://users.aims.ac.za/~mackay/itila/book.html
 	David Barber - "Bayesian Reasoning and Machine Learning" - http://web4.cs.ucl.ac.uk/staff/D.Barber/pmwiki/pmwiki.php?n=Brml.Online
+	Mehryar Mohri - "Foundations of Machine Learning" - http://www.cs.nyu.edu/~mohri/mlbook/
 	Richard Sutton, Andrew Barto - "Reinforcement Learning: An Introduction" - http://webdocs.cs.ualberta.ca/~sutton/book/ebook/the-book.html
 	Ron Bekkerman, Mikhail Bilenko, John Langford - "Scaling Up Machine Learning: Parallel and Distributed Approaches" - https://dropbox.com/s/ww4qaud4vkpqoah/Bekkerman%20Bilenko%20Langford%20-%20Scaling%20up%20Machine%20Learning.pdf
 
@@ -533,7 +537,7 @@ decision function:
 
 
 
-[representation/feature learning]
+[representation learning]
 
 Reresentation is a formal system which makes explicit certain entities and types of information, and which can be operated on by an algorithm in order to achieve some information processing goal. Representations differ in terms of what information they make explicit and in terms of what algorithms they support. As example, Arabic and Roman numerals - the fact that operations can be applied to particular columns of Arabic numerals in meaningful ways allows for simple and efficient algorithms for addition and multiplication.
 
@@ -544,17 +548,14 @@ In representation learning, the goal isn’t to make predictions about observabl
 https://hips.seas.harvard.edu/blog/2013/02/04/predictive-learning-vs-representation-learning/
 https://hips.seas.harvard.edu/blog/2013/02/25/what-is-representation-learning/
 
+Deep Learning - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt
+Knowledge Representation - https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt
+Probabilistic Programming - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt
+
 
 
 
 [inductive programming]
-
-http://cacm.acm.org/magazines/2015/11/193326-inductive-programming-meets-the-real-world/fulltext
-
-http://homes.cs.washington.edu/~bornholt/post/synthesis-for-architects.html
-
-selected papers - https://dropbox.com/sh/vrr1gs798zy02n1/AACj7hlXOiRt1nXltXVC-2Wca
-
 
 The essence of programmatic representations is that they are well-specified, compact, combinatorial and hierarchical.
   - well-specified: Unlike sentences in natural language, programs are unambiguous, although two distinct programs can be precisely equivalent.
@@ -581,17 +582,15 @@ Limitations of program learning:
     * or relatedness to past problems
 
 
+http://cacm.acm.org/magazines/2015/11/193326-inductive-programming-meets-the-real-world/fulltext
+http://homes.cs.washington.edu/~bornholt/post/synthesis-for-architects.html
+
+selected papers - https://dropbox.com/sh/vrr1gs798zy02n1/AACj7hlXOiRt1nXltXVC-2Wca
+
 Probabilistic Programming - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt
 
 	Perov, Wood - "Learning Probabilistic Programs" - http://arxiv.org/abs/1407.2646
 		"We develop a technique for generalising from data in which models are samplers represented as program text. We establish encouraging empirical results that suggest that Markov chain Monte Carlo probabilistic programming inference techniques coupled with higher-order probabilistic programming languages are now sufficiently powerful to enable successful inference of this kind in nontrivial domains. We also introduce a new notion of probabilistic program compilation and show how the same machinery might be used in the future to compile probabilistic programs for efficient reusable predictive inference."
-
-
-Evolutionary Search
-	http://wiki.opencog.org/w/Meta-Optimizing_Semantic_Evolutionary_Search
-
-	Looks, Goertzel - "Program Representation for General Intelligence" (http://agi-conference.org/2009/papers/paper_69.pdf)
-		"Traditional machine learning systems work with relatively flat, uniform data representations, such as feature vectors, time-series, and context-free grammars. However, reality often presents us with data which are best understood in terms of relations, types, hierarchies, and complex functional forms. One possible representational scheme for coping with this sort of complexity is computer programs. This immediately raises the question of how programs are to be best represented."
 
 
 
@@ -699,10 +698,10 @@ Evolutionary Search
 
 selected papers - https://dropbox.com/sh/kpd5tvfnc29lstj/AAD3oGVCUdkoMS56_2g8Oj7_a
 
-selected papers on deep learning (representation learning) - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt + https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
+selected papers on deep learning - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt + https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
 selected papers on probabilistic machine learning - https://dropbox.com/s/m1hv2o5k9u12m20/Probabilistic%20Machine%20Learning.txt + https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
 selected papers on probabilistic programming - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt + https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
-selected papers on reinforcement learning - https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va + https://dropbox.com/s/7jb0rx9hc6gw3hc/Artificial%20Intelligence.txt "[reinforcement learning] section"
+selected papers on reinforcement learning - https://dropbox.com/s/dexryjnmxujdynd/Reinforcement%20Learning.txt + https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va
 
 interesting papers - http://gitxiv.com
 
@@ -753,11 +752,6 @@ Gutmann, Hyvarinen - "Noise-Contrastive Estimation of Unnormalized Statistical M
 Sculley, Brodley - "Compression and Machine Learning: A New Perspective on Feature Space Vectors" [http://www.eecs.tufts.edu/~dsculley/papers/compressionAndVectors.pdf]
 	"The use of compression algorithms in machine learning tasks such as clustering and classification has appeared in a variety of fields, sometimes with the promise of reducing problems of explicit feature selection. The theoretical justification for such methods has been founded on an upper bound on Kolmogorov complexity and an idealized information space. An alternate view shows compression algorithms implicitly map strings into implicit feature space vectors, and compression-based similarity measures compute similarity within these feature spaces. Thus, compression-based methods are not a “parameter free” magic bullet for feature selection and data representation, but are instead concrete similarity measures within defined feature spaces, and are therefore akin to explicit feature vector models used in standard machine learning algorithms. To underscore this point, we find theoretical and empirical connections between traditional machine learning vector models and compression, encouraging cross-fertilization in future work."
 
-Edwards, Storkey - "Towards a Neural Statistician" [http://arxiv.org/abs/1606.02185]
-	"An efficient learner is one who reuses what they already know to tackle a new problem. For a machine learner, this means understanding the similarities amongst datasets. In order to do this, one must take seriously the idea of working with datasets, rather than datapoints, as the key objects to model. Towards this goal, we demonstrate an extension of a variational autoencoder that can learn a method for computing representations, or statistics, of datasets in an unsupervised fashion. The network is trained to produce statistics that encapsulate a generative model for each dataset. Hence the network enables efficient learning from new datasets for both unsupervised and supervised tasks. We show that we are able to learn statistics that can be used for: clustering datasets, transferring generative models to new datasets, selecting representative samples of datasets and classifying previously unseen classes."
-	"Our goal was to demonstrate that it is both possible and profitable to work at a level of abstraction of datasets rather than just datapoints. We have shown how it is possible to learn to represent datasets using a statistic network, and that these statistics enable highly flexible and efficient models that can do transfer learning, small shot classification, cluster distributions, summarize datasets and more. Avenues for future research are engineering, methodological and application based. In terms of engineering we believe that there are gains to be had by more thorough exploration of different (larger) architectures. In terms of methodology we want to look at: improved methods of representing uncertainty resulting from sample size; models explicitly designed trained for small-shot classification; supervised and semi-supervised approaches to classifiying either datasets or datapoints within the dataset. One advantage we have yet to explore is that by specifying classes implicitly in terms of sets, we can combine multiple data sources with potentially different labels, or multiple labels. We can also easily train on any unlabelled data because this corresponds to sets of size one. We also want to consider questions such as: What are desirable properties for statistics to have as representations? How can we enforce these? Can we use ideas from classical work on estimators? In terms of applications we are interested in applying this framework to learning embeddings of speakers for speech problems or customer embeddings in commercial problems."
-	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.02185 (Larochelle)
-
 
 
 
@@ -766,8 +760,19 @@ Edwards, Storkey - "Towards a Neural Statistician" [http://arxiv.org/abs/1606.02
 Guyon, Bennett, Cawley, Escalante, Escalera, Ho, Macia, Ray, Saeed, Statnikov, Viegas - "Design of the 2015 ChaLearn AutoML Challenge" [http://www.causality.inf.ethz.ch/AutoML/automl_ijcnn15.pdf]
 	"ChaLearn is organizing for IJCNN 2015 an Automatic Machine Learning challenge (AutoML) to solve classification and regression problems from given feature representations, without any human intervention. This is a challenge with code submission: the code submitted can be executed automatically on the challenge servers to train and test learning machines on new datasets. However, there is no obligation to submit code. Half of the prizes can be won by just submitting prediction results. There are six rounds (Prep, Novice, Intermediate, Advanced, Expert, and Master) in which datasets of progressive difficulty are introduced (5 per round). There is no requirement to participate in previous rounds to enter a new round. The rounds alternate AutoML phases in which submitted code is “blind tested” on datasets the participants have never seen before, and Tweakathon phases giving time (~1 month) to the participants to improve their methods by tweaking their code on those datasets. This challenge will push the state-of-the-art in fully automatic machine learning on a wide range of problems taken from real world applications."
 
-Hutter, Hoos, Leyton-Brown - "An Efficient Approach for Assessing Hyperparameter Importance" [http://jmlr.org/proceedings/papers/v32/hutter14.pdf]
-	"The performance of many machine learning methods depends critically on hyperparameter settings. Sophisticated Bayesian optimization methods have recently achieved considerable successes in optimizing these hyperparameters, in several cases surpassing the performance of human experts. However, blind reliance on such methods can leave end users without insight into the relative importance of different hyperparameters and their interactions. This paper describes efficient methods that can be used to gain such insight, leveraging random forest models fit on the data already gathered by Bayesian optimization. We first introduce a novel, linear-time algorithm for computing marginals of random forest predictions and then show how to leverage these predictions within a functional ANOVA framework, to quantify the importance of both single hyperparameters and of interactions between hyperparameters. We conducted experiments with prominent machine learning frameworks and state-of-the-art solvers for combinatorial problems. We show that our methods provide insight into the relationship between hyperparameter settings and performance, and demonstrate that even in very high-dimensional cases most performance variation is attributable to just a few hyperparameters."
+Edwards, Storkey - "Towards a Neural Statistician" [http://arxiv.org/abs/1606.02185]
+	"An efficient learner is one who reuses what they already know to tackle a new problem. For a machine learner, this means understanding the similarities amongst datasets. In order to do this, one must take seriously the idea of working with datasets, rather than datapoints, as the key objects to model. Towards this goal, we demonstrate an extension of a variational autoencoder that can learn a method for computing representations, or statistics, of datasets in an unsupervised fashion. The network is trained to produce statistics that encapsulate a generative model for each dataset. Hence the network enables efficient learning from new datasets for both unsupervised and supervised tasks. We show that we are able to learn statistics that can be used for: clustering datasets, transferring generative models to new datasets, selecting representative samples of datasets and classifying previously unseen classes."
+	"Our goal was to demonstrate that it is both possible and profitable to work at a level of abstraction of datasets rather than just datapoints. We have shown how it is possible to learn to represent datasets using a statistic network, and that these statistics enable highly flexible and efficient models that can do transfer learning, small shot classification, cluster distributions, summarize datasets and more. Avenues for future research are engineering, methodological and application based. In terms of engineering we believe that there are gains to be had by more thorough exploration of different (larger) architectures. In terms of methodology we want to look at: improved methods of representing uncertainty resulting from sample size; models explicitly designed trained for small-shot classification; supervised and semi-supervised approaches to classifiying either datasets or datapoints within the dataset. One advantage we have yet to explore is that by specifying classes implicitly in terms of sets, we can combine multiple data sources with potentially different labels, or multiple labels. We can also easily train on any unlabelled data because this corresponds to sets of size one. We also want to consider questions such as: What are desirable properties for statistics to have as representations? How can we enforce these? Can we use ideas from classical work on estimators? In terms of applications we are interested in applying this framework to learning embeddings of speakers for speech problems or customer embeddings in commercial problems."
+	"Potentially a more powerful alternative to Variational Autoencoder."
+	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.02185 (Larochelle)
+	-- https://youtu.be/XpIDCzwNe78?t=51m53s (Bartunov)
+
+Ratner, Sa, Wu, Selsam, Re - "Data Programming: Creating Large Training Sets, Quickly" [https://arxiv.org/abs/1605.07723]
+	"Large labeled training sets are the critical building blocks of supervised learning methods and are key enablers of deep learning techniques. For some applications, creating labeled training sets is the most time-consuming and expensive part of applying machine learning. We therefore propose a paradigm for the programmatic creation of training sets called data programming in which users provide a set of labeling functions, which are programs that heuristically label large subsets of data points, albeit noisily. By viewing these labeling functions as implicitly describing a generative model for this noise, we show that we can recover the parameters of this model to “denoise” the training set. Then, we show how to modify a discriminative loss function to make it noise-aware. We demonstrate our method over a range of discriminative models including logistic regression and LSTMs. We establish theoretically that we can recover the parameters of these generative models in a handful of settings. Experimentally, on the 2014 TAC-KBP relation extraction challenge, we show that data programming would have obtained a winning score, and also show that applying data programming to an LSTM model leads to a TAC-KBP score almost 6 F1 points over a supervised LSTM baseline (and into second place in the competition). Additionally, in initial user studies we observed that data programming may be an easier way to create machine learning models for non-experts."
+	"In the data programming approach to developing a machine learning system, the developer focuses on writing a set of labeling functions, which create a large but noisy training set. Snorkel then learns a generative model of this noise - learning, essentially, which labeling functions are more accurate than others - and uses this to train a discriminative classifier. At a high level, the idea is that developers can focus on writing labeling functions - which are just (Python) functions that provide a label for some subset of data points - and not think about algorithms or features!"
+	-- https://youtube.com/watch?v=iSQHelJ1xxU
+	-- http://hazyresearch.github.io/snorkel/blog/weak_supervision.html
+	-- https://github.com/HazyResearch/snorkel
 
 Shahriari, Swersky, Wang, Adams, de Freitas - "Taking the Human Out of the Loop: A Review of Bayesian Optimization" [https://www.cs.ox.ac.uk/people/nando.defreitas/publications/BayesOptLoop.pdf]
 	"Big data applications are typically associated with systems involving large numbers of users, massive complex software systems, and large-scale heterogeneous computing and storage architectures. The construction of such systems involves many distributed design choices. The end products (e.g., recommendation systems, medical analysis tools, real-time game engines, speech recognizers) thus involves many tunable configuration parameters. These parameters are often specified and hard-coded into the software by various developers or teams. If optimized jointly, these parameters can result in significant improvements. Bayesian optimization is a powerful tool for the joint optimization of design choices that is gaining great popularity in recent years. It promises greater automation so as to increase both product quality and human productivity. This review paper introduces Bayesian optimization, highlights some of its methodological aspects, and showcases a wide range of applications."
@@ -816,8 +821,7 @@ Agarwal, Chapelle, Dudik, Langford - "A Reliable Effective Terascale Linear Lear
 
 Anandkumar, Ge, Hsu, Kakade, Telgarsky - "Tensor Decompositions for Learning Latent Variable Models" [http://arxiv.org/abs/1210.7559]
 	"This work considers a computationally and statistically efficient parameter estimation method for a wide class of latent variable models - including Gaussian mixture models, hidden Markov models, and latent Dirichlet allocation - which exploits a certain tensor structure in their low-order observable moments (typically, of second- and third-order). Specifically, parameter estimation is reduced to the problem of extracting a certain (orthogonal) decomposition of a symmetric tensor derived from the moments; this decomposition can be viewed as a natural generalization of the singular value decomposition for matrices. Although tensor decompositions are generally intractable to compute, the decomposition of these specially structured tensors can be efficiently obtained by a variety of approaches, including power iterations and maximization approaches (similar to the case of matrices). A detailed analysis of a robust tensor power method is provided, establishing an analogue of Wedin’s perturbation theorem for the singular vectors of matrices. This implies a robust and computationally tractable estimation approach for several popular latent variable models."
-	-- https://youtube.com/watch?v=VyiMW23OVNU + https://youtube.com/watch?v=13N7C2F5lwY + https://youtube.com/watch?v=yWRC4usCum8  (in russian)
-	-- Ivan Oseledets - Tensor Trains
+	-- https://youtube.com/watch?v=VyiMW23OVNU + https://youtube.com/watch?v=13N7C2F5lwY + https://youtube.com/watch?v=yWRC4usCum8 (Oseledets, in russian)
 
 Kontschieder, Fiterau, Criminisi, Bulo - "Deep Neural Decision Forests" [http://research.microsoft.com/apps/pubs/default.aspx?id=255952]
 	"We present Deep Neural Decision Forests - a novel approach that unifies classification trees with the representation learning functionality known from deep convolutional networks, by training them in an end-to-end manner. To combine these two worlds, we introduce a stochastic and differentiable decision tree model, which steers the representation learning usually conducted in the initial layers of a (deep) convolutional network. Our model differs from conventional deep networks because a decision forest provides the final predictions and it differs from conventional decision forests since we propose a principled, joint and global optimization of split and leaf node parameters. We show experimental results on benchmark machine learning datasets like MNIST and ImageNet and find onpar or superior results when compared to state-of-the-art deep models. Most remarkably, we obtain Top5-Errors of only 7.84%/6.38% on ImageNet validation data when integrating our forests in a single-crop, single/seven model GoogLeNet architecture, respectively. Thus, even without any form of training data set augmentation we are improving on the 6.67% error obtained by the best GoogLeNet architecture (7 models, 144 crops)."
@@ -866,10 +870,6 @@ Niu, Recht, Re, Wright - "Hogwild!: A Lock-Free Approach to Parallelizing Stocha
 
 Zhang, Re - "DimmWitted: A Study of Main-Memory Statistical Analytics" [http://arxiv.org/abs/1403.7550]
 	"We perform the first study of the tradeoff space of access methods and replication to support statistical analytics using first-order methods executed in the main memory of a Non-Uniform Memory Access machine. Statistical analytics systems differ from conventional SQL-analytics in the amount and types of memory incoherence that they can tolerate. Our goal is to understand tradeoffs in accessing the data in row- or column-order and at what granularity one should share the model and data for a statistical task. We study this new tradeoff space and discover that there are tradeoffs between hardware and statistical efficiency. We argue that our tradeoff study may provide valuable information for designers of analytics engines: for each system we consider, our prototype engine can run at least one popular task at least 100× faster. We conduct our study across five architectures using popular models, including SVMs, logistic regression, Gibbs sampling, and neural networks."
-
-Li, Andersen, Park, Smola, Ahmed, Josifovski, Long, Shekita, Su - "Scaling Distributed Machine Learning with the Parameter Server" [https://www.cs.cmu.edu/~muli/file/parameter_server_osdi14.pdf]
-	"We propose a parameter server framework for distributed machine learning problems. Both data and workloads are distributed over worker nodes, while the server nodes maintain globally shared parameters, represented as dense or sparse vectors and matrices. The framework manages asynchronous data communication between nodes, and supports flexible consistency models, elastic scalability, and continuous fault tolerance. To demonstrate the scalability of the proposed framework, we show experimental results on petabytes of real data with billions of examples and parameters on problems ranging from Sparse Logistic Regression to Latent Dirichlet Allocation and Distributed Sketching."
-	-- http://parameterserver.org
 
 Mizrahi, Denil, Freitas - "Distributed Parameter Estimation in Probabilistic Graphical Models" [http://papers.nips.cc/paper/5317-distributed-parameter-estimation-in-probabilistic-graphical-models.pdf]
 	"This paper presents foundational theoretical results on distributed parameter estimation for undirected probabilistic graphical models. It introduces a general condition on composite likelihood decompositions of these models which guarantees the global consistency of distributed estimators, provided the local estimators are consistent."
