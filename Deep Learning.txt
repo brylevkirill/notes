@@ -8,6 +8,7 @@ industry
 	"Google replaced 60 hand-crafted rule-based systems with Deep Learning" - https://goo.gl/yzwI6O + https://goo.gl/4EwqFu
 	"Often in close collaboration with the Google Brain team, more than 50 teams at Google and other Alphabet companies have deployed deep neural networks using DistBelief in a wide variety of products, including Google Search, our advertising products, our speech recognition systems, Google Photos, Google Maps and StreetView, Google Translate, YouTube, and many others."
 
+	http://wired.com/2016/11/googles-search-engine-can-now-answer-questions-human-help/
 	http://bloomberg.com/news/articles/2015-10-26/google-turning-its-lucrative-web-search-over-to-ai-machines
 	http://research.googleblog.com/2016/09/a-neural-network-for-machine.html
 	http://wired.com/2015/07/google-says-ai-catches-99-9-percent-gmail-spam/
@@ -1429,9 +1430,6 @@ Fawzi, Frossard - "Analysis of Classifiers' Robustness to Adversarial Perturbati
 Papernot, McDaniel, Goodfellow, Jha, Celik, Swami - "On the Integrity of Deep Learning Oracles" [http://arxiv.org/abs/1602.02697]
 	"Deep Learning is increasingly used in several machine learning tasks as Deep Neural Networks (DNNs) frequently outperform other techniques. Yet, previous work showed that, once deployed, DNNs are vulnerable to integrity attacks. Indeed, adversaries can control DNN outputs and for instance force them to misclassify inputs by adding a carefully crafted and undistinguishable perturbation. However, these attacks assumed knowledge of the targeted DNN's architecture and parameters. In this paper however, we release these assumptions and introduce an attack conducted under the more realistic, yet more complex, threat model of an oracle: adversaries are only capable of accessing DNN label predictions for chosen inputs. We evaluate our attack in real-world settings by successfully forcing an oracle served by MetaMind, an online API for DNN classifiers, to misclassify inputs at a 84.24% rate. We also perform an evaluation to fine-tune our attack strategy and maximize the oracle's misclassification rate for adversarial samples."
 
-Shalev-Shwartz, Shashua - "On the Sample Complexity of End-to-end Training vs. Semantic Abstraction Training" [http://arxiv.org/abs/1604.06915]
-	"We compare the end-to-end training approach to a modular approach in which a system is decomposed into semantically meaningful components. We focus on the sample complexity aspect, in the regime where an extremely high accuracy is necessary, as is the case in autonomous driving applications. We demonstrate cases in which the number of training examples required by the end-to-end approach is exponentially larger than the number of examples required by the semantic abstraction approach."
-
 
 
 
@@ -1770,6 +1768,7 @@ Neelakantan, Le, Sutskever - "Neural Programmer: Inducing Latent Programs with G
 	"Current neural networks cannot make use of rules well: cannot use addition, subtraction, summation, average operations."
 	-- http://youtu.be/KmOdBS4BXZ0?t=1h8m44s (Le)
 	-- http://distill.pub/2016/augmented-rnns/
+	-- https://github.com/tensorflow/models/tree/master/neural_programmer
 
 Reed, de Freitas - "Neural Programmer-Interpreters" [http://arxiv.org/abs/1511.06279]
 	"We propose the neural programmer-interpreter (NPI): a recurrent and compositional neural network that learns to represent and execute programs. NPI has three learnable components: a task-agnostic recurrent core, a persistent key-value program memory, and domain-specific encoders that enable a single NPI to operate in multiple perceptually diverse environments with distinct affordances. By learning to compose lower-level programs to express higher-level programs, NPI reduces sample complexity and increases generalization ability compared to sequence-to-sequence LSTMs. The program memory allows efficient learning of additional tasks by building on existing programs. NPI can also harness the environment (e.g. a scratch pad with read-write pointers) to cache intermediate results of computation, lessening the long-term memory burden on recurrent hidden units. In this work we train the NPI with fully-supervised execution traces; each program has example sequences of calls to the immediate subprograms conditioned on the input. Rather than training on a huge number of relatively weak labels, NPI learns from a small number of rich examples. We demonstrate the capability of our model to learn several types of compositional programs: addition, sorting, and canonicalizing 3D models. Furthermore, a single NPI learns to execute these programs and all 21 associated subprograms."

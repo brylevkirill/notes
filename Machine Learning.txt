@@ -29,9 +29,8 @@ areas
 	personal assistants    - https://dropbox.com/s/0fyarlwcfb8mjdq/Personal%20Assistants.txt + https://dropbox.com/sh/veqe3c800ztpkxe/AABwH6camduJrsTUJpeKobWUa
 
 applications
-	http://insidesearch.blogspot.ru/2015/11/the-google-app-now-understands-you.html
+	http://wired.com/2016/11/googles-search-engine-can-now-answer-questions-human-help/
 	http://bloomberg.com/news/articles/2015-10-26/google-turning-its-lucrative-web-search-over-to-ai-machines
-	http://wired.com/2015/07/google-says-ai-catches-99-9-percent-gmail-spam/
 	http://research.googleblog.com/2016/09/a-neural-network-for-machine.html
 	http://googleresearch.blogspot.com/2015/08/the-neural-networks-behind-google-voice.html
 	http://googleresearch.blogspot.com/2015/09/google-voice-search-faster-and-more.html
@@ -41,6 +40,7 @@ applications
 	http://googleresearch.blogspot.ru/2016/05/chat-smarter-with-allo.html
 	http://research.googleblog.com/2016/11/app-discovery-with-google-play-part-1.html
 	http://bloomberg.com/news/articles/2016-07-19/google-cuts-its-giant-electricity-bill-with-deepmind-powered-ai
+	http://wired.com/2015/07/google-says-ai-catches-99-9-percent-gmail-spam/
 	http://quora.com/What-are-the-most-interesting-things-Facebook-is-doing-in-ML-research
 	http://code.facebook.com/posts/1478523512478471/teaching-machines-to-see-and-understand-advances-in-ai-research/
 	http://wired.com/2015/08/how-facebook-m-works/
@@ -375,7 +375,10 @@ learning theory:
 
   http://kdnuggets.com/2015/07/deep-learning-triumph-empiricism-over-theoretical-mathematical-guarantees.html
   https://hips.seas.harvard.edu/blog/2013/02/15/learning-theory-purely-theoretical/
+
   http://jeremykun.com/2014/01/02/probably-approximately-correct-a-formal-theory-of-learning/
+  http://jeremykun.com/2014/04/21/an-un-pac-learnable-problem/
+  http://jeremykun.com/2014/09/19/occams-razor-and-pac-learning/
 
   https://blogs.princeton.edu/imabandit/2015/10/13/crash-course-on-learning-theory-part-1/
   https://blogs.princeton.edu/imabandit/2015/10/22/crash-course-on-learning-theory-part-2/
@@ -699,7 +702,7 @@ Probabilistic Programming - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%
 selected papers - https://dropbox.com/sh/kpd5tvfnc29lstj/AAD3oGVCUdkoMS56_2g8Oj7_a
 
 selected papers on deep learning - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt + https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
-selected papers on probabilistic machine learning - https://dropbox.com/s/m1hv2o5k9u12m20/Probabilistic%20Machine%20Learning.txt + https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
+selected papers on bayesian inference and learning - https://dropbox.com/s/m1hv2o5k9u12m20/Probabilistic%20Machine%20Learning.txt + https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
 selected papers on probabilistic programming - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt + https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
 selected papers on reinforcement learning - https://dropbox.com/s/dexryjnmxujdynd/Reinforcement%20Learning.txt + https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va
 

@@ -88,14 +88,6 @@ Gary Marcus
 	"Commonsense Reasoning and Commonsense Knowledge in Artificial Intelligence" -
 		http://cacm.acm.org/magazines/2015/9/191169-commonsense-reasoning-and-commonsense-knowledge-in-artificial-intelligence/fulltext
 
-Stuart Russell
-	"Rationality and Intelligence: A Brief Update" - http://youtube.com/watch?v=Xg-Gt7tvTu8 + http://cs.berkeley.edu/~russell/papers/ptai13-intelligence.pdf
-	"The Long-Term Future of (Artificial) Intelligence" - https://youtube.com/watch?v=GYQrNfSmQ0M
-
-Tomas Mikolov
-	"A Roadmap Towards Machine Intelligence" - https://youtu.be/FUlTjKL-mVA?t=39m18s + http://youtu.be/gi4Zf59_IcU?t=34m10s
-	"Challenges in Development of Machine Intelligence" - https://b8ca8e88-a-62cb3a1a-s-sites.googlegroups.com/site/learningsemantics2014/TomasMikolov.pdf
-
 Laurent Orseau
 	https://intelligence.org/2013/09/06/laurent-orseau-on-agi/
 
@@ -573,7 +565,7 @@ Gary Marcus - "Towards a Neural Ontology" - https://drive.google.com/file/d/0B_h
 
 	Juergen Schmidhuber - "On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models" - http://arxiv.org/abs/1511.09249
 
-	"Curiosity-driven Exploration in Deep Reinforcement Learning via Bayesian Neural Networks" by Houthooft, Chen, Duan, Schulman, Turck, Abbeel (practical implementation) - http://arxiv.org/abs/1605.09674
+	"Curiosity-driven Exploration in Deep Reinforcement Learning via Bayesian Neural Networks" by Houthooft, Chen, Duan, Schulman, Turck, Abbeel (practical implementation) - http://arxiv.org/abs/1605.09674 + https://youtube.com/watch?v=sRIjxxjVrnY (Panin)
 
 
 

@@ -300,8 +300,9 @@ http://arxiv.org/pdf/1606.03402 - Length Bias in Encoder Decoder Models and a Ca
 http://arxiv.org/abs/1605.01652 - LSTM-based Mixture-of-Experts for Knowledge-Aware Dialogues
 http://arxiv.org/abs/1603.01232 - Multi-domain Neural Network Language Generation for Spoken Dialogue Systems
 http://arxiv.org/abs/1604.02038 - Sentence Level Recurrent Topic Model: Letting Topics Speak for Themselves
+http://arxiv.org/pdf/1611.09900 - Context-aware Natural Language Generation with Recurrent Neural Networks
 
-http://arxiv.org/abs/1511.06349 - Generating Sentences from a Continuous Space
+http://arxiv.org/abs/1511.06349 - Generating Sentences from a Continuous Space + https://github.com/cheng6076/Variational-LSTM-Autoencoder
 http://arxiv.org/abs/1603.06155 - A Persona-Based Neural Conversation Model
 http://arxiv.org/abs/1606.00372 - Conversational Contextual Cues: The Case of Personalization and History for Response Ranking (Kurzweil)
 http://arxiv.org/abs/1607.00070 - A Sequence-to-Sequence Model for User Simulation in Spoken Dialogue Systems (Maluuba)

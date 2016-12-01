@@ -50,6 +50,8 @@ selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91I
   Chris Bishop - http://blogs.technet.com/b/machinelearning/archive/2014/10/22/embracing-uncertainty-the-role-of-probabilities.aspx
                  http://blogs.technet.com/b/machinelearning/archive/2014/10/30/embracing-uncertainty-probabilistic-inference.aspx
 
+  "Data Analysis Recipes: Probability Calculus for Inference" - https://arxiv.org/abs/1205.4446
+
   "Probabilistic Modelling" by Iain Murray -
 	https://youtube.com/watch?v=pOtvyVYAuW4 + https://youtube.com/watch?v=khagz6yWL9w + https://youtube.com/watch?v=U1IAMQYZjfw
 
