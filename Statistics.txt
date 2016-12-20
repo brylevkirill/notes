@@ -177,15 +177,20 @@ Bayes factors:
 
 [interesting papers]
 
-Ioannidis, J. P. A. (2005). Why most published research findings are false. PLoS Medicine, 2(8), e124.
-Goodman S, Greenland S (2007) Why Most Published Research Findings Are False: Problems in the Analysis. PLoS Med 4(4): e168.
-Ioannidis JPA (2007) Why Most Published Research Findings Are False: Author's Reply to Goodman and Greenland. PLoS Med 4(6): e215.
-Moonesinghe, R., Khoury, M. J., & Janssens, A. C. J. W. (2007). Most published research findings are false - But a little replication goes a long way. PLoS Medicine, 4(2), 0218–0221.
-Leek, J. T., & Jager, L. R. (2016). Is most published research really false? bioRxiv, 050575.
+Breiman - "Statistical Modeling: The Two Cultures"
+Ioannidis - "Why most published research findings are false"
+Goodman, Greenland - "Why Most Published Research Findings Are False: Problems in the Analysis"
+Ioannidis - "Why Most Published Research Findings Are False: Author's Reply to Goodman and Greenland"
+Moonesinghe Khoury, Janssens - "Most published research findings are false - But a little replication goes a long way"
+Leek, Jager - "Is most published research really false?"
 
 
 
 
 [applications]
 
-analytics @ Yandex - https://youtube.com/watch?v=dvf_x3V0j88 (in russian)
+analytics @ Yandex (in russian)
+	https://youtube.com/watch?v=dvf_x3V0j88
+	https://youtube.com/watch?v=tKYOjIo0BQY
+	https://youtube.com/watch?v=BlYxSBUl1Tk
+	https://youtube.com/watch?v=WbeFXquH7Ac

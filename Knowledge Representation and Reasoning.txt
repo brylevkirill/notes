@@ -97,6 +97,7 @@ David Ferucci
 	https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt
 
 	"A Paradigm for Situated and Goal-Driven Language Learning" by Jon Gauthier and Igor Mordatch - https://arxiv.org/abs/1610.03585
+		"We outlined a paradigm for grounded and goal-driven language learning in artificial agents. The paradigm is centered around a utilitarian definition of language understanding, which equates language understanding with the ability to cooperate with other language users in real-world environments. This position demotes language from its position as a separate task to be solved to one of several communicative tools agents might use to accomplish their real-world goals."
 
 
 	"Natural Language Understanding: Foundations and State-of-the-Art" by Percy Liang - http://videolectures.net/icml2015_liang_language_understanding/ + http://icml.cc/2015/tutorials/icml2015-nlu-tutorial.pd
@@ -104,6 +105,9 @@ David Ferucci
 	"Natural Language Understanding with Distributed Representation" by Kyunghyun Cho - http://arxiv.org/abs/1511.07916
 
 	"A Primer on Neural Network Models for Natural Language Processing" by Yoav Goldberg - http://arxiv.org/abs/1510.00726
+
+
+	http://matt-gardner.github.io/paper-thoughts/2016/12/08/reading-comprehension-survey.html
 
 
 
@@ -734,6 +738,8 @@ David Ferucci
 	"Knowledge Base Completion using Compositional Vector Space Models" by Neelakantan et al.
 		http://akbc.ws/2014/submissions/akbc2014_submission_10.pdf
 		http://youtube.com/watch?v=mSrkzc0Nksg + https://docs.google.com/file/d/0B_hicYJxvbiOTUxZMWY5T2N2VG8
+
+	http://matt-gardner.github.io/paper-thoughts/2016/12/08/reading-comprehension-survey.html	
 
 
 
@@ -1629,6 +1635,10 @@ Wang, Yan, Wang, Huang - "An Overview of Microsoft Deep QA System on Stanford We
 
 [interesting papers - question answering over texts (machine reading)]
 
+Gauthier, Mordatch - "A Paradigm for Situated and Goal-Driven Language Learning" [https://arxiv.org/abs/1610.03585]
+	"A distinguishing property of human intelligence is the ability to flexibly use language in order to communicate complex ideas with other humans in a variety of contexts. Research in natural language dialogue should focus on designing communicative agents which can integrate themselves into these contexts and productively collaborate with humans. In this abstract, we propose a general situated language learning paradigm which is designed to bring about robust language agents able to cooperate productively with humans. This dialogue paradigm is built on a utilitarian definition of language understanding. Language is one of multiple tools which an agent may use to accomplish goals in its environment. We say an agent “understands” language only when it is able to use language productively to accomplish these goals. Under this definition, an agent’s communication success reduces to its success on tasks within its environment. This setup contrasts with many conventional natural language tasks, which maximize linguistic objectives derived from static datasets. Such applications often make the mistake of reifying language as an end in itself. The tasks prioritize an isolated measure of linguistic intelligence (often one of linguistic competence, in the sense of Chomsky), rather than measuring a model’s effectiveness in real-world scenarios. Our utilitarian definition is motivated by recent successes in reinforcement learning methods. In a reinforcement learning setting, agents maximize success metrics on real-world tasks, without requiring direct supervision of linguistic behavior."
+	"We outlined a paradigm for grounded and goal-driven language learning in artificial agents. The paradigm is centered around a utilitarian definition of language understanding, which equates language understanding with the ability to cooperate with other language users in real-world environments. This position demotes language from its position as a separate task to be solved to one of several communicative tools agents might use to accomplish their real-world goals. While this paradigm does already capture a small amount of recent work in dialogue, on the whole it has not received the focus it deserves in the research communities of natural language processing and machine learning. We hope this paper brings focus to the task of situated language learning as a way forward for research in natural language dialogue."
+
 Weston, Bordes, Chopra, Mikolov - "Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks" [http://arxiv.org/abs/1502.05698]
 	"One long-term goal of machine learning research is to produce methods that are applicable to reasoning and natural language, in particular building an intelligent dialogue agent. To measure progress towards that goal, we argue for the usefulness of a set of proxy tasks that evaluate reading comprehension via question answering. Our tasks measure understanding in several ways: whether a system is able to answer questions via chaining facts, simple induction, deduction and many more. The tasks are designed to be prerequisites for any system that aims to be capable of conversing with a human. We believe many existing learning systems can currently not solve them, and hence our aim is to classify these tasks into skill sets, so that researchers can identify (and then rectify) the failings of their systems. We also extend and improve the recently introduced Memory Networks model, and show it is able to solve some, but not all, of the tasks."
 	"Despite great recent advances, the road towards intelligent machines able to reason and adapt in real-time in multimodal environments remains long and uncertain. This final goal is so complex and further away that it is impossible to perform experiments and research directly in the desired final conditions, so one has to use intermediate and/or proxy tasks as midway goals. Some of those tasks like object detection in computer vision, or machine translation in natural language processing are very useful on their own and fuel many applications. However, such intermediate tasks are already very difficult and it is not obvious that they are suited testbeds for designing intelligent systems: their inherent complexity makes it hard to precisely interpret the behavior and true capabilities of algorithms, in particular regarding key sophisticated capabilities like reasoning and planning. We advocate the use of controlled artificial environments for developing research in AI, environments in which one can precisely study the behavior of algorithms and unambiguously assess their abilities."
@@ -1855,8 +1865,8 @@ Liang - "Asking Deep Questions on Messy Data"
 	-- https://docs.google.com/file/d/0B_hicYJxvbiOMUJsZGpqUF9NRGM
 
 
-# answer sentence selection task - http://aclweb.org/aclwiki/index.php?title=Question_Answering_(State_of_the_art)
-# collection of links to papers on question answering and machine reading - https://docs.google.com/document/d/1XCHWQkgFBS8Iy_y9-1-R82jGS8T_CrKiMxleqpqtmJg
+# machine reading methods and datasets - http://matt-gardner.github.io/paper-thoughts/2016/12/08/reading-comprehension-survey.html
+# machine reading resources - https://docs.google.com/document/d/1XCHWQkgFBS8Iy_y9-1-R82jGS8T_CrKiMxleqpqtmJg
 
 
 

@@ -32,6 +32,7 @@ applications
 	http://wired.com/2016/11/googles-search-engine-can-now-answer-questions-human-help/
 	http://bloomberg.com/news/articles/2015-10-26/google-turning-its-lucrative-web-search-over-to-ai-machines
 	http://research.googleblog.com/2016/09/a-neural-network-for-machine.html
+	http://research.googleblog.com/2016/12/app-discovery-with-google-play-part-2.html
 	http://googleresearch.blogspot.com/2015/08/the-neural-networks-behind-google-voice.html
 	http://googleresearch.blogspot.com/2015/09/google-voice-search-faster-and-more.html
 	http://googleresearch.blogspot.com/2015/10/improving-youtube-video-thumbnails-with.html
@@ -53,10 +54,12 @@ applications
 	http://instagram-engineering.tumblr.com/post/122961624217/trending-at-instagram
 	http://spectrum.ieee.org/computing/software/the-secret-of-airbnbs-pricing-algorithm
 	http://arnnet.com.au/article/589485/kaspersky-deepens-security-offering-through-machine-learning/
+	http://making.duolingo.com/how-we-learn-how-you-learn
 	http://broadinstitute.org/blog/machine-learning-approach-improves-crispr-cas9-guide-pairing
 	http://broadinstitute.org/blog/biologist-mathematician-and-computer-scientist-walk-foobar
 	http://oreilly.com/ideas/the-future-of-machine-intelligence/page/4/brendan-frey-deep-learning-meets-genome-biology
 	http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7347331 (genomics)
+	https://lukeoakdenrayner.wordpress.com/2016/11/27/do-computers-already-outperform-doctors/
 
 overview (non-technical)
 	"What Is Machine Learning" by Pedro Domingos - https://class.coursera.org/machlearning-001/lecture/145
@@ -151,8 +154,9 @@ tutorials
 
 	https://github.com/Nixonite/open-source-machine-learning-degree/blob/master/Introduction%20to%20Machine%20Learning%20-%20Wikipedia.pdf
 
-guides
+guide
 	things to know - http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf
+	Google's rules - http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf
 	common pitfalls - http://danielnee.com/?p=155&utm_content=buffer163ed
 	methods of overfitting - http://hunch.net/?p=22
 	more data or better algorithms - http://kdnuggets.com/2015/06/machine-learning-more-data-better-algorithms.html
@@ -375,6 +379,10 @@ learning theory:
 
   http://kdnuggets.com/2015/07/deep-learning-triumph-empiricism-over-theoretical-mathematical-guarantees.html
   https://hips.seas.harvard.edu/blog/2013/02/15/learning-theory-purely-theoretical/
+
+  https://mostafa-samir.github.io/ml-theory-pt1/
+  https://mostafa-samir.github.io/ml-theory-pt2/
+  https://mostafa-samir.github.io/ml-theory-pt3/
 
   http://jeremykun.com/2014/01/02/probably-approximately-correct-a-formal-theory-of-learning/
   http://jeremykun.com/2014/04/21/an-un-pac-learnable-problem/

@@ -28,6 +28,8 @@
   use cases:
   - http://www.semanticmachines.com/case
 
+  Ray Kurzweil: "We have a lot of language data [at Google]... and we don't even know how we would annotate it" - https://youtube.com/watch?v=w9sz7eW6MY8#t=4m27s
+
 
 
 
@@ -52,7 +54,8 @@
   Ilya Gelfenbeyn - https://medium.com/@IlyaG/4-reasons-why-developers-should-adopt-voice-enabled-tech-now-15dd08a78f08
 
   Svetlana Grigoryeva - "Search as a Dialog" - http://youtube.com/watch?v=wvSPInn-6V0 (in russian)
-  Boris Yangel - https://youtube.com/watch?v=lAFuBy-1khc (in russian)
+  Boris Yangel - http://youtube.com/watch?v=n-mNWacDKUQ (in russian)
+  Evgeniy Volkov - https://youtube.com/watch?v=UNOGyLGnNM0 (in russian)
   Igor Ashmanov - http://youtube.com/watch?v=Eatmixt9rek (in russian)
 
   https://producthunt.com/@chrismessina/collections/convcomm
@@ -67,13 +70,9 @@
 	https://backchannel.com/google-our-assistant-will-trigger-the-next-era-of-ai-3c72a4d7bc75
 	http://techcrunch.com/2016/05/18/google-unveils-google-assistant-a-big-upgrade-to-google-now/
 	http://nytimes.com/2016/09/29/technology/google-assistant.html
+	http://theverge.com/2016/12/8/13878444/google-home-developers-actions-ecosystem-app-store
 
-  Google Now
-	http://time.com/google-now/
-	http://forwardthinking.pcmag.com/none/335221-apple-google-and-the-road-to-the-know-it-all-assistant
-	http://thenextweb.com/google/2015/03/14/a-google-now-open-api-is-in-the-works-and-support-for-theme-park-ride-queue-times/
-
-  Google Messenger
+  Google Allo
 	http://forbes.com/sites/theopriestley/2015/12/23/google-to-launch-an-artificial-intelligence-messenger-service-to-rival-facebook-m/
 	http://businessinsider.com/report-google-is-working-on-a-new-smart-messaging-app-2015-12
 	http://wired.co.uk/news/archive/2015-12/29/2016-predictions-technology-trends
@@ -220,6 +219,9 @@
 
 [contests]
 
+  Alexa Prize - https://developer.amazon.com/alexaprize
+
+
   Dialog State Tracking Challenge - http://www.sigdial.org/workshops/conference15/proceedings/pdf/W14-4337.pdf + http://research.microsoft.com/apps/pubs/default.aspx?id=230117
 
 	"A spoken dialog system, while communicating with a user, must keep track of what the user wants from the system at each step. This process, termed dialog state tracking, is essential for a successful dialog system as it directly informs the system’s actions. The first Dialog State Tracking Challenge allowed for evaluation of different dialog state tracking techniques, providing common testbeds and evaluation suites. This paper presents a second challenge, which continues this tradition and introduces some additional features – a new domain, changing user goals and a richer dialog state. The challenge received 31 entries from 9 research groups. The results suggest that while large improvements on a competitive baseline are possible, trackers are still prone to degradation in mismatched conditions. An investigation into ensemble learning demonstrates the most accurate tracking can be achieved by combining multiple trackers."
@@ -233,6 +235,20 @@
   ISSDS (dialog systems) - http://www.uni-ulm.de/in/iwsds2015/list-of-accepted-papers.html
   CITIA Roadmap Conference - http://e-unlimited.com/events/view.aspx?events_pages_id=6145  (videos)
   Mobile Voice Conference 2015 - http://mobilevoiceconference.com/program.html + http://avios.org/?page_id=5403  (presentations)
+
+
+
+
+[reinforcement learning]
+
+"In the context of dialogue systems, states are dialogue contexts that are the agent’s interpretation of the environment, and are usually represented as a distribution over user intents, dialogue acts and slots and their values (i.e., intent(buy_ticket), inform(destination = Atlanta)). Actions are possible communication behaviors that are available to the system at each state, and are usually designed as a combination of dialogue act tags, slots and possibly slot values (i.e., request(departure_date))."
+
+
+"Dialogue management has significant differences compared to other discrete action domains that are the focus of much of deep RL research, such as game playing: an Atari game playing agent may be narrower in breadth, i.e., may have only a handful of moves such as going up, down, left or right, while a dialogue manager has a broader variety of system dialogue acts available, each associated with distinct semantics. An episode for a robot or game playing agent may be larger in depth, i.e., many games consist of hundreds of steps, where each action individually makes a small change in the environment state. A task-oriented dialogue, on the other hand, usually consists of fewer turns, and each system action can crucially alter the direction or length of the dialogue. Consequently, mistakes by the dialogue manager are both costlier and more temporally localized compared to these domains. In these respects, dialogue management is similar to strategy games which require long term planning and where each individual move has a large impact on the game state."
+
+"Dialogue management is an asymmetric, imperfect information game with no predefined set of rules, which complicates the application of these methods to dialogue management: (i) it is expensive to collect large, high quality data sets of dialogues with expert human agents and real users for every kind of task and user behavior that the dialogue system may be expected to handle; (ii) since the game is asymmetric, it is not straightforward to apply self-play to exhaustively explore the game tree; further, the flexibility of human conversations and lack of precise models of user goals and behavior make it laborious to engineer a realistic user simulator; and (iii) uncertainty over a user’s goals and strict latency expectations for a real-time dialogue agent make it difficult to leverage MCTS rollouts at inference time."
+
+"What works in favor of dialogue management is that unlike the domains mentioned above, dialogue between a user and an assistant is a collaborative game where two players work together to accomplish a goal. One player, the user, needs to access some information or complete some action, and the other player, the dialogue system, has access to a database or service through which the user’s goal can be achieved. The two players communicate with each other through dialogue moves (we refer to these as dialog acts). The user is usually willing to provide explicit or implicit feedback about the system’s actions if it leads to demonstrable improvements in the system’s performance). Dialogue systems which can take advantage of this feedback could potentially accelerate their learning. Moreover, such interactive feedback from actual users of the system is valuable for adapting the system to handle dialogue flows that were not present in the training corpus or were not covered by the user simulator."
 
 
 
@@ -280,19 +296,19 @@ http://arxiv.org/abs/1606.07056 - Emulating Human Conversations using Convolutio
 http://arxiv.org/abs/1610.07149 - Two are Better than One: An Ensemble of Retrieval- and Generation-Based Dialog Systems
 
 http://arxiv.org/abs/1606.03152 - Policy Networks with Two-Stage Training for Dialogue Systems (Maluuba) + http://www.maluuba.com/blog/2016/11/23/deep-reinforcement-learning-in-dialogue-systems
-http://kdd.org/kdd2016/subtopic/view/towards-conversational-recommender-systems - Towards Conversational Recommender Systems (Hoffman)
+http://arxiv.org/abs/1609.00777 - End-to-End Reinforcement Learning of Dialogue Agents for Information Access (Deng)
 http://arxiv.org/abs/1608.05081 - Efficient Exploration for Dialog Policy Learning with Deep BBQ Networks & Replay Buffer Spiking (Deng)
 http://arxiv.org/abs/1606.01541 - Deep Reinforcement Learning for Dialogue Generation (Jurafsky)
-http://arxiv.org/abs/1605.07683 - Learning End-to-End Goal-Oriented Dialog (Weston)
 http://arxiv.org/abs/1606.01269 - End-to-End LSTM-based Dialog Control Optimized with Supervised and Reinforcement Learning (Zweig)
-http://arxiv.org/abs/1606.01541 - Deep Reinforcement Learning for Dialogue Generation (Jurafsky)
+http://arxiv.org/abs/1511.04636 - Deep Reinforcement Learning with an Action Space Defined by Natural Language
+
+http://arxiv.org/abs/1605.07683 - Learning End-to-End Goal-Oriented Dialog (Weston)
 http://arxiv.org/abs/1606.03777 - Neural Belief Tracker: Data-Driven Dialogue State Tracking (Young)
-http://arxiv.org/abs/1609.00777 - End-to-End Reinforcement Learning of Dialogue Agents for Information Access
 http://arxiv.org/abs/1606.00776 - Multiresolution Recurrent Neural Networks: An Application to Dialogue Response Generation (Bengio)
 http://arxiv.org/abs/1605.06069 - A Hierarchical Latent Variable Encoder-Decoder Model for Generating Dialogues (Bengio)
 http://arxiv.org/abs/1604.04562 - A Network-based End-to-End Trainable Task-oriented Dialogue System (Young) + http://videolectures.net/deeplearning2016_wen_network_based/
-http://arxiv.org/abs/1606.01292 - An Attentional Neural Conversation Model with Improved Specificity
-http://arxiv.org/abs/1511.04636 - Deep Reinforcement Learning with an Action Space Defined by Natural Language
+http://arxiv.org/abs/1606.01292 - An Attentional Neural Conversation Model with Improved Specificity (Zweig)
+http://kdd.org/kdd2016/subtopic/view/towards-conversational-recommender-systems - Towards Conversational Recommender Systems (Hoffman) + https://periscope.tv/WiMLworkshop/1vAGRXDbvbkxl (Christakopoulou) + https://youtube.com/watch?v=nLUfAJqXFUI (Christakopoulou)
 
 http://arxiv.org/abs/1606.02960 - Sequence-to-Sequence Learning as Beam-Search Optimization + http://shortscience.org/paper?bibtexKey=journals/corr/1606.02960
 http://arxiv.org/pdf/1606.03402 - Length Bias in Encoder Decoder Models and a Case for Global Conditioning (Google)
@@ -313,7 +329,7 @@ http://arxiv.org/abs/1603.07954 - Improving Information Extraction by Acquiring 
 
 
 
-[interesting papers - dialog state management]
+[interesting papers]
 
 Gauthier, Mordatch -"A Paradigm for Situated and Goal-Driven Language Learning" [https://arxiv.org/abs/1610.03585]
 	"A distinguishing property of human intelligence is the ability to flexibly use language in order to communicate complex ideas with other humans in a variety of contexts. Research in natural language dialogue should focus on designing communicative agents which can integrate themselves into these contexts and productively collaborate with humans. In this abstract, we propose a general situated language learning paradigm which is designed to bring about robust language agents able to cooperate productively with humans. This dialogue paradigm is built on a utilitarian definition of language understanding. Language is one of multiple tools which an agent may use to accomplish goals in its environment. We say an agent “understands” language only when it is able to use language productively to accomplish these goals. Under this definition, an agent’s communication success reduces to its success on tasks within its environment. This setup contrasts with many conventional natural language tasks, which maximize linguistic objectives derived from static datasets. Such applications often make the mistake of reifying language as an end in itself. The tasks prioritize an isolated measure of linguistic intelligence (often one of linguistic competence, in the sense of Chomsky), rather than measuring a model’s effectiveness in real-world scenarios. Our utilitarian definition is motivated by recent successes in reinforcement learning methods. In a reinforcement learning setting, agents maximize success metrics on real-world tasks, without requiring direct supervision of linguistic behavior."
@@ -340,6 +356,11 @@ Weston - "Dialog-based Language Learning" [https://arxiv.org/abs/1604.06045]
 	task 9: asking for corrections
 	task 10: asking for supporting facts"
 	-- http://shortscience.org/paper?bibtexKey=journals/corr/Weston16 (Larochelle)
+
+
+
+
+[interesting papers - dialog state management]
 
 Henderson, Thomson, Young - "Word-Based Dialog State Tracking with Recurrent Neural Networks" [http://mi.eng.cam.ac.uk/~mh521/papers/Word_based_Dialog_State_Tracking_with_Recurrent_Neural_Networks.pdf]
 	"Recently discriminative methods for tracking the state of a spoken dialog have been shown to outperform traditional generative models. This paper presents a new word-based tracking method which maps directly from the speech recognition results to the dialog state without using an explicit semantic decoder. The method is based on a recurrent neural network structure which is capable of generalising to unseen dialog state hypotheses, and which requires very little feature engineering. The method is evaluated on the second Dialog State Tracking Challenge (DSTC2) corpus and the results demonstrate consistently high performance across all of the metrics."

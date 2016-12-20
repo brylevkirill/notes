@@ -287,14 +287,20 @@ relations with other fields - https://goo.gl/XlgPJu
   dimensions for classification of RL methods - https://webdocs.cs.ualberta.ca/~sutton/book/ebook/node105.html
 
 
-  hierarchical/modular RL
-	  - simplifies dimensionality of the action spaces over which we need to reason
-	  - enables quick planning and execution of low-level actions (such as robot movements)
-	  - provides a simple mechanism that connects plans and intentions to commands at the level of execution
-	  - supports rapid learning and generalisation (that humans are capable of)
+  abstractions for states and actions
+	"Combining State and Temporal Abstractions" - https://youtube.com/watch?v=iLSUByYY6so (Konidaris)
+	"Towards Representations for Efficient Reinforcement Learning" - https://youtube.com/watch?v=Pk3E5zqhl9k (Brunskill)
 
-	  introduction to options framework by Doina Precup - http://videolectures.net/deeplearning2016_precup_advanced_lr/
-	  http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/
+	hierarchical RL
+		http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/
+
+		- simplifies dimensionality of the action spaces over which we need to reason
+		- enables quick planning and execution of low-level actions (such as robot movements)
+		- provides a simple mechanism that connects plans and intentions to commands at the level of execution
+		- supports rapid learning and generalisation (that humans are capable of)
+
+		introduction to options framework by Doina Precup - http://videolectures.net/deeplearning2016_precup_advanced_lr/
+		"Advances in option construction: The option-critic architecture" - https://youtube.com/watch?v=8r_EoYnPjGk (Bacon)
 
 
   model-based RL
@@ -320,11 +326,17 @@ relations with other fields - https://goo.gl/XlgPJu
 
 
   benchmarks:
+  - OpenAI Universe
+	https://universe.openai.com
+	https://openai.com/blog/universe/
   - OpenAI Gym
 	https://gym.openai.com
 	https://gym.openai.com/envs + https://gym.openai.com/envs#atari
 	https://openai.com/blog/openai-gym-beta/
 	http://arxiv.org/abs/1606.01540
+  - DeepMind Lab
+	https://github.com/deepmind/lab
+	https://deepmind.com/blog/open-sourcing-deepmind-lab/
   - RLLab
 	https://github.com/rllab/rllab
 	"Benchmarking Deep Reinforcement Learning for Continuous Control" -
@@ -379,9 +391,10 @@ relations with other fields - https://goo.gl/XlgPJu
 	history of ideas by Sutton, Szepesvari, Bowling, Hayward, Muller - http://youtube.com/watch?v=UMm0XaCFTJQ
 
 	https://youtu.be/i3lEG6aRGm8?t=16m (Hassabis)
+	https://youtube.com/watch?v=4D5yGiYe8p4 (Silver)
+	https://youtu.be/LX8Knl0g0LE?t=4m41s (Huang)
 	https://youtu.be/yCALyQRN3hw?t=15m18s + https://youtu.be/qUAmTYHEyM8?t=15m31s + https://youtu.be/mzpW10DPHeQ?t=10m22s (Silver, Maddison)
-	https://youtube.com/watch?v=LX8Knl0g0LE (Huang)
-	http://icml.cc/2016/tutorials/AlphaGo-tutorial-slides.pdf
+
 	https://xcorr.net/2016/02/03/5-easy-pieces-how-deepmind-mastered-go/
 	https://github.com/Rochester-NRT/RocAlphaGo/wiki
 
@@ -781,8 +794,8 @@ relations with other fields - https://goo.gl/XlgPJu
 		https://youtu.be/-yX1SYeDHbg?t=49m25s (demo) + https://youtu.be/P78QYjWh5sM?t=20m50s (demo)
 
 	partially observable environments
-		introduction by Alexey Seleznev - https://youtube.com/watch?v=Ch3uHHh4Fgw (in russian)
-		"Deep Recurrent Q-Networ" by Alexander Fritzler - https://youtu.be/Ch3uHHh4Fgw?t=1h32m43s (in russian)
+		introduction by Alexey Seleznev - https://youtube.com/watch?v=_dkaynuKUFE (in russian)
+		"Deep Recurrent Q-Network" by Alexander Fritzler - https://youtube.com/watch?v=bE5DIJvZexc (in russian)
 		"Deep Reinforcement Learning with Memory" by Sergey Bartunov @DeepMind - http://93.180.23.59/videos/video/2420/in/channel/1/ (in russian)
 
 
@@ -812,16 +825,24 @@ relations with other fields - https://goo.gl/XlgPJu
 
 
 
-[bandits]
+[bandits and exploration]
 
   "Removing the credit assignment problem from reinforcement learning yields the Contextual Bandit setting which is generically solvable in the same manner as common supervised learning problems."
 
-  introduction
+  demo - http://iosband.github.io/2015/07/28/Beat-the-bandit.html
+
+  introduction by David Silver
+	http://youtube.com/watch?v=sGuiWX07sKw
+
+  introduction by Ian Osband
+	http://iosband.github.io/2015/07/19/Efficient-experimentation-and-multi-armed-bandits.html
+
+  introduction by Jeremy Kun
 	http://jeremykun.com/2013/10/28/optimism-in-the-face-of-uncertainty-the-ucb1-algorithm/
 	http://jeremykun.com/2013/11/08/adversarial-bandits-and-the-exp3-algorithm/
 	http://jeremykun.com/2013/12/09/bandits-and-stocks/
 
-  introduction and course by Csaba Szepesvari
+  overview and course by Csaba Szepesvari
 	http://banditalgs.com/2016/09/04/bandits-a-new-beginning/
 	http://banditalgs.com/2016/09/04/stochastic-bandits-warm-up/
 	http://banditalgs.com/2016/09/14/first-steps-explore-then-commit/
@@ -838,14 +859,10 @@ relations with other fields - https://goo.gl/XlgPJu
 	http://banditalgs.com/2016/11/21/sparse-stochastic-linear-bandits/
 	http://banditalgs.com/2016/11/24/adversarial-linear-bandits/
 
-  http://iosband.github.io/2015/07/19/Efficient-experimentation-and-multi-armed-bandits.html
-
-  http://blog.getstream.io/introduction-contextual-bandits/
-
-
-
-  tutorial by Csaba Szepesvari - https://youtube.com/watch?v=VVcLnAoU9Gw + https://youtube.com/watch?v=cknukHreMdI + https://youtube.com/watch?v=ruIO79C2IQc
-
+  tutorial by Csaba Szepesvari
+	https://youtube.com/watch?v=VVcLnAoU9Gw
+	https://youtube.com/watch?v=cknukHreMdI
+	https://youtube.com/watch?v=ruIO79C2IQc
 
   "Bandit Theory" by Sebastien Bubeck - https://blogs.princeton.edu/imabandit/2016/05/11/bandit-theory-part-i/ + https://blogs.princeton.edu/imabandit/2016/05/13/bandit-theory-part-ii/
 
@@ -901,20 +918,10 @@ Silver, Huang, Maddison, Guez, Sifre, Driessche, Schrittwieser, Antonoglou, Pann
 	"Google AlphaGo is a historical tour of AI ideas: 70s (Alpha-Beta), 80s/90s (RL & self-play), 00's (Monte-Carlo), 10's (deep neural networks)." [http://youtube.com/watch?v=UMm0XaCFTJQ]
 	"The most important application of RL here is to learn a value function which aims to predict with which probability a certain position will lead to winning the game. The learned expert moves are already good, but the network that produces them did not learn with the objective to win the game, but only to minimize the differences to the teacher values in the training data set."
 	(Raia Hadsell) "This points to one of the largest differences between human learning and modern machine learning. Deep networks, such as AlphaGo's policy and value nets, learn with lots of data and are generalists. They do not retain and refer back to individual examples, nor can they learn meaningfully from single examples. Moreover, if trained on data from a changing distribution, they will forget previous skills, quickly and catastrophically. Researchers at DeepMind and elsewhere are developing methods for continual learning, memory, and one-shot learning that scale to large deep networks."
-	-- http://youtu.be/i3lEG6aRGm8?t=16m (Hassabis)
-	-- http://youtu.be/yCALyQRN3hw?t=15m18s + http://youtu.be/qUAmTYHEyM8?t=15m31s + http://youtu.be/mzpW10DPHeQ?t=10m22s (Silver, Maddison)
-	-- http://youtube.com/watch?v=g-dKXOlsf98 + http://youtube.com/watch?v=SUbqykXVx0A (Silver, Hassabis)
+	-- http://youtube.com/watch?v=4D5yGiYe8p4 (Silver)
 	-- http://youtube.com/watch?v=LX8Knl0g0LE (Huang)
 	-- http://youtube.com/watch?v=UMm0XaCFTJQ (Sutton, Szepesvari, Bowling, Hayward, Muller, history of ideas)
-	-- http://icml.cc/2016/tutorials/AlphaGo-tutorial-slides.pdf
-	-- https://xcorr.net/2016/02/03/5-easy-pieces-how-deepmind-mastered-go/ (overview)
 	-- https://github.com/Rochester-NRT/RocAlphaGo/wiki (overview)
-	-- https://deepmind.com/research/alphago/alphago-games-english/
-	-- https://gogameguru.com/alphago-defeats-lee-sedol-game-1/ + http://deeplearningskysthelimit.blogspot.ru/2016/04/part-6-review-of-game-1-lee-sedol.html + https://youtube.com/watch?v=bIQxOsRAXCo
-	-- https://gogameguru.com/alphago-races-ahead-2-0-lee-sedol/ + http://deeplearningskysthelimit.blogspot.ru/2016/04/part-7-review-of-game-2-alphagos-new.html + https://youtube.com/watch?v=1aMt7ulL6EI
-	-- https://gogameguru.com/alphago-shows-true-strength-3rd-victory-lee-sedol/ + http://deeplearningskysthelimit.blogspot.ru/2016/04/part-8-review-of-game-3-lee-sedols.html + https://youtube.com/watch?v=6hROM_bxZ9E
-	-- https://gogameguru.com/lee-sedol-defeats-alphago-masterful-comeback-game-4/ + http://deeplearningskysthelimit.blogspot.ru/2016/04/part-9-review-of-game-4-lee-sedols.html + https://youtube.com/watch?v=G5gJ-pVo1gs
-	-- https://gogameguru.com/alphago-defeats-lee-sedol-4-1/ + http://deeplearningskysthelimit.blogspot.ru/2016/05/part-10-review-of-game-5-alphago.html + https://youtube.com/watch?v=QxHdPdRcMhw
 	-- https://github.com/Rochester-NRT/AlphaGo/
 
 Mnih, Kavukcuoglu, Silver, Graves, Antonoglou, Wierstra, Riedmiller - "Playing Atari with Deep Reinforcement Learning" [http://www.cs.toronto.edu/~vmnih/docs/dqn.pdf] (Atari videogames)
@@ -1023,6 +1030,40 @@ Microsoft Research - "A Multiworld Testing Decision Service" [http://arxiv.org/a
 
 [interesting papers - exploration]
 
+Schmidhuber - "Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes" [http://arxiv.org/abs/0812.4360]
+	"I argue that data becomes temporarily interesting by itself to some self-improving, but computationally limited, subjective observer once he learns to predict or compress the data in a better way, thus making it subjectively simpler and more beautiful. Curiosity is the desire to create or discover more non-random, non-arbitrary, regular data that is novel and surprising not in the traditional sense of Boltzmann and Shannon but in the sense that it allows for compression progress because its regularity was not yet known. This drive maximizes interestingness, the first derivative of subjective beauty or compressibility, that is, the steepness of the learning curve. It motivates exploring infants, pure mathematicians, composers, artists, dancers, comedians, yourself, and artificial systems."
+
+Schmidhuber - "Formal Theory of Creativity, Fun, and Intrinsic Motivation" [http://people.idsia.ch/~juergen/ieeecreative.pdf]
+	"The simple but general formal theory of fun & intrinsic motivation & creativity is based on the concept of maximizing intrinsic reward for the active creation or discovery of novel, surprising patterns allowing for improved prediction or data compression. It generalizes the traditional field of active learning, and is related to old but less formal ideas in aesthetics theory and developmental psychology. It has been argued that the theory explains many essential aspects of intelligence including autonomous development, science, art, music, humor. This overview first describes theoretically optimal (but not necessarily practical) ways of implementing the basic computational principles on exploratory, intrinsically motivated agents or robots, encouraging them to provoke event sequences exhibiting previously unknown but learnable algorithmic regularities. Emphasis is put on the importance of limited computational resources for online prediction and compression. Discrete and continuous time formulations are given. Previous practical but non-optimal implementations (1991, 1995, 1997-2002) are reviewed, as well as several recent variants by others (2005-). A simplified typology addresses current confusion concerning the precise nature of intrinsic motivation."
+	"I have argued that a simple but general formal theory of creativity based on reward for creating or finding novel patterns allowing for data compression progress explains many essential aspects of intelligence including science, art, music, humor. Here I discuss what kind of general bias towards algorithmic regularities we insert into our robots by implementing the principle, why that bias is good, and how the approach greatly generalizes the field of active learning. I provide discrete and continuous time formulations for ongoing work on building an Artificial General Intelligence based on variants of the artificial creativity framework."
+	"In the real world external rewards are rare. But unsupervised AGIs using additional intrinsic rewards as described in this paper will be motivated to learn many useful behaviors even in absence of external rewards, behaviors that lead to predictable or compressible results and thus reflect regularities in the environment, such as repeatable patterns in the world’s reactions to certain action sequences. Often a bias towards exploring previously unknown environmental regularities through artificial curiosity / creativity is a priori desirable because goal-directed learning may greatly profit from it, as behaviors leading to external reward may often be rather easy to compose from previously learnt curiosity-driven behaviors. It may be possible to formally quantify this bias towards novel patterns in form of a mixture-based prior, a weighted sum of probability distributions on sequences of actions and resulting inputs, and derive precise conditions for improved expected external reward intake. Intrinsic reward may be viewed as analogous to a regularizer in supervised learning, where the prior distribution on possible hypotheses greatly influences the most probable interpretation of the data in a Bayesian framework (for example, the well-known weight decay term of neural networks is a consequence of a Gaussian prior with zero mean for each weight). Following the introductory discussion, some of the AGIs based on the creativity principle will become scientists, artists, or comedians."
+	-- http://idsia.ch/~juergen/creativity.html
+	-- https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber
+	-- https://vimeo.com/28759091
+	-- http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/
+	-- https://vimeo.com/7441291
+
+Houthooft, Chen, Duan, Schulman, Turck, Abbeel - "VIME: Variational Information Maximizing Exploration" [http://arxiv.org/abs/1605.09674] # approximation of Artificial Curiosity and Creativity by Juergen Schmidhuber
+	"Scalable and effective exploration remains a key challenge in reinforcement learning. While there are methods with optimality guarantees in the setting of discrete state and action spaces, these methods cannot be applied in high-dimensional greedy exploration or adding Gaussian noise to the controls. This paper introduces Variational Information Maximizing Exploration (VIME), an exploration strategy based on maximization of information gain about the agent’s belief of environment dynamics. We propose a practical implementation, using variational inference in Bayesian neural networks which efficiently handles continuous state and action spaces. VIME modifies the MDP reward function, and can be applied with several different underlying RL algorithms. We demonstrate that VIME achieves significantly better performance compared to heuristic exploration methods across a variety of continuous control tasks and algorithms, including tasks with very sparse rewards."
+	"We have proposed Variational Information Maximizing Exploration, a curiosity-driven exploration strategy for continuous control tasks. Variational inference is used to approximate the posterior distribution of a Bayesian neural network that represents the environment dynamics. Using information gain in this learned dynamics model as intrinsic rewards allows the agent to optimize for both external reward and intrinsic surprise simultaneously. Empirical results show that VIME performs significantly better than heuristic exploration methods across various continuous control tasks and algorithms. As future work, we would like to investigate measuring surprise in the value function and using the learned dynamics model for planning."
+	"This paper proposes a curiosity-driven exploration strategy, making use of information gain about the agent’s internal belief of the dynamics model as a driving force. This principle can be traced back to the concepts of curiosity and surprise (Schmidhuber). Within this framework, agents are encouraged to take actions that result in states they deem surprising - i.e., states that cause large updates to the dynamics model distribution. We propose a practical implementation of measuring information gain using variational inference. Herein, the agent’s current understanding of the environment dynamics is represented by a Bayesian neural networks. We also show how this can be interpreted as measuring compression improvement, a proposed model of curiosity (Schmidhuber). In contrast to previous curiosity-based approaches, our model scales naturally to continuous state and action spaces. The presented approach is evaluated on a range of continuous control tasks, and multiple underlying RL algorithms. Experimental results show that VIME achieves significantly better performance than naïve exploration strategies."
+	"r'(st,at,st+1) = r(st,at) + μ * Dkl[p(θ|ξt,at,st+1)||p(θ|ξt)]"
+	-- https://goo.gl/fyxLvI (demo)
+	-- https://youtu.be/WRFqzYWHsZA?t=18m38s (Abbeel)
+	-- https://youtube.com/watch?v=sRIjxxjVrnY (Panin)
+	-- https://github.com/openai/vime
+
+Bellemare, Srinivasan, Ostrovski, Schaul, Saxton, Munos - "Unifying Count-Based Exploration and Intrinsic Motivation" [http://arxiv.org/abs/1606.01868]
+	"We consider an agent's uncertainty about its environment and the problem of generalizing this uncertainty across observations. Specifically, we focus on the problem of exploration in non-tabular reinforcement learning. Drawing inspiration from the intrinsic motivation literature, we use density models to measure uncertainty, and propose a novel algorithm for deriving a pseudo-count from an arbitrary density model. This technique enables us to generalize count-based exploration algorithms to the non-tabular case. We apply our ideas to Atari 2600 games, providing sensible pseudo-counts from raw pixels. We transform these pseudo-counts into intrinsic rewards and obtain significantly improved exploration in a number of hard games, including the infamously difficult Montezuma's Revenge."
+	"Many of hard RL problems share one thing in common: rewards are few and far between. In reinforcement learning, exploration is the process by which an agent comes to understand its environment and discover where the reward is. Most practical RL applications still rely on crude algorithms, like epsilon-greedy (once in awhile, choose a random action), because more theoretically-motivated approaches don't scale. But epsilon-greedy is quite data inefficient, and often can't even get off the ground. In this paper we show that it's possible to use simple density models (assigning probabilities to states) to "count" the number of times we've visited a particular state. We call the output of our algorithm a pseudo-count. Pseudo-counts give us a handle on uncertainty: how confident are we that we've explored this part of the game?"
+	"Intrinsic motivation offers a different perspective on exploration. Intrinsic motivation algorithms typically use novelty signals - surrogates for extrinsic rewards - to drive curiosity within an agent, influenced by classic ideas from psychology. To sketch out some recurring themes, these novelty signals might be prediction error (Singh et al., 2004; Stadie et al., 2015), value error (Simsek and Barto, 2006), learning progress (Schmidhuber, 1991), or mutual information (Still and Precup, 2012; Mohamed and Rezende, 2015). The idea also finds roots in continual learning (Ring, 1997). In Thrun’s taxonomy, intrinsic motivation methods fall within the category of error-based exploration."
+	"We provide what we believe is the first formal evidence that intrinsic motivation and count-based exploration are but two sides of the same coin. Our main result is to derive a pseudo-count from a sequential density model over the state space. We only make the weak requirement that such a model should be learning-positive: observing x should not immediately decrease its density. In particular, counts in the usual sense correspond to the pseudo-counts implied by the data’s empirical distribution. We expose a tight relationship between the pseudo-count, a variant of Schmidhuber’s compression progress which we call prediction gain, and Bayesian information gain."
+	--
+	"Although I'm a bit bothered by the assumption of the density model being "learning-positive", which seems central to their theoretical derivation of pseudo-counts: after you observe a state, your subjective probability of observing it again immediately should generally decrease unless you believe that the state is a fixed point attractor with high probability. I can see that in practice the assumption works well in their experimental setting since they use pixel-level factored models and, by the nature of the ATARI games they test on, most pixels don't change value from frame to frame, but in a more general setting, e.g. a side-scroller game or a 3D first-person game this assumption would not hold."
+	-- https://youtube.com/watch?v=0yI2wJ6F8r0 (demo)
+	-- https://youtu.be/qduxl-vKz1E?t=1h16m30s (Seleznev, in russian)
+	-- https://github.com/lake4790k/pseudo-count-atari
+
 Singh, Barto, Chentanez - "Intrinsically Motivated Reinforcement Learning" [http://www-anw.cs.umass.edu/pubs/2004/singh_bc_NIPS04.pdf]
 	"Psychologists call behavior intrinsically motivated when it is engaged in for its own sake rather than as a step toward solving a specific problem of clear practical value. But what we learn during intrinsically motivated behavior is essential for our development as competent autonomous entities able to efficiently solve a wide range of practical problems as they arise. In this paper we present initial results from a computational study of intrinsically motivated reinforcement learning aimed at allowing artificial agents to construct and extend hierarchies of reusable skills that are needed for competent autonomy."
 	"Psychologists distinguish between extrinsic motivation, which means being moved to do something because of some specific rewarding outcome, and intrinsic motivation, which refers to being moved to do something because it is inherently enjoyable. Intrinsic motivation leads organisms to engage in exploration, play, and other behavior driven by curiosity in the absence of explicit reward. These activities favor the development of broad competence rather than being directed to more externally-directed goals. In contrast, machine learning algorithms are typically applied to single problems and so do not cope flexibly with new problems as they arise over extended periods of time. Although the acquisition of competence may not be driven by specific problems, this competence is routinely enlisted to solve many different specific problems over the agent’s lifetime. The skills making up general competence act as the “building blocks” out of which an agent can form solutions to new problems as they arise. Instead of facing each new challenge by trying to create a solution out of low-level primitives, it can focus on combining and adjusting its higher-level skills. In animals, this greatly increases the efficiency of learning to solve new problems, and our main objective is to achieve a similar efficiency in our machine learning algorithms and architectures. This paper presents an elaboration of the reinforcement learning framework that encompasses the autonomous development of skill hierarchies through intrinsically motivated reinforcement learning."
@@ -1064,6 +1105,7 @@ Stadie, Levine, Abbeel - "Incentivizing Exploration In Reinforcement Learning Wi
 
 Osband, Blundell, Pritzel, van Roy - "Deep Exploration via Bootstrapped DQN" [http://arxiv.org/abs/1602.04621]
 	"Efficient exploration in complex environments remains a major challenge for reinforcement learning. We propose bootstrapped DQN, a simple algorithm that explores in a computationally and statistically efficient manner through use of randomized value functions. Unlike dithering strategies such as Epsilon-greedy exploration, bootstrapped DQN carries out temporally-extended (or deep) exploration; this can lead to exponentially faster learning. We demonstrate these benefits in complex stochastic MDPs and in the large-scale Arcade Learning Environment. Bootstrapped DQN substantially improves learning times and performance across most Atari games."
+	"One of the reasons deep RL algorithms learn so slowly is that they do not gather the right data to learn about the problem. These algorithms use dithering (taking random actions) to explore their environment - which can be exponentially less efficient that deep exploration which prioritizes potentially informative policies over multiple timesteps. There is a large literature on algorithms for deep exploration for statistically efficient reinforcement learning. The problem is that none of these algorithms are computationally tractable with deep learning. We present the first practical reinforcement learning algorithm that combines deep learning with deep exploration."
 	"In this paper we present bootstrapped DQN as an algorithm for efficient reinforcement learning in complex environments. We demonstrate that the bootstrap can produce useful uncertainty estimates for deep neural networks. Bootstrapped DQN can leverage these uncertainty estimates for deep exploration even in difficult stochastic systems; it also produces several state of the art results in Atari 2600. Bootstrapped DQN is computationally tractable and also naturally scalable to massive parallel systems as per (Nair et al., 2015). We believe that, beyond our specific implementation, randomized value functions represent a promising alternative to dithering for exploration. Bootstrapped DQN practically combines efficient generalization with exploration for complex nonlinear value functions.
 	"Our algorithm, bootstrapped DQN, modifies DQN to produce distribution over Q-values via the bootstrap. At the start of each episode, bootstrapped DQN samples a single Q-value function from its approximate posterior. The agent then follows the policy which is optimal for that sample for the duration of the episode. This is a natural extension of the Thompson sampling heuristic to RL that allows for temporally extended (or deep) exploration. Bootstrapped DQN exhibits deep exploration unlike the naive application of Thompson sampling to RL which resample every timestep."
 	"By contrast, Epsilon-greedy strategies are almost indistinguishable for small values of Epsilon and totally ineffectual for larger values. Our heads explore a diverse range of policies, but still manage to each perform well individually."
@@ -1074,23 +1116,10 @@ Osband, Blundell, Pritzel, van Roy - "Deep Exploration via Bootstrapped DQN" [ht
 	-- https://github.com/iassael/torch-bootstrapped-dqn
 	-- https://github.com/carpedm20/deep-rl-tensorflow
 
-Bellemare, Srinivasan, Ostrovski, Schaul, Saxton, Munos - "Unifying Count-Based Exploration and Intrinsic Motivation" [http://arxiv.org/abs/1606.01868]
-	"We consider an agent's uncertainty about its environment and the problem of generalizing this uncertainty across observations. Specifically, we focus on the problem of exploration in non-tabular reinforcement learning. Drawing inspiration from the intrinsic motivation literature, we use density models to measure uncertainty, and propose a novel algorithm for deriving a pseudo-count from an arbitrary density model. This technique enables us to generalize count-based exploration algorithms to the non-tabular case. We apply our ideas to Atari 2600 games, providing sensible pseudo-counts from raw pixels. We transform these pseudo-counts into intrinsic rewards and obtain significantly improved exploration in a number of hard games, including the infamously difficult Montezuma's Revenge."
-	"Intrinsic motivation offers a different perspective on exploration. Intrinsic motivation algorithms typically use novelty signals - surrogates for extrinsic rewards - to drive curiosity within an agent, influenced by classic ideas from psychology. To sketch out some recurring themes, these novelty signals might be prediction error (Singh et al., 2004; Stadie et al., 2015), value error (Simsek and Barto, 2006), learning progress (Schmidhuber, 1991), or mutual information (Still and Precup, 2012; Mohamed and Rezende, 2015). The idea also finds roots in continual learning (Ring, 1997). In Thrun’s taxonomy, intrinsic motivation methods fall within the category of error-based exploration."
-	"We provide what we believe is the first formal evidence that intrinsic motivation and count-based exploration are but two sides of the same coin. Our main result is to derive a pseudo-count from a sequential density model over the state space. We only make the weak requirement that such a model should be learning-positive: observing x should not immediately decrease its density. In particular, counts in the usual sense correspond to the pseudo-counts implied by the data’s empirical distribution. We expose a tight relationship between the pseudo-count, a variant of Schmidhuber’s compression progress which we call prediction gain, and Bayesian information gain."
-	--
-	"Although I'm a bit bothered by the assumption of the density model being "learning-positive", which seems central to their theoretical derivation of pseudo-counts: after you observe a state, your subjective probability of observing it again immediately should generally decrease unless you believe that the state is a fixed point attractor with high probability. I can see that in practice the assumption works well in their experimental setting since they use pixel-level factored models and, by the nature of the ATARI games they test on, most pixels don't change value from frame to frame, but in a more general setting, e.g. a side-scroller game or a 3D first-person game this assumption would not hold."
-	-- https://youtube.com/watch?v=0yI2wJ6F8r0 (demo)
-	-- https://youtu.be/qduxl-vKz1E?t=1h16m30s (Seleznev, in russian)
-	-- https://github.com/lake4790k/pseudo-count-atari
-
-Houthooft, Chen, Duan, Schulman, Turck, Abbeel - "Curiosity-driven Exploration in Deep Reinforcement Learning via Bayesian Neural Networks" [http://arxiv.org/abs/1605.09674]
-	"Scalable and effective exploration remains a key challenge in reinforcement learning. While there are methods with optimality guarantees in the setting of discrete state and action spaces, these methods cannot be applied in high-dimensional greedy exploration or adding Gaussian noise to the controls. This paper introduces Variational Information Maximizing Exploration (VIME), an exploration strategy based on maximization of information gain about the agent’s belief of environment dynamics. We propose a practical implementation, using variational inference in Bayesian neural networks which efficiently handles continuous state and action spaces. VIME modifies the MDP reward function, and can be applied with several different underlying RL algorithms. We demonstrate that VIME achieves significantly better performance compared to heuristic exploration methods across a variety of continuous control tasks and algorithms, including tasks with very sparse rewards."
-	"We have proposed Variational Information Maximizing Exploration, a curiosity-driven exploration strategy for continuous control tasks. Variational inference is used to approximate the posterior distribution of a Bayesian neural network that represents the environment dynamics. Using information gain in this learned dynamics model as intrinsic rewards allows the agent to optimize for both external reward and intrinsic surprise simultaneously. Empirical results show that VIME performs significantly better than heuristic exploration methods across various continuous control tasks and algorithms. As future work, we would like to investigate measuring surprise in the value function and using the learned dynamics model for planning."
-	"This paper proposes a curiosity-driven exploration strategy, making use of information gain about the agent’s internal belief of the dynamics model as a driving force. This principle can be traced back to the concepts of curiosity and surprise (Schmidhuber). Within this framework, agents are encouraged to take actions that result in states they deem surprising - i.e., states that cause large updates to the dynamics model distribution. We propose a practical implementation of measuring information gain using variational inference. Herein, the agent’s current understanding of the environment dynamics is represented by a Bayesian neural networks. We also show how this can be interpreted as measuring compression improvement, a proposed model of curiosity (Schmidhuber). In contrast to previous curiosity-based approaches, our model scales naturally to continuous state and action spaces. The presented approach is evaluated on a range of continuous control tasks, and multiple underlying RL algorithms. Experimental results show that VIME achieves significantly better performance than naïve exploration strategies."
-	-- https://goo.gl/fyxLvI (demo)
-	-- https://youtube.com/watch?v=sRIjxxjVrnY (Panin)
-	-- https://github.com/openai/vime
+Nachum, Norouzi, Schuurmans - "Improving Policy Gradient by Exploring Under-appreciated Rewards" [https://arxiv.org/abs/1611.09321]
+	"This paper presents a novel form of policy gradient for model-free reinforcement learning with improved exploration properties. Current policy-based methods use entropy regularization to encourage undirected exploration of the reward landscape, which is ineffective in high dimensional spaces with sparse rewards. We propose a more directed exploration strategy that promotes exploration of under-appreciated reward regions. An action sequence is considered under-appreciated if its log-probability under the current policy under-estimates its resulting reward. The proposed exploration strategy is easy to implement, requiring small modifications to an implementation of the REINFORCE algorithm. We evaluate the approach on a set of algorithmic tasks that have long challenged RL methods. Our approach reduces hyper-parameter sensitivity and demonstrates significant improvements over baseline methods. Our algorithm successfully solves a benchmark multi-digit addition task and generalizes to long sequences. This is, to our knowledge, the first time that a pure RL method has solved addition using only reward feedback."
+	"Prominent approaches to improving exploration beyond epsilon-greedy in value-based or model-based RL have focused on reducing uncertainty by prioritizing exploration toward states and actions where the agent knows the least. This basic intuition underlies work on counter and recency methods, exploration methods based on uncertainty estimates of values, methods that prioritize learning environment dynamics, and methods that provide an intrinsic motivation or curiosity bonus for exploring unknown states. We relate the concepts of value and policy in RL and propose an exploration strategy based on the discrepancy between the two."
+	"To confirm whether our method is able to find the correct algorithm for multi-digit addition, we investigate its generalization to longer input sequences than provided during training. We evaluate the trained models on inputs up to a length of 2000 digits, even though training sequences were at most 33 characters. For each length, we test the model on 100 randomly generated inputs, stopping when the accuracy falls below 100%. Out of the 60 models trained on addition with UREX, we find that 5 models generalize to numbers up to 2000 digits without any observed mistakes."
 
 Osband, van Roy - "Why is Posterior Sampling Better than Optimism for Reinforcement Learning?" [http://arxiv.org/abs/1607.00215]
 	"Computational results demonstrate that posterior sampling for reinforcement learning (PSRL) dramatically outperforms algorithms driven by optimism, such as UCRL2. We provide insight into the extent of this performance boost and the phenomenon that drives it. We leverage this insight to establish an O(H√S√A√T) expected regret bound for PSRL in finite-horizon episodic Markov decision processes, where H is the horizon, S is the number of states, A is the number of actions and T is the time elapsed. This improves upon the best previous bound of O(HS√A√T) for any reinforcement learning algorithm."
@@ -1128,12 +1157,16 @@ Bacon, Harb, Precup - "The Option-Critic Architecture" [http://arxiv.org/abs/160
 	"We developed a general, gradient-based approach for learning simultaneously the intra-option policies and termination conditions, as well as the policy over options, in order to optimize a performance objective for the task at hand. Our ALE experiments demonstrate successful end-to-end training of the options in the presence of nonlinear function approximation. As noted, our approach only requires specifying the number of options. However, if one wanted to use additional pseudo-rewards, the option-critic framework would easily accommodate it. The internal policies and termination function gradients would simply need to be taken with respect to the pseudo-rewards instead of the task reward. A simple instance of this idea, which we used in some of the experiments, is to use additional rewards to encourage options that are indeed temporally extended, by adding a penalty whenever a switching event occurs."
 	"Our approach can work seamlessly with any other heuristic for biasing the set of options towards some desirable property (e.g. compositionality or sparsity), as long as it can be expressed as an additive reward structure. However, as seen in the results, such biasing is not necessary to produce good results. The option-critic architecture relies on the policy gradient theorem, and as discussed in (Thomas 2014), the gradient estimators can be biased in the Qt discounted case. By introducing factors of the form γ^t Π i=1 [1 − βi] in our updates (Thomas 2014, eq (3)), it would be possible to obtain unbiased estimates. However, we do not recommend this approach, since the sample complexity of the unbiased estimators is generally too high and the biased estimators performed well in our experiments."
 	"Perhaps the biggest remaining limitation of our work is the assumption that all options apply everywhere. In the case of function approximation, a natural extension to initiation sets is to use a classifier over features, or some other form of function approximation. As a result, determining which options are allowed may have similar cost to evaluating a policy over options (unlike in the tabular setting, where options with sparse initiation sets lead to faster decisions). This is akin to eligibility traces, which are more expensive than using no trace in the tabular case, but have the same complexity with function approximation. If initiation sets are to be learned, the main constraint that needs to be added is that the options and the policy over them lead to an ergodic chain in the augmented state-option space. This can be expressed as a flow condition that links initiation sets with terminations. The precise description of this condition, as well as sparsity regularization for initiation sets, is left for future work."
+	-- http://videolectures.net/deeplearning2016_precup_advanced_lr/ (Precup)
+	-- http://youtube.com/watch?v=8r_EoYnPjGk (Bacon)
+	-- http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/
 
 Tamar, Wu, Thomas, Levine, Abbeel - "Value Iteration Networks" [http://arxiv.org/abs/1602.02867]
 	"We introduce the value iteration network (VIN): a fully differentiable neural network with a ‘planning module’ embedded within. VINs can learn to plan, and are suitable for predicting outcomes that involve planning-based reasoning, such as policies for reinforcement learning. Key to our approach is a novel differentiable approximation of the value-iteration algorithm, which can be represented as a convolutional neural network, and trained end-to-end using standard backpropagation. We evaluate VIN based policies on discrete and continuous path-planning domains, and on a natural-language based search task. We show that by learning an explicit planning computation, VIN policies generalize better to new, unseen domains."
 	"The introduction of powerful and scalable RL methods has opened up a range of new problems for deep learning. However, few recent works investigate policy architectures that are specifically tailored for planning under uncertainty, and current RL theory and benchmarks rarely investigate the generalization properties of a trained policy. This work takes a step in this direction, by exploring better generalizing policy representations. Our VIN policies learn an approximate planning computation relevant for solving the task, and we have shown that such a computation leads to better generalization in a diverse set of tasks, ranging from simple gridworlds that are amenable to value iteration, to continuous control, and even to navigation of Wikipedia links. In future work we intend to learn different planning computations, based on simulation, or optimal linear control, and combine them with reactive policies, to potentially develop RL solutions for task and motion planning"
 	--
 	"Its contribution is to offer a new way to think about VI in the context of deep nets. It shows how the CNN architecture can be hijacked to implement the Bellman optimality operator, and how the backprop signal can be used to learn a deterministic model of the underlying MDP."
+	-- https://youtube.com/watch?v=tXBHfbHHlKc (Tamar) + http://technion.ac.il/~danielm/icml_slides/Talk7.pdf
 	-- https://github.com/karpathy/paper-notes/blob/master/vin.md
 
 
@@ -1281,7 +1314,7 @@ Hausknecht, Stone - "Deep Recurrent Q-Learning for Partially Observable MDPs" [h
 	"Real-world tasks often feature incomplete and noisy state information, resulting from partial observability. We modify DQN to better deal with the noisy observations characteristic of POMDPs by leveraging advances in Recurrent Neural Networks. More specifically we combined a Long Short Term Memory with a Deep Q-Network and show the resulting Deep Recurrent Q-Network, despite the lack of convolutional velocity detection, is better equipped than a standard Deep Q-Network to handle the type of partial observability induced by flickering game screens. Further analysis shows that DRQN, when trained with partial observations, can generalize its policies to the case of complete observations. On the Flickering Pong domain, performance scales with the observability of the domain, reaching near-perfect performance when every game screen is observed. This result indicates that the recurrent network learns policies that are both robust enough to handle to missing game screens, and scalable enough to improve performance. Generalization also occurs in the opposite direction: when trained on unobscured Atari games and evaluated against obscured games, DRQN’s performance generalizes better than DQN’s at all levels of partial information. Our results indicate that given access to the same amount of history, processing observations in a recurrent layer (like DRQN) rather than stacking frames in the input layer (like DQN) yields better performance on POMDPs and better generalization for both POMDPs and MDPs."
 	--
 	"Demonstrated that recurrent Q learning can perform the required information integration to resolve short-term partial observability (e.g. to estimate velocities) that is achieved via stacks of frames in the original DQN architecture."
-	-- https://youtu.be/Ch3uHHh4Fgw?t=1h32m43s (Fritzler, in russian)
+	-- https://youtube.com/watch?v=bE5DIJvZexc (Fritzler, in russian)
 
 Li, Gao, He, Chen, Deng, He - "Recurrent Reinforcement Learning: A Hybrid Approach" [http://arxiv.org/abs/1509.03044]
 	"Successful applications of reinforcement learning in real-world problems often require dealing with partially observable states. It is in general very challenging to construct and infer hidden states as they often depend on the agent’s entire interaction history and may require substantial domain knowledge. In this work, we investigate a deep-learning approach to learning the representation of states in partially observable tasks, with minimal prior knowledge of the domain. In particular, we study reinforcement learning with deep neural networks, including RNN and LSTM, which are equipped with the desired property of being able to capture long-term dependency on history, and thus providing an effective way of learning the representation of hidden states. We further develop a hybrid approach that combines the strength of both supervised learning (for representing hidden states) and reinforcement learning (for optimizing control) with joint training. Extensive experiments based on a KDD Cup 1998 direct mailing campaign problem demonstrate the effectiveness and advantages of the proposed approach, which performs the best across the board."
@@ -1436,7 +1469,7 @@ Wulfmeier, Ondruska, Posner - "Maximum Entropy Deep Inverse Reinforcement Learni
 	"This paper presents a general framework for employing deep architectures - in particular neural networks - to solve the inverse reinforcement learning (IRL) problem. Specifically, we propose to exploit the representational capacity and favourable computational complexity of deep networks to approximate complex, nonlinear reward functions. We show that the Maximum Entropy paradigm for IRL lends itself naturally to the efficient training of deep architectures. At test time, the approach leads to a computational complexity independent of the number of demonstrations. This makes it especially well-suited for applications in life-long learning scenarios commonly encountered in robotics. We demonstrate that our approach achieves performance commensurate to the state-of-the-art on existing benchmarks already with simple, comparatively shallow network architectures while significantly outperforming the state-of-the-art on an alternative benchmark based on more complex, highly varying reward structures representing strong interactions between features. Furthermore, we extend the approach to include convolutional layers in order to eliminate the dependency on precomputed features of current algorithms and to underline the substantial gain in flexibility in framing IRL in the context of deep learning."
 
 Finn, Levine, Abbeel - "Guided Cost Learning: Deep Inverse Optimal Control via Policy Optimization" [https://arxiv.org/abs/1603.00448]
-	"Reinforcement learning can acquire complex behaviors from high-level specifications. However, defining a cost function that can be optimized effectively and encodes the correct task is challenging in practice. We explore how inverse optimal control (IOC) can be used to learn behaviors from demonstrations, with applications to torque control of high-dimensional robotic systems. Our method addresses two key challenges in inverse optimal control: first, the need for informative features and effective regularization to impose structure on the cost, and second, the difficulty of learning the cost function under unknown dynamics for high-dimensional continuous systems. To address the former challenge, we present an algorithm capable of learning arbitrary nonlinear cost functions, such as neural networks, without meticulous feature engineering. To address the latter challenge, we formulate an efficient sample-based approximation for MaxEnt IOC. We evaluate our method on a series of simulated tasks and real-world robotic manipulation problems, demonstrating substantial improvement over prior methods both in terms of task complexity and sample efficiency."
+	"Reinforcement learning can acquire complex behaviors from high-level specifications. However, defining a cost function that can be optimized effectively and encodes the correct task is challenging in practice. We explore how inverse optimal control can be used to learn behaviors from demonstrations, with applications to torque control of high-dimensional robotic systems. Our method addresses two key challenges in inverse optimal control: first, the need for informative features and effective regularization to impose structure on the cost, and second, the difficulty of learning the cost function under unknown dynamics for high-dimensional continuous systems. To address the former challenge, we present an algorithm capable of learning arbitrary nonlinear cost functions, such as neural networks, without meticulous feature engineering. To address the latter challenge, we formulate an efficient sample-based approximation for MaxEnt IOC. We evaluate our method on a series of simulated tasks and real-world robotic manipulation problems, demonstrating substantial improvement over prior methods both in terms of task complexity and sample efficiency."
 	--
 	"technique that lets one apply Maximum Entropy Inverse Optimal Control without the double-loop procedure and using policy gradient techniques"
 	-- https://youtube.com/watch?v=hXxaepw0zAw (demo)

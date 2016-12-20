@@ -309,6 +309,29 @@ research problems:
 	"Why video games are essential for inventing artificial intelligence" by Julian Togelius - http://togelius.blogspot.ru/2016/01/why-video-games-are-essential-for.html
 
 
+	"A 'Brief' History of Game AI Up To AlphaGo" by Andrey Kurenkov -
+		http://andreykurenkov.com/writing/a-brief-history-of-game-ai/
+		http://andreykurenkov.com/writing/a-brief-history-of-game-ai-part-2/
+		http://andreykurenkov.com/writing/a-brief-history-of-game-ai-part-3/
+
+	AI for classic games by David Silver -
+		http://youtube.com/watch?v=kZ_AUmFcZtk + http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/games.pdf
+
+	"Mastering the Game of Go with Deep Neural Networks and Tree Search" by DeepMind - https://vk.com/doc-44016343_437229031?hash=9c999a03ee82850948&dl=56ce06e325d42fbc72
+
+	"Giraffe: Using Deep Reinforcement Learning to Play Chess" by Matthew Lai - http://arxiv.org/abs/1509.01549
+
+
+	StarCraft 2
+	        http://starcraft.blizzplanet.com/blog/comments/blizzcon-2016-deepmind-and-starcraft-ii-deep-learning-panel-transcript
+        	http://starcraft.blizzplanet.com/blog/comments/blizzcon-2016-deepmind-and-starcraft-ii-deep-learning-panel-transcript/2
+		http://gamasutra.com/blogs/BenWeber/20160314/267956/DeepMind_Challenges_for_StarCraft.php
+
+	StarCraft - https://github.com/TorchCraft/TorchCraft
+
+	"RTS AI: Problems and Techniques" - http://webdocs.cs.ualberta.ca/~cdavid/pdf/ecgg15_chapter-rts_ai.pdf
+
+
 	AAAI General Game Playing competition - http://www.aaai.org/ojs/index.php/aimagazine/article/download/1813/1711
 
 	General Video Game AI competition -
@@ -317,37 +340,17 @@ research problems:
 		http://youtube.com/channel/UCMFCfXipQT55IK6R504naUQ/videos
 
 
-	"Mastering the Game of Go with Deep Neural Networks and Tree Search" by DeepMind - https://vk.com/doc-44016343_437229031?hash=9c999a03ee82850948&dl=56ce06e325d42fbc72
-
-	"Giraffe: Using Deep Reinforcement Learning to Play Chess" by Matthew Lai - http://arxiv.org/abs/1509.01549
-
-
-
-	StarCraft 2
-	        http://starcraft.blizzplanet.com/blog/comments/blizzcon-2016-deepmind-and-starcraft-ii-deep-learning-panel-transcript
-        	http://starcraft.blizzplanet.com/blog/comments/blizzcon-2016-deepmind-and-starcraft-ii-deep-learning-panel-transcript/2
-
-	"DeepMind Challenges for StarCraft" - http://gamasutra.com/blogs/BenWeber/20160314/267956/DeepMind_Challenges_for_StarCraft.php
-
-	"RTS AI: Problems and Techniques" - http://webdocs.cs.ualberta.ca/~cdavid/pdf/ecgg15_chapter-rts_ai.pdf
-
-
-	"A 'Brief' History of Game AI Up To AlphaGo" by Andrey Kurenkov -
-		http://andreykurenkov.com/writing/a-brief-history-of-game-ai/
-		http://andreykurenkov.com/writing/a-brief-history-of-game-ai-part-2/
-		http://andreykurenkov.com/writing/a-brief-history-of-game-ai-part-3/
-
-	classic games (state-of-the-art AI methods) by David Silver -
-		http://youtube.com/watch?v=kZ_AUmFcZtk + http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/games.pdf
-
-
  * control
 
-	Project Malmo (Minecraft) - https://microsoft.com/en-us/research/project/project-malmo/ + https://youtube.com/watch?v=399qJUBRA0o
-
+	OpenAI Universe - https://universe.openai.com + https://openai.com/blog/universe/
+	Mini World Of Bits - http://alpha.openai.com/miniwob/index.html
   	OpenAI Gym - https://gym.openai.com + https://openai.com/blog/openai-gym-beta/ + http://arxiv.org/abs/1606.01540
 
-        "Benchmarking Deep Reinforcement Learning for Continuous Control" - https://github.com/rllab/rllab + http://arxiv.org/abs/1604.06778
+	DeepMind Lab - https://github.com/deepmind/lab + https://deepmind.com/blog/open-sourcing-deepmind-lab/
+
+	Microsoft Research Project Malmo (Minecraft) - https://microsoft.com/en-us/research/project/project-malmo/ + https://youtube.com/watch?v=399qJUBRA0o
+
+	RLlab - https://github.com/rllab/rllab + http://arxiv.org/abs/1604.06778
 
 	MuJoCo physics simulator - http://mujoco.org/gallery.html
 	V-REP - http://coppeliarobotics.com
@@ -554,8 +557,11 @@ Gary Marcus - "Towards a Neural Ontology" - https://drive.google.com/file/d/0B_h
 	http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/
 	https://vimeo.com/7441291
 
-	Juergen Schmidhuber - "Artificial scientists and artists based on the formal theory of creativity" - http://people.idsia.ch/~juergen/agi10.pdf
-	Juergen Schmidhuber - "Driven by compression progress: A simple principle explains essential aspects of subjective beauty, novelty, surprise, interestingness, attention, curiosity, creativity, art, science, music, jokes" - http://arxiv.org/abs/0812.4360
+	"Artificial scientists and artists based on the formal theory of creativity" by Juergen Schmidhuber - http://people.idsia.ch/~juergen/agi10.pdf
+	"Driven by compression progress: A simple principle explains essential aspects of subjective beauty, novelty, surprise, interestingness, attention, curiosity, creativity, art, science, music, jokes" by Juergen Schmidhuber - http://arxiv.org/abs/0812.4360
+
+	"VIME: Variational Information Maximizing Exploration" by Houthooft, Chen, Duan, Schulman, Turck, Abbeel (practical approximation) - http://arxiv.org/abs/1605.09674 + https://youtube.com/watch?v=sRIjxxjVrnY (Panin)
+	"r'(st,at,st+1) = r(st,at) + μ * Dkl[p(θ|ξt,at,st+1)||p(θ|ξt)]"
 
 	"Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids" - http://goo.gl/FKNPth
 	"PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem" - http://goo.gl/M5uqF4
@@ -563,9 +569,7 @@ Gary Marcus - "Towards a Neural Ontology" - https://drive.google.com/file/d/0B_h
 
 	"Toward Intelligent Humanoids" (application to iCub robot) - https://vimeo.com/51011081 (demo)
 
-	Juergen Schmidhuber - "On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models" - http://arxiv.org/abs/1511.09249
-
-	"Curiosity-driven Exploration in Deep Reinforcement Learning via Bayesian Neural Networks" by Houthooft, Chen, Duan, Schulman, Turck, Abbeel (practical implementation) - http://arxiv.org/abs/1605.09674 + https://youtube.com/watch?v=sRIjxxjVrnY (Panin)
+	"On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models" by Juergen Schmidhuber - http://arxiv.org/abs/1511.09249
 
 
 
@@ -807,19 +811,15 @@ Schmidhuber - "Formal Theory of Creativity, Fun, and Intrinsic Motivation" [http
 	-- http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/
 	-- https://vimeo.com/7441291
 
-Mohamed, Rezende - "Variational Information Maximisation for Intrinsically Motivated Reinforcement Learning" [http://arxiv.org/abs/1509.08731]
-	"The mutual information is a core statistical quantity that has applications in all areas of machine learning, whether this is in training of density models over multiple data modalities, in maximising the efficiency of noisy transmission channels, or when learning behaviour policies for exploration by artificial agents. Most learning algorithms that involve optimisation of the mutual information rely on the Blahut-Arimoto algorithm - an enumerative algorithm with exponential complexity that is not suitable for modern machine learning applications. This paper provides a new approach for scalable optimisation of the mutual information by merging techniques from variational inference and deep learning. We develop our approach by focusing on the problem of intrinsically-motivated learning, where the mutual information forms the definition of a well-known internal drive known as empowerment. Using a variational lower bound on the mutual information, combined with convolutional networks for handling visual input streams, we develop a stochastic optimisation algorithm that allows for scalable information maximisation and empowerment-based reasoning directly from pixels to actions."
-	"We have developed a new approach for scalable estimation of the mutual information by exploiting recent advances in deep learning and variational inference. We focussed specifically on intrinsic motivation with a reward measure known as empowerment, which requires at its core the efficient computation of the mutual information. By using a variational lower bound on the mutual information, we developed a scalable model and efficient algorithm that expands the applicability of empowerment to high-dimensional problems, with the complexity of our approach being extremely favourable when compared to the complexity of the Blahut-Arimoto algorithm that is currently the standard. The overall system does not require a generative model of the environment to be built, learns using only interactions with the environment, and allows the agent to learn directly from visual information or in continuous state-action spaces. While we chose to develop the algorithm in terms of intrinsic motivation, the mutual information has wide applications in other domains, all which stand to benefit from a scalable algorithm that allows them to exploit the abundance of data and be applied to large-scale problems."
-	--
-	"This paper presents a variational approach to the maximisation of mutual information in the context of a reinforcement learning agent. Mutual information in this context can provide a learning signal to the agent that is "intrinsically motivated", because it relies solely on the agent's state/beliefs and does not require from the ("outside") user an explicit definition of rewards. Specifically, the learning objective, for a current state s, is the mutual information between the sequence of K actions a proposed by an exploration distribution w(a|s) and the final state s' of the agent after performing these actions. To understand what the properties of this objective, it is useful to consider the form of this mutual information as a difference of conditional entropies: I(a,s'|s) = H(a|s) - H(a|s',s) Where I(.|.) is the (conditional) mutual information and H(.|.) is the (conditional) entropy. This objective thus asks that the agent find an exploration distribution that explores as much as possible (i.e. has high H(a|s) entropy) but is such that these actions have predictable consequences (i.e. lead to predictable state s' so that H(a|s',s) is low). So one could think of the agent as trying to learn to have control of as much of the environment as possible, thus this objective has also been coined as "empowerment".
-	"Interestingly, the framework allows to also learn the state representation s as a function of some "raw" representation x of states."
-	-- https://youtube.com/watch?v=tMiiKXPirAQ + https://youtube.com/watch?v=LV5jYY-JFpE (demo)
-	-- https://www.evernote.com/shard/s189/sh/8c7ff9d9-c321-4e83-a802-58f55ebed9ac/bfc614113180a5f4624390df56e73889 (Larochelle)
-
-Houthooft, Chen, Duan, Schulman, Turck, Abbeel - "Curiosity-driven Exploration in Deep Reinforcement Learning via Bayesian Neural Networks" [http://arxiv.org/abs/1605.09674]
+Houthooft, Chen, Duan, Schulman, Turck, Abbeel - "VIME: Variational Information Maximizing Exploration" [http://arxiv.org/abs/1605.09674] # approximation of Artificial Curiosity and Creativity by Juergen Schmidhuber
 	"Scalable and effective exploration remains a key challenge in reinforcement learning. While there are methods with optimality guarantees in the setting of discrete state and action spaces, these methods cannot be applied in high-dimensional greedy exploration or adding Gaussian noise to the controls. This paper introduces Variational Information Maximizing Exploration (VIME), an exploration strategy based on maximization of information gain about the agent’s belief of environment dynamics. We propose a practical implementation, using variational inference in Bayesian neural networks which efficiently handles continuous state and action spaces. VIME modifies the MDP reward function, and can be applied with several different underlying RL algorithms. We demonstrate that VIME achieves significantly better performance compared to heuristic exploration methods across a variety of continuous control tasks and algorithms, including tasks with very sparse rewards."
 	"We have proposed Variational Information Maximizing Exploration, a curiosity-driven exploration strategy for continuous control tasks. Variational inference is used to approximate the posterior distribution of a Bayesian neural network that represents the environment dynamics. Using information gain in this learned dynamics model as intrinsic rewards allows the agent to optimize for both external reward and intrinsic surprise simultaneously. Empirical results show that VIME performs significantly better than heuristic exploration methods across various continuous control tasks and algorithms. As future work, we would like to investigate measuring surprise in the value function and using the learned dynamics model for planning."
 	"This paper proposes a curiosity-driven exploration strategy, making use of information gain about the agent’s internal belief of the dynamics model as a driving force. This principle can be traced back to the concepts of curiosity and surprise (Schmidhuber). Within this framework, agents are encouraged to take actions that result in states they deem surprising - i.e., states that cause large updates to the dynamics model distribution. We propose a practical implementation of measuring information gain using variational inference. Herein, the agent’s current understanding of the environment dynamics is represented by a Bayesian neural networks. We also show how this can be interpreted as measuring compression improvement, a proposed model of curiosity (Schmidhuber). In contrast to previous curiosity-based approaches, our model scales naturally to continuous state and action spaces. The presented approach is evaluated on a range of continuous control tasks, and multiple underlying RL algorithms. Experimental results show that VIME achieves significantly better performance than naïve exploration strategies."
+	"r'(st,at,st+1) = r(st,at) + μ * Dkl[p(θ|ξt,at,st+1)||p(θ|ξt)]"
+	-- https://goo.gl/fyxLvI (demo)
+	-- https://youtu.be/WRFqzYWHsZA?t=18m38s (Abbeel)
+	-- https://youtube.com/watch?v=sRIjxxjVrnY (Panin)
+	-- https://github.com/openai/vime
 
 Schmidhuber - "PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem" [http://arxiv.org/pdf/1112.5309v2.pdf]
 	"Most of computer science focuses on automatically solving given computational problems. I focus on automatically inventing or discovering problems in a way inspired by the playful behavior of animals and humans, to train a more and more general problem solver from scratch in an unsupervised fashion. Consider the infinite set of all computable descriptions of tasks with possibly computable solutions. Given a general problem solving architecture, at any given time, the novel algorithmic framework PowerPlay searches the space of possible pairs of new tasks and modifications of the current problem solver, until it finds a more powerful problem solver that provably solves all previously learned tasks plus the new one, while the unmodified predecessor does not. Newly invented tasks may require to achieve a wow-effect by making previously learned skills more efficient such that they require less time and space. New skills may (partially) re-use previously learned skills. The greedy search of typical PowerPlay variants uses time-optimal program search to order candidate pairs of tasks and solver modifications by their conditional computational (time & space) complexity, given the stored experience so far. The new task and its corresponding task-solving skill are those first found and validated. This biases the search towards pairs that can be described compactly and validated quickly. The computational costs of validating new tasks need not grow with task repertoire size. Standard problem solver architectures of personal computers or neural networks tend to generalize by solving numerous tasks outside the self-invented training set; PowerPlay’s ongoing search for novelty keeps breaking the generalization abilities of its present solver. This is related to Goedel’s sequence of increasingly powerful formal theories based on adding formerly unprovable statements to the axioms without affecting previously provable theorems. The continually increasing repertoire of problem solving procedures can be exploited by a parallel search for solutions to additional externally posed tasks. PowerPlay may be viewed as a greedy but practical implementation of basic principles of creativity."

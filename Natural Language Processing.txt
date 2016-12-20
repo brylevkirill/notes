@@ -8,9 +8,7 @@ selected papers and books - https://dropbox.com/sh/rb7u9nwb16bg5xq/AADV3d_bS6-mq
 
 [overview]
 
-https://www.technologyreview.com/s/602094/ais-language-problem/
-
-http://www.foldl.me/2016/solving-language/
+Jon Gauthier, Igor Mordatch -"A Paradigm for Situated and Goal-Driven Language Learning" - https://arxiv.org/abs/1610.03585
 
 Felix Hill - "From Models of Language Understanding to Agents of Language Use" - http://research.microsoft.com/apps/video/default.aspx?id=266643
 
@@ -18,8 +16,10 @@ Christopher Manning, Julia Hirschberg - "Advances in Natural Language Processing
 
 Chris Burges - "Towards the Machine Comprehension of Text: An Essay" - http://research.microsoft.com/apps/pubs/default.aspx?id=206771
 
-Bill MacCartney - "Understanding Natural Language Understanding" - http://youtube.com/watch?v=vcPd0V4VSNU + http://nlp.stanford.edu/~wcmac/papers/20140716-UNLU.pdf
 
+http://www.technologyreview.com/s/602094/ais-language-problem/
+
+http://www.foldl.me/2016/solving-language/
 
 http://breakthroughanalysis.com/2015/10/28/an-inside-view-of-language-technologies-at-google/
 
@@ -587,7 +587,7 @@ interesting papers (see https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retr
 
 [interesting papers]
 
-Gauthier, Mordatch -"A Paradigm for Situated and Goal-Driven Language Learning" [https://arxiv.org/abs/1610.03585]
+Gauthier, Mordatch - "A Paradigm for Situated and Goal-Driven Language Learning" [https://arxiv.org/abs/1610.03585]
 	"A distinguishing property of human intelligence is the ability to flexibly use language in order to communicate complex ideas with other humans in a variety of contexts. Research in natural language dialogue should focus on designing communicative agents which can integrate themselves into these contexts and productively collaborate with humans. In this abstract, we propose a general situated language learning paradigm which is designed to bring about robust language agents able to cooperate productively with humans. This dialogue paradigm is built on a utilitarian definition of language understanding. Language is one of multiple tools which an agent may use to accomplish goals in its environment. We say an agent “understands” language only when it is able to use language productively to accomplish these goals. Under this definition, an agent’s communication success reduces to its success on tasks within its environment. This setup contrasts with many conventional natural language tasks, which maximize linguistic objectives derived from static datasets. Such applications often make the mistake of reifying language as an end in itself. The tasks prioritize an isolated measure of linguistic intelligence (often one of linguistic competence, in the sense of Chomsky), rather than measuring a model’s effectiveness in real-world scenarios. Our utilitarian definition is motivated by recent successes in reinforcement learning methods. In a reinforcement learning setting, agents maximize success metrics on real-world tasks, without requiring direct supervision of linguistic behavior."
 	"We outlined a paradigm for grounded and goal-driven language learning in artificial agents. The paradigm is centered around a utilitarian definition of language understanding, which equates language understanding with the ability to cooperate with other language users in real-world environments. This position demotes language from its position as a separate task to be solved to one of several communicative tools agents might use to accomplish their real-world goals. While this paradigm does already capture a small amount of recent work in dialogue, on the whole it has not received the focus it deserves in the research communities of natural language processing and machine learning. We hope this paper brings focus to the task of situated language learning as a way forward for research in natural language dialogue."
 

@@ -1,16 +1,5 @@
 "Probabilistic/statistical machine learning frames models as distributions over data and latent variables, allowing models to address a broad array of downstream tasks. The underlying statistical methodology of latent variable models is typically Bayesian."
-
-"Probability is the representation of uncertain or partial knowledge about the truth of statements."
-
-"Logical inference is about what is certain to be true. Statistical inference is about what is likely to be true."
-
-"How do you extend classical logic to reason with uncertain propositions? Suppose we agree to represent degrees of plausibility with real numbers, larger numbers indicating greater plausibility. If we also agree to a few axioms to quantify what we mean by consistency and common sense, there is a unique and inevitable system for plausible reasoning that satisfies the axioms, which is probability theory. And this has been proven over 60 years ago. The important implication is that all other systems of plausible reasoning - fuzzy logic, neural networks, artificial intelligence, etc. - must either lead to the same conclusions as probability theory, or violate one of the axioms used to derive probability theory."
-
-"In Bayesian machine learning, all learning follows from two rules of probability: sum rule and product rule."
-
-"From a Bayesian point of view, we should be integrating over likelihoods instead of using optimization methods to select a point estimate of model parameters, usually with ad hoc regularization tuned by cross validation."
-
-"Bayesian reasoning provides a powerful approach for information integration, inference and decision making that has established it as the key tool for data-efficient learning, uncertainty quantification and robust model composition."
+"A central problem in machine learning involves modeling complex data-sets using highly flexible families of probability distributions in which learning, sampling, inference, and evaluation are still analytically or computationally tractable."
 
 
 
@@ -44,6 +33,11 @@ selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91I
 
 [introduction to probability and statistics]
 
+  "Probability is the representation of uncertain or partial knowledge about the truth of statements."
+  "Logical inference is about what is certain to be true. Statistical inference is about what is likely to be true."
+  "How do you extend classical logic to reason with uncertain propositions? Suppose we agree to represent degrees of plausibility with real numbers, larger numbers indicating greater plausibility. If we also agree to a few axioms to quantify what we mean by consistency and common sense, there is a unique and inevitable system for plausible reasoning that satisfies the axioms, which is probability theory. And this has been proven over 60 years ago. The important implication is that all other systems of plausible reasoning - fuzzy logic, neural networks, artificial intelligence, etc. - must either lead to the same conclusions as probability theory, or violate one of the axioms used to derive probability theory."
+
+
   http://johndcook.com/blog/probability-modeling/
   http://johndcook.com/blog/2012/04/19/random-is-as-random-does/
 
@@ -52,22 +46,21 @@ selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91I
 
   "Data Analysis Recipes: Probability Calculus for Inference" - https://arxiv.org/abs/1205.4446
 
-  "Probabilistic Modelling" by Iain Murray -
-	https://youtube.com/watch?v=pOtvyVYAuW4 + https://youtube.com/watch?v=khagz6yWL9w + https://youtube.com/watch?v=U1IAMQYZjfw
-
-
-  https://quora.com/What-is-the-most-important-mathematical-concept-in-statistics
-
   http://johndcook.com/blog/2008/03/19/plausible-reasoning/
 
   http://zinkov.com/posts/2015-06-09-where-priors-come-from/
 
+  https://quora.com/What-is-the-most-important-mathematical-concept-in-statistics
+
+  definitions of probability by Kolmogorov and Jaynes - https://youtube.com/watch?v=Ihud7yG2iKs (in russian)
+
+
+  "Probabilistic Modelling" by Iain Murray -
+	https://youtube.com/watch?v=pOtvyVYAuW4 + https://youtube.com/watch?v=khagz6yWL9w + https://youtube.com/watch?v=U1IAMQYZjfw
 
   http://www.brera.mi.astro.it/~andreon/inference/Inference.html
 
   "Information Theory for Machine Learning" - https://github.com/mtomassoli/papers/blob/master/inftheory.pdf
-
-  "Basics of Statistical Machine Learning" - http://pages.cs.wisc.edu/~jerryzhu/cs761/stat.pdf
 
   http://matthias.vallentin.net/probability-and-statistics-cookbook/cookbook-en.pdf
 
@@ -82,7 +75,12 @@ selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91I
 
 
 
-[bayesian methods]
+[bayesian machine learning]
+
+  "In Bayesian machine learning, all learning follows from two rules of probability: sum rule and product rule."
+  "From a Bayesian point of view, we should be integrating over likelihoods instead of using optimization methods to select a point estimate of model parameters, usually with ad hoc regularization tuned by cross validation."
+  "Bayesian reasoning provides a powerful approach for information integration, inference and decision making that has established it as the key tool for data-efficient learning, uncertainty quantification and robust model composition."
+
 
   https://slackprop.wordpress.com/2016/08/28/the-three-faces-of-bayes/
 
@@ -152,6 +150,11 @@ selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91I
 	http://blog.shakirm.com/2015/05/a-statistical-view-of-deep-learning-v-generalisation-and-regularisation/
 
   Yarin Gal - "What my deep model doesn't know" - http://mlg.eng.cam.ac.uk/yarin/blog_3d801aa532c1ce.html
+  Yarin Gal - "Uncertainty In Deep Learning" - http://mlg.eng.cam.ac.uk/yarin/blog_2248.html
+
+  Zoubin Ghahramani - "A History of Bayesian Neural Networks" - http://bayesiandeeplearning.org/slides/nips16bayesdeep.pdf
+
+  David MacKay - "Bayesian Methods for Adaptive Models" - http://www.inference.phy.cam.ac.uk/mackay/thesis.pdf
 
 
 
@@ -579,7 +582,9 @@ challenges:
 	 - has an explicit inference network so it lets one do reconstruction
 	 - if p(x|z) makes conditional independence assumptions then it might have the "blurring" effect
 
-	"Challenge for VAE-type generative models is to fit posterior approximators that are both flexible and computationally cheap to sample from and differentiate. Simple posterior approximations, like normal distributions with diagonal covariances, are often insufficiently capable of accurately modeling the true posterior distributions. This leads to looseness of the variational bound, meaning that the objective that is optimized (the variational bound) lies far from the objective we’re actually interested in (the marginal likelihood). This leads to many of the problems we’ve encountered when trying to scale VAEs up to high-dimensional spatiotemporal datasets. This is an active research area, and we expect many further advances."
+	"One of the main issues in variational inference is finding the best approximation to an intractable posterior distribution of interest by searching through a class of known probability distributions. The class of approximations used is often limited, e.g., mean-field approximations, implying that no solution is ever able to resemble the true posterior distribution. This is a widely raised objection to variational methods, in that unlike MCMC, the true posterior distribution may not be recovered even in the asymptotic regime. Challenge for VAE-type generative models is to fit posterior approximators that are both flexible and computationally cheap to sample from and differentiate. Simple posterior approximations, like normal distributions with diagonal covariances, are often insufficiently capable of accurately modeling the true posterior distributions. This leads to looseness of the variational bound, meaning that the objective that is optimized (the variational bound) lies far from the objective we’re actually interested in (the marginal likelihood). This leads to many of the problems encountered when trying to scale VAEs up to high-dimensional spatiotemporal datasets."
+
+	"One of the benefits of the VAE is that it generally gives interpretable latent variables - to do this it basically collapses all the dimensions it doesn't need i.e. 100, 1000 dimensions in the latent, but only a few are used. It is a challenge because this makes it hard to get "big" VAEs, since they tend to just throw away/not use parameters they don't need. Some of the papers are combatting this tendency. Inverse Autoregressive Flow fixes this to some extent. One can see it by training a VAE but having a multiplier (alpha) on the KL. Turning alpha lower and lower lets more and more of the latent be used, until alpha = 0 when it basically just becomes a regular autoencoder. It is an interesting attribute of the VAE, and one that is important to know about. The disentangling is a powerful thing VAEs can do, but it does have a cost if the goal is feature learning or generation."
 
 
 
