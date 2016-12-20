@@ -18,17 +18,17 @@ overviews and selected papers/books
 	machine learning    - https://dropbox.com/sh/kpd5tvfnc29lstj/AAD3oGVCUdkoMS56_2g8Oj7_a
 	deep learning    - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt + https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
 	reinforcement learning    - https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt + https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va
-	bayesian inference and learning    - https://dropbox.com/s/m1hv2o5k9u12m20/Probabilistic%20Machine%20Learning.txt + https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
+	bayesian inference and learning    - https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt + https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
 	probabilistic programming    - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt + https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
 
-areas
+applications
 	artificial intelligence    - https://dropbox.com/s/7jb0rx9hc6gw3hc/Artificial%20Intelligence.txt + https://dropbox.com/sh/gmo2hort07gsydj/AACK0XoOOLsrzCyYC1eLwyOwa
 	knowledge representation and reasoning    - https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt + https://dropbox.com/sh/9ytscy4pwegbvhb/AACtB7tQGj-vigo0yExfciu0a
 	natural language processing    - https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt + https://dropbox.com/sh/rb7u9nwb16bg5xq/AADV3d_bS6-mqFW0_jaec1sZa
 	information retrieval    - https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt + https://dropbox.com/sh/pvpzyxfcpy39j8p/AACduJ-pVF9Lh-gn3_SExj1va
 	personal assistants    - https://dropbox.com/s/0fyarlwcfb8mjdq/Personal%20Assistants.txt + https://dropbox.com/sh/veqe3c800ztpkxe/AABwH6camduJrsTUJpeKobWUa
 
-applications
+industry
 	http://wired.com/2016/11/googles-search-engine-can-now-answer-questions-human-help/
 	http://bloomberg.com/news/articles/2015-10-26/google-turning-its-lucrative-web-search-over-to-ai-machines
 	http://research.googleblog.com/2016/09/a-neural-network-for-machine.html
@@ -154,7 +154,7 @@ tutorials
 
 	https://github.com/Nixonite/open-source-machine-learning-degree/blob/master/Introduction%20to%20Machine%20Learning%20-%20Wikipedia.pdf
 
-guide
+guides
 	things to know - http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf
 	Google's rules - http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf
 	common pitfalls - http://danielnee.com/?p=155&utm_content=buffer163ed
@@ -364,7 +364,7 @@ bayesian framework:
   - possible to compute the estimate p(U|O) for arbitrary unknown variable (U) given observed data (O) and not having any knowledge about latent variables (L) from the joint distribution p(U, O, L)
   - possibility to use posterior distributions as priors, combination of multiple models
 
-  overview - https://dropbox.com/s/m1hv2o5k9u12m20/Probabilistic%20Machine%20Learning.txt
+  overview - https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt
 
 
 learning theory:
@@ -593,15 +593,14 @@ Limitations of program learning:
     * or relatedness to past problems
 
 
+Neural Abstract Machines & Program Induction workshop @ NIPS 2016 - https://uclmr.github.io/nampi/
+
 http://cacm.acm.org/magazines/2015/11/193326-inductive-programming-meets-the-real-world/fulltext
 http://homes.cs.washington.edu/~bornholt/post/synthesis-for-architects.html
 
-selected papers - https://dropbox.com/sh/vrr1gs798zy02n1/AACj7hlXOiRt1nXltXVC-2Wca
-
 Probabilistic Programming - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt
 
-	Perov, Wood - "Learning Probabilistic Programs" - http://arxiv.org/abs/1407.2646
-		"We develop a technique for generalising from data in which models are samplers represented as program text. We establish encouraging empirical results that suggest that Markov chain Monte Carlo probabilistic programming inference techniques coupled with higher-order probabilistic programming languages are now sufficiently powerful to enable successful inference of this kind in nontrivial domains. We also introduce a new notion of probabilistic program compilation and show how the same machinery might be used in the future to compile probabilistic programs for efficient reusable predictive inference."
+selected papers - https://dropbox.com/sh/vrr1gs798zy02n1/AACj7hlXOiRt1nXltXVC-2Wca
 
 
 
@@ -626,7 +625,7 @@ Probabilistic Programming - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%
   - automatic inference and differentiation
   - user interfaces for AutoML
 
-  Tasks:
+  problems:
    - balanced or unbalanced classes
    - sparse or dense feature representations
    - with or without missing values or categorical variables
@@ -710,7 +709,7 @@ Probabilistic Programming - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%
 selected papers - https://dropbox.com/sh/kpd5tvfnc29lstj/AAD3oGVCUdkoMS56_2g8Oj7_a
 
 selected papers on deep learning - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt + https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
-selected papers on bayesian inference and learning - https://dropbox.com/s/m1hv2o5k9u12m20/Probabilistic%20Machine%20Learning.txt + https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
+selected papers on bayesian inference and learning - https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt + https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
 selected papers on probabilistic programming - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt + https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
 selected papers on reinforcement learning - https://dropbox.com/s/dexryjnmxujdynd/Reinforcement%20Learning.txt + https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va
 

@@ -10,9 +10,9 @@ overviews/publications for research areas
 	AI and Artificial General Intelligence    - https://dropbox.com/sh/gmo2hort07gsydj/AACK0XoOOLsrzCyYC1eLwyOwa
 	knowledge representation and reasoning    - https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt + https://dropbox.com/sh/9ytscy4pwegbvhb/AACtB7tQGj-vigo0yExfciu0a
 	machine learning    - https://dropbox.com/s/v7kiore7w9xez5b/Machine%20Learning.txt + https://dropbox.com/sh/kpd5tvfnc29lstj/AAD3oGVCUdkoMS56_2g8Oj7_a
-	deep learning (representation learning)    - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt + https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
+	deep learning    - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt + https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
 	reinforcement learning    - https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt + https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va
-	bayesian inference and learning    - https://dropbox.com/s/m1hv2o5k9u12m20/Probabilistic%20Machine%20Learning.txt + https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
+	bayesian inference and learning    - https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt + https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
 	probabilistic programming    - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt + https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
 
 overviews/publications for applications
@@ -34,16 +34,14 @@ Demis Hassabis
 
 Juergen Schmidhuber
 	"How to Learn an Algorithm" - http://youtube.com/watch?v=mF5-tr7qAF4
-
 	"Deep Learning RNNaissance" - http://youtube.com/watch?v=h4FqFss9hEY
-
 	"Formal Theory of Fun & Creativity" -
 		https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber
 		https://vimeo.com/28759091
 		http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/
 		https://vimeo.com/7441291
-
-	"New Millennium AI and the Convergence of History" - https://youtube.com/watch?v=ktQLClGLWRc + http://people.idsia.ch/~juergen/newmillenniumai2012.pdf
+	"New Millennium AI and the Convergence of History" -
+		https://youtube.com/watch?v=ktQLClGLWRc
 
 Marcus Hutter
 	"What is Intelligence? AIXI & Induction" - http://youtube.com/watch?v=F2bQ5TSB-cE
@@ -61,7 +59,8 @@ Yoshua Bengio
 	"Deep Learning and General AI" - http://youtube.com/watch?v=exhdfIPzj24
 
 Richard Sutton
-	"The Future of Artificial Intelligence Belongs to Search and Learning" - http://www.fields.utoronto.ca/talks/advances-reinforcement-learning
+	"The Future of Artificial Intelligence Belongs to Search and Learning" -
+		http://www.fields.utoronto.ca/talks/advances-reinforcement-learning
 	"Toward Learning Human-level Predictive Knowledge" - https://vimeo.com/16811494
 
 David Ferucci
@@ -85,17 +84,10 @@ Joshua Tenenbaum
 
 Gary Marcus
 	"Smart Machines And What They Can Still Learn From People" - https://youtube.com/watch?v=XmWneGydtng
-	"Commonsense Reasoning and Commonsense Knowledge in Artificial Intelligence" -
-		http://cacm.acm.org/magazines/2015/9/191169-commonsense-reasoning-and-commonsense-knowledge-in-artificial-intelligence/fulltext
 
-Laurent Orseau
-	https://intelligence.org/2013/09/06/laurent-orseau-on-agi/
-
-"Progress in AI: Myths, Realities, and Aspirations" - http://ll.ms-studiosmedia.com/events/2015/1507/FacultySummit/vod/FacultySummit-Panel.html
-
-http://beardedbrownman.com/20-bullets-on-ai
-
-"What you wanted to know about AI" (informal and funny) - http://fastml.com/what-you-wanted-to-know-about-ai/ + http://fastml.com/what-you-wanted-to-know-about-ai-part-ii/
+"What you wanted to know about AI" (informal and funny) -
+	http://fastml.com/what-you-wanted-to-know-about-ai/
+	http://fastml.com/what-you-wanted-to-know-about-ai-part-ii/
 
 
 
@@ -498,15 +490,9 @@ Gary Marcus - "Towards a Neural Ontology" - https://drive.google.com/file/d/0B_h
 		"AI needs anytime algorithm powerful enough to approach Solomonoff/AIXI in the limit of infinite computation time."
 
 		https://intelligence.org/2013/09/06/laurent-orseau-on-agi/ :
-			"Approximating AIXI can be done in very many ways. The main ideas are building/finding good and simple models of the environment, and performing some planning on these models; i.e., it is a model-based approach (by contrast to Q-learning which is model-free for example: it does model the environment, but only learns to predict the expected rewards per action/state). This is a very common approach in reinforcement learning, because some may argue that model-free methods are “blind”, in the sense that they don’t learn about their environments, they just “know” what to do.  Another important component of AIXI is the interaction history (instead of a state-based observation), and approximations may need to deal appropriately with compressing this history, possibly with loss.
-			Finding computation-efficient approximations is not an easy task, and it will quite probably require a number of neat ideas that will make it feasible, but it’s certainly a path worth researching. However, personally, I prefer to think that the agent must learn how to model its environment, which is something deeper than a model-based approach.
-			Even without considering AIXI approximations, AIXI still is very important for AGI research because it unifies all important properties of cognition, like agency (interaction with an environment), knowledge representation and memory, understanding, reasoning, goals, problem solving, planning and action selection, abstraction, generalization without overfitting, multiple hypotheses, creativity, exploration and curiosity, optimization and utility maximization, prediction, uncertainty, with incremental, on-line, lifelong, continual learning in arbitrarily complex environments, without a restart state, no i.i.d. or stationarity assumption, etc. and does all this in a very simple, elegant and precise manner."
-
-
-		Algorithmic Information Theory (Minimum Description Length, Minimum Message Length)
-			use compression size as general performance measure (like perplexity is used in language models)
-			via code-length view, many approaches become comparable, and may be regarded as approximations to UI
-			this should lead to better compression algorithms which in turn should lead to better learning algorithms
+			"The main ideas are building/finding good and simple models of the environment, and performing some planning on these models; i.e., it is a model-based approach (by contrast to Q-learning which is model-free for example: it does model the environment, but only learns to predict the expected rewards per action/state). This is a very common approach in reinforcement learning, because some may argue that model-free methods are “blind”, in the sense that they don’t learn about their environments, they just “know” what to do. I prefer to think that the agent must learn how to model its environment, which is something deeper than a model-based approach."
+			"Another important component of AIXI is the interaction history (instead of a state-based observation), and approximations may need to deal appropriately with compressing this history, possibly with loss."
+			"Even without considering AIXI approximations, AIXI still is very important for AGI research because it unifies all important properties of cognition, like agency (interaction with an environment), knowledge representation and memory, understanding, reasoning, goals, problem solving, planning and action selection, abstraction, generalization without overfitting, multiple hypotheses, creativity, exploration and curiosity, optimization and utility maximization, prediction, uncertainty, with incremental, on-line, lifelong, continual learning in arbitrarily complex environments, without a restart state, no i.i.d. or stationarity assumption, etc. and does all this in a very simple, elegant and precise manner."
 
 		A Monte-Carlo AIXI Approximation (MC-AIXI-CTW)
 			https://www.jair.org/media/3125/live-3125-5397-jair.pdf
@@ -519,13 +505,6 @@ Gary Marcus - "Towards a Neural Ontology" - https://drive.google.com/file/d/0B_h
 		Formal Theory of Fun and Creativity
 			(Juergen Schmidhuber) "Generally speaking, when it comes to Reinforcement Learning, it is indeed a good idea to train a recurrent neural network called M to become a predictive model of the world, and use M to train a separate controller network C which is supposed to generate reward-maximising action sequences. Marcus Hutter’s mathematically optimal universal AIXI also has a predictive world model M, and a controller C that uses M to maximise expected reward. Ignoring limited storage size, RNNs are general computers just like your laptop. That is, AIXI’s M is related to the RNN-based M above in the sense that both consider a very general space of predictive programs. AIXI’s M, however, really looks at all those programs simultaneously, while the RNN-based M uses a limited local search method such as gradient descent in program space (also known as backprop through time) to find a single reasonable predictive program (an RNN weight matrix). AIXI’s C always picks the action that starts the action sequence that yields maximal predicted reward, given the current M, which in a Bayes-optimal way reflects all the observations so far. The RNN-based C, however, uses a local search method (backprop through time) to optimise its program or weight matrix, using gradients derived from M. So in a way, my old RNN-based CM system of 1990 may be viewed as a limited, downscaled, sub-optimal, but at least computationally feasible approximation of AIXI."
 			Juergen Schmidhuber - "On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models" - http://arxiv.org/abs/1511.09249
-
-
-	Li, Vitanyi - "An Introduction to Kolmogorov Complexity and Its Applications" - http://general-k-cut.googlecode.com/svn/trunk/books/An%20Introduction%20to%20Kolmogorov%20Complexity.pdf
-	"Pattern Recognition and Machine Perception: Common Approach Based on Minimal Description Length Principle" by Alexey Potapov - http://aideus.com/research/doc/2007_Polytech_MDL-book.pdf (in russian)
-
-	"Algorithmic information theory and algorithmic probability of objects" by Alexander Shen - http://youtube.com/watch?v=X0Lo5IWLjko (in russian)
-	tutorial on Minimum Description Length by Alexey Potapov - https://youtube.com/watch?v=NtI8G4htcAw
 
 
 
@@ -610,12 +589,11 @@ selected papers - https://dropbox.com/sh/gmo2hort07gsydj/AACK0XoOOLsrzCyYC1eLwyO
 
 knowledge representation and reasoning    - https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt
 machine learning    - https://dropbox.com/s/v7kiore7w9xez5b/Machine%20Learning.txt
-deep learning (representation learning)   - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt
+deep learning    - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt
 reinforcement learning    - https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt
-bayesian machine learning    - https://dropbox.com/s/ko8syl62ivsa34a/Bayesian%20Machine%20Learning.txt
+bayesian inference and learning    - https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt
 probabilistic programming    - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt
 semantic web    - https://dropbox.com/s/ono4n5yij0y1366/RDF.txt
-natural language processing    - https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt
 
 
 

@@ -738,133 +738,70 @@ projects
 
 
 
-[recurrent neural network]
-
-  "Recurrent neural networks are a powerful family of connectionist models that capture time dynamics via cycles in the graph. Unlike feedforward neural networks, recurrent networks can process examples one at a time, retaining a state, or memory, that reflects an arbitrarily long context window."
-
-   - replicate a parametrized function over different time steps
-   - output state at one time-step/node is used as input for another time-step/node
-   - back-propagation through directed acyclic graph can be used to train weights
-   - targets can be provided for "output" neurons at any time-step
-   - weights are shared over time so they add up derivatives they got over all time-steps
-
-  distributed hidden state that allows them to store a lot of information about the past efficiently
-  non-linear dynamics that allows them to update their hidden state in complicated ways
-
-  recurrent networks (generalization of recurrent networks)
-  - replicate a parametrized function over nodes of a DAG
-  - learning models that capture compositional meaning and jointly learn structure, feature representations and prediction tasks
 
 
-  http://videolectures.net/deeplearning2016_bengio_neural_networks/ (Yoshua Bengio)
-
-
-  "The Unreasonable Effectiveness of Recurrent Neural Networks" - https://karpathy.github.io/2015/05/21/rnn-effectiveness/
-  "A Critical Review of Recurrent Neural Networks for Sequence Learning" - http://arxiv.org/abs/1506.00019
-  http://nikhilbuduma.com/2015/01/11/a-deep-dive-into-recurrent-neural-networks/
-  https://github.com/mohammadpz/Recurrent-Neural-Networks
-
-
-  "Attention and Augmented Recurrent Neural Networks" - http://distill.pub/2016/augmented-rnns/
-  "Learning Over Long Time Lags" - http://arxiv.org/abs/1602.04335
-
-  "Deep Learning and Reasoning, Memory-Augmented Networks" by Rob Fergus -
-  	http://vk.com/video-44016343_456239295 + http://www.college-de-france.fr/site/en-yann-lecun/seminar-2016-04-08-12h00.htm
-  	http://videolectures.net/deeplearning2016_chopra_attention_memory/
-  "Reasoning, Attention and Memory" by Sumit Chopra - http://videolectures.net/deeplearning2016_chopra_attention_memory/
-
-
-  memory architectures
-  	Long Short Term Memory
-  		designed to model temporal sequences and their long-range dependencies more accurately than conventional RNNs
-  		solves the vanishing gradient problem at small computational extra-cost and may be interpreted as a differentiable version of computer memory
-  		next hidden state is modification of previous hidden state, not a rewrite so that information doesn’t decay too fast
-
-  		 - RNNs overwrite the hidden state
-  		 - LSTMs add to the hidden state
-  		 - every term in a sum gets a gradient
-  		 - main advantage: requires little tuning
-
-  		motivation behind LSTM - https://reddit.com/r/MachineLearning/comments/44bxdj/scrn_vs_lstm/czp4hqr
-
-  		https://colah.github.io/posts/2015-08-Understanding-LSTMs/
-
-  		http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html
-
-  		history and varians of LSTM - http://arxiv.org/abs/1503.04069 ("None of the variants can improve upon the standard LSTM architecture significantly")
-
-  		http://blog.aidangomez.ca/2016/04/17/Backpropogating-an-LSTM-A-Numerical-Example/
-
-  		records on benchmark tasks - https://reddit.com/r/MachineLearning/comments/2xcyrl/i_am_j%C3%BCrgen_schmidhuber_ama/cp48i0n
-
-  		Gated Recurrent Unit RNN couples input and forget gates of LSTM
-
-  	Stack-Augmented Recurrent Neural Network
-  		http://research.microsoft.com/apps/video/default.aspx?id=259646 (Joulin, 15:00)
-  		http://youtu.be/FUlTjKL-mVA?t=43m48s + https://youtu.be/gi4Zf59_IcU?t=54m43s (Mikolov)
-
-  		able to generalize to long problem instances from short problem instances
-
-  	Neural Turing Machine
-  		basic idea:
-  		- turn neural networks into 'differentialbe computers' by giving them read-write acces to external memory
-  		- separate computation and memory in neural networks to be able to learn algorithmic patterns
-  		architecture:
-  		 - controller - neural network (recurrent or feedforward)
-  		 - heads - (attention) select portions of the memory to read/write to them
-  		 - memory - 'everything is differentiable'
-  		attention:
-  		 - addressing by content (associative lookup)
-  		 - addressing by location (controller outputs a shift kernel)
-
-  		RNN with big memory matrix and a "head" and "gaze" which it can position/focus to do a blurry, differentiable analog of a "read from (or write to) memory
-  		difference with LSTM - decoupling memory and computation
-
-  		NTM can learn basic algorithms from examples only, including copy, loop, sort, associative recall and dynamic N-Gram inference
-
-  		http://research.microsoft.com/apps/video/default.aspx?id=260037 (Graves)
-		http://youtube.com/watch?v=otRoAQtc5Dk (Polykovskiy)
-
-  		http://blog.acolyer.org/2016/03/09/neural-turing-machines/
-  		http://ikuz.eu/2014/11/19/neural-turing-machines-by-google-deepmind-article-overview/
-
-  	Neural Stacks/Queues (unbounded continuous memory)
-  		https://iamtrask.github.io/2016/02/25/deepminds-neural-stack-machine/
-  		http://egrefen.com/docs/NIPSStackPoster.pdf
-  		http://videolectures.net/deeplearning2015_blunsom_memory_reading/ (Blunsom)
-
-  	Grid-LSTM
-  		allows to use LSTM cells for both deep and sequential computation
-  		achieves excellent results on both synthetic, algorithmic problems and on real tasks, such as language modelling, machine translation and object recognition
-
-  	Neural GPU
-  		https://youtube.com/watch?v=hVv4M0bTBJc (Sutskever)
-
-  	Memory Networks
-  		http://techtalks.tv/talks/memory-networks-for-language-understanding/62356/
-  		http://youtu.be/jRkm6PXRVF8?t=16m29s (Weston)
-  		http://research.microsoft.com/apps/video/default.aspx?id=259920 (Sukhbaatar)
-  		http://youtube.com/watch?v=8keqd1ewsno (Bordes)
-  		http://youtube.com/watch?v=Xumy3Yjq4zk (Weston) + http://cs224d.stanford.edu/lectures/CS224d-Lecture12.pdf
-
-
-  compute architectures
-  	Pointer Networks
-  		does not have a writable memory - is similar to the attention model of Bahdanau et al. (2014) in this regard
-  		despite not having a memory, this model was able to solve a number of difficult algorithmic problems such as convex hull and approximate 2D TSP
-
-  	Clockwork RNN
-  		https://github.com/GoodAI/SummerCamp/blob/master/ClockWorkNNModule/doc/tutorial.md
-
-  	SLIM (self-delimiting) RNN
-  		address overfitting
-  		instead of depending on pre-wired regularizers and hyper-parameters, SLIM NNs with competing units can in principle learn to select their own runtime and their own numbers of effective free parameters, thus learning their own computable regularisers, becoming fast and slim when necessary
-  		one may penalize the task-specific total length of connections and communication costs of SLIM NNs implemented on the 3-dimensional brain-like multi-processor hardware
+Neural Abstract Machines & Program Induction workshop @ NIPS 2016 - https://uclmr.github.io/nampi/
 
 
 
 
 [architectures]
+
+  * recurrent neural network
+
+	"Recurrent neural networks are a powerful family of connectionist models that capture time dynamics via cycles in the graph. Unlike feedforward neural networks, recurrent networks can process examples one at a time, retaining a state, or memory, that reflects an arbitrarily long context window."
+	
+	 - replicate a parametrized function over different time steps
+	 - output state at one time-step/node is used as input for another time-step/node
+	 - back-propagation through directed acyclic graph can be used to train weights
+	 - targets can be provided for "output" neurons at any time-step
+	 - weights are shared over time so they add up derivatives they got over all time-steps
+	
+	distributed hidden state that allows them to store a lot of information about the past efficiently
+	non-linear dynamics that allows them to update their hidden state in complicated ways
+	
+	recurrent networks (generalization of recurrent networks)
+	- replicate a parametrized function over nodes of a DAG
+	- learning models that capture compositional meaning and jointly learn structure, feature representations and prediction tasks
+	
+	
+	http://videolectures.net/deeplearning2016_bengio_neural_networks/ (Yoshua Bengio)
+	
+	
+	"The Unreasonable Effectiveness of Recurrent Neural Networks" - https://karpathy.github.io/2015/05/21/rnn-effectiveness/
+	"A Critical Review of Recurrent Neural Networks for Sequence Learning" - http://arxiv.org/abs/1506.00019
+	http://nikhilbuduma.com/2015/01/11/a-deep-dive-into-recurrent-neural-networks/
+	https://github.com/mohammadpz/Recurrent-Neural-Networks
+	
+	
+	"Attention and Augmented Recurrent Neural Networks" - http://distill.pub/2016/augmented-rnns/
+	"Learning Over Long Time Lags" - http://arxiv.org/abs/1602.04335
+	
+	
+	Long Short Term Memory
+		designed to model temporal sequences and their long-range dependencies more accurately than conventional RNNs
+		solves the vanishing gradient problem at small computational extra-cost and may be interpreted as a differentiable version of computer memory
+		next hidden state is modification of previous hidden state, not a rewrite so that information doesn’t decay too fast
+	
+		 - RNNs overwrite the hidden state
+		 - LSTMs add to the hidden state
+		 - every term in a sum gets a gradient
+		 - main advantage: requires little tuning
+	
+		motivation behind LSTM - https://reddit.com/r/MachineLearning/comments/44bxdj/scrn_vs_lstm/czp4hqr
+	
+		https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+	
+		http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html
+	
+		history and varians of LSTM - http://arxiv.org/abs/1503.04069 ("None of the variants can improve upon the standard LSTM architecture significantly")
+	
+		http://blog.aidangomez.ca/2016/04/17/Backpropogating-an-LSTM-A-Numerical-Example/
+	
+		records on benchmark tasks - https://reddit.com/r/MachineLearning/comments/2xcyrl/i_am_j%C3%BCrgen_schmidhuber_ama/cp48i0n
+	
+		Gated Recurrent Unit RNN couples input and forget gates of LSTM
+
 
   * convolutional neural network
 
@@ -925,6 +862,82 @@ projects
 	"Pre-program subnets that serve known functionality with the desired fitness. Exclude them from backprop. Train the larger neural net to take advantage of those subnets."
 
 	"Hinton seems to believe that all information must somehow still be somewhat visible at the highest level of a hierarchy. With stuff like maxout units, yes, information is lost at higher layers. But the information isn't gone! It's still stored in the activations of the lower layers. So really, we could just grab that information again. Now this is probably very difficult for classifiers, but in HTM-style architectures (where information flows in both the up and down directions), it is perfectly possible to use both higher-layer abstracted information as well as lower layer "fine-grained" information simultaneously. For MPFs (memory prediction frameworks, a generalization of HTM) this works quite well since they only try to predict their next input (which in turn can be used for reinforcement learning). Also, capsules are basically columns in HTM (he said that himself), except in HTM they are used for storing contextual (temporal) information, and Hinton uses them for feature-oriented spatial information."
+
+
+
+
+[compute and memory architectures]
+
+  "Deep Learning and Reasoning, Memory-Augmented Networks" by Rob Fergus -
+  	http://vk.com/video-44016343_456239295 + http://www.college-de-france.fr/site/en-yann-lecun/seminar-2016-04-08-12h00.htm
+  	http://videolectures.net/deeplearning2016_chopra_attention_memory/
+  "Reasoning, Attention and Memory" by Sumit Chopra -
+	http://videolectures.net/deeplearning2016_chopra_attention_memory/
+
+
+  * Pointer Networks
+  		does not have a writable memory - is similar to the attention model of Bahdanau et al. (2014) in this regard
+  		despite not having a memory, this model was able to solve a number of difficult algorithmic problems such as convex hull and approximate 2D TSP
+
+  * Grid LSTM
+  		allows to use LSTM cells for both deep and sequential computation
+  		achieves excellent results on both synthetic, algorithmic problems and on real tasks, such as language modelling, machine translation and object recognition
+
+  * Neural GPU
+  		https://youtube.com/watch?v=hVv4M0bTBJc (Sutskever)
+
+  * Memory Networks
+  		http://techtalks.tv/talks/memory-networks-for-language-understanding/62356/
+  		http://youtu.be/jRkm6PXRVF8?t=16m29s (Weston)
+  		http://research.microsoft.com/apps/video/default.aspx?id=259920 (Sukhbaatar)
+  		http://youtube.com/watch?v=8keqd1ewsno (Bordes)
+  		http://youtube.com/watch?v=Xumy3Yjq4zk (Weston) + http://cs224d.stanford.edu/lectures/CS224d-Lecture12.pdf
+
+  * Stack-Augmented Recurrent Neural Network
+  		http://research.microsoft.com/apps/video/default.aspx?id=259646 (Joulin, 15:00)
+  		http://youtu.be/FUlTjKL-mVA?t=43m48s + https://youtu.be/gi4Zf59_IcU?t=54m43s (Mikolov)
+
+  		able to generalize to long problem instances from short problem instances
+
+  * Neural Stacks/Queues
+  		https://iamtrask.github.io/2016/02/25/deepminds-neural-stack-machine/
+  		http://egrefen.com/docs/NIPSStackPoster.pdf
+  		http://videolectures.net/deeplearning2015_blunsom_memory_reading/ (Blunsom)
+
+  * Neural Turing Machine
+  		basic idea:
+  		- turn neural networks into 'differentialbe computers' by giving them read-write acces to external memory
+  		- separate computation and memory in neural networks to be able to learn algorithmic patterns
+  		architecture:
+  		 - controller - neural network (recurrent or feedforward)
+  		 - heads - (attention) select portions of the memory to read/write to them
+  		 - memory - 'everything is differentiable'
+  		attention:
+  		 - addressing by content (associative lookup)
+  		 - addressing by location (controller outputs a shift kernel)
+
+  		RNN with big memory matrix and a "head" and "gaze" which it can position/focus to do a blurry, differentiable analog of a "read from (or write to) memory
+  		difference with LSTM - decoupling memory and computation
+
+  		NTM can learn basic algorithms from examples only, including copy, loop, sort, associative recall and dynamic N-Gram inference
+
+  		http://research.microsoft.com/apps/video/default.aspx?id=260037 (Graves)
+		http://youtube.com/watch?v=otRoAQtc5Dk (Polykovskiy)
+
+  		http://blog.acolyer.org/2016/03/09/neural-turing-machines/
+  		http://ikuz.eu/2014/11/19/neural-turing-machines-by-google-deepmind-article-overview/
+
+  * Differentiable Neural Computer
+		"Hybrid Computing using a Neural Network with Dynamic External Memory" - http://www.nature.com.sci-hub.cc/nature/journal/vaop/ncurrent/full/nature20101.html
+		https://deepmind.com/blog/differentiable-neural-computers/
+
+		https://youtube.com/watch?v=PQrlOjj8gAc (Wayne)
+		https://youtu.be/otRoAQtc5Dk?t=59m56s (Polykovskiy)
+
+		https://github.com/yos1up/DNC
+		https://github.com/Mostafa-Samir/DNC-tensorflow
+		https://github.com/frownyface/dnc
+		https://github.com/khaotik/dnc-theano
 
 
 
@@ -1728,6 +1741,17 @@ Zaremba, Sutskever - "Reinforcement Learning Neural Turing Machines" [http://arx
 	-- https://youtu.be/ezE-13X0UoM?t=39m4s (Zaremba)
 	-- http://cs.nyu.edu/~zaremba/docs/Stanford%20-%20Reinforcement%20Learning%20Neural%20Turing%20Machine.pdf (Zaremba)
 	-- https://github.com/ilyasu123/rlntm
+
+Graves et al. - "Hybrid Computing using a Neural Network with Dynamic External Memory" [http://www.nature.com.sci-hub.cc/nature/journal/vaop/ncurrent/full/nature20101.html]
+	"Artificial neural networks are remarkably adept at sensory processing, sequence learning and reinforcement learning, but are limited in their ability to represent variables and data structures and to store data over long timescales, owing to the lack of an external memory. Here we introduce a machine learning model called a Differentiable Neural Computer (DNC), which consists of a neural network that can read from and write to an external memory matrix, analogous to the random-access memory in a conventional computer. Like a conventional computer, it can use its memory to represent and manipulate complex data structures, but, like a neural network, it can learn to do so from data. When trained with supervised learning, we demonstrate that a DNC can successfully answer synthetic questions designed to emulate reasoning and inference problems in natural language. We show that it can learn tasks such as finding the shortest path between specified points and inferring the missing links in randomly generated graphs, and then generalize these tasks to specific graphs such as transport networks and family trees. When trained with reinforcement learning, a DNC can complete a moving blocks puzzle in which changing goals are specified by sequences of symbols. Taken together, our results demonstrate that DNCs have the capacity to solve complex, structured tasks that are inaccessible to neural networks without external read–write memory."
+	"Taken together, the bAbI and graph tasks demonstrate that DNCs are able to process and reason about graph-structured data regardless of whether the links are implicit or explicit. Moreover, we have seen that the structure of the data source is directly reflected in the memory access procedures learned by the controller. The Mini-SHRDLU problem shows that a systematic use of memory also emerges when a DNC learns by reinforcement to act in pursuit of a set of symbolic goals. The theme connecting these tasks is the need to learn to represent and reason about the complex, quasi-regular structure embedded in data sequences. In each problem, domain regularities, such as the conventions for representing graphs, are invariant across all sequences shown; on the other hand, for any given sequence, a DNC must detect and capture novel variability as episodic variables in memory. This mixture of large-scale structure and microscopic variability is generic to many problems that confront a cognitive agent. For example, in visual scenes, stories and action plans, broad regularities bind together novel variation in any exemplar. Rooms statistically have chairs in them, but the shape and location of a particular chair in a room are variables. These variable values can be written to the external memory of a DNC, leaving the controller network free to concentrate on learning global regularities. Our experiments focused on relatively small-scale synthetic tasks, which have the advantage of being easy to generate and interpret. For such problems, memory matrices of up to 512 locations were sufficient. To tackle real-world data we will need to scale up to thousands or millions of locations, at which point the memory will be able to store more information than can be contained in the weights of the controller. Such systems should be able to continually acquire knowledge through exposure to large, naturalistic data sources, even without adapting network parameters. We aim to further develop DNCs to serve as representational engines for one-shot learning, scene understanding, language processing and cognitive mapping, capable of intuiting the variable structure and scale of the world within a single, generic model."
+	-- https://deepmind.com/blog/differentiable-neural-computers/
+	-- https://youtube.com/watch?v=PQrlOjj8gAc (Wayne)
+	-- https://youtu.be/otRoAQtc5Dk?t=59m56s (Polykovskiy)
+	-- https://github.com/yos1up/DNC
+	-- https://github.com/Mostafa-Samir/DNC-tensorflow
+	-- https://github.com/frownyface/dnc
+	-- https://github.com/khaotik/dnc-theano
 
 Nachum, Norouzi, Schuurmans - "Improving Policy Gradient by Exploring Under-appreciated Rewards" [https://arxiv.org/abs/1611.09321]
 	"This paper presents a novel form of policy gradient for model-free reinforcement learning with improved exploration properties. Current policy-based methods use entropy regularization to encourage undirected exploration of the reward landscape, which is ineffective in high dimensional spaces with sparse rewards. We propose a more directed exploration strategy that promotes exploration of under-appreciated reward regions. An action sequence is considered under-appreciated if its log-probability under the current policy under-estimates its resulting reward. The proposed exploration strategy is easy to implement, requiring small modifications to an implementation of the REINFORCE algorithm. We evaluate the approach on a set of algorithmic tasks that have long challenged RL methods. Our approach reduces hyper-parameter sensitivity and demonstrates significant improvements over baseline methods. Our algorithm successfully solves a benchmark multi-digit addition task and generalizes to long sequences. This is, to our knowledge, the first time that a pure RL method has solved addition using only reward feedback."

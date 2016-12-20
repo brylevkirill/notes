@@ -18,7 +18,7 @@
 selected papers and books - https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
 
 bayesian inference and learning -
-	https://dropbox.com/s/m1hv2o5k9u12m20/Probabilistic%20Machine%20Learning.txt
+	https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt
 	https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
 
 
@@ -54,6 +54,9 @@ bayesian inference and learning -
 
 
   Goodman, Stuhlmuller - "The Design and Implementation of Probabilistic Programming Languages" - http://dippl.org
+
+
+  Neural Abstract Machines & Program Induction workshop @ NIPS 2016 - https://uclmr.github.io/nampi/
 
 
 
