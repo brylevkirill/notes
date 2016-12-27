@@ -184,6 +184,8 @@ Ioannidis - "Why Most Published Research Findings Are False: Author's Reply to G
 Moonesinghe Khoury, Janssens - "Most published research findings are false - But a little replication goes a long way"
 Leek, Jager - "Is most published research really false?"
 
+Aitchison, Corradi, Latham - "Zipf’s Law Arises Naturally When There Are Underlying, Unobserved Variables" [http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005110]
+
 
 
 
@@ -194,3 +196,8 @@ analytics @ Yandex (in russian)
 	https://youtube.com/watch?v=tKYOjIo0BQY
 	https://youtube.com/watch?v=BlYxSBUl1Tk
 	https://youtube.com/watch?v=WbeFXquH7Ac
+
+
+
+
+<brylevkirill (at) gmail.com>

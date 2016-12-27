@@ -1,8 +1,34 @@
 Deep Learning ~ "learning to represent knowledge with composition of functions" + "learning all functions in composition jointly and end-to-end"
 
 
-the most impressive accomplishments in AI based on Deep Learning (in russian) - https://dropbox.com/s/di5mxkj8c65h3e6/AI%20wonders.txt
+  * overview
+  * research
+  * theory
+  * bayesian deep learning
+  * unsupervised learning and generative models
+  * generative models
+    - generative adversarial network
+    - variational autoencoder
+    - restricted boltzmann machine
+  * architectures
+  * architectures - compute and memory
+  * architectures - attention
+  * distributed representations
+  * connections to biology
+  * interesting quotes
+  * interesting papers
+    - theory
+    - architectures
+    - semi-supervised and transfer learning
+    - generative models
+    - probabilistic models
+    - applications
 
+
+selected papers and books - https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
+
+
+the most impressive accomplishments in AI based on Deep Learning (in russian) - https://dropbox.com/s/di5mxkj8c65h3e6/AI%20wonders.txt
 
 industry
 	"Google replaced 60 hand-crafted rule-based systems with Deep Learning" - https://goo.gl/yzwI6O + https://goo.gl/4EwqFu
@@ -23,7 +49,8 @@ industry
 	http://wired.com/2015/08/how-facebook-m-works/
 	http://wired.com/2015/10/facebook-artificial-intelligence-describes-photo-captions-for-blind-people/
 	http://code.facebook.com/posts/181565595577955
-	https://lukeoakdenrayner.wordpress.com/2016/11/27/do-computers-already-outperform-doctors/
+	http://devblogs.nvidia.com/parallelforall/deep-learning-self-driving-cars/
+	http://lukeoakdenrayner.wordpress.com/2016/11/27/do-computers-already-outperform-doctors/
 
 overview
 	Nando de Freitas
@@ -144,8 +171,9 @@ conferences
 	NIPS 2016 -
 		https://nips.cc/Conferences/2016/SpotlightVideos
 		http://papers.ai/collections/nips.2016
-		https://reddit.com/r/MachineLearning/comments/5i3v0k/r_nips_2016_overviews/
 		https://github.com/hindupuravinash/nips2016
+		https://gist.github.com/artsobolev/63942e24c81fc296472affb1f138d54c
+		https://reddit.com/r/MachineLearning/comments/5i3v0k/r_nips_2016_overviews/
 	ICML 2016 - http://techtalks.tv/icml/2016/
 	ICLR 2016 -
 		http://videolectures.net/iclr2016_san_juan/
@@ -259,28 +287,9 @@ projects
 
 
 
-[research challenges]
+[research]
 
-  - unsupervised learning
-  	ways to evaluate impact
-  	generative models that generate crisp images and sounds over a wide set of variations covering natural images and sounds
-  	semi-supervised learning that makes a difference even when the labeled dataset is not tiny
-  	learning a two-way transformation of the data into a space where variables are disentangled (or mostly independent)
-  	finding underlying factors that explain the input data (cross-task learning, zooming in on the relevant features given the current problem)
-  	bringing (iterative) inference back in deep learning to handle non-factorial posteriors over the latent variables
-  - models of really long-term dependencies in sequential data and having learners that discover a hierarchical representation at multiple time scales
-  - train models that incorporate planning (playing out what-if scenarios, maybe stochastically via a generative component) as part of the learning procedure (and also to actually take decisions)
-  - introducing more reasoning abilities in our models
-  - natural language and knowledge representation on a large scale
-  - scaling - the more complex the input space, the larger the deep networks have to be to capture its representation (computations scale much worse than linearly, hyper-parameters hard to select)
-  - maximum likelihood has known deficiencies (such as a mismatch between training and test conditions) and we need to go around them (maybe ditching maximum likelihood altogether)
-  - inference and sampling - non-trivial and slow required by probabilistic models (guessing values of the latent variables h given the conditional distribution over x which ofter has a very large number of modes)
-  - understand better (and fix) the optimization issues that sometimes arise (for example in unsupervised learning or recurrent nets with long-term dependencies)
-  - bridging the gap between deep learning and biology
-  - ramping up our theoretical understanding of deep learning (optimization issues being one aspect, but expressive / statistical aspects being also in need of more theory)
-
-
-[research problems]
+  research areas:
 
   - supervised representation learning
   - unsupervised representation learning (particularly prediction-based methods for temporal/sequential signals)
@@ -300,7 +309,26 @@ projects
   - non-convex optimization for representation learning
   - architecture engineering
 
-  optimization, generalization, representation, applications - http://xzh.me/posts/deeplearninglandscape/
+
+  research challenges:
+
+  - unsupervised learning
+  	ways to evaluate impact
+  	generative models that generate crisp images and sounds over a wide set of variations covering natural images and sounds
+  	semi-supervised learning that makes a difference even when the labeled dataset is not tiny
+  	learning a two-way transformation of the data into a space where variables are disentangled (or mostly independent)
+  	finding underlying factors that explain the input data (cross-task learning, zooming in on the relevant features given the current problem)
+  	bringing (iterative) inference back in deep learning to handle non-factorial posteriors over the latent variables
+  - models of really long-term dependencies in sequential data and having learners that discover a hierarchical representation at multiple time scales
+  - train models that incorporate planning (playing out what-if scenarios, maybe stochastically via a generative component) as part of the learning procedure (and also to actually take decisions)
+  - introducing more reasoning abilities in our models
+  - natural language and knowledge representation on a large scale
+  - scaling - the more complex the input space, the larger the deep networks have to be to capture its representation (computations scale much worse than linearly, hyper-parameters hard to select)
+  - maximum likelihood has known deficiencies (such as a mismatch between training and test conditions) and we need to go around them (maybe ditching maximum likelihood altogether)
+  - inference and sampling - non-trivial and slow required by probabilistic models (guessing values of the latent variables h given the conditional distribution over x which ofter has a very large number of modes)
+  - understand better (and fix) the optimization issues that sometimes arise (for example in unsupervised learning or recurrent nets with long-term dependencies)
+  - bridging the gap between deep learning and biology
+  - ramping up our theoretical understanding of deep learning (optimization issues being one aspect, but expressive / statistical aspects being also in need of more theory)
 
 
 
@@ -522,7 +550,7 @@ projects
 
 
 
-[generative adversarial network]
+[generative models - generative adversarial network]
 
   http://kvfrans.com/generative-adversial-networks-explained/
   http://torch.ch/blog/2015/11/13/gan.html
@@ -618,10 +646,12 @@ projects
 
 
 
-[variational autoencoder]
+[generative models - variational autoencoder]
 
-  introduction - http://kvfrans.com/variational-autoencoders-explained/
-  introduction and demo - http://vdumoulin.github.io/morphing_faces/
+  introduction -
+	http://kvfrans.com/variational-autoencoders-explained/
+	http://hsaghir.github.io/denoising-vs-variational-autoencoder/
+	http://vdumoulin.github.io/morphing_faces/
   tutorial - http://arxiv.org/abs/1606.05908 + https://github.com/cdoersch/vae_tutorial
   papers - http://dustintran.com/blog/variational-auto-encoders-do-not-train-complex-generative-models/
 
@@ -696,7 +726,7 @@ projects
 
 
 
-[restricted boltzmann machine]
+[generative models - restricted boltzmann machine]
 
   https://theneural.wordpress.com/2011/07/08/the-miracle-of-the-boltzmann-machine/ (Ilya Sutskever)
   https://stats.stackexchange.com/questions/114385/what-is-the-difference-between-convolutional-neural-networks-restricted-boltzma
@@ -734,13 +764,6 @@ projects
 
   Boltzmann machine
   	"The synapses in the network start out with a random distribution of weights, and the weights are gradually tweaked according to a remarkably simple procedure: The neural firing pattern generated while the machine is being fed data is compared with random firing activity that occurs while the input is turned off. Each virtual synapse tracks both sets of statistics. If the neurons it connects fire in close sequence more frequently when driven by data than when they are firing randomly, the weight of the synapse is increased by an amount proportional to the difference. But if two neurons more often fire together during random firing than data-driven firing, the synapse connecting them is too thick and consequently is weakened."
-
-
-
-
-
-
-Neural Abstract Machines & Program Induction workshop @ NIPS 2016 - https://uclmr.github.io/nampi/
 
 
 
@@ -807,8 +830,9 @@ Neural Abstract Machines & Program Induction workshop @ NIPS 2016 - https://uclm
 
 	"Computations scale much worse than linearly, and current research in parallelizing the training algorithms and creating convolutional architectures is meant to make these algorithms useful in practice. Convolutional architectures mean that every hidden unit output to a layer does not become the input for every other hidden unit in the next layer; they can be restricted to only connect to other hidden units that are within the same spatial area."
 
-	https://cs231n.github.io/convolutional-networks/
+	https://cs231n.github.io/convolutional-networks/ (Andrej Karpathy)
 
+	https://youtube.com/watch?v=u6aEYuemt0M (Andrej Karpathy)
 	https://youtube.com/watch?v=LxfUGhug-iQ (Andrej Karpathy)
 	http://videolectures.net/deeplearning2016_fergus_neural_networks/ (Rob Fergus)
 	https://youtu.be/Xogn6veSyxA?t=40m30s (Ian Goodfellow)
@@ -843,13 +867,6 @@ Neural Abstract Machines & Program Induction workshop @ NIPS 2016 - https://uclm
 	 - signal can scale arbitrarily (unlike sigmoid and tanh units)
 
 
-  * maxout unit
-
-	learning activation function instead of using fixed one
-	several connections between two neurons instead of single one
-	any activaton function approximated by ensemble of linear functions
-
-
   * capsule
 
 	Geoff Hinton - http://techtv.mit.edu/collections/bcs/videos/30698-what-s-wrong-with-convolutional-nets + https://github.com/WalnutiQ/walnut/issues/157 (transcription)
@@ -866,7 +883,7 @@ Neural Abstract Machines & Program Induction workshop @ NIPS 2016 - https://uclm
 
 
 
-[compute and memory architectures]
+[architectures - compute and memory]
 
   "Deep Learning and Reasoning, Memory-Augmented Networks" by Rob Fergus -
   	http://vk.com/video-44016343_456239295 + http://www.college-de-france.fr/site/en-yann-lecun/seminar-2016-04-08-12h00.htm
@@ -876,73 +893,75 @@ Neural Abstract Machines & Program Induction workshop @ NIPS 2016 - https://uclm
 
 
   * Pointer Networks
-  		does not have a writable memory - is similar to the attention model of Bahdanau et al. (2014) in this regard
-  		despite not having a memory, this model was able to solve a number of difficult algorithmic problems such as convex hull and approximate 2D TSP
+  	does not have a writable memory - is similar to the attention model of Bahdanau et al. (2014) in this regard
+  	despite not having a memory, this model was able to solve a number of difficult algorithmic problems such as convex hull and approximate 2D TSP
 
   * Grid LSTM
-  		allows to use LSTM cells for both deep and sequential computation
-  		achieves excellent results on both synthetic, algorithmic problems and on real tasks, such as language modelling, machine translation and object recognition
+  	allows to use LSTM cells for both deep and sequential computation
+  	achieves excellent results on both synthetic, algorithmic problems and on real tasks, such as language modelling, machine translation and object recognition
 
   * Neural GPU
-  		https://youtube.com/watch?v=hVv4M0bTBJc (Sutskever)
+  	https://youtube.com/watch?v=hVv4M0bTBJc (Sutskever)
 
   * Memory Networks
-  		http://techtalks.tv/talks/memory-networks-for-language-understanding/62356/
-  		http://youtu.be/jRkm6PXRVF8?t=16m29s (Weston)
-  		http://research.microsoft.com/apps/video/default.aspx?id=259920 (Sukhbaatar)
-  		http://youtube.com/watch?v=8keqd1ewsno (Bordes)
-  		http://youtube.com/watch?v=Xumy3Yjq4zk (Weston) + http://cs224d.stanford.edu/lectures/CS224d-Lecture12.pdf
+  	http://techtalks.tv/talks/memory-networks-for-language-understanding/62356/
+  	http://youtu.be/jRkm6PXRVF8?t=16m29s (Weston)
+  	http://research.microsoft.com/apps/video/default.aspx?id=259920 (Sukhbaatar)
+  	http://youtube.com/watch?v=8keqd1ewsno (Bordes)
+  	http://youtube.com/watch?v=Xumy3Yjq4zk (Weston)
 
   * Stack-Augmented Recurrent Neural Network
-  		http://research.microsoft.com/apps/video/default.aspx?id=259646 (Joulin, 15:00)
-  		http://youtu.be/FUlTjKL-mVA?t=43m48s + https://youtu.be/gi4Zf59_IcU?t=54m43s (Mikolov)
-
-  		able to generalize to long problem instances from short problem instances
+  	http://research.microsoft.com/apps/video/default.aspx?id=259646 (Joulin, 15:00)
+  	http://youtu.be/FUlTjKL-mVA?t=43m48s + https://youtu.be/gi4Zf59_IcU?t=54m43s (Mikolov)
 
   * Neural Stacks/Queues
-  		https://iamtrask.github.io/2016/02/25/deepminds-neural-stack-machine/
-  		http://egrefen.com/docs/NIPSStackPoster.pdf
-  		http://videolectures.net/deeplearning2015_blunsom_memory_reading/ (Blunsom)
+  	https://iamtrask.github.io/2016/02/25/deepminds-neural-stack-machine/
+  	http://egrefen.com/docs/NIPSStackPoster.pdf
+  	http://videolectures.net/deeplearning2015_blunsom_memory_reading/ (Blunsom)
 
   * Neural Turing Machine
-  		basic idea:
-  		- turn neural networks into 'differentialbe computers' by giving them read-write acces to external memory
-  		- separate computation and memory in neural networks to be able to learn algorithmic patterns
-  		architecture:
-  		 - controller - neural network (recurrent or feedforward)
-  		 - heads - (attention) select portions of the memory to read/write to them
-  		 - memory - 'everything is differentiable'
-  		attention:
-  		 - addressing by content (associative lookup)
-  		 - addressing by location (controller outputs a shift kernel)
+  	basic idea:
+  	- turn neural networks into 'differentialbe computers' by giving them read-write acces to external memory
+  	- separate computation and memory in neural networks to be able to learn algorithmic patterns
+  	architecture:
+  	 - controller - neural network (recurrent or feedforward)
+  	 - heads - (attention) select portions of the memory to read/write to them
+  	 - memory - 'everything is differentiable'
+  	attention:
+  	 - addressing by content (associative lookup)
+  	 - addressing by location (controller outputs a shift kernel)
 
-  		RNN with big memory matrix and a "head" and "gaze" which it can position/focus to do a blurry, differentiable analog of a "read from (or write to) memory
-  		difference with LSTM - decoupling memory and computation
+  	RNN with big memory matrix and a "head" and "gaze" which it can position/focus to do a blurry, differentiable analog of a "read from (or write to) memory
+  	difference with LSTM - decoupling memory and computation
 
-  		NTM can learn basic algorithms from examples only, including copy, loop, sort, associative recall and dynamic N-Gram inference
+  	NTM can learn basic algorithms from examples only, including copy, loop, sort, associative recall and dynamic N-Gram inference
 
-  		http://research.microsoft.com/apps/video/default.aspx?id=260037 (Graves)
-		http://youtube.com/watch?v=otRoAQtc5Dk (Polykovskiy)
+  	http://research.microsoft.com/apps/video/default.aspx?id=260037 (Graves)
+	http://youtube.com/watch?v=otRoAQtc5Dk (Polykovskiy)
 
-  		http://blog.acolyer.org/2016/03/09/neural-turing-machines/
-  		http://ikuz.eu/2014/11/19/neural-turing-machines-by-google-deepmind-article-overview/
+  	http://blog.acolyer.org/2016/03/09/neural-turing-machines/
+  	http://ikuz.eu/2014/11/19/neural-turing-machines-by-google-deepmind-article-overview/
 
   * Differentiable Neural Computer
-		"Hybrid Computing using a Neural Network with Dynamic External Memory" - http://www.nature.com.sci-hub.cc/nature/journal/vaop/ncurrent/full/nature20101.html
-		https://deepmind.com/blog/differentiable-neural-computers/
+	"Hybrid Computing using a Neural Network with Dynamic External Memory" -
+		http://www.nature.com.sci-hub.cc/nature/journal/vaop/ncurrent/full/nature20101.html
+	https://deepmind.com/blog/differentiable-neural-computers/
 
-		https://youtube.com/watch?v=PQrlOjj8gAc (Wayne)
-		https://youtu.be/otRoAQtc5Dk?t=59m56s (Polykovskiy)
+	https://youtube.com/watch?v=PQrlOjj8gAc (Wayne)
+	https://youtu.be/otRoAQtc5Dk?t=59m56s (Polykovskiy)
 
-		https://github.com/yos1up/DNC
-		https://github.com/Mostafa-Samir/DNC-tensorflow
-		https://github.com/frownyface/dnc
-		https://github.com/khaotik/dnc-theano
-
-
+	https://github.com/yos1up/DNC
+	https://github.com/Mostafa-Samir/DNC-tensorflow
+	https://github.com/frownyface/dnc
+	https://github.com/khaotik/dnc-theano
 
 
-[attention mechanism]
+  Neural Abstract Machines & Program Induction workshop @ NIPS 2016 - https://uclmr.github.io/nampi/
+
+
+
+
+[architectures - attention]
 
   "The ability to focus on one thing and ignore others has a vital role in guiding cognition. Not only does this allow us to pick out salient information from noisy data (the cocktail party problem) it also allows us to pursue one thought at a time, remember one event rather than all events."
   "Even with no explicit attention mechanism, neural nets learn a form of implicit attention where they respond more strongly to some parts of the data than others. Implicit attention is great, but there are still reasons to favour an explicit attention mechanism that limits the data presented to the network in some way:
@@ -990,18 +1009,101 @@ Neural Abstract Machines & Program Induction workshop @ NIPS 2016 - https://uclm
 
   Hinton - "Aetherial Symbols" - https://drive.google.com/file/d/0B8i61jl8OE3XdHRCSkV1VFNqTWc
 
-	"- words are the symbolic indicators of thought vectors
-	 - words carry with each a probabilistic stream of potential further thoughts and links to past symbols
-	 - much like implicit CFD, they are backward convolved with prior words to determine most likely hidden thought, and then forward solved to determine next word
-	 - further, these streams are described with formal logic relationships based on the identities of the included words which can have levels of "meta-identity" (ie: I can't know some pair are brother and sister without having having been given the idea of bros/sis pairs or seen others)
-	 - knowledge of more or varied relationships (and more logic paths) provides more efficient/accurate ways to solve an optimized path through the higher dimensions of word/symbol space
-	 - in a sense, one may never know the idea of "bros/sis" but it is probabilistically highly likely that given a male and female with the same parents that they are also bros/sis."
+  - words are the symbolic indicators of thought vectors
+  - words carry with each a probabilistic stream of potential further thoughts and links to past symbols
+  - much like implicit CFD, they are backward convolved with prior words to determine most likely hidden thought, and then forward solved to determine next word
+  - further, these streams are described with formal logic relationships based on the identities of the included words which can have levels of "meta-identity" (ie: I can't know some pair are brother and sister without having having been given the idea of bros/sis pairs or seen others)
+  - knowledge of more or varied relationships (and more logic paths) provides more efficient/accurate ways to solve an optimized path through the higher dimensions of word/symbol space
+  - in a sense, one may never know the idea of "bros/sis" but it is probabilistically highly likely that given a male and female with the same parents that they are also bros/sis.
 
   Hinton - "Distributed Representations" - http://www.cs.toronto.edu/~bonner/courses/2014s/csc321/lectures/lec5.pdf
 
   Bottou - "From Machine Learning to Machine Reasoning" - http://youtube.com/watch?v=tzp_BikdgyM + http://research.microsoft.com/pubs/192773/tr-2011-02-08.pdf
 
   Bengio - http://www.iro.umontreal.ca/~bengioy/dlbook/disentangling.html
+
+
+  continuous space embeddings of words, sentences, texts, relational graphs
+
+   + approximate objects/relations/categories
+   + built in-similarity function
+   + generative function for relations/categories (no need to name everything)
+
+   - map objects (images, sentences, DNA sequences, commands, or combinations of these) to points in metric spaces (embeddings)
+   - combinatorial optimization problems becomes easier in metric spaces when casted as continuous optimization problems
+   - embeddings are efficient/flexible features and provide extra knowledge for many practical tasks
+   - embeddings can be decoded to produce structured outputs (parsing, sequential decision making, translation)
+   - distributed representations have exponential power and further gains arise from the use of layers (composition)
+   - embeddings can be learned with supervised or unsupervised training and can be learned for multiple tasks jointly
+   - scalable and parallelizable training with stochastic gradient descent using similarity ranking loss or log-likelihood loss
+   - more data and bigger the models, the more impressive the results
+   - embeddings and logic? computational power? what are good encoders, decoders and transformers?
+
+   * should words/sentences/entities/relations/facts be vectors or matrices, or tensors, or distributions over them?
+   * better compression? improve memory capacity of embeddings and allow for one-shot learning of new symbols
+   * do we need non-linearities? most supervised problems are mostly tackled well by linear models
+   * can we fit the meaning of a sentence into a “single *&!**^ing vector”?
+   * what is the sentence space?
+   * are the sentence vectors contextual?
+   * how to compose words into sentences, entities and relations into facts? (addition, tensor product, inner products, ...)
+   * function words, logical operators, quantification, inference, ...?
+   * composing in other modalities (images, videos, ...)?
+
+   - What type of inferences do embeddings support?
+   - What is a proof in embeddings?
+   - How can explicit background knowledge be injected into embeddings?
+
+  "A number of techniques have been proposed to learn entity and relation representations using neural networks. They all represent entities as low-dimensional vectors and represent relations as operators that combine the representations of two entities. The main difference among these techniques lies in the parametrization of the relation operators. For instance, given two entity vectors, the model of Neural Tensor Network represents each relation as a bilinear tensor operator and a linear matrix operator. The model of TransE, on the other hand, represents each relation as a single vector that linearly interacts with the entity vectors. Both models report promising performance on predicting unseen relationships in knowledge bases."
+
+  "One of the main benefits in using neural networks is that they can be trained to handle very subtle kinds of logic that humans use in casual language that defy axiomatization. Propositional logic, first-order logic, higher order logic, modal logic, nonmonotonic logic, probabilistic logic, fuzzy logic - none of them seem to quite be adequate; but if you use the right kind of recursive net, you don't even have to specify the logic to get it to make useful deductions, if you have enough training data."
+
+
+  http://gavagai.se/blog/2015/09/30/a-brief-history-of-word-embeddings/
+
+  http://sebastianruder.com/word-embeddings-1/index.html
+  http://sebastianruder.com/word-embeddings-softmax/index.html
+
+  Arora - "Word Embeddings: Explaining their properties" -
+	http://www.offconvex.org/2015/12/12/word-embeddings-1/ + http://www.offconvex.org/2016/02/14/word-embeddings-2/
+
+
+  Weston, Bordes, Chopra - "Embeddings for KB and Text, Representation, Extraction and Question Answering"
+  	http://youtube.com/watch?v=FVjuwv1_EDw + http://akbc.ws/2014/slides/weston-nips-akbc.pdf
+
+  Weston, Bordes - "Embedding Methods for NLP" - http://emnlp2014.org/tutorials/8_notes.pdf
+
+  Bouchard, Naradowsky, Riedel, Rocktaschel, Vlachos - "Matrix and Tensor Factorization Methods for Natural Language Processing"
+  	https://github.com/uclmr/acl2015tutorial/raw/master/tutorial.pdf
+  	http://cl.naist.jp/~kevinduh/z/acl15tutorial/29_AbstractPDF.pdf
+
+  Rocktaschel, Bosnjak, Singh, Riedel - "Low-Dimensional Embeddings of Logic"
+  	http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/
+
+  	https://b8ca8e88-a-62cb3a1a-s-sites.googlegroups.com/site/learningsemantics2014/SebastianRiedel.pdf
+  	http://yoavartzi.com/sp14/slides/rockt.sp14.pdf
+  	http://www.aclweb.org/anthology/W/W14/W14-2409.pdf
+
+  Bouchard, Singh, Trouillon - "On Approximate Reasoning Capabilities of Low-Rank Vector Spaces"
+  	https://drive.google.com/file/d/0B_hicYJxvbiObnNYZ0cyMkotUzQ + http://sameersingh.org/files/papers/logicmf-krr15.pdf
+
+  	Bouchard - "Programming by Teaching" - https://youtube.com/watch?v=sKZD8huxjZ0
+
+  Weston, Chopra, Bordes, Mikolov - "Memory Networks"
+  	http://youtube.com/watch?v=Xumy3Yjq4zk + http://cs224d.stanford.edu/lectures/CS224d-Lecture12.pdf
+  	http://techtalks.tv/talks/memory-networks-for-language-understanding/62356/
+  	http://youtu.be/jRkm6PXRVF8?t=16m29s
+  	http://research.microsoft.com/apps/video/default.aspx?id=259920
+  	http://youtube.com/watch?v=8keqd1ewsno
+
+  	http://blog.acolyer.org/2016/03/10/memory-networks/
+  	https://docs.google.com/file/d/0B_hicYJxvbiOT3QyTm4wdHlaeWs
+
+  McCallum - "Word Representations via Gaussian Embedding" - http://arxiv.org/abs/1412.6623
+  	http://youtube.com/watch?v=PKTfALFk03M + http://iclr.cc/lib/exe/fetch.php?media=iclr2015:vilnis-iclr2015.pdf
+  	 - represent symbols not as points but as regions in space
+  	 - captures uncertainty of representation
+  	 - enhances asymmetric reasoning such as entailment/implicature
+  	 - more expressive decision boundaries and representational power
 
 
 
@@ -1268,7 +1370,8 @@ http://biology.stackexchange.com/questions/36412/biological-implementation-of-co
 
 
 
-selected papers - https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
+selected papers and books - https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
+
 most important papers - http://rt.dgyblog.com/ref/ref-learning-deep-learning.html
 most important papers - http://deeplearning.net/reading-list/
 interesting papers -
@@ -1848,6 +1951,7 @@ Input_1: {(3,2,4),(5,2,1)} Output_1: {(3,5,9)} Input_2: {(4,1,3),(3,2,2)} Output
 	-- http://www-personal.umich.edu/~reedscot/iclr_project.html
 	-- http://youtube.com/watch?v=B70tT4WMyJk (overview)
 	-- http://youtube.com/watch?v=s7PuBqwI2YA (demo)
+	-- http://youtu.be/tPWGGwmgwG0?t=5m40s (de Freitas)
 	-- http://videolectures.net/kdd2016_de_freitas_recurrent_neural/ (de Freitas, 00:52:10)
 	-- http://videolectures.net/iclr2016_reed_neural_programmer/ (Reed)
 	-- https://pseudoprofound.wordpress.com/2016/06/07/neural-programmer-interpreters-programs-that-can-learn-programs/
@@ -2154,16 +2258,17 @@ Kingma, Welling - "Auto-Encoding Variational Bayes" [http://arxiv.org/abs/1312.6
 	-- https://youtu.be/_qrHcSdQ2J4?t=1h37m21s (Vetrov, in russian)
 	-- http://vk.com/video-44016343_456239092 (Stepochkin, in russian)
 	-- http://youtu.be/0veUbpdBqyk?t=50m50s (Chervinsky, in russian)
+	-- http://hsaghir.github.io/denoising-vs-variational-autoencoder/
 	-- http://arxiv.org/abs/1606.05908 + https://github.com/cdoersch/vae_tutorial (tutorial)
 	-- http://arxiv.org/abs/1610.09296 (explanation)
 	-- http://blog.fastforwardlabs.com/post/148842796218/introducing-variational-autoencoders-in-prose-and + http://blog.fastforwardlabs.com/post/149329060653/under-the-hood-of-the-variational-autoencoder-in
 	-- http://blog.keras.io/building-autoencoders-in-keras.html
 	-- https://github.com/fchollet/keras/blob/master/examples/variational_autoencoder.py
+	-- https://jmetzen.github.io/2015-11-27/vae.html
 	-- https://github.com/casperkaae/parmesan
 	-- https://github.com/arahuja/generative-tf
 	-- https://github.com/blei-lab/edward/blob/master/examples/convolutional_vae.py
 	-- https://github.com/Kaixhin/Autoencoders/blob/master/models/VAE.lua
-	-- https://jmetzen.github.io/2015-11-27/vae.html
 
 Rezende, Mohamed, Wiestra - "Stochastic Backpropagation and Approximate Inference in Deep Generative Models" [http://arxiv.org/abs/1401.4082]
 	"We marry ideas from deep neural networks and approximate Bayesian inference to derive a generalised class of deep, directed generative models, endowed with a new algorithm for scalable inference and learning. Our algorithm introduces a recognition model to represent an approximate posterior distribution and uses this for optimisation of a variational lower bound. We develop stochastic back-propagation rules for gradient backpropagation through stochastic variables and derive an algorithm that allows for joint optimisation of the parameters of both the generative and recognition models. We demonstrate on several real-world data sets that by using stochastic backpropagation and variational inference, we obtain models that are able to generate realistic samples of data, allow for accurate imputations of missing data, and provide a useful tool for high-dimensional data visualisation."

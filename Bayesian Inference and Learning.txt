@@ -1,7 +1,20 @@
-"Probabilistic/statistical machine learning frames models as distributions over data and latent variables, allowing models to address a broad array of downstream tasks. The underlying statistical methodology of latent variable models is typically Bayesian."
-"A central problem in machine learning involves modeling complex data-sets using highly flexible families of probability distributions in which learning, sampling, inference, and evaluation are still analytically or computationally tractable."
+  Probabilistic/statistical machine learning frames models as distributions over data and latent variables, allowing models to address a broad array of downstream tasks. The underlying statistical methodology of latent variable models is typically Bayesian. A central problem involves modeling complex data-sets using highly flexible families of probability distributions in which learning, sampling, inference, and evaluation are still analytically or computationally tractable.
 
 
+  * overview
+  * probability and statistics
+  * bayesian machine learning
+  * bayesian deep learning
+  * theory
+  * graphical models
+  * non-parametric models
+  * expectation maximization
+  * variational inference
+  * sampling
+  * likelihood-free inference
+  * causal inference
+  * interesting quotes
+  * interesting papers
 
 
 selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
@@ -31,7 +44,7 @@ selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91I
 
 
 
-[introduction to probability and statistics]
+[probability and statistics]
 
   "Probability is the representation of uncertain or partial knowledge about the truth of statements."
   "Logical inference is about what is certain to be true. Statistical inference is about what is likely to be true."
@@ -134,7 +147,7 @@ selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91I
 
 
 
-[deep learning]
+[bayesian deep learning]
 
   Dmitry Vetrov - "Bayesian Inference and Deep Learning" (in russian) - https://youtu.be/_qrHcSdQ2J4?t=22m31s + https://youtube.com/watch?v=BKh7nj5SmnI
   Dmitry Vetrov - "Learning in Stochastic Computation Graphs" (in russian) - https://youtu.be/0q5p7xP4cdA?t=5h4m9s
@@ -514,8 +527,10 @@ challenges:
 
   variational autoencoder
 
-	introduction - http://kvfrans.com/variational-autoencoders-explained/
-	introduction and demo - http://vdumoulin.github.io/morphing_faces/
+	introduction -
+		http://kvfrans.com/variational-autoencoders-explained/
+		http://hsaghir.github.io/denoising-vs-variational-autoencoder/
+		http://vdumoulin.github.io/morphing_faces/
 	tutorial - http://arxiv.org/abs/1606.05908 + https://github.com/cdoersch/vae_tutorial
 	papers - http://dustintran.com/blog/variational-auto-encoders-do-not-train-complex-generative-models/
 
@@ -631,7 +646,9 @@ challenges:
 
 
 
-[likelihood-free inference / Approximate Bayesian Computation]
+[likelihood-free inference]
+
+  Approximate Bayesian Computation
 
   http://dennisprangle.github.io/research/2016/06/07/bayesian-inference-by-neural-networks
   http://dennisprangle.github.io/research/2016/06/07/bayesian-inference-by-neural-networks2
@@ -762,16 +779,17 @@ Kingma, Welling - "Auto-Encoding Variational Bayes" [http://arxiv.org/abs/1312.6
 	-- https://youtu.be/_qrHcSdQ2J4?t=1h37m21s (Vetrov, in russian)
 	-- http://vk.com/video-44016343_456239092 (Stepochkin, in russian)
 	-- http://youtu.be/0veUbpdBqyk?t=50m50s (Chervinsky, in russian)
+	-- http://hsaghir.github.io/denoising-vs-variational-autoencoder/
 	-- http://arxiv.org/abs/1606.05908 + https://github.com/cdoersch/vae_tutorial (tutorial)
 	-- http://arxiv.org/abs/1610.09296 (explanation)
 	-- http://blog.fastforwardlabs.com/post/148842796218/introducing-variational-autoencoders-in-prose-and + http://blog.fastforwardlabs.com/post/149329060653/under-the-hood-of-the-variational-autoencoder-in
 	-- http://blog.keras.io/building-autoencoders-in-keras.html
 	-- https://github.com/fchollet/keras/blob/master/examples/variational_autoencoder.py
+	-- https://jmetzen.github.io/2015-11-27/vae.html
 	-- https://github.com/casperkaae/parmesan
 	-- https://github.com/arahuja/generative-tf
 	-- https://github.com/blei-lab/edward/blob/master/examples/convolutional_vae.py
 	-- https://github.com/Kaixhin/Autoencoders/blob/master/models/VAE.lua
-	-- https://jmetzen.github.io/2015-11-27/vae.html
 
 Rezende, Mohamed, Wierstra - "Stochastic Backpropagation and Approximate Inference in Deep Generative Models" [http://arxiv.org/abs/1401.4082]
 	"We marry ideas from deep neural networks and approximate Bayesian inference to derive a generalised class of deep, directed generative models, endowed with a new algorithm for scalable inference and learning. Our algorithm introduces a recognition model to represent an approximate posterior distribution and uses this for optimisation of a variational lower bound. We develop stochastic backpropagation rules for gradient backpropagation through stochastic variables and derive an algorithm that allows for joint optimisation of the parameters of both the generative and recognition models. We demonstrate on several real-world data sets that by using stochastic backpropagation and variational inference, we obtain models that are able to generate realistic samples of data, allow for accurate imputations of missing data, and provide a useful tool for high-dimensional data visualisation."

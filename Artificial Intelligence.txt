@@ -1,9 +1,22 @@
-"The science of Artificial Intelligence is concerned with the study of intelligent forms of behaviour in computational terms."
+Intelligence is use of information to take decisions which save energy in pursuit of a given task.
 
 
-the most impressive accomplishments in AI (in russian) - https://dropbox.com/s/di5mxkj8c65h3e6/AI%20wonders.txt
-
-
+  * overview
+  * problems and approaches
+  * benchmarks and competitions
+  * symbolic approach
+  * non-symbolic approach
+  * frameworks
+    - Reinforcement Learning
+    - Solomonoff Induction and AIXI
+    - Artificial Curiosity and Creativity
+    - Meta-learning
+    - Algorithmic Composition
+  * interesting papers
+    - definitions and measures of intelligence
+    - induction, prediction, intelligence
+    - intrinsic motivation
+    - self-improvement and resource-boundedness
 
 
 overviews/publications for research areas
@@ -25,6 +38,8 @@ overviews/publications for applications
 
 
 [overview]
+
+the most impressive accomplishments in AI (in russian) - https://dropbox.com/s/di5mxkj8c65h3e6/AI%20wonders.txt
 
 Demis Hassabis
 	"Towards General Artificial Intelligence" - https://youtube.com/watch?v=vQXAsdMa_8A
@@ -92,7 +107,7 @@ Gary Marcus
 
 
 
-[state of progress]
+[problems and approaches]
 
 AI problems:
 

@@ -1,20 +1,43 @@
-Knowledge Representation is organizing information in a way that computer can use to solve complex tasks. 
-Reasoning is algebraically manipulating previously acquired knowledge in order to answer a new question.
+  Knowledge Representation is organizing information in a way that computer can use to solve complex tasks. 
+  Reasoning is algebraically manipulating previously acquired knowledge in order to answer a new question.
 
-How knowledge can be represented? How knowledge can be used? How knowledge can be acquired?
-
-"AI requires a lot of knowledge. Reading is the easiest way to acquire it. Text is rich but messy."
-
-"A machine comprehends a passage of text if, for any question regarding that text that can be answered correctly by a majority of native speakers, that machine can provide a string which those speakers would agree both answers that question, and does not contain information irrelevant to that question."
-
-"Semantics encompasses extracting structured data from text (knowledge base extraction, logical form extraction, information extraction), linguistic approaches to extract and compose representation of meaning, inference and reasoning over meaning representation based on logic or algebra. It also includes approaches that aims at grounding language by learning relations between language and visual observations, linking language to the physical world."
+  How knowledge can be represented? How knowledge can be used? How knowledge can be acquired?
 
 
+  * overview
+  * knowledge representation
+    - natural language
+    - knowledge graph
+        Resource Description Framework
+        Relational Machine Learning
+    - probabilistic database
+    - probabilistic program
+    - distributed representation
+  * reasoning
+    - neural architectures with reasoning, attention and memory
+    - natural logic
+    - description logic
+    - formal logic
+    - common-sense reasoning
+  * machine comprehension challenges
+  * machine reading projects
+  * conferences
+  * books and monographies
+  * interesting papers
+    - knowledge bases
+    - knowledge bases with discrete/logic/probabilistic representations
+    - knowledge bases with continuous space representations
+    - continuous space representations of text
+    - question answering over knowledge bases
+    - question answering over texts (machine reading)
+    - reasoning
+    - information extraction and integration
+    - multimodal knowledge representation
 
 
 selected papers and books -
 	https://dropbox.com/sh/9ytscy4pwegbvhb/AACtB7tQGj-vigo0yExfciu0a  (knowledge representation and reasoning)
-	https://dropbox.com/sh/c427b94xex62a40/AABii9_MRHrCZPGJ_Adx_b3Ma  (RDF)
+	https://dropbox.com/sh/c427b94xex62a40/AABii9_MRHrCZPGJ_Adx_b3Ma  (Resource Description Framework)
 	https://dropbox.com/sh/jmkl4mhajjghjxk/AABfAImA69Kzxx3b0IhCGouMa  (information extraction and integration)
 	https://dropbox.com/sh/ju4oi0221zo3ql7/AAC8SscYIxR5uk3CVhQXpkuda  (reasoning)
 
@@ -23,7 +46,7 @@ selected papers and books -
 
 [overview]
 
-Geoff Hinton
+  Geoff Hinton
 	"Deep Learning and AI" - http://youtube.com/watch?v=izrG86jycck
 
 	"Aetherial Symbols" - https://drive.google.com/file/d/0B8i61jl8OE3XdHRCSkV1VFNqTWc
@@ -33,13 +56,13 @@ Geoff Hinton
 	"Traditional AI researchers will be horrified by the view that thoughts are merely the hidden states of a recurrent net and even more horrified by the idea that reasoning is just sequences of such state vectors. That's why I think its currently very important to get our critics to state, in a clearly decideable way, what it is they think these nets won't be able to learn to do. Otherwise each advance of neural networks will be met by a new reason for why that advance does not really count. So far, I have got both Garry Marcus and Hector Levesque to agree that they will be impressed if neural nets can correctly answer questions about "Winograd" sentences such as "The city councilmen refused to give the demonstrators a licence because they feared violence." Who feared the violence?"
 
 
-Leon Bottou
+  Leon Bottou
 	"From Machine Learning to Machine Reasoning" - http://youtube.com/watch?v=tzp_BikdgyM + http://research.microsoft.com/pubs/192773/tr-2011-02-08.pdf
 
 	"A plausible definition of "reasoning" could be "algebraically manipulating previously acquired knowledge in order to answer a new question". This definition covers first-order logical inference or probabilistic inference. It also includes much simpler manipulations commonly used to build large learning systems. For instance, we can build an optical character recognition system by first training a character segmenter, an isolated character recognizer, and a language model, using appropriate labelled training sets. Adequately concatenating these modules and fine tuning the resulting system can be viewed as an algebraic operation in a space of models. The resulting model answers a new question, that is, converting the image of a text page into a computer readable text. This observation suggests a conceptual continuity between algebraically rich inference systems, such as logical or probabilistic inference, and simple manipulations, such as the mere concatenation of trainable learning systems. Therefore, instead of trying to bridge the gap between machine learning systems and sophisticated "all-purpose" inference mechanisms, we can instead algebraically enrich the set of manipulations applicable to training systems, and build reasoning capabilities from the ground up."
 
 
-Josh Tenenbaum
+  Josh Tenenbaum
 	https://web.stanford.edu/~ngoodman/papers/ConceptsChapter-final.pdf
 
 	"Knowledge organizes our understanding of the world, determining what we expect given what we have already seen. Our predictive representations have two key properties: they are productive, and they are graded. Productive generalization is possible because our knowledge decomposes into concepts - elements of knowledge that are combined and recombined to describe particular situations. Gradedness is the observable effect of accounting for uncertainty - our knowledge encodes degrees of belief that lead to graded probabilistic predictions. To put this a different way, concepts form a combinatorial system that enables description of many different situations; each such situation specifies a distribution over what we expect to see in the world, given what we have seen. We may think of this system as a probabilistic language of thought in which representations are built from language-like composition of concepts and the content of those representations is a probability distribution on world states."
@@ -65,13 +88,13 @@ Josh Tenenbaum
 	"If our goal is to build knowledge representations sufficient for human-level AI, it is natural to draw inspiration from the content and form of knowledge representations in human minds. Cognitive science has made significant relevant progress in the last several decades, and I will talk about several lessons AI researchers might take from it. First, rather than beginning by trying to extract common-sense knowledge from language, we should begin (as humans do) by capturing in computational terms the core of common sense that exists in prelinguistic infants, roughly 12 months and younger. This is knowledge about physical objects, intentional agents, and their causal interactions -- an intuitive physics with concepts analogous to force, mass and the dynamics of motion, and an intuitive psychology with concepts analogous to beliefs, desires and intentions, or probabilistic expectations, utilities and plans -- which is grounded in perception but has at its heart powerful abstractions that can extend far beyond our direct perceptual experience. Second, we should explore approaches for linguistic meaning, language understanding and language-based common-sense reasoning that build naturally on top of this common-sense core. Both of these considerations strongly favor an approach to knowledge representation based on probabilistic programs, a framework that combines the assets of traditional probabilistic (though not neural) and symbolic approaches. However, I will also point to places where recent neural-network approaches, including deep convolutional networks and vector-space semantics at the word level, can add great value to representation and reasoning in probabilistic programs."
 
 
-Pedro Domingos
+  Pedro Domingos
 	"Knowledge and Language" - http://quizover.com/oer/course/knowledge-and-language-by-pedro-domingos-videolectures-net-oer-ocw
 
 	"Knowledge is essential for NLP. The interesting question is what knowledge should we bother to put in versus what can we learn. Foundational science behind used to be knowledge representation, and then it went away and now it is machine learning. But the truth is you need both. The question is what of which should you combine. Learning is a "knowledge lever". Deductive inference is a "knowledge lever". Better then memorization where there is no lever. But deduction is not a sufficiently powerful lever for things like NLP, because there are things like open world and long tails - deduction is not enough. Induction is an amazing lever - you got a ton of leverage out of very litte knowledge, but you need some knowledge. You can have the greatest lever but without things to push on one side the other one doesn't go up. So if you think about knowledge as a lever the question becomes what knowledge do you want to use. We want to encode high-leverage knowledge. You don't want to waste efforts encoding knowlege you can get by annotating things or just by going to the web and reading documents - that's truly a waste of time. What is high-leverage knowledge - it's one with one or both following characterists. It's hard to learn - some things you have a tons of data for, some things you don't. Some things you can learn with a greedy learner and weight optimization, some things you can't. It's the letter you really want to put in because if you don't you really miss something. And the other side of this coin is you want to put knowledge that is helpful for learning - it's not a question of knowledge or learning. You know there is free-lunch theorem which says there is no such thing as learning without knowledge. So the question is which knowledge helps learning - that's what I want to put in. You want to put a narrower effort that adds job a thousand when I add that to learning. Next thing is knowledge should be stated declaratively. Philosophically it's probably not, but from engineering point of you it's more comprehensible than knowledge that's encoded procedurally or in deep neural network (as much as we like idea of training everything together). You want something you can get a handle to get lever - you don't want something opaque, you can't work with that. Knowledge stated declaratively is also more portable (take it from one task to another), is more extensible (compose pieces of knowledge got in different ways). And the most important, it supports refinement loop in learning. Learning is not a one-shot thing - you put in some knowledge that's very weak (from SVM or decision tree) and then you run it on the data, and then you look what happens - if you don't understand what learner is giving, you can't do refinement loop. If you understand knowledge that's going in and going out, you can figure out what to change. And doing this change and relearn, and figure out what went wrong - putting the knowledge that explains what went wrong. If this is in comprehensible language the end result would be much better than if you have something opaque. What language should be used to store knowledge. Obviously, it should be natural language - there is no better language, although it is hard to deal with."
 
 
-David Ferucci
+  David Ferucci
 	"AI: A Return To Meaning" - http://youtube.com/watch?v=F_0hpnLdNjk
 
 	"AI started with small data and rich semantic theories. The goal was to build systems that could reason over logical models of how the world worked; systems that could answer questions and provide intuitive, cognitively accessible explanations for their results. There was a tremendous focus on domain theory construction, formal deductive logics and efficient theorem proving. We had expert systems, rule-bases, forward chaining, backward chaining, modal logics, naïve physics, lisp, prolog, macro theories, micro theories, etc. The problem, of course, was the knowledge acquisition bottleneck; it was too difficult, slow and costly to render all common sense knowledge into an integrated, formal representation that automated reasoning engines could digest."
@@ -82,614 +105,624 @@ David Ferucci
 
 
 
-[knowledge representations]
+[knowledge representation - natural language]
 
- * natural language
- * knowledge graph
- * probabilistic database
- * probabilistic program
- * distributed representation
+  "AI requires a lot of knowledge. Reading is the easiest way to acquire it. Text is rich but messy."
 
+  "A machine comprehends a passage of text if, for any question regarding that text that can be answered correctly by a majority of native speakers, that machine can provide a string which those speakers would agree both answers that question, and does not contain information irrelevant to that question."
 
+  "Semantics encompasses extracting structured data from text (knowledge base extraction, logical form extraction, information extraction), linguistic approaches to extract and compose representation of meaning, inference and reasoning over meaning representation based on logic or algebra. It also includes approaches that aims at grounding language by learning relations between language and visual observations, linking language to the physical world."
 
- * natural language
 
-	https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt
+  "A Paradigm for Situated and Goal-Driven Language Learning" by Jon Gauthier and Igor Mordatch - https://arxiv.org/abs/1610.03585
+  	"We outlined a paradigm for grounded and goal-driven language learning in artificial agents. The paradigm is centered around a utilitarian definition of language understanding, which equates language understanding with the ability to cooperate with other language users in real-world environments. This position demotes language from its position as a separate task to be solved to one of several communicative tools agents might use to accomplish their real-world goals."
 
-	"A Paradigm for Situated and Goal-Driven Language Learning" by Jon Gauthier and Igor Mordatch - https://arxiv.org/abs/1610.03585
-		"We outlined a paradigm for grounded and goal-driven language learning in artificial agents. The paradigm is centered around a utilitarian definition of language understanding, which equates language understanding with the ability to cooperate with other language users in real-world environments. This position demotes language from its position as a separate task to be solved to one of several communicative tools agents might use to accomplish their real-world goals."
 
+  https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt
 
-	"Natural Language Understanding: Foundations and State-of-the-Art" by Percy Liang - http://videolectures.net/icml2015_liang_language_understanding/ + http://icml.cc/2015/tutorials/icml2015-nlu-tutorial.pd
+  "Natural Language Understanding: Foundations and State-of-the-Art" by Percy Liang - http://videolectures.net/icml2015_liang_language_understanding/ + http://icml.cc/2015/tutorials/icml2015-nlu-tutorial.pd
 
-	"Natural Language Understanding with Distributed Representation" by Kyunghyun Cho - http://arxiv.org/abs/1511.07916
+  "Natural Language Understanding with Distributed Representation" by Kyunghyun Cho - http://arxiv.org/abs/1511.07916
 
-	"A Primer on Neural Network Models for Natural Language Processing" by Yoav Goldberg - http://arxiv.org/abs/1510.00726
+  "A Primer on Neural Network Models for Natural Language Processing" by Yoav Goldberg - http://arxiv.org/abs/1510.00726
 
 
-	http://matt-gardner.github.io/paper-thoughts/2016/12/08/reading-comprehension-survey.html
+  http://matt-gardner.github.io/paper-thoughts/2016/12/08/reading-comprehension-survey.html
 
 
 
- * knowledge graph
 
-	Entity-Attribute-Value model (RDF) with Classes and Relationships (OWL)
-		https://dropbox.com/s/ono4n5yij0y1366/RDF.txt
-		interesting papers - https://dropbox.com/sh/c427b94xex62a40/AABii9_MRHrCZPGJ_Adx_b3Ma
+[knowledge representation - knowledge graph]
 
-		"Ontologies and Knowledge Representation" course by Boris Konev (in russian) - https://lektorium.tv/course/22781
+  Entity-Attribute-Value model (RDF) with Classes and Relationships (OWL)
 
-		strong assumptions:
-		- nothing is ever wrong
-		- no contradictions
+  	https://dropbox.com/s/ono4n5yij0y1366/RDF.txt
+  	interesting papers - https://dropbox.com/sh/c427b94xex62a40/AABii9_MRHrCZPGJ_Adx_b3Ma
 
+  	"Ontologies and Knowledge Representation" course by Boris Konev (in russian) - https://lektorium.tv/course/22781
 
-		"Schema.org: Evolution of Structured Data on the Web" - http://queue.acm.org/detail.cfm?id=2857276
-			"We report some key schema.org adoption metrics from a sample of 10 billion pages from a combination of the Google index and Web Data Commons. In this sample, 31.3% of pages have schema.org markup, up from 22% one year ago. Structured data markup is now a core part of the modern web."
+  	strong assumptions:
+  	- nothing is ever wrong
+  	- no contradictions
 
-		Guha from Google on schema.org and web as the largest existing structured knowledge base - http://youtube.com/watch?v=-UljtBjV8jM
-			"I don't think we even have the begginings of theory [filtering, entity resolution, graph reconciliation]"
 
-		problems of RDF on the web:
-		 - outdated, incorrect or incomplete data
-		 - mistakes made by tools (noisy information extraction, entity linking/reconciliation)
-		 - limited or no reuse of identifiers
-		 - metadata not always representative of content
+  	"Schema.org: Evolution of Structured Data on the Web" - http://queue.acm.org/detail.cfm?id=2857276
+  		"We report some key schema.org adoption metrics from a sample of 10 billion pages from a combination of the Google index and Web Data Commons. In this sample, 31.3% of pages have schema.org markup, up from 22% one year ago. Structured data markup is now a core part of the modern web."
 
+  	Guha from Google on schema.org and web as the largest existing structured knowledge base - http://youtube.com/watch?v=-UljtBjV8jM
+  		"I don't think we even have the begginings of theory [filtering, entity resolution, graph reconciliation]"
 
-	"Constructing and Mining Web-Scale Knowledge Graphs" tutorial by Evgeniy Gabrilovich and Antoine Bordes from Google Knowledge Vault -
-		http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs/
+  	problems of RDF on the web:
+  	 - outdated, incorrect or incomplete data
+  	 - mistakes made by tools (noisy information extraction, entity linking/reconciliation)
+  	 - limited or no reuse of identifiers
+  	 - metadata not always representative of content
 
 
-	Relational Machine Learning
-		traditional ML: data = matrix
-		relational ML:
-		 - multiple data sources, different tuples of variables
-		 - share representations of same types across data sources
-		 - shared learned representations help propagate information among data sources
 
-		"Statistical Relational Learning" tutorial by Volker Tresp - http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning/
+  Relational Machine Learning
 
-		Nickel, Murphy, Tresp, Gabrilovich -
-			"A Review of Relational Machine Learning for Knowledge Graphs: From Multi-Relational Link Prediction to Automated Knowledge Graph Construction" -
-				http://arxiv.org/abs/1503.00759
+  	traditional ML: data = matrix
+  	relational ML:
+  	 - multiple data sources, different tuples of variables
+  	 - share representations of same types across data sources
+  	 - shared learned representations help propagate information among data sources
 
 
-		canonical tasks:
-		 - link prediction/mining, i.e. predicting whether or not two or more objects are related  [graph completion]
-		 - link-based clustering, i.e. grouping of similar objects, where similarity is determined according to the links of an object, and the related task of collaborative filtering, i.e. the filtering for information that is relevant to an entity (where a piece of information is considered relevant to an entity if it is known to be relevant to a similar entity)  [entity reconciliation, taxonomy learning]
-		 - object classification, i.e. (simultaneous) prediction of the class of several objects given objects' attributes and their relations  [defining type, schema matching]
-		 - object identification, i.e. identification of equivalent entries in two or more separate databases/datasets  [entity linking, ontology mapping]
+  	"Statistical Relational Learning" tutorial by Tresp - http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning/
+	Getoor, Taskar - "Introduction to Statistical Relational Learning" - http://www.cs.umd.edu/srl-book/
 
+	"Constructing and Mining Web-Scale Knowledge Graphs" tutorial by Gabrilovich and Bordes (Google) -
+  		http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs/
+  	Nickel, Murphy, Tresp, Gabrilovich (Google) -
+  		"A Review of Relational Machine Learning for Knowledge Graphs: From Multi-Relational Link Prediction to Automated Knowledge Graph Construction" -
+		http://arxiv.org/abs/1503.00759
 
-		concerned with models of domains that exhibit both uncertainty (which can be dealt with using statistical methods) and complex, relational structure
-		combines machine learning with relational data models and first-order logic and enables machine learning in knowledge bases
-		knowledge representation formalisms use (a subset of) first-order logic to describe relational properties of a domain in a general manner (universal quantification) and draw upon probabilistic graphical models (such as Bayesian networks or Markov networks) to model the uncertainty
-		not strictly limited to learning aspects - equally concerned with reasoning (specifically probabilistic inference) and knowledge representation
-		statistical relational learning and reasoning (emphasizing the importance of reasoning) and first-order probabilistic languages (emphasizing the key properties of the languages with which models are represented)
-		multivariate statistical models (Bayesian networks, Markov networks, mixture models, factor models) can be generalized to relational domains as probabilistic relational models, Markov logic networks, infinite hidden relational models and RESCAL model
+	interesting papers on information extraction and integration - https://dropbox.com/sh/jmkl4mhajjghjxk/AABfAImA69Kzxx3b0IhCGouMa
 
 
-		"Prior work on multi-relational learning can be categorized into three categories:
-		(1) statistical relational learning, such as Markov logic networks, which directly encode multi-relational graphs using probabilistic models
-		(2) path ranking methods, which explicitly explore the large relational feature space of relations with random walk
-		(3) embedding-based models, which embed multi-relational knowledge into low-dimensional representations of entities and relations via tensor/matrix factorization, Bayesian clustering framework or neural networks."
 
-		 - tensor factorization (Harshman'94)
-		 - probabilistic relational learning (Friedman'99)
-		 - relational Markov networks (Taskar'02)
-		 - Markov logic networks (Kok'07)
-		 - spectral clustering (undirected graphs) (Dong'12)
-		 - ranking of random walks (Lao'11)
-		 - collective matrix factorization (Nickel'11)
-		 - matrix factorization & universal schema (Riedel'13)
-		 - embedding models (Bordes'11)
+  	canonical tasks:
+  	 - link prediction/mining, i.e. predicting whether or not two or more objects are related  [graph completion]
+  	 - link-based clustering, i.e. grouping of similar objects, where similarity is determined according to the links of an object, and the related task of collaborative filtering, i.e. the filtering for information that is relevant to an entity (where a piece of information is considered relevant to an entity if it is known to be relevant to a similar entity)  [entity reconciliation, taxonomy learning]
+  	 - object classification, i.e. (simultaneous) prediction of the class of several objects given objects' attributes and their relations  [defining type, schema matching]
+  	 - object identification, i.e. identification of equivalent entries in two or more separate databases/datasets  [entity linking, ontology mapping]
 
-		"Ten Problems for Next 10 Years" by Pedro Domingos - http://videolectures.net/icml07_domingos_tpf/
 
+  	concerned with models of domains that exhibit both uncertainty (which can be dealt with using statistical methods) and complex, relational structure
+  	combines machine learning with relational data models and first-order logic and enables machine learning in knowledge bases
+  	knowledge representation formalisms use (a subset of) first-order logic to describe relational properties of a domain in a general manner (universal quantification) and draw upon probabilistic graphical models (such as Bayesian networks or Markov networks) to model the uncertainty
+  	not strictly limited to learning aspects - equally concerned with reasoning (specifically probabilistic inference) and knowledge representation
+  	statistical relational learning and reasoning (emphasizing the importance of reasoning) and first-order probabilistic languages (emphasizing the key properties of the languages with which models are represented)
+  	multivariate statistical models (Bayesian networks, Markov networks, mixture models, factor models) can be generalized to relational domains as probabilistic relational models, Markov logic networks, infinite hidden relational models and RESCAL model
 
-		approaches:
 
-		  - random walk inference
-				Path Ranking Algorithm - http://cs.cmu.edu/~nlao/publication/2012/defense.pdf
+  	"Prior work on multi-relational learning can be categorized into three categories:
+  	(1) statistical relational learning, such as Markov logic networks, which directly encode multi-relational graphs using probabilistic models
+  	(2) path ranking methods, which explicitly explore the large relational feature space of relations with random walk
+  	(3) embedding-based models, which embed multi-relational knowledge into low-dimensional representations of entities and relations via tensor/matrix factorization, Bayesian clustering framework or neural networks."
 
-				PRA used in Google Knowledge Vault - https://youtu.be/i2r5J4XAhsw?t=5m7s
-				PRA used in NELL
+  	 - tensor factorization (Harshman'94)
+  	 - probabilistic relational learning (Friedman'99)
+  	 - relational Markov networks (Taskar'02)
+  	 - Markov logic networks (Kok'07)
+  	 - spectral clustering (undirected graphs) (Dong'12)
+  	 - ranking of random walks (Lao'11)
+  	 - collective matrix factorization (Nickel'11)
+  	 - matrix factorization & universal schema (Riedel'13)
+  	 - embedding models (Bordes'11)
 
-				"Reading and Reasoning with Knowledge Graphs" thesis by Matt Gardner - http://www.cs.cmu.edu/~mg1/thesis.pdf
-				Subgraph Feature Extraction as improvement over PRA by Matt Gardner -
-					http://youtube.com/watch?v=dp2waL7OLbI + https://www.cs.cmu.edu/~mg1/paper.pdf
+  	"Ten Problems for Next 10 Years" by Pedro Domingos - http://videolectures.net/icml07_domingos_tpf/
 
-				PRA with distributed representations and Recurrent Neural Network (in Epistemological database of Andrew McCallum) -
-					http://youtube.com/watch?v=mSrkzc0Nksg + https://docs.google.com/file/d/0B_hicYJxvbiOTUxZMWY5T2N2VG8
 
-				PRA over proof space for first-order logic (in ProPPR of William Cohen) -
-					http://youtu.be/--pYaISROqE?t=12m35s + https://drive.google.com/file/d/0B_hicYJxvbiOc05xNEhvdVVSQWc
+  	approaches:
 
-		  - continuous space embeddings
-				overview by Antoines Bordes - http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs/ (part 2, 1:07:43)
-				overview by Jason Weston - http://youtube.com/watch?v=FVjuwv1_EDw + http://akbc.ws/2014/slides/weston-nips-akbc.pdf
+  	  - random walk inference
+  			Path Ranking Algorithm - http://cs.cmu.edu/~nlao/publication/2012/defense.pdf
 
-				used in Google Knowledge Vault (Multi Layered Perceptron)
-					https://youtu.be/i2r5J4XAhsw?t=3m7s
-					http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning/ (part 2, 1:19:37)
-					http://arxiv.org/abs/1503.00759
+  			PRA used in Google Knowledge Vault - https://youtu.be/i2r5J4XAhsw?t=5m7s
+  			PRA used in NELL
 
-				https://github.com/dirkweissenborn/genie-kb/blob/master/model/models.py (DistMult, Model E, Model F, Model N, Model O)
+  			"Reading and Reasoning with Knowledge Graphs" thesis by Matt Gardner - http://www.cs.cmu.edu/~mg1/thesis.pdf
+  			Subgraph Feature Extraction as improvement over PRA by Matt Gardner -
+  				http://youtube.com/watch?v=dp2waL7OLbI + https://www.cs.cmu.edu/~mg1/paper.pdf
 
-		  - latent factor models
-				with latent features one gets collective learning - information can globally propagate in the network of random variables
+  			PRA with distributed representations and Recurrent Neural Network (in Epistemological database of Andrew McCallum) -
+  				http://youtube.com/watch?v=mSrkzc0Nksg + https://docs.google.com/file/d/0B_hicYJxvbiOTUxZMWY5T2N2VG8
 
-				http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs/ (part 2, 1:00:12)
+  			PRA over proof space for first-order logic (in ProPPR of William Cohen) -
+  				http://youtu.be/--pYaISROqE?t=12m35s + https://drive.google.com/file/d/0B_hicYJxvbiOc05xNEhvdVVSQWc
 
-				matrix factorization of universal schema
-					http://videolectures.net/akbcwekex2012_mccallum_base_construction/
-					http://yahoolabs.tumblr.com/post/113969611311/big-thinker-andrew-mccallum-discusses-the
+  	  - continuous space embeddings
+  			overview by Antoines Bordes - http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs/ (part 2, 1:07:43)
+  			overview by Jason Weston - http://youtube.com/watch?v=FVjuwv1_EDw + http://akbc.ws/2014/slides/weston-nips-akbc.pdf
 
-					(a) unifying traditional canonical relations, such as those of the Freebase schema, with OpenIE surface form patterns in a universal schema
-					(b) completing a knowledge base of such a schema using matrix factorization
+  			used in Google Knowledge Vault (Multi Layered Perceptron)
+  				https://youtu.be/i2r5J4XAhsw?t=3m7s
+  				http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning/ (part 2, 1:19:37)
+  				http://arxiv.org/abs/1503.00759
 
-					- for canonical relations it effectively performs distant supervision and hence requires no textual annotations
-					- in the spirit of OpenIE, a universal schema can use textual patterns as novel relations and hence increases the coverage of traditional schemas
-					- matrix factorization learns better embeddings for entity-pairs for which only surface form patterns are observed, and these can also lead to better extractions of canonical relations
+  			https://github.com/dirkweissenborn/genie-kb/blob/master/model/models.py (DistMult, Model E, Model F, Model N, Model O)
 
-					logic embedding (combining with additional information in the form of first-order logic knowledge) -
-						http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/ + http://rockt.github.io/slides/2015-naacl.pdf
+  	  - latent factor models
+  			with latent features one gets collective learning - information can globally propagate in the network of random variables
 
-				tensor factorization of knowledge graph
-					Machine Learning with Knowledge Graphs" by Volker Tresp -
-						ttp://videolectures.net/eswc2014_tresp_machine_learning/ + http://www.dbs.ifi.lmu.de/~tresp/papers/ESWC-Keynote.pdf
+  			http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs/ (part 2, 1:00:12)
 
-					"Machine Learning on Linked Data: Tensors and Their Applications In Graph-Structured Domains" - http://www.cip.ifi.lmu.de/~nickel/iswc2012-slides/#/
-					"Tensor Factorization for Relational Learning" (RESCAL model) - http://edoc.ub.uni-muenchen.de/16056/1/Nickel_Maximilian.pdf
+  			matrix factorization of universal schema
+  				http://videolectures.net/akbcwekex2012_mccallum_base_construction/
+  				http://yahoolabs.tumblr.com/post/113969611311/big-thinker-andrew-mccallum-discusses-the
 
-				"Towards Combined Matrix and Tensor Factorization for Universal Schema Relation Extraction" - https://rockt.github.io/pdf/singh2015towards.pdf
+  				(a) unifying traditional canonical relations, such as those of the Freebase schema, with OpenIE surface form patterns in a universal schema
+  				(b) completing a knowledge base of such a schema using matrix factorization
 
-		  - Mixture models
-				advantage: no need for good prior knowledge about relational dependencies as in bayes nets and markov nets
-				advantage: great simplicity of the model: no need to think about rules, conditional independencies, loops or global partition functions
-	
-		  - Bayesian network
-				work well if there is a prior knowledge about possible candidates for relational dependencies
+  				- for canonical relations it effectively performs distant supervision and hence requires no textual annotations
+  				- in the spirit of OpenIE, a universal schema can use textual patterns as novel relations and hence increases the coverage of traditional schemas
+  				- matrix factorization learns better embeddings for entity-pairs for which only surface form patterns are observed, and these can also lead to better extractions of canonical relations
 
-				problem: it is difficult to avoid loops in the ground Bayes net with symmetric relations such as friendOf
-				problem: as always in bayes nets, one needs to define a complete system, i.e. conditional probabilities for each node in the ground bayes net (which can be demanding)
-				both problems can be solved with Markov Logic Network
+  				logic embedding (combining with additional information in the form of first-order logic knowledge) -
+  					http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/ + http://rockt.github.io/slides/2015-naacl.pdf
 
-		  - Markov network
-				typically better suited for modeling symmetric interactions (e.g. friendOf) - no concern about directed loops
+  			tensor factorization of knowledge graph
+  				Machine Learning with Knowledge Graphs" by Volker Tresp -
+  					ttp://videolectures.net/eswc2014_tresp_machine_learning/ + http://www.dbs.ifi.lmu.de/~tresp/papers/ESWC-Keynote.pdf
 
-				advantage: do not need to be complete - "Just model what you know about, the rest is filled in with maximum entropy"
-				disadvantage: maximum likelihood learning with complete data is already non-trivial
-				disadvantage: no causal interpretation
+  				"Machine Learning on Linked Data: Tensors and Their Applications In Graph-Structured Domains" - http://www.cip.ifi.lmu.de/~nickel/iswc2012-slides/#/
+  				"Tensor Factorization for Relational Learning" (RESCAL model) - http://edoc.ub.uni-muenchen.de/16056/1/Nickel_Maximilian.pdf
 
-		  - Markov logic network
-				MLN does not require local normalization, i.e. an interpretation of the terms as local conditional probabilities - it requires global normalization
-				in MLN one can use any FOL formula, not just the ones derived from bayes nets
-				MLN does not require a specific number of formulae
-				in MLN no problem if a formula is sometimes false, formula weight corresponds to degree that formula is supported in the training data
-				formulae can be derived using ILP techniques (FOIL, Claudian)
+  			"Towards Combined Matrix and Tensor Factorization for Universal Schema Relation Extraction" - https://rockt.github.io/pdf/singh2015towards.pdf
 
-				advantage: no need to worry about directed loops or parameter constraints
-				advantage: no need to worry about completeness, there can be any number of formulae (from none to more than there are ground atoms) - with no formulae each configuration of node states has the same probability (maximum entropy principle)
-				disadvantage: no interpretation of local conditional distribution (no causal interpretation)
-				disadvantage: difficult parameter learning (unlike in bayes nets with complete data) due to global normalization constant (sum over all states) - typical approach: closed-world assumption and optimization of a pseudo-likelihood
+  	  - Mixture models
+  			advantage: no need for good prior knowledge about relational dependencies as in bayes nets and markov nets
+  			advantage: great simplicity of the model: no need to think about rules, conditional independencies, loops or global partition functions
+  
+  	  - Bayesian network
+  			work well if there is a prior knowledge about possible candidates for relational dependencies
 
-		  - Tractable Markov logic
-				first tractable probabilistic object-oriented representation language
+  			problem: it is difficult to avoid loops in the ground Bayes net with symmetric relations such as friendOf
+  			problem: as always in bayes nets, one needs to define a complete system, i.e. conditional probabilities for each node in the ground bayes net (which can be demanding)
+  			both problems can be solved with Markov Logic Network
 
-				overview by Pedro Domingos - https://youtube.com/watch?v=6ZJzfRdCZjc (applications to relational learning starting from 35:10)
+  	  - Markov network
+  			typically better suited for modeling symmetric interactions (e.g. friendOf) - no concern about directed loops
 
+  			advantage: do not need to be complete - "Just model what you know about, the rest is filled in with maximum entropy"
+  			disadvantage: maximum likelihood learning with complete data is already non-trivial
+  			disadvantage: no causal interpretation
 
-		Pedro Domingos - "Statistical Modeling of Relational Data" - http://videolectures.net/kdd07_domingos_smord/
+  	  - Markov logic network
+  			MLN does not require local normalization, i.e. an interpretation of the terms as local conditional probabilities - it requires global normalization
+  			in MLN one can use any FOL formula, not just the ones derived from bayes nets
+  			MLN does not require a specific number of formulae
+  			in MLN no problem if a formula is sometimes false, formula weight corresponds to degree that formula is supported in the training data
+  			formulae can be derived using ILP techniques (FOIL, Claudian)
 
+  			advantage: no need to worry about directed loops or parameter constraints
+  			advantage: no need to worry about completeness, there can be any number of formulae (from none to more than there are ground atoms) - with no formulae each configuration of node states has the same probability (maximum entropy principle)
+  			disadvantage: no interpretation of local conditional distribution (no causal interpretation)
+  			disadvantage: difficult parameter learning (unlike in bayes nets with complete data) due to global normalization constant (sum over all states) - typical approach: closed-world assumption and optimization of a pseudo-likelihood
 
-	Information Extraction
+  	  - Tractable Markov logic
+  			first tractable probabilistic object-oriented representation language
 
-		approaches:
-		 - OpenIE
-		 - matrix factorization
-		 - relational clustering
-		 - distant supervision
-		 - never-ending learning and bootstrapping
-		 - (Tractable) Markov logic network
+  			overview by Pedro Domingos - https://youtube.com/watch?v=6ZJzfRdCZjc (applications to relational learning starting from 35:10)
 
 
+  	Pedro Domingos - "Statistical Modeling of Relational Data" - http://videolectures.net/kdd07_domingos_smord/
 
- * probabilistic database
 
-	"A probabilistic database is a relational database in which the tuples stored have associated uncertainties. That is, each tuple t has an associated indicator random variable Xt which takes a value 1 if the tuple is present in the database and 0 if the tuple is absent. Each instantiation of values to all of the random variables is called a world. The probabilistic database is the joint probability distribution over the random variables, which implicitly specifies a distribution over all the possible worlds. The answer to a query Q on a probabilistic database is the set of tuples T that are possible answers to Q, along with a probability P(t) for every t ∈ T denoting the probability that t belongs the answer for query Q. A probabilistic database together with a query can be encoded as a probabilistic program, and the answer to query evaluation can be phrased as probabilistic inference. Work in probabilistic databases has identified a class of queries (called safe queries) for which query evaluation can be performed efficiently, by pushing the probabilistic inference inside particular query plans (called safe plans)."
 
-	Suciu, Olteanu, Re, Koch - "Probabilistic Databases" - http://www.dblab.ntua.gr/~gtsat/collection/Morgan%20Claypool/Probabilistic%20Databases%20-%20Dan%20Suciu%20-%20Morgan%20Clayman.pdf
-		"Probabilistic databases are databases where the value of some attributes or the presence of some records are uncertain and known only with some probability. Applications in many areas such as information extraction, RFID and scientific data management, data cleaning, data integration, and financial risk assessment produce large volumes of uncertain data, which are best modeled and processed by a probabilistic database. This book presents the state of the art in representation formalisms and query processing techniques for probabilistic data. It starts by discussing the basic principles for representing large probabilistic databases, by decomposing them into tuple-independent tables, block-independent-disjoint tables, or U-databases. Then it discusses two classes of techniques for query evaluation on probabilistic databases. In extensional query evaluation, the entire probabilistic inference can be pushed into the database engine and, therefore, processed as effectively as the evaluation of standard SQL queries. The relational queries that can be evaluated this way are called safe queries. In intensional query evaluation, the probabilistic inference is performed over a propositional formula called lineage expression: every relational query can be evaluated this way, but the data complexity dramatically depends on the query being evaluated, and can be #P-hard. The book also discusses some advanced topics in probabilistic data management such as top-k query processing, sequential probabilistic databases, indexing and materialized views, and Monte Carlo databases."
 
-	"10 Years of Probabilistic Querying - What Next?" - https://lirias.kuleuven.be/bitstream/123456789/403578/1/theobald-adbis13.pdf
+[knowledge representation - probabilistic database]
 
-	https://en.wikipedia.org/wiki/Probabilistic_logic
-		"The aim of a probabilistic logic is to combine the capacity of probability theory to handle uncertainty with the capacity of deductive logic to exploit structure. The result is a richer and more expressive formalism with a broad range of possible application areas."
+  "A probabilistic database is a relational database in which the tuples stored have associated uncertainties. That is, each tuple t has an associated indicator random variable Xt which takes a value 1 if the tuple is present in the database and 0 if the tuple is absent. Each instantiation of values to all of the random variables is called a world. The probabilistic database is the joint probability distribution over the random variables, which implicitly specifies a distribution over all the possible worlds. The answer to a query Q on a probabilistic database is the set of tuples T that are possible answers to Q, along with a probability P(t) for every t ∈ T denoting the probability that t belongs the answer for query Q. A probabilistic database together with a query can be encoded as a probabilistic program, and the answer to query evaluation can be phrased as probabilistic inference. Work in probabilistic databases has identified a class of queries (called safe queries) for which query evaluation can be performed efficiently, by pushing the probabilistic inference inside particular query plans (called safe plans)."
 
+  Suciu, Olteanu, Re, Koch - "Probabilistic Databases" - http://www.dblab.ntua.gr/~gtsat/collection/Morgan%20Claypool/Probabilistic%20Databases%20-%20Dan%20Suciu%20-%20Morgan%20Clayman.pdf
+  	"Probabilistic databases are databases where the value of some attributes or the presence of some records are uncertain and known only with some probability. Applications in many areas such as information extraction, RFID and scientific data management, data cleaning, data integration, and financial risk assessment produce large volumes of uncertain data, which are best modeled and processed by a probabilistic database. This book presents the state of the art in representation formalisms and query processing techniques for probabilistic data. It starts by discussing the basic principles for representing large probabilistic databases, by decomposing them into tuple-independent tables, block-independent-disjoint tables, or U-databases. Then it discusses two classes of techniques for query evaluation on probabilistic databases. In extensional query evaluation, the entire probabilistic inference can be pushed into the database engine and, therefore, processed as effectively as the evaluation of standard SQL queries. The relational queries that can be evaluated this way are called safe queries. In intensional query evaluation, the probabilistic inference is performed over a propositional formula called lineage expression: every relational query can be evaluated this way, but the data complexity dramatically depends on the query being evaluated, and can be #P-hard. The book also discusses some advanced topics in probabilistic data management such as top-k query processing, sequential probabilistic databases, indexing and materialized views, and Monte Carlo databases."
 
-	- Epistemological Database with Universal Schema
+  "10 Years of Probabilistic Querying - What Next?" - https://lirias.kuleuven.be/bitstream/123456789/403578/1/theobald-adbis13.pdf
 
-		Andrew McCallum
-			"Universal Schema for Representation and Reasoning from Natural Language" - http://www.fields.utoronto.ca/video-archive/2016/11/2267-16181
-			"Construction of Probabilistic Databases for Large-scale Knowledge Bases" - http://yahoolabs.tumblr.com/post/113969611311/big-thinker-andrew-mccallum-discusses-the
-			"Representation and Reasoning with Universal Schema Embeddings" - http://videolectures.net/iswc2015_mccallum_universal_schema/
-			"Knowledge Base Construction with Epistemological Databases" - http://videolectures.net/akbcwekex2012_mccallum_base_construction/
-			"FACTORIE: A Scala Library for Machine Learning & NLP" - http://youtube.com/watch?v=MEhN9K36BfQ
+  https://en.wikipedia.org/wiki/Probabilistic_logic
+  	"The aim of a probabilistic logic is to combine the capacity of probability theory to handle uncertainty with the capacity of deductive logic to exploit structure. The result is a richer and more expressive formalism with a broad range of possible application areas."
 
-		Limin Yao
-			"Universal Schema for Knowledge Representation from Text and Structured Data" - https://youtube.com/watch?v=odI3RznREY4
 
-		"Scalable Probabilistic Databases with Factor Graphs and MCMC" - http://people.cs.umass.edu/~mwick/MikeWeb/Publications_files/wick10scalable.pdf
 
-		* information extraction with joint inference
-		* probabilistic databases to manage uncertainty at scale
-		* robust reasoning about human edits
-		* tight integration of probabilistic inference and parallel distributed processing
-		* probabilistic programming languages for easy specification of complex factor graphs
+  - Epistemological Database with Universal Schema
 
-		- how to represent & inject uncertainty from IE into DB?
-		- want to use DB contents to aid IE
-		- IE isn't "one-shot": add new data later - redo inference, want db infrastructure to manage IE
+  	Andrew McCallum
+  		"Universal Schema for Representation and Reasoning from Natural Language" - http://www.fields.utoronto.ca/video-archive/2016/11/2267-16181
+  		"Construction of Probabilistic Databases for Large-scale Knowledge Bases" - http://yahoolabs.tumblr.com/post/113969611311/big-thinker-andrew-mccallum-discusses-the
+  		"Representation and Reasoning with Universal Schema Embeddings" - http://videolectures.net/iswc2015_mccallum_universal_schema/
+  		"Knowledge Base Construction with Epistemological Databases" - http://videolectures.net/akbcwekex2012_mccallum_base_construction/
+  		"FACTORIE: A Scala Library for Machine Learning & NLP" - http://youtube.com/watch?v=MEhN9K36BfQ
 
-		challenge:
-		- postpone decision making until all data is available
-		- inject knowledge into machine reading
-		- derive true facts from raw evidence data
+  	Limin Yao
+  		"Universal Schema for Knowledge Representation from Text and Structured Data" - https://youtube.com/watch?v=odI3RznREY4
 
+  	"Scalable Probabilistic Databases with Factor Graphs and MCMC" - http://people.cs.umass.edu/~mwick/MikeWeb/Publications_files/wick10scalable.pdf
 
-		epistemological KB: "truth is inferred, not observed"
-		 - entities/relations never input, only "mentions"
-		 - ability to change our mind about previously made (wrong) decisions
+  	* information extraction with joint inference
+  	* probabilistic databases to manage uncertainty at scale
+  	* robust reasoning about human edits
+  	* tight integration of probabilistic inference and parallel distributed processing
+  	* probabilistic programming languages for easy specification of complex factor graphs
 
-		human edits as evidence:
-		 - traditional: change db record of truth
-		 + mini-document "Nov 15: Scott said this was true"
-		sometimes humans are wrong, disagree, out-of-date -> jointly reason about truth & editors' reliability/reputation
+  	- how to represent & inject uncertainty from IE into DB?
+  	- want to use DB contents to aid IE
+  	- IE isn't "one-shot": add new data later - redo inference, want db infrastructure to manage IE
 
-		never ending inference (constantly bubbling in background):
-		 - KB entries locked in
-		 + KB entries always reconsidered with more evidence, time, ...
+  	challenge:
+  	- postpone decision making until all data is available
+  	- inject knowledge into machine reading
+  	- derive true facts from raw evidence data
 
-		resolution is foundational:
-		 - not just for coreference of entity-mentions
-		 + align values, ontologies, schemas, relations, events, ...
 
-		 entity resolution by evaluating (and accepting) proposals for clustering of mentions on CRF with pairwise factors in parallel (each proposal) by map-reduce, clustering entities into indepedent groups for more parallelism
-		 joint entity linking (identifying group of mentions in document) and entity discovery (identifying cluster of mentions across documents)
+  	epistemological KB: "truth is inferred, not observed"
+  	 - entities/relations never input, only "mentions"
+  	 - ability to change our mind about previously made (wrong) decisions
 
-		resource-bounded information gathering:
-		 - full processing on whole web
-		 + focus queries and processing where needed & fruitful
+  	human edits as evidence:
+  	 - traditional: change db record of truth
+  	 + mini-document "Nov 15: Scott said this was true"
+  	sometimes humans are wrong, disagree, out-of-date -> jointly reason about truth & editors' reliability/reputation
 
-		parallelism:
-		 - MapReduce, black-box
-		 + reason about inference & parallelism together
+  	never ending inference (constantly bubbling in background):
+  	 - KB entries locked in
+  	 + KB entries always reconsidered with more evidence, time
 
-		MCMC, parallel, distributed:
-		 - unroll whole factor graph. limited model structures
-		 + focused sampling, conflict resolution, particle filtering
+  	resolution is foundational:
+  	 - not just for coreference of entity-mentions
+  	 + align values, ontologies, schemas, relations, events
 
+  	 entity resolution by evaluating (and accepting) proposals for clustering of mentions on CRF with pairwise factors in parallel (each proposal) by map-reduce, clustering entities into indepedent groups for more parallelism
+  	 joint entity linking (identifying group of mentions in document) and entity discovery (identifying cluster of mentions across documents)
 
-		entity resolution (disambiguation, record linkage, deduplication, coreference) - parallel/distributed machine learning, dynamic partitioning
-		 - hierarchical, entity-based
-		 - asynchronous distributed entity resolution
-		 - parameter estimation with SampleRank
+  	resource-bounded information gathering:
+  	 - full processing on whole web
+  	 + focus queries and processing where needed & fruitful
 
-		"Universal Schema" and word embeddings - matrix completion by tensor factorization
-		 - universal schema relations & entity types
-		 - word embeddings and WSD embeddings for NER
-		 - Gaussian density word embeddings
+  	parallelism:
+  	 - MapReduce, black-box
+  	 + reason about inference & parallelism together
 
+  	MCMC, parallel, distributed:
+  	 - unroll whole factor graph. limited model structures
+  	 + focused sampling, conflict resolution, particle filtering
 
-		styles of relation extraction:
-		 - supervised
-		 - distantly supervised
-		 - unsupervised (no schema) - OpenIE
-		 - unsupervised (schema discovery) - clustering (arbitrary clusters, hard to evaluate, incomplete, many boundary cases)
-		 - universal schema
 
-		probabilistic db with universal schema:
-		 - schema = union of all inputs: NL & DBs
-		   * embrace diversity and ambiguity of original inputs
-		   * don't try to force semantics into pre-defined boxes
-		   * note: combining "structured" & "natural" schema
-		 - learn implicature among entity-relations
-		   * "fill in" unobserved relations
-		   * implicit alignment of "structured" & "natural"
+  	entity resolution (disambiguation, record linkage, deduplication, coreference) - parallel/distributed machine learning, dynamic partitioning
+  	 - hierarchical, entity-based
+  	 - asynchronous distributed entity resolution
+  	 - parameter estimation with SampleRank
 
+  	"Universal Schema" and word embeddings - matrix completion by tensor factorization
+  	 - universal schema relations & entity types
+  	 - word embeddings and WSD embeddings for NER
+  	 - Gaussian density word embeddings
 
-		implementations:
-			FACTORIE - http://factorie.cs.umass.edu
 
+  	styles of relation extraction:
+  	 - supervised
+  	 - distantly supervised
+  	 - unsupervised (no schema) - OpenIE
+  	 - unsupervised (schema discovery) - clustering (arbitrary clusters, hard to evaluate, incomplete, many boundary cases)
+  	 - universal schema
 
-		low-dimensional embeddings of logic
-			"Many machine reading approaches, from shallow information extraction to deep semantic parsing, map natural language to symbolic representations of meaning. Representations such as first-order logic capture the richness of natural language and support complex reasoning, but often fail in practice due to their reliance on logical background knowledge and the difficulty of scaling up inference. In contrast, low-dimensional embeddings (i.e. distributional representations) are efficient and enable generalization, but it is unclear how reasoning with embeddings could support the full power of symbolic representations such as first-order logic. In this proof-of-concept paper we address this by learning embeddings that simulate the behavior of first-order logic."
+  	probabilistic db with universal schema:
+  	 - schema = union of all inputs: NL & DBs
+  	   * embrace diversity and ambiguity of original inputs
+  	   * don't try to force semantics into pre-defined boxes
+  	   * note: combining "structured" & "natural" schema
+  	 - learn implicature among entity-relations
+  	   * "fill in" unobserved relations
+  	   * implicit alignment of "structured" & "natural"
 
-			http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/
 
-			https://b8ca8e88-a-62cb3a1a-s-sites.googlegroups.com/site/learningsemantics2014/SebastianRiedel.pdf
-			http://yoavartzi.com/sp14/slides/rockt.sp14.pdf
-			http://www.aclweb.org/anthology/W/W14/W14-2409.pdf
+  	implementations:
+  		FACTORIE - http://factorie.cs.umass.edu
 
-			https://github.com/uclmr/low-rank-logic
 
+  	low-dimensional embeddings of logic
+  		"Many machine reading approaches, from shallow information extraction to deep semantic parsing, map natural language to symbolic representations of meaning. Representations such as first-order logic capture the richness of natural language and support complex reasoning, but often fail in practice due to their reliance on logical background knowledge and the difficulty of scaling up inference. In contrast, low-dimensional embeddings (i.e. distributional representations) are efficient and enable generalization, but it is unclear how reasoning with embeddings could support the full power of symbolic representations such as first-order logic. In this proof-of-concept paper we address this by learning embeddings that simulate the behavior of first-order logic."
 
+  		http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/
 
-	- Markov Logic Network
-		superset of first-order logic and undirected graphical models
+  		https://b8ca8e88-a-62cb3a1a-s-sites.googlegroups.com/site/learningsemantics2014/SebastianRiedel.pdf
+  		http://yoavartzi.com/sp14/slides/rockt.sp14.pdf
+  		http://www.aclweb.org/anthology/W/W14/W14-2409.pdf
 
-		(Josh Tanenbaum) "There was something really right about logic. It wasn't deductive inference which is too weak and brittle but abstraction. And if we combine abstraction of predicate logic with power of statistical learning and inference, we can do some pretty cool things."
+  		https://github.com/uclmr/low-rank-logic
 
 
-		Pedro Domingos
-			"Unifying Logical and Statistical AI" - http://youtube.com/watch?v=bW5DzNZgGxY
-			"Combining Logic and Probability: Languages, Algorithms and Applications" - http://videolectures.net/uai2011_domingos_kersting_combining/
-			"Incorporating Prior Knowledge into NLP with Markov Logic" - http://videolectures.net/icml08_domingos_ipk/
-			"Machine Learning for the Web: A Unified View" - http://videolectures.net/bsciw08_domingos_mlwuv/
-			"Statistical Modeling of Relational Data" - http://videolectures.net/kdd07_domingos_smord/
 
-		Volker Tresp - http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning/
+  - Markov Logic Network
 
+  	superset of first-order logic and undirected graphical models
 
-		"What’s Missing in AI: The Interface Layer" by Pedro Domingos - http://homes.cs.washington.edu/~pedrod/papers/ai100.pdf
+  	(Josh Tanenbaum) "There was something really right about logic. It wasn't deductive inference which is too weak and brittle but abstraction. And if we combine abstraction of predicate logic with power of statistical learning and inference, we can do some pretty cool things."
 
-		Pedro Domingos, Daniel Lowd - "Markov Logic: An Interface Layer for Artificial Intelligence" - http://morganclaypool.com/doi/abs/10.2200/S00206ED1V01Y200907AIM007
-			"Most subfields of computer science have an interface layer via which applications communicate with the infrastructure, and this is key to their success (e.g., the Internet in networking, the relational model in databases, etc.). So far this interface layer has been missing in AI. First-order logic and probabilistic graphical models each have some of the necessary features, but a viable interface layer requires combining both. Markov logic is a powerful new language that accomplishes this by attaching weights to first-order formulas and treating them as templates for features of Markov random fields. Most statistical models in wide use are special cases of Markov logic, and first-order logic is its infinite-weight limit. Inference algorithms for Markov logic combine ideas from satisfiability, Markov chain Monte Carlo, belief propagation, and resolution. Learning algorithms make use of conditional likelihood, convex optimization, and inductive logic programming."
 
+  	Pedro Domingos
+  		"Unifying Logical and Statistical AI" - http://youtube.com/watch?v=bW5DzNZgGxY
+  		"Combining Logic and Probability: Languages, Algorithms and Applications" - http://videolectures.net/uai2011_domingos_kersting_combining/
+  		"Incorporating Prior Knowledge into NLP with Markov Logic" - http://videolectures.net/icml08_domingos_ipk/
+  		"Machine Learning for the Web: A Unified View" - http://videolectures.net/bsciw08_domingos_mlwuv/
+  		"Statistical Modeling of Relational Data" - http://videolectures.net/kdd07_domingos_smord/
 
-		"Probabilistic Inference and Factor Graphs" - http://deepdive.stanford.edu/doc/general/inference.html
+  	Volker Tresp - http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning/
 
-		"Markov Logic" by Domingos, Kok, Lowd, Poon, Richardson, Singla - http://homes.cs.washington.edu/~pedrod/papers/pilp.pdf
-		"Representing Meaning with a Combination of Logical Form and Vectors" by Beltagy, Roller, Cheng, Erk, Mooney - http://youtube.com/watch?v=OnlAQqkNpds + http://youtube.com/watch?v=CmgGYn9KIpE + http://arxiv.org/abs/1505.06816
 
+  	"What’s Missing in AI: The Interface Layer" by Pedro Domingos - http://homes.cs.washington.edu/~pedrod/papers/ai100.pdf
 
-		"Markov Logic Networks use weighted first order logic formulas to construct probabilistic models, and specify distributions over possible worlds. Markov Logic Networks can also be encoded as probabilistic programs."
-		"Most learning algorithms only look at a single relation - a single table of data - and this is very limiting. Real databases have many relations, and we want to mine straight from them. This requires a pretty substantial rethink of how to do statistical learning, because samples are no longer independent and identically distributed, due to joins, etc. The solution in Markov logic networks is to use first-order logic to express patterns among multiple relations - which it can easily do - but treat logical formulas as features in a Markov network or log-linear model, which sets up a probability distribution over relational databases that we can then use to answer questions. The goal is to provide for machine learning and data mining something akin to what the relational model and SQL provide for databases."
-		"Logical AI has focused mainly on complexity of the real world while statistical AI on uncertainty. Markov logic combines the two by attaching weights to first-order formulas and viewing them as templates for features of Markov networks. Inference algorithms for Markov logic draw on ideas from satisfiability, Markov chain Monte Carlo and knowledge-based model construction. Learning algorithms are based on the voted perceptron, pseudo-likelihood and inductive logic programming."
+  	Pedro Domingos, Daniel Lowd - "Markov Logic: An Interface Layer for Artificial Intelligence" - http://morganclaypool.com/doi/abs/10.2200/S00206ED1V01Y200907AIM007
+  		"Most subfields of computer science have an interface layer via which applications communicate with the infrastructure, and this is key to their success (e.g., the Internet in networking, the relational model in databases, etc.). So far this interface layer has been missing in AI. First-order logic and probabilistic graphical models each have some of the necessary features, but a viable interface layer requires combining both. Markov logic is a powerful new language that accomplishes this by attaching weights to first-order formulas and treating them as templates for features of Markov random fields. Most statistical models in wide use are special cases of Markov logic, and first-order logic is its infinite-weight limit. Inference algorithms for Markov logic combine ideas from satisfiability, Markov chain Monte Carlo, belief propagation, and resolution. Learning algorithms make use of conditional likelihood, convex optimization, and inductive logic programming."
 
 
-		"Markov Logic Networks represent uncertainty in terms of weights on the logical rules as in the example:
-			∀x. Smoke(x) ⇒ Cancer(x) | 1.5
-			∀x.y Friend(x, y) ⇒ (Smoke(x) ⇔ Smoke(y)) | 1.1
-		The example states that if someone smokes, there is a chance that they get cancer, and the smoking behaviour of friends is usually similar. Markov logic uses such weighted rules to derive a probability distribution over possible worlds through an undirected graphical model. This probability distribution over possible worlds is then used to draw inferences. Weighting the rules is a way of softening them compared to hard logical constraints and thereby allowing situations in which not all clauses are satisfied.
-		With the weighted rules, a set of constants need to be specified. We can add constants representing two persons, Anna (A) and Bob (B). Probabilistic logic uses the constants to “ground” atoms with variables, so we get “ground atoms” like Smoke(A), Smoke(B), Cancer(A), Cancer(B), Friend(A, A), Friend(A, B), Friend(B, A), Friend(B, B). Rules are also grounded by replacing each atom with variables by all its possible ground atoms.
-		MLNs take as input a set of weighted first-order formulas F = F1, ..., Fn. They then compute a set of ground literals by grounding all predicates occurring in F with all possible constants in the system. Next, they define a probability distribution over possible worlds, where a world is a truth assignment to the set of all ground literals. The probability of a world depends on the weights of the input formulas F as follows: The probability of a world increases exponentially with the total weight of the ground clauses that it satisfies. The probability of a given world x is defined as:
-			P(X = x) = 1/Z * exp(Sum over i(wi * ni(x)))
-		where Z is the partition function, i ranges over all formulas Fi in F, wi is the weight of Fi, and ni(x) is the number of groundings of Fi that are true in the world x.
-		This probability distribution P(X = x) over possible worlds is computed using a Markov network, an undirected graphical model (hence the name Markov Logic Networks). In this Markov network, the nodes are the ground literals, and two nodes are connected by an edge if they co-occur in a ground clause, such that the cliques in the network correspond to ground clauses. A joint assignment of values to all nodes in the graph is a possible world, a truth assignment to the ground literals.
-		In addition to the set R of weighted formulas, an MLN takes an evidence set E asserting some truth values about some of the random variables, e.g. Cancer(A) means that Anna has cancer. Marginal inference for MLNs calculates the probability P(Q|E, R) for a query formula Q."
+  	"Probabilistic Inference and Factor Graphs" - http://deepdive.stanford.edu/doc/general/inference.html
 
-		"MLNs make the Domain Closure Assumption: The only models considered for a set F of formulas are those for which the following three conditions hold. (a) Different constants refer to different objects in the domain, (b) the only objects in the domain are those that can be represented using the constant and function symbols in F, and (c) for each function f appearing in F, the value of f applied to every possible tuple of arguments is known, and is a constant appearing in F. Together, these three conditions entail that there is a one-to-one relation between objects in the domain and the named constants of F. When the set of all constants is known, it can be used to ground predicates to generate the set of all ground literals, which then become the nodes in the graphical model. Different constant sets result in different graphical models. If no constants are explicitly introduced, the graphical model is empty (no random variables)."
+  	"Markov Logic" by Domingos, Kok, Lowd, Poon, Richardson, Singla - http://homes.cs.washington.edu/~pedrod/papers/pilp.pdf
+  	"Representing Meaning with a Combination of Logical Form and Vectors" by Beltagy, Roller, Cheng, Erk, Mooney - http://youtube.com/watch?v=OnlAQqkNpds + http://youtube.com/watch?v=CmgGYn9KIpE + http://arxiv.org/abs/1505.06816
 
 
-		"In Markov Logic, possible worlds or interpretations (i.e., truth value assignments to ground atoms) become less likely as they violate more groundings of soft constraints, and have probability zero if they violate some grounding of a hard constraint. It is well known that the transitive closure of a binary relation cannot be represented in first order logic, but requires second order constructs. Thus, the hard constraints in a Markov Logic network, which form a first order logic theory, cannot enforce probability zero for all worlds that do not respect the transitive closure of a binary relation. On the other hand, the least Herbrand semantics of definite clause logic (i.e., pure Prolog) naturally represents such transitive closures. For instance, under the least Herbrand semantics, path(A, C) :− edge(A, C). path(A, C) :− edge(A, B), path(B, C). inductively defines path as the transitive closure of the relation edge, that is, a ground atom path(a, c) is true if and only if there is a sequence of true edge atoms connecting a and c. Note that an MLN that maps the definition above to the hard constraints edge(A, C) → path(A, C). edge(A, B) ∧ path(B, C) → path(A, C) enforces the transitivity property, as these rules are violated if there is a sequence of edges connecting two nodes, but the corresponding path atom is false. Still, these hard constraints do not correspond to the transitive closure, as they can for instance be satisfied by setting all ground path atoms to true, independently of the truth values of edge atoms."
+  	"Markov Logic Networks use weighted first order logic formulas to construct probabilistic models, and specify distributions over possible worlds. Markov Logic Networks can also be encoded as probabilistic programs."
+  	"Most learning algorithms only look at a single relation - a single table of data - and this is very limiting. Real databases have many relations, and we want to mine straight from them. This requires a pretty substantial rethink of how to do statistical learning, because samples are no longer independent and identically distributed, due to joins, etc. The solution in Markov logic networks is to use first-order logic to express patterns among multiple relations - which it can easily do - but treat logical formulas as features in a Markov network or log-linear model, which sets up a probability distribution over relational databases that we can then use to answer questions. The goal is to provide for machine learning and data mining something akin to what the relational model and SQL provide for databases."
+  	"Logical AI has focused mainly on complexity of the real world while statistical AI on uncertainty. Markov logic combines the two by attaching weights to first-order formulas and viewing them as templates for features of Markov networks. Inference algorithms for Markov logic draw on ideas from satisfiability, Markov chain Monte Carlo and knowledge-based model construction. Learning algorithms are based on the voted perceptron, pseudo-likelihood and inductive logic programming."
 
 
-		 * set of weighted clauses in FOPL
-		 * larger weight indicates stronger belief that the clause should hold
-		 * learning weights for an existing set of clauses with undefined weights
-		 * learning logical clauses (aka structure learning)
-		 * MLNs are templates for constructing Markov networks for a given set of constants
-		 * a possible world becomes exponentially less likely as the total weight of all the grounded clauses it violates increases
-		 * infer probability of a particular query given a set of evidence facts
+  	"Markov Logic Networks represent uncertainty in terms of weights on the logical rules as in the example:
+  		∀x. Smoke(x) ⇒ Cancer(x) | 1.5
+  		∀x.y Friend(x, y) ⇒ (Smoke(x) ⇔ Smoke(y)) | 1.1
+  	The example states that if someone smokes, there is a chance that they get cancer, and the smoking behaviour of friends is usually similar. Markov logic uses such weighted rules to derive a probability distribution over possible worlds through an undirected graphical model. This probability distribution over possible worlds is then used to draw inferences. Weighting the rules is a way of softening them compared to hard logical constraints and thereby allowing situations in which not all clauses are satisfied.
+  	With the weighted rules, a set of constants need to be specified. We can add constants representing two persons, Anna (A) and Bob (B). Probabilistic logic uses the constants to “ground” atoms with variables, so we get “ground atoms” like Smoke(A), Smoke(B), Cancer(A), Cancer(B), Friend(A, A), Friend(A, B), Friend(B, A), Friend(B, B). Rules are also grounded by replacing each atom with variables by all its possible ground atoms.
+  	MLNs take as input a set of weighted first-order formulas F = F1, ..., Fn. They then compute a set of ground literals by grounding all predicates occurring in F with all possible constants in the system. Next, they define a probability distribution over possible worlds, where a world is a truth assignment to the set of all ground literals. The probability of a world depends on the weights of the input formulas F as follows: The probability of a world increases exponentially with the total weight of the ground clauses that it satisfies. The probability of a given world x is defined as:
+  		P(X = x) = 1/Z * exp(Sum over i(wi * ni(x)))
+  	where Z is the partition function, i ranges over all formulas Fi in F, wi is the weight of Fi, and ni(x) is the number of groundings of Fi that are true in the world x.
+  	This probability distribution P(X = x) over possible worlds is computed using a Markov network, an undirected graphical model (hence the name Markov Logic Networks). In this Markov network, the nodes are the ground literals, and two nodes are connected by an edge if they co-occur in a ground clause, such that the cliques in the network correspond to ground clauses. A joint assignment of values to all nodes in the graph is a possible world, a truth assignment to the ground literals.
+  	In addition to the set R of weighted formulas, an MLN takes an evidence set E asserting some truth values about some of the random variables, e.g. Cancer(A) means that Anna has cancer. Marginal inference for MLNs calculates the probability P(Q|E, R) for a query formula Q."
 
+  	"MLNs make the Domain Closure Assumption: The only models considered for a set F of formulas are those for which the following three conditions hold. (a) Different constants refer to different objects in the domain, (b) the only objects in the domain are those that can be represented using the constant and function symbols in F, and (c) for each function f appearing in F, the value of f applied to every possible tuple of arguments is known, and is a constant appearing in F. Together, these three conditions entail that there is a one-to-one relation between objects in the domain and the named constants of F. When the set of all constants is known, it can be used to ground predicates to generate the set of all ground literals, which then become the nodes in the graphical model. Different constant sets result in different graphical models. If no constants are explicitly introduced, the graphical model is empty (no random variables)."
 
-		 - fully subsumes FOPL (just give infinite weight to all clauses)
-		 - fully subsumes probabilistic graphical models (can represent any joint distribution over an arbitrary set of discrete random variables)
-		 - can utilize prior knowledge in both symbolic and probabilistic forms
-		 - inherits computational intractability of general methods for both logical and probabilistic inference and learning: inference in FOPC is semi-decidable, inference in general graphical models is P-space complete
 
+  	"In Markov Logic, possible worlds or interpretations (i.e., truth value assignments to ground atoms) become less likely as they violate more groundings of soft constraints, and have probability zero if they violate some grounding of a hard constraint. It is well known that the transitive closure of a binary relation cannot be represented in first order logic, but requires second order constructs. Thus, the hard constraints in a Markov Logic network, which form a first order logic theory, cannot enforce probability zero for all worlds that do not respect the transitive closure of a binary relation. On the other hand, the least Herbrand semantics of definite clause logic (i.e., pure Prolog) naturally represents such transitive closures. For instance, under the least Herbrand semantics, path(A, C) :− edge(A, C). path(A, C) :− edge(A, B), path(B, C). inductively defines path as the transitive closure of the relation edge, that is, a ground atom path(a, c) is true if and only if there is a sequence of true edge atoms connecting a and c. Note that an MLN that maps the definition above to the hard constraints edge(A, C) → path(A, C). edge(A, B) ∧ path(B, C) → path(A, C) enforces the transitivity property, as these rules are violated if there is a sequence of edges connecting two nodes, but the corresponding path atom is false. Still, these hard constraints do not correspond to the transitive closure, as they can for instance be satisfied by setting all ground path atoms to true, independently of the truth values of edge atoms."
 
-		Tractable Markov Logic
-			(Pedro Domingos) "I'm working on Markov logic networks, with an emphasis on scaling them up to big data. Our approach is to use tractable subsets of Markov logic, in the same way that SQL is a tractable subset of first-order logic. One of our current projects is to build something akin to Google's knowledge graph, but much richer, based on data from Freebase, DBpedia, etc. We call it a Tractable Probabilistic Knowledge Base - and it can answer questions about the entities and relations in Wikipedia, etc. We're planning to make a demo version available on the Web, and then we can learn from users' interactions with it."
 
-			Perdo Domingos - "Extracting Knowledge from Text" - http://youtube.com/watch?v=6ZJzfRdCZjc
+  	 * set of weighted clauses in FOPL
+  	 * larger weight indicates stronger belief that the clause should hold
+  	 * learning weights for an existing set of clauses with undefined weights
+  	 * learning logical clauses (aka structure learning)
+  	 * MLNs are templates for constructing Markov networks for a given set of constants
+  	 * a possible world becomes exponentially less likely as the total weight of all the grounded clauses it violates increases
+  	 * infer probability of a particular query given a set of evidence facts
 
-			"Tractable Probabilistic Knowledge Base: Wikipedia and Beyond" - http://aaai.org/ocs/index.php/WS/AAAIW14/paper/download/8722/8239
-			"Learning and Inference in Tractable Probabilistic Knowledge Bases" - http://homes.cs.washington.edu/~pedrod/papers/uai15.pdf
 
+  	 - fully subsumes FOPL (just give infinite weight to all clauses)
+  	 - fully subsumes probabilistic graphical models (can represent any joint distribution over an arbitrary set of discrete random variables)
+  	 - can utilize prior knowledge in both symbolic and probabilistic forms
+  	 - inherits computational intractability of general methods for both logical and probabilistic inference and learning: inference in FOPC is semi-decidable, inference in general graphical models is P-space complete
 
-		application to question answering by AI2 - http://arxiv.org/abs/1507.03045 + http://akbc.ws/2014/slides/etzioni-nips-akbc.pdf (slides 30-37)
-		application to information extraction by Google Knowledge Vault (see below) - http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs/ (part 2, 44'- 54')
-		application to information extraction, integration and curation by DeepDive (see below) - http://deepdive.stanford.edu/doc/advanced/markov_logic_network.html
 
+  	Tractable Markov Logic
+  		(Pedro Domingos) "I'm working on Markov logic networks, with an emphasis on scaling them up to big data. Our approach is to use tractable subsets of Markov logic, in the same way that SQL is a tractable subset of first-order logic. One of our current projects is to build something akin to Google's knowledge graph, but much richer, based on data from Freebase, DBpedia, etc. We call it a Tractable Probabilistic Knowledge Base - and it can answer questions about the entities and relations in Wikipedia, etc. We're planning to make a demo version available on the Web, and then we can learn from users' interactions with it."
 
-		implementations:
-			Alchemy - http://alchemy.cs.washington.edu
-				(William Cohen) knowledge base with more than 1000 facts requires too much compute time using Alchemy MLNs [http://alchemy.cs.washington.edu] but not for Alchemy Lite [http://alchemy.cs.washington.edu/lite/] which scales to millions of entities and requires sublinear in size time for inference and linear in size time for learning
+  		Perdo Domingos - "Extracting Knowledge from Text" - http://youtube.com/watch?v=6ZJzfRdCZjc
 
-			Alchemy Lite - http://alchemy.cs.washington.edu/lite/
-				inference in Tractable Markov Logic (TML), the first tractable first-order probabilistic logic
+  		"Tractable Probabilistic Knowledge Base: Wikipedia and Beyond" - http://aaai.org/ocs/index.php/WS/AAAIW14/paper/download/8722/8239
+  		"Learning and Inference in Tractable Probabilistic Knowledge Bases" - http://homes.cs.washington.edu/~pedrod/papers/uai15.pdf
 
-			Tuffy - http://i.stanford.edu/hazy/hazy/tuffy/
-				"Tuffy: Scaling up Statistical Inference in Markov Logic Networks using an RDBMS" by Niu, Re, Doan, Shavlik - http://cs.stanford.edu/people/chrismre/papers/tuffy.pdf
 
-			TuffyLite by AI2 - https://github.com/allenai/tuffylite
+  	application to question answering by AI2 - http://arxiv.org/abs/1507.03045 + http://akbc.ws/2014/slides/etzioni-nips-akbc.pdf (slides 30-37)
+  	application to information extraction by Google Knowledge Vault (see below) - http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs/ (part 2, 44'- 54')
+  	application to information extraction, integration and curation by DeepDive (see below) - http://deepdive.stanford.edu/doc/advanced/markov_logic_network.html
 
-			LoMRF - https://github.com/anskarl/LoMRF
-				parallel grounding algorithm based on Akka Actors library
-				Marginal (MC-SAT) and MAP (MaxWalkSAT and LP-relaxed Integer Linear Programming) inference
-				batch and online weight learning (max-margin and ADAGRAD)
-				can compare MLN theories
 
-			RockIt - https://code.google.com/p/rockit/
+  	implementations:
+  		Alchemy - http://alchemy.cs.washington.edu
+  			(William Cohen) knowledge base with more than 1000 facts requires too much compute time using Alchemy MLNs [http://alchemy.cs.washington.edu] but not for Alchemy Lite [http://alchemy.cs.washington.edu/lite/] which scales to millions of entities and requires sublinear in size time for inference and linear in size time for learning
 
-			thebeast - https://code.google.com/p/thebeast/
+  		Alchemy Lite - http://alchemy.cs.washington.edu/lite/
+  			inference in Tractable Markov Logic (TML), the first tractable first-order probabilistic logic
 
-			ProbKB - http://dsr.cise.ufl.edu/tag/probkb/
-				"Web-Scale Knowledge Inference Using Markov Logic Networks" - https://cise.ufl.edu/~yang/doc/slg2013.pdf
-				"novel relational model to represent MLNs and algorithms that apply rules in batches"
-				"Gibbs sampling algorithms on Graphlab"
+  		Tuffy - http://i.stanford.edu/hazy/hazy/tuffy/
+  			"Tuffy: Scaling up Statistical Inference in Markov Logic Networks using an RDBMS" by Niu, Re, Doan, Shavlik - http://cs.stanford.edu/people/chrismre/papers/tuffy.pdf
 
+  		TuffyLite by AI2 - https://github.com/allenai/tuffylite
 
+  		LoMRF - https://github.com/anskarl/LoMRF
+  			parallel grounding algorithm based on Akka Actors library
+  			Marginal (MC-SAT) and MAP (MaxWalkSAT and LP-relaxed Integer Linear Programming) inference
+  			batch and online weight learning (max-margin and ADAGRAD)
+  			can compare MLN theories
 
-	- Probabilistic Soft Logic
-		probability distribution over possible worlds
+  		RockIt - https://code.google.com/p/rockit/
 
-		"PSL uses first order logic rules as a template language for graphical models over random variables with soft truth values from the interval [0, 1]. This allows one to directly incorporate similarity functions, both on the level of individuals and on the level of sets. For instance, when modeling opinions in social networks, PSL allows one to not only model different types of relations between users, such as friendship or family relations, but also multiple notions of similarity, for instance based on hobbies, beliefs, or opinions on specific topics. Technically, PSL represents the domain of interest as logical atoms. It uses first order logic rules to capture the dependency structure of the domain, based on which it builds a joint probabilistic model over all atoms. Each rule has an associated non-negative weight that captures the rule’s relative importance. Due to the use of soft truth values, inference (most probable explanation and marginal inference) in PSL is a continuous optimization problem, which can be solved efficiently."
-		"Also, in PSL the formula syntax is restricted to rules with conjunctive bodies."
+  		thebeast - https://code.google.com/p/thebeast/
 
-		https://github.com/linqs/psl/wiki/Introduction-to-probabilistic-soft-logic
+  		ProbKB - http://dsr.cise.ufl.edu/tag/probkb/
+  			"Web-Scale Knowledge Inference Using Markov Logic Networks" - https://cise.ufl.edu/~yang/doc/slg2013.pdf
+  			"novel relational model to represent MLNs and algorithms that apply rules in batches"
+  			"Gibbs sampling algorithms on Graphlab"
 
-		http://psl.cs.umd.edu
 
-		https://github.com/linqs/psl
-		Ontology Alignment and Entity Resolution examples - https://github.com/linqs/psl/wiki/Example-Programs
 
-		Lise Getoor - https://youtube.com/watch?v=1lwGKhFAXU0
-		Raymond Mooney - http://youtube.com/watch?v=GhBHRhIsQIE
-		Jay Pujara - http://youtube.com/watch?v=z_VzaNy36xE
+  - Probabilistic Soft Logic
 
-		https://github.com/linqs/psl/wiki/Introduction-to-probabilistic-soft-logic
+  	probability distribution over possible worlds
 
-		 * input: set of weighted FOPL rules and a set of evidence (just as in MLN)
-		 * MAP/MPE inference is a linear optimization problem that can efficiently draw probabilistic conclusions (in MLN combinatorial counting problem)
-		 * atoms have continuous truth values in [0, 1]  (in MLN atoms have boolean values {0, 1})
-		 * inference finds truth value of all atoms that best satisfy the rules and evidence  (in MLN inference finds probability of atoms given the rules and evidence)
-		 * MPE inference: Most Probable Explaination  (in MLN calculates conditional probability of a query atom given evidence)
+  	"PSL uses first order logic rules as a template language for graphical models over random variables with soft truth values from the interval [0, 1]. This allows one to directly incorporate similarity functions, both on the level of individuals and on the level of sets. For instance, when modeling opinions in social networks, PSL allows one to not only model different types of relations between users, such as friendship or family relations, but also multiple notions of similarity, for instance based on hobbies, beliefs, or opinions on specific topics. Technically, PSL represents the domain of interest as logical atoms. It uses first order logic rules to capture the dependency structure of the domain, based on which it builds a joint probabilistic model over all atoms. Each rule has an associated non-negative weight that captures the rule’s relative importance. Due to the use of soft truth values, inference (most probable explanation and marginal inference) in PSL is a continuous optimization problem, which can be solved efficiently."
+  	"Also, in PSL the formula syntax is restricted to rules with conjunctive bodies."
 
+  	https://github.com/linqs/psl/wiki/Introduction-to-probabilistic-soft-logic
 
+  	http://psl.cs.umd.edu
 
-	- ProPPR
-		graph-algorithm inferences over local groundings of first-order logic programs
+  	https://github.com/linqs/psl
+  	Ontology Alignment and Entity Resolution examples - https://github.com/linqs/psl/wiki/Example-Programs
 
-		William Cohen - http://youtu.be/--pYaISROqE?t=12m35s + http://www.cs.cmu.edu/afs/cs/Web/People/wcohen/nlu-2014.ppt
+  	Lise Getoor - https://youtube.com/watch?v=1lwGKhFAXU0
+  	Raymond Mooney - http://youtube.com/watch?v=GhBHRhIsQIE
+  	Jay Pujara - http://youtube.com/watch?v=z_VzaNy36xE
 
-		"First-order probabilistic language which allows approximate “local groundings” for answering query to be constructed in time independent of database size. Extension to Stochastic Logic Programs that is biased towards short derivations; it is also closely related to an earlier relational learning algorithm called the Path Ranking Algorithm. Problem of constructing proofs for this logic is related to computation of Personalized PageRank on a linearized version of the proof space. It has proveably-correct approximate grounding scheme, based on the PageRank-Nibble algorithm, and fast and easily-parallelized weight-learning algorithm. Learning for ProPPR is orders magnitude faster than learning for Markov Logic Networks. Allows mutual recursion (joint learning) in KB inference. Can learn weights for a mutually recursive program with hundreds of clauses, which define scores of interrelated predicates, over a KB containing one million entities."
+  	https://github.com/linqs/psl/wiki/Introduction-to-probabilistic-soft-logic
 
-		 * efficient first-order probabilistic logic, tractable and faster alternative to MLN
-		 * Program + DB + Query define a proof graph, where nodes are conjunctions of goals and edges are labeled with sets of features
-		 * queries are "locally grounded", i.e. converted to a small O(1/alpha epsilon) subset of the full KB
-		 * ProPPR ~ first-order version and strict generalization of Path Ranking Algorithm (Random Walks with Reset over proof trees)
-		 * inference is a random-walk process on a graph (with edges labeled with feature-vectors derived from KB/queries)
-		 * transition probabilities, Pr(child|parent), plus Personalized PageRank (aka Random Walk with Reset) define a distribution over nodes
-		 * transition probabilities, Pr(child|parent), are defined by weighted sum of edge features, followed by normalization
-		 * consequence: inference is fast, even for large KBs, and parameter learning can be parallelized
-		 * parameter learning improves from hours to seconds, and scales KBs from thousands of entities to millions of entities
+  	 * input: set of weighted FOPL rules and a set of evidence (just as in MLN)
+  	 * MAP/MPE inference is a linear optimization problem that can efficiently draw probabilistic conclusions (in MLN combinatorial counting problem)
+  	 * atoms have continuous truth values in [0, 1]  (in MLN atoms have boolean values {0, 1})
+  	 * inference finds truth value of all atoms that best satisfy the rules and evidence  (in MLN inference finds probability of atoms given the rules and evidence)
+  	 * MPE inference: Most Probable Explaination  (in MLN calculates conditional probability of a query atom given evidence)
 
-		comparison to Markov Logic Network:
-		1   task
-		1-2 formalization (MLN: easy)
-		2   first-order program + (plugged) database of facts (MLN: clausal 1st-order logic, very expressive) (ProPPR: function)
-		2-3 "compilation" (MLN: expensive, grows with DB size) (ProPPR: fast, sublinear in DB size)
-		3   "compiled" representation (MLN: undirected graphical model) (ProPPR: graph with feature-vector labeled edges)
-		3-4 inference (MLN: approximate, intractable) (ProPPR: Personalized PageRank aka Random Walk with Reset, linear)
-		    learning (MLN: approximate, intractable) (ProPPR: pSGD, fast but non-convex, can parallelize)
 
-		scales to 10^5-10^6 facts and requires 10^3 training queries
 
-		https://github.com/TeamCohen/ProPPR
+  - ProPPR
 
+  	graph-algorithm inferences over local groundings of first-order logic programs
 
+  	William Cohen - http://youtu.be/--pYaISROqE?t=12m35s + http://www.cs.cmu.edu/afs/cs/Web/People/wcohen/nlu-2014.ppt
 
- * probabilistic program
+  	"First-order probabilistic language which allows approximate “local groundings” for answering query to be constructed in time independent of database size. Extension to Stochastic Logic Programs that is biased towards short derivations; it is also closely related to an earlier relational learning algorithm called the Path Ranking Algorithm. Problem of constructing proofs for this logic is related to computation of Personalized PageRank on a linearized version of the proof space. It has proveably-correct approximate grounding scheme, based on the PageRank-Nibble algorithm, and fast and easily-parallelized weight-learning algorithm. Learning for ProPPR is orders magnitude faster than learning for Markov Logic Networks. Allows mutual recursion (joint learning) in KB inference. Can learn weights for a mutually recursive program with hundreds of clauses, which define scores of interrelated predicates, over a KB containing one million entities."
 
-	https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt
+  	 * efficient first-order probabilistic logic, tractable and faster alternative to MLN
+  	 * Program + DB + Query define a proof graph, where nodes are conjunctions of goals and edges are labeled with sets of features
+  	 * queries are "locally grounded", i.e. converted to a small O(1/alpha epsilon) subset of the full KB
+  	 * ProPPR ~ first-order version and strict generalization of Path Ranking Algorithm (Random Walks with Reset over proof trees)
+  	 * inference is a random-walk process on a graph (with edges labeled with feature-vectors derived from KB/queries)
+  	 * transition probabilities, Pr(child|parent), plus Personalized PageRank (aka Random Walk with Reset) define a distribution over nodes
+  	 * transition probabilities, Pr(child|parent), are defined by weighted sum of edge features, followed by normalization
+  	 * consequence: inference is fast, even for large KBs, and parameter learning can be parallelized
+  	 * parameter learning improves from hours to seconds, and scales KBs from thousands of entities to millions of entities
 
-	"Cognitive Foundations for Common-sense Knowledge Representation and Reasoning" by Josh Tenenbaum - https://youtube.com/watch?v=oSAG57plHnI
+  	comparison to Markov Logic Network:
+  	1   task
+  	1-2 formalization (MLN: easy)
+  	2   first-order program + (plugged) database of facts (MLN: clausal 1st-order logic, very expressive) (ProPPR: function)
+  	2-3 "compilation" (MLN: expensive, grows with DB size) (ProPPR: fast, sublinear in DB size)
+  	3   "compiled" representation (MLN: undirected graphical model) (ProPPR: graph with feature-vector labeled edges)
+  	3-4 inference (MLN: approximate, intractable) (ProPPR: Personalized PageRank aka Random Walk with Reset, linear)
+  	    learning (MLN: approximate, intractable) (ProPPR: pSGD, fast but non-convex, can parallelize)
 
-	(Pedro Domingos) "Probabilistic graphical models provide a formal lingua franca for modeling and a common target for efficient inference algorithms. However, many of the most innovative and useful probabilistic models published by the AI, machine learning, and statistics community far outstrip the representational capacity of graphical models and associated inference techniques. Models are communicated using a mix of natural language, pseudo code, and mathematical formulae and solved using special purpose, one-off inference methods. Rather than precise specifications suitable for automatic inference, graphical models typically serve as coarse, high-level descriptions, eliding critical aspects such as fine-grained independence, abstraction and recursion.
-	Probabilistic programming languages aim to close this representational gap, unifying general purpose programming with probabilistic modeling; literally, users specify a probabilistic model in its entirety (e.g., by writing code that generates a sample from the joint distribution) and inference follows automatically given the specification. These languages provide the full power of modern programming languages for describing complex distributions, and can enable reuse of libraries of models, support interactive modeling and formal verification, and provide a much-needed abstraction barrier to foster generic, efficient inference in universal model classes."
+  	scales to 10^5-10^6 facts and requires 10^3 training queries
 
-	(Andreas Stuhlmueller) "Probabilistic programs express generative models, i.e., formal descriptions of processes that generate data. To the extent that we can mirror mechanisms “out there in the world” in a formal language, we can pose queries within this language and expect the answer to line up with what happens in the real world. For example, if we can accurately describe how genes give rise to proteins, this helps us in predicting which genetic changes lead to desirable results and which lead to harm.
-	Traditionally, Bayesian networks have been used to formalize and reason about such processes. While extremely useful, this formalism is limited in its expressive power compared to programming languages in general. Probabilistic programming languages like Church provide a substrate for computational modeling that brings together Bayesian statistics and Turing-complete programming languages.
-	What is the structure of thought? The language of thought hypothesis proposes that thoughts are expressions in a mental language, and that thinking consists of syntactic manipulation of these expressions. The probabilistic language of thought hypothesis suggests that these representations have probabilistic meaning. If we treat concepts as stochastic programs and thinking as approximate Bayesian inference, can we predict human behavior in experimental settings better than using other approaches, e.g., prototype theory? If we learn more about the primitives and composition mechanisms used in the brain to represent abstract concepts, can this inform how we construct tools for reasoning?"
+  	https://github.com/TeamCohen/ProPPR
 
 
 
- * distributed representation
 
-	continuous space embeddings of words, sentences, texts, relational graphs
+[knowledge representation - probabilistic program]
 
-	 + approximate objects/relations/categories
-	 + built in-similarity function
-	 + generative function for relations/categories (no need to name everything)
+  https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt
 
-	 - map objects (images, sentences, DNA sequences, commands, or combinations of these) to points in metric spaces (embeddings)
-	 - combinatorial optimization problems becomes easier in metric spaces when casted as continuous optimization problems
-	 - embeddings are efficient/flexible features and provide extra knowledge for many practical tasks
-	 - embeddings can be decoded to produce structured outputs (parsing, sequential decision making, translation)
-	 - distributed representations have exponential power and further gains arise from the use of layers (composition)
-	 - embeddings can be learned with supervised or unsupervised training and can be learned for multiple tasks jointly
-	 - scalable and parallelizable training with stochastic gradient descent using similarity ranking loss or log-likelihood loss
-	 - more data and bigger the models, the more impressive the results
-	 - embeddings and logic? computational power? what are good encoders, decoders and transformers?
+  "Cognitive Foundations for Common-sense Knowledge Representation and Reasoning" by Josh Tenenbaum - https://youtube.com/watch?v=oSAG57plHnI
 
-	 * should words/sentences/entities/relations/facts be vectors or matrices, or tensors, or distributions over them?
-	 * better compression? improve memory capacity of embeddings and allow for one-shot learning of new symbols
-	 * do we need non-linearities? most supervised problems are mostly tackled well by linear models
-	 * can we fit the meaning of a sentence into a “single *&!**^ing vector”?
-	 * what is the sentence space?
-	 * are the sentence vectors contextual?
-	 * how to compose words into sentences, entities and relations into facts? (addition, tensor product, inner products, ...)
-	 * function words, logical operators, quantification, inference, ...?
-	 * composing in other modalities (images, videos, ...)?
+  (Pedro Domingos) "Probabilistic graphical models provide a formal lingua franca for modeling and a common target for efficient inference algorithms. However, many of the most innovative and useful probabilistic models published by the AI, machine learning, and statistics community far outstrip the representational capacity of graphical models and associated inference techniques. Models are communicated using a mix of natural language, pseudo code, and mathematical formulae and solved using special purpose, one-off inference methods. Rather than precise specifications suitable for automatic inference, graphical models typically serve as coarse, high-level descriptions, eliding critical aspects such as fine-grained independence, abstraction and recursion.
+  Probabilistic programming languages aim to close this representational gap, unifying general purpose programming with probabilistic modeling; literally, users specify a probabilistic model in its entirety (e.g., by writing code that generates a sample from the joint distribution) and inference follows automatically given the specification. These languages provide the full power of modern programming languages for describing complex distributions, and can enable reuse of libraries of models, support interactive modeling and formal verification, and provide a much-needed abstraction barrier to foster generic, efficient inference in universal model classes."
 
-	 - What type of inferences do embeddings support?
-	 - What is a proof in embeddings?
-	 - How can explicit background knowledge be injected into embeddings?
+  (Andreas Stuhlmueller) "Probabilistic programs express generative models, i.e., formal descriptions of processes that generate data. To the extent that we can mirror mechanisms “out there in the world” in a formal language, we can pose queries within this language and expect the answer to line up with what happens in the real world. For example, if we can accurately describe how genes give rise to proteins, this helps us in predicting which genetic changes lead to desirable results and which lead to harm.
+  Traditionally, Bayesian networks have been used to formalize and reason about such processes. While extremely useful, this formalism is limited in its expressive power compared to programming languages in general. Probabilistic programming languages like Church provide a substrate for computational modeling that brings together Bayesian statistics and Turing-complete programming languages.
+  What is the structure of thought? The language of thought hypothesis proposes that thoughts are expressions in a mental language, and that thinking consists of syntactic manipulation of these expressions. The probabilistic language of thought hypothesis suggests that these representations have probabilistic meaning. If we treat concepts as stochastic programs and thinking as approximate Bayesian inference, can we predict human behavior in experimental settings better than using other approaches, e.g., prototype theory? If we learn more about the primitives and composition mechanisms used in the brain to represent abstract concepts, can this inform how we construct tools for reasoning?"
 
-	"A number of techniques have been proposed to learn entity and relation representations using neural networks. They all represent entities as low-dimensional vectors and represent relations as operators that combine the representations of two entities. The main difference among these techniques lies in the parametrization of the relation operators. For instance, given two entity vectors, the model of Neural Tensor Network represents each relation as a bilinear tensor operator and a linear matrix operator. The model of TransE, on the other hand, represents each relation as a single vector that linearly interacts with the entity vectors. Both models report promising performance on predicting unseen relationships in knowledge bases."
 
-	"One of the main benefits in using neural networks is that they can be trained to handle very subtle kinds of logic that humans use in casual language that defy axiomatization. Propositional logic, first-order logic, higher order logic, modal logic, nonmonotonic logic, probabilistic logic, fuzzy logic - none of them seem to quite be adequate; but if you use the right kind of recursive net, you don't even have to specify the logic to get it to make useful deductions, if you have enough training data."
 
 
-	http://gavagai.se/blog/2015/09/30/a-brief-history-of-word-embeddings/
+[knowledge representation - distributed representation]
 
-	http://sebastianruder.com/word-embeddings-1/index.html
-	http://sebastianruder.com/word-embeddings-softmax/index.html
+  "The idea of distributed representations was introduced with reference to cognitive representations: a mental object can be represented efficiently (both in terms of number of bits and in terms of number of examples needed to generalize about it) by characterizing the object using many features, each of which can separately each be active or inactive. For example, with m binary features, one can describe up to 2^m different objects. The idea is that the brain would be learning and using such representations because they help it generalize to new objects that are similar to known ones in many respects. A distributed representation is opposed to a local representation, in which only one neuron (or very few) is active at each time, i.e., as with grandmother cells. One can view n-gram models as a mostly local representation: only the units associated with the specific subsequences of the input sequence are turned on. Hence the number of units needed to capture the possible sequences of interest grows exponentially with sequence length."
 
-	Arora - "Word Embeddings: Explaining their properties" - http://www.offconvex.org/2015/12/12/word-embeddings-1/ + http://www.offconvex.org/2016/02/14/word-embeddings-2/
+  Hinton - "Aetherial Symbols" - https://drive.google.com/file/d/0B8i61jl8OE3XdHRCSkV1VFNqTWc
 
+  - words are the symbolic indicators of thought vectors
+  - words carry with each a probabilistic stream of potential further thoughts and links to past symbols
+  - much like implicit CFD, they are backward convolved with prior words to determine most likely hidden thought, and then forward solved to determine next word
+  - further, these streams are described with formal logic relationships based on the identities of the included words which can have levels of "meta-identity" (ie: I can't know some pair are brother and sister without having having been given the idea of bros/sis pairs or seen others)
+  - knowledge of more or varied relationships (and more logic paths) provides more efficient/accurate ways to solve an optimized path through the higher dimensions of word/symbol space
+  - in a sense, one may never know the idea of "bros/sis" but it is probabilistically highly likely that given a male and female with the same parents that they are also bros/sis.
 
-	Weston, Bordes, Chopra - "Embeddings for KB and Text, Representation, Extraction and Question Answering"
-		http://youtube.com/watch?v=FVjuwv1_EDw + http://akbc.ws/2014/slides/weston-nips-akbc.pdf
+  Hinton - "Distributed Representations" - http://www.cs.toronto.edu/~bonner/courses/2014s/csc321/lectures/lec5.pdf
 
-	Weston, Bordes - "Embedding Methods for NLP" - http://emnlp2014.org/tutorials/8_notes.pdf
+  Bottou - "From Machine Learning to Machine Reasoning" - http://youtube.com/watch?v=tzp_BikdgyM + http://research.microsoft.com/pubs/192773/tr-2011-02-08.pdf
 
-	Bouchard, Naradowsky, Riedel, Rocktaschel, Vlachos - "Matrix and Tensor Factorization Methods for Natural Language Processing"
-		https://github.com/uclmr/acl2015tutorial/raw/master/tutorial.pdf
-		http://cl.naist.jp/~kevinduh/z/acl15tutorial/29_AbstractPDF.pdf
+  Bengio - http://www.iro.umontreal.ca/~bengioy/dlbook/disentangling.html
 
-	Rocktaschel, Bosnjak, Singh, Riedel - "Low-Dimensional Embeddings of Logic"
-		http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/ + http://rockt.github.io/slides/2015-naacl.pdf
 
-		https://b8ca8e88-a-62cb3a1a-s-sites.googlegroups.com/site/learningsemantics2014/SebastianRiedel.pdf
-		http://yoavartzi.com/sp14/slides/rockt.sp14.pdf
-		http://www.aclweb.org/anthology/W/W14/W14-2409.pdf
+  continuous space embeddings of words, sentences, texts, relational graphs
 
-	Bouchard, Singh, Trouillon - "On Approximate Reasoning Capabilities of Low-Rank Vector Spaces"
-		https://drive.google.com/file/d/0B_hicYJxvbiObnNYZ0cyMkotUzQ + http://sameersingh.org/files/papers/logicmf-krr15.pdf
+   + approximate objects/relations/categories
+   + built in-similarity function
+   + generative function for relations/categories (no need to name everything)
 
-		Bouchard - "Programming by Teaching" - https://youtube.com/watch?v=sKZD8huxjZ0
+   - map objects (images, sentences, DNA sequences, commands, or combinations of these) to points in metric spaces (embeddings)
+   - combinatorial optimization problems becomes easier in metric spaces when casted as continuous optimization problems
+   - embeddings are efficient/flexible features and provide extra knowledge for many practical tasks
+   - embeddings can be decoded to produce structured outputs (parsing, sequential decision making, translation)
+   - distributed representations have exponential power and further gains arise from the use of layers (composition)
+   - embeddings can be learned with supervised or unsupervised training and can be learned for multiple tasks jointly
+   - scalable and parallelizable training with stochastic gradient descent using similarity ranking loss or log-likelihood loss
+   - more data and bigger the models, the more impressive the results
+   - embeddings and logic? computational power? what are good encoders, decoders and transformers?
 
-	Weston, Chopra, Bordes, Mikolov - "Memory Networks"
-		http://youtube.com/watch?v=Xumy3Yjq4zk + http://cs224d.stanford.edu/lectures/CS224d-Lecture12.pdf
-		http://techtalks.tv/talks/memory-networks-for-language-understanding/62356/
-		http://youtu.be/jRkm6PXRVF8?t=16m29s
-		http://research.microsoft.com/apps/video/default.aspx?id=259920
-		http://youtube.com/watch?v=8keqd1ewsno
+   * should words/sentences/entities/relations/facts be vectors or matrices, or tensors, or distributions over them?
+   * better compression? improve memory capacity of embeddings and allow for one-shot learning of new symbols
+   * do we need non-linearities? most supervised problems are mostly tackled well by linear models
+   * can we fit the meaning of a sentence into a “single *&!**^ing vector”?
+   * what is the sentence space?
+   * are the sentence vectors contextual?
+   * how to compose words into sentences, entities and relations into facts? (addition, tensor product, inner products, ...)
+   * function words, logical operators, quantification, inference, ...?
+   * composing in other modalities (images, videos, ...)?
 
-		http://blog.acolyer.org/2016/03/10/memory-networks/
-		https://docs.google.com/file/d/0B_hicYJxvbiOT3QyTm4wdHlaeWs
+   - What type of inferences do embeddings support?
+   - What is a proof in embeddings?
+   - How can explicit background knowledge be injected into embeddings?
 
-	McCallum - "Word Representations via Gaussian Embedding" - http://arxiv.org/abs/1412.6623
-		http://youtube.com/watch?v=PKTfALFk03M + http://iclr.cc/lib/exe/fetch.php?media=iclr2015:vilnis-iclr2015.pdf
-		 - represent symbols not as points but as regions in space
-		 - captures uncertainty of representation
-		 - enhances asymmetric reasoning such as entailment/implicature
-		 - more expressive decision boundaries and representational power
+  "A number of techniques have been proposed to learn entity and relation representations using neural networks. They all represent entities as low-dimensional vectors and represent relations as operators that combine the representations of two entities. The main difference among these techniques lies in the parametrization of the relation operators. For instance, given two entity vectors, the model of Neural Tensor Network represents each relation as a bilinear tensor operator and a linear matrix operator. The model of TransE, on the other hand, represents each relation as a single vector that linearly interacts with the entity vectors. Both models report promising performance on predicting unseen relationships in knowledge bases."
 
+  "One of the main benefits in using neural networks is that they can be trained to handle very subtle kinds of logic that humans use in casual language that defy axiomatization. Propositional logic, first-order logic, higher order logic, modal logic, nonmonotonic logic, probabilistic logic, fuzzy logic - none of them seem to quite be adequate; but if you use the right kind of recursive net, you don't even have to specify the logic to get it to make useful deductions, if you have enough training data."
 
-	Hinton - "Distributed Representations" - http://www.cs.toronto.edu/~bonner/courses/2014s/csc321/lectures/lec5.pdf
-	Hinton - "Aetherial Symbols" - https://drive.google.com/file/d/0B8i61jl8OE3XdHRCSkV1VFNqTWc
 
-	Bottou - "From Machine Learning to Machine Reasoning" - http://youtube.com/watch?v=tzp_BikdgyM + http://research.microsoft.com/pubs/192773/tr-2011-02-08.pdf
+  http://gavagai.se/blog/2015/09/30/a-brief-history-of-word-embeddings/
 
-	Guha - "Towards A Model Theory for Distributed Representations" - http://arxiv.org/pdf/1410.5859.pdf
-	Guha - "Scooter: a KR System that Learns" - https://docs.google.com/file/d/0B_hicYJxvbiOTmh3WTIwS3JRblk
+  http://sebastianruder.com/word-embeddings-1/index.html
+  http://sebastianruder.com/word-embeddings-softmax/index.html
+
+  Arora - "Word Embeddings: Explaining their properties" -
+	http://www.offconvex.org/2015/12/12/word-embeddings-1/ + http://www.offconvex.org/2016/02/14/word-embeddings-2/
+
+
+  Weston, Bordes, Chopra - "Embeddings for KB and Text, Representation, Extraction and Question Answering"
+  	http://youtube.com/watch?v=FVjuwv1_EDw + http://akbc.ws/2014/slides/weston-nips-akbc.pdf
+
+  Weston, Bordes - "Embedding Methods for NLP" - http://emnlp2014.org/tutorials/8_notes.pdf
+
+  Bouchard, Naradowsky, Riedel, Rocktaschel, Vlachos - "Matrix and Tensor Factorization Methods for Natural Language Processing"
+  	https://github.com/uclmr/acl2015tutorial/raw/master/tutorial.pdf
+  	http://cl.naist.jp/~kevinduh/z/acl15tutorial/29_AbstractPDF.pdf
+
+  Rocktaschel, Bosnjak, Singh, Riedel - "Low-Dimensional Embeddings of Logic"
+  	http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/
+
+  	https://b8ca8e88-a-62cb3a1a-s-sites.googlegroups.com/site/learningsemantics2014/SebastianRiedel.pdf
+  	http://yoavartzi.com/sp14/slides/rockt.sp14.pdf
+  	http://www.aclweb.org/anthology/W/W14/W14-2409.pdf
+
+  Bouchard, Singh, Trouillon - "On Approximate Reasoning Capabilities of Low-Rank Vector Spaces"
+  	https://drive.google.com/file/d/0B_hicYJxvbiObnNYZ0cyMkotUzQ + http://sameersingh.org/files/papers/logicmf-krr15.pdf
+
+  	Bouchard - "Programming by Teaching" - https://youtube.com/watch?v=sKZD8huxjZ0
+
+  Weston, Chopra, Bordes, Mikolov - "Memory Networks"
+  	http://youtube.com/watch?v=Xumy3Yjq4zk + http://cs224d.stanford.edu/lectures/CS224d-Lecture12.pdf
+  	http://techtalks.tv/talks/memory-networks-for-language-understanding/62356/
+  	http://youtu.be/jRkm6PXRVF8?t=16m29s
+  	http://research.microsoft.com/apps/video/default.aspx?id=259920
+  	http://youtube.com/watch?v=8keqd1ewsno
+
+  	http://blog.acolyer.org/2016/03/10/memory-networks/
+  	https://docs.google.com/file/d/0B_hicYJxvbiOT3QyTm4wdHlaeWs
+
+  McCallum - "Word Representations via Gaussian Embedding" - http://arxiv.org/abs/1412.6623
+  	http://youtube.com/watch?v=PKTfALFk03M + http://iclr.cc/lib/exe/fetch.php?media=iclr2015:vilnis-iclr2015.pdf
+  	 - represent symbols not as points but as regions in space
+  	 - captures uncertainty of representation
+  	 - enhances asymmetric reasoning such as entailment/implicature
+  	 - more expressive decision boundaries and representational power
 
 
 
@@ -811,6 +844,8 @@ David Ferucci
 
 	"Computational Cognitive Science: Generative Models, Probabilistic Programs and Common Sense" by Joshua Tenenbaum -
 		https://youtube.com/watch?v=2WQO9e5Mdj4
+
+	"Simulation as an Engine of Physical Scene Understanding" by Battaglia, Hamrick, Tenenbaum - http://www.pnas.org/content/110/45/18327.short
 
 	"Learning Physical Intuition of Block Towers by Example" by Lerer, Gross, Fergus - http://arxiv.org/abs/1603.01312
 
@@ -1167,22 +1202,15 @@ workshop on Continuous Vector Space Models and their Compositionality - https://
 
 
 
-[books]
+[books and monographies]
 
-Brachman, Levesque - "Knowledge Representation and Reasoning"
+Brachman, Levesque - "Knowledge Representation and Reasoning" -
 	https://dropbox.com/s/vfeteb62zetjxwh/Brachman%20Levesque%20-%20Knowledge%20Representation%20and%20Reasoning.pdf
-	introduction slides - http://www.cs.toronto.edu/~hector/PublicKRSlides.pdf
-van Harmelen, Lifschitz, Porter - "Handbook of Knowledge Representation"
+	http://www.cs.toronto.edu/~hector/PublicKRSlides.pdf (slides)
+van Harmelen, Lifschitz, Porter - "Handbook of Knowledge Representation" -
 	http://dai.fmph.uniba.sk/~sefranek/kri/handbook/
-Dagan, Roth, Sammons, Zanzotto - "Recognizing Textual Entailment: Models and Applications"
-	http://amazon.com/Recognizing-Textual-Entailment-Applications-Technologies/dp/1598298348
-Mueller - "Commonsense Reasoning: An Event Calculus Based Approach"
-	http://amazon.com/Commonsense-Reasoning-Second-Calculus-Approach/dp/0128014164/
-
-
-
-
-[monographies]
+Getoor, Taskar - "Introduction to Statistical Relational Learning" -
+	http://www.cs.umd.edu/srl-book/
 
 Brenden Lake - "Towards More Human-Like Concept Learning in Machines: Compositionality, Causality and Learning-to-learn" - http://cims.nyu.edu/~brenden/LakePhDThesis.pdf
 Samuel Bowman - "Modeling Natural Language Semantics in Learned Representations" - https://www.nyu.edu/projects/bowman/bowman2016phd.pdf

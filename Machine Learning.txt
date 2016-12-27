@@ -8,12 +8,6 @@
 
 
 
-"Google says it's rethinking everything around machine learning" - http://goo.gl/zFudsd + http://youtube.com/watch?v=l95h4alXfAA
-
-Jeff Dean: "Previously, we might use machine learning in a few sub-components of a system. Now we actually use machine learning to replace entire sets of systems, rather than trying to make a better machine learning model for each of the pieces." "If he were to rewrite Google’s infrastructure today, much of it would not be coded but learned." - http://9to5google.com/2016/06/23/google-machine-learning-future/
-
-
-
 overviews and selected papers/books
 	machine learning    - https://dropbox.com/sh/kpd5tvfnc29lstj/AAD3oGVCUdkoMS56_2g8Oj7_a
 	deep learning    - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt + https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
@@ -28,7 +22,13 @@ applications
 	information retrieval    - https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt + https://dropbox.com/sh/pvpzyxfcpy39j8p/AACduJ-pVF9Lh-gn3_SExj1va
 	personal assistants    - https://dropbox.com/s/0fyarlwcfb8mjdq/Personal%20Assistants.txt + https://dropbox.com/sh/veqe3c800ztpkxe/AABwH6camduJrsTUJpeKobWUa
 
+
+the most impressive accomplishments in AI based on Deep Learning (in russian) - https://dropbox.com/s/di5mxkj8c65h3e6/AI%20wonders.txt
+
 industry
+	"Google says it's rethinking everything around machine learning" - http://goo.gl/zFudsd + http://youtube.com/watch?v=l95h4alXfAA
+	Jeff Dean: "Previously, we might use machine learning in a few sub-components of a system. Now we actually use machine learning to replace entire sets of systems, rather than trying to make a better machine learning model for each of the pieces." "If he were to rewrite Google’s infrastructure today, much of it would not be coded but learned." - http://9to5google.com/2016/06/23/google-machine-learning-future/
+
 	http://wired.com/2016/11/googles-search-engine-can-now-answer-questions-human-help/
 	http://bloomberg.com/news/articles/2015-10-26/google-turning-its-lucrative-web-search-over-to-ai-machines
 	http://research.googleblog.com/2016/09/a-neural-network-for-machine.html
@@ -55,11 +55,12 @@ industry
 	http://spectrum.ieee.org/computing/software/the-secret-of-airbnbs-pricing-algorithm
 	http://arnnet.com.au/article/589485/kaspersky-deepens-security-offering-through-machine-learning/
 	http://making.duolingo.com/how-we-learn-how-you-learn
+	http://devblogs.nvidia.com/parallelforall/deep-learning-self-driving-cars/
 	http://broadinstitute.org/blog/machine-learning-approach-improves-crispr-cas9-guide-pairing
 	http://broadinstitute.org/blog/biologist-mathematician-and-computer-scientist-walk-foobar
 	http://oreilly.com/ideas/the-future-of-machine-intelligence/page/4/brendan-frey-deep-learning-meets-genome-biology
 	http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7347331 (genomics)
-	https://lukeoakdenrayner.wordpress.com/2016/11/27/do-computers-already-outperform-doctors/
+	http://lukeoakdenrayner.wordpress.com/2016/11/27/do-computers-already-outperform-doctors/
 
 overview (non-technical)
 	"What Is Machine Learning" by Pedro Domingos - https://class.coursera.org/machlearning-001/lecture/145
@@ -659,10 +660,11 @@ selected papers - https://dropbox.com/sh/vrr1gs798zy02n1/AACj7hlXOiRt1nXltXVC-2W
 
   "The Automatic Statistician" by Zoubin Ghahramani - https://youtu.be/H7AMB0oo__4?t=53m20s + http://webdav.tuebingen.mpg.de/mlss2013/2015/slides/ghahramani/mlss15future.pdf
 
-
   DARPA's Data-Driven Discovery of Models (D3M) - http://www.darpa.mil/news-events/2016-06-17
 	"The goal of D3M is to help overcome the data-science expertise gap by enabling non-experts to construct complex empirical models through automation of large parts of the model-creation process. If successful, researchers using D3M tools will effectively have access to an army of “virtual data scientists”."
 	"The construction of empirical models today is largely a manual process, requiring data experts to translate stochastic elements, such as weather and traffic, into models that engineers and scientists can then ask questions of. We have an urgent need to develop machine-based modeling for users with no data-science background. We believe it’s possible to automate certain aspects of data science, and specifically to have machines learn from prior example how to construct new models."
+
+  http://rhiever.github.io/tpot/
 
 
 
