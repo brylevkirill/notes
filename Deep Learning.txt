@@ -1,4 +1,4 @@
-Deep Learning ~ "learning to represent knowledge with composition of functions" + "learning all functions in composition jointly and end-to-end"
+Deep Learning ~= learning to represent knowledge with composition of functions + learning all functions in composition jointly and end-to-end
 
 
   * overview
@@ -431,6 +431,8 @@ projects
     - potentially intractable inference leading to expensive computation or long simulation times
 
 
+  http://deeplearningbook.org/contents/graphical_models.html
+
   Dmitry Vetrov - "Bayesian Inference and Deep Learning" (in russian) - https://youtu.be/_qrHcSdQ2J4?t=22m31s + https://youtube.com/watch?v=BKh7nj5SmnI
   Dmitry Vetrov - "Learning in Stochastic Computation Graphs" (in russian) - https://youtu.be/0q5p7xP4cdA?t=5h4m9s
 
@@ -620,6 +622,10 @@ projects
 
   * open problems
 
+  "(1) How do you address the fact that the minimax game between the generator and discriminator may never approach an equilibrium? In other words, how do you build a system using GANs so that you know that it will converge to a good solution?
+  (2) Even if they do converge, current systems still have issues with global structure: they cannot count (e.g. the number of eyes on a dog) and frequently get long-range connections wrong (e.g. they show multiple perspectives as part of the same image).
+  (3) How can we use GANs in discrete settings, such as for generating text?"
+
   "While most deep generative models are trained by maximizing log likelihood or a lower bound on log likelihood, GANs take a radically different approach that does not require inference or explicit calculation of the data likelihood. Instead, two models are used to solve a minimax game: a generator which samples data, and a discriminator which classifies the data as real or generated. In theory these models are capable of modeling an arbitrarily complex probability distribution. When using the optimal discriminator for a given class of generators, the original GAN proposed by Goodfellow et al. minimizes the Jensen-Shannon divergence between the data distribution and the generator, and extensions generalize this to a wider class of divergences. The ability to train extremely flexible generating functions, without explicitly computing likelihoods or performing inference, and while targeting more mode-seeking divergences has made GANs extremely successful in image generation. In practice, however, GANs suffer from many issues, particularly during training. One common failure mode involves the generator collapsing to produce only a single sample or a small family of very similar samples. Another involves the generator and discriminator oscillating during training, rather than converging to a fixed point. In addition, if one agent becomes much more powerful than the other, the learning signal to the other agent becomes useless, and the system does not learn. The set of hyperparameters for which training is successful is generally very small in practice. Once converged, the generative models produced by the GAN training procedure normally do not cover the whole distribution, even when targeting a mode-covering divergence such as KL. Additionally, because it is intractable to compute the GAN training loss, and because approximate measures of performance such as Parzen window estimates suffer from major flaws, evaluation of GAN performance is challenging. Currently, human judgement of sample quality is one of the leading metrics for evaluating GANs. In practice this metric does not take into account mode dropping if the number of modes is greater than the number of samples one is visualizing. In fact, the mode dropping problem generally helps visual sample quality as the model can choose to focus on only the most common modes. These common modes correspond, by definition, to more typical samples. Additionally, the generative model is able to allocate more expressive power to the modes it does cover than it would if it attempted to cover all modes."
 
   "GANs don't minimise likelihood or other better understood things like that, and other than being superior at generating pretty samples it is unclear why they should work in the really interesting applications of generative models: representation, semi-supervised learning.
@@ -627,9 +633,9 @@ projects
   It's just one of those things that are overhyped today, and everybody wants to do GANx for X, at the cost of actually trying things that we have known to work well for X for ages. It's quite predictable that once we understand them better there won't be quite as much excitement around them. The same kind of hype and overfocus of attention happened around Bayesian nonparametris, kernel methods, sparse LASSO-type stuff a few years ago.
   GANs don't really work today. Practically, they don't really converge, the results are highly cherry-picked with the training stopped when samples look good. If you change a hyperparameter it all falls apart. Fundamentally, it's minimising a lower bound which is dubious. Serious work needs to be done before they reach the maturity of variational inference or something like the EM algorithm."
 
-  "Can we figure out a way to preserve the properties that we like with GANs? That we don't need to hard-code an explicit reconstruction penalty or likelihood function - while avoiding the problems that they currently suffer from, especially mode-dropping and unreliable optimization."
-
   "All the theory says GANs should be great at the Nash equilibrium, but gradient descent is only guaranteed to get to the Nash equilibrium in the convex case. When both players are represented by neural nets, it’s possible for them to keep adapting their strategies forever without actually arriving at the equilibrium."
+
+  "Can we figure out a way to preserve the properties that we like with GANs? That we don't need to hard-code an explicit reconstruction penalty or likelihood function - while avoiding the problems that they currently suffer from, especially mode-dropping and unreliable optimization."
 
 
   * tips & tricks
@@ -773,56 +779,56 @@ projects
   * recurrent neural network
 
 	"Recurrent neural networks are a powerful family of connectionist models that capture time dynamics via cycles in the graph. Unlike feedforward neural networks, recurrent networks can process examples one at a time, retaining a state, or memory, that reflects an arbitrarily long context window."
-	
+
 	 - replicate a parametrized function over different time steps
 	 - output state at one time-step/node is used as input for another time-step/node
 	 - back-propagation through directed acyclic graph can be used to train weights
 	 - targets can be provided for "output" neurons at any time-step
 	 - weights are shared over time so they add up derivatives they got over all time-steps
-	
+
 	distributed hidden state that allows them to store a lot of information about the past efficiently
 	non-linear dynamics that allows them to update their hidden state in complicated ways
-	
+
 	recurrent networks (generalization of recurrent networks)
 	- replicate a parametrized function over nodes of a DAG
 	- learning models that capture compositional meaning and jointly learn structure, feature representations and prediction tasks
-	
-	
+
+
+	http://deeplearningbook.org/contents/rnn.html
+
 	http://videolectures.net/deeplearning2016_bengio_neural_networks/ (Yoshua Bengio)
-	
-	
+
+
 	"The Unreasonable Effectiveness of Recurrent Neural Networks" - https://karpathy.github.io/2015/05/21/rnn-effectiveness/
 	"A Critical Review of Recurrent Neural Networks for Sequence Learning" - http://arxiv.org/abs/1506.00019
 	http://nikhilbuduma.com/2015/01/11/a-deep-dive-into-recurrent-neural-networks/
-	https://github.com/mohammadpz/Recurrent-Neural-Networks
-	
-	
-	"Attention and Augmented Recurrent Neural Networks" - http://distill.pub/2016/augmented-rnns/
+
+
 	"Learning Over Long Time Lags" - http://arxiv.org/abs/1602.04335
-	
-	
+
+
 	Long Short Term Memory
 		designed to model temporal sequences and their long-range dependencies more accurately than conventional RNNs
 		solves the vanishing gradient problem at small computational extra-cost and may be interpreted as a differentiable version of computer memory
 		next hidden state is modification of previous hidden state, not a rewrite so that information doesn’t decay too fast
-	
+
 		 - RNNs overwrite the hidden state
 		 - LSTMs add to the hidden state
 		 - every term in a sum gets a gradient
 		 - main advantage: requires little tuning
-	
+
 		motivation behind LSTM - https://reddit.com/r/MachineLearning/comments/44bxdj/scrn_vs_lstm/czp4hqr
-	
-		https://colah.github.io/posts/2015-08-Understanding-LSTMs/
-	
+
+		https://colah.github.io/posts/2015-08-Understanding-LSTMs/ (Chris Olah)
+
 		http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html
-	
+
 		history and varians of LSTM - http://arxiv.org/abs/1503.04069 ("None of the variants can improve upon the standard LSTM architecture significantly")
-	
+
 		http://blog.aidangomez.ca/2016/04/17/Backpropogating-an-LSTM-A-Numerical-Example/
-	
+
 		records on benchmark tasks - https://reddit.com/r/MachineLearning/comments/2xcyrl/i_am_j%C3%BCrgen_schmidhuber_ama/cp48i0n
-	
+
 		Gated Recurrent Unit RNN couples input and forget gates of LSTM
 
 
@@ -830,7 +836,11 @@ projects
 
 	"Computations scale much worse than linearly, and current research in parallelizing the training algorithms and creating convolutional architectures is meant to make these algorithms useful in practice. Convolutional architectures mean that every hidden unit output to a layer does not become the input for every other hidden unit in the next layer; they can be restricted to only connect to other hidden units that are within the same spatial area."
 
-	https://cs231n.github.io/convolutional-networks/ (Andrej Karpathy)
+	http://cs231n.github.io/convolutional-networks/ (Andrej Karpathy)
+	http://colah.github.io/posts/2014-07-Conv-Nets-Modular/ (Chris Olah)
+	http://colah.github.io/posts/2014-07-Understanding-Convolutions/ (Chris Olah)
+
+	http://deeplearningbook.org/contents/convnets.html
 
 	https://youtube.com/watch?v=u6aEYuemt0M (Andrej Karpathy)
 	https://youtube.com/watch?v=LxfUGhug-iQ (Andrej Karpathy)
@@ -839,6 +849,11 @@ projects
 	https://youtube.com/watch?v=6-yBs3XLM20 (Victor Lempitsky, in russian)
 
 	http://culurciello.github.io/tech/2016/06/04/nets.html
+
+	"Compared to recurrent networks these models can have many, many layers which can make up for the lack of explicit state to some extent. Also the fact that they can be fully parallelised across time during training and don't require backpropagation through time is a considerable advantage. Not to mention that it's much easier to build models with large temporal receptive fields."
+
+	"Compared to recurrent networks using only the output as state is very limiting, and conversely, hidden states are extremely powerful. Most algorithms we design do not just use the outputs as variables, but there are rather hundreds or billions of states that determine the output. Recurrent networks are just notoriously hard to train, so it is a matter of finding the right regularization techniques."
+	"It is easy to imagine computations that would be vastly more efficient using hidden states. For example if you want to track a person hiding behind a wall. If you increase the time period the person spends hiding behind the wall, then at some point the advantages from cheap training of passive/hierarchical/diluted convolutional models will be outperformed by a NN with a state that is encoded at network level, protected by gates, or maintained by some recall mechanism."
 
 
   * dropout
@@ -885,9 +900,12 @@ projects
 
 [architectures - compute and memory]
 
+  "Attention and Augmented Recurrent Neural Networks" - http://distill.pub/2016/augmented-rnns/
+
   "Deep Learning and Reasoning, Memory-Augmented Networks" by Rob Fergus -
-  	http://vk.com/video-44016343_456239295 + http://www.college-de-france.fr/site/en-yann-lecun/seminar-2016-04-08-12h00.htm
-  	http://videolectures.net/deeplearning2016_chopra_attention_memory/
+	http://www.college-de-france.fr/site/en-yann-lecun/seminar-2016-04-08-12h00.htm
+	http://videolectures.net/deeplearning2016_chopra_attention_memory/
+
   "Reasoning, Attention and Memory" by Sumit Chopra -
 	http://videolectures.net/deeplearning2016_chopra_attention_memory/
 
@@ -1028,16 +1046,17 @@ projects
    + approximate objects/relations/categories
    + built in-similarity function
    + generative function for relations/categories (no need to name everything)
+   + map objects (images, sentences, DNA sequences, commands, or combinations of these) to points in metric spaces (embeddings)
+   + combinatorial optimization problems becomes easier in metric spaces when casted as continuous optimization problems
+   + embeddings are efficient/flexible features and provide extra knowledge for many practical tasks
+   + embeddings can be decoded to produce structured outputs (parsing, sequential decision making, translation)
+   + distributed representations have exponential power and further gains arise from the use of layers (composition)
+   + embeddings can be learned with supervised or unsupervised training and can be learned for multiple tasks jointly
+   + scalable and parallelizable training with stochastic gradient descent using similarity ranking loss or log-likelihood loss
+   + more data and bigger the models, the more impressive the results
 
-   - map objects (images, sentences, DNA sequences, commands, or combinations of these) to points in metric spaces (embeddings)
-   - combinatorial optimization problems becomes easier in metric spaces when casted as continuous optimization problems
-   - embeddings are efficient/flexible features and provide extra knowledge for many practical tasks
-   - embeddings can be decoded to produce structured outputs (parsing, sequential decision making, translation)
-   - distributed representations have exponential power and further gains arise from the use of layers (composition)
-   - embeddings can be learned with supervised or unsupervised training and can be learned for multiple tasks jointly
-   - scalable and parallelizable training with stochastic gradient descent using similarity ranking loss or log-likelihood loss
-   - more data and bigger the models, the more impressive the results
-   - embeddings and logic? computational power? what are good encoders, decoders and transformers?
+   - fixed capacity: one has to choose a dimension before training and it determines the capacity of the representation, then one can't increase it as more data comes in without retraining the whole thing from the scratch
+   - partial lack of interpretability: distributed representations are black boxes - they may preserve some semantic relations as vector algebraic properties, but one can't generally easily extract arbitrary information from them without a specifically trained neural network
 
    * should words/sentences/entities/relations/facts be vectors or matrices, or tensors, or distributions over them?
    * better compression? improve memory capacity of embeddings and allow for one-shot learning of new symbols
@@ -1677,6 +1696,7 @@ Veit, Wilber, Belongie - "Residual Networks are Exponential Ensembles of Relativ
 	"Deleting a layer in residual networks at test time (a) is equivalent to zeroing half of the paths. In ordinary feed-forward networks (b) such as VGG or AlexNet, deleting individual layers alters the only viable path from input to output."
 	"Recently, an alternative training procedure for residual networks has been proposed, referred to as stochastic depth. In that approach a random subset of the residual modules is selected for each mini-batch during training. The forward and backward pass is only performed on those modules. Stochastic depth does not affect the multiplicity of the network because all paths are available at test time. However, it shortens the paths seen during training. Further, by selecting a different subset of short paths in each mini-batch, it encourages the paths to independently produce good results. We repeat the experiment of deleting individual modules for a residual network trained using stochastic depth. Training with stochastic depth improves resilience slightly; only the dependence on the downsampling layers seems to be reduced. By now, this is not surprising: we know that residual networks are “ensembles by construction.” Special training procedures such as stochastic depth are not what induce the ensemble. Rather, they only encourage its members to be more independent."
 	"It is not depth, but the ensemble that makes residual networks strong. In the most recent iteration of residual networks, He et al. claim “We obtain these results via a simple but essential concept - going deeper. These results demonstrate the potential of pushing the limits of depth.” We now know that this is not quite right. Residual networks push the limits of network multiplicity, not network depth. Our proposed unraveled view and the lesion study show that residual networks are an implicit ensemble of exponentially many networks. Further, the paths through the network that contribute gradient are shorter than expected, because deep paths do not contribute any gradient during training due to vanishing gradients. If most of the paths that contribute gradient are very short compared to the overall depth of the network, increased depth alone can’t be the key characteristic of residual networks. We now believe that multiplicity, the network’s expressability in the terms of the number of paths, plays a key role."
+	-- https://youtu.be/Jh3D8Gi4N0I?t=13m13s (Novikov, in russian)
 
 Sutskever, Vinyals, Le - "Sequence to Sequence Learning with Neural Networks" [http://arxiv.org/abs/1409.3215]
 	"Deep Neural Networks are powerful models that have achieved excellent performance on difficult learning tasks. Although DNNs work well whenever large labeled training sets are available, they cannot be used to map sequences to sequences. In this paper, we present a general end-to-end approach to sequence learning that makes minimal assumptions on the sequence structure. Our method uses a multilayered Long Short-Term Memory to map the input sequence to a vector of a fixed dimensionality, and then another deep LSTM to decode the target sequence from the vector. Our main result is that on an English to French translation task from the WMT-14 dataset, the translations produced by the LSTM achieve a BLEU score of 34.7 on the entire test set, where the LSTM's BLEU score was penalized on out-of-vocabulary words. Additionally, the LSTM did not have difficulty on long sentences. For comparison, a strong phrase-based SMT system achieves a BLEU score of 33.3 on the same dataset. When we used the LSTM to rerank the 1000 hypotheses produced by the aforementioned SMT system, its BLEU score increases to 36.5, which beats the previous state of the art. The LSTM also learned sensible phrase and sentence representations that are sensitive to word order and are relatively invariant to the active and the passive voice. Finally, we found that reversing the order of the words in all source sentences (but not target sentences) improved the LSTM's performance markedly, because doing so introduced many short term dependencies between the source and the target sentence which made the optimization problem easier."
@@ -1689,13 +1709,24 @@ Sutskever, Vinyals, Le - "Sequence to Sequence Learning with Neural Networks" [h
 	-- https://github.com/farizrahman4u/seq2seq
 	-- https://github.com/an-kumar/seq2seq
 
-Ranzato, Chopra, Auli, Zaremba - "Sequence-Level Training with Recurrent Neural Networks" [http://arxiv.org/abs/1511.06732]
-	"Many natural language processing applications use language models to generate text. These models are typically trained to predict the next word in a sequence, given the previous words and some context such as an image. However, at test time the model is expected to generate the entire sequence from scratch. This discrepancy makes generation brittle, as errors may accumulate along the way. We address this issue by proposing a novel sequence level training algorithm that directly optimizes the metric used at test time, such as BLEU or ROUGE. On three different tasks, our approach outperforms several strong baselines for greedy generation. The method is also competitive when these baselines employ beam search, while being several times faster."
-	"A wide variety of applications rely on text generation, including machine translation, video/text summarization, question answering, among others. From a machine learning perspective, text generation is the problem of predicting a syntactically and semantically correct sequence of consecutive words given some context. For instance, given an image, generate an appropriate caption or given a sentence in English language, translate it into French. Popular choices for text generation models are language models based on n-grams, feed-forward neural networks and recurrent neural networks. These models when used as is to generate text suffer from two major drawbacks. First, they are trained to predict the next word given the previous ground truth words as input. However, at test time, the resulting models are used to generate an entire sequence by predicting one word at a time, and by feeding the generated word back as input at the next time step. This process is very brittle because the model was trained on a different distribution of inputs, namely, words drawn from the data distribution, as opposed to words drawn from the model distribution. As a result the errors made along the way will quickly accumulate. We refer to this discrepancy as exposure bias which occurs when a model is only exposed to the training data distribution, instead of its own predictions. Second, the loss function used to train these models is at the word level. A popular choice is the cross-entropy loss used to maximize the probability of the next correct word. However, the performance of these models is typically evaluated using discrete metrics. One such metric is called BLEU for instance, which measures the n-gram overlap between the model generation and the reference text. Training these models to directly optimize metrics like BLEU is hard because a) these are not differentiable, and b) combinatorial optimization is required to determine which sub-string maximizes them given some context."
-	"This paper proposes a novel training algorithm which results in improved text generation compared to standard models. The algorithm addresses the two issues discussed above as follows. First, while training the generative model we avoid the exposure bias by using model predictions at training time. Second, we directly optimize for our final evaluation metric. We build on the REINFORCE algorithm to achieve the above two objectives. While sampling from the model during training is quite a natural step for the REINFORCE algorithm, optimizing directly for any test metric can also be achieved by it. REINFORCE side steps the issues associated with the discrete nature of the optimization by not requiring rewards (or losses) to be differentiable. While REINFORCE appears to be well suited to tackle the text generation problem, it suffers from a significant issue. The problem setting of text generation has a very large action space which makes it extremely difficult to learn with an initial random policy. Specifically, the search space for text generation is of size O(WT), where W is the number of words in the vocabulary (typically around 10^4 or more) and T is the length of the sentence (typically around 10-30). Towards that end, we introduce Mixed Incremental Cross-Entropy Reinforce. MIXER is an easy-to-implement recipe to make REINFORCE work well for text generation applications. It is based on two key ideas: incremental learning and the use of a hybrid loss function which combines both REINFORCE and cross-entropy. Both ingredients are essential to training with large action spaces. In MIXER, the model starts from the optimal policy given by cross-entropy training (as opposed to a random one), from which it then slowly deviates, in order to make use of its own predictions, as is done at test time."
-	"Our results show that MIXER with a simple greedy search achieves much better accuracy compared to the baselines on Text Summarization, Machine Translation and Image Captioning tasks. In addition we show that MIXER with greedy search is even more accurate than the cross entropy model augmented with beam search at inference time as a post-processing step. This is particularly remarkable because MIXER with greedy search is at least 10 times faster than the cross entropy model with a beam of size 10. Lastly, we note that MIXER and beam search are complementary to each other and can be combined to further improve performance, although the extent of the improvement is task dependent."
-	-- https://www.evernote.com/shard/s189/sh/ada01a82-70a9-48d4-985c-20492ab91e84/8da92be19e704996dc2b929473abed46 (Larochelle)
-	-- https://github.com/facebookresearch/MIXER
+Norouzi, Bengio, Chen, Jaitly, Schuster, Wu, Schuurmans - "Reward Augmented Maximum Likelihood for Neural Structured Prediction" [https://arxiv.org/abs/1609.00150]
+	"A key problem in structured output prediction is direct optimization of the task reward function that matters for test evaluation. This paper presents a simple and computationally efficient approach to incorporate task reward into a maximum likelihood framework. We establish a connection between the log-likelihood and regularized expected reward objectives, showing that at a zero temperature, they are approximately equivalent in the vicinity of the optimal solution. We show that optimal regularized expected reward is achieved when the conditional distribution of the outputs given the inputs is proportional to their exponentiated (temperature adjusted) rewards. Based on this observation, we optimize conditional log-probability of edited outputs that are sampled proportionally to their scaled exponentiated reward. We apply this framework to optimize edit distance in the output label space. Experiments on speech recognition and machine translation for neural sequence to sequence models show notable improvements over a maximum likelihood baseline by using edit distance augmented maximum likelihood."
+	"Neural sequence models use a maximum likelihood framework to maximize the conditional probability of the ground-truth outputs given corresponding inputs. These models do not explicitly consider the task reward during training, hoping that conditional log-likelihood would serve as a good surrogate for the task reward. Such methods make no distinction between alternative incorrect outputs: log-probability is only measured on the ground-truth input-output pairs, and all alternative outputs are equally penalized, whether near or far from the ground-truth target. We believe that one can improve upon maximum likelihood sequence models, if the difference in the rewards of alternative outputs is taken into account. A key property of ML training for locally normalized RNN models is that the objective function factorizes into individual loss terms, which could be efficiently optimized using stochastic gradient descend. In particular, ML training does not require any form of inference or sampling from the model during training, which leads to computationally efficient and easy to implementations."
+	"Alternatively, one can use reinforcement learning algorithms, such as policy gradient, to optimize expected task reward during training. Even though expected task reward seems like a natural objective, direct policy optimization faces significant challenges: unlike ML, the gradient for a mini-batch of training examples is extremely noisy and has a high variance; gradients need to be estimated via sampling from the model, which is a non-stationary distribution; the reward is often sparse in a high-dimensional output space, which makes it difficult to find any high value predictions, preventing learning from getting off the ground; and, finally, maximizing reward does not explicitly consider the supervised labels, which seems inefficient. In fact, all previous attempts at direct policy optimization for structured output prediction has started by bootstrapping from a previously trained ML solution and they use several heuristics and tricks to make learning stable."
+	"This paper presents a new approach to task reward optimization that combines the computational efficiency and simplicity of ML with the conceptual advantages of expected reward maximization. Our algorithm called reward augmented maximum likelihood simply adds a sampling step on top of the typical likelihood objective. Instead of optimizing conditional log-likelihood on training input-output pairs, given each training input, we first sample an output proportional to its exponentiated scaled reward. Then, we optimize log-likelihood on such auxiliary output samples given corresponding inputs. When the reward for an output is defined as its similarity to a ground-truth output, then the output sampling distribution is peaked at the ground-truth output, and its concentration is controlled by a temperature hyper-parameter."
+	"Surprisingly, we find that the best performance is achieved with output sampling distributions that put a lot of the weight away from the ground-truth outputs. In fact, in our experiments, the training algorithm rarely sees the original unperturbed outputs. Our results give further evidence that models trained with imperfect outputs and their reward values can improve upon models that are only exposed to a single ground-truth output per input."
+	"There are several critical differences between gradient estimators for RML loss (reward augmented maximum likelihood) and RL loss (regularized expected reward) that make SGD optimization of RML loss more desirable. First, for RML loss, one has to sample from a stationary distribution, the so called exponentiated payoff distribution, whereas for RL loss one has to sample from the model distribution as it is evolving. Not only sampling from the model could slow down training, but also one needs to employ several tricks to get a better estimate of the gradient of RL loss. Further, the reward is often sparse in a high-dimensional output space, which makes finding any reasonable predictions challenging, when RL loss is used to refine a randomly initialized model. Thus, smart model initialization is needed. By contrast, we initialize the models randomly and refine them using RML loss."
+	--
+	"This reads as another way to use a world model to mitigate the sample complexity of reinforcement learning (e.g., what if edit distance was just the initial model of the reward?)."
+	--
+	"Andrej Karpathy provided another perspective: We can also view the process of optimizing LRML as distilling the exponentiated payoff distribution q(y|y*;τ) into the model pθ(y|x). The objective reaches a maximum when these two distributions are equivalent. From this distillation view, the question is clear: how can we distill more complex objects into pθ? Concretely, this means we should develop more complex reward distributions q to use in this setup. We have seen two examples so far: the exponentiated payoff from the paper and the label smoothing example of the previous section. We could define q to be a complex pre-trained model or a mixture of experts, and use this training process to distill them into a single model pθ. We just need to make sure that we can efficiently sample from the q we select."
+	--
+	"Alec Radford mentioned that the data augmentation suggested in the paper sounds similar in spirit to virtual adversarial training, where the current model is encouraged to make robust predictions not only for the examples in the training set but also for inputs “nearby” those that exist in the training set. A high-level comparison:
+	  - Adversarial training can be seen as data-augmentation in the input space X. The RML objective does data-augmentation in the output space Y.
+	  - Adversarial training performs model-based data augmentation: the examples generated are those for which the current model is maximally vulnerable. RML training performs data-based augmentation: the examples generated have outputs that are “near” the ground-truth outputs. (Here 'near' is defined by the reward function.)"
+	-- http://youtube.com/watch?v=agA-rc71Uec (Samy Bengio)
+	-- http://drive.google.com/file/d/0B3Rdm_P3VbRDVUQ4SVBRYW82dU0 (Gauthier)
+	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/1609.00150
 
 Vinyals, Fortunato, Jaitly - "Pointer Networks" [http://arxiv.org/abs/1506.03134]
 	"We introduce a new neural architecture to learn the conditional probability of an output sequence with elements that are discrete tokens corresponding to positions in an input sequence. Such problems cannot be trivially addressed by existent approaches such as sequence-to-sequence and Neural Turing Machines, because the number of target classes in each step of the output depends on the length of the input, which is variable. Problems such as sorting variable sized sequences, and various combinatorial optimization problems belong to this class. Our model solves the problem of variable size output dictionaries using a recently proposed mechanism of neural attention. It differs from the previous attention attempts in that, instead of using attention to blend hidden units of an encoder to a context vector at each decoder step, it uses attention as a pointer to select a member of the input sequence as the output. We call this architecture a Pointer Net. We show Ptr-Nets can be used to learn approximate solutions to three challenging geometric problems - finding planar convex hulls, computing Delaunay triangulations, and the planar Travelling Salesman Problem - using training examples alone. Ptr-Nets not only improve over sequence-to-sequence with input attention, but also allow us to generalize to variable size output dictionaries. We show that the learnt models generalize beyond the maximum lengths they were trained on. We hope our results on these tasks will encourage a broader exploration of neural learning for discrete problems."
@@ -2002,6 +2033,7 @@ Bosc - "Learning to Learn Neural Networks" [http://www.thespermwhale.com/jasewes
 	"Meta-learning consists in learning learning algorithms. We use a Long Short Term Memory based network to learn to compute on-line updates of the parameters of another neural network. These parameters are stored in the cell state of the LSTM. Our framework allows to compare learned algorithms to hand-made algorithms within the traditional train and test methodology. In an experiment, we learn a learning algorithm for a one-hidden layer Multi-Layer Perceptron on non-linearly separable datasets. The learned algorithm is able to update parameters of both layers and generalise well on similar datasets."
 	"Meta-learning is the process of learning to fit parameters, that is, learning to learn. In this article, we focus on learning on-line learning algorithms: the data arrives sequentially and is shown only once. Thus, the meta-learning system is forced to update the parameters of the model after each observation."
 	"Hochreiter et al. show that it is possible to train a Recurrent Neural Network to learn the coefficients of quadratic functions under supervision using gradient descent. At each timestep, the RNN is given the inputs of the current timestep and the previous target. With a simple objective - correctly predicting the targets at each timestep - the RNN learns to improve its predictions with appropriate updates of its internal state. They use a LSTM with an additional hidden layer between the LSTM block and the output. In this work, we introduce a separator flag that split each sequence into a train and a test set. This enables us to compare learned algorithms to hand-made algorithms. In an experiment, a LSTM-based network is trained to learn a small one-hidden-layer MLP on a binary classification task. The weights of the MLP are stored in the LSTM memory state. We show that potentially complex and deep networks could be learned using this technique."
+	-- http://thespermwhale.com/jaseweston/ram/slides/session2/bosc-Learning%20to%20learn%20neural%20networks.pdf
 
 Santoro, Bartunov, Botvinick, Wierstra, Lillicrap - "One-shot Learning with Memory-Augmented Neural Networks" [http://arxiv.org/abs/1605.06065]
 	"Despite recent breakthroughs in the applications of deep neural networks, one setting that presents a persistent challenge is that of "one-shot learning." Traditional gradient-based networks require a lot of data to learn, often through extensive iterative training. When new data is encountered, the models must inefficiently relearn their parameters to adequately incorporate the new information without catastrophic interference. Architectures with augmented memory capacities, such as Neural Turing Machines, offer the ability to quickly encode and retrieve new information, and hence can potentially obviate the downsides of conventional models. Here, we demonstrate the ability of a memory-augmented neural network to rapidly assimilate new data, and leverage this data to make accurate predictions after only a few samples. We also introduce a new method for accessing an external memory that focuses on memory content, unlike previous methods that additionally use memory location-based focusing mechanisms."

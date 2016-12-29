@@ -1,7 +1,7 @@
-  Knowledge Representation is organizing information in a way that computer can use to solve complex tasks. 
-  Reasoning is algebraically manipulating previously acquired knowledge in order to answer a new question.
+Knowledge Representation is organizing information in a way that computer can use to solve complex tasks. 
+Reasoning is algebraically manipulating previously acquired knowledge in order to answer a new question.
 
-  How knowledge can be represented? How knowledge can be used? How knowledge can be acquired?
+How knowledge can be represented? How knowledge can be used? How knowledge can be acquired?
 
 
   * overview
@@ -647,16 +647,17 @@ selected papers and books -
    + approximate objects/relations/categories
    + built in-similarity function
    + generative function for relations/categories (no need to name everything)
+   + map objects (images, sentences, DNA sequences, commands, or combinations of these) to points in metric spaces (embeddings)
+   + combinatorial optimization problems becomes easier in metric spaces when casted as continuous optimization problems
+   + embeddings are efficient/flexible features and provide extra knowledge for many practical tasks
+   + embeddings can be decoded to produce structured outputs (parsing, sequential decision making, translation)
+   + distributed representations have exponential power and further gains arise from the use of layers (composition)
+   + embeddings can be learned with supervised or unsupervised training and can be learned for multiple tasks jointly
+   + scalable and parallelizable training with stochastic gradient descent using similarity ranking loss or log-likelihood loss
+   + more data and bigger the models, the more impressive the results
 
-   - map objects (images, sentences, DNA sequences, commands, or combinations of these) to points in metric spaces (embeddings)
-   - combinatorial optimization problems becomes easier in metric spaces when casted as continuous optimization problems
-   - embeddings are efficient/flexible features and provide extra knowledge for many practical tasks
-   - embeddings can be decoded to produce structured outputs (parsing, sequential decision making, translation)
-   - distributed representations have exponential power and further gains arise from the use of layers (composition)
-   - embeddings can be learned with supervised or unsupervised training and can be learned for multiple tasks jointly
-   - scalable and parallelizable training with stochastic gradient descent using similarity ranking loss or log-likelihood loss
-   - more data and bigger the models, the more impressive the results
-   - embeddings and logic? computational power? what are good encoders, decoders and transformers?
+   - fixed capacity: one has to choose a dimension before training and it determines the capacity of the representation, then one can't increase it as more data comes in without retraining the whole thing from the scratch
+   - partial lack of interpretability: distributed representations are black boxes - they may preserve some semantic relations as vector algebraic properties, but one can't generally easily extract arbitrary information from them without a specifically trained neural network
 
    * should words/sentences/entities/relations/facts be vectors or matrices, or tensors, or distributions over them?
    * better compression? improve memory capacity of embeddings and allow for one-shot learning of new symbols
@@ -1825,6 +1826,7 @@ Peng, Lu, Li, Wong - "Towards Neural Network-based Reasoning" [http://arxiv.org/
 	"We propose Neural Reasoner, a framework for neural network-based reasoning over natural language sentences. Given a question, Neural Reasoner can infer over multiple supporting facts and find an answer to the question in specific forms. Neural Reasoner has 1) a specific interaction-pooling mechanism, allowing it to examine multiple facts, and 2) a deep architecture, allowing it to model the complicated logical relations in reasoning tasks. Assuming no particular structure exists in the question and facts, Neural Reasoner is able to accommodate different types of reasoning and different forms of language expressions. Despite the model complexity, Neural Reasoner can still be trained effectively in an end-to-end manner. Our empirical studies show that Neural Reasoner can outperform existing neural reasoning systems with remarkable margins on two difficult artificial tasks (Positional Reasoning and Path Finding) proposed. For example, it improves the accuracy on Path Finding (10K) from 33.4% to over 98%."
 	"We have proposed Neural Reasoner, a framework for neural network-based reasoning over natural language sentences. Neural Reasoner is flexible, powerful, and language indepedent. Our empirical studies show that Neural Reasoner can dramatically improve upon existing neural reasoning systems on two difficult artificial tasks. For future work, we will explore 1) tasks with higher difficulty and reasoning depth, e.g., tasks which require a large number of supporting facts and facts with complex intrinsic structures, 2) the common structure in different but similar reasoning tasks (e.g., multiple tasks all with general questions), and 3) automatic selection of the reasoning architecture, for example, determining when to stop the reasoning based on the data."
 	-- (Weston) "similar to Memory Networks but with non-linear function to compute interaction between control state and memory slot"
+	-- http://thespermwhale.com/jaseweston/ram/slides/session2/neural-reason.pdf
 	-- https://www.evernote.com/shard/s189/sh/54f4534f-3813-44de-8feb-af7180eceb8e/953160fcc0f551cb9855d46cf686375b
 
 Hermann, Kocisky, Grefenstette, Espeholt, Kay, Suleyman, Blunsom - "Teaching Machines to Read and Comprehend" [http://arxiv.org/abs/1506.03340]

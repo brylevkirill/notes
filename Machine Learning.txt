@@ -599,6 +599,8 @@ Neural Abstract Machines & Program Induction workshop @ NIPS 2016 - https://uclm
 http://cacm.acm.org/magazines/2015/11/193326-inductive-programming-meets-the-real-world/fulltext
 http://homes.cs.washington.edu/~bornholt/post/synthesis-for-architects.html
 
+http://languagengine.co/blog/symbolic-machine-learning/
+
 Probabilistic Programming - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt
 
 selected papers - https://dropbox.com/sh/vrr1gs798zy02n1/AACj7hlXOiRt1nXltXVC-2Wca

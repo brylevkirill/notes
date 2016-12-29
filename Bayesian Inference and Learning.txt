@@ -328,7 +328,8 @@ challenges:
     - have both a causal and probabilistic semantics, and hence it is an ideal representation for combining prior knowledge (which often comes in causal form) and data
     - (like another bayesian statistical methods) offer an efficient and principled approach for avoiding the overfitting of data
 
-  https://theneural.wordpress.com/2011/07/17/undirected-models-are-better-at-sampling/ (Ilya Sutskever)
+
+  http://deeplearningbook.org/contents/graphical_models.html
 
 
   introduction by Dmitry Vetrov (in russian)
@@ -365,6 +366,9 @@ challenges:
 	http://research.microsoft.com/en-us/um/people/heckerman/tutorial.pdf
 
   advanced course by Michael Chertkov - https://youtube.com/watch?v=jGrgCd4U0sU&list=PLIvQImOQgbGaJrE8G-ZffKgPlj6k0dqbO
+
+
+  https://theneural.wordpress.com/2011/07/17/undirected-models-are-better-at-sampling/ (Ilya Sutskever)
 
 
 

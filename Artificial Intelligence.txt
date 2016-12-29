@@ -4,14 +4,11 @@ Intelligence is use of information to take decisions which save energy in pursui
   * overview
   * problems and approaches
   * benchmarks and competitions
-  * symbolic approach
-  * non-symbolic approach
   * frameworks
     - Reinforcement Learning
-    - Solomonoff Induction and AIXI
-    - Artificial Curiosity and Creativity
     - Meta-learning
-    - Algorithmic Composition
+    - Artificial Curiosity and Creativity
+    - Solomonoff Induction and AIXI
   * interesting papers
     - definitions and measures of intelligence
     - induction, prediction, intelligence
@@ -191,6 +188,12 @@ non-symbolic system:
   - algorithmic: "how" - the representations and algorithms
   - implementation ("brain emulation"): "medium" - the physical realisation
 
+"Aetherial Symbols" by Geoffrey Hinton - https://drive.google.com/file/d/0B8i61jl8OE3XdHRCSkV1VFNqTWc
+	"The fathers of AI believed that formal logic provided insight into how human reasoning must work. For implications to travel from one sentence to the next, there had to be rules of inference containing variables that got bound to symbols in the first sentence and carried the implications to the second sentence. I shall demonstrate that this belief is as incorrect as the belief that a lightwave can only travel through space by causing disturbances in the luminiferous aether. In both cases, scientists were misled by compelling but incorrect analogies to the only systems they knew that had the required properties. Arguments have little impact on such strongly held beliefs. What is needed is a demonstration that it is possible to propagate implications in some quite different way that does not involve rules of inference and has no resemblance to formal logic. Recent results in machine translation using recurrent neural networks show that the meaning of a sentence can be captured by a "thought vector" which is simply the hidden state vector of a recurrent net that has read the sentence one word at a time. In future, it will be possible to predict thought vectors from the sequence of previous thought vectors and this will capture natural human reasoning. With sufficient effort, it may even be possible to train such a system to ignore nearly all of the contents of its thoughts and to make predictions based purely on those features of the thoughts that capture the logical form of the sentences used to express them."
+	"Most people fall for the traditional AI fallacy that thought in the brain must somehow resemble lisp expressions. You can tell someone what thought you are having by producing a string of words that would normally give rise to that thought but this doesn't mean the thought is a string of symbols in some unambiguous internal language. The new recurrent network translation models make it clear that you can get a very long way by treating a thought as a big state vector."
+	"Traditional AI researchers will be horrified by the view that thoughts are merely the hidden states of a recurrent net and even more horrified by the idea that reasoning is just sequences of such state vectors. That's why I think its currently very important to get our critics to state, in a clearly decideable way, what it is they think these nets won't be able to learn to do. Otherwise each advance of neural networks will be met by a new reason for why that advance does not really count. So far, I have got both Garry Marcus and Hector Levesque to agree that they will be impressed if neural nets can correctly answer questions about "Winograd" sentences such as "The city councilmen refused to give the demonstrators a licence because they feared violence." Who feared the violence?"
+	"Most of our reasoning is by analogy; it's not logical reasoning. The early AI guys thought we had to use logic as a model and so they couldn't cope with reasoning by analogy. The honest ones, like Allen Newell, realized that reasoning by analogy was a huge problem for them, but they weren't willing to say that reasoning by analogy is the core kind of reasoning we do, and logic is just a sort of superficial thing on top of it that happens much later."
+
 
 knowledge:
   "Knowledge is in our minds and language is just orienting us within our common experiences."
@@ -367,54 +370,6 @@ research problems:
 
 
 
-[symbolic approach]
-
-https://en.wikipedia.org/wiki/Physical_symbol_system :
-	"Physical symbol system takes physical patterns (symbols), combining them into structures (expressions) and manipulating them (using processes) to produce new expressions."
-
-https://en.wikipedia.org/wiki/Symbol_grounding_problem
-
-
-Nils Nilsson - "The Physical Symbol System Hypothesis: Status and Prospects" - http://ai.stanford.edu/~nilsson/OnlinePubs-Nils/PublishedPapers/pssh.pdf
-	"I analyze some of the attacks against the Physical Symbol System Hypothesis - attacks based on the presumed need for symbol-grounding and non-symbolic processing for intelligent behavior and on the supposed non-computational and “mindless” aspects of brains."
-
-Rodney Brooks - "Elephants Don't Play Chess" - http://people.csail.mit.edu/brooks/papers/elephants.ps.Z
-
-
-Oren Etzioni on future directions for AI development beyond machine learning - http://videolectures.net/kdd2014_etzioni_data_mining/
-    classification and prediction are limited - structured prediction and multi-task learning are steps forward
-    AI needs a process that's constructive, multi-layered, knowledge-intensive
-    world knowledge is necessary for elementary understanding
-
-    data -> knowledge -> theories -> reasoning -> explanation
-
-    1. knowledge + tractable reasoning is necessary
-    2. knowledge acquisition has to be highly automated
-    3. large bodies of high-quality knowledge can be acquired from text, images and more
-
-Oren Etzioni - "Paradigm Shift in AI" - http://courses.cs.washington.edu/courses/cse590a/07au/future_of_AI.ppt
-
-
-
-
-[non-symbolic approach]
-
-https://en.wikipedia.org/wiki/Connectionism
-
-Geoffrey Hinton - "Aetherial Symbols" - https://drive.google.com/file/d/0B8i61jl8OE3XdHRCSkV1VFNqTWc
-
-	"The fathers of AI believed that formal logic provided insight into how human reasoning must work.  For implications to travel from one sentence to the next, there had to be rules of inference containing variables that got bound to symbols in the first sentence and carried the implications to the second sentence.  I shall demonstrate that this belief is as incorrect as the belief that a lightwave can only travel through space by causing disturbances in the luminiferous aether.   In both cases, scientists were misled by compelling but incorrect analogies to the only systems they knew that had the required properties. Arguments have little impact on such strongly held beliefs.  What is needed is a demonstration that it is possible to propagate implications in some quite different way that does not involve rules of inference and has no resemblance to formal logic. Recent results in machine translation using recurrent neural networks show that the meaning of a sentence can be captured by a "thought vector" which is simply the hidden state vector of a recurrent net that has read the sentence one word at a time.  In future, it will be possible to predict thought vectors from the sequence of previous thought vectors and this will capture natural human reasoning.  With sufficient effort, it may even be possible to train such a system to ignore nearly all of the contents of its thoughts and  to make predictions based purely on those features of the thoughts that capture the logical form of the sentences used to express them."
-	"Most people fall for the traditional AI fallacy that thought in the brain must somehow resemble lisp expressions. You can tell someone what thought you are having by producing a string of words that would normally give rise to that thought but this doesn't mean the thought is a string of symbols in some unambiguous internal language. The new recurrent network translation models make it clear that you can get a very long way by treating a thought as a big state vector."
-	"Traditional AI researchers will be horrified by the view that thoughts are merely the hidden states of a recurrent net and even more horrified by the idea that reasoning is just sequences of such state vectors. That's why I think its currently very important to get our critics to state, in a clearly decideable way, what it is they think these nets won't be able to learn to do. Otherwise each advance of neural networks will be met by a new reason for why that advance does not really count. So far, I have got both Garry Marcus and Hector Levesque to agree that they will be impressed if neural nets can correctly answer questions about "Winograd" sentences such as "The city councilmen refused to give the demonstrators a licence because they feared violence." Who feared the violence?"
-	"Most of our reasoning is by analogy; it's not logical reasoning. The early AI guys thought we had to use logic as a model and so they couldn't cope with reasoning by analogy. The honest ones, like Allen Newell, realized that reasoning by analogy was a huge problem for them, but they weren't willing to say that reasoning by analogy is the core kind of reasoning we do, and logic is just a sort of superficial thing on top of it that happens much later."
-
-Geoffrey Hinton - "Distributed Representations" - http://psych.stanford.edu/~jlm/papers/PDP/Chapter3.pdf
-
-Gary Marcus - "Towards a Neural Ontology" - https://drive.google.com/file/d/0B_hicYJxvbiONGRDWlB0b2RlZ1k/view
-
-
-
-
 [frameworks]
 
  * Reinforcement Learning
@@ -426,6 +381,82 @@ Gary Marcus - "Towards a Neural Ontology" - https://drive.google.com/file/d/0B_h
 		"The Dogma of Sparsity" - http://blog.shakirm.com/2016/04/learning-in-brains-and-machines-2/
 		"Synergistic and Modular Action" - http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/
 		"Episodic and Interactive Memory" - http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-4-episodic-and-interactive-memory/
+
+
+
+ * Meta-learning
+
+	(Juergen Schmidhuber) "Current commercial AI algorithms are still missing something fundamental. They are no self-referential general purpose learning algorithms. They improve some system’s performance in a given limited domain, but they are unable to inspect and improve their own learning algorithm. They do not learn the way they learn, and the way they learn the way they learn, and so on (limited only by the fundamental limits of computability)."
+
+	http://people.idsia.ch/~juergen/metalearner.html
+	http://scholarpedia.org/article/Metalearning
+
+	"Learning to Learn, to Program, to Explore and to Seek Knowledge" by Nando de Freitas - https://youtube.com/watch?v=tPWGGwmgwG0
+
+
+	applications
+		"Learning to Learn Neural Networks" by Bosc - http://www.thespermwhale.com/jaseweston/ram/papers/paper_16.pdf
+
+		"One-shot Learning with Memory-Augmented Neural Networks" by Santoro et al. - http://arxiv.org/abs/1605.06065 + http://shortscience.org/paper?bibtexKey=journals/corr/1605.06065 (Larochelle) + http://techtalks.tv/talks/meta-learning-with-memory-augmented-neural-networks/62523/ + https://vk.com/wall-44016343_8782
+
+		"Learning to Learn by Gradient Descent by Gradient Descent" by Andrychowicz et al. - http://arxiv.org/abs/1606.04474 + https://youtu.be/tPWGGwmgwG0?t=10m50s (de Freitas) + https://youtu.be/x1kf4Zojtb0?t=1h4m53s (de Freitas)
+
+		"RL2: Fast Reinforcement Learning via Slow Reinforcement Learning" by Duan et al. - http://arxiv.org/abs/1611.02779
+
+		"Learning to Reinforcement Learn" by Wang et al. - http://arxiv.org/abs/1611.05763
+
+
+	constructionist vs constructivist approaches
+		constructionist approach: AI system built by hand; learning is restricted to combining predefined situations and tasks, based on detailed specifications provided by a human programmer. While the system may automatically improve performance in some limited domain, the domain itself is decided and defined by the programmer.
+
+		constructivist approach: Self-constructive AI system with general knowledge acquisition and integration skills. Systems capable of architectural self-modification and self-directed growth; develop from a seed specification; capable of learning to perceive, think and act in a wide range of novel situations and domains and learning to perform a number of different tasks.
+
+		Kris Thorisson on constructivist vs constructionist approaches - http://intelligence.org/2014/09/14/kris-thorisson/
+		"A New Kind of AI" by Kris Thorisson - http://youtube.com/watch?v=hQ20pwUkeak
+
+
+	Goedel Machine
+		https://en.wikipedia.org/wiki/G%C3%B6del_machine
+
+		http://people.idsia.ch/~juergen/goedelmachine.html
+		compared to AIXI - http://people.idsia.ch/~juergen/gmweb2/node21.html
+
+		"Towards An Actual Goedel Machine Implementation: A Lesson in Self-Reflective Systems" by Steunebrink and Schmidhuber - http://people.idsia.ch/~juergen/selfreflection.pdf
+
+		(Juergen Schmidhuber)
+		"Self-improving universal methods have also been defined, including some that justify self-changes (including changes of the learning algorithm) through empirical evidence in a lifelong learning context and the Goedel Machine that self-improves via proving theorems about itself, and can improve any part of its software (including the learning algorithm itself) in a way that is provably time-optimal in a sense that takes constant overheads into account and goes beyond asymptotic optimality. At each step of the way, the Goedel Machine takes the action that it can prove, according to its axiom system and its perceptual data, will be the best way to achieve its goals. The current versions of the Goedel Machine are not computationally tractable in complex environments, however."
+		"Goedel machines are limited by the basic limits of math and computation identified by the founder of modern theoretical computer science himself, Kurt Goedel: some theorems are true but cannot be proven by any computational theorem proving procedure (unless the axiomatic system itself is flawed). That is, in some situations the GM may never find a proof of the benefits of some change to its own code."
+		"It’s currently not sufficiently formalized, so it’s difficult to state if and how it really works. Searching for proofs is extremely complicated: Making a parallel with Levin search, where given a goal output string (an improvement in the Goedel Machine), you enumerate programs (propositions in the GM) and run them to see if they output the goal string (search for a proof of improvement in GM). This last part is the problem: in LS, the programs are fast to run, whereas in GM there is an additional search step for each proposition, so this looks very roughly like going from exponential (LS) to double-exponential (GM). And LS is already not really practical. Theorem proving is even more complicated when you need to prove that there will be an improvement of the system at an unknown future step. Maybe it would work better if the kinds of proofs were limited to some class, for example use simulation of the future steps up to some horizon given a model of the world. These kinds of proofs are easier to check and have a guaranteed termination, e.g. if the model class for the environment is based on Schmidhuber’s Speed Prior. But this starts to look pretty much like an approximation of AIXI."
+		"We looked into existing proof verification systems. Some of them may turn out to be useful for limited AI applications. Unfortunately, however, off-the-shelf verifiers make implicit assumptions that are broken in self-referential proof-based Goedel Machines. They assume that (1) the thing being reasoned about is static (not an active and running program) and (2) the thing being reasoned about does not contain the reasoner itself."
+		"MC-AIXI is a probabilistic approximation of AIXI. What might be the equivalent for the self-referential proof searcher of a GM? One possibility comes to mind: Holographic proofs, where errors in the derivation of a theorem are 'apparent after checking just a negligible fraction of bits of the proof' - check out Leonid Levin’s exposé thereof: http://www.cs.bu.edu/fac/lnd/expo/holo.htm"
+		"A Goedel Machine may indeed change its utility function and target theorem, but not in some arbitrary way. It can do so only if the change is provably useful according to its initial utility function. E.g., it may be useful to replace some complex-looking utility function by an equivalent simpler one. In certain environments, a Goedel Machine may even prove the usefulness of deleting its own proof searcher, and stop proving utility-related theorems, e.g., when the expected computational costs of proof search exceed the expected reward."
+
+
+
+ * Artificial Curiosity and Creativity
+
+	"Which experiments should a robot’s RL controller, C, conduct to generate data that quickly improves its adaptive, predictive world model, M, which in turn can help to plan ahead? The theory says: use the learning progress of M (typically compression progress and speed-ups) as the intrinsic reward or fun for C. This motivates C to create action sequences (experiments) such that M can quickly discover new, previously unknown regularities. For example, a video of 20 falling apples can be greatly compressed after the discovery of the law of gravity, through predictive coding. This discovery is fun, and motivates the history-shaping C. I think this principle will be essential for future artificial scientists and artists."
+
+	http://idsia.ch/~juergen/creativity.html
+
+	https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber
+	https://vimeo.com/28759091
+	http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/
+	https://vimeo.com/7441291
+
+	"Artificial scientists and artists based on the formal theory of creativity" by Juergen Schmidhuber - http://people.idsia.ch/~juergen/agi10.pdf
+	"Driven by compression progress: A simple principle explains essential aspects of subjective beauty, novelty, surprise, interestingness, attention, curiosity, creativity, art, science, music, jokes" by Juergen Schmidhuber - http://arxiv.org/abs/0812.4360
+
+	"VIME: Variational Information Maximizing Exploration" by Houthooft, Chen, Duan, Schulman, Turck, Abbeel (practical approximation) - http://arxiv.org/abs/1605.09674 + https://youtube.com/watch?v=sRIjxxjVrnY (Panin)
+	"r'(st,at,st+1) = r(st,at) + μ * Dkl[p(θ|ξt,at,st+1)||p(θ|ξt)]"
+
+	"Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids" - http://goo.gl/FKNPth
+	"PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem" - http://goo.gl/M5uqF4
+	"Continually Adding Self-Invented Problems to the Repertoire: First Experiments with PowerPlay" - http://goo.gl/lTYm6o
+
+	"Toward Intelligent Humanoids" (application to iCub robot) - https://vimeo.com/51011081 (demo)
+
+	"On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models" by Juergen Schmidhuber - http://arxiv.org/abs/1511.09249
 
 
 
@@ -520,82 +551,6 @@ Gary Marcus - "Towards a Neural Ontology" - https://drive.google.com/file/d/0B_h
 		Formal Theory of Fun and Creativity
 			(Juergen Schmidhuber) "Generally speaking, when it comes to Reinforcement Learning, it is indeed a good idea to train a recurrent neural network called M to become a predictive model of the world, and use M to train a separate controller network C which is supposed to generate reward-maximising action sequences. Marcus Hutter’s mathematically optimal universal AIXI also has a predictive world model M, and a controller C that uses M to maximise expected reward. Ignoring limited storage size, RNNs are general computers just like your laptop. That is, AIXI’s M is related to the RNN-based M above in the sense that both consider a very general space of predictive programs. AIXI’s M, however, really looks at all those programs simultaneously, while the RNN-based M uses a limited local search method such as gradient descent in program space (also known as backprop through time) to find a single reasonable predictive program (an RNN weight matrix). AIXI’s C always picks the action that starts the action sequence that yields maximal predicted reward, given the current M, which in a Bayes-optimal way reflects all the observations so far. The RNN-based C, however, uses a local search method (backprop through time) to optimise its program or weight matrix, using gradients derived from M. So in a way, my old RNN-based CM system of 1990 may be viewed as a limited, downscaled, sub-optimal, but at least computationally feasible approximation of AIXI."
 			Juergen Schmidhuber - "On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models" - http://arxiv.org/abs/1511.09249
-
-
-
- * Goedel Machine
-
-	http://people.idsia.ch/~juergen/goedelmachine.html
-	compared to AIXI - http://people.idsia.ch/~juergen/gmweb2/node21.html
-
-	"Towards An Actual Goedel Machine Implementation: A Lesson in Self-Reflective Systems" by Steunebrink and Schmidhuber - http://people.idsia.ch/~juergen/selfreflection.pdf
-
-	(Juergen Schmidhuber)
-	"Self-improving universal methods have also been defined, including some that justify self-changes (including changes of the learning algorithm) through empirical evidence in a lifelong learning context and the Goedel Machine that self-improves via proving theorems about itself, and can improve any part of its software (including the learning algorithm itself) in a way that is provably time-optimal in a sense that takes constant overheads into account and goes beyond asymptotic optimality. At each step of the way, the Goedel Machine takes the action that it can prove, according to its axiom system and its perceptual data, will be the best way to achieve its goals. The current versions of the Goedel Machine are not computationally tractable in complex environments, however."
-	"Goedel machines are limited by the basic limits of math and computation identified by the founder of modern theoretical computer science himself, Kurt Goedel: some theorems are true but cannot be proven by any computational theorem proving procedure (unless the axiomatic system itself is flawed). That is, in some situations the GM may never find a proof of the benefits of some change to its own code."
-	"It’s currently not sufficiently formalized, so it’s difficult to state if and how it really works. Searching for proofs is extremely complicated: Making a parallel with Levin search, where given a goal output string (an improvement in the Goedel Machine), you enumerate programs (propositions in the GM) and run them to see if they output the goal string (search for a proof of improvement in GM). This last part is the problem: in LS, the programs are fast to run, whereas in GM there is an additional search step for each proposition, so this looks very roughly like going from exponential (LS) to double-exponential (GM). And LS is already not really practical. Theorem proving is even more complicated when you need to prove that there will be an improvement of the system at an unknown future step. Maybe it would work better if the kinds of proofs were limited to some class, for example use simulation of the future steps up to some horizon given a model of the world. These kinds of proofs are easier to check and have a guaranteed termination, e.g. if the model class for the environment is based on Schmidhuber’s Speed Prior. But this starts to look pretty much like an approximation of AIXI."
-	"We looked into existing proof verification systems. Some of them may turn out to be useful for limited AI applications. Unfortunately, however, off-the-shelf verifiers make implicit assumptions that are broken in self-referential proof-based Goedel Machines. They assume that (1) the thing being reasoned about is static (not an active and running program) and (2) the thing being reasoned about does not contain the reasoner itself."
-	"MC-AIXI is a probabilistic approximation of AIXI. What might be the equivalent for the self-referential proof searcher of a GM? One possibility comes to mind: Holographic proofs, where errors in the derivation of a theorem are 'apparent after checking just a negligible fraction of bits of the proof' - check out Leonid Levin’s exposé thereof: http://www.cs.bu.edu/fac/lnd/expo/holo.htm"
-	"A Goedel Machine may indeed change its utility function and target theorem, but not in some arbitrary way. It can do so only if the change is provably useful according to its initial utility function. E.g., it may be useful to replace some complex-looking utility function by an equivalent simpler one. In certain environments, a Goedel Machine may even prove the usefulness of deleting its own proof searcher, and stop proving utility-related theorems, e.g., when the expected computational costs of proof search exceed the expected reward."
-
-
-
- * Artificial Curiosity and Creativity
-
-	"Which experiments should a robot’s RL controller, C, conduct to generate data that quickly improves its adaptive, predictive world model, M, which in turn can help to plan ahead? The theory says: use the learning progress of M (typically compression progress and speed-ups) as the intrinsic reward or fun for C. This motivates C to create action sequences (experiments) such that M can quickly discover new, previously unknown regularities. For example, a video of 20 falling apples can be greatly compressed after the discovery of the law of gravity, through predictive coding. This discovery is fun, and motivates the history-shaping C. I think this principle will be essential for future artificial scientists and artists."
-
-	http://idsia.ch/~juergen/creativity.html
-
-	https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber
-	https://vimeo.com/28759091
-	http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/
-	https://vimeo.com/7441291
-
-	"Artificial scientists and artists based on the formal theory of creativity" by Juergen Schmidhuber - http://people.idsia.ch/~juergen/agi10.pdf
-	"Driven by compression progress: A simple principle explains essential aspects of subjective beauty, novelty, surprise, interestingness, attention, curiosity, creativity, art, science, music, jokes" by Juergen Schmidhuber - http://arxiv.org/abs/0812.4360
-
-	"VIME: Variational Information Maximizing Exploration" by Houthooft, Chen, Duan, Schulman, Turck, Abbeel (practical approximation) - http://arxiv.org/abs/1605.09674 + https://youtube.com/watch?v=sRIjxxjVrnY (Panin)
-	"r'(st,at,st+1) = r(st,at) + μ * Dkl[p(θ|ξt,at,st+1)||p(θ|ξt)]"
-
-	"Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids" - http://goo.gl/FKNPth
-	"PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem" - http://goo.gl/M5uqF4
-	"Continually Adding Self-Invented Problems to the Repertoire: First Experiments with PowerPlay" - http://goo.gl/lTYm6o
-
-	"Toward Intelligent Humanoids" (application to iCub robot) - https://vimeo.com/51011081 (demo)
-
-	"On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models" by Juergen Schmidhuber - http://arxiv.org/abs/1511.09249
-
-
-
- * Meta-learning
-
-	(Juergen Schmidhuber) "Current commercial AI algorithms are still missing something fundamental. They are no self-referential general purpose learning algorithms. They improve some system’s performance in a given limited domain, but they are unable to inspect and improve their own learning algorithm. They do not learn the way they learn, and the way they learn the way they learn, and so on (limited only by the fundamental limits of computability)."
-
-	http://people.idsia.ch/~juergen/metalearner.html
-	http://scholarpedia.org/article/Metalearning
-
-	"Learning To Learn Using Gradient Desent" by Hochreiter, Younger, Conwell - http://www.bioinf.jku.at/publications/older/1504.pdf
-	(Juergen Schmidhuber)
-		"Self-referential RNNs with special output units for addressing and rapidly manipulating each of the RNN's own weights in differentiable fashion."
-		"This indicates that one can use gradient descent to metalearn learning algorithms that outperform gradient descent."
-		"Author trained LSTM networks with roughly 5000 weights to METALEARN fast online learning algorithms for nontrivial classes of functions, such as all quadratic functions of two variables. LSTM is necessary because metalearning typically involves huge time lags between important events, and standard RNNs cannot deal with these. After a month of metalearning on a slow PC of 15 years ago, all weights are frozen, then the frozen net is used as follows: some new function f is selected, then a sequence of random training exemplars of the form ...data/target/data/target/data... is fed into the INPUT units, one sequence element at a time. After about 30 exemplars the frozen recurrent net correctly predicts target inputs before it sees them. No weight changes! How is this possible? After metalearning the frozen net implements a sequential learning algorithm which apparently computes something like error signals from data inputs and target inputs and translates them into changes of internal estimates of f. Parameters of f, errors, temporary variables, counters, computations of f and of parameter updates are all somehow represented in form of circulating activations. Remarkably, the new - and quite opaque - online learning algorithm running on the frozen network is much faster than standard backprop with optimal learning rate. This indicates that one can use gradient descent to metalearn learning algorithms that outperform gradient descent. Furthermore, the metalearning procedure automatically avoids overfitting in a principled way, since it punishes overfitting online learners just like it punishes slow ones, simply because overfitters and slow learners cause more cumulative errors during metalearning."
-
-	"Learning to Learn Neural Networks" by Bosc - http://www.thespermwhale.com/jaseweston/ram/papers/paper_16.pdf
-
-	"One-shot Learning with Memory-Augmented Neural Networks" by Santoro, Bartunov, Botvinick, Wierstra, Lillicrap - http://arxiv.org/abs/1605.06065 + http://shortscience.org/paper?bibtexKey=journals/corr/1605.06065 (Larochelle) + http://techtalks.tv/talks/meta-learning-with-memory-augmented-neural-networks/62523/ + https://vk.com/wall-44016343_8782
-
-
-
- * Algorithmic Composition
-
-	Marvin Minsky - http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-868j-the-society-of-mind-fall-2011/
-
-	Kris Thorisson on constructivist vs constructionist approaches - http://intelligence.org/2014/09/14/kris-thorisson/
-	Kristinn Thorisson - "A New Kind of AI" - http://youtube.com/watch?v=hQ20pwUkeak
-
-	constructionist approach: Artificially intelligent manmade system built by hand; learning is restricted to combining predefined situations and tasks, based on detailed specifications provided by a human programmer. While the system may automatically improve performance in some limited domain, the domain itself is decided and defined by the programmer.
-
-	constructivist approach: Self-constructive artificial intelligence system with general knowledge acquisition and integration skills. Systems capable of architectural self-modification and self-directed growth; develop from a seed specification; capable of learning to perceive, think and act in a wide range of novel situations and domains and learning to perform a number of different tasks.
 
 
 

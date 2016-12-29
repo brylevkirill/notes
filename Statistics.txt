@@ -167,10 +167,16 @@ Bayes factors:
 (Claudia Perlich) https://quora.com/What-are-the-greatest-inefficiencies-data-scientists-face-today : "First of, let me state what I think is NOT the the problem: the fact that data scientists spend 80% of their time with data preparation. That is their JOB! If you are not good at data preparation, you are NOT a good data scientists. It is not a janitor problem as Steve Lohr provoked. The validity of any analysis is resting almost completely on the preparation. The algorithm you end up using is close to irrelevant.Complaining about data preparation is the same as being a farmer and complaining about having to do anything but harvesting and please have somebody else deal with the pesky watering, fertilizing, weeding, etc."
 
 (Andrew Gelman) "In reality, null hypotheses are nearly always false. Is drug A identically effective as drug B? Certainly not. You know before doing an experiment that there must be some difference that would show up given enough data."
+
 (Jim Berger) "A small p-value means the data were unlikely under the null hypothesis. Maybe the data were just as unlikely under the alternative hypothesis. Comparisons of hypotheses should be conditional on the data.
+
 (Stephen Ziliak, Deirdra McCloskey) "Statistical significance is not the same as scientific significance. The most important question for science is the size of an effect, not whether the effect exists."
+
 (William Gosset) "Statistical error is only one component of real error, maybe a small component. When you actually conduct multiple experiments rather than speculate about hypothetical experiments, the variability of your data goes up."
+
 (John Ioannidis) "Small p-values do not mean small probability of being wrong. In one review, 74% of studies with p-value 0.05 were found to be wrong."
+
+() "Empirical model comparisons based on real data compare (model1, estimator1, algorithm1) with (model2, estimator2, algorithm2). Saying my observations, xᵢ, are IID draws from a Bernoulli(p) random variable is a model for my data. Using the sample mean, p̂ = mean(xᵢ), to estimate the value of p is an estimator for that model. Computing the sample mean as sum(x)/length(x) is an algorithm if you assume sum and length are primitives. The distinctions matter because you always fit models to data using a triple of (model, estimator, algorithm)."
 
 
 

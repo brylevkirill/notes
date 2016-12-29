@@ -108,8 +108,7 @@ relations with other fields - https://goo.gl/XlgPJu
 	* Integrating Learning and Planning
 	* Exploration and Exploitation
 
-  course by Michael Littman -
-	https://udacity.com/course/machine-learning-reinforcement-learning--ud820
+  course by Michael Littman
 	https://udacity.com/course/reinforcement-learning--ud600
 
   course notes by Dustin Tran - http://dustintran.com/notes/cs282r.pdf
@@ -357,8 +356,6 @@ relations with other fields - https://goo.gl/XlgPJu
 
   "Brief Review of Deep Reinforcement Learning" by Junlong Liu - https://plus.google.com/photos/103321132484611285919/albums/6164519479726594273
 
-  http://nervanasys.com/demystifying-deep-reinforcement-learning/
-
   Deep Reinforcement Learning tutorial from OpenAI - https://gym.openai.com/docs/rl
 
 
@@ -375,6 +372,8 @@ relations with other fields - https://goo.gl/XlgPJu
 	https://youtube.com/watch?v=gb5Q2XL5c8A
 	http://goo.gl/5wsgbJ
 	http://rll.berkeley.edu/deeprlcourse/
+
+  "The Nuts and Bolts of Deep RL Research" by John Schulman - http://rll.berkeley.edu/deeprlcourse/docs/nuts-and-bolts.pdf
 
 
   Deep Reinforcement Learning workshop by @ NIPS 2015 - https://gridworld.wordpress.com/2015/12/13/nips-2015-deep-rl-workshop/
@@ -460,10 +459,10 @@ relations with other fields - https://goo.gl/XlgPJu
   "Benchmarking Deep Reinforcement Learning for Continuous Control" by Duan, Chen, Houthooft, Schulman, Abbeel - http://arxiv.org/abs/1604.06778 + http://techtalks.tv/talks/benchmarking-deep-reinforcement-learning-for-continuous-control/62380/
 
 
-  * Deep Q-Network methods
+  * value-based methods (Deep Q-Network)
 
 	  http://videolectures.net/rldm2015_silver_reinforcement_learning/ (David Silver)
-	  https://youtu.be/qLaDWKd61Ig?t=9m16s (David Silver)
+	  http://youtu.be/qLaDWKd61Ig?t=9m16s (David Silver)
 	  http://youtube.com/watch?v=dV80NAlEins (Nando de Freitas)
 	  http://youtube.com/watch?v=HUmEbUkeQHg (Nando de Freitas)
 	  http://youtube.com/watch?v=mrgJ53TIcQc (Mikhail Pavlov, in russian)
@@ -565,9 +564,16 @@ relations with other fields - https://goo.gl/XlgPJu
 		"Further applications of the techniques we describe, which are merely given by way of example, include: robot control (such as bipedal or quadrupedal walking or running, navigation, grasping, and other control skills); vehicle control (autonomous vehicle control, steering control, airborne vehicle control such as helicopter or plane control, autonomous mobile robot control); machine control; control of wired or wireless communication systems; control of laboratory or industrial equipment; control of real or virtual resources (such as memory management, inventory management and the like); drug discovery (where the controlled action is, say, the definition of DNA sequence of a drug and the states are defined by states of a living entity to which the drug is applied); application to a system in which the state of or output from the system is defined by words (text and/or audio and/or image), such as a system employing natural language; application to a trading system such as a stock market (although the actions taken may have little effect on such a system, very small effects can be sufficient to achieve useful overall rewards); and others."
 
 
-  * Policy Gradient methods
+  * policy-based methods
 
 	http://karpathy.github.io/2016/05/31/rl/
+
+
+	Cross Entropy Method (no gradient estimation)
+		"If your policy has a small number of parameters (say 20), and sometimes even if it has a moderate number (say 2000), you might be better off using the Cross-Entropy Method than any of the fancy methods. It works like this: (1) Sample n sets of parameters from some prior that allows for closed-form updating, e.g. a multivariate Gaussian. (2) For each parameter set, compute a noisy score by running your policy on the environment you care about. (3) Take the top 20% percentile (say) of sampled parameter sets. Fit a Gaussian distribution to this set, then go to (1) and repeat using this as the new prior."
+
+		http://aaai.org/Papers/ICML/2003/ICML03-068.pdf
+
 
 	"Most people prefer to use Policy Gradients, including the authors of the original DQN paper who have shown Policy Gradients to work better than Q Learning when tuned well. PG is preferred because it is end-to-end: there’s an explicit policy and a principled approach that directly optimizes the expected reward."
 
@@ -581,8 +587,10 @@ relations with other fields - https://goo.gl/XlgPJu
 		we have a gradient estimate, no objective for line search
 		statistics of data (observations and rewards) change during learning
 
+	"For both RL and variational inference, there are two widely known ways of optimizing a policy (or variational distribution) based on sampled sequences of actions and outcomes: There’s (a) the likelihood-ratio estimator, which updates the policy such that action sequences that lead to higher scores happen more often and that doesn’t need gradients, and (b) the pathwise estimator, which adjusts individual actions such that the policy results in a higher score and that needs gradients. While pathwise methods may be more sample-efficient, they work less generally due to high bias and don’t scale up as well to very high-dimensional problems."
 
-	REINFORCE / Likelihood Ratio Policy Gradient
+
+	REINFORCE / Likelihood Ratio Policy Gradient (likelihood-ratio estimation)
 		https://theneural.wordpress.com/2011/09/13/the-useless-beauty-of-reinforce/ (Ilya Sutskever)
 		https://youtube.com/watch?v=oPGVsoBonLM + https://youtube.com/watch?v=rO7Dx8pSJQw + http://goo.gl/5wsgbJ (John Schulman)
 		http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/ (Pieter Abbeel, 0:16:40)
@@ -630,7 +638,7 @@ relations with other fields - https://goo.gl/XlgPJu
 	Trust Region Policy Optimization (improvement on Likelihood Ratio Policy Gradient)
 		second order policy gradient algorithm that is highly effective on both continuous and discrete control problems
 
-		"The core idea is to avoid parameter updates that change your policy too much, as enforced by a constraint on the KL divergence between the distributions predicted by the old and the new policy on a batch of data (instead of conjugate gradients the simplest instantiation of this idea could be implemented by doing a line search and checking the KL along the way)."
+		"As you iteratively improve your policy, it’s important to avoid parameter updates that change your policy too much, as enforced by constraining the KL divergence between the distributions predicted by the old and the new policy on a batch of data to be less than some constant δ. This δ (in the unit of nats) is better than a fixed step size, since the meaning of the step size changes depending on what the rewards and problem structure look like at different points in training. This is called Trust Region Policy Optimization (or, in a first-order variant, Proximal Policy Optimization) and it matters more as we do more experience replay. Instead of conjugate gradients the simplest instantiation of this idea could be implemented by doing a line search and checking the KL along the way."
 
 		https://arxiv.org/abs/1502.05477
 
@@ -703,7 +711,7 @@ relations with other fields - https://goo.gl/XlgPJu
 			 - https://github.com/danijar/mindpark/blob/master/mindpark/algorithm/a3c.py
 
 
-	Path Derivative Policy Gradient
+	Path Derivative Policy Gradient (pathwise estimation)
 		http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/ (Abbeel, 01:02:04)
 
 		"Gradient Estimation Using Stochastic Computation Graphs" by Schulman, Heess, Weber, Abbeel - http://arxiv.org/abs/1506.05254
@@ -758,6 +766,8 @@ relations with other fields - https://goo.gl/XlgPJu
 		"Trains a policy for accomplishing a given task by guiding the learning with multiple guiding distributions.
 		Relies on learning an underlying dynamical model of the environment and then, at each iteration of the algorithm, using that model to gradually improve the policy."
 
+		"Suppose you want to train a neural net policy that can solve a fairly broad class of problems. Here’s one approach: (1) Sample 10 instances of the problem, and solve each of the instances using a problem-specific method, e.g. a method that fits and uses an instance-specific model. (2) Train the neural net to agree with all of the per-instance solutions. But if you’re going to do that, you might do even better by constraining the specific solutions and what the neural net policy would do to be close to each other from the start, fitting both simultaneously."
+
 		http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/ (Abbeel, part 2)
 		http://youtube.com/watch?v=EtMyH_--vnU (Levine)
 		https://video.seas.harvard.edu/media/ME+Sergey+Levine+2015+-04-01/1_gqqp9r3o/23375211 (Levine)
@@ -775,7 +785,7 @@ relations with other fields - https://goo.gl/XlgPJu
 		 - https://github.com/nivwusquorum/guided-policy-search/
 
 
-  * Model-based methods
+  * model-based methods
 
 	planning (lookahead search for optimal actions) using transition model of environment p(r,s0|s,a)
 
@@ -1024,6 +1034,33 @@ Microsoft Research - "A Multiworld Testing Decision Service" [http://arxiv.org/a
 	-- http://hunch.net/?p=4464948
 	-- http://research.microsoft.com/en-us/projects/mwt/
 	-- https://mwtds.azurewebsites.net
+
+Ranzato, Chopra, Auli, Zaremba - "Sequence Level Training with Recurrent Neural Networks" [http://arxiv.org/abs/1511.06732]
+	"Many natural language processing applications use language models to generate text. These models are typically trained to predict the next word in a sequence, given the previous words and some context such as an image. However, at test time the model is expected to generate the entire sequence from scratch. This discrepancy makes generation brittle, as errors may accumulate along the way. We address this issue by proposing a novel sequence level training algorithm that directly optimizes the metric used at test time, such as BLEU or ROUGE. On three different tasks, our approach outperforms several strong baselines for greedy generation. The method is also competitive when these baselines employ beam search, while being several times faster."
+	"A wide variety of applications rely on text generation, including machine translation, video/text summarization, question answering, among others. From a machine learning perspective, text generation is the problem of predicting a syntactically and semantically correct sequence of consecutive words given some context. For instance, given an image, generate an appropriate caption or given a sentence in English language, translate it into French. Popular choices for text generation models are language models based on n-grams, feed-forward neural networks and recurrent neural networks. These models when used as is to generate text suffer from two major drawbacks. First, they are trained to predict the next word given the previous ground truth words as input. However, at test time, the resulting models are used to generate an entire sequence by predicting one word at a time, and by feeding the generated word back as input at the next time step. This process is very brittle because the model was trained on a different distribution of inputs, namely, words drawn from the data distribution, as opposed to words drawn from the model distribution. As a result the errors made along the way will quickly accumulate. We refer to this discrepancy as exposure bias which occurs when a model is only exposed to the training data distribution, instead of its own predictions. Second, the loss function used to train these models is at the word level. A popular choice is the cross-entropy loss used to maximize the probability of the next correct word. However, the performance of these models is typically evaluated using discrete metrics. One such metric is called BLEU for instance, which measures the n-gram overlap between the model generation and the reference text. Training these models to directly optimize metrics like BLEU is hard because a) these are not differentiable, and b) combinatorial optimization is required to determine which sub-string maximizes them given some context."
+	"This paper proposes a novel training algorithm which results in improved text generation compared to standard models. The algorithm addresses the two issues discussed above as follows. First, while training the generative model we avoid the exposure bias by using model predictions at training time. Second, we directly optimize for our final evaluation metric. We build on the REINFORCE algorithm to achieve the above two objectives. While sampling from the model during training is quite a natural step for the REINFORCE algorithm, optimizing directly for any test metric can also be achieved by it. REINFORCE side steps the issues associated with the discrete nature of the optimization by not requiring rewards (or losses) to be differentiable. While REINFORCE appears to be well suited to tackle the text generation problem, it suffers from a significant issue. The problem setting of text generation has a very large action space which makes it extremely difficult to learn with an initial random policy. Specifically, the search space for text generation is of size O(WT), where W is the number of words in the vocabulary (typically around 10^4 or more) and T is the length of the sentence (typically around 10-30). Towards that end, we introduce Mixed Incremental Cross-Entropy Reinforce. MIXER is an easy-to-implement recipe to make REINFORCE work well for text generation applications. It is based on two key ideas: incremental learning and the use of a hybrid loss function which combines both REINFORCE and cross-entropy. Both ingredients are essential to training with large action spaces. In MIXER, the model starts from the optimal policy given by cross-entropy training (as opposed to a random one), from which it then slowly deviates, in order to make use of its own predictions, as is done at test time."
+	"Our results show that MIXER with a simple greedy search achieves much better accuracy compared to the baselines on Text Summarization, Machine Translation and Image Captioning tasks. In addition we show that MIXER with greedy search is even more accurate than the cross entropy model augmented with beam search at inference time as a post-processing step. This is particularly remarkable because MIXER with greedy search is at least 10 times faster than the cross entropy model with a beam of size 10. Lastly, we note that MIXER and beam search are complementary to each other and can be combined to further improve performance, although the extent of the improvement is task dependent."
+	-- https://www.evernote.com/shard/s189/sh/ada01a82-70a9-48d4-985c-20492ab91e84/8da92be19e704996dc2b929473abed46 (Larochelle)
+	-- https://github.com/facebookresearch/MIXER
+
+Norouzi, Bengio, Chen, Jaitly, Schuster, Wu, Schuurmans - "Reward Augmented Maximum Likelihood for Neural Structured Prediction" [https://arxiv.org/abs/1609.00150]
+	"A key problem in structured output prediction is direct optimization of the task reward function that matters for test evaluation. This paper presents a simple and computationally efficient approach to incorporate task reward into a maximum likelihood framework. We establish a connection between the log-likelihood and regularized expected reward objectives, showing that at a zero temperature, they are approximately equivalent in the vicinity of the optimal solution. We show that optimal regularized expected reward is achieved when the conditional distribution of the outputs given the inputs is proportional to their exponentiated (temperature adjusted) rewards. Based on this observation, we optimize conditional log-probability of edited outputs that are sampled proportionally to their scaled exponentiated reward. We apply this framework to optimize edit distance in the output label space. Experiments on speech recognition and machine translation for neural sequence to sequence models show notable improvements over a maximum likelihood baseline by using edit distance augmented maximum likelihood."
+	"Neural sequence models use a maximum likelihood framework to maximize the conditional probability of the ground-truth outputs given corresponding inputs. These models do not explicitly consider the task reward during training, hoping that conditional log-likelihood would serve as a good surrogate for the task reward. Such methods make no distinction between alternative incorrect outputs: log-probability is only measured on the ground-truth input-output pairs, and all alternative outputs are equally penalized, whether near or far from the ground-truth target. We believe that one can improve upon maximum likelihood sequence models, if the difference in the rewards of alternative outputs is taken into account. A key property of ML training for locally normalized RNN models is that the objective function factorizes into individual loss terms, which could be efficiently optimized using stochastic gradient descend. In particular, ML training does not require any form of inference or sampling from the model during training, which leads to computationally efficient and easy to implementations."
+	"Alternatively, one can use reinforcement learning algorithms, such as policy gradient, to optimize expected task reward during training. Even though expected task reward seems like a natural objective, direct policy optimization faces significant challenges: unlike ML, the gradient for a mini-batch of training examples is extremely noisy and has a high variance; gradients need to be estimated via sampling from the model, which is a non-stationary distribution; the reward is often sparse in a high-dimensional output space, which makes it difficult to find any high value predictions, preventing learning from getting off the ground; and, finally, maximizing reward does not explicitly consider the supervised labels, which seems inefficient. In fact, all previous attempts at direct policy optimization for structured output prediction has started by bootstrapping from a previously trained ML solution and they use several heuristics and tricks to make learning stable."
+	"This paper presents a new approach to task reward optimization that combines the computational efficiency and simplicity of ML with the conceptual advantages of expected reward maximization. Our algorithm called reward augmented maximum likelihood simply adds a sampling step on top of the typical likelihood objective. Instead of optimizing conditional log-likelihood on training input-output pairs, given each training input, we first sample an output proportional to its exponentiated scaled reward. Then, we optimize log-likelihood on such auxiliary output samples given corresponding inputs. When the reward for an output is defined as its similarity to a ground-truth output, then the output sampling distribution is peaked at the ground-truth output, and its concentration is controlled by a temperature hyper-parameter."
+	"Surprisingly, we find that the best performance is achieved with output sampling distributions that put a lot of the weight away from the ground-truth outputs. In fact, in our experiments, the training algorithm rarely sees the original unperturbed outputs. Our results give further evidence that models trained with imperfect outputs and their reward values can improve upon models that are only exposed to a single ground-truth output per input."
+	"There are several critical differences between gradient estimators for RML loss (reward augmented maximum likelihood) and RL loss (regularized expected reward) that make SGD optimization of RML loss more desirable. First, for RML loss, one has to sample from a stationary distribution, the so called exponentiated payoff distribution, whereas for RL loss one has to sample from the model distribution as it is evolving. Not only sampling from the model could slow down training, but also one needs to employ several tricks to get a better estimate of the gradient of RL loss. Further, the reward is often sparse in a high-dimensional output space, which makes finding any reasonable predictions challenging, when RL loss is used to refine a randomly initialized model. Thus, smart model initialization is needed. By contrast, we initialize the models randomly and refine them using RML loss."
+	--
+	"This reads as another way to use a world model to mitigate the sample complexity of reinforcement learning (e.g., what if edit distance was just the initial model of the reward?)."
+	--
+	"Andrej Karpathy provided another perspective: We can also view the process of optimizing LRML as distilling the exponentiated payoff distribution q(y|y*;τ) into the model pθ(y|x). The objective reaches a maximum when these two distributions are equivalent. From this distillation view, the question is clear: how can we distill more complex objects into pθ? Concretely, this means we should develop more complex reward distributions q to use in this setup. We have seen two examples so far: the exponentiated payoff from the paper and the label smoothing example of the previous section. We could define q to be a complex pre-trained model or a mixture of experts, and use this training process to distill them into a single model pθ. We just need to make sure that we can efficiently sample from the q we select."
+	--
+	"Alec Radford mentioned that the data augmentation suggested in the paper sounds similar in spirit to virtual adversarial training, where the current model is encouraged to make robust predictions not only for the examples in the training set but also for inputs “nearby” those that exist in the training set. A high-level comparison:
+	  - Adversarial training can be seen as data-augmentation in the input space X. The RML objective does data-augmentation in the output space Y.
+	  - Adversarial training performs model-based data augmentation: the examples generated are those for which the current model is maximally vulnerable. RML training performs data-based augmentation: the examples generated have outputs that are “near” the ground-truth outputs. (Here 'near' is defined by the reward function.)"
+	-- http://youtube.com/watch?v=agA-rc71Uec (Samy Bengio)
+	-- http://drive.google.com/file/d/0B3Rdm_P3VbRDVUQ4SVBRYW82dU0 (Gauthier)
+	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/1609.00150
 
 
 
@@ -1398,6 +1435,8 @@ Levine, Finn, Darrell, Abbeel - "End-to-End Training of Deep Visuomotor Policies
 Schulman, Levine, Moritz, Jordan, Abbeel - "Trust Region Policy Optimization" [http://arxiv.org/abs/1502.05477]
 	"In this article, we describe a method for optimizing control policies, with guaranteed monotonic improvement. By making several approximations to the theoretically-justified scheme, we develop a practical algorithm, called Trust Region Policy Optimization. This algorithm is effective for optimizing large nonlinear policies such as neural networks. Our experiments demonstrate its robust performance on a wide variety of tasks: learning simulated robotic swimming, hopping, and walking gaits; and playing Atari games using images of the screen as input. Despite its approximations that deviate from the theory, TRPO tends to give monotonic improvement, with little tuning of hyperparameters."
 	"We proposed and analyzed trust region methods for optimizing stochastic control policies. We proved monotonic improvement for an algorithm that repeatedly optimizes a local approximation to the expected cost of the policy with a KL divergence penalty, and we showed that an approximation to this method that incorporates a KL divergence constraint achieves good empirical results on a range of challenging policy learning tasks, outperforming prior methods. Our analysis also provides a perspective that unifies policy gradient and policy iteration methods, and shows them to be special limiting cases of an algorithm that optimizes a certain objective subject to a trust region constraint. In the domain of robotic locomotion, we successfully learned controllers for swimming, walking and hopping in a physics simulator, using general purpose neural networks and minimally informative costs. To our knowledge, no prior work has learned controllers from scratch for all of these tasks, using a generic policy search method and non-engineered, general-purpose policy representations. In the game-playing domain, we learned convolutional neural network policies that used raw images as inputs. This requires optimizing extremely high-dimensional policies, and only two prior methods report successful results on this task. Since the method we proposed is scalable and has strong theoretical foundations, we hope that it will serve as a jumping-off point for future work on training large, rich function approximators for a range of challenging problems. At the intersection of the two experimental domains we explored, there is the possibility of learning robotic control policies that use vision and raw sensory data as input, providing a unified scheme for training robotic controllers that perform both perception and control. The use of more sophisticated policies, including recurrent policies with hidden state, could further make it possible to roll state estimation and control into the same policy in the partially-observed setting. By combining our method with model learning, it would also be possible to substantially reduce its sample complexity, making it applicable to real-world settings where samples are expensive."
+	--
+	"As you iteratively improve your policy, it’s important to constrain the KL divergence between the old and new policy to be less than some constant δ. This δ (in the unit of nats) is better than a fixed step size, since the meaning of the step size changes depending on what the rewards and problem structure look like at different points in training. This is called Trust Region Policy Optimization (or, in a first-order variant, Proximal Policy Optimization) and it matters more as we do more experience replay."
 	-- https://youtube.com/watch?v=jeid0wIrSn4 + https://vimeo.com/113957342 (demo)
 	-- https://youtu.be/xe-z4i3l-iQ?t=30m35s (Abbeel)
 	-- http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/ (Abbeel, 0:27:10)
@@ -1444,6 +1483,7 @@ Zhang, Levine, McCarthy, Finn, Abbeel - "Learning Deep Neural Network Policies w
 	"We presented a method for training policies for continuous control tasks that require memory. Our method consists of augmenting the state space with memory states, which the policy can choose to read and write as necessary. The resulting augmented control problem is solved using guided policy search, which uses simple trajectory-centric reinforcement learning algorithms to optimize trajectories from several initial states, and then uses these trajectories to generate a training set that can be used to optimize the policy with supervised learning. In the augmented state space, the policy is purely reactive, which means that policy training does not require backpropagating the gradient through time. However, when viewed together with the memory states, the policy is endowed with memory, and can be regarded as a recurrent neural network. Our experimental results show that our method can be used to learn policies for a variety of simulated robotic tasks that require maintaining internal memory to succeed. Part of the motivation for our approach came from the observation that even fully feed-forward neural network policies could often complete tricky tasks that seemed to require memory by using the physical state of the robot to “store” information, similarly to how a person might “remember” a number while counting by using their fingers. In our approach, we exploit this capability of reactive feedforward policies by providing extra state variables that do not have a physical analog, and exist only for the sake of memory."
 	"One interesting direction for follow-up work is to apply our approach for training recurrent networks for general supervised learning tasks, rather than just robotic control. In this case, the memory state comprises the entire state of the system, and the cost function is simply the supervised learning loss. Since the hidden memory state activations are optimized separately from the network weights, such an approach could in principle be more effective at training networks that perform complex reasoning over temporally extended intervals. Furthermore, since our method trains stochastic policies, it would also be able to train stochastic recurrent neural networks, where the transition dynamics are non-deterministic. These types of networks are typically quite challenging to train, and exploring this further is an exciting direction for future work."
 	-- http://rll.berkeley.edu/gpsrnn/ (demo)
+	-- http://thespermwhale.com/jaseweston/ram/slides/session4/ram_talk_zhang_marvin.pdf
 
 Mordatch, Mishra, Eppner, Abbeel - "Combining Model-Based Policy Search with Online Model Learning for Control of Physical Humanoids" [http://www.eecs.berkeley.edu/~igor.mordatch/darwin/paper.pdf]
 	"We present an automatic method for interactive control of physical humanoid robots based on high-level tasks that does not require manual specification of motion trajectories or specially-designed control policies. The method is based on the combination of a model-based policy that is trained off-line in simulation and sends high-level commands to a model-free controller that executes these commands on the physical robot. This low-level controller simultaneously learns and adapts a local model of dynamics on-line and computes optimal controls under the learned model. The high-level policy is trained using a combination of trajectory optimization and neural network learning, while considering physical limitations such as limited sensors and communication delays. The entire system runs in real-time on the robot’s computer and uses only on-board sensors. We demonstrate successful policy execution on a range of tasks such as leaning, hand reaching, and robust balancing behaviors atop a tilting base on the physical robot and in simulation."
