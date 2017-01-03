@@ -392,6 +392,8 @@ learning theory:
   https://blogs.princeton.edu/imabandit/2015/10/13/crash-course-on-learning-theory-part-1/
   https://blogs.princeton.edu/imabandit/2015/10/22/crash-course-on-learning-theory-part-2/
 
+  https://web.stanford.edu/class/cs229t/notes.pdf (course by Percy Liang)
+
 
 bias/variance:
   "The bias is error from erroneous assumptions in the learning algorithm. High bias can cause an algorithm to miss the relevant relations between features and target outputs (underfitting).
