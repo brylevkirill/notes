@@ -1,3 +1,19 @@
+  * overview
+  * industry
+  * study
+  * challenges
+  * question answering
+  * document models
+  * topic models
+  * recommender systems
+  * interesting papers
+    - document models
+    - entity-centric search
+    - intent search
+    - recommendations
+    - ranking
+
+
 selected papers and books -
 	https://dropbox.com/sh/pvpzyxfcpy39j8p/AACduJ-pVF9Lh-gn3_SExj1va  (information retrieval + recommendation systems)
 	https://dropbox.com/sh/c427b94xex62a40/AABii9_MRHrCZPGJ_Adx_b3Ma  (semantic web)
@@ -57,7 +73,7 @@ https://blogs.dropbox.com/tech/2015/03/firefly-instant-full-text-search-engine/
 
 
 
-[education materials]
+[study]
 
 course by Chris Manning
 	http://youtube.com/watch?v=5L1qemKyUKA&index=75&list=PL6397E4B26D00A269

@@ -1,3 +1,21 @@
+  * problems
+  * reinforcement learning
+  * industry
+  * personal assistants
+  * language understanding platforms
+  * messaging platforms
+  * interesting papers
+    - dialog state management
+    - utterance generation
+    - utterance understanding
+    - intents and actions
+
+
+selected papers - https://dropbox.com/sh/veqe3c800ztpkxe/AABwH6camduJrsTUJpeKobWUa
+
+
+
+
 [problems]
 
   true dialog agent should be able to:
@@ -515,7 +533,11 @@ ViV - "Dynamically Evolving Cognitive Architecture System Based on Third-Party D
 
 [interesting quotes]
 
-"Before, we were talking about discovery of apps, discovery of bots or products. There is a deeper problem, which is, when I'm in a conversation with a new bot, if the interface for every bot is kind of the same, it's some text interface, it's unclear exactly who I'm talking to and what they know and what they don't know and what I can ask. If it has some knowledge inside the bot's memory, it's unclear what it knows and what it doesn't know. I think part of the solution here is going to be either better UX in these messenger platforms, so that you could have a more clear sense of the options and of the menus, if you are texting. Then another thing is being very clear about what the bot is good for and what it isn't."
+  "Before, we were talking about discovery of apps, discovery of bots or products. There is a deeper problem, which is, when I'm in a conversation with a new bot, if the interface for every bot is kind of the same, it's some text interface, it's unclear exactly who I'm talking to and what they know and what they don't know and what I can ask. If it has some knowledge inside the bot's memory, it's unclear what it knows and what it doesn't know. I think part of the solution here is going to be either better UX in these messenger platforms, so that you could have a more clear sense of the options and of the menus, if you are texting. Then another thing is being very clear about what the bot is good for and what it isn't."
+
+  "Voice interfaces are the skeuomorphism of intelligent apps. We haven't yet figured out the natural, native way to interact with the medium. And as a result we are drawn to mimic the legacy paradigm --human to human communications."
+
+  "All existing NLP is about mapping the internal statistical dependencies of language, missing the point that language is a *communication protocol*. You cannot study language without considering *agents* communicating *about something*. The only reason language even has any statistical dependencies to study is because it's imperfect. A maximally efficient communication protocol would look like random noise, out of context (besides error correction mechanisms). All culture is a form of communication, so "understanding" art requires grounding. Mimicking what humans do isn't enough. You can't understand language without considering it in context: agents communicating about something. An analogy could be trying to understand an economy by looking at statistical structure in stock prices only."
 
 
 

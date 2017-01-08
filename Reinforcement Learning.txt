@@ -57,6 +57,10 @@
   learn sequential algorithms: attention, memory, conditional computation, activations, ...
 
 
+  "Why Tool AIs Want to Be Agent AIs" - http://www.gwern.net/Tool%20AI
+	"The logical extension of these neural networks all the way down papers is that an actor like Google/Baidu/Facebook/MS could effectively turn neural networks into a black box: a user/developer uploads through an API a dataset of input/output pairs of a specified type and a monetary loss function, and a top-level neural network running on a large GPU cluster starts autonomously optimizing over architectures & hyperparameters for the neural network design which balances GPU cost and the monetary loss, interleaved with further optimization over the thousands of previous submitted tasks, sharing its learning across all of the datasets/loss functions/architectures/hyperparameters, and the original user simply submits future data through the API for processing by the best neural network so far."
+
+
   - industry
 	Google (recommender system, Deep Q-Learning) - https://deepmind.com/blog/deep-reinforcement-learning/
 		"We have also built a massively distributed deep RL system, known as Gorila, that utilises the Google Cloud platform to speed up training time by an order of magnitude; this system has been applied to recommender systems within Google."
@@ -66,6 +70,9 @@
 	Microsoft Multiworld Testing Decision Service (personalized news on MSN, contextual bandits) - https://mwtds.azurewebsites.net + http://research.microsoft.com/en-us/projects/mwt/ + http://hunch.net/?p=4464948
 
 	(Demis Hassabis) "In our view reinforcement learning is going to be as big as deep learning in the next two or three years. The further we go with this, the more we feel our thesis is correct, and I think we’re changing the entire field." "Technology could surface in virtual assistants or improve recommendation systems, which are crucial to products such as YouTube (similar systems also power some of Google’s advertising products)." [https://www.technologyreview.com/s/601139/how-google-plans-to-solve-artificial-intelligence/]
+
+	Google's patent on Deep Q-Network [http://google.com/patents/US20150100530]:
+	"Further applications of the techniques we describe, which are merely given by way of example, include: robot control (such as bipedal or quadrupedal walking or running, navigation, grasping, and other control skills); vehicle control (autonomous vehicle control, steering control, airborne vehicle control such as helicopter or plane control, autonomous mobile robot control); machine control; control of wired or wireless communication systems; control of laboratory or industrial equipment; control of real or virtual resources (such as memory management, inventory management and the like); drug discovery (where the controlled action is, say, the definition of DNA sequence of a drug and the states are defined by states of a living entity to which the drug is applied); application to a system in which the state of or output from the system is defined by words (text and/or audio and/or image), such as a system employing natural language; application to a trading system such as a stock market (although the actions taken may have little effect on such a system, very small effects can be sufficient to achieve useful overall rewards); and others."
 
   - Go
 	"Mastering the Game of Go with Deep Neural Networks and Tree Search" - https://vk.com/doc-44016343_437229031?hash=9c999a03ee82850948&dl=56ce06e325d42fbc72
@@ -81,6 +88,7 @@
 	https://github.com/Rochester-NRT/RocAlphaGo/wiki
 
 	https://deepmind.com/research/alphago/alphago-games-english/
+
 	https://gogameguru.com/alphago-defeats-lee-sedol-game-1/ + http://deeplearningskysthelimit.blogspot.ru/2016/04/part-6-review-of-game-1-lee-sedol.html + https://youtube.com/watch?v=bIQxOsRAXCo
 	https://gogameguru.com/alphago-races-ahead-2-0-lee-sedol/ + http://deeplearningskysthelimit.blogspot.ru/2016/04/part-7-review-of-game-2-alphagos-new.html + https://youtube.com/watch?v=1aMt7ulL6EI
 	https://gogameguru.com/alphago-shows-true-strength-3rd-victory-lee-sedol/ + http://deeplearningskysthelimit.blogspot.ru/2016/04/part-8-review-of-game-3-lee-sedols.html + https://youtube.com/watch?v=6hROM_bxZ9E
@@ -89,7 +97,6 @@
 
   - Doom
 	http://vizdoom.cs.put.edu.pl
-
 	https://youtube.com/watch?v=Qv4esGWOg7w
 	https://youtube.com/watch?v=947bSUtuSQ0
 	https://youtube.com/watch?v=tDRdgpkleXI
@@ -136,7 +143,7 @@
 
 [overview]
 
-  introduction - http://thetalkingmachines.com/blog/2015/5/21/how-we-think-about-privacy-and-finding-features-in-black-boxes
+  introduction by David Silver - https://youtube.com/watch?v=2pWv7GOvuf0
 
   introduction -
 	http://kvfrans.com/reinforcement-learning-basics/
@@ -146,82 +153,47 @@
 	http://kvfrans.com/the-policy-gradient/
 	http://kvfrans.com/making-use-of-the-model/
 
+  introduction by Shakir Mohamed -
+	"Learning in Brains and Machines: Temporal Differences" - http://blog.shakirm.com/2016/02/learning-in-brains-and-machines-1/
+	"Synergistic and Modular Action" - http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/
 
-  introduction by Michael Littman - "Reinforcement Learning Improves Behaviour From Evaluative Feedback" - http://readcube.com/articles/10.1038%2Fnature14540
-
-
-  "Learning in Brains and Machines: Temporal Differences" by Shakir Mohamed - http://blog.shakirm.com/2016/02/learning-in-brains-and-machines-1/
-  "Synergistic and Modular Action" by Shakir Mohamed - http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/
-
-
-  introduction by David Silver - https://youtube.com/watch?v=2pWv7GOvuf0 + http://techtalks.tv/talks/deep-reinforcement-learning/62360/ (latest developments)
-
-
-  tutorial by Rich Sutton - https://youtube.com/watch?v=Fsh1qMTg1xI + https://gridworld.wordpress.com/2015/12/08/nips-2015-rl-tutorial/
-
-  tutorial by Nando de Freitas
-	http://youtube.com/watch?v=kUiR0RLmGCo (Deep Policy Search)
-	http://youtube.com/watch?v=dV80NAlEins (Deep Q-Learning)
-	http://youtube.com/watch?v=HUmEbUkeQHg
+  introduction by Michael Littman - http://readcube.com/articles/10.1038%2Fnature14540
 
 
   overview by David Silver
-	http://techtalks.tv/talks/deep-reinforcement-learning/62360/ + http://hunch.net/~beygel/deep_rl_tutorial.pdf (ICML 2016)
+	http://techtalks.tv/talks/deep-reinforcement-learning/62360/
 	http://videolectures.net/rldm2015_silver_reinforcement_learning/
-	http://youtube.com/watch?v=qLaDWKd61Ig (UAI 2015)
-	http://youtube.com/watch?v=EX1CIVVkWdE + http://youtube.com/watch?v=zXa6UFLQCtg +
-		http://www.iclr.cc/lib/exe/fetch.php?media=iclr2015:silver-iclr2015.pdf (ICLR 2015)
-	http://youtube.com/watch?v=3hWn5vMnpiM (NIPS 2014)
+	http://youtube.com/watch?v=qLaDWKd61Ig
+	http://youtube.com/watch?v=3hWn5vMnpiM
 
   overview by Peter Abbeel
 	http://youtube.com/watch?v=evq4p1zhS7Q
-	http://research.microsoft.com/apps/video/default.aspx?id=260045 (NIPS 2015)
-	http://youtube.com/watch?v=xMHjkZBvnfU (NIPS 2014)
-
-  overview by Juergen Schmidhuber
-	https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber
-	http://arxiv.org/abs/1404.7828
-
-  overview by Rich Sutton
-	"The Grand Ambition of Reinforcement Learning and Artificial Intelligence" - https://youtube.com/watch?v=QT2NikZ7ElI
-	"New Algorithms for Off-policy Temporal-difference Learning" - https://youtube.com/watch?v=EuIdkvSgDHM
-	"Learning to Predict with Independent-of-span Computational Complexity" - https://youtube.com/watch?v=91ZCXoRxZRw
+	http://research.microsoft.com/apps/video/default.aspx?id=260045
 
 
-  classic games (state-of-the-art RL methods) by David Silver - http://youtube.com/watch?v=kZ_AUmFcZtk + http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/games.pdf
+  tutorial by Rich Sutton
+	https://youtube.com/watch?v=Fsh1qMTg1xI
+	https://gridworld.wordpress.com/2015/12/08/nips-2015-rl-tutorial/
 
 
   course by David Silver
-	http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html
-	https://youtube.com/playlist?list=PL5X3mDkKaJrL42i_jhE4N-p6E2Ol62Ofa
+	http://youtube.com/playlist?list=PL5X3mDkKaJrL42i_jhE4N-p6E2Ol62Ofa
 	http://machinelearningtalks.com/tag/rl-course/
-
-	* Markov Decision Process
-	* Planning by Dynamic Programming
-	* Model-Free Prediction
-	* Model-Free Control
-	* Value Function Approximation
-	* Policy Gradient Methods
-	* Integrating Learning and Planning
-	* Exploration and Exploitation
+	http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html
 
   course by Michael Littman
 	https://udacity.com/course/reinforcement-learning--ud600
 
-  course notes by Dustin Tran - http://dustintran.com/notes/cs282r.pdf
-
-  course by Rich Sutton - https://dropbox.com/sh/3xowt7qvyadvejn/AABzXUHeN92grGu8R_24hJQCa/slides
-
 
   "MDP Cheatsheet Reference" by John Schulman - http://rll.berkeley.edu/deeprlcourse/docs/mdp-cheatsheet.pdf
+  course notes by Dustin Tran - http://dustintran.com/notes/cs282r.pdf
+  course slides by Rich Sutton - https://dropbox.com/sh/3xowt7qvyadvejn/AABzXUHeN92grGu8R_24hJQCa/slides
 
-  "Policy Search: Methods and Applications" tutorial by Jan Peters and Gerhard Neumann - http://videolectures.net/icml2015_neumann_peters_policy_search/ + http://icml.cc/2015/tutorials/PolicySearch.pdf
 
-
-  Sutton, Barto - "Reinforcement Learning: An Introduction" (second edition, draft) - https://dropbox.com/s/b3psxv2r0ccmf80/book2015oct.pdf
-  Sutton, Barto - "Reinforcement Learning: An Introduction" (first edition) - http://webdocs.cs.ualberta.ca/~sutton/book/ebook/the-book.html
-
+  Rich Sutton and Andrew Barto - "Reinforcement Learning: An Introduction" (second edition, draft) - https://dropbox.com/s/b3psxv2r0ccmf80/book2015oct.pdf
+  Rich Sutton and Andrew Barto - "Reinforcement Learning: An Introduction" (first edition) - http://webdocs.cs.ualberta.ca/~sutton/book/ebook/the-book.html
   Csaba Szepesvari - "Algorithms for Reinforcement Learning" - http://www.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf
+
 
   exercises with solutions - http://wildml.com/2016/10/learning-reinforcement-learning/
 
@@ -406,13 +378,6 @@
 	"Apprenticeship Learning and Reinforcement Learning with Application to Robotic Control" by Pieter Abbeel - http://ai.stanford.edu/~pabbeel/thesis/thesis.pdf
 
 
-  "Novel Trends and Applications in RL" workshop at NIPS 2014 - https://tcrl14.wordpress.com/videos/
-  "Reinforcement Learning" workshop at NIPS 2015 - https://gridworld.wordpress.com/2015/12/08/nips-2015-rl-tutorial/
-  "Deep Reinforcement Learning" workshop at NIPS 2015 - http://rll.berkeley.edu/deeprlworkshop/ + https://gridworld.wordpress.com/2015/12/13/nips-2015-deep-rl-workshop/
-  "Deep Reinforcement Learning: Frontiers and Challenges" workshop at IJCAI 2016 - https://sites.google.com/site/deeprlijcai16/
-  "Abstraction in RL" workshop at ICML 2016 - http://rlabstraction2016.wix.com/icml
-
-
 
 
 [deep reinforcement learning]
@@ -424,10 +389,14 @@
   Deep Reinforcement Learning tutorial from OpenAI - https://gym.openai.com/docs/rl
 
 
+  introduction by Nando de Freitas
+	http://youtube.com/watch?v=kUiR0RLmGCo (Deep Policy Search)
+	http://youtube.com/watch?v=dV80NAlEins (Deep Q-Learning)
+	http://youtube.com/watch?v=HUmEbUkeQHg
+
   course by David Silver
-	"Value Function Approximation" - http://youtube.com/watch?v=UoPei5o4fps
-	"Policy Gradient Methods" - http://youtube.com/watch?v=KHZVXao4qXs
-	http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html
+	http://youtube.com/watch?v=UoPei5o4fps (Deep Q-Learning)
+	http://youtube.com/watch?v=KHZVXao4qXs (Deep Policy Search)
 
   course by John Schulman and Pieter Abbeel
 	https://youtube.com/watch?v=PtAIh9KSnjo
@@ -438,14 +407,24 @@
 	http://goo.gl/5wsgbJ
 	http://rll.berkeley.edu/deeprlcourse/
 
+  tutorial by Pieter Abbeel
+	http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/ (Deep Policy Search)
+
+  tutorial by Jan Peters and Gerhard Neumann
+	http://videolectures.net/icml2015_neumann_peters_policy_search/ + http://icml.cc/2015/tutorials/PolicySearch.pdf
+
+  seminars on latest developments in deep reinforcement learning
+	"Latest Developments in Deep Reinforcement Learning" by Pavlov and Seleznev (in russian) - https://youtube.com/watch?v=mrgJ53TIcQc
+
+
   "The Nuts and Bolts of Deep RL Research" by John Schulman - http://rll.berkeley.edu/deeprlcourse/docs/nuts-and-bolts.pdf
 
 
-  Deep Reinforcement Learning workshop by @ NIPS 2015 - https://gridworld.wordpress.com/2015/12/13/nips-2015-deep-rl-workshop/
-
-  "Deep Reinforcement Learning through Policy Optimization" by Pieter Abbeel @ MLSS 2016 - http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/
-
-  "Latest Developments in Deep Reinforcement Learning" by Mikhail Pavlov and Alexey Seleznev (in russian) - https://youtube.com/watch?v=mrgJ53TIcQc
+  "Abstraction in RL" workshop at ICML 2016 - http://rlabstraction2016.wix.com/icml
+  "Deep Reinforcement Learning: Frontiers and Challenges" workshop at IJCAI 2016 - https://sites.google.com/site/deeprlijcai16/
+  "Deep Reinforcement Learning" workshop at NIPS 2015 - http://rll.berkeley.edu/deeprlworkshop/ +
+	https://gridworld.wordpress.com/2015/12/13/nips-2015-deep-rl-workshop/
+  "Novel Trends and Applications in RL" workshop at NIPS 2014 - https://tcrl14.wordpress.com/videos/
 
 
 
@@ -544,10 +523,6 @@
    - https://github.com/osh/kerlym
    - https://github.com/ludc/rltorch/blob/master/torch/policies/DeepQPolicy.lua
    - http://cs.stanford.edu/people/karpathy/convnetjs/demo/rldemo.html
-
-
-  Google's patent on Deep Q-Network [http://google.com/patents/US20150100530]:
-	"Further applications of the techniques we describe, which are merely given by way of example, include: robot control (such as bipedal or quadrupedal walking or running, navigation, grasping, and other control skills); vehicle control (autonomous vehicle control, steering control, airborne vehicle control such as helicopter or plane control, autonomous mobile robot control); machine control; control of wired or wireless communication systems; control of laboratory or industrial equipment; control of real or virtual resources (such as memory management, inventory management and the like); drug discovery (where the controlled action is, say, the definition of DNA sequence of a drug and the states are defined by states of a living entity to which the drug is applied); application to a system in which the state of or output from the system is defined by words (text and/or audio and/or image), such as a system employing natural language; application to a trading system such as a stock market (although the actions taken may have little effect on such a system, very small effects can be sufficient to achieve useful overall rewards); and others."
 
 
 

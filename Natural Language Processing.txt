@@ -1,6 +1,30 @@
 "The ambiguous nature of natural language might seem like a flaw, but in fact, it is exactly this ambiguity that makes natural language so powerful. Think of language as a game between a speaker and a listener. Game play proceeds as follows: the speaker thinks of a concept, she chooses an utterance to convey that concept, and the listener interprets the utterance. Both players win if the listener’s interpretation matches the speaker’s intention. To play this game well, the speaker should thus choose the simplest utterance that conveys her intended concept - anything the listener can infer can be omitted. How can a computer fill in these gaps, which depend on the breadth of human experience involving perception of the world and social interactions?"
 
 
+  * overview
+  * study
+  * problems
+  * semantics
+  * compositionality
+  * continuous space representations
+  * deep learning models
+  * implementations
+  * interesting papers
+    - language models
+    - language models - word2vec
+    - word sense disambiguation
+    - semantic composition
+    - semantic similarity
+    - syntactic parsing
+    - semantic parsing
+    - text classification
+    - word sequence labelling
+    - coreference resolution
+    - relation extraction
+    - text summarization
+    - cross-lingual tasks
+
+
 selected papers and books - https://dropbox.com/sh/rb7u9nwb16bg5xq/AADV3d_bS6-mqFW0_jaec1sZa
 
 
@@ -26,7 +50,7 @@ http://breakthroughanalysis.com/2015/10/28/an-inside-view-of-language-technologi
 
 
 
-[courses]
+[study]
 
 course by Chris Manning and Dan Jurafsky - http://youtube.com/playlist?list=PL6397E4B26D00A269 + https://web.stanford.edu/~jurafsky/NLPCourseraSlides.html
 course by Richard Socher - http://cs224d.stanford.edu
@@ -44,6 +68,11 @@ textbook by Michael Collins - https://dropbox.com/sh/e0unkrb6xoqyjmg/AAANfPi9K9f
 
 
 [problems]
+
+  "All existing NLP is about mapping the internal statistical dependencies of language, missing the point that language is a *communication protocol*. You cannot study language without considering *agents* communicating *about something*. The only reason language even has any statistical dependencies to study is because it's imperfect. A maximally efficient communication protocol would look like random noise, out of context (besides error correction mechanisms). All culture is a form of communication, so "understanding" art requires grounding. Mimicking what humans do isn't enough. You can't understand language without considering it in context: agents communicating about something. An analogy could be trying to understand an economy by looking at statistical structure in stock prices only."
+
+  Jon Gauthier, Igor Mordatch -"A Paradigm for Situated and Goal-Driven Language Learning" - https://arxiv.org/abs/1610.03585
+
 
   - anaphora resolution
   - answer sentence selection
@@ -92,9 +121,6 @@ textbook by Michael Collins - https://dropbox.com/sh/e0unkrb6xoqyjmg/AAANfPi9K9f
   - topic modeling
   - word segmentation
   - word sense disambiguation
-
-
-"The structure, complexity, and sheer diversity and variety of human language makes Natural Language Processing (NLP) distinct from other areas of AI. Certain core NLP problems have traditionally been an inspiration for machine learning (ML) solutions e.g., sequence tagging, syntactic parsing, and language modeling, primarily because these tasks can be easily abstracted into machine learning formulations (e.g., structured prediction, dimensionality reduction, or simpler regression and classification techniques). In turn, these formulations have facilitated the transfer of ideas such as (but not limited to) discriminative methods, Bayesian nonparametrics, neural networks, and low rank / spectral techniques into NLP. Problems in NLP are particularly appealing to those doing core ML research due to the high-dimensional nature of the spaces involved (both the data and the label spaces) and the need to handle noise robustly, while principled, well-understood ML techniques are attractive to those in NLP since they potentially offer a solution to ill-behaved heuristics and training-test domain mismatch due to the lack of generalization ability these heuristics possess. But there are many other areas within NLP where the ML community is less involved, such as semantics, discourse and pragmatics analysis, summarization, and parts of machine translation, and that continue to rely on linguistically- motivated but imprecise heuristics which may benefit from new machine learning approaches. Similarly, there are paradigms in ML, statistics, and optimization ranging from sub-modularity to bandit theory to Hilbert space embeddings that have not been well explored in the context of NLP."
 
 
 

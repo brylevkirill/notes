@@ -1,10 +1,12 @@
-Intelligence is use of information to take decisions which save energy in pursuit of a given task.
+Intelligence is information processing to take decisions which save energy in pursuit of given task.
 
 
   * overview
-  * problems and approaches
   * benchmarks and competitions
-  * frameworks
+  * problems
+  * knowledge representation
+  * inference/reasoning
+  * decisions/actions
     - Reinforcement Learning
     - Meta-learning
     - Artificial Curiosity and Creativity
@@ -36,237 +38,44 @@ overviews/publications for applications
 
 [overview]
 
-the most impressive accomplishments in AI (in russian) - https://dropbox.com/s/di5mxkj8c65h3e6/AI%20wonders.txt
+the most impressive accomplishments (in russian) - https://dropbox.com/s/di5mxkj8c65h3e6/AI%20wonders.txt
+
 
 Demis Hassabis
 	"Towards General Artificial Intelligence" - https://youtube.com/watch?v=vQXAsdMa_8A
 	"Artificial Intelligence and The Future" - https://youtube.com/watch?v=4fjmnOQuqao
-	"General Learning Algorithms" - http://youtu.be/XAbLn66iHcQ?t=1h26m9s
-	"The Theory of Everything" - http://youtube.com/watch?v=rbsqaJwpu6A
 
 Juergen Schmidhuber
+	"Formal Theory of Fun & Creativity" - http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/
 	"How to Learn an Algorithm" - http://youtube.com/watch?v=mF5-tr7qAF4
-	"Deep Learning RNNaissance" - http://youtube.com/watch?v=h4FqFss9hEY
-	"Formal Theory of Fun & Creativity" -
-		https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber
-		https://vimeo.com/28759091
-		http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/
-		https://vimeo.com/7441291
-	"New Millennium AI and the Convergence of History" -
-		https://youtube.com/watch?v=ktQLClGLWRc
-
-Marcus Hutter
-	"What is Intelligence? AIXI & Induction" - http://youtube.com/watch?v=F2bQ5TSB-cE
-	"Soft Aspects of Hard Intelligence" - http://youtube.com/watch?v=vUUeHZJFN2Q
-
-Yann LeCun
-	"Obstacles to progress in AI" - https://youtube.com/watch?v=9Kgk4s7yG1c
-
-Geoff Hinton
-	"Deep Learning and AI" - http://youtube.com/watch?v=izrG86jycck
-	"Deep Learning and Its Biological Plausibility" - http://sms.cam.ac.uk/media/2017973
-	"Aetherial Symbols" - https://drive.google.com/file/d/0B8i61jl8OE3XdHRCSkV1VFNqTWc
-
-Yoshua Bengio
-	"Deep Learning and General AI" - http://youtube.com/watch?v=exhdfIPzj24
 
 Richard Sutton
 	"The Future of Artificial Intelligence Belongs to Search and Learning" -
 		http://www.fields.utoronto.ca/talks/advances-reinforcement-learning
 	"Toward Learning Human-level Predictive Knowledge" - https://vimeo.com/16811494
 
+Geoff Hinton
+	"Deep Learning and AI" - http://youtube.com/watch?v=izrG86jycck
+
+Yann LeCun
+	"Obstacles to progress in AI" - https://youtube.com/watch?v=9Kgk4s7yG1c
+
+Yoshua Bengio
+	"Deep Learning and General AI" - http://youtube.com/watch?v=exhdfIPzj24
+
 David Ferucci
 	"AI: A Return To Meaning" - https://youtube.com/watch?v=F_0hpnLdNjk
 
 Joshua Tenenbaum
-	"Cognitive Foundations for Common-sense Knowledge Representation and Reasoning" -
-		https://youtube.com/watch?v=oSAG57plHnI
-	"Building Machines That Learn like Humans" -
-		https://youtube.com/watch?v=quPN7Hpk014
-	"Computational Cognitive Science: Generative Models, Probabilistic Programs and Common Sense" -
-		https://youtube.com/watch?v=2WQO9e5Mdj4
-	"How to Grow a Mind: Statistics, Structure, and Abstraction" -
-		http://videolectures.net/aaai2012_tenenbaum_grow_mind/
-		http://videolectures.net/nips2010_tenenbaum_hgm/
-		http://web.mit.edu/cocosci/Papers/tkgg-science11-reprint.pdf
-	"The Origins of Common Sense: Modeling human intelligence with Probabilistic Programs and Program Induction" -
-		http://research.microsoft.com/apps/video/default.aspx?id=229021&l=i
-	"Computational Rationality: A Converging Paradigm for Intelligence in Brains, Minds and Machines" -
-		https://goo.gl/jWaJVf
+	"Building Machines That Learn like Humans" - https://youtube.com/watch?v=quPN7Hpk014
 
 Gary Marcus
 	"Smart Machines And What They Can Still Learn From People" - https://youtube.com/watch?v=XmWneGydtng
 
+
 "What you wanted to know about AI" (informal and funny) -
 	http://fastml.com/what-you-wanted-to-know-about-ai/
 	http://fastml.com/what-you-wanted-to-know-about-ai-part-ii/
-
-
-
-
-[problems and approaches]
-
-AI problems:
-
-#1 What is the space of possible beliefs? How do beliefs interact?
-   Can we formulate a knowledge representation which could in principle express any concept a human can conceive of?
-
-#2 How do we implement inference over these beliefs?
-   This makes perfect sense if we assume that "inference" is a catch-all term referring to the way beliefs move around in the space of possible beliefs.
-
-#3 How do beliefs conspire to produce actions?
-
-
-state of progress - solid theoretical foundations:
- - rational decision making
- - statistical learning
- - perception, NLP as probabilistic inference
-
-state of progress - rapid advances:
- - deep learning in speech, vision, RL
- - universal probability languages
- - long-term hierarchically structured behavior
-
-
-approaches:
- - symbolic/computationalism/logical/causational/theory-driven/relational vs non-symbolic/connectionism/statistical/correlational/data-driven/numerical
- - top-down vs bottom-up
- - self-bootstrapped vs hand-coded knowledge
- - reasoning-based vs connectionist
- - narrow-and-deep vs broad-and-shallow
- - few-key-principles vs hodgepodge-of-techniques
- - must-look-at-nature vs anything-can-be-engineered
-
-
-logical vs statistical approaches:
-	"Beginning with Leibniz, scholars have attempted to unify logic and probability. For “classical” AI, based largely on first-order logic, the purpose of such a unification is to handle uncertainty and facilitate learning from real data; for “modern” AI, based largely on probability theory, the purpose is to acquire formal languages with sufficient expressive power to handle complex domains and incorporate prior knowledge. The world is uncertain and it has things in it. To deal with this, we have to unify logic and probability."
-
-	knowledge representation
-		logical - first-order logic
-		statistical - graphical models
-	automated reasoning (deduction)
-		logical - satisfiability testing/proving
-		statistical - Markov Chain Monte Carlo
-	machine learning (induction)
-		logical - inductive logic programming
-		statistical - neural networks
-	planning
-		logical - classical planning
-		statistical - markov decision processes
-	natural language processing
-		logical - definite clause grammars
-		statistical - probabilistica context-free grammars
-
-
-	Peter Norvig - "On Chomsky and the Two Cultures of Statistical Learning" [http://norvig.com/chomsky.html]:
-		"mathematical model specifies a relation among variables, either in functional or in relational form"
-		"statistical model is a mathematical model which is modified or trained by the input of data points"
-		"probabilistic model specifies a probability distribution over possible values of random variables"
-		"statistical models are often but not always probabilistic and probabilistic ones are statistical"
-
-	Pedro Domingos - "Unifying Logical and Statistical AI" -
-		http://youtube.com/watch?v=bW5DzNZgGxY
-		"logic handles complexity and statistics handles uncertainty"
-
-	Stuart Russell - "Unifying Logic and Probability" -
-		https://www.cs.berkeley.edu/~russell/papers/ipmu14-oupm.pdf
-		http://video.upmc.fr/differe.php?collec=S_C_colloquium_lip6_2012&video=3
-
-	Peter Cheeseman - "In Defense of Probability" [http://ijcai.org/Past%20Proceedings/IJCAI-85-VOL2/PDF/064.pdf]
-		"It is argued that probability theory, when used correctly, is suffrcient for the task of reasoning under uncertainty. Since numerous authors have rejected probability as inadequate for various reasons, the bulk of the paper is aimed at refuting these claims and indicating the scources of error. In particular, the definition of probability as a measure of belief rather than a frequency ratio is advocated, since a frequency interpretation of probability drastically restricts the domain of applicability. Other sources of error include the confusion between relative and absolute probability, the distinction between probability and the uncertainty of that probability. Also, the interaction of logic and probability is discusses and it is argued that many extensions of logic, such as "default logic" are better understood in a probabilistic framework. The main claim of this paper is that the numerous schemes for representing and reasoning about uncertainty that have appeared in the AI literature are unnecessary - probability is all that is needed."
-
-
-symbolic system:
-  - brittle, poor handling of uncertainty/ambiguity
-  - time-consuming to train
-  - poor at generalizing
-  - difficult to acquire new symbols
-  - symbol grounding problem
-
-non-symbolic system:
-  - computational ("congitive science"): "what" - the goals of the system
-  - algorithmic: "how" - the representations and algorithms
-  - implementation ("brain emulation"): "medium" - the physical realisation
-
-"Aetherial Symbols" by Geoffrey Hinton - https://drive.google.com/file/d/0B8i61jl8OE3XdHRCSkV1VFNqTWc
-	"The fathers of AI believed that formal logic provided insight into how human reasoning must work. For implications to travel from one sentence to the next, there had to be rules of inference containing variables that got bound to symbols in the first sentence and carried the implications to the second sentence. I shall demonstrate that this belief is as incorrect as the belief that a lightwave can only travel through space by causing disturbances in the luminiferous aether. In both cases, scientists were misled by compelling but incorrect analogies to the only systems they knew that had the required properties. Arguments have little impact on such strongly held beliefs. What is needed is a demonstration that it is possible to propagate implications in some quite different way that does not involve rules of inference and has no resemblance to formal logic. Recent results in machine translation using recurrent neural networks show that the meaning of a sentence can be captured by a "thought vector" which is simply the hidden state vector of a recurrent net that has read the sentence one word at a time. In future, it will be possible to predict thought vectors from the sequence of previous thought vectors and this will capture natural human reasoning. With sufficient effort, it may even be possible to train such a system to ignore nearly all of the contents of its thoughts and to make predictions based purely on those features of the thoughts that capture the logical form of the sentences used to express them."
-	"Most people fall for the traditional AI fallacy that thought in the brain must somehow resemble lisp expressions. You can tell someone what thought you are having by producing a string of words that would normally give rise to that thought but this doesn't mean the thought is a string of symbols in some unambiguous internal language. The new recurrent network translation models make it clear that you can get a very long way by treating a thought as a big state vector."
-	"Traditional AI researchers will be horrified by the view that thoughts are merely the hidden states of a recurrent net and even more horrified by the idea that reasoning is just sequences of such state vectors. That's why I think its currently very important to get our critics to state, in a clearly decideable way, what it is they think these nets won't be able to learn to do. Otherwise each advance of neural networks will be met by a new reason for why that advance does not really count. So far, I have got both Garry Marcus and Hector Levesque to agree that they will be impressed if neural nets can correctly answer questions about "Winograd" sentences such as "The city councilmen refused to give the demonstrators a licence because they feared violence." Who feared the violence?"
-	"Most of our reasoning is by analogy; it's not logical reasoning. The early AI guys thought we had to use logic as a model and so they couldn't cope with reasoning by analogy. The honest ones, like Allen Newell, realized that reasoning by analogy was a huge problem for them, but they weren't willing to say that reasoning by analogy is the core kind of reasoning we do, and logic is just a sort of superficial thing on top of it that happens much later."
-
-
-knowledge:
-  "Knowledge is in our minds and language is just orienting us within our common experiences."
-  "Language is complex indexing system that points to shared experiences of people on which meaning is grounded."
-  "Communicating using language is possible only after lining up experiences."
-  "Language is very flexible thing and not a formal mathematical structure at all."
-  "Computers may be programmed to analyze data and detect meaning but humans are the source of meaning."
-
-  - symbolic knowledge ("dog as word") - logic networks
-  - conceptual knowledge ("dog as mammal, a good companion, a good guardian") - <open research area>
-  - perceptual knowledge ("dog as something with certain physical appearance") - deep learning
-
-  symbolic -> conceptual (words have to be grounded in real world and actions to be not recursive)
-  perceptual -> conceptual (prediction and classification are not enough for some tasks without reasoning over concepts)
-
-
-induction vs deduction:
-	type of inference:
-		induction - generalization/prediction
-		deduction - specialization/derivation
-	framework:
-		induction - probability theory
-		deduction - logic axioms
-	assumptions:
-		induction - prior
-		deduction - non-logical axioms
-	inference rule:
-		induction - Bayes rule
-		deduction - Modus Ponens
-	results:
-		induction - posterior
-		deduction - theorems
-	universal scheme:
-		induction - Solomonoff probability distribution
-		deduction - Zermelo-Fraenkel set theory
-	universal inference:
-		induction - universal induction
-		deduction - universal theorem prover
-	limitation:
-		induction - incomputable
-		deduction - incomplete (Goedel)
-	in practice:
-		induction - approximations
-		deduction - semi-formal proofs
-	operation:
-		induction - computation
-		deduction - proof
-
-
-research challenges:
-  - abstract classification (categorization of empty/full cups of coffee from image requires concepts)
-  - statistical learning is not enough (can't predict the next digit in "1234567891012131")
-  - building sophisticated models of environment from raw data
-  - transfer learning (learning and abstracting in one context - applying in another)
-
-research areas:
-  - reinforcement learning
-  - model learning
-  - model-based planning
-  - imitation learning
-  - transfer learning
-  - intrinsic motivation
-
-research problems:
-  - reason
-  - achieve complex goals
-  - understand and generate language
-  - perceive and respond to sensory inputs
-  - prove mathematical theorems
-  - play challenging games
-  - synthesize and summarize information
-  - creativeness
-  - automated science
 
 
 
@@ -370,7 +179,179 @@ research problems:
 
 
 
-[frameworks]
+[problems]
+
+ - knowledge representation
+	what is the space of possible beliefs?
+	ow do beliefs interact?
+	an we formulate a knowledge representation which could in principle express any concept a human can conceive of?
+
+ - inference/reasoning
+	how do we implement inference over these beliefs?
+	inference/reasoning are catch-all terms referring to the way beliefs move around in the space of possible beliefs
+
+ - decisions/actions
+	how do beliefs conspire to produce decisions and actions?
+
+
+
+
+[knowledge representation]
+
+  https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt
+  https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt
+
+
+  "Knowledge is in our minds and language is just orienting us within our common experiences."
+  "Language is complex indexing system that points to shared experiences of people on which meaning is grounded."
+  "Communicating using language is possible only after lining up experiences."
+  "Language is very flexible thing and not a formal mathematical structure at all."
+  "Computers may be programmed to analyze data and detect meaning but humans are the source of meaning."
+
+  - symbolic knowledge ("dog as word") - logic networks
+  - conceptual knowledge ("dog as mammal, a good companion, a good guardian") - <open research area>
+  - perceptual knowledge ("dog as something with certain physical appearance") - deep learning
+
+  symbolic -> conceptual (words have to be grounded in real world and actions to be not recursive)
+  perceptual -> conceptual (prediction and classification are not enough for some tasks without reasoning over concepts)
+
+
+
+
+[inference/reasoning]
+
+  https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt
+  https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt
+
+
+  approaches:
+   - logical/symbolic/computationalism/logical/causational/theory-driven/relational vs statistical/non-symbolic/connectionism/correlational/data-driven/numerical
+   - deductive vs inductive reasoning
+
+  
+  
+  * logical vs statistical approaches
+  
+    "Beginning with Leibniz, scholars have attempted to unify logic and probability. For “classical” AI, based largely on first-order logic, the purpose of such a unification is to handle uncertainty and facilitate learning from real data; for “modern” AI, based largely on probability theory, the purpose is to acquire formal languages with sufficient expressive power to handle complex domains and incorporate prior knowledge. The world is uncertain and it has things in it. To deal with this, we have to unify logic and probability."
+  
+    knowledge representation
+    	logical - first-order logic
+    	statistical - graphical models
+    reasoning (deduction)
+    	logical - satisfiability testing/proving
+    	statistical - Markov Chain Monte Carlo
+    learning (induction)
+    	logical - inductive logic programming
+    	statistical - neural networks
+    planning
+    	logical - classical planning
+    	statistical - markov decision processes
+    natural language processing
+    	logical - definite clause grammars
+    	statistical - probabilistica context-free grammars
+
+  
+    Peter Norvig - "On Chomsky and the Two Cultures of Statistical Learning" [http://norvig.com/chomsky.html]
+    	"mathematical model specifies a relation among variables, either in functional or in relational form"
+    	"statistical model is a mathematical model which is modified or trained by the input of data points"
+    	"probabilistic model specifies a probability distribution over possible values of random variables"
+    	"statistical models are often but not always probabilistic and probabilistic ones are statistical"
+  
+    Pedro Domingos - "Unifying Logical and Statistical AI" [http://youtube.com/watch?v=bW5DzNZgGxY]
+    	"logic handles complexity and statistics handles uncertainty"
+  
+    Stuart Russell - "Unifying Logic and Probability"
+    	https://www.cs.berkeley.edu/~russell/papers/ipmu14-oupm.pdf
+    	http://video.upmc.fr/differe.php?collec=S_C_colloquium_lip6_2012&video=3
+  
+    Peter Cheeseman - "In Defense of Probability" [http://ijcai.org/Past%20Proceedings/IJCAI-85-VOL2/PDF/064.pdf]
+    	"It is argued that probability theory, when used correctly, is suffrcient for the task of reasoning under uncertainty. Since numerous authors have rejected probability as inadequate for various reasons, the bulk of the paper is aimed at refuting these claims and indicating the sources of error. In particular, the definition of probability as a measure of belief rather than a frequency ratio is advocated, since a frequency interpretation of probability drastically restricts the domain of applicability. Other sources of error include the confusion between relative and absolute probability, the distinction between probability and the uncertainty of that probability. Also, the interaction of logic and probability is discussed and it is argued that many extensions of logic, such as "default logic" are better understood in a probabilistic framework. The main claim of this paper is that the numerous schemes for representing and reasoning about uncertainty that have appeared in the AI literature are unnecessary - probability is all that is needed."
+  
+ 
+ 
+  * symbolic vs non-symbolic approaches
+  
+    symbolic
+      - brittle, poor handling of uncertainty/ambiguity
+      - time-consuming to train
+      - poor at generalizing
+      - difficult to acquire new symbols
+      - symbol grounding problem
+  
+    non-symbolic
+      - computational ("congitive science"): "what" - the goals of the system
+      - algorithmic: "how" - the representations and algorithms
+      - implementation ("brain emulation"): "medium" - the physical realisation
+
+  
+    "Aetherial Symbols" by Geoffrey Hinton - https://drive.google.com/file/d/0B8i61jl8OE3XdHRCSkV1VFNqTWc
+    	"The fathers of AI believed that formal logic provided insight into how human reasoning must work. For implications to travel from one sentence to the next, there had to be rules of inference containing variables that got bound to symbols in the first sentence and carried the implications to the second sentence. I shall demonstrate that this belief is as incorrect as the belief that a lightwave can only travel through space by causing disturbances in the luminiferous aether. In both cases, scientists were misled by compelling but incorrect analogies to the only systems they knew that had the required properties. Arguments have little impact on such strongly held beliefs. What is needed is a demonstration that it is possible to propagate implications in some quite different way that does not involve rules of inference and has no resemblance to formal logic. Recent results in machine translation using recurrent neural networks show that the meaning of a sentence can be captured by a "thought vector" which is simply the hidden state vector of a recurrent net that has read the sentence one word at a time. In future, it will be possible to predict thought vectors from the sequence of previous thought vectors and this will capture natural human reasoning. With sufficient effort, it may even be possible to train such a system to ignore nearly all of the contents of its thoughts and to make predictions based purely on those features of the thoughts that capture the logical form of the sentences used to express them."
+    	"If we can convert a sentence into a vector that captures the meaning of the sentence, then google can do much better searches, they can search based on what is being said in a document. Also, if you can convert each sentence in a document into a vector, you can then take that sequence of vectors and try and model why you get this vector after you get these vectors, that's called reasoning, that's natural reasoning, and that was kind of the core of good old fashioned AI and something they could never do because natural reasoning is a complicated business, and logic isn't a very good model of it, here we can say, well, look, if we can read every english document on the web, and turn each sentence into a thought vector, we've got plenty of data for training a system that can reason like people do. Now, you might not want to reason like people do on the web, but at least we can see what they would think."
+    	"Most people fall for the traditional AI fallacy that thought in the brain must somehow resemble lisp expressions. You can tell someone what thought you are having by producing a string of words that would normally give rise to that thought but this doesn't mean the thought is a string of symbols in some unambiguous internal language. The new recurrent network translation models make it clear that you can get a very long way by treating a thought as a big state vector. Traditional AI researchers will be horrified by the view that thoughts are merely the hidden states of a recurrent net and even more horrified by the idea that reasoning is just sequences of such state vectors. That's why I think its currently very important to get our critics to state, in a clearly decideable way, what it is they think these nets won't be able to learn to do. Otherwise each advance of neural networks will be met by a new reason for why that advance does not really count. So far, I have got both Garry Marcus and Hector Levesque to agree that they will be impressed if neural nets can correctly answer questions about "Winograd" sentences such as "The city councilmen refused to give the demonstrators a licence because they feared violence." Who feared the violence?"
+    	"There are no symbols inside the encoder and decoder neural nets for machine translation. The only symbols are at the input and output. Processing pixel arrays is not done by manipulating internal pixels. Maybe processing symbol strings is not done by manipulating internal symbol strings. It was obvious to physicists that light waves must have an aether to propagate from one place to the next. They thought there was no other possibility. It was obvious to AI researchers that people must use formal rules of inference to propagate implications from one proposition to the next. They thought there was no other possibility. What is inside the black box is not necessarily what goes in or what comes out. The physical symbol system hypothesis is probably false."
+    	"Most of our reasoning is by analogy; it's not logical reasoning. The early AI guys thought we had to use logic as a model and so they couldn't cope with reasoning by analogy. The honest ones, like Allen Newell, realized that reasoning by analogy was a huge problem for them, but they weren't willing to say that reasoning by analogy is the core kind of reasoning we do, and logic is just a sort of superficial thing on top of it that happens much later."
+  
+    "Neural Programmer Interpreters" by Nando de Freitas - http://youtu.be/tPWGGwmgwG0?t=5m40s + http://videolectures.net/kdd2016_de_freitas_recurrent_neural/ (00:52:10)
+    	"For me there are two types of generalisation, which I will refer to as Symbolic and Connectionist generalisation. If we teach a machine to sort sequences of numbers of up to length 10 or 100, we should expect them to sort sequences of length 1000 say. Obviously symbolic approaches have no problem with this form of generalisation, but neural nets do poorly. On the other hand, neural nets are very good at generalising from data (such as images), but symbolic approaches do poorly here. One of the holy grails is to build machines that are capable of both symbolic and connectionist generalisation. Neural Programmer Interpreters is a very early step toward this. NPI can do symbolic operations such as sorting and addition, but it can also plan by taking images as input and it's able to generalise the plans to different images (e.g. in the NPI car example, the cars are test set cars not seen before)."
+  
+ 
+ 
+  * deductive vs inductive reasoning
+ 
+    E. T. Jaynes - "Probability Theory - The Logic of Science":
+
+	reasoning is deductive when enough information is at hand to permit it and inductive/plausible when necessary information is not available
+
+	rules for deductive reasoning:
+	(1)  (if A is true, then B is true), (A is true) |- (B is true)
+	(2)  (if A is true, then B is true), (B is false) |- (A is false)
+
+	rules for inductive/plausible reasoning:
+	(3)  (if A is true, then B is true), (B is true) |- (A becomes more plausible)
+	(4)  (if A is true, then B is true), (A is false) |- (B becomes less plausible)
+	(5)  (if A is true, then B becomes more plausible), (B is true) |- (A becomes more plausible)"
+ 
+	The reasoning of a scientist, by which he accepts or rejects his theories, consists almost entirely of syllogisms of the kinds (2) and (3).
+
+	Evidently, the deductive reasoning described above has the property that we can go through long chains of reasoning of the type (1) and (2) and the conclusions have just as much certainty as the premises. With the other kinds of reasoning, (3)–(5), the reliability of the conclusion changes as we go through several stages. But in their quantitative form we shall find that in many cases our conclusions can still approach the certainty of deductive reasoning. Pólya showed that even a pure mathematician actually uses these weaker forms of reasoning most of the time. Of course, on publishing a new theorem, the mathematician will try very hard to invent an argument which uses only the first kind; but the reasoning process which led to the theorem in the first place almost always involves one of the weaker forms (based, for example, on
+following up conjectures suggested by analogies). Good mathematicians see analogies between theorems; great mathematicians see analogies between analogies.
+
+ 
+    type of inference:
+    	deduction - specialization/derivation
+    	induction - generalization/prediction
+    framework:
+    	deduction - logic axioms
+    	induction - probability theory
+    assumptions:
+    	deduction - non-logical axioms
+    	induction - prior
+    inference rule:
+    	deduction - Modus Ponens
+    	induction - Bayes rule
+    results:
+    	deduction - theorems
+    	induction - posterior
+    universal scheme:
+    	deduction - Zermelo-Fraenkel set theory
+    	induction - Solomonoff probability distribution
+    universal inference:
+    	deduction - universal theorem prover
+    	induction - universal induction
+    limitation:
+    	deduction - incomplete (Goedel)
+    	induction - incomputable
+    in practice:
+    	deduction - semi-formal proofs
+    	induction - approximations
+    operation:
+    	deduction - proof
+    	induction - computation
+
+
+
+
+[decisions/actions]
 
  * Reinforcement Learning
 
@@ -388,15 +369,44 @@ research problems:
 
 	(Juergen Schmidhuber) "Current commercial AI algorithms are still missing something fundamental. They are no self-referential general purpose learning algorithms. They improve some system’s performance in a given limited domain, but they are unable to inspect and improve their own learning algorithm. They do not learn the way they learn, and the way they learn the way they learn, and so on (limited only by the fundamental limits of computability)."
 
-	http://people.idsia.ch/~juergen/metalearner.html
-	http://scholarpedia.org/article/Metalearning
 
 	"Learning to Learn, to Program, to Explore and to Seek Knowledge" by Nando de Freitas - https://youtube.com/watch?v=tPWGGwmgwG0
 
 
-	applications
-		"Learning to Learn Neural Networks" by Bosc - http://www.thespermwhale.com/jaseweston/ram/papers/paper_16.pdf
+	"Why Tool AIs Want to Be Agent AIs" - http://www.gwern.net/Tool%20AI
 
+	"Roughly, we can try to categorize the different kinds of agentiness by the level of the neural network they work on. There are:
+	1. actions internal to a computation
+	  - inputs
+	  - intermediate states
+	  - accessing the external environment
+	  - amount of computation
+	  - enforcing constraints/finetuning quality of output
+	  - changing the loss function applied to output
+	2. actions internal to training the neural network
+	  - the gradient itself
+	  - size & direction of gradient descent steps on each parameter
+	  - overall gradient descent learning rate and learning rate schedule
+	  - choice of data samples to train on
+	3. internal to the neural network design step
+	  - hyperparameter optimization
+	  - neural network architecture
+	4. internal to the dataset
+	  - active learning
+	  - optimal experiment design
+	5. internal to interaction with environment
+	  - adaptive experiment
+	  - multi-armed bandit
+	  - exploration for reinforcement learning"
+
+	"The logical extension of these neural networks all the way down papers is that an actor like Google/Baidu/Facebook/MS could effectively turn neural networks into a black box: a user/developer uploads through an API a dataset of input/output pairs of a specified type and a monetary loss function, and a top-level neural network running on a large GPU cluster starts autonomously optimizing over architectures & hyperparameters for the neural network design which balances GPU cost and the monetary loss, interleaved with further optimization over the thousands of previous submitted tasks, sharing its learning across all of the datasets/loss functions/architectures/hyperparameters, and the original user simply submits future data through the API for processing by the best neural network so far."
+
+
+	http://people.idsia.ch/~juergen/metalearner.html
+	http://scholarpedia.org/article/Metalearning
+
+
+	applications
 		"One-shot Learning with Memory-Augmented Neural Networks" by Santoro et al. - http://arxiv.org/abs/1605.06065 + http://shortscience.org/paper?bibtexKey=journals/corr/1605.06065 (Larochelle) + http://techtalks.tv/talks/meta-learning-with-memory-augmented-neural-networks/62523/ + https://vk.com/wall-44016343_8782
 
 		"Learning to Learn by Gradient Descent by Gradient Descent" by Andrychowicz et al. - http://arxiv.org/abs/1606.04474 + https://youtu.be/tPWGGwmgwG0?t=10m50s (de Freitas) + https://youtu.be/x1kf4Zojtb0?t=1h4m53s (de Freitas)
@@ -404,15 +414,6 @@ research problems:
 		"RL2: Fast Reinforcement Learning via Slow Reinforcement Learning" by Duan et al. - http://arxiv.org/abs/1611.02779
 
 		"Learning to Reinforcement Learn" by Wang et al. - http://arxiv.org/abs/1611.05763
-
-
-	constructionist vs constructivist approaches
-		constructionist approach: AI system built by hand; learning is restricted to combining predefined situations and tasks, based on detailed specifications provided by a human programmer. While the system may automatically improve performance in some limited domain, the domain itself is decided and defined by the programmer.
-
-		constructivist approach: Self-constructive AI system with general knowledge acquisition and integration skills. Systems capable of architectural self-modification and self-directed growth; develop from a seed specification; capable of learning to perceive, think and act in a wide range of novel situations and domains and learning to perform a number of different tasks.
-
-		Kris Thorisson on constructivist vs constructionist approaches - http://intelligence.org/2014/09/14/kris-thorisson/
-		"A New Kind of AI" by Kris Thorisson - http://youtube.com/watch?v=hQ20pwUkeak
 
 
 	Goedel Machine
@@ -572,9 +573,6 @@ interesting papers (see below):
  * definitions and measures of intelligence
  * induction, prediction, intelligence
  * intrinsic motivation
- * self-improvement and resource-boundedness
-
- + reinforcement learning - https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt
 
 
 
@@ -789,61 +787,9 @@ Orseau - "Universal Knowledge-Seeking Agents" [http://www.agroparistech.fr/mmip/
 	"The related agent, Shannon-KSA, based on Shannon entropy, has interesting properties and its value function can be interpreted in terms of how many bits of complexity (information) the agent can expect to gain by doing a particular string of actions. Its asymptotic optimality has been proven but with more restrictions than for Square-KSA, and it is not clear if it can be extended beyond the current limitations."
 	"As for AIXI, we hope that the various KSA properties to extend nicely to stochastic computable environments. We also expect Square-KSAρ or Shannon-KSAρ (or both) to be Pareto optimal, to converge quickly, in an optimal way to the true environment, i.e., no learning agent should acquire knowledge faster. We are currently trying to get rid of the horizon function in an optimal way. One possibility could be to choose an horizon function based on ρ(h), although having asymptotic optimality for a geometric discounting would also be a good property, as such discounting is time consistent and widely used in RL. Another important concern is how to optimally (for some definition of optimality) scale down SquareKSAρ to a computable agent."
 
-
-
-
-[interesting papers - self-improvement and resource-boundedness]
-
 Schmidhuber - "Goedel Machines: Self-Referential Universal Problem Solvers Making Provably Optimal Self-Improvements" [http://arxiv.org/abs/cs/0309048]
 	"We present the first class of mathematically rigorous, general, fully self-referential, self-improving, optimally efficient problem solvers. Inspired by Kurt Goedel's celebrated self-referential formulas, such a problem solver rewrites any part of its own code as soon as it has found a proof that the rewrite is useful, where the problem-dependent utility function and the hardware and the entire initial code are described by axioms encoded in an initial proof searcher which is also part of the initial code. The searcher systematically and efficiently tests computable proof techniques (programs whose outputs are proofs) until it finds a provably useful, computable self-rewrite. We show that such a self-rewrite is globally optimal - no local maxima! - since the code first had to prove that it is not useful to continue the proof search for alternative self-rewrites. Unlike previous non-self-referential methods based on hardwired proof searchers, ours not only boasts an optimal order of complexity but can optimally reduce any slowdowns hidden by the O()-notation, provided the utility of such speed-ups is provable at all."
 	"The initial software p(1) of our Goedel machine runs an initial, typically sub-optimal problem solver, e.g., one of Hutter’s approaches which have at least an optimal order of complexity, or some less general method. Simultaneously, it runs an O()-optimal initial proof searcher using an online variant of Universal Search to test proof techniques, which are programs able to compute proofs concerning the system’s own future performance, based on an axiomatic system A encoded in p(1), describing a formal utility function u, the hardware and p(1) itself. If there is no provably good, globally optimal way of rewriting p(1) at all, then humans will not find one either. But if there is one, then p(1) itself can find and exploit it. This approach yields the first class of theoretically sound, fully self-referential, optimally efficient, general problem solvers. After the theoretical discussion, one practical question remains: to build a particular, especially practical Goedel machine with small initial constant overhead, which generally useful theorems should one add as axioms to A (as initial bias) such that the initial searcher does not have to prove them from scratch?"
-
-Hochreiter, Younger, Conwell - "Learning To Learn Using Gradient Desent" [http://www.bioinf.jku.at/publications/older/1504.pdf]
-	"This paper introdues the application of gradient desent methods to meta-learning. The conept of meta-learning", i.e. of a system that improves or disovers a learning algorithm, has been of interest in mahine learning for decades beause of its appealing applications. Previous meta-learning approahes have been based on evolutionary methods and, therefore, have been restrited to small models with few free parameters. We make meta-learning in large systems feasible by using recurrent neural networks with their attendant learning routines as meta-learning systems. Our system derived complex well performing learning algorithms from scratch. In this paper we also show that our approach performs non-stationary time series prediction."
-	"Previous approaches to meta-learning are infeasible for a large number of system parameters. To handle many free parameters this paper presented the application of gradient desent to meta-learning by using recurrent nets. Our theoretial analysis indicated that LSTM is a good meta-learner what was confirmed in the experiments. With an LSTM net our system derived a learning algorithm able to approximate any quadratic funtion after only 35 examples. Our approach requires a single training sequence, therefore, it may be relevant for lifelong learning and autonomous robots. The meta-learner proposed in this paper performed non-stationary time series prediction."
-	-- http://people.idsia.ch/~juergen/metalearner.html
-	(Juergen Schmidhuber) "Self-referential RNNs with special output units for addressing and rapidly manipulating each of the RNN's own weights in differentiable fashion."
-	"Author trained LSTM networks with roughly 5000 weights to METALEARN fast online learning algorithms for nontrivial classes of functions, such as all quadratic functions of two variables. LSTM is necessary because metalearning typically involves huge time lags between important events, and standard RNNs cannot deal with these. After a month of metalearning on a slow PC of 15 years ago, all weights are frozen, then the frozen net is used as follows: some new function f is selected, then a sequence of random training exemplars of the form ...data/target/data/target/data... is fed into the INPUT units, one sequence element at a time. After about 30 exemplars the frozen recurrent net correctly predicts target inputs before it sees them. No weight changes! How is this possible? After metalearning the frozen net implements a sequential learning algorithm which apparently computes something like error signals from data inputs and target inputs and translates them into changes of internal estimates of f. Parameters of f, errors, temporary variables, counters, computations of f and of parameter updates are all somehow represented in form of circulating activations. Remarkably, the new - and quite opaque - online learning algorithm running on the frozen network is much faster than standard backprop with optimal learning rate. This indicates that one can use gradient descent to metalearn learning algorithms that outperform gradient descent. Furthermore, the metalearning procedure automatically avoids overfitting in a principled way, since it punishes overfitting online learners just like it punishes slow ones, simply because overfitters and slow learners cause more cumulative errors during metalearning."
-	-- http://scholarpedia.org/article/Metalearning
-
-Bosc - "Learning to Learn Neural Networks" [http://www.thespermwhale.com/jaseweston/ram/papers/paper_16.pdf]
-	"Meta-learning consists in learning learning algorithms. We use a Long Short Term Memory based network to learn to compute on-line updates of the parameters of another neural network. These parameters are stored in the cell state of the LSTM. Our framework allows to compare learned algorithms to hand-made algorithms within the traditional train and test methodology. In an experiment, we learn a learning algorithm for a one-hidden layer Multi-Layer Perceptron on non-linearly separable datasets. The learned algorithm is able to update parameters of both layers and generalise well on similar datasets."
-	"Meta-learning is the process of learning to fit parameters, that is, learning to learn. In this article, we focus on learning on-line learning algorithms: the data arrives sequentially and is shown only once. Thus, the meta-learning system is forced to update the parameters of the model after each observation."
-	"Hochreiter et al. show that it is possible to train a Recurrent Neural Network to learn the coefficients of quadratic functions under supervision using gradient descent. At each timestep, the RNN is given the inputs of the current timestep and the previous target. With a simple objective - correctly predicting the targets at each timestep - the RNN learns to improve its predictions with appropriate updates of its internal state. They use a LSTM with an additional hidden layer between the LSTM block and the output. In this work, we introduce a separator flag that split each sequence into a train and a test set. This enables us to compare learned algorithms to hand-made algorithms. In an experiment, a LSTM-based network is trained to learn a small one-hidden-layer MLP on a binary classification task. The weights of the MLP are stored in the LSTM memory state. We show that potentially complex and deep networks could be learned using this technique."
-
-Santoro, Bartunov, Botvinick, Wierstra, Lillicrap - "One-shot Learning with Memory-Augmented Neural Networks" [http://arxiv.org/abs/1605.06065]
-	"Despite recent breakthroughs in the applications of deep neural networks, one setting that presents a persistent challenge is that of "one-shot learning." Traditional gradient-based networks require a lot of data to learn, often through extensive iterative training. When new data is encountered, the models must inefficiently relearn their parameters to adequately incorporate the new information without catastrophic interference. Architectures with augmented memory capacities, such as Neural Turing Machines, offer the ability to quickly encode and retrieve new information, and hence can potentially obviate the downsides of conventional models. Here, we demonstrate the ability of a memory-augmented neural network to rapidly assimilate new data, and leverage this data to make accurate predictions after only a few samples. We also introduce a new method for accessing an external memory that focuses on memory content, unlike previous methods that additionally use memory location-based focusing mechanisms."
-	"Many important learning problems demand an ability to draw valid inferences from small amounts of data, rapidly and knowledgeably adjusting to new information. Such problems pose a particular challenge for deep learning, which typically relies on slow, incremental parameter changes. We investigated an approach to this problem based on the idea of meta-learning. Here, gradual, incremental learning encodes background knowledge that spans tasks, while a more flexible memory resource binds information particular to newly encountered tasks. Our central contribution is to demonstrate the special utility of a particular class of MANNs for meta-learning. These are deep learning architectures containing a dedicated, addressable memory resource that is structurally independent from the mechanisms that implement process control. The MANN examined here was found to display performance superior to a LSTM in two meta-learning tasks, performing well in classification and regression tasks when only sparse training data was available."
-	"A critical aspect of the tasks studied is that they cannot be performed based solely on rote memory. New information must be flexibly stored and accessed, with correct performance demanding more than just accurate retrieval. Specifically, it requires that inferences be drawn from new data based on longer-term experience, a faculty sometimes referred as “inductive transfer.” MANNs are well-suited to meet these dual challenges, given their combination of flexible memory storage with the rich capacity of deep architectures for representation learning."
-	"Meta-learning is recognized as a core ingredient of human intelligence, and an essential test domain for evaluating models of human cognition. Given recent successes in modeling human skills with deep networks, it seems worthwhile to ask whether MANNs embody a promising hypothesis concerning the mechanisms underlying human meta-learning. In informal comparisons against human subjects, the MANN employed in this paper displayed superior performance, even at set-sizes that would not be expected to overtax human working memory capacity. However, when memory is not cleared between tasks, the MANN suffers from proactive interference, as seen in many studies of human memory and inference. These preliminary observations suggest that MANNs may provide a useful heuristic model for further investigation into the computational basis of human meta-learning. The work we presented leaves several clear openings for next-stage development. First, our experiments employed a new procedure for writing to memory that was prima facie well suited to the tasks studied. It would be interesting to consider whether meta-learning can itself discover optimal memory-addressing procedures. Second, although we tested MANNs in settings where task parameters changed across episodes, the tasks studied contained a high degree of shared high-level structure. Training on a wider range of tasks would seem likely to reintroduce standard challenges associated with continual learning, including the risk of catastrophic interference. Finally, it may be of interest to examine MANN performance in meta-learning tasks requiring active learning, where observations must be actively selected."
-	--
-	 - "Neural network weights learn to fit a function through many examples, but can't adapt quickly to new/small amounts of data.
-	 - Memory modules can give networks a short-term memory to do this, and the metalearning setup they investigate is learning how to utilise this memory effectively. The memory structure exists, but the network needs to learn how to store and retrieve data for the task at hand.
-	 - The task is to predict xt when only yt-1 is provided at the same time - it can't learn a single mapping and must use its memory to compare xt to previously seen inputs with provided labels. It never knows the correct class of the first instance presented of each class (but it can make an educated guess by not guessing previously seen classes that look different). So labels are given at test time as well.
-	 - The shuffling means mixing up the labels e.g. giving a picture of 1 the class label 3, and the picture of 2 a class label of 5 etc. This way the network can't encode mappings in its weights, it has to learn how to learn (store examples in memory for comparison later). More explicitly, it has to store a sample and its label in the next time step if it intends to use it for comparison with new data."
-	-- http://techtalks.tv/talks/meta-learning-with-memory-augmented-neural-networks/62523/ + https://vk.com/wall-44016343_8782
-	-- https://youtube.com/watch?v=qos2CcviAuY (Bartunov, in russian)
-	-- http://shortscience.org/paper?bibtexKey=journals/corr/1605.06065 (Larochelle)
-	-- https://github.com/tristandeleu/ntm-one-shot
-
-Thorisson - "A New Constructivist AI: From Manual Methods to Self-Constructive Systems" [http://xenia.media.mit.edu/~kris/ftp/Thorisson_chapt9_TFofAGI_Wang_Goertzel_2012.pdf]
-	"The development of artificial intelligence systems has to date been largely one of manual labor. This constructionist approach to AI has resulted in systems with limited-domain application and severe performance brittleness. No AI architecture to date incorporates, in a single system, the many features that make natural intelligence general-purpose, including system-wide attention, analogy-making, system-wide learning, and various other complex transversal functions. Going beyond current AI systems will require significantly more complex system architecture than attempted to date. The heavy reliance on direct human specification and intervention in constructionist AI brings severe theoretical and practical limitations to any system built that way. One way to address the challenge of artificial general intelligence (AGI) is replacing a top-down architectural design approach with methods that allow the system to manage its own growth. This calls for a fundamental shift from hand-crafting to self-organizing architectures and self-generated code – what we call a constructivist AI approach, in reference to the self-constructive principles on which it must be based. Methodologies employed for constructivist AI will be very different from today’s software development methods; instead of relying on direct design of mental functions and their implementation in a cognitive architecture, they must address the principles – the “seeds” – from which a cognitive architecture can automatically grow. In this paper I describe the argument in detail and examine some of the implications of this impending paradigm shift."
-	-- http://youtube.com/watch?v=_Pmz4BcrPo0
-
-Helgason, Nivel, Thorisson - "On Attention Mechanisms for AGI Architectures: A Design Proposal" [http://agi-conference.org/2012/wp-content/uploads/2012/12/paper_16.pdf]
-	"Many existing AGI architectures are based on the assumption of infinite computational resources, as researchers ignore the fact that real-world tasks have time limits, and managing these is a key part of the role of intelligence. In the domain of intelligent systems the management of system resources is typically called “attention”. Attention mechanisms are necessary because all moderately complex environments are likely to be the source of vastly more information than could be processed in realtime by an intelligence’s available cognitive resources. Even if sufficient resources were available, attention could help make better use of them. We argue that attentional mechanisms are not only nice to have, for AGI architectures they are an absolute necessity. We examine ideas and concepts from cognitive psychology for creating intelligent resource management mechanisms and how these can be applied to engineered systems. We present a design for a general attention mechanism intended for implementation in AGI architectures."
-
-Steunebrink, Koutnik, Thorisson, Nivel, Schmidhuber - "Resource-Bounded Machines are Motivated to be Effective, Efficient, and Curious" [http://people.idsia.ch/~steunebrink/Publications/AGI13_resource-bounded.pdf]
-	"Resource-boundedness must be carefully considered when designing and implementing artificial general intelligence algorithms and architectures that have to deal with the real world. But not only must resources be represented explicitly throughout its design, an agent must also take into account their usage and the associated costs during reasoning and acting. Moreover, the agent must be intrinsically motivated to become progressively better at utilizing resources. This drive then naturally leads to effectiveness, efficiency, and curiosity. We propose a practical operational framework that explicitly takes into account resource constraints: activities are organized to maximally utilize an agent’s bounded resources as well as the availability of a teacher, and to drive the agent to become progressively better at utilizing its resources. We show how an existing AGI architecture called AERA can function inside this framework. In short, the capability of AERA to perform self-compilation can be used to motivate the system to not only accumulate knowledge and skills faster, but also to achieve goals using less resources, becoming progressively more effective and efficient."
-	-- http://youtube.com/watch?v=mGaiXhcIZQY
-
-Nivel, Thorisson, Steunebrink, Dindo, Pezzulo, Rodriguez, Hernandez, Ognibene, Schmidhuber, Sanz, Helgason, Chella - "Bounded Seed-AGI" [http://people.idsia.ch/~steunebrink/Publications/AGI14_seed-AGI.pdf]
-	"Four principal features of autonomous control systems are left both unaddressed and unaddressable by present-day engineering methodologies: (1) The ability to operate effectively in environments that are only partially known at design time; (2) A level of generality that allows a system to reassess and redefine the fulfillment of its mission in light of unexpected constraints or other unforeseen changes in the environment; (3) The ability to operate effectively in environments of significant complexity; and (4) The ability to degrade gracefully - how it can continue striving to achieve its main goals when resources become scarce, or in light of other expected or unexpected constraining factors that impede its progress. We describe new methodological and engineering principles for addressing these shortcomings, that we have used to design a machine that becomes increasingly better at behaving in underspecified circumstances, in a goal-directed way, on the job, by modeling itself and its environment as experience accumulates. The work provides an architectural blueprint for constructing systems with high levels of operational autonomy in underspecified circumstances, starting from only a small amount of designer-specified code - a seed. Using value-driven dynamic priority scheduling to control the parallel execution of a vast number of lines of reasoning, the system accumulates increasingly useful models of its experience, resulting in recursive self-improvement that can be autonomously sustained after the machine leaves the lab, within the boundaries imposed by its designers. A prototype system named AERA has been implemented and demonstrated to learn a complex real-world task—real-time multimodal dialogue with humans - by on-line observation. Our work presents solutions to several challenges that must be solved for achieving artificial general intelligence."
-	-- http://youtube.com/watch?v=hQ20pwUkeak
-
-Hadfield-Menell, Dragan, Abbeel, Russell - "Cooperative Inverse Reinforcement Learning" [http://arxiv.org/abs/1606.03137]
-	"For an autonomous system to be helpful to humans and to pose no unwarranted risks, it needs to align its values with those of the humans in its environment in such a way that its actions contribute to the maximization of value for the humans. We propose a formal definition of the value alignment problem as cooperative inverse reinforcement learning. A CIRL problem is a cooperative, partial information game with two agents, human and robot; both are rewarded according to the human’s reward function, but the robot does not initially know what this is. In contrast to classical IRL, where the human is assumed to act optimally in isolation, optimal CIRL solutions produce behaviors such as active teaching, active learning, and communicative actions that are more effective in achieving value alignment. We show that computing optimal joint policies in CIRL games can be reduced to solving a POMDP, prove that optimality in isolation is suboptimal in CIRL, and derive an approximate CIRL algorithm."
-	"In this work, we presented a game-theoretic model for cooperative learning, CIRL. Key to this model is that the robot knows that it is in a shared environment and is attempting to maximize the human’s reward (as opposed to estimating the human’s reward function and adopting it as its own). This leads to cooperative learning behavior and provides a framework in which to design HRI algorithms and analyze the incentives of both actors in a learning environment. We reduced the problem of computing an optimal policy pair to solving a POMDP. This is a useful theoretical tool and can be used to design new algorithms, but it is clear that optimal policy pairs are only part of the story. In particular, when it performs a centralized computation, the reduction assumes that we can effectively program both actors to follow a set coordination policy. This may not be feasible in reality, although it may nonetheless be helpful in training humans to be better teachers. An important avenue for future research will be to consider the problem of equilibrium acquisition: the process by which two independent actors arrive at an equilibrium pair of policies. Returning to Wiener’s warning, we believe that the best solution is not to put a specific purpose into the machine at all, but instead to design machines that provably converge to the right purpose as they go along."
 
 
 

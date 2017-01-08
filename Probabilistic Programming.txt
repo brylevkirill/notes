@@ -1,18 +1,9 @@
-"Probabilistic models provide a framework for describing abstract prior knowledge and using it to reason under uncertainty. Probabilistic programs are a powerful tool for probabilistic modeling. A probabilistic programming language is a deterministic programming language augmented with random sampling and Bayesian conditioning operators. Performing inference on these programs then involves reasoning about the space of executions which satisfy some constraints, such as observed values. A universal PPL, one built on a Turing-complete language, can represent any computable probability distribution, including open-world models, Bayesian non-parameterics, and stochastic recursion."
-
-"Probabilistic programming is a mechanism for compactly and compositionally representing a large set of richly expressive generative models, which are widely used in machine learning and current artificial intelligence research and applications, as well as performing general-purpose automatic algorithms to make inference in such models. Specifically, Turing-complete, higher-order probabilistic programming systems open up the possibility of doing inference over generative models themselves. The goal is to find an efficient, robust way to automatically produce and tune models based on training data and knowledge."
-
-"In the context of Turing-complete, higher-order probabilistic programming languages, a probabilistic program is simultaneously a generative model and a procedure for sampling from the same. All probabilistic programming procedures are program text that describe how to generate a sample value conditioned on the value of arguments. A probabilistic programming procedure is a constructivist description of a conditional distribution."
-
-"In probabilistic programming language the meaning of the program is the distribution it samples from."
-"From an AI perspective, probabilistic programs are an extremely general representation of knowledge, and one that identifies uncertainty with stochastic computation."
-"It's a way of doing machine learning without writing algorithms."
-"You write a simulator of the world, which is a probabilistic program, and environment takes that program and runs it backwards."
-"It's less coding, which allows rapid prototyping, makes it much faster to develop machine learning systems, is easier to debug - there are tons of advantages.”
-
-"Probabilistic programming systems represent generative models as programs in a language that has specialized syntax for definition and conditioning of random variables. A backend provides one or more general-purpose inference methods for any program in this language, resulting in an abstraction boundary between model and inference algorithm design. Models specified as programs are often concise, modular, and easy to modify or extend. This allows definition of structured priors that are specifically tailored to an application domain in a manner that is efficient in terms of the dimensionality of its latent variables, albeit at the expense of performing inference with generic methods that may not take advantage of model-specific optimizations."
-
-
+  * overview
+  * applications in cognitive science
+  * industry
+  * projects
+  * higher-order probabilistic programming
+  * interesting papers
 
 
 selected papers and books - https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
@@ -25,6 +16,21 @@ bayesian inference and learning -
 
 
 [overview]
+
+  "Probabilistic programming is a mechanism for compactly and compositionally representing a large set of richly expressive generative models as well as performing general-purpose automatic algorithms to make inference in such models. Specifically, Turing-complete, higher-order probabilistic programming systems open up the possibility of doing inference over generative models themselves. The goal is to find an efficient, robust way to automatically produce and tune models based on training data and knowledge."
+
+  "Probabilistic models provide a framework for describing abstract prior knowledge and using it to reason under uncertainty. Probabilistic programs are a powerful tool for probabilistic modeling. A probabilistic programming language is a deterministic programming language augmented with random sampling and Bayesian conditioning operators. Performing inference on these programs then involves reasoning about the space of executions which satisfy some constraints, such as observed values. A universal probabilistic programming language, one built on a Turing-complete language, can represent any computable probability distribution, including open-world models, Bayesian non-parameterics, and stochastic recursion."
+
+  "In the context of Turing-complete, higher-order probabilistic programming languages, a probabilistic program is simultaneously a generative model and a procedure for sampling from the same. All probabilistic programming procedures are program text that describe how to generate a sample value conditioned on the value of arguments. A probabilistic programming procedure is a constructivist description of a conditional distribution."
+
+  "In probabilistic programming language the meaning of the program is the distribution it samples from."
+  "From an AI perspective, probabilistic programs are an extremely general representation of knowledge, and one that identifies uncertainty with stochastic computation."
+  "It's a way of doing machine learning without writing algorithms."
+  "You write a simulator of the world, which is a probabilistic program, and environment takes that program and runs it backwards."
+  "It's less coding, which allows rapid prototyping, makes it much faster to develop machine learning systems, is easier to debug - there are tons of advantages.”
+
+  "Probabilistic programming systems represent generative models as programs in a language that has specialized syntax for definition and conditioning of random variables. A backend provides one or more general-purpose inference methods for any program in this language, resulting in an abstraction boundary between model and inference algorithm design. Models specified as programs are often concise, modular, and easy to modify or extend. This allows definition of structured priors that are specifically tailored to an application domain in a manner that is efficient in terms of the dimensionality of its latent variables, albeit at the expense of performing inference with generic methods that may not take advantage of model-specific optimizations."
+
 
   https://plus.google.com/+BeauCronin/posts/KpeRdJKR6Z1
   http://americanscientist.org/libraries/documents/20158411291411312-2015-09Hayes.pdf
@@ -106,7 +112,7 @@ bayesian inference and learning -
 
 
 
-[applications]
+[industry]
 
   Microsoft Office 365 (using Infer.NET) - https://cambridgenetwork.co.uk/news/email-clutter-machine-learning-probabilistic-programming/
   Microsoft Excel plugin (using Infer.NET) - http://research.microsoft.com/en-us/projects/tabular/
