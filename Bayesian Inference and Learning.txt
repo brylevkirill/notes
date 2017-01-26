@@ -65,8 +65,6 @@ selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91I
 
   https://quora.com/What-is-the-most-important-mathematical-concept-in-statistics
 
-  definitions of probability by Kolmogorov and Jaynes - https://youtube.com/watch?v=Ihud7yG2iKs (in russian)
-
 
   "Probabilistic Modelling" by Iain Murray -
 	https://youtube.com/watch?v=pOtvyVYAuW4 + https://youtube.com/watch?v=khagz6yWL9w + https://youtube.com/watch?v=U1IAMQYZjfw
@@ -83,7 +81,10 @@ selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91I
   course by Joe Blitzstein - https://youtube.com/playlist?list=PLCzY7wK5FzzPANgnZq5pIT3FOomCT1s36
   "Bayesian Statistics" - https://coursera.org/learn/bayesian/
   "Математическая статистика" - https://compscicenter.ru/courses/math-stat/2015-spring/ (in russian)
-  "Algorithmic Information Theory and Randomness" - http://youtube.com/watch?v=X0Lo5IWLjko (in russian)
+
+
+  definitions of probability by Kolmogorov and Jaynes - https://youtube.com/watch?v=Ihud7yG2iKs (in russian)
+  definition of randomness in algorithmic information theory - http://youtube.com/watch?v=X0Lo5IWLjko (in russian)
 
 
 
@@ -394,26 +395,25 @@ challenges:
 
   https://reddit.com/r/MachineLearning/comments/3zwlpm/eli5_gaussian_processes/
 
-
+  
   Zoubin Ghahramani - https://youtu.be/H7AMB0oo__4?t=21m51s + http://webdav.tuebingen.mpg.de/mlss2013/2015/slides/ghahramani/gp-neural-nets15.pdf
-
-  Neil Lawrence - "Gaussian Processes" - https://youtube.com/watch?v=S9RbSCpy_pg + https://youtube.com/watch?v=MxeQIKGEXb8 + https://youtube.com/watch?v=Ead4TivIOmU
 
   Nando de Freitas - https://youtube.com/watch?v=4vGiHC35j9s + https://youtube.com/watch?v=MfHKW5z-OOA
 
-  Neil Lawrence - https://dl.dropboxusercontent.com/u/16027344/ICML%202015%20Deep%20Learning%20Workshop/Neil%20Lawrence%2C%20Sheffield%20University.p2g/Default.html
+  Tamara Broderick, Michael Jordan - "Nonparametric Bayesian Methods: Models, Algorithms, and Applications" -
+	https://youtube.com/watch?v=I7bgrZjoRhM + https://youtube.com/watch?v=yfLoxwjCGNY + https://youtube.com/watch?v=2H2n4iUYpZE + https://youtube.com/watch?v=EUUyQbtUXR0
 
-  Tamara Broderick - "Bayesian Nonparametrics" - https://youtube.com/watch?v=kKZkNUvsJ4M + https://youtube.com/watch?v=oPcv8MaESGY + https://youtube.com/watch?v=HpcGlr19vNk
+  Tamara Broderick - "Bayesian Nonparametrics" -
+	https://youtube.com/watch?v=kKZkNUvsJ4M + https://youtube.com/watch?v=oPcv8MaESGY + https://youtube.com/watch?v=HpcGlr19vNk
+	https://youtube.com/watch?v=FUL1DcjOjwo + https://youtube.com/watch?v=8duQxlppe5Y + https://youtube.com/watch?v=mC-jZcEb7ME
 
-  Zoubin Ghahramani - "Should all Machine Learning be Bayesian? Should all Bayesian models be non-parametric?" - http://videolectures.net/bark08_ghahramani_samlbb/
+  Neil Lawrence - "Gaussian Processes" - https://youtube.com/watch?v=S9RbSCpy_pg + https://youtube.com/watch?v=MxeQIKGEXb8 + https://youtube.com/watch?v=Ead4TivIOmU
 
 
   Orbanz, Teh - "Bayesian Nonparametric Models" - http://www.stats.ox.ac.uk/~teh/research/npbayes/OrbTeh2010a.pdf
   Rasmussen, Williams - "Gaussian Processes for Machine Learning" - http://gaussianprocess.org/gpml/
 
   http://dustintran.com/blog/recurrent-gaussian-processes/
-
-  tutorial by Tamara Broderick - http://tamarabroderick.com/tutorial_2015_mlss_tubingen.html
 
 
 
@@ -490,18 +490,22 @@ challenges:
   http://barmaley-exe.github.io/posts/2016-07-04-neural-variational-inference-stochastic-variational-inference.html
   http://barmaley-exe.github.io/posts/2016-07-05-neural-variational-inference-blackbox.html
 
-
   "Variational Inference for Machine Learning" by Shakir Mohamed - http://shakirm.com/papers/VITutorial.pdf
-  introduction by Kay Brodersen - https://people.inf.ethz.ch/bkay/talks/Brodersen_2013_03_22.pdf
 
   introduction by Blei, Kucukelbir, McAuliffe - http://arxiv.org/abs/1601.00670
+  introduction by David Blei - https://www.cs.princeton.edu/courses/archive/fall11/cos597C/lectures/variational-inference-i.pdf
   "An Introduction to Variational Methods for Graphical Model" by Jordan, Ghahramani, Jaakkola, Saul - https://www.cs.berkeley.edu/~jordan/papers/variational-intro.pdf
   introduction by Dmitry Vetrov (in russian) - https://dropbox.com/s/t3iyeu78o0c86kq/Dmitry%20Vetrov%20-%20Variational%20Inference.pdf
 
 
-  "Variational Inference" by Jordan Boyd-Graber - http://youtube.com/watch?v=2pEkWk-LHmU
-  "Graphical Models and Variational Inference" by Chris Bishop - http://videolectures.net/mlss04_bishop_gmvm/
-  "Doubly Stochastic Variational Inference" by Dmitry Molchanov (in russian) - http://93.180.23.59/videos/video/2780/
+  introduction by Zoubin Ghahramani - https://youtu.be/yzNbaAPKXA8?t=19m45s
+  introduction by Dmitry Vetrov - https://youtu.be/kFe5zSkro0E?t=17m16s (in russian)
+
+  "Variational Inference: Foundations and Modern Methods" tutorial @ NIPS 2016 by David Blei, Rajesh Ranganath, Shakir Mohamed -
+	https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods
+	http://www.cs.columbia.edu/~blei/talks/2016_NIPS_VI_tutorial.pdf
+
+  "Reparametrization trick: Revolution in Stochastic Computational Graphs" by Dmitry Vetrov - https://youtu.be/0q5p7xP4cdA?t=5h3m29s (in russian)
 
  
   approximate inference where joint probability computation is infeasible:
@@ -510,12 +514,6 @@ challenges:
 
 
   variational inference
-
-	introduction by Zoubin Ghahramani - https://youtu.be/yzNbaAPKXA8?t=19m45s
-	introduction by Dmitry Vetrov - https://youtu.be/kFe5zSkro0E?t=17m16s (in russian)
-
-	introduction by David Blei - https://www.cs.princeton.edu/courses/archive/fall11/cos597C/lectures/variational-inference-i.pdf
-
 
 	Evidence Lower Bound (variational lower bound):
 		log pθ(x) = L(θ,φ,x) + Dkl(qφ(z|x) || pθ(z|x)), where
@@ -872,6 +870,7 @@ Lake, Salakhutdinov, Tenenbaum - "Human-level Concept Learning Through Probabili
 	"This work brings together three key ideas -- compositionality, causality, and learning-to-learn --- challenging (in a good way) the traditional deep learning approach"
 	-- http://youtube.com/watch?v=kzl8Bn4VtR8 (Lake)
 	-- http://youtu.be/quPN7Hpk014?t=21m5s (Tenenbaum)
+	-- http://techtalks.tv/talks/one-shot-learning-of-simple-fractal-concepts/63049/ (Lake)
 	-- https://reddit.com/r/MachineLearning/comments/3x4ml0/with_the_focus_on_deep_learning_what_problems/cy1nsuh
 	-- https://github.com/brendenlake/BPL
 	-- http://cims.nyu.edu/~brenden/supplemental/turingtests/turingtests.html

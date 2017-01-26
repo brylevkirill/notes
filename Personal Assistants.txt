@@ -316,6 +316,7 @@ http://arxiv.org/abs/1606.01541 - Deep Reinforcement Learning for Dialogue Gener
 http://arxiv.org/abs/1606.01269 - End-to-End LSTM-based Dialog Control Optimized with Supervised and Reinforcement Learning (Zweig)
 http://arxiv.org/abs/1511.04636 - Deep Reinforcement Learning with an Action Space Defined by Natural Language
 
+http://arxiv.org/abs/1606.02447 - Learning Language Games through Interaction (Manning)
 http://arxiv.org/abs/1605.07683 - Learning End-to-End Goal-Oriented Dialog (Weston)
 http://arxiv.org/abs/1606.03777 - Neural Belief Tracker: Data-Driven Dialogue State Tracking (Young)
 http://arxiv.org/abs/1606.00776 - Multiresolution Recurrent Neural Networks: An Application to Dialogue Response Generation (Bengio)
@@ -532,6 +533,8 @@ ViV - "Dynamically Evolving Cognitive Architecture System Based on Third-Party D
 
 
 [interesting quotes]
+
+  "For conversational agents to be truly effective, they should be equipped with capabilities of information-seeking. Imagine an agent that learns to ask and seek out information about the user’s preferences: this strategy will promote the personalization of the conversational experience and the subsequent increase of user engagement. In this sense, learning how to elicit information from a user by asking questions is a form of meta-learning — testing which questions are useful for one user gives hints about whether they’ll be useful for other users too. Of course, the agents should not constantly question the users, but should seek information parsimoniously."
 
   "Before, we were talking about discovery of apps, discovery of bots or products. There is a deeper problem, which is, when I'm in a conversation with a new bot, if the interface for every bot is kind of the same, it's some text interface, it's unclear exactly who I'm talking to and what they know and what they don't know and what I can ask. If it has some knowledge inside the bot's memory, it's unclear what it knows and what it doesn't know. I think part of the solution here is going to be either better UX in these messenger platforms, so that you could have a more clear sense of the options and of the menus, if you are texting. Then another thing is being very clear about what the bot is good for and what it isn't."
 

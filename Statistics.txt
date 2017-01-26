@@ -6,7 +6,45 @@ Max Welling - "Are Machine Learning and Statistics Complementary" - https://www.
 
 
 
-[statistics]
+selected papers and books on statistics - https://dropbox.com/sh/ff6xkunvb9emlc1/AAA3SCZx5kvdr1BlYq9ArEaka
+selected papers and books on data science - https://dropbox.com/sh/ivbn5ldue427s5q/AABBOkS0aDRo0Optz3ZY96tta
+
+
+
+
+[overview]
+
+"What is statistics?" - http://blogs.sas.com/content/iml/2014/08/05/stiglers-seven-pillars-of-statistical-wisdom.html
+	"Aggregation: It sounds like an oxymoron that you can gain knowledge by discarding information, yet that is what happens when you replace a long list of numbers by a sum or mean. Every day the news media reports a summary of billions of stock market transactions by reporting a single a weighted average of stock prices: the Dow Jones Industrial Average. Statisticians aggregate, and policy makers and business leaders use these aggregated values to make complex decisions.
+	"The law of diminishing information: If 10 pieces of data are good, are 20 pieces twice as good? No, the value of additional information diminishes like the square root of the number of observations. The square root appears in formulas such as the standard error of the mean, which describes the probability that the mean of a sample will be close to the mean of a population."
+	"Likelihood: Some people say that statistics is "the science of uncertainty." One of the pillars of statistics is being able to confidently state how good a statistical estimate is. Hypothesis tests and p-values are examples of how statisticians use probability to carry out statistical inference."
+	"Intercomparisons: When analyzing data, statisticians usually make comparisons that are based on differences among the data. This is different than in some fields, where comparisons are made against some ideal "gold standard." Well-known analyses such as ANOVA and t-tests utilize this pillar."
+	"Regression and multivariate analysis: Children that are born to two extraordinarily tall parents tend to be shorter than their parents. Similarly, if both parents are shorter than average, the children tend to be taller than the parents. This is known as regression to the mean. Regression is the best known example of multivariate analysis, which also includes dimension-reduction techniques and latent factor models."
+	"Design: A pillar of statistics is the design of experiments, and—by extension—all data collection and planning that leads to good data. Included in this pillar is the idea that random assignment of subjects to design cells improves the analysis. This pillar is the basis for agricultural experiments and clinical trials, just to name two examples."
+	"Models and Residuals: This pillar enables you to examine shortcomings of a model by examining the difference between the observed data and the model. If the residuals have a systematic pattern, you can revise your model to explain the data better. You can continue this process until the residuals show no pattern. This pillar is used by statistical practitioners every time that they look at a diagnostic residual plot for a regression model."
+
+
+
+
+[interesting papers]
+
+Norvig - "Warning Signs in Experimental Design and Interpretation" [http://norvig.com/experiment-design.html]
+Breiman - "Statistical Modeling: The Two Cultures"
+Ioannidis - "Why most published research findings are false" [http://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124]
+Goodman, Greenland - "Why Most Published Research Findings Are False: Problems in the Analysis"
+Ioannidis - "Why Most Published Research Findings Are False: Author's Reply to Goodman and Greenland"
+Moonesinghe Khoury, Janssens - "Most published research findings are false - But a little replication goes a long way"
+Leek, Jager - "Is most published research really false?"
+
+Aitchison, Corradi, Latham - "Zipf’s Law Arises Naturally When There Are Underlying, Unobserved Variables" [http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005110]
+
+
+Roth, Hardt - "Rigorous Data Dredging - Theory and Tools for Adaptive Data Analysis" [http://techtalks.tv/talks/rigorous-data-dredging-theory-and-tools-for-adaptive-data-analysis/62362/]
+
+
+
+
+[theory]
 
 4 views of statistics: Frequentist, Bayesian, Likelihood, Information-Theoretic - http://labstats.net/articles/overview.html
 
@@ -179,20 +217,6 @@ Bayes factors:
 - how to get the right data
 - figuring out what to measure or optimize
 - beware the lazy path of computing what's easy but wrong"
-
-
-
-
-[interesting papers]
-
-Breiman - "Statistical Modeling: The Two Cultures"
-Ioannidis - "Why most published research findings are false"
-Goodman, Greenland - "Why Most Published Research Findings Are False: Problems in the Analysis"
-Ioannidis - "Why Most Published Research Findings Are False: Author's Reply to Goodman and Greenland"
-Moonesinghe Khoury, Janssens - "Most published research findings are false - But a little replication goes a long way"
-Leek, Jager - "Is most published research really false?"
-
-Aitchison, Corradi, Latham - "Zipf’s Law Arises Naturally When There Are Underlying, Unobserved Variables" [http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005110]
 
 
 

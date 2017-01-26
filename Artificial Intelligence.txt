@@ -140,6 +140,8 @@ Gary Marcus
 
 	"Giraffe: Using Deep Reinforcement Learning to Play Chess" by Matthew Lai - http://arxiv.org/abs/1509.01549
 
+	"DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker" - https://arxiv.org/abs/1701.01724
+
 
 	StarCraft 2
 	        http://starcraft.blizzplanet.com/blog/comments/blizzcon-2016-deepmind-and-starcraft-ii-deep-learning-panel-transcript
@@ -175,6 +177,10 @@ Gary Marcus
 	V-REP - http://coppeliarobotics.com
 	Gazebo - http://gazebosim.org
 	Unreal Engine (Torch integration) - https://github.com/facebook/UETorch
+
+
+  * other
+	http://aiimpacts.org/concrete-ai-tasks-for-forecasting/
 
 
 
@@ -222,6 +228,7 @@ Gary Marcus
 
   https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt
   https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt
+  https://dropbox.com/s/v7kiore7w9xez5b/Machine%20Learning.txt
 
 
   approaches:
