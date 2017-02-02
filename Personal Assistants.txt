@@ -302,36 +302,39 @@ interesting papers (see https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retr
 [latest interesting papers]
 
 http://arxiv.org/abs/1603.08023 - How NOT To Evaluate Your Dialogue System: An Empirical Study of Unsupervised Evaluation Metrics for Dialogue Response Generation + http://www.shortscience.org/paper?bibtexKey=journals/corr/LiuLSNCP16#shagunsodhani
-http://arxiv.org/abs/1508.03386 - Learning from Real Users: Rating Dialogue Success with Neural Networks for Reinforcement Learning in Spoken Dialogue Systems
+http://arxiv.org/abs/1605.05414 - On the Evaluation of Dialogue Systems with Next Utterance Classification
+http://openreview.net/forum?id=HJ5PIaseg - Towards an Automatic Turing Test: Learning to Evaluate Dialogue Responses
+
+http://arxiv.org/abs/1508.03386 - Learning from Real Users: Rating Dialogue Success with Neural Networks for Reinforcement Learning in Spoken Dialogue Systems (Young)
 http://arxiv.org/abs/1605.07669 - On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems (Young)
+http://arxiv.org/abs/1606.02689 - Continuously Learning Neural Dialogue Management (Young)
+http://arxiv.org/abs/1612.03929 - Online Sequence-to-Sequence Reinforcement Learning for Open-domain Conversational Agents
 
 http://arxiv.org/abs/1611.06216 - Generative Deep Neural Networks for Dialogue: A Short Review (Pineau)
 http://arxiv.org/abs/1606.07056 - Emulating Human Conversations using Convolutional Neural Network-based IR
 http://arxiv.org/abs/1610.07149 - Two are Better than One: An Ensemble of Retrieval- and Generation-Based Dialog Systems
 
+http://arxiv.org/abs/1606.01541 - Deep Reinforcement Learning for Dialogue Generation (Jurafsky)
+http://arxiv.org/abs/1701.06547 - Adversarial Learning for Neural Dialogue Generation (Jurafsky)
 http://arxiv.org/abs/1606.03152 - Policy Networks with Two-Stage Training for Dialogue Systems (Maluuba) + http://www.maluuba.com/blog/2016/11/23/deep-reinforcement-learning-in-dialogue-systems
 http://arxiv.org/abs/1609.00777 - End-to-End Reinforcement Learning of Dialogue Agents for Information Access (Deng)
 http://arxiv.org/abs/1608.05081 - Efficient Exploration for Dialog Policy Learning with Deep BBQ Networks & Replay Buffer Spiking (Deng)
-http://arxiv.org/abs/1606.01541 - Deep Reinforcement Learning for Dialogue Generation (Jurafsky)
 http://arxiv.org/abs/1606.01269 - End-to-End LSTM-based Dialog Control Optimized with Supervised and Reinforcement Learning (Zweig)
-http://arxiv.org/abs/1511.04636 - Deep Reinforcement Learning with an Action Space Defined by Natural Language
 
+http://arxiv.org/abs/1604.04562 - A Network-based End-to-End Trainable Task-oriented Dialogue System (Young) + http://videolectures.net/deeplearning2016_wen_network_based/
 http://arxiv.org/abs/1606.02447 - Learning Language Games through Interaction (Manning)
 http://arxiv.org/abs/1605.07683 - Learning End-to-End Goal-Oriented Dialog (Weston)
 http://arxiv.org/abs/1606.03777 - Neural Belief Tracker: Data-Driven Dialogue State Tracking (Young)
 http://arxiv.org/abs/1606.00776 - Multiresolution Recurrent Neural Networks: An Application to Dialogue Response Generation (Bengio)
 http://arxiv.org/abs/1605.06069 - A Hierarchical Latent Variable Encoder-Decoder Model for Generating Dialogues (Bengio)
-http://arxiv.org/abs/1604.04562 - A Network-based End-to-End Trainable Task-oriented Dialogue System (Young) + http://videolectures.net/deeplearning2016_wen_network_based/
 http://arxiv.org/abs/1606.01292 - An Attentional Neural Conversation Model with Improved Specificity (Zweig)
 http://kdd.org/kdd2016/subtopic/view/towards-conversational-recommender-systems - Towards Conversational Recommender Systems (Hoffman) + https://periscope.tv/WiMLworkshop/1vAGRXDbvbkxl (Christakopoulou) + https://youtube.com/watch?v=nLUfAJqXFUI (Christakopoulou)
-
-http://arxiv.org/abs/1606.02960 - Sequence-to-Sequence Learning as Beam-Search Optimization + http://shortscience.org/paper?bibtexKey=journals/corr/1606.02960
-http://arxiv.org/pdf/1606.03402 - Length Bias in Encoder Decoder Models and a Case for Global Conditioning (Google)
+http://arxiv.org/abs/1606.03402 - Length Bias in Encoder Decoder Models and a Case for Global Conditioning (Google)
 
 http://arxiv.org/abs/1605.01652 - LSTM-based Mixture-of-Experts for Knowledge-Aware Dialogues
 http://arxiv.org/abs/1603.01232 - Multi-domain Neural Network Language Generation for Spoken Dialogue Systems
 http://arxiv.org/abs/1604.02038 - Sentence Level Recurrent Topic Model: Letting Topics Speak for Themselves
-http://arxiv.org/pdf/1611.09900 - Context-aware Natural Language Generation with Recurrent Neural Networks
+http://arxiv.org/abs/1611.09900 - Context-aware Natural Language Generation with Recurrent Neural Networks
 
 http://arxiv.org/abs/1511.06349 - Generating Sentences from a Continuous Space + https://github.com/cheng6076/Variational-LSTM-Autoencoder
 http://arxiv.org/abs/1603.06155 - A Persona-Based Neural Conversation Model

@@ -137,8 +137,7 @@ http://allendowney.blogspot.ru/2011/06/more-hypotheses-less-trivia.html
 "
 
 
-pathologies of frequentist statistics - https://youtube.com/watch?v=zZkwzvrO-pU
-
+"Null Hypothesis Significance Testing Never Worked" - http://www.fharrell.com/2017/01/null-hypothesis-significance-testing.html
 http://quillette.com/2015/11/13/the-great-statistical-schism/
 
 
@@ -192,6 +191,9 @@ Bayes factors:
 - subjective just as p-values
 
 "Because complex models can capture many different observations, their prior on parameters p(θ) is spread out wider than those of simpler models. Thus there is little density at any specific point - because complex models can capture so many data points; taken individually, each data point is comparatively less likely. For the marginal likelihood, this means that the likelihood gets multiplied with these low density values of the prior, which decreases the overall marginal likelihood. Thus model comparison via Bayes factors incorporates an automatic Ockham’s razor, guarding us against overfitting. While classical approaches like the AIC naively add a penalty term (2 times the number of parameters) to incorporate model complexity, Bayes factors offer a more natural and principled approach to this problem."
+
+
+pathologies of frequentist statistics according to E. T. Jaynes - https://youtube.com/watch?v=zZkwzvrO-pU
 
 
 

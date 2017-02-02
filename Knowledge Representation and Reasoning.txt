@@ -970,39 +970,7 @@ Cognitive Computing Challenge
 
 [machine reading projects]
 
- * IBM Watson
-
-	http://youtube.com/watch?v=DywO4zksfXw
-	http://youtube.com/watch?v=3G2H3DZ8rNc
-	http://youtube.com/watch?v=grDKpicM5y0
-	http://youtube.com/watch?v=_dXNXCv5eo8
-
-	- question analysis: How Watson reads a clue
-	- deep parsing in Watson
-	- textual resource acquisition and engineering
-	- automatic knowledge extraction from documents
-	- finding needles in the haystack: Search and candidate generation
-	- typing candidate answers using type coercion
-	- textual evidence gathering and analysis
-	- relation extraction and scoring in DeepQA
-	- structured data and inference in DeepQA
-	- special Questions and techniques
-	- identifying implicit relationships
-	- fact-based question decomposition in DeepQA
-	- a framework for merging and ranking of answers in DeepQA
-
-	IBM Watson papers - https://dropbox.com/sh/udz1kpzzz95xfd6/AADgpBmFsTS1CtkbClfmbyyqa
-
-	http://it.toolbox.com/blogs/infosphere/ibm-watson-versus-google-search-jeopardy-challenge-replay-58579
-
-	Deep Learning graduate student vs IBM Watson team - http://youtu.be/tdLmf8t4oqM?t=31m25s
-
-	IBM Watson considered a hack compared to Deep Learning - http://spacy.io/blog/dmn.html
-
-	Jeopardy questions - https://kaggle.com/jeradrose/jeopardy
-
-
- * Google Knowledge (Vault)
+ * Google Knowledge Vault
 
 	Kevin Murphy
 		latest developments @ AKBC 2014 (novel facts, trustworthy facts, multimodal knowledge) - http://youtube.com/watch?v=i2r5J4XAhsw
@@ -1118,37 +1086,6 @@ Cognitive Computing Challenge
 	http://quora.com/What-is-Semantic-Scholar-and-how-will-it-work/answer/Vu-Ha
 
 
- * OpenIE/KnowItAll (continued by AI2)
-
-	http://openie.cs.washington.edu
-
-	"No sentence left behind"
-	  - relations are not pre-specified
-	  - no hand labeled examples
-	  - leverage structure of language
-	  - single pass over the corpus
-
-	implementations:
-	  - TextRunner (OpenIE 1.0)
-		limitations:
-		 * incoherent extractions (independent decisions to include each word in relation phrase -> gluing unrelated words)
-		 * uninformative extractions (omitting critical part of relation phrase)
-
-	  - ReVerb (OpenIE 2.0) - http://reverb.cs.washington.edu
-		limitations:
-		 * only extracts relations mediated by verbs
-		 * ignores context, potentially extracting facts that are not asserted
-
-	  - Ollie (OpenIE 3.0) - http://knowitall.github.io/ollie/
-		"Whereas ReVerb operates on flat sequences of tokens, Ollie works with the tree-like (graph with only small cycles) representation using Stanford's compression of the dependencies. This allows Ollie to capture expression that ReVerb misses, such as long-range relations. Ollie also captures context that modifies a binary relation.
-		"Ollie handles attribution (He said/she believes) and enabling conditions (if X then)."
-		"Some relations are expressed without verbs. Ollie can capture these as well as verb-mediated relations."
-		"Often times similar relations will specify different aspects of the same event. Since Ollie captures long-range relations it can capture N-ary extractions by collapsing extractions where the relation phrase only differs by the preposition."
-
-	  - OpenIE 4.0 - https://github.com/allenai/openie
-		"Whereas Ollie used bootstrapped dependency parse paths to extract relations, Open IE 4.0 uses similar argument and relation expansion heuristics to create Open IE extractions from SRL frames. Open IE 4.0 also extends the defintion of Open IE extractions to include n-ary extractions (extractions with 0 or more arguments 2s)."
-
-
  * DARPA Big Mechanism
 
 	http://www.darpa.mil/Our_Work/I2O/Programs/Big_Mechanism.aspx
@@ -1156,6 +1093,24 @@ Cognitive Computing Challenge
 	"Big mechanisms are large, explanatory models of complicated systems in which interactions have important causal effects. The collection of big data is increasingly automated, but the creation of big mechanisms remains a human endeavor made increasingly difficult by the fragmentation and distribution of knowledge. To the extent that the construction of big mechanisms can be automated, it could change how science is done. The Big Mechanism program aims to develop technology to read research abstracts and papers to extract pieces of causal mechanisms, assemble these pieces into more complete causal models, and reason over these models to produce explanations."
 
 	"The Big Mechanism program will require new research and the integration of several technical areas, particularly statistical and knowledge-based Natural Language Processing (NLP); curation and ontology; systems biology and mathematical biology; representation and reasoning; and quite possibly other areas such as visualization, simulation, and statistical foundations of very large causal networks. Machine reading researchers will need to develop deeper semantics to represent the causal and often kinetic models described in research papers. Deductive inference and qualitative simulation will probably not be sufficient to model the complicated dynamics of signaling pathways and will need to be augmented or replaced by probabilistic and quantitative models. Classification and prediction will continue to be important, but causal explanation is primary. Extant databases and ontologies will provide top-down constraints on reading, assembly of big mechanisms and explanation."
+
+
+ * IBM Watson
+
+	http://youtube.com/watch?v=DywO4zksfXw
+	http://youtube.com/watch?v=3G2H3DZ8rNc
+	http://youtube.com/watch?v=grDKpicM5y0
+	http://youtube.com/watch?v=_dXNXCv5eo8
+
+	IBM Watson papers - https://dropbox.com/sh/udz1kpzzz95xfd6/AADgpBmFsTS1CtkbClfmbyyqa
+
+	http://it.toolbox.com/blogs/infosphere/ibm-watson-versus-google-search-jeopardy-challenge-replay-58579
+
+	Deep Learning graduate student vs IBM Watson team - http://youtu.be/tdLmf8t4oqM?t=31m25s
+
+	IBM Watson considered a hack compared to Deep Learning - http://spacy.io/blog/dmn.html
+
+	Jeopardy questions - https://kaggle.com/jeradrose/jeopardy
 
 
 
@@ -1734,6 +1689,11 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 	-- http://cs.colorado.edu/~jbg/projects/IIS-1320538.html
 	-- http://hsquizbowl.org/forums/viewtopic.php?f=2&t=17364#p303823
 
+Nogueira, Cho - "End-to-End Goal-Driven Web Navigation" [http://arxiv.org/pdf/1602.02261]
+	"We propose a goal-driven web navigation as a benchmark task for evaluating an agent with abilities to understand natural language and plan on partially observed environments. In this challenging task, an agent navigates through a website, which is represented as a graph consisting of web pages as nodes and hyperlinks as directed edges, to find a web page in which a query appears. The agent is required to have sophisticated high-level reasoning based on natural languages and efficient sequential decision-making capability to succeed. We release a software tool, called WebNav, that automatically transforms a website into this goal-driven web navigation task, and as an example, we make WikiNav, a dataset constructed from the English Wikipedia. We extensively evaluate different variants of neural net based artificial agents on WikiNav and observe that the proposed goal-driven web navigation well reflects the advances in models, making it a suitable benchmark for evaluating future progress. Furthermore, we extend the WikiNav with questionanswer pairs from Jeopardy! and test the proposed agent based on recurrent neural networks against strong inverted index based search engines. The artificial agents trained on WikiNav outperforms the engined based approaches, demonstrating the capability of the proposed goal-driven navigation as a good proxy for measuring the progress in real-world tasks such as focused crawling and question-answering."
+	"In this work, we describe a large-scale goal-driven web navigation task and argue that it serves as a useful test bed for evaluating the capabilities of artificial agents on natural language understanding and planning. We release a software tool, called WebNav, that compiles a given website into a goal-driven web navigation task. As an example, we construct WikiNav from Wikipedia using WebNav. We extend WikiNav with Jeopardy! questions, thus creating WikiNav-Jeopardy. We evaluate various neural net based agents on WikiNav and WikiNav-Jeopardy. Our results show that more sophisticated agents have better performance, thus supporting our claim that this task is well suited to evaluate future progress in natural language understanding and planning. Furthermore, we show that our agent pretrained on WikiNav outperforms two strong inverted-index based search engines on the WikiNav-Jeopardy. These empirical results support our claim on the usefulness of the proposed task and agents in challenging applications such as focused crawling and question-answering."
+	-- Value Iteration Networks for this problem [https://arxiv.org/abs/1602.02867] - https://youtu.be/tXBHfbHHlKc?t=31m20s (Tamar)
+
 Bordes, Usunier, Chopra, Weston - "Large-scale Simple Question Answering with Memory Networks" [http://arxiv.org/abs/1506.02075]
 	"Training large-scale question answering systems is complicated because training sources usually cover a small portion of the range of possible questions. This paper studies the impact of multitask and transfer learning for simple question answering; a setting for which the reasoning required to answer is quite easy, as long as one can retrieve the correct evidence given a question, which can be difficult in large-scale conditions. To this end, we introduce a new dataset of 100k questions that we use in conjunction with existing benchmarks. We conduct our study within the framework of Memory Networks because this perspective allows us to eventually scale up to more complex reasoning, and show that Memory Networks can be successfully trained to achieve excellent performance."
 	"The best published competing approach (Yang et al., 2014) has an F1-score of 41.3%, which is comparable to a single run of our model (41.2%). On the new SimpleQuestions dataset, the best models achieve 62 - 63% accuracy, while the supporting fact is in the candidate set for about 86% of SimpleQuestions questions. This shows that MemNNs are effective at re-ranking the candidates, but also that simple QA is still not solved."
@@ -1890,6 +1850,19 @@ Liang - "Asking Deep Questions on Messy Data"
 [interesting papers - reasoning]
 
 selected papers - https://dropbox.com/sh/ju4oi0221zo3ql7/AAC8SscYIxR5uk3CVhQXpkuda
+
+Tamar, Wu, Thomas, Levine, Abbeel - "Value Iteration Networks" [http://arxiv.org/abs/1602.02867]
+	"We introduce the value iteration network (VIN): a fully differentiable neural network with a ‘planning module’ embedded within. VINs can learn to plan, and are suitable for predicting outcomes that involve planning-based reasoning, such as policies for reinforcement learning. Key to our approach is a novel differentiable approximation of the value-iteration algorithm, which can be represented as a convolutional neural network, and trained end-to-end using standard backpropagation. We evaluate VIN based policies on discrete and continuous path-planning domains, and on a natural-language based search task. We show that by learning an explicit planning computation, VIN policies generalize better to new, unseen domains."
+	"The introduction of powerful and scalable RL methods has opened up a range of new problems for deep learning. However, few recent works investigate policy architectures that are specifically tailored for planning under uncertainty, and current RL theory and benchmarks rarely investigate the generalization properties of a trained policy. This work takes a step in this direction, by exploring better generalizing policy representations. Our VIN policies learn an approximate planning computation relevant for solving the task, and we have shown that such a computation leads to better generalization in a diverse set of tasks, ranging from simple gridworlds that are amenable to value iteration, to continuous control, and even to navigation of Wikipedia links. In future work we intend to learn different planning computations, based on simulation, or optimal linear control, and combine them with reactive policies, to potentially develop RL solutions for task and motion planning"
+	"In our experiment in continuous control we used hierarchical policy: high-level policy solved low-resolution map and low-level policy executed it. This is very different from options/skills framework. There is one smooth policy that implements everything. We don't need to learn initiation sets or termination sets. But more importantly, the motivation for using hierarchy here was different. The motivation wasn't to increase learning rate or exploration - the motivation was to generalize. We understood that low-resolution map is sufficient for doing planning which promotes generalization, but low-level policy uses the fact that dynamics is similar across different tasks."
+	--
+	"Its contribution is to offer a new way to think about value iteration in the context of deep networks. It shows how the CNN architecture can be hijacked to implement the Bellman optimality operator, and how the backprop signal can be used to learn a deterministic model of the underlying MDP."
+	"Value iteration is similar enough to a sequence of convolutions and max-pooling layers that you can emulate an (unrolled) planning computation with a deep network. This allows neural nets to do planning, e.g. moving from start to goal in grid-world, or navigating a website to find query."
+	-- https://youtube.com/watch?v=tXBHfbHHlKc (Tamar) + http://technion.ac.il/~danielm/icml_slides/Talk7.pdf
+	-- https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Value-Iteration-Networks (Tamar)
+	-- https://github.com/karpathy/paper-notes/blob/master/vin.md
+	-- https://github.com/avivt/VIN
+	-- https://github.com/TheAbhiKumar/tensorflow-value-iteration-networks
 
 Pasupat, Liang - "Compositional Semantic Parsing on Semi-Structured Tables" [http://cs.stanford.edu/~ppasupat/resource/ACL2015-paper.pdf] (reasoning over knowledge base)
 	"Two important aspects of semantic parsing for question answering are the breadth of the knowledge source and the depth of logical compositionality. While existing work trades off one aspect for another, this paper simultaneously makes progress on both fronts through a new task: answering complex questions on semi-structured tables using question-answer pairs as supervision. The central challenge arises from two compounding factors: the broader domain results in an open-ended set of relations, and the deeper compositionality results in a combinatorial explosion in the space of logical forms. We propose a logical-form driven parsing algorithm guided by strong typing constraints and show that it obtains significant improvements over natural baselines. For evaluation, we created a new dataset of 22,033 complex questions on Wikipedia tables, which is made publicly available."

@@ -13,9 +13,8 @@ Intelligence is information processing to take decisions which save energy in pu
     - Solomonoff Induction and AIXI
   * interesting papers
     - definitions and measures of intelligence
-    - induction, prediction, intelligence
+    - algorithmic information theory
     - intrinsic motivation
-    - self-improvement and resource-boundedness
 
 
 overviews/publications for research areas
@@ -46,6 +45,7 @@ Demis Hassabis
 	"Artificial Intelligence and The Future" - https://youtube.com/watch?v=4fjmnOQuqao
 
 Juergen Schmidhuber
+	"The Problems of AI Consciousness and Unsupervised Learning Are Already Solved" - https://youtube.com/watch?v=JJj4allguoU
 	"Formal Theory of Fun & Creativity" - http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/
 	"How to Learn an Algorithm" - http://youtube.com/watch?v=mF5-tr7qAF4
 
@@ -164,7 +164,9 @@ Gary Marcus
  * control
 
 	OpenAI Universe - https://universe.openai.com + https://openai.com/blog/universe/
-	Mini World Of Bits - http://alpha.openai.com/miniwob/index.html
+
+	OpenAI Mini World Of Bits - http://alpha.openai.com/miniwob/index.html + http://alpha.openai.com/ak_rework_2017.pdf + http://alpha.openai.com/kalite_exercises/index.html
+
   	OpenAI Gym - https://gym.openai.com + https://openai.com/blog/openai-gym-beta/ + http://arxiv.org/abs/1606.01540
 
 	DeepMind Lab - https://github.com/deepmind/lab + https://deepmind.com/blog/open-sourcing-deepmind-lab/
@@ -578,7 +580,7 @@ semantic web    - https://dropbox.com/s/ono4n5yij0y1366/RDF.txt
 
 interesting papers (see below):
  * definitions and measures of intelligence
- * induction, prediction, intelligence
+ * algorithmic information theory
  * intrinsic motivation
 
 
@@ -616,47 +618,7 @@ Weston, Bordes, Chopra, Mikolov - "Towards AI-Complete Question Answering: A Set
 
 
 
-[interesting papers - architectures]
-
-Mnih, Kavukcuoglu, Silver, Rusu, Veness, Bellemare, Graves, Riedmiller, Fidjeland, Ostrovski, Petersen, Beattie, Sadik, Antonoglou, King, Kumaran, Wierstra, Legg, Hassabis - "Human-level Control Through Deep Reinforcement Learning" [http://home.uchicago.edu/~arij/journalclub/papers/2015_Mnih_et_al.pdf]
-	"The theory of reinforcement learning provides a normative account, deeply rooted in psychological and neuroscientific perspectives on animal behaviour, of how agents may optimize their control of an environment. To use reinforcement learning successfully in situations approaching real-world complexity, however, agents are confronted with a difficult task: they must derive efficient representations of the environment from high-dimensional sensory inputs, and use these to generalize past experience to new situations. Remarkably, humans and other animals seem to solve this problem through a harmonious combination of reinforcement learning and hierarchical sensory processing systems, the former evidenced by a wealth of neural data revealing notable parallels between the phasic signals emitted by dopaminergic neurons and temporal difference reinforcement learning algorithms. While reinforcement learning agents have achieved some successes in a variety of domains, their applicability has previously been limited to domains in which useful features can be handcrafted, or to domains with fully observed, low-dimensional state spaces. Here we use recent advances in training deep neural networks to develop a novel artificial agent, termed a deep Q-network, that can learn successful policies directly from high-dimensional sensory inputs using end-to-end reinforcement learning. We tested this agent on the challenging domain of classic Atari 2600 games. We demonstrate that the deep Q-network agent, receiving only the pixels and the game score as inputs, was able to surpass the performance of all previous algorithms and achieve a level comparable to that of a professional human games tester across a set of 49 games, using the same algorithm, network architecture and hyperparameters. This work bridges the divide between high-dimensional sensory inputs and actions, resulting in the first artificial agent that is capable of learning to excel at a diverse array of challenging tasks."
-	-- http://nature.com/nature/journal/v518/n7540/full/nature14236.html
-	-- http://nature.com/nature/journal/v518/n7540/extref/nature14236-s1.pdf
-	-- http://youtube.com/watch?v=EfGD2qveGdQ (demo)
-	-- http://videolectures.net/rldm2015_silver_reinforcement_learning/ (demos, 57:56, 1:06:04, 1:15:15)
-	-- http://youtu.be/XAbLn66iHcQ?t=1h41m21s + http://youtube.com/watch?v=0xo1Ldx3L5Q (3D racing demo)
-	-- http://youtube.com/watch?v=nMR5mjCFZCw (3D labyrinth demo)
-	-- http://youtube.com/watch?v=re6hkcTWVUY (Doom gameplay demo)
-	-- https://youtube.com/watch?v=6jlaBD9LCnM + https://youtube.com/watch?v=6JT6_dRcKAw (blockworld demo)
-	-- http://youtube.com/user/eldubro/videos (demos)
-	-- http://youtube.com/watch?v=iqXKQf2BOSE (demo)
-	-- http://youtube.com/watch?v=lge-dl2JUAM + https://youtube.com/watch?v=xN1d3qHMIEQ (interviews and demos)
-	-- http://sodeepdude.blogspot.ru/2015/03/deepminds-atari-paper-replicated.html (demos)
-	-- http://videolectures.net/nipsworkshops2013_mnih_atari/ (Volodymyr Mnih)
-	-- http://youtube.com/watch?v=xzM7eI7caRk (Volodymyr Mnih)
-	-- http://youtube.com/watch?v=dV80NAlEins (Nando de Freitas)
-	-- http://youtube.com/watch?v=HUmEbUkeQHg (Nando de Freitas)
-	-- http://youtube.com/watch?v=mrgJ53TIcQc (Pavlov, in russian)
-	-- https://github.com/kuz/DeepMind-Atari-Deep-Q-Learner + https://sites.google.com/a/deepmind.com/dqn/
-	-- https://github.com/carpedm20/deep-rl-tensorflow
-	-- https://github.com/Kaixhin/Atari
-	-- https://github.com/tambetm/simple_dqn + https://youtu.be/KkIf0Ok5GCE + https://youtu.be/0ZlgrQS3krg
-	-- https://github.com/tambetm/gymexperiments
-	-- https://github.com/spragunr/deep_q_rl + http://sodeepdude.blogspot.ru/2015/03/deepminds-atari-paper-replicated.html
-	-- https://github.com/ugo-nama-kun/DQN-chainer + http://youtube.com/watch?v=N813o-Xb6S8
-	-- https://github.com/muupan/dqn-in-the-caffe
-	-- https://github.com/brian473/neural_rl
-	-- https://github.com/kristjankorjus/Replicating-DeepMind
-	-- https://github.com/asrivat1/DeepLearningVideoGames
-	-- https://github.com/Kaixhin/Atari (persistent advantage learning, dueling network architecture, Double Q-learning)
-	-- https://github.com/Jabberwockyll/deep_rl_ale
-	-- https://github.com/VinF/deer
-	-- https://github.com/sherjilozair/dqn
-	-- https://github.com/gliese581gg/DQN_tensorflow
-	-- https://github.com/devsisters/DQN-tensorflow
-	-- https://github.com/osh/kerlym
-	-- https://github.com/ludc/rltorch/blob/master/torch/policies/DeepQPolicy.lua
-	-- http://cs.stanford.edu/people/karpathy/convnetjs/demo/rldemo.html
+[interesting papers - algorithmic information theory]
 
 Schmidhuber - "On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models" [http://arxiv.org/abs/1511.09249]
 	"This paper addresses the general problem of reinforcement learning in partially observable environments. In 2013, our large RL recurrent neural networks learned from scratch to drive simulated cars from high-dimensional video input. However, real brains are more powerful in many ways. In particular, they learn a predictive model of their initially unknown environment, and somehow use it for abstract (e.g., hierarchical) planning and reasoning. Guided by algorithmic information theory, we describe RNN-based AIs designed to do the same. Such an RNNAI can be trained on never-ending sequences of tasks, some of them provided by the user, others invented by the RNNAI itself in a curious, playful fashion, to improve its RNN-based world model. Unlike our previous model-building RNN-based RL machines dating back to 1990, the RNNAI learns to actively query its model for abstract reasoning and planning and decision making, essentially “learning to think.” The basic ideas of this report can be applied to many other cases where one RNN-like system exploits the algorithmic information content of another."
@@ -675,23 +637,7 @@ Schmidhuber - "On Learning to Think: Algorithmic Information Theory for Novel Co
 	"Given a new task and a C trained on several previous tasks, such hierarchical/incremental methods may freeze the current weights of C, then enlarge C by adding new units and connections which are trained on the new task. This process reduces the size of the search space for the new task, giving the new weights the opportunity to learn to use the frozen parts of C as subprograms."
 	--
 	"What you describe is my other old RNN-based CM system from 1990: a recurrent controller C and a recurrent world model M, where C can use M to simulate the environment step by step and plan ahead. But the new stuff is different and much less limited - now C can learn to ask all kinds of computable questions to M (e.g., about abstract long-term consequences of certain subprograms), and get computable answers back. No need to simulate the world millisecond by millisecond (humans apparently don’t do that either, but learn to jump ahead to important abstract subgoals)."
-
-Gashler, Kindle, Smith - "A Minimal Architecture for General Cognition" [http://arxiv.org/abs/1508.00019]
-	"A minimalistic cognitive architecture called MANIC is presented. The MANIC architecture requires only three function approximating models, and one state machine. Even with so few major components, it is theoretically sufficient to achieve functional equivalence with all other cognitive architectures, and can be practically trained. Instead of seeking to trasfer architectural inspiration from biology into artificial intelligence, MANIC seeks to minimize novelty and follow the most wellestablished constructs that have evolved within various subfields of data science. From this perspective, MANIC offers an alternate approach to a long-standing objective of artificial intelligence. This paper provides a theoretical analysis of the MANIC architecture."
-	"We presented a cognitive architecture called MANIC. This architecture unifies a diversity of techniques in the subdisciplines of machine learning and artificial intelligence without introducing much novelty. Yet, while relying on existing methods, and with minimal complexity, MANIC is a powerful cognitive architecture. We showed that it is sufficiently general to accomplish arbitrary cognitive tasks, and that it can be practically trained using recent methods. We supported MANIC’s design by referring to existing works that validate its individual components, and we made theoretical arguments about the capabilities that should emerge from combining them in the manner outlined by MANIC. The primary contribution of this paper is to show that these existing methods can already accomplish more of cognitive intelligence than is generally recognized. Our ultimate intent is to argue that if general intelligence is one of the ultimate objectives of the fields of machine learning and artificial intelligence, then they are very much on the right track, and it is not clear that any critical piece of understanding necessary for implementing a rudimentary consciousness is definitely missing."
-
-Shalev-Shwartz, Shashua - "On the Sample Complexity of End-to-end Training vs. Semantic Abstraction Training" [http://arxiv.org/abs/1604.06915]
-	"We compare the end-to-end training approach to a modular approach in which a system is decomposed into semantically meaningful components. We focus on the sample complexity aspect, in the regime where an extremely high accuracy is necessary, as is the case in autonomous driving applications. We demonstrate cases in which the number of training examples required by the end-to-end approach is exponentially larger than the number of examples required by the semantic abstraction approach."
-	--
-	"There is some indication (the robustness to decalibration) that end-to-end solutions are antifragile. Which is also useful for distributed learning where robot calibrations differ. End-to-End Training of Deep Visuomotor Policies by Levine, Finn, Darrell & Abbeel is worth a read on why."
-	-- https://youtube.com/watch?v=GCMXXXmxG-I (Shashua)
-	-- "End to End Learning for Self-Driving Cars" - http://arxiv.org/abs/1604.07316 + https://drive.google.com/file/d/0B9raQzOpizn1TkRIa241ZnBEcjQ/view (demo)
-	-- https://reddit.com/r/MachineLearning/comments/4ggyjj/160407316_end_to_end_learning_for_selfdriving_cars/d2hs7rn
-
-
-
-
-[interesting papers - induction, prediction, intelligence]
+	-- https://youtube.com/watch?v=JJj4allguoU (Schmidhuber)
 
 Hutter - "On Universal Prediction and Bayesian Confirmation" [http://arxiv.org/abs/0709.1516]
 	"The Bayesian framework is a well-studied and successful framework for inductive reasoning, which includes hypothesis testing and confirmation, parameter estimation, sequence prediction, classification, and regression. But standard statistical guidelines for choosing the model class and prior are not always available or fail, in particular in complex situations. Solomonoff completed the Bayesian framework by providing a rigorous, unique, formal, and universal choice for the model class and the prior. We discuss in breadth how and in which sense universal (non-i.i.d.) sequence prediction solves various (philosophical) problems of traditional Bayesian sequence prediction. We show that Solomonoff's model possesses many desirable properties: Strong total and weak instantaneous bounds, and in contrast to most classical continuous prior densities has no zero p(oste)rior problem, i.e. can confirm universal hypotheses, is reparametrization and regrouping invariant, and avoids the old-evidence and updating problem. It even performs well (actually better) in non-computable environments."

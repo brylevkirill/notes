@@ -10,8 +10,8 @@
     - document models
     - entity-centric search
     - intent search
-    - recommendations
     - ranking
+    - recommendations
 
 
 selected papers and books -
@@ -134,25 +134,13 @@ IR seminars @ Yandex
   (Fernando Pereira) "When Google gets a query like, “Where do the Giants play?” it has to know a lot of things: that the query involves sports, that a team “plays” at a home stadium, and so on. And it has to make choices — is this the baseball Giants or the football team? Does the user want to know where the team usually plays its games, i.e. the home stadium, or where it’s playing next week? Google uses signals and previous user behavior to nail the answer. “All that figuring out, all that inference, is stuff we do now that we were not doing a few years ago”.
 
 
-  see sections "[question answering over knowledge graphs]" and "[question answering over texts (machine reading)]" - https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt
-
   approaches for question answering over knowledge graphs:
   - entity embedding
   - shallow parsing and retrieval
   - query graph matching
   - query semantic parsing
 
-  projects:
-  - IBM Watson
-  - QANTA
-  - Watsonsim
-  - OpenQA
-  - SEMPRE
-  - Jacana
-  - OAQA
-  - Torobo
-
-  QA resources - https://docs.google.com/document/d/1XCHWQkgFBS8Iy_y9-1-R82jGS8T_CrKiMxleqpqtmJg
+  see sections "[question answering over knowledge graphs]" and "[question answering over texts (machine reading)]" - https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt
 
 
 
@@ -230,14 +218,24 @@ interesting papers (see below):
  * document models
  * entity-centric search
  * intent search
- * recommendations
  * ranking
+ * recommendations
 
 interesting papers (see https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt):
  * question answering over knowledge bases
  * question answering over texts (machine reading)
  * information extraction and integration
  * multimodal knowledge representation
+
+
+
+
+[interesting papers]
+
+Nogueira, Cho - "End-to-End Goal-Driven Web Navigation" [http://arxiv.org/pdf/1602.02261]
+	"We propose a goal-driven web navigation as a benchmark task for evaluating an agent with abilities to understand natural language and plan on partially observed environments. In this challenging task, an agent navigates through a website, which is represented as a graph consisting of web pages as nodes and hyperlinks as directed edges, to find a web page in which a query appears. The agent is required to have sophisticated high-level reasoning based on natural languages and efficient sequential decision-making capability to succeed. We release a software tool, called WebNav, that automatically transforms a website into this goal-driven web navigation task, and as an example, we make WikiNav, a dataset constructed from the English Wikipedia. We extensively evaluate different variants of neural net based artificial agents on WikiNav and observe that the proposed goal-driven web navigation well reflects the advances in models, making it a suitable benchmark for evaluating future progress. Furthermore, we extend the WikiNav with questionanswer pairs from Jeopardy! and test the proposed agent based on recurrent neural networks against strong inverted index based search engines. The artificial agents trained on WikiNav outperforms the engined based approaches, demonstrating the capability of the proposed goal-driven navigation as a good proxy for measuring the progress in real-world tasks such as focused crawling and question-answering."
+	"In this work, we describe a large-scale goal-driven web navigation task and argue that it serves as a useful test bed for evaluating the capabilities of artificial agents on natural language understanding and planning. We release a software tool, called WebNav, that compiles a given website into a goal-driven web navigation task. As an example, we construct WikiNav from Wikipedia using WebNav. We extend WikiNav with Jeopardy! questions, thus creating WikiNav-Jeopardy. We evaluate various neural net based agents on WikiNav and WikiNav-Jeopardy. Our results show that more sophisticated agents have better performance, thus supporting our claim that this task is well suited to evaluate future progress in natural language understanding and planning. Furthermore, we show that our agent pretrained on WikiNav outperforms two strong inverted-index based search engines on the WikiNav-Jeopardy. These empirical results support our claim on the usefulness of the proposed task and agents in challenging applications such as focused crawling and question-answering."
+	-- Value Iteration Networks for this problem [https://arxiv.org/abs/1602.02867] - https://youtu.be/tXBHfbHHlKc?t=31m20s (Tamar)
 
 
 
@@ -384,6 +382,38 @@ Sun, Zeng, Liu, Lu, Chen at Microsoft Research - "CubeSVD: A Novel Approach to P
 
 
 
+[interesting papers - ranking]
+
+Burges - "From RankNet to LambdaRank to LambdaMART: An Overview" [http://research-srv.microsoft.com/pubs/132652/MSR-TR-2010-82.pdf] (overview of NDCG and ERR/pFound)
+	"LambdaMART is the boosted tree version of LambdaRank, which is based on RankNet. RankNet, LambdaRank, and LambdaMART have proven to be very successful algorithms for solving real world ranking problems: for example an ensemble of LambdaMART rankers won Track 1 of the 2010 Yahoo! Learning To Rank Challenge. The details of these algorithms are spread across several papers and reports, and so here we give a self-contained, detailed and complete description of them."
+	"Although here we will concentrate on ranking, it is straightforward to modify MART in general, and LambdaMART in particular, to solve a wide range of supervised learning problems (including maximizing information retrieval functions, like NDCG, which are not smooth functions of the model scores).
+
+Burges, Shaked, Renshaw, Lazier, Deeds, Hamilton, Hullender - "Learning to Rank using Gradient Descent" [http://research.microsoft.com/en-us/um/people/cburges/papers/icml_ranking.pdf]
+	"We investigate using gradient descent methods for learning ranking functions; we propose a simple probabilistic cost function, and we introduce RankNet, an implementation of these ideas using a neural network to model the underlying ranking function. We present test results on toy data and on data from a commercial internet search engine."
+	"We have proposed a probabilistic cost for training systems to learn ranking functions using pairs of training examples. The approach can be used for any differentiable function; we explored using a neural network formulation, RankNet. RankNet is simple to train and gives excellent performance on a real world ranking problem with large amounts of data. Comparing the linear RankNet with other linear systems clearly demonstrates the benefit of using our pair-based cost function together with gradient descent; the two layer net gives further improvement. For future work it will be interesting to investigate extending the approach to using other machine learning methods for the ranking function; however evaluation speed and simplicity is a critical constraint for such systems."
+	-- http://videolectures.net/icml2015_burges_learning_to_rank/
+
+Burges, Ragno, Le - "Learning to Rank with Nonsmooth Cost Functions" [http://research.microsoft.com/en-us/um/people/cburges/papers/LambdaRank.pdf]
+	"The quality measures used in information retrieval are particularly difficult to optimize directly, since they depend on the model scores only through the sorted order of the documents returned for a given query. Thus, the derivatives of the cost with respect to the model parameters are either zero, or are undefined. In this paper, we propose a class of simple, flexible algorithms, called LambdaRank, which avoids these difficulties by working with implicit cost functions. We describe LambdaRank using neural network models, although the idea applies to any differentiable function class. We give necessary and sufficient conditions for the resulting implicit cost function to be convex, and we show that the general method has a simple mechanical interpretation. We demonstrate significantly improved accuracy, over a state-of-the-art ranking algorithm, on several datasets. We also show that LambdaRank provides a method for significantly speeding up the training phase of that ranking algorithm. Although this paper is directed towards ranking, the proposed method can be extended to any non-smooth and multivariate cost functions."
+
+Severyn, Moschitti - "Learning to Rank Short Text Pairs with Convolutional Deep Neural Networks" [http://disi.unitn.it/~severyn/papers/sigir-2015-long.pdf]
+	"Learning a similarity function between pairs of objects is at the core of learning to rank approaches. In information retrieval tasks we typically deal with query-document pairs, in question answering - question-answer pairs. However, before learning can take place, such pairs needs to be mapped from the original space of symbolic words into some feature space encoding various aspects of their relatedness, e.g. lexical, syntactic and semantic. Feature engineering is often a laborious task and may require external knowledge sources that are not always available or difficult to obtain. Recently, deep learning approaches have gained a lot of attention from the research community and industry for their ability to automatically learn optimal feature representation for a given task, while claiming state-of-the-art performance in many tasks in computer vision, speech recognition and natural language processing. In this paper, we present a convolutional neural network architecture for reranking pairs of short texts, where we learn the optimal representation of text pairs and a similarity function to relate them in a supervised way from the available training data. Our network takes only words in the input, thus requiring minimal preprocessing. In particular, we consider the task of reranking short text pairs where elements of the pair are sentences. We test our deep learning system on two popular retrieval tasks from TREC: Question Answering and Microblog Retrieval. Our model demonstrates strong performance on the first task beating previous state-of-the-art systems by about 3% absolute points in both MAP and MRR and shows comparable results on tweet reranking, while enjoying the benefits of no manual feature engineering and no additional syntactic parsers."
+	"In this paper, we propose a novel deep learning architecture for reranking short texts. It has the benefits of requiring no manual feature engineering or external resources, which may be expensive or not available. The model with the same architecture can be successfully applied to other domains and tasks. Our experimental findings show that our deep learning model: (i) greatly improves on the previous state-of-the-art systems and a recent deep learning approach in on answer sentence selection task showing a 3% absolute improvement in MAP and MRR; (ii) our system is able to improve even the best system runs from TREC Microblog 2012 challenge; (iii) is comparable to the syntactic reranker, while our system requires no external parsers or resources."
+
+Weston, Bengio, Usunier - "WSABIE: Scaling Up To Large Vocabulary Image Annotation" [http://research.google.com/pubs/pub37180.html]
+	"Image annotation datasets are becoming larger and larger, with tens of millions of images and tens of thousands of possible annotations. We propose a strongly performing method that scales to such datasets by simultaneously learning to optimize precision at the top of the ranked list of annotations for a given image and learning a low-dimensional joint embedding space for both images and annotations. Our method, called WSABIE, both outperforms several baseline methods and is faster and consumes less memory."
+	"To our knowledge this is the first data analysis of image annotation (considering all classes at once, with millions of data points) at such a scale. We have shown that our embedding model trained with the WARP loss is faster, takes less memory, and yields better performance than any known competing approach for this task. Stochastic gradient descent is the standard method for optimizing non-convex models such as our embedding model, but SGD applied to the loss function of interest is too slow, and the novelty of our training algorithm is to use an approximation of the rank, which is otherwise slow to compute, via a sampling trick that makes such optimization feasible for the first time."
+	"In fact, to the best of our knowledge this is the largest scale optimization of a rank-dependent measure attempting to maximize the precision at the top positions of the ranking reported on any dataset (not just for image annotation)."
+
+Borisov, Markov, Rijke, Serdyukov - "A Neural Click Model for Web Search" [http://www2016.net/proceedings/proceedings/p531.pdf]
+	"Understanding user browsing behavior in web search is key to improving web search effectiveness. Many click models have been proposed to explain or predict user clicks on search engine results. They are based on the probabilistic graphical model (PGM) framework, in which user behavior is represented as a sequence of observable and hidden events. The PGM framework provides a mathematically solid way to reason about a set of events given some information about other events. But the structure of the dependencies between the events has to be set manually. Different click models use different hand-crafted sets of dependencies. We propose an alternative based on the idea of distributed representations: to represent the user’s information need and the information available to the user with a vector state. The components of the vector state are learned to represent concepts that are useful for modeling user behavior. And user behavior is modeled as a sequence of vector states associated with a query session: the vector state is initialized with a query, and then iteratively updated based on information about interactions with the search engine results. This approach allows us to directly understand user browsing behavior from click-through data, i.e., without the need for a predefined set of rules as is customary for PGM-based click models. We illustrate our approach using a set of neural click models. Our experimental results show that the neural click model that uses the same training data as traditional PGM-based click models, has better performance on the click prediction task (i.e., predicting user click on search engine results) and the relevance prediction task (i.e., ranking documents by their relevance to a query). An analysis of the best performing neural click model shows that it learns similar concepts to those used in traditional click models, and that it also learns other concepts that cannot be designed manually."
+
+Vorobev, Lefortier, Gusev, Serdyukov - "Gathering Additional Feedback on Search Results by Multi-Armed Bandits with Respect to Production Ranking" [http://www.www2015.it/documents/proceedings/proceedings/p1177.pdf]
+	"Given a repeatedly issued query and a document with a not-yet-confirmed potential to satisfy the users’ needs, a search system should place this document on a high position in order to gather user feedback and obtain a more confident estimate of the document utility. On the other hand, the main objective of the search system is to maximize expected user satisfaction over a rather long period, what requires showing more relevant documents on average. The state-of-the-art approaches to solving this exploration-exploitation dilemma rely on strongly simplified settings making these approaches infeasible in practice. We improve the most flexible and pragmatic of them to handle some actual practical issues. The first one is utilizing prior information about queries and documents, the second is combining bandit-based learning approaches with a default production ranking algorithm. We show experimentally that our framework enables to significantly improve the ranking of a leading commercial search engine."
+
+
+
+
 [interesting papers - recommendations]
 
 Weston, Weiss, Yee - "Nonlinear Latent Factorization by Embedding Multiple User Interests" [http://research.google.com/pubs/pub41535.html]
@@ -412,50 +442,11 @@ Google - "Wide & Deep Learning for Recommender Systems" [http://arxiv.org/abs/16
 
 
 
-[interesting papers - ranking]
-
-Burges - "From RankNet to LambdaRank to LambdaMART: An Overview" [http://research-srv.microsoft.com/pubs/132652/MSR-TR-2010-82.pdf] (overview of NDCG and ERR/pFound)
-	"LambdaMART is the boosted tree version of LambdaRank, which is based on RankNet. RankNet, LambdaRank, and LambdaMART have proven to be very successful algorithms for solving real world ranking problems: for example an ensemble of LambdaMART rankers won Track 1 of the 2010 Yahoo! Learning To Rank Challenge. The details of these algorithms are spread across several papers and reports, and so here we give a self-contained, detailed and complete description of them."
-	"Although here we will concentrate on ranking, it is straightforward to modify MART in general, and LambdaMART in particular, to solve a wide range of supervised learning problems (including maximizing information retrieval functions, like NDCG, which are not smooth functions of the model scores).
-
-Burges, Shaked, Renshaw, Lazier, Deeds, Hamilton, Hullender - "Learning to Rank using Gradient Descent" [http://research.microsoft.com/en-us/um/people/cburges/papers/icml_ranking.pdf]
-	"We investigate using gradient descent methods for learning ranking functions; we propose a simple probabilistic cost function, and we introduce RankNet, an implementation of these ideas using a neural network to model the underlying ranking function. We present test results on toy data and on data from a commercial internet search engine."
-	"We have proposed a probabilistic cost for training systems to learn ranking functions using pairs of training examples. The approach can be used for any differentiable function; we explored using a neural network formulation, RankNet. RankNet is simple to train and gives excellent performance on a real world ranking problem with large amounts of data. Comparing the linear RankNet with other linear systems clearly demonstrates the benefit of using our pair-based cost function together with gradient descent; the two layer net gives further improvement. For future work it will be interesting to investigate extending the approach to using other machine learning methods for the ranking function; however evaluation speed and simplicity is a critical constraint for such systems."
-	-- http://videolectures.net/icml2015_burges_learning_to_rank/
-
-Burges, Ragno, Le - "Learning to Rank with Nonsmooth Cost Functions" [http://research.microsoft.com/en-us/um/people/cburges/papers/LambdaRank.pdf]
-	"The quality measures used in information retrieval are particularly difficult to optimize directly, since they depend on the model scores only through the sorted order of the documents returned for a given query. Thus, the derivatives of the cost with respect to the model parameters are either zero, or are undefined. In this paper, we propose a class of simple, flexible algorithms, called LambdaRank, which avoids these difficulties by working with implicit cost functions. We describe LambdaRank using neural network models, although the idea applies to any differentiable function class. We give necessary and sufficient conditions for the resulting implicit cost function to be convex, and we show that the general method has a simple mechanical interpretation. We demonstrate significantly improved accuracy, over a state-of-the-art ranking algorithm, on several datasets. We also show that LambdaRank provides a method for significantly speeding up the training phase of that ranking algorithm. Although this paper is directed towards ranking, the proposed method can be extended to any non-smooth and multivariate cost functions."
-
-Severyn, Moschitti - "Learning to Rank Short Text Pairs with Convolutional Deep Neural Networks" [http://disi.unitn.it/~severyn/papers/sigir-2015-long.pdf]
-	"Learning a similarity function between pairs of objects is at the core of learning to rank approaches. In information retrieval tasks we typically deal with query-document pairs, in question answering - question-answer pairs. However, before learning can take place, such pairs needs to be mapped from the original space of symbolic words into some feature space encoding various aspects of their relatedness, e.g. lexical, syntactic and semantic. Feature engineering is often a laborious task and may require external knowledge sources that are not always available or difficult to obtain. Recently, deep learning approaches have gained a lot of attention from the research community and industry for their ability to automatically learn optimal feature representation for a given task, while claiming state-of-the-art performance in many tasks in computer vision, speech recognition and natural language processing. In this paper, we present a convolutional neural network architecture for reranking pairs of short texts, where we learn the optimal representation of text pairs and a similarity function to relate them in a supervised way from the available training data. Our network takes only words in the input, thus requiring minimal preprocessing. In particular, we consider the task of reranking short text pairs where elements of the pair are sentences. We test our deep learning system on two popular retrieval tasks from TREC: Question Answering and Microblog Retrieval. Our model demonstrates strong performance on the first task beating previous state-of-the-art systems by about 3% absolute points in both MAP and MRR and shows comparable results on tweet reranking, while enjoying the benefits of no manual feature engineering and no additional syntactic parsers."
-	"In this paper, we propose a novel deep learning architecture for reranking short texts. It has the benefits of requiring no manual feature engineering or external resources, which may be expensive or not available. The model with the same architecture can be successfully applied to other domains and tasks. Our experimental findings show that our deep learning model: (i) greatly improves on the previous state-of-the-art systems and a recent deep learning approach in on answer sentence selection task showing a 3% absolute improvement in MAP and MRR; (ii) our system is able to improve even the best system runs from TREC Microblog 2012 challenge; (iii) is comparable to the syntactic reranker, while our system requires no external parsers or resources."
-
-Weston, Bengio, Usunier - "WSABIE: Scaling Up To Large Vocabulary Image Annotation" [http://research.google.com/pubs/pub37180.html]
-	"Image annotation datasets are becoming larger and larger, with tens of millions of images and tens of thousands of possible annotations. We propose a strongly performing method that scales to such datasets by simultaneously learning to optimize precision at the top of the ranked list of annotations for a given image and learning a low-dimensional joint embedding space for both images and annotations. Our method, called WSABIE, both outperforms several baseline methods and is faster and consumes less memory."
-	"To our knowledge this is the first data analysis of image annotation (considering all classes at once, with millions of data points) at such a scale. We have shown that our embedding model trained with the WARP loss is faster, takes less memory, and yields better performance than any known competing approach for this task. Stochastic gradient descent is the standard method for optimizing non-convex models such as our embedding model, but SGD applied to the loss function of interest is too slow, and the novelty of our training algorithm is to use an approximation of the rank, which is otherwise slow to compute, via a sampling trick that makes such optimization feasible for the first time."
-	"In fact, to the best of our knowledge this is the largest scale optimization of a rank-dependent measure attempting to maximize the precision at the top positions of the ranking reported on any dataset (not just for image annotation)."
-
-Vorobev, Lefortier, Gusev, Serdyukov - "Gathering Additional Feedback on Search Results by Multi-Armed Bandits with Respect to Production Ranking" [http://www.www2015.it/documents/proceedings/proceedings/p1177.pdf]
-	"Given a repeatedly issued query and a document with a not-yet-confirmed potential to satisfy the users’ needs, a search system should place this document on a high position in order to gather user feedback and obtain a more confident estimate of the document utility. On the other hand, the main objective of the search system is to maximize expected user satisfaction over a rather long period, what requires showing more relevant documents on average. The state-of-the-art approaches to solving this exploration-exploitation dilemma rely on strongly simplified settings making these approaches infeasible in practice. We improve the most flexible and pragmatic of them to handle some actual practical issues. The first one is utilizing prior information about queries and documents, the second is combining bandit-based learning approaches with a default production ranking algorithm. We show experimentally that our framework enables to significantly improve the ranking of a leading commercial search engine."
-
-
-
-
 [interesting industry publications]
 
 Google - "Using concepts as contexts for query term substitutions" [http://gofishdigital.com/investigating-google-rankbrain-and-query-term-substitutions/] (RankBrain)
 
 Facebook - "Recommending Items to More than a Billion People" [https://code.facebook.com/posts/861999383875667/recommending-items-to-more-than-a-billion-people/]
-
-Microsoft - "Learning-Based Processing of Natural Language Questions" [http://google.com/patents/US20140006012]
-	"Techniques described enable answering a natural language question using machine learning-based methods to gather and analyze evidence from web searches. A received natural language question is analyzed to extract query units and to determine a question type, answer type, and/or lexical answer type using rules-based heuristics and/or machine learning trained classifiers. Query generation templates are employed to generate a plurality of ranked queries to be used to gather evidence to determine the answer to the natural language question. Candidate answers are extracted from the results based on the answer type and/or lexical answer type, and ranked using a ranker previously trained offline. Confidence levels are calculated for the candidate answers and top answer(s) may be provided to the user if the confidence levels of the top answer(s) surpass a threshold."
-	-- http://gofishdigital.com/microsoft-disses-watson-describes-natural-language-processing-approach-question-answering/
-
-Google - "Natural Language Search Results For Intent Queries" [http://patentscope.wipo.int/search/en/detail.jsf?docId=WO2014197227]
-	"Systems and methods provide natural language search results to clearintent queries. To provide the natural language search results, a system may parse a document from an authoritative source to generate at least one headingtext pair, the text appearing under the heading in the document. The system may assign a topic and a question category to the heading-text pair and store the heading-text pair in a data store keyed by the topic and the question category. The system determines that a query corresponds to the topic and the question category, and provides the heading-text pair as a natural language search result for the query. In some implementations, the text portion of the heading-text pair may be a paragraph or a list of items and the natural language search result may be provided with conventional snippet-based search results in response to the query."
-
-IBM - "Determining Answers in a Question/Answer System when Answer is Not Contained in Corpus" [http://freepatentsonline.com/y2014/0365502.html]
-	"Mechanisms are provided for generating an answer for an input question when the answer is not directly present in a corpus of information. An input question is received from a computing device and analyzed to determine whether the input question is requesting an answer that is calculable. In response to a determination that the input question is requesting an answer that is calculable, one or more constituent data values are retrieved, from a corpus of information, for calculating the requested answer to the input question. A value corresponding to the requested answer is calculated based on the one or more retrieved constituent data values and is then output as the requested answer to the input question."
 
 
 
