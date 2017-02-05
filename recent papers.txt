@@ -1,3 +1,35 @@
+  recent interesting papers:
+  * theory
+  * architectures
+  * meta-learning
+  * one-shot learning
+  * unsupervised learning
+  * generative models
+    - generative adversarial networks
+    - variational autoencoders
+    - autoregressive models
+  * probabilistic inference
+  * reasoning
+  * program induction
+  * reinforcement learning
+    - algorithms
+    - exploration
+    - abstractions for states and actions
+    - planning
+    - transfer
+    - imitation
+    - memory
+    - multi-agent
+    - applications
+  * dialog systems
+  * natural language processing
+
+
+  selected papers - https://github.com/brylevkirill/notes
+
+
+
+
 [theory]
 
 http://arxiv.org/abs/1611.09913 - Capacity and Trainability in Recurrent Neural Networks (Google Brain)
@@ -43,6 +75,7 @@ http://arxiv.org/abs/1610.06258 - Using Fast Weights to Attend to the Recent Pas
 http://openreview.net/forum?id=B1ckMDqlg - Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer (Google Brain)
 	-- https://github.com/dennybritz/deeplearning-papernotes/blob/3718d181a0fed5ed806582822ed0dbde530122bf/notes/mixture-experts.md
 http://arxiv.org/abs/1612.00796 - Overcoming Catastrophic Forgetting in Neural Networks (DeepMind)
+http://arxiv.org/abs/1701.08734 - PathNet: Evolution Channels Gradient Descent in Super Neural Networks (DeepMind)
 
 http://arxiv.org/abs/1609.01704 - Hierarchical Multiscale Recurrent Neural Networks (Bengio)
 	-- https://github.com/dennybritz/deeplearning-papernotes/blob/master/notes/hm-rnn.md
@@ -72,11 +105,11 @@ http://arxiv.org/abs/1612.02879 - Crossprop: Learning Representations through St
 
 [meta-learning]
 
-"Take some computation where you usually wouldn’t keep around intermediate states, such as a planning computation (say value iteration, where you only keep your most recent estimate of the value function) or stochastic gradient descent (where you only keep around your current best estimate of the parameters). Now keep around those intermediate states as well, perhaps reifying the unrolled computation in a neural net, and take gradients to optimize the entire computation with respect to some loss function. Instances: Value Iteration Networks, Learning to learn by gradient descent by gradient descent."
-
 http://arxiv.org/abs/1606.04474 - Learning to Learn by Gradient Descent by Gradient Descent
+	"Take some computation where you usually wouldn’t keep around intermediate states, such as a planning computation (say value iteration, where you only keep your most recent estimate of the value function) or stochastic gradient descent (where you only keep around your current best estimate of the parameters). Now keep around those intermediate states as well, perhaps reifying the unrolled computation in a neural net, and take gradients to optimize the entire computation with respect to some loss function. Instances: Value Iteration Networks, Learning to learn by gradient descent by gradient descent."
 	-- https://youtu.be/tPWGGwmgwG0?t=10m50s (de Freitas)
 	-- https://youtu.be/x1kf4Zojtb0?t=1h4m53s (de Freitas)
+	-- https://blog.acolyer.org/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/
 	-- https://github.com/deepmind/learning-to-learn
 http://arxiv.org/abs/1611.03824 - Learning to Learn for Global Optimization of Black Box Functions (de Freitas)
 http://arxiv.org/abs/1611.02779 - RL2: Fast Reinforcement Learning via Slow Reinforcement Learning (OpenAI, Abbeel)
@@ -91,7 +124,6 @@ http://arxiv.org/abs/1608.05343 - Decoupled Neural Interfaces using Synthetic Gr
 	Put differently, if you consider the dependency DAG of tensor operations, using these DNI things reduces the depth of the parameter gradient nodes (which is the whole point of training) in the DAG. So for example, the gradient update for the layer at the beginning of a n-layer chain goes from depth ~2n to depth ~1, the layer at the end has depth n, which doesn't change. On average, the depth of the gradient computation nodes is about 40% of what it would be normally, for deep networks. So there is a lot more flexibility for scheduling nodes in time and space.
 	And for coarser-grained parallelism it could allow modules running on different devices to do updates before a final loss gradient is available to be distributed to all the devices. Synchronization still has to happen to update the gradient predictions, but that can happen later, and could even be opportunistic (asynchronous or stochastic)."
 	"I guess that the synthetic gradients conditioned on the labels and the synthetic layer inputs conditioned on the data work for the same reason why stochastic depth works: during training, at any given layer the networks before and after it can be approximated by simpler, shallower versions. In stochastic depth the approximation is performed by skipping layers, so the whole network is approximated by a shallower version of itself, which changes at each step. In this work, instead, the approximation is performed by separate networks.
-http://arxiv.org/abs/1609.02228 - Learning to Learn with Backpropagation of Hebbian Plasticity
 
 http://arxiv.org/abs/1609.09106 - HyperNetworks (Google Brain)
 	-- http://blog.otoro.net/2016/09/28/hyper-networks/
@@ -164,6 +196,8 @@ http://arxiv.org/abs/1610.08123 - Socratic Learning: Empowering the Generative M
 	-- https://youtube.com/watch?v=0gRNochbK9c
 
 
+
+
 [generative models - generative adversarial networks]
 
 http://arxiv.org/abs/1701.00160 - NIPS 2016 Tutorial: Generative Adversarial Networks (Goodfellow)
@@ -195,6 +229,7 @@ http://arxiv.org/abs/1609.08661 - Task Specific Adversarial Cost Function
 http://arxiv.org/abs/1612.04357 - Stacked Generative Adversarial Networks
 	-- https://github.com/xunhuang1995/SGAN
 http://arxiv.org/abs/1611.04051 - GANS for Sequences of Discrete Elements with the Gumbel-softmax Distribution
+	-- https://casmls.github.io/general/2017/02/01/GumbelSoftmax.html
 http://arxiv.org/abs/1511.06390 - Unsupervised and Semi-supervised Learning with Categorical Generative Adversarial Networks
 http://openreview.net/forum?id=Byk-VI9eg - Generative Multi-Adversarial Networks
 http://www.stat.ucla.edu/~ywu/ABP/doc/arXivABP.pdf - Alternating Back-Propagation for Generator Network
@@ -223,6 +258,8 @@ http://arxiv.org/abs/1610.06918 - Learning to Protect Communications with Advers
 	-- https://nlml.github.io/neural-networks/adversarial-neural-cryptography/
 
 
+
+
 [generative models - variational autoencoders]
 
 http://arxiv.org/abs/1401.4082 - Stochastic Backpropagation and Approximate Inference in Deep Generative Models
@@ -249,9 +286,11 @@ http://arxiv.org/abs/1609.02200 - Discrete Variational Autoencoders
 	-- https://youtube.com/watch?v=c6GukeAkyVs (Struminsky)
 http://arxiv.org/abs/1611.00712 - The Concrete Distribution: A Continuous Relaxation of Discrete Random Variables
 	-- https://laurent-dinh.github.io/2016/11/22/gumbel-max.html
+	-- https://casmls.github.io/general/2017/02/01/GumbelSoftmax.html
 http://arxiv.org/abs/1611.01144 - Categorical Reparametrization with Gumbel-Softmax
 	-- http://blog.evjang.com/2016/11/tutorial-categorical-variational.html
 	-- https://laurent-dinh.github.io/2016/11/22/gumbel-max.html
+	-- https://casmls.github.io/general/2017/02/01/GumbelSoftmax.html
 	-- https://github.com/EderSantana/gumbel
 http://openreview.net/forum?id=ryMxXPFex - Discrete Variational Autoencoders (D-Wave)
 
@@ -268,6 +307,7 @@ http://arxiv.org/abs/1611.02304 - Normalizing Flows on Riemannian Manifolds (Moh
 	-- https://pbs.twimg.com/media/CyntnWDXAAA97Ks.jpg
 
 http://arxiv.org/abs/1701.04722 - Adversarial Variational Bayes: Unifying Variational Autoencoders and Generative Adversarial Networks
+	-- https://gist.github.com/poolio/b71eb943d6537d01f46e7b20e9225149
 http://arxiv.org/abs/1602.05473 - Auxiliary Deep Generative Models
 	-- http://techtalks.tv/talks/auxiliary-deep-generative-models/62509/
 	-- https://github.com/larsmaaloee/auxiliary-deep-generative-models
@@ -286,6 +326,8 @@ http://arxiv.org/abs/1511.06499 - The Variational Gaussian Process
 	-- http://videolectures.net/iclr2016_tran_variational_gaussian/ (Tran)
 	-- http://github.com/blei-lab/edward
 http://arxiv.org/abs/1605.06197 - Stick-Breaking Variational Autoencoders  # latent representation with stochastic dimensionality
+
+
 
 
 [generative models - autoregressive models]
@@ -443,138 +485,6 @@ http://arxiv.org/abs/1608.04428 - TerpreT: A Probabilistic Programming Language 
 
 
 
-[reinforcement learning - exploration]
-
-https://openreview.net/forum?id=Bk8aOm9xl - Surprise-Based Intrinsic Motivation for Deep Reinforcement Learning
-	"They present two tractable approximations to their framework - one which ignores the stochasticity of the true environmental dynamics, and one which approximates the rate of information gain (somewhat similar to Schmidhuber's formal theory of creativity, fun and intrinsic motivation)."
-	"Stadie et al. learn deterministic dynamics models by minimizing Euclidean loss - whereas in our work, we learn stochastic dynamics with cross entropy loss - and use L2 prediction errors for intrinsic motivation."
-http://arxiv.org/abs/1611.04717 - #Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning (Abbeel)
-	"The authors encourage exploration by adding a pseudo-reward of the form beta/sqrt(count(state)) for infrequently visited states. State visits are counted using Locality Sensitive Hashing (LSH) based on an environment-specific feature representation like raw pixels or autoencoder representations. The authors show that this simple technique achieves gains in various classic RL control tasks and several games in the ATARI domain. While the algorithm itself is simple there are now several more hyperaprameters to tune: The bonus coefficient beta, the LSH hashing granularity (how many bits to use for hashing) as well as the type of feature representation based on which the hash is computed, which itself may have more parameters. The experiments don't paint a consistent picture and different environments seem to need vastly different hyperparameter settings, which in my opinion will make this technique difficult to use in practice."
-http://arxiv.org/abs/1611.07507 - Variational Intrinsic Control (DeepMind)
-	"The second scenario is that in which the long-term goal of the agent is to get to a state with a maximal set of available intrinsic options – the objective of empowerment (Salge et al., 2014). This set of options consists of those that the agent knows how to use. Note that this is not the theoretical set of all options: it is of no use to the agent that it is possible to do something if it is unable to learn how to do it. Thus, to maximize empowerment, the agent needs to simultaneously learn how to control the environment as well – it needs to discover the options available to it. The agent should in fact not aim for states where it has the most control according to its current abilities, but for states where it expects it will achieve the most control after learning. Being able to learn available options is thus fundamental to becoming empowered."
-	"Let us compare this to the commonly used intrinsic motivation objective of maximizing the amount of model-learning progress, measured as the difference in compression of its experience before and after learning (Schmidhuber, 1991; 2010; Bellemare et al., 2016; Houthooft et al., 2016). The empowerment objective differs from this in a fundamental manner: the primary goal is not to understand or predict the observations but to control the environment. This is an important point – agents can often control an environment perfectly well without much understanding, as exemplified by canonical model-free reinforcement learning algorithms (Sutton & Barto, 1998), where agents only model action-conditioned expected returns. Focusing on such understanding might significantly distract and impair the agent, as such reducing the control it achieves."
-http://arxiv.org/abs/1612.02605 - Towards Information-Seeking Agents (Maluuba)
-	-- https://youtube.com/watch?v=3bSquT1zqj8 (demo)
-http://arxiv.org/abs/1609.04994 - Exploration Potential
-	"We introduce exploration potential, a quantity that measures how much a reinforcement learning agent has explored its environment class. In contrast to information gain, exploration potential takes the problem's reward structure into account."
-
-
-[reinforcement learning - abstraction]
-
-http://openreview.net/forum?id=B1oK8aoxe - Stochastic Neural Networks for Hierarchical Reinforcement Learning (Abbeel)
-	-- https://youtube.com/playlist?list=PLEbdzN4PXRGVB8NsPffxsBSOCcWFBMQx3 (demo)
-	"Our SNN hierarchical approach outperforms state-of-the-art intrinsic motivation results like VIME (Houthooft et al., 2016)."
-http://arxiv.org/abs/1610.05182 - Learning and Transfer of Modulated Locomotor Controllers (Silver)
-	-- https://youtube.com/watch?v=sboPYvhpraQ (demo)
-
-http://arxiv.org/abs/1611.07507 - Variational Intrinsic Control (DeepMind)
-http://openreview.net/forum?id=B1oK8aoxe - Stochastic Neural Networks for Hierarchical Reinforcement Learning (Abbeel)
-http://arxiv.org/abs/1606.04695 - Strategic Attentive Writer for Learning Macro-Actions (Vinyals)
-	"Learning temporally extended actions and temporal abstraction in general is a long standing problem in reinforcement learning. They facilitate learning by enabling structured exploration and economic computation. In this paper we present a novel deep recurrent neural network architecture that learns to build implicit plans in an end-to-end manner purely by interacting with an environment in a reinforcement learning setting. The network builds an internal plan, which is continuously updated upon observation of the next input from the environment. It can also partition this internal representation into contiguous sub-sequences by learning for how long the plan can be committed to – i.e. followed without replanning. Combining these properties, the proposed model, dubbed STRategic Attentive Writer (STRAW) can learn high-level, temporally abstracted macro-actions of varying lengths that are solely learnt from data without any prior information."
-	-- https://youtube.com/watch?v=niMOdSu3yio (demo)
-	-- http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/ (Mohamed)
-http://arxiv.org/abs/1611.01796 - Modular Multitask Reinforcement Learning with Policy Sketches (Levine)
-http://arxiv.org/abs/1609.05140 - The Option-Critic Architecture (Precup)
-	-- https://youtube.com/watch?v=8r_EoYnPjGk (Bacon)
-http://openreview.net/forum?id=H1eLE8qlx - Options Discovery with Budgeted Reinforcement Learning
-
-http://arxiv.org/abs/1604.07255 - A Deep Hierarchical Approach to Lifelong Learning in Minecraft
-	-- https://youtube.com/watch?v=RwjfE4kc6j8 (demo)
-http://arxiv.org/abs/1604.06057 - Hierarchical Deep Reinforcement Learning: Integrating Temporal Abstraction and Intrinsic Motivation (Tenenbaum)
-	-- https://drive.google.com/folderview?id=0B3yyTdZ1crn4enpGVmp5SFpnZms&usp=drive_web (demo)
-	-- https://youtube.com/watch?v=ybDNvnVY1n8 (Kulkarni)
-	-- http://mrkulk.github.io/notes/deephrl
-	-- https://reddit.com/r/MachineLearning/comments/4frm32/160406057_hierarchical_deep_reinforcement/
-	-- https://github.com/EthanMacdonald/h-DQN
-
-
-[reinforcement learning - planning]
-
-https://openreview.net/forum?id=BkJsCIcgl - The Predictron: End-to-End Learning and Planning (Silver)
-	-- https://youtube.com/watch?v=BeaLdaN2C3Q
-	-- https://github.com/zhongwen/predictron
-http://arxiv.org/abs/1602.02867 - Value Iteration Networks
-	-- https://youtube.com/watch?v=tXBHfbHHlKc (Tamar) + http://technion.ac.il/~danielm/icml_slides/Talk7.pdf
-	-- https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Value-Iteration-Networks (Tamar)
-	-- https://github.com/karpathy/paper-notes/blob/master/vin.md
-	-- http://github.com/avivt/VIN
-	-- https://github.com/TheAbhiKumar/tensorflow-value-iteration-networks
-https://arxiv.org/abs/1701.02392 - Reinforcement Learning via Recurrent Convolutional Neural Networks
-	"solving Markov Decision Processes and Reinforcement Learning problems using Recurrent Convolutional Neural Networks"
-	"1. Solving Value / Policy Iteration in a standard MDP using Feedforward passes of a Value Iteration RCNN.
-	2. Representing the Bayes Filter state belief update as feedforward passes of a Belief Propagation RCNN.
-	3. Learning the State Transition models in a POMDP setting, using backpropagation on the Belief Propagation RCNN.
-	4. Learning Reward Functions in an Inverse Reinforcement Learning framework from demonstrations, using a QMDP RCNN."
-	-- https://youtube.com/watch?v=gpwA3QNTPOQ (Shankar)
-	-- https://github.com/tanmayshankar/RCNN_MDP
-https://openreview.net/forum?id=Bk8BvDqex - Metacontrol for Adaptive Imagination-Based Optimization (DeepMind)
-
-
-[reinforcement learning - transfer]
-
-http://arxiv.org/abs/1612.00429 - Generalizing Skills with Semi-Supervised Reinforcement Learning (Abbeel, Levine)
-	-- https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3 (39:26, Levine)
-http://arxiv.org/abs/1609.07088 - Learning Modular Neural Network Policies for Multi-Task and Multi-Robot Transfer (Darrell, Abbeel, Levine)
-	-- https://youtube.com/watch?v=n4EgRwzJE1o
-http://arxiv.org/abs/1606.04671 - Progressive Neural Networks (DeepMind)
-	-- https://youtube.com/watch?v=aWAP_CWEtSI (Hadsell)
-	-- http://techtalks.tv/talks/progressive-nets-for-sim-to-real-transfer-learning/63043/ (Hadsell)
-	-- https://blog.acolyer.org/2016/10/11/progressive-neural-networks/
-	-- https://github.com/synpon/prog_nn
-http://arxiv.org/abs/1511.06342 - Actor-Mimic: Deep Multitask and Transfer Reinforcement Learning (Salakhutdinov)
-	-- https://github.com/eparisotto/ActorMimic
-http://arxiv.org/abs/1511.06295 - Policy Distillation (DeepMind)
-	"Our new paper uses distillation to consolidate lots of policies into a single deep network. This works remarkably well, and can be applied online, during Q-learning, so that policies are compressed, distilled, and refined whilst being learned. Atari policies are actually improved through distillation and generalize better (with higher scores and lower variance) during novel starting state evaluation."
-http://arxiv.org/abs/1606.05312 - Successor Features for Transfer in Reinforcement Learning (Silver)
-http://arxiv.org/abs/1509.06841 - One-Shot Learning of Manipulation Skills with Online Dynamics Adaptation and Neural Network Priors (Levine)
-
-
-[reinforcement learning - imitation]
-
-http://arxiv.org/abs/1603.00448 - Guided Cost Learning: Deep Inverse Optimal Control via Policy Optimization (Abbeel)
-	-- https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3 (22:48, Levine)
-http://arxiv.org/abs/1606.03476 - Generative Adversarial Imitation Learning
-	-- https://github.com/openai/imitation
-	"Uses a GAN framework to discriminate between teacher and student experience and force the student to behave close to the teacher."
-http://openreview.net/forum?id=B16dGcqlx - Third Person Imitation Learning (Abbeel, Sutskever)
-	"The authors propose a new framework for learning a policy from third-person experience. This is different from standard imitation learning which assumes the same "viewpoint" for teacher and student. The authors build upon Generative Adversarial Imitation Learning, which uses a GAN framework to discriminate between teacher and student experience and force the student to behave close to the teacher. However, when using third-person experience from a different viewpoint the discriminator would simply learn to discriminate between viewpoints instead of behavior and the framework isn't easily applicable. The authors' solution is to add a second discriminator to maximize a domain confusion loss based on the same feature representation. The objective is to learn the same (viewpoint-independent) feature representation for both teacher and student experience while also learning to discriminate between teacher and student observations. In other words, the objective is to maximize domain confusion while minimizing class loss. In practice, this is another discriminator term in the GAN objective. The authors also found that they need to feed observations at time t+n (n=4 in experiments) to signal the direction of movement in the environment."
-http://arxiv.org/abs/1612.06699 - Unsupervised Perceptual Rewards for Imitation Learning (Levine)
-	"To our knowledge, these are the first results showing that complex robotic manipulation skills can be learned directly and without supervised labels from a video of a human performing the task."
-http://arxiv.org/abs/1605.06450 - Query-Efficient Imitation Learning for End-to-End Autonomous Driving (Cho)
-http://arxiv.org/abs/1612.02179 - Model-based Adversarial Imitation Learning
-
-
-[reinforcement learning - memory]
-
-http://arxiv.org/abs/1606.04460 - Model-Free Episodic Control (DeepMind)
-	"This might be achieved by a dual system (hippocampus vs neocortex http://wixtedlab.ucsd.edu/publications/Psych%20218/McClellandMcNaughtonOReilly95.pdf ) where information are stored in alternated way such that new nonstationary experience is rapidly encoded in the hippocampus (most flexible region of the brain with the highest amount of plasticity and neurogenesis); long term memory in the cortex is updated in a separate phase where what is updated (both in terms of samples and targets) can be controlled and does not put the system at risk of instabilities."
-	-- https://sites.google.com/site/episodiccontrol/ (demo)
-	-- http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-4-episodic-and-interactive-memory/
-	-- https://github.com/ShibiHe/Model-Free-Episodic-Control
-	-- https://github.com/sudeepraja/Model-Free-Episodic-Control
-http://arxiv.org/abs/1610.06402 - A Growing Long-term Episodic and Semantic Memory
-http://arxiv.org/abs/1512.04455 - Memory-based Control with Recurrent Neural Networks (Silver)
-	-- https://youtube.com/watch?v=V4_vb1D5NNQ (demo)
-
-
-[reinforcement learning - multi-agent]
-
-http://arxiv.org/abs/1611.00179 - Dual Learning for Machine Translation
-	"In the dual-learning mechanism, we use one agent to represent the model for the primal task and the other agent to represent the model for the dual task, then ask them to teach each other through a reinforcement learning process. Based on the feedback signals generated during this process (e.g., the languagemodel likelihood of the output of a model, and the reconstruction error of the original sentence after the primal and dual translations), we can iteratively update the two models until convergence (e.g., using the policy gradient methods)."
-	"The basic idea of dual learning is generally applicable: as long as two tasks are in dual form, we can apply the dual-learning mechanism to simultaneously learn both tasks from unlabeled data using reinforcement learning algorithms. Actually, many AI tasks are naturally in dual form, for example, speech recognition versus text to speech, image caption versus image generation, question answering versus question generation (e.g., Jeopardy!), search (matching queries to documents) versus keyword extraction (extracting keywords/queries for documents), so on and so forth."
-http://arxiv.org/abs/1511.08779 - Multiagent Cooperation and Competition with Deep Reinforcement Learning
-	-- https://youtube.com/playlist?list=PLfLv_F3r0TwyaZPe50OOUx8tRf0HwdR_u
-	-- https://github.com/NeuroCSUT/DeepMind-Atari-Deep-Q-Learner-2Player
-http://arxiv.org/abs/1602.02672 - Learning to Communicate to Solve Riddles with Deep Distributed Recurrent Q-Networks (de Freitas)
-http://arxiv.org/abs/1605.06676 - Learning to Communicate with Deep Multi-Agent Reinforcement Learning (de Freitas)
-	-- https://youtube.com/watch?v=cfsYBY4nd1c
-	-- http://videolectures.net/deeplearning2016_foerster_learning_communicate/ (Foerster)
-	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.07133
-	-- https://github.com/iassael/learning-to-communicate
-http://arxiv.org/abs/1605.07736 - Learning Multiagent Communication with Backpropagation (Fergus)
-	-- https://github.com/facebookresearch/CommNet
-
-
 [reinforcement learning - algorithms]
 
 http://arxiv.org/abs/1604.06778 - Benchmarking Deep Reinforcement Learning for Continuous Control (Abbeel)
@@ -583,17 +493,24 @@ http://arxiv.org/abs/1604.06778 - Benchmarking Deep Reinforcement Learning for C
 http://arxiv.org/abs/1611.02779 - RL2: Fast Reinforcement Learning via Slow Reinforcement Learning (OpenAI, Abbeel)
 http://arxiv.org/abs/1611.05763 - Learning to Reinforcement Learn (DeepMind)
 
-http://arxiv.org/abs/1611.01626 - PGQ: Combining policy gradient and Q-learning (DeepMind) (on-policy + off-policy)
+http://arxiv.org/abs/1611.01224 - Sample Efficient Actor-Critic with Experience Replay (DeepMind) (ACER)
+
+http://arxiv.org/abs/1611.01626 - PGQ: Combining policy gradient and Q-learning (DeepMind)  # on policy + off policy
 	-- http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FODonoghueMKM16
 	"This connection allows us to estimate the Q-values from the action preferences of the policy, to which we apply Q-learning updates."
 	"We also establish an equivalency between action-value fitting techniques and actor-critic algorithms, showing that regularized policy gradient techniques can be interpreted as advantage function learning algorithms."
-http://arxiv.org/abs/1611.02247 - Q-Prop: Sample-Efficient Policy Gradient with An Off-Policy Critic (Levine)  # on-policy + off-policy
-	" We present Q-Prop, a policy gradient method that uses a Taylor expansion of the off-policy critic as a control variate. Q-Prop is both sample efficient and stable, and effectively combines the benefits of on-policy and off-policy methods."
-http://arxiv.org/abs/1611.01224 - Sample Efficient Actor-Critic with Experience Replay (DeepMind) (ACER)
+http://arxiv.org/abs/1611.02247 - Q-Prop: Sample-Efficient Policy Gradient with An Off-Policy Critic (Levine)  # on policy + off policy
+	"We present Q-Prop, a policy gradient method that uses a Taylor expansion of the off-policy critic as a control variate. Q-Prop is both sample efficient and stable, and effectively combines the benefits of on-policy and off-policy methods."
+
+http://arxiv.org/abs/1602.04951 - Q(λ) with Off-Policy Corrections (DeepMind)
+	-- https://youtube.com/watch?v=8hK0NnG_DhY&t=25m27s (Brunskill)
 http://arxiv.org/abs/1606.02647 - Safe and Efficient Off-Policy Reinforcement Learning (DeepMind) (Retrace)
 	"Retrace(λ) is a new strategy to weight a sample for off-policy learning, it provides low-variance, safe and efficient updates."
 	"Our goal is to design a RL algorithm with two desired properties. Firstly, to use off-policy data, which is important for exploration, when we use memory replay, or observe log-data. Secondly, to use multi-steps returns in order to propagate rewards faster and avoid accumulation of approximation/estimation errors. Both properties are crucial in deep RL. We introduce the “Retrace” algorithm, which uses multi-steps returns and can safely and efficiently utilize any off-policy data."
-http://arxiv.org/abs/1602.04951 - Q(λ) with Off-Policy Corrections (DeepMind)
+	"open issue: off policy unbiased, low variance estimators for long horizon delayed reward problems"
+	-- https://youtube.com/watch?v=8hK0NnG_DhY&t=25m27s (Brunskill)
+http://arxiv.org/abs/1604.00923 - Data-Efficient Off-Policy Policy Evaluation for Reinforcement Learning (Brunskill)
+	-- https://youtube.com/watch?v=8hK0NnG_DhY&t=15m44s (Brunskill)
 
 http://arxiv.org/abs/1502.05477 - Trust Region Policy Optimization (Schulman, Levine, Jordan, Abbeel)
 	-- https://youtube.com/watch?v=jeid0wIrSn4
@@ -638,6 +555,154 @@ http://arxiv.org/abs/1511.04143 - Deep Reinforcement Learning In Parameterized A
 	-- https://github.com/mhauskn/dqn-hfo
 
 http://arxiv.org/abs/1512.07679 - Reinforcement Learning in Large Discrete Action Spaces
+
+
+
+
+[reinforcement learning - exploration]
+
+https://openreview.net/forum?id=Bk8aOm9xl - Surprise-Based Intrinsic Motivation for Deep Reinforcement Learning
+	"They present two tractable approximations to their framework - one which ignores the stochasticity of the true environmental dynamics, and one which approximates the rate of information gain (somewhat similar to Schmidhuber's formal theory of creativity, fun and intrinsic motivation)."
+	"Stadie et al. learn deterministic dynamics models by minimizing Euclidean loss - whereas in our work, we learn stochastic dynamics with cross entropy loss - and use L2 prediction errors for intrinsic motivation."
+http://arxiv.org/abs/1611.04717 - #Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning (Abbeel)
+	"The authors encourage exploration by adding a pseudo-reward of the form beta/sqrt(count(state)) for infrequently visited states. State visits are counted using Locality Sensitive Hashing (LSH) based on an environment-specific feature representation like raw pixels or autoencoder representations. The authors show that this simple technique achieves gains in various classic RL control tasks and several games in the ATARI domain. While the algorithm itself is simple there are now several more hyperaprameters to tune: The bonus coefficient beta, the LSH hashing granularity (how many bits to use for hashing) as well as the type of feature representation based on which the hash is computed, which itself may have more parameters. The experiments don't paint a consistent picture and different environments seem to need vastly different hyperparameter settings, which in my opinion will make this technique difficult to use in practice."
+http://arxiv.org/abs/1611.07507 - Variational Intrinsic Control (DeepMind)
+	"The second scenario is that in which the long-term goal of the agent is to get to a state with a maximal set of available intrinsic options – the objective of empowerment (Salge et al., 2014). This set of options consists of those that the agent knows how to use. Note that this is not the theoretical set of all options: it is of no use to the agent that it is possible to do something if it is unable to learn how to do it. Thus, to maximize empowerment, the agent needs to simultaneously learn how to control the environment as well – it needs to discover the options available to it. The agent should in fact not aim for states where it has the most control according to its current abilities, but for states where it expects it will achieve the most control after learning. Being able to learn available options is thus fundamental to becoming empowered."
+	"Let us compare this to the commonly used intrinsic motivation objective of maximizing the amount of model-learning progress, measured as the difference in compression of its experience before and after learning (Schmidhuber, 1991; 2010; Bellemare et al., 2016; Houthooft et al., 2016). The empowerment objective differs from this in a fundamental manner: the primary goal is not to understand or predict the observations but to control the environment. This is an important point – agents can often control an environment perfectly well without much understanding, as exemplified by canonical model-free reinforcement learning algorithms (Sutton & Barto, 1998), where agents only model action-conditioned expected returns. Focusing on such understanding might significantly distract and impair the agent, as such reducing the control it achieves."
+http://arxiv.org/abs/1612.02605 - Towards Information-Seeking Agents (Maluuba)
+	-- https://youtube.com/watch?v=3bSquT1zqj8 (demo)
+http://arxiv.org/abs/1609.04994 - Exploration Potential
+	"We introduce exploration potential, a quantity that measures how much a reinforcement learning agent has explored its environment class. In contrast to information gain, exploration potential takes the problem's reward structure into account."
+
+
+
+
+[reinforcement learning - abstractions for states and actions]
+
+http://openreview.net/forum?id=B1oK8aoxe - Stochastic Neural Networks for Hierarchical Reinforcement Learning (Abbeel)
+	-- https://youtube.com/playlist?list=PLEbdzN4PXRGVB8NsPffxsBSOCcWFBMQx3 (demo)
+	"Our SNN hierarchical approach outperforms state-of-the-art intrinsic motivation results like VIME (Houthooft et al., 2016)."
+http://arxiv.org/abs/1610.05182 - Learning and Transfer of Modulated Locomotor Controllers (Silver)
+	-- https://youtube.com/watch?v=sboPYvhpraQ (demo)
+
+http://arxiv.org/abs/1611.07507 - Variational Intrinsic Control (DeepMind)
+http://openreview.net/forum?id=B1oK8aoxe - Stochastic Neural Networks for Hierarchical Reinforcement Learning (Abbeel)
+http://arxiv.org/abs/1606.04695 - Strategic Attentive Writer for Learning Macro-Actions (Vinyals)
+	"Learning temporally extended actions and temporal abstraction in general is a long standing problem in reinforcement learning. They facilitate learning by enabling structured exploration and economic computation. In this paper we present a novel deep recurrent neural network architecture that learns to build implicit plans in an end-to-end manner purely by interacting with an environment in a reinforcement learning setting. The network builds an internal plan, which is continuously updated upon observation of the next input from the environment. It can also partition this internal representation into contiguous sub-sequences by learning for how long the plan can be committed to – i.e. followed without replanning. Combining these properties, the proposed model, dubbed STRategic Attentive Writer (STRAW) can learn high-level, temporally abstracted macro-actions of varying lengths that are solely learnt from data without any prior information."
+	-- https://youtube.com/watch?v=niMOdSu3yio (demo)
+	-- http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/ (Mohamed)
+http://arxiv.org/abs/1611.01796 - Modular Multitask Reinforcement Learning with Policy Sketches (Levine)
+http://arxiv.org/abs/1609.05140 - The Option-Critic Architecture (Precup)
+	-- https://youtube.com/watch?v=8r_EoYnPjGk (Bacon)
+http://openreview.net/forum?id=H1eLE8qlx - Options Discovery with Budgeted Reinforcement Learning
+
+http://arxiv.org/abs/1604.07255 - A Deep Hierarchical Approach to Lifelong Learning in Minecraft
+	-- https://youtube.com/watch?v=RwjfE4kc6j8 (demo)
+http://arxiv.org/abs/1604.06057 - Hierarchical Deep Reinforcement Learning: Integrating Temporal Abstraction and Intrinsic Motivation (Tenenbaum)
+	-- https://drive.google.com/folderview?id=0B3yyTdZ1crn4enpGVmp5SFpnZms&usp=drive_web (demo)
+	-- https://youtube.com/watch?v=ybDNvnVY1n8 (Kulkarni)
+	-- http://mrkulk.github.io/notes/deephrl
+	-- https://reddit.com/r/MachineLearning/comments/4frm32/160406057_hierarchical_deep_reinforcement/
+	-- https://github.com/EthanMacdonald/h-DQN
+
+
+
+
+[reinforcement learning - planning]
+
+https://openreview.net/forum?id=BkJsCIcgl - The Predictron: End-to-End Learning and Planning (Silver)
+	-- https://youtube.com/watch?v=BeaLdaN2C3Q
+	-- https://github.com/zhongwen/predictron
+http://arxiv.org/abs/1602.02867 - Value Iteration Networks
+	-- https://youtube.com/watch?v=tXBHfbHHlKc (Tamar) + http://technion.ac.il/~danielm/icml_slides/Talk7.pdf
+	-- https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Value-Iteration-Networks (Tamar)
+	-- https://github.com/karpathy/paper-notes/blob/master/vin.md
+	-- http://github.com/avivt/VIN
+	-- https://github.com/TheAbhiKumar/tensorflow-value-iteration-networks
+https://arxiv.org/abs/1701.02392 - Reinforcement Learning via Recurrent Convolutional Neural Networks
+	"solving Markov Decision Processes and Reinforcement Learning problems using Recurrent Convolutional Neural Networks"
+	"1. Solving Value / Policy Iteration in a standard MDP using Feedforward passes of a Value Iteration RCNN.
+	2. Representing the Bayes Filter state belief update as feedforward passes of a Belief Propagation RCNN.
+	3. Learning the State Transition models in a POMDP setting, using backpropagation on the Belief Propagation RCNN.
+	4. Learning Reward Functions in an Inverse Reinforcement Learning framework from demonstrations, using a QMDP RCNN."
+	-- https://youtube.com/watch?v=gpwA3QNTPOQ (Shankar)
+	-- https://github.com/tanmayshankar/RCNN_MDP
+https://openreview.net/forum?id=Bk8BvDqex - Metacontrol for Adaptive Imagination-Based Optimization (DeepMind)
+
+
+
+
+[reinforcement learning - transfer]
+
+http://arxiv.org/abs/1612.00429 - Generalizing Skills with Semi-Supervised Reinforcement Learning (Abbeel, Levine)
+	-- https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3 (39:26, Levine)
+http://arxiv.org/abs/1609.07088 - Learning Modular Neural Network Policies for Multi-Task and Multi-Robot Transfer (Darrell, Abbeel, Levine)
+	-- https://youtube.com/watch?v=n4EgRwzJE1o
+http://arxiv.org/abs/1606.04671 - Progressive Neural Networks (DeepMind)
+	-- https://youtube.com/watch?v=aWAP_CWEtSI (Hadsell)
+	-- http://techtalks.tv/talks/progressive-nets-for-sim-to-real-transfer-learning/63043/ (Hadsell)
+	-- https://blog.acolyer.org/2016/10/11/progressive-neural-networks/
+	-- https://github.com/synpon/prog_nn
+http://arxiv.org/abs/1511.06342 - Actor-Mimic: Deep Multitask and Transfer Reinforcement Learning (Salakhutdinov)
+	-- https://github.com/eparisotto/ActorMimic
+http://arxiv.org/abs/1511.06295 - Policy Distillation (DeepMind)
+	"Our new paper uses distillation to consolidate lots of policies into a single deep network. This works remarkably well, and can be applied online, during Q-learning, so that policies are compressed, distilled, and refined whilst being learned. Atari policies are actually improved through distillation and generalize better (with higher scores and lower variance) during novel starting state evaluation."
+http://arxiv.org/abs/1606.05312 - Successor Features for Transfer in Reinforcement Learning (Silver)
+http://arxiv.org/abs/1509.06841 - One-Shot Learning of Manipulation Skills with Online Dynamics Adaptation and Neural Network Priors (Levine)
+
+
+
+
+[reinforcement learning - imitation]
+
+http://arxiv.org/abs/1603.00448 - Guided Cost Learning: Deep Inverse Optimal Control via Policy Optimization (Abbeel)
+	-- https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3 (22:48, Levine)
+http://arxiv.org/abs/1606.03476 - Generative Adversarial Imitation Learning
+	-- https://github.com/openai/imitation
+	"Uses a GAN framework to discriminate between teacher and student experience and force the student to behave close to the teacher."
+http://openreview.net/forum?id=B16dGcqlx - Third Person Imitation Learning (Abbeel, Sutskever)
+	"The authors propose a new framework for learning a policy from third-person experience. This is different from standard imitation learning which assumes the same "viewpoint" for teacher and student. The authors build upon Generative Adversarial Imitation Learning, which uses a GAN framework to discriminate between teacher and student experience and force the student to behave close to the teacher. However, when using third-person experience from a different viewpoint the discriminator would simply learn to discriminate between viewpoints instead of behavior and the framework isn't easily applicable. The authors' solution is to add a second discriminator to maximize a domain confusion loss based on the same feature representation. The objective is to learn the same (viewpoint-independent) feature representation for both teacher and student experience while also learning to discriminate between teacher and student observations. In other words, the objective is to maximize domain confusion while minimizing class loss. In practice, this is another discriminator term in the GAN objective. The authors also found that they need to feed observations at time t+n (n=4 in experiments) to signal the direction of movement in the environment."
+http://arxiv.org/abs/1612.06699 - Unsupervised Perceptual Rewards for Imitation Learning (Levine)
+	"To our knowledge, these are the first results showing that complex robotic manipulation skills can be learned directly and without supervised labels from a video of a human performing the task."
+http://arxiv.org/abs/1605.06450 - Query-Efficient Imitation Learning for End-to-End Autonomous Driving (Cho)
+http://arxiv.org/abs/1612.02179 - Model-based Adversarial Imitation Learning
+
+
+
+
+[reinforcement learning - memory]
+
+http://arxiv.org/abs/1606.04460 - Model-Free Episodic Control (DeepMind)
+	"This might be achieved by a dual system (hippocampus vs neocortex http://wixtedlab.ucsd.edu/publications/Psych%20218/McClellandMcNaughtonOReilly95.pdf ) where information are stored in alternated way such that new nonstationary experience is rapidly encoded in the hippocampus (most flexible region of the brain with the highest amount of plasticity and neurogenesis); long term memory in the cortex is updated in a separate phase where what is updated (both in terms of samples and targets) can be controlled and does not put the system at risk of instabilities."
+	-- https://sites.google.com/site/episodiccontrol/ (demo)
+	-- http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-4-episodic-and-interactive-memory/
+	-- https://github.com/ShibiHe/Model-Free-Episodic-Control
+	-- https://github.com/sudeepraja/Model-Free-Episodic-Control
+http://arxiv.org/abs/1610.06402 - A Growing Long-term Episodic and Semantic Memory
+http://arxiv.org/abs/1512.04455 - Memory-based Control with Recurrent Neural Networks (Silver)
+	-- https://youtube.com/watch?v=V4_vb1D5NNQ (demo)
+
+
+
+
+[reinforcement learning - multi-agent]
+
+http://arxiv.org/abs/1611.00179 - Dual Learning for Machine Translation
+	"In the dual-learning mechanism, we use one agent to represent the model for the primal task and the other agent to represent the model for the dual task, then ask them to teach each other through a reinforcement learning process. Based on the feedback signals generated during this process (e.g., the languagemodel likelihood of the output of a model, and the reconstruction error of the original sentence after the primal and dual translations), we can iteratively update the two models until convergence (e.g., using the policy gradient methods)."
+	"The basic idea of dual learning is generally applicable: as long as two tasks are in dual form, we can apply the dual-learning mechanism to simultaneously learn both tasks from unlabeled data using reinforcement learning algorithms. Actually, many AI tasks are naturally in dual form, for example, speech recognition versus text to speech, image caption versus image generation, question answering versus question generation (e.g., Jeopardy!), search (matching queries to documents) versus keyword extraction (extracting keywords/queries for documents), so on and so forth."
+http://arxiv.org/abs/1511.08779 - Multiagent Cooperation and Competition with Deep Reinforcement Learning
+	-- https://youtube.com/playlist?list=PLfLv_F3r0TwyaZPe50OOUx8tRf0HwdR_u
+	-- https://github.com/NeuroCSUT/DeepMind-Atari-Deep-Q-Learner-2Player
+http://arxiv.org/abs/1602.02672 - Learning to Communicate to Solve Riddles with Deep Distributed Recurrent Q-Networks (de Freitas)
+http://arxiv.org/abs/1605.06676 - Learning to Communicate with Deep Multi-Agent Reinforcement Learning (de Freitas)
+	-- https://youtube.com/watch?v=cfsYBY4nd1c
+	-- http://videolectures.net/deeplearning2016_foerster_learning_communicate/ (Foerster)
+	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.07133
+	-- https://github.com/iassael/learning-to-communicate
+http://arxiv.org/abs/1605.07736 - Learning Multiagent Communication with Backpropagation (Fergus)
+	-- https://github.com/facebookresearch/CommNet
+
+
 
 
 [reinforcement learning - applications]
@@ -710,18 +775,20 @@ http://research.microsoft.com/apps/pubs/default.aspx?id=256085 - Deep Contextual
 http://arxiv.org/abs/1603.07954 - Improving Information Extraction by Acquiring External Evidence with Reinforcement Learning (Barzilay)
 
 
-[natural language]
 
-http://arxiv.org/abs/1602.02410 - Exploring the Limits of Language Modeling (Vinyals) (perplexity from 50 to 30)
+
+[natural language processing]
+
+http://arxiv.org/abs/1602.02410 - Exploring the Limits of Language Modeling (Vinyals)  # perplexity from 50 to 30
 	-- http://deliprao.com/archives/201
 	-- https://github.com/tensorflow/models/tree/master/lm_1b
-http://arxiv.org/abs/1612.04426 - Improving Neural Language Models with a Continuous Cache (adaptive softmax) (Facebook)
+http://arxiv.org/abs/1612.04426 - Improving Neural Language Models with a Continuous Cache (Facebook)  # adaptive softmax
 http://arxiv.org/abs/1609.07843 - Pointer Sentinel Mixture Models (MetaMind)
 
-http://arxiv.org/abs/1511.08198 - Towards Universal Paraphrastic Sentence Embeddings (outperforming LSTM)
+http://arxiv.org/abs/1511.08198 - Towards Universal Paraphrastic Sentence Embeddings  # outperforming LSTM
 	-- http://videolectures.net/iclr2016_wieting_universal_paraphrastic/ (Wieting)
-h
-http://arxiv.org/abs/1607.01759 - Bag of Tricks for Efficient Text Classification (Mikolov, fastText)
+
+http://arxiv.org/abs/1607.01759 - Bag of Tricks for Efficient Text Classification (Mikolov)  # fastText
 	"Train the word-vectors so that they directly predict the target classes, almost as if those target classes were the nearby-context words (that would normally be predicted in classic word2vec). If you squint just right, it's also a little bit like Paragraph Vectors (often aka 'Doc2Vec'), backwards. Instead of an alternate input vector, which combines with all words to help predict words, it's alternate output nodes, to which all words contribute to the prediction."
 	"As the paper says, people have been using low-rank classifiers for 10+ years (e.g. [http://www.jmlr.org/papers/volume6/ando05a/ando05a.pdf]). Jason Weston of FAIR did a lot of work to popularize these embedding models in more recent times (e.g. [http://www.thespermwhale.com/jaseweston/papers/wsabie-ijcai.pdf]). This kind of approach is also essentially the same as many feature-based matrix factorization models (here's a survey [https://arxiv.org/abs/1109.2271]).
 Use of hierarchical softmax for large label spaces also isn't new (e.g. [https://arxiv.org/abs/1412.7479] or [https://people.cs.umass.edu/~arvind/akbc-hierarchical.pdf]).
@@ -735,7 +802,7 @@ http://arxiv.org/abs/1511.06361 - Order-Embeddings of Images and Language
 	-- https://github.com/ivendrov/order-embeddings-wordnet
 	-- https://github.com/LeavesBreathe/tensorflow_with_latest_papers/blob/master/partial_ordering_embedding.py
 
-http://arxiv.org/abs/1609.09315 - Semantic Parsing with Semi-Supervised Sequential Autoencoders (discrete VAE) (DeepMind)
+http://arxiv.org/abs/1609.09315 - Semantic Parsing with Semi-Supervised Sequential Autoencoders (DeepMind)  # discrete VAE
 http://arxiv.org/abs/1607.03542 - Open-Vocabulary Semantic Parsing with both Distributional Statistics and Formal Knowledge (Gardner)
 
 http://arxiv.org/abs/1603.08148 - Pointing the Unknown Words (Bengio)
