@@ -150,13 +150,19 @@ selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91I
 
 [bayesian deep learning]
 
-  Dmitry Vetrov - "Bayesian Inference and Deep Learning" (in russian) - https://youtu.be/_qrHcSdQ2J4?t=22m31s + https://youtube.com/watch?v=BKh7nj5SmnI
-  Dmitry Vetrov - "Learning in Stochastic Computation Graphs" (in russian) - https://youtu.be/0q5p7xP4cdA?t=5h4m9s
+  Shakir Mohamed - "Principles and Applications of Deep Generative Models"
+	http://videolectures.net/deeplearning2016_mohamed_generative_models/
 
-  Shakir Mohamed - "Bayesian Reasoning and Deep Learning" -
+  Dmitry Vetrov - "Bayesian Inference and Deep Learning" (in russian)
+	https://youtu.be/kFe5zSkro0E?t=17m16s
+	https://youtu.be/_qrHcSdQ2J4?t=22m31s
+	https://youtube.com/watch?v=BKh7nj5SmnI
+	https://youtu.be/0q5p7xP4cdA?t=5h4m9s
+
+  Shakir Mohamed - "Bayesian Reasoning and Deep Learning"
 	http://blog.shakirm.com/2015/10/bayesian-reasoning-and-deep-learning/ + http://blog.shakirm.com/wp-content/uploads/2015/10/Bayes_Deep.pdf
 
-  Shakir Mohamed - "A Statistical View of Deep Learning" -
+  Shakir Mohamed - "A Statistical View of Deep Learning"
 	http://blog.shakirm.com/2015/01/a-statistical-view-of-deep-learning-i-recursive-glms/
 	http://blog.shakirm.com/2015/03/a-statistical-view-of-deep-learning-ii-auto-encoders-and-free-energy/
 	http://blog.shakirm.com/2015/04/a-statistical-view-of-deep-learning-iii-memory-and-kernels/
@@ -483,6 +489,15 @@ challenges:
   Traditional unbiased inference schemes such as Markov Chain Monte Carlo are often slow to run and difficult to evaluate in finite time. In contrast, variational inference allows for competitive run times and more reliable convergence diagnostics on large-scale and streaming data - while continuing to allow for complex, hierarchical modelling. The recent resurgence of interest in variational methods includes new methods for scalability using stochastic gradient methods, extensions to the streaming variational setting, improved local variational methods, inference in non-linear dynamical systems, principled regularisation in deep neural networks, and inference-based decision making in reinforcement learning, amongst others. Variational methods have clearly emerged as a preferred way to allow for tractable Bayesian inference. Despite this interest, there remain significant trade-offs in speed, accuracy, simplicity, applicability, and learned model complexity between variational inference and other approximative schemes such as MCMC and point estimation.
 
 
+  introduction by Zoubin Ghahramani - https://youtu.be/yzNbaAPKXA8?t=19m45s
+
+  "Variational Inference: Foundations and Modern Methods" tutorial @ NIPS 2016 by David Blei, Rajesh Ranganath, Shakir Mohamed -
+	https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods
+	http://www.cs.columbia.edu/~blei/talks/2016_NIPS_VI_tutorial.pdf
+
+  "Reparametrization trick: Revolution in Stochastic Computational Graphs" by Dmitry Vetrov - https://youtu.be/0q5p7xP4cdA?t=5h3m29s (in russian)
+
+
   http://davmre.github.io/inference/2015/11/13/elbo-in-5min/
   http://davmre.github.io/inference/2015/11/13/general_purpose_variational_inference/
 
@@ -498,16 +513,6 @@ challenges:
   introduction by Dmitry Vetrov (in russian) - https://dropbox.com/s/t3iyeu78o0c86kq/Dmitry%20Vetrov%20-%20Variational%20Inference.pdf
 
 
-  introduction by Zoubin Ghahramani - https://youtu.be/yzNbaAPKXA8?t=19m45s
-  introduction by Dmitry Vetrov - https://youtu.be/kFe5zSkro0E?t=17m16s (in russian)
-
-  "Variational Inference: Foundations and Modern Methods" tutorial @ NIPS 2016 by David Blei, Rajesh Ranganath, Shakir Mohamed -
-	https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods
-	http://www.cs.columbia.edu/~blei/talks/2016_NIPS_VI_tutorial.pdf
-
-  "Reparametrization trick: Revolution in Stochastic Computational Graphs" by Dmitry Vetrov - https://youtu.be/0q5p7xP4cdA?t=5h3m29s (in russian)
-
- 
   approximate inference where joint probability computation is infeasible:
   - approximate graphical model by simpler one
   - minimize 'distance' between models
@@ -558,8 +563,6 @@ challenges:
 	Alexander Stepochkin - http://vk.com/video-44016343_456239092 (in russian)
 	Feodor Chervinsky - https://youtu.be/0veUbpdBqyk?t=50m50s (in russian)
 
-	http://inference.vc/probabilistic-models-and-autoencoders-my-new-favourite-papers/
-
 
 	"The difference between traditional variational methods and variational autoencoders is that in VAE, the local approximate posterior, q(zi|xi) is produced by a closed-form differentiable procedure (such as a neural network), as opposed to a local optimization. This allows the model and inference strategy to be joinly optimized."
 
@@ -608,18 +611,6 @@ challenges:
 		http://blog.shakirm.com/2015/10/machine-learning-trick-of-the-day-4-reparameterisation-tricks/
 
 
-	comparison with Generative Adversarial Networks:
-	 - easier to train and get working
-	 - relatively easy to implement and robust to hyperparameter choices
-	 - tractable likelihood
-	 - has an explicit inference network so it lets one do reconstruction
-	 - if p(x|z) makes conditional independence assumptions then it might have the "blurring" effect
-
-	"One of the main issues in variational inference is finding the best approximation to an intractable posterior distribution of interest by searching through a class of known probability distributions. The class of approximations used is often limited, e.g., mean-field approximations, implying that no solution is ever able to resemble the true posterior distribution. This is a widely raised objection to variational methods, in that unlike MCMC, the true posterior distribution may not be recovered even in the asymptotic regime. Challenge for VAE-type generative models is to fit posterior approximators that are both flexible and computationally cheap to sample from and differentiate. Simple posterior approximations, like normal distributions with diagonal covariances, are often insufficiently capable of accurately modeling the true posterior distributions. This leads to looseness of the variational bound, meaning that the objective that is optimized (the variational bound) lies far from the objective we’re actually interested in (the marginal likelihood). This leads to many of the problems encountered when trying to scale VAEs up to high-dimensional spatiotemporal datasets."
-
-	"One of the benefits of the VAE is that it generally gives interpretable latent variables - to do this it basically collapses all the dimensions it doesn't need i.e. 100, 1000 dimensions in the latent, but only a few are used. It is a challenge because this makes it hard to get "big" VAEs, since they tend to just throw away/not use parameters they don't need. Some of the papers are combatting this tendency. Inverse Autoregressive Flow fixes this to some extent. One can see it by training a VAE but having a multiplier (alpha) on the KL. Turning alpha lower and lower lets more and more of the latent be used, until alpha = 0 when it basically just becomes a regular autoencoder. It is an interesting attribute of the VAE, and one that is important to know about. The disentangling is a powerful thing VAEs can do, but it does have a cost if the goal is feature learning or generation."
-
-
 
 
 [sampling]
@@ -634,7 +625,7 @@ challenges:
   "Monte Carlo Inference Methods" tutorial by Iain Murray - http://research.microsoft.com/apps/video/default.aspx?id=259575
 
 
-  "Markov Chain Monte Carlo Without all the Bullshit" - http://jeremykun.com/2015/04/06/markov-chain-monte-carlo-without-all-the-bullshit/
+  "Markov Chain Monte Carlo Without all the Bullshit" by Jeremy Kun - http://jeremykun.com/2015/04/06/markov-chain-monte-carlo-without-all-the-bullshit/
 
   "The Markov Chain Monte Carlo Revolution" by Persi Diaconis - http://math.uchicago.edu/~shmuel/Network-course-readings/MCMCRev.pdf
 
@@ -777,6 +768,9 @@ overview by Judea Pearl - https://www.edge.org/conversation/judea_pearl-engines-
 selected papers - https://dropbox.com/sh/txqk44kqgn1f9t4/AAD3DCEDXjPxGPFOa0SJYJwga
 
 
+recent interesting papers - https://github.com/brylevkirill/notes/blob/master/recent%20papers.txt
+
+
 interesting papers (see https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt):
  * variational autoencoder
  * bayesian inference and learning
@@ -849,8 +843,9 @@ Edwards, Storkey - "Towards a Neural Statistician" [http://arxiv.org/abs/1606.02
 	"An efficient learner is one who reuses what they already know to tackle a new problem. For a machine learner, this means understanding the similarities amongst datasets. In order to do this, one must take seriously the idea of working with datasets, rather than datapoints, as the key objects to model. Towards this goal, we demonstrate an extension of a variational autoencoder that can learn a method for computing representations, or statistics, of datasets in an unsupervised fashion. The network is trained to produce statistics that encapsulate a generative model for each dataset. Hence the network enables efficient learning from new datasets for both unsupervised and supervised tasks. We show that we are able to learn statistics that can be used for: clustering datasets, transferring generative models to new datasets, selecting representative samples of datasets and classifying previously unseen classes."
 	"Our goal was to demonstrate that it is both possible and profitable to work at a level of abstraction of datasets rather than just datapoints. We have shown how it is possible to learn to represent datasets using a statistic network, and that these statistics enable highly flexible and efficient models that can do transfer learning, small shot classification, cluster distributions, summarize datasets and more. Avenues for future research are engineering, methodological and application based. In terms of engineering we believe that there are gains to be had by more thorough exploration of different (larger) architectures. In terms of methodology we want to look at: improved methods of representing uncertainty resulting from sample size; models explicitly designed trained for small-shot classification; supervised and semi-supervised approaches to classifiying either datasets or datapoints within the dataset. One advantage we have yet to explore is that by specifying classes implicitly in terms of sets, we can combine multiple data sources with potentially different labels, or multiple labels. We can also easily train on any unlabelled data because this corresponds to sets of size one. We also want to consider questions such as: What are desirable properties for statistics to have as representations? How can we enforce these? Can we use ideas from classical work on estimators? In terms of applications we are interested in applying this framework to learning embeddings of speakers for speech problems or customer embeddings in commercial problems."
 	"Potentially a more powerful alternative to Variational Autoencoder."
-	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.02185 (Larochelle)
+	-- http://techtalks.tv/talks/neural-statistician/63048/ (Edwards)
 	-- https://youtu.be/XpIDCzwNe78?t=51m53s (Bartunov)
+	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.02185
 
 Gal, Ghahramani - "Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning" [http://arxiv.org/abs/1506.02142]
 	"Deep learning has gained tremendous attention in applied machine learning. However such tools for regression and classification do not capture model uncertainty. Bayesian models offer a mathematically grounded framework to reason about model uncertainty, but usually come with a prohibitive computational cost. We show that dropout in neural networks can be cast as a Bayesian approximation. As a direct result we obtain tools to model uncertainty with dropout NNs - extracting information from existing models that has been thrown away so far. This mitigates the problem of representing uncertainty in deep learning without sacrificing computational complexity or test accuracy. We perform an extensive study of the dropout uncertainty properties. Various network architectures and non-linearities are assessed on tasks of regression and classification, using MNIST as an example. We show a considerable improvement in predictive log-likelihood and RMSE compared to existing state-of-the-art methods. We finish by using dropout uncertainty in a Bayesian pipeline, with deep reinforcement learning as a practical task."

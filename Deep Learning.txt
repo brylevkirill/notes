@@ -146,9 +146,6 @@ monographies
 	Ilya Sutskever - "Training Recurrent Neural Networks" - http://www.cs.utoronto.ca/~ilya/pubs/ilya_sutskever_phd_thesis.pdf
 	Tijmen Tieleman - "Optimizing Neural Networks that Generate Images" (capsules) - http://www.cs.toronto.edu/~tijmen/tijmen_thesis.pdf
 
-reading lists
-	https://docs.google.com/document/d/1IXF3h0RU5zz4ukmTrVKVotPQypChscNGf5k6E25HGvA  (by Yoshua Bengio)
-
 interviews
 	https://vk.com/wall-44016343_6434
 	https://quora.com/profile/Yoshua-Bengio/session/37
@@ -170,12 +167,6 @@ interviews
 	https://re-work.co/blog/google-deepmind-koray-kavukcuoglu-alex-graves
 	https://re-work.co/blog/deep-learning-andrej-karpathy
 	https://re-work.co/blog/deep-learning-roland-memisevic-unlabelled-datasets-rethinking-unsupervised-learning
-
-questions & answers
-	https://reddit.com/r/MachineLearning/comments/49k54u/simple_questions_thread_20160308/
-	https://reddit.com/r/MachineLearning/comments/4bp1ck/simple_questions_thread_2_meta_20160323/
-	https://reddit.com/r/MachineLearning/comments/4dthzx/questions_thread_3_20160407/
-	https://reddit.com/r/MachineLearning/comments/4fytfp/questions_thread_4_20160422/
 
 conferences
 	NIPS 2016 -
@@ -293,6 +284,7 @@ practice
 	compression - https://reddit.com/r/MachineLearning/comments/3oiefh/quantization_then_reduces_the_number_of_bits_that/cvxjd8z
 	architectures - http://asimovinstitute.org/neural-network-zoo/
 	attention mechanisms - http://wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/ + http://blog.heuritech.com/2016/01/20/attention-mechanism/
+	learn something harder - http://inference.vc/deep-learning-is-easy/
 
 projects
 	https://tensortalk.com/?cat=lists
@@ -446,6 +438,8 @@ projects
 
   http://deeplearningbook.org/contents/graphical_models.html
 
+  Shakir Mohamed - "Principles and Applications of Deep Generative Models" - http://videolectures.net/deeplearning2016_mohamed_generative_models/
+
   Dmitry Vetrov - "Bayesian Inference and Deep Learning" (in russian) - https://youtu.be/_qrHcSdQ2J4?t=22m31s + https://youtube.com/watch?v=BKh7nj5SmnI
   Dmitry Vetrov - "Learning in Stochastic Computation Graphs" (in russian) - https://youtu.be/0q5p7xP4cdA?t=5h4m9s
 
@@ -468,6 +462,9 @@ projects
 
 
   "Most applications of neural nets can be considered graphical models that use neural nets to provide some of the conditional probability distributions. You could argue that the graphical model perspective is growing less useful because so many recent neural models have such simple graph structure (GANs, VAEs and NICE are bipartite graphs with every latent variable connected to every observed variable, PixelRNNs/MADE/NADE are the complete graph with no latent variables). These graphs are not very structured compared to neural models that were popular a few years ago like DBMs. But there are some recent models that make a little bit of use of graph structure, like VAEs with auxiliary variables."
+
+
+  see "[variational inference]" section of https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt
 
 
 
@@ -593,6 +590,8 @@ projects
   https://github.com/zhangqianhui/AdversarialNetsPapers
 
   http://inference.vc/how-to-train-your-generative-models-why-generative-adversarial-networks-work-so-well-2/
+  http://inference.vc/an-alternative-update-rule-for-generative-adversarial-networks/
+  http://inference.vc/adversarial-preference-loss/
 
 
   Consists of a generator which converts random noise into samples and a discriminator which tries to distinguish between generated and real samples from training set. The training procedure establishes a minimax game between the generator and the discriminator as follows. On one hand, the discriminator is trained to differentiate between natural samples sampled from the true data distribution, and synthetic samples produced by the generator. On the other hand, the generator is trained to produce samples that confuse the discriminator into mistaking them for genuine samples. The goal is for the generator to produce increasingly more realistic samples as the discriminator learns to pick up on increasingly more subtle inaccuracies that allow it to tell apart real and fake images.
@@ -693,7 +692,12 @@ projects
   Alexander Stepochkin - http://vk.com/video-44016343_456239092 (in russian)
   Feodor Chervinsky - https://youtu.be/0veUbpdBqyk?t=50m50s (in russian)
 
-  http://inference.vc/probabilistic-models-and-autoencoders-my-new-favourite-papers/
+
+  see "[variational inference]" section of https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt
+
+  "Variational Inference: Foundations and Modern Methods" tutorial @ NIPS 2016 by David Blei, Rajesh Ranganath, Shakir Mohamed -
+	https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods
+	http://www.cs.columbia.edu/~blei/talks/2016_NIPS_VI_tutorial.pdf
 
 
   "VAE framework aims to maximize the log-likelihood of the observed data x by introducing a set of stochastic latent variables z and marginalizing them out of the joint distribution p(x,z). While exact marginalization of the latent variables is generally intractable, the VAE introduces an approximate posterior q(z|x) and maximizes a variational lower bound on the log-likelihood of p(x). VAE allows powerful generative models to be trained efficiently by replacing slow iterative inference algorithms with fast feedforward approximate inference neural networks. The inference networks, which map observations to samples from the variational posterior, are trained jointly with the model by maximizing a common objective. This objective is a variational lower bound on the marginal log-likelihood."
@@ -968,9 +972,9 @@ projects
   * Memory Networks
   	http://techtalks.tv/talks/memory-networks-for-language-understanding/62356/
   	http://youtu.be/jRkm6PXRVF8?t=16m29s (Weston)
-  	http://research.microsoft.com/apps/video/default.aspx?id=259920 (Sukhbaatar)
-  	http://youtube.com/watch?v=8keqd1ewsno (Bordes)
+	http://youtu.be/jRkm6PXRVF8?t=17m36s (Weston)
   	http://youtube.com/watch?v=Xumy3Yjq4zk (Weston)
+  	http://research.microsoft.com/apps/video/default.aspx?id=259920 (Sukhbaatar)
 
   * Stack-Augmented Recurrent Neural Network
   	http://research.microsoft.com/apps/video/default.aspx?id=259646 (Joulin, 15:00)
@@ -978,6 +982,7 @@ projects
 
   * Neural Stacks/Queues
   	https://iamtrask.github.io/2016/02/25/deepminds-neural-stack-machine/
+	https://jasdeep06.github.io/posts/Neural-Stacks/
   	http://egrefen.com/docs/NIPSStackPoster.pdf
   	http://videolectures.net/deeplearning2015_blunsom_memory_reading/ (Blunsom)
 
@@ -1433,18 +1438,19 @@ http://biology.stackexchange.com/questions/36412/biological-implementation-of-co
 
 
 
+lists of papers -
+	http://shortscience.org/?tab=recent
+	http://arxiv-sanity.com/top
+	http://gitxiv.com/category/deeplearning
+	https://docs.google.com/document/d/1IXF3h0RU5zz4ukmTrVKVotPQypChscNGf5k6E25HGvA  (by Yoshua Bengio)
+
+
+
+
 selected papers and books - https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
 
-most important papers - http://rt.dgyblog.com/ref/ref-learning-deep-learning.html
-most important papers - http://deeplearning.net/reading-list/
-interesting papers -
-	https://github.com/robertsdionne/neural-network-papers
-	https://github.com/kjw0612/awesome-rnn
-	http://gitxiv.com/category/deeplearning
-	https://reddit.com/r/DeepLearningPapers
-	https://plus.google.com/collection/Y8zfZ
 
-
+recent interesting papers - https://github.com/brylevkirill/notes/blob/master/recent%20papers.txt
 
 
 interesting papers (see below):
@@ -1748,6 +1754,7 @@ Norouzi, Bengio, Chen, Jaitly, Schuster, Wu, Schuurmans - "Reward Augmented Maxi
 	"Alec Radford mentioned that the data augmentation suggested in the paper sounds similar in spirit to virtual adversarial training, where the current model is encouraged to make robust predictions not only for the examples in the training set but also for inputs “nearby” those that exist in the training set. A high-level comparison:
 	  - Adversarial training can be seen as data-augmentation in the input space X. The RML objective does data-augmentation in the output space Y.
 	  - Adversarial training performs model-based data augmentation: the examples generated are those for which the current model is maximally vulnerable. RML training performs data-based augmentation: the examples generated have outputs that are “near” the ground-truth outputs. (Here 'near' is defined by the reward function.)"
+	-- https://youtu.be/uohtFXD_39c?t=38m10s (Samy Bengio)
 	-- http://youtube.com/watch?v=agA-rc71Uec (Samy Bengio)
 	-- http://drive.google.com/file/d/0B3Rdm_P3VbRDVUQ4SVBRYW82dU0 (Gauthier)
 	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/1609.00150
@@ -1855,6 +1862,7 @@ Grefenstette, Hermann, Suleyman, Blunsom - "Learning to Transduce with Unbounded
 	-- http://videolectures.net/deeplearning2015_blunsom_memory_reading/ (Blunsom) + http://www.iro.umontreal.ca/~memisevr/dlss2015/num-mr.pdf
 	-- http://egrefen.com/docs/NIPSStackPoster.pdf
 	-- https://iamtrask.github.io/2016/02/25/deepminds-neural-stack-machine/
+	-- https://jasdeep06.github.io/posts/Neural-Stacks/
 
 Zaremba, Sutskever - "Learning to Execute" [http://arxiv.org/abs/1410.4615]
 	"Recurrent Neural Networks with Long Short-Term Memory units are widely used because they are expressive and are easy to train. Our interest lies in empirically evaluating the expressiveness and the learnability of LSTMs in the sequence-to-sequence regime by training them to evaluate short computer programs, a domain that has traditionally been seen as too complex for neural networks. We consider a simple class of programs that can be evaluated with a single left-to-right pass using constant memory. Our main result is that LSTMs can learn to map the character-level representations of such programs to their correct outputs. Notably, it was necessary to use curriculum learning, and while conventional curriculum learning proved ineffective, we developed a new variant of curriculum learning that improved our networks' performance in all experimental conditions. The improved curriculum had a dramatic impact on an addition problem, making it possible to train an LSTM to add two 9-digit numbers with 99% accuracy."
@@ -2053,7 +2061,10 @@ Maclaurin, Duvenaud, Adams - "Gradient-based Hyperparameter Optimization through
 Andrychowicz, Denil, Gomez, Hoffman, Pfau, Schaul, de Freitas - "Learning to Learn by Gradient Descent by Gradient Descent" [https://arxiv.org/abs/1606.04474]
 	"The move from hand-designed features to learned features in machine learning has been wildly successful. In spite of this, optimization algorithms are still designed by hand. In this paper we show how the design of an optimization algorithm can be cast as a learning problem, allowing the algorithm to learn to exploit structure in the problems of interest in an automatic way. Our learned algorithms, implemented by LSTMs, outperform generic, hand-designed competitors on the tasks for which they are trained, and also generalize well to new tasks with similar structure. We demonstrate this on a number of tasks, including simple convex problems, training neural networks, and styling images with neural art."
 	"We have shown how to cast the design of optimization algorithms as a learning problem, which enables us to train optimizers that are specialized to particular classes of functions. Our experiments have confirmed that learned neural optimizers compare favorably against state-of-the-art optimization methods used in deep learning. We witnessed a remarkable degree of transfer, with for example the LSTM optimizer trained on 12,288 parameter neural art tasks being able to generalize to tasks with 49,152 parameters, different styles, and different content images all at the same time. We observed similar impressive results when transferring to different architectures in the MNIST task. The results on the CIFAR image labeling task show that the LSTM optimizers outperform handengineered optimizers when transferring to datasets drawn from the same data distribution. In future work we plan to continue investigating the design of the NTM-BFGS optimizers. We observed that these outperformed the LSTM optimizers for quadratic functions, but we saw no benefit of using these methods in the other stochastic optimization tasks. Another important direction for future work is to develop optimizers that scale better in terms of memory usage."
-	-- http://videolectures.net/kdd2016_de_freitas_recurrent_neural/ (de Freitas, 01:04:55)
+	-- https://youtu.be/tPWGGwmgwG0?t=10m50s (de Freitas)
+	-- https://youtu.be/x1kf4Zojtb0?t=1h4m53s (de Freitas)
+	-- https://blog.acolyer.org/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/
+	-- https://github.com/deepmind/learning-to-learn
 
 
 
@@ -2269,6 +2280,7 @@ Chen, Duan, Houthooft, Schulman, Sutskever, Abbeel - "InfoGAN: Interpretable Rep
 	"An extension of GAN that learns disentangled and interpretable representations for images. A regular GAN achieves the objective of reproducing the data distribution in the model, but the layout and organization of the code space is underspecified - there are many possible solutions to mapping the unit Gaussian to images and the one we end up with might be intricate and highly entangled. The InfoGAN imposes additional structure on this space by adding new objectives that involve maximizing the mutual information between small subsets of the representation variables and the observation. This approach provides quite remarkable results. For example, in the images of 3D faces we vary one continuous dimension of the code, keeping all others fixed. It's clear from the five provided examples that the resulting dimensions in the code capture interpretable dimensions, and that the model has perhaps understood that there are camera angles, facial variations, etc., without having been told that these features exist and are important."
 	-- https://goo.gl/58Ishd (demo, azimuth) + https://goo.gl/q7Hp99 (demo, elevation) + https://goo.gl/Ceqlr4 (demo, lightning) + https://goo.gl/9ibbsV (demo, wide or narrow)
 	-- https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-1 (53:28, Chen)
+	-- http://inference.vc/infogan-variational-bound-on-mutual-information-twice/
 	-- https://github.com/openai/InfoGAN
 
 Yu, Zhang, Wang, Yu - "SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient" [http://arxiv.org/abs/1609.05473]
@@ -2429,8 +2441,9 @@ Edwards, Storkey - "Towards a Neural Statistician" [http://arxiv.org/abs/1606.02
 	"An efficient learner is one who reuses what they already know to tackle a new problem. For a machine learner, this means understanding the similarities amongst datasets. In order to do this, one must take seriously the idea of working with datasets, rather than datapoints, as the key objects to model. Towards this goal, we demonstrate an extension of a variational autoencoder that can learn a method for computing representations, or statistics, of datasets in an unsupervised fashion. The network is trained to produce statistics that encapsulate a generative model for each dataset. Hence the network enables efficient learning from new datasets for both unsupervised and supervised tasks. We show that we are able to learn statistics that can be used for: clustering datasets, transferring generative models to new datasets, selecting representative samples of datasets and classifying previously unseen classes."
 	"Our goal was to demonstrate that it is both possible and profitable to work at a level of abstraction of datasets rather than just datapoints. We have shown how it is possible to learn to represent datasets using a statistic network, and that these statistics enable highly flexible and efficient models that can do transfer learning, small shot classification, cluster distributions, summarize datasets and more. Avenues for future research are engineering, methodological and application based. In terms of engineering we believe that there are gains to be had by more thorough exploration of different (larger) architectures. In terms of methodology we want to look at: improved methods of representing uncertainty resulting from sample size; models explicitly designed trained for small-shot classification; supervised and semi-supervised approaches to classifiying either datasets or datapoints within the dataset. One advantage we have yet to explore is that by specifying classes implicitly in terms of sets, we can combine multiple data sources with potentially different labels, or multiple labels. We can also easily train on any unlabelled data because this corresponds to sets of size one. We also want to consider questions such as: What are desirable properties for statistics to have as representations? How can we enforce these? Can we use ideas from classical work on estimators? In terms of applications we are interested in applying this framework to learning embeddings of speakers for speech problems or customer embeddings in commercial problems."
 	"Potentially a more powerful alternative to Variational Autoencoder."
-	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.02185
+	-- http://techtalks.tv/talks/neural-statistician/63048/ (Edwards)
 	-- https://youtu.be/XpIDCzwNe78?t=51m53s (Bartunov)
+	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.02185
 
 Hernandez-Lobato, Adams - "Probabilistic Backpropagation for Scalable Learning of Bayesian Neural Networks" [http://arxiv.org/abs/1502.05336]
 	"Large multilayer neural networks trained with backpropagation have recently achieved state-of-the-art results in a wide range of problems. However, using backprop for neural net learning still has some disadvantages, e.g., having to tune a large number of hyperparameters to the data, lack of calibrated probabilistic predictions, and a tendency to overfit the training data. In principle, the Bayesian approach to learning neural networks does not have these problems. However, existing Bayesian techniques lack scalability to large dataset and network sizes. In this work we present a novel scalable method for learning Bayesian neural networks, called probabilistic backpropagation. Similar to classical backpropagation, PBP works by computing a forward propagation of probabilities through the network and then doing a backward computation of gradients. A series of experiments on ten real-world datasets show that PBP is significantly faster than other techniques, while offering competitive predictive abilities. Our experiments also show that PBP provides accurate estimates of the posterior variance on the network weights."

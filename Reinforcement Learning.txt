@@ -1,5 +1,5 @@
-  Reinforcement Learning is learning to act through trial and error with no models, no labels, no demonstrations, or any human-provided supervision signal other than scalar reward.
-  Reinforcement Learning problem is as hard as any problem of computer science, since any task with a computable description can be formulated in reinforcement learning framework.
+  Reinforcement Learning in most general case is learning to act through trial and error with no models, no labels, no demonstrations, or any human-provided supervision signal other than scalar rewards.
+  Reinforcement Learning is learning to maximize expected sum of future rewards for sequence of actions made by agent in environment with stochastic state unknown to agent and dependent on its actions.
 
 
   * applications
@@ -26,6 +26,8 @@
 
 
 
+
+  "Reinforcement Learning is as hard as any problem in computer science, since any task with a computable description can be formulated in it."
 
   "Reinforcement Learning is a general-purpose framework for decision-making:
    - Is for an agent with the capacity to act
@@ -68,7 +70,11 @@
 
 	Google (datacenter cooling, Deep Q-Learning) - https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/
 
-	Microsoft Multiworld Testing Decision Service (personalized news on MSN, contextual bandits) - https://mwtds.azurewebsites.net + http://research.microsoft.com/en-us/projects/mwt/ + http://hunch.net/?p=4464948
+	Microsoft Multiworld Testing Decision Service (personalized news on MSN, contextual bandits) -
+		https://mwtds.azurewebsites.net
+		http://research.microsoft.com/en-us/projects/mwt/
+		http://hunch.net/?p=4464948
+		http://thenewstack.io/reinforcement-learning-ready-real-world/
 
 	(Demis Hassabis) "In our view reinforcement learning is going to be as big as deep learning in the next two or three years. The further we go with this, the more we feel our thesis is correct, and I think we’re changing the entire field." "Technology could surface in virtual assistants or improve recommendation systems, which are crucial to products such as YouTube (similar systems also power some of Google’s advertising products)." [https://www.technologyreview.com/s/601139/how-google-plans-to-solve-artificial-intelligence/]
 
@@ -152,7 +158,7 @@
 
   introduction by David Silver - https://youtube.com/watch?v=2pWv7GOvuf0
 
-  introduction -
+  introduction
 	http://kvfrans.com/reinforcement-learning-basics/
 	http://kvfrans.com/markov-processes-in-reinforcement-learning/
 	http://kvfrans.com/planning-policy-evaluation-policy-iteration-value-iteration/
@@ -160,7 +166,7 @@
 	http://kvfrans.com/the-policy-gradient/
 	http://kvfrans.com/making-use-of-the-model/
 
-  introduction by Shakir Mohamed -
+  introduction by Shakir Mohamed
 	"Learning in Brains and Machines: Temporal Differences" - http://blog.shakirm.com/2016/02/learning-in-brains-and-machines-1/
 	"Synergistic and Modular Action" - http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/
 
@@ -345,8 +351,7 @@
 	http://youtube.com/watch?v=UoPei5o4fps (Deep Q-Learning)
 	http://youtube.com/watch?v=KHZVXao4qXs (Deep Policy Search)
 
-  course by John Schulman and Pieter Abbeel
-	https://youtube.com/watch?v=PtAIh9KSnjo
+  course by John Schulman
 	https://youtube.com/watch?v=aUrX-rP_ss4
 	https://youtube.com/watch?v=oPGVsoBonLM
 	https://youtube.com/watch?v=rO7Dx8pSJQw
@@ -357,15 +362,7 @@
 	https://youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX
 	http://rll.berkeley.edu/deeprlcourse/
 
-
-  tutorial by Pieter Abbeel
-	http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/ (Deep Policy Search)
-
-  tutorial by Jan Peters and Gerhard Neumann
-	http://videolectures.net/icml2015_neumann_peters_policy_search/ + http://icml.cc/2015/tutorials/PolicySearch.pdf
-
-  seminars on latest developments in deep reinforcement learning
-	"Latest Developments in Deep Reinforcement Learning" by Pavlov and Seleznev (in russian) - https://youtube.com/watch?v=mrgJ53TIcQc
+  "Latest Developments in Deep Reinforcement Learning" by Pavlov and Seleznev (in russian) - https://youtube.com/watch?v=mrgJ53TIcQc
 
 
   "The Nuts and Bolts of Deep RL Research" by John Schulman - http://rll.berkeley.edu/deeprlcourse/docs/nuts-and-bolts.pdf
@@ -390,11 +387,19 @@
 
 [value-based methods]
 
-  http://videolectures.net/rldm2015_silver_reinforcement_learning/ (David Silver)
-  http://youtu.be/qLaDWKd61Ig?t=9m16s (David Silver)
-  http://youtube.com/watch?v=dV80NAlEins (Nando de Freitas)
-  http://youtube.com/watch?v=HUmEbUkeQHg (Nando de Freitas)
-  http://youtube.com/watch?v=mrgJ53TIcQc (Mikhail Pavlov, in russian)
+  introduction by Nando de Freitas
+	http://youtube.com/watch?v=dV80NAlEins
+	http://youtube.com/watch?v=HUmEbUkeQHg
+
+  introduction by David Silver
+	http://youtube.com/watch?v=UoPei5o4fps
+
+  tutorial by David Silver
+	http://techtalks.tv/talks/deep-reinforcement-learning/62360/
+	http://youtu.be/qLaDWKd61Ig?t=9m16s
+	http://videolectures.net/rldm2015_silver_reinforcement_learning/
+
+  overview by Mikhail Pavlov - http://youtube.com/watch?v=mrgJ53TIcQc (in russian)
 
 
   Deep Q-Network:
@@ -478,20 +483,41 @@
 
 [policy-based methods]
 
-  http://karpathy.github.io/2016/05/31/rl/
+  introduction by Nando de Freitas
+        http://youtube.com/watch?v=kUiR0RLmGCo
 
-  Deep Reinforcement Learning tutorial from OpenAI - https://dropbox.com/s/yefei7380x7jeo7/Deep%20Reinforcement%20Learning%20Tutorial%20%28OpenAI%29.html
+  introduction by David Silver
+	http://youtube.com/watch?v=KHZVXao4qXs
 
-  "Optimizing Expectations: From Deep Reinforcement Learning to Stochastic Computation Graphs" by Schulman - http://joschu.net/docs/thesis.pdf
+
+  introduction by Andrej Karpathy - http://karpathy.github.io/2016/05/31/rl/
+
+  introduction by John Schulman - https://dropbox.com/s/yefei7380x7jeo7/Deep%20Reinforcement%20Learning%20Tutorial%20%28OpenAI%29.html
+
+
+  tutorial by Pieter Abbeel and John Schulman
+	https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Reinforcement-Learning-Through-Policy-Optimization
+	http://people.eecs.berkeley.edu/~pabbeel/nips-tutorial-policy-optimization-Schulman-Abbeel.pdf
+
+  tutorial by Pieter Abbeel
+	http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/
+
+  tutorial by John Schulman
+	https://youtube.com/watch?v=PtAIh9KSnjo
+
+  overview by Alexey Seleznev - https://youtu.be/mrgJ53TIcQc?t=41m35s (in russian)
+
+
+  "Optimizing Expectations: From Deep Reinforcement Learning to Stochastic Computation Graphs" by John Schulman - http://joschu.net/docs/thesis.pdf
 
 
   methods:
    - derivative free methods
-	Cross Entropy Method, Finite Differences, Fixed Random Seed
+	Cross-Entropy Method, finite differences, fixed random seed
    - likelihood ratio (LR) policy gradient
 	natural gradient / trust regions (TRPO)
-	actor-critic (GAE, A3C)
-   - path derivative (PD)
+	Actor-Critic (GAE, A3C)
+   - path derivative (PD) policy gradient
 	DPG, DDPG, SVG
    - stochastic computation graphs (generalizes LR and PD)
    - guided policy search (reduction to supervised learning)
@@ -503,10 +529,17 @@
 
 
 
-  * Cross Entropy Method (no gradient estimation)
+  * Cross-Entropy Method (no gradient estimation)
+	evolutionary algorithm with selection buth without recombination and mutation - works embarrassingly well on many tasks
+
   	"If your policy has a small number of parameters (say 20), and sometimes even if it has a moderate number (say 2000), you might be better off using the Cross-Entropy Method than any of the fancy methods. It works like this: (1) Sample n sets of parameters from some prior that allows for closed-form updating, e.g. a multivariate Gaussian. (2) For each parameter set, compute a noisy score by running your policy on the environment you care about. (3) Take the top 20% percentile (say) of sampled parameter sets. Fit a Gaussian distribution to this set, then go to (1) and repeat using this as the new prior."
 
-  	http://aaai.org/Papers/ICML/2003/ICML03-068.pdf
+	https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Reinforcement-Learning-Through-Policy-Optimization (07:07, Abbeel)
+	https://youtu.be/aUrX-rP_ss4?t=27m20s (Schulman)
+
+  	"The Cross Entropy method for Fast Policy Search" - http://aaai.org/Papers/ICML/2003/ICML03-068.pdf
+	https://papers.nips.cc/paper/5190-approximate-dynamic-programming-finally-performs-well-in-the-game-of-tetris.pdf
+
 
 
   "Most people prefer to use Policy Gradients, including the authors of the original DQN paper who have shown Policy Gradients to work better than Q Learning when tuned well. PG is preferred because it is end-to-end: there’s an explicit policy and a principled approach that directly optimizes the expected reward."
@@ -521,13 +554,15 @@
   	we have a gradient estimate, no objective for line search
   	statistics of data (observations and rewards) change during learning
 
-  "For both reinforcement learning and variational inference, there are two widely known ways of optimizing a policy (or variational distribution) based on sampled sequences of actions and outcomes: There’s (a) the likelihood-ratio estimator, which updates the policy such that action sequences that lead to higher scores happen more often and that doesn’t need gradients, and (b) the pathwise estimator, which adjusts individual actions such that the policy results in a higher score and that needs gradients. While pathwise methods may be more sample-efficient, they work less generally due to high bias and don’t scale up as well to very high-dimensional problems."
+
+  "For both reinforcement learning and variational inference, there are two widely known ways of optimizing a policy (or variational distribution) based on sampled sequences of actions and outcomes: There’s (a) likelihood-ratio estimator, which updates the policy such that action sequences that lead to higher scores happen more often and that doesn’t need gradients, and (b) pathwise (path derivative) estimator, which adjusts individual actions such that the policy results in a higher score and that needs gradients. Likelihood-ratio estimator changes probabilities of experienced paths by shifting probability mass towards better ones and, unlike pathwise estimator, does not try to change the paths. While pathwise methods may be more sample-efficient, they work less generally due to high bias and don’t scale up as well to very high-dimensional problems."
 
 
-  * REINFORCE / Likelihood Ratio Policy Gradient (likelihood-ratio estimation)
-  	https://theneural.wordpress.com/2011/09/13/the-useless-beauty-of-reinforce/ (Ilya Sutskever)
-  	https://youtube.com/watch?v=oPGVsoBonLM + https://youtube.com/watch?v=rO7Dx8pSJQw + http://goo.gl/5wsgbJ (John Schulman)
-  	http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/ (Pieter Abbeel, 0:16:40)
+
+  * REINFORCE / Likelihood Ratio Policy Gradient (likelihood-ratio gradient estimation)
+  	https://theneural.wordpress.com/2011/09/13/the-useless-beauty-of-reinforce/ (Sutskever)
+  	https://youtube.com/watch?v=oPGVsoBonLM + https://youtube.com/watch?v=rO7Dx8pSJQw + http://goo.gl/5wsgbJ (Schulman)
+  	http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/ (Abbeel, 0:16:40)
 
   	score function gradient estimator
   		∇θE x~θ[f(x)] = ∇θ ∫dx p(x|θ)f(x) = ∫dx ∇θp(x|θ)f(x) = ∫dx p(x|θ)∇θp(x|θ)/p(x|θ)*f(x) = ∫dx p(x|θ)∇θlog p(x|θ)f(x) = E x~θ[f(x)∇θlog p(x|θ)]
@@ -566,7 +601,7 @@
   	 - https://github.com/osh/kerlym/blob/master/kerlym/pg.py
   	 - https://github.com/ludc/rltorch/blob/master/torch/policies/PolicyGradient.lua
   	 - https://github.com/ludc/rltorch/blob/master/torch/policies/RecurrentPolicyGradient.lua
-  	 - https://github.com/rllab/rllab/blob/master/rllab/algos/vpg.py (Rocky Duan)
+  	 - https://github.com/rllab/rllab/blob/master/rllab/algos/vpg.py
 
 
   * Trust Region Policy Optimization (improvement on Likelihood Ratio Policy Gradient)
@@ -651,7 +686,7 @@
   		 - https://github.com/danijar/mindpark/blob/master/mindpark/algorithm/a3c.py
 
 
-  * Path Derivative Policy Gradient (pathwise estimation)
+  * Path Derivative Policy Gradient (pathwise gradient estimation)
   	http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/ (Abbeel, 01:02:04)
 
   	"Gradient Estimation Using Stochastic Computation Graphs" by Schulman, Heess, Weber, Abbeel - http://arxiv.org/abs/1506.05254
@@ -751,9 +786,11 @@
 	"Deep Reinforcement Learning with Memory" by Sergey Bartunov - http://93.180.23.59/videos/video/2420/in/channel/1/ (in russian)
 
   * bayesian reinforcement learning
-	BRL agents aim to maximise the expected collected rewards obtained when interacting with an unknown Markov Decision Process while using some prior knowledge.
+	BRL agent aims to maximise expected sum of future rewards obtained when interacting with unknown Markov Decision Process while using some prior knowledge.
 
-	Belief-augmented MDP is an MDP obtained when considering augmented states made of the concatenation of the actual state and the posterior.
+	BRL agent maintains a distribution over worlds and either, samples a world and acts as if it is real, or chooses action reasoning about full distribution.
+
+	Belief-augmented Markov Decision Process is an MDP obtained when considering augmented states made of concatenation of actual state and posterior beliefs.
 
 	Bayes-Adaptive Markov Decision Processes form a natural framework to deal with sequential decision-making problems when some of the information is hidden. In these problems, an agent navigates in an initially unknown environment and receives a numerical reward according to its actions. However, actions that yield the highest instant reward and actions that maximise the gathering of knowledge about the environment are often different. The BAMDP framework leads to a rigorous definition of an optimal solution to this learning problem, which is based on finding a policy that reaches an optimal balance between exploration and exploitation.
 
@@ -766,10 +803,12 @@
 
   "Removing the credit assignment problem from reinforcement learning yields the Contextual Bandit setting which is generically solvable in the same manner as common supervised learning problems."
 
-  demo - http://iosband.github.io/2015/07/28/Beat-the-bandit.html
-
   introduction by David Silver
 	http://youtube.com/watch?v=sGuiWX07sKw
+
+  introduction by Emma Brunskill
+	http://youtube.com/watch?v=fIKkhoI1kF4&t=19m22s
+	http://youtube.com/watch?v=8hK0NnG_DhY&t=11m25s (contextual bandits)
 
   introduction by Ian Osband
 	http://iosband.github.io/2015/07/19/Efficient-experimentation-and-multi-armed-bandits.html
@@ -779,8 +818,8 @@
 	http://jeremykun.com/2013/11/08/adversarial-bandits-and-the-exp3-algorithm/
 	http://jeremykun.com/2013/12/09/bandits-and-stocks/
 
-  overview and course by Csaba Szepesvari
-	http://banditalgs.com/2016/09/04/bandits-a-new-beginning/
+  course by Csaba Szepesvari
+	http://banditalgs.com/2016/09/04/bandits-a-new-beginning/ (overview)
 	http://banditalgs.com/2016/09/04/stochastic-bandits-warm-up/
 	http://banditalgs.com/2016/09/14/first-steps-explore-then-commit/
 	http://banditalgs.com/2016/09/18/the-upper-confidence-bound-algorithm/
@@ -795,17 +834,26 @@
 	http://banditalgs.com/2016/11/13/ellipsoidal-confidence-bounds-for-least-squares-estimators/
 	http://banditalgs.com/2016/11/21/sparse-stochastic-linear-bandits/
 	http://banditalgs.com/2016/11/24/adversarial-linear-bandits/
+	http://banditalgs.com/2016/11/25/adversarial-linear-bandits-and-the-curious-case-of-the-unit-ball/
 
   tutorial by Csaba Szepesvari
 	https://youtube.com/watch?v=VVcLnAoU9Gw
 	https://youtube.com/watch?v=cknukHreMdI
 	https://youtube.com/watch?v=ruIO79C2IQc
 
-  "Bandit Theory" by Sebastien Bubeck - https://blogs.princeton.edu/imabandit/2016/05/11/bandit-theory-part-i/ + https://blogs.princeton.edu/imabandit/2016/05/13/bandit-theory-part-ii/
+  overview by Sebastien Bubeck
+	https://blogs.princeton.edu/imabandit/2016/05/11/bandit-theory-part-i/
+	https://blogs.princeton.edu/imabandit/2016/05/13/bandit-theory-part-ii/
 
-  "Multiworld Testing Decision Service" (first general purpose reinforcement-based learning system) - http://hunch.net/?p=4464948 + http://research.microsoft.com/en-us/projects/mwt/
 
-  papers - https://dropbox.com/sh/saxdz2c9ljr4ip2/AADS7U3FwHedmDe5whaRKqHPa
+  demo - http://iosband.github.io/2015/07/28/Beat-the-bandit.html
+
+  "Multiworld Testing Decision Service" (first general purpose reinforcement-based learning system) -
+	http://hunch.net/?p=4464948
+	http://research.microsoft.com/en-us/projects/mwt/
+
+
+  selected papers - https://dropbox.com/sh/saxdz2c9ljr4ip2/AADS7U3FwHedmDe5whaRKqHPa
 
 
 
@@ -832,7 +880,7 @@
 	https://github.com/222464/PGE
   - Project Malmo (Minecraft)
 	https://microsoft.com/en-us/research/project/project-malmo/
-	https://youtube.com/watch?v=399qJUBRA0o
+	https://youtube.com/watch?v=399qJUBRA0o (Katja Hofmann)
 
 
 
@@ -882,10 +930,18 @@
 
 
 
+list of papers -
+	https://github.com/aikorea/awesome-rl
+	https://github.com/junhyukoh/deep-reinforcement-learning-papers
+	https://github.com/muupan/deep-reinforcement-learning-papers
+
+
+
+
 selected papers/books - https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va
 
-reinforcement learning papers - https://github.com/aikorea/awesome-rl
-deep reinforcement learning papers - https://github.com/junhyukoh/deep-reinforcement-learning-papers + https://github.com/muupan/deep-reinforcement-learning-papers
+
+recent interesting papers - https://github.com/brylevkirill/notes/blob/master/recent%20papers.txt
 
 
 interesting papers (see below):
@@ -1023,6 +1079,7 @@ Norouzi, Bengio, Chen, Jaitly, Schuster, Wu, Schuurmans - "Reward Augmented Maxi
 	"Alec Radford mentioned that the data augmentation suggested in the paper sounds similar in spirit to virtual adversarial training, where the current model is encouraged to make robust predictions not only for the examples in the training set but also for inputs “nearby” those that exist in the training set. A high-level comparison:
 	  - Adversarial training can be seen as data-augmentation in the input space X. The RML objective does data-augmentation in the output space Y.
 	  - Adversarial training performs model-based data augmentation: the examples generated are those for which the current model is maximally vulnerable. RML training performs data-based augmentation: the examples generated have outputs that are “near” the ground-truth outputs. (Here 'near' is defined by the reward function.)"
+	-- https://youtu.be/uohtFXD_39c?t=38m10s (Samy Bengio)
 	-- http://youtube.com/watch?v=agA-rc71Uec (Samy Bengio)
 	-- http://drive.google.com/file/d/0B3Rdm_P3VbRDVUQ4SVBRYW82dU0 (Gauthier)
 	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/1609.00150
@@ -1072,6 +1129,7 @@ Bellemare, Srinivasan, Ostrovski, Schaul, Saxton, Munos - "Unifying Count-Based 
 	"Authors derived pseudo-counts from Context Tree Switching density models over states and used those to form intrinsic rewards."
 	"Although I'm a bit bothered by the assumption of the density model being "learning-positive", which seems central to their theoretical derivation of pseudo-counts: after you observe a state, your subjective probability of observing it again immediately should generally decrease unless you believe that the state is a fixed point attractor with high probability. I can see that in practice the assumption works well in their experimental setting since they use pixel-level factored models and, by the nature of the ATARI games they test on, most pixels don't change value from frame to frame, but in a more general setting, e.g. a side-scroller game or a 3D first-person game this assumption would not hold."
 	-- https://youtube.com/watch?v=0yI2wJ6F8r0 (demo)
+	-- https://youtube.com/watch?v=qSfd27AgcEk (Bellemare)
 	-- https://youtu.be/qduxl-vKz1E?t=1h16m30s (Seleznev, in russian)
 	-- https://youtube.com/watch?v=qKyOLNVpknQ (Pavlov, in russian)
 	-- https://github.com/lake4790k/pseudo-count-atari

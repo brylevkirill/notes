@@ -28,8 +28,9 @@ selected papers and books on data science - https://dropbox.com/sh/ivbn5ldue427s
 
 [interesting papers]
 
-Norvig - "Warning Signs in Experimental Design and Interpretation" [http://norvig.com/experiment-design.html]
 Breiman - "Statistical Modeling: The Two Cultures"
+Norvig - "Warning Signs in Experimental Design and Interpretation" [http://norvig.com/experiment-design.html]
+Debrouwere, Goetghebeur - "The Statistical Crisis in Science" [http://lib.ugent.be/fulltxt/RUG01/002/304/385/RUG01-002304385_2016_0001_AC.pdf]
 Ioannidis - "Why most published research findings are false" [http://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124]
 Goodman, Greenland - "Why Most Published Research Findings Are False: Problems in the Analysis"
 Ioannidis - "Why Most Published Research Findings Are False: Author's Reply to Goodman and Greenland"
@@ -219,17 +220,6 @@ pathologies of frequentist statistics according to E. T. Jaynes - https://youtub
 - how to get the right data
 - figuring out what to measure or optimize
 - beware the lazy path of computing what's easy but wrong"
-
-
-
-
-[applications]
-
-analytics @ Yandex (in russian)
-	https://youtube.com/watch?v=dvf_x3V0j88
-	https://youtube.com/watch?v=tKYOjIo0BQY
-	https://youtube.com/watch?v=BlYxSBUl1Tk
-	https://youtube.com/watch?v=WbeFXquH7Ac
 
 
 

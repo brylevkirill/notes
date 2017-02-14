@@ -1,10 +1,6 @@
-"Machine Learning: Field of study that gives computers the ability to learn without being explicitly programmed." Arthur Samuel (1959)
-"A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E." Tom Mitchell (1998)
-"Machine learning algorithms are compilers for data: they take in data to create intelligent programs." Ben Hammer (2014)
-
-"Anywhere there is a function y = f(x), where f(x) has some parameters used to make a decision, prediction, or estimate, has the potential to be replaced by a machine learning algorithm."
-
-"Algorithms is the study of one thing: given a perfect input, how do I most efficiently compute the optimal output. The problem is the "perfect input" part. But you never have a perfect input, and that it's far  more important to be able to synthesize information from a large number of sources and reason about it than it is to find the exact-right-solution to some problem that exists only to Plato."
+Machine Learning is the subfield of computer science that gives computers the ability to learn without being explicitly programmed.
+A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.
+Anywhere there is a function y = f(x), where f(x) has some parameters used to make a decision, prediction, or estimate, has the potential to be replaced by a machine learning algorithm.
 
 
   * applications
@@ -26,7 +22,7 @@ overviews and selected papers/books
 	machine learning    - https://dropbox.com/sh/kpd5tvfnc29lstj/AAD3oGVCUdkoMS56_2g8Oj7_a
 	deep learning    - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt + https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
 	reinforcement learning    - https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt + https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va
-	bayesian inference and learning    - https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt + https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
+	bayesian inference and learning    - https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt + https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
 	probabilistic programming    - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt + https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
 
 
@@ -361,7 +357,7 @@ industry practices
     - possible to compute the estimate p(U|O) for arbitrary unknown variable (U) given observed data (O) and not having any knowledge about latent variables (L) from the joint distribution p(U, O, L)
     - possibility to use posterior distributions as priors, combination of multiple models
 
-    overview - https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt
+    overview - https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt
 
 
   learning theory
@@ -757,11 +753,18 @@ to be correlated.
 selected papers and books on machine learning - https://dropbox.com/sh/kpd5tvfnc29lstj/AAD3oGVCUdkoMS56_2g8Oj7_a
 
 selected papers on deep learning - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt + https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
-selected papers on bayesian inference and learning - https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt + https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
+selected papers on bayesian inference and learning - https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt + https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
 selected papers on probabilistic programming - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt + https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
 selected papers on reinforcement learning - https://dropbox.com/s/dexryjnmxujdynd/Reinforcement%20Learning.txt + https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va
 
-interesting papers - http://gitxiv.com
+
+recent interesting papers - https://github.com/brylevkirill/notes/blob/master/recent%20papers.txt
+
+
+interesting papers (see below):
+ * automated machine learning
+ * models
+ * systems
 
 
 
@@ -822,8 +825,9 @@ Edwards, Storkey - "Towards a Neural Statistician" [http://arxiv.org/abs/1606.02
 	"An efficient learner is one who reuses what they already know to tackle a new problem. For a machine learner, this means understanding the similarities amongst datasets. In order to do this, one must take seriously the idea of working with datasets, rather than datapoints, as the key objects to model. Towards this goal, we demonstrate an extension of a variational autoencoder that can learn a method for computing representations, or statistics, of datasets in an unsupervised fashion. The network is trained to produce statistics that encapsulate a generative model for each dataset. Hence the network enables efficient learning from new datasets for both unsupervised and supervised tasks. We show that we are able to learn statistics that can be used for: clustering datasets, transferring generative models to new datasets, selecting representative samples of datasets and classifying previously unseen classes."
 	"Our goal was to demonstrate that it is both possible and profitable to work at a level of abstraction of datasets rather than just datapoints. We have shown how it is possible to learn to represent datasets using a statistic network, and that these statistics enable highly flexible and efficient models that can do transfer learning, small shot classification, cluster distributions, summarize datasets and more. Avenues for future research are engineering, methodological and application based. In terms of engineering we believe that there are gains to be had by more thorough exploration of different (larger) architectures. In terms of methodology we want to look at: improved methods of representing uncertainty resulting from sample size; models explicitly designed trained for small-shot classification; supervised and semi-supervised approaches to classifiying either datasets or datapoints within the dataset. One advantage we have yet to explore is that by specifying classes implicitly in terms of sets, we can combine multiple data sources with potentially different labels, or multiple labels. We can also easily train on any unlabelled data because this corresponds to sets of size one. We also want to consider questions such as: What are desirable properties for statistics to have as representations? How can we enforce these? Can we use ideas from classical work on estimators? In terms of applications we are interested in applying this framework to learning embeddings of speakers for speech problems or customer embeddings in commercial problems."
 	"Potentially a more powerful alternative to Variational Autoencoder."
-	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.02185 (Larochelle)
+	-- http://techtalks.tv/talks/neural-statistician/63048/ (Edwards)
 	-- https://youtu.be/XpIDCzwNe78?t=51m53s (Bartunov)
+	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.02185
 
 Ratner, Sa, Wu, Selsam, Re - "Data Programming: Creating Large Training Sets, Quickly" [https://arxiv.org/abs/1605.07723]
 	"Large labeled training sets are the critical building blocks of supervised learning methods and are key enablers of deep learning techniques. For some applications, creating labeled training sets is the most time-consuming and expensive part of applying machine learning. We therefore propose a paradigm for the programmatic creation of training sets called data programming in which users provide a set of labeling functions, which are programs that heuristically label large subsets of data points, albeit noisily. By viewing these labeling functions as implicitly describing a generative model for this noise, we show that we can recover the parameters of this model to “denoise” the training set. Then, we show how to modify a discriminative loss function to make it noise-aware. We demonstrate our method over a range of discriminative models including logistic regression and LSTMs. We establish theoretically that we can recover the parameters of these generative models in a handful of settings. Experimentally, on the 2014 TAC-KBP relation extraction challenge, we show that data programming would have obtained a winning score, and also show that applying data programming to an LSTM model leads to a TAC-KBP score almost 6 F1 points over a supervised LSTM baseline (and into second place in the competition). Additionally, in initial user studies we observed that data programming may be an easier way to create machine learning models for non-experts."

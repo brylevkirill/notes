@@ -12,9 +12,9 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
         Relational Machine Learning
     - probabilistic database
     - probabilistic program
-    - distributed representation
+    - distributed representations
   * reasoning
-    - neural architectures with reasoning, attention and memory
+    - neural architectures
     - natural logic
     - description logic
     - formal logic
@@ -97,7 +97,7 @@ selected papers and books -
   "A Primer on Neural Network Models for Natural Language Processing" by Yoav Goldberg - http://arxiv.org/abs/1510.00726
 
 
-  http://matt-gardner.github.io/paper-thoughts/2016/12/08/reading-comprehension-survey.html
+  "A Survey of the Current State of Reading Comprehension" by Matt Gardner - http://matt-gardner.github.io/paper-thoughts/2016/12/08/reading-comprehension-survey.html
 
 
 
@@ -347,18 +347,6 @@ selected papers and books -
   	 entity resolution by evaluating (and accepting) proposals for clustering of mentions on CRF with pairwise factors in parallel (each proposal) by map-reduce, clustering entities into indepedent groups for more parallelism
   	 joint entity linking (identifying group of mentions in document) and entity discovery (identifying cluster of mentions across documents)
 
-  	resource-bounded information gathering:
-  	 - full processing on whole web
-  	 + focus queries and processing where needed & fruitful
-
-  	parallelism:
-  	 - MapReduce, black-box
-  	 + reason about inference & parallelism together
-
-  	MCMC, parallel, distributed:
-  	 - unroll whole factor graph. limited model structures
-  	 + focused sampling, conflict resolution, particle filtering
-
 
   	entity resolution (disambiguation, record linkage, deduplication, coreference) - parallel/distributed machine learning, dynamic partitioning
   	 - hierarchical, entity-based
@@ -561,13 +549,12 @@ selected papers and books -
   	 * parameter learning improves from hours to seconds, and scales KBs from thousands of entities to millions of entities
 
   	comparison to Markov Logic Network:
-  	1   task
-  	1-2 formalization (MLN: easy)
-  	2   first-order program + (plugged) database of facts (MLN: clausal 1st-order logic, very expressive) (ProPPR: function)
-  	2-3 "compilation" (MLN: expensive, grows with DB size) (ProPPR: fast, sublinear in DB size)
-  	3   "compiled" representation (MLN: undirected graphical model) (ProPPR: graph with feature-vector labeled edges)
-  	3-4 inference (MLN: approximate, intractable) (ProPPR: Personalized PageRank aka Random Walk with Reset, linear)
-  	    learning (MLN: approximate, intractable) (ProPPR: pSGD, fast but non-convex, can parallelize)
+  	- formalization (MLN: easy)
+  	- first-order program + (plugged) database of facts (MLN: clausal 1st-order logic, very expressive) (ProPPR: function)
+  	- "compilation" (MLN: expensive, grows with DB size) (ProPPR: fast, sublinear in DB size)
+  	- "compiled" representation (MLN: undirected graphical model) (ProPPR: graph with feature-vector labeled edges)
+  	- inference (MLN: approximate, intractable) (ProPPR: Personalized PageRank aka Random Walk with Reset, linear)
+  	- learning (MLN: approximate, intractable) (ProPPR: pSGD, fast but non-convex, can parallelize)
 
   	scales to 10^5-10^6 facts and requires 10^3 training queries
 
@@ -606,9 +593,12 @@ selected papers and books -
 
 
 
-[knowledge representation - distributed representation]
+[knowledge representation - distributed representations]
+
+  (Yann LeCun) "We are attempting to replace symbols by vectors so we can replace logic by algebra."
 
   "The idea of distributed representations was introduced with reference to cognitive representations: a mental object can be represented efficiently (both in terms of number of bits and in terms of number of examples needed to generalize about it) by characterizing the object using many features, each of which can separately each be active or inactive. For example, with m binary features, one can describe up to 2^m different objects. The idea is that the brain would be learning and using such representations because they help it generalize to new objects that are similar to known ones in many respects. A distributed representation is opposed to a local representation, in which only one neuron (or very few) is active at each time, i.e., as with grandmother cells. One can view n-gram models as a mostly local representation: only the units associated with the specific subsequences of the input sequence are turned on. Hence the number of units needed to capture the possible sequences of interest grows exponentially with sequence length."
+
 
   Hinton - "Aetherial Symbols" - https://drive.google.com/file/d/0B8i61jl8OE3XdHRCSkV1VFNqTWc
 
@@ -624,6 +614,7 @@ selected papers and books -
   Bottou - "From Machine Learning to Machine Reasoning" - http://youtube.com/watch?v=tzp_BikdgyM + http://research.microsoft.com/pubs/192773/tr-2011-02-08.pdf
 
   Bengio - http://www.iro.umontreal.ca/~bengioy/dlbook/disentangling.html
+
 
 
   continuous space embeddings of words, sentences, texts, relational graphs
@@ -643,6 +634,7 @@ selected papers and books -
    - fixed capacity: one has to choose a dimension before training and it determines the capacity of the representation, then one can't increase it as more data comes in without retraining the whole thing from the scratch
    - partial lack of interpretability: distributed representations are black boxes - they may preserve some semantic relations as vector algebraic properties, but one can't generally easily extract arbitrary information from them without a specifically trained neural network
 
+
    * should words/sentences/entities/relations/facts be vectors or matrices, or tensors, or distributions over them?
    * better compression? improve memory capacity of embeddings and allow for one-shot learning of new symbols
    * do we need non-linearities? most supervised problems are mostly tackled well by linear models
@@ -657,64 +649,18 @@ selected papers and books -
    - What is a proof in embeddings?
    - How can explicit background knowledge be injected into embeddings?
 
-  "A number of techniques have been proposed to learn entity and relation representations using neural networks. They all represent entities as low-dimensional vectors and represent relations as operators that combine the representations of two entities. The main difference among these techniques lies in the parametrization of the relation operators. For instance, given two entity vectors, the model of Neural Tensor Network represents each relation as a bilinear tensor operator and a linear matrix operator. The model of TransE, on the other hand, represents each relation as a single vector that linearly interacts with the entity vectors. Both models report promising performance on predicting unseen relationships in knowledge bases."
-
-  "One of the main benefits in using neural networks is that they can be trained to handle very subtle kinds of logic that humans use in casual language that defy axiomatization. Propositional logic, first-order logic, higher order logic, modal logic, nonmonotonic logic, probabilistic logic, fuzzy logic - none of them seem to quite be adequate; but if you use the right kind of recursive net, you don't even have to specify the logic to get it to make useful deductions, if you have enough training data."
-
 
   http://gavagai.se/blog/2015/09/30/a-brief-history-of-word-embeddings/
 
   http://sebastianruder.com/word-embeddings-1/index.html
   http://sebastianruder.com/word-embeddings-softmax/index.html
 
-  Arora - "Word Embeddings: Explaining their properties" -
-	http://www.offconvex.org/2015/12/12/word-embeddings-1/ + http://www.offconvex.org/2016/02/14/word-embeddings-2/
-
-
-  Weston, Bordes, Chopra - "Embeddings for KB and Text, Representation, Extraction and Question Answering"
-  	http://youtube.com/watch?v=FVjuwv1_EDw + http://akbc.ws/2014/slides/weston-nips-akbc.pdf
-
-  Weston, Bordes - "Embedding Methods for NLP" - http://emnlp2014.org/tutorials/8_notes.pdf
-
-  Bouchard, Naradowsky, Riedel, Rocktaschel, Vlachos - "Matrix and Tensor Factorization Methods for Natural Language Processing"
-  	https://github.com/uclmr/acl2015tutorial/raw/master/tutorial.pdf
-  	http://cl.naist.jp/~kevinduh/z/acl15tutorial/29_AbstractPDF.pdf
-
-  Rocktaschel, Bosnjak, Singh, Riedel - "Low-Dimensional Embeddings of Logic"
-  	http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/
-
-  	https://b8ca8e88-a-62cb3a1a-s-sites.googlegroups.com/site/learningsemantics2014/SebastianRiedel.pdf
-  	http://yoavartzi.com/sp14/slides/rockt.sp14.pdf
-  	http://www.aclweb.org/anthology/W/W14/W14-2409.pdf
-
-  Bouchard, Singh, Trouillon - "On Approximate Reasoning Capabilities of Low-Rank Vector Spaces"
-  	https://drive.google.com/file/d/0B_hicYJxvbiObnNYZ0cyMkotUzQ + http://sameersingh.org/files/papers/logicmf-krr15.pdf
-
-  	Bouchard - "Programming by Teaching" - https://youtube.com/watch?v=sKZD8huxjZ0
-
-  Weston, Chopra, Bordes, Mikolov - "Memory Networks"
-  	http://youtube.com/watch?v=Xumy3Yjq4zk + http://cs224d.stanford.edu/lectures/CS224d-Lecture12.pdf
-  	http://techtalks.tv/talks/memory-networks-for-language-understanding/62356/
-  	http://youtu.be/jRkm6PXRVF8?t=16m29s
-  	http://research.microsoft.com/apps/video/default.aspx?id=259920
-  	http://youtube.com/watch?v=8keqd1ewsno
-
-  	http://blog.acolyer.org/2016/03/10/memory-networks/
-  	https://docs.google.com/file/d/0B_hicYJxvbiOT3QyTm4wdHlaeWs
-
-  McCallum - "Word Representations via Gaussian Embedding" - http://arxiv.org/abs/1412.6623
-  	http://youtube.com/watch?v=PKTfALFk03M + http://iclr.cc/lib/exe/fetch.php?media=iclr2015:vilnis-iclr2015.pdf
-  	 - represent symbols not as points but as regions in space
-  	 - captures uncertainty of representation
-  	 - enhances asymmetric reasoning such as entailment/implicature
-  	 - more expressive decision boundaries and representational power
-
 
 
 
 [reasoning]
 
- * neural architectures with reasoning, attention and memory
+ * neural architectures
  * natural logic
  * description logic
  * formal logic
@@ -722,11 +668,14 @@ selected papers and books -
 
 
 
- * neural architectures with reasoning, attention and memory
+ * neural architectures
 
-	http://thespermwhale.com/jaseweston/ram/
+	"One of the main benefits in using neural networks is that they can be trained to handle very subtle kinds of logic that humans use in casual language that defy axiomatization. Propositional logic, first-order logic, higher-order logic, modal logic, nonmonotonic logic, probabilistic logic, fuzzy logic - none of them seem to quite be adequate; but if you use the right kind of recursive net, you don't even have to specify the logic to get it to make useful deductions, if you have enough training data."
 
-	"In order to solve AI, a key component is the use of long term dependencies as well as short term context during inference, i.e., the interplay of reasoning, attention and memory. The machine learning community has had great success in the last decades at solving basic prediction tasks such as text classification, image annotation and speech recognition. However, solutions to deeper reasoning tasks have remained elusive. Until recently, most existing machine learning models have lacked an easy way to read and write to part of a (potentially very large) long-term memory component, and to combine this seamlessly with inference. To combine memory with reasoning, a model must learn how to access it, i.e. to perform attention over its memory. Models developing notions of attention have shown positive results on a number of real-world tasks such as machine translation and image captioning. There has also been a surge in building models of computation which explore differing forms of explicit storage. For example, recently it was shown how to learn a model to sort a small set of numbers as well as a host of other symbolic manipulation tasks. Another promising direction is work employing a large long-term memory for reading comprehension; the capability of somewhat deeper reasoning has been shown on synthetic data, and promising results are starting to appear on real data. In spite of this resurgence, the research into developing learning algorithms combining these components and the analysis of those algorithms is still in its infancy."
+
+	see section "[knowledge representation - distributed representations]"
+	see section "[architectures - compute and memory]" of https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt
+
 
 	- How to decide what to write and what not to write in the memory?
 	- How to represent knowledge to be stored in memories?
@@ -739,25 +688,23 @@ selected papers and books -
 	- Can we draw inspiration from how animal or human memories are stored and used?
 
 
-	"Memory Networks" by Weston et al.
-		http://youtube.com/watch?v=Xumy3Yjq4zk + http://cs224d.stanford.edu/lectures/CS224d-Lecture12.pdf
-		http://techtalks.tv/talks/memory-networks-for-language-understanding/62356/
-		http://youtube.com/watch?v=jRkm6PXRVF8
-		http://youtube.com/watch?v=8keqd1ewsno
-		http://blog.acolyer.org/2016/03/10/memory-networks/
-		https://docs.google.com/file/d/0B_hicYJxvbiOT3QyTm4wdHlaeWs
+	"Low-Dimensional Embeddings of Logic" by Rocktaschel, Bosnjak, Singh, Riedel
+  		http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/
 
-	"Towards Neural Network-based Reasoning" by Peng et al.
-		http://arxiv.org/abs/1508.05508
+	"On Approximate Reasoning Capabilities of Low-Rank Vector Spaces" by Bouchard, Singh, Trouillon
+		https://drive.google.com/file/d/0B_hicYJxvbiObnNYZ0cyMkotUzQ
+		http://sameersingh.org/files/papers/logicmf-krr15.pdf
 
-	"Reasoning about Entailment with Neural Attention" by Rocktaschel et al.
-		http://arxiv.org/abs/1509.06664
-
-	"Knowledge Base Completion using Compositional Vector Space Models" by Neelakantan et al.
-		http://akbc.ws/2014/submissions/akbc2014_submission_10.pdf
-		http://youtube.com/watch?v=mSrkzc0Nksg + https://docs.google.com/file/d/0B_hicYJxvbiOTUxZMWY5T2N2VG8
-
-	http://matt-gardner.github.io/paper-thoughts/2016/12/08/reading-comprehension-survey.html	
+	"What Can Deep Learning Learn from Symbolic Inference?" by Tim Rocktäschel [http://www.bicv.org/?wpdmdl=2309]:
+	  * Deep Learning and symbolic rules can be combined efficiently
+		- map logical formulae to differentiable expressions
+		- generalization via learned vector representations
+		- can incorporate explanations via rules leading to more data efficient training
+	  * entire reasoning architecture can be end-to-end differentiable
+		- supports multi-hop inference
+		- learns how to prove
+		- induces a latent logic program
+		- trivial to incorporate prior knowledge in form of rules
 
 
 
@@ -1170,6 +1117,7 @@ Xuchen Yao - "Feature-Driven Question Answering with Natural Language Alignment"
 selected papers - https://dropbox.com/sh/9ytscy4pwegbvhb/AACtB7tQGj-vigo0yExfciu0a
 
 
+recent interesting papers - https://github.com/brylevkirill/notes/blob/master/recent%20papers.txt
 
 
 interesting papers (see below):
@@ -1474,6 +1422,10 @@ Nalisnick, Ravi - "Infinite Dimensional Word Embeddings" [http://arxiv.org/abs/1
 Vilnis, McCallum - "Word Representations via Gaussian Embedding" [http://arxiv.org/abs/1412.6623]
 	"Current work in lexical distributed representations maps each word to a point vector in low-dimensional space. Mapping instead to a density provides many interesting advantages, including better capturing uncertainty about a representation and its relationships, expressing asymmetries more naturally than dot product or cosine similarity, and enabling more expressive parameterization of decision boundaries. This paper advocates for density-based distributed embeddings and presents a method for learning representations in the space of Gaussian distributions. We compare performance on various word embedding benchmarks, investigate the ability of these embeddings to model entailment and other asymmetric relationships, and explore novel properties of the representation."
 	"In this work we introduced a method to embed word types into the space of Gaussian distributions, and learn the embeddings directly in that space. This allows us to represent words not as low-dimensional vectors, but as densities over a latent space, directly representing notions of uncertainty and enabling a richer geometry in the embedded space. We demonstrated the effectiveness of these embeddings on a linguistic task requiring asymmetric comparisons, as well as standard word similarity benchmarks, learning of synthetic hierarchies, and several qualitative examinations. In future work, we hope to move beyond spherical or diagonal covariances and into combinations of low rank and diagonal matrices. Efficient updates and scalable learning is still possible due to the Sherman-Woodbury-Morrison formula. Additionally, going beyond diagonal covariances will enable us to keep our semantics from being axis-aligned, which will increase model capacity and expressivity. We also hope to move past stochastic gradient descent and warm starting and be able to learn the Gaussian representations robustly in one pass from scratch by using e.g. proximal or block coordinate descent methods. Improved optimization strategies will also be helpful on the highly nonconvex problem of training supervised hierarchies with KL divergence. Representing words and concepts as different types of distributions (including other elliptic distributions such as the Student’s t) is an exciting direction – Gaussians concentrate their density on a thin spherical ellipsoidal shell, which can lead to counterintuitive behavior in high dimensions. Multimodal distributions represent another clear avenue for future work. Combining ideas from kernel methods and manifold learning with deep learning and linguistic representation learning is an exciting frontier. In other domains, we want to extend the use of potential function representations to other tasks requiring embeddings, such as relational learning with the universal schema. We hope to leverage the asymmetric measures, probabilistic interpretation, and flexible training criteria of our model to tackle tasks involving similarity-in-context, comparison of sentences and paragraphs, and more general common sense reasoning."
+	"- represent symbols not as points but as regions in space
+	 - captures uncertainty of representation
+	 - enhances asymmetric reasoning such as entailment/implicature
+	 - more expressive decision boundaries and representational power"
 	-- http://youtu.be/Xm1XGjc9lDc?t=14m52s (McCallum)
 	-- http://youtube.com/watch?v=PKTfALFk03M + http://iclr.cc/lib/exe/fetch.php?media=iclr2015:vilnis-iclr2015.pdf (Vilnis)
 	-- https://github.com/seomoz/word2gauss

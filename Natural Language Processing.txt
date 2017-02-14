@@ -565,23 +565,23 @@ EMNLP ACL conference - https://vimeo.com/emnlp/videos + http://youtube.com/chann
 
 
 
+lists of papers -
+	https://github.com/keonkim/awesome-nlp
+	http://memkite.com/blog/2015/01/29/deep-learning-for-natural-language-processing/
+	http://gitxiv.com/category/natural-language-processing-nlp
+	https://github.com/niangaotuantuan/Publications-of-Deep-Learning-in-NLP
+
+	http://nlp.stanford.edu/read/ (Stanford University reading group)
+	http://homes.cs.washington.edu/~yejin/cse599.html (University of Washington reading group)
+	https://github.com/clulab/nlp-reading-group/ (University of Arizona)
+
+
+
+
 selected papers - https://dropbox.com/sh/rb7u9nwb16bg5xq/AADV3d_bS6-mqFW0_jaec1sZa
 
 
-interesting papers - https://github.com/keonkim/awesome-nlp
-interesting papers - http://memkite.com/blog/2015/01/29/deep-learning-for-natural-language-processing/
-interesting papers - http://gitxiv.com/category/natural-language-processing-nlp
-interesting papers - https://github.com/niangaotuantuan/Publications-of-Deep-Learning-in-NLP
-
-interesting papers (Stanford University reading group) - http://nlp.stanford.edu/read/
-interesting papers (University of Washington reading group) - http://homes.cs.washington.edu/~yejin/cse599.html
-interesting papers (University of Arizona) - https://github.com/clulab/nlp-reading-group/
-
-interesting papers - https://sites.google.com/site/deeplearningsummerschool/schedule
-interesting papers - http://naacl.org/naacl-hlt-2015/papers.html
-interesting papers - http://acl2015.org/accepted_papers.html
-
-
+recent interesting papers - https://github.com/brylevkirill/notes/blob/master/recent%20papers.txt
 
 
 interesting papers (see below):
@@ -689,6 +689,7 @@ Norouzi, Bengio, Chen, Jaitly, Schuster, Wu, Schuurmans - "Reward Augmented Maxi
 	"Alec Radford mentioned that the data augmentation suggested in the paper sounds similar in spirit to virtual adversarial training, where the current model is encouraged to make robust predictions not only for the examples in the training set but also for inputs “nearby” those that exist in the training set. A high-level comparison:
 	  - Adversarial training can be seen as data-augmentation in the input space X. The RML objective does data-augmentation in the output space Y.
 	  - Adversarial training performs model-based data augmentation: the examples generated are those for which the current model is maximally vulnerable. RML training performs data-based augmentation: the examples generated have outputs that are “near” the ground-truth outputs. (Here 'near' is defined by the reward function.)"
+	-- https://youtu.be/uohtFXD_39c?t=38m10s (Samy Bengio)
 	-- http://youtube.com/watch?v=agA-rc71Uec (Samy Bengio)
 	-- http://drive.google.com/file/d/0B3Rdm_P3VbRDVUQ4SVBRYW82dU0 (Gauthier)
 	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/1609.00150

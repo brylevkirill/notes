@@ -2,7 +2,6 @@
   * theory
   * architectures
   * meta-learning
-  * one-shot learning
   * unsupervised learning
   * generative models
     - generative adversarial networks
@@ -75,6 +74,14 @@ http://arxiv.org/abs/1610.06258 - Using Fast Weights to Attend to the Recent Pas
 http://openreview.net/forum?id=B1ckMDqlg - Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer (Google Brain)
 	-- https://github.com/dennybritz/deeplearning-papernotes/blob/3718d181a0fed5ed806582822ed0dbde530122bf/notes/mixture-experts.md
 http://arxiv.org/abs/1612.00796 - Overcoming Catastrophic Forgetting in Neural Networks (DeepMind)
+
+http://arxiv.org/abs/1608.05343 - Decoupled Neural Interfaces using Synthetic Gradients (DeepMind)
+	"At the very least it can allow individual modules to do gradient updates before waiting for the backward pass to reach them. So you could get better GPGPU utilization when the ordinary 'locked' mode of forward-then-backward doesn't always saturate the available compute units.
+	Put differently, if you consider the dependency DAG of tensor operations, using these DNI things reduces the depth of the parameter gradient nodes (which is the whole point of training) in the DAG. So for example, the gradient update for the layer at the beginning of a n-layer chain goes from depth ~2n to depth ~1, the layer at the end has depth n, which doesn't change. On average, the depth of the gradient computation nodes is about 40% of what it would be normally, for deep networks. So there is a lot more flexibility for scheduling nodes in time and space.
+	And for coarser-grained parallelism it could allow modules running on different devices to do updates before a final loss gradient is available to be distributed to all the devices. Synchronization still has to happen to update the gradient predictions, but that can happen later, and could even be opportunistic (asynchronous or stochastic)."
+	"I guess that the synthetic gradients conditioned on the labels and the synthetic layer inputs conditioned on the data work for the same reason why stochastic depth works: during training, at any given layer the networks before and after it can be approximated by simpler, shallower versions. In stochastic depth the approximation is performed by skipping layers, so the whole network is approximated by a shallower version of itself, which changes at each step. In this work, instead, the approximation is performed by separate networks.
+	-- https://deepmind.com/blog/decoupled-neural-networks-using-synthetic-gradients/
+	-- http://cnichkawde.github.io/SyntheticGradients.html
 http://arxiv.org/abs/1701.08734 - PathNet: Evolution Channels Gradient Descent in Super Neural Networks (DeepMind)
 
 http://arxiv.org/abs/1609.01704 - Hierarchical Multiscale Recurrent Neural Networks (Bengio)
@@ -112,18 +119,31 @@ http://arxiv.org/abs/1606.04474 - Learning to Learn by Gradient Descent by Gradi
 	-- https://blog.acolyer.org/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/
 	-- https://github.com/deepmind/learning-to-learn
 http://arxiv.org/abs/1611.03824 - Learning to Learn for Global Optimization of Black Box Functions (de Freitas)
-http://arxiv.org/abs/1611.02779 - RL2: Fast Reinforcement Learning via Slow Reinforcement Learning (OpenAI, Abbeel)
+https://openreview.net/forum?id=rJY0-Kcll - Optimization as a Model for Few-Shot Learning (Larochelle)
+
+http://arxiv.org/abs/1611.02779 - RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning (OpenAI, Abbeel)
+	"future directions:
+	- better outer-loop algorithms
+	- scaling RL^2 to 1M games
+	- model-based RL^2
+	- curriculum learning / universal RL^2
+	- RL^2 + one-shot imitation learning
+	- RL^2 for simulation -> real world transfer"
+	-- https://youtu.be/19eNQ1CLt5A?t=7m52s (Sutskever)
 http://arxiv.org/abs/1611.05763 - Learning to Reinforcement Learn (DeepMind)
-	-- https://hackernoon.com/learning-policies-for-learning-policies-meta-reinforcement-learning-rl²-in-tensorflow-b15b592a2ddf
+	-- https://hackernoon.com/learning-policies-for-learning-policies-meta-reinforcement-learning-rl²-in-tensorflow-b15b592a2ddf (Juliani)
 	-- https://github.com/awjuliani/Meta-RL
 
-http://arxiv.org/abs/1608.05343 - Decoupled Neural Interfaces using Synthetic Gradients (DeepMind)
-	-- https://deepmind.com/blog/decoupled-neural-networks-using-synthetic-gradients/
-	-- http://cnichkawde.github.io/SyntheticGradients.html
-	"At the very least it can allow individual modules to do gradient updates before waiting for the backward pass to reach them. So you could get better GPGPU utilization when the ordinary 'locked' mode of forward-then-backward doesn't always saturate the available compute units.
-	Put differently, if you consider the dependency DAG of tensor operations, using these DNI things reduces the depth of the parameter gradient nodes (which is the whole point of training) in the DAG. So for example, the gradient update for the layer at the beginning of a n-layer chain goes from depth ~2n to depth ~1, the layer at the end has depth n, which doesn't change. On average, the depth of the gradient computation nodes is about 40% of what it would be normally, for deep networks. So there is a lot more flexibility for scheduling nodes in time and space.
-	And for coarser-grained parallelism it could allow modules running on different devices to do updates before a final loss gradient is available to be distributed to all the devices. Synchronization still has to happen to update the gradient predictions, but that can happen later, and could even be opportunistic (asynchronous or stochastic)."
-	"I guess that the synthetic gradients conditioned on the labels and the synthetic layer inputs conditioned on the data work for the same reason why stochastic depth works: during training, at any given layer the networks before and after it can be approximated by simpler, shallower versions. In stochastic depth the approximation is performed by skipping layers, so the whole network is approximated by a shallower version of itself, which changes at each step. In this work, instead, the approximation is performed by separate networks.
+http://arxiv.org/abs/1606.02185 - Towards a Neural Statistician
+	-- http://techtalks.tv/talks/neural-statistician/63048/ (Edwards)
+	-- https://youtu.be/XpIDCzwNe78?t=51m53s (Bartunov)
+	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.02185
+http://arxiv.org/abs/1606.04080 - Matching Networks for One Shot Learning (Vinyals)
+	"Given just a few, or even a single, examples of an unseen class, it is possible to attain high classification accuracy on ImageNet using Matching Networks.  The core architecture is simple and straightforward to train and performant across a range of image and text classification tasks. Matching Networks are trained in the same way as they are tested: by presenting a series of instantaneous one shot learning training tasks, where each instance of the training set is fed into the network in parallel. Matching Networks are then trained to classify correctly over many different input training sets. The effect is to train a network that can classify on a novel data set without the need for a single step of gradient descent."
+	-- https://pbs.twimg.com/media/Cy7Eyh5WgAAZIw2.jpg:large
+http://arxiv.org/abs/1612.02192 - Fast Adaptation in Generative Models with Generative Matching Networks (Bartunov)
+	-- https://youtu.be/XpIDCzwNe78 (Bartunov)
+	-- http://github.com/sbos/gmn
 
 http://arxiv.org/abs/1609.09106 - HyperNetworks (Google Brain)
 	-- http://blog.otoro.net/2016/09/28/hyper-networks/
@@ -131,21 +151,6 @@ http://arxiv.org/abs/1609.09106 - HyperNetworks (Google Brain)
 	"Our results also show that hypernetworks applied to convolutional networks still achieve respectable results for image recognition tasks compared to state-of-the-art baseline models while requiring fewer learnable parameters."
 http://arxiv.org/abs/1611.01578 - Neural Architecture Search with Reinforcement Learning (Google Brain)
 http://arxiv.org/abs/1611.02167 - Designing Neural Network Architectures using Reinforcement Learning
-
-
-
-
-[one-shot learning]
-
-http://arxiv.org/abs/1606.02185 - Towards a Neural Statistician
-	-- http://techtalks.tv/talks/neural-statistician/63048/ (Edwards)
-	-- https://youtu.be/XpIDCzwNe78?t=51m53s (Bartunov)
-http://arxiv.org/abs/1606.04080 - Matching Networks for One Shot Learning (Vinyals)
-	"Given just a few, or even a single, examples of an unseen class, it is possible to attain high classification accuracy on ImageNet using Matching Networks.  The core architecture is simple and straightforward to train and performant across a range of image and text classification tasks. Matching Networks are trained in the same way as they are tested: by presenting a series of instantaneous one shot learning training tasks, where each instance of the training set is fed into the network in parallel. Matching Networks are then trained to classify correctly over many different input training sets. The effect is to train a network that can classify on a novel data set without the need for a single step of gradient descent."
-	-- https://pbs.twimg.com/media/Cy7Eyh5WgAAZIw2.jpg:large
-http://arxiv.org/abs/1612.02192 - Fast Adaptation in Generative Models with Generative Matching Networks (Bartunov)
-	-- https://youtu.be/XpIDCzwNe78 (Bartunov)
-	-- http://github.com/sbos/gmn
 
 
 
@@ -185,6 +190,7 @@ http://arxiv.org/abs/1611.03383 - Disentangling Factors of Variation in Deep Rep
 [generative models]
 
 http://arxiv.org/abs/1511.05101 - How (not) to train your generative model: schedule sampling, likelihood, adversary (Huszar)
+	-- http://inference.vc/how-to-train-your-generative-models-why-generative-adversarial-networks-work-so-well-2/
 http://arxiv.org/abs/1511.01844 - A Note of the Evaluation of Generative Models
 	-- http://videolectures.net/iclr2016_theis_generative_models/ (Theis)
 	-- https://pbs.twimg.com/media/CjA02jrWYAECWOZ.jpg:large ("The generative model on the left gets a better log-likelihood score.")
@@ -212,12 +218,31 @@ http://arxiv.org/abs/1606.00709 - f-GAN: Training Generative Neural Samplers usi
 	-- https://youtube.com/watch?v=I1M_jGWp5n0
 http://arxiv.org/abs/1612.02780 - Improved Generator Objectives for GANs
 	"We present a framework to understand GAN training as alternating density ratio estimation and approximate divergence minimization. This provides an interpretation for the mismatched GAN generator and discriminator objectives often used in practice, and explains the problem of poor sample diversity. We also derive a family of generator objectives that target arbitrary f-divergences without minimizing a lower bound, and use them to train generative image models that target either improved sample quality or greater sample diversity."
-http://arxiv.org/abs/1701.02386 - AdaGAN: Boosting Generative Models (addressing missing modes)
 
 http://openreview.net/forum?id=Hk4_qw5xe - Towards Principled Methods for Training Generative Adversarial Networks (Bottou)
+https://arxiv.org/abs/1701.07875 - Wasserstein GAN (Bottou)
+	"GAN loss that corresponds with image quality
+	GAN loss that converges (decreasing loss actually means something), so you can actually tune your hyperparameters
+	Stable GAN training, where generator nets without batch norm, silly layer architectures and even straight up MLPs can generate decent images
+	Way less mode collapse
+	Theory about why it works and why the old methods had the problems we experienced."
+	"Paper uses Wasserstein distance instead of Jensen-Shannon divergence to compare distributions."
+	"Paper gets rid of a few unnecessary logarithms, and clips weights."
+	"There are two fundamental problems in doing image generation using GANs: 1) model structure 2) optimization instability. This paper makes no claims of improving model structure nor does it have experiments in that direction. To improve on imagenet generation, we need some work in (1) as well."
+	"Having loss curves that actually make sense and reflect sample quality? Perhaps showing how you can have meaningful and stable training process without having to intentionally cripple (or undertrain) the discriminator/critic? Perhaps the fact that the authors show why the original GAN formulations (using KL/JS divergence) are problematic AND provide a solution for those problems."
+	"Authors are not claiming that this directly improves image quality, but offers a host of other benefits like stability, the ability to make drastic architecture changes without loss of functionality, and, most importantly, a loss metric that actually appears to correlate with sample quality. That last one is a pretty big deal."
+	"Wasserstein distance fits so nicely in the GAN framework so that the WGAN critic provide a natural lower bound on the EMD."
+	-- https://paper.dropbox.com/doc/Wasserstein-GAN-GvU0p2V9ThzdwY3BbhoP7
+	-- https://github.com/martinarjovsky/WassersteinGAN
+	-- https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/WassersteinGAN
+
 http://arxiv.org/abs/1611.02163 - Unrolled Generative Adversarial Networks
 	"We introduce a method to stabilize GANs by defining the generator objective with respect to an unrolled optimization of the discriminator. This allows training to be adjusted between using the optimal discriminator in the generator's objective, which is ideal but infeasible in practice, and using the current value of the discriminator, which is often unstable and leads to poor solutions. We show how this technique solves the common problem of mode collapse, stabilizes training of GANs with complex recurrent generators, and increases diversity and coverage of the data distribution by the generator."
-http://arxiv.org/abs/1606.03498 - Improved Techniques for Training GANs + https://github.com/aleju/papers/blob/master/neural-nets/Improved_Techniques_for_Training_GANs.md + http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FSalimansGZCRC16 + http://inference.vc/understanding-minibatch-discrimination-in-gans/ + https://github.com/openai/improved-gan
+http://arxiv.org/abs/1606.03498 - Improved Techniques for Training GANs
+	-- https://github.com/aleju/papers/blob/master/neural-nets/Improved_Techniques_for_Training_GANs.md
+	-- http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FSalimansGZCRC16
+	-- http://inference.vc/understanding-minibatch-discrimination-in-gans/
+	-- https://github.com/openai/improved-gan
 	"Our CIFAR-10 samples also look very sharp - Amazon Mechanical Turk workers can distinguish our samples from real data with an error rate of 21.3% (50% would be random guessing)"
 	"In addition to generating pretty pictures, we introduce an approach for semi-supervised learning with GANs that involves the discriminator producing an additional output indicating the label of the input. This approach allows us to obtain state of the art results on MNIST, SVHN, and CIFAR-10 in settings with very few labeled examples. On MNIST, for example, we achieve 99.14% accuracy with only 10 labeled examples per class with a fully connected neural network — a result that’s very close to the best known results with fully supervised approaches using all 60,000 labeled examples."
 	--
@@ -232,6 +257,7 @@ http://arxiv.org/abs/1611.04051 - GANS for Sequences of Discrete Elements with t
 	-- https://casmls.github.io/general/2017/02/01/GumbelSoftmax.html
 http://arxiv.org/abs/1511.06390 - Unsupervised and Semi-supervised Learning with Categorical Generative Adversarial Networks
 http://openreview.net/forum?id=Byk-VI9eg - Generative Multi-Adversarial Networks
+http://arxiv.org/abs/1701.02386 - AdaGAN: Boosting Generative Models  # addressing missing modes
 http://www.stat.ucla.edu/~ywu/ABP/doc/arXivABP.pdf - Alternating Back-Propagation for Generator Network
 
 https://sites.google.com/site/nips2016adversarial/WAT16_paper_20.pdf - Generating Text via Adversarial Training
@@ -385,6 +411,7 @@ http://arxiv.org/abs/1610.09038 - Professor Forcing: A New Algorithm for Trainin
 	-- http://videolectures.net/deeplearning2016_goyal_new_algorithm/
 
 http://arxiv.org/abs/1511.06391 - Order Matters: Sequence to Sequence for Sets (Vinyals)
+	-- https://youtube.com/watch?v=uohtFXD_39c&t=56m51s (Bengio)
 
 
 
@@ -696,6 +723,7 @@ http://arxiv.org/abs/1511.08779 - Multiagent Cooperation and Competition with De
 http://arxiv.org/abs/1602.02672 - Learning to Communicate to Solve Riddles with Deep Distributed Recurrent Q-Networks (de Freitas)
 http://arxiv.org/abs/1605.06676 - Learning to Communicate with Deep Multi-Agent Reinforcement Learning (de Freitas)
 	-- https://youtube.com/watch?v=cfsYBY4nd1c
+	-- https://youtube.com/watch?v=xL-GKD49FXs (Foerster)
 	-- http://videolectures.net/deeplearning2016_foerster_learning_communicate/ (Foerster)
 	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.07133
 	-- https://github.com/iassael/learning-to-communicate
@@ -750,7 +778,7 @@ http://arxiv.org/abs/1608.05081 - Efficient Exploration for Dialog Policy Learni
 http://arxiv.org/abs/1606.01269 - End-to-End LSTM-based Dialog Control Optimized with Supervised and Reinforcement Learning (Zweig)
 
 http://arxiv.org/abs/1604.04562 - A Network-based End-to-End Trainable Task-oriented Dialogue System (Young)
-	-- http://videolectures.net/deeplearning2016_wen_network_based/
+	-- http://videolectures.net/deeplearning2016_wen_network_based/ (Wen)
 http://arxiv.org/abs/1606.02447 - Learning Language Games through Interaction (Manning)
 http://arxiv.org/abs/1605.07683 - Learning End-to-End Goal-Oriented Dialog (Weston)
 http://arxiv.org/abs/1606.03777 - Neural Belief Tracker: Data-Driven Dialogue State Tracking (Young)
