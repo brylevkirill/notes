@@ -32,7 +32,15 @@ selected papers and books - https://dropbox.com/sh/rb7u9nwb16bg5xq/AADV3d_bS6-mq
 
 [overview]
 
+(Ludwig Wittgenstein) "The language is meant to serve for communication between a builder A and an assistant B. A is building with building-stones: there are blocks, pillars, slabs and beams. B has to pass the stones, and that in the order in which A needs them. For this purpose they use a language consisting of the words “block”, “pillar”, “slab”, “beam”. A calls them out - B brings the stone which he has learnt to bring at such-and-such a call. Conceive this as a complete primitive language."
+(Jon Gauthier) "This game is not just a game of words but a game of words causing things and of other things causing words. We can’t fully define the meaning of a word like “slab” without referring to the physical actions of A and B. In this way, linguistic meaning has to bottom out at some point in nonlinguistic facts."
+
+(Joseph Weizenbaum, creator of ELIZA chat bot) "No general solution to the problem of computer understanding of natural language is possible, i.e. language is understood only in contextual frameworks, that even these can be shared by people to only a limited extent, and that consequently even people are not embodiments of any such general solution."
+
+
 Jon Gauthier, Igor Mordatch -"A Paradigm for Situated and Goal-Driven Language Learning" - https://arxiv.org/abs/1610.03585
+
+Jon Gauthier - http://foldl.me/2016/solving-language/ + http://foldl.me/2016/situated-language-learning/
 
 Felix Hill - "From Models of Language Understanding to Agents of Language Use" - http://research.microsoft.com/apps/video/default.aspx?id=266643
 
@@ -40,12 +48,7 @@ Christopher Manning, Julia Hirschberg - "Advances in Natural Language Processing
 
 Chris Burges - "Towards the Machine Comprehension of Text: An Essay" - http://research.microsoft.com/apps/pubs/default.aspx?id=206771
 
-
-http://www.technologyreview.com/s/602094/ais-language-problem/
-
-http://www.foldl.me/2016/solving-language/
-
-http://breakthroughanalysis.com/2015/10/28/an-inside-view-of-language-technologies-at-google/
+Ray Kurzweil: "We have a lot of language data [at Google]... and we don't even know how we would annotate it" - https://youtube.com/watch?v=w9sz7eW6MY8#t=4m27s
 
 
 
@@ -54,6 +57,7 @@ http://breakthroughanalysis.com/2015/10/28/an-inside-view-of-language-technologi
 
 course by Chris Manning and Dan Jurafsky - http://youtube.com/playlist?list=PL6397E4B26D00A269 + https://web.stanford.edu/~jurafsky/NLPCourseraSlides.html
 course by Richard Socher - http://cs224d.stanford.edu
+course by Oxford - https://github.com/oxford-cs-deepnlp-2017/lectures
 course by Michael Collins - https://coursera.org/course/nlangp + https://youtube.com/user/afigfigueira/playlists?shelf_id=5&view=50
 course by Jordan Boyd-Graber - http://youtube.com/playlist?list=PLegWUnz91WfuPebLI97-WueAP90JO-15i
 course by Chris Manning @ Stanford University - http://see.stanford.edu/see/lecturelist.aspx?coll=63480b48-8819-4efd-8412-263f1a472f5a

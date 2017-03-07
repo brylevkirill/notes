@@ -146,21 +146,25 @@ selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91I
   Zoubin Ghahramani - "Should all Machine Learning be Bayesian? Should all Bayesian models be non-parametric?" - http://videolectures.net/bark08_ghahramani_samlbb/
 
 
+  probabilistic programming - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt
+
+
 
 
 [bayesian deep learning]
 
+  Shakir Mohamed - "Bayesian Reasoning and Deep Learning in Agent-based Systems"
+	https://youtube.com/watch?v=AggqBRdz6C
   Shakir Mohamed - "Principles and Applications of Deep Generative Models"
 	http://videolectures.net/deeplearning2016_mohamed_generative_models/
+  Shakir Mohamed - "Bayesian Reasoning and Deep Learning"
+	http://blog.shakirm.com/wp-content/uploads/2015/10/Bayes_Deep.pdf
 
   Dmitry Vetrov - "Bayesian Inference and Deep Learning" (in russian)
 	https://youtu.be/kFe5zSkro0E?t=17m16s
 	https://youtu.be/_qrHcSdQ2J4?t=22m31s
 	https://youtube.com/watch?v=BKh7nj5SmnI
 	https://youtu.be/0q5p7xP4cdA?t=5h4m9s
-
-  Shakir Mohamed - "Bayesian Reasoning and Deep Learning"
-	http://blog.shakirm.com/2015/10/bayesian-reasoning-and-deep-learning/ + http://blog.shakirm.com/wp-content/uploads/2015/10/Bayes_Deep.pdf
 
   Shakir Mohamed - "A Statistical View of Deep Learning"
 	http://blog.shakirm.com/2015/01/a-statistical-view-of-deep-learning-i-recursive-glms/
@@ -215,40 +219,34 @@ selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91I
   In Bayesian approach to inference a probability distribution must be specified on the unknown parameters, usually through a density π(θ). This represents prior beliefs about the parameters before any data is observed. The aim is to learn the posterior beliefs resulting from updating the prior to incorporate the observations. Mathematically this is an application of conditional probability using Bayes theorem: the posterior is π(θ|y0)=kπ(θ)L(θ), where k is a constant of proportionality that is typically hard to calculate. A central aim of Bayesian inference is to produce methods which approximate useful properties of the posterior in a reasonable time."
 
 
-advantages of bayesian approach
+advantages of bayesian methods
+  - learn from limited, noisy, missing data
   - deal with small sample size
   - marginalize over latent variables
   - compute error bars
   - establish causal relationships
   - produce explanations for decisions
+  - integrate knowledge
 
-probabilistic machine learning
-  - forecasting
-  - decision making
-  - learning from limited, noisy and missing data
-  - data generation
-  - data compression
-  - knowledge integration
+applications of bayesian methods
+  - data-efficient learning
+  - exploration
+  - relational learning
+  - semiparametric learning
+  - hypothesis formation
+  - causal reasoning
+  - macro-actions and planning
+  - visual concept learning
+  - world simulation
+  - scene understanding
 
-future directions of probabilistic machine learning
+future directions of bayesian methods
   - probabilistic programming languages
   - bayesian optimization
   - rational allocation of computational resources
   - efficient data compression
   - automating model discovery and experimental design
 
-generative models
-  - hierarchical non-parametric Bayesian models (in which the parameterization is fairly application-specific, but inference via MCMC is consistent albeit slow)
-  - graphical models, such as Bayesian nets or MRFs (in which learning the structure can get hairy, but is feasible for specific types of distributions such as Gaussian or discrete - the generative model often may come with some presumed structure, e.g. Ising model in the case of images)
-  - causal methods, such as structural equation models
-  - some manifold methods
-  - explicit stochastic process, such as Gaussian process (nonlinear regression) with some covariance
-  - filtering methods, such as kalman/particle-filtering
-  - hidden markov models
-
-probabilistic programming languages
-  generalization of probabilistic graphical models
-  https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt + https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
 
 bayesian inference
   A major difference between frequentist and Bayesian approaches in machine learning practice: A frequentist approach would produce a point estimate θ^ from Data, and predict with p(x|θ^). In contrast, the Bayesian approach needs to integrate over different θs. In general, this integration is intractable and hence Bayesian machine learning has been focused on either finding special distributions for which the integration is tractable, or finding efficient approximation.
@@ -277,7 +275,7 @@ bayesian inference
   MCMC inference: slow convergence, but estimates can become arbitrarily close to true posterior given long enough computation-time. (Metropolis-Hastings, Hamiltonian Monte-Carlo, Stochastic Gradient Langevin Dynamics)
 
 
-myths and misconceptions about bayesian methods:
+myths and misconceptions about bayesian methods
   - bayesian methods make assumptions where other methods don't (all methods make assumptions otherwise it's impossible to predict, but bayesian methods are transparent in their assumptions whereas other methods are often opaque)
   - if you don't have the right prior you won't do well (no such thing as the right prior, choose vague priors such as nonparametrics when in doubt)
   - Maximum A Posteriori (MAP) is a bayesian method (MAP is similar to regularization, the key in bayesian methods is to average over uncertain variables and parameters rather than to optimize)
@@ -288,20 +286,16 @@ myths and misconceptions about bayesian methods:
 
 
 challenges:
-
   - inference in probabilistic programming systems and broad model families:
-
-    Gradient-based methods for parameter estimation, variational inference
-    Metropolis-Hastings variants with efficient rescoring
-    Message passing variants
-    Sequential Monte Carlo variants
-
+        Gradient-based methods for parameter estimation, variational inference
+        Metropolis-Hastings variants with efficient rescoring
+        Message passing variants
+        Sequential Monte Carlo variants
   - learning to infer using discriminative methods to amortize probabilistic inference:
-
-    Variational Autoencoders
-    Deep Latent Gaussian Models
-    Restricted Boltzmann Machines
-    Neural Network based MCMC proposals
+        Variational Autoencoders
+        Deep Latent Gaussian Models
+        Restricted Boltzmann Machines
+        Neural Network based MCMC proposals
 
 
 (E. T. Jaynes) "The traditional ‘frequentist’ methods which use only sampling distributions are usable and useful in many particularly simple, idealized problems; however, they represent the most proscribed special cases of probability theory, because they presuppose conditions (independent repetitions of a ‘random experiment’ but no relevant prior information) that are hardly ever met in real problems. This approach is quite inadequate for the current needs of science. In addition, frequentist methods provide no technical means to eliminate nuisance parameters or to take prior information into account, no way even to use all the information in the data when sufficient or ancillary statistics do not exist. Lacking the necessary theoretical principles, they force one to ‘choose a statistic’ from intuition rather than from probability theory, and then to invent ad hoc devices (such as unbiased estimators, confidence intervals, tail-area significance tests) not contained in the rules of probability theory. Each of these is usable within the small domain for which it was invented but, as Cox’s theorems guarantee, such arbitrary devices always generate inconsistencies or absurd results when applied to extreme cases.
@@ -761,6 +755,10 @@ overview by Judea Pearl - https://www.edge.org/conversation/judea_pearl-engines-
   (Nando de Freitas) "Some folks use information theory to learn autoencoders - it's not clear what the value of the prior is in this setting. Some are using Bayesian ideas to obtain confidence intervals - but the bootstrap could have been equally used. Where it becomes interesting is where people use ideas of deep learning to do Bayesian inference. An example of this is Kevin Murphy and colleagues using distillation (aka dark knowledge) for reducing the cost of Bayesian model averaging. I also think deep nets have enough power to implement Bayes rule and sampling rules. I strongly believe that Bayesian updating, Bayesian filtering and other forms of computation can be approximated by the type of networks we use these days. A new way of thinking is in the air."
 
   (Ian Osband) "In sequential decision problems there is an important distinction between risk and uncertainty. We identify risk as inherent stochasticity in a model and uncertainty as the confusion over which model parameters apply. For example, a coin may have a fixed p = 0.5 of heads and so the outcome of any single flip holds some risk; a learning agent may also be uncertain of p. The demarcation between risk and uncertainty is tied to the specific model class, in this case a Bernoulli random variable; with a more detailed model of flip dynamics even the outcome of a coin may not be risky at all. Our distinction is that unlike risk, uncertainty captures the variability of an agent’s posterior belief which can be resolved through statistical analysis of the appropriate data. For a learning agent looking to maximize cumulative utility through time, this distinction represents a crucial dichotomy. Consider the reinforcement learning problem of an agent interacting with its environment while trying to maximize cumulative utility through time. At each timestep, the agent faces a fundamental tradeoff: by exploring uncertain states and actions the agent can learn to improve its future performance, but it may attain better short-run performance by exploiting its existing knowledge. At a high level this effect means uncertain states are more attractive since they can provide important information to the agent going forward. On the other hand, states and action with high risk are actually less attractive for an agent in both exploration and exploitation. For exploitation, any concave utility will naturally penalize risk. For exploration, risk also makes any single observation less informative. Although colloquially similar, risk and uncertainty can require radically different treatment."
+
+  () "While Bayesian inference can capture uncertainty about parameters, it relies on the model being correctly specified. However, in practice, all models are wrong. And in fact, this model mismatch can be often be large enough that we should be more concerned with calibrating our inferences to correct for the mismatch than to produce uncertainty estimates from incorrect assumptions."
+
+  () "While in principle it is nice that we can build models separate from our choice of inference, we often need to combine the two in practice. (The whole naming behind the popular model-inference classes of “variational auto-encoders” and “generative adversarial networks” are one example.) That is, we often choose our model based on what we know enables fast inferences, or we select hyperparameters in our model from data. This goes against the Bayesian paradigm."
 
 
 

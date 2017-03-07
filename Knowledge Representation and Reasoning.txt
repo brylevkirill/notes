@@ -83,9 +83,16 @@ selected papers and books -
 
   "Semantics encompasses extracting structured data from text (knowledge base extraction, logical form extraction, information extraction), linguistic approaches to extract and compose representation of meaning, inference and reasoning over meaning representation based on logic or algebra. It also includes approaches that aims at grounding language by learning relations between language and visual observations, linking language to the physical world."
 
+  (Ludwig Wittgenstein) "The language is meant to serve for communication between a builder A and an assistant B. A is building with building-stones: there are blocks, pillars, slabs and beams. B has to pass the stones, and that in the order in which A needs them. For this purpose they use a language consisting of the words “block”, “pillar”, “slab”, “beam”. A calls them out - B brings the stone which he has learnt to bring at such-and-such a call. Conceive this as a complete primitive language."
+  (Jon Gauthier) "This game is not just a game of words but a game of words causing things and of other things causing words. We can’t fully define the meaning of a word like “slab” without referring to the physical actions of A and B. In this way, linguistic meaning has to bottom out at some point in nonlinguistic facts."
+
+  (Joseph Weizenbaum, creator of ELIZA chat bot) "No general solution to the problem of computer understanding of natural language is possible, i.e. language is understood only in contextual frameworks, that even these can be shared by people to only a limited extent, and that consequently even people are not embodiments of any such general solution."
+
 
   "A Paradigm for Situated and Goal-Driven Language Learning" by Jon Gauthier and Igor Mordatch - https://arxiv.org/abs/1610.03585
   	"We outlined a paradigm for grounded and goal-driven language learning in artificial agents. The paradigm is centered around a utilitarian definition of language understanding, which equates language understanding with the ability to cooperate with other language users in real-world environments. This position demotes language from its position as a separate task to be solved to one of several communicative tools agents might use to accomplish their real-world goals."
+
+  Jon Gauthier - http://foldl.me/2016/solving-language/ + http://foldl.me/2016/situated-language-learning/
 
 
   https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt
@@ -792,8 +799,9 @@ selected papers and books -
 	https://quora.com/Isnt-4th-or-8th-grade-science-exam-too-much-of-a-long-shot-for-current-AI-Why-not-simpler-tasks-such-as-basic-world-understanding-from-videos-first
 	http://nysedregents.org/Grade4/Science/home.html
 
- * Aristo challenge
-	http://allenai.org/content/publications/aristo-challenge.pdf
+ * Allen AI Science Challenge
+	"Moving Beyond the Turing Test with the Allen AI Science Challenge" - https://arxiv.org/abs/1604.04315
+
 	https://kaggle.com/c/the-allen-ai-science-challenge
 	http://wired.com/2016/02/the-best-ai-still-flunks-8th-grade-science/
 
@@ -1629,6 +1637,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 	-- http://youtube.com/watch?v=LqsUaprYMOw + http://youtube.com/watch?v=-jbqiXvmY9w (exhibition game against team of Jeopardy champions)
 	-- http://youtube.com/watch?v=kTXJCEvCDYk + https://goo.gl/ZcQB6n (exhibition game against Ken Jennings)
 	-- http://youtube.com/watch?v=c2kGD1EdfFw (exhibition game against Quiz Bowl champions)
+	-- http://youtube.com/watch?v=bQHo7BApgAU&t=5m48s (game against California NASAT team)
 	-- http://youtube.com/watch?v=ZVHR8OAHDlI (Boyd-Graber, Iyyer)
 	-- http://youtube.com/watch?v=ZRYObdTOaEI (Iyyer)
 	-- http://youtube.com/watch?v=YArUk9QcMe0 (Boyd-Graber)
