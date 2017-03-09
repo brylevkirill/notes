@@ -762,9 +762,9 @@ recent interesting papers - https://github.com/brylevkirill/notes/blob/master/re
 
 
 interesting papers (see below):
- * automated machine learning
- * models
- * systems
+  - automated machine learning
+  - models
+  - systems
 
 
 

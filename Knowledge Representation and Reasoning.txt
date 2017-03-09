@@ -1129,15 +1129,15 @@ recent interesting papers - https://github.com/brylevkirill/notes/blob/master/re
 
 
 interesting papers (see below):
- * knowledge bases
- * knowledge bases with discrete/logic/probabilistic representations
- * knowledge bases with continuous space representations
- * continuous space representations of text
- * question answering over knowledge bases
- * question answering over texts (machine reading)
- * reasoning
- * information extraction and integration
- * multimodal knowledge representation
+  - knowledge bases
+  - knowledge bases with discrete/logic/probabilistic representations
+  - knowledge bases with continuous space representations
+  - continuous space representations of text
+  - question answering over knowledge bases
+  - question answering over texts (machine reading)
+  - reasoning
+  - information extraction and integration
+  - multimodal knowledge representation
 
 
 
@@ -1463,6 +1463,8 @@ Kiros, Zhu, Salakhutdinov, Zemel, Torralba, Urtasun, Fidler - "Skip-Thought Vect
 	"We evaluated the effectiveness of skip-thought vectors as an off-the-shelf sentence representation with linear classifiers across 8 tasks. Many of the methods we compare against were only evaluated on 1 task. The fact that skip-thought vectors perform well on all tasks considered highlight the robustness of our representations. We believe our model for learning skip-thought vectors only scratches the surface of possible objectives. Many variations have yet to be explored, including (a) deep encoders and decoders, (b) larger context windows, (c) encoding and decoding paragraphs, (d) other encoders, such as convnets. It is likely the case that more exploration of this space will result in even higher quality representations."
 	"Developing learning algorithms for distributed compositional semantics of words has been a long-standing open problem at the intersection of language understanding and machine learning. In recent years, several approaches have been developed for learning composition operators that map word vectors to sentence vectors including recursive networks, recurrent networks, convolutional networks and recursive-convolutional methods. All of these methods produce sentence representations that are passed to a supervised task and depend on a class label in order to backpropagate through the composition weights. Consequently, these methods learn high-quality sentence representations but are tuned only for their respective task. The paragraph vector is an alternative to the above models in that it can learn unsupervised sentence representations by introducing a distributed sentence indicator as part of a neural language model. The downside is at test time, inference needs to be performed to compute a new vector. In this paper we abstract away from the composition methods themselves and consider an alternative loss function that can be applied with any composition operator. We consider the following question: is there a task and a corresponding loss that will allow us to learn highly generic sentence representations? We give evidence for this by proposing a model for learning high-quality sentence vectors without a particular supervised task in mind. Using word vector learning as inspiration, we propose an objective function that abstracts the skip-gram model to the sentence level. That is, instead of using a word to predict its surrounding context, we instead encode a sentence to predict the sentences around it. Thus, any composition operator can be substituted as a sentence encoder and only the objective function becomes modified. We call our model skip-thoughts and vectors induced by our model are called skip-thought vectors. Our model depends on having a training corpus of contiguous text."
 	"One difficulty that arises with such an experimental setup is being able to construct a large enough word vocabulary to encode arbitrary sentences. For example, a sentence from a Wikipedia article might contain nouns that are highly unlikely to appear in our book vocabulary. We solve this problem by learning a mapping that transfers word representations from one model to another. Using pretrained word2vec representations learned with a continuous bag-of-words model, we learn a linear mapping from a word in word2vec space to a word in the encoder’s vocabulary space. The mapping is learned using all words that are shared between vocabularies. After training, any word that appears in word2vec can then get a vector in the encoder word embedding space."
+	--
+	"It turns out that skip-thought vectors have some intriguing properties that allow us to construct F in a really simple way. Suppose we have 3 vectors: an image caption x, a "caption style" vector c and a "book style" vector b. Then we define F as F(x) = x - c + b which intuitively means: keep the "thought" of the caption, but replace the image caption style with that of a story. Then, we simply feed F(x) to the decoder."
 	-- http://videolectures.net/deeplearning2015_salakhutdinov_deep_learning_2/ (Salakhutdinov, 1:02:56)
 	-- https://github.com/ryankiros/skip-thoughts
 	-- https://github.com/ryankiros/neural-storyteller + https://medium.com/@samim/generating-stories-about-images-d163ba41e4ed (demo)

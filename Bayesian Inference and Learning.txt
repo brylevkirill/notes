@@ -483,13 +483,16 @@ challenges:
   Traditional unbiased inference schemes such as Markov Chain Monte Carlo are often slow to run and difficult to evaluate in finite time. In contrast, variational inference allows for competitive run times and more reliable convergence diagnostics on large-scale and streaming data - while continuing to allow for complex, hierarchical modelling. The recent resurgence of interest in variational methods includes new methods for scalability using stochastic gradient methods, extensions to the streaming variational setting, improved local variational methods, inference in non-linear dynamical systems, principled regularisation in deep neural networks, and inference-based decision making in reinforcement learning, amongst others. Variational methods have clearly emerged as a preferred way to allow for tractable Bayesian inference. Despite this interest, there remain significant trade-offs in speed, accuracy, simplicity, applicability, and learned model complexity between variational inference and other approximative schemes such as MCMC and point estimation.
 
 
-  introduction by Zoubin Ghahramani - https://youtu.be/yzNbaAPKXA8?t=19m45s
-
   "Variational Inference: Foundations and Modern Methods" tutorial @ NIPS 2016 by David Blei, Rajesh Ranganath, Shakir Mohamed -
 	https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods
 	http://www.cs.columbia.edu/~blei/talks/2016_NIPS_VI_tutorial.pdf
 
   "Reparametrization trick: Revolution in Stochastic Computational Graphs" by Dmitry Vetrov - https://youtu.be/0q5p7xP4cdA?t=5h3m29s (in russian)
+
+
+  introduction by Zoubin Ghahramani - https://youtu.be/yzNbaAPKXA8?t=19m45s
+
+  introduction by Jordan Boyd-Graber - https://youtube.com/watch?v=2pEkWk-LHmU
 
 
   http://davmre.github.io/inference/2015/11/13/elbo-in-5min/
@@ -748,6 +751,8 @@ overview by Judea Pearl - https://www.edge.org/conversation/judea_pearl-engines-
 
   (Yann LeCun) "I'm a big fan of the conceptual framework of factor graphs as a way to describe learning and inference models. But I think in their simplest/classical form (variable nodes, and factor nodes), factor graphs are insufficient to capture the computational issues. There are factors, say between two variables X and Y, that allow you to easily compute Y from X, but not X from Y, or vice versa. Imagine that X is an image, Y a description of the image, and the factor contains a giant convolutional net that computes a description of the image and measures how well Y matches the computed description. It's easy to infer Y from X, but essentially impossible to infer X from Y. In the real world, where variables are high dimensional and continuous, and where dependencies are complicated, factors are directional."
 
+  () "It's interesting that many summarize Bayesian methods as being about priors; but real power is its focus on integrals and expectations over maximas and modes."
+
   () "Broadly speaking there are two ways of doing inference in ML. One is integration (which tends to be Bayesian) and the other is optimization (which is usually not). A lot of things that "aren't" Bayesian turn out to be the same algorithm with a different interpretation when you view them from a Bayesian perspective (like ridge regression being a MAP estimate for linear regression with a Gaussian prior). However, there are plenty of things people do that don't fit easily into a Bayesian framework. A few of them that come to mind are random forests, energy based models (in the Yann LeCun sense), and the Apriori and DBSCAN algorithms."
 
   (Yann LeCun) "There is no opposition between "deep" and "Bayesian". Many deep learning methods are Bayesian, and many more can be made Bayesian if you find that useful. David Mackay, myself and a few colleagues at Bell Labs have worked in the 90s on variational Bayesian methods for getting probabilities out of the neural nets (by integrating over a Gaussian approximation of the weight posterior), RBMs are Bayesian, Variational Auto-Encoders are Bayesian, the view of neural nets as factor graphs is Bayesian."
@@ -815,7 +820,7 @@ Kingma, Welling - "Auto-Encoding Variational Bayes" [http://arxiv.org/abs/1312.6
 	-- https://jmetzen.github.io/2015-11-27/vae.html
 	-- https://github.com/casperkaae/parmesan
 	-- https://github.com/arahuja/generative-tf
-	-- https://github.com/blei-lab/edward/blob/master/examples/convolutional_vae.py
+	-- https://github.com/blei-lab/edward/blob/master/examples/vae_convolutional.py
 	-- https://github.com/Kaixhin/Autoencoders/blob/master/models/VAE.lua
 
 Rezende, Mohamed, Wierstra - "Stochastic Backpropagation and Approximate Inference in Deep Generative Models" [http://arxiv.org/abs/1401.4082]

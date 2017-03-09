@@ -589,28 +589,28 @@ recent interesting papers - https://github.com/brylevkirill/notes/blob/master/re
 
 
 interesting papers (see below):
- * overview
- * language models
- * language models - word2vec
- * word sense disambiguation
- * semantic composition
- * semantic similarity
- * syntactic parsing
- * semantic parsing
- * text classification
- * word sequence labelling
- * coreference resolution
- * relation extraction
- * text summarization
- * cross-lingual tasks
+  - overview
+  - language models
+  - language models - word2vec
+  - word sense disambiguation
+  - semantic composition
+  - semantic similarity
+  - syntactic parsing
+  - semantic parsing
+  - text classification
+  - word sequence labelling
+  - coreference resolution
+  - relation extraction
+  - text summarization
+  - cross-lingual tasks
 
 interesting papers (see https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt):
- * question answering over texts (machine reading)
- * information extraction and integration
- * multimodal knowledge representation
+  - question answering over texts (machine reading)
+  - information extraction and integration
+  - multimodal knowledge representation
 
 interesting papers (see https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt):
- * document models
+  - document models
 
 
 
@@ -1218,6 +1218,7 @@ Wang, Ling - "Neural Network-Based Abstract Generation for Opinions and Argument
 
 Wu et al. - "Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation" [https://arxiv.org/abs/1609.08144]
 	"Neural Machine Translation is an end-to-end learning approach for automated translation, with the potential to overcome many of the weaknesses of conventional phrase-based translation systems. Unfortunately, NMT systems are known to be computationally expensive both in training and in translation inference. Also, most NMT systems have difficulty with rare words. These issues have hindered NMT's use in practical deployments and services, where both accuracy and speed are essential. In this work, we present GNMT, Google's Neural Machine Translation system, which attempts to address many of these issues. Our model consists of a deep LSTM network with 8 encoder and 8 decoder layers using attention and residual connections. To improve parallelism and therefore decrease training time, our attention mechanism connects the bottom layer of the decoder to the top layer of the encoder. To accelerate the final translation speed, we employ low-precision arithmetic during inference computations. To improve handling of rare words, we divide words into a limited set of common sub-word units ("wordpieces") for both input and output. This method provides a good balance between the flexibility of "character"-delimited models and the efficiency of "word"-delimited models, naturally handles translation of rare words, and ultimately improves the overall accuracy of the system. Our beam search technique employs a length-normalization procedure and uses a coverage penalty, which encourages generation of an output sentence that is most likely to cover all the words in the source sentence. On the WMT'14 English-to-French and English-to-German benchmarks, GNMT achieves competitive results to state-of-the-art. Using a human side-by-side evaluation on a set of isolated simple sentences, it reduces translation errors by an average of 60% compared to Google's phrase-based production system."
+	-- http://translate.google.com (demo)
 	-- http://smerity.com/articles/2016/google_nmt_arch.html
 
 Xia, He, Qin, Wang, Yu, Liu, Ma - "Dual Learning for Machine Translation" [https://arxiv.org/abs/1611.00179]

@@ -47,6 +47,9 @@ bayesian inference and learning -
 
   https://moalquraishi.wordpress.com/2015/03/29/the-state-of-probabilistic-programming/
 
+  http://twiecki.github.io/blog/2016/06/01/bayesian-deep-learning/
+  http://dustintran.com/blog/a-quick-update-edward-and-some-motivations
+
 
   overview by Vikash Mansinghka - https://youtube.com/watch?v=-8QMqSWU76Q
 

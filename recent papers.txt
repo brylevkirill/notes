@@ -66,6 +66,7 @@ http://arxiv.org/abs/1610.06258 - Using Fast Weights to Attend to the Recent Pas
 	-- http://www.fields.utoronto.ca/talks/title-tba-337 (Hinton)
 	-- https://youtube.com/watch?v=mrj_hyH974o (Novikov, in russian)
 	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/1610.06258
+	-- https://github.com/dennybritz/deeplearning-papernotes/blob/master/notes/fast-weight-to-attend.md
 	-- https://reddit.com/r/MachineLearning/comments/58qjiw/research161006258_using_fast_weights_to_attend_to/d92kctk/
 	-- https://theneuralperspective.com/2016/12/04/implementation-of-using-fast-weights-to-attend-to-the-recent-past/
 	-- https://github.com/ajarai/fast-weights
@@ -137,6 +138,7 @@ http://arxiv.org/abs/1611.05763 - Learning to Reinforcement Learn (DeepMind)
 
 http://arxiv.org/abs/1603.05106 - One-Shot Generalization in Deep Generative Models
 	"move over DRAW: deepmind's latest has spatial-transform attention and 1-shot generalization"
+	-- http://youtube.com/watch?v=TpmoQ_j3Jv4 (demo)
 	-- http://techtalks.tv/talks/one-shot-generalization-in-deep-generative-models/62365/
 	-- https://youtu.be/XpIDCzwNe78?t=43m (Bartunov)
 http://arxiv.org/abs/1606.02185 - Towards a Neural Statistician
@@ -199,14 +201,16 @@ http://arxiv.org/abs/1605.08803 - Density Estimation using Real NVP
 
 [generative models]
 
-http://arxiv.org/abs/1511.05101 - How (not) to train your generative model: schedule sampling, likelihood, adversary (Huszar)
-	-- http://inference.vc/how-to-train-your-generative-models-why-generative-adversarial-networks-work-so-well-2/
-http://arxiv.org/abs/1511.01844 - A Note of the Evaluation of Generative Models
+http://arxiv.org/abs/1511.01844 - A Note on the Evaluation of Generative Models
 	-- http://videolectures.net/iclr2016_theis_generative_models/ (Theis)
 	-- https://pbs.twimg.com/media/CjA02jrWYAECWOZ.jpg:large ("The generative model on the left gets a better log-likelihood score.")
 http://arxiv.org/abs/1611.04273 - On the Quantitative Analysis of Decoder-based Generative Models (Salakhutdinov)
-	-- https://github.com/tonywu95/eval_gen
 	"We propose to use Annealed Importance Sampling for evaluating log-likelihoods for decoder-based models and validate its accuracy using bidirectional Monte Carlo. Using this technique, we analyze the performance of decoder-based models, the effectiveness of existing log-likelihood estimators, the degree of overfitting, and the degree to which these models miss important modes of the data distribution."
+	"This paper introduces Annealed Importance Sampling to compute tighter lower bounds and upper bounds for any generative model (with a decoder)."
+	-- https://github.com/tonywu95/eval_gen
+
+http://arxiv.org/abs/1511.05101 - How (not) to train your generative model: schedule sampling, likelihood, adversary (Huszar)
+	-- http://inference.vc/how-to-train-your-generative-models-why-generative-adversarial-networks-work-so-well-2/
 
 http://arxiv.org/abs/1610.08123 - Socratic Learning: Empowering the Generative Model (Re)  # learning with minimal supervision
 	-- https://youtube.com/watch?v=0gRNochbK9c
@@ -219,7 +223,7 @@ http://arxiv.org/abs/1610.08123 - Socratic Learning: Empowering the Generative M
 http://arxiv.org/abs/1701.00160 - NIPS 2016 Tutorial: Generative Adversarial Networks (Goodfellow)
         -- https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks (Goodfellow) + http://iangoodfellow.com/slides/2016-12-04-NIPS.pdf
 
-http://sites.google.com/site/nips2016adversarial/WAT16_paper_21.pdf - A Connection Between Generative Adversarial Networks, Inverse Reinforcement Learning, and Energy-Based Models (Abbeel, Levine)
+https://arxiv.org/abs/1611.03852 - A Connection Between Generative Adversarial Networks, Inverse Reinforcement Learning, and Energy-Based Models (Abbeel, Levine)
 	-- https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3 (33:17, Levine)
 	-- https://youtu.be/RZOKRFBtSh4?t=10m48s (Finn)
 
@@ -240,38 +244,41 @@ http://arxiv.org/abs/1612.02780 - Improved Generator Objectives for GANs
 
 http://openreview.net/forum?id=Hk4_qw5xe - Towards Principled Methods for Training Generative Adversarial Networks (Bottou)
 https://arxiv.org/abs/1701.07875 - Wasserstein GAN (Bottou)
-	"GAN loss that corresponds with image quality
-	GAN loss that converges (decreasing loss actually means something), so you can actually tune your hyperparameters
-	Stable GAN training, where generator nets without batch norm, silly layer architectures and even straight up MLPs can generate decent images
-	Way less mode collapse
-	Theory about why it works and why the old methods had the problems we experienced."
 	"Paper uses Wasserstein distance instead of Jensen-Shannon divergence to compare distributions."
 	"Paper gets rid of a few unnecessary logarithms, and clips weights."
+	--
+	"GAN loss that corresponds with image quality.
+	GAN loss that converges (decreasing loss actually means something), so you can actually tune your hyperparameters.
+	Stable GAN training, where generator nets without batch norm, silly layer architectures and even straight up MLPs can generate decent images.
+	Way less mode collapse.
+	Theory about why it works and why the old methods had the problems we experienced."
+	--
+	"Wasserstein distance fits so nicely in the GAN framework so that the WGAN critic provide a natural lower bound on the EMD."
+	--
 	"There are two fundamental problems in doing image generation using GANs: 1) model structure 2) optimization instability. This paper makes no claims of improving model structure nor does it have experiments in that direction. To improve on imagenet generation, we need some work in (1) as well."
 	"Having loss curves that actually make sense and reflect sample quality? Perhaps showing how you can have meaningful and stable training process without having to intentionally cripple (or undertrain) the discriminator/critic? Perhaps the fact that the authors show why the original GAN formulations (using KL/JS divergence) are problematic AND provide a solution for those problems."
 	"Authors are not claiming that this directly improves image quality, but offers a host of other benefits like stability, the ability to make drastic architecture changes without loss of functionality, and, most importantly, a loss metric that actually appears to correlate with sample quality. That last one is a pretty big deal."
-	"Wasserstein distance fits so nicely in the GAN framework so that the WGAN critic provide a natural lower bound on the EMD."
-	--
 	"Using Wasserstein objective reduces instability, but we still lack proof of existence of an equilibrium. Game theory doesn’t help because we need a so-called pure equilibrium, and simple counter-examples such as rock/paper/scissors show that it doesn’t exist in general. Such counterexamples are easily turned into toy GAN scenarios with generator and discriminator having finite capacity, and the game lacks a pure equilibrium."
 	-- http://www.alexirpan.com/2017/02/22/wasserstein-gan.html
 	-- https://paper.dropbox.com/doc/Wasserstein-GAN-GvU0p2V9ThzdwY3BbhoP7
+	-- https://github.com/blei-lab/edward/blob/master/examples/gan_wasserstein.py
 	-- https://github.com/martinarjovsky/WassersteinGAN
 	-- https://github.com/shekkizh/WassersteinGAN.tensorflow
 	-- https://github.com/kuleshov/tf-wgan
 	-- https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/WassersteinGAN
 http://arxiv.org/abs/1611.02163 - Unrolled Generative Adversarial Networks
 	"We introduce a method to stabilize GANs by defining the generator objective with respect to an unrolled optimization of the discriminator. This allows training to be adjusted between using the optimal discriminator in the generator's objective, which is ideal but infeasible in practice, and using the current value of the discriminator, which is often unstable and leads to poor solutions. We show how this technique solves the common problem of mode collapse, stabilizes training of GANs with complex recurrent generators, and increases diversity and coverage of the data distribution by the generator."
+	-- https://github.com/poolio/unrolled_gan
 http://arxiv.org/abs/1606.03498 - Improved Techniques for Training GANs
+	"Our CIFAR-10 samples also look very sharp - Amazon Mechanical Turk workers can distinguish our samples from real data with an error rate of 21.3% (50% would be random guessing)"
+	"In addition to generating pretty pictures, we introduce an approach for semi-supervised learning with GANs that involves the discriminator producing an additional output indicating the label of the input. This approach allows us to obtain state of the art results on MNIST, SVHN, and CIFAR-10 in settings with very few labeled examples. On MNIST, for example, we achieve 99.14% accuracy with only 10 labeled examples per class with a fully connected neural network — a result that’s very close to the best known results with fully supervised approaches using all 60,000 labeled examples."
+	--
+	"Idea is to give discriminator an entire minibatch of samples as input, rather than just one sample. Thus the discriminator can tell whether the generator just constantly produces a single image. With the collapse discovered, gradients will be sent to the generator to correct the problem."
 	-- https://youtu.be/RZOKRFBtSh4?t=26m18s (Metz)
 	-- https://github.com/aleju/papers/blob/master/neural-nets/Improved_Techniques_for_Training_GANs.md
 	-- http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FSalimansGZCRC16
 	-- http://inference.vc/understanding-minibatch-discrimination-in-gans/
 	-- https://github.com/openai/improved-gan
-	"Our CIFAR-10 samples also look very sharp - Amazon Mechanical Turk workers can distinguish our samples from real data with an error rate of 21.3% (50% would be random guessing)"
-	"In addition to generating pretty pictures, we introduce an approach for semi-supervised learning with GANs that involves the discriminator producing an additional output indicating the label of the input. This approach allows us to obtain state of the art results on MNIST, SVHN, and CIFAR-10 in settings with very few labeled examples. On MNIST, for example, we achieve 99.14% accuracy with only 10 labeled examples per class with a fully connected neural network — a result that’s very close to the best known results with fully supervised approaches using all 60,000 labeled examples."
-	--
-	"Idea is to give discriminator an entire minibatch of samples as input, rather than just one sample. Thus the discriminator can tell whether the generator just constantly produces a single image. With the collapse discovered, gradients will be sent to the generator to correct the problem."
-	-- https://github.com/poolio/unrolled_gan
 
 http://arxiv.org/abs/1611.04051 - GANS for Sequences of Discrete Elements with the Gumbel-softmax Distribution
 	-- https://casmls.github.io/general/2017/02/01/GumbelSoftmax.html
@@ -279,7 +286,6 @@ http://arxiv.org/abs/1702.07983 - Maximum-Likelihood Augmented Discrete Generati
 http://arxiv.org/abs/1702.08431 - Boundary-Seeking Generative Adversarial Networks (Bengio)
 	"This approach can be used to train a generator with discrete output when the generator outputs a parametric conditional distribution. We demonstrate the effectiveness of the proposed algorithm with discrete image data. In contrary to the proposed algorithm, we observe that the recently proposed Gumbel-Softmax technique for re-parametrizing the discrete variables does not work for training a GAN with discrete data."
 
-http://arxiv.org/abs/1605.09782 - Adversarial Feature Learning
 http://arxiv.org/abs/1609.08661 - Task Specific Adversarial Cost Function
 	-- https://github.com/ToniCreswell/piGAN
 http://arxiv.org/abs/1612.04357 - Stacked Generative Adversarial Networks
@@ -430,15 +436,16 @@ http://arxiv.org/abs/1701.06549 - Learning to Decode for Future Success (Stanfor
 
 http://arxiv.org/abs/1606.03402 - Length Bias in Encoder Decoder Models and a Case for Global Conditioning (Google)
 http://arxiv.org/abs/1611.02796 - Tuning Recurrent Neural Networks with Reinforcement Learning (Magenta)
+	"In contrast to relying solely on possibly biased data, our approach allows for encoding high-level domain knowledge into the RNN, providing a general, alternative tool for training sequence models."
 	-- https://magenta.tensorflow.org/2016/11/09/tuning-recurrent-networks-with-reinforcement-learning/
 	-- https://github.com/tensorflow/magenta/tree/master/magenta/models/rl_tuner
-	"In contrast to relying solely on possibly biased data, our approach allows for encoding high-level domain knowledge into the RNN, providing a general, alternative tool for training sequence models."
 
 http://arxiv.org/abs/1610.09038 - Professor Forcing: A New Algorithm for Training Recurrent Networks
 	"In professor forcing, G is simply an RNN that is trained to predict the next element in a sequence and D a discriminative bi-directional RNN. G is trained to fool D into thinking that the hidden states of G occupy the same state space at training and inference time. D, in turn, is trained to tell apart the hidden states of G at training and inference time. At the Nash equilibrium, D cannot tell apart the state spaces any better and G cannot make them any more similar. This is motivated by the problem that RNNs typically diverge to regions of the state space that were never observed during training and which are hence difficult to generalize to."
 	"Proposes providing the discriminator with the intermediate hidden vectors of the generator rather than its sequence outputs. Such a strategy makes the system differentiable and achieves promising results in tasks like character-level language modeling and handwriting generation."
 	-- https://youtube.com/watch?v=I7UFPBDLDIk
 	-- http://videolectures.net/deeplearning2016_goyal_new_algorithm/
+	-- https://github.com/dennybritz/deeplearning-papernotes/blob/master/notes/professor-forcing.md
 
 http://arxiv.org/abs/1511.06391 - Order Matters: Sequence to Sequence for Sets (Vinyals)
 	-- https://youtube.com/watch?v=uohtFXD_39c&t=56m51s (Bengio)
@@ -449,6 +456,7 @@ http://arxiv.org/abs/1511.06391 - Order Matters: Sequence to Sequence for Sets (
 [probabilistic inference]
 
 http://arxiv.org/abs/1701.03757 - Deep Probabilistic Programming (Edward)
+	-- http://edwardlib.org/iclr2017
 	-- http://edwardlib.org/zoo
 
 http://arxiv.org/abs/1612.01474 - Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles (DeepMind, non-bayesian)
@@ -593,6 +601,12 @@ http://openreview.net/forum?id=rJ8Je4clg - Learning to Play in a Day: Faster Dee
 
 http://arxiv.org/abs/1611.05397 - Reinforcement Learning with Unsupervised Auxiliary Tasks (UNREAL, evolution of A3C)
 	"This approach exploits the multithreading capabilities of standard CPUs. The idea is to execute many instances of our agent in parallel, but using a shared model. This provides a viable alternative to experience replay, since parallelisation also diversifies and decorrelates the data. Our asynchronous actor-critic algorithm, A3C, combines a deep Q-network with a deep policy network for selecting actions. It achieves state-of-the-art results, using a fraction of the training time of DQN and a fraction of the resource consumption of Gorila."
+	--
+	"Auxiliary tasks:
+	- pixel changes: learn a policy for maximally changing the pixels in a grid of cells overlaid over the images
+	- network features: learn a policy for maximally activating units in a specific hidden layer
+	- reward prediction: predict the next reward given some historical context
+	- value function replay: value function regression for the base agent with varying window for n-step returns"
 	-- https://youtube.com/watch?v=Uz-zGYrYEjA (demo)
 	-- https://github.com/dennybritz/deeplearning-papernotes/blob/b097e313dc59c956575fb1bf23b64fa8d1d84057/notes/rl-auxiliary-tasks.md
 http://arxiv.org/abs/1602.01783 - Asynchronous Methods for Deep Reinforcement Learning
@@ -733,6 +747,7 @@ http://arxiv.org/abs/1606.03476 - Generative Adversarial Imitation Learning
 	"Uses a GAN framework to discriminate between teacher and student experience and force the student to behave close to the teacher."
 http://openreview.net/forum?id=B16dGcqlx - Third Person Imitation Learning (Abbeel, Sutskever)
 	"The authors propose a new framework for learning a policy from third-person experience. This is different from standard imitation learning which assumes the same "viewpoint" for teacher and student. The authors build upon Generative Adversarial Imitation Learning, which uses a GAN framework to discriminate between teacher and student experience and force the student to behave close to the teacher. However, when using third-person experience from a different viewpoint the discriminator would simply learn to discriminate between viewpoints instead of behavior and the framework isn't easily applicable. The authors' solution is to add a second discriminator to maximize a domain confusion loss based on the same feature representation. The objective is to learn the same (viewpoint-independent) feature representation for both teacher and student experience while also learning to discriminate between teacher and student observations. In other words, the objective is to maximize domain confusion while minimizing class loss. In practice, this is another discriminator term in the GAN objective. The authors also found that they need to feed observations at time t+n (n=4 in experiments) to signal the direction of movement in the environment."
+	-- https://github.com/dennybritz/deeplearning-papernotes/blob/master/notes/third-person-imitation-learning.md
 http://arxiv.org/abs/1612.06699 - Unsupervised Perceptual Rewards for Imitation Learning (Levine)
 	"To our knowledge, these are the first results showing that complex robotic manipulation skills can be learned directly and without supervised labels from a video of a human performing the task."
 http://arxiv.org/abs/1605.06450 - Query-Efficient Imitation Learning for End-to-End Autonomous Driving (Cho)
@@ -761,6 +776,7 @@ http://arxiv.org/abs/1512.04455 - Memory-based Control with Recurrent Neural Net
 http://arxiv.org/abs/1611.00179 - Dual Learning for Machine Translation
 	"In the dual-learning mechanism, we use one agent to represent the model for the primal task and the other agent to represent the model for the dual task, then ask them to teach each other through a reinforcement learning process. Based on the feedback signals generated during this process (e.g., the languagemodel likelihood of the output of a model, and the reconstruction error of the original sentence after the primal and dual translations), we can iteratively update the two models until convergence (e.g., using the policy gradient methods)."
 	"The basic idea of dual learning is generally applicable: as long as two tasks are in dual form, we can apply the dual-learning mechanism to simultaneously learn both tasks from unlabeled data using reinforcement learning algorithms. Actually, many AI tasks are naturally in dual form, for example, speech recognition versus text to speech, image caption versus image generation, question answering versus question generation (e.g., Jeopardy!), search (matching queries to documents) versus keyword extraction (extracting keywords/queries for documents), so on and so forth."
+	-- https://github.com/dennybritz/deeplearning-papernotes/blob/master/notes/dual-learning-mt.md
 http://arxiv.org/abs/1511.08779 - Multiagent Cooperation and Competition with Deep Reinforcement Learning
 	-- https://youtube.com/playlist?list=PLfLv_F3r0TwyaZPe50OOUx8tRf0HwdR_u
 	-- https://github.com/NeuroCSUT/DeepMind-Atari-Deep-Q-Learner-2Player

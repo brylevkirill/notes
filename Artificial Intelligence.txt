@@ -580,9 +580,9 @@ semantic web    - https://dropbox.com/s/ono4n5yij0y1366/RDF.txt
 
 
 interesting papers (see below):
- * definitions and measures of intelligence
- * algorithmic information theory
- * intrinsic motivation
+  - definitions and measures of intelligence
+  - algorithmic information theory
+  - intrinsic motivation
 
 
 

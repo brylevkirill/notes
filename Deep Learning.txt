@@ -441,6 +441,21 @@ projects
     - potentially intractable inference leading to expensive computation or long simulation times
 
 
+  advantages of bayesian neural network:
+
+  - uncertainty in predictions:  Bayesian neural network informs about the uncertainty in its predictions. Uncertainty is an underappreciated concept in machine learning as it's clearly important for real-world applications. But it could also be useful in training. For example, one could train the model specifically on samples it is most uncertain about.
+
+  - uncertainty in representations:  One also gets uncertainty estimates of weights which could inform about the stability of the learned representations of the network.
+
+  - regularization with priors:  Weights are often L2-regularized to avoid overfitting, this very naturally becomes a Gaussian prior for the weight coefficients. One could, however, imagine all kinds of other priors, like spike-and-slab to enforce sparsity (this would be more like using the L1-norm).
+
+  - transfer learning with informed priors:  If one wanted to train a network on a new object recognition data set, he could bootstrap the learning by placing informed priors centered around weights retrieved from other pre-trained networks, like GoogLeNet.
+
+  - hierarchical neural networks:  A very powerful approach is hierarchical modeling that allows pooling of things that were learned on sub-groups to the overall population. We could train individual neural nets to specialize on sub-groups while still being informed about representations of the overall population. For example, imagine a network trained to classify car models from pictures of cars. One could train a hierarchical neural network where a sub-neural network is trained to tell apart models from only a single manufacturer. The intuition being that all cars from a certain manufactures share certain similarities so it would make sense to train individual networks that specialize on brands. However, due to the individual networks being connected at a higher layer, they would still share information with the other specialized sub-networks about features that are useful to all brands. Interestingly, different layers of the network could be informed by various levels of the hierarchy -- e.g. early layers that extract visual lines could be identical in all sub-networks while the higher-order representations would be different. The hierarchical model would learn all that from the data.
+
+  - other hybrid architectures:  We can more freely build all kinds of neural networks. For example, Bayesian non-parametrics could be used to flexibly adjust the size and shape of the hidden layers to optimally scale the network architecture to the problem at hand during training. Currently, this requires costly hyper-parameter optimization and a lot of tribal knowledge.
+
+
   http://deeplearningbook.org/contents/graphical_models.html
 
   Shakir Mohamed - "Bayesian Reasoning and Deep Learning in Agent-based Systems" - https://youtube.com/watch?v=AggqBRdz6CQ
@@ -2347,7 +2362,7 @@ Kingma, Welling - "Auto-Encoding Variational Bayes" [http://arxiv.org/abs/1312.6
 	-- https://jmetzen.github.io/2015-11-27/vae.html
 	-- https://github.com/casperkaae/parmesan
 	-- https://github.com/arahuja/generative-tf
-	-- https://github.com/blei-lab/edward/blob/master/examples/convolutional_vae.py
+	-- https://github.com/blei-lab/edward/blob/master/examples/vae_convolutional.py
 	-- https://github.com/Kaixhin/Autoencoders/blob/master/models/VAE.lua
 
 Rezende, Mohamed, Wiestra - "Stochastic Backpropagation and Approximate Inference in Deep Generative Models" [http://arxiv.org/abs/1401.4082]
