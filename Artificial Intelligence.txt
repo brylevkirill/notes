@@ -24,7 +24,7 @@ overviews/publications for research areas
 	deep learning    - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt + https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
 	reinforcement learning    - https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt + https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va
 	bayesian inference and learning    - https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt + https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
-	probabilistic programming    - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt + https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
+	probabilistic programming    - https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md + https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
 
 overviews/publications for applications
 	natural language processing    - https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt + https://dropbox.com/sh/rb7u9nwb16bg5xq/AADV3d_bS6-mqFW0_jaec1sZa
@@ -208,7 +208,7 @@ Gary Marcus
 [knowledge representation]
 
   https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt
-  https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt
+  https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md
 
 
   "Knowledge is in our minds and language is just orienting us within our common experiences."
@@ -573,7 +573,7 @@ machine learning    - https://dropbox.com/s/v7kiore7w9xez5b/Machine%20Learning.t
 deep learning    - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt
 reinforcement learning    - https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt
 bayesian inference and learning    - https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt
-probabilistic programming    - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt
+probabilistic programming    - https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md
 semantic web    - https://dropbox.com/s/ono4n5yij0y1366/RDF.txt
 
 

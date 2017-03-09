@@ -572,7 +572,7 @@ selected papers and books -
 
 [knowledge representation - probabilistic program]
 
-  https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt
+  https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md
 
 
   https://web.stanford.edu/~ngoodman/papers/ConceptsChapter-final.pdf

@@ -23,7 +23,7 @@ overviews and selected papers/books
 	deep learning    - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt + https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
 	reinforcement learning    - https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt + https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va
 	bayesian inference and learning    - https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt + https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
-	probabilistic programming    - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt + https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
+	probabilistic programming    - https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md + https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
 
 
 
@@ -570,7 +570,7 @@ industry practices
 
   Deep Learning - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt
   Knowledge Representation - https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt
-  Probabilistic Programming - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt
+  Probabilistic Programming - https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md
 
 
 
@@ -612,7 +612,7 @@ to be correlated.
 
   http://languagengine.co/blog/symbolic-machine-learning/
 
-  Probabilistic Programming - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt
+  Probabilistic Programming - https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md
 
 
   selected papers - https://dropbox.com/sh/vrr1gs798zy02n1/AACj7hlXOiRt1nXltXVC-2Wca
@@ -754,7 +754,7 @@ selected papers and books on machine learning - https://dropbox.com/sh/kpd5tvfnc
 
 selected papers on deep learning - https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt + https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
 selected papers on bayesian inference and learning - https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt + https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
-selected papers on probabilistic programming - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt + https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
+selected papers on probabilistic programming - https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md + https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
 selected papers on reinforcement learning - https://dropbox.com/s/dexryjnmxujdynd/Reinforcement%20Learning.txt + https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va
 
 

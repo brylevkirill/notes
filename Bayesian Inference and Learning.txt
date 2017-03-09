@@ -146,7 +146,7 @@ selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91I
   Zoubin Ghahramani - "Should all Machine Learning be Bayesian? Should all Bayesian models be non-parametric?" - http://videolectures.net/bark08_ghahramani_samlbb/
 
 
-  probabilistic programming - https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt
+  probabilistic programming - https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md
 
 
 
@@ -778,7 +778,7 @@ interesting papers (see https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.tx
  * variational autoencoder
  * bayesian inference and learning
 
-interesting papers (see https://dropbox.com/s/i3w71bntgb7hfxe/Probabilistic%20Programming.txt):
+interesting papers (see https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md):
  * inference
  * applications
 
