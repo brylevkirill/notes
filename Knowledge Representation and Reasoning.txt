@@ -681,7 +681,7 @@ selected papers and books -
 
 
 	see section "[knowledge representation - distributed representations]"
-	see section "[architectures - compute and memory]" of https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt
+	see section "[architectures - compute and memory]" of https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md
 
 
 	- How to decide what to write and what not to write in the memory?

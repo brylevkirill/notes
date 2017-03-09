@@ -774,7 +774,7 @@ selected papers - https://dropbox.com/sh/txqk44kqgn1f9t4/AAD3DCEDXjPxGPFOa0SJYJw
 recent interesting papers - https://github.com/brylevkirill/notes/blob/master/recent%20papers.txt
 
 
-interesting papers (see https://dropbox.com/s/pai6e1oo7ygzjao/Deep%20Learning.txt):
+interesting papers (see https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md):
  * variational autoencoder
  * bayesian inference and learning
 
