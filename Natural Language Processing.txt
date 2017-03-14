@@ -56,7 +56,7 @@ Ray Kurzweil: "We have a lot of language data [at Google]... and we don't even k
 [study]
 
 course by Chris Manning and Dan Jurafsky - http://youtube.com/playlist?list=PL6397E4B26D00A269 + https://web.stanford.edu/~jurafsky/NLPCourseraSlides.html
-course by Richard Socher - http://cs224d.stanford.edu
+course by Richard Socher - http://cs224d.stanford.edu + https://github.com/stanfordnlp/cs224n-winter17-notes
 course by Oxford - https://github.com/oxford-cs-deepnlp-2017/lectures
 course by Michael Collins - https://coursera.org/course/nlangp + https://youtube.com/user/afigfigueira/playlists?shelf_id=5&view=50
 course by Jordan Boyd-Graber - http://youtube.com/playlist?list=PLegWUnz91WfuPebLI97-WueAP90JO-15i
@@ -131,16 +131,9 @@ textbook by Michael Collins - https://dropbox.com/sh/e0unkrb6xoqyjmg/AAANfPi9K9f
 
 [semantics]
 
-  Percy Liang - "Natural Language Understanding: Foundations and State-of-the-Art" - http://videolectures.net/icml2015_liang_language_understanding/ + http://icml.cc/2015/tutorials/icml2015-nlu-tutorial.pdf
+  Percy Liang - "Natural Language Understanding: Foundations and State-of-the-Art" - https://youtube.com/watch?v=mhHfnhh-pB4
 
 	"Building systems that can understand human language - being able to answer questions, follow instructions, carry on dialogues - has been a long-standing challenge since the early days of AI. Due to recent advances in machine learning, there is again renewed interest in taking on this formidable task. A major question is how one represents and learns the semantics (meaning) of natural language, to which there are only partial answers. The goal of this tutorial is (i) to describe the linguistic and statistical challenges that any system must address; and (ii) to describe the types of cutting edge approaches and the remaining open problems. Topics include distributional semantics (e.g., word vectors), frame semantics (e.g., semantic role labeling), model-theoretic semantics (e.g., semantic parsing), the role of context, grounding, neural networks, latent variables, and inference. The hope is that this unified presentation will clarify the landscape, and show that this is an exciting time for the machine learning community to engage in the problems in natural language understanding."
-
-
-  Liang, Potts - "Bringing Machine Learning and Compositional Semantics Together" - http://web.stanford.edu/~cgpotts/manuscripts/liang-potts-semantics.pdf
-
-	"Computational semantics often seems like a field divided by methodologies and near-term goals. Logical approaches rely on techniques from proof theory and model-theoretic semantics, they have strong ties to linguistic semantics, and they are concerned primarily with inference, ambiguity, vagueness, and compositional interpretation of full syntactic parses. In contrast, statistical approaches derive their tools from algorithms and optimization, and they tend to focus on word meanings and broad notions of semantic content. The two types of approaches share the long-term vision of achieving deep natural language understanding, but their day-to-day differences can make them seem unrelated and even incompatible. Howerver, the distinction between logical and statistical approaches is rapidly disappearing, with the development of models that can learn the conventional aspects of natural language meaning from corpora and databases. These models interpret rich linguistic representations in a compositional fashion, and they offer novel perspectives on foundational issues like ambiguity, inference, and grounding. The fundamental question for these approaches is what kinds of data and models are needed for effective learning."
-
-	"Analytical approaches to computational linguistics could be beneficially replaced by machine learning from large corpora exhibiting the linguistic behaviors of interest. However, when people understand what they are told or what they read, the output of the process is a hidden mental state change, only accessible partially from whatever observable actions are triggered by the change: the desired input-output behavior is not available in the wild, even accepting the dubious assumption that the output can be abstracted away from the mental state where it came about. The standard escape route of enlisting linguists to create annotated training data is hard enough for parsing, and it quickly falls apart for semantics, even for seemingly “constrained” tasks like coreference. Nevertheless, meaning is all around us, in how people ask and respond to search queries, in how they write text so that it can be understood by others, in how they annotate their text with hyperlinks, and in many other common behaviors that are to some extent observable in the Web. We also have a growing body of structured text organized so that computers can use it meaningfully, such as WordNet and Freebase."
 
 
   - formal semantics

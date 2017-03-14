@@ -97,7 +97,7 @@ selected papers and books -
 
   https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt
 
-  "Natural Language Understanding: Foundations and State-of-the-Art" by Percy Liang - http://videolectures.net/icml2015_liang_language_understanding/ + http://icml.cc/2015/tutorials/icml2015-nlu-tutorial.pd
+  "Natural Language Understanding: Foundations and State-of-the-Art" by Percy Liang - http://youtube.com/watch?v=mhHfnhh-pB4
 
   "Natural Language Understanding with Distributed Representation" by Kyunghyun Cho - http://arxiv.org/abs/1511.07916
 

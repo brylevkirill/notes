@@ -12,7 +12,7 @@
   * program induction
   * reinforcement learning
     - algorithms
-    - exploration
+    - exploration and intrinsic motivation
     - abstractions for states and actions
     - planning
     - transfer
@@ -136,6 +136,9 @@ http://arxiv.org/abs/1611.05763 - Learning to Reinforcement Learn (DeepMind)
 	-- https://hackernoon.com/learning-policies-for-learning-policies-meta-reinforcement-learning-rl²-in-tensorflow-b15b592a2ddf (Juliani)
 	-- https://github.com/awjuliani/Meta-RL
 
+https://cs.stanford.edu/~woodward/papers/active_one_shot_learning_2016.pdf - Active One-shot Learning
+	-- https://youtube.com/watch?v=CzQSQ_0Z-QU (Woodward)
+
 http://arxiv.org/abs/1603.05106 - One-Shot Generalization in Deep Generative Models
 	"move over DRAW: deepmind's latest has spatial-transform attention and 1-shot generalization"
 	-- http://youtube.com/watch?v=TpmoQ_j3Jv4 (demo)
@@ -211,9 +214,6 @@ http://arxiv.org/abs/1611.04273 - On the Quantitative Analysis of Decoder-based 
 
 http://arxiv.org/abs/1511.05101 - How (not) to train your generative model: schedule sampling, likelihood, adversary (Huszar)
 	-- http://inference.vc/how-to-train-your-generative-models-why-generative-adversarial-networks-work-so-well-2/
-
-http://arxiv.org/abs/1610.08123 - Socratic Learning: Empowering the Generative Model (Re)  # learning with minimal supervision
-	-- https://youtube.com/watch?v=0gRNochbK9c
 
 
 
@@ -375,9 +375,6 @@ http://arxiv.org/abs/1602.05473 - Auxiliary Deep Generative Models
 http://arxiv.org/abs/1603.06277 - Composing graphical models with neural networks for structured representations and fast inference
 	-- https://youtube.com/watch?v=btr1poCYIzw
 	-- http://www.cs.toronto.edu/~duvenaud/courses/csc2541/slides/svae-slides.pdf
-http://arxiv.org/pdf/1702.02390 - A Hybrid Convolutional Variational Autoencoder for Text Generation
-	-- https://github.com/stas-semeniuta/textvae
-http://arxiv.org/abs/1702.08139 - Improved Variational Autoencoders for Text Modeling using Dilated Convolutions (Salakhutdinov)
 
 http://arxiv.org/abs/1610.05683 - Rejection Sampling Variational Inference
 http://arxiv.org/abs/1610.02287 - The Generalized Reparameterization Gradient
@@ -388,6 +385,11 @@ http://arxiv.org/abs/1511.06499 - The Variational Gaussian Process
 	-- http://videolectures.net/iclr2016_tran_variational_gaussian/ (Tran)
 	-- http://github.com/blei-lab/edward
 http://arxiv.org/abs/1605.06197 - Stick-Breaking Variational Autoencoders  # latent representation with stochastic dimensionality
+
+http://arxiv.org/pdf/1702.02390 - A Hybrid Convolutional Variational Autoencoder for Text Generation
+	-- https://github.com/stas-semeniuta/textvae
+http://arxiv.org/abs/1702.08139 - Improved Variational Autoencoders for Text Modeling using Dilated Convolutions (Salakhutdinov)
+http://arxiv.org/abs/1703.00955 - Controllable Text Generation (Salakhutdinov)
 
 
 
@@ -641,8 +643,10 @@ http://arxiv.org/abs/1512.07679 - Reinforcement Learning in Large Discrete Actio
 
 
 
-[reinforcement learning - exploration]
+[reinforcement learning - exploration and intrinsic motivation]
 
+http://arxiv.org/abs/1703.01310 - Count-Based Exploration with Neural Density Models (DeepMind)
+	-- http://youtube.com/watch?v=qSfd27AgcEk (Bellemare)
 https://openreview.net/forum?id=Bk8aOm9xl - Surprise-Based Intrinsic Motivation for Deep Reinforcement Learning
 	"Authors present two tractable approximations to their framework - one which ignores the stochasticity of the true environmental dynamics, and one which approximates the rate of information gain (somewhat similar to Schmidhuber's formal theory of creativity, fun and intrinsic motivation)."
 	"Stadie et al. learn deterministic dynamics models by minimizing Euclidean loss - whereas in our work, we learn stochastic dynamics with cross entropy loss - and use L2 prediction errors for intrinsic motivation."
@@ -660,6 +664,8 @@ http://arxiv.org/abs/1609.04994 - Exploration Potential
 
 
 [reinforcement learning - abstractions for states and actions]
+
+http://arxiv.org/abs/1703.01161 - FeUdal Networks for Hierarchical Reinforcement Learning (Silver)
 
 http://openreview.net/forum?id=B1oK8aoxe - Stochastic Neural Networks for Hierarchical Reinforcement Learning (Abbeel)
 	-- https://youtube.com/playlist?list=PLEbdzN4PXRGVB8NsPffxsBSOCcWFBMQx3 (demo)
@@ -797,14 +803,9 @@ http://arxiv.org/abs/1605.07736 - Learning Multiagent Communication with Backpro
 
 http://arxiv.org/abs/1701.07274 - Deep Reinforcement Learning: An Overview
 http://arxiv.org/abs/1701.01724 - DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker (Bowling)
-	"In the past, perfect information games (chess, checkers, go) have been easier algorithmically than imperfect information games like poker. Powerful techniques like Alpha-Beta search, heuristic functions, depth-limited lookahead & Monte Carlo Tree Search work with perfect information games. They allow an AI to ignore the past and focus its computation on the tiny, immediate subgame most relevant for choosing actions. Until now, these techniques didn't really work in imperfect info games like poker, due to uncertainty about what each player knows. There is no single state to search from, but a set of states for each player. Past actions reveal info about what cards they hold. In imperfect info games like poker, local search hasn’t performed well. Had to solve the whole game at once, not as small fragments. But poker games are huge, and except for smallest versions, can't be solved exactly. Dominant technique was to solve a simplified game. This was called Abstraction-Solving-Translation. Simplify a game, solve it, use the simplified strategy in the real game. That simplification introduces mistakes. In some games, this still worked well enough to beat pros. AST didn't work well in No-Limit poker. Humans exploited simplified betting, and in huge pots, fine details of cards matter. This is the DeepStack breakthrough: it reintroduces powerful local search techniques to the imperfect info setting. No abstraction! It only considers a small local subgame to pick actions, given the "public state" and summary info of earlier actions in the hand. Early in the game, Deep Learning supplies a heuristic function to avoid searching to the end of the game. On the turn & river, it solves from the current decision until the end of the game and re-solves after every opponent action. On the preflop & flop, it solves to the end of the round then consults a deep neural net for value estimate of playing the turn/river. This NN is trained from randomly-generated hands (no human data needed) and must return value of every hand for each player. Deep Stack doesn't abstract cards or have to translate opponents bets. It always gets these details exactly right. This means there are no easy exploits, & we developed a new exploitability measurement program, Local Best Response, to show this. Also lets DeepStack play with any stacks/blinds. Can play freezeouts, cash games, etc. Earlier programs were specific to 1 stack size!"
-	"Compared to Libratus, on the turn/river both programs are pretty similar: both use the same "continual resolving" trick (and counterfactual regret minimization). Biggest difference is preflop/flop. DeepStack uses continual resolving there too, so it can't get tricked by bet size attacks. Libratus used the old precomputed-strategy method for preflop/flop. It had holes they had to patch overnight, as pros found them. DeepStack can play any stack sizes, so can do freezeouts, cash games, etc. Libratus can only do 200bb stacks. Last big difference is resources. Libratus runs on a huge supercomputer, Cepheus only needs a laptop with a good GPU."
-	"DeepStack does not compute and store a complete strategy prior to play. DeepStack computes a strategy based on the current state of the game for only the remainder of the hand, not maintaining one for the full game, which leads to lower overall exploitability."
-	"Despite using ideas from abstraction, DeepStack is fundamentally different from abstraction-based approaches, which compute and store a strategy prior to play. While DeepStack restricts the number of actions in its lookahead trees, it has no need for explicit abstraction as each re-solve starts from the actual public state, meaning DeepStack always perfectly understands the current situation."
-	"DeepStack is the first theoretically sound application of heuristic search methods—which have been famously successful in games like checkers, chess, and Go - to imperfect information games."
-	"At a conceptual level, DeepStack’s continual re-solving, “intuitive” local search and sparse lookahead trees describe heuristic search, which is responsible for many AI successes in perfect information games. Until DeepStack, no theoretically sound application of heuristic search was known in imperfect information games."
-	"During re-solving, DeepStack doesn’t need to reason about the entire remainder of the game because it substitutes computation beyond a certain depth with a fast approximate estimate, DeepStack’s "intuition" - a gut feeling of the value of holding any possible private cards in any possible poker situation. Finally, DeepStack’s intuition, much like human intuition, needs to be trained. We train it with deep learning using examples generated from random poker situations."
+	-- http://science.sciencemag.org/content/early/2017/03/01/science.aam6960
 	-- http://deepstack.ai
+	-- http://twitter.com/DeepStackAI
 http://arxiv.org/abs/1603.07954 - Improving Information Extraction by Acquiring External Evidence with Reinforcement Learning (Barzilay)
 	-- https://github.com/karthikncode/DeepRL-InformationExtraction
 http://arxiv.org/abs/1611.09940 - Neural Combinatorial Optimization with Reinforcement Learning (Google Brain)

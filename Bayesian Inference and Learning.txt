@@ -1,4 +1,4 @@
-  Probabilistic/statistical machine learning frames models as distributions over data and latent variables, allowing models to address a broad array of downstream tasks. The underlying statistical methodology of latent variable models is typically Bayesian. A central problem involves modeling complex data-sets using highly flexible families of probability distributions in which learning, sampling, inference, and evaluation are still analytically or computationally tractable.
+Probabilistic/statistical machine learning frames models as distributions over data and latent variables, allowing models to address a broad array of downstream tasks. The underlying statistical methodology of latent variable models is typically Bayesian. A central problem involves modeling complex data-sets using highly flexible families of probability distributions in which learning, sampling, inference, and evaluation are still analytically or computationally tractable.
 
 
   * overview

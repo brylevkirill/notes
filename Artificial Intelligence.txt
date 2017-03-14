@@ -1,4 +1,5 @@
-Intelligence is information processing to take decisions which save energy in pursuit of given task.
+Intelligence is information processing necessary to achieve goals with limited resources.
+Intelligence measures an agent's ability to achieve goals in a wide range of environments.
 
 
   * overview
@@ -20,7 +21,7 @@ Intelligence is information processing to take decisions which save energy in pu
 overviews/publications for research areas
 	AI and Artificial General Intelligence    - https://dropbox.com/sh/gmo2hort07gsydj/AACK0XoOOLsrzCyYC1eLwyOwa
 	knowledge representation and reasoning    - https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt + https://dropbox.com/sh/9ytscy4pwegbvhb/AACtB7tQGj-vigo0yExfciu0a
-	machine learning    - https://dropbox.com/s/v7kiore7w9xez5b/Machine%20Learning.txt + https://dropbox.com/sh/kpd5tvfnc29lstj/AAD3oGVCUdkoMS56_2g8Oj7_a
+	machine learning    - https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md + https://dropbox.com/sh/kpd5tvfnc29lstj/AAD3oGVCUdkoMS56_2g8Oj7_a
 	deep learning    - https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md + https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
 	reinforcement learning    - https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt + https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va
 	bayesian inference and learning    - https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt + https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
@@ -231,7 +232,7 @@ Gary Marcus
 
   https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt
   https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt
-  https://dropbox.com/s/v7kiore7w9xez5b/Machine%20Learning.txt
+  https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md
 
 
   approaches:
@@ -505,6 +506,12 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
 	tutorial by Tom Everitt - https://youtube.com/watch?v=BP7vhBaBDyk
 
+	overview by Alexey Potapov (in russian) -
+		http://geektimes.ru/post/148002/
+		http://geektimes.ru/post/150056/
+		http://geektimes.ru/post/150902/
+		http://geektimes.ru/post/151838/
+
 
 	AIXI = learning + prediction + planning + acting
 	algorithmic probability theory extended recently to the case of sequential decision theory
@@ -569,7 +576,7 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 selected papers - https://dropbox.com/sh/gmo2hort07gsydj/AACK0XoOOLsrzCyYC1eLwyOwa
 
 knowledge representation and reasoning    - https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt
-machine learning    - https://dropbox.com/s/v7kiore7w9xez5b/Machine%20Learning.txt
+machine learning    - https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md
 deep learning    - https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md
 reinforcement learning    - https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt
 bayesian inference and learning    - https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt
@@ -746,7 +753,7 @@ Schmidhuber - "Goedel Machines: Self-Referential Universal Problem Solvers Makin
 	"The initial software p(1) of our Goedel machine runs an initial, typically sub-optimal problem solver, e.g., one of Hutter’s approaches which have at least an optimal order of complexity, or some less general method. Simultaneously, it runs an O()-optimal initial proof searcher using an online variant of Universal Search to test proof techniques, which are programs able to compute proofs concerning the system’s own future performance, based on an axiomatic system A encoded in p(1), describing a formal utility function u, the hardware and p(1) itself. If there is no provably good, globally optimal way of rewriting p(1) at all, then humans will not find one either. But if there is one, then p(1) itself can find and exploit it. This approach yields the first class of theoretically sound, fully self-referential, optimally efficient, general problem solvers. After the theoretical discussion, one practical question remains: to build a particular, especially practical Goedel machine with small initial constant overhead, which generally useful theorems should one add as axioms to A (as initial bias) such that the initial searcher does not have to prove them from scratch?"
 
 
-# see also "[interesting papers - exploration]" section of https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt 
+# see also "[interesting papers - exploration and intrinsic motivation]" section of https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt 
 
 
 

@@ -14,7 +14,7 @@
   * frameworks
   * interesting papers
     - applications
-    - exploration
+    - exploration and intrinsic motivation
     - abstractions for states and actions
     - value-based methods
     - policy-based methods
@@ -112,7 +112,13 @@
 	"Giraffe: Using Deep Reinforcement Learning to Play Chess" - http://arxiv.org/abs/1509.01549
 
   - Poker
-	"DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker" - http://arxiv.org/abs/1701.01724
+	DeepStack
+		"DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker" - http://arxiv.org/abs/1701.01724
+		http://science.sciencemag.org/content/early/2017/03/01/science.aam6960
+
+		http://deepstack.ai
+		http://twitter.com/DeepStackAI
+
 	"Deep Reinforcement Learning from Self-Play in Imperfect-Information Games" - http://arxiv.org/abs/1603.01121
 	"Poker-CNN: A Pattern Learning Strategy for Making Draws and Bets in Poker Games Using Convolutional Networks" - http://colinraffel.com/publications/aaai2016poker.pdf
 
@@ -211,9 +217,8 @@
   Csaba Szepesvari - "Algorithms for Reinforcement Learning" - http://www.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf
 
 
+  course with exercises and solutions - https://github.com/yandexdataschool/Practical_RL/
   exercises with solutions - http://wildml.com/2016/10/learning-reinforcement-learning/
-
-  collection of resources - https://github.com/aikorea/awesome-rl
 
 
 
@@ -885,7 +890,7 @@
   selected papers - https://dropbox.com/sh/saxdz2c9ljr4ip2/AADS7U3FwHedmDe5whaRKqHPa
 
 
-  also see section "[interesting papers - exploration]"
+  also see section "[interesting papers - exploration and intrinsic motivation]"
 
 
 
@@ -959,7 +964,7 @@ recent interesting papers - https://github.com/brylevkirill/notes/blob/master/re
 
 interesting papers (see below):
   - applications
-  - exploration
+  - exploration and intrinsic motivation
   - abstractions for states and actions
   - value-based methods
   - policy-based methods
@@ -1049,6 +1054,18 @@ Yakovenko, Cao, Raffel, Fan - "Poker-CNN: A Pattern Learning Strategy for Making
 Moravcik, Schmid, Burch, Lisy, Morrill, Bard, Davis, Waugh, Johanson, Bowling - "DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker" [http://arxiv.org/abs/1701.01724]
 	"Artificial intelligence has seen a number of breakthroughs in recent years, with games often serving as significant milestones. A common feature of games with these successes is that they involve information symmetry among the players, where all players have identical information. This property of perfect information, though, is far more common in games than in real-world problems. Poker is the quintessential game of imperfect information, and it has been a longstanding challenge problem in artificial intelligence. In this paper we introduce DeepStack, a new algorithm for imperfect information settings such as poker. It combines recursive reasoning to handle information asymmetry, decomposition to focus computation on the relevant decision, and a form of intuition about arbitrary poker situations that is automatically learned from selfplay games using deep learning. In a study involving dozens of participants and 44,000 hands of poker, DeepStack becomes the first computer program to beat professional poker players in heads-up no-limit Texas hold’em. Furthermore, we show this approach dramatically reduces worst-case exploitability compared to the abstraction paradigm that has been favored for over a decade."
 	"DeepStack is the first computer program to defeat professional poker players at heads-up nolimit Texas Hold’em, an imperfect information game with 10160 decision points. Notably it achieves this goal with almost no domain knowledge or training from expert human games. The implications go beyond just being a significant milestone for artificial intelligence. DeepStack is a paradigmatic shift in approximating solutions to large, sequential imperfect information games. Abstraction and offline computation of complete strategies has been the dominant approach for almost 20 years. DeepStack allows computation to be focused on specific situations that arise when making decisions and the use of automatically trained value functions. These are two of the core principles that have powered successes in perfect information games, albeit conceptually simpler to implement in those settings. As a result, for the first time the gap between the largest perfect and imperfect information games to have been mastered is mostly closed. As “real life consists of bluffing... deception... asking yourself what is the other man going to think”, DeepStack also has implications for seeing powerful AI applied more in settings that do not fit the perfect information assumption. The old paradigm for handling imperfect information has shown promise in applications like defending strategic resources and robust decision making as needed for medical treatment recommendations. The new paradigm will hopefully open up many more possibilities."
+	--
+	"In the past, perfect information games (chess, checkers, go) have been easier algorithmically than imperfect information games like poker. Powerful techniques like Alpha-Beta search, heuristic functions, depth-limited lookahead & Monte Carlo Tree Search work with perfect information games. They allow an AI to ignore the past and focus its computation on the tiny, immediate subgame most relevant for choosing actions. Until now, these techniques didn't really work in imperfect info games like poker, due to uncertainty about what each player knows. There is no single state to search from, but a set of states for each player. Past actions reveal info about what cards they hold. In imperfect info games like poker, local search hasn’t performed well. Had to solve the whole game at once, not as small fragments. But poker games are huge, and except for smallest versions, can't be solved exactly. Dominant technique was to solve a simplified game. This was called Abstraction-Solving-Translation. Simplify a game, solve it, use the simplified strategy in the real game. That simplification introduces mistakes. In some games, this still worked well enough to beat pros. AST didn't work well in No-Limit poker. Humans exploited simplified betting, and in huge pots, fine details of cards matter. This is the DeepStack breakthrough: it reintroduces powerful local search techniques to the imperfect info setting. No abstraction! It only considers a small local subgame to pick actions, given the "public state" and summary info of earlier actions in the hand. Early in the game, Deep Learning supplies a heuristic function to avoid searching to the end of the game. On the turn & river, it solves from the current decision until the end of the game and re-solves after every opponent action. On the preflop & flop, it solves to the end of the round then consults a deep neural net for value estimate of playing the turn/river. This NN is trained from randomly-generated hands (no human data needed) and must return value of every hand for each player. Deep Stack doesn't abstract cards or have to translate opponents bets. It always gets these details exactly right. This means there are no easy exploits, & we developed a new exploitability measurement program, Local Best Response, to show this. Also lets DeepStack play with any stacks/blinds. Can play freezeouts, cash games, etc. Earlier programs were specific to 1 stack size!"
+	"Compared to Libratus, on the turn/river both programs are pretty similar: both use the same "continual resolving" trick (and counterfactual regret minimization). Biggest difference is preflop/flop. DeepStack uses continual resolving there too, so it can't get tricked by bet size attacks. Libratus used the old precomputed-strategy method for preflop/flop. It had holes they had to patch overnight, as pros found them. DeepStack can play any stack sizes, so can do freezeouts, cash games, etc. Libratus can only do 200bb stacks. Last big difference is resources. Libratus runs on a huge supercomputer, Cepheus only needs a laptop with a good GPU."
+	"DeepStack does not compute and store a complete strategy prior to play. DeepStack computes a strategy based on the current state of the game for only the remainder of the hand, not maintaining one for the full game, which leads to lower overall exploitability."
+	"Despite using ideas from abstraction, DeepStack is fundamentally different from abstraction-based approaches, which compute and store a strategy prior to play. While DeepStack restricts the number of actions in its lookahead trees, it has no need for explicit abstraction as each re-solve starts from the actual public state, meaning DeepStack always perfectly understands the current situation."
+	"DeepStack is the first theoretically sound application of heuristic search methods—which have been famously successful in games like checkers, chess, and Go - to imperfect information games."
+	"At a conceptual level, DeepStack’s continual re-solving, “intuitive” local search and sparse lookahead trees describe heuristic search, which is responsible for many AI successes in perfect information games. Until DeepStack, no theoretically sound application of heuristic search was known in imperfect information games."
+	"During re-solving, DeepStack doesn’t need to reason about the entire remainder of the game because it substitutes computation beyond a certain depth with a fast approximate estimate, DeepStack’s "intuition" - a gut feeling of the value of holding any possible private cards in any possible poker situation. Finally, DeepStack’s intuition, much like human intuition, needs to be trained. We train it with deep learning using examples generated from random poker situations."
+	"Part of DeepStack's development is also a technique designed to find flaws in poker strategies. Local Best Response (LBR) is one of the cool new algorithms in Science paper. LBR looks directly at the strategy, like what a human could get from playing millions of hands to know its range. Older programs get beat by LBR for 4x more than folding every hand! DeepStack has no holes exposed by the LBR algorithm."
+	-- http://science.sciencemag.org/content/early/2017/03/01/science.aam6960
+	-- http://deepstack.ai
+	-- http://twitter.com/DeepStackAI
 
 Yeh, Lin - "Automatic Bridge Bidding Using Deep Reinforcement Learning" [http://arxiv.org/abs/1607.03290]
 	"Bridge is among the zero-sum games for which artificial intelligence has not yet outperformed expert human players. The main difficulty lies in the bidding phase of bridge, which requires cooperative decision making under partial information. Existing artificial intelligence systems for bridge bidding rely on and are thus restricted by human-designed bidding systems or features. In this work, we propose a pioneering bridge bidding system without the aid of human domain knowledge. The system is based on a novel deep reinforcement learning model, which extracts sophisticated features and learns to bid automatically based on raw card data. The model includes an upper-confidence-bound algorithm and additional techniques to achieve a balance between exploration and exploitation. Our experiments validate the promising performance of our proposed model. In particular, the model advances from having no knowledge about bidding to achieving superior performance when compared with a champion-winning computer bridge program that implements a human-designed bidding system. To the best of our knowledge, our proposed model is the first to tackle automatic bridge bidding from raw data without additional human knowledge."
@@ -1104,7 +1121,7 @@ Xia, He, Qin, Wang, Yu, Liu, Ma - "Dual Learning for Machine Translation" [https
 
 
 
-[interesting papers - exploration]
+[interesting papers - exploration and intrinsic motivation]
 
 Schmidhuber - "Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes" [http://arxiv.org/abs/0812.4360]
 	"I argue that data becomes temporarily interesting by itself to some self-improving, but computationally limited, subjective observer once he learns to predict or compress the data in a better way, thus making it subjectively simpler and more beautiful. Curiosity is the desire to create or discover more non-random, non-arbitrary, regular data that is novel and surprising not in the traditional sense of Boltzmann and Shannon but in the sense that it allows for compression progress because its regularity was not yet known. This drive maximizes interestingness, the first derivative of subjective beauty or compressibility, that is, the steepness of the learning curve. It motivates exploring infants, pure mathematicians, composers, artists, dancers, comedians, yourself, and artificial systems."

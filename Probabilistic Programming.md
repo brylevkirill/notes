@@ -1,5 +1,5 @@
-  Probabilistic programming is a mechanism for compactly and compositionally representing a large set of richly expressive generative models as well as performing general-purpose automatic algorithms to do inference over variables in such models.  
-  Higher-order probabilistic programming languages open up possibility of doing inference over generative models themselves. The goal is to find an efficient robust way to automatically produce and tune models based on training data and knowledge.
+Probabilistic programming is a mechanism for compactly and compositionally representing a large set of richly expressive generative models as well as performing general-purpose automatic algorithms to do inference over variables in such models.  
+Higher-order probabilistic programming languages open up possibility of doing inference over generative models themselves. The goal is to find an efficient robust way to automatically produce and tune models based on training data and knowledge.  
 
 
   * [introduction](#introduction)
