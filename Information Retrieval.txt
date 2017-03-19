@@ -140,7 +140,7 @@ IR seminars @ Yandex
   - query graph matching
   - query semantic parsing
 
-  see sections "[question answering over knowledge graphs]" and "[question answering over texts (machine reading)]" - https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt
+  see sections "[question answering over knowledge graphs]" and "[question answering over texts]" of https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md
 
 
 
@@ -221,7 +221,7 @@ interesting papers (see below):
   - ranking
   - recommendations
 
-interesting papers (see https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt):
+interesting papers (see https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md):
   - question answering over knowledge bases
   - question answering over texts (machine reading)
   - information extraction and integration

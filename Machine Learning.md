@@ -16,12 +16,10 @@ Anywhere there is a function y = f(x), where f(x) has some parameters used to ma
     - [systems](#interesting-papers---systems)
 
 
-overviews and selected papers/books:  
-  machine learning    - https://dropbox.com/sh/kpd5tvfnc29lstj/AAD3oGVCUdkoMS56_2g8Oj7_a  
-  deep learning    - https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md + https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza  
-  reinforcement learning    - https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt + https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va  
-  bayesian inference and learning    - https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt + https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa  
-  probabilistic programming    - https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md + https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca  
+  [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
+  [reinforcement learning](https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt)  
+  [bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)  
+  [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
 
 
 the most impressive accomplishments (in russian) - https://dropbox.com/s/di5mxkj8c65h3e6/AI%20wonders.txt
@@ -63,7 +61,7 @@ the most impressive accomplishments (in russian) - https://dropbox.com/s/di5mxkj
 #### applications
 
   artificial intelligence    - https://dropbox.com/s/7jb0rx9hc6gw3hc/Artificial%20Intelligence.txt + https://dropbox.com/sh/gmo2hort07gsydj/AACK0XoOOLsrzCyYC1eLwyOwa  
-  knowledge representation and reasoning    - https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt + https://dropbox.com/sh/9ytscy4pwegbvhb/AACtB7tQGj-vigo0yExfciu0a  
+  knowledge representation and reasoning    - https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md + https://dropbox.com/sh/9ytscy4pwegbvhb/AACtB7tQGj-vigo0yExfciu0a  
   natural language processing    - https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt + https://dropbox.com/sh/rb7u9nwb16bg5xq/AADV3d_bS6-mqFW0_jaec1sZa  
   information retrieval    - https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt + https://dropbox.com/sh/pvpzyxfcpy39j8p/AACduJ-pVF9Lh-gn3_SExj1va  
   personal assistants    - https://dropbox.com/s/0fyarlwcfb8mjdq/Personal%20Assistants.txt + https://dropbox.com/sh/veqe3c800ztpkxe/AABwH6camduJrsTUJpeKobWUa  
@@ -157,21 +155,21 @@ the most impressive accomplishments (in russian) - https://dropbox.com/s/di5mxkj
 
 #### books
 
-  Max Welling - "A First Encounter with Machine Learning" - https://www.ics.uci.edu/~welling/teaching/ICS273Afall11/IntroMLBook.pdf  
-  Shai Shalev-Shwartz, Shai Ben-David - "Understanding Machine Learning: From Theory to Algorithms" -
-  	https://dropbox.com/s/btnzi0084le75in/Shalev-Shwartz%20Ben-David%20-%20Understanding%20Machine%20Learning%3A%20From%20Theory%20to%20Algorithms.pdf  
-  Tom Mitchell - https://dropbox.com/s/fb7xr0p5pzq7wun/Mitchell%20-%20Machine%20Learning.pdf  
-  Yoshua Bengio - http://www-labs.iro.umontreal.ca/~bengioy/DLbook/  
-  Chris Bishop - "Pattern Recognition and Machine Learning" - https://dropbox.com/s/0elu1e61znzxe8a/Bishop%20-%20Pattern%20Recognition%20and%20Machine%20Learning.pdf  
-  Kevin Murphy - "Machine Learning - A Probabilistic Perspective" - https://dropbox.com/s/jdly520i5irx1h6/Murphy%20-%20Machine%20Learning%20-%20A%20Probabilistic%20Perspective.pdf  
-  David MacKay - "Information Theory, Inference, and Learning Algorithms" - http://users.aims.ac.za/~mackay/itila/book.html  
-  David Barber - "Bayesian Reasoning and Machine Learning" - http://web4.cs.ucl.ac.uk/staff/D.Barber/pmwiki/pmwiki.php?n=Brml.Online  
-  Mehryar Mohri - "Foundations of Machine Learning" - http://www.cs.nyu.edu/~mohri/mlbook/  
-  Richard Sutton, Andrew Barto - "Reinforcement Learning: An Introduction" - http://webdocs.cs.ualberta.ca/~sutton/book/ebook/the-book.html  
-  Ron Bekkerman, Mikhail Bilenko, John Langford - "Scaling Up Machine Learning: Parallel and Distributed Approaches" - https://dropbox.com/s/ww4qaud4vkpqoah/Bekkerman%20Bilenko%20Langford%20-%20Scaling%20up%20Machine%20Learning.pdf  
-
-  Pedro Domingos - "The Master Algorithm" - http://basicbooks.com/full-details?isbn=9780465065707  
-  John Winn, Chris Bishop - "Model-Based Machine Learning" - http://mbmlbook.com/toc.html  
+  Pedro Domingos - ["The Master Algorithm"](http://basicbooks.com/full-details?isbn=9780465065707)  
+  John Winn, Chris Bishop - ["Model-Based Machine Learning"](http://mbmlbook.com/toc.html)  
+  Max Welling - ["A First Encounter with Machine Learning"](https://www.ics.uci.edu/~welling/teaching/ICS273Afall11/IntroMLBook.pdf)  
+  Ian Goodfellow, Yoshua Bengio, Aaron Courville - ["Deep Learning"](http://deeplearningbook.org)  
+  Richard Sutton, Andrew Barto - ["Reinforcement Learning: An Introduction"](http://webdocs.cs.ualberta.ca/~sutton/book/ebook/the-book.html) +
+	[second edition](https://dropbox.com/s/b3psxv2r0ccmf80/book2015oct.pdf)  
+  Tom Mitchell - ["Machine Learning"](https://goo.gl/tyNHMH)  
+  Shai Shalev-Shwartz, Shai Ben-David - ["Understanding Machine Learning: From Theory to Algorithms"](https://goo.gl/tHmsdD)  
+  Chris Bishop - ["Pattern Recognition and Machine Learning"](https://goo.gl/58Yvvp)  
+  Trevor Hastie, Robert Tibshirani, Jerome Friedman - ["The Elements of Statistical Learning"](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf)  
+  Kevin Murphy - ["Machine Learning - A Probabilistic Perspective"](https://goo.gl/Vh7Jje)  
+  David MacKay - ["Information Theory, Inference, and Learning Algorithms"](http://users.aims.ac.za/~mackay/itila/book.html)  
+  David Barber - ["Bayesian Reasoning and Machine Learning"](http://web4.cs.ucl.ac.uk/staff/D.Barber/pmwiki/pmwiki.php?n=Brml.Online)  
+  Mehryar Mohri - ["Foundations of Machine Learning"](http://www.cs.nyu.edu/~mohri/mlbook/)  
+  Ron Bekkerman, Mikhail Bilenko, John Langford - ["Scaling Up Machine Learning: Parallel and Distributed Approaches"](https://goo.gl/dE7jPb)  
 
 
 #### blogs
@@ -261,7 +259,7 @@ the most impressive accomplishments (in russian) - https://dropbox.com/s/di5mxkj
 
 ##
 
-  **bayesian framework**
+#### bayesian framework
 
   [Bayesian Inference and Learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)
 
@@ -277,7 +275,7 @@ the most impressive accomplishments (in russian) - https://dropbox.com/s/di5mxkj
 
 ##
 
-  **learning theory**
+#### learning theory
 
   - what does it mean to learn  
   - when is a concept/function learnable  
@@ -308,7 +306,7 @@ frameworks:
 
 ##
 
-  **bias/variance**
+#### bias/variance
 
   "The bias is error from erroneous assumptions in the learning algorithm. High bias can cause an algorithm to miss the relevant relations between features and target outputs (underfitting).  
    The variance is error from sensitivity to small fluctuations in the training set. High variance can cause overfitting: modeling the random noise in the training data, rather than the intended outputs."  
@@ -480,7 +478,7 @@ Together, bias and variance additively contribute to the total prediction error:
 ##
 
   [Deep Learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
-  [Knowledge Representation](https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt)  
+  [Knowledge Representation and Reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
   [Probabilistic Programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
 
 
@@ -742,6 +740,7 @@ interesting papers (see below):
   - https://youtube.com/watch?v=iSQHelJ1xxU
   - http://hazyresearch.github.io/snorkel/blog/weak_supervision.html
   - https://github.com/HazyResearch/snorkel
+  - "Fonduer: Knowledge Base Construction from Richly Formatted Data" - https://arxiv.org/abs/1703.05028
 
 
 #### Varma, He, Iter, Xu, Yu, de Sa, Re - [Socratic Learning: Empowering the Generative Model](http://arxiv.org/abs/1610.08123)

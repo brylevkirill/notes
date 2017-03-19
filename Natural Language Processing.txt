@@ -131,6 +131,9 @@ textbook by Michael Collins - https://dropbox.com/sh/e0unkrb6xoqyjmg/AAANfPi9K9f
 
 [semantics]
 
+  "Semantics encompasses extracting structured data from text (knowledge base extraction, logical form extraction, information extraction), linguistic approaches to extract and compose representation of meaning, inference and reasoning over meaning representation based on logic or algebra. It also includes approaches that aims at grounding language by learning relations between language and visual observations, linking language to the physical world."
+
+
   Percy Liang - "Natural Language Understanding: Foundations and State-of-the-Art" - https://youtube.com/watch?v=mhHfnhh-pB4
 
 	"Building systems that can understand human language - being able to answer questions, follow instructions, carry on dialogues - has been a long-standing challenge since the early days of AI. Due to recent advances in machine learning, there is again renewed interest in taking on this formidable task. A major question is how one represents and learns the semantics (meaning) of natural language, to which there are only partial answers. The goal of this tutorial is (i) to describe the linguistic and statistical challenges that any system must address; and (ii) to describe the types of cutting edge approaches and the remaining open problems. Topics include distributional semantics (e.g., word vectors), frame semantics (e.g., semantic role labeling), model-theoretic semantics (e.g., semantic parsing), the role of context, grounding, neural networks, latent variables, and inference. The hope is that this unified presentation will clarify the landscape, and show that this is an exciting time for the machine learning community to engage in the problems in natural language understanding."
@@ -597,8 +600,8 @@ interesting papers (see below):
   - text summarization
   - cross-lingual tasks
 
-interesting papers (see https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt):
-  - question answering over texts (machine reading)
+interesting papers (see https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md):
+  - question answering over texts
   - information extraction and integration
   - multimodal knowledge representation
 

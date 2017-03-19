@@ -1,4 +1,4 @@
-  Deep Learning is learning to represent knowledge with composition of functions and learning all functions in composition jointly or end-to-end.
+Deep Learning is learning to represent knowledge with composition of functions and learning all functions in composition jointly or end-to-end.
 
 
   * [overview](#overview)
@@ -34,10 +34,7 @@
     - [applications](#interesting-papers---applications)
 
 
-selected papers and books - https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
-
-
-the most impressive accomplishments (in russian) - https://dropbox.com/s/di5mxkj8c65h3e6/AI%20wonders.txt
+[the most impressive accomplishments](https://dropbox.com/s/di5mxkj8c65h3e6/AI%20wonders.txt) (in russian)
 
 
 
@@ -45,6 +42,22 @@ the most impressive accomplishments (in russian) - https://dropbox.com/s/di5mxkj
 ### overview
 
 #### introduction
+
+  http://goo.gl/gvkiaR  (Yann LeCun, Yoshua Bengio, Geoff Hinton)  
+
+  http://deeplearningbook.org/contents/intro.html  
+
+  http://en.wikipedia.org/wiki/Deep_learning  
+  http://scholarpedia.org/article/Deep_Learning  
+
+
+  http://neuralnetworksanddeeplearning.com  (Michael Nielsen)  
+  http://karpathy.github.io/neuralnets/  (Andrej Karpathy)  
+  http://yyue.blogspot.ru/2015/01/a-brief-overview-of-deep-learning.html  (Ilya Sutskever)  
+  http://youtube.com/watch?v=xZzZb7wZ6eE + http://youtube.com/watch?v=Zm8l-JQAJD8  (Alex Smola)  
+  http://markus.com/deep-learning-101/  (Markus Beissinger)  
+  http://metacademy.org/roadmaps/rgrosse/deep_learning  (Roger Grosse)  
+
 
   - Juergen Schmidhuber  
 	http://youtube.com/watch?v=h4FqFss9hEY  
@@ -61,22 +74,6 @@ the most impressive accomplishments (in russian) - https://dropbox.com/s/di5mxkj
   - Yann LeCun  
 	http://youtube.com/watch?v=fe-uxTUnoCs  
 	http://techtalks.tv/talks/whats-wrong-with-deep-learning/61639/  
-
-
-  http://goo.gl/gvkiaR  (Yann LeCun, Yoshua Bengio, Geoff Hinton)  
-
-  http://deeplearningbook.org/contents/intro.html  
-
-  http://en.wikipedia.org/wiki/Deep_learning  
-  http://scholarpedia.org/article/Deep_Learning  
-
-
-  http://neuralnetworksanddeeplearning.com  (Michael Nielsen)  
-  http://karpathy.github.io/neuralnets/  (Andrej Karpathy)  
-  http://yyue.blogspot.ru/2015/01/a-brief-overview-of-deep-learning.html  (Ilya Sutskever)  
-  http://youtube.com/watch?v=xZzZb7wZ6eE + http://youtube.com/watch?v=Zm8l-JQAJD8  (Alex Smola)  
-  http://markus.com/deep-learning-101/  (Markus Beissinger)  
-  http://metacademy.org/roadmaps/rgrosse/deep_learning  (Roger Grosse)  
 
 
 #### history
@@ -155,6 +152,9 @@ the most impressive accomplishments (in russian) - https://dropbox.com/s/di5mxkj
 
 #### conferences
 
+  - ICLR 2017
+	https://medium.com/@karpathy/iclr-2017-vs-arxiv-sanity-d1488ac5c131
+
   - NIPS 2016  
 	https://nips.cc/Conferences/2016/Schedule  
 	https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016  
@@ -199,13 +199,13 @@ the most impressive accomplishments (in russian) - https://dropbox.com/s/di5mxkj
 
 #### applications
 
-  reinforcement learning - https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt  
-  knowledge representation and reasoning - https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt  
-  natural language processing/understanding  - https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt  
-  personal assistants - https://dropbox.com/s/0fyarlwcfb8mjdq/Personal%20Assistants.txt  
-  information retrieval - https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt  
-  computational biology - https://github.com/gokceneraslan/awesome-deepbio  
-  other applications - https://dropbox.com/sh/dio0ypwiph44ehn/AAADQCyEutvVt9iugVU1F5S8a  
+  [reinforcement learning](https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt)  
+  [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
+  [natural language processing/understanding](https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt)  
+  [personal assistants](https://dropbox.com/s/0fyarlwcfb8mjdq/Personal%20Assistants.txt)  
+  [information retrieval](https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt)  
+  [computational biology](https://github.com/gokceneraslan/awesome-deepbio)  
+  [other applications](https://dropbox.com/sh/dio0ypwiph44ehn/AAADQCyEutvVt9iugVU1F5S8a)  
 
 
 #### research areas
@@ -380,21 +380,21 @@ the most impressive accomplishments (in russian) - https://dropbox.com/s/di5mxkj
 ---
 ### bayesian deep learning
 
-deep learning (framework for constructing flexible models):  
-  *  + rich non-linear models for classification and sequence prediction  
-  *  + scalable learning using stochastic approximations and conceptually simple  
-  *  + easily composable with other gradient-based methods  
-  *  - only point estimates  
-  *  - hard to score models and do model selection  
-  *  - hard to do complexity penalisation  
+  deep learning (framework for constructing flexible models):
+  - *(plus)* rich non-linear models for classification and sequence prediction
+  - *(plus)* scalable learning using stochastic approximations and conceptually simple
+  - *(plus)* easily composable with other gradient-based methods
+  - *(minus)* only point estimates
+  - *(minus)* hard to score models and do model selection
+  - *(minus)* hard to do complexity penalisation
 
-bayesian reasoning (framework for inference and decision making):  
-  *  + unified framework for model building, inference, prediction and decision making  
-  *  + explicit accounting for uncertainty and variability of outcomes  
-  *  + robust to overfitting  
-  *  + tools for model selection and composition  
-  *  - mainly conjugate and linear models  
-  *  - potentially intractable inference leading to expensive computation or long simulation times  
+  bayesian reasoning (framework for inference and decision making):
+  - *(plus)* unified framework for model building, inference, prediction and decision making
+  - *(plus)* explicit accounting for uncertainty and variability of outcomes
+  - *(plus)* robust to overfitting
+  - *(plus)* tools for model selection and composition
+  - *(minus)* mainly conjugate and linear models
+  - *(minus)* potentially intractable inference leading to expensive computation or long simulation times
 
 ##
 
@@ -464,23 +464,23 @@ bayesian reasoning (framework for inference and decision making):
 ---
 ### unsupervised learning and generative models
 
-potential benefits of unsupervised learning:  
-  - take advantage of huge quantitities of unlabeled data  
-  - answer new questions not seen during training about any subset of observed variables given any other subset  
-  - regularizer to help disentangle underlying factors of variation and to solve new tasks from very few examples  
-  - easier optimization by divide and conquer  
-  - structured output - variable to be predicted is high-dimensional composite object like an image or a sentence  
+  potential benefits of unsupervised learning:
+  - take advantage of huge quantitities of unlabeled data
+  - answer new questions not seen during training about any subset of observed variables given any other subset
+  - regularizer to help disentangle underlying factors of variation and to solve new tasks from very few examples
+  - easier optimization by divide and conquer
+  - structured output - variable to be predicted is high-dimensional composite object like an image or a sentence
 
-approaches to unsupervised learning:  
-  - predict one variable given the others (pseudolikelihood)  
-  - predict a subset of variables given the others (generalized pseudolikelihood)  
-  - predict a variable given the previous ones in some order (fully-visible Bayes nets, autoregressive nets, NADE, generative RNNs)  
-  - given a corrupted observation, recover the original clean point (denoising)  
-  - predict whether the input comes from the data generating distribution or some other distribution (as a probabilistic classifier) (Noise-Constrastive Estimation)  
-  - learn an invertible function such that the transformed distribution is as factorial as possible (NICE, and when considering approximately invertible functions, VAE)  
-  - learn a stochastic transformation so that if we were to apply it many times we would converge to something close to the data generating distribution (Generative Stochastic Networks, generative denoising autoencoders, diffusion inversion = nonequilibrium thermodynamics)  
-  - learn to generate samples that cannot be distinguished by a classifier from the training samples (GAN)  
-  - maximize the likelihood of the data under some probabilistic model  
+  approaches to unsupervised learning:
+  - predict one variable given the others (pseudolikelihood)
+  - predict a subset of variables given the others (generalized pseudolikelihood)
+  - predict a variable given the previous ones in some order (fully-visible Bayes nets, autoregressive nets, NADE, generative RNNs)
+  - given a corrupted observation, recover the original clean point (denoising)
+  - predict whether the input comes from the data generating distribution or some other distribution (as a probabilistic classifier) (Noise-Constrastive Estimation)
+  - learn an invertible function such that the transformed distribution is as factorial as possible (NICE, and when considering approximately invertible functions, VAE)
+  - learn a stochastic transformation so that if we were to apply it many times we would converge to something close to the data generating distribution (Generative Stochastic Networks, generative denoising autoencoders, diffusion inversion = nonequilibrium thermodynamics)
+  - learn to generate samples that cannot be distinguished by a classifier from the training samples (GAN)
+  - maximize the likelihood of the data under some probabilistic model
 
 ##
 
@@ -499,7 +499,7 @@ approaches to unsupervised learning:
   "Generative models provide a solution to the problem of unsupervised learning, in which a machine learning system is required to discover the structure hidden within unlabelled data streams. Because they are generative, such models can form a rich imagery of the world in which they are used: an imagination that can harnessed to explore variations in data, to reason about the structure and behaviour of the world, and ultimately, for decision-making and acting."
 
 
-why generative models?  
+  why generative models?
 
   - *data efficiency and semi-supervised learning*  
 	Generative models can reduce the amount of data required. As a simple example, building an image classifier p(class|image) requires estimating a very high-dimenisonal function, possibly requiring a lot of data, or clever assumptions. In contrast, we could model the data as being generated from some low-dimensional or sparse latent variables z, as in p(image)=∫p(image|z)p(z)dzp(image)=∫p(image|z)p(z)dz. Then, to do classification, we only need to learn p(class|z), which will usually be a much simpler function. This approach also lets us take advantage of unlabeled data - also known as semi-supervised learning.  
@@ -511,7 +511,7 @@ why generative models?
 	Generative models usually assume that each datapoint is generated from a (usually low-dimensional) latent variable. These latent variables are often interpretable, and sometimes can tell us about the hidden causes of a phenomenon. These latent variables can also sometimes let us do interesting things such as interpolating between examples.  
 
 
-applications of generative models:
+  applications of generative models:
   - *conditional generative models* (rich data -> rich data)  
 	* speech synthesis: text -> speech  
 	* machine translation: french -> english  
@@ -525,19 +525,19 @@ applications of generative models:
 
   generative models:  
 
-  - *variational autoencoders*  
-	Latent variable models that use a neural network to do approximate inference. The recognition network looks at each datapoint x and outputs an approximate posterior on the latents q(z|x) for that datapoint.  
-
-  - *generative adversarial networks*  
+  - [*generative adversarial networks*](#generative-models---generative-adversarial-networks)  
 	A way to train generative models by optimizing them to fool a classifier, the discriminator network, that tries to distinguish between real data and data generated by the generator network.  
 
-  - *autoregressive models*  
+  - [*variational autoencoders*](#generative-models---variational-autoencoder)  
+	Latent variable models that use a neural network to do approximate inference. The recognition network looks at each datapoint x and outputs an approximate posterior on the latents q(z|x) for that datapoint.  
+
+  - [*autoregressive models*](#generative-models---autoregressive-models)  
 	Another way to model p(x) is to break the model into a series of conditional distributions: p(x)=p(x1)p(x2|x1)p(x3|x2,x1)…p(x)=p(x1)p(x2|x1)p(x3|x2,x1)… This is the approach used, for example, by recurrent neural networks. These models are also realitvely easy to train, but the downside is that they don't support all of the same queries we can make of latent variable models.  
 
   - *invertible density estimation*  
 	A way to specify complex generative models by transforming a simple latent distribution with a series of invertible functions. These approaches are restricted to a more limited set of possible operations, but sidestep the difficult integrals required to train standard latent variable models.  
 
-"For models, there are Boltzmann machines, exponential families, PCA, FA, ICA, SFA, graphical models, NICE and followups, deep energy models, and gazillions of other things. For approximation/learning techniques, there's pseudolikelihood, score matching, moment matching, contrastive divergence, and gazillions of other things that don't fit into these three "broad" categories."
+  "For models, there are Boltzmann machines, exponential families, PCA, FA, ICA, SFA, graphical models, NICE and followups, deep energy models, and gazillions of other things. For approximation/learning techniques, there's pseudolikelihood, score matching, moment matching, contrastive divergence, and gazillions of other things that don't fit into these three "broad" categories."
 
 ##
 
@@ -576,7 +576,7 @@ applications of generative models:
   - VAEs should be best at compressing data, as they maximise (a lower bound to) the likelihood. That said, evaluating the likelihood in VAE models is intractable, so it cannot be used very directly for direct entropy encoding.  
   - There are many models these days where the likelihood can be computed, such as pixel-RNNs, spatial LSTMs, RIDE, NADE, NICE, etc These should also be best in terms of compression performance."
 
-"Neither GANs or VAEs address semi-supervised representation learning in a very direct or elegant way in their objective functions. The fact that you can use them for semi-supervised learning is kind of a coincidence, although one would intuitively expect them to do something meaningful. If you wanted to do semi-supervised representation learning, I think the most sensible approach is the information bottleneck formulation, to which VAEs are a bit closer."
+  "Neither GANs or VAEs address semi-supervised representation learning in a very direct or elegant way in their objective functions. The fact that you can use them for semi-supervised learning is kind of a coincidence, although one would intuitively expect them to do something meaningful. If you wanted to do semi-supervised representation learning, I think the most sensible approach is the information bottleneck formulation, to which VAEs are a bit closer."
 
   "Similarly, neither methods do directly address disentangling factors of variation, although both are in a way latent variable models with independent hidden variables, so in a way can be thought of as nonlinear ICA models, trained with a different objective function."
 
@@ -586,6 +586,13 @@ applications of generative models:
 
 
   "Representation Learning and the Information Bottleneck Approach" by Ference Huszar - http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/
+
+##
+
+  - [generative adversarial networks](#generative-models---generative-adversarial-networks)  
+  - [variational autoencoder](#generative-models---variational-autoencoder)  
+  - [autoregressive models](#generative-models---autoregressive-models)  
+  - [restricted boltzmann machine](#generative-models---restricted-boltzmann-machine)  
 
 
 
@@ -659,17 +666,17 @@ applications of generative models:
   Training requires discriminator network to be reoptimised every time generative network changes. Gradient descent in the inner loop of gradient descent makes optimization unstable and slow.
   GANs require differentiation through the visible units and thus cannot model discrete data, while VAEs require differentiation through the hidden units and thus can't have discrete latent variables.
 
-generative adversarial network:  
-  - gets local image features right but not global structure  
-  - possible underfitting due to non-convergence of optimization  
-  - generator never sees the data  
-  - need REINFORCE to do discrete visible variables  
+  generative adversarial network:
+  - gets local image features right but not global structure
+  - possible underfitting due to non-convergence of optimization
+  - generator never sees the data
+  - need REINFORCE to do discrete visible variables
 
-variational autoencoder:  
-  - gets global image composition right but blurs details  
-  - possible underfitting due to variational approximation  
-  - generator gets direct output target  
-  - need REINFORCE to do discrete latent variables  
+  variational autoencoder:
+  - gets global image composition right but blurs details
+  - possible underfitting due to variational approximation
+  - generator gets direct output target
+  - need REINFORCE to do discrete latent variables
 
 ##
 
@@ -677,9 +684,9 @@ variational autoencoder:
 
   "All the theory says GANs should be great at the Nash equilibrium, but gradient descent is only guaranteed to get to the Nash equilibrium in the convex case. When both players are represented by neural nets, it’s possible for them to keep adapting their strategies forever without actually arriving at the equilibrium."
 
- "(1) How do you address the fact that the minimax game between the generator and discriminator may never approach an equilibrium? In other words, how do you build a system using GANs so that you know that it will converge to a good solution?  
-  (2) Even if they do converge, current systems still have issues with global structure: they cannot count (e.g. the number of eyes on a dog) and frequently get long-range connections wrong (e.g. they show multiple perspectives as part of the same image).  
-  (3) How can we use GANs in discrete settings, such as for generating text?"  
+ "- How do you address the fact that the minimax game between the generator and discriminator may never approach an equilibrium? In other words, how do you build a system using GANs so that you know that it will converge to a good solution?  
+  - Even if they do converge, current systems still have issues with global structure: they cannot count (e.g. the number of eyes on a dog) and frequently get long-range connections wrong (e.g. they show multiple perspectives as part of the same image).  
+  - How can we use GANs in discrete settings, such as for generating text?"  
 
 ##
 
@@ -917,7 +924,7 @@ overview by Hugo Larochelle - http://www.fields.utoronto.ca/video-archive/2017/0
 
 ##
 
-  **recurrent neural network**
+#### recurrent neural network
 
   "Recurrent neural networks are a powerful family of connectionist models that capture time dynamics via cycles in the graph. Unlike feedforward neural networks, recurrent networks can process examples one at a time, retaining a state, or memory, that reflects an arbitrarily long context window."
 
@@ -945,7 +952,7 @@ http://deeplearningbook.org/contents/rnn.html
 
 ##
 
-  **long short term memory**
+#### long short term memory
 
   designed to model temporal sequences and their long-range dependencies more accurately than conventional RNNs  
   solves the vanishing gradient problem at small computational extra-cost and may be interpreted as a differentiable version of computer memory  
@@ -978,7 +985,7 @@ https://colah.github.io/posts/2015-08-Understanding-LSTMs/ (Chris Olah)
 
 ##
 
-  **convolutional neural network**
+#### convolutional neural network
 
   "Computations scale much worse than linearly, and current research in parallelizing the training algorithms and creating convolutional architectures is meant to make these algorithms useful in practice. Convolutional architectures mean that every hidden unit output to a layer does not become the input for every other hidden unit in the next layer; they can be restricted to only connect to other hidden units that are within the same spatial area."
 
@@ -1004,7 +1011,7 @@ https://colah.github.io/posts/2015-08-Understanding-LSTMs/ (Chris Olah)
 
 ##
 
-  **dropout**
+#### dropout
 
   “Dropping hidden units randomly (usually with a binomial probability of 0.5) during training so that the networks learns to be “robust” and doesn’t learn stupid co-activations of units (a way to tell the network to not just learn but to compress the training set)."  
   "This technique reduces complex co-adaptations of neurons, since a neuron cannot rely on the presence of particular other neurons. It is, therefore, forced to learn more robust features that are useful in conjunction with many different random subsets of the other neurons."  
@@ -1022,7 +1029,7 @@ https://colah.github.io/posts/2015-08-Understanding-LSTMs/ (Chris Olah)
 
 ##
 
-  **rectified linear unit**
+#### rectified linear unit
 
   ReLUs makes deep nets much easier to train and much better at dealing with real values  
   ReLUs stabilize themselves and automatically equalize magnitudes of gradients in different layers:  
@@ -1549,20 +1556,14 @@ open questions:
 ---
 ### interesting papers
 
-
-lists of papers -
-	http://shortscience.org/?tab=recent
-	http://arxiv-sanity.com/top
-	http://gitxiv.com/category/deeplearning
-	https://docs.google.com/document/d/1IXF3h0RU5zz4ukmTrVKVotPQypChscNGf5k6E25HGvA  (by Yoshua Bengio)
+http://arxiv-sanity.com/top  
+http://shortscience.org/?tab=recent  
 
 
+[selected papers and books](https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza)
 
 
-selected papers and books - https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
-
-
-recent interesting papers - https://github.com/brylevkirill/notes/blob/master/recent%20papers.txt
+[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/recent%20papers.txt)
 
 
 interesting papers (see below):  
@@ -3235,6 +3236,7 @@ also see section "[interesting papers - applications]" of https://dropbox.com/s/
   - https://youtube.com/watch?v=-96BEoXJMs0 + https://drive.google.com/file/d/0B9raQzOpizn1TkRIa241ZnBEcjQ/view (demo)
   - https://devblogs.nvidia.com/parallelforall/deep-learning-self-driving-cars/
   - https://github.com/SullyChen/Nvidia-Autopilot-TensorFlow
+  - https://github.com/DJTobias/Cherry-Autonomous-Racecar
 
 
 #### Levine, Wagener, Abbeel - ["Learning Contact-Rich Manipulation Skills with Guided Policy Search"](http://arxiv.org/abs/1501.05611)

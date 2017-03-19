@@ -286,9 +286,9 @@ interesting papers (see https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language
   - relation extraction
   - text summarization
 
-interesting papers (see https://dropbox.com/s/srxofdevev8js1o/Knowledge%20Representation%20and%20Reasoning.txt):
+interesting papers (see https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md):
   - question answering over knowledge bases
-  - question answering over texts (machine reading)
+  - question answering over texts
   - information extraction and integration
   - multimodal knowledge representation
 
