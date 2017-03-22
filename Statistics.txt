@@ -1,3 +1,5 @@
+Data Science is transformation of data into knowledge with the help of computer and mathematical sciences.
+
 Michael Jordan - "On Computational Thinking, Inferential Thinking and Data Science" - https://youtube.com/watch?v=bQ02K0kWKzg
 	"The rapid growth in the size and scope of datasets in science and technology has created a need for novel foundational perspectives on data analysis that blend the inferential and computational sciences. That classical perspectives from these fields are not adequate to address emerging problems in "Big Data" is apparent from their sharply divergent nature at an elementary level-in computer science, the growth of the number of data points is a source of "complexity" that must be tamed via algorithms or hardware, whereas in statistics, the growth of the number of data points is a source of "simplicity" in that inferences are generally stronger and asymptotic results can be invoked. On a formal level, the gap is made evident by the lack of a role for computational concepts such as "runtime" in core statistical theory and the lack of a role for statistical concepts such as "risk" in core computational theory."
 
@@ -36,9 +38,12 @@ Goodman, Greenland - "Why Most Published Research Findings Are False: Problems i
 Ioannidis - "Why Most Published Research Findings Are False: Author's Reply to Goodman and Greenland"
 Moonesinghe Khoury, Janssens - "Most published research findings are false - But a little replication goes a long way"
 Leek, Jager - "Is most published research really false?"
-
 Aitchison, Corradi, Latham - "Zipf’s Law Arises Naturally When There Are Underlying, Unobserved Variables" [http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005110]
 
+
+
+
+[interesting tutorials]
 
 Roth, Hardt - "Rigorous Data Dredging - Theory and Tools for Adaptive Data Analysis" [http://techtalks.tv/talks/rigorous-data-dredging-theory-and-tools-for-adaptive-data-analysis/62362/]
 

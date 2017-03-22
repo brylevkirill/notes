@@ -124,22 +124,7 @@ selected papers - https://dropbox.com/sh/veqe3c800ztpkxe/AABwH6camduJrsTUJpeKobW
 	http://techcrunch.com/2016/05/18/google-unveils-google-assistant-a-big-upgrade-to-google-now/
 	http://nytimes.com/2016/09/29/technology/google-assistant.html
 	http://theverge.com/2016/12/8/13878444/google-home-developers-actions-ecosystem-app-store
-
-  Google Allo
-	http://forbes.com/sites/theopriestley/2015/12/23/google-to-launch-an-artificial-intelligence-messenger-service-to-rival-facebook-m/
-	http://businessinsider.com/report-google-is-working-on-a-new-smart-messaging-app-2015-12
-	http://wired.co.uk/news/archive/2015-12/29/2016-predictions-technology-trends
-
-  Google Search
 	http://thesempost.com/google-working-on-conversational-shopping-in-search/
-
-  ViV
-	http://youtube.com/watch?v=Rblb3sptgpQ
-	http://youtube.com/watch?v=L2zMQjr-3Ic
-	https://medium.com/@brianroemmele/what-is-the-technology-of-viv-the-next-generation-of-siri-baff7ed99e3b
-
-	http://wired.com/2014/08/viv/
-	"Whereas Siri can only perform tasks that Apple engineers explicitly implement, this new program, they say, will be able to teach itself, giving it almost limitless capabilities. In time, they assert, their creation will be able to use your personal preferences and a near-infinite web of connections to answer almost any query and perform almost any function."
 
   Amazon Echo
 	http://nytimes.com/2016/03/10/technology/the-echo-from-amazon-brims-with-groundbreaking-promise.html
@@ -165,15 +150,22 @@ selected papers - https://dropbox.com/sh/veqe3c800ztpkxe/AABwH6camduJrsTUJpeKobW
 	http://businessinsider.com/microsoft-ceo-satya-nadella-the-agent-is-the-new-app-model-2015-11
 	http://dailydot.com/technology/microsoft-chat-bot-china/
 
-  Facebook Here and Messenger
-	http://techcrunch.com/2015/10/26/facebook-nowtifications/
-	http://techcrunch.com/2016/01/05/facebook-messenger-bots/
-
   Facebook M
 	http://buzzfeed.com/charliewarzel/the-personal-assistant-that-will-help-facebook-eat-the-inter
 	http://wsj.com/articles/ask-m-for-help-facebook-tests-new-digital-assistant-1447045202
 	http://thenextweb.com/facebook/2015/08/30/heres-what-its-like-to-use-facebooks-virtual-assistant-m/
 	http://techcrunch.com/2015/09/07/facebooks-messenger-and-the-challenge-to-googles-search-dominance/
+
+  ViV
+	http://youtube.com/watch?v=Rblb3sptgpQ
+	http://youtube.com/watch?v=L2zMQjr-3Ic
+	https://medium.com/@brianroemmele/what-is-the-technology-of-viv-the-next-generation-of-siri-baff7ed99e3b
+
+	http://wired.com/2014/08/viv/
+	"Whereas Siri can only perform tasks that Apple engineers explicitly implement, this new program, they say, will be able to teach itself, giving it almost limitless capabilities. In time, they assert, their creation will be able to use your personal preferences and a near-infinite web of connections to answer almost any query and perform almost any function."
+
+  Samsung Bixby
+	https://news.samsung.com/global/bixby-a-new-way-to-interact-with-your-phone
 
   Maluuba
 	https://techcrunch.com/2016/09/23/maluuba-wants-to-make-chatbots-smarter-by-teaching-them-how-to-read/
