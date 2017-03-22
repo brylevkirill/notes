@@ -61,7 +61,7 @@ Anywhere there is a function y = f(x), where f(x) has some parameters used to ma
 
 #### applications
 
-  artificial intelligence    - <https://dropbox.com/s/7jb0rx9hc6gw3hc/Artificial%20Intelligence.txt> + <https://dropbox.com/sh/gmo2hort07gsydj/AACK0XoOOLsrzCyYC1eLwyOwa>  
+  artificial intelligence    - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md> + <https://dropbox.com/sh/gmo2hort07gsydj/AACK0XoOOLsrzCyYC1eLwyOwa>  
   knowledge representation and reasoning    - <https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md> + <https://dropbox.com/sh/9ytscy4pwegbvhb/AACtB7tQGj-vigo0yExfciu0a>  
   natural language processing    - <https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt> + <https://dropbox.com/sh/rb7u9nwb16bg5xq/AADV3d_bS6-mqFW0_jaec1sZa>  
   information retrieval    - <https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt> + <https://dropbox.com/sh/pvpzyxfcpy39j8p/AACduJ-pVF9Lh-gn3_SExj1va>  
