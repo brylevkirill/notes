@@ -14,9 +14,7 @@ Higher-order probabilistic programming languages open up possibility of doing in
     - [applications](#interesting-papers---applications)
 
 
-selected papers and books - https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
-
-bayesian inference and learning - https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt
+[bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)
 
 
 
@@ -40,46 +38,46 @@ bayesian inference and learning - https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian
 
 ### overview
 
-  http://plus.google.com/+BeauCronin/posts/KpeRdJKR6Z1  
-  http://intelligence.org/2014/09/04/daniel-roy/  
-  http://pl-enthusiast.net/2014/09/08/probabilistic-programming/  
+  <http://plus.google.com/+BeauCronin/posts/KpeRdJKR6Z1>  
+  <http://intelligence.org/2014/09/04/daniel-roy/>  
+  <http://pl-enthusiast.net/2014/09/08/probabilistic-programming/>  
 
   [Programs and Probability](http://americanscientist.org/libraries/documents/20158411291411312-2015-09Hayes.pdf)
 
-  http://habrahabr.ru/post/242993/  (in russian)  
-  http://youtube.com/watch?v=ZHERrzVDTiU  (in russian)  
+  <http://habrahabr.ru/post/242993/>  (in russian)  
+  <http://youtube.com/watch?v=ZHERrzVDTiU>  (in russian)  
 
-  http://moalquraishi.wordpress.com/2015/03/29/the-state-of-probabilistic-programming/  
-  http://twiecki.github.io/blog/2016/06/01/bayesian-deep-learning/  
-  http://dustintran.com/blog/a-quick-update-edward-and-some-motivations  
+  <http://moalquraishi.wordpress.com/2015/03/29/the-state-of-probabilistic-programming/>  
+  <http://twiecki.github.io/blog/2016/06/01/bayesian-deep-learning/>  
+  <http://dustintran.com/blog/a-quick-update-edward-and-some-motivations>  
 
   overview by Mansinghka -
-	https://youtube.com/watch?v=-8QMqSWU76Q
+	<https://youtube.com/watch?v=-8QMqSWU76Q>
 
   tutorials by Wood -  
-	http://research.microsoft.com/apps/video/dl.aspx?id=259568  
-	http://youtube.com/watch?v=6Lqt07enBGs + http://youtube.com/watch?v=DY5yuBNEuQs  
+	<http://research.microsoft.com/apps/video/dl.aspx?id=259568>  
+	<http://youtube.com/watch?v=6Lqt07enBGs> + <http://youtube.com/watch?v=DY5yuBNEuQs>  
 
   "Probabilistic Programming and Bayesian Methods for Hackers" by Davidson-Pilon -
-	http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/
+	<http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/>
 
   "The Design and Implementation of Probabilistic Programming Languages" by Goodman and Stuhlmuller -
-	http://dippl.org
+	<http://dippl.org>
 
-  Neural Abstract Machines & Program Induction workshop @ NIPS 2016 - https://uclmr.github.io/nampi/
+  Neural Abstract Machines & Program Induction workshop @ NIPS 2016 - <https://uclmr.github.io/nampi/>
 
 
 
 
 ### applications in industry
 
-  Microsoft Office 365 (using Infer.NET) - https://cambridgenetwork.co.uk/news/email-clutter-machine-learning-probabilistic-programming/
+  Microsoft Office 365 (using Infer.NET) - <https://cambridgenetwork.co.uk/news/email-clutter-machine-learning-probabilistic-programming/>
 
-  Microsoft Excel plugin (using Infer.NET) - http://research.microsoft.com/en-us/projects/tabular/
+  Microsoft Excel plugin (using Infer.NET) - <http://research.microsoft.com/en-us/projects/tabular/>
 
-  graphics in reverse - http://newsoffice.mit.edu/2015/better-probabilistic-programming-0413
+  graphics in reverse - <http://newsoffice.mit.edu/2015/better-probabilistic-programming-0413>
 
-  http://blogs.microsoft.com/next/2015/07/10/the-next-evolution-of-machine-learning-machine-teaching/
+  <http://blogs.microsoft.com/next/2015/07/10/the-next-evolution-of-machine-learning-machine-teaching/>
 
 
 
@@ -87,50 +85,50 @@ bayesian inference and learning - https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian
 ### applications in cognitive science
 
   "Cognitive Foundations for Common-sense Knowledge Representation and Reasoning" by Tenenbaum -
-	https://youtube.com/watch?v=oSAG57plHnI
+	<https://youtube.com/watch?v=oSAG57plHnI>
 
   "Building Machines That Learn like Humans" by Tenenbaum -
-	https://youtube.com/watch?v=quPN7Hpk014
+	<https://youtube.com/watch?v=quPN7Hpk014>
 
   "The Origins of Common Sense: Modeling human intelligence with Probabilistic Programs and Program Induction" by Tenenbaum -
-	http://research.microsoft.com/apps/video/default.aspx?id=229021&l=i
+	<http://research.microsoft.com/apps/video/default.aspx?id=229021&l=i>
 
   "How to Grow a Mind: Statistics, Structure, and Abstraction" by Tenenbaum, Kemp, Griffiths, Goodman -  
-	http://videolectures.net/aaai2012_tenenbaum_grow_mind/  
-	http://videolectures.net/nips2010_tenenbaum_hgm/  
-	http://web.mit.edu/cocosci/Papers/tkgg-science11-reprint.pdf  
+	<http://videolectures.net/aaai2012_tenenbaum_grow_mind/>  
+	<http://videolectures.net/nips2010_tenenbaum_hgm/>  
+	<http://web.mit.edu/cocosci/Papers/tkgg-science11-reprint.pdf>  
 
 
   "Concepts in a Probabilistic Language of Thought" by Goodman, Tenenbaum, Gerstenberg -
-	https://web.stanford.edu/~ngoodman/papers/ConceptsChapter-final.pdf
+	<https://web.stanford.edu/~ngoodman/papers/ConceptsChapter-final.pdf>
 
 >	"Knowledge organizes our understanding of the world, determining what we expect given what we have already seen. Our predictive representations have two key properties: they are productive, and they are graded. Productive generalization is possible because our knowledge decomposes into concepts - elements of knowledge that are combined and recombined to describe particular situations. Gradedness is the observable effect of accounting for uncertainty - our knowledge encodes degrees of belief that lead to graded probabilistic predictions. To put this a different way, concepts form a combinatorial system that enables description of many different situations; each such situation specifies a distribution over what we expect to see in the world, given what we have seen. We may think of this system as a probabilistic language of thought in which representations are built from language-like composition of concepts and the content of those representations is a probability distribution on world states."
 
 >	"Probabilistic language of thought hypothesis (informal version): Concepts have a language-like compositionality and encode probabilistic knowledge. These features allow them to be extended productively to new situations and support flexible reasoning and learning by probabilistic inference."
 
   "Probabilistic Programs: A New Language for AI" by Goodman -
-	http://youtube.com/watch?v=fclvsoaUI-U
+	<http://youtube.com/watch?v=fclvsoaUI-U>
 
 >	"How can logical and probabilistic approaches to understanding intelligence be reconciled? I will argue that probabilistic programming is the best way to merge logic and probability, providing a new set of tools for thinking about representation and inference in systems with human-like intelligence. I will illustrate these ideas by introducing the probabilistic programming language Church (a stochastic LISP), describing two universal inference algorithms (i.e. algorithms that can perform probabilistic inference for any Church program), and giving a series of examples. These examples, drawn from cognitive science and AI, will include multi-agent reasoning and concept learning."
 
 
   "Probabilistic Models of Cognition" by Goodman, Tenenbaum -
-	https://probmods.org
+	<https://probmods.org>
 
   "Modeling Cognition with Probabilistic Programs: Representations and Algorithms" by Stuhlmueller (PhD thesis) -
-	https://stuhlmueller.org/papers/stuhlmueller-phdthesis.pdf
+	<https://stuhlmueller.org/papers/stuhlmueller-phdthesis.pdf>
 
   "Towards more human-like concept learning in machines: compositionality, causality, and learning-to-learn" by Lake (PhD thesis) -
-	http://cims.nyu.edu/~brenden/LakePhDThesis.pdf
+	<http://cims.nyu.edu/~brenden/LakePhDThesis.pdf>
 
   "How Does the Brain Do Plausible Reasoning" by E.T. Jaynes -
-	http://bayes.wustl.edu/etj/articles/brain.pdf
+	<http://bayes.wustl.edu/etj/articles/brain.pdf>
 
 
 ####   Sanders, Hangya, Kepecs - ["Signatures of a Statistical Computation in the Human Sense of Confidence"](https://goo.gl/OQ7pEk)
 >	"Human confidence judgments are thought to originate from metacognitive processes that provide a subjective assessment about one’s beliefs. Alternatively, confidence is framed in mathematics as an objective statistical quantity: the probability that a chosen hypothesis is correct. Despite similar terminology, it remains unclear whether the subjective feeling of confidence is related to the objective, statistical computation of confidence. To address this, we collected confidence reports from humans performing perceptual and knowledge-based psychometric decision tasks. We observed two counterintuitive patterns relating confidence to choice and evidence: apparent overconfidence in choices based on uninformative evidence, and decreasing confidence with increasing evidence strength for erroneous choices. We show that these patterns lawfully arise from statistical confidence, and therefore occur even for perfectly calibrated confidence measures. Furthermore, statistical confidence quantitatively accounted for human confidence in our tasks without necessitating heuristic operations. Accordingly, we suggest that the human feeling of confidence originates from a mental computation of statistical confidence."
 
-  - http://www.eurekalert.org/pub_releases/2016-05/cp-obu042816.php
+  - <http://www.eurekalert.org/pub_releases/2016-05/cp-obu042816.php>
 
 
 
@@ -139,62 +137,62 @@ bayesian inference and learning - https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian
 
 "One of the key characteristics of higher-order probabilistic programming languages equiped with eval is that program text both can be generated and evaluated. In higher-order languages (Lisp, Scheme, Church, Anglican and Venture) functions are first class objects - evaluating program text that defines a valid procedure returns a procedure that can be applied to arguments. The means that, among other things, program text can be programmatically generated by a program and then evaluated. In a probabilistic programming context this means that we can do inference about the program text that gave rise to an observed output or output relationship. In short, we can get computers to program themselves."
 
-"Performing Inference in the Spapce of Expressioans via Probabilistic Programming" by Wood - http://www.robots.ox.ac.uk/~fwood/anglican/teaching/mlss2014/arithmetic_expression/questions.pdf
+"Performing Inference in the Spapce of Expressioans via Probabilistic Programming" by Wood - <http://www.robots.ox.ac.uk/~fwood/anglican/teaching/mlss2014/arithmetic_expression/questions.pdf>
 
 >	"In the following we set up what is essentially a regression problem and ask the computer to find a solution in the space of arithmetic expressions that could give rise to the observed relationship. Note very carefully that this approach stands in sharp contrast to picking a function family and looking for a parameterization of a member of this family that is optimal with respect to some cost function and observed input output values. The following program generates simple arithmetic expression code using a probabilistic context-fee grammar generative model (productions) and then evaluates those expressions on known input values and compares the output to known outputs. It then predicts both the procedure text and the value of the procedure applied to a new argument."
 
-"Learning Probabilistic Programs" by Perov and Wood - http://arxiv.org/abs/1407.2646
+"Learning Probabilistic Programs" by Perov and Wood - <http://arxiv.org/abs/1407.2646>
 
 
 
 
 ### projects
 
-  http://probabilistic-programming.org
+  <http://probabilistic-programming.org>
 
 
   * Forest - "a repository for generative models"  
-	http://forestdb.org  
+	<http://forestdb.org>  
 
   * Probability Zoo - "a community repository for pre-trained probabilistic models"  
-	http://edwardlib.org/zoo  
+	<http://edwardlib.org/zoo>  
 
   * Edward  
-	http://github.com/blei-lab/edward  
-	http://dustintran.com/blog/a-quick-update-edward-and-some-motivations/  
-	http://github.com/blei-lab/edward/wiki  
-	http://dustintran.com/talks/Tran_Edward.pdf  
-	"Deep Probabilistic Programming" - https://arxiv.org/abs/1701.03757  
+	<http://github.com/blei-lab/edward>  
+	<http://dustintran.com/blog/a-quick-update-edward-and-some-motivations/>  
+	<http://github.com/blei-lab/edward/wiki>  
+	<http://dustintran.com/talks/Tran_Edward.pdf>  
+	"Deep Probabilistic Programming" - <https://arxiv.org/abs/1701.03757>  
 
   * Stan  
-	http://dustintran.com/talks/post_advi.pdf  
-	https://youtube.com/watch?v=6NXRCtWQNMg  
-	https://vimeo.com/132156595  
+	<http://dustintran.com/talks/post_advi.pdf>  
+	<https://youtube.com/watch?v=6NXRCtWQNMg>  
+	<https://vimeo.com/132156595>  
 
   * PyMC3  
-	http://pymc-devs.github.io/pymc3/  
+	<http://pymc-devs.github.io/pymc3/>  
 
   * Infer.NET  
-	http://research.microsoft.com/infernet  
+	<http://research.microsoft.com/infernet>  
 
   * WebPPL  
-	http://webppl.org  
+	<http://webppl.org>  
 
   * Church  
-	http://cocolab.stanford.edu/publications.html  
+	<http://cocolab.stanford.edu/publications.html>  
 
   * BLOG  
-	http://bayesianlogic.github.io  
+	<http://bayesianlogic.github.io>  
 
   * Venture  
-	http://probcomp.csail.mit.edu/bayesdb/  
-	https://youtube.com/watch?v=-8QMqSWU76Q  
-	https://youtube.com/watch?v=7_m7JCLKmTY  
+	<http://probcomp.csail.mit.edu/bayesdb/>  
+	<https://youtube.com/watch?v=-8QMqSWU76Q>  
+	<https://youtube.com/watch?v=7_m7JCLKmTY>  
 
   * FACTORIE  
-	http://factorie.cs.umass.edu  
-	http://youtube.com/watch?v=MEhN9K36BfQ  
-	http://youtube.com/watch?v=DkRLTToCw-0  
+	<http://factorie.cs.umass.edu>  
+	<http://youtube.com/watch?v=MEhN9K36BfQ>  
+	<http://youtube.com/watch?v=DkRLTToCw-0>  
 
 
 
@@ -219,10 +217,10 @@ bayesian inference and learning - https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian
 
 
 
-selected papers - https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
+[selected papers](https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca)
 
 
-recent interesting papers - https://github.com/brylevkirill/notes/blob/master/recent%20papers.txt
+[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/recent%20papers.txt)
 
 
 
@@ -239,7 +237,7 @@ recent interesting papers - https://github.com/brylevkirill/notes/blob/master/re
 
 >	"First, there is an ongoing quest for efficient inference approaches for languages that support a broad range of programming concepts. Promising directions include lifted inference, which aims at exploiting symmetries and abstraction over individuals to speed up inference, knowledge compilation, which has contributed many data structures for compactly representing and efficiently querying various types of knowledge, and approximate methods such as MCMC, which is used in many probabilistic programming languages, but still requires proposal functions to be custom made for the program at hand. There also is a need for a clear understanding of the relative computational complexity of the various probabilistic languages and concepts that exist to date. Another question that has only seen partial answers so far is how to efficiently deal with evidence and constraints in different inference techniques. Adapting and extending program transformation and analysis techniques to the probabilistic setting promises opportunities to recognize and exploit program parts that are amenable to more efficient inference. Concepts such as time and dynamics require inference approaches that on the one hand exploit repeated structure, but on the other hand can also deal with changing structure over time. Last but not least, it still is a challenge to learn probabilistic programs, although a wide variety of learning techniques for probabilistic programming has already been developed. Many key challenges for both parameter and structure learning remain, many of which are related to efficient inference, as learning requires inference."
 
-  - https://lirias.kuleuven.be/bitstream/123456789/504183/1/pp-tutorial-ijcai15.pdf
+  - <https://lirias.kuleuven.be/bitstream/123456789/504183/1/pp-tutorial-ijcai15.pdf>
 
 
 
@@ -256,7 +254,7 @@ recent interesting papers - https://github.com/brylevkirill/notes/blob/master/re
 
 >	"We develop automatic differentiation variational inference in Stan. ASVI leverages automatic transformations, an implicit non-Gaussian variational approximation, and automatic differentiation. This is a valuable tool. We can explore many models, and analyze large datasets with ease."
 
-  - http://research.microsoft.com/apps/video/default.aspx?id=259601 (Kucukelbir, 18:30)
+  - <http://research.microsoft.com/apps/video/default.aspx?id=259601> (Kucukelbir, 18:30)
 
 
 #### Ritchie, Horsfall, Goodman - ["Deep Armotized Inference for Probabilistic Programs"](https://arxiv.org/abs/1610.05735)
@@ -285,17 +283,17 @@ recent interesting papers - https://github.com/brylevkirill/notes/blob/master/re
 
 >	"This work brings together three key ideas -- compositionality, causality, and learning-to-learn --- challenging (in a good way) the traditional deep learning approach"
 
-  - http://youtube.com/watch?v=kzl8Bn4VtR8 (Lake)
-  - http://youtu.be/quPN7Hpk014?t=21m5s (Tenenbaum)
-  - http://techtalks.tv/talks/one-shot-learning-of-simple-fractal-concepts/63049/ (Lake)
-  - https://github.com/brendenlake/BPL
+  - <http://youtube.com/watch?v=kzl8Bn4VtR8> (Lake)
+  - <http://youtu.be/quPN7Hpk014?t=21m5s> (Tenenbaum)
+  - <http://techtalks.tv/talks/one-shot-learning-of-simple-fractal-concepts/63049/> (Lake)
+  - <https://github.com/brendenlake/BPL>
 
 
 #### Kulkarni, Kohli, Tenenbaum, Mansinghka - ["Picture: A Probabilistic Programming Language for Scene Perception"](http://mrkulk.github.io/www_cvpr15/)
 >	"Recent progress on probabilistic modeling and statistical learning, coupled with the availability of large training datasets, has led to remarkable progress in computer vision. Generative probabilistic models, or “analysis-by-synthesis” approaches, can capture rich scene structure but have been less widely applied than their discriminative counterparts, as they often require considerable problem-specific engineering in modeling and inference, and inference is typically seen as requiring slow, hypothesize-and-test Monte Carlo methods. Here we present Picture, a probabilistic programming language for scene understanding that allows researchers to ex- press complex generative vision models, while automatically solving them using fast general-purpose inference machinery. Picture provides a stochastic scene language that can express generative models for arbitrary 2D/3D scenes, as well as a hierarchy of representation layers for comparing scene hypotheses with observed images by matching not simply pixels, but also more abstract features (e.g., contours, deep neural network activations). Inference can flexibly integrate advanced Monte Carlo strategies with fast bottom-up datadriven methods. Thus both representations and inference strategies can build directly on progress in discriminatively trained systems to make generative vision more robust and efficient. We use Picture to write programs for generative 3D face analysis, 3D human pose estimation, and 3D object reconstruction – each in under 50 lines of code, and each competitive with specially engineered baselines."
 
-  - https://youtube.com/watch?v=quPN7Hpk014 (Tenenbaum)
-  - https://youtu.be/-8QMqSWU76Q?t=44m8s (Mansinghka)
+  - <https://youtube.com/watch?v=quPN7Hpk014> (Tenenbaum)
+  - <https://youtu.be/-8QMqSWU76Q?t=44m8s> (Mansinghka)
 
 
 #### Ouyang, Tessler, Ly, Goodman - ["Practical Optimal Experiment Design with Probabilistic Programs"](https://arxiv.org/abs/1608.05046)
@@ -327,7 +325,7 @@ recent interesting papers - https://github.com/brylevkirill/notes/blob/master/re
 
 >	"Our novel approach to program synthesis via probabilistic programming raises at least as many questions as it answers. One key high level question this kind of work sharpens is, really, what is the goal of program synthesis? By framing program synthesis as a probabilistic inference problem we are implicitly naming our goal to be that of estimating a distribution over programs that obey some constraints rather than as a search for a single best program that does the same. On one hand, the notion of regularising via a generative model is natural as doing so predisposes inference towards discovery of programs that preferentially possess characteristics of interest (length, readability, etc.). On the other hand, exhaustive computational inversion of a generative model that includes evaluation of program text will clearly remain intractable for the foreseeable future. For this reason greedy and stochastic search inference strategies are basically the only options available. We employ the latter, and MCMC in particular, to explore the posterior distribution of programs whose outputs match constraints knowing full-well that its actual effect in this problem domain, and, in particular finite time, is more-or-less that of stochastic search. We could add an annealing temperature and schedule to clarify our use of MCMC as search, however, while ergodic, our system is sufficiently stiff to not require quenching (and as a result almost certainly will not achieve maxima in general). It is pleasantly surprising, however, that the Monte Carlo techniques we use were able to find exemplar programs in the posterior distribution that actually do a good job of generalising observed data in the experiments we report. It remains an open question whether or not sampling procedures are the best stochastic search technique to use for this problem in general however. Perhaps by directly framing the problem as one of search we might do better, particularly if our goal is a single best program. Techniques ranging from genetic algorithms to Monte Carlo tree search all show promise and bear consideration. One interesting way to take this work forward is to introduce techniques from the cumulative/incremental learning community, perhaps by adding time-dependent and hierarchical dimensions to the program text generative model. In the specific context of learning sampler program text, it would be convenient if, for instance when learning the program text for sampling from a parameterised normal distribution, one had access to an already learned subroutine for sampling from a standard normal. In related work from the field of inductive programming large gains in performance were observed when the learning task was structured in this way. Our example inference tasks are just the start. What inspired and continues to inspire us is our the internal experience of our own ability to reason about procedure. Given examples, humans clearly are able to generate program text for procedures that compute or otherwise match examples. Humans can physically simulate Turing machines, and, it would seem clear, are capable doing something at least as powerful when deducing the action of a particular piece of program text from the text itself. No candidate artificial intelligence solution will be complete without the inclusion of such ability. Those without will always be deficient in the sense that it is apparent that humans can internally represent and reason about procedure. Perhaps some generalised representation of procedure is the actual expressivity class of human reasoning. It certainly can’t be less."
 
-  - http://research.microsoft.com/apps/video/default.aspx?id=209278 (Perov, 37:00)
+  - <http://research.microsoft.com/apps/video/default.aspx?id=209278> (Perov, 37:00)
 
 
 

@@ -49,25 +49,25 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 
   *(Geoff Hinton)*
 
-##
+----
 
   "Where do the symbols and self-symbols underlying consciousness and sentience come from? I think they come from data compression during problem solving. While a problem solver is interacting with the world, it should store the entire raw history of actions and sensory observations including reward signals. The data is ‘holy’ as it is the only basis of all that can be known about the world. If you can store the data, do not throw it away! Brains may have enough storage capacity to store 100 years of lifetime at reasonable resolution. As we interact with the world to achieve goals, we are constructing internal models of the world, predicting and thus partially compressing the data history we are observing. If the predictor/compressor is a biological or artificial recurrent neural network (RNN), it will automatically create feature hierarchies, lower level neurons corresponding to simple feature detectors similar to those found in human brains, higher layer neurons typically corresponding to more abstract features, but fine-grained where necessary. Like any good compressor, the RNN will learn to identify shared regularities among different already existing internal data structures, and generate prototype encodings (across neuron populations) or symbols for frequently occurring observation sub-sequences, to shrink the storage space needed for the whole (we see this in our artificial RNNs all the time). Self-symbols may be viewed as a by-product of this, since there is one thing that is involved in all actions and sensory inputs of the agent, namely, the agent itself. To efficiently encode the entire data history through predictive coding, it will profit from creating some sort of internal prototype symbol or code (e.g. a neural activity pattern) representing itself. Whenever this representation becomes activated above a certain threshold, say, by activating the corresponding neurons through new incoming sensory inputs or an internal ‘search light’ or otherwise, the agent could be called self-aware. No need to see this as a mysterious process - it is just a natural by-product of partially compressing the observation history by efficiently encoding frequent observations."
 
   *(Juergen Schmidhuber)*
 
-##
+----
 
   "A plausible definition of "reasoning" could be "algebraically manipulating previously acquired knowledge in order to answer a new question". This definition covers first-order logical inference or probabilistic inference. It also includes much simpler manipulations commonly used to build large learning systems. For instance, we can build an optical character recognition system by first training a character segmenter, an isolated character recognizer, and a language model, using appropriate labelled training sets. Adequately concatenating these modules and fine tuning the resulting system can be viewed as an algebraic operation in a space of models. The resulting model answers a new question, that is, converting the image of a text page into a computer readable text. This observation suggests a conceptual continuity between algebraically rich inference systems, such as logical or probabilistic inference, and simple manipulations, such as the mere concatenation of trainable learning systems. Therefore, instead of trying to bridge the gap between machine learning systems and sophisticated "all-purpose" inference mechanisms, we can instead algebraically enrich the set of manipulations applicable to training systems, and build reasoning capabilities from the ground up."
 
   *(Leon Bottou)*
 
-##
+----
 
   "Knowledge is essential for natural language understanding. The interesting question is what knowledge should we bother to put in versus what can we learn. Foundational science behind used to be knowledge representation, and then it went away and now it is machine learning. But the truth is you need both. The question is what of which should you combine. Learning is a "knowledge lever". Deductive inference is a "knowledge lever". Better then memorization where there is no lever. But deduction is not a sufficiently powerful lever for things like NLP, because there are things like open world and long tails - deduction is not enough. Induction is an amazing lever - you got a ton of leverage out of very litte knowledge, but you need some knowledge. You can have the greatest lever but without things to push on one side the other one doesn't go up. So if you think about knowledge as a lever the question becomes what knowledge do you want to use. We want to encode high-leverage knowledge. You don't want to waste efforts encoding knowlege you can get by annotating things or just by going to the web and reading documents - that's truly a waste of time. What is high-leverage knowledge - it's one with one or both following characterists. It's hard to learn - some things you have a tons of data for, some things you don't. Some things you can learn with a greedy learner and weight optimization, some things you can't. It's the letter you really want to put in because if you don't you really miss something. And the other side of this coin is you want to put knowledge that is helpful for learning - it's not a question of knowledge or learning. You know there is free-lunch theorem which says there is no such thing as learning without knowledge. So the question is which knowledge helps learning - that's what I want to put in. You want to put a narrower effort that adds job a thousand when I add that to learning. Next thing is knowledge should be stated declaratively. Philosophically it's probably not, but from engineering point of you it's more comprehensible than knowledge that's encoded procedurally or in deep neural network (as much as we like idea of training everything together). You want something you can get a handle to get lever - you don't want something opaque, you can't work with that. Knowledge stated declaratively is also more portable (take it from one task to another), is more extensible (compose pieces of knowledge got in different ways). And the most important, it supports refinement loop in learning. Learning is not a one-shot thing - you put in some knowledge that's very weak (from SVM or decision tree) and then you run it on the data, and then you look what happens - if you don't understand what learner is giving, you can't do refinement loop. If you understand knowledge that's going in and going out, you can figure out what to change. And doing this change and relearn, and figure out what went wrong - putting the knowledge that explains what went wrong. If this is in comprehensible language the end result would be much better than if you have something opaque. What language should be used to store knowledge. Obviously, it should be natural language - there is no better language, although it is hard to deal with."
 
   *(Pedro Domingos)*
 
-##
+----
 
   "AI started with small data and rich semantic theories. The goal was to build systems that could reason over logical models of how the world worked; systems that could answer questions and provide intuitive, cognitively accessible explanations for their results. There was a tremendous focus on domain theory construction, formal deductive logics and efficient theorem proving. We had expert systems, rule-bases, forward chaining, backward chaining, modal logics, naïve physics, lisp, prolog, macro theories, micro theories, etc. The problem, of course, was the knowledge acquisition bottleneck; it was too difficult, slow and costly to render all common sense knowledge into an integrated, formal representation that automated reasoning engines could digest. In the meantime, huge volumes of unstructured data became available, compute power became ever cheaper and statistical methods flourished. AI evolved from being predominantly theory-driven to predominantly data-driven. Automated systems generated output using inductive techniques. Training over massive data produced flexible and capable control systems, powerful predictive engines in domains ranging from language translation to pattern recognition, from medicine to economics. Coming from a background in formal knowledge representation and automated reasoning, the writing was on the wall - big data and statistical machine learning was changing the face of AI and quickly."
 
@@ -75,7 +75,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 
   *(David Ferucci)*
 
-##
+----
 
   "Knowledge organizes our understanding of the world, determining what we expect given what we have already seen. Our predictive representations have two key properties: they are productive, and they are graded. Productive generalization is possible because our knowledge decomposes into concepts - elements of knowledge that are combined and recombined to describe particular situations. Gradedness is the observable effect of accounting for uncertainty - our knowledge encodes degrees of belief that lead to graded probabilistic predictions. To put this a different way, concepts form a combinatorial system that enables description of many different situations; each such situation specifies a distribution over what we expect to see in the world, given what we have seen. We may think of this system as a probabilistic language of thought in which representations are built from language-like composition of concepts and the content of those representations is a probability distribution on world states. Probabilistic language of thought hypothesis (informal version): Concepts have a language-like compositionality and encode probabilistic knowledge. These features allow them to be extended productively to new situations and support flexible reasoning and learning by probabilistic inference."
 
@@ -112,7 +112,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 
   *(Joseph Weizenbaum, creator of ELIZA chat bot)* "No general solution to the problem of computer understanding of natural language is possible, i.e. language is understood only in contextual frameworks, that even these can be shared by people to only a limited extent, and that consequently even people are not embodiments of any such general solution."
 
-##
+----
 
   [Natural Language Processing](https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt)
 
@@ -142,8 +142,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   ["Schema.org: Evolution of Structured Data on the Web"](http://queue.acm.org/detail.cfm?id=2857276)  
 >	"We report some key schema.org adoption metrics from a sample of 10 billion pages from a combination of the Google index and Web Data Commons. In this sample, 31.3% of pages have schema.org markup, up from 22% one year ago. Structured data markup is now a core part of the modern web."
 
-
-  RDF on the web with schema.org types as the largest existing structured knowledge base - http://youtube.com/watch?v=-UljtBjV8jM (Guha)
+  RDF on the web with schema.org types as the largest existing structured knowledge base - <http://youtube.com/watch?v=-UljtBjV8jM> (Guha)
 >	"I don't think we even have the begginings of theory [filtering, entity resolution, graph reconciliation]"
 
 
@@ -154,7 +153,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   - limited or no reuse of identifiers
   - metadata not always representative of content
 
-##
+----
 
 ### Relational Machine Learning (on knowledge graphs)
 
@@ -176,17 +175,17 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   Knowledge representation formalisms use (a subset of) first-order logic to describe relational properties of a domain in a general manner (universal quantification) and draw upon probabilistic graphical models (such as Bayesian networks or Markov networks) to model the uncertainty.  
   Not strictly limited to learning aspects - equally concerned with reasoning (specifically probabilistic inference) and knowledge representation.  
 
-##
+----
 
-  "Statistical Relational Learning" tutorial by Tresp - http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning/
+  "Statistical Relational Learning" tutorial by Tresp - <http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning/>
 
   "A Review of Relational Machine Learning for Knowledge Graphs: From Multi-Relational Link Prediction to Automated Knowledge Graph Construction"
-	by Nickel, Murphy, Tresp, Gabrilovich - http://arxiv.org/abs/1503.00759
+	by Nickel, Murphy, Tresp, Gabrilovich - <http://arxiv.org/abs/1503.00759>
 
   "Constructing and Mining Web-Scale Knowledge Graphs" tutorial by Gabrilovich and Bordes -
-	http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs/
+	<http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs/>
 
-##
+----
 
   "Multi-relational learning can be categorized into three categories:
   - *statistical relational learning* which directly encodes multi-relational graphs using probabilistic models such as Markov Logic Networks
@@ -204,55 +203,55 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   - matrix factorization & universal schema (Riedel'13)
   - embedding models (Bordes'11)
 
-##
+----
 
 #### random walk inference
 
   Path Ranking Algorithm *(used in [Google Knowledge Vault](https://youtu.be/i2r5J4XAhsw?t=5m7s) and NELL)* -
-	http://cs.cmu.edu/~nlao/publication/2012/defense.pdf
+	<http://cs.cmu.edu/~nlao/publication/2012/defense.pdf>
 
   subgraph feature extraction as improvement over PRA by Matt Gardner *(used in NELL)* -
-	http://youtube.com/watch?v=dp2waL7OLbI + https://www.cs.cmu.edu/~mg1/paper.pdf  
+	<http://youtube.com/watch?v=dp2waL7OLbI> + <https://www.cs.cmu.edu/~mg1/paper.pdf>  
   "Reading and Reasoning with Knowledge Graphs" thesis by Matt Gardner -
-	http://www.cs.cmu.edu/~mg1/thesis.pdf  
+	<http://www.cs.cmu.edu/~mg1/thesis.pdf>  
 
   PRA with distributed representations and Recurrent Neural Network *(used in Epistemological database)* -
-	http://youtube.com/watch?v=mSrkzc0Nksg + https://docs.google.com/file/d/0B_hicYJxvbiOTUxZMWY5T2N2VG8
+	<http://youtube.com/watch?v=mSrkzc0Nksg> + <https://docs.google.com/file/d/0B_hicYJxvbiOTUxZMWY5T2N2VG8>
 
   PRA over proof space for first-order logic *(used in ProPPR)* -
-	http://youtu.be/--pYaISROqE?t=12m35s + https://drive.google.com/file/d/0B_hicYJxvbiOc05xNEhvdVVSQWc
+	<http://youtu.be/--pYaISROqE?t=12m35s> + <https://drive.google.com/file/d/0B_hicYJxvbiOc05xNEhvdVVSQWc>
 
-##
+----
 
 #### continuous embeddings
 
-  overview by Antoines Bordes - http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs/ (part 2, 1:07:43)  
-  overview by Jason Weston - http://youtube.com/watch?v=FVjuwv1_EDw  
+  overview by Antoines Bordes - <http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs/> (part 2, 1:07:43)  
+  overview by Jason Weston - <http://youtube.com/watch?v=FVjuwv1_EDw>  
 
   used in Google Knowledge Vault  
-	http://youtu.be/i2r5J4XAhsw?t=3m7s  
-	http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning/ (part 2, 1:19:37)  
-	http://arxiv.org/abs/1503.00759  
+	<http://youtu.be/i2r5J4XAhsw?t=3m7s>  
+	<http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning/> (part 2, 1:19:37)  
+	<http://arxiv.org/abs/1503.00759>  
 
-  implementations of DistMult, Model E, Model F, Model N, Model O - https://github.com/dirkweissenborn/genie-kb/blob/master/model/models.py
+  implementations of DistMult, Model E, Model F, Model N, Model O - <https://github.com/dirkweissenborn/genie-kb/blob/master/model/models.py>
 
   [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#distributed-representations)
 
-##
+----
 
 #### latent factor models
 
   with latent features one gets collective learning - information can globally propagate in the network of random variables
 
-  http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs/ (part 2, 1:00:12)
+  <http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs/> (part 2, 1:00:12)
 
-##
+----
 
 #### matrix factorization of universal schema
 
   overview by Andrew McCallum -  
-	http://yahoolabs.tumblr.com/post/113969611311/big-thinker-andrew-mccallum-discusses-the  
-	http://videolectures.net/akbcwekex2012_mccallum_base_construction/  
+	<http://yahoolabs.tumblr.com/post/113969611311/big-thinker-andrew-mccallum-discusses-the>  
+	<http://videolectures.net/akbcwekex2012_mccallum_base_construction/>  
 
   - unifying traditional canonical relations, such as those of the Freebase schema, with OpenIE surface form patterns in a universal schema
   - completing a knowledge base of such a schema using matrix factorization
@@ -262,31 +261,31 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   *advantage*:  matrix factorization learns better embeddings for entity-pairs for which only surface form patterns are observed, and these can also lead to better extractions of canonical relations  
 
   logic embedding (combining with knowledge represented as first-order logic) -  
- 	http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/  
-	http://rockt.github.io/slides/2015-naacl.pdf  
+ 	<http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/>  
+	<http://rockt.github.io/slides/2015-naacl.pdf>  
 
-  [Epistemological Database](#epistemological-database)
+  [Epistemological Database](#probabilistic-database---epistemological-database)
 
-##
+----
 
 #### tensor factorization of knowledge graph
 
   Machine Learning with Knowledge Graphs" by Volker Tresp -
-	http://videolectures.net/eswc2014_tresp_machine_learning/ + http://www.dbs.ifi.lmu.de/~tresp/papers/ESWC-Keynote.pdf
+	<http://videolectures.net/eswc2014_tresp_machine_learning/> + <http://www.dbs.ifi.lmu.de/~tresp/papers/ESWC-Keynote.pdf>
 
-  "Machine Learning on Linked Data: Tensors and Their Applications In Graph-Structured Domains" - http://www.cip.ifi.lmu.de/~nickel/iswc2012-slides/#/  
-  "Tensor Factorization for Relational Learning" (RESCAL model) - http://edoc.ub.uni-muenchen.de/16056/1/Nickel_Maximilian.pdf  
+  "Machine Learning on Linked Data: Tensors and Their Applications In Graph-Structured Domains" - <http://www.cip.ifi.lmu.de/~nickel/iswc2012-slides/#/>  
+  "Tensor Factorization for Relational Learning" (RESCAL model) - <http://edoc.ub.uni-muenchen.de/16056/1/Nickel_Maximilian.pdf>  
 
-  "Towards Combined Matrix and Tensor Factorization for Universal Schema Relation Extraction" - https://rockt.github.io/pdf/singh2015towards.pdf
+  "Towards Combined Matrix and Tensor Factorization for Universal Schema Relation Extraction" - <https://rockt.github.io/pdf/singh2015towards.pdf>
 
-##
+----
 
 #### Mixture models
 
   *advantage*:  no need for good prior knowledge about relational dependencies as in bayes nets and markov nets  
   *advantage*:  great simplicity of the model: no need to think about rules, conditional independencies, loops or global partition functions  
 
-##
+----
 
 #### Bayesian network
 
@@ -296,7 +295,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   *disadvantage*:  as always in bayes nets, one needs to define a complete system, i.e. conditional probabilities for each node in the ground bayes net (which can be demanding)  
   both problems can be solved with Markov Logic Network  
 
-##
+----
 
 #### Markov network
 
@@ -306,7 +305,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   *disadvantage*:  maximum likelihood learning with complete data is already non-trivial  
   *disadvantage*:  no causal interpretation  
 
-##
+----
 
 **Markov Logic Network**
 
@@ -314,14 +313,14 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   - in MLN one can use any FOL formula, not just the ones derived from bayes nets
   - MLN does not require a specific number of formulae
   - in MLN no problem if a formula is sometimes false, formula weight corresponds to degree that formula is supported in the training data
-  - formulae can be derived using ILP techniques (FOIL, Claudian)
+  - formulae can be derived using ILP techniques
 
   *advantage*:  no need to worry about directed loops or parameter constraints  
   *advantage*:  no need to worry about completeness, there can be any number of formulae (from none to more than there are ground atoms) - with no formulae each configuration of node states has the same probability (maximum entropy principle)  
   *disadvantage*:  no interpretation of local conditional distribution (no causal interpretation)  
   *disadvantage*:  difficult parameter learning (unlike in bayes nets with complete data) due to global normalization constant (sum over all states) - typical approach: closed-world assumption and optimization of a pseudo-likelihood  
 
-  [Markov Logic Network](#markov-logic-network)
+  [Markov Logic Network](#probabilistic-database---markov-logic-network)
 
 
 
@@ -333,19 +332,19 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   Suciu, Olteanu, Re, Koch - ["Probabilistic Databases"](http://www.dblab.ntua.gr/~gtsat/collection/Morgan%20Claypool/Probabilistic%20Databases%20-%20Dan%20Suciu%20-%20Morgan%20Clayman.pdf)
 >	"Probabilistic databases are databases where the value of some attributes or the presence of some records are uncertain and known only with some probability. Applications in many areas such as information extraction, RFID and scientific data management, data cleaning, data integration, and financial risk assessment produce large volumes of uncertain data, which are best modeled and processed by a probabilistic database. This book presents the state of the art in representation formalisms and query processing techniques for probabilistic data. It starts by discussing the basic principles for representing large probabilistic databases, by decomposing them into tuple-independent tables, block-independent-disjoint tables, or U-databases. Then it discusses two classes of techniques for query evaluation on probabilistic databases. In extensional query evaluation, the entire probabilistic inference can be pushed into the database engine and, therefore, processed as effectively as the evaluation of standard SQL queries. The relational queries that can be evaluated this way are called safe queries. In intensional query evaluation, the probabilistic inference is performed over a propositional formula called lineage expression: every relational query can be evaluated this way, but the data complexity dramatically depends on the query being evaluated, and can be #P-hard. The book also discusses some advanced topics in probabilistic data management such as top-k query processing, sequential probabilistic databases, indexing and materialized views, and Monte Carlo databases."
 
-  https://en.wikipedia.org/wiki/Probabilistic_logic
+  <https://en.wikipedia.org/wiki/Probabilistic_logic>
 >	"The aim of a probabilistic logic is to combine the capacity of probability theory to handle uncertainty with the capacity of deductive logic to exploit structure. The result is a richer and more expressive formalism with a broad range of possible application areas."
 
   ["10 Years of Probabilistic Querying - What Next?"](https://lirias.kuleuven.be/bitstream/123456789/403578/1/theobald-adbis13.pdf)
 
-##
+----
 
   - [Epistemological Database](#probabilistic-database---epistemological-database)
   - [Markov Logic Network](#probabilistic-database---markov-logic-network)
   - [Probabilistic Soft Logic](#probabilistic-database---probabilistic-soft-logic)
   - [ProPPR](#probabilistic-database---proppr)
 
-##
+----
 
 ### probabilistic database - Epistemological Database
 
@@ -359,9 +358,9 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   Limin Yao -  
 	["Universal Schema for Knowledge Representation from Text and Structured Data"](https://youtube.com/watch?v=odI3RznREY4)
 
-  implementation: http://factorie.cs.umass.edu
+  implementation: <http://factorie.cs.umass.edu>
 
-##
+----
 
   - information extraction with joint inference
   - probabilistic databases to manage uncertainty at scale
@@ -380,58 +379,59 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   - inject knowledge into machine reading
   - derive true facts from raw evidence data
 
-##
+----
 
-  epistemological KB: "truth is inferred, not observed"
-  - entities/relations never input, only "mentions"
-  - ability to change our mind about previously made (wrong) decisions
+  epistemological KB:  
+  - "truth is inferred, not observed"  
+  - entities/relations never input, only "mentions"  
+  - ability to change our mind about previously made (wrong) decisions  
 
-  human edits as evidence:
-  - traditional: change db record of truth
-  - mini-document "Nov 15: Scott said this was true"
-  - sometimes humans are wrong, disagree, out-of-date -> jointly reason about truth & editors' reliability/reputation
+  human edits as evidence:  
+  - traditional: change db record of truth  
+  - mini-document "Nov 15: Scott said this was true"  
+  - sometimes humans are wrong, disagree, out-of-date -> jointly reason about truth & editors' reliability/reputation  
 
-  never ending inference (constantly bubbling in background):
-  - traditional: KB entries locked in
-  - KB entries always reconsidered with more evidence, time
+  never ending inference (constantly bubbling in background):  
+  - traditional: KB entries locked in  
+  - KB entries always reconsidered with more evidence, time  
 
-##
+----
 
-  entity resolution:
-  - foundational, not just for coreference of entity-mentions
-  - align values, ontologies, schemas, relations, events
+  entity resolution:  
+  - foundational, not just for coreference of entity-mentions  
+  - align values, ontologies, schemas, relations, events  
   - joint entity linking (identifying group of mentions in document) and entity discovery (identifying cluster of mentions across documents)  
 
-  styles of relation extraction:
-  - supervised
-  - distantly supervised
-  - unsupervised (no schema, OpenIE)
-  - unsupervised (schema discovery)
-  - universal schema
+  styles of relation extraction:  
+  - supervised  
+  - distantly supervised  
+  - unsupervised (no schema, OpenIE)  
+  - unsupervised (schema discovery)  
+  - universal schema  
 
-##
+----
 
-  probabilistic db with universal schema:
-  - schema = union of all inputs: natural langauge & databases
-    * embrace diversity and ambiguity of original inputs
-    * don't try to force semantics into pre-defined boxes
-    * note: combining "structured" & "natural" schema
-  - learn implicature among entity-relations
-    * "fill in" unobserved relations
-    * implicit alignment of "structured" & "natural"
+  probabilistic db with universal schema:  
+  - schema = union of all inputs: natural langauge & databases  
+    * embrace diversity and ambiguity of original inputs  
+    * don't try to force semantics into pre-defined boxes  
+    * note: combining "structured" & "natural" schema  
+  - learn implicature among entity-relations  
+    * "fill in" unobserved relations  
+    * implicit alignment of "structured" & "natural"  
 
-##
+----
 
   low-dimensional embeddings of logic:
 
   "Many machine reading approaches, from shallow information extraction to deep semantic parsing, map natural language to symbolic representations of meaning. Representations such as first-order logic capture the richness of natural language and support complex reasoning, but often fail in practice due to their reliance on logical background knowledge and the difficulty of scaling up inference. In contrast, low-dimensional embeddings (i.e. distributional representations) are efficient and enable generalization, but it is unclear how reasoning with embeddings could support the full power of symbolic representations such as first-order logic. In this proof-of-concept paper we address this by learning embeddings that simulate the behavior of first-order logic."
 
-  http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/
+  <http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/>
 
-  http://yoavartzi.com/sp14/slides/rockt.sp14.pdf  
-  https://b8ca8e88-a-62cb3a1a-s-sites.googlegroups.com/site/learningsemantics2014/SebastianRiedel.pdf  
+  <http://yoavartzi.com/sp14/slides/rockt.sp14.pdf>  
+  <https://b8ca8e88-a-62cb3a1a-s-sites.googlegroups.com/site/learningsemantics2014/SebastianRiedel.pdf>  
 
-##
+----
 
 ### probabilistic database - Markov Logic Network
 
@@ -447,7 +447,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 	["Machine Learning for the Web: A Unified View"](http://videolectures.net/bsciw08_domingos_mlwuv/)  
 	["Statistical Modeling of Relational Data"](http://videolectures.net/kdd07_domingos_smord/)  
 
-  overview by Volker Tresp - http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning/ (part 2)
+  overview by Volker Tresp - <http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning/> (part 2)
 
 
   ["What’s Missing in AI: The Interface Layer"](http://homes.cs.washington.edu/~pedrod/papers/ai100.pdf) by Pedro Domingos
@@ -459,21 +459,25 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 
   ["Markov Logic"](http://homes.cs.washington.edu/~pedrod/papers/pilp.pdf) by Domingos, Kok, Lowd, Poon, Richardson, Singla
 
-##
+----
 
   "Markov Logic Networks use weighted first order logic formulas to construct probabilistic models, and specify distributions over possible worlds. Markov Logic Networks can also be encoded as probabilistic programs."  
   "Most learning algorithms only look at a single relation - a single table of data - and this is very limiting. Real databases have many relations, and we want to mine straight from them. This requires a pretty substantial rethink of how to do statistical learning, because samples are no longer independent and identically distributed, due to joins, etc. The solution in Markov logic networks is to use first-order logic to express patterns among multiple relations - which it can easily do - but treat logical formulas as features in a Markov network or log-linear model, which sets up a probability distribution over relational databases that we can then use to answer questions. The goal is to provide for machine learning and data mining something akin to what the relational model and SQL provide for databases."  
   "Logical AI has focused mainly on complexity of the real world while statistical AI on uncertainty. Markov logic combines the two by attaching weights to first-order formulas and viewing them as templates for features of Markov networks. Inference algorithms for Markov logic draw on ideas from satisfiability, Markov chain Monte Carlo and knowledge-based model construction. Learning algorithms are based on the voted perceptron, pseudo-likelihood and inductive logic programming."  
 
-##
+----
 
   "Markov Logic Networks represent uncertainty in terms of weights on the logical rules as in the example:  
+
 	∀x. Smoke(x) ⇒ Cancer(x) | 1.5  
 	∀x.y Friend(x, y) ⇒ (Smoke(x) ⇔ Smoke(y)) | 1.1  
+
   The example states that if someone smokes, there is a chance that they get cancer, and the smoking behaviour of friends is usually similar. Markov logic uses such weighted rules to derive a probability distribution over possible worlds through an undirected graphical model. This probability distribution over possible worlds is then used to draw inferences. Weighting the rules is a way of softening them compared to hard logical constraints and thereby allowing situations in which not all clauses are satisfied.  
   With the weighted rules, a set of constants need to be specified. We can add constants representing two persons, Anna (A) and Bob (B). Probabilistic logic uses the constants to “ground” atoms with variables, so we get “ground atoms” like Smoke(A), Smoke(B), Cancer(A), Cancer(B), Friend(A, A), Friend(A, B), Friend(B, A), Friend(B, B). Rules are also grounded by replacing each atom with variables by all its possible ground atoms.  
   MLNs take as input a set of weighted first-order formulas F = F1, ..., Fn. They then compute a set of ground literals by grounding all predicates occurring in F with all possible constants in the system. Next, they define a probability distribution over possible worlds, where a world is a truth assignment to the set of all ground literals. The probability of a world depends on the weights of the input formulas F as follows: The probability of a world increases exponentially with the total weight of the ground clauses that it satisfies. The probability of a given world x is defined as:  
+
 	P(X = x) = 1/Z * exp(Sum over i(wi * ni(x)))  
+
   where Z is the partition function, i ranges over all formulas Fi in F, wi is the weight of Fi, and ni(x) is the number of groundings of Fi that are true in the world x.  
   This probability distribution P(X = x) over possible worlds is computed using a Markov network, an undirected graphical model (hence the name Markov Logic Networks). In this Markov network, the nodes are the ground literals, and two nodes are connected by an edge if they co-occur in a ground clause, such that the cliques in the network correspond to ground clauses. A joint assignment of values to all nodes in the graph is a possible world, a truth assignment to the ground literals.  
   In addition to the set R of weighted formulas, an MLN takes an evidence set E asserting some truth values about some of the random variables, e.g. Cancer(A) means that Anna has cancer. Marginal inference for MLNs calculates the probability P(Q|E, R) for a query formula Q."  
@@ -482,7 +486,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 
   "In Markov Logic, possible worlds or interpretations (i.e., truth value assignments to ground atoms) become less likely as they violate more groundings of soft constraints, and have probability zero if they violate some grounding of a hard constraint. It is well known that the transitive closure of a binary relation cannot be represented in first order logic, but requires second order constructs. Thus, the hard constraints in a Markov Logic network, which form a first order logic theory, cannot enforce probability zero for all worlds that do not respect the transitive closure of a binary relation. On the other hand, the least Herbrand semantics of definite clause logic (i.e., pure Prolog) naturally represents such transitive closures. For instance, under the least Herbrand semantics, path(A, C) :− edge(A, C). path(A, C) :− edge(A, B), path(B, C). inductively defines path as the transitive closure of the relation edge, that is, a ground atom path(a, c) is true if and only if there is a sequence of true edge atoms connecting a and c. Note that an MLN that maps the definition above to the hard constraints edge(A, C) → path(A, C). edge(A, B) ∧ path(B, C) → path(A, C) enforces the transitivity property, as these rules are violated if there is a sequence of edges connecting two nodes, but the corresponding path atom is false. Still, these hard constraints do not correspond to the transitive closure, as they can for instance be satisfied by setting all ground path atoms to true, independently of the truth values of edge atoms."
 
-##
+----
 
   - set of weighted clauses in FOPL
   - larger weight indicates stronger belief that the clause should hold
@@ -498,23 +502,23 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   - can utilize prior knowledge in both symbolic and probabilistic forms
   - inherits computational intractability of general methods for both logical and probabilistic inference and learning: inference in FOPC is semi-decidable, inference in general graphical models is P-space complete
 
-##
+----
 
   Tractable Markov Logic  
 
   (Pedro Domingos) "I'm working on Markov logic networks, with an emphasis on scaling them up to big data. Our approach is to use tractable subsets of Markov logic, in the same way that SQL is a tractable subset of first-order logic. One of our current projects is to build something akin to Google's knowledge graph, but much richer, based on data from Freebase, DBpedia, etc. We call it a Tractable Probabilistic Knowledge Base - and it can answer questions about the entities and relations in Wikipedia, etc. We're planning to make a demo version available on the Web, and then we can learn from users' interactions with it."
 
-  overview by Pedro Domingos - http://youtube.com/watch?v=6ZJzfRdCZjc
+  overview by Pedro Domingos - <http://youtube.com/watch?v=6ZJzfRdCZjc>
 
-  "Tractable Probabilistic Knowledge Base: Wikipedia and Beyond" - http://aaai.org/ocs/index.php/WS/AAAIW14/paper/download/8722/8239  
-  "Learning and Inference in Tractable Probabilistic Knowledge Bases" - http://homes.cs.washington.edu/~pedrod/papers/uai15.pdf  
+  "Tractable Probabilistic Knowledge Base: Wikipedia and Beyond" - <http://aaai.org/ocs/index.php/WS/AAAIW14/paper/download/8722/8239>  
+  "Learning and Inference in Tractable Probabilistic Knowledge Bases" - <http://homes.cs.washington.edu/~pedrod/papers/uai15.pdf>  
 
-##
+----
 
-  application to question answering by AI2 - http://arxiv.org/abs/1507.03045 + http://akbc.ws/2014/slides/etzioni-nips-akbc.pdf (slides 30-37)  
-  application to information extraction, integration and curation by DeepDive - http://deepdive.stanford.edu/doc/advanced/markov_logic_network.html  
+  application to question answering by AI2 - <http://arxiv.org/abs/1507.03045> + <http://akbc.ws/2014/slides/etzioni-nips-akbc.pdf> (slides 30-37)  
+  application to information extraction, integration and curation by DeepDive - <http://deepdive.stanford.edu/doc/advanced/markov_logic_network.html>  
 
-##
+----
 
   implementations:
 
@@ -539,7 +543,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   - [ProbKB](http://dsr.cise.ufl.edu/tag/probkb/)  
 	["Web-Scale Knowledge Inference Using Markov Logic Networks"](https://cise.ufl.edu/~yang/doc/slg2013.pdf)  
 
-##
+----
 
 ### probabilistic database - Probabilistic Soft Logic
 
@@ -554,25 +558,25 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   - inference finds truth value of all atoms that best satisfy the rules and evidence  (in MLN inference finds probability of atoms given the rules and evidence)
   - MPE inference: Most Probable Explaination  (in MLN calculates conditional probability of a query atom given evidence)
 
-##
+----
 
-  http://psl.cs.umd.edu
+  <http://psl.cs.umd.edu>
 
-  https://github.com/linqs/psl/wiki/Introduction-to-probabilistic-soft-logic
+  <https://github.com/linqs/psl/wiki/Introduction-to-probabilistic-soft-logic>
 
-  Lise Getoor - https://youtube.com/watch?v=1lwGKhFAXU0  
-  Raymond Mooney - http://youtube.com/watch?v=GhBHRhIsQIE  
-  Jay Pujara - http://youtube.com/watch?v=z_VzaNy36xE  
+  Lise Getoor - <https://youtube.com/watch?v=1lwGKhFAXU0>  
+  Raymond Mooney - <http://youtube.com/watch?v=GhBHRhIsQIE>  
+  Jay Pujara - <http://youtube.com/watch?v=z_VzaNy36xE>  
 
-  implementation: https://github.com/linqs/psl
+  implementation: <https://github.com/linqs/psl>
 
-##
+----
 
 ### probabilistic database - ProPPR
 
   graph-algorithm inferences over local groundings of first-order logic programs
 
-  William Cohen - http://youtu.be/--pYaISROqE?t=12m35s + http://www.cs.cmu.edu/afs/cs/Web/People/wcohen/nlu-2014.ppt
+  William Cohen - <http://youtu.be/--pYaISROqE?t=12m35s> + <http://www.cs.cmu.edu/afs/cs/Web/People/wcohen/nlu-2014.ppt>
 
   "First-order probabilistic language which allows approximate “local groundings” for answering query to be constructed in time independent of database size. Extension to Stochastic Logic Programs that is biased towards short derivations; it is also closely related to an earlier relational learning algorithm called the Path Ranking Algorithm. Problem of constructing proofs for this logic is related to computation of Personalized PageRank on a linearized version of the proof space. It has proveably-correct approximate grounding scheme, based on the PageRank-Nibble algorithm, and fast and easily-parallelized weight-learning algorithm. Learning for ProPPR is orders magnitude faster than learning for Markov Logic Networks. Allows mutual recursion (joint learning) in KB inference. Can learn weights for a mutually recursive program with hundreds of clauses, which define scores of interrelated predicates, over a KB containing one million entities."
 
@@ -596,7 +600,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 
   scales to 10^5-10^6 facts and requires 10^3 training queries
 
-  https://github.com/TeamCohen/ProPPR
+  <https://github.com/TeamCohen/ProPPR>
 
 
 
@@ -607,7 +611,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 
 
   "Concepts in a Probabilistic Language of Thought" by Goodman, Tenenbaum, Gerstenberg -
-	https://web.stanford.edu/~ngoodman/papers/ConceptsChapter-final.pdf
+	<https://web.stanford.edu/~ngoodman/papers/ConceptsChapter-final.pdf>
 
   Josh Tenenbaum  
 	["Cognitive Foundations for Common-sense Knowledge Representation and Reasoning"](https://youtube.com/watch?v=oSAG57plHnI)  
@@ -619,7 +623,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 	["Machine vs Human Learning"](http://youtube.com/watch?v=UNYnpO1mkT4)  
 	["Cognitive Foundations for Knowledge Representation in AI"](https://drive.google.com/file/d/0B_hicYJxvbiOc1pac0xNZ2JkRFk)  
 
-##
+----
 
   *(Nando de Freitas)* "For me there are two types of generalisation, which I will refer to as Symbolic and Connectionist generalisation. If we teach a machine to sort sequences of numbers of up to length 10 or 100, we should expect them to sort sequences of length 1000 say. Obviously symbolic approaches have no problem with this form of generalisation, but neural nets do poorly. On the other hand, neural nets are very good at generalising from data (such as images), but symbolic approaches do poorly here. One of the holy grails is to build machines that are capable of both symbolic and connectionist generalisation. Neural Programmer Interpreters is a very early step toward this. NPI can do symbolic operations such as sorting and addition, but it can also plan by taking images as input and it's able to generalise the plans to different images (e.g. in the NPI car example, the cars are test set cars not seen before)."
 
@@ -648,7 +652,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
  - [formal logic](#formal-logic)
  - [commonsense reasoning](#commonsense-reasoning)
 
-##
+----
 
 #### neural architectures
 
@@ -669,16 +673,16 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   - How to properly evaluate reasoning models? Are artificial tasks a good way? Where do they break down and real tasks are needed?
   - Can we draw inspiration from how animal or human memories are stored and used?
 
-##
+----
 
   "Low-Dimensional Embeddings of Logic" by Rocktaschel, Bosnjak, Singh, Riedel -
-	http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/
+	<http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/>
 
   "On Approximate Reasoning Capabilities of Low-Rank Vector Spaces" by Bouchard, Singh, Trouillon -
-	https://drive.google.com/file/d/0B_hicYJxvbiObnNYZ0cyMkotUzQ
+	<https://drive.google.com/file/d/0B_hicYJxvbiObnNYZ0cyMkotUzQ>
 
   "What Can Deep Learning Learn from Symbolic Inference?" by Rocktaschel -
-	http://www.bicv.org/?wpdmdl=2309
+	<http://www.bicv.org/?wpdmdl=2309>
 
   - Deep Learning and symbolic rules can be combined efficiently  
     * map logical formulae to differentiable expressions  
@@ -690,7 +694,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
     * induces a latent logic program  
     * trivial to incorporate prior knowledge in form of rules  
 
-##
+----
 
 #### natural logic
 
@@ -711,38 +715,38 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   - we make these types of inferences regularly and instantly
   - we expect readers to make these inferences instantly
 
-  introduction by Chris Manning - https://youtu.be/uAk152lIib0?t=25m51s  
-  "Open Domain Inference with Natural Logic" by Angeli - https://youtube.com/watch?v=EX1hKxePxkk  
+  introduction by Chris Manning - <https://youtu.be/uAk152lIib0?t=25m51s>  
+  "Open Domain Inference with Natural Logic" by Angeli - <https://youtube.com/watch?v=EX1hKxePxkk>  
 
   "Natural Logic: logical inference over text" by Manning -
-	http://akbc.ws/2016/slides/manning-akbc16.pdf  
+	<http://akbc.ws/2016/slides/manning-akbc16.pdf>  
   "Learning Distributed Word Representations for Natural Logic Reasoning" by Bowman, Potts, Manning -
-	http://drive.google.com/file/d/0B_hicYJxvbiOeEN5SlBWLUNzLWM  
+	<http://drive.google.com/file/d/0B_hicYJxvbiOeEN5SlBWLUNzLWM>  
 
-##
+----
 
 #### description logic
 
-  https://dropbox.com/s/z89eswv4rgkjrlp/OWL.txt
-  https://dropbox.com/s/ono4n5yij0y1366/RDF.txt
+  <https://dropbox.com/s/z89eswv4rgkjrlp/OWL.txt>
+  <https://dropbox.com/s/ono4n5yij0y1366/RDF.txt>
 
-  "Ontologies and Knowledge Representation" course by Boris Konev (in russian) - https://lektorium.tv/course/22781
+  "Ontologies and Knowledge Representation" course by Boris Konev (in russian) - <https://lektorium.tv/course/22781>
 
   strong assumptions:
   - nothing is ever wrong
   - no contradictions
 
-##
+----
 
 #### formal logic
 
-  "Simply Logical - Intelligent Reasoning by Example" by Peter Flach - https://www.cs.bris.ac.uk/~flach/SL/SL.pdf
+  "Simply Logical - Intelligent Reasoning by Example" by Peter Flach - <https://www.cs.bris.ac.uk/~flach/SL/SL.pdf>
 
-  https://intelligence.org/2013/12/21/josef-urban-on-machine-learning-and-automated-reasoning/
+  <https://intelligence.org/2013/12/21/josef-urban-on-machine-learning-and-automated-reasoning/>
 
   *(Josef Urban)* "Quite reachable is deep automated semantic understanding of most of LaTeX-written mathematical textbooks. This has been blocked by three factors: (i) lack of annotated formal/informal corpora to train such semantic parsing on, (ii) lack of sufficiently large repository of background mathematical knowledge needed for “obvious-knowledge gap-filling”, and (iii) lack of sufficiently strong large-theory ATP that could fill the reasoning gaps using the large repository of background knowledge. One way to try to get them automatically is again through basic computer understanding of LaTeX-written mathematical texts, and learning what high-level concepts like “by analogy” and “using diagonalization” exactly semantically mean in various contexts. This is also related to the ability to reformulate problems and map them to a setting (for current ATPs, the best is purely equational) where the theorem proving becomes more easy. And another related work that needs to be done is “explaining back” the long ATP proofs using an understandable mathematical presentation."
 
-##
+----
 
 #### commonsense reasoning
 
@@ -752,16 +756,16 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 
 
   "Commonsense Reasoning and Commonsense Knowledge in Artificial Intelligence" by Davis and Marcus -
-	http://cacm.acm.org/magazines/2015/9/191169-commonsense-reasoning-and-commonsense-knowledge-in-artificial-intelligence/fulltext
+	<http://cacm.acm.org/magazines/2015/9/191169-commonsense-reasoning-and-commonsense-knowledge-in-artificial-intelligence/fulltext>
 
-  "Simulation as an Engine of Physical Scene Understanding" by Battaglia, Hamrick, Tenenbaum - http://www.pnas.org/content/110/45/18327.short
+  "Simulation as an Engine of Physical Scene Understanding" by Battaglia, Hamrick, Tenenbaum - <http://www.pnas.org/content/110/45/18327.short>
 
-  "Computational Rationality: A Converging Paradigm for Intelligence in Brains, Minds and Machines" by Gershman, Horvitz, Tenenbaum - https://goo.gl/jWaJVf
+  "Computational Rationality: A Converging Paradigm for Intelligence in Brains, Minds and Machines" by Gershman, Horvitz, Tenenbaum - <https://goo.gl/jWaJVf>
 
 
-  "Computational Cognitive Science: Generative Models, Probabilistic Programs and Common Sense" by Tenenbaum - https://youtube.com/watch?v=2WQO9e5Mdj4
+  "Computational Cognitive Science: Generative Models, Probabilistic Programs and Common Sense" by Tenenbaum - <https://youtube.com/watch?v=2WQO9e5Mdj4>
 
-  "Learning Physical Intuition of Block Towers by Example" by Lerer, Gross, Fergus - http://arxiv.org/abs/1603.01312
+  "Learning Physical Intuition of Block Towers by Example" by Lerer, Gross, Fergus - <http://arxiv.org/abs/1603.01312>
 
 
 
@@ -769,23 +773,23 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 ### machine comprehension challenges
 
   - *Allen AI Science Challenge*  
-	https://kaggle.com/c/the-allen-ai-science-challenge
+	<https://kaggle.com/c/the-allen-ai-science-challenge>
 
 	"Moving Beyond the Turing Test with the Allen AI Science Challenge" -
-		https://arxiv.org/abs/1604.04315 + http://akbc.ws/2016/slides/etzioni-akbc16.pptx
+		<https://arxiv.org/abs/1604.04315> + <http://akbc.ws/2016/slides/etzioni-akbc16.pptx>
 
-	first place - https://github.com/Cardal/Kaggle_AllenAIscience  
-	second place - https://github.com/bwilbertz/kaggle_allen_ai  
-	third place - https://github.com/amsqr/Allen_AI_Kaggle  
+	first place - <https://github.com/Cardal/Kaggle_AllenAIscience>  
+	second place - <https://github.com/bwilbertz/kaggle_allen_ai>  
+	third place - <https://github.com/amsqr/Allen_AI_Kaggle>  
 
 
   - *Winograd Schema Challenge*  
-	http://commonsensereasoning.org/winograd.html
+	<http://commonsensereasoning.org/winograd.html>
 
-	http://whatsnext.nuance.com/in-the-labs/winograd-schema-challenge-2016-results/  
+	<http://whatsnext.nuance.com/in-the-labs/winograd-schema-challenge-2016-results/>  
 
-	"The Winograd Schema Challenge" by Hector Levesque - http://www.cs.toronto.edu/~hector/Papers/winograd.pdf  
-	"On our best behaviour" by Hector Levesque - http://www.cs.toronto.edu/~hector/Papers/ijcai-13-paper.pdf  
+	"The Winograd Schema Challenge" by Hector Levesque - <http://www.cs.toronto.edu/~hector/Papers/winograd.pdf>  
+	"On our best behaviour" by Hector Levesque - <http://www.cs.toronto.edu/~hector/Papers/ijcai-13-paper.pdf>  
 
 	set of schemas - pairs of sentences that differ only in one or two words and that contain an ambiguity  
 	this ambiguity is resolved in opposite ways in two sentences which requires world knowledge and reasoning  
@@ -806,7 +810,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 
 
   - *Facebook bAbi*  
-	http://fb.ai/babi
+	<http://fb.ai/babi>
 
 	- basic factoid qa with single supporting fact
 	- factoid qa with two supporting facts
@@ -831,7 +835,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 
 
   - *SemEval*  
-	http://alt.qcri.org/semeval2014/index.php?id=tasks
+	<http://alt.qcri.org/semeval2014/index.php?id=tasks>
 
 	- evaluation of compositional distributional semantic models on full sentences through semantic relatedness and entailment
 	- grammar induction for spoken dialogue systems
@@ -846,11 +850,11 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 
 
   - *WikiTableQuestions*  
-	http://nlp.stanford.edu/blog/wikitablequestions-a-complex-real-world-question-understanding-dataset/
+	<http://nlp.stanford.edu/blog/wikitablequestions-a-complex-real-world-question-understanding-dataset/>
 
 
   - *TAC Knowledge Base Population*  
-	http://www.nist.gov/tac/2017/KBP/
+	<http://www.nist.gov/tac/2017/KBP/>
 
 	- entity discovery
 	- slot filling
@@ -861,11 +865,11 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 
 
   - *Visual Genome*  
-	http://visualgenome.org
+	<http://visualgenome.org>
 
 
   - *commonsense reasoning*  
-	http://commonsensereasoning.org/problem_page.html
+	<http://commonsensereasoning.org/problem_page.html>
 
 
 
@@ -875,54 +879,54 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 
 #### Google Knowledge Vault
 
-  "A Web-Scale Approach to Probabilistic Knowledge Fusion" by Kevin Murphy - http://videolectures.net/kdd2014_murphy_knowledge_vault/
+  "A Web-Scale Approach to Probabilistic Knowledge Fusion" by Kevin Murphy - <http://videolectures.net/kdd2014_murphy_knowledge_vault/>
 
-  novel facts, trustworthy facts, multimodal knowledge by Kevin Murphy - http://youtube.com/watch?v=i2r5J4XAhsw
+  novel facts, trustworthy facts, multimodal knowledge by Kevin Murphy - <http://youtube.com/watch?v=i2r5J4XAhsw>
 
-  "Constructing and Mining Web-Scale Knowledge Graphs" by Evgeniy Gabrilovich - http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs/
+  "Constructing and Mining Web-Scale Knowledge Graphs" by Evgeniy Gabrilovich - <http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs/>
 
-  "Knowledge Vault and Knowledge-Based Trust" by Xin Luna Dong - http://youtube.com/watch?v=Z6tmDdrBnpU
+  "Knowledge Vault and Knowledge-Based Trust" by Xin Luna Dong - <http://youtube.com/watch?v=Z6tmDdrBnpU>
 
-  "From Data Fusion to Knowledge Fusion" by Xin Luna Dong - http://lunadong.com/talks/fromDFtoKF.pdf
+  "From Data Fusion to Knowledge Fusion" by Xin Luna Dong - <http://lunadong.com/talks/fromDFtoKF.pdf>
 
-  "Crowdsourcing Knowledge, One Billion Facts at a Time" by Evgeniy Gabrilovich - http://videolectures.net/nipsworkshops2013_gabrilovich_crowdsourcing/
+  "Crowdsourcing Knowledge, One Billion Facts at a Time" by Evgeniy Gabrilovich - <http://videolectures.net/nipsworkshops2013_gabrilovich_crowdsourcing/>
 
-  "A Review of Relational Machine Learning for Knowledge Graphs: From Multi-Relational Link Prediction to Automated Knowledge Graph Construction" by Nickel, Murphy, Tresp, Gabrilovich - http://arxiv.org/abs/1503.00759
+  "A Review of Relational Machine Learning for Knowledge Graphs: From Multi-Relational Link Prediction to Automated Knowledge Graph Construction" by Nickel, Murphy, Tresp, Gabrilovich - <http://arxiv.org/abs/1503.00759>
 
-##
+----
 
 #### DeepDive
 
-  http://deepdive.stanford.edu  
-  http://cs.stanford.edu/people/chrismre/  
+  <http://deepdive.stanford.edu>  
+  <http://cs.stanford.edu/people/chrismre/>  
 
-  https://blog.acolyer.org/2016/10/07/incremental-knowledge-base-construction-using-deepdive/
+  <https://blog.acolyer.org/2016/10/07/incremental-knowledge-base-construction-using-deepdive/>
 
   overview by Chris Re -  
-	https://vimeo.com/173069166  
-	http://youtube.com/watch?v=j1k9lDYCQbA  
-	http://videolectures.net/nipsworkshops2013_re_archaeological_texts/  
+	<https://vimeo.com/173069166>  
+	<http://youtube.com/watch?v=j1k9lDYCQbA>  
+	<http://videolectures.net/nipsworkshops2013_re_archaeological_texts/>  
 
-##
+----
 
   [showcases](http://deepdive.stanford.edu/doc/showcase/apps.html)  
   [PaleoDB](http://nature.com/news/computers-read-the-fossil-record-1.17868)  
 
   winner of TAC-KBP 2014 English Slot Filling challenge -  
-	http://nlp.cs.rpi.edu/paper/sf2014overview.pdf  
-	http://i.stanford.edu/hazy/papers/2014kbp-systemdescription.pdf  
+	<http://nlp.cs.rpi.edu/paper/sf2014overview.pdf>  
+	<http://i.stanford.edu/hazy/papers/2014kbp-systemdescription.pdf>  
 
-##
+----
 
-  "DeepDive: Design Principles" by Chris Re - http://cs.stanford.edu/people/chrismre/papers/dd.pdf
+  "DeepDive: Design Principles" by Chris Re - <http://cs.stanford.edu/people/chrismre/papers/dd.pdf>
 
-  "Incremental Knowledge Base Construction Using DeepDive" - http://arxiv.org/abs/1502.00731
+  "Incremental Knowledge Base Construction Using DeepDive" - <http://arxiv.org/abs/1502.00731>
 
-  "Probabilistic Inference and Factor Graphs" - http://deepdive.stanford.edu/doc/general/inference.html  
-  "Writing inference rules" - http://deepdive.stanford.edu/doc/basics/inference_rules.html  
-  "Knowledge Base Construction" - http://deepdive.stanford.edu/doc/general/kbc.html  
+  "Probabilistic Inference and Factor Graphs" - <http://deepdive.stanford.edu/doc/general/inference.html>  
+  "Writing inference rules" - <http://deepdive.stanford.edu/doc/basics/inference_rules.html>  
+  "Knowledge Base Construction" - <http://deepdive.stanford.edu/doc/general/kbc.html>  
 
-##
+----
 
   "A variety of data-driven problems facing industry, government, and science are macroscopic, in that answering a question requires that one assemble a massive number of disparate signals that are scattered in the natural language text, tables, and even figures of a number of data sources. However, traditional data processing systems are unsuited to these tasks, as they require painful one-off extract-transform-load procedures. DeepDive is a new type of system to extract value from dark data. Like dark matter, dark data is the great mass of data buried in text, tables, figures, and images, which lacks structure and so is essentially unprocessable by existing data systems. DeepDive's most popular use case is to transform the dark data of web pages, pdfs, and other databases into rich SQL-style databases. In turn, these databases can be used to support both SQL-style and predictive analytics. Recently, some DeepDive-based applications have exceeded the quality of human volunteer annotators in both precision and recall for complex scientific articles. The technical core of DeepDive is an engine that combines extraction, integration, and prediction into a single engine with probabilistic inference as its core operation."
 
@@ -938,8 +942,8 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 
 #### Never-Ending Language Learning (NELL)
 
-  http://rtw.ml.cmu.edu/rtw/  
-  http://www.cs.cmu.edu/~wcohen/postscript/aaai-2015.pdf  
+  <http://rtw.ml.cmu.edu/rtw/>  
+  <http://www.cs.cmu.edu/~wcohen/postscript/aaai-2015.pdf>  
 
   - simultaneously learning 500-600 concepts and relations
   - starting point: containment/disjointness relations between concepts, types for relations, and O(10) examples per concept/relation
@@ -951,18 +955,18 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   - promoting a set of beliefs consistent with the ontology and each other
   - distantly training the candidate generators from the promoted beliefs
 
-  http://youtube.com/watch?v=psFnHkIjHA0 + https://youtube.com/watch?v=JNNpJ7HAKtk (Mitchell)  
-  http://videolectures.net/akbcwekex2012_mitchell_language_learning/ (Mitchell)  
-  http://youtube.com/watch?v=51q2IajH94A (Mitchell)  
-  http://youtube.com/watch?v=PF6ViL5pcGs (Mitchell)  
-  http://videolectures.net/nipsworkshops2013_taludkar_language_learning/ (Talukdar)  
-  http://youtube.com/watch?v=--pYaISROqE (Cohen)  
+  <http://youtube.com/watch?v=psFnHkIjHA0> + <https://youtube.com/watch?v=JNNpJ7HAKtk> (Mitchell)  
+  <http://videolectures.net/akbcwekex2012_mitchell_language_learning/> (Mitchell)  
+  <http://youtube.com/watch?v=51q2IajH94A> (Mitchell)  
+  <http://youtube.com/watch?v=PF6ViL5pcGs> (Mitchell)  
+  <http://videolectures.net/nipsworkshops2013_taludkar_language_learning/> (Talukdar)  
+  <http://youtube.com/watch?v=--pYaISROqE> (Cohen)  
 
 
 
 #### AI2 Aristo
 
-  http://allenai.org/aristo.html
+  <http://allenai.org/aristo.html>
 
   [demo](http://aristo-demo.allenai.org)
 
@@ -972,47 +976,47 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 
   "A first step towards a machine that contains large amounts of knowledge in machine-computable form that can answer questions, explain those answers, and discuss those answers with users. Central to the project is machine reading - semi-automated acquisition of knowledge from natural language texts. We are also integrating semi-formal methods for reasoning with knowledge, such as textual entailment and evidential reasoning, and a robust hybrid architecture that has multiple reasoning modules operating in tandem."
 
-  overview by Peter Clark - https://youtube.com/watch?v=u7n7vKEmfb4
+  overview by Peter Clark - <https://youtube.com/watch?v=u7n7vKEmfb4>
 
 
 
 #### IBM Watson
 
-  "The Science Behind an Answer" - http://youtube.com/watch?v=DywO4zksfXw  
-  "Building Watson - A Brief Overview of the DeepQA Project" by David Ferucci - http://youtube.com/watch?v=3G2H3DZ8rNc  
-  "Inside the Mind of Watson" by Chris Welty - http://youtube.com/watch?v=grDKpicM5y0  
-  "Building Watson - A Brief Overview of DeepQA" by Karthik Visweswariah - http://youtube.com/watch?v=_dXNXCv5eo8  
+  "The Science Behind an Answer" - <http://youtube.com/watch?v=DywO4zksfXw>  
+  "Building Watson - A Brief Overview of the DeepQA Project" by David Ferucci - <http://youtube.com/watch?v=3G2H3DZ8rNc>  
+  "Inside the Mind of Watson" by Chris Welty - <http://youtube.com/watch?v=grDKpicM5y0>  
+  "Building Watson - A Brief Overview of DeepQA" by Karthik Visweswariah - <http://youtube.com/watch?v=_dXNXCv5eo8>  
 
   [papers](https://dropbox.com/sh/udz1kpzzz95xfd6/AADgpBmFsTS1CtkbClfmbyyqa)
 
-##
+----
 
-  Deep Learning graduate student vs IBM Watson team - http://youtu.be/tdLmf8t4oqM?t=31m25s  
-  IBM Watson considered a hack compared to Deep Learning - http://spacy.io/blog/dmn.html  
+  Deep Learning graduate student vs IBM Watson team - <http://youtu.be/tdLmf8t4oqM?t=31m25s>  
+  IBM Watson considered a hack compared to Deep Learning - <http://spacy.io/blog/dmn.html>  
 
-  Jeopardy questions - https://kaggle.com/jeradrose/jeopardy
+  Jeopardy questions - <https://kaggle.com/jeradrose/jeopardy>
 
 
 
 ---
 ### conferences
 
-  Automated Knowledge Base Construction workshop - http://akbc.ws  
-	AKBC 2016 - http://akbc.ws/2016/  
-	AKBC 2014 - http://youtube.com/user/NeuralInformationPro/search?query=AKBC  
-	AKBC 2012 - http://videolectures.net/akbcwekex2012_montreal/  
-	AKBC 2010 - http://videolectures.net/akbc2010_grenoble/  
+  Automated Knowledge Base Construction workshop - <http://akbc.ws>  
+	AKBC 2016 - <http://akbc.ws/2016/>  
+	AKBC 2014 - <http://youtube.com/user/NeuralInformationPro/search?query=AKBC>  
+	AKBC 2012 - <http://videolectures.net/akbcwekex2012_montreal/>  
+	AKBC 2010 - <http://videolectures.net/akbc2010_grenoble/>  
 
-  StarAI (Statistical and Relational AI) workshop - http://starai.org  
+  StarAI (Statistical and Relational AI) workshop - <http://starai.org>  
 
-  "Neural Abstract Machines & Program Induction" @ NIPS 2016 - https://uclmr.github.io/nampi/
+  "Neural Abstract Machines & Program Induction" @ NIPS 2016 - <https://uclmr.github.io/nampi/>
 
-  "Reasoning, Attention, Memory" workshop @ NIPS 2015 - http://thespermwhale.com/jaseweston/ram/  
-  "Cognitive Computation: Integrating Neural and Symbolic Approaches" workshop @ NIPS 2015 - http://neural-symbolic.org/CoCo2015/  
+  "Reasoning, Attention, Memory" workshop @ NIPS 2015 - <http://thespermwhale.com/jaseweston/ram/>  
+  "Cognitive Computation: Integrating Neural and Symbolic Approaches" workshop @ NIPS 2015 - <http://neural-symbolic.org/CoCo2015/>  
 
-  "Knowledge Representation and Reasoning: Integrating Symbolic and Neural Approaches" workshop - https://sites.google.com/site/krr2015/  
+  "Knowledge Representation and Reasoning: Integrating Symbolic and Neural Approaches" workshop - <https://sites.google.com/site/krr2015/>  
 
-  Learning Semantics workshop - https://sites.google.com/site/learningsemantics2014/  
+  Learning Semantics workshop - <https://sites.google.com/site/learningsemantics2014/>  
 
 
 
@@ -1064,20 +1068,21 @@ interesting papers (see below):
 ---
 ### interesting papers - knowledge bases
 
+
 #### Dong, Gabrilovich, Heitz, Horn, Lao, Murphy, Strohmann, Sun, Zhang - ["Knowledge Vault: A Web-Scale Approach to Probabilistic Knowledge Fusion"](https://www.cs.cmu.edu/~nlao/publication/2014.kdd.pdf) (Google Knowledge Vault)
 >	"Recent years have witnessed a proliferation of large-scale knowledge bases, including Wikipedia, Freebase, YAGO, Microsoft's Satori, and Google's Knowledge Graph. To increase the scale even further, we need to explore automatic methods for constructing knowledge bases. Previous approaches have primarily focused on text-based extraction, which can be very noisy. Here we introduce Knowledge Vault, a Web-scale probabilistic knowledge base that combines extractions from Web content (obtained via analysis of text, tabular data, page structure, and human annotations) with prior knowledge derived from existing knowledge repositories. We employ supervised machine learning methods for fusing these distinct information sources. The Knowledge Vault is substantially bigger than any previously published structured knowledge repository, and features a probabilistic inference system that computes calibrated probabilities of fact correctness. We report the results of multiple studies that explore the relative utility of the relative utility of the different information sources and extraction methods."
 
-  - http://videolectures.net/kdd2014_murphy_knowledge_vault/ (Murphy)
-  - http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs/ (Gabrilovich)
-  - http://cikm2013.org/slides/kevin.pdf
+  - <http://videolectures.net/kdd2014_murphy_knowledge_vault/> (Murphy)
+  - <http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs/> (Gabrilovich)
+  - <http://cikm2013.org/slides/kevin.pdf>
 
 
 #### Mitchell, Cohen, Hruschka, Talukdar, Betteridge, Carlson, Dalvi, Gardner, Kisiel, Krishnamurthy, Lao, Mazaitis, Mohamed, Nakashole, Platanios, Ritter, Samadi, Settles, Wang, Wijaya, Gupta, Chen, Saparov, Greaves, Welling - ["Never-Ending Learning"](http://www.cs.cmu.edu/~wcohen/postscript/aaai-2015.pdf) (NELL knowledge base)
 >	"Whereas people learn many different types of knowledge from diverse experiences over many years, most current machine learning systems acquire just a single function or data model from just a single data set. We propose a never-ending learning paradigm for machine learning, to better reflect the more ambitious and encompassing type of learning performed by humans. As a case study, we describe the Never-Ending Language Learner, which achieves some of the desired properties of a never-ending learner, and we discuss lessons learned. NELL has been learning to read the web 24 hours/day since January 2010, and so far has acquired a knowledge base with over 80 million confidence-weighted beliefs (e.g., servedWith(tea, biscuits)), while learning continually to improve its reading competence over time. NELL has also learned to reason over its knowledge base to infer new beliefs from old ones, and is now beginning to extend its ontology by synthesizing new relational predicates."
 
-  - http://youtube.com/watch?v=PF6ViL5pcGs (Mitchell)
-  - http://youtube.com/watch?v=--pYaISROqE (Cohen)
-  - http://videolectures.net/nipsworkshops2013_taludkar_language_learning/ (Talukdar)
+  - <http://youtube.com/watch?v=PF6ViL5pcGs> (Mitchell)
+  - <http://youtube.com/watch?v=--pYaISROqE> (Cohen)
+  - <http://videolectures.net/nipsworkshops2013_taludkar_language_learning/> (Talukdar)
 
 
 #### Re, Sadeghian, Shan, Shin, Wang, Wu, Zhang - ["Feature Engineering for Knowledge Base Construction"](http://arxiv.org/abs/1407.6439) (DeepDive knowledge base)
@@ -1087,7 +1092,7 @@ interesting papers (see below):
 #### Wu, Zhang, Wang, Re - ["Incremental Knowledge Base Construction Using DeepDive"](http://arxiv.org/abs/1502.00731) (DeepDive knowledge base)
 >	"Populating a database with unstructured information is a long-standing problem in industry and research that encompasses problems of extraction, cleaning, and integration. A recent name used to characterize this problem is Knowledge Base Construction. In this work, we describe DeepDive, a system that combines database and machine learning ideas to help develop KBC systems, and we present techniques to make the KBC process more efficient. We observe that the KBC process is iterative, and we develop techniques to incrementally produce inference results for KBC systems. We propose two methods for incremental inference, based respectively on sampling and variational techniques. We also study the tradeoff space of these methods and develop a simple rule-based optimizer. DeepDive includes all of these contributions, and we evaluate DeepDive on five KBC systems, showing that it can speed up KBC inference tasks by up to two orders of magnitude with negligible impact on quality."
 
-  - http://youtube.com/watch?v=j1k9lDYCQbA (Re)
+  - <http://youtube.com/watch?v=j1k9lDYCQbA> (Re)
 
 
 #### Mahdisoltani, Biega, Suchanek - ["YAGO3: A Knowledge Base from Multilingual Wikipedias"](http://suchanek.name/work/publications/cidr2015.pdf) (Yago knowledge base)
@@ -1097,13 +1102,14 @@ interesting papers (see below):
 #### Clark, Balasubramanian, Bhakthavatsalam, Humphreys, Kinkead, Sabharwal, Tafjord - ["Automatic Construction of Inference-Supporting Knowledge Bases"](http://akbc.ws/2014/submissions/akbc2014_submission_32.pdf) (AI2 knowledge base)
 >	"While there has been tremendous progress in automatic database population in recent years, most of human knowledge does not naturally fit into a database form. For example, knowledge that "metal objects can conduct electricity" or "animals grow fur to help them stay warm" requires a substantially different approach to both acquisition and representation. This kind of knowledge is important because it can support inference e.g., (with some associated confidence) if an object is made of metal then it can conduct electricity; if an animal grows fur then it will stay warm. If we want our AI systems to understand and reason about the world, then acquisition of this kind of inferential knowledge is essential. In this paper, we describe our work on automatically constructing an inferential knowledge base, and applying it to a question-answering task. Rather than trying to induce rules from examples, or enter them by hand, our goal is to acquire much of this knowledge directly from text. Our premise is that much inferential knowledge is written down explicitly, in particular in textbooks, and can be extracted with reasonable reliability. We describe several challenges that this approach poses, and innovative, partial solutions that we have developed."
 
-  - http://youtube.com/watch?v=eyjpLPjhSPU (Clark)
-  - https://drive.google.com/file/d/0B_hicYJxvbiOd3pwZTNnaDRHdFU
+  - <http://youtube.com/watch?v=eyjpLPjhSPU> (Clark)
+  - <https://drive.google.com/file/d/0B_hicYJxvbiOd3pwZTNnaDRHdFU>
 
 
 
 ---
 ### interesting papers - knowledge bases with discrete representations
+
 
 #### Nickel, Murphy, Tresp, Gabrilovich - ["A Review of Relational Machine Learning for Knowledge Graphs: From Multi-Relational Link Prediction to Automated Knowledge Graph Construction"](http://arxiv.org/abs/1503.00759) (Google Knowledge Vault)
 >	"Relational machine learning studies methods for the statistical analysis of relational, or graph-structured, data. In this paper, we provide a review of how such statistical models can be "trained" on large knowledge graphs, and then used to predict new facts about the world (which is equivalent to predicting new edges in the graph). In particular, we discuss two different kinds of statistical relational models, both of which can scale to massive datasets. The first is based on tensor factorization methods and related latent variable models. The second is based on mining observable patterns in the graph. We also show how to combine these latent and observable models to get improved modeling power at decreased computational cost. Finally, we discuss how such statistical models of graphs can be combined with text-based information extraction methods for automatically constructing knowledge graphs from the Web. In particular, we discuss Google's Knowledge Vault project."
@@ -1116,8 +1122,8 @@ interesting papers (see below):
 #### Lao, Mitchell, Cohen - ["Random Walk Inference and Learning in A Large Scale Knowledge Base"](http://www.cs.cmu.edu/~tom/pubs/lao-emnlp11.pdf) (PRA inference method used in Google Knowledge Vault and NELL)
 >	"We consider the problem of performing learning and inference in a large scale knowledge base containing imperfect knowledge with incomplete coverage. We show that a soft inference procedure based on a combination of constrained, weighted, random walks through the knowledge base graph can be used to reliably infer new beliefs for the knowledge base. More specifically, we show that the system can learn to infer different target relations by tuning the weights associated with random walks that follow different paths through the graph, using a version of the Path Ranking Algorithm. We apply this approach to a knowledge base of approximately 500,000 beliefs extracted imperfectly from the web by NELL, a never-ending language learner. This new system improves significantly over NELL’s earlier Horn-clause learning and inference method: it obtains nearly double the precision at rank 100, and the new learning method is also applicable to many more inference tasks."
 
-  - http://cs.cmu.edu/~nlao/publication/2012/defense.pdf
-  - https://github.com/matt-gardner/pra
+  - <http://cs.cmu.edu/~nlao/publication/2012/defense.pdf>
+  - <https://github.com/matt-gardner/pra>
 
 
 #### Lao, Subramanya, Pereira, Cohen - ["Reading The Web with Learned Syntactic-Semantic Inference Rules"](http://www.cs.cmu.edu/~nlao/publication/2012/2012.emnlp.paper.pdf) (PRA inference method used in NELL)
@@ -1133,10 +1139,10 @@ interesting papers (see below):
 
 >	"We have explored several practical issues that arise when using the path ranking algorithm for knowledge base completion. An analysis of several of these issues led us to propose a simpler algorithm, which we called subgraph feature extraction, which characterizes the subgraph around node pairs and extracts features from that subgraph. SFE is both significantly faster and performs better than PRA on this task. We showed experimentally that we can reduce running time by an order of magnitude, while at the same time improving mean average precision from .432 to .528 and mean reciprocal rank from .850 to .933. This thus constitutes the best published results for knowledge base completion on NELL data."
 
-  - http://www.cs.cmu.edu/~mg1/thesis.pdf - "Reading and Reasoning with Knowledge Graphs" thesis by Gardner
+  - <http://www.cs.cmu.edu/~mg1/thesis.pdf> - "Reading and Reasoning with Knowledge Graphs" thesis by Gardner
 >	"As a final point of future work, we note that we have taken PRA, an elegant model that has strong ties to logical inference, and reduced it with SFE to feature extraction over graphs. It seems clear experimentally that this is a significant improvement, but somehow doing feature engineering over graphs is not incredibly satisfying. We introduced a few kinds of features with SFE that we thought might work well, but there are many, many more kinds of features we could have experimented with (e.g., counts of paths found, path unigrams, path trigrams, conjunctions of simple paths, etc.). How should we wade our way through this mess of feature engineering? This is not a task we eagerly anticipate. One possible way around this is to turn to deep learning, whose promise has always been to push the task of feature engineering to the neural network. Some initial work on creating embeddings of graphs has been done (Bruna et al., 2013), but that work dealt with unlabeled graphs and would need significant modification to work in this setting. The recursive neural network of Neelakantan et al. (2015) is also a step in the right direction, though the spectral networks of Bruna et al. seem closer to the necessary network structure here."
 
-  - http://youtube.com/watch?v=dp2waL7OLbI (Gardner)
+  - <http://youtube.com/watch?v=dp2waL7OLbI> (Gardner)
 
 
 #### Wick, McCallum, Miklau - ["Scalable Probabilistic Databases with Factor Graphs and MCMC"](http://people.cs.umass.edu/~mwick/MikeWeb/Publications_files/wick10scalable.pdf) (inference method used in Epistemological database)
@@ -1156,14 +1162,14 @@ interesting papers (see below):
 #### Domingos, Webb - ["A Tractable First-Order Probabilistic Logic"](http://homes.cs.washington.edu/~pedrod/papers/aaai12.pdf) (MLN probabilistic database)
 >	"Tractable subsets of first-order logic are a central topic in AI research. Several of these formalisms have been used as the basis for first-order probabilistic languages. However, these are intractable, losing the original motivation. Here we propose the first non-trivially tractable first-order probabilistic language. It is a subset of Markov logic, and uses probabilistic class and part hierarchies to control complexity. We call it Tractable Markov Logic. We show that TML knowledge bases allow for efficient inference even when the corresponding graphical models have very high treewidth. We also show how probabilistic inheritance, default reasoning, and other inference patterns can be carried out in TML. TML opens up the prospect of efficient large-scale first-order probabilistic inference."
 
-  - http://youtube.com/watch?v=6ZJzfRdCZjc (Domingos)
+  - <http://youtube.com/watch?v=6ZJzfRdCZjc> (Domingos)
 
 
 #### Niepert, Domingos - ["Tractable Probabilistic Knowledge Bases: Wikipedia and Beyond"](http://www.aaai.org/ocs/index.php/WS/AAAIW14/paper/download/8722/8239) (MLN probabilistic database)
 >	"Building large-scale knowledge bases from a variety of data sources is a longstanding goal of AI research. However, existing approaches either ignore the uncertainty inherent to knowledge extracted from text, the web, and other sources, or lack a consistent probabilistic semantics with tractable inference. To address this problem, we present a framework for tractable probabilistic knowledge bases. TPKBs consist of a hierarchy of classes of objects and a hierarchy of classes of object pairs such that attributes and relations are independent conditioned on those classes. These characteristics facilitate both tractable probabilistic reasoning and tractable maximum-likelihood parameter learning. TPKBs feature a rich query language that allows one to express and infer complex relationships between classes, relations, objects, and their attributes. The queries are translated to sequences of operations in a relational database facilitating query execution times in the sub-second range. We demonstrate the power of TPKBs by leveraging large data sets extracted from Wikipedia to learn their structure and parameters. The resulting TPKB models a distribution over millions of objects and billions of parameters. We apply the TPKB to entity resolution and object linking problems and show that the TPKB can accurately align large knowledge bases and integrate triples from open IE projects."
 
-  - http://youtube.com/watch?v=6ZJzfRdCZjc (Domingos)
-  - http://alchemy.cs.washington.edu/lite/
+  - <http://youtube.com/watch?v=6ZJzfRdCZjc> (Domingos)
+  - <http://alchemy.cs.washington.edu/lite/>
 
 
 #### Niepert, Domingos - ["Learning and Inference in Tractable Probabilistic Knowledge Bases"](http://homes.cs.washington.edu/~pedrod/papers/uai15.pdf) (MLN probabilistic database)
@@ -1171,8 +1177,8 @@ interesting papers (see below):
 
 >	"We presented a novel inference algorithm for TPKBs that is disk-based, parallel, and sublinear. We also derived closed-form maximum likelihood estimates for TPKB parameters. We used these results to learn a large TPKB from multiple data sources and applied it to information extraction and integration problems. The TPKB outperformed existing algorithms in accuracy and efficiency. Future work will be concerned with more sophisticated smoothing approaches, the comparison of different learning strategies, and the problem of structure learning. We also plan to apply TPKBs to a wide range of problems that benefit from tractable probabilistic knowledge representations."
 
-  - http://youtube.com/watch?v=6ZJzfRdCZjc (Domingos)
-  - http://alchemy.cs.washington.edu/lite/
+  - <http://youtube.com/watch?v=6ZJzfRdCZjc> (Domingos)
+  - <http://alchemy.cs.washington.edu/lite/>
 
 
 #### Pujara, Getoor - ["Building Dynamic Knowledge Graphs"](http://linqs.cs.umd.edu/basilic/web/Publications/2014/pujara:akbc14/pujara_akbc14.pdf) (PSL probabilistic database)
@@ -1185,29 +1191,30 @@ interesting papers (see below):
 >	"Large-scale information processing systems are able to extract massive collections of interrelated facts, but unfortunately transforming these candidate facts into useful knowledge is a formidable challenge. In this paper, we show how uncertain extractions about entities and their relations can be transformed into a knowledge graph. The extractions form an extraction graph and we refer to the task of removing 
 noise, inferring missing information, and determining which candidate facts should be included into a knowledge graph as knowledge graph identification. In order to perform this task, we must reason jointly about candidate facts and their associated extraction confidences, identify coreferent entities, and incorporate ontological constraints. Our proposed approach uses Probabilistic Soft Logic, a recently introduced probabilistic modeling framework which easily scales to millions of facts. We demonstrate the power of our method on a synthetic Linked Data corpus derived from the MusicBrainz music community and a real-world set of extractions from the NELL project containing over 1M extractions and 70K ontological relations. We show that compared to existing methods, our approach is able to achieve improved AUC and F1 with significantly lower running time."
 
-  - http://youtube.com/watch?v=z_VzaNy36xE (Pujara)
-  - http://youtube.com/watch?v=--pYaISROqE (Cohen)
+  - <http://youtube.com/watch?v=z_VzaNy36xE> (Pujara)
+  - <http://youtube.com/watch?v=--pYaISROqE> (Cohen)
 
 
 #### Wang, Mazaitis, Lao, Mitchell, Cohen - ["Efficient Inference and Learning in a Large Knowledge Base: Reasoning with Extracted Information using a Locally Groundable First-Order Probabilistic Logic"](http://arxiv.org/abs/1404.3301) (ProPPR probabilistic database)
 >	"One important challenge for probabilistic logics is reasoning with very large knowledge bases of imperfect information, such as those produced by modern web-scale information extraction systems. One scalability problem shared by many probabilistic logics is that answering queries involves “grounding” the query - i.e., mapping it to a propositional representation - and the size of a “grounding” grows with database size. To address this bottleneck, we present a first-order probabilistic language called ProPPR in which that approximate “local groundings” can be constructed in time independent of database size. Technically, ProPPR is an extension to Stochastic Logic Programs that is biased towards short derivations; it is also closely related to an earlier relational learning algorithm called the Path Ranking Algorithm. We show that the problem of constructing proofs for this logic is related to computation of Personalized PageRank on a linearized version of the proof space, and using on this connection, we develop a proveably-correct approximate grounding scheme, based on the PageRank-Nibble algorithm. Building on this, we develop a fast and easily-parallelized weight-learning algorithm for ProPPR. In experiments, we show that learning for ProPPR is orders magnitude faster than learning for Markov Logic Networks; that allowing mutual recursion (joint learning) in KB inference leads to improvements in performance; and that ProPPR can learn weights for a mutually recursive program with hundreds of clauses, which define scores of interrelated predicates, over a KB containing one million entities."
 
-  - http://youtu.be/--pYaISROqE?t=12m35s (Cohen)
-  - http://www.cs.cmu.edu/afs/cs/Web/People/wcohen/nlu-2014.ppt
-  - https://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/yww/papers/starAI.pdf
-  - https://drive.google.com/file/d/0B_hicYJxvbiOc05xNEhvdVVSQWc/
-  - https://github.com/TeamCohen/ProPPR
+  - <http://youtu.be/--pYaISROqE?t=12m35s> (Cohen)
+  - <http://www.cs.cmu.edu/afs/cs/Web/People/wcohen/nlu-2014.ppt>
+  - <https://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/yww/papers/starAI.pdf>
+  - <https://drive.google.com/file/d/0B_hicYJxvbiOc05xNEhvdVVSQWc/>
+  - <https://github.com/TeamCohen/ProPPR>
 
 
 #### Wang, Mazaitis, Cohen - ["Structure Learning via Parameter Learning"](https://www.cs.cmu.edu/~wcohen/postscript/cikm-2014-structure.pdf) (ProPPR probabilistic database)
 >	"A key challenge in information and knowledge management is to automatically discover the underlying structures and patterns from large collections of extracted information. This paper presents a novel structure-learning method for a new, scalable probabilistic logic called ProPPR. Our approach builds on the recent success of meta-interpretive learning methods in Inductive Logic Programming, and we further extends it to a framework that enables robust and efficient structure learning of logic programs on graphs: using an abductive second-order probabilistic logic, we show how first-order theories can be automatically generated via parameter learning. To learn better theories, we then propose an iterated structural gradient approach that incrementally refines the hypothesized space of learned first-order structures. In experiments, we show that the proposed method further improves the results, outperforming competitive baselines such as Markov Logic Networks and FOIL on multiple datasets with various settings; and that the proposed approach can learn structures in a large knowledge base in a tractable fashion."
 
-  - http://youtu.be/--pYaISROqE?t=21m35s (Cohen)
+  - <http://youtu.be/--pYaISROqE?t=21m35s> (Cohen)
 
 
 
 ---
 ### interesting papers - knowledge bases with continuous representations
+
 
 #### Sutskever, Salakhutdinov, Tenenbaum - ["Modelling Relational Data using Bayesian Clustered Tensor Factorization"](http://www.cs.toronto.edu/~rsalakhu/papers/pmfcrp.pdf) (probabilistic model over distributed representations)
 >	"We consider the problem of learning probabilistic models for complex relational structures between various types of objects. A model can help us “understand” a dataset of relational facts in at least two ways, by finding interpretable structure in the data, and by supporting predictions, or inferences about whether particular unobserved relations are likely to be true. Often there is a tradeoff between these two aims: cluster-based models yield more easily interpretable representations, while factorization-based approaches have given better predictive performance on large data sets. We introduce the Bayesian Clustered Tensor Factorization model, which embeds a factorized representation of relations in a nonparametric Bayesian clustering framework. Inference is fully Bayesian but scales well to large data sets. The model simultaneously discovers interpretable clusters and yields predictive performance that matches or beats previous probabilistic models for relational data."
@@ -1228,8 +1235,8 @@ noise, inferring missing information, and determining which candidate facts shou
 #### Bordes, Usunier, Garcia-Duran, Weston, Yakhnenko - ["Translating Embeddings for Modeling Multi-relational Data"](http://papers.nips.cc/paper/5071-translating-embeddings-for-modeling-multi-relational-data) (TransE model)
 >	"We consider the problem of embedding entities and relationships of multi-relational data in low-dimensional vector spaces. Our objective is to propose a canonical model which is easy to train, contains a reduced number of parameters and can scale up to very large databases. Hence, we propose, TransE, a method which models relationships by interpreting them as translations operating on the low-dimensional embeddings of the entities. Despite its simplicity, this assumption proves to be powerful since extensive experiments show that TransE significantly outperforms state-of-the-art methods in link prediction on two knowledge bases. Besides, it can be successfully trained on a large scale data set with 1M entities, 25k relationships and more than 17M training samples."
 
-  - http://youtube.com/watch?v=YkVvOBylV5k + http://akbc.ws/2014/slides/weston-nips-akbc.pdf (Weston)
-  - https://github.com/glorotxa/SME
+  - <http://youtube.com/watch?v=YkVvOBylV5k> + <http://akbc.ws/2014/slides/weston-nips-akbc.pdf> (Weston)
+  - <https://github.com/glorotxa/SME>
 
 
 #### Yang, Yih, He, Gao, Deng - ["Embedding Entities and Relations for Learning and Inference in Knowledge Bases"](http://arxiv.org/abs/1412.6575) (DistMult model)
@@ -1237,8 +1244,8 @@ noise, inferring missing information, and determining which candidate facts shou
 
 >	"We examine and compare different types of relation operators and entity vector representations under a general framework for multi-relational learning. Specifically, we derive several recently proposed embedding models, including TransE and NTN, and their variants under the same framework. We empirically evaluate their performance on a knowledge base completion task using various real-world datasets in a controlled experimental setting and present several interesting findings. First, the models with fewer parameters tend to be better than more complex models in terms of both performance and scalability. Second, the bilinear operator plays an important role in capturing entity interactions. Third, with the same model complexity, multiplicative operations are superior to additive operations in modeling relations. Finally, initializing entity vectors with pre-trained phrase vectors can significantly boost performance, whereas representing entity vectors as an average of word vectors that are initialized with pre-trained vectors may hurt performance."
 
-  - http://arxiv.org/pdf/1411.4072.pdf
-  - https://github.com/dirkweissenborn/genie-kb/blob/master/model/models.py (DistMult)
+  - <http://arxiv.org/pdf/1411.4072.pdf>
+  - <https://github.com/dirkweissenborn/genie-kb/blob/master/model/models.py> (DistMult)
 
 
 #### Nickel, Tresp - ["Tensor Factorization for Multi-Relational Learning"](http://www.ecmlpkdd2013.org/wp-content/uploads/2013/07/673.pdf) (RESCAL model)
@@ -1252,13 +1259,13 @@ noise, inferring missing information, and determining which candidate facts shou
 
 >	"The rank of an adjacency tensor is lower bounded by the maximum number of strongly connected components of a single relation and upper bounded by the sum of diclique partition numbers of all relations."
 
-  - http://videolectures.net/eswc2014_tresp_machine_learning/ + http://www.dbs.ifi.lmu.de/~tresp/papers/ESWC-Keynote.pdf
-  - http://www.cip.ifi.lmu.de/~nickel/iswc2012-slides/#/
-  - http://edoc.ub.uni-muenchen.de/16056/1/Nickel_Maximilian.pdf (PhD thesis)
-  - http://matt-gardner.github.io/paper-thoughts/2015/01/14/tensor-decomposition.html
-  - https://github.com/mnick/scikit-tensor
-  - https://github.com/mnick/rescal.py
-  - https://github.com/nzhiltsov/Ext-RESCAL + http://nzhiltsov.blogspot.ru/2014/10/ext-rescal-tensor-factorization.html
+  - <http://videolectures.net/eswc2014_tresp_machine_learning/> + <http://www.dbs.ifi.lmu.de/~tresp/papers/ESWC-Keynote.pdf>
+  - <http://www.cip.ifi.lmu.de/~nickel/iswc2012-slides/#/>
+  - <http://edoc.ub.uni-muenchen.de/16056/1/Nickel_Maximilian.pdf> (PhD thesis)
+  - <http://matt-gardner.github.io/paper-thoughts/2015/01/14/tensor-decomposition.html>
+  - <https://github.com/mnick/scikit-tensor>
+  - <https://github.com/mnick/rescal.py>
+  - <https://github.com/nzhiltsov/Ext-RESCAL> + <http://nzhiltsov.blogspot.ru/2014/10/ext-rescal-tensor-factorization.html>
 
 
 #### Krompass, Nickel, Tresp - ["Large-Scale Factorization of Type-Constrained Multi-Relational Data"](http://www.dbs.ifi.lmu.de/~tresp/papers/LargeScaleFactorizationOfTypeConstraintMultiRelationalData.pdf)
@@ -1274,9 +1281,9 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 #### Riedel, Yao, McCallum, Marlin - ["Relation Extraction with Matrix Factorization and Universal Schemas"](http://people.cs.umass.edu/~lmyao/papers/univ-schema-tacl.pdf) (Model E, Model F, Model N)
 >	"Traditional relation extraction predicts relations within some fixed and finite target schema. Machine learning approaches to this task require either manual annotation or, in the case of distant supervision, existing structured sources of the same schema. The need for existing datasets can be avoided by using a universal schema: the union of all involved schemas (surface form predicates as in OpenIE, and relations in the schemas of preexisting databases). This schema has an almost unlimited set of relations (due to surface forms), and supports integration with existing structured data (through the relation types of existing databases). To populate a database of such schema we present matrix factorization models that learn latent feature vectors for entity tuples and relations. We show that such latent models achieve substantially higher accuracy than a traditional classification approach. More importantly, by operating simultaneously on relations observed in text and in pre-existing structured DBs such as Freebase, we are able to reason about unstructured and structured data in mutually-supporting ways."
 
-  - http://techtalks.tv/talks/relation-extraction-with-matrix-factorization-and-universal-schemas/58435/ (Riedel)
-  - http://youtube.com/watch?v=odI3RznREY4 (Yao)
-  - https://github.com/dirkweissenborn/genie-kb/blob/master/model/models.py (Model E, Model F, Model N)
+  - <http://techtalks.tv/talks/relation-extraction-with-matrix-factorization-and-universal-schemas/58435/> (Riedel)
+  - <http://youtube.com/watch?v=odI3RznREY4> (Yao)
+  - <https://github.com/dirkweissenborn/genie-kb/blob/master/model/models.py> (Model E, Model F, Model N)
 
 
 #### Toutanova, Chen, Pantel, Poon, Choudhury, Gamon - ["Representing Text for Joint Embedding of Text and Knowledge Bases"](http://research.microsoft.com/apps/pubs/default.aspx?id=254916)
@@ -1284,7 +1291,7 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 
 >	"Here we explored an alternative representation of textual relations for latent feature models that learn to represent knowledge base and textual relations in the same vector space. We showed that given the large degree of sharing of sub-structure in the textual relations, it was beneficial to compose their continuous representations out of the representations of their component words and dependency arc links. We applied a convolutional neural network model and trained it jointly with a model mapping entities and knowledge base relations to the same vector space, obtaining substantial improvements over an approach that treats the textual relations as atomic units having independent parameterization."
 
-  - http://akbc.ws/2016/slides/toutanova-akbc16.pdf
+  - <http://akbc.ws/2016/slides/toutanova-akbc16.pdf>
 
 
 #### Verga, Belanger, Strubell, Roth, McCallum - ["Multilingual Relation Extraction using Compositional Universal Schema"](http://arxiv.org/abs/1511.06396)
@@ -1298,7 +1305,7 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 
 >	"In this paper we explore a row-less extension of Universal Schema that forgoes explicit entity pair representations for an aggregation function over relation types. This extension allows prediction between all entity pairs in new textual mentions - whether seen at train time or not - and also provides a natural connection to the provenance supporting the prediction. In this work we show that an aggregation function based on query-specific attention over relation types outperforms query independent aggregations. We show that aggregation models are able to predict on par with entity pair models for seen entity pairs and, in the case of attention, suffer very little loss for unseen entity pairs. We also limited our pattern encoders to lookup-tables. In future work we will combine the column-less and rowless approach to make a fully compositional Universal Schema model. This will allow Universal Schema to generalize to all new textual patterns and entity pairs."
 
-  - http://akbc.ws/2016/slides/verga-akbc16.pdf
+  - <http://akbc.ws/2016/slides/verga-akbc16.pdf>
 
 
 #### Verga, Neelakantan, McCallum - ["Generalizing to Unseen Entities and Entity Pairs with Row-less Universal Schema"](https://arxiv.org/abs/1606.05804)
@@ -1306,7 +1313,7 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 
 >	"In this paper we explore a row-less extension of universal schema that forgoes explicit row representations for an aggregation function over its observed columns. This extension allows prediction between all rows in new textual mentions - whether seen at train time or not - and also provides a natural connection to the provenance supporting the prediction. Our models also have a smaller memory footprint. In this work we show that an aggregation function based on query-specific attention over relation types outperforms query independent aggregations. We show that aggregation models are able to predict on par with models with explicit row representations on seen row entries."
 
-  - http://akbc.ws/2016/slides/verga-akbc16.pdf
+  - <http://akbc.ws/2016/slides/verga-akbc16.pdf>
 
 
 #### Singh, Rocktaschel, Riedel - ["Towards Combined Matrix and Tensor Factorization for Universal Schema Relation Extraction"](https://rockt.github.io/pdf/singh2015towards.pdf)
@@ -1324,17 +1331,17 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 
 >	"For a long time, practitioners have been reluctant to use embedding models because many common relationships, including the sameAs relation modeled as an identity matrix, were not trivially seen as low-rank. In this paper we showed that when sign-rank based binary loss is minimized, many common relations such as permutation matrices, sequential relationships, and transitivity can be represented by surprisingly small embeddings."
 
-  - https://youtube.com/watch?v=sKZD8huxjZ0 (Bouchard)
-  - https://drive.google.com/file/d/0B_hicYJxvbiObnNYZ0cyMkotUzQ
+  - <https://youtube.com/watch?v=sKZD8huxjZ0> (Bouchard)
+  - <https://drive.google.com/file/d/0B_hicYJxvbiObnNYZ0cyMkotUzQ>
 
 
 #### Rocktaschel, Bosnjak, Singh, Riedel - ["Low-Dimensional Embeddings of Logic"](http://www.aclweb.org/anthology/W/W14/W14-2409.pdf)
 >	"Many machine reading approaches, from shallow information extraction to deep semantic parsing, map natural language to symbolic representations of meaning. Representations such as first-order logic capture the richness of natural language and support complex reasoning, but often fail in practice due to their reliance on logical background knowledge and the difficulty of scaling up inference. In contrast, low-dimensional embeddings (i.e. distributional representations) are efficient and enable generalization, but it is unclear how reasoning with embeddings could support the full power of symbolic representations such as first-order logic. In this proof-of-concept paper we address this by learning embeddings that simulate the behavior of first-order logic."
 
-  - https://github.com/uclmr/low-rank-logic
-  - http://yoavartzi.com/sp14/slides/rockt.sp14.pdf
-  - https://b8ca8e88-a-62cb3a1a-s-sites.googlegroups.com/site/learningsemantics2014/SebastianRiedel.pdf
-  - http://sameersingh.org/files/papers/lowranklogic-starai14-poster.pdf
+  - <https://github.com/uclmr/low-rank-logic>
+  - <http://yoavartzi.com/sp14/slides/rockt.sp14.pdf>
+  - <https://b8ca8e88-a-62cb3a1a-s-sites.googlegroups.com/site/learningsemantics2014/SebastianRiedel.pdf>
+  - <http://sameersingh.org/files/papers/lowranklogic-starai14-poster.pdf>
 
 
 #### Rocktaschel, Singh, Riedel - ["Injecting Logical Background Knowledge into Embeddings for Relation Extraction"](http://rockt.github.io/pdf/rocktaschel2015injecting.pdf)
@@ -1361,11 +1368,11 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 >	  - Generalizes beyond textual patterns mentioned in formulae
 >	  - Joint optimization >(better) Pre-factorization inference > Post-factorization inference > Logical inference"
 
-  - http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/ + http://rockt.github.io/slides/2015-naacl.pdf (Rocktaschel)
-  - https://github.com/uclmr/low-rank-logic
-  - https://b8ca8e88-a-62cb3a1a-s-sites.googlegroups.com/site/learningsemantics2014/SebastianRiedel.pdf
-  - http://sameersingh.org/files/papers/lowranklogic-starai14-poster.pdf
-  - http://yoavartzi.com/sp14/slides/rockt.sp14.pdf
+  - <http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/> + <http://rockt.github.io/slides/2015-naacl.pdf> (Rocktaschel)
+  - <https://github.com/uclmr/low-rank-logic>
+  - <https://b8ca8e88-a-62cb3a1a-s-sites.googlegroups.com/site/learningsemantics2014/SebastianRiedel.pdf>
+  - <http://sameersingh.org/files/papers/lowranklogic-starai14-poster.pdf>
+  - <http://yoavartzi.com/sp14/slides/rockt.sp14.pdf>
 
 
 #### Demeester, Rocktaschel, Riedel - ["Lifted Rule Injection for Relation Embeddings"](https://arxiv.org/abs/1606.08359)
@@ -1377,13 +1384,13 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 #### Neelakantan, Roth, McCallum - ["Knowledge Base Completion using Compositional Vector Space Models"](http://akbc.ws/2014/submissions/akbc2014_submission_10.pdf) (research for Google Knowledge Vault)
 >	"Traditional approaches to knowledge base completion have been based on symbolic representations. Low-dimensional vector embedding models proposed recently for this task are attractive since they generalize to possibly unlimited sets of relations. A significant drawback of previous embedding models for KB completion is that they merely support reasoning on individual relations (e.g., bornIn(X, Y) -> nationality(X, Y)). In this work, we develop models for KB completion that support chains of reasoning on paths of any length using compositional vector space models. We construct compositional vector representations for the paths in the KB graph from the semantic vector representations of the binary relations in that path and perform inference directly in the vector space. Unlike previous methods, our approach can generalize to paths that are unseen in training and, in a zero-shot setting, predict target relations without supervised training data for that relation."
 
-  - http://youtube.com/watch?v=mSrkzc0Nksg (Neelakantan) + https://docs.google.com/file/d/0B_hicYJxvbiOTUxZMWY5T2N2VG8
+  - <http://youtube.com/watch?v=mSrkzc0Nksg> (Neelakantan) + <https://docs.google.com/file/d/0B_hicYJxvbiOTUxZMWY5T2N2VG8>
 
 
 #### Gardner, Talukdar, Krishnamurthy, Mitchell - ["Incorporating Vector Space Similarity in Random Walk Inference over Knowledge Bases"](http://rtw.ml.cmu.edu/emnlp2014_vector_space_pra/paper.pdf)
 >	"Much work in recent years has gone into the construction of large knowledge bases, such as Freebase, DBPedia, NELL, and YAGO. While these KBs are very large, they are still very incomplete, necessitating the use of inference to fill in gaps. Prior work has shown how to make use of a large text corpus to augment random walk inference over KBs. We present two improvements to the use of such large corpora to augment KB inference. First, we present a new technique for combining KB relations and surface text into a single graph representation that is much more compact than graphs used in prior work. Second, we describe how to incorporate vector space similarity into random walk inference over KBs, reducing the feature sparsity inherent in using surface text. This allows us to combine distributional similarity with symbolic logical inference in novel and effective ways. With experiments on many relations from two separate KBs, we show that our methods significantly outperform prior work on KB inference, both in the size of problem our methods can handle and in the quality of predictions made."
 
-  - http://rtw.ml.cmu.edu/emnlp2014_vector_space_pra/ + https://github.com/matt-gardner/pra
+  - <http://rtw.ml.cmu.edu/emnlp2014_vector_space_pra/> + <https://github.com/matt-gardner/pra>
 
 
 #### Guu, Miller, Liang - ["Traversing Knowledge Graphs in Vector Space"](http://arxiv.org/abs/1506.01094)
@@ -1395,15 +1402,15 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 
 >	"We have two key empirical findings: First, we show that compositional training enables us to answer path queries up to at least length 5 by substantially reducing cascading errors present in the base vector space model. Second, we find that somewhat surprisingly, compositional training also improves upon state-of-the-art performance for knowledge base completion, which is a special case of answering unit length path queries. Therefore, compositional training can also be seen as a new form of structural regularization for existing models."
 
-  - https://codalab.org/worksheets/0xfcace41fdeec45f3bc6ddf31107b829f
+  - <https://codalab.org/worksheets/0xfcace41fdeec45f3bc6ddf31107b829f>
 
 
 #### Perozzi, Al-Rfou, Skiena - ["DeepWalk - Online Learning of Social Representations"](http://arxiv.org/abs/1403.6652) (word2vec extension for graph embedding)
 >	"We present DeepWalk, a novel approach for learning latent representations of vertices in a network. These latent representations encode social relations in a continuous vector space, which is easily exploited by statistical models. DeepWalk generalizes recent advancements in language modeling and unsupervised feature learning (or deep learning) from sequences of words to graphs. DeepWalk uses local information obtained from truncated random walks to learn latent representations by treating walks as the equivalent of sentences. We demonstrate DeepWalk’s latent representations on several multi-label network classification tasks for social networks such as BlogCatalog, Flickr, and YouTube. Our results show that DeepWalk outperforms challenging baselines which are allowed a global view of the network, especially in the presence of missing information. DeepWalk’s representations can provide F1 scores up to 10% higher than competing methods when labeled data is sparse. In some experiments, DeepWalk’s representations are able to outperform all baseline methods while using 60% less training data. DeepWalk is also scalable. It is an online learning algorithm which builds useful incremental results, and is trivially parallelizable. These qualities make it suitable for a broad class of real world applications such as network classification, and anomaly detection."
 
-  - https://sites.google.com/site/bryanperozzi/projects/deepwalk
-  - https://github.com/phanein/deepwalk
-  - https://github.com/napsternxg/deepwalk_keras_igraph
+  - <https://sites.google.com/site/bryanperozzi/projects/deepwalk>
+  - <https://github.com/phanein/deepwalk>
+  - <https://github.com/napsternxg/deepwalk_keras_igraph>
 
 
 #### Atwood, Towsley - ["Search-Convolutional Neural Networks"](http://arxiv.org/abs/1511.02136)
@@ -1421,18 +1428,19 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 
 >	"SCNNs offer comparable empirical performance to partially-observed conditional random fields, the current state-of-the-art method for labeling relational data. SCNNs, however, offer this performance at considerably lower computational cost. Learning the parameters of both SCNNs and partially-observed CRFs involves numerically minimizing a nonconvex objective - the backpropagated error in the case of SCNNs and the negative marginal log-likelihood for CRFs. In practice, the marginal log-likelihood of a partially-observed CRF is usually computed using a contrast-of-partition-functions approach that requires running loopy belief propagation twice; once on the entire graph and once with the observed labels fixed. This algorithm, and thus each step in the numerical optimization, has exponential time complexity O(E*N^C), where E is the number of edges, N is the number of nodes, and C is the size of the maximal clique. In contrast, the learning subroutine for an SCNN requires only a forward and backward pass for each instance in the training data. The complexity is dominated by the matrix multiplication between the graph definition matrix A and the design matrix V, giving an overall polynomial complexity of O(N^2*F). If A is sparse (i.e. node degree is bounded by a constant), then the complexity reduces to O(N*F) and becomes linear with respect to the order of the input graph. This implies that learning an SCNN for a graph containing large cliques will be substantially faster than learning the corresponding CRF."
 
-  - https://github.com/jcatw/scnn
+  - <https://github.com/jcatw/scnn>
 
 
 
 ---
 ### interesting papers - continuous representations of text
 
+
 #### Neelakantan, Shankar, Passos, McCallum - ["Efficient Non-parametric Estimation of Multiple Embeddings per Word in Vector Space"](https://people.cs.umass.edu/~arvind/emnlp2014.pdf)
 >	"There is rising interest in vector-space word embeddings and their use in NLP, especially given recent methods for their fast estimation at very large scale. Nearly all this work, however, assumes a single vector per word type - ignoring polysemy and thus jeopardizing their usefulness for downstream tasks. We present an extension to the Skip-gram model that efficiently learns multiple embeddings per word type. It differs from recent related work by jointly performing word sense discrimination and embedding learning, by non-parametrically estimating the number of senses per word type, and by its efficiency and scalability. We present new state-of-the-art results in the word similarity in context task and demonstrate its scalability by training with one machine on a corpus of nearly 1 billion tokens in less than 6 hours."
 
-  - http://youtube.com/watch?v=EeBj4TyW8B8
-  - https://people.cs.umass.edu/~arvind/emnlp2014wordvectors/
+  - <http://youtube.com/watch?v=EeBj4TyW8B8>
+  - <https://people.cs.umass.edu/~arvind/emnlp2014wordvectors/>
 
 
 #### Tian, Dai, Bian, Gao, Zhang, Chen, Liu - ["A Probabilistic Model for Learning Multi-Prototype Word Embeddings"](http://research.microsoft.com/apps/pubs/default.aspx?id=226629)
@@ -1440,16 +1448,16 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 
 >	"In this paper, we introduce a fast and probabilistic method to generate multiple embedding vectors for polysemous words, based on the continuous Skip-Gram model. On one hand, our method addresses the drawbacks of the original Word2Vec model by leveraging multi-prototype word embeddings; on the other hand, our model yields much less complexity without performance loss compared with the former clustering based multi-prototype algorithms. In addition, the probabilistic framework of our method avoids the extra efforts to perform clustering besides training word embeddings."
 
-  - https://github.com/airalcorn2/Deep-Semantic-Similarity-Model
+  - <https://github.com/airalcorn2/Deep-Semantic-Similarity-Model>
 
 
 #### Bartunov, Kondrashkin, Osokin, Vetrov - ["Breaking Sticks and Ambiguities with Adaptive Skip-gram"](http://arxiv.org/abs/1502.07257)
 >	"Recently proposed Skip-gram model is a powerful method for learning high-dimensional word representations that capture rich semantic relationships between words. However, Skip-gram as well as most prior work on learning word representations does not take into account word ambiguity and maintain only single representation per word. Although a number of Skip-gram modifications were proposed to overcome this limitation and learn multi-prototype word representations, they either require a known number of word meanings or learn them using greedy heuristic approaches. In this paper we propose the Adaptive Skip-gram model which is a nonparametric Bayesian extension of Skip-gram capable to automatically learn the required number of representations for all words at desired semantic resolution. We derive efficient online variational learning algorithm for the model and empirically demonstrate its efficiency on wordsense induction task."
 
-  - http://youtube.com/watch?v=vYbee1InliU (Vetrov)
-  - http://postnauka.ru/video/49258 (Vetrov, in russian)
-  - http://youtu.be/uoRwjxaDgt0?t=33m58s (Vetrov, in russian)
-  - https://github.com/sbos/AdaGram.jl
+  - <http://youtube.com/watch?v=vYbee1InliU> (Vetrov)
+  - <http://postnauka.ru/video/49258> (Vetrov, in russian)
+  - <http://youtu.be/uoRwjxaDgt0?t=33m58s> (Vetrov, in russian)
+  - <https://github.com/sbos/AdaGram.jl>
 
 
 #### Nalisnick, Ravi - ["Infinite Dimensional Word Embeddings"](http://arxiv.org/abs/1511.05392)
@@ -1459,9 +1467,9 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 
 >	"During training, the iSGM allows word representations to grow naturally based on how well they can predict their context. This behavior enables the vectors of specific words to use few dimensions and the vectors of vague words to elongate as needed. Manual and experimental analysis reveals this dynamic representation elegantly captures specificity, polysemy, and homonymy without explicit definition of such concepts within the model."
 
-  - https://www.evernote.com/shard/s189/sh/2da41f5c-7fc2-4bb1-8c00-dad613404328/e1d1c853162af5fbe537a02796a4ba4e
-  - http://dustintran.com/blog/infinite-dimensional-word-embeddings/
-  - http://videolectures.net/deeplearning2016_cote_boltzmann_machine/ (Cote)
+  - <https://www.evernote.com/shard/s189/sh/2da41f5c-7fc2-4bb1-8c00-dad613404328/e1d1c853162af5fbe537a02796a4ba4e>
+  - <http://dustintran.com/blog/infinite-dimensional-word-embeddings/>
+  - <http://videolectures.net/deeplearning2016_cote_boltzmann_machine/> (Cote)
 
 
 #### Vilnis, McCallum - ["Word Representations via Gaussian Embedding"](http://arxiv.org/abs/1412.6623)
@@ -1474,9 +1482,9 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 >	 - enhances asymmetric reasoning such as entailment/implicature
 >	 - more expressive decision boundaries and representational power"
 
-  - http://youtu.be/Xm1XGjc9lDc?t=14m52s (McCallum)
-  - http://youtube.com/watch?v=PKTfALFk03M + http://iclr.cc/lib/exe/fetch.php?media=iclr2015:vilnis-iclr2015.pdf (Vilnis)
-  - https://github.com/seomoz/word2gauss
+  - <http://youtu.be/Xm1XGjc9lDc?t=14m52s> (McCallum)
+  - <http://youtube.com/watch?v=PKTfALFk03M> + <http://iclr.cc/lib/exe/fetch.php?media=iclr2015:vilnis-iclr2015.pdf> (Vilnis)
+  - <https://github.com/seomoz/word2gauss>
 
 
 #### Trask, Michalak, Liu - ["Sense2Vec - A Fast and Accurate Method for Word Sense Disambiguation in Neural Word Embeddings"](http://arxiv.org/abs/1511.06388)
@@ -1492,9 +1500,9 @@ techniques pertaining to each of the above three aspects lead to significant per
 
 >	"Sent2vec maps a pair of short text strings (e.g., sentences or query-answer pairs) to a pair of feature vectors in a continuous, low-dimensional space where the semantic similarity between the text strings is computed as the cosine similarity between their vectors in that space. sent2vec performs the mapping using the Deep Structured Semantic Model (DSSM) or the DSSM with convolutional-pooling structure (CDSSM)."
 
-  - http://research.microsoft.com/en-us/projects/dssm/
-  - http://research.microsoft.com/pubs/232372/CIKM14_tutorial_HeGaoDeng.pdf
-  - sent2vec: http://research.microsoft.com/en-us/downloads/731572aa-98e4-4c50-b99d-ae3f0c9562b9/default.aspx
+  - <http://research.microsoft.com/en-us/projects/dssm/>
+  - <http://research.microsoft.com/pubs/232372/CIKM14_tutorial_HeGaoDeng.pdf>
+  - sent2vec: <http://research.microsoft.com/en-us/downloads/731572aa-98e4-4c50-b99d-ae3f0c9562b9/default.aspx>
 
 
 #### Heck, Huang - ["Deep Learning of Knowledge Graph Embeddings for Semantic Parsing of Twitter Dialogs"](http://research.microsoft.com/apps/pubs/default.aspx?id=228823)
@@ -1508,8 +1516,8 @@ techniques pertaining to each of the above three aspects lead to significant per
 
 >	"Dictionaries exist in many of the world’s languages. We have shown how these lexical resources can be a valuable resource for training the latest neural language models to interpret and represent the meaning of phrases and sentences. While humans use the phrasal definitions in dictionaries to better understand the meaning of words, machines can use the words to better understand the phrases. We presented an recurrent neural network architecture with a long-short-term memory to explicitly exploit this idea. On the reverse dictionary task that mirrors its training setting, the RNN performs comparably to the best known commercial applications despite having access to many fewer definitions. Moreover, it generates smoother sets of candidates, uses less memory at query time and, perhaps most significantly, requires no linguistic pre-processing or task-specific engineering. We also showed how the description-to-word objective can be used to train models useful for other tasks. The architecture trained additionally on an encyclopedia performs well as a crossword question answerer, outperforming commercial systems on questions containing more than four words. While our QA experiments focused on a particular question type, the results suggest that a similar neural-language-model approach may ultimately lead to improved output from more general QA and dialog systems and information retrieval engines in general. In particular, we propose the reverse dictionary task as a comparatively general-purpose and objective way of evaluating how well models compose lexical meaning into phrase or sentence representations (whether or not they involve training on definitions directly). In the next stage of this research, we will explore ways to enhance the RNN model, especially in the question-answering context. The model is currently not trained on any question-like language, and would conceivably improve on exposure to such linguistic forms. Compared to state-of-the-art word representation learning models, it actually sees very few words during training, and may also benefit from learning from both dictionaries and unstructured text. Finally, we intend to explore ways to endow the model with richer world knowledge. This may require the integration of an external memory module."
 
-  - http://youtube.com/watch?v=H16w6Z2CHkk (Hill)
-  - https://github.com/fh295/DefGen2
+  - <http://youtube.com/watch?v=H16w6Z2CHkk> (Hill)
+  - <https://github.com/fh295/DefGen2>
 
 
 #### Kiros, Zhu, Salakhutdinov, Zemel, Torralba, Urtasun, Fidler - ["Skip-Thought Vectors"](http://arxiv.org/abs/1506.06726)
@@ -1521,20 +1529,20 @@ techniques pertaining to each of the above three aspects lead to significant per
 
 >	"One difficulty that arises with such an experimental setup is being able to construct a large enough word vocabulary to encode arbitrary sentences. For example, a sentence from a Wikipedia article might contain nouns that are highly unlikely to appear in our book vocabulary. We solve this problem by learning a mapping that transfers word representations from one model to another. Using pretrained word2vec representations learned with a continuous bag-of-words model, we learn a linear mapping from a word in word2vec space to a word in the encoder’s vocabulary space. The mapping is learned using all words that are shared between vocabularies. After training, any word that appears in word2vec can then get a vector in the encoder word embedding space."
 
-##
+----
 >	"It turns out that skip-thought vectors have some intriguing properties that allow us to construct F in a really simple way. Suppose we have 3 vectors: an image caption x, a "caption style" vector c and a "book style" vector b. Then we define F as F(x) = x - c + b which intuitively means: keep the "thought" of the caption, but replace the image caption style with that of a story. Then, we simply feed F(x) to the decoder."
 
-  - http://videolectures.net/deeplearning2015_salakhutdinov_deep_learning_2/ (Salakhutdinov, 1:02:56)
-  - https://github.com/tensorflow/models/tree/master/skip_thoughts
-  - https://github.com/ryankiros/skip-thoughts
-  - https://github.com/ryankiros/neural-storyteller + https://medium.com/@samim/generating-stories-about-images-d163ba41e4ed (demo)
+  - <http://videolectures.net/deeplearning2015_salakhutdinov_deep_learning_2/> (Salakhutdinov, 1:02:56)
+  - <https://github.com/tensorflow/models/tree/master/skip_thoughts>
+  - <https://github.com/ryankiros/skip-thoughts>
+  - <https://github.com/ryankiros/neural-storyteller> + <https://medium.com/@samim/generating-stories-about-images-d163ba41e4ed> (demo)
 
 
 
 ---
 ### interesting papers - question answering over knowledge bases
 
-WebQuestions challenge standings - https://codalab.org/worksheets/0xba659fe363cb46e7a505c5b6a774dc8a/
+WebQuestions challenge standings - <https://codalab.org/worksheets/0xba659fe363cb46e7a505c5b6a774dc8a/>
 
 approaches:
  - entity embedding
@@ -1546,7 +1554,7 @@ approaches:
 #### Bordes, Weston, Usunier - ["Open Question Answering with Weakly Supervised Embedding Models"](http://arxiv.org/abs/1404.4326) (entity embedding)
 >	"Building computers able to answer questions on any subject is a long standing goal of artificial intelligence. Promising progress has recently been achieved by methods that learn to map questions to logical forms or database queries. Such approaches can be effective but at the cost of either large amounts of human-labeled data or by defining lexicons and grammars tailored by practitioners. In this paper, we instead take the radical approach of learning to map questions to vectorial feature representations. By mapping answers into the same space one can query any knowledge base independent of its schema, without requiring any grammar or lexicon. Our method is trained with a new optimization procedure combining stochastic gradient descent followed by a fine-tuning step using the weak supervision provided by blending automatically and collaboratively generated resources. We empirically demonstrate that our model can capture meaningful signals from its noisy supervision leading to major improvements over Paralex, the only existing method able to be trained on similar weakly labeled data."
 
-  - http://youtu.be/YkVvOBylV5k?t=13m50s + http://akbc.ws/2014/slides/weston-nips-akbc.pdf
+  - <http://youtu.be/YkVvOBylV5k?t=13m50s> + <http://akbc.ws/2014/slides/weston-nips-akbc.pdf>
 
 
 #### Bordes, Chopra, Weston - ["Question Answering with Subgraph Embeddings"](http://emnlp2014.org/papers/pdf/EMNLP2014067.pdf) (entity embedding)
@@ -1554,8 +1562,8 @@ approaches:
 
 >	"It did as well as the best previous methods on the WebQuestions dataset, yet doesn't use parsers (semantic and/or syntactic) or logic reasoning engines. All it does is some arithmetic over vectors formed from words and relations from both a knowledge base and the question; if finds an optimal "embedding matrix" W, and the it does some matrix multiplication to score question-answer pairs. One limitation is that it doesn't care about word order in the question -- it's basically a "bag of words" setup. Another is that it limits the complexity of the reasoning quite a lot. Another, still, is that it can only spit out entities and paths to get to the answer -- it can't return whole paragraphs, for instance."
 
-  - http://youtu.be/YkVvOBylV5k?t=16m17s (Weston)
-  - http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1406.3676
+  - <http://youtu.be/YkVvOBylV5k?t=16m17s> (Weston)
+  - <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1406.3676>
 
 
 #### Yih, He, Meek - ["Semantic Parsing for Single-Relation Question Answering"](http://research.microsoft.com/pubs/214353/SingleRelationQA-YihHeMeek-ACL14.pdf) (entity embedding)
@@ -1574,8 +1582,8 @@ approaches:
 #### Fader, Zettlemoyer, Etzioni - ["Open Question Answering Over Curated and Extracted Knowledge Bases"](http://homes.cs.washington.edu/~lsz/papers/fze-kdd14.pdf) (shallow parsing and retrieval)
 >	"We consider the problem of open-domain question answering over massive knowledge bases. Existing approaches use either manually curated KBs like Freebase or KBs automatically extracted from unstructured text. In this paper, we present OQA, the first approach to leverage both curated and extracted KBs. A key technical challenge is designing systems that are robust to the high variability in both natural language questions and massive KBs. OQA achieves robustness by decomposing the full Open QA problem into smaller sub-problems including question paraphrasing and query reformulation. OQA solves these sub-problems by mining millions of rules from an unlabeled question corpus and across multiple KBs. OQA then learns to integrate these rules by performing discriminative training on question-answer pairs using a latent-variable structured perceptron algorithm. We evaluate OQA on three benchmark question sets and demonstrate that it achieves up to twice the precision and recall of a state-of-the-art Open QA system."
 
-  - http://videolectures.net/kdd2014_fader_knowledge_bases/
-  - https://github.com/afader/oqa/
+  - <http://videolectures.net/kdd2014_fader_knowledge_bases/>
+  - <https://github.com/afader/oqa/>
 
 
 #### Reddy, Lapata, Steedman - ["Large-scale Semantic Parsing without Question-Answer Pairs"](http://sivareddy.in/papers/reddy2014semanticparsing.pdf) (query graph matching)
@@ -1583,8 +1591,8 @@ approaches:
 
 >	"In this paper, we introduce a new semantic parsing approach for Freebase. A key idea in our work is to exploit the structural and conceptual similarities between natural language and Freebase through a common graph-based representation. We formalize semantic parsing as a graph matching problem and learn a semantic parser without using annotated question-answer pairs. We have shown how to obtain graph representations from the output of a CCG parser and subsequently learn their correspondence to Freebase using a rich feature set and their denotations as a form of weak supervision. Our parser yields state-of-the art performance on three large Freebase domains and is not limited to question answering. We can create semantic parses for any type of NL sentences. Our work brings together several strands of research. Graph-based representations of sentential meaning have recently gained some attention in the literature (Banarescu'2013), and attempts to map sentences to semantic graphs have met with good inter-annotator agreement. Our work is also closely related to Kwiatkowski'2013, Berant and Liang'2014 who present open-domain semantic parsers based on Freebase and trained on QA pairs. Despite differences in formulation and model structure, both approaches have explicit mechanisms for handling the mismatch between natural language and the KB (e.g., using logical-type equivalent operators or paraphrases). The mismatch is handled implicitly in our case via our graphical representation which allows for the incorporation of all manner of powerful features. More generally, our method is based on the assumption that linguistic structure has a correspondence to Freebase structure which does not always hold (e.g., in Who is the grandmother of Prince William?, grandmother is not directly expressed as a relation in Freebase). Additionally, our model fails when questions are too short without any lexical clues (e.g., What did Charles Darwin do?). Supervision from annotated data or paraphrasing could improve performance in such cases. In the future, we plan to explore cluster-based semantics (Lewis and Steedman'2013) to increase the robustness on unseen NL predicates. Our work joins others in exploiting the connections between natural language and open-domain knowledge bases. Recent approaches in relation extraction use distant supervision from a knowledge base to predict grounded relations between two target entities. During learning, they aggregate sentences containing the target entities, ignoring richer contextual information. In contrast, we learn from each individual sentence taking into account all entities present, their relations, and how they interact. Krishnamurthy and Mitchell'2012 formalize semantic parsing as a distantly supervised relation extraction problem combined with a manually specified grammar to guide semantic parse composition. Finally, our approach learns a model of semantics guided by denotations as a form of weak supervision."
 
-  - https://youtube.com/watch?v=hS6oq-nupFw (Reddy)
-  - http://techtalks.tv/talks/large-scale-semantic-parsing-without-question-answer-pairs/61530/ (Reddy)
+  - <https://youtube.com/watch?v=hS6oq-nupFw> (Reddy)
+  - <http://techtalks.tv/talks/large-scale-semantic-parsing-without-question-answer-pairs/61530/> (Reddy)
 
 
 #### Yih, Chang, He, Gao - ["Semantic Parsing via Staged Query Graph Generation: Question Answering with Knowledge Base"](http://research.microsoft.com/apps/pubs/default.aspx?id=244749) (query graph matching)
@@ -1599,7 +1607,7 @@ approaches:
 >	Matching (multi-hop) relations: concatenate multiple relations to a long relation on-the-fly, the DSSM takes care the issues of aggregating semantics from individual relations.
 >	DSSM measures the semantic matching between Pattern and Relation."
 
-  - http://research.microsoft.com/pubs/244749/ACL-15-STAGG_deck.pptx
+  - <http://research.microsoft.com/pubs/244749/ACL-15-STAGG_deck.pptx>
 
 
 #### Li, Clark - ["Answering Elementary Science Questions by Constructing Coherent Scenes using Background Knowledge"](http://allenai.org/content/publications/EMNLP2015_SceneQA_CameraReady.pdf) (query graph matching)
@@ -1615,13 +1623,13 @@ approaches:
 #### Liang, Jordan, Klein - ["Learning Dependency-Based Compositional Semantics"](http://arxiv.org/abs/1109.6841) (query semantic parsing)
 >	"Suppose we want to build a system that answers a natural language question by representing its semantics as a logical form and computing the answer given a structured database of facts. The core part of such a system is the semantic parser that maps questions to logical forms. Semantic parsers are typically trained from examples of questions annotated with their target logical forms, but this type of annotation is expensive. Our goal is to learn a semantic parser from question-answer pairs instead, where the logical form is modeled as a latent variable. Motivated by this challenging learning problem, we develop a new semantic formalism, dependency-based compositional semantics, which has favorable linguistic, statistical, and computational properties. We define a log-linear distribution over DCS logical forms and estimate the parameters using a simple procedure that alternates between beam search and numerical optimization. On two standard semantic parsing benchmarks, our system outperforms all existing state-of-the-art systems, despite using no annotated logical forms."
 
-  - http://youtube.com/watch?v=z4XCjlCeGkQ
+  - <http://youtube.com/watch?v=z4XCjlCeGkQ>
 
 
 #### Kwiatkowski, Choi, Artzi, Zettlemoyer - ["Scaling Semantic Parsers with On-the-fly Ontology Matching"](http://yoavartzi.com/pub/kcaz-emnlp.2013.pdf) (query semantic parsing)
 >	"We consider the challenge of learning semantic parsers that scale to large, open-domain problems, such as question answering with Freebase. In such settings, the sentences cover a wide variety of topics and include many phrases whose meaning is difficult to represent in a fixed target ontology. For example, even simple phrases such as ‘daughter’ and ‘number of people living in’ cannot be directly represented in Freebase, whose ontology instead encodes facts about gender, parenthood, and population. In this paper, we introduce a new semantic parsing approach that learns to resolve such ontological mismatches. The parser is learned from question-answer pairs, uses a probabilistic CCG to build linguistically motivated logical form meaning representations, and includes an ontology matching model that adapts the output logical forms for each target ontology. Experiments demonstrate state-of-the-art performance on two benchmark semantic parsing datasets, including a nine point accuracy improvement on a recent Freebase QA corpus."
 
-  - https://youtube.com/watch?v=-J1P6MpZEoQ (Choi)
+  - <https://youtube.com/watch?v=-J1P6MpZEoQ> (Choi)
 
 
 #### Berant, Liang - ["Semantic Parsing via Paraphrasing"](http://cs.stanford.edu/~pliang/papers/paraphrasing-acl2014.pdf) (query semantic parsing)
@@ -1633,9 +1641,9 @@ approaches:
 
 >	"Since we train from question-answer pairs, we collect answers by executing the gold logical forms against Freebase. We execute λ-DCS queries by converting them into SPARQL and executing them against a copy of Freebase using the Virtuoso database engine."
 
-  - http://youtube.com/watch?v=JANpOGFOR_E (Berant)
-  - http://nlp.stanford.edu/joberant/homepage_files/talks/facebook_jun14.pdf
-  - http://www-nlp.stanford.edu/software/sempre/
+  - <http://youtube.com/watch?v=JANpOGFOR_E> (Berant)
+  - <http://nlp.stanford.edu/joberant/homepage_files/talks/facebook_jun14.pdf>
+  - <http://www-nlp.stanford.edu/software/sempre/>
 
 
 #### Yang, Duan, Zhou, Rim - ["Joint Relational Embeddings for Knowledge-based Question Answering"](http://emnlp2014.org/papers/pdf/EMNLP2014071.pdf) (query semantic parsing)
@@ -1647,8 +1655,8 @@ approaches:
 #### Liang - ["Learning to Execute Natural Language"](http://www.iclr.cc/lib/exe/fetch.php?media=iclr2015:percy-liang-iclr2015.pdf) (query semantic parsing)
 >	"A natural language utterance can be thought of as encoding a program, whose execution yields its meaning. For example, "the tallest mountain" denotes a database query whose execution on a database produces "Mt. Everest." We present a framework for learning semantic parsers that maps utterances to programs, but without requiring any annotated programs. We first demonstrate this paradigm on a question answering task on Freebase. We then show how that the same framework can be extended to the more ambitious problem of querying semi-structured Wikipedia tables. We believe that our work provides a both a practical way to build natural language interfaces and an interesting perspective on language learning that links language with desired behavior."
 
-  - http://youtu.be/-dj4ctqofIc + http://youtu.be/xKCxF97yvPc
-  - http://youtube.com/watch?v=seA3RT98beo
+  - <http://youtu.be/-dj4ctqofIc> + <http://youtu.be/xKCxF97yvPc>
+  - <http://youtube.com/watch?v=seA3RT98beo>
 
 
 #### Wang, Yan, Wang, Huang - ["An Overview of Microsoft Deep QA System on Stanford WebQuestions Benchmark"](http://research.microsoft.com/pubs/228312/Microsoft%20Deep%20QA.pdf) (query semantic parsing + entity embedding)
@@ -1673,10 +1681,10 @@ approaches:
 
 >	"Despite great recent advances, the road towards intelligent machines able to reason and adapt in real-time in multimodal environments remains long and uncertain. This final goal is so complex and further away that it is impossible to perform experiments and research directly in the desired final conditions, so one has to use intermediate and/or proxy tasks as midway goals. Some of those tasks like object detection in computer vision, or machine translation in natural language processing are very useful on their own and fuel many applications. However, such intermediate tasks are already very difficult and it is not obvious that they are suited testbeds for designing intelligent systems: their inherent complexity makes it hard to precisely interpret the behavior and true capabilities of algorithms, in particular regarding key sophisticated capabilities like reasoning and planning. We advocate the use of controlled artificial environments for developing research in AI, environments in which one can precisely study the behavior of algorithms and unambiguously assess their abilities."
 
-  - http://fb.ai/babi
-  - http://youtube.com/watch?v=d-Ma5PkDKG4 + http://youtube.com/watch?v=0RGqJIhdva4 (Bordes) + http://iclr.cc/lib/exe/fetch.php?media=iclr2015:abordes-iclr2015.pdf
-  - https://github.com/fchollet/keras/blob/master/examples/babi_memnn.py
-  - http://smerity.com/articles/2015/keras_qa.html + https://github.com/fchollet/keras/blob/master/examples/babi_rnn.py
+  - <http://fb.ai/babi>
+  - <http://youtube.com/watch?v=d-Ma5PkDKG4> + <http://youtube.com/watch?v=0RGqJIhdva4> (Bordes) + <http://iclr.cc/lib/exe/fetch.php?media=iclr2015:abordes-iclr2015.pdf>
+  - <https://github.com/fchollet/keras/blob/master/examples/babi_memnn.py>
+  - <http://smerity.com/articles/2015/keras_qa.html> + <https://github.com/fchollet/keras/blob/master/examples/babi_rnn.py>
 
 
 #### Grefenstette, Blunsom, Freitas, Hermann - ["A Deep Architecture for Semantic Parsing"](http://arxiv.org/abs/1404.7296)
@@ -1704,8 +1712,8 @@ approaches:
 
 >	"There were prior methods using deep learning technologies for the answer selection task. The approaches for non-factoid question answering generally pursue the solution on the following directions: Firstly, the question and answer representations are learned and matched by certain similarity metrics (Feng et al., 2015; Yu et al., 2014; dos Santos et al., 2015). Secondly, a joint feature vector is constructed based on both the question and the answer, and then the task can be converted into a classification or learning-to-rank problem (Wang & Nyberg, 2015). Finally, recently proposed models for textual generation can intrinsically be used for answer selection and generation (Bahdanau et al., 2015; Vinyals & Le, 2015). The framework proposed in this work belongs to the first category. There are two major differences between our approaches and the work in (Feng et al., 2015): (1) The architectures developed in (Feng et al., 2015) are only based on CNN, whereas our models are based on bidirectional LSTMs, which are more capable of exploiting long-range sequential context information. Moreover, we also integrate the CNN structures on the top of biLSTM for better performance. (2) Feng et al. (2015) tackle the question and answer independently, while the proposed structures develop an efficient attentive models to generate answer embeddings according to the question."
 
-  - https://github.com/brmson/dataset-sts/blob/master/models/attn1511.py + https://github.com/brmson/dataset-sts/blob/master/models/rnncnn.py	
-  - https://github.com/brmson/dataset-sts/blob/master/models/cnnrnn.py
+  - <https://github.com/brmson/dataset-sts/blob/master/models/attn1511.py> + <https://github.com/brmson/dataset-sts/blob/master/models/rnncnn.py	>
+  - <https://github.com/brmson/dataset-sts/blob/master/models/cnnrnn.py>
 
 
 #### Santos, Tan, Xiang, Zhou - ["Attentive Pooling Networks"](http://arxiv.org/abs/1602.03609) (IBM Watson)
@@ -1733,7 +1741,7 @@ approaches:
 
 >	"Based on our benchmarks, as a primary model for applications on new f2-type tasks, we can recommend either the RNN-CNN model or transfer learning based on the Ubu. RNN model."
 
-  - https://github.com/brmson/dataset-sts
+  - <https://github.com/brmson/dataset-sts>
 
 
 #### Iyyer, Manjunatha, Boyd-Graber, Daume - ["Deep Unordered Composition Rivals Syntactic Methods for Text Classification"](http://cs.umd.edu/~miyyer/pubs/2015_acl_dan.pdf)
@@ -1745,16 +1753,16 @@ approaches:
 
 >	"We compare DANs to both the shallow NBOW model as well as more complicated syntactic models on sentence and document-level sentiment analysis and factoid question answering tasks. Our results show that DANs outperform other bag-ofwords models and many syntactic models with very little training time. On the question-answering task, DANs effectively train on out-of-domain data, while RecNNs struggle to reconcile the syntactic differences between the training and test data."
 
-  - http://youtube.com/watch?v=y1_0i1RF74c (Iyyer)
-  - https://cs.umd.edu/~miyyer/data/acldan_slides.pdf
-  - http://github.com/miyyer/dan
+  - <http://youtube.com/watch?v=y1_0i1RF74c> (Iyyer)
+  - <https://cs.umd.edu/~miyyer/data/acldan_slides.pdf>
+  - <http://github.com/miyyer/dan>
 
 
 #### Wieting, Bansal, Gimpel, Livescu - ["Towards Universal Paraphrastic Sentence Embeddings"](http://arxiv.org/abs/1511.08198)
 >	"We consider the problem of learning general-purpose, paraphrastic sentence embeddings based on supervision from the Paraphrase Database. We compare six compositional architectures, evaluating them on annotated textual similarity datasets drawn both from the same distribution as the training data and from a wide range of other domains. We find that the most complex architectures, such as long short-term memory (LSTM) recurrent neural networks, perform best on the in-domain data. However, in out-of-domain scenarios, simple architectures such as word averaging vastly outperform LSTMs. Our simplest averaging model is even competitive with systems tuned for the particular tasks while also being extremely efficient and easy to use. In order to better understand how these architectures compare, we conduct further experiments on three supervised NLP tasks: sentence similarity, entailment, and sentiment classification. We again find that the word averaging models perform well for sentence similarity and entailment, outperforming LSTMs. However, on sentiment classification, we find that the LSTM performs very strongly - even recording new state-of-the-art performance on the Stanford Sentiment Treebank. We then demonstrate how to combine our pretrained sentence embeddings with these supervised tasks, using them both as a prior and as a black box feature extractor. This leads to performance rivaling the state of the art on the SICK similarity and entailment tasks. We release all of our resources to the research community 1 with the hope that they can serve as the new baseline for further work on universal sentence embeddings."
 
-  - http://videolectures.net/iclr2016_wieting_universal_paraphrastic/ (Wieting)
-  - https://github.com/jwieting/iclr2016
+  - <http://videolectures.net/iclr2016_wieting_universal_paraphrastic/> (Wieting)
+  - <https://github.com/jwieting/iclr2016>
 
 
 #### Iyyer, Boyd-Graber, Claudino, Socher, Daume - ["A Neural Network for Factoid Question Answering over Paragraphs"](http://cs.umd.edu/~miyyer/qblearn/)
@@ -1765,21 +1773,21 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 
 >	"Why not traditional QA? Information Retrieval systems work by querying some large knowledge base for terms similar to those in the query. But what if the query lacks informative terms? In such cases, we have to model the compositionality of the query. A dependency-tree recursive neural network model, QANTA, that computes distributed question representations to predict answers. QANTA outperforms multiple strong baselines and defeats human quiz bowl players when combined with IR methods."
 
-  - http://youtube.com/watch?v=LqsUaprYMOw + http://youtube.com/watch?v=-jbqiXvmY9w (exhibition game against team of Jeopardy champions)
-  - http://youtube.com/watch?v=kTXJCEvCDYk + https://goo.gl/ZcQB6n (exhibition game against Ken Jennings)
-  - http://youtube.com/watch?v=c2kGD1EdfFw (exhibition game against Quiz Bowl champions)
-  - http://youtube.com/watch?v=bQHo7BApgAU&t=5m48s (game against California NASAT team)
-  - http://youtube.com/watch?v=ZVHR8OAHDlI (Boyd-Graber, Iyyer)
-  - http://youtube.com/watch?v=ZRYObdTOaEI (Iyyer)
-  - http://youtube.com/watch?v=YArUk9QcMe0 (Boyd-Graber)
-  - http://youtu.be/tdLmf8t4oqM?t=27m25s (Socher)
-  - http://youtu.be/BVbQRrrsJo0?t=34m30s (Socher)
-  - http://videolectures.net/deeplearning2015_socher_nlp_applications/ (Socher, 09:00)
-  - http://youtu.be/9RAo50pVDGI?t=33m20s (Daume)
-  - http://emnlp2014.org/material/poster-EMNLP2014070.pdf (technical overview)
-  - https://github.com/miyyer/qb + http://cs.umd.edu/~miyyer/qblearn/qanta.tar.gz + https://github.com/jcoreyes/NLQA/tree/master/qanta
-  - http://cs.colorado.edu/~jbg/projects/IIS-1320538.html
-  - http://hsquizbowl.org/forums/viewtopic.php?f=2&t=17364#p303823
+  - <http://youtube.com/watch?v=LqsUaprYMOw> + <http://youtube.com/watch?v=-jbqiXvmY9w> (exhibition game against team of Jeopardy champions)
+  - <http://youtube.com/watch?v=kTXJCEvCDYk> + <https://goo.gl/ZcQB6n> (exhibition game against Ken Jennings)
+  - <http://youtube.com/watch?v=c2kGD1EdfFw> (exhibition game against Quiz Bowl champions)
+  - <http://youtube.com/watch?v=bQHo7BApgAU&t=5m48s> (game against California NASAT team)
+  - <http://youtube.com/watch?v=ZVHR8OAHDlI> (Boyd-Graber, Iyyer)
+  - <http://youtube.com/watch?v=ZRYObdTOaEI> (Iyyer)
+  - <http://youtube.com/watch?v=YArUk9QcMe0> (Boyd-Graber)
+  - <http://youtu.be/tdLmf8t4oqM?t=27m25s> (Socher)
+  - <http://youtu.be/BVbQRrrsJo0?t=34m30s> (Socher)
+  - <http://videolectures.net/deeplearning2015_socher_nlp_applications/> (Socher, 09:00)
+  - <http://youtu.be/9RAo50pVDGI?t=33m20s> (Daume)
+  - <http://emnlp2014.org/material/poster-EMNLP2014070.pdf> (technical overview)
+  - <https://github.com/miyyer/qb> + <http://cs.umd.edu/~miyyer/qblearn/qanta.tar.gz> + <https://github.com/jcoreyes/NLQA/tree/master/qanta>
+  - <http://cs.colorado.edu/~jbg/projects/IIS-1320538.html>
+  - <http://hsquizbowl.org/forums/viewtopic.php?f=2&t=17364#p303823>
 
 
 #### Nogueira, Cho - ["End-to-End Goal-Driven Web Navigation"](http://arxiv.org/pdf/1602.02261)
@@ -1787,7 +1795,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 
 >	"In this work, we describe a large-scale goal-driven web navigation task and argue that it serves as a useful test bed for evaluating the capabilities of artificial agents on natural language understanding and planning. We release a software tool, called WebNav, that compiles a given website into a goal-driven web navigation task. As an example, we construct WikiNav from Wikipedia using WebNav. We extend WikiNav with Jeopardy! questions, thus creating WikiNav-Jeopardy. We evaluate various neural net based agents on WikiNav and WikiNav-Jeopardy. Our results show that more sophisticated agents have better performance, thus supporting our claim that this task is well suited to evaluate future progress in natural language understanding and planning. Furthermore, we show that our agent pretrained on WikiNav outperforms two strong inverted-index based search engines on the WikiNav-Jeopardy. These empirical results support our claim on the usefulness of the proposed task and agents in challenging applications such as focused crawling and question-answering."
 
-  - Value Iteration Networks for this problem [https://arxiv.org/abs/1602.02867] - https://youtu.be/tXBHfbHHlKc?t=31m20s (Tamar)
+  - Value Iteration Networks for this problem [<https://arxiv.org/abs/1602.02867]> - <https://youtu.be/tXBHfbHHlKc?t=31m20s> (Tamar)
 
 
 #### Bordes, Usunier, Chopra, Weston - ["Large-scale Simple Question Answering with Memory Networks"](http://arxiv.org/abs/1506.02075)
@@ -1799,14 +1807,14 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 
 >	"This paper presents an implementation of MemNNs for the task of large-scale simple QA. Our results demonstrate that, if properly trained, MemNNs are able to handle natural language and a very large memory (millions of entries), and hence can reach state-of-the-art on the popular benchmark WebQuestions. We want to emphasize that many of our findings, especially those regarding how to format the KB, do not only concern MemNNs but potentially any QA system. This paper also introduced the new dataset SimpleQuestions, which, with 100k examples, is one order of magnitude bigger than WebQuestions: we hope that it will foster interesting new research in QA, simple or not."
 
-##
+----
 >	"questions/challenges for large-scale q&a:
 >	 - require more training data (hard to generalize to unknown types of questions)
 >	 - still quite some engineering (indexing)
 >	 - hashing/string matching is not learned"
 
-  - http://youtu.be/jRkm6PXRVF8?t=34m58s (Weston)
-  - http://youtu.be/8keqd1ewsno?t=18m48s (Bordes)
+  - <http://youtu.be/jRkm6PXRVF8?t=34m58s> (Weston)
+  - <http://youtu.be/8keqd1ewsno?t=18m48s> (Bordes)
 
 
 #### Ture, Jojic - ["Simple and Effective Question Answering with Recurrent Neural Networks"](http://arxiv.org/abs/1606.05029)
@@ -1818,14 +1826,14 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 #### Weston, Chopra, Bordes - ["Memory Networks"](http://arxiv.org/abs/1410.3916)
 >	"We describe a new class of learning models called memory networks. Memory networks reason with inference components combined with a long-term memory component; they learn how to use these jointly. The long-term memory can be read and written to, with the goal of using it for prediction. We investigate these models in the context of question answering where the long-term memory effectively acts as a (dynamic) knowledge base, and the output is a textual response. We evaluate them on a large-scale QA task, and a smaller, but more complex, toy task generated from a simulated world. In the latter, we show the reasoning power of such models by chaining multiple supporting sentences to answer questions that require understanding the intension of verbs."
 
-  - https://facebook.com/video.php?v=10153098860532200 (demo)
-  - http://youtube.com/watch?v=Xumy3Yjq4zk + http://cs224d.stanford.edu/lectures/CS224d-Lecture12.pdf (Weston)
-  - http://techtalks.tv/talks/memory-networks-for-language-understanding/62356/ (Weston)
-  - http://youtu.be/jRkm6PXRVF8?t=16m29s (Weston)
-  - http://blog.acolyer.org/2016/03/10/memory-networks/
-  - https://docs.google.com/file/d/0B_hicYJxvbiOT3QyTm4wdHlaeWs
-  - https://reddit.com/r/MachineLearning/comments/2xcyrl/i_am_j%C3%BCrgen_schmidhuber_ama/cp4ecce
-  - https://github.com/fchollet/keras/blob/master/examples/babi_memnn.py
+  - <https://facebook.com/video.php?v=10153098860532200> (demo)
+  - <http://youtube.com/watch?v=Xumy3Yjq4zk> + <http://cs224d.stanford.edu/lectures/CS224d-Lecture12.pdf> (Weston)
+  - <http://techtalks.tv/talks/memory-networks-for-language-understanding/62356/> (Weston)
+  - <http://youtu.be/jRkm6PXRVF8?t=16m29s> (Weston)
+  - <http://blog.acolyer.org/2016/03/10/memory-networks/>
+  - <https://docs.google.com/file/d/0B_hicYJxvbiOT3QyTm4wdHlaeWs>
+  - <https://reddit.com/r/MachineLearning/comments/2xcyrl/i_am_j%C3%BCrgen_schmidhuber_ama/cp4ecce>
+  - <https://github.com/fchollet/keras/blob/master/examples/babi_memnn.py>
 
 
 #### Sukhbaatar, Szlam, Weston, Fergus - ["End-To-End Memory Networks"](http://arxiv.org/abs/1503.08895)
@@ -1833,15 +1841,15 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 
 >	"In this work we showed that a neural network with an explicit memory and a recurrent attention mechanism for reading the memory can be sucessfully trained via backpropagation on diverse tasks from question answering to language modeling. Compared to the Memory Network implementation there is no supervision of supporting facts and so our model can be used in more realistic QA settings. Our model approaches the same performance of that model, and is significantly better than other baselines with the same level of supervision. On language modeling tasks, it slightly outperforms tuned RNNs and LSTMs of comparable complexity. On both tasks we can see that increasing the number of memory hops improves performance. However, there is still much to do. Our model is still unable to exactly match the performance of the memory networks trained with strong supervision, and both fail on several of the QA tasks. Furthermore, smooth lookups may not scale well to the case where a larger memory is required. For these settings, we plan to explore multiscale notions of attention or hashing."
 
-  - http://research.microsoft.com/apps/video/default.aspx?id=259920 (Sukhbaatar)
-  - http://youtube.com/watch?v=8keqd1ewsno (Bordes)
-  - http://www.shortscience.org/paper?bibtexKey=conf/nips/SukhbaatarSWF15
-  - https://github.com/facebook/MemNN
-  - https://github.com/vinhkhuc/MemN2N-babi-python
-  - https://github.com/fchollet/keras/blob/master/examples/babi_memnn.py
-  - https://github.com/domluna/memn2n
-  - https://github.com/carpedm20/MemN2N-tensorflow
-  - https://github.com/npow/MemNN
+  - <http://research.microsoft.com/apps/video/default.aspx?id=259920> (Sukhbaatar)
+  - <http://youtube.com/watch?v=8keqd1ewsno> (Bordes)
+  - <http://www.shortscience.org/paper?bibtexKey=conf/nips/SukhbaatarSWF15>
+  - <https://github.com/facebook/MemNN>
+  - <https://github.com/vinhkhuc/MemN2N-babi-python>
+  - <https://github.com/fchollet/keras/blob/master/examples/babi_memnn.py>
+  - <https://github.com/domluna/memn2n>
+  - <https://github.com/carpedm20/MemN2N-tensorflow>
+  - <https://github.com/npow/MemNN>
 
 
 #### Miller, Fisch, Dodge, Karimi, Bordes, Weston - ["Key-Value Memory Networks for Directly Reading Documents"](https://arxiv.org/abs/1606.03126)
@@ -1849,7 +1857,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 
 >	"We studied the problem of directly reading documents in order to answer questions, concentrating our analysis on the gap between such direct methods and using human-annotated or automatically constructed KBs. We presented a new model, Key-Value Memory Networks, which helps bridge this gap, outperforming several other methods across two datasets, MOVIEQA and WIKIQA. However, some gap in performance still remains. MOVIEQA serves as an analysis tool to shed some light on the causes. Future work should try to close this gap further. Key-Value Memory Networks are a versatile tool for reading documents or KBs and answering questions about them - allowing to encode prior knowledge about the task at hand in the key and value memories. These models could be applied to storing and reading memories for other tasks as well, and future work should try them in other domains, such as in a full dialog setting."
 
-  - https://gist.github.com/shagunsodhani/a5e0baa075b4a917c0a69edc575772a8
+  - <https://gist.github.com/shagunsodhani/a5e0baa075b4a917c0a69edc575772a8>
 
 
 #### Kumar, Irsoy, Su, Bradbury, English, Pierce, Ondruska, Gulrajani, Socher - ["Ask Me Anything: Dynamic Memory Networks for Natural Language Processing"](http://arxiv.org/abs/1506.07285)
@@ -1875,17 +1883,17 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 
 >	"We believe the DMN is a potentially general model for a variety of NLP applications. The entire model can be trained end-to-end with one, albeit complex, objective function. The model uses some ideas from neuroscience such as semantic and episodic memories known to be required for complex types of reasoning. Future work will explore additional tasks, larger multi-task models and multimodal inputs and questions."
 
-##
+----
 >	"The paper proposes an end-to-end differentiable NN module called DMN. It consists of 4 parts, an input module, question module, episodic memory module and an answer module. Their works appear quite similar to the MemNN neural network with the main difference being the episodic memory module, which is an attention based recurrent module over the input hidden states and the question state. The authors argue that in many cases multiple passes over all the facts and question can help in better question answering."
 
 >	"The main modeling idea is that you take a question and use it to condition a neural attention mechanism that goes over some text. The text is represented in terms of hidden states of a bidirectional sequence model. Conditioned on the question, that attention mechanism goes over inputs at each time step, and connects them to an episodic memory module. That is, it opens a gate that lets the vector at a time step be fed into the episodic memory. One important aspect for some tasks is that the model goes over the input multiple times. After each time it classifies the memory state by asking "do I know enough to answer the question?" And if not, then it goes over the input again, but conditioned on the question and also the previous memory state. That way it can reason over multiple facts. Once it classifies "yes I know enough", it gives that memory vector to an output sequence model which generates the answer."
 
-  - http://yerevann.com/dmn-ui/ (demo)
-  - http://videolectures.net/deeplearning2015_socher_nlp_applications/ (Socher, 00:42)
-  - http://www.iro.umontreal.ca/~memisevr/dlss2015/DLSummerSchoolLecture2.pdf
-  - http://yerevann.github.io/2016/02/05/implementing-dynamic-memory-networks/
-  - https://napsternxg.gitbooks.io/article-reviews/content/ama_socher.html
-  - https://github.com/swstarlab/DynamicMemoryNetworks
+  - <http://yerevann.com/dmn-ui/> (demo)
+  - <http://videolectures.net/deeplearning2015_socher_nlp_applications/> (Socher, 00:42)
+  - <http://www.iro.umontreal.ca/~memisevr/dlss2015/DLSummerSchoolLecture2.pdf>
+  - <http://yerevann.github.io/2016/02/05/implementing-dynamic-memory-networks/>
+  - <https://napsternxg.gitbooks.io/article-reviews/content/ama_socher.html>
+  - <https://github.com/swstarlab/DynamicMemoryNetworks>
 
 
 #### Seo, Hajishirzi, Farhadi - ["Query-Regression Networks for Machine Comprehension"](http://arxiv.org/abs/1606.04582)
@@ -1895,7 +1903,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 
 >	"The attention mechanism allows the models to focus on a single sentence in each layer, and the models can sequentially read multiple relevant sentences from the memory with multiple layers. However, the biggest drawback of the vanilla attention mechanism is that it is insensitive to the time step (memory address) of the sentences when accessing them. End-to-end Memory Network attempts to resolve this problem by adding time-dependent variable to the sentence representation at each time step (address) of the memory. Dynamic Memory Network combines RNN and attention mechanism together to incorporate time dependency into the model. Our proposed model is a single recurrent unit that addresses the long-term dependency problem of most RNN-based models while taking the full advantage of RNN’s capability to model sequential data. QRN considers the sentences (story) as a sequence of state-changing triggers, and QRN transforms (regresses) the original question (query) to an easierto-answer query as it observes each trigger through time. For instance, the original question, “Where is the apple?” cannot be directly answered by any single sentence from the story. Hence, after observing the first sentence “Sandra got the apple there.”, QRN transforms the original question to “Where is Sandra?”, which is presumably easier to answer. This mechanism is akin to logic regression in situation calculus. While previous work can be also viewed as performing query regression through multiple layers, QRN is distinct from their approaches in that the query regression in our model is performed locally (timewise), so it can better encode locality information. We will experimentally demonstrate that the local query regression is effective for handling the time dependency problem, and we will show that QRN can be parallelized over time, unlike most RNN-based models."
 
-  - https://github.com/seominjoon/qrn
+  - <https://github.com/seominjoon/qrn>
 
 
 #### Peng, Lu, Li, Wong - ["Towards Neural Network-based Reasoning"](http://arxiv.org/abs/1508.05508)
@@ -1903,12 +1911,12 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 
 >	"We have proposed Neural Reasoner, a framework for neural network-based reasoning over natural language sentences. Neural Reasoner is flexible, powerful, and language indepedent. Our empirical studies show that Neural Reasoner can dramatically improve upon existing neural reasoning systems on two difficult artificial tasks. For future work, we will explore 1) tasks with higher difficulty and reasoning depth, e.g., tasks which require a large number of supporting facts and facts with complex intrinsic structures, 2) the common structure in different but similar reasoning tasks (e.g., multiple tasks all with general questions), and 3) automatic selection of the reasoning architecture, for example, determining when to stop the reasoning based on the data."
 
-##
+----
 Weston:
 >	"similar to Memory Networks but with non-linear function to compute interaction between control state and memory slot"
 
-  - http://thespermwhale.com/jaseweston/ram/slides/session2/neural-reason.pdf
-  - https://www.evernote.com/shard/s189/sh/54f4534f-3813-44de-8feb-af7180eceb8e/953160fcc0f551cb9855d46cf686375b
+  - <http://thespermwhale.com/jaseweston/ram/slides/session2/neural-reason.pdf>
+  - <https://www.evernote.com/shard/s189/sh/54f4534f-3813-44de-8feb-af7180eceb8e/953160fcc0f551cb9855d46cf686375b>
 
 
 #### Hermann, Kocisky, Grefenstette, Espeholt, Kay, Suleyman, Blunsom - ["Teaching Machines to Read and Comprehend"](http://arxiv.org/abs/1506.03340)
@@ -1926,20 +1934,20 @@ Weston:
 >	 - more and better data, corpus querying, and cross document queries,
 >	 - recurrent networks incorporating long term and working memory are well suited to NLU task."
 
-##
+----
 >	"The model has to be able to detect symbol in the input (answer placeholder in the question) and substitute it with another symbol (word from document).
 >	Two strategies for transducing with replacement of answer placeholder symbol with entity symbol: document||query (putting all the information about document into thought vector before knowing the query) or query||document (putting all the information about query before thinking about the answer). The second approach (filtering document after digesting query) works better.
 >	We do not tell the model anything about the structure. We don't tell it there are query and document (they are just symbols). We don't tell it there is symbol it has to substitute (it just has to learn them). So there is really long range between variable in query and answer in document (thousands of words). And the problem is more difficult than other transduction problems because of that."
 
-  - http://videolectures.net/deeplearning2015_blunsom_memory_reading/ (Blunsom, 33:00) + http://www.iro.umontreal.ca/~memisevr/dlss2015/num-mr.pdf
-  - http://youtu.be/-WPP9f1P-Xc?t=22m28s (Blunsom)
-  - http://egrefen.com/docs/HowMuchLinguistics2015.pdf
-  - http://www.shortscience.org/paper?bibtexKey=conf/nips/HermannKGEKSB15
-  - https://www.evernote.com/shard/s189/sh/ade22da1-4813-4b5c-89a5-3fdf7dbad8ee/ce8b7234b42c62882609047ecc289920
-  - https://arxiv.org/abs/1606.02858
-  - https://github.com/thomasmesnard/DeepMind-Teaching-Machines-to-Read-and-Comprehend
-  - https://github.com/carpedm20/attentive-reader-tensorflow
-  - https://github.com/caglar/Attentive_reader/
+  - <http://videolectures.net/deeplearning2015_blunsom_memory_reading/> (Blunsom, 33:00) + <http://www.iro.umontreal.ca/~memisevr/dlss2015/num-mr.pdf>
+  - <http://youtu.be/-WPP9f1P-Xc?t=22m28s> (Blunsom)
+  - <http://egrefen.com/docs/HowMuchLinguistics2015.pdf>
+  - <http://www.shortscience.org/paper?bibtexKey=conf/nips/HermannKGEKSB15>
+  - <https://www.evernote.com/shard/s189/sh/ade22da1-4813-4b5c-89a5-3fdf7dbad8ee/ce8b7234b42c62882609047ecc289920>
+  - <https://arxiv.org/abs/1606.02858>
+  - <https://github.com/thomasmesnard/DeepMind-Teaching-Machines-to-Read-and-Comprehend>
+  - <https://github.com/carpedm20/attentive-reader-tensorflow>
+  - <https://github.com/caglar/Attentive_reader/>
 
 
 #### Kadlec, Schmid, Bajgar, Kleindienst - ["Text Understanding with the Attention Sum Reader Network"](http://arxiv.org/abs/1603.01547)
@@ -1948,7 +1956,7 @@ Weston:
 >	"The words from the document and the question are first converted into vector embeddings using a look-up matrix V. The document is then read by a bidirectional GRU network. A concatenation of the hidden states of the forward and backward GRUs at each word is then used as a contextual embedding of this word, intuitively representing the context in which the word is appearing. We can also understand it as representing the set of questions to which this word may be an answer. Similarly the question is read by a bidirectional GRU but in this case only the final hidden states are concatenated to form the question embedding. The attention over each word in the context is then calculated as the dot product of its contextual embedding with the question embedding. This attention is then normalized by the softmax function. While most previous models used this attention as weights to calculate a blended representation of the answer word, we simply sum the attention across all occurrences of each unique words and then simply select the word with the highest sum as the final answer. While simple, this trick seems both to improve accuracy and to speed-up training."
 
 
-Bajgar, Kadlec, Kleindienst - Embracing data abundance: BookTest Dataset for Reading Comprehension [https://arxiv.org/abs/1610.00956]
+Bajgar, Kadlec, Kleindienst - Embracing data abundance: BookTest Dataset for Reading Comprehension [<https://arxiv.org/abs/1610.00956]>
 >	"There is a practically unlimited amount of natural language data available. Still, recent work in text comprehension has focused on datasets which are small relative to current computing possibilities. This article is making a case for the community to move to larger data and as a step in that direction it is proposing the BookTest, a new dataset similar to the popular Children’s Book Test (CBT), however more than 60 times larger. We show that training on the new data improves the accuracy of our Attention-Sum Reader model on the original CBT test data by a much larger margin than many recent attempts to improve the model architecture. On one version of the dataset our ensemble even exceeds the human baseline provided by Facebook. We then show in our own human study that there is still space for further improvement."
 
 >	"We have shown that simply infusing a model with more data can yield performance improvements of up to 14.8% where several attempts to improve the model architecture on the same training data have given gains of at most 2.1% compared to our best ensemble result."
@@ -1971,15 +1979,15 @@ Bajgar, Kadlec, Kleindienst - Embracing data abundance: BookTest Dataset for Rea
 
 >	"This work takes the lead in presenting a CNN based neural network system for open-domain machine comprehension task. Our systems tried to solve this task in a document projection way as well as a textual entailment way. The latter one demonstrates slightly better performance. Overall, our architecture, modeling dynamic document representation by attention scheme from sentence level to snippet level, shows promising results in this task. In the future, more finegrained representation learning approaches are expected to model complex answer types and question types."
 
-  - https://youtube.com/watch?v=N4KklROfLQU
+  - <https://youtube.com/watch?v=N4KklROfLQU>
 
 
 #### Trischler, Ye, Yuan, He, Bachman, Suleman - ["A Parallel-Hierarchical Model for Machine Comprehension on Sparse Data"](http://arxiv.org/abs/1603.08884)
 >	"Understanding unstructured text is a major goal within natural language processing. Comprehension tests pose questions based on short text passages to evaluate such understanding. In this work, we investigate machine comprehension on the challenging MCTest benchmark. Partly because of its limited size, prior work on MCTest has focused mainly on engineering better features. We tackle the dataset with a neural approach, harnessing simple neural networks arranged in a parallel hierarchy. The parallel hierarchy enables our model to compare the passage, question, and answer from a variety of trainable perspectives, as opposed to using a manually designed, rigid feature set. Perspectives range from the word level to sentence fragments to sequences of sentences; the networks operate only on word-embedding representations of text. When trained with a methodology designed to help cope with limited training data, our Parallel-Hierarchical model sets a new state of the art for MCTest, outperforming previous feature-engineered approaches slightly and previous neural approaches by a significant margin (over 15% absolute)."
 
-  - https://youtube.com/watch?v=pgVEq7uFRTc + https://youtube.com/watch?v=nbsWpcJASMU + https://youtube.com/watch?v=5UXsPtyBlhs (demo)
-  - https://youtube.com/watch?v=qr9Xvka1kEQ (Suleman)
-  - https://en.wikipedia.org/wiki/Maluuba#cite_note-8
+  - <https://youtube.com/watch?v=pgVEq7uFRTc> + <https://youtube.com/watch?v=nbsWpcJASMU> + <https://youtube.com/watch?v=5UXsPtyBlhs> (demo)
+  - <https://youtube.com/watch?v=qr9Xvka1kEQ> (Suleman)
+  - <https://en.wikipedia.org/wiki/Maluuba#cite_note-8>
 
 
 #### Trischler, Ye, Yuan, Suleman - ["Natural Language Comprehension with the EpiReader"](http://arxiv.org/abs/1606.02270)
@@ -1987,20 +1995,20 @@ Bajgar, Kadlec, Kleindienst - Embracing data abundance: BookTest Dataset for Rea
 
 >	"In this article we presented the novel EpiReader framework for machine comprehension, and evaluated it on two large, complex datasets: CNN and CBT. Our model achieves state-of-the-art results on these corpora, outperforming all previous approaches. In future work, we plan to augment our framework with a more powerful model for natural language inference, and explore the effect of pretraining such a model specifically on an inference task. We also plan to try simplifying the model by reusing the Extractor’s biGRU encodings in the Reasoner."
 
-  - https://youtube.com/watch?v=QUwsAPO15_U (demo)
+  - <https://youtube.com/watch?v=QUwsAPO15_U> (demo)
 
 
 #### Berant, Srikumar, Chen, Huang, Manning, Linden, Harding, Clark - ["Modeling Biological Processes for Reading Comprehension"](http://nlp.stanford.edu/pubs/berant-srikumar-manning-emnlp14.pdf)
 >	"Machine reading calls for programs that read and understand text, but most current work only attempts to extract facts from redundant web-scale corpora. In this paper, we focus on a new reading comprehension task that requires complex reasoning over a single document. The input is a paragraph describing a biological process, and the goal is to answer questions that require an understanding of the relations between entities and events in the process. To answer the questions, we first predict a rich structure representing the process in the paragraph. Then, we map the question to a formal query, which is executed against the predicted structure. We demonstrate that answering questions via predicted structures substantially improves accuracy over baselines that use shallower representations."
 
-  - http://youtube.com/watch?v=6tfJZTqPOdg
-  - http://youtube.com/watch?v=cGvfkAALb4s
+  - <http://youtube.com/watch?v=6tfJZTqPOdg>
+  - <http://youtube.com/watch?v=cGvfkAALb4s>
 
 
 Liang - "Asking Deep Questions on Messy Data"
 >	"Knowledge bases, by virtue of their structure, allow one to easily aggregate and filter information. This allows us to ask deep questions using natural language on them thanks to recent advances in semantic parsing. Unfortunately, most knowledge is actually not in a knowledge base, and information extraction, despite best efforts, is still far from obtaining adequate coverage. I will discuss a new generation of semantic parsers that query semi-structured data on web pages directly. The parser jointly reasons over the uncertainty in language and the messiness of the web, answering a new class of questions which was not possible before."
 
-  - https://docs.google.com/file/d/0B_hicYJxvbiOMUJsZGpqUF9NRGM
+  - <https://docs.google.com/file/d/0B_hicYJxvbiOMUJsZGpqUF9NRGM>
 
 
 
@@ -2017,22 +2025,22 @@ Liang - "Asking Deep Questions on Messy Data"
 
 >	"In our experiment in continuous control we used hierarchical policy: high-level policy solved low-resolution map and low-level policy executed it. This is very different from options/skills framework. There is one smooth policy that implements everything. We don't need to learn initiation sets or termination sets. But more importantly, the motivation for using hierarchy here was different. The motivation wasn't to increase learning rate or exploration - the motivation was to generalize. We understood that low-resolution map is sufficient for doing planning which promotes generalization, but low-level policy uses the fact that dynamics is similar across different tasks."
 
-##
+----
 >	"Its contribution is to offer a new way to think about value iteration in the context of deep networks. It shows how the CNN architecture can be hijacked to implement the Bellman optimality operator, and how the backprop signal can be used to learn a deterministic model of the underlying MDP."
 
 >	"Value iteration is similar enough to a sequence of convolutions and max-pooling layers that you can emulate an (unrolled) planning computation with a deep network. This allows neural nets to do planning, e.g. moving from start to goal in grid-world, or navigating a website to find query."
 
-  - https://youtube.com/watch?v=tXBHfbHHlKc (Tamar) + http://technion.ac.il/~danielm/icml_slides/Talk7.pdf
-  - https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Value-Iteration-Networks (Tamar)
-  - https://github.com/karpathy/paper-notes/blob/master/vin.md
-  - https://github.com/avivt/VIN
-  - https://github.com/TheAbhiKumar/tensorflow-value-iteration-networks
+  - <https://youtube.com/watch?v=tXBHfbHHlKc> (Tamar) + <http://technion.ac.il/~danielm/icml_slides/Talk7.pdf>
+  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Value-Iteration-Networks> (Tamar)
+  - <https://github.com/karpathy/paper-notes/blob/master/vin.md>
+  - <https://github.com/avivt/VIN>
+  - <https://github.com/TheAbhiKumar/tensorflow-value-iteration-networks>
 
 
 #### Pasupat, Liang - ["Compositional Semantic Parsing on Semi-Structured Tables"](http://cs.stanford.edu/~ppasupat/resource/ACL2015-paper.pdf) (reasoning over knowledge base)
 >	"Two important aspects of semantic parsing for question answering are the breadth of the knowledge source and the depth of logical compositionality. While existing work trades off one aspect for another, this paper simultaneously makes progress on both fronts through a new task: answering complex questions on semi-structured tables using question-answer pairs as supervision. The central challenge arises from two compounding factors: the broader domain results in an open-ended set of relations, and the deeper compositionality results in a combinatorial explosion in the space of logical forms. We propose a logical-form driven parsing algorithm guided by strong typing constraints and show that it obtains significant improvements over natural baselines. For evaluation, we created a new dataset of 22,033 complex questions on Wikipedia tables, which is made publicly available."
 
-  - http://nlp.stanford.edu/blog/wikitablequestions-a-complex-real-world-question-understanding-dataset/
+  - <http://nlp.stanford.edu/blog/wikitablequestions-a-complex-real-world-question-understanding-dataset/>
 
 
 #### Neelakantan, Le, Sutskever - ["Neural Programmer: Inducing Latent Programs with Gradient Descent"](http://arxiv.org/abs/1511.04834) (neural reasoning over knowledge base)
@@ -2048,19 +2056,19 @@ Liang - "Asking Deep Questions on Messy Data"
 
 >	"We experiment with a synthetic table-comprehension dataset, consisting of questions with a wide range of difficulty levels. Examples of natural language translated queries include “print elements in column H whose field in column C is greater than 50 and field in column E is less than 20?” or “what is the difference between sum of elements in column A and number of rows in the table?”. We find that LSTM recurrent networks and LSTM models with attention do not work well. Neural Programmer, however, can completely solve this task or achieve greater than 99% accuracy on most cases by inducing the required latent program."
 
-##
+----
 >	"Current neural networks cannot handle complex data structures."
 
 >	"Current neural networks cannot handle numbers well: treat numbers as tokens, which lead to many unknown words."
 
 >	"Current neural networks cannot make use of rules well: cannot use addition, subtraction, summation, average operations."
 
-##
+----
 >	"Authors propose a neural programmer by defining a set of symbolic operations (e.g., argmax, greater than); at each step, all possible execution results are fused by a softmax layer, which predicts the probability of each operator at the current step. The step-by-step fusion is accomplished by weighted sum and the model is trained with mean square error. Hence, such approaches work with numeric tables, but may not be suited for other operations like string matching; it also suffers from the problem of “exponential numbers of combinatorial states.”"
 
-  - http://youtu.be/KmOdBS4BXZ0?t=1h8m44s (Le)
-  - http://distill.pub/2016/augmented-rnns/
-  - https://github.com/tensorflow/models/tree/master/neural_programmer
+  - <http://youtu.be/KmOdBS4BXZ0?t=1h8m44s> (Le)
+  - <http://distill.pub/2016/augmented-rnns/>
+  - <https://github.com/tensorflow/models/tree/master/neural_programmer>
 
 
 #### Rocktaschel, Riedel - ["Learning Knowledge Base Inference with Neural Theorem Provers"](http://akbc.ws/2016/papers/14_Paper.pdf) (neural reasoning over knowledge base)
@@ -2076,8 +2084,8 @@ Liang - "Asking Deep Questions on Messy Data"
 
 >	"In this paper, we show how the state-of-the-art in recognizing textual entailment on a large, human-curated and annotated corpus, can be improved with general end-to-end differentiable models. Our results demonstrate that LSTM recurrent neural networks that read pairs of sequences to produce a final representation from which a simple classifier predicts entailment, outperform both a neural baseline as well as a classifier with hand-engineered features. Furthermore, extending these models with attention over the premise provides further improvements to the predictive abilities of the system, resulting in a new state-of-the-art accuracy for recognizing entailment on the Stanford Natural Language Inference corpus. The models presented here are general sequence models, requiring no appeal to natural language specific processing beyond tokenization, and are therefore a suitable target for transfer learning through pre-training the recurrent systems on other corpora, and conversely, applying the models trained on this corpus to other entailment tasks. Future work will focus on such transfer learning tasks, as well as scaling the methods presented here to larger units of text (e.g. paragraphs and entire documents) using hierarchical attention mechanisms. Furthermore, we aim to investigate the application of these generic models to non-natural language sequential entailment problems."
 
-  - http://egrefen.com/docs/HowMuchLinguistics2015.pdf
-  - https://github.com/junfenglx/reasoning_attention
+  - <http://egrefen.com/docs/HowMuchLinguistics2015.pdf>
+  - <https://github.com/junfenglx/reasoning_attention>
 
 
 #### Li, Zemel, Brockschmidt, Tarlow - ["Gated Graph Sequence Neural Networks"](http://arxiv.org/abs/1511.05493) (neural reasoning over graphs)
@@ -2095,14 +2103,14 @@ Liang - "Asking Deep Questions on Messy Data"
 
 >	"We are particularly interested in continuing to develop end-to-end learnable systems that can learn about semantic properties of programs, that can learn more complicated graph algorithms, and in applying these ideas to problems that require reasoning over knowledge bases and databases. More generally, we consider these graph neural networks as representing a step towards a model that can combine structured representations with the powerful algorithms of deep learning, with the aim of taking advantage of known structure while learning and inferring how to reason with and extend these representations."
 
-  - http://research.microsoft.com/apps/video/default.aspx?id=263975&r=1 (Li)
+  - <http://research.microsoft.com/apps/video/default.aspx?id=263975&r=1> (Li)
 
 
 #### Zaremba, Kurach, Fergus - ["Learning to Discover Efficient Mathematical Identities"](http://arxiv.org/abs/1406.1584) (neural reasoning over formulas)
 >	"In this paper we explore how machine learning techniques can be applied to the discovery of efficient mathematical identities. We introduce an attribute grammar framework for representing symbolic expressions. Given a grammar of math operators, we build trees that combine them in different ways, looking for compositions that are analytically equivalent to a target expression but of lower computational complexity. However, as the space of trees grows exponentially with the complexity of the target expression, brute force search is impractical for all but the simplest of expressions. Consequently, we introduce two novel learning approaches that are able to learn from simpler expressions to guide the tree search. The first of these is a simple n-gram model, the other being a recursive neural network. We show how these approaches enable us to derive complex identities, beyond reach of brute-force search, or human derivation."
 
-  - http://youtube.com/watch?v=Hx20MUmWAfg (Fergus)
-  - http://cs.nyu.edu/~zaremba/docs/Learning%20to%20manipulate%20symbols.pdf (Zaremba)
+  - <http://youtube.com/watch?v=Hx20MUmWAfg> (Fergus)
+  - <http://cs.nyu.edu/~zaremba/docs/Learning%20to%20manipulate%20symbols.pdf> (Zaremba)
 
 
 #### Beltagy, Roller, Cheng, Erk, Mooney - ["Representing Meaning with a Combination of Logical Form and Vectors"](http://arxiv.org/abs/1505.06816) (MLN reasoning over text and knowledge base)
@@ -2122,22 +2130,22 @@ Liang - "Asking Deep Questions on Messy Data"
 >	Distributional entailment. It is well-known that cosine similarity gives particularly high ratings to co-hyponyms, and our evaluation confirmed that this is a problem for lexical entailment judgments, as co-hyponyms are usually not entailing. However, co-hyponymy judgments can be used to position unknown terms in the WordNet hierarchy. This could be a new way of using distributional information in lexical entailment: using cosine similarity to position a term in an existing hierarchy, and then using the relations in the hierarchy for lexical entailment. While distributional similarity is usually used only on individual word pairs as if nothing else was known about the language, this technique would us distributional similarity to learn the meaning of unknown terms given that many other terms are already known.
 >	Question Answering. Our semantic representation is a deep flexible semantic representation that can be used to perform various types of tasks. We are interested in applying our semantic representation to the question answering task. Question answering is the task of finding an answer of a WH question from large text corpus. This task is interesting because it may offer a wider variety of tasks to the distributional subsystem, including context-specific matches and the need to learn domain-specific distributional knowledge. In our framework, all the text would be translated to logic, and the question would be translated to a logical expression with an existentially quantified variable representing the questioned part. Then the probabilistic logic inference tool would aim to find the best entities in the text that fill in that existential quantifier in the question. Existing logic-based systems are usually applied to limited domains, such as querying a specific database, but with our system, we have the potential to query a large corpus because we are using Boxer for wide-coverage semantic analysis. The interesting bottleneck is the inference. It would be very challenging to scale probabilistic logic inference to such large inference problems.
 >	Generalized Quantifiers. One important extension to this work is to support generalized quantifiers in probabilistic logic. Some determiners, such as “few” and “most”, cannot be represented in standard first-order logic, and are usually addressed using higher-order logics. But it could be possible to represent them using the probabilistic aspect of probabilistic logic, sidestepping the need for higher-order logic."
-  - http://youtube.com/watch?v=OnlAQqkNpds (Beltagy)
-  - http://youtube.com/watch?v=CmgGYn9KIpE (Erk)
+  - <http://youtube.com/watch?v=OnlAQqkNpds> (Beltagy)
+  - <http://youtube.com/watch?v=CmgGYn9KIpE> (Erk)
 
 
 #### Khot, Balasubramanian, Gribkoff, Sabharwal, Clark, Etzioni - ["Markov Logic Networks for Natural Language Question Answering"](http://arxiv.org/abs/1507.03045) (MLN reasoning over text)
 >	"Our goal is to answer elementary-level science questions using knowledge extracted automatically from science textbooks, expressed in a subset of first-order logic. Given the incomplete and noisy nature of these automatically extracted rules, Markov Logic Networks seem a natural model to use, but the exact way of leveraging MLNs is by no means obvious. We investigate three ways of applying MLNs to our task. In the first, we simply use the extracted science rules directly as MLN clauses. Unlike typical MLN applications, our domain has long and complex rules, leading to an unmanageable number of groundings. We exploit the structure present in hard constraints to improve tractability, but the formulation remains ineffective. In the second approach, we instead interpret science rules as describing prototypical entities, thus mapping rules directly to grounded MLN assertions, whose constants are then clustered using existing entity resolution methods. This drastically simplifies the network, but still suffers from brittleness. Finally, our third approach, called Praline, uses MLNs to align the lexical elements as well as define and control how inference should be performed in this task. Our experiments, demonstrating a 15% accuracy boost and a 10x reduction in runtime, suggest that the flexibility and different inference semantics of Praline are a better fit for the natural language question answering task".
 >	"Our investigation of the potential of MLNs for QA resulted in multiple formulations, the third of which is a flexible model that outperformed other, more natural approaches. We hope our question sets and MLNs will guide further research on improved modeling of the QA task and design of more efficient inference mechanisms for such models. While SRL methods seem a perfect fit for textual reasoning tasks such as RTE and QA, their performance on these tasks is still not up to par with simple textual feature-based approaches (Beltagy and Mooney 2014). On our datasets too, simple word-overlap based approaches perform quite well, scoring around 55%. We conjecture that the increased flexibility of complex relational models comes at the cost of increased susceptibility to noise in the input. Automatically learning weights of these models may allow leveraging this flexibility in order to handle noise better. Weight learning in these models, however, is challenging as we only observe the correct answer for a question and not intermediate feedback such as ideal alignments and desirable inference chains. Modeling the QA task with MLNs, an undirected model, gives the flexibility to define a joint model that allows alignment to influence inference and vice versa. At the same time, inference chains themselves need to be acyclic, suggesting that models such as Problog and SLP would be a better fit for this sub-task. Exploring hybrid formulation and designing more efficient and accurate MLNs or other SRL models for the QA task remains an exciting avenue of future research."
 
-  - https://github.com/clulab/nlp-reading-group/raw/master/fall-2015-resources/Markov%20Logic%20Networks%20for%20Natural%20Language%20Question%20Answering.pdf
-  - http://akbc.ws/2014/slides/etzioni-nips-akbc.pdf (slides 30-37)
+  - <https://github.com/clulab/nlp-reading-group/raw/master/fall-2015-resources/Markov%20Logic%20Networks%20for%20Natural%20Language%20Question%20Answering.pdf>
+  - <http://akbc.ws/2014/slides/etzioni-nips-akbc.pdf> (slides 30-37)
 
 
 #### Clark, Etzioni, Khot, Sabharwal, Tafjord, Turney - ["Combining Retrieval, Statistics, and Inference to Answer Elementary Science Questions"](http://web.engr.illinois.edu/~khashab2/files/2015_aristo/2015_aristo_aaai-2016.pdf)
 >	"What capabilities are required for an AI system to pass standard 4th Grade Science Tests? Previous work has examined the use of Markov Logic Networks to represent the requisite background knowledge and interpret test questions, but did not improve upon an information retrieval baseline. In this paper, we describe an alternative approach that operates at three levels of representation and reasoning: information retrieval, corpus statistics, and simple inference over a semi-automatically constructed knowledge base, to achieve substantially improved results. We evaluate the methods on six years of unseen, unedited exam questions from the NY Regents Science Exam (using only non-diagram, multiple choice questions), and show that our overall system’s score is 71.3%, an improvement of 23.8% (absolute) over the MLN-based method described in previous work. We conclude with a detailed analysis, illustrating the complementary strengths of each method in the ensemble. Our datasets are being released to enable further research."
 
-  - https://youtube.com/watch?v=HcPCURc59Vw (Sabharwal)
+  - <https://youtube.com/watch?v=HcPCURc59Vw> (Sabharwal)
 
 
 #### Khashabi, Khot, Sabharwal, Clark, Etzioni, Roth - ["Question Answering via Integer Programming over Semi-Structured Knowledge"](http://arxiv.org/abs/1604.06076)
@@ -2153,8 +2161,8 @@ Liang - "Asking Deep Questions on Messy Data"
 
 >	"We treat question answering as the task of pairing the question with an answer such that this pair has the best support in the knowledge base, measured in terms of the strength of a “support graph”. Informally, an edge denotes (soft) equality between a question or answer node and a table node, or between two table nodes. To account for lexical variability (e.g., that tool and instrument are essentially equivalent) and generalization (e.g., that a dog is an animal), we replace string equality with a phrase-level entailment or similarity function. A support graph thus connects the question constituents to a unique answer option through table cells and (optionally) table headers corresponding to the aligned cells. A given question and tables give rise to a large number of possible support graphs, and the role of the inference process will be to choose the “best” one under a notion of desirable support graphs developed next. We do this through a number of additional structural and semantic properties; the more properties the support graph satisfies, the more desirable it is."
 
-  - https://youtube.com/watch?v=HcPCURc59Vw (Sabharwal)
-  - https://github.com/allenai/tableilp
+  - <https://youtube.com/watch?v=HcPCURc59Vw> (Sabharwal)
+  - <https://github.com/allenai/tableilp>
 
 
 #### Li, Ritter, Jurafsky - ["Inferring User Preferences by Probabilistic Logical Reasoning over Social Networks"](http://arxiv.org/abs/1411.2679) (MLN reasoning over knowledge base)
@@ -2172,13 +2180,13 @@ Liang - "Asking Deep Questions on Messy Data"
 #### Wu, Hsiao, Cheng, Hancock, Rekatsinas, Levis, Re - ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](http://arxiv.org/abs/1703.05028)
 >	"We introduce Fonduer, a knowledge base construction framework for richly formatted information extraction, where entity relations and attributes are conveyed via structural, tabular, visual, and textual expressions. Fonduer introduces a new programming model for KBC built around a unified data representation that accounts for three challenging characteristics of richly formatted data: (1) prevalent document-level relations, (2) multimodality, and (3) data variety. Fonduer is the first KBC system for richly formatted data and uses a human-in-the-loop paradigm for training machine learning systems, referred to as data programming. Data programming softens the burden of traditional supervision by only asking users to provide lightweight functions that programmatically assign (potentially noisy) labels to the input data. Fonduer’s unified data model, together with data programming, allows users to use domain expertise as weak signals of supervision that help guide the KBC process over richly formatted data. We evaluate Fonduer on four real-world applications over different domains and achieve an average improvement of 42 F1 points over the upper bound of state-of-the-art approaches. In some domains, our users have produced up to 1.87× the number of correct entires compared to expert-curated public knowledge bases. Fonduer scales gracefully to millions of documents and is used in both academia and industry to create knowledge bases for real-world problems in many domains."
 
-  - https://github.com/brylevkirill/notes/blob/test/Machine%20Learning.md#ratner-sa-wu-selsam-re---data-programming-creating-large-training-sets-quickly
+  - <https://github.com/brylevkirill/notes/blob/test/Machine%20Learning.md#ratner-sa-wu-selsam-re---data-programming-creating-large-training-sets-quickly>
 
 
 #### Dong, Gabrilovich, Heitz, Horn, Murphy, Sun, Zhang - ["From Data Fusion to Knowledge Fusion"](http://www.vldb.org/pvldb/vol7/p881-dong.pdf) (information integration method used in Google Knowledge Vault)
 >	"The task of data fusion is to identify the true values of data items (e.g., the true date of birth for Tom Cruise) among multiple observed values drawn from different sources (e.g., Web sites) of varying (and unknown) reliability. A recent survey has provided a detailed comparison of various fusion methods on Deep Web data. In this paper, we study the applicability and limitations of different fusion techniques on a more challenging problem: knowledge fusion. Knowledge fusion identifies true subject-predicate-object triples extracted by multiple information extractors from multiple information sources. These extractors perform the tasks of entity linkage and schema alignment, thus introducing an additional source of noise that is quite different from that traditionally considered in the data fusion literature, which only focuses on factual errors in the original sources. We adapt state-of-the-art data fusion techniques and apply them to a knowledge base with 1.6B unique knowledge triples extracted by 12 extractors from over 1B Web pages, which is three orders of magnitude larger than the data sets used in previous data fusion papers. We show great promise of the data fusion approaches in solving the knowledge fusion problem, and suggest interesting research directions through a detailed error analysis of the methods."
 
-  - http://lunadong.com/talks/fromDFtoKF.pdf
+  - <http://lunadong.com/talks/fromDFtoKF.pdf>
 
 
 #### West, Gabrilovich, Murphy, Sun, Gupta, Lin - ["Knowledge Base Completion via Search-Based Question Answering"](http://www.cs.ubc.ca/~murphyk/Papers/www14.pdf) (knowledge base completion method used in Google Knowledge Vault)
@@ -2219,7 +2227,7 @@ these knowledge bases are greatly incomplete. For example, over 70% of people in
 
 >	"In this paper we introduce PIDGIN, a novel, flexible, and scalable approach to automatic alignment of real-world KB ontologies, demonstrating its superior performance at aligning large real-world KB ontologies including those of NELL, Yago and Freebase. The key idea in PIDGIN is to align KB ontologies by integrating two types of information: relation instances that are shared by the two KBs, and mentions of the KB relation instances across a large text corpus. PIDGIN uses a natural language web text corpus of 500 million dependency-parsed documents as interlingua and a graph-based self-supervised learning to infer alignments. To the best of our knowledge, this is the first successful demonstration of using such a large text resource for ontology alignment. PIDGIN is self-supervised, and does not require human labeled data. Moreover, PIDGIN can be implemented in MapReduce, making it suitable for aligning ontologies from large KBs. We have provided extensive experimental results on multiple real world datasets, demonstrating that PIDGIN significantly outperforms PARIS, the current state-of-the-art approach to ontology alignment. We observe in particular that PIDGIN is typically able to improve recall over that of PARIS, without degradation in precision. This is presumably due to PIDGIN’s ability to use text-based interlingua to establish alignments when there are few or no relation instances shared by the two KBs. Additionally, PIDGIN automatically learns which verbs are associated with which ontology relations. These verbs can be used in the future to extract new instances to populate the KB or identify relations between entities in documents. PIDGIN can also assign relations in one KB with argument types of another KB. This can help type relations that do not yet have argument types, like that of KBP. Argument typing can improve the accuracy of extraction of new relation instances by constraining the instances to have the correct types. In the future, we plan to extend PIDGIN’s capabilities to provide explanations for its inferred alignments. We also plan to experiment with aligning ontologies from more than two KBs simultaneously."
 
-  - https://github.com/kushalarora/pidgin
+  - <https://github.com/kushalarora/pidgin>
 
 
 #### Hu, Ma, Liu, Hovy, Xing - ["Harnessing Deep Neural Networks with Logic Rules"](http://arxiv.org/abs/1603.06318) (named entity recognition)
@@ -2233,14 +2241,14 @@ these knowledge bases are greatly incomplete. For example, over 70% of people in
 
 >	"We apply the proposed framework on both CNN and RNN, and deploy on the task of sentiment analysis and named entity recognition, respectively. With only a few (one or two) very intuitive rules, the enhanced networks strongly improve over their basic forms (without rules), and achieve better or comparable performance to state-of-the-art models which typically have more parameters and complicated architectures. By incorporating the bi-gram transition rules, we obtain 1.56 improvement in F1 score that outperforms all previous neural based methods on named entity recognition task, including the BLSTM-CRF model which applies a conditional random field on top of a BLSTM model in order to capture the transition patterns and encourage valid sequences. In contrast, our method implements the desired constraints in a more straightforward way by using the declarative logic rule language, and at the same time does not introduce extra model parameters to learn. Further integration of the list rule provides a second boost in performance, achieving an F1 score very close to the best-performing system Joint-NER-EL which is a probabilistic graphical model based method optimizing NER and entity linking jointly and using large amount of external resources."
 
-  - http://www.erogol.com/harnessing-deep-neural-networks-with-logic-rules/
+  - <http://www.erogol.com/harnessing-deep-neural-networks-with-logic-rules/>
 
 
 #### Durrett, Klein - ["A Joint Model for Entity Analysis: Coreference, Typing, and Linking"](http://www.eecs.berkeley.edu/~gdurrett/papers/durrett-klein-tacl2014.pdf)
 >	"We present a joint model of three core tasks in the entity analysis stack: coreference resolution (within-document clustering), named entity recognition (coarse semantic typing), and entity linking (matching to Wikipedia entities). Our model is formally a structured conditional random field. Unary factors encode local features from strong baselines for each task. We then add binary and ternary factors to capture cross-task interactions, such as the constraint that coreferent mentions have the same semantic type. On the ACE 2005 and OntoNotes datasets, we achieve state-of-the-art results for all three tasks. Moreover, joint modeling improves performance on each task over strong independent baselines."
 
-  - http://nlp.cs.berkeley.edu/projects/entity.shtml
-  - http://techtalks.tv/talks/a-joint-model-for-entity-analysis-coreference-typing-and-linking/61534/
+  - <http://nlp.cs.berkeley.edu/projects/entity.shtml>
+  - <http://techtalks.tv/talks/a-joint-model-for-entity-analysis-coreference-typing-and-linking/61534/>
 
 
 #### Wiseman, Rush, Shieber, Weston - ["Learning Anaphoricity and Antecedent Ranking Features for Coreference Resolution"](http://people.seas.harvard.edu/~srush/acl15.pdf)
@@ -2250,7 +2258,7 @@ these knowledge bases are greatly incomplete. For example, over 70% of people in
 
 >	"We have presented a simple, local model capable of learning feature representations useful for coreference-related subtasks, and of thereby achieving state-of-the-art performance. Because our approach automatically learns intermediate representations given raw features, directions for further research might alternately explore including additional (perhaps semantic) raw features, as well as developing loss functions that further discourage learning representations that allow for common errors (such as those involving pleonastic pronouns)."
 
-  - https://github.com/swiseman/nn_coref
+  - <https://github.com/swiseman/nn_coref>
 
 
 #### Mintz, Bills, Snow, Jurafsky - ["Distant Supervision for Relation Extraction without Labeled Data"](http://web.stanford.edu/~jurafsky/mintz.pdf)
@@ -2264,7 +2272,7 @@ these knowledge bases are greatly incomplete. For example, over 70% of people in
 #### Weston, Bordes, Yakhnenko, Usunier - ["Connecting Language and Knowledge Bases with Embedding Models for Relation Extraction"](http://arxiv.org/abs/1307.7973)
 >	"This paper proposes a novel approach for relation extraction from free text which is trained to jointly use information from the text and from existing knowledge. Our model is based on two scoring functions that operate by learning low-dimensional embeddings of words and of entities and relationships from a knowledge base. We empirically show on New York Times articles aligned with Freebase relations that our approach is able to efficiently use the extra information provided by a large subset of Freebase data (4M entities, 23k relationships) to improve over existing methods that rely on text features alone."
 
-  - http://youtu.be/YkVvOBylV5k?t=9m47s
+  - <http://youtu.be/YkVvOBylV5k?t=9m47s>
 
 
 #### Faruqui, Kumar - ["Multilingual Open Relation Extraction Using Cross-lingual Projection"](http://arxiv.org/abs/1503.06450)
@@ -2272,7 +2280,7 @@ these knowledge bases are greatly incomplete. For example, over 70% of people in
 
 >	"We utilized OLLIE to extract the relation tuples for every English sentence. We chose OLLIE because it has been shown to give a higher yield at comparable precision relative to other open RE systems such as REVERB and WOEparse. OLLIE was trained by extracting dependency path patterns on annotated training data. This training data was bootstrapped from a set of high precision seed tuples extracted from a simpler RE system REVERB."
 
-  - http://googleresearch.blogspot.ru/2015/06/a-multilingual-corpus-of-automatically.html
+  - <http://googleresearch.blogspot.ru/2015/06/a-multilingual-corpus-of-automatically.html>
 
 
 #### Santos, Xiang, Zhou - ["Classifying Relations by Ranking with Convolutional Neural Networks"](http://arxiv.org/abs/1504.06580)
@@ -2284,7 +2292,7 @@ these knowledge bases are greatly incomplete. For example, over 70% of people in
 
 >	"In this paper, we exploit a convolution neural network to learn more robust and effective relation representations from shortest dependency paths for relation extraction. We further propose a simple negative sampling method to help make correct assignments for subjects and objects within a relationship. Experimental results show that our model significantly outperforms state-of-the-art systems and our treatment to dependency paths can well capture the syntactic features for relation extraction."
 
-  - https://youtube.com/watch?v=bwAGtKqkNGU (Xu)
+  - <https://youtube.com/watch?v=bwAGtKqkNGU> (Xu)
 
 
 #### Miwa, Bansal - ["End-to-end Relation Extraction using LSTMs on Sequences and Tree Structures"](http://arxiv.org/abs/1601.00770)
@@ -2333,7 +2341,7 @@ these knowledge bases are greatly incomplete. For example, over 70% of people in
 >	 - compute extractor precision and recall (M-step)"
 >	"This paper proposes a new metric for evaluating web-source quality - knowledge-based trust. We proposed a sophisticated probabilistic model that jointly estimates the correctness of extractions and source data, and the trustworthiness of sources. In addition, we presented an algorithm that dynamically decides the level of granularity for each source. Experimental results have shown both promise in evaluating web source quality and improvement over existing techniques for knowledge fusion."
 
-  - "Knowledge Vault and Knowledge-Based Trust" - http://youtube.com/watch?v=Z6tmDdrBnpU (Dong)
+  - "Knowledge Vault and Knowledge-Based Trust" - <http://youtube.com/watch?v=Z6tmDdrBnpU> (Dong)
 
 
 #### Nakashole, Mitchell - ["Language-Aware Truth Assessment of Fact Candidates"](https://aclweb.org/anthology/P/P14/P14-1095.pdf)
@@ -2359,7 +2367,7 @@ these knowledge bases are greatly incomplete. For example, over 70% of people in
 
 >	"We have introduced the concept of estimating the error rate of each of several approximations to the same function, based on their agreement rates over unlabeled data and we have provided three different analytical methods to do so: the AR method, the MLE method and the MAP method. Our experiments showed that the AR method performs significantly better than the other two methods for both data sets we considered. Our results are very encouraging and suggest that function agreement rates are indeed very useful in estimating function error rates. We consider this work to be a first step towards developing a self-reflection framework for autonomous learning systems. There are several directions we would like to pursue to further improve upon the methods introduced here. Firstly, we wish to explore other interesting natural objectives one can aim to optimize. It would also be very interesting to explore possible generalizations of our models to non-boolean, discrete-valued functions, or even to real-valued functions. Finally, apart from simply estimating function error rates, we want to explore how the obtained error rate estimates can be used to improve the learning ability of a system such as NELL, for example. In this context, we could try using our estimates in order to develop a more robust co-training framework. One very direct application of our methods would be to use the estimated error rates and their dependencies in order to combine the functions’ outputs and obtain one final output."
 
-  - https://youtu.be/PF6ViL5pcGs?t=5m3s
+  - <https://youtu.be/PF6ViL5pcGs?t=5m3s>
 
 
 #### Samadi, Talukdar, Veloso, Blum - ["ClaimEval: Integrated and Flexible Framework for Claim Evaluation Using Credibility of Sources"](http://www.cs.cmu.edu/~mmv/papers/16aaai-claimeval.pdf)
@@ -2372,6 +2380,7 @@ these knowledge bases are greatly incomplete. For example, over 70% of people in
 ---
 ### interesting papers - multimodal knowledge representation
 
+
 #### Jabri, Joulin, Maaten - ["Revisiting Visual Question Answering Baselines"](http://arxiv.org/abs/1606.08390)
 >	"Visual question answering is an interesting learning setting for evaluating the abilities and shortcomings of current systems for image understanding. Many of the recently proposed VQA systems include attention or memory mechanisms designed to perform "reasoning". Furthermore, for the task of multiple-choice VQA, nearly all of these systems train a multi-class classifier on image and question features to predict the answers. This paper questions the value of these common practices and develops a simple alternative model based on binary classification. Instead of treating answers as competing choices, our model receives the answer as input and predicts whether or not an image-question-answer triplet is correct. We evaluate our model on the Visual7W Telling and the VQA Real Multiple Choice tasks, and find that even simple versions of our model perform competitively. Our best model achieves state-of-the-art performance of 65.8% on the Visual7W Telling task and competes surprisingly well with the most complex systems proposed for the VQA Real Multiple Choice task. Additionally, we explore variants of our model and study the transferability of our model between both datasets. We also present an error analysis of our best model, the results of which suggests that a key problem of current VQA systems lies in the lack of visual grounding and localization of concepts that occur in the questions and answers."
 
@@ -2381,15 +2390,15 @@ these knowledge bases are greatly incomplete. For example, over 70% of people in
 
 >	"In this paper, we have introduced neural module networks, which provide a general-purpose framework for learning collections of neural modules which can be dynamically assembled into arbitrary deep networks. We have demonstrated that this approach achieves state-of-the-art performance on existing datasets for visual question answering, performing especially well on questions answered by an object or an attribute. Additionally, we have introduced a new dataset of highly compositional questions about simple arrangements of shapes, and shown that our approach substantially outperforms previous work. So far we have maintained a strict separation between predicting network structures and learning network parameters. It is easy to imagine that these two problems might be solved jointly, with uncertainty maintained over network structures throughout training and decoding. This might be accomplished either with a monolithic network, by using some higher-level mechanism to “attend” to relevant portions of the computation, or else by integrating with existing tools for learning semantic parsers. The fact that our neural module networks can be trained to produce predictable outputs - even when freely composed - points toward a more general paradigm of “programs” built from neural networks. In this paradigm, network designers (human or automated) have access to a standard kit of neural parts from which to construct models for performing complex reasoning tasks. While visual question answering provides a natural testbed for this approach, its usefulness is potentially much broader, extending to queries about documents and structured knowledge bases or more general signal processing and function approximation."
 
-  - http://research.microsoft.com/apps/video/default.aspx?id=260024 (Darrell, 10:45)
+  - <http://research.microsoft.com/apps/video/default.aspx?id=260024> (Darrell, 10:45)
 
 
 #### Xu, Ba, Kiros, Cho, Courville, Salakhutdinov, Zemel, Bengio - ["Show, Attend and Tell: Neural Image Caption Generation with Visual Attention"](http://arxiv.org/abs/1502.03044)
 >	"Inspired by recent work in machine translation and object detection, we introduce an attention based model that automatically learns to describe the content of images. We describe how we can train this model in a deterministic manner using standard backpropagation techniques and stochastically by maximizing a variational lower bound. We also show through visualization how the model is able to automatically learn to fix its gaze on salient objects while generating the corresponding words in the output sequence. We validate the use of attention with state-of-the-art performance on three benchmark datasets: Flickr8k, Flickr30k and MS COCO."
 
-  - http://videolectures.net/deeplearning2015_salakhutdinov_deep_learning_2/ (Salakhutdinov, 12:19)
-  - http://videolectures.net/icml2015_xu_visual_attention/
-  - https://github.com/kelvinxu/arctic-captions
+  - <http://videolectures.net/deeplearning2015_salakhutdinov_deep_learning_2/> (Salakhutdinov, 12:19)
+  - <http://videolectures.net/icml2015_xu_visual_attention/>
+  - <https://github.com/kelvinxu/arctic-captions>
 
 
 

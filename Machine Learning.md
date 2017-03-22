@@ -15,14 +15,15 @@ Anywhere there is a function y = f(x), where f(x) has some parameters used to ma
     - [automated machine learning](#interesting-papers---automated-machine-learning)
     - [systems](#interesting-papers---systems)
 
+----
 
   [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
-  [reinforcement learning](https://dropbox.com/s/c28ua7rixoznzdp/Reinforcement%20Learning.txt)  
+  [reinforcement learning](https://dropbox.com/s/dexryjnmxujdynd/Reinforcement%20Learning.txt)  
   [bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)  
   [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
 
 
-the most impressive accomplishments (in russian) - https://dropbox.com/s/di5mxkj8c65h3e6/AI%20wonders.txt
+[the most impressive accomplishments](https://dropbox.com/s/di5mxkj8c65h3e6/AI%20wonders.txt) (in russian)
 
 
 
@@ -31,40 +32,40 @@ the most impressive accomplishments (in russian) - https://dropbox.com/s/di5mxkj
 
 #### non-technical overview
 
-  "What Is Machine Learning" by Pedro Domingos - https://class.coursera.org/machlearning-001/lecture/145
+  "What Is Machine Learning" by Pedro Domingos - <https://class.coursera.org/machlearning-001/lecture/145>
 
-  "Machine Learning is the new algorithms" by Hal Daume - http://nlpers.blogspot.ru/2014/10/machine-learning-is-new-algorithms.html  
-  "When is Machine Learning Worth It?" - http://inference.vc/when-is-machine-learning-worth-it/  
+  "Machine Learning is the new algorithms" by Hal Daume - <http://nlpers.blogspot.ru/2014/10/machine-learning-is-new-algorithms.html>  
+  "When is Machine Learning Worth It?" - <http://inference.vc/when-is-machine-learning-worth-it/>  
 
-  "Deep Learning - Introduction" by Nando de Freitas - https://youtube.com/watch?v=PlhFWT7vAEw  
-  "Machine Learning - Introduction" by Nando de Freitas - https://youtube.com/watch?v=w2OtwL5T1ow  
+  "Deep Learning - Introduction" by Nando de Freitas - <https://youtube.com/watch?v=PlhFWT7vAEw>  
+  "Machine Learning - Introduction" by Nando de Freitas - <https://youtube.com/watch?v=w2OtwL5T1ow>  
 
-  http://machinelearningmastery.com/start-here/  
+  <http://machinelearningmastery.com/start-here/>  
 
 
 #### technical overview
 
-  introduction by Pedro Domingos - https://class.coursera.org/machlearning-001/lecture/149  
-  introduction (in russian) by Dmitry Vetrov - http://youtube.com/watch?v=srIcbDBAJBo + http://youtube.com/watch?v=ftlbxFypW74  
+  introduction by Pedro Domingos - <https://class.coursera.org/machlearning-001/lecture/149>  
+  introduction (in russian) by Dmitry Vetrov - <http://youtube.com/watch?v=srIcbDBAJBo> + <http://youtube.com/watch?v=ftlbxFypW74>  
 
-  http://bugra.github.io/work/notes/2014-08-23/on-machine-learning/  
-  https://thebeautyofml.wordpress.com/2016/04/03/in-a-nutshell-learning/  
+  <http://bugra.github.io/work/notes/2014-08-23/on-machine-learning/>  
+  <https://thebeautyofml.wordpress.com/2016/04/03/in-a-nutshell-learning/>  
 
-  "Machine Learning: Trends, Perspectives and Prospects" by Jordan and Mitchell - https://goo.gl/U8552O  
+  "Machine Learning: Trends, Perspectives and Prospects" by Jordan and Mitchell - <https://goo.gl/U8552O>  
 
-  overview (in russian) by Dmitry Vetrov - http://youtube.com/watch?v=lkh7bLUc30g  
-  overview (in russian) by Igor Kuralenok - http://youtube.com/watch?v=ynS7XvkAdLU + http://youtube.com/watch?v=jiyD0r2SC-g  
+  overview (in russian) by Dmitry Vetrov - <http://youtube.com/watch?v=lkh7bLUc30g>  
+  overview (in russian) by Igor Kuralenok - <http://youtube.com/watch?v=ynS7XvkAdLU> + <http://youtube.com/watch?v=jiyD0r2SC-g>  
 
-  http://thetalkingmachines.com/blog/  (podcasts)
+  <http://thetalkingmachines.com/blog/>  (podcasts)
 
 
 #### applications
 
-  artificial intelligence    - https://dropbox.com/s/7jb0rx9hc6gw3hc/Artificial%20Intelligence.txt + https://dropbox.com/sh/gmo2hort07gsydj/AACK0XoOOLsrzCyYC1eLwyOwa  
-  knowledge representation and reasoning    - https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md + https://dropbox.com/sh/9ytscy4pwegbvhb/AACtB7tQGj-vigo0yExfciu0a  
-  natural language processing    - https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt + https://dropbox.com/sh/rb7u9nwb16bg5xq/AADV3d_bS6-mqFW0_jaec1sZa  
-  information retrieval    - https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt + https://dropbox.com/sh/pvpzyxfcpy39j8p/AACduJ-pVF9Lh-gn3_SExj1va  
-  personal assistants    - https://dropbox.com/s/0fyarlwcfb8mjdq/Personal%20Assistants.txt + https://dropbox.com/sh/veqe3c800ztpkxe/AABwH6camduJrsTUJpeKobWUa  
+  artificial intelligence    - <https://dropbox.com/s/7jb0rx9hc6gw3hc/Artificial%20Intelligence.txt> + <https://dropbox.com/sh/gmo2hort07gsydj/AACK0XoOOLsrzCyYC1eLwyOwa>  
+  knowledge representation and reasoning    - <https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md> + <https://dropbox.com/sh/9ytscy4pwegbvhb/AACtB7tQGj-vigo0yExfciu0a>  
+  natural language processing    - <https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt> + <https://dropbox.com/sh/rb7u9nwb16bg5xq/AADV3d_bS6-mqFW0_jaec1sZa>  
+  information retrieval    - <https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt> + <https://dropbox.com/sh/pvpzyxfcpy39j8p/AACduJ-pVF9Lh-gn3_SExj1va>  
+  personal assistants    - <https://dropbox.com/s/0fyarlwcfb8mjdq/Personal%20Assistants.txt> + <https://dropbox.com/sh/veqe3c800ztpkxe/AABwH6camduJrsTUJpeKobWUa>  
 
 
 
@@ -73,84 +74,84 @@ the most impressive accomplishments (in russian) - https://dropbox.com/s/di5mxkj
 
 #### tutorials
 
-  http://frnsys.com/ai_notes/
+  <http://frnsys.com/ai_notes/>
 
-  https://github.com/ujjwalkarn/Machine-Learning-Tutorials
+  <https://github.com/ujjwalkarn/Machine-Learning-Tutorials>
 
-  https://github.com/rasbt/python-machine-learning-book + https://github.com/rasbt/python-machine-learning-book/tree/master/faq
+  <https://github.com/rasbt/python-machine-learning-book> + <https://github.com/rasbt/python-machine-learning-book/tree/master/faq>
 
-  Python notebooks for many algorithms - http://nbtest.herokuapp.com/github/fonnesbeck/Bios366/tree/master/notebooks/
+  Python notebooks for many algorithms - <http://nbtest.herokuapp.com/github/fonnesbeck/Bios366/tree/master/notebooks/>
 
-  http://ciml.info/dl/v0_8/ciml-v0_8-all.pdf  
-  http://metacademy.org  
-  http://machinelearning.ru/wiki/  
+  <http://ciml.info/dl/v0_8/ciml-v0_8-all.pdf>  
+  <http://metacademy.org>  
+  <http://machinelearning.ru/wiki/>  
 
-  https://en.wikipedia.org/wiki/Machine_learning
-  "Introduction to Machine Learning - The Wikipedia Guide" - https://github.com/Nixonite/open-source-machine-learning-degree/blob/master/Introduction%20to%20Machine%20Learning%20-%20Wikipedia.pdf
+  <https://en.wikipedia.org/wiki/Machine_learning>
+  "Introduction to Machine Learning - The Wikipedia Guide" - <https://github.com/Nixonite/open-source-machine-learning-degree/blob/master/Introduction%20to%20Machine%20Learning%20-%20Wikipedia.pdf>
 
 
 #### guides
 
-  things to know - http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf  
-  Google's rules - http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf  
-  common pitfalls - http://danielnee.com/?p=155&utm_content=buffer163ed  
-  methods of overfitting - http://hunch.net/?p=22  
-  more data or better algorithms - http://kdnuggets.com/2015/06/machine-learning-more-data-better-algorithms.html  
-  fitting models with more parameters than data points - https://jakevdp.github.io/blog/2015/07/06/model-complexity-myth/  
-  cross-validation - http://robjhyndman.com/hyndsight/crossvalidation/  
-  priors for modelling invariances - http://inference.vc/the-holy-gr/  
-  baseline - http://nlpers.blogspot.ru/2014/11/the-myth-of-strong-baseline.html  
-  feature selection - http://machinelearningmastery.com/an-introduction-to-feature-selection/  
-  algorithm selection - http://machinelearningmastery.com/a-data-driven-approach-to-machine-learning/  
-  dimensionality reduction - https://colah.github.io/posts/2014-10-Visualizing-MNIST/  
-  hyper-parameter selection - http://startup.ml/blog/hyperparam  
-  hyper-parameter search - http://nlpers.blogspot.ru/2014/10/hyperparameter-search-bayesian.html  
-  distributed machine learning - http://fastml.com/the-emperors-new-clothes-distributed-machine-learning/  
-  deception of supervised learning - http://kdnuggets.com/2016/09/deception-of-supervised-learning.html  
-  classification vs prediction - http://fharrell.com/2017/01/classification-vs-prediction.html  
-  machine learning and statistics - https://www.ics.uci.edu/~welling/publications/papers/WhyMLneedsStatistics.pdf  
+  things to know - <http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf>  
+  Google's rules - <http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf>  
+  common pitfalls - <http://danielnee.com/?p=155&utm_content=buffer163ed>  
+  methods of overfitting - <http://hunch.net/?p=22>  
+  more data or better algorithms - <http://kdnuggets.com/2015/06/machine-learning-more-data-better-algorithms.html>  
+  fitting models with more parameters than data points - <https://jakevdp.github.io/blog/2015/07/06/model-complexity-myth/>  
+  cross-validation - <http://robjhyndman.com/hyndsight/crossvalidation/>  
+  priors for modelling invariances - <http://inference.vc/the-holy-gr/>  
+  baseline - <http://nlpers.blogspot.ru/2014/11/the-myth-of-strong-baseline.html>  
+  feature selection - <http://machinelearningmastery.com/an-introduction-to-feature-selection/>  
+  algorithm selection - <http://machinelearningmastery.com/a-data-driven-approach-to-machine-learning/>  
+  dimensionality reduction - <https://colah.github.io/posts/2014-10-Visualizing-MNIST/>  
+  hyper-parameter selection - <http://startup.ml/blog/hyperparam>  
+  hyper-parameter search - <http://nlpers.blogspot.ru/2014/10/hyperparameter-search-bayesian.html>  
+  distributed machine learning - <http://fastml.com/the-emperors-new-clothes-distributed-machine-learning/>  
+  deception of supervised learning - <http://kdnuggets.com/2016/09/deception-of-supervised-learning.html>  
+  classification vs prediction - <http://fharrell.com/2017/01/classification-vs-prediction.html>  
+  machine learning and statistics - <https://www.ics.uci.edu/~welling/publications/papers/WhyMLneedsStatistics.pdf>  
 
 
 #### courses
 
-  http://youtube.com/playlist?list=PLE6Wd9FR--Ecf_5nCbnSQMHqORpiChfJf  (Nando de Freitas - undergraduate course)  
-  http://www.cs.ubc.ca/~nando/540-2013/lectures.html  (Nando de Freitas - graduate course)  
-  http://coursera.org/course/machlearning  (Pedro Domingos)  
-  http://alex.smola.org/teaching/10-701-15/  (Alex Smola)  
-  http://youtube.com/playlist?list=PLD0F06AA0D2E8FFBA  (MathematicalMonk)  
-  http://www.cs.toronto.edu/~rsalakhu/STA4273_2015/lectures.html  (Ruslan Salakhutdinov)  
-  https://see.stanford.edu/Course/CS229/47  (Andrew Ng)  
-  http://videolectures.net/course_information_theory_pattern_recognition/  (David MacKay)  
-  http://homepages.inf.ed.ac.uk/vlavrenk/iaml.html  (Victor Lavrenko, 60 short lectures on single page)  
-  https://www.inf.ed.ac.uk/teaching/courses/iaml/  (Victor Lavrenko)  
+  <http://youtube.com/playlist?list=PLE6Wd9FR--Ecf_5nCbnSQMHqORpiChfJf>  (Nando de Freitas - undergraduate course)  
+  <http://www.cs.ubc.ca/~nando/540-2013/lectures.html>  (Nando de Freitas - graduate course)  
+  <http://coursera.org/course/machlearning>  (Pedro Domingos)  
+  <http://alex.smola.org/teaching/10-701-15/>  (Alex Smola)  
+  <http://youtube.com/playlist?list=PLD0F06AA0D2E8FFBA>  (MathematicalMonk)  
+  <http://www.cs.toronto.edu/~rsalakhu/STA4273_2015/lectures.html>  (Ruslan Salakhutdinov)  
+  <https://see.stanford.edu/Course/CS229/47>  (Andrew Ng)  
+  <http://videolectures.net/course_information_theory_pattern_recognition/>  (David MacKay)  
+  <http://homepages.inf.ed.ac.uk/vlavrenk/iaml.html>  (Victor Lavrenko, 60 short lectures on single page)  
+  <https://www.inf.ed.ac.uk/teaching/courses/iaml/>  (Victor Lavrenko)  
 
-  http://coursera.org/specializations/machine-learning-data-analysis/  (Yandex, in russian)
+  <http://coursera.org/specializations/machine-learning-data-analysis/>  (Yandex, in russian)
 
-  http://coursera.org/learn/introduction-machine-learning  (Konstantin Vorontsov, in russian)  
-  http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC  (Konstantin Vorontsov, in russian)  
-  http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC  (Igor Kuralenok, in russian)  
-  http://lektorium.tv/course/22975  (Igor Kuralenok, in russian)  
-  http://habrahabr.ru/company/mailru/blog/254897/  (in russian)  
+  <http://coursera.org/learn/introduction-machine-learning>  (Konstantin Vorontsov, in russian)  
+  <http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC>  (Konstantin Vorontsov, in russian)  
+  <http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC>  (Igor Kuralenok, in russian)  
+  <http://lektorium.tv/course/22975>  (Igor Kuralenok, in russian)  
+  <http://habrahabr.ru/company/mailru/blog/254897/>  (in russian)  
 
-  http://dataschool.io/15-hours-of-expert-machine-learning-videos/  
-  https://cs.cmu.edu/~tom/10701_sp11/lectures.shtml + http://cs.cmu.edu/~aarti/Class/10601/lectures.shtml  
-  https://edx.org/course/artificial-intelligence-uc-berkeleyx-cs188-1x  
-  https://edx.org/course/caltechx/caltechx-cs1156x-learning-data-2516  
-  http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/  
-  http://www.cs.nyu.edu/~mohri/ml14/  
+  <http://dataschool.io/15-hours-of-expert-machine-learning-videos/>  
+  <https://cs.cmu.edu/~tom/10701_sp11/lectures.shtml> + <http://cs.cmu.edu/~aarti/Class/10601/lectures.shtml>  
+  <https://edx.org/course/artificial-intelligence-uc-berkeleyx-cs188-1x>  
+  <https://edx.org/course/caltechx/caltechx-cs1156x-learning-data-2516>  
+  <http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/>  
+  <http://www.cs.nyu.edu/~mohri/ml14/>  
 
-  final projects from Stanford CS231 Deep Learning class - http://cs231n.stanford.edu/reports2016.html + http://cs231n.stanford.edu/reports.html  
-  final projects from Stanford CS224d Deep Learning for Natural Language Processing - http://cs224d.stanford.edu/reports.html  
-  final projects from CMU 10-701 - https://youtube.com/playlist?list=PLZSO_6-bSqHTw6zw5XhxawMgYGRItZ4Zg  
+  final projects from Stanford CS231 Deep Learning class - <http://cs231n.stanford.edu/reports2016.html> + <http://cs231n.stanford.edu/reports.html>  
+  final projects from Stanford CS224d Deep Learning for Natural Language Processing - <http://cs224d.stanford.edu/reports.html>  
+  final projects from CMU 10-701 - <https://youtube.com/playlist?list=PLZSO_6-bSqHTw6zw5XhxawMgYGRItZ4Zg>  
 
 
 #### schools
 
-  http://mlss.cc  
-  http://videolectures.net/site/search/?q=MLSS  
-  http://youtube.com/channel/UCty-pPOWlWUk4gXNm5pydcg/videos  (Tubingen 2015)  
-  http://youtube.com/channel/UCT1k2e63pqm_VSXmaF21n6g  (Sydney 2015)  
-  http://youtube.com/playlist?list=PLZSO_6-bSqHQCIYxE3ycGLXHMjK3XV7Iz  (Pittsburgh 2014)  
+  <http://mlss.cc>  
+  <http://videolectures.net/site/search/?q=MLSS>  
+  <http://youtube.com/channel/UCty-pPOWlWUk4gXNm5pydcg/videos>  (Tubingen 2015)  
+  <http://youtube.com/channel/UCT1k2e63pqm_VSXmaF21n6g>  (Sydney 2015)  
+  <http://youtube.com/playlist?list=PLZSO_6-bSqHQCIYxE3ycGLXHMjK3XV7Iz>  (Pittsburgh 2014)  
 
 
 #### books
@@ -174,33 +175,33 @@ the most impressive accomplishments (in russian) - https://dropbox.com/s/di5mxkj
 
 #### blogs
 
-  http://inference.vc  
-  http://blog.shakirm.com  
-  http://offconvex.org  
-  http://argmin.net  
-  http://hunch.net  
-  http://machinedlearnings.com
-  http://nlpers.blogspot.com  
-  http://inverseprobability.com/blog.html  
-  http://blogs.princeton.edu/imabandit  
-  http://fastml.com  
-  http://wildml.com  
-  http://thetalkingmachines.com  
+  <http://inference.vc>  
+  <http://blog.shakirm.com>  
+  <http://offconvex.org>  
+  <http://argmin.net>  
+  <http://hunch.net>  
+  <http://machinedlearnings.com>
+  <http://nlpers.blogspot.com>  
+  <http://inverseprobability.com/blog.html>  
+  <http://blogs.princeton.edu/imabandit>  
+  <http://fastml.com>  
+  <http://wildml.com>  
+  <http://thetalkingmachines.com>  
 
 
 #### news and discussions
 
-  https://reddit.com/r/MachineLearning/
+  <https://reddit.com/r/MachineLearning/>
 
 
 #### code
 
-  https://github.com/josephmisiti/awesome-machine-learning
+  <https://github.com/josephmisiti/awesome-machine-learning>
 
 
 #### datasets
 
-  https://github.com/caesar0301/awesome-public-datasets
+  <https://github.com/caesar0301/awesome-public-datasets>
 
 
 
@@ -257,7 +258,7 @@ the most impressive accomplishments (in russian) - https://dropbox.com/s/di5mxkj
   - representable does not imply learnable
   - correlation does not imply causation
 
-##
+----
 
 #### bayesian framework
 
@@ -273,7 +274,7 @@ the most impressive accomplishments (in russian) - https://dropbox.com/s/di5mxkj
 
 "No free lunch theorem relies on unrealistic uniform sampling (which results mostly in white noise for real-world phenomena). Sampling from Solomonoff's universal distribution permits free lunch."
 
-##
+----
 
 #### learning theory
 
@@ -288,23 +289,23 @@ frameworks:
   - PAC learning or PAC-Bayes  
   - Minimax estimation (estimation/decision theory)  
 
-  http://kdnuggets.com/2015/07/deep-learning-triumph-empiricism-over-theoretical-mathematical-guarantees.html  
-  https://hips.seas.harvard.edu/blog/2013/02/15/learning-theory-purely-theoretical/  
+  <http://kdnuggets.com/2015/07/deep-learning-triumph-empiricism-over-theoretical-mathematical-guarantees.html>  
+  <https://hips.seas.harvard.edu/blog/2013/02/15/learning-theory-purely-theoretical/>  
 
-  https://mostafa-samir.github.io/ml-theory-pt1/  
-  https://mostafa-samir.github.io/ml-theory-pt2/  
-  https://mostafa-samir.github.io/ml-theory-pt3/  
+  <https://mostafa-samir.github.io/ml-theory-pt1/>  
+  <https://mostafa-samir.github.io/ml-theory-pt2/>  
+  <https://mostafa-samir.github.io/ml-theory-pt3/>  
 
-  http://jeremykun.com/2014/01/02/probably-approximately-correct-a-formal-theory-of-learning/  
-  http://jeremykun.com/2014/04/21/an-un-pac-learnable-problem/  
-  http://jeremykun.com/2014/09/19/occams-razor-and-pac-learning/  
+  <http://jeremykun.com/2014/01/02/probably-approximately-correct-a-formal-theory-of-learning/>  
+  <http://jeremykun.com/2014/04/21/an-un-pac-learnable-problem/>  
+  <http://jeremykun.com/2014/09/19/occams-razor-and-pac-learning/>  
 
-  https://blogs.princeton.edu/imabandit/2015/10/13/crash-course-on-learning-theory-part-1/  
-  https://blogs.princeton.edu/imabandit/2015/10/22/crash-course-on-learning-theory-part-2/  
+  <https://blogs.princeton.edu/imabandit/2015/10/13/crash-course-on-learning-theory-part-1/>  
+  <https://blogs.princeton.edu/imabandit/2015/10/22/crash-course-on-learning-theory-part-2/>  
 
-  https://web.stanford.edu/class/cs229t/notes.pdf (course by Percy Liang)
+  <https://web.stanford.edu/class/cs229t/notes.pdf> (course by Percy Liang)
 
-##
+----
 
 #### bias/variance
 
@@ -378,7 +379,7 @@ Together, bias and variance additively contribute to the total prediction error:
     * linear programming
     * quadratic programming
 
-##
+----
 
   *machine learning* = *experience obtaining* + *cost function* + *decision function*
 
@@ -438,26 +439,26 @@ Together, bias and variance additively contribute to the total prediction error:
     * bayesian averaging
     * stacking
 
-##
+----
 
-  http://en.wikipedia.org/wiki/List_of_machine_learning_algorithms
+  <http://en.wikipedia.org/wiki/List_of_machine_learning_algorithms>
 
-  https://justindomke.wordpress.com/2015/09/14/algorithmic-dimensions/  
-  https://www.cs.jhu.edu/~jason/tutorials/ml-simplex.html  
+  <https://justindomke.wordpress.com/2015/09/14/algorithmic-dimensions/>  
+  <https://www.cs.jhu.edu/~jason/tutorials/ml-simplex.html>  
 
-  "All Models of Learning have Flaws" by John Langford - http://hunch.net/?p=224
+  "All Models of Learning have Flaws" by John Langford - <http://hunch.net/?p=224>
 
-  https://azure.microsoft.com/en-us/documentation/articles/machine-learning-algorithm-cheat-sheet/
+  <https://azure.microsoft.com/en-us/documentation/articles/machine-learning-algorithm-cheat-sheet/>
 
-  http://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/
+  <http://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/>
 
-  http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html  
-  http://eferm.com/wp-content/uploads/2011/05/cheat3.pdf  
-  https://github.com/soulmachine/machine-learning-cheat-sheet/blob/master/machine-learning-cheat-sheet.pdf  
+  <http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html>  
+  <http://eferm.com/wp-content/uploads/2011/05/cheat3.pdf>  
+  <https://github.com/soulmachine/machine-learning-cheat-sheet/blob/master/machine-learning-cheat-sheet.pdf>  
 
-  http://dataschool.io/comparing-supervised-learning-algorithms/
+  <http://dataschool.io/comparing-supervised-learning-algorithms/>
 
-##
+----
 
   [tutorials](#tutorials) [guides](#guides) [courses](#courses) [books](#books)
 
@@ -472,10 +473,10 @@ Together, bias and variance additively contribute to the total prediction error:
 
   "In representation learning, the goal isn’t to make predictions about observables, but to learn a representation which would later help us to answer various queries. Sometimes the representations are meant for people, such as when we visualize data as a two-dimensional embedding. Sometimes they’re meant for machines, such as when the binary vector representations learned by deep Boltzmann machines are fed into a supervised classifier. In either case, what’s important is that mathematical operations map to the underlying relationships in the data in systematic ways."
 
-  https://hips.seas.harvard.edu/blog/2013/02/04/predictive-learning-vs-representation-learning/  
-  https://hips.seas.harvard.edu/blog/2013/02/25/what-is-representation-learning/  
+  <https://hips.seas.harvard.edu/blog/2013/02/04/predictive-learning-vs-representation-learning/>  
+  <https://hips.seas.harvard.edu/blog/2013/02/25/what-is-representation-learning/>  
 
-##
+----
 
   [Deep Learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
   [Knowledge Representation and Reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
@@ -509,21 +510,21 @@ Together, bias and variance additively contribute to the total prediction error:
     * without strong structural inductive bias
     * without relatedness to past problems"
 
-##
+----
 
   (Nando de Freitas) "For me there are two types of generalisation, which I will refer to as Symbolic and Connectionist generalisation. If we teach a machine to sort sequences of numbers of up to length 10 or 100, we should expect them to sort sequences of length 1000 say. Obviously symbolic approaches have no problem with this form of generalisation, but neural nets do poorly. On the other hand, neural nets are very good at generalising from data (such as images), but symbolic approaches do poorly here. One of the holy grails is to build machines that are capable of both symbolic and connectionist generalisation. Neural Programmer Interpreters is a very early step toward this. NPI can do symbolic operations such as sorting and addition, but it can also plan by taking images as input and it's able to generalise the plans to different images (e.g. in the NPI car example, the cars are test set cars not seen before)."
 
-##
+----
 
-  Neural Abstract Machines & Program Induction workshop @ NIPS 2016 - https://uclmr.github.io/nampi/
+  Neural Abstract Machines & Program Induction workshop @ NIPS 2016 - <https://uclmr.github.io/nampi/>
 
 
-  http://cacm.acm.org/magazines/2015/11/193326-inductive-programming-meets-the-real-world/fulltext  
-  http://homes.cs.washington.edu/~bornholt/post/synthesis-for-architects.html  
+  <http://cacm.acm.org/magazines/2015/11/193326-inductive-programming-meets-the-real-world/fulltext>  
+  <http://homes.cs.washington.edu/~bornholt/post/synthesis-for-architects.html>  
 
-  http://languagengine.co/blog/symbolic-machine-learning/
+  <http://languagengine.co/blog/symbolic-machine-learning/>
 
-##
+----
 
   [Probabilistic Programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
   [selected papers](https://dropbox.com/sh/vrr1gs798zy02n1/AACj7hlXOiRt1nXltXVC-2Wca)  
@@ -564,27 +565,27 @@ problems:
   - number N of variables/features: Small or large number of variables.
   - aspect ratio Ptr/N of the training data matrix: Ptr >> N, Ptr = N or Ptr << N.
 
-##
+----
 
   "We can put a unified framework around the various approaches. Borrowing from the conventional classification of feature selection methods, model search strategies can be categorized into filters, wrappers, and embedded methods.  
   Filters are methods for narrowing down the model space, without training the learning machine. Such methods include preprocessing, feature construction, kernel design, architecture design, choice of prior or regularizers, choice of a noise model, and filter methods for feature selection. Although some filters use training data, many incorporate human prior knowledge of the task or knowledge compiled from previous tasks (a form of meta learning or transfer learning). Recently, it has been proposed to apply collaborative filtering methods to model search.  
   Wrapper methods consider the learning machine as a black-box capable of learning from examples and making predictions once trained. They operate with a search algorithm in hyper-parameter space (for example grid search or stochastic search) and an evaluation function assessing the trained learning machine performances (for example the cross-validation error or the Bayesian evidence).  
   Embedded methods are similar to wrappers, but they exploit the knowledge of the learning machine algorithm to make the search more efficient. For instance, some embedded methods compute the leave-one-out solution in a closed form, without leaving anything out, i.e., by performing a single model training on all the training data. Other embedded methods jointly optimize parameters and hyperparameters."  
 
-##
+----
 
-  TPOT Data Science Assistant - http://rhiever.github.io/tpot/
+  TPOT Data Science Assistant - <http://rhiever.github.io/tpot/>
 
-  "The Automatic Statistician" by Zoubin Ghahramani - https://youtu.be/H7AMB0oo__4?t=53m20s + http://webdav.tuebingen.mpg.de/mlss2013/2015/slides/ghahramani/mlss15future.pdf
+  "The Automatic Statistician" by Zoubin Ghahramani - <https://youtu.be/H7AMB0oo__4?t=53m20s> + <http://webdav.tuebingen.mpg.de/mlss2013/2015/slides/ghahramani/mlss15future.pdf>
 
-  DARPA's Data-Driven Discovery of Models (D3M) - http://www.darpa.mil/news-events/2016-06-17
+  DARPA's Data-Driven Discovery of Models (D3M) - <http://www.darpa.mil/news-events/2016-06-17>
 >	"The goal of D3M is to help overcome the data-science expertise gap by enabling non-experts to construct complex empirical models through automation of large parts of the model-creation process. If successful, researchers using D3M tools will effectively have access to an army of “virtual data scientists”."
 
 >	"The construction of empirical models today is largely a manual process, requiring data experts to translate stochastic elements, such as weather and traffic, into models that engineers and scientists can then ask questions of. We have an urgent need to develop machine-based modeling for users with no data-science background. We believe it’s possible to automate certain aspects of data science, and specifically to have machines learn from prior example how to construct new models."
 
-##
+----
 
-  "Why Tool AIs Want to Be Agent AIs" - http://www.gwern.net/Tool%20AI  
+  "Why Tool AIs Want to Be Agent AIs" - <http://www.gwern.net/Tool%20AI>  
 
   "Roughly, we can try to categorize the different kinds of agentiness by level of neural network they work on. There are:  
 
@@ -675,15 +676,15 @@ problems:
 ### interesting papers
 
 
-selected papers and books on machine learning - https://dropbox.com/sh/kpd5tvfnc29lstj/AAD3oGVCUdkoMS56_2g8Oj7_a
+selected papers and books on machine learning - <https://dropbox.com/sh/kpd5tvfnc29lstj/AAD3oGVCUdkoMS56_2g8Oj7_a>
 
-selected papers on deep learning - https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md + https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza
-selected papers on bayesian inference and learning - https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt + https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
-selected papers on probabilistic programming - https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md + https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca
-selected papers on reinforcement learning - https://dropbox.com/s/dexryjnmxujdynd/Reinforcement%20Learning.txt + https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va
+selected papers on deep learning - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md> + <https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza>
+selected papers on bayesian inference and learning - <https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt> + <https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa>
+selected papers on probabilistic programming - <https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md> + <https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca>
+selected papers on reinforcement learning - <https://dropbox.com/s/dexryjnmxujdynd/Reinforcement%20Learning.txt> + <https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va>
 
 
-recent interesting papers - https://github.com/brylevkirill/notes/blob/master/recent%20papers.txt
+recent interesting papers - <https://github.com/brylevkirill/notes/blob/master/recent%20papers.txt>
 
 
 interesting papers (see below):
@@ -691,7 +692,7 @@ interesting papers (see below):
   - [systems](#interesting-papers---systems)
 
 
-##
+----
 
 #### Valiant - ["A Theory of the Learnable"](https://people.mpi-inf.mpg.de/~mehlhorn/SeminarEvolvability/ValiantLearnable.pdf)
 >	"Humans appear to be able to learn new concepts without needing to be programmed explicitly in any conventional sense. In this paper we regard learning as the phenomenon of knowledge acquisition in the absence of explicit programming. We give a precise methodology for studying this phenomenon from a computational viewpoint. It consists of choosing an appropriate information gathering mechanism, the learning protocol, and exploring the class of concepts that can be learned using it in a reasonable (polynomial) number of steps. Although inherent algorithmic complexity appears to set serious limits to the range of concepts that can be learned, we show that there are some important nontrivial classes of propositional concepts that can be learned in a realistic sense."
@@ -712,8 +713,8 @@ interesting papers (see below):
 
 >	"During last fifty years a strong machine learning theory has been developed. This theory includes: 1. The necessary and sufficient conditions for consistency of learning processes. 2. The bounds on the rate of convergence which in general cannot be improved. 3. The new inductive principle (SRM) which always achieves the smallest risk. 4. The effective algorithms, (such as SVM), that realize consistency property of SRM principle. It looked like general learning theory has been complied: it answered almost all standard questions that is asked in the statistical theory of inference. Meantime, the common observation was that human students require much less examples for training than learning machine. Why? The talk is an attempt to answer this question. The answer is that it is because the human students have an Intelligent Teacher and that Teacher-Student interactions are based not only on the brute force methods of function estimation from observations. Speed of learning also based on Teacher-Student interactions which have additional mechanisms that boost learning process. To learn from smaller number of observations learning machine has to use these mechanisms. In the talk I will introduce a model of learning that includes the so called Intelligent Teacher who during a training session supplies a Student with intelligent (privileged) information in contrast to the classical model where a student is given only outcomes y for events x. Based on additional privileged information x* for event x two mechanisms of Teacher-Student interactions (special and general) are introduced: 1. The Special Mechanism: To control Student's concept of similarity between training examples. and 2. The General Mechanism: To transfer knowledge that can be obtained in space of privileged information to the desired space of decision rules. Both mechanisms can be considered as special forms of capacity control in the universally consistent SRM inductive principle. Privileged information exists for almost any inference problem and can make a big difference in speed of learning processes."
 
-  - https://video.ias.edu/csdm/2015/0330-VladimirVapnik
-  - http://learningtheory.org/learning-has-just-started-an-interview-with-prof-vladimir-vapnik/
+  - <https://video.ias.edu/csdm/2015/0330-VladimirVapnik>
+  - <http://learningtheory.org/learning-has-just-started-an-interview-with-prof-vladimir-vapnik/>
 
 
 #### Sculley, Brodley - ["Compression and Machine Learning: A New Perspective on Feature Space Vectors"](http://www.eecs.tufts.edu/~dsculley/papers/compressionAndVectors.pdf)
@@ -737,16 +738,16 @@ interesting papers (see below):
 
 >	"In the data programming approach to developing a machine learning system, the developer focuses on writing a set of labeling functions, which create a large but noisy training set. Snorkel then learns a generative model of this noise - learning, essentially, which labeling functions are more accurate than others - and uses this to train a discriminative classifier. At a high level, the idea is that developers can focus on writing labeling functions - which are just (Python) functions that provide a label for some subset of data points - and not think about algorithms or features!"
 
-  - https://youtube.com/watch?v=iSQHelJ1xxU
-  - http://hazyresearch.github.io/snorkel/blog/weak_supervision.html
-  - https://github.com/HazyResearch/snorkel
-  - "Fonduer: Knowledge Base Construction from Richly Formatted Data" - https://arxiv.org/abs/1703.05028
+  - <https://youtube.com/watch?v=iSQHelJ1xxU>
+  - <http://hazyresearch.github.io/snorkel/blog/weak_supervision.html>
+  - <https://github.com/HazyResearch/snorkel>
+  - "Fonduer: Knowledge Base Construction from Richly Formatted Data" - <https://arxiv.org/abs/1703.05028>
 
 
 #### Varma, He, Iter, Xu, Yu, de Sa, Re - [Socratic Learning: Empowering the Generative Model](http://arxiv.org/abs/1610.08123)
 >	"A challenge in training discriminative models like neural networks is obtaining enough labeled training data. Recent approaches have leveraged generative models to denoise weak supervision sources that a discriminative model can learn from. These generative models directly encode the users' background knowledge. Therefore, these models may be incompletely specified and fail to model latent classes in the data. We present Socratic learning to systematically correct such generative model misspecification by utilizing feedback from the discriminative model. We prove that under mild conditions, Socratic learning can recover features from the discriminator that informs the generative model about these latent classes. Experimentally, we show that without any hand-labeled data, the corrected generative model improves discriminative performance by up to 4.47 points and reduces error for an image classification task by 80% compared to a state-of-the-art weak supervision modeling technique."
 
-  - https://youtube.com/watch?v=0gRNochbK9c
+  - <https://youtube.com/watch?v=0gRNochbK9c>
 
 
 #### Platanios, Blum, Mitchell - ["Estimating Accuracy from Unlabeled Data"](http://auai.org/uai2014/proceedings/individuals/313.pdf)
@@ -760,7 +761,7 @@ interesting papers (see below):
 
 >	"We have introduced the concept of estimating the error rate of each of several approximations to the same function, based on their agreement rates over unlabeled data and we have provided three different analytical methods to do so: the AR method, the MLE method and the MAP method. Our experiments showed that the AR method performs significantly better than the other two methods for both data sets we considered. Our results are very encouraging and suggest that function agreement rates are indeed very useful in estimating function error rates. We consider this work to be a first step towards developing a self-reflection framework for autonomous learning systems. There are several directions we would like to pursue to further improve upon the methods introduced here. Firstly, we wish to explore other interesting natural objectives one can aim to optimize. It would also be very interesting to explore possible generalizations of our models to non-boolean, discrete-valued functions, or even to real-valued functions. Finally, apart from simply estimating function error rates, we want to explore how the obtained error rate estimates can be used to improve the learning ability of a system such as NELL, for example. In this context, we could try using our estimates in order to develop a more robust co-training framework. One very direct application of our methods would be to use the estimated error rates and their dependencies in order to combine the functions’ outputs and obtain one final output."
 
-  - https://youtu.be/PF6ViL5pcGs?t=5m3s
+  - <https://youtu.be/PF6ViL5pcGs?t=5m3s>
 
 
 
@@ -770,13 +771,13 @@ interesting papers (see below):
 #### Sculley, Holt, Golovin, Davydov, Phillips, Ebner, Chaudhary, Young - ["Machine Learning: The High-Interest Credit Card of Technical Debt"](http://research.google.com/pubs/pub43146.html)
 >	"Machine learning offers a fantastically powerful toolkit for building complex systems quickly. This paper argues that it is dangerous to think of these quick wins as coming for free. Using the framework of technical debt, we note that it is remarkably easy to incur massive ongoing maintenance costs at the system level when applying machine learning. The goal of this paper is highlight several machine learning specific risk factors and design patterns to be avoided or refactored where possible. These include boundary erosion, entanglement, hidden feedback loops, undeclared consumers, data dependencies, changes in the external world, and a variety of system-level anti-patterns."
 
-  - http://john-foreman.com/blog/the-perilous-world-of-machine-learning-for-fun-and-profit-pipeline-jungles-and-hidden-feedback-loops
+  - <http://john-foreman.com/blog/the-perilous-world-of-machine-learning-for-fun-and-profit-pipeline-jungles-and-hidden-feedback-loops>
 
 
 #### Google Brain - ["TensorFlow: A system for large-scale machine learning"](https://arxiv.org/abs/1605.08695)
 >	"TensorFlow is a machine learning system that operates at large scale and in heterogeneous environments. TensorFlow uses dataflow graphs to represent computation, shared state, and the operations that mutate that state. It maps the nodes of a dataflow graph across many machines in a cluster, and within a machine across multiple computational devices, including multicore CPUs, general-purpose GPUs, and custom designed ASICs known as Tensor Processing Units (TPUs). This architecture gives flexibility to the application developer: whereas in previous “parameter server” designs the management of shared state is built into the system, TensorFlow enables developers to experiment with novel optimizations and training algorithms. TensorFlow supports a variety of applications, with particularly strong support for training and inference on deep neural networks. Several Google services use TensorFlow in production, we have released it as an open-source project, and it has become widely used for machine learning research. In this paper, we describe the TensorFlow dataflow model in contrast to existing systems, and demonstrate the compelling performance that TensorFlow achieves for several real-world applications."
 
-  - https://github.com/nlintz/TensorFlow-Tutorials
+  - <https://github.com/nlintz/TensorFlow-Tutorials>
 
 
 #### Agarwal, Chapelle, Dudik, Langford - ["A Reliable Effective Terascale Linear Learning System"](http://arxiv.org/abs/1110.4198) (Vowpal Wabbit)
@@ -789,9 +790,9 @@ interesting papers (see below):
 >	 - Causation instead of correlation
 >	 - Learn to control based on feedback"
 
-  - http://youtube.com/watch?v=wwlKkFhEhxE (Langford)
-  - https://github.com/JohnLangford/vowpal_wabbit/wiki
-  - "Bring The Noise: Embracing Randomness Is the Key to Scaling Up Machine Learning Algorithms" - http://online.liebertpub.com/doi/pdf/10.1089/big.2013.0010
+  - <http://youtube.com/watch?v=wwlKkFhEhxE> (Langford)
+  - <https://github.com/JohnLangford/vowpal_wabbit/wiki>
+  - "Bring The Noise: Embracing Randomness Is the Key to Scaling Up Machine Learning Algorithms" - <http://online.liebertpub.com/doi/pdf/10.1089/big.2013.0010>
 
 
 #### Agarwal et al. - ["A Multiworld Testing Decision Service"](http://arxiv.org/abs/1606.03966)
@@ -799,22 +800,22 @@ interesting papers (see below):
 
 >	"We have presented the Decision Service: a powerful tool to support the complete data lifecycle, which automates many of the burdensome tasks that data scientists face such as gathering the right data and deploying in an appropriate manner. Instead, a data scientist can focus on more core tasks such as finding the right features, representation, or signal to optimize against. The data lifecycle support also makes basic application of the Decision Service feasible without a data scientist. To assist in lowering the barrier to entry, we are exploring techniques based on expert learning and hyperparameter search that may further automate the process. Since the policy evaluation techniques can provide accurate predictions of online performance, such automations are guaranteed to be statistically sound. We are also focusing on making the decision service easy to deploy and use because we believe this is key to goal of democratizing machine learning for everyone. The Decision Service can also naturally be extended to a greater variety of problems, all of which can benefit from data lifecycle support. Plausible extensions might address advanced variants like reinforcement and active learning, and simpler ones like supervised learning."
 
-##
+----
 >	"It is the first general purpose reinforcement-based learning system. Wouldn’t it be great if Reinforcement Learning algorithms could easily be used to solve all reinforcement learning problems? But there is a well-known problem: It’s very easy to create natural RL problems for which all standard RL algorithms (epsilon-greedy Q-learning, SARSA, etc) fail catastrophically. That’s a serious limitation which both inspires research and which I suspect many people need to learn the hard way. Removing the credit assignment problem from reinforcement learning yields the Contextual Bandit setting which we know is generically solvable in the same manner as common supervised learning problems."
 
 >	"Many people have tried to create online learning system that do not take into account the biasing effects of decisions. These fail near-universally. For example they might be very good at predicting what was shown (and hence clicked on) rather that what should be shown to generate the most interest."
 
 >	"We need a system that explores over appropriate choices with logging of features, actions, probabilities of actions, and outcomes. These must then be fed into an appropriate learning algorithm which trains a policy and then deploys the policy at the point of decision. The system enables a fully automatic causally sound learning loop for contextual control of a small number of actions. It is strongly scalable, for example a version of this is in use for personalized news on MSN."
 
-  - http://hunch.net/?p=4464948 (Langford)
-  - http://research.microsoft.com/en-us/projects/mwt/
-  - https://mwtds.azurewebsites.net
+  - <http://hunch.net/?p=4464948> (Langford)
+  - <http://research.microsoft.com/en-us/projects/mwt/>
+  - <https://mwtds.azurewebsites.net>
 
 
 #### Simard, Chickering, Lakshmiratan, Charles, Bottou, Suarez, Grangier, Amershi, Verwey, Suh, - ["ICE: Enabling Non-Experts to Build Models Interactively for Large-Scale Lopsided Problems"](http://arxiv.org/abs/1409.4814)
 >	"Quick interaction between a human teacher and a learning machine presents numerous benefits and challenges when working with web-scale data. The human teacher guides the machine towards accomplishing the task of interest. The learning machine leverages big data to find examples that maximize the training value of its interaction with the teacher. When the teacher is restricted to labeling examples selected by the machine, this problem is an instance of active learning. When the teacher can provide additional information to the machine (e.g., suggestions on what examples or predictive features should be used) as the learning task progresses, then the problem becomes one of interactive learning. To accommodate the two-way communication channel needed for efficient interactive learning, the teacher and the machine need an environment that supports an interaction language. The machine can access, process, and summarize more examples than the teacher can see in a lifetime. Based on the machine’s output, the teacher can revise the definition of the task or make it more precise. Both the teacher and the machine continuously learn and benefit from the interaction. We have built a platform to (1) produce valuable and deployable models and (2) support research on both the machine learning and user interface challenges of the interactive learning problem. The platform relies on a dedicated, low-latency, distributed, in-memory architecture that allows us to construct web-scale learning machines with quick interaction speed. The purpose of this paper is to describe this architecture and demonstrate how it supports our research efforts. Preliminary results are presented as illustrations of the architecture but are not the primary focus of the paper."
 
-  - used by Microsoft LUIS according to http://arxiv.org/abs/1606.03966
+  - used by Microsoft LUIS according to <http://arxiv.org/abs/1606.03966>
 
 
 
