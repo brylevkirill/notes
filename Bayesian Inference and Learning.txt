@@ -659,6 +659,8 @@ challenges:
   http://dennisprangle.github.io/research/2016/06/07/bayesian-inference-by-neural-networks
   http://dennisprangle.github.io/research/2016/06/07/bayesian-inference-by-neural-networks2
 
+  "Machine Learning and Likelihood-Free Inference in Particle Physics" by Kyle Cranmer - https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Machine-Learning-and-Likelihood-Free-Inference-in-Particle-Physics
+
   Some statistical models are specified via a data generating process for which the likelihood function cannot be computed in closed form. Standard likelihood-based inference is then not feasible but the model parameters can be inferred by finding the values which yield simulated data that resemble the observed data.
 
   Classical approaches to statistical inference are based on the probability (or probability density) of the observed data y0 given particular parameter values θ. This is known as the likelihood function, π(y0|θ). Since y0 is fixed this is a function of θ and so can be written L(θ). Approaches to inference involve optimising this, used in maximum likelihood methods, or exploring it, for Bayesian methods, which are described in more detail shortly. A crucial implicit assumption of both approaches is that it’s possible and computationally inexpensive to numerically evaluate the likelihood function.
@@ -771,7 +773,7 @@ overview by Judea Pearl - https://www.edge.org/conversation/judea_pearl-engines-
 selected papers - https://dropbox.com/sh/txqk44kqgn1f9t4/AAD3DCEDXjPxGPFOa0SJYJwga
 
 
-recent interesting papers - https://github.com/brylevkirill/notes/blob/master/recent%20papers.txt
+recent interesting papers - https://github.com/brylevkirill/notes/blob/master/recent%20papers.md
 
 
 interesting papers (see https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md):

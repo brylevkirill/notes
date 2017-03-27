@@ -581,7 +581,7 @@ lists of papers -
 selected papers - https://dropbox.com/sh/rb7u9nwb16bg5xq/AADV3d_bS6-mqFW0_jaec1sZa
 
 
-recent interesting papers - https://github.com/brylevkirill/notes/blob/master/recent%20papers.txt
+recent interesting papers - https://github.com/brylevkirill/notes/blob/master/recent%20papers.md
 
 
 interesting papers (see below):

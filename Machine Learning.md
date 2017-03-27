@@ -23,7 +23,7 @@ Anywhere there is a function y = f(x), where f(x) has some parameters used to ma
   [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
 
 
-[the most impressive accomplishments](https://dropbox.com/s/di5mxkj8c65h3e6/AI%20wonders.txt) (in russian)
+[recent breakthroughs](https://dropbox.com/s/cfjjubx8ocfx748/breakthroughs.md) (in russian)
 
 
 
@@ -110,6 +110,7 @@ Anywhere there is a function y = f(x), where f(x) has some parameters used to ma
   deception of supervised learning - <http://kdnuggets.com/2016/09/deception-of-supervised-learning.html>  
   classification vs prediction - <http://fharrell.com/2017/01/classification-vs-prediction.html>  
   machine learning and statistics - <https://www.ics.uci.edu/~welling/publications/papers/WhyMLneedsStatistics.pdf>  
+  machine learning and engineering - <http://machinedlearnings.com/2017_02_01_archive.html>  
 
 
 #### courses
@@ -676,15 +677,15 @@ problems:
 ### interesting papers
 
 
-selected papers and books on machine learning - <https://dropbox.com/sh/kpd5tvfnc29lstj/AAD3oGVCUdkoMS56_2g8Oj7_a>
+[selected papers on machine learning](https://dropbox.com/sh/kpd5tvfnc29lstj/AAD3oGVCUdkoMS56_2g8Oj7_a)
 
-selected papers on deep learning - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md> + <https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza>
-selected papers on bayesian inference and learning - <https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt> + <https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa>
-selected papers on probabilistic programming - <https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md> + <https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca>
-selected papers on reinforcement learning - <https://dropbox.com/s/dexryjnmxujdynd/Reinforcement%20Learning.txt> + <https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va>
+[selected papers on deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers)  
+[selected papers on bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt#interesting-papers)  
+[selected papers on probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers)  
+[selected papers on reinforcement learning](https://dropbox.com/s/dexryjnmxujdynd/Reinforcement%20Learning.txt#interesting-papers)  
 
 
-recent interesting papers - <https://github.com/brylevkirill/notes/blob/master/recent%20papers.txt>
+[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/recent%20papers.md)
 
 
 interesting papers (see below):

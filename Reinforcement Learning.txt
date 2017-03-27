@@ -531,7 +531,8 @@
 
   methods:
    - derivative free methods
-	Cross-Entropy Method, finite differences, fixed random seed
+	Cross-Entropy Method
+	Evolution Strategies, finite differences
    - likelihood ratio (LR) policy gradient
 	natural gradient / trust regions (TRPO)
 	Actor-Critic (GAE, A3C)
@@ -541,28 +542,11 @@
    - guided policy search (reduction to supervised learning)
 
 
-  "Benchmarking Deep Reinforcement Learning for Continuous Control" by Duan, Chen, Houthooft, Schulman, Abbeel -
-	http://arxiv.org/abs/1604.06778
-	http://techtalks.tv/talks/benchmarking-deep-reinforcement-learning-for-continuous-control/62380/
-
-
-
-  * Cross-Entropy Method (no gradient estimation)
-	evolutionary algorithm with selection buth without recombination and mutation - works embarrassingly well on many tasks
-
-  	"If your policy has a small number of parameters (say 20), and sometimes even if it has a moderate number (say 2000), you might be better off using the Cross-Entropy Method than any of the fancy methods. It works like this: (1) Sample n sets of parameters from some prior that allows for closed-form updating, e.g. a multivariate Gaussian. (2) For each parameter set, compute a noisy score by running your policy on the environment you care about. (3) Take the top 20% percentile (say) of sampled parameter sets. Fit a Gaussian distribution to this set, then go to (1) and repeat using this as the new prior."
-
-	https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Reinforcement-Learning-Through-Policy-Optimization (07:07, Abbeel)
-	https://youtu.be/aUrX-rP_ss4?t=27m20s (Schulman)
-
-  	"The Cross Entropy method for Fast Policy Search" - http://aaai.org/Papers/ICML/2003/ICML03-068.pdf
-	https://papers.nips.cc/paper/5190-approximate-dynamic-programming-finally-performs-well-in-the-game-of-tetris.pdf
-
-
-
   "Most people prefer to use Policy Gradients, including the authors of the original DQN paper who have shown Policy Gradients to work better than Q Learning when tuned well. PG is preferred because it is end-to-end: there’s an explicit policy and a principled approach that directly optimizes the expected reward."
 
   "Policy Gradient works well only in settings where there are a few discrete choices so that one is not hopelessly sampling through huge search spaces."
+
+  "For both reinforcement learning and variational inference, there are two widely known ways of optimizing a policy (or variational distribution) based on sampled sequences of actions and outcomes: There’s (a) likelihood-ratio estimator, which updates the policy such that action sequences that lead to higher scores happen more often and that doesn’t need gradients, and (b) pathwise (path derivative) estimator, which adjusts individual actions such that the policy results in a higher score and that needs gradients. Likelihood-ratio estimator changes probabilities of experienced paths by shifting probability mass towards better ones and, unlike pathwise estimator, does not try to change the paths. While pathwise methods may be more sample-efficient, they work less generally due to high bias and don’t scale up as well to very high-dimensional problems."
 
   optimization issues:
    - inefficient use of data, large number of samples required
@@ -573,8 +557,49 @@
   	statistics of data (observations and rewards) change during learning
 
 
-  "For both reinforcement learning and variational inference, there are two widely known ways of optimizing a policy (or variational distribution) based on sampled sequences of actions and outcomes: There’s (a) likelihood-ratio estimator, which updates the policy such that action sequences that lead to higher scores happen more often and that doesn’t need gradients, and (b) pathwise (path derivative) estimator, which adjusts individual actions such that the policy results in a higher score and that needs gradients. Likelihood-ratio estimator changes probabilities of experienced paths by shifting probability mass towards better ones and, unlike pathwise estimator, does not try to change the paths. While pathwise methods may be more sample-efficient, they work less generally due to high bias and don’t scale up as well to very high-dimensional problems."
+  "Benchmarking Deep Reinforcement Learning for Continuous Control" by Duan, Chen, Houthooft, Schulman, Abbeel -
+	http://arxiv.org/abs/1604.06778
+	http://techtalks.tv/talks/benchmarking-deep-reinforcement-learning-for-continuous-control/62380/
 
+
+  * Cross-Entropy Method (no gradient estimation)
+	evolutionary algorithm with selection buth without recombination and mutation - works embarrassingly well on many tasks
+
+  	"If your policy has a small number of parameters (say 20), and sometimes even if it has a moderate number (say 2000), you might be better off using the Cross-Entropy Method than any of the fancy methods. It works like this:
+	(1) Sample n sets of parameters from some prior that allows for closed-form updating, e.g. a multivariate Gaussian.
+	(2) For each parameter set, compute a noisy score by running your policy on the environment you care about.
+	(3) Take the top 20% percentile (say) of sampled parameter sets. Fit a Gaussian distribution to this set, then go to (1) and repeat using this as the new prior."
+
+	https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Reinforcement-Learning-Through-Policy-Optimization (07:07, Abbeel)
+	https://youtu.be/aUrX-rP_ss4?t=27m20s (Schulman)
+
+
+  	"The Cross Entropy method for Fast Policy Search" - http://aaai.org/Papers/ICML/2003/ICML03-068.pdf
+	https://papers.nips.cc/paper/5190-approximate-dynamic-programming-finally-performs-well-in-the-game-of-tetris.pdf
+
+
+  * Evolution Strategies
+	policy gradient gradient estimation using finite differences instead of loss derivative
+
+	"Evolution Strategies as a Scalable Alternative to Reinforcement Learning" by Salimans, Ho, Chen, Sutskever - https://arxiv.org/abs/1703.03864
+		https://blog.openai.com/evolution-strategies/ :
+
+		"Our work demonstrates that ES achieves strong performance, dispelling the common belief that ES methods are impossible to apply to high dimensional problems."
+		"ES rivals the performance of standard RL techniques on modern benchmarks, while overcoming many of RL’s inconveniences. ES is simpler to implement (there is no need for backpropagation), it is easier to scale in a distributed setting, it does not suffer in settings with sparse rewards, and has fewer hyperparameters. This outcome is surprising because ES resembles simple hill-climbing in a high-dimensional space based only on finite differences along a few random directions at each step."
+
+		"Mathematically, you’ll notice that this is also equivalent to estimating the gradient of the expected reward in the parameter space using finite differences, except we only do it along 100 random directions. Yet another way to see it is that we’re still doing RL (Policy Gradients, or REINFORCE specifically), where the agent’s actions are to emit entire parameter vectors using a gaussian policy."
+		"Notice that the objective is identical to the one that RL optimizes: the expected reward. However, RL injects noise in the action space and uses backpropagation to compute the parameter updates, while ES injects noise directly in the parameter space. Another way to describe this is that RL is a “guess and check” on actions, while ES is a “guess and check” on parameters. Since we’re injecting noise in the parameters, it is possible to use deterministic policies (and we do, in our experiments). It is also possible to add noise in both actions and parameters to potentially combine the two approaches."
+
+		"ES enjoys multiple advantages over RL algorithms:
+		No need for backpropagation. ES only requires the forward pass of the policy and does not require backpropagation (or value function estimation), which makes the code shorter and between 2-3 times faster in practice. On memory-constrained systems, it is also not necessary to keep a record of the episodes for a later update. There is also no need to worry about exploding gradients in RNNs. Lastly, we can explore a much larger function class of policies, including networks that are not differentiable (such as in binary networks), or ones that include complex modules (e.g. pathfinding, or various optimization layers).
+		Highly parallelizable. ES only requires workers to communicate a few scalars between each other, while in RL it is necessary to synchronize entire parameter vectors (which can be millions of numbers). Intuitively, this is because we control the random seeds on each worker, so each worker can locally reconstruct the perturbations of the other workers. Thus, all that we need to communicate between workers is the reward of each perturbation. As a result, we observed linear speedups in our experiments as we added on the order of thousands of CPU cores to the optimization.
+		Structured exploration. Some RL algorithms (especially policy gradients) initialize with random policies, which often manifests as random jitter on spot for a long time. This effect is mitigated in Q-Learning due to epsilon-greedy policies, where the max operation can cause the agents to perform some consistent action for a while (e.g. holding down a left arrow). This is more likely to do something in a game than if the agent jitters on spot, as is the case with policy gradients. Similar to Q-learning, ES does not suffer from these problems because we can use deterministic policies and achieve consistent exploration.
+		Credit assignment over long time scales. By studying both ES and RL gradient estimators mathematically we can see that ES is an attractive choice especially when the number of time steps in an episode is big, where actions have longlasting effects, or if no good value function estimates are available."
+
+
+	"Natural Evolution Strategies" by Wierstra, Schaul, Glasmachers, Sun, Peters, Schmidhuber - http://jmlr.org/papers/volume15/wierstra14a/wierstra14a.pdf
+
+	(Juergen Schmidhuber) "Evolutionary computation is one of the most useful practical methods for direct search in policy space, especially when there is no teacher who knows which output actions the system should produce at which time. Especially in partially observable environments where memories of previous events are needed to disambiguate states, this often works much better than other reinforcement learning techniques based on dynamic programming. In case of teacher-given desired output actions or labels, gradient descent such as backpropagation (also through time) usually works much better, especially for NNs with many weights."
 
 
   * REINFORCE / Likelihood Ratio Policy Gradient
@@ -985,7 +1010,7 @@ list of papers -
 selected papers/books - https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va
 
 
-recent interesting papers - https://github.com/brylevkirill/notes/blob/master/recent%20papers.txt
+recent interesting papers - https://github.com/brylevkirill/notes/blob/master/recent%20papers.md
 
 
 interesting papers (see below):
@@ -1108,6 +1133,7 @@ Langford et al. - "A Multiworld Testing Decision Service" [http://arxiv.org/abs/
 	-- http://research.microsoft.com/en-us/projects/mwt/
 	-- https://mwtds.azurewebsites.net
 	-- https://youtu.be/N5x48g2sp8M?t=52m (Schapire)
+	-- http://machinedlearnings.com/2017/01/reinforcement-learning-as-service.html (Mineiro)
 
 Norouzi, Bengio, Chen, Jaitly, Schuster, Wu, Schuurmans - "Reward Augmented Maximum Likelihood for Neural Structured Prediction" [https://arxiv.org/abs/1609.00150]
 	"A key problem in structured output prediction is direct optimization of the task reward function that matters for test evaluation. This paper presents a simple and computationally efficient approach to incorporate task reward into a maximum likelihood framework. We establish a connection between the log-likelihood and regularized expected reward objectives, showing that at a zero temperature, they are approximately equivalent in the vicinity of the optimal solution. We show that optimal regularized expected reward is achieved when the conditional distribution of the outputs given the inputs is proportional to their exponentiated (temperature adjusted) rewards. Based on this observation, we optimize conditional log-probability of edited outputs that are sampled proportionally to their scaled exponentiated reward. We apply this framework to optimize edit distance in the output label space. Experiments on speech recognition and machine translation for neural sequence to sequence models show notable improvements over a maximum likelihood baseline by using edit distance augmented maximum likelihood."
@@ -1591,11 +1617,20 @@ Salimans, Ho, Chen, Sutskever - "Evolution Strategies as a Scalable Alternative 
 	By perturbing in parameter space instead of action space, black box optimizers are naturally invariant to the frequency at which our agent acts in the environment. For reinforcement learning, on the other hand, it is well known that frameskip is a crucial parameter to get right for the optimization to succeed. While this is usually a solvable problem for games that only require short-term planning and action, it is a problem for learning longer term strategic behavior. For these problems, RL needs hierarchy to succeed, which is not as necessary when using black box optimization."
 	"Solving 3D Humanoid with ES on one 18-core machine takes about 11 hours, which is on par with RL. However, when distributed across 80 machines and 1,440 CPU cores, ES can solve 3D Humanoid in just 10 min- utes, reducing experiment turnaround time by two orders of magnitude. Figure 1 shows that, for this task, ES is able to achieve linear speedup in the number of CPU cores."
 	"All games were trained for 1 billion frames, which requires about the same amount of neural network computation as the published 1-day results for A3C which uses 320 million frames. The difference is due to the fact that ES does not perform backpropagation and does not use a value function. By parallelizing the evaluation of perturbed parameters across 720 CPUs on Amazon EC2, we can bring down the time required for the training process to about one hour per game. After training, we compared final performance against the published A3C results and found that ES performed better in 23 games tested, while it performed worse in 28."
+	-- https://blog.openai.com/evolution-strategies/ :
+	"ES rivals the performance of standard RL techniques on moder benchmarks, while overcoming many of RL’s inconveniences. ES is simpler to implement (there is no need for backpropagation), it is easier to scale in a distributed setting, it does not suffer in settings with sparse rewards, and has fewer hyperparameters. This outcome is surprising because ES resembles simple hill-climbing in a high-dimensional space based only on finite differences along a few random directions at each step."
 	--
-	https://reddit.com/r/MachineLearning/comments/2xcyrl/i_am_jürgen_schmidhuber_ama/cp48nkc/
-	(Schmidhuber) "Evolutionary computation is one of the most useful practical methods for direct search in policy space, especially when there is no teacher who knows which output actions the system should produce at which time. Especially in partially observable environments where memories of previous events are needed to disambiguate states, this often works much better than other reinforcement learning techniques based on dynamic programming.
-	Evolutionary techniques are not "necessary." Other black box optimizers such as policy gradients sometimes work fine. Evolutionary algorithms and policy gradients are related - see papers on Natural Evolution Strategies.
-	In case of teacher-given desired output actions or labels, gradient descent such as backpropagation (also through time) usually works much better, especially for NNs with many weights. This is not always true though. For example, evolution-trained hidden LSTM units combined with an optimal linear mapping (e.g., SVM) from hidden to output units outperformed a pure gradient-based LSTM even on certain supervised sequence learning tasks. See the EVOLINO papers since 2005."
+	"Mathematically, you’ll notice that this is also equivalent to estimating the gradient of the expected reward in the parameter space using finite differences, except we only do it along 100 random directions. Yet another way to see it is that we’re still doing RL (Policy Gradients, or REINFORCE specifically), where the agent’s actions are to emit entire parameter vectors using a gaussian policy."
+	"Notice that the objective is identical to the one that RL optimizes: the expected reward. However, RL injects noise in the action space and uses backpropagation to compute the parameter updates, while ES injects noise directly in the parameter space. Another way to describe this is that RL is a “guess and check” on actions, while ES is a “guess and check” on parameters. Since we’re injecting noise in the parameters, it is possible to use deterministic policies (and we do, in our experiments). It is also possible to add noise in both actions and parameters to potentially combine the two approaches."
+	--
+	"Data efficiency comparison. ES is less efficient than TRPO, but no worse than about a factor of 10."
+	"Wall clock comparison. On Atari, ES trained on 720 cores in 1 hour achieves comparable performance to A3C trained on 32 cores in 1 day. We were able to solve one of the hardest MuJoCo tasks (a 3D humanoid) using 1,440 CPUs across 80 machines in only 10 minutes. As a comparison, in a typical setting 32 A3C workers on one machine would solve this task in about 10 hours. We found that naively scaling A3C in a standard cloud CPU setting is challenging due to high communication bandwidth requirements."
+	"It is also important to note that supervised learning problems (e.g. image classification, speech recognition, or most other tasks in the industry), where one can compute the exact gradient of the loss function with backpropagation, are not directly impacted by these findings. For example, in our preliminary experiments we found that using ES to estimate the gradient on the MNIST digit recognition task can be as much as 1,000 times slower than using backpropagation. It is only in RL settings, where one has to estimate the gradient of the expected reward by sampling, where ES becomes competitive."
+	-- https://blog.openai.com/content/images/2017/03/out-1.gif (demo)
+	-- https://github.com/openai/evolution-strategies-starter
+	-- "Natural Evolution Strategies" - http://jmlr.org/papers/volume15/wierstra14a/wierstra14a.pdf
+	-- https://gist.github.com/kashif/5748e199a3bec164a867c9b654e5ffe5
+	-- https://github.com/atgambardella/pytorch-es
 
 Levine, Koltun - "Guided Policy Search" [http://vladlen.info/papers/guided-policy-search.pdf]
 	"Direct policy search can effectively scale to high-dimensional systems, but complex policies with hundreds of parameters often present a challenge for such methods, requiring numerous samples and often falling into poor local optima. We present a guided policy search algorithm that uses trajectory optimization to direct policy learning and avoid poor local optima. We show how differential dynamic programming can be used to generate suitable guiding samples, and describe a regularized importance sampled policy optimization that incorporates these samples into the policy search. We evaluate the method by learning neural network controllers for planar swimming, hopping, and walking, as well as simulated 3D humanoid running."

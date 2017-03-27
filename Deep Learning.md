@@ -34,7 +34,7 @@ Deep Learning is learning to represent knowledge with composition of functions a
     - [applications](#interesting-papers---applications)
 
 
-[the most impressive accomplishments](https://dropbox.com/s/di5mxkj8c65h3e6/AI%20wonders.txt) (in russian)
+[recent breakthroughs](https://dropbox.com/s/cfjjubx8ocfx748/breakthroughs.md) (in russian)
 
 
 
@@ -77,12 +77,8 @@ Deep Learning is learning to represent knowledge with composition of functions a
 
 #### history
 
-  <http://andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning/>
-  <http://andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning-part-2/>  
-  <http://andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning-part-3/>  
-  <http://andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning-part-4/>  
-
-  <http://arxiv.org/abs/1510.04781>  
+  ["A 'Brief' History of Neural Nets and Deep Learning"](http://andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning/)  
+  ["On the Origin of Deep Learning"](https://arxiv.org/abs/1702.07800)  
 
 
 #### tutorials
@@ -159,6 +155,12 @@ Deep Learning is learning to represent knowledge with composition of functions a
 	<https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016>  
 	<https://nips.cc/Conferences/2016/SpotlightVideos>  
 	<http://papers.ai/collections/nips.2016>  
+
+	<http://people.idsia.ch/~rupesh/rnnsymposium2016/program.html> + <https://youtube.com/playlist?list=PLPwzH56Rdmq4hcuEMtvBGxUrcQ4cAkoSc>
+	<https://sites.google.com/site/nips2016adversarial/> + <https://youtube.com/playlist?list=PLJscN9YDD1buxCitmej1pjJkR5PMhenTF>
+	<http://bayesiandeeplearning.org> + https://youtube.com/channel/UC_LBLWLfKk5rMKDOHoO7vPQ
+	<https://uclmr.github.io/nampi/>
+
 	<https://github.com/hindupuravinash/nips2016>  
 	<https://gist.github.com/artsobolev/63942e24c81fc296472affb1f138d54c>  
 	<https://reddit.com/r/MachineLearning/comments/5i3v0k/r_nips_2016_overviews/>  
@@ -1122,6 +1124,7 @@ recursive networks (generalization of recurrent networks):
 
 	<https://deepmind.com/blog/differentiable-neural-computers/>
 
+	<https://youtube.com/watch?v=steioHoiEms> (Graves)
 	<https://youtube.com/watch?v=PQrlOjj8gAc> (Wayne)  
 	<https://youtu.be/otRoAQtc5Dk?t=59m56s> (Polykovskiy)  
 
@@ -1294,7 +1297,7 @@ open questions:
   - [loss function and grounding](#interesting-quotes---loss-function-and-grounding)  
 
 
-  --
+  ----
   #### interesting quotes - architectures
 
   Peter Norvig:
@@ -1333,7 +1336,7 @@ open questions:
   > - needs disentangling the underlying explanatory factors (making sense of the data)"
 
 
-  --
+  ----
   #### interesting quotes - representation
 
   Juergen Schmidhuber:
@@ -1364,7 +1367,7 @@ open questions:
   > "Intuition is an implicit knowledge acquired through experience but not consciously expressible or accessible. The existence and quality of this knowledge can be verified behaviourally. Creativity is an ability to synthesize knowledge to produce a novel or original idea."
 
 
-  --
+  ----
   #### interesting quotes - learning and generalisation
 
   Ilya Sutskever:
@@ -1407,7 +1410,7 @@ open questions:
   > "Model-based optimization, or as I like to call it, “the automatic inventor”, is a huge future application. Right now we make models that take some input, and produce some output. We put in a photo, the model outputs a value saying that it is a cat. In the future (and to a limited extent, now), we will be able to use optimization algorithms to search for the input to the model that yields the optimal output. Suppose we have a model that looks at the blueprints for a car and predicts how fast the car will go. We can then use gradient descent on a continuous representation of the blueprint to optimize for the fastest car. Right now, this approach doesn’t work very well, because you don’t get an input that is actually optimal in the real world. Instead, you get an adversarial example that the model thinks will perform great but turns out to perform poorly in the real world. For example, if you start your optimization with a photo of an airplane, then use gradient descent to search for an image that is classified as a cat, gradient descent will find an image that still looks like an airplane to a human observer but is classified as a cat by the model. In the future, when we have fixed the adversarial example problem, we’ll be able to build deep nets that estimate the effectiveness of medicinal drugs, genes, and other things that are too complex for people to design efficiently. We’ll then be able to invent new drugs and discover new useful genes by using gradient descent on a continuous representation of the design space."
 
 
-  --
+  ----
   #### interesting quotes - symbolic approach
 
   Geoffrey Hinton:
@@ -1453,7 +1456,7 @@ open questions:
   > "There is no integration of neural and symbolic approaches to common-sense reasoning. Common-sense reasoning is symbolic (and many other things that integrate naturally with symbols: probabilistic, causal, object and agent-based). The idea that neural nets (in any of their current forms) are going to be able to read all the text on the web and then perform common-sense reasoning is ridiculous. The knowledge representation and reasoning mechanisms that are being explored are too weak. My guess: Neural nets could play a role but not in reasoning. Yet neural nets might still be very helpful, in mapping between natural language and a probabilistic-logical language of thought."
 
 
-  --
+  ----
   #### interesting quotes - theory and black box
 
   Michael Nielsen:
@@ -1489,7 +1492,7 @@ open questions:
   > "In case of local minima in a very high dimensional space (the space of parameters), all the directions should go up in all dimensions. If there is somehow a randomness in how all the functions are constructed and if the direction are independently chosen, it is exponentially unlikely that all directions go up except near the bottom of the landscape ie., near the global minima. The intuition is that when there is a minima that’s close to the global minima, all directions go up and it’s not possible to go further down. Hence, the local minima exists but are very close to global minima in terms of objective functions. Theoretical results from statistical physics and matrix theory suggests that for some families of functions that are fairly large, there is a concentration of probability between the index of the critical points and the objective function. Index is the fraction of directions that are going down. When index = 0, it is a local minimum and when index = 1, it is a local maximum. If index is something in between, then it is a saddle point. So, local minima is a special case of saddle point when index = 0. For a particular training objective, most of the critical points are saddle points with a particular index. Empirical results verify that indeed there is a tight relation between index and the objective function. It’s only an empirical validation and there is no proof that the results apply to optimization of neural networks. There is some evidence that the behaviour observed corresponds to what the theory suggests. In practice, it is observed that stochastic gradient descent will almost always escape from surfaces other than local minima."
 
 
-  --
+  ----
   #### interesting quotes - unsupervised learning
 
   Vincent van Houcke:
@@ -1535,7 +1538,7 @@ open questions:
   > "Is a scalar reward enough? Hmmm, I don't know. Certainly for most supervised learning - e.g. think ImageNet, there is a single scalar reward. Note that the reward happens at every time step - i.e. it is very informative for ImageNet. Most of what people dub as unsupervised learning can also be cast as reinforcement learning. It is a very general and broad framework, with huge variation depending on whether the reward is rare, whether we have mathematical expressions for the reward function, whether actions are continuous or discrete, etc."
 
 
-  --
+  ----
   #### interesting quotes - loss function and grounding
 
   Yoshua Bengio:
@@ -1568,7 +1571,7 @@ open questions:
 [selected papers and books](https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza)
 
 
-[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/recent%20papers.txt)
+[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/recent%20papers.md)
 
 
 interesting papers (see below):  
@@ -2241,6 +2244,7 @@ interesting papers (see below):
 >	"Taken together, the bAbI and graph tasks demonstrate that DNCs are able to process and reason about graph-structured data regardless of whether the links are implicit or explicit. Moreover, we have seen that the structure of the data source is directly reflected in the memory access procedures learned by the controller. The Mini-SHRDLU problem shows that a systematic use of memory also emerges when a DNC learns by reinforcement to act in pursuit of a set of symbolic goals. The theme connecting these tasks is the need to learn to represent and reason about the complex, quasi-regular structure embedded in data sequences. In each problem, domain regularities, such as the conventions for representing graphs, are invariant across all sequences shown; on the other hand, for any given sequence, a DNC must detect and capture novel variability as episodic variables in memory. This mixture of large-scale structure and microscopic variability is generic to many problems that confront a cognitive agent. For example, in visual scenes, stories and action plans, broad regularities bind together novel variation in any exemplar. Rooms statistically have chairs in them, but the shape and location of a particular chair in a room are variables. These variable values can be written to the external memory of a DNC, leaving the controller network free to concentrate on learning global regularities. Our experiments focused on relatively small-scale synthetic tasks, which have the advantage of being easy to generate and interpret. For such problems, memory matrices of up to 512 locations were sufficient. To tackle real-world data we will need to scale up to thousands or millions of locations, at which point the memory will be able to store more information than can be contained in the weights of the controller. Such systems should be able to continually acquire knowledge through exposure to large, naturalistic data sources, even without adapting network parameters. We aim to further develop DNCs to serve as representational engines for one-shot learning, scene understanding, language processing and cognitive mapping, capable of intuiting the variable structure and scale of the world within a single, generic model."
 
   - <https://deepmind.com/blog/differentiable-neural-computers/>
+  - <https://youtube.com/watch?v=steioHoiEms> (Graves)
   - <https://youtube.com/watch?v=PQrlOjj8gAc> (Wayne)
   - <https://youtu.be/otRoAQtc5Dk?t=59m56s> (Polykovskiy)
   - <https://github.com/yos1up/DNC>
@@ -3417,7 +3421,7 @@ also see section "[interesting papers - applications]" of <https://dropbox.com/s
 
 >	"In this paper we have introduced a new formulation for word recognition, designed to be used identically in language and non-language scenarios. By modelling character positions and the presence of common N-grams, we can define a joint graphical model. This can be trained effectively by backpropagating structured output loss, and results in a more accurate word recognition system than predicting characters alone. We show impressive results for unconstrained text recognition with the ability to generalise recognition to previously unseen words, and match state-of-the-art accuracy when comparing in lexicon constrained scenarios."
 
-  - <http://youtube.com/watch?v=NYkG38RCoRg> + <http://iclr.cc/lib/exe/fetch.php?media=iclr2015:jaderbergetal-iclr2015.pdf> (Jaderberg)
+  - <http://youtube.com/watch?v=NYkG38RCoRg> (Jaderberg)
 
 
 #### Xu, Ba, Kiros, Cho, Courville, Salakhutdinov, Zemel, Bengio - ["Show, Attend and Tell: Neural Image Caption Generation with Visual Attention"](http://arxiv.org/abs/1502.03044)

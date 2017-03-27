@@ -1049,7 +1049,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   - [Resource Description Framework](https://dropbox.com/sh/c427b94xex62a40/AABii9_MRHrCZPGJ_Adx_b3Ma)
 
 
-[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/recent%20papers.txt)
+[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/recent%20papers.md)
 
 
 interesting papers (see below):
@@ -1216,8 +1216,8 @@ noise, inferring missing information, and determining which candidate facts shou
 ### interesting papers - knowledge bases with continuous representations
 
 
-#### Sutskever, Salakhutdinov, Tenenbaum - ["Modelling Relational Data using Bayesian Clustered Tensor Factorization"](http://www.cs.toronto.edu/~rsalakhu/papers/pmfcrp.pdf) (probabilistic model over distributed representations)
->	"We consider the problem of learning probabilistic models for complex relational structures between various types of objects. A model can help us “understand” a dataset of relational facts in at least two ways, by finding interpretable structure in the data, and by supporting predictions, or inferences about whether particular unobserved relations are likely to be true. Often there is a tradeoff between these two aims: cluster-based models yield more easily interpretable representations, while factorization-based approaches have given better predictive performance on large data sets. We introduce the Bayesian Clustered Tensor Factorization model, which embeds a factorized representation of relations in a nonparametric Bayesian clustering framework. Inference is fully Bayesian but scales well to large data sets. The model simultaneously discovers interpretable clusters and yields predictive performance that matches or beats previous probabilistic models for relational data."
+#### Nguyen ["An Overview of Embedding Models of Entities and Relationships for Knowledge Base Completion"](https://arxiv.org/abs/1703.08098)
+>	"Knowledge bases of real-world facts about entities and their relationships are useful resources for a variety of natural language processing tasks. However, because knowledge bases are typically incomplete, it is useful to be able to perform knowledge base completion, i.e., predict whether a relationship not in the knowledge base is likely to be true. This article presents an overview of embedding models of entities and relationships for knowledge base completion, with up-to-date experimental results on two standard evaluation tasks of link prediction (i.e. entity prediction) and triple classification."
 
 
 #### Bordes, Weston, Collobert, Bengio - ["Learning Structured Embeddings of Knowledge Bases"](http://ronan.collobert.com/pub/matos/2011_knowbases_aaai.pdf) (Distance model)

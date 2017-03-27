@@ -259,7 +259,7 @@ selected papers - https://dropbox.com/sh/veqe3c800ztpkxe/AABwH6camduJrsTUJpeKobW
 selected papers - https://dropbox.com/sh/veqe3c800ztpkxe/AABwH6camduJrsTUJpeKobWUa
 
 
-recent interesting papers - https://github.com/brylevkirill/notes/blob/master/recent%20papers.txt
+recent interesting papers - https://github.com/brylevkirill/notes/blob/master/recent%20papers.md
 
 
 interesting papers (see below):
