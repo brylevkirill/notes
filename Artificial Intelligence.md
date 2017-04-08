@@ -1,5 +1,5 @@
 Intelligence is information processing necessary to achieve goals with limited resources.  
-Intelligence measures an agent's ability to achieve goals in a wide range of environments.  
+Intelligence measures an agent's ability to achieve goals in some range of environments.  
 
 
   * [overview](#overview)
@@ -36,7 +36,7 @@ Intelligence measures an agent's ability to achieve goals in a wide range of env
 ---
 ### overview
 
-[the most impressive accomplishments](https://dropbox.com/s/di5mxkj8c65h3e6/AI%20wonders.txt) (in russian)
+[recent breakthroughs](https://dropbox.com/s/cfjjubx8ocfx748/breakthroughs.md) (in russian)
 
 
   - Demis Hassabis  
@@ -119,10 +119,7 @@ Intelligence measures an agent's ability to achieve goals in a wide range of env
   ["Why video games are essential for inventing artificial intelligence"](http://togelius.blogspot.ru/2016/01/why-video-games-are-essential-for.html) by Julian Togelius
 
 
-  "A 'Brief' History of Game AI Up To AlphaGo" by Andrew Kurenkov -
-	[first part](http://andreykurenkov.com/writing/a-brief-history-of-game-ai/) +
-	[second part](http://andreykurenkov.com/writing/a-brief-history-of-game-ai-part-2/) +
-	[third part](http://andreykurenkov.com/writing/a-brief-history-of-game-ai-part-3/)
+  ["A 'Brief' History of Game AI Up To AlphaGo"](http://andreykurenkov.com/writing/a-brief-history-of-game-ai/)
 
   ["AI for classic games"](http://youtube.com/watch?v=kZ_AUmFcZtk) by David Silver
 
@@ -150,6 +147,7 @@ Intelligence measures an agent's ability to achieve goals in a wide range of env
   - OpenAI Universe  
 	<https://universe.openai.com>  
 	<https://openai.com/blog/universe/>  
+	<https://youtube.com/watch?v=BskhUBPRrqE> (Sutskever)  
 
   - OpenAI Mini World Of Bits  
 	<http://alpha.openai.com/miniwob/index.html>  
@@ -173,6 +171,11 @@ Intelligence measures an agent's ability to achieve goals in a wide range of env
 
   ["Unsolved Problems in AI"](https://medium.com/ai-roadmap-institute/unsolved-problems-in-ai-38f4ce18921d) by GoodAI  
   ["Concrete AI tasks for forecasting"](http://aiimpacts.org/concrete-ai-tasks-for-forecasting/) by AIimpacts  
+
+----
+
+  "applications" section of [reinforcement learning](https://dropbox.com/s/dexryjnmxujdynd/Reinforcement%20Learning.txt)  
+  [machine reading benchmarks](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#machine-reading-benchmarks)  
 
 
 
@@ -244,17 +247,17 @@ Intelligence measures an agent's ability to achieve goals in a wide range of env
 	statistical - [bayesian deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)
 
 
-  ["On Chomsky and the Two Cultures of Statistical Learning"](http://norvig.com/chomsky.html) by Peter Norvig  
+["On Chomsky and the Two Cultures of Statistical Learning"](http://norvig.com/chomsky.html) by Peter Norvig  
 >	"mathematical model specifies a relation among variables, either in functional or in relational form"  
 >	"statistical model is a mathematical model which is modified or trained by the input of data points"  
 >	"probabilistic model specifies a probability distribution over possible values of random variables"  
 >	"statistical models are often but not always probabilistic and probabilistic ones are statistical"  
 
-  ["Unifying Logic and Probability"](https://www.cs.berkeley.edu/~russell/papers/ipmu14-oupm.pdf) by Stuart Russell
+["Unifying Logic and Probability"](https://www.cs.berkeley.edu/~russell/papers/ipmu14-oupm.pdf) by Stuart Russell
 	([video](http://video.upmc.fr/differe.php?collec=S_C_colloquium_lip6_2012&video=3))
 >	"Beginning with Leibniz, scholars have attempted to unify logic and probability. For “classical” AI, based largely on first-order logic, the purpose of such a unification is to handle uncertainty and facilitate learning from real data; for “modern” AI, based largely on probability theory, the purpose is to acquire formal languages with sufficient expressive power to handle complex domains and incorporate prior knowledge."
 
-  ["Unifying Logical and Statistical AI"](http://homes.cs.washington.edu/~pedrod/papers/aaai06c.pdf) by Pedro Domingos
+["Unifying Logical and Statistical AI"](http://homes.cs.washington.edu/~pedrod/papers/aaai06c.pdf) by Pedro Domingos
 	([video](http://youtube.com/watch?v=bW5DzNZgGxY))
 >	"logic handles complexity and statistics handles uncertainty"
 
@@ -347,7 +350,7 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
   [Reinforcement Learning](https://dropbox.com/s/dexryjnmxujdynd/Reinforcement%20Learning.txt)
 
-  Shakir Mohamed - "Learning in Brains and Machines"  
+  Shakir Mohamed - "Learning in Brains and Machines":  
 	["Temporal Differences"](http://blog.shakirm.com/2016/02/learning-in-brains-and-machines-1/)  
 	["The Dogma of Sparsity"](http://blog.shakirm.com/2016/04/learning-in-brains-and-machines-2/)  
 	["Synergistic and Modular Action"](http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/)  
@@ -438,13 +441,15 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
   ["Formal Theory of Creativity and Fun and Intrinsic Motivation"](http://people.idsia.ch/~juergen/creativity.html) by Juergen Schmidhuber
 
-----
-
   Intrinsic motivation objective for an artificially curious/creative agent is to maximize the amount of model-learning progress, measured as the difference in compression of agent's experience before and after learning.
 
-  "Humans, even as infants, invent their own tasks in a curious and creative fashion, continually increasing their problem solving repertoire even without an external reward or teacher. They seem to get intrinsic reward for creating experiments leading to observations that obey a previously unknown law that allows for better compression of the observations—corresponding to the discovery of a temporarily interesting, subjectively novel regularity. For example, a video of 100 falling apples can be greatly compressed via predictive coding once the law of gravity is discovered. Likewise, the video-like image sequence perceived while moving through an office can be greatly compressed by constructing an internal 3D model of the office space. The 3D model allows for re-computing the entire high-resolution video from a compact sequence of very low-dimensional eye coordinates and eye directions. The model itself can be specified by far fewer bits of information than needed to store the raw pixel data of a long video. Even if the 3D model is not precise, only relatively few extra bits will be required to encode the observed deviations from the predictions of the model. Even mirror neurons are easily explained as by-products of history compression. They fire both when an animal acts and when the animal observes the same action performed by another. Due to mutual algorithmic information shared by perceptions of similar actions performed by various animals, efficient RNN-based predictive coding profits from using the same feature detectors (neurons) to encode the shared information, thus saving storage space."
+  "What experiments should an agent’s reinforcement learning controller, C, conduct to generate data that quickly improves agent's adaptive, predictive world model, M, which in turn can help to plan ahead? The theory says: use the learning progress of M (typically compression progress and speed-ups) as the intrinsic reward or fun for C. This motivates C to create action sequences (experiments) such that M can quickly discover new, previously unknown regularities."
 
-  "Which experiments should an agent’s reinforcement learning controller, C, conduct to generate data that quickly improves its adaptive, predictive world model, M, which in turn can help to plan ahead? The theory says: use the learning progress of M (typically compression progress and speed-ups) as the intrinsic reward or fun for C. This motivates C to create action sequences (experiments) such that M can quickly discover new, previously unknown regularities. For example, a video of 20 falling apples can be greatly compressed after the discovery of the law of gravity, through predictive coding. This discovery is fun, and motivates the history-shaping C."
+----
+
+  "Humans, even as infants, invent their own tasks in a curious and creative fashion, continually increasing their problem solving repertoire even without an external reward or teacher. They seem to get intrinsic reward for creating experiments leading to observations that obey a previously unknown law that allows for better compression of the observations—corresponding to the discovery of a temporarily interesting, subjectively novel regularity. For example, a video of 100 falling apples can be greatly compressed via predictive coding once the law of gravity is discovered. Likewise, the video-like image sequence perceived while moving through an office can be greatly compressed by constructing an internal 3D model of the office space. The 3D model allows for re-computing the entire high-resolution video from a compact sequence of very low-dimensional eye coordinates and eye directions. The model itself can be specified by far fewer bits of information than needed to store the raw pixel data of a long video. Even if the 3D model is not precise, only relatively few extra bits will be required to encode the observed deviations from the predictions of the model. Even mirror neurons are easily explained as by-products of history compression. They fire both when an animal acts and when the animal observes the same action performed by another. Due to mutual algorithmic information shared by perceptions of similar actions performed by various animals, efficient predictive coding profits from using the same feature detectors (neurons) to encode the shared information, thus saving storage space."
+
+  "In the real world external rewards are rare. Agents using additional intrinsic rewards for model-learning progress will be motivated to learn many useful behaviors even in absence of external rewards, behaviors that lead to predictable or compressible results and thus reflect regularities in the environment, such as repeatable patterns in the world’s reactions to certain action sequences. Often a bias towards exploring previously unknown environmental regularities through artificial curiosity/creativity is a priori desirable because goal-directed learning may greatly profit from it, as behaviors leading to external reward may often be rather easy to compose from previously learnt curiosity-driven behaviors. It may be possible to formally quantify this bias towards novel patterns in form of a mixture-based prior, a weighted sum of probability distributions on sequences of actions and resulting inputs, and derive precise conditions for improved expected external reward intake. Intrinsic reward may be viewed as analogous to a regularizer in supervised learning, where the prior distribution on possible hypotheses greatly influences the most probable interpretation of the data in a Bayesian framework."
 
   *(Juergen Schmidhuber)*
 
@@ -459,8 +464,8 @@ following up conjectures suggested by analogies). Good mathematicians see analog
   ["Driven by compression progress: A simple principle explains essential aspects of subjective beauty, novelty, surprise, interestingness, attention, curiosity, creativity, art, science, music, jokes"](http://arxiv.org/abs/0812.4360) by Juergen Schmidhuber
 >	"I argue that data becomes temporarily interesting by itself to some self-improving, but computationally limited, subjective observer once he learns to predict or compress the data in a better way, thus making it subjectively simpler and more beautiful. Curiosity is the desire to create or discover more non-random, non-arbitrary, regular data that is novel and surprising not in the traditional sense of Boltzmann and Shannon but in the sense that it allows for compression progress because its regularity was not yet known. This drive maximizes interestingness, the first derivative of subjective beauty or compressibility, that is, the steepness of the learning curve. It motivates exploring infants, pure mathematicians, composers, artists, dancers, comedians, yourself, and artificial systems."
 
-  ["Artificial scientists and artists based on the formal theory of creativity"](http://people.idsia.ch/~juergen/agi10.pdf) by Juergen Schmidhuber
->	"In the real world external rewards are rare. But unsupervised AGIs using additional intrinsic rewards as described in this paper will be motivated to learn many useful behaviors even in absence of external rewards, behaviors that lead to predictable or compressible results and thus reflect regularities in the environment, such as repeatable patterns in the world’s reactions to certain action sequences. Often a bias towards exploring previously unknown environmental regularities through artificial curiosity / creativity is a priori desirable because goal-directed learning may greatly profit from it, as behaviors leading to external reward may often be rather easy to compose from previously learnt curiosity-driven behaviors. It may be possible to formally quantify this bias towards novel patterns in form of a mixture-based prior, a weighted sum of probability distributions on sequences of actions and resulting inputs, and derive precise conditions for improved expected external reward intake. Intrinsic reward may be viewed as analogous to a regularizer in supervised learning, where the prior distribution on possible hypotheses greatly influences the most probable interpretation of the data in a Bayesian framework."
+  ["Formal Theory of Creativity, Fun, and Intrinsic Motivation"](http://people.idsia.ch/~juergen/ieeecreative.pdf) by Juergen Schmidhuber
+>	"The simple but general formal theory of fun & intrinsic motivation & creativity is based on the concept of maximizing intrinsic reward for the active creation or discovery of novel, surprising patterns allowing for improved prediction or data compression. It generalizes the traditional field of active learning, and is related to old but less formal ideas in aesthetics theory and developmental psychology. It has been argued that the theory explains many essential aspects of intelligence including autonomous development, science, art, music, humor. This overview first describes theoretically optimal (but not necessarily practical) ways of implementing the basic computational principles on exploratory, intrinsically motivated agents or robots, encouraging them to provoke event sequences exhibiting previously unknown but learnable algorithmic regularities."
 
   ["On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models"](http://arxiv.org/abs/1511.09249) by Juergen Schmidhuber
 
@@ -477,11 +482,11 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
   **applications**
 
-  ["Toward Intelligent Humanoids"](https://vimeo.com/51011081) (demo on iCub robot)
+  ["Toward Intelligent Humanoids"](https://vimeo.com/51011081) (application on iCub robot by Schmidhuber's group)
 
-  ["Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids"](http://goo.gl/FKNPth)  
-  ["PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem"](http://goo.gl/M5uqF4)  
-  ["Continually Adding Self-Invented Problems to the Repertoire: First Experiments with PowerPlay"](http://goo.gl/lTYm6o)  
+  ["Curiosity Driven Reinforcement Learning Motion Planning on Humanoids"](http://goo.gl/FKNPth) by Frank, Schmidhuber and others
+  ["PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem"](https://arxiv.org/abs/1112.5309) by Schmidhuber  
+  ["Continually Adding Self-Invented Problems to the Repertoire: First Experiments with PowerPlay"](http://goo.gl/lTYm6o) by Srivastava, Schmidhuber and others
 
 
 
@@ -490,7 +495,7 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
   [introduction to Solomonoff Induction](http://lesswrong.com/lw/dhg/an_intuitive_explanation_of_solomonoff_induction/) by Luke Muehlhauser and Alex Altair
 
-  [How Bayes theorem is consistent with Solomonoff induction](http://lesswrong.com/r/discussion/lw/di3/how_bayes_theorem_is_consistent_with_solomonoff/)
+  ["How Bayes theorem is consistent with Solomonoff induction"](http://lesswrong.com/r/discussion/lw/di3/how_bayes_theorem_is_consistent_with_solomonoff/)
 
 
   [introduction to AIXI](http://youtube.com/watch?v=F2bQ5TSB-cE) by Marcus Hutter
@@ -582,18 +587,15 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
 #### A Monte-Carlo AIXI Approximation (MC-AIXI-CTW)
 
-  <https://arxiv.org/abs/0909.0801> by Veness et al.  
-  <http://jveness.info/publications/veness_phd_thesis_final.pdf> by Joel Veness  
+  ["A Monte Carlo AIXI Approximation"](https://arxiv.org/abs/0909.0801) by Veness, Ng, Hutter, Uther, Silver  
+  ["Approximate Universal Artificial Intelligence and Self-Play Learning for Games"](http://jveness.info/publications/veness_phd_thesis_final.pdf) by Joel Veness  
 
-  <http://youtube.com/watch?v=yfsMHtmGDKE> (Ms. Pac-Man demo)  
-
-  <http://jveness.info/software/mcaixi_jair_2010.zip>  
-  <https://github.com/moridinamael/mc-aixi>  
+  [Ms. Pac-Man demo](http://youtube.com/watch?v=yfsMHtmGDKE)
 
 
 #### Formal Theory of Fun and Creativity and Intrinsic Motivation
 
-  [Artificial Curiosity and Creativity](#artificial-curiosity-and-creativity) by Juergen Schmidhuber
+  ["Artificial Curiosity and Creativity"](#artificial-curiosity-and-creativity) by Juergen Schmidhuber
 
   "The ultimate optimal Bayesian approach to machine learning is embodied by the AIXI model. Any computational problem can be phrased as the maximization of a reward function. AIXI is based on Solomonoff's universal mixture M of all computable probability distributions. If the probabilities of the world's responses to some reinforcement learning agent's actions are computable (there is no physical evidence against that), then the agent may predict its future sensory inputs and rewards using M instead of the true but unknown distribution. The agent can indeed act optimally by choosing those action sequences that maximize M-predicted reward. This may be dubbed the unbeatable, ultimate statistical approach to AI - it demonstrates the mathematical limits of what's possible. However, AIXI’s notion of optimality ignores computation time, which is the reason why we are still in business with less universal but more practically feasible approaches such as deep learning based on more limited local search techniques such as gradient descent."
 
@@ -618,6 +620,9 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 [bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)  
 [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
 [semantic web](https://dropbox.com/s/ono4n5yij0y1366/RDF.txt)  
+
+
+[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/recent%20papers.md)
 
 
 interesting papers (see below):  

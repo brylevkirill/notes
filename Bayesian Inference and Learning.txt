@@ -166,18 +166,20 @@ selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91I
 	https://youtube.com/watch?v=BKh7nj5SmnI
 	https://youtu.be/0q5p7xP4cdA?t=5h4m9s
 
-  Shakir Mohamed - "A Statistical View of Deep Learning"
-	http://blog.shakirm.com/2015/01/a-statistical-view-of-deep-learning-i-recursive-glms/
-	http://blog.shakirm.com/2015/03/a-statistical-view-of-deep-learning-ii-auto-encoders-and-free-energy/
-	http://blog.shakirm.com/2015/04/a-statistical-view-of-deep-learning-iii-memory-and-kernels/
-	http://blog.shakirm.com/2015/05/a-statistical-view-of-deep-learning-iv-recurrent-nets-and-dynamical-systems/
-	http://blog.shakirm.com/2015/05/a-statistical-view-of-deep-learning-v-generalisation-and-regularisation/
+  Shakir Mohamed - "A Statistical View of Deep Learning":
+	"Recursive GLMs" - http://blog.shakirm.com/2015/01/a-statistical-view-of-deep-learning-i-recursive-glms/
+	"Auto-encoders and Free Energy" - http://blog.shakirm.com/2015/03/a-statistical-view-of-deep-learning-ii-auto-encoders-and-free-energy/
+	"Memory and Kernels" - http://blog.shakirm.com/2015/04/a-statistical-view-of-deep-learning-iii-memory-and-kernels/
+	"Recurrent Nets and Dynamical Systems" - http://blog.shakirm.com/2015/05/a-statistical-view-of-deep-learning-iv-recurrent-nets-and-dynamical-systems/
+	"Generalisation and Regularisation" - http://blog.shakirm.com/2015/05/a-statistical-view-of-deep-learning-v-generalisation-and-regularisation/
+	"What is Deep?" - http://blog.shakirm.com/2015/06/a-statistical-view-of-deep-learning-vi-what-is-deep/
 
   Yarin Gal - "What my deep model doesn't know" - http://mlg.eng.cam.ac.uk/yarin/blog_3d801aa532c1ce.html
   Yarin Gal - "Uncertainty In Deep Learning" - http://mlg.eng.cam.ac.uk/yarin/blog_2248.html
 
   Zoubin Ghahramani - "A History of Bayesian Neural Networks" - http://bayesiandeeplearning.org/slides/nips16bayesdeep.pdf
 
+  David MacKay - "Course on Information Theory, Pattern Recognition, and Neural Networks" - http://videolectures.net/course_information_theory_pattern_recognition/
   David MacKay - "Bayesian Methods for Adaptive Models" - http://www.inference.phy.cam.ac.uk/mackay/thesis.pdf
 
 
@@ -510,16 +512,35 @@ challenges:
   introduction by Dmitry Vetrov (in russian) - https://dropbox.com/s/t3iyeu78o0c86kq/Dmitry%20Vetrov%20-%20Variational%20Inference.pdf
 
 
-  approximate inference where joint probability computation is infeasible:
-  - approximate graphical model by simpler one
-  - minimize 'distance' between models
-
-
   variational inference
+
+	(Ferenc Huszar) "Variational inference is useful for dealing with latent variable models. Let's assume that for each observation x we assign a hidden variable z. Our model pθpθ describes the joint distribution between x and z. In such a model, typically:
+	pθ(z) is very easy  ( 🐣  )
+	pθ(x|z) is easy  ( 🐹  )
+	pθ(x,z) is easy  ( 🐨  )
+	pθ(x) is super-hard  ( 🐍  )
+	pθ(z|x) is mega-hard  ( 🐲  )
+	to evaluate. Unfortunately, in machine learning the things we want to calculate are exactly the bad guys, 🐍  and 🐲 
+
+	- inference is evaluating pθ(z|x)  ( 🐲  )
+	- learning (via maximum likelihood) involves pθ(x)  ( 🐍  )
+
+	Variational lower bounds give us ways to approximately perform both inference and maximum likelihood parameter learning, by approximating the posterior 🐲  with a simpler, tamer distribution, qψ(z|x) ( 🐰 ) called the approximate posterior or recognition model. Variational inference and learning involves maximising the evidence lower bound (ELBO):
+
+	ELBO(θ,ψ) = ∑n log p(xn) − KL[qψ(z|xn)∥pθ(z|xn)]  or  💪  = ∑n log🐍 - KL[ 🐰 || 🐲 ]
+
+	This expression is still full of 🐍  and 🐲s but the nice thing about it is that it can be written in more convenient forms which only contain the good gu 🐣 🐹 🐨 🐰 
+
+	💪  = − ∑nE🐰 log ( 🐰 / 🐨 ) + constant = ∑n E🐰 log 🐹 - E🐰 KL[ 🐰 || 🐣  ]
+
+	Both expressions only contain nice, tame distributions and do not need explicit evaluation of either the marginal likelihood 🐍  or the posterior 🐲.
+
+	ELBO is - as the name suggests - a lower bound to the model evidence or log likelihood. Therefore, maximising it with respect to θ and ψ approximates maximum likelihood learning, while you can use the recognition model 🐰 instead of 🐉 to perform tractable approximate inference."
+
 
 	Evidence Lower Bound (variational lower bound):
 		log pθ(x) = L(θ,φ,x) + Dkl(qφ(z|x) || pθ(z|x)), where
-			L(θ,φ,x) := ∫ qφ(z|x)log(pθ(x,z)/qφ(z|x))dz    (ELBo or, in case of unnormalized factors in qφ(z|x), variational free energy)
+			L(θ,φ,x) := ∫ qφ(z|x)log(pθ(x,z)/qφ(z|x))dz    (ELBO or, in case of unnormalized factors in qφ(z|x), variational free energy)
 			Dkl(qφ(z|x) || pθ(z|x)) = ∫ qφ(z|x)log(qφ(z|x)/pθ(z|x))dz
 		Dkl(qφ(z|x) || pθ(z|x)) >=0  =>  L(θ,φ,x) <= log pθ(x) and L(θ,φ,x) is variational lower bound on the log-likelihood/evidence (ELBO)
 
@@ -557,8 +578,6 @@ challenges:
 	Karol Gregor - https://dl.dropboxusercontent.com/u/16027344/ICML%202015%20Deep%20Learning%20Workshop/Karol%20Gregor%2C%20GOOGLE%20Deepmind.p2g/Default.html
 	Karol Gregor - http://youtube.com/watch?v=P78QYjWh5sM
 	Durk Kingma - http://youtube.com/watch?v=rjZL7aguLAs
-	Alexander Stepochkin - http://vk.com/video-44016343_456239092 (in russian)
-	Feodor Chervinsky - https://youtu.be/0veUbpdBqyk?t=50m50s (in russian)
 
 
 	"The difference between traditional variational methods and variational autoencoders is that in VAE, the local approximate posterior, q(zi|xi) is produced by a closed-form differentiable procedure (such as a neural network), as opposed to a local optimization. This allows the model and inference strategy to be joinly optimized."
@@ -809,8 +828,6 @@ Kingma, Welling - "Auto-Encoding Variational Bayes" [http://arxiv.org/abs/1312.6
 	-- http://videolectures.net/deeplearning2015_courville_autoencoder_extension/ (Courville)
 	-- https://dl.dropboxusercontent.com/u/16027344/ICML%202015%20Deep%20Learning%20Workshop/Karol%20Gregor%2C%20GOOGLE%20Deepmind.p2g/Default.html (Gregor)
 	-- https://youtu.be/_qrHcSdQ2J4?t=1h37m21s (Vetrov, in russian)
-	-- http://vk.com/video-44016343_456239092 (Stepochkin, in russian)
-	-- http://youtu.be/0veUbpdBqyk?t=50m50s (Chervinsky, in russian)
 	-- http://hsaghir.github.io/denoising-vs-variational-autoencoder/
 	-- http://arxiv.org/abs/1606.05908 + https://github.com/cdoersch/vae_tutorial (tutorial)
 	-- http://arxiv.org/abs/1610.09296 (explanation)

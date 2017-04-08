@@ -19,7 +19,7 @@ Higher-order probabilistic programming languages open up possibility of doing in
 
 
 
-
+---
 ### introduction
 
   "A probabilistic programming language provides syntax to instantiate random variables, as well as syntax to impose conditions on these random variables. The goal of inference in a probabilistic program is to characterize the distribution on its random variables, subject to the imposed conditions. When conditions define hard constraints (such as a=10, or a>5, for some variable a), execution of a probabilistic program can be interpreted as rejection sampling. Expectation values can, in principle, be calculated by repeatedly running the program and excluding executions that violate one or more conditions. In practice, the language design often implicitly or explicitly guarantees that conditions can be satisfied with a computable non-zero probability in any execution. Probabilistic programs in such languages can be seen as importance samplers; repeated execution yields samples from a prior, which are assigned an importance weight according to the probability that its conditions are satisfied. From a modeling point of view, a probabilistic program P defines a probability distribution. In a language that provides if-statements, recursion, higher-order functions, and primitive operations such as matrix inversion, this distribution can have an almost arbitrary structure. This means that from an inference point of view, a program P is a sequence of opaque deterministic operations that is interrupted by (1) sample statements, which require generation of a value for a random variable and (2) conditioning statements, which change the importance weight of the execution history."
@@ -36,104 +36,48 @@ Higher-order probabilistic programming languages open up possibility of doing in
 
 
 
-
+---
 ### overview
 
-  <http://plus.google.com/+BeauCronin/posts/KpeRdJKR6Z1>  
-  <http://intelligence.org/2014/09/04/daniel-roy/>  
-  <http://pl-enthusiast.net/2014/09/08/probabilistic-programming/>  
+  [introduction](http://plus.google.com/+BeauCronin/posts/KpeRdJKR6Z1) by Beau Cronin  
+  [introduction](http://intelligence.org/2014/09/04/daniel-roy/) by Daniel Roy  
+  [introduction](http://pl-enthusiast.net/2014/09/08/probabilistic-programming/) by Michael Hicks  
 
-  [Programs and Probability](http://americanscientist.org/libraries/documents/20158411291411312-2015-09Hayes.pdf)
+  [introduction](http://habrahabr.ru/post/242993/) by Alexey Popov (in russian)  
+  [introduction](http://youtube.com/watch?v=ZHERrzVDTiU) by Boris Yangel (in russian)  
 
-  <http://habrahabr.ru/post/242993/>  (in russian)  
-  <http://youtube.com/watch?v=ZHERrzVDTiU>  (in russian)  
+  ["Programs and Probability"](http://americanscientist.org/libraries/documents/20158411291411312-2015-09Hayes.pdf) by Brian Hayes  
+  ["The State of Probabilistic Programming"](http://moalquraishi.wordpress.com/2015/03/29/the-state-of-probabilistic-programming/) by Mohammed AlQuraishi  
+  ["Bayesian Deep Learning"](http://twiecki.github.io/blog/2016/06/01/bayesian-deep-learning/) by Thomas Wiecki  
+  ["Edward, and some motivations"](http://dustintran.com/blog/a-quick-update-edward-and-some-motivations) by Dustin Tran  
 
-  <http://moalquraishi.wordpress.com/2015/03/29/the-state-of-probabilistic-programming/>  
-  <http://twiecki.github.io/blog/2016/06/01/bayesian-deep-learning/>  
-  <http://dustintran.com/blog/a-quick-update-edward-and-some-motivations>  
-
-  overview by Mansinghka -
-	<https://youtube.com/watch?v=-8QMqSWU76Q>
-
-  tutorials by Wood -  
+  [overview](https://youtube.com/watch?v=-8QMqSWU76Q) by Vikash Mansinghka
+  tutorials by Frank Wood -  
 	<http://research.microsoft.com/apps/video/dl.aspx?id=259568>  
 	<http://youtube.com/watch?v=6Lqt07enBGs> + <http://youtube.com/watch?v=DY5yuBNEuQs>  
 
-  "Probabilistic Programming and Bayesian Methods for Hackers" by Davidson-Pilon -
-	<http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/>
+  ["Probabilistic Programming and Bayesian Methods for Hackers"](https://goo.gl/oav8Mp) by Davidson-Pilon  
+  ["The Design and Implementation of Probabilistic Programming Languages"](http://dippl.org) by Noah Goodman and Andreas Stuhlmuller  
 
-  "The Design and Implementation of Probabilistic Programming Languages" by Goodman and Stuhlmuller -
-	<http://dippl.org>
-
-  Neural Abstract Machines & Program Induction workshop @ NIPS 2016 - <https://uclmr.github.io/nampi/>
+  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi/) workshop @ NIPS 2016
 
 
 
+---
+### applications
 
-### applications in industry
+  [Facebook Prophet](https://facebookincubator.github.io/prophet/) (uses Stan)  
+  [Microsoft Office 365](https://cambridgenetwork.co.uk/news/email-clutter-machine-learning-probabilistic-programming/) (uses Infer.NET)  
+  [Microsoft Excel plugin](http://research.microsoft.com/en-us/projects/tabular/) (uses Infer.NET)  
 
-  Microsoft Office 365 (using Infer.NET) - <https://cambridgenetwork.co.uk/news/email-clutter-machine-learning-probabilistic-programming/>
+  [graphics in reverse](http://newsoffice.mit.edu/2015/better-probabilistic-programming-0413)  
+  [machine teaching](http://blogs.microsoft.com/next/2015/07/10/the-next-evolution-of-machine-learning-machine-teaching/)  
 
-  Microsoft Excel plugin (using Infer.NET) - <http://research.microsoft.com/en-us/projects/tabular/>
-
-  graphics in reverse - <http://newsoffice.mit.edu/2015/better-probabilistic-programming-0413>
-
-  <http://blogs.microsoft.com/next/2015/07/10/the-next-evolution-of-machine-learning-machine-teaching/>
-
-
-
-
-### applications in cognitive science
-
-  "Cognitive Foundations for Common-sense Knowledge Representation and Reasoning" by Tenenbaum -
-	<https://youtube.com/watch?v=oSAG57plHnI>
-
-  "Building Machines That Learn like Humans" by Tenenbaum -
-	<https://youtube.com/watch?v=quPN7Hpk014>
-
-  "The Origins of Common Sense: Modeling human intelligence with Probabilistic Programs and Program Induction" by Tenenbaum -
-	<http://research.microsoft.com/apps/video/default.aspx?id=229021&l=i>
-
-  "How to Grow a Mind: Statistics, Structure, and Abstraction" by Tenenbaum, Kemp, Griffiths, Goodman -  
-	<http://videolectures.net/aaai2012_tenenbaum_grow_mind/>  
-	<http://videolectures.net/nips2010_tenenbaum_hgm/>  
-	<http://web.mit.edu/cocosci/Papers/tkgg-science11-reprint.pdf>  
-
-
-  "Concepts in a Probabilistic Language of Thought" by Goodman, Tenenbaum, Gerstenberg -
-	<https://web.stanford.edu/~ngoodman/papers/ConceptsChapter-final.pdf>
-
->	"Knowledge organizes our understanding of the world, determining what we expect given what we have already seen. Our predictive representations have two key properties: they are productive, and they are graded. Productive generalization is possible because our knowledge decomposes into concepts - elements of knowledge that are combined and recombined to describe particular situations. Gradedness is the observable effect of accounting for uncertainty - our knowledge encodes degrees of belief that lead to graded probabilistic predictions. To put this a different way, concepts form a combinatorial system that enables description of many different situations; each such situation specifies a distribution over what we expect to see in the world, given what we have seen. We may think of this system as a probabilistic language of thought in which representations are built from language-like composition of concepts and the content of those representations is a probability distribution on world states."
-
->	"Probabilistic language of thought hypothesis (informal version): Concepts have a language-like compositionality and encode probabilistic knowledge. These features allow them to be extended productively to new situations and support flexible reasoning and learning by probabilistic inference."
-
-  "Probabilistic Programs: A New Language for AI" by Goodman -
-	<http://youtube.com/watch?v=fclvsoaUI-U>
-
->	"How can logical and probabilistic approaches to understanding intelligence be reconciled? I will argue that probabilistic programming is the best way to merge logic and probability, providing a new set of tools for thinking about representation and inference in systems with human-like intelligence. I will illustrate these ideas by introducing the probabilistic programming language Church (a stochastic LISP), describing two universal inference algorithms (i.e. algorithms that can perform probabilistic inference for any Church program), and giving a series of examples. These examples, drawn from cognitive science and AI, will include multi-agent reasoning and concept learning."
-
-
-  "Probabilistic Models of Cognition" by Goodman, Tenenbaum -
-	<https://probmods.org>
-
-  "Modeling Cognition with Probabilistic Programs: Representations and Algorithms" by Stuhlmueller (PhD thesis) -
-	<https://stuhlmueller.org/papers/stuhlmueller-phdthesis.pdf>
-
-  "Towards more human-like concept learning in machines: compositionality, causality, and learning-to-learn" by Lake (PhD thesis) -
-	<http://cims.nyu.edu/~brenden/LakePhDThesis.pdf>
-
-  "How Does the Brain Do Plausible Reasoning" by E.T. Jaynes -
-	<http://bayes.wustl.edu/etj/articles/brain.pdf>
-
-
-####   Sanders, Hangya, Kepecs - ["Signatures of a Statistical Computation in the Human Sense of Confidence"](https://goo.gl/OQ7pEk)
->	"Human confidence judgments are thought to originate from metacognitive processes that provide a subjective assessment about one’s beliefs. Alternatively, confidence is framed in mathematics as an objective statistical quantity: the probability that a chosen hypothesis is correct. Despite similar terminology, it remains unclear whether the subjective feeling of confidence is related to the objective, statistical computation of confidence. To address this, we collected confidence reports from humans performing perceptual and knowledge-based psychometric decision tasks. We observed two counterintuitive patterns relating confidence to choice and evidence: apparent overconfidence in choices based on uninformative evidence, and decreasing confidence with increasing evidence strength for erroneous choices. We show that these patterns lawfully arise from statistical confidence, and therefore occur even for perfectly calibrated confidence measures. Furthermore, statistical confidence quantitatively accounted for human confidence in our tasks without necessitating heuristic operations. Accordingly, we suggest that the human feeling of confidence originates from a mental computation of statistical confidence."
-
-  - <http://www.eurekalert.org/pub_releases/2016-05/cp-obu042816.php>
+  [applications in cognitive science](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-program)
 
 
 
-
+---
 ### higher-order probabilistic programming
 
 "One of the key characteristics of higher-order probabilistic programming languages equiped with eval is that program text both can be generated and evaluated. In higher-order languages (Lisp, Scheme, Church, Anglican and Venture) functions are first class objects - evaluating program text that defines a valid procedure returns a procedure that can be applied to arguments. The means that, among other things, program text can be programmatically generated by a program and then evaluated. In a probabilistic programming context this means that we can do inference about the program text that gave rise to an observed output or output relationship. In short, we can get computers to program themselves."
@@ -146,7 +90,7 @@ Higher-order probabilistic programming languages open up possibility of doing in
 
 
 
-
+---
 ### projects
 
   <http://probabilistic-programming.org>
@@ -163,11 +107,13 @@ Higher-order probabilistic programming languages open up possibility of doing in
 	<http://dustintran.com/blog/a-quick-update-edward-and-some-motivations/>  
 	<http://github.com/blei-lab/edward/wiki>  
 	<http://dustintran.com/talks/Tran_Edward.pdf>  
+	[sample models](http://edwardlib.org/iclr2017)  
 	["Deep Probabilistic Programming"](https://arxiv.org/abs/1701.03757)  
 
   * Stan  
 	<https://youtube.com/watch?v=6NXRCtWQNMg>  
 	<https://vimeo.com/132156595>  
+	[Facebook Prophet](https://facebookincubator.github.io/prophet/)  
 
   * PyMC3  
 	<http://pymc-devs.github.io/pymc3/>  
@@ -196,7 +142,7 @@ Higher-order probabilistic programming languages open up possibility of doing in
 
 
 
-
+---
 ### interesting quotes
 
   Andreas Stuhlmueller:
@@ -215,6 +161,7 @@ Higher-order probabilistic programming languages open up possibility of doing in
   > "The class of samplable distributions is, in a sense, the richest class you might hope to deal with. The question we asked was: is there an algorithm that, given a samplable distribution on two variables X and Y, represented by a program that samples values for both variables, can compute the conditional distribution of, say, Y given X=x, for almost all values for X? When X takes values in a finite, discrete set, e.g., when X is binary valued, there is a general algorithm, although it is inefficient. But when X is continuous, e.g., when it can take on every value in the unit interval [0,1], then problems can arise. In particular, there exists a distribution on a pair of numbers in [0,1] from which one can generate perfect samples, but for which it is impossible to compute conditional probabilities for one of the variables given the other. As one might expect, the proof reduces the halting problem to that of conditioning a specially crafted distribution. This pathological distribution rules out the possibility of a general algorithm for conditioning (equivalently, for probabilistic inference). The paper ends by giving some further conditions that, when present, allow one to devise general inference algorithms. Those familiar with computing conditional distributions for finite-dimensional statistical models will not be surprised that conditions necessary for Bayes’ theorem are one example."
 
 
+----
 
 
 [selected papers](https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca)
@@ -224,7 +171,7 @@ Higher-order probabilistic programming languages open up possibility of doing in
 
 
 
-
+---
 ### interesting papers
 
 
@@ -241,7 +188,7 @@ Higher-order probabilistic programming languages open up possibility of doing in
 
 
 
-
+---
 ### interesting papers - inference
 
 
@@ -272,7 +219,7 @@ Higher-order probabilistic programming languages open up possibility of doing in
 
 
 
-
+---
 ### interesting papers - applications
 
 

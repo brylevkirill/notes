@@ -1,4 +1,3 @@
-  Reinforcement Learning in most general case is learning to act through trial and error with no models, no labels, no demonstrations, or any human-provided supervision signal other than scalar rewards.
   Reinforcement Learning is learning to maximize expected sum of future rewards for sequence of actions made by agent in environment with stochastic state unknown to agent and dependent on its actions.
 
 
@@ -18,7 +17,7 @@
     - abstractions for states and actions
     - value-based methods
     - policy-based methods
-    - policy search
+    - behavioral cloning
     - inverse reinforcement learning
 
 
@@ -26,6 +25,8 @@
 
 
 
+
+  Reinforcement Learning in general case is learning to act through trial and error with no provided models, labels, demonstrations or supervision signals other than scalar rewards for agent's actions.
 
   "Reinforcement Learning is as hard as any problem in computer science, since any task with a computable description can be formulated in it."
 
@@ -75,7 +76,9 @@
 		http://research.microsoft.com/en-us/projects/mwt/
 		http://hunch.net/?p=4464948
 		http://thenewstack.io/reinforcement-learning-ready-real-world/
-		http://youtu.be/N5x48g2sp8M?t=52m (Schapire)
+
+		https://youtube.com/watch?v=7ic_d5TeIUk (Langford)
+		https://youtu.be/N5x48g2sp8M?t=52m (Schapire)
 
 		For MSN homepage 25% relative lift in click-through rate while no previous learning method had been more successful than humans curating the content manually.
 
@@ -107,15 +110,19 @@
 	https://gogameguru.com/alphago-defeats-lee-sedol-4-1/ + http://deeplearningskysthelimit.blogspot.ru/2016/05/part-10-review-of-game-5-alphago.html + https://youtube.com/watch?v=QxHdPdRcMhw
 
   - Poker
-	DeepStack
-		"DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker" - http://arxiv.org/abs/1701.01724
-		http://science.sciencemag.org/content/early/2017/03/01/science.aam6960
+	"DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker" - http://arxiv.org/abs/1701.01724
+	http://science.sciencemag.org/content/early/2017/03/01/science.aam6960
 
-		http://deepstack.ai
-		http://twitter.com/DeepStackAI
+	http://deepstack.ai
+	http://twitter.com/DeepStackAI
 
-		https://dropbox.com/s/fyztazdy4ydb6a8/Michael%20Bowling%20-%20DeepStack%20%28part%201%29.mp4 (Bowling)
-		https://dropbox.com/s/27bq6amfk75l6tc/Michael%20Bowling%20-%20DeepStack%20%28part%202%29.mp4 (Bowling)
+	https://youtube.com/watch?v=qndXrHcV1sM (Bowling)
+	http://thinkingpoker.net/2017/03/episode-208-michael-bowling-of-cprg/ (Bowling)
+
+	http://natemeyvis.com/blog/2017/3/30/my-heads-up-matches-against-deepstack
+	http://thinkingpoker.net/2017/03/battling-deepstack/
+
+	https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ (demo matches)
 
   - Chess
 	"Giraffe: Using Deep Reinforcement Learning to Play Chess" - http://arxiv.org/abs/1509.01549
@@ -149,7 +156,8 @@
 
   - OpenAI Universe
 	https://universe.openai.com
-	https://openai.com/blog/universe/
+	https://openai.com/blog/GTA-V-plus-Universe/
+	https://youtube.com/watch?v=BskhUBPRrqE (Sutskever)
 
   - OpenAI Mini World of Bits
 	http://alpha.openai.com/miniwob/index.html
@@ -160,6 +168,9 @@
 
 
 [overview]
+
+  definition by Sergey Levine - https://youtube.com/watch?v=kl_G95uKTHw&t=1h9m30s
+
 
   introduction by David Silver - https://youtube.com/watch?v=2pWv7GOvuf0
 
@@ -184,7 +195,7 @@
 	http://youtube.com/watch?v=qLaDWKd61Ig
 	http://youtube.com/watch?v=3hWn5vMnpiM
 
-  overview by Peter Abbeel
+  overview by Pieter Abbeel
 	http://youtube.com/watch?v=evq4p1zhS7Q
 	http://research.microsoft.com/apps/video/default.aspx?id=260045
 
@@ -192,6 +203,9 @@
   tutorial by Rich Sutton
 	https://youtube.com/watch?v=Fsh1qMTg1xI
 	https://gridworld.wordpress.com/2015/12/08/nips-2015-rl-tutorial/
+
+  tutorial by Joelle Pineau
+	http://videolectures.net/deeplearning2016_pineau_reinforcement_learning/
 
   tutorial by Emma Brunskill
 	https://youtube.com/watch?v=fIKkhoI1kF4 + https://youtube.com/watch?v=8hK0NnG_DhY
@@ -349,8 +363,10 @@
 	"Combining State and Temporal Abstractions" - https://youtube.com/watch?v=iLSUByYY6so (Konidaris)
 	"Towards Representations for Efficient Reinforcement Learning" - https://youtube.com/watch?v=Pk3E5zqhl9k (Brunskill)
 
-	introduction to options framework - http://videolectures.net/deeplearning2016_precup_advanced_lr/ (Precup)
-	"Advances in option construction: The option-critic architecture" - https://youtube.com/watch?v=8r_EoYnPjGk (Bacon)
+	introduction to options framework by Doina Precup -
+		https://youtube.com/watch?v=GntIVgNKkCI
+		http://videolectures.net/deeplearning2016_precup_advanced_lr/
+	"Advances in Option Construction: The Option-Critic Architecture" - https://youtube.com/watch?v=8r_EoYnPjGk (Bacon)
 
 
 
@@ -562,7 +578,9 @@
 	http://techtalks.tv/talks/benchmarking-deep-reinforcement-learning-for-continuous-control/62380/
 
 
-  * Cross-Entropy Method (no gradient estimation)
+
+  * Cross-Entropy Method (no estimation of policy gradient)
+
 	evolutionary algorithm with selection buth without recombination and mutation - works embarrassingly well on many tasks
 
   	"If your policy has a small number of parameters (say 20), and sometimes even if it has a moderate number (say 2000), you might be better off using the Cross-Entropy Method than any of the fancy methods. It works like this:
@@ -570,18 +588,24 @@
 	(2) For each parameter set, compute a noisy score by running your policy on the environment you care about.
 	(3) Take the top 20% percentile (say) of sampled parameter sets. Fit a Gaussian distribution to this set, then go to (1) and repeat using this as the new prior."
 
+
+	http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement (08:37, Abbeel)
 	https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Reinforcement-Learning-Through-Policy-Optimization (07:07, Abbeel)
 	https://youtu.be/aUrX-rP_ss4?t=27m20s (Schulman)
 
-
   	"The Cross Entropy method for Fast Policy Search" - http://aaai.org/Papers/ICML/2003/ICML03-068.pdf
+
 	https://papers.nips.cc/paper/5190-approximate-dynamic-programming-finally-performs-well-in-the-game-of-tetris.pdf
 
 
-  * Evolution Strategies
-	policy gradient gradient estimation using finite differences instead of loss derivative
+
+  * Evolution Strategies (derivative-free policy gradient)
+
+	policy gradient estimation using finite differences instead of loss derivative
 
 	"Evolution Strategies as a Scalable Alternative to Reinforcement Learning" by Salimans, Ho, Chen, Sutskever - https://arxiv.org/abs/1703.03864
+		overview by Ilya Sutskever - https://www.technologyreview.com/s/603916/a-new-direction-for-artificial-intelligence/
+
 		https://blog.openai.com/evolution-strategies/ :
 
 		"Our work demonstrates that ES achieves strong performance, dispelling the common belief that ES methods are impossible to apply to high dimensional problems."
@@ -597,12 +621,21 @@
 		Credit assignment over long time scales. By studying both ES and RL gradient estimators mathematically we can see that ES is an attractive choice especially when the number of time steps in an episode is big, where actions have longlasting effects, or if no good value function estimates are available."
 
 
+		http://inference.vc/evolutionary-strategies-embarrassingly-parallelizable-optimization/ (Huszar)
+		http://argmin.net/2017/04/03/evolution/ (Recht)
+
+
+	http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement (13:04, Abbeel)
+
+
 	"Natural Evolution Strategies" by Wierstra, Schaul, Glasmachers, Sun, Peters, Schmidhuber - http://jmlr.org/papers/volume15/wierstra14a/wierstra14a.pdf
 
 	(Juergen Schmidhuber) "Evolutionary computation is one of the most useful practical methods for direct search in policy space, especially when there is no teacher who knows which output actions the system should produce at which time. Especially in partially observable environments where memories of previous events are needed to disambiguate states, this often works much better than other reinforcement learning techniques based on dynamic programming. In case of teacher-given desired output actions or labels, gradient descent such as backpropagation (also through time) usually works much better, especially for NNs with many weights."
 
 
-  * REINFORCE / Likelihood Ratio Policy Gradient
+
+  * REINFORCE (likelihood ratio policy gradient)
+
   	https://theneural.wordpress.com/2011/09/13/the-useless-beauty-of-reinforce/ (Sutskever)
   	https://youtube.com/watch?v=oPGVsoBonLM + https://youtube.com/watch?v=rO7Dx8pSJQw + http://goo.gl/5wsgbJ (Schulman)
   	http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/ (Abbeel, 0:16:40)
@@ -647,7 +680,9 @@
   	 - https://github.com/rllab/rllab/blob/master/rllab/algos/vpg.py
 
 
+
   * Trust Region Policy Optimization
+
   	second order policy gradient algorithm that is highly effective on both continuous and discrete control problems
 
   	"As you iteratively improve your policy, it’s important to avoid parameter updates that change your policy too much, as enforced by constraining the KL divergence between the distributions predicted by the old and the new policy on a batch of data to be less than some constant δ. This δ (in the unit of nats) is better than a fixed step size, since the meaning of the step size changes depending on what the rewards and problem structure look like at different points in training. This is called Trust Region Policy Optimization (or, in a first-order variant, Proximal Policy Optimization) and it matters more as we do more experience replay. Instead of conjugate gradients the simplest instantiation of this idea could be implemented by doing a line search and checking the KL along the way."
@@ -673,7 +708,9 @@
   	 - https://github.com/kvfrans/parallel-trpo
 
 
+
   * Actor-Critic
+
   	critic provides loss function for actor
 
   	http://videolectures.net/rldm2015_silver_reinforcement_learning/ (Silver, 1:07:23)
@@ -729,7 +766,9 @@
   		 - https://github.com/danijar/mindpark/blob/master/mindpark/algorithm/a3c.py
 
 
-  * Pathwise Derivative Policy Gradient
+
+  * pathwise derivative policy gradient
+
   	http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/ (Abbeel, 01:02:04)
 
   	"Gradient Estimation Using Stochastic Computation Graphs" by Schulman, Heess, Weber, Abbeel - http://arxiv.org/abs/1506.05254
@@ -767,6 +806,7 @@
   		 - http://pemami4911.github.io/blog_posts/2016/08/21/ddpg-rl.html
   		 - https://github.com/rllab/rllab/blob/master/rllab/algos/ddpg.py
   		 - https://github.com/yandexdataschool/AgentNet/blob/master/agentnet/learning/dpg_n_step.py
+		 - https://github.com/MOCR/DDPG
   		 - https://github.com/iassael/torch-policy-gradient
 
   	Stochastic Value Gradient (SVG)
@@ -783,7 +823,9 @@
   		https://youtu.be/rO7Dx8pSJQw?t=50m (Schulman)
 
 
-  * Guided Policy Search
+
+  * Guided Policy Search (behavioral cloning)
+
 	"Use modification of importance sampling to get policy gradient, where samples are obtained via trajectory optimization."
 
   	"Trains a policy for accomplishing a given task by guiding the learning with multiple guiding distributions.
@@ -814,24 +856,52 @@
 
   planning (lookahead search for optimal actions) using transition model of environment p(r,s0|s,a)
 
-  * deep reinforcement learning
 
-	  challenges:
-	   - compounding errors
+  * Optimal Control and Trajectory Optimization
+
+	overview by Sergey Levine - https://youtube.com/watch?v=mZtlW_xtarI
+
+
+  * Monte Carlo Tree Search
+
+	introduction by David Silver - https://youtube.com/watch?v=ItMutbeOHtc&t=1h4m32s
+
+	introduction by Sergey Levine - https://youtube.com/watch?v=mZtlW_xtarI&t=45m12s
+
+	"A Survey of Monte Carlo Tree Search Methods" by Browne et al. - http://www.cameronius.com/cv/mcts-survey-master.pdf
+
+
+	"Mastering the Game of Go with Deep Neural Networks and Tree Search" by Silver et al. -
+		https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf
+
+	"Deep Learning for Real-Time Atari Game Play Using Offline Monte-Carlo Tree Search Planning" by Guo et al. -
+		https://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning
+
+	"A Monte-Carlo AIXI Approximation" by Veness et al. - https://www.jair.org/media/3125/live-3125-5397-jair.pdf
+
+
+  * Deep Reinforcement Learning
+
+	challenges:
+	- compounding errors
 		errors in the transition model compound over the trajectory
 		by the end of a long trajectory rewards can be totally wrong
 		no success yet in Atari
-	   - deep networks of value/policy can plan implicitly
+	- deep networks of value/policy can plan implicitly
 		each layer of network performs arbitrary computational step
 		n-layer network can “lookahead” n steps
 		are transition models required at all?
 
-	"Deep AutoRegressive Networks" by Gregor et al. - https://youtu.be/-yX1SYeDHbg?t=49m25s + https://youtu.be/P78QYjWh5sM?t=20m50s
+	"Learning Dynamical System Models from Data" by Sergey Levine - https://youtube.com/watch?v=qVsLk5CVy_c
+
 	"Deep Recurrent Q-Network" by Alexander Fritzler - https://youtube.com/watch?v=bE5DIJvZexc (in russian)
 	"Deep Reinforcement Learning with Memory" by Sergey Bartunov - http://93.180.23.59/videos/video/2420/in/channel/1/ (in russian)
 
 
-  * bayesian reinforcement learning
+	"Deep AutoRegressive Networks" by Gregor et al. - https://youtu.be/-yX1SYeDHbg?t=49m25s + https://youtu.be/P78QYjWh5sM?t=20m50s
+
+
+  * Bayesian Reinforcement Learning
 
 	BRL agent aims to maximise expected sum of future rewards obtained when interacting with unknown Markov Decision Process while using some prior knowledge.
 
@@ -927,10 +997,13 @@
   - harness power of combining policies
   - achieve explicit conditions using an optimization approach
 
+
   "Multiworld Testing Decision Service" (first general purpose reinforcement-based learning system) -
 	http://hunch.net/?p=4464948
 	http://research.microsoft.com/en-us/projects/mwt/
 	https://youtu.be/N5x48g2sp8M?t=52m (Schapire)
+
+  "Bayesian Multi-armed Bandits vs A/B Tests" - https://habrahabr.ru/company/ods/blog/325416/ (in russian)
 
 
   (John Langford) "The Atari results are very fun but obviously unimpressive on about 1/4 of the games. My hypothesis for why is that the solution does only local (epsilon-greedy style) exploration rather than global exploration so they can only learn policies addressing either very short credit assignment problems or with greedily accessible polices. Global exploration strategies are known to result in exponentially more efficient strategies in general for deterministic decision process [http://idm-lab.org/bib/abstracts/papers/aaai93.pdf] (1993), Markov Decision Processes [http://www.cis.upenn.edu/~mkearns/papers/KearnsSinghE3.pdf] (1998), and for MDPs without modeling [http://research.microsoft.com/pubs/178886/published.pdf] (2006). The reason these strategies are not used is because they are based on tabular learning rather than function fitting. That’s why I shifted to Contextual Bandit research after the 2006 paper. We’ve learned quite a bit there, enough to start tackling a Contextual Deterministic Decision Process [http://arxiv.org/abs/1602.02722] (2016), but that solution is still far from practical."
@@ -951,6 +1024,7 @@
   - OpenAI Universe
 	https://universe.openai.com
 	https://openai.com/blog/universe/
+	https://youtube.com/watch?v=BskhUBPRrqE (Sutskever)
   - OpenAI Gym
 	https://gym.openai.com
 	https://gym.openai.com/envs + https://gym.openai.com/envs#atari
@@ -968,7 +1042,7 @@
 	https://github.com/222464/PGE
   - Project Malmo (Minecraft)
 	https://microsoft.com/en-us/research/project/project-malmo/
-	https://youtube.com/watch?v=399qJUBRA0o (Katja Hofmann)
+	https://youtube.com/watch?v=399qJUBRA0o (Hofmann)
 
 
 
@@ -1019,7 +1093,7 @@ interesting papers (see below):
   - abstractions for states and actions
   - value-based methods
   - policy-based methods
-  - policy search
+  - behavioral cloning
   - inverse reinforcement learning
 
 
@@ -1054,10 +1128,11 @@ Moravcik, Schmid, Burch, Lisy, Morrill, Bard, Davis, Waugh, Johanson, Bowling - 
 	"During re-solving, DeepStack doesn’t need to reason about the entire remainder of the game because it substitutes computation beyond a certain depth with a fast approximate estimate, DeepStack’s "intuition" - a gut feeling of the value of holding any possible private cards in any possible poker situation. Finally, DeepStack’s intuition, much like human intuition, needs to be trained. We train it with deep learning using examples generated from random poker situations."
 	"Part of DeepStack's development is also a technique designed to find flaws in poker strategies. Local Best Response (LBR) is one of the cool new algorithms in Science paper. LBR looks directly at the strategy, like what a human could get from playing millions of hands to know its range. Older programs get beat by LBR for 4x more than folding every hand! DeepStack has no holes exposed by the LBR algorithm."
 	-- http://science.sciencemag.org/content/early/2017/03/01/science.aam6960
+	-- https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ (demo matches)
 	-- http://deepstack.ai
 	-- http://twitter.com/DeepStackAI
-	-- https://dropbox.com/s/fyztazdy4ydb6a8/Michael%20Bowling%20-%20DeepStack%20%28part%201%29.mp4 (Bowling)
-	-- https://dropbox.com/s/27bq6amfk75l6tc/Michael%20Bowling%20-%20DeepStack%20%28part%202%29.mp4 (Bowling)
+	-- https://youtube.com/watch?v=qndXrHcV1sM (Bowling)
+	-- https://github.com/lifrordi/DeepStack-Leduc
 
 Mnih, Kavukcuoglu, Silver, Graves, Antonoglou, Wierstra, Riedmiller - "Playing Atari with Deep Reinforcement Learning" [http://www.cs.toronto.edu/~vmnih/docs/dqn.pdf] (Atari videogames)
 	"We present the first deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning. The model is a convolutional neural network, trained with a variant of Q-learning, whose input is raw pixels and whose output is a value function estimating future rewards. We apply our method to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. We find that it outperforms all previous approaches on six of the games and surpasses a human expert on three of them."
@@ -1132,6 +1207,7 @@ Langford et al. - "A Multiworld Testing Decision Service" [http://arxiv.org/abs/
 	-- http://hunch.net/?p=4464948
 	-- http://research.microsoft.com/en-us/projects/mwt/
 	-- https://mwtds.azurewebsites.net
+	-- https://youtube.com/watch?v=7ic_d5TeIUk (Langford)
 	-- https://youtu.be/N5x48g2sp8M?t=52m (Schapire)
 	-- http://machinedlearnings.com/2017/01/reinforcement-learning-as-service.html (Mineiro)
 
@@ -1154,6 +1230,7 @@ Norouzi, Bengio, Chen, Jaitly, Schuster, Wu, Schuurmans - "Reward Augmented Maxi
 	-- http://youtube.com/watch?v=agA-rc71Uec (Samy Bengio)
 	-- http://drive.google.com/file/d/0B3Rdm_P3VbRDVUQ4SVBRYW82dU0 (Gauthier)
 	-- http://www.shortscience.org/paper?bibtexKey=journals/corr/1609.00150
+	-- http://www.shortscience.org/paper?bibtexKey=conf%2Fnips%2FNorouziBCJSWS16
 
 Xia, He, Qin, Wang, Yu, Liu, Ma - "Dual Learning for Machine Translation" [https://arxiv.org/abs/1611.00179]
 	"While neural machine translation (NMT) is making good progress in the past two years, tens of millions of bilingual sentence pairs are needed for its training. However, human labeling is very costly. To tackle this training data bottleneck, we develop a dual-learning mechanism, which can enable an NMT system to automatically learn from unlabeled data through a dual-learning game. This mechanism is inspired by the following observation: any machine translation task has a dual task, e.g., English-to-French translation (primal) versus French-to-English translation (dual); the primal and dual tasks can form a closed loop, and generate informative feedback signals to train the translation models, even if without the involvement of a human labeler. In the dual-learning mechanism, we use one agent to represent the model for the primal task and the other agent to represent the model for the dual task, then ask them to teach each other through a reinforcement learning process. Based on the feedback signals generated during this process (e.g., the languagemodel likelihood of the output of a model, and the reconstruction error of the original sentence after the primal and dual translations), we can iteratively update the two models until convergence (e.g., using the policy gradient methods). We call the corresponding approach to neural machine translation dual-NMT. Experiments show that dual-NMT works very well on English↔French translation; especially, by learning from monolingual data (with 10% bilingual data for warm start), it achieves a comparable accuracy to NMT trained from the full bilingual data for the French-to-English translation task."
@@ -1189,6 +1266,7 @@ Houthooft, Chen, Duan, Schulman, Turck, Abbeel - "VIME: Variational Information 
 	-- https://goo.gl/fyxLvI (demo)
 	-- https://youtu.be/WRFqzYWHsZA?t=18m38s (Abbeel)
 	-- https://youtube.com/watch?v=sRIjxxjVrnY (Panin)
+	-- http://pemami4911.github.io/paper-summaries/2016/09/04/VIME.html
 	-- https://github.com/openai/vime
 
 Bellemare, Srinivasan, Ostrovski, Schaul, Saxton, Munos - "Unifying Count-Based Exploration and Intrinsic Motivation" [http://arxiv.org/abs/1606.01868]
@@ -1199,6 +1277,8 @@ Bellemare, Srinivasan, Ostrovski, Schaul, Saxton, Munos - "Unifying Count-Based 
 	--
 	"Authors derived pseudo-counts from Context Tree Switching density models over states and used those to form intrinsic rewards."
 	"Although I'm a bit bothered by the assumption of the density model being "learning-positive", which seems central to their theoretical derivation of pseudo-counts: after you observe a state, your subjective probability of observing it again immediately should generally decrease unless you believe that the state is a fixed point attractor with high probability. I can see that in practice the assumption works well in their experimental setting since they use pixel-level factored models and, by the nature of the ATARI games they test on, most pixels don't change value from frame to frame, but in a more general setting, e.g. a side-scroller game or a 3D first-person game this assumption would not hold."
+	--
+	"A major distinction with VIME is that empowerment doesn’t necessarily favor exploration - as stated by Mohamed and Rezende, agents are only ‘curious’ about parts of its environment that can be reached within its internal planning horizon."
 	-- https://youtube.com/watch?v=0yI2wJ6F8r0 (demo)
 	-- https://youtube.com/watch?v=qSfd27AgcEk (Bellemare)
 	-- https://youtu.be/qduxl-vKz1E?t=1h16m30s (Seleznev, in russian)
@@ -1276,6 +1356,9 @@ Osband, Blundell, Pritzel, van Roy - "Deep Exploration via Bootstrapped DQN" [ht
 	"Our algorithm, bootstrapped DQN, modifies DQN to produce distribution over Q-values via the bootstrap. At the start of each episode, bootstrapped DQN samples a single Q-value function from its approximate posterior. The agent then follows the policy which is optimal for that sample for the duration of the episode. This is a natural extension of the Thompson sampling heuristic to RL that allows for temporally extended (or deep) exploration. Bootstrapped DQN exhibits deep exploration unlike the naive application of Thompson sampling to RL which resample every timestep."
 	"By contrast, Epsilon-greedy strategies are almost indistinguishable for small values of Epsilon and totally ineffectual for larger values. Our heads explore a diverse range of policies, but still manage to each perform well individually."
 	"Unlike vanilla DQN, bootstrapped DQN can know what it doesn’t know."
+	"Uncertainty estimates allow an agent to direct its exploration at potentially informative states and actions. In bandits, this choice of directed exploration rather than dithering generally categorizes efficient algorithms. The story in RL is not as simple, directed exploration is not enough to guarantee efficiency; the exploration must also be deep. Deep exploration means exploration which is directed over multiple time steps; it can also be called “planning to learn” or “far-sighted” exploration. Unlike bandit problems, which balance actions which are immediately rewarding or immediately informative, RL settings require planning over several time steps. For exploitation, this means that an efficient agent must consider the future rewards over several time steps and not simply the myopic rewards. In exactly the same way, efficient exploration may require taking actions which are neither immediately rewarding, nor immediately informative."
+	"Unlike bandit algorithms, an RL agent can plan to exploit future rewards. Only an RL agent with deep exploration can plan to learn."
+	"Bootstrapped DQN explores in a manner similar to the provably-efficient algorithm PSRL but it uses a bootstrapped neural network to approximate a posterior sample for the value. Unlike PSRL, bootstrapped DQN directly samples a value function and so does not require further planning steps. This algorithm is similar to RLSVI, which is also provably-efficient, but with a neural network instead of linear value function and bootstrap instead of Gaussian sampling. The analysis for the linear setting suggests that this nonlinear approach will work well so long as the distribution {Q1, .., QK} remains stochastically optimistic, or at least as spread out as the “correct” posterior."
 	-- http://youtube.com/watch?v=Zm2KoT82O_M + http://youtube.com/watch?v=0jvEcC5JvGY (demo)
 	-- https://youtu.be/mrgJ53TIcQc?t=32m24s (Pavlov, in russian)
 	-- https://github.com/Kaixhin/Atari
@@ -1339,6 +1422,7 @@ Tamar, Wu, Thomas, Levine, Abbeel - "Value Iteration Networks" [http://arxiv.org
 	-- https://blog.acolyer.org/2017/02/09/value-iteration-networks/
 	-- https://github.com/avivt/VIN
 	-- https://github.com/TheAbhiKumar/tensorflow-value-iteration-networks
+	-- https://github.com/zuoxingdong/VIN_PyTorch_Visdom
 
 Florensa, Duan, Abbeel - "Stochastic Neural Networks for Hierarchical Reinforcement Learning" [https://openreview.net/pdf?id=B1oK8aoxe]
 	"Deep reinforcement learning has achieved many impressive results in recent years. However, many of the deep RL algorithms still employ naive exploration strategies, and they have been shown to perform poorly in tasks with sparse rewards, and/or with long horizons. To tackle these challenges, there are two common approaches. The first approach is to design a hierarchy over the actions, which would require domain-specific knowledge and careful hand-engineering. A different line of work utilizes domain-agnostic intrinsic rewards to guide exploration, which has been shown to be effective in tasks with sparse rewards. However, it is unclear how the knowledge of solving a task can be utilized for other tasks, leading to a high sample complexity overall for the entire collection of tasks. In this paper, we propose a general framework for learning useful skills in a pre-training environment, which can then be utilized in downstream tasks by training a high-level policy over these skills. To learn these skills, we use stochastic neural networks (SNNs) combined with a proxy reward, the design of which requires very minimal domain knowledge about the downstream tasks. Our experiments show that this combination is effective in learning a wide span of interpretable skills in a sample-efficient way, and, when used on downstream tasks, can significantly boost the learning performance uniformly across all these tasks."
@@ -1470,6 +1554,7 @@ Guo, Singh, Lee, Lewis, Wang - "Deep Learning for Real-Time Atari Game Play Usin
 	"DAGGER algorithm for data collection"
 	-- https://youtube.com/watch?v=B3b6NLUxN3U (Singh)
 	-- https://youtube.com/watch?v=igm38BakyAg (Lee)
+	-- https://youtube.com/watch?v=mZtlW_xtarI&t=59m25s (Levine)
 	-- https://youtu.be/ywzZJ4L32xc?t=6m39s (Pavlov)
 
 Oh, Guo, Lee, Lewis, Singh - "Action-Conditional Video Prediction using Deep Networks in Atari Games" [http://arxiv.org/abs/1507.08750]
@@ -1498,6 +1583,45 @@ Duan, Chen, Houthooft, Schulman, Abbeel - "Benchmarking Deep Reinforcement Learn
 	"This paper benchmarks performance over a wide range of tasks of Reinforce, (Truncated) Natural Policy Gradient, RWR, REPS, TRPO, CEM, CMA-ES, DDPG."
 	-- http://techtalks.tv/talks/benchmarking-deep-reinforcement-learning-for-continuous-control/62380/
 	-- https://github.com/rllab/rllab
+
+Salimans, Ho, Chen, Sutskever - "Evolution Strategies as a Scalable Alternative to Reinforcement Learning" [https://arxiv.org/abs/1703.03864]
+	"We explore the use of Evolution Strategies, a class of black box optimization algorithms, as an alternative to popular RL techniques such as Q-learning and Policy Gradients. Experiments on MuJoCo and Atari show that ES is a viable solution strategy that scales extremely well with the number of CPUs available: By using hundreds to thousands of parallel workers, ES can solve 3D humanoid walking in 10 minutes and obtain competitive results on most Atari games after one hour of training time. In addition, we highlight several advantages of ES as a black box optimization technique: it is invariant to action frequency and delayed rewards, tolerant of extremely long horizons, and does not need temporal discounting or value function approximation."
+	"In future work we plan to apply evolution strategies to those problems for which reinforcement learning is less well-suited: problems with long time horizons and complicated reward structure. We are particularly interested in meta-learning, or learning-to-learn. A proof of concept for meta-learning in an RL setting was given by Duan et al. (2016b): Using ES instead of RL we hope to be able to extend these results. Another application which we plan to examine is to combine ES with fast low precision neural network implementations to fully make use of its gradient-free nature."
+	"Large source of difficulty in RL stems from the lack of informative gradients of policy performance: such gradients may not exist due to non-smoothness of the environment or policy, or may only be available as high-variance estimates because the environment usually can only be accessed via sampling."
+	"In addition to being easy to parallelize, and to having an advantage in cases with long action sequences and delayed rewards, black box optimization algorithms like ES have other advantages over reinforcement learning techniques that calculate gradients.
+	The communication overhead of implementing ES in a distributed setting is lower than for reinforcement learning methods such as policy gradients and Q-learning, as the only information that needs to be communicated across processes are the scalar return and the random seed that was used to generate the perturbations ε, rather than a full gradient. Also, it can deal with maximally sparse and delayed rewards; there is no need for the assumption that time information is part of the reward.
+	By not requiring backpropagation, black box optimizers reduce the amount of computation per episode by about two thirds, and memory by potentially much more. In addition, not explicitly calculating an analytical gradient protects against problems with exploding gradients that are common when working with recurrent neural networks. By smoothing the cost function in parameter space, we reduce the pathological curvature that causes these problems: bounded cost functions that are smooth enough can’t have exploding gradients. At the extreme, ES allows us to incorporate non-differentiable elements into our architecture, such as modules that use hard attention.
+	Black box optimization methods are uniquely suited to capitalize on advances in low precision hardware for deep learning. Low precision arithmetic, such as in binary neural networks, can be performed much cheaper than at high precision. When optimizing such low precision architectures, biased low precision gradient estimates can be a problem when using gradient-based methods. Similarly, specialized hardware for neural network inference, such as TPUs, can be used directly when performing optimization using ES, while their limited memory usually makes backpropagation impossible.
+	By perturbing in parameter space instead of action space, black box optimizers are naturally invariant to the frequency at which our agent acts in the environment. For reinforcement learning, on the other hand, it is well known that frameskip is a crucial parameter to get right for the optimization to succeed. While this is usually a solvable problem for games that only require short-term planning and action, it is a problem for learning longer term strategic behavior. For these problems, RL needs hierarchy to succeed, which is not as necessary when using black box optimization."
+	"The resemblance of ES to finite differences suggests the method will scale poorly with the dimension of the parameters θ. Theoretical analysis indeed shows that for general non-smooth optimization problems, the required number of optimization steps scales linearly with the dimension (Nesterov & Spokoiny, 2011). However, it is important to note that this does not mean that larger neural networks will perform worse than smaller networks when optimized using ES: what matters is the difficulty, or intrinsic dimension, of the optimization problem. To see that the dimensionality of our model can be completely separate from the effective dimension of the optimization problem, consider a regression problem where we approximate a univariate variable y with a linear model yˆ = x · w: if we double the number of features and parameters in this model by concatenating x with itself (i.e. using features x0 = (x, x)), the problem does not become more difficult. In fact, the ES algorithm will do exactly the same thing when applied to this higher dimensional problem, as long as we divide the standard deviation of the noise by two, as well as the learning rate. In practice, we observe slightly better results when using larger networks with ES. We hypothesize that this is due to the same effect that makes standard gradient-based optimization of large neural networks easier than for small ones: large networks have fewer local minima."
+	--
+	"Learning bigger model is faster in case of ES while it is slower in case of policy gradient."
+	"ES is able to focus on intrinsic dimensionality of the problem by ignoring irrelevant dimensions of problem."
+	"Every trick that helps backpropagation, also helps evolution strategies: scale of random initialization, batch normalization, Residual Networks."
+	--
+	"Solving 3D Humanoid with ES on one 18-core machine takes about 11 hours, which is on par with RL. However, when distributed across 80 machines and 1,440 CPU cores, ES can solve 3D Humanoid in just 10 min- utes, reducing experiment turnaround time by two orders of magnitude. Figure 1 shows that, for this task, ES is able to achieve linear speedup in the number of CPU cores."
+	"All games were trained for 1 billion frames, which requires about the same amount of neural network computation as the published 1-day results for A3C which uses 320 million frames. The difference is due to the fact that ES does not perform backpropagation and does not use a value function. By parallelizing the evaluation of perturbed parameters across 720 CPUs on Amazon EC2, we can bring down the time required for the training process to about one hour per game. After training, we compared final performance against the published A3C results and found that ES performed better in 23 games tested, while it performed worse in 28."
+	--
+	"ES rivals the performance of standard RL techniques on moder benchmarks, while overcoming many of RL’s inconveniences. ES is simpler to implement (there is no need for backpropagation), it is easier to scale in a distributed setting, it does not suffer in settings with sparse rewards, and has fewer hyperparameters. This outcome is surprising because ES resembles simple hill-climbing in a high-dimensional space based only on finite differences along a few random directions at each step."
+	--
+	"Mathematically, you’ll notice that this is also equivalent to estimating the gradient of the expected reward in the parameter space using finite differences, except we only do it along 100 random directions. Yet another way to see it is that we’re still doing RL (Policy Gradients, or REINFORCE specifically), where the agent’s actions are to emit entire parameter vectors using a gaussian policy."
+	"Notice that the objective is identical to the one that RL optimizes: the expected reward. However, RL injects noise in the action space and uses backpropagation to compute the parameter updates, while ES injects noise directly in the parameter space. Another way to describe this is that RL is a “guess and check” on actions, while ES is a “guess and check” on parameters. Since we’re injecting noise in the parameters, it is possible to use deterministic policies (and we do, in our experiments). It is also possible to add noise in both actions and parameters to potentially combine the two approaches."
+	--
+	"Data efficiency comparison. ES is less efficient than TRPO, but no worse than about a factor of 10."
+	"Wall clock comparison. On Atari, ES trained on 720 cores in 1 hour achieves comparable performance to A3C trained on 32 cores in 1 day. We were able to solve one of the hardest MuJoCo tasks (a 3D humanoid) using 1,440 CPUs across 80 machines in only 10 minutes. As a comparison, in a typical setting 32 A3C workers on one machine would solve this task in about 10 hours. We found that naively scaling A3C in a standard cloud CPU setting is challenging due to high communication bandwidth requirements."
+	"It is also important to note that supervised learning problems (e.g. image classification, speech recognition, or most other tasks in the industry), where one can compute the exact gradient of the loss function with backpropagation, are not directly impacted by these findings. For example, in our preliminary experiments we found that using ES to estimate the gradient on the MNIST digit recognition task can be as much as 1,000 times slower than using backpropagation. It is only in RL settings, where one has to estimate the gradient of the expected reward by sampling, where ES becomes competitive."
+	--
+	"This gradient estimator may be slightly biased as well as high variance. The second order Taylor approximation is the part where bias may be introduced, if the real objective function has non-negligible (i.e. weird) third order gradients. The size of the bias will be in the order of σ² so as long as σ is small, the bias is probably negligible from a practical perspective. Therefore you can kind of say ES provides an approximately unbiased gradient estimate. So this is basically SGD - as SGD only requires an unbiased estimate of gradients. The unbiased estimate typically comes from minibatches, but no-one said it cannot come from a different Monte Carlo estimate. In this respect, the only difference between backprop-SGD and ES is the source of randomness in the gradient estimator. Consequently, Adam or RMS-prop or Nesterov might still make perfect sense on top of these gradients, for example."
+	-- https://blog.openai.com/evolution-strategies/
+	-- https://www.technologyreview.com/s/603916/a-new-direction-for-artificial-intelligence/ (Sutskever)
+	-- http://inference.vc/evolutionary-strategies-embarrassingly-parallelizable-optimization/ (Huszar)
+	-- http://argmin.net/2017/04/03/evolution/ (Recht)
+	-- "Random Gradient-Free Minimization of Convex Functions" by Nesterov - https://mipt.ru/dcam/students/elective/a_5gc1te/RandomGradFree.PDF
+	-- "Natural Evolution Strategies" - http://jmlr.org/papers/volume15/wierstra14a/wierstra14a.pdf
+	-- https://github.com/openai/evolution-strategies-starter
+	-- https://github.com/mdibaiee/flappy-es (demo)
+	-- https://gist.github.com/kashif/5748e199a3bec164a867c9b654e5ffe5
+	-- https://github.com/atgambardella/pytorch-es
 
 Mnih, Badia, Mirza, Graves, Lillicrap, Harley, Silver, Kavukcuoglu - "Asynchronous Methods for Deep Reinforcement Learning" [https://arxiv.org/abs/1602.01783]
 	"We propose a conceptually simple and lightweight framework for deep reinforcement learning that uses asynchronous gradient descent for optimization of deep neural network controllers. We present asynchronous variants of four standard reinforcement learning algorithms and show that parallel actor-learners have a stabilizing effect on training allowing all four methods to successfully train neural network controllers. The best performing method, an asynchronous variant of actor-critic, surpasses the current state-of-the-art on the Atari domain while training for half the time on a single multi-core CPU instead of a GPU. Furthermore, we show that asynchronous actor-critic succeeds on a wide variety of continuous motor control problems as well as on a new task of navigating random 3D mazes using a visual input."
@@ -1576,8 +1700,9 @@ Lillicrap, Hunt, Pritzel, Heess, Erez, Tassa, Silver, Wierstra - "Continuous Con
 	-- https://youtu.be/rO7Dx8pSJQw?t=50m (Schulman)
 	-- http://pemami4911.github.io/blog_posts/2016/08/21/ddpg-rl.html
 	-- https://github.com/rllab/rllab/blob/master/rllab/algos/ddpg.py
-	-- https://github.com/iassael/torch-policy-gradient
 	-- https://github.com/yandexdataschool/AgentNet/blob/master/agentnet/learning/dpg_n_step.py
+	-- https://github.com/MOCR/DDPG
+	-- https://github.com/iassael/torch-policy-gradient
 
 Heess, Wayne, Silver, Lillicrap, Tassa, Erez - "Learning Continuous Control Policies by Stochastic Value Gradients" [http://arxiv.org/abs/1510.09142]
 	"We present a unified framework for learning continuous control policies using backpropagation. It supports stochastic control by treating stochasticity in the Bellman equation as a deterministic function of exogenous noise. The product is a spectrum of general policy gradient algorithms that range from model-free methods with value functions to model-based methods without value functions. We use learned models but only require observations from the environment instead of observations from model-predicted trajectories, minimizing the impact of compounded model errors. We apply these algorithms first to a toy stochastic control problem and then to several physics-based control problems in simulation. One of these variants, SVG(1), shows the effectiveness of learning models, value functions, and policies simultaneously in continuous domains."
@@ -1604,33 +1729,12 @@ Weber, Heess, Eslami, Schulman, Wingate, Silver - "Reinforced Variational Infere
 
 
 
-[interesting papers - policy search]
+[interesting papers - behavioral cloning]
 
-Salimans, Ho, Chen, Sutskever - "Evolution Strategies as a Scalable Alternative to Reinforcement Learning" [https://arxiv.org/abs/1703.03864]
-	"We explore the use of Evolution Strategies, a class of black box optimization algorithms, as an alternative to popular RL techniques such as Q-learning and Policy Gradients. Experiments on MuJoCo and Atari show that ES is a viable solution strategy that scales extremely well with the number of CPUs available: By using hundreds to thousands of parallel workers, ES can solve 3D humanoid walking in 10 minutes and obtain competitive results on most Atari games after one hour of training time. In addition, we highlight several advantages of ES as a black box optimization technique: it is invariant to action frequency and delayed rewards, tolerant of extremely long horizons, and does not need temporal discounting or value function approximation."
-	"In future work we plan to apply evolution strategies to those problems for which reinforcement learning is less well-suited: problems with long time horizons and complicated reward structure. We are particularly interested in meta-learning, or learning-to-learn. A proof of concept for meta-learning in an RL setting was given by Duan et al. (2016b): Using ES instead of RL we hope to be able to extend these results. Another application which we plan to examine is to combine ES with fast low precision neural network implementations to fully make use of its gradient-free nature."
-	"Large source of difficulty in RL stems from the lack of informative gradients of policy performance: such gradients may not exist due to non-smoothness of the environment or policy, or may only be available as high-variance estimates because the environment usually can only be accessed via sampling."
-	"In addition to being easy to parallelize, and to having an advantage in cases with long action sequences and delayed rewards, black box optimization algorithms like ES have other advantages over reinforcement learning techniques that calculate gradients.
-	The communication overhead of implementing ES in a distributed setting is lower than for reinforcement learning methods such as policy gradients and Q-learning, as the only information that needs to be communicated across processes are the scalar return and the random seed that was used to generate the perturbations ε, rather than a full gradient. Also, it can deal with maximally sparse and delayed rewards; there is no need for the assumption that time information is part of the reward.
-	By not requiring backpropagation, black box optimizers reduce the amount of computation per episode by about two thirds, and memory by potentially much more. In addition, not explicitly calculating an analytical gradient protects against problems with exploding gradients that are common when working with recurrent neural networks. By smoothing the cost function in parameter space, we reduce the pathological curvature that causes these problems: bounded cost functions that are smooth enough can’t have exploding gradients. At the extreme, ES allows us to incorporate non-differentiable elements into our architecture, such as modules that use hard attention.
-	Black box optimization methods are uniquely suited to capitalize on advances in low precision hardware for deep learning. Low precision arithmetic, such as in binary neural networks, can be performed much cheaper than at high precision. When optimizing such low precision architectures, biased low precision gradient estimates can be a problem when using gradient-based methods. Similarly, specialized hardware for neural network inference, such as TPUs, can be used directly when performing optimization using ES, while their limited memory usually makes backpropagation impossible.
-	By perturbing in parameter space instead of action space, black box optimizers are naturally invariant to the frequency at which our agent acts in the environment. For reinforcement learning, on the other hand, it is well known that frameskip is a crucial parameter to get right for the optimization to succeed. While this is usually a solvable problem for games that only require short-term planning and action, it is a problem for learning longer term strategic behavior. For these problems, RL needs hierarchy to succeed, which is not as necessary when using black box optimization."
-	"Solving 3D Humanoid with ES on one 18-core machine takes about 11 hours, which is on par with RL. However, when distributed across 80 machines and 1,440 CPU cores, ES can solve 3D Humanoid in just 10 min- utes, reducing experiment turnaround time by two orders of magnitude. Figure 1 shows that, for this task, ES is able to achieve linear speedup in the number of CPU cores."
-	"All games were trained for 1 billion frames, which requires about the same amount of neural network computation as the published 1-day results for A3C which uses 320 million frames. The difference is due to the fact that ES does not perform backpropagation and does not use a value function. By parallelizing the evaluation of perturbed parameters across 720 CPUs on Amazon EC2, we can bring down the time required for the training process to about one hour per game. After training, we compared final performance against the published A3C results and found that ES performed better in 23 games tested, while it performed worse in 28."
-	-- https://blog.openai.com/evolution-strategies/ :
-	"ES rivals the performance of standard RL techniques on moder benchmarks, while overcoming many of RL’s inconveniences. ES is simpler to implement (there is no need for backpropagation), it is easier to scale in a distributed setting, it does not suffer in settings with sparse rewards, and has fewer hyperparameters. This outcome is surprising because ES resembles simple hill-climbing in a high-dimensional space based only on finite differences along a few random directions at each step."
-	--
-	"Mathematically, you’ll notice that this is also equivalent to estimating the gradient of the expected reward in the parameter space using finite differences, except we only do it along 100 random directions. Yet another way to see it is that we’re still doing RL (Policy Gradients, or REINFORCE specifically), where the agent’s actions are to emit entire parameter vectors using a gaussian policy."
-	"Notice that the objective is identical to the one that RL optimizes: the expected reward. However, RL injects noise in the action space and uses backpropagation to compute the parameter updates, while ES injects noise directly in the parameter space. Another way to describe this is that RL is a “guess and check” on actions, while ES is a “guess and check” on parameters. Since we’re injecting noise in the parameters, it is possible to use deterministic policies (and we do, in our experiments). It is also possible to add noise in both actions and parameters to potentially combine the two approaches."
-	--
-	"Data efficiency comparison. ES is less efficient than TRPO, but no worse than about a factor of 10."
-	"Wall clock comparison. On Atari, ES trained on 720 cores in 1 hour achieves comparable performance to A3C trained on 32 cores in 1 day. We were able to solve one of the hardest MuJoCo tasks (a 3D humanoid) using 1,440 CPUs across 80 machines in only 10 minutes. As a comparison, in a typical setting 32 A3C workers on one machine would solve this task in about 10 hours. We found that naively scaling A3C in a standard cloud CPU setting is challenging due to high communication bandwidth requirements."
-	"It is also important to note that supervised learning problems (e.g. image classification, speech recognition, or most other tasks in the industry), where one can compute the exact gradient of the loss function with backpropagation, are not directly impacted by these findings. For example, in our preliminary experiments we found that using ES to estimate the gradient on the MNIST digit recognition task can be as much as 1,000 times slower than using backpropagation. It is only in RL settings, where one has to estimate the gradient of the expected reward by sampling, where ES becomes competitive."
-	-- https://blog.openai.com/content/images/2017/03/out-1.gif (demo)
-	-- https://github.com/openai/evolution-strategies-starter
-	-- "Natural Evolution Strategies" - http://jmlr.org/papers/volume15/wierstra14a/wierstra14a.pdf
-	-- https://gist.github.com/kashif/5748e199a3bec164a867c9b654e5ffe5
-	-- https://github.com/atgambardella/pytorch-es
+Ross, Gordon, Bagnell - "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning" [https://arxiv.org/abs/1011.0686]
+	"Sequential prediction problems such as imitation learning, where future observations depend on previous predictions (actions), violate the common i.i.d. assumptions made in statistical learning. This leads to poor performance in theory and often in practice. Some recent approaches (Daumé III et al., 2009; Ross and Bagnell, 2010) provide stronger guarantees in this setting, but remain somewhat unsatisfactory as they train either non-stationary or stochastic policies and require a large number of iterations. In this paper, we propose a new iterative algorithm, which trains a stationary deterministic policy, that can be seen as a no regret algorithm in an online learning setting. We show that any such no regret algorithm, combined with additional reduction assumptions, must find a policy with good performance under the distribution of observations it induces in such sequential settings. We demonstrate that this new approach outperforms previous approaches on two challenging imitation learning problems and a benchmark sequence labeling problem."
+	"We show that by batching over iterations of interaction with a system, no-regret methods, including the presented DAGGER approach can provide a learning reduction with strong performance guarantees in both imitation learning and structured prediction. In future work, we will consider more sophisticated strategies than simple greedy forward decoding for structured prediction, as well as using base classifiers that rely on Inverse Optimal Control (Abbeel and Ng, 2004; Ratliff et al., 2006) techniques to learn a cost function for a planner to aid prediction in imitation learning. Further we believe techniques similar to those presented, by leveraging a cost-to-go estimate, may provide an understanding of the success of online methods for reinforcement learning and suggest a similar data-aggregation method that can guarantee performance in such settings."
+	-- https://youtube.com/watch?v=kl_G95uKTHw&t=1h5m38s (Levine)
 
 Levine, Koltun - "Guided Policy Search" [http://vladlen.info/papers/guided-policy-search.pdf]
 	"Direct policy search can effectively scale to high-dimensional systems, but complex policies with hundreds of parameters often present a challenge for such methods, requiring numerous samples and often falling into poor local optima. We present a guided policy search algorithm that uses trajectory optimization to direct policy learning and avoid poor local optima. We show how differential dynamic programming can be used to generate suitable guiding samples, and describe a regularized importance sampled policy optimization that incorporates these samples into the policy search. We evaluate the method by learning neural network controllers for planar swimming, hopping, and walking, as well as simulated 3D humanoid running."
@@ -1641,8 +1745,16 @@ Levine, Koltun - "Guided Policy Search" [http://vladlen.info/papers/guided-polic
 	"Policy gradient methods often require on-policy samples at each gradient step, do not admit off-policy samples, and cannot use line searches or higher order optimization methods such as LBFGS, which makes them difficult to use with complex policy classes. Our approach follows prior methods that use importance sampling to address these challenges. While these methods recycle samples from previous policies, we also introduce guiding samples, which dramatically speed up learning and help avoid poor local optima. We also regularize the importance sampling estimator, which prevents the optimization from assigning low probabilities to all samples. The regularizer controls how far the policy deviates from the samples, serving a similar function to the natural gradient, which bounds the information loss at each iteration. Unlike Tang and Abbeel’s ESS constraint, our regularizer does not penalize reliance on a few samples, but does avoid policies that assign a low probability to all samples. Our evaluation shows that the regularizer can be crucial for learning effective policies."
 	"We presented a guided policy search algorithm that can learn complex policies with hundreds of parameters by incorporating guiding samples into the policy search. These samples are drawn from a distribution built around a DDP solution, which can be initialized from demonstrations. We evaluated our method using general-purpose neural networks on a range of challenging locomotion tasks, and showed that the learned policies generalize to new environments. While our policy search is model-free, it is guided by a model-based DDP algorithm. A promising avenue for future work is to build the guiding distributions with model-free methods that either build trajectory following policies or perform stochastic trajectory optimization. Our rough terrain results suggest that GPS can generalize by learning basic locomotion principles such as balance. Further investigation of generalization is an exciting avenue for future work. Generalization could be improved by training on multiple environments, or by using larger neural networks with multiple layers or recurrent connections. It would be interesting to see whether such extensions could learn more general and portable concepts, such as obstacle avoidance, perturbation recoveries, or even higher-level navigation skills."
 	--
+	"DAgger vs GPS:
+	  - DAgger does not require an adaptive expert
+	    * Any expert will do, so long as states from learned policy can be labeled
+	    * Assumes it is possible to match expert's behavior up to bounded loss (not always possible, e.g. in partially observed domains)
+	  - GPS adapts the expert behavior to learning agent
+	    * Does not require bounded loss on initial expert (expert will change)"
+	--
 	"Use (modification of) importance sampling to get policy gradient, where samples are obtained via trajectory optimization."
 	-- https://graphics.stanford.edu/projects/gpspaper/index.htm
+	-- http://youtube.com/watch?v=o0Ebur3aNMo (Levine)
 	-- http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/ (Abbeel, part 2)
 	-- http://youtube.com/watch?v=EtMyH_--vnU (Levine)
 	-- https://video.seas.harvard.edu/media/ME+Sergey+Levine+2015+-04-01/1_gqqp9r3o/23375211 (Levine)
@@ -1718,6 +1830,7 @@ Ho, Ermon - "Generative Adversarial Imitation Learning" [http://arxiv.org/abs/16
 Hadfield-Menell, Dragan, Abbeel, Russell - "Cooperative Inverse Reinforcement Learning" [http://arxiv.org/abs/1606.03137]
 	"For an autonomous system to be helpful to humans and to pose no unwarranted risks, it needs to align its values with those of the humans in its environment in such a way that its actions contribute to the maximization of value for the humans. We propose a formal definition of the value alignment problem as cooperative inverse reinforcement learning. A CIRL problem is a cooperative, partial information game with two agents, human and robot; both are rewarded according to the human’s reward function, but the robot does not initially know what this is. In contrast to classical IRL, where the human is assumed to act optimally in isolation, optimal CIRL solutions produce behaviors such as active teaching, active learning, and communicative actions that are more effective in achieving value alignment. We show that computing optimal joint policies in CIRL games can be reduced to solving a POMDP, prove that optimality in isolation is suboptimal in CIRL, and derive an approximate CIRL algorithm."
 	"In this work, we presented a game-theoretic model for cooperative learning, CIRL. Key to this model is that the robot knows that it is in a shared environment and is attempting to maximize the human’s reward (as opposed to estimating the human’s reward function and adopting it as its own). This leads to cooperative learning behavior and provides a framework in which to design HRI algorithms and analyze the incentives of both actors in a learning environment. We reduced the problem of computing an optimal policy pair to solving a POMDP. This is a useful theoretical tool and can be used to design new algorithms, but it is clear that optimal policy pairs are only part of the story. In particular, when it performs a centralized computation, the reduction assumes that we can effectively program both actors to follow a set coordination policy. This may not be feasible in reality, although it may nonetheless be helpful in training humans to be better teachers. An important avenue for future research will be to consider the problem of equilibrium acquisition: the process by which two independent actors arrive at an equilibrium pair of policies. Returning to Wiener’s warning, we believe that the best solution is not to put a specific purpose into the machine at all, but instead to design machines that provably converge to the right purpose as they go along."
+	-- http://pemami4911.github.io/paper-summaries/2016/08/11/Coop-Inverse-RL.html
 
 
 

@@ -23,49 +23,37 @@ Anywhere there is a function y = f(x), where f(x) has some parameters used to ma
   [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
 
 
-[recent breakthroughs](https://dropbox.com/s/cfjjubx8ocfx748/breakthroughs.md) (in russian)
+
+----
+#### applications
+
+  [recent breakthroughs](https://dropbox.com/s/cfjjubx8ocfx748/breakthroughs.md) (in russian)
+
+  [artificial intelligence](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md)  
+  [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
+  [natural language processing](https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt)  
+  [information retrieval](https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt)  
+  [personal assistants](https://dropbox.com/s/0fyarlwcfb8mjdq/Personal%20Assistants.txt)  
 
 
 
 ---
 ### overview
 
-#### non-technical overview
+  ["Machine Learning: Trends, Perspectives and Prospects"](https://goo.gl/U8552O) by Jordan and Mitchell
 
-  "What Is Machine Learning" by Pedro Domingos - <https://class.coursera.org/machlearning-001/lecture/145>
+  introduction by Dmitry Vetrov (in russian) - <http://youtube.com/watch?v=srIcbDBAJBo> + <http://youtube.com/watch?v=ftlbxFypW74>  
 
-  "Machine Learning is the new algorithms" by Hal Daume - <http://nlpers.blogspot.ru/2014/10/machine-learning-is-new-algorithms.html>  
-  "When is Machine Learning Worth It?" - <http://inference.vc/when-is-machine-learning-worth-it/>  
-
-  "Deep Learning - Introduction" by Nando de Freitas - <https://youtube.com/watch?v=PlhFWT7vAEw>  
-  "Machine Learning - Introduction" by Nando de Freitas - <https://youtube.com/watch?v=w2OtwL5T1ow>  
-
-  <http://machinelearningmastery.com/start-here/>  
-
-
-#### technical overview
-
-  introduction by Pedro Domingos - <https://class.coursera.org/machlearning-001/lecture/149>  
-  introduction (in russian) by Dmitry Vetrov - <http://youtube.com/watch?v=srIcbDBAJBo> + <http://youtube.com/watch?v=ftlbxFypW74>  
+  ["Machine Learning is the new algorithms"](http://nlpers.blogspot.ru/2014/10/machine-learning-is-new-algorithms.html) by Hal Daume  
+  ["When is Machine Learning Worth It?"](http://inference.vc/when-is-machine-learning-worth-it/) by Ferenc Huszar  
 
   <http://bugra.github.io/work/notes/2014-08-23/on-machine-learning/>  
-  <https://thebeautyofml.wordpress.com/2016/04/03/in-a-nutshell-learning/>  
+  <http://thebeautyofml.wordpress.com/2016/04/03/in-a-nutshell-learning/>  
 
-  "Machine Learning: Trends, Perspectives and Prospects" by Jordan and Mitchell - <https://goo.gl/U8552O>  
-
-  overview (in russian) by Dmitry Vetrov - <http://youtube.com/watch?v=lkh7bLUc30g>  
-  overview (in russian) by Igor Kuralenok - <http://youtube.com/watch?v=ynS7XvkAdLU> + <http://youtube.com/watch?v=jiyD0r2SC-g>  
+  overview by Dmitry Vetrov (in russian) - <http://youtube.com/watch?v=lkh7bLUc30g>  
+  overview by Igor Kuralenok (in russian) - <http://youtube.com/watch?v=ynS7XvkAdLU> + <http://youtube.com/watch?v=jiyD0r2SC-g>  
 
   <http://thetalkingmachines.com/blog/>  (podcasts)
-
-
-#### applications
-
-  artificial intelligence    - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md> + <https://dropbox.com/sh/gmo2hort07gsydj/AACK0XoOOLsrzCyYC1eLwyOwa>  
-  knowledge representation and reasoning    - <https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md> + <https://dropbox.com/sh/9ytscy4pwegbvhb/AACtB7tQGj-vigo0yExfciu0a>  
-  natural language processing    - <https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt> + <https://dropbox.com/sh/rb7u9nwb16bg5xq/AADV3d_bS6-mqFW0_jaec1sZa>  
-  information retrieval    - <https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt> + <https://dropbox.com/sh/pvpzyxfcpy39j8p/AACduJ-pVF9Lh-gn3_SExj1va>  
-  personal assistants    - <https://dropbox.com/s/0fyarlwcfb8mjdq/Personal%20Assistants.txt> + <https://dropbox.com/sh/veqe3c800ztpkxe/AABwH6camduJrsTUJpeKobWUa>  
 
 
 
@@ -80,79 +68,55 @@ Anywhere there is a function y = f(x), where f(x) has some parameters used to ma
 
   <https://github.com/rasbt/python-machine-learning-book> + <https://github.com/rasbt/python-machine-learning-book/tree/master/faq>
 
-  Python notebooks for many algorithms - <http://nbtest.herokuapp.com/github/fonnesbeck/Bios366/tree/master/notebooks/>
+  [Python notebooks for many algorithms](http://nbtest.herokuapp.com/github/fonnesbeck/Bios366/tree/master/notebooks/)
 
   <http://ciml.info/dl/v0_8/ciml-v0_8-all.pdf>  
   <http://metacademy.org>  
   <http://machinelearning.ru/wiki/>  
 
-  <https://en.wikipedia.org/wiki/Machine_learning>
-  "Introduction to Machine Learning - The Wikipedia Guide" - <https://github.com/Nixonite/open-source-machine-learning-degree/blob/master/Introduction%20to%20Machine%20Learning%20-%20Wikipedia.pdf>
+  <https://en.wikipedia.org/wiki/Machine_learning>  
+  ["Introduction to Machine Learning - The Wikipedia Guide"](https://github.com/Nixonite/open-source-machine-learning-degree/blob/master/Introduction%20to%20Machine%20Learning%20-%20Wikipedia.pdf)  
 
 
 #### guides
 
-  things to know - <http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf>  
-  Google's rules - <http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf>  
-  common pitfalls - <http://danielnee.com/?p=155&utm_content=buffer163ed>  
-  methods of overfitting - <http://hunch.net/?p=22>  
-  more data or better algorithms - <http://kdnuggets.com/2015/06/machine-learning-more-data-better-algorithms.html>  
-  fitting models with more parameters than data points - <https://jakevdp.github.io/blog/2015/07/06/model-complexity-myth/>  
-  cross-validation - <http://robjhyndman.com/hyndsight/crossvalidation/>  
-  priors for modelling invariances - <http://inference.vc/the-holy-gr/>  
-  baseline - <http://nlpers.blogspot.ru/2014/11/the-myth-of-strong-baseline.html>  
-  feature selection - <http://machinelearningmastery.com/an-introduction-to-feature-selection/>  
-  algorithm selection - <http://machinelearningmastery.com/a-data-driven-approach-to-machine-learning/>  
-  dimensionality reduction - <https://colah.github.io/posts/2014-10-Visualizing-MNIST/>  
-  hyper-parameter selection - <http://startup.ml/blog/hyperparam>  
-  hyper-parameter search - <http://nlpers.blogspot.ru/2014/10/hyperparameter-search-bayesian.html>  
-  distributed machine learning - <http://fastml.com/the-emperors-new-clothes-distributed-machine-learning/>  
-  deception of supervised learning - <http://kdnuggets.com/2016/09/deception-of-supervised-learning.html>  
-  classification vs prediction - <http://fharrell.com/2017/01/classification-vs-prediction.html>  
-  machine learning and statistics - <https://www.ics.uci.edu/~welling/publications/papers/WhyMLneedsStatistics.pdf>  
-  machine learning and engineering - <http://machinedlearnings.com/2017_02_01_archive.html>  
+  [things to know](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)  
+  [Google's rules](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf)  
+  [common pitfalls](http://danielnee.com/?p=155&utm_content=buffer163ed)  
+  [methods of overfitting](http://hunch.net/?p=22)  
+  [more data or better algorithms](http://kdnuggets.com/2015/06/machine-learning-more-data-better-algorithms.html)  
+  [fitting models with more parameters than data points](https://jakevdp.github.io/blog/2015/07/06/model-complexity-myth/)  
+  [cross-validation](http://robjhyndman.com/hyndsight/crossvalidation/)  
+  [priors for modelling invariances](http://inference.vc/the-holy-gr/)  
+  [baseline](http://nlpers.blogspot.ru/2014/11/the-myth-of-strong-baseline.html)  
+  [feature selection](http://machinelearningmastery.com/an-introduction-to-feature-selection/)  
+  [algorithm selection](http://machinelearningmastery.com/a-data-driven-approach-to-machine-learning/)  
+  [dimensionality reduction](https://colah.github.io/posts/2014-10-Visualizing-MNIST/)  
+  [hyper-parameter selection](http://startup.ml/blog/hyperparam)  
+  [hyper-parameter search](http://nlpers.blogspot.ru/2014/10/hyperparameter-search-bayesian.html)  
+  [distributed machine learning](http://fastml.com/the-emperors-new-clothes-distributed-machine-learning/)  
+  [deception of supervised learning](http://kdnuggets.com/2016/09/deception-of-supervised-learning.html)  
+  [classification vs prediction](http://fharrell.com/2017/01/classification-vs-prediction.html)  
+  [machine learning and statistics](https://www.ics.uci.edu/~welling/publications/papers/WhyMLneedsStatistics.pdf)  
+  [machine learning and engineering](http://machinedlearnings.com/2017_02_01_archive.html)  
 
 
 #### courses
 
-  <http://youtube.com/playlist?list=PLE6Wd9FR--Ecf_5nCbnSQMHqORpiChfJf>  (Nando de Freitas - undergraduate course)  
-  <http://www.cs.ubc.ca/~nando/540-2013/lectures.html>  (Nando de Freitas - graduate course)  
-  <http://coursera.org/course/machlearning>  (Pedro Domingos)  
-  <http://alex.smola.org/teaching/10-701-15/>  (Alex Smola)  
-  <http://youtube.com/playlist?list=PLD0F06AA0D2E8FFBA>  (MathematicalMonk)  
-  <http://www.cs.toronto.edu/~rsalakhu/STA4273_2015/lectures.html>  (Ruslan Salakhutdinov)  
-  <https://see.stanford.edu/Course/CS229/47>  (Andrew Ng)  
-  <http://videolectures.net/course_information_theory_pattern_recognition/>  (David MacKay)  
-  <http://homepages.inf.ed.ac.uk/vlavrenk/iaml.html>  (Victor Lavrenko, 60 short lectures on single page)  
-  <https://www.inf.ed.ac.uk/teaching/courses/iaml/>  (Victor Lavrenko)  
+  [Andrew Ng](http://coursera.org/learn/machine-learning)  
+  [Nando de Freitas](http://youtube.com/playlist?list=PLE6Wd9FR--Ecf_5nCbnSQMHqORpiChfJf) (undergraduate)  
+  [Nando de Freitas](http://www.cs.ubc.ca/~nando/540-2013/lectures.html) (graduate)  
+  [Pedro Domingos](http://youtube.com/playlist?list=PLTPQEx-31JXgtDaC6-3HxWcp7fq4N8YGr)  
+  [Alex Smola](http://alex.smola.org/teaching/10-701-15/)  
+  [Trevor Hastie and Rob Tibshirani](http://dataschool.io/15-hours-of-expert-machine-learning-videos/)  
 
-  <http://coursera.org/specializations/machine-learning-data-analysis/>  (Yandex, in russian)
+  [Yandex](http://coursera.org/specializations/machine-learning-data-analysis/) (in russian)  
+  [Konstantin Vorontsov](http://coursera.org/learn/introduction-machine-learning) (in russian)  
+  [Konstantin Vorontsov](http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC) (in russian)  
+  [Igor Kuralenok](http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC) (in russian)  
+  [Igor Kuralenok](http://lektorium.tv/course/22975) (in russian)  
 
-  <http://coursera.org/learn/introduction-machine-learning>  (Konstantin Vorontsov, in russian)  
-  <http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC>  (Konstantin Vorontsov, in russian)  
-  <http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC>  (Igor Kuralenok, in russian)  
-  <http://lektorium.tv/course/22975>  (Igor Kuralenok, in russian)  
-  <http://habrahabr.ru/company/mailru/blog/254897/>  (in russian)  
-
-  <http://dataschool.io/15-hours-of-expert-machine-learning-videos/>  
-  <https://cs.cmu.edu/~tom/10701_sp11/lectures.shtml> + <http://cs.cmu.edu/~aarti/Class/10601/lectures.shtml>  
-  <https://edx.org/course/artificial-intelligence-uc-berkeleyx-cs188-1x>  
-  <https://edx.org/course/caltechx/caltechx-cs1156x-learning-data-2516>  
-  <http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/>  
-  <http://www.cs.nyu.edu/~mohri/ml14/>  
-
-  final projects from Stanford CS231 Deep Learning class - <http://cs231n.stanford.edu/reports2016.html> + <http://cs231n.stanford.edu/reports.html>  
-  final projects from Stanford CS224d Deep Learning for Natural Language Processing - <http://cs224d.stanford.edu/reports.html>  
-  final projects from CMU 10-701 - <https://youtube.com/playlist?list=PLZSO_6-bSqHTw6zw5XhxawMgYGRItZ4Zg>  
-
-
-#### schools
-
-  <http://mlss.cc>  
-  <http://videolectures.net/site/search/?q=MLSS>  
-  <http://youtube.com/channel/UCty-pPOWlWUk4gXNm5pydcg/videos>  (Tubingen 2015)  
-  <http://youtube.com/channel/UCT1k2e63pqm_VSXmaF21n6g>  (Sydney 2015)  
-  <http://youtube.com/playlist?list=PLZSO_6-bSqHQCIYxE3ycGLXHMjK3XV7Iz>  (Pittsburgh 2014)  
+  [Machine Learning Summer Schools](http://mlss.cc)  
 
 
 #### books
@@ -178,16 +142,14 @@ Anywhere there is a function y = f(x), where f(x) has some parameters used to ma
 
   <http://inference.vc>  
   <http://blog.shakirm.com>  
-  <http://offconvex.org>  
-  <http://argmin.net>  
   <http://hunch.net>  
-  <http://machinedlearnings.com>
+  <http://machinedlearnings.com>  
   <http://nlpers.blogspot.com>  
-  <http://inverseprobability.com/blog.html>  
-  <http://blogs.princeton.edu/imabandit>  
   <http://fastml.com>  
   <http://wildml.com>  
-  <http://thetalkingmachines.com>  
+  <http://offconvex.org>  
+  <http://argmin.net>  
+  <http://blogs.princeton.edu/imabandit>  
 
 
 #### news and discussions
@@ -209,55 +171,55 @@ Anywhere there is a function y = f(x), where f(x) has some parameters used to ma
 ---
 ### theory
 
-**goals**
-  - prediction with high accuracy
-  - prediction of "rare" events (outlier detection)
-  - interpretable modeling
-  - hypothesis testing
-  - visualization
-  - drawing causal conclusions
-  - quantifying uncertainty/risk
-  - generating new samples
-  - clustering
-  - online/active/reinforcement learning
+**goals**  
+  - prediction with high accuracy  
+  - prediction of "rare" events (outlier detection)  
+  - interpretable modeling  
+  - hypothesis testing  
+  - visualization  
+  - drawing causal conclusions  
+  - quantifying uncertainty/risk  
+  - generating new samples  
+  - clustering  
+  - online/active/reinforcement learning  
 
-**data**
-  - text
-  - networks
-  - time series
-  - streaming data
-  - bag data or full distributions
-  - paired samples
-  - clinical trial
-  - A/B testing
-  - spatial data
-  - high-dimensional data
-  - low-sample-size data 
-  - non-metric-space data
+**data**  
+  - text  
+  - networks  
+  - time series  
+  - streaming data  
+  - bag data or full distributions  
+  - paired samples  
+  - clinical trial  
+  - A/B testing  
+  - spatial data  
+  - high-dimensional data  
+  - low-sample-size data  
+  - non-metric-space data  
 
-**challenges**
-  - How to decide autonomously which representation is best for target knowledge?
-  - How to tell genuine regularities from chance occurrences?
-  - How to exploit pre-existing domain knowledge knowledge?
-  - How to learn with limited computational resources?
-  - How to learn with limited data?
-  - How to make learned results understandable?
-  - How to quantify uncertainty?
-  - How to take into account the costs of decisions?
-  - How to handle non-indepedent and non-stationary data?
+**challenges**  
+  - How to decide autonomously which representation is best for target knowledge?  
+  - How to tell genuine regularities from chance occurrences?  
+  - How to exploit pre-existing domain knowledge knowledge?  
+  - How to learn with limited computational resources?  
+  - How to learn with limited data?  
+  - How to make learned results understandable?  
+  - How to quantify uncertainty?  
+  - How to take into account the costs of decisions?  
+  - How to handle non-indepedent and non-stationary data?  
 
-[**things to know**](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)
-  - it's generalization that counts
-  - data alone is not enough
-  - overfitting has many faces
-  - intuition fails in high dimensions
-  - theoretical guarantees are not what they seem
-  - feature engineering is the key
-  - more data beats a cleverer algorithm
-  - learn many models, not just one (ensembles)
-  - simplicity does not imply accuracy
-  - representable does not imply learnable
-  - correlation does not imply causation
+[**things to know**](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)  
+  - it's generalization that counts  
+  - data alone is not enough  
+  - overfitting has many faces  
+  - intuition fails in high dimensions  
+  - theoretical guarantees are not what they seem  
+  - feature engineering is the key  
+  - more data beats a cleverer algorithm  
+  - learn many models, not just one (ensembles)  
+  - simplicity does not imply accuracy  
+  - representable does not imply learnable  
+  - correlation does not imply causation  
 
 ----
 
@@ -265,15 +227,13 @@ Anywhere there is a function y = f(x), where f(x) has some parameters used to ma
 
   [Bayesian Inference and Learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)
 
-  - probability as measure of uncertainty, encodes ignorance in terms of distributions
-  - treats everything as random variables, no difference between random and unknown variables
-  - makes use of Bayes theorem: posterior = likelihood * prior / evidence
-  - possible to compute the estimate p(U|O) for arbitrary unknown variable (U) given observed data (O) and not having any knowledge about latent variables (L) from the joint distribution p(U, O, L)
-  - possibility to use posterior distributions as priors, combination of multiple models
+  - probability as measure of uncertainty, encodes ignorance in terms of distributions  
+  - treats everything as random variables, no difference between random and unknown variables  
+  - makes use of Bayes theorem: posterior = likelihood * prior / evidence  
+  - possible to compute the estimate p(U|O) for arbitrary unknown variable (U) given observed data (O) and not having any knowledge about latent variables (L) from the joint distribution p(U, O, L)  
+  - possibility to use posterior distributions as priors, combination of multiple models  
 
 "From a Bayesian point of view, we should be integrating over likelihoods instead of using optimization methods to select a point estimate of model parameters (usually with ad hoc regularization tuned by cross validation)."
-
-"No free lunch theorem relies on unrealistic uniform sampling (which results mostly in white noise for real-world phenomena). Sampling from Solomonoff's universal distribution permits free lunch."
 
 ----
 
@@ -290,25 +250,21 @@ frameworks:
   - PAC learning or PAC-Bayes  
   - Minimax estimation (estimation/decision theory)  
 
-  <http://kdnuggets.com/2015/07/deep-learning-triumph-empiricism-over-theoretical-mathematical-guarantees.html>  
-  <https://hips.seas.harvard.edu/blog/2013/02/15/learning-theory-purely-theoretical/>  
+<http://kdnuggets.com/2015/07/deep-learning-triumph-empiricism-over-theoretical-mathematical-guarantees.html>  
+<https://hips.seas.harvard.edu/blog/2013/02/15/learning-theory-purely-theoretical/>  
 
-  <https://mostafa-samir.github.io/ml-theory-pt1/>  
-  <https://mostafa-samir.github.io/ml-theory-pt2/>  
-  <https://mostafa-samir.github.io/ml-theory-pt3/>  
-
+  [introduction](https://mostafa-samir.github.io/ml-theory-pt1/) by Mostafa Samir  
+  introduction by Jeremy Kun -  
   <http://jeremykun.com/2014/01/02/probably-approximately-correct-a-formal-theory-of-learning/>  
   <http://jeremykun.com/2014/04/21/an-un-pac-learnable-problem/>  
   <http://jeremykun.com/2014/09/19/occams-razor-and-pac-learning/>  
 
-  <https://blogs.princeton.edu/imabandit/2015/10/13/crash-course-on-learning-theory-part-1/>  
-  <https://blogs.princeton.edu/imabandit/2015/10/22/crash-course-on-learning-theory-part-2/>  
-
-  <https://web.stanford.edu/class/cs229t/notes.pdf> (course by Percy Liang)
+  [course](https://blogs.princeton.edu/imabandit/2015/10/13/crash-course-on-learning-theory-part-1/) by Sebastien Bubeck  
+  [course](https://web.stanford.edu/class/cs229t/notes.pdf) by Percy Liang  
 
 ----
 
-#### bias/variance
+#### bias-variance tradeoff
 
   "The bias is error from erroneous assumptions in the learning algorithm. High bias can cause an algorithm to miss the relevant relations between features and target outputs (underfitting).  
    The variance is error from sensitivity to small fluctuations in the training set. High variance can cause overfitting: modeling the random noise in the training data, rather than the intended outputs."  
@@ -317,15 +273,12 @@ frameworks:
 
   "Bias is how well the best hypothesis in your hypothesis class would perform in reality, whereas variance is how much performance degradation is introduced from having finite training data."
 
-  "Bias is a learner's tendency to consistently learn the same wrong thing."  
-  "Variance is the tendency to learn random things irrespective of the real signal."  
-
   "Bias-variance decomposition in understanding the prediction error incurred by statistical models:
   - the bias component of prediction error reflects the inability of a model to represent the systematic patterns that govern the observations
   - the variance component of prediction error reflects the sensitivity of the model’s predictions to different observations of the same problem
 
-Together, bias and variance additively contribute to the total prediction error:  mean squared error = (bias)^2 + error variance + noise  
-  Bias-variance tradeoff characterizes how robust algorithm is to errors in its modeling assumptions (bias) or to errors in the training data (variance)."  
+Together, bias and variance additively contribute to the total prediction error:  mean squared error = (bias)^2 + error variance + noise.  
+Bias-variance tradeoff characterizes how robust algorithm is to errors in its modeling assumptions (bias) or to errors in the training data (variance)."  
 
 
 
@@ -340,105 +293,105 @@ Together, bias and variance additively contribute to the total prediction error:
 
   *optimization*:  Finally, we need a method to search among the classifiers in the language for the highest-scoring one. The choice of optimization technique is key to the efficiency of the learner, and also helps determine the classifier produced if the evaluation function has more than one optimum. It is common for new learners to start out using off-the-shelf optimizers, which are later replaced by custom-designed ones.
 
-*representation*:
-  - instances
-    * k-nearest neighbor
-    * support vector machines
-  - hyperplanes
-    * naive Bayes
-    * logistic regression
-  - decision trees
-  - sets of rules
-    * propositional rules
-    * logic programs
-  - neural networks
-  - graphical models
-    * bayesian networks
-    * conditional random fields
+*representation*:  
+  - instances  
+    * k-nearest neighbor  
+    * support vector machines  
+  - hyperplanes  
+    * naive Bayes  
+    * logistic regression  
+  - decision trees  
+  - sets of rules  
+    * propositional rules  
+    * logic programs  
+  - neural networks  
+  - graphical models  
+    * bayesian networks  
+    * conditional random fields  
 
-*evaluation*:
-  - accuracy/error rate
-  - precision/recall
-  - squared error
-  - likelihood
-  - posterior probability
-  - information gain
-  - K-L divergence
-  - cost/utility
-  - margin
+*evaluation*:  
+  - accuracy/error rate  
+  - precision/recall  
+  - squared error  
+  - likelihood  
+  - posterior probability  
+  - information gain  
+  - K-L divergence  
+  - cost/utility  
+  - margin  
 
-*optimization*:
-  - combinatorial optimization
-    * greedy search
-    * beam search
-    * branch-and-bound
-  - unconstrained continuous optimization
-    * gradient descent
-    * conjugate gradient
-    * quasi-Newton methods
-  - constrained continuous optimization
-    * linear programming
-    * quadratic programming
+*optimization*:  
+  - combinatorial optimization  
+    * greedy search  
+    * beam search  
+    * branch-and-bound  
+  - unconstrained continuous optimization  
+    * gradient descent  
+    * conjugate gradient  
+    * quasi-Newton methods  
+  - constrained continuous optimization  
+    * linear programming  
+    * quadratic programming  
 
 ----
 
   *machine learning* = *experience obtaining* + *cost function* + *decision function*
 
-*experience obtaining*:
-  - transductive learning
-  - inductive learning
-  - stochastic optimization
-  - active learning
-  - budget learning
-  - online learning
-  - multi-armed bandits
-  - reinforcement learning
+*experience obtaining*:  
+  - transductive learning  
+  - inductive learning  
+  - stochastic optimization  
+  - active learning  
+  - budget learning  
+  - online learning  
+  - multi-armed bandits  
+  - reinforcement learning  
 
-*cost function*:
-  - supervised
-    * classification
-    * regression
-    * learning to rank
-    * metric learning
-  - unsupervised
-    * cluster analysis
-    * dimensionality reduction
-    * representation learning
-  - semi-supervised
-    * conditional clustering
-    * transfer learning
+*cost function*:  
+  - supervised  
+    * classification  
+    * regression  
+    * learning to rank  
+    * metric learning  
+  - unsupervised  
+    * cluster analysis  
+    * dimensionality reduction  
+    * representation learning  
+  - semi-supervised  
+    * conditional clustering  
+    * transfer learning  
 
-*decision function*:
-  - linear desions
-    * linear regression, logistic regression
-    * LDA/QDA
-    * LASSO 
-    * SVM
-    * LSI
-  - graphs
-    * Markov chains, Hidden Markov Models
-    * Probabilistic Graphical Models
-    * Conditional Random Fields
-  - artificial neural networks
-    * Multilayer Perceptron
-    * Hopfield net
-    * Kohonen net
-  - parametric family functions
-    * sampling
-    * genetic algorithms
-    * PLSI
-    * LDA
-  - instance based learning
-    * KNN
-    * DANN
-  - predicates
-    * logic rules
-    * decision trees
-  - ensembles
-    * bagging    
-    * boosting
-    * bayesian averaging
-    * stacking
+*decision function*:  
+  - linear desions  
+    * linear regression, logistic regression  
+    * LDA/QDA  
+    * LASSO  
+    * SVM  
+    * LSI  
+  - graphs  
+    * Markov chains, Hidden Markov Models  
+    * Probabilistic Graphical Models  
+    * Conditional Random Fields  
+  - artificial neural networks  
+    * Multilayer Perceptron  
+    * Hopfield net  
+    * Kohonen net  
+  - parametric family functions  
+    * sampling  
+    * genetic algorithms  
+    * PLSI  
+    * LDA  
+  - instance based learning  
+    * KNN  
+    * DANN  
+  - predicates  
+    * logic rules  
+    * decision trees  
+  - ensembles  
+    * bagging  
+    * boosting  
+    * bayesian model averaging  
+    * stacking  
 
 ----
 
@@ -447,7 +400,7 @@ Together, bias and variance additively contribute to the total prediction error:
   <https://justindomke.wordpress.com/2015/09/14/algorithmic-dimensions/>  
   <https://www.cs.jhu.edu/~jason/tutorials/ml-simplex.html>  
 
-  "All Models of Learning have Flaws" by John Langford - <http://hunch.net/?p=224>
+  ["All Models of Learning have Flaws"](http://hunch.net/?p=224) by John Langford
 
   <https://azure.microsoft.com/en-us/documentation/articles/machine-learning-algorithm-cheat-sheet/>
 
@@ -461,7 +414,7 @@ Together, bias and variance additively contribute to the total prediction error:
 
 ----
 
-  [tutorials](#tutorials) [guides](#guides) [courses](#courses) [books](#books)
+  [tutorials](#tutorials) + [guides](#guides) + [courses](#courses) + [books](#books)
 
 
 
@@ -488,28 +441,28 @@ Together, bias and variance additively contribute to the total prediction error:
 ---
 ### inductive programming
 
-  "The essence of programmatic representations is that they are well-specified, compact, combinatorial and hierarchical.
-  - well-specified:  Unlike sentences in natural language, programs are unambiguous, although two distinct programs can be precisely equivalent.
-  - compact:  Programs allow us to compress data on the basis of their regularities.
-  - combinatorial:  Programs can access the results of running other programs, as well as delete, duplicate, and rearrange these results.
-  - hierarchical:  Programs have an intrinsic hierarchical organization and may be decomposed into subprograms."
+  "The essence of programmatic representations is that they are well-specified, compact, combinatorial and hierarchical.  
+  - *well-specified*:  Unlike sentences in natural language, programs are unambiguous, although two distinct programs can be precisely equivalent.  
+  - *compact*:  Programs allow us to compress data on the basis of their regularities.  
+  - *combinatorial*:  Programs can access the results of running other programs, as well as delete, duplicate, and rearrange these results.  
+  - *hierarchical*:  Programs have an intrinsic hierarchical organization and may be decomposed into subprograms."  
 
 "Alternative representations for procedural abstractions such as neural networks have serious downsides including opacity and inefficiency."
 
-"Challenges with programmatic representations:
-  - open-endedness:  In contrast to other knowledge representations in machine learning, programs may vary in size and “shape”, and there is no obvious problem-independent upper bound on program size. This makes it difficult to represent programs as points in a fixed-dimensional space, or learn programs with algorithms that assume such a space.
-  - over-representation:  Often syntactically distinct programs will be semantically identical (i.e. represent the same underlying behavior or functional mapping). Lacking prior knowledge, many algorithms will inefficiently sample semantically identical programs repeatedly.
-  - chaotic execution: Programs that are very similar, syntactically, may be very different, semantically. This presents difficulty for many heuristic search algorithms, which require syntactic and semantic distance to be correlated.
-  - high resource-variance:  Programs in the same space may vary greatly in the space and time they require to execute."
+"Challenges with programmatic representations:  
+  - *open-endedness*:  In contrast to other knowledge representations in machine learning, programs may vary in size and “shape”, and there is no obvious problem-independent upper bound on program size. This makes it difficult to represent programs as points in a fixed-dimensional space, or learn programs with algorithms that assume such a space.  
+  - *over-representation*:  Often syntactically distinct programs will be semantically identical (i.e. represent the same underlying behavior or functional mapping). Lacking prior knowledge, many algorithms will inefficiently sample semantically identical programs repeatedly.  
+  - *chaotic execution*: Programs that are very similar, syntactically, may be very different, semantically. This presents difficulty for many heuristic search algorithms, which require syntactic and semantic distance to be correlated.  
+  - *high resource-variance*:  Programs in the same space may vary greatly in the space and time they require to execute."  
 
-"Limitations of program learning:
-  - can't overrule no-free-lunch
-    * averaged over all possible scoring functions
-  - can't learn to model "arbitrary" Turing machines
-  - can't scale up to large programs
-    * without external guidance
-    * without strong structural inductive bias
-    * without relatedness to past problems"
+"Limitations of program learning:  
+  - can't overrule no-free-lunch  
+    * averaged over all possible scoring functions  
+  - can't learn to model "arbitrary" Turing machines  
+  - can't scale up to large programs  
+    * without external guidance  
+    * without strong structural inductive bias  
+    * without relatedness to past problems"  
 
 ----
 
@@ -535,36 +488,36 @@ Together, bias and variance additively contribute to the total prediction error:
 ---
 ### automated machine learning
 
-AutoML aims to automate many different stages of the machine learning process:
-  - model selection, hyper-parameter optimization, and model search
-  - meta learning and transfer learning
-  - representation learning and automatic feature extraction / construction
-  - demonstrations (demos) of working AutoML systems
-  - automatic generation of workflows / workflow reuse
-  - automatic problem "ingestion" (from raw data and miscellaneous formats)
-  - automatic feature transformation to match algorithm requirements
-  - automatic detection and handling of skewed data and/or missing values
-  - automatic acquisition of new data (active learning, experimental design)
-  - automatic report writing (providing insight on automatic data analysis)
-  - automatic selection of evaluation metrics / validation procedures
-  - automatic selection of algorithms under time/space/power constraints
-  - automatic prediction post-processing and calibration
-  - automatic leakage detection
-  - automatic inference and differentiation
-  - user interfaces for AutoML
+AutoML aims to automate many different stages of the machine learning process:  
+  - model selection, hyper-parameter optimization, and model search  
+  - meta learning and transfer learning  
+  - representation learning and automatic feature extraction / construction  
+  - demonstrations (demos) of working AutoML systems  
+  - automatic generation of workflows / workflow reuse  
+  - automatic problem "ingestion" (from raw data and miscellaneous formats)  
+  - automatic feature transformation to match algorithm requirements  
+  - automatic detection and handling of skewed data and/or missing values  
+  - automatic acquisition of new data (active learning, experimental design)  
+  - automatic report writing (providing insight on automatic data analysis)  
+  - automatic selection of evaluation metrics / validation procedures  
+  - automatic selection of algorithms under time/space/power constraints  
+  - automatic prediction post-processing and calibration  
+  - automatic leakage detection  
+  - automatic inference and differentiation  
+  - user interfaces for AutoML  
 
-problems:
-  - different data distributions: the intrinsic/geometrical complexity of the dataset.
-  - different tasks: regression, binary classification, multi-class classification, multi-label classification.
-  - different scoring metrics: AUC, BAC, MSE, F1, etc
-  - class balance: Balanced or unbalanced class proportions.
-  - sparsity: Full matrices or sparse matrices.
-  - missing values: Presence or absence of missing values.
-  - categorical variables: Presence or absence of categorical variables.
-  - irrelevant variables: Presence or absence of additional irrelevant variables (distractors).
-  - number Ptr of training examples: Small or large number of training examples.
-  - number N of variables/features: Small or large number of variables.
-  - aspect ratio Ptr/N of the training data matrix: Ptr >> N, Ptr = N or Ptr << N.
+problems:  
+  - different data distributions: the intrinsic/geometrical complexity of the dataset  
+  - different tasks: regression, binary classification, multi-class classification, multi-label classification  
+  - different scoring metrics: AUC, BAC, MSE, F1, etc  
+  - class balance: Balanced or unbalanced class proportions  
+  - sparsity: Full matrices or sparse matrices  
+  - missing values: Presence or absence of missing values  
+  - categorical variables: Presence or absence of categorical variables  
+  - irrelevant variables: Presence or absence of additional irrelevant variables (distractors)  
+  - number Ptr of training examples: Small or large number of training examples  
+  - number N of variables/features: Small or large number of variables  
+  - aspect ratio Ptr/N of the training data matrix: Ptr >> N, Ptr = N or Ptr << N  
 
 ----
 
@@ -756,13 +709,7 @@ interesting papers (see below):
 
 >	"Estimating accuracy of classifiers is central to machine learning and many other fields. Traditionally, one estimates accuracy of a function based on its performance over a set of labeled test examples. This paper considers the question of under what conditions is it possible to estimate accuracy based instead on unlabeled data. We show that accuracy can be estimated exactly from unlabeled data in the case that at least three different approximations to the same function are available, so long as these functions make independent errors and have better than chance accuracy. More interestingly, we show that even if one does not assume independent errors, one can still estimate accuracy given a sufficient number of competing approximations to the same function, by viewing the degree of independence of those approximations as an optimization criterion. We present experimental results demonstrating the success of this approach in estimating classification accuracies to within a few percentage points of their true value, in two diverse domains."
 
->	"We consider a “multiple approximations” problem setting in which we have several different approximations, to some target boolean classification function, and we wish to know the true accuracies of each of these different approximations, using only unlabeled data. The multiple functions can be from any source - learned or manually constructed. One example of this setting that we consider here is taken from NELL. NELL learns classifiers that map noun phrases to boolean categories such as fruit, food and vehicle. For each such boolean classification function, NELL learns several different approximations based on different views of the NP. One approximation is based on the orthographic features of the NP (e.g., if the NP ends with the letter string “burgh”, it may be a city), whereas another uses phrases surrounding the NP (e.g., if the NP follows the word sequence “mayor of”, it may be a city). Our aim in this paper is to find a way to estimate the error rates of each of the competing approximations, using only unlabeled data (e.g., many unlabeled NPs in the case of NELL)."
-
->	"The main contributions of this paper include: (1) formulating the problem of estimating the error rate of each of several approximations to the same function, based on their agreement rates over unlabeled data, as an optimization problem, (2) providing two different analytical methods that estimate error rates from agreement rates in this setting, one based on a set of simultaneous equations relating accuracies, agreements, and error dependencies, and a second, based on maximizing data likelihood, and (3) demonstrating the success of these two methods in two very different real-world problems."
-
->	"We have introduced the concept of estimating the error rate of each of several approximations to the same function, based on their agreement rates over unlabeled data and we have provided three different analytical methods to do so: the AR method, the MLE method and the MAP method. Our experiments showed that the AR method performs significantly better than the other two methods for both data sets we considered. Our results are very encouraging and suggest that function agreement rates are indeed very useful in estimating function error rates. We consider this work to be a first step towards developing a self-reflection framework for autonomous learning systems. There are several directions we would like to pursue to further improve upon the methods introduced here. Firstly, we wish to explore other interesting natural objectives one can aim to optimize. It would also be very interesting to explore possible generalizations of our models to non-boolean, discrete-valued functions, or even to real-valued functions. Finally, apart from simply estimating function error rates, we want to explore how the obtained error rate estimates can be used to improve the learning ability of a system such as NELL, for example. In this context, we could try using our estimates in order to develop a more robust co-training framework. One very direct application of our methods would be to use the estimated error rates and their dependencies in order to combine the functions’ outputs and obtain one final output."
-
-  - <https://youtu.be/PF6ViL5pcGs?t=5m3s>
+  - <https://youtu.be/PF6ViL5pcGs?t=5m3s> (Mitchell)
 
 
 
@@ -784,12 +731,12 @@ interesting papers (see below):
 #### Agarwal, Chapelle, Dudik, Langford - ["A Reliable Effective Terascale Linear Learning System"](http://arxiv.org/abs/1110.4198) (Vowpal Wabbit)
 >	"We present a system and a set of techniques for learning linear predictors with convex losses on terascale data sets, with trillions of features, 1 billions of training examples and millions of parameters in an hour using a cluster of 1000 machines. Individually none of the component techniques are new, but the careful synthesis required to obtain an efficient implementation is. The result is, up to our knowledge, the most scalable and efficient linear learning system reported in the literature. We describe and thoroughly evaluate the components of the system, showing the importance of the various design choices."
 
->	"- Online by default
->	 - Hashing, raw text is fine
->	 - Most scalable public algorithm
->	 - Reduction to simple problems
->	 - Causation instead of correlation
->	 - Learn to control based on feedback"
+>	"- Online by default  
+>	 - Hashing, raw text is fine  
+>	 - Most scalable public algorithm  
+>	 - Reduction to simple problems  
+>	 - Causation instead of correlation  
+>	 - Learn to control based on feedback"  
 
   - <http://youtube.com/watch?v=wwlKkFhEhxE> (Langford)
   - <https://github.com/JohnLangford/vowpal_wabbit/wiki>

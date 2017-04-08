@@ -47,6 +47,8 @@ Aitchison, Corradi, Latham - "Zipf’s Law Arises Naturally When There Are Under
 
 Roth, Hardt - "Rigorous Data Dredging - Theory and Tools for Adaptive Data Analysis" [http://techtalks.tv/talks/rigorous-data-dredging-theory-and-tools-for-adaptive-data-analysis/62362/]
 
+Yandex Academy (in russian) - https://youtube.com/channel/UCeq6ZIlvC9SVsfhfKnSvM9w
+
 
 
 
@@ -155,6 +157,8 @@ http://blog.efpsa.org/2014/11/17/bayesian-statistics-what-is-it-and-why-do-we-ne
 http://blog.efpsa.org/2015/08/03/bayesian-statistics-why-and-how/
 
 Kruschke - "Doing Bayesian Data Analysis" - http://www.users.csbsju.edu/~mgass/robert.pdf
+
+"Bayesian Multi-armed Bandits vs A/B Tests" - https://habrahabr.ru/company/ods/blog/325416/ (in russian)
 
 
 https://alexanderetz.com/understanding-bayes/ :

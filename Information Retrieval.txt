@@ -448,6 +448,10 @@ Covington, Adams, Sargin - "Deep Neural Networks for YouTube Recommendations" [h
 
 [interesting industry publications]
 
+Google - "Personalization for Google Now: User Understanding and Application to Information Recommendation and Exploration" [http://dl.acm.org/citation.cfm?id=2959192]
+	"At the heart of any personalization application, such as Google Now, is a deep model for users. The understanding of users ranges from raw history to lower dimensional reductions like interest, locations, preferences, etc. We will discuss different representations of such user understanding. Going from understanding to application, we will talk about two broad applications recommendations of information and guided exploration - both in the context of Google Now. We will focus on such applications from an information retrieval perspective. Information recommendation then takes the form of biasing information retrieval, in response to a query or, in the limit, in a query-less application. Somewhere in between lies broad declaration of user intent, e.g., interest in food, and we will discuss how personalization and guided exploration play together to provide a valuable tool to the user. We will discuss valuable lessons learned along the way."
+	-- https://youtube.com/watch?v=X9Fsn1j1CE8 (Thakur)
+
 Google - "Using concepts as contexts for query term substitutions" [http://gofishdigital.com/investigating-google-rankbrain-and-query-term-substitutions/] (RankBrain)
 
 Facebook - "Recommending Items to More than a Billion People" [https://code.facebook.com/posts/861999383875667/recommending-items-to-more-than-a-billion-people/]
