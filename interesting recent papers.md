@@ -31,7 +31,7 @@ interesting papers:
   - [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers)  
   - [machine learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#interesting-papers)  
   - [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers)  
-  - [reinforcement learning](https://dropbox.com/s/dexryjnmxujdynd/Reinforcement%20Learning.txt#interesting-papers)  
+  - [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers)  
   - [bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt#interesting-papers)  
   - [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers)  
   - [natural language processing](https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt#interesting-papers)  
@@ -68,6 +68,7 @@ interesting papers:
   - <https://youtube.com/watch?v=steioHoiEms> (Graves)  
   - <https://youtube.com/watch?v=PQrlOjj8gAc> (Wayne) 
   - <https://youtu.be/otRoAQtc5Dk?t=59m56s> (Polykovskiy)  
+  - <https://github.com/deepmind/dnc>  
   - <https://github.com/yos1up/DNC>  
   - <https://github.com/Mostafa-Samir/DNC-tensorflow>  
   - <https://github.com/frownyface/dnc>  
