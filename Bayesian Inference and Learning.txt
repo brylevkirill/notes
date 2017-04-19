@@ -485,7 +485,7 @@ challenges:
   Traditional unbiased inference schemes such as Markov Chain Monte Carlo are often slow to run and difficult to evaluate in finite time. In contrast, variational inference allows for competitive run times and more reliable convergence diagnostics on large-scale and streaming data - while continuing to allow for complex, hierarchical modelling. The recent resurgence of interest in variational methods includes new methods for scalability using stochastic gradient methods, extensions to the streaming variational setting, improved local variational methods, inference in non-linear dynamical systems, principled regularisation in deep neural networks, and inference-based decision making in reinforcement learning, amongst others. Variational methods have clearly emerged as a preferred way to allow for tractable Bayesian inference. Despite this interest, there remain significant trade-offs in speed, accuracy, simplicity, applicability, and learned model complexity between variational inference and other approximative schemes such as MCMC and point estimation.
 
 
-  "Variational Inference: Foundations and Modern Methods" tutorial @ NIPS 2016 by David Blei, Rajesh Ranganath, Shakir Mohamed -
+  "Variational Inference: Foundations and Modern Methods" tutorial at NIPS 2016 by David Blei, Rajesh Ranganath, Shakir Mohamed -
 	https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods
 	http://www.cs.columbia.edu/~blei/talks/2016_NIPS_VI_tutorial.pdf
 
@@ -648,6 +648,12 @@ challenges:
   "Monte Carlo Methods, Stochastic Optimization" course by Kaynig-Fittkau and Protopapas - http://am207.org
 
 
+  "History of Monte Carlo Methods" by Sebastian Nowozin -
+	http://nowozin.net/sebastian/blog/history-of-monte-carlo-methods-part-1.html
+	http://nowozin.net/sebastian/blog/history-of-monte-carlo-methods-part-2.html
+	http://nowozin.net/sebastian/blog/history-of-monte-carlo-methods-part-3.html
+
+
   - want accurate distribution of the posterior
   - sample from posterior distribution rather than maximimizing it as in EM
   - sample subset of variables while keeping the rest fixed, iterate until converged, draw several samples
@@ -708,9 +714,9 @@ introduction by Adam Kelleher
 	https://medium.com/@akelleh/understanding-bias-a-pre-requisite-for-trustworthy-results-ee590b75b1be
 	https://medium.com/@akelleh/speed-vs-accuracy-when-is-correlation-enough-when-do-you-need-causation-708c8ca93753
 
-tutorial by David Sontag and Uri Shalit @ ICML 2016 - http://techtalks.tv/talks/causal-inference-for-observational-studies/62355/
+tutorial by David Sontag and Uri Shalit at ICML 2016 - http://techtalks.tv/talks/causal-inference-for-observational-studies/62355/
 
-tutorial by Jonas Peters @ MLSS Cadiz 2016 - https://youtube.com/watch?v=_wFagI5Fn9I + https://youtube.com/watch?v=5cjmlcmhisw
+tutorial by Jonas Peters at MLSS Cadiz 2016 - https://youtube.com/watch?v=_wFagI5Fn9I + https://youtube.com/watch?v=5cjmlcmhisw
 
 
 overview by Judea Pearl - https://www.edge.org/conversation/judea_pearl-engines-of-evidence
@@ -792,7 +798,7 @@ overview by Judea Pearl - https://www.edge.org/conversation/judea_pearl-engines-
 selected papers - https://dropbox.com/sh/txqk44kqgn1f9t4/AAD3DCEDXjPxGPFOa0SJYJwga
 
 
-recent interesting papers - https://github.com/brylevkirill/notes/blob/master/recent%20papers.md
+interesting recent papers - https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md
 
 
 interesting papers (see https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md):

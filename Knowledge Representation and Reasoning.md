@@ -1,7 +1,7 @@
-Knowledge Representation is organizing information in a way that computer can use to solve complex tasks.  
-Reasoning is algebraically manipulating previously acquired knowledge in order to answer a new question.  
+  Knowledge Representation is organizing information in a way that computer can use to solve complex tasks.  
+  Reasoning is algebraically manipulating previously acquired knowledge in order to answer a new question.  
 
-How knowledge can be represented? How knowledge can be used? How knowledge can be acquired?
+  How knowledge can be represented? How knowledge can be used? How knowledge can be acquired?
 
 
   * [overview](#overview)
@@ -14,8 +14,8 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   * [reasoning](#reasoning)
     - [neural architectures](#neural-architectures)
     - [natural logic](#natural-logic)
-    - [description logic](#description-logic)
     - [formal logic](#formal-logic)
+    - [bayesian inference](#bayesian-inference)
     - [commonsense reasoning](#commonsense-reasoning)
   * [machine reading benchmarks](#machine-reading-benchmarks)
   * [machine reading projects](#machine-reading-projects)
@@ -117,7 +117,8 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   ["A Paradigm for Situated and Goal-Driven Language Learning"](https://arxiv.org/abs/1610.03585) by Jon Gauthier and Igor Mordatch  
 >	"We outlined a paradigm for grounded and goal-driven language learning in artificial agents. The paradigm is centered around a utilitarian definition of language understanding, which equates language understanding with the ability to cooperate with other language users in real-world environments. This position demotes language from its position as a separate task to be solved to one of several communicative tools agents might use to accomplish their real-world goals."
 
-  ["Solving Language"](http://foldl.me/2016/solving-language/) + ["Situated Language Learning"](http://foldl.me/2016/situated-language-learning/) by Jon Gauthier
+  ["Solving Language"](http://foldl.me/2016/solving-language/) by Jon Gauthier  
+  ["Situated Language Learning"](http://foldl.me/2016/situated-language-learning/) by Jon Gauthier  
 
 
   ["Natural Language Understanding: Foundations and State-of-the-Art"](http://youtube.com/watch?v=mhHfnhh-pB4) by Percy Liang
@@ -207,19 +208,18 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 
 #### random walk inference
 
-  Path Ranking Algorithm *(used in [Google Knowledge Vault](https://youtu.be/i2r5J4XAhsw?t=5m7s) and NELL)* -
-	<http://cs.cmu.edu/~nlao/publication/2012/defense.pdf>
+  [Path Ranking Algorithm](http://cs.cmu.edu/~nlao/publication/2012/defense.pdf)
+	*(used in [Google Knowledge Vault](https://youtu.be/i2r5J4XAhsw?t=5m7s) and NELL)*
 
-  subgraph feature extraction as improvement over PRA by Matt Gardner *(used in NELL)* -
-	<http://youtube.com/watch?v=dp2waL7OLbI> + <https://www.cs.cmu.edu/~mg1/paper.pdf>  
-  "Reading and Reasoning with Knowledge Graphs" thesis by Matt Gardner -
-	<http://www.cs.cmu.edu/~mg1/thesis.pdf>  
+  [subgraph feature extraction](https://www.cs.cmu.edu/~mg1/paper.pdf) as improvement over PRA by Matt Gardner
+	([video](http://youtube.com/watch?v=dp2waL7OLbI))  *(used in NELL)*  
+  ["Reading and Reasoning with Knowledge Graphs"](http://www.cs.cmu.edu/~mg1/thesis.pdf) thesis by Matt Gardner  
 
-  PRA with distributed representations and Recurrent Neural Network *(used in Epistemological database)* -
-	<http://youtube.com/watch?v=mSrkzc0Nksg> + <https://docs.google.com/file/d/0B_hicYJxvbiOTUxZMWY5T2N2VG8>
+  [PRA with distributed representations and Recurrent Neural Network](http://arxiv.org/abs/1607.01426)
+	([video](http://youtube.com/watch?v=mSrkzc0Nksg), [slides](https://docs.google.com/file/d/0B_hicYJxvbiOTUxZMWY5T2N2VG8))  *(used in Epistemological database)*
 
-  PRA over proof space for first-order logic *(used in ProPPR)* -
-	<http://youtu.be/--pYaISROqE?t=12m35s> + <https://drive.google.com/file/d/0B_hicYJxvbiOc05xNEhvdVVSQWc>
+  [PRA over proof space for first-order logic](http://arxiv.org/abs/1404.3301)
+	([video](http://youtu.be/--pYaISROqE?t=12m35s), [slides](https://drive.google.com/file/d/0B_hicYJxvbiOc05xNEhvdVVSQWc))  *(used in ProPPR)*
 
 ----
 
@@ -228,13 +228,12 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   ["An Overview of Embedding Models of Entities and Relationships for Knowledge Base Completion"](http://arxiv.org/abs/1703.08098)
 
 
-  applications in Google Knowledge Vault  
-	["A Review of Relational Machine Learning for Knowledge Graphs"](http://arxiv.org/abs/1503.00759)
-
-	<http://youtu.be/i2r5J4XAhsw?t=3m7s> (Murphy)  
-	<http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning/> (part 2, 1:19:37) (Tresp)  
-	<http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs/> (part 2, 1:07:43) (Bordes)  
-	<http://youtube.com/watch?v=FVjuwv1_EDw> (Weston)  
+  applications in Google Knowledge Vault:  
+  - ["A Review of Relational Machine Learning for Knowledge Graphs"](http://arxiv.org/abs/1503.00759)  
+  - <http://youtu.be/i2r5J4XAhsw?t=3m7s> (Murphy)  
+  - <http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning/> (part 2, 1:19:37) (Tresp)  
+  - <http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs/> (part 2, 1:07:43) (Bordes)  
+  - <http://youtube.com/watch?v=FVjuwv1_EDw> (Weston)  
 
 
   [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#distributed-representations)  
@@ -623,7 +622,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 >	"Probabilistic language of thought hypothesis (informal version): Concepts have a language-like compositionality and encode probabilistic knowledge. These features allow them to be extended productively to new situations and support flexible reasoning and learning by probabilistic inference."
 
 
-  Josh Tenenbaum  
+  Josh Tenenbaum:  
 	["Cognitive Foundations for Common-sense Knowledge Representation and Reasoning"](https://youtube.com/watch?v=oSAG57plHnI)  
 	["Building Machines That Learn Like Humans"](https://youtube.com/watch?v=quPN7Hpk014)  
 	["Towards More Human-like Machine Learning of Word Meanings"](http://techtalks.tv/talks/towards-more-human-like-machine-learning-of-word-meanings/54913/)  
@@ -632,8 +631,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 	["Development of Intelligence: Bayesian Inference"](http://youtube.com/watch?v=icEdI0AIOlU)  
 	["Machine vs Human Learning"](http://youtube.com/watch?v=UNYnpO1mkT4)  
 
-  Noah Goodman  
-	["Probabilistic Programs: A New Language for AI"](http://youtube.com/watch?v=fclvsoaUI-U)  
+  ["Probabilistic Programs: A New Language for AI"](http://youtube.com/watch?v=fclvsoaUI-U) by Noah Goodman
 
 
   ["How Does the Brain Do Plausible Reasoning"](http://bayes.wustl.edu/etj/articles/brain.pdf) by E.T. Jaynes  
@@ -686,13 +684,11 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   "Many machine reading approaches, from shallow information extraction to deep semantic parsing, map natural language to symbolic representations of meaning. Representations such as first-order logic capture the richness of natural language and support complex reasoning, but often fail in practice due to their reliance on logical background knowledge and the difficulty of scaling up inference. In contrast, low-dimensional embeddings (i.e. distributional representations) are efficient and enable generalization, but it is unclear how reasoning with embeddings could support the full power of symbolic representations such as first-order logic."
 
 
-  ["Low-Dimensional Embeddings of Logic"](http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/)
-	by Rocktaschel, Bosnjak, Singh, Riedel
+  ["Reading and Reasoning with Vector Representations"](https://dropbox.com/s/6myacfkrp9raakq/Sheffield%202017%20Talk.pdf) by Sebastian Riedel
 
-  ["On Approximate Reasoning Capabilities of Low-Rank Vector Spaces"](https://drive.google.com/file/d/0B_hicYJxvbiObnNYZ0cyMkotUzQ)
-	by Bouchard, Singh, Trouillon
+  ["Low-Dimensional Embeddings of Logic"](http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/) by Tim Rocktaschel
 
-  ["What Can Deep Learning Learn from Symbolic Inference?"](http://www.bicv.org/?wpdmdl=2309) by Rocktaschel
+  ["What Can Deep Learning Learn from Symbolic Inference?"](http://www.bicv.org/?wpdmdl=2309) by Tim Rocktaschel
 
   - Deep Learning and symbolic rules can be combined efficiently  
     * map logical formulae to differentiable expressions  
@@ -794,21 +790,21 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   - *Allen AI Science Challenge*  
 	<https://kaggle.com/c/the-allen-ai-science-challenge>
 
-	"Moving Beyond the Turing Test with the Allen AI Science Challenge" -
-		<https://arxiv.org/abs/1604.04315> + <http://akbc.ws/2016/slides/etzioni-akbc16.pptx>
+	["Moving Beyond the Turing Test with the Allen AI Science Challenge"](https://arxiv.org/abs/1604.04315)
+		([slides](http://akbc.ws/2016/slides/etzioni-akbc16.pptx))
 
-	first place - <https://github.com/Cardal/Kaggle_AllenAIscience>  
-	second place - <https://github.com/bwilbertz/kaggle_allen_ai>  
-	third place - <https://github.com/amsqr/Allen_AI_Kaggle>  
+	[first place](https://github.com/Cardal/Kaggle_AllenAIscience)  
+	[second place](https://github.com/bwilbertz/kaggle_allen_ai)  
+	[third place](https://github.com/amsqr/Allen_AI_Kaggle)  
 
 
   - *Winograd Schema Challenge*  
 	<http://commonsensereasoning.org/winograd.html>
 
-	<http://whatsnext.nuance.com/in-the-labs/winograd-schema-challenge-2016-results/>  
+	[results of 2016 competition](http://whatsnext.nuance.com/in-the-labs/winograd-schema-challenge-2016-results/)  
 
-	"The Winograd Schema Challenge" by Hector Levesque - <http://www.cs.toronto.edu/~hector/Papers/winograd.pdf>  
-	"On our best behaviour" by Hector Levesque - <http://www.cs.toronto.edu/~hector/Papers/ijcai-13-paper.pdf>  
+	["The Winograd Schema Challenge"](http://www.cs.toronto.edu/~hector/Papers/winograd.pdf) by Hector Levesque  
+	["On Our Best Behaviour"](http://www.cs.toronto.edu/~hector/Papers/ijcai-13-paper.pdf) by Hector Levesque  
 
 	set of schemas - pairs of sentences that differ only in one or two words and that contain an ambiguity  
 	this ambiguity is resolved in opposite ways in two sentences which requires world knowledge and reasoning  
@@ -826,6 +822,12 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 	- a binary choice, in that its performance evaluation is not relative to observer as in Turing test
 	- vivid, in that it is obvious to non-experts that a program that fails to get right answers clearly has gaps
 	- difficult, in that it is far beyond the current state of the art
+
+
+  - *Facebook CommAI*
+  	<https://github.com/facebookresearch/CommAI-env>
+
+	["A Roadmap Towards Machine Intelligence"](http://arxiv.org/abs/1511.08130) by Mikolov, Joulin, Baroni
 
 
   - *Facebook bAbi*  
@@ -917,6 +919,40 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 
 
 
+#### Snorkel
+
+  <https://github.com/HazyResearch/snorkel>  
+  <http://hazyresearch.github.io/snorkel/>  
+
+
+  "Snorkel is a system for rapidly creating, modeling, and managing training data, currently focused on accelerating the development of structured or "dark" data extraction applications for domains in which large labeled training sets are not available or easy to obtain.
+
+  Today's state-of-the-art machine learning models require massive labeled training sets--which usually do not exist for real-world applications. Instead, Snorkel is based around the new data programming paradigm, in which the developer focuses on writing a set of labeling functions, which are just scripts that programmatically label data. The resulting labels are noisy, but Snorkel automatically models this process - learning, essentially, which labeling functions are more accurate than others - and then uses this to train an end model (for example, a deep neural network in TensorFlow).
+
+  Surprisingly, by modeling a noisy training set creation process in this way, we can take potentially low-quality labeling functions from the user, and use these to train high-quality end models. We see Snorkel as providing a general framework for many weak supervision techniques, and as defining a new programming model for weakly-supervised machine learning systems."
+
+
+  "The Fonduer programming model allows users to iteratively improve the quality of their labeling functions through error analysis, without executing the full pipeline as in previous techniques like [incremental knowledge base construction](#DeepDive)."
+
+
+  "Data Programming: ML with Weak Supervision" ([blog](http://hazyresearch.github.io/snorkel/blog/weak_supervision.html))  
+  "Socratic Learning: Debugging ML Models" ([blog](http://hazyresearch.github.io/snorkel/blog/socratic_learning.html))  
+  "SLiMFast: Assessing the Reliability of Data" ([blog](http://hazyresearch.github.io/snorkel/blog/slimfast.html))  
+  "Data Programming + TensorFlow Tutorial" ([blog](http://hazyresearch.github.io/snorkel/blog/dp_with_tf_blog_post.html))  
+  "Fonduer: Knowledge Base Construction from Richly Formatted Data" ([blog](https://hazyresearch.github.io/snorkel/blog/fonduer.html))  
+  "Babble Labble: Learning from Natural Language Explanations" ([blog](https://hazyresearch.github.io/snorkel/blog/babble_labble.html))  
+  "Structure Learning: Are Your Sources Only Telling You What You Want to Hear?" ([blog](https://hazyresearch.github.io/snorkel/blog/structure_learning.html))  
+
+
+  "Data Programming: Creating Large Training Sets, Quickly" ([arXiv](https://arxiv.org/abs/1605.07723), [video](https://youtube.com/watch?v=iSQHelJ1xxU))  
+  "Socratic Learning: Empowering the Generative Model" ([arXiv](https://arxiv.org/abs/1610.08123), [video](https://youtube.com/watch?v=0gRNochbK9c))  
+  "Data Programming with DDLite: Putting Humans in a Different Part of the Loop" ([HILDA @ SIGMOD 2016](http://cs.stanford.edu/people/chrismre/papers/DDL_HILDA_2016.pdf))  
+  "Snorkel: A System for Lightweight Extraction" ([CIDR 2017](http://cidrdb.org/cidr2017/gongshow/abstracts/cidr2017_73.pdf))  
+  "Learning the Structure of Generative Models without Labeled Data" ([arXiv](https://arxiv.org/abs/1703.00854))  
+  "Fonduer: Knowledge Base Construction from Richly Formatted Data" ([arXiv](https://arxiv.org/abs/1703.05028), [blog](https://hazyresearch.github.io/snorkel/blog/fonduer.html))  
+
+
+
 #### DeepDive
 
   <http://deepdive.stanford.edu>  
@@ -924,7 +960,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 
   <https://blog.acolyer.org/2016/10/07/incremental-knowledge-base-construction-using-deepdive/>
 
-  overview by Chris Re -  
+  overview by Chris Re:  
 	<https://vimeo.com/173069166>  
 	<http://youtube.com/watch?v=j1k9lDYCQbA>  
 	<http://videolectures.net/nipsworkshops2013_re_archaeological_texts/>  
@@ -933,7 +969,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   [showcases](http://deepdive.stanford.edu/doc/showcase/apps.html)  
   [PaleoDB](http://nature.com/news/computers-read-the-fossil-record-1.17868)  
 
-  winner of TAC-KBP 2014 English Slot Filling challenge -  
+  winner of TAC-KBP 2014 English Slot Filling challenge:  
 	<http://nlp.cs.rpi.edu/paper/sf2014overview.pdf>  
 	<http://i.stanford.edu/hazy/papers/2014kbp-systemdescription.pdf>  
 
@@ -1027,10 +1063,10 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
 
   [StarAI](http://starai.org) (Statistical and Relational AI) workshop
 
-  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi/) workshop @ NIPS 2016
+  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi/) workshop at NIPS 2016
 
-  ["Reasoning, Attention, Memory"](http://thespermwhale.com/jaseweston/ram/) workshop @ NIPS 2015  
-  ["Cognitive Computation: Integrating Neural and Symbolic Approaches"](http://neural-symbolic.org/CoCo2015/) workshop @ NIPS 2015  
+  ["Reasoning, Attention, Memory"](http://thespermwhale.com/jaseweston/ram/) workshop at NIPS 2015  
+  ["Cognitive Computation: Integrating Neural and Symbolic Approaches"](http://neural-symbolic.org/CoCo2015/) workshop at NIPS 2015  
 
   ["Knowledge Representation and Reasoning: Integrating Symbolic and Neural Approaches"](https://sites.google.com/site/krr2015/) workshop
 
@@ -1067,7 +1103,7 @@ How knowledge can be represented? How knowledge can be used? How knowledge can b
   - [Resource Description Framework](https://dropbox.com/sh/c427b94xex62a40/AABii9_MRHrCZPGJ_Adx_b3Ma)
 
 
-[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/recent%20papers.md)
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md)
 
 
 interesting papers:
@@ -1097,28 +1133,30 @@ interesting papers (see below):
   - <http://cikm2013.org/slides/kevin.pdf>
 
 
+#### Wu, Hsiao, Cheng, Hancock, Rekatsinas, Levis, Re - ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](http://arxiv.org/abs/1703.05028)  # Snorkel
+>	"We introduce Fonduer, a knowledge base construction framework for richly formatted information extraction, where entity relations and attributes are conveyed via structural, tabular, visual, and textual expressions. Fonduer introduces a new programming model for KBC built around a unified data representation that accounts for three challenging characteristics of richly formatted data: (1) prevalent document-level relations, (2) multimodality, and (3) data variety. Fonduer is the first KBC system for richly formatted data and uses a human-in-the-loop paradigm for training machine learning systems, referred to as data programming. Data programming softens the burden of traditional supervision by only asking users to provide lightweight functions that programmatically assign (potentially noisy) labels to the input data. Fonduer’s unified data model, together with data programming, allows users to use domain expertise as weak signals of supervision that help guide the KBC process over richly formatted data. We evaluate Fonduer on four real-world applications over different domains and achieve an average improvement of 42 F1 points over the upper bound of state-of-the-art approaches. In some domains, our users have produced up to 1.87× the number of correct entires compared to expert-curated public knowledge bases. Fonduer scales gracefully to millions of documents and is used in both academia and industry to create knowledge bases for real-world problems in many domains."
+
+  - <https://hazyresearch.github.io/snorkel/blog/fonduer.html>
+  - <https://github.com/HazyResearch/snorkel/>
+  - ["Data Programming"](https://github.com/brylevkirill/notes/blob/test/Machine%20Learning.md#ratner-sa-wu-selsam-re---data-programming-creating-large-training-sets-quickly)
+
+
+#### Re, Sadeghian, Shan, Shin, Wang, Wu, Zhang - ["Feature Engineering for Knowledge Base Construction"](http://arxiv.org/abs/1407.6439)  # DeepDive
+>	"Knowledge base construction is the process of populating a knowledge base, i.e., a relational database together with inference rules, with information extracted from documents and structured sources. KBC blurs the distinction between two traditional database problems, information extraction and information integration. For the last several years, our group has been building knowledge bases with scientific collaborators. Using our approach, we have built knowledge bases that have comparable and sometimes better quality than those constructed by human volunteers. In contrast to these knowledge bases, which took experts a decade or more human years to construct, many of our projects are constructed by a single graduate student. Our approach to KBC is based on joint probabilistic inference and learning, but we do not see inference as either a panacea or a magic bullet: inference is a tool that allows us to be systematic in how we construct, debug, and improve the quality of such systems. In addition, inference allows us to construct these systems in a more loosely coupled way than traditional approaches. To support this idea, we have built the DeepDive system, which has the design goal of letting the user "think about features---not algorithms." We think of DeepDive as declarative in that one specifies what they want but not how to get it. We describe our approach with a focus on feature engineering, which we argue is an understudied problem relative to its importance to end-to-end quality."
+
+
+#### Wu, Zhang, Wang, Re - ["Incremental Knowledge Base Construction Using DeepDive"](http://arxiv.org/abs/1502.00731)  # DeepDive
+>	"Populating a database with unstructured information is a long-standing problem in industry and research that encompasses problems of extraction, cleaning, and integration. A recent name used to characterize this problem is Knowledge Base Construction. In this work, we describe DeepDive, a system that combines database and machine learning ideas to help develop KBC systems, and we present techniques to make the KBC process more efficient. We observe that the KBC process is iterative, and we develop techniques to incrementally produce inference results for KBC systems. We propose two methods for incremental inference, based respectively on sampling and variational techniques. We also study the tradeoff space of these methods and develop a simple rule-based optimizer. DeepDive includes all of these contributions, and we evaluate DeepDive on five KBC systems, showing that it can speed up KBC inference tasks by up to two orders of magnitude with negligible impact on quality."
+
+  - <http://youtube.com/watch?v=j1k9lDYCQbA> (Re)
+
+
 #### Mitchell, Cohen, Hruschka, Talukdar, Betteridge, Carlson, Dalvi, Gardner, Kisiel, Krishnamurthy, Lao, Mazaitis, Mohamed, Nakashole, Platanios, Ritter, Samadi, Settles, Wang, Wijaya, Gupta, Chen, Saparov, Greaves, Welling - ["Never-Ending Learning"](http://www.cs.cmu.edu/~wcohen/postscript/aaai-2015.pdf)  # NELL knowledge base
 >	"Whereas people learn many different types of knowledge from diverse experiences over many years, most current machine learning systems acquire just a single function or data model from just a single data set. We propose a never-ending learning paradigm for machine learning, to better reflect the more ambitious and encompassing type of learning performed by humans. As a case study, we describe the Never-Ending Language Learner, which achieves some of the desired properties of a never-ending learner, and we discuss lessons learned. NELL has been learning to read the web 24 hours/day since January 2010, and so far has acquired a knowledge base with over 80 million confidence-weighted beliefs (e.g., servedWith(tea, biscuits)), while learning continually to improve its reading competence over time. NELL has also learned to reason over its knowledge base to infer new beliefs from old ones, and is now beginning to extend its ontology by synthesizing new relational predicates."
 
   - <http://youtube.com/watch?v=PF6ViL5pcGs> (Mitchell)
   - <http://youtube.com/watch?v=--pYaISROqE> (Cohen)
   - <http://videolectures.net/nipsworkshops2013_taludkar_language_learning/> (Talukdar)
-
-
-#### Re, Sadeghian, Shan, Shin, Wang, Wu, Zhang - ["Feature Engineering for Knowledge Base Construction"](http://arxiv.org/abs/1407.6439)  # DeepDive knowledge base
->	"Knowledge base construction is the process of populating a knowledge base, i.e., a relational database together with inference rules, with information extracted from documents and structured sources. KBC blurs the distinction between two traditional database problems, information extraction and information integration. For the last several years, our group has been building knowledge bases with scientific collaborators. Using our approach, we have built knowledge bases that have comparable and sometimes better quality than those constructed by human volunteers. In contrast to these knowledge bases, which took experts a decade or more human years to construct, many of our projects are constructed by a single graduate student. Our approach to KBC is based on joint probabilistic inference and learning, but we do not see inference as either a panacea or a magic bullet: inference is a tool that allows us to be systematic in how we construct, debug, and improve the quality of such systems. In addition, inference allows us to construct these systems in a more loosely coupled way than traditional approaches. To support this idea, we have built the DeepDive system, which has the design goal of letting the user "think about features---not algorithms." We think of DeepDive as declarative in that one specifies what they want but not how to get it. We describe our approach with a focus on feature engineering, which we argue is an understudied problem relative to its importance to end-to-end quality."
-
-
-#### Wu, Zhang, Wang, Re - ["Incremental Knowledge Base Construction Using DeepDive"](http://arxiv.org/abs/1502.00731)  # DeepDive knowledge base
->	"Populating a database with unstructured information is a long-standing problem in industry and research that encompasses problems of extraction, cleaning, and integration. A recent name used to characterize this problem is Knowledge Base Construction. In this work, we describe DeepDive, a system that combines database and machine learning ideas to help develop KBC systems, and we present techniques to make the KBC process more efficient. We observe that the KBC process is iterative, and we develop techniques to incrementally produce inference results for KBC systems. We propose two methods for incremental inference, based respectively on sampling and variational techniques. We also study the tradeoff space of these methods and develop a simple rule-based optimizer. DeepDive includes all of these contributions, and we evaluate DeepDive on five KBC systems, showing that it can speed up KBC inference tasks by up to two orders of magnitude with negligible impact on quality."
-
-  - <http://youtube.com/watch?v=j1k9lDYCQbA> (Re)
-
-
-#### Wu, Hsiao, Cheng, Hancock, Rekatsinas, Levis, Re - ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](http://arxiv.org/abs/1703.05028)  # DeepDive knowledge base
->	"We introduce Fonduer, a knowledge base construction framework for richly formatted information extraction, where entity relations and attributes are conveyed via structural, tabular, visual, and textual expressions. Fonduer introduces a new programming model for KBC built around a unified data representation that accounts for three challenging characteristics of richly formatted data: (1) prevalent document-level relations, (2) multimodality, and (3) data variety. Fonduer is the first KBC system for richly formatted data and uses a human-in-the-loop paradigm for training machine learning systems, referred to as data programming. Data programming softens the burden of traditional supervision by only asking users to provide lightweight functions that programmatically assign (potentially noisy) labels to the input data. Fonduer’s unified data model, together with data programming, allows users to use domain expertise as weak signals of supervision that help guide the KBC process over richly formatted data. We evaluate Fonduer on four real-world applications over different domains and achieve an average improvement of 42 F1 points over the upper bound of state-of-the-art approaches. In some domains, our users have produced up to 1.87× the number of correct entires compared to expert-curated public knowledge bases. Fonduer scales gracefully to millions of documents and is used in both academia and industry to create knowledge bases for real-world problems in many domains."
-
-  - ["Data Programming"](https://github.com/brylevkirill/notes/blob/test/Machine%20Learning.md#ratner-sa-wu-selsam-re---data-programming-creating-large-training-sets-quickly)
 
 
 #### Mahdisoltani, Biega, Suchanek - ["YAGO3: A Knowledge Base from Multilingual Wikipedias"](http://suchanek.name/work/publications/cidr2015.pdf)  # Yago knowledge base
@@ -1214,7 +1252,7 @@ noise, inferring missing information, and determining which candidate facts shou
 >	"ProPPR is a strict generalization of PRA."
 
   - <http://youtu.be/--pYaISROqE?t=12m35s> (Cohen)
-  - ["Learning to Reason with Extracted Information"])(http://www.cs.cmu.edu/afs/cs/Web/People/wcohen/nlu-2014.ppt)
+  - ["Learning to Reason with Extracted Information"](http://www.cs.cmu.edu/afs/cs/Web/People/wcohen/nlu-2014.ppt)
   - ["Can KR Represent Real-World Knowledge?"](https://drive.google.com/file/d/0B_hicYJxvbiOc05xNEhvdVVSQWc/)
   - ["ProPPR: Efficient First-Order Probabilistic Logic Programming for Structure Discovery, Parameter Learning, and Scalable Inference"](http://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/yww/papers/starAI.pdf)
   - <https://github.com/TeamCohen/ProPPR>
@@ -1257,7 +1295,7 @@ noise, inferring missing information, and determining which candidate facts shou
 #### Neelakantan, Roth, McCallum - ["Knowledge Base Completion using Compositional Vector Space Models"](http://akbc.ws/2014/submissions/akbc2014_submission_10.pdf)  (Universal Schema)  # Google Knowledge Vault
 >	"Traditional approaches to knowledge base completion have been based on symbolic representations. Low-dimensional vector embedding models proposed recently for this task are attractive since they generalize to possibly unlimited sets of relations. A significant drawback of previous embedding models for KB completion is that they merely support reasoning on individual relations (e.g., bornIn(X, Y) -> nationality(X, Y)). In this work, we develop models for KB completion that support chains of reasoning on paths of any length using compositional vector space models. We construct compositional vector representations for the paths in the KB graph from the semantic vector representations of the binary relations in that path and perform inference directly in the vector space. Unlike previous methods, our approach can generalize to paths that are unseen in training and, in a zero-shot setting, predict target relations without supervised training data for that relation."
 
-  - <http://youtube.com/watch?v=mSrkzc0Nksg> (Neelakantan) + <https://docs.google.com/file/d/0B_hicYJxvbiOTUxZMWY5T2N2VG8>
+  - <http://youtube.com/watch?v=mSrkzc0Nksg> (Neelakantan) + [slides](https://docs.google.com/file/d/0B_hicYJxvbiOTUxZMWY5T2N2VG8)
 
 
 #### Das, Neelakantan, Belanger, McCallum - ["Chains of Reasoning over Entities, Relations, and Text using Recurrent Neural Networks"](http://arxiv.org/abs/1607.01426)  (Universal Schema)
@@ -1378,7 +1416,7 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 ---
 ### interesting papers - question answering over knowledge bases
 
-WebQuestions challenge standings - <https://codalab.org/worksheets/0xba659fe363cb46e7a505c5b6a774dc8a/>
+[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)  
 
 
 #### Bordes, Chopra, Weston - ["Question Answering with Subgraph Embeddings"](http://emnlp2014.org/papers/pdf/EMNLP2014067.pdf)  (entity embedding)
@@ -1436,7 +1474,6 @@ WebQuestions challenge standings - <https://codalab.org/worksheets/0xba659fe363c
 >	"Since we train from question-answer pairs, we collect answers by executing the gold logical forms against Freebase. We execute λ-DCS queries by converting them into SPARQL and executing them against a copy of Freebase using the Virtuoso database engine."
 
   - <http://youtube.com/watch?v=JANpOGFOR_E> (Berant)
-  - <http://nlp.stanford.edu/joberant/homepage_files/talks/facebook_jun14.pdf>
   - <http://www-nlp.stanford.edu/software/sempre/>
 
 
@@ -1474,32 +1511,37 @@ WebQuestions challenge standings - <https://codalab.org/worksheets/0xba659fe363c
 
 >	"In this work, we describe a large-scale goal-driven web navigation task and argue that it serves as a useful test bed for evaluating the capabilities of artificial agents on natural language understanding and planning. We release a software tool, called WebNav, that compiles a given website into a goal-driven web navigation task. As an example, we construct WikiNav from Wikipedia using WebNav. We extend WikiNav with Jeopardy! questions, thus creating WikiNav-Jeopardy. We evaluate various neural net based agents on WikiNav and WikiNav-Jeopardy. Our results show that more sophisticated agents have better performance, thus supporting our claim that this task is well suited to evaluate future progress in natural language understanding and planning. Furthermore, we show that our agent pretrained on WikiNav outperforms two strong inverted-index based search engines on the WikiNav-Jeopardy. These empirical results support our claim on the usefulness of the proposed task and agents in challenging applications such as focused crawling and question-answering."
 
-  - [Value Iteration Networks](https://arxiv.org/abs/1602.02867) for this problem - <https://youtu.be/tXBHfbHHlKc?t=31m20s> (Tamar)
+  - applying [Value Iteration Networks](https://arxiv.org/abs/1602.02867) to this problem - <https://youtu.be/tXBHfbHHlKc?t=31m20s> (Tamar)
 
 
 #### Tamar, Wu, Thomas, Levine, Abbeel - ["Value Iteration Networks"](http://arxiv.org/abs/1602.02867)  (crawling the web)
-	"We introduce the value iteration network (VIN): a fully differentiable neural network with a ‘planning module’ embedded within. VINs can learn to plan, and are suitable for predicting outcomes that involve planning-based reasoning, such as policies for reinforcement learning. Key to our approach is a novel differentiable approximation of the value-iteration algorithm, which can be represented as a convolutional neural network, and trained end-to-end using standard backpropagation. We evaluate VIN based policies on discrete and continuous path-planning domains, and on a natural-language based search task. We show that by learning an explicit planning computation, VIN policies generalize better to new, unseen domains."
-	"The introduction of powerful and scalable RL methods has opened up a range of new problems for deep learning. However, few recent works investigate policy architectures that are specifically tailored for planning under uncertainty, and current RL theory and benchmarks rarely investigate the generalization properties of a trained policy. This work takes a step in this direction, by exploring better generalizing policy representations. Our VIN policies learn an approximate planning computation relevant for solving the task, and we have shown that such a computation leads to better generalization in a diverse set of tasks, ranging from simple gridworlds that are amenable to value iteration, to continuous control, and even to navigation of Wikipedia links. In future work we intend to learn different planning computations, based on simulation, or optimal linear control, and combine them with reactive policies, to potentially develop RL solutions for task and motion planning"
-	"In our experiment in continuous control we used hierarchical policy: high-level policy solved low-resolution map and low-level policy executed it. This is very different from options/skills framework. There is one smooth policy that implements everything. We don't need to learn initiation sets or termination sets. But more importantly, the motivation for using hierarchy here was different. The motivation wasn't to increase learning rate or exploration - the motivation was to generalize. We understood that low-resolution map is sufficient for doing planning which promotes generalization, but low-level policy uses the fact that dynamics is similar across different tasks."
-	--
-	"Its contribution is to offer a new way to think about value iteration in the context of deep networks. It shows how the CNN architecture can be hijacked to implement the Bellman optimality operator, and how the backprop signal can be used to learn a deterministic model of the underlying MDP."
-	"Value iteration is similar enough to a sequence of convolutions and max-pooling layers that you can emulate an (unrolled) planning computation with a deep network. This allows neural nets to do planning, e.g. moving from start to goal in grid-world, or navigating a website to find query."
-	-- https://youtube.com/watch?v=tXBHfbHHlKc (Tamar) + http://technion.ac.il/~danielm/icml_slides/Talk7.pdf
-	-- https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Value-Iteration-Networks (Tamar)
-	-- https://github.com/karpathy/paper-notes/blob/master/vin.md
-	-- https://blog.acolyer.org/2017/02/09/value-iteration-networks/
-	-- https://github.com/avivt/VIN
-	-- https://github.com/TheAbhiKumar/tensorflow-value-iteration-networks
-	-- https://github.com/zuoxingdong/VIN_PyTorch_Visdom
+>	"We introduce the value iteration network (VIN): a fully differentiable neural network with a ‘planning module’ embedded within. VINs can learn to plan, and are suitable for predicting outcomes that involve planning-based reasoning, such as policies for reinforcement learning. Key to our approach is a novel differentiable approximation of the value-iteration algorithm, which can be represented as a convolutional neural network, and trained end-to-end using standard backpropagation. We evaluate VIN based policies on discrete and continuous path-planning domains, and on a natural-language based search task. We show that by learning an explicit planning computation, VIN policies generalize better to new, unseen domains."
+
+>	"The introduction of powerful and scalable RL methods has opened up a range of new problems for deep learning. However, few recent works investigate policy architectures that are specifically tailored for planning under uncertainty, and current RL theory and benchmarks rarely investigate the generalization properties of a trained policy. This work takes a step in this direction, by exploring better generalizing policy representations. Our VIN policies learn an approximate planning computation relevant for solving the task, and we have shown that such a computation leads to better generalization in a diverse set of tasks, ranging from simple gridworlds that are amenable to value iteration, to continuous control, and even to navigation of Wikipedia links. In future work we intend to learn different planning computations, based on simulation, or optimal linear control, and combine them with reactive policies, to potentially develop RL solutions for task and motion planning"
+
+>	"In our experiment in continuous control we used hierarchical policy: high-level policy solved low-resolution map and low-level policy executed it. This is very different from options/skills framework. There is one smooth policy that implements everything. We don't need to learn initiation sets or termination sets. But more importantly, the motivation for using hierarchy here was different. The motivation wasn't to increase learning rate or exploration - the motivation was to generalize. We understood that low-resolution map is sufficient for doing planning which promotes generalization, but low-level policy uses the fact that dynamics is similar across different tasks."
+
+----
+>	"Its contribution is to offer a new way to think about value iteration in the context of deep networks. It shows how the CNN architecture can be hijacked to implement the Bellman optimality operator, and how the backprop signal can be used to learn a deterministic model of the underlying MDP."
+
+>	"Value iteration is similar enough to a sequence of convolutions and max-pooling layers that you can emulate an (unrolled) planning computation with a deep network. This allows neural nets to do planning, e.g. moving from start to goal in grid-world, or navigating a website to find query."
+
+  - <https://youtube.com/watch?v=tXBHfbHHlKc> (Tamar) + [slides](http://technion.ac.il/~danielm/icml_slides/Talk7.pdf)
+  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Value-Iteration-Networks> (Tamar)
+  - <https://github.com/karpathy/paper-notes/blob/master/vin.md>
+  - <https://blog.acolyer.org/2017/02/09/value-iteration-networks/>
+  - <https://github.com/avivt/VIN>
+  - <https://github.com/TheAbhiKumar/tensorflow-value-iteration-networks>
+  - <https://github.com/zuoxingdong/VIN_PyTorch_Visdom>
 
 
 
 ---
 ### interesting papers - question answering over texts
 
+[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)  
 
 "[continuous space representations]" section of [Natural Language Processing](https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt)  
-
 [machine reading methods and datasets](http://matt-gardner.github.io/paper-thoughts/2016/12/08/reading-comprehension-survey.html) by Matt Gardner  
 
 
@@ -1538,7 +1580,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 >	"We describe a new class of learning models called memory networks. Memory networks reason with inference components combined with a long-term memory component; they learn how to use these jointly. The long-term memory can be read and written to, with the goal of using it for prediction. We investigate these models in the context of question answering where the long-term memory effectively acts as a (dynamic) knowledge base, and the output is a textual response. We evaluate them on a large-scale QA task, and a smaller, but more complex, toy task generated from a simulated world. In the latter, we show the reasoning power of such models by chaining multiple supporting sentences to answer questions that require understanding the intension of verbs."
 
   - <https://facebook.com/video.php?v=10153098860532200> (demo)
-  - <http://youtube.com/watch?v=Xumy3Yjq4zk> + <http://cs224d.stanford.edu/lectures/CS224d-Lecture12.pdf> (Weston)
+  - <http://youtube.com/watch?v=Xumy3Yjq4zk> (Weston) + [slides](http://cs224d.stanford.edu/lectures/CS224d-Lecture12.pdf)
   - <http://techtalks.tv/talks/memory-networks-for-language-understanding/62356/> (Weston)
   - <http://youtu.be/jRkm6PXRVF8?t=16m29s> (Weston)
   - <http://blog.acolyer.org/2016/03/10/memory-networks/>
@@ -1593,7 +1635,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 >	Two strategies for transducing with replacement of answer placeholder symbol with entity symbol: document||query (putting all the information about document into thought vector before knowing the query) or query||document (putting all the information about query before thinking about the answer). The second approach (filtering document after digesting query) works better.
 >	We do not tell the model anything about the structure. We don't tell it there are query and document (they are just symbols). We don't tell it there is symbol it has to substitute (it just has to learn them). So there is really long range between variable in query and answer in document (thousands of words). And the problem is more difficult than other transduction problems because of that."
 
-  - <http://videolectures.net/deeplearning2015_blunsom_memory_reading/> (Blunsom, 33:00) + <http://www.iro.umontreal.ca/~memisevr/dlss2015/num-mr.pdf>
+  - <http://videolectures.net/deeplearning2015_blunsom_memory_reading/> (Blunsom, 33:00) + [slides](http://www.iro.umontreal.ca/~memisevr/dlss2015/num-mr.pdf)
   - <http://youtu.be/-WPP9f1P-Xc?t=22m28s> (Blunsom)
   - <http://egrefen.com/docs/HowMuchLinguistics2015.pdf>
   - <http://www.shortscience.org/paper?bibtexKey=conf/nips/HermannKGEKSB15>
@@ -1631,7 +1673,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 ---
 ### interesting papers - reasoning
 
-[selected papers](https://dropbox.com/sh/ju4oi0221zo3ql7/AAC8SscYIxR5uk3CVhQXpkuda)
+[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)  
 
 
 #### Neelakantan, Le, Sutskever - ["Neural Programmer: Inducing Latent Programs with Gradient Descent"](http://arxiv.org/abs/1511.04834)  (neural reasoning over knowledge base)
@@ -1701,7 +1743,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
   - <http://youtube.com/watch?v=CmgGYn9KIpE> (Erk)
 
 
-#### Khot, Balasubramanian, Gribkoff, Sabharwal, Clark, Etzioni - ["Markov Logic Networks for Natural Language Question Answering"](http://arxiv.org/abs/1507.03045)  (MLN reasoning over text)  # AI2
+#### Khot, Balasubramanian, Gribkoff, Sabharwal, Clark, Etzioni - ["Markov Logic Networks for Natural Language Question Answering"](http://arxiv.org/abs/1507.03045)  (MLN reasoning over text)
 >	"Our goal is to answer elementary-level science questions using knowledge extracted automatically from science textbooks, expressed in a subset of first-order logic. Given the incomplete and noisy nature of these automatically extracted rules, Markov Logic Networks seem a natural model to use, but the exact way of leveraging MLNs is by no means obvious. We investigate three ways of applying MLNs to our task. In the first, we simply use the extracted science rules directly as MLN clauses. Unlike typical MLN applications, our domain has long and complex rules, leading to an unmanageable number of groundings. We exploit the structure present in hard constraints to improve tractability, but the formulation remains ineffective. In the second approach, we instead interpret science rules as describing prototypical entities, thus mapping rules directly to grounded MLN assertions, whose constants are then clustered using existing entity resolution methods. This drastically simplifies the network, but still suffers from brittleness. Finally, our third approach, called Praline, uses MLNs to align the lexical elements as well as define and control how inference should be performed in this task. Our experiments, demonstrating a 15% accuracy boost and a 10x reduction in runtime, suggest that the flexibility and different inference semantics of Praline are a better fit for the natural language question answering task".
 >	"Our investigation of the potential of MLNs for QA resulted in multiple formulations, the third of which is a flexible model that outperformed other, more natural approaches. We hope our question sets and MLNs will guide further research on improved modeling of the QA task and design of more efficient inference mechanisms for such models. While SRL methods seem a perfect fit for textual reasoning tasks such as RTE and QA, their performance on these tasks is still not up to par with simple textual feature-based approaches (Beltagy and Mooney 2014). On our datasets too, simple word-overlap based approaches perform quite well, scoring around 55%. We conjecture that the increased flexibility of complex relational models comes at the cost of increased susceptibility to noise in the input. Automatically learning weights of these models may allow leveraging this flexibility in order to handle noise better. Weight learning in these models, however, is challenging as we only observe the correct answer for a question and not intermediate feedback such as ideal alignments and desirable inference chains. Modeling the QA task with MLNs, an undirected model, gives the flexibility to define a joint model that allows alignment to influence inference and vice versa. At the same time, inference chains themselves need to be acyclic, suggesting that models such as Problog and SLP would be a better fit for this sub-task. Exploring hybrid formulation and designing more efficient and accurate MLNs or other SRL models for the QA task remains an exciting avenue of future research."
 
@@ -1709,13 +1751,13 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
   - <http://akbc.ws/2014/slides/etzioni-nips-akbc.pdf> (slides 30-37)
 
 
-#### Clark, Etzioni, Khot, Sabharwal, Tafjord, Turney - ["Combining Retrieval, Statistics, and Inference to Answer Elementary Science Questions"](http://web.engr.illinois.edu/~khashab2/files/2015_aristo/2015_aristo_aaai-2016.pdf)  # AI2
+#### Clark, Etzioni, Khot, Sabharwal, Tafjord, Turney - ["Combining Retrieval, Statistics, and Inference to Answer Elementary Science Questions"](http://web.engr.illinois.edu/~khashab2/files/2015_aristo/2015_aristo_aaai-2016.pdf)
 >	"What capabilities are required for an AI system to pass standard 4th Grade Science Tests? Previous work has examined the use of Markov Logic Networks to represent the requisite background knowledge and interpret test questions, but did not improve upon an information retrieval baseline. In this paper, we describe an alternative approach that operates at three levels of representation and reasoning: information retrieval, corpus statistics, and simple inference over a semi-automatically constructed knowledge base, to achieve substantially improved results. We evaluate the methods on six years of unseen, unedited exam questions from the NY Regents Science Exam (using only non-diagram, multiple choice questions), and show that our overall system’s score is 71.3%, an improvement of 23.8% (absolute) over the MLN-based method described in previous work. We conclude with a detailed analysis, illustrating the complementary strengths of each method in the ensemble. Our datasets are being released to enable further research."
 
   - <https://youtube.com/watch?v=HcPCURc59Vw> (Sabharwal)
 
 
-#### Khashabi, Khot, Sabharwal, Clark, Etzioni, Roth - ["Question Answering via Integer Programming over Semi-Structured Knowledge"](http://arxiv.org/abs/1604.06076)  # AI2
+#### Khashabi, Khot, Sabharwal, Clark, Etzioni, Roth - ["Question Answering via Integer Programming over Semi-Structured Knowledge"](http://arxiv.org/abs/1604.06076)
 >	"Answering science questions posed in natural language is an important AI challenge. Answering such questions often requires non-trivial inference and knowledge that goes beyond factoid retrieval. Yet, most systems for this task are based on relatively shallow Information Retrieval (IR) and statistical correlation techniques operating on large unstructured corpora. We propose a structured inference system for this task, formulated as an Integer Linear Program (ILP), that answers natural language questions using a semi-structured knowledge base derived from text, including questions requiring multi-step inference and a combination of multiple facts. On a dataset of real, unseen science questions, our system significantly outperforms (+14%) the best previous attempt at structured reasoning for this task, which used Markov Logic Networks (MLNs). It also improves upon a previous ILP formulation by 17.7%. When combined with unstructured inference methods, the ILP system significantly boosts overall performance (+10%). Finally, we show our approach is substantially more robust to a simple answer perturbation compared to statistical correlation methods."
 
 >	"In contrast to a state-of-the-art structured inference method [Khot et al., 2015] for this task, which used Markov Logic Networks, TableILP achieves a significantly (+14% absolute) higher test score. This suggests that a combination of a rich and fine-grained constraint language, namely ILP, even with a publicly available solver is more effective in practice than various MLN formulations of the task. Further, while the scalability of the MLN formulations was limited to very few (typically one or two) selected science rules at a time, our approach easily scales to hundreds of relevant scientific facts. It also complements the kind of questions amenable to IR and PMI techniques, as is evidenced by the fact that a combination (trained using simple Logistic Regression of TableILP with IR and PMI results in a significant (+10% absolute) boost in the score compared to IR alone."
@@ -1737,7 +1779,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 ### interesting papers - information extraction and integration
 
 [selected papers](https://dropbox.com/sh/jmkl4mhajjghjxk/AABfAImA69Kzxx3b0IhCGouMa)  
-[entity discovery and linking papers](http://nlp.cs.rpi.edu/kbp/2017/elreading.html)  
+[papers on entity discovery and linking](http://nlp.cs.rpi.edu/kbp/2017/elreading.html)  
 
 
 #### Dong, Gabrilovich, Heitz, Horn, Murphy, Sun, Zhang - ["From Data Fusion to Knowledge Fusion"](http://www.vldb.org/pvldb/vol7/p881-dong.pdf)  (knowledge base population)  # Google Knowledge Vault

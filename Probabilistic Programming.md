@@ -1,5 +1,5 @@
-Probabilistic programming is a mechanism for compactly and compositionally representing a large set of richly expressive generative models as well as performing general-purpose automatic algorithms to do inference over variables in such models.  
-Higher-order probabilistic programming languages open up possibility of doing inference over generative models themselves. The goal is to find an efficient robust way to automatically produce and tune models based on training data and knowledge.  
+  Probabilistic programming is a mechanism for compactly and compositionally representing a large set of richly expressive generative models as well as performing general-purpose automatic algorithms to do inference over variables in such models.  
+  Higher-order probabilistic programming languages open up possibility of doing inference over generative models themselves. The goal is to find an efficient robust way to automatically produce and tune models based on training data and knowledge.  
 
 
   * [introduction](#introduction)
@@ -15,7 +15,7 @@ Higher-order probabilistic programming languages open up possibility of doing in
 
 ----
 
-[bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)
+  [bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)
 
 
 
@@ -59,7 +59,7 @@ Higher-order probabilistic programming languages open up possibility of doing in
   ["Probabilistic Programming and Bayesian Methods for Hackers"](https://goo.gl/oav8Mp) by Davidson-Pilon  
   ["The Design and Implementation of Probabilistic Programming Languages"](http://dippl.org) by Noah Goodman and Andreas Stuhlmuller  
 
-  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi/) workshop @ NIPS 2016
+  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi/) workshop at NIPS 2016
 
 
 
@@ -118,6 +118,9 @@ Higher-order probabilistic programming languages open up possibility of doing in
   * PyMC3  
 	<http://pymc-devs.github.io/pymc3/>  
 
+  * BayesFlow
+	<https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/bayesflow>
+
   * Infer.NET  
 	<http://research.microsoft.com/infernet>  
 
@@ -167,7 +170,7 @@ Higher-order probabilistic programming languages open up possibility of doing in
 [selected papers](https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca)
 
 
-[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/recent%20papers.md)
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md)
 
 
 

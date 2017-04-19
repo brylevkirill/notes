@@ -1,6 +1,4 @@
-Machine Learning is the subfield of computer science that gives computers the ability to learn without being explicitly programmed.  
-A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.  
-Anywhere there is a function y = f(x), where f(x) has some parameters used to make a decision, prediction, or estimate, has the potential to be replaced by a machine learning algorithm.  
+  A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.
 
 
   * [overview](#overview)
@@ -18,7 +16,7 @@ Anywhere there is a function y = f(x), where f(x) has some parameters used to ma
 ----
 
   [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
-  [reinforcement learning](https://dropbox.com/s/dexryjnmxujdynd/Reinforcement%20Learning.txt)  
+  [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)  
   [bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)  
   [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
 
@@ -34,6 +32,9 @@ Anywhere there is a function y = f(x), where f(x) has some parameters used to ma
   [natural language processing](https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt)  
   [information retrieval](https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt)  
   [personal assistants](https://dropbox.com/s/0fyarlwcfb8mjdq/Personal%20Assistants.txt)  
+
+
+  Any source code for expression y = f(x), where f(x) has some parameters and is used to make decision, prediction or estimate, has potential to be replaced by machine learning algorithm.
 
 
 
@@ -140,6 +141,7 @@ Anywhere there is a function y = f(x), where f(x) has some parameters used to ma
 
 #### blogs
 
+  <http://distill.pub>  
   <http://inference.vc>  
   <http://blog.shakirm.com>  
   <http://hunch.net>  
@@ -470,7 +472,7 @@ Bias-variance tradeoff characterizes how robust algorithm is to errors in its mo
 
 ----
 
-  Neural Abstract Machines & Program Induction workshop @ NIPS 2016 - <https://uclmr.github.io/nampi/>
+  Neural Abstract Machines & Program Induction workshop at NIPS 2016 - <https://uclmr.github.io/nampi/>
 
 
   <http://cacm.acm.org/magazines/2015/11/193326-inductive-programming-meets-the-real-world/fulltext>  
@@ -633,12 +635,12 @@ problems:
 [selected papers on machine learning](https://dropbox.com/sh/kpd5tvfnc29lstj/AAD3oGVCUdkoMS56_2g8Oj7_a)
 
 [selected papers on deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers)  
+[selected papers on reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers)  
 [selected papers on bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt#interesting-papers)  
 [selected papers on probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers)  
-[selected papers on reinforcement learning](https://dropbox.com/s/dexryjnmxujdynd/Reinforcement%20Learning.txt#interesting-papers)  
 
 
-[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/recent%20papers.md)
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md)
 
 
 interesting papers (see below):
@@ -694,14 +696,18 @@ interesting papers (see below):
 
   - <https://youtube.com/watch?v=iSQHelJ1xxU>
   - <http://hazyresearch.github.io/snorkel/blog/weak_supervision.html>
+  - <http://hazyresearch.github.io/snorkel/blog/dp_with_tf_blog_post.html>
   - <https://github.com/HazyResearch/snorkel>
-  - "Fonduer: Knowledge Base Construction from Richly Formatted Data" - <https://arxiv.org/abs/1703.05028>
+  - ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](https://arxiv.org/abs/1703.05028)
 
 
 #### Varma, He, Iter, Xu, Yu, de Sa, Re - [Socratic Learning: Empowering the Generative Model](http://arxiv.org/abs/1610.08123)
 >	"A challenge in training discriminative models like neural networks is obtaining enough labeled training data. Recent approaches have leveraged generative models to denoise weak supervision sources that a discriminative model can learn from. These generative models directly encode the users' background knowledge. Therefore, these models may be incompletely specified and fail to model latent classes in the data. We present Socratic learning to systematically correct such generative model misspecification by utilizing feedback from the discriminative model. We prove that under mild conditions, Socratic learning can recover features from the discriminator that informs the generative model about these latent classes. Experimentally, we show that without any hand-labeled data, the corrected generative model improves discriminative performance by up to 4.47 points and reduces error for an image classification task by 80% compared to a state-of-the-art weak supervision modeling technique."
 
   - <https://youtube.com/watch?v=0gRNochbK9c>
+  - <http://hazyresearch.github.io/snorkel/blog/socratic_learning.html>
+  - <https://github.com/HazyResearch/snorkel>
+  - ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](https://arxiv.org/abs/1703.05028)
 
 
 #### Platanios, Blum, Mitchell - ["Estimating Accuracy from Unlabeled Data"](http://auai.org/uai2014/proceedings/individuals/313.pdf)
@@ -763,7 +769,13 @@ interesting papers (see below):
 #### Simard, Chickering, Lakshmiratan, Charles, Bottou, Suarez, Grangier, Amershi, Verwey, Suh, - ["ICE: Enabling Non-Experts to Build Models Interactively for Large-Scale Lopsided Problems"](http://arxiv.org/abs/1409.4814)
 >	"Quick interaction between a human teacher and a learning machine presents numerous benefits and challenges when working with web-scale data. The human teacher guides the machine towards accomplishing the task of interest. The learning machine leverages big data to find examples that maximize the training value of its interaction with the teacher. When the teacher is restricted to labeling examples selected by the machine, this problem is an instance of active learning. When the teacher can provide additional information to the machine (e.g., suggestions on what examples or predictive features should be used) as the learning task progresses, then the problem becomes one of interactive learning. To accommodate the two-way communication channel needed for efficient interactive learning, the teacher and the machine need an environment that supports an interaction language. The machine can access, process, and summarize more examples than the teacher can see in a lifetime. Based on the machine’s output, the teacher can revise the definition of the task or make it more precise. Both the teacher and the machine continuously learn and benefit from the interaction. We have built a platform to (1) produce valuable and deployable models and (2) support research on both the machine learning and user interface challenges of the interactive learning problem. The platform relies on a dedicated, low-latency, distributed, in-memory architecture that allows us to construct web-scale learning machines with quick interaction speed. The purpose of this paper is to describe this architecture and demonstrate how it supports our research efforts. Preliminary results are presented as illustrations of the architecture but are not the primary focus of the paper."
 
-  - used by Microsoft LUIS according to <http://arxiv.org/abs/1606.03966>
+  - used for Microsoft LUIS according to <http://arxiv.org/abs/1606.03966>
+
+
+#### McMahan, Moore, Ramage, Hampson, Arcas - ["Communication-Efficient Learning of Deep Networks from Decentralized Data"](https://arxiv.org/abs/1602.05629)
+>	"Modern mobile devices have access to a wealth of data suitable for learning models, which in turn can greatly improve the user experience on the device. For example, language models can improve speech recognition and text entry, and image models can automatically select good photos. However, this rich data is often privacy sensitive, large in quantity, or both, which may preclude logging to the data center and training there using conventional approaches. We advocate an alternative that leaves the training data distributed on the mobile devices, and learns a shared model by aggregating locally-computed updates. We term this decentralized approach Federated Learning. We present a practical method for the federated learning of deep networks based on iterative model averaging, and conduct an extensive empirical evaluation, considering five different model architectures and four datasets. These experiments demonstrate the approach is robust to the unbalanced and non-IID data distributions that are a defining characteristic of this setting. Communication costs are the principal constraint, and we show a reduction in required communication rounds by 10-100x as compared to synchronized stochastic gradient descent."
+
+  - used for Android - <https://research.googleblog.com/2017/04/federated-learning-collaborative.html>
 
 
 

@@ -1,11 +1,8 @@
   * overview
-  * industry
   * study
   * challenges
   * question answering
-  * document models
-  * topic models
-  * recommender systems
+  * industry
   * interesting papers
     - document models
     - entity-centric search
@@ -14,20 +11,12 @@
     - recommendations
 
 
-selected papers and books -
-	https://dropbox.com/sh/pvpzyxfcpy39j8p/AACduJ-pVF9Lh-gn3_SExj1va  (information retrieval + recommendation systems)
-	https://dropbox.com/sh/c427b94xex62a40/AABii9_MRHrCZPGJ_Adx_b3Ma  (semantic web)
-
-
 
 
 [overview]
 
-Matt Cutts on future of web search - https://youtube.com/watch?v=JMY-iNnqUIo
 Amit Singhal - "Constructing the Conversational Computer" - https://vimeo.com/84711332
 Tim Tuttle - https://youtube.com/watch?v=do_iwSusH3E
-
-Svetlana Grigoryeva - "Search as a Dialog" - http://youtube.com/watch?v=wvSPInn-6V0 (in russian)
 
 Oren Etzioni - "The Future of Semantic Web Search" - http://tce.technion.ac.il/files/2013/06/OrenEtzioni.pptx + http://youtube.com/watch?v=qsK-yQR1cGs
 Oren Etzioni - "Open Information Extraction as Web Scale" - http://acml2011.wikispaces.com/file/view/Oren%20Etzioni.pdf
@@ -36,39 +25,6 @@ Peter Meyers - "Beyond 10 Blue Links - The Future of Ranking" - http://slideshar
 
 Peter Mika - "Semantic Search On The Rise" - http://labs.yahoo.com/_c/uploads/SemTech2014-v2.pptx + http://youtube.com/watch?v=Dw2OhqvB0cE
 	"Making the Web Searchable" - http://slideshare.net/pmika1/sem-search-icwe
-
-future of search:
-	information retrieval -> information extraction
-	TF-IDF, pagerank -> relational graph
-	keywords, docs -> entities, predicates
-	keyword queries -> questions
-	"10 blue links" -> answers
-
-
-
-
-[industry]
-
-http://time.com/google-now/
-
-http://venturebeat.com/2015/11/30/the-4-things-google-believes-are-key-to-the-future-of-search/
-
-http://thesempost.com/rankbrain-everything-we-know-about-googles-ai-algorithm/
-
-http://techcrunch.com/2015/09/07/facebooks-messenger-and-the-challenge-to-googles-search-dominance/
-
-https://medium.com/backchannel/how-google-search-dealt-with-mobile-33bc09852dc9
-https://medium.com/backchannel/google-search-will-be-your-next-brain-5207c26e4523
-
-http://thenextweb.com/apps/2015/02/26/vurb-is-a-mobile-search-engine-that-helps-you-get-things-done-without-jumping-between-apps/
-http://www.ft.com/intl/cms/s/0/4f2f97ea-b8ec-11e4-b8e6-00144feab7de.html#slide0 (virtual assistant for life)
-
-https://quora.com/Why-is-machine-learning-used-heavily-for-Googles-ad-ranking-and-less-for-their-search-ranking
-http://anand.typepad.com/datawocky/2008/05/are-human-experts-less-prone-to-catastrophic-errors-than-machine-learned-models.html
-
-http://moz.com/blog/101-google-answer-boxes-a-journey-into-the-knowledge-graph
-
-https://blogs.dropbox.com/tech/2015/03/firefly-instant-full-text-search-engine/
 
 
 
@@ -96,9 +52,12 @@ introduction to ranking by Nikita Volkov (in russian)
 	https://youtube.com/watch?v=GctrEpJinhI
 	https://youtube.com/watch?v=GZmXKBzIfkA
 
-IR seminars @ Yandex
+IR seminars at Yandex
 	http://youtube.com/playlist?list=PLJOzdkh8T5kqsYZSzcpKoS8dwf4uizFDk
 	http://youtube.com/playlist?list=PLJOzdkh8T5krfgXb4peSed78ODO7tUFHf
+
+"Neural Text Embeddings for Information Retrieval" tutorial at WSDM 2017 -
+	https://slideshare.net/BhaskarMitra3/neural-text-embeddings-for-information-retrieval-wsdm-2017
 
 "An Introduction to Information Retrieval" book by Manning, Raghavan, Schutze - http://nlp.stanford.edu/IR-book/pdf/irbookprint.pdf
 "Search Engines. Information Retrieval in Practice" book by Croft, Metzler, Strohman - http://ciir.cs.umass.edu/irbook/
@@ -145,30 +104,6 @@ IR seminars @ Yandex
 
 
 
-[document models]
-
-  The use of latent semantic models for query-document matching is a long-standing research topic in the IR community. Popular models can be grouped into two categories, linear projection models and generative topic models. The most well-known linear projection model for IR is LSA. By using the singular value decomposition (SVD) of a document-term matrix, a document (or a query) can be mapped to a low-dimensional concept vector. In document search, the relevance score between a query and a document, represented respectively by term vectors, is assumed to be proportional to cosine similarity score of the corresponding concept vectors. In addition to latent semantic models, the translation models trained on clicked query-document pairs provide an alternative approach to semantic matching. Unlike latent semantic models, the translation-based approach learns translation relationships directly between a term in a document and a term in a query.
-
-  Modern search engines retrieve Web documents mainly by matching keywords in documents with those in search queries. However, lexical matching can be inaccurate due to the fact that a concept is often expressed using different vocabularies and language styles in documents and queries. Latent semantic models such as latent semantic analysis are able to map a query to its relevant documents at the semantic level where lexical matching often fails. These latent semantic models address the language discrepancy between Web documents and search queries by grouping different terms that occur in a similar context into the same semantic cluster. Thus, a query and a document, represented as two vectors in the lower-dimensional semantic space, can still have a high similarity score even if they do not share any term. Extending from LSA, probabilistic topic models such as probabilistic LSA and Latent Dirichlet Allocation have also been proposed for semantic matching. However, these models are often trained in an unsupervised manner using an objective function that is only loosely coupled with the evaluation metric for the retrieval task. Thus the performance of these models on Web search tasks is not as good as originally expected. Recently, two lines of research have been conducted to extend the aforementioned latent semantic models.
-
-  First, clickthrough data, which consists of a list of queries and their clicked documents, is exploited for semantic modeling so as to bridge the language discrepancy between search queries and Web documents. Trough use of Bi-Lingual Topic Models and linear Discriminative Projection Models for query-document matching at the semantic level. These models are trained on clickthrough data using objectives that tailor to the document ranking task. More specifically, BLTM is a generative model that requires that a query and its clicked documents not only share the same distribution over topics but also contain similar fractions of words assigned to each topic. In contrast, the DPM is learned using the S2Net algorithm that follows the pairwise learning-to-rank paradigm. After projecting term vectors of queries and documents into concept vectors in a low-dimensional semantic space, the concept vectors of the query and its clicked documents have a smaller distance than that of the query and its unclicked documents. Both BLTM and DPM outperform significantly the unsupervised latent semantic models, including LSA and PLSA, in the document ranking task. However, the training of BLTM, though using clickthrough data, is to maximize a log-likelihood criterion which is sub-optimal for the evaluation metric for document ranking. On the other hand, the training of DPM involves large-scale matrix multiplications. The sizes of these matrices often grow quickly with the vocabulary size, which could be of an order of millions in Web search tasks. In order to make the training time tolerable, the vocabulary was pruned aggressively. Although a small vocabulary makes the models trainable, it leads to suboptimal performance.
-
-  In the second line of research, Salakhutdinov and Hinton extended the semantic modeling using deep auto-encoders. They demonstrated that hierarchical semantic structure embedded in the query and the document can be extracted via deep learning. Superior performance to the conventional LSA is reported. However, the deep learning approach they used still adopts an unsupervised learning method where the model parameters are optimized for the reconstruction of the documents rather than for differentiating the relevant documents from the irrelevant ones for a given query. As a result, the deep learning models do not significantly outperform the baseline retrieval models based on keyword matching. Moreover, the semantic hashing model also faces the scalability challenge regarding large-scale matrix multiplication. The capability of learning semantic models with large vocabularies is crucial to obtain good results in real-world Web search tasks.
-
-
-
-
-[topic models]
-
-http://videolectures.net/mlss09uk_blei_tm/  (David Blei)
-http://videolectures.net/kdd2014_han_wang_el_kishky_structure_text/
-
-https://youtube.com/watch?v=KaXsalAixEU  (Dmitry Bugaichenko, in russian)
-https://youtube.com/watch?v=pOsGfv4lOFg  (Sergey Bartunov, in russian)
-
-
-
-
 [recommender systems]
 
 introduction by Alex Smola - http://youtube.com/watch?v=gCaOa3W9kM0
@@ -192,19 +127,31 @@ recommender systems introduction course from Netflix - http://technocalifornia.b
 
 future of recommender systems (by Hector Garcia-Molina) - http://youtube.com/watch?v=kHodCjWP1Us
 
-ACM RecSys 2014 videos - https://youtube.com/playlist?list=PLaZufLfJumb9A95nS5AmY6G5mqYnwIfZX
 
 
-"Probabilistic Matrix Factorization for Making Personalized Recommendations" - http://pymc-devs.github.io/pymc3/pmf-pymc/
 
+[industry]
 
-  Due to the abundance of choice in many online services, recommender systems now play an increasingly significant role. For individuals, using RS allows us to make more effective use of information. Besides, many companies (e.g., Amazon and Netflix) have been using RS extensively to target their customers by recommending products or services. Existing methods for RS can roughly be categorized into three classes: content-based methods, collaborative filtering based methods, and hybrid methods. Content-based methods make use of user profiles or product descriptions for recommendation. CF-based methods use the past activities or preferences, such as user ratings on items, without using user or product content information. Hybrid methods seek to get the best of both worlds by combining content-based and CF-based methods.
+http://time.com/google-now/
 
-  Due to privacy concerns, it is generally more difficult to collect user profiles than past activities. Nevertheless, CF-based methods do have their limitations. The prediction accuracy often drops significantly when the ratings are very sparse. Moreover, they cannot be used for recommending new products which have yet to receive rating information from users. Consequently, it is inevitable for CF-based methods to exploit auxiliary information and hence hybrid methods have gained popularity in recent years.
+http://venturebeat.com/2015/11/30/the-4-things-google-believes-are-key-to-the-future-of-search/
 
-  According to whether two-way interaction exists between the rating information and auxiliary information, we may further divide hybrid methods into two sub-categories: loosely coupled and tightly coupled methods. Loosely coupled methods process the auxiliary information once and then use it to provide features for the CF models. Since information flow is one-way, the rating information cannot provide feedback to guide the extraction of useful features. For this sub-category, improvement often has to rely on a manual and tedious feature engineering process. On the contrary, tightly coupled methods allow two-way interaction. On one hand, the rating information can guide the learning of features. On the other hand, the extracted features can further improve the predictive power of the CF models (e.g., based on matrix factorization of the sparse rating matrix). With two-way interaction, tightly coupled methods can automatically learn features from the auxiliary information and naturally balance the influence of the rating and auxiliary information. This is why tightly coupled methods often outperform loosely coupled ones.
+http://thesempost.com/rankbrain-everything-we-know-about-googles-ai-algorithm/
 
-  Collaborative topic regression is a recently proposed tightly coupled method. It is a probabilistic graphical model that seamlessly integrates a topic model, latent Dirichlet allocation, and a model-based CF method, probabilistic matrix factorization. CTR is an appealing method in that it produces promising and interpretable results. Nevertheless, the latent representation learned is often not effective enough especially when the auxiliary information is very sparse. On the other hand, deep learning models recently show great potential for learning effective representations and deliver state-of-the-art performance in computer vision and natural language processing applications. In deep learning models, features are learned in a supervised or unsupervised manner. Although they are more appealing than shallow models in that the features can be learned automatically (e.g., effective feature representation is learned from text content), they are inferior to shallow models such as CF in capturing and learning the similarity and implicit relationship between items. This calls for integrating deep learning with CF by performing deep learning collaboratively."
+http://techcrunch.com/2015/09/07/facebooks-messenger-and-the-challenge-to-googles-search-dominance/
+
+https://medium.com/backchannel/how-google-search-dealt-with-mobile-33bc09852dc9
+https://medium.com/backchannel/google-search-will-be-your-next-brain-5207c26e4523
+
+http://thenextweb.com/apps/2015/02/26/vurb-is-a-mobile-search-engine-that-helps-you-get-things-done-without-jumping-between-apps/
+http://www.ft.com/intl/cms/s/0/4f2f97ea-b8ec-11e4-b8e6-00144feab7de.html#slide0
+
+https://quora.com/Why-is-machine-learning-used-heavily-for-Googles-ad-ranking-and-less-for-their-search-ranking
+http://anand.typepad.com/datawocky/2008/05/are-human-experts-less-prone-to-catastrophic-errors-than-machine-learned-models.html
+
+http://moz.com/blog/101-google-answer-boxes-a-journey-into-the-knowledge-graph
+
+https://blogs.dropbox.com/tech/2015/03/firefly-instant-full-text-search-engine/
 
 
 
@@ -232,6 +179,8 @@ interesting papers (see https://github.com/brylevkirill/notes/blob/master/Knowle
 
 [interesting papers]
 
+Zhang et al. - "Neural Information Retrieval: A Literature Review" [https://arxiv.org/abs/1611.06792]
+
 Nogueira, Cho - "End-to-End Goal-Driven Web Navigation" [http://arxiv.org/pdf/1602.02261]
 	"We propose a goal-driven web navigation as a benchmark task for evaluating an agent with abilities to understand natural language and plan on partially observed environments. In this challenging task, an agent navigates through a website, which is represented as a graph consisting of web pages as nodes and hyperlinks as directed edges, to find a web page in which a query appears. The agent is required to have sophisticated high-level reasoning based on natural languages and efficient sequential decision-making capability to succeed. We release a software tool, called WebNav, that automatically transforms a website into this goal-driven web navigation task, and as an example, we make WikiNav, a dataset constructed from the English Wikipedia. We extensively evaluate different variants of neural net based artificial agents on WikiNav and observe that the proposed goal-driven web navigation well reflects the advances in models, making it a suitable benchmark for evaluating future progress. Furthermore, we extend the WikiNav with questionanswer pairs from Jeopardy! and test the proposed agent based on recurrent neural networks against strong inverted index based search engines. The artificial agents trained on WikiNav outperforms the engined based approaches, demonstrating the capability of the proposed goal-driven navigation as a good proxy for measuring the progress in real-world tasks such as focused crawling and question-answering."
 	"In this work, we describe a large-scale goal-driven web navigation task and argue that it serves as a useful test bed for evaluating the capabilities of artificial agents on natural language understanding and planning. We release a software tool, called WebNav, that compiles a given website into a goal-driven web navigation task. As an example, we construct WikiNav from Wikipedia using WebNav. We extend WikiNav with Jeopardy! questions, thus creating WikiNav-Jeopardy. We evaluate various neural net based agents on WikiNav and WikiNav-Jeopardy. Our results show that more sophisticated agents have better performance, thus supporting our claim that this task is well suited to evaluate future progress in natural language understanding and planning. Furthermore, we show that our agent pretrained on WikiNav outperforms two strong inverted-index based search engines on the WikiNav-Jeopardy. These empirical results support our claim on the usefulness of the proposed task and agents in challenging applications such as focused crawling and question-answering."
@@ -241,9 +190,6 @@ Nogueira, Cho - "End-to-End Goal-Driven Web Navigation" [http://arxiv.org/pdf/16
 
 
 [interesting papers - document models]
-
-Bai, Weston, Grangier, Collobert, Chapelle, Weinberger - "Supervised Semantic Indexing" [http://www.cse.wustl.edu/~kilian/papers/ssi-cikm.pdf]
-	"In this article we propose Supervised Semantic Indexing algorithm that is trained on (query, document) pairs of text documents to predict the quality of their match. Like Latent Semantic Indexing, our models take account of correlations between words (synonymy, polysemy). However, unlike LSI our models are trained with a supervised signal directly on the ranking task of interest, which we argue is the reason for our superior results. As the query and target texts are modeled separately, our approach is easily generalized to different retrieval tasks, such as online advertising placement.
 
 Huang, He, Gao, Deng, Acero, Heck - "Learning Deep Structured Semantic Models for Web Search using Clickthrough Data" [http://research.microsoft.com/apps/pubs/default.aspx?id=198202] (DSSM model)
 	"Latent semantic models, such as LSA, intend to map a query to its relevant documents at the semantic level where keyword-based matching often fails. In this study we strive to develop a series of new latent semantic models with a deep structure that project queries and documents into a common low-dimensional space where the relevance of a document given a query is readily computed as the distance between them. The proposed deep structured semantic models are discriminatively trained by maximizing the conditional likelihood of the clicked documents given a query using the clickthrough data. To make our models applicable to large-scale Web search applications, we also use a technique called word hashing, which is shown to effectively scale up our semantic models to handle large vocabularies which are common in such tasks. The new models are evaluated on a Web document ranking task using a real-world data set. Results show that our best model significantly outperforms other latent semantic models, which were considered state-of-the-art in the performance prior to the work presented in this paper."
@@ -280,32 +226,11 @@ Palangi, Deng, Shen, Gao, He, Chen, Song, Ward - "Deep Sentence Embedding Using 
 
 Gao, Pantel, Gamon, He, Deng - "Modeling Interestingness with Deep Neural Networks" [http://research.microsoft.com/apps/pubs/default.aspx?id=226584]
 	"This paper presents a deep semantic similarity model, a special type of deep neural networks designed for text analysis, for recommending target documents to be of interest to a user based on a source document that she is reading. We observe, identify, and detect naturally occurring signals of interestingness in click transitions on the Web between source and target documents, which we collect from commercial Web browser logs. The DSSM is trained on millions of Web transitions, and maps source-target document pairs to feature vectors in a latent space in such a way that the distance between source documents and their corresponding interesting targets in that space is minimized. The effectiveness of the DSSM is demonstrated using two interestingness tasks: automatic highlighting and contextual entity search. The results on large-scale, real-world datasets show that the semantics of documents are important for modeling interestingness and that the DSSM leads to significant quality improvement on both tasks, outperforming not only the classic document models that do not use semantics but also state-of-the-art topic models."
-	-- https://youtube.com/watch?v=YXi66Zgd0D0
+	-- https://youtube.com/watch?v=YXi66Zgd0D0 (Yih)
 
-Le, Mikolov - "Distributed Representations of Sentences and Documents" [http://arxiv.org/abs/1405.4053] (Paragraph vector)
-	"Many machine learning algorithms require the input to be represented as a fixed-length feature vector. When it comes to texts, one of the most common fixed-length features is bag-of-words. Despite their popularity, bag-of-words features have two major weaknesses: they lose the ordering of the words and they also ignore semantics of the words. For example, “powerful,” “strong” and “Paris” are equally distant. In this paper, we propose Paragraph Vector, an unsupervised algorithm that learns fixed-length feature representations from variable-length pieces of texts, such as sentences, paragraphs, and documents. Our algorithm represents each document by a dense vector which is trained to predict words in the document. Its construction gives our algorithm the potential to overcome the weaknesses of bag-of-words models. Empirical results show that Paragraph Vectors outperform bag-of-words models as well as other techniques for text representations. Finally, we achieve new state-of-the-art results on several text classification and sentiment analysis tasks."
-	"Paragraph vectors can be computed for things that are not paragraphs, in particular, documents, users, products, videos, audios."
-
-Dai, Olah, Le, Corrado - "Document Embedding with Paragraph Vectors" [http://125.178.23.34/wp-content/uploads/2014/12/Document-Embedding-with-Paragraph-Vectors.pdf] (analogies over sentences and paragraphs)
-	"Paragraph Vectors has been recently proposed as an unsupervised method for learning distributed representations for pieces of texts. In their work, the authors showed that the method can learn an embedding of movie review texts which can be leveraged for sentiment analysis. That proof of concept, while encouraging, was rather narrow. Here we consider tasks other than sentiment analysis, provide a more thorough comparison of Paragraph Vectors to other document modelling algorithms such as Latent Dirichlet Allocation, and evaluate performance of the method as we vary the dimensionality of the learned representation. We benchmarked the models on three document similarity tasks, two from Wikipedia, one from arXiv. We observe that the Paragraph Vector method performs significantly better than LDA on two of the tasks, and propose a simple improvement to enhance embedding quality. Somewhat surprisingly, we also show that much like word embeddings, vector operations on Paragraph Vectors can perform useful semantic results."
-
-Dai, Olah, Le - "Document Embedding with Paragraph Vectors" [http://arxiv.org/abs/1507.07998]
-	"Paragraph Vectors has been recently proposed as an unsupervised method for learning distributed representations for pieces of texts. In their work, the authors showed that the method can learn an embedding of movie review texts which can be leveraged for sentiment analysis. That proof of concept, while encouraging, was rather narrow. Here we consider tasks other than sentiment analysis, provide a more thorough comparison of Paragraph Vectors to other document modelling algorithms such as Latent Dirichlet Allocation, and evaluate performance of the method as we vary the dimensionality of the learned representation. We benchmarked the models on two document similarity data sets, one from Wikipedia, one from arXiv. We observe that the Paragraph Vector method performs significantly better than other methods, and propose a simple improvement to enhance embedding quality. Somewhat surprisingly, we also show that much like word embeddings, vector operations on Paragraph Vectors can perform useful semantic results."
-	"We described a new set of results on Paragraph Vectors showing they can effectively be used for measuring semantic similarity between long pieces of texts. Our experiments show that Paragraph Vectors are superior to LDA for measuring semantic similarity on Wikipedia articles across all sizes of Paragraph Vectors. Paragraph Vectors also perform on par with LDA’s best performing number of topics on arXiv papers and perform consistently relative to the embedding size. Also surprisingly, vector operations can be performed on them similarly to word vectors. This can provide interesting new techniques for a wide range of applications: local and nonlocal corpus navigation, dataset exploration, book recommendation and reviewer allocation."
-	"We can perform vector operations on paragraph vectors for local and non-local browsing of Wikipedia. The first experiment is to find related articles to “Lady Gaga.” The second experiment is to find the Japanese equivalence of “Lady Gaga.” This can be achieved by vector operations: pv(“Lady Gaga”) - wv(“American”) + wv(“Japanese”) where pv is paragraph vectors and wv is word vectors. Both sets of results show that Paragraph Vectors can achieve the same kind of analogies like Word Vectors."
-	"It can be seen that paragraph vectors perform better than LDA on Wikipedia article similarity task. Both paragraph vectors and averaging word embeddings perform better than the LDA model. For LDA, we found that TF-IDF weighting of words and their inferred topic allocations did not affect the performance. From these results, we can also see that joint training of word vectors improves the final quality of the paragraph vectors."
-
-Djuric, Wu, Radosavljevic, Grbovic, Bhamidipati - "Hierarchical Neural Language Models for Joint Representation of Streaming Documents and their Content" [http://labs.yahoo.com/publication/hierarchical-neural-language-models-for-joint-representation-of-streaming-documents-and-their-content/]
-	"We consider the problem of learning distributed representations for documents in data streams. The documents are represented as low-dimensional vectors and are jointly learned with distributed vector representations of word tokens using a hierarchical framework with two embedded neural language models. In particular, we exploit the context of documents in streams and use one of the language models to model the document sequences, and the other to model word sequences within them. The models learn continuous vector representations for both word tokens and documents such that semantically similar documents and words are close in a common vector space. We discuss extensions to our model, which can be applied to personalized recommendation and social relationship mining by adding further user layers to the hierarchy, thus learning user-specific vectors to represent individual preferences. We validated the learned representations on a public movie rating data set from MovieLens, as well as on a large-scale Yahoo News data comprising three months of user activity logs collected on Yahoo servers. The results indicate that the proposed model can learn useful representations of both documents and word tokens, outperforming the current state-of-the-art by a large margin."
-
-Denil, Demiraj, Kalchbrenner, Blunsom, Freitas - "Modelling, Visualising and Summarising Documents with a Single Convolutional Neural Network" [http://arxiv.org/abs/1406.3830]
-	"Capturing the compositional process which maps the meaning of words to that of documents is a central challenge for researchers in Natural Language Processing and Information Retrieval. We introduce a model that is able to represent the meaning of documents by embedding them in a low dimensional vector space, while preserving distinctions of word and sentence order crucial for capturing nuanced semantics. Our model is based on an extended Dynamic Convolution Neural Network, which learns convolution filters at both the sentence and document level, hierarchically learning to capture and compose low level lexical features into high level semantic concepts. We demonstrate the effectiveness of this model on a range of document modelling tasks, achieving strong results with no feature engineering and with a more compact model. Inspired by recent advances in visualising deep convolution networks for computer vision, we present a novel visualisation technique for our document networks which not only provides insight into their learning process, but also can be interpreted to produce a compelling automatic summarisation system for texts."
-
-Denil, Demiraj, Freitas - "Extraction of Salient Sentences from Labelled Documents" [http://arxiv.org/abs/1412.6815]
-	"We present a hierarchical convolutional document model with an architecture designed to support introspection of the document structure. Using this model, we show how to use visualisation techniques from the computer vision literature to identify and extract topic-relevant sentences. We also introduce a new scalable evaluation technique for automatic sentence extraction systems that avoids the need for time consuming human annotation of validation data."
-
-Hu, Lu, Li, Chen - "Convolutional Neural Network Architectures for Matching Natural Language Sentences" [http://arxiv.org/abs/1503.03244]
-	"Semantic matching is of central importance to many natural language tasks. A successful matching algorithm needs to adequately model the internal structures of language objects and the interaction between them. As a step toward this goal, we propose convolutional neural network models for matching two sentences, by adapting the convolutional strategy in vision and speech. The proposed models not only nicely represent the hierarchical structures of sentences with their layer-by-layer composition and pooling, but also capture the rich matching patterns at different levels. Our models are rather generic, requiring no prior knowledge on language, and can hence be applied to matching tasks of different nature and in different languages. The empirical study on a variety of matching tasks demonstrates the efficacy of the proposed model on a variety of matching tasks and its superiority to competitor models."
+Mitra, Diaz, Craswell - "Learning to Match Using Local and Distributed Representations of Text for Web Search" [https://arxiv.org/abs/1610.08136] (Duet model)
+	"Models such as latent semantic analysis and those based on neural embeddings learn distributed representations of text, and match the query against the document in the latent semantic space. In traditional information retrieval models, on the other hand, terms have discrete or local representations, and the relevance of a document is determined by the exact matches of query terms in the body text. We hypothesize that matching with distributed representations complements matching with traditional local representations, and that a combination of the two is favorable. We propose a novel document ranking model composed of two separate deep neural networks, one that matches the query and the document using a local representation, and another that matches the query and the document using learned distributed representations. The two networks are jointly trained as part of a single neural network. We show that this combination or ‘duet’ performs significantly better than either neural network individually on a Web page ranking task, and also significantly outperforms traditional baselines and other recently proposed models based on neural networks."
+	-- https://github.com/bmitra-msft/NDRM/blob/master/notebooks/Duet.ipynb
 
 
 

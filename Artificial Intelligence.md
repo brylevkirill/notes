@@ -1,5 +1,5 @@
-Intelligence is information processing necessary to achieve goals with limited resources.  
-Intelligence measures an agent's ability to achieve goals in some range of environments.  
+  Intelligence is information processing necessary to achieve goals with limited resources.  
+  Intelligence measures an agent's ability to achieve goals in some range of environments.  
 
 
   * [overview](#overview)
@@ -14,15 +14,15 @@ Intelligence measures an agent's ability to achieve goals in some range of envir
     - [Solomonoff Induction and AIXI](#solomonoff-induction-and-aixi)
   * [interesting papers](#interesting-papers)
     - [definitions and measures of intelligence](#interesting-papers---definitions-and-measures-of-intelligence)
-    - [algorithmic information theory](#interesting-papers---algorithmic-information-theory)
-    - [intrinsic motivation](#interesting-papers---intrinsic-motivation)
+    - [Solomonoff Induction and AIXI](#interesting-papers---solomonoff-induction-and-aixi)
+    - [Artificial Curiosity and Creativity](#interesting-papers---artificial-curiosity-and-creativity)
 
 ----
 
   [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
   [machine learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md)  
   [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
-  [reinforcement learning](https://dropbox.com/s/dexryjnmxujdynd/Reinforcement%20Learning.txt)  
+  [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)  
   [bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)  
   [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
 
@@ -83,81 +83,61 @@ Intelligence measures an agent's ability to achieve goals in some range of envir
   ["Tests of Machine Intelligence"](http://arxiv.org/abs/0712.3825) by Legg and Hutter
 
 ----
-
 #### universal problem solving
 
-  ["A Formal Measure of Machine Intelligence"](https://arxiv.org/abs/cs/0605024) by Legg and Hutter
-
-  ["An Approximation of the Universal Intelligence Measure"](http://arxiv.org/abs/1109.5951) by Legg and Veness
-
-  ["Space-Time Embedded Intelligence"](http://frontiersinai.com/turingfiles/December/orseau.pdf) by Orseau and Ring
+  ["A Formal Measure of Machine Intelligence"](https://arxiv.org/abs/cs/0605024) by Legg and Hutter  
+  ["An Approximation of the Universal Intelligence Measure"](http://arxiv.org/abs/1109.5951) by Legg and Veness  
+  ["Space-Time Embedded Intelligence"](http://frontiersinai.com/turingfiles/December/orseau.pdf) by Orseau and Ring  
 
 ----
-
 #### automated science
 
-  <https://datarobot.com/blog/automated-machine-learning-short-history/>
+  ["Automated Machine Learning: A Short History"](https://datarobot.com/blog/automated-machine-learning-short-history/)
 
   [AutoML](http://automl.chalearn.org) - "Design the perfect machine learning “black box” capable of performing all model selection and hyper-parameter tuning without any human intervention"
 
 ----
-
 #### dialog interaction
 
-  ["A Paradigm for Situated and Goal-Driven Language Learning"](https://arxiv.org/abs/1610.03585) by Gauthier and Mordatch
-
-  ["A Roadmap Towards Machine Intelligence"](http://arxiv.org/abs/1511.08130) by Mikolov, Joulin, Baroni
-
-  ["Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks"](http://arxiv.org/abs/1502.05698) by Weston et al.
+  ["A Paradigm for Situated and Goal-Driven Language Learning"](https://arxiv.org/abs/1610.03585) by Gauthier and Mordatch  
+  ["A Roadmap Towards Machine Intelligence"](http://arxiv.org/abs/1511.08130) by Mikolov, Joulin, Baroni  
+  ["Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks"](http://arxiv.org/abs/1502.05698) by Weston et al.  
 
 ----
-
 #### games
 
-  ["Measuring Intelligence through Games"](http://arxiv.org/abs/1109.1314) by Schaul, Togelius, Schmidhuber
+  ["Measuring Intelligence through Games"](http://arxiv.org/abs/1109.1314) by Schaul, Togelius, Schmidhuber  
+  ["Why video games are essential for inventing artificial intelligence"](http://togelius.blogspot.ru/2016/01/why-video-games-are-essential-for.html) by Julian Togelius  
 
-  ["Why video games are essential for inventing artificial intelligence"](http://togelius.blogspot.ru/2016/01/why-video-games-are-essential-for.html) by Julian Togelius
+  ["A 'Brief' History of Game AI Up To AlphaGo"](http://andreykurenkov.com/writing/a-brief-history-of-game-ai/)  
+  ["AI for classic games"](http://youtube.com/watch?v=kZ_AUmFcZtk) by David Silver  
 
+  ["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](https://arxiv.org/abs/1701.01724) by Michael Bowling and others  
+  ["Mastering the Game of Go with Deep Neural Networks and Tree Search"](https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf) by David Silver and others  
+  ["Giraffe: Using Deep Reinforcement Learning to Play Chess"](http://arxiv.org/abs/1509.01549) by Matthew Lai  
 
-  ["A 'Brief' History of Game AI Up To AlphaGo"](http://andreykurenkov.com/writing/a-brief-history-of-game-ai/)
+  [games](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games)  
 
-  ["AI for classic games"](http://youtube.com/watch?v=kZ_AUmFcZtk) by David Silver
-
-  ["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](https://arxiv.org/abs/1701.01724) by Michael Bowling and others
-
-  ["Mastering the Game of Go with Deep Neural Networks and Tree Search"](https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf) by David Silver and others
-
-  ["Giraffe: Using Deep Reinforcement Learning to Play Chess"](http://arxiv.org/abs/1509.01549) by Matthew Lai
-
-
-  StarCraft 2  
-	<http://starcraft.blizzplanet.com/blog/comments/blizzcon-2016-deepmind-and-starcraft-ii-deep-learning-panel-transcript>  
-	<http://starcraft.blizzplanet.com/blog/comments/blizzcon-2016-deepmind-and-starcraft-ii-deep-learning-panel-transcript/2>  
-	<http://gamasutra.com/blogs/BenWeber/20160314/267956/DeepMind_Challenges_for_StarCraft.php>  
-
-
-  General Video Game AI competition  
-	<http://gvgai.net>  
-	<http://youtube.com/channel/UCMFCfXipQT55IK6R504naUQ/videos>  
+  [General Video Game AI competition](http://gvgai.net)
 
 ----
-
-#### control
+#### open world problems
 
   - OpenAI Universe  
 	<https://universe.openai.com>  
 	<https://openai.com/blog/universe/>  
-	<https://youtube.com/watch?v=BskhUBPRrqE> (Sutskever)  
+	<https://youtube.com/watch?v=BskhUBPRrqE> (Ilya Sutskever)  
 
   - OpenAI Mini World Of Bits  
 	<http://alpha.openai.com/miniwob/index.html>  
-	<http://alpha.openai.com/ak_rework_2017.pdf>  
+	<http://alpha.openai.com/ak_rework_2017.pdf> (Andrej Karpathy)  
+	<https://youtube.com/watch?v=w6PCLESiExQ> (Jim Fan)  
 	<http://alpha.openai.com/kalite_exercises/index.html>  
 
   - OpenAI Gym  
 	<https://gym.openai.com>  
+	<https://gym.openai.com/envs>  
 	<https://openai.com/blog/openai-gym-beta/>  
-	<http://arxiv.org/abs/1606.01540>  
 
   - DeepMind Lab  
 	<https://github.com/deepmind/lab>  
@@ -165,33 +145,31 @@ Intelligence measures an agent's ability to achieve goals in some range of envir
 
   - Microsoft Malmo  
 	<https://microsoft.com/en-us/research/project/project-malmo/>  
-	<https://youtube.com/watch?v=399qJUBRA0o> (Hofmann)  
+	<https://youtube.com/watch?v=399qJUBRA0o> (Katja Hofmann)  
+
+----
+#### [machine reading](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#machine-reading-benchmarks)  
 
 ----
 
   ["Unsolved Problems in AI"](https://medium.com/ai-roadmap-institute/unsolved-problems-in-ai-38f4ce18921d) by GoodAI  
   ["Concrete AI tasks for forecasting"](http://aiimpacts.org/concrete-ai-tasks-for-forecasting/) by AIimpacts  
 
-----
-
-  "applications" section of [reinforcement learning](https://dropbox.com/s/dexryjnmxujdynd/Reinforcement%20Learning.txt)  
-  [machine reading benchmarks](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#machine-reading-benchmarks)  
-
 
 
 ---
 ### problems
 
- - *knowledge representation*  
+  - [*knowledge representation*](#knowledge-representation)  
 	what is the space of possible beliefs?  
-	ow do beliefs interact?  
-	an we formulate a knowledge representation which could in principle express any concept a human can conceive of?  
+	how do beliefs interact?  
+	can we formulate a knowledge representation which could in principle express any concept a human can conceive of?  
 
- - *inference/reasoning*  
+  - [*inference/reasoning*](#inferencereasoning)  
 	how do we implement inference over these beliefs?  
 	inference/reasoning are catch-all terms referring to the way beliefs move around in the space of possible beliefs  
 
- - *decisions/actions*  
+  - [*decisions/actions*](#decisionsactions)  
 	how do beliefs conspire to produce decisions and actions?  
 
 
@@ -348,7 +326,7 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 ---
 ### Reinforcement Learning
 
-  [Reinforcement Learning](https://dropbox.com/s/dexryjnmxujdynd/Reinforcement%20Learning.txt)
+  [Reinforcement Learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)
 
   Shakir Mohamed - "Learning in Brains and Machines":  
 	["Temporal Differences"](http://blog.shakirm.com/2016/02/learning-in-brains-and-machines-1/)  
@@ -402,13 +380,8 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
   ["Learning to Learn, to Program, to Explore and to Seek Knowledge"](https://youtube.com/watch?v=tPWGGwmgwG0) by Nando de Freitas
 
-  ["Learning to Learn by Gradient Descent by Gradient Descent"](http://arxiv.org/abs/1606.04474) by Andrychowicz et al.  
-  - <https://youtu.be/tPWGGwmgwG0?t=10m50s> (de Freitas)  
-  - <https://youtu.be/x1kf4Zojtb0?t=1h4m53s> (de Freitas)  
 
-  ["RL2: Fast Reinforcement Learning via Slow Reinforcement Learning"](http://arxiv.org/abs/1611.02779) by Duan et al.
-
-  ["Learning to Reinforcement Learn"](http://arxiv.org/abs/1611.05763) by Wang et al.
+  [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#meta-learning)
 
 ----
 
@@ -468,25 +441,41 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 >	"The simple but general formal theory of fun & intrinsic motivation & creativity is based on the concept of maximizing intrinsic reward for the active creation or discovery of novel, surprising patterns allowing for improved prediction or data compression. It generalizes the traditional field of active learning, and is related to old but less formal ideas in aesthetics theory and developmental psychology. It has been argued that the theory explains many essential aspects of intelligence including autonomous development, science, art, music, humor. This overview first describes theoretically optimal (but not necessarily practical) ways of implementing the basic computational principles on exploratory, intrinsically motivated agents or robots, encouraging them to provoke event sequences exhibiting previously unknown but learnable algorithmic regularities."
 
   ["On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models"](http://arxiv.org/abs/1511.09249) by Juergen Schmidhuber
+>	"Humans, even as infants, invent their own tasks in a curious and creative fashion, continually increasing their problem solving repertoire even without an external reward or teacher. They seem to get intrinsic reward for creating experiments leading to observations that obey a previously unknown law that allows for better compression of the observations - corresponding to the discovery of a temporarily interesting, subjectively novel regularity. For example, a video of 100 falling apples can be greatly compressed via predictive coding once the law of gravity is discovered. Likewise, the video-like image sequence perceived while moving through an office can be greatly compressed by constructing an internal 3D model of the office space. The 3D model allows for re-computing the entire high-resolution video from a compact sequence of very low-dimensional eye coordinates and eye directions. The model itself can be specified by far fewer bits of information than needed to store the raw pixel data of a long video. Even if the 3D model is not precise, only relatively few extra bits will be required to encode the observed deviations from the predictions of the model."
+
+>	"Even mirror neurons are easily explained as by-products of history compression. They fire both when an animal acts and when the animal observes the same action performed by another. Due to mutual algorithmic information shared by perceptions of similar actions performed by various animals, efficient RNN-based predictive coding profits from using the same feature detectors (neurons) to encode the shared information, thus saving storage space."
+
+>	"Given combination of controller and environment model, we motivate controller to become an efficient explorer and an artificial scientist, by adding to its standard external reward (or fitness) for solving user-given tasks another intrinsic reward for generating novel action sequences (or experiments) that allow environment model to improve its compression performance on the resulting data."
 
 ----
 
   **approximations**
 
   ["VIME: Variational Information Maximizing Exploration"](http://arxiv.org/abs/1605.09674) by Houthooft, Chen, Duan, Schulman, Turck, Abbeel  
->	"information gain (second order Taylor approximation) is measured in Bayesian neural networks modeling the MDP dynamics, and used as an exploration bonus"  
+>	"Variational inference is used to approximate the posterior distribution of a Bayesian neural network that represents the environment dynamics. Using information gain in this learned dynamics model as intrinsic rewards allows the agent to optimize for both external reward and intrinsic surprise simultaneously."  
 >	"r'(st,at,st+1) = r(st,at) + μ * Dkl[p(θ|ξt,at,st+1)||p(θ|ξt)]"  
+
+>	"It is possible to derive an interesting relationship between compression improvement - an intrinsic reward objective defined in Schmidhuber's Artificial Curiosity and Creativity theory, and the information gain. The agent’s curiosity is equated with compression improvement, measured through C(ξt; φt-1) - C(ξt; φt), where C(ξ; φ) is the description length of ξ using φ as a model. Furthermore, it is known that the negative variational lower bound can be viewed as the description length. Hence, we can write compression improvement as L[q(θ; φt), ξt] - L[q(θ; φt-1), ξt]. In addition, due to alternative formulation of the variational lower bound, compression improvement can be written as (log p(ξt) - Dkl[q(θ; φt)||p(θ|ξt)]) - (log p(ξt) - Dkl[q(θ; φt-1)||p(θ|ξt)]). If we assume that φt perfectly optimizes the variational lower bound for the history ξt, then Dkl[q(θ; φt)||p(θ|ξt)] = 0, which occurs when the approximation equals the true posterior, i.e., q(θ; φt) = p(θ|ξt). Hence, compression improvement becomes Dkl[p(θ|ξt-1) || p(θ|ξt)]. Therefore, optimizing for compression improvement comes down to optimizing the KL divergence from the posterior given the past history ξt-1 to the posterior given the total history ξt. As such, we arrive at an alternative way to encode curiosity than information gain, namely Dkl[p(θ|ξt)||p(θ|ξt,at,st+1)], its reversed KL divergence. In experiments, we noticed no significant difference between the two KL divergence variants. This can be explained as both variants are locally equal when introducing small changes to the parameter distributions."  
+
+  - <https://youtu.be/WRFqzYWHsZA?t=18m38s> (Abbeel)  
   - <https://youtube.com/watch?v=sRIjxxjVrnY> (Panin)  
+  - <http://pemami4911.github.io/paper-summaries/2016/09/04/VIME.html>  
 
 ----
 
   **applications**
 
-  ["Toward Intelligent Humanoids"](https://vimeo.com/51011081) (application on iCub robot by Schmidhuber's group)
+  ["Toward Intelligent Humanoids"](https://vimeo.com/51011081) by Schmidhuber's group
 
-  ["Curiosity Driven Reinforcement Learning Motion Planning on Humanoids"](http://goo.gl/FKNPth) by Frank, Schmidhuber and others
+  ["Curiosity Driven Reinforcement Learning Motion Planning on Humanoids"](http://goo.gl/FKNPth) by Frank, Schmidhuber and others  
   ["PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem"](https://arxiv.org/abs/1112.5309) by Schmidhuber  
-  ["Continually Adding Self-Invented Problems to the Repertoire: First Experiments with PowerPlay"](http://goo.gl/lTYm6o) by Srivastava, Schmidhuber and others
+  ["Continually Adding Self-Invented Problems to the Repertoire: First Experiments with PowerPlay"](http://goo.gl/lTYm6o) by Srivastava, Schmidhuber and others  
+
+----
+
+  [interesting papers](#interesting-papers---artificial-curiosity-and-creativity)
+
+  [exploration and intrinsic motivation](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#exploration-and-intrinsic-motivation)
 
 
 
@@ -502,7 +491,10 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
   [introduction to AIXI](http://jan.leike.name/AIXI.html) by Jan Leike
 
-  [book on AIXI](http://hutter1.net/ai/uaibook.htm) by Marcus Hutter
+  [book about AIXI](http://hutter1.net/ai/uaibook.htm) by Marcus Hutter
+
+
+  [interesting papers](#solomonoff-induction-and-aixi)
 
 ----
 
@@ -524,9 +516,9 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
   AIXI = learning + prediction + planning + acting
 
-  AIXI is an algorithmic probability theory extended to the case of sequential decision theory  
-  AIXI defines universal agent which effectively simulates all possible programs which output agrees with agent’s set of observations  
-  AIXI is not computable but related agent AIXI-tl may be computed and is superior to any other agent bounded by time t and space l  
+  AIXI is an algorithmic probability theory extended to the case of sequential decision theory.  
+  AIXI defines universal agent which effectively simulates all possible programs which output agrees with agent’s set of observations.  
+  AIXI is not computable but related agent AIXI-tl may be computed and is superior to any other agent bounded by time t and space l.  
 
   components of AIXI:  
   - Ockhams' razor (simplicity) principle  
@@ -616,19 +608,19 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
 [machine learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md)  
 [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
-[reinforcement learning](https://dropbox.com/s/dexryjnmxujdynd/Reinforcement%20Learning.txt)  
+[reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)  
 [bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)  
 [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
 [semantic web](https://dropbox.com/s/ono4n5yij0y1366/RDF.txt)  
 
 
-[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/recent%20papers.md)
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md)
 
 
 interesting papers (see below):  
   - [definitions and measures of intelligence](#interesting-papers---definitions-and-measures-of-intelligence)  
-  - [algorithmic information theory](#interesting-papers---algorithmic-information-theory)  
-  - [intrinsic motivation](#interesting-papers---intrinsic-motivation)  
+  - [Solomonoff Induction and AIXI](#interesting-papers---solomonoff-induction-and-aixi)  
+  - [Artificial Curiosity and Creativity](#interesting-papers---artificial-curiosity-and-creativity)  
 
 
 
@@ -638,6 +630,8 @@ interesting papers (see below):
 
 #### Lake, Ullman, Tenenbaum, Gershman - ["Building Machines That Learn and Think Like People"](http://arxiv.org/abs/1604.00289)
 >	"Recent progress in artificial intelligence has renewed interest in building systems that learn and think like people. Many advances have come from using deep neural networks trained end-to-end in tasks such as object recognition, video games, and board games, achieving performance that equals or even beats humans in some respects. Despite their biological inspiration and performance achievements, these systems differ from human intelligence in crucial ways. We review progress in cognitive science suggesting that truly human-like learning and thinking machines will have to reach beyond current engineering trends in both what they learn, and how they learn it. Specifically, we argue that these machines should (a) build causal models of the world that support explanation and understanding, rather than merely solving pattern recognition problems; (b) ground learning in intuitive theories of physics and psychology, to support and enrich the knowledge that is learned; and (c) harness compositionality and learning-to-learn to rapidly acquire and generalize knowledge to new tasks and situations. We suggest concrete challenges and promising routes towards these goals that can combine the strengths of recent neural network advances with more structured cognitive models."
+
+  - <http://pemami4911.github.io/paper-summaries/2016/05/13/learning-to-think.html>
 
 
 #### Legg, Hutter - ["Universal Intelligence: A Definition of Machine Intelligence"](http://arxiv.org/abs/0712.3329)
@@ -656,27 +650,73 @@ interesting papers (see below):
 >	"There exists a theory of a single general-purpose learning algorithm which could explain the principles of its operation. It assumes the initial rough architecture, a small library of simple innate circuits which are prewired at birth and proposes that all significant mental algorithms are learned. Given current understanding and observations, this paper reviews and lists the ingredients of such an algorithm from architectural and functional perspectives."
 
 
-#### Mikolov, Joulin, Baroni - ["A Roadmap Towards Machine Intelligence"](http://arxiv.org/abs/1511.08130)
->	"The development of intelligent machines is one of the biggest unsolved challenges in computer science. In this paper, we propose some fundamental properties these machines should have, focusing in particular on communication and learning. We discuss a simple environment that could be used to incrementally teach a machine the basics of natural-language-based communication, as a prerequisite to more complex interaction with human users. We also present some conjectures on the sort of algorithms the machine should support in order to profitably learn from the environment."
-
->	"We defined basic desiderata for an intelligent machine, stressing learning and communication as its fundamental abilities. Contrary to common practice in current machine learning, where the focus is on modeling single skills in isolation, we believe that all aspects of intelligence should be holistically addressed within a single system. We proposed a simulated environment that requires the intelligent machine to acquire new facts and skills through communication in natural language. In this environment, the machine must learn to perform increasingly more ambitious tasks, being naturally induced to develop complex linguistic and reasoning abilities. We also presented some conjectures on the properties of the computational system that the intelligent machine may be based on. This includes learning of algorithmic patterns from a few examples without strong supervision, and development of long term memory that would store both data and learned skills. We tried to put this in contrast with currently accepted paradigms in machine learning, to show that current methods are far from adequate, and we must strive to develop non-incrementally novel techniques."
-
-  - <https://youtu.be/FUlTjKL-mVA?t=39m18s> + <http://youtu.be/gi4Zf59_IcU?t=34m10s> (Mikolov)
-  - <https://github.com/facebookresearch/CommAI-env>
-
-
-#### Weston, Bordes, Chopra, Mikolov - ["Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks"](http://arxiv.org/abs/1502.05698)
->	"One long-term goal of machine learning research is to produce methods that are applicable to reasoning and natural language, in particular building an intelligent dialogue agent. To measure progress towards that goal, we argue for the usefulness of a set of proxy tasks that evaluate reading comprehension via question answering. Our tasks measure understanding in several ways: whether a system is able to answer questions via chaining facts, simple induction, deduction and many more. The tasks are designed to be prerequisites for any system that aims to be capable of conversing with a human. We believe many existing learning systems can currently not solve them, and hence our aim is to classify these tasks into skill sets, so that researchers can identify (and then rectify) the failings of their systems. We also extend and improve the recently introduced Memory Networks model, and show it is able to solve some, but not all, of the tasks."
-
->	"Despite great recent advances, the road towards intelligent machines able to reason and adapt in real-time in multimodal environments remains long and uncertain. This final goal is so complex and further away that it is impossible to perform experiments and research directly in the desired final conditions, so one has to use intermediate and/or proxy tasks as midway goals. Some of those tasks like object detection in computer vision, or machine translation in natural language processing are very useful on their own and fuel many applications. However, such intermediate tasks are already very difficult and it is not obvious that they are suited testbeds for designing intelligent systems: their inherent complexity makes it hard to precisely interpret the behavior and true capabilities of algorithms, in particular regarding key sophisticated capabilities like reasoning and planning. We advocate the use of controlled artificial environments for developing research in AI, environments in which one can precisely study the behavior of algorithms and unambiguously assess their abilities."
-
-  - <http://fb.ai/babi>
-  - <http://youtube.com/watch?v=d-Ma5PkDKG4> + <https://youtube.com/watch?v=0RGqJIhdva4> (Bordes)
-
-
 
 ---
-### interesting papers - algorithmic information theory
+### interesting papers - Solomonoff Induction and AIXI
+
+
+#### Hutter - ["On Universal Prediction and Bayesian Confirmation"](http://arxiv.org/abs/0709.1516)
+>	"The Bayesian framework is a well-studied and successful framework for inductive reasoning, which includes hypothesis testing and confirmation, parameter estimation, sequence prediction, classification, and regression. But standard statistical guidelines for choosing the model class and prior are not always available or fail, in particular in complex situations. Solomonoff completed the Bayesian framework by providing a rigorous, unique, formal, and universal choice for the model class and the prior. We discuss in breadth how and in which sense universal (non-i.i.d.) sequence prediction solves various (philosophical) problems of traditional Bayesian sequence prediction. We show that Solomonoff's model possesses many desirable properties: Strong total and weak instantaneous bounds, and in contrast to most classical continuous prior densities has no zero p(oste)rior problem, i.e. can confirm universal hypotheses, is reparametrization and regrouping invariant, and avoids the old-evidence and updating problem. It even performs well (actually better) in non-computable environments."
+
+>	"The goal of the paper was to establish a single, universal theory for (sequence) prediction and (hypothesis) confirmation, applicable to all inductive inference problems. I started by showing that Bayesian prediction is consistent for any countable model class, provided it contains the true distribution. The major (agonizing) problem Bayesian statistics leaves open is how to choose the model class and the prior. Solomonoff’s theory fills this gap by choosing the class of all computable (stochastic) models, and a universal prior inspired by Ockham and Epicurus, and quantified by Kolmogorov complexity. I discussed in breadth how and in which sense this theory solves the inductive inference problem, by studying a plethora of problems other approaches suffer from. In one line: All you need for universal prediction is Ockham, Epicurus, Bayes, Solomonoff, Kolmogorov, and Turing. By including Bellman, one can extend this theory to universal decisions in reactive environments."
+
+
+#### Hutter - ["Universal Algorithmic Intelligence: A Mathematical Top-down Approach"](http://arxiv.org/abs/cs/0701125) (AIXI agent)
+>	"Sequential decision theory formally solves the problem of rational agents in uncertain worlds if the true environmental prior probability distribution is known. Solomonoff’s theory of universal induction formally solves the problem of sequence prediction for unknown prior distribution. We combine both ideas and get a parameter-free theory of universal Artificial Intelligence. We give strong arguments that the resulting AIXI model is the most intelligent unbiased agent possible. We outline how the AIXI model can formally solve a number of problem classes, including sequence prediction, strategic games, function minimization, reinforcement and supervised learning. The major drawback of the AIXI model is that it is uncomputable. To overcome this problem, we construct a modified algorithm AIXItl that is still effectively more intelligent than any other time t and length l bounded agent. The computation time of AIXItl is of the order t·2^l. The discussion includes formal definitions of intelligence order relations, the horizon problem and relations of the AIXI theory to other AI approaches."
+
+  - ["A Theory of Universal Artificial Intelligence based on Algorithmic Complexity"](https://arxiv.org/abs/cs/0004001) by Hutter
+
+
+#### Hutter - ["Open Problems in Universal Induction & Intelligence"](http://arxiv.org/abs/0907.0746)
+>	"Specialized intelligent systems can be found everywhere: finger print, hand-writing, speech, and face recognition, spam filtering, chess and other game programs, robots, et al. This decade the first presumably complete mathematical theory of artificial intelligence based on universal induction-prediction-decision-action has been proposed. This information-theoretic approach solidifies the foundations of inductive inference and artificial intelligence. Getting the foundations right usually marks a significant progress and maturing of a field. The theory provides a gold standard and guidance for researchers working on intelligent algorithms. The roots of universal induction have been laid exactly half-a-century ago and the roots of universal intelligence exactly one decade ago. So it is timely to take stock of what has been achieved and what remains to be done. Since there are already good recent surveys, I describe the state-of-the-art only in passing and refer the reader to the literature. This article concentrates on the open problems in universal induction and its extension to universal intelligence."
+
+
+#### Veness, Ng, Hutter, Uther, Silver - ["A Monte-Carlo AIXI Approximation"](https://www.jair.org/media/3125/live-3125-5397-jair.pdf) (MC-AIXI-CTW agent)
+>	"This paper introduces a principled approach for the design of a scalable general reinforcement learning agent. Our approach is based on a direct approximation of AIXI, a Bayesian optimality notion for general reinforcement learning agents. Previously, it has been unclear whether the theory of AIXI could motivate the design of practical algorithms. We answer this hitherto open question in the affirmative, by providing the first computationally feasible approximation to the AIXI agent. To develop our approximation, we introduce a new Monte-Carlo Tree Search algorithm along with an agent-specific extension to the Context Tree Weighting algorithm. Empirically, we present a set of encouraging results on a variety of stochastic and partially observable domains. We conclude by proposing a number of directions for future research."
+
+>	"This paper presents the first computationally feasible general reinforcement learning agent that directly and scalably approximates the AIXI ideal. Although well established theoretically, it has previously been unclear whether the AIXI theory could inspire the design of practical agent algorithms. Our work answers this question in the affirmative: empirically, our approximation achieves strong performance and theoretically, we can characterise the range of environments in which our agent is expected to perform well. To develop our approximation, we introduced two new algorithms: ρUCT, a Monte-Carlo expectimax approximation technique that can be used with any online Bayesian approach to the general reinforcement learning problem and FAC-CTW, a generalisation of the powerful CTW algorithm to the agent setting. In addition, we highlighted a number of interesting research directions that could improve the performance of our current agent; in particular, model class expansion and the online learning of heuristic rollout policies for ρUCT."
+
+  - <http://youtube.com/watch?v=yfsMHtmGDKE> (Ms. Pac-Man demo)
+  - <http://videolectures.net/nips09_veness_bfg/> (Veness)
+  - <http://jveness.info/publications/veness_phd_thesis_final.pdf>
+  - <http://jveness.info/software/mcaixi_jair_2010.zip>
+  - <https://github.com/moridinamael/mc-aixi>
+  - <https://github.com/gkassel/pyaixi>
+  - <https://github.com/GoodAI/SummerCamp/tree/master/AIXIModule>
+
+
+#### Legg - ["Is there an Elegant Universal Theory of Prediction?"](http://arxiv.org/pdf/cs/0606070.pdf)
+>	"Solomonoff induction is an elegant and extremely general model of inductive learning. It neatly brings together the philosophical principles of Occam’s razor, Epicurus’ principle of multiple explanations, Bayes theorem and Turing’s model of universal computation into a theoretical sequence predictor with astonishingly powerful properties. If theoretical models of prediction can have such elegance and power, one cannot help but wonder whether similarly beautiful and highly general computable theories of prediction are also possible.
+>	What we have shown here is that there does not exist an elegant constructive theory of prediction for computable sequences, even if we assume unbounded computational resources, unbounded data and learning time, and place moderate bounds on the Kolmogorov complexity of the sequences to be predicted. Very powerful computable predictors are therefore necessarily complex. We have further shown that the source of this problem is computable sequences which are extremely expensive to compute. While we have proven that very powerful prediction algorithms which can learn to predict these sequences exist, we have also proven that, unfortunately, mathematical analysis cannot be used to discover these algorithms due to problems of Goedel incompleteness.
+>	These results can be extended to more general settings, specifically to those problems which are equivalent to, or depend on, sequence prediction. Consider, for example, a reinforcement learning agent interacting with an environment. In each interaction cycle the agent must choose its actions so as to maximise the future rewards that it receives from the environment. Of course the agent cannot know for certain whether or not some action will lead to rewards in the future, thus it must predict these. Clearly, at the heart of reinforcement learning lies a prediction problem, and so the results for computable predictors presented in this paper also apply to computable reinforcement learners. More specifically, it follows that very powerful computable reinforcement learners are necessarily complex, and it follows that it is impossible to discover extremely powerful reinforcement learning algorithms mathematically."
+
+  - <http://lo-tho.blogspot.ru/2012/08/truth-and-ai.html>
+
+
+#### Leike, Hutter - ["On the Computability of AIXI"](http://arxiv.org/abs/1510.05572)
+>	"How could we solve the machine learning and the artificial intelligence problem if we had infinite computation? Solomonoff induction and the reinforcement learning agent AIXI are proposed answers to this question. Both are known to be incomputable. In this paper, we quantify this using the arithmetical hierarchy, and prove upper and corresponding lower bounds for incomputability. We show that AIXI is not limit computable, thus it cannot be approximated using finite computation. Our main result is a limit-computable ε-optimal version of AIXI with infinite horizon that maximizes expected rewards."
+
+  - ["On the Computability of Solomonoff Induction and Knowledge-Seeking"](http://arxiv.org/abs/1507.04124) by Leike and Hutter
+
+
+#### Leike, Hutter - ["Bad Universal Priors and Notions of Optimality"](http://jmlr.csail.mit.edu/proceedings/papers/v40/Leike15.pdf)
+>	"A big open question of algorithmic information theory is the choice of the universal Turing machine. For Kolmogorov complexity and Solomonoff induction we have invariance theorems: the choice of the UTM changes bounds only by a constant. For the universally intelligent agent AIXI no invariance theorem is known. Our results are entirely negative: we discuss cases in which unlucky or adversarial choices of the UTM cause AIXI to misbehave drastically. We show that Legg-Hutter intelligence and thus balanced Pareto optimality is entirely subjective, and that every policy is Pareto optimal in the class of all computable environments. This undermines all existing optimality properties for AIXI. While it may still serve as a gold standard for AI, our results imply that AIXI is a relative theory, dependent on the choice of the UTM."
+
+>	"The choice of the universal Turing machine has been a big open question in algorithmic information theory for a long time. While attempts have been made no answer is in sight. The Kolmogorov complexity of a string, the length of the shortest program that prints this string, depends on this choice. However, there are invariance theorems which state that changing the UTM changes Kolmogorov complexity only by a constant. When using the universal prior M introduced by Solomonoff to predict any deterministic computable binary sequence, the number of wrong predictions is bounded by (a multiple of) the Kolmogorov complexity of the sequence. Due to the invariance theorem, changing the UTM changes the number of errors only by a constant. In this sense, compression and prediction work for any choice of UTM. Hutter defines the universally intelligent agent AIXI, which is targeted at the general reinforcement learning problem. It extends Solomonoff induction to the interactive setting. AIXI is a Bayesian agent, using a universal prior on the set of all computable environments; actions are taken according to the maximization of expected future discounted rewards. Closely related is the intelligence measure defined by Legg and Hutter, a mathematical performance measure for general reinforcement learning agents: defined as the discounted rewards achieved across all computable environments, weighted by the universal prior. There are several known positive results about AIXI. It has been proven to be Pareto optimal, balanced Pareto optimal, and has maximal Legg-Hutter intelligence. Furthermore, AIXI asymptotically learns to predict the environment perfectly and with a small total number of errors analogously to Solomonoff induction, but only on policy: AIXI learns to correctly predict the value (expected future rewards) of its own actions, but generally not the value of counterfactual actions that it does not take. Orseau showed that AIXI does not achieve asymptotic optimality in all computable environments. So instead, we may ask the following weaker questions. Does AIXI succeed in every partially observable Markov decision process/(ergodic) Markov decision process/bandit problem/sequence prediction task? In this paper we show that without further assumptions on the UTM, we cannot answer any of the preceding questions in the affirmative. More generally, there can be no invariance theorem for AIXI. As a reinforcement learning agent, AIXI has to balance between exploration and exploitation. Acting according to any (universal) prior does not lead to enough exploration, and the bias of AIXI’s prior is retained indefinitely. For bad priors this can cause serious malfunctions. However, this problem can be alleviated by adding an extra exploration component to AIXI, similar to knowledge-seeking agents, or by the use of optimism. We give two examples of universal priors that cause AIXI to misbehave drastically. In case of a finite lifetime, the indifference prior makes all actions equally preferable to AIXI. Furthermore, for any computable policy π the dogmatic prior makes AIXI stick to the policy π as long as expected future rewards do not fall too close to zero. This has profound implications. We show that if we measure Legg-Hutter intelligence with respect to a different universal prior, AIXI scores arbitrarily close to the minimal intelligence while any computable policy can score arbitrarily close to the maximal intelligence. This makes the Legg-Hutter intelligence score and thus balanced Pareto optimality relative to the choice of the UTM. Moreover, we show that in the class of all computable environments, every policy is Pareto optimal. This undermines all existing optimality results for AIXI. We discuss the implications of these results for the quest for a natural universal Turing machine and optimality notions of general reinforcement learners."
+
+
+#### Leike - ["Nonparametric General Reinforcement Learning"](https://jan.leike.name/publications/Nonparametric%20General%20Reinforcement%20Learning%20-%20Leike%202016.pdf)
+>	"Reinforcement learning problems are often phrased in terms of Markov decision processes. In this thesis we go beyond MDPs and consider reinforcement learning in environments that are non-Markovian, non-ergodic and only partially observable. Our focus is not on practical algorithms, but rather on the fundamental underlying problems: How do we balance exploration and exploitation? How do we explore optimally? When is an agent optimal? We follow the nonparametric realizable paradigm: we assume the data is drawn from an unknown source that belongs to a known countable class of candidates.
+>	First, we consider the passive (sequence prediction) setting, learning from data that is not independent and identically distributed. We collect results from artificial intelligence, algorithmic information theory, and game theory and put them in a reinforcement learning context: they demonstrate how agent can learn the value of its own policy. Next, we establish negative results on Bayesian reinforcement learning agents, in particular AIXI. We show that unlucky or adversarial choices of the prior cause the agent to misbehave drastically. Therefore Legg-Hutter intelligence and balanced Pareto optimality, which depend crucially on the choice of the prior, are entirely subjective. Moreover, in the class of all computable environments every policy is Pareto optimal. This undermines all existing optimality properties for AIXI.
+>	However, there are Bayesian approaches to general reinforcement learning that satisfy objective optimality guarantees: We prove that Thompson sampling is asymptotically optimal in stochastic environments in the sense that its value converges to the value of the optimal policy. We connect asymptotic optimality to regret given a recoverability assumption on the environment that allows the agent to recover from mistakes. Hence Thompson sampling achieves sublinear regret in these environments.
+>	AIXI is known to be incomputable. We quantify this using the arithmetical hierarchy, and establish upper and corresponding lower bounds for incomputability. Further, we show that AIXI is not limit computable, thus cannot be approximated using finite computation. However there are limit computable ε-optimal approximations to AIXI. We also derive computability bounds for knowledge-seeking agents, and give a limit computable weakly asymptotically optimal reinforcement learning agent.
+>	Finally, our results culminate in a formal solution to the grain of truth problem: A Bayesian agent acting in a multi-agent environment learns to predict the other agents’ policies if its prior assigns positive probability to them (the prior contains a grain of truth). We construct a large but limit computable class containing a grain of truth and show that agents based on Thompson sampling over this class converge to play ε-Nash equilibria in arbitrary unknown computable multi-agent environments."
+
+----
+>	"Recently it was revealed that these optimality notions are trivial or subjective: a Bayesian agent does not explore enough to lose the prior’s bias, and a particularly bad prior can make the agent conform to any arbitrarily bad policy as long as this policy yields some rewards. These negative results put the Bayesian approach to (general) RL into question. We remedy the situation by showing that using Bayesian techniques an agent can indeed be optimal in an objective sense."
+>	"The agent we consider is known as Thompson sampling or posterior sampling. It samples an environment ρ from the posterior, follows the ρ-optimal policy for one effective horizon (a lookahead long enough to encompass most of the discount function’s mass), and then repeats. We show that this agent’s policy is asymptotically optimal in mean (and, equivalently, in probability). Furthermore, using a recoverability assumption on the environment, and some (minor) assumptions on the discount function, we prove that the worst-case regret is sublinear. This is the first time convergence and regret bounds of Thompson sampling have been shown under such general conditions."
+
+  - ["Thompson Sampling is Asymptotically Optimal in General Environments"](https://arxiv.org/abs/1602.07905) by Leike, Lattimore, Orseau, Hutter
 
 
 #### Schmidhuber - ["On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models"](http://arxiv.org/abs/1511.09249)
@@ -716,79 +756,11 @@ interesting papers (see below):
   - <https://youtube.com/watch?v=JJj4allguoU> (Schmidhuber)
 
 
-#### Hutter - ["On Universal Prediction and Bayesian Confirmation"](http://arxiv.org/abs/0709.1516)
->	"The Bayesian framework is a well-studied and successful framework for inductive reasoning, which includes hypothesis testing and confirmation, parameter estimation, sequence prediction, classification, and regression. But standard statistical guidelines for choosing the model class and prior are not always available or fail, in particular in complex situations. Solomonoff completed the Bayesian framework by providing a rigorous, unique, formal, and universal choice for the model class and the prior. We discuss in breadth how and in which sense universal (non-i.i.d.) sequence prediction solves various (philosophical) problems of traditional Bayesian sequence prediction. We show that Solomonoff's model possesses many desirable properties: Strong total and weak instantaneous bounds, and in contrast to most classical continuous prior densities has no zero p(oste)rior problem, i.e. can confirm universal hypotheses, is reparametrization and regrouping invariant, and avoids the old-evidence and updating problem. It even performs well (actually better) in non-computable environments."
-
-
-#### Legg - ["Is there an Elegant Universal Theory of Prediction?"](http://arxiv.org/pdf/cs/0606070.pdf)
->	"Solomonoff induction is an elegant and extremely general model of inductive learning. It neatly brings together the philosophical principles of Occam’s razor, Epicurus’ principle of multiple explanations, Bayes theorem and Turing’s model of universal computation into a theoretical sequence predictor with astonishingly powerful properties. If theoretical models of prediction can have such elegance and power, one cannot help but wonder whether similarly beautiful and highly general computable theories of prediction are also possible.
->	What we have shown here is that there does not exist an elegant constructive theory of prediction for computable sequences, even if we assume unbounded computational resources, unbounded data and learning time, and place moderate bounds on the Kolmogorov complexity of the sequences to be predicted. Very powerful computable predictors are therefore necessarily complex. We have further shown that the source of this problem is computable sequences which are extremely expensive to compute. While we have proven that very powerful prediction algorithms which can learn to predict these sequences exist, we have also proven that, unfortunately, mathematical analysis cannot be used to discover these algorithms due to problems of Goedel incompleteness.
->	These results can be extended to more general settings, specifically to those problems which are equivalent to, or depend on, sequence prediction. Consider, for example, a reinforcement learning agent interacting with an environment. In each interaction cycle the agent must choose its actions so as to maximise the future rewards that it receives from the environment. Of course the agent cannot know for certain whether or not some action will lead to rewards in the future, thus it must predict these. Clearly, at the heart of reinforcement learning lies a prediction problem, and so the results for computable predictors presented in this paper also apply to computable reinforcement learners. More specifically, it follows that very powerful computable reinforcement learners are necessarily complex, and it follows that it is impossible to discover extremely powerful reinforcement learning algorithms mathematically."
-
-  - <http://lo-tho.blogspot.ru/2012/08/truth-and-ai.html>
-
-
-#### Schmidhuber - ["Discovering Neural Nets with Low Kolmogorov Complexity and High Generalization Capability"](ftp://ftp.idsia.ch/pub/juergen/loconet.pdf)
->	"Many neural net learning algorithms aim at finding "simple" nets to explain training data. The expectation is that the "simpler" the networks, the better the generalization on test data (-> Occam's razor). Previous implementations, however, use measures for "simplicity" that lack the power, universality and elegance of those based on Kolmogorov complexity and Solomonoff's algorithmic probability. Likewise, most previous approaches (especially those of the "Bayesian" kind) suffer from the problem of choosing appropriate priors. This paper addresses both issues. It first reviews some basic concepts of algorithmic complexity theory relevant to machine learing, and how the Solomonoff-Levin distribution (or universal prior) deals with the prior problem. The universal prior leads to a probabilistic method for finding "algorithmically simple" problem solutions with high generalization capability. The method is based on Levin complexity (a time-bounded generalization of Kolmogorov complexity) and inspired by Levin's optimal universal search algorithm. For a given problem, solution candidates are computed by efficient "self-sizing" programs that influence their own runtime and storage size. The probabilistic search algorithm finds the "good" programs (the ones quickly computing algorithmically probable solutions fitting the training data). Simulations focus on the task of discovering "algorithmically simple" neural networks with low Kolmogorov complexity and high generalization capability. It is demonstrated that the method, at least with certain toy problems where it is computationally feasible, can lead to generalization results unmatchable by previous neural network algorithms. Much remains to be done, however, to make large scale applications and "incremental learning" feasible."
-
-
-#### Schmidhuber, Zhao, Wiering - ["Shifting Inductive Bias with Success-story Algorithm, Adaptive Levin Search, and Incremental Self-Improvement"](ftp://ftp.idsia.ch/pub/juergen/mljssalevin.pdf)
->	"We study task sequences that allow for speeding up the learner's average reward intake through appropriate shifts of inductive bias (changes of the learner's policy). To evaluate long-term effects of bias shifts setting the stage for later bias shifts we use the "success-story algorithm". SSA is occasionally called at times that may depend on the policy itself. It uses backtracking to undo those bias shifts that have not been empirically observed to trigger long-term reward accelerations (measured up until the current SSA call). Bias shifts that survive SSA represent a lifelong success history. Until the next SSA call, they are considered useful and build the basis for additional bias shifts. SSA allows for plugging in a wide variety of learning algorithms. We plug in (1) a novel, adaptive extension of Levin search and (2) a method for embedding the learner's policy modification strategy within the policy itself (incremental self-improvement). Our inductive transfer case studies involve complex, partially observable environments where traditional reinforcement learning fails."
-
-
-#### Hutter - ["Self-Optimizing and Pareto-Optimal Policies in General Environments based on Bayes-Mixtures"](http://arxiv.org/abs/cs/0204040)
->	"The problem of making sequential decisions in unknown probabilistic environments is studied. In cycle t action yt results in perception xt and reward rt, where all quantities in general may depend on the complete history. The perception xt and reward rt are sampled from the (reactive) environmental probability distribution µ. This very general setting includes, but is not limited to, (partial observable, k-th order) Markov decision processes. Sequential decision theory tells us how to act in order to maximize the total expected reward, called value, if µ is known. Reinforcement learning is usually used if µ is unknown. In the Bayesian approach one defines a mixture distribution ξ as a weighted sum of distributions ν∈ M, where M is any class of distributions including the true environment µ. We show that the Bayes optimal policy pξ based on the mixture ξ is self-optimizing in the sense that the average value converges asymptotically for all µ∈ M to the optimal value achieved by the (infeasible) Bayes-optimal policy pµ which knows µ in advance. We show that the necessary condition that M admits self-optimizing policies at all, is also sufficient. No other structural assumptions are made on M. As an example application, we discuss ergodic Markov decision processes, which allow for self-optimizing policies. Furthermore, we show that pξ is Pareto-optimal in the sense that there is no other policy yielding higher or equal value in all environments ν∈ M and a strictly higher value in at least one."
-
-
-#### Hutter - ["Universal Algorithmic Intelligence: A Mathematical Top-down Approach"](http://arxiv.org/abs/cs/0701125)
->	"Sequential decision theory formally solves the problem of rational agents in uncertain worlds if the true environmental prior probability distribution is known. Solomonoff’s theory of universal induction formally solves the problem of sequence prediction for unknown prior distribution. We combine both ideas and get a parameter-free theory of universal Artificial Intelligence. We give strong arguments that the resulting AIXI model is the most intelligent unbiased agent possible. We outline how the AIXI model can formally solve a number of problem classes, including sequence prediction, strategic games, function minimization, reinforcement and supervised learning. The major drawback of the AIXI model is that it is uncomputable. To overcome this problem, we construct a modified algorithm AIXItl that is still effectively more intelligent than any other time t and length l bounded agent. The computation time of AIXItl is of the order t·2^l . The discussion includes formal definitions of intelligence order relations, the horizon problem and relations of the AIXI theory to other AI approaches."
-
-
-#### Veness, Ng, Hutter, Uther, Silver - ["A Monte-Carlo AIXI Approximation"](https://www.jair.org/media/3125/live-3125-5397-jair.pdf) (MC-AIXI-CTW)
->	"This paper introduces a principled approach for the design of a scalable general reinforcement learning agent. Our approach is based on a direct approximation of AIXI, a Bayesian optimality notion for general reinforcement learning agents. Previously, it has been unclear whether the theory of AIXI could motivate the design of practical algorithms. We answer this hitherto open question in the affirmative, by providing the first computationally feasible approximation to the AIXI agent. To develop our approximation, we introduce a new Monte-Carlo Tree Search algorithm along with an agent-specific extension to the Context Tree Weighting algorithm. Empirically, we present a set of encouraging results on a variety of stochastic and partially observable domains. We conclude by proposing a number of directions for future research."
-
->	"This paper presents the first computationally feasible general reinforcement learning agent that directly and scalably approximates the AIXI ideal. Although well established theoretically, it has previously been unclear whether the AIXI theory could inspire the design of practical agent algorithms. Our work answers this question in the affirmative: empirically, our approximation achieves strong performance and theoretically, we can characterise the range of environments in which our agent is expected to perform well. To develop our approximation, we introduced two new algorithms: ρUCT, a Monte-Carlo expectimax approximation technique that can be used with any online Bayesian approach to the general reinforcement learning problem and FAC-CTW, a generalisation of the powerful CTW algorithm to the agent setting. In addition, we highlighted a number of interesting research directions that could improve the performance of our current agent; in particular, model class expansion and the online learning of heuristic rollout policies for ρUCT."
-
-  - <http://youtube.com/watch?v=yfsMHtmGDKE> (Ms. Pac-Man demo)
-  - <http://videolectures.net/nips09_veness_bfg/> (Veness)
-  - <http://jveness.info/publications/veness_phd_thesis_final.pdf>
-  - <http://jveness.info/software/mcaixi_jair_2010.zip>
-  - <https://github.com/moridinamael/mc-aixi>
-  - <https://github.com/gkassel/pyaixi>
-  - <https://github.com/GoodAI/SummerCamp/tree/master/AIXIModule>
-
-
-#### Leike, Hutter - ["On the Computability of Solomonoff Induction and Knowledge-Seeking"](http://arxiv.org/abs/1507.04124)
->	"Solomonoff induction is held as a gold standard for learning, but it is known to be incomputable. We quantify its incomputability by placing various flavors of Solomonoff's prior M in the arithmetical hierarchy. We also derive computability bounds for knowledge-seeking agents, and give a limit-computable weakly asymptotically optimal reinforcement learning agent."
-
-
-#### Leike, Hutter - ["On the Computability of AIXI"](http://arxiv.org/abs/1507.04124)
->	"How could we solve the machine learning and the artificial intelligence problem if we had infinite computation? Solomonoff induction and the reinforcement learning agent AIXI are proposed answers to this question. Both are known to be incomputable. In this paper, we quantify this using the arithmetical hierarchy, and prove upper and corresponding lower bounds for incomputability. We show that AIXI is not limit computable, thus it cannot be approximated using finite computation. Our main result is a limit-computable ε-optimal version of AIXI with infinite horizon that maximizes expected rewards."
-
-
-#### Leike, Hutter - ["Bad Universal Priors and Notions of Optimality"](http://jmlr.csail.mit.edu/proceedings/papers/v40/Leike15.pdf)
->	"A big open question of algorithmic information theory is the choice of the universal Turing machine. For Kolmogorov complexity and Solomonoff induction we have invariance theorems: the choice of the UTM changes bounds only by a constant. For the universally intelligent agent AIXI no invariance theorem is known. Our results are entirely negative: we discuss cases in which unlucky or adversarial choices of the UTM cause AIXI to misbehave drastically. We show that Legg-Hutter intelligence and thus balanced Pareto optimality is entirely subjective, and that every policy is Pareto optimal in the class of all computable environments. This undermines all existing optimality properties for AIXI. While it may still serve as a gold standard for AI, our results imply that AIXI is a relative theory, dependent on the choice of the UTM."
-
->	"The choice of the universal Turing machine has been a big open question in algorithmic information theory for a long time. While attempts have been made no answer is in sight. The Kolmogorov complexity of a string, the length of the shortest program that prints this string, depends on this choice. However, there are invariance theorems which state that changing the UTM changes Kolmogorov complexity only by a constant. When using the universal prior M introduced by Solomonoff to predict any deterministic computable binary sequence, the number of wrong predictions is bounded by (a multiple of) the Kolmogorov complexity of the sequence. Due to the invariance theorem, changing the UTM changes the number of errors only by a constant. In this sense, compression and prediction work for any choice of UTM. Hutter defines the universally intelligent agent AIXI, which is targeted at the general reinforcement learning problem. It extends Solomonoff induction to the interactive setting. AIXI is a Bayesian agent, using a universal prior on the set of all computable environments; actions are taken according to the maximization of expected future discounted rewards. Closely related is the intelligence measure defined by Legg and Hutter, a mathematical performance measure for general reinforcement learning agents: defined as the discounted rewards achieved across all computable environments, weighted by the universal prior. There are several known positive results about AIXI. It has been proven to be Pareto optimal, balanced Pareto optimal, and has maximal Legg-Hutter intelligence. Furthermore, AIXI asymptotically learns to predict the environment perfectly and with a small total number of errors analogously to Solomonoff induction, but only on policy: AIXI learns to correctly predict the value (expected future rewards) of its own actions, but generally not the value of counterfactual actions that it does not take. Orseau showed that AIXI does not achieve asymptotic optimality in all computable environments. So instead, we may ask the following weaker questions. Does AIXI succeed in every partially observable Markov decision process/(ergodic) Markov decision process/bandit problem/sequence prediction task? In this paper we show that without further assumptions on the UTM, we cannot answer any of the preceding questions in the affirmative. More generally, there can be no invariance theorem for AIXI. As a reinforcement learning agent, AIXI has to balance between exploration and exploitation. Acting according to any (universal) prior does not lead to enough exploration, and the bias of AIXI’s prior is retained indefinitely. For bad priors this can cause serious malfunctions. However, this problem can be alleviated by adding an extra exploration component to AIXI, similar to knowledge-seeking agents, or by the use of optimism. We give two examples of universal priors that cause AIXI to misbehave drastically. In case of a finite lifetime, the indifference prior makes all actions equally preferable to AIXI. Furthermore, for any computable policy π the dogmatic prior makes AIXI stick to the policy π as long as expected future rewards do not fall too close to zero. This has profound implications. We show that if we measure Legg-Hutter intelligence with respect to a different universal prior, AIXI scores arbitrarily close to the minimal intelligence while any computable policy can score arbitrarily close to the maximal intelligence. This makes the Legg-Hutter intelligence score and thus balanced Pareto optimality relative to the choice of the UTM. Moreover, we show that in the class of all computable environments, every policy is Pareto optimal. This undermines all existing optimality results for AIXI. We discuss the implications of these results for the quest for a natural universal Turing machine and optimality notions of general reinforcement learners."
-
-
-#### Hutter - ["Open Problems in Universal Induction & Intelligence"](http://arxiv.org/pdf/0907.0746.pdf)
->	"Specialized intelligent systems can be found everywhere: finger print, hand-writing, speech, and face recognition, spam filtering, chess and other game programs, robots, et al. This decade the first presumably complete mathematical theory of artificial intelligence based on universal induction-prediction-decision-action has been proposed. This information-theoretic approach solidifies the foundations of inductive inference and artificial intelligence. Getting the foundations right usually marks a significant progress and maturing of a field. The theory provides a gold standard and guidance for researchers working on intelligent algorithms. The roots of universal induction have been laid exactly half-a-century ago and the roots of universal intelligence exactly one decade ago. So it is timely to take stock of what has been achieved and what remains to be done. Since there are already good recent surveys, I describe the state-of-the-art only in passing and refer the reader to the literature. This article concentrates on the open problems in universal induction and its extension to universal intelligence."
-
-
-#### Leike - ["Nonparametric General Reinforcement Learning"](https://jan.leike.name/publications/Nonparametric%20General%20Reinforcement%20Learning%20-%20Leike%202016.pdf)
->	"Reinforcement learning problems are often phrased in terms of Markov decision processes. In this thesis we go beyond MDPs and consider reinforcement learning in environments that are non-Markovian, non-ergodic and only partially observable. Our focus is not on practical algorithms, but rather on the fundamental underlying problems: How do we balance exploration and exploitation? How do we explore optimally? When is an agent optimal? We follow the nonparametric realizable paradigm: we assume the data is drawn from an unknown source that belongs to a known countable class of candidates.
->	First, we consider the passive (sequence prediction) setting, learning from data that is not independent and identically distributed. We collect results from artificial intelligence, algorithmic information theory, and game theory and put them in a reinforcement learning context: they demonstrate how agent can learn the value of its own policy. Next, we establish negative results on Bayesian reinforcement learning agents, in particular AIXI. We show that unlucky or adversarial choices of the prior cause the agent to misbehave drastically. Therefore Legg-Hutter intelligence and balanced Pareto optimality, which depend crucially on the choice of the prior, are entirely subjective. Moreover, in the class of all computable environments every policy is Pareto optimal. This undermines all existing optimality properties for AIXI.
->	However, there are Bayesian approaches to general reinforcement learning that satisfy objective optimality guarantees: We prove that Thompson sampling is asymptotically optimal in stochastic environments in the sense that its value converges to the value of the optimal policy. We connect asymptotic optimality to regret given a recoverability assumption on the environment that allows the agent to recover from mistakes. Hence Thompson sampling achieves sublinear regret in these environments.
->	AIXI is known to be incomputable. We quantify this using the arithmetical hierarchy, and establish upper and corresponding lower bounds for incomputability. Further, we show that AIXI is not limit computable, thus cannot be approximated using finite computation. However there are limit computable ε-optimal approximations to AIXI. We also derive computability bounds for knowledge-seeking agents, and give a limit computable weakly asymptotically optimal reinforcement learning agent.
->	Finally, our results culminate in a formal solution to the grain of truth problem: A Bayesian agent acting in a multi-agent environment learns to predict the other agents’ policies if its prior assigns positive probability to them (the prior contains a grain of truth). We construct a large but limit computable class containing a grain of truth and show that agents based on Thompson sampling over this class converge to play ε-Nash equilibria in arbitrary unknown computable multi-agent environments."
-
-
 
 ---
-### interesting papers - intrinsic motivation
+### interesting papers - Artificial Curiosity and Creativity
 
-see also "[interesting papers - exploration and intrinsic motivation]" section of <https://dropbox.com/s/dexryjnmxujdynd/Reinforcement%20Learning.txt>
+[interesting papers](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---exploration-and-intrinsic-motivation) on exploration and intrinsic motivation
 
 
 #### Schmidhuber - ["Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes"](http://arxiv.org/abs/0812.4360)
@@ -816,15 +788,23 @@ see also "[interesting papers - exploration and intrinsic motivation]" section o
 
 >	"This paper proposes a curiosity-driven exploration strategy, making use of information gain about the agent’s internal belief of the dynamics model as a driving force. This principle can be traced back to the concepts of curiosity and surprise (Schmidhuber). Within this framework, agents are encouraged to take actions that result in states they deem surprising - i.e., states that cause large updates to the dynamics model distribution. We propose a practical implementation of measuring information gain using variational inference. Herein, the agent’s current understanding of the environment dynamics is represented by a Bayesian neural networks. We also show how this can be interpreted as measuring compression improvement, a proposed model of curiosity (Schmidhuber). In contrast to previous curiosity-based approaches, our model scales naturally to continuous state and action spaces. The presented approach is evaluated on a range of continuous control tasks, and multiple underlying RL algorithms. Experimental results show that VIME achieves significantly better performance than naïve exploration strategies."
 
-----
->	"Authors train Bayesian neural networks to approximate posterior distributions over dynamics models given observed data, by maximizing a variational lower bound; they then use second-order approximations of the Bayesian surprise as intrinsic motivation."
+>	"Variational inference is used to approximate the posterior distribution of a Bayesian neural network that represents the environment dynamics. Using information gain in this learned dynamics model as intrinsic rewards allows the agent to optimize for both external reward and intrinsic surprise simultaneously."  
+>	"r'(st,at,st+1) = r(st,at) + μ * Dkl[p(θ|ξt,at,st+1)||p(θ|ξt)]"  
 
->	"r'(st,at,st+1) = r(st,at) + μ * Dkl[p(θ|ξt,at,st+1)||p(θ|ξt)]"
+>	"It is possible to derive an interesting relationship between compression improvement - an intrinsic reward objective defined in Schmidhuber's Artificial Curiosity and Creativity theory, and the information gain. The agent’s curiosity is equated with compression improvement, measured through C(ξt; φt-1) - C(ξt; φt), where C(ξ; φ) is the description length of ξ using φ as a model. Furthermore, it is known that the negative variational lower bound can be viewed as the description length. Hence, we can write compression improvement as L[q(θ; φt), ξt] - L[q(θ; φt-1), ξt]. In addition, due to alternative formulation of the variational lower bound, compression improvement can be written as (log p(ξt) - Dkl[q(θ; φt)||p(θ|ξt)]) - (log p(ξt) - Dkl[q(θ; φt-1)||p(θ|ξt)]). If we assume that φt perfectly optimizes the variational lower bound for the history ξt, then Dkl[q(θ; φt)||p(θ|ξt)] = 0, which occurs when the approximation equals the true posterior, i.e., q(θ; φt) = p(θ|ξt). Hence, compression improvement becomes Dkl[p(θ|ξt-1) || p(θ|ξt)]. Therefore, optimizing for compression improvement comes down to optimizing the KL divergence from the posterior given the past history ξt-1 to the posterior given the total history ξt. As such, we arrive at an alternative way to encode curiosity than information gain, namely Dkl[p(θ|ξt)||p(θ|ξt,at,st+1)], its reversed KL divergence. In experiments, we noticed no significant difference between the two KL divergence variants. This can be explained as both variants are locally equal when introducing small changes to the parameter distributions. Investigation of how to combine both information gain and compression improvement is deferred to future work."
 
   - <https://goo.gl/fyxLvI> (demo)
   - <https://youtu.be/WRFqzYWHsZA?t=18m38s> (Abbeel)
   - <https://youtube.com/watch?v=sRIjxxjVrnY> (Panin)
+  - <http://pemami4911.github.io/paper-summaries/2016/09/04/VIME.html>
   - <https://github.com/openai/vime>
+
+
+#### Frank, Leitner, Stollenga, Forster, Schmidhuber - ["Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3881010/pdf/fnbot-07-00025.pdf)
+>	"Most previous work on artificial curiosity and intrinsic motivation focuses on basic concepts and theory. Experimental results are generally limited to toy scenarios, such as navigation in a simulated maze, or control of a simple mechanical system with one or two degrees of freedom. To study AC in a more realistic setting, we embody a curious agent in the complex iCub humanoid robot. Our novel reinforcement learning framework consists of a state-of-the-art, low-level, reactive control layer, which controls the iCub while respecting constraints, and a high-level curious agent, which explores the iCub’s state-action space through information gain maximization, learning a world model from experience, controlling the actual iCub hardware in real-time. To the best of our knowledge, this is the first ever embodied, curious agent for real-time motion planning on a humanoid. We demonstrate that it can learn compact Markov models to represent large regions of the iCub’s configuration space, and that the iCub explores intelligently, showing interest in its physical constraints as well as in objects it finds in its environment."
+
+  - <http://vimeo.com/51011081> (demo)
+  - <http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/> (Schmidhuber)
 
 
 #### Schmidhuber - ["PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem"](http://arxiv.org/pdf/1112.5309v2.pdf)
@@ -833,13 +813,6 @@ see also "[interesting papers - exploration and intrinsic motivation]" section o
 
 #### Srivastava, Steunebrink, Stollenga, Schmidhuber - ["Continually Adding Self-Invented Problems to the Repertoire: First Experiments with PowerPlay"](http://people.idsia.ch/~steunebrink/Publications/ICDL12_powerplay.pdf)
 >	"Pure scientists do not only invent new methods to solve given problems. They also invent new problems. The recent PowerPlay framework formalizes this type of curiosity and creativity in a new, general, yet practical way. To acquire problem solving prowess through playing, PowerPlay-based artificial explorers by design continually come up with the fastest to find, initially novel, but eventually solvable problems. They also continually simplify or speed up solutions to previous problems. We report on results of first experiments with PowerPlay. A self-delimiting recurrent neural network (SLIM RNN) is used as a general computational architecture to implement the system’s solver. Its weights can encode arbitrary, self-delimiting, halting or non-halting programs affecting both environment (through effectors) and internal states encoding abstractions of event sequences. In open-ended fashion, our PowerPlay-driven RNNs learn to become increasingly general problem solvers, continually adding new problem solving procedures to the growing repertoire, exhibiting interesting developmental stages."
-
-
-#### Frank, Leitner, Stollenga, Forster, Schmidhuber - ["Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3881010/pdf/fnbot-07-00025.pdf)
->	"Most previous work on artificial curiosity and intrinsic motivation focuses on basic concepts and theory. Experimental results are generally limited to toy scenarios, such as navigation in a simulated maze, or control of a simple mechanical system with one or two degrees of freedom. To study AC in a more realistic setting, we embody a curious agent in the complex iCub humanoid robot. Our novel reinforcement learning framework consists of a state-of-the-art, low-level, reactive control layer, which controls the iCub while respecting constraints, and a high-level curious agent, which explores the iCub’s state-action space through information gain maximization, learning a world model from experience, controlling the actual iCub hardware in real-time. To the best of our knowledge, this is the first ever embodied, curious agent for real-time motion planning on a humanoid. We demonstrate that it can learn compact Markov models to represent large regions of the iCub’s configuration space, and that the iCub explores intelligently, showing interest in its physical constraints as well as in objects it finds in its environment."
-
-  - <http://vimeo.com/51011081> (demo)
-  - <http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/> (Schmidhuber)
 
 
 #### Orseau - ["Universal Knowledge-Seeking Agents"](http://www.agroparistech.fr/mmip/maths/laurent_orseau/papers/orseau-TCS-2014-uksa.pdf)
