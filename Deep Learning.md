@@ -452,6 +452,8 @@
 
   ["Recent Progress in Generative Modeling"](http://scaledml.org/2016/slides/ilya.pdf) by Ilya Sutskever
 
+  ["Representation Learning and the Information Bottleneck Approach"](http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/) by Ference Huszar
+
   ["Differentiable Inference and Generative Models"](http://www.cs.toronto.edu/~duvenaud/courses/csc2541/index.html) course by David Duvenaud
 
 ----
@@ -546,8 +548,9 @@
 
   *(Ferenc Huszar)*
 
+----
 
-  ["Representation Learning and the Information Bottleneck Approach"](http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/) by Ference Huszar
+  *(David Pfau)* "In unsupervised learning, you'd like high held-out likelihood, realistic samples and meaningful latent state. In practice, pick 2 of 3."
 
 ----
 
@@ -812,13 +815,13 @@ examples:
 ---
 ### generative models - restricted boltzmann machine
 
-  <https://theneural.wordpress.com/2011/07/08/the-miracle-of-the-boltzmann-machine/> (Ilya Sutskever)  
-  <https://theneural.wordpress.com/2011/07/17/undirected-models-are-better-at-sampling/> (Ilya Sutskever)  
+  ["The Miracle of the Boltzmann Machine"](https://theneural.wordpress.com/2011/07/08/the-miracle-of-the-boltzmann-machine/) by Ilya Sutskever  
+  ["Undirected Models are Better at Sampling"](https://theneural.wordpress.com/2011/07/17/undirected-models-are-better-at-sampling/) by Ilya Sutskever  
 
-  <https://stats.stackexchange.com/questions/114385/what-is-the-difference-between-convolutional-neural-networks-restricted-boltzma>  
+  [difference with other models](https://stats.stackexchange.com/questions/114385/what-is-the-difference-between-convolutional-neural-networks-restricted-boltzma)  
 
-  introduction by Geoffrey Hinton -
-	<http://sms.cam.ac.uk/media/2017973> (starting from 9:00)  
+  introduction by Geoffrey Hinton:  
+	<http://sms.cam.ac.uk/media/2017973> (9:00)  
 	["Hopfield Nets and Boltzmann Machines"](http://youtube.com/watch?v=iQu1ZgmapJQ&list=PLnnr1O8OWc6br8B9iXYFkVJcMc9OnjoZS)  
 	["Restricted Boltzmann Machines"](http://youtube.com/watch?v=V2z80aXF8b4&list=PLnnr1O8OWc6bh5CYcqrAjfyzPH3QV745M)  
 	["Stacking RBMs to Make Deep Belief Nets"](https://youtube.com/watch?v=ZInARyllo1U&list=PLnnr1O8OWc6YkAcnIkKAz9UgWChh1YUSp)  
@@ -1020,6 +1023,7 @@ examples:
 	<http://research.microsoft.com/apps/video/default.aspx?id=260037> (Graves)  
 	<http://youtube.com/watch?v=otRoAQtc5Dk> (Polykovskiy)  
 
+	<http://blog.yhat.com/posts/neural-turing-machines.html>  
 	<http://rylanschaeffer.github.io/content/research/neural_turing_machine/main.html>  
 	<http://blog.acolyer.org/2016/03/09/neural-turing-machines/>  
 	<http://ikuz.eu/2014/11/19/neural-turing-machines-by-google-deepmind-article-overview/>  
@@ -1498,7 +1502,7 @@ interesting papers (see below):
 >	"One long-term goal of machine learning research is to produce methods that are applicable to highly complex tasks, such as perception (vision, audition), reasoning, intelligent control, and other artificially intelligent behaviors. We argue that in order to progress toward this goal, the Machine Learning community must endeavor to discover algorithms that can learn highly complex functions, with minimal need for prior knowledge, and with minimal human intervention. We present mathematical and empirical evidence suggesting that many popular approaches to non-parametric learning, particularly kernel methods, are fundamentally limited in their ability to learn complex high-dimensional functions. Our analysis focuses on two problems. First, kernel machines are shallow architectures, in which one large layer of simple template matchers is followed by a single layer of trainable coefficients. We argue that shallow architectures can be very inefficient in terms of required number of computational elements and examples. If the function to be learned has many variations, Gaussian kernel algorithms require a number of training examples proportional to the number of variations, which could be large even though there may exist short descriptions of the target function, i.e. their Kolmogorov complexity may be low. Second, we analyze a limitation of kernel machines with a local kernel, linked to the curse of dimensionality, that applies to supervised, unsupervised (manifold learning) and semi-supervised kernel machines. Using empirical results on invariant image recognition tasks, kernel methods are compared with deep architectures, in which lower-level features or concepts are progressively combined into more abstract and higher-level representations. We argue that deep architectures have the potential to generalize in non-local ways, i.e., beyond immediate neighbors, and that this is crucial in order to make progress on the kind of complex tasks required for artificial intelligence."
 
 
-#### Bengio, Delalleau, Simard - ["Decision Trees Do Not Generalize To New Variations"](http://www.iro.umontreal.ca/~lisa/pointeurs/bengio+al-decisiontrees-2010.pdf) (generalization problems with decision trees and supposedly with random forrests or boosted trees)
+#### Bengio, Delalleau, Simard - ["Decision Trees Do Not Generalize To New Variations"](http://www.iro.umontreal.ca/~lisa/pointeurs/bengio+al-decisiontrees-2010.pdf) (generalization problems with decision trees and supposedly with random forrests or boosted decision trees)
 >	"The family of decision tree learning algorithms is among the most widespread and studied. Motivated by the desire to develop learning algorithms that can generalize when learning highly varying functions such as those presumably needed to achieve artificial intelligence, we study some theoretical limitations of decision trees. We demonstrate formally that they can be seriously hurt by the curse of dimensionality in a sense that is a bit different from other nonparametric statistical methods, but most importantly, that they cannot generalize to variations not seen in the training set. This is because a decision tree creates a partition of the input space and needs at least one example in each of the regions associated with a leaf to make a sensible prediction in that region. A better understanding of the fundamental reasons for this limitation suggests that one should use forests or even deeper architectures instead of trees, which provide a form of distributed representation and can generalize to variations not encountered in the training data."
 
 
@@ -2002,6 +2006,7 @@ interesting papers (see below):
 	  - Adversarial training can be seen as data-augmentation in the input space X. The RML objective does data-augmentation in the output space Y.
 	  - Adversarial training performs model-based data augmentation: the examples generated are those for which the current model is maximally vulnerable. RML training performs data-based augmentation: the examples generated have outputs that are “near” the ground-truth outputs. (Here 'near' is defined by the reward function.)"
 
+  - <https://youtu.be/fZNyHoXgV7M?t=24m59s> (Norouzi)
   - <https://youtu.be/uohtFXD_39c?t=38m10s> (Samy Bengio)
   - <http://youtube.com/watch?v=agA-rc71Uec> (Samy Bengio)
   - <http://drive.google.com/file/d/0B3Rdm_P3VbRDVUQ4SVBRYW82dU0> (Gauthier)
@@ -2184,6 +2189,7 @@ interesting papers (see below):
   - <http://research.microsoft.com/apps/video/default.aspx?id=260037> (Graves)
   - <http://youtube.com/watch?v=otRoAQtc5Dk> (Polykovskiy)
   - <http://postnauka.ru/faq/36436> (in russian)
+  - <http://blog.yhat.com/posts/neural-turing-machines.html>
   - <http://rylanschaeffer.github.io/content/research/neural_turing_machine/main.html>
   - <http://blog.acolyer.org/2016/03/09/neural-turing-machines/>
   - <http://ikuz.eu/2014/11/19/neural-turing-machines-by-google-deepmind-article-overview/>

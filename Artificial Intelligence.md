@@ -178,6 +178,7 @@
 ### knowledge representation
 
   [Knowledge Representation](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
+  [Deep Learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
   [Probabilistic Programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
 
 
@@ -484,14 +485,17 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
   [introduction to Solomonoff Induction](http://lesswrong.com/lw/dhg/an_intuitive_explanation_of_solomonoff_induction/) by Luke Muehlhauser and Alex Altair
 
-  ["How Bayes theorem is consistent with Solomonoff induction"](http://lesswrong.com/r/discussion/lw/di3/how_bayes_theorem_is_consistent_with_solomonoff/)
-
 
   [introduction to AIXI](http://youtube.com/watch?v=F2bQ5TSB-cE) by Marcus Hutter
 
   [introduction to AIXI](http://jan.leike.name/AIXI.html) by Jan Leike
 
   [book about AIXI](http://hutter1.net/ai/uaibook.htm) by Marcus Hutter
+
+
+  [Algorithmic Probability](http://scholarpedia.org/article/Algorithmic_probability)
+
+  ["How Bayes theorem is consistent with Solomonoff induction"](http://lesswrong.com/r/discussion/lw/di3/how_bayes_theorem_is_consistent_with_solomonoff/)
 
 
   [interesting papers](#solomonoff-induction-and-aixi)
@@ -717,6 +721,7 @@ interesting papers (see below):
 >	"The agent we consider is known as Thompson sampling or posterior sampling. It samples an environment ρ from the posterior, follows the ρ-optimal policy for one effective horizon (a lookahead long enough to encompass most of the discount function’s mass), and then repeats. We show that this agent’s policy is asymptotically optimal in mean (and, equivalently, in probability). Furthermore, using a recoverability assumption on the environment, and some (minor) assumptions on the discount function, we prove that the worst-case regret is sublinear. This is the first time convergence and regret bounds of Thompson sampling have been shown under such general conditions."
 
   - ["Thompson Sampling is Asymptotically Optimal in General Environments"](https://arxiv.org/abs/1602.07905) by Leike, Lattimore, Orseau, Hutter
+  - <https://youtube.com/watch?v=hSiuJuvTBoE> (Leike)
 
 
 #### Schmidhuber - ["On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models"](http://arxiv.org/abs/1511.09249)

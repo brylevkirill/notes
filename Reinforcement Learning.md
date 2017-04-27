@@ -155,19 +155,16 @@
 ----
 #### robotics
 
-  "Making Robots Learn" by Pieter Abbeel -  
+  "Making Robots Learn" by Pieter Abbeel:  
 	<https://youtu.be/xe-z4i3l-iQ?t=30m35s>  
 	<http://on-demand.gputechconf.com/gtc/2016/video/S6812.html>  
 	<http://youtube.com/watch?v=xMHjkZBvnfU>  
 
-  "Deep Robotic Learning" by Sergey Levine -  
+  "Deep Robotic Learning" by Sergey Levine:  
 	<http://videolectures.net/iclr2016_levine_deep_learning/>  
 	<https://youtube.com/watch?v=f41JXf-ojrM>  
 	<https://youtube.com/watch?v=EtMyH_--vnU>  
 	<https://video.seas.harvard.edu/media/ME+Sergey+Levine+2015+-04-01/1_gqqp9r3o/23375211>  
-
-  "Learning Deep Visuomotor Policies" by Trevor Darrell -  
-	<https://youtu.be/xgUZTvAZfDo?t=28m20s>  
 
 ----
 
@@ -232,7 +229,7 @@
 
 ----
 
-  ["Reinforcement Learning: An Introduction"](https://dropbox.com/s/b3psxv2r0ccmf80/book2015oct.pdf) book by Rich Sutton and Andrew Barto (second edition, draft)  
+  ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/sutton/book/the-book-2nd.html) book by Rich Sutton and Andrew Barto (second edition, draft)  
   ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/sutton/book/ebook/the-book.html) book by Rich Sutton and Andrew Barto (first edition)  
   ["Algorithms for Reinforcement Learning"](http://www.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf) book by Csaba Szepesvari  
 
@@ -245,7 +242,10 @@
 
   [exercises and solutions](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction) by Shangtong Zhang  
   [exercises and solutions](http://wildml.com/2016/10/learning-reinforcement-learning/) by Denny Britz  
-  [course with exercises and solutions](https://github.com/yandexdataschool/Practical_RL/) at Yandex  
+  [course with exercises and solutions](https://github.com/yandexdataschool/Practical_RL/) from Yandex  
+
+  [implementations of algorithms](https://github.com/rlcode/reinforcement-learning) from RLCode team  
+  [implementations of algorithms](https://github.com/openai/rllab/tree/master/rllab/algos) from OpenAI  
 
 
 
@@ -271,13 +271,13 @@
 ---
 ### theory
 
-  differences between reinforcement learning and other learning paradigms  [<https://youtube.com/watch?v=2pWv7GOvuf0&t=9m37s>]:  
+  differences between reinforcement learning and other learning paradigms  ([overview](https://youtube.com/watch?v=2pWv7GOvuf0&t=9m37s) by David Silver):  
   - there is no supervisor, only a reward signal  
   - feedback is delayed, not instantaneous  
   - time really matters (sequential, not i.i.d. data)  
   - agent's actions affect subsequent data it receives  
 
-  differences between reinforcement learning and supervised learning  [<https://youtube.com/watch?v=8jQIKgTzQd4&t=50m28s>]:  
+  differences between reinforcement learning and supervised learning  ([overview](https://youtube.com/watch?v=8jQIKgTzQd4&t=50m28s) by John Schulman):  
   - no full access to analytic representation of loss function being optimized - value has to be queried by interaction with environment  
   - interacting with stateful environment (unknown, nonlinear, stochastic, arbitrarily complex) - next input depends on previous actions  
 
@@ -315,15 +315,15 @@
 
 ----
 
-  components of reinforcement learning algorithm  [<https://youtube.com/watch?v=_UVYhuATS9E&t=2m44s>]:  
+  components of reinforcement learning algorithm  ([overview](https://youtube.com/watch?v=_UVYhuATS9E&t=2m44s) by Sergey Levine):  
   - generate samples / run the policy  
   - fit a model / estimate the return  
   - improve the policy  
 
-  dimensions for classification of methods  [<https://webdocs.cs.ualberta.ca/~sutton/book/ebook/node105.html>]:  
+  dimensions for classification of methods  ([overview](http://incompleteideas.net/sutton/book/ebook/node105.html) by Sutton and Barto):  
   - prediction vs control  
   - MDPs vs bandits  
-  - model-based vs value-based vs policy-based  [<http://youtube.com/watch?v=P_agNaSrVhc>]  
+  - model-based vs value-based vs policy-based  ([overview](http://youtube.com/watch?v=P_agNaSrVhc) by Michael Littman)  
   - on-policy vs off-policy  
   - bootstrapping vs Monte Carlo  
 
@@ -443,7 +443,7 @@
 
   **approximate bayesian exploration models**:
 
-  ["Weight Uncertainty in Neural Networks"](#blundell-cornebise-kavukcuoglu-wierstra---weight-uncertainty-in-neural-networks) by Blundell et al.  (training bayesian neural network for predicting reward, sampling particular network weights from posterior and choosing action with highest predicted reward)  
+  ["Weight Uncertainty in Neural Networks"](#blundell-cornebise-kavukcuoglu-wierstra---weight-uncertainty-in-neural-networks) by Blundell et al.  (training bayesian neural network to predict reward, sampling particular network weights from posterior and choosing action with highest predicted reward)  
   ["Deep Exploration via Bootstrapped DQN"](#osband-blundell-pritzel-van-roy---deep-exploration-via-bootstrapped-dqn) by Osband et al.  (training multiple value function networks with shared bottom layers using bootstrapping, sampling value function network and running episode using it)  
   ["Deep Exploration via Randomized Value Functions"](https://arxiv.org/abs/1703.07608) by Osband et al.  
   ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](http://arxiv.org/abs/1611.02779) by Duan et al.  
@@ -460,7 +460,6 @@
 
   - *uncertainty motivation*  
 	reward for every event inversely proportional to its probability of observation  
-	r(ek,t) = C·(1 - P(ek,t))  
 
 	["Action-Conditional Video Prediction using Deep Networks in Atari Games"](#oh-guo-lee-lewis-singh---action-conditional-video-prediction-using-deep-networks-in-atari-games) by Oh et al.  (approximate visitation counting in a learned state embedding using Gaussian kernels)  
 	["Unifying Count-Based Exploration and Intrinsic Motivation"](#bellemare-srinivasan-ostrovski-schaul-saxton-munos---unifying-count-based-exploration-and-intrinsic-motivation) by Bellemare et al.  (relationship between the pseudo-count, a variant of Schmidhuber’s compression progress or prediction gain, and Bayesian information gain)  
@@ -470,20 +469,18 @@
 
   - *information gain motivation*  
 	decrease of uncertainty in knowledge that an agent has of environment after an event has happened  
-	r(ek,t) = C·(H(E,t) - H(E,t+1))  
 
 	["An Information-theoretic Approach to Curiosity-driven Reinforcement Learning"](##still-precup---an-information-theoretic-approach-to-curiosity-driven-reinforcement-learning) by Still and Precup  
 	["VIME: Variational Information Maximizing Exploration"](#houthooft-chen-duan-schulman-turck-abbeel---vime-variational-information-maximizing-exploration) by Houthooft et al.  
 	["Exploration Potential"](http://arxiv.org/abs/1609.04994) by Leike  
 
   - *empowerment*  
-	reward measure that pushes an agent to produce sequences of actions that can transfer a maximal amount of information to its sensors through the environment  
-	channel capacity from the sequence of actions At,At+1,...,At+n−1 to the perceptions St+n after an arbitrary number of timesteps  
-	r(At,At+1,...,At+n−1→ St+n) = max p(a) [I(At,At+1,...,At+n−1,St+n)]  
+	agent's ability to affect its environment, reward for sequences of actions that can transfer maximal amount of information to its sensors through environment  
+	maximizing mutual information between actions and future states, i.e. information contained in a about s' or information that can be "injected" into s' by a  
 
 	["Empowerment - An Introduction"](#salge-glackin-polani---empowerment---an-introduction) by Salge et al.  
-	["Variational Information Maximisation for Intrinsically Motivated Reinforcement Learning"](#mohamed-rezende---variational-information-maximisation-for-intrinsically-motivated-reinforcement-learning) by Mohamed and Rezende  (maximizing mutual information between actions and future state, i.e. information contained in a about s' or information that can be "injected" into s' by a)  
-	["Variational Intrinsic Control"](http://arxiv.org/abs/1611.07507) by Gregor et al.  
+	["Variational Information Maximisation for Intrinsically Motivated Reinforcement Learning"](#mohamed-rezende---variational-information-maximisation-for-intrinsically-motivated-reinforcement-learning) by Mohamed and Rezende  
+	["Variational Intrinsic Control"](http://arxiv.org/abs/1611.07507) by Gregor et al.  (the primary goal is not to understand or predict the observations but to control the environment - agents can often control an environment perfectly well without much understanding, and focusing on understanding might significantly distract and impair the agent, as such reducing the control it achieves)  
 
 
 **predictive models**:  
@@ -491,14 +488,12 @@
 
   - *predictive novelty motivation*  
 	interesting situations are those for which the prediction errors are highest  
-	r(SM(→ t)) = C·||Π(SM(→ t)) - ek(t+1)||  
 
 	["Incentivizing Exploration In Reinforcement Learning With Deep Predictive Models"](#stadie-levine-abbeel---incentivizing-exploration-in-reinforcement-learning-with-deep-predictive-models) by Stadie et al.  
 
   - *learning progress motivation*  
 	reward for prediction progress, i.e. decrease of prediction errors  
 	difference in prediction error of the predictor, about the same sensorimotor context, between the first prediction and a second prediction made just after the predictor has been updated with a learning rule  
-	r(SM → t) = Er(t) − Er'(t) = ||Π(SM(→ t)) - ek(t+1)|| - ||Π'(SM(→ t)) - ek(t+1)||  
 
 	[Artificial Curiosity and Creativity](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) by Schmidhuber  
 	["VIME: Variational Information Maximizing Exploration"](#houthooft-chen-duan-schulman-turck-abbeel---vime-variational-information-maximizing-exploration) by Houthooft et al.  (similarity between Schmidhuber's compression progress and information gain)  
@@ -506,7 +501,6 @@
 
   - *predictive familiarity motivation*  
 	motivation to search for situations which are very predictable and thus familiar  
-	r(SM(→ t)) = C/Er(t)  
 
 
 **competence-based models**:  
@@ -514,11 +508,9 @@
 
   - *maximizing incompetence motivation*  
 	reward measure that pushes an agent to set challenges/goals for which its performance is lowest  
-	r(SM(→ t),gk,tg) = C·la(gk,tg)  
 
   - *maximizing competence progress*  
 	interestingness of a challenge as the competence progress that is experienced as an agent repeatedly tries to achieve it  
-	r(SM(→ t),gk,tg) = C·(la(gk,tg-θ) - la(gk,tg))  
 
 
 **morphological models**:
@@ -526,7 +518,6 @@
 
   - *synchronicity motivation*  
 	high short-term correlation between a maximally large number of sensorimotor channels  
-	r(SM(→ t)) = C·(Σi Σj H(SMi,SMj) / (H(SMi|SMj) + H(SMj|SMi)))  
 
 ----
 
@@ -601,8 +592,8 @@
 
 
 
-----
-#### contextual bandits
+---
+### contextual bandits
 
   history of contextual bandits by John Langford ([video](https://youtu.be/7ic_d5TeIUk?t=6m41s))
 
@@ -665,14 +656,13 @@
 
 ----
 
-  Multiworld Testing Decision Service:
-	first general purpose reinforcement learning system  
-	<https://mwtds.azurewebsites.net>  
-	<http://research.microsoft.com/en-us/projects/mwt/>  
-	<http://hunch.net/?p=4464948> (John Langford)  
-	<http://machinedlearnings.com/2017/01/reinforcement-learning-as-service.html> (Paul Mineiro)  
-	<https://youtube.com/watch?v=7ic_d5TeIUk> (John Langford)  
-	<https://youtu.be/N5x48g2sp8M?t=52m> (Robert Schapire)  
+  Multiworld Testing Decision Service:  
+  - <https://mwtds.azurewebsites.net>  
+  - <http://research.microsoft.com/en-us/projects/mwt/>  
+  - <http://hunch.net/?p=4464948> (John Langford)  
+  - <http://machinedlearnings.com/2017/01/reinforcement-learning-as-service.html> (Paul Mineiro)  
+  - <https://youtube.com/watch?v=7ic_d5TeIUk> (John Langford)  
+  - <https://youtu.be/N5x48g2sp8M?t=52m> (Robert Schapire)  
 
   ["Bayesian Multi-armed Bandits vs A/B Tests"](https://habrahabr.ru/company/ods/blog/325416/) (in russian)
 
@@ -689,10 +679,10 @@
 ----
 #### Guided Policy Search
 
-  <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/> (Pieter Abbeel, part 2)  
-  <http://youtube.com/watch?v=EtMyH_--vnU> (Sergey Levine)  
-  <https://video.seas.harvard.edu/media/ME+Sergey+Levine+2015+-04-01/1_gqqp9r3o/23375211> (Sergey Levine)  
-  <http://youtube.com/watch?v=xMHjkZBvnfU> (Pieter Abbeel)  
+  [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/) by Pieter Abbeel (part 2)  
+  [overview](http://youtube.com/watch?v=EtMyH_--vnU) by Sergey Levine  
+  [overview](https://video.seas.harvard.edu/media/ME+Sergey+Levine+2015+-04-01/1_gqqp9r3o/23375211) by Sergey Levine  
+  [overview](http://youtube.com/watch?v=xMHjkZBvnfU) by Pieter Abbeel  
 
   ["Optimal Control and Trajectory Optimization"](https://youtube.com/watch?v=mZtlW_xtarI) by Sergey Levine  
   ["Learning Policies by Imitating Optimal Control"](https://youtube.com/watch?v=o0Ebur3aNMo) by Sergey Levine  
@@ -760,8 +750,8 @@
   ["Deep Recurrent Q-Network"](https://youtube.com/watch?v=bE5DIJvZexc) by Alexander Fritzler (in russian)  
   ["Deep Reinforcement Learning with Memory"](http://93.180.23.59/videos/video/2420/in/channel/1/) by Sergey Bartunov (in russian)  
 
-  ["Deep AutoRegressive Networks"](https://youtu.be/-yX1SYeDHbg?t=49m25s) by Graves  
-  ["Deep AutoRegressive Networks"](https://youtu.be/P78QYjWh5sM?t=20m50s) by Gregor  
+  ["Deep AutoRegressive Networks"](https://youtu.be/-yX1SYeDHbg?t=49m25s) by Alex Graves  
+  ["Deep AutoRegressive Networks"](https://youtu.be/P78QYjWh5sM?t=20m50s) by Karol Gregor  
 
 
 ----
@@ -826,7 +816,7 @@
     * naive Q-learning gradients can be large  
     * unstable when backpropagated  
 
-Deep Q-learning Network:  
+**Deep Q-learning Network (DQN)**:  
   - use experience replay  
     * break correlations in data, bring us back to iid setting  
     * learn from all past policies  
@@ -889,15 +879,15 @@ Deep Q-learning Network:
 ----
 
   methods:  
-  - derivative free methods  
-    * [Cross-Entropy Method](#cross-entropy-method-no-policy-gradient-estimation)  (no policy gradient estimation)  
-    * [Evolution Strategies](#evolution-strategies-derivative-free-policy-gradient)  (derivative-free policy gradient estimation using finite differences)  
+  - derivative-free  
+    * [Cross-Entropy Method](#cross-entropy-method-cem)  (no policy gradient estimation)  
+    * [Evolution Strategies](#evolution-strategies-es)  (derivative-free policy gradient estimation using finite differences)  
   - likelihood ratio policy gradient  
-    * [REINFORCE](#reinforce-likelihood-ratio-policy-gradient)  (policy gradient estimation using simple baseline for returns)  
-    * [TRPO](#trust-region-policy-optimization)  (policy gradient estimation using natural gradient / trust region)  
-    * [Actor-Critic](#actor-critic), [GAE](#generalized-advantage-estimation-gae), [A3C](#asynchronous-advantage-actor-critic-a3c)  (policy gradient estimation using critic as baseline for returns)  
+    * [REINFORCE](#reinforce)  (policy gradient estimation using simple baseline for returns)  
+    * [Trust Region Policy Optimization](#trust-region-policy-optimization-trpo)  (policy gradient estimation using natural gradient / trust region)  
+    * [Actor-Critic](#actor-critic-ac), [Generalized Advantage Estimation](#generalized-advantage-estimation-gae), [Asynchronous Advantage Actor-Critic](#asynchronous-advantage-actor-critic-a3c)  (policy gradient estimation using critic as baseline for returns)  
   - pathwise derivative policy gradient  
-    * [DDPG](#deep-deterministic-policy-gradient-ddpg), [SVG](#stochastic-value-gradient-svg)  (policy gradient estimation using gradient of critic as model of returns)  
+    * [Deep Deterministic Policy Gradient](#deep-deterministic-policy-gradient-ddpg), [Stochastic Value Gradient](#stochastic-value-gradient-svg)  (policy gradient estimation using gradient of critic as model of returns)  
   - [stochastic computation graphs](https://arxiv.org/abs/1506.05254)  (policy gradient estimation using both likelihood ratio and pathwise derivative)  
 
 
@@ -929,9 +919,9 @@ Deep Q-learning Network:
 
 
 ----
-#### Cross-Entropy Method (no policy gradient estimation)
+#### Cross-Entropy Method (CEM)
 
-  evolutionary algorithm with selection buth without recombination and mutation - works embarrassingly well on many tasks
+  no policy gradient estimation, evolutionary algorithm with selection buth without recombination and mutation
 
   "If your policy has a small number of parameters (say 20), and sometimes even if it has a moderate number (say 2000), you might be better off using the Cross-Entropy Method than any of the fancy methods. It works like this:  
   - Sample n sets of parameters from some prior that allows for closed-form updating, e.g. a multivariate Gaussian.  
@@ -955,7 +945,7 @@ Deep Q-learning Network:
 
 
 ----
-#### Evolution Strategies (derivative-free policy gradient)
+#### Evolution Strategies (ES)
 
   policy gradient estimation using finite differences instead of derivative of loss function
 
@@ -971,7 +961,8 @@ Deep Q-learning Network:
 
   ["Evolution Strategies as a Scalable Alternative to Reinforcement Learning"](#salimans-ho-chen-sutskever---evolution-strategies-as-a-scalable-alternative-to-reinforcement-learning) by Salimans, Ho, Chen, Sutskever
 
-  [overview](https://www.technologyreview.com/s/603916/a-new-direction-for-artificial-intelligence/) by Ilya Sutskever
+  [overview](https://www.technologyreview.com/s/603916/a-new-direction-for-artificial-intelligence/) by Ilya Sutskever  
+  [overview](https://youtube.com/watch?v=Rd0UdJFYkqI) by Pavel Temirchev (in russian)  
 
 
   <https://blog.openai.com/evolution-strategies/> :  
@@ -991,7 +982,7 @@ Deep Q-learning Network:
   [overview](http://inference.vc/evolutionary-strategies-embarrassingly-parallelizable-optimization/) by Ferenc Huszar  
   [overview](http://inference.vc/evolution-strategies-variational-optimisation-and-natural-es-2/) by Ferenc Huszar  
   [overview](http://davidbarber.github.io/blog/2017/04/03/variational-optimisation/) by David Barber  
-  [overview](http://argmin.net/2017/04/03/evolution/) by Ben Recht  
+  [overview](http://argmin.net/2017/04/03/evolution/) by Ben Recht and Roy Frostig  
 
 
   https://en.wikipedia.org/wiki/Simultaneous\_perturbation\_stochastic\_approximation  
@@ -1008,7 +999,10 @@ Deep Q-learning Network:
 
 
 ----
-#### REINFORCE (likelihood ratio policy gradient)
+#### REINFORCE
+
+  likelihood ratio policy gradient estimation
+
 
   ["The Useless Beauty of REINFORCE"](https://theneural.wordpress.com/2011/09/13/the-useless-beauty-of-reinforce/) by Ilya Sutskever
 
@@ -1017,6 +1011,7 @@ Deep Q-learning Network:
 
   [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/) by Pieter Abbeel (16:43)  
   overview by John Schulman ([part 1](https://youtube.com/watch?v=oPGVsoBonLM), [part 2](https://youtube.com/watch?v=oPGVsoBonLM))  
+
 
   implementations:  
   - <https://gist.github.com/karpathy/a4166c7fe253700972fcbc77e4ea32c5>  
@@ -1029,9 +1024,9 @@ Deep Q-learning Network:
 
 
 ----
-#### Trust Region Policy Optimization
+#### Trust Region Policy Optimization (TRPO)
 
-  second order policy gradient algorithm that is highly effective on both continuous and discrete control problems
+  second order policy gradient algorithm
 
   ["Trust Region Policy Optimization"](#schulman-levine-moritz-jordan-abbeel---trust-region-policy-optimization) by Schulman et al.
 
@@ -1066,9 +1061,10 @@ Deep Q-learning Network:
 
 
 ----
-#### Actor-Critic
+#### Actor-Critic (AC)
 
   critic provides loss function for actor, gradient backpropagates from critic into actor
+
 
   [introduction](http://incompleteideas.net/sutton/book/ebook/node66.html) by Sutton and Barto
 
@@ -1084,15 +1080,6 @@ Deep Q-learning Network:
 
 ----
 
-  J(πθ) = ∫ ρπ(s) ∫ πθ(s,a)r(s,a) dads = E s\~ρπ,a\~πθ[r(s,a)]  *(cumulative discounted reward)*  
-  J(μθ) = ∫ ρμ(s)r(s,μθ(s))ds = E s\~ρμ[r(s,μθ(s))]  *(deterministic policy)*  
-  ρπ(s') = ∫ (Σt=1..∞ γ^(t-1)p1(s)p(s->s',t,π))ds  
-
-  stochastic policy gradient theorem (Sutton, 1999):  
-  ∇θ J(πθ) = ∫ ρπ(s) ∫ ∇θ πθ(a|s)Qπ(s,a) dads = E s\~ρπ,a\~πθ [∇θ (log πθ(a|s))Qπ(s,a)]
-
-----
-
   "In advantage learning one throws away information that is not needed for coming up with a good policy. The argument is that throwing away information allows you to focus your resources on learning what is important. As an example consider Tetris when you gain a unit reward for every time step you survive. Arguably the optimal value function takes on large values when the screen is near empty, while it takes on small values when the screen is near full. The range of differences can be enormous (from millions to zero). However, for optimal decision making how long you survive does not matter. What matters is the small differences in how the screen is filled up because this is what determines where to put the individual pieces. If you learn an action value function and your algorithm focuses on something like the mean square error, i.e., getting the magnitudes right, it is very plausible that most resources of the learning algorithm will be spent on capturing how big the values are, while little resource will be spent on capturing the value differences between the actions. This is what advantage learning can fix. The fix comes because advantage learning does not need to wait until the value magnitudes are properly captured before it can start learning the value differences. As can be seen from this example, advantage learning is expected to make a bigger difference where the span of optimal values is orders of magnitudes larger than action-value differences."
 
   *(Csaba Szepesvari)*
@@ -1102,6 +1089,7 @@ Deep Q-learning Network:
 #### Generalized Advantage Estimation (GAE)
 
   ["High-Dimensional Continuous Control Using Generalized Advantage Estimation"](#schulman-moritz-levine-jordan-abbeel---high-dimensional-continuous-control-using-generalized-advantage-estimation) by Schulman et al.
+
 
   [overview](https://youtu.be/xe-z4i3l-iQ?t=30m35s) by Pieter Abbeel  
   [overview](https://youtu.be/rO7Dx8pSJQw?t=40m20s) by John Schulman  
@@ -1120,10 +1108,10 @@ Deep Q-learning Network:
   ["Asynchronous Methods for Deep Reinforcement Learning"](#mnih-badia-mirza-graves-lillicrap-harley-silver-kavukcuoglu---asynchronous-methods-for-deep-reinforcement-learning) by Mnih et al.
 
 
-  - learns only a state value function V(st) rather than an action value function Q(st, at) and thus cannot pass back gradients of the value with respect to the action to the actor
-  - approximates the action value with the rewards from several steps of experience and passes the TD error to the actor
-  - exploits the multithreading capabilities of standard CPUs and executes many instances of the agent in parallel using shared model
-  - alternative to experience replay since parallelisation also diversifies and decorrelates the data
+  - critic learns only state value function V(s) rather than action value function Q(s,a) and thus cannot pass back to actor gradients of value function with respect to action  
+  - critic approximates action value with rewards from several steps of experience and passes TD error to actor  
+  - exploiting multithreading capabilities and executing many instances of agent in parallel using shared model  
+  - alternative to experience replay since parallelization also diversifies and decorrelates experience data  
 
 
   [overview](https://youtube.com/watch?v=9sx1_u2qVhQ) by Andriy Mnih  
@@ -1149,10 +1137,6 @@ Deep Q-learning Network:
   "For reinforcement learning there are two widely known ways of optimizing a policy based on sampled sequences of actions and outcomes: There’s (a) likelihood-ratio gradient estimator, which updates the policy such that action sequences that lead to higher scores happen more often and that doesn’t need gradients, and (b) pathwise derivative gradient estimator, which adjusts individual actions such that the policy results in a higher score and that needs gradients. Likelihood-ratio estimator changes probabilities of experienced paths by shifting probability mass towards better ones and, unlike pathwise estimator, does not try to change the paths. While pathwise methods may be more sample-efficient, they work less generally due to high bias and don’t scale up as well to very high-dimensional problems."
 
 
-  deterministic policy gradient theorem (Silver, 2014):  
-  ∇θJ(μθ) = ∫ ρμ(s)∇θμθ(s)∇aQμ(s,a)|a=μθ(s) ds = E s\~ρμ [∇θμθ(s)∇aQμ(s,a)|a=μθ(s)]
-
-
   [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/) by Pieter Abbeel (01:02:04)
 
 
@@ -1167,18 +1151,13 @@ Deep Q-learning Network:
   ["Continuous Control with Deep Reinforcement Learning"](#lillicrap-hunt-pritzel-heess-erez-tassa-silver-wierstra---continuous-control-with-deep-reinforcement-learning) by Lillicrap et al.  
 
 
-  - provides a continuous analogue to DQN, exploiting the differentiability of the Q-network  
-  - instead of requiring samples from a stochastic policy and encouraging the ones that get higher scores, the approach uses a deterministic policy and gets the gradient information directly from a second network (called a critic) that models the score function  
-  - determinism of the policy allows the policy to be more efficiently (lower sample complexity) and easily optimized with respect to the expected reward function due to the action no longer being a random variable which must be integrated over in the expectation  
+  - continuous analogue to DQN which exploits differentiability of Q-network  
+  - instead of requiring samples from stochastic policy and encouraging samples with higher scores, use deterministic policy and get gradient information directly from second network that models score function  
+  - policy determinism allows policy to be optimized more easily and more sample efficiently due to action no longer being a random variable which must be integrated over in expectation  
   - can be much more efficient in settings with very high-dimensional actions where sampling actions provides poor coverage of state-action space  
 
-  in continuous multidimensional action space ∇aQπ(s,a) tells how to improve action:
-
-  ∇θEτ[R(τ)]=Eτ[∇θQπ(s0,a0) + ∇θQπ(s1,a1) + ...]
-
-  ∇wL(w) = E s,a,r,s\~D[(r+γQ(s',π(s'),w')-Q(s,a,w))∇wQ(s,a,w)]  
-  ∇uL(u) = E s,a,r,s\~D[∇aQ(s,a,w)∇uπ(s,u)]  
-  where w' is target Q-network to avoid oscillations  
+  in continuous multidimensional action space ∇aQμ(s,a) tells how to improve action:  
+  ∇θJ(μθ) = ∫ ρμ(s)∇aQμ(s,a)|a=μθ(s)∇θμθ(s) ds = E s\~ρμ [∇aQμ(s,a)|a=μθ(s)∇θμθ(s)]  
 
 
   [overview](http://videolectures.net/rldm2015_silver_reinforcement_learning/) by David Silver (1:07:23)  
@@ -1409,6 +1388,7 @@ interesting papers (see below):
 >	- Adversarial training can be seen as data-augmentation in the input space X. The RML objective does data-augmentation in the output space Y.  
 >	- Adversarial training performs model-based data augmentation: the examples generated are those for which the current model is maximally vulnerable. RML training performs data-based augmentation: the examples generated have outputs that are “near” the ground-truth outputs. (Here 'near' is defined by the reward function.)"  
 
+  - <https://youtu.be/fZNyHoXgV7M?t=24m59s> (Norouzi)
   - <https://youtu.be/uohtFXD_39c?t=38m10s> (Samy Bengio)
   - <http://youtube.com/watch?v=agA-rc71Uec> (Samy Bengio)
   - <http://drive.google.com/file/d/0B3Rdm_P3VbRDVUQ4SVBRYW82dU0> (Gauthier)
@@ -1570,6 +1550,8 @@ interesting papers (see below):
 
 >	"To confirm whether our method is able to find the correct algorithm for multi-digit addition, we investigate its generalization to longer input sequences than provided during training. We evaluate the trained models on inputs up to a length of 2000 digits, even though training sequences were at most 33 characters. For each length, we test the model on 100 randomly generated inputs, stopping when the accuracy falls below 100%. Out of the 60 models trained on addition with UREX, we find that 5 models generalize to numbers up to 2000 digits without any observed mistakes."
 
+  - <https://youtu.be/fZNyHoXgV7M?t=55m45s> (Norouzi)
+
 
 #### Blundell, Cornebise, Kavukcuoglu, Wierstra - ["Weight Uncertainty in Neural Networks"](https://arxiv.org/abs/1505.05424)
 >	"We introduce a new, efficient, principled and backpropagation-compatible algorithm for learning a probability distribution on the weights of a neural network, called Bayes by Backprop. It regularises the weights by minimising a compression cost, known as the variational free energy or the expected lower bound on the marginal likelihood. We show that this principled kind of regularisation yields comparable performance to dropout on MNIST classification. We then demonstrate how the learnt uncertainty in the weights can be used to improve generalisation in non-linear regression problems, and how this weight uncertainty can be used to drive the exploration-exploitation trade-off in reinforcement learning."
@@ -1684,13 +1666,14 @@ interesting papers (see below):
 >	"The agent we consider is known as Thompson sampling or posterior sampling. It samples an environment ρ from the posterior, follows the ρ-optimal policy for one effective horizon (a lookahead long enough to encompass most of the discount function’s mass), and then repeats. We show that this agent’s policy is asymptotically optimal in mean (and, equivalently, in probability). Furthermore, using a recoverability assumption on the environment, and some (minor) assumptions on the discount function, we prove that the worst-case regret is sublinear. This is the first time convergence and regret bounds of Thompson sampling have been shown under such general conditions."
 
   - ["Thompson Sampling is Asymptotically Optimal in General Environments"](https://arxiv.org/abs/1602.07905) by Leike, Lattimore, Orseau, Hutter
+  - <https://youtube.com/watch?v=hSiuJuvTBoE> (Leike)
 
 
 
 ---
 ### interesting papers - abstractions for states and actions
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---abstractions-for-states-and-actions) on abstractions  
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---abstractions-for-states-and-actions)
 
 
 #### Schmidhuber - ["On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models"](http://arxiv.org/abs/1511.09249)
@@ -1748,7 +1731,10 @@ interesting papers (see below):
   - <https://blog.acolyer.org/2017/02/09/value-iteration-networks/>
   - <https://github.com/avivt/VIN>
   - <https://github.com/TheAbhiKumar/tensorflow-value-iteration-networks>
+  - <https://github.com/zuoxingdong/VIN_TensorFlow>
   - <https://github.com/zuoxingdong/VIN_PyTorch_Visdom>
+  - <https://github.com/onlytailei/Value-Iteration-Networks-PyTorch>
+  - <https://github.com/kentsommer/pytorch-value-iteration-networks>
 
 
 #### Florensa, Duan, Abbeel - ["Stochastic Neural Networks for Hierarchical Reinforcement Learning"](https://openreview.net/pdf?id=B1oK8aoxe)
@@ -2019,10 +2005,11 @@ interesting papers (see below):
 
   - <https://blog.openai.com/evolution-strategies/>
   - <https://www.technologyreview.com/s/603916/a-new-direction-for-artificial-intelligence/> (Sutskever)
+  - <https://youtube.com/watch?v=Rd0UdJFYkqI> (Temirchev, in russian)
   - <http://inference.vc/evolutionary-strategies-embarrassingly-parallelizable-optimization/> (Huszar)
   - <http://inference.vc/evolution-strategies-variational-optimisation-and-natural-es-2/> (Huszar)
   - <http://davidbarber.github.io/blog/2017/04/03/variational-optimisation/> (Barber)
-  - <http://argmin.net/2017/04/03/evolution/> (Recht)
+  - <http://argmin.net/2017/04/03/evolution/> (Recht and Frostig)
   - ["Random Gradient-Free Minimization of Convex Functions"](https://mipt.ru/dcam/students/elective/a_5gc1te/RandomGradFree.PDF) by Nesterov
   - ["Natural Evolution Strategies"](http://jmlr.org/papers/volume15/wierstra14a/wierstra14a.pdf) by Wierstra, Schaul, Glasmachers, Sun, Peters, Schmidhuber
   - <https://github.com/openai/evolution-strategies-starter>
@@ -2043,6 +2030,7 @@ interesting papers (see below):
   - <http://youtube.com/watch?v=9sx1_u2qVhQ> (Mnih)
   - <http://techtalks.tv/talks/asynchronous-methods-for-deep-reinforcement-learning/62475/> (Mnih)
   - <http://pemami4911.github.io/paper-summaries/2016/08/02/A3C.html>
+  - <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FMnihBMGLHSK16>
   - <https://medium.com/@awjuliani/simple-reinforcement-learning-with-tensorflow-part-8-asynchronous-actor-critic-agents-a3c-c88f72a5e9f2>
   - <https://github.com/Zeta36/Asynchronous-Methods-for-Deep-Reinforcement-Learning>
   - <https://github.com/miyosuda/async_deep_reinforce>

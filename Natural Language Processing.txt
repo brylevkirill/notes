@@ -1,4 +1,4 @@
-"The ambiguous nature of natural language might seem like a flaw, but in fact, it is exactly this ambiguity that makes natural language so powerful. Think of language as a game between a speaker and a listener. Game play proceeds as follows: the speaker thinks of a concept, she chooses an utterance to convey that concept, and the listener interprets the utterance. Both players win if the listener’s interpretation matches the speaker’s intention. To play this game well, the speaker should thus choose the simplest utterance that conveys her intended concept - anything the listener can infer can be omitted. How can a computer fill in these gaps, which depend on the breadth of human experience involving perception of the world and social interactions?"
+  "The ambiguous nature of natural language might seem like a flaw, but in fact, it is exactly this ambiguity that makes natural language so powerful. Think of language as a game between a speaker and a listener. Game play proceeds as follows: the speaker thinks of a concept, she chooses an utterance to convey that concept, and the listener interprets the utterance. Both players win if the listener’s interpretation matches the speaker’s intention. To play this game well, the speaker should thus choose the simplest utterance that conveys her intended concept - anything the listener can infer can be omitted. How can a computer fill in these gaps, which depend on the breadth of human experience involving perception of the world and social interactions?"
 
 
   * overview
@@ -29,40 +29,42 @@
 
 [overview]
 
-(Ludwig Wittgenstein) "The language is meant to serve for communication between a builder A and an assistant B. A is building with building-stones: there are blocks, pillars, slabs and beams. B has to pass the stones, and that in the order in which A needs them. For this purpose they use a language consisting of the words “block”, “pillar”, “slab”, “beam”. A calls them out - B brings the stone which he has learnt to bring at such-and-such a call. Conceive this as a complete primitive language."
-(Jon Gauthier) "This game is not just a game of words but a game of words causing things and of other things causing words. We can’t fully define the meaning of a word like “slab” without referring to the physical actions of A and B. In this way, linguistic meaning has to bottom out at some point in nonlinguistic facts."
+  (Ludwig Wittgenstein) "The language is meant to serve for communication between a builder A and an assistant B. A is building with building-stones: there are blocks, pillars, slabs and beams. B has to pass the stones, and that in the order in which A needs them. For this purpose they use a language consisting of the words “block”, “pillar”, “slab”, “beam”. A calls them out - B brings the stone which he has learnt to bring at such-and-such a call. Conceive this as a complete primitive language."
 
-(Joseph Weizenbaum, creator of ELIZA chat bot) "No general solution to the problem of computer understanding of natural language is possible, i.e. language is understood only in contextual frameworks, that even these can be shared by people to only a limited extent, and that consequently even people are not embodiments of any such general solution."
+  (Jon Gauthier) "This game is not just a game of words but a game of words causing things and of other things causing words. We can’t fully define the meaning of a word like “slab” without referring to the physical actions of A and B. In this way, linguistic meaning has to bottom out at some point in nonlinguistic facts."
+
+  (Joseph Weizenbaum, creator of ELIZA chat bot) "No general solution to the problem of computer understanding of natural language is possible, i.e. language is understood only in contextual frameworks, that even these can be shared by people to only a limited extent, and that consequently even people are not embodiments of any such general solution."
 
 
-Jon Gauthier, Igor Mordatch -"A Paradigm for Situated and Goal-Driven Language Learning" - https://arxiv.org/abs/1610.03585
+  Jon Gauthier, Igor Mordatch -"A Paradigm for Situated and Goal-Driven Language Learning" - https://arxiv.org/abs/1610.03585
 
-Jon Gauthier - http://foldl.me/2016/solving-language/ + http://foldl.me/2016/situated-language-learning/
+  Jon Gauthier - http://foldl.me/2016/solving-language/ + http://foldl.me/2016/situated-language-learning/
 
-Felix Hill - "From Models of Language Understanding to Agents of Language Use" - http://research.microsoft.com/apps/video/default.aspx?id=266643
+  Felix Hill - "From Models of Language Understanding to Agents of Language Use" - http://research.microsoft.com/apps/video/default.aspx?id=266643
 
-Christopher Manning, Julia Hirschberg - "Advances in Natural Language Processing" - https://goo.gl/hLQOYB
 
-Chris Burges - "Towards the Machine Comprehension of Text: An Essay" - http://research.microsoft.com/apps/pubs/default.aspx?id=206771
+  Christopher Manning, Julia Hirschberg - "Advances in Natural Language Processing" - https://goo.gl/hLQOYB
 
-Ray Kurzweil: "We have a lot of language data [at Google]... and we don't even know how we would annotate it" - https://youtube.com/watch?v=w9sz7eW6MY8#t=4m27s
+  Chris Burges - "Towards the Machine Comprehension of Text: An Essay" - http://research.microsoft.com/apps/pubs/default.aspx?id=206771
+
+  Ray Kurzweil: "We have a lot of language data [at Google]... and we don't even know how we would annotate it" - https://youtube.com/watch?v=w9sz7eW6MY8#t=4m27s
 
 
 
 
 [study]
 
-course by Chris Manning and Dan Jurafsky - http://youtube.com/playlist?list=PL6397E4B26D00A269 + https://web.stanford.edu/~jurafsky/NLPCourseraSlides.html
-course by Richard Socher - http://cs224d.stanford.edu + https://github.com/stanfordnlp/cs224n-winter17-notes
-course by Oxford and DeepMind - https://github.com/oxford-cs-deepnlp-2017/lectures
-course by Michael Collins - https://coursera.org/course/nlangp + https://youtube.com/user/afigfigueira/playlists?shelf_id=5&view=50
-course by Jordan Boyd-Graber - http://youtube.com/playlist?list=PLegWUnz91WfuPebLI97-WueAP90JO-15i
-course by Chris Manning @ Stanford University - http://see.stanford.edu/see/lecturelist.aspx?coll=63480b48-8819-4efd-8412-263f1a472f5a
+  course by Chris Manning and Dan Jurafsky - http://youtube.com/playlist?list=PL6397E4B26D00A269 + https://web.stanford.edu/~jurafsky/NLPCourseraSlides.html
+  course by Richard Socher - https://youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6 + https://github.com/stanfordnlp/cs224n-winter17-notes
+  course by Oxford and DeepMind - https://github.com/oxford-cs-deepnlp-2017/lectures
+  course by Michael Collins - https://coursera.org/course/nlangp + https://youtube.com/user/afigfigueira/playlists?shelf_id=5&view=50
+  course by Jordan Boyd-Graber - http://youtube.com/playlist?list=PLegWUnz91WfuPebLI97-WueAP90JO-15i
+  course by Chris Manning @ Stanford University - http://see.stanford.edu/see/lecturelist.aspx?coll=63480b48-8819-4efd-8412-263f1a472f5a
 
-textbook by Michael Collins - https://dropbox.com/sh/e0unkrb6xoqyjmg/AAANfPi9K9fAjboL5XTCkb5La
+  textbook by Michael Collins - https://dropbox.com/sh/e0unkrb6xoqyjmg/AAANfPi9K9fAjboL5XTCkb5La
 
-"Speech and Language Processing" (3rd edition draft) by Jurafsky & Martin - http://web.stanford.edu/~jurafsky/slp3/
-"Foundations of Statistical Natural Language Processing" by Manning & Schutze - http://nlp.stanford.edu/fsnlp/
+  "Speech and Language Processing" (3rd edition draft) by Jurafsky & Martin - http://web.stanford.edu/~jurafsky/slp3/
+  "Foundations of Statistical Natural Language Processing" by Manning & Schutze - http://nlp.stanford.edu/fsnlp/
 
 
 
@@ -72,6 +74,7 @@ textbook by Michael Collins - https://dropbox.com/sh/e0unkrb6xoqyjmg/AAANfPi9K9f
   "All existing NLP is about mapping the internal statistical dependencies of language, missing the point that language is a *communication protocol*. You cannot study language without considering *agents* communicating *about something*. The only reason language even has any statistical dependencies to study is because it's imperfect. A maximally efficient communication protocol would look like random noise, out of context (besides error correction mechanisms). All culture is a form of communication, so "understanding" art requires grounding. Mimicking what humans do isn't enough. You can't understand language without considering it in context: agents communicating about something. An analogy could be trying to understand an economy by looking at statistical structure in stock prices only."
 
   Jon Gauthier, Igor Mordatch -"A Paradigm for Situated and Goal-Driven Language Learning" - https://arxiv.org/abs/1610.03585
+  Jon Gauthier - http://foldl.me/2016/solving-language/ + http://foldl.me/2016/situated-language-learning/
 
 
   - anaphora resolution
@@ -134,6 +137,8 @@ textbook by Michael Collins - https://dropbox.com/sh/e0unkrb6xoqyjmg/AAANfPi9K9f
 
 	"Building systems that can understand human language - being able to answer questions, follow instructions, carry on dialogues - has been a long-standing challenge since the early days of AI. Due to recent advances in machine learning, there is again renewed interest in taking on this formidable task. A major question is how one represents and learns the semantics (meaning) of natural language, to which there are only partial answers. The goal of this tutorial is (i) to describe the linguistic and statistical challenges that any system must address; and (ii) to describe the types of cutting edge approaches and the remaining open problems. Topics include distributional semantics (e.g., word vectors), frame semantics (e.g., semantic role labeling), model-theoretic semantics (e.g., semantic parsing), the role of context, grounding, neural networks, latent variables, and inference. The hope is that this unified presentation will clarify the landscape, and show that this is an exciting time for the machine learning community to engage in the problems in natural language understanding."
 
+	summary - http://topbots.com/4-different-approaches-natural-language-processing-understanding/
+
 
   - formal semantics
 	focusing on functional elements and composition while largely ignoring lexical aspects of meaning and lacking methods to learn the proposed structures from data
@@ -180,18 +185,18 @@ textbook by Michael Collins - https://dropbox.com/sh/e0unkrb6xoqyjmg/AAANfPi9K9f
 
   "Compositionality is central to characterizing the ways in which small changes to a syntactic structure can yield profound changes in meaning. For instance, “two minus three” and “three minus two” contain the same words but lead to different denotations. Superficially least contentful words (“every”, “no”, “not”, “might”, “but”, etc.) often drive the most dramatic effects depending on where they appear in the constituent structure, which determines what their corresponding semantic arguments are. The grammar gives a precise account of how this interpretive consequence follows from the syntax of the two utterances."
 
- - (probabilistic) regular grammar (~Markov chain)
- - (probabilistic) context-free grammar
- - compositional vector grammar (pcfg + compositional distributed representation)
- - combinatory categorial grammar
- - pregroup grammar
- - lexical functional grammar
- - head-driven phrase structure grammar
- - generalized phrase structure grammar
- - lexicalized tree-adjoining grammars
- - two-level grammar
- - Aspects model
- - RG model
+  - (probabilistic) regular grammar (~Markov chain)
+  - (probabilistic) context-free grammar
+  - compositional vector grammar (pcfg + compositional distributed representation)
+  - combinatory categorial grammar
+  - pregroup grammar
+  - lexical functional grammar
+  - head-driven phrase structure grammar
+  - generalized phrase structure grammar
+  - lexicalized tree-adjoining grammars
+  - two-level grammar
+  - Aspects model
+  - RG model
 
 
   * constituency parsing
@@ -353,7 +358,7 @@ textbook by Michael Collins - https://dropbox.com/sh/e0unkrb6xoqyjmg/AAANfPi9K9f
 	http://slideshot.epfl.ch/play/khnnunGF0elc + https://drive.google.com/file/d/0B16RwCMQqrtdb05qdDFnSXprM0E/
 
 
- * language models and representations
+  * language models and representations
 
 	http://colah.github.io/posts/2014-07-NLP-RNNs-Representations/
 	http://scholarpedia.org/article/Neural_net_language_models
@@ -370,7 +375,7 @@ textbook by Michael Collins - https://dropbox.com/sh/e0unkrb6xoqyjmg/AAANfPi9K9f
 	tutoral by Kevin Duh - http://cl.naist.jp/~kevinduh/notes/cwmt14tutorial.pdf
 
 
- * compositional models
+  * compositional models
 
 	Chris Manning
 		http://videolectures.net/deeplearning2015_manning_deep_learning/
@@ -420,17 +425,17 @@ Some people prefer log bilinear models because they are simpler and avoid the va
 
 [implementations]
 
-state-of-the-art methods - https://github.com/andrewt3000/DL4NLP/blob/master/README.md
+  state-of-the-art methods - https://github.com/andrewt3000/DL4NLP/blob/master/README.md
 
 
-Stanford CoreNLP
+  Stanford CoreNLP
 	http://nlp.stanford.edu:8080/corenlp/ (demo)
 
-NLTK
+  NLTK
 	http://nltk.org/book/
 	http://spacy.io/blog/dead-code-should-be-buried/
 
-FACTORIE
+  FACTORIE
 	http://factorie.cs.umass.edu
 
 	 - segmentation
@@ -447,13 +452,13 @@ FACTORIE
 	performance win over Stanford CoreNLP - https://dropbox.com/s/jdic3gtl27vqaib/FACTORIE2.png
 
 
-coreference resolution + named entity recognition + entity linking
+  coreference resolution + named entity recognition + entity linking
 	http://nlp.cs.berkeley.edu/projects/entity.shtml
 
-coreference resoliution
+  coreference resoliution
 	https://github.com/smartschat/cort
 
-information extraction
+  information extraction
 	https://github.com/allenai/openie
 
 	https://github.com/mit-nlp/MITIE
@@ -464,7 +469,7 @@ information extraction
 		"Open and Exploratory Extraction of Relations and Common Sense from Large Text Corpora" - http://youtube.com/watch?v=Ce499F0M_rM
 		http://www.user.tu-berlin.de/alan.akbik/papers/coling2014_final.pdf
 
-parsing
+  parsing
 	SyntaxNet
 		https://github.com/tensorflow/models/tree/master/syntaxnet
 
@@ -483,7 +488,7 @@ parsing
 	neural network dependency parser
 		http://nlp.stanford.edu/software/nndep.shtml
 
-vector space representation
+  vector space representation
 	word2vec
 		https://radimrehurek.com/gensim/models/word2vec.html
 		https://github.com/danielfrg/word2vec
@@ -505,21 +510,21 @@ vector space representation
 	topicvec
 		https://github.com/askerlee/topicvec
 
-language model
+  language model
 	LSTM network - https://gist.github.com/neubig/ff2f97d91c9bed820c15
 
-word clustering
+  word clustering
 	https://github.com/percyliang/brown-cluster
 
-semantic similarity
+  semantic similarity
 	https://github.com/alvations/stasis
 	https://github.com/brmson/dataset-sts + http://pasky.or.cz/dev/brmson/sts-intro.pdf
 	https://github.com/pilehvar/ADW
 
-text classification
+  text classification
 	http://wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tensorflow/
 
-sentiment analysis
+  sentiment analysis
 	http://sentiment.christopherpotts.net
 	http://nlp.stanford.edu/sentiment/
 
@@ -527,27 +532,15 @@ sentiment analysis
 
 	http://districtdatalabs.silvrback.com/modern-methods-for-sentiment-analysis
 
-machine translation
+  machine translation
+	https://google.github.io/seq2seq/
 	http://nlp.stanford.edu/projects/nmt/
 	https://github.com/harvardnlp/seq2seq-attn
 	https://github.com/lisa-groundhog/GroundHog
 	https://github.com/stanfordnlp/phrasal
 
-topic modeling
+  topic modeling
 	http://vladsandulescu.com/topic-prediction-lda-user-reviews/
-
-
-
-
-[conferences]
-
-http://aclweb.org/aclwiki/
-http://nlpub.ru
-http://nlp.stanford.edu
-
-ACL conference - http://techtalks.tv/acl2014/
-NAACL conference - http://techtalks.tv/naacl2016/ + http://techtalks.tv/naacl/2015/
-EMNLP ACL conference - https://vimeo.com/emnlp/videos + http://youtube.com/channel/UCZC4e4nrTjVqkW3Gcl16WoA + http://emnlp2014.org/tutorials/
 
 
 
@@ -587,13 +580,10 @@ interesting papers (see below):
   - text summarization
   - cross-lingual tasks
 
-interesting papers (see https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md):
-  - question answering over texts
-  - information extraction and integration
-  - multimodal knowledge representation
 
-interesting papers (see https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt):
-  - document models
+interesting papers:
+  - question answering over texts - https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---question-answering-over-texts
+  - information extraction and integration - https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---information-extraction-and-integration
 
 
 
@@ -604,12 +594,19 @@ Gauthier, Mordatch - "A Paradigm for Situated and Goal-Driven Language Learning"
 	"A distinguishing property of human intelligence is the ability to flexibly use language in order to communicate complex ideas with other humans in a variety of contexts. Research in natural language dialogue should focus on designing communicative agents which can integrate themselves into these contexts and productively collaborate with humans. In this abstract, we propose a general situated language learning paradigm which is designed to bring about robust language agents able to cooperate productively with humans. This dialogue paradigm is built on a utilitarian definition of language understanding. Language is one of multiple tools which an agent may use to accomplish goals in its environment. We say an agent “understands” language only when it is able to use language productively to accomplish these goals. Under this definition, an agent’s communication success reduces to its success on tasks within its environment. This setup contrasts with many conventional natural language tasks, which maximize linguistic objectives derived from static datasets. Such applications often make the mistake of reifying language as an end in itself. The tasks prioritize an isolated measure of linguistic intelligence (often one of linguistic competence, in the sense of Chomsky), rather than measuring a model’s effectiveness in real-world scenarios. Our utilitarian definition is motivated by recent successes in reinforcement learning methods. In a reinforcement learning setting, agents maximize success metrics on real-world tasks, without requiring direct supervision of linguistic behavior."
 	"We outlined a paradigm for grounded and goal-driven language learning in artificial agents. The paradigm is centered around a utilitarian definition of language understanding, which equates language understanding with the ability to cooperate with other language users in real-world environments. This position demotes language from its position as a separate task to be solved to one of several communicative tools agents might use to accomplish their real-world goals. While this paradigm does already capture a small amount of recent work in dialogue, on the whole it has not received the focus it deserves in the research communities of natural language processing and machine learning. We hope this paper brings focus to the task of situated language learning as a way forward for research in natural language dialogue."
 
+Lazaridou, Peysakhovich, Baroni - "Multi-Agent Cooperation and the Emergence of (Natural) Language" [https://arxiv.org/abs/1612.07182]
+	"The current mainstream approach to train natural language systems is to expose them to large amounts of text. This passive learning is problematic if we are interested in developing interactive machines, such as conversational agents. We propose a framework for language learning that relies on multi-agent communication. We study this learning in the context of referential games. In these games, a sender and a receiver see a pair of images. The sender is told one of them is the target and is allowed to send a message from a fixed, arbitrary vocabulary to the receiver. The receiver must rely on this message to identify the target. Thus, the agents develop their own language interactively out of the need to communicate. We show that two networks with simple configurations are able to learn to coordinate in the referential game. We further explore how to make changes to the game environment to cause the "word meanings" induced in the game to better reflect intuitive semantic properties of the images. In addition, we present a simple strategy for grounding the agents' code into natural language. Both of these are necessary steps towards developing machines that are able to communicate with humans productively."
+	-- https://facebook.com/iclr.cc/videos/1712966538732405/ (Peysakhovich)
+
 Mordatch, Abbeel - "Emergence of Grounded Compositional Language in Multi-Agent Populations" [http://arxiv.org/abs/1703.04908]
 	"By capturing statistical patterns in large corpora, machine learning has enabled significant advances in natural language processing, including in machine translation, question answering, and sentiment analysis. However, for agents to intelligently interact with humans, simply capturing the statistical patterns is insufficient. In this paper we investigate if, and how, grounded compositional language can emerge as a means to achieve goals in multi-agent populations. Towards this end, we propose a multi-agent learning environment and learning methods that bring about emergence of a basic compositional language. This language is represented as streams of abstract discrete symbols uttered by agents over time, but nonetheless has a coherent structure that possesses a defined vocabulary and syntax. We also observe emergence of non-verbal communication such as pointing and guiding when language communication is unavailable."
-	"Though the agents come up with words that we found to correspond to objects and other agents, as well as actions like 'Look at' or 'Go to', to the agents these words are abstract symbols represented by one-hot vector - we label these one-hot vectors with English words that capture their meaning for the sake of interpretability."  
-	"One possible scenario is from goal oriented-dialog systems. Where one agent tries to transmit to another certain API call that it should perform (book restaurant, hotel, whatever). I think these models can make it more data efficient. At the first stage two agents have to communicate and discover their own language, then you can add regularization to make the language look more like natural language and on the final stage, you are adding a small amount of real data (dialog examples specific for your task). I bet that using additional communication loss will make the model more data efficient."  
-	"The big outcome to hunt for in this space is a post-gradient descent learning algorithm. Of course you can make agents that play the symbol grounding game, but it's not a very big step from there to compression of data, and from there to compression of 'what you need to know to solve the problem you're about to encounter' - at which point you have a system which can learn by training or learn by receiving messages. It was pretty easy to get stuff like one agent learning a classifier, encoding it in a message, and transmitting it to a second agent who has to use it for zero-shot classification. But it's still single-task specific communication, so there's no benefit to the agent for receiving, say, the messages associated with the previous 100 tasks. The tricky thing is going from there to something more abstract and cumulative, so that you can actually use message generation as an iterative learning mechanism. I think a large part of that difficulty is actually designing the task ensemble, not just the network architecture."  
+	"Though the agents come up with words that we found to correspond to objects and other agents, as well as actions like 'Look at' or 'Go to', to the agents these words are abstract symbols represented by one-hot vector - we label these one-hot vectors with English words that capture their meaning for the sake of interpretability."
+	"One possible scenario is from goal oriented-dialog systems. Where one agent tries to transmit to another certain API call that it should perform (book restaurant, hotel, whatever). I think these models can make it more data efficient. At the first stage two agents have to communicate and discover their own language, then you can add regularization to make the language look more like natural language and on the final stage, you are adding a small amount of real data (dialog examples specific for your task). I bet that using additional communication loss will make the model more data efficient."
+	"The big outcome to hunt for in this space is a post-gradient descent learning algorithm. Of course you can make agents that play the symbol grounding game, but it's not a very big step from there to compression of data, and from there to compression of 'what you need to know to solve the problem you're about to encounter' - at which point you have a system which can learn by training or learn by receiving messages. It was pretty easy to get stuff like one agent learning a classifier, encoding it in a message, and transmitting it to a second agent who has to use it for zero-shot classification. But it's still single-task specific communication, so there's no benefit to the agent for receiving, say, the messages associated with the previous 100 tasks. The tricky thing is going from there to something more abstract and cumulative, so that you can actually use message generation as an iterative learning mechanism. I think a large part of that difficulty is actually designing the task ensemble, not just the network architecture."
+	-- https://youtube.com/watch?v=liVFy7ZO4OA (demo)
+	-- "A Paradigm for Situated and Goal-Driven Language Learning" [https://arxiv.org/abs/1610.03585]
 	-- https://blog.openai.com/learning-to-communicate/
+	-- https://youtube.com/watch?v=f4gKhK8Q6mY&t=22m20s (Abbeel)
 	-- http://videos.re-work.co/videos/366-learning-to-communicate (Lowe)
 
 Wang, Liang, Manning - Learning Language Games through Interaction [https://arxiv.org/abs/1606.02447]
@@ -684,6 +681,7 @@ Norouzi, Bengio, Chen, Jaitly, Schuster, Wu, Schuurmans - "Reward Augmented Maxi
 	"Alec Radford mentioned that the data augmentation suggested in the paper sounds similar in spirit to virtual adversarial training, where the current model is encouraged to make robust predictions not only for the examples in the training set but also for inputs “nearby” those that exist in the training set. A high-level comparison:
 	  - Adversarial training can be seen as data-augmentation in the input space X. The RML objective does data-augmentation in the output space Y.
 	  - Adversarial training performs model-based data augmentation: the examples generated are those for which the current model is maximally vulnerable. RML training performs data-based augmentation: the examples generated have outputs that are “near” the ground-truth outputs. (Here 'near' is defined by the reward function.)"
+	-- https://youtu.be/fZNyHoXgV7M?t=24m59s (Norouzi)
 	-- https://youtu.be/uohtFXD_39c?t=38m10s (Samy Bengio)
 	-- http://youtube.com/watch?v=agA-rc71Uec (Samy Bengio)
 	-- http://drive.google.com/file/d/0B3Rdm_P3VbRDVUQ4SVBRYW82dU0 (Gauthier)
@@ -1232,6 +1230,7 @@ Wu et al. - "Google's Neural Machine Translation System: Bridging the Gap betwee
 	"Neural Machine Translation is an end-to-end learning approach for automated translation, with the potential to overcome many of the weaknesses of conventional phrase-based translation systems. Unfortunately, NMT systems are known to be computationally expensive both in training and in translation inference. Also, most NMT systems have difficulty with rare words. These issues have hindered NMT's use in practical deployments and services, where both accuracy and speed are essential. In this work, we present GNMT, Google's Neural Machine Translation system, which attempts to address many of these issues. Our model consists of a deep LSTM network with 8 encoder and 8 decoder layers using attention and residual connections. To improve parallelism and therefore decrease training time, our attention mechanism connects the bottom layer of the decoder to the top layer of the encoder. To accelerate the final translation speed, we employ low-precision arithmetic during inference computations. To improve handling of rare words, we divide words into a limited set of common sub-word units ("wordpieces") for both input and output. This method provides a good balance between the flexibility of "character"-delimited models and the efficiency of "word"-delimited models, naturally handles translation of rare words, and ultimately improves the overall accuracy of the system. Our beam search technique employs a length-normalization procedure and uses a coverage penalty, which encourages generation of an output sentence that is most likely to cover all the words in the source sentence. On the WMT'14 English-to-French and English-to-German benchmarks, GNMT achieves competitive results to state-of-the-art. Using a human side-by-side evaluation on a set of isolated simple sentences, it reduces translation errors by an average of 60% compared to Google's phrase-based production system."
 	-- http://translate.google.com (demo)
 	-- http://smerity.com/articles/2016/google_nmt_arch.html
+	-- https://github.com/google/seq2seq
 
 Xia, He, Qin, Wang, Yu, Liu, Ma - "Dual Learning for Machine Translation" [https://arxiv.org/abs/1611.00179]
 	"While neural machine translation (NMT) is making good progress in the past two years, tens of millions of bilingual sentence pairs are needed for its training. However, human labeling is very costly. To tackle this training data bottleneck, we develop a dual-learning mechanism, which can enable an NMT system to automatically learn from unlabeled data through a dual-learning game. This mechanism is inspired by the following observation: any machine translation task has a dual task, e.g., English-to-French translation (primal) versus French-to-English translation (dual); the primal and dual tasks can form a closed loop, and generate informative feedback signals to train the translation models, even if without the involvement of a human labeler. In the dual-learning mechanism, we use one agent to represent the model for the primal task and the other agent to represent the model for the dual task, then ask them to teach each other through a reinforcement learning process. Based on the feedback signals generated during this process (e.g., the languagemodel likelihood of the output of a model, and the reconstruction error of the original sentence after the primal and dual translations), we can iteratively update the two models until convergence (e.g., using the policy gradient methods). We call the corresponding approach to neural machine translation dual-NMT. Experiments show that dual-NMT works very well on English↔French translation; especially, by learning from monolingual data (with 10% bilingual data for warm start), it achieves a comparable accuracy to NMT trained from the full bilingual data for the French-to-English translation task."

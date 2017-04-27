@@ -111,11 +111,10 @@
   [Alex Smola](http://alex.smola.org/teaching/10-701-15/)  
   [Trevor Hastie and Rob Tibshirani](http://dataschool.io/15-hours-of-expert-machine-learning-videos/)  
 
-  [Yandex](http://coursera.org/specializations/machine-learning-data-analysis/) (in russian)  
-  [Konstantin Vorontsov](http://coursera.org/learn/introduction-machine-learning) (in russian)  
   [Konstantin Vorontsov](http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC) (in russian)  
   [Igor Kuralenok](http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC) (in russian)  
   [Igor Kuralenok](http://lektorium.tv/course/22975) (in russian)  
+  [Yandex](http://coursera.org/specializations/machine-learning-data-analysis/) (in russian)  
 
   [Machine Learning Summer Schools](http://mlss.cc)  
 
@@ -435,8 +434,8 @@ Bias-variance tradeoff characterizes how robust algorithm is to errors in its mo
 ----
 
   [Deep Learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
-  [Knowledge Representation and Reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
   [Probabilistic Programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
+  [Knowledge Representation and Reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
 
 
 
@@ -472,7 +471,7 @@ Bias-variance tradeoff characterizes how robust algorithm is to errors in its mo
 
 ----
 
-  Neural Abstract Machines & Program Induction workshop at NIPS 2016 - <https://uclmr.github.io/nampi/>
+  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi) workshop at NIPS 2016
 
 
   <http://cacm.acm.org/magazines/2015/11/193326-inductive-programming-meets-the-real-world/fulltext>  
@@ -530,18 +529,18 @@ problems:
 
 ----
 
-  TPOT Data Science Assistant - <http://rhiever.github.io/tpot/>
+  [TPOT Data Science Assistant](http://rhiever.github.io/tpot/) project
 
-  "The Automatic Statistician" by Zoubin Ghahramani - <https://youtu.be/H7AMB0oo__4?t=53m20s> + <http://webdav.tuebingen.mpg.de/mlss2013/2015/slides/ghahramani/mlss15future.pdf>
+  ["The Automatic Statistician"](https://youtu.be/H7AMB0oo__4?t=53m20s) by Zoubin Ghahramani ([slides](http://webdav.tuebingen.mpg.de/mlss2013/2015/slides/ghahramani/mlss15future.pdf))
 
-  DARPA's Data-Driven Discovery of Models (D3M) - <http://www.darpa.mil/news-events/2016-06-17>
+  [DARPA's Data-Driven Discovery of Models (D3M)](http://www.darpa.mil/news-events/2016-06-17):  
 >	"The goal of D3M is to help overcome the data-science expertise gap by enabling non-experts to construct complex empirical models through automation of large parts of the model-creation process. If successful, researchers using D3M tools will effectively have access to an army of “virtual data scientists”."
 
 >	"The construction of empirical models today is largely a manual process, requiring data experts to translate stochastic elements, such as weather and traffic, into models that engineers and scientists can then ask questions of. We have an urgent need to develop machine-based modeling for users with no data-science background. We believe it’s possible to automate certain aspects of data science, and specifically to have machines learn from prior example how to construct new models."
 
 ----
 
-  "Why Tool AIs Want to Be Agent AIs" - <http://www.gwern.net/Tool%20AI>  
+  ["Why Tool AIs Want to Be Agent AIs"](http://www.gwern.net/Tool%20AI) by Gwern Branwen:  
 
   "Roughly, we can try to categorize the different kinds of agentiness by level of neural network they work on. There are:  
 
@@ -632,12 +631,12 @@ problems:
 ### interesting papers
 
 
-[selected papers on machine learning](https://dropbox.com/sh/kpd5tvfnc29lstj/AAD3oGVCUdkoMS56_2g8Oj7_a)
+[selected papers and books](https://dropbox.com/sh/kpd5tvfnc29lstj/AAD3oGVCUdkoMS56_2g8Oj7_a)
 
-[selected papers on deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers)  
-[selected papers on reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers)  
-[selected papers on bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt#interesting-papers)  
-[selected papers on probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers)  
+[interesting papers - deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers)  
+[interesting papers - reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers)  
+[interesting papers - bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt#interesting-papers)  
+[interesting papers - probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers)  
 
 
 [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md)
@@ -647,8 +646,8 @@ interesting papers (see below):
   - [automated machine learning](#interesting-papers---automated-machine-learning)
   - [systems](#interesting-papers---systems)
 
-
 ----
+
 
 #### Valiant - ["A Theory of the Learnable"](https://people.mpi-inf.mpg.de/~mehlhorn/SeminarEvolvability/ValiantLearnable.pdf)
 >	"Humans appear to be able to learn new concepts without needing to be programmed explicitly in any conventional sense. In this paper we regard learning as the phenomenon of knowledge acquisition in the absence of explicit programming. We give a precise methodology for studying this phenomenon from a computational viewpoint. It consists of choosing an appropriate information gathering mechanism, the learning protocol, and exploring the class of concepts that can be learned using it in a reasonable (polynomial) number of steps. Although inherent algorithmic complexity appears to set serious limits to the range of concepts that can be learned, we show that there are some important nontrivial classes of propositional concepts that can be learned in a realistic sense."

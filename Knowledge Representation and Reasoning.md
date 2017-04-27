@@ -105,14 +105,13 @@
 
   "A machine comprehends a passage of text if, for any question regarding that text that can be answered correctly by a majority of native speakers, that machine can provide a string which those speakers would agree both answers that question, and does not contain information irrelevant to that question."
 
-  *(Ludwig Wittgenstein)* "The language is meant to serve for communication between a builder A and an assistant B. A is building with building-stones: there are blocks, pillars, slabs and beams. B has to pass the stones, and that in the order in which A needs them. For this purpose they use a language consisting of the words “block”, “pillar”, “slab”, “beam”. A calls them out - B brings the stone which he has learnt to bring at such-and-such a call. Conceive this as a complete primitive language."  
+  *(Ludwig Wittgenstein)* "The language is meant to serve for communication between a builder A and an assistant B. A is building with building-stones: there are blocks, pillars, slabs and beams. B has to pass the stones, and that in the order in which A needs them. For this purpose they use a language consisting of the words “block”, “pillar”, “slab”, “beam”. A calls them out - B brings the stone which he has learnt to bring at such-and-such a call. Conceive this as a complete primitive language."
+
   *(Jon Gauthier)* "This game is not just a game of words but a game of words causing things and of other things causing words. We can’t fully define the meaning of a word like “slab” without referring to the physical actions of A and B. In this way, linguistic meaning has to bottom out at some point in nonlinguistic facts."
 
   *(Joseph Weizenbaum, creator of ELIZA chat bot)* "No general solution to the problem of computer understanding of natural language is possible, i.e. language is understood only in contextual frameworks, that even these can be shared by people to only a limited extent, and that consequently even people are not embodiments of any such general solution."
 
 ----
-
-  [Natural Language Processing](https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt)
 
   ["A Paradigm for Situated and Goal-Driven Language Learning"](https://arxiv.org/abs/1610.03585) by Jon Gauthier and Igor Mordatch  
 >	"We outlined a paradigm for grounded and goal-driven language learning in artificial agents. The paradigm is centered around a utilitarian definition of language understanding, which equates language understanding with the ability to cooperate with other language users in real-world environments. This position demotes language from its position as a separate task to be solved to one of several communicative tools agents might use to accomplish their real-world goals."
@@ -122,8 +121,13 @@
 
 
   ["Natural Language Understanding: Foundations and State-of-the-Art"](http://youtube.com/watch?v=mhHfnhh-pB4) by Percy Liang
+	([summary](http://topbots.com/4-different-approaches-natural-language-processing-understanding/))
 
   ["A Survey of the Current State of Reading Comprehension"](http://matt-gardner.github.io/paper-thoughts/2016/12/08/reading-comprehension-survey.html) by Matt Gardner
+
+----
+
+  [Natural Language Processing](https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt)
 
 
 
@@ -140,7 +144,7 @@
   ["Schema.org: Evolution of Structured Data on the Web"](http://queue.acm.org/detail.cfm?id=2857276) by Guha, Brickley, Macbeth  
 >	"We report some key schema.org adoption metrics from a sample of 10 billion pages from a combination of the Google index and Web Data Commons. In this sample, 31.3% of pages have schema.org markup, up from 22% one year ago. Structured data markup is now a core part of the modern web."
 
-  RDF on the web with schema.org types as the largest existing structured knowledge base - <http://youtube.com/watch?v=-UljtBjV8jM> (Guha)
+  RDF on the web with schema.org types as the largest existing structured knowledge base - [overview by Ramanathan Guha](http://youtube.com/watch?v=-UljtBjV8jM)  
 >	"I don't think we even have the begginings of theory [filtering, entity resolution, graph reconciliation]"
 
 
@@ -253,7 +257,7 @@
 
   [Epistemological Database with Universal Schema](#probabilistic-database---epistemological-database)
 
-  overview by Andrew McCallum -  
+  overview by Andrew McCallum:  
 	<http://www.fields.utoronto.ca/video-archive/2016/11/2267-16181>  
 	<http://yahoolabs.tumblr.com/post/113969611311/big-thinker-andrew-mccallum-discusses-the>  
 	<http://videolectures.net/akbcwekex2012_mccallum_base_construction/>  
@@ -430,7 +434,7 @@
   (Josh Tenenbaum) "There was something really right about logic. It wasn't deductive inference which is too weak and brittle but abstraction. And if we combine abstraction of predicate logic with power of statistical learning and inference, we can do some pretty cool things."
 
 
-  Pedro Domingos  
+  Pedro Domingos:  
 	["Unifying Logical and Statistical AI"](http://youtube.com/watch?v=bW5DzNZgGxY)  
 	["Combining Logic and Probability: Languages, Algorithms and Applications"](http://videolectures.net/uai2011_domingos_kersting_combining/)  
 	["Incorporating Prior Knowledge into NLP with Markov Logic"](http://videolectures.net/icml08_domingos_ipk/)  
@@ -918,7 +922,7 @@
   ["A Review of Relational Machine Learning for Knowledge Graphs: From Multi-Relational Link Prediction to Automated Knowledge Graph Construction"](http://arxiv.org/abs/1503.00759) by Nickel, Murphy, Tresp, Gabrilovich
 
 
-
+----
 #### Snorkel
 
   <https://github.com/HazyResearch/snorkel>  
@@ -952,7 +956,7 @@
   "Fonduer: Knowledge Base Construction from Richly Formatted Data" ([arXiv](https://arxiv.org/abs/1703.05028), [blog](https://hazyresearch.github.io/snorkel/blog/fonduer.html))  
 
 
-
+----
 #### DeepDive
 
   <http://deepdive.stanford.edu>  
@@ -994,7 +998,7 @@
   "One way to improve a KBP system is to integrate domain knowledge. DeepDive supports this operation by allowing the user to integrate constraints and domain knowledge as correlations among random variables. Imagine that the user wants to integrate a simple rule that says “one person is likely to be the spouse of only one person.” For example, given a single entity “Barack Obama,” this rule gives positive preference to the case where only one of (Barack Obama, Michelle Obama) and (Barack Obama, Michelle Williams) is true."
 
 
-
+----
 #### Never-Ending Language Learning (NELL)
 
   <http://rtw.ml.cmu.edu/rtw/>  
@@ -1018,7 +1022,7 @@
   <http://youtube.com/watch?v=--pYaISROqE> (Cohen)  
 
 
-
+----
 #### AI2 Aristo
 
   <http://allenai.org/aristo.html>
@@ -1034,7 +1038,7 @@
   "A first step towards a machine that contains large amounts of knowledge in machine-computable form that can answer questions, explain those answers, and discuss those answers with users. Central to the project is machine reading - semi-automated acquisition of knowledge from natural language texts. We are also integrating semi-formal methods for reasoning with knowledge, such as textual entailment and evidential reasoning, and a robust hybrid architecture that has multiple reasoning modules operating in tandem."
 
 
-
+----
 #### IBM Watson
 
   ["The Science Behind an Answer"](http://youtube.com/watch?v=DywO4zksfXw)  
@@ -1532,7 +1536,10 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
   - <https://blog.acolyer.org/2017/02/09/value-iteration-networks/>
   - <https://github.com/avivt/VIN>
   - <https://github.com/TheAbhiKumar/tensorflow-value-iteration-networks>
+  - <https://github.com/zuoxingdong/VIN_TensorFlow>
   - <https://github.com/zuoxingdong/VIN_PyTorch_Visdom>
+  - <https://github.com/onlytailei/Value-Iteration-Networks-PyTorch>
+  - <https://github.com/kentsommer/pytorch-value-iteration-networks>
 
 
 

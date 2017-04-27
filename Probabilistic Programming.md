@@ -118,8 +118,8 @@
   * PyMC3  
 	<http://pymc-devs.github.io/pymc3/>  
 
-  * BayesFlow
-	<https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/bayesflow>
+  * BayesFlow  
+	<https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/bayesflow>  
 
   * Infer.NET  
 	<http://research.microsoft.com/infernet>  
