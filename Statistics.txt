@@ -1,4 +1,5 @@
-Data Science is transformation of data into knowledge with the help of computer and mathematical sciences.
+Statistics is reduction of data into numbers expressing valueable information about data generating process.
+Data Science is transformation of data into knowledge with help of computer science and mathematical sciences.
 
 
 

@@ -925,7 +925,8 @@
 ----
 #### Snorkel
 
-  <https://github.com/HazyResearch/snorkel>  
+  <http://github.com/HazyResearch/snorkel>  
+  <http://dawn.cs.stanford.edu/blog/snorkel.html>  
   <http://hazyresearch.github.io/snorkel/>  
 
 
@@ -946,6 +947,7 @@
   "Fonduer: Knowledge Base Construction from Richly Formatted Data" ([blog](https://hazyresearch.github.io/snorkel/blog/fonduer.html))  
   "Babble Labble: Learning from Natural Language Explanations" ([blog](https://hazyresearch.github.io/snorkel/blog/babble_labble.html))  
   "Structure Learning: Are Your Sources Only Telling You What You Want to Hear?" ([blog](https://hazyresearch.github.io/snorkel/blog/structure_learning.html))  
+  "HoloClean: Weakly Supervised Data Repairing" ([blog](https://hazyresearch.github.io/snorkel/blog/holoclean.html))  
 
 
   "Data Programming: Creating Large Training Sets, Quickly" ([arXiv](https://arxiv.org/abs/1605.07723), [video](https://youtube.com/watch?v=iSQHelJ1xxU))  
@@ -970,7 +972,7 @@
 	<http://videolectures.net/nipsworkshops2013_re_archaeological_texts/>  
 
 
-  [showcases](http://deepdive.stanford.edu/doc/showcase/apps.html)  
+  [showcases](http://deepdive.stanford.edu/showcase/apps)  
   [PaleoDB](http://nature.com/news/computers-read-the-fossil-record-1.17868)  
 
   winner of TAC-KBP 2014 English Slot Filling challenge:  
@@ -1067,7 +1069,7 @@
 
   [StarAI](http://starai.org) (Statistical and Relational AI) workshop
 
-  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi/) workshop at NIPS 2016
+  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi/) workshop at NIPS 2016 ([videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt))
 
   ["Reasoning, Attention, Memory"](http://thespermwhale.com/jaseweston/ram/) workshop at NIPS 2015  
   ["Cognitive Computation: Integrating Neural and Symbolic Approaches"](http://neural-symbolic.org/CoCo2015/) workshop at NIPS 2015  
@@ -1448,12 +1450,16 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
   - <http://github.com/jacobandreas/nmn2>  
 
 
-#### Andreas, Rohrbach, Darrell, Klein ["Learning to Compose Neural Networks for Question Answering"](http://arxiv.org/abs/1601.01705)  (query semantic parsing + entity embedding, Dynamic Neural Model Network)
+#### Andreas, Rohrbach, Darrell, Klein - ["Learning to Compose Neural Networks for Question Answering"](http://arxiv.org/abs/1601.01705)  (query semantic parsing + entity embedding, Dynamic Neural Model Network)
 >	"We describe a question answering model that applies to both images and structured knowledge bases. The model uses natural language strings to automatically assemble neural networks from a collection of composable modules. Parameters for these modules are learned jointly with network-assembly parameters via reinforcement learning, with only (world, question, answer) triples as supervision. Our approach, which we term a dynamic neural model network, achieves state-of-the-art results on benchmark datasets in both visual and structured domains."
 
   - <https://youtube.com/watch?v=gDXD3hYfBW8> (Andreas)  
   - <http://blog.jacobandreas.net/programming-with-nns.html>  
   - <http://github.com/jacobandreas/nmn2>  
+
+
+#### Hu, Andreas, Rohrbach, Darrell, Saenko - ["Learning to Reason: End-to-End Module Networks for Visual Question Answering"](https://arxiv.org/abs/1704.05526)
+>	"Natural language questions are inherently compositional, and many are most easily answered by reasoning about their decomposition into modular sub-problems. For example, to answer "is there an equal number of balls and boxes?" we can look for balls, look for boxes, count them, and compare the results. The recently proposed Neural Module Network (NMN) architecture implements this approach to question answering by parsing questions into linguistic substructures and assembling question-specific deep networks from smaller modules that each solve one subtask. However, existing NMN implementations rely on brittle off-the-shelf parsers, and are restricted to the module configurations proposed by these parsers rather than learning them from data. In this paper, we propose End-to-End Module Networks (N2NMNs), which learn to reason by directly predicting instance-specific network layouts without the aid of a parser. Our model learns to generate network structures (by imitating expert demonstrations) while simultaneously learning network parameters (using the downstream task loss). Experimental results on the new CLEVR dataset targeted at compositional question answering show that N2NMNs achieve an error reduction of nearly 50% relative to state-of-the-art attentional approaches, while discovering interpretable network architectures specialized for each question."
 
 
 #### Guu, Miller, Liang - ["Traversing Knowledge Graphs in Vector Space"](http://arxiv.org/abs/1506.01094)  (entity embedding)
@@ -1573,6 +1579,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
   - <http://youtube.com/watch?v=ZVHR8OAHDlI> (Boyd-Graber, Iyyer)
   - <http://youtube.com/watch?v=ZRYObdTOaEI> (Iyyer)
   - <http://youtube.com/watch?v=YArUk9QcMe0> (Boyd-Graber)
+  - <http://youtube.com/watch?v=eJd9_ahWD4Q> (Iyyer)
   - <http://youtu.be/tdLmf8t4oqM?t=27m25s> (Socher)
   - <http://youtu.be/BVbQRrrsJo0?t=34m30s> (Socher)
   - <http://videolectures.net/deeplearning2015_socher_nlp_applications/> (Socher, 09:00)

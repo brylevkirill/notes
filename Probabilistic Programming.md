@@ -56,10 +56,10 @@
 	<http://research.microsoft.com/apps/video/dl.aspx?id=259568>  
 	<http://youtube.com/watch?v=6Lqt07enBGs> + <http://youtube.com/watch?v=DY5yuBNEuQs>  
 
-  ["Probabilistic Programming and Bayesian Methods for Hackers"](https://goo.gl/oav8Mp) by Davidson-Pilon  
+  ["Probabilistic Programming and Bayesian Methods for Hackers"](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/) by Davidson-Pilon  
   ["The Design and Implementation of Probabilistic Programming Languages"](http://dippl.org) by Noah Goodman and Andreas Stuhlmuller  
 
-  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi/) workshop at NIPS 2016
+  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi/) workshop at NIPS 2016 ([videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt))
 
 
 

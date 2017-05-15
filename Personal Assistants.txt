@@ -1,4 +1,4 @@
-"Personal assistant is a tool that can interact with humans through natural dialogue, understands their world, their interests and needs, answers their information needs, helps in planning and remembering tasks, and can help control their appliances to make their lives more comfortable."
+  "Personal assistant is a tool that can interact with humans through natural dialogue, understands their world, their interests and needs, answers their information needs, helps in planning and remembering tasks, and can help control their appliances to make their lives more comfortable."
 
   * problems
   * reinforcement learning
@@ -11,9 +11,6 @@
     - utterance generation
     - utterance understanding
     - intents and actions
-
-
-selected papers - https://dropbox.com/sh/veqe3c800ztpkxe/AABwH6camduJrsTUJpeKobWUa
 
 
 
@@ -257,6 +254,8 @@ selected papers - https://dropbox.com/sh/veqe3c800ztpkxe/AABwH6camduJrsTUJpeKobW
 
 
 selected papers - https://dropbox.com/sh/veqe3c800ztpkxe/AABwH6camduJrsTUJpeKobWUa
+
+
 
 
 interesting recent papers - https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#dialog-systems

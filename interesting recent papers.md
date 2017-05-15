@@ -137,6 +137,7 @@ interesting papers:
 
 ----
 [Adaptive Computation Time for Recurrent Neural Networks](http://arxiv.org/abs/1603.08983) (Graves)  
+  - <https://youtu.be/nqiUFc52g78?t=58m45s> (Graves)  
   - <http://distill.pub/2016/augmented-rnns/>  
   - <https://www.evernote.com/shard/s189/sh/fd165646-b630-48b7-844c-86ad2f07fcda/c9ab960af967ef847097f21d94b0bff7>  
   - <https://github.com/DeNeutoy/act-tensorflow>  
@@ -169,17 +170,17 @@ interesting papers:
 ---
 ### meta-learning
 
-[Learning to Learn by Gradient Descent by Gradient Descent](http://arxiv.org/abs/1606.04474) (de Freitas)  
+[Learning to Learn by Gradient Descent by Gradient Descent](http://arxiv.org/abs/1606.04474) (DeepMind)  
 >	"Take some computation where you usually wouldn’t keep around intermediate states, such as a planning computation (say value iteration, where you only keep your most recent estimate of the value function) or stochastic gradient descent (where you only keep around your current best estimate of the parameters). Now keep around those intermediate states as well, perhaps reifying the unrolled computation in a neural net, and take gradients to optimize the entire computation with respect to some loss function. Instances: Value Iteration Networks, Learning to learn by gradient descent by gradient descent."  
-  - <https://youtu.be/tPWGGwmgwG0?t=10m50s> (de Freitas)  
-  - <https://youtu.be/x1kf4Zojtb0?t=1h4m53s> (de Freitas)  
+  - <https://youtu.be/tPWGGwmgwG0?t=10m50s> (DeepMind)  
+  - <https://youtu.be/x1kf4Zojtb0?t=1h4m53s> (DeepMind)  
   - <https://blog.acolyer.org/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>  
   - <https://hackernoon.com/learning-to-learn-by-gradient-descent-by-gradient-descent-4da2273d64f2>
   - <https://github.com/deepmind/learning-to-learn>  
 
-[Learning to Learn for Global Optimization of Black Box Functions](http://arxiv.org/abs/1611.03824) (de Freitas)  
+[Learning to Learn without Gradient Descent by Gradient Descent](https://arxiv.org/abs/1611.03824) (DeepMind)
 
-[Learned Optimizers that Scale and Generalize](http://arxiv.org/abs/1703.04813) (de Freitas)  
+[Learned Optimizers that Scale and Generalize](http://arxiv.org/abs/1703.04813) (DeepMind)  
 
 ----
 [RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning](http://arxiv.org/abs/1611.02779) (OpenAI)  
@@ -215,6 +216,7 @@ interesting papers:
   - <https://facebook.com/iclr.cc/videos/1713144705381255/> (Zoph, 1:08:31)  
 
 [Designing Neural Network Architectures using Reinforcement Learning](http://arxiv.org/abs/1611.02167)  
+  - <https://bowenbaker.github.io/metaqnn/>  
 
 
 
@@ -226,6 +228,7 @@ interesting papers:
   - <https://sites.google.com/view/maml> (demo)  
 
 [Optimization as a Model for Few-Shot Learning](https://openreview.net/forum?id=rJY0-Kcll) (Larochelle)  
+  - <https://facebook.com/iclr.cc/videos/1713144705381255/> (Ravi, 1:26:48)  
 
 ----
 [Matching Networks for One Shot Learning](http://arxiv.org/abs/1606.04080) (Vinyals)  
@@ -409,6 +412,7 @@ interesting papers:
   - <https://github.com/kuleshov/tf-wgan>  
   - <https://github.com/blei-lab/edward/blob/master/examples/gan_wasserstein.py>  
   - <https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/WassersteinGAN>  
+  - <https://github.com/igul222/improved_wgan_training>  
 
 [BEGAN: Boundary Equilibrium Generative Adversarial Networks](https://arxiv.org/abs/1703.10717) (Google Brain)  
 >	"We propose a new equilibrium enforcing method paired with a loss derived from the Wasserstein distance for training auto-encoder based Generative Adversarial Networks. This method balances the generator and discriminator during training. Additionally, it provides a new approximate convergence measure, fast and stable training and high visual quality. We also derive a way of controlling the trade-off between image diversity and visual quality. We focus on the image generation task, setting a new milestone in visual quality, even at higher resolutions. This is achieved while using a relatively simple model architecture and a standard training procedure."  
@@ -577,6 +581,7 @@ interesting papers:
 
 [Composing graphical models with neural networks for structured representations and fast inference](http://arxiv.org/abs/1603.06277)  
   - <https://youtube.com/watch?v=btr1poCYIzw>  
+  - <https://youtube.com/watch?v=vnO3w8OgTE8> (Duvenaud)  
   - <http://www.cs.toronto.edu/~duvenaud/courses/csc2541/slides/svae-slides.pdf>  
   - <https://github.com/mattjj/svae>  
 
@@ -669,6 +674,7 @@ interesting papers:
   - <http://videolectures.net/deeplearning2016_goyal_new_algorithm/> (Goyal)  
   - <https://github.com/dennybritz/deeplearning-papernotes/blob/master/notes/professor-forcing.md>  
   - <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1610.09038>  
+  - <https://github.com/anirudh9119/LM_GANS>  
 
 ----
 [Sequence-to-Sequence Learning as Beam-Search Optimization](http://arxiv.org/abs/1606.02960)  
@@ -724,6 +730,9 @@ interesting papers:
 
 [Text Understanding with the Attention Sum Reader Network](http://arxiv.org/abs/1603.01547) (IBM Watson)  
 
+[Machine Comprehension by Text-to-Text Neural Question Generation](https://arxiv.org/abs/1705.02012) (Maluuba)  
+  - <https://youtube.com/watch?v=UIzcIC5RQN8>  
+
 [Key-Value Memory Networks for Directly Reading Documents](http://arxiv.org/abs/1606.03126) (Weston)  
   - <http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.03126>  
   - <https://gist.github.com/shagunsodhani/a5e0baa075b4a917c0a69edc575772a8>  
@@ -734,22 +743,12 @@ interesting papers:
   - <https://github.com/jimfleming/recurrent-entity-networks>  
 
 [Gated-Attention Readers for Text Comprehension](http://arxiv.org/abs/1606.01549) (Salakhutdinov)  
-  - <https://youtube.com/watch?v=ZSDrM-tuOiA> (Salakhutdinov)
-
-[Query-Regression Networks for Machine Comprehension](http://arxiv.org/abs/1606.04582) (AI2)  
->	"We show the state-of-the-art results in the three datasets of story-based QA and dialog. We model a story or a dialog as a sequence of state-changing triggers and compute the final answer to the question or the system’s next utterance by recurrently updating (or reducing) the query. QRN is situated between the attention mechanism and RNN, effectively handling time dependency and long-term dependency problems of each technique, respectively. It addresses the long-term dependency problem of most RNNs by simplifying the recurrent update, in which the candidate hidden state (reduced query) does not depend on the previous state. Moreover, QRN can be parallelized and can address the well-known problem of RNN’s vanishing gradients."  
-  - <https://github.com/seominjoon/qrn>  
+  - <https://youtube.com/watch?v=ZSDrM-tuOiA> (Salakhutdinov)  
 
 ----
-[Dynamic Memory Networks for Visual and Textual Question Answering](http://arxiv.org/abs/1603.01417) (Socher)  
-  - <https://youtube.com/watch?v=FCtpHt6JEI8>  
-  - <https://youtube.com/watch?v=DjPQRLMMAbw>  
-  - <http://techtalks.tv/talks/dynamic-memory-networks-for-visual-and-textual-question-answering/62463/>  
-  - <https://github.com/therne/dmn-tensorflow>  
-
 [Deep Compositional Question Answering with Neural Module Networks](http://arxiv.org/abs/1511.02799) (Darrell)  
   - <https://youtube.com/watch?v=gDXD3hYfBW8> (Andreas)  
-  - <http://research.microsoft.com/apps/video/default.aspx?id=260024> (Darrell, 10:45) 
+  - <http://research.microsoft.com/apps/video/default.aspx?id=260024> (Darrell, 10:45)  
   - <http://blog.jacobandreas.net/programming-with-nns.html>  
   - <https://github.com/abhshkdz/papers/blob/master/reviews/deep-compositional-question-answering-with-neural-module-networks.md>  
   - <http://github.com/jacobandreas/nmn2>  
@@ -758,6 +757,8 @@ interesting papers:
   - <https://youtube.com/watch?v=gDXD3hYfBW8> (Andreas)  
   - <http://blog.jacobandreas.net/programming-with-nns.html>  
   - <http://github.com/jacobandreas/nmn2>  
+
+[Learning to Reason: End-to-End Module Networks for Visual Question Answering](https://arxiv.org/abs/1704.05526) (Darrell)  
 
 [Modeling Relationships in Referential Expressions with Compositional Modular Networks](http://arxiv.org/abs/1611.09978) (Darrell)  
 
@@ -770,7 +771,7 @@ interesting papers:
 [Learning a Natural Language Interface with Neural Programmer](http://arxiv.org/abs/1611.08945)  
   - <https://github.com/tensorflow/models/tree/master/neural_programmer>  
 
-[Neural Symbolic Machines: Learning Semantic Parsers on Freebase with Weak Supervision](http://arxiv.org/abs/1611.00020)  (Google Brain)
+[Neural Symbolic Machines: Learning Semantic Parsers on Freebase with Weak Supervision](http://arxiv.org/abs/1611.00020) (Google Brain)
 >	"We propose the Manager-Programmer-Computer framework, which integrates neural networks with non-differentiable memory to support abstract, scalable and precise operations through a friendly neural computer interface. Specifically, we introduce a Neural Symbolic Machine, which contains a sequence-to-sequence neural "programmer", and a non-differentiable "computer" that is a Lisp interpreter with code assist."  
 
 ----
@@ -786,11 +787,11 @@ interesting papers:
 [WebNav: A New Large-Scale Task for Natural Language based Sequential Decision Making](http://arxiv.org/abs/1602.02261)  
 
 ----
-[Learning Physical Intuition of Block Towers by Example](http://arxiv.org/abs/1603.01312) (Fergus)  
+[Learning Physical Intuition of Block Towers by Example](http://arxiv.org/abs/1603.01312) (Facebook)  
   - <https://youtu.be/oSAG57plHnI?t=19m48s> (Tenenbaum)  
 
 [Learning to Perform Physics Experiments via Deep Reinforcement Learning](http://arxiv.org/abs/1611.01843) (DeepMind)  
-  - <https://youtu.be/tPWGGwmgwG0?t=16m34s> (de Freitas)  
+  - <https://youtu.be/tPWGGwmgwG0?t=16m34s> (DeepMind)  
 
 [Interaction Networks for Learning about Objects, Relations and Physics](http://arxiv.org/abs/1612.00222) (DeepMind)  
   - <https://blog.acolyer.org/2017/01/02/interaction-networks-for-learning-about-objects-relations-and-physics/>  
@@ -800,6 +801,15 @@ interesting papers:
 ---
 ### program induction
 
+[RobustFill: Neural Program Learning under Noisy I/O](https://arxiv.org/abs/1703.07469) (Microsoft)  
+
+[Neuro-Symbolic Program Synthesis](https://arxiv.org/abs/1611.01855) (Microsoft)
+
+[TerpreT: A Probabilistic Programming Language for Program Induction](http://arxiv.org/abs/1608.04428) (Microsoft)  
+>	"These works raise questions of (a) whether new models can be designed specifically to synthesize interpretable source code that may contain looping and branching structures, and (b) whether searching over program space using techniques developed for training deep neural networks is a useful alternative to the combinatorial search methods used in traditional IPS. In this work, we make several contributions in both of these directions."  
+>	"Shows that differentiable interpreter-based program induction is inferior to discrete search-based techniques used by the programming languages community. We are then left with the question of how to make progress on program induction using machine learning techniques."  
+
+----
 [Making Neural Programming Architectures Generalize via Recursion](https://arxiv.org/abs/1704.06611)  # Neural Programmer-Interpreter with recursion  
 >	"We implement recursion in the Neural Programmer-Interpreter framework on four tasks: grade-school addition, bubble sort, topological sort, and quicksort."  
   - <https://facebook.com/iclr.cc/videos/1713144705381255/> (Cai, 49:59)  
@@ -807,10 +817,6 @@ interesting papers:
 [Adaptive Neural Compilation](http://arxiv.org/abs/1605.07969)  
 
 [Programming with a Differentiable Forth Interpreter](http://arxiv.org/abs/1605.06640) (Riedel)  # learning details of probabilistic program  
-
-[TerpreT: A Probabilistic Programming Language for Program Induction](http://arxiv.org/abs/1608.04428)  
->	"These works raise questions of (a) whether new models can be designed specifically to synthesize interpretable source code that may contain looping and branching structures, and (b) whether searching over program space using techniques developed for training deep neural networks is a useful alternative to the combinatorial search methods used in traditional IPS. In this work, we make several contributions in both of these directions."  
->	"Shows that differentiable interpreter-based program induction is inferior to discrete search-based techniques used by the programming languages community. We are then left with the question of how to make progress on program induction using machine learning techniques."  
 
 
 
@@ -861,13 +867,15 @@ interesting papers:
 
 ----
 [Reinforcement Learning with Unsupervised Auxiliary Tasks](http://arxiv.org/abs/1611.05397)  # UNREAL  
->	"This approach exploits the multithreading capabilities of standard CPUs. The idea is to execute many instances of our agent in parallel, but using a shared model. This provides a viable alternative to experience replay, since parallelisation also diversifies and decorrelates the data. Our asynchronous actor-critic algorithm, A3C, combines a deep Q-network with a deep policy network for selecting actions. It achieves state-of-the-art results, using a fraction of the training time of DQN and a fraction of the resource consumption of Gorila."  
 >	"Auxiliary tasks:  
 >	- pixel changes: learn a policy for maximally changing the pixels in a grid of cells overlaid over the images  
 >	- network features: learn a policy for maximally activating units in a specific hidden layer  
 >	- reward prediction: predict the next reward given some historical context  
 >	- value function replay: value function regression for the base agent with varying window for n-step returns"  
+>	"By using these tasks we force the agent to learn about the controllability of its environment and the sorts of sequences which lead to rewards, and all of this shapes the features of the agent."
+>	"This approach exploits the multithreading capabilities of standard CPUs. The idea is to execute many instances of our agent in parallel, but using a shared model. This provides a viable alternative to experience replay, since parallelisation also diversifies and decorrelates the data. Our asynchronous actor-critic algorithm, A3C, combines a deep Q-network with a deep policy network for selecting actions. It achieves state-of-the-art results, using a fraction of the training time of DQN and a fraction of the resource consumption of Gorila."  
   - <https://youtube.com/watch?v=Uz-zGYrYEjA> (demo)  
+  - <https://youtube.com/watch?v=VVLYTqZJrXY> (Jaderberg)  
   - <https://facebook.com/iclr.cc/videos/1712224178806641/> (Jaderberg, 1:15:45)  
   - <https://github.com/dennybritz/deeplearning-papernotes/blob/b097e313dc59c956575fb1bf23b64fa8d1d84057/notes/rl-auxiliary-tasks.md>  
   - <https://github.com/miyosuda/unreal>  
@@ -877,8 +885,6 @@ interesting papers:
 [Dual Learning for Machine Translation](http://arxiv.org/abs/1611.00179)  
 >	"In the dual-learning mechanism, we use one agent to represent the model for the primal task and the other agent to represent the model for the dual task, then ask them to teach each other through a reinforcement learning process. Based on the feedback signals generated during this process (e.g., the language model likelihood of the output of a model, and the reconstruction error of the original sentence after the primal and dual translations), we can iteratively update the two models until convergence (e.g., using the policy gradient methods)."  
 >	"The basic idea of dual learning is generally applicable: as long as two tasks are in dual form, we can apply the dual-learning mechanism to simultaneously learn both tasks from unlabeled data using reinforcement learning algorithms. Actually, many AI tasks are naturally in dual form, for example, speech recognition versus text to speech, image caption versus image generation, question answering versus question generation (e.g., Jeopardy!), search (matching queries to documents) versus keyword extraction (extracting keywords/queries for documents), so on and so forth."  
->
->	"The authors finetune an FR -> EN NMT model using a RL-based dual game. 1. Pick a French sentence from a monolingual corpus and translate it to EN. 2. Use an EN language model to get a reward for the translation 3. Translate the translation back into FR using an EN -> FR system. 4. Get a reward based on the consistency between original and reconstructed sentence. Training this architecture using Policy Gradient authors can make efficient use of monolingual data and show that a system trained on only 10% of parallel data and finetuned with monolingual data achieves comparable BLUE scores as a system trained on the full set of parallel data."  
   - <https://github.com/dennybritz/deeplearning-papernotes/blob/master/notes/dual-learning-mt.md>  
 
 ----
@@ -1206,6 +1212,9 @@ interesting papers:
   - <https://github.com/openai/imitation>  
   - <https://github.com/DanielTakeshi/rl_algorithms/tree/master/il>  
 
+[Inferring The Latent Structure of Human Decision-Making from Raw Visual Inputs](https://arxiv.org/abs/1703.08840)  
+  - <https://github.com/YunzhuLi/InfoGAIL>  
+
 [Third Person Imitation Learning](https://arxiv.org/abs/1703.01703) (OpenAI)  
 >	"The authors propose a new framework for learning a policy from third-person experience. This is different from standard imitation learning which assumes the same "viewpoint" for teacher and student. The authors build upon Generative Adversarial Imitation Learning, which uses a GAN framework to discriminate between teacher and student experience and force the student to behave close to the teacher. However, when using third-person experience from a different viewpoint the discriminator would simply learn to discriminate between viewpoints instead of behavior and the framework isn't easily applicable. The authors' solution is to add a second discriminator to maximize a domain confusion loss based on the same feature representation. The objective is to learn the same (viewpoint-independent) feature representation for both teacher and student experience while also learning to discriminate between teacher and student observations. In other words, the objective is to maximize domain confusion while minimizing class loss. In practice, this is another discriminator term in the GAN objective. The authors also found that they need to feed observations at time t+n (n=4 in experiments) to signal the direction of movement in the environment."  
   - <https://github.com/dennybritz/deeplearning-papernotes/blob/master/notes/third-person-imitation-learning.md>  
@@ -1268,14 +1277,15 @@ interesting papers:
 [Learning Cooperative Visual Dialog Agents with Deep Reinforcement Learning](https://arxiv.org/abs/1703.06585)  
   - <https://visualdialog.org> (demo)  
 
-[Learning to Communicate with Deep Multi-Agent Reinforcement Learning](http://arxiv.org/abs/1605.06676) (de Freitas)  
+[Learning to Communicate with Deep Multi-Agent Reinforcement Learning](http://arxiv.org/abs/1605.06676) (DeepMind)  
   - <https://youtube.com/watch?v=cfsYBY4nd1c>  
   - <https://youtube.com/watch?v=xL-GKD49FXs> (Foerster)  
   - <http://videolectures.net/deeplearning2016_foerster_learning_communicate/> (Foerster)  
   - <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.07133>  
   - <https://github.com/iassael/learning-to-communicate>  
 
-[Learning Multiagent Communication with Backpropagation](http://arxiv.org/abs/1605.07736) (Fergus)  
+[Learning Multiagent Communication with Backpropagation](http://arxiv.org/abs/1605.07736) (Facebook)  
+  - <https://youtu.be/_iVVXWkoEAs?t=30m6s> (Fergus)  
   - <https://github.com/facebookresearch/CommNet>  
 
 [Towards Deep Symbolic Reinforcement Learning](http://arxiv.org/abs/1609.05518)  

@@ -1,4 +1,5 @@
-Probabilistic/statistical machine learning frames models as distributions over data and latent variables, allowing models to address a broad array of downstream tasks. The underlying statistical methodology of latent variable models is typically Bayesian. A central problem involves modeling complex data-sets using highly flexible families of probability distributions in which learning, sampling, inference, and evaluation are still analytically or computationally tractable.
+  Statistical learning frames models as distributions over data and latent variables, allowing models to address a broad array of downstream tasks. The underlying methodology of latent variable models is typically Bayesian.
+  A central problem involves modeling complex data-sets using highly flexible families of probability distributions in which learning, sampling, inference, and evaluation are still analytically or computationally tractable.
 
 
   * overview
@@ -15,9 +16,6 @@ Probabilistic/statistical machine learning frames models as distributions over d
   * causal inference
   * interesting quotes
   * interesting papers
-
-
-selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91IYIRDWhL79Taa
 
 
 
@@ -197,19 +195,6 @@ selected papers and books - https://dropbox.com/sh/e536yh0co0ynm3c/AABnZxQ1rW91I
   Judea Pearl - "Probabilistic Reasoning in Intelligent Systems"
   Judea Pearl - "Causality: Models, Reasoning, and Inference"
   David Danks - "Unifying the Mind" - http://mitpress.mit.edu/books/unifying-mind
-
-
-
-
-[highlights]
-
-  http://blog.shakirm.com/2015/12/a-year-of-approximate-inference/ (NIPS 2015 workshop on approximate inference)
-
-  http://blackboxworkshop.org (NIPS 2015 workshop on black-box inference)
-  http://variationalinference.org (NIPS 2014 workshop on variational inference)
-
-  http://dustintran.com/blog/trends-and-highlights-of-icml-2015/
-  http://reddit.com/r/MachineLearning/comments/2fxi6v/ama_michael_i_jordan/
 
 
 
@@ -795,19 +780,20 @@ overview by Judea Pearl - https://www.edge.org/conversation/judea_pearl-engines-
 
 
 
-selected papers - https://dropbox.com/sh/txqk44kqgn1f9t4/AAD3DCEDXjPxGPFOa0SJYJwga
+selected papers and books - https://dropbox.com/sh/txqk44kqgn1f9t4/AAD3DCEDXjPxGPFOa0SJYJwga
 
 
-interesting recent papers - https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md
+interesting recent papers:
+ - variational autoencoders - https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models---variational-autoencoders
+ - unsupervised learning - https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#unsupervised-learning
+ - bayesian inference and learning - https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#bayesian-inference-and-learning
 
 
-interesting papers (see https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md):
- * variational autoencoder
- * bayesian inference and learning
-
-interesting papers (see https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md):
- * inference
- * applications
+interesting papers:
+ - bayesian deep learning - https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning
+ - variational autoencoder - https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#generative-models---variational-autoencoder
+ - inference - https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers---inference
+ - applications - https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers---applications
 
 
 

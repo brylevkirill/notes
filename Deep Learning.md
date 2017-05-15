@@ -34,7 +34,7 @@
     - [applications](#interesting-papers---applications)
 
 
-  [recent breakthroughs](https://dropbox.com/s/cfjjubx8ocfx748/breakthroughs.md) (in russian)
+  [recent breakthroughs](https://github.com/brylevkirill/posts/blob/master/breakthroughs.md) (in russian)
 
 
 
@@ -117,7 +117,8 @@
 #### conferences
 
   - ICLR 2017  
-	<https://medium.com/@karpathy/iclr-2017-vs-arxiv-sanity-d1488ac5c131>
+	<https://facebook.com/pg/iclr.cc/videos/>  
+	<https://medium.com/@karpathy/iclr-2017-vs-arxiv-sanity-d1488ac5c131>  
 
   - NIPS 2016  
 	<https://nips.cc/Conferences/2016/Schedule>  
@@ -128,7 +129,7 @@
 	<http://people.idsia.ch/~rupesh/rnnsymposium2016/program.html> + <https://youtube.com/playlist?list=PLPwzH56Rdmq4hcuEMtvBGxUrcQ4cAkoSc>  
 	<https://sites.google.com/site/nips2016adversarial/> + <https://youtube.com/playlist?list=PLJscN9YDD1buxCitmej1pjJkR5PMhenTF>  
 	<http://bayesiandeeplearning.org> + <https://youtube.com/channel/UC_LBLWLfKk5rMKDOHoO7vPQ>  
-	<https://uclmr.github.io/nampi/>  
+	<https://uclmr.github.io/nampi/> + <https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt>  
 
 	<https://github.com/hindupuravinash/nips2016>  
 	<https://gist.github.com/artsobolev/63942e24c81fc296472affb1f138d54c>  
@@ -169,7 +170,7 @@
 
 #### applications
 
-  [recent breakthroughs](https://dropbox.com/s/cfjjubx8ocfx748/breakthroughs.md) (in russian)
+  [recent breakthroughs](https://github.com/brylevkirill/posts/blob/master/breakthroughs.md) (in russian)
 
   [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)  
   [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
@@ -899,6 +900,7 @@ examples:
 
   [overview](http://videolectures.net/deeplearning2016_bengio_neural_networks/) by Yoshua Bengio  
   ["Beyond Seq2Seq with Augmented RNNs"](http://videolectures.net/deeplearning2016_grefenstette_augmented_rnn/) by Edward Grefenstette  
+  ["New Directions for Recurrent Neural Networks"](https://facebook.com/iclr.cc/videos/1713144705381255/) by Alex Graves  
 
   ["The Unreasonable Effectiveness of Recurrent Neural Networks"](https://karpathy.github.io/2015/05/21/rnn-effectivenes/) by Andrej Karpathy  
 
@@ -947,7 +949,7 @@ examples:
   <https://youtu.be/Xogn6veSyxA?t=40m30s> (Ian Goodfellow)  
   <https://youtube.com/watch?v=6-yBs3XLM20> (Victor Lempitsky, in russian)  
 
-  [overview of various models](http://culurciello.github.io/tech/2016/06/04/nets.html)
+  [overview of architectures](https://medium.com/towards-data-science/neural-network-architectures-156e5bad51ba) by Eugenio Culurciello
 
 ----
 
@@ -970,7 +972,7 @@ examples:
 
   ["Beyond Seq2Seq with Augmented RNNs"](http://videolectures.net/deeplearning2016_grefenstette_augmented_rnn/) by Edward Grefenstette
 
-  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi/) workshop at NIPS 2016
+  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi/) workshop at NIPS 2016 ([videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt))
 
 ----
 
@@ -1035,6 +1037,7 @@ examples:
 	<https://deepmind.com/blog/differentiable-neural-computers/>
 
 	<https://youtube.com/watch?v=steioHoiEms> (Graves)  
+	<https://facebook.com/iclr.cc/videos/1713144705381255/> (Graves, 9:09)  
 	<https://youtube.com/watch?v=PQrlOjj8gAc> (Wayne)  
 	<https://youtu.be/otRoAQtc5Dk?t=59m56s> (Polykovskiy)  
 
@@ -1600,7 +1603,7 @@ interesting papers (see below):
 >	"Batch norm is similar to dropout in the sense that it multiplies each hidden unit by a random value at each step of training. In this case, the random value is the standard deviation of all the hidden units in the minibatch. Because different examples are randomly chosen for inclusion in the minibatch at each step, the standard deviation randomly fluctuates. Batch norm also subtracts a random value (the mean of the minibatch) from each hidden unit at each step. Both of these sources of noise mean that every layer has to learn to be robust to a lot of variation in its input, just like with dropout."
 
   - <http://research.microsoft.com/apps/video/default.aspx?id=260019> (Ioffe)
-  - <http://videolectures.net/icml2015_ioffe_batch_normalization/>
+  - <http://videolectures.net/icml2015_ioffe_batch_normalization/> (Ioffe)
   - <https://youtu.be/Xogn6veSyxA?t=3m46s> (Goodfellow)
   - <http://www.shortscience.org/paper?bibtexKey=conf/icml/IoffeS15>
   - <https://www.evernote.com/shard/s267/sh/64195d10-53b4-4312-8c5a-d10ab5138c36/22ce804ec6c8ab2b9ceb3096b8cd929e>
@@ -2220,8 +2223,10 @@ interesting papers (see below):
 
   - <https://deepmind.com/blog/differentiable-neural-computers/>
   - <https://youtube.com/watch?v=steioHoiEms> (Graves)
+  - <https://facebook.com/iclr.cc/videos/1713144705381255/> (Graves, 9:09)
   - <https://youtube.com/watch?v=PQrlOjj8gAc> (Wayne)
   - <https://youtu.be/otRoAQtc5Dk?t=59m56s> (Polykovskiy)
+  - <https://youtube.com/watch?v=r5XKzjTFCZQ> (Raval)
   - <https://github.com/deepmind/dnc>
   - <https://github.com/yos1up/DNC>
   - <https://github.com/Mostafa-Samir/DNC-tensorflow>
@@ -3318,6 +3323,7 @@ x."
   - <http://youtube.com/watch?v=ZVHR8OAHDlI> (Boyd-Graber, Iyyer)
   - <http://youtube.com/watch?v=ZRYObdTOaEI> (Iyyer)
   - <http://youtube.com/watch?v=YArUk9QcMe0> (Boyd-Graber)
+  - <http://youtube.com/watch?v=eJd9_ahWD4Q> (Iyyer)
   - <http://youtu.be/tdLmf8t4oqM?t=27m25s> (Socher)
   - <http://youtu.be/BVbQRrrsJo0?t=34m30s> (Socher)
   - <http://videolectures.net/deeplearning2015_socher_nlp_applications/> (Socher, 09:00)

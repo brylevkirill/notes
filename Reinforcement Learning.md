@@ -237,6 +237,7 @@
 
   ["MDP Cheatsheet Reference"](http://rll.berkeley.edu/deeprlcourse/docs/mdp-cheatsheet.pdf) by John Schulman  
 
+  [course notes](https://web.stanford.edu/class/msande338/lecture_notes.html) by Ben Van Roy  
   [course notes](http://dustintran.com/notes/cs282r.pdf) by Dustin Tran  
   [course slides](http://incompleteideas.net/sutton/609%20dropbox/slides%20(pdf%20and%20keynote)) by Rich Sutton  
 
@@ -363,7 +364,7 @@
 
 ----
 
-  **forms of supervision**:  
+  **forms of supervision**  ([overview](https://youtube.com/watch?v=hKeSPnvNNJ8) by Sergey Levine):  
   - scalar rewards  
   - demonstrated behavior (imitation, inferring intention)  
   - self-supervision, prediction (model-based control)  
@@ -512,6 +513,8 @@
   - *maximizing competence progress*  
 	interestingness of a challenge as the competence progress that is experienced as an agent repeatedly tries to achieve it  
 
+	["Reinforcement Learning with Unsupervised Auxiliary Tasks"](http://arxiv.org/abs/1611.05397) by Jaderberg et al.  (by using auxiliary tasks of pixel control, reward prediction and value function replay the agent is forced to learn about the controllability of its environment and the sorts of sequences which lead to rewards)
+
 
 **morphological models**:
 >	"The three previous computational approaches to motivation were based on measures comparing information characterizing a stimulus perceived in the present and information characterizing stimuli perceived in the past and represented in memory. A fourth approach that can be taken is based on the comparison of information characterizing several pieces of stimuli perceived at the same time in several parts of the perceptive field. Pragmatically, this approach consists in attributing interest depending on morphological mathematical properties of the current flow of sensorimotor values, irrespective of what the internal cognitive system might predict or master."
@@ -591,15 +594,21 @@
   Gittins indices exploit the weak dependence between actions to compute the optimal action in time that is linear in the number of arms. Gittins indices, however, are guaranteed to be optimal only for the basic multi-armed bandit problem, require a discounted infinite-horizon objective, and provably cannot be extended to most interesting and practical problems which involve correlations between arms or an additional context."
 
 
+  ["Multi Armed Bandits and Exploration Strategies"](http://sudeepraja.github.io/Bandits/)
+
+
 
 ---
 ### contextual bandits
 
-  history of contextual bandits by John Langford ([video](https://youtu.be/7ic_d5TeIUk?t=6m41s))
+  [history of contextual bandits](https://youtu.be/7ic_d5TeIUk?t=6m41s) by John Langford
 
-  overview by Robert Schapire ([video](http://youtube.com/watch?v=N5x48g2sp8M))
+  [overview](http://youtube.com/watch?v=N5x48g2sp8M) by Robert Schapire
 
-  overview by Emma Brunskill ([video](http://youtube.com/watch?v=fIKkhoI1kF4&t=19m22s), [video](http://youtube.com/watch?v=8hK0NnG_DhY&t=11m25s))
+  [overview](http://youtube.com/watch?v=fIKkhoI1kF4&t=19m22s) by Emma Brunskill
+
+
+  ["Counterfactual Reasoning and Learning from Logged Data"](http://timvieira.github.io/blog/post/2016/12/19/counterfactual-reasoning-and-learning-from-logged-data/) by Tim Vieira
 
 ----
 
@@ -666,7 +675,7 @@
 
   ["Bayesian Multi-armed Bandits vs A/B Tests"](https://habrahabr.ru/company/ods/blog/325416/) (in russian)
 
-  [implementation](https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-1-5-contextual-bandits-bff01d1aad9c)
+  [example implementation](https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-1-5-contextual-bandits-bff01d1aad9c)
 
 
 
@@ -1404,6 +1413,11 @@ interesting papers (see below):
 >	"Second, although we have focused on dual learning on two tasks, our technology is not restricted to two tasks only. Actually, our key idea is to form a closed loop so that we can extract feedback signals by comparing the original input data with the final output data. Therefore, if more than two associated tasks can form a closed loop, we can apply our technology to improve the model in each task from unlabeled data. For example, for an English sentence x, we can first translate it to a Chinese sentence y, then translate y to a French sentence z, and finally translate z back to an English sentence x 0 . The similarity between x and x 0 can indicate the effectiveness of the three translation models in the loop, and we can once again apply the policy gradient methods to update and improve these models based on the feedback signals during the loop. We would like to name this generalized dual learning as close-loop learning, and will test its effectiveness in the future."
 
 >	"We plan to explore the following directions in the future. First, in the experiments we used bilingual data to warm start the training of dual-NMT. A more exciting direction is to learn from scratch, i.e., to learn translations directly from monolingual data of two languages (maybe plus lexical dictionary). Second, our dual-NMT was based on NMT systems in this work. Our basic idea can also be applied to phrase-based SMT systems and we will look into this direction. Third, we only considered a pair of languages in this paper. We will extend our approach to jointly train multiple translation models for a tuple of 3+ languages using monolingual data."
+
+----
+>	"The authors finetune an FR -> EN NMT model using a RL-based dual game. 1. Pick a French sentence from a monolingual corpus and translate it to EN. 2. Use an EN language model to get a reward for the translation 3. Translate the translation back into FR using an EN -> FR system. 4. Get a reward based on the consistency between original and reconstructed sentence. Training this architecture using Policy Gradient authors can make efficient use of monolingual data and show that a system trained on only 10% of parallel data and finetuned with monolingual data achieves comparable BLUE scores as a system trained on the full set of parallel data."
+
+  - <https://github.com/dennybritz/deeplearning-papernotes/blob/master/notes/dual-learning-mt.md>
 
 
 
@@ -2303,6 +2317,14 @@ interesting papers (see below):
 
   - <https://github.com/openai/imitation>
   - <https://github.com/DanielTakeshi/rl_algorithms/tree/master/il>
+
+
+#### Li, Song, Ermon - ["Inferring The Latent Structure of Human Decision-Making from Raw Visual Inputs"](https://arxiv.org/abs/1703.08840)
+>	"The goal of imitation learning is to match example expert behavior, without access to a reinforcement signal. Expert demonstrations provided by humans, however, often show signifi- cant variability due to latent factors that are not explicitly modeled. We introduce an extension to the Generative Adversarial Imitation Learning method that can infer the latent structure of human decision-making in an unsupervised way. Our method can not only imitate complex behaviors, but also learn interpretable and meaningful representations. We demonstrate that the approach is applicable to high-dimensional environments including raw visual inputs. In the highway driving domain, we show that a model learned from demonstrations is able to both produce different styles of human-like driving behaviors and accurately anticipate human actions. Our method surpasses various baselines in terms of performance and functionality."
+
+>	"In imitation learning, example demonstrations are typically provided by human experts. These demonstrations can show significant variability. For example, they might be collected from multiple experts, each employing a different policy. External latent factors of variation that are not explicitly captured by the simulation environment can also significantly affect the observed behavior. For example, expert driving demonstrations might be collected from users with different skills and habits. The goal of this paper is to develop an imitation learning framework that is able to automatically discover and disentangle the latent factors of variation underlying human decision-making. Analogous to the goal of uncovering style, shape, and color in generative modeling of images (Chen et al., 2016), we aim to automatically learn concepts such as driver aggressiveness from human demonstrations."
+
+>	"We propose a new method for learning a latent variable generative model of trajectories in a dynamic environment that not only accurately reproduce expert behavior, but also learns a latent space that is semantically meaningful. Our approach is an extension of GAIL, where the objective is augmented with a mutual information term between the latent variables and the observed state-action pairs. We demonstrate an application in autonomous driving, where we learn to imitate complex driving behaviors while learning semantically meaningful structure, without any supervision beyond the expert trajectories. Remarkably, our method performs directly on raw visual inputs, using raw pixels as the only source of perceptual information."
 
 
 #### Hadfield-Menell, Dragan, Abbeel, Russell - ["Cooperative Inverse Reinforcement Learning"](http://arxiv.org/abs/1606.03137)

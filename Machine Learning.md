@@ -25,7 +25,7 @@
 ----
 #### applications
 
-  [recent breakthroughs](https://dropbox.com/s/cfjjubx8ocfx748/breakthroughs.md) (in russian)
+  [recent breakthroughs](https://github.com/brylevkirill/posts/blob/master/breakthroughs.md) (in russian)
 
   [artificial intelligence](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md)  
   [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
@@ -98,6 +98,7 @@
   [distributed machine learning](http://fastml.com/the-emperors-new-clothes-distributed-machine-learning/)  
   [deception of supervised learning](http://kdnuggets.com/2016/09/deception-of-supervised-learning.html)  
   [classification vs prediction](http://fharrell.com/2017/01/classification-vs-prediction.html)  
+  [causality in machine learning](http://unofficialgoogledatascience.com/2017/01/causality-in-machine-learning.html)  
   [machine learning and statistics](https://www.ics.uci.edu/~welling/publications/papers/WhyMLneedsStatistics.pdf)  
   [machine learning and engineering](http://machinedlearnings.com/2017_02_01_archive.html)  
 
@@ -151,6 +152,7 @@
   <http://offconvex.org>  
   <http://argmin.net>  
   <http://blogs.princeton.edu/imabandit>  
+  <http://timvieira.github.io/blog/>  
 
 
 #### news and discussions
@@ -471,7 +473,7 @@ Bias-variance tradeoff characterizes how robust algorithm is to errors in its mo
 
 ----
 
-  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi) workshop at NIPS 2016
+  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi) workshop at NIPS 2016 ([videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt))
 
 
   <http://cacm.acm.org/magazines/2015/11/193326-inductive-programming-meets-the-real-world/fulltext>  
