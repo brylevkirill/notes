@@ -117,6 +117,7 @@
 [personal assistants]
 
   Google Assistant
+	"Building Apps for the Google Assistant" - https://youtube.com/watch?v=Y26vvxCb3zE
 	https://backchannel.com/google-our-assistant-will-trigger-the-next-era-of-ai-3c72a4d7bc75
 	http://techcrunch.com/2016/05/18/google-unveils-google-assistant-a-big-upgrade-to-google-now/
 	http://nytimes.com/2016/09/29/technology/google-assistant.html
@@ -267,8 +268,10 @@ interesting papers (see below):
   - utterance understanding
   - intents and actions
 
+
 interesting papers (see https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt):
-  - semantic matching
+  - semantic composition
+  - semantic similarity
   - syntactic parsing
   - semantic parsing
   - text classification
@@ -281,7 +284,6 @@ interesting papers (see https://github.com/brylevkirill/notes/blob/master/Knowle
   - question answering over knowledge bases
   - question answering over texts
   - information extraction and integration
-  - multimodal knowledge representation
 
 interesting papers (see https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt)
 
@@ -374,6 +376,7 @@ Narasimhan, Kulkarni, Barzilay - "Language Understanding for Text-based Games us
 	"In this paper, we consider the task of learning control policies for text-based games. In these games, all interactions in the virtual world are through text and the underlying state is not observed. The resulting language barrier makes such environments challenging for automatic game players. We employ a deep reinforcement learning framework to jointly learn state representations and action policies using game rewards as feedback. This framework enables us to map text descriptions into vector representations that capture the semantics of the game states. We evaluate our approach on two game worlds, comparing against baselines using bag-of-words and bag-of-bigrams for state representations. Our algorithm outperforms the baselines on both worlds demonstrating the importance of learning expressive representations."
 	"In contrast to the above work, our model combines text interpretation and strategy learning in a single framework. As a result, textual analysis is guided by the received control feedback, and the learned strategy directly builds on the text interpretation."
 	"We address the task of end-to-end learning of control policies for text-based games. In these games, all interactions in the virtual world are through text and the underlying state is not observed. The resulting language variability makes such environments challenging for automatic game players. We employ a deep reinforcement learning framework to jointly learn state representations and action policies using game rewards as feedback. This framework enables us to map text descriptions into vector representations that capture the semantics of the game states. Our experiments demonstrate the importance of learning good representations of text in order to play these games well. Future directions include tackling high-level planning and strategy learning to improve the performance of intelligent agents."
+	-- https://youtube.com/watch?v=k5KWUpqMO2U (Narasimhan)
 
 Cuayahuitl, Keizer, Lemon - "Strategic Dialogue Management via Deep Reinforcement Learning" [http://arxiv.org/abs/1511.08099]
 	"Artificially intelligent agents equipped with strategic skills that can negotiate during their interactions with other natural or artificial agents are still underdeveloped. This paper describes a successful application of Deep Reinforcement Learning for training intelligent agents with strategic conversational skills, in a situated dialogue setting. Previous studies have modelled the behaviour of strategic agents using supervised learning and traditional reinforcement learning techniques, the latter using tabular representations or learning with linear function approximation. In this study, we apply DRL with a high-dimensional state space to the strategic board game of Settlers of Catan - where players can offer resources in exchange for others and they can also reply to offers made by other players. Our experimental results report that the DRL-based learnt policies significantly outperformed several baselines including random, rule-based, and supervised-based behaviours. The DRL-based policy has a 53% win rate versus 3 automated players (‘bots’), whereas a supervised player trained on a dialogue corpus in this setting achieved only 27%, versus the same 3 bots. This result supports the claim that DRL is a promising framework for training dialogue systems, and strategic agents with negotiation abilities."

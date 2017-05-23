@@ -56,6 +56,7 @@ interesting papers:
 >	"Popular models can fit structureless noise."  
   - <https://facebook.com/iclr.cc/videos/1710657292296663/> (Recht, 18:25)  
   - <https://facebook.com/iclr.cc/videos/1710657292296663/> (Zhang, 53:40)  
+  - <https://blog.acolyer.org/2017/05/11/understanding-deep-learning-requires-re-thinking-generalization/>  
 
 [Capacity and Trainability in Recurrent Neural Networks](http://arxiv.org/abs/1611.09913) (Google Brain)  
 >	"RNNs can store an amount of task information which is linear in the number of parameters, and is approximately 5 bits per parameter.  
@@ -175,10 +176,11 @@ interesting papers:
   - <https://youtu.be/tPWGGwmgwG0?t=10m50s> (DeepMind)  
   - <https://youtu.be/x1kf4Zojtb0?t=1h4m53s> (DeepMind)  
   - <https://blog.acolyer.org/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>  
-  - <https://hackernoon.com/learning-to-learn-by-gradient-descent-by-gradient-descent-4da2273d64f2>
+  - <https://hackernoon.com/learning-to-learn-by-gradient-descent-by-gradient-descent-4da2273d64f2>  
   - <https://github.com/deepmind/learning-to-learn>  
 
-[Learning to Learn without Gradient Descent by Gradient Descent](https://arxiv.org/abs/1611.03824) (DeepMind)
+[Learning to Learn without Gradient Descent by Gradient Descent](https://arxiv.org/abs/1611.03824) (DeepMind)  
+>	"Differentiable neural computers as alternatives to parallel Bayesian optimization for  hyperparameter tuning of other networks."  
 
 [Learned Optimizers that Scale and Generalize](http://arxiv.org/abs/1703.04813) (DeepMind)  
 
@@ -214,6 +216,7 @@ interesting papers:
 [Neural Architecture Search with Reinforcement Learning](http://arxiv.org/abs/1611.01578) (Google Brain)  
   - <https://youtube.com/watch?v=XDtFXBYpl1w> (Le)  
   - <https://facebook.com/iclr.cc/videos/1713144705381255/> (Zoph, 1:08:31)  
+  - <https://blog.acolyer.org/2017/05/10/neural-architecture-search-with-reinforcement-learning/>  
 
 [Designing Neural Network Architectures using Reinforcement Learning](http://arxiv.org/abs/1611.02167)  
   - <https://bowenbaker.github.io/metaqnn/>  
@@ -372,6 +375,7 @@ interesting papers:
 >	"Shows how to optimize many different objectives using adversarial training."  
   - <https://youtube.com/watch?v=I1M_jGWp5n0>  
   - <https://youtube.com/watch?v=kQ1eEXgGsCU> (Nowozin)  
+  - <https://youtube.com/watch?v=y7pUN2t5LrA> (Nowozin)  
   - <https://github.com/wiseodd/generative-models/tree/master/GAN/f_gan>  
 
 [Improved Generator Objectives for GANs](http://arxiv.org/abs/1612.02780) (Google Brain)  
@@ -517,6 +521,7 @@ interesting papers:
 [Variational Lossy Autoencoder](http://arxiv.org/abs/1611.02731) (OpenAI)  
 
 [Adversarial Variational Bayes: Unifying Variational Autoencoders and Generative Adversarial Networks](http://arxiv.org/abs/1701.04722)  
+  - <https://youtu.be/y7pUN2t5LrA?t=14m19s> (Nowozin)  
   - <https://github.com/wiseodd/generative-models/tree/master/VAE/adversarial_vb>  
   - <https://gist.github.com/poolio/b71eb943d6537d01f46e7b20e9225149>  
   - <http://inference.vc/variational-inference-with-implicit-models-part-ii-amortised-inference-2/>  
@@ -598,7 +603,7 @@ interesting papers:
   - <http://videolectures.net/iclr2016_tran_variational_gaussian/> (Tran)  
   - <http://github.com/blei-lab/edward>  
 
-[Stick-Breaking Variational Autoencoders  ](http://arxiv.org/abs/1605.06197)# latent representation with stochastic dimensionality  
+[Stick-Breaking Variational Autoencoders](http://arxiv.org/abs/1605.06197)  # latent representation with stochastic dimensionality  
 
 ----
 [A Hybrid Convolutional Variational Autoencoder for Text Generation](http://arxiv.org/pdf/1702.02390)  
@@ -609,6 +614,7 @@ interesting papers:
 [Controllable Text Generation](http://arxiv.org/abs/1703.00955) (Salakhutdinov)  
 
 [Grammar Variational Autoencoder](http://arxiv.org/abs/1703.01925)  
+  - <https://youtube.com/watch?v=ar4Fm1V65Fw> (Paige)  
 
 
 
@@ -713,6 +719,7 @@ interesting papers:
 
 [DISCO Nets: DISsimilarity COefficient Networks](http://arxiv.org/abs/1606.02556)  
   - <https://youtube.com/watch?v=OogNSKRkoes>   
+  - <https://youtube.com/watch?v=LUex45H4YXI> (Bouchacourt)  
 
 ----
 [Deep Probabilistic Programming](http://arxiv.org/abs/1701.03757) (Edward)  
@@ -732,6 +739,8 @@ interesting papers:
 
 [Machine Comprehension by Text-to-Text Neural Question Generation](https://arxiv.org/abs/1705.02012) (Maluuba)  
   - <https://youtube.com/watch?v=UIzcIC5RQN8>  
+
+[Question Answering on Knowledge Bases and Text using Universal Schema and Memory Networks](https://arxiv.org/abs/1704.08384) (McCallum)  
 
 [Key-Value Memory Networks for Directly Reading Documents](http://arxiv.org/abs/1606.03126) (Weston)  
   - <http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.03126>  
@@ -760,9 +769,7 @@ interesting papers:
 
 [Learning to Reason: End-to-End Module Networks for Visual Question Answering](https://arxiv.org/abs/1704.05526) (Darrell)  
 
-[Modeling Relationships in Referential Expressions with Compositional Modular Networks](http://arxiv.org/abs/1611.09978) (Darrell)  
-
-[The More You Know: Using Knowledge Graphs for Image Classification](http://arxiv.org/abs/1612.04844) (Salakhutdinov)  # evolution of Gated Graph Sequence Neural Networks  
+[Inferring and Executing Programs for Visual Reasoning](https://arxiv.org/abs/1705.03633) (Stanford, Facebook)
 
 ----
 [Neural Enquirer: Learning to Query Tables with Natural Language](http://arxiv.org/abs/1512.00965)  
@@ -773,6 +780,8 @@ interesting papers:
 
 [Neural Symbolic Machines: Learning Semantic Parsers on Freebase with Weak Supervision](http://arxiv.org/abs/1611.00020) (Google Brain)
 >	"We propose the Manager-Programmer-Computer framework, which integrates neural networks with non-differentiable memory to support abstract, scalable and precise operations through a friendly neural computer interface. Specifically, we introduce a Neural Symbolic Machine, which contains a sequence-to-sequence neural "programmer", and a non-differentiable "computer" that is a Lisp interpreter with code assist."  
+
+[The More You Know: Using Knowledge Graphs for Image Classification](http://arxiv.org/abs/1612.04844) (Salakhutdinov)  # evolution of Gated Graph Sequence Neural Networks  
 
 ----
 [Learning Knowledge Base Inference with Neural Theorem Provers](http://akbc.ws/2016/papers/14_Paper.pdf) (Rocktaschel)  
@@ -808,6 +817,7 @@ interesting papers:
 [TerpreT: A Probabilistic Programming Language for Program Induction](http://arxiv.org/abs/1608.04428) (Microsoft)  
 >	"These works raise questions of (a) whether new models can be designed specifically to synthesize interpretable source code that may contain looping and branching structures, and (b) whether searching over program space using techniques developed for training deep neural networks is a useful alternative to the combinatorial search methods used in traditional IPS. In this work, we make several contributions in both of these directions."  
 >	"Shows that differentiable interpreter-based program induction is inferior to discrete search-based techniques used by the programming languages community. We are then left with the question of how to make progress on program induction using machine learning techniques."  
+  - <https://youtu.be/vzDuVhFMB9Q?t=2m40s> (Gaunt)  
 
 ----
 [Making Neural Programming Architectures Generalize via Recursion](https://arxiv.org/abs/1704.06611)  # Neural Programmer-Interpreter with recursion  
@@ -866,28 +876,6 @@ interesting papers:
   - <https://github.com/awjuliani/Meta-RL>  
 
 ----
-[Reinforcement Learning with Unsupervised Auxiliary Tasks](http://arxiv.org/abs/1611.05397)  # UNREAL  
->	"Auxiliary tasks:  
->	- pixel changes: learn a policy for maximally changing the pixels in a grid of cells overlaid over the images  
->	- network features: learn a policy for maximally activating units in a specific hidden layer  
->	- reward prediction: predict the next reward given some historical context  
->	- value function replay: value function regression for the base agent with varying window for n-step returns"  
->	"By using these tasks we force the agent to learn about the controllability of its environment and the sorts of sequences which lead to rewards, and all of this shapes the features of the agent."
->	"This approach exploits the multithreading capabilities of standard CPUs. The idea is to execute many instances of our agent in parallel, but using a shared model. This provides a viable alternative to experience replay, since parallelisation also diversifies and decorrelates the data. Our asynchronous actor-critic algorithm, A3C, combines a deep Q-network with a deep policy network for selecting actions. It achieves state-of-the-art results, using a fraction of the training time of DQN and a fraction of the resource consumption of Gorila."  
-  - <https://youtube.com/watch?v=Uz-zGYrYEjA> (demo)  
-  - <https://youtube.com/watch?v=VVLYTqZJrXY> (Jaderberg)  
-  - <https://facebook.com/iclr.cc/videos/1712224178806641/> (Jaderberg, 1:15:45)  
-  - <https://github.com/dennybritz/deeplearning-papernotes/blob/b097e313dc59c956575fb1bf23b64fa8d1d84057/notes/rl-auxiliary-tasks.md>  
-  - <https://github.com/miyosuda/unreal>  
-
-[Loss is Its Own Reward: Self-Supervision for Reinforcement Learning](http://arxiv.org/abs/1612.07307) (Darrell)  
-
-[Dual Learning for Machine Translation](http://arxiv.org/abs/1611.00179)  
->	"In the dual-learning mechanism, we use one agent to represent the model for the primal task and the other agent to represent the model for the dual task, then ask them to teach each other through a reinforcement learning process. Based on the feedback signals generated during this process (e.g., the language model likelihood of the output of a model, and the reconstruction error of the original sentence after the primal and dual translations), we can iteratively update the two models until convergence (e.g., using the policy gradient methods)."  
->	"The basic idea of dual learning is generally applicable: as long as two tasks are in dual form, we can apply the dual-learning mechanism to simultaneously learn both tasks from unlabeled data using reinforcement learning algorithms. Actually, many AI tasks are naturally in dual form, for example, speech recognition versus text to speech, image caption versus image generation, question answering versus question generation (e.g., Jeopardy!), search (matching queries to documents) versus keyword extraction (extracting keywords/queries for documents), so on and so forth."  
-  - <https://github.com/dennybritz/deeplearning-papernotes/blob/master/notes/dual-learning-mt.md>  
-
-----
 [Q-Prop: Sample-Efficient Policy Gradient with An Off-Policy Critic](http://arxiv.org/abs/1611.02247) (Lillicrap, Levine)  
 >	"We present Q-Prop, a policy gradient method that uses a Taylor expansion of the off-policy critic as a control variate. Q-Prop is both sample efficient and stable, and effectively combines the benefits of on-policy and off-policy methods."  
 	"- unbiased gradient  
@@ -918,6 +906,8 @@ interesting papers:
   - <https://github.com/ethancaballero/paper-notes/blob/master/Bridging%20the%20Gap%20Between%20Value%20and%20Policy%20Based%20Reinforcement%20Learning.md>  
   - <https://github.com/rarilurelo/pcl_keras>  
   - <https://github.com/pfnet/chainerrl/blob/master/chainerrl/agents/pcl.py>  
+
+[Equivalence Between Policy Gradients and Soft Q-Learning](https://arxiv.org/abs/1704.06440) (OpenAI)  
 
 ----
 [Asynchronous Methods for Deep Reinforcement Learning](http://arxiv.org/abs/1602.01783)  
@@ -976,10 +966,18 @@ interesting papers:
 [Multi-step Reinforcement Learning: A Unifying Algorithm](http://arxiv.org/abs/1703.01327) (Sutton)  
 
 ----
+[Discrete Sequential Prediction of Continuous Actions for Deep RL](https://arxiv.org/abs/1705.05035) (Google Brain)  
+
+[Reinforcement Learning in Large Discrete Action Spaces](http://arxiv.org/abs/1512.07679)  
+
 [Deep Reinforcement Learning In Parameterized Action Space](http://arxiv.org/abs/1511.04143)  
   - <https://github.com/mhauskn/dqn-hfo>  
 
-[Reinforcement Learning in Large Discrete Action Spaces](http://arxiv.org/abs/1512.07679)  
+----
+[Dual Learning for Machine Translation](http://arxiv.org/abs/1611.00179)  
+>	"In the dual-learning mechanism, we use one agent to represent the model for the primal task and the other agent to represent the model for the dual task, then ask them to teach each other through a reinforcement learning process. Based on the feedback signals generated during this process (e.g., the language model likelihood of the output of a model, and the reconstruction error of the original sentence after the primal and dual translations), we can iteratively update the two models until convergence (e.g., using the policy gradient methods)."  
+>	"The basic idea of dual learning is generally applicable: as long as two tasks are in dual form, we can apply the dual-learning mechanism to simultaneously learn both tasks from unlabeled data using reinforcement learning algorithms. Actually, many AI tasks are naturally in dual form, for example, speech recognition versus text to speech, image caption versus image generation, question answering versus question generation (e.g., Jeopardy!), search (matching queries to documents) versus keyword extraction (extracting keywords/queries for documents), so on and so forth."  
+  - <https://github.com/dennybritz/deeplearning-papernotes/blob/master/notes/dual-learning-mt.md>  
 
 
 
@@ -1042,12 +1040,37 @@ interesting papers:
   - <https://youtube.com/playlist?list=PLEbdzN4PXRGVB8NsPffxsBSOCcWFBMQx3> (demo)  
   - <https://github.com/florensacc/snn4hrl>  
 
+----
+[Curiosity-driven Exploration by Self-supervised Prediction](https://arxiv.org/abs/1705.05363) (Darrell)  
+>	"Our main contribution is in designing an intrinsic reward signal based on prediction error of the agent’s knowledge about its environment that scales to high-dimensional continuous state spaces like images, bypasses the hard problem of predicting pixels and is unaffected by the unpredictable aspects of the environment that do not affect the agent."
+  - <https://youtube.com/watch?v=J3FHOyhUn3A> (demo)  
+  - <https://github.com/pathak22/noreward-rl>  
+
+[Loss is Its Own Reward: Self-Supervision for Reinforcement Learning](http://arxiv.org/abs/1612.07307) (Darrell)  
+
+[Reinforcement Learning with Unsupervised Auxiliary Tasks](http://arxiv.org/abs/1611.05397)  # UNREAL  
+>	"Auxiliary tasks:  
+>	- pixel changes: learn a policy for maximally changing the pixels in a grid of cells overlaid over the images  
+>	- network features: learn a policy for maximally activating units in a specific hidden layer  
+>	- reward prediction: predict the next reward given some historical context  
+>	- value function replay: value function regression for the base agent with varying window for n-step returns"  
+>	"By using these tasks we force the agent to learn about the controllability of its environment and the sorts of sequences which lead to rewards, and all of this shapes the features of the agent."
+>	"This approach exploits the multithreading capabilities of standard CPUs. The idea is to execute many instances of our agent in parallel, but using a shared model. This provides a viable alternative to experience replay, since parallelisation also diversifies and decorrelates the data. Our asynchronous actor-critic algorithm, A3C, combines a deep Q-network with a deep policy network for selecting actions. It achieves state-of-the-art results, using a fraction of the training time of DQN and a fraction of the resource consumption of Gorila."  
+  - <https://youtube.com/watch?v=Uz-zGYrYEjA> (demo)  
+  - <https://youtube.com/watch?v=VVLYTqZJrXY> (Jaderberg)  
+  - <https://facebook.com/iclr.cc/videos/1712224178806641/> (Jaderberg, 1:15:45)  
+  - <https://github.com/dennybritz/deeplearning-papernotes/blob/b097e313dc59c956575fb1bf23b64fa8d1d84057/notes/rl-auxiliary-tasks.md>  
+  - <https://github.com/miyosuda/unreal>  
+
+----
 [Towards Information-Seeking Agents](http://arxiv.org/abs/1612.02605) (Maluuba)  
   - <https://youtube.com/watch?v=3bSquT1zqj8> (demo)  
 
 [Intrinsic Motivation and Automatic Curricula via Asymmetric Self-Play](http://arxiv.org/abs/1703.05407) (Facebook)  
   - <https://youtube.com/watch?v=EHHiFwStqaA> (demo)  
   - <https://youtube.com/watch?v=X1O21ziUqUY> (Fergus)  
+
+[Automatic Goal Generation for Reinforcement Learning Agents](https://arxiv.org/abs/1705.06366) (Abbeel)
 
 
 
@@ -1108,7 +1131,7 @@ interesting papers:
 >	"latent action prior, another variational autoencoder that models a prior over action segments, and showed how it can be used to perform control using actions from the same distribution as a dynamics model’s training data"  
 
 ----
-[Metacontrol for Adaptive Imagination-Based Optimization](https://openreview.net/forum?id=Bk8BvDqex) (DeepMind)  
+[Metacontrol for Adaptive Imagination-Based Optimization](https://arxiv.org/abs/1705.02670) (DeepMind)  
 >	"Rather than learning a single, fixed policy for solving all instances of a task, we introduce a metacontroller which learns to optimize a sequence of "imagined" internal simulations over predictive models of the world in order to construct a more informed, and more economical, solution. The metacontroller component is a model-free reinforcement learning agent, which decides both how many iterations of the optimization procedure to run, as well as which model to consult on each iteration. The models (which we call "experts") can be state transition models, action-value functions, or any other mechanism that provides information useful for solving the task, and can be learned on-policy or off-policy in parallel with the metacontroller."  
 
 [The Predictron: End-to-End Learning and Planning](https://arxiv.org/abs/1612.08810) (Silver)  
@@ -1204,7 +1227,10 @@ interesting papers:
 ---
 ### reinforcement learning - imitation
 
-[Deeply AggreVaTeD: Differentiable Imitation Learning for Sequential Prediction](https://arxiv.org/abs/1703.01030)
+[Learning from Demonstrations for Real World Reinforcement Learning](https://arxiv.org/abs/1704.03732)  
+
+----
+[Deeply AggreVaTeD: Differentiable Imitation Learning for Sequential Prediction](https://arxiv.org/abs/1703.01030)  
 
 ----
 [Generative Adversarial Imitation Learning](http://arxiv.org/abs/1606.03476)  
@@ -1247,6 +1273,7 @@ interesting papers:
 
 [DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker](http://arxiv.org/abs/1701.01724) (Bowling)  
   - <http://science.sciencemag.org/content/early/2017/03/01/science.aam6960>  
+  - <https://youtube.com/watch?v=qndXrHcV1sM> (Bowling)  
   - <http://deepstack.ai>  
   - <http://twitter.com/DeepStackAI>  
 
@@ -1255,6 +1282,7 @@ interesting papers:
 [Learning Runtime Parameters in Computer Systems with Delayed Experience Injection](http://arxiv.org/abs/1610.09903)  
 
 [Improving Information Extraction by Acquiring External Evidence with Reinforcement Learning](http://arxiv.org/abs/1603.07954) (Barzilay)  
+  - <https://youtu.be/k5KWUpqMO2U?t=47m37s> (Narasimhan)  
   - <https://github.com/karthikncode/DeepRL-InformationExtraction>  
 
 [Self-critical Sequence Training for Image Captioning](http://arxiv.org/abs/1612.00563)  # REINFORCE with reward normalization but without baseline estimation  
@@ -1413,25 +1441,19 @@ interesting papers:
 ---
 ### natural language processing
 
-[Exploring the Limits of Language Modeling](http://arxiv.org/abs/1602.02410) (Vinyals)  # perplexity increase from 50 to 30  
-  - <http://deliprao.com/archives/201>  
-  - <https://github.com/tensorflow/models/tree/master/lm_1b>  
-
 [Improving Neural Language Models with a Continuous Cache](http://arxiv.org/abs/1612.04426) (Facebook)  # adaptive softmax  
 
 [Pointer Sentinel Mixture Models](http://arxiv.org/abs/1609.07843) (MetaMind)  
->	"The authors combine a standard LSTM softmax with Pointer Networks in a mixture model called Pointer-Sentinel LSTM (PS-LSTM). The pointer networks helps with rare words and long-term dependencies but is unable to refer to words that are not in the input. The oppoosite is the case for the standard softmax."
+>	"The authors combine a standard LSTM softmax with Pointer Networks in a mixture model called Pointer-Sentinel LSTM (PS-LSTM). The pointer networks helps with rare words and long-term dependencies but is unable to refer to words that are not in the input. The opposite is the case for the standard softmax."
+
+[Pointing the Unknown Words](http://arxiv.org/abs/1603.08148) (Bengio)  
+
+[Machine Comprehension Using Match-LSTM And Answer Pointer](http://arxiv.org/abs/1608.07905)  
 
 ----
-[Towards Universal Paraphrastic Sentence Embeddings  ](http://arxiv.org/abs/1511.08198)# outperforming LSTM  
+[Towards Universal Paraphrastic Sentence Embeddings](http://arxiv.org/abs/1511.08198)  # outperforming LSTM  
   - <http://videolectures.net/iclr2016_wieting_universal_paraphrastic/> (Wieting)  
 
-----
-[Bag of Tricks for Efficient Text Classification](http://arxiv.org/abs/1607.01759) (Facebook)  # fastText  
-  - <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1607.01759#shagunsodhani>  
-  - <https://github.com/fchollet/keras/blob/master/examples/imdb_fasttext.py>  
-
-----
 [Order-Embeddings of Images and Language](http://arxiv.org/abs/1511.06361)  
   - <http://videolectures.net/iclr2016_vendrov_order_embeddings/> (Vendrov)  
   - <https://github.com/ivendrov/order-embedding>  
@@ -1439,14 +1461,17 @@ interesting papers:
   - <https://github.com/LeavesBreathe/tensorflow_with_latest_papers/blob/master/partial_ordering_embedding.py>  
 
 ----
+[Bag of Tricks for Efficient Text Classification](http://arxiv.org/abs/1607.01759) (Facebook)  # fastText  
+  - <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1607.01759#shagunsodhani>  
+  - <https://github.com/fchollet/keras/blob/master/examples/imdb_fasttext.py>  
+
+----
 [Semantic Parsing with Semi-Supervised Sequential Autoencoders](http://arxiv.org/abs/1609.09315) (DeepMind)  # discrete VAE  
 
 [Open-Vocabulary Semantic Parsing with both Distributional Statistics and Formal Knowledge](http://arxiv.org/abs/1607.03542) (Gardner)  
 
-----
-[Pointing the Unknown Words](http://arxiv.org/abs/1603.08148) (Bengio)  
-
-[Machine Comprehension Using Match-LSTM And Answer Pointer](http://arxiv.org/abs/1608.07905)  
+[Learning a Neural Semantic Parser from User Feedback](https://arxiv.org/abs/1704.08760)  
+>	"We learn a semantic parser for an academic domain from scratch by deploying an online system using our interactive learning algorithm. After three train-deploy cycles, the system correctly answered 63.51% of user’s questions. To our knowledge, this is the first effort to learn a semantic parser using a live system, and is enabled by our models that can directly parse language to SQL without manual intervention."
 
 ----
 [Neural Variational Inference for Text Processing](http://arxiv.org/abs/1511.06038) (Blunsom)  

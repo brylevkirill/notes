@@ -451,6 +451,9 @@
   ["Learning to Reinforcement Learn"](http://arxiv.org/abs/1611.05763) by Wang et al.  
   ["Nonparametric General Reinforcement Learning"](#leike---nonparametric-general-reinforcement-learning) by Leike  (estimating reward by sampling environment model from posterior distribution and running episode using it)
 
+  [General Reinforcement Learning Agent Zoo](http://aslanides.io/aixijs/) by John Aslanides
+	([demo](http://aslanides.io/aixijs/demo.html), [code](https://github.com/aslanides/aixijs))  
+
 ----
 
   ["How Can We Define Intrinsic Motivation"](http://pyoudeyer.com/epirob08OudeyerKaplan.pdf) by Oudeyer and Kaplan:  
@@ -491,6 +494,7 @@
 	interesting situations are those for which the prediction errors are highest  
 
 	["Incentivizing Exploration In Reinforcement Learning With Deep Predictive Models"](#stadie-levine-abbeel---incentivizing-exploration-in-reinforcement-learning-with-deep-predictive-models) by Stadie et al.  
+	["Curiosity-driven Exploration by Self-supervised Prediction"](https://arxiv.org/abs/1705.05363) by Pathak et al.  
 
   - *learning progress motivation*  
 	reward for prediction progress, i.e. decrease of prediction errors  
@@ -510,10 +514,13 @@
   - *maximizing incompetence motivation*  
 	reward measure that pushes an agent to set challenges/goals for which its performance is lowest  
 
+	[Automatic Goal Generation for Reinforcement Learning Agents](https://arxiv.org/abs/1705.06366) (Abbeel)
+
   - *maximizing competence progress*  
 	interestingness of a challenge as the competence progress that is experienced as an agent repeatedly tries to achieve it  
 
-	["Reinforcement Learning with Unsupervised Auxiliary Tasks"](http://arxiv.org/abs/1611.05397) by Jaderberg et al.  (by using auxiliary tasks of pixel control, reward prediction and value function replay the agent is forced to learn about the controllability of its environment and the sorts of sequences which lead to rewards)
+	["Reinforcement Learning with Unsupervised Auxiliary Tasks"](http://arxiv.org/abs/1611.05397) by Jaderberg et al.  (by using auxiliary tasks of pixel control, reward prediction and value function replay the agent is forced to learn about the controllability of its environment and the sorts of sequences which lead to rewards)  
+	["Loss is Its Own Reward: Self-Supervision for Reinforcement Learning"](http://arxiv.org/abs/1612.07307) by Shelhamer et al.  
 
 
 **morphological models**:

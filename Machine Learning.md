@@ -113,7 +113,8 @@
   [Trevor Hastie and Rob Tibshirani](http://dataschool.io/15-hours-of-expert-machine-learning-videos/)  
 
   [Konstantin Vorontsov](http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC) (in russian)  
-  [Igor Kuralenok](http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC) (in russian)  
+  [Igor Kuralenok](http://youtube.com/watch?v=TEyEWTYII64&list=PLlb7e2G7aSpSSsCeUMLN-RxYOLAI9l2ld)  
+  [Igor Kuralenok](http://youtube.com/playlist?list=PLlb7e2G7aSpTd91sd82VxWNdtTZ8QnFne) (in russian)  
   [Igor Kuralenok](http://lektorium.tv/course/22975) (in russian)  
   [Yandex](http://coursera.org/specializations/machine-learning-data-analysis/) (in russian)  
 
@@ -533,7 +534,8 @@ problems:
 
   [TPOT Data Science Assistant](http://rhiever.github.io/tpot/) project
 
-  ["The Automatic Statistician"](https://youtu.be/H7AMB0oo__4?t=53m20s) by Zoubin Ghahramani ([slides](http://webdav.tuebingen.mpg.de/mlss2013/2015/slides/ghahramani/mlss15future.pdf))
+  ["The Automatic Statistician"](https://youtu.be/H7AMB0oo__4?t=53m20s) by Zoubin Ghahramani ([slides](http://webdav.tuebingen.mpg.de/mlss2013/2015/slides/ghahramani/mlss15future.pdf))  
+  ["The Automatic Statiscian: A project update"](https://youtube.com/watch?v=WW2eunuApAU) by Zoubin Ghahramani  
 
   [DARPA's Data-Driven Discovery of Models (D3M)](http://www.darpa.mil/news-events/2016-06-17):  
 >	"The goal of D3M is to help overcome the data-science expertise gap by enabling non-experts to construct complex empirical models through automation of large parts of the model-creation process. If successful, researchers using D3M tools will effectively have access to an army of “virtual data scientists”."

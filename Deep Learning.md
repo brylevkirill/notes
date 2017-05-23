@@ -5,7 +5,8 @@
   * [research](#research)
   * [theory](#theory)
   * [bayesian deep learning](#bayesian-deep-learning)
-  * [unsupervised learning and generative models](#unsupervised-learning-and-generative-models)
+  * [unsupervised learning](#unsupervised-learning)
+  * [generative models](#generative-models)
     - [generative adversarial networks](#generative-models---generative-adversarial-networks)
     - [variational autoencoder](#generative-models---variational-autoencoder)
     - [autoregressive models](#generative-models---autoregressive-models)
@@ -425,7 +426,7 @@
 
 
 ---
-### unsupervised learning and generative models
+### unsupervised learning
 
   potential benefits of unsupervised learning:  
   - take advantage of huge quantitities of unlabeled data  
@@ -447,13 +448,19 @@
 
 ----
 
+  ["Representation Learning and the Information Bottleneck Approach"](http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/) by Ference Huszar  
+  ["Is Maximum Likelihood Useful for Representation Learning?"](http://inference.vc/maximum-likelihood-for-representation-learning-2/) by Ference Huszar  
+
+
+
+---
+### generative models
+
   ["Generative Models"](https://openai.com/blog/generative-models/) by OpenAI
 
   ["Building Machines that Imagine and Reason: Principles and Applications of Deep Generative Models"](http://videolectures.net/deeplearning2016_mohamed_generative_models/) by Shakir Mohamed
 
   ["Recent Progress in Generative Modeling"](http://scaledml.org/2016/slides/ilya.pdf) by Ilya Sutskever
-
-  ["Representation Learning and the Information Bottleneck Approach"](http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/) by Ference Huszar
 
   ["Differentiable Inference and Generative Models"](http://www.cs.toronto.edu/~duvenaud/courses/csc2541/index.html) course by David Duvenaud
 
@@ -902,8 +909,7 @@ examples:
   ["Beyond Seq2Seq with Augmented RNNs"](http://videolectures.net/deeplearning2016_grefenstette_augmented_rnn/) by Edward Grefenstette  
   ["New Directions for Recurrent Neural Networks"](https://facebook.com/iclr.cc/videos/1713144705381255/) by Alex Graves  
 
-  ["The Unreasonable Effectiveness of Recurrent Neural Networks"](https://karpathy.github.io/2015/05/21/rnn-effectivenes/) by Andrej Karpathy  
-
+  ["The Unreasonable Effectiveness of Recurrent Neural Networks"](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) by Andrej Karpathy  
   ["A Critical Review of Recurrent Neural Networks for Sequence Learning"](https://arxiv.org/abs/1506.00019) by Lipton et al.  
   ["Learning Over Long Time Lags"](http://arxiv.org/abs/1602.04335) by Hojjat Salehinejad  
 
@@ -911,11 +917,9 @@ examples:
 
 #### long short term memory
 
-  <https://colah.github.io/posts/2015-08-Understanding-LSTMs/> (Chris Olah)
-
-  <http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html>
-
-  <http://blog.aidangomez.ca/2016/04/17/Backpropogating-an-LSTM-A-Numerical-Example/>
+  ["Understanding LSTM Networks"](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) by Chris Olah  
+  ["Understanding, Deriving and Extending the LSTM"](http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html)  
+  ["Backpropogating an LSTM: A Numerical Example"](http://blog.aidangomez.ca/2016/04/17/Backpropogating-an-LSTM-A-Numerical-Example/)  
 
 ----
 
@@ -937,17 +941,16 @@ examples:
 
 #### convolutional neural network
 
-  <http://cs231n.github.io/convolutional-networks/> (Andrej Karpathy)  
-  <http://colah.github.io/posts/2014-07-Conv-Nets-Modular/> (Chris Olah)  
-  <http://colah.github.io/posts/2014-07-Understanding-Convolutions/> (Chris Olah)  
-
   <http://deeplearningbook.org/contents/convnets.html>
 
-  <https://youtube.com/watch?v=u6aEYuemt0M> (Andrej Karpathy)  
-  <https://youtube.com/watch?v=LxfUGhug-iQ> (Andrej Karpathy)  
-  <http://videolectures.net/deeplearning2016_fergus_neural_networks/> (Rob Fergus)  
-  <https://youtu.be/Xogn6veSyxA?t=40m30s> (Ian Goodfellow)  
-  <https://youtube.com/watch?v=6-yBs3XLM20> (Victor Lempitsky, in russian)  
+  [overview](https://youtube.com/watch?v=LxfUGhug-iQ) by Andrej Karpathy  
+  [overview](http://videolectures.net/deeplearning2016_fergus_neural_networks/) by Rob Fergus  
+  [overview](https://youtu.be/Xogn6veSyxA?t=40m30s) by Ian Goodfellow  
+  [overview](https://youtube.com/watch?v=6-yBs3XLM20) by Victor Lempitsky (in russian)  
+
+  [overview](http://cs231n.github.io/convolutional-networks/) by Andrej Karpathy  
+  ["Conv Nets: A Modular Perspective"](http://colah.github.io/posts/2014-07-Conv-Nets-Modular/) by Chris Olah  
+  ["Understanding Convolutions"](http://colah.github.io/posts/2014-07-Understanding-Convolutions/) by Chris Olah  
 
   [overview of architectures](https://medium.com/towards-data-science/neural-network-architectures-156e5bad51ba) by Eugenio Culurciello
 
@@ -964,13 +967,10 @@ examples:
 ---
 ### architectures - compute and memory
 
-  ["Attention and Augmented Recurrent Neural Networks"](http://distill.pub/2016/augmented-rnns/) by Chris Olah and Shan Carter
-
-  ["Deep Learning and Reasoning, Memory-Augmented Networks"](http://videolectures.net/deeplearning2016_chopra_attention_memory/) by Rob Fergus
-
-  ["Reasoning, Attention and Memory"](http://videolectures.net/deeplearning2016_chopra_attention_memory/) by Sumit Chopra
-
-  ["Beyond Seq2Seq with Augmented RNNs"](http://videolectures.net/deeplearning2016_grefenstette_augmented_rnn/) by Edward Grefenstette
+  ["Attention and Augmented Recurrent Neural Networks"](http://distill.pub/2016/augmented-rnns/) by Chris Olah and Shan Carter  
+  ["Deep Learning and Reasoning, Memory-Augmented Networks"](http://videolectures.net/deeplearning2016_chopra_attention_memory/) by Rob Fergus  
+  ["Reasoning, Attention and Memory"](http://videolectures.net/deeplearning2016_chopra_attention_memory/) by Sumit Chopra  
+  ["Beyond Seq2Seq with Augmented RNNs"](http://videolectures.net/deeplearning2016_grefenstette_augmented_rnn/) by Edward Grefenstette  
 
   ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi/) workshop at NIPS 2016 ([videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt))
 
@@ -2130,18 +2130,6 @@ interesting papers (see below):
   - <https://github.com/facebook/Stack-RNN>
 
 
-#### Dyer, Ballesteros, Ling, Matthews, Smith - ["Transition-Based Dependency Parsing with Stack Long Short-Term Memory"](http://arxiv.org/abs/1505.08075)
->	"We propose a technique for learning representations of parser states in transition-based dependency parsers. Our primary innovation is a new control structure for sequence-to-sequence neural networks - the stack LSTM. Like the conventional stack data structures used in transition-based parsing, elements can be pushed to or popped from the top of the stack in constant time, but, in addition, an LSTM maintains a continuous space embedding of the stack contents. This lets us formulate an efficient parsing model that captures three facets of a parser’s state: (i) unbounded look-ahead into the buffer of incoming words, (ii) the complete history of actions taken by the parser, and (iii) the complete contents of the stack of partially built tree fragments, including their internal structures. Standard backpropagation techniques are used for training and yield state-of-the-art parsing performance."
-
->	"We presented stack LSTMs, recurrent neural networks for sequences, with push and pop operations, and used them to implement a state-of-the-art transition-based dependency parser. We conclude by remarking that stack memory offers intriguing possibilities for learning to solve general information processing problems. Here, we learned from observable stack manipulation operations (i.e., supervision from a treebank), and the computed embeddings of final parser states were not used for any further prediction. However, this could be reversed, giving a device that learns to construct context-free programs (e.g., expression trees) given only observed outputs; one application would be unsupervised parsing. Such an extension of the work would make it an alternative to architectures that have an explicit external memory such as neural Turing machines and memory networks. However, as with those models, without supervision of the stack operations, formidable computational challenges must be solved (e.g., marginalizing over all latent stack operations), but sampling techniques and techniques from reinforcement learning have promise here, making this an intriguing avenue for future work."
-
->	"Transition-based dependency parsing formalizes the parsing problem as a series of decisions that read words sequentially from a buffer and combine them incrementally into syntactic structures. This formalization is attractive since the number of operations required to build any projective parse tree is linear in the length of the sentence, making transition-based parsing computationally efficient relative to graph- and grammar-based formalisms. The challenge in transition-based parsing is modeling which action should be taken in each of the unboundedly many states encountered as the parser progresses. This challenge has been addressed by development of alternative transition sets that simplify the modeling problem by making better attachment decisions, through feature engineering and more recently using neural networks. We extend this last line of work by learning representations of the parser state that are sensitive to the complete contents of the parser’s state: that is, the complete input buffer, the complete history of parser actions, and the complete contents of the stack of partially constructed syntactic structures. This “global” sensitivity to the state contrasts with previous work in transition-based dependency parsing that uses only a narrow view of the parsing state when constructing representations (e.g., just the next few incoming words, the head words of the top few positions in the stack, etc.). Although our parser integrates large amounts of information, the representation used for prediction at each time step is constructed incrementally, and therefore parsing and training time remain linear in the length of the input sentence. The technical innovation that lets us do this is a variation of recurrent neural networks with long short-term memory units which we call stack LSTMs, and which support both reading (pushing) and “forgetting” (popping) inputs. Our parsing model uses three stack LSTMs: one representing the input, one representing the stack of partial syntactic trees, and one representing the history of parse actions to encode parser states. Since the stack of partial syntactic trees may contain both individual tokens and partial syntactic structures, representations of individual tree fragments are computed compositionally with recursive neural networks. The parameters are learned with back-propagation, and we obtain state-of-the-art results on Chinese and English dependency parsing tasks."
-
-  - <http://youtube.com/watch?v=KNH5A_7-KVM> (Smith)
-  - <http://research.microsoft.com/apps/video/default.aspx?id=257602&r=1> + <http://research.microsoft.com/apps/video/default.aspx?id=262725&r=1> (Ballesteros)
-  - <http://techtalks.tv/talks/transition-based-dependency-parsing-with-stack-long-short-term-memory/61731/>
-
-
 #### Grefenstette, Hermann, Suleyman, Blunsom - ["Learning to Transduce with Unbounded Memory"](http://arxiv.org/abs/1506.02516)
 >	"Recently, strong results have been demonstrated by Deep Recurrent Neural Networks on natural language transduction problems. In this paper we explore the representational power of these models using synthetic grammars designed to exhibit phenomena similar to those found in real transduction problems such as machine translation. These experiments lead us to propose new memory-based recurrent networks that implement continuously differentiable analogues of traditional data structures such as Stacks, Queues, and DeQues. We show that these architectures exhibit superior generalisation performance to Deep RNNs and are often able to learn the underlying generating algorithms in our transduction experiments."
 
@@ -2917,6 +2905,7 @@ x."
 
 >	"This is means that the AVB is essentially in the AAE work. The only contribution is the relationship to the normal ELBO when the discriminator is optimal, but I'm not sure if that is not obvious."
 
+  - <https://youtu.be/y7pUN2t5LrA?t=14m19s> (Nowozin)
   - <https://github.com/wiseodd/generative-models/tree/master/VAE/adversarial_vb>
   - <https://gist.github.com/poolio/b71eb943d6537d01f46e7b20e9225149>
   - <http://inference.vc/variational-inference-with-implicit-models-part-ii-amortised-inference-2/>
