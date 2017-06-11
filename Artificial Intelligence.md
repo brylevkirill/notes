@@ -29,7 +29,7 @@
   [natural language processing](https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt)  
   [information retrieval](https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt)  
   [personal assistants](https://dropbox.com/s/0fyarlwcfb8mjdq/Personal%20Assistants.txt)  
-  [semantic web](https://dropbox.com/s/ono4n5yij0y1366/RDF.txt)  
+  [semantic web](https://github.com/brylevkirill/tech/blob/master/RDF/RDF.txt)  
 
 
 
@@ -145,6 +145,7 @@
 
   - Microsoft Malmo  
 	<https://microsoft.com/en-us/research/project/project-malmo/>  
+	<https://youtube.com/watch?v=KkVj_ddseO8>  
 	<https://youtube.com/watch?v=399qJUBRA0o> (Katja Hofmann)  
 
 ----
@@ -255,7 +256,7 @@
 
 >	"Most of our reasoning is by analogy; it's not logical reasoning. The early AI guys thought we had to use logic as a model and so they couldn't cope with reasoning by analogy. The honest ones, like Allen Newell, realized that reasoning by analogy was a huge problem for them, but they weren't willing to say that reasoning by analogy is the core kind of reasoning we do, and logic is just a sort of superficial thing on top of it that happens much later."
 
-  "Neural Programmer Interpreters" by Nando de Freitas - <http://youtu.be/tPWGGwmgwG0?t=5m40s> + <http://videolectures.net/kdd2016_de_freitas_recurrent_neural/> (00:52:10)
+  "Neural Programmer Interpreters" by Nando de Freitas - <https://youtu.be/SAcHyzMdbXc?t=5m13s> + <http://videolectures.net/kdd2016_de_freitas_recurrent_neural/#t=3130>
 >	"For me there are two types of generalisation, which I will refer to as Symbolic and Connectionist generalisation. If we teach a machine to sort sequences of numbers of up to length 10 or 100, we should expect them to sort sequences of length 1000 say. Obviously symbolic approaches have no problem with this form of generalisation, but neural nets do poorly. On the other hand, neural nets are very good at generalising from data (such as images), but symbolic approaches do poorly here. One of the holy grails is to build machines that are capable of both symbolic and connectionist generalisation. Neural Programmer Interpreters is a very early step toward this. NPI can do symbolic operations such as sorting and addition, but it can also plan by taking images as input and it's able to generalise the plans to different images (e.g. in the NPI car example, the cars are test set cars not seen before)."
 
 
@@ -379,7 +380,8 @@ following up conjectures suggested by analogies). Good mathematicians see analog
   [overview](http://scholarpedia.org/article/Metalearning) by Tom Schaul and Juergen Schmidhuber
 
 
-  ["Learning to Learn, to Program, to Explore and to Seek Knowledge"](https://youtube.com/watch?v=tPWGGwmgwG0) by Nando de Freitas
+  ["Learning to Learn, to Program, to Explore and to Seek Knowledge"](https://youtube.com/watch?v=SAcHyzMdbXc) by Nando de Freitas  
+  ["The Future of Machines that Learn Algorithms"](https://youtube.com/watch?v=zSNkbhgMkzQ) panel with Juergen Schmidhuber, Ilya Sutskever, Alex Graves  
 
 
   [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#meta-learning)
@@ -433,11 +435,11 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
 ----
 
-  overview by Juergen Schmidhuber  
+  overview by Juergen Schmidhuber:  
+	<https://vimeo.com/7441291#t=7m12s>  
+	<http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/>  
 	<https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber>  
 	<https://vimeo.com/28759091>  
-	<http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/>  
-	<https://vimeo.com/7441291>  
 
   ["Driven by compression progress: A simple principle explains essential aspects of subjective beauty, novelty, surprise, interestingness, attention, curiosity, creativity, art, science, music, jokes"](http://arxiv.org/abs/0812.4360) by Juergen Schmidhuber
 >	"I argue that data becomes temporarily interesting by itself to some self-improving, but computationally limited, subjective observer once he learns to predict or compress the data in a better way, thus making it subjectively simpler and more beautiful. Curiosity is the desire to create or discover more non-random, non-arbitrary, regular data that is novel and surprising not in the traditional sense of Boltzmann and Shannon but in the sense that it allows for compression progress because its regularity was not yet known. This drive maximizes interestingness, the first derivative of subjective beauty or compressibility, that is, the steepness of the learning curve. It motivates exploring infants, pure mathematicians, composers, artists, dancers, comedians, yourself, and artificial systems."
@@ -456,21 +458,20 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
   **approximations**
 
-  ["VIME: Variational Information Maximizing Exploration"](http://arxiv.org/abs/1605.09674) by Houthooft, Chen, Duan, Schulman, Turck, Abbeel  
+  ["VIME: Variational Information Maximizing Exploration"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#houthooft-chen-duan-schulman-turck-abbeel---vime-variational-information-maximizing-exploration) by Houthooft et al.  
 >	"Variational inference is used to approximate the posterior distribution of a Bayesian neural network that represents the environment dynamics. Using information gain in this learned dynamics model as intrinsic rewards allows the agent to optimize for both external reward and intrinsic surprise simultaneously."  
 >	"r'(st,at,st+1) = r(st,at) + μ * Dkl[p(θ|ξt,at,st+1)||p(θ|ξt)]"  
 
 >	"It is possible to derive an interesting relationship between compression improvement - an intrinsic reward objective defined in Schmidhuber's Artificial Curiosity and Creativity theory, and the information gain. The agent’s curiosity is equated with compression improvement, measured through C(ξt; φt-1) - C(ξt; φt), where C(ξ; φ) is the description length of ξ using φ as a model. Furthermore, it is known that the negative variational lower bound can be viewed as the description length. Hence, we can write compression improvement as L[q(θ; φt), ξt] - L[q(θ; φt-1), ξt]. In addition, due to alternative formulation of the variational lower bound, compression improvement can be written as (log p(ξt) - Dkl[q(θ; φt)||p(θ|ξt)]) - (log p(ξt) - Dkl[q(θ; φt-1)||p(θ|ξt)]). If we assume that φt perfectly optimizes the variational lower bound for the history ξt, then Dkl[q(θ; φt)||p(θ|ξt)] = 0, which occurs when the approximation equals the true posterior, i.e., q(θ; φt) = p(θ|ξt). Hence, compression improvement becomes Dkl[p(θ|ξt-1) || p(θ|ξt)]. Therefore, optimizing for compression improvement comes down to optimizing the KL divergence from the posterior given the past history ξt-1 to the posterior given the total history ξt. As such, we arrive at an alternative way to encode curiosity than information gain, namely Dkl[p(θ|ξt)||p(θ|ξt,at,st+1)], its reversed KL divergence. In experiments, we noticed no significant difference between the two KL divergence variants. This can be explained as both variants are locally equal when introducing small changes to the parameter distributions."  
 
-  - <https://youtu.be/WRFqzYWHsZA?t=18m38s> (Abbeel)  
-  - <https://youtube.com/watch?v=sRIjxxjVrnY> (Panin)  
-  - <http://pemami4911.github.io/paper-summaries/2016/09/04/VIME.html>  
+  [demo](https://goo.gl/fyxLvI)  
+  [overview](https://youtube.com/watch?v=nbbMSMv3v5k)  
 
 ----
 
   **applications**
 
-  ["Toward Intelligent Humanoids"](https://vimeo.com/51011081) by Schmidhuber's group
+  ["Toward Intelligent Humanoids"](https://vimeo.com/51011081) demo by Schmidhuber's group
 
   ["Curiosity Driven Reinforcement Learning Motion Planning on Humanoids"](http://goo.gl/FKNPth) by Frank, Schmidhuber and others  
   ["PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem"](https://arxiv.org/abs/1112.5309) by Schmidhuber  
@@ -494,7 +495,7 @@ following up conjectures suggested by analogies). Good mathematicians see analog
   [introduction to AIXI](http://youtube.com/watch?v=F2bQ5TSB-cE) by Marcus Hutter  
   [introduction to AIXI](http://jan.leike.name/AIXI.html) by Jan Leike  
   [General Reinforcement Learning Agent Zoo](http://aslanides.io/aixijs/) by John Aslanides
-	([demo](http://aslanides.io/aixijs/demo.html), [code](https://github.com/aslanides/aixijs))  
+	([demo](http://aslanides.io/aixijs/demo.html), [code](https://github.com/aslanides/aixijs), [paper](https://arxiv.org/abs/1705.07615))
 
   [interesting papers](#solomonoff-induction-and-aixi)
 
@@ -615,7 +616,7 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)  
 [bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)  
 [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
-[semantic web](https://dropbox.com/s/ono4n5yij0y1366/RDF.txt)  
+[semantic web](https://github.com/brylevkirill/tech/blob/master/RDF/RDF.txt)  
 
 
 [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md)
@@ -768,6 +769,8 @@ interesting papers (see below):
 ---
 ### interesting papers - Artificial Curiosity and Creativity
 
+[Artificial Curiosity and Creativity](#artificial-curiosity-and-creativity) theory by Juergen Schmidhuber
+
 [interesting papers](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---exploration-and-intrinsic-motivation) on exploration and intrinsic motivation
 
 
@@ -783,29 +786,13 @@ interesting papers (see below):
 >	"In the real world external rewards are rare. But unsupervised AGIs using additional intrinsic rewards as described in this paper will be motivated to learn many useful behaviors even in absence of external rewards, behaviors that lead to predictable or compressible results and thus reflect regularities in the environment, such as repeatable patterns in the world’s reactions to certain action sequences. Often a bias towards exploring previously unknown environmental regularities through artificial curiosity / creativity is a priori desirable because goal-directed learning may greatly profit from it, as behaviors leading to external reward may often be rather easy to compose from previously learnt curiosity-driven behaviors. It may be possible to formally quantify this bias towards novel patterns in form of a mixture-based prior, a weighted sum of probability distributions on sequences of actions and resulting inputs, and derive precise conditions for improved expected external reward intake. Intrinsic reward may be viewed as analogous to a regularizer in supervised learning, where the prior distribution on possible hypotheses greatly influences the most probable interpretation of the data in a Bayesian framework (for example, the well-known weight decay term of neural networks is a consequence of a Gaussian prior with zero mean for each weight). Following the introductory discussion, some of the AGIs based on the creativity principle will become scientists, artists, or comedians."
 
   - <http://idsia.ch/~juergen/creativity.html>
+  - <https://vimeo.com/7441291#t=7m12s> (Schmidhuber)  
+  - <http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/> (Schmidhuber)
   - <https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber> (Schmidhuber)
   - <https://vimeo.com/28759091> (Schmidhuber)
-  - <http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/> (Schmidhuber)
-  - <https://vimeo.com/7441291> (Schmidhuber)
 
 
-#### Houthooft, Chen, Duan, Schulman, Turck, Abbeel - ["VIME: Variational Information Maximizing Exploration"](http://arxiv.org/abs/1605.09674) # approximation of Artificial Curiosity and Creativity theory of Juergen Schmidhuber
->	"Scalable and effective exploration remains a key challenge in reinforcement learning. While there are methods with optimality guarantees in the setting of discrete state and action spaces, these methods cannot be applied in high-dimensional greedy exploration or adding Gaussian noise to the controls. This paper introduces Variational Information Maximizing Exploration (VIME), an exploration strategy based on maximization of information gain about the agent’s belief of environment dynamics. We propose a practical implementation, using variational inference in Bayesian neural networks which efficiently handles continuous state and action spaces. VIME modifies the MDP reward function, and can be applied with several different underlying RL algorithms. We demonstrate that VIME achieves significantly better performance compared to heuristic exploration methods across a variety of continuous control tasks and algorithms, including tasks with very sparse rewards."
-
->	"We have proposed Variational Information Maximizing Exploration, a curiosity-driven exploration strategy for continuous control tasks. Variational inference is used to approximate the posterior distribution of a Bayesian neural network that represents the environment dynamics. Using information gain in this learned dynamics model as intrinsic rewards allows the agent to optimize for both external reward and intrinsic surprise simultaneously. Empirical results show that VIME performs significantly better than heuristic exploration methods across various continuous control tasks and algorithms. As future work, we would like to investigate measuring surprise in the value function and using the learned dynamics model for planning."
-
->	"This paper proposes a curiosity-driven exploration strategy, making use of information gain about the agent’s internal belief of the dynamics model as a driving force. This principle can be traced back to the concepts of curiosity and surprise (Schmidhuber). Within this framework, agents are encouraged to take actions that result in states they deem surprising - i.e., states that cause large updates to the dynamics model distribution. We propose a practical implementation of measuring information gain using variational inference. Herein, the agent’s current understanding of the environment dynamics is represented by a Bayesian neural networks. We also show how this can be interpreted as measuring compression improvement, a proposed model of curiosity (Schmidhuber). In contrast to previous curiosity-based approaches, our model scales naturally to continuous state and action spaces. The presented approach is evaluated on a range of continuous control tasks, and multiple underlying RL algorithms. Experimental results show that VIME achieves significantly better performance than naïve exploration strategies."
-
->	"Variational inference is used to approximate the posterior distribution of a Bayesian neural network that represents the environment dynamics. Using information gain in this learned dynamics model as intrinsic rewards allows the agent to optimize for both external reward and intrinsic surprise simultaneously."  
->	"r'(st,at,st+1) = r(st,at) + μ * Dkl[p(θ|ξt,at,st+1)||p(θ|ξt)]"  
-
->	"It is possible to derive an interesting relationship between compression improvement - an intrinsic reward objective defined in Schmidhuber's Artificial Curiosity and Creativity theory, and the information gain. The agent’s curiosity is equated with compression improvement, measured through C(ξt; φt-1) - C(ξt; φt), where C(ξ; φ) is the description length of ξ using φ as a model. Furthermore, it is known that the negative variational lower bound can be viewed as the description length. Hence, we can write compression improvement as L[q(θ; φt), ξt] - L[q(θ; φt-1), ξt]. In addition, due to alternative formulation of the variational lower bound, compression improvement can be written as (log p(ξt) - Dkl[q(θ; φt)||p(θ|ξt)]) - (log p(ξt) - Dkl[q(θ; φt-1)||p(θ|ξt)]). If we assume that φt perfectly optimizes the variational lower bound for the history ξt, then Dkl[q(θ; φt)||p(θ|ξt)] = 0, which occurs when the approximation equals the true posterior, i.e., q(θ; φt) = p(θ|ξt). Hence, compression improvement becomes Dkl[p(θ|ξt-1) || p(θ|ξt)]. Therefore, optimizing for compression improvement comes down to optimizing the KL divergence from the posterior given the past history ξt-1 to the posterior given the total history ξt. As such, we arrive at an alternative way to encode curiosity than information gain, namely Dkl[p(θ|ξt)||p(θ|ξt,at,st+1)], its reversed KL divergence. In experiments, we noticed no significant difference between the two KL divergence variants. This can be explained as both variants are locally equal when introducing small changes to the parameter distributions. Investigation of how to combine both information gain and compression improvement is deferred to future work."
-
-  - <https://goo.gl/fyxLvI> (demo)
-  - <https://youtu.be/WRFqzYWHsZA?t=18m38s> (Abbeel)
-  - <https://youtube.com/watch?v=sRIjxxjVrnY> (Panin)
-  - <http://pemami4911.github.io/paper-summaries/2016/09/04/VIME.html>
-  - <https://github.com/openai/vime>
+#### Houthooft, Chen, Duan, Schulman, Turck, Abbeel - ["VIME: Variational Information Maximizing Exploration"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#houthooft-chen-duan-schulman-turck-abbeel---vime-variational-information-maximizing-exploration) (approximation of Artificial Curiosity and Creativity theory of Juergen Schmidhuber)
 
 
 #### Frank, Leitner, Stollenga, Forster, Schmidhuber - ["Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3881010/pdf/fnbot-07-00025.pdf)
@@ -818,9 +805,13 @@ interesting papers (see below):
 #### Schmidhuber - ["PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem"](http://arxiv.org/pdf/1112.5309v2.pdf)
 >	"Most of computer science focuses on automatically solving given computational problems. I focus on automatically inventing or discovering problems in a way inspired by the playful behavior of animals and humans, to train a more and more general problem solver from scratch in an unsupervised fashion. Consider the infinite set of all computable descriptions of tasks with possibly computable solutions. Given a general problem solving architecture, at any given time, the novel algorithmic framework PowerPlay searches the space of possible pairs of new tasks and modifications of the current problem solver, until it finds a more powerful problem solver that provably solves all previously learned tasks plus the new one, while the unmodified predecessor does not. Newly invented tasks may require to achieve a wow-effect by making previously learned skills more efficient such that they require less time and space. New skills may (partially) re-use previously learned skills. The greedy search of typical PowerPlay variants uses time-optimal program search to order candidate pairs of tasks and solver modifications by their conditional computational (time & space) complexity, given the stored experience so far. The new task and its corresponding task-solving skill are those first found and validated. This biases the search towards pairs that can be described compactly and validated quickly. The computational costs of validating new tasks need not grow with task repertoire size. Standard problem solver architectures of personal computers or neural networks tend to generalize by solving numerous tasks outside the self-invented training set; PowerPlay’s ongoing search for novelty keeps breaking the generalization abilities of its present solver. This is related to Goedel’s sequence of increasingly powerful formal theories based on adding formerly unprovable statements to the axioms without affecting previously provable theorems. The continually increasing repertoire of problem solving procedures can be exploited by a parallel search for solutions to additional externally posed tasks. PowerPlay may be viewed as a greedy but practical implementation of basic principles of creativity."
 
+  - <https://youtu.be/SAcHyzMdbXc?t=16m6s> (de Freitas)
+
 
 #### Srivastava, Steunebrink, Stollenga, Schmidhuber - ["Continually Adding Self-Invented Problems to the Repertoire: First Experiments with PowerPlay"](http://people.idsia.ch/~steunebrink/Publications/ICDL12_powerplay.pdf)
 >	"Pure scientists do not only invent new methods to solve given problems. They also invent new problems. The recent PowerPlay framework formalizes this type of curiosity and creativity in a new, general, yet practical way. To acquire problem solving prowess through playing, PowerPlay-based artificial explorers by design continually come up with the fastest to find, initially novel, but eventually solvable problems. They also continually simplify or speed up solutions to previous problems. We report on results of first experiments with PowerPlay. A self-delimiting recurrent neural network (SLIM RNN) is used as a general computational architecture to implement the system’s solver. Its weights can encode arbitrary, self-delimiting, halting or non-halting programs affecting both environment (through effectors) and internal states encoding abstractions of event sequences. In open-ended fashion, our PowerPlay-driven RNNs learn to become increasingly general problem solvers, continually adding new problem solving procedures to the growing repertoire, exhibiting interesting developmental stages."
+
+  - <https://youtu.be/SAcHyzMdbXc?t=16m6s> (de Freitas)
 
 
 #### Orseau - ["Universal Knowledge-Seeking Agents"](http://www.agroparistech.fr/mmip/maths/laurent_orseau/papers/orseau-TCS-2014-uksa.pdf)

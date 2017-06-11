@@ -35,16 +35,15 @@
   (Joseph Weizenbaum, creator of ELIZA chat bot) "No general solution to the problem of computer understanding of natural language is possible, i.e. language is understood only in contextual frameworks, that even these can be shared by people to only a limited extent, and that consequently even people are not embodiments of any such general solution."
 
 
-  Jon Gauthier, Igor Mordatch -"A Paradigm for Situated and Goal-Driven Language Learning" - https://arxiv.org/abs/1610.03585
+  "A Paradigm for Situated and Goal-Driven Language Learning" by Jon Gauthier and Igor Mordatch - https://arxiv.org/abs/1610.03585
+  "On 'Solving Language'" by Jon Gauthier - http://foldl.me/2016/solving-language/
+  "Situated Language Learning" by Jon Gauthier - http://foldl.me/2016/situated-language-learning/
 
-  Jon Gauthier - http://foldl.me/2016/solving-language/ + http://foldl.me/2016/situated-language-learning/
+  "From Models of Language Understanding to Agents of Language Use" by Felix Hill - http://research.microsoft.com/apps/video/default.aspx?id=266643
 
-  Felix Hill - "From Models of Language Understanding to Agents of Language Use" - http://research.microsoft.com/apps/video/default.aspx?id=266643
+  "Advances in Natural Language Processing" by Chris Manning and Julia Hirschberg - https://goo.gl/hLQOYB
+  "Towards the Machine Comprehension of Text: An Essay" by Chris Burges - http://research.microsoft.com/apps/pubs/default.aspx?id=206771
 
-
-  Christopher Manning, Julia Hirschberg - "Advances in Natural Language Processing" - https://goo.gl/hLQOYB
-
-  Chris Burges - "Towards the Machine Comprehension of Text: An Essay" - http://research.microsoft.com/apps/pubs/default.aspx?id=206771
 
   Ray Kurzweil: "We have a lot of language data [at Google]... and we don't even know how we would annotate it" - https://youtube.com/watch?v=w9sz7eW6MY8#t=4m27s
 
@@ -62,8 +61,11 @@
 
   textbook by Michael Collins - https://dropbox.com/sh/e0unkrb6xoqyjmg/AAANfPi9K9fAjboL5XTCkb5La
 
-  "Speech and Language Processing" (3rd edition draft) by Jurafsky & Martin - http://web.stanford.edu/~jurafsky/slp3/
+  "Speech and Language Processing" by Jurafsky & Martin - http://web.stanford.edu/~jurafsky/slp3/
   "Foundations of Statistical Natural Language Processing" by Manning & Schutze - http://nlp.stanford.edu/fsnlp/
+
+  Stanford University reading group - http://nlp.stanford.edu/read/
+  University of Arizona reading group - https://github.com/clulab/nlp-reading-group/
 
   "NLP Highlights" podcast by AI2 - https://soundcloud.com/nlp-highlights
 
@@ -294,145 +296,20 @@
 
 
   http://gavagai.se/blog/2015/09/30/a-brief-history-of-word-embeddings/
-
   http://blog.aylien.com/overview-word-embeddings-history-word2vec-cbow-glove/
 
   http://sebastianruder.com/word-embeddings-1/index.html
   http://sebastianruder.com/word-embeddings-softmax/index.html
 
-  Sanjeev Arora - "Word Embeddings: Explaining their properties" - http://www.offconvex.org/2015/12/12/word-embeddings-1/ + http://www.offconvex.org/2016/02/14/word-embeddings-2/
+  "Word Vector Representations: word2vec" by Richard Socher - https://youtube.com/watch?v=ERibwqs9p38
+  "GloVe: Global Vectors for Word Representation" by Richard Socher - https://youtube.com/watch?v=ASn7ExxLZws
 
+  "Vector Representations of Words and Documents" by Anna Potapenko - https://youtube.com/watch?v=KEXWC-ICH_Y (in russian)
 
-  Richard Socher - "Word Vectors" - http://youtube.com/watch?v=T8tQZChniMk + http://youtube.com/watch?v=T1j2Q9_FgTM
+  "A Theoretical Approach to Semantic Representations" by Sanjeev Arora - https://youtube.com/watch?v=KR46z_V0BVw
+  "Word Embeddings: Explaining Their Properties" by Sanjeev Arora - http://www.offconvex.org/2015/12/12/word-embeddings-1/ + http://www.offconvex.org/2016/02/14/word-embeddings-2/
 
-  Chris Manning - "Human Language & Word Vectors" - http://videolectures.net/deeplearning2015_manning_language_vectors/ + http://www.iro.umontreal.ca/~memisevr/dlss2015/DLSS2015-NLP-1.pdf
-  Chris Manning - "Compositional Deep Learning" - http://videolectures.net/deeplearning2015_manning_deep_learning/ + http://www.iro.umontreal.ca/~memisevr/dlss2015/DLSS2015-NLP-2.pdf
-
-  Jason Weston, Antoines Bordes - "Embedding Methods for NLP" - http://emnlp2014.org/tutorials/8_notes.pdf
-
-
-  Guillaume Bouchard - "Matrix and Tensor Factorization Methods for Natural Language Processing" - https://github.com/uclmr/acl2015tutorial/blob/master/tutorial.pdf
-
-  Dmitry Bugaichenko - "Introduction to LDA" - http://youtube.com/watch?v=KaXsalAixEU (in russian)
-  Sergey Bartunov - "Introduction to LDA" - http://youtube.com/watch?v=pOsGfv4lOFg (in russian)
-
-
-
-
-[deep learning models]
-
-  "Google replaced 60 hand-crafted rule-based systems with Deep Learning" - https://goo.gl/yzwI6O
-
-  Deep Learning graduate student (QANTA model) vs IBM Watson team - https://youtu.be/tdLmf8t4oqM?t=31m25s
-
-
-  https://wit.ai/blog/2015/09/23/emnlp
-
-  "Last Words: Computational Linguistics and Deep Learning" by Chris Manning - http://mitpressjournals.org/doi/abs/10.1162/COLI_a_00239
-
- 
-  "Deep Networks for Common NLP Tasks" - https://docs.google.com/presentation/d/1BOKLQDLkyMrproVt7SMeYqEmPuPzA_brACMV6Ip_2zo
-  "Natural Language Understanding with Distributed Representation" by Kyunghyun Cho - http://arxiv.org/abs/1511.07916
-  "A Primer on Neural Network Models for Natural Language Processing" by Yoav Goldberg - http://arxiv.org/abs/1510.00726
-
-
-  - overcoming curse of dimensionality
-  - learning representations with multiple levels
-  - handling recursivity of human language
-
-
-  Quoc Le
-	http://youtube.com/watch?v=KmOdBS4BXZ0
-
-  Richard Socher
-	http://videolectures.net/deeplearning2015_socher_deep_nlp/ + http://videolectures.net/deeplearning2015_socher_nlp_applications/
-	http://youtube.com/watch?v=BVbQRrrsJo0 + http://cs224d.stanford.edu/lectures/CS224d-Lecture15.pdf
-	http://youtube.com/watch?v=sU_Yu_USrNc
-
-	"Deep Learning for NLP" course - http://cs224d.stanford.edu/syllabus.html
-
-  Nando de Freitas
-	http://youtube.com/watch?v=IJAHqA2iy2s
-
-  Kyunghyun Cho
-	http://youtube.com/watch?v=zwYKaq9RG9
-	http://slideshot.epfl.ch/play/khnnunGF0elc + https://drive.google.com/file/d/0B16RwCMQqrtdb05qdDFnSXprM0E/
-
-
-  * language models and representations
-
-	http://colah.github.io/posts/2014-07-NLP-RNNs-Representations/
-	http://scholarpedia.org/article/Neural_net_language_models
-
-	Chris Manning - http://videolectures.net/deeplearning2015_manning_language_vectors/
-
-	"Neural Network Language Models" by Hugo Larochelle - http://youtube.com/watch?v=FoDz01QNSiY&index=79&list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH
-	"Neural Language Models" by Andrey Kutuzov - https://events.yandex.ru/lib/talks/2773/ (in russian)
-
-	Yoav Goldberg - "Word Embeddings: What, How and Whither" - http://u.cs.biu.ac.il/~yogo/cvsc2015.pdf
-
-	"Recurrent Neural Networks with Word Embeddings" tutorial - http://deeplearning.net/tutorial/rnnslu.html
-	"Recurrent Neural Networks for Text Analysis" tutorial - http://goo.gl/6f8cnc
-	tutoral by Kevin Duh - http://cl.naist.jp/~kevinduh/notes/cwmt14tutorial.pdf
-
-
-  * compositional models
-
-	Chris Manning
-		http://videolectures.net/deeplearning2015_manning_deep_learning/
-
-	Richard Socher
-		http://videolectures.net/deeplearning2015_socher_deep_nlp/
-		http://videolectures.net/deeplearning2015_socher_nlp_applications/
-		http://youtube.com/watch?v=zHXOHqIyeD4
-		http://youtube.com/watch?v=mVfPGu8rrXM
-
-	Phil Blunsom
-		http://youtube.com/watch?v=_ASOqXiWBVo + https://www.cs.ox.ac.uk/files/6605/aclVectorTutorial.pdf
-		http://videolectures.net/deeplearning2015_blunsom_machine_translation/
-		http://videolectures.net/deeplearning2015_blunsom_memory_reading/
-
-	Kyunghyun Cho
-		"Learning Distributed Representations of Sentences from Unlabelled Data" - http://arxiv.org/abs/1602.03483
-
-		"From Sequence Modeling to Translation" - https://drive.google.com/file/d/0B16RwCMQqrtdNEhwbHN2bXJzdXM
-
-		http://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-with-gpus/
-		http://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-gpus-part-2/
-		http://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-gpus-part-3/
-
-
-  "Machine learning is everywhere in today's NLP, but by and large machine learning amounts to numerical optimization of weights for human designed representations and features. The goal of deep learning is to explore how computers can take advantage of data to develop features and representations appropriate for complex interpretation tasks. The most attractive quality of these techniques is that they can perform well without any external hand-designed resources or time-intensive feature engineering."
-
-  "The outstanding success of hard-wiring hierarchical spatial structure into a deep architecture for computer vision has motivated the search for similar concepts of local neighborhoods for other tasks such as speech recognition and natural language processing. For temporal data time provides a natural concept of locality, but for text data the situation is more opaque. Lexical distance in a sentence is only a moderate indicator of semantic distance, which is why much of NLP is about uncovering latent structure (e.g., topic modeling, parsing). One line of active research synthesizes NLP techniques with deep architectures hierarchically defined given a traditional NLP decomposition of the input. 
-  Another response to the relative difficulty of articulating a neighborhood for text is to ask “can I learn the neighborhood structure instead, just using a general deep architecture?” There is a natural appeal of learning from scratch, especially when intuition is exhausted; however in vision it is currently necessary to hard-wire spatial structure into the model to get anywhere near state of the art performance (given current data and computational resources).
-  Therefore it is an open question to what extent a good solution to, e.g., machine translation, will involve hand-specified prior knowledge versus knowledge derived from data. This sounds like the old “nature vs. nuture” debates from cognitive science."
-
-  "Briefly, since neural nets already beat n-grams on language modelling, you can first use them to replace the language-modelling part of MT. Then you can use them to replace the translation table (after all it's just another table of conditional probabilities). Other fun stuff is going on. The most exciting and ambitious approaches would completely scrap the current MT pipeline and learn to do end-to-end MT purely with a deep model. The interesting aspect of this is that the output is structured (it is a joint distribution over sequences of words), not a simple point-wise prediction (because there are many translations that are appropriate for a given source sentence)."
-
-  "The really interesting challenge in NLP, which will be the key to actual "natural language understanding", is the design of learning algorithms that will be able to learn to represent meaning. For example, ways to model sequences of words (language modeling) or to translate a sentence in one language into a corresponding one in another language. In both of these cases the aim is to learn a representation of the meaning of a phrase or sentence (not just of a single word). In the case of translation, you can think of it like an auto-encoder: the encoder (that is specialized to French) can map a French sentence into its meaning representation (represented in a universal way), while a decoder (that is specialized to English) can map this to a probability distribution over English sentences that have the same meaning (ie. you can sample a plausible translation). With the same kind of tool you can obviously paraphrase, and with a bit of extra work, you can do question answering and other standard NLP tasks. We are not there yet, and the main challenges I see have to do with numerical optimization (it is difficult not to underfit neural networks, when they are trained on huge quantities of data). There are also more computational challenges: we need to be able to train much larger models (say 10000x bigger), and we can't afford to wait 10000x more time for training. And parallelizing is not simple but should help. All this will of course not be enough to get really good natural language understanding. To to this well would basically allow to pass some Turing test, and it would require the computer to understand a lot of things about how our world works. For this we will need to train such models with more than just text. The meaning representation for sequences of words can be combined with the meaning representation for images or video (or other modalities, but image and text seem the most important for humans). Again, you can think of the problem as translating from one modality to another, or of asking whether two representations are compatible (one expresses a subset of what the other expresses). In a simpler form, this is already how Google image search works. And traditional information retrieval also fits the same structure."
-
-  "The outstanding success of hard-wiring hierarchical spatial structure into a deep architecture for computer vision has motivated the search for similar concepts of local neighborhoods for other tasks such as speech recognition and natural language processing. For temporal data time provides a natural concept of locality, but for text data the situation is more opaque. Lexical distance in a sentence is only a moderate indicator of semantic distance, which is why much of NLP is about uncovering latent structure (e.g., topic modeling, parsing). One line of active research synthesizes NLP techniques with deep architectures hierarchically defined given a traditional NLP decomposition of the input. Another response to the relative difficulty of articulating a neighborhood for text is to ask “can I learn the neighborhood structure instead, just using a general deep architecture?” There is a natural appeal of learning from scratch, especially when intuition is exhausted; however in vision it is currently necessary to hard-wire spatial structure into the model to get anywhere near state of the art performance (given current data and computational resources). Therefore it is an open question to what extent a good solution to, e.g., machine translation, will involve hand-specified prior knowledge versus knowledge derived from data."
-
- "There is probably a limit to the length of sentences one can embed into semantic space, which is a function of the composition method, the task the embedding is used for, and the size of the embedding, although it's difficult to quantify, and is not a hard limit for continuous representations (as there might be if you wanted lossless encoding of a value in a binary vector).
-  In practice, one will start with embeddings of a certain size to make sure the model trains correctly, and then try and find some balance between the embedding size and the cost of training.
-  If one is modelling the sentence with a standard recurrent neural network (and most recursive neural nets), one will have vanishing gradient problems as a byproduct of increased sentence length.
-Some people prefer log bilinear models because they are simpler and avoid the vanishing gradient problem, at the cost of being less expressive."
-
- "Word embeddings are in no way a good general representation of semantics, but rather just one very successful example of an application transfer learning between contextual prediction (word given context, or context given word) and other domains with very different objectives (sentiment analysis, language modelling, question answering), either by serving as representations in their own right, or as initial settings to aid training. Furthermore, pre-trained embeddings are also very useful when training models in domains with little data, where the proportion of out-of-vocabulary words in test and validation with regard to the domain-specific training data is high (above a few percentile), in which case using (fixed) pre-trained embeddings as word representations is a suitable compromise. Now let me say why I don't really care much about embeddings. The first reason is purely empirical: with sufficient data, you just don't need them. In fact in many cases, they may hinder both training and model performance. A simple artificial example is as follows: a word embedding model may plausibly project words like "car" and "automobile" into the same segment of a semantic space. Yet consider the task of classifying text based on lexical register: you will in this case wish to detect, say, the distinction offered between using "car" and "automobile", as a basis for differentiating high register language from more colloquial language. In such cases, the representation similarity brought to you from the objective that yielded the word embeddings actually makes your primary model's life harder than initialising the word embeddings randomly (and hopefully pseudo-orthogonally) and then training them from scratch, rather than having to learn very fine spatial boundaries over the input. The second reason is more conceptual: in the case of recurrent networks, I tend to see the embedding matrix as part of the network itself, allowing it to consume discrete input symbols encoded as one-hot vectors, and updating the state of a recurrent cell. In this sense, embeddings are just weights of a linear transform from the one-hot input into vectors used by the network's internal dynamics. Meaning and interpretation, if there is such things, are present in the state of the network, rather than solely in the embeddings, and it makes as much sense to seek to interpret the weights that constitute embeddings as it does to seek to interpret any other weight in the network. Pre-training embeddings and using them in another network, under this view, is even more explicitly just a form of transfer learning, in that we are initialising the weights of part of a task-specific network, and perhaps freezing them, with information obtained from another task. It's not a bad strategy, but I think people focus too much on this very specific form of transfer learning rather than, more generally, on other options there are out there (or yet to be discovered) to help us deal with data paucity, and to best share information across similar tasks."
-
-
-
-
-lists of papers -
-	https://github.com/keonkim/awesome-nlp
-	http://memkite.com/blog/2015/01/29/deep-learning-for-natural-language-processing/
-	http://gitxiv.com/category/natural-language-processing-nlp
-	https://github.com/niangaotuantuan/Publications-of-Deep-Learning-in-NLP
-
-	http://nlp.stanford.edu/read/ (Stanford University reading group)
-	http://homes.cs.washington.edu/~yejin/cse599.html (University of Washington reading group)
-	https://github.com/clulab/nlp-reading-group/ (University of Arizona)
+  "Introduction to LDA" by Dmitry Bugaichenko - http://youtube.com/watch?v=KaXsalAixEU (in russian)
 
 
 
@@ -446,7 +323,7 @@ interesting recent papers - https://github.com/brylevkirill/notes/blob/master/in
 interesting papers (see below):
   - overview
   - language models
-  - language models - word2vec
+  - word embeddings
   - word sense disambiguation
   - semantic composition
   - semantic similarity
@@ -523,7 +400,7 @@ Kumar, Irsoy, Su, Bradbury, English, Pierce, Ondruska, Gulrajani, Socher - "Ask 
 	"The paper proposes an end-to-end differentiable NN module called DMN. It consists of 4 parts, an input module, question module, episodic memory module and an answer module. Their works appear quite similar to the MemNN neural network with the main difference being the episodic memory module, which is an attention based recurrent module over the input hidden states and the question state. The authors argue that in many cases multiple passes over all the facts and question can help in better question answering."
 	"The main modeling idea is that you take a question and use it to condition a neural attention mechanism that goes over some text. The text is represented in terms of hidden states of a bidirectional sequence model. Conditioned on the question, that attention mechanism goes over inputs at each time step, and connects them to an episodic memory module. That is, it opens a gate that lets the vector at a time step be fed into the episodic memory. One important aspect for some tasks is that the model goes over the input multiple times. After each time it classifies the memory state by asking "do I know enough to answer the question?" And if not, then it goes over the input again, but conditioned on the question and also the previous memory state. That way it can reason over multiple facts. Once it classifies "yes I know enough", it gives that memory vector to an output sequence model which generates the answer."
 	-- http://yerevann.com/dmn-ui/ (demo)
-	-- http://videolectures.net/deeplearning2015_socher_nlp_applications/ (Socher, 00:42)
+	-- http://videolectures.net/deeplearning2015_socher_nlp_applications/#t=2520 (Socher)
 	-- http://www.iro.umontreal.ca/~memisevr/dlss2015/DLSummerSchoolLecture2.pdf
 	-- http://yerevann.github.io/2016/02/05/implementing-dynamic-memory-networks/
 	-- https://napsternxg.gitbooks.io/article-reviews/content/ama_socher.html
@@ -628,7 +505,10 @@ Ghosh, Vinyals, Strope, Roy, Dean, Heck - "Contextual LSTM (CLSTM) Models for La
 
 
 
-[interesting papers - language models - word2vec]
+[interesting papers - word embeddings]
+
+Lucy, Gauthier - "Are Distributional Representations Ready for the Real World? Evaluating Word Vectors for Grounded Perceptual Meaning" [https://arxiv.org/abs/1705.11168]
+	"Distributional word representation methods exploit word co-occurrences to build compact vector encodings of words. While these representations enjoy widespread use in modern natural language processing, it is unclear whether they accurately encode all necessary facets of conceptual meaning. In this paper, we evaluate how well these representations can predict perceptual and conceptual features of concrete concepts, drawing on two semantic norm datasets sourced from human participants. We find that several standard word representations fail to encode many salient perceptual features of concepts, and show that these deficits correlate with word-word similarity prediction errors. Our analyses provide motivation for grounded and embodied language learning approaches, which may help to remedy these deficits."
 
 Mikolov, Chen, Corrado, Dean - "Efficient Estimation of Word Representations in Vector Space" [http://arxiv.org/abs/1301.3781] (word2vec)
 	"We propose two novel model architectures for computing continuous vector representations of words from very large data sets. The quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks. We observe large improvements in accuracy at much lower computational cost, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set. Furthermore, we show that these vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities."
@@ -701,6 +581,8 @@ Levy, Remus, Biemann, Dagan - "Do Supervised Distributional Methods Really Learn
 Arora, Li, Liang, Ma, Risteski - "RAND-WALK: A Latent Variable Model Approach to Word Embeddings" [http://arxiv.org/abs/1502.03520]
 	"Semantic word embeddings represent the meaning of a word via a vector, and are created by diverse methods. Many use nonlinear operations on co-occurrence statistics, and have hand-tuned hyperparameters and reweighting methods. This paper proposes a new generative model, a dynamic version of the log-linear topic model of Mnih and Hinton (2007). The methodological novelty is to use the prior to compute closed form expressions for word statistics. This provides a theoretical justification for nonlinear models like PMI, word2vec, and GloVe, as well as some hyperparameter choices. It also helps explain why lowdimensional semantic embeddings contain linear algebraic structure that allows solution of word analogies, as shown by Mikolov et al. (2013a) and many subsequent papers. Experimental support is provided for the generative model assumptions, the most important of which is that latent word vectors are fairly uniformly dispersed in space."
 	-- http://youtube.com/watch?v=gaVR3WnczOQ (Ma)
+	-- http://youtube.com/watch?v=KR46z_V0BVw (Arora)
+	-- http://youtube.com/watch?v=BCsOrewkmH4 (Liang)
 	-- http://www.offconvex.org/2016/02/14/word-embeddings-2/ + http://www.offconvex.org/2015/12/12/word-embeddings-1/
 	-- https://akshayka.github.io/papers/html/arora2016pmi-embeddings.html
 	-- https://github.com/YingyuLiang/SemanticVector
@@ -793,7 +675,7 @@ Kiros, Zhu, Salakhutdinov, Zemel, Torralba, Urtasun, Fidler - "Skip-Thought Vect
 	"One difficulty that arises with such an experimental setup is being able to construct a large enough word vocabulary to encode arbitrary sentences. For example, a sentence from a Wikipedia article might contain nouns that are highly unlikely to appear in our book vocabulary. We solve this problem by learning a mapping that transfers word representations from one model to another. Using pretrained word2vec representations learned with a continuous bag-of-words model, we learn a linear mapping from a word in word2vec space to a word in the encoder’s vocabulary space. The mapping is learned using all words that are shared between vocabularies. After training, any word that appears in word2vec can then get a vector in the encoder word embedding space."
 	--
 	"It turns out that skip-thought vectors have some intriguing properties that allow us to construct F in a really simple way. Suppose we have 3 vectors: an image caption x, a "caption style" vector c and a "book style" vector b. Then we define F as F(x) = x - c + b which intuitively means: keep the "thought" of the caption, but replace the image caption style with that of a story. Then, we simply feed F(x) to the decoder."
-	-- http://videolectures.net/deeplearning2015_salakhutdinov_deep_learning_2/ (Salakhutdinov, 1:02:56)
+	-- http://videolectures.net/deeplearning2015_salakhutdinov_deep_learning_2/#t=3776 (Salakhutdinov)
 	-- https://github.com/tensorflow/models/tree/master/skip_thoughts
 	-- https://github.com/ryankiros/skip-thoughts
 	-- https://github.com/ryankiros/neural-storyteller + https://medium.com/@samim/generating-stories-about-images-d163ba41e4ed (demo)
@@ -815,7 +697,9 @@ Wieting, Bansal, Gimpel, Livescu - "Towards Universal Paraphrastic Sentence Embe
 
 Arora, Liang, Ma - "A Simple but Tough-to-Beat Baseline for Sentence Embeddings" [https://openreview.net/pdf?id=SyK00v5xx]
 	"The success of neural network methods for computing word embeddings has motivated methods for generating semantic embeddings of longer pieces of text, such as sentences and paragraphs. Surprisingly, Wieting et al (ICLR’16) showed that such complicated methods are outperformed, especially in out-of-domain (transfer learning) settings, by simpler methods involving mild retraining of word embeddings and basic linear regression. The method of Wieting et al. requires retraining with a substantial labeled dataset such as Paraphrase Database (Ganitkevitch et al., 2013). The current paper goes further, showing that the following completely unsupervised sentence embedding is a formidable baseline: Use word embeddings computed using one of the popular methods on unlabeled corpus like Wikipedia, represent the sentence by a weighted average of the word vectors, and then modify them a bit using PCA/SVD. This weighting improves performance by about 10% to 30% in textual similarity tasks, and beats sophisticated supervised methods including RNN’s and LSTM’s. It even improves Wieting et al.’s embeddings. This simple method should be used as the baseline to beat in future, especially when labeled training data is scarce or nonexistent. The paper also gives a theoretical explanation of the success of the above unsupervised method using a latent variable generative model for sentences, which is a simple extension of the model in Arora et al. (TACL’16) with new “smoothing” terms that allow for words occurring out of context, as well as high probabilities for words like and, not in all contexts."
+	-- https://youtube.com/watch?v=BCsOrewkmH4 (Liang)
 	-- https://akshayka.github.io/papers/html/arora2017sentence-embeddings.html
+	-- https://github.com/YingyuLiang/SIF
 
 Le, Mikolov - "Distributed Representations of Sentences and Documents" [http://arxiv.org/abs/1405.4053] (Paragraph vector)
 	"Many machine learning algorithms require the input to be represented as a fixed-length feature vector. When it comes to texts, one of the most common fixed-length features is bag-of-words. Despite their popularity, bag-of-words features have two major weaknesses: they lose the ordering of the words and they also ignore semantics of the words. For example, “powerful,” “strong” and “Paris” are equally distant. In this paper, we propose Paragraph Vector, an unsupervised algorithm that learns fixed-length feature representations from variable-length pieces of texts, such as sentences, paragraphs, and documents. Our algorithm represents each document by a dense vector which is trained to predict words in the document. Its construction gives our algorithm the potential to overcome the weaknesses of bag-of-words models. Empirical results show that Paragraph Vectors outperform bag-of-words models as well as other techniques for text representations. Finally, we achieve new state-of-the-art results on several text classification and sentiment analysis tasks."

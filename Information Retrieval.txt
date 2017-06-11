@@ -15,70 +15,72 @@
 
 [overview]
 
-Amit Singhal - "Constructing the Conversational Computer" - https://vimeo.com/84711332
-Tim Tuttle - https://youtube.com/watch?v=do_iwSusH3E
+  Amit Singhal - "Constructing the Conversational Computer" - https://vimeo.com/84711332
 
-Oren Etzioni - "The Future of Semantic Web Search" - http://tce.technion.ac.il/files/2013/06/OrenEtzioni.pptx + http://youtube.com/watch?v=qsK-yQR1cGs
-Oren Etzioni - "Open Information Extraction as Web Scale" - http://acml2011.wikispaces.com/file/view/Oren%20Etzioni.pdf
+  Oren Etzioni - "The Future of Semantic Web Search" - http://tce.technion.ac.il/files/2013/06/OrenEtzioni.pptx + http://youtube.com/watch?v=qsK-yQR1cGs
+  Oren Etzioni - "Open Information Extraction as Web Scale" - http://acml2011.wikispaces.com/file/view/Oren%20Etzioni.pdf
 
-Peter Meyers - "Beyond 10 Blue Links - The Future of Ranking" - http://slideshare.net/crumplezone/beyond-10-blue-links-the-future-of-ranking
+  Peter Meyers - "Beyond 10 Blue Links - The Future of Ranking" - http://slideshare.net/crumplezone/beyond-10-blue-links-the-future-of-ranking
 
-Peter Mika - "Semantic Search On The Rise" - http://labs.yahoo.com/_c/uploads/SemTech2014-v2.pptx + http://youtube.com/watch?v=Dw2OhqvB0cE
-	"Making the Web Searchable" - http://slideshare.net/pmika1/sem-search-icwe
+  Peter Mika - "Semantic Search On The Rise" - http://labs.yahoo.com/_c/uploads/SemTech2014-v2.pptx + http://youtube.com/watch?v=Dw2OhqvB0cE
+                "Making the Web Searchable" - http://slideshare.net/pmika1/sem-search-icwe
 
 
 
 
 [study]
 
-course by Chris Manning
+  course by Chris Manning
 	http://youtube.com/watch?v=5L1qemKyUKA&index=75&list=PL6397E4B26D00A269
 
-course by Victor Lavrenko
+  course by Victor Lavrenko
 	http://homepages.inf.ed.ac.uk/vlavrenk/tts.html
 	http://youtube.com/user/victorlavrenko/playlists?view=1&sort=dd
 
-course by Yandex (in russian)
+  course by Mail.ru (in russian)
+	https://youtube.com/playlist?list=PLrCZzMib1e9o_BlrSB5bFkLq8h2i4pQjz
+	https://youtube.com/playlist?list=PLrCZzMib1e9o7YIhOfJtD1EaneGOGkN-_
+	http://habrahabr.ru/company/mailru/blog/257119/
+
+  course by Yandex (in russian)
 	https://compscicenter.ru/courses/information-retrieval/2016-autumn/
 	https://compsciclub.ru/courses/informationretrieval
 
-course by Mail.ru (in russian)
-	https://youtube.com/playlist?list=PLrCZzMib1e9o_BlrSB5bFkLq8h2i4pQjz
-	http://habrahabr.ru/company/mailru/blog/257119/
-
-course by Nikita Zhiltsov (in russian)
+  course by Nikita Zhiltsov (in russian)
 	http://nzhiltsov.github.io/IR-course/
 
-introduction to ranking by Nikita Volkov (in russian)
+
+  introduction to ranking by Nikita Volkov (in russian)
 	https://youtube.com/watch?v=GctrEpJinhI
 	https://youtube.com/watch?v=GZmXKBzIfkA
 
-IR seminars at Yandex
+  seminars at Yandex
 	http://youtube.com/playlist?list=PLJOzdkh8T5kqsYZSzcpKoS8dwf4uizFDk
 	http://youtube.com/playlist?list=PLJOzdkh8T5krfgXb4peSed78ODO7tUFHf
 
-"Neural Text Embeddings for Information Retrieval" tutorial at WSDM 2017 -
+  "Neural Text Embeddings for Information Retrieval" tutorial at WSDM 2017 -
 	https://slideshare.net/BhaskarMitra3/neural-text-embeddings-for-information-retrieval-wsdm-2017
 
-"An Introduction to Information Retrieval" book by Manning, Raghavan, Schutze - http://nlp.stanford.edu/IR-book/pdf/irbookprint.pdf
-"Search Engines. Information Retrieval in Practice" book by Croft, Metzler, Strohman - http://ciir.cs.umass.edu/irbook/
+
+  "An Introduction to Information Retrieval" book by Manning, Raghavan, Schutze - http://nlp.stanford.edu/IR-book/pdf/irbookprint.pdf
+  "Search Engines. Information Retrieval in Practice" book by Croft, Metzler, Strohman - http://ciir.cs.umass.edu/irbook/
 
 
 
 
 [challenges]
 
-- Full text document retrieval, passage retrieval, question answering
-- Web search, searching social media, distributed information retrieval, entity ranking
-- Learning to rank combined with neural network based representation learning
-- User and task modelling, personalized search, diversity
-- Query formulation assistance, query recommendation, conversational search
-- Multimedia retrieval
-- Learning dense representations for long documents
-- Dealing with rare queries and rare words
-- Modelling text at different granularities (character, word, passage, document)
-- Compositionality of vector representations
-- Jointly modelling queries, documents, entities and other structured/knowledge data
+  - Full text document retrieval, passage retrieval, question answering
+  - Web search, searching social media, distributed information retrieval, entity ranking
+  - Learning to rank combined with neural network based representation learning
+  - User and task modelling, personalized search, diversity
+  - Query formulation assistance, query recommendation, conversational search
+  - Multimedia retrieval
+  - Learning dense representations for long documents
+  - Dealing with rare queries and rare words
+  - Modelling text at different granularities (character, word, passage, document)
+  - Compositionality of vector representations
+  - Jointly modelling queries, documents, entities and other structured/knowledge data
 
 
 
@@ -105,54 +107,28 @@ IR seminars at Yandex
 
 
 
-[recommender systems]
-
-introduction by Alex Smola - http://youtube.com/watch?v=gCaOa3W9kM0
-
-https://coursera.org/learn/recommender-systems/
-
-recommender systems introduction course from Netflix - http://technocalifornia.blogspot.ru/2014/08/introduction-to-recommender-systems-4.html
-
-"recommender problem revisited" by Netflix -
-	http://videolectures.net/kdd2014_amatriain_mobasher_recommender_problem/
-	http://quora.com/Recommendation-Systems/What-developments-have-occurred-in-recommender-systems-after-the-Netflix-Prize
-
-	"- Implicit feedback from usage has proven to be a better and more reliable way to capture user preference.
-	 - Rating prediction is not the best formalization of the "recommender problem". Other approaches, and in particular personalized Learning to Rank, are much more aligned with the idea of recommending the best item for a user.
-	 - It is important to find ways to balance the trade-off between exploration and exploitation. Approaches such as Multi-Armed Bandit algorithms offer an informed way to address this issue.
-	 - Issues such as diversity and novelty can be as important as relevance.
-	 - It is important to address the presentation bias caused by users only being able to give feedback to those items previously decided where good for them.
-	 - The recommendation problem is not only a two dimensional problem of users and items but rather a multi-dimensional problem that includes many contextual dimensions such as time of the day or day of the week. Algorithms such as Tensor Factorization or Factorization Machines come in very handy for this.
-	 - Users decide to select items not only based on how good they think they are, but also based on the possible impact on their social network. Therefore, social connections can be a good source of data to add to the recommendation system.
-	 - It is not good enough to design algorithms that select the best items for users, these items need to be presented with the right form of explanations for users to be attracted to them."
-
-future of recommender systems (by Hector Garcia-Molina) - http://youtube.com/watch?v=kHodCjWP1Us
-
-
-
-
 [industry]
 
-http://time.com/google-now/
+  http://time.com/google-now/
 
-http://venturebeat.com/2015/11/30/the-4-things-google-believes-are-key-to-the-future-of-search/
+  http://venturebeat.com/2015/11/30/the-4-things-google-believes-are-key-to-the-future-of-search/
 
-http://thesempost.com/rankbrain-everything-we-know-about-googles-ai-algorithm/
+  http://thesempost.com/rankbrain-everything-we-know-about-googles-ai-algorithm/
 
-http://techcrunch.com/2015/09/07/facebooks-messenger-and-the-challenge-to-googles-search-dominance/
+  http://techcrunch.com/2015/09/07/facebooks-messenger-and-the-challenge-to-googles-search-dominance/
 
-https://medium.com/backchannel/how-google-search-dealt-with-mobile-33bc09852dc9
-https://medium.com/backchannel/google-search-will-be-your-next-brain-5207c26e4523
+  https://medium.com/backchannel/how-google-search-dealt-with-mobile-33bc09852dc9
+  https://medium.com/backchannel/google-search-will-be-your-next-brain-5207c26e4523
 
-http://thenextweb.com/apps/2015/02/26/vurb-is-a-mobile-search-engine-that-helps-you-get-things-done-without-jumping-between-apps/
-http://www.ft.com/intl/cms/s/0/4f2f97ea-b8ec-11e4-b8e6-00144feab7de.html#slide0
+  http://thenextweb.com/apps/2015/02/26/vurb-is-a-mobile-search-engine-that-helps-you-get-things-done-without-jumping-between-apps/
+  http://www.ft.com/intl/cms/s/0/4f2f97ea-b8ec-11e4-b8e6-00144feab7de.html#slide0
 
-https://quora.com/Why-is-machine-learning-used-heavily-for-Googles-ad-ranking-and-less-for-their-search-ranking
-http://anand.typepad.com/datawocky/2008/05/are-human-experts-less-prone-to-catastrophic-errors-than-machine-learned-models.html
+  https://quora.com/Why-is-machine-learning-used-heavily-for-Googles-ad-ranking-and-less-for-their-search-ranking
+  http://anand.typepad.com/datawocky/2008/05/are-human-experts-less-prone-to-catastrophic-errors-than-machine-learned-models.html
 
-http://moz.com/blog/101-google-answer-boxes-a-journey-into-the-knowledge-graph
+  http://moz.com/blog/101-google-answer-boxes-a-journey-into-the-knowledge-graph
 
-https://blogs.dropbox.com/tech/2015/03/firefly-instant-full-text-search-engine/
+  https://blogs.dropbox.com/tech/2015/03/firefly-instant-full-text-search-engine/
 
 
 
@@ -164,7 +140,6 @@ selected papers - https://dropbox.com/sh/pvpzyxfcpy39j8p/AACduJ-pVF9Lh-gn3_SExj1
 
 interesting papers (see below):
   - ranking
-  - recommendations
   - document models
   - entity-centric search
   - intent search
@@ -217,38 +192,6 @@ Borisov, Markov, Rijke, Serdyukov - "A Neural Click Model for Web Search" [http:
 
 Vorobev, Lefortier, Gusev, Serdyukov - "Gathering Additional Feedback on Search Results by Multi-Armed Bandits with Respect to Production Ranking" [http://www.www2015.it/documents/proceedings/proceedings/p1177.pdf]
 	"Given a repeatedly issued query and a document with a not-yet-confirmed potential to satisfy the users’ needs, a search system should place this document on a high position in order to gather user feedback and obtain a more confident estimate of the document utility. On the other hand, the main objective of the search system is to maximize expected user satisfaction over a rather long period, what requires showing more relevant documents on average. The state-of-the-art approaches to solving this exploration-exploitation dilemma rely on strongly simplified settings making these approaches infeasible in practice. We improve the most flexible and pragmatic of them to handle some actual practical issues. The first one is utilizing prior information about queries and documents, the second is combining bandit-based learning approaches with a default production ranking algorithm. We show experimentally that our framework enables to significantly improve the ranking of a leading commercial search engine."
-
-
-
-
-[interesting papers - recommendations]
-
-Weston, Weiss, Yee - "Nonlinear Latent Factorization by Embedding Multiple User Interests" [http://research.google.com/pubs/pub41535.html]
-	"Classical matrix factorization approaches to collaborative filtering learn a latent vector for each user and each item, and recommendations are scored via the similarity between two such vectors, which are of the same dimension. In this work, we are motivated by the intuition that a user is a much more complicated entity than any single item, and cannot be well described by the same representation. Hence, the variety of a user’s interests could be better captured by a more complex representation. We propose to model the user with a richer set of functions, specifically via a set of latent vectors, where each vector captures one of the user’s latent interests or tastes. The overall recommendation model is then nonlinear where the matching score between a user and a given item is the maximum matching score over each of the user’s latent interests with respect to the item’s latent representation. We describe a simple, general and efficient algorithm for learning such a model, and apply it to large scale, real-world datasets from YouTube and Google Music, where our approach outperforms existing techniques."
-
-Gao, Pantel, Gamon, He, Deng - "Modeling Interestingness with Deep Neural Networks" [http://research.microsoft.com/apps/pubs/default.aspx?id=226584]
-	"This paper presents a deep semantic similarity model, a special type of deep neural networks designed for text analysis, for recommending target documents to be of interest to a user based on a source document that she is reading. We observe, identify, and detect naturally occurring signals of interestingness in click transitions on the Web between source and target documents, which we collect from commercial Web browser logs. The DSSM is trained on millions of Web transitions, and maps source-target document pairs to feature vectors in a latent space in such a way that the distance between source documents and their corresponding interesting targets in that space is minimized. The effectiveness of the DSSM is demonstrated using two interestingness tasks: automatic highlighting and contextual entity search. The results on large-scale, real-world datasets show that the semantics of documents are important for modeling interestingness and that the DSSM leads to significant quality improvement on both tasks, outperforming not only the classic document models that do not use semantics but also state-of-the-art topic models."
-	-- https://youtube.com/watch?v=YXi66Zgd0D0
-
-Elkahky, Song, He - "A Multi-View Deep Learning Approach for Cross Domain User Modeling in Recommendation Systems" [http://research.microsoft.com/apps/pubs/default.aspx?id=238334]
-	"Recent online services rely heavily on automatic personalization to recommend relevant content to a large number of users. This requires systems to scale promptly to accommodate the stream of new users visiting the online services for the first time. In this work, we propose a content-based recommendation system to address both the recommendation quality and the system scalability. We propose to use a rich feature set to represent users, according to their web browsing history and search queries. We use a Deep Learning approach to map users and items to a latent space where the similarity between users and their preferred items is maximized. We extend the model to jointly learn from features of items from different domains and user features by introducing a multi-view Deep Learning model. We show how to make this rich-feature based user representation scalable by reducing the dimension of the inputs and the amount of training data. The rich user feature representation allows the model to learn relevant user behavior patterns and give useful recommendations for users who do not have any interaction with the service, given that they have adequate search and browsing history. The combination of different domains into a single model for learning helps improve the recommendation quality across all the domains, as well as having a more compact and a semantically richer user latent feature vector. We experiment with our approach on three real-world recommendation systems acquired from different sources of Microsoft products: Windows Apps recommendation, News recommendation, and Movie/TV recommendation. Results indicate that our approach is significantly better than the state-of-the-art algorithms (up to 49% enhancement on existing users and 115% enhancement on new users). In addition, experiments on a publicly open data set also indicate the superiority of our method in comparison with transitional generative topic models, for modeling cross-domain recommender systems. Scalability analysis show that our multi-view DNN model can easily scale to encompass millions of users and billions of item entries. Experimental results also confirm that combining features from all domains produces much better performance than building separate models for each domain."
-
-Hidasi, Karatzoglou, Baltrunas, Tikk - "Session-based Recommendations with Recurrent Neural Networks" [http://arxiv.org/abs/1511.06939]
-	"We apply recurrent neural networks on a new domain, namely recommendation system. Real-life recommender systems often face the problem of having to base recommendations only on short session-based data (e.g. a small sportsware website) instead of long user histories (as in the case of Netflix). In this situation the frequently praised matrix factorization approaches are not accurate. This problem is usually overcome in practice by resorting to item-to-item recommendations, i.e. recommending similar items. We argue that by modeling the whole session, more accurate recommendations can be provided. We therefore propose an RNN-based approach for session-based recommendations. Our approach also considers practical aspects of the task and introduces several modifications to classic RNNs such as a ranking loss function that make it more viable for this specific problem. Experimental results on two data-sets show marked improvements over widely used approaches."
-	"In this paper we applied a kind of modern recurrent neural network to new application domain: recommender systems. We chose task of session based recommendations, because it is a practically important area, but not well researched. We modified the basic GRU in order to fit the task better by introducing session-parallel mini-batches, mini-batch based output sampling and ranking loss function. We showed that our method can significantly outperform popular baselines that used for this task. We think that our work can be the basis of both deep learning applications in recommender systems and session based recommendations in general. We plan to train the network on automatically extracted item representation that is built on content of the item itself (e.g. thumbnail, video, text) instead of the current input."
-	-- http://blog.deepsystems.io/session-based-recommendations-rnn (in russian)
-	-- https://github.com/hidasib/GRU4Rec
-
-Stern, Herbrich, Graepel - "Matchbox: Large Scale Bayesian Recommendations" [http://research.microsoft.com/apps/pubs/default.aspx?id=79460]
-	"We present a probabilistic model for generating personalised recommendations of items to users of a web service. The Matchbox system makes use of content information in the form of user and item meta data in combination with collaborative filtering information from previous user behavior in order to predict the value of an item for a user. Users and items are represented by feature vectors which are mapped into a low-dimensional ‘trait space’ in which similarity is measured in terms of inner products. The model can be trained from different types of feedback in order to learn user-item preferences. Here we present three alternatives: direct observation of an absolute rating each user gives to some items, observation of a binary preference (like/ don’t like) and observation of a set of ordinal ratings on a userspecific scale. Efficient inference is achieved by approximate message passing involving a combination of Expectation Propagation and Variational Message Passing. We also include a dynamics model which allows an item’s popularity, a user’s taste or a user’s personal rating scale to drift over time. By using Assumed-Density Filtering for training, the model requires only a single pass through the training data. This is an on-line learning algorithm capable of incrementally taking account of new data so the system can immediately reflect the latest user preferences. We evaluate the performance of the algorithm on the MovieLens and Netflix data sets consisting of approximately 1,000,000 and 100,000,000 ratings respectively. This demonstrates that training the model using the on-line ADF approach yields state-of-the-art performance with the option of improving performance further if computational resources are available by performing multiple EP passes over the training data."
-
-Google - "Wide & Deep Learning for Recommender Systems" [http://arxiv.org/abs/1606.07792]
-	"Generalized linear models with nonlinear feature transformations are widely used for large-scale regression and classification problems with sparse inputs. Memorization of feature interactions through a wide set of cross-product feature transformations are effective and interpretable, while generalization requires more feature engineering effort. With less feature engineering, deep neural networks can generalize better to unseen feature combinations through low-dimensional dense embeddings learned for the sparse features. However, deep neural networks with embeddings can over-generalize and recommend less relevant items when the user-item interactions are sparse and high-rank. In this paper, we present Wide & Deep learning—jointly trained wide linear models and deep neural networks—to combine the benefits of memorization and generalization for recommender systems. We productionized and evaluated the system on Google Play, a commercial mobile app store with over one billion active users and over one million apps. Online experiment results show that Wide & Deep significantly increased app acquisitions compared with wide-only and deep-only models. We have also open-sourced our implementation in TensorFlow."
-	-- https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/learn/wide_n_deep_tutorial.py
-
-Covington, Adams, Sargin - "Deep Neural Networks for YouTube Recommendations" [http://research.google.com/pubs/pub45530.html]
-	"YouTube represents one of the largest scale and most sophisticated industrial recommendation systems in existence. In this paper, we describe the system at a high level and focus on the dramatic performance improvements brought by deep learning. The paper is split according to the classic two-stage information retrieval dichotomy: first, we detail a deep candidate generation model and then describe a separate deep ranking model. We also provide practical lessons and insights derived from designing, iterating and maintaining a massive recommendation system with enormous userfacing impact."
-	"We have described our deep neural network architecture for recommending YouTube videos, split into two distinct problems: candidate generation and ranking. Our deep collaborative filtering model is able to effectively assimilate many signals and model their interaction with layers of depth, outperforming previous matrix factorization approaches used at YouTube. There is more art than science in selecting the surrogate problem for recommendations and we found classifying a future watch to perform well on live metrics by capturing asymmetric co-watch behavior and preventing leakage of future information. Withholding discrimative signals from the classifier was also essential to achieving good results - otherwise the model would overfit the surrogate problem and not transfer well to the homepage. We demonstrated that using the age of the training example as an input feature removes an inherent bias towards the past and allows the model to represent the time-dependent behavior of popular of videos. This improved offline holdout precision results and increased the watch time dramatically on recently uploaded videos in A/B testing. Ranking is a more classical machine learning problem yet our deep learning approach outperformed previous linear and tree-based methods for watch time prediction. Recommendation systems in particular benefit from specialized features describing past user behavior with items. Deep neural networks require special representations of categorical and continuous features which we transform with embeddings and quantile normalization, respectively. Layers of depth were shown to effectively model non-linear interactions between hundreds of features. Logistic regression was modified by weighting training examples with watch time for positive examples and unity for negative examples, allowing us to learn odds that closely model expected watch time. This approach performed much better on watch-time weighted ranking evaluation metrics compared to predicting click-through rate directly."
 
 
 

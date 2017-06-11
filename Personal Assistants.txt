@@ -37,15 +37,19 @@
   - http://www.semanticmachines.com/case
 
 
-  "A Paradigm for Situated and Goal-Driven Language Learning" - https://arxiv.org/abs/1610.03585
-
-  http://foldl.me/2016/solving-language/ + http://foldl.me/2016/situated-language-learning/
+  "Learning from Human Instruction" by Tom Mitchell - https://youtube.com/watch?v=p89PKaKirMs
 
   https://techcrunch.com/2017/02/25/conversational-ai-and-the-road-ahead/
 
+
+  "A Paradigm for Situated and Goal-Driven Language Learning" by Jon Gauthier and Igor Mordatch - https://arxiv.org/abs/1610.03585
+  "On 'Solving Language'" by Jon Gauthier - http://foldl.me/2016/solving-language/
+  "Situated Language Learning" by Jon Gauthier - http://foldl.me/2016/situated-language-learning/
+
   Ray Kurzweil: "We have a lot of language data [at Google]... and we don't even know how we would annotate it" - https://youtube.com/watch?v=w9sz7eW6MY8#t=4m27s
 
-  (Joseph Weizenbaum, creator of ELIZA chat bot) "No general solution to the problem of computer understanding of natural language is possible, i.e. language is understood only in contextual frameworks, that even these can be shared by people to only a limited extent, and that consequently even people are not embodiments of any such general solution."
+
+  "The Problem(s) with Neural Chatbots" by Ryan Lowe - http://cs.mcgill.ca/~rlowe1/problem_with_neural_chatbots.pdf
 
 
 
@@ -124,7 +128,8 @@
 	http://theverge.com/2016/12/8/13878444/google-home-developers-actions-ecosystem-app-store
 	http://thesempost.com/google-working-on-conversational-shopping-in-search/
 
-  Amazon Echo
+  Amazon Alexa
+	https://youtube.com/watch?v=2Bazibaz1F8 (Ashwin Ram)
 	http://nytimes.com/2016/03/10/technology/the-echo-from-amazon-brims-with-groundbreaking-promise.html
 
   Apple Siri + VocalIQ

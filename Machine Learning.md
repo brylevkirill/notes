@@ -52,7 +52,7 @@
   <http://thebeautyofml.wordpress.com/2016/04/03/in-a-nutshell-learning/>  
 
   overview by Dmitry Vetrov (in russian) - <http://youtube.com/watch?v=lkh7bLUc30g>  
-  overview by Igor Kuralenok (in russian) - <http://youtube.com/watch?v=ynS7XvkAdLU> + <http://youtube.com/watch?v=jiyD0r2SC-g>  
+  overview by Igor Kuralenok (in russian) - <http://youtube.com/watch?v=ynS7XvkAdLU&t=12m5s> + <http://youtube.com/watch?v=jiyD0r2SC-g&t=12m55s>  
 
   <http://thetalkingmachines.com/blog/>  (podcasts)
 
@@ -71,7 +71,7 @@
 
   [Python notebooks for many algorithms](http://nbtest.herokuapp.com/github/fonnesbeck/Bios366/tree/master/notebooks/)
 
-  <http://ciml.info/dl/v0_8/ciml-v0_8-all.pdf>  
+  <http://ciml.info>  
   <http://metacademy.org>  
   <http://machinelearning.ru/wiki/>  
 
@@ -86,16 +86,10 @@
   [common pitfalls](http://danielnee.com/?p=155&utm_content=buffer163ed)  
   [methods of overfitting](http://hunch.net/?p=22)  
   [more data or better algorithms](http://kdnuggets.com/2015/06/machine-learning-more-data-better-algorithms.html)  
-  [fitting models with more parameters than data points](https://jakevdp.github.io/blog/2015/07/06/model-complexity-myth/)  
   [cross-validation](http://robjhyndman.com/hyndsight/crossvalidation/)  
-  [priors for modelling invariances](http://inference.vc/the-holy-gr/)  
   [baseline](http://nlpers.blogspot.ru/2014/11/the-myth-of-strong-baseline.html)  
-  [feature selection](http://machinelearningmastery.com/an-introduction-to-feature-selection/)  
-  [algorithm selection](http://machinelearningmastery.com/a-data-driven-approach-to-machine-learning/)  
+  [fitting models with more parameters than data points](https://jakevdp.github.io/blog/2015/07/06/model-complexity-myth/)  
   [dimensionality reduction](https://colah.github.io/posts/2014-10-Visualizing-MNIST/)  
-  [hyper-parameter selection](http://startup.ml/blog/hyperparam)  
-  [hyper-parameter search](http://nlpers.blogspot.ru/2014/10/hyperparameter-search-bayesian.html)  
-  [distributed machine learning](http://fastml.com/the-emperors-new-clothes-distributed-machine-learning/)  
   [deception of supervised learning](http://kdnuggets.com/2016/09/deception-of-supervised-learning.html)  
   [classification vs prediction](http://fharrell.com/2017/01/classification-vs-prediction.html)  
   [causality in machine learning](http://unofficialgoogledatascience.com/2017/01/causality-in-machine-learning.html)  
@@ -105,16 +99,17 @@
 
 #### courses
 
-  [Andrew Ng](http://coursera.org/learn/machine-learning)  
-  [Nando de Freitas](http://youtube.com/playlist?list=PLE6Wd9FR--Ecf_5nCbnSQMHqORpiChfJf) (undergraduate)  
-  [Nando de Freitas](http://www.cs.ubc.ca/~nando/540-2013/lectures.html) (graduate)  
+  [Andrew Ng](https://youtube.com/playlist?list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN) ([Coursera](http://coursera.org/learn/machine-learning))  
   [Pedro Domingos](http://youtube.com/playlist?list=PLTPQEx-31JXgtDaC6-3HxWcp7fq4N8YGr)  
-  [Alex Smola](http://alex.smola.org/teaching/10-701-15/)  
+  [Nando de Freitas](http://youtube.com/playlist?list=PLE6Wd9FR--Ecf_5nCbnSQMHqORpiChfJf) (undergraduate)  
+  [Nando de Freitas](http://youtube.com/playlist?list=PLE6Wd9FR--EdyJ5lbFl8UuGjecvVw66F6) (graduate)  
+  [Alex Smola](http://youtube.com/playlist?list=PLZSO_6-bSqHTTV7w9u7grTXBHMH-mw3qn)  
   [Trevor Hastie and Rob Tibshirani](http://dataschool.io/15-hours-of-expert-machine-learning-videos/)  
 
   [Konstantin Vorontsov](http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC) (in russian)  
-  [Igor Kuralenok](http://youtube.com/watch?v=TEyEWTYII64&list=PLlb7e2G7aSpSSsCeUMLN-RxYOLAI9l2ld)  
   [Igor Kuralenok](http://youtube.com/playlist?list=PLlb7e2G7aSpTd91sd82VxWNdtTZ8QnFne) (in russian)  
+  [Igor Kuralenok](http://youtube.com/playlist?list=PLlb7e2G7aSpSWVExpq74FnwFnWgLby56L) (in russian)
+  [Igor Kuralenok](http://youtube.com/playlist?list=PLlb7e2G7aSpSSsCeUMLN-RxYOLAI9l2ld) (in russian)  
   [Igor Kuralenok](http://lektorium.tv/course/22975) (in russian)  
   [Yandex](http://coursera.org/specializations/machine-learning-data-analysis/) (in russian)  
 
@@ -158,6 +153,8 @@
 
 #### news and discussions
 
+  <https://jack-clark.net/import-ai/>
+  <https://www.getrevue.co/profile/wildml>
   <https://reddit.com/r/MachineLearning/>
 
 
@@ -229,15 +226,14 @@
 
 #### bayesian framework
 
-  [Bayesian Inference and Learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)
+  [Bayesian Inference and Learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)  
+  [Bayesian Deep Learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)  
 
   - probability as measure of uncertainty, encodes ignorance in terms of distributions  
   - treats everything as random variables, no difference between random and unknown variables  
   - makes use of Bayes theorem: posterior = likelihood * prior / evidence  
   - possible to compute the estimate p(U|O) for arbitrary unknown variable (U) given observed data (O) and not having any knowledge about latent variables (L) from the joint distribution p(U, O, L)  
   - possibility to use posterior distributions as priors, combination of multiple models  
-
-"From a Bayesian point of view, we should be integrating over likelihoods instead of using optimization methods to select a point estimate of model parameters (usually with ad hoc regularization tuned by cross validation)."
 
 ----
 
@@ -258,7 +254,8 @@ frameworks:
 <https://hips.seas.harvard.edu/blog/2013/02/15/learning-theory-purely-theoretical/>  
 
   [introduction](https://mostafa-samir.github.io/ml-theory-pt1/) by Mostafa Samir  
-  introduction by Jeremy Kun -  
+
+  introduction by Jeremy Kun:  
   <http://jeremykun.com/2014/01/02/probably-approximately-correct-a-formal-theory-of-learning/>  
   <http://jeremykun.com/2014/04/21/an-un-pac-learnable-problem/>  
   <http://jeremykun.com/2014/09/19/occams-razor-and-pac-learning/>  
@@ -405,10 +402,6 @@ Bias-variance tradeoff characterizes how robust algorithm is to errors in its mo
   <https://www.cs.jhu.edu/~jason/tutorials/ml-simplex.html>  
 
   ["All Models of Learning have Flaws"](http://hunch.net/?p=224) by John Langford
-
-  <https://azure.microsoft.com/en-us/documentation/articles/machine-learning-algorithm-cheat-sheet/>
-
-  <http://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/>
 
   <http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html>  
   <http://eferm.com/wp-content/uploads/2011/05/cheat3.pdf>  

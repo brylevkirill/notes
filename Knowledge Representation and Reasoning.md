@@ -134,8 +134,8 @@
 ---
 ### knowledge graph
 
-  [Resource Description Framework](https://dropbox.com/s/ono4n5yij0y1366/RDF.txt)  
-  [Web Ontology Language](https://dropbox.com/s/z89eswv4rgkjrlp/OWL.txt)  
+  [Resource Description Framework](https://github.com/brylevkirill/tech/blob/master/RDF/RDF.txt)  
+  [Web Ontology Language](https://github.com/brylevkirill/tech/blob/master/RDF/OWL.txt)  
 
   ["OWL: The Web Ontology Language"](https://youtube.com/watch?v=EXXIIlfqb0c) by Pavel Klinov  
   ["Ontologies and Knowledge Representation"](https://lektorium.tv/course/22781) course by Boris Konev (in russian)  
@@ -182,13 +182,12 @@
 
 ----
 
-  ["Statistical Relational Learning"](http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning) tutorial by Tresp
+  ["Statistical Relational Learning"](http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning) tutorial by Tresp  
+  ["Constructing and Mining Web-Scale Knowledge Graphs"](http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs) tutorial by Gabrilovich and Bordes  
 
-  ["Constructing and Mining Web-Scale Knowledge Graphs"](http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs) tutorial by Gabrilovich and Bordes
-
-
+  ["Relational Models"](https://arxiv.org/abs/1609.03145) by Tresp and Nickel  
   ["A Review of Relational Machine Learning for Knowledge Graphs: From Multi-Relational Link Prediction to Automated Knowledge Graph Construction"](http://arxiv.org/abs/1503.00759)
-	by Nickel, Murphy, Tresp, Gabrilovich
+	by Nickel, Murphy, Tresp, Gabrilovich  
 
 ----
 
@@ -1044,15 +1043,15 @@
 #### IBM Watson
 
   ["The Science Behind an Answer"](http://youtube.com/watch?v=DywO4zksfXw)  
-  ["Building Watson - A Brief Overview of the DeepQA Project"](http://youtube.com/watch?v=3G2H3DZ8rNc)  
+  ["Building Watson - A Brief Overview of the DeepQA Project"](http://youtube.com/watch?v=3G2H3DZ8rNc) by David Ferrucci  
   ["Inside the Mind of Watson"](http://youtube.com/watch?v=grDKpicM5y0) by Chris Welty  
   ["Building Watson - A Brief Overview of DeepQA"](http://youtube.com/watch?v=_dXNXCv5eo8) by Karthik Visweswariah  
 
-  [papers](https://dropbox.com/sh/udz1kpzzz95xfd6/AADgpBmFsTS1CtkbClfmbyyqa)
+  ["Building Watson: An Overview of the DeepQA Project"](https://aaai.org/ojs/index.php/aimagazine/article/view/2303) by Ferrucci et al.  
+  [papers](https://dropbox.com/sh/udz1kpzzz95xfd6/AADgpBmFsTS1CtkbClfmbyyqa)  
 
 
-  [Deep Learning graduate student vs IBM Watson team](http://youtu.be/tdLmf8t4oqM?t=31m25s)  
-  [IBM Watson considered a hack compared to Deep Learning](http://spacy.io/blog/dmn.html)  
+  [graduate student in Deep Learning vs IBM Watson team](http://youtu.be/tdLmf8t4oqM?t=31m25s)  
 
   [Jeopardy questions](https://kaggle.com/jeradrose/jeopardy)
 
@@ -1286,6 +1285,7 @@ noise, inferring missing information, and determining which candidate facts shou
 
   - <http://techtalks.tv/talks/relation-extraction-with-matrix-factorization-and-universal-schemas/58435/> (Riedel)
   - <http://youtube.com/watch?v=odI3RznREY4> (Yao)
+  - <https://soundcloud.com/nlp-highlights/11a> (Waleed Ammar)
   - <https://github.com/dirkweissenborn/genie-kb/blob/master/model/models.py>
 
 
@@ -1294,7 +1294,7 @@ noise, inferring missing information, and determining which candidate facts shou
 
 >	"In this paper we explore a row-less extension of universal schema that forgoes explicit row representations for an aggregation function over its observed columns. This extension allows prediction between all rows in new textual mentions - whether seen at train time or not - and also provides a natural connection to the provenance supporting the prediction. Our models also have a smaller memory footprint. In this work we show that an aggregation function based on query-specific attention over relation types outperforms query independent aggregations. We show that aggregation models are able to predict on par with models with explicit row representations on seen row entries."
 
-  - <http://www.fields.utoronto.ca/video-archive/2016/11/2267-16181> (30:45, McCallum)
+  - <http://www.fields.utoronto.ca/video-archive/2016/11/2267-16181> (30:45) (McCallum)
   - <http://akbc.ws/2016/slides/verga-akbc16.pdf>
 
 
@@ -1308,7 +1308,7 @@ noise, inferring missing information, and determining which candidate facts shou
 >	Our goal is to combine the rich multistep inference of symbolic logical reasoning with the generalization capabilities of neural networks. We are particularly interested in complex reasoning about entities and relations in text and large-scale knowledge bases (KBs). Neelakantan et al. (2015) use RNNs to compose the distributed semantics of multi-hop paths in KBs; however for multiple reasons, the approach lacks accuracy and practicality. This paper proposes three significant modeling advances: (1) we learn to jointly reason about relations, entities, and entity-types; (2) we use neural attention modeling to incorporate multiple paths; (3) we learn to share strength in a single RNN that represents logical composition across all relations. On a largescale Freebase+ClueWeb prediction task, we achieve 25% error reduction, and a 53% error reduction on sparse relations due to shared strength. On chains of reasoning in WordNet we reduce error in mean quantile by 84% versus previous state-of-the-art."
 
   - <http://videolectures.net/deeplearning2016_das_neural_networks/> (Das)
-  - <http://www.fields.utoronto.ca/video-archive/2016/11/2267-16181> (33:56, McCallum)
+  - <http://www.fields.utoronto.ca/video-archive/2016/11/2267-16181> (33:56) (McCallum)
   - <https://rajarshd.github.io/ChainsofReasoning>
 
 
@@ -1444,7 +1444,7 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 >	"So far we have maintained a strict separation between predicting network structures and learning network parameters. It is easy to imagine that these two problems might be solved jointly, with uncertainty maintained over network structures throughout training and decoding. This might be accomplished either with a monolithic network, by using some higher-level mechanism to “attend” to relevant portions of the computation, or else by integrating with existing tools for learning semantic parsers. The fact that our neural module networks can be trained to produce predictable outputs - even when freely composed - points toward a more general paradigm of “programs” built from neural networks. In this paradigm, network designers (human or automated) have access to a standard kit of neural parts from which to construct models for performing complex reasoning tasks. While visual question answering provides a natural testbed for this approach, its usefulness is potentially much broader, extending to queries about documents and structured knowledge bases or more general signal processing and function approximation."
 
   - <https://youtube.com/watch?v=gDXD3hYfBW8> (Andreas)
-  - <http://research.microsoft.com/apps/video/default.aspx?id=260024> (Darrell, 10:45)
+  - <http://research.microsoft.com/apps/video/default.aspx?id=260024> (10:45) (Darrell)
   - <http://blog.jacobandreas.net/programming-with-nns.html>
   - <https://github.com/abhshkdz/papers/blob/master/reviews/deep-compositional-question-answering-with-neural-module-networks.md>  
   - <http://github.com/jacobandreas/nmn2>  
@@ -1579,22 +1579,25 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 
 >	"Why not traditional QA? Information Retrieval systems work by querying some large knowledge base for terms similar to those in the query. But what if the query lacks informative terms? In such cases, we have to model the compositionality of the query. A dependency-tree recursive neural network model, QANTA, that computes distributed question representations to predict answers. QANTA outperforms multiple strong baselines and defeats human quiz bowl players when combined with IR methods."
 
-  - <http://youtube.com/watch?v=LqsUaprYMOw> + <http://youtube.com/watch?v=-jbqiXvmY9w> (exhibition game against team of Jeopardy champions)
-  - <http://youtube.com/watch?v=kTXJCEvCDYk> + <https://goo.gl/ZcQB6n> (exhibition game against Ken Jennings)
-  - <http://youtube.com/watch?v=c2kGD1EdfFw> (exhibition game against Quiz Bowl champions)
-  - <http://youtube.com/watch?v=bQHo7BApgAU&t=5m48s> (game against California NASAT team)
+  - <http://umiacs.umd.edu/~jbg/projects/IIS-1320538.html>
+  - <http://youtube.com/watch?v=LqsUaprYMOw> + <http://youtube.com/watch?v=-jbqiXvmY9w> (exhibition match against team of Jeopardy champions)
+  - <http://youtube.com/watch?v=kTXJCEvCDYk> + <https://goo.gl/ZcQB6n> (exhibition match against Ken Jennings)
+  - <http://youtube.com/watch?v=c2kGD1EdfFw> (exhibition match against Quiz Bowl champions)
+  - <http://youtube.com/watch?v=bQHo7BApgAU&t=5m48s> (exhibition match against California NASAT team)
+  - <http://youtube.com/watch?v=bYFqMINXayc> (exhibition match at HSNCT)
   - <http://youtube.com/watch?v=ZVHR8OAHDlI> (Boyd-Graber, Iyyer)
   - <http://youtube.com/watch?v=ZRYObdTOaEI> (Iyyer)
   - <http://youtube.com/watch?v=YArUk9QcMe0> (Boyd-Graber)
   - <http://youtube.com/watch?v=eJd9_ahWD4Q> (Iyyer)
   - <http://youtu.be/tdLmf8t4oqM?t=27m25s> (Socher)
   - <http://youtu.be/BVbQRrrsJo0?t=34m30s> (Socher)
-  - <http://videolectures.net/deeplearning2015_socher_nlp_applications/> (Socher, 09:00)
+  - <http://videolectures.net/deeplearning2015_socher_nlp_applications/#t=540> (Socher)
   - <http://youtu.be/9RAo50pVDGI?t=33m20s> (Daume)
   - <http://emnlp2014.org/material/poster-EMNLP2014070.pdf> (technical overview)
-  - <https://github.com/miyyer/qb> + <http://cs.umd.edu/~miyyer/qblearn/qanta.tar.gz> + <https://github.com/jcoreyes/NLQA/tree/master/qanta>
-  - <http://cs.colorado.edu/~jbg/projects/IIS-1320538.html>
-  - <http://hsquizbowl.org/forums/viewtopic.php?f=2&t=17364#p303823>
+  - <https://github.com/Pinafore/qb>
+  - <https://github.com/miyyer/qb>
+  - <http://cs.umd.edu/~miyyer/qblearn/qanta.tar.gz>
+  - <https://github.com/jcoreyes/NLQA/tree/master/qanta>
 
 
 #### Weston, Chopra, Bordes - ["Memory Networks"](http://arxiv.org/abs/1410.3916)
@@ -1656,7 +1659,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 >	Two strategies for transducing with replacement of answer placeholder symbol with entity symbol: document||query (putting all the information about document into thought vector before knowing the query) or query||document (putting all the information about query before thinking about the answer). The second approach (filtering document after digesting query) works better.
 >	We do not tell the model anything about the structure. We don't tell it there are query and document (they are just symbols). We don't tell it there is symbol it has to substitute (it just has to learn them). So there is really long range between variable in query and answer in document (thousands of words). And the problem is more difficult than other transduction problems because of that."
 
-  - <http://videolectures.net/deeplearning2015_blunsom_memory_reading/> (Blunsom, 33:00) + [slides](http://www.iro.umontreal.ca/~memisevr/dlss2015/num-mr.pdf)
+  - <http://videolectures.net/deeplearning2015_blunsom_memory_reading/#t=1980> (Blunsom)
   - <http://youtu.be/-WPP9f1P-Xc?t=22m28s> (Blunsom)
   - <http://egrefen.com/docs/HowMuchLinguistics2015.pdf>
   - <http://www.shortscience.org/paper?bibtexKey=conf/nips/HermannKGEKSB15>

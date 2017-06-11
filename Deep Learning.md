@@ -134,7 +134,6 @@
 
 	<https://github.com/hindupuravinash/nips2016>  
 	<https://gist.github.com/artsobolev/63942e24c81fc296472affb1f138d54c>  
-	<https://reddit.com/r/MachineLearning/comments/5i3v0k/r_nips_2016_overviews/>  
 
   - ICML 2016  
 	<http://techtalks.tv/icml/2016/>  
@@ -215,7 +214,9 @@
   - bridge the gap with biology
 
 
-#### quick overview
+
+---
+### theory
 
   [theoretical motivations](http://rinuboney.github.io/2015/10/18/theoretical-motivations-deep-learning.html)  
 
@@ -224,6 +225,7 @@
 
   [universal approximation theorem explained](http://neuralnetworksanddeeplearning.com/chap4.html)  
   [overfitting and generalization](http://argmin.net/2016/04/18/bottoming-out/)  
+  [bayesian view of generalization](http://inference.vc/everything-that-works-works-because-its-bayesian-2/)  
 
   [stability as foundation of machine learning](http://www.offconvex.org/2016/03/14/stability/)  
   [adversarial examples](http://kdnuggets.com/2015/07/deep-learning-adversarial-examples-misconceptions.html)  
@@ -241,18 +243,17 @@
 
   [connections with manifolds and topology](http://colah.github.io/posts/2014-03-NN-Manifolds-Topology/)  
   [connections with functional programming](http://colah.github.io/posts/2015-09-NN-Types-FP/)  
-  [mathematical mysteries of neural networks](https://youtube.com/watch?v=0wRItoujFTA)  
 
   [common misconceptions](http://stuartreid.co.za/misconceptions-about-neural-networks/)  
 
-  [deep learning and scientific process](http://kdnuggets.com/2015/07/deep-learning-triumph-empiricism-over-theoretical-mathematical-guarantees.html)  
+  [transfer learning](http://sebastianruder.com/transfer-learning/)  
+  [multi-task learning](http://sebastianruder.com/multi-task/)  
+
+  [empiricism over theoretical mathematical guarantees](http://kdnuggets.com/2015/07/deep-learning-triumph-empiricism-over-theoretical-mathematical-guarantees.html)  
   [deep learning and scientific process](http://mlg.eng.cam.ac.uk/yarin/blog_5058.html)  
   [learn something harder](http://inference.vc/deep-learning-is-easy/)  
 
-
-
----
-### theory
+----
 
   The big difference between deep learning and classical statistical machine learning is that one goes beyond the smoothness assumption and adds other priors on data generating distribution.
 
@@ -313,13 +314,22 @@
 
 ----
 
+  "Our understanding of deep learning is still far from complete. A satisfactory characterization of deep learning should cover the following parts:  
+  1) representation power — what types of functions could deep neural networks represent and what are the advantages over using shallow models?  
+  2) optimization of the empirical loss — can we characterize the convergence of stochastic gradient descent on the non-convex empirical loss encountered in deep learning?  
+  3) generalization — why do deep learning models, despite being highly over-parameterized, could still generalize well?"  
+
+  *(["Theory of Deep Learning III: Generalization Properties of SGD"](https://cbmm.mit.edu/publications/theory-deep-learning-iii-generalization-properties-sgd) by Zhang et al.)*
+
+----
+
   "There are two main gaps in our understanding of neural networks: optimization hardness and generalization performance."
 
-  "Training a neural network requires solving a highly non-convex optimization problem in high dimensions. Current training algorithms are all based on gradient descent, which only guarantees convergence to a critical point (local minimum or saddle point). In fact, Anandkumar & Ge 2016 proved that finding even a local minimum is NP-hard, which means that (assuming P != NP) there exist "bad", hard to escape, saddle points in the in the error surface. Yet, these training algorithms are empirically effective for many practical problems, and we don't know why. There have been theoretical papers such as Choromanska et al. 2016 and Kawaguchi 2016 which prove that under certain assumptions the local minima are essentially as good as the global minima, but the assumptions they make are somewhat unrealistic and they don't address the issue of the bad saddle points."
+  "Training a neural network requires solving a highly non-convex optimization problem in high dimensions. Current training algorithms are all based on gradient descent, which only guarantees convergence to a critical point (local minimum or saddle point). In fact, Anandkumar & Ge 2016 proved that finding even a local minimum is NP-hard, which means that (assuming P != NP) there exist "bad", hard to escape, saddle points in the error surface. Yet, these training algorithms are empirically effective for many practical problems, and we don't know why. There have been theoretical papers such as Choromanska et al. 2016 and Kawaguchi 2016 which prove that under certain assumptions the local minima are essentially as good as the global minima, but the assumptions they make are somewhat unrealistic and they don't address the issue of the bad saddle points."
 
   "The other main gap in our understanding is generalization performance: how well does the model perform on novel examples not seen during training? It's easy to show that in the limit of an infinite number of training examples (sampled i.i.d. from a stationary distribution), the training error converges to the expected error on novel examples (provided that you could train to the global optimum). But since we don't have infinite training examples, we are interested in how many examples are needed to achieve a given difference between training and generalization error. Statistical learning theory studies these generalization bounds. Empirically, training a large modern neural network requires a large number of training examples, but not that monumentally large to be practically unfeasible. But if you apply the best known bounds from statistical learning theory (for instance Gao & Zhou 2014) you typically get these unfeasibly huge numbers. Therefore these bounds are very far from being tight, at least for practical problems."
 
-  "One of the reason might be that these bounds tend to assume very little about the data generating distribution, hence they reflect the worst-case performance against adversarial environments, while "natural" environments tend to be more "learnable". It is possible to write distribution-dependent generalization bounds, but we don't know how to formally characterize a distribution over "natural" environments. Approaches such as algorithmic information theory are still unsatisfactory. Therefore we still don't know why neural networks can be trained without overfitting."
+  "One of the reasons might be that these bounds tend to assume very little about the data generating distribution, hence they reflect the worst-case performance against adversarial environments, while "natural" environments tend to be more "learnable". It is possible to write distribution-dependent generalization bounds, but we don't know how to formally characterize a distribution over "natural" environments. Approaches such as algorithmic information theory are still unsatisfactory. Therefore we still don't know why neural networks can be trained without overfitting."
 
   "Furthermore, it should be noted that these two main issues seem to be related in a still poorly understood way: the generalization bounds from statistical learning theory assume that the model is trained to the global optimum on the training set, but in a practical setting you would never train a neural network until convergence even to a saddle point, as to do so would typically cause overfitting. Instead you stop training when the error on a held-out validation set (which is a proxy for the generalization error) stops improving. This is known as "early stopping". So in a sense all this theoretical research on bounding the generalization error of the global optimum may be quite irrelevant: not only we can't efficiently find it, but even if we could, we would not want to, since it would perform worse on novel examples than many "sub-optimal" solutions. It may be the case that optimization hardness is not a flaw of neural network, on the contrary, maybe neural networks can work at all precisely because they are hard to optimize."
 
@@ -379,6 +389,8 @@
   - benefit from stochasticity as regularizer, which makes generalization performance potentially better in general  
 
 ----
+
+  ["Everything that Works Works Because it's Bayesian: Why Deep Nets Generalize?"](http://inference.vc/everything-that-works-works-because-its-bayesian-2/) by Ferenc Huszar
 
   ["Bayesian Reasoning and Deep Learning in Agent-based Systems"](https://youtube.com/watch?v=AggqBRdz6CQ) by Shakir Mohamed  
   ["Principles and Applications of Deep Generative Models"](http://videolectures.net/deeplearning2016_mohamed_generative_models/) by Shakir Mohamed  
@@ -995,7 +1007,7 @@ examples:
 	<http://research.microsoft.com/apps/video/default.aspx?id=259920> (Sukhbaatar)  
 
   - *Stack-Augmented Recurrent Neural Network*  
-	<http://research.microsoft.com/apps/video/default.aspx?id=259646> (Joulin, 15:00)  
+	<http://research.microsoft.com/apps/video/default.aspx?id=259646> (15:00) (Joulin)  
 	<http://youtu.be/FUlTjKL-mVA?t=43m48s> + <https://youtu.be/gi4Zf59_IcU?t=54m43s> (Mikolov)  
 
   - *Neural Stacks/Queues*  
@@ -1037,7 +1049,7 @@ examples:
 	<https://deepmind.com/blog/differentiable-neural-computers/>
 
 	<https://youtube.com/watch?v=steioHoiEms> (Graves)  
-	<https://facebook.com/iclr.cc/videos/1713144705381255/> (Graves, 9:09)  
+	<https://facebook.com/iclr.cc/videos/1713144705381255/> (9:09) (Graves)  
 	<https://youtube.com/watch?v=PQrlOjj8gAc> (Wayne)  
 	<https://youtu.be/otRoAQtc5Dk?t=59m56s> (Polykovskiy)  
 
@@ -1178,8 +1190,9 @@ open questions:
 
   ["Visualizing Representations"](http://colah.github.io/posts/2015-01-Visualizing-Representations/) by Chris Colah
 
+  ["A Theoretical Approach to Semantic Representations"](https://youtube.com/watch?v=KR46z_V0BVw) by Sanjeev Arora  
   "Word Embeddings: Explaining their properties" by Sanjeev Arora
-	([part 1](http://www.offconvex.org/2015/12/12/word-embeddings-1/), [part 2](http://www.offconvex.org/2016/02/14/word-embeddings-2/))
+	([part 1](http://www.offconvex.org/2015/12/12/word-embeddings-1/), [part 2](http://www.offconvex.org/2016/02/14/word-embeddings-2/))  
 
   ["Low-Dimensional Embeddings of Logic"](http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/) by Tim Rocktaschel
 
@@ -1445,6 +1458,9 @@ open questions:
   ----
   #### interesting quotes - loss function and grounding
 
+  Francois Chollet:
+  > "Arguably, intelligence is not about learning the latent manifold of some data, it is about taking control of the process that generated it. The human mind has this remarkable property of filtering out the massive fraction of its input that is irrelevant to what it can control. Learning doesn't just mean compressing data; it's mainly about discarding data. This requires a supervision signal. Control is that signal."
+
   Yoshua Bengio:
   > "Maximum likelihood can be improved upon, it is not necessarily the best objective when learning in complex high-dimensional domains (as arises in unsupervised learning and structured output scenarios)."
 
@@ -1608,6 +1624,7 @@ interesting papers (see below):
   - <http://www.shortscience.org/paper?bibtexKey=conf/icml/IoffeS15>
   - <https://www.evernote.com/shard/s267/sh/64195d10-53b4-4312-8c5a-d10ab5138c36/22ce804ec6c8ab2b9ceb3096b8cd929e>
   - <https://raberrytv.wordpress.com/2016/04/06/batch-normalization-warm-up/>
+  - <https://kevinzakka.github.io/2016/09/14/batch_normalization/>
   - <https://kratzert.github.io/2016/02/12/understanding-the-gradient-flow-through-the-batch-normalization-layer.html>
 
 
@@ -1763,7 +1780,7 @@ interesting papers (see below):
 
   - <http://youtube.com/watch?v=VIRCybGgHts> (Hinton)
   - <http://youtube.com/watch?v=cBLk5baHbZ8> (Hinton)
-  - <http://sms.cam.ac.uk/media/2017973> (Hinton, 38:00)
+  - <http://sms.cam.ac.uk/media/2017973> (38:00) (Hinton)
 
 
 #### Bengio, Lee, Bornschein, Lin - ["Towards Biologically Plausible Deep Learning"](http://arxiv.org/abs/1502.04156)
@@ -1915,7 +1932,7 @@ interesting papers (see below):
 >	"Highway Networks have a gated connection in the depth dimension analogous to the gated connection LSTMs have in the time dimension. There are also Grid LSTMs, which have these gated connections in both dimensions."
 
   - <http://people.idsia.ch/~rupesh/very_deep_learning/>
-  - <http://research.microsoft.com/apps/video/default.aspx?id=259633> (Srivastava, 09:00)
+  - <http://research.microsoft.com/apps/video/default.aspx?id=259633> (9:00) (Srivastava)
   - <https://medium.com/jim-fleming/highway-networks-with-tensorflow-1e6dfa667daa>
   - <https://github.com/LeavesBreathe/tensorflow_with_latest_papers/blob/master/highway_network_modern.py>
   - <https://github.com/Lasagne/Lasagne/blob/highway_example/examples/Highway%20Networks.ipynb>
@@ -2124,7 +2141,7 @@ interesting papers (see below):
 > - Does not seem to be a good model for incremental learning due to computational inefficiency of the model  
 > - Stacks do not seem to be a very general choice for the topology of the memory"  
 
-  - <http://research.microsoft.com/apps/video/default.aspx?id=259646> (Joulin, 15:00)
+  - <http://research.microsoft.com/apps/video/default.aspx?id=259646> (15:00) (Joulin)
   - <http://youtu.be/FUlTjKL-mVA?t=43m48s> + <https://youtu.be/gi4Zf59_IcU?t=54m43s> (Mikolov)
   - <https://research.facebook.com/blog/1642778845966521/inferring-algorithmic-patterns-with-stack/>
   - <https://github.com/facebook/Stack-RNN>
@@ -2211,7 +2228,7 @@ interesting papers (see below):
 
   - <https://deepmind.com/blog/differentiable-neural-computers/>
   - <https://youtube.com/watch?v=steioHoiEms> (Graves)
-  - <https://facebook.com/iclr.cc/videos/1713144705381255/> (Graves, 9:09)
+  - <https://facebook.com/iclr.cc/videos/1713144705381255/> (9:09) (Graves)
   - <https://youtube.com/watch?v=PQrlOjj8gAc> (Wayne)
   - <https://youtu.be/otRoAQtc5Dk?t=59m56s> (Polykovskiy)
   - <https://youtube.com/watch?v=r5XKzjTFCZQ> (Raval)
@@ -2394,8 +2411,8 @@ interesting papers (see below):
   - <http://www-personal.umich.edu/~reedscot/iclr_project.html>
   - <http://youtube.com/watch?v=B70tT4WMyJk> (overview)
   - <http://youtube.com/watch?v=s7PuBqwI2YA> (demo)
-  - <http://youtu.be/tPWGGwmgwG0?t=5m40s> (de Freitas)
-  - <http://videolectures.net/kdd2016_de_freitas_recurrent_neural/> (de Freitas, 00:52:10)
+  - <http://youtu.be/SAcHyzMdbXc?t=5m14s> (de Freitas)
+  - <http://videolectures.net/kdd2016_de_freitas_recurrent_neural/#t=3120> (de Freitas)
   - <http://videolectures.net/iclr2016_reed_neural_programmer/> (Reed)
   - <https://pseudoprofound.wordpress.com/2016/06/07/neural-programmer-interpreters-programs-that-can-learn-programs/>
   - <https://reddit.com/r/MachineLearning/comments/3y4zai/ama_nando_de_freitas/cyc53gt>
@@ -2443,9 +2460,10 @@ interesting papers (see below):
 
 >	"We have shown how to cast the design of optimization algorithms as a learning problem, which enables us to train optimizers that are specialized to particular classes of functions. Our experiments have confirmed that learned neural optimizers compare favorably against state-of-the-art optimization methods used in deep learning. We witnessed a remarkable degree of transfer, with for example the LSTM optimizer trained on 12,288 parameter neural art tasks being able to generalize to tasks with 49,152 parameters, different styles, and different content images all at the same time. We observed similar impressive results when transferring to different architectures in the MNIST task. The results on the CIFAR image labeling task show that the LSTM optimizers outperform handengineered optimizers when transferring to datasets drawn from the same data distribution. In future work we plan to continue investigating the design of the NTM-BFGS optimizers. We observed that these outperformed the LSTM optimizers for quadratic functions, but we saw no benefit of using these methods in the other stochastic optimization tasks. Another important direction for future work is to develop optimizers that scale better in terms of memory usage."
 
-  - <https://youtu.be/tPWGGwmgwG0?t=10m50s> (de Freitas)
+  - <https://youtu.be/SAcHyzMdbXc?t=10m24s> (de Freitas)
   - <https://youtu.be/x1kf4Zojtb0?t=1h4m53s> (de Freitas)
   - <https://blog.acolyer.org/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>
+  - <https://hackernoon.com/learning-to-learn-by-gradient-descent-by-gradient-descent-4da2273d64f2>
   - <https://github.com/deepmind/learning-to-learn>
 
 
@@ -2474,7 +2492,7 @@ interesting papers (see below):
 > - We show qualitatively generative semi-supervised models learn to separate the data classes (content types) from the intra-class variabilities (styles), allowing in a very straightforward fashion to simulate analogies of images on a variety of datasets."  
 
   - <https://youtube.com/watch?v=bJhV2C5KKZ4> (Kingma)
-  - <http://videolectures.net/deeplearning2015_courville_autoencoder_extension/> (Courville, 53:12)
+  - <http://videolectures.net/deeplearning2015_courville_autoencoder_extension/#t=3192> (Courville)
   - <https://youtu.be/0veUbpdBqyk?t=1h7m46s> (Chervinsky, in russian)
 
 
@@ -2650,9 +2668,9 @@ interesting papers (see below):
 >	"We also established that the two-dimensional differentiable attention mechanism embedded in DRAW is beneficial not only to image generation, but also to cluttered image classification."
 
   - <http://youtube.com/watch?v=Zt-7MI9eKEo> (demo)
-  - <http://youtube.com/watch?v=P78QYjWh5sM> (Gregor, 22:14)
+  - <http://youtube.com/watch?v=P78QYjWh5sM&t=22m14s> (Gregor)
   - <https://dl.dropboxusercontent.com/u/16027344/ICML%202015%20Deep%20Learning%20Workshop/Karol%20Gregor%2C%20GOOGLE%20Deepmind.p2g/Default.html> (Gregor)
-  - <http://videolectures.net/deeplearning2015_courville_autoencoder_extension/> (Courville, 1:13:00)
+  - <http://videolectures.net/deeplearning2015_courville_autoencoder_extension/#t=4380> (Courville)
   - <http://github.com/tensorflow/magenta/blob/master/magenta/reviews/draw.md> (Cooijmans)
   - <http://blog.evjang.com/2016/06/understanding-and-implementing.html>
   - <http://kvfrans.com/what-is-draw-deep-recurrent-attentive-writer/>
@@ -2718,7 +2736,7 @@ interesting papers (see below):
 #### Finn, Christiano, Abbeel, Levine - ["A Connection Between Generative Adversarial Networks, Inverse Reinforcement Learning, and Energy-Based Models"](http://arxiv.org/abs/1611.03852)
 >	"Generative adversarial networks (GANs) are a recently proposed class of generative models in which a generator is trained to optimize a cost function that is being simultaneously learned by a discriminator. While the idea of learning cost functions is relatively new to the field of generative modeling, learning costs has long been studied in control and reinforcement learning (RL) domains, typically for imitation learning from demonstrations. In these fields, learning cost function underlying observed behavior is known as inverse reinforcement learning (IRL) or inverse optimal control. While at first the connection between cost learning in RL and cost learning in generative modeling may appear to be a superficial one, we show in this paper that certain IRL methods are in fact mathematically equivalent to GANs. In particular, we demonstrate an equivalence between a sample-based algorithm for maximum entropy IRL and a GAN in which the generator's density can be evaluated and is provided as an additional input to the discriminator. Interestingly, maximum entropy IRL is a special case of an energy-based model. We discuss the interpretation of GANs as an algorithm for training energy-based models, and relate this interpretation to other recent work that seeks to connect GANs and EBMs. By formally highlighting the connection between GANs, IRL, and EBMs, we hope that researchers in all three communities can better identify and apply transferable ideas from one domain to another, particularly for developing more stable and scalable algorithms: a major challenge in all three domains."
 
-  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (33:17, Levine)
+  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (33:17) (Levine)
   - <https://youtu.be/RZOKRFBtSh4?t=10m48s> (Finn)
 
 
@@ -2747,7 +2765,7 @@ interesting papers (see below):
 >	"An extension of GAN that learns disentangled and interpretable representations for images. A regular GAN achieves the objective of reproducing the data distribution in the model, but the layout and organization of the code space is underspecified - there are many possible solutions to mapping the unit Gaussian to images and the one we end up with might be intricate and highly entangled. The InfoGAN imposes additional structure on this space by adding new objectives that involve maximizing the mutual information between small subsets of the representation variables and the observation. This approach provides quite remarkable results. For example, in the images of 3D faces we vary one continuous dimension of the code, keeping all others fixed. It's clear from the five provided examples that the resulting dimensions in the code capture interpretable dimensions, and that the model has perhaps understood that there are camera angles, facial variations, etc., without having been told that these features exist and are important."
 
   - <https://goo.gl/58Ishd> (demo, azimuth) + <https://goo.gl/q7Hp99> (demo, elevation) + <https://goo.gl/Ceqlr4> (demo, lightning) + <https://goo.gl/9ibbsV> (demo, wide or narrow)
-  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-1> (53:28, Chen)
+  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-1> (53:28) (Chen)
   - <http://inference.vc/infogan-variational-bound-on-mutual-information-twice/>
   - <http://wiseodd.github.io/techblog/2017/01/29/infogan/>
   - <https://github.com/openai/InfoGAN>
@@ -3049,7 +3067,7 @@ x."
 
 >	"Can mix and match likelihood ratio and path derivative. If black-box node: might need to place stochastic node in front of it and use likelihood ratio. This includes recurrent neural net policies."
 
-  - <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/> (Abbeel, 1:02:04)
+  - <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724> (Abbeel)
   - <http://joschu.net/docs/thesis.pdf>
 
 
@@ -3305,22 +3323,25 @@ x."
 #### Iyyer, Boyd-Graber, Claudino, Socher, Daume - ["A Neural Network for Factoid Question Answering over Paragraphs"](http://cs.umd.edu/~miyyer/qblearn/)
 >	"We introduce a recursive neural network model that is able to correctly answer paragraph-length factoid questions from a trivia competition called quiz bowl. Text classification methods for tasks like factoid question answering typically use manually defined string matching rules or bag of words representations. Our model is able to succeed where traditional approaches fail, particularly when questions contain very few words (e.g., named entities) indicative of the answer. We introduce a recursive neural network model that can reason over such input by modeling textual compositionality. Unlike previous RNN models, our model QANTA learns word and phrase-level representations that combine across sentences to reason about entities. The model outperforms multiple baselines and, when combined with information retrieval methods, rivals the best human players."
 
-  - <http://youtube.com/watch?v=LqsUaprYMOw> + <http://youtube.com/watch?v=-jbqiXvmY9w> (exhibition game against team of Jeopardy champions)
-  - <http://youtube.com/watch?v=kTXJCEvCDYk> + <https://goo.gl/ZcQB6n> (exhibition game against Ken Jennings)
-  - <http://youtube.com/watch?v=c2kGD1EdfFw> (exhibition game against Quiz Bowl champions)
-  - <http://youtube.com/watch?v=bQHo7BApgAU&t=5m48s> (game against California NASAT team)
+  - <http://umiacs.umd.edu/~jbg/projects/IIS-1320538.html>
+  - <http://youtube.com/watch?v=LqsUaprYMOw> + <http://youtube.com/watch?v=-jbqiXvmY9w> (exhibition match against team of Jeopardy champions)
+  - <http://youtube.com/watch?v=kTXJCEvCDYk> + <https://goo.gl/ZcQB6n> (exhibition match against Ken Jennings)
+  - <http://youtube.com/watch?v=c2kGD1EdfFw> (exhibition match against Quiz Bowl champions)
+  - <http://youtube.com/watch?v=bQHo7BApgAU&t=5m48s> (exhibition against California NASAT team)
+  - <http://youtube.com/watch?v=bYFqMINXayc> (exhibition match at HSNCT)
   - <http://youtube.com/watch?v=ZVHR8OAHDlI> (Boyd-Graber, Iyyer)
   - <http://youtube.com/watch?v=ZRYObdTOaEI> (Iyyer)
   - <http://youtube.com/watch?v=YArUk9QcMe0> (Boyd-Graber)
   - <http://youtube.com/watch?v=eJd9_ahWD4Q> (Iyyer)
   - <http://youtu.be/tdLmf8t4oqM?t=27m25s> (Socher)
   - <http://youtu.be/BVbQRrrsJo0?t=34m30s> (Socher)
-  - <http://videolectures.net/deeplearning2015_socher_nlp_applications/> (Socher, 09:00)
+  - <http://videolectures.net/deeplearning2015_socher_nlp_applications/#t=540> (Socher)
   - <http://youtu.be/9RAo50pVDGI?t=33m20s> (Daume)
   - <http://emnlp2014.org/material/poster-EMNLP2014070.pdf> (technical overview)
-  - <https://github.com/miyyer/qb> + <http://cs.umd.edu/~miyyer/qblearn/qanta.tar.gz> + <https://github.com/jcoreyes/NLQA/tree/master/qanta>
-  - <http://cs.colorado.edu/~jbg/projects/IIS-1320538.html>
-  - <http://hsquizbowl.org/forums/viewtopic.php?f=2&t=17364#p303823>
+  - <https://github.com/Pinafore/qb>
+  - <https://github.com/miyyer/qb>
+  - <http://cs.umd.edu/~miyyer/qblearn/qanta.tar.gz>
+  - <https://github.com/jcoreyes/NLQA/tree/master/qanta>
 
 
 #### Hermann, Kocisky, Grefenstette, Espeholt, Kay, Suleyman, Blunsom - ["Teaching Machines to Read and Comprehend"](http://arxiv.org/abs/1506.03340)
@@ -3346,7 +3367,7 @@ x."
 
 >	"We do not tell the model anything about the structure. We don't tell it there are query and document (they are just symbols). We don't tell it there is symbol it has to substitute (it just has to learn them). So there is really long range between variable in query and answer in document (thousands of words). And the problem is more difficult than other transduction problems because of that."
 
-  - <http://videolectures.net/deeplearning2015_blunsom_memory_reading/> (Blunsom, 33:00) + <http://www.iro.umontreal.ca/~memisevr/dlss2015/num-mr.pdf>
+  - <http://videolectures.net/deeplearning2015_blunsom_memory_reading/#t=1980> (Blunsom)
   - <http://youtu.be/-WPP9f1P-Xc?t=22m28s> (Blunsom)
   - <http://egrefen.com/docs/HowMuchLinguistics2015.pdf>
   - <http://www.shortscience.org/paper?bibtexKey=conf/nips/HermannKGEKSB15>
@@ -3414,7 +3435,7 @@ x."
 #### Xu, Ba, Kiros, Cho, Courville, Salakhutdinov, Zemel, Bengio - ["Show, Attend and Tell: Neural Image Caption Generation with Visual Attention"](http://arxiv.org/abs/1502.03044)
 >	"Inspired by recent work in machine translation and object detection, we introduce an attention based model that automatically learns to describe the content of images. We describe how we can train this model in a deterministic manner using standard backpropagation techniques and stochastically by maximizing a variational lower bound. We also show through visualization how the model is able to automatically learn to fix its gaze on salient objects while generating the corresponding words in the output sequence. We validate the use of attention with state-of-the-art performance on three benchmark datasets: Flickr8k, Flickr30k and MS COCO."
 
-  - <http://videolectures.net/deeplearning2015_salakhutdinov_deep_learning_2/> (Salakhutdinov, 12:19)
+  - <http://videolectures.net/deeplearning2015_salakhutdinov_deep_learning_2/#t=739> (Salakhutdinov)
   - <http://videolectures.net/icml2015_xu_visual_attention/>
   - <https://github.com/kelvinxu/arctic-captions>
 

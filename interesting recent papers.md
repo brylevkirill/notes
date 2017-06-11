@@ -54,16 +54,24 @@ interesting papers:
 >	"Large, unregularized deep nets outperform shallower nets with regularization."  
 >	"SOTA models can fit arbitrary label patterns, even on large data-sets like ImageNet."  
 >	"Popular models can fit structureless noise."  
-  - <https://facebook.com/iclr.cc/videos/1710657292296663/> (Recht, 18:25)  
-  - <https://facebook.com/iclr.cc/videos/1710657292296663/> (Zhang, 53:40)  
+
+>	"In the case of one-pass SGD, where each training point is only visited at most once, the algorithm is essentially optimizing the expected loss directly. Therefore, there is no need to define generalization. However, in practice, unless one has access to infinite training samples, one-pass SGD is rarely used. Instead, it is almost always better to run many passes of SGD over the same training set. In this case, the algorithm is optimizing the empirical loss, and the deviation between the empirical loss and the expected loss (i.e. the generalization error) needs to be controlled. In statistical learning theory, the deviation is typically controlled by restricting the complexity of the hypothesis space. For example, in binary classification, for a hypothesis space with VC-dimension d and n i.i.d. training samples, the generalization error could be upper bounded by O(sqrt(d/n)). In the distribution-free setting, the VC dimension also provide a lower bound for the generalization error. For example, if we are highly over-parameterized, i.e. d >> n, then there is a data distribution under which the generalization error could be arbitrarily bad. This worst case behavior is recently demonstrated by a randomization test on large neural networks that have the full capability of shattering the whole training set. In those experiments, zero-error minimizers for the empirical loss are found by SGD. Since the test performance could be only at the level of chance, the worst possible generalization error is observed. On the other hand, those same networks are found to generalize very well on natural image classification datasets, achieving the state-of-the-art performance on some standard benchmarks. This create a puzzle as our traditional characterization of generalization no longer readily apply in this scenario."
+  - <https://facebook.com/iclr.cc/videos/1710657292296663/> (18:25) (Recht)  
+  - <https://facebook.com/iclr.cc/videos/1710657292296663/> (53:40) (Zhang)  
   - <https://blog.acolyer.org/2017/05/11/understanding-deep-learning-requires-re-thinking-generalization/>  
+
+[Deep Nets Don't Learn via Memorization](https://openreview.net/pdf?id=rJv6ZgHYg)  
+>	"We use empirical methods to argue that deep neural networks do not achieve their performance by memorizing training data, in spite of overlyexpressive model architectures. Instead, they learn a simple available hypothesis that fits the finite data samples. In support of this view, we establish that there are qualitative differences when learning noise vs. natural datasets, showing that: (1) more capacity is needed to fit noise, (2) time to convergence is longer for random labels, but shorter for random inputs, and (3) DNNs trained on real data examples learn simpler functions than when trained with noise data, as measured by the sharpness of the loss function at convergence. Finally, we demonstrate that for appropriately tuned explicit regularization, e.g. dropout, we can degrade DNN training performance on noise datasets without compromising generalization on real data."
+
+[Opening the Black Box of Deep Neural Networks via Information](http://arxiv.org/abs/1703.00810)  
+>	"DNNs with SGD have two phases: error minimization, then representation compression"  
 
 [Capacity and Trainability in Recurrent Neural Networks](http://arxiv.org/abs/1611.09913) (Google Brain)  
 >	"RNNs can store an amount of task information which is linear in the number of parameters, and is approximately 5 bits per parameter.  
 >	RNNs can additionally store approximately one real number from their input history per hidden unit."  
 
-[Opening the Black Box of Deep Neural Networks via Information](http://arxiv.org/abs/1703.00810)  
->	"DNNs with SGD have two phases: error minimization, then representation compression"  
+[The Marginal Value of Adaptive Gradient Methods in Machine Learning](https://arxiv.org/abs/1705.08292) (Recht)  
+>	"Despite the fact that our experimental evidence demonstrates that adaptive methods are not advantageous for machine learning, the Adam algorithm remains incredibly popular. We are not sure exactly as to why, but hope that our step-size tuning suggestions make it easier for practitioners to use standard stochastic gradient methods in their research. In our conversations with other researchers, we have surmised that adaptive gradient methods are particularly popular for training GANs and Q-learning with function approximation. Both of these applications stand out because they are not solving optimization problems. It is possible that the dynamics of Adam are accidentally well matched to these sorts of optimization-free iterative search procedures. It is also possible that carefully tuned stochastic gradient methods may work as well or better in both of these applications."
 
 
 
@@ -166,6 +174,19 @@ interesting papers:
 
 [Understanding Synthetic Gradients and Decoupled Neural Interfaces](http://arxiv.org/abs/1703.00522) (DeepMind)  
 
+[Learning to Communicate with Deep Multi-Agent Reinforcement Learning](http://arxiv.org/abs/1605.06676) (DeepMind)  
+  - <https://youtube.com/watch?v=cfsYBY4nd1c>  
+  - <https://youtu.be/SAcHyzMdbXc?t=19m> (de Freitas)  
+  - <https://youtube.com/watch?v=xL-GKD49FXs> (Foerster)  
+  - <http://videolectures.net/deeplearning2016_foerster_learning_communicate/> (Foerster)  
+  - <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.07133>  
+  - <https://github.com/iassael/learning-to-communicate>  
+
+[Learning Multiagent Communication with Backpropagation](http://arxiv.org/abs/1605.07736) (Facebook)  
+  - <https://youtu.be/SAcHyzMdbXc?t=19m> (de Freitas)  
+  - <https://youtu.be/_iVVXWkoEAs?t=30m6s> (Fergus)  
+  - <https://github.com/facebookresearch/CommNet>  
+
 
 
 ---
@@ -173,7 +194,7 @@ interesting papers:
 
 [Learning to Learn by Gradient Descent by Gradient Descent](http://arxiv.org/abs/1606.04474) (DeepMind)  
 >	"Take some computation where you usually wouldn’t keep around intermediate states, such as a planning computation (say value iteration, where you only keep your most recent estimate of the value function) or stochastic gradient descent (where you only keep around your current best estimate of the parameters). Now keep around those intermediate states as well, perhaps reifying the unrolled computation in a neural net, and take gradients to optimize the entire computation with respect to some loss function. Instances: Value Iteration Networks, Learning to learn by gradient descent by gradient descent."  
-  - <https://youtu.be/tPWGGwmgwG0?t=10m50s> (DeepMind)  
+  - <https://youtu.be/SAcHyzMdbXc?t=10m24s> (DeepMind)  
   - <https://youtu.be/x1kf4Zojtb0?t=1h4m53s> (DeepMind)  
   - <https://blog.acolyer.org/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>  
   - <https://hackernoon.com/learning-to-learn-by-gradient-descent-by-gradient-descent-4da2273d64f2>  
@@ -196,8 +217,10 @@ interesting papers:
 >	- curriculum learning / universal RL^2  
 >	- RL^2 + one-shot imitation learning  
 >	- RL^2 for simulation -> real world transfer"  
-  - <https://youtu.be/BskhUBPRrqE?t=6m28s> + <https://youtu.be/19eNQ1CLt5A?t=7m52s> (Sutskever)  
+  - <http://www.fields.utoronto.ca/video-archive/2017/02/2267-16530> (19:00) (Abbeel)  
   - <https://youtube.com/watch?v=SfCa1HQMkuw&t=1h16m56s> (Schulman)  
+  - <https://youtu.be/BskhUBPRrqE?t=6m28s> (Sutskever)  
+  - <https://youtu.be/19eNQ1CLt5A?t=7m52s> (Sutskever)  
   - <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/RL2-Fast_Reinforcement_Learning_via_Slow_Reinforcement_Learning.md>  
 
 [Learning to Reinforcement Learn](http://arxiv.org/abs/1611.05763) (DeepMind)  
@@ -215,7 +238,7 @@ interesting papers:
 
 [Neural Architecture Search with Reinforcement Learning](http://arxiv.org/abs/1611.01578) (Google Brain)  
   - <https://youtube.com/watch?v=XDtFXBYpl1w> (Le)  
-  - <https://facebook.com/iclr.cc/videos/1713144705381255/> (Zoph, 1:08:31)  
+  - <https://facebook.com/iclr.cc/videos/1713144705381255/> (1:08:31) (Zoph)  
   - <https://blog.acolyer.org/2017/05/10/neural-architecture-search-with-reinforcement-learning/>  
 
 [Designing Neural Network Architectures using Reinforcement Learning](http://arxiv.org/abs/1611.02167)  
@@ -231,7 +254,7 @@ interesting papers:
   - <https://sites.google.com/view/maml> (demo)  
 
 [Optimization as a Model for Few-Shot Learning](https://openreview.net/forum?id=rJY0-Kcll) (Larochelle)  
-  - <https://facebook.com/iclr.cc/videos/1713144705381255/> (Ravi, 1:26:48)  
+  - <https://facebook.com/iclr.cc/videos/1713144705381255/> (1:26:48) (Ravi)  
 
 ----
 [Matching Networks for One Shot Learning](http://arxiv.org/abs/1606.04080) (Vinyals)  
@@ -314,7 +337,7 @@ interesting papers:
 [Density Estimation using Real NVP](http://arxiv.org/abs/1605.08803)  
 >	"Most interestingly, it is the only powerful generative model I know that combines A) a tractable likelihood, B) an efficient / one-pass sampling procedure and C) the explicit learning of a latent representation."  
   - <http://www-etud.iro.umontreal.ca/~dinhlaur/real_nvp_visual/> (demo)  
-  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Phased-LSTM-Accelerating-Recurrent-Network-Training-for-Long-or-Event-based-Sequences> (08:19, Dinh) + [slides](https://docs.google.com/presentation/d/152NyIZYDRlYuml5DbBONchJYA7AAwlti5gTWW1eXlLM/)  
+  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Phased-LSTM-Accelerating-Recurrent-Network-Training-for-Long-or-Event-based-Sequences> (08:19) (Dinh) + [slides](https://docs.google.com/presentation/d/152NyIZYDRlYuml5DbBONchJYA7AAwlti5gTWW1eXlLM/)  
   - <https://periscope.tv/hugo_larochelle/1ypKdAVmbEpGW> (Dinh)  
   - <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.08803>  
   - <https://github.com/tensorflow/models/tree/master/real_nvp>  
@@ -352,12 +375,18 @@ interesting papers:
 
 ----
 [A Connection Between Generative Adversarial Networks, Inverse Reinforcement Learning, and Energy-Based Models](https://arxiv.org/abs/1611.03852) (Abbeel, Levine)  
-  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (33:17, Levine)  
+  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (33:17) (Levine)  
   - <https://youtu.be/RZOKRFBtSh4?t=10m48s> (Finn)  
   - <http://pemami4911.github.io/paper-summaries/2017/02/12/gans-irl-ebm.html>  
 
 ----
+[On Unifying Deep Generative Models](https://arxiv.org/abs/1706.00550) (Salakhutdinov)  
+
+[Bayesian GAN](https://arxiv.org/abs/1705.09558)  
+>	"In this paper, we present a simple Bayesian formulation for end-to-end unsupervised and semi-supervised learning with generative adversarial networks. Within this framework, we marginalize the posteriors over the weights of the generator and discriminator using stochastic gradient Hamiltonian Monte Carlo. We interpret data samples from the generator, showing exploration across several distinct modes in the generator weights. We also show data and iteration efficient learning of the true distribution. We also demonstrate state of the art semi-supervised learning performance on several benchmarks, including SVHN, MNIST, CIFAR-10, and CelebA. The simplicity of the proposed approach is one of its greatest strengths: inference is straightforward, interpretable, and stable. Indeed all of the experimental results were obtained without feature matching, normalization, or any ad-hoc techniques."
+
 [Learning in Implicit Generative Models](http://arxiv.org/abs/1610.03483) (Mohamed)  
+  - <https://casmls.github.io/general/2017/05/24/ligm.html>  
 
 [Variational Inference using Implicit Distributions](http://arxiv.org/abs/1702.08235) (Huszar)  
 >	"This paper provides a unifying review of existing algorithms establishing connections between variational autoencoders, adversarially learned inference, operator VI, GAN-based image reconstruction, and more."  
@@ -387,8 +416,10 @@ interesting papers:
 [Towards Principled Methods for Training Generative Adversarial Networks](https://arxiv.org/abs/1701.04862) (Facebook)  
 
 [Generalization and Equilibrium in Generative Adversarial Nets](https://arxiv.org/abs/1703.00573)  
-  - <https://youtube.com/watch?v=V7TliSCqOwI> (Arora)
-  - <http://www.offconvex.org/2017/03/30/GANs2/> (Arora)
+  - <https://youtube.com/watch?v=V7TliSCqOwI> (Arora)  
+  - <http://www.offconvex.org/2017/03/30/GANs2/> (Arora)  
+
+[Good Semi-supervised Learning That Requires a Bad GAN](https://arxiv.org/abs/1705.09783) (Salakhutdinov)  
 
 ----
 [Wasserstein GAN](https://arxiv.org/abs/1701.07875) (Facebook)  
@@ -406,7 +437,7 @@ interesting papers:
 >
 >	"Using Wasserstein objective reduces instability, but we still lack proof of existence of an equilibrium. Game theory doesn’t help because we need a so-called pure equilibrium, and simple counter-examples such as rock/paper/scissors show that it doesn’t exist in general. Such counterexamples are easily turned into toy GAN scenarios with generator and discriminator having finite capacity, and the game lacks a pure equilibrium."  
   - <https://youtube.com/watch?v=DfJeaa--xO0&t=26m27s> (Bottou)  
-  - <https://facebook.com/iclr.cc/videos/1710657292296663/> (Arjowski, 1:30:02)  
+  - <https://facebook.com/iclr.cc/videos/1710657292296663/> (1:30:02) (Arjowski)  
   - <http://www.alexirpan.com/2017/02/22/wasserstein-gan.html>  
   - <https://paper.dropbox.com/doc/Wasserstein-GAN-GvU0p2V9ThzdwY3BbhoP7>  
   - <http://wiseodd.github.io/techblog/2017/02/04/wasserstein-gan/>  
@@ -417,6 +448,12 @@ interesting papers:
   - <https://github.com/blei-lab/edward/blob/master/examples/gan_wasserstein.py>  
   - <https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/WassersteinGAN>  
   - <https://github.com/igul222/improved_wgan_training>  
+
+[Improved Training of Wasserstein GANs](https://arxiv.org/abs/1704.00028) (Facebook)  
+  - <https://casmls.github.io/general/2017/04/13/gan.html>  
+
+[The Cramer Distance as a Solution to Biased Wasserstein Gradients](https://arxiv.org/abs/1705.10743) (DeepMind)  
+  - <https://github.com/jiamings/cramer-gan>  
 
 [BEGAN: Boundary Equilibrium Generative Adversarial Networks](https://arxiv.org/abs/1703.10717) (Google Brain)  
 >	"We propose a new equilibrium enforcing method paired with a loss derived from the Wasserstein distance for training auto-encoder based Generative Adversarial Networks. This method balances the generator and discriminator during training. Additionally, it provides a new approximate convergence measure, fast and stable training and high visual quality. We also derive a way of controlling the trade-off between image diversity and visual quality. We focus on the image generation task, setting a new milestone in visual quality, even at higher resolutions. This is achieved while using a relatively simple model architecture and a standard training procedure."  
@@ -490,10 +527,6 @@ interesting papers:
   - <https://pbs.twimg.com/media/Czpn0VLVEAA_RpK.jpg:large>  
   - <https://github.com/Evolving-AI-Lab/ppgn>  
 
-[Sampling Generative Networks: Notes on a Few Effective Techniques](http://arxiv.org/abs/1609.04468)  # smilevector  
-  - <https://twitter.com/smilevector> (demo)  
-  - <https://github.com/dribnet/plat>  
-
 ----
 [Learning from Simulated and Unsupervised Images through Adversarial Training](http://arxiv.org/abs/1612.07828) (Apple)  
   - <https://github.com/carpedm20/simulated-unsupervised-tensorflow>  
@@ -537,6 +570,10 @@ interesting papers:
   - <http://techtalks.tv/talks/variational-inference-for-monte-carlo-objectives/62507/>  
   - <https://evernote.com/shard/s189/sh/54a9fb88-1a71-4e8a-b0e3-f13480a68b8d/0663de49b93d397f519c7d7f73b6a441>  
 
+[Discrete Variational Autoencoders](https://arxiv.org/abs/1609.02200) (D-Wave)  
+  - <https://youtube.com/watch?v=c6GukeAkyVs> (Struminsky)  
+
+----
 [The Concrete Distribution: A Continuous Relaxation of Discrete Random Variables](http://arxiv.org/abs/1611.00712) (DeepMind)  
   - <http://youtube.com/watch?v=JFgXEbgcT7g> (Jang)  
   - <https://laurent-dinh.github.io/2016/11/22/gumbel-max.html>  
@@ -558,9 +595,6 @@ interesting papers:
 
 [REBAR: Low-variance, unbiased gradient estimates for discrete latent variable models](http://arxiv.org/abs/1703.07370) (Google Brain + DeepMind)  
 >	"Learning in models with discrete latent variables is challenging due to high variance gradient estimators. Generally, approaches have relied on control variates to reduce the variance of the REINFORCE estimator. Recent work (Jang et al. 2016, Maddison et al. 2016) has taken a different approach, introducing a continuous relaxation of discrete variables to produce low-variance, but biased, gradient estimates. In this work, we combine the two approaches through a novel control variate that produces low-variance, unbiased gradient estimates."  
-
-[Discrete Variational Autoencoders](https://arxiv.org/abs/1609.02200) (D-Wave)  
-  - <https://youtube.com/watch?v=c6GukeAkyVs> (Struminsky)  
 
 ----
 [Multi-modal Variational Encoder-Decoders](http://arxiv.org/abs/1612.00377) (Courville)  
@@ -605,14 +639,6 @@ interesting papers:
 
 [Stick-Breaking Variational Autoencoders](http://arxiv.org/abs/1605.06197)  # latent representation with stochastic dimensionality  
 
-----
-[A Hybrid Convolutional Variational Autoencoder for Text Generation](http://arxiv.org/pdf/1702.02390)  
-  - <https://github.com/stas-semeniuta/textvae>  
-
-[Improved Variational Autoencoders for Text Modeling using Dilated Convolutions](http://arxiv.org/abs/1702.08139) (Salakhutdinov)  
-
-[Controllable Text Generation](http://arxiv.org/abs/1703.00955) (Salakhutdinov)  
-
 [Grammar Variational Autoencoder](http://arxiv.org/abs/1703.01925)  
   - <https://youtube.com/watch?v=ar4Fm1V65Fw> (Paige)  
 
@@ -632,7 +658,7 @@ interesting papers:
   - <https://github.com/shiretzet/PixelRNN>  
 
 [Conditional Image Generation with PixelCNN Decoders](http://arxiv.org/abs/1606.05328) (DeepMind)  
-  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-1> (27:26, van den Oord)  
+  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-1> (27:26) (van den Oord)  
   - <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1606.05328#shagunsodhani>  
   - <http://sergeiturukin.com/2017/02/22/pixelcnn.html>  
   - <https://github.com/openai/pixel-cnn>  
@@ -647,7 +673,7 @@ interesting papers:
 
 ----
 [WaveNet: A Generative Model for Raw Audio](http://arxiv.org/abs/1609.03499) (DeepMind)  
-  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-1> (42:36, van den Oord)  
+  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-1> (42:36) (van den Oord)  
   - <https://github.com/ibab/tensorflow-wavenet>  
   - <https://github.com/basveeling/wavenet/>  
   - <https://github.com/usernaamee/keras-wavenet>  
@@ -663,17 +689,17 @@ interesting papers:
   - <https://github.com/DingKe/nn_playground/tree/master/gcnn>  
 
 ----
-[An Actor-Critic Algorithm for Sequence Prediction](http://arxiv.org/abs/1607.07086) (Bengio)  
-
 [Tuning Recurrent Neural Networks with Reinforcement Learning](http://arxiv.org/abs/1611.02796) (Google Brain)  
 >	"In contrast to relying solely on possibly biased data, our approach allows for encoding high-level domain knowledge into the RNN, providing a general, alternative tool for training sequence models."  
   - <https://magenta.tensorflow.org/2016/11/09/tuning-recurrent-networks-with-reinforcement-learning/>  
-  - <https://www.technologyreview.com/s/604010/google-brain-wants-creative-ai-to-help-humans-make-a-new-kind-of-art/> (10:45, Eck)  
+  - <https://www.technologyreview.com/s/604010/google-brain-wants-creative-ai-to-help-humans-make-a-new-kind-of-art/> (10:45) (Eck)  
   - <https://github.com/tensorflow/magenta/tree/master/magenta/models/rl_tuner>  
 
 [Learning to Decode for Future Success](http://arxiv.org/abs/1701.06549) (Stanford)  
 
 ----
+[An Actor-Critic Algorithm for Sequence Prediction](http://arxiv.org/abs/1607.07086) (Bengio)  
+
 [Professor Forcing: A New Algorithm for Training Recurrent Networks](http://arxiv.org/abs/1610.09038)  
 >	"In professor forcing, G is simply an RNN that is trained to predict the next element in a sequence and D a discriminative bi-directional RNN. G is trained to fool D into thinking that the hidden states of G occupy the same state space at training (feeding ground truth inputs to the RNN) and inference time (feeding generated outputs as the next inputs). D, in turn, is trained to tell apart the hidden states of G at training and inference time. At the Nash equilibrium, D cannot tell apart the state spaces any better and G cannot make them any more similar. This is motivated by the problem that RNNs typically diverge to regions of the state space that were never observed during training and which are hence difficult to generalize to."  
   - <https://youtube.com/watch?v=I7UFPBDLDIk>  
@@ -684,16 +710,11 @@ interesting papers:
 
 ----
 [Sequence-to-Sequence Learning as Beam-Search Optimization](http://arxiv.org/abs/1606.02960)  
-  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-2> (Wiseman, 0:44:02)  
+  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-2> (44:02) (Wiseman)  
   - <http://shortscience.org/paper?bibtexKey=journals/corr/1606.02960>  
+  - <https://medium.com/@sharaf/a-paper-a-day-2-sequence-to-sequence-learning-as-beam-search-optimization-92424b490350>  
 
-[Globally Normalized Transition-Based Neural Networks](http://arxiv.org/abs/1603.06042)  # SyntaxNet, Parsey McParseface
->	"The parser uses a feed forward NN, which is much faster than the RNN usually used for parsing. Also the paper is using a global method to solve the label bias problem. This method can be used for many tasks and indeed in the paper it is used also to shorten sentences by throwing unnecessary words. The label bias problem arises when predicting each label in a sequence using a softmax over all possible label values in each step. This is a local approach but what we are really interested in is a global approach in which the sequence of all labels that appeared in a training example are normalized by all possible sequences. This is intractable so instead a beam search is performed to generate alternative sequences to the training sequence. The search is stopped when the training sequence drops from the beam or ends. The different beams with the training sequence are then used to compute the global loss."  
-  - <https://github.com/udibr/notes/raw/master/Talk%20by%20Sasha%20Rush%20-%20Interpreting%2C%20Training%2C%20and%20Distilling%20Seq2Seq%E2%80%A6.pdf>  
-  - <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1603.06042>  
-  - <https://github.com/tensorflow/models/tree/master/syntaxnet>  
-
-[Length Bias in Encoder Decoder Models and a Case for Global Conditioning](http://arxiv.org/abs/1606.03402) (Google)  
+[Length Bias in Encoder Decoder Models and a Case for Global Conditioning](http://arxiv.org/abs/1606.03402) (Google)  # eliminating beam search
 
 ----
 [Order Matters: Sequence to Sequence for Sets](http://arxiv.org/abs/1511.06391) (Vinyals)  
@@ -704,11 +725,15 @@ interesting papers:
 ---
 ### bayesian inference and learning
 
+[Stochastic Gradient Descent as Approximate Bayesian Inference](https://arxiv.org/abs/1704.04289) (Blei)  
+  - <https://reddit.com/r/MachineLearning/comments/6d7nb1/d_machine_learning_wayr_what_are_you_reading_week/dihh54a/>  
+
+----
 [Bayesian Recurrent Neural Networks](https://arxiv.org/abs/1704.02798) (DeepMind)  
 
 [Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles](http://arxiv.org/abs/1612.01474) (DeepMind)  
 
-[Dropout Inference in Bayesian Neural Networks with Alpha-divergences](http://mlg.eng.cam.ac.uk/yarin/PDFs/LiGal2017.pdf)
+[Dropout Inference in Bayesian Neural Networks with Alpha-divergences](http://mlg.eng.cam.ac.uk/yarin/PDFs/LiGal2017.pdf)  
 >	"We demonstrate improved uncertainty estimates and accuracy compared to VI in dropout networks. We study our model’s epistemic uncertainty far away from the data using adversarial images, showing that these can be distinguished from non-adversarial images by examining our model’s uncertainty."
 
 ----
@@ -737,9 +762,6 @@ interesting papers:
 
 [Text Understanding with the Attention Sum Reader Network](http://arxiv.org/abs/1603.01547) (IBM Watson)  
 
-[Machine Comprehension by Text-to-Text Neural Question Generation](https://arxiv.org/abs/1705.02012) (Maluuba)  
-  - <https://youtube.com/watch?v=UIzcIC5RQN8>  
-
 [Question Answering on Knowledge Bases and Text using Universal Schema and Memory Networks](https://arxiv.org/abs/1704.08384) (McCallum)  
 
 [Key-Value Memory Networks for Directly Reading Documents](http://arxiv.org/abs/1606.03126) (Weston)  
@@ -757,7 +779,7 @@ interesting papers:
 ----
 [Deep Compositional Question Answering with Neural Module Networks](http://arxiv.org/abs/1511.02799) (Darrell)  
   - <https://youtube.com/watch?v=gDXD3hYfBW8> (Andreas)  
-  - <http://research.microsoft.com/apps/video/default.aspx?id=260024> (Darrell, 10:45)  
+  - <http://research.microsoft.com/apps/video/default.aspx?id=260024> (10:45) (Darrell)  
   - <http://blog.jacobandreas.net/programming-with-nns.html>  
   - <https://github.com/abhshkdz/papers/blob/master/reviews/deep-compositional-question-answering-with-neural-module-networks.md>  
   - <http://github.com/jacobandreas/nmn2>  
@@ -770,6 +792,7 @@ interesting papers:
 [Learning to Reason: End-to-End Module Networks for Visual Question Answering](https://arxiv.org/abs/1704.05526) (Darrell)  
 
 [Inferring and Executing Programs for Visual Reasoning](https://arxiv.org/abs/1705.03633) (Stanford, Facebook)
+  - <https://github.com/facebookresearch/clevr-iep>  
 
 ----
 [Neural Enquirer: Learning to Query Tables with Natural Language](http://arxiv.org/abs/1512.00965)  
@@ -796,14 +819,14 @@ interesting papers:
 [WebNav: A New Large-Scale Task for Natural Language based Sequential Decision Making](http://arxiv.org/abs/1602.02261)  
 
 ----
-[Learning Physical Intuition of Block Towers by Example](http://arxiv.org/abs/1603.01312) (Facebook)  
-  - <https://youtu.be/oSAG57plHnI?t=19m48s> (Tenenbaum)  
-
 [Learning to Perform Physics Experiments via Deep Reinforcement Learning](http://arxiv.org/abs/1611.01843) (DeepMind)  
-  - <https://youtu.be/tPWGGwmgwG0?t=16m34s> (DeepMind)  
+  - <https://youtu.be/SAcHyzMdbXc?t=16m6s> (de Freitas)  
 
 [Interaction Networks for Learning about Objects, Relations and Physics](http://arxiv.org/abs/1612.00222) (DeepMind)  
   - <https://blog.acolyer.org/2017/01/02/interaction-networks-for-learning-about-objects-relations-and-physics/>  
+
+[Learning Physical Intuition of Block Towers by Example](http://arxiv.org/abs/1603.01312) (Facebook)  
+  - <https://youtu.be/oSAG57plHnI?t=19m48s> (Tenenbaum)  
 
 
 
@@ -822,7 +845,7 @@ interesting papers:
 ----
 [Making Neural Programming Architectures Generalize via Recursion](https://arxiv.org/abs/1704.06611)  # Neural Programmer-Interpreter with recursion  
 >	"We implement recursion in the Neural Programmer-Interpreter framework on four tasks: grade-school addition, bubble sort, topological sort, and quicksort."  
-  - <https://facebook.com/iclr.cc/videos/1713144705381255/> (Cai, 49:59)  
+  - <https://facebook.com/iclr.cc/videos/1713144705381255/> (49:59) (Cai)  
 
 [Adaptive Neural Compilation](http://arxiv.org/abs/1605.07969)  
 
@@ -864,8 +887,10 @@ interesting papers:
 >	- curriculum learning / universal RL^2  
 >	- RL^2 + one-shot imitation learning  
 >	- RL^2 for simulation -> real world transfer"  
-  - <https://youtu.be/BskhUBPRrqE?t=6m28s> + <https://youtu.be/19eNQ1CLt5A?t=7m52s> (Sutskever)  
+  - <http://www.fields.utoronto.ca/video-archive/2017/02/2267-16530> (19:00) (Abbeel)  
   - <https://youtube.com/watch?v=SfCa1HQMkuw&t=1h16m56s> (Schulman)  
+  - <https://youtu.be/BskhUBPRrqE?t=6m28s> (Sutskever)  
+  - <https://youtu.be/19eNQ1CLt5A?t=7m52s> (Sutskever)  
   - <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/RL2-Fast_Reinforcement_Learning_via_Slow_Reinforcement_Learning.md>  
 
 [Learning to Reinforcement Learn](http://arxiv.org/abs/1611.05763) (DeepMind)  
@@ -887,8 +912,9 @@ interesting papers:
 >	"policy gradient algorithm that is as fast as value estimation"  
 >	"take off-policy algorithm and correct it with on-policy algorithm on residuals"  
 >	"can be understood as REINFORCE with state-action-dependent baseline with bias correction term instead of unbiased state-dependent baseline"  
-  - <https://facebook.com/iclr.cc/videos/1712224178806641/> (Gu, 1:36:47)  
+  - <https://facebook.com/iclr.cc/videos/1712224178806641/> (1:36:47) (Gu)  
   - <https://youtu.be/M6nfipCxQBc?t=16m11s> (Lillicrap)  
+  - <http://www.alexirpan.com/rl-derivations/#q-prop>  
   - <https://github.com/shaneshixiang/rllabplusplus>  
 
 [Sample Efficient Actor-Critic with Experience Replay](http://arxiv.org/abs/1611.01224) (DeepMind)  # ACER  
@@ -945,7 +971,7 @@ interesting papers:
   - <https://youtube.com/watch?v=ATvp0Hp7RUI>  
 
 [Gradient Estimation Using Stochastic Computation Graphs](http://arxiv.org/abs/1506.05254) (Schulman)  
-  - <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/> (Abbeel, 01:02:04)  
+  - <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724> (Abbeel)  
 >	"Can mix and match likelihood ratio and path derivative. If black-box node: might need to place stochastic node in front of it and use likelihood ratio. This includes recurrent neural net policies."  
 
 ----
@@ -984,9 +1010,25 @@ interesting papers:
 ---
 ### reinforcement learning - exploration and intrinsic motivation
 
+[Automated Curriculum Learning for Neural Networks](https://arxiv.org/abs/1704.03003) (DeepMind)  
+>	"We focus on variants of prediction gain, and also introduce a novel class of progress signals which we refer to as complexity gain. Derived from minimum description length principles, complexity gain equates acquisition of knowledge with an increase in effective information encoded in the network weights."  
+>	"VIME uses a reward signal that is closely related to variational complexity gain. The difference is that while VIME measures the KL between the posterior before and after a step in parameter space, we consider the change in KL between the posterior and prior induced by the step. Therefore, while VIME looks for any change to the posterior, we focus only on changes that alter the divergence from the prior. Further research will be needed to assess the relative merits of the two signals."  
+>	"For maximum likelihood training, we found prediction gain to be the most consistent signal, while for variational inference training, gradient variational complexity gain performed best. Importantly, both are instantaneous, in the sense that they can be evaluated using only the samples used for training."
+
+[Automatic Goal Generation for Reinforcement Learning Agents](https://arxiv.org/abs/1705.06366) (Abbeel)  
+
+[Intrinsic Motivation and Automatic Curricula via Asymmetric Self-Play](http://arxiv.org/abs/1703.05407) (Facebook)  
+  - <https://youtube.com/watch?v=EHHiFwStqaA> (demo)  
+  - <https://youtube.com/watch?v=X1O21ziUqUY> (Fergus)  
+
+----
+[Deep Exploration via Randomized Value Functions](https://arxiv.org/abs/1703.07608) (Osband)  
+>	"A very recent thread of work builds on count-based (or upper-confidence-bound-based) exploration schemes that operate with value function learning. These methods maintain a density over the state-action space of pseudo-counts, which represent the quantity of data gathered that is relevant to each state-action pair. Such algorithms may offer a viable approach to deep exploration with generalization. There are, however, some potential drawbacks. One is that a separate representation is required to generalize counts, and it's not clear how to design an effective approach to this. As opposed to the optimal value function, which is fixed by the environment, counts are generated by the agent’s choices, so there is no single target function to learn. Second, the count model generates reward bonuses that distort data used to fit the value function, so the value function representation needs to be designed to not only capture properties of the true optimal value function but also such distorted versions. Finally, these approaches treat uncertainties as uncoupled across state-action pairs, and this can incur a substantial negative impact on statistical efficiency."  
+  - <http://youtube.com/watch?v=ck4GixLs4ZQ> (Osband) + [slides](https://docs.google.com/presentation/d/1lis0yBGT-uIXnAsi0vlP3SuWD2svMErJWy_LYtfzMOA/)  
+
 [RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning](http://arxiv.org/abs/1611.02779) (OpenAI)  # learning to explore
 >	"outer episodes (sample a new bandit problem / MDP) and inner episodes (of sampled MDP)"  
->	"use RNN policy with no state reset between inner episodes for outer POMDP"  
+>	"use RNN policy for outer POMDP with no state reset between inner episodes"  
 >
 >	"future directions:  
 >	- better outer-loop algorithms  
@@ -995,8 +1037,10 @@ interesting papers:
 >	- curriculum learning / universal RL^2  
 >	- RL^2 + one-shot imitation learning  
 >	- RL^2 for simulation -> real world transfer"  
-  - <https://youtu.be/BskhUBPRrqE?t=6m28s> + <https://youtu.be/19eNQ1CLt5A?t=7m52s> (Sutskever)  
+  - <http://www.fields.utoronto.ca/video-archive/2017/02/2267-16530> (Abbeel, 19:00)  
   - <https://youtube.com/watch?v=SfCa1HQMkuw&t=1h16m56s> (Schulman)  
+  - <https://youtu.be/BskhUBPRrqE?t=6m28s> (Sutskever)  
+  - <https://youtu.be/19eNQ1CLt5A?t=7m52s> (Sutskever)  
   - <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/RL2-Fast_Reinforcement_Learning_via_Slow_Reinforcement_Learning.md>  
 
 [Learning to Reinforcement Learn](http://arxiv.org/abs/1611.05763) (DeepMind)  # learning to explore
@@ -1006,17 +1050,8 @@ interesting papers:
   - <https://hackernoon.com/learning-policies-for-learning-policies-meta-reinforcement-learning-rl²-in-tensorflow-b15b592a2ddf> (Juliani)  
   - <https://github.com/awjuliani/Meta-RL>  
 
-[Deep Exploration via Randomized Value Functions](https://arxiv.org/abs/1703.07608) (Osband)  
->	"A very recent thread of work builds on count-based (or upper-confidence-bound-based) exploration schemes that operate with value function learning. These methods maintain a density over the state-action space of pseudo-counts, which represent the quantity of data gathered that is relevant to each state-action pair. Such algorithms may offer a viable approach to deep exploration with generalization. There are, however, some potential drawbacks. One is that a separate representation is required to generalize counts, and it's not clear how to design an effective approach to this. As opposed to the optimal value function, which is fixed by the environment, counts are generated by the agent’s choices, so there is no single target function to learn. Second, the count model generates reward bonuses that distort data used to fit the value function, so the value function representation needs to be designed to not only capture properties of the true optimal value function but also such distorted versions. Finally, these approaches treat uncertainties as uncoupled across state-action pairs, and this can incur a substantial negative impact on statistical efficiency."  
-  - <http://youtube.com/watch?v=ck4GixLs4ZQ> (Osband) + [slides](https://docs.google.com/presentation/d/1lis0yBGT-uIXnAsi0vlP3SuWD2svMErJWy_LYtfzMOA/)  
-
-----
-[Exploration Potential](http://arxiv.org/abs/1609.04994)  
->	"We introduce exploration potential, a quantity that measures how much a reinforcement learning agent has explored its environment class. In contrast to information gain, exploration potential takes the problem's reward structure into account."  
-
-[Surprise-Based Intrinsic Motivation for Deep Reinforcement Learning](http://arxiv.org/abs/1703.01732)  
->	"Authors present two tractable approximations to their framework - one which ignores the stochasticity of the true environmental dynamics, and one which approximates the rate of information gain (somewhat similar to Schmidhuber's formal theory of creativity, fun and intrinsic motivation)."  
->	"Stadie et al. learn deterministic dynamics models by minimizing Euclidean loss - whereas in our work, we learn stochastic dynamics with cross entropy loss - and use L2 prediction errors for intrinsic motivation."  
+[Learning to Perform Physics Experiments via Deep Reinforcement Learning](http://arxiv.org/abs/1611.01843) (DeepMind)  
+  - <https://youtu.be/SAcHyzMdbXc?t=16m6s> (de Freitas)  
 
 ----
 [Count-Based Exploration with Neural Density Models](http://arxiv.org/abs/1703.01310) (DeepMind)  
@@ -1027,18 +1062,8 @@ interesting papers:
 >	"The authors encourage exploration by adding a pseudo-reward of the form beta/sqrt(count(state)) for infrequently visited states. State visits are counted using Locality Sensitive Hashing (LSH) based on an environment-specific feature representation like raw pixels or autoencoder representations. The authors show that this simple technique achieves gains in various classic RL control tasks and several games in the ATARI domain. While the algorithm itself is simple there are now several more hyperaprameters to tune: The bonus coefficient beta, the LSH hashing granularity (how many bits to use for hashing) as well as the type of feature representation based on which the hash is computed, which itself may have more parameters. The experiments don't paint a consistent picture and different environments seem to need vastly different hyperparameter settings, which in my opinion will make this technique difficult to use in practice."  
   - <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1611.04717>  
 
-[EX2: Exploration with Exemplar Models for Deep Reinforcement Learning](https://arxiv.org/abs/1703.01260) (Levine)
->	"Many of the most effective exploration techniques rely on tabular representations, or on the ability to construct a generative model over states and actions. This paper introduces a novel approach, EX2, which approximates state visitation densities by training an ensemble of discriminators, and assigns reward bonuses to rarely visited states."
-
-----
-[Variational Intrinsic Control](http://arxiv.org/abs/1611.07507) (DeepMind)  
->	"The second scenario is that in which the long-term goal of the agent is to get to a state with a maximal set of available intrinsic options – the objective of empowerment (Salge et al., 2014). This set of options consists of those that the agent knows how to use. Note that this is not the theoretical set of all options: it is of no use to the agent that it is possible to do something if it is unable to learn how to do it. Thus, to maximize empowerment, the agent needs to simultaneously learn how to control the environment as well – it needs to discover the options available to it. The agent should in fact not aim for states where it has the most control according to its current abilities, but for states where it expects it will achieve the most control after learning. Being able to learn available options is thus fundamental to becoming empowered."  
->	"Let us compare this to the commonly used intrinsic motivation objective of maximizing the amount of model-learning progress, measured as the difference in compression of its experience before and after learning (Schmidhuber, 1991; 2010; Bellemare et al., 2016; Houthooft et al., 2016). The empowerment objective differs from this in a fundamental manner: the primary goal is not to understand or predict the observations but to control the environment. This is an important point – agents can often control an environment perfectly well without much understanding, as exemplified by canonical model-free reinforcement learning algorithms (Sutton & Barto, 1998), where agents only model action-conditioned expected returns. Focusing on such understanding might significantly distract and impair the agent, as such reducing the control it achieves."  
-
-[Stochastic Neural Networks for Hierarchical Reinforcement Learning](https://arxiv.org/abs/1704.03012) (Abbeel)  
->	"Our SNN hierarchical approach outperforms state-of-the-art intrinsic motivation results like VIME (Houthooft et al., 2016)."  
-  - <https://youtube.com/playlist?list=PLEbdzN4PXRGVB8NsPffxsBSOCcWFBMQx3> (demo)  
-  - <https://github.com/florensacc/snn4hrl>  
+[EX2: Exploration with Exemplar Models for Deep Reinforcement Learning](https://arxiv.org/abs/1703.01260) (Levine)  
+>	"Many of the most effective exploration techniques rely on tabular representations, or on the ability to construct a generative model over states and actions. This paper introduces a novel approach, EX2, which approximates state visitation densities by training an ensemble of discriminators, and assigns reward bonuses to rarely visited states."  
 
 ----
 [Curiosity-driven Exploration by Self-supervised Prediction](https://arxiv.org/abs/1705.05363) (Darrell)  
@@ -1046,8 +1071,34 @@ interesting papers:
   - <https://youtube.com/watch?v=J3FHOyhUn3A> (demo)  
   - <https://github.com/pathak22/noreward-rl>  
 
-[Loss is Its Own Reward: Self-Supervision for Reinforcement Learning](http://arxiv.org/abs/1612.07307) (Darrell)  
+----
+[Exploration Potential](http://arxiv.org/abs/1609.04994)  
+>	"We introduce exploration potential, a quantity that measures how much a reinforcement learning agent has explored its environment class. In contrast to information gain, exploration potential takes the problem's reward structure into account."  
 
+[Surprise-Based Intrinsic Motivation for Deep Reinforcement Learning](http://arxiv.org/abs/1703.01732)  
+>	"Authors present two tractable approximations to their framework - one which ignores the stochasticity of the true environmental dynamics, and one which approximates the rate of information gain (somewhat similar to Schmidhuber's formal theory of creativity, fun and intrinsic motivation)."  
+>	"Stadie et al. learn deterministic dynamics models by minimizing Euclidean loss - whereas in our work, we learn stochastic dynamics with cross entropy loss - and use L2 prediction errors for intrinsic motivation."  
+>	"Our results suggest that surprisal is a viable alternative to VIME in terms of performance, and is highly favorable in terms of computational cost. In VIME, a backwards pass through the dynamics model must be computed for every transition tuple separately to compute the intrinsic rewards, whereas our surprisal bonus only requires forward passes through the dynamics model for intrinsic reward computation. Furthermore, our dynamics model is substantially simpler than the Bayesian neural network dynamics model of VIME. In our speed test, our bonus had a per-iteration speedup of a factor of 3 over VIME."
+
+----
+[Variational Intrinsic Control](http://arxiv.org/abs/1611.07507) (DeepMind)  
+>      "The second scenario is that in which the long-term goal of the agent is to get to a state with a maximal set of available intrinsic options – the objective of empowerment (Salge et al., 2014). This set o
+f options consists of those that the agent knows how to use. Note that this is not the theoretical set of all options: it is of no use to the agent that it is possible to do something if it is unable to learn how
+ to do it. Thus, to maximize empowerment, the agent needs to simultaneously learn how to control the environment as well – it needs to discover the options available to it. The agent should in fact not aim for st
+ates where it has the most control according to its current abilities, but for states where it expects it will achieve the most control after learning. Being able to learn available options is thus fundamental to
+ becoming empowered."  
+>      "Let us compare this to the commonly used intrinsic motivation objective of maximizing the amount of model-learning progress, measured as the difference in compression of its experience before and after l
+earning (Schmidhuber, 1991; 2010; Bellemare et al., 2016; Houthooft et al., 2016). The empowerment objective differs from this in a fundamental manner: the primary goal is not to understand or predict the observa
+tions but to control the environment. This is an important point – agents can often control an environment perfectly well without much understanding, as exemplified by canonical model-free reinforcement learning 
+algorithms (Sutton & Barto, 1998), where agents only model action-conditioned expected returns. Focusing on such understanding might significantly distract and impair the agent, as such reducing the control it ac
+hieves."  
+
+[Stochastic Neural Networks for Hierarchical Reinforcement Learning](https://arxiv.org/abs/1704.03012) (Abbeel)  
+>      "Our SNN hierarchical approach outperforms state-of-the-art intrinsic motivation results like VIME (Houthooft et al., 2016)."  
+  - <https://youtube.com/playlist?list=PLEbdzN4PXRGVB8NsPffxsBSOCcWFBMQx3> (demo)  
+  - <https://github.com/florensacc/snn4hrl>  
+
+----
 [Reinforcement Learning with Unsupervised Auxiliary Tasks](http://arxiv.org/abs/1611.05397)  # UNREAL  
 >	"Auxiliary tasks:  
 >	- pixel changes: learn a policy for maximally changing the pixels in a grid of cells overlaid over the images  
@@ -1058,19 +1109,16 @@ interesting papers:
 >	"This approach exploits the multithreading capabilities of standard CPUs. The idea is to execute many instances of our agent in parallel, but using a shared model. This provides a viable alternative to experience replay, since parallelisation also diversifies and decorrelates the data. Our asynchronous actor-critic algorithm, A3C, combines a deep Q-network with a deep policy network for selecting actions. It achieves state-of-the-art results, using a fraction of the training time of DQN and a fraction of the resource consumption of Gorila."  
   - <https://youtube.com/watch?v=Uz-zGYrYEjA> (demo)  
   - <https://youtube.com/watch?v=VVLYTqZJrXY> (Jaderberg)  
-  - <https://facebook.com/iclr.cc/videos/1712224178806641/> (Jaderberg, 1:15:45)  
+  - <https://facebook.com/iclr.cc/videos/1712224178806641/> (1:15:45) (Jaderberg)  
   - <https://github.com/dennybritz/deeplearning-papernotes/blob/b097e313dc59c956575fb1bf23b64fa8d1d84057/notes/rl-auxiliary-tasks.md>  
   - <https://github.com/miyosuda/unreal>  
 
-----
+[Loss is Its Own Reward: Self-Supervision for Reinforcement Learning](http://arxiv.org/abs/1612.07307) (Darrell)  
+
+[Feature Control as Intrinsic Motivation for Hierarchical Reinforcement Learning](https://arxiv.org/abs/1705.06769)  
+
 [Towards Information-Seeking Agents](http://arxiv.org/abs/1612.02605) (Maluuba)  
   - <https://youtube.com/watch?v=3bSquT1zqj8> (demo)  
-
-[Intrinsic Motivation and Automatic Curricula via Asymmetric Self-Play](http://arxiv.org/abs/1703.05407) (Facebook)  
-  - <https://youtube.com/watch?v=EHHiFwStqaA> (demo)  
-  - <https://youtube.com/watch?v=X1O21ziUqUY> (Fergus)  
-
-[Automatic Goal Generation for Reinforcement Learning Agents](https://arxiv.org/abs/1705.06366) (Abbeel)
 
 
 
@@ -1082,6 +1130,7 @@ interesting papers:
 [A Laplacian Framework for Option Discovery in Reinforcement Learning](https://arxiv.org/abs/1703.00956) (Bowling)
 >	"Our algorithm can be seen as a bottom-up approach, in which we construct options before the agent observes any informative reward. Options discovered this way tend to be independent of an agent’s intention, and are potentially useful in many different tasks. Moreover, such options can also be seen as being useful for exploration by allowing agents to commit to a behavior for an extended period of time."  
   - <https://youtube.com/watch?v=2BVicx4CDWA> (demo)  
+  - <https://vimeo.com/220484541> (Machado)  
 
 [Strategic Attentive Writer for Learning Macro-Actions](http://arxiv.org/abs/1606.04695) (DeepMind)  
 >	"Learning temporally extended actions and temporal abstraction in general is a long standing problem in reinforcement learning. They facilitate learning by enabling structured exploration and economic computation. In this paper we present a novel deep recurrent neural network architecture that learns to build implicit plans in an end-to-end manner purely by interacting with an environment in a reinforcement learning setting. The network builds an internal plan, which is continuously updated upon observation of the next input from the environment. It can also partition this internal representation into contiguous sub-sequences by learning for how long the plan can be committed to – i.e. followed without replanning. Combining these properties, the proposed model, dubbed STRategic Attentive Writer (STRAW) can learn high-level, temporally abstracted macro-actions of varying lengths that are solely learnt from data without any prior information."  
@@ -1120,6 +1169,8 @@ interesting papers:
 ---
 ### reinforcement learning - simulation and planning
 
+[Model-Based Planning in Discrete Action Spaces](https://arxiv.org/abs/1705.07177) (LeCun)  
+
 [Recurrent Environment Simulators](https://arxiv.org/abs/1704.02254) (DeepMind)  
   - <https://drive.google.com/file/d/0B_L2b7VHvBW2NEQ1djNjU25tWUE/view> (TORCS demo)  
   - <https://drive.google.com/file/d/0B_L2b7VHvBW2UjMwWVRoM3lTeFU/view> (TORCS demo)  
@@ -1131,9 +1182,6 @@ interesting papers:
 >	"latent action prior, another variational autoencoder that models a prior over action segments, and showed how it can be used to perform control using actions from the same distribution as a dynamics model’s training data"  
 
 ----
-[Metacontrol for Adaptive Imagination-Based Optimization](https://arxiv.org/abs/1705.02670) (DeepMind)  
->	"Rather than learning a single, fixed policy for solving all instances of a task, we introduce a metacontroller which learns to optimize a sequence of "imagined" internal simulations over predictive models of the world in order to construct a more informed, and more economical, solution. The metacontroller component is a model-free reinforcement learning agent, which decides both how many iterations of the optimization procedure to run, as well as which model to consult on each iteration. The models (which we call "experts") can be state transition models, action-value functions, or any other mechanism that provides information useful for solving the task, and can be learned on-policy or off-policy in parallel with the metacontroller."  
-
 [The Predictron: End-to-End Learning and Planning](https://arxiv.org/abs/1612.08810) (Silver)  
   - <https://youtube.com/watch?v=BeaLdaN2C3Q>  
   - <https://github.com/zhongwen/predictron>  
@@ -1159,6 +1207,12 @@ interesting papers:
   - <https://github.com/zuoxingdong/VIN_PyTorch_Visdom>  
   - <https://github.com/onlytailei/Value-Iteration-Networks-PyTorch>  
   - <https://github.com/kentsommer/pytorch-value-iteration-networks>  
+
+----
+[Metacontrol for Adaptive Imagination-Based Optimization](https://arxiv.org/abs/1705.02670) (DeepMind)  
+>	"Rather than learning a single, fixed policy for solving all instances of a task, we introduce a metacontroller which learns to optimize a sequence of "imagined" internal simulations over predictive models of the world in order to construct a more informed, and more economical, solution. The metacontroller component is a model-free reinforcement learning agent, which decides both how many iterations of the optimization procedure to run, as well as which model to consult on each iteration. The models (which we call "experts") can be state transition models, action-value functions, or any other mechanism that provides information useful for solving the task, and can be learned on-policy or off-policy in parallel with the metacontroller."  
+
+[Thinking Fast and Slow with Deep Learning and Tree Search](https://arxiv.org/abs/1705.08439) (Barber)  
 
 ----
 [Blazing the Trails before Beating the Path: Sample-efficient Monte-Carlo Planning](https://papers.nips.cc/paper/6253-blazing-the-trails-before-beating-the-path-sample-efficient-monte-carlo-planning.pdf) (Munos)  
@@ -1198,7 +1252,7 @@ interesting papers:
 ### reinforcement learning - transfer
 
 [Generalizing Skills with Semi-Supervised Reinforcement Learning](http://arxiv.org/abs/1612.00429) (Abbeel, Levine)  
-  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (39:26, Levine)  
+  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (39:26) (Levine)  
 
 ----
 [Successor Features for Transfer in Reinforcement Learning](http://arxiv.org/abs/1606.05312) (Silver)  
@@ -1235,6 +1289,7 @@ interesting papers:
 ----
 [Generative Adversarial Imitation Learning](http://arxiv.org/abs/1606.03476)  
 >	"Uses a GAN framework to discriminate between teacher and student experience and force the student to behave close to the teacher."  
+  - <https://youtube.com/watch?v=bcnCo9RxhB8> (Ermon)  
   - <https://github.com/openai/imitation>  
   - <https://github.com/DanielTakeshi/rl_algorithms/tree/master/il>  
 
@@ -1252,7 +1307,7 @@ interesting papers:
   - <http://bit.ly/one-shot-imitation> (demo)  
 
 [Guided Cost Learning: Deep Inverse Optimal Control via Policy Optimization](http://arxiv.org/abs/1603.00448) (Abbeel)  
-  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (22:48, Levine)  
+  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (22:48) (Levine)  
 
 [Unsupervised Perceptual Rewards for Imitation Learning](http://arxiv.org/abs/1612.06699) (Levine)  
 >	"To our knowledge, these are the first results showing that complex robotic manipulation skills can be learned directly and without supervised labels from a video of a human performing the task."  
@@ -1305,17 +1360,6 @@ interesting papers:
 [Learning Cooperative Visual Dialog Agents with Deep Reinforcement Learning](https://arxiv.org/abs/1703.06585)  
   - <https://visualdialog.org> (demo)  
 
-[Learning to Communicate with Deep Multi-Agent Reinforcement Learning](http://arxiv.org/abs/1605.06676) (DeepMind)  
-  - <https://youtube.com/watch?v=cfsYBY4nd1c>  
-  - <https://youtube.com/watch?v=xL-GKD49FXs> (Foerster)  
-  - <http://videolectures.net/deeplearning2016_foerster_learning_communicate/> (Foerster)  
-  - <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.07133>  
-  - <https://github.com/iassael/learning-to-communicate>  
-
-[Learning Multiagent Communication with Backpropagation](http://arxiv.org/abs/1605.07736) (Facebook)  
-  - <https://youtu.be/_iVVXWkoEAs?t=30m6s> (Fergus)  
-  - <https://github.com/facebookresearch/CommNet>  
-
 [Towards Deep Symbolic Reinforcement Learning](http://arxiv.org/abs/1609.05518)  
   - <https://youtube.com/watch?v=HOAVhPy6nrc> (Shanahan)  
 
@@ -1353,6 +1397,8 @@ interesting papers:
 [Learning Cooperative Visual Dialog Agents with Deep Reinforcement Learning](https://arxiv.org/abs/1703.06585)  
   - <https://visualdialog.org> (demo)  
 
+[Emergent Language in a Multi-Modal, Multi-Step Referential Game](https://arxiv.org/abs/1705.10369)
+
 ----
 [Learning from Real Users: Rating Dialogue Success with Neural Networks for Reinforcement Learning in Spoken Dialogue Systems](http://arxiv.org/abs/1508.03386) (Young)  
 
@@ -1369,7 +1415,13 @@ interesting papers:
 
 [Two are Better than One: An Ensemble of Retrieval- and Generation-Based Dialog Systems](http://arxiv.org/abs/1610.07149)  
 
+[Machine Comprehension by Text-to-Text Neural Question Generation](https://arxiv.org/abs/1705.02012) (Maluuba)  
+  - <https://youtube.com/watch?v=UIzcIC5RQN8>  
+
 ----
+[Latent Intention Dialogue Models](https://arxiv.org/abs/1705.10229) (Young)  
+>	"Learning an end-to-end dialogue system is appealing but challenging because of the credit assignment problem. Discrete latent variable dialogue models such as LIDM are attractive because the latent variable can serve as an interface for decomposing the learning of language and the internal dialogue decision-making. This decomposition can effectively help us resolve the credit assignment problem where different learning signals can be applied to different sub-modules to update the parameters. In variational inference for discrete latent variables, the latent distribution is basically updated by the reward from the variational lower bound. While in reinforcement learning, the latent distribution (i.e. policy network) is updated by the rewards from dialogue success and sentence BLEU score. Hence, the latent variable bridges the different learning paradigms such as Bayesian learning and reinforcement learning and brings them together under the same framework. This framework provides a more robust neural network-based approach than previous approaches because it does not depend solely on sequence-to-sequence learning but instead explicitly models the hidden dialogue intentions underlying the user’s utterances and allows the agent to directly learn a dialogue policy through interaction."
+
 [Hybrid Code Networks: Practical and Efficient End-to-end Dialog Control with Supervised and Reinforcement Learning](https://arxiv.org/abs/1702.03274) (Zweig)  
 >	"End-to-end methods lack a general mechanism for injecting domain knowledge and constraints. For example, simple operations like sorting a list of database results or updating a dictionary of entities can expressed in a few lines of software, yet may take thousands of dialogs to learn. Moreover, in some practical settings, programmed constraints are essential – for example, a banking dialog system would require that a user is logged in before they can retrieve account information."  
 >	"In addition to learning an RNN, HCNs also allow a developer to express domain knowledge via software and action templates."  
@@ -1394,7 +1446,7 @@ interesting papers:
 [End-to-End LSTM-based Dialog Control Optimized with Supervised and Reinforcement Learning](http://arxiv.org/abs/1606.01269) (Zweig)  
 
 [Learning End-to-End Goal-Oriented Dialog](http://arxiv.org/abs/1605.07683) (Weston)  
-  - <https://facebook.com/iclr.cc/videos/1712966538732405/> (Boureau, 27:39)  
+  - <https://facebook.com/iclr.cc/videos/1712966538732405/> (27:39) (Boureau)  
 
 [A Network-based End-to-End Trainable Task-oriented Dialogue System](http://arxiv.org/abs/1604.04562) (Young)  
   - <http://videolectures.net/deeplearning2016_wen_network_based/> (Wen)  
@@ -1405,12 +1457,14 @@ interesting papers:
 
 ----
 [A Copy-Augmented Sequence-to-Sequence Architecture Gives Good Performance on Task-Oriented Dialogue](http://arxiv.org/abs/1701.04024) (Manning)  
+  - <https://medium.com/@sharaf/a-paper-a-day-14-a-copy-augmented-sequence-to-sequence-architecture-gives-good-performance-on-44727e880044>  
 
 [Multiresolution Recurrent Neural Networks: An Application to Dialogue Response Generation](http://arxiv.org/abs/1606.00776) (Bengio)  
 
 [An Attentional Neural Conversation Model with Improved Specificity](http://arxiv.org/abs/1606.01292) (Zweig)  
 
 [A Hierarchical Latent Variable Encoder-Decoder Model for Generating Dialogues](http://arxiv.org/abs/1605.06069) (Bengio)  
+  - <http://cs.mcgill.ca/~rlowe1/problem_with_neural_chatbots.pdf> (Lowe)  
 
 ----
 [LSTM-based Mixture-of-Experts for Knowledge-Aware Dialogues](http://arxiv.org/abs/1605.01652)  
@@ -1466,7 +1520,14 @@ interesting papers:
   - <https://github.com/fchollet/keras/blob/master/examples/imdb_fasttext.py>  
 
 ----
-[Semantic Parsing with Semi-Supervised Sequential Autoencoders](http://arxiv.org/abs/1609.09315) (DeepMind)  # discrete VAE  
+[Globally Normalized Transition-Based Neural Networks](http://arxiv.org/abs/1603.06042)  # SyntaxNet, Parsey McParseface
+>	"The parser uses a feed forward NN, which is much faster than the RNN usually used for parsing. Also the paper is using a global method to solve the label bias problem. This method can be used for many tasks and indeed in the paper it is used also to shorten sentences by throwing unnecessary words. The label bias problem arises when predicting each label in a sequence using a softmax over all possible label values in each step. This is a local approach but what we are really interested in is a global approach in which the sequence of all labels that appeared in a training example are normalized by all possible sequences. This is intractable so instead a beam search is performed to generate alternative sequences to the training sequence. The search is stopped when the training sequence drops from the beam or ends. The different beams with the training sequence are then used to compute the global loss."  
+  - <https://github.com/udibr/notes/raw/master/Talk%20by%20Sasha%20Rush%20-%20Interpreting%2C%20Training%2C%20and%20Distilling%20Seq2Seq%E2%80%A6.pdf>  
+  - <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1603.06042>  
+  - <https://github.com/tensorflow/models/tree/master/syntaxnet>  
+
+----
+[Semantic Parsing with Semi-Supervised Sequential Autoencoders](http://arxiv.org/abs/1609.09315) (DeepMind)  
 
 [Open-Vocabulary Semantic Parsing with both Distributional Statistics and Formal Knowledge](http://arxiv.org/abs/1607.03542) (Gardner)  
 
@@ -1479,10 +1540,19 @@ interesting papers:
   - <https://github.com/carpedm20/variational-text-tensorflow>  
   - <https://github.com/cheng6076/NVDM>  
 
+[Discovering Discrete Latent Topics with Neural Variational Inference](https://arxiv.org/abs/1706.00359)
+
 [Generating Sentences from a Continuous Space](http://arxiv.org/abs/1511.06349)  
   - <http://www.shortscience.org/paper?bibtexKey=journals/corr/1511.06349>  
   - <https://github.com/analvikingur/pytorch_RVAE>  
   - <https://github.com/cheng6076/Variational-LSTM-Autoencoder>  
+
+[A Hybrid Convolutional Variational Autoencoder for Text Generation](http://arxiv.org/pdf/1702.02390)  
+  - <https://github.com/stas-semeniuta/textvae>  
+
+[Improved Variational Autoencoders for Text Modeling using Dilated Convolutions](http://arxiv.org/abs/1702.08139) (Salakhutdinov)  
+
+[Controllable Text Generation](http://arxiv.org/abs/1703.00955) (Salakhutdinov)  
 
 
 
