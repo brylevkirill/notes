@@ -459,23 +459,40 @@
   - transferrable skills (hierachy of skills, discovering and combining skills)  
 
 
-  [overview](http://youtube.com/watch?v=SfCa1HQMkuw) by John Schulman
+  [overview](http://youtube.com/watch?v=SfCa1HQMkuw) by John Schulman  
+  [overview](http://youtube.com/watch?v=sGuiWX07sKw) by David Silver  
+  [overview](http://youtube.com/watch?v=WCE9hhPbCmc) by Maxim Kretov (in russian)  
 
 ----
 
-  **approximate bayesian exploration models**:
+  [**bandits**](#bandits)  
+  [**contextual bandits**](#contextual-bandits)  
 
+----
+
+  **approximate bayes-optimal exploration methods**:
+
+  "BRL provides a principled approach to tackle the problem of exploration-exploitation during learning and beyond, within the standard Bayesian inference paradigm. In this framework, prior information about the problem (including uncertainty) is represented in parametric form, and Bayesian inference is used to incorporate any new information about the model. Thus the exploration-exploitation problem can be handled as an explicit sequential decision problem, where the agent seeks to maximize future expected return with respect to its current uncertainty on the model. An important limitation of this approach is that the decision-making process is significantly more complex since it involves reasoning about all possible models and courses of action."
+
+
+  [overview](https://youtu.be/sGuiWX07sKw?t=1h8m44s) by David Silver  
+
+  [**bayesian reinforcement learning**](#bayesian-reinforcement-learning)
+
+  [General Reinforcement Learning Agent Zoo](http://aslanides.io/aixijs/) by John Aslanides
+	([demo](http://aslanides.io/aixijs/demo.html), [code](https://github.com/aslanides/aixijs), [paper](https://arxiv.org/abs/1705.07615))
+
+
+  ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](#guez-silver-dayan---efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search) by Guez et al.  
   ["Learning to Optimize Via Posterior Sampling"](#russo-van-roy---learning-to-optimize-via-posterior-sampling) by Russo and van Roy  
   ["Why is Posterior Sampling Better than Optimism for Reinforcement Learning?"](#osband-van-roy---why-is-posterior-sampling-better-than-optimism-for-reinforcement-learning) by Osband and van Roy  
   ["Nonparametric General Reinforcement Learning"](#leike---nonparametric-general-reinforcement-learning) by Leike  (estimating reward by sampling environment model from posterior distribution and running episode using it)  
   ["Weight Uncertainty in Neural Networks"](#blundell-cornebise-kavukcuoglu-wierstra---weight-uncertainty-in-neural-networks) by Blundell et al.  (training bayesian neural network to predict reward, sampling particular network weights from posterior and choosing action with highest predicted reward)  
   ["Deep Exploration via Bootstrapped DQN"](#osband-blundell-pritzel-van-roy---deep-exploration-via-bootstrapped-dqn) by Osband et al.  (training multiple value function networks with shared bottom layers using bootstrapping, sampling value function network and running episode using it)  
   ["Deep Exploration via Randomized Value Functions"](#osband-russo-wen-van-roy---deep-exploration-via-randomized-value-functions) by Osband et al.  
+  ["Approximate Bayes Optimal Policy Search using Neural Networks"](#castronovo-francois-lavet-fonteneau-ernst-couetoux---approximate-bayes-optimal-policy-search-using-neural-networks) by Castronovo et al.  
   ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](#duan-schulman-chen-bartlett-sutskever-abbeel---rl2-fast-reinforcement-learning-via-slow-reinforcement-learning) by Duan et al.  
   ["Learning to Reinforcement Learn"](#wang-et-al---learning-to-reinforcement-learn) by Wang et al.  
-
-  [General Reinforcement Learning Agent Zoo](http://aslanides.io/aixijs/) by John Aslanides
-	([demo](http://aslanides.io/aixijs/demo.html), [code](https://github.com/aslanides/aixijs), [paper](https://arxiv.org/abs/1705.07615))
 
 ----
 
@@ -639,6 +656,8 @@
 ---
 ### contextual bandits
 
+  [introduction](https://youtu.be/sGuiWX07sKw?t=1h29m7s) by David Silver
+
   [history of contextual bandits](https://youtu.be/7ic_d5TeIUk?t=6m41s) by John Langford  
   [interactive machine learning systems](https://youtu.be/3q4OvzIyPug?t=6m12s) by Alekh Agarwal  
 
@@ -722,8 +741,44 @@
 ---
 ### model-based methods
 
-  using transition model of environment p(r,s0|s,a)
+  two fundamental problems in sequential decision making ([overview](https://youtu.be/2pWv7GOvuf0?t=1h16m16s) by David Silver):  
+  - reinforcement learning  
+	* environment is initially unknown  
+	* agent interacts with environment  
+	* agent improves its policy  
+  - planning  
+	* model of environment is known or learned  
+	* agent performs computations with model (without interaction with environment)  
+	* agent improves its policy  
 
+
+  ["Markov Decision Process"](https://youtube.com/watch?v=lfHX2hHRMVQ) by David Silver  
+  ["Planning by Dynamic Programming"](https://youtube.com/watch?v=Nd1-UUMVfz4) by David Silver  
+  ["Integrating Learning and Planning"](https://youtube.com/watch?v=ItMutbeOHtc) by David Silver  
+
+  overview of planning by Pavel Shvechikov and Fedor Ratnikov (in russian)
+	([first part](https://yadi.sk/i/lOAUu7o13JBHFz), [second part](https://yadi.sk/i/bkmjEZrk3JBHGF),
+	[slides](https://yadi.sk/i/3PM9zCP33J3ub3) in english)
+
+
+  [interesting papers](#interesting-papers---model-based-methods) on model-based methods  
+  [interesting papers](#interesting-papers---abstractions-for-states-and-actions) on abstractions for states and actions  
+
+
+----
+#### Monte Carlo Tree Search
+
+  [introduction](https://youtube.com/watch?v=ItMutbeOHtc&t=1h4m32s) by David Silver  
+  [introduction](https://youtube.com/watch?v=mZtlW_xtarI&t=45m12s) by Sergey Levine  
+  [introduction](https://youtube.com/watch?v=onBYsen2_eA) by Michael Littman  
+
+
+  ["A Survey of Monte Carlo Tree Search Methods"](http://www.cameronius.com/cv/mcts-survey-master.pdf) by Browne et al.
+
+
+  ["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#silver-et-al---mastering-the-game-of-go-with-deep-neural-networks-and-tree-search) by Silver et al.  
+  ["Deep Learning for Real-Time Atari Game Play Using Offline Monte-Carlo Tree Search Planning"](#guo-singh-lee-lewis-wang---deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning) by Guo et al.  
+  ["A Monte-Carlo AIXI Approximation"](https://github.com/brylevkirill/notes/blob/Artificial%20Intelligence.md#veness-ng-hutter-uther-silver---a-monte-carlo-aixi-approximation-mc-aixi-ctw-agent) by Veness et al.  
 
 ----
 #### Guided Policy Search
@@ -766,20 +821,6 @@
 
 
 ----
-#### Monte Carlo Tree Search
-
-  [introduction](https://youtube.com/watch?v=ItMutbeOHtc&t=1h4m32s) by David Silver  
-  [introduction](https://youtube.com/watch?v=mZtlW_xtarI&t=45m12s) by Sergey Levine  
-
-
-  ["A Survey of Monte Carlo Tree Search Methods"](http://www.cameronius.com/cv/mcts-survey-master.pdf) by Browne et al.
-
-
-  ["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#silver-et-al---mastering-the-game-of-go-with-deep-neural-networks-and-tree-search) by Silver et al.  
-  ["Deep Learning for Real-Time Atari Game Play Using Offline Monte-Carlo Tree Search Planning"](#guo-singh-lee-lewis-wang---deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning) by Guo et al.  
-  ["A Monte-Carlo AIXI Approximation"](https://github.com/brylevkirill/notes/blob/Artificial%20Intelligence.md#veness-ng-hutter-uther-silver---a-monte-carlo-aixi-approximation-mc-aixi-ctw-agent) by Veness et al.  
-
-----
 #### deep model-based learning
 
   challenges:  
@@ -796,7 +837,10 @@
   ["Learning Dynamical System Models from Data"](https://youtube.com/watch?v=qVsLk5CVy_c) by Sergey Levine  
   ["Advanced Model Learning"](https://youtube.com/watch?v=6EasN2FAIX0) by Chelsea Finn  
 
-  ["Deep Recurrent Q-Network"](https://youtube.com/watch?v=bE5DIJvZexc) by Alexander Fritzler (in russian)  
+  "Partially Observable Markov Decision Process in Reinforcement Learning" by Alexander Fritsler and Fedor Ratnikov (in russian)
+	([first part](https://yadi.sk/i/pMdw-_uI3Gke7Z), [second part](https://yadi.sk/i/s1EEuEVd3Gke8k),
+	[slides](https://yadi.sk/d/RGx8BUCr3Gq6DC) in english)  
+  ["Deep Recurrent Q-Network"](https://youtube.com/watch?v=bE5DIJvZexc) by Alexander Fritsler (in russian)  
   ["Deep Reinforcement Learning with Memory"](http://93.180.23.59/videos/video/2420/in/channel/1/) by Sergey Bartunov (in russian)  
 
   ["Deep AutoRegressive Networks"](https://youtu.be/-yX1SYeDHbg?t=49m25s) by Alex Graves  
@@ -806,32 +850,34 @@
 ----
 #### bayesian reinforcement learning
 
-  BRL agent aims to maximise expected sum of future rewards obtained when interacting with unknown Markov Decision Process while using some prior knowledge.
+  BRL agent aims to maximise expected sum of future rewards obtained when interacting with unknown Markov Decision Process while using some prior knowledge.  
+  Belief-augmented Markov Decision Process is an MDP obtained when considering augmented states made of concatenation of actual state and posterior beliefs.  
+  BRL agent maintains distribution over worlds and either samples a world and acts as if it is real, or chooses action by reasoning about full distribution.  
 
-  BRL agent maintains a distribution over worlds and either, samples a world and acts as if it is real, or chooses action reasoning about full distribution.
+  Bayes-Adaptive Markov Decision Process forms natural framework to deal with sequential decision-making problems when state information is partially hidden.  
+  Under this framework actions that yield highest instant reward and actions that maximise gathering of knowledge about environment are often very different.  
+  BAMDP framework leads to rigorous definition of optimal solution based on finding policy that reaches optimal balance between exploration and exploitation.  
 
-  Belief-augmented Markov Decision Process is an MDP obtained when considering augmented states made of concatenation of actual state and posterior beliefs.
 
-  Bayes-Adaptive Markov Decision Processes form a natural framework to deal with sequential decision-making problems when some of the information is hidden. In these problems, an agent navigates in an initially unknown environment and receives a numerical reward according to its actions. However, actions that yield the highest instant reward and actions that maximise the gathering of knowledge about the environment are often different. The BAMDP framework leads to a rigorous definition of an optimal solution to this learning problem, which is based on finding a policy that reaches an optimal balance between exploration and exploitation.
+  [overview](https://youtu.be/sGuiWX07sKw?t=1h8m44s) of reinforcement learning with information state space by David Silver  
+  ["Bandits, Active Learning, Bayesian RL and Global Optimization"](https://youtu.be/5rev-zVx1Ps?t=58m45s) by Marc Toussaint  
+  ["Reinforcement Learning: Beyond Markov Decision Processes"](https://youtube.com/watch?v=_dkaynuKUFE) by Alexey Seleznev (in russian)  
 
+  ["Bayesian Reinforcement Learning: A Survey"](https://arxiv.org/abs/1609.04436) by Ghavamzadeh et al.  
+
+
+  [overview](https://youtu.be/AggqBRdz6CQ?t=9m53s) of deep bayesian reinforcement learning by Shakir Mohamed  
   bayesian policy search in variational MDP (variational decision making):  
   Fπ(θ) = E q(a,z|x) [R(a|x)] - α * Dkl[qθ(z|x) || p(z|x)] + α * H[πθ(a|z)]  
 
 
-  [overview](https://youtu.be/AggqBRdz6CQ?t=9m53s) by Shakir Mohamed
+  [AIXI](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#solomonoff-induction-and-aixi) - general bayesian reinforcement learning agent  
+  [General Reinforcement Learning Agent Zoo](http://aslanides.io/aixijs/) by John Aslanides
+	([demo](http://aslanides.io/aixijs/demo.html), [code](https://github.com/aslanides/aixijs), [paper](https://arxiv.org/abs/1705.07615))  
 
-  ["Bandits, Active Learning, Bayesian RL and Global Optimization"](https://youtu.be/5rev-zVx1Ps?t=58m45s) by Marc Toussaint  
-  ["Reinforcement Learning: Beyond Markov Decision Processes"](https://youtube.com/watch?v=_dkaynuKUFEby) by Alexey Seleznev (in russian)  
-
-
-  ["Bayesian Reinforcement Learning: A Survey"](https://arxiv.org/abs/1609.04436) by Ghavamzadeh et al.
 
   ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](#guez-silver-dayan---efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search) by Guez et al.  
   ["Approximate Bayes Optimal Policy Search using Neural Networks"](#castronovo-francois-lavet-fonteneau-ernst-couetoux---approximate-bayes-optimal-policy-search-using-neural-networks) by Castronovo et al.  
-
-
-  [interesting papers](#interesting-papers---model-based-methods) on model-based methods  
-  [interesting papers](#interesting-papers---abstractions-for-states-and-actions) on abstractions for states and actions  
 
 
 
@@ -844,21 +890,24 @@
   ["Model Free Control"](https://youtube.com/watch?v=0g4j2k_Ggc4) by David Silver  
   ["Value Function Approximation"](http://youtube.com/watch?v=UoPei5o4fps) by David Silver  
 
+  [introduction to Deep Q-Network](http://youtube.com/watch?v=dV80NAlEins) by Nando de Freitas  
+
   ["Value Iteration and Policy Iteration"](https://youtube.com/watch?v=IL3gVyJMmhg) by John Schulman  
   "Q-Function Learning Methods" by John Schulman
 	([first part](https://youtube.com/watch?v=Wnl-Qh2UHGg&t=19m06s),
-	[second part](https://youtube.com/watch?v=h1-pj4Y9-kM))
+	[second part](https://youtube.com/watch?v=h1-pj4Y9-kM))  
 
-  [introduction to deep Q-learning](http://youtube.com/watch?v=dV80NAlEins) by Nando de Freitas  
-  [introduction to deep Q-learning](http://youtube.com/watch?v=HUmEbUkeQHg) by Nando de Freitas  
+  [overview](http://techtalks.tv/talks/deep-reinforcement-learning/62360/) by David Silver  
+  [overview](http://youtu.be/qLaDWKd61Ig?t=9m16s) by David Silver  
+  [overview](http://videolectures.net/rldm2015_silver_reinforcement_learning/) by David Silver  
 
-  [tutorial](http://techtalks.tv/talks/deep-reinforcement-learning/62360/) by David Silver  
-  [tutorial](http://youtu.be/qLaDWKd61Ig?t=9m16s) by David Silver  
-  [tutorial](http://videolectures.net/rldm2015_silver_reinforcement_learning/) by David Silver  
+  introduction to Deep Q-Network by Fedor Ratnikov and Oleg Vasilev (in russian)
+	([first part](https://yadi.sk/i/AHDU2p_j3FT3nr), [second part](https://yadi.sk/i/EeUeheri3FT3ra))  
+  overview of Deep Q-Network by Alexander Fritsler and Fedor Ratnikov (in russian)
+	([first part](https://yadi.sk/i/yBO0q4mI3GAxYd), [second part](https://yadi.sk/i/oWC2M5803GAyFB))  
+  [overview of Deep Q-Network](http://youtube.com/watch?v=mrgJ53TIcQc) by Mikhail Pavlov (in russian)  
 
-  [overview](http://youtube.com/watch?v=mrgJ53TIcQc) by Mikhail Pavlov (in russian)  
-
-  http://www.alexirpan.com/rl-derivations/#q-learning
+  [derivations](http://www.alexirpan.com/rl-derivations/#q-learning) by Alex Irpan
 
 
   - naive Q-learning oscillates or diverges with neural nets  
@@ -886,7 +935,7 @@
   [interesting papers](#interesting-papers---value-based-methods)
 
 
-  implementations:  
+  deep Q-learning implementations:  
   - <https://github.com/khanhptnk/deep-q-tensorflow>  
   - <https://github.com/nivwusquorum/tensorflow-deepq>  
   - <https://github.com/devsisters/DQN-tensorflow>  
@@ -901,8 +950,8 @@
 ---
 ### policy-based methods
 
-  [introduction](http://youtube.com/watch?v=kUiR0RLmGCo) by Nando de Freitas  
   [introduction](http://youtube.com/watch?v=KHZVXao4qXs) by David Silver  
+  [introduction](http://youtube.com/watch?v=kUiR0RLmGCo) by Nando de Freitas  
 
   [introduction](http://karpathy.github.io/2016/05/31/rl/) by Andrej Karpathy  
   [introduction](https://dropbox.com/s/yefei7380x7jeo7/Deep%20Reinforcement%20Learning%20Tutorial%20%28OpenAI%29.html) by John Schulman  
@@ -911,7 +960,8 @@
   [tutorial](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/) by Pieter Abbeel  
   [tutorial](https://youtube.com/watch?v=PtAIh9KSnjo) by John Schulman  
 
-  [overview](https://youtu.be/mrgJ53TIcQc?t=41m35s) by Alexey Seleznev (in russian)
+  [overview](https://yadi.sk/i/I3M09HKQ3GKBiP) by Fedor Ratnikov (in russian)  
+  [overview](https://youtu.be/mrgJ53TIcQc?t=41m35s) by Alexey Seleznev (in russian)  
 
   course by John Schulman:  
 	https://youtube.com/watch?v=BB-BhTn6DCM  
@@ -1040,7 +1090,7 @@
   [overview](http://argmin.net/2017/04/03/evolution/) by Ben Recht and Roy Frostig  
 
 
-  https://en.wikipedia.org/wiki/Simultaneous\_perturbation\_stochastic\_approximation  
+  https://en.wikipedia.org/wiki/Simultaneous_perturbation_stochastic_approximation  
   ["Stochastic Gradient Estimation with Finite Differences"](http://approximateinference.org/accepted/BuesingEtAl2016.pdf) by Buesing, Weber, Mohamed  
 
 
@@ -1067,7 +1117,9 @@
   [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=1003) by Pieter Abbeel  
   overview by John Schulman ([part 1](https://youtube.com/watch?v=oPGVsoBonLM), [part 2](https://youtube.com/watch?v=oPGVsoBonLM))  
 
-  http://www.alexirpan.com/rl-derivations/#reinforce
+  [derivations](http://www.alexirpan.com/rl-derivations/#reinforce) by Alex Irpan
+
+  [overview of implementation](https://yadi.sk/i/8f9NX_E73GKBkT) by Fedor Ratnikov (in russian)
 
 
   implementations:  
@@ -1104,10 +1156,12 @@
   [overview](https://youtu.be/xe-z4i3l-iQ?t=30m35s) by Pieter Abbeel  
   [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=1630) by Pieter Abbeel  
   [overview](https://youtube.com/watch?v=gb5Q2XL5c8A) by John Schulman  
+  overview by Pavel Shvechikov and Fedor Ratnikov (in russian)
+	([first part](https://yadi.sk/i/1oyihBnm3HiKHm), [second part](https://yadi.sk/i/b0ol2gUV3HiKKJ),
+	[slides](https://yadi.sk/i/9j6S4WVp3HgEdn) in english)  
 
-  [explanation of natural gradient in TRPO](http://kvfrans.com/what-is-the-natural-gradient-and-where-does-it-appear-in-trust-region-policy-optimization/) by Kevin Frans
-
-  http://www.alexirpan.com/rl-derivations/#natural-policy-gradient
+  [explanation](http://kvfrans.com/what-is-the-natural-gradient-and-where-does-it-appear-in-trust-region-policy-optimization/) of natural gradient in TRPO by Kevin Frans  
+  [derivations](http://www.alexirpan.com/rl-derivations/#natural-policy-gradient) by Alex Irpan  
 
 
   implementations:  
@@ -1489,7 +1543,7 @@ interesting papers (see below):
 
 ----
 
-  * [approximate bayesian exploration models](#interesting-papers---exploration-and-intrinsic-motivation---approximate-bayesian-exploration-models)
+  * [approximate bayes-optimal exploration methods](#interesting-papers---exploration-and-intrinsic-motivation---approximate-bayesian-optimal-exploration-methods)
   * information theoretic and distributional models
     - [uncertainty motivation](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---uncertainty-motivation)
     - [information gain motivation](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---information-gain-motivation)
@@ -1503,7 +1557,15 @@ interesting papers (see below):
 
 
 ---
-### interesting papers - exploration and intrinsic motivation - approximate bayesian exploration models
+### interesting papers - exploration and intrinsic motivation - approximate bayes-optimal exploration methods
+
+#### Guez, Silver, Dayan - ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](https://arxiv.org/abs/1205.3109)
+>	"Bayesian model-based reinforcement learning is a formally elegant approach to learning optimal behaviour under model uncertainty, trading off exploration and exploitation in an ideal way. Unfortunately, finding the resulting Bayes-optimal policies is notoriously taxing, since the search space becomes enormous. In this paper we introduce a tractable, sample-based method for approximate Bayes-optimal planning which exploits Monte-Carlo tree search. Our approach outperformed prior Bayesian model-based RL algorithms by a significant margin on several well-known benchmark problems – because it avoids expensive applications of Bayes rule within the search tree by lazily sampling models from the current beliefs. We illustrate the advantages of our approach by showing it working in an infinite state space domain which is qualitatively out of reach of almost all previous work in Bayesian exploration."
+
+>	"We suggested a sample-based algorithm for Bayesian RL called BAMCP that significantly surpassed the performance of existing algorithms on several standard tasks. We showed that BAMCP can tackle larger and more complex tasks generated from a structured prior, where existing approaches scale poorly. In addition, BAMCP provably converges to the Bayes-optimal solution. The main idea is to employ Monte-Carlo tree search to explore the augmented Bayes-adaptive search space efficiently. The naive implementation of that idea is the proposed BA-UCT algorithm, which cannot scale for most priors due to expensive belief updates inside the search tree. We introduced three modifications to obtain a computationally tractable sample-based algorithm: root sampling, which only requires beliefs to be sampled at the start of each simulation; a model-free RL algorithm that learns a rollout policy; and the use of a lazy sampling scheme to sample the posterior beliefs cheaply."
+
+  - <https://youtu.be/sGuiWX07sKw?t=1h35m58s> (Silver)
+
 
 #### Russo, van Roy - ["Learning to Optimize Via Posterior Sampling"](https://arxiv.org/abs/1301.2609)
 >	"This paper considers the use of a simple posterior sampling algorithm to balance between exploration and exploitation when learning to optimize actions such as in multi-armed bandit problems. The algorithm, also known as Thompson Sampling and as probability matching, offers significant advantages over the popular upper confidence bound (UCB) approach, and can be applied to problems with finite or infinite action spaces and complicated relationships among action rewards. We make two theoretical contributions. The first establishes a connection between posterior sampling and UCB algorithms. This result lets us convert regret bounds developed for UCB algorithms into Bayesian regret bounds for posterior sampling. Our second theoretical contribution is a Bayesian regret bound for posterior sampling that applies broadly and can be specialized to many model classes. This bound depends on a new notion we refer to as the eluder dimension, which measures the degree of dependence among action rewards. Compared to UCB algorithm Bayesian regret bounds for specific model classes, our general bound matches the best available for linear models and is stronger than the best available for generalized linear models. Further, our analysis provides insight into performance advantages of posterior sampling, which are highlighted through simulation results that demonstrate performance surpassing recently proposed UCB algorithms."
@@ -1607,6 +1669,7 @@ interesting papers (see below):
   - <http://youtube.com/watch?v=6SAdmG3zAMg>
   - <https://youtu.be/ck4GixLs4ZQ?t=1h27m39s> (Osband) + [slides](https://docs.google.com/presentation/d/1lis0yBGT-uIXnAsi0vlP3SuWD2svMErJWy_LYtfzMOA/)
   - <http://videolectures.net/rldm2015_van_roy_function_randomization/#t=1830> (van Roy)
+  - <https://yadi.sk/i/yBO0q4mI3GAxYd> (47:07) (Fritsler, in russian)
   - <https://youtu.be/mrgJ53TIcQc?t=32m24s> (Pavlov, in russian)
   - <https://github.com/Kaixhin/Atari>
   - <https://github.com/iassael/torch-bootstrapped-dqn>
@@ -1629,6 +1692,14 @@ interesting papers (see below):
 >	"One of the most popular recent suggestions has been to use dropout sampling (where individual neurons are independently set to zero with probability p) to “get uncertainty information from these deep learning models for free – without changing a thing”. Unfortunately, as we now show, dropout sampling can be better thought of as an approximation the risk in y, rather than the uncertainty of the learned model. Further, using a fixed dropout rate p, rather than optimizing this variational parameter can lead an arbitrarily bad approximation to the risk."
 
 >	"We extend the analysis to linear functions and argue that this behavior also carries over to deep learning; extensive computational results support this claim. We investigate the importance of risk and uncertainty in sequential decision problems and why this setting is crucially distinct from standard supervised learning tasks. We highlight the dangers of a naive applications of dropout (or any other approximate risk measure) as a proxy for uncertainty. We present analytical regret bounds for algorithms based upon smoothed bootstrapped uncertainty estimates that complement their strong performance in complex nonlinear domains."
+
+
+#### Castronovo, Francois-Lavet, Fonteneau, Ernst, Couetoux - ["Approximate Bayes Optimal Policy Search using Neural Networks"](http://orbi.ulg.ac.be/bitstream/2268/204410/1/ANN-BRL.pdf)
+>	"Bayesian Reinforcement Learning agents aim to maximise the expected collected rewards obtained when interacting with an unknown Markov Decision Process while using some prior knowledge. State-of-the-art BRL agents rely on frequent updates of the belief on the MDP, as new observations of the environment are made. This offers theoretical guarantees to converge to an optimum, but is computationally intractable, even on small-scale problems. In this paper, we present a method that circumvents this issue by training a parametric policy able to recommend an action directly from raw observations. Artificial Neural Networks are used to represent this policy, and are trained on the trajectories sampled from the prior. The trained model is then used online, and is able to act on the real MDP at a very low computational cost. Our new algorithm shows strong empirical performance, on a wide range of test problems, and is robust to inaccuracies of the prior distribution."
+
+>	"State-of-the-art Bayesian algorithms generally do not use offline training. Instead, they rely on Bayes updates and sampling techniques during the interaction, which may be too computationally expensive, even on very small MDPs. In order to reduce significantly this cost, we propose a new practical algorithm to solve BAMDPs: Artificial Neural Networks for Bayesian Reinforcement Learning. Our algorithm aims at finding an optimal policy, i.e. a mapping from observations to actions, which maximises the rewards in a certain environment. This policy is trained to act optimally on some MDPs sampled from the prior distribution, and then it is used in the test environment. By design, our approach does not use any Bayes update, and is thus computationally inexpensive during online interactions."
+
+>	"We developed ANN-BRL, an offline policy-search algorithm for addressing BAMDPs. As shown by our experiments, ANN-BRL obtained state-of-the-art performance on all benchmarks considered in this paper. In particular, on the most challenging benchmark 9, a score 4 times higher than the one measured for the second best algorithm has been observed. Moreover, ANN-BRL is able to make online decisions faster than most BRL algorithms. Our idea is to define a parametric policy as an ANN, and train it using backpropagation algorithm. This requires a training set made of observations-action pairs and in order to generate this dataset, several simulations have been performed on MDPs drawn from prior distribution. In theory, we should label each example with a Bayes optimal action. However, those are too expensive to compute for the whole dataset. Instead, we chose to use optimal actions under full observability hypothesis. Due to the modularity of our approach, a better labelling technique could easily be integrated in ANN-BRL, and may bring stronger empirical results. Moreover, two types of features have been considered for representing the current history: Q-values and transition counters. The use of Q-values allows to reach state-of-the-art performance on most benchmarks and outperfom all other algorithms on the most difficult one. On the contrary, computing a good policy from transition counters only is a difficult task to achieve, even for Artificial Neural Networks. Nevertheless, we found that the difference between this approach and state-of-the-art algorithms was much less noticeable when prior distribution differs from test distribution, which means that at least in some cases, it is possible to compute efficient policies without relying on online computationally expensive tools such as Q-values."
 
 
 #### Duan, Schulman, Chen, Bartlett, Sutskever, Abbeel - ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](http://arxiv.org/abs/1611.02779)
@@ -1743,6 +1814,7 @@ interesting papers (see below):
   - <https://youtube.com/watch?v=nbbMSMv3v5k>
   - <https://youtu.be/WRFqzYWHsZA?t=18m38s> (Abbeel)
   - <https://youtube.com/watch?v=sRIjxxjVrnY> (Panin)
+  - <https://yadi.sk/i/_2_0yqeW3HDbcn> (Panin, in russian) ([slides](https://yadi.sk/i/8sx42nau3HEYKg) in english)
   - <http://pemami4911.github.io/paper-summaries/2016/09/04/VIME.html>
   - <https://github.com/openai/vime>
   - [Artificial Curiosity and Creativity](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) by Juergen Schmidhuber
@@ -1752,7 +1824,9 @@ interesting papers (see below):
 >	"We introduce a method for automatically selecting the path, or syllabus, that a neural network follows through a curriculum so as to maximise learning efficiency. A measure of the amount that the network learns from each data sample is provided as a reward signal to a nonstationary multi-armed bandit algorithm, which then determines a stochastic syllabus. We consider a range of signals derived from two distinct indicators of learning progress: rate of increase in prediction accuracy, and rate of increase in network complexity. Experimental results for LSTM networks on three curricula demonstrate that our approach can significantly accelerate learning, in some cases halving the time required to attain a satisfactory performance level."
 
 >	"We focus on variants of prediction gain, and also introduce a novel class of progress signals which we refer to as complexity gain. Derived from minimum description length principles, complexity gain equates acquisition of knowledge with an increase in effective information encoded in the network weights."  
+
 >	"VIME uses a reward signal that is closely related to variational complexity gain. The difference is that while VIME measures the KL between the posterior before and after a step in parameter space, we consider the change in KL between the posterior and prior induced by the step. Therefore, while VIME looks for any change to the posterior, we focus only on changes that alter the divergence from the prior. Further research will be needed to assess the relative merits of the two signals."  
+
 >	"For maximum likelihood training, we found prediction gain to be the most consistent signal, while for variational inference training, gradient variational complexity gain performed best. Importantly, both are instantaneous, in the sense that they can be evaluated using only the samples used for training."  
 
 
@@ -1913,9 +1987,11 @@ interesting papers (see below):
 
 
 #### Houthooft, Chen, Duan, Schulman, Turck, Abbeel - ["VIME: Variational Information Maximizing Exploration"](#houthooft-chen-duan-schulman-turck-abbeel---vime-variational-information-maximizing-exploration)
+>	approximation of [Artificial Curiosity and Creativity](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory of Juergen Schmidhuber
 
 
-#### Graves, Bellemare, Menick, Munos, Kavukcuoglu - ["Automated Curriculum Learning for Neural Networks"](#held-geng-florensa-abbeel---automatic-goal-generation-for-reinforcement-learning-agents)
+#### Graves, Bellemare, Menick, Munos, Kavukcuoglu - ["Automated Curriculum Learning for Neural Networks"](#graves-bellemare-menick-munos-kavukcuoglu---automated-curriculum-learning-for-neural-networks)
+>	approximation of [Artificial Curiosity and Creativity](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory of Juergen Schmidhuber
 
 
 
@@ -1933,7 +2009,7 @@ interesting papers (see below):
 >	"Reinforcement learning is a powerful technique to train an agent to perform a task. However, an agent that is trained using reinforcement learning is only capable of achieving the single task that is specified via its reward function. Such an approach does not scale well to settings in which an agent needs to perform a diverse set of tasks, such as navigating to varying positions in a room or moving objects to varying locations. Instead, we propose a method that allows an agent to automatically discover the range of tasks that it is capable of performing in its environment. We use a generator network to propose tasks for the agent to try to achieve, each task being specified as reaching a certain parametrized sub-set of the state-space. The generator network is optimized using adversarial training to produce tasks that are always at the appropriate level of difficulty for the agent. Our method thus automatically produces a curriculum of tasks for the agent to learn. We show that, by using this framework, an agent can efficiently and automatically learn to perform a wide set of tasks without requiring any prior knowledge of its environment. Our method can also learn to achieve tasks with sparse rewards, which traditionally pose significant challenges."
 
 
-#### Graves, Bellemare, Menick, Munos, Kavukcuoglu - ["Automated Curriculum Learning for Neural Networks"](#held-geng-florensa-abbeel---automatic-goal-generation-for-reinforcement-learning-agents)
+#### Graves, Bellemare, Menick, Munos, Kavukcuoglu - ["Automated Curriculum Learning for Neural Networks"](#graves-bellemare-menick-munos-kavukcuoglu---automated-curriculum-learning-for-neural-networks)
 
 
 
@@ -2047,6 +2123,8 @@ interesting papers (see below):
 ---
 ### interesting papers - model-based methods
 
+[interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---approximate-bayesian-exploration-models) on approximate bayes-optimal exploration methods
+
 [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---simulation-and-planning) on simulation and planning  
 [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---memory) on memory  
 
@@ -2059,7 +2137,7 @@ interesting papers (see below):
 ----
 >	"Demonstrated that recurrent Q learning can perform the required information integration to resolve short-term partial observability (e.g. to estimate velocities) that is achieved via stacks of frames in the original DQN architecture."
 
-  - <https://youtube.com/watch?v=bE5DIJvZexc> (Fritzler, in russian)
+  - <https://youtube.com/watch?v=bE5DIJvZexc> (Fritsler, in russian)
   - <https://github.com/mhauskn/dqn/tree/recurrent>
   - <https://github.com/awjuliani/DeepRL-Agents/blob/master/Deep-Recurrent-Q-Network.ipynb>
 
@@ -2092,20 +2170,6 @@ interesting papers (see below):
   - <https://youtu.be/ywzZJ4L32xc?t=6m39s> (Pavlov)
 
 
-#### Guez, Silver, Dayan - ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](https://arxiv.org/abs/1205.3109)
->	"Bayesian model-based reinforcement learning is a formally elegant approach to learning optimal behaviour under model uncertainty, trading off exploration and exploitation in an ideal way. Unfortunately, finding the resulting Bayes-optimal policies is notoriously taxing, since the search space becomes enormous. In this paper we introduce a tractable, sample-based method for approximate Bayes-optimal planning which exploits Monte-Carlo tree search. Our approach outperformed prior Bayesian model-based RL algorithms by a significant margin on several well-known benchmark problems – because it avoids expensive applications of Bayes rule within the search tree by lazily sampling models from the current beliefs. We illustrate the advantages of our approach by showing it working in an infinite state space domain which is qualitatively out of reach of almost all previous work in Bayesian exploration."
-
->	"We suggested a sample-based algorithm for Bayesian RL called BAMCP that significantly surpassed the performance of existing algorithms on several standard tasks. We showed that BAMCP can tackle larger and more complex tasks generated from a structured prior, where existing approaches scale poorly. In addition, BAMCP provably converges to the Bayes-optimal solution. The main idea is to employ Monte-Carlo tree search to explore the augmented Bayes-adaptive search space efficiently. The naive implementation of that idea is the proposed BA-UCT algorithm, which cannot scale for most priors due to expensive belief updates inside the search tree. We introduced three modifications to obtain a computationally tractable sample-based algorithm: root sampling, which only requires beliefs to be sampled at the start of each simulation; a model-free RL algorithm that learns a rollout policy; and the use of a lazy sampling scheme to sample the posterior beliefs cheaply."
-
-
-#### Castronovo, Francois-Lavet, Fonteneau, Ernst, Couetoux - ["Approximate Bayes Optimal Policy Search using Neural Networks"](http://orbi.ulg.ac.be/bitstream/2268/204410/1/ANN-BRL.pdf)
->	"Bayesian Reinforcement Learning agents aim to maximise the expected collected rewards obtained when interacting with an unknown Markov Decision Process while using some prior knowledge. State-of-the-art BRL agents rely on frequent updates of the belief on the MDP, as new observations of the environment are made. This offers theoretical guarantees to converge to an optimum, but is computationally intractable, even on small-scale problems. In this paper, we present a method that circumvents this issue by training a parametric policy able to recommend an action directly from raw observations. Artificial Neural Networks (ANNs) are used to represent this policy, and are trained on the trajectories sampled from the prior. The trained model is then used online, and is able to act on the real MDP at a very low computational cost. Our new algorithm shows strong empirical performance, on a wide range of test problems, and is robust to inaccuracies of the prior distribution."
-
->	"State-of-the-art Bayesian algorithms generally do not use offline training. Instead, they rely on Bayes updates and sampling techniques during the interaction, which may be too computationally expensive, even on very small MDPs. In order to reduce significantly this cost, we propose a new practical algorithm to solve BAMDPs: Artificial Neural Networks for Bayesian Reinforcement Learning. Our algorithm aims at finding an optimal policy, i.e. a mapping from observations to actions, which maximises the rewards in a certain environment. This policy is trained to act optimally on some MDPs sampled from the prior distribution, and then it is used in the test environment. By design, our approach does not use any Bayes update, and is thus computationally inexpensive during online interactions."
-
->	"We developed ANN-BRL, an offline policy-search algorithm for addressing BAMDPs. As shown by our experiments, ANN-BRL obtained state-of-the-art performance on all benchmarks considered in this paper. In particular, on the most challenging benchmark 9, a score 4 times higher than the one measured for the second best algorithm has been observed. Moreover, ANN-BRL is able to make online decisions faster than most BRL algorithms. Our idea is to define a parametric policy as an ANN, and train it using backpropagation algorithm. This requires a training set made of observations-action pairs and in order to generate this dataset, several simulations have been performed on MDPs drawn from prior distribution. In theory, we should label each example with a Bayes optimal action. However, those are too expensive to compute for the whole dataset. Instead, we chose to use optimal actions under full observability hypothesis. Due to the modularity of our approach, a better labelling technique could easily be integrated in ANN-BRL, and may bring stronger empirical results. Moreover, two types of features have been considered for representing the current history: Q-values and transition counters. The use of Q-values allows to reach state-of-the-art performance on most benchmarks and outperfom all other algorithms on the most difficult one. On the contrary, computing a good policy from transition counters only is a difficult task to achieve, even for Artificial Neural Networks. Nevertheless, we found that the difference between this approach and state-of-the-art algorithms was much less noticeable when prior distribution differs from test distribution, which means that at least in some cases, it is possible to compute efficient policies without relying on online computationally expensive tools such as Q-values."
-
-
 
 ---
 ### interesting papers - value-based methods
@@ -2127,6 +2191,7 @@ interesting papers (see below):
   - <http://youtube.com/watch?v=xzM7eI7caRk> (Mnih)
   - <http://youtube.com/watch?v=dV80NAlEins> (de Freitas)
   - <http://youtube.com/watch?v=HUmEbUkeQHg> (de Freitas)
+  - <https://yadi.sk/i/AHDU2p_j3FT3nr> + <https://yadi.sk/i/EeUeheri3FT3ra> (Ratnikov and Vasilev, in russian)
   - <http://youtube.com/watch?v=mrgJ53TIcQc> (Pavlov, in russian)
   - <http://cs.stanford.edu/people/karpathy/convnetjs/demo/rldemo.html>
   - <https://github.com/khanhptnk/deep-q-tensorflow>
@@ -2151,6 +2216,7 @@ interesting papers (see below):
 
   - <https://youtube.com/watch?v=TpGuQaswaHs> + <https://youtube.com/watch?v=oNLITLfrvQY> (demos)
   - <http://techtalks.tv/talks/dueling-network-architectures-for-deep-reinforcement-learning/62381/> (Wang)
+  - <https://yadi.sk/i/yBO0q4mI3GAxYd> (56:26) (Fritsler, in russian)
   - <https://youtu.be/mrgJ53TIcQc?t=35m4s> (Pavlov, in russian)
   - <http://torch.ch/blog/2016/04/30/dueling_dqn.html>
   - <https://github.com/carpedm20/deep-rl-tensorflow>
@@ -2164,6 +2230,7 @@ interesting papers (see below):
 >	"This paper has five contributions. First, we have shown why Q-learning can be overoptimistic in large-scale problems, even if these are deterministic, due to the inherent estimation errors of learning. Second, by analyzing the value estimates on Atari games we have shown that these overestimations are more common and severe in practice than previously acknowledged. Third, we have shown that Double Q-learning can be used at scale to successfully reduce this overoptimism, resulting in more stable and reliable learning. Fourth, we have proposed a specific implementation called Double DQN, that uses the existing architecture and deep neural network of the DQN algorithm without requiring additional networks or parameters. Finally, we have shown that Double DQN finds better policies, obtaining new state-of-the-art results on the Atari 2600 domain."
 
   - <https://youtu.be/qLaDWKd61Ig?t=32m52s> (Silver)
+  - <https://yadi.sk/i/yBO0q4mI3GAxYd> (15:02) (Fritsler, in russian)
   - <https://youtu.be/mrgJ53TIcQc?t=17m31s> (Pavlov, in russian)
   - <https://github.com/carpedm20/deep-rl-tensorflow>
   - <https://github.com/Kaixhin/Atari>
@@ -2190,6 +2257,7 @@ interesting papers (see below):
 
 >	"Numerous neuroscience studies have identified mechanisms of experience replay in the hippocampus of rodents, where sequences of prior experience are replayed, either during awake resting or sleep, and in particular that this happens more for rewarded paths. Furthermore, there is a likely link between increased replay of an experience, and how much can be learned from it, or its TD-error."
 
+  - <https://yadi.sk/i/yBO0q4mI3GAxYd> (33:13) (Fritsler, in russian)
   - <https://youtu.be/mrgJ53TIcQc?t=25m43s> (Pavlov, in russian)
   - <https://github.com/Kaixhin/Atari>
   - <https://github.com/carpedm20/deep-rl-tensorflow>
@@ -2323,6 +2391,7 @@ interesting papers (see below):
   - <https://youtu.be/xe-z4i3l-iQ?t=30m35s> (Abbeel)
   - <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=1630> (Abbeel)
   - <https://youtube.com/watch?v=gb5Q2XL5c8A> (Schulman)
+  - <https://yadi.sk/i/1oyihBnm3HiKHm> + <https://yadi.sk/i/b0ol2gUV3HiKKJ> (Shvechikov and Ratnikov, in russian) ([slides](https://yadi.sk/i/9j6S4WVp3HgEdn) in english)  
   - <http://kvfrans.com/what-is-the-natural-gradient-and-where-does-it-appear-in-trust-region-policy-optimization/>
   - <https://github.com/joschu/modular_rl>
   - <https://github.com/rll/deeprlhw2/blob/master/ppo.py>

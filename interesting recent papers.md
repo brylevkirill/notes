@@ -708,6 +708,10 @@ interesting papers:
   - <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1610.09038>  
   - <https://github.com/anirudh9119/LM_GANS>  
 
+[Self-critical Sequence Training for Image Captioning](http://arxiv.org/abs/1612.00563)  
+>	"REINFORCE with reward normalization but without baseline estimation"  
+  - <https://yadi.sk/i/-U5w4NpJ3H5TWD> + <https://yadi.sk/i/W3N7-6is3H5TWN> (Ratnikov, in russian)  
+
 ----
 [Sequence-to-Sequence Learning as Beam-Search Optimization](http://arxiv.org/abs/1606.02960)  
   - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-2> (44:02) (Wiseman)  
@@ -747,7 +751,7 @@ interesting papers:
   - <https://youtube.com/watch?v=LUex45H4YXI> (Bouchacourt)  
 
 ----
-[Deep Probabilistic Programming](http://arxiv.org/abs/1701.03757) (Edward)  
+[Deep Probabilistic Programming](http://arxiv.org/abs/1701.03757) (Blei)  
   - <http://edwardlib.org/iclr2017>  
   - <http://edwardlib.org/zoo>  
 
@@ -921,7 +925,7 @@ interesting papers:
   - <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FWangBHMMKF16>  
   - <https://github.com/pfnet/chainerrl/blob/master/chainerrl/agents/acer.py>  
 
-[PGQ: Combining policy gradient and Q-learning](http://arxiv.org/abs/1611.01626) (DeepMind)  
+[Combining policy gradient and Q-learning](http://arxiv.org/abs/1611.01626) (DeepMind)  
 >	"This connection allows us to estimate the Q-values from the action preferences of the policy, to which we apply Q-learning updates."  
 >	"We also establish an equivalency between action-value fitting techniques and actor-critic algorithms, showing that regularized policy gradient techniques can be interpreted as advantage function learning algorithms."  
   - <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FODonoghueMKM16>  
@@ -962,6 +966,7 @@ interesting papers:
 
 ----
 [Learning to Play in a Day: Faster Deep Reinforcement Learning by Optimality Tightening](https://arxiv.org/abs/1611.01606)  # 10x faster Q-learning  
+  - <https://yadi.sk/i/yBO0q4mI3GAxYd> (1:10:20) (Fritsler, in russian)  
   - <https://youtu.be/mrj_hyH974o?t=16m13s> (in russian)  
 
 [Trust Region Policy Optimization](http://arxiv.org/abs/1502.05477) (Schulman, Levine, Jordan, Abbeel)  
@@ -1099,7 +1104,7 @@ hieves."
   - <https://github.com/florensacc/snn4hrl>  
 
 ----
-[Reinforcement Learning with Unsupervised Auxiliary Tasks](http://arxiv.org/abs/1611.05397)  # UNREAL  
+[Reinforcement Learning with Unsupervised Auxiliary Tasks](http://arxiv.org/abs/1611.05397) (DeepMind)  # UNREAL  
 >	"Auxiliary tasks:  
 >	- pixel changes: learn a policy for maximally changing the pixels in a grid of cells overlaid over the images  
 >	- network features: learn a policy for maximally activating units in a specific hidden layer  
@@ -1113,10 +1118,15 @@ hieves."
   - <https://github.com/dennybritz/deeplearning-papernotes/blob/b097e313dc59c956575fb1bf23b64fa8d1d84057/notes/rl-auxiliary-tasks.md>  
   - <https://github.com/miyosuda/unreal>  
 
+[Learning to Navigate in Complex Environments](http://arxiv.org/abs/1611.03673) (DeepMind)  
+  - <http://youtube.com/watch?v=5Rflbx8y7HY> (Mirowski)  
+  - <http://pemami4911.github.io/paper-summaries/2016/12/20/learning-to-navigate-in-complex-envs.html>  
+
 [Loss is Its Own Reward: Self-Supervision for Reinforcement Learning](http://arxiv.org/abs/1612.07307) (Darrell)  
 
 [Feature Control as Intrinsic Motivation for Hierarchical Reinforcement Learning](https://arxiv.org/abs/1705.06769)  
 
+----
 [Towards Information-Seeking Agents](http://arxiv.org/abs/1612.02605) (Maluuba)  
   - <https://youtube.com/watch?v=3bSquT1zqj8> (demo)  
 
@@ -1182,7 +1192,12 @@ hieves."
 >	"latent action prior, another variational autoencoder that models a prior over action segments, and showed how it can be used to perform control using actions from the same distribution as a dynamics model’s training data"  
 
 ----
+[QMDP-Net: Deep Learning for Planning under Partial Observability](https://arxiv.org/abs/1703.06692)  
+>	"This paper introduces QMDP-net, a neural network architecture for planning under partial observability. The QMDP-net combines the strengths of model-free learning and model-based planning. It is a recurrent policy network, but it represents a policy by connecting a model with a planning algorithm that solves the model, thus embedding the solution structure of planning in the network architecture. The QMDP-net is fully differentiable and allows end-to-end training. We train a QMDP-net over a set of different environments so that it can generalize over new ones."  
+
 [The Predictron: End-to-End Learning and Planning](https://arxiv.org/abs/1612.08810) (Silver)  
+>	"value estimation in Markov reward processes"  
+>	"do not address the issue of decision making or planning"  
   - <https://youtube.com/watch?v=BeaLdaN2C3Q>  
   - <https://github.com/zhongwen/predictron>  
   - <https://github.com/muupan/predictron>  
@@ -1193,6 +1208,10 @@ hieves."
 >	2. Representing the Bayes Filter state belief update as feedforward passes of a Belief Propagation RCNN.  
 >	3. Learning the State Transition models in a POMDP setting, using backpropagation on the Belief Propagation RCNN.  
 >	4. Learning Reward Functions in an Inverse Reinforcement Learning framework from demonstrations, using a QMDP RCNN."  
+
+>	"addresses decision making under partial observability"  
+>	"focuses on learning a model rather than a policy"  
+>	"learning is restricted to a fixed environment and does not generalize to new environments"   
   - <https://youtube.com/watch?v=gpwA3QNTPOQ> (Shankar)  
   - <https://github.com/tanmayshankar/RCNN_MDP>  
 
@@ -1241,6 +1260,10 @@ hieves."
   - <https://github.com/ShibiHe/Model-Free-Episodic-Control>  
   - <https://github.com/sudeepraja/Model-Free-Episodic-Control>  
 
+[Neural Map: Structured Memory for Deep Reinforcement Learning](https://arxiv.org/abs/1702.08360) (Salakhutdinov)  
+>	size and computational cost doesn't grow with time horizon of environment  
+  - <https://yadi.sk/i/pMdw-_uI3Gke7Z> (Fritsler, in russian)  
+
 [A Growing Long-term Episodic and Semantic Memory](http://arxiv.org/abs/1610.06402)  
 
 [Memory-based Control with Recurrent Neural Networks](http://arxiv.org/abs/1512.04455) (Silver)  
@@ -1255,8 +1278,18 @@ hieves."
   - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (39:26) (Levine)  
 
 ----
+[Deep Successor Reinforcement Learning](https://arxiv.org/abs/1606.02396)  
+  - <https://youtube.com/watch?v=OCHwXxSW70o> (Kulkarni)  
+  - <https://youtube.com/watch?v=kNqXCn7K-BM> (Garipov)  
+
+[Learning to Act by Predicting the Future](https://arxiv.org/pdf/1611.01779)  
+>	"application of deep successor reinforcement learning"  
+  - <https://youtube.com/watch?v=947bSUtuSQ0> + <https://youtube.com/watch?v=947bSUtuSQ0> (demo)  
+  - <https://youtube.com/watch?v=Q0ldKJbAwR8> (Dosovitskiy)  
+
 [Successor Features for Transfer in Reinforcement Learning](http://arxiv.org/abs/1606.05312) (Silver)  
 
+----
 [Learning Modular Neural Network Policies for Multi-Task and Multi-Robot Transfer](http://arxiv.org/abs/1609.07088) (Abbeel, Levine)  
   - <https://youtube.com/watch?v=n4EgRwzJE1o>  
 
@@ -1314,13 +1347,6 @@ hieves."
 
 
 
-
-[Learning to Navigate in Complex Environments](http://arxiv.org/abs/1611.03673) (DeepMind)  
-  - <http://youtube.com/watch?v=5Rflbx8y7HY> (Mirowski)  
-  - <http://pemami4911.github.io/paper-summaries/2016/12/20/learning-to-navigate-in-complex-envs.html>  
-
-
-
 ---
 ### reinforcement learning - applications
 
@@ -1340,26 +1366,6 @@ hieves."
   - <https://youtu.be/k5KWUpqMO2U?t=47m37s> (Narasimhan)  
   - <https://github.com/karthikncode/DeepRL-InformationExtraction>  
 
-[Self-critical Sequence Training for Image Captioning](http://arxiv.org/abs/1612.00563)  # REINFORCE with reward normalization but without baseline estimation  
-
-[Multi-Agent Cooperation and the Emergence of (Natural) Language](https://arxiv.org/abs/1612.07182) (Facebook)  
-  - <https://facebook.com/iclr.cc/videos/1712966538732405/> (Peysakhovich)  
-
-[Emergence of Grounded Compositional Language in Multi-Agent Populations](http://arxiv.org/abs/1703.04908) (OpenAI)  
->	"Though the agents come up with words that we found to correspond to objects and other agents, as well as actions like 'Look at' or 'Go to', to the agents these words are abstract symbols represented by one-hot vector - we label these one-hot vectors with English words that capture their meaning for the sake of interpretability."  
->
->	"One possible scenario is from goal oriented-dialog systems. Where one agent tries to transmit to another certain API call that it should perform (book restaurant, hotel, whatever). I think these models can make it more data efficient. At the first stage two agents have to communicate and discover their own language, then you can add regularization to make the language look more like natural language and on the final stage, you are adding a small amount of real data (dialog examples specific for your task). I bet that using additional communication loss will make the model more data efficient."  
->
->	"The big outcome to hunt for in this space is a post-gradient descent learning algorithm. Of course you can make agents that play the symbol grounding game, but it's not a very big step from there to compression of data, and from there to compression of 'what you need to know to solve the problem you're about to encounter' - at which point you have a system which can learn by training or learn by receiving messages. It was pretty easy to get stuff like one agent learning a classifier, encoding it in a message, and transmitting it to a second agent who has to use it for zero-shot classification. But it's still single-task specific communication, so there's no benefit to the agent for receiving, say, the messages associated with the previous 100 tasks. The tricky thing is going from there to something more abstract and cumulative, so that you can actually use message generation as an iterative learning mechanism. I think a large part of that difficulty is actually designing the task ensemble, not just the network architecture."  
-  - <https://youtube.com/watch?v=liVFy7ZO4OA> (demo)  
-  - ["A Paradigm for Situated and Goal-Driven Language Learning"](https://arxiv.org/abs/1610.03585)  
-  - <https://blog.openai.com/learning-to-communicate/>  
-  - <https://youtube.com/watch?v=f4gKhK8Q6mY&t=22m20s> (Abbeel)  
-  - <http://videos.re-work.co/videos/366-learning-to-communicate> (Lowe)  
-
-[Learning Cooperative Visual Dialog Agents with Deep Reinforcement Learning](https://arxiv.org/abs/1703.06585)  
-  - <https://visualdialog.org> (demo)  
-
 [Towards Deep Symbolic Reinforcement Learning](http://arxiv.org/abs/1609.05518)  
   - <https://youtube.com/watch?v=HOAVhPy6nrc> (Shanahan)  
 
@@ -1368,15 +1374,6 @@ hieves."
 ---
 ### dialog systems
 
-[How NOT To Evaluate Your Dialogue System: An Empirical Study of Unsupervised Evaluation Metrics for Dialogue Response Generation](http://arxiv.org/abs/1603.08023)  
-  - <http://www.shortscience.org/paper?bibtexKey=journals/corr/LiuLSNCP16#shagunsodhani>  
-
-[On the Evaluation of Dialogue Systems with Next Utterance Classification](http://arxiv.org/abs/1605.05414)  
-
-[Towards an Automatic Turing Test: Learning to Evaluate Dialogue Responses](http://openreview.net/forum?id=HJ5PIaseg)  
-  - <https://youtube.com/watch?v=vTgwWobuoFw> (Pineau)  
-
-----
 [A Paradigm for Situated and Goal-Driven Language Learning](https://arxiv.org/abs/1610.03585) (OpenAI)  
 
 [Multi-Agent Cooperation and the Emergence of (Natural) Language](https://arxiv.org/abs/1612.07182) (Facebook)  
@@ -1397,7 +1394,18 @@ hieves."
 [Learning Cooperative Visual Dialog Agents with Deep Reinforcement Learning](https://arxiv.org/abs/1703.06585)  
   - <https://visualdialog.org> (demo)  
 
-[Emergent Language in a Multi-Modal, Multi-Step Referential Game](https://arxiv.org/abs/1705.10369)
+[Emergent Language in a Multi-Modal, Multi-Step Referential Game](https://arxiv.org/abs/1705.10369)  
+
+[A Deep Compositional Framework for Human-like Language Acquisition in Virtual Environment](https://arxiv.org/abs/1703.09831) (Baidu)  
+
+----
+[How NOT To Evaluate Your Dialogue System: An Empirical Study of Unsupervised Evaluation Metrics for Dialogue Response Generation](http://arxiv.org/abs/1603.08023)  
+  - <http://www.shortscience.org/paper?bibtexKey=journals/corr/LiuLSNCP16#shagunsodhani>  
+
+[On the Evaluation of Dialogue Systems with Next Utterance Classification](http://arxiv.org/abs/1605.05414)  
+
+[Towards an Automatic Turing Test: Learning to Evaluate Dialogue Responses](http://openreview.net/forum?id=HJ5PIaseg)  
+  - <https://youtube.com/watch?v=vTgwWobuoFw> (Pineau)  
 
 ----
 [Learning from Real Users: Rating Dialogue Success with Neural Networks for Reinforcement Learning in Spoken Dialogue Systems](http://arxiv.org/abs/1508.03386) (Young)  

@@ -39,24 +39,21 @@
 [recent breakthroughs](https://github.com/brylevkirill/posts/blob/master/breakthroughs.md) (in russian)
 
 
+  - Juergen Schmidhuber  
+	["Compression Progress: The Algorithmic Principle Behind Curiosity and Creativity"](https://vimeo.com/7441291)  
+	["Formal Theory of Fun & Creativity"](http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/)  
+
   - Demis Hassabis  
 	["Towards General Artificial Intelligence"](https://youtube.com/watch?v=vQXAsdMa_8A)  
-	["Artificial Intelligence and The Future"](https://youtube.com/watch?v=4fjmnOQuqao)  
-
-  - Juergen Schmidhuber  
-	["The Problems of AI Consciousness and Unsupervised Learning Are Already Solved"](https://youtube.com/watch?v=JJj4allguoU)  
-	["Formal Theory of Fun & Creativity"](http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/)  
-	["How to Learn an Algorithm"](https://youtube.com/watch?v=mF5-tr7qAF4)  
 
   - Richard Sutton  
 	["The Future of Artificial Intelligence Belongs to Search and Learning"](http://www.fields.utoronto.ca/talks/advances-reinforcement-learning)  
-	["Toward Learning Human-level Predictive Knowledge"](https://vimeo.com/16811494)  
 
   - Geoffrey Hinton  
 	["Deep Learning and AI"](https://youtube.com/watch?v=izrG86jycck)  
 
   - Yann LeCun  
-	["Obstacles to progress in AI"](https://youtube.com/watch?v=9Kgk4s7yG1c)  
+	["Obstacles to Progress in AI"](https://youtube.com/watch?v=9Kgk4s7yG1c)  
 
   - Yoshua Bengio  
 	["Deep Learning and General AI"](https://youtube.com/watch?v=exhdfIPzj24)  
@@ -67,13 +64,13 @@
   - Joshua Tenenbaum  
 	["Building Machines That Learn like Humans"](https://youtube.com/watch?v=quPN7Hpk014)  
 
-  - Gary Marcus  
-	["Smart Machines And What They Can Still Learn From People"](https://youtube.com/watch?v=XmWneGydtng)  
-
 
   "What you wanted to know about AI" (informal) -
 	[first part](http://fastml.com/what-you-wanted-to-know-about-ai/) +
 	[second part](http://fastml.com/what-you-wanted-to-know-about-ai-part-ii/)
+
+
+  [introductory course](https://youtube.com/channel/UCHBzJsIcRIVuzzHVYabikTQ/videos) from UC Berkeley
 
 
 
@@ -464,8 +461,13 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
 >	"It is possible to derive an interesting relationship between compression improvement - an intrinsic reward objective defined in Schmidhuber's Artificial Curiosity and Creativity theory, and the information gain. The agent’s curiosity is equated with compression improvement, measured through C(ξt; φt-1) - C(ξt; φt), where C(ξ; φ) is the description length of ξ using φ as a model. Furthermore, it is known that the negative variational lower bound can be viewed as the description length. Hence, we can write compression improvement as L[q(θ; φt), ξt] - L[q(θ; φt-1), ξt]. In addition, due to alternative formulation of the variational lower bound, compression improvement can be written as (log p(ξt) - Dkl[q(θ; φt)||p(θ|ξt)]) - (log p(ξt) - Dkl[q(θ; φt-1)||p(θ|ξt)]). If we assume that φt perfectly optimizes the variational lower bound for the history ξt, then Dkl[q(θ; φt)||p(θ|ξt)] = 0, which occurs when the approximation equals the true posterior, i.e., q(θ; φt) = p(θ|ξt). Hence, compression improvement becomes Dkl[p(θ|ξt-1) || p(θ|ξt)]. Therefore, optimizing for compression improvement comes down to optimizing the KL divergence from the posterior given the past history ξt-1 to the posterior given the total history ξt. As such, we arrive at an alternative way to encode curiosity than information gain, namely Dkl[p(θ|ξt)||p(θ|ξt,at,st+1)], its reversed KL divergence. In experiments, we noticed no significant difference between the two KL divergence variants. This can be explained as both variants are locally equal when introducing small changes to the parameter distributions."  
 
-  [demo](https://goo.gl/fyxLvI)  
-  [overview](https://youtube.com/watch?v=nbbMSMv3v5k)  
+  - [demo](https://goo.gl/fyxLvI)  
+  - [overview](https://youtube.com/watch?v=nbbMSMv3v5k)  
+
+  ["Automated Curriculum Learning for Neural Networks"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md##graves-bellemare-menick-munos-kavukcuoglu---automated-curriculum-learning-for-neural-networks) by Graves et al.  
+>	"We focus on variants of prediction gain, and also introduce a novel class of progress signals which we refer to as complexity gain. Derived from minimum description length principles, complexity gain equates acquisition of knowledge with an increase in effective information encoded in the network weights."  
+
+>	"VIME uses a reward signal that is closely related to variational complexity gain. The difference is that while VIME measures the KL between the posterior before and after a step in parameter space, we consider the change in KL between the posterior and prior induced by the step. Therefore, while VIME looks for any change to the posterior, we focus only on changes that alter the divergence from the prior. Further research will be needed to assess the relative merits of the two signals."  
 
 ----
 
@@ -792,7 +794,12 @@ interesting papers (see below):
   - <https://vimeo.com/28759091> (Schmidhuber)
 
 
-#### Houthooft, Chen, Duan, Schulman, Turck, Abbeel - ["VIME: Variational Information Maximizing Exploration"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#houthooft-chen-duan-schulman-turck-abbeel---vime-variational-information-maximizing-exploration) (approximation of Artificial Curiosity and Creativity theory of Juergen Schmidhuber)
+#### Houthooft, Chen, Duan, Schulman, Turck, Abbeel - ["VIME: Variational Information Maximizing Exploration"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#houthooft-chen-duan-schulman-turck-abbeel---vime-variational-information-maximizing-exploration)
+>	approximation of [Artificial Curiosity and Creativity](#artificial-curiosity-and-creativity) theory of Juergen Schmidhuber
+
+
+#### Graves, Bellemare, Menick, Munos, Kavukcuoglu - ["Automated Curriculum Learning for Neural Networks"](#graves-bellemare-menick-munos-kavukcuoglu---automated-curriculum-learning-for-neural-networks)
+>	approximation of [Artificial Curiosity and Creativity](#artificial-curiosity-and-creativity) theory of Juergen Schmidhuber
 
 
 #### Frank, Leitner, Stollenga, Forster, Schmidhuber - ["Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3881010/pdf/fnbot-07-00025.pdf)

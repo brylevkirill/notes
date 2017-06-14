@@ -917,6 +917,7 @@ examples:
 
   <http://deeplearningbook.org/contents/rnn.html>
 
+  [overview](https://youtube.com/watch?v=yCC09vCHzF8) by Andrej Karpathy  
   [overview](http://videolectures.net/deeplearning2016_bengio_neural_networks/) by Yoshua Bengio  
   ["Beyond Seq2Seq with Augmented RNNs"](http://videolectures.net/deeplearning2016_grefenstette_augmented_rnn/) by Edward Grefenstette  
   ["New Directions for Recurrent Neural Networks"](https://facebook.com/iclr.cc/videos/1713144705381255/) by Alex Graves  
@@ -927,8 +928,9 @@ examples:
 
 ----
 
-#### long short term memory
+  **long short term memory**
 
+  [overview](https://youtu.be/yCC09vCHzF8?t=45m31s) by Andrej Karpathy  
   ["Understanding LSTM Networks"](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) by Chris Olah  
   ["Understanding, Deriving and Extending the LSTM"](http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html)  
   ["Backpropogating an LSTM: A Numerical Example"](http://blog.aidangomez.ca/2016/04/17/Backpropogating-an-LSTM-A-Numerical-Example/)  
@@ -979,12 +981,14 @@ examples:
 ---
 ### architectures - compute and memory
 
-  ["Attention and Augmented Recurrent Neural Networks"](http://distill.pub/2016/augmented-rnns/) by Chris Olah and Shan Carter  
   ["Deep Learning and Reasoning, Memory-Augmented Networks"](http://videolectures.net/deeplearning2016_chopra_attention_memory/) by Rob Fergus  
   ["Reasoning, Attention and Memory"](http://videolectures.net/deeplearning2016_chopra_attention_memory/) by Sumit Chopra  
   ["Beyond Seq2Seq with Augmented RNNs"](http://videolectures.net/deeplearning2016_grefenstette_augmented_rnn/) by Edward Grefenstette  
 
-  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi/) workshop at NIPS 2016 ([videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt))
+  ["Attention and Augmented Recurrent Neural Networks"](http://distill.pub/2016/augmented-rnns/) by Chris Olah and Shan Carter  
+
+  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi/) workshop at NIPS 2016
+	([videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt))
 
 ----
 
@@ -1626,6 +1630,7 @@ interesting papers (see below):
   - <https://raberrytv.wordpress.com/2016/04/06/batch-normalization-warm-up/>
   - <https://kevinzakka.github.io/2016/09/14/batch_normalization/>
   - <https://kratzert.github.io/2016/02/12/understanding-the-gradient-flow-through-the-batch-normalization-layer.html>
+  - <http://www.alexirpan.com/2017/04/26/perils-batch-norm.html>
 
 
 #### Arpit, Zhou, Kota, Govindaraju - ["Normalization Propagation: A Parametric Technique for Removing Internal Covariate Shift in Deep Networks"](https://arxiv.org/abs/1603.01431)
@@ -3240,6 +3245,7 @@ x."
   - <http://youtube.com/watch?v=xzM7eI7caRk> (Volodymyr Mnih)
   - <http://youtube.com/watch?v=dV80NAlEins> (Nando de Freitas)
   - <http://youtube.com/watch?v=HUmEbUkeQHg> (Nando de Freitas)
+  - <https://yadi.sk/i/AHDU2p_j3FT3nr> + <https://yadi.sk/i/EeUeheri3FT3ra> (Ratnikov and Vasilev, in russian)
   - <http://youtube.com/watch?v=mrgJ53TIcQc> (Pavlov, in russian)
 
 
