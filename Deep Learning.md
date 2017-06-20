@@ -14,7 +14,7 @@
   * [architectures](#architectures)
     - [compute and memory](#architectures---compute-and-memory)
     - [attention](#architectures---attention)
-  * [distributed representations](#distributed-representations)
+    - [distributed representations](#distributed-representations)
   * [interesting quotes](#interesting-quotes)
     - [architectures](#interesting-quotes---architectures)
     - [representation](#interesting-quotes---representation)
@@ -841,11 +841,11 @@ examples:
   [difference with other models](https://stats.stackexchange.com/questions/114385/what-is-the-difference-between-convolutional-neural-networks-restricted-boltzma)  
 
   introduction by Geoffrey Hinton:  
-	<http://sms.cam.ac.uk/media/2017973> (9:00)  
-	["Hopfield Nets and Boltzmann Machines"](http://youtube.com/watch?v=iQu1ZgmapJQ&list=PLnnr1O8OWc6br8B9iXYFkVJcMc9OnjoZS)  
-	["Restricted Boltzmann Machines"](http://youtube.com/watch?v=V2z80aXF8b4&list=PLnnr1O8OWc6bh5CYcqrAjfyzPH3QV745M)  
-	["Stacking RBMs to Make Deep Belief Nets"](https://youtube.com/watch?v=ZInARyllo1U&list=PLnnr1O8OWc6YkAcnIkKAz9UgWChh1YUSp)  
-	["Deep Neural Nets with Generative Pre-Training"](https://youtube.com/watch?v=7YJVvbzFmDA&list=PLnnr1O8OWc6bcYPBkaOzCyeTjIRd_kiaJ)  
+  - <http://sms.cam.ac.uk/media/2017973> (9:00)  
+  - ["Hopfield Nets and Boltzmann Machines"](http://youtube.com/watch?v=iQu1ZgmapJQ&list=PLnnr1O8OWc6br8B9iXYFkVJcMc9OnjoZS)  
+  - ["Restricted Boltzmann Machines"](http://youtube.com/watch?v=V2z80aXF8b4&list=PLnnr1O8OWc6bh5CYcqrAjfyzPH3QV745M)  
+  - ["Stacking RBMs to Make Deep Belief Nets"](https://youtube.com/watch?v=ZInARyllo1U&list=PLnnr1O8OWc6YkAcnIkKAz9UgWChh1YUSp)  
+  - ["Deep Neural Nets with Generative Pre-Training"](https://youtube.com/watch?v=7YJVvbzFmDA&list=PLnnr1O8OWc6bcYPBkaOzCyeTjIRd_kiaJ)  
 
   ["Undirected Graphical Models"](http://videolectures.net/deeplearning2015_courville_graphical_models/) tutorial by Aaron Courville
 
@@ -911,9 +911,10 @@ examples:
 
   ["A Statistical View of Deep Learning"](http://blog.shakirm.com/2015/07/a-statistical-view-of-deep-learning-retrospective/) by Shakir Mohamed
 
-----
 
-#### recurrent neural network
+
+----
+#### architectures - recurrent neural network
 
   <http://deeplearningbook.org/contents/rnn.html>
 
@@ -951,9 +952,10 @@ examples:
 
   *(Pranav Shyam)*
 
-----
 
-#### convolutional neural network
+
+----
+#### architectures - convolutional neural network
 
   <http://deeplearningbook.org/contents/convnets.html>
 
@@ -992,70 +994,21 @@ examples:
 
 ----
 
-  - *Pointer Networks*  
-	does not have a writable memory - is similar to the attention model of Bahdanau et al. (2014) in this regard  
-	despite not having a memory, this model was able to solve a number of difficult algorithmic problems such as convex hull and approximate 2D TSP  
+  - [*Pointer Networks*](#vinyals-fortunato-jaitly---pointer-networks)  
 
-  - *Grid LSTM*  
-	allows to use LSTM cells for both deep and sequential computation  
-	achieves excellent results on both synthetic, algorithmic problems and on real tasks, such as language modelling, machine translation and object recognition  
+  - [*Grid LSTM*](#kalchbrenner-danihelka-graves---grid-long-short-term-memory)  
 
-  - *Neural GPU*  
-	<https://youtube.com/watch?v=hVv4M0bTBJc> (Sutskever)
+  - [*Neural GPU*](#kaiser-sutskever---neural-gpus-learn-algorithms)  
 
-  - *Memory Networks*  
-	<http://techtalks.tv/talks/memory-networks-for-language-understanding/62356/>  
-	<http://youtu.be/jRkm6PXRVF8?t=16m29s> (Weston)  
-	<http://youtu.be/jRkm6PXRVF8?t=17m36s> (Weston)  
-	<http://youtube.com/watch?v=Xumy3Yjq4zk> (Weston)  
-	<http://research.microsoft.com/apps/video/default.aspx?id=259920> (Sukhbaatar)  
+  - [*Memory Networks*](#weston-chopra-bordes---memory-networks)  
 
-  - *Stack-Augmented Recurrent Neural Network*  
-	<http://research.microsoft.com/apps/video/default.aspx?id=259646> (15:00) (Joulin)  
-	<http://youtu.be/FUlTjKL-mVA?t=43m48s> + <https://youtu.be/gi4Zf59_IcU?t=54m43s> (Mikolov)  
+  - [*Stack-Augmented Recurrent Neural Network*](#joulin-mikolov---inferring-algorithmic-patterns-with-stack-augmented-recurrent-nets)  
 
-  - *Neural Stacks/Queues*  
-	<https://iamtrask.github.io/2016/02/25/deepminds-neural-stack-machine/>  
-	<https://jasdeep06.github.io/posts/Neural-Stacks/>  
-	<http://egrefen.com/docs/NIPSStackPoster.pdf>  
-	<http://videolectures.net/deeplearning2015_blunsom_memory_reading/> (Blunsom)  
+  - [*Neural Stacks/Queues*](#grefenstette-hermann-suleyman-blunsom---learning-to-transduce-with-unbounded-memory)  
 
-  - *Neural Turing Machine*  
-	- turn neural networks into 'differentialbe computers' by giving them read-write acces to external memory  
-	- separate computation and memory in neural networks to be able to learn algorithmic patterns  
+  - [*Neural Turing Machine*](#graves-wayne-danihelka---neural-turing-machines)  
 
-	architecture:  
-	- controller - neural network (recurrent or feedforward)  
-	- heads - (attention) select portions of the memory to read/write to them  
-	- memory - 'everything is differentiable'  
-
-	attention:  
-	- addressing by content (associative lookup)  
-	- addressing by location (controller outputs a shift kernel)  
-
-	RNN with big memory matrix and a "head" and "gaze" which it can position/focus to do a blurry, differentiable analog of a "read from (or write to) memory  
-	difference with LSTM - decoupling memory and computation  
-
-	NTM can learn basic algorithms from examples only, including copy, loop, sort, associative recall and dynamic N-Gram inference
-
-	<http://research.microsoft.com/apps/video/default.aspx?id=260037> (Graves)  
-	<http://youtube.com/watch?v=otRoAQtc5Dk> (Polykovskiy)  
-
-	<http://blog.yhat.com/posts/neural-turing-machines.html>  
-	<http://rylanschaeffer.github.io/content/research/neural_turing_machine/main.html>  
-	<http://blog.acolyer.org/2016/03/09/neural-turing-machines/>  
-	<http://ikuz.eu/2014/11/19/neural-turing-machines-by-google-deepmind-article-overview/>  
-
-  - *Differentiable Neural Computer*  
-	"Hybrid Computing using a Neural Network with Dynamic External Memory" -
-		<http://www.nature.com.sci-hub.cc/nature/journal/vaop/ncurrent/full/nature20101.html>  
-
-	<https://deepmind.com/blog/differentiable-neural-computers/>
-
-	<https://youtube.com/watch?v=steioHoiEms> (Graves)  
-	<https://facebook.com/iclr.cc/videos/1713144705381255/> (9:09) (Graves)  
-	<https://youtube.com/watch?v=PQrlOjj8gAc> (Wayne)  
-	<https://youtu.be/otRoAQtc5Dk?t=59m56s> (Polykovskiy)  
+  - [*Differentiable Neural Computer*](#graves-et-al---hybrid-computing-using-a-neural-network-with-dynamic-external-memory)  
 
 ----
 
@@ -1121,9 +1074,10 @@ hard attention models:
 
 ----
 
-  <https://youtu.be/9U0drwafE78?t=36m22s> (Oriol Vinyals)
+  [overview](https://youtu.be/9U0drwafE78?t=36m22s) by Oriol Vinyals
 
-  <http://wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/>
+  [overview](http://distill.pub/2016/augmented-rnns/#attentional-interfaces) by Chris Olah and Shan Carter  
+  [overview](http://wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/) by Denny Britz  
 
   <http://yanran.li/peppypapers/2015/10/07/survey-attention-model-1.html>  
   <http://yanran.li/peppypapers/2015/10/07/survey-attention-model-2.html>  
@@ -1133,7 +1087,7 @@ hard attention models:
 
 
 ---
-### distributed representations
+### architectures - distributed representations
 
   (Yann LeCun) "We are attempting to replace symbols by vectors so we can replace logic by algebra."
 
@@ -1997,7 +1951,7 @@ interesting papers (see below):
 #### Sutskever, Vinyals, Le - ["Sequence to Sequence Learning with Neural Networks"](http://arxiv.org/abs/1409.3215)
 >	"Deep Neural Networks are powerful models that have achieved excellent performance on difficult learning tasks. Although DNNs work well whenever large labeled training sets are available, they cannot be used to map sequences to sequences. In this paper, we present a general end-to-end approach to sequence learning that makes minimal assumptions on the sequence structure. Our method uses a multilayered Long Short-Term Memory to map the input sequence to a vector of a fixed dimensionality, and then another deep LSTM to decode the target sequence from the vector. Our main result is that on an English to French translation task from the WMT-14 dataset, the translations produced by the LSTM achieve a BLEU score of 34.7 on the entire test set, where the LSTM's BLEU score was penalized on out-of-vocabulary words. Additionally, the LSTM did not have difficulty on long sentences. For comparison, a strong phrase-based SMT system achieves a BLEU score of 33.3 on the same dataset. When we used the LSTM to rerank the 1000 hypotheses produced by the aforementioned SMT system, its BLEU score increases to 36.5, which beats the previous state of the art. The LSTM also learned sensible phrase and sentence representations that are sensitive to word order and are relatively invariant to the active and the passive voice. Finally, we found that reversing the order of the words in all source sentences (but not target sentences) improved the LSTM's performance markedly, because doing so introduced many short term dependencies between the source and the target sentence which made the optimization problem easier."
 
-  Hinton:
+  Geoffrey Hinton:
 >	"You feed the sequence of words in an English sentence to the English encoder LSTM. The final hidden state of the encoder is the neural network's representation of the "thought" that the sentence expresses. You then make that thought be the initial state of the decoder LSTM for French. The decoder then outputs a probability distribution over French words that might start the sentence. If you pick from this distribution and make the word you picked be the next input to the decoder, it will then produce a probability distribution for the second word. You keep on picking words and feeding them back in until you pick a full stop. The process I just described defines a probability distribution across all French strings of words that end in a full stop. The log probability of a French string is just the sum of the log probabilities of the individual picks. To raise the log probability of a particular translation you just have to backpropagate the derivatives of the log probabilities of the individual picks through the combination of encoder and decoder. The amazing thing is that when an encoder and decoder net are trained on a fairly big set of translated pairs, the quality of the translations beats the former state-of-the-art for systems trained with the same amount of data. With more data and more research I'm pretty confident that the encoder-decoder pairs will take over in the next few years. There will be one encoder for each language and one decoder for each language and they will be trained so that all pairings work. One nice aspect of this approach is that it should learn to represent thoughts in a language-independent way and it will be able to translate between pairs of foreign languages without having to go via English. Another nice aspect is that it can take advantage of multiple translations. If a Dutch sentence is translated into Turkish and Polish and 23 other languages, we can backpropagate through all 25 decoders to get gradients for the Dutch encoder. This is like 25-way stereo on the thought. If 25 encoders and one decoder would fit on a chip, maybe it could go in your ear."
 
   - <http://research.microsoft.com/apps/video/?id=239083> (Sutskever)
@@ -2049,10 +2003,13 @@ interesting papers (see below):
 >	"Our method works on variable sized inputs (yielding variable sized output dictionaries), something the baseline models (sequence-to-sequence with or without attention) cannot do directly. Even more impressively, they outperform the baselines on fixed input size problems - to which both the models can be applied. Our model draws inspiration from attention models and has strong connections to memory networks that use content based attention. We use these mechanisms to choose outputs from input locations, thus opening up a new class of problems to which neural networks can be applied without artificial assumptions. Future work will try and show its applicability to other problems such as sorting where the outputs are chosen from the inputs. We are also excited about the possibility of using this approach to other combinatorial optimization problems."
 
 ----
+>	"Despite not having a memory, this model was able to solve a number of difficult algorithmic problems such as convex hull and approximate 2D TSP."
+
 >	"In the pointer networks, the output space of the target sequence is constrained to be the observations in the input sequence (not the input space). And instead of having a fixed dimension softmax output layer, softmax outputs of varying dimension is dynamically computed for each input sequence in such a way to maximize the attention probability of the target input."
 
   - <http://youtube.com/watch?v=yS7rHi_lUGU> (triangulation task demo)
   - <http://youtu.be/9U0drwafE78?t=44m30s> (Vinyals)
+  - <https://medium.com/@sharaf/a-paper-a-day-11-pointer-networks-59f7af1a611c>
   - <https://github.com/devsisters/pointer-network-tensorflow>
   - <https://github.com/vshallc/PtrNets>
 
@@ -2080,13 +2037,14 @@ interesting papers (see below):
 
 >	"Most machine learning models lack an easy way to read and write to part of a (potentially very large) long-term memory component, and to combine this seamlessly with inference. Hence, they do not take advantage of one of the great assets of a modern day computer. For example, consider the task of being told a set of facts or a story, and then having to answer questions on that subject. In principle this could be achieved by a language modeler such as a recurrent neural network as these models are trained to predict the next (set of) word(s) to output after having read a stream of words. However, their memory (encoded by hidden states and weights) is typically too small, and is not compartmentalized enough to accurately remember facts from the past (knowledge is compressed into dense vectors). RNNs are known to have difficulty in performing memorization, for example the simple copying task of outputting the same input sequence they have just read. The situation is similar for other tasks, e.g., in the vision and audio domains a long term memory is required to watch a movie and answer questions about it. In this work, we introduce a class of models called memory networks that attempt to rectify this problem. The central idea is to combine the successful learning strategies developed in the machine learning literature for inference with a memory component that can be read and written to. The model is then trained to learn how to operate effectively with the memory component."
 
-  LeCun:
+  Yann LeCun:
 >	"The MemNN and NTM models are both neural nets augmented with a memory (of some kind). You could think of LSTM recurrent nets as belonging to the same category. Regular recurrent nets are notoriously bad at remembering stuff in their state, which is why the best way to get them to remember stuff is to augment them with a separate memory module. MemNN stores hidden states in a sort of FIFO, NTM uses a "tape", and a more recent proposal by Armand Joulin and Tomas Mikolov uses a stack. The human brain is also notoriously bad at remembering things in its state. That's why we have a separate short-term memory module in the form of the hippocampus. Without a hippocampus, the cortex can't remember facts for more than about 20 seconds."
 
   - <https://facebook.com/video.php?v=10153098860532200>  (demo)
-  - <http://youtube.com/watch?v=Xumy3Yjq4zk> (Weston) + <http://cs224d.stanford.edu/lectures/CS224d-Lecture12.pdf>
+  - <http://youtube.com/watch?v=Xumy3Yjq4zk> (Weston)
   - <http://techtalks.tv/talks/memory-networks-for-language-understanding/62356/> (Weston)
   - <http://youtu.be/jRkm6PXRVF8?t=16m29s> (Weston)
+  - <http://youtu.be/jRkm6PXRVF8?t=17m36s> (Weston)
   - <http://blog.acolyer.org/2016/03/10/memory-networks/>
   - <https://docs.google.com/file/d/0B_hicYJxvbiOT3QyTm4wdHlaeWs>
   - <https://reddit.com/r/MachineLearning/comments/2xcyrl/i_am_j%C3%BCrgen_schmidhuber_ama/cp4ecce>
@@ -2171,7 +2129,7 @@ interesting papers (see below):
 
 >	"Bounded memory is useful in many ways, not least because it enforces some resource-sensitivity in the controller, which in turn encourages the learning of usefully compressed representations. On the other hand, unbounded memory means you don't need to worry about memory size, which is one less data-dependent hyperparameter to worry about, and is useful for tasks where you cannot estimate the length of computation (dynamic environment, RL, etc)."
 
-  - <http://videolectures.net/deeplearning2015_blunsom_memory_reading/> (Blunsom) + <http://www.iro.umontreal.ca/~memisevr/dlss2015/num-mr.pdf>
+  - <http://videolectures.net/deeplearning2015_blunsom_memory_reading/> (Blunsom)
   - <http://egrefen.com/docs/NIPSStackPoster.pdf>
   - <https://iamtrask.github.io/2016/02/25/deepminds-neural-stack-machine/>
   - <https://jasdeep06.github.io/posts/Neural-Stacks/>
@@ -2189,14 +2147,32 @@ interesting papers (see below):
   - <https://github.com/raindeer/seq2seq_experiments>
 
 
-#### Graves, Wayne, Danihelka - ["Neural Turing Machines"](http://arxiv.org/abs/1410.5401) (learns to sort an array)
+#### Graves, Wayne, Danihelka - ["Neural Turing Machines"](http://arxiv.org/abs/1410.5401)
 >	"We extend the capabilities of neural networks by coupling them to external memory resources, which they can interact with by attentional processes. The combined system is analogous to a Turing Machine or Von Neumann architecture but is differentiable end-to-end, allowing it to be efficiently trained with gradient descent. Preliminary results demonstrate that Neural Turing Machines can infer simple algorithms such as copying, sorting and associative recall from input and output examples."
 
 >	"The researchers hoped that the NTM would invent a binary heap sort, but in fact it seemed to have invented a hash table. The vectors were stored in memory locations controlled by the priority and then read out in priority order to give a sorted list."
 
 >	"NTM can learn basic algorithms from examples only, including copy, loop, sort, associative recall and dynamic N-Gram inference. We are now looking at more complex tasks, including reinforcement learning, graph algorithms and question answering."
 
-  Hinton:
+----
+>	- turn neural networks into 'differentialbe computers' by giving them read-write acces to external memory  
+>	- separate computation and memory in neural networks to be able to learn algorithmic patterns  
+
+>	architecture:  
+>	- controller - neural network (recurrent or feedforward)  
+>	- heads - (attention) select portions of the memory to read/write to them  
+>	- memory - 'everything is differentiable'  
+
+>	attention:  
+>	- addressing by content (associative lookup)  
+>	- addressing by location (controller outputs a shift kernel)  
+
+>	RNN with big memory matrix and a "head" and "gaze" which it can position/focus to do a blurry, differentiable analog of a "read from (or write to) memory  
+>	difference with LSTM - decoupling memory and computation  
+
+>	NTM can learn basic algorithms from examples only, including copy, loop, sort, associative recall and dynamic N-Gram inference
+
+  Geoffrey Hinton:
 >	"Its very impressive that they can get an RNN to invent a sorting algorithm. Its the first time I've believed that deep learning would be able to do real reasoning in the not too distant future. There will be a lot of future work in making the NTM (or its descendants) learn much more complicated algorithms and it will probably have many applications."
 
   - <http://research.microsoft.com/apps/video/default.aspx?id=260037> (Graves)
@@ -2218,7 +2194,7 @@ interesting papers (see below):
   - <https://github.com/snipsco/ntm-lasagne>
 
 
-#### Graves et al. - ["Hybrid Computing using a Neural Network with Dynamic External Memory"](http://www.nature.com.sci-hub.cc/nature/journal/vaop/ncurrent/full/nature20101.html) (learns to find shortest path in graph)
+#### Graves et al. - ["Hybrid Computing using a Neural Network with Dynamic External Memory"](http://www.nature.com.sci-hub.cc/nature/journal/vaop/ncurrent/full/nature20101.html)
 >	"Artificial neural networks are remarkably adept at sensory processing, sequence learning and reinforcement learning, but are limited in their ability to represent variables and data structures and to store data over long timescales, owing to the lack of an external memory. Here we introduce a machine learning model called a Differentiable Neural Computer (DNC), which consists of a neural network that can read from and write to an external memory matrix, analogous to the random-access memory in a conventional computer. Like a conventional computer, it can use its memory to represent and manipulate complex data structures, but, like a neural network, it can learn to do so from data. When trained with supervised learning, we demonstrate that a DNC can successfully answer synthetic questions designed to emulate reasoning and inference problems in natural language. We show that it can learn tasks such as finding the shortest path between specified points and inferring the missing links in randomly generated graphs, and then generalize these tasks to specific graphs such as transport networks and family trees. When trained with reinforcement learning, a DNC can complete a moving blocks puzzle in which changing goals are specified by sequences of symbols. Taken together, our results demonstrate that DNCs have the capacity to solve complex, structured tasks that are inaccessible to neural networks without external read–write memory."
 
 >	"Taken together, the bAbI and graph tasks demonstrate that DNCs are able to process and reason about graph-structured data regardless of whether the links are implicit or explicit. Moreover, we have seen that the structure of the data source is directly reflected in the memory access procedures learned by the controller. The Mini-SHRDLU problem shows that a systematic use of memory also emerges when a DNC learns by reinforcement to act in pursuit of a set of symbolic goals. The theme connecting these tasks is the need to learn to represent and reason about the complex, quasi-regular structure embedded in data sequences. In each problem, domain regularities, such as the conventions for representing graphs, are invariant across all sequences shown; on the other hand, for any given sequence, a DNC must detect and capture novel variability as episodic variables in memory. This mixture of large-scale structure and microscopic variability is generic to many problems that confront a cognitive agent. For example, in visual scenes, stories and action plans, broad regularities bind together novel variation in any exemplar. Rooms statistically have chairs in them, but the shape and location of a particular chair in a room are variables. These variable values can be written to the external memory of a DNC, leaving the controller network free to concentrate on learning global regularities. Our experiments focused on relatively small-scale synthetic tasks, which have the advantage of being easy to generate and interpret. For such problems, memory matrices of up to 512 locations were sufficient. To tackle real-world data we will need to scale up to thousands or millions of locations, at which point the memory will be able to store more information than can be contained in the weights of the controller. Such systems should be able to continually acquire knowledge through exposure to large, naturalistic data sources, even without adapting network parameters. We aim to further develop DNCs to serve as representational engines for one-shot learning, scene understanding, language processing and cognitive mapping, capable of intuiting the variable structure and scale of the world within a single, generic model."
@@ -2230,6 +2206,8 @@ interesting papers (see below):
 >	- controller can choose whether or not to write anything to memory each timestep  
 >	- same controller can do transitive reasoning (a new read conditioned on read from previous timestep) during inference time  
 >	- three attention types: content, temporal, allocation"  
+
+>	(learns to find shortest path in graph)
 
   - <https://deepmind.com/blog/differentiable-neural-computers/>
   - <https://youtube.com/watch?v=steioHoiEms> (Graves)
@@ -2264,10 +2242,12 @@ interesting papers (see below):
   - <https://github.com/ilyasu123/rlntm>
 
 
-#### Zaremba, Mikolov, Joulin, Fergus - ["Learning Simple Algorithms from Examples"](http://arxiv.org/abs/1511.07275) (learns to add multi-digit numbers and to multiply single-digit numbers)
+#### Zaremba, Mikolov, Joulin, Fergus - ["Learning Simple Algorithms from Examples"](http://arxiv.org/abs/1511.07275)
 >	"We present an approach for learning simple algorithms such as copying, multi-digit addition and single digit multiplication directly from examples. Our framework consists of a set of interfaces, accessed by a controller. Typical interfaces are 1-D tapes or 2-D grids that hold the input and output data. For the controller, we explore a range of neural network-based models which vary in their ability to abstract the underlying algorithm from training instances and generalize to test examples with many thousands of digits. The controller is trained using Q-learning with several enhancements and we show that the bottleneck is in the capabilities of the controller rather than in the search incurred by Q-learning."
 
 >	"We have explored the ability of neural network models to learn algorithms for simple arithmetic operations. Through experiments with supervision and reinforcement learning, we have shown that they are able to do this successfully, albeit with caveats. Q-learning was shown to work as well as the supervised case. But, disappointingly, we were not able to find a single controller that could solve all tasks. We found that for some tasks, generalization ability was sensitive to the memory capacity of the controller: too little and it would be unable to solve more complex tasks that rely on carrying state across time; too much and the resulting model would overfit the length of the training sequences. Finding automatic methods to control model capacity would seem to be important in developing robust models for this type of learning problem."
+
+>	(learns to add multi-digit numbers and to multiply single-digit numbers)
 
   - <http://youtube.com/watch?v=GVe6kfJnRAw> (demo)
   - <http://youtube.com/watch?v=ezE-13X0UoM> (Zaremba)
@@ -2275,24 +2255,30 @@ interesting papers (see below):
   - <https://github.com/wojzaremba/algorithm-learning>
 
 
-#### Nachum, Norouzi, Schuurmans - ["Improving Policy Gradient by Exploring Under-appreciated Rewards"](https://arxiv.org/abs/1611.09321) (learns to add multi-digit numbers)
+#### Nachum, Norouzi, Schuurmans - ["Improving Policy Gradient by Exploring Under-appreciated Rewards"](https://arxiv.org/abs/1611.09321)
 >	"This paper presents a novel form of policy gradient for model-free reinforcement learning with improved exploration properties. Current policy-based methods use entropy regularization to encourage undirected exploration of the reward landscape, which is ineffective in high dimensional spaces with sparse rewards. We propose a more directed exploration strategy that promotes exploration of under-appreciated reward regions. An action sequence is considered under-appreciated if its log-probability under the current policy under-estimates its resulting reward. The proposed exploration strategy is easy to implement, requiring small modifications to an implementation of the REINFORCE algorithm. We evaluate the approach on a set of algorithmic tasks that have long challenged RL methods. Our approach reduces hyper-parameter sensitivity and demonstrates significant improvements over baseline methods. Our algorithm successfully solves a benchmark multi-digit addition task and generalizes to long sequences. This is, to our knowledge, the first time that a pure RL method has solved addition using only reward feedback."
 
 >	"Prominent approaches to improving exploration beyond epsilon-greedy in value-based or model-based RL have focused on reducing uncertainty by prioritizing exploration toward states and actions where the agent knows the least. This basic intuition underlies work on counter and recency methods, exploration methods based on uncertainty estimates of values, methods that prioritize learning environment dynamics, and methods that provide an intrinsic motivation or curiosity bonus for exploring unknown states. We relate the concepts of value and policy in RL and propose an exploration strategy based on the discrepancy between the two."
 
 >	"To confirm whether our method is able to find the correct algorithm for multi-digit addition, we investigate its generalization to longer input sequences than provided during training. We evaluate the trained models on inputs up to a length of 2000 digits, even though training sequences were at most 33 characters. For each length, we test the model on 100 randomly generated inputs, stopping when the accuracy falls below 100%. Out of the 60 models trained on addition with UREX, we find that 5 models generalize to numbers up to 2000 digits without any observed mistakes."
 
+>	(learns to add multi-digit numbers)
 
-#### Kalchbrenner, Danihelka, Graves - ["Grid Long Short-Term Memory"](http://arxiv.org/abs/1507.01526) (learns to calculate parity of bit array)
+
+#### Kalchbrenner, Danihelka, Graves - ["Grid Long Short-Term Memory"](http://arxiv.org/abs/1507.01526)
 >	"This paper introduces Grid Long Short-Term Memory, a network of LSTM cells arranged in a multidimensional grid that can be applied to vectors, sequences or higher dimensional data such as images. The network differs from existing deep LSTM architectures in that the cells are connected between network layers as well as along the spatiotemporal dimensions of the data. The network provides a unified way of using LSTM for both deep and sequential computation. We apply the model to algorithmic tasks such as 15-digit integer addition and sequence memorization, where it is able to significantly outperform the standard LSTM. We then give results for two empirical tasks. We find that 2D Grid LSTM achieves 1.47 bits per character on the Wikipedia character prediction benchmark, which is state-of-the-art among neural approaches. In addition, we use the Grid LSTM to define a novel two-dimensional translation model, the Reencoder, and show that it outperforms a phrase-based reference system on a Chinese-to-English translation task."
 
 ----
->	"Highway Networks have a gated connection in the depth dimension analogous to the gated connection LSTMs have in the time dimension. There are also Grid LSTMs, which have these gated connections in both dimensions."
+>	allows to use LSTM cells for both deep and sequential computation
+
+>	"Highway Networks have a gated connection in depth dimension analogous to gated connection LSTMs have in time dimension. Grid LSTMs have these gated connections in both dimensions."
+
+>	(learns to calculate parity of bit array)
 
   - <https://github.com/coreylynch/grid-lstm>
 
 
-#### Kaiser, Sutskever - ["Neural GPUs Learn Algorithms"](http://arxiv.org/abs/1511.08228) (learns to add and multiply long binary numbers)
+#### Kaiser, Sutskever - ["Neural GPUs Learn Algorithms"](http://arxiv.org/abs/1511.08228)
 >	"Learning an algorithm from examples is a fundamental problem that has been widely studied. Recently it has been addressed using neural networks, in particular by Neural Turing Machines. These are fully differentiable computers that use backpropagation to learn their own programming. Despite their appeal NTMs have a weakness that is caused by their sequential nature: they cannot be parallelized and are hard to train due to their large depth when unfolded. We present a neural network architecture to address this problem: the Neural GPU. It is based on a type of convolutional gated recurrent unit and, like the NTM, is computationally universal. Unlike the NTM, the Neural GPU is highly parallel which makes it easier to train and efficient to run. An essential property of algorithms is their ability to handle inputs of arbitrary size. We show that the Neural GPU can be trained on short instances of an algorithmic task and successfully generalize to long instances. We verified it on a number of tasks including long addition and long multiplication of numbers represented in binary. We train the Neural GPU on numbers with up to 20 bits and observe no errors whatsoever while testing it, even on much longer numbers. To achieve these results we introduce a technique for training deep recurrent networks: parameter sharing relaxation. We also found a small amount of dropout and gradient noise to have a large positive effect on learning and generalization."
 
 >	"The results show clearly that there is a qualitative difference between what can be achieved with a Neural GPU and what was possible with previous archietctures. In particular, for the first time, we show a neural network that learns a non-trivial superlinear-time algorithm in a way that generalized to much higher lengths without errors. This opens the way to use neural networks in domains that were previously only addressed by discrete methods, such as program synthesis. With the surprising data efficiency of Neural GPUs it could even be possible to replicate previous program synthesis results but in a more scalable way. It is also interesting that a Neural GPU can learn symbolic algorithms without using any discrete state at all, and adding dropout and noise only improves its performance. Another promising future work is to apply Neural GPUs to language processing tasks. Good results have already been obtained on translation with a convolutional architecture over words and adding gating and recursion, like in a Neural GPU, should allow to train much deeper models without overfitting. Finally, the parameter sharing relaxation technique we introduced can be applied to any deep recurrent network and has the potential to improve RNN training in general."
@@ -2304,6 +2290,8 @@ interesting papers (see below):
 >	"Neural Turing Machines are magnificient but they are sequential (= non parallelizeable) and deep (= hard to train)."
 
 >	"Why are NTM so deep? At each step ("clock tick") the NTM can modify only one element in its memory. It takes many clock ticks to create a large structure in memory. Requires massive back propagation."
+
+>	(learns to add and multiply long binary numbers)
 
   - <https://youtube.com/watch?v=LzC8NkTZAF4> (demo)
   - <https://youtube.com/watch?v=hVv4M0bTBJc> (Sutskever)
@@ -3201,9 +3189,8 @@ x."
 
   - <http://youtube.com/watch?v=4D5yGiYe8p4> (Silver)
   - <http://youtube.com/watch?v=LX8Knl0g0LE> (Huang)
-  - <http://youtube.com/watch?v=UMm0XaCFTJQ> (Sutton, Szepesvari, Bowling, Hayward, Muller, history of ideas)
-  - <https://github.com/Rochester-NRT/RocAlphaGo/wiki> (overview)
-  - <https://github.com/Rochester-NRT/AlphaGo/>
+  - <http://youtube.com/watch?v=UMm0XaCFTJQ> (Sutton, Szepesvari, Bowling, Hayward, Muller)
+  - <https://github.com/Rochester-NRT/RocAlphaGo/wiki>
 
 
 #### Moravcik et al. - ["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](http://arxiv.org/abs/1701.01724)
@@ -3249,7 +3236,7 @@ x."
   - <http://youtube.com/watch?v=mrgJ53TIcQc> (Pavlov, in russian)
 
 
-#### Mnih, Kavukcuoglu, Silver, Rusu, Veness, Bellemare, Graves, Riedmiller, Fidjeland, Ostrovski, Petersen, Beattie, Sadik, Antonoglou, King, Kumaran, Wierstra, Legg, Hassabis - ["Human-level Control Through Deep Reinforcement Learning"](http://home.uchicago.edu/~arij/journalclub/papers/2015_Mnih_et_al.pdf)
+#### Mnih et al. - ["Human-level Control Through Deep Reinforcement Learning"](https://goo.gl/jHRkZr)
 >	"The theory of reinforcement learning provides a normative account, deeply rooted in psychological and neuroscientific perspectives on animal behaviour, of how agents may optimize their control of an environment. To use reinforcement learning successfully in situations approaching real-world complexity, however, agents are confronted with a difficult task: they must derive efficient representations of the environment from high-dimensional sensory inputs, and use these to generalize past experience to new situations. Remarkably, humans and other animals seem to solve this problem through a harmonious combination of reinforcement learning and hierarchical sensory processing systems, the former evidenced by a wealth of neural data revealing notable parallels between the phasic signals emitted by dopaminergic neurons and temporal difference reinforcement learning algorithms. While reinforcement learning agents have achieved some successes in a variety of domains, their applicability has previously been limited to domains in which useful features can be handcrafted, or to domains with fully observed, low-dimensional state spaces. Here we use recent advances in training deep neural networks to develop a novel artificial agent, termed a deep Q-network, that can learn successful policies directly from high-dimensional sensory inputs using end-to-end reinforcement learning. We tested this agent on the challenging domain of classic Atari 2600 games. We demonstrate that the deep Q-network agent, receiving only the pixels and the game score as inputs, was able to surpass the performance of all previous algorithms and achieve a level comparable to that of a professional human games tester across a set of 49 games, using the same algorithm, network architecture and hyperparameters. This work bridges the divide between high-dimensional sensory inputs and actions, resulting in the first artificial agent that is capable of learning to excel at a diverse array of challenging tasks."
 
   - <https://youtu.be/rbsqaJwpu6A?t=10m29s> + <http://youtube.com/watch?v=iqXKQf2BOSE> (demo)
@@ -3327,61 +3314,11 @@ x."
 
 
 #### Iyyer, Boyd-Graber, Claudino, Socher, Daume - ["A Neural Network for Factoid Question Answering over Paragraphs"](http://cs.umd.edu/~miyyer/qblearn/)
->	"We introduce a recursive neural network model that is able to correctly answer paragraph-length factoid questions from a trivia competition called quiz bowl. Text classification methods for tasks like factoid question answering typically use manually defined string matching rules or bag of words representations. Our model is able to succeed where traditional approaches fail, particularly when questions contain very few words (e.g., named entities) indicative of the answer. We introduce a recursive neural network model that can reason over such input by modeling textual compositionality. Unlike previous RNN models, our model QANTA learns word and phrase-level representations that combine across sentences to reason about entities. The model outperforms multiple baselines and, when combined with information retrieval methods, rivals the best human players."
-
-  - <http://umiacs.umd.edu/~jbg/projects/IIS-1320538.html>
-  - <http://youtube.com/watch?v=LqsUaprYMOw> + <http://youtube.com/watch?v=-jbqiXvmY9w> (exhibition match against team of Jeopardy champions)
-  - <http://youtube.com/watch?v=kTXJCEvCDYk> + <https://goo.gl/ZcQB6n> (exhibition match against Ken Jennings)
-  - <http://youtube.com/watch?v=c2kGD1EdfFw> (exhibition match against Quiz Bowl champions)
-  - <http://youtube.com/watch?v=bQHo7BApgAU&t=5m48s> (exhibition against California NASAT team)
-  - <http://youtube.com/watch?v=bYFqMINXayc> (exhibition match at HSNCT)
-  - <http://youtube.com/watch?v=ZVHR8OAHDlI> (Boyd-Graber, Iyyer)
-  - <http://youtube.com/watch?v=ZRYObdTOaEI> (Iyyer)
-  - <http://youtube.com/watch?v=YArUk9QcMe0> (Boyd-Graber)
-  - <http://youtube.com/watch?v=eJd9_ahWD4Q> (Iyyer)
-  - <http://youtu.be/tdLmf8t4oqM?t=27m25s> (Socher)
-  - <http://youtu.be/BVbQRrrsJo0?t=34m30s> (Socher)
-  - <http://videolectures.net/deeplearning2015_socher_nlp_applications/#t=540> (Socher)
-  - <http://youtu.be/9RAo50pVDGI?t=33m20s> (Daume)
-  - <http://emnlp2014.org/material/poster-EMNLP2014070.pdf> (technical overview)
-  - <https://github.com/Pinafore/qb>
-  - <https://github.com/miyyer/qb>
-  - <http://cs.umd.edu/~miyyer/qblearn/qanta.tar.gz>
-  - <https://github.com/jcoreyes/NLQA/tree/master/qanta>
+  - <https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#iyyer-boyd-graber-claudino-socher-daume---a-neural-network-for-factoid-question-answering-over-paragraphs>
 
 
 #### Hermann, Kocisky, Grefenstette, Espeholt, Kay, Suleyman, Blunsom - ["Teaching Machines to Read and Comprehend"](http://arxiv.org/abs/1506.03340)
->	"Teaching machines to read natural language documents remains an elusive challenge. Machine reading systems can be tested on their ability to answer questions posed on the contents of documents that they have seen, but until now large scale training and test datasets have been missing for this type of evaluation. In this work we define a new methodology that resolves this bottleneck and provides large scale supervised reading comprehension data. This allows us to develop a class of attention based deep neural networks that learn to read real documents and answer complex questions with minimal prior knowledge of language structure."
-
->	"Progress on the path from shallow bag-of-words information retrieval algorithms to machines capable of reading and understanding documents has been slow. Traditional approaches to machine reading and comprehension have been based on either hand engineered grammars, or information extraction methods of detecting predicate argument triples that can later be queried as a relational database. Supervised machine learning approaches have largely been absent from this space due to both the lack of large scale training datasets, and the difficulty in structuring statistical models flexible enough to learn to exploit document structure. While obtaining supervised natural language reading comprehension data has proved difficult, some researchers have explored generating synthetic narratives and queries. Such approaches allow the generation of almost unlimited amounts of supervised data and enable researchers to isolate the performance of their algorithms on individual simulated phenomena. Work on such data has shown that neural network based models hold promise for modelling reading comprehension, something that we will build upon here. Historically, however, many similar approaches in Computational Linguistics have failed to manage the transition from synthetic data to real environments, as such closed worlds inevitably fail to capture the complexity, richness, and noise of natural language. In this work we seek to directly address the lack of real natural language training data by introducing a novel approach to building a supervised reading comprehension data set. We observe that summary and paraphrase sentences, with their associated documents, can be readily converted to context-query-answer triples using simple entity detection and anonymisation algorithms. Using this approach we have collected two new corpora of roughly a million news stories with associated queries from the CNN and Daily Mail websites. We demonstrate the efficacy of our new corpora by building novel deep learning models for reading comprehension. These models draw on recent developments for incorporating attention mechanisms into recurrent neural network architectures. This allows a model to focus on the aspects of a document that it believes will help it answer a question, and also allows us to visualises its inference process. We compare these neural models to a range of baselines and heuristic benchmarks based upon a traditional frame semantic analysis provided by a state-of-the-art natural language processing."
-
->	"The supervised paradigm for training machine reading and comprehension models provides a promising avenue for making progress on the path to building full natural language understanding systems. We have demonstrated a methodology for obtaining a large number of document-query-answer triples and shown that recurrent and attention based neural networks provide an effective modelling framework for this task. Our analysis indicates that the Attentive and Impatient Readers are able to propagate and integrate semantic information over long distances. In particular we believe that the incorporation of an attention mechanism is the key contributor to these results. The attention mechanism that we have employed is just one instantiation of a very general idea which can be further exploited. However, the incorporation of world knowledge and multi-document queries will also require the development of attention and embedding mechanisms whose complexity to query does not scale linearly with the data set size. There are still many queries requiring complex inference and long range reference resolution that our models are not yet able to answer. As such our data provides a scalable challenge that should support NLP research into the future. Further, significantly bigger training data sets can be acquired using the techniques we have described, undoubtedly allowing us to train more expressive and accurate models."
-
->	"Summary:  
-> - Supervised machine reading is a viable research direction with the available data  
-> - LSTM based recurrent networks constantly surprise with their ability to encode dependencies in sequences  
-> - Attention is a very effective and flexible modelling technique"  
-
->	"Future directions:  
-> - More and better data, corpus querying, and cross document queries  
-> - Recurrent networks incorporating long term and working memory are well suited to NLU task"  
-
-----
->	"The model has to be able to detect symbol in the input (answer placeholder in the question) and substitute it with another symbol (word from document)."
-
->	"Two strategies for transducing with replacement of answer placeholder symbol with entity symbol: document||query (putting all the information about document into thought vector before knowing the query) or query||document (putting all the information about query before thinking about the answer). The second approach (filtering document after digesting query) works better."
-
->	"We do not tell the model anything about the structure. We don't tell it there are query and document (they are just symbols). We don't tell it there is symbol it has to substitute (it just has to learn them). So there is really long range between variable in query and answer in document (thousands of words). And the problem is more difficult than other transduction problems because of that."
-
-  - <http://videolectures.net/deeplearning2015_blunsom_memory_reading/#t=1980> (Blunsom)
-  - <http://youtu.be/-WPP9f1P-Xc?t=22m28s> (Blunsom)
-  - <http://egrefen.com/docs/HowMuchLinguistics2015.pdf>
-  - <http://www.shortscience.org/paper?bibtexKey=conf/nips/HermannKGEKSB15>
-  - <https://www.evernote.com/shard/s189/sh/ade22da1-4813-4b5c-89a5-3fdf7dbad8ee/ce8b7234b42c62882609047ecc289920>
-  - <https://arxiv.org/abs/1606.02858>
-  - <https://github.com/thomasmesnard/DeepMind-Teaching-Machines-to-Read-and-Comprehend>
-  - <https://github.com/carpedm20/attentive-reader-tensorflow>
-  - <https://github.com/caglar/Attentive_reader/>
+  - <https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#hermann-kocisky-grefenstette-espeholt-kay-suleyman-blunsom---teaching-machines-to-read-and-comprehend>
 
 
 #### Vinyals, Le - ["A Neural Conversational Model"](http://arxiv.org/abs/1506.05869)

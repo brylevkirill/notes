@@ -62,7 +62,7 @@
 
 #### industry
 
-  [Custom Decision Service](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-decision-service/custom-decision-service-overview) at Microsoft  
+  [Custom Decision Service](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-decision-service/custom-decision-service-overview) (Microsoft)  
   - <https://azure.microsoft.com/en-us/services/cognitive-services/custom-decision-service/>  
   - <https://mwtds.azurewebsites.net>  
   - <http://research.microsoft.com/en-us/projects/mwt/>  
@@ -75,36 +75,40 @@
   - ["Taming the Monster: A Fast and Simple Algorithm for Contextual Bandits"](https://arxiv.org/abs/1402.0555) by Agarwal et al.  
   - ["Making Contextual Decisions with Low Technical Debt"](https://arxiv.org/abs/1606.03966) by Agarwal et al.  
 
-  [personalized news](http://thenewstack.io/reinforcement-learning-ready-real-world/) at Microsoft  
+  [personalized news](http://thenewstack.io/reinforcement-learning-ready-real-world/) (Microsoft)  
 >	"For MSN homepage 25% relative lift in click-through rate while no previous learning method had been more successful than humans curating the content manually."  
 
-  [recommender systems](https://deepmind.com/blog/deep-reinforcement-learning/) at Google
+  [recommender systems](https://deepmind.com/blog/deep-reinforcement-learning/) (Google)  
 
-  [datacenter cooling](https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/) at Google
+  [datacenter cooling](https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/) (Google)  
 
+  [other applications](https://dropbox.com/sh/c0zocw1w8ujrpk5/AAAdIYB8U3szR1fL8iCkIt97a)
 
-  [interview with Demis Hassabis](https://www.technologyreview.com/s/601139/how-google-plans-to-solve-artificial-intelligence/) from Google
->	"Technology could surface in virtual assistants or improve recommendation systems, which are crucial to products such as YouTube (similar systems also power some of Google’s advertising products)."
+----
 
-  [patent on Deep Q-Network](http://google.com/patents/US20150100530) by Google  
+  [patent on Deep Q-Network](http://google.com/patents/US20150100530) by Google:  
 >	"Further applications of the techniques we describe, which are merely given by way of example, include: robot control (such as bipedal or quadrupedal walking or running, navigation, grasping, and other control skills); vehicle control (autonomous vehicle control, steering control, airborne vehicle control such as helicopter or plane control, autonomous mobile robot control); machine control; control of wired or wireless communication systems; control of laboratory or industrial equipment; control of real or virtual resources (such as memory management, inventory management and the like); drug discovery (where the controlled action is, say, the definition of DNA sequence of a drug and the states are defined by states of a living entity to which the drug is applied); application to a system in which the state of or output from the system is defined by words (text and/or audio and/or image), such as a system employing natural language; application to a trading system such as a stock market (although the actions taken may have little effect on such a system, very small effects can be sufficient to achieve useful overall rewards); and others."
+
+  ["Why Tool AIs Want to Be Agent AIs"](http://gwern.net/Tool%20AI) by Gwern Branwen:  
+>	"The logical extension of these neural networks all the way down papers is that an actor like Google/Baidu/Facebook/MS could effectively turn neural networks into a black box: a user/developer uploads through an API a dataset of input/output pairs of a specified type and a monetary loss function, and a top-level neural network running on a large GPU cluster starts autonomously optimizing over architectures & hyperparameters for the neural network design which balances GPU cost and the monetary loss, interleaved with further optimization over the thousands of previous submitted tasks, sharing its learning across all of the datasets/loss functions/architectures/hyperparameters, and the original user simply submits future data through the API for processing by the best neural network so far."
+
 
 ----
 #### games
 
   - *Go*  
-	["Mastering the Game of Go with Deep Neural Networks and Tree Search"](https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf)  
+	["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#silver-et-al---mastering-the-game-of-go-with-deep-neural-networks-and-tree-search) by Silver et al.
 
 	[history of ideas](http://youtube.com/watch?v=UMm0XaCFTJQ) by Rich Sutton, Czaba Szepesvari, Michael Bowling, Ryan Hayward, Martin Muller  
 	"Google AlphaGo is a historical tour of AI ideas: 70s (Alpha-Beta), 80s/90s (RL & self-play), 00's (Monte-Carlo), 10's (deep neural networks)."  
 
-	<https://youtu.be/i3lEG6aRGm8?t=16m> (Demis Hassabis)  
-	<https://youtu.be/yCALyQRN3hw?t=15m18s> + <https://youtu.be/qUAmTYHEyM8?t=15m31s> + <https://youtu.be/mzpW10DPHeQ?t=10m22s> (David Silver, Chris Maddison)  
-	<https://youtube.com/watch?v=4D5yGiYe8p4> (David Silver)  
-	<https://youtu.be/LX8Knl0g0LE?t=4m41s> (Aja Huang)  
+	[overview](https://youtu.be/i3lEG6aRGm8?t=16m) by Demis Hassabis  
+	overview by David Silver and Chris Maddison
+		([part 1](https://youtu.be/yCALyQRN3hw?t=15m18s), [part 2](https://youtu.be/qUAmTYHEyM8?t=15m31s), [part 3](https://youtu.be/mzpW10DPHeQ?t=10m22s))  
+	[overview](https://youtube.com/watch?v=4D5yGiYe8p4) by David Silver  
+	[overview](https://youtu.be/LX8Knl0g0LE?t=4m41s) by Aja Huang  
 
 	<https://xcorr.net/2016/02/03/5-easy-pieces-how-deepmind-mastered-go/>  
-	<https://github.com/Rochester-NRT/RocAlphaGo/wiki>  
 
 	AlphaGo vs Lee Sedol match:
 
@@ -134,72 +138,72 @@
 	<https://medium.com/@karpathy/alphago-in-context-c47718cb95a5>  
 
   - *Poker*  
-	["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](http://arxiv.org/abs/1701.01724)  
+	["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](#moravcik-et-al---deepstack-expert-level-artificial-intelligence-in-no-limit-poker) by Moravcik et al.  
 	[Science paper](http://science.sciencemag.org/content/early/2017/03/01/science.aam6960)  
 
 	<http://deepstack.ai>  
 	<http://twitter.com/DeepStackAI>  
 
-	<https://youtube.com/watch?v=qndXrHcV1sM> (Michael Bowling)  
-	<http://thinkingpoker.net/2017/03/episode-208-michael-bowling-of-cprg/> (Michael Bowling)  
+	[overview](https://youtube.com/watch?v=qndXrHcV1sM) by Michael Bowling  
+	[discussion](http://thinkingpoker.net/2017/03/episode-208-michael-bowling-of-cprg/) with Michael Bowling  
 
+	[demo matches against top human players](https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ)  
 	<http://natemeyvis.com/blog/2017/3/30/my-heads-up-matches-against-deepstack>  
 	<http://thinkingpoker.net/2017/03/battling-deepstack/>  
 
-	[demo matches](https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ)
-
   - *Chess*  
-	["Giraffe: Using Deep Reinforcement Learning to Play Chess"](http://arxiv.org/abs/1509.01549)
+	["Giraffe: Using Deep Reinforcement Learning to Play Chess"](#lai---giraffe-using-deep-reinforcement-learning-to-play-chess) by Lai
 
   - *Atari video games*  
-	["Playing Atari with Deep Reinforcement Learning"](https://arxiv.org/abs/1312.5602)
+	["Playing Atari with Deep Reinforcement Learning"](#mnih-kavukcuoglu-silver-graves-antonoglou-wierstra-riedmiller---playing-atari-with-deep-reinforcement-learning) by Mnih et al.  
+	[Nature paper](https://goo.gl/jHRkZr)  
+	[overview](http://youtube.com/watch?v=dV80NAlEins) of Deep Q-Network agent by Nando de Freitas  
+	[demo](http://youtube.com/watch?v=EfGD2qveGdQ) of Deep Q-Network agent  
 
-	<http://youtube.com/watch?v=dV80NAlEins> (Nando de Freitas)
+	[3D racing demo](http://youtube.com/watch?v=0xo1Ldx3L5Q)  
+	[3D labyrinth demo](http://youtube.com/watch?v=nMR5mjCFZCw)  
+	[Doom gameplay demo](http://youtube.com/watch?v=re6hkcTWVUY)  
+	[blockworld demo](http://youtube.com/watch?v=6jlaBD9LCnM)  
+	[blockworld demo](http://youtube.com/watch?v=6JT6_dRcKAw)  
 
-	<http://youtube.com/watch?v=EfGD2qveGdQ> (demo)  
-	<http://youtu.be/XAbLn66iHcQ?t=1h41m21s> + <http://youtube.com/watch?v=0xo1Ldx3L5Q> (3D racing demo)  
-	<http://youtube.com/watch?v=nMR5mjCFZCw> (3D labyrinth demo)  
-	<http://youtube.com/watch?v=re6hkcTWVUY> (Doom gameplay demo)  
-	<http://youtube.com/watch?v=6jlaBD9LCnM> + <http://youtube.com/watch?v=6JT6_dRcKAw> (blockworld demo)  
-	<http://youtu.be/XAbLn66iHcQ?t=1h41m21s> (demo)  
-	<http://youtube.com/user/eldubro/videos> (demos)  
-	<http://youtube.com/watch?v=iqXKQf2BOSE> (demo)  
+  - *Ms. PacMan*  
+	["Hybrid Reward Architecture for Reinforcement Learning"](https://arxiv.org/abs/1706.04208) by van Seijen et al.  
+	[overview](https://youtube.com/watch?v=zQyWMHFjewU)  
+	[demo](https://youtube.com/watch?v=VeXNw0Owf0Y)  
 
   - *Doom*  
-	<http://vizdoom.cs.put.edu.pl>  
-	<https://youtube.com/watch?v=Qv4esGWOg7w>  
-	<https://youtube.com/watch?v=947bSUtuSQ0>  
-	<https://youtube.com/watch?v=tDRdgpkleXI>  
+	["Learning to Act by Predicting the Future"](https://arxiv.org/pdf/1611.01779) by Dosovitskiy and Koltun  
+	[overview](https://youtube.com/watch?v=Q0ldKJbAwR8) of IntelAct agent by Alexey Dosovitskiy (in russian)  
+	[demo](https://youtube.com/watch?v=947bSUtuSQ0) of IntelAct agent  
+
+	[demos](https://youtube.com/channel/UC8UghzsxS5uEFUEbvcAWwlQ/videos) of agents from ViZDoom competition  
+
 
 ----
 #### robotics
 
   overview by Pieter Abbeel:  
-	<https://youtu.be/xe-z4i3l-iQ?t=30m35s>  
-	<http://on-demand.gputechconf.com/gtc/2016/video/S6812.html>  
-	<http://youtube.com/watch?v=xMHjkZBvnfU>  
+  - <https://youtu.be/xe-z4i3l-iQ?t=30m35s>  
+  - <http://on-demand.gputechconf.com/gtc/2016/video/S6812.html>  
+  - <http://youtube.com/watch?v=xMHjkZBvnfU>  
 
   overview by Sergey Levine:  
-	<http://videolectures.net/iclr2016_levine_deep_learning/>  
-	<https://youtube.com/watch?v=f41JXf-ojrM>  
-	<https://youtube.com/watch?v=EtMyH_--vnU>  
-	<https://video.seas.harvard.edu/media/ME+Sergey+Levine+2015+-04-01/1_gqqp9r3o/23375211>  
+  - <http://videolectures.net/iclr2016_levine_deep_learning/>  
+  - <https://youtube.com/watch?v=f41JXf-ojrM>  
+  - <https://youtube.com/watch?v=EtMyH_--vnU>  
+  - <https://video.seas.harvard.edu/media/ME+Sergey+Levine+2015+-04-01/1_gqqp9r3o/23375211>  
+
 
 ----
-
-  [**open world problems**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#open-world-problems)
-
-----
-
-  ["Why Tool AIs Want to Be Agent AIs"](http://gwern.net/Tool%20AI) by Gwern Branwen:  
->	"The logical extension of these neural networks all the way down papers is that an actor like Google/Baidu/Facebook/MS could effectively turn neural networks into a black box: a user/developer uploads through an API a dataset of input/output pairs of a specified type and a monetary loss function, and a top-level neural network running on a large GPU cluster starts autonomously optimizing over architectures & hyperparameters for the neural network design which balances GPU cost and the monetary loss, interleaved with further optimization over the thousands of previous submitted tasks, sharing its learning across all of the datasets/loss functions/architectures/hyperparameters, and the original user simply submits future data through the API for processing by the best neural network so far."
+#### [open world problems](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#open-world-problems)
 
 
 
 ---
 ### overview
 
-  [introduction](https://youtube.com/watch?v=2pWv7GOvuf0) by David Silver
+  [introduction](https://youtube.com/watch?v=2pWv7GOvuf0) by David Silver  
+  [introduction](https://yadi.sk/i/bMo0qa-x3DoqkS) by Fedor Ratnikov (in russian)  
 
   introduction by Kevin Frans:  
   - [basics](http://kvfrans.com/reinforcement-learning-basics/)  
@@ -463,6 +467,8 @@
   [overview](http://youtube.com/watch?v=sGuiWX07sKw) by David Silver  
   [overview](http://youtube.com/watch?v=WCE9hhPbCmc) by Maxim Kretov (in russian)  
 
+  [interesting papers](#interesting-papers---exploration-and-intrinsic-motivation)
+
 ----
 
   [**bandits**](#bandits)  
@@ -470,17 +476,13 @@
 
 ----
 
-  **approximate bayes-optimal exploration methods**:
-
-  "BRL provides a principled approach to tackle the problem of exploration-exploitation during learning and beyond, within the standard Bayesian inference paradigm. In this framework, prior information about the problem (including uncertainty) is represented in parametric form, and Bayesian inference is used to incorporate any new information about the model. Thus the exploration-exploitation problem can be handled as an explicit sequential decision problem, where the agent seeks to maximize future expected return with respect to its current uncertainty on the model. An important limitation of this approach is that the decision-making process is significantly more complex since it involves reasoning about all possible models and courses of action."
-
-
-  [overview](https://youtu.be/sGuiWX07sKw?t=1h8m44s) by David Silver  
+  **bayesian exploration methods**:
 
   [**bayesian reinforcement learning**](#bayesian-reinforcement-learning)
 
-  [General Reinforcement Learning Agent Zoo](http://aslanides.io/aixijs/) by John Aslanides
-	([demo](http://aslanides.io/aixijs/demo.html), [code](https://github.com/aslanides/aixijs), [paper](https://arxiv.org/abs/1705.07615))
+  "Bayesian reinforcement learning provides approach to optimal exploration during learning and beyond. In this framework, prior information about the problem (including uncertainty) is represented in parametric form, and Bayesian inference is used to incorporate any new information about the model. Thus the exploration-exploitation problem can be handled as an explicit sequential decision problem, where the agent seeks to maximize future expected return with respect to its current uncertainty on the model. An important limitation of this approach is that the decision-making process is significantly more complex since it involves reasoning about all possible models and courses of action."
+
+  [overview](https://youtu.be/sGuiWX07sKw?t=57m28s) by David Silver  
 
 
   ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](#guez-silver-dayan---efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search) by Guez et al.  
@@ -576,10 +578,6 @@
 ----
 
   (Ian Osband) "In sequential decision problems there is an important distinction between risk and uncertainty. We identify risk as inherent stochasticity in a model and uncertainty as the confusion over which model parameters apply. For example, a coin may have a fixed p = 0.5 of heads and so the outcome of any single flip holds some risk; a learning agent may also be uncertain of p. The demarcation between risk and uncertainty is tied to the specific model class, in this case a Bernoulli random variable; with a more detailed model of flip dynamics even the outcome of a coin may not be risky at all. Our distinction is that unlike risk, uncertainty captures the variability of an agent’s posterior belief which can be resolved through statistical analysis of the appropriate data. For a learning agent looking to maximize cumulative utility through time, this distinction represents a crucial dichotomy. Consider the reinforcement learning problem of an agent interacting with its environment while trying to maximize cumulative utility through time. At each timestep, the agent faces a fundamental tradeoff: by exploring uncertain states and actions the agent can learn to improve its future performance, but it may attain better short-run performance by exploiting its existing knowledge. At a high level this effect means uncertain states are more attractive since they can provide important information to the agent going forward. On the other hand, states and action with high risk are actually less attractive for an agent in both exploration and exploitation. For exploitation, any concave utility will naturally penalize risk. For exploration, risk also makes any single observation less informative. Although colloquially similar, risk and uncertainty can require radically different treatment."
-
-----
-
-  [interesting papers](#interesting-papers---exploration-and-intrinsic-motivation)
 
 
 
@@ -715,6 +713,14 @@
 
 ----
 
+  ["Doubly Robust Policy Evaluation and Learning"](https://arxiv.org/abs/1103.4601) by Dudik, Langford, Li ([summary](https://medium.com/@sharaf/a-paper-a-day-12-doubly-robust-policy-evaluation-and-learning-7e6a09665d7f))  
+  ["Taming the Monster: A Fast and Simple Algorithm for Contextual Bandits"](https://arxiv.org/abs/1402.0555) by Agarwal et al. ([overview](https://youtube.com/watch?v=mi_G5tw7Etg) by Alekh Agarwal)  
+  ["Making Contextual Decisions with Low Technical Debt"](http://arxiv.org/abs/1606.03966) by Agarwal et al. ([overviews](#agarwal-et-al---making-contextual-decisions-with-low-technical-debt))  
+
+  ["The Contextual Bandits Problem: A New, Fast, and Simple Algorithm"](https://youtube.com/watch?v=gzxRDw3lXv8) by Robert Schapire
+
+----
+
   (John Langford) "The Atari results are very fun but obviously unimpressive on about 1/4 of the games. My hypothesis for why is that the solution does only local (epsilon-greedy style) exploration rather than global exploration so they can only learn policies addressing either very short credit assignment problems or with greedily accessible polices. Global exploration strategies are known to result in exponentially more efficient strategies in general for [deterministic decision processes](http://idm-lab.org/bib/abstracts/papers/aaai93.pdf) (1993), [Markov Decision Processes](http://www.cis.upenn.edu/~mkearns/papers/KearnsSinghE3.pdf) (1998), and for [MDPs without modelling](http://research.microsoft.com/pubs/178886/published.pdf) (2006). The reason these strategies are not used is because they are based on tabular learning rather than function fitting. That’s why I shifted to Contextual Bandit research after the 2006 paper. We’ve learned quite a bit there, enough to start tackling a [Contextual Deterministic Decision Process](http://arxiv.org/abs/1602.02722) (2016), but that solution is still far from practical."
 
   [global exploration strategies](#exploration-and-intrinsic-motivation)
@@ -756,10 +762,6 @@
   ["Planning by Dynamic Programming"](https://youtube.com/watch?v=Nd1-UUMVfz4) by David Silver  
   ["Integrating Learning and Planning"](https://youtube.com/watch?v=ItMutbeOHtc) by David Silver  
 
-  overview of planning by Pavel Shvechikov and Fedor Ratnikov (in russian)
-	([first part](https://yadi.sk/i/lOAUu7o13JBHFz), [second part](https://yadi.sk/i/bkmjEZrk3JBHGF),
-	[slides](https://yadi.sk/i/3PM9zCP33J3ub3) in english)
-
 
   [interesting papers](#interesting-papers---model-based-methods) on model-based methods  
   [interesting papers](#interesting-papers---abstractions-for-states-and-actions) on abstractions for states and actions  
@@ -768,9 +770,10 @@
 ----
 #### Monte Carlo Tree Search
 
-  [introduction](https://youtube.com/watch?v=ItMutbeOHtc&t=1h4m32s) by David Silver  
-  [introduction](https://youtube.com/watch?v=mZtlW_xtarI&t=45m12s) by Sergey Levine  
-  [introduction](https://youtube.com/watch?v=onBYsen2_eA) by Michael Littman  
+  [overview](https://youtube.com/watch?v=ItMutbeOHtc&t=1h4m32s) by David Silver  
+  [overview](https://youtube.com/watch?v=mZtlW_xtarI&t=45m12s) by Sergey Levine  
+  [overview](https://youtube.com/watch?v=onBYsen2_eA) by Michael Littman  
+  [overview](https://yadi.sk/i/lOAUu7o13JBHFz) by Fedor Ratnikov (in russian)  
 
 
   ["A Survey of Monte Carlo Tree Search Methods"](http://www.cameronius.com/cv/mcts-survey-master.pdf) by Browne et al.
@@ -837,9 +840,7 @@
   ["Learning Dynamical System Models from Data"](https://youtube.com/watch?v=qVsLk5CVy_c) by Sergey Levine  
   ["Advanced Model Learning"](https://youtube.com/watch?v=6EasN2FAIX0) by Chelsea Finn  
 
-  "Partially Observable Markov Decision Process in Reinforcement Learning" by Alexander Fritsler and Fedor Ratnikov (in russian)
-	([first part](https://yadi.sk/i/pMdw-_uI3Gke7Z), [second part](https://yadi.sk/i/s1EEuEVd3Gke8k),
-	[slides](https://yadi.sk/d/RGx8BUCr3Gq6DC) in english)  
+  ["Approximate Reinforcement Learning in Partially Observable Markov Decision Process"](https://yadi.sk/i/pMdw-_uI3Gke7Z) (35:54) by Pavel Shvechikov (in russian)  
   ["Deep Recurrent Q-Network"](https://youtube.com/watch?v=bE5DIJvZexc) by Alexander Fritsler (in russian)  
   ["Deep Reinforcement Learning with Memory"](http://93.180.23.59/videos/video/2420/in/channel/1/) by Sergey Bartunov (in russian)  
 
@@ -862,6 +863,8 @@
   [overview](https://youtu.be/sGuiWX07sKw?t=1h8m44s) of reinforcement learning with information state space by David Silver  
   ["Bandits, Active Learning, Bayesian RL and Global Optimization"](https://youtu.be/5rev-zVx1Ps?t=58m45s) by Marc Toussaint  
   ["Reinforcement Learning: Beyond Markov Decision Processes"](https://youtube.com/watch?v=_dkaynuKUFE) by Alexey Seleznev (in russian)  
+  ["Partially Observable Markov Decision Process in Reinforcement Learning"](https://yadi.sk/i/pMdw-_uI3Gke7Z) by Pavel Shvechikov (in russian)  
+  ["Planning in Partially Observable Markov Decision Process"](https://yadi.sk/i/lOAUu7o13JBHFz) (55:08) by Pavel Shvechikov (in russian)  
 
   ["Bayesian Reinforcement Learning: A Survey"](https://arxiv.org/abs/1609.04436) by Ghavamzadeh et al.  
 
@@ -877,6 +880,7 @@
 
 
   ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](#guez-silver-dayan---efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search) by Guez et al.  
+  ["Monte-Carlo Planning in Large POMDPs"](https://papers.nips.cc/paper/4031-monte-carlo-planning-in-large-pomdps) by Silver et al. ([overview](https://yadi.sk/i/lOAUu7o13JBHFz) (1:39:35) by Pavel Shvechikov (in russian))  
   ["Approximate Bayes Optimal Policy Search using Neural Networks"](#castronovo-francois-lavet-fonteneau-ernst-couetoux---approximate-bayes-optimal-policy-search-using-neural-networks) by Castronovo et al.  
 
 
@@ -890,27 +894,35 @@
   ["Model Free Control"](https://youtube.com/watch?v=0g4j2k_Ggc4) by David Silver  
   ["Value Function Approximation"](http://youtube.com/watch?v=UoPei5o4fps) by David Silver  
 
-  [introduction to Deep Q-Network](http://youtube.com/watch?v=dV80NAlEins) by Nando de Freitas  
-
   ["Value Iteration and Policy Iteration"](https://youtube.com/watch?v=IL3gVyJMmhg) by John Schulman  
   "Q-Function Learning Methods" by John Schulman
 	([first part](https://youtube.com/watch?v=Wnl-Qh2UHGg&t=19m06s),
 	[second part](https://youtube.com/watch?v=h1-pj4Y9-kM))  
 
-  [overview](http://techtalks.tv/talks/deep-reinforcement-learning/62360/) by David Silver  
-  [overview](http://youtu.be/qLaDWKd61Ig?t=9m16s) by David Silver  
-  [overview](http://videolectures.net/rldm2015_silver_reinforcement_learning/) by David Silver  
+  [introduction to Deep Q-Network](http://youtube.com/watch?v=dV80NAlEins) by Nando de Freitas  
 
-  introduction to Deep Q-Network by Fedor Ratnikov and Oleg Vasilev (in russian)
-	([first part](https://yadi.sk/i/AHDU2p_j3FT3nr), [second part](https://yadi.sk/i/EeUeheri3FT3ra))  
-  overview of Deep Q-Network by Alexander Fritsler and Fedor Ratnikov (in russian)
+  ["Temporal Difference"](https://yadi.sk/i/cVawsPkK3EtGJj) by Fedor Ratnikov (in russian)  
+  "Value-based Methods" by Fedor Ratnikov (in russian)
+	([first part](https://yadi.sk/i/I7XcP6vU3ExNrT), [second part](https://yadi.sk/i/XbqNQmjm3ExNsq))  
+  ["Approximate Reinforcement Learning"](https://yadi.sk/i/AHDU2p_j3FT3nr) by Fedor Ratnikov (in russian)  
+
+
+  latest developments:  
+  - [overview](http://techtalks.tv/talks/deep-reinforcement-learning/62360/) by David Silver  
+  - [overview](http://youtu.be/qLaDWKd61Ig?t=9m16s) by David Silver  
+  - [overview](http://videolectures.net/rldm2015_silver_reinforcement_learning/) by David Silver  
+  - overview by Alexander Fritsler and Fedor Ratnikov (in russian)
 	([first part](https://yadi.sk/i/yBO0q4mI3GAxYd), [second part](https://yadi.sk/i/oWC2M5803GAyFB))  
-  [overview of Deep Q-Network](http://youtube.com/watch?v=mrgJ53TIcQc) by Mikhail Pavlov (in russian)  
+  - [overview](http://youtube.com/watch?v=mrgJ53TIcQc) of Deep Q-Network by Mikhail Pavlov (in russian)  
+
 
   [derivations](http://www.alexirpan.com/rl-derivations/#q-learning) by Alex Irpan
 
 
-  - naive Q-learning oscillates or diverges with neural nets  
+  [interesting papers](#interesting-papers---value-based-methods)
+
+
+  - naive Q-learning oscillates or diverges with neural networks  
     * data is sequential  
     * successive samples are correlated, non-iid  
   - policy changes rapidly with slight changes to Q-values  
@@ -920,7 +932,7 @@
     * naive Q-learning gradients can be large  
     * unstable when backpropagated  
 
-**Deep Q-learning Network (DQN)**:  
+**Deep Q-Network (DQN)**:  
   - use experience replay  
     * break correlations in data, bring us back to iid setting  
     * learn from all past policies  
@@ -932,10 +944,10 @@
     * robust gradients  
 
 
-  [interesting papers](#interesting-papers---value-based-methods)
+  [overview](https://yadi.sk/i/EeUeheri3FT3ra) of Deep Q-Network implementation by Oleg Vasilev and Fedor Ratnikov (in russian)  
 
 
-  deep Q-learning implementations:  
+  Deep Q-Network implementations:  
   - <https://github.com/khanhptnk/deep-q-tensorflow>  
   - <https://github.com/nivwusquorum/tensorflow-deepq>  
   - <https://github.com/devsisters/DQN-tensorflow>  
@@ -1037,6 +1049,9 @@
   [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement#t=517) by Pieter Abbeel  
   [overview](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Reinforcement-Learning-Through-Policy-Optimization) by Pieter Abbeel (07:07)  
   [overview](https://youtu.be/aUrX-rP_ss4?t=27m20s) by John Schulman  
+  [overview](https://yadi.sk/i/5yf_4oGI3EDJhJ) by Fedor Ratnikov (in russian)  
+
+  [overview of implementation](https://yadi.sk/i/dPsWYMK13EDJj7) by Oleg Vasilev (in russian)  
 
 
   ["The Cross Entropy method for Fast Policy Search"](http://aaai.org/Papers/ICML/2003/ICML03-068.pdf) by Mannor, Rubinstein, Gat
@@ -1156,9 +1171,9 @@
   [overview](https://youtu.be/xe-z4i3l-iQ?t=30m35s) by Pieter Abbeel  
   [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=1630) by Pieter Abbeel  
   [overview](https://youtube.com/watch?v=gb5Q2XL5c8A) by John Schulman  
-  overview by Pavel Shvechikov and Fedor Ratnikov (in russian)
-	([first part](https://yadi.sk/i/1oyihBnm3HiKHm), [second part](https://yadi.sk/i/b0ol2gUV3HiKKJ),
-	[slides](https://yadi.sk/i/9j6S4WVp3HgEdn) in english)  
+  [overview](https://yadi.sk/i/1oyihBnm3HiKHm) by Alexander Fritsler (in russian)  
+
+  [overview of implementation](https://yadi.sk/i/b0ol2gUV3HiKKJ) by Alexander Fritsler and Fedor Ratnikov (in russian)  
 
   [explanation](http://kvfrans.com/what-is-the-natural-gradient-and-where-does-it-appear-in-trust-region-policy-optimization/) of natural gradient in TRPO by Kevin Frans  
   [derivations](http://www.alexirpan.com/rl-derivations/#natural-policy-gradient) by Alex Irpan  
@@ -1297,9 +1312,9 @@
   ["Learning Continuous Control Policies by Stochastic Value Gradients"](#heess-wayne-silver-lillicrap-tassa-erez---learning-continuous-control-policies-by-stochastic-value-gradients) by Heess et al.
 
 
-  - generalizes DPG to stochastic policies in a number of ways, giving a spectrum from model-based to model-free algorithms  
-  - while SVG(0) is a direct stochastic generalization of DPG, SVG(1) combines an actor, critic and dynamics model f  
-  - the actor is trained through a combination of gradients from the critic, model and reward simultaneously  
+  - generalizes DPG to stochastic policies in a number of ways, giving spectrum from model-based to model-free algorithms  
+  - while SVG(0) is direct stochastic generalization of DPG, SVG(1) combines actor, critic and environment dynamics model f  
+  - actor is trained through combination of gradients from critic, model and reward simultaneously  
 
   reparametrization trick: E p(y|x)[g(y)]=∫g(f(x,ξ))ρ(ξ)dξ where y=f(x,ξ) and ξ\~ρ(.) a fixed noise distribution
 
@@ -1351,8 +1366,7 @@ interesting papers (see below):
   - <http://youtube.com/watch?v=4D5yGiYe8p4> (Silver)
   - <http://youtube.com/watch?v=LX8Knl0g0LE> (Huang)
   - <http://youtube.com/watch?v=UMm0XaCFTJQ> (Sutton, Szepesvari, Bowling, Hayward, Muller)
-  - <https://github.com/Rochester-NRT/RocAlphaGo/wiki> (overview)
-  - <https://github.com/Rochester-NRT/AlphaGo/>
+  - <https://github.com/Rochester-NRT/RocAlphaGo/wiki>
 
 
 #### Moravcik et al. - ["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](http://arxiv.org/abs/1701.01724)
@@ -1385,7 +1399,7 @@ interesting papers (see below):
   - <https://github.com/lifrordi/DeepStack-Leduc>
 
 
-#### Mnih et al. - ["Human-Level Control Through Deep Reinforcement Learning"](http://home.uchicago.edu/~arij/journalclub/papers/2015_Mnih_et_al.pdf)
+#### Mnih et al. - ["Human-Level Control Through Deep Reinforcement Learning"](https://goo.gl/jHRkZr)
 >	"The theory of reinforcement learning provides a normative account, deeply rooted in psychological and neuroscientific perspectives on animal behaviour, of how agents may optimize their control of an environment. To use reinforcement learning successfully in situations approaching real-world complexity, however, agents are confronted with a difficult task: they must derive efficient representations of the environment from high-dimensional sensory inputs, and use these to generalize past experience to new situations. Remarkably, humans and other animals seem to solve this problem through a harmonious combination of reinforcement learning and hierarchical sensory processing systems, the former evidenced by a wealth of neural data revealing notable parallels between the phasic signals emitted by dopaminergic neurons and temporal difference reinforcement learning algorithms. While reinforcement learning agents have achieved some successes in a variety of domains, their applicability has previously been limited to domains in which useful features can be handcrafted, or to domains with fully observed, low-dimensional state spaces. Here we use recent advances in training deep neural networks to develop a novel artificial agent, termed a deep Q-network, that can learn successful policies directly from high-dimensional sensory inputs using end-to-end reinforcement learning. We tested this agent on the challenging domain of classic Atari 2600 games. We demonstrate that the deep Q-network agent, receiving only the pixels and the game score as inputs, was able to surpass the performance of all previous algorithms and achieve a level comparable to that of a professional human games tester across a set of 49 games, using the same algorithm, network architecture and hyperparameters. This work bridges the divide between high-dimensional sensory inputs and actions, resulting in the first artificial agent that is capable of learning to excel at a diverse array of challenging tasks."
 
   - <http://nature.com/nature/journal/v518/n7540/full/nature14236.html>
@@ -1543,7 +1557,7 @@ interesting papers (see below):
 
 ----
 
-  * [approximate bayes-optimal exploration methods](#interesting-papers---exploration-and-intrinsic-motivation---approximate-bayesian-optimal-exploration-methods)
+  * [bayesian exploration methods](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration-methods)
   * information theoretic and distributional models
     - [uncertainty motivation](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---uncertainty-motivation)
     - [information gain motivation](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---information-gain-motivation)
@@ -1557,7 +1571,7 @@ interesting papers (see below):
 
 
 ---
-### interesting papers - exploration and intrinsic motivation - approximate bayes-optimal exploration methods
+### interesting papers - exploration and intrinsic motivation - bayesian exploration methods
 
 #### Guez, Silver, Dayan - ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](https://arxiv.org/abs/1205.3109)
 >	"Bayesian model-based reinforcement learning is a formally elegant approach to learning optimal behaviour under model uncertainty, trading off exploration and exploitation in an ideal way. Unfortunately, finding the resulting Bayes-optimal policies is notoriously taxing, since the search space becomes enormous. In this paper we introduce a tractable, sample-based method for approximate Bayes-optimal planning which exploits Monte-Carlo tree search. Our approach outperformed prior Bayesian model-based RL algorithms by a significant margin on several well-known benchmark problems – because it avoids expensive applications of Bayes rule within the search tree by lazily sampling models from the current beliefs. We illustrate the advantages of our approach by showing it working in an infinite state space domain which is qualitatively out of reach of almost all previous work in Bayesian exploration."
@@ -1986,13 +2000,16 @@ interesting papers (see below):
   - <https://vimeo.com/28759091> (Schmidhuber)
 
 
-#### Houthooft, Chen, Duan, Schulman, Turck, Abbeel - ["VIME: Variational Information Maximizing Exploration"](#houthooft-chen-duan-schulman-turck-abbeel---vime-variational-information-maximizing-exploration)
+#### Houthooft, Chen, Duan, Schulman, Turck, Abbeel - ["VIME: Variational Information Maximizing Exploration"](http://arxiv.org/abs/1605.09674)
 >	approximation of [Artificial Curiosity and Creativity](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory of Juergen Schmidhuber
 
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#houthooft-chen-duan-schulman-turck-abbeel---vime-variational-information-maximizing-exploration>
 
-#### Graves, Bellemare, Menick, Munos, Kavukcuoglu - ["Automated Curriculum Learning for Neural Networks"](#graves-bellemare-menick-munos-kavukcuoglu---automated-curriculum-learning-for-neural-networks)
+
+#### Graves, Bellemare, Menick, Munos, Kavukcuoglu - ["Automated Curriculum Learning for Neural Networks"](https://arxiv.org/abs/1704.03003)
 >	approximation of [Artificial Curiosity and Creativity](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory of Juergen Schmidhuber
 
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#graves-bellemare-menick-munos-kavukcuoglu---automated-curriculum-learning-for-neural-networks>
 
 
 ---
@@ -2123,10 +2140,10 @@ interesting papers (see below):
 ---
 ### interesting papers - model-based methods
 
-[interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---approximate-bayesian-exploration-models) on approximate bayes-optimal exploration methods
-
 [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---simulation-and-planning) on simulation and planning  
 [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---memory) on memory  
+
+[interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration-models) on bayesian exploration methods
 
 
 #### Hausknecht, Stone - ["Deep Recurrent Q-Learning for Partially Observable MDPs"](http://arxiv.org/abs/1507.06527)
@@ -2137,6 +2154,7 @@ interesting papers (see below):
 ----
 >	"Demonstrated that recurrent Q learning can perform the required information integration to resolve short-term partial observability (e.g. to estimate velocities) that is achieved via stacks of frames in the original DQN architecture."
 
+  - <https://yadi.sk/i/pMdw-_uI3Gke7Z> (36:29) (Fritsler, in russian)
   - <https://youtube.com/watch?v=bE5DIJvZexc> (Fritsler, in russian)
   - <https://github.com/mhauskn/dqn/tree/recurrent>
   - <https://github.com/awjuliani/DeepRL-Agents/blob/master/Deep-Recurrent-Q-Network.ipynb>
@@ -2261,6 +2279,26 @@ interesting papers (see below):
   - <https://youtu.be/mrgJ53TIcQc?t=25m43s> (Pavlov, in russian)
   - <https://github.com/Kaixhin/Atari>
   - <https://github.com/carpedm20/deep-rl-tensorflow>
+
+
+#### Kulkarni, Saeedi, Gautam, Gershman - ["Deep Successor Reinforcement Learning"](https://arxiv.org/abs/1606.02396)
+>	"Learning robust value functions given raw observations and rewards is now possible with model-free and model-based deep reinforcement learning algorithms. There is a third alternative, called Successor Representations, which decomposes the value function into two components – a reward predictor and a successor map. The successor map represents the expected future state occupancy from any given state and the reward predictor maps states to scalar rewards. The value function of a state can be computed as the inner product between the successor map and the reward weights. In this paper, we present DSR, which generalizes SR within an end-to-end deep reinforcement learning framework. DSR has several appealing properties including: increased sensitivity to distal reward changes due to factorization of reward and world dynamics, and the ability to extract bottleneck states (subgoals) given successor maps trained under a random policy. We show the efficacy of our approach on two diverse environments given raw pixel observations – simple grid-world domains (MazeBase) and the Doom game engine."
+
+  - <https://youtube.com/watch?v=OCHwXxSW70o> (Kulkarni)
+  - <https://youtube.com/watch?v=kNqXCn7K-BM> (Garipov)
+  - <https://github.com/Ardavans/DSR>
+
+
+#### Dosovitskiy, Koltun - ["Learning to Act by Predicting the Future"](https://arxiv.org/pdf/1611.01779)
+>	"We present an approach to sensorimotor control in immersive environments. Our approach utilizes a high-dimensional sensory stream and a lower-dimensional measurement stream. The cotemporal structure of these streams provides a rich supervisory signal, which enables training a sensorimotor control model by interacting with the environment. The model is trained using supervised learning techniques, but without extraneous supervision. It learns to act based on raw sensory input from a complex three-dimensional environment. The presented formulation enables learning without a fixed goal at training time, and pursuing dynamically changing goals at test time. We conduct extensive experiments in three-dimensional simulations based on the classical first-person game Doom. The results demonstrate that the presented approach outperforms sophisticated prior formulations, particularly on challenging tasks. The results also show that trained models successfully generalize across environments and goals. A model trained using the presented approach won the Full Deathmatch track of the Visual Doom AI Competition, which was held in previously unseen environments."
+
+>	"application of deep successor reinforcement learning"
+
+  - <https://youtube.com/watch?v=947bSUtuSQ0> + <https://youtube.com/watch?v=947bSUtuSQ0> (demo)
+  - <https://youtube.com/watch?v=Q0ldKJbAwR8> (Dosovitskiy) (in russian)
+  - <https://yadi.sk/i/pMdw-_uI3Gke7Z> (1:02:03) (Shvechikov) (in russian)
+  - <https://blog.acolyer.org/2017/05/12/learning-to-act-by-predicting-the-future/>
+  - <https://github.com/IntelVCL/DirectFuturePrediction>
 
 
 #### Heinrich, Silver - ["Deep Reinforcement Learning from Self-Play in Imperfect-Information Games"](http://arxiv.org/abs/1603.01121) (Poker)
@@ -2391,7 +2429,7 @@ interesting papers (see below):
   - <https://youtu.be/xe-z4i3l-iQ?t=30m35s> (Abbeel)
   - <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=1630> (Abbeel)
   - <https://youtube.com/watch?v=gb5Q2XL5c8A> (Schulman)
-  - <https://yadi.sk/i/1oyihBnm3HiKHm> + <https://yadi.sk/i/b0ol2gUV3HiKKJ> (Shvechikov and Ratnikov, in russian) ([slides](https://yadi.sk/i/9j6S4WVp3HgEdn) in english)  
+  - <https://yadi.sk/i/1oyihBnm3HiKHm> + <https://yadi.sk/i/b0ol2gUV3HiKKJ> (Fritsler and Ratnikov, in russian) ([slides](https://yadi.sk/i/9j6S4WVp3HgEdn) in english)  
   - <http://kvfrans.com/what-is-the-natural-gradient-and-where-does-it-appear-in-trust-region-policy-optimization/>
   - <https://github.com/joschu/modular_rl>
   - <https://github.com/rll/deeprlhw2/blob/master/ppo.py>

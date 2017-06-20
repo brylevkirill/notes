@@ -108,7 +108,7 @@
 
   [Konstantin Vorontsov](http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC) (in russian)  
   [Igor Kuralenok](http://youtube.com/playlist?list=PLlb7e2G7aSpTd91sd82VxWNdtTZ8QnFne) (in russian)  
-  [Igor Kuralenok](http://youtube.com/playlist?list=PLlb7e2G7aSpSWVExpq74FnwFnWgLby56L) (in russian)
+  [Igor Kuralenok](http://youtube.com/playlist?list=PLlb7e2G7aSpSWVExpq74FnwFnWgLby56L) (in russian)  
   [Igor Kuralenok](http://youtube.com/playlist?list=PLlb7e2G7aSpSSsCeUMLN-RxYOLAI9l2ld) (in russian)  
   [Igor Kuralenok](http://lektorium.tv/course/22975) (in russian)  
   [Yandex](http://coursera.org/specializations/machine-learning-data-analysis/) (in russian)  
@@ -153,19 +153,11 @@
 
 #### news and discussions
 
-  <https://jack-clark.net/import-ai/>
-  <https://www.getrevue.co/profile/wildml>
-  <https://reddit.com/r/MachineLearning/>
+  <https://jack-clark.net/import-ai/>  
+  <https://www.getrevue.co/profile/wildml>  
+  <https://deeplearningweekly.com>  
 
-
-#### code
-
-  <https://github.com/josephmisiti/awesome-machine-learning>
-
-
-#### datasets
-
-  <https://github.com/caesar0301/awesome-public-datasets>
+  <https://reddit.com/r/MachineLearning/>  
 
 
 

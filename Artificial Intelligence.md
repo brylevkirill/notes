@@ -794,12 +794,16 @@ interesting papers (see below):
   - <https://vimeo.com/28759091> (Schmidhuber)
 
 
-#### Houthooft, Chen, Duan, Schulman, Turck, Abbeel - ["VIME: Variational Information Maximizing Exploration"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#houthooft-chen-duan-schulman-turck-abbeel---vime-variational-information-maximizing-exploration)
+#### Houthooft, Chen, Duan, Schulman, Turck, Abbeel - ["VIME: Variational Information Maximizing Exploration"](http://arxiv.org/abs/1605.09674)
 >	approximation of [Artificial Curiosity and Creativity](#artificial-curiosity-and-creativity) theory of Juergen Schmidhuber
 
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#houthooft-chen-duan-schulman-turck-abbeel---vime-variational-information-maximizing-exploration>
 
-#### Graves, Bellemare, Menick, Munos, Kavukcuoglu - ["Automated Curriculum Learning for Neural Networks"](#graves-bellemare-menick-munos-kavukcuoglu---automated-curriculum-learning-for-neural-networks)
+
+#### Graves, Bellemare, Menick, Munos, Kavukcuoglu - ["Automated Curriculum Learning for Neural Networks"](https://arxiv.org/abs/1704.03003)
 >	approximation of [Artificial Curiosity and Creativity](#artificial-curiosity-and-creativity) theory of Juergen Schmidhuber
+
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#graves-bellemare-menick-munos-kavukcuoglu---automated-curriculum-learning-for-neural-networks>
 
 
 #### Frank, Leitner, Stollenga, Forster, Schmidhuber - ["Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3881010/pdf/fnbot-07-00025.pdf)

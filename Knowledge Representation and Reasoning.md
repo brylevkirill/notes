@@ -1583,7 +1583,6 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
   - <http://youtube.com/watch?v=LqsUaprYMOw> + <http://youtube.com/watch?v=-jbqiXvmY9w> (exhibition match against team of Jeopardy champions)
   - <http://youtube.com/watch?v=kTXJCEvCDYk> + <https://goo.gl/ZcQB6n> (exhibition match against Ken Jennings)
   - <http://youtube.com/watch?v=c2kGD1EdfFw> (exhibition match against Quiz Bowl champions)
-  - <http://youtube.com/watch?v=bQHo7BApgAU&t=5m48s> (exhibition match against California NASAT team)
   - <http://youtube.com/watch?v=bYFqMINXayc> (exhibition match at HSNCT)
   - <http://youtube.com/watch?v=ZVHR8OAHDlI> (Boyd-Graber, Iyyer)
   - <http://youtube.com/watch?v=ZRYObdTOaEI> (Iyyer)
@@ -1593,6 +1592,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
   - <http://youtu.be/BVbQRrrsJo0?t=34m30s> (Socher)
   - <http://videolectures.net/deeplearning2015_socher_nlp_applications/#t=540> (Socher)
   - <http://youtu.be/9RAo50pVDGI?t=33m20s> (Daume)
+  - <http://youtube.com/watch?v=hqGU-6ZPQzw> + <http://youtube.com/watch?v=OhK5dY_W4Jc> (Boyd-Graber)
   - <http://emnlp2014.org/material/poster-EMNLP2014070.pdf> (technical overview)
   - <https://github.com/Pinafore/qb>
   - <https://github.com/miyyer/qb>
@@ -1600,33 +1600,10 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
   - <https://github.com/jcoreyes/NLQA/tree/master/qanta>
 
 
-#### Weston, Chopra, Bordes - ["Memory Networks"](http://arxiv.org/abs/1410.3916)
->	"We describe a new class of learning models called memory networks. Memory networks reason with inference components combined with a long-term memory component; they learn how to use these jointly. The long-term memory can be read and written to, with the goal of using it for prediction. We investigate these models in the context of question answering where the long-term memory effectively acts as a (dynamic) knowledge base, and the output is a textual response. We evaluate them on a large-scale QA task, and a smaller, but more complex, toy task generated from a simulated world. In the latter, we show the reasoning power of such models by chaining multiple supporting sentences to answer questions that require understanding the intension of verbs."
-
-  - <https://facebook.com/video.php?v=10153098860532200> (demo)
-  - <http://youtube.com/watch?v=Xumy3Yjq4zk> (Weston) + [slides](http://cs224d.stanford.edu/lectures/CS224d-Lecture12.pdf)
-  - <http://techtalks.tv/talks/memory-networks-for-language-understanding/62356/> (Weston)
-  - <http://youtu.be/jRkm6PXRVF8?t=16m29s> (Weston)
-  - <http://blog.acolyer.org/2016/03/10/memory-networks/>
-  - <https://docs.google.com/file/d/0B_hicYJxvbiOT3QyTm4wdHlaeWs>
-  - <https://reddit.com/r/MachineLearning/comments/2xcyrl/i_am_j%C3%BCrgen_schmidhuber_ama/cp4ecce>
-  - <https://github.com/fchollet/keras/blob/master/examples/babi_memnn.py>
+#### Weston, Chopra, Bordes - ["Memory Networks"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#weston-chopra-bordes---memory-networks)
 
 
-#### Sukhbaatar, Szlam, Weston, Fergus - ["End-To-End Memory Networks"](http://arxiv.org/abs/1503.08895)
->	"We introduce a neural network with a recurrent attention model over a possibly large external memory. The architecture is a form of Memory Network but unlike the model in that work, it is trained end-to-end, and hence requires significantly less supervision during training, making it more generally applicable in realistic settings. It can also be seen as an extension of RNNsearch to the case where multiple computational steps (hops) are performed per output symbol. The flexibility of the model allows us to apply it to tasks as diverse as (synthetic) question answering and to language modeling. For the former our approach is competitive with Memory Networks, but with less supervision. For the latter, on the Penn TreeBank and Text8 datasets our approach demonstrates slightly better performance than RNNs and LSTMs. In both cases we show that the key concept of multiple computational hops yields improved results."
-
->	"In this work we showed that a neural network with an explicit memory and a recurrent attention mechanism for reading the memory can be sucessfully trained via backpropagation on diverse tasks from question answering to language modeling. Compared to the Memory Network implementation there is no supervision of supporting facts and so our model can be used in more realistic QA settings. Our model approaches the same performance of that model, and is significantly better than other baselines with the same level of supervision. On language modeling tasks, it slightly outperforms tuned RNNs and LSTMs of comparable complexity. On both tasks we can see that increasing the number of memory hops improves performance. However, there is still much to do. Our model is still unable to exactly match the performance of the memory networks trained with strong supervision, and both fail on several of the QA tasks. Furthermore, smooth lookups may not scale well to the case where a larger memory is required. For these settings, we plan to explore multiscale notions of attention or hashing."
-
-  - <http://research.microsoft.com/apps/video/default.aspx?id=259920> (Sukhbaatar)
-  - <http://youtube.com/watch?v=8keqd1ewsno> (Bordes)
-  - <http://www.shortscience.org/paper?bibtexKey=conf/nips/SukhbaatarSWF15>
-  - <https://github.com/facebook/MemNN>
-  - <https://github.com/vinhkhuc/MemN2N-babi-python>
-  - <https://github.com/fchollet/keras/blob/master/examples/babi_memnn.py>
-  - <https://github.com/domluna/memn2n>
-  - <https://github.com/carpedm20/MemN2N-tensorflow>
-  - <https://github.com/npow/MemNN>
+#### Sukhbaatar, Szlam, Weston, Fergus - ["End-To-End Memory Networks"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#sukhbaatar-szlam-weston-fergus---end-to-end-memory-networks)
 
 
 #### Miller, Fisch, Dodge, Karimi, Bordes, Weston - ["Key-Value Memory Networks for Directly Reading Documents"](https://arxiv.org/abs/1606.03126)
@@ -1646,18 +1623,21 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 
 >	"The supervised paradigm for training machine reading and comprehension models provides a promising avenue for making progress on the path to building full natural language understanding systems. We have demonstrated a methodology for obtaining a large number of document-query-answer triples and shown that recurrent and attention based neural networks provide an effective modelling framework for this task. Our analysis indicates that the Attentive and Impatient Readers are able to propagate and integrate semantic information over long distances. In particular we believe that the incorporation of an attention mechanism is the key contributor to these results. The attention mechanism that we have employed is just one instantiation of a very general idea which can be further exploited. However, the incorporation of world knowledge and multi-document queries will also require the development of attention and embedding mechanisms whose complexity to query does not scale linearly with the data set size. There are still many queries requiring complex inference and long range reference resolution that our models are not yet able to answer. As such our data provides a scalable challenge that should support NLP research into the future. Further, significantly bigger training data sets can be acquired using the techniques we have described, undoubtedly allowing us to train more expressive and accurate models."
 
->	"Summary:
->	 - supervised machine reading is a viable research direction with the available data,
->	 - LSTM based recurrent networks constantly surprise with their ability to encode dependencies in sequences,
->	 - attention is a very effective and flexible modelling technique.
->	Future directions:
->	 - more and better data, corpus querying, and cross document queries,
->	 - recurrent networks incorporating long term and working memory are well suited to NLU task."
+>	"Summary:  
+> - Supervised machine reading is a viable research direction with the available data  
+> - LSTM based recurrent networks constantly surprise with their ability to encode dependencies in sequences  
+> - Attention is a very effective and flexible modelling technique"  
+
+>	"Future directions:  
+> - More and better data, corpus querying, and cross document queries  
+> - Recurrent networks incorporating long term and working memory are well suited to NLU task"  
 
 ----
->	"The model has to be able to detect symbol in the input (answer placeholder in the question) and substitute it with another symbol (word from document).
->	Two strategies for transducing with replacement of answer placeholder symbol with entity symbol: document||query (putting all the information about document into thought vector before knowing the query) or query||document (putting all the information about query before thinking about the answer). The second approach (filtering document after digesting query) works better.
->	We do not tell the model anything about the structure. We don't tell it there are query and document (they are just symbols). We don't tell it there is symbol it has to substitute (it just has to learn them). So there is really long range between variable in query and answer in document (thousands of words). And the problem is more difficult than other transduction problems because of that."
+>	"The model has to be able to detect symbol in the input (answer placeholder in the question) and substitute it with another symbol (word from document)."
+
+>	"Two strategies for transducing with replacement of answer placeholder symbol with entity symbol: document||query (putting all the information about document into thought vector before knowing the query) or query||document (putting all the information about query before thinking about the answer). The second approach (filtering document after digesting query) works better."
+
+>	"We do not tell the model anything about the structure. We don't tell it there are query and document (they are just symbols). We don't tell it there is symbol it has to substitute (it just has to learn them). So there is really long range between variable in query and answer in document (thousands of words). And the problem is more difficult than other transduction problems because of that."
 
   - <http://videolectures.net/deeplearning2015_blunsom_memory_reading/#t=1980> (Blunsom)
   - <http://youtu.be/-WPP9f1P-Xc?t=22m28s> (Blunsom)
@@ -1684,6 +1664,15 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 >	"Since the amount of data is practically unlimited – we could even generate them on the fly resulting in continuous learning similar to the Never-Ending Language Learning by Carnegie Mellon University - it is now the speed of training that determines how much data the model is able to see."
 
 >	"If we move model training from joint CBT NE+CN training data to a subset of the BookTest of the same size (230k examples), we see a drop in accuracy of around 10% on the CBT test datasets. Hence even though the Children’s Book Test and BookTest datasets are almost as close as two disjoint datasets can get, the transfer is still very imperfect. This also suggests that the increase in accuracy when using more data that are strictly in the same domain as the original training data results in a performance increase even larger that the one we are reporting on CBT. However the scenario of having to look for additional data elsewhere is more realistic."
+
+
+#### Choi, Hewlett, Lacoste, Polosukhin, Uszkoreit, Berant - ["Coarse-to-Fine Question Answering for Long Documents"](https://arxiv.org/abs/1611.01839)
+>	"We present a framework for question answering that can efficiently scale to longer documents while maintaining or even improving performance of state-of-the-art models. While most successful approaches for reading comprehension rely on recurrent neural networks, running them over long documents is prohibitively slow because it is difficult to parallelize over sequences. Inspired by how people first skim the document, identify relevant parts, and carefully read these parts to produce an answer, we combine a coarse, fast model for selecting relevant sentences and a more expensive RNN for producing the answer from those sentences. We treat sentence selection as a latent variable trained jointly from the answer only using reinforcement learning. Experiments demonstrate the state of the art performance on a challenging subset of the WIKIREADING dataset and on a new dataset, while speeding up the model by 3.5x-6.7x."
+
+
+#### Watanabe, Dhingra, Salakhutdinov - ["Question Answering from Unstructured Text by Retrieval and Comprehension"](https://arxiv.org/abs/1703.08885)  (extended Attention Sum Reader model)
+>	"Open domain Question Answering systems must interact with external knowledge sources, such as web pages, to find relevant information. Information sources like Wikipedia, however, are not well structured and difficult to utilize in comparison with Knowledge Bases. In this work we present a two-step approach to question answering from unstructured text, consisting of a retrieval step and a comprehension step. For comprehension, we present an RNN based attention model with a novel mixture mechanism for selecting answers from either retrieved articles or a fixed vocabulary. For retrieval we introduce a hand-crafted model and a neural model for ranking relevant articles. We achieve state-of-the-art performance on WIKIMOVIES dataset, reducing the error by 40%. Our experimental results further demonstrate the importance of each of the introduced components."
+  - <https://soundcloud.com/nlp-highlights/13a>
 
 
 #### Berant, Srikumar, Chen, Huang, Manning, Linden, Harding, Clark - ["Modeling Biological Processes for Reading Comprehension"](http://nlp.stanford.edu/pubs/berant-srikumar-manning-emnlp14.pdf)
@@ -1728,12 +1717,16 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
   - <https://github.com/tensorflow/models/tree/master/neural_programmer>
 
 
-#### Rocktaschel, Riedel - ["Learning Knowledge Base Inference with Neural Theorem Provers"](http://akbc.ws/2016/papers/14_Paper.pdf)  (neural reasoning over knowledge base)
->	"In this paper we present a proof-of-concept implementation of Neural Theorem Provers, end-to-end differentiable counterparts of discrete theorem provers that perform first-order inference on vector representations of symbols using function-free, possibly parameterized, rules. As such, NTPs follow a long tradition of neural-symbolic approaches to automated knowledge base inference, but differ in that they are differentiable with respect to representations of symbols in a knowledge base and can thus learn representations of predicates, constants, as well as rules of predefined structure. Furthermore, they still allow us to incorporate domain knowledge provided as rules. The NTP presented here is realized via a differentiable version of the backward chaining algorithm. It operates on substitution representations and is able to learn complex logical dependencies from training facts of small knowledge bases."
+#### Rocktaschel, Riedel - ["End-to-end Differentiable Proving"](https://arxiv.org/abs/1705.11040) (Rocktaschel)  (neural reasoning over knowledge base)
+>	"We introduce neural networks for end-to-end differentiable theorem proving that operate on dense vector representations of symbols. These neural networks are constructed recursively by taking inspiration from the backward chaining algorithm as used in Prolog. Specifically, we replace symbolic unification with a differentiable computation on vector representations of symbols using a radial basis function kernel, thereby combining symbolic reasoning with learning subsymbolic vector representations. By using gradient descent, the resulting neural network can be trained to infer facts from a given incomplete knowledge base. It learns to (i) place representations of similar symbols in close proximity in a vector space, (ii) make use of such similarities to prove facts, (iii) induce logical rules, and (iv) use provided and induced logical rules for complex multi-hop reasoning. We demonstrate that this architecture outperforms ComplEx, a state-of-the-art neural link prediction model, on four benchmark knowledge bases while at the same time inducing interpretable function-free first-order logic rules."
 
->	"Our contributions are threefold: (i) we present the construction of an NTP based on differentiable backward chaining and unification, (ii) we show that when provided with rules this NTP can perform first-order inference in vector space like a discrete theorem prover would do on symbolic representations, and (iii) we demonstrate that NTPs can learn representations of symbols and first-order rules of predefined structure."
+>	"We proposed an end-to-end differentiable prover for automated KB completion that operates on subsymbolic representations. To this end, we used Prolog’s backward chaining algorithm as a recipe for recursively constructing neural networks that can be used to prove facts in a KB. Specifically, we introduced a differentiable unification operation between vector representations of symbols. The constructed neural network allowed us to compute the gradient of proof successes with respect to vector representations of symbols, and thus enabled us to train subsymbolic representations end-to-end from facts in a KB. Furthermore, given templates for unknown rules of predefined structure, we were able to induce first-order logic rules using gradient descent. On benchmark KBs, our model outperformed ComplEx, a state-of-the-art neural link prediction model, while at the same time inducing interpretable rules."
 
->	"We proposed neural theorem provers for knowledge base inference via differentiable backward chaining, which enables learning of symbol representations and parameters of rules of predefined structure. Our current implementation has severe computational limitations and does not scale to larger KBs as it investigates all possible proof paths. However, there are many possibilities to improve upon the presented architecture. For instance, one can batch-unify all rules whose right-hand side have the same structure and employ existing architectures such as Memory Networks or hierarchical attention for this task. Furthermore, it is possible to partition and batch rules not only by their right-hand side but also left-hand side structure to instantiate a single AND module for every partition. To further speed-up the prover, we want to investigate processing batches of queries, as well as differentiable ways of maintaining only the N best instead of all possible substitution representations at every depth of the prover. In addition, we will work on more flexible versions of neural theorem provers, for instance, where unification, rule selection and application itself are trainable functions, or where facts in a KB and goals can be natural language sentences."
+>	"To overcome computational limitations of end-to-end differentiable proving, we want to investigate the use of hierarchical attention and recent reinforcement learning methods such as Monte Carlo tree search that have been used for learning to play Go and chemical synthesis planning. Orthogonal to that, more flexible individual components of end-to-end differentiable provers are conceivable. For instance, unification, rule selection, and rule application could be modeled as parameterized functions, and thus could potentially learn a more optimal behavior from data in a KB. In addition, we plan to support function terms in the future. Lastly, we are interested in applying NTPs to automated proving of mathematical theorems, either in logical or natural language form."
+
+  - <http://aitp-conference.org/2017/slides/Tim_aitp.pdf> (Rocktaschel)
+  - <https://soundcloud.com/nlp-highlights/19a> (Rocktaschel)
+  - [Learning Knowledge Base Inference with Neural Theorem Provers](http://akbc.ws/2016/papers/14_Paper.pdf) by Rocktaschel and Riedel
 
 
 #### Rocktaschel, Grefenstette, Hermann, Kocisky, Blunsom - ["Reasoning about Entailment with Neural Attention"](http://arxiv.org/abs/1509.06664)  (neural reasoning over text)
@@ -1823,6 +1816,10 @@ these knowledge bases are greatly incomplete. For example, over 70% of people in
 >	"We describe Stanford’s two systems in the 2014 KBP Slot Filling competition. The first, and best performing system, is built on top of the DeepDive framework. The central lesson we would like to emphasize from this system is that leveraging large computers allows for completely removing the information retrieval component of a traditional KBP system, and allows for quick turnaround times while processing the entire source corpus as a single unit. DeepDive offers a convenient framework for developing systems on these large computers, including defining the pre-processing pipelines (feature engineering, entity linking, mention detection, etc.) and then defining and training a relation extraction model. The second system Stanford submitted is based around the MIML-RE relation extractor, following closely from the 2013 submission, but with the addition of learned patterns, and with MIML-RE trained fixing carefully selected manually annotated sentences. The central lesson we would like to emphasize from this system is that a relatively small annotation effort (10k sentences) over carefully selected examples can yield a surprisingly large gain in end-to-end performance on the Slot Filling task."
 
 >	"In DeepDive, calibration plots are used to summarize the overall quality of the results. Because DeepDive uses a joint probability model, each random variable is assigned a marginal probability. Ideally, if one takes all the facts to which DeepDive assigns a probability score of 0.95, then 95% of these facts are correct. We believe that probabilities remove a key element: the developer reasons about features, not the algorithms underneath. This is a type of algorithm independence that we believe is critical."
+
+
+#### Levy, Seo, Choi, Zettlemoyer - ["Zero-Shot Relation Extraction via Reading Comprehension"](https://arxiv.org/abs/1706.04115)  (knowledge base population)
+>	"We show that relation extraction can be reduced to answering simple reading comprehension questions, by associating one or more natural-language questions with each relation slot. This reduction has several advantages: we can (1) learn relation extraction models by extending recent neural reading-comprehension techniques, (2) build very large training sets for those models by combining relation-specific crowd-sourced questions with distant supervision, and even (3) do zero-shot learning by extracting new relation types that are only specified at test-time, for which we have no labeled training examples. Experiments on a Wikipedia slot-filling task demonstrate that the approach can generalize to new questions for known relation types with high accuracy, and that zero-shot generalization to unseen relation types is possible, at lower accuracy levels, setting the bar for future work on this task."
 
 
 #### Gupta, Halevy, Wang, Whang, Wu - ["Biperpedia: An Ontology for Search Applications"](http://www.vldb.org/pvldb/vol7/p505-gupta.pdf)  (ontology construction)  # Google Knowledge Vault

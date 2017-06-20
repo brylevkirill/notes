@@ -53,12 +53,17 @@ course by Joe Blitzstein - https://youtube.com/playlist?list=PLCzY7wK5FzzPANgnZq
 
 course by Duke University - https://coursera.org/learn/bayesian/
 
+
+course by Yandex (in russian):
+	https://ru.coursera.org/specializations/machine-learning-data-analysis
+
 course by Mail.ru (in russian):
 	https://youtube.com/playlist?list=PLrCZzMib1e9p5F99rIOzugNgQP5KHHfK8
 
 course by Computer Science Center (in russian):
 	https://compscicenter.ru/courses/math-stat/2015-spring/
 	https://compscicenter.ru/courses/math-stat/2013-spring/
+
 
 seminars in Yandex Academy (in russian) - https://youtube.com/channel/UCeq6ZIlvC9SVsfhfKnSvM9w
 

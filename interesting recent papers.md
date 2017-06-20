@@ -70,8 +70,17 @@ interesting papers:
 >	"RNNs can store an amount of task information which is linear in the number of parameters, and is approximately 5 bits per parameter.  
 >	RNNs can additionally store approximately one real number from their input history per hidden unit."  
 
+[On Large-Batch Training for Deep Learning: Generalization Gap and Sharp Minima](https://arxiv.org/abs/1609.04836)  
+>	"Deep nets generalise better with smaller batch-size when no other form of regularisation is used. And it may be because SGD biases learning towards flat local minima, rather than sharp local minima."  
+  - <http://inference.vc/everything-that-works-works-because-its-bayesian-2/>  
+  - <https://github.com/keskarnitish/large-batch-training>  
+
 [The Marginal Value of Adaptive Gradient Methods in Machine Learning](https://arxiv.org/abs/1705.08292) (Recht)  
->	"Despite the fact that our experimental evidence demonstrates that adaptive methods are not advantageous for machine learning, the Adam algorithm remains incredibly popular. We are not sure exactly as to why, but hope that our step-size tuning suggestions make it easier for practitioners to use standard stochastic gradient methods in their research. In our conversations with other researchers, we have surmised that adaptive gradient methods are particularly popular for training GANs and Q-learning with function approximation. Both of these applications stand out because they are not solving optimization problems. It is possible that the dynamics of Adam are accidentally well matched to these sorts of optimization-free iterative search procedures. It is also possible that carefully tuned stochastic gradient methods may work as well or better in both of these applications."
+>	"Despite the fact that our experimental evidence demonstrates that adaptive methods are not advantageous for machine learning, the Adam algorithm remains incredibly popular. We are not sure exactly as to why, but hope that our step-size tuning suggestions make it easier for practitioners to use standard stochastic gradient methods in their research. In our conversations with other researchers, we have surmised that adaptive gradient methods are particularly popular for training GANs and Q-learning with function approximation. Both of these applications stand out because they are not solving optimization problems. It is possible that the dynamics of Adam are accidentally well matched to these sorts of optimization-free iterative search procedures. It is also possible that carefully tuned stochastic gradient methods may work as well or better in both of these applications."  
+
+[Learning Deep ResNet Blocks Sequentially using Boosting Theory](https://arxiv.org/abs/1706.04964) (Schapire)  
+>	"We construct T weak module classifiers, each contains two of the T layers, such that the combined strong learner is a ResNet."  
+>	"We introduce an alternative Deep ResNet training algorithm, which is particularly suitable in non-differentiable architectures."  
 
 
 
@@ -326,6 +335,9 @@ interesting papers:
 ----
 [Inducing Interpretable Representations with Variational Autoencoders](http://arxiv.org/abs/1611.07492) (Goodman)  
 
+[Learning Disentangled Representations with Semi-Supervised Deep Generative Models](http://arxiv.org/abs/1706.00400)  
+
+----
 [Deep Unsupervised Clustering with Gaussian Mixture Variational Autoencoders](http://arxiv.org/abs/1611.02648) (Arulkumaran)  
   - <http://ruishu.io/2016/12/25/gmvae/>  
 
@@ -764,7 +776,15 @@ interesting papers:
 ---
 ### reasoning
 
+[A Simple Neural Network Module for Relational Reasoning](https://arxiv.org/abs/1706.01427) (DeepMind)  
+  - <https://soundcloud.com/nlp-highlights/20a>
+  - <https://github.com/Alan-Lee123/relation-network>
+
+----
 [Text Understanding with the Attention Sum Reader Network](http://arxiv.org/abs/1603.01547) (IBM Watson)  
+
+[Gated-Attention Readers for Text Comprehension](http://arxiv.org/abs/1606.01549) (Salakhutdinov)  
+  - <https://youtube.com/watch?v=ZSDrM-tuOiA> (Salakhutdinov)  
 
 [Question Answering on Knowledge Bases and Text using Universal Schema and Memory Networks](https://arxiv.org/abs/1704.08384) (McCallum)  
 
@@ -776,9 +796,6 @@ interesting papers:
 [Tracking the World State with Recurrent Entity Networks](https://arxiv.org/abs/1612.03969) (Facebook)  
 >	"There's a bunch of memory slots that each can be used to represent a single entity. The first time an entity appears, it's written to a slot. Every time that something happens in the story that corresponds to a change in the state of an entity, the change in the state of that entity is combined with the entity's previous state via a modified GRU update equation and rewritten to the same slot."  
   - <https://github.com/jimfleming/recurrent-entity-networks>  
-
-[Gated-Attention Readers for Text Comprehension](http://arxiv.org/abs/1606.01549) (Salakhutdinov)  
-  - <https://youtube.com/watch?v=ZSDrM-tuOiA> (Salakhutdinov)  
 
 ----
 [Deep Compositional Question Answering with Neural Module Networks](http://arxiv.org/abs/1511.02799) (Darrell)  
@@ -811,8 +828,11 @@ interesting papers:
 [The More You Know: Using Knowledge Graphs for Image Classification](http://arxiv.org/abs/1612.04844) (Salakhutdinov)  # evolution of Gated Graph Sequence Neural Networks  
 
 ----
-[Learning Knowledge Base Inference with Neural Theorem Provers](http://akbc.ws/2016/papers/14_Paper.pdf) (Rocktaschel)  
+[End-to-end Differentiable Proving](https://arxiv.org/abs/1705.11040) (Rocktaschel)  
+>	"We introduce neural networks for end-to-end differentiable theorem proving that operate on dense vector representations of symbols. These neural networks are constructed recursively by taking inspiration from the backward chaining algorithm as used in Prolog. Specifically, we replace symbolic unification with a differentiable computation on vector representations of symbols using a radial basis function kernel, thereby combining symbolic reasoning with learning subsymbolic vector representations. By using gradient descent, the resulting neural network can be trained to infer facts from a given incomplete knowledge base. It learns to (i) place representations of similar symbols in close proximity in a vector space, (ii) make use of such similarities to prove facts, (iii) induce logical rules, and (iv) use provided and induced logical rules for complex multi-hop reasoning. We demonstrate that this architecture outperforms ComplEx, a state-of-the-art neural link prediction model, on four benchmark knowledge bases while at the same time inducing interpretable function-free first-order logic rules."  
   - <http://aitp-conference.org/2017/slides/Tim_aitp.pdf> (Rocktaschel)  
+  - <https://soundcloud.com/nlp-highlights/19a> (Rocktaschel)  
+  - [Learning Knowledge Base Inference with Neural Theorem Provers](http://akbc.ws/2016/papers/14_Paper.pdf) by Rocktaschel and Riedel  
 
 [TensorLog: A Differentiable Deductive Database](http://arxiv.org/abs/1605.06523) (Cohen)  
   - <https://github.com/TeamCohen/TensorLog>  
@@ -925,11 +945,14 @@ interesting papers:
   - <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FWangBHMMKF16>  
   - <https://github.com/pfnet/chainerrl/blob/master/chainerrl/agents/acer.py>  
 
-[Combining policy gradient and Q-learning](http://arxiv.org/abs/1611.01626) (DeepMind)  
+[Combining policy gradient and Q-learning](http://arxiv.org/abs/1611.01626) (DeepMind)  # PGQ  
 >	"This connection allows us to estimate the Q-values from the action preferences of the policy, to which we apply Q-learning updates."  
 >	"We also establish an equivalency between action-value fitting techniques and actor-critic algorithms, showing that regularized policy gradient techniques can be interpreted as advantage function learning algorithms."  
   - <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FODonoghueMKM16>  
   - <https://github.com/Fritz449/Asynchronous-RL-agent>  
+
+[Interpolated Policy Gradient: Merging On-Policy and Off-Policy Gradient Estimation for Deep Reinforcement Learning](https://arxiv.org/abs/1706.00387) (DeepMind)  
+>	"REINFORCE, TRPO, Q-Prop, DDPG, SVG(0), PGQ, ACER are special limiting cases of IPG"  
 
 [Bridging the Gap Between Value and Policy Reinforcement Learning](http://arxiv.org/abs/1702.08892) (Google Brain)  # PCL  
   - <https://youtu.be/fZNyHoXgV7M?t=1h16m17s> (Norouzi)
@@ -973,7 +996,12 @@ interesting papers:
   - <https://youtube.com/watch?v=jeid0wIrSn4>  
 
 [High-Dimensional Continuous Control Using Generalized Advantage Estimation](http://arxiv.org/abs/1506.02438) (Schulman)  
-  - <https://youtube.com/watch?v=ATvp0Hp7RUI>  
+  - <https://youtu.be/gb5Q2XL5c8A?t=21m2s> + <https://youtube.com/watch?v=ATvp0Hp7RUI> + <https://youtube.com/watch?v=Pvw28wPEWEo> (demo)
+  - <https://youtu.be/xe-z4i3l-iQ?t=30m35s> (Abbeel)
+  - <https://youtu.be/rO7Dx8pSJQw?t=40m20s> (Schulman)
+  - <https://danieltakeshi.github.io/2017/04/02/notes-on-the-generalized-advantage-estimation-paper/>
+  - <https://github.com/joschu/modular_rl>
+  - <https://github.com/rll/deeprlhw2/blob/master/ppo.py>
 
 [Gradient Estimation Using Stochastic Computation Graphs](http://arxiv.org/abs/1506.05254) (Schulman)  
   - <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724> (Abbeel)  
@@ -1262,7 +1290,7 @@ hieves."
 
 [Neural Map: Structured Memory for Deep Reinforcement Learning](https://arxiv.org/abs/1702.08360) (Salakhutdinov)  
 >	size and computational cost doesn't grow with time horizon of environment  
-  - <https://yadi.sk/i/pMdw-_uI3Gke7Z> (Fritsler, in russian)  
+  - <https://yadi.sk/i/pMdw-_uI3Gke7Z> (Shvechikov, in russian)  
 
 [A Growing Long-term Episodic and Semantic Memory](http://arxiv.org/abs/1610.06402)  
 
@@ -1281,11 +1309,15 @@ hieves."
 [Deep Successor Reinforcement Learning](https://arxiv.org/abs/1606.02396)  
   - <https://youtube.com/watch?v=OCHwXxSW70o> (Kulkarni)  
   - <https://youtube.com/watch?v=kNqXCn7K-BM> (Garipov)  
+  - <https://github.com/Ardavans/DSR>  
 
 [Learning to Act by Predicting the Future](https://arxiv.org/pdf/1611.01779)  
 >	"application of deep successor reinforcement learning"  
   - <https://youtube.com/watch?v=947bSUtuSQ0> + <https://youtube.com/watch?v=947bSUtuSQ0> (demo)  
-  - <https://youtube.com/watch?v=Q0ldKJbAwR8> (Dosovitskiy)  
+  - <https://youtube.com/watch?v=Q0ldKJbAwR8> (Dosovitskiy) (in russian)  
+  - <https://yadi.sk/i/pMdw-_uI3Gke7Z> (1:02:03) (Shvechikov) (in russian)  
+  - <https://blog.acolyer.org/2017/05/12/learning-to-act-by-predicting-the-future/>  
+  - <https://github.com/IntelVCL/DirectFuturePrediction>  
 
 [Successor Features for Transfer in Reinforcement Learning](http://arxiv.org/abs/1606.05312) (Silver)  
 
@@ -1362,9 +1394,13 @@ hieves."
 
 [Learning Runtime Parameters in Computer Systems with Delayed Experience Injection](http://arxiv.org/abs/1610.09903)  
 
+[Coarse-to-Fine Question Answering for Long Documents](http://arxiv.org/abs/1611.01839) (Google Research)  
+
 [Improving Information Extraction by Acquiring External Evidence with Reinforcement Learning](http://arxiv.org/abs/1603.07954) (Barzilay)  
   - <https://youtu.be/k5KWUpqMO2U?t=47m37s> (Narasimhan)  
   - <https://github.com/karthikncode/DeepRL-InformationExtraction>  
+
+[Teaching Machines to Describe Images via Natural Language Feedback](https://arxiv.org/abs/1706.00130)  
 
 [Towards Deep Symbolic Reinforcement Learning](http://arxiv.org/abs/1609.05518)  
   - <https://youtube.com/watch?v=HOAVhPy6nrc> (Shanahan)  
@@ -1505,6 +1541,9 @@ hieves."
 
 [Improving Neural Language Models with a Continuous Cache](http://arxiv.org/abs/1612.04426) (Facebook)  # adaptive softmax  
 
+[Learning to Compute Word Embeddings On the Fly](https://arxiv.org/abs/1706.00286)  
+
+----
 [Pointer Sentinel Mixture Models](http://arxiv.org/abs/1609.07843) (MetaMind)  
 >	"The authors combine a standard LSTM softmax with Pointer Networks in a mixture model called Pointer-Sentinel LSTM (PS-LSTM). The pointer networks helps with rare words and long-term dependencies but is unable to refer to words that are not in the input. The opposite is the case for the standard softmax."
 
