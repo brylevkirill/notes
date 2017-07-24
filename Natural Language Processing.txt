@@ -401,9 +401,8 @@ Kumar, Irsoy, Su, Bradbury, English, Pierce, Ondruska, Gulrajani, Socher - "Ask 
 	"The main modeling idea is that you take a question and use it to condition a neural attention mechanism that goes over some text. The text is represented in terms of hidden states of a bidirectional sequence model. Conditioned on the question, that attention mechanism goes over inputs at each time step, and connects them to an episodic memory module. That is, it opens a gate that lets the vector at a time step be fed into the episodic memory. One important aspect for some tasks is that the model goes over the input multiple times. After each time it classifies the memory state by asking "do I know enough to answer the question?" And if not, then it goes over the input again, but conditioned on the question and also the previous memory state. That way it can reason over multiple facts. Once it classifies "yes I know enough", it gives that memory vector to an output sequence model which generates the answer."
 	-- http://yerevann.com/dmn-ui/ (demo)
 	-- http://videolectures.net/deeplearning2015_socher_nlp_applications/#t=2520 (Socher)
-	-- http://www.iro.umontreal.ca/~memisevr/dlss2015/DLSummerSchoolLecture2.pdf
+	-- https://theneuralperspective.com/2016/11/28/ask-me-anything-dynamic-memory-networks-for-natural-language-processing/
 	-- http://yerevann.github.io/2016/02/05/implementing-dynamic-memory-networks/
-	-- https://napsternxg.gitbooks.io/article-reviews/content/ama_socher.html
 	-- https://github.com/swstarlab/DynamicMemoryNetworks
 
 Hu, Ma, Liu, Hovy, Xing - "Harnessing Deep Neural Networks with Logic Rules" [http://arxiv.org/abs/1603.06318]

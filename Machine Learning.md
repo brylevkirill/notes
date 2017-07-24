@@ -6,7 +6,7 @@
   * [theory](#theory)
   * [methods](#methods)
   * [representation learning](#representation-learning)
-  * [inductive programming](#inductive-programming)
+  * [program induction](#program-induction)
   * [automated machine learning](#automated-machine-learning)
   * [interesting quotes](#interesting-quotes)
   * [interesting papers](#interesting-papers)
@@ -41,18 +41,17 @@
 ---
 ### overview
 
-  ["Machine Learning: Trends, Perspectives and Prospects"](https://goo.gl/U8552O) by Jordan and Mitchell
-
-  introduction by Dmitry Vetrov (in russian) - <http://youtube.com/watch?v=srIcbDBAJBo> + <http://youtube.com/watch?v=ftlbxFypW74>  
+  ["Machine Learning Basics"](http://deeplearningbook.org/contents/ml.html) by Ian Goodfellow, Yoshua Bengio, Aaron Courville  
+  ["Machine Learning: Trends, Perspectives and Prospects"](https://goo.gl/U8552O) by Michael I. Jordan and Tom Mitchell  
 
   ["Machine Learning is the new algorithms"](http://nlpers.blogspot.ru/2014/10/machine-learning-is-new-algorithms.html) by Hal Daume  
   ["When is Machine Learning Worth It?"](http://inference.vc/when-is-machine-learning-worth-it/) by Ferenc Huszar  
 
-  <http://bugra.github.io/work/notes/2014-08-23/on-machine-learning/>  
-  <http://thebeautyofml.wordpress.com/2016/04/03/in-a-nutshell-learning/>  
-
-  overview by Dmitry Vetrov (in russian) - <http://youtube.com/watch?v=lkh7bLUc30g>  
-  overview by Igor Kuralenok (in russian) - <http://youtube.com/watch?v=ynS7XvkAdLU&t=12m5s> + <http://youtube.com/watch?v=jiyD0r2SC-g&t=12m55s>  
+  introduction by Dmitry Vetrov (in russian)
+	([first part](http://youtube.com/watch?v=srIcbDBAJBo), [second part](http://youtube.com/watch?v=ftlbxFypW74))  
+  [overview](http://youtube.com/watch?v=lkh7bLUc30g) by Dmitry Vetrov (in russian)  
+  overview by Igor Kuralenok (in russian)
+	([first part](http://youtube.com/watch?v=ynS7XvkAdLU&t=12m5s), [second part](http://youtube.com/watch?v=jiyD0r2SC-g&t=12m55s))  
 
   <http://thetalkingmachines.com/blog/>  (podcasts)
 
@@ -67,7 +66,8 @@
 
   <https://github.com/ujjwalkarn/Machine-Learning-Tutorials>
 
-  <https://github.com/rasbt/python-machine-learning-book> + <https://github.com/rasbt/python-machine-learning-book/tree/master/faq>
+  <https://github.com/rasbt/python-machine-learning-book>  
+  <https://github.com/rasbt/python-machine-learning-book/tree/master/faq>  
 
   [Python notebooks for many algorithms](http://nbtest.herokuapp.com/github/fonnesbeck/Bios366/tree/master/notebooks/)
 
@@ -149,6 +149,7 @@
   <http://argmin.net>  
   <http://blogs.princeton.edu/imabandit>  
   <http://timvieira.github.io/blog/>  
+  <http://theneuralperspective.com>  
 
 
 #### news and discussions
@@ -428,7 +429,7 @@ Bias-variance tradeoff characterizes how robust algorithm is to errors in its mo
 
 
 ---
-### inductive programming
+### program induction
 
   "The essence of programmatic representations is that they are well-specified, compact, combinatorial and hierarchical.  
   - *well-specified*:  Unlike sentences in natural language, programs are unambiguous, although two distinct programs can be precisely equivalent.  
@@ -459,18 +460,26 @@ Bias-variance tradeoff characterizes how robust algorithm is to errors in its mo
 
 ----
 
-  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi) workshop at NIPS 2016 ([videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt))
-
+  <https://en.wikipedia.org/wiki/Inductive_programming>
 
   <http://cacm.acm.org/magazines/2015/11/193326-inductive-programming-meets-the-real-world/fulltext>  
   <http://homes.cs.washington.edu/~bornholt/post/synthesis-for-architects.html>  
 
-  <http://languagengine.co/blog/symbolic-machine-learning/>
+  <http://languagengine.co/blog/symbolic-machine-learning/>  
+  <https://blog.keras.io/the-future-of-deep-learning.html>  
+
+
+  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi) workshop at NIPS 2016
+	([videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt))
+
+  ["Learning to Code: Machine Learning for Program Induction"](https://youtu.be/vzDuVhFMB9Q?t=2m40s) by Alex Gaunt  
+  ["TerpreT: A Probabilistic Programming Language for Program Induction"](https://arxiv.org/abs/1608.04428) by Gaunt et al.  
 
 ----
 
   [Probabilistic Programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
   [selected papers](https://dropbox.com/sh/vrr1gs798zy02n1/AACj7hlXOiRt1nXltXVC-2Wca)  
+  [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#program-induction)  
 
 
 
@@ -526,6 +535,10 @@ problems:
 >	"The goal of D3M is to help overcome the data-science expertise gap by enabling non-experts to construct complex empirical models through automation of large parts of the model-creation process. If successful, researchers using D3M tools will effectively have access to an army of “virtual data scientists”."
 
 >	"The construction of empirical models today is largely a manual process, requiring data experts to translate stochastic elements, such as weather and traffic, into models that engineers and scientists can then ask questions of. We have an urgent need to develop machine-based modeling for users with no data-science background. We believe it’s possible to automate certain aspects of data science, and specifically to have machines learn from prior example how to construct new models."
+
+----
+
+  ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet
 
 ----
 
@@ -683,6 +696,7 @@ interesting papers (see below):
 >	"In the data programming approach to developing a machine learning system, the developer focuses on writing a set of labeling functions, which create a large but noisy training set. Snorkel then learns a generative model of this noise - learning, essentially, which labeling functions are more accurate than others - and uses this to train a discriminative classifier. At a high level, the idea is that developers can focus on writing labeling functions - which are just (Python) functions that provide a label for some subset of data points - and not think about algorithms or features!"
 
   - <https://youtube.com/watch?v=iSQHelJ1xxU>
+  - <https://soundcloud.com/nlp-highlights/28-data-programming-creating-large-training-sets-quickly>
   - <http://hazyresearch.github.io/snorkel/blog/weak_supervision.html>
   - <http://hazyresearch.github.io/snorkel/blog/dp_with_tf_blog_post.html>
   - <https://github.com/HazyResearch/snorkel>

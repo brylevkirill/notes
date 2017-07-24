@@ -492,6 +492,7 @@
   ["Weight Uncertainty in Neural Networks"](#blundell-cornebise-kavukcuoglu-wierstra---weight-uncertainty-in-neural-networks) by Blundell et al.  (training bayesian neural network to predict reward, sampling particular network weights from posterior and choosing action with highest predicted reward)  
   ["Deep Exploration via Bootstrapped DQN"](#osband-blundell-pritzel-van-roy---deep-exploration-via-bootstrapped-dqn) by Osband et al.  (training multiple value function networks with shared bottom layers using bootstrapping, sampling value function network and running episode using it)  
   ["Deep Exploration via Randomized Value Functions"](#osband-russo-wen-van-roy---deep-exploration-via-randomized-value-functions) by Osband et al.  
+  ["Noisy Networks for Exploration"](#fortunato-et-al---noisy-networks-for-exploration) by Fortunato et al.  
   ["Approximate Bayes Optimal Policy Search using Neural Networks"](#castronovo-francois-lavet-fonteneau-ernst-couetoux---approximate-bayes-optimal-policy-search-using-neural-networks) by Castronovo et al.  
   ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](#duan-schulman-chen-bartlett-sutskever-abbeel---rl2-fast-reinforcement-learning-via-slow-reinforcement-learning) by Duan et al.  
   ["Learning to Reinforcement Learn"](#wang-et-al---learning-to-reinforcement-learn) by Wang et al.  
@@ -874,6 +875,9 @@
   Fπ(θ) = E q(a,z|x) [R(a|x)] - α * Dkl[qθ(z|x) || p(z|x)] + α * H[πθ(a|z)]  
 
 
+  ["Modeling Agents with Probabilistic Programs"](http://agentmodels.org) by Evans et al.
+
+
   [AIXI](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#solomonoff-induction-and-aixi) - general bayesian reinforcement learning agent  
   [General Reinforcement Learning Agent Zoo](http://aslanides.io/aixijs/) by John Aslanides
 	([demo](http://aslanides.io/aixijs/demo.html), [code](https://github.com/aslanides/aixijs), [paper](https://arxiv.org/abs/1705.07615))  
@@ -948,6 +952,7 @@
 
 
   Deep Q-Network implementations:  
+  - <https://github.com/openai/baselines>  
   - <https://github.com/khanhptnk/deep-q-tensorflow>  
   - <https://github.com/nivwusquorum/tensorflow-deepq>  
   - <https://github.com/devsisters/DQN-tensorflow>  
@@ -1182,8 +1187,9 @@
   implementations:  
   - <https://github.com/joschu/modular_rl>  
   - <https://github.com/rll/deeprlhw2/blob/master/ppo.py>  
-  - <https://github.com/wojzaremba/trpo>
   - <https://github.com/rllab/rllab/blob/master/rllab/algos/trpo.py>  
+  - <https://github.com/ikostrikov/pytorch-trpo>  
+  - <https://github.com/wojzaremba/trpo>  
   - <https://github.com/kvfrans/parallel-trpo>  
 
 
@@ -1416,6 +1422,7 @@ interesting papers (see below):
   - <http://youtube.com/watch?v=HUmEbUkeQHg> (de Freitas)
   - <http://youtube.com/watch?v=mrgJ53TIcQc> (Pavlov, in russian)
   - <http://cs.stanford.edu/people/karpathy/convnetjs/demo/rldemo.html>
+  - <https://github.com/openai/baselines>
   - <https://github.com/khanhptnk/deep-q-tensorflow>
   - <https://github.com/nivwusquorum/tensorflow-deepq>
   - <https://github.com/devsisters/DQN-tensorflow>
@@ -1706,6 +1713,15 @@ interesting papers (see below):
 >	"One of the most popular recent suggestions has been to use dropout sampling (where individual neurons are independently set to zero with probability p) to “get uncertainty information from these deep learning models for free – without changing a thing”. Unfortunately, as we now show, dropout sampling can be better thought of as an approximation the risk in y, rather than the uncertainty of the learned model. Further, using a fixed dropout rate p, rather than optimizing this variational parameter can lead an arbitrarily bad approximation to the risk."
 
 >	"We extend the analysis to linear functions and argue that this behavior also carries over to deep learning; extensive computational results support this claim. We investigate the importance of risk and uncertainty in sequential decision problems and why this setting is crucially distinct from standard supervised learning tasks. We highlight the dangers of a naive applications of dropout (or any other approximate risk measure) as a proxy for uncertainty. We present analytical regret bounds for algorithms based upon smoothed bootstrapped uncertainty estimates that complement their strong performance in complex nonlinear domains."
+
+
+#### Fortunato et al. - ["Noisy Networks for Exploration"](https://arxiv.org/abs/1706.10295)
+>	"We introduce NoisyNet, a deep reinforcement learning agent with parametric noise added to its weights, and show that the induced stochasticity of the agent’s policy can be used to aid efficient exploration. The parameters of the noise are learned with gradient descent along with the remaining network weights. NoisyNet is straightforward to implement and adds little computational overhead. We find that replacing the conventional exploration heuristics for A3C, DQN and dueling agents (entropy reward and epsilon-greedy respectively) with NoisyNet yields substantially higher scores for a wide range of Atari games, in some cases advancing the agent from sub to super-human performance."
+
+>	"We have presented a general method for exploration in deep reinforcement learning that shows significant performance improvements across many Atari games in three different agent architectures. In particular, we observe that in games such as Asterix and Freeway that the standard DQN and A3C perform poorly compared with the human player, NoisyNet-DQN and NoisyNet-A3C achieve super human performance. Our method eliminates the need for epsilon-greedy and the entropy bonus commonly used in Q-learning-style and policy gradient methods, respectively. Instead we show that better exploration is possible by relying on perturbations in weight space to drive exploration. This is in contrast to many other methods that add intrinsic motivation signals that may destabilise learning or change the optimal policy. Another interesting feature of the NoisyNet approach is that the degree of exploration is contextual and varies from state to state based upon per-weight variances."
+
+  - <https://github.com/Kaixhin/NoisyNet-A3C>
+  - <https://github.com/andrewliao11/NoisyNet-DQN>
 
 
 #### Castronovo, Francois-Lavet, Fonteneau, Ernst, Couetoux - ["Approximate Bayes Optimal Policy Search using Neural Networks"](http://orbi.ulg.ac.be/bitstream/2268/204410/1/ANN-BRL.pdf)
@@ -2405,6 +2421,7 @@ interesting papers (see below):
   - <http://pemami4911.github.io/paper-summaries/2016/08/02/A3C.html>
   - <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FMnihBMGLHSK16>
   - <https://medium.com/@awjuliani/simple-reinforcement-learning-with-tensorflow-part-8-asynchronous-actor-critic-agents-a3c-c88f72a5e9f2>
+  - <https://github.com/ikostrikov/pytorch-a3c>
   - <https://github.com/Zeta36/Asynchronous-Methods-for-Deep-Reinforcement-Learning>
   - <https://github.com/miyosuda/async_deep_reinforce>
   - <https://github.com/muupan/async-rl>
@@ -2433,8 +2450,9 @@ interesting papers (see below):
   - <http://kvfrans.com/what-is-the-natural-gradient-and-where-does-it-appear-in-trust-region-policy-optimization/>
   - <https://github.com/joschu/modular_rl>
   - <https://github.com/rll/deeprlhw2/blob/master/ppo.py>
-  - <https://github.com/wojzaremba/trpo>
   - <https://github.com/rllab/rllab/blob/master/rllab/algos/trpo.py>
+  - <https://github.com/ikostrikov/pytorch-trpo>
+  - <https://github.com/wojzaremba/trpo>
   - <https://github.com/kvfrans/parallel-trpo>
 
 
@@ -2589,6 +2607,7 @@ interesting papers (see below):
   - <https://video.seas.harvard.edu/media/ME+Sergey+Levine+2015+-04-01/1_gqqp9r3o/23375211> (Levine)
   - <http://youtube.com/watch?v=xMHjkZBvnfU> (Abbeel)
   - <http://rll.berkeley.edu/gps/> + <http://rll.berkeley.edu/gps/faq.html>
+  - <https://github.com/cbfinn/gps>
   - <https://github.com/nivwusquorum/guided-policy-search/>
 
 

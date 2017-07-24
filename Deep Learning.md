@@ -14,7 +14,7 @@
   * [architectures](#architectures)
     - [compute and memory](#architectures---compute-and-memory)
     - [attention](#architectures---attention)
-    - [distributed representations](#distributed-representations)
+    - [distributed representations](#architectures---distributed-representations)
   * [interesting quotes](#interesting-quotes)
     - [architectures](#interesting-quotes---architectures)
     - [representation](#interesting-quotes---representation)
@@ -46,10 +46,12 @@
 
   [overview](http://goo.gl/gvkiaR) by Yann LeCun, Yoshua Bengio, Geoffrey Hinton  
 
-  <http://deeplearningbook.org/contents/intro.html>  (Ian Goodfellow, Yoshua Bengio, Aaron Courville)
+  <http://deeplearningbook.org/contents/intro.html>  (Ian Goodfellow, Yoshua Bengio, Aaron Courville)  
   <http://neuralnetworksanddeeplearning.com>  (Michael Nielsen)  
   <http://metacademy.org/roadmaps/rgrosse/deep_learning>  (Roger Grosse)  
   <http://yyue.blogspot.ru/2015/01/a-brief-overview-of-deep-learning.html>  (Ilya Sutskever)  
+  <http://blog.keras.io/the-limitations-of-deep-learning.html>  (Francois Chollet)  
+  <http://blog.keras.io/the-future-of-deep-learning.html>  (Francois Chollet)  
 
 
   - Juergen Schmidhuber  
@@ -100,6 +102,7 @@
 #### books
 
   Ian Goodfellow, Yoshua Bengio, Aaron Courville - ["Deep Learning"](http://www.deeplearningbook.org) ([pdf](https://vk.com/doc39735126_437404212))  
+  Francois Chollet - ["Deep Learning with Python"](https://manning.com/books/deep-learning-with-python)  
 
 
 #### monographies
@@ -232,6 +235,7 @@
 
   [calculus on computational graphs: backpropagation](http://colah.github.io/posts/2015-08-Backprop/)  
   [calculus and backpropagation](https://github.com/mtomassoli/papers/blob/master/backprop.pdf)  
+  [gradients and normalization](https://theneuralperspective.com/2016/10/27/gradient-topics/)  
 
   [gradient descent optimization](http://mrtz.org/blog/the-zen-of-gradient-descent/)  
   [gradient descent algorithms](http://sebastianruder.com/optimizing-gradient-descent/)  
@@ -660,10 +664,9 @@
 
   "All the theory says GANs should be great at the Nash equilibrium, but gradient descent is only guaranteed to get to the Nash equilibrium in the convex case. When both players are represented by neural nets, it’s possible for them to keep adapting their strategies forever without actually arriving at the equilibrium."
 
- "
-  - How do you address the fact that the minimax game between the generator and discriminator may never approach an equilibrium? In other words, how do you build a system using GANs so that you know that it will converge to a good solution?  
-  - Even if they do converge, current systems still have issues with global structure: they cannot count (e.g. the number of eyes on a dog) and frequently get long-range connections wrong (e.g. they show multiple perspectives as part of the same image).  
-  - How can we use GANs in discrete settings, such as for generating text?"  
+  - "How do you address the fact that the minimax game between the generator and discriminator may never approach an equilibrium? In other words, how do you build a system using GANs so that you know that it will converge to a good solution?"  
+  - "Even if they do converge, current systems still have issues with global structure: they cannot count (e.g. the number of eyes on a dog) and frequently get long-range connections wrong (e.g. they show multiple perspectives as part of the same image)."  
+  - "How can we use GANs in discrete settings, such as for generating text?"  
 
 ----
 
@@ -751,7 +754,7 @@
 
 ----
 
-  stochastic backpropagation with reparametrization trick
+  stochastic backpropagation with reparametrization trick:
 
   <http://blog.shakirm.com/2015/10/machine-learning-trick-of-the-day-4-reparameterisation-tricks/>
 
@@ -869,7 +872,7 @@ examples:
 ---
 ### architectures
 
-  ["The Neural Network Zoo"](http://asimovinstitute.org/neural-network-zoo/) (chart of architectures)
+  ["The Neural Network Zoo"](http://asimovinstitute.org/neural-network-zoo/)
 
 ----
 
@@ -1174,9 +1177,6 @@ open questions:
 
   ----
   #### interesting quotes - architectures
-
-  Peter Norvig:
-  > "I never thought that “neural networks” was a useful category. We want to train some function to set parameters to minimize an expected loss function, and whether the function you are training is called a “neural network” or not just seems like an unimportant detail. The fact that they are “semi-parametric” - they have a very large number of parameters, but do not rely on keeping all data points around - is certainly important, and I think the semi-parametric space is a very important one. As for deep learning, it is certainly also extremely important to be able to create representations at multiple levels, even when the intermediate levels are not accessible in the data. The current work called “deep learning” has an approach for dealing with this issue, but it is not the only possible approach."
 
   Juergen Schmidhuber:
   > "A search for solution-computing, perturbation-resistant, low-complexity neural networks describable by few bits of information can reduce overfitting and improve learning, including reinforcement learning in the case of partially observable environments. Deep learning often create hierarchies of more and more abstract representations of stationary data, sequential data or reinforcement learning policies. Unlike these systems, humans learn to actively perceive patterns by sequentially directing attention to relevant parts of the available data. Near future deep NNs will do so, too, extending previous work on neural networks that learn selective attention through reinforcement learning of (a) motor actions such as saccade control and (b) internal actions controlling spotlights of attention within RNNs, thus closing the general sensorimotor loop through both external and internal feedback. Many future deep neural networks will also take into account that it costs energy to activate neurons, and to send signals between them. Brains seem to minimize such computational costs during problem solving in at least two ways: (1) At a given time, only a small fraction of all neurons is active because local competition through winner-take-all mechanisms shuts down many neighbouring neurons, and only winners can activate other neurons through outgoing connections. (2) Numerous neurons are sparsely connected in a compact 3D volume by many short-range and few long-range connections (much like microchips in traditional supercomputers). Often neighbouring neurons are allocated to solve a single task, thus reducing communication costs. Physics seems to dictate that any efficient computational hardware will in the future also have to be brain-like in keeping with these two constraints. The most successful current deep recurrent neural networks, however, are not. Unlike certain spiking neural networks, they usually activate all units at least slightly, and tend to be strongly connected, ignoring natural constraints of 3D hardware. It should be possible to improve them by adopting (1) and (2), and by minimizing non-differentiable energy and communication costs through direct search in program (weight) space. These more brain-like RNNs will allocate neighboring RNN parts to related behaviors, and distant RNN parts to less related ones, thus self-modularizing in a way more general than that of traditional self-organizing maps in feedforward neural networks. They will also implement Occam’s razor as a by-product of energy minimization, by finding simple (highly generalizing) problem solutions that require few active neurons and few, mostly short connections. The more distant future may belong to general purpose learning algorithms that improve themselves in provably optimal ways, but these are not yet practical or commercially relevant."
@@ -1524,6 +1524,7 @@ interesting papers (see below):
 
 >	"The general result is that networks go through two phases of learning. In retrospect, this is kind of obvious to anyone that's trained neural networks in practice. There is typically a short phase where it makes rapid progress, followed by a much longer phase of "fine tuning". The real contribution of this paper is showing that these stages correspond to a phase change in how the mutual information of the encoder/decoder distributions of each layer change. The first stage is when each layer is learning to do its fair share of information preservation. During this stage, mutual information between each layer's representation and the input/output increases to the point that the network's representation in the information plane is more or less linear. All this means is that information loss/gain from layer to layer is approximately constant, so in a sense no layer is doing more work than others. The second phase consists of continuing to maximizing the mutual information between each layer and the output, but now at the expense of the mutual information between each layer and the input. This is in contrast to the first stage where both quantities were being maximized in. In other words, each layer is now learning to prioritize information that is important for the task at hand."
 
+  - <https://theneuralperspective.com/2017/03/24/opening-the-black-box-of-deep-neural-networks-via-information/>
   - <https://reddit.com/r/MachineLearning/comments/60fhyb/r_opening_the_black_box_of_deep_neural_networks/df8jsbm/>
 
 
@@ -1892,6 +1893,7 @@ interesting papers (see below):
 
   - <http://people.idsia.ch/~rupesh/very_deep_learning/>
   - <http://research.microsoft.com/apps/video/default.aspx?id=259633> (9:00) (Srivastava)
+  - <https://theneuralperspective.com/2016/12/13/highway-networks/>
   - <https://medium.com/jim-fleming/highway-networks-with-tensorflow-1e6dfa667daa>
   - <https://github.com/LeavesBreathe/tensorflow_with_latest_papers/blob/master/highway_network_modern.py>
   - <https://github.com/Lasagne/Lasagne/blob/highway_example/examples/Highway%20Networks.ipynb>
@@ -2009,7 +2011,9 @@ interesting papers (see below):
 
   - <http://youtube.com/watch?v=yS7rHi_lUGU> (triangulation task demo)
   - <http://youtu.be/9U0drwafE78?t=44m30s> (Vinyals)
+  - <http://fastml.com/introduction-to-pointer-networks/>
   - <https://medium.com/@sharaf/a-paper-a-day-11-pointer-networks-59f7af1a611c>
+  - <https://github.com/ikostrikov/TensorFlow-Pointer-Networks>
   - <https://github.com/devsisters/pointer-network-tensorflow>
   - <https://github.com/vshallc/PtrNets>
 
@@ -2291,7 +2295,7 @@ interesting papers (see below):
 
 >	"Why are NTM so deep? At each step ("clock tick") the NTM can modify only one element in its memory. It takes many clock ticks to create a large structure in memory. Requires massive back propagation."
 
->	(learns to add and multiply long binary numbers)
+>	(learns to add and multiply long binary numbers without errors)
 
   - <https://youtube.com/watch?v=LzC8NkTZAF4> (demo)
   - <https://youtube.com/watch?v=hVv4M0bTBJc> (Sutskever)
@@ -2343,9 +2347,11 @@ interesting papers (see below):
 
 >	"Authors propose a neural programmer by defining a set of symbolic operations (e.g., argmax, greater than); at each step, all possible execution results are fused by a softmax layer, which predicts the probability of each operator at the current step. The step-by-step fusion is accomplished by weighted sum and the model is trained with mean square error. Hence, such approaches work with numeric tables, but may not be suited for other operations like string matching; it also suffers from the problem of “exponential numbers of combinatorial states.”"
 
+  - <http://youtu.be/lc68_d_DnYs?t=24m44s> (Neelakantan)
   - <http://youtu.be/KmOdBS4BXZ0?t=1h8m44s> (Le)
   - <http://distill.pub/2016/augmented-rnns/>
   - <https://github.com/tensorflow/models/tree/master/neural_programmer>
+  - ["Learning a Natural Language Interface with Neural Programmer"](http://arxiv.org/abs/1611.08945)
 
 
 #### Reed, de Freitas - ["Neural Programmer-Interpreters"](http://arxiv.org/abs/1511.06279)
@@ -2455,9 +2461,11 @@ interesting papers (see below):
 
   - <https://youtu.be/SAcHyzMdbXc?t=10m24s> (de Freitas)
   - <https://youtu.be/x1kf4Zojtb0?t=1h4m53s> (de Freitas)
+  - <https://theneuralperspective.com/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>
   - <https://blog.acolyer.org/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>
   - <https://hackernoon.com/learning-to-learn-by-gradient-descent-by-gradient-descent-4da2273d64f2>
   - <https://github.com/deepmind/learning-to-learn>
+  - <https://github.com/ikostrikov/pytorch-meta-optimizer>
 
 
 
@@ -2667,6 +2675,7 @@ interesting papers (see below):
   - <http://github.com/tensorflow/magenta/blob/master/magenta/reviews/draw.md> (Cooijmans)
   - <http://blog.evjang.com/2016/06/understanding-and-implementing.html>
   - <http://kvfrans.com/what-is-draw-deep-recurrent-attentive-writer/>
+  - <https://github.com/ikostrikov/TensorFlow-VAE-GAN-DRAW/blob/master/main-draw.py>
   - <https://github.com/ericjang/draw>
   - <https://github.com/vivanov879/draw>
   - <https://github.com/jbornschein/draw>
@@ -2887,6 +2896,9 @@ interesting papers (see below):
 	We show experimentally that the use of general normalizing flows systematically outperforms other competing approaches for posterior approximation."
 
 >	"In this work we developed a simple approach for learning highly non-Gaussian posterior densities by learning transformations of simple densities to more complex ones through a normalizing flow. When combined with an amortized approach for variational inference using inference networks and efficient Monte Carlo gradient estimation, we are able to show clear improvements over simple approximations on different problems. Using this view of normalizing flows, we are able to provide a unified perspective of other closely related methods for flexible posterior estimation that points to a wide spectrum of approaches for designing more powerful posterior approximations with different statistical and computational tradeoffs. An important conclusion from the discussion in section 3 is that there exist classes of normalizing flows that allow us to create extremely rich posterior approximations for variational inference. With normalizing flows, we are able to show that in the asymptotic regime, the space of solutions is rich enough to contain the true posterior distribution. If we combine this with the local convergence and consistency results for maximum likelihood parameter estimation in certain classes of latent variables models, we see that we are now able overcome the objections to using variational inference as a competitive and default approach for statistical inference. Making such statements rigorous is an important line of future research. Normalizing flows allow us to control the complexity of the posterior at run-time by simply increasing the flow length of the sequence. The approach we presented considered normalizing flows based on simple transformations of the form (10) and (14). These are just two of the many maps that can be used, and alternative transforms can be designed for posterior approximations that may require other constraints, e.g., a restricted support. An important avenue of future research lies in describing the classes of transformations that allow for different characteristics of the posterior and that still allow for efficient, linear-time computation."
+
+  - <https://ferrine.github.io/blog/2017/07/11/normalizing-flows-overview/>
+  - <https://github.com/pymc-devs/pymc3/blob/master/pymc3/variational/flows.py>
 
 
 #### Mescheder, Nowozin, Geiger - ["Adversarial Variational Bayes: Unifying Variational Autoencoders and Generative Adversarial Networks"](https://arxiv.org/abs/1701.04722)

@@ -109,9 +109,9 @@
   ["A 'Brief' History of Game AI Up To AlphaGo"](http://andreykurenkov.com/writing/a-brief-history-of-game-ai/)  
   ["AI for classic games"](http://youtube.com/watch?v=kZ_AUmFcZtk) by David Silver  
 
-  ["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](https://arxiv.org/abs/1701.01724) by Michael Bowling and others  
-  ["Mastering the Game of Go with Deep Neural Networks and Tree Search"](https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf) by David Silver and others  
-  ["Giraffe: Using Deep Reinforcement Learning to Play Chess"](http://arxiv.org/abs/1509.01549) by Matthew Lai  
+  ["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#moravcik-et-al---deepstack-expert-level-artificial-intelligence-in-no-limit-poker) by Michael Bowling and others  
+  ["Mastering the Game of Go with Deep Neural Networks and Tree Search"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#silver-et-al---mastering-the-game-of-go-with-deep-neural-networks-and-tree-search) by David Silver and others  
+  ["Giraffe: Using Deep Reinforcement Learning to Play Chess"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#lai---giraffe-using-deep-reinforcement-learning-to-play-chess) by Matthew Lai  
 
   [games](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games)  
 
