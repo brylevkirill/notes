@@ -188,6 +188,7 @@
   - <http://youtube.com/watch?v=xMHjkZBvnfU>  
 
   overview by Sergey Levine:  
+  - <https://youtube.com/watch?v=jtjW5Pye_44>  
   - <http://videolectures.net/iclr2016_levine_deep_learning/>  
   - <https://youtube.com/watch?v=f41JXf-ojrM>  
   - <https://youtube.com/watch?v=EtMyH_--vnU>  
@@ -465,9 +466,8 @@
 
   [overview](http://youtube.com/watch?v=SfCa1HQMkuw) by John Schulman  
   [overview](http://youtube.com/watch?v=sGuiWX07sKw) by David Silver  
+  [overview](http://youtu.be/fIKkhoI1kF4?t=19m23s) by Emma Brunskill  
   [overview](http://youtube.com/watch?v=WCE9hhPbCmc) by Maxim Kretov (in russian)  
-
-  [interesting papers](#interesting-papers---exploration-and-intrinsic-motivation)
 
 ----
 
@@ -488,6 +488,7 @@
   ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](#guez-silver-dayan---efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search) by Guez et al.  
   ["Learning to Optimize Via Posterior Sampling"](#russo-van-roy---learning-to-optimize-via-posterior-sampling) by Russo and van Roy  
   ["Why is Posterior Sampling Better than Optimism for Reinforcement Learning?"](#osband-van-roy---why-is-posterior-sampling-better-than-optimism-for-reinforcement-learning) by Osband and van Roy  
+  ["A Tutorial on Thompson Sampling"](https://arxiv.org/abs/1707.02038) by Russo et al.  
   ["Nonparametric General Reinforcement Learning"](#leike---nonparametric-general-reinforcement-learning) by Leike  (estimating reward by sampling environment model from posterior distribution and running episode using it)  
   ["Weight Uncertainty in Neural Networks"](#blundell-cornebise-kavukcuoglu-wierstra---weight-uncertainty-in-neural-networks) by Blundell et al.  (training bayesian neural network to predict reward, sampling particular network weights from posterior and choosing action with highest predicted reward)  
   ["Deep Exploration via Bootstrapped DQN"](#osband-blundell-pritzel-van-roy---deep-exploration-via-bootstrapped-dqn) by Osband et al.  (training multiple value function networks with shared bottom layers using bootstrapping, sampling value function network and running episode using it)  
@@ -530,7 +531,6 @@
 	["Empowerment - An Introduction"](#salge-glackin-polani---empowerment---an-introduction) by Salge et al.  
 	["Variational Information Maximisation for Intrinsically Motivated Reinforcement Learning"](#mohamed-rezende---variational-information-maximisation-for-intrinsically-motivated-reinforcement-learning) by Mohamed and Rezende  
 	["Variational Intrinsic Control"](#gregor-rezende-wierstra---variational-intrinsic-control) by Gregor et al.  (the primary goal is not to understand or predict the observations but to control the environment - agents can often control an environment perfectly well without much understanding, and focusing on understanding might significantly distract and impair the agent, as such reducing the control it achieves)  
-	["Stochastic Neural Networks for Hierarchical Reinforcement Learning"](#florensa-duan-abbeel---stochastic-neural-networks-for-hierarchical-reinforcement-learning) by Florensa et al.  
 
 
 **predictive models**:  
@@ -579,6 +579,11 @@
 ----
 
   (Ian Osband) "In sequential decision problems there is an important distinction between risk and uncertainty. We identify risk as inherent stochasticity in a model and uncertainty as the confusion over which model parameters apply. For example, a coin may have a fixed p = 0.5 of heads and so the outcome of any single flip holds some risk; a learning agent may also be uncertain of p. The demarcation between risk and uncertainty is tied to the specific model class, in this case a Bernoulli random variable; with a more detailed model of flip dynamics even the outcome of a coin may not be risky at all. Our distinction is that unlike risk, uncertainty captures the variability of an agent’s posterior belief which can be resolved through statistical analysis of the appropriate data. For a learning agent looking to maximize cumulative utility through time, this distinction represents a crucial dichotomy. Consider the reinforcement learning problem of an agent interacting with its environment while trying to maximize cumulative utility through time. At each timestep, the agent faces a fundamental tradeoff: by exploring uncertain states and actions the agent can learn to improve its future performance, but it may attain better short-run performance by exploiting its existing knowledge. At a high level this effect means uncertain states are more attractive since they can provide important information to the agent going forward. On the other hand, states and action with high risk are actually less attractive for an agent in both exploration and exploitation. For exploitation, any concave utility will naturally penalize risk. For exploration, risk also makes any single observation less informative. Although colloquially similar, risk and uncertainty can require radically different treatment."
+
+----
+
+  [interesting papers](#interesting-papers---exploration-and-intrinsic-motivation)  
+  [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
 
 
 
@@ -816,11 +821,6 @@
   - representational mismatch trajectory distribution vs neural net -> constrained guided policy search  
 
 
-  implementations:  
-  - <http://rll.berkeley.edu/gps/>  
-  - <https://github.com/cbfinn/gps>  
-  - <https://github.com/nivwusquorum/guided-policy-search/>  
-
   [interesting papers](#interesting-papers---behavioral-cloning)
 
 
@@ -949,18 +949,6 @@
 
 
   [overview](https://yadi.sk/i/EeUeheri3FT3ra) of Deep Q-Network implementation by Oleg Vasilev and Fedor Ratnikov (in russian)  
-
-
-  Deep Q-Network implementations:  
-  - <https://github.com/openai/baselines>  
-  - <https://github.com/khanhptnk/deep-q-tensorflow>  
-  - <https://github.com/nivwusquorum/tensorflow-deepq>  
-  - <https://github.com/devsisters/DQN-tensorflow>  
-  - <https://github.com/carpedm20/deep-rl-tensorflow>  
-  - <https://github.com/VinF/deer>  
-  - <https://github.com/osh/kerlym>  
-  - <https://github.com/Jabberwockyll/deep_rl_ale>  
-  - <https://github.com/DanielTakeshi/rl_algorithms/blob/master/dqn/dqn.py>  
 
 
 
@@ -1114,14 +1102,6 @@
   ["Stochastic Gradient Estimation with Finite Differences"](http://approximateinference.org/accepted/BuesingEtAl2016.pdf) by Buesing, Weber, Mohamed  
 
 
-  implementations:  
-  - <https://github.com/openai/evolution-strategies-starter>  
-  - <https://github.com/atgambardella/pytorch-es>  
-  - <https://github.com/mdibaiee/flappy-es>  
-  - <https://gist.github.com/kashif/5748e199a3bec164a867c9b654e5ffe5>  
-  - <https://github.com/DanielTakeshi/rl_algorithms/blob/master/es/basic_es.py>  
-
-
 
 ----
 #### REINFORCE
@@ -1140,15 +1120,6 @@
   [derivations](http://www.alexirpan.com/rl-derivations/#reinforce) by Alex Irpan
 
   [overview of implementation](https://yadi.sk/i/8f9NX_E73GKBkT) by Fedor Ratnikov (in russian)
-
-
-  implementations:  
-  - <https://gist.github.com/karpathy/a4166c7fe253700972fcbc77e4ea32c5>  
-  - <https://github.com/kvfrans/openai-cartpole/blob/master/cartpole-policygradient.py> + <http://kvfrans.com/simple-algoritms-for-solving-cartpole/>  
-  - <https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/bayesflow/examples/reinforce_simple/reinforce_simple_example.py>  
-  - <https://github.com/osh/kerlym/blob/master/kerlym/pg.py>  
-  - <https://github.com/rllab/rllab/blob/master/rllab/algos/vpg.py>  
-  - <https://github.com/DanielTakeshi/rl_algorithms/tree/master/vpg>  
 
 
 
@@ -1182,15 +1153,6 @@
 
   [explanation](http://kvfrans.com/what-is-the-natural-gradient-and-where-does-it-appear-in-trust-region-policy-optimization/) of natural gradient in TRPO by Kevin Frans  
   [derivations](http://www.alexirpan.com/rl-derivations/#natural-policy-gradient) by Alex Irpan  
-
-
-  implementations:  
-  - <https://github.com/joschu/modular_rl>  
-  - <https://github.com/rll/deeprlhw2/blob/master/ppo.py>  
-  - <https://github.com/rllab/rllab/blob/master/rllab/algos/trpo.py>  
-  - <https://github.com/ikostrikov/pytorch-trpo>  
-  - <https://github.com/wojzaremba/trpo>  
-  - <https://github.com/kvfrans/parallel-trpo>  
 
 
 
@@ -1231,11 +1193,6 @@
   <https://danieltakeshi.github.io/2017/04/02/notes-on-the-generalized-advantage-estimation-paper/>
 
 
-  implementations:  
-  - <https://github.com/joschu/modular_rl>  
-  - <https://github.com/rll/deeprlhw2/blob/master/ppo.py>  
-
-
 ----
 #### Asynchronous Advantage Actor-Critic (A3C)
 
@@ -1250,18 +1207,6 @@
 
   [overview](https://youtube.com/watch?v=9sx1_u2qVhQ) by Andriy Mnih  
   [overview](http://techtalks.tv/talks/asynchronous-methods-for-deep-reinforcement-learning/62475/) by Andriy Mnih  
-
-
-  implementations:  
-  - <https://github.com/awjuliani/DeepRL-Agents/blob/master/A3C-Doom.ipynb>  
-  - <https://github.com/yandexdataschool/AgentNet/blob/master/agentnet/learning/a2c_n_step.py>  
-  - <https://github.com/Zeta36/Asynchronous-Methods-for-Deep-Reinforcement-Learning>  
-  - <https://github.com/miyosuda/async_deep_reinforce>  
-  - <https://github.com/muupan/async-rl>  
-  - <https://github.com/coreylynch/async-rl>  
-  - <https://github.com/carpedm20/deep-rl-tensorflow/blob/master/agents/async.py>  
-  - <https://github.com/ikostrikov/pytorch-a3c>  
-  - <https://github.com/danijar/mindpark/blob/master/mindpark/algorithm/a3c.py>  
 
 
 
@@ -1303,15 +1248,6 @@
   [overview](https://youtu.be/mrgJ53TIcQc?t=1h3m2s) by Alexey Seleznev (in russian)  
 
 
-  implementations:  
-  - <https://yanpanlau.github.io/2016/10/11/Torcs-Keras.html>  
-  - <http://pemami4911.github.io/blog_posts/2016/08/21/ddpg-rl.html>  
-  - <https://github.com/matthiasplappert/keras-rl/blob/master/rl/agents/ddpg.py>  
-  - <https://github.com/rllab/rllab/blob/master/rllab/algos/ddpg.py>  
-  - <https://github.com/yandexdataschool/AgentNet/blob/master/agentnet/learning/dpg_n_step.py>  
-  - <https://github.com/MOCR/DDPG>  
-
-
 ----
 #### Stochastic Value Gradient (SVG)
 
@@ -1337,9 +1273,6 @@
 [selected papers and books](https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va)
 
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md)
-
-
 interesting papers (see below):  
   - [applications](#interesting-papers---applications)  
   - [exploration and intrinsic motivation](#interesting-papers---exploration-and-intrinsic-motivation)  
@@ -1349,6 +1282,17 @@ interesting papers (see below):
   - [policy-based methods](#interesting-papers---policy-based-methods)  
   - [behavioral cloning](#interesting-papers---behavioral-cloning)  
   - [inverse reinforcement learning](#interesting-papers---inverse-reinforcement-learning)  
+
+
+interesting recent papers:  
+  - [algorithms](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---algorithms)  
+  - [exploration and intrinsic motivation](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
+  - [abstractions for states and actions](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---abstractions-for-states-and-actions)  
+  - [simulation and planning](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---simulation-and-planning)  
+  - [memory](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---memory)  
+  - [transfer](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---transfer)  
+  - [imitation](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---imitation)  
+  - [applications](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---applications)  
 
 
 
@@ -1422,7 +1366,7 @@ interesting papers (see below):
   - <http://youtube.com/watch?v=HUmEbUkeQHg> (de Freitas)
   - <http://youtube.com/watch?v=mrgJ53TIcQc> (Pavlov, in russian)
   - <http://cs.stanford.edu/people/karpathy/convnetjs/demo/rldemo.html>
-  - <https://github.com/openai/baselines>
+  - <https://github.com/openai/baselines/tree/master/baselines/deepq>
   - <https://github.com/khanhptnk/deep-q-tensorflow>
   - <https://github.com/nivwusquorum/tensorflow-deepq>
   - <https://github.com/devsisters/DQN-tensorflow>
@@ -1620,6 +1564,10 @@ interesting papers (see below):
 
   - <http://videolectures.net/rldm2015_van_roy_function_randomization/> (van Roy)
   - <https://youtube.com/watch?v=ck4GixLs4ZQ> (Osband) + [slides](https://docs.google.com/presentation/d/1lis0yBGT-uIXnAsi0vlP3SuWD2svMErJWy_LYtfzMOA/)
+
+
+#### Russo, van Roy, Kazerouni, Osband, Wen - ["A Tutorial on Thompson Sampling"](https://arxiv.org/abs/1707.02038)
+>	"Thompson sampling is an algorithm for online decision problems where actions are taken sequentially in a manner that must balance between exploiting what is known to maximize immediate performance and investing to accumulate new information that may improve future performance. The algorithm addresses a broad range of problems in a computationally efficient manner and is therefore enjoying wide use. This tutorial covers the algorithm and its application, illustrating concepts through a range of examples, including Bernoulli bandit problems, shortest path problems, dynamic pricing, recommendation, active learning with neural networks, and reinforcement learning in Markov decision processes. Most of these problems involve complex information structures, where information revealed by taking an action informs beliefs about other actions. We will also discuss when and why Thompson sampling is or is not effective and relations to alternative algorithms."
 
 
 #### Leike - ["Nonparametric General Reinforcement Learning"](https://jan.leike.name/publications/Nonparametric%20General%20Reinforcement%20Learning%20-%20Leike%202016.pdf)
@@ -1928,13 +1876,6 @@ interesting papers (see below):
 >	"Let us compare this to the commonly used intrinsic motivation objective of maximizing the amount of model-learning progress, measured as the difference in compression of its experience before and after learning (Schmidhuber, 1991; 2010; Bellemare et al., 2016; Houthooft et al., 2016). The empowerment objective differs from this in a fundamental manner: the primary goal is not to understand or predict the observations but to control the environment. This is an important point – agents can often control an environment perfectly well without much understanding, as exemplified by canonical model-free reinforcement learning algorithms, where agents only model action-conditioned expected returns. Focusing on such understanding might significantly distract and impair the agent, as such reducing the control it achieves."
 
 
-#### Florensa, Duan, Abbeel - ["Stochastic Neural Networks for Hierarchical Reinforcement Learning"](https://arxiv.org/abs/1704.03012)
->	"Deep reinforcement learning has achieved many impressive results in recent years. However, tasks with sparse rewards or long horizons continue to pose significant challenges. To tackle these important problems, we propose a general framework that first learns useful skills in a pre-training environment, and then leverages the acquired skills for learning faster in downstream tasks. Our approach brings together some of the strengths of intrinsic motivation and hierarchical methods: the learning of useful skill is guided by a single proxy reward, the design of which requires very minimal domain knowledge about the downstream tasks. Then a high-level policy is trained on top of these skills, providing a significant improvement of the exploration and allowing to tackle sparse rewards in the downstream tasks. To efficiently pre-train a large span of skills, we use Stochastic Neural Networks combined with an information-theoretic regularizer. Our experiments show that this combination is effective in learning a wide span of interpretable skills in a sample-efficient way, and can significantly boost the learning performance uniformly across a wide range of downstream tasks."
-
-  - <https://youtube.com/playlist?list=PLEbdzN4PXRGVB8NsPffxsBSOCcWFBMQx3> (demo)
-  - <https://github.com/florensacc/snn4hrl>
-
-
 
 ---
 ### interesting papers - exploration and intrinsic motivation - predictive models - predictive novelty motivation
@@ -2113,7 +2054,7 @@ interesting papers (see below):
   - <https://github.com/kentsommer/pytorch-value-iteration-networks>
 
 
-#### Florensa, Duan, Abbeel - ["Stochastic Neural Networks for Hierarchical Reinforcement Learning"](https://openreview.net/pdf?id=B1oK8aoxe)
+#### Florensa, Duan, Abbeel - ["Stochastic Neural Networks for Hierarchical Reinforcement Learning"](https://arxiv.org/abs/1704.03012)
 >	"Deep reinforcement learning has achieved many impressive results in recent years. However, many of the deep RL algorithms still employ naive exploration strategies, and they have been shown to perform poorly in tasks with sparse rewards, and/or with long horizons. To tackle these challenges, there are two common approaches. The first approach is to design a hierarchy over the actions, which would require domain-specific knowledge and careful hand-engineering. A different line of work utilizes domain-agnostic intrinsic rewards to guide exploration, which has been shown to be effective in tasks with sparse rewards. However, it is unclear how the knowledge of solving a task can be utilized for other tasks, leading to a high sample complexity overall for the entire collection of tasks. In this paper, we propose a general framework for learning useful skills in a pre-training environment, which can then be utilized in downstream tasks by training a high-level policy over these skills. To learn these skills, we use stochastic neural networks (SNNs) combined with a proxy reward, the design of which requires very minimal domain knowledge about the downstream tasks. Our experiments show that this combination is effective in learning a wide span of interpretable skills in a sample-efficient way, and, when used on downstream tasks, can significantly boost the learning performance uniformly across all these tasks."
 
 >	"We propose a framework for learning a diverse set of skills using stochastic neural networks with minimum supervision, and utilize these skills in a hierarchical architecture to solve challenging tasks with sparse rewards. Our framework successfully combines two parts, firstly an unsupervised procedure to learn a large span of skills using proxy rewards and secondly a hierarchical structure that encapsulates the latter span of skills and allows to re-use them in future tasks. The span of skills learning can be greatly improved by using stochastic neural networks as policies and their additional expressiveness and multimodality. The bilinear integration and the mutual information bonus are key to consistently yield a wide, interpretable span of skills. As for the hierarchical structure, we demonstrate how drastically it can boost the exploration of an agent in a new environment and we demonstrate its relevance for solving complex tasks as mazes or gathering."
@@ -2123,6 +2064,7 @@ interesting papers (see below):
 >	"Our SNN hierarchical approach outperforms state-of-the-art intrinsic motivation results like VIME (Houthooft et al., 2016)."
 
   - <https://youtube.com/playlist?list=PLEbdzN4PXRGVB8NsPffxsBSOCcWFBMQx3> (demo)
+  - <https://github.com/florensacc/snn4hrl>
 
 
 #### Bacon, Harb, Precup - ["The Option-Critic Architecture"](http://arxiv.org/abs/1609.05140)
@@ -2448,6 +2390,7 @@ interesting papers (see below):
   - <https://youtube.com/watch?v=gb5Q2XL5c8A> (Schulman)
   - <https://yadi.sk/i/1oyihBnm3HiKHm> + <https://yadi.sk/i/b0ol2gUV3HiKKJ> (Fritsler and Ratnikov, in russian) ([slides](https://yadi.sk/i/9j6S4WVp3HgEdn) in english)  
   - <http://kvfrans.com/what-is-the-natural-gradient-and-where-does-it-appear-in-trust-region-policy-optimization/>
+  - <https://github.com/openai/baselines/tree/master/baselines/trpo_mpi>
   - <https://github.com/joschu/modular_rl>
   - <https://github.com/rll/deeprlhw2/blob/master/ppo.py>
   - <https://github.com/rllab/rllab/blob/master/rllab/algos/trpo.py>
@@ -2518,6 +2461,7 @@ interesting papers (see below):
   - <https://youtu.be/rO7Dx8pSJQw?t=50m> (Schulman)
   - <https://yanpanlau.github.io/2016/10/11/Torcs-Keras.html>
   - <http://pemami4911.github.io/blog_posts/2016/08/21/ddpg-rl.html>
+  - <https://github.com/openai/baselines/tree/master/baselines/ddpg>
   - <https://github.com/matthiasplappert/keras-rl/blob/master/rl/agents/ddpg.py>
   - <https://github.com/rllab/rllab/blob/master/rllab/algos/ddpg.py>
   - <https://github.com/yandexdataschool/AgentNet/blob/master/agentnet/learning/dpg_n_step.py>
@@ -2606,7 +2550,7 @@ interesting papers (see below):
   - <http://youtube.com/watch?v=EtMyH_--vnU> (Levine)
   - <https://video.seas.harvard.edu/media/ME+Sergey+Levine+2015+-04-01/1_gqqp9r3o/23375211> (Levine)
   - <http://youtube.com/watch?v=xMHjkZBvnfU> (Abbeel)
-  - <http://rll.berkeley.edu/gps/> + <http://rll.berkeley.edu/gps/faq.html>
+  - <http://rll.berkeley.edu/gps/>
   - <https://github.com/cbfinn/gps>
   - <https://github.com/nivwusquorum/guided-policy-search/>
 
@@ -2714,8 +2658,3 @@ interesting papers (see below):
 >	"In this work, we presented a game-theoretic model for cooperative learning, CIRL. Key to this model is that the robot knows that it is in a shared environment and is attempting to maximize the human’s reward (as opposed to estimating the human’s reward function and adopting it as its own). This leads to cooperative learning behavior and provides a framework in which to design HRI algorithms and analyze the incentives of both actors in a learning environment. We reduced the problem of computing an optimal policy pair to solving a POMDP. This is a useful theoretical tool and can be used to design new algorithms, but it is clear that optimal policy pairs are only part of the story. In particular, when it performs a centralized computation, the reduction assumes that we can effectively program both actors to follow a set coordination policy. This may not be feasible in reality, although it may nonetheless be helpful in training humans to be better teachers. An important avenue for future research will be to consider the problem of equilibrium acquisition: the process by which two independent actors arrive at an equilibrium pair of policies. Returning to Wiener’s warning, we believe that the best solution is not to put a specific purpose into the machine at all, but instead to design machines that provably converge to the right purpose as they go along."
 
   - <http://pemami4911.github.io/paper-summaries/2016/08/11/Coop-Inverse-RL.html>
-
-
-
-
-<brylevkirill (at) gmail.com>

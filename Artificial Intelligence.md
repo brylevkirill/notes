@@ -150,8 +150,12 @@
 
 ----
 
-  ["Unsolved Problems in AI"](https://medium.com/ai-roadmap-institute/unsolved-problems-in-ai-38f4ce18921d) by GoodAI  
-  ["Concrete AI tasks for forecasting"](http://aiimpacts.org/concrete-ai-tasks-for-forecasting/) by AIimpacts  
+  ["Measuring the Progress of AI Research"](https://eff.org/files/AI-progress-metrics.html)
+
+----
+
+  ["Unsolved Problems in AI"](https://medium.com/ai-roadmap-institute/unsolved-problems-in-ai-38f4ce18921d)  
+  ["Concrete AI tasks for forecasting"](http://aiimpacts.org/concrete-ai-tasks-for-forecasting/)  
 
 
 
@@ -845,8 +849,3 @@ interesting papers (see below):
 >	"The initial software p(1) of our Goedel machine runs an initial, typically sub-optimal problem solver, e.g., one of Hutter’s approaches which have at least an optimal order of complexity, or some less general method. Simultaneously, it runs an O()-optimal initial proof searcher using an online variant of Universal Search to test proof techniques, which are programs able to compute proofs concerning the system’s own future performance, based on an axiomatic system A encoded in p(1), describing a formal utility function u, the hardware and p(1) itself. If there is no provably good, globally optimal way of rewriting p(1) at all, then humans will not find one either. But if there is one, then p(1) itself can find and exploit it. This approach yields the first class of theoretically sound, fully self-referential, optimally efficient, general problem solvers. After the theoretical discussion, one practical question remains: to build a particular, especially practical Goedel machine with small initial constant overhead, which generally useful theorems should one add as axioms to A (as initial bias) such that the initial searcher does not have to prove them from scratch?"
 
   - <https://youtube.com/watch?v=nqiUFc52g78> (Schmidhuber)
-
-
-
-
-<brylevkirill (at) gmail.com>

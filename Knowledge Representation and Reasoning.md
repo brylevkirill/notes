@@ -626,11 +626,11 @@
 
 
   Josh Tenenbaum:  
+	["Engineering & Reverse-Engineering Human Common Sense"](https://youtube.com/watch?v=hfoeRiZU5YQ)  
 	["Cognitive Foundations for Common-sense Knowledge Representation and Reasoning"](https://youtube.com/watch?v=oSAG57plHnI)  
 	["Building Machines That Learn Like Humans"](https://youtube.com/watch?v=quPN7Hpk014)  
 	["Towards More Human-like Machine Learning of Word Meanings"](http://techtalks.tv/talks/towards-more-human-like-machine-learning-of-word-meanings/54913/)  
 	["How to Grow a Mind: Statistics, Structure, and Abstraction"](http://videolectures.net/aaai2012_tenenbaum_grow_mind/)  
-	["The Origins of Common Sense: Modeling human intelligence with Probabilistic Programs and Program Induction"](http://research.microsoft.com/apps/video/default.aspx?id=229021&l=i)  
 	["Development of Intelligence: Bayesian Inference"](http://youtube.com/watch?v=icEdI0AIOlU)  
 	["Machine vs Human Learning"](http://youtube.com/watch?v=UNYnpO1mkT4)  
 
@@ -1427,6 +1427,10 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 [recent interesting papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)  
 
 
+#### Ture, Jojic - ["No Need to Pay Attention: Simple Recurrent Neural Networks Work! (for Answering "Simple" Questions)"](http://arxiv.org/abs/1606.05029)  (relation classification)
+>	"First-order factoid question answering assumes that the question can be answered by a single fact in a knowledge base (KB). While this does not seem like a challenging task, many recent attempts that apply either complex linguistic reasoning or deep neural networks achieve 65%-76% accuracy on benchmark sets. Our approach formulates the task as two machine learning problems: detecting the entities in the question, and classifying the question as one of the relation types in the KB. We train a recurrent neural network to solve each problem. On the SimpleQuestions dataset, our approach yields substantial improvements over previously published results --- even neural networks based on much more complex architectures. The simplicity of our approach also has practical advantages, such as efficiency and modularity, that are valuable especially in an industry setting. In fact, we present a preliminary analysis of the performance of our model on real queries from Comcast's X1 entertainment platform with millions of users every day."
+
+
 #### Bordes, Chopra, Weston - ["Question Answering with Subgraph Embeddings"](http://emnlp2014.org/papers/pdf/EMNLP2014067.pdf)  (entity embedding)
 >	"This paper presents a system which learns to answer questions on a broad range of topics from a knowledge base using few hand-crafted features. Our model learns low-dimensional embeddings of words and knowledge base constituents; these representations are used to score natural language questions against candidate answers. Training our system using pairs of questions and structured representations of their answers, and pairs of question paraphrases, yields competitive results on a recent benchmark of the literature."
 
@@ -1434,10 +1438,6 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 
   - <http://youtu.be/FVjuwv1_EDw?t=13m51s> (Weston)
   - <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1406.3676>
-
-
-#### Ture, Jojic - ["Simple and Effective Question Answering with Recurrent Neural Networks"](http://arxiv.org/abs/1606.05029)  (entity embedding)
->	"First-order factoid question answering assumes that the question can be answered by a single fact in a knowledge base. While this does not seem like a challenging task, many recent attempts that apply either complex linguistic reasoning or deep neural networks achieve 35%–65% accuracy on benchmark sets. Our approach formulates the task as two machine learning problems: detecting the entities in the question, and classifying the question as one of the relation types in the KB. Based on this assumption of the structure, our simple yet effective approach trains two recurrent neural networks to outperform state of the art by significant margins - relative improvement reaches 16% for WebQuestions, and surpasses 38% for SimpleQuestions."
 
 
 #### Neelakantan, Le, Sutskever - ["Neural Programmer: Inducing Latent Programs with Gradient Descent"](http://arxiv.org/abs/1511.04834)  (program embedding)
@@ -1902,8 +1902,3 @@ these knowledge bases are greatly incomplete. For example, over 70% of people in
 
 #### Samadi, Talukdar, Veloso, Blum - ["ClaimEval: Integrated and Flexible Framework for Claim Evaluation Using Credibility of Sources"](http://www.cs.cmu.edu/~mmv/papers/16aaai-claimeval.pdf)  (truth finding)
 >	"The World Wide Web has become a rapidly growing platform consisting of numerous sources which provide supporting or contradictory information about claims (e.g., “Chicken meat is healthy”). In order to decide whether a claim is true or false, one needs to analyze content of different sources of information on the Web, measure credibility of information sources, and aggregate all these information. This is a tedious process and the Web search engines address only part of the overall problem, viz., producing only a list of relevant sources. In this paper, we present ClaimEval, a novel and integrated approach which given a set of claims to validate, extracts a set of pro and con arguments from the Web information sources, and jointly estimates credibility of sources and correctness of claims. ClaimEval uses Probabilistic Soft Logic, resulting in a flexible and principled framework which makes it easy to state and incorporate different forms of prior-knowledge. Through extensive experiments on realworld datasets, we demonstrate ClaimEval’s capability in determining validity of a set of claims, resulting in improved accuracy compared to state-of-the-art baselines."
-
-
-
-
-<brylevkirill (at) gmail.com>
