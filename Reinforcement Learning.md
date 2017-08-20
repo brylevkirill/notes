@@ -32,7 +32,6 @@
 
   ![relations with other fields](https://goo.gl/XlgPJu)
 
-----
 
   "Reinforcement Learning is as hard as any problem in computer science, since any task with a computable description can be formulated in it."
 
@@ -154,6 +153,22 @@
   - *Chess*  
 	["Giraffe: Using Deep Reinforcement Learning to Play Chess"](#lai---giraffe-using-deep-reinforcement-learning-to-play-chess) by Lai
 
+  - *Dota 2*
+	<https://blog.openai.com/dota-2/>  
+	[overview](https://blog.openai.com/more-on-dota-2/)  
+
+	[game vs Dendi](https://youtube.com/watch?v=wiOopO9jTZw)  
+	[game vs SumaiL](https://youtube.com/watch?v=IbaHI38Ewws)  
+	[game vs Arteezy](https://youtube.com/watch?v=rNSH8CviQQw)  
+	[game vs Pajkatt](https://youtube.com/watch?v=BBUiwCEmrxU)  
+
+  - *Doom*  
+	["Learning to Act by Predicting the Future"](https://arxiv.org/pdf/1611.01779) by Dosovitskiy and Koltun  
+	[overview](https://youtube.com/watch?v=Q0ldKJbAwR8) of IntelAct agent by Alexey Dosovitskiy (in russian)  
+	[demo](https://youtube.com/watch?v=947bSUtuSQ0) of IntelAct agent  
+
+	[demos](https://youtube.com/channel/UC8UghzsxS5uEFUEbvcAWwlQ/videos) of agents from ViZDoom competition  
+
   - *Atari video games*  
 	["Playing Atari with Deep Reinforcement Learning"](#mnih-kavukcuoglu-silver-graves-antonoglou-wierstra-riedmiller---playing-atari-with-deep-reinforcement-learning) by Mnih et al.  
 	[Nature paper](https://goo.gl/jHRkZr)  
@@ -171,18 +186,13 @@
 	[overview](https://youtube.com/watch?v=zQyWMHFjewU)  
 	[demo](https://youtube.com/watch?v=VeXNw0Owf0Y)  
 
-  - *Doom*  
-	["Learning to Act by Predicting the Future"](https://arxiv.org/pdf/1611.01779) by Dosovitskiy and Koltun  
-	[overview](https://youtube.com/watch?v=Q0ldKJbAwR8) of IntelAct agent by Alexey Dosovitskiy (in russian)  
-	[demo](https://youtube.com/watch?v=947bSUtuSQ0) of IntelAct agent  
-
-	[demos](https://youtube.com/channel/UC8UghzsxS5uEFUEbvcAWwlQ/videos) of agents from ViZDoom competition  
 
 
 ----
 #### robotics
 
   overview by Pieter Abbeel:  
+  - <http://oreilly.com/ai/deep-learning-for-robotics.csp>  
   - <https://youtu.be/xe-z4i3l-iQ?t=30m35s>  
   - <http://on-demand.gputechconf.com/gtc/2016/video/S6812.html>  
   - <http://youtube.com/watch?v=xMHjkZBvnfU>  
@@ -224,8 +234,6 @@
   introduction by Shakir Mohamed:  
   - ["Learning in Brains and Machines: Temporal Differences"](http://blog.shakirm.com/2016/02/learning-in-brains-and-machines-1/)  
   - ["Synergistic and Modular Action"](http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/)  
-
-  [introduction](http://readcube.com/articles/10.1038%2Fnature14540) by Michael Littman
 
 ----
 
@@ -733,6 +741,9 @@
 
 ----
 
+  ["Multi-armed Bandit Experiments in the Online Service Economy"](https://research.google.com/pubs/pub42550.html) by Steven Scott  
+  ["Bayesian Multi-armed Bandits vs A/B Tests"](https://habrahabr.ru/company/ods/blog/325416/) (in russian)  
+
   Microsoft Custom Decision Service:  
   - <https://azure.microsoft.com/en-us/services/cognitive-services/custom-decision-service/>  
   - <https://mwtds.azurewebsites.net>  
@@ -744,7 +755,7 @@
   - <https://youtu.be/N5x48g2sp8M?t=52m> (Robert Schapire)  
   - <https://youtu.be/3q4OvzIyPug?t=6m12s> (Alekh Agarwal)  
 
-  ["Bayesian Multi-armed Bandits vs A/B Tests"](https://habrahabr.ru/company/ods/blog/325416/) (in russian)
+----
 
   [example implementation](https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-1-5-contextual-bandits-bff01d1aad9c)
 
@@ -1285,7 +1296,7 @@ interesting papers (see below):
 
 
 interesting recent papers:  
-  - [algorithms](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---algorithms)  
+  - [algorithms](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---agents)  
   - [exploration and intrinsic motivation](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
   - [abstractions for states and actions](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---abstractions-for-states-and-actions)  
   - [simulation and planning](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---simulation-and-planning)  
@@ -2150,7 +2161,7 @@ interesting recent papers:
 ---
 ### interesting papers - value-based methods
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---algorithms)
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---agents)
 
 
 #### Mnih, Kavukcuoglu, Silver, Graves, Antonoglou, Wierstra, Riedmiller - ["Playing Atari with Deep Reinforcement Learning"](https://arxiv.org/abs/1312.5602)
@@ -2271,7 +2282,7 @@ interesting recent papers:
 ---
 ### interesting papers - policy-based methods
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---algorithms)
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---agents)
 
 
 #### Duan, Chen, Houthooft, Schulman, Abbeel - ["Benchmarking Deep Reinforcement Learning for Continuous Control"](http://arxiv.org/abs/1604.06778)

@@ -80,6 +80,10 @@ Roth, Hardt - "Rigorous Data Dredging - Theory and Tools for Adaptive Data Analy
 	[http://techtalks.tv/talks/rigorous-data-dredging-theory-and-tools-for-adaptive-data-analysis/62362/]
 
 
+"Probability and Statistics for Data Science" by Carlos Fernandez-Granda - http://cims.nyu.edu/~cfgranda/pages/stuff/probability_stats_for_DS.pdf  
+"Computer Age Statistical Inference" by Bradley Efron and Trevor Hastie - https://web.stanford.edu/~hastie/CASI_files/PDF/casi.pdf  
+
+
 
 
 [theory]

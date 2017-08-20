@@ -12,8 +12,8 @@ interesting recent papers:
   * [bayesian inference and learning](#bayesian-inference-and-learning)  
   * [reasoning](#reasoning)  
   * [program induction](#program-induction)  
-  * [reinforcement learning](#reinforcement-learning---algorithms)  
-    - [algorithms](#reinforcement-learning---algorithms)  
+  * [reinforcement learning](#reinforcement-learning---agents)  
+    - [algorithms](#reinforcement-learning---agents)  
     - [exploration and intrinsic motivation](#reinforcement-learning---exploration-and-intrinsic-motivation)  
     - [abstractions for states and actions](#reinforcement-learning---abstractions-for-states-and-actions)  
     - [simulation and planning](#reinforcement-learning---simulation-and-planning)  
@@ -99,11 +99,18 @@ interesting papers:
   - <https://youtube.com/watch?v=h6eQrkkU9SA> (Hochreiter)  
   - <http://github.com/bioinf-jku/SNNs>  
 
+[The Shattered Gradients Problem: If resnets are the answer, then what is the question?](https://arxiv.org/abs/1702.08591)  
+>	"We show that the correlation between gradients in standard feedforward networks decays exponentially with depth resulting in gradients that resemble white noise."  
+>	"We present a new “looks linear” (LL) initialization that prevents shattering. Preliminary experiments show the new initialization allows to train very deep networks without the addition of skip-connections."  
+>	"In a randomly initialized network, the gradients of deeper layers are increasingly uncorrelated. Shattered gradients play havoc with the optimization methods currently in use and may explain the difficulty in training deep feedforward networks even when effective initialization and batch normalization are employed. Averaging gradients over minibatches becomes analogous to integrating over white noise – there is no clear trend that can be summarized in a single average direction. Shattered gradients can also introduce numerical instabilities, since small differences in the input can lead to large differences in gradients."  
+>	"Skip-connections in combination with suitable rescaling reduce shattering. Specifically, we show that the rate at which correlations between gradients decays changes from exponential for feedforward architectures to sublinear for resnets. The analysis uncovers a surprising and unexpected side-effect of batch normalization."  
+
 [Learning Deep ResNet Blocks Sequentially using Boosting Theory](https://arxiv.org/abs/1706.04964) (Schapire)  
 >	"We construct T weak module classifiers, each contains two of the T layers, such that the combined strong learner is a ResNet."  
 >	"We introduce an alternative Deep ResNet training algorithm, which is particularly suitable in non-differentiable architectures."  
 
 [Understanding Black-box Predictions via Influence Functions](https://arxiv.org/abs/1703.04730)  
+>	"identify training points most responsible for given prediction to make model transparent"  
 
 
 
@@ -173,6 +180,7 @@ interesting papers:
 
 [Improved Multitask Learning Through Synaptic Intelligence](https://arxiv.org/abs/1703.04200)  
 >	"The regularization penalty is similar to EWC. However, our approach computes the per-synapse consolidation strength in an online fashion, whereas for EWC synaptic importance is computed offline after training on a designated task."  
+  - <https://github.com/spiglerg/TF_ContinualLearningViaSynapticIntelligence>  
 
 [PathNet: Evolution Channels Gradient Descent in Super Neural Networks](http://arxiv.org/abs/1701.08734) (DeepMind)  
   - <https://github.com/jaesik817/pathnet>  
@@ -197,6 +205,7 @@ interesting papers:
 [Phased LSTM: Accelerating Recurrent Network Training for Long or Event-based Sequences](http://arxiv.org/abs/1610.09513)  
 >	"If you take an LSTM and add a “time gate” that controls at what frequency to be open to new input and how long to be open each time, you can have different neurons that learn to look at a sequence with different frequencies, create a “wormhole” for gradients, save compute, and do better on long sequences and when you need to process inputs from multiple sensors that are sampled at different rates."  
   - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Phased-LSTM-Accelerating-Recurrent-Network-Training-for-Long-or-Event-based-Sequences> (Neil)  
+  - <https://tensorflow.org/api_docs/python/tf/contrib/rnn/PhasedLSTMCell>  
   - <https://github.com/dannyneil/public_plstm>  
 
 ----
@@ -301,8 +310,9 @@ interesting papers:
 
 [Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks](https://arxiv.org/abs/1703.03400) (Abbeel, Levine)  
 >	"Unlike prior methods, the MAML learner’s weights are updated using the gradient, rather than a learned update rule. Our method does not introduce any additional parameters into the learning process and does not require a particular learner model architecture."  
+>	"MAML optimizes for a set of parameters such that when a gradient step is taken with respect to a particular task i, the parameters are close to the optimal parameters θi for task i."  
   - <https://sites.google.com/view/maml> (demo)  
-  - <http://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/>  
+  - <http://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/> (Finn)  
   - <https://github.com/cbfinn/maml>  
 
 [Optimization as a Model for Few-Shot Learning](https://openreview.net/forum?id=rJY0-Kcll) (Larochelle)  
@@ -355,6 +365,13 @@ interesting papers:
 ---
 ### unsupervised learning
 
+[Independently Controllable Features](https://arxiv.org/abs/1708.01289) (Bengio)  
+>	"It has been postulated that a good representation is one that disentangles the underlying explanatory factors of variation. However, it remains an open question what kind of training framework could potentially achieve that. Whereas most previous work focuses on the static setting (e.g. with images), we postulate that some of the causal factors could be discovered if the learner is allowed to interact with its environment. The agent can experiment with different actions and observe their effects. We hypothesize that some of these factors correspond to aspects of the environment which are independently controllable, i.e., that there exists a policy and a learnable feature for each such aspect of the environment, such that this policy can yield changes in that feature with minimal changes to other features that explain the statistical variations in the observed data."  
+>	"In interactive environments, the temporal dependency between successive observations creates a new opportunity to notice causal structure in data which may not be apparent using only observational studies. In reinforcement learning, several approaches explore mechanisms that push the internal representations of learned models to be “good” in the sense that they provide better control, and control is a particularly important causal relationship between an agent and elements of its environment."  
+>	"We propose and explore a more direct mechanism for representation learning, which explicitly links an agent’s control over its environment with its internal feature representations. Specifically, we hypothesize that some of the factors explaining variations in the data correspond to aspects of the world that can be controlled by the agent. For example, an object that could be pushed around or picked up independently of others is an independently controllable aspect of the environment. Our approach therefore aims to jointly discover a set of features (functions of the environment state) and policies (which change the state) such that each policy controls the associated feature while leaving the other features unchanged as much as possible."  
+>	"Assume that there are factors of variation underlying the observations coming from an interactive environment that are independently controllable. That is, a controllable factor of variation is one for which there exists a policy which will modify that factor only, and not the others. For example, the object associated with a set of pixels could be acted on independently from other objects, which would explain variations in its pose and scale when we move it around while leaving the others generally unchanged. The object position in this case is a factor of variation. What poses a challenge for discovering and mapping such factors into computed features is the fact that the factors are not explicitly observed. Our goal is for the agent to autonomously discover such factors – which we call independently controllable features – along with policies that control them. While these may seem like strong assumptions about the nature of the environment, we argue that these assumptions are similar to regularizers, and are meant to make a difficult learning problem (that of learning good representations which disentangle underlying factors) better constrained."  
+
+----
 [SCAN: Learning Abstract Hierarchical Compositional Visual Concepts](https://arxiv.org/abs/1707.03389) (DeepMind)  
 >	"We first use the previously published beta-VAE (Higgins et al., 2017a) architecture to learn a disentangled representation of the latent structure of the visual world, before training SCAN to extract abstract concepts grounded in such disentangled visual primitives through fast symbol association."  
   - <https://deepmind.com/blog/imagine-creating-new-visual-concepts-recombining-familiar-ones/>  
@@ -647,6 +664,7 @@ interesting papers:
   - <https://casmls.github.io/general/2017/02/01/GumbelSoftmax.html>  
   - <http://timvieira.github.io/blog/post/2014/07/31/gumbel-max-trick/>  
   - <https://cmaddis.github.io/gumbel-machinery>  
+  - <https://hips.seas.harvard.edu/blog/2013/04/06/the-gumbel-max-trick-for-discrete-distributions/>  
   - <https://github.com/ericjang/gumbel-softmax/blob/master/gumbel_softmax_vae_v2.ipynb>  
   - <https://gist.github.com/gngdb/ef1999ce3a8e0c5cc2ed35f488e19748>  
 
@@ -657,6 +675,7 @@ interesting papers:
   - <https://casmls.github.io/general/2017/02/01/GumbelSoftmax.html>  
   - <http://timvieira.github.io/blog/post/2014/07/31/gumbel-max-trick/>  
   - <https://cmaddis.github.io/gumbel-machinery>  
+  - <https://hips.seas.harvard.edu/blog/2013/04/06/the-gumbel-max-trick-for-discrete-distributions/>  
   - <https://github.com/ericjang/gumbel-softmax/blob/master/gumbel_softmax_vae_v2.ipynb>  
   - <https://github.com/EderSantana/gumbel>  
 
@@ -768,6 +787,10 @@ interesting papers:
   - <https://www.technologyreview.com/s/604010/google-brain-wants-creative-ai-to-help-humans-make-a-new-kind-of-art/> (10:45) (Eck)  
   - <https://github.com/tensorflow/magenta/tree/master/magenta/models/rl_tuner>  
 
+[Sequence Tutor: Conservative Fine-tuning of Sequence Generation Models with KL-control](https://research.google.com/pubs/pub46118.html) (Google Brain)  
+  - <https://drive.google.com/drive/folders/0BycMAUU0mKhwWkFMdWxkdlpFWlE> (demo)  
+  - <https://1drv.ms/v/s!AhXHs6UCFoepqqZoYlaPyYH53X38TQ> (Jaques)  
+
 [Learning to Decode for Future Success](http://arxiv.org/abs/1701.06549) (Stanford)  
 
 ----
@@ -806,8 +829,23 @@ interesting papers:
   - <https://reddit.com/r/MachineLearning/comments/6d7nb1/d_machine_learning_wayr_what_are_you_reading_week/dihh54a/>  
 
 ----
-[Bayesian Recurrent Neural Networks](https://arxiv.org/abs/1704.02798) (DeepMind)  
-  - <https://github.com/DeNeutoy/bayesian-rnn>  
+[What Uncertainties Do We Need in Bayesian Deep Learning for Computer Vision?](https://arxiv.org/abs/1703.04977)  
+>	"We presented a novel Bayesian deep learning framework to learn a mapping to aleatoric uncertainty from the input data, which is composed on top of epistemic uncertainty models. We derived our framework for both regression and classification applications.  
+>	We showed that it is important to model epistemic uncertainty for:  
+	- Safety-critical applications, because epistemic uncertainty is required to understand examples which are different from training data  
+	- Small datasets where the training data is sparse.  
+	"And aleatoric uncertainty is important for:  
+	- Large data situations, where epistemic uncertainty is explained away  
+	- Real-time applications, because we can form aleatoric models without expensive Monte Carlo samples.  
+	"We can actually divide aleatoric into two further sub-categories:  
+	- Data-dependant or Heteroscedastic uncertainty is aleatoric uncertainty which depends on the input data and is predicted as a model output.  
+	- Task-dependant or Homoscedastic uncertainty is aleatoric uncertainty which is not dependant on the input data. It is not a model output, rather it is a quantity which stays constant for all input data and varies between different tasks. It can therefore be described as task-dependant uncertainty."  
+>	"However aleatoric and epistemic uncertainty models are not mutually exclusive. We showed that the combination is able to achieve new state-of-the-art results on depth regression and semantic segmentation benchmarks."  
+  - <https://alexgkendall.com/computer_vision/bayesian_deep_learning_for_safe_ai/> (Kendall)  
+
+[Uncertainty Decomposition in Bayesian Neural Networks with Latent Variables](https://arxiv.org/abs/1706.08495)  
+>	"We can identify two distinct forms of uncertainties in the class of models given by BNNs with latent variables. Aleatoric uncertainty captures noise inherent in the observations. On the other hand, epistemic uncertainty accounts for uncertainty in the model. In particular, epistemic uncertainty arises from our lack of knowledge of the values of the synaptic weights in the network, whereas aleatoric uncertainty originates from our lack of knowledge of the value of the latent variables. In the domain of model-based RL the epistemic uncertainty is the source of model bias. When there is high discrepancy between model and real-world dynamics, policy behavior may deteriorate. In analogy to the principle that ”a chain is only as strong as its weakest link” a drastic error in estimating the ground truth MDP at a single transition stepcan render the complete policy useless. In this work we address the decomposition of the uncertainty present in the predictions of BNNs with latent variables into its epistemic and aleatoric components."  
+>	"We derive an information-theoretic objective that decomposes the entropy of the predictive distribution of BNNs with latent variables into its epistemic and aleatoric components. By building on that decomposition, we then investigate safe RL using a risk-sensitive criterion which focuses only on risk related to model bias, that is, the risk of the policy performing at test time significantly different from at training time. The proposed criterion quantifies the amount of epistemic uncertainty (model bias risk) in the model’s predictive distribution and ignores any risk stemming from the aleatoric uncertainty."  
 
 [Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles](http://arxiv.org/abs/1612.01474) (DeepMind)  
 
@@ -815,6 +853,9 @@ interesting papers:
 >	"We demonstrate improved uncertainty estimates and accuracy compared to VI in dropout networks. We study our model’s epistemic uncertainty far away from the data using adversarial images, showing that these can be distinguished from non-adversarial images by examining our model’s uncertainty."
 
 ----
+[Bayesian Recurrent Neural Networks](https://arxiv.org/abs/1704.02798) (DeepMind)  
+  - <https://github.com/DeNeutoy/bayesian-rnn>  
+
 [Sequential Neural Models with Stochastic Layers](http://arxiv.org/abs/1605.07571)  
   - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Sequential-Neural-Models-with-Stochastic-Layers> (Fraccaro)  
   - <https://youtu.be/mrj_hyH974o?t=32m49s> (in russian)  
@@ -947,9 +988,10 @@ interesting papers:
 
 
 ---
-### reinforcement learning - algorithms
+### reinforcement learning - agents
 
 [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) (DeepMind)  
+  - <https://youtube.com/watch?v=yFBwyPuO2Vg> (demo)  
   - <https://deepmind.com/blog/going-beyond-average-reinforcement-learning/>  
   - <https://github.com/floringogianu/categorical-dqn>  
 
@@ -958,6 +1000,7 @@ interesting papers:
 
 ----
 [Proximal Policy Optimization Algorithms](https://arxiv.org/abs/1707.06347) (OpenAI)  
+  - <https://blog.openai.com/openai-baselines-ppo/> (demo)  
   - <https://github.com/openai/baselines/tree/master/baselines/pposgd>  
 
 [Interpolated Policy Gradient: Merging On-Policy and Off-Policy Gradient Estimation for Deep Reinforcement Learning](https://arxiv.org/abs/1706.00387) (DeepMind)  
@@ -1180,6 +1223,8 @@ hieves."
   - <http://youtube.com/watch?v=ck4GixLs4ZQ> (Osband) + [slides](https://docs.google.com/presentation/d/1lis0yBGT-uIXnAsi0vlP3SuWD2svMErJWy_LYtfzMOA/)  
 
 ----
+[The Intentional Unintentional Agent: Learning to Solve Many Continuous Control Tasks Simultaneously](https://arxiv.org/abs/1707.03300) (DeepMind)    # structured exploration in policy space guided by learning additional tasks  
+
 [Reinforcement Learning with Unsupervised Auxiliary Tasks](http://arxiv.org/abs/1611.05397) (DeepMind)    # structured exploration in policy space guided by learning additional tasks  
 >	"Auxiliary tasks:  
 >	- pixel changes: learn a policy for maximally changing the pixels in a grid of cells overlaid over the images  
@@ -1201,6 +1246,13 @@ hieves."
 [Loss is Its Own Reward: Self-Supervision for Reinforcement Learning](http://arxiv.org/abs/1612.07307) (Darrell)    # structured exploration in policy space guided by learning additional tasks  
 
 [Feature Control as Intrinsic Motivation for Hierarchical Reinforcement Learning](https://arxiv.org/abs/1705.06769)    # structured exploration in policy space guided by learning additional tasks  
+
+[Independently Controllable Features](https://arxiv.org/abs/1708.01289) (Bengio)    # structured exploration in state and policy space guided by learning to control environment  
+>	"Exploration process could be driven by a notion of controllability, predicting the interestingness of objects in a scene and choosing features and associated policies with which to attempt controlling them – such ideas have only been briefly explored in the literature. How do humans choose with which object to play? We are attracted to objects for which we do not yet know if and how we can control them, and such a process may be critical to learn how the world works."  
+>	"It has been postulated that a good representation is one that disentangles the underlying explanatory factors of variation. However, it remains an open question what kind of training framework could potentially achieve that. Whereas most previous work focuses on the static setting (e.g. with images), we postulate that some of the causal factors could be discovered if the learner is allowed to interact with its environment. The agent can experiment with different actions and observe their effects. We hypothesize that some of these factors correspond to aspects of the environment which are independently controllable, i.e., that there exists a policy and a learnable feature for each such aspect of the environment, such that this policy can yield changes in that feature with minimal changes to other features that explain the statistical variations in the observed data."  
+>	"In interactive environments, the temporal dependency between successive observations creates a new opportunity to notice causal structure in data which may not be apparent using only observational studies. In reinforcement learning, several approaches explore mechanisms that push the internal representations of learned models to be “good” in the sense that they provide better control, and control is a particularly important causal relationship between an agent and elements of its environment."  
+>	"We propose and explore a more direct mechanism for representation learning, which explicitly links an agent’s control over its environment with its internal feature representations. Specifically, we hypothesize that some of the factors explaining variations in the data correspond to aspects of the world that can be controlled by the agent. For example, an object that could be pushed around or picked up independently of others is an independently controllable aspect of the environment. Our approach therefore aims to jointly discover a set of features (functions of the environment state) and policies (which change the state) such that each policy controls the associated feature while leaving the other features unchanged as much as possible."  
+
 
 ----
 [Automated Curriculum Learning for Neural Networks](https://arxiv.org/abs/1704.03003) (DeepMind)    # structured exploration in policy space guided by learning progress  
@@ -1289,14 +1341,33 @@ hieves."
 
 [Model-Based Planning in Discrete Action Spaces](https://arxiv.org/abs/1705.07177) (LeCun)  
 
-----
 [Imagination-Augmented Agents for Deep Reinforcement Learning](https://arxiv.org/abs/1707.06203) (DeepMind)  
-  - <https://drive.google.com/drive/folders/0B4tKsKnCCZtQY2tTOThucHVxUTQ> (demos)  
+  - <https://drive.google.com/drive/folders/0B4tKsKnCCZtQY2tTOThucHVxUTQ> (demo)  
   - <https://deepmind.com/blog/agents-imagine-and-plan/>  
 
 [Learning Model-based Planning from Scratch](https://arxiv.org/abs/1707.06170) (DeepMind)  
-  - <https://drive.google.com/drive/folders/0B3u8dCFTG5iVaUxzbzRmNldGcU0> (demos)  
+  - <https://drive.google.com/drive/folders/0B3u8dCFTG5iVaUxzbzRmNldGcU0> (demo)  
   - <https://deepmind.com/blog/agents-imagine-and-plan/>  
+
+[Metacontrol for Adaptive Imagination-Based Optimization](https://arxiv.org/abs/1705.02670) (DeepMind)  
+>	"Rather than learning a single, fixed policy for solving all instances of a task, we introduce a metacontroller which learns to optimize a sequence of "imagined" internal simulations over predictive models of the world in order to construct a more informed, and more economical, solution. The metacontroller component is a model-free reinforcement learning agent, which decides both how many iterations of the optimization procedure to run, as well as which model to consult on each iteration. The models (which we call "experts") can be state transition models, action-value functions, or any other mechanism that provides information useful for solving the task, and can be learned on-policy or off-policy in parallel with the metacontroller."  
+>	"learns an adaptive optimization policy for one-shot decision-making in contextual bandit problems"  
+
+[Learning Multimodal Transition Dynamics for Model-Based Reinforcement Learning](https://arxiv.org/abs/1705.00470)  
+>	"So why is model-based RL not the standard approach? Model-based RL consists of two steps: 1) transition function estimation through supervised learning, and 2) (sample-based) planning over the learned model. Each step has a particular challenging aspect. For this work we focus on a key challenge of the first step: stochasticity in the transition dynamics. Stochasticity is an inherent property of many environments, and increases in real-world settings due to sensor noise. Transition dynamics usually combine both deterministic aspects (such as the falling trajectory of an object due to gravity) and stochastic elements (such as the behaviour of another car on the road). Our goal is to learn to jointly predict these. Note that stochasticity has many forms, both homoscedastic versus heteroscedastic, and unimodal versus multimodal. In this work we specifically focus on multimodal stochasticity, as this should theoretically pose the largest challenge."  
+>	"We focus on deep generative models as they can approximate complex distributions and scale to high-dimensional domains. For model-based RL we have additional requirements, as we are ultimately interested in using the model for sample-based planning. This usually requires sampling a lot of traces, so we require models that are 1) easy to sample from, 2) ideally allow planning at an abstract level. Implicit density models, like Generative Adverserial Networks lack a clear probabilistic objective function, which was the focus of this work. Among the explicit density models, there are two categories. Change of variable formula models, like Real NVP, have the drawback that the latent space dimension must equal the observation space. Fully visible belief nets like pixelCNN, which factorize the likelihood in an auto-regressive fashion, hold state-of-the-art likelihood results. However, they have the drawback that sampling is a sequential operation (e.g. pixel-by-pixel, which is computationally expensive), and they do not allow for latent level planning either. Therefore, most suitable for model-based RL seem approximate density models, most noteworthy the Variational Auto-Encoder framework. These models can estimate stochasticity at a latent level, allow for latent planning, are easy to sample from, and have a clear probabilistic interpretation."  
+>	"An important challenge is planning under uncertainty. RL initially provides correlated data from a limited part of state-space. When planning over this model, we should not extrapolate too much, nor trust our model to early with limited data. Note that ‘uncertainty’ (due to limited data) is fundamentally different from the ‘stochasticity’ (true probabilistic nature of the domain) discussed in this paper."  
+  - <http://github.com/tmoer/multimodal_varinf>  
+
+[Learning and Policy Search in Stochastic Dynamic Systems with Bayesian Neural Networks](https://arxiv.org/abs/1605.07127)  
+>	"Monte-Carlo model-based policy gradient technique in continuous stochastic systems"  
+>	"Proposed approach enables automatic identification of arbitrary stochastic patterns such as multimodality and heteroskedasticity, without having to manually incorporate these into the model."  
+>	"We have extended Bayesian neural network with addition of a random input noise source z. This enables principled Bayesian inference over complex stochastic functions. We have also presented an algorithm that uses random roll-outs and stochastic optimization for learning a parameterized policy in a batch scenario. Our BNNs with random inputs have allowed us to solve a challenging benchmark problem where model-based approaches usually fail."  
+>	"For safety, we believe having uncertainty over the underlying stochastic functions will allow us to optimize policies by focusing on worst case results instead of on average performance. For exploration, having uncertainty on the stochastic functions will be useful for efficient data collection."  
+>	"The optimal policy can be significantly affected by the noise present in the state transitions. This is illustrated by the drunken spider story, in which a spider has two possible paths to go home: either by crossing the bridge or by walking around the lake. In the absence of noise, the bridge option is prefered since it is shorter. However, after heavily drinking alcohol, the spider’s movements may randomly deviate left or right. Since the bridge is narrow, and spiders do not like swimming, the prefered trajectory is now to walk around the lake. The previous example shows how noise can significantly affect optimal control. For example, the optimal policy may change depending on whether the level of noise is high or low. Therefore, we expect to obtain significant improvements in model-based reinforcement learning by capturing with high accuracy any noise patterns present in the state transition data."  
+  - <https://youtube.com/watch?v=0H3EkUPENSY> (Hernandez-Lobato)  
+  - <https://medium.com/towards-data-science/bayesian-neural-networks-with-random-inputs-for-model-based-reinforcement-learning-36606a9399b4> (Hernandez-Lobato)  
+  - <https://github.com/siemens/policy_search_bb-alpha>  
 
 [QMDP-Net: Deep Learning for Planning under Partial Observability](https://arxiv.org/abs/1703.06692)  
 >	"This paper introduces QMDP-net, a neural network architecture for planning under partial observability. The QMDP-net combines the strengths of model-free learning and model-based planning. It is a recurrent policy network, but it represents a policy by connecting a model with a planning algorithm that solves the model, thus embedding the solution structure of planning in the network architecture. The QMDP-net is fully differentiable and allows end-to-end training. We train a QMDP-net over a set of different environments so that it can generalize over new ones."  
@@ -1322,6 +1393,12 @@ hieves."
   - <https://youtube.com/watch?v=gpwA3QNTPOQ> (Shankar)  
   - <https://github.com/tanmayshankar/RCNN_MDP>  
 
+[Strategic Attentive Writer for Learning Macro-Actions](http://arxiv.org/abs/1606.04695) (DeepMind)  
+>	"method that learns to initialize and update a plan, but which does not use a model and instead directly maps new observations to plan updates"  
+  - <https://youtube.com/watch?v=niMOdSu3yio> (demo)  
+  - <https://blog.acolyer.org/2017/01/06/strategic-attentive-writer-for-learning-macro-actions/>  
+  - <http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/> (Mohamed)  
+
 [Value Iteration Networks](http://arxiv.org/abs/1602.02867) (Abbeel)  
 >	"trains deep network to implicitly plan via iterative rollouts but does not use a model"  
   - <https://youtube.com/watch?v=tXBHfbHHlKc> (Tamar) + <http://technion.ac.il/~danielm/icml_slides/Talk7.pdf>  
@@ -1335,20 +1412,8 @@ hieves."
   - <https://github.com/onlytailei/Value-Iteration-Networks-PyTorch>  
   - <https://github.com/kentsommer/pytorch-value-iteration-networks>  
 
-[Strategic Attentive Writer for Learning Macro-Actions](http://arxiv.org/abs/1606.04695) (DeepMind)  
->	"method that learns to initialize and update a plan, but which does not use a model and instead directly maps new observations to plan updates"
-  - <https://youtube.com/watch?v=niMOdSu3yio> (demo)  
-  - <https://blog.acolyer.org/2017/01/06/strategic-attentive-writer-for-learning-macro-actions/>  
-  - <http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/> (Mohamed)  
-
-----
-[Metacontrol for Adaptive Imagination-Based Optimization](https://arxiv.org/abs/1705.02670) (DeepMind)  
->	"Rather than learning a single, fixed policy for solving all instances of a task, we introduce a metacontroller which learns to optimize a sequence of "imagined" internal simulations over predictive models of the world in order to construct a more informed, and more economical, solution. The metacontroller component is a model-free reinforcement learning agent, which decides both how many iterations of the optimization procedure to run, as well as which model to consult on each iteration. The models (which we call "experts") can be state transition models, action-value functions, or any other mechanism that provides information useful for solving the task, and can be learned on-policy or off-policy in parallel with the metacontroller."  
->	"learns an adaptive optimization policy for one-shot decision-making in contextual bandit problems"  
-
 [Thinking Fast and Slow with Deep Learning and Tree Search](https://arxiv.org/abs/1705.08439) (Barber)  
 
-----
 [Blazing the Trails before Beating the Path: Sample-efficient Monte-Carlo Planning](https://papers.nips.cc/paper/6253-blazing-the-trails-before-beating-the-path-sample-efficient-monte-carlo-planning.pdf) (Munos)  
 >	"We study the sampling-based planning problem in Markov decision processes (MDPs) that we can access only through a generative model, usually referred to as Monte-Carlo planning."  
 >	"Our objective is to return a good estimate of the optimal value function at any state while minimizing the number of calls to the generative model, i.e. the sample complexity."  
@@ -1440,7 +1505,7 @@ hieves."
   - <https://github.com/YunzhuLi/InfoGAIL>  
 
 [Robust Imitation of Diverse Behaviors](https://arxiv.org/abs/1707.02747) (DeepMind)  
-  - <https://youtube.com/watch?v=necs0XfnFno> (video)  
+  - <https://youtube.com/watch?v=necs0XfnFno> (demo)  
 
 [Model-based Adversarial Imitation Learning](http://arxiv.org/abs/1612.02179)  
 
@@ -1452,9 +1517,7 @@ hieves."
 
 ----
 [Learning from Demonstrations for Real World Reinforcement Learning](https://arxiv.org/abs/1704.03732) (DeepMind + OpenAI)  
-  - <https://youtube.com/playlist?list=PLdjpGm3xcO-0aqVf--sBZHxCKg-RZfa5T> (demos)  
-  - <https://deepmind.com/blog/learning-through-human-feedback/>  
-  - <https://blog.openai.com/deep-reinforcement-learning-from-human-preferences/>  
+  - <https://youtube.com/playlist?list=PLdjpGm3xcO-0aqVf--sBZHxCKg-RZfa5T> (demo)  
 
 [Deeply AggreVaTeD: Differentiable Imitation Learning for Sequential Prediction](https://arxiv.org/abs/1703.01030)  
 
@@ -1508,6 +1571,11 @@ hieves."
 [Towards Deep Symbolic Reinforcement Learning](http://arxiv.org/abs/1609.05518)  
   - <https://youtube.com/watch?v=HOAVhPy6nrc> (Shanahan)  
 
+[Deep Reinforcement Learning from Human Preferences](https://arxiv.org/abs/1706.03741) (DeepMind + OpenAI)  
+  - <https://deepmind.com/blog/learning-through-human-feedback/>  
+  - <https://blog.openai.com/deep-reinforcement-learning-from-human-preferences/>  
+  - <https://github.com/nottombrown/rl-teacher>  
+
 
 
 ---
@@ -1521,7 +1589,7 @@ hieves."
   - <https://youtube.com/watch?v=wJjdu1bPJ04> (demo)  
 
 [Programmable Agents](https://arxiv.org/abs/1706.06383) (DeepMind)  
-  - <https://youtube.com/playlist?list=PLs1LSEoK_daRDnPUB2u7VAXSonlNU7IcV> (demos)  
+  - <https://youtube.com/playlist?list=PLs1LSEoK_daRDnPUB2u7VAXSonlNU7IcV> (demo)  
 
 [Emergent Language in a Multi-Modal, Multi-Step Referential Game](https://arxiv.org/abs/1705.10369)  
 
@@ -1718,4 +1786,4 @@ hieves."
 
 [Improved Variational Autoencoders for Text Modeling using Dilated Convolutions](http://arxiv.org/abs/1702.08139) (Salakhutdinov)  
 
-[Controllable Text Generation](http://arxiv.org/abs/1703.00955) (Salakhutdinov)  
+[Toward Controlled Generation of Text](http://arxiv.org/abs/1703.00955) (Salakhutdinov)  

@@ -1,5 +1,4 @@
   Intelligence is information processing necessary to achieve goals with limited resources.  
-  Intelligence measures an agent's ability to achieve goals in some range of environments.  
 
 
   * [overview](#overview)
@@ -89,16 +88,13 @@
 ----
 #### automated science
 
-  ["Automated Machine Learning: A Short History"](https://datarobot.com/blog/automated-machine-learning-short-history/)
-
-  [AutoML](http://automl.chalearn.org) - "Design the perfect machine learning “black box” capable of performing all model selection and hyper-parameter tuning without any human intervention"
+  [Automated Machine Learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#automated-machine-learning)
 
 ----
 #### dialog interaction
 
   ["A Paradigm for Situated and Goal-Driven Language Learning"](https://arxiv.org/abs/1610.03585) by Gauthier and Mordatch  
   ["A Roadmap Towards Machine Intelligence"](http://arxiv.org/abs/1511.08130) by Mikolov, Joulin, Baroni  
-  ["Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks"](http://arxiv.org/abs/1502.05698) by Weston et al.  
 
 ----
 #### games
@@ -163,16 +159,13 @@
 ### problems
 
   - [*knowledge representation*](#knowledge-representation)  
-	what is the space of possible beliefs?  
-	how do beliefs interact?  
-	can we formulate a knowledge representation which could in principle express any concept a human can conceive of?  
+	What is space of possible beliefs? How do beliefs interact?  
 
   - [*inference/reasoning*](#inferencereasoning)  
-	how do we implement inference over these beliefs?  
-	inference/reasoning are catch-all terms referring to the way beliefs move around in the space of possible beliefs  
+	How can inference and reasoning be performed over beliefs?  
 
   - [*decisions/actions*](#decisionsactions)  
-	how do beliefs conspire to produce decisions and actions?  
+	How can beliefs conspire to produce decisions and actions?  
 
 
 
@@ -331,7 +324,7 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
   [Reinforcement Learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)
 
-  Shakir Mohamed - "Learning in Brains and Machines":  
+  "Learning in Brains and Machines" by Shakir Mohamed:  
 	["Temporal Differences"](http://blog.shakirm.com/2016/02/learning-in-brains-and-machines-1/)  
 	["The Dogma of Sparsity"](http://blog.shakirm.com/2016/04/learning-in-brains-and-machines-2/)  
 	["Synergistic and Modular Action"](http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/)  
@@ -614,18 +607,16 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 ### interesting papers
 
 
-[selected papers](https://dropbox.com/sh/gmo2hort07gsydj/AACK0XoOOLsrzCyYC1eLwyOwa)
-
-[knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
-[machine learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md)  
-[deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
-[reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)  
-[bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)  
-[probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
-[semantic web](https://github.com/brylevkirill/tech/blob/master/RDF/RDF.txt)  
-
-
 [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md)
+
+
+interesting papers:  
+  - [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers)  
+  - [machine learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#interesting-papers)  
+  - [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers)  
+  - [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers)  
+  - [bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt#interesting-papers)  
+  - [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers)  
 
 
 interesting papers (see below):  

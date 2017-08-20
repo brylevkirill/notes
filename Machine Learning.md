@@ -16,6 +16,7 @@
     - [theory and black box](#interesting-quotes---theory-and-black-box)
     - [unsupervised learning](#interesting-quotes---unsupervised-learning)
     - [loss function and grounding](#interesting-quotes---loss-function-and-grounding)
+    - [bayesian inference and learning](#interesting-quotes---bayesian-inference-and-learning)
   * [interesting papers](#interesting-papers)
     - [automated machine learning](#interesting-papers---automated-machine-learning)
     - [systems](#interesting-papers---systems)
@@ -134,6 +135,7 @@
   Tom Mitchell - ["Machine Learning"](https://goo.gl/tyNHMH)  
   Shai Shalev-Shwartz, Shai Ben-David - ["Understanding Machine Learning: From Theory to Algorithms"](https://goo.gl/tHmsdD)  
   Chris Bishop - ["Pattern Recognition and Machine Learning"](https://goo.gl/58Yvvp)  
+  Bradley Efron, Trevor Hastie - ["Computer Age Statistical Inference"](https://web.stanford.edu/~hastie/CASI_files/PDF/casi.pdf)  
   Trevor Hastie, Robert Tibshirani, Jerome Friedman - ["The Elements of Statistical Learning"](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf)  
   Kevin Murphy - ["Machine Learning - A Probabilistic Perspective"](https://goo.gl/Vh7Jje)  
   David MacKay - ["Information Theory, Inference, and Learning Algorithms"](http://users.aims.ac.za/~mackay/itila/book.html)  
@@ -166,6 +168,58 @@
   <https://deeplearningweekly.com>  
 
   <https://reddit.com/r/MachineLearning/>  
+
+
+#### conferences
+
+  - ICML 2017  
+	<https://olgalitech.wordpress.com/tag/icml2017/>  
+
+  - ICLR 2017  
+	<https://facebook.com/pg/iclr.cc/videos/>  
+	<https://medium.com/@karpathy/iclr-2017-vs-arxiv-sanity-d1488ac5c131>  
+
+  - NIPS 2016  
+	<https://nips.cc/Conferences/2016/Schedule>  
+	<https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016>  
+	<https://nips.cc/Conferences/2016/SpotlightVideos>  
+	<http://papers.ai/collections/nips.2016>  
+
+	<http://people.idsia.ch/~rupesh/rnnsymposium2016/program.html> + <https://youtube.com/playlist?list=PLPwzH56Rdmq4hcuEMtvBGxUrcQ4cAkoSc>  
+	<https://sites.google.com/site/nips2016adversarial/> + <https://youtube.com/playlist?list=PLJscN9YDD1buxCitmej1pjJkR5PMhenTF>  
+	<http://bayesiandeeplearning.org> + <https://youtube.com/channel/UC_LBLWLfKk5rMKDOHoO7vPQ>  
+	<https://uclmr.github.io/nampi/> + <https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt>  
+
+	<https://github.com/hindupuravinash/nips2016>  
+	<https://gist.github.com/artsobolev/63942e24c81fc296472affb1f138d54c>  
+
+  - ICML 2016  
+	<http://techtalks.tv/icml/2016/>  
+
+  - ICLR 2016  
+	<http://videolectures.net/iclr2016_san_juan/>  
+	<https://tensortalk.com/?cat=conference-iclr-2016>  
+	<http://www.computervisionblog.com/2016/06/deep-learning-trends-iclr-2016.html>
+
+  - NIPS 2015  
+	<http://research.microsoft.com/apps/catalog/default.aspx?p=1&sb=no&ps=25&t=videos&sf=&s=&r=&vr=&ra=>  
+	<http://www.iro.umontreal.ca/~bengioy/talks/DL-Tutorial-NIPS2015.pdf>  
+	<http://colinraffel.com/wiki/tag/nips_2015?do=showtag&tag=NIPS_2015>  
+	<http://reddit.com/r/MachineLearning/comments/3x2ueg/nips_2015_overviews_collection/>  
+	<http://cinrizasti.blogspot.ru/2015/12/a-blog-post-about-blog-posts-about-nips.html>  
+
+  - ICML 2015  
+	<http://dpkingma.com/?page_id=483>  
+	<https://youtube.com/playlist?list=PLdH9u0f1XKW8cUM3vIVjnpBfk_FKzviCu>  
+
+  - ICLR 2015  
+	<http://iclr.cc/doku.php?id=iclr2015:main#conference_schedule>  
+	<http://youtube.com/channel/UCqxFGrNL5nX10lS62bswp9w>  
+
+  - NIPS 2014  
+	<https://nips.cc/Conferences/2014/Schedule?type=Oral>  
+	<https://nips.cc/Conferences/2014/Schedule>  
+	<http://youtube.com/user/NeuralInformationPro/videos>  
 
 
 
@@ -226,8 +280,8 @@
 
 #### bayesian framework
 
-  [Bayesian Inference and Learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)  
-  [Bayesian Deep Learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)  
+  [bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)  
+  [bayesian deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)  
 
   - probability as measure of uncertainty, encodes ignorance in terms of distributions  
   - treats everything as random variables, no difference between random and unknown variables  
@@ -493,7 +547,7 @@ Bias-variance tradeoff characterizes how robust algorithm is to errors in its mo
 ---
 ### automated machine learning
 
-AutoML aims to automate many different stages of the machine learning process:  
+  AutoML aims to automate many different stages of the machine learning process:  
   - model selection, hyper-parameter optimization, and model search  
   - meta learning and transfer learning  
   - representation learning and automatic feature extraction / construction  
@@ -511,7 +565,7 @@ AutoML aims to automate many different stages of the machine learning process:
   - automatic inference and differentiation  
   - user interfaces for AutoML  
 
-problems:  
+  problems:  
   - different data distributions: the intrinsic/geometrical complexity of the dataset  
   - different tasks: regression, binary classification, multi-class classification, multi-label classification  
   - different scoring metrics: AUC, BAC, MSE, F1, etc  
@@ -536,7 +590,14 @@ problems:
   [TPOT Data Science Assistant](http://rhiever.github.io/tpot/) project
 
   ["The Automatic Statistician"](https://youtu.be/H7AMB0oo__4?t=53m20s) by Zoubin Ghahramani ([slides](http://webdav.tuebingen.mpg.de/mlss2013/2015/slides/ghahramani/mlss15future.pdf))  
-  ["The Automatic Statiscian: A project update"](https://youtube.com/watch?v=WW2eunuApAU) by Zoubin Ghahramani  
+  ["The Automatic Statistician: A project update"](https://youtube.com/watch?v=WW2eunuApAU) by Zoubin Ghahramani  
+
+  ["Automated Machine Learning: A Short History"](https://datarobot.com/blog/automated-machine-learning-short-history/)
+
+----
+
+  [AutoML](http://automl.chalearn.org):  
+>	"Design the perfect machine learning “black box” capable of performing all model selection and hyper-parameter tuning without any human intervention"  
 
   [DARPA's Data-Driven Discovery of Models (D3M)](http://www.darpa.mil/news-events/2016-06-17):  
 >	"The goal of D3M is to help overcome the data-science expertise gap by enabling non-experts to construct complex empirical models through automation of large parts of the model-creation process. If successful, researchers using D3M tools will effectively have access to an army of “virtual data scientists”."

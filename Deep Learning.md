@@ -12,6 +12,8 @@
     - [autoregressive models](#generative-models---autoregressive-models)
     - [restricted boltzmann machine](#generative-models---restricted-boltzmann-machine)
   * [architectures](#architectures)
+    - [convolutional neural network](#convolutional-neural-network)
+    - [recurrent neural network](#recurrent-neural-network)
     - [compute and memory](#architectures---compute-and-memory)
     - [attention](#architectures---attention)
     - [distributed representations](#architectures---distributed-representations)
@@ -63,6 +65,9 @@
 	<http://techtalks.tv/talks/whats-wrong-with-deep-learning/61639/>  
 
 
+  [interesting quotes](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#interesting-quotes)
+
+
 #### history
 
   <http://scholarpedia.org/article/Deep_Learning>  
@@ -85,78 +90,17 @@
 
 #### courses
 
-  Nando de Freitas - ["Machine Learning"](https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/) ([videos](http://youtube.com/playlist?list=PLE6Wd9FR--EfW8dtjAuPoTuPcqmOV53Fu))  
-  Hugo Larochelle - ["Neural Networks"](http://info.usherbrooke.ca/hlarochelle/neural_networks/content.html) ([videos](http://youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH))  
-  Geoffrey Hinton - ["Neural Networks for Machine Learning"](https://coursera.org/course/neuralnets) ([videos](http://youtube.com/user/aicourses/playlists?shelf_id=2&view=50))  
-  Andrej Karpathy - ["Convolutional Neural Networks for Visual Recognition"](http://cs231n.stanford.edu) ([videos](https://youtube.com/channel/UC2__PIf36huAgKFumlOIs6A))  
+  ["Deep Learning"](https://coursera.org/specializations/deep-learning) by Andrew Ng  
+  ["Neural Networks"](http://info.usherbrooke.ca/hlarochelle/neural_networks/content.html) by Hugo Larochelle ([videos](http://youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH))  
+  ["Machine Learning"](https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/) by Nando de Freitas ([videos](http://youtube.com/playlist?list=PLE6Wd9FR--EfW8dtjAuPoTuPcqmOV53Fu))  
+  ["Neural Networks for Machine Learning"](https://coursera.org/course/neuralnets) by Geoffrey Hinton ([videos](http://youtube.com/user/aicourses/playlists?shelf_id=2&view=50))  
+  ["Convolutional Neural Networks for Visual Recognition"](http://cs231n.stanford.edu) by Andrej Karpathy ([videos](https://youtube.com/channel/UC2__PIf36huAgKFumlOIs6A))  
 
 
 #### books
 
-  Ian Goodfellow, Yoshua Bengio, Aaron Courville - ["Deep Learning"](http://www.deeplearningbook.org) ([pdf](https://vk.com/doc39735126_437404212))  
-  Francois Chollet - ["Deep Learning with Python"](https://manning.com/books/deep-learning-with-python)  
-
-
-#### monographies
-
-  Wojciech Zaremba - ["Learning Algorithms from Data"](http://www.cs.nyu.edu/media/publications/zaremba_wojciech.pdf)  
-  Zachary Lipton - ["A Critical Review of Recurrent Neural Networks for Sequence Learning"](http://arxiv.org/abs/1506.00019)  
-  Yoshua Bengio - ["Learning Deep Architectures for AI"](http://www.iro.umontreal.ca/~lisa/pointeurs/TR1312.pdf)  
-  Alex Graves - ["Supervised Sequence Labelling with Recurrent Neural Networks"](http://www.cs.toronto.edu/~graves/preprint.pdf)  
-  Razvan Pascanu - ["On Recurrent and Deep Neural Networks"](http://vk.com/doc-44016343_324696811)  
-  Ian Goodfellow - ["Deep learning of representations and its application to computer vision"](http://vk.com/doc-44016343_290145133)  
-  Felix Gers - ["Long Short-Term Memory in Recurrent Neural Networks"](http://felixgers.de/papers/phd.pdf)  
-  Ilya Sutskever - ["Training Recurrent Neural Networks"](http://www.cs.utoronto.ca/~ilya/pubs/ilya_sutskever_phd_thesis.pdf)  
-  Tijmen Tieleman - ["Optimizing Neural Networks that Generate Images"](http://www.cs.toronto.edu/~tijmen/tijmen_thesis.pdf)  
-
-
-#### conferences
-
-  - ICLR 2017  
-	<https://facebook.com/pg/iclr.cc/videos/>  
-	<https://medium.com/@karpathy/iclr-2017-vs-arxiv-sanity-d1488ac5c131>  
-
-  - NIPS 2016  
-	<https://nips.cc/Conferences/2016/Schedule>  
-	<https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016>  
-	<https://nips.cc/Conferences/2016/SpotlightVideos>  
-	<http://papers.ai/collections/nips.2016>  
-
-	<http://people.idsia.ch/~rupesh/rnnsymposium2016/program.html> + <https://youtube.com/playlist?list=PLPwzH56Rdmq4hcuEMtvBGxUrcQ4cAkoSc>  
-	<https://sites.google.com/site/nips2016adversarial/> + <https://youtube.com/playlist?list=PLJscN9YDD1buxCitmej1pjJkR5PMhenTF>  
-	<http://bayesiandeeplearning.org> + <https://youtube.com/channel/UC_LBLWLfKk5rMKDOHoO7vPQ>  
-	<https://uclmr.github.io/nampi/> + <https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt>  
-
-	<https://github.com/hindupuravinash/nips2016>  
-	<https://gist.github.com/artsobolev/63942e24c81fc296472affb1f138d54c>  
-
-  - ICML 2016  
-	<http://techtalks.tv/icml/2016/>  
-
-  - ICLR 2016  
-	<http://videolectures.net/iclr2016_san_juan/>  
-	<https://tensortalk.com/?cat=conference-iclr-2016>  
-	<http://www.computervisionblog.com/2016/06/deep-learning-trends-iclr-2016.html>
-
-  - NIPS 2015  
-	<http://research.microsoft.com/apps/catalog/default.aspx?p=1&sb=no&ps=25&t=videos&sf=&s=&r=&vr=&ra=>  
-	<http://www.iro.umontreal.ca/~bengioy/talks/DL-Tutorial-NIPS2015.pdf>  
-	<http://colinraffel.com/wiki/tag/nips_2015?do=showtag&tag=NIPS_2015>  
-	<http://reddit.com/r/MachineLearning/comments/3x2ueg/nips_2015_overviews_collection/>  
-	<http://cinrizasti.blogspot.ru/2015/12/a-blog-post-about-blog-posts-about-nips.html>  
-
-  - ICML 2015  
-	<http://dpkingma.com/?page_id=483>  
-	<https://youtube.com/playlist?list=PLdH9u0f1XKW8cUM3vIVjnpBfk_FKzviCu>  
-
-  - ICLR 2015  
-	<http://iclr.cc/doku.php?id=iclr2015:main#conference_schedule>  
-	<http://youtube.com/channel/UCqxFGrNL5nX10lS62bswp9w>  
-
-  - NIPS 2014  
-	<https://nips.cc/Conferences/2014/Schedule?type=Oral>  
-	<https://nips.cc/Conferences/2014/Schedule>  
-	<http://youtube.com/user/NeuralInformationPro/videos>  
+  ["Deep Learning"](http://www.deeplearningbook.org) by Ian Goodfellow, Yoshua Bengio, Aaron Courville ([pdf](https://vk.com/doc39735126_437404212))  
+  ["Deep Learning with Python"](https://manning.com/books/deep-learning-with-python) by Francois Chollet  
 
 
 
@@ -225,9 +169,10 @@
   [stability as foundation of machine learning](http://www.offconvex.org/2016/03/14/stability/)  
   [adversarial examples](http://kdnuggets.com/2015/07/deep-learning-adversarial-examples-misconceptions.html)  
 
+  [back-propagation](http://www.offconvex.org/2016/12/20/backprop/)  
   [calculus on computational graphs: backpropagation](http://colah.github.io/posts/2015-08-Backprop/)  
   [calculus and backpropagation](https://github.com/mtomassoli/papers/blob/master/backprop.pdf)  
-  [gradients and normalization](https://theneuralperspective.com/2016/10/27/gradient-topics/)  
+  [automatic differentiation](https://timvieira.github.io/blog/post/2016/09/25/evaluating-fx-is-as-fast-as-fx/)  
 
   [gradient descent optimization](http://mrtz.org/blog/the-zen-of-gradient-descent/)  
   [gradient descent algorithms](http://sebastianruder.com/optimizing-gradient-descent/)  
@@ -386,11 +331,11 @@
 
 ----
 
-  ["Everything that Works Works Because it's Bayesian: Why Deep Nets Generalize?"](http://inference.vc/everything-that-works-works-because-its-bayesian-2/) by Ferenc Huszar
-
   ["Bayesian Reasoning and Deep Learning in Agent-based Systems"](https://youtube.com/watch?v=AggqBRdz6CQ) by Shakir Mohamed  
   ["Principles and Applications of Deep Generative Models"](http://videolectures.net/deeplearning2016_mohamed_generative_models/) by Shakir Mohamed  
+  ["A History of Bayesian Neural Networks"](https://youtube.com/watch?v=FD8l2vPU5FY) by Zoubin Ghahramani  
 
+  ["Neurobayesian Approach for Machine Learning"](https://youtu.be/kFe5zSkro0E?t=17m16s) ([write-up](https://habrahabr.ru/company/yandex/blog/321434/) in russian)  
   ["Bayesian Inference and Deep Learning"](https://youtu.be/_qrHcSdQ2J4?t=22m31s) by Dmitry Vetrov (in russian)  
   ["Learning in Stochastic Computation Graphs"](https://youtu.be/0q5p7xP4cdA?t=5h4m9s) by Dmitry Vetrov (in russian)  
   ["Bridging The Gap Between Bayesian Models and Deep Learning"](https://youtube.com/watch?v=BKh7nj5SmnI) by Dmitry Vetrov (in russian)  
@@ -409,6 +354,18 @@
 
 ----
 
+  ["Deep Learning: Efficiency is the Driver of Uncertainty"](http://inverseprobability.com/2016/03/04/deep-learning-and-uncertainty) by Neil Lawrence
+
+  ["Deep Learning Is Not Good Enough, We Need Bayesian Deep Learning for Safe AI"](https://alexgkendall.com/computer_vision/bayesian_deep_learning_for_safe_ai/) by Alex Kendall  
+
+  ["What My Deep Model Doesn't Know..."](http://mlg.eng.cam.ac.uk/yarin/blog_3d801aa532c1ce.html) by Yarin Gal  
+  ["Uncertainty In Deep Learning"](http://mlg.eng.cam.ac.uk/yarin/blog_2248.html) by Yarin Gal  
+
+  ["Course on Information Theory, Pattern Recognition, and Neural Networks"](http://videolectures.net/course_information_theory_pattern_recognition/) by David MacKay  
+  ["Bayesian Methods for Adaptive Models"](http://www.inference.phy.cam.ac.uk/mackay/thesis.pdf) by David MacKay  
+
+----
+
   ["A Statistical View of Deep Learning"](http://blog.shakirm.com/2015/07/a-statistical-view-of-deep-learning-retrospective/) by Shakir Mohamed:  
   - ["Recursive GLMs"](http://blog.shakirm.com/2015/01/a-statistical-view-of-deep-learning-i-recursive-glms/)  
   - ["Auto-encoders and Free Energy"](http://blog.shakirm.com/2015/03/a-statistical-view-of-deep-learning-ii-auto-encoders-and-free-energy/)  
@@ -417,15 +374,7 @@
   - ["Generalisation and Regularisation"](http://blog.shakirm.com/2015/05/a-statistical-view-of-deep-learning-v-generalisation-and-regularisation/)  
   - ["What is Deep?"](http://blog.shakirm.com/2015/06/a-statistical-view-of-deep-learning-vi-what-is-deep/)  
 
-----
-
-  ["Deep Learning: Efficiency is the Driver of Uncertainty"](http://inverseprobability.com/2016/03/04/deep-learning-and-uncertainty) by Neil Lawrence
-
-  ["What My Deep Model Doesn't Know..."](http://mlg.eng.cam.ac.uk/yarin/blog_3d801aa532c1ce.html) by Yarin Gal  
-  ["Uncertainty In Deep Learning"](http://mlg.eng.cam.ac.uk/yarin/blog_2248.html) by Yarin Gal  
-
-  ["Course on Information Theory, Pattern Recognition, and Neural Networks"](http://videolectures.net/course_information_theory_pattern_recognition/) by David MacKay  
-  ["Bayesian Methods for Adaptive Models"](http://www.inference.phy.cam.ac.uk/mackay/thesis.pdf) by David MacKay  
+  ["Everything that Works Works Because it's Bayesian: Why Deep Nets Generalize?"](http://inference.vc/everything-that-works-works-because-its-bayesian-2/) by Ferenc Huszar
 
 ----
 
@@ -456,6 +405,8 @@
 
 ----
 
+  ["Unsupervised learning, one notion or many?"](http://www.offconvex.org/2017/06/27/unsupervised1/) by Sanjeev Arora and Andrej Risteski  
+
   ["Representation Learning and the Information Bottleneck Approach"](http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/) by Ference Huszar  
   ["Is Maximum Likelihood Useful for Representation Learning?"](http://inference.vc/maximum-likelihood-for-representation-learning-2/) by Ference Huszar  
 
@@ -464,11 +415,11 @@
 ---
 ### generative models
 
-  ["Generative Models"](https://openai.com/blog/generative-models/) by OpenAI
+  ["Generative Models"](https://openai.com/blog/generative-models/) by OpenAI  
+  ["Recent Progress in Generative Modeling"](http://scaledml.org/2016/slides/ilya.pdf) by Ilya Sutskever  
 
-  ["Building Machines that Imagine and Reason: Principles and Applications of Deep Generative Models"](http://videolectures.net/deeplearning2016_mohamed_generative_models/) by Shakir Mohamed
-
-  ["Recent Progress in Generative Modeling"](http://scaledml.org/2016/slides/ilya.pdf) by Ilya Sutskever
+  ["Generative Models"](https://youtube.com/watch?v=5WoItGTWV54) by Serena Yeung  
+  ["Building Machines that Imagine and Reason: Principles and Applications of Deep Generative Models"](http://videolectures.net/deeplearning2016_mohamed_generative_models/) by Shakir Mohamed  
 
   ["Differentiable Inference and Generative Models"](http://www.cs.toronto.edu/~duvenaud/courses/csc2541/index.html) course by David Duvenaud
 
@@ -505,17 +456,27 @@
 
   generative models:  
 
-  - [*generative adversarial networks*](#generative-models---generative-adversarial-networks)  
+  - implicit density
+
+	[*generative adversarial networks*](#generative-models---generative-adversarial-networks)  
 	A way to train generative models by optimizing them to fool a classifier, the discriminator network, that tries to distinguish between real data and data generated by the generator network.  
 
-  - [*variational autoencoders*](#generative-models---variational-autoencoder)  
+  - approximate explicit density
+
+	[*variational autoencoders*](#generative-models---variational-autoencoder)  
 	Latent variable models that use a neural network to do approximate inference. The recognition network looks at each datapoint x and outputs an approximate posterior on the latents q(z|x) for that datapoint.  
 
-  - [*autoregressive models*](#generative-models---autoregressive-models)  
+	[*restricted boltzmann machine*](#generative-models---restricted-boltzmann-machine)  
+	Latent variable model with hidden units conditionally independent given the visible states, so we can quickly get an unbiased sample from the posterior distribution when given a data vector.  
+
+  - tractable explicit density
+
+	[*autoregressive models*](#generative-models---autoregressive-models)  
 	Another way to model p(x) is to break the model into a series of conditional distributions: p(x)=p(x1)p(x2|x1)p(x3|x2,x1)…p(x)=p(x1)p(x2|x1)p(x3|x2,x1)… This is the approach used, for example, by recurrent neural networks. These models are also realitvely easy to train, but the downside is that they don't support all of the same queries we can make of latent variable models.  
 
-  - *invertible density estimation*  
+	*invertible density estimation*  
 	A way to specify complex generative models by transforming a simple latent distribution with a series of invertible functions. These approaches are restricted to a more limited set of possible operations, but sidestep the difficult integrals required to train standard latent variable models.  
+
 
   "For models, there are Boltzmann machines, exponential families, PCA, FA, ICA, SFA, graphical models, NICE and followups, deep energy models, and gazillions of other things. For approximation/learning techniques, there's pseudolikelihood, score matching, moment matching, contrastive divergence, and gazillions of other things that don't fit into these three "broad" categories."
 
@@ -821,6 +782,8 @@ examples:
 ["Generative Modelling as Sequence Learning"](https://youtube.com/watch?v=leu286ciQcE) by Nal Kalchbrenner  
 ["Autoregressive Generative Models with Deep Learning"](http://www.fields.utoronto.ca/video-archive/2017/01/2267-16372) by Hugo Larochelle  
 
+["Autoregressive Generative Models"](https://ift6266h17.files.wordpress.com/2017/03/autoregressive_gen.pdf) by Hugo Larochelle, Vincent Dumoulin, Aaron Courville
+
 ----
 
 [interesting papers](#interesting-papers---autoregressive-models)
@@ -849,8 +812,6 @@ examples:
 ----
 
   "RBM learns internal (not defined by the user) concepts that help to explain (that can generate) the observed data. These concepts are captured by random variables (called hidden units) that have a joint distribution (statistical dependencies) among themselves and with the data, and that allow the learner to capture highly non-linear and complex interactions between the parts (observed random variables) of any observed example (like the pixels in an image). One can also think of these higher-level factors or hidden units as another, more abstract, representation of the data. RBM is parametrized through simple two-way interactions between every pair of random variable involved (the observed ones as well as the hidden ones)."
-
-  "In RMBs the hidden units are conditionally independent given the visible states, so we can quickly get an unbiased sample from the posterior distribution when given a data vector. Unlike autoencoders that only discriminate some data vectors in favour of others, RBMs can also generate new data with given joined distribution."
 
   stochastic binary units:  Probability of turning on is determined by the weighted input from other units plus a bias.  
   maximum likelihood estimation learning:  Start with a training vector v on the visible units, then alternate between updating all the hidden units in parallel and all the visible units in parallel.  
@@ -909,11 +870,40 @@ examples:
 
 
 ----
+#### architectures - convolutional neural network
+
+  ["Convolutional Neural Network"](http://deeplearningbook.org/contents/convnets.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
+
+  [overview](https://youtube.com/watch?v=LxfUGhug-iQ) by Andrej Karpathy  
+  [overview](https://youtube.com/watch?v=bNb2fEVKeEo) by Serena Young  
+  [overview](http://videolectures.net/deeplearning2016_fergus_neural_networks/) by Rob Fergus  
+  [overview](https://youtu.be/Xogn6veSyxA?t=40m30s) by Ian Goodfellow  
+  [overview](https://youtube.com/watch?v=6-yBs3XLM20) by Victor Lempitsky (in russian)  
+
+  [overview](http://cs231n.github.io/convolutional-networks/) by Andrej Karpathy  
+  ["Conv Nets: A Modular Perspective"](http://colah.github.io/posts/2014-07-Conv-Nets-Modular/) by Chris Olah  
+  ["Understanding Convolutions"](http://colah.github.io/posts/2014-07-Understanding-Convolutions/) by Chris Olah  
+
+  ["CNN Architectures"](https://youtube.com/watch?v=DAOcjicFr1Y) by Serena Young  
+  [overview of architectures](https://medium.com/towards-data-science/neural-network-architectures-156e5bad51ba) by Eugenio Culurciello  
+
+----
+
+  "Compared to recurrent networks these models can have many, many layers which can make up for the lack of explicit state to some extent. Also the fact that they can be fully parallelised across time during training and don't require backpropagation through time is a considerable advantage. Not to mention that it's much easier to build models with large temporal receptive fields."
+
+  "Compared to recurrent networks using only the output as state is very limiting, and conversely, hidden states are extremely powerful. Most algorithms we design do not just use the outputs as variables, but there are rather hundreds or billions of states that determine the output. Recurrent networks are just notoriously hard to train, so it is a matter of finding the right regularization techniques."
+
+  "It is easy to imagine computations that would be vastly more efficient using hidden states. For example if you want to track a person hiding behind a wall. If you increase the time period the person spends hiding behind the wall, then at some point the advantages from cheap training of passive/hierarchical/diluted convolutional models will be outperformed by a NN with a state that is encoded at network level, protected by gates, or maintained by some recall mechanism."
+
+
+
+----
 #### architectures - recurrent neural network
 
-  <http://deeplearningbook.org/contents/rnn.html>
+  ["Recurrent Neural Network"](http://deeplearningbook.org/contents/rnn.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
 
   [overview](https://youtube.com/watch?v=yCC09vCHzF8) by Andrej Karpathy  
+  [overview](https://youtube.com/watch?v=6niqTuYFZLQ) by Justin Johnson  
   [overview](https://youtube.com/watch?v=ZVN14xYm7JA) by Ian Goodfellow  
   [overview](http://videolectures.net/deeplearning2016_bengio_neural_networks/) by Yoshua Bengio  
 
@@ -926,6 +916,7 @@ examples:
   **long short term memory**
 
   [overview](https://youtu.be/yCC09vCHzF8?t=45m31s) by Andrej Karpathy  
+
   ["Understanding LSTM Networks"](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) by Chris Olah  
   ["Understanding, Deriving and Extending the LSTM"](http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html)  
   ["Backpropogating an LSTM: A Numerical Example"](http://blog.aidangomez.ca/2016/04/17/Backpropogating-an-LSTM-A-Numerical-Example/)  
@@ -950,32 +941,6 @@ examples:
 
   ["Beyond Seq2Seq with Augmented RNNs"](http://videolectures.net/deeplearning2016_grefenstette_augmented_rnn/) by Edward Grefenstette  
   ["New Directions for Recurrent Neural Networks"](https://facebook.com/iclr.cc/videos/1713144705381255/) by Alex Graves  
-
-
-
-----
-#### architectures - convolutional neural network
-
-  <http://deeplearningbook.org/contents/convnets.html>
-
-  [overview](https://youtube.com/watch?v=LxfUGhug-iQ) by Andrej Karpathy  
-  [overview](http://videolectures.net/deeplearning2016_fergus_neural_networks/) by Rob Fergus  
-  [overview](https://youtu.be/Xogn6veSyxA?t=40m30s) by Ian Goodfellow  
-  [overview](https://youtube.com/watch?v=6-yBs3XLM20) by Victor Lempitsky (in russian)  
-
-  [overview](http://cs231n.github.io/convolutional-networks/) by Andrej Karpathy  
-  ["Conv Nets: A Modular Perspective"](http://colah.github.io/posts/2014-07-Conv-Nets-Modular/) by Chris Olah  
-  ["Understanding Convolutions"](http://colah.github.io/posts/2014-07-Understanding-Convolutions/) by Chris Olah  
-
-  [overview of architectures](https://medium.com/towards-data-science/neural-network-architectures-156e5bad51ba) by Eugenio Culurciello
-
-----
-
-  "Compared to recurrent networks these models can have many, many layers which can make up for the lack of explicit state to some extent. Also the fact that they can be fully parallelised across time during training and don't require backpropagation through time is a considerable advantage. Not to mention that it's much easier to build models with large temporal receptive fields."
-
-  "Compared to recurrent networks using only the output as state is very limiting, and conversely, hidden states are extremely powerful. Most algorithms we design do not just use the outputs as variables, but there are rather hundreds or billions of states that determine the output. Recurrent networks are just notoriously hard to train, so it is a matter of finding the right regularization techniques."
-
-  "It is easy to imagine computations that would be vastly more efficient using hidden states. For example if you want to track a person hiding behind a wall. If you increase the time period the person spends hiding behind the wall, then at some point the advantages from cheap training of passive/hierarchical/diluted convolutional models will be outperformed by a NN with a state that is encoded at network level, protected by gates, or maintained by some recall mechanism."
 
 
 
@@ -1103,7 +1068,7 @@ hard attention models:
 
   ["Distributed Representations"](http://www.cs.toronto.edu/~bonner/courses/2014s/csc321/lectures/lec5.pdf) by Geoffrey Hinton
 
-  ["From Machine Learning to Machine Reasoning"](http://research.microsoft.com/pubs/192773/tr-2011-02-08.pdf) by Leon Bottou + [talk](http://youtube.com/watch?v=tzp_BikdgyM)
+  ["From Machine Learning to Machine Reasoning"](http://research.microsoft.com/pubs/192773/tr-2011-02-08.pdf) by Leon Bottou ([talk](http://youtube.com/watch?v=tzp_BikdgyM))
 
   ["Representation Learning"](http://deeplearningbook.org/contents/representation.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
 
@@ -1481,6 +1446,7 @@ interesting papers (see below):
 
 >	"Hinton seems to believe that all information must somehow still be somewhat visible at the highest level of a hierarchy. With stuff like maxout units, yes, information is lost at higher layers. But the information isn't gone! It's still stored in the activations of the lower layers."
 
+  - <https://youtube.com/watch?v=Mqt8fs6ZbHk> (Hinton)
   - <http://techtv.mit.edu/collections/bcs/videos/30698-what-s-wrong-with-convolutional-nets> (Hinton) + <https://github.com/WalnutiQ/walnut/issues/157> (transcription)
   - <https://github.com/mrkulk/Unsupervised-Capsule-Network>
   - "Transforming Auto-encoders" by Hinton, Krizhevsky, Wang - <http://www.cs.toronto.edu/~fritz/absps/transauto6.pdf>
@@ -2406,6 +2372,7 @@ interesting papers (see below):
 
 >	"Actor-critic methods and generative adversarial networks are two such classes of multilevel optimization problems which have close parallels. In both cases the information flow is a simple feedforward pass from one model which either takes an action (AC) or generates a sample (GANs) to a second model which evaluates the output of the first model. In both cases, the second model is the only one which has direct access to special information in the environment, either reward information (AC) or real samples from the distribution in question (GANs), and the first model must learn based on error signals from the second model alone. GANs and AC methods have important differences as well, and we show a construction that bridges the two. Both of these models suffer from stability issues, and techniques for stabilizing training have been developed largely independently by the two communities."
 
+  - <https://youtube.com/watch?v=3s4UyoMilQo> (Pfau)
   - <https://youtube.com/watch?v=RZOKRFBtSh4&t=1m> (Pfau)
 
 

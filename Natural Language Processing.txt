@@ -61,8 +61,11 @@
 
   textbook by Michael Collins - https://dropbox.com/sh/e0unkrb6xoqyjmg/AAANfPi9K9fAjboL5XTCkb5La
 
-  "Speech and Language Processing" by Jurafsky & Martin - http://web.stanford.edu/~jurafsky/slp3/
-  "Foundations of Statistical Natural Language Processing" by Manning & Schutze - http://nlp.stanford.edu/fsnlp/
+  "Speech and Language Processing" by Dan Jurafsky and James Martin - http://web.stanford.edu/~jurafsky/slp3/
+  "Foundations of Statistical Natural Language Processing" by Chris Manning and Hinrich Schutze - http://nlp.stanford.edu/fsnlp/
+  "Neural Network Methods for Natural Language Processing" by Yoav Goldberg - http://morganclaypool.com/doi/abs/10.2200/S00762ED1V01Y201703HLT037
+
+  "Deep Learning for NLP Best Practices" by Sebastian Ruder - http://ruder.io/deep-learning-nlp-best-practices/
 
   Stanford University reading group - http://nlp.stanford.edu/read/
   University of Arizona reading group - https://github.com/clulab/nlp-reading-group/

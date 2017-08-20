@@ -831,7 +831,8 @@
   - *Facebook CommAI*
   	<https://github.com/facebookresearch/CommAI-env>
 
-	["A Roadmap Towards Machine Intelligence"](http://arxiv.org/abs/1511.08130) by Mikolov, Joulin, Baroni
+	["A Roadmap Towards Machine Intelligence"](http://arxiv.org/abs/1511.08130) by Mikolov, Joulin, Baroni  
+	["Simple Tasks, Grand Challenges: Defining an Evaluation Roadmap for General AI"](https://youtube.com/watch?v=zAyqIdKJuh8) by Marco Baroni  
 
 
   - *Facebook bAbi*  
