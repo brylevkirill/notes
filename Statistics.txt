@@ -36,6 +36,9 @@ selected papers and books on data science - https://dropbox.com/sh/ivbn5ldue427s
 	"Models and Residuals: This pillar enables you to examine shortcomings of a model by examining the difference between the observed data and the model. If the residuals have a systematic pattern, you can revise your model to explain the data better. You can continue this process until the residuals show no pattern. This pillar is used by statistical practitioners every time that they look at a diagnostic residual plot for a regression model."
 
 
+"What is the most important mathematical concept in statistics?" - https://quora.com/What-is-the-most-important-mathematical-concept-in-statistics
+
+
 
 
 [interesting papers]
@@ -80,8 +83,9 @@ Roth, Hardt - "Rigorous Data Dredging - Theory and Tools for Adaptive Data Analy
 	[http://techtalks.tv/talks/rigorous-data-dredging-theory-and-tools-for-adaptive-data-analysis/62362/]
 
 
-"Probability and Statistics for Data Science" by Carlos Fernandez-Granda - http://cims.nyu.edu/~cfgranda/pages/stuff/probability_stats_for_DS.pdf  
-"Computer Age Statistical Inference" by Bradley Efron and Trevor Hastie - https://web.stanford.edu/~hastie/CASI_files/PDF/casi.pdf  
+"The Probability and Statistics Cookbook" - https://github.com/mavam/stat-cookbook/releases/download/0.2.4/stat-cookbook.pdf
+"Probability and Statistics for Data Science" by Carlos Fernandez-Granda - http://cims.nyu.edu/~cfgranda/pages/stuff/probability_stats_for_DS.pdf
+"Computer Age Statistical Inference" by Bradley Efron and Trevor Hastie - https://web.stanford.edu/~hastie/CASI_files/PDF/casi.pdf
 
 
 
@@ -117,6 +121,9 @@ http://nowozin.net/sebastian/blog/becoming-a-bayesian-part-3.html
 http://jakevdp.github.io/blog/2014/03/11/frequentism-and-bayesianism-a-practical-intro/
 http://jakevdp.github.io/blog/2014/06/06/frequentism-and-bayesianism-2-when-results-differ/
 http://jakevdp.github.io/blog/2014/06/12/frequentism-and-bayesianism-3-confidence-credibility/
+
+
+"Bayesian or Frequentist, Which Are You?" by Michael I. Jordan - http://videolectures.net/mlss09uk_jordan_bfway/
 
 
   "Model-based statistics assumes that the observed data has been produced from a random distribution or probability model. The model usually involves some unknown parameters. Statistical inference aims to learn the parameters from the data. This might be an end in itself - if the parameters have interesting real world implications we wish to learn - or as part of a larger workflow such as prediction or decision making. Classical approaches to statistical inference are based on the probability (or probability density) of the observed data y0 given particular parameter values θ. This is known as the likelihood function, π(y0|θ). Since y0 is fixed this is a function of θ and so can be written L(θ). Approaches to inference involve optimising this, used in maximum likelihood methods, or exploring it, used in Bayesian methods.

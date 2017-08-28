@@ -66,8 +66,9 @@
   ["Bayesian Deep Learning"](http://twiecki.github.io/blog/2016/06/01/bayesian-deep-learning/) by Thomas Wiecki  
   ["Edward, and some motivations"](http://dustintran.com/blog/a-quick-update-edward-and-some-motivations) by Dustin Tran  
 
-  [overview](https://youtube.com/watch?v=-8QMqSWU76Q) by Vikash Mansinghka
-  tutorials by Frank Wood -  
+  [overview](https://youtube.com/watch?v=-8QMqSWU76Q) by Vikash Mansinghka  
+
+  tutorials by Frank Wood:  
 	<http://research.microsoft.com/apps/video/dl.aspx?id=259568>  
 	<http://youtube.com/watch?v=6Lqt07enBGs> + <http://youtube.com/watch?v=DY5yuBNEuQs>  
 

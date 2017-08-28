@@ -107,32 +107,6 @@
 
 
 
-[industry]
-
-  http://time.com/google-now/
-
-  http://venturebeat.com/2015/11/30/the-4-things-google-believes-are-key-to-the-future-of-search/
-
-  http://thesempost.com/rankbrain-everything-we-know-about-googles-ai-algorithm/
-
-  http://techcrunch.com/2015/09/07/facebooks-messenger-and-the-challenge-to-googles-search-dominance/
-
-  https://medium.com/backchannel/how-google-search-dealt-with-mobile-33bc09852dc9
-  https://medium.com/backchannel/google-search-will-be-your-next-brain-5207c26e4523
-
-  http://thenextweb.com/apps/2015/02/26/vurb-is-a-mobile-search-engine-that-helps-you-get-things-done-without-jumping-between-apps/
-  http://www.ft.com/intl/cms/s/0/4f2f97ea-b8ec-11e4-b8e6-00144feab7de.html#slide0
-
-  https://quora.com/Why-is-machine-learning-used-heavily-for-Googles-ad-ranking-and-less-for-their-search-ranking
-  http://anand.typepad.com/datawocky/2008/05/are-human-experts-less-prone-to-catastrophic-errors-than-machine-learned-models.html
-
-  http://moz.com/blog/101-google-answer-boxes-a-journey-into-the-knowledge-graph
-
-  https://blogs.dropbox.com/tech/2015/03/firefly-instant-full-text-search-engine/
-
-
-
-
 selected papers - https://dropbox.com/sh/pvpzyxfcpy39j8p/AACduJ-pVF9Lh-gn3_SExj1va
 
 
@@ -309,7 +283,6 @@ Williams, Niraula, Dasigi, Lakshmiratan, Suarez, Reddy, Zweig - "Rapidly Scaling
 Melamud, Levy, Dagan - "A Simple Word Embedding Model for Lexical Substitution" [http://u.cs.biu.ac.il/~melamuo/publications/melamud_vsm15.pdf] (query reformulation)
 	"The lexical substitution task requires identifying meaning-preserving substitutes for a target word instance in a given sentential context. Since its introduction in SemEval-2007, various models addressed this challenge, mostly in an unsupervised setting. In this work we propose a simple model for lexical substitution, which is based on the popular skip-gram word embedding model. The novelty of our approach is in leveraging explicitly the context embeddings generated within the skip-gram model, which were so far considered only as an internal component of the learning process. Our model is efficient, very simple to implement, and at the same time achieves state-ofthe-art results on lexical substitution tasks in an unsupervised setting."
 
-Sun, Zeng, Liu, Lu, Chen at Microsoft Research - "CubeSVD: A Novel Approach to Personalized Web Search" [http://research.microsoft.com/pubs/79497/p382.pdf]
-	"As the competition of Web search market increases, there is a high demand for personalized Web search to conduct retrieval incorporating Web users’ information needs. This paper focuses on utilizing clickthrough data to improve Web search. Since millions of searches are conducted everyday, a search engine accumulates a large volume of clickthrough data, which records who submits queries and which pages he/she clicks on. The clickthrough data is highly sparse and contains different types of objects (user, query and Web page), and the relationships among these objects are also very complicated. By performing analysis on these data, we attempt to discover Web users’ interests and the patterns that users locate information. In this paper, a novel approach CubeSVD is proposed to improve Web search. The clickthrough data is represented by a 3-order tensor, on which we perform 3-mode analysis using the higher-order singular value decomposition technique to automatically capture the latent factors that govern the relations among these multi-type objects: users, queries and Web pages. A tensor reconstructed based on the CubeSVD analysis reflects both the observed interactions among these objects and the implicit associations among them. Therefore, Web search activities can be carried out based on CubeSVD analysis. Experimental evaluations using a real-world data set collected from an MSN search engine show that CubeSVD achieves encouraging search results in comparison with some standard methods."
-	-- http://youtube.com/watch?v=VyiMW23OVNU (in russian)
-	-- Brice - "Applications of Multilinear Algebra To World Wide Web Search"
+Buck et al - "Ask the Right Questions: Active Question Reformulation with Reinforcement Learning" [https://arxiv.org/abs/1705.07830] (query reformulation)
+>	"We frame Question Answering as a Reinforcement Learning task, an approach that we call Active Question Answering. We propose an agent that sits between the user and a black box question-answering system and which learns to reformulate questions to elicit the best possible answers. The agent probes the system with, potentially many, natural languagere formulations of an initial question and aggregates the returned evidence to yield the best answer. The reformulation system is trained end-to-end to maximize answer quality using policy gradient. We evaluate on SearchQA, a dataset of complex questions extracted from Jeopardy!. Our agent improves F1 by 11% over a state-of-the-art base model that uses the original question/answer pairs."
+	-- https://youtu.be/soZXAH3leeQ?t=34m43s (Cho)

@@ -66,7 +66,7 @@ interesting papers:
   - <https://blog.acolyer.org/2017/05/11/understanding-deep-learning-requires-re-thinking-generalization/>  
   - <https://reddit.com/r/MachineLearning/comments/6ailoh/r_understanding_deep_learning_requires_rethinking/dhis1hz/>  
 
-[Deep Nets Don't Learn via Memorization](https://openreview.net/pdf?id=rJv6ZgHYg)  
+[Deep Nets Don't Learn via Memorization](https://openreview.net/pdf?id=rJv6ZgHYg) (MILA)  
 >	"We use empirical methods to argue that deep neural networks do not achieve their performance by memorizing training data, in spite of overlyexpressive model architectures. Instead, they learn a simple available hypothesis that fits the finite data samples. In support of this view, we establish that there are qualitative differences when learning noise vs. natural datasets, showing that: (1) more capacity is needed to fit noise, (2) time to convergence is longer for random labels, but shorter for random inputs, and (3) DNNs trained on real data examples learn simpler functions than when trained with noise data, as measured by the sharpness of the loss function at convergence. Finally, we demonstrate that for appropriately tuned explicit regularization, e.g. dropout, we can degrade DNN training performance on noise datasets without compromising generalization on real data."
 
 [On the Emergence of Invariance and Disentangling in Deep Representations](https://arxiv.org/abs/1706.01350)  
@@ -111,6 +111,7 @@ interesting papers:
 
 [Understanding Black-box Predictions via Influence Functions](https://arxiv.org/abs/1703.04730)  
 >	"identify training points most responsible for given prediction to make model transparent"  
+  - <https://youtube.com/watch?v=0w9fLX_T6tY> (Pang Wei Koh)  
 
 
 
@@ -504,6 +505,7 @@ interesting papers:
 >	"We present a framework to understand GAN training as alternating density ratio estimation and approximate divergence minimization. This provides an interpretation for the mismatched GAN generator and discriminator objectives often used in practice, and explains the problem of poor sample diversity. We also derive a family of generator objectives that target arbitrary f-divergences without minimizing a lower bound, and use them to train generative image models that target either improved sample quality or greater sample diversity."  
 
 [Revisiting Classifier Two-Sample Tests for GAN Evaluation and Causal Discovery](http://arxiv.org/abs/1610.06545) (Facebook AI Research)  
+  - <https://youtube.com/watch?v=AYlbGWLL4Eo> (Sutherland)  
 
 ----
 [Wasserstein GAN](https://arxiv.org/abs/1701.07875) (Facebook AI Research)  
@@ -613,6 +615,7 @@ interesting papers:
 
 ----
 [Learning from Simulated and Unsupervised Images through Adversarial Training](http://arxiv.org/abs/1612.07828) (Apple)  
+  - <https://youtube.com/watch?v=P3ayMdNdokg> (Shrivastava)  
   - <https://github.com/carpedm20/simulated-unsupervised-tensorflow>  
 
 [Unsupervised Pixel-Level Domain Adaptation with Generative Asversarial Networks](http://arxiv.org/abs/1612.05424) (Google Brain)  
@@ -918,6 +921,8 @@ interesting papers:
   - <http://github.com/jacobandreas/nmn2>  
 
 [Learning to Reason: End-to-End Module Networks for Visual Question Answering](https://arxiv.org/abs/1704.05526) (Darrell)  
+  - <http://bair.berkeley.edu/blog/2017/06/20/learning-to-reason-with-neural-module-networks>  
+  - <https://youtu.be/ejQNdTdyTBM?t=28m8s> (Kretov) (in russian)  
 
 [Inferring and Executing Programs for Visual Reasoning](https://arxiv.org/abs/1705.03633) (Stanford, Facebook AI Research)
   - <https://github.com/facebookresearch/clevr-iep>  
@@ -990,9 +995,10 @@ interesting papers:
 ---
 ### reinforcement learning - agents
 
-[A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) (DeepMind)  
+[A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) (DeepMind)  # Categorical DQN  
   - <https://youtube.com/watch?v=yFBwyPuO2Vg> (demo)  
   - <https://deepmind.com/blog/going-beyond-average-reinforcement-learning/>  
+  - <https://github.com/reinforceio/tensorforce/blob/master/tensorforce/models/categorical_dqn_model.py>  
   - <https://github.com/floringogianu/categorical-dqn>  
 
 [Multi-step Reinforcement Learning: A Unifying Algorithm](https://arxiv.org/abs/1703.01327) (Sutton)  
@@ -1002,6 +1008,11 @@ interesting papers:
 [Proximal Policy Optimization Algorithms](https://arxiv.org/abs/1707.06347) (OpenAI)  
   - <https://blog.openai.com/openai-baselines-ppo/> (demo)  
   - <https://github.com/openai/baselines/tree/master/baselines/pposgd>  
+  - <https://github.com/alexis-jacq/Pytorch-DPPO>  
+
+[Emergence of Locomotion Behaviours in Rich Environments](https://arxiv.org/abs/1707.02286) (DeepMind)  
+>	"parallelized Proximal Policy Optimization"  
+  - <https://youtube.com/watch?v=hx_bgoTF7bs> (demo)  
 
 [Interpolated Policy Gradient: Merging On-Policy and Off-Policy Gradient Estimation for Deep Reinforcement Learning](https://arxiv.org/abs/1706.00387) (DeepMind)  
 >	"REINFORCE, TRPO, Q-Prop, DDPG, SVG(0), PGQ, ACER are special limiting cases of IPG"  
@@ -1039,11 +1050,12 @@ interesting papers:
   - <http://www.alexirpan.com/rl-derivations/#q-prop>  
   - <https://github.com/shaneshixiang/rllabplusplus>  
 
-[Sample Efficient Actor-Critic with Experience Replay](http://arxiv.org/abs/1611.01224) (DeepMind)  # ACER  
+[The Reactor: A Sample-Efficient Actor-Critic Architecture](https://arxiv.org/abs/1704.04651)  # Reactor = Retrace-actor  
+
+[Sample Efficient Actor-Critic with Experience Replay](http://arxiv.org/abs/1611.01224) (DeepMind)  # ACER = A3C + Retrace  
+>	"adds Retrace(λ) off-policy bias correction to A3C"  
   - <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FWangBHMMKF16>  
   - <https://github.com/pfnet/chainerrl/blob/master/chainerrl/agents/acer.py>  
-
-[The Reactor: A Sample-Efficient Actor-Critic Architecture](https://arxiv.org/abs/1704.04651)  # Reactor = Retrace-actor
 
 [Safe and Efficient Off-Policy Reinforcement Learning](http://arxiv.org/abs/1606.02647) (DeepMind)  # Retrace  
 >	"Retrace(λ) is a new strategy to weight a sample for off-policy learning, it provides low-variance, safe and efficient updates."  
@@ -1117,32 +1129,6 @@ interesting papers:
   - <https://yadi.sk/i/yBO0q4mI3GAxYd> (1:10:20) (Fritsler, in russian)  
   - <https://youtu.be/mrj_hyH974o?t=16m13s> (in russian)  
 
-[Asynchronous Methods for Deep Reinforcement Learning](http://arxiv.org/abs/1602.01783)  
-  - <http://youtube.com/watch?v=0xo1Ldx3L5Q> (TORCS demo)  
-  - <http://youtube.com/watch?v=nMR5mjCFZCw> (3D Labyrinth demo)  
-  - <http://youtube.com/watch?v=Ajjc08-iPx8> (MuJoCo demo)  
-  - <http://youtube.com/watch?v=9sx1_u2qVhQ> (Mnih)  
-  - <http://techtalks.tv/talks/asynchronous-methods-for-deep-reinforcement-learning/62475/> (Mnih)  
-  - <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FMnihBMGLHSK16>  
-  - <https://medium.com/@awjuliani/simple-reinforcement-learning-with-tensorflow-part-8-asynchronous-actor-critic-agents-a3c-c88f72a5e9f2>  
-  - <https://github.com/ikostrikov/pytorch-a3c>  
-  - <https://github.com/Zeta36/Asynchronous-Methods-for-Deep-Reinforcement-Learning>  
-  - <https://github.com/miyosuda/async_deep_reinforce>  
-  - <https://github.com/muupan/async-rl>  
-  - <https://github.com/yandexdataschool/AgentNet/blob/master/agentnet/learning/a2c_n_step.py>  
-  - <https://github.com/coreylynch/async-rl>  
-  - <https://github.com/carpedm20/deep-rl-tensorflow/blob/master/agents/async.py>  
-  - <https://github.com/danijar/mindpark/blob/master/mindpark/algorithm/a3c.py>  
-
-[Continuous Deep Q-Learning with Model-based Acceleration](http://arxiv.org/abs/1603.00748) (Sutskever)  
-  - <http://techtalks.tv/talks/continuous-deep-q-learning-with-model-based-acceleration/62474/>  
-  - <https://youtu.be/M6nfipCxQBc?t=10m48s> (Lillicrap)  
-  - <https://youtu.be/mrgJ53TIcQc?t=57m> (Seleznev, in russian)  
-  - <http://www.bicv.org/?wpdmdl=1940>  
-  - <https://github.com/ikostrikov/pytorch-naf>  
-  - <https://github.com/carpedm20/NAF-tensorflow>  
-  - <https://github.com/tambetm/gymexperiments>  
-
 
 
 ---
@@ -1213,6 +1199,7 @@ hieves."
 
 ----
 [Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) (DeepMind)    # exploration in policy space guided by parametrized noise  
+>	"scale of perturbation to parameters is learned along with original objective function"  
   - <https://github.com/Kaixhin/NoisyNet-A3C>  
   - <https://github.com/andrewliao11/NoisyNet-DQN>  
 
@@ -1240,6 +1227,7 @@ hieves."
   - <https://github.com/miyosuda/unreal>  
 
 [Learning to Navigate in Complex Environments](http://arxiv.org/abs/1611.03673) (DeepMind)    # structured exploration in policy space guided by learning additional tasks  
+  - <http://youtu.be/0e_uGa7ic74?t=8m53s> (Hadsell)  
   - <http://youtube.com/watch?v=5Rflbx8y7HY> (Mirowski)  
   - <http://pemami4911.github.io/paper-summaries/2016/12/20/learning-to-navigate-in-complex-envs.html>  
 
@@ -1267,6 +1255,7 @@ hieves."
 [Intrinsic Motivation and Automatic Curricula via Asymmetric Self-Play](http://arxiv.org/abs/1703.05407) (Facebook AI Research)    # structured exploration in policy space guided by learning progress  
   - <https://youtube.com/watch?v=EHHiFwStqaA> (demo)  
   - <https://youtube.com/watch?v=X1O21ziUqUY> (Fergus)  
+  - <https://youtube.com/watch?v=pSJC9hNt3Uw> (Szlam)  
 
 [Towards Information-Seeking Agents](http://arxiv.org/abs/1612.02605) (Maluuba)    # structured exploration in policy space guided by learning progress  
   - <https://youtube.com/watch?v=3bSquT1zqj8> (demo)  
@@ -1310,10 +1299,9 @@ hieves."
   - <https://github.com/florensacc/snn4hrl>  
 
 [FeUdal Networks for Hierarchical Reinforcement Learning](http://arxiv.org/abs/1703.01161) (DeepMind)  
+  - <https://youtube.com/watch?v=0e_uGa7ic74&t=29m20s> (demo)  
+  - <https://youtube.com/watch?v=0e_uGa7ic74&t=20m10s> (Hadsell)  
   - <https://github.com/dmakian/feudal_networks>  
-
-[Learning and Transfer of Modulated Locomotor Controllers](http://arxiv.org/abs/1610.05182) (DeepMind)  
-  - <https://youtube.com/watch?v=sboPYvhpraQ> (demo)  
 
 [A Deep Hierarchical Approach to Lifelong Learning in Minecraft](http://arxiv.org/abs/1604.07255)  
   - <https://youtube.com/watch?v=RwjfE4kc6j8> (demo)  
@@ -1368,6 +1356,10 @@ hieves."
   - <https://youtube.com/watch?v=0H3EkUPENSY> (Hernandez-Lobato)  
   - <https://medium.com/towards-data-science/bayesian-neural-networks-with-random-inputs-for-model-based-reinforcement-learning-36606a9399b4> (Hernandez-Lobato)  
   - <https://github.com/siemens/policy_search_bb-alpha>  
+
+[Value Prediction Network](https://arxiv.org/abs/1707.03497)  
+>	"VPN combines model-based RL (i.e., learning the dynamics of an abstract state space sufficient for computing future rewards and values) and model-free RL (i.e., mapping the learned abstract states to rewards and values) in a unified framework. In order to train a VPN, we propose a combination of temporal-difference search (TD search) and n-step Q-learning. In brief, VPNs learn to predict values via Q-learning and rewards via supervised learning. At the same time, VPNs perform lookahead planning to choose actions and compute bootstrapped target Q-values."  
+  - <https://youtu.be/PRQ8-FwDPRE?t=16m> (Holland)  
 
 [QMDP-Net: Deep Learning for Planning under Partial Observability](https://arxiv.org/abs/1703.06692)  
 >	"This paper introduces QMDP-net, a neural network architecture for planning under partial observability. The QMDP-net combines the strengths of model-free learning and model-based planning. It is a recurrent policy network, but it represents a policy by connecting a model with a planning algorithm that solves the model, thus embedding the solution structure of planning in the network architecture. The QMDP-net is fully differentiable and allows end-to-end training. We train a QMDP-net over a set of different environments so that it can generalize over new ones."  
@@ -1426,6 +1418,8 @@ hieves."
 ### reinforcement learning - memory
 
 [Neural Episodic Control](https://arxiv.org/abs/1703.01988) (DeepMind)  
+>	"Differentiable memories are used as approximate hash tables, allowing to store and retrieve successful experiences to facilitate rapid learning."  
+>
 >	"Our agent uses a semi-tabular representation of the value function: a buffer of past experience containing slowly changing state representations and rapidly updated estimates of the value function."  
 >
 >	"Greedy non-parametric tabular-memory agents like MFEC can outperform model-based agents when data are noisy or scarce.  
@@ -1441,7 +1435,8 @@ hieves."
   - <https://github.com/sudeepraja/Model-Free-Episodic-Control>  
 
 [Neural Map: Structured Memory for Deep Reinforcement Learning](https://arxiv.org/abs/1702.08360) (Salakhutdinov)  
->	size and computational cost doesn't grow with time horizon of environment  
+>	"Memory was given a 2D structure in order to resemble a spatial map to address specific problems such as 2D or 3D navigation"  
+>	"Size and computational cost doesn't grow with time horizon of environment"  
   - <https://yadi.sk/i/pMdw-_uI3Gke7Z> (Shvechikov, in russian)  
 
 [A Growing Long-term Episodic and Semantic Memory](http://arxiv.org/abs/1610.06402)  
@@ -1454,11 +1449,29 @@ hieves."
 ---
 ### reinforcement learning - transfer
 
+[Generalizing Skills with Semi-Supervised Reinforcement Learning](http://arxiv.org/abs/1612.00429) (Abbeel, Levine)  
+  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (39:26) (Levine)  
+
+----
 [DARLA: Improving Zero-Shot Transfer in Reinforcement Learning](https://arxiv.org/abs/1707.08475) (DeepMind)  
   - <https://youtube.com/watch?v=sZqrWFl0wQ4> (demo)  
 
-[Generalizing Skills with Semi-Supervised Reinforcement Learning](http://arxiv.org/abs/1612.00429) (Abbeel, Levine)  
-  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (39:26) (Levine)  
+----
+[Mutual Alignment Transfer Learning](https://arxiv.org/abs/1707.07907) (Abbeel)  
+>	"While the actions performed by the simulator policy can fail to accomplish the task on the robot, the sequence of states visited by the agent in simulation represents its task under limited variation in the system dynamics. We propose MATL, which instead of directly adapting the simulation policy, guides the exploration for both systems towards mutually aligned state distributions via auxiliary rewards. The method employs an adversarial approach to train policies with additional rewards based on confusing a discriminator with respect to the originating system for state sequences visited by the agents. By guiding the target agent on the robot towards states that the potentially more proficient source agent visits in simulation, we can accelerate training. In addition to aligning the robot policy to adapt to progress in simulation, we extend the approach to mutually align both systems which can be beneficial as the agent in simulation will be driven to explore better trajectories from states visited by the real-world policy."  
+>	"We demonstrate that auxiliary rewards, which guide the exploration on the target platform, improve performance in environments with sparse rewards and can even guide the agent if only uninformative or no environment rewards at all are given for the target agent."  
+>	"In addition to aligning the robot policy to adapt to progress in simulation, the reciprocal alignment of the simulation policy can be beneficial as the agent in simulation will be driven to explore better behaviours from states visited by the robot agent."  
+  - <https://sites.google.com/view/matl> (demo)  
+
+[Distral: Robust Multitask Reinforcement Learning](https://arxiv.org/abs/1707.04175) (DeepMind)  
+>	"Two ideas might be worth reemphasizing here. We observe that distillation arises naturally as one half of an optimization procedure when using KL divergences to regularize the output of task models towards a distilled model. The other half corresponds to using the distilled model as a regularizer for training the task models. Another observation is that parameters in deep networks do not typically by themselves have any semantic meaning, so instead of regularizing networks in parameter space, it is worthwhile considering regularizing networks in a more semantically meaningful space, e.g. of policies."  
+
+[Policy Distillation](http://arxiv.org/abs/1511.06295) (DeepMind)  
+>	"Our new paper uses distillation to consolidate lots of policies into a single deep network. This works remarkably well, and can be applied online, during Q-learning, so that policies are compressed, distilled, and refined whilst being learned. Atari policies are actually improved through distillation and generalize better (with higher scores and lower variance) during novel starting state evaluation."  
+
+[Actor-Mimic: Deep Multitask and Transfer Reinforcement Learning](http://arxiv.org/abs/1511.06342) (Salakhutdinov)  
+>	"single policy network learning to act in a set of distinct tasks through the guidance of an expert teacher for each task"  
+  - <https://github.com/eparisotto/ActorMimic>  
 
 ----
 [Deep Successor Reinforcement Learning](https://arxiv.org/abs/1606.02396)  
@@ -1472,22 +1485,20 @@ hieves."
   - <https://youtube.com/watch?v=Q0ldKJbAwR8> (Dosovitskiy) (in russian)  
   - <https://yadi.sk/i/pMdw-_uI3Gke7Z> (1:02:03) (Shvechikov) (in russian)  
   - <https://blog.acolyer.org/2017/05/12/learning-to-act-by-predicting-the-future/>  
+  - <https://oreilly.com/ideas/reinforcement-learning-for-complex-goals-using-tensorflow>  
   - <https://github.com/IntelVCL/DirectFuturePrediction>  
 
 [Successor Features for Transfer in Reinforcement Learning](http://arxiv.org/abs/1606.05312) (DeepMind)  
 
 ----
+[Learning and Transfer of Modulated Locomotor Controllers](http://arxiv.org/abs/1610.05182) (DeepMind)  
+  - <https://youtube.com/watch?v=sboPYvhpraQ> (demo)  
+  - <https://youtube.com/watch?v=0e_uGa7ic74&t=31m4s> (Hadsell)  
+
 [Learning Modular Neural Network Policies for Multi-Task and Multi-Robot Transfer](http://arxiv.org/abs/1609.07088) (Abbeel, Levine)  
   - <https://youtube.com/watch?v=n4EgRwzJE1o>  
 
 [Learning Invariant Feature Spaces to Transfer Skills with Reinforcement Learning](https://arxiv.org/abs/1703.02949) (Abbeel, Levine)  
-
-----
-[Policy Distillation](http://arxiv.org/abs/1511.06295) (DeepMind)  
->	"Our new paper uses distillation to consolidate lots of policies into a single deep network. This works remarkably well, and can be applied online, during Q-learning, so that policies are compressed, distilled, and refined whilst being learned. Atari policies are actually improved through distillation and generalize better (with higher scores and lower variance) during novel starting state evaluation."  
-
-[Actor-Mimic: Deep Multitask and Transfer Reinforcement Learning](http://arxiv.org/abs/1511.06342) (Salakhutdinov)  
-  - <https://github.com/eparisotto/ActorMimic>  
 
 ----
 [Progressive Neural Networks](http://arxiv.org/abs/1606.04671) (DeepMind)  
@@ -1508,6 +1519,7 @@ hieves."
   - <https://youtube.com/watch?v=necs0XfnFno> (demo)  
 
 [Model-based Adversarial Imitation Learning](http://arxiv.org/abs/1612.02179)  
+>	"exploits gradient information that was not used in GAIL to learn models within the IRL process"  
 
 [Generative Adversarial Imitation Learning](http://arxiv.org/abs/1606.03476)  
 >	"Uses a GAN framework to discriminate between teacher and student experience and force the student to behave close to the teacher."  
@@ -1516,8 +1528,14 @@ hieves."
   - <https://github.com/DanielTakeshi/rl_algorithms/tree/master/il>  
 
 ----
+[Leveraging Demonstrations for Deep Reinforcement Learning on Robotics Problems with Sparse Rewards](https://arxiv.org/abs/1707.08817) (DeepMind)  
+>	"Our work combines imitation learning with learning from task rewards, so that the agent is able to improve upon the demonstrations it has seen."  
+>	"Most work on RL in high-dimensional continuous control problems relies on well-tuned shaping rewards both for communicating the goal to the agent as well as easing the exploration problem. While many of these tasks can be defined by a terminal goal state fairly easily, tuning a proper shaping reward that does not lead to degenerate solutions is very difficult. This task only becomes more difficult when you move to multi-stage tasks such as insertion (stage for reaching the insertion point and stage for inserting the object). In this work, we replaced these difficult to tune shaping reward functions with demonstrations of the task from a human demonstrator. This eases the exploration problem without requiring careful tuning of shaping rewards."  
+  - <https://youtube.com/watch?v=Vno6FGqhvDc> (demo)  
+
 [Learning from Demonstrations for Real World Reinforcement Learning](https://arxiv.org/abs/1704.03732) (DeepMind + OpenAI)  
   - <https://youtube.com/playlist?list=PLdjpGm3xcO-0aqVf--sBZHxCKg-RZfa5T> (demo)  
+  - <https://github.com/reinforceio/tensorforce/blob/master/tensorforce/models/dqfd_model.py>  
 
 [Deeply AggreVaTeD: Differentiable Imitation Learning for Sequential Prediction](https://arxiv.org/abs/1703.01030)  
 
@@ -1551,14 +1569,13 @@ hieves."
   - <http://deepstack.ai>  
   - <http://twitter.com/DeepStackAI>  
 
-[Emergence of Locomotion Behaviours in Rich Environments](https://arxiv.org/abs/1707.02286) (DeepMind)  
->	"parallelized Proximal Policy Optimization"  
-  - <https://youtube.com/watch?v=hx_bgoTF7bs> (demo)  
-
 [Neural Combinatorial Optimization with Reinforcement Learning](http://arxiv.org/abs/1611.09940) (Google Brain)  
   - <https://youtube.com/watch?v=mxCVgVrUw50> (Bengio)  
 
 [Learning Runtime Parameters in Computer Systems with Delayed Experience Injection](http://arxiv.org/abs/1610.09903)  
+
+[Ask the Right Questions: Active Question Reformulation with Reinforcement Learning] (Google)  
+  - <https://youtu.be/soZXAH3leeQ?t=34m43s> (Cho)  
 
 [Coarse-to-Fine Question Answering for Long Documents](http://arxiv.org/abs/1611.01839) (Google Research)  
 
@@ -1582,6 +1599,8 @@ hieves."
 ### language grounding
 
 [A Paradigm for Situated and Goal-Driven Language Learning](https://arxiv.org/abs/1610.03585) (OpenAI)  
+
+[Natural Language Does Not Emerge ‘Naturally’ in Multi-Agent Dialog](https://arxiv.org/abs/1706.08502)  
 
 [Grounded Language Learning in a Simulated 3D World](https://arxiv.org/abs/1706.06551) (DeepMind)  
 >	"The agent learns simple language by making predictions about the world in which that language occurs, and by discovering which combinations of words, perceptual cues and action decisions result in positive outcomes. Its knowledge is distributed across language, vision and policy networks, and pertains to modifiers, relational concepts and actions, as well as concrete objects. Its semantic representations enable the agent to productively interpret novel word combinations, to apply known relations and modifiers to unfamiliar objects and to re-use knowledge pertinent to the concepts it already has in the process of acquiring new concepts."  
@@ -1625,7 +1644,7 @@ hieves."
 
 [On the Evaluation of Dialogue Systems with Next Utterance Classification](http://arxiv.org/abs/1605.05414)  
 
-[Towards an Automatic Turing Test: Learning to Evaluate Dialogue Responses](http://openreview.net/forum?id=HJ5PIaseg)  
+[Towards an Automatic Turing Test: Learning to Evaluate Dialogue Responses](https://arxiv.org/abs/1708.07149)  
   - <https://youtube.com/watch?v=vTgwWobuoFw> (Pineau)  
 
 ----

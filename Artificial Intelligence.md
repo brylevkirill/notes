@@ -102,7 +102,7 @@
   ["Measuring Intelligence through Games"](http://arxiv.org/abs/1109.1314) by Schaul, Togelius, Schmidhuber  
   ["Why video games are essential for inventing artificial intelligence"](http://togelius.blogspot.ru/2016/01/why-video-games-are-essential-for.html) by Julian Togelius  
 
-  ["A 'Brief' History of Game AI Up To AlphaGo"](http://andreykurenkov.com/writing/a-brief-history-of-game-ai/)  
+  ["A 'Brief' History of Game AI Up To AlphaGo"](http://andreykurenkov.com/writing/a-brief-history-of-game-ai/) by Andrey Kurenkov  
   ["AI for classic games"](http://youtube.com/watch?v=kZ_AUmFcZtk) by David Silver  
 
   ["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#moravcik-et-al---deepstack-expert-level-artificial-intelligence-in-no-limit-poker) by Michael Bowling and others  
@@ -110,8 +110,6 @@
   ["Giraffe: Using Deep Reinforcement Learning to Play Chess"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#lai---giraffe-using-deep-reinforcement-learning-to-play-chess) by Matthew Lai  
 
   [games](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games)  
-
-  [General Video Game AI competition](http://gvgai.net)
 
 ----
 #### open world problems
@@ -121,8 +119,9 @@
 	<https://openai.com/blog/universe/>  
 	<https://youtube.com/watch?v=BskhUBPRrqE> (Ilya Sutskever)  
 
-  - OpenAI Mini World Of Bits  
+  - OpenAI World of Bits  
 	<http://alpha.openai.com/miniwob/index.html>  
+	<http://proceedings.mlr.press/v70/shi17a.html>  
 	<http://alpha.openai.com/ak_rework_2017.pdf> (Andrej Karpathy)  
 	<https://youtube.com/watch?v=w6PCLESiExQ> (Jim Fan)  
 	<http://alpha.openai.com/kalite_exercises/index.html>  

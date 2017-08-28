@@ -57,7 +57,8 @@
   course by Oxford and DeepMind - https://github.com/oxford-cs-deepnlp-2017/lectures
   course by Michael Collins - https://coursera.org/course/nlangp + https://youtube.com/user/afigfigueira/playlists?shelf_id=5&view=50
   course by Jordan Boyd-Graber - http://youtube.com/playlist?list=PLegWUnz91WfuPebLI97-WueAP90JO-15i
-  course by Chris Manning @ Stanford University - http://see.stanford.edu/see/lecturelist.aspx?coll=63480b48-8819-4efd-8412-263f1a472f5a
+  course by Chris Manning - http://see.stanford.edu/see/lecturelist.aspx?coll=63480b48-8819-4efd-8412-263f1a472f5a
+  course by Pavel Braslavski (in russian) - https://stepik.org/course/1233
 
   textbook by Michael Collins - https://dropbox.com/sh/e0unkrb6xoqyjmg/AAANfPi9K9fAjboL5XTCkb5La
 

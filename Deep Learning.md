@@ -541,9 +541,12 @@
 ---
 ### generative models - generative adversarial networks
 
+  [introduction](https://youtu.be/5WoItGTWV54?t=51m14s) by Serena Yeung
+
+
   ["NIPS 2016 Tutorial: Generative Adversarial Networks"](https://arxiv.org/abs/1701.00160) by Ian Goodfellow
 
-  [tutorial at NIPS 2016](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks) by Ian Goodfellow + [slides](http://iangoodfellow.com/slides/2016-12-04-NIPS.pdf)  
+  [tutorial at NIPS 2016](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks) by Ian Goodfellow ([slides](http://iangoodfellow.com/slides/2016-12-04-NIPS.pdf))  
   [tutorial at ICML 2015](https://dl.dropboxusercontent.com/u/16027344/ICML%202015%20Deep%20Learning%20Workshop/Ian%20Goodfellow%2C%20GOOGLE.p2g/Default.html) by Ian Goodfellow  
 
 
@@ -656,26 +659,24 @@
 ---
 ### generative models - variational autoencoder
 
-  introduction -  
-	<http://kvfrans.com/variational-autoencoders-explained/>  
-	<http://jaan.io/what-is-variational-autoencoder-vae-tutorial/>  
-	<http://hsaghir.github.io/denoising-vs-variational-autoencoder/>  
-	<http://vdumoulin.github.io/morphing_faces/>  
+  [introduction](https://youtu.be/5WoItGTWV54?t=19m58s) by Serena Yeung
 
-  what variational encoder is not - <http://dustintran.com/blog/variational-auto-encoders-do-not-train-complex-generative-models/>
+  [introduction](http://kvfrans.com/variational-autoencoders-explained/) by Kevin Frans  
+  [introduction](https://hsaghir.github.io/data_science/denoising-vs-variational-autoencoder/) by Hamidreza Saghir  
+  [introduction](http://jaan.io/what-is-variational-autoencoder-vae-tutorial/) by Jaan Altosaar  
+  [introduction](https://vdumoulin.github.io/morphing_faces/) by Vincent Dumoulin  
 
-  tutorial - <http://arxiv.org/abs/1606.05908> + <https://github.com/cdoersch/vae_tutorial>
+  [tutorial](http://arxiv.org/abs/1606.05908) by Carl Doersch ([code](https://github.com/cdoersch/vae_tutorial))
 
-  Aaron Courville - <http://videolectures.net/deeplearning2015_courville_autoencoder_extension/>  
-  Dmitry Vetrov - <https://youtu.be/_qrHcSdQ2J4?t=1h37m21s> (in russian)  
-  Karol Gregor - <https://dl.dropboxusercontent.com/u/16027344/ICML%202015%20Deep%20Learning%20Workshop/Karol%20Gregor%2C%20GOOGLE%20Deepmind.p2g/Default.html>  
-  Karol Gregor - <http://youtube.com/watch?v=P78QYjWh5sM>  
-  Durk Kingma - <http://youtube.com/watch?v=rjZL7aguLAs>  
-  Alexander Stepochkin - <http://vk.com/video-44016343_456239092> (in russian)  
+  ["Variational auto-encoders do not train complex generative models"](http://dustintran.com/blog/variational-auto-encoders-do-not-train-complex-generative-models/) by Dustin Tran  
 
-  "Variational Inference: Foundations and Modern Methods" tutorial at NIPS 2016 by David Blei, Rajesh Ranganath, Shakir Mohamed -  
-	<https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods>  
-	<http://www.cs.columbia.edu/~blei/talks/2016_NIPS_VI_tutorial.pdf>  
+
+  [overview](http://videolectures.net/deeplearning2015_courville_autoencoder_extension/) by Aaron Courville  
+  [overview](https://youtu.be/_qrHcSdQ2J4?t=1h37m21s) by Dmitry Vetrov (in russian)  
+  [overview](https://dl.dropboxusercontent.com/u/16027344/ICML%202015%20Deep%20Learning%20Workshop/Karol%20Gregor%2C%20GOOGLE%20Deepmind.p2g/Default.html) by Karol Gregor  
+  [overview](http://youtube.com/watch?v=P78QYjWh5sM) by Karol Gregor  
+  [overview](http://youtube.com/watch?v=rjZL7aguLAs) by Durk Kingma  
+
 
   see "[variational inference]" section of <https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt>
 
@@ -779,6 +780,9 @@ examples:
   - masked autoencoder distribution estimator (MADE), pixelCNN  
   - neural autoregressive distribution estimator (NADE), spatial LSTM, pixelRNN  
 
+
+[introduction](https://youtu.be/5WoItGTWV54?t=9m12s) by Serena Yeung  
+
 ["Generative Modelling as Sequence Learning"](https://youtube.com/watch?v=leu286ciQcE) by Nal Kalchbrenner  
 ["Autoregressive Generative Models with Deep Learning"](http://www.fields.utoronto.ca/video-archive/2017/01/2267-16372) by Hugo Larochelle  
 
@@ -869,8 +873,8 @@ examples:
 
 
 
-----
-#### architectures - convolutional neural network
+---
+### architectures - convolutional neural network
 
   ["Convolutional Neural Network"](http://deeplearningbook.org/contents/convnets.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
 
@@ -897,8 +901,8 @@ examples:
 
 
 
-----
-#### architectures - recurrent neural network
+---
+### architectures - recurrent neural network
 
   ["Recurrent Neural Network"](http://deeplearningbook.org/contents/rnn.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
 
@@ -1827,6 +1831,7 @@ interesting papers (see below):
   - <http://blog.acolyer.org/2016/03/09/neural-turing-machines/>
   - <http://ikuz.eu/2014/11/19/neural-turing-machines-by-google-deepmind-article-overview/>
   - <http://doctorteeth.github.io/2015/11/15/fancy-addressing/>
+  - <https://github.com/flomlo/ntm_keras/>
   - <https://github.com/carpedm20/NTM-tensorflow>
   - <https://github.com/kaishengtai/torch-ntm>
   - <https://github.com/fumin/ntm> + <http://awawfumin.blogspot.ru/2015/03/neural-turing-machines-implementation.html>

@@ -49,39 +49,31 @@
 ---
 ### overview
 
-  ["Machine Learning Basics"](http://deeplearningbook.org/contents/ml.html) by Ian Goodfellow, Yoshua Bengio, Aaron Courville  
   ["Machine Learning: Trends, Perspectives and Prospects"](https://goo.gl/U8552O) by Michael I. Jordan and Tom Mitchell  
-
-  ["Machine Learning is the new algorithms"](http://nlpers.blogspot.ru/2014/10/machine-learning-is-new-algorithms.html) by Hal Daume  
   ["When is Machine Learning Worth It?"](http://inference.vc/when-is-machine-learning-worth-it/) by Ferenc Huszar  
+  ["Machine Learning is the new algorithms"](http://nlpers.blogspot.ru/2014/10/machine-learning-is-new-algorithms.html) by Hal Daume  
 
-  introduction by Dmitry Vetrov (in russian)
-	([first part](http://youtube.com/watch?v=srIcbDBAJBo), [second part](http://youtube.com/watch?v=ftlbxFypW74))  
+  introduction by Dmitry Vetrov (in russian) ([first](https://youtu.be/srIcbDBAJBo), [second](https://youtu.be/ftlbxFypW74))  
+
+----
+
+  ["Machine Learning Basics"](http://deeplearningbook.org/contents/ml.html) by Ian Goodfellow, Yoshua Bengio, Aaron Courville  
+  ["Machine Learning for Humans"](https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12) by Vishal Maini  
+
+  ["The Talking Machines"](http://thetalkingmachines.com/blog/) podcast  
+
   [overview](http://youtube.com/watch?v=lkh7bLUc30g) by Dmitry Vetrov (in russian)  
-  overview by Igor Kuralenok (in russian)
-	([first part](http://youtube.com/watch?v=ynS7XvkAdLU&t=12m5s), [second part](http://youtube.com/watch?v=jiyD0r2SC-g&t=12m55s))  
-
-  <http://thetalkingmachines.com/blog/>  (podcasts)
+  overview by Igor Kuralenok (in russian) ([first](https://youtu.be/ynS7XvkAdLU?t=12m5s), [second](https://youtu.be/jiyD0r2SC-g?t=12m55s))  
 
 
 
 ---
 ### study
 
-#### tutorials
+#### knowledge bases
 
-  <http://frnsys.com/ai_notes/>
-
-  <https://github.com/ujjwalkarn/Machine-Learning-Tutorials>
-
-  <https://github.com/rasbt/python-machine-learning-book>  
-  <https://github.com/rasbt/python-machine-learning-book/tree/master/faq>  
-
-  [Python notebooks for many algorithms](http://nbtest.herokuapp.com/github/fonnesbeck/Bios366/tree/master/notebooks/)
-
-  <http://ciml.info>  
   <http://metacademy.org>  
-  <http://machinelearning.ru/wiki/>  
+  <http://machinelearning.ru/wiki/> (in russian)  
 
   <https://en.wikipedia.org/wiki/Machine_learning>  
   ["Introduction to Machine Learning - The Wikipedia Guide"](https://github.com/Nixonite/open-source-machine-learning-degree/blob/master/Introduction%20to%20Machine%20Learning%20-%20Wikipedia.pdf)  
@@ -103,6 +95,8 @@
   [causality in machine learning](http://unofficialgoogledatascience.com/2017/01/causality-in-machine-learning.html)  
   [machine learning and statistics](https://www.ics.uci.edu/~welling/publications/papers/WhyMLneedsStatistics.pdf)  
   [machine learning and engineering](http://machinedlearnings.com/2017_02_01_archive.html)  
+  [interpretable machine learning](https://oreilly.com/ideas/ideas-on-interpreting-machine-learning)  
+  [basics](http://frnsys.com/ai_notes/)  
 
 
 #### courses
@@ -113,6 +107,7 @@
   [Nando de Freitas](http://youtube.com/playlist?list=PLE6Wd9FR--EdyJ5lbFl8UuGjecvVw66F6) (graduate)  
   [Alex Smola](http://youtube.com/playlist?list=PLZSO_6-bSqHTTV7w9u7grTXBHMH-mw3qn)  
   [Trevor Hastie and Rob Tibshirani](http://dataschool.io/15-hours-of-expert-machine-learning-videos/)  
+  [Hal Daume](http://ciml.info)  
 
   [Konstantin Vorontsov](http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC) (in russian)  
   [Igor Kuralenok](http://youtube.com/playlist?list=PLlb7e2G7aSpTd91sd82VxWNdtTZ8QnFne) (in russian)  
@@ -146,16 +141,15 @@
 
 #### blogs
 
-  <http://distill.pub>  
   <http://inference.vc>  
+  <http://offconvex.org>  
+  <http://argmin.net>  
   <http://blog.shakirm.com>  
   <http://hunch.net>  
   <http://machinedlearnings.com>  
   <http://nlpers.blogspot.com>  
   <http://fastml.com>  
   <http://wildml.com>  
-  <http://offconvex.org>  
-  <http://argmin.net>  
   <http://blogs.princeton.edu/imabandit>  
   <http://timvieira.github.io/blog/>  
   <http://theneuralperspective.com>  
@@ -1079,6 +1073,7 @@ interesting papers (see below):
   - <https://soundcloud.com/nlp-highlights/28-data-programming-creating-large-training-sets-quickly>
   - <http://hazyresearch.github.io/snorkel/blog/weak_supervision.html>
   - <http://hazyresearch.github.io/snorkel/blog/dp_with_tf_blog_post.html>
+  - <https://github.com/b12io/reading-group/blob/master/data-programming-snorkel.md>
   - <https://github.com/HazyResearch/snorkel>
   - ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](https://arxiv.org/abs/1703.05028)
 
