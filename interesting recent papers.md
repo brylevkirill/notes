@@ -93,7 +93,7 @@ interesting papers:
 [The Marginal Value of Adaptive Gradient Methods in Machine Learning](https://arxiv.org/abs/1705.08292) (Recht)  
 >	"Despite the fact that our experimental evidence demonstrates that adaptive methods are not advantageous for machine learning, the Adam algorithm remains incredibly popular. We are not sure exactly as to why, but hope that our step-size tuning suggestions make it easier for practitioners to use standard stochastic gradient methods in their research. In our conversations with other researchers, we have surmised that adaptive gradient methods are particularly popular for training GANs and Q-learning with function approximation. Both of these applications stand out because they are not solving optimization problems. It is possible that the dynamics of Adam are accidentally well matched to these sorts of optimization-free iterative search procedures. It is also possible that carefully tuned stochastic gradient methods may work as well or better in both of these applications."  
 
-[Self-Normalizing Neural Networks](https://arxiv.org/abs/1706.02515)  
+[Self-Normalizing Neural Networks](https://arxiv.org/abs/1706.02515) (Hochreiter)  
 >	"While batch normalization requires explicit normalization, neuron activations of SNNs automatically converge towards zero mean and unit variance. The activation function of SNNs are "scaled exponential linear units" (SELUs), which induce self-normalizing properties. Using the Banach fixed-point theorem, we prove that activations close to zero mean and unit variance that are propagated through many network layers will converge towards zero mean and unit variance -- even under the presence of noise and perturbations."  
 >	"For activations not close to unit variance, we prove an upper and lower bound on the variance, thus, vanishing and exploding gradients are impossible."  
   - <https://youtube.com/watch?v=h6eQrkkU9SA> (Hochreiter)  
@@ -371,6 +371,7 @@ interesting papers:
 >	"In interactive environments, the temporal dependency between successive observations creates a new opportunity to notice causal structure in data which may not be apparent using only observational studies. In reinforcement learning, several approaches explore mechanisms that push the internal representations of learned models to be “good” in the sense that they provide better control, and control is a particularly important causal relationship between an agent and elements of its environment."  
 >	"We propose and explore a more direct mechanism for representation learning, which explicitly links an agent’s control over its environment with its internal feature representations. Specifically, we hypothesize that some of the factors explaining variations in the data correspond to aspects of the world that can be controlled by the agent. For example, an object that could be pushed around or picked up independently of others is an independently controllable aspect of the environment. Our approach therefore aims to jointly discover a set of features (functions of the environment state) and policies (which change the state) such that each policy controls the associated feature while leaving the other features unchanged as much as possible."  
 >	"Assume that there are factors of variation underlying the observations coming from an interactive environment that are independently controllable. That is, a controllable factor of variation is one for which there exists a policy which will modify that factor only, and not the others. For example, the object associated with a set of pixels could be acted on independently from other objects, which would explain variations in its pose and scale when we move it around while leaving the others generally unchanged. The object position in this case is a factor of variation. What poses a challenge for discovering and mapping such factors into computed features is the fact that the factors are not explicitly observed. Our goal is for the agent to autonomously discover such factors – which we call independently controllable features – along with policies that control them. While these may seem like strong assumptions about the nature of the environment, we argue that these assumptions are similar to regularizers, and are meant to make a difficult learning problem (that of learning good representations which disentangle underlying factors) better constrained."  
+  - <http://www.shortscience.org/paper?bibtexKey=journals/corr/BengioTPPB17#hlarochelle> (Larochelle)  
 
 ----
 [SCAN: Learning Abstract Hierarchical Compositional Visual Concepts](https://arxiv.org/abs/1707.03389) (DeepMind)  
@@ -443,6 +444,7 @@ interesting papers:
 [On the Quantitative Analysis of Decoder-based Generative Models](http://arxiv.org/abs/1611.04273) (Salakhutdinov)  
 >	"We propose to use Annealed Importance Sampling for evaluating log-likelihoods for decoder-based models and validate its accuracy using bidirectional Monte Carlo. Using this technique, we analyze the performance of decoder-based models, the effectiveness of existing log-likelihood estimators, the degree of overfitting, and the degree to which these models miss important modes of the data distribution."  
 >	"This paper introduces Annealed Importance Sampling to compute tighter lower bounds and upper bounds for any generative model (with a decoder)."  
+  - <https://youtu.be/RZOKRFBtSh4?t=54m8s> (Wu)  
   - <https://github.com/tonywu95/eval_gen>  
 
 
@@ -462,10 +464,19 @@ interesting papers:
 
 [Towards Principled Methods for Training Generative Adversarial Networks](https://arxiv.org/abs/1701.04862) (Facebook AI Research)  
 
-[Good Semi-supervised Learning That Requires a Bad GAN](https://arxiv.org/abs/1705.09783) (Salakhutdinov)  
+[GANs Trained by a Two Time-Scale Update Rule Converge to a Nash Equilibrium](https://arxiv.org/abs/1706.08500) (Hochreiter)  
+>	"We propose a two time-scale update rule (TTUR) for training GANs with stochastic gradient descent that has an individual learning rate for both the discriminator and the generator."  
+>	"For the evaluation of the performance of GANs at image generation, we introduce the "Frechet Inception Distance" (FID) which captures the similarity of generated images to real ones better than the Inception Score."  
+>	"In experiments, TTUR improves learning for DCGANs, improved Wasserstein GANs, and BEGANs."  
+>	"to the best of our knowledge this is the first convergence proof for GANs"  
+  - <https://youtu.be/h6eQrkkU9SA?t=21m6s> (Hochreiter)  
+  - <https://github.com/bioinf-jku/TTUR>  
 
+----
 [Optimizing the Latent Space of Generative Networks](https://arxiv.org/abs/1707.05776) (Facebook AI Research)  
 >	"GAN without discriminator"  
+
+[Good Semi-supervised Learning That Requires a Bad GAN](https://arxiv.org/abs/1705.09783) (Salakhutdinov)  
 
 ----
 [A Connection Between Generative Adversarial Networks, Inverse Reinforcement Learning, and Energy-Based Models](https://arxiv.org/abs/1611.03852) (Abbeel, Levine)  
@@ -480,6 +491,7 @@ interesting papers:
 >	"In this paper, we present a simple Bayesian formulation for end-to-end unsupervised and semi-supervised learning with generative adversarial networks. Within this framework, we marginalize the posteriors over the weights of the generator and discriminator using stochastic gradient Hamiltonian Monte Carlo. We interpret data samples from the generator, showing exploration across several distinct modes in the generator weights. We also show data and iteration efficient learning of the true distribution. We also demonstrate state of the art semi-supervised learning performance on several benchmarks, including SVHN, MNIST, CIFAR-10, and CelebA. The simplicity of the proposed approach is one of its greatest strengths: inference is straightforward, interpretable, and stable. Indeed all of the experimental results were obtained without feature matching, normalization, or any ad-hoc techniques."
 
 [Learning in Implicit Generative Models](http://arxiv.org/abs/1610.03483) (Mohamed)  
+  - <https://youtu.be/RZOKRFBtSh4?t=5m37s> (Mohamed)  
   - <https://casmls.github.io/general/2017/05/24/ligm.html>  
 
 [Variational Inference using Implicit Distributions](http://arxiv.org/abs/1702.08235) (Huszar)  
@@ -492,20 +504,6 @@ interesting papers:
 [Deep and Hierarchical Implicit Models](http://arxiv.org/abs/1702.08896) (Blei)
 >	"We develop likelihood-free variational inference (LFVI). Key to LFVI is specifying a variational family that is also implicit. This matches the model's flexibility and allows for accurate approximation of the posterior. Our work scales up implicit models to sizes previously not possible and advances their modeling design."
   - <http://dustintran.com/blog/deep-and-hierarchical-implicit-models>  
-
-----
-[f-GAN: Training Generative Neural Samplers using Variational Divergence Minimization](http://arxiv.org/abs/1606.00709)  
->	"Shows how to optimize many different objectives using adversarial training."  
-  - <https://youtube.com/watch?v=I1M_jGWp5n0>  
-  - <https://youtube.com/watch?v=kQ1eEXgGsCU> (Nowozin)  
-  - <https://youtube.com/watch?v=y7pUN2t5LrA> (Nowozin)  
-  - <https://github.com/wiseodd/generative-models/tree/master/GAN/f_gan>  
-
-[Improved Generator Objectives for GANs](http://arxiv.org/abs/1612.02780) (Google Brain)  
->	"We present a framework to understand GAN training as alternating density ratio estimation and approximate divergence minimization. This provides an interpretation for the mismatched GAN generator and discriminator objectives often used in practice, and explains the problem of poor sample diversity. We also derive a family of generator objectives that target arbitrary f-divergences without minimizing a lower bound, and use them to train generative image models that target either improved sample quality or greater sample diversity."  
-
-[Revisiting Classifier Two-Sample Tests for GAN Evaluation and Causal Discovery](http://arxiv.org/abs/1610.06545) (Facebook AI Research)  
-  - <https://youtube.com/watch?v=AYlbGWLL4Eo> (Sutherland)  
 
 ----
 [Wasserstein GAN](https://arxiv.org/abs/1701.07875) (Facebook AI Research)  
@@ -555,8 +553,23 @@ interesting papers:
   - <https://github.com/carpedm20/BEGAN-pytorch>  
 
 ----
+[f-GAN: Training Generative Neural Samplers using Variational Divergence Minimization](http://arxiv.org/abs/1606.00709)  
+>	"Shows how to optimize many different objectives using adversarial training."  
+  - <https://youtube.com/watch?v=I1M_jGWp5n0>  
+  - <https://youtube.com/watch?v=kQ1eEXgGsCU> (Nowozin)  
+  - <https://youtube.com/watch?v=y7pUN2t5LrA> (Nowozin)  
+  - <https://github.com/wiseodd/generative-models/tree/master/GAN/f_gan>  
+
+[Improved Generator Objectives for GANs](http://arxiv.org/abs/1612.02780) (Google Brain)  
+>	"We present a framework to understand GAN training as alternating density ratio estimation and approximate divergence minimization. This provides an interpretation for the mismatched GAN generator and discriminator objectives often used in practice, and explains the problem of poor sample diversity. We also derive a family of generator objectives that target arbitrary f-divergences without minimizing a lower bound, and use them to train generative image models that target either improved sample quality or greater sample diversity."  
+
+[Revisiting Classifier Two-Sample Tests for GAN Evaluation and Causal Discovery](http://arxiv.org/abs/1610.06545) (Facebook AI Research)  
+  - <https://youtube.com/watch?v=AYlbGWLL4Eo> (Sutherland)  
+
+----
 [Unrolled Generative Adversarial Networks](http://arxiv.org/abs/1611.02163)  
 >	"We introduce a method to stabilize GANs by defining the generator objective with respect to an unrolled optimization of the discriminator. This allows training to be adjusted between using the optimal discriminator in the generator's objective, which is ideal but infeasible in practice, and using the current value of the discriminator, which is often unstable and leads to poor solutions. We show how this technique solves the common problem of mode collapse, stabilizes training of GANs with complex recurrent generators, and increases diversity and coverage of the data distribution by the generator."  
+  - <https://youtu.be/RZOKRFBtSh4?t=26m16s> (Metz)  
   - <https://github.com/poolio/unrolled_gan>  
 
 [Improved Techniques for Training GANs](http://arxiv.org/abs/1606.03498)  
@@ -709,6 +722,7 @@ interesting papers:
 
 [Composing Graphical Models with Neural Networks for Structured Representations and Fast Inference](http://arxiv.org/abs/1603.06277)  
   - <https://youtube.com/watch?v=btr1poCYIzw>  
+  - <http://videolectures.net/deeplearning2017_johnson_graphical_models/> (Johnson)  
   - <https://youtube.com/watch?v=vnO3w8OgTE8> (Duvenaud)  
   - <http://www.cs.toronto.edu/~duvenaud/courses/csc2541/slides/svae-slides.pdf>  
   - <https://github.com/mattjj/svae>  
@@ -742,6 +756,12 @@ interesting papers:
 ---
 ### generative models - autoregressive models
 
+[Attention Is All You Need](https://arxiv.org/abs/1706.03762) (Google Brain)  
+  - <https://research.googleblog.com/2017/08/transformer-novel-neural-network.html>  
+  - <https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/>  
+  - <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/transformer.py>  
+
+----
 [Pixel Recurrent Neural Networks](http://arxiv.org/abs/1601.06759) (DeepMind)  
   - <http://techtalks.tv/talks/pixel-recurrent-neural-networks/62375/> (van den Oord)  
   - <https://evernote.com/shard/s189/sh/fdf61a28-f4b6-491b-bef1-f3e148185b18/aba21367d1b3730d9334ed91d3250848> (Larochelle)  
@@ -777,8 +797,9 @@ interesting papers:
 [Neural Machine Translation in Linear Time](http://arxiv.org/abs/1610.10099) (ByteNet) (DeepMind)  
 >	"Generalizes LSTM seq2seq by preserving the resolution. Dynamic unfolding instead of attention. Linear time computation."  
 >
->	"The authors apply a WaveNet-like architecture to the task of Machine Translation. Encoder (Source Network) and Decoder (Target Network) are CNNs that use Dilated Convolutions and they are stacked on top of each other. The Target Network uses Masked Convolutions to ensure that it only relies on information from the past. Crucially, the time complexity of the network is c(|S| + |T|), which is cheaper than that of the common seq2seq attention architecture (|S|*|T|). Through dilated convolutions the network has constant path lengths between [source input -> target output] and [target inputs -> target output] nodes. This allows for efficient propagation of gradients."
- - <https://github.com/dennybritz/deeplearning-papernotes/blob/master/notes/nmt-linear-time.md>  
+>	"The authors apply a WaveNet-like architecture to the task of Machine Translation. Encoder (Source Network) and Decoder (Target Network) are CNNs that use Dilated Convolutions and they are stacked on top of each other. The Target Network uses Masked Convolutions to ensure that it only relies on information from the past. Crucially, the time complexity of the network is c(|S| + |T|), which is cheaper than that of the common seq2seq attention architecture (|S|*|T|). Through dilated convolutions the network has constant path lengths between [source input -> target output] and [target inputs -> target output] nodes. This allows for efficient propagation of gradients."  
+  - <https://github.com/dennybritz/deeplearning-papernotes/blob/master/notes/nmt-linear-time.md>  
+  - <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/bytenet.py>  
 
 [Language Modeling with Gated Convolutional Networks](http://arxiv.org/abs/1612.08083) (Facebook AI Research)  # outperforming LSTM on language modelling
   - <https://github.com/DingKe/nn_playground/tree/master/gcnn>  
@@ -832,6 +853,13 @@ interesting papers:
   - <https://reddit.com/r/MachineLearning/comments/6d7nb1/d_machine_learning_wayr_what_are_you_reading_week/dihh54a/>  
 
 ----
+[Model Selection in Bayesian Neural Networks via Horseshoe Priors](https://arxiv.org/abs/1705.10388)  
+>	"Model selection - even choosing the number of nodes - remains an open question. In this work, we apply a horseshoe prior over node pre-activations of a Bayesian neural network, which effectively turns off nodes that do not help explain the data. We demonstrate that our prior prevents the BNN from underfitting even when the number of nodes required is grossly over-estimated. Moreover, this model selection over the number of nodes doesn’t come at the expense of predictive or computational performance; in fact, we learn smaller networks with comparable predictive performance to current approaches."  
+
+[Variational Dropout Sparsifies Deep Neural Networks](https://arxiv.org/abs/1701.05369)  
+>	"Interpretation of Gaussian dropout as performing variational inference in a network with log uniform priors over weights leads to sparsity in weights. This is an interesting approach, wherein sparsity stemsfrom variational optimization instead of the prior."  
+
+----
 [What Uncertainties Do We Need in Bayesian Deep Learning for Computer Vision?](https://arxiv.org/abs/1703.04977)  
 >	"We presented a novel Bayesian deep learning framework to learn a mapping to aleatoric uncertainty from the input data, which is composed on top of epistemic uncertainty models. We derived our framework for both regression and classification applications.  
 >	We showed that it is important to model epistemic uncertainty for:  
@@ -882,63 +910,32 @@ interesting papers:
 ---
 ### reasoning
 
-[Learning Visual Reasoning Without Strong Priors](https://arxiv.org/abs/1707.03017) (MILA)  
-
-[A Simple Neural Network Module for Relational Reasoning](https://arxiv.org/abs/1706.01427) (DeepMind)  
-  - <https://soundcloud.com/nlp-highlights/20a>  
-  - <https://github.com/kimhc6028/relational-networks>  
-  - <https://github.com/gitlimlab/Relation-Network-Tensorflow>  
-  - <https://github.com/Alan-Lee123/relation-network>  
-
-----
-[Gated-Attention Readers for Text Comprehension](http://arxiv.org/abs/1606.01549) (Salakhutdinov)  
-  - <https://youtube.com/watch?v=ZSDrM-tuOiA> (Salakhutdinov)  
-  - <https://theneuralperspective.com/2017/01/19/gated-attention-readers-for-text-comprehension/>  
-
 [Question Answering on Knowledge Bases and Text using Universal Schema and Memory Networks](https://arxiv.org/abs/1704.08384) (McCallum)  
   - <https://youtu.be/lc68_d_DnYs?t=7m28s> (Neelakantan)  
+
+[Tracking the World State with Recurrent Entity Networks](https://arxiv.org/abs/1612.03969) (Facebook AI Research)  
+>	"There's a bunch of memory slots that each can be used to represent a single entity. The first time an entity appears, it's written to a slot. Every time that something happens in the story that corresponds to a change in the state of an entity, the change in the state of that entity is combined with the entity's previous state via a modified GRU update equation and rewritten to the same slot."  
+  - <https://github.com/jimfleming/recurrent-entity-networks>  
 
 [Key-Value Memory Networks for Directly Reading Documents](http://arxiv.org/abs/1606.03126) (Weston)  
   - <http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.03126>  
   - <https://gist.github.com/shagunsodhani/a5e0baa075b4a917c0a69edc575772a8>  
   - <https://github.com/facebook/MemNN/blob/master/KVmemnn>  
 
-[Tracking the World State with Recurrent Entity Networks](https://arxiv.org/abs/1612.03969) (Facebook AI Research)  
->	"There's a bunch of memory slots that each can be used to represent a single entity. The first time an entity appears, it's written to a slot. Every time that something happens in the story that corresponds to a change in the state of an entity, the change in the state of that entity is combined with the entity's previous state via a modified GRU update equation and rewritten to the same slot."  
-  - <https://github.com/jimfleming/recurrent-entity-networks>  
+[Gated-Attention Readers for Text Comprehension](http://arxiv.org/abs/1606.01549) (Salakhutdinov)  
+  - <https://youtube.com/watch?v=ZSDrM-tuOiA> (Salakhutdinov)  
+  - <https://theneuralperspective.com/2017/01/19/gated-attention-readers-for-text-comprehension/>  
 
 ----
-[Deep Compositional Question Answering with Neural Module Networks](http://arxiv.org/abs/1511.02799) (Darrell)  
-  - <https://youtube.com/watch?v=gDXD3hYfBW8> (Andreas)  
-  - <http://research.microsoft.com/apps/video/default.aspx?id=260024> (10:45) (Darrell)  
-  - <http://blog.jacobandreas.net/programming-with-nns.html>  
-  - <https://github.com/abhshkdz/papers/blob/master/reviews/deep-compositional-question-answering-with-neural-module-networks.md>  
-  - <http://github.com/jacobandreas/nmn2>  
-
-[Learning to Compose Neural Networks for Question Answering](http://arxiv.org/abs/1601.01705) (Darrell)  
-  - <https://youtube.com/watch?v=gDXD3hYfBW8> (Andreas)  
-  - <http://blog.jacobandreas.net/programming-with-nns.html>  
-  - <http://github.com/jacobandreas/nmn2>  
-
-[Learning to Reason: End-to-End Module Networks for Visual Question Answering](https://arxiv.org/abs/1704.05526) (Darrell)  
-  - <http://bair.berkeley.edu/blog/2017/06/20/learning-to-reason-with-neural-module-networks>  
-  - <https://youtu.be/ejQNdTdyTBM?t=28m8s> (Kretov) (in russian)  
-
-[Inferring and Executing Programs for Visual Reasoning](https://arxiv.org/abs/1705.03633) (Stanford, Facebook AI Research)
-  - <https://github.com/facebookresearch/clevr-iep>  
-
-----
-[Neural Enquirer: Learning to Query Tables with Natural Language](http://arxiv.org/abs/1512.00965)  
->	"Authors propose a fully distributed neural enquirer, comprising several neuralized execution layers of field attention, row annotation, etc. While the model is not efficient in execution because of intensive matrix/vector operation during neural information processing and lacks explicit interpretation of execution, it can be trained in an end-to-end fashion because all components in the neural enquirer are differentiable."  
+[Neural Symbolic Machines: Learning Semantic Parsers on Freebase with Weak Supervision](http://arxiv.org/abs/1611.00020) (Google Brain)
+>	"We propose the Manager-Programmer-Computer framework, which integrates neural networks with non-differentiable memory to support abstract, scalable and precise operations through a friendly neural computer interface. Specifically, we introduce a Neural Symbolic Machine, which contains a sequence-to-sequence neural "programmer", and a non-differentiable "computer" that is a Lisp interpreter with code assist."  
 
 [Learning a Natural Language Interface with Neural Programmer](http://arxiv.org/abs/1611.08945)  
   - <http://youtu.be/lc68_d_DnYs?t=24m44s> (Neelakantan)  
   - <https://github.com/tensorflow/models/tree/master/neural_programmer>  
 
-[Neural Symbolic Machines: Learning Semantic Parsers on Freebase with Weak Supervision](http://arxiv.org/abs/1611.00020) (Google Brain)
->	"We propose the Manager-Programmer-Computer framework, which integrates neural networks with non-differentiable memory to support abstract, scalable and precise operations through a friendly neural computer interface. Specifically, we introduce a Neural Symbolic Machine, which contains a sequence-to-sequence neural "programmer", and a non-differentiable "computer" that is a Lisp interpreter with code assist."  
-
-[The More You Know: Using Knowledge Graphs for Image Classification](http://arxiv.org/abs/1612.04844) (Salakhutdinov)  # evolution of Gated Graph Sequence Neural Networks  
+[Neural Enquirer: Learning to Query Tables with Natural Language](http://arxiv.org/abs/1512.00965)  
+>	"Authors propose a fully distributed neural enquirer, comprising several neuralized execution layers of field attention, row annotation, etc. While the model is not efficient in execution because of intensive matrix/vector operation during neural information processing and lacks explicit interpretation of execution, it can be trained in an end-to-end fashion because all components in the neural enquirer are differentiable."  
 
 ----
 [End-to-end Differentiable Proving](https://arxiv.org/abs/1705.11040) (Rocktaschel)  
@@ -947,21 +944,42 @@ interesting papers:
   - <https://soundcloud.com/nlp-highlights/19a> (Rocktaschel)  
   - [Learning Knowledge Base Inference with Neural Theorem Provers](http://akbc.ws/2016/papers/14_Paper.pdf) by Rocktaschel and Riedel  
 
+[Differentiable Learning of Logical Rules for Knowledge Base Completion](https://arxiv.org/abs/1702.08367) (Cohen)  
+
 [TensorLog: A Differentiable Deductive Database](http://arxiv.org/abs/1605.06523) (Cohen)  
   - <https://github.com/TeamCohen/TensorLog>  
 
-[Differentiable Learning of Logical Rules for Knowledge Base Completion](https://arxiv.org/abs/1702.08367) (Cohen)  
+----
+[Learning Visual Reasoning Without Strong Priors](https://arxiv.org/abs/1707.03017) (MILA)  
+
+[A Simple Neural Network Module for Relational Reasoning](https://arxiv.org/abs/1706.01427) (DeepMind)  
+  - <https://soundcloud.com/nlp-highlights/20a>  
+  - <http://www.shortscience.org/paper?bibtexKey=journals/corr/1706.01427>  
+  - <https://github.com/kimhc6028/relational-networks>  
+  - <https://github.com/gitlimlab/Relation-Network-Tensorflow>  
+  - <https://github.com/Alan-Lee123/relation-network>  
+
+[Inferring and Executing Programs for Visual Reasoning](https://arxiv.org/abs/1705.03633) (Stanford, Facebook AI Research)
+  - <https://github.com/facebookresearch/clevr-iep>  
+
+[Learning to Reason: End-to-End Module Networks for Visual Question Answering](https://arxiv.org/abs/1704.05526) (Darrell)  
+  - <http://bair.berkeley.edu/blog/2017/06/20/learning-to-reason-with-neural-module-networks>  
+  - <https://youtu.be/ejQNdTdyTBM?t=28m8s> (Kretov) (in russian)  
+
+[The More You Know: Using Knowledge Graphs for Image Classification](http://arxiv.org/abs/1612.04844) (Salakhutdinov)  # evolution of Gated Graph Sequence Neural Networks  
 
 ----
-[WebNav: A New Large-Scale Task for Natural Language based Sequential Decision Making](http://arxiv.org/abs/1602.02261)  
-
-----
-[Learning to Perform Physics Experiments via Deep Reinforcement Learning](http://arxiv.org/abs/1611.01843) (DeepMind)  
-  - <https://youtu.be/SAcHyzMdbXc?t=16m6s> (de Freitas)  
+[Visual Interaction Networks](https://arxiv.org/abs/1706.01433) (DeepMind)  
+>	"a general-purpose model for predicting future physical states from video data"  
+>	"The VIN is learnable and can be trained from supervised data sequences which consist of input image frames and target object state values. It can learn to approximate a range of different physical systems which involve interacting entities by implicitly internalizing the rules necessary for simulating their dynamics and interactions."  
+  - <https://goo.gl/FD1XX5> + <https://goo.gl/4SSGP0> (demo)  
 
 [Interaction Networks for Learning about Objects, Relations and Physics](http://arxiv.org/abs/1612.00222) (DeepMind)  
   - <https://blog.acolyer.org/2017/01/02/interaction-networks-for-learning-about-objects-relations-and-physics/>  
   - <https://github.com/jaesik817/Interaction-networks_tensorflow>  
+
+[Learning to Perform Physics Experiments via Deep Reinforcement Learning](http://arxiv.org/abs/1611.01843) (DeepMind)  
+  - <https://youtu.be/SAcHyzMdbXc?t=16m6s> (de Freitas)  
 
 [Learning Physical Intuition of Block Towers by Example](http://arxiv.org/abs/1603.01312) (Facebook AI Research)  
   - <https://youtu.be/oSAG57plHnI?t=19m48s> (Tenenbaum)  
@@ -971,9 +989,19 @@ interesting papers:
 ---
 ### program induction
 
+[Learning Neural Programs To Parse Programs](https://arxiv.org/abs/1706.01284)  
+>	"We explore a new direction to learn domain-specific programs significantly more complex than previously considered in the literature of learning programs from input-output examples only. In particular, we consider an exemplary problem to learn a program to parse an input satisfying a context-free grammar into its abstract syntax tree. This problem is challenging when the underlying grammar is unknown, and only input-output examples are provided. The program to be synthesized in this problem, i.e., a parser, is more complex than programs consisting of string operations as in many previous work, and thus serves as a good next step challenge to tackle in the domain of learning programs from input-output examples."  
+>	"Recent works propose to use sequence-to-sequence models to directly generate parse trees from inputs. However, they often do not generalize well, and our experiments show that their test accuracy is almost 0% on inputs longer than those seen in training."  
+>	"This work is the first successful demonstration that reinforcement learning can be applied to train a neural program operating a non-differentiable machine with input-output pairs only, while the learned neural program can fully generalize to longer inputs on a non-trivial task."  
+>	"To show that our approach is general and can learn to parse different types of context-free languages using the same architecture and approach, we evaluate it on learning the parsing programs for an imperative language and a functional one, and demonstrate that our approach can successfully learn both of them, and the learned programs can achieve 100% on test set whose inputs are 100x longer than training samples."  
+>	"We propose a new approach to learn a hybrid program, a differentiable neural program operating a domain-specific non-differentiable machine, from input-output examples only. Learning such a hybrid program combines the advantage of both differentiable and non-differentiable machines to enable learning more complex programs."  
+>	"First, we propose LL machines as an example domain-specific non-differentiable machine to be operated by neural programs, for learning parsers. Intuitively, an LL machine provides a high-level abstraction to regularize the learned programs to be within the space of LL(1) parsers. The instructions provided by an LL machine provide richer semantic information than the primitives considered in previous works, so that the learning algorithm can take advantage of such information to learn more complex programs."  
+>	"Second, we propose novel reinforcement learning-based techniques to train a neural program. Specifically, we solve the training problem in two phases: (1) we search for a valid execution trace set for each input-output example; then (2) we search for a set of input-output-trace combinations, so that a neural program can be trained to fit all training examples."  
+  - <http://github.com/liuchangacm/neuralparser>  
+
 [RobustFill: Neural Program Learning under Noisy I/O](https://arxiv.org/abs/1703.07469) (Microsoft)  
 
-[Neuro-Symbolic Program Synthesis](https://arxiv.org/abs/1611.01855) (Microsoft)
+[Neuro-Symbolic Program Synthesis](https://arxiv.org/abs/1611.01855) (Microsoft)  
 
 [TerpreT: A Probabilistic Programming Language for Program Induction](http://arxiv.org/abs/1608.04428) (Microsoft)  
 >	"These works raise questions of (a) whether new models can be designed specifically to synthesize interpretable source code that may contain looping and branching structures, and (b) whether searching over program space using techniques developed for training deep neural networks is a useful alternative to the combinatorial search methods used in traditional IPS. In this work, we make several contributions in both of these directions."  
@@ -1071,6 +1099,7 @@ interesting papers:
 
 ----
 [Discrete Sequential Prediction of Continuous Actions for Deep RL](https://arxiv.org/abs/1705.05035) (Google Brain)  
+>	"We draw inspiration from the recent success of sequence-to-sequence models for structured prediction problems to develop policies over discretized spaces. Central to this method is the realization that complex functions over high dimensional spaces can be modeled by neural networks that use next step prediction. Specifically, we show how Q-values and policies over continuous spaces can be modeled using a next step prediction model over discretized dimensions. With this parameterization, it is possible to both leverage the compositional structure of action spaces during learning, as well as compute maxima over action spaces (approximately). On a simple example task we demonstrate empirically that our method can perform global search, which effectively gets around the local optimization issues that plague DDPG and NAF. We apply the technique to off-policy (Q-learning) methods and show that our method can achieve the state-of-the-art for off-policy methods on several continuous control tasks."  
 
 [Reinforcement Learning in Large Discrete Action Spaces](http://arxiv.org/abs/1512.07679)  
 
@@ -1516,10 +1545,13 @@ hieves."
   - <https://github.com/YunzhuLi/InfoGAIL>  
 
 [Robust Imitation of Diverse Behaviors](https://arxiv.org/abs/1707.02747) (DeepMind)  
+>	"We develop a new version of GAIL that (1) is much more robust than the purely-supervised controller, especially with few demonstrations, and (2) avoids mode collapse, capturing many diverse behaviors when GAIL on its own does not."  
+>	"The base of our model is a new type of variational autoencoder on demonstration trajectories that learns semantic policy embeddings, which can be smoothly interpolated with a resulting smooth interpolation of reaching behavior."  
   - <https://youtube.com/watch?v=necs0XfnFno> (demo)  
 
 [Model-based Adversarial Imitation Learning](http://arxiv.org/abs/1612.02179)  
->	"exploits gradient information that was not used in GAIL to learn models within the IRL process"  
+>	"Model-free approach does not allow the system to be differentiable, which requires the use of high-variance gradient estimations."  
+>	"We show how to use a forward model to make the system fully differentiable, which enables us to train policies using the stochastic gradient of discriminator."  
 
 [Generative Adversarial Imitation Learning](http://arxiv.org/abs/1606.03476)  
 >	"Uses a GAN framework to discriminate between teacher and student experience and force the student to behave close to the teacher."  
@@ -1592,6 +1624,10 @@ hieves."
   - <https://deepmind.com/blog/learning-through-human-feedback/>  
   - <https://blog.openai.com/deep-reinforcement-learning-from-human-preferences/>  
   - <https://github.com/nottombrown/rl-teacher>  
+
+[Counterfactual Multi-Agent Policy Gradients](https://arxiv.org/abs/1705.08926)  
+>	"We evaluate COMA in the testbed of StarCraft unit micromanagement, using a decentralised variant with significant partial observability. COMA significantly improves average performance over other multi-agent actor-critic methods in this setting, and the best performing agents are competitive with state-of-the-art centralised controllers that get access to the full state."  
+  - <https://youtube.com/watch?v=3OVvjE5B9LU> (Whiteson)  
 
 
 
@@ -1686,10 +1722,16 @@ hieves."
 [Policy Networks with Two-Stage Training for Dialogue Systems](http://arxiv.org/abs/1606.03152) (Maluuba)  
   - <http://www.maluuba.com/blog/2016/11/23/deep-reinforcement-learning-in-dialogue-systems>  
 
+----
+[Deal or No Deal? End-to-End Learning for Negotiation Dialogues](https://arxiv.org/abs/1706.05125) (Facebook)  
+  - <https://code.facebook.com/posts/1686672014972296>  
+  - <https://github.com/facebookresearch/end-to-end-negotiator>  
+
 [Learning Language Games through Interaction](http://arxiv.org/abs/1606.02447) (Manning)  
   - <https://youtube.com/watch?v=iuazFltYgCE> (Wang)
 
 [Deep Reinforcement Learning for Dialogue Generation](http://arxiv.org/abs/1606.01541) (Jurafsky)  
+  - <http://www.shortscience.org/paper?bibtexKey=conf/emnlp/LiMRJGG16>  
 
 [End-to-End LSTM-based Dialog Control Optimized with Supervised and Reinforcement Learning](http://arxiv.org/abs/1606.01269) (Zweig)  
 

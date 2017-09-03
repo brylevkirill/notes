@@ -100,7 +100,6 @@
 #### games
 
   ["Measuring Intelligence through Games"](http://arxiv.org/abs/1109.1314) by Schaul, Togelius, Schmidhuber  
-  ["Why video games are essential for inventing artificial intelligence"](http://togelius.blogspot.ru/2016/01/why-video-games-are-essential-for.html) by Julian Togelius  
 
   ["A 'Brief' History of Game AI Up To AlphaGo"](http://andreykurenkov.com/writing/a-brief-history-of-game-ai/) by Andrey Kurenkov  
   ["AI for classic games"](http://youtube.com/watch?v=kZ_AUmFcZtk) by David Silver  
@@ -108,6 +107,9 @@
   ["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#moravcik-et-al---deepstack-expert-level-artificial-intelligence-in-no-limit-poker) by Michael Bowling and others  
   ["Mastering the Game of Go with Deep Neural Networks and Tree Search"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#silver-et-al---mastering-the-game-of-go-with-deep-neural-networks-and-tree-search) by David Silver and others  
   ["Giraffe: Using Deep Reinforcement Learning to Play Chess"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#lai---giraffe-using-deep-reinforcement-learning-to-play-chess) by Matthew Lai  
+
+  ["Why video games are essential for inventing artificial intelligence"](http://togelius.blogspot.ru/2016/01/why-video-games-are-essential-for.html) by Julian Togelius  
+  ["Deep Learning for Video Game Playing"](https://arxiv.org/abs/1708.07902) by Justesen et al.  
 
   [games](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games)  
 

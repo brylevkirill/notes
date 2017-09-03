@@ -308,12 +308,16 @@
   "Word Vector Representations: word2vec" by Richard Socher - https://youtube.com/watch?v=ERibwqs9p38
   "GloVe: Global Vectors for Word Representation" by Richard Socher - https://youtube.com/watch?v=ASn7ExxLZws
 
+
   "Vector Representations of Words and Documents" by Anna Potapenko - https://youtube.com/watch?v=KEXWC-ICH_Y (in russian)
 
   "A Theoretical Approach to Semantic Representations" by Sanjeev Arora - https://youtube.com/watch?v=KR46z_V0BVw
   "Word Embeddings: Explaining Their Properties" by Sanjeev Arora - http://www.offconvex.org/2015/12/12/word-embeddings-1/ + http://www.offconvex.org/2016/02/14/word-embeddings-2/
 
   "Introduction to LDA" by Dmitry Bugaichenko - http://youtube.com/watch?v=KaXsalAixEU (in russian)
+
+
+  https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/
 
 
 

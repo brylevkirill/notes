@@ -84,6 +84,7 @@
   [deep reinforcement learning](http://techtalks.tv/talks/deep-reinforcement-learning/62360/) by David Silver  
   [deep reinforcement learning](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Reinforcement-Learning-Through-Policy-Optimization) by Pieter Abbeel & John Schulman  
 
+  [Deep Learning Summer School 2017](http://videolectures.net/deeplearning2017_montreal/)  
   [Deep Learning Summer School 2016](http://videolectures.net/deeplearning2016_montreal/)  
   [Deep Learning Summer School 2015](http://videolectures.net/deeplearning2015_montreal/)  
 
@@ -354,12 +355,13 @@
 
 ----
 
-  ["Deep Learning: Efficiency is the Driver of Uncertainty"](http://inverseprobability.com/2016/03/04/deep-learning-and-uncertainty) by Neil Lawrence
-
+  ["Deep Learning: Efficiency is the Driver of Uncertainty"](http://inverseprobability.com/2016/03/04/deep-learning-and-uncertainty) by Neil Lawrence  
   ["Deep Learning Is Not Good Enough, We Need Bayesian Deep Learning for Safe AI"](https://alexgkendall.com/computer_vision/bayesian_deep_learning_for_safe_ai/) by Alex Kendall  
 
   ["What My Deep Model Doesn't Know..."](http://mlg.eng.cam.ac.uk/yarin/blog_3d801aa532c1ce.html) by Yarin Gal  
   ["Uncertainty In Deep Learning"](http://mlg.eng.cam.ac.uk/yarin/blog_2248.html) by Yarin Gal  
+
+  ["Bayesian Neural Networks"](https://youtube.com/watch?v=tqGEX_Ucu04) by Dmitry Molchanov (in russian)  
 
   ["Course on Information Theory, Pattern Recognition, and Neural Networks"](http://videolectures.net/course_information_theory_pattern_recognition/) by David MacKay  
   ["Bayesian Methods for Adaptive Models"](http://www.inference.phy.cam.ac.uk/mackay/thesis.pdf) by David MacKay  
@@ -637,20 +639,11 @@
 
 ----
 
-  tips & tricks - <https://github.com/soumith/ganhacks> + <https://youtube.com/watch?v=X1mUN6dD8uE> (Chintala)
-
-  - labels improve subjective sample quality
-  - one sided label smoothing
-  - don’t smooth the negative labels (smooth only the data and not the generator values)
-  - use batch normalization
-  - balance generator & discriminator (usually discriminator wins which is a good thing)
-  - use heuristic non-saturating cost
-
-----
-
   [architecture variations](https://pbs.twimg.com/media/CwM0BzjVUAAWTn4.jpg:large)  
   [implementations](https://github.com/wiseodd/generative-models/tree/master/GAN)  
   [papers](https://github.com/zhangqianhui/AdversarialNetsPapers)  
+
+  [tips & tricks](https://github.com/soumith/ganhacks) by Soumith Chintala ([talk](https://youtube.com/watch?v=X1mUN6dD8uE))  
 
   [interesting papers](#interesting-papers---generative-adversarial-networks)
 
@@ -871,6 +864,14 @@ examples:
 
   ["A Statistical View of Deep Learning"](http://blog.shakirm.com/2015/07/a-statistical-view-of-deep-learning-retrospective/) by Shakir Mohamed
 
+----
+
+  - [convolutional neural network](#convolutional-neural-network)
+  - [recurrent neural network](#recurrent-neural-network)
+  - [compute and memory](#architectures---compute-and-memory)
+  - [attention](#architectures---attention)
+  - [distributed representations](#architectures---distributed-representations)
+
 
 
 ---
@@ -917,7 +918,7 @@ examples:
 
 ----
 
-  **long short term memory**
+  **Long Short Term Memory (LSTM)**
 
   [overview](https://youtu.be/yCC09vCHzF8?t=45m31s) by Andrej Karpathy  
 
@@ -1024,31 +1025,29 @@ examples:
   - sequential processing of static data (e.g. gaze moving around image)"  
 
 
-types of attention:  
+  types of attention:  
   - positional  
   - associative  
 
-hard (stochastic variables, learned via reinforcement) vs soft (continuous variables, learned via backpropagation) attention models:  
+  hard (stochastic variables, learned via reinforcement) vs soft (continuous variables, learned via backpropagation) attention models:  
   - if you care about variables (want to read off the attention) then make them hard (optimization is quicker with hard decisions, randomization helps with better initializations for attention)  
   - if you don't care (just part of the process to get end result) then make them soft (inference is computationally easier than with graphical models of stochastic variables, determenistic attention prevents exploration)  
 
-soft attention models:  
+  soft attention models:  
   - computationally expensive (they had to examine every image location, hard to scale to large datasets)  
   - deterministic (can be trained by backprop)  
 
-hard attention models:  
+  hard attention models:  
   - computationally more efficient (the need to process only small part of each image frame)  
   - stochastic (require some form of sampling because they must make discrete choices)  
 
 ----
 
-  [overview](https://youtu.be/9U0drwafE78?t=36m22s) by Oriol Vinyals
+  [overview](https://youtu.be/9U0drwafE78?t=36m22s) by Oriol Vinyals  
+  [overview](https://youtube.com/watch?v=_XRBlhzb31U) by Mikhail Figurnov (in russian)  
 
   [overview](http://distill.pub/2016/augmented-rnns/#attentional-interfaces) by Chris Olah and Shan Carter  
-  [overview](http://wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/) by Denny Britz  
-
-  <http://yanran.li/peppypapers/2015/10/07/survey-attention-model-1.html>  
-  <http://yanran.li/peppypapers/2015/10/07/survey-attention-model-2.html>  
+  [overview](http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/) by Denny Britz  
 
   ["Smooth Operators: the Rise of Differentiable Attention in Deep Learning"](http://www.thespermwhale.com/jaseweston/ram/slides/session2/Smooth%20Operators-NIPS2015.pptx) by Alex Graves
 
@@ -1092,12 +1091,12 @@ hard attention models:
   - scalable and parallelizable training with stochastic gradient descent using similarity ranking loss or log-likelihood loss
   - more data and bigger the models, the more impressive the results
 
-limitations:
+  limitations:
 
   - *fixed capacity*: one has to choose a dimension before training and it determines the capacity of the representation, then one can't increase it as more data comes in without retraining the whole thing from the scratch  
   - *partial lack of interpretability*: distributed representations are black boxes - they may preserve some semantic relations as vector algebraic properties, but one can't generally easily extract arbitrary information from them without a specifically trained neural network  
 
-open questions:
+  open questions:
 
   - should words/sentences/entities/relations/facts be vectors or matrices, or tensors, or distributions over them?  
   - better compression? improve memory capacity of embeddings and allow for one-shot learning of new symbols  
@@ -1946,6 +1945,7 @@ interesting papers (see below):
   - <https://youtube.com/watch?v=hVv4M0bTBJc> (Sutskever)
   - <https://github.com/lukaszkaiser/NeuralGPU/>
   - <https://github.com/tensorflow/models/tree/master/neural_gpu>
+  - <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/neural_gpu.py>
 
 
 #### Price, Zaremba, Sutskever - ["Extensions and Limitations of the Neural GPU"](http://www.cs.nyu.edu/~zaremba/neuralgpu.pdf)
@@ -2377,8 +2377,8 @@ interesting papers (see below):
 
 >	"Actor-critic methods and generative adversarial networks are two such classes of multilevel optimization problems which have close parallels. In both cases the information flow is a simple feedforward pass from one model which either takes an action (AC) or generates a sample (GANs) to a second model which evaluates the output of the first model. In both cases, the second model is the only one which has direct access to special information in the environment, either reward information (AC) or real samples from the distribution in question (GANs), and the first model must learn based on error signals from the second model alone. GANs and AC methods have important differences as well, and we show a construction that bridges the two. Both of these models suffer from stability issues, and techniques for stabilizing training have been developed largely independently by the two communities."
 
+  - <https://youtube.com/watch?v=RZOKRFBtSh4&t=1m5s> (Pfau)
   - <https://youtube.com/watch?v=3s4UyoMilQo> (Pfau)
-  - <https://youtube.com/watch?v=RZOKRFBtSh4&t=1m> (Pfau)
 
 
 #### Finn, Christiano, Abbeel, Levine - ["A Connection Between Generative Adversarial Networks, Inverse Reinforcement Learning, and Energy-Based Models"](http://arxiv.org/abs/1611.03852)
@@ -2533,20 +2533,6 @@ interesting papers (see below):
 >	"In this paper, we analyze the condition under which the latent code in VAE should be used, i.e. when does VAE autoencode, and use this observation to design a VAE model that’s a lossy compressor of observed data. At modeling level, we propose two complementary improvements to VAE that are shown to have good empirical performance. VLAE has the appealing properties of controllable representation learning and improved density estimation performance but these properties come at a cost: compared with VAE models that have simple prior and decoder, VLAE is slower at generation due to the sequential nature of autoregressive model. In addition, we also tried our method on CIFAR-10 dataset, but so far we only got 3.09 bits per dim, which is not as good as PixelRNN’s 3.00 bits per dim. We believe that by improving the VAE training procedure, the gap could be closed. Moving forward, we believe it’s exciting to extend this principle of learning lossy codes to other forms of data, in particular those that have a temporal aspect like audio and video. Another promising direction is to design representations that contain only information for downstream tasks and utilize those representations to improve semi-supervised learning."
 
 
-#### Rezende, Mohamed - ["Variational Inference with Normalizing Flows"](http://arxiv.org/abs/1505.05770)
->	"The choice of approximate posterior distribution is one of the core problems in variational inference. Most applications of variational inference employ simple families of posterior approximations in order to allow for efficient inference, focusing on mean-field or other simple structured approximations. This restriction has a significant impact on the quality of inferences made using variational methods. We introduce a new approach for specifying flexible, arbitrarily complex and scalable approximate posterior distributions. Our approximations are distributions constructed through a normalizing flow, whereby a simple initial density is transformed into a more complex one by applying a sequence of invertible transformations until a desired level of complexity is attained. We use this view of normalizing flows to develop categories of finite and infinitesimal flows and provide a unified view of approaches for constructing rich posterior approximations. We demonstrate that the theoretical advantages of having posteriors that better match the true posterior, combined with the scalability of amortized variational approaches, provides a clear improvement in performance and applicability of variational inference."
-
->	"We propose the specification of approximate posterior distributions using normalizing flows, a tool for constructing complex distributions by transforming a probability density through a series of invertible mappings. Inference with normalizing flows provides a tighter, modified variational lower bound with additional terms that only add terms with linear time complexity.
-	We show that normalizing flows admit infinitesimal flows that allow us to specify a class of posterior approximations that in the asymptotic regime is able to recover the true posterior distribution, overcoming one oft-quoted limitation of variational inference.
-	We present a unified view of related approaches for improved posterior approximation as the application of special types of normalizing flows.
-	We show experimentally that the use of general normalizing flows systematically outperforms other competing approaches for posterior approximation."
-
->	"In this work we developed a simple approach for learning highly non-Gaussian posterior densities by learning transformations of simple densities to more complex ones through a normalizing flow. When combined with an amortized approach for variational inference using inference networks and efficient Monte Carlo gradient estimation, we are able to show clear improvements over simple approximations on different problems. Using this view of normalizing flows, we are able to provide a unified perspective of other closely related methods for flexible posterior estimation that points to a wide spectrum of approaches for designing more powerful posterior approximations with different statistical and computational tradeoffs. An important conclusion from the discussion in section 3 is that there exist classes of normalizing flows that allow us to create extremely rich posterior approximations for variational inference. With normalizing flows, we are able to show that in the asymptotic regime, the space of solutions is rich enough to contain the true posterior distribution. If we combine this with the local convergence and consistency results for maximum likelihood parameter estimation in certain classes of latent variables models, we see that we are now able overcome the objections to using variational inference as a competitive and default approach for statistical inference. Making such statements rigorous is an important line of future research. Normalizing flows allow us to control the complexity of the posterior at run-time by simply increasing the flow length of the sequence. The approach we presented considered normalizing flows based on simple transformations of the form (10) and (14). These are just two of the many maps that can be used, and alternative transforms can be designed for posterior approximations that may require other constraints, e.g., a restricted support. An important avenue of future research lies in describing the classes of transformations that allow for different characteristics of the posterior and that still allow for efficient, linear-time computation."
-
-  - <https://ferrine.github.io/blog/2017/07/11/normalizing-flows-overview/>
-  - <https://github.com/pymc-devs/pymc3/blob/master/pymc3/variational/flows.py>
-
-
 #### Mescheder, Nowozin, Geiger - ["Adversarial Variational Bayes: Unifying Variational Autoencoders and Generative Adversarial Networks"](https://arxiv.org/abs/1701.04722)
 >	"Variational Autoencoders (VAEs) are expressive latent variable models that can be used to learn complex probability distributions from training data. However, the quality of the resulting model crucially relies on the expressiveness of the inference model used during training. We introduce Adversarial Variational Bayes (AVB), a technique for training Variational Autoencoders with arbitrarily expressive inference models. We achieve this by introducing an auxiliary discriminative network that allows to rephrase the maximum-likelihood-problem as a two-player game, hence establishing a principled connection between VAEs and Generative Adversarial Networks (GANs). We show that in the nonparametric limit our method yields an exact maximumlikelihood assignment for the parameters of the generative model, as well as the exact posterior distribution over the latent variables given an observation. Contrary to competing approaches which combine VAEs with GANs, our approach has a clear theoretical justification, retains most advantages of standard Variational Autoencoders and is easy to implement."
 
@@ -2683,7 +2669,21 @@ x."
 ---
 ### interesting papers - bayesian inference and learning
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#probabilistic-inference)
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#bayesian-inference-and-learning)
+
+
+#### Johnson, Duvenaud, Wiltschko, Datta, Adams - ["Composing Graphical Models with Neural Networks for Structured Representations and Fast Inference"](http://arxiv.org/abs/1603.06277)
+>	"We propose a general modeling and inference framework that combines the complementary strengths of probabilistic graphical models and deep learning methods. Our model family composes latent graphical models with neural network observation likelihoods. For inference, we use recognition networks to produce local evidence potentials, then combine them with the model distribution using efficient message-passing algorithms. All components are trained simultaneously with a single stochastic variational inference objective. We illustrate this framework by automatically segmenting and categorizing mouse behavior from raw depth video, and demonstrate several other example models."
+
+>	"Each frame of the video is a depth image of a mouse in a particular pose, and so even though each image is encoded as 30 × 30 = 900 pixels, the data lie near a low-dimensional nonlinear manifold. A good generative model must not only learn this manifold but also represent many other salient aspects of the data. For example, from one frame to the next the corresponding manifold points should be close to one another, and in fact the trajectory along the manifold may follow very structured dynamics. To inform the structure of these dynamics, a natural class of hypotheses used in ethology and neurobiology is that the mouse’s behavior is composed of brief, reused actions, such as darts, rears, and grooming bouts. Therefore a natural representation would include discrete states with each state representing the simple dynamics of a particular primitive action, a representation that would be difficult to encode in an unsupervised recurrent neural network model. These two tasks, of learning the image manifold and learning a structured dynamics model, are complementary: we want to learn the image manifold not just as a set but in terms of manifold coordinates in which the structured dynamics model fits the data well. A similar modeling challenge arises in speech, where high-dimensional data lie near a low-dimensional manifold because they are generated by a physical system with relatively few degrees of freedom but also include the discrete latent dynamical structure of phonemes, words, and grammar."
+
+>	"Our approach uses graphical models for representing structured probability distributions, and uses ideas from variational autoencoders for learning not only the nonlinear feature manifold but also bottom-up recognition networks to improve inference. Thus our method enables the combination of flexible deep learning feature models with structured Bayesian and even Bayesian nonparametric priors. Our approach yields a single variational inference objective in which all components of the model are learned simultaneously. Furthermore, we develop a scalable fitting algorithm that combines several advances in efficient inference, including stochastic variational inference, graphical model message passing, and backpropagation with the reparameterization trick."
+
+  - <https://youtube.com/watch?v=btr1poCYIzw>
+  - <http://videolectures.net/deeplearning2017_johnson_graphical_models/> (Johnson)
+  - <https://youtube.com/watch?v=vnO3w8OgTE8> (Duvenaud)
+  - <http://www.cs.toronto.edu/~duvenaud/courses/csc2541/slides/svae-slides.pdf>
+  - <http://github.com/mattjj/svae>
 
 
 #### Rezende, Mohamed, Danihelka, Gregor, Wierstra - ["One-Shot Generalization in Deep Generative Models"](https://arxiv.org/abs/1603.05106)
@@ -2698,6 +2698,8 @@ x."
 >	"An efficient learner is one who reuses what they already know to tackle a new problem. For a machine learner, this means understanding the similarities amongst datasets. In order to do this, one must take seriously the idea of working with datasets, rather than datapoints, as the key objects to model. Towards this goal, we demonstrate an extension of a variational autoencoder that can learn a method for computing representations, or statistics, of datasets in an unsupervised fashion. The network is trained to produce statistics that encapsulate a generative model for each dataset. Hence the network enables efficient learning from new datasets for both unsupervised and supervised tasks. We show that we are able to learn statistics that can be used for: clustering datasets, transferring generative models to new datasets, selecting representative samples of datasets and classifying previously unseen classes."
 
 >	"Our goal was to demonstrate that it is both possible and profitable to work at a level of abstraction of datasets rather than just datapoints. We have shown how it is possible to learn to represent datasets using a statistic network, and that these statistics enable highly flexible and efficient models that can do transfer learning, small shot classification, cluster distributions, summarize datasets and more. Avenues for future research are engineering, methodological and application based. In terms of engineering we believe that there are gains to be had by more thorough exploration of different (larger) architectures. In terms of methodology we want to look at: improved methods of representing uncertainty resulting from sample size; models explicitly designed trained for small-shot classification; supervised and semi-supervised approaches to classifiying either datasets or datapoints within the dataset. One advantage we have yet to explore is that by specifying classes implicitly in terms of sets, we can combine multiple data sources with potentially different labels, or multiple labels. We can also easily train on any unlabelled data because this corresponds to sets of size one. We also want to consider questions such as: What are desirable properties for statistics to have as representations? How can we enforce these? Can we use ideas from classical work on estimators? In terms of applications we are interested in applying this framework to learning embeddings of speakers for speech problems or customer embeddings in commercial problems."
+
+>	"Potentially a more powerful alternative to Variational Autoencoder."
 
   - <http://techtalks.tv/talks/neural-statistician/63048/> (Edwards)
   - <https://youtu.be/XpIDCzwNe78?t=51m53s> (Bartunov)

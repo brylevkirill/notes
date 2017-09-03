@@ -225,7 +225,7 @@
   https://stanfy.com/blog/advanced-natural-language-processing-tools-for-bot-makers/
 
 
-  http://wildml.com/2016/04/deep-learning-for-chatbots-part-1-introduction/
+  http://www.wildml.com/2016/04/deep-learning-for-chatbots-part-1-introduction/
 
   https://medium.com/@honnibal/a-natural-language-user-interface-is-just-a-user-interface-4a6d898e9721
 

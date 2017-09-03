@@ -26,7 +26,9 @@
 ---
 ### introduction
 
-  Reinforcement Learning in general case is learning to act through trial and error with no provided models, labels, demonstrations or supervision signals other than delayed rewards for agent's actions.
+  Reinforcement Learning in general case is learning to act through trial and error with no provided models, labels, demonstrations or supervision signals other than delayed rewards for agent's actions.  
+
+  Reinforcement Learning poses significant challenges beyond pattern recognition, including exploration, credit assignment, stability, safety.
 
   [definition](https://youtube.com/watch?v=kl_G95uKTHw&t=1h9m30s) by Sergey Levine
 
@@ -61,6 +63,10 @@
 
 #### industry
 
+  ["Reinforcement Learning in Industry"](http://videolectures.net/deeplearning2017_le_roux_recommendation_system/) by Nicolas Le Roux
+
+----
+
   [Custom Decision Service](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-decision-service/custom-decision-service-overview) (Microsoft)  
   - <https://azure.microsoft.com/en-us/services/cognitive-services/custom-decision-service/>  
   - <https://mwtds.azurewebsites.net>  
@@ -72,7 +78,7 @@
   - <https://youtu.be/N5x48g2sp8M?t=52m> (Robert Schapire)  
   - <https://youtu.be/3q4OvzIyPug?t=6m12s> (Alekh Agarwal)  
   - ["Taming the Monster: A Fast and Simple Algorithm for Contextual Bandits"](https://arxiv.org/abs/1402.0555) by Agarwal et al.  
-  - ["Making Contextual Decisions with Low Technical Debt"](https://arxiv.org/abs/1606.03966) by Agarwal et al.  
+  - ["Making Contextual Decisions with Low Technical Debt"](#agarwal-et-al---making-contextual-decisions-with-low-technical-debt) by Agarwal et al.  
 
   [personalized news](http://thenewstack.io/reinforcement-learning-ready-real-world/) (Microsoft)  
 >	"For MSN homepage 25% relative lift in click-through rate while no previous learning method had been more successful than humans curating the content manually."  
@@ -184,11 +190,6 @@
 	[blockworld demo](http://youtube.com/watch?v=6jlaBD9LCnM)  
 	[blockworld demo](http://youtube.com/watch?v=6JT6_dRcKAw)  
 
-  - *Ms. PacMan*  
-	["Hybrid Reward Architecture for Reinforcement Learning"](https://arxiv.org/abs/1706.04208) by van Seijen et al.  
-	[overview](https://youtube.com/watch?v=zQyWMHFjewU)  
-	[demo](https://youtube.com/watch?v=VeXNw0Owf0Y)  
-
   - *others*  
 	[games](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games)  
 
@@ -264,6 +265,8 @@
 	([slides](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html))  
   [course](https://udacity.com/course/reinforcement-learning--ud600) by Michael Littman  
 
+  [Reinforcement Learning Summer School 2017](http://videolectures.net/deeplearning2017_montreal/)
+
 ----
 
   ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/sutton/book/the-book-2nd.html) book by Rich Sutton and Andrew Barto (second edition, draft)  
@@ -279,7 +282,7 @@
   [course slides](http://incompleteideas.net/sutton/609%20dropbox/slides%20(pdf%20and%20keynote)) by Rich Sutton  
 
   [exercises and solutions](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction) by Shangtong Zhang  
-  [exercises and solutions](http://wildml.com/2016/10/learning-reinforcement-learning/) by Denny Britz  
+  [exercises and solutions](http://www.wildml.com/2016/10/learning-reinforcement-learning/) by Denny Britz  
   [course with exercises and solutions](https://github.com/yandexdataschool/Practical_RL/) from Yandex  
 
   [implementations of algorithms](https://github.com/rlcode/reinforcement-learning) from RLCode team  
@@ -296,6 +299,7 @@
 	([videos](https://youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX))
 
   ["The Nuts and Bolts of Deep RL Research"](http://rll.berkeley.edu/deeprlcourse/docs/nuts-and-bolts.pdf) by John Schulman
+	([write-up](https://github.com/williamFalcon/DeepRLHacks))
 
 
   ["Deep Reinforcement Learning"](https://sites.google.com/site/deeprlnips2016/) workshop at NIPS 2016  
@@ -650,6 +654,7 @@
 	<https://blogs.princeton.edu/imabandit/2016/05/13/bandit-theory-part-ii/>  
 
   ["Regret Analysis of Stochastic and Nonstochastic Multi-armed Bandit Problems"](https://arxiv.org/abs/1204.5721) by Bubeck and Cesa-Bianchi
+	([slides](https://microsoft.com/en-us/research/wp-content/uploads/2017/01/TutorialMLSS16.pdf))
 
 ----
 
@@ -720,9 +725,14 @@
 
 ----
 
+  Off-policy evaluation of expected value of new policy q(a|s) given current policy p(a|s):
+
+  G(q) = ∫s∫a p(s)q(a|s)r(a,s)dads = ∫s∫a p(s)(q(a|s)/p(a|s))p(a|s)r(a,s)dads ≈ 1/N ∑i q(ai|si)/p(ai|si)*ri
+
+
   "Given experience (xt,at,pt,rt)* generated using some policy, it is possible to evaluate another policy π: x -> a using estimator:
 
-  V(π) = 1/n * Σ (xt,at,pt,rt) [rt * I(π(x) = at) / pt]
+  V(π) = 1/n * Σ(xt,at,pt,rt) I(π(x) = at)/pt*rt
 
   This estimator (inverse propensity scoring) has three important properties. First, it is data-efficient. Each interaction on which π matches the exploration data can be used in evaluating π, regardless of the policy collecting the data. In contrast, A/B testing only uses data collected using π to evaluate π. Second, the division by pt makes it statistically unbiased: it converges to the true reward as n → ∞. Third, the estimator can be recomputed incrementally when new data arrives.
 
@@ -753,16 +763,10 @@
   ["Multi-armed Bandit Experiments in the Online Service Economy"](https://research.google.com/pubs/pub42550.html) by Steven Scott  
   ["Bayesian Multi-armed Bandits vs A/B Tests"](https://habrahabr.ru/company/ods/blog/325416/) (in russian)  
 
-  Microsoft Custom Decision Service:  
-  - <https://azure.microsoft.com/en-us/services/cognitive-services/custom-decision-service/>  
-  - <https://mwtds.azurewebsites.net>  
-  - <http://research.microsoft.com/en-us/projects/mwt/>  
-  - <http://hunch.net/?p=4464948> (John Langford)  
-  - <http://machinedlearnings.com/2017/01/reinforcement-learning-as-service.html> (Paul Mineiro)  
-  - <https://youtube.com/watch?v=7ic_d5TeIUk> (John Langford)  
-  - <https://youtube.com/watch?v=5JXRbhPLSQw> (Alekh Agarwal)  
-  - <https://youtu.be/N5x48g2sp8M?t=52m> (Robert Schapire)  
-  - <https://youtu.be/3q4OvzIyPug?t=6m12s> (Alekh Agarwal)  
+  ["Reinforcement Learning in Industry"](http://videolectures.net/deeplearning2017_le_roux_recommendation_system/) by Nicolas Le Roux
+
+  [Microsoft Custom Decision Service](#industry)  
+  ["Taming the Monster: A Fast and Simple Algorithm for Contextual Bandits"](https://arxiv.org/abs/1402.0555) by Agarwal et al.  
 
 ----
 
@@ -867,6 +871,7 @@
   Under this framework actions that yield highest instant reward and actions that maximise gathering of knowledge about environment are often very different.  
   BAMDP framework leads to rigorous definition of optimal solution based on finding policy that reaches optimal balance between exploration and exploitation.  
 
+----
 
   [overview](https://youtu.be/sGuiWX07sKw?t=1h8m44s) of reinforcement learning with information state space by David Silver  
   ["Bandits, Active Learning, Bayesian RL and Global Optimization"](https://youtu.be/5rev-zVx1Ps?t=58m45s) by Marc Toussaint  
@@ -875,24 +880,27 @@
   ["Planning in Partially Observable Markov Decision Process"](https://yadi.sk/i/lOAUu7o13JBHFz) (55:08) by Pavel Shvechikov (in russian)  
 
   ["Bayesian Reinforcement Learning: A Survey"](https://arxiv.org/abs/1609.04436) by Ghavamzadeh et al.  
+  ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](#guez-silver-dayan---efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search) by Guez et al.  
+  ["Monte-Carlo Planning in Large POMDPs"](https://papers.nips.cc/paper/4031-monte-carlo-planning-in-large-pomdps) by Silver et al. ([overview](https://yadi.sk/i/lOAUu7o13JBHFz) (1:39:35) by Pavel Shvechikov (in russian))  
+  ["Approximate Bayes Optimal Policy Search using Neural Networks"](#castronovo-francois-lavet-fonteneau-ernst-couetoux---approximate-bayes-optimal-policy-search-using-neural-networks) by Castronovo et al.  
 
+----
 
   [overview](https://youtu.be/AggqBRdz6CQ?t=9m53s) of deep bayesian reinforcement learning by Shakir Mohamed  
+  ["Bayesian Inference for Reinforcement Learning"](https://youtube.com/watch?v=KZd-jkmeIcU) by Sergey Bartunov (in russian) ([slides](https://drive.google.com/drive/folders/0B2zoFVYw1rN3N0RUNXE1WnNObTQ) in english)  
+
+  ["Reinforced Variational Inference"](#weber-heess-eslami-schulman-wingate-silver---reinforced-variational-inference) by Weber et al.  
+
   bayesian policy search in variational MDP (variational decision making):  
   Fπ(θ) = E q(a,z|x) [R(a|x)] - α * Dkl[qθ(z|x) || p(z|x)] + α * H[πθ(a|z)]  
 
+----
 
   ["Modeling Agents with Probabilistic Programs"](http://agentmodels.org) by Evans et al.
-
 
   [AIXI](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#solomonoff-induction-and-aixi) - general bayesian reinforcement learning agent  
   [General Reinforcement Learning Agent Zoo](http://aslanides.io/aixijs/) by John Aslanides
 	([demo](http://aslanides.io/aixijs/demo.html), [code](https://github.com/aslanides/aixijs), [paper](https://arxiv.org/abs/1705.07615))  
-
-
-  ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](#guez-silver-dayan---efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search) by Guez et al.  
-  ["Monte-Carlo Planning in Large POMDPs"](https://papers.nips.cc/paper/4031-monte-carlo-planning-in-large-pomdps) by Silver et al. ([overview](https://yadi.sk/i/lOAUu7o13JBHFz) (1:39:35) by Pavel Shvechikov (in russian))  
-  ["Approximate Bayes Optimal Policy Search using Neural Networks"](#castronovo-francois-lavet-fonteneau-ernst-couetoux---approximate-bayes-optimal-policy-search-using-neural-networks) by Castronovo et al.  
 
 
 
@@ -943,7 +951,7 @@
     * naive Q-learning gradients can be large  
     * unstable when backpropagated  
 
-**Deep Q-Network (DQN)**:  
+  **Deep Q-Network (DQN)**:  
   - use experience replay  
     * break correlations in data, bring us back to iid setting  
     * learn from all past policies  
@@ -1578,6 +1586,7 @@ interesting recent papers:
 
   - <http://videolectures.net/rldm2015_van_roy_function_randomization/> (van Roy)
   - <https://youtube.com/watch?v=ck4GixLs4ZQ> (Osband) + [slides](https://docs.google.com/presentation/d/1lis0yBGT-uIXnAsi0vlP3SuWD2svMErJWy_LYtfzMOA/)
+  - <https://sudeepraja.github.io/PSRL/>
   - <https://github.com/iosband/TabulaRL>
 
 

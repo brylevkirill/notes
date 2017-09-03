@@ -112,6 +112,7 @@
 	<http://dustintran.com/talks/Tran_Edward.pdf>  
 	[sample models](http://edwardlib.org/iclr2017)  
 	["Deep Probabilistic Programming"](https://arxiv.org/abs/1701.03757)  
+	<https://youtube.com/watch?v=PvyVahNl8H8> (Tran)  
 
   * Stan  
 	<https://youtube.com/watch?v=6NXRCtWQNMg>  
