@@ -522,7 +522,7 @@
   ["How Can We Define Intrinsic Motivation"](http://pyoudeyer.com/epirob08OudeyerKaplan.pdf) by Oudeyer and Kaplan:  
 
 
-**information theoretic and distributional models**:  
+  **information theoretic and distributional models**:  
 >	"This approach is based on the use of representations, built by an agent, that estimate the distributions of probabilities of observing certain events ek in particular contexts, defined as mathematical configurations in the sensorimotor flow. There are several types of such events, but the probabilities that are measured are typically either the probability of observing a certain state SMk in the sensorimotor flow, denoted P(SMk), or the probability of observing particular transitions between states, such as P(SMk(t),SMl(t+1)), or the probability of observing a particular state after having observed a given state P(SMk(t+1)|SMl(t)). Here, the states SMk can either be direct numerical prototypes or complete regions within the sensorimotor space (and it may involve a mechanism for discretizing the space). We assume that the agent possesses a mechanism that allows it to build internally, and as it experiences the world, an estimation of the probability distribution of events across the whole space E of possible events (but the space of possible events is not predefined and should also be discovered by the agent, so typically this is an initially empty space that grows with experience)."
 
   - *uncertainty motivation*  
@@ -552,7 +552,7 @@
 	["Variational Intrinsic Control"](#gregor-rezende-wierstra---variational-intrinsic-control) by Gregor et al.  (the primary goal is not to understand or predict the observations but to control the environment - agents can often control an environment perfectly well without much understanding, and focusing on understanding might significantly distract and impair the agent, as such reducing the control it achieves)  
 
 
-**predictive models**:  
+  **predictive models**:  
 >	"Often, knowledge and expectations in agent are not represented by complete probability distributions, but rather based on the use of predictors such as neural networks that make direct predictions about future events. These predictors, denoted Π, are typically used to predict some properties or sensorimotor states that will happen in the future (close or far) given the current sensorimotor context SM(t) and possibly the past sensorimotor context."
 
   - *predictive novelty motivation*  
@@ -576,7 +576,7 @@
 	motivation to search for situations which are very predictable and thus familiar  
 
 
-**competence-based models**:  
+  **competence-based models**:  
 >	"A third major computational approach to intrinsic motivation is based on measures of competence that an agent has for achieving self-determined results or goals. Central here is the concept of “challenge”, with associated measures of difficulty as well as measures of actual performance. A “challenge” or “goal” here will be any sensorimotor configuration, or any set of properties of a sensorimotor configuration, that an agent sets by itself and that it tries to achieve through action. It is the properties of the achievement process, rather than the “meaning” of the particular goal being achieved, that will determine the level of interestingness of the associated activity. While prediction mechanisms or probability models, as used in previous sections, can be used in the goal-reaching architecture, they are not mandatory. The capacity to predict what happens in a situation can be sometimes only loosely coupled to the capacity to modify a situation in order to achieve a given self-determined goal."
 
   - *maximizing incompetence motivation*  
@@ -589,7 +589,7 @@
 	interestingness of a challenge as the competence progress that is experienced as an agent repeatedly tries to achieve it  
 
 
-**morphological models**:  
+  **morphological models**:  
 >	"The three previous computational approaches to motivation were based on measures comparing information characterizing a stimulus perceived in the present and information characterizing stimuli perceived in the past and represented in memory. A fourth approach that can be taken is based on the comparison of information characterizing several pieces of stimuli perceived at the same time in several parts of the perceptive field. Pragmatically, this approach consists in attributing interest depending on morphological mathematical properties of the current flow of sensorimotor values, irrespective of what the internal cognitive system might predict or master."
 
   - *synchronicity motivation*  
@@ -810,6 +810,7 @@
 
 
   ["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#silver-et-al---mastering-the-game-of-go-with-deep-neural-networks-and-tree-search) by Silver et al.  
+  ["Combining Online and Offline Knowledge in UCT"](http://machinelearning.org/proceedings/icml2007/papers/387.pdf) by Gelly and Silver ([talk](https://youtube.com/watch?v=Bm7zah_LrmE))  
   ["Deep Learning for Real-Time Atari Game Play Using Offline Monte-Carlo Tree Search Planning"](#guo-singh-lee-lewis-wang---deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning) by Guo et al.  
   ["A Monte-Carlo AIXI Approximation"](https://github.com/brylevkirill/notes/blob/Artificial%20Intelligence.md#veness-ng-hutter-uther-silver---a-monte-carlo-aixi-approximation-mc-aixi-ctw-agent) by Veness et al.  
 
@@ -1385,7 +1386,7 @@ interesting recent papers:
   - <http://youtube.com/watch?v=xzM7eI7caRk> (Mnih)
   - <http://youtube.com/watch?v=dV80NAlEins> (de Freitas)
   - <http://youtube.com/watch?v=HUmEbUkeQHg> (de Freitas)
-  - <http://youtube.com/watch?v=mrgJ53TIcQc> (Pavlov, in russian)
+  - <http://youtube.com/watch?v=mrgJ53TIcQc> (Pavlov) (in russian)
   - <http://cs.stanford.edu/people/karpathy/convnetjs/demo/rldemo.html>
   - <https://github.com/reinforceio/tensorforce/blob/master/tensorforce/models/dqn_model.py>
   - <https://github.com/openai/baselines/tree/master/baselines/deepq>
@@ -1662,8 +1663,8 @@ interesting recent papers:
   - <http://youtube.com/watch?v=6SAdmG3zAMg>
   - <https://youtu.be/ck4GixLs4ZQ?t=1h27m39s> (Osband) + [slides](https://docs.google.com/presentation/d/1lis0yBGT-uIXnAsi0vlP3SuWD2svMErJWy_LYtfzMOA/)
   - <http://videolectures.net/rldm2015_van_roy_function_randomization/#t=1830> (van Roy)
-  - <https://yadi.sk/i/yBO0q4mI3GAxYd> (47:07) (Fritsler, in russian)
-  - <https://youtu.be/mrgJ53TIcQc?t=32m24s> (Pavlov, in russian)
+  - <https://yadi.sk/i/yBO0q4mI3GAxYd> (47:07) (Fritsler) (in russian)
+  - <https://youtu.be/mrgJ53TIcQc?t=32m24s> (Pavlov) (in russian)
   - <https://github.com/Kaixhin/Atari>
   - <https://github.com/iassael/torch-bootstrapped-dqn>
   - <https://github.com/carpedm20/deep-rl-tensorflow>
@@ -1766,8 +1767,8 @@ interesting recent papers:
 
   - <https://youtube.com/watch?v=0yI2wJ6F8r0> (demo)
   - <https://youtube.com/watch?v=qSfd27AgcEk> (Bellemare)
-  - <https://youtu.be/qduxl-vKz1E?t=1h16m30s> (Seleznev, in russian)
-  - <https://youtube.com/watch?v=qKyOLNVpknQ> (Pavlov, in russian)
+  - <https://youtu.be/qduxl-vKz1E?t=1h16m30s> (Seleznev) (in russian)
+  - <https://youtube.com/watch?v=qKyOLNVpknQ> (Pavlov) (in russian)
   - <http://pemami4911.github.io/paper-summaries/2016/10/08/unifying-count-based-exploration-and-intrinsic-motivation.html>
   - <https://github.com/lake4790k/pseudo-count-atari>
 
@@ -1816,7 +1817,7 @@ interesting recent papers:
   - <https://youtube.com/watch?v=nbbMSMv3v5k>
   - <https://youtu.be/WRFqzYWHsZA?t=18m38s> (Abbeel)
   - <https://youtube.com/watch?v=sRIjxxjVrnY> (Panin)
-  - <https://yadi.sk/i/_2_0yqeW3HDbcn> (Panin, in russian) ([slides](https://yadi.sk/i/8sx42nau3HEYKg) in english)
+  - <https://yadi.sk/i/_2_0yqeW3HDbcn> (Panin) (in russian) ([slides](https://yadi.sk/i/8sx42nau3HEYKg) in english)
   - <http://pemami4911.github.io/paper-summaries/2016/09/04/VIME.html>
   - <https://github.com/openai/vime>
   - [Artificial Curiosity and Creativity](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) by Juergen Schmidhuber
@@ -1890,7 +1891,7 @@ interesting recent papers:
 >	"A major distinction with VIME is that empowerment doesn’t necessarily favor exploration - as stated by Mohamed and Rezende, agents are only ‘curious’ about parts of its environment that can be reached within its internal planning horizon."
 
   - <https://youtube.com/watch?v=tMiiKXPirAQ> + <https://youtube.com/watch?v=LV5jYY-JFpE> (demo)
-  - <https://youtube.com/watch?v=WCE9hhPbCmc> + <https://youtube.com/watch?v=DpQKpSAMauY> (Kretov, in russian)
+  - <https://youtube.com/watch?v=WCE9hhPbCmc> + <https://youtube.com/watch?v=DpQKpSAMauY> (Kretov) (in russian)
   - <https://www.evernote.com/shard/s189/sh/8c7ff9d9-c321-4e83-a802-58f55ebed9ac/bfc614113180a5f4624390df56e73889> (Larochelle)
 
 
@@ -2137,8 +2138,8 @@ interesting recent papers:
 ----
 >	"Demonstrated that recurrent Q learning can perform the required information integration to resolve short-term partial observability (e.g. to estimate velocities) that is achieved via stacks of frames in the original DQN architecture."
 
-  - <https://yadi.sk/i/pMdw-_uI3Gke7Z> (36:29) (Fritsler, in russian)
-  - <https://youtube.com/watch?v=bE5DIJvZexc> (Fritsler, in russian)
+  - <https://yadi.sk/i/pMdw-_uI3Gke7Z> (36:29) (Fritsler) (in russian)
+  - <https://youtube.com/watch?v=bE5DIJvZexc> (Fritsler) (in russian)
   - <https://github.com/mhauskn/dqn/tree/recurrent>
   - <https://github.com/awjuliani/DeepRL-Agents/blob/master/Deep-Recurrent-Q-Network.ipynb>
 
@@ -2206,8 +2207,8 @@ interesting recent papers:
   - <http://youtube.com/watch?v=xzM7eI7caRk> (Mnih)
   - <http://youtube.com/watch?v=dV80NAlEins> (de Freitas)
   - <http://youtube.com/watch?v=HUmEbUkeQHg> (de Freitas)
-  - <https://yadi.sk/i/AHDU2p_j3FT3nr> + <https://yadi.sk/i/EeUeheri3FT3ra> (Ratnikov and Vasilev, in russian)
-  - <http://youtube.com/watch?v=mrgJ53TIcQc> (Pavlov, in russian)
+  - <https://yadi.sk/i/AHDU2p_j3FT3nr> + <https://yadi.sk/i/EeUeheri3FT3ra> (Ratnikov and Vasilev) (in russian)
+  - <http://youtube.com/watch?v=mrgJ53TIcQc> (Pavlov) (in russian)
   - <http://cs.stanford.edu/people/karpathy/convnetjs/demo/rldemo.html>
   - <https://github.com/khanhptnk/deep-q-tensorflow>
   - <https://github.com/nivwusquorum/tensorflow-deepq>
@@ -2231,8 +2232,8 @@ interesting recent papers:
 
   - <https://youtube.com/watch?v=TpGuQaswaHs> + <https://youtube.com/watch?v=oNLITLfrvQY> (demos)
   - <http://techtalks.tv/talks/dueling-network-architectures-for-deep-reinforcement-learning/62381/> (Wang)
-  - <https://yadi.sk/i/yBO0q4mI3GAxYd> (56:26) (Fritsler, in russian)
-  - <https://youtu.be/mrgJ53TIcQc?t=35m4s> (Pavlov, in russian)
+  - <https://yadi.sk/i/yBO0q4mI3GAxYd> (56:26) (Fritsler) (in russian)
+  - <https://youtu.be/mrgJ53TIcQc?t=35m4s> (Pavlov) (in russian)
   - <http://torch.ch/blog/2016/04/30/dueling_dqn.html>
   - <https://github.com/carpedm20/deep-rl-tensorflow>
   - <https://github.com/Kaixhin/Atari>
@@ -2247,8 +2248,8 @@ interesting recent papers:
 >	"Single estimator used in the Q-learning update rule over-estimates the expected return due to the use of the maximum action value as an approximation of the maximum expected action value."
 
   - <https://youtu.be/qLaDWKd61Ig?t=32m52s> (Silver)
-  - <https://yadi.sk/i/yBO0q4mI3GAxYd> (15:02) (Fritsler, in russian)
-  - <https://youtu.be/mrgJ53TIcQc?t=17m31s> (Pavlov, in russian)
+  - <https://yadi.sk/i/yBO0q4mI3GAxYd> (15:02) (Fritsler) (in russian)
+  - <https://youtu.be/mrgJ53TIcQc?t=17m31s> (Pavlov) (in russian)
   - <https://github.com/carpedm20/deep-rl-tensorflow>
   - <https://github.com/Kaixhin/Atari>
 
@@ -2274,8 +2275,8 @@ interesting recent papers:
 
 >	"Numerous neuroscience studies have identified mechanisms of experience replay in the hippocampus of rodents, where sequences of prior experience are replayed, either during awake resting or sleep, and in particular that this happens more for rewarded paths. Furthermore, there is a likely link between increased replay of an experience, and how much can be learned from it, or its TD-error."
 
-  - <https://yadi.sk/i/yBO0q4mI3GAxYd> (33:13) (Fritsler, in russian)
-  - <https://youtu.be/mrgJ53TIcQc?t=25m43s> (Pavlov, in russian)
+  - <https://yadi.sk/i/yBO0q4mI3GAxYd> (33:13) (Fritsler) (in russian)
+  - <https://youtu.be/mrgJ53TIcQc?t=25m43s> (Pavlov) (in russian)
   - <https://github.com/Kaixhin/Atari>
   - <https://github.com/carpedm20/deep-rl-tensorflow>
 
@@ -2377,7 +2378,7 @@ interesting recent papers:
 
   - <https://blog.openai.com/evolution-strategies/>
   - <https://www.technologyreview.com/s/603916/a-new-direction-for-artificial-intelligence/> (Sutskever)
-  - <https://youtube.com/watch?v=Rd0UdJFYkqI> (Temirchev, in russian)
+  - <https://youtube.com/watch?v=Rd0UdJFYkqI> (Temirchev) (in russian)
   - <http://inference.vc/evolutionary-strategies-embarrassingly-parallelizable-optimization/> (Huszar)
   - <http://inference.vc/evolution-strategies-variational-optimisation-and-natural-es-2/> (Huszar)
   - <http://davidbarber.github.io/blog/2017/04/03/variational-optimisation/> (Barber)
@@ -2430,7 +2431,7 @@ interesting recent papers:
   - <https://youtu.be/xe-z4i3l-iQ?t=30m35s> (Abbeel)
   - <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=1630> (Abbeel)
   - <https://youtube.com/watch?v=gb5Q2XL5c8A> (Schulman)
-  - <https://yadi.sk/i/1oyihBnm3HiKHm> + <https://yadi.sk/i/b0ol2gUV3HiKKJ> (Fritsler and Ratnikov, in russian) ([slides](https://yadi.sk/i/9j6S4WVp3HgEdn) in english)  
+  - <https://yadi.sk/i/1oyihBnm3HiKHm> + <https://yadi.sk/i/b0ol2gUV3HiKKJ> (Fritsler and Ratnikov) (in russian) ([slides](https://yadi.sk/i/9j6S4WVp3HgEdn) in english)  
   - <http://kvfrans.com/what-is-the-natural-gradient-and-where-does-it-appear-in-trust-region-policy-optimization/>
   - <https://github.com/reinforceio/tensorforce/blob/master/tensorforce/models/trpo_model.py>
   - <https://github.com/openai/baselines/tree/master/baselines/trpo_mpi>
@@ -2470,7 +2471,7 @@ interesting recent papers:
   - <http://videolectures.net/rldm2015_silver_reinforcement_learning/#t=4043> (Silver)
   - <http://youtube.com/watch?v=qLaDWKd61Ig&t=38m58s> (Silver)
   - <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724> (Abbeel)
-  - <https://youtu.be/mrgJ53TIcQc?t=1h3m2s> (Seleznev, in russian)
+  - <https://youtu.be/mrgJ53TIcQc?t=1h3m2s> (Seleznev) (in russian)
   - <https://youtu.be/rO7Dx8pSJQw?t=50m> (Schulman)
   - <https://yanpanlau.github.io/2016/10/11/Torcs-Keras.html>
   - <http://pemami4911.github.io/blog_posts/2016/08/21/ddpg-rl.html>
@@ -2500,7 +2501,7 @@ interesting recent papers:
   - <http://youtu.be/KHZVXao4qXs?t=52m58s> (Silver)
   - <http://youtu.be/M6nfipCxQBc?t=7m45s> (Lillicrap)
   - <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724> (Abbeel)
-  - <https://youtu.be/mrgJ53TIcQc?t=1h3m2s> (Seleznev, in russian)
+  - <https://youtu.be/mrgJ53TIcQc?t=1h3m2s> (Seleznev) (in russian)
   - <https://youtu.be/rO7Dx8pSJQw?t=50m> (Schulman)
   - <https://yanpanlau.github.io/2016/10/11/Torcs-Keras.html>
   - <http://pemami4911.github.io/blog_posts/2016/08/21/ddpg-rl.html>
@@ -2525,7 +2526,7 @@ interesting recent papers:
 
   - <https://youtu.be/PYdL7bcn_cM> (demo)
   - <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724> (Abbeel)
-  - <https://youtu.be/mrgJ53TIcQc?t=1h10m31s> (Seleznev, in russian)
+  - <https://youtu.be/mrgJ53TIcQc?t=1h10m31s> (Seleznev) (in russian)
   - <https://youtu.be/rO7Dx8pSJQw?t=50m> (Schulman)
 
 

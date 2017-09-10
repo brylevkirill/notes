@@ -33,8 +33,6 @@
 ----
 #### applications
 
-  [recent breakthroughs](https://github.com/brylevkirill/posts/blob/master/breakthroughs.md) (in russian)
-
   [artificial intelligence](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md)  
   [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
   [natural language processing](https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt)  
@@ -1044,7 +1042,7 @@ interesting papers (see below):
 
 >	"During last fifty years a strong machine learning theory has been developed. This theory includes: 1. The necessary and sufficient conditions for consistency of learning processes. 2. The bounds on the rate of convergence which in general cannot be improved. 3. The new inductive principle (SRM) which always achieves the smallest risk. 4. The effective algorithms, (such as SVM), that realize consistency property of SRM principle. It looked like general learning theory has been complied: it answered almost all standard questions that is asked in the statistical theory of inference. Meantime, the common observation was that human students require much less examples for training than learning machine. Why? The talk is an attempt to answer this question. The answer is that it is because the human students have an Intelligent Teacher and that Teacher-Student interactions are based not only on the brute force methods of function estimation from observations. Speed of learning also based on Teacher-Student interactions which have additional mechanisms that boost learning process. To learn from smaller number of observations learning machine has to use these mechanisms. In the talk I will introduce a model of learning that includes the so called Intelligent Teacher who during a training session supplies a Student with intelligent (privileged) information in contrast to the classical model where a student is given only outcomes y for events x. Based on additional privileged information x* for event x two mechanisms of Teacher-Student interactions (special and general) are introduced: 1. The Special Mechanism: To control Student's concept of similarity between training examples. and 2. The General Mechanism: To transfer knowledge that can be obtained in space of privileged information to the desired space of decision rules. Both mechanisms can be considered as special forms of capacity control in the universally consistent SRM inductive principle. Privileged information exists for almost any inference problem and can make a big difference in speed of learning processes."
 
-  - <https://video.ias.edu/csdm/2015/0330-VladimirVapnik>
+  - <https://video.ias.edu/csdm/2015/0330-VladimirVapnik> (Vapnik)
   - <http://learningtheory.org/learning-has-just-started-an-interview-with-prof-vladimir-vapnik/>
 
 
@@ -1114,7 +1112,8 @@ interesting papers (see below):
 #### Agarwal, Chapelle, Dudik, Langford - ["A Reliable Effective Terascale Linear Learning System"](http://arxiv.org/abs/1110.4198) (Vowpal Wabbit)
 >	"We present a system and a set of techniques for learning linear predictors with convex losses on terascale data sets, with trillions of features, 1 billions of training examples and millions of parameters in an hour using a cluster of 1000 machines. Individually none of the component techniques are new, but the careful synthesis required to obtain an efficient implementation is. The result is, up to our knowledge, the most scalable and efficient linear learning system reported in the literature. We describe and thoroughly evaluate the components of the system, showing the importance of the various design choices."
 
->	"- Online by default  
+>	"
+>	 - Online by default  
 >	 - Hashing, raw text is fine  
 >	 - Most scalable public algorithm  
 >	 - Reduction to simple problems  

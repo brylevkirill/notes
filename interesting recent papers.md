@@ -13,7 +13,7 @@ interesting recent papers:
   * [reasoning](#reasoning)  
   * [program induction](#program-induction)  
   * [reinforcement learning](#reinforcement-learning---agents)  
-    - [algorithms](#reinforcement-learning---agents)  
+    - [agents](#reinforcement-learning---agents)  
     - [exploration and intrinsic motivation](#reinforcement-learning---exploration-and-intrinsic-motivation)  
     - [abstractions for states and actions](#reinforcement-learning---abstractions-for-states-and-actions)  
     - [simulation and planning](#reinforcement-learning---simulation-and-planning)  
@@ -44,6 +44,22 @@ interesting papers:
 ---
 ### theory
 
+[Opening the Black Box of Deep Neural Networks via Information](http://arxiv.org/abs/1703.00810) (Tishby)  
+>	"DNNs with SGD have two phases: error minimization, then representation compression"  
+>	"
+>	The Information Plane provides a unique visualization of DL  
+>	  - Most of the learning time goes to compression  
+>	  - Layers are learnt bottom up - and "help" each other  
+>	  - Layers converge to special (critical?) points on the IB bound  
+>	The advantage of the layers is mostly computational  
+>	  - Relaxation times are super-linear (exponential?) in the Entropy gap  
+>	  - Hidden layers provide intermediate steps and boost convergence time  
+>	  - Hidden layers help in avoiding critical slowing down  
+>	"
+  - <https://youtube.com/watch?v=bLqJHjXihK8> (Tishby)  
+  - <https://youtube.com/watch?v=ekUWO_pI2M8> (Tishby)  
+  - <https://theneuralperspective.com/2017/03/24/opening-the-black-box-of-deep-neural-networks-via-information/>  
+
 [Understanding Deep Learning Requires Rethinking Generalization](http://arxiv.org/abs/1611.03530) (Google Brain)  
 >	"1. The effective capacity of neural networks is large enough for a brute-force memorization of the entire data set.  
 >	 2. Even optimization on random labels remains easy. In fact, training time increases only by a small constant factor compared with training on the true labels.  
@@ -73,12 +89,8 @@ interesting papers:
 >	"We have presented bounds, some of which tight, that connect the amount of information in the weights, the amount of information in the activations, the invariance property of the network, and the geometry of the residual loss."  
 >	"This leads to the somewhat surprising result that reducing information stored in the weights about the past (dataset) results in desirable properties of the representation of future data (test datum)."  
 
->	"We conducted experiments to validate the assumptions underlying the these bounds, and found that the results match the qualitative behavior observed on real data and architectures. In particular, the theory predicts a verifiable phase transition between an underfitting and overfitting regime for random labels, and the amount of information in nats needed to cross the transition."  
+>	"We conducted experiments to validate the assumptions underlying these bounds, and found that the results match the qualitative behavior observed on real data and architectures. In particular, the theory predicts a verifiable phase transition between an underfitting and overfitting regime for random labels, and the amount of information in nats needed to cross the transition."  
   - <https://youtube.com/watch?v=BCSoRTMYQcw> (Achille)  
-
-[Opening the Black Box of Deep Neural Networks via Information](http://arxiv.org/abs/1703.00810)  
->	"DNNs with SGD have two phases: error minimization, then representation compression"  
-  - <https://theneuralperspective.com/2017/03/24/opening-the-black-box-of-deep-neural-networks-via-information/>  
 
 [Capacity and Trainability in Recurrent Neural Networks](http://arxiv.org/abs/1611.09913) (Google Brain)  
 >	"RNNs can store an amount of task information which is linear in the number of parameters, and is approximately 5 bits per parameter.  
@@ -150,10 +162,9 @@ interesting papers:
 
 [Using Fast Weights to Attend to the Recent Past](http://arxiv.org/abs/1610.06258) (Hinton)  # alternative to LSTM  
 >	(Hinton) "It's a different approach to a Neural Turing Machine. It does not require any decisions about where to write stuff or where to read from. Anything that happened recently can automatically be retrieved associatively. Fast associative memory should allow neural network models of sequential human reasoning."  
-  - <https://drive.google.com/file/d/0B8i61jl8OE3XdHRCSkV1VFNqTWc> (Hinton)  
   - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Using-Fast-Weights-to-Attend-to-the-Recent-Past> (Ba)  
   - <http://www.fields.utoronto.ca/talks/title-tba-337> (Hinton)  
-  - <https://youtube.com/watch?v=mrj_hyH974o> (Novikov, in russian)  
+  - <https://youtube.com/watch?v=mrj_hyH974o> (Novikov) (in russian)  
   - <http://www.shortscience.org/paper?bibtexKey=journals/corr/1610.06258>  
   - <https://github.com/dennybritz/deeplearning-papernotes/blob/master/notes/fast-weight-to-attend.md>  
   - <https://reddit.com/r/MachineLearning/comments/58qjiw/research161006258_using_fast_weights_to_attend_to/d92kctk/>  
@@ -336,7 +347,7 @@ interesting papers:
 ----
 [One-shot Learning with Memory-Augmented Neural Networks](http://arxiv.org/abs/1605.06065)
   - <http://techtalks.tv/talks/meta-learning-with-memory-augmented-neural-networks/62523/> + <https://vk.com/wall-44016343_8782> (Santoro)
-  - <https://youtube.com/watch?v=qos2CcviAuY> (Bartunov, in russian)
+  - <https://youtube.com/watch?v=qos2CcviAuY> (Bartunov) (in russian)
   - <http://rylanschaeffer.github.io/content/research/one_shot_learning_with_memory_augmented_nn/main.html>
   - <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.06065>
   - <https://github.com/tristandeleu/ntm-one-shot>
@@ -456,43 +467,19 @@ interesting papers:
   - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks> (Goodfellow) + [slides](http://iangoodfellow.com/slides/2016-12-04-NIPS.pdf)  
 
 ----
-[Do GANs Actually Learn the Distribution? An Empirical Study](https://arxiv.org/abs/1706.08224) (Arora)  
-
-[Generalization and Equilibrium in Generative Adversarial Nets](https://arxiv.org/abs/1703.00573) (Arora)  
-  - <https://youtube.com/watch?v=V7TliSCqOwI> (Arora)  
-  - <http://www.offconvex.org/2017/03/30/GANs2/> (Arora)  
-
-[Towards Principled Methods for Training Generative Adversarial Networks](https://arxiv.org/abs/1701.04862) (Facebook AI Research)  
-
-[GANs Trained by a Two Time-Scale Update Rule Converge to a Nash Equilibrium](https://arxiv.org/abs/1706.08500) (Hochreiter)  
->	"We propose a two time-scale update rule (TTUR) for training GANs with stochastic gradient descent that has an individual learning rate for both the discriminator and the generator."  
->	"For the evaluation of the performance of GANs at image generation, we introduce the "Frechet Inception Distance" (FID) which captures the similarity of generated images to real ones better than the Inception Score."  
->	"In experiments, TTUR improves learning for DCGANs, improved Wasserstein GANs, and BEGANs."  
->	"to the best of our knowledge this is the first convergence proof for GANs"  
-  - <https://youtu.be/h6eQrkkU9SA?t=21m6s> (Hochreiter)  
-  - <https://github.com/bioinf-jku/TTUR>  
-
-----
-[Optimizing the Latent Space of Generative Networks](https://arxiv.org/abs/1707.05776) (Facebook AI Research)  
->	"GAN without discriminator"  
-
-[Good Semi-supervised Learning That Requires a Bad GAN](https://arxiv.org/abs/1705.09783) (Salakhutdinov)  
-
-----
-[A Connection Between Generative Adversarial Networks, Inverse Reinforcement Learning, and Energy-Based Models](https://arxiv.org/abs/1611.03852) (Abbeel, Levine)  
-  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (33:17) (Levine)  
-  - <https://youtu.be/RZOKRFBtSh4?t=10m48s> (Finn)  
-  - <http://pemami4911.github.io/paper-summaries/2017/02/12/gans-irl-ebm.html>  
-
-----
 [On Unifying Deep Generative Models](https://arxiv.org/abs/1706.00550) (Salakhutdinov)  
 
-[Bayesian GAN](https://arxiv.org/abs/1705.09558)  
->	"In this paper, we present a simple Bayesian formulation for end-to-end unsupervised and semi-supervised learning with generative adversarial networks. Within this framework, we marginalize the posteriors over the weights of the generator and discriminator using stochastic gradient Hamiltonian Monte Carlo. We interpret data samples from the generator, showing exploration across several distinct modes in the generator weights. We also show data and iteration efficient learning of the true distribution. We also demonstrate state of the art semi-supervised learning performance on several benchmarks, including SVHN, MNIST, CIFAR-10, and CelebA. The simplicity of the proposed approach is one of its greatest strengths: inference is straightforward, interpretable, and stable. Indeed all of the experimental results were obtained without feature matching, normalization, or any ad-hoc techniques."
+[Variational Approaches for Auto-Encoding Generative Adversarial Networks](https://arxiv.org/abs/1706.04987) (DeepMind)  
+  - <https://youtu.be/jAI3rBI6poU?t=1h1m33s> (Ulyanov) (in russian)  
 
-[Learning in Implicit Generative Models](http://arxiv.org/abs/1610.03483) (Mohamed)  
-  - <https://youtu.be/RZOKRFBtSh4?t=5m37s> (Mohamed)  
-  - <https://casmls.github.io/general/2017/05/24/ligm.html>  
+[Flow-GAN: Bridging Implicit and Prescribed Learning in Generative Models](https://arxiv.org/abs/1705.08868) (Stanford)  
+>	"generative adversarial network which allows for tractable likelihood evaluation"  
+>	"Since it can be trained both adversarially (like a GAN) and in terms of MLE (like a flow model), we can quantitatively evaluate the trade-offs involved. In particular, we also consider a hybrid objective function which involves both types of losses."  
+>	"The availability of quantitative metrics allow us to compare to simple baselines which essentially “remember” the training data. Our final results show that naive Gaussian Mixture Models outperforms plain WGAN on both samples quality and log-likelihood for both MNIST and CIFAR-10 which we hope will lead to new directions for both implicit and prescribed learning in generative models."  
+
+[Deep and Hierarchical Implicit Models](http://arxiv.org/abs/1702.08896) (Blei)
+>	"We develop likelihood-free variational inference (LFVI). Key to LFVI is specifying a variational family that is also implicit. This matches the model's flexibility and allows for accurate approximation of the posterior. Our work scales up implicit models to sizes previously not possible and advances their modeling design."
+  - <http://dustintran.com/blog/deep-and-hierarchical-implicit-models>  
 
 [Variational Inference using Implicit Distributions](http://arxiv.org/abs/1702.08235) (Huszar)  
 >	"This paper provides a unifying review of existing algorithms establishing connections between variational autoencoders, adversarially learned inference, operator VI, GAN-based image reconstruction, and more."  
@@ -501,9 +488,58 @@ interesting papers:
   - <http://inference.vc/variational-inference-using-implicit-models-part-iii-joint-contrastive-inference-ali-and-bigan/>  
   - <http://inference.vc/variational-inference-using-implicit-models-part-iv-denoisers-instead-of-discriminators/>  
 
-[Deep and Hierarchical Implicit Models](http://arxiv.org/abs/1702.08896) (Blei)
->	"We develop likelihood-free variational inference (LFVI). Key to LFVI is specifying a variational family that is also implicit. This matches the model's flexibility and allows for accurate approximation of the posterior. Our work scales up implicit models to sizes previously not possible and advances their modeling design."
-  - <http://dustintran.com/blog/deep-and-hierarchical-implicit-models>  
+[Learning in Implicit Generative Models](http://arxiv.org/abs/1610.03483) (Mohamed)  
+  - <https://youtu.be/RZOKRFBtSh4?t=5m37s> (Mohamed)  
+  - <https://youtu.be/jAI3rBI6poU?t=37m56s> (Ulyanov) (in russian)  
+  - <https://casmls.github.io/general/2017/05/24/ligm.html>  
+
+----
+[Optimizing the Latent Space of Generative Networks](https://arxiv.org/abs/1707.05776) (Facebook AI Research)  
+>	"GAN without discriminator"  
+
+[Good Semi-supervised Learning That Requires a Bad GAN](https://arxiv.org/abs/1705.09783) (Salakhutdinov)  
+
+[Bayesian GAN](https://arxiv.org/abs/1705.09558)  
+>	"In this paper, we present a simple Bayesian formulation for end-to-end unsupervised and semi-supervised learning with generative adversarial networks. Within this framework, we marginalize the posteriors over the weights of the generator and discriminator using stochastic gradient Hamiltonian Monte Carlo. We interpret data samples from the generator, showing exploration across several distinct modes in the generator weights. We also show data and iteration efficient learning of the true distribution. We also demonstrate state of the art semi-supervised learning performance on several benchmarks, including SVHN, MNIST, CIFAR-10, and CelebA. The simplicity of the proposed approach is one of its greatest strengths: inference is straightforward, interpretable, and stable. Indeed all of the experimental results were obtained without feature matching, normalization, or any ad-hoc techniques."
+
+[A Connection Between Generative Adversarial Networks, Inverse Reinforcement Learning, and Energy-Based Models](https://arxiv.org/abs/1611.03852) (Abbeel, Levine)  
+  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (33:17) (Levine)  
+  - <https://youtu.be/RZOKRFBtSh4?t=10m48s> (Finn)  
+  - <http://pemami4911.github.io/paper-summaries/2017/02/12/gans-irl-ebm.html>  
+
+----
+[Do GANs Actually Learn the Distribution? An Empirical Study](https://arxiv.org/abs/1706.08224) (Arora)  
+
+[Generalization and Equilibrium in Generative Adversarial Nets](https://arxiv.org/abs/1703.00573) (Arora)  
+  - <https://youtube.com/watch?v=V7TliSCqOwI> (Arora)  
+  - <http://www.offconvex.org/2017/03/30/GANs2/> (Arora)  
+
+[Towards Principled Methods for Training Generative Adversarial Networks](https://arxiv.org/abs/1701.04862) (Facebook AI Research)  
+
+----
+[GANs Trained by a Two Time-Scale Update Rule Converge to a Nash Equilibrium](https://arxiv.org/abs/1706.08500) (Hochreiter)  
+>	"We propose a two time-scale update rule (TTUR) for training GANs with stochastic gradient descent that has an individual learning rate for both the discriminator and the generator."  
+>	"For the evaluation of the performance of GANs at image generation, we introduce the "Frechet Inception Distance" (FID) which captures the similarity of generated images to real ones better than the Inception Score."  
+>	"In experiments, TTUR improves learning for DCGANs, improved Wasserstein GANs, and BEGANs."  
+>	"to the best of our knowledge this is the first convergence proof for GANs"  
+  - <https://youtu.be/h6eQrkkU9SA?t=21m6s> (Hochreiter)  
+  - <https://github.com/bioinf-jku/TTUR>  
+
+[How to Train Your DRAGAN](https://arxiv.org/abs/1705.07215)  
+  - <https://github.com/hwalsuklee/tensorflow-generative-model-collections/blob/master/DRAGAN.py>
+
+[BEGAN: Boundary Equilibrium Generative Adversarial Networks](https://arxiv.org/abs/1703.10717) (Google Brain)  
+>	"We propose a new equilibrium enforcing method paired with a loss derived from the Wasserstein distance for training auto-encoder based Generative Adversarial Networks. This method balances the generator and discriminator during training. Additionally, it provides a new approximate convergence measure, fast and stable training and high visual quality. We also derive a way of controlling the trade-off between image diversity and visual quality. We focus on the image generation task, setting a new milestone in visual quality, even at higher resolutions. This is achieved while using a relatively simple model architecture and a standard training procedure."  
+>	"- A GAN with a simple yet robust architecture, standard training procedure with fast and stable convergence.  
+>	- An equilibrium concept that balances the power of the discriminator against the generator.  
+>	- A new way to control the trade-off between image diversity and visual quality.  
+>	- An approximate measure of convergence. To our knowledge the only other published measure is from Wasserstein GAN."  
+>	"There are still many unexplored avenues. Does the discriminator have to be an auto-encoder? Having pixel-level feedback seems to greatly help convergence, however using an auto-encoder has its drawbacks: what internal embedding size is best for a dataset? When should noise be added to the input and how much? What impact would using other varieties of auto-encoders such Variational Auto-Encoders have?"  
+  - <https://pbs.twimg.com/media/C8lYiYbW0AI4_yk.jpg:large> + <https://pbs.twimg.com/media/C8c6T2kXsAAI-BN.jpg> (demo)  
+  - <https://blog.heuritech.com/2017/04/11/began-state-of-the-art-generation-of-faces-with-generative-adversarial-networks/>  
+  - <https://reddit.com/r/MachineLearning/comments/633jal/r170310717_began_boundary_equilibrium_generative/dfrktje/>  
+  - <https://github.com/carpedm20/BEGAN-pytorch>  
+  - <https://github.com/carpedm20/BEGAN-tensorflow>  
 
 ----
 [Wasserstein GAN](https://arxiv.org/abs/1701.07875) (Facebook AI Research)  
@@ -520,6 +556,8 @@ interesting papers:
 >	"Authors are not claiming that this directly improves image quality, but offers a host of other benefits like stability, the ability to make drastic architecture changes without loss of functionality, and, most importantly, a loss metric that actually appears to correlate with sample quality. That last one is a pretty big deal."  
 >
 >	"Using Wasserstein objective reduces instability, but we still lack proof of existence of an equilibrium. Game theory doesn’t help because we need a so-called pure equilibrium, and simple counter-examples such as rock/paper/scissors show that it doesn’t exist in general. Such counterexamples are easily turned into toy GAN scenarios with generator and discriminator having finite capacity, and the game lacks a pure equilibrium."  
+>
+>	"Our originality is a focus on continuous distributions with low-dimensional support and the idea to parametrize f in order to obtain a fast algorithm."  
   - <https://youtube.com/watch?v=DfJeaa--xO0&t=26m27s> (Bottou)  
   - <https://facebook.com/iclr.cc/videos/1710657292296663/> (1:30:02) (Arjowski)  
   - <http://www.alexirpan.com/2017/02/22/wasserstein-gan.html>  
@@ -535,29 +573,17 @@ interesting papers:
 
 [Improved Training of Wasserstein GANs](https://arxiv.org/abs/1704.00028) (Facebook AI Research)  
   - <https://casmls.github.io/general/2017/04/13/gan.html>  
+  - <https://github.com/wiseodd/generative-models/tree/master/GAN/improved_wasserstein_gan>  
 
 [The Cramer Distance as a Solution to Biased Wasserstein Gradients](https://arxiv.org/abs/1705.10743) (DeepMind)  
   - <https://github.com/jiamings/cramer-gan>  
 
-[BEGAN: Boundary Equilibrium Generative Adversarial Networks](https://arxiv.org/abs/1703.10717) (Google Brain)  
->	"We propose a new equilibrium enforcing method paired with a loss derived from the Wasserstein distance for training auto-encoder based Generative Adversarial Networks. This method balances the generator and discriminator during training. Additionally, it provides a new approximate convergence measure, fast and stable training and high visual quality. We also derive a way of controlling the trade-off between image diversity and visual quality. We focus on the image generation task, setting a new milestone in visual quality, even at higher resolutions. This is achieved while using a relatively simple model architecture and a standard training procedure."  
->	"- A GAN with a simple yet robust architecture, standard training procedure with fast and stable convergence.  
->	- An equilibrium concept that balances the power of the discriminator against the generator.  
->	- A new way to control the trade-off between image diversity and visual quality.  
->	- An approximate measure of convergence. To our knowledge the only other published measure is from Wasserstein GAN."  
->	"There are still many unexplored avenues. Does the discriminator have to be an auto-encoder? Having pixel-level feedback seems to greatly help convergence, however using an auto-encoder has its drawbacks: what internal embedding size is best for a dataset? When should noise be added to the input and how much? What impact would using other varieties of auto-encoders such Variational Auto-Encoders have?"  
-  - <https://pbs.twimg.com/media/C8lYiYbW0AI4_yk.jpg:large> + <https://pbs.twimg.com/media/C8c6T2kXsAAI-BN.jpg> (demo)  
-  - <https://blog.heuritech.com/2017/04/11/began-state-of-the-art-generation-of-faces-with-generative-adversarial-networks/>  
-  - <https://reddit.com/r/MachineLearning/comments/633jal/r170310717_began_boundary_equilibrium_generative/dfrktje/>  
-  - <https://github.com/carpedm20/BEGAN-tensorflow>  
-  - <https://github.com/carpedm20/BEGAN-pytorch>  
-
-----
 [f-GAN: Training Generative Neural Samplers using Variational Divergence Minimization](http://arxiv.org/abs/1606.00709)  
 >	"Shows how to optimize many different objectives using adversarial training."  
   - <https://youtube.com/watch?v=I1M_jGWp5n0>  
   - <https://youtube.com/watch?v=kQ1eEXgGsCU> (Nowozin)  
   - <https://youtube.com/watch?v=y7pUN2t5LrA> (Nowozin)  
+  - <https://youtu.be/jAI3rBI6poU?t=14m31s> (Ulyanov) (in russian)  
   - <https://github.com/wiseodd/generative-models/tree/master/GAN/f_gan>  
 
 [Improved Generator Objectives for GANs](http://arxiv.org/abs/1612.02780) (Google Brain)  
@@ -593,53 +619,38 @@ interesting papers:
   - <https://github.com/wiseodd/generative-models/tree/master/GAN/boundary_seeking_gan>  
 
 ----
-[Task Specific Adversarial Cost Function](http://arxiv.org/abs/1609.08661)  
-  - <https://github.com/ToniCreswell/piGAN>  
+[Generative Adversarial Text to Image Synthesis](http://arxiv.org/abs/1605.05396)  
 
-[Stacked Generative Adversarial Networks](http://arxiv.org/abs/1612.04357)  
-  - <https://github.com/xunhuang1995/SGAN>  
-
-[Alternating Back-Propagation for Generator Network](http://www.stat.ucla.edu/~ywu/ABP/doc/arXivABP.pdf)  
-
-----
-[Generating Text via Adversarial Training](https://sites.google.com/site/nips2016adversarial/WAT16_paper_20.pdf)  
-  - <http://machinedlearnings.com/2017/01/generating-text-via-adversarial-training.html>  
-
-[Learning to Protect Communications with Adversarial Neural Cryptography](http://arxiv.org/abs/1610.06918)  
-  - <https://nlml.github.io/neural-networks/adversarial-neural-cryptography/>  
-  - <https://blog.acolyer.org/2017/02/10/learning-to-protect-communications-with-adversarial-neural-cryptography/>  
-
-----
 [Neural Photo Editing with Introspective Adversarial Networks](http://arxiv.org/abs/1609.07093)  
   - <https://youtube.com/watch?v=FDELBFSeqQs> (demo)  
   - <https://github.com/ajbrock/Neural-Photo-Editor>  
 
-[Generative Adversarial Text to Image Synthesis](http://arxiv.org/abs/1605.05396)  
-
 [Conditional Image Synthesis With Auxiliary Classifier GANs](http://arxiv.org/abs/1610.09585) (Google Brain)  
   - <https://pbs.twimg.com/media/CwM0BzjVUAAWTn4.jpg:large>  
   - <https://youtu.be/RZOKRFBtSh4?t=21m47s> (Odena)  
-  - <https://github.com/buriburisuri/ac-gan>  
   - <https://github.com/wiseodd/generative-models/tree/master/GAN/auxiliary_classifier_gan>  
+
+[Stacked Generative Adversarial Networks](http://arxiv.org/abs/1612.04357)  
+  - <https://github.com/xunhuang1995/SGAN>  
 
 [Plug & Play Generative Networks: Conditional Iterative Generation of Images in Latent Space](http://www.evolvingai.org/files/nguyen2016ppgn__v1.pdf)  
   - <https://pbs.twimg.com/media/Czpn0VLVEAA_RpK.jpg:large>  
   - <https://github.com/Evolving-AI-Lab/ppgn>  
 
-----
 [Learning from Simulated and Unsupervised Images through Adversarial Training](http://arxiv.org/abs/1612.07828) (Apple)  
   - <https://youtube.com/watch?v=P3ayMdNdokg> (Shrivastava)  
   - <https://github.com/carpedm20/simulated-unsupervised-tensorflow>  
 
 [Unsupervised Pixel-Level Domain Adaptation with Generative Asversarial Networks](http://arxiv.org/abs/1612.05424) (Google Brain)  
-
-----
-[Image-to-Image Translation with Conditional Adversarial Networks](http://arxiv.org/abs/1611.07004)  
-  - <https://phillipi.github.io/pix2pix/>  
+  - <https://youtube.com/watch?v=VhsTrWPvjcA> (Bousmalis)  
 
 [Unsupervised Image-to-Image Translation Networks](http://arxiv.org/abs/1703.00848) (NVIDIA)  
 
-[DualGAN: Unsupervised Dual Learning for Image-to-Image Translation](https://arxiv.org/abs/1704.02510)
+[Learning to Discover Cross-Domain Relations with Generative Adversarial Networks](https://arxiv.org/abs/1703.05192)  
+  - <https://github.com/SKTBrain/DiscoGAN>  
+
+[DualGAN: Unsupervised Dual Learning for Image-to-Image Translation](https://arxiv.org/abs/1704.02510)  
+  - <https://github.com/wiseodd/generative-models/tree/master/GAN/dual_gan>  
 
 
 
@@ -706,7 +717,7 @@ interesting papers:
 
 [Variational Boosting: Iteratively Refining Posterior Approximations](http://arxiv.org/abs/1611.06585) (Adams)  
   - <http://andymiller.github.io/2016/11/23/vb.html>  
-  - <https://youtu.be/Jh3D8Gi4N0I?t=1h9m52s> (Nekludov, in russian)  
+  - <https://youtu.be/Jh3D8Gi4N0I?t=1h9m52s> (Nekludov) (in russian)  
 
 [Improving Variational Inference with Inverse Autoregressive Flow](http://arxiv.org/abs/1606.04934)  
 >	"Most VAEs have so far been trained using crude approximate posteriors, where every latent variable is independent. Normalizing Flows have addressed this problem by conditioning each latent variable on the others before it in a chain, but this is computationally inefficient due to the introduced sequential dependencies. The core contribution of this work, termed inverse autoregressive flow (IAF), is a new approach that, unlike previous work, allows us to parallelize the computation of rich approximate posteriors, and make them almost arbitrarily flexible."  
@@ -731,7 +742,7 @@ interesting papers:
 [Rejection Sampling Variational Inference](http://arxiv.org/abs/1610.05683)  
 
 [The Generalized Reparameterization Gradient](http://arxiv.org/abs/1610.02287)  
-  - <https://youtu.be/mrj_hyH974o?t=1h23m40s> (Vetrov, in russian)  
+  - <https://youtu.be/mrj_hyH974o?t=1h23m40s> (Vetrov) (in russian)  
 
 [The Variational Fair Autoencoder](http://arxiv.org/abs/1511.00830)  
   - <http://videolectures.net/iclr2016_louizos_fair_autoencoder/> (Louizos)  
@@ -830,7 +841,7 @@ interesting papers:
 
 [Self-critical Sequence Training for Image Captioning](http://arxiv.org/abs/1612.00563)  
 >	"REINFORCE with reward normalization but without baseline estimation"  
-  - <https://yadi.sk/i/-U5w4NpJ3H5TWD> + <https://yadi.sk/i/W3N7-6is3H5TWN> (Ratnikov, in russian)  
+  - <https://yadi.sk/i/-U5w4NpJ3H5TWD> + <https://yadi.sk/i/W3N7-6is3H5TWN> (Ratnikov) (in russian)  
 
 ----
 [Sequence-to-Sequence Learning as Beam-Search Optimization](http://arxiv.org/abs/1606.02960)  
@@ -851,13 +862,6 @@ interesting papers:
 
 [Stochastic Gradient Descent as Approximate Bayesian Inference](https://arxiv.org/abs/1704.04289) (Blei)  
   - <https://reddit.com/r/MachineLearning/comments/6d7nb1/d_machine_learning_wayr_what_are_you_reading_week/dihh54a/>  
-
-----
-[Model Selection in Bayesian Neural Networks via Horseshoe Priors](https://arxiv.org/abs/1705.10388)  
->	"Model selection - even choosing the number of nodes - remains an open question. In this work, we apply a horseshoe prior over node pre-activations of a Bayesian neural network, which effectively turns off nodes that do not help explain the data. We demonstrate that our prior prevents the BNN from underfitting even when the number of nodes required is grossly over-estimated. Moreover, this model selection over the number of nodes doesn’t come at the expense of predictive or computational performance; in fact, we learn smaller networks with comparable predictive performance to current approaches."  
-
-[Variational Dropout Sparsifies Deep Neural Networks](https://arxiv.org/abs/1701.05369)  
->	"Interpretation of Gaussian dropout as performing variational inference in a network with log uniform priors over weights leads to sparsity in weights. This is an interesting approach, wherein sparsity stemsfrom variational optimization instead of the prior."  
 
 ----
 [What Uncertainties Do We Need in Bayesian Deep Learning for Computer Vision?](https://arxiv.org/abs/1703.04977)  
@@ -882,6 +886,17 @@ interesting papers:
 
 [Dropout Inference in Bayesian Neural Networks with Alpha-divergences](http://mlg.eng.cam.ac.uk/yarin/PDFs/LiGal2017.pdf)  
 >	"We demonstrate improved uncertainty estimates and accuracy compared to VI in dropout networks. We study our model’s epistemic uncertainty far away from the data using adversarial images, showing that these can be distinguished from non-adversarial images by examining our model’s uncertainty."
+
+----
+[Model Selection in Bayesian Neural Networks via Horseshoe Priors](https://arxiv.org/abs/1705.10388)  
+>	"Model selection - even choosing the number of nodes - remains an open question. In this work, we apply a horseshoe prior over node pre-activations of a Bayesian neural network, which effectively turns off nodes that do not help explain the data. We demonstrate that our prior prevents the BNN from underfitting even when the number of nodes required is grossly over-estimated. Moreover, this model selection over the number of nodes doesn’t come at the expense of predictive or computational performance; in fact, we learn smaller networks with comparable predictive performance to current approaches."  
+
+[Structured Bayesian Pruning via Log-Normal Multiplicative Noise](https://arxiv.org/abs/1705.07283)  
+  - <https://youtu.be/jJDVYAxyE3U?t=32m45s> (Molchanov) (in russian)  
+
+[Variational Dropout Sparsifies Deep Neural Networks](https://arxiv.org/abs/1701.05369)  
+>	"Interpretation of Gaussian dropout as performing variational inference in a network with log uniform priors over weights leads to sparsity in weights. This is an interesting approach, wherein sparsity stemsfrom variational optimization instead of the prior."  
+  - <https://youtube.com/watch?v=jJDVYAxyE3U> (Molchanov) (in russian)  
 
 ----
 [Bayesian Recurrent Neural Networks](https://arxiv.org/abs/1704.02798) (DeepMind)  
@@ -1144,7 +1159,7 @@ interesting papers:
 >	"In our preliminary experiments we found that using ES to estimate the gradient on the MNIST digit recognition task can be as much as 1,000 times slower than using backpropagation. It is only in RL settings, where one has to estimate the gradient of the expected reward by sampling, where ES becomes competitive."  
   - <https://blog.openai.com/evolution-strategies/>  
   - <https://www.technologyreview.com/s/603916/a-new-direction-for-artificial-intelligence/> (Sutskever)  
-  - <https://youtube.com/watch?v=Rd0UdJFYkqI> (Temirchev, in russian)  
+  - <https://youtube.com/watch?v=Rd0UdJFYkqI> (Temirchev) (in russian)  
   - <http://inference.vc/evolutionary-strategies-embarrassingly-parallelizable-optimization/> (Huszar)  
   - <http://inference.vc/evolution-strategies-variational-optimisation-and-natural-es-2/> (Huszar)  
   - <http://davidbarber.github.io/blog/2017/04/03/variational-optimisation/> (Barber)  
@@ -1155,7 +1170,7 @@ interesting papers:
   - <https://github.com/atgambardella/pytorch-es>  
 
 [Learning to Play in a Day: Faster Deep Reinforcement Learning by Optimality Tightening](https://arxiv.org/abs/1611.01606)  
-  - <https://yadi.sk/i/yBO0q4mI3GAxYd> (1:10:20) (Fritsler, in russian)  
+  - <https://yadi.sk/i/yBO0q4mI3GAxYd> (1:10:20) (Fritsler) (in russian)  
   - <https://youtu.be/mrj_hyH974o?t=16m13s> (in russian)  
 
 
@@ -1345,6 +1360,8 @@ hieves."
 ### reinforcement learning - simulation and planning
 
 [Recurrent Environment Simulators](https://arxiv.org/abs/1704.02254) (DeepMind)  
+>	"We improve on previous environment simulators from high-dimensional pixel observations by introducing recurrent neural networks that are able to make temporally and spatially coherent predictions for hundreds of time-steps into the future. "  
+>	"We address the issue of computationally inefficiency with a model that does not need to generate a high-dimensional image at each time-step."  
   - <https://drive.google.com/file/d/0B_L2b7VHvBW2NEQ1djNjU25tWUE/view> (TORCS demo)  
   - <https://drive.google.com/file/d/0B_L2b7VHvBW2UjMwWVRoM3lTeFU/view> (TORCS demo)  
   - <https://drive.google.com/file/d/0B_L2b7VHvBW2UWl5YUtSMXdUbnc/view> (3D Maze demo)  
@@ -1355,20 +1372,8 @@ hieves."
 >	"latent action prior, another variational autoencoder that models a prior over action segments, and showed how it can be used to perform control using actions from the same distribution as a dynamics model’s training data"  
 
 [Counterfactual Control for Free from Generative Models](https://arxiv.org/abs/1702.06676)  
-
-[Model-Based Planning in Discrete Action Spaces](https://arxiv.org/abs/1705.07177) (LeCun)  
-
-[Imagination-Augmented Agents for Deep Reinforcement Learning](https://arxiv.org/abs/1707.06203) (DeepMind)  
-  - <https://drive.google.com/drive/folders/0B4tKsKnCCZtQY2tTOThucHVxUTQ> (demo)  
-  - <https://deepmind.com/blog/agents-imagine-and-plan/>  
-
-[Learning Model-based Planning from Scratch](https://arxiv.org/abs/1707.06170) (DeepMind)  
-  - <https://drive.google.com/drive/folders/0B3u8dCFTG5iVaUxzbzRmNldGcU0> (demo)  
-  - <https://deepmind.com/blog/agents-imagine-and-plan/>  
-
-[Metacontrol for Adaptive Imagination-Based Optimization](https://arxiv.org/abs/1705.02670) (DeepMind)  
->	"Rather than learning a single, fixed policy for solving all instances of a task, we introduce a metacontroller which learns to optimize a sequence of "imagined" internal simulations over predictive models of the world in order to construct a more informed, and more economical, solution. The metacontroller component is a model-free reinforcement learning agent, which decides both how many iterations of the optimization procedure to run, as well as which model to consult on each iteration. The models (which we call "experts") can be state transition models, action-value functions, or any other mechanism that provides information useful for solving the task, and can be learned on-policy or off-policy in parallel with the metacontroller."  
->	"learns an adaptive optimization policy for one-shot decision-making in contextual bandit problems"  
+>	"generative model learning the joint distribution between actions and future states can be used to automatically infer a control scheme for any desired reward function, which may be altered on the fly without retraining the model"  
+>	"problem of action selection is reduced to one of gradient descent on the latent space of the generative model, with the model itself providing the means of evaluating outcomes and finding the gradient, much like how the reward network in Deep Q-Networks provides gradient information for the action generator"  
 
 [Learning Multimodal Transition Dynamics for Model-Based Reinforcement Learning](https://arxiv.org/abs/1705.00470)  
 >	"So why is model-based RL not the standard approach? Model-based RL consists of two steps: 1) transition function estimation through supervised learning, and 2) (sample-based) planning over the learned model. Each step has a particular challenging aspect. For this work we focus on a key challenge of the first step: stochasticity in the transition dynamics. Stochasticity is an inherent property of many environments, and increases in real-world settings due to sensor noise. Transition dynamics usually combine both deterministic aspects (such as the falling trajectory of an object due to gravity) and stochastic elements (such as the behaviour of another car on the road). Our goal is to learn to jointly predict these. Note that stochasticity has many forms, both homoscedastic versus heteroscedastic, and unimodal versus multimodal. In this work we specifically focus on multimodal stochasticity, as this should theoretically pose the largest challenge."  
@@ -1386,20 +1391,27 @@ hieves."
   - <https://medium.com/towards-data-science/bayesian-neural-networks-with-random-inputs-for-model-based-reinforcement-learning-36606a9399b4> (Hernandez-Lobato)  
   - <https://github.com/siemens/policy_search_bb-alpha>  
 
+----
+[Imagination-Augmented Agents for Deep Reinforcement Learning](https://arxiv.org/abs/1707.06203) (DeepMind)  
+  - <https://drive.google.com/drive/folders/0B4tKsKnCCZtQY2tTOThucHVxUTQ> (demo)  
+  - <https://deepmind.com/blog/agents-imagine-and-plan/>  
+
+[Learning Model-based Planning from Scratch](https://arxiv.org/abs/1707.06170) (DeepMind)  
+  - <https://drive.google.com/drive/folders/0B3u8dCFTG5iVaUxzbzRmNldGcU0> (demo)  
+  - <https://deepmind.com/blog/agents-imagine-and-plan/>  
+
+[Metacontrol for Adaptive Imagination-Based Optimization](https://arxiv.org/abs/1705.02670) (DeepMind)  
+>	"Rather than learning a single, fixed policy for solving all instances of a task, we introduce a metacontroller which learns to optimize a sequence of "imagined" internal simulations over predictive models of the world in order to construct a more informed, and more economical, solution. The metacontroller component is a model-free reinforcement learning agent, which decides both how many iterations of the optimization procedure to run, as well as which model to consult on each iteration. The models (which we call "experts") can be state transition models, action-value functions, or any other mechanism that provides information useful for solving the task, and can be learned on-policy or off-policy in parallel with the metacontroller."  
+>	"learns an adaptive optimization policy for one-shot decision-making in contextual bandit problems"  
+
 [Value Prediction Network](https://arxiv.org/abs/1707.03497)  
+>	"extending Predictron model from policy evaluation to optimal control"  
 >	"VPN combines model-based RL (i.e., learning the dynamics of an abstract state space sufficient for computing future rewards and values) and model-free RL (i.e., mapping the learned abstract states to rewards and values) in a unified framework. In order to train a VPN, we propose a combination of temporal-difference search (TD search) and n-step Q-learning. In brief, VPNs learn to predict values via Q-learning and rewards via supervised learning. At the same time, VPNs perform lookahead planning to choose actions and compute bootstrapped target Q-values."  
+  - <http://videolectures.net/deeplearning2017_singh_reinforcement_learning/> (1:12:46) (Singh)  
   - <https://youtu.be/PRQ8-FwDPRE?t=16m> (Holland)  
 
 [QMDP-Net: Deep Learning for Planning under Partial Observability](https://arxiv.org/abs/1703.06692)  
 >	"This paper introduces QMDP-net, a neural network architecture for planning under partial observability. The QMDP-net combines the strengths of model-free learning and model-based planning. It is a recurrent policy network, but it represents a policy by connecting a model with a planning algorithm that solves the model, thus embedding the solution structure of planning in the network architecture. The QMDP-net is fully differentiable and allows end-to-end training. We train a QMDP-net over a set of different environments so that it can generalize over new ones."  
-
-[The Predictron: End-to-End Learning and Planning](https://arxiv.org/abs/1612.08810) (DeepMind)  
->	"trains deep network to implicitly plan via iterative rollouts"  
->	"uses an abstract model which does not capture the world dynamics"  
->	"only applied to learning Markov reward processes rather than solving Markov decision processes"  
-  - <https://youtube.com/watch?v=BeaLdaN2C3Q> (demo)  
-  - <https://github.com/zhongwen/predictron>  
-  - <https://github.com/muupan/predictron>  
 
 [Reinforcement Learning via Recurrent Convolutional Neural Networks](https://arxiv.org/abs/1701.02392)  
 >	"solving Markov Decision Processes and Reinforcement Learning problems using Recurrent Convolutional Neural Networks"  
@@ -1413,6 +1425,16 @@ hieves."
 >	"learning is restricted to a fixed environment and does not generalize to new environments"   
   - <https://youtube.com/watch?v=gpwA3QNTPOQ> (Shankar)  
   - <https://github.com/tanmayshankar/RCNN_MDP>  
+
+----
+[The Predictron: End-to-End Learning and Planning](https://arxiv.org/abs/1612.08810) (DeepMind)  
+>	"trains deep network to implicitly plan via iterative rollouts"  
+>	"uses an abstract model which does not capture the world dynamics"  
+>	"only applied to learning Markov reward processes rather than solving Markov decision processes"  
+  - <https://youtube.com/watch?v=BeaLdaN2C3Q> (demo)  
+  - <http://videolectures.net/deeplearning2017_singh_reinforcement_learning/> (1:12:46) (Singh)  
+  - <https://github.com/zhongwen/predictron>  
+  - <https://github.com/muupan/predictron>  
 
 [Strategic Attentive Writer for Learning Macro-Actions](http://arxiv.org/abs/1606.04695) (DeepMind)  
 >	"method that learns to initialize and update a plan, but which does not use a model and instead directly maps new observations to plan updates"  
@@ -1433,7 +1455,11 @@ hieves."
   - <https://github.com/onlytailei/Value-Iteration-Networks-PyTorch>  
   - <https://github.com/kentsommer/pytorch-value-iteration-networks>  
 
+----
+[Model-Based Planning in Discrete Action Spaces](https://arxiv.org/abs/1705.07177) (LeCun)  
+
 [Thinking Fast and Slow with Deep Learning and Tree Search](https://arxiv.org/abs/1705.08439) (Barber)  
+>	"Planning new policies is performed by tree search, while a deep neural network generalises those plans"  
 
 [Blazing the Trails before Beating the Path: Sample-efficient Monte-Carlo Planning](https://papers.nips.cc/paper/6253-blazing-the-trails-before-beating-the-path-sample-efficient-monte-carlo-planning.pdf) (Munos)  
 >	"We study the sampling-based planning problem in Markov decision processes (MDPs) that we can access only through a generative model, usually referred to as Monte-Carlo planning."  
@@ -1466,7 +1492,7 @@ hieves."
 [Neural Map: Structured Memory for Deep Reinforcement Learning](https://arxiv.org/abs/1702.08360) (Salakhutdinov)  
 >	"Memory was given a 2D structure in order to resemble a spatial map to address specific problems such as 2D or 3D navigation"  
 >	"Size and computational cost doesn't grow with time horizon of environment"  
-  - <https://yadi.sk/i/pMdw-_uI3Gke7Z> (Shvechikov, in russian)  
+  - <https://yadi.sk/i/pMdw-_uI3Gke7Z> (Shvechikov) (in russian)  
 
 [A Growing Long-term Episodic and Semantic Memory](http://arxiv.org/abs/1610.06402)  
 
@@ -1649,6 +1675,7 @@ hieves."
 [Emergent Language in a Multi-Modal, Multi-Step Referential Game](https://arxiv.org/abs/1705.10369)  
 
 [Translating Neuralese](https://arxiv.org/abs/1704.06960)  
+>	"Authors take the vector messages (“neuralese”) passed between two machines trained to perform a collaborative task, and translate them into natural language utterances. To overcome the absence of neuralese-to-English parallel data, authors consider a pair of messages equivalent if they are used in similar scenarios by human and machine agents."  
 
 [Learning Cooperative Visual Dialog Agents with Deep Reinforcement Learning](https://arxiv.org/abs/1703.06585)  
   - <https://visualdialog.org> (demo)  
@@ -1682,6 +1709,9 @@ hieves."
 
 [Towards an Automatic Turing Test: Learning to Evaluate Dialogue Responses](https://arxiv.org/abs/1708.07149)  
   - <https://youtube.com/watch?v=vTgwWobuoFw> (Pineau)  
+
+----
+[A Deep Reinforcement Learning Chatbot](https://arxiv.org/abs/1709.02349) (Bengio)  
 
 ----
 [Learning from Real Users: Rating Dialogue Success with Neural Networks for Reinforcement Learning in Spoken Dialogue Systems](http://arxiv.org/abs/1508.03386) (Young)  

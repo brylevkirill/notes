@@ -12,8 +12,8 @@
     - [autoregressive models](#generative-models---autoregressive-models)
     - [restricted boltzmann machine](#generative-models---restricted-boltzmann-machine)
   * [architectures](#architectures)
-    - [convolutional neural network](#convolutional-neural-network)
-    - [recurrent neural network](#recurrent-neural-network)
+    - [convolutional neural network](#architectures---convolutional-neural-network)
+    - [recurrent neural network](#architectures---recurrent-neural-network)
     - [compute and memory](#architectures---compute-and-memory)
     - [attention](#architectures---attention)
     - [distributed representations](#architectures---distributed-representations)
@@ -27,9 +27,6 @@
     - [variational autoencoder](#interesting-papers---variational-autoencoder)
     - [bayesian inference and learning](#interesting-papers---bayesian-inference-and-learning)
     - [applications](#interesting-papers---applications)
-
-
-  [recent breakthroughs](https://github.com/brylevkirill/posts/blob/master/breakthroughs.md) (in russian)
 
 
 
@@ -48,24 +45,20 @@
   <http://blog.keras.io/the-future-of-deep-learning.html>  (Francois Chollet)  
 
 
+  [interesting quotes](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#interesting-quotes)
+
+
   - Juergen Schmidhuber  
-	<http://youtube.com/watch?v=h4FqFss9hEY>  
+	<http://youtube.com/watch?v=0YLpp_TVhLY>  
 
   - Geoffrey Hinton  
 	<http://youtube.com/watch?v=izrG86jycck>  
-	<http://sms.cam.ac.uk/media/2017973>  
+
+  - Yann LeCun  
+	<http://youtube.com/watch?v=zaoL0LUctK4>  
 
   - Yoshua Bengio  
 	<http://youtube.com/watch?v=11rsu_WwZTc>  
-	<http://videolectures.net/deeplearning2015_bengio_theoretical_motivations/>  
-	<http://youtube.com/watch?v=exhdfIPzj24>  
-
-  - Yann LeCun  
-	<http://youtube.com/watch?v=fe-uxTUnoCs>  
-	<http://techtalks.tv/talks/whats-wrong-with-deep-learning/61639/>  
-
-
-  [interesting quotes](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#interesting-quotes)
 
 
 #### history
@@ -109,8 +102,6 @@
 ### research
 
 #### applications
-
-  [recent breakthroughs](https://github.com/brylevkirill/posts/blob/master/breakthroughs.md) (in russian)
 
   [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)  
   [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
@@ -361,7 +352,8 @@
   ["What My Deep Model Doesn't Know..."](http://mlg.eng.cam.ac.uk/yarin/blog_3d801aa532c1ce.html) by Yarin Gal  
   ["Uncertainty In Deep Learning"](http://mlg.eng.cam.ac.uk/yarin/blog_2248.html) by Yarin Gal  
 
-  ["Bayesian Neural Networks"](https://youtube.com/watch?v=tqGEX_Ucu04) by Dmitry Molchanov (in russian)  
+  ["Bayesian Neural Networks"](https://youtube.com/watch?v=tqGEX_Ucu04) by Dmitry Molchanov (in russian)
+	([slides](https://drive.google.com/file/d/0B1xR8nRvoZdNMGR0Y2JsdG9CSGs/) in english)  
 
   ["Course on Information Theory, Pattern Recognition, and Neural Networks"](http://videolectures.net/course_information_theory_pattern_recognition/) by David MacKay  
   ["Bayesian Methods for Adaptive Models"](http://www.inference.phy.cam.ac.uk/mackay/thesis.pdf) by David MacKay  
@@ -548,9 +540,14 @@
 
   ["NIPS 2016 Tutorial: Generative Adversarial Networks"](https://arxiv.org/abs/1701.00160) by Ian Goodfellow
 
-  [tutorial at NIPS 2016](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks) by Ian Goodfellow ([slides](http://iangoodfellow.com/slides/2016-12-04-NIPS.pdf))  
-  [tutorial at ICML 2015](https://dl.dropboxusercontent.com/u/16027344/ICML%202015%20Deep%20Learning%20Workshop/Ian%20Goodfellow%2C%20GOOGLE.p2g/Default.html) by Ian Goodfellow  
+  [tutorial](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks) at NIPS 2016 by Ian Goodfellow ([slides](http://iangoodfellow.com/slides/2016-12-04-NIPS.pdf))  
+  [tutorial](https://dl.dropboxusercontent.com/u/16027344/ICML%202015%20Deep%20Learning%20Workshop/Ian%20Goodfellow%2C%20GOOGLE.p2g/Default.html) at ICML 2015 by Ian Goodfellow  
 
+
+  [overview](https://youtube.com/watch?v=jAI3rBI6poU) of implicit generative models by Dmitry Ulyanov (in russian)
+	([slides](https://drive.google.com/open?id=0B_-hq6gL70bUQmhhQ3dwU2lPQXM) in english)  
+
+----
 
   [overview](http://inference.vc/my-summary-of-adversarial-training-nips-workshop/) of workshop at NIPS 2016
 
@@ -560,9 +557,7 @@
 
 
   ["Some Open Questions"](http://www.offconvex.org/2017/03/15/GANs/) by Sanjeev Arora  
-  ["Generalization and Equilibrium in Generative Adversarial Networks"](http://www.offconvex.org/2017/03/30/GANs2/) by Sanjeev Arora
-
-  ["Generalization and Equilibrium in Generative Adversarial Networks"](https://youtube.com/watch?v=V7TliSCqOwI) talk by Sanjeev Arora
+  ["Generalization and Equilibrium in Generative Adversarial Networks"](http://www.offconvex.org/2017/03/30/GANs2/) by Sanjeev Arora ([talk](https://youtube.com/watch?v=V7TliSCqOwI))  
 
 ----
 
@@ -866,8 +861,8 @@ examples:
 
 ----
 
-  - [convolutional neural network](#convolutional-neural-network)
-  - [recurrent neural network](#recurrent-neural-network)
+  - [convolutional neural network](#architectures---convolutional-neural-network)
+  - [recurrent neural network](#architectures---recurrent-neural-network)
   - [compute and memory](#architectures---compute-and-memory)
   - [attention](#architectures---attention)
   - [distributed representations](#architectures---distributed-representations)
@@ -1292,7 +1287,7 @@ interesting papers (see below):
 >	"Batch normalization adds noise to gradient updates. While noise is probably good when one is training images with CNNs because it adds a bit of regularization (e.g., it can take care of invariances and stuff that doesn’t matter), it’s not so useful when one wants to do reinforcement learning. Instead of normalizing batches, one does normalization directly onto the weights, the contributions being: weight normalization + data dependent initialization. Scores on reinforcement learning with DQN gets better, sometimes 30% more."  
 
   - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Weight-Normalization-A-Simple-Reparameterization-to-Accelerate-Training-of-Deep-Neural-Networks>  
-  - <https://youtu.be/mrj_hyH974o?t=1h46m43s> (Lobacheva, in russian)  
+  - <https://youtu.be/mrj_hyH974o?t=1h46m43s> (Lobacheva) (in russian)  
   - <https://github.com/openai/weightnorm>  
 
 
@@ -1331,7 +1326,7 @@ interesting papers (see below):
   - <http://youtube.com/watch?v=pdODJ7JQfjo> (Zaremba)
   - <http://kdnuggets.com/2015/01/deep-learning-flaws-universal-machine-learning.html>
   - <http://i-programmer.info/news/105-artificial-intelligence/7352-the-flaw-lurking-in-every-deep-neural-net.html>
-  - <http://postnauka.ru/faq/27392> (Vetrov, in russian)
+  - <http://postnauka.ru/faq/27392> (Vetrov) (in russian)
   - <https://karpathy.github.io/2015/03/30/breaking-convnets/>
 
 
@@ -1590,7 +1585,7 @@ interesting papers (see below):
 >	"It is not depth, but the ensemble that makes residual networks strong. In the most recent iteration of residual networks, He et al. claim “We obtain these results via a simple but essential concept - going deeper. These results demonstrate the potential of pushing the limits of depth.” We now know that this is not quite right. Residual networks push the limits of network multiplicity, not network depth. Our proposed unraveled view and the lesion study show that residual networks are an implicit ensemble of exponentially many networks. Further, the paths through the network that contribute gradient are shorter than expected, because deep paths do not contribute any gradient during training due to vanishing gradients. If most of the paths that contribute gradient are very short compared to the overall depth of the network, increased depth alone can’t be the key characteristic of residual networks. We now believe that multiplicity, the network’s expressability in the terms of the number of paths, plays a key role."
 
   - <https://youtube.com/watch?v=jFJF5hXuo0s>
-  - <https://youtu.be/Jh3D8Gi4N0I?t=13m13s> (Novikov, in russian)
+  - <https://youtu.be/Jh3D8Gi4N0I?t=13m13s> (Novikov) (in russian)
 
 
 #### Sutskever, Vinyals, Le - ["Sequence to Sequence Learning with Neural Networks"](http://arxiv.org/abs/1409.3215)
@@ -2139,7 +2134,7 @@ interesting papers (see below):
 
   - <https://youtube.com/watch?v=bJhV2C5KKZ4> (Kingma)
   - <http://videolectures.net/deeplearning2015_courville_autoencoder_extension/#t=3192> (Courville)
-  - <https://youtu.be/0veUbpdBqyk?t=1h7m46s> (Chervinsky, in russian)
+  - <https://youtu.be/0veUbpdBqyk?t=1h7m46s> (Chervinsky) (in russian)
 
 
 #### Rasmus, Valpola, Honkala, Berglund, Raiko - ["Semi-supervised Learning with Ladder Networks"](http://arxiv.org/abs/1507.02672)
@@ -2174,7 +2169,7 @@ interesting papers (see below):
 >	"We introduce a new representation learning approach for domain adaptation, in which data at training and test time come from similar but different distributions. Our approach is directly inspired by the theory on domain adaptation suggesting that, for effective domain transfer to be achieved, predictions must be made based on features that cannot discriminate between the training (source) and test (target) domains. The approach implements this idea in the context of neural network architectures that are trained on labeled data from the source domain and unlabeled data from the target domain (no labeled target-domain data is necessary). As the training progresses, the approach promotes the emergence of features that are (i) discriminative for the main learning task on the source domain and (ii) indiscriminate with respect to the shift between the domains. We show that this adaptation behaviour can be achieved in almost any feed-forward model by augmenting it with few standard layers and a new gradient reversal layer. The resulting augmented architecture can be trained using standard backpropagation and stochastic gradient descent, and can thus be implemented with little effort using any of the deep learning packages. We demonstrate the success of our approach for two distinct classification problems (document sentiment analysis and image classification), where state-of-the-art domain adaptation performance on standard benchmarks is achieved. We also validate the approach for descriptor learning task in the context of person re-identification application."
 
   - <http://videolectures.net/icml2015_ganin_domain_adaptation/> (Ganin)
-  - <http://youtu.be/FpZqmnOB-R8?t=9m> (Lempitsky, in russian)
+  - <http://youtu.be/FpZqmnOB-R8?t=9m> (Lempitsky) (in russian)
   - "Unsupervised Domain Adaptation by Backpropagation" by Ganin and Lempitsky - <http://arxiv.org/abs/1409.7495>
   - <https://github.com/pumpikano/tf-dann>
 
@@ -2237,10 +2232,11 @@ interesting papers (see below):
 > - Neural network weights learn to fit a function through many examples, but can't adapt quickly to new/small amounts of data.  
 > - Memory modules can give networks a short-term memory to do this, and the metalearning setup they investigate is learning how to utilise this memory effectively. The memory structure exists, but the network needs to learn how to store and retrieve data for the task at hand.  
 > - The task is to predict xt when only yt-1 is provided at the same time - it can't learn a single mapping and must use its memory to compare xt to previously seen inputs with provided labels. It never knows the correct class of the first instance presented of each class (but it can make an educated guess by not guessing previously seen classes that look different). So labels are given at test time as well.  
-> - The shuffling means mixing up the labels e.g. giving a picture of 1 the class label 3, and the picture of 2 a class label of 5 etc. This way the network can't encode mappings in its weights, it has to learn how to learn (store examples in memory for comparison later). More explicitly, it has to store a sample and its label in the next time step if it intends to use it for comparison with new data."  
+> - The shuffling means mixing up the labels e.g. giving a picture of 1 the class label 3, and the picture of 2 a class label of 5 etc. This way the network can't encode mappings in its weights, it has to learn how to learn (store examples in memory for comparison later). More explicitly, it has to store a sample and its label in the next time step if it intends to use it for comparison with new data.  
+>"
 
   - <http://techtalks.tv/talks/meta-learning-with-memory-augmented-neural-networks/62523/> + <https://vk.com/wall-44016343_8782> (Santoro)
-  - <https://youtube.com/watch?v=qos2CcviAuY> (Bartunov, in russian)
+  - <https://youtube.com/watch?v=qos2CcviAuY> (Bartunov) (in russian)
   - <http://rylanschaeffer.github.io/content/research/one_shot_learning_with_memory_augmented_nn/main.html>
   - <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.06065>
   - <https://github.com/tristandeleu/ntm-one-shot>
@@ -2366,6 +2362,13 @@ interesting papers (see below):
 >	"This report summarizes the tutorial presented by the author at NIPS 2016 on generative adversarial networks (GANs). The tutorial describes: (1) Why generative modeling is a topic worth studying, (2) how generative models work, and how GANs compare to other generative models, (3) the details of how GANs work, (4) research frontiers in GANs, and (5) state-of-the-art image models that combine GANs with other methods. Finally, the tutorial contains three exercises for readers to complete, and the solutions to these exercises."
 
   - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks> (Goodfellow) + <http://iangoodfellow.com/slides/2016-12-04-NIPS.pdf>
+
+
+#### Mohamed, Lakshminarayanan - ["Learning in Implicit Generative Models"](https://arxiv.org/abs/1610.03483)
+>	"Generative adversarial networks (GANs) provide an algorithmic framework for constructing generative models with several appealing properties: they do not require a likelihood function to be specified, only a generating procedure; they provide samples that are sharp and compelling; and they allow us to harness our knowledge of building highly accurate neural network classifiers. Here, we develop our understanding of GANs with the aim of forming a rich view of this growing area of machine learning---to build connections to the diverse set of statistical thinking on this topic, of which much can be gained by a mutual exchange of ideas. We frame GANs within the wider landscape of algorithms for learning in implicit generative models--models that only specify a stochastic procedure with which to generate data--and relate these ideas to modelling problems in related fields, such as econometrics and approximate Bayesian computation. We develop likelihood-free inference methods and highlight hypothesis testing as a principle for learning in implicit generative models, using which we are able to derive the objective function used by GANs, and many other related objectives. The testing viewpoint directs our focus to the general problem of density ratio estimation. There are four approaches for density ratio estimation, one of which is a solution using classifiers to distinguish real from generated data. Other approaches such as divergence minimisation and moment matching have also been explored in the GAN literature, and we synthesise these views to form an understanding in terms of the relationships between them and the wider literature, highlighting avenues for future exploration and cross-pollination."
+  - <https://youtu.be/RZOKRFBtSh4?t=5m37s> (Mohamed)
+  - <https://youtu.be/jAI3rBI6poU?t=37m56s> (Ulyanov) (in russian)
+  - <https://casmls.github.io/general/2017/05/24/ligm.html>
 
 
 #### Pfau, Vinyals - ["Connecting Generative Adversarial Networks and Actor-Critic Methods"](https://arxiv.org/abs/1610.01945)
@@ -2503,7 +2506,7 @@ interesting papers (see below):
   - <http://youtube.com/watch?v=rjZL7aguLAs> (Kingma)
   - <http://videolectures.net/deeplearning2015_courville_autoencoder_extension/> (Courville)
   - <https://dl.dropboxusercontent.com/u/16027344/ICML%202015%20Deep%20Learning%20Workshop/Karol%20Gregor%2C%20GOOGLE%20Deepmind.p2g/Default.html> (Gregor)
-  - <https://youtu.be/_qrHcSdQ2J4?t=1h37m21s> (Vetrov, in russian)
+  - <https://youtu.be/_qrHcSdQ2J4?t=1h37m21s> (Vetrov) (in russian)
   - <http://hsaghir.github.io/denoising-vs-variational-autoencoder/>
   - <http://arxiv.org/abs/1606.05908> + <https://github.com/cdoersch/vae_tutorial> (tutorial)
   - <http://arxiv.org/abs/1610.09296> (explanation)
@@ -2523,7 +2526,7 @@ interesting papers (see below):
 >	"We marry ideas from deep neural networks and approximate Bayesian inference to derive a generalised class of deep, directed generative models, endowed with a new algorithm for scalable inference and learning. Our algorithm introduces a recognition model to represent an approximate posterior distribution and uses this for optimisation of a variational lower bound. We develop stochastic back-propagation rules for gradient backpropagation through stochastic variables and derive an algorithm that allows for joint optimisation of the parameters of both the generative and recognition models. We demonstrate on several real-world data sets that by using stochastic backpropagation and variational inference, we obtain models that are able to generate realistic samples of data, allow for accurate imputations of missing data, and provide a useful tool for high-dimensional data visualisation."
 
   - <http://techtalks.tv/talks/stochastic-backpropagation-and-approximate-inference-in-deep-generative-models/60885/>
-  - <http://vk.com/video-44016343_456239093> (Stepochkin, in russian)
+  - <http://vk.com/video-44016343_456239093> (Stepochkin) (in russian)
   - <https://dropbox.com/s/s1mgon5e7lf5svx/Stochastic%20Backpropagation%20and%20Approximate%20Variational%20Inference%20in%20Deep%20Generative%20Models%20%28slides%29.pdf> (in russian)
 
 
@@ -2561,13 +2564,13 @@ x."
 >	"This is means that the AVB is essentially in the AAE work. The only contribution is the relationship to the normal ELBO when the discriminator is optimal, but I'm not sure if that is not obvious."
 
   - <https://youtu.be/y7pUN2t5LrA?t=14m19s> (Nowozin)
+  - <http://inference.vc/variational-inference-with-implicit-models-part-ii-amortised-inference-2/>
   - <https://github.com/wiseodd/generative-models/tree/master/VAE/adversarial_vb>
   - <https://gist.github.com/poolio/b71eb943d6537d01f46e7b20e9225149>
-  - <http://inference.vc/variational-inference-with-implicit-models-part-ii-amortised-inference-2/>
 
 
 #### Arulkumaran, Creswell, Bharath - ["Improving Sampling from Generative Autoencoders with Markov Chains"](https://arxiv.org/abs/1610.09296)
->	"We focus on generative autoencoders, such as variational or adversarial autoencoders, which jointly learn a generative model alongside an inference model. We define generative autoencoders as autoencoders which are trained to softly enforce a prior on the latent distribution learned by the model. However, the model does not necessarily learn to match the prior. We formulate a Markov chain Monte Carlo (MCMC) sampling process, equivalent to iteratively encoding and decoding, which allows us to sample from the learned latent distribution. Using this we can improve the quality of samples drawn from the model, especially when the learned distribution is far from the prior. Using MCMC sampling, we also reveal previously unseen differences between generative autoencoders trained either with or without the denoising criterion."
+>	"We focus on generative autoencoders, such as variational or adversarial autoencoders, which jointly learn a generative model alongside an inference model. We define generative autoencoders as autoencoders which are trained to softly enforce a prior on the latent distribution learned by the model. However, the model does not necessarily learn to match the prior. We formulate a Markov chain Monte Carlo (MCMC) sampling process, equivalent to iteratively encoding and decoding, which allows us to sample from the learned latent distribution. Using this we can improve the quality of samples drawn from the model, especially when the learned distribution is far from the prior."
 
 >	"In this paper we derive a MCMC sampling process that allows us to directly draw samples from Q(Z), the latent distribution learned by generative autoencoders, where Q(Z) approximates a specified prior distribution, P(Z). This allows us to improve samples x~Q(X|Z), as MCMC sampling allows us to condition these on z~Q(Z). The process is simple, where each step requires iteratively encoding and decoding. Furthermore, as Q(Z) is constrained to be close to P(Z), the initial sample z0 can be drawn from P(Z) to quickly reach regions of high probability under Q(Z). We show that not only do initially poor samples improve, but unusual artefacts from performing interpolations across the latent space can be corrected through the use of further sampling. We further validate our work by showing that the denoising properties of denoising generative autoencoders are best revealed the use of MCMC sampling. Our MCMC sampling process is straightforward, and can be applied easily to existing generative autoencoders. This technique is orthogonal to the use of more powerful posteriors in AAEs and VAEs, and the combination of both could result in further improvements in generative modelling. Finally, our basic MCMC proces opens the doors to apply a large existing body of research on sampling methods to generative autoencoders."
 
@@ -2672,6 +2675,41 @@ x."
 [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#bayesian-inference-and-learning)
 
 
+#### Blei, Kucukelbir, McAuliffe - ["Variational Inference: A Review for Statisticians"](http://arxiv.org/abs/1601.00670)
+>	"One of the core problems of modern statistics is to approximate difficult-to-compute probability distributions. This problem is especially important in Bayesian statistics, which frames all inference about unknown quantities as a calculation about the posterior. In this paper, we review variational inference (VI), a method from machine learning that approximates probability distributions through optimization. VI has been used in myriad applications and tends to be faster than classical methods, such as Markov chain Monte Carlo sampling. The idea behind VI is to first posit a family of distributions and then to find the member of that family which is close to the target. Closeness is measured by Kullback-Leibler divergence. We review the ideas behind mean-field variational inference, discuss the special case of VI applied to exponential family models, present a full example with a Bayesian mixture of Gaussians, and derive a variant that uses stochastic optimization to scale up to massive data. We discuss modern research in VI and highlight important open problems. VI is powerful, but it is not yet well understood. Our hope in writing this paper is to catalyze statistical research on this widely-used class of algorithms."
+
+
+#### Rezende, Mohamed - ["Variational Inference with Normalizing Flows"](http://arxiv.org/abs/1505.05770)
+>	"The choice of approximate posterior distribution is one of the core problems in variational inference. Most applications of variational inference employ simple families of posterior approximations in order to allow for efficient inference, focusing on mean-field or other simple structured approximations. This restriction has a significant impact on the quality of inferences made using variational methods. We introduce a new approach for specifying flexible, arbitrarily complex and scalable approximate posterior distributions. Our approximations are distributions constructed through a normalizing flow, whereby a simple initial density is transformed into a more complex one by applying a sequence of invertible transformations until a desired level of complexity is attained. We use this view of normalizing flows to develop categories of finite and infinitesimal flows and provide a unified view of approaches for constructing rich posterior approximations. We demonstrate that the theoretical advantages of having posteriors that better match the true posterior, combined with the scalability of amortized variational approaches, provides a clear improvement in performance and applicability of variational inference."
+
+>	"We propose the specification of approximate posterior distributions using normalizing flows, a tool for constructing complex distributions by transforming a probability density through a series of invertible mappings. Inference with normalizing flows provides a tighter, modified variational lower bound with additional terms that only add terms with linear time complexity.
+>	We show that normalizing flows admit infinitesimal flows that allow us to specify a class of posterior approximations that in the asymptotic regime is able to recover the true posterior distribution, overcoming one oft-quoted limitation of variational inference.
+>	We present a unified view of related approaches for improved posterior approximation as the application of special types of normalizing flows.
+>	We show experimentally that the use of general normalizing flows systematically outperforms other competing approaches for posterior approximation."
+
+>	"In this work we developed a simple approach for learning highly non-Gaussian posterior densities by learning transformations of simple densities to more complex ones through a normalizing flow. When combined with an amortized approach for variational inference using inference networks and efficient Monte Carlo gradient estimation, we are able to show clear improvements over simple approximations on different problems. Using this view of normalizing flows, we are able to provide a unified perspective of other closely related methods for flexible posterior estimation that points to a wide spectrum of approaches for designing more powerful posterior approximations with different statistical and computational tradeoffs. An important conclusion from the discussion in section 3 is that there exist classes of normalizing flows that allow us to create extremely rich posterior approximations for variational inference. With normalizing flows, we are able to show that in the asymptotic regime, the space of solutions is rich enough to contain the true posterior distribution. If we combine this with the local convergence and consistency results for maximum likelihood parameter estimation in certain classes of latent variables models, we see that we are now able overcome the objections to using variational inference as a competitive and default approach for statistical inference. Making such statements rigorous is an important line of future research. Normalizing flows allow us to control the complexity of the posterior at run-time by simply increasing the flow length of the sequence. The approach we presented considered normalizing flows based on simple transformations of the form (10) and (14). These are just two of the many maps that can be used, and alternative transforms can be designed for posterior approximations that may require other constraints, e.g., a restricted support. An important avenue of future research lies in describing the classes of transformations that allow for different characteristics of the posterior and that still allow for efficient, linear-time computation."
+
+  - <https://ferrine.github.io/blog/2017/07/11/normalizing-flows-overview/>
+  - <https://youtu.be/tqGEX_Ucu04?t=33m58s> (Molchanov) (in russian)
+  - <https://github.com/pymc-devs/pymc3/blob/master/pymc3/variational/flows.py>
+
+
+#### Hernandez-Lobato, Li, Rowland, Hernandez-Lobato, Bui, Turner - ["Black-Box α-Divergence Minimization"](https://arxiv.org/abs/1511.03243)
+>	"Black-box alpha is a new approximate inference method based on the minimization of α-divergences. BB-α scales to large datasets because it can be implemented using stochastic gradient descent. BB-α can be applied to complex probabilistic models with little effort since it only requires as input the likelihood function and its gradients. These gradients can be easily obtained using automatic differentiation. By changing the divergence parameter α, the method is able to interpolate between variational Bayes (VB) (α→ 0) and an algorithm similar to expectation propagation (EP) (α= 1). Experiments on probit regression and neural network regression and classification problems show that BB-α with non-standard settings of α, such as α= 0.5, usually produces better predictions than with α→ 0 (VB) or α= 1 (EP)."
+>	"We have proposed BB-α as a black-box inference algorithm to approximate power EP. This is done by considering the energy function used by power EP and constraining the form of the site approximations in this method. The proposed method locally minimizes the α-divergence that is a rich family of divergence measures between distributions including the Kullback-Leibler divergence. Such a method is guaranteed to converge under certain conditions, and can be implemented by optimizing an energy function without having to use inefficient double-loop algorithms. Scalability to large datasets can be achieved by using stochastic gradient descent with minibatches. Furthermore, a combination of a Monte Carlo approximation and automatic differentiation methods allows our technique to be applied in a straightforward manner to a wide range ofprobabilistic models with complex likelihood factors. Experiments with neural networks applied to small and large datasets demonstrate both the accuracy and the scalability of the proposed approach. The evaluations also indicate the optimal setting for α may vary for different tasks."
+
+  - <https://youtube.com/watch?v=Ev-6s8b3QrI> (Hernandez-Lobato)
+
+
+#### Papamakarios, Murray - ["Fast Epsilon-free Inference of Simulation Models with Bayesian Conditional Density Estimation"](http://arxiv.org/abs/1605.06376)
+>	"Many statistical models can be simulated forwards but have intractable likelihoods. Approximate Bayesian Computation (ABC) methods are used to infer properties of these models from data. Traditionally these methods approximate the posterior over parameters by conditioning on data being inside an Epsilon-ball around the observed data, which is only correct in the limit Epsilon→ 0. Monte Carlo methods can then draw samples from the approximate posterior to approximate predictions or error bars on parameters. These algorithms critically slow down as Epsilon→ 0, and in practice draw samples from a broader distribution than the posterior. We propose a new approach to likelihood-free inference based on Bayesian conditional density estimation. Preliminary inferences based on limited simulation data are used to guide later simulations. In some cases, learning an accurate parametric representation of the entire true posterior distribution requires fewer model simulations than Monte Carlo ABC methods need to produce a single sample from an approximate posterior."
+
+>	"Conventional ABC algorithms such as the above suffer from three drawbacks. First, they only represent the parameter posterior as a set of (possibly weighted or correlated) samples. A sample-based representation easily gives estimates and error bars of individual parameters, and model predictions. However these computations are noisy, and it is not obvious how to perform some other computations using samples, such as combining posteriors from two separate analyses. Second, the parameter samples do not come from the correct Bayesian posterior, but from an approximation based on assuming a pseudo-observation that the data is within an Epsilon-ball centred on the data actually observed. Third, as the Epsilon-tolerance is reduced, it can become impractical to simulate the model enough times to match the observed data even once. When simulations are expensive to perform, good quality inference becomes impractical. In this paper, we propose an alternative approach to likelihood-free inference, which unlike conventional ABC does not suffer from the above three issues. Instead of returning a set of parameter samples from an approximate posterior, our approach learns a parametric approximation to the exact posterior, which can be made as accurate as required. Furthermore, we present a strategy for learning our parametric approximation by making efficient use of simulations from the model. We show experimentally that our approach is capable of closely approximating the exact posterior, while making efficient use of simulations compared to conventional ABC. Our approach is based on conditional density estimation using Bayesian neural networks, and draws upon advances in density estimation, stochastic variational inference, and recognition networks. To the best of our knowledge, this is the first work that applies such techniques to the field of likelihood-free inference."
+
+  - <http://dennisprangle.github.io/research/2016/06/07/bayesian-inference-by-neural-networks> + <http://dennisprangle.github.io/research/2016/06/07/bayesian-inference-by-neural-networks2>
+  - <https://github.com/gpapamak/epsilon_free_inference>
+
+
 #### Johnson, Duvenaud, Wiltschko, Datta, Adams - ["Composing Graphical Models with Neural Networks for Structured Representations and Fast Inference"](http://arxiv.org/abs/1603.06277)
 >	"We propose a general modeling and inference framework that combines the complementary strengths of probabilistic graphical models and deep learning methods. Our model family composes latent graphical models with neural network observation likelihoods. For inference, we use recognition networks to produce local evidence potentials, then combine them with the model distribution using efficient message-passing algorithms. All components are trained simultaneously with a single stochastic variational inference objective. We illustrate this framework by automatically segmenting and categorizing mouse behavior from raw depth video, and demonstrate several other example models."
 
@@ -2721,7 +2759,7 @@ x."
 >	"Can mix and match likelihood ratio and path derivative. If black-box node: might need to place stochastic node in front of it and use likelihood ratio. This includes recurrent neural net policies."
 
   - <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724> (Abbeel)
-  - <http://joschu.net/docs/thesis.pdf>
+  - <http://joschu.net/docs/thesis.pdf> (Schulman)
 
 
 #### Gu, Levine, Sutskever, Mnih - ["MuProp: Unbiased Backpropagation for Stochastic Neural Networks"](http://arxiv.org/abs/1511.05176)
@@ -2759,6 +2797,12 @@ x."
   - <https://gist.github.com/rocknrollnerd/c5af642cf217971d93f499e8f70fcb72>
 
 
+#### Korattikara, Rathod, Murphy, Welling - ["Bayesian Dark Knowledge"](https://arxiv.org/abs/1506.04416)
+>	"We consider the problem of Bayesian parameter estimation for deep neural networks, which is important in problem settings where we may have little data, and/ or where we need accurate posterior predictive densities, e.g., for applications involving bandits or active learning. One simple approach to this is to use online Monte Carlo methods, such as SGLD (stochastic gradient Langevin dynamics). Unfortunately, such a method needs to store many copies of the parameters (which wastes memory), and needs to make predictions using many versions of the model (which wastes time). We describe a method for "distilling" a Monte Carlo approximation to the posterior predictive density into a more compact form, namely a single deep neural network. We compare to two very recent approaches to Bayesian neural networks, namely an approach based on expectation propagation [Hernandez-Lobato and Adams, 2015] and an approach based on variational Bayes [Blundell et al., 2015]. Our method performs better than both of these, is much simpler to implement, and uses less computation at test time."
+
+  - <https://youtu.be/tqGEX_Ucu04?t=1h1m23s> (Molchanov) (in russian)
+
+
 #### Gal, Ghahramani - ["Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning"](http://arxiv.org/abs/1506.02142)
 >	"Deep learning has gained tremendous attention in applied machine learning. However such tools for regression and classification do not capture model uncertainty. Bayesian models offer a mathematically grounded framework to reason about model uncertainty, but usually come with a prohibitive computational cost. We show that dropout in neural networks can be cast as a Bayesian approximation. As a direct result we obtain tools to model uncertainty with dropout NNs - extracting information from existing models that has been thrown away so far. This mitigates the problem of representing uncertainty in deep learning without sacrificing computational complexity or test accuracy. We perform an extensive study of the dropout uncertainty properties. Various network architectures and non-linearities are assessed on tasks of regression and classification, using MNIST as an example. We show a considerable improvement in predictive log-likelihood and RMSE compared to existing state-of-the-art methods. We finish by using dropout uncertainty in a Bayesian pipeline, with deep reinforcement learning as a practical task."
 
@@ -2773,6 +2817,7 @@ x."
   - <http://arxiv.org/abs/1506.02157> (Appendix)
   - <http://research.microsoft.com/apps/video/default.aspx?id=259218> (Gal)
   - <http://techtalks.tv/talks/dropout-as-a-bayesian-approximation-representing-model-uncertainty-in-deep-learning/62508/> (Gal)
+  - <https://youtu.be/tqGEX_Ucu04?t=12m43s> (Molchanov) (in russian)
   - <http://mlg.eng.cam.ac.uk/yarin/blog_3d801aa532c1ce.html> (Gal)
   - <https://www.evernote.com/shard/s189/sh/0b46fb48-dd1a-4e3b-ac5c-289f4925ff7e/3f0f03231757ded363b42ce71ebfcc70> (Larochelle)
   - <https://plus.google.com/u/0/+AnkurHanda/posts/DnXB81efTwa>
@@ -2791,6 +2836,7 @@ x."
 
 >	"We introduce the Bayesian RNN - an RNN with weights treated as random variables. Approximating the posterior distribution over the weights with a Bernoulli approximating variational distributions reveals how dropout should be applied in RNNs. More specifically, the random weights when conditioned on some observations have a posterior. This posterior is approximated with a Bernoulli approximating distribution. Implementing this approximate inference procedure is identical to repeating the same dropout mask throughout the sequence. When used with discrete inputs (i.e. words) we place a distribution over the word embeddings as well - resulting in a fully Bayesian model. This corresponds to randomly dropping words in the sentence, and might be interpreted as forcing the model not to rely on single words for its task."
 
+  - <https://youtu.be/tqGEX_Ucu04?t=19m1s> (Molchanov) (in russian)
   - <https://github.com/yaringal/BayesianRNN>
 
 
@@ -2804,32 +2850,22 @@ x."
 >	"We extend the analysis to linear functions and argue that this behavior also carries over to deep learning; extensive computational results support this claim. We investigate the importance of risk and uncertainty in sequential decision problems and why this setting is crucially distinct from standard supervised learning tasks. We highlight the dangers of a naive applications dropout (or any other approximate risk measure) as a proxy for uncertainty. We present analytical regret bounds for algorithms based upon smoothed bootstrapped uncertainty estimates that complement their strong performance in complex nonlinear domains."
 
 
-#### Osband, Blundell, Pritzel, van Roy - ["Deep Exploration via Bootstrapped DQN"](http://arxiv.org/abs/1602.04621)
->	"Efficient exploration in complex environments remains a major challenge for reinforcement learning. We propose bootstrapped DQN, a simple algorithm that explores in a computationally and statistically efficient manner through use of randomized value functions. Unlike dithering strategies such as Epsilon-greedy exploration, bootstrapped DQN carries out temporally-extended (or deep) exploration; this can lead to exponentially faster learning. We demonstrate these benefits in complex stochastic MDPs and in the large-scale Arcade Learning Environment. Bootstrapped DQN substantially improves learning times and performance across most Atari games."
-
->	"One of the reasons deep RL algorithms learn so slowly is that they do not gather the right data to learn about the problem. These algorithms use dithering (taking random actions) to explore their environment - which can be exponentially less efficient that deep exploration which prioritizes potentially informative policies over multiple timesteps. There is a large literature on algorithms for deep exploration for statistically efficient reinforcement learning. The problem is that none of these algorithms are computationally tractable with deep learning. We present the first practical reinforcement learning algorithm that combines deep learning with deep exploration."
-
->	"In this paper we present bootstrapped DQN as an algorithm for efficient reinforcement learning in complex environments. We demonstrate that the bootstrap can produce useful uncertainty estimates for deep neural networks. Bootstrapped DQN can leverage these uncertainty estimates for deep exploration even in difficult stochastic systems; it also produces several state of the art results in Atari 2600. Bootstrapped DQN is computationally tractable and also naturally scalable to massive parallel systems as per (Nair et al., 2015). We believe that, beyond our specific implementation, randomized value functions represent a promising alternative to dithering for exploration. Bootstrapped DQN practically combines efficient generalization with exploration for complex nonlinear value functions."
-
->	"Our algorithm, bootstrapped DQN, modifies DQN to produce distribution over Q-values via the bootstrap. At the start of each episode, bootstrapped DQN samples a single Q-value function from its approximate posterior. The agent then follows the policy which is optimal for that sample for the duration of the episode. This is a natural extension of the Thompson sampling heuristic to RL that allows for temporally extended (or deep) exploration. Bootstrapped DQN exhibits deep exploration unlike the naive application of Thompson sampling to RL which resample every timestep."
-
->	"By contrast, Epsilon-greedy strategies are almost indistinguishable for small values of Epsilon and totally ineffectual for larger values. Our heads explore a diverse range of policies, but still manage to each perform well individually."
-
->	"Unlike vanilla DQN, bootstrapped DQN can know what it doesn’t know."
-
-  - <http://youtube.com/watch?v=Zm2KoT82O_M> + <http://youtube.com/watch?v=0jvEcC5JvGY> (demo)
-  - <https://youtu.be/mrgJ53TIcQc?t=32m24s> (Pavlov, in russian)
-  - <https://github.com/Kaixhin/Atari>
-  - <https://github.com/iassael/torch-bootstrapped-dqn>
-  - <https://github.com/carpedm20/deep-rl-tensorflow>
-
-
 #### Lakshminarayanan, Pritzel, Blundell - ["Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles"](https://arxiv.org/abs/1612.01474)
 >	"Deep neural networks are powerful black box predictors that have recently achieved impressive performance on a wide spectrum of tasks. Quantifying predictive uncertainty in neural networks is a challenging and yet unsolved problem. Bayesian neural networks, which learn a distribution over weights, are currently the state-of-the-art for estimating predictive uncertainty; however these require significant modifications to the training procedure and are computationally expensive compared to standard (non-Bayesian) neural neural networks. We propose an alternative to Bayesian neural networks, that is simple to implement, readily parallelisable and yields high quality predictive uncertainty estimates. Through a series of experiments on classification and regression benchmarks, we demonstrate that our method produces well-calibrated uncertainty estimates which are as good or better than approximate Bayesian neural networks. To assess robustness to dataset shift, we evaluate the predictive uncertainty on test examples from known and unknown distributions, and show that our method is able to express higher uncertainty on unseen data. We demonstrate the scalability of our method by evaluating predictive uncertainty estimates on ImageNet."
 
 >	"We have proposed a simple and scalable solution that provides a very strong baseline on evaluation metrics for uncertainty quantification. Our method uses scoring rules as training objectives to encourage the neural network to produce better calibrated predictions and uses a combination of ensembles and adversarial training for robustness to model misspecification and dataset shift. Our method is well suited for large scale distributed computation and can be readily implemented for a wide variety of architectures such as MLPs, CNNs, etc including those which do not use dropout (e.g. residual networks). It is perhaps surprising to the Bayesian deep learning community that a non-Bayesian (yet probabilistic) approach can perform as well as Bayesian neural networks. We hope that this work will encourage community to think about hybrid approaches (e.g. using non-Bayesian approaches such as ensembles) and other interesting metrics for evaluating predictive uncertainty."
 
   - <https://github.com/axelbrando/Mixture-Density-Networks-for-distribution-and-uncertainty-estimation/>
+
+
+#### Louizos, Welling - ["Multiplicative Normalizing Flows for Variational Bayesian Neural Networks"](https://arxiv.org/abs/1703.01961)
+>	"We reinterpret multiplicative noise in neural networks as auxiliary random variables that augment the approximate posterior in a variational setting for Bayesian neural networks. We show that through this interpretation it is both efficient and straightforward to improve the approximation by employing normalizing flows (Rezende & Mohamed, 2015) while still allowing for local reparametrizations (Kingma et al., 2015) and a tractable lower bound (Ranganath et al., 2015; Maaløe et al., 2016). In experiments we show that with this new approximation we can significantly improve upon classical mean field for Bayesian neural networks on both predictive accuracy as well as predictive uncertainty."
+
+>	"We compared our uncer-tainty on notMNIST and CIFAR with Dropout (Srivastavaet al., 2014; Gal & Ghahramani, 2015b) and Deep Ensembles (Lakshminarayanan et al., 2016) using convolutional architectures and found that MNFs achieve more realistic uncertainties while providing predictive capabilities on par with Dropout. We suspect that the predictive capabilities of MNFs can be further improved through more appropriate optimizers that avoid the bad local minima in the variational objective. Finally, we also highlighted limitations of Dropout approximations and empirically showed that MNFs can overcome them."
+
+>	"Another promising direction is that of designing better priors for Bayesian neural networks. For example (Neal, 1995) has identified limitations of Gaussian priors and proposes alternative priors such as the Cauchy. Furthermore, the prior over the parameters also affects the type of uncertainty we get in our predictions; for instance we observed in our experiments a significant difference in uncertainty between Gaussian and log-uniform priors. Since different problems require different types of uncertainty it makes sense to choose the prior accordingly, e.g. use an informative prior so as to alleviate adversarial examples."
+
+  - <https://youtu.be/tqGEX_Ucu04?t=39m23s> (Molchanov) (in russian)
 
 
 
@@ -2839,71 +2875,7 @@ x."
 [applications in reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---applications)
 
 
-#### Silver et al. - ["Mastering the Game of Go with Deep Neural Networks and Tree Search"](https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf)
->	"The game of Go has long been viewed as the most challenging of classic games for artificial intelligence due to its enormous search space and the difficulty of evaluating board positions and moves. We introduce a new approach to computer Go that uses value networks to evaluate board positions and policy networks to select moves. These deep neural networks are trained by a novel combination of supervised learning from human expert games, and reinforcement learning from games of self-play. Without any lookahead search, the neural networks play Go at the level of state-of-the-art Monte-Carlo tree search programs that simulate thousands of random games of self-play. We also introduce a new search algorithm that combines Monte-Carlo simulation with value and policy networks. Using this search algorithm, our program AlphaGo achieved a 99.8% winning rate against other Go programs, and defeated the European Go champion by 5 games to 0. This is the first time that a computer program has defeated a human professional player in the full-sized game of Go, a feat previously thought to be at least a decade away."
-
-----
->	"Google AlphaGo is a historical tour of AI ideas: 70s (Alpha-Beta), 80s/90s (reinforcement learning & self-play), 00's (Monte-Carlo), 10's (deep neural networks)." - <http://youtube.com/watch?v=UMm0XaCFTJQ>
-
->	"The most important application of reinforcement learning here is to learn a value function which aims to predict with which probability a certain position will lead to winning the game. The learned expert moves are already good, but the network that produces them did not learn with the objective to win the game, but only to minimize the differences to the teacher values in the training data set."
-
-  - <http://youtube.com/watch?v=4D5yGiYe8p4> (Silver)
-  - <http://youtube.com/watch?v=LX8Knl0g0LE> (Huang)
-  - <http://youtube.com/watch?v=UMm0XaCFTJQ> (Sutton, Szepesvari, Bowling, Hayward, Muller)
-  - <https://github.com/Rochester-NRT/RocAlphaGo/wiki>
-
-
-#### Moravcik et al. - ["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](http://arxiv.org/abs/1701.01724)
->	"Artificial intelligence has seen a number of breakthroughs in recent years, with games often serving as significant milestones. A common feature of games with these successes is that they involve information symmetry among the players, where all players have identical information. This property of perfect information, though, is far more common in games than in real-world problems. Poker is the quintessential game of imperfect information, and it has been a longstanding challenge problem in artificial intelligence. In this paper we introduce DeepStack, a new algorithm for imperfect information settings such as poker. It combines recursive reasoning to handle information asymmetry, decomposition to focus computation on the relevant decision, and a form of intuition about arbitrary poker situations that is automatically learned from selfplay games using deep learning. In a study involving dozens of participants and 44,000 hands of poker, DeepStack becomes the first computer program to beat professional poker players in heads-up no-limit Texas hold’em. Furthermore, we show this approach dramatically reduces worst-case exploitability compared to the abstraction paradigm that has been favored for over a decade."
->	"DeepStack is the first computer program to defeat professional poker players at heads-up nolimit Texas Hold’em, an imperfect information game with 10160 decision points. Notably it achieves this goal with almost no domain knowledge or training from expert human games. The implications go beyond just being a significant milestone for artificial intelligence. DeepStack is a paradigmatic shift in approximating solutions to large, sequential imperfect information games. Abstraction and offline computation of complete strategies has been the dominant approach for almost 20 years. DeepStack allows computation to be focused on specific situations that arise when making decisions and the use of automatically trained value functions. These are two of the core principles that have powered successes in perfect information games, albeit conceptually simpler to implement in those settings. As a result, for the first time the gap between the largest perfect and imperfect information games to have been mastered is mostly closed. As “real life consists of bluffing... deception... asking yourself what is the other man going to think”, DeepStack also has implications for seeing powerful AI applied more in settings that do not fit the perfect information assumption. The old paradigm for handling imperfect information has shown promise in applications like defending strategic resources and robust decision making as needed for medical treatment recommendations. The new paradigm will hopefully open up many more possibilities."
-
-----
-
->	"In the past, perfect information games (chess, checkers, go) have been easier algorithmically than imperfect information games like poker. Powerful techniques like Alpha-Beta search, heuristic functions, depth-limited lookahead & Monte Carlo Tree Search work with perfect information games. They allow an AI to ignore the past and focus its computation on the tiny, immediate subgame most relevant for choosing actions. Until now, these techniques didn't really work in imperfect info games like poker, due to uncertainty about what each player knows. There is no single state to search from, but a set of states for each player. Past actions reveal info about what cards they hold. In imperfect info games like poker, local search hasn’t performed well. Had to solve the whole game at once, not as small fragments. But poker games are huge, and except for smallest versions, can't be solved exactly. Dominant technique was to solve a simplified game. This was called Abstraction-Solving-Translation. Simplify a game, solve it, use the simplified strategy in the real game. That simplification introduces mistakes. In some games, this still worked well enough to beat pros. AST didn't work well in No-Limit poker. Humans exploited simplified betting, and in huge pots, fine details of cards matter. This is the DeepStack breakthrough: it reintroduces powerful local search techniques to the imperfect info setting. No abstraction! It only considers a small local subgame to pick actions, given the "public state" and summary info of earlier actions in the hand. Early in the game, Deep Learning supplies a heuristic function to avoid searching to the end of the game. On the turn & river, it solves from the current decision until the end of the game and re-solves after every opponent action. On the preflop & flop, it solves to the end of the round then consults a deep neural net for value estimate of playing the turn/river. This NN is trained from randomly-generated hands (no human data needed) and must return value of every hand for each player. Deep Stack doesn't abstract cards or have to translate opponents bets. It always gets these details exactly right. This means there are no easy exploits, & we developed a new exploitability measurement program, Local Best Response, to show this. Also lets DeepStack play with any stacks/blinds. Can play freezeouts, cash games, etc. Earlier programs were specific to 1 stack size!"
->	"Compared to Libratus, on the turn/river both programs are pretty similar: both use the same "continual resolving" trick (and counterfactual regret minimization). Biggest difference is preflop/flop. DeepStack uses continual resolving there too, so it can't get tricked by bet size attacks. Libratus used the old precomputed-strategy method for preflop/flop. It had holes they had to patch overnight, as pros found them. DeepStack can play any stack sizes, so can do freezeouts, cash games, etc. Libratus can only do 200bb stacks. Last big difference is resources. Libratus runs on a huge supercomputer, Cepheus only needs a laptop with a good GPU."
->	"DeepStack does not compute and store a complete strategy prior to play. DeepStack computes a strategy based on the current state of the game for only the remainder of the hand, not maintaining one for the full game, which leads to lower overall exploitability."
->	"Despite using ideas from abstraction, DeepStack is fundamentally different from abstraction-based approaches, which compute and store a strategy prior to play. While DeepStack restricts the number of actions in its lookahead trees, it has no need for explicit abstraction as each re-solve starts from the actual public state, meaning DeepStack always perfectly understands the current situation."
->	"DeepStack is the first theoretically sound application of heuristic search methods—which have been famously successful in games like checkers, chess, and Go - to imperfect information games."
->	"At a conceptual level, DeepStack’s continual re-solving, “intuitive” local search and sparse lookahead trees describe heuristic search, which is responsible for many AI successes in perfect information games. Until DeepStack, no theoretically sound application of heuristic search was known in imperfect information games."
->	"During re-solving, DeepStack doesn’t need to reason about the entire remainder of the game because it substitutes computation beyond a certain depth with a fast approximate estimate, DeepStack’s "intuition" - a gut feeling of the value of holding any possible private cards in any possible poker situation. Finally, DeepStack’s intuition, much like human intuition, needs to be trained. We train it with deep learning using examples generated from random poker situations."
->	"Part of DeepStack's development is also a technique designed to find flaws in poker strategies. Local Best Response (LBR) is one of the cool new algorithms in Science paper. LBR looks directly at the strategy, like what a human could get from playing millions of hands to know its range. Older programs get beat by LBR for 4x more than folding every hand! DeepStack has no holes exposed by the LBR algorithm."
-
-  - <http://science.sciencemag.org/content/early/2017/03/01/science.aam6960>
-  - <https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ> (demo matches)
-  - <http://deepstack.ai>
-  - <http://twitter.com/DeepStackAI>
-  - <https://youtube.com/watch?v=qndXrHcV1sM> (Bowling)
-  - <https://github.com/lifrordi/DeepStack-Leduc>
-
-
-#### Mnih, Kavukcuoglu, Silver, Graves, Antonoglou, Wierstra, Riedmiller - ["Playing Atari with Deep Reinforcement Learning"](https://arxiv.org/abs/1312.5602)
->	"We present the first deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning. The model is a convolutional neural network, trained with a variant of Q-learning, whose input is raw pixels and whose output is a value function estimating future rewards. We apply our method to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. We find that it outperforms all previous approaches on six of the games and surpasses a human expert on three of them."
-
-  - <http://youtube.com/watch?v=EfGD2qveGdQ> (demo)
-  - <http://youtu.be/XAbLn66iHcQ?t=1h41m21s> + <http://youtube.com/watch?v=0xo1Ldx3L5Q> (3D racing demo)
-  - <http://youtube.com/watch?v=nMR5mjCFZCw> (3D labyrinth demo)
-  - <http://youtube.com/watch?v=re6hkcTWVUY> (Doom gameplay demo)
-  - <https://youtube.com/watch?v=6jlaBD9LCnM> + <https://youtube.com/watch?v=6JT6_dRcKAw> (blockworld demo)
-  - <http://youtube.com/user/eldubro/videos> (demos)
-  - <http://youtube.com/watch?v=iqXKQf2BOSE> (demo)
-  - <http://youtube.com/watch?v=lge-dl2JUAM> + <http://youtube.com/watch?v=xN1d3qHMIEQ> (interviews and demos)
-  - <http://sodeepdude.blogspot.ru/2015/03/deepminds-atari-paper-replicated.html> (demos)
-  - <http://videolectures.net/nipsworkshops2013_mnih_atari/> (Volodymyr Mnih)
-  - <http://youtube.com/watch?v=xzM7eI7caRk> (Volodymyr Mnih)
-  - <http://youtube.com/watch?v=dV80NAlEins> (Nando de Freitas)
-  - <http://youtube.com/watch?v=HUmEbUkeQHg> (Nando de Freitas)
-  - <https://yadi.sk/i/AHDU2p_j3FT3nr> + <https://yadi.sk/i/EeUeheri3FT3ra> (Ratnikov and Vasilev, in russian)
-  - <http://youtube.com/watch?v=mrgJ53TIcQc> (Pavlov, in russian)
-
-
-#### Mnih et al. - ["Human-level Control Through Deep Reinforcement Learning"](https://goo.gl/jHRkZr)
->	"The theory of reinforcement learning provides a normative account, deeply rooted in psychological and neuroscientific perspectives on animal behaviour, of how agents may optimize their control of an environment. To use reinforcement learning successfully in situations approaching real-world complexity, however, agents are confronted with a difficult task: they must derive efficient representations of the environment from high-dimensional sensory inputs, and use these to generalize past experience to new situations. Remarkably, humans and other animals seem to solve this problem through a harmonious combination of reinforcement learning and hierarchical sensory processing systems, the former evidenced by a wealth of neural data revealing notable parallels between the phasic signals emitted by dopaminergic neurons and temporal difference reinforcement learning algorithms. While reinforcement learning agents have achieved some successes in a variety of domains, their applicability has previously been limited to domains in which useful features can be handcrafted, or to domains with fully observed, low-dimensional state spaces. Here we use recent advances in training deep neural networks to develop a novel artificial agent, termed a deep Q-network, that can learn successful policies directly from high-dimensional sensory inputs using end-to-end reinforcement learning. We tested this agent on the challenging domain of classic Atari 2600 games. We demonstrate that the deep Q-network agent, receiving only the pixels and the game score as inputs, was able to surpass the performance of all previous algorithms and achieve a level comparable to that of a professional human games tester across a set of 49 games, using the same algorithm, network architecture and hyperparameters. This work bridges the divide between high-dimensional sensory inputs and actions, resulting in the first artificial agent that is capable of learning to excel at a diverse array of challenging tasks."
-
-  - <https://youtu.be/rbsqaJwpu6A?t=10m29s> + <http://youtube.com/watch?v=iqXKQf2BOSE> (demo)
-  - <http://nature.com/nature/journal/v518/n7540/full/nature14236.html>
-
-
-#### Wu et al. - "Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation" [<https://arxiv.org/abs/1609.08144]>
+#### Wu et al. - ["Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation"](https://arxiv.org/abs/1609.08144)
 >	"Neural Machine Translation is an end-to-end learning approach for automated translation, with the potential to overcome many of the weaknesses of conventional phrase-based translation systems. Unfortunately, NMT systems are known to be computationally expensive both in training and in translation inference. Also, most NMT systems have difficulty with rare words. These issues have hindered NMT's use in practical deployments and services, where both accuracy and speed are essential. In this work, we present GNMT, Google's Neural Machine Translation system, which attempts to address many of these issues. Our model consists of a deep LSTM network with 8 encoder and 8 decoder layers using attention and residual connections. To improve parallelism and therefore decrease training time, our attention mechanism connects the bottom layer of the decoder to the top layer of the encoder. To accelerate the final translation speed, we employ low-precision arithmetic during inference computations. To improve handling of rare words, we divide words into a limited set of common sub-word units ("wordpieces") for both input and output. This method provides a good balance between the flexibility of "character"-delimited models and the efficiency of "word"-delimited models, naturally handles translation of rare words, and ultimately improves the overall accuracy of the system. Our beam search technique employs a length-normalization procedure and uses a coverage penalty, which encourages generation of an output sentence that is most likely to cover all the words in the source sentence. On the WMT'14 English-to-French and English-to-German benchmarks, GNMT achieves competitive results to state-of-the-art. Using a human side-by-side evaluation on a set of isolated simple sentences, it reduces translation errors by an average of 60% compared to Google's phrase-based production system."
 
   - <http://translate.google.com> (demo)
@@ -2911,66 +2883,6 @@ x."
   - <http://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-with-gpus/>
   - <http://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-gpus-part-2/>
   - <http://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-gpus-part-3/>
-
-
-#### Bojarski, Del Testa, Dworakowski, Firner, Flepp, Goyal, Jackel, Monfort, Muller, Zhang, Zhao, Zieba - ["End to End Learning for Self-Driving Cars"](http://arxiv.org/abs/1604.07316)
->	"We trained a convolutional neural network to map raw pixels from a single front-facing camera directly to steering commands. This end-to-end approach proved surprisingly powerful. With minimum training data from humans the system learns to drive in traffic on local roads with or without lane markings and on highways. It also operates in areas with unclear visual guidance such as in parking lots and on unpaved roads. The system automatically learns internal representations of the necessary processing steps such as detecting useful road features with only the human steering angle as the training signal. We never explicitly trained it to detect, for example, the outline of roads. Compared to explicit decomposition of the problem, such as lane marking detection, path planning, and control, our end-to-end system optimizes all processing steps simultaneously. We argue that this will eventually lead to better performance and smaller systems. Better performance will result because the internal components self-optimize to maximize overall system performance, instead of optimizing human-selected intermediate criteria, e.g., lane detection. Such criteria understandably are selected for ease of human interpretation which doesn’t automatically guarantee maximum system performance. Smaller networks are possible because the system learns to solve the problem with the minimal number of processing steps."
-
-  - <https://youtube.com/watch?v=-96BEoXJMs0> + <https://drive.google.com/file/d/0B9raQzOpizn1TkRIa241ZnBEcjQ/view> (demo)
-  - <https://devblogs.nvidia.com/parallelforall/deep-learning-self-driving-cars/>
-  - <https://github.com/SullyChen/Nvidia-Autopilot-TensorFlow>
-  - <https://github.com/DJTobias/Cherry-Autonomous-Racecar>
-
-
-#### Levine, Wagener, Abbeel - ["Learning Contact-Rich Manipulation Skills with Guided Policy Search"](http://arxiv.org/abs/1501.05611)
->	"Autonomous learning of object manipulation skills can enable robots to acquire rich behavioral repertoires that scale to the variety of objects found in the real world. However, current motion skill learning methods typically restrict the behavior to a compact, low-dimensional representation, limiting its expressiveness and generality. In this paper, we extend a recently developed policy search method and use it to learn a range of dynamic manipulation behaviors with highly general policy representations, without using known models or example demonstrations. Our approach learns a set of trajectories for the desired motion skill by using iteratively refitted time-varying linear models, and then unifies these trajectories into a single control policy that can generalize to new situations. To enable this method to run on a real robot, we introduce several improvements that reduce the sample count and automate parameter selection. We show that our method can acquire fast, fluent behaviors after only minutes of interaction time, and can learn robust controllers for complex tasks, including stacking large lego blocks, putting together a plastic toy, placing wooden rings onto tight-fitting pegs, and screwing bottle caps onto bottles."
-
-  - <http://rll.berkeley.edu/icra2015gps/>
-  - <http://bloomberg.com/features/2015-preschool-for-robots/>
-  - <http://youtube.com/watch?t=35&v=JeVppkoloXs> + <http://youtube.com/watch?v=oQasCj1X0e8> (demo)
-  - <http://youtube.com/watch?v=EtMyH_--vnU> (Levine)
-  - <https://newscenter.berkeley.edu/2015/05/21/deep-learning-robot-masters-skills-via-trial-and-error/>
-  - <http://singularityhub.com/2015/05/28/watch-this-robot-learning-to-play-with-legos-like-a-kid/>
-
-
-#### Zaremba, Kurach, Fergus - ["Learning to Discover Efficient Mathematical Identities"](http://arxiv.org/abs/1406.1584)
->	"In this paper we explore how machine learning techniques can be applied to the discovery of efficient mathematical identities. We introduce an attribute grammar framework for representing symbolic expressions. Given a grammar of math operators, we build trees that combine them in different ways, looking for compositions that are analytically equivalent to a target expression but of lower computational complexity. However, as the space of trees grows exponentially with the complexity of the target expression, brute force search is impractical for all but the simplest of expressions. Consequently, we introduce two novel learning approaches that are able to learn from simpler expressions to guide the tree search. The first of these is a simple n-gram model, the other being a recursive neural network. We show how these approaches enable us to derive complex identities, beyond reach of brute-force search, or human derivation."
-
-  - <http://youtube.com/watch?v=Hx20MUmWAfg> (Fergus)
-  - <http://cs.nyu.edu/~zaremba/docs/Learning%20to%20manipulate%20symbols.pdf> (Zaremba)
-
-
-#### Balog, Gaunt, Brockschmidt, Nowozin, Tarlow - ["DeepCoder: Learning to Write Programs"](https://openreview.net/pdf?id=ByldLrqlx)
->	"We develop a first line of attack for solving programming competition-style problems from input-output examples using deep learning. The approach is to train a neural network to predict properties of the program that generated the outputs from the inputs. We use the neural network’s predictions to augment search techniques from the programming languages community, including enumerative search and an SMT-based solver. Empirically, we show that our approach leads to an order of magnitude speedup over the strong non-augmented baselines and a Recurrent Neural Network approach, and that we are able to solve problems of difficulty comparable to the simplest problems on programming competition websites."
-
->	"We have presented a framework for improving IPS systems by using neural networks to translate cues in input-output examples to guidance over where to search in program space. Our empirical results show that for many programs, this technique improves the runtime of a wide range of IPS baselines by 1-3 orders. We have found several problems in real online programming challenges that can be solved with a program in our language, which validates the relevance of the class of problems that we have studied in this work."
-
->	"In this work, we propose two main ideas: (1) learn to induce programs; that is, use a corpus of program induction problems to learn strategies that generalize across problems, and (2) integrate neural network architectures with search-based techniques rather than replace them. In more detail, we can contrast our approach to existing work on differentiable interpreters. In differentiable interpreters, the idea is to define a differentiable mapping from source code and inputs to outputs. After observing inputs and outputs, gradient descent can be used to search for a program that matches the input-output examples. This approach leverages gradient-based optimization, which has proven powerful for training neural networks, but each synthesis problem is still solved independently - solving many synthesis problems does not help solve the next problem."
-
->	"LIPS automatically generates training data, which yields datasets with millions of programs and enables high-capacity deep learning models to be brought to bear on the problem."
-
->	"We foresee many extensions of DeepCoder. We are most interested in better data generation procedures by using generative models of source code, and to incorporate natural language problem descriptions to lessen the information burden required from input-output examples."
-
-
-#### Ling, Grefenstette, Hermann, Kocisky, Senior, Wang, Blunsom - ["Latent Predictor Networks for Code Generation"](http://arxiv.org/abs/1603.06744)
->	"Many language generation tasks require the production of text conditioned on both structured and unstructured inputs. We present a novel neural network architecture which generates an output sequence conditioned on an arbitrary number of input functions. Crucially, our approach allows both the choice of conditioning context and the granularity of generation, for example characters or tokens, to be marginalised, thus permitting scalable and effective training. Using this framework, we address the problem of generating programming code from a mixed natural language and structured specification. We create two new data sets for this paradigm derived from the collectible trading card games Magic the Gathering and Hearthstone. On these, and a third preexisting corpus, we demonstrate that marginalising multiple predictors allows our model to outperform strong benchmarks."
-
->	"The generation of both natural and formal languages often requires models conditioned on diverse predictors. Most models take the restrictive approach of employing a single predictor, such as a word softmax, to predict all tokens of the output sequence. To illustrate its limitation, suppose we wish to generate the answer to the question “Who wrote The Foundation?” as “The Foundation was written by Issac Asimov”. The generation of the words “Issac Asimov” and “The Foundation” from a word softmax trained on annotated data is unlikely to succeed as these words are sparse. A robust model might, for example, employ one predictor to copy “The Foundation” from the input, and a another one to find the answer “Issac Asimov” by searching through a database. However, training multiple predictors is in itself a challenging task, as no annotation exists regarding the predictor used to generate each output token. Furthermore, predictors generate segments of different granularity, as database queries can generate multiple tokens while a word softmax generates a single token. In this work we introduce Latent Predictor Networks, a novel neural architecture that fulfills these desiderata: at the core of the architecture is the exact computation of the marginal likelihood over latent predictors and generated segments allowing for scalable training."
-
->	"We introduce a new corpus for the automatic generation of code for cards in Trading Card Games, on which we validate our model. TCGs, such as Magic the Gathering and Hearthstone, are games played between two players that build decks from an ever expanding pool of cards. Each card is identified by its attributes (e.g., name and cost) and has an effect that is described in a text box. Digital implementations of these games implement the game logic, which includes the card effects. This is attractive from a data extraction perspective as not only are the data annotations naturally generated, but we can also view the card as a specification communicated from a designer to a software engineer."
-
->	"This dataset presents additional challenges to prior work in code generation, including the handling of structured input - i.e. cards are composed by multiple sequences (e.g., name and description) - and attributes (e.g. attack and cost), and the longevity of the generated sequences. Thus, we propose an extension to attention-based neural models to attend over structured inputs."
-
-  - <https://www.evernote.com/shard/s189/sh/1fe4a407-3aa0-4ad2-8340-e58fceeb1b71/baa114c50096b41f341a54d478af8160>
-
-
-#### Rocktaschel, Grefenstette, Hermann, Kocisky, Blunsom - ["Reasoning about Entailment with Neural Attention"](http://arxiv.org/abs/1509.06664)
->	"Automatically recognizing entailment relations between pairs of natural language sentences has so far been the dominion of classifiers employing hand engineered features derived from natural language processing pipelines. End-to-end differentiable neural architectures have failed to approach state-of-the-art performance until very recently. In this paper, we propose a neural model that reads two sentences to determine entailment using long short-term memory units. We extend this model with a word-by-word neural attention mechanism that encourages reasoning over entailments of pairs of words and phrases. Furthermore, we present a qualitative analysis of attention weights produced by this model, demonstrating such reasoning capabilities. On a large entailment dataset this model outperforms the previous best neural model and a classifier with engineered features by a substantial margin. It is the first generic end-to-end differentiable system that achieves state-of-the-art accuracy on a textual entailment dataset."
-
->	"In this paper, we show how the state-of-the-art in recognizing textual entailment on a large, human-curated and annotated corpus, can be improved with general end-to-end differentiable models. Our results demonstrate that LSTM recurrent neural networks that read pairs of sequences to produce a final representation from which a simple classifier predicts entailment, outperform both a neural baseline as well as a classifier with hand-engineered features. Furthermore, extending these models with attention over the premise provides further improvements to the predictive abilities of the system, resulting in a new state-of-the-art accuracy for recognizing entailment on the Stanford Natural Language Inference corpus. The models presented here are general sequence models, requiring no appeal to natural language specific processing beyond tokenization, and are therefore a suitable target for transfer learning through pre-training the recurrent systems on other corpora, and conversely, applying the models trained on this corpus to other entailment tasks. Future work will focus on such transfer learning tasks, as well as scaling the methods presented here to larger units of text (e.g. paragraphs and entire documents) using hierarchical attention mechanisms. Furthermore, we aim to investigate the application of these generic models to non-natural language sequential entailment problems."
-
-  - <http://egrefen.com/docs/HowMuchLinguistics2015.pdf>
-  - <https://github.com/junfenglx/reasoning_attention>
 
 
 #### Iyyer, Boyd-Graber, Claudino, Socher, Daume - ["A Neural Network for Factoid Question Answering over Paragraphs"](http://cs.umd.edu/~miyyer/qblearn/)
@@ -2998,12 +2910,38 @@ x."
   - <https://github.com/pbhatia243/Neural_Conversation_Models>
 
 
+#### Zaremba, Kurach, Fergus - ["Learning to Discover Efficient Mathematical Identities"](http://arxiv.org/abs/1406.1584)
+>	"In this paper we explore how machine learning techniques can be applied to the discovery of efficient mathematical identities. We introduce an attribute grammar framework for representing symbolic expressions. Given a grammar of math operators, we build trees that combine them in different ways, looking for compositions that are analytically equivalent to a target expression but of lower computational complexity. However, as the space of trees grows exponentially with the complexity of the target expression, brute force search is impractical for all but the simplest of expressions. Consequently, we introduce two novel learning approaches that are able to learn from simpler expressions to guide the tree search. The first of these is a simple n-gram model, the other being a recursive neural network. We show how these approaches enable us to derive complex identities, beyond reach of brute-force search, or human derivation."
+
+  - <http://youtube.com/watch?v=Hx20MUmWAfg> (Fergus)
+  - <http://cs.nyu.edu/~zaremba/docs/Learning%20to%20manipulate%20symbols.pdf> (Zaremba)
+
+
+#### Duvenaud, Maclaurin, Aguilera-Iparraguirre, Gomez-Bombarelli, Hirzel, Aspuru-Guzik, Adams - ["Convolutional Networks on Graphs for Learning Molecular Fingerprints"](http://arxiv.org/abs/1509.09292)
+>	"We introduce a convolutional neural network that operates directly on graphs. These networks allow end-to-end learning of prediction pipelines whose inputs are graphs of arbitrary size and shape. The architecture we present generalizes standard molecular feature extraction methods based on circular fingerprints. We show that these data-driven features are more interpretable, and have better predictive performance on a variety of tasks."
+
+>	"We generalized existing hand-crafted molecular features to allow their optimization for diverse tasks. By making each operation in the feature pipeline differentiable, we can use standard neural-network training methods to scalably optimize the parameters of these neural molecular fingerprints end-toend. We demonstrated the interpretability and predictive performance of these new fingerprints. Data-driven features have already replaced hand-crafted features in speech recognition, machine vision, and natural-language processing. Carrying out the same task for virtual screening, drug design, and materials design is a natural next step."
+
+
+#### Gomez-Bombarelli, Duvenaud, Hernandez-Lobato, Aguilera-Iparraguirre, Hirzel, Adams, Aspuru-Guzik - ["Automatic Chemical Design using a Data-driven Continuous Representation of Molecules"](http://arxiv.org/abs/1610.02415)
+>	"We report a method to convert discrete representations of molecules to and from a multidimensional continuous representation. This generative model allows efficient search and optimization through open-ended spaces of chemical compounds. We train deep neural networks on hundreds of thousands of existing chemical structures to construct two coupled functions: an encoder and a decoder. The encoder converts the discrete representation of a molecule into a real-valued continuous vector, and the decoder converts these continuous vectors back to the discrete representation from this latent space. Continuous representations allow us to automatically generate novel chemical structures by performing simple operations in the latent space, such as decoding random vectors, perturbing known chemical structures, or interpolating between molecules. Continuous representations also allow the use of powerful gradient-based optimization to efficiently guide the search for optimized functional compounds. We demonstrate our method in the design of drug-like molecules as well as organic light-emitting diodes."
+
+
+#### Bojarski, Del Testa, Dworakowski, Firner, Flepp, Goyal, Jackel, Monfort, Muller, Zhang, Zhao, Zieba - ["End to End Learning for Self-Driving Cars"](http://arxiv.org/abs/1604.07316)
+>	"We trained a convolutional neural network to map raw pixels from a single front-facing camera directly to steering commands. This end-to-end approach proved surprisingly powerful. With minimum training data from humans the system learns to drive in traffic on local roads with or without lane markings and on highways. It also operates in areas with unclear visual guidance such as in parking lots and on unpaved roads. The system automatically learns internal representations of the necessary processing steps such as detecting useful road features with only the human steering angle as the training signal. We never explicitly trained it to detect, for example, the outline of roads. Compared to explicit decomposition of the problem, such as lane marking detection, path planning, and control, our end-to-end system optimizes all processing steps simultaneously. We argue that this will eventually lead to better performance and smaller systems. Better performance will result because the internal components self-optimize to maximize overall system performance, instead of optimizing human-selected intermediate criteria, e.g., lane detection. Such criteria understandably are selected for ease of human interpretation which doesn’t automatically guarantee maximum system performance. Smaller networks are possible because the system learns to solve the problem with the minimal number of processing steps."
+
+  - <https://youtube.com/watch?v=-96BEoXJMs0> + <https://drive.google.com/file/d/0B9raQzOpizn1TkRIa241ZnBEcjQ/view> (demo)
+  - <https://devblogs.nvidia.com/parallelforall/deep-learning-self-driving-cars/>
+  - <https://github.com/SullyChen/Nvidia-Autopilot-TensorFlow>
+  - <https://github.com/DJTobias/Cherry-Autonomous-Racecar>
+
+
 #### Hannun, Case, Casper, Catanzaro, Diamos, Elsen, Prenger, Satheesh, Sengupta, Coates, Ng - ["DeepSpeech: Scaling up end-to-end speech recognition"](http://arxiv.org/abs/1412.5567)
 >	"We present a state-of-the-art speech recognition system developed using end-to-end deep learning. Our architecture is significantly simpler than traditional speech systems, which rely on laboriously engineered processing pipelines; these traditional systems also tend to perform poorly when used in noisy environments. In contrast, our system does not need hand-designed components to model background noise, reverberation, or speaker variation, but instead directly learns a function that is robust to such effects. We do not need a phoneme dictionary, nor even the concept of a "phoneme." Key to our approach is a well-optimized RNN training system that uses multiple GPUs, as well as a set of novel data synthesis techniques that allow us to efficiently obtain a large amount of varied data for training. Our system, called DeepSpeech, outperforms previously published results on the widely studied Switchboard Hub5'00, achieving 16.5% error on the full test set. DeepSpeech also handles challenging noisy environments better than widely used, state-of-the-art commercial speech systems."
 
-  - <http://youtube.com/watch?v=kAnJdvf_KeE>  (demo)
-  - <http://on-demand.gputechconf.com/gtc/2015/video/S5631.html>  (Catanzaro)
-  - <http://youtube.com/watch?v=P9GLDezYVX4>  (Hannun)
+  - <http://youtube.com/watch?v=kAnJdvf_KeE> (demo)
+  - <http://on-demand.gputechconf.com/gtc/2015/video/S5631.html> (Catanzaro)
+  - <http://youtube.com/watch?v=P9GLDezYVX4> (Hannun)
 
 
 #### Ba, Mnih, Kavukcuoglu - ["Multiple Object Recognition With Visual Attention"](http://arxiv.org/abs/1412.7755)
@@ -3043,14 +2981,6 @@ x."
   - <https://github.com/kelvinxu/arctic-captions>
 
 
-#### Dosovitskiy, Springenberg, Brox - ["Learning to Generate Chairs with Convolutional Neural Networks"](http://arxiv.org/abs/1411.5928)
->	"We train a generative convolutional neural network which is able to generate images of objects given object type, viewpoint, and color. We train the network in a supervised manner on a dataset of rendered 3D chair models. Our experiments show that the network does not merely learn all images by heart, but rather finds a meaningful representation of a 3D chair model allowing it to assess the similarity of different chairs, interpolate between given viewpoints to generate the missing ones, or invent new chair styles by interpolating between chairs from the training set. We show that the network can be used to find correspondences between different chairs from the dataset, outperforming existing approaches on this task."
-
-  - <http://youtube.com/watch?v=QCSW4isBDL0> (demo)
-  - <http://techtalks.tv/talks/learning-to-generate-chairs-with-convolutional-neural-networks/61588/> (Dosovitskiy)
-  - <http://lmb.informatik.uni-freiburg.de/resources/software.php>
-
-
 #### Denton, Chintala, Szlam, Fergus - ["Deep Generative Image Models using a Laplacian Pyramid of Adversarial Networks"](http://arxiv.org/abs/1506.05751)
 >	"In this paper we introduce a generative parametric model capable of producing high quality samples of natural images. Our approach uses a cascade of convolutional networks within a Laplacian pyramid framework to generate images in a coarse-to-fine fashion. At each level of the pyramid, a separate generative convnet model is trained using the Generative Adversarial Nets approach. Samples drawn from our model are of significantly higher quality than alternate approaches. In a quantitative assessment by human evaluators, our CIFAR10 samples were mistaken for real images around 40% of the time, compared to 10% for samples drawn from a GAN baseline model. We also show samples from models trained on the higher resolution images of the LSUN scene dataset."
 
@@ -3079,16 +3009,6 @@ x."
   - <http://techtalks.tv/talks/generative-adversarial-text-to-image-synthesis/62602/>
   - <https://github.com/reedscot/icml2016>
   - <https://github.com/paarthneekhara/text-to-image>
-
-
-#### Duvenaud, Maclaurin, Aguilera-Iparraguirre, Gomez-Bombarelli, Hirzel, Aspuru-Guzik, Adams - ["Convolutional Networks on Graphs for Learning Molecular Fingerprints"](http://arxiv.org/abs/1509.09292)
->	"We introduce a convolutional neural network that operates directly on graphs. These networks allow end-to-end learning of prediction pipelines whose inputs are graphs of arbitrary size and shape. The architecture we present generalizes standard molecular feature extraction methods based on circular fingerprints. We show that these data-driven features are more interpretable, and have better predictive performance on a variety of tasks."
-
->	"We generalized existing hand-crafted molecular features to allow their optimization for diverse tasks. By making each operation in the feature pipeline differentiable, we can use standard neural-network training methods to scalably optimize the parameters of these neural molecular fingerprints end-toend. We demonstrated the interpretability and predictive performance of these new fingerprints. Data-driven features have already replaced hand-crafted features in speech recognition, machine vision, and natural-language processing. Carrying out the same task for virtual screening, drug design, and materials design is a natural next step."
-
-
-#### Gomez-Bombarelli, Duvenaud, Hernandez-Lobato, Aguilera-Iparraguirre, Hirzel, Adams, Aspuru-Guzik - ["Automatic Chemical Design using a Data-driven Continuous Representation of Molecules"](http://arxiv.org/abs/1610.02415)
->	"We report a method to convert discrete representations of molecules to and from a multidimensional continuous representation. This generative model allows efficient search and optimization through open-ended spaces of chemical compounds. We train deep neural networks on hundreds of thousands of existing chemical structures to construct two coupled functions: an encoder and a decoder. The encoder converts the discrete representation of a molecule into a real-valued continuous vector, and the decoder converts these continuous vectors back to the discrete representation from this latent space. Continuous representations allow us to automatically generate novel chemical structures by performing simple operations in the latent space, such as decoding random vectors, perturbing known chemical structures, or interpolating between molecules. Continuous representations also allow the use of powerful gradient-based optimization to efficiently guide the search for optimized functional compounds. We demonstrate our method in the design of drug-like molecules as well as organic light-emitting diodes."
 
 
 other applications - <https://dropbox.com/sh/dio0ypwiph44ehn/AAADQCyEutvVt9iugVU1F5S8a>

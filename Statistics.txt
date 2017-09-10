@@ -86,6 +86,7 @@ Roth, Hardt - "Rigorous Data Dredging - Theory and Tools for Adaptive Data Analy
 "The Probability and Statistics Cookbook" - https://github.com/mavam/stat-cookbook/releases/download/0.2.4/stat-cookbook.pdf
 "Probability and Statistics for Data Science" by Carlos Fernandez-Granda - http://cims.nyu.edu/~cfgranda/pages/stuff/probability_stats_for_DS.pdf
 "Computer Age Statistical Inference" by Bradley Efron and Trevor Hastie - https://web.stanford.edu/~hastie/CASI_files/PDF/casi.pdf
+"All of Statistics: A Concise Course in Statistical Inference" by Larry Wasserman - http://read.pudn.com/downloads158/ebook/702714/Larry%20Wasserman_ALL%20OF%20Statistics.pdf
 
 
 

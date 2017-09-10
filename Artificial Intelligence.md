@@ -35,9 +35,6 @@
 ---
 ### overview
 
-[recent breakthroughs](https://github.com/brylevkirill/posts/blob/master/breakthroughs.md) (in russian)
-
-
   - Juergen Schmidhuber  
 	["Compression Progress: The Algorithmic Principle Behind Curiosity and Creativity"](https://vimeo.com/7441291)  
 	["Formal Theory of Fun & Creativity"](http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/)  
@@ -479,21 +476,21 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
 ----
 
-  [interesting papers](#interesting-papers---artificial-curiosity-and-creativity)
-
   [exploration and intrinsic motivation](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#exploration-and-intrinsic-motivation)
+
+  [interesting papers](#interesting-papers---artificial-curiosity-and-creativity)
 
 
 
 ---
 ### Solomonoff Induction and AIXI
 
-  [introduction to Solomonoff Induction](http://lesswrong.com/lw/dhg/an_intuitive_explanation_of_solomonoff_induction/) by Luke Muehlhauser and Alex Altair  
+  [introduction](http://lesswrong.com/lw/dhg/an_intuitive_explanation_of_solomonoff_induction/) to Solomonoff Induction by Luke Muehlhauser and Alex Altair  
   [Algorithmic Probability](http://scholarpedia.org/article/Algorithmic_probability)  
   ["How Bayes theorem is consistent with Solomonoff induction"](http://lesswrong.com/r/discussion/lw/di3/how_bayes_theorem_is_consistent_with_solomonoff/)  
 
-  [introduction to AIXI](http://youtube.com/watch?v=F2bQ5TSB-cE) by Marcus Hutter  
-  [introduction to AIXI](http://jan.leike.name/AIXI.html) by Jan Leike  
+  [introduction](http://youtube.com/watch?v=F2bQ5TSB-cE) to AIXI by Marcus Hutter  
+  [introduction](http://jan.leike.name/AIXI.html) to AIXI by Jan Leike  
   [General Reinforcement Learning Agent Zoo](http://aslanides.io/aixijs/) by John Aslanides
 	([demo](http://aslanides.io/aixijs/demo.html), [code](https://github.com/aslanides/aixijs), [paper](https://arxiv.org/abs/1705.07615))
 
@@ -635,6 +632,7 @@ interesting papers (see below):
 >	"Recent progress in artificial intelligence has renewed interest in building systems that learn and think like people. Many advances have come from using deep neural networks trained end-to-end in tasks such as object recognition, video games, and board games, achieving performance that equals or even beats humans in some respects. Despite their biological inspiration and performance achievements, these systems differ from human intelligence in crucial ways. We review progress in cognitive science suggesting that truly human-like learning and thinking machines will have to reach beyond current engineering trends in both what they learn, and how they learn it. Specifically, we argue that these machines should (a) build causal models of the world that support explanation and understanding, rather than merely solving pattern recognition problems; (b) ground learning in intuitive theories of physics and psychology, to support and enrich the knowledge that is learned; and (c) harness compositionality and learning-to-learn to rapidly acquire and generalize knowledge to new tasks and situations. We suggest concrete challenges and promising routes towards these goals that can combine the strengths of recent neural network advances with more structured cognitive models."
 
   - <http://pemami4911.github.io/paper-summaries/2016/05/13/learning-to-think.html>
+  - <https://youtube.com/watch?v=O0MF-r9PsvE> (Gershman)
 
 
 #### Legg, Hutter - ["Universal Intelligence: A Definition of Machine Intelligence"](http://arxiv.org/abs/0712.3329)

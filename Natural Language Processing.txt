@@ -55,22 +55,22 @@
   course by Chris Manning and Dan Jurafsky - http://youtube.com/playlist?list=PL6397E4B26D00A269 + https://web.stanford.edu/~jurafsky/NLPCourseraSlides.html
   course by Richard Socher - https://youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6 + https://github.com/stanfordnlp/cs224n-winter17-notes
   course by Oxford and DeepMind - https://github.com/oxford-cs-deepnlp-2017/lectures
-  course by Michael Collins - https://coursera.org/course/nlangp + https://youtube.com/user/afigfigueira/playlists?shelf_id=5&view=50
+  course by CMU - http://phontron.com/class/nn4nlp2017/index.html
+  course by Michael Collins - https://youtube.com/user/afigfigueira/playlists?shelf_id=5&view=50
   course by Jordan Boyd-Graber - http://youtube.com/playlist?list=PLegWUnz91WfuPebLI97-WueAP90JO-15i
-  course by Chris Manning - http://see.stanford.edu/see/lecturelist.aspx?coll=63480b48-8819-4efd-8412-263f1a472f5a
   course by Pavel Braslavski (in russian) - https://stepik.org/course/1233
-
-  textbook by Michael Collins - https://dropbox.com/sh/e0unkrb6xoqyjmg/AAANfPi9K9fAjboL5XTCkb5La
 
   "Speech and Language Processing" by Dan Jurafsky and James Martin - http://web.stanford.edu/~jurafsky/slp3/
   "Foundations of Statistical Natural Language Processing" by Chris Manning and Hinrich Schutze - http://nlp.stanford.edu/fsnlp/
   "Neural Network Methods for Natural Language Processing" by Yoav Goldberg - http://morganclaypool.com/doi/abs/10.2200/S00762ED1V01Y201703HLT037
+  textbook by Michael Collins - https://dropbox.com/sh/e0unkrb6xoqyjmg/AAANfPi9K9fAjboL5XTCkb5La
 
   "Deep Learning for NLP Best Practices" by Sebastian Ruder - http://ruder.io/deep-learning-nlp-best-practices/
 
   Stanford University reading group - http://nlp.stanford.edu/read/
   University of Arizona reading group - https://github.com/clulab/nlp-reading-group/
 
+  "NLP News" newsletter by Sebastian Ruder - http://newsletter.ruder.io
   "NLP Highlights" podcast by AI2 - https://soundcloud.com/nlp-highlights
 
 
@@ -614,8 +614,8 @@ Tian, Dai, Bian, Gao, Zhang, Chen, Liu - "A Probabilistic Model for Learning Mul
 Bartunov, Kondrashkin, Osokin, Vetrov - "Breaking Sticks and Ambiguities with Adaptive Skip-gram" [http://arxiv.org/abs/1502.07257]
 	"Recently proposed Skip-gram model is a powerful method for learning high-dimensional word representations that capture rich semantic relationships between words. However, Skip-gram as well as most prior work on learning word representations does not take into account word ambiguity and maintain only single representation per word. Although a number of Skip-gram modifications were proposed to overcome this limitation and learn multi-prototype word representations, they either require a known number of word meanings or learn them using greedy heuristic approaches. In this paper we propose the Adaptive Skip-gram model which is a nonparametric Bayesian extension of Skip-gram capable to automatically learn the required number of representations for all words at desired semantic resolution. We derive efficient online variational learning algorithm for the model and empirically demonstrate its efficiency on wordsense induction task."
 	-- http://youtube.com/watch?v=vYbee1InliU (Vetrov)
-	-- http://postnauka.ru/video/49258 (Vetrov, in russian)
-	-- http://youtu.be/uoRwjxaDgt0?t=33m58s (Vetrov, in russian)
+	-- http://postnauka.ru/video/49258 (Vetrov) (in russian)
+	-- http://youtu.be/uoRwjxaDgt0?t=33m58s (Vetrov) (in russian)
 	-- https://github.com/sbos/AdaGram.jl
 
 Nalisnick, Ravi - "Infinite Dimensional Word Embeddings" [http://arxiv.org/abs/1511.05392]
@@ -733,7 +733,7 @@ techniques pertaining to each of the above three aspects lead to significant per
 	-- http://research.microsoft.com/en-us/projects/dssm/
 	-- http://research.microsoft.com/pubs/232372/CIKM14_tutorial_HeGaoDeng.pdf
 	-- http://research.microsoft.com/en-us/downloads/731572aa-98e4-4c50-b99d-ae3f0c9562b9/default.aspx (sent2vec code)
-	-- https://youtu.be/x7B6RudUQLI?t=1h5m5s (Gulin, in russian)
+	-- https://youtu.be/x7B6RudUQLI?t=1h5m5s (Gulin) (in russian)
 	-- https://habrahabr.ru/company/yandex/blog/314222/ (in russian)
 
 
