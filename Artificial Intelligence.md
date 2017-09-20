@@ -22,12 +22,12 @@
   [machine learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md)  
   [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
   [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)  
-  [bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)  
+  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt)  
   [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
 
-  [natural language processing](https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt)  
-  [information retrieval](https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt)  
-  [personal assistants](https://dropbox.com/s/0fyarlwcfb8mjdq/Personal%20Assistants.txt)  
+  [natural language processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt)  
+  [information retrieval](https://github.com/brylevkirill/notes/blob/master/Information%20Retrieval.txt)  
+  [personal assistants](https://github.com/brylevkirill/notes/blob/master/Personal%20Assistants.txt)  
   [semantic web](https://github.com/brylevkirill/tech/blob/master/RDF/RDF.txt)  
 
 
@@ -194,7 +194,7 @@
 ### inference/reasoning
 
   [Reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
-  [Bayesian Inference and Learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)  
+  [Bayesian Inference and Learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt)  
   [Machine Learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md)  
 
 
@@ -213,7 +213,7 @@
 	statistical - [probabilistic programs](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
   - *reasoning*:  
 	logical - satisfiability testing/proving  
-	statistical - [bayesian inference](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)  
+	statistical - [bayesian inference](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt)  
   - *learning*:  
 	logical - inductive logic programming  
 	statistical - [bayesian deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)
@@ -369,12 +369,13 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
 ----
 
-  [overview](http://scholarpedia.org/article/Metalearning) by Tom Schaul and Juergen Schmidhuber
-
+  [overview](http://scholarpedia.org/article/Metalearning) by Tom Schaul and Juergen Schmidhuber  
 
   ["Learning to Learn, to Program, to Explore and to Seek Knowledge"](https://youtube.com/watch?v=SAcHyzMdbXc) by Nando de Freitas  
-  ["The Future of Machines that Learn Algorithms"](https://youtube.com/watch?v=zSNkbhgMkzQ) panel with Juergen Schmidhuber, Ilya Sutskever, Alex Graves  
+  ["Learning how to Learn Learning Algorithms: Recursive Self-Improvement"](https://youtube.com/watch?v=nqiUFc52g78) by Juergen Schmidhuber  
+  ["The Future of Machines that Learn Algorithms"](https://youtube.com/watch?v=zSNkbhgMkzQ) panel with Juergen Schmidhuber, Ilya Sutskever, Alex Graves and others  
 
+  ["Learning to Optimize with Reinforcement Learning"](http://bair.berkeley.edu/blog/2017/09/12/learning-to-optimize-with-rl/) by Ke Li  
 
   [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#meta-learning)
 
@@ -382,14 +383,11 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
   [Learning to Learn](http://people.idsia.ch/~juergen/metalearner.html) by Juergen Schmidhuber
 
-  [Goedel Machine](https://en.wikipedia.org/wiki/G%C3%B6del_machine) by Juergen Schmidhuber
+  [overview](https://youtu.be/nqiUFc52g78?t=21m13s) of Goedel Machine by Juergen Schmidhuber  
 
-  [Goedel Machine vs AIXI](http://people.idsia.ch/~juergen/gmweb2/node21.html) by Juergen Schmidhuber
-
-  ["Towards An Actual Goedel Machine Implementation: A Lesson in Self-Reflective Systems"](http://people.idsia.ch/~juergen/selfreflection.pdf) by Steunebrink and Schmidhuber
-
-
-  ["Learning how to Learn Learning Algorithms: Recursive Self-Improvement"](https://youtube.com/watch?v=nqiUFc52g78) by Juergen Schmidhuber
+  [Goedel Machine](https://en.wikipedia.org/wiki/G%C3%B6del_machine) by Juergen Schmidhuber  
+  [Goedel Machine vs AIXI](http://people.idsia.ch/~juergen/gmweb2/node21.html) by Juergen Schmidhuber  
+  ["Towards An Actual Goedel Machine Implementation: A Lesson in Self-Reflective Systems"](http://people.idsia.ch/~juergen/selfreflection.pdf) by Steunebrink and Schmidhuber  
 
 
   "Self-improving universal methods have also been defined, including some that justify self-changes (including changes of the learning algorithm) through empirical evidence in a lifelong learning context and the Goedel Machine that self-improves via proving theorems about itself, and can improve any part of its software (including the learning algorithm itself) in a way that is provably time-optimal in a sense that takes constant overheads into account and goes beyond asymptotic optimality. At each step of the way, the Goedel Machine takes the action that it can prove, according to its axiom system and its perceptual data, will be the best way to achieve its goals. The current versions of the Goedel Machine are not computationally tractable in complex environments, however."
@@ -613,7 +611,7 @@ interesting papers:
   - [machine learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#interesting-papers)  
   - [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers)  
   - [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers)  
-  - [bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt#interesting-papers)  
+  - [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt#interesting-papers)  
   - [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers)  
 
 

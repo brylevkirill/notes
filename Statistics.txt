@@ -4,14 +4,12 @@ Data Science is transformation of data into knowledge with help of computer scie
 
 
 
-Michael I. Jordan - "On Computational Thinking, Inferential Thinking and Data Science" - https://youtube.com/watch?v=bQ02K0kWKzg
+Michael I. Jordan - "On Computational Thinking, Inferential Thinking and Data Science" - https://youtube.com/watch?v=bIfB1fj8xGQ + https://youtube.com/watch?v=cUQ5yYr8JuI
 	"The rapid growth in the size and scope of datasets in science and technology has created a need for novel foundational perspectives on data analysis that blend the inferential and computational sciences. That classical perspectives from these fields are not adequate to address emerging problems in "Big Data" is apparent from their sharply divergent nature at an elementary level-in computer science, the growth of the number of data points is a source of "complexity" that must be tamed via algorithms or hardware, whereas in statistics, the growth of the number of data points is a source of "simplicity" in that inferences are generally stronger and asymptotic results can be invoked. On a formal level, the gap is made evident by the lack of a role for computational concepts such as "runtime" in core statistical theory and the lack of a role for statistical concepts such as "risk" in core computational theory."
 
 Michael I. Jordan on role of statistics in machine learning - https://youtube.com/watch?v=uyZOcUDhIbY&t=17m27s
-
 Michael I. Jordan on role of theory in machine learning - https://youtube.com/watch?v=uyZOcUDhIbY&t=23m1s
-Michael I. Jordan on computational complexity theory in machine learning - https://youtube.com/watch?v=uyZOcUDhIbY&t=47m14s
-https://youtube.com/watch?v=uyZOcUDhIbY&t=58m
+
 
 Max Welling - "Are Machine Learning and Statistics Complementary" - https://www.ics.uci.edu/~welling/publications/papers/WhyMLneedsStatistics.pdf
 

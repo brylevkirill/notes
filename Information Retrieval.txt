@@ -1,29 +1,10 @@
-  * overview
   * study
   * challenges
-  * question answering
-  * industry
   * interesting papers
     - document models
     - ranking
-    - recommendations
     - entity-centric search
     - intent search
-
-
-
-
-[overview]
-
-  Amit Singhal - "Constructing the Conversational Computer" - https://vimeo.com/84711332
-
-  Oren Etzioni - "The Future of Semantic Web Search" - http://tce.technion.ac.il/files/2013/06/OrenEtzioni.pptx + http://youtube.com/watch?v=qsK-yQR1cGs
-  Oren Etzioni - "Open Information Extraction as Web Scale" - http://acml2011.wikispaces.com/file/view/Oren%20Etzioni.pdf
-
-  Peter Meyers - "Beyond 10 Blue Links - The Future of Ranking" - http://slideshare.net/crumplezone/beyond-10-blue-links-the-future-of-ranking
-
-  Peter Mika - "Semantic Search On The Rise" - http://labs.yahoo.com/_c/uploads/SemTech2014-v2.pptx + http://youtube.com/watch?v=Dw2OhqvB0cE
-                "Making the Web Searchable" - http://slideshare.net/pmika1/sem-search-icwe
 
 
 
@@ -54,12 +35,13 @@
 	https://youtube.com/watch?v=GctrEpJinhI
 	https://youtube.com/watch?v=GZmXKBzIfkA
 
+  "Neural Text Embeddings for Information Retrieval" tutorial at WSDM 2017 -
+	https://slideshare.net/BhaskarMitra3/neural-text-embeddings-for-information-retrieval-wsdm-2017
+
+
   seminars at Yandex
 	http://youtube.com/playlist?list=PLJOzdkh8T5kqsYZSzcpKoS8dwf4uizFDk
 	http://youtube.com/playlist?list=PLJOzdkh8T5krfgXb4peSed78ODO7tUFHf
-
-  "Neural Text Embeddings for Information Retrieval" tutorial at WSDM 2017 -
-	https://slideshare.net/BhaskarMitra3/neural-text-embeddings-for-information-retrieval-wsdm-2017
 
 
   "An Introduction to Information Retrieval" book by Manning, Raghavan, Schutze - http://nlp.stanford.edu/IR-book/pdf/irbookprint.pdf
@@ -70,39 +52,17 @@
 
 [challenges]
 
-  - Full text document retrieval, passage retrieval, question answering
-  - Web search, searching social media, distributed information retrieval, entity ranking
-  - Learning to rank combined with neural network based representation learning
-  - User and task modelling, personalized search, diversity
-  - Query formulation assistance, query recommendation, conversational search
-  - Multimedia retrieval
-  - Learning dense representations for long documents
-  - Dealing with rare queries and rare words
-  - Modelling text at different granularities (character, word, passage, document)
-  - Compositionality of vector representations
-  - Jointly modelling queries, documents, entities and other structured/knowledge data
-
-
-
-
-[question answering]
-
-  "Some people work on picking the best answer passage, others focus on "simply" translating the question to a structured database query, some try to replicate the classic pipeline model and QANTA is "storing" the content using recursive neural networks and distributed representations."
-
- "The state-of-the-art techniques in open question answering can be classified into two main classes, namely, information retrieval based and semantic parsing based.
-  Information retrieval methods first retrieve a broad set of candidate answers by querying the search API of knowledge base with a transformation of the question into a valid query and then use fine-grained detection heuristics to identify the exact answer.
-  Semantic parsing methods focus on the correct interpretation of the meaning of a question by a semantic parsing system. A correct interpretation converts a question into the exact database query that returns the correct answer.'
-
-  (Fernando Pereira) "When Google gets a query like, “Where do the Giants play?” it has to know a lot of things: that the query involves sports, that a team “plays” at a home stadium, and so on. And it has to make choices — is this the baseball Giants or the football team? Does the user want to know where the team usually plays its games, i.e. the home stadium, or where it’s playing next week? Google uses signals and previous user behavior to nail the answer. “All that figuring out, all that inference, is stuff we do now that we were not doing a few years ago”.
-
-
-  approaches for question answering over knowledge graphs:
-  - entity embedding
-  - shallow parsing and retrieval
-  - query graph matching
-  - query semantic parsing
-
-  see sections "[question answering over knowledge graphs]" and "[question answering over texts]" of https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md
+  - full text document retrieval, passage retrieval, question answering
+  - web search, searching social media, distributed information retrieval, entity ranking
+  - learning to rank combined with neural network based representation learning
+  - user and task modelling, personalized search, diversity
+  - query formulation assistance, query recommendation, conversational search
+  - multimedia retrieval
+  - learning dense representations for long documents
+  - dealing with rare queries and rare words
+  - modelling text at different granularities (character, word, passage, document)
+  - compositionality of vector representations
+  - jointly modelling queries, documents, entities and other structured/knowledge data
 
 
 
@@ -134,6 +94,10 @@ Nogueira, Cho - "End-to-End Goal-Driven Web Navigation" [http://arxiv.org/pdf/16
 	"We propose a goal-driven web navigation as a benchmark task for evaluating an agent with abilities to understand natural language and plan on partially observed environments. In this challenging task, an agent navigates through a website, which is represented as a graph consisting of web pages as nodes and hyperlinks as directed edges, to find a web page in which a query appears. The agent is required to have sophisticated high-level reasoning based on natural languages and efficient sequential decision-making capability to succeed. We release a software tool, called WebNav, that automatically transforms a website into this goal-driven web navigation task, and as an example, we make WikiNav, a dataset constructed from the English Wikipedia. We extensively evaluate different variants of neural net based artificial agents on WikiNav and observe that the proposed goal-driven web navigation well reflects the advances in models, making it a suitable benchmark for evaluating future progress. Furthermore, we extend the WikiNav with questionanswer pairs from Jeopardy! and test the proposed agent based on recurrent neural networks against strong inverted index based search engines. The artificial agents trained on WikiNav outperforms the engined based approaches, demonstrating the capability of the proposed goal-driven navigation as a good proxy for measuring the progress in real-world tasks such as focused crawling and question-answering."
 	"In this work, we describe a large-scale goal-driven web navigation task and argue that it serves as a useful test bed for evaluating the capabilities of artificial agents on natural language understanding and planning. We release a software tool, called WebNav, that compiles a given website into a goal-driven web navigation task. As an example, we construct WikiNav from Wikipedia using WebNav. We extend WikiNav with Jeopardy! questions, thus creating WikiNav-Jeopardy. We evaluate various neural net based agents on WikiNav and WikiNav-Jeopardy. Our results show that more sophisticated agents have better performance, thus supporting our claim that this task is well suited to evaluate future progress in natural language understanding and planning. Furthermore, we show that our agent pretrained on WikiNav outperforms two strong inverted-index based search engines on the WikiNav-Jeopardy. These empirical results support our claim on the usefulness of the proposed task and agents in challenging applications such as focused crawling and question-answering."
 	-- Value Iteration Networks for this problem [https://arxiv.org/abs/1602.02867] - https://youtu.be/tXBHfbHHlKc?t=31m20s (Tamar)
+
+Buck et al - "Ask the Right Questions: Active Question Reformulation with Reinforcement Learning" [https://arxiv.org/abs/1705.07830] (query reformulation)
+>	"We frame Question Answering as a Reinforcement Learning task, an approach that we call Active Question Answering. We propose an agent that sits between the user and a black box question-answering system and which learns to reformulate questions to elicit the best possible answers. The agent probes the system with, potentially many, natural languagere formulations of an initial question and aggregates the returned evidence to yield the best answer. The reformulation system is trained end-to-end to maximize answer quality using policy gradient. We evaluate on SearchQA, a dataset of complex questions extracted from Jeopardy!. Our agent improves F1 by 11% over a state-of-the-art base model that uses the original question/answer pairs."
+	-- https://youtu.be/soZXAH3leeQ?t=34m43s (Cho)
 
 
 
@@ -282,7 +246,3 @@ Williams, Niraula, Dasigi, Lakshmiratan, Suarez, Reddy, Zweig - "Rapidly Scaling
 
 Melamud, Levy, Dagan - "A Simple Word Embedding Model for Lexical Substitution" [http://u.cs.biu.ac.il/~melamuo/publications/melamud_vsm15.pdf] (query reformulation)
 	"The lexical substitution task requires identifying meaning-preserving substitutes for a target word instance in a given sentential context. Since its introduction in SemEval-2007, various models addressed this challenge, mostly in an unsupervised setting. In this work we propose a simple model for lexical substitution, which is based on the popular skip-gram word embedding model. The novelty of our approach is in leveraging explicitly the context embeddings generated within the skip-gram model, which were so far considered only as an internal component of the learning process. Our model is efficient, very simple to implement, and at the same time achieves state-ofthe-art results on lexical substitution tasks in an unsupervised setting."
-
-Buck et al - "Ask the Right Questions: Active Question Reformulation with Reinforcement Learning" [https://arxiv.org/abs/1705.07830] (query reformulation)
->	"We frame Question Answering as a Reinforcement Learning task, an approach that we call Active Question Answering. We propose an agent that sits between the user and a black box question-answering system and which learns to reformulate questions to elicit the best possible answers. The agent probes the system with, potentially many, natural languagere formulations of an initial question and aggregates the returned evidence to yield the best answer. The reformulation system is trained end-to-end to maximize answer quality using policy gradient. We evaluate on SearchQA, a dataset of complex questions extracted from Jeopardy!. Our agent improves F1 by 11% over a state-of-the-art base model that uses the original question/answer pairs."
-	-- https://youtu.be/soZXAH3leeQ?t=34m43s (Cho)

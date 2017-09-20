@@ -25,7 +25,7 @@
 
   [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
   [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)  
-  [bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)  
+  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt)  
   [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
 
 
@@ -35,9 +35,9 @@
 
   [artificial intelligence](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md)  
   [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
-  [natural language processing](https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt)  
-  [information retrieval](https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt)  
-  [personal assistants](https://dropbox.com/s/0fyarlwcfb8mjdq/Personal%20Assistants.txt)  
+  [natural language processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt)  
+  [information retrieval](https://github.com/brylevkirill/notes/blob/master/Information%20Retrieval.txt)  
+  [personal assistants](https://github.com/brylevkirill/notes/blob/master/Personal%20Assistants.txt)  
 
 
   Any source code for expression y = f(x), where f(x) has some parameters and is used to make decision, prediction or estimate, has potential to be replaced by machine learning algorithm.
@@ -55,7 +55,7 @@
 
 ----
 
-  ["Machine Learning Basics"](http://deeplearningbook.org/contents/ml.html) by Ian Goodfellow, Yoshua Bengio, Aaron Courville  
+  ["Machine Learning Basics"](http://www.deeplearningbook.org/contents/ml.html) by Ian Goodfellow, Yoshua Bengio, Aaron Courville  
   ["Machine Learning for Humans"](https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12) by Vishal Maini  
 
   ["The Talking Machines"](http://thetalkingmachines.com/blog/) podcast  
@@ -120,11 +120,10 @@
 #### books
 
   Pedro Domingos - ["The Master Algorithm"](http://basicbooks.com/full-details?isbn=9780465065707)  
-  John Winn, Chris Bishop - ["Model-Based Machine Learning"](http://mbmlbook.com/toc.html)  
   Max Welling - ["A First Encounter with Machine Learning"](https://www.ics.uci.edu/~welling/teaching/ICS273Afall11/IntroMLBook.pdf)  
-  Ian Goodfellow, Yoshua Bengio, Aaron Courville - ["Deep Learning"](http://deeplearningbook.org)  
-  Richard Sutton, Andrew Barto - ["Reinforcement Learning: An Introduction"](http://webdocs.cs.ualberta.ca/~sutton/book/ebook/the-book.html) +
-	[second edition](https://dropbox.com/s/b3psxv2r0ccmf80/book2015oct.pdf)  
+  Ian Goodfellow, Yoshua Bengio, Aaron Courville - ["Deep Learning"](http://www.deeplearningbook.org)  
+  Richard Sutton, Andrew Barto - ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/sutton/book/ebook/the-book.html)
+	([second edition](http://incompleteideas.net/sutton/book/the-book-2nd.html))  
   Tom Mitchell - ["Machine Learning"](https://goo.gl/tyNHMH)  
   Shai Shalev-Shwartz, Shai Ben-David - ["Understanding Machine Learning: From Theory to Algorithms"](https://goo.gl/tHmsdD)  
   Chris Bishop - ["Pattern Recognition and Machine Learning"](https://goo.gl/58Yvvp)  
@@ -165,6 +164,7 @@
 #### conferences
 
   - ICML 2017  
+	<http://artem.sobolev.name/posts/2017-08-14-icml-2017.html>  
 	<https://olgalitech.wordpress.com/tag/icml2017/>  
 
   - ICLR 2017  
@@ -172,10 +172,8 @@
 	<https://medium.com/@karpathy/iclr-2017-vs-arxiv-sanity-d1488ac5c131>  
 
   - NIPS 2016  
-	<https://nips.cc/Conferences/2016/Schedule>  
 	<https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016>  
 	<https://nips.cc/Conferences/2016/SpotlightVideos>  
-	<http://papers.ai/collections/nips.2016>  
 
 	<http://people.idsia.ch/~rupesh/rnnsymposium2016/program.html> + <https://youtube.com/playlist?list=PLPwzH56Rdmq4hcuEMtvBGxUrcQ4cAkoSc>  
 	<https://sites.google.com/site/nips2016adversarial/> + <https://youtube.com/playlist?list=PLJscN9YDD1buxCitmej1pjJkR5PMhenTF>  
@@ -183,7 +181,7 @@
 	<https://uclmr.github.io/nampi/> + <https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt>  
 
 	<https://github.com/hindupuravinash/nips2016>  
-	<https://gist.github.com/artsobolev/63942e24c81fc296472affb1f138d54c>  
+	<http://artem.sobolev.name/posts/2016-12-31-nips-2016-summaries.html>  
 
   - ICML 2016  
 	<http://techtalks.tv/icml/2016/>  
@@ -218,7 +216,7 @@
 ---
 ### theory
 
-**goals**  
+  **goals**  
   - prediction with high accuracy  
   - prediction of "rare" events (outlier detection)  
   - interpretable modeling  
@@ -230,7 +228,7 @@
   - clustering  
   - online/active/reinforcement learning  
 
-**data**  
+  **data**  
   - text  
   - networks  
   - time series  
@@ -244,8 +242,8 @@
   - low-sample-size data  
   - non-metric-space data  
 
-**challenges**  
-  - How to decide autonomously which representation is best for target knowledge?  
+  **challenges**  
+  - How to decide which representation is best for target knowledge?  
   - How to tell genuine regularities from chance occurrences?  
   - How to exploit pre-existing domain knowledge knowledge?  
   - How to learn with limited computational resources?  
@@ -255,7 +253,7 @@
   - How to take into account the costs of decisions?  
   - How to handle non-indepedent and non-stationary data?  
 
-[**things to know**](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)  
+  [**things to know**](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)  
   - it's generalization that counts  
   - data alone is not enough  
   - overfitting has many faces  
@@ -272,14 +270,16 @@
 
 #### bayesian framework
 
-  [bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)  
-  [bayesian deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)  
-
   - probability as measure of uncertainty, encodes ignorance in terms of distributions  
   - treats everything as random variables, no difference between random and unknown variables  
   - makes use of Bayes theorem: posterior = likelihood * prior / evidence  
   - possible to compute the estimate p(U|O) for arbitrary unknown variable (U) given observed data (O) and not having any knowledge about latent variables (L) from the joint distribution p(U, O, L)  
   - possibility to use posterior distributions as priors, combination of multiple models  
+
+
+  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt)  
+  [bayesian deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)  
+  [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
 
 ----
 
@@ -290,42 +290,26 @@
   - how much data do we need to learn something  
   - how can we make sure what we learn will generalize to future data  
 
-frameworks:
-
+  frameworks:  
   - Statistical learning theory  
   - PAC learning or PAC-Bayes  
   - Minimax estimation (estimation/decision theory)  
 
-<http://kdnuggets.com/2015/07/deep-learning-triumph-empiricism-over-theoretical-mathematical-guarantees.html>  
-<https://hips.seas.harvard.edu/blog/2013/02/15/learning-theory-purely-theoretical/>  
+
+  ["Learning Theory: Purely Theoretical?"](https://hips.seas.harvard.edu/blog/2013/02/15/learning-theory-purely-theoretical/) by Jonathan Huggins  
+  ["Deep Learning and the Triumph of Empiricism"](http://kdnuggets.com/2015/07/deep-learning-triumph-empiricism-over-theoretical-mathematical-guarantees.html) by Zachary Lipton  
+
 
   [introduction](https://mostafa-samir.github.io/ml-theory-pt1/) by Mostafa Samir  
 
   introduction by Jeremy Kun:  
-  <http://jeremykun.com/2014/01/02/probably-approximately-correct-a-formal-theory-of-learning/>  
-  <http://jeremykun.com/2014/04/21/an-un-pac-learnable-problem/>  
-  <http://jeremykun.com/2014/09/19/occams-razor-and-pac-learning/>  
+  ["Probably Approximately Correct - A Formal Theory of Learning"](http://jeremykun.com/2014/01/02/probably-approximately-correct-a-formal-theory-of-learning/)  
+  ["A Problem That is Not (Properly) PAC-learnable"](http://jeremykun.com/2014/04/21/an-un-pac-learnable-problem/)  
+  ["Occam’s Razor and PAC-learning"](http://jeremykun.com/2014/09/19/occams-razor-and-pac-learning/)  
+
 
   [course](https://blogs.princeton.edu/imabandit/2015/10/13/crash-course-on-learning-theory-part-1/) by Sebastien Bubeck  
-  [course](https://web.stanford.edu/class/cs229t/notes.pdf) by Percy Liang  
-
-----
-
-#### bias-variance tradeoff
-
-  "The bias is error from erroneous assumptions in the learning algorithm. High bias can cause an algorithm to miss the relevant relations between features and target outputs (underfitting).  
-   The variance is error from sensitivity to small fluctuations in the training set. High variance can cause overfitting: modeling the random noise in the training data, rather than the intended outputs."  
-
-  "The bias–variance tradeoff is a central problem in supervised learning. Ideally, one wants to choose a model that both accurately captures the regularities in its training data, but also generalizes well to unseen data. Unfortunately, it is typically impossible to do both simultaneously. High-variance learning methods may be able to represent their training set well, but are at risk of overfitting to noisy or unrepresentative training data. In contrast, algorithms with high bias typically produce simpler models that don't tend to overfit, but may underfit their training data, failing to capture important regularities."
-
-  "Bias is how well the best hypothesis in your hypothesis class would perform in reality, whereas variance is how much performance degradation is introduced from having finite training data."
-
-  "Bias-variance decomposition in understanding the prediction error incurred by statistical models:
-  - the bias component of prediction error reflects the inability of a model to represent the systematic patterns that govern the observations
-  - the variance component of prediction error reflects the sensitivity of the model’s predictions to different observations of the same problem
-
-Together, bias and variance additively contribute to the total prediction error:  mean squared error = (bias)^2 + error variance + noise.  
-Bias-variance tradeoff characterizes how robust algorithm is to errors in its modeling assumptions (bias) or to errors in the training data (variance)."  
+  [course](https://web.stanford.edu/class/cs229t/Lectures/percy-notes.pdf) by Percy Liang  
 
 
 
@@ -340,7 +324,7 @@ Bias-variance tradeoff characterizes how robust algorithm is to errors in its mo
 
   *optimization*:  Finally, we need a method to search among the classifiers in the language for the highest-scoring one. The choice of optimization technique is key to the efficiency of the learner, and also helps determine the classifier produced if the evaluation function has more than one optimum. It is common for new learners to start out using off-the-shelf optimizers, which are later replaced by custom-designed ones.
 
-*representation*:  
+  *representation*:  
   - instances  
     * k-nearest neighbor  
     * support vector machines  
@@ -356,7 +340,7 @@ Bias-variance tradeoff characterizes how robust algorithm is to errors in its mo
     * bayesian networks  
     * conditional random fields  
 
-*evaluation*:  
+  *evaluation*:  
   - accuracy/error rate  
   - precision/recall  
   - squared error  
@@ -367,7 +351,7 @@ Bias-variance tradeoff characterizes how robust algorithm is to errors in its mo
   - cost/utility  
   - margin  
 
-*optimization*:  
+  *optimization*:  
   - combinatorial optimization  
     * greedy search  
     * beam search  
@@ -384,7 +368,7 @@ Bias-variance tradeoff characterizes how robust algorithm is to errors in its mo
 
   *machine learning* = *experience obtaining* + *cost function* + *decision function*
 
-*experience obtaining*:  
+  *experience obtaining*:  
   - transductive learning  
   - inductive learning  
   - stochastic optimization  
@@ -394,7 +378,7 @@ Bias-variance tradeoff characterizes how robust algorithm is to errors in its mo
   - multi-armed bandits  
   - reinforcement learning  
 
-*cost function*:  
+  *cost function*:  
   - supervised  
     * classification  
     * regression  
@@ -408,7 +392,7 @@ Bias-variance tradeoff characterizes how robust algorithm is to errors in its mo
     * conditional clustering  
     * transfer learning  
 
-*decision function*:  
+  *decision function*:  
   - linear desions  
     * linear regression, logistic regression  
     * LDA/QDA  
@@ -455,23 +439,20 @@ Bias-variance tradeoff characterizes how robust algorithm is to errors in its mo
 
   <http://dataschool.io/comparing-supervised-learning-algorithms/>
 
-----
-
-  [tutorials](#tutorials) + [guides](#guides) + [courses](#courses) + [books](#books)
-
 
 
 ---
 ### representation learning
 
-  "Reresentation is a formal system which makes explicit certain entities and types of information, and which can be operated on by an algorithm in order to achieve some information processing goal. Representations differ in terms of what information they make explicit and in terms of what algorithms they support. As example, Arabic and Roman numerals - the fact that operations can be applied to particular columns of Arabic numerals in meaningful ways allows for simple and efficient algorithms for addition and multiplication."
+  "Representation is a formal system which makes explicit certain entities and types of information, and which can be operated on by an algorithm in order to achieve some information processing goal. Representations differ in terms of what information they make explicit and in terms of what algorithms they support. As example, Arabic and Roman numerals - the fact that operations can be applied to particular columns of Arabic numerals in meaningful ways allows for simple and efficient algorithms for addition and multiplication."
 
   "In representation learning, our goal isn’t to predict observables, but to learn something about the underlying structure. In cognitive science and AI, a representation is a formal system which maps to some domain of interest in systematic ways. A good representation allows us to answer queries about the domain by manipulating that system. In machine learning, representations often take the form of vectors, either real- or binary-valued, and we can manipulate these representations with operations like Euclidean distance and matrix multiplication."
 
   "In representation learning, the goal isn’t to make predictions about observables, but to learn a representation which would later help us to answer various queries. Sometimes the representations are meant for people, such as when we visualize data as a two-dimensional embedding. Sometimes they’re meant for machines, such as when the binary vector representations learned by deep Boltzmann machines are fed into a supervised classifier. In either case, what’s important is that mathematical operations map to the underlying relationships in the data in systematic ways."
 
-  <https://hips.seas.harvard.edu/blog/2013/02/04/predictive-learning-vs-representation-learning/>  
-  <https://hips.seas.harvard.edu/blog/2013/02/25/what-is-representation-learning/>  
+
+  ["What is representation learning?"](https://hips.seas.harvard.edu/blog/2013/02/25/what-is-representation-learning/) by Roger Grosse	
+  ["Predictive learning vs. representation learning"](https://hips.seas.harvard.edu/blog/2013/02/04/predictive-learning-vs-representation-learning/) by Roger Grosse  
 
 ----
 
@@ -490,15 +471,15 @@ Bias-variance tradeoff characterizes how robust algorithm is to errors in its mo
   - *combinatorial*:  Programs can access the results of running other programs, as well as delete, duplicate, and rearrange these results.  
   - *hierarchical*:  Programs have an intrinsic hierarchical organization and may be decomposed into subprograms."  
 
-"Alternative representations for procedural abstractions such as neural networks have serious downsides including opacity and inefficiency."
+  "Alternative representations for procedural abstractions such as neural networks have serious downsides including opacity and inefficiency."
 
-"Challenges with programmatic representations:  
+  "Challenges with programmatic representations:  
   - *open-endedness*:  In contrast to other knowledge representations in machine learning, programs may vary in size and “shape”, and there is no obvious problem-independent upper bound on program size. This makes it difficult to represent programs as points in a fixed-dimensional space, or learn programs with algorithms that assume such a space.  
   - *over-representation*:  Often syntactically distinct programs will be semantically identical (i.e. represent the same underlying behavior or functional mapping). Lacking prior knowledge, many algorithms will inefficiently sample semantically identical programs repeatedly.  
   - *chaotic execution*: Programs that are very similar, syntactically, may be very different, semantically. This presents difficulty for many heuristic search algorithms, which require syntactic and semantic distance to be correlated.  
   - *high resource-variance*:  Programs in the same space may vary greatly in the space and time they require to execute."  
 
-"Limitations of program learning:  
+  "Limitations of program learning:  
   - can't overrule no-free-lunch  
     * averaged over all possible scoring functions  
   - can't learn to model "arbitrary" Turing machines  
@@ -509,28 +490,33 @@ Bias-variance tradeoff characterizes how robust algorithm is to errors in its mo
 
 ----
 
-  (Nando de Freitas) "For me there are two types of generalisation, which I will refer to as Symbolic and Connectionist generalisation. If we teach a machine to sort sequences of numbers of up to length 10 or 100, we should expect them to sort sequences of length 1000 say. Obviously symbolic approaches have no problem with this form of generalisation, but neural nets do poorly. On the other hand, neural nets are very good at generalising from data (such as images), but symbolic approaches do poorly here. One of the holy grails is to build machines that are capable of both symbolic and connectionist generalisation. Neural Programmer Interpreters is a very early step toward this. NPI can do symbolic operations such as sorting and addition, but it can also plan by taking images as input and it's able to generalise the plans to different images (e.g. in the NPI car example, the cars are test set cars not seen before)."
+  "For me there are two types of generalisation, which I will refer to as Symbolic and Connectionist generalisation. If we teach a machine to sort sequences of numbers of up to length 10 or 100, we should expect them to sort sequences of length 1000 say. Obviously symbolic approaches have no problem with this form of generalisation, but neural nets do poorly. On the other hand, neural nets are very good at generalising from data (such as images), but symbolic approaches do poorly here. One of the holy grails is to build machines that are capable of both symbolic and connectionist generalisation. Neural Programmer Interpreters is a very early step toward this. NPI can do symbolic operations such as sorting and addition, but it can also plan by taking images as input and it's able to generalise the plans to different images (e.g. in the NPI car example, the cars are test set cars not seen before)." *(Nando de Freitas)*
 
 ----
 
-  <https://en.wikipedia.org/wiki/Inductive_programming>
+  [Inductive Programming](https://en.wikipedia.org/wiki/Inductive_programming)
 
-  <http://cacm.acm.org/magazines/2015/11/193326-inductive-programming-meets-the-real-world/fulltext>  
-  <http://homes.cs.washington.edu/~bornholt/post/synthesis-for-architects.html>  
+  ["Program Synthesis Explained"](http://homes.cs.washington.edu/~bornholt/post/synthesis-for-architects.html) by James Bornholt  
 
-  <http://languagengine.co/blog/symbolic-machine-learning/>  
-  <https://blog.keras.io/the-future-of-deep-learning.html>  
+  ["Symbolic Machine Learning"](http://languagengine.co/blog/symbolic-machine-learning/) by Darryl McAdams  
+  ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet  
 
+----
 
   ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi) workshop at NIPS 2016
-	([videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt))
+	([videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt))  
+  [panel](https://youtu.be/nqiUFc52g78?t=1h29m3s) at NAMPI workshop
+	with Percy Liang, Juergen Schmidhuber, Joshua Tenenbaum, Martin Vechev, Daniel Tarlow, Dawn Song  
 
   ["Learning to Code: Machine Learning for Program Induction"](https://youtu.be/vzDuVhFMB9Q?t=2m40s) by Alex Gaunt  
   ["TerpreT: A Probabilistic Programming Language for Program Induction"](https://arxiv.org/abs/1608.04428) by Gaunt et al.  
 
+  ["Inductive Programming Meets the Real World"](https://microsoft.com/en-us/research/publication/inductive-programming-meets-real-world/) by Gulwani et al.  
+
 ----
 
   [Probabilistic Programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
+
   [selected papers](https://dropbox.com/sh/vrr1gs798zy02n1/AACj7hlXOiRt1nXltXVC-2Wca)  
   [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#program-induction)  
 
@@ -1009,7 +995,7 @@ Bias-variance tradeoff characterizes how robust algorithm is to errors in its mo
 
 [interesting papers - deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers)  
 [interesting papers - reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers)  
-[interesting papers - bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt#interesting-papers)  
+[interesting papers - bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt#interesting-papers)  
 [interesting papers - probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers)  
 
 

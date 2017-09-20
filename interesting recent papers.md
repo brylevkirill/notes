@@ -24,6 +24,7 @@ interesting recent papers:
   * [language grounding](#language-grounding)  
   * [dialog systems](#dialog-systems)  
   * [natural language processing](#natural-language-processing)  
+  * [information retrieval](#information-retrieval)  
 
 ----
 interesting papers:
@@ -33,11 +34,11 @@ interesting papers:
   - [machine learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#interesting-papers)  
   - [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers)  
   - [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers)  
-  - [bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt#interesting-papers)  
+  - [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt#interesting-papers)  
   - [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers)  
-  - [natural language processing](https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt#interesting-papers)  
-  - [information retrieval](https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt#interesting-papers)  
-  - [personal assistants](https://dropbox.com/s/0fyarlwcfb8mjdq/Personal%20Assistants.txt#interesting-papers)  
+  - [natural language processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt#interesting-papers)  
+  - [information retrieval](https://github.com/brylevkirill/notes/blob/master/Information%20Retrieval.txt#interesting-papers)  
+  - [personal assistants](https://github.com/brylevkirill/notes/blob/master/Personal%20Assistants.txt#interesting-papers)  
 
 
 
@@ -203,6 +204,7 @@ interesting papers:
 
 ----
 [Adaptive Computation Time for Recurrent Neural Networks](http://arxiv.org/abs/1603.08983) (Graves)  
+  - <https://youtu.be/tA8nRlBEVr0?t=1m26s> (Graves)  
   - <https://youtu.be/nqiUFc52g78?t=58m45s> (Graves)  
   - <http://distill.pub/2016/augmented-rnns/>  
   - <https://www.evernote.com/shard/s189/sh/fd165646-b630-48b7-844c-86ad2f07fcda/c9ab960af967ef847097f21d94b0bff7>  
@@ -226,6 +228,8 @@ interesting papers:
 >	Put differently, if you consider the dependency DAG of tensor operations, using these DNI things reduces the depth of the parameter gradient nodes (which is the whole point of training) in the DAG. So for example, the gradient update for the layer at the beginning of a n-layer chain goes from depth ~2n to depth ~1, the layer at the end has depth n, which doesn't change. On average, the depth of the gradient computation nodes is about 40% of what it would be normally, for deep networks. So there is a lot more flexibility for scheduling nodes in time and space.  
 >	And for coarser-grained parallelism it could allow modules running on different devices to do updates before a final loss gradient is available to be distributed to all the devices. Synchronization still has to happen to update the gradient predictions, but that can happen later, and could even be opportunistic (asynchronous or stochastic)."  
 >	"I guess that the synthetic gradients conditioned on the labels and the synthetic layer inputs conditioned on the data work for the same reason why stochastic depth works: during training, at any given layer the networks before and after it can be approximated by simpler, shallower versions. In stochastic depth the approximation is performed by skipping layers, so the whole network is approximated by a shallower version of itself, which changes at each step. In this work, instead, the approximation is performed by separate networks.  
+  - <https://youtu.be/tA8nRlBEVr0?t=14m40s> + <https://youtube.com/watch?v=-u32TOPGIbQ> (Graves)  
+  - <https://youtube.com/watch?v=toZprSCCmNI> (Gupta)  
   - <https://deepmind.com/blog/decoupled-neural-networks-using-synthetic-gradients/>  
   - <https://iamtrask.github.io/2017/03/21/synthetic-gradients/>  
   - <http://cnichkawde.github.io/SyntheticGradients.html>  
@@ -767,7 +771,7 @@ interesting papers:
 ---
 ### generative models - autoregressive models
 
-[Attention Is All You Need](https://arxiv.org/abs/1706.03762) (Google Brain)  
+[Attention Is All You Need](https://arxiv.org/abs/1706.03762) (Google Brain)  # Transformer  
   - <https://research.googleblog.com/2017/08/transformer-novel-neural-network.html>  
   - <https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/>  
   - <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/transformer.py>  
@@ -903,6 +907,10 @@ interesting papers:
   - <https://github.com/DeNeutoy/bayesian-rnn>  
 
 [Sequential Neural Models with Stochastic Layers](http://arxiv.org/abs/1605.07571)  
+>	"stochastic neural networks:  
+>	- allow to learn one-to-many type of mappings  
+>	- can be used in structured prediction problems where modeling the internal structure of the output is important  
+>	- benefit from stochasticity as regularizer which makes generalization performance potentially better in general"  
   - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Sequential-Neural-Models-with-Stochastic-Layers> (Fraccaro)  
   - <https://youtu.be/mrj_hyH974o?t=32m49s> (in russian)  
   - <https://github.com/marcofraccaro/srnn>  
@@ -1023,15 +1031,14 @@ interesting papers:
 >	"Shows that differentiable interpreter-based program induction is inferior to discrete search-based techniques used by the programming languages community. We are then left with the question of how to make progress on program induction using machine learning techniques."  
   - <https://youtu.be/vzDuVhFMB9Q?t=2m40s> (Gaunt)  
 
-----
+[Programming with a Differentiable Forth Interpreter](http://arxiv.org/abs/1605.06640) (Riedel)  # learning details of probabilistic program  
+
 [Making Neural Programming Architectures Generalize via Recursion](https://arxiv.org/abs/1704.06611)  # Neural Programmer-Interpreter with recursion  
 >	"We implement recursion in the Neural Programmer-Interpreter framework on four tasks: grade-school addition, bubble sort, topological sort, and quicksort."  
   - <https://facebook.com/iclr.cc/videos/1713144705381255/> (49:59) (Cai)  
   - <https://theneuralperspective.com/2017/03/14/making-neural-programming-architecture-generalize-via-recursion/>  
 
 [Adaptive Neural Compilation](http://arxiv.org/abs/1605.07969)  
-
-[Programming with a Differentiable Forth Interpreter](http://arxiv.org/abs/1605.06640) (Riedel)  # learning details of probabilistic program  
 
 
 
@@ -1050,6 +1057,7 @@ interesting papers:
 ----
 [Proximal Policy Optimization Algorithms](https://arxiv.org/abs/1707.06347) (OpenAI)  
   - <https://blog.openai.com/openai-baselines-ppo/> (demo)  
+  - <https://learningai.io/projects/2017/07/28/ai-gym-workout.html>  
   - <https://github.com/openai/baselines/tree/master/baselines/pposgd>  
   - <https://github.com/alexis-jacq/Pytorch-DPPO>  
 
@@ -1178,6 +1186,10 @@ interesting papers:
 ---
 ### reinforcement learning - exploration and intrinsic motivation
 
+[The Uncertainty Bellman Equation and Exploration](https://arxiv.org/abs/1709.05380) (DeepMind)    # exploration in state-action space guided by uncertainty of value function  
+>	"We consider uncertainty Bellman equation which connects the uncertainty at any time-step to the expected uncertainties at subsequent time-steps, thereby extending the potential exploratory benefit of a policy beyond individual time-steps. We prove that the unique fixed point of the UBE yields an upper bound on the variance of the estimated value of any fixed policy. This bound can be much tighter than traditional count-based bonuses that compound standard deviation rather than variance. Importantly, and unlike several existing approaches to optimism, this method scales naturally to large systems with complex generalization."  
+
+----
 [Count-Based Exploration with Neural Density Models](http://arxiv.org/abs/1703.01310) (DeepMind)    # exploration in state space guided by probability of observation  
 >	"PixelCNN for exploration, neural alternative to Context Tree Switching"  
   - <http://youtube.com/watch?v=qSfd27AgcEk> (Bellemare)  
@@ -1247,7 +1259,7 @@ hieves."
   - <https://github.com/Kaixhin/NoisyNet-A3C>  
   - <https://github.com/andrewliao11/NoisyNet-DQN>  
 
-[Parameter Space Noise for Exploration](htps://arxiv.org/abs/1706.01905) (OpenAI)    # exploration in policy space guided by noise  
+[Parameter Space Noise for Exploration](https://arxiv.org/abs/1706.01905) (OpenAI)    # exploration in policy space guided by noise  
 
 [Deep Exploration via Randomized Value Functions](https://arxiv.org/abs/1703.07608) (Osband)    # exploration in policy space guided by noise  
 >	"A very recent thread of work builds on count-based (or upper-confidence-bound-based) exploration schemes that operate with value function learning. These methods maintain a density over the state-action space of pseudo-counts, which represent the quantity of data gathered that is relevant to each state-action pair. Such algorithms may offer a viable approach to deep exploration with generalization. There are, however, some potential drawbacks. One is that a separate representation is required to generalize counts, and it's not clear how to design an effective approach to this. As opposed to the optimal value function, which is fixed by the environment, counts are generated by the agent’s choices, so there is no single target function to learn. Second, the count model generates reward bonuses that distort data used to fit the value function, so the value function representation needs to be designed to not only capture properties of the true optimal value function but also such distorted versions. Finally, these approaches treat uncertainties as uncoupled across state-action pairs, and this can incur a substantial negative impact on statistical efficiency."  
@@ -1285,12 +1297,12 @@ hieves."
 >	"In interactive environments, the temporal dependency between successive observations creates a new opportunity to notice causal structure in data which may not be apparent using only observational studies. In reinforcement learning, several approaches explore mechanisms that push the internal representations of learned models to be “good” in the sense that they provide better control, and control is a particularly important causal relationship between an agent and elements of its environment."  
 >	"We propose and explore a more direct mechanism for representation learning, which explicitly links an agent’s control over its environment with its internal feature representations. Specifically, we hypothesize that some of the factors explaining variations in the data correspond to aspects of the world that can be controlled by the agent. For example, an object that could be pushed around or picked up independently of others is an independently controllable aspect of the environment. Our approach therefore aims to jointly discover a set of features (functions of the environment state) and policies (which change the state) such that each policy controls the associated feature while leaving the other features unchanged as much as possible."  
 
-
 ----
 [Automated Curriculum Learning for Neural Networks](https://arxiv.org/abs/1704.03003) (DeepMind)    # structured exploration in policy space guided by learning progress  
 >	"We focus on variants of prediction gain, and also introduce a novel class of progress signals which we refer to as complexity gain. Derived from minimum description length principles, complexity gain equates acquisition of knowledge with an increase in effective information encoded in the network weights."  
 >	"VIME uses a reward signal that is closely related to variational complexity gain. The difference is that while VIME measures the KL between the posterior before and after a step in parameter space, we consider the change in KL between the posterior and prior induced by the step. Therefore, while VIME looks for any change to the posterior, we focus only on changes that alter the divergence from the prior. Further research will be needed to assess the relative merits of the two signals."  
 >	"For maximum likelihood training, we found prediction gain to be the most consistent signal, while for variational inference training, gradient variational complexity gain performed best. Importantly, both are instantaneous, in the sense that they can be evaluated using only the samples used for training."  
+  - <https://youtu.be/-u32TOPGIbQ?t=2m43s> (Graves)  
 
 [Teacher-Student Curriculum Learning](https://arxiv.org/abs/1707.00183) (OpenAI)    # structured exploration in policy space guided by learning progress  
 
@@ -1537,6 +1549,7 @@ hieves."
 [Learning to Act by Predicting the Future](https://arxiv.org/pdf/1611.01779)  
 >	"application of deep successor reinforcement learning"  
   - <https://youtube.com/watch?v=947bSUtuSQ0> + <https://youtube.com/watch?v=947bSUtuSQ0> (demo)  
+  - <https://youtube.com/watch?v=buUF5F8UCH8> (Lamb, Ozair)  
   - <https://youtube.com/watch?v=Q0ldKJbAwR8> (Dosovitskiy) (in russian)  
   - <https://yadi.sk/i/pMdw-_uI3Gke7Z> (1:02:03) (Shvechikov) (in russian)  
   - <https://blog.acolyer.org/2017/05/12/learning-to-act-by-predicting-the-future/>  
@@ -1594,6 +1607,9 @@ hieves."
 [Learning from Demonstrations for Real World Reinforcement Learning](https://arxiv.org/abs/1704.03732) (DeepMind + OpenAI)  
   - <https://youtube.com/playlist?list=PLdjpGm3xcO-0aqVf--sBZHxCKg-RZfa5T> (demo)  
   - <https://github.com/reinforceio/tensorforce/blob/master/tensorforce/models/dqfd_model.py>  
+
+[Query-Efficient Imitation Learning for End-to-End Autonomous Driving](https://arxiv.org/abs/1605.06450)  # SafeDAgger  
+  - <https://youtu.be/soZXAH3leeQ?t=15m51s> (Cho)  
 
 [Deeply AggreVaTeD: Differentiable Imitation Learning for Sequential Prediction](https://arxiv.org/abs/1703.01030)  
 
@@ -1753,7 +1769,8 @@ hieves."
   - <http://www.maluuba.com/blog/2016/11/23/deep-reinforcement-learning-in-dialogue-systems>  
 
 ----
-[Deal or No Deal? End-to-End Learning for Negotiation Dialogues](https://arxiv.org/abs/1706.05125) (Facebook)  
+[Deal or No Deal? End-to-End Learning for Negotiation Dialogues](https://arxiv.org/abs/1706.05125) (Facebook AI Research)  
+  - <https://ku.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e76f464c-6f81-4e31-b942-839312cf0f8c> (Lewis)  
   - <https://code.facebook.com/posts/1686672014972296>  
   - <https://github.com/facebookresearch/end-to-end-negotiator>  
 
@@ -1878,3 +1895,21 @@ hieves."
 [Improved Variational Autoencoders for Text Modeling using Dilated Convolutions](http://arxiv.org/abs/1702.08139) (Salakhutdinov)  
 
 [Toward Controlled Generation of Text](http://arxiv.org/abs/1703.00955) (Salakhutdinov)  
+
+
+
+---
+### information retrieval
+
+[Ask the Right Questions: Active Question Reformulation with Reinforcement Learning](https://arxiv.org/abs/1705.07830) (Google)  
+  - <https://youtu.be/soZXAH3leeQ?t=40m54s> (Cho)  
+
+[Task-Oriented Query Reformulation with Reinforcement Learning](https://arxiv.org/abs/1704.04572)  
+  - <https://youtu.be/soZXAH3leeQ?t=34m16s> (Cho)  
+  - <https://ku.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c933f3da-392f-4aeb-bd09-e766a8ba83aa> (5:03:10) (Nogueira)  
+  - <https://github.com/nyu-dl/QueryReformulator>  
+
+[Reading Wikipedia to Answer Open-Domain Questions](https://arxiv.org/abs/1704.00051) (Facebook AI Research)  # DrQA  
+  - <https://github.com/hitvoice/DrQA>  
+
+[R3: Reinforced Reader-Ranker for Open-Domain Question Answering](https://arxiv.org/abs/1709.00023) (IBM)  

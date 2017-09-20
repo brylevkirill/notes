@@ -136,9 +136,12 @@
 
 	AlphaGo Master vs Ke Jie match:
 
-	game 1: [video](https://youtube.com/watch?v=Z-HL5nppBnM)  
-	game 2: [video](https://youtube.com/watch?v=1U1p4Mwis60)  
-	game 3: [video](https://youtube.com/watch?v=ru0E7N0-kFE)  
+	game 1: [video](https://youtube.com/watch?v=Z-HL5nppBnM) +
+		[analysis](https://youtube.com/watch?v=HIu9P9wEIsc)  
+	game 2: [video](https://youtube.com/watch?v=1U1p4Mwis60) +
+		[analysis](https://youtube.com/watch?v=SF486mbvAOI)  
+	game 3: [video](https://youtube.com/watch?v=ru0E7N0-kFE) +
+		[analysis](https://youtube.com/watch?v=CUZxe7bXKxo)  
 
 	<https://theverge.com/2017/5/30/15712300/alphago-ai-humanity-google-artificial-intelligence-ke-jie>  
 	<https://medium.com/@karpathy/alphago-in-context-c47718cb95a5>  
@@ -269,8 +272,8 @@
 
 ----
 
-  ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/sutton/book/the-book-2nd.html) book by Rich Sutton and Andrew Barto (second edition, draft)  
   ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/sutton/book/ebook/the-book.html) book by Rich Sutton and Andrew Barto (first edition)  
+  ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/sutton/book/the-book-2nd.html) book by Rich Sutton and Andrew Barto (second edition)  
   ["Algorithms for Reinforcement Learning"](http://www.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf) book by Csaba Szepesvari  
 
 ----
@@ -1307,7 +1310,7 @@ interesting papers (see below):
 
 
 interesting recent papers:  
-  - [algorithms](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---agents)  
+  - [agents](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---agents)  
   - [exploration and intrinsic motivation](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
   - [abstractions for states and actions](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---abstractions-for-states-and-actions)  
   - [simulation and planning](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---simulation-and-planning)  
@@ -1469,6 +1472,21 @@ interesting recent papers:
   - <https://youtu.be/3q4OvzIyPug?t=6m12s> (Agarwal)
 
 
+#### Xia, He, Qin, Wang, Yu, Liu, Ma - ["Dual Learning for Machine Translation"](https://arxiv.org/abs/1611.00179)
+>	"While neural machine translation (NMT) is making good progress in the past two years, tens of millions of bilingual sentence pairs are needed for its training. However, human labeling is very costly. To tackle this training data bottleneck, we develop a dual-learning mechanism, which can enable an NMT system to automatically learn from unlabeled data through a dual-learning game. This mechanism is inspired by the following observation: any machine translation task has a dual task, e.g., English-to-French translation (primal) versus French-to-English translation (dual); the primal and dual tasks can form a closed loop, and generate informative feedback signals to train the translation models, even if without the involvement of a human labeler. In the dual-learning mechanism, we use one agent to represent the model for the primal task and the other agent to represent the model for the dual task, then ask them to teach each other through a reinforcement learning process. Based on the feedback signals generated during this process (e.g., the languagemodel likelihood of the output of a model, and the reconstruction error of the original sentence after the primal and dual translations), we can iteratively update the two models until convergence (e.g., using the policy gradient methods). We call the corresponding approach to neural machine translation dual-NMT. Experiments show that dual-NMT works very well on English↔French translation; especially, by learning from monolingual data (with 10% bilingual data for warm start), it achieves a comparable accuracy to NMT trained from the full bilingual data for the French-to-English translation task."
+
+>	"First, although we have focused on machine translation in this work, the basic idea of dual learning is generally applicable: as long as two tasks are in dual form, we can apply the dual-learning mechanism to simultaneously learn both tasks from unlabeled data using reinforcement learning algorithms. Actually, many AI tasks are naturally in dual form, for example, speech recognition versus text to speech, image caption versus image generation, question answering versus question generation (e.g., Jeopardy!), search (matching queries to documents) versus keyword extraction (extracting keywords/queries for documents), so on and so forth. It would very be interesting to design and test dual-learning algorithms for more dual tasks beyond machine translation."
+
+>	"Second, although we have focused on dual learning on two tasks, our technology is not restricted to two tasks only. Actually, our key idea is to form a closed loop so that we can extract feedback signals by comparing the original input data with the final output data. Therefore, if more than two associated tasks can form a closed loop, we can apply our technology to improve the model in each task from unlabeled data. For example, for an English sentence x, we can first translate it to a Chinese sentence y, then translate y to a French sentence z, and finally translate z back to an English sentence x 0 . The similarity between x and x 0 can indicate the effectiveness of the three translation models in the loop, and we can once again apply the policy gradient methods to update and improve these models based on the feedback signals during the loop. We would like to name this generalized dual learning as close-loop learning, and will test its effectiveness in the future."
+
+>	"We plan to explore the following directions in the future. First, in the experiments we used bilingual data to warm start the training of dual-NMT. A more exciting direction is to learn from scratch, i.e., to learn translations directly from monolingual data of two languages (maybe plus lexical dictionary). Second, our dual-NMT was based on NMT systems in this work. Our basic idea can also be applied to phrase-based SMT systems and we will look into this direction. Third, we only considered a pair of languages in this paper. We will extend our approach to jointly train multiple translation models for a tuple of 3+ languages using monolingual data."
+
+----
+>	"The authors finetune an FR -> EN NMT model using a RL-based dual game. 1. Pick a French sentence from a monolingual corpus and translate it to EN. 2. Use an EN language model to get a reward for the translation 3. Translate the translation back into FR using an EN -> FR system. 4. Get a reward based on the consistency between original and reconstructed sentence. Training this architecture using Policy Gradient authors can make efficient use of monolingual data and show that a system trained on only 10% of parallel data and finetuned with monolingual data achieves comparable BLUE scores as a system trained on the full set of parallel data."
+
+  - <https://github.com/dennybritz/deeplearning-papernotes/blob/master/notes/dual-learning-mt.md>
+
+
 #### Norouzi, Bengio, Chen, Jaitly, Schuster, Wu, Schuurmans - ["Reward Augmented Maximum Likelihood for Neural Structured Prediction"](https://arxiv.org/abs/1609.00150)
 >	"A key problem in structured output prediction is direct optimization of the task reward function that matters for test evaluation. This paper presents a simple and computationally efficient approach to incorporate task reward into a maximum likelihood framework. We establish a connection between the log-likelihood and regularized expected reward objectives, showing that at a zero temperature, they are approximately equivalent in the vicinity of the optimal solution. We show that optimal regularized expected reward is achieved when the conditional distribution of the outputs given the inputs is proportional to their exponentiated (temperature adjusted) rewards. Based on this observation, we optimize conditional log-probability of edited outputs that are sampled proportionally to their scaled exponentiated reward. We apply this framework to optimize edit distance in the output label space. Experiments on speech recognition and machine translation for neural sequence to sequence models show notable improvements over a maximum likelihood baseline by using edit distance augmented maximum likelihood."
 
@@ -1493,28 +1511,13 @@ interesting recent papers:
 >	- Adversarial training can be seen as data-augmentation in the input space X. The RML objective does data-augmentation in the output space Y.  
 >	- Adversarial training performs model-based data augmentation: the examples generated are those for which the current model is maximally vulnerable. RML training performs data-based augmentation: the examples generated have outputs that are “near” the ground-truth outputs. (Here 'near' is defined by the reward function.)"  
 
-  - <https://youtu.be/fZNyHoXgV7M?t=24m59s> (Norouzi)
+  - <https://youtu.be/fZNyHoXgV7M?t=24m59s> (Norouzi) - "Towards a Unified View of Supervised Learning and Reinforcement Learning"
   - <https://youtu.be/uohtFXD_39c?t=38m10s> (Samy Bengio)
   - <http://youtube.com/watch?v=agA-rc71Uec> (Samy Bengio)
   - <http://drive.google.com/file/d/0B3Rdm_P3VbRDVUQ4SVBRYW82dU0> (Gauthier)
   - <http://www.shortscience.org/paper?bibtexKey=journals/corr/1609.00150>
   - <http://www.shortscience.org/paper?bibtexKey=conf%2Fnips%2FNorouziBCJSWS16>
   - ["Softmax Q-Distribution Estimation for Structured Prediction: A Theoretical Interpretation for RAML"](https://arxiv.org/abs/1705.07136)
-
-
-#### Xia, He, Qin, Wang, Yu, Liu, Ma - ["Dual Learning for Machine Translation"](https://arxiv.org/abs/1611.00179)
->	"While neural machine translation (NMT) is making good progress in the past two years, tens of millions of bilingual sentence pairs are needed for its training. However, human labeling is very costly. To tackle this training data bottleneck, we develop a dual-learning mechanism, which can enable an NMT system to automatically learn from unlabeled data through a dual-learning game. This mechanism is inspired by the following observation: any machine translation task has a dual task, e.g., English-to-French translation (primal) versus French-to-English translation (dual); the primal and dual tasks can form a closed loop, and generate informative feedback signals to train the translation models, even if without the involvement of a human labeler. In the dual-learning mechanism, we use one agent to represent the model for the primal task and the other agent to represent the model for the dual task, then ask them to teach each other through a reinforcement learning process. Based on the feedback signals generated during this process (e.g., the languagemodel likelihood of the output of a model, and the reconstruction error of the original sentence after the primal and dual translations), we can iteratively update the two models until convergence (e.g., using the policy gradient methods). We call the corresponding approach to neural machine translation dual-NMT. Experiments show that dual-NMT works very well on English↔French translation; especially, by learning from monolingual data (with 10% bilingual data for warm start), it achieves a comparable accuracy to NMT trained from the full bilingual data for the French-to-English translation task."
-
->	"First, although we have focused on machine translation in this work, the basic idea of dual learning is generally applicable: as long as two tasks are in dual form, we can apply the dual-learning mechanism to simultaneously learn both tasks from unlabeled data using reinforcement learning algorithms. Actually, many AI tasks are naturally in dual form, for example, speech recognition versus text to speech, image caption versus image generation, question answering versus question generation (e.g., Jeopardy!), search (matching queries to documents) versus keyword extraction (extracting keywords/queries for documents), so on and so forth. It would very be interesting to design and test dual-learning algorithms for more dual tasks beyond machine translation."
-
->	"Second, although we have focused on dual learning on two tasks, our technology is not restricted to two tasks only. Actually, our key idea is to form a closed loop so that we can extract feedback signals by comparing the original input data with the final output data. Therefore, if more than two associated tasks can form a closed loop, we can apply our technology to improve the model in each task from unlabeled data. For example, for an English sentence x, we can first translate it to a Chinese sentence y, then translate y to a French sentence z, and finally translate z back to an English sentence x 0 . The similarity between x and x 0 can indicate the effectiveness of the three translation models in the loop, and we can once again apply the policy gradient methods to update and improve these models based on the feedback signals during the loop. We would like to name this generalized dual learning as close-loop learning, and will test its effectiveness in the future."
-
->	"We plan to explore the following directions in the future. First, in the experiments we used bilingual data to warm start the training of dual-NMT. A more exciting direction is to learn from scratch, i.e., to learn translations directly from monolingual data of two languages (maybe plus lexical dictionary). Second, our dual-NMT was based on NMT systems in this work. Our basic idea can also be applied to phrase-based SMT systems and we will look into this direction. Third, we only considered a pair of languages in this paper. We will extend our approach to jointly train multiple translation models for a tuple of 3+ languages using monolingual data."
-
-----
->	"The authors finetune an FR -> EN NMT model using a RL-based dual game. 1. Pick a French sentence from a monolingual corpus and translate it to EN. 2. Use an EN language model to get a reward for the translation 3. Translate the translation back into FR using an EN -> FR system. 4. Get a reward based on the consistency between original and reconstructed sentence. Training this architecture using Policy Gradient authors can make efficient use of monolingual data and show that a system trained on only 10% of parallel data and finetuned with monolingual data achieves comparable BLUE scores as a system trained on the full set of parallel data."
-
-  - <https://github.com/dennybritz/deeplearning-papernotes/blob/master/notes/dual-learning-mt.md>
 
 
 
@@ -1831,6 +1834,8 @@ interesting recent papers:
 >	"VIME uses a reward signal that is closely related to variational complexity gain. The difference is that while VIME measures the KL between the posterior before and after a step in parameter space, we consider the change in KL between the posterior and prior induced by the step. Therefore, while VIME looks for any change to the posterior, we focus only on changes that alter the divergence from the prior. Further research will be needed to assess the relative merits of the two signals."  
 
 >	"For maximum likelihood training, we found prediction gain to be the most consistent signal, while for variational inference training, gradient variational complexity gain performed best. Importantly, both are instantaneous, in the sense that they can be evaluated using only the samples used for training."  
+
+  - <https://youtu.be/-u32TOPGIbQ?t=2m43s> (Graves)
 
 
 #### Leike - ["Exploration Potential"](http://arxiv.org/abs/1609.04994)

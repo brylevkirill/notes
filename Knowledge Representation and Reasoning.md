@@ -127,7 +127,7 @@
 
 ----
 
-  [Natural Language Processing](https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt)
+  [Natural Language Processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt)
 
 
 
@@ -240,7 +240,7 @@
 
 
   [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#distributed-representations)  
-  "[continuous space representations]" section of [Natural Language Processing](https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt)  
+  "[continuous space representations]" section of [Natural Language Processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt)  
 
 ----
 
@@ -649,7 +649,7 @@
 ### knowledge representation - distributed representations
 
 [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#distributed-representations)  
-"[continuous space representations]" section of [Natural Language Processing](https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt)  
+"[continuous space representations]" section of [Natural Language Processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt)  
 
 
 
@@ -748,7 +748,7 @@
 
 #### bayesian inference
 
-  [bayesian inference and learning](https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt)
+  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt)
 
   [probabilistic programs](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-program) as bayesian models of cognition
 
@@ -1063,15 +1063,19 @@
 ---
 ### conferences
 
-  [Automated Knowledge Base Construction workshop](http://akbc.ws)  
+  [Automated Knowledge Base Construction](http://akbc.ws) workshop  
+  - [AKBC 2017](http://akbc.ws/2017/)  
   - [AKBC 2016](http://akbc.ws/2016/)  
   - [AKBC 2014 videos](http://youtube.com/user/NeuralInformationPro/search?query=AKBC)  
   - [AKBC 2012 videos](http://videolectures.net/akbcwekex2012_montreal/)  
   - [AKBC 2010 videos](http://videolectures.net/akbc2010_grenoble/)  
 
-  [StarAI](http://starai.org) (Statistical and Relational AI) workshop
+  [Knowledge Base Construction, Reasoning and Mining](http://kbcom.org) workshop
 
-  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi/) workshop at NIPS 2016 ([videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt))
+  [Statistical and Relational](http://starai.org) workshop
+
+  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi/) workshop at NIPS 2016
+	([videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt))
 
   ["Reasoning, Attention, Memory"](http://thespermwhale.com/jaseweston/ram/) workshop at NIPS 2015  
   ["Cognitive Computation: Integrating Neural and Symbolic Approaches"](http://neural-symbolic.org/CoCo2015/) workshop at NIPS 2015  
@@ -1115,7 +1119,7 @@
 
 
 interesting papers:
-  - "[continuous space representations]" section of [Natural Language Processing](https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt)  
+  - "[continuous space representations]" section of [Natural Language Processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt)  
 
 
 interesting papers (see below):  
@@ -1602,7 +1606,7 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 
 [recent interesting papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)  
 
-"[continuous space representations]" section of [Natural Language Processing](https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt)  
+"[continuous space representations]" section of [Natural Language Processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt)  
 [machine reading methods and datasets](http://matt-gardner.github.io/paper-thoughts/2016/12/08/reading-comprehension-survey.html) by Matt Gardner  
 
 
@@ -1898,7 +1902,8 @@ these knowledge bases are greatly incomplete. For example, over 70% of people in
 >	 - compute extractor precision and recall (M-step)"  
 >	"This paper proposes a new metric for evaluating web-source quality - knowledge-based trust. We proposed a sophisticated probabilistic model that jointly estimates the correctness of extractions and source data, and the trustworthiness of sources. In addition, we presented an algorithm that dynamically decides the level of granularity for each source. Experimental results have shown both promise in evaluating web source quality and improvement over existing techniques for knowledge fusion."  
 
-  - "Knowledge Vault and Knowledge-Based Trust" - <http://youtube.com/watch?v=Z6tmDdrBnpU> (Dong)
+  - <https://youtube.com/watch?v=Z6tmDdrBnpU> (Dong)
+  - <https://youtube.com/watch?v=6UNgtOhhGjI> (Dong)
 
 
 #### Nakashole, Mitchell - ["Language-Aware Truth Assessment of Fact Candidates"](https://aclweb.org/anthology/P/P14/P14-1095.pdf)  (truth finding)  # NELL

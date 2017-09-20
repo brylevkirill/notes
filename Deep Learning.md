@@ -37,7 +37,7 @@
 
   [overview](http://goo.gl/gvkiaR) by Yann LeCun, Yoshua Bengio, Geoffrey Hinton  
 
-  <http://deeplearningbook.org/contents/intro.html>  (Ian Goodfellow, Yoshua Bengio, Aaron Courville)  
+  <http://www.deeplearningbook.org/contents/intro.html>  (Ian Goodfellow, Yoshua Bengio, Aaron Courville)  
   <http://neuralnetworksanddeeplearning.com>  (Michael Nielsen)  
   <http://metacademy.org/roadmaps/rgrosse/deep_learning>  (Roger Grosse)  
   <http://yyue.blogspot.ru/2015/01/a-brief-overview-of-deep-learning.html>  (Ilya Sutskever)  
@@ -105,10 +105,9 @@
 
   [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)  
   [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
-  [natural language processing/understanding](https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt)  
-  [personal assistants](https://dropbox.com/s/0fyarlwcfb8mjdq/Personal%20Assistants.txt)  
-  [information retrieval](https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt)  
-  [computational biology](https://github.com/gokceneraslan/awesome-deepbio)  
+  [natural language processing/understanding](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt)  
+  [personal assistants](https://github.com/brylevkirill/notes/blob/master/Personal%20Assistants.txt)  
+  [information retrieval](https://github.com/brylevkirill/notes/blob/master/Information%20Retrieval.txt)  
   [other applications](https://dropbox.com/sh/dio0ypwiph44ehn/AAADQCyEutvVt9iugVU1F5S8a)  
 
 
@@ -316,33 +315,32 @@
   - *other hybrid architectures*  
 	We can more freely build all kinds of neural networks. For example, Bayesian non-parametrics could be used to flexibly adjust the size and shape of the hidden layers to optimally scale the network architecture to the problem at hand during training. Currently, this requires costly hyper-parameter optimization and a lot of tribal knowledge.
 
-  stochastic neural networks:  
-  - allow to learn one-to-many type of mappings  
-  - can be used in structured prediction problems, where modeling the internal structure of the output is important  
-  - benefit from stochasticity as regularizer, which makes generalization performance potentially better in general  
-
 ----
 
   ["Bayesian Reasoning and Deep Learning in Agent-based Systems"](https://youtube.com/watch?v=AggqBRdz6CQ) by Shakir Mohamed  
-  ["Principles and Applications of Deep Generative Models"](http://videolectures.net/deeplearning2016_mohamed_generative_models/) by Shakir Mohamed  
-  ["A History of Bayesian Neural Networks"](https://youtube.com/watch?v=FD8l2vPU5FY) by Zoubin Ghahramani  
+  ["Is Bayesian Deep Learning the Most Brilliant Thing Ever"](https://youtube.com/watch?v=HumFmLu3CJ8) panel discussion  
 
   ["Neurobayesian Approach for Machine Learning"](https://youtu.be/kFe5zSkro0E?t=17m16s) ([write-up](https://habrahabr.ru/company/yandex/blog/321434/) in russian)  
   ["Bayesian Inference and Deep Learning"](https://youtu.be/_qrHcSdQ2J4?t=22m31s) by Dmitry Vetrov (in russian)  
-  ["Learning in Stochastic Computation Graphs"](https://youtu.be/0q5p7xP4cdA?t=5h4m9s) by Dmitry Vetrov (in russian)  
-  ["Bridging The Gap Between Bayesian Models and Deep Learning"](https://youtube.com/watch?v=BKh7nj5SmnI) by Dmitry Vetrov (in russian)  
 
 ----
 
-  [Graphical Models](http://deeplearningbook.org/contents/graphical_models.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
+  ["A History of Bayesian Neural Networks"](https://youtube.com/watch?v=FD8l2vPU5FY) by Zoubin Ghahramani  
+  ["Bayesian Neural Networks"](https://youtube.com/watch?v=tqGEX_Ucu04) by Dmitry Molchanov (in russian)
+	([slides](https://drive.google.com/file/d/0B1xR8nRvoZdNMGR0Y2JsdG9CSGs/) in english)  
+  ["Bridging The Gap Between Bayesian Models and Deep Learning"](https://youtube.com/watch?v=BKh7nj5SmnI) by Dmitry Vetrov (in russian)  
+
+
+  "Most applications of neural nets can be considered graphical models that use neural nets to provide some of the conditional probability distributions. You could argue that the graphical model perspective is growing less useful because so many recent neural models have such simple graph structure (GANs, VAEs and NICE are bipartite graphs with every latent variable connected to every observed variable, PixelRNNs/MADE/NADE are the complete graph with no latent variables). These graphs are not very structured compared to neural models that were popular a few years ago like DBMs. But there are some recent models that make a little bit of use of graph structure, like VAEs with auxiliary variables." *(Ian Goodfellow)*
+
+
+  [Graphical Models](http://www.deeplearningbook.org/contents/graphical_models.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
 
   ["A Neural Network is a Monference, Not a Model"](http://blog.jacobandreas.net/monference.html) by Jacob Andreas  
   ["Deep Learning and Graphical Models"](https://plus.google.com/+YannLeCunPhD/posts/51gWtf7X3Ee) by Yann LeCun  
 
-  "Most applications of neural nets can be considered graphical models that use neural nets to provide some of the conditional probability distributions. You could argue that the graphical model perspective is growing less useful because so many recent neural models have such simple graph structure (GANs, VAEs and NICE are bipartite graphs with every latent variable connected to every observed variable, PixelRNNs/MADE/NADE are the complete graph with no latent variables). These graphs are not very structured compared to neural models that were popular a few years ago like DBMs. But there are some recent models that make a little bit of use of graph structure, like VAEs with auxiliary variables."
-
   see also ["generative models - variational autoencoder"](#generative-models---variational-autoencoder) section  
-  see also "[variational inference]" section of <https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt>  
+  see also "[variational inference]" section of <https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt>  
 
 ----
 
@@ -352,11 +350,7 @@
   ["What My Deep Model Doesn't Know..."](http://mlg.eng.cam.ac.uk/yarin/blog_3d801aa532c1ce.html) by Yarin Gal  
   ["Uncertainty In Deep Learning"](http://mlg.eng.cam.ac.uk/yarin/blog_2248.html) by Yarin Gal  
 
-  ["Bayesian Neural Networks"](https://youtube.com/watch?v=tqGEX_Ucu04) by Dmitry Molchanov (in russian)
-	([slides](https://drive.google.com/file/d/0B1xR8nRvoZdNMGR0Y2JsdG9CSGs/) in english)  
-
   ["Course on Information Theory, Pattern Recognition, and Neural Networks"](http://videolectures.net/course_information_theory_pattern_recognition/) by David MacKay  
-  ["Bayesian Methods for Adaptive Models"](http://www.inference.phy.cam.ac.uk/mackay/thesis.pdf) by David MacKay  
 
 ----
 
@@ -549,11 +543,10 @@
 
 ----
 
-  [overview](http://inference.vc/my-summary-of-adversarial-training-nips-workshop/) of workshop at NIPS 2016
-
-  <http://inference.vc/how-to-train-your-generative-models-why-generative-adversarial-networks-work-so-well-2/>  
-  <http://inference.vc/an-alternative-update-rule-for-generative-adversarial-networks/>  
-  <http://inference.vc/adversarial-preference-loss/>  
+  ["How to Train Your Generative Models? And Why Does Adversarial Training Work So Well?"](http://inference.vc/how-to-train-your-generative-models-why-generative-adversarial-networks-work-so-well-2/) by Ferenc Huszar  
+  ["An Alternative Update Rule for Generative Adversarial Networks"](http://inference.vc/an-alternative-update-rule-for-generative-adversarial-networks/) by Ferenc Huszar  
+  ["Adversarial Preference Loss"](http://inference.vc/adversarial-preference-loss/) by Ferenc Huszar  
+  ["New Perspectives on Adversarial Training"](http://inference.vc/my-summary-of-adversarial-training-nips-workshop/) by Ferenc Huszar  
 
 
   ["Some Open Questions"](http://www.offconvex.org/2017/03/15/GANs/) by Sanjeev Arora  
@@ -666,7 +659,7 @@
   [overview](http://youtube.com/watch?v=rjZL7aguLAs) by Durk Kingma  
 
 
-  see "[variational inference]" section of <https://dropbox.com/s/7vlg0vhb51rd6c1/Bayesian%20Inference%20and%20Learning.txt>
+  see "[variational inference]" section of <https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt>
 
 ----
 
@@ -872,7 +865,7 @@ examples:
 ---
 ### architectures - convolutional neural network
 
-  ["Convolutional Neural Network"](http://deeplearningbook.org/contents/convnets.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
+  ["Convolutional Neural Network"](http://www.deeplearningbook.org/contents/convnets.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
 
   [overview](https://youtube.com/watch?v=LxfUGhug-iQ) by Andrej Karpathy  
   [overview](https://youtube.com/watch?v=bNb2fEVKeEo) by Serena Young  
@@ -900,7 +893,7 @@ examples:
 ---
 ### architectures - recurrent neural network
 
-  ["Recurrent Neural Network"](http://deeplearningbook.org/contents/rnn.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
+  ["Recurrent Neural Network"](http://www.deeplearningbook.org/contents/rnn.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
 
   [overview](https://youtube.com/watch?v=yCC09vCHzF8) by Andrej Karpathy  
   [overview](https://youtube.com/watch?v=6niqTuYFZLQ) by Justin Johnson  
@@ -939,7 +932,10 @@ examples:
 
 ----
 
+  ["Limitations of RNNs: A Computational Perspective"](https://youtu.be/FIr_SaKT52U?t=30m27s) by Edward Grefenstette  
   ["Beyond Seq2Seq with Augmented RNNs"](http://videolectures.net/deeplearning2016_grefenstette_augmented_rnn/) by Edward Grefenstette  
+
+  ["Frontiers in Recurrent Neural Network Research"](https://youtube.com/watch?v=pwyBoPFsQ4M) by Alex Graves  
   ["New Directions for Recurrent Neural Networks"](https://facebook.com/iclr.cc/videos/1713144705381255/) by Alex Graves  
 
 
@@ -1068,7 +1064,7 @@ examples:
 
   ["From Machine Learning to Machine Reasoning"](http://research.microsoft.com/pubs/192773/tr-2011-02-08.pdf) by Leon Bottou ([talk](http://youtube.com/watch?v=tzp_BikdgyM))
 
-  ["Representation Learning"](http://deeplearningbook.org/contents/representation.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
+  ["Representation Learning"](http://www.deeplearningbook.org/contents/representation.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
 
 ----
 
@@ -1447,6 +1443,7 @@ interesting papers (see below):
   - <https://youtube.com/watch?v=Mqt8fs6ZbHk> (Hinton)
   - <http://techtv.mit.edu/collections/bcs/videos/30698-what-s-wrong-with-convolutional-nets> (Hinton) + <https://github.com/WalnutiQ/walnut/issues/157> (transcription)
   - <https://github.com/mrkulk/Unsupervised-Capsule-Network>
+  - "Dynamic Routing between Capsules" by Sabour, Frosst, Hinton - <https://research.google.com/pubs/pub46351.html>
   - "Transforming Auto-encoders" by Hinton, Krizhevsky, Wang - <http://www.cs.toronto.edu/~fritz/absps/transauto6.pdf>
   - "Optimizing Neural Networks that Generate Images" by Tieleman - <http://www.cs.toronto.edu/~tijmen/tijmen_thesis.pdf>
 
@@ -1671,6 +1668,7 @@ interesting papers (see below):
 
 >	"We are particularly interested in continuing to develop end-to-end learnable systems that can learn about semantic properties of programs, that can learn more complicated graph algorithms, and in applying these ideas to problems that require reasoning over knowledge bases and databases. More generally, we consider these graph neural networks as representing a step towards a model that can combine structured representations with the powerful algorithms of deep learning, with the aim of taking advantage of known structure while learning and inferring how to reason with and extend these representations."
 
+  - <https://youtu.be/pJ5EEesntbA?t=48m01s> (Tarlow)
   - <http://research.microsoft.com/apps/video/default.aspx?id=263975&r=1> (Li)
 
 
@@ -2054,6 +2052,7 @@ interesting papers (see below):
   - <http://videolectures.net/kdd2016_de_freitas_recurrent_neural/#t=3120> (de Freitas)
   - <http://videolectures.net/iclr2016_reed_neural_programmer/> (Reed)
   - <https://pseudoprofound.wordpress.com/2016/06/07/neural-programmer-interpreters-programs-that-can-learn-programs/>
+  - <http://near.ai/articles/2017-05-31-NPI/>
   - <https://reddit.com/r/MachineLearning/comments/3y4zai/ama_nando_de_freitas/cyc53gt>
   - <https://reddit.com/r/MachineLearning/comments/3y4zai/ama_nando_de_freitas/cydu4az>
   - <https://github.com/mokemokechicken/keras_npi>
@@ -2874,6 +2873,8 @@ x."
 
 [applications in reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---applications)
 
+[other applications](https://dropbox.com/sh/dio0ypwiph44ehn/AAADQCyEutvVt9iugVU1F5S8a)
+
 
 #### Wu et al. - ["Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation"](https://arxiv.org/abs/1609.08144)
 >	"Neural Machine Translation is an end-to-end learning approach for automated translation, with the potential to overcome many of the weaknesses of conventional phrase-based translation systems. Unfortunately, NMT systems are known to be computationally expensive both in training and in translation inference. Also, most NMT systems have difficulty with rare words. These issues have hindered NMT's use in practical deployments and services, where both accuracy and speed are essential. In this work, we present GNMT, Google's Neural Machine Translation system, which attempts to address many of these issues. Our model consists of a deep LSTM network with 8 encoder and 8 decoder layers using attention and residual connections. To improve parallelism and therefore decrease training time, our attention mechanism connects the bottom layer of the decoder to the top layer of the encoder. To accelerate the final translation speed, we employ low-precision arithmetic during inference computations. To improve handling of rare words, we divide words into a limited set of common sub-word units ("wordpieces") for both input and output. This method provides a good balance between the flexibility of "character"-delimited models and the efficiency of "word"-delimited models, naturally handles translation of rare words, and ultimately improves the overall accuracy of the system. Our beam search technique employs a length-normalization procedure and uses a coverage penalty, which encourages generation of an output sentence that is most likely to cover all the words in the source sentence. On the WMT'14 English-to-French and English-to-German benchmarks, GNMT achieves competitive results to state-of-the-art. Using a human side-by-side evaluation on a set of isolated simple sentences, it reduces translation errors by an average of 60% compared to Google's phrase-based production system."
@@ -3009,6 +3010,3 @@ x."
   - <http://techtalks.tv/talks/generative-adversarial-text-to-image-synthesis/62602/>
   - <https://github.com/reedscot/icml2016>
   - <https://github.com/paarthneekhara/text-to-image>
-
-
-other applications - <https://dropbox.com/sh/dio0ypwiph44ehn/AAADQCyEutvVt9iugVU1F5S8a>

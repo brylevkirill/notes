@@ -275,7 +275,7 @@ interesting papers (see below):
   - systems
 
 
-interesting papers (see https://dropbox.com/s/0kw1s9mrrcwct0u/Natural%20Language%20Processing.txt):
+interesting papers (see https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt):
   - semantic composition
   - semantic similarity
   - syntactic parsing
@@ -291,7 +291,7 @@ interesting papers (see https://github.com/brylevkirill/notes/blob/master/Knowle
   - question answering over texts
   - information extraction and integration
 
-interesting papers (see https://dropbox.com/s/21ugi2p9uy1shvt/Information%20Retrieval.txt)
+interesting papers (see https://github.com/brylevkirill/notes/blob/master/Information%20Retrieval.txt)
 
 
 
