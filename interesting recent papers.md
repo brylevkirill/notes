@@ -256,23 +256,27 @@ interesting papers:
 
 [Learning to Learn by Gradient Descent by Gradient Descent](http://arxiv.org/abs/1606.04474) (DeepMind)  
 >	"Take some computation where you usually wouldn’t keep around intermediate states, such as a planning computation (say value iteration, where you only keep your most recent estimate of the value function) or stochastic gradient descent (where you only keep around your current best estimate of the parameters). Now keep around those intermediate states as well, perhaps reifying the unrolled computation in a neural net, and take gradients to optimize the entire computation with respect to some loss function. Instances: Value Iteration Networks, Learning to learn by gradient descent by gradient descent."  
-  - <https://youtu.be/SAcHyzMdbXc?t=10m24s> (DeepMind)  
-  - <https://youtu.be/x1kf4Zojtb0?t=1h4m53s> (DeepMind)  
+  - <https://youtu.be/SAcHyzMdbXc?t=10m24s> (de Freitas)  
+  - <https://youtu.be/x1kf4Zojtb0?t=1h4m53s> (de Freitas)  
+  - <http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/> (27:49) (de Freitas)  
   - <https://theneuralperspective.com/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>  
   - <https://blog.acolyer.org/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>  
   - <https://hackernoon.com/learning-to-learn-by-gradient-descent-by-gradient-descent-4da2273d64f2>  
   - <https://github.com/deepmind/learning-to-learn>  
   - <https://github.com/ikostrikov/pytorch-meta-optimizer>  
 
-[Learning to Learn without Gradient Descent by Gradient Descent](https://arxiv.org/abs/1611.03824) (DeepMind)  
->	"Differentiable neural computers as alternatives to parallel Bayesian optimization for  hyperparameter tuning of other networks."  
-
 [Learned Optimizers that Scale and Generalize](http://arxiv.org/abs/1703.04813) (DeepMind)  
+  - <http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/> (42:40) (de Freitas)  
+
+[Learning to Learn without Gradient Descent by Gradient Descent](https://arxiv.org/abs/1611.03824) (DeepMind)  
+>	"Differentiable neural computers as alternatives to parallel Bayesian optimization for hyperparameter tuning of other networks."  
+  - <http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/> (52:35) (de Freitas)  
 
 [Optimization as a Model for Few-Shot Learning](https://openreview.net/forum?id=rJY0-Kcll) (Larochelle)  
 >	"Using LSTM meta-learner in a few-shot classification setting, where the traditional learner was a convolutional-network-based classifier. In this setting, the whole meta-learning algorithm is decomposed into two parts: the traditional learner’s initial parameters are trained to be suitable for fast gradient-based adaptation; the LSTM meta-learner is trained to be an optimization algorithm adapted for meta-learning tasks."  
 >	"few-shot learning by unrolling gradient descent on small training set" 
   - <https://facebook.com/iclr.cc/videos/1713144705381255/> (1:26:48) (Ravi)  
+  - <http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/> (1:08:08) (de Freitas)  
 
 ----
 [RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning](http://arxiv.org/abs/1611.02779) (OpenAI)  
@@ -387,6 +391,14 @@ interesting papers:
 >	"We propose and explore a more direct mechanism for representation learning, which explicitly links an agent’s control over its environment with its internal feature representations. Specifically, we hypothesize that some of the factors explaining variations in the data correspond to aspects of the world that can be controlled by the agent. For example, an object that could be pushed around or picked up independently of others is an independently controllable aspect of the environment. Our approach therefore aims to jointly discover a set of features (functions of the environment state) and policies (which change the state) such that each policy controls the associated feature while leaving the other features unchanged as much as possible."  
 >	"Assume that there are factors of variation underlying the observations coming from an interactive environment that are independently controllable. That is, a controllable factor of variation is one for which there exists a policy which will modify that factor only, and not the others. For example, the object associated with a set of pixels could be acted on independently from other objects, which would explain variations in its pose and scale when we move it around while leaving the others generally unchanged. The object position in this case is a factor of variation. What poses a challenge for discovering and mapping such factors into computed features is the fact that the factors are not explicitly observed. Our goal is for the agent to autonomously discover such factors – which we call independently controllable features – along with policies that control them. While these may seem like strong assumptions about the nature of the environment, we argue that these assumptions are similar to regularizers, and are meant to make a difficult learning problem (that of learning good representations which disentangle underlying factors) better constrained."  
   - <http://www.shortscience.org/paper?bibtexKey=journals/corr/BengioTPPB17#hlarochelle> (Larochelle)  
+
+[Discovering Causal Signals in Images](https://arxiv.org/abs/1605.08179) (Facebook AI Research)  
+>	"First, we take a learning approach to observational causal inference, and build a classifier that achieves state-of-the-art performance on finding the causal direction between pairs of random variables, when given samples from their joint distribution. Second, we use our causal direction finder to effectively distinguish between features of objects and features of their contexts in collections of static images. Our experiments demonstrate the existence of (1) a relation between the direction of causality and the difference between objects and their contexts, and (2) observable causal signals in collections of static images."  
+>	"Causal features are those that cause the presence of the object of interest in the image (that is, those features that cause the object’s class label), while anticausal features are those caused by the presence of the object in the image (that is, those features caused by the class label)."  
+>	"Paper aims to verify experimentally that the higher-order statistics of image datasets can inform about causal relations. Authors conjecture that object features and anticausal features are closely related and vice-versa context features and causal features are not necessarily related. Context features give the background while object features are what it would be usually inside bounding boxes in an image dataset."  
+>	"Better algorithms for causal direction should, in principle, help learning features that generalize better when the data distribution changes. Causality should help with building more robust features by awareness of the generating process of the data."  
+  - <https://youtube.com/watch?v=DfJeaa--xO0> (Bottou)  
+  - <http://giorgiopatrini.org/posts/2017/09/06/in-search-of-the-missing-signals/>  
 
 ----
 [SCAN: Learning Abstract Hierarchical Compositional Visual Concepts](https://arxiv.org/abs/1707.03389) (DeepMind)  
@@ -679,18 +691,16 @@ interesting papers:
   - <http://dustintran.com/blog/importance-weighted-autoencoders/>  
   - <https://github.com/yburda/iwae>  
   - <https://github.com/arahuja/generative-tf>  
-  - <https://github.com/blei-lab/edward/blob/master/examples/iwvi.py> (DeepMind)  
-
-[Variational Inference for Monte Carlo Objectives](http://arxiv.org/abs/1602.06725) (DeepMind)  
-  - <http://techtalks.tv/talks/variational-inference-for-monte-carlo-objectives/62507/>  
-  - <https://evernote.com/shard/s189/sh/54a9fb88-1a71-4e8a-b0e3-f13480a68b8d/0663de49b93d397f519c7d7f73b6a441>  
+  - <https://github.com/blei-lab/edward/blob/master/examples/iwvi.py>  
 
 [Discrete Variational Autoencoders](https://arxiv.org/abs/1609.02200) (D-Wave)  
   - <https://youtube.com/watch?v=c6GukeAkyVs> (Struminsky)  
 
 ----
 [The Concrete Distribution: A Continuous Relaxation of Discrete Random Variables](http://arxiv.org/abs/1611.00712) (DeepMind)  
+[Categorical Reparametrization with Gumbel-Softmax](http://arxiv.org/abs/1611.01144) (Google Brain)  
   - <http://youtube.com/watch?v=JFgXEbgcT7g> (Jang)  
+  - <https://youtu.be/_XRBlhzb31U?t=28m33s> (Figurnov) (in russian)  
   - <https://laurent-dinh.github.io/2016/11/22/gumbel-max.html>  
   - <https://casmls.github.io/general/2017/02/01/GumbelSoftmax.html>  
   - <http://timvieira.github.io/blog/post/2014/07/31/gumbel-max-trick/>  
@@ -698,20 +708,11 @@ interesting papers:
   - <https://hips.seas.harvard.edu/blog/2013/04/06/the-gumbel-max-trick-for-discrete-distributions/>  
   - <https://github.com/ericjang/gumbel-softmax/blob/master/gumbel_softmax_vae_v2.ipynb>  
   - <https://gist.github.com/gngdb/ef1999ce3a8e0c5cc2ed35f488e19748>  
-
-[Categorical Reparametrization with Gumbel-Softmax](http://arxiv.org/abs/1611.01144) (Google Brain)  
-  - <http://youtube.com/watch?v=JFgXEbgcT7g> (Jang)  
-  - <http://blog.evjang.com/2016/11/tutorial-categorical-variational.html>  
-  - <https://laurent-dinh.github.io/2016/11/22/gumbel-max.html>  
-  - <https://casmls.github.io/general/2017/02/01/GumbelSoftmax.html>  
-  - <http://timvieira.github.io/blog/post/2014/07/31/gumbel-max-trick/>  
-  - <https://cmaddis.github.io/gumbel-machinery>  
-  - <https://hips.seas.harvard.edu/blog/2013/04/06/the-gumbel-max-trick-for-discrete-distributions/>  
-  - <https://github.com/ericjang/gumbel-softmax/blob/master/gumbel_softmax_vae_v2.ipynb>  
   - <https://github.com/EderSantana/gumbel>  
 
 [REBAR: Low-variance, unbiased gradient estimates for discrete latent variable models](http://arxiv.org/abs/1703.07370) (Google Brain + DeepMind)  
->	"Learning in models with discrete latent variables is challenging due to high variance gradient estimators. Generally, approaches have relied on control variates to reduce the variance of the REINFORCE estimator. Recent work (Jang et al. 2016, Maddison et al. 2016) has taken a different approach, introducing a continuous relaxation of discrete variables to produce low-variance, but biased, gradient estimates. In this work, we combine the two approaches through a novel control variate that produces low-variance, unbiased gradient estimates."  
+>	"Learning in models with discrete latent variables is challenging due to high variance gradient estimators. Generally, approaches have relied on control variates to reduce the variance of the REINFORCE estimator. Recent work (Jang et al. 2016; Maddison et al. 2016) has taken a different approach, introducing a continuous relaxation of discrete variables to produce low-variance, but biased, gradient estimates. In this work, we combine the two approaches through a novel control variate that produces low-variance, unbiased gradient estimates."  
+  - <https://github.com/tensorflow/models/tree/master/research/rebar>  
 
 ----
 [Multi-modal Variational Encoder-Decoders](http://arxiv.org/abs/1612.00377) (Courville)  
@@ -772,8 +773,11 @@ interesting papers:
 ### generative models - autoregressive models
 
 [Attention Is All You Need](https://arxiv.org/abs/1706.03762) (Google Brain)  # Transformer  
+>	"The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely."  
+  - <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) (in russian)  
   - <https://research.googleblog.com/2017/08/transformer-novel-neural-network.html>  
   - <https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/>  
+  - <https://medium.com/@sharaf/a-paper-a-day-24-attention-is-all-you-need-26eb2da90a91>  
   - <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/transformer.py>  
 
 ----
@@ -976,6 +980,7 @@ interesting papers:
 [Learning Visual Reasoning Without Strong Priors](https://arxiv.org/abs/1707.03017) (MILA)  
 
 [A Simple Neural Network Module for Relational Reasoning](https://arxiv.org/abs/1706.01427) (DeepMind)  
+  - <https://youtube.com/channel/UCIAnkrNn45D0MeYwtVpmbUQ> (demo)  
   - <https://soundcloud.com/nlp-highlights/20a>  
   - <http://www.shortscience.org/paper?bibtexKey=journals/corr/1706.01427>  
   - <https://github.com/kimhc6028/relational-networks>  
@@ -1254,14 +1259,17 @@ hieves."
 >	"We introduce exploration potential, a quantity that measures how much a reinforcement learning agent has explored its environment class. In contrast to information gain, exploration potential takes the problem's reward structure into account."  
 
 ----
-[Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) (DeepMind)    # exploration in policy space guided by parametrized noise  
+[Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295) (DeepMind)    # deeper random exploration  
 >	"scale of perturbation to parameters is learned along with original objective function"  
   - <https://github.com/Kaixhin/NoisyNet-A3C>  
   - <https://github.com/andrewliao11/NoisyNet-DQN>  
 
-[Parameter Space Noise for Exploration](https://arxiv.org/abs/1706.01905) (OpenAI)    # exploration in policy space guided by noise  
+[Parameter Space Noise for Exploration](https://arxiv.org/abs/1706.01905) (OpenAI)    # deeper random exploration  
 
-[Deep Exploration via Randomized Value Functions](https://arxiv.org/abs/1703.07608) (Osband)    # exploration in policy space guided by noise  
+----
+[UCB and InfoGain Exploration via Q-Ensembles](https://arxiv.org/abs/1706.01502) (OpenAI)    # approximate bayesian exploration  
+
+[Deep Exploration via Randomized Value Functions](https://arxiv.org/abs/1703.07608) (Osband)    # approximate bayesian exploration  
 >	"A very recent thread of work builds on count-based (or upper-confidence-bound-based) exploration schemes that operate with value function learning. These methods maintain a density over the state-action space of pseudo-counts, which represent the quantity of data gathered that is relevant to each state-action pair. Such algorithms may offer a viable approach to deep exploration with generalization. There are, however, some potential drawbacks. One is that a separate representation is required to generalize counts, and it's not clear how to design an effective approach to this. As opposed to the optimal value function, which is fixed by the environment, counts are generated by the agent’s choices, so there is no single target function to learn. Second, the count model generates reward bonuses that distort data used to fit the value function, so the value function representation needs to be designed to not only capture properties of the true optimal value function but also such distorted versions. Finally, these approaches treat uncertainties as uncoupled across state-action pairs, and this can incur a substantial negative impact on statistical efficiency."  
   - <http://youtube.com/watch?v=ck4GixLs4ZQ> (Osband) + [slides](https://docs.google.com/presentation/d/1lis0yBGT-uIXnAsi0vlP3SuWD2svMErJWy_LYtfzMOA/)  
 
@@ -1312,6 +1320,7 @@ hieves."
   - <https://youtube.com/watch?v=EHHiFwStqaA> (demo)  
   - <https://youtube.com/watch?v=X1O21ziUqUY> (Fergus)  
   - <https://youtube.com/watch?v=pSJC9hNt3Uw> (Szlam)  
+  - <http://giorgiopatrini.org/posts/2017/09/06/in-search-of-the-missing-signals/>  
 
 [Towards Information-Seeking Agents](http://arxiv.org/abs/1612.02605) (Maluuba)    # structured exploration in policy space guided by learning progress  
   - <https://youtube.com/watch?v=3bSquT1zqj8> (demo)  
@@ -1587,6 +1596,7 @@ hieves."
 >	"We develop a new version of GAIL that (1) is much more robust than the purely-supervised controller, especially with few demonstrations, and (2) avoids mode collapse, capturing many diverse behaviors when GAIL on its own does not."  
 >	"The base of our model is a new type of variational autoencoder on demonstration trajectories that learns semantic policy embeddings, which can be smoothly interpolated with a resulting smooth interpolation of reaching behavior."  
   - <https://youtube.com/watch?v=necs0XfnFno> (demo)  
+  - <http://videolectures.net/deeplearning2017_de_freitas_deep_control/> (1:16:00) (de Freitas)  
 
 [Model-based Adversarial Imitation Learning](http://arxiv.org/abs/1612.02179)  
 >	"Model-free approach does not allow the system to be differentiable, which requires the use of high-variance gradient estimations."  
@@ -1595,6 +1605,7 @@ hieves."
 [Generative Adversarial Imitation Learning](http://arxiv.org/abs/1606.03476)  
 >	"Uses a GAN framework to discriminate between teacher and student experience and force the student to behave close to the teacher."  
   - <https://youtube.com/watch?v=bcnCo9RxhB8> (Ermon)  
+  - <http://videolectures.net/deeplearning2017_de_freitas_deep_control/> (1:09:43) (de Freitas)  
   - <https://github.com/openai/imitation>  
   - <https://github.com/DanielTakeshi/rl_algorithms/tree/master/il>  
 
@@ -1615,6 +1626,7 @@ hieves."
 
 [One-Shot Imitation Learning](http://arxiv.org/abs/1703.07326) (OpenAI)  
   - <http://bit.ly/one-shot-imitation> (demo)  
+  - <http://videolectures.net/deeplearning2017_de_freitas_deep_control/> (1:03:10) (de Freitas)  
 
 [Guided Cost Learning: Deep Inverse Optimal Control via Policy Optimization](http://arxiv.org/abs/1603.00448) (Abbeel)  
   - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (22:48) (Levine)  
@@ -1687,6 +1699,7 @@ hieves."
 
 [Programmable Agents](https://arxiv.org/abs/1706.06383) (DeepMind)  
   - <https://youtube.com/playlist?list=PLs1LSEoK_daRDnPUB2u7VAXSonlNU7IcV> (demo)  
+  - <http://videolectures.net/deeplearning2017_de_freitas_deep_control/> (32:57) (de Freitas)  
 
 [Emergent Language in a Multi-Modal, Multi-Step Referential Game](https://arxiv.org/abs/1705.10369)  
 

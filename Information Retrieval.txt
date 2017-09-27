@@ -62,7 +62,7 @@
   - dealing with rare queries and rare words
   - modelling text at different granularities (character, word, passage, document)
   - compositionality of vector representations
-  - jointly modelling queries, documents, entities and other structured/knowledge data
+  - jointly modelling queries, documents, entities and other structured data
 
 
 

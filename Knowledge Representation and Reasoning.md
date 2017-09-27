@@ -727,9 +727,9 @@
 
 
   [introduction](https://youtu.be/uAk152lIib0?t=25m51s) by Chris Manning  
-  ["Open Domain Inference with Natural Logic"](https://youtube.com/watch?v=EX1hKxePxkk) by Angeli  
+  ["Open Domain Inference with Natural Logic"](https://youtube.com/watch?v=EX1hKxePxkk) by Gabor Angeli  
 
-  ["Natural Logic: logical inference over text"](http://akbc.ws/2016/slides/manning-akbc16.pdf) by Manning  
+  ["Natural Logic: logical inference over text"](http://akbc.ws/2016/slides/manning-akbc16.pdf) by Chris Manning  
   ["Learning Distributed Word Representations for Natural Logic Reasoning"](https://goo.gl/CCofxS) by Bowman, Potts, Manning  
 
 ----
@@ -742,7 +742,7 @@
   ["Simply Logical - Intelligent Reasoning by Example"](https://www.cs.bris.ac.uk/~flach/SL/SL.pdf) by Peter Flach
 
 
-  *(Josef Urban)* "Quite reachable is deep automated semantic understanding of most of LaTeX-written mathematical textbooks. This has been blocked by three factors: (i) lack of annotated formal/informal corpora to train such semantic parsing on, (ii) lack of sufficiently large repository of background mathematical knowledge needed for “obvious-knowledge gap-filling”, and (iii) lack of sufficiently strong large-theory ATP that could fill the reasoning gaps using the large repository of background knowledge. One way to try to get them automatically is again through basic computer understanding of LaTeX-written mathematical texts, and learning what high-level concepts like “by analogy” and “using diagonalization” exactly semantically mean in various contexts. This is also related to the ability to reformulate problems and map them to a setting (for current ATPs, the best is purely equational) where the theorem proving becomes more easy. And another related work that needs to be done is “explaining back” the long ATP proofs using an understandable mathematical presentation." [<https://intelligence.org/2013/12/21/josef-urban-on-machine-learning-and-automated-reasoning/>]
+  "Quite reachable is deep automated semantic understanding of most of LaTeX-written mathematical textbooks. This has been blocked by three factors: (i) lack of annotated formal/informal corpora to train such semantic parsing on, (ii) lack of sufficiently large repository of background mathematical knowledge needed for “obvious-knowledge gap-filling”, and (iii) lack of sufficiently strong large-theory ATP that could fill the reasoning gaps using the large repository of background knowledge. One way to try to get them automatically is again through basic computer understanding of LaTeX-written mathematical texts, and learning what high-level concepts like “by analogy” and “using diagonalization” exactly semantically mean in various contexts. This is also related to the ability to reformulate problems and map them to a setting (for current ATPs, the best is purely equational) where the theorem proving becomes more easy. And another related work that needs to be done is “explaining back” the long ATP proofs using an understandable mathematical presentation." [*(Josef Urban)*](https://intelligence.org/2013/12/21/josef-urban-on-machine-learning-and-automated-reasoning/)
 
 ----
 
@@ -838,41 +838,9 @@
   - *Facebook bAbi*  
 	<http://fb.ai/babi>
 
-	- basic factoid qa with single supporting fact
-	- factoid qa with two supporting facts
-	- factoid qa with three supporting facts
-	- two argument relations: subject vs object
-	- three argument relations
-	- yes/no questions
-	- counting
-	- lists/sets
-	- simple negation
-	- indefinite knowledge
-	- basic coreference
-	- conjunction
-	- compound coreference
-	- time manipulation
-	- basic deduction
-	- basic induction
-	- positional reasoning
-	- reasoning about size
-	- path finding
-	- reasoning about agent’s motivations
 
-
-  - *SemEval*  
-	<http://alt.qcri.org/semeval2014/index.php?id=tasks>
-
-	- evaluation of compositional distributional semantic models on full sentences through semantic relatedness and entailment
-	- grammar induction for spoken dialogue systems
-	- cross-level semantic similarity
-	- aspect based sentiment analysis
-	- L2 writing assistant
-	- supervised semantic parsing of spatial robot commands
-	- analysis of clinical text
-	- broad-coverage semantic dependency parsing
-	- sentiment analysis in Twitter
-	- multilingual semantic textual similarity
+  - *Stanford Question Answering Dataset (SQuAD)*
+	<https://rajpurkar.github.io/SQuAD-explorer/>
 
 
   - *WikiTableQuestions*  
@@ -881,13 +849,6 @@
 
   - *TAC Knowledge Base Population*  
 	<http://www.nist.gov/tac/2017/KBP/>
-
-	- entity discovery
-	- slot filling
-	- tri-lingual entity discovery and linking
-	- event detection and linking
-	- event argument extraction and linking
-	- combining or refining independent slot fillings
 
 	["Overview of TAC-KBP2014 Entity Discovery and Linking Tasks"](http://nlp.cs.rpi.edu/paper/edl2014overview.pdf)
 	
@@ -1066,9 +1027,9 @@
   [Automated Knowledge Base Construction](http://akbc.ws) workshop  
   - [AKBC 2017](http://akbc.ws/2017/)  
   - [AKBC 2016](http://akbc.ws/2016/)  
-  - [AKBC 2014 videos](http://youtube.com/user/NeuralInformationPro/search?query=AKBC)  
-  - [AKBC 2012 videos](http://videolectures.net/akbcwekex2012_montreal/)  
-  - [AKBC 2010 videos](http://videolectures.net/akbc2010_grenoble/)  
+  - [AKBC 2014 (videos)](http://youtube.com/user/NeuralInformationPro/search?query=AKBC)  
+  - [AKBC 2012 (videos)](http://videolectures.net/akbcwekex2012_montreal/)  
+  - [AKBC 2010 (videos)](http://videolectures.net/akbc2010_grenoble/)  
 
   [Knowledge Base Construction, Reasoning and Mining](http://kbcom.org) workshop
 

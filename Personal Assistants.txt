@@ -66,7 +66,9 @@
   "What works in favor of dialogue management is that unlike the domains mentioned above, dialogue between a user and an assistant is a collaborative game where two players work together to accomplish a goal. One player, the user, needs to access some information or complete some action, and the other player, the dialogue system, has access to a database or service through which the user’s goal can be achieved. The two players communicate with each other through dialogue moves (we refer to these as dialog acts). The user is usually willing to provide explicit or implicit feedback about the system’s actions if it leads to demonstrable improvements in the system’s performance). Dialogue systems which can take advantage of this feedback could potentially accelerate their learning. Moreover, such interactive feedback from actual users of the system is valuable for adapting the system to handle dialogue flows that were not present in the training corpus or were not covered by the user simulator."
 
 
-  "Statistical Spoken Dialogue Systems and the Challenges for Machine Learning" by Steve Young - http://mi.eng.cam.ac.uk/~sjy/presentations/SSDS-Challenges.pdf
+  "Statistical Spoken Dialogue Systems and the Challenges for Machine Learning" by Steve Young -
+	http://videolectures.net/aaai2017_young_machine_learning/
+	http://mi.eng.cam.ac.uk/~sjy/presentations/SSDS-Challenges.pdf
 
   https://recherche.orange.com/en/dialogue-with-machines-between-fantasy-and-reality/
 

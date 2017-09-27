@@ -372,6 +372,7 @@ following up conjectures suggested by analogies). Good mathematicians see analog
   [overview](http://scholarpedia.org/article/Metalearning) by Tom Schaul and Juergen Schmidhuber  
 
   ["Learning to Learn, to Program, to Explore and to Seek Knowledge"](https://youtube.com/watch?v=SAcHyzMdbXc) by Nando de Freitas  
+  ["Learning to Learn"](http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/) by Nando de Freitas  
   ["Learning how to Learn Learning Algorithms: Recursive Self-Improvement"](https://youtube.com/watch?v=nqiUFc52g78) by Juergen Schmidhuber  
   ["The Future of Machines that Learn Algorithms"](https://youtube.com/watch?v=zSNkbhgMkzQ) panel with Juergen Schmidhuber, Ilya Sutskever, Alex Graves and others  
 

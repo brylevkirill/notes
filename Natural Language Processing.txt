@@ -455,6 +455,14 @@ Norouzi, Bengio, Chen, Jaitly, Schuster, Wu, Schuurmans - "Reward Augmented Maxi
 	-- http://www.shortscience.org/paper?bibtexKey=conf%2Fnips%2FNorouziBCJSWS16
 	-- "Softmax Q-Distribution Estimation for Structured Prediction: A Theoretical Interpretation for RAML" - https://arxiv.org/abs/1705.07136
 
+Vaswani et al. - "Attention Is All You Need" [https://arxiv.org/abs/1706.03762]
+	"The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.0 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data."
+	-- https://youtu.be/_XRBlhzb31U?t=48m35s (Figurnov) (in russian)
+	-- https://research.googleblog.com/2017/08/transformer-novel-neural-network.html
+	-- https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/
+	-- https://medium.com/@sharaf/a-paper-a-day-24-attention-is-all-you-need-26eb2da90a91
+	-- https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/transformer.py
+
 
 
 
@@ -645,9 +653,9 @@ Vilnis, McCallum - "Word Representations via Gaussian Embedding" [http://arxiv.o
 	 - captures uncertainty of representation
 	 - enhances asymmetric reasoning such as entailment/implicature
 	 - more expressive decision boundaries and representational power"
-	-- <http://youtu.be/Xm1XGjc9lDc?t=14m52s> (McCallum)
-	-- <http://youtube.com/watch?v=PKTfALFk03M> + <http://iclr.cc/lib/exe/fetch.php?media=iclr2015:vilnis-iclr2015.pdf> (Vilnis)
-	-- <https://github.com/seomoz/word2gauss>
+	-- http://youtu.be/Xm1XGjc9lDc?t=14m52s (McCallum)
+	-- http://youtube.com/watch?v=PKTfALFk03M (Vilnis)
+	-- https://github.com/seomoz/word2gauss
 
 
 
@@ -1060,14 +1068,11 @@ Sutskever, Vinyals, Le - "Sequence to Sequence Learning with Neural Networks" [h
 
 Bahdanau, Cho, Bengio - "Neural Machine Translation by Jointly Learning to Align and Translate" [http://arxiv.org/abs/1409.0473]
 	"Neural machine translation is a recently proposed approach to machine translation. Unlike the traditional statistical machine translation, the neural machine translation aims at building a single neural network that can be jointly tuned to maximize the translation performance. The models proposed recently for neural machine translation often belong to a family of encoder–decoders and encodes a source sentence into a fixed-length vector from which a decoder generates a translation. In this paper, we conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder–decoder architecture, and propose to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly. With this new approach, we achieve a translation performance comparable to the existing state-of-the-art phrase-based system on the task of English-to-French translation. Furthermore, qualitative analysis reveals that the (soft-)alignments found by the model agree well with our intuition."
-	-- http://www.iclr.cc/lib/exe/fetch.php?media=iclr2015:bahdanau-iclr2015.pdf
 	-- http://slideshot.epfl.ch/play/khnnunGF0elc (Cho)
-	-- http://lisa.iro.umontreal.ca/mt-demo/
-	-- https://github.com/lisa-groundhog/GroundHog/
+	-- https://youtu.be/_XRBlhzb31U?t=42m26s (Figurnov) (in russian)
 	-- http://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-with-gpus/
 	-- http://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-gpus-part-2/
 	-- http://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-gpus-part-3/
-	-- "Neural Machine Translation: Progress Report" - https://drive.google.com/file/d/0B16RwCMQqrtdNUptOGtDeDhxZ0E
 
 Luong, Sutskever, Le, Vinyals, Zaremba - "Addressing the Rare Word Problem in Neural Machine Translation" [http://arxiv.org/abs/1410.8206]
 	"Neural Machine Translation has recently attracted a lot of attention due to the very high performance achieved by deep neural networks in other domains. An inherent weakness in existing NMT systems is their inability to correctly translate rare words: end-to-end NMTs tend to have relatively small vocabularies with a single “unknown-word” symbol representing every possible out-of-vocabulary word. In this paper, we propose and implement a simple technique to address this problem. We train an NMT system on data that is augmented by the output of a word alignment algorithm, allowing the NMT system to output, for each OOV word in the target sentence, its corresponding word in the source sentence. This information is later utilized in a post-processing step that translates every OOV word using a dictionary. Our experiments on the WMT’14 English to French translation task show that this simple method provides a substantial improvement over an equivalent NMT system that does not use this technique. The performance of our system achieves a BLEU score of 37.5, which improves upon the previous best end-to-end NMT by 2.7 points. Our NMT system is the first to surpass the existing state-of-the-art performance on a WMT’14 contest task."
