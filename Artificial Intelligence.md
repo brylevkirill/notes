@@ -36,7 +36,7 @@
 ### overview
 
   - Juergen Schmidhuber  
-	["Compression Progress: The Algorithmic Principle Behind Curiosity and Creativity"](https://vimeo.com/7441291)  
+	["Compression Progress: The Algorithmic Principle Behind Curiosity and Creativity"](https://youtube.com/watch?v=h7F5sCLIbKQ)  
 	["Formal Theory of Fun & Creativity"](http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/)  
 
   - Demis Hassabis  
@@ -427,10 +427,10 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 ----
 
   overview by Juergen Schmidhuber:  
-	<https://vimeo.com/7441291#t=7m12s>  
+	<https://youtube.com/watch?v=h7F5sCLIbKQ&t=7m12s>  
 	<http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/>  
-	<https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber>  
 	<https://vimeo.com/28759091>  
+	<https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber>  
 
   ["Driven by compression progress: A simple principle explains essential aspects of subjective beauty, novelty, surprise, interestingness, attention, curiosity, creativity, art, science, music, jokes"](http://arxiv.org/abs/0812.4360) by Juergen Schmidhuber
 >	"I argue that data becomes temporarily interesting by itself to some self-improving, but computationally limited, subjective observer once he learns to predict or compress the data in a better way, thus making it subjectively simpler and more beautiful. Curiosity is the desire to create or discover more non-random, non-arbitrary, regular data that is novel and surprising not in the traditional sense of Boltzmann and Shannon but in the sense that it allows for compression progress because its regularity was not yet known. This drive maximizes interestingness, the first derivative of subjective beauty or compressibility, that is, the steepness of the learning curve. It motivates exploring infants, pure mathematicians, composers, artists, dancers, comedians, yourself, and artificial systems."
@@ -616,7 +616,7 @@ interesting papers:
   - [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers)  
 
 
-interesting papers (see below):  
+interesting papers:  
   - [definitions and measures of intelligence](#interesting-papers---definitions-and-measures-of-intelligence)  
   - [Solomonoff Induction and AIXI](#interesting-papers---solomonoff-induction-and-aixi)  
   - [Artificial Curiosity and Creativity](#interesting-papers---artificial-curiosity-and-creativity)  
@@ -781,10 +781,10 @@ interesting papers (see below):
 >	"In the real world external rewards are rare. But unsupervised AGIs using additional intrinsic rewards as described in this paper will be motivated to learn many useful behaviors even in absence of external rewards, behaviors that lead to predictable or compressible results and thus reflect regularities in the environment, such as repeatable patterns in the world’s reactions to certain action sequences. Often a bias towards exploring previously unknown environmental regularities through artificial curiosity / creativity is a priori desirable because goal-directed learning may greatly profit from it, as behaviors leading to external reward may often be rather easy to compose from previously learnt curiosity-driven behaviors. It may be possible to formally quantify this bias towards novel patterns in form of a mixture-based prior, a weighted sum of probability distributions on sequences of actions and resulting inputs, and derive precise conditions for improved expected external reward intake. Intrinsic reward may be viewed as analogous to a regularizer in supervised learning, where the prior distribution on possible hypotheses greatly influences the most probable interpretation of the data in a Bayesian framework (for example, the well-known weight decay term of neural networks is a consequence of a Gaussian prior with zero mean for each weight). Following the introductory discussion, some of the AGIs based on the creativity principle will become scientists, artists, or comedians."
 
   - <http://idsia.ch/~juergen/creativity.html>
-  - <https://vimeo.com/7441291#t=7m12s> (Schmidhuber)  
+  - <https://youtube.com/watch?v=h7F5sCLIbKQ&t=7m12s> (Schmidhuber)
   - <http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/> (Schmidhuber)
-  - <https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber> (Schmidhuber)
   - <https://vimeo.com/28759091> (Schmidhuber)
+  - <https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber> (Schmidhuber)
 
 
 #### Houthooft, Chen, Duan, Schulman, Turck, Abbeel - ["VIME: Variational Information Maximizing Exploration"](http://arxiv.org/abs/1605.09674)

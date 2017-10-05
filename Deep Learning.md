@@ -538,7 +538,8 @@
   [tutorial](https://dl.dropboxusercontent.com/u/16027344/ICML%202015%20Deep%20Learning%20Workshop/Ian%20Goodfellow%2C%20GOOGLE.p2g/Default.html) at ICML 2015 by Ian Goodfellow  
 
 
-  [overview](https://youtube.com/watch?v=jAI3rBI6poU) of implicit generative models by Dmitry Ulyanov (in russian)
+  [overview](https://youtube.com/watch?v=m80Vp-jz-Io) by Iliya Tolstikhin  
+  [overview](https://youtube.com/watch?v=jAI3rBI6poU) by Dmitry Ulyanov (in russian)
 	([slides](https://drive.google.com/open?id=0B_-hq6gL70bUQmhhQ3dwU2lPQXM) in english)  
 
 ----
@@ -647,10 +648,8 @@
   [introduction](http://jaan.io/what-is-variational-autoencoder-vae-tutorial/) by Jaan Altosaar  
   [introduction](https://vdumoulin.github.io/morphing_faces/) by Vincent Dumoulin  
 
-  [tutorial](http://arxiv.org/abs/1606.05908) by Carl Doersch ([code](https://github.com/cdoersch/vae_tutorial))
-
-  ["Variational auto-encoders do not train complex generative models"](http://dustintran.com/blog/variational-auto-encoders-do-not-train-complex-generative-models/) by Dustin Tran  
-
+  [tutorial](http://arxiv.org/abs/1606.05908) by Carl Doersch ([code](https://github.com/cdoersch/vae_tutorial))  
+  ["Variational Inference & Deep Learning: A New Synthesis"](https://dropbox.com/s/v6ua3d9yt44vgb3/cover_and_thesis.pdf) by Diederik Kingma  
 
   [overview](http://videolectures.net/deeplearning2015_courville_autoencoder_extension/) by Aaron Courville  
   [overview](https://youtu.be/_qrHcSdQ2J4?t=1h37m21s) by Dmitry Vetrov (in russian)  
@@ -659,7 +658,8 @@
   [overview](http://youtube.com/watch?v=rjZL7aguLAs) by Durk Kingma  
 
 
-  see "[variational inference]" section of <https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt>
+  ["Variational auto-encoders do not train complex generative models"](http://dustintran.com/blog/variational-auto-encoders-do-not-train-complex-generative-models/) by Dustin Tran  
+  see "[variational inference]" section of <https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt>  
 
 ----
 
@@ -1062,8 +1062,6 @@ examples:
 
   ["Distributed Representations"](http://www.cs.toronto.edu/~bonner/courses/2014s/csc321/lectures/lec5.pdf) by Geoffrey Hinton
 
-  ["From Machine Learning to Machine Reasoning"](http://research.microsoft.com/pubs/192773/tr-2011-02-08.pdf) by Leon Bottou ([talk](http://youtube.com/watch?v=tzp_BikdgyM))
-
   ["Representation Learning"](http://www.deeplearningbook.org/contents/representation.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
 
 ----
@@ -1110,6 +1108,8 @@ examples:
   "Word Embeddings: Explaining their properties" by Sanjeev Arora
 	([part 1](http://www.offconvex.org/2015/12/12/word-embeddings-1/), [part 2](http://www.offconvex.org/2016/02/14/word-embeddings-2/))  
 
+  ["Deep Meaning Beyond Thought Vectors"](https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/) by David McAllester
+
   ["Low-Dimensional Embeddings of Logic"](http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/) by Tim Rocktaschel
 
 ----
@@ -1131,7 +1131,7 @@ examples:
 [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md)
 
 
-interesting papers (see below):  
+interesting papers:  
   - [theory](#interesting-papers---theory)  
   - [connections to biology](#connections-to-biology)  
   - [architectures](#interesting-papers---architectures)  
@@ -1193,19 +1193,23 @@ interesting papers (see below):
   - <https://youtube.com/watch?v=bLqJHjXihK8> (Tishby)
   - <https://youtube.com/watch?v=ekUWO_pI2M8> (Tishby)
   - <https://theneuralperspective.com/2017/03/24/opening-the-black-box-of-deep-neural-networks-via-information/>
+  - <https://quantamagazine.org/new-theory-cracks-open-the-black-box-of-deep-learning-20170921>
   - <https://reddit.com/r/MachineLearning/comments/60fhyb/r_opening_the_black_box_of_deep_neural_networks/df8jsbm/>
 
 
-#### Hinton, Vinyals, Dean - ["Distilling the Knowledge in a Neural Network"](http://arxiv.org/abs/1503.02531)
->	"A very simple way to improve the performance of almost any machine learning algorithm is to train many different models on the same data and then to average their predictions. Unfortunately, making predictions using a whole ensemble of models is cumbersome and may be too computationally expensive to allow deployment to a large number of users, especially if the individual models are large neural nets. Caruana and his collaborators have shown that it is possible to compress the knowledge in an ensemble into a single model which is much easier to deploy and we develop this approach further using a different compression technique. We achieve some surprising results on MNIST and we show that we can significantly improve the acoustic model of a heavily used commercial system by distilling the knowledge in an ensemble of models into a single model. We also introduce a new type of ensemble composed of one or more full models and many specialist models which learn to distinguish fine-grained classes that the full models confuse. Unlike a mixture of experts, these specialist models can be trained rapidly and in parallel."
+#### Hardt, Recht, Singer - ["Train Faster, Generalize Better: Stability of Stochastic Gradient Descent"](http://arxiv.org/abs/1509.01240)
+>	"We show that parametric models trained by a stochastic gradient method with few iterations have vanishing generalization error. We prove our results by arguing that SGM is algorithmically stable in the sense of Bousquet and Elisseeff. Our analysis only employs elementary tools from convex and continuous optimization. We derive stability bounds for both convex and non-convex optimization under standard Lipschitz and smoothness assumptions. Applying our results to the convex case, we provide new insights for why multiple epochs of stochastic gradient methods generalize well in practice. In the non-convex case, we give a new interpretation of common practices in neural networks, and formally show that popular techniques for training large deep models are indeed stability-promoting. Our findings conceptually underscore the importance of reducing training time beyond its obvious benefit."
 
->	"How can we produce neural nets that learn good representations without as much training data or parameters?"
+  - <http://argmin.net/2016/04/18/bottoming-out/> (Recht)
+  - <http://www.offconvex.org/2016/03/14/stability/> (Hardt)
+  - <http://www.offconvex.org/2016/03/22/saddlepoints/> (Ge)
+  - <http://www.offconvex.org/2016/03/24/saddles-again/> (Recht)
 
->	"A simple way to improve classification performance is to average the predictions of a large ensemble of different classifiers. This is great for winning competitions but requires too much computation at test time for practical applications such as speech recognition. In a widely ignored paper in 2006, Caruana and his collaborators showed that the knowledge in the ensemble could be transferred to a single, efficient model by training the single model to mimic the log probabilities of the ensemble average. This technique works because most of the knowledge in the learned ensemble is in the relative probabilities of extremely improbable wrong answers. For example, the ensemble may give a BMW a probability of one in a billion of being a garbage truck but this is still far greater (in the log domain) than its probability of being a carrot. This "dark knowledge", which is practically invisible in the class probabilities, defines a similarity metric over the classes that makes it much easier to learn a good classifier. I will describe a new variation of this technique called "distillation" and will show some surprising examples in which good classifiers over all of the classes can be learned from data in which some of the classes are entirely absent, provided the targets come from an ensemble that has been trained on all of the classes. I will also show how this technique can be used to improve a state-of-the-art acoustic model and will discuss its application to learning large sets of specialist models without overfitting."
 
->	"Train a large network on the original training labels, then learn a much smaller “distilled” model on a weighted combination of the original labels and the (softened) softmax output of the larger model. The authors show that the distilled model has better generalization ability than a model trained on just the labels."
-
-  - <https://youtube.com/watch?v=EK61htlw8hY> (Hinton)
+#### Koh, Liang - ["Understanding Black-box Predictions via Influence Functions"](https://arxiv.org/abs/1703.04730)
+>	"How can we explain the predictions of a black-box model? In this paper, we use influence functions -- a classic technique from robust statistics -- to trace a model's prediction through the learning algorithm and back to its training data, thereby identifying training points most responsible for a given prediction. To scale up influence functions to modern machine learning settings, we develop a simple, efficient implementation that requires only oracle access to gradients and Hessian-vector products. We show that even on non-convex and non-differentiable models where the theory breaks down, approximations to influence functions can still provide valuable information. On linear models and convolutional neural networks, we demonstrate that influence functions are useful for multiple purposes: understanding model behavior, debugging models, detecting dataset errors, and even creating visually-indistinguishable training-set attacks."
+  - <https://youtube.com/watch?v=0w9fLX_T6tY> (Pang Wei Koh)
+  - <https://github.com/kohpangwei/influence-release>
 
 
 #### Szegedy, Zaremba, Sutskever, Bruna, Erhan, Goodfellow, Fergus - ["Intriguing Properties of Neural Networks"](http://arxiv.org/abs/1312.6199)
@@ -1252,24 +1256,16 @@ interesting papers (see below):
   - <https://karpathy.github.io/2015/03/30/breaking-convnets/>
 
 
-#### Dauphin, Pascanu, Gulcehre, Cho, Ganguli, Bengio - ["Identifying and Attacking the Saddle Point Problem in High-dimensional Non-convex Optimization"](http://arxiv.org/abs/1406.2572)
->	"A central challenge to many fields of science and engineering involves minimizing non-convex error functions over continuous, high dimensional spaces. Gradient descent or quasi-Newton methods are almost ubiquitously used to perform such minimizations, and it is often thought that a main source of difficulty for these local methods to find the global minimum is the proliferation of local minima with much higher error than the global minimum. Here we argue, based on results from statistical physics, random matrix theory, neural network theory, and empirical evidence, that a deeper and more profound difficulty originates from the proliferation of saddle points, not local minima, especially in high dimensional problems of practical interest. Such saddle points are surrounded by high error plateaus that can dramatically slow down learning, and give the illusory impression of the existence of a local minimum. Motivated by these arguments, we propose a new approach to second-order optimization, the saddle-free Newton method, that can rapidly escape high dimensional saddle points, unlike gradient descent and quasi-Newton methods. We apply this algorithm to deep or recurrent neural network training, and provide numerical evidence for its superior optimization performance."
+#### Hinton, Vinyals, Dean - ["Distilling the Knowledge in a Neural Network"](http://arxiv.org/abs/1503.02531)
+>	"A very simple way to improve the performance of almost any machine learning algorithm is to train many different models on the same data and then to average their predictions. Unfortunately, making predictions using a whole ensemble of models is cumbersome and may be too computationally expensive to allow deployment to a large number of users, especially if the individual models are large neural nets. Caruana and his collaborators have shown that it is possible to compress the knowledge in an ensemble into a single model which is much easier to deploy and we develop this approach further using a different compression technique. We achieve some surprising results on MNIST and we show that we can significantly improve the acoustic model of a heavily used commercial system by distilling the knowledge in an ensemble of models into a single model. We also introduce a new type of ensemble composed of one or more full models and many specialist models which learn to distinguish fine-grained classes that the full models confuse. Unlike a mixture of experts, these specialist models can be trained rapidly and in parallel."
 
->	"In summary, we have drawn from disparate literatures spanning statistical physics and random matrix theory to neural network theory, to argue that (a) non-convex error surfaces in high dimensional spaces generically suffer from a proliferation of saddle points, and (b) in contrast to conventional wisdom derived from low dimensional intuition, local minima with high error are exponentially rare in high dimensions. Moreover, we have provided the first experimental tests of these theories by performing new measurements of the statistical properties of critical points in neural network error surfaces. These tests were enabled by a novel application of Newton’s method to search for critical points of any index (fraction of negative eigenvalues), and they confirmed the main qualitative prediction of theory that the index of a critical point tightly and positively correlates with its error level."
+>	"How can we produce neural nets that learn good representations without as much training data or parameters?"
 
-  - <http://www.offconvex.org/2016/03/22/saddlepoints/> (Ge)
-  - <http://www.offconvex.org/2016/03/24/saddles-again/> (Recht)
-  - <http://argmin.net/2016/04/18/bottoming-out/> (Recht)
+>	"A simple way to improve classification performance is to average the predictions of a large ensemble of different classifiers. This is great for winning competitions but requires too much computation at test time for practical applications such as speech recognition. In a widely ignored paper in 2006, Caruana and his collaborators showed that the knowledge in the ensemble could be transferred to a single, efficient model by training the single model to mimic the log probabilities of the ensemble average. This technique works because most of the knowledge in the learned ensemble is in the relative probabilities of extremely improbable wrong answers. For example, the ensemble may give a BMW a probability of one in a billion of being a garbage truck but this is still far greater (in the log domain) than its probability of being a carrot. This "dark knowledge", which is practically invisible in the class probabilities, defines a similarity metric over the classes that makes it much easier to learn a good classifier. I will describe a new variation of this technique called "distillation" and will show some surprising examples in which good classifiers over all of the classes can be learned from data in which some of the classes are entirely absent, provided the targets come from an ensemble that has been trained on all of the classes. I will also show how this technique can be used to improve a state-of-the-art acoustic model and will discuss its application to learning large sets of specialist models without overfitting."
 
+>	"Train a large network on the original training labels, then learn a much smaller “distilled” model on a weighted combination of the original labels and the (softened) softmax output of the larger model. The authors show that the distilled model has better generalization ability than a model trained on just the labels."
 
-#### Choromanska, Henaff, Mathieu, Ben Arous, LeCun - ["The Loss Surface of Multilayer Networks"](http://arxiv.org/abs/1412.0233)
->	"We study the connection between the highly non-convex loss function of a simple model of the fully-connected feed-forward neural network and the Hamiltonian of the spherical spin-glass model under the assumptions of: i) variable independence, ii) redundancy in network parametrization, and iii) uniformity. These assumptions enable us to explain the complexity of the fully decoupled neural network through the prism of the results from the random matrix theory. We show that for large-size decoupled networks the lowest critical values of the random loss function are located in a well-defined narrow band lower-bounded by the global minimum. Furthermore, they form a layered structure. We show that the number of local minima outside the narrow band diminishes exponentially with the size of the network. We empirically demonstrate that the mathematical model exhibits similar behavior as the computer simulations, despite the presence of high dependencies in real networks. We conjecture that both simulated annealing and SGD converge to the band containing the largest number of critical points, and that all critical points found there are local minima and correspond to the same high learning quality measured by the test error. This emphasizes a major difference between large- and small-size networks where for the latter poor quality local minima have non-zero probability of being recovered. Simultaneously we prove that recovering the global minimum becomes harder as the network size increases and that it is in practice irrelevant as global minimum often leads to overfitting."
-
-
-#### Hardt, Recht, Singer - ["Train Faster, Generalize Better: Stability of Stochastic Gradient Descent"](http://arxiv.org/abs/1509.01240)
->	"We show that parametric models trained by a stochastic gradient method with few iterations have vanishing generalization error. We prove our results by arguing that SGM is algorithmically stable in the sense of Bousquet and Elisseeff. Our analysis only employs elementary tools from convex and continuous optimization. We derive stability bounds for both convex and non-convex optimization under standard Lipschitz and smoothness assumptions. Applying our results to the convex case, we provide new insights for why multiple epochs of stochastic gradient methods generalize well in practice. In the non-convex case, we give a new interpretation of common practices in neural networks, and formally show that popular techniques for training large deep models are indeed stability-promoting. Our findings conceptually underscore the importance of reducing training time beyond its obvious benefit."
-
-  - <http://www.offconvex.org/2016/03/14/stability/> (Hardt)
+  - <https://youtube.com/watch?v=EK61htlw8hY> (Hinton)
 
 
 #### Ioffe, Szegedy - ["Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift"](http://arxiv.org/abs/1502.03167)
@@ -1313,6 +1309,16 @@ interesting papers (see below):
   - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Weight-Normalization-A-Simple-Reparameterization-to-Accelerate-Training-of-Deep-Neural-Networks>  
   - <https://youtu.be/mrj_hyH974o?t=1h46m43s> (Lobacheva) (in russian)  
   - <https://github.com/openai/weightnorm>  
+
+
+#### Klambauer, Unterthiner, Mayr, Hochreiter - ["Self-Normalizing Neural Networks"](https://arxiv.org/abs/1706.02515)
+>	"Deep Learning has revolutionized vision via convolutional neural networks (CNNs) and natural language processing via recurrent neural networks (RNNs). However, success stories of Deep Learning with standard feed-forward neural networks (FNNs) are rare. FNNs that perform well are typically shallow and, therefore cannot exploit many levels of abstract representations. We introduce self-normalizing neural networks (SNNs) to enable high-level abstract representations. While batch normalization requires explicit normalization, neuron activations of SNNs automatically converge towards zero mean and unit variance. The activation function of SNNs are "scaled exponential linear units" (SELUs), which induce self-normalizing properties. Using the Banach fixed-point theorem, we prove that activations close to zero mean and unit variance that are propagated through many network layers will converge towards zero mean and unit variance -- even under the presence of noise and perturbations. This convergence property of SNNs allows to (1) train deep networks with many layers, (2) employ strong regularization, and (3) to make learning highly robust. Furthermore, for activations not close to unit variance, we prove an upper and lower bound on the variance, thus, vanishing and exploding gradients are impossible. We compared SNNs on (a) 121 tasks from the UCI machine learning repository, on (b) drug discovery benchmarks, and on (c) astronomy tasks with standard FNNs and other machine learning methods such as random forests and support vector machines. SNNs significantly outperformed all competing FNN methods at 121 UCI tasks, outperformed all competing methods at the Tox21 dataset, and set a new record at an astronomy data set. The winning SNN architectures are often very deep."
+
+>	"Weights are initialized in such a way that for any unit in a layer with input weights wi Σ wi = 0 and Σ wi^2 = 1."
+>	"selu(x) = λx for x>0 and selu(x) = λ(αe^x − α) for x≤0, where α≈1.6733 and λ≈1.0507"
+
+  - <https://youtube.com/watch?v=h6eQrkkU9SA> (Hochreiter)
+  - <http://github.com/bioinf-jku/SNNs>
 
 
 
@@ -1485,7 +1491,7 @@ interesting papers (see below):
 >	"The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.0 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data."
   - <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) (in russian)
   - <https://research.googleblog.com/2017/08/transformer-novel-neural-network.html>
-  - <https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/>
+  - <https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/> (McAllester)
   - <https://medium.com/@sharaf/a-paper-a-day-24-attention-is-all-you-need-26eb2da90a91>
   - <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/transformer.py>
 
@@ -1728,16 +1734,14 @@ interesting papers (see below):
   - <http://blog.acolyer.org/2016/03/09/neural-turing-machines/>
   - <http://ikuz.eu/2014/11/19/neural-turing-machines-by-google-deepmind-article-overview/>
   - <http://doctorteeth.github.io/2015/11/15/fancy-addressing/>
+  - <https://github.com/loudinthecloud/pytorch-ntm>
   - <https://github.com/flomlo/ntm_keras/>
   - <https://github.com/carpedm20/NTM-tensorflow>
-  - <https://github.com/kaishengtai/torch-ntm>
   - <https://github.com/fumin/ntm> + <http://awawfumin.blogspot.ru/2015/03/neural-turing-machines-implementation.html>
   - <https://github.com/shawntan/neural-turing-machines>
   - <https://github.com/gcgibson/NTM>
   - <https://github.com/JanTkacik/NTM>
   - <https://github.com/DoctorTeeth/diffmem>
-  - <https://github.com/EderSantana/seya/blob/master/examples/NTM.ipynb>
-  - <https://github.com/snipsco/ntm-lasagne>
 
 
 #### Graves et al. - ["Hybrid Computing using a Neural Network with Dynamic External Memory"](http://www.nature.com.sci-hub.cc/nature/journal/vaop/ncurrent/full/nature20101.html)
@@ -2624,19 +2628,8 @@ x."
 #### Hernandez-Lobato, Adams - ["Probabilistic Backpropagation for Scalable Learning of Bayesian Neural Networks"](http://arxiv.org/abs/1502.05336)
 >	"Large multilayer neural networks trained with backpropagation have recently achieved state-of-the-art results in a wide range of problems. However, using backprop for neural net learning still has some disadvantages, e.g., having to tune a large number of hyperparameters to the data, lack of calibrated probabilistic predictions, and a tendency to overfit the training data. In principle, the Bayesian approach to learning neural networks does not have these problems. However, existing Bayesian techniques lack scalability to large dataset and network sizes. In this work we present a novel scalable method for learning Bayesian neural networks, called probabilistic backpropagation. Similar to classical backpropagation, PBP works by computing a forward propagation of probabilities through the network and then doing a backward computation of gradients. A series of experiments on ten real-world datasets show that PBP is significantly faster than other techniques, while offering competitive predictive abilities. Our experiments also show that PBP provides accurate estimates of the posterior variance on the network weights."
 
-  - <http://videolectures.net/icml2015_hernandez_lobato_bayesian_neural/>
+  - <http://videolectures.net/icml2015_hernandez_lobato_bayesian_neural/> (Hernandez-Lobato)
   - <https://github.com/HIPS/Probabilistic-Backpropagation>
-
-
-#### Schulman, Heess, Weber, Abbeel - ["Gradient Estimation Using Stochastic Computation Graphs"](http://arxiv.org/abs/1506.05254)
->	"In a variety of problems originating in supervised, unsupervised, and reinforcement learning, the loss function is defined by an expectation over a collection of random variables, which might be part of a probabilistic model or the external world. Estimating the gradient of this loss function, using samples, lies at the core of gradient-based learning algorithms for these problems. We introduce the formalism of stochastic computation graphs---directed acyclic graphs that include both deterministic functions and conditional probability distributions---and describe how to easily and automatically derive an unbiased estimator of the loss function's gradient. The resulting algorithm for computing the gradient estimator is a simple modification of the standard backpropagation algorithm. The generic scheme we propose unifies estimators derived in variety of prior work, along with variance-reduction techniques therein. It could assist researchers in developing intricate models involving a combination of stochastic and deterministic operations, enabling, for example, attention, memory, and control actions."
-
->	"We have developed a framework for describing a computation with stochastic and deterministic operations, called a stochastic computation graph. Given a stochastic computation graph, we can automatically obtain a gradient estimator, given that the graph satisfies the appropriate conditions on differentiability of the functions at its nodes. The gradient can be computed efficiently in a backwards traversal through the graph: one approach is to apply the standard backpropagation algorithm to one of the surrogate loss functions; another approach (which is roughly equivalent) is to apply a modified backpropagation procedure. The results we have presented are sufficiently general to automatically reproduce a variety of gradient estimators that have been derived in prior work in reinforcement learning and probabilistic modeling. We hope that this work will facilitate further development of interesting and expressive models."
-
->	"Can mix and match likelihood ratio and path derivative. If black-box node: might need to place stochastic node in front of it and use likelihood ratio. This includes recurrent neural net policies."
-
-  - <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724> (Abbeel)
-  - <http://joschu.net/docs/thesis.pdf> (Schulman)
 
 
 #### Blundell, Cornebise, Kavukcuoglu, Wierstra - ["Weight Uncertainty in Neural Networks"](http://arxiv.org/abs/1505.05424)
@@ -2662,7 +2655,7 @@ x."
 
 
 #### Korattikara, Rathod, Murphy, Welling - ["Bayesian Dark Knowledge"](https://arxiv.org/abs/1506.04416)
->	"We consider the problem of Bayesian parameter estimation for deep neural networks, which is important in problem settings where we may have little data, and/ or where we need accurate posterior predictive densities, e.g., for applications involving bandits or active learning. One simple approach to this is to use online Monte Carlo methods, such as SGLD (stochastic gradient Langevin dynamics). Unfortunately, such a method needs to store many copies of the parameters (which wastes memory), and needs to make predictions using many versions of the model (which wastes time). We describe a method for "distilling" a Monte Carlo approximation to the posterior predictive density into a more compact form, namely a single deep neural network. We compare to two very recent approaches to Bayesian neural networks, namely an approach based on expectation propagation [Hernandez-Lobato and Adams, 2015] and an approach based on variational Bayes [Blundell et al., 2015]. Our method performs better than both of these, is much simpler to implement, and uses less computation at test time."
+>	"We consider the problem of Bayesian parameter estimation for deep neural networks, which is important in problem settings where we may have little data, and/or where we need accurate posterior predictive densities, e.g., for applications involving bandits or active learning. One simple approach to this is to use online Monte Carlo methods, such as SGLD (stochastic gradient Langevin dynamics). Unfortunately, such a method needs to store many copies of the parameters (which wastes memory), and needs to make predictions using many versions of the model (which wastes time). We describe a method for "distilling" a Monte Carlo approximation to the posterior predictive density into a more compact form, namely a single deep neural network. We compare to two very recent approaches to Bayesian neural networks, namely an approach based on expectation propagation [Hernandez-Lobato and Adams, 2015] and an approach based on variational Bayes [Blundell et al., 2015]. Our method performs better than both of these, is much simpler to implement, and uses less computation at test time."
 
   - <https://youtu.be/tqGEX_Ucu04?t=1h1m23s> (Molchanov) (in russian)
 
@@ -2815,8 +2808,8 @@ x."
 
 >	"Applying convolutional neural networks to large images is computationally expensive because the amount of computation scales linearly with the number of image pixels. We present a novel recurrent neural network model that is capable of extracting information from an image or video by adaptively selecting a sequence of regions or locations and only processing the selected regions at high resolution. Like convolutional neural networks, the proposed model has a degree of translation invariance built-in, but the amount of computation it performs can be controlled independently of the input image size. While the model is non-differentiable, it can be trained using reinforcement learning methods to learn task-specific policies. We evaluate our model on several image classification tasks, where it significantly outperforms a convolutional neural network baseline on cluttered images, and on a dynamic visual control problem, where it learns to track a simple object without an explicit training signal for doing so."
 
-  - <http://youtube.com/watch?v=xzM7eI7caRk>
-  - <https://youtu.be/kUiR0RLmGCo?t=15m30s>
+  - <http://youtube.com/watch?v=xzM7eI7caRk> (Mnih)
+  - <http://youtu.be/kUiR0RLmGCo?t=15m30s> (de Freitas)
 
 
 #### Jaderberg, Simonyan, Vedaldi, Zisserman - ["Deep Structured Output Learning For Unconstrained Text Recognition"](http://arxiv.org/abs/1412.5903)

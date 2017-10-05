@@ -688,6 +688,8 @@
   "Many machine reading approaches, from shallow information extraction to deep semantic parsing, map natural language to symbolic representations of meaning. Representations such as first-order logic capture the richness of natural language and support complex reasoning, but often fail in practice due to their reliance on logical background knowledge and the difficulty of scaling up inference. In contrast, low-dimensional embeddings (i.e. distributional representations) are efficient and enable generalization, but it is unclear how reasoning with embeddings could support the full power of symbolic representations such as first-order logic."
 
 
+  ["From Machine Learning to Machine Reasoning"](http://research.microsoft.com/pubs/192773/tr-2011-02-08.pdf) by Leon Bottou ([talk](http://youtube.com/watch?v=tzp_BikdgyM))
+
   ["Reading and Reasoning with Vector Representations"](https://dropbox.com/s/6myacfkrp9raakq/Sheffield%202017%20Talk.pdf) by Sebastian Riedel
 
   ["Low-Dimensional Embeddings of Logic"](http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/) by Tim Rocktaschel
@@ -1083,7 +1085,7 @@ interesting papers:
   - "[continuous space representations]" section of [Natural Language Processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt)  
 
 
-interesting papers (see below):  
+interesting papers:  
   - [knowledge bases](#interesting-papers---knowledge-bases)  
   - [knowledge bases with discrete representations](#interesting-papers---knowledge-bases-with-discrete-representations)  
   - [knowledge bases with continuous representations](#interesting-papers---knowledge-bases-with-continuous-representations)  
@@ -1565,10 +1567,8 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 ---
 ### interesting papers - question answering over texts
 
-[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)  
-
-"[continuous space representations]" section of [Natural Language Processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt)  
-[machine reading methods and datasets](http://matt-gardner.github.io/paper-thoughts/2016/12/08/reading-comprehension-survey.html) by Matt Gardner  
+[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#information-retrieval) on information retrieval  
+[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning) on reasoning  
 
 
 #### Gauthier, Mordatch - ["A Paradigm for Situated and Goal-Driven Language Learning"](https://arxiv.org/abs/1610.03585)

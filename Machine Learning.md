@@ -91,9 +91,10 @@
   [deception of supervised learning](http://kdnuggets.com/2016/09/deception-of-supervised-learning.html)  
   [classification vs prediction](http://fharrell.com/2017/01/classification-vs-prediction.html)  
   [causality in machine learning](http://unofficialgoogledatascience.com/2017/01/causality-in-machine-learning.html)  
-  [machine learning and statistics](https://www.ics.uci.edu/~welling/publications/papers/WhyMLneedsStatistics.pdf)  
-  [machine learning and engineering](http://machinedlearnings.com/2017_02_01_archive.html)  
   [interpretable machine learning](https://oreilly.com/ideas/ideas-on-interpreting-machine-learning)  
+  [machine learning and statistics](https://www.ics.uci.edu/~welling/publications/papers/WhyMLneedsStatistics.pdf)  
+  [machine learning and information theory](https://blog.recast.ai/introduction-information-theory-care/)  
+  [machine learning and engineering](http://machinedlearnings.com/2017_02_01_archive.html)  
   [basics](http://frnsys.com/ai_notes/)  
 
 
@@ -107,12 +108,13 @@
   [Trevor Hastie and Rob Tibshirani](http://dataschool.io/15-hours-of-expert-machine-learning-videos/)  
   [Hal Daume](http://ciml.info)  
 
+  [Yandex](http://coursera.org/specializations/machine-learning-data-analysis/) (in russian)  
+  [OpenDataScience](https://github.com/Yorko/mlcourse_open) (in russian)  
   [Konstantin Vorontsov](http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC) (in russian)  
   [Igor Kuralenok](http://youtube.com/playlist?list=PLlb7e2G7aSpTd91sd82VxWNdtTZ8QnFne) (in russian)  
   [Igor Kuralenok](http://youtube.com/playlist?list=PLlb7e2G7aSpSWVExpq74FnwFnWgLby56L) (in russian)  
   [Igor Kuralenok](http://youtube.com/playlist?list=PLlb7e2G7aSpSSsCeUMLN-RxYOLAI9l2ld) (in russian)  
   [Igor Kuralenok](http://lektorium.tv/course/22975) (in russian)  
-  [Yandex](http://coursera.org/specializations/machine-learning-data-analysis/) (in russian)  
 
   [Machine Learning Summer Schools](http://mlss.cc)  
 
@@ -1002,7 +1004,7 @@
 [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md)
 
 
-interesting papers (see below):
+interesting papers:
   - [automated machine learning](#interesting-papers---automated-machine-learning)
   - [systems](#interesting-papers---systems)
 

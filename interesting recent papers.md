@@ -22,9 +22,9 @@ interesting recent papers:
     - [imitation](#reinforcement-learning---imitation)  
     - [applications](#reinforcement-learning---applications)  
   * [language grounding](#language-grounding)  
-  * [dialog systems](#dialog-systems)  
   * [natural language processing](#natural-language-processing)  
   * [information retrieval](#information-retrieval)  
+  * [dialog systems](#dialog-systems)  
 
 ----
 interesting papers:
@@ -38,7 +38,7 @@ interesting papers:
   - [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers)  
   - [natural language processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt#interesting-papers)  
   - [information retrieval](https://github.com/brylevkirill/notes/blob/master/Information%20Retrieval.txt#interesting-papers)  
-  - [personal assistants](https://github.com/brylevkirill/notes/blob/master/Personal%20Assistants.txt#interesting-papers)  
+  - [dialog systems](https://github.com/brylevkirill/notes/blob/master/Personal%20Assistants.txt#interesting-papers)  
 
 
 
@@ -60,6 +60,8 @@ interesting papers:
   - <https://youtube.com/watch?v=bLqJHjXihK8> (Tishby)  
   - <https://youtube.com/watch?v=ekUWO_pI2M8> (Tishby)  
   - <https://theneuralperspective.com/2017/03/24/opening-the-black-box-of-deep-neural-networks-via-information/>  
+  - <https://quantamagazine.org/new-theory-cracks-open-the-black-box-of-deep-learning-20170921>  
+  - <https://reddit.com/r/MachineLearning/comments/60fhyb/r_opening_the_black_box_of_deep_neural_networks/df8jsbm/>  
 
 [Understanding Deep Learning Requires Rethinking Generalization](http://arxiv.org/abs/1611.03530) (Google Brain)  
 >	"1. The effective capacity of neural networks is large enough for a brute-force memorization of the entire data set.  
@@ -109,6 +111,9 @@ interesting papers:
 [Self-Normalizing Neural Networks](https://arxiv.org/abs/1706.02515) (Hochreiter)  
 >	"While batch normalization requires explicit normalization, neuron activations of SNNs automatically converge towards zero mean and unit variance. The activation function of SNNs are "scaled exponential linear units" (SELUs), which induce self-normalizing properties. Using the Banach fixed-point theorem, we prove that activations close to zero mean and unit variance that are propagated through many network layers will converge towards zero mean and unit variance -- even under the presence of noise and perturbations."  
 >	"For activations not close to unit variance, we prove an upper and lower bound on the variance, thus, vanishing and exploding gradients are impossible."  
+>
+>	"Weights are initialized in such a way that for any unit in a layer with input weights wi Σ wi = 0 and Σ wi^2 = 1."  
+>	"selu(x) = λx for x>0 and selu(x) = λ(αe^x − α) for x≤0, where α≈1.6733 and λ≈1.0507"  
   - <https://youtube.com/watch?v=h6eQrkkU9SA> (Hochreiter)  
   - <http://github.com/bioinf-jku/SNNs>  
 
@@ -122,9 +127,12 @@ interesting papers:
 >	"We construct T weak module classifiers, each contains two of the T layers, such that the combined strong learner is a ResNet."  
 >	"We introduce an alternative Deep ResNet training algorithm, which is particularly suitable in non-differentiable architectures."  
 
-[Understanding Black-box Predictions via Influence Functions](https://arxiv.org/abs/1703.04730)  
->	"identify training points most responsible for given prediction to make model transparent"  
+[Understanding Black-box Predictions via Influence Functions](https://arxiv.org/abs/1703.04730) (Liang)  
+>	"We use influence functions, a classic technique from robust statistics, to trace a model's prediction through the learning algorithm and back to its training data, thereby identifying training points most responsible for a given prediction."  
+>	"We show that even on non-convex and non-differentiable models where the theory breaks down, approximations to influence functions can still provide valuable information."  
+>	"On linear models and convolutional neural networks, we demonstrate that influence functions are useful for multiple purposes: understanding model behavior, debugging models, detecting dataset errors, and even creating visually-indistinguishable training-set attacks."  
   - <https://youtube.com/watch?v=0w9fLX_T6tY> (Pang Wei Koh)  
+  - <https://github.com/kohpangwei/influence-release>  
 
 
 
@@ -341,7 +349,7 @@ interesting papers:
   - <https://facebook.com/iclr.cc/videos/1713144705381255/> (1:26:48) (Ravi)  
 
 ----
-[Matching Networks for One Shot Learning](http://arxiv.org/abs/1606.04080) (Vinyals)  
+[Matching Networks for One Shot Learning](http://arxiv.org/abs/1606.04080) (DeepMind)  
 >	"Given just a few, or even a single, examples of an unseen class, it is possible to attain high classification accuracy on ImageNet using Matching Networks.  The core architecture is simple and straightforward to train and performant across a range of image and text classification tasks. Matching Networks are trained in the same way as they are tested: by presenting a series of instantaneous one shot learning training tasks, where each instance of the training set is fed into the network in parallel. Matching Networks are then trained to classify correctly over many different input training sets. The effect is to train a network that can classify on a novel data set without the need for a single step of gradient descent."  
   - <https://pbs.twimg.com/media/Cy7Eyh5WgAAZIw2.jpg:large>  
   - <https://theneuralperspective.com/2017/01/03/matching-networks-for-one-shot-learning/>  
@@ -353,7 +361,7 @@ interesting papers:
 [Prototypical Networks for Few-shot Learning](https://arxiv.org/abs/1703.05175)  
 
 ----
-[One-shot Learning with Memory-Augmented Neural Networks](http://arxiv.org/abs/1605.06065)
+[One-shot Learning with Memory-Augmented Neural Networks](http://arxiv.org/abs/1605.06065) (DeepMind)  
   - <http://techtalks.tv/talks/meta-learning-with-memory-augmented-neural-networks/62523/> + <https://vk.com/wall-44016343_8782> (Santoro)
   - <https://youtube.com/watch?v=qos2CcviAuY> (Bartunov) (in russian)
   - <http://rylanschaeffer.github.io/content/research/one_shot_learning_with_memory_augmented_nn/main.html>
@@ -361,6 +369,9 @@ interesting papers:
   - <https://github.com/tristandeleu/ntm-one-shot>
 
 ----
+[Variational Memory Addressing in Generative Models](https://arxiv.org/abs/1709.07116) (DeepMind)  
+>	"Aiming to augment generative models with external memory, we interpret the output of a memory module with stochastic addressing as a conditional mixture distribution, where a read operation corresponds to sampling a discrete memory address and retrieving the corresponding content from memory. This perspective allows us to apply variational inference to memory addressing, which enables effective training of the memory module by using the target information to guide memory lookups. Stochastic addressing is particularly well-suited for generative models as it naturally encourages multimodality which is a prominent aspect of most high-dimensional datasets. Treating the chosen address as a latent variable also allows us to quantify the amount of information gained with a memory lookup and measure the contribution of the memory module to the generative process. To illustrate the advantages of this approach we incorporate it into a variational autoencoder and apply the resulting model to the task of generative few-shot learning. The intuition behind this architecture is that the memory module can pick a relevant template from memory and the continuous part of the model can concentrate on modeling remaining variations. We demonstrate empirically that our model is able to identify and access the relevant memory contents even with hundreds of unseen Omniglot characters in memory."  
+
 [One-Shot Generalization in Deep Generative Models](http://arxiv.org/abs/1603.05106)  
 >	"move over DRAW: deepmind's latest has spatial-transform attention and 1-shot generalization"  
   - <http://youtube.com/watch?v=TpmoQ_j3Jv4> (demo)  
@@ -372,7 +383,7 @@ interesting papers:
   - <https://youtu.be/XpIDCzwNe78?t=51m53s> (Bartunov)  
   - <http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.02185>  
 
-[Fast Adaptation in Generative Models with Generative Matching Networks](http://arxiv.org/abs/1612.02192) (Bartunov)  
+[Fast Adaptation in Generative Models with Generative Matching Networks](http://arxiv.org/abs/1612.02192)  
   - <https://youtu.be/XpIDCzwNe78> (Bartunov) + [slides](https://bayesgroup.github.io/bmml_sem/2016/bartunov-oneshot.pdf)  
   - <http://github.com/sbos/gmn>  
 
@@ -421,6 +432,7 @@ interesting papers:
   - <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1702.04649>  
 
 [Learning Disentangled Representations with Semi-Supervised Deep Generative Models](http://arxiv.org/abs/1706.00400)  
+>	"Variational autoencoders learn representations of data by jointly training a probabilistic encoder and decoder network. Typically these models encode all features of the data into a single variable. Here we are interested in learning disentangled representations that encode distinct aspects of the data into separate variables. We propose to learn such representations using model architectures that generalize from standard VAEs, employing a general graphical model structure in the encoder and decoder. This allows us to train partially-specified models that make relatively strong assumptions about a subset of interpretable variables and rely on the flexibility of neural networks to learn representations for the remaining variables."  
 
 [Inducing Interpretable Representations with Variational Autoencoders](http://arxiv.org/abs/1611.07492) (Goodman)  
 
@@ -484,11 +496,12 @@ interesting papers:
 
 ----
 [On Unifying Deep Generative Models](https://arxiv.org/abs/1706.00550) (Salakhutdinov)  
+>	"We show that GANs and VAEs are essentially minimizing KL divergences of respective posterior and inference distributions with opposite directions, extending the two learning phases of classic wake-sleep algorithm, respectively. The unified view provides a powerful tool to analyze a diverse set of existing model variants, and enables to exchange ideas across research lines in a principled way. For example, we transfer the importance weighting method in VAE literatures for improved GAN learning, and enhance VAEs with an adversarial mechanism for leveraging generated samples."  
 
 [Variational Approaches for Auto-Encoding Generative Adversarial Networks](https://arxiv.org/abs/1706.04987) (DeepMind)  
   - <https://youtu.be/jAI3rBI6poU?t=1h1m33s> (Ulyanov) (in russian)  
 
-[Flow-GAN: Bridging Implicit and Prescribed Learning in Generative Models](https://arxiv.org/abs/1705.08868) (Stanford)  
+[Flow-GAN: Bridging Implicit and Prescribed Learning in Generative Models](https://arxiv.org/abs/1705.08868)  
 >	"generative adversarial network which allows for tractable likelihood evaluation"  
 >	"Since it can be trained both adversarially (like a GAN) and in terms of MLE (like a flow model), we can quantitatively evaluate the trade-offs involved. In particular, we also consider a hybrid objective function which involves both types of losses."  
 >	"The availability of quantitative metrics allow us to compare to simple baselines which essentially “remember” the training data. Our final results show that naive Gaussian Mixture Models outperforms plain WGAN on both samples quality and log-likelihood for both MNIST and CIFAR-10 which we hope will lead to new directions for both implicit and prescribed learning in generative models."  
@@ -624,15 +637,15 @@ interesting papers:
   - <https://github.com/openai/improved-gan>  
 
 ----
-[GANS for Sequences of Discrete Elements with the Gumbel-softmax Distribution](http://arxiv.org/abs/1611.04051)  
-  - <https://casmls.github.io/general/2017/02/01/GumbelSoftmax.html>  
-
 [Maximum-Likelihood Augmented Discrete Generative Adversarial Networks](http://arxiv.org/abs/1702.07983) (Bengio)  
 
 [Boundary-Seeking Generative Adversarial Networks](http://arxiv.org/abs/1702.08431) (Bengio)  
 >	"This approach can be used to train a generator with discrete output when the generator outputs a parametric conditional distribution. We demonstrate the effectiveness of the proposed algorithm with discrete image data. In contrary to the proposed algorithm, we observe that the recently proposed Gumbel-Softmax technique for re-parametrizing the discrete variables does not work for training a GAN with discrete data."  
   - <http://wiseodd.github.io/techblog/2017/03/07/boundary-seeking-gan/>  
   - <https://github.com/wiseodd/generative-models/tree/master/GAN/boundary_seeking_gan>  
+
+[GANS for Sequences of Discrete Elements with the Gumbel-softmax Distribution](http://arxiv.org/abs/1611.04051)  
+  - <https://casmls.github.io/general/2017/02/01/GumbelSoftmax.html>  
 
 ----
 [Generative Adversarial Text to Image Synthesis](http://arxiv.org/abs/1605.05396)  
@@ -715,7 +728,7 @@ interesting papers:
   - <https://github.com/tensorflow/models/tree/master/research/rebar>  
 
 ----
-[Multi-modal Variational Encoder-Decoders](http://arxiv.org/abs/1612.00377) (Courville)  
+[Multi-modal Variational Encoder-Decoders](http://arxiv.org/abs/1612.00377) (MILA)  
 
 [Stochastic Backpropagation through Mixture Density Distributions](http://arxiv.org/abs/1607.05690) (DeepMind)  
   - <http://www.shortscience.org/paper?bibtexKey=journals/corr/1607.05690>  
@@ -724,7 +737,7 @@ interesting papers:
   - <http://andymiller.github.io/2016/11/23/vb.html>  
   - <https://youtu.be/Jh3D8Gi4N0I?t=1h9m52s> (Nekludov) (in russian)  
 
-[Improving Variational Inference with Inverse Autoregressive Flow](http://arxiv.org/abs/1606.04934)  
+[Improving Variational Inference with Inverse Autoregressive Flow](http://arxiv.org/abs/1606.04934) (OpenAI)  
 >	"Most VAEs have so far been trained using crude approximate posteriors, where every latent variable is independent. Normalizing Flows have addressed this problem by conditioning each latent variable on the others before it in a chain, but this is computationally inefficient due to the introduced sequential dependencies. The core contribution of this work, termed inverse autoregressive flow (IAF), is a new approach that, unlike previous work, allows us to parallelize the computation of rich approximate posteriors, and make them almost arbitrarily flexible."  
   - <https://github.com/openai/iaf>  
 
@@ -761,7 +774,10 @@ interesting papers:
   - <https://github.com/enalisnick/stick-breaking_dgms>  
 
 ----
+[Actively Learning What Makes a Discrete Sequence Valid](https://arxiv.org/abs/1708.04465)  
+
 [Grammar Variational Autoencoder](http://arxiv.org/abs/1703.01925)  
+  - <https://youtube.com/watch?v=XkY1z6kCY_s> (Hernandez-Lobato)  
   - <https://youtube.com/watch?v=ar4Fm1V65Fw> (Paige)  
 
 [Generative Models of Visually Grounded Imagination](https://arxiv.org/abs/1705.10762) (Google)  
@@ -860,7 +876,7 @@ interesting papers:
 [Length Bias in Encoder Decoder Models and a Case for Global Conditioning](http://arxiv.org/abs/1606.03402) (Google)  # eliminating beam search
 
 ----
-[Order Matters: Sequence to Sequence for Sets](http://arxiv.org/abs/1511.06391) (Vinyals)  
+[Order Matters: Sequence to Sequence for Sets](http://arxiv.org/abs/1511.06391) (Google Brain)  
   - <https://youtube.com/watch?v=uohtFXD_39c&t=56m51s> (Bengio)  
 
 
@@ -891,6 +907,7 @@ interesting papers:
 >	"We derive an information-theoretic objective that decomposes the entropy of the predictive distribution of BNNs with latent variables into its epistemic and aleatoric components. By building on that decomposition, we then investigate safe RL using a risk-sensitive criterion which focuses only on risk related to model bias, that is, the risk of the policy performing at test time significantly different from at training time. The proposed criterion quantifies the amount of epistemic uncertainty (model bias risk) in the model’s predictive distribution and ignores any risk stemming from the aleatoric uncertainty."  
 
 [Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles](http://arxiv.org/abs/1612.01474) (DeepMind)  
+>	"Adversarial Training to improve the uncertainty measure of the entropy score of the neural network."  
 
 [Dropout Inference in Bayesian Neural Networks with Alpha-divergences](http://mlg.eng.cam.ac.uk/yarin/PDFs/LiGal2017.pdf)  
 >	"We demonstrate improved uncertainty estimates and accuracy compared to VI in dropout networks. We study our model’s epistemic uncertainty far away from the data using adversarial images, showing that these can be distinguished from non-adversarial images by examining our model’s uncertainty."
@@ -905,6 +922,7 @@ interesting papers:
 [Variational Dropout Sparsifies Deep Neural Networks](https://arxiv.org/abs/1701.05369)  
 >	"Interpretation of Gaussian dropout as performing variational inference in a network with log uniform priors over weights leads to sparsity in weights. This is an interesting approach, wherein sparsity stemsfrom variational optimization instead of the prior."  
   - <https://youtube.com/watch?v=jJDVYAxyE3U> (Molchanov) (in russian)  
+  - <https://github.com/ars-ashuha/variational-dropout-sparsifies-dnn>  
 
 ----
 [Bayesian Recurrent Neural Networks](https://arxiv.org/abs/1704.02798) (DeepMind)  
@@ -987,7 +1005,7 @@ interesting papers:
   - <https://github.com/gitlimlab/Relation-Network-Tensorflow>  
   - <https://github.com/Alan-Lee123/relation-network>  
 
-[Inferring and Executing Programs for Visual Reasoning](https://arxiv.org/abs/1705.03633) (Stanford, Facebook AI Research)
+[Inferring and Executing Programs for Visual Reasoning](https://arxiv.org/abs/1705.03633) (Facebook AI Research)
   - <https://github.com/facebookresearch/clevr-iep>  
 
 [Learning to Reason: End-to-End Module Networks for Visual Question Answering](https://arxiv.org/abs/1704.05526) (Darrell)  
@@ -1052,14 +1070,19 @@ interesting papers:
 
 [A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887) (DeepMind)  # Categorical DQN  
   - <https://youtube.com/watch?v=yFBwyPuO2Vg> (demo)  
+  - <https://vimeo.com/235922311> (Bellemare)  
   - <https://deepmind.com/blog/going-beyond-average-reinforcement-learning/>  
   - <https://github.com/reinforceio/tensorforce/blob/master/tensorforce/models/categorical_dqn_model.py>  
   - <https://github.com/floringogianu/categorical-dqn>  
 
 [Multi-step Reinforcement Learning: A Unifying Algorithm](https://arxiv.org/abs/1703.01327) (Sutton)  
+>	"Currently, there are a multitude of algorithms that can be used to perform TD control, including Sarsa, Q-learning, and Expected Sarsa. These methods are often studied in the one-step case, but they can be extended across multiple time steps to achieve better performance. Each of these algorithms is seemingly distinct, and no one dominates the others for all problems. In this paper, we study a new multi-step action-value algorithm called Q(σ) which unifies and generalizes these existing algorithms, while subsuming them as special cases. A new parameter, σ, is introduced to allow the degree of sampling performed by the algorithm at each step during its backup to be continuously varied, with Sarsa existing at one extreme (full sampling), and Expected Sarsa existing at the other (pure expectation)."  
   - <https://youtube.com/watch?v=MidZJ-oCpRk> (De Asis)  
 
 ----
+["Scalable Trust-region Method for Deep Reinforcement Learning using Kronecker-factored Approximation"](https://arxiv.org/abs/1708.05144)  # ACKTR  
+  - ["Optimizing Neural Networks using Structured Probabilistic Models of the Gradient Computation"](https://fields.utoronto.ca/video-archive/2017/02/2267-16498 (Grosse)  
+
 [Proximal Policy Optimization Algorithms](https://arxiv.org/abs/1707.06347) (OpenAI)  
   - <https://blog.openai.com/openai-baselines-ppo/> (demo)  
   - <https://learningai.io/projects/2017/07/28/ai-gym-workout.html>  
@@ -1126,7 +1149,7 @@ interesting papers:
   - <https://youtube.com/watch?v=8hK0NnG_DhY&t=15m44s> (Brunskill)  
 
 ----
-[Discrete Sequential Prediction of Continuous Actions for Deep RL](https://arxiv.org/abs/1705.05035) (Google Brain)  
+[Discrete Sequential Prediction of Continuous Actions for Deep RL](https://arxiv.org/abs/1705.05035) (Google Brain)  # SDQN  
 >	"We draw inspiration from the recent success of sequence-to-sequence models for structured prediction problems to develop policies over discretized spaces. Central to this method is the realization that complex functions over high dimensional spaces can be modeled by neural networks that use next step prediction. Specifically, we show how Q-values and policies over continuous spaces can be modeled using a next step prediction model over discretized dimensions. With this parameterization, it is possible to both leverage the compositional structure of action spaces during learning, as well as compute maxima over action spaces (approximately). On a simple example task we demonstrate empirically that our method can perform global search, which effectively gets around the local optimization issues that plague DDPG and NAF. We apply the technique to off-policy (Q-learning) methods and show that our method can achieve the state-of-the-art for off-policy methods on several continuous control tasks."  
 
 [Reinforcement Learning in Large Discrete Action Spaces](http://arxiv.org/abs/1512.07679)  
@@ -1159,7 +1182,9 @@ interesting papers:
   - <https://hackernoon.com/learning-policies-for-learning-policies-meta-reinforcement-learning-rl²-in-tensorflow-b15b592a2ddf> (Juliani)  
   - <https://github.com/awjuliani/Meta-RL>  
 
+----
 [The Intentional Unintentional Agent: Learning to Solve Many Continuous Control Tasks Simultaneously](https://arxiv.org/abs/1707.03300) (DeepMind)  
+  - <http://videolectures.net/deeplearning2017_de_freitas_deep_control/> (20:40) (de Freitas)  
 
 [Dual Learning for Machine Translation](http://arxiv.org/abs/1611.00179)  
 >	"In the dual-learning mechanism, we use one agent to represent the model for the primal task and the other agent to represent the model for the dual task, then ask them to teach each other through a reinforcement learning process. Based on the feedback signals generated during this process (e.g., the language model likelihood of the output of a model, and the reconstruction error of the original sentence after the primal and dual translations), we can iteratively update the two models until convergence (e.g., using the policy gradient methods)."  
@@ -1183,6 +1208,7 @@ interesting papers:
   - <https://github.com/atgambardella/pytorch-es>  
 
 [Learning to Play in a Day: Faster Deep Reinforcement Learning by Optimality Tightening](https://arxiv.org/abs/1611.01606)  
+>	"We propose a novel training algorithm for reinforcement learning which combines the strength of deep Q-learning with a constrained optimization approach to tighten optimality and encourage faster reward propagation."  
   - <https://yadi.sk/i/yBO0q4mI3GAxYd> (1:10:20) (Fritsler) (in russian)  
   - <https://youtu.be/mrj_hyH974o?t=16m13s> (in russian)  
 
@@ -1190,6 +1216,15 @@ interesting papers:
 
 ---
 ### reinforcement learning - exploration and intrinsic motivation
+
+[Contextual Decision Processes with Low Bellman Rank are PAC-Learnable](https://arxiv.org/abs/1610.09512) (Microsoft)    # provably correct and sample efficient exploration  
+>	"This paper studies systematic exploration for reinforcement learning with rich observations and function approximation. We introduce a new model called contextual decision processes, that unifies and generalizes most prior settings. Our first contribution is a complexity measure, the Bellman rank, that we show enables tractable learning of near-optimal behavior in these processes and is naturally small for many well-studied reinforcement learning settings. Our second contribution is a new reinforcement learning algorithm that engages in systematic exploration to learn contextual decision processes with low Bellman rank. Our algorithm provably learns near-optimal behavior with a number of samples that is polynomial in all relevant parameters but independent of the number of unique observations. The approach uses Bellman error minimization with optimistic exploration and provides new insights into efficient exploration for reinforcement learning with function approximation."  
+>	"Approximation of value function with function from some class is a powerful practical approach with implicit assumption that true value function is approximately in class.  
+>	Even with this assumption:  
+>	- no guarantee methods will work  
+>	- no bound on how much data needed  
+>	- no theory on how to explore in large spaces"  
+  - <https://vimeo.com/235929810> (Schapire)  
 
 [The Uncertainty Bellman Equation and Exploration](https://arxiv.org/abs/1709.05380) (DeepMind)    # exploration in state-action space guided by uncertainty of value function  
 >	"We consider uncertainty Bellman equation which connects the uncertainty at any time-step to the expected uncertainties at subsequent time-steps, thereby extending the potential exploratory benefit of a policy beyond individual time-steps. We prove that the unique fixed point of the UBE yields an upper bound on the variance of the estimated value of any fixed policy. This bound can be much tighter than traditional count-based bonuses that compound standard deviation rather than variance. Importantly, and unlike several existing approaches to optimism, this method scales naturally to large systems with complex generalization."  
@@ -1265,6 +1300,7 @@ hieves."
   - <https://github.com/andrewliao11/NoisyNet-DQN>  
 
 [Parameter Space Noise for Exploration](https://arxiv.org/abs/1706.01905) (OpenAI)    # deeper random exploration  
+  - <https://blog.openai.com/better-exploration-with-parameter-noise/>  
 
 ----
 [UCB and InfoGain Exploration via Q-Ensembles](https://arxiv.org/abs/1706.01502) (OpenAI)    # approximate bayesian exploration  
@@ -1287,6 +1323,7 @@ hieves."
   - <https://youtube.com/watch?v=Uz-zGYrYEjA> (demo)  
   - <https://youtube.com/watch?v=VVLYTqZJrXY> (Jaderberg)  
   - <https://facebook.com/iclr.cc/videos/1712224178806641/> (1:15:45) (Jaderberg)  
+  - <https://yadi.sk/i/_2_0yqeW3HDbcn> (18:25) (Panin) (in russian)  
   - <https://github.com/dennybritz/deeplearning-papernotes/blob/b097e313dc59c956575fb1bf23b64fa8d1d84057/notes/rl-auxiliary-tasks.md>  
   - <https://github.com/miyosuda/unreal>  
 
@@ -1306,15 +1343,30 @@ hieves."
 >	"We propose and explore a more direct mechanism for representation learning, which explicitly links an agent’s control over its environment with its internal feature representations. Specifically, we hypothesize that some of the factors explaining variations in the data correspond to aspects of the world that can be controlled by the agent. For example, an object that could be pushed around or picked up independently of others is an independently controllable aspect of the environment. Our approach therefore aims to jointly discover a set of features (functions of the environment state) and policies (which change the state) such that each policy controls the associated feature while leaving the other features unchanged as much as possible."  
 
 ----
+[Overcoming Exploration in Reinforcement Learning with Demonstrations](https://arxiv.org/abs/1709.10089) (OpenAI)    # structured exploration in policy space guided by learning progress and demonstrations  
+>	"We use demonstrations to overcome the exploration problem and successfully learn to perform long-horizon, multi-step robotics tasks with continuous control such as stacking blocks with a robot arm."  
+>	"Our method, which builds on top of Deep Deterministic Policy Gradients and Hindsight Experience Replay, provides an order of magnitude of speedup over RL on simulated robotics tasks."  
+>	"Our method is able to solve tasks not solvable by either RL or behavior cloning alone, and often ends up outperforming the demonstrator policy."  
+  - <http://ashvin.me/demoddpg-website/> (demo)  
+
+[Hindsight Experience Replay](https://arxiv.org/abs/1707.01495) (OpenAI)    # structured exploration in policy space guided by learning progress  
+>	"HER may be seen as a form of implicit curriculum as the goals used for replay naturally shift from ones which are simple to achieve even by a random agent to more difficult ones. However, in contrast to explicit curriculum, HER does not require having any control over the distribution of initial environment states."  
+>	"Not only does HER learn with extremely sparse rewards, in our experiments it also performs better with sparse rewards than with shaped ones. These results are indicative of the practical challenges with reward shaping, and that shaped rewards would often constitute a compromise on the metric we truly care about (such as binary success/failure)."  
+  - <https://sites.google.com/site/hindsightexperiencereplay/> (demo)  
+  - ["Universal Value Function Approximators"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#schaul-horgan-gregor-silver---universal-value-function-approximators)  
+
+[Reverse Curriculum Generation for Reinforcement Learning](https://arxiv.org/abs/1707.05300) (OpenAI)    # structured exploration in policy space guided by learning progress  
+
+[Teacher-Student Curriculum Learning](https://arxiv.org/abs/1707.00183) (OpenAI)    # structured exploration in policy space guided by learning progress  
+
 [Automated Curriculum Learning for Neural Networks](https://arxiv.org/abs/1704.03003) (DeepMind)    # structured exploration in policy space guided by learning progress  
 >	"We focus on variants of prediction gain, and also introduce a novel class of progress signals which we refer to as complexity gain. Derived from minimum description length principles, complexity gain equates acquisition of knowledge with an increase in effective information encoded in the network weights."  
 >	"VIME uses a reward signal that is closely related to variational complexity gain. The difference is that while VIME measures the KL between the posterior before and after a step in parameter space, we consider the change in KL between the posterior and prior induced by the step. Therefore, while VIME looks for any change to the posterior, we focus only on changes that alter the divergence from the prior. Further research will be needed to assess the relative merits of the two signals."  
 >	"For maximum likelihood training, we found prediction gain to be the most consistent signal, while for variational inference training, gradient variational complexity gain performed best. Importantly, both are instantaneous, in the sense that they can be evaluated using only the samples used for training."  
   - <https://youtu.be/-u32TOPGIbQ?t=2m43s> (Graves)  
 
-[Teacher-Student Curriculum Learning](https://arxiv.org/abs/1707.00183) (OpenAI)    # structured exploration in policy space guided by learning progress  
-
 [Automatic Goal Generation for Reinforcement Learning Agents](https://arxiv.org/abs/1705.06366) (Abbeel)    # structured exploration in policy space guided by learning progress  
+>	"self-play between the policy and a task-setter in order to automatically generate goal states which are on the border of what the current policy can achieve"  
 
 [Intrinsic Motivation and Automatic Curricula via Asymmetric Self-Play](http://arxiv.org/abs/1703.05407) (Facebook AI Research)    # structured exploration in policy space guided by learning progress  
   - <https://youtube.com/watch?v=EHHiFwStqaA> (demo)  
@@ -1589,6 +1641,16 @@ hieves."
 ---
 ### reinforcement learning - imitation
 
+[One-Shot Imitation Learning](http://arxiv.org/abs/1703.07326) (OpenAI)  
+  - <http://bit.ly/one-shot-imitation> (demo)  
+  - <http://videolectures.net/deeplearning2017_de_freitas_deep_control/> (1:03:10) (de Freitas)  
+
+[Deeply AggreVaTeD: Differentiable Imitation Learning for Sequential Prediction](https://arxiv.org/abs/1703.01030)  
+
+[Query-Efficient Imitation Learning for End-to-End Autonomous Driving](https://arxiv.org/abs/1605.06450)  # SafeDAgger  
+  - <https://youtu.be/soZXAH3leeQ?t=15m51s> (Cho)  
+
+----
 [Inferring The Latent Structure of Human Decision-Making from Raw Visual Inputs](https://arxiv.org/abs/1703.08840)  
   - <https://github.com/YunzhuLi/InfoGAIL>  
 
@@ -1610,6 +1672,8 @@ hieves."
   - <https://github.com/DanielTakeshi/rl_algorithms/tree/master/il>  
 
 ----
+[One-Shot Visual Imitation Learning via Meta-Learning](https://arxiv.org/abs/1709.04905) (Abbeel, Levine)  
+
 [Leveraging Demonstrations for Deep Reinforcement Learning on Robotics Problems with Sparse Rewards](https://arxiv.org/abs/1707.08817) (DeepMind)  
 >	"Our work combines imitation learning with learning from task rewards, so that the agent is able to improve upon the demonstrations it has seen."  
 >	"Most work on RL in high-dimensional continuous control problems relies on well-tuned shaping rewards both for communicating the goal to the agent as well as easing the exploration problem. While many of these tasks can be defined by a terminal goal state fairly easily, tuning a proper shaping reward that does not lead to degenerate solutions is very difficult. This task only becomes more difficult when you move to multi-stage tasks such as insertion (stage for reaching the insertion point and stage for inserting the object). In this work, we replaced these difficult to tune shaping reward functions with demonstrations of the task from a human demonstrator. This eases the exploration problem without requiring careful tuning of shaping rewards."  
@@ -1619,19 +1683,6 @@ hieves."
   - <https://youtube.com/playlist?list=PLdjpGm3xcO-0aqVf--sBZHxCKg-RZfa5T> (demo)  
   - <https://github.com/reinforceio/tensorforce/blob/master/tensorforce/models/dqfd_model.py>  
 
-[Query-Efficient Imitation Learning for End-to-End Autonomous Driving](https://arxiv.org/abs/1605.06450)  # SafeDAgger  
-  - <https://youtu.be/soZXAH3leeQ?t=15m51s> (Cho)  
-
-[Deeply AggreVaTeD: Differentiable Imitation Learning for Sequential Prediction](https://arxiv.org/abs/1703.01030)  
-
-[One-Shot Imitation Learning](http://arxiv.org/abs/1703.07326) (OpenAI)  
-  - <http://bit.ly/one-shot-imitation> (demo)  
-  - <http://videolectures.net/deeplearning2017_de_freitas_deep_control/> (1:03:10) (de Freitas)  
-
-[Guided Cost Learning: Deep Inverse Optimal Control via Policy Optimization](http://arxiv.org/abs/1603.00448) (Abbeel)  
-  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (22:48) (Levine)  
-
-----
 [Imitation from Observation: Learning to Imitate Behaviors from Raw Video via Context Translation](https://arxiv.org/abs/1707.03374) (Abbeel, Levine)  
   - <https://youtube.com/watch?v=kJBRDhInbmU> (demo)  
 
@@ -1696,18 +1747,31 @@ hieves."
 >	"The agent learns simple language by making predictions about the world in which that language occurs, and by discovering which combinations of words, perceptual cues and action decisions result in positive outcomes. Its knowledge is distributed across language, vision and policy networks, and pertains to modifiers, relational concepts and actions, as well as concrete objects. Its semantic representations enable the agent to productively interpret novel word combinations, to apply known relations and modifiers to unfamiliar objects and to re-use knowledge pertinent to the concepts it already has in the process of acquiring new concepts."  
 >	"While our simulations focus on language, the outcomes are relevant to machine learning in a more general sense. In particular, the agent exhibits active, multi-modal concept induction, the ability to transfer its learning and apply its knowledge representations in unfamiliar settings, a facility for learning multiple, distinct tasks, and the effective synthesis of unsupervised and reinforcement learning. At the same time, learning in the agent reflects various effects that are characteristic of human development, such as rapidly accelerating rates of vocabulary growth, the ability to learn from both rewarded interactions and predictions about the world, a natural tendency to generalise and re-use semantic knowledge, and improved outcomes when learning is moderated by curricula."  
   - <https://youtube.com/watch?v=wJjdu1bPJ04> (demo)  
+  - <http://videolectures.net/deeplearning2017_blunsom_language_processing/> (48:54) (Blunsom)  
 
 [Programmable Agents](https://arxiv.org/abs/1706.06383) (DeepMind)  
   - <https://youtube.com/playlist?list=PLs1LSEoK_daRDnPUB2u7VAXSonlNU7IcV> (demo)  
   - <http://videolectures.net/deeplearning2017_de_freitas_deep_control/> (32:57) (de Freitas)  
+  - <https://github.com/jaesik817/programmable-agents_tensorflow>  
+
+[Gated-Attention Architectures for Task-Oriented Language Grounding](https://arxiv.org/abs/1706.07230) (Salakhutdinov)  
 
 [Emergent Language in a Multi-Modal, Multi-Step Referential Game](https://arxiv.org/abs/1705.10369)  
 
 [Translating Neuralese](https://arxiv.org/abs/1704.06960)  
 >	"Authors take the vector messages (“neuralese”) passed between two machines trained to perform a collaborative task, and translate them into natural language utterances. To overcome the absence of neuralese-to-English parallel data, authors consider a pair of messages equivalent if they are used in similar scenarios by human and machine agents."  
+  - <http://github.com/jacobandreas/neuralese>  
+
+[Deal or No Deal? End-to-End Learning for Negotiation Dialogues](https://arxiv.org/abs/1706.05125) (Facebook AI Research)  
+  - <https://ku.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e76f464c-6f81-4e31-b942-839312cf0f8c> (Lewis)  
+  - <http://videolectures.net/deeplearning2017_parikh_batra_deep_rl/> (Parikh, Batra)  
+  - <https://code.facebook.com/posts/1686672014972296>  
+  - <https://github.com/facebookresearch/end-to-end-negotiator>  
 
 [Learning Cooperative Visual Dialog Agents with Deep Reinforcement Learning](https://arxiv.org/abs/1703.06585)  
-  - <https://visualdialog.org> (demo)  
+  - <https://youtube.com/watch?v=SztC8VOWwRQ> (demo)  
+  - <https://youtube.com/watch?v=I9OlorMh7wU> (Das)  
+  - <http://videolectures.net/deeplearning2017_parikh_batra_deep_rl/> (Parikh, Batra)  
 
 [A Deep Compositional Framework for Human-like Language Acquisition in Virtual Environment](https://arxiv.org/abs/1703.09831) (Baidu)  
 
@@ -1718,127 +1782,22 @@ hieves."
 >
 >	"The big outcome to hunt for in this space is a post-gradient descent learning algorithm. Of course you can make agents that play the symbol grounding game, but it's not a very big step from there to compression of data, and from there to compression of 'what you need to know to solve the problem you're about to encounter' - at which point you have a system which can learn by training or learn by receiving messages. It was pretty easy to get stuff like one agent learning a classifier, encoding it in a message, and transmitting it to a second agent who has to use it for zero-shot classification. But it's still single-task specific communication, so there's no benefit to the agent for receiving, say, the messages associated with the previous 100 tasks. The tricky thing is going from there to something more abstract and cumulative, so that you can actually use message generation as an iterative learning mechanism. I think a large part of that difficulty is actually designing the task ensemble, not just the network architecture."  
   - <https://youtube.com/watch?v=liVFy7ZO4OA> (demo)  
-  - ["A Paradigm for Situated and Goal-Driven Language Learning"](https://arxiv.org/abs/1610.03585)  
   - <https://blog.openai.com/learning-to-communicate/>  
-  - <https://youtube.com/watch?v=f4gKhK8Q6mY&t=22m20s> (Abbeel)  
+  - <https://youtu.be/02xIkHowQOk?t=1h17m45s> (Lowe)  
   - <http://videos.re-work.co/videos/366-learning-to-communicate> (Lowe)  
+  - <https://youtube.com/watch?v=f4gKhK8Q6mY&t=22m20s> (Abbeel)  
+  - ["A Paradigm for Situated and Goal-Driven Language Learning"](https://arxiv.org/abs/1610.03585)  
 
 [Multi-Agent Cooperation and the Emergence of (Natural) Language](https://arxiv.org/abs/1612.07182) (Facebook AI Research)  
   - <https://facebook.com/iclr.cc/videos/1712966538732405/> (Peysakhovich)  
 
-
-
----
-### dialog systems
-
-[How NOT To Evaluate Your Dialogue System: An Empirical Study of Unsupervised Evaluation Metrics for Dialogue Response Generation](http://arxiv.org/abs/1603.08023)  
-  - <http://www.shortscience.org/paper?bibtexKey=journals/corr/LiuLSNCP16#shagunsodhani>  
-
-[On the Evaluation of Dialogue Systems with Next Utterance Classification](http://arxiv.org/abs/1605.05414)  
-
-[Towards an Automatic Turing Test: Learning to Evaluate Dialogue Responses](https://arxiv.org/abs/1708.07149)  
-  - <https://youtube.com/watch?v=vTgwWobuoFw> (Pineau)  
-
-----
-[A Deep Reinforcement Learning Chatbot](https://arxiv.org/abs/1709.02349) (Bengio)  
-
-----
-[Learning from Real Users: Rating Dialogue Success with Neural Networks for Reinforcement Learning in Spoken Dialogue Systems](http://arxiv.org/abs/1508.03386) (Young)  
-
-[On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems](http://arxiv.org/abs/1605.07669) (Young)  
-
-[Continuously Learning Neural Dialogue Management](http://arxiv.org/abs/1606.02689) (Young)  
-
-[Online Sequence-to-Sequence Reinforcement Learning for Open-domain Conversational Agents](http://arxiv.org/abs/1612.03929)  
-
-----
-[Generative Deep Neural Networks for Dialogue: A Short Review](http://arxiv.org/abs/1611.06216) (Pineau)  
-
-[Emulating Human Conversations using Convolutional Neural Network-based IR](http://arxiv.org/abs/1606.07056)  
-
-[Two are Better than One: An Ensemble of Retrieval- and Generation-Based Dialog Systems](http://arxiv.org/abs/1610.07149)  
-
-[Machine Comprehension by Text-to-Text Neural Question Generation](https://arxiv.org/abs/1705.02012) (Maluuba)  
-  - <https://youtube.com/watch?v=UIzcIC5RQN8>  
-
-----
-[Latent Intention Dialogue Models](https://arxiv.org/abs/1705.10229) (Young)  
->	"Learning an end-to-end dialogue system is appealing but challenging because of the credit assignment problem. Discrete latent variable dialogue models such as LIDM are attractive because the latent variable can serve as an interface for decomposing the learning of language and the internal dialogue decision-making. This decomposition can effectively help us resolve the credit assignment problem where different learning signals can be applied to different sub-modules to update the parameters. In variational inference for discrete latent variables, the latent distribution is basically updated by the reward from the variational lower bound. While in reinforcement learning, the latent distribution (i.e. policy network) is updated by the rewards from dialogue success and sentence BLEU score. Hence, the latent variable bridges the different learning paradigms such as Bayesian learning and reinforcement learning and brings them together under the same framework. This framework provides a more robust neural network-based approach than previous approaches because it does not depend solely on sequence-to-sequence learning but instead explicitly models the hidden dialogue intentions underlying the user’s utterances and allows the agent to directly learn a dialogue policy through interaction."
-
-[Hybrid Code Networks: Practical and Efficient End-to-end Dialog Control with Supervised and Reinforcement Learning](https://arxiv.org/abs/1702.03274) (Zweig)  
->	"End-to-end methods lack a general mechanism for injecting domain knowledge and constraints. For example, simple operations like sorting a list of database results or updating a dictionary of entities can expressed in a few lines of software, yet may take thousands of dialogs to learn. Moreover, in some practical settings, programmed constraints are essential – for example, a banking dialog system would require that a user is logged in before they can retrieve account information."  
->	"In addition to learning an RNN, HCNs also allow a developer to express domain knowledge via software and action templates."  
-
-[Adversarial Learning for Neural Dialogue Generation](http://arxiv.org/abs/1701.06547) (Jurafsky)  
-  - <https://github.com/jiweil/Neural-Dialogue-Generation>  
-
-[End-to-End Reinforcement Learning of Dialogue Agents for Information Access](http://arxiv.org/abs/1609.00777) (Deng)  
-
-[Efficient Exploration for Dialog Policy Learning with Deep BBQ Networks & Replay Buffer Spiking](http://arxiv.org/abs/1608.05081) (Deng)  
-
-[Neural Belief Tracker: Data-Driven Dialogue State Tracking](http://arxiv.org/abs/1606.03777) (Young)  
-
-[Policy Networks with Two-Stage Training for Dialogue Systems](http://arxiv.org/abs/1606.03152) (Maluuba)  
-  - <http://www.maluuba.com/blog/2016/11/23/deep-reinforcement-learning-in-dialogue-systems>  
-
-----
-[Deal or No Deal? End-to-End Learning for Negotiation Dialogues](https://arxiv.org/abs/1706.05125) (Facebook AI Research)  
-  - <https://ku.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e76f464c-6f81-4e31-b942-839312cf0f8c> (Lewis)  
-  - <https://code.facebook.com/posts/1686672014972296>  
-  - <https://github.com/facebookresearch/end-to-end-negotiator>  
-
-[Learning Language Games through Interaction](http://arxiv.org/abs/1606.02447) (Manning)  
-  - <https://youtube.com/watch?v=iuazFltYgCE> (Wang)
-
-[Deep Reinforcement Learning for Dialogue Generation](http://arxiv.org/abs/1606.01541) (Jurafsky)  
-  - <http://www.shortscience.org/paper?bibtexKey=conf/emnlp/LiMRJGG16>  
-
-[End-to-End LSTM-based Dialog Control Optimized with Supervised and Reinforcement Learning](http://arxiv.org/abs/1606.01269) (Zweig)  
-
-[Learning End-to-End Goal-Oriented Dialog](http://arxiv.org/abs/1605.07683) (Weston)  
-  - <https://facebook.com/iclr.cc/videos/1712966538732405/> (27:39) (Boureau)  
-
-[A Network-based End-to-End Trainable Task-oriented Dialogue System](http://arxiv.org/abs/1604.04562) (Young)  
-  - <http://videolectures.net/deeplearning2016_wen_network_based/> (Wen)  
-
-[Towards Conversational Recommender Systems](http://kdd.org/kdd2016/subtopic/view/towards-conversational-recommender-systems) (Hoffman)  
-  - <https://periscope.tv/WiMLworkshop/1vAGRXDbvbkxl> (Christakopoulou)  
-  - <https://youtube.com/watch?v=nLUfAJqXFUI> (Christakopoulou)  
-
-----
-[A Copy-Augmented Sequence-to-Sequence Architecture Gives Good Performance on Task-Oriented Dialogue](http://arxiv.org/abs/1701.04024) (Manning)  
-  - <https://medium.com/@sharaf/a-paper-a-day-14-a-copy-augmented-sequence-to-sequence-architecture-gives-good-performance-on-44727e880044>  
-
-[Multiresolution Recurrent Neural Networks: An Application to Dialogue Response Generation](http://arxiv.org/abs/1606.00776) (Bengio)  
-
-[An Attentional Neural Conversation Model with Improved Specificity](http://arxiv.org/abs/1606.01292) (Zweig)  
-
-[A Hierarchical Latent Variable Encoder-Decoder Model for Generating Dialogues](http://arxiv.org/abs/1605.06069) (Bengio)  
-  - <http://cs.mcgill.ca/~rlowe1/problem_with_neural_chatbots.pdf> (Lowe)  
-
-----
-[LSTM-based Mixture-of-Experts for Knowledge-Aware Dialogues](http://arxiv.org/abs/1605.01652)  
-
-[Multi-domain Neural Network Language Generation for Spoken Dialogue Systems](http://arxiv.org/abs/1603.01232)  
-
-[Sentence Level Recurrent Topic Model: Letting Topics Speak for Themselves](http://arxiv.org/abs/1604.02038)  
-
-[Context-aware Natural Language Generation with Recurrent Neural Networks](http://arxiv.org/abs/1611.09900)  
-
-[Data Distillation for Controlling Specificity in Dialogue Generation](http://arxiv.org/abs/1702.06703) (Jurafsky)  
-
-----
-[A Persona-Based Neural Conversation Model](http://arxiv.org/abs/1603.06155)  
-  - <https://github.com/jiweil/Neural-Dialogue-Generation>  
-
-[Conversational Contextual Cues: The Case of Personalization and History for Response Ranking](http://arxiv.org/abs/1606.00372) (Kurzweil)  
-
-[A Sequence-to-Sequence Model for User Simulation in Spoken Dialogue Systems](http://arxiv.org/abs/1607.00070) (Maluuba)  
-
-----
-[Deep Contextual Language Understanding in Spoken Dialogue Systems](http://research.microsoft.com/apps/pubs/default.aspx?id=256085)  
-
-[Improving Information Extraction by Acquiring External Evidence with Reinforcement Learning](http://arxiv.org/abs/1603.07954) (Barzilay)  
+[Learning Language Games through Interaction](http://arxiv.org/abs/1606.02447) (Liang)  
+  - <http://nlp.stanford.edu/blog/interactive-language-learning/>  
+  - <http://youtube.com/watch?v=PfW4_3tCiw0> (demo, calendar)  
+  - <http://shrdlurn.sidaw.xyz> (demo, blocks world)  
+  - <https://youtube.com/watch?v=iuazFltYgCE> (Wang)  
+  - <https://youtu.be/mhHfnhh-pB4?t=1h5m45s> (Liang)  
+  - <https://youtu.be/6O5sttckalE?t=40m45s> (Liang)  
 
 
 
@@ -1926,3 +1885,109 @@ hieves."
   - <https://github.com/hitvoice/DrQA>  
 
 [R3: Reinforced Reader-Ranker for Open-Domain Question Answering](https://arxiv.org/abs/1709.00023) (IBM)  
+
+
+
+---
+### dialog systems
+
+[How NOT To Evaluate Your Dialogue System: An Empirical Study of Unsupervised Evaluation Metrics for Dialogue Response Generation](http://arxiv.org/abs/1603.08023)  
+  - <http://www.shortscience.org/paper?bibtexKey=journals/corr/LiuLSNCP16#shagunsodhani>  
+
+[On the Evaluation of Dialogue Systems with Next Utterance Classification](http://arxiv.org/abs/1605.05414)  
+
+[Towards an Automatic Turing Test: Learning to Evaluate Dialogue Responses](https://arxiv.org/abs/1708.07149)  
+  - <https://youtube.com/watch?v=vTgwWobuoFw> (Pineau)  
+
+----
+[A Deep Reinforcement Learning Chatbot](https://arxiv.org/abs/1709.02349) (Bengio)  
+
+----
+[Learning from Real Users: Rating Dialogue Success with Neural Networks for Reinforcement Learning in Spoken Dialogue Systems](http://arxiv.org/abs/1508.03386) (Young)  
+
+[On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems](http://arxiv.org/abs/1605.07669) (Young)  
+
+[Continuously Learning Neural Dialogue Management](http://arxiv.org/abs/1606.02689) (Young)  
+
+[Online Sequence-to-Sequence Reinforcement Learning for Open-domain Conversational Agents](http://arxiv.org/abs/1612.03929)  
+
+----
+[Generative Deep Neural Networks for Dialogue: A Short Review](http://arxiv.org/abs/1611.06216) (Pineau)  
+
+[Emulating Human Conversations using Convolutional Neural Network-based IR](http://arxiv.org/abs/1606.07056)  
+
+[Two are Better than One: An Ensemble of Retrieval- and Generation-Based Dialog Systems](http://arxiv.org/abs/1610.07149)  
+
+[Machine Comprehension by Text-to-Text Neural Question Generation](https://arxiv.org/abs/1705.02012) (Maluuba)  
+  - <https://youtube.com/watch?v=UIzcIC5RQN8>  
+
+----
+[Latent Intention Dialogue Models](https://arxiv.org/abs/1705.10229) (Young)  
+>	"Learning an end-to-end dialogue system is appealing but challenging because of the credit assignment problem. Discrete latent variable dialogue models such as LIDM are attractive because the latent variable can serve as an interface for decomposing the learning of language and the internal dialogue decision-making. This decomposition can effectively help us resolve the credit assignment problem where different learning signals can be applied to different sub-modules to update the parameters. In variational inference for discrete latent variables, the latent distribution is basically updated by the reward from the variational lower bound. While in reinforcement learning, the latent distribution (i.e. policy network) is updated by the rewards from dialogue success and sentence BLEU score. Hence, the latent variable bridges the different learning paradigms such as Bayesian learning and reinforcement learning and brings them together under the same framework. This framework provides a more robust neural network-based approach than previous approaches because it does not depend solely on sequence-to-sequence learning but instead explicitly models the hidden dialogue intentions underlying the user’s utterances and allows the agent to directly learn a dialogue policy through interaction."  
+
+[Hybrid Code Networks: Practical and Efficient End-to-end Dialog Control with Supervised and Reinforcement Learning](https://arxiv.org/abs/1702.03274) (Zweig)  
+>	"End-to-end methods lack a general mechanism for injecting domain knowledge and constraints. For example, simple operations like sorting a list of database results or updating a dictionary of entities can expressed in a few lines of software, yet may take thousands of dialogs to learn. Moreover, in some practical settings, programmed constraints are essential – for example, a banking dialog system would require that a user is logged in before they can retrieve account information."  
+>	"In addition to learning an RNN, HCNs also allow a developer to express domain knowledge via software and action templates."  
+
+[Adversarial Learning for Neural Dialogue Generation](http://arxiv.org/abs/1701.06547) (Jurafsky)  
+  - <https://github.com/jiweil/Neural-Dialogue-Generation>  
+
+[End-to-End Reinforcement Learning of Dialogue Agents for Information Access](http://arxiv.org/abs/1609.00777) (Deng)  
+
+[Efficient Exploration for Dialog Policy Learning with Deep BBQ Networks & Replay Buffer Spiking](http://arxiv.org/abs/1608.05081) (Deng)  
+
+[Neural Belief Tracker: Data-Driven Dialogue State Tracking](http://arxiv.org/abs/1606.03777) (Young)  
+
+[Policy Networks with Two-Stage Training for Dialogue Systems](http://arxiv.org/abs/1606.03152) (Maluuba)  
+  - <http://www.maluuba.com/blog/2016/11/23/deep-reinforcement-learning-in-dialogue-systems>  
+
+----
+[Deep Reinforcement Learning for Dialogue Generation](http://arxiv.org/abs/1606.01541) (Jurafsky)  
+  - <http://www.shortscience.org/paper?bibtexKey=conf/emnlp/LiMRJGG16>  
+
+[End-to-End LSTM-based Dialog Control Optimized with Supervised and Reinforcement Learning](http://arxiv.org/abs/1606.01269) (Zweig)  
+
+[Learning End-to-End Goal-Oriented Dialog](http://arxiv.org/abs/1605.07683) (Weston)  
+  - <https://facebook.com/iclr.cc/videos/1712966538732405/> (27:39) (Boureau)  
+
+[A Network-based End-to-End Trainable Task-oriented Dialogue System](http://arxiv.org/abs/1604.04562) (Young)  
+  - <http://videolectures.net/deeplearning2016_wen_network_based/> (Wen)  
+
+[Towards Conversational Recommender Systems](http://kdd.org/kdd2016/subtopic/view/towards-conversational-recommender-systems) (Hoffman)  
+  - <https://periscope.tv/WiMLworkshop/1vAGRXDbvbkxl> (Christakopoulou)  
+  - <https://youtube.com/watch?v=nLUfAJqXFUI> (Christakopoulou)  
+
+----
+[A Copy-Augmented Sequence-to-Sequence Architecture Gives Good Performance on Task-Oriented Dialogue](http://arxiv.org/abs/1701.04024) (Manning)  
+  - <https://medium.com/@sharaf/a-paper-a-day-14-a-copy-augmented-sequence-to-sequence-architecture-gives-good-performance-on-44727e880044>  
+
+[Multiresolution Recurrent Neural Networks: An Application to Dialogue Response Generation](http://arxiv.org/abs/1606.00776) (Bengio)  
+
+[An Attentional Neural Conversation Model with Improved Specificity](http://arxiv.org/abs/1606.01292) (Zweig)  
+
+[A Hierarchical Latent Variable Encoder-Decoder Model for Generating Dialogues](http://arxiv.org/abs/1605.06069) (Bengio)  
+  - <http://cs.mcgill.ca/~rlowe1/problem_with_neural_chatbots.pdf> (Lowe)  
+
+----
+[LSTM-based Mixture-of-Experts for Knowledge-Aware Dialogues](http://arxiv.org/abs/1605.01652)  
+
+[Multi-domain Neural Network Language Generation for Spoken Dialogue Systems](http://arxiv.org/abs/1603.01232)  
+
+[Sentence Level Recurrent Topic Model: Letting Topics Speak for Themselves](http://arxiv.org/abs/1604.02038)  
+
+[Context-aware Natural Language Generation with Recurrent Neural Networks](http://arxiv.org/abs/1611.09900)  
+
+[Data Distillation for Controlling Specificity in Dialogue Generation](http://arxiv.org/abs/1702.06703) (Jurafsky)  
+
+----
+[A Persona-Based Neural Conversation Model](http://arxiv.org/abs/1603.06155)  
+  - <https://github.com/jiweil/Neural-Dialogue-Generation>  
+
+[Conversational Contextual Cues: The Case of Personalization and History for Response Ranking](http://arxiv.org/abs/1606.00372) (Kurzweil)  
+
+[A Sequence-to-Sequence Model for User Simulation in Spoken Dialogue Systems](http://arxiv.org/abs/1607.00070) (Maluuba)  
+
+----
+[Deep Contextual Language Understanding in Spoken Dialogue Systems](http://research.microsoft.com/apps/pubs/default.aspx?id=256085)  
+
+[Improving Information Extraction by Acquiring External Evidence with Reinforcement Learning](http://arxiv.org/abs/1603.07954) (Barzilay)  

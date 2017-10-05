@@ -92,9 +92,6 @@
 
 ----
 
-  [patent on Deep Q-Network](http://google.com/patents/US20150100530) by Google:  
->	"Further applications of the techniques we describe, which are merely given by way of example, include: robot control (such as bipedal or quadrupedal walking or running, navigation, grasping, and other control skills); vehicle control (autonomous vehicle control, steering control, airborne vehicle control such as helicopter or plane control, autonomous mobile robot control); machine control; control of wired or wireless communication systems; control of laboratory or industrial equipment; control of real or virtual resources (such as memory management, inventory management and the like); drug discovery (where the controlled action is, say, the definition of DNA sequence of a drug and the states are defined by states of a living entity to which the drug is applied); application to a system in which the state of or output from the system is defined by words (text and/or audio and/or image), such as a system employing natural language; application to a trading system such as a stock market (although the actions taken may have little effect on such a system, very small effects can be sufficient to achieve useful overall rewards); and others."
-
   ["Why Tool AIs Want to Be Agent AIs"](http://gwern.net/Tool%20AI) by Gwern Branwen:  
 >	"The logical extension of these neural networks all the way down papers is that an actor like Google/Baidu/Facebook/MS could effectively turn neural networks into a black box: a user/developer uploads through an API a dataset of input/output pairs of a specified type and a monetary loss function, and a top-level neural network running on a large GPU cluster starts autonomously optimizing over architectures & hyperparameters for the neural network design which balances GPU cost and the monetary loss, interleaved with further optimization over the thousands of previous submitted tasks, sharing its learning across all of the datasets/loss functions/architectures/hyperparameters, and the original user simply submits future data through the API for processing by the best neural network so far."
 
@@ -105,16 +102,19 @@
   - *Go*  
 	["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#silver-et-al---mastering-the-game-of-go-with-deep-neural-networks-and-tree-search) by Silver et al.
 
-	[history of ideas](http://youtube.com/watch?v=UMm0XaCFTJQ) by Rich Sutton, Czaba Szepesvari, Michael Bowling, Ryan Hayward, Martin Muller  
-	"Google AlphaGo is a historical tour of AI ideas: 70s (Alpha-Beta), 80s/90s (RL & self-play), 00's (Monte-Carlo), 10's (deep neural networks)."  
-
 	[overview](https://youtu.be/i3lEG6aRGm8?t=16m) by Demis Hassabis  
 	overview by David Silver and Chris Maddison
 		([part 1](https://youtu.be/yCALyQRN3hw?t=15m18s), [part 2](https://youtu.be/qUAmTYHEyM8?t=15m31s), [part 3](https://youtu.be/mzpW10DPHeQ?t=10m22s))  
 	[overview](https://youtube.com/watch?v=4D5yGiYe8p4) by David Silver  
 	[overview](https://youtu.be/LX8Knl0g0LE?t=4m41s) by Aja Huang  
 
-	<https://xcorr.net/2016/02/03/5-easy-pieces-how-deepmind-mastered-go/>  
+	"Google AlphaGo is a historical tour of AI ideas: 70s (Alpha-Beta), 80s/90s (RL & self-play), 00's (Monte-Carlo), 10's (deep neural networks)."
+
+	["Combining Online and Offline Knowledge in UCT"](https://youtube.com/watch?v=Bm7zah_LrmE) by David Silver and Sylvain Gelly  
+	[history of ideas](http://youtube.com/watch?v=UMm0XaCFTJQ) by Rich Sutton, Czaba Szepesvari, Michael Bowling, Ryan Hayward, Martin Muller  
+
+	["5 Easy Pieces: How Deepmind mastered Go"](https://xcorr.net/2016/02/03/5-easy-pieces-how-deepmind-mastered-go/) by Patrick Mineault  
+	["AlphaGo, In Context"](https://medium.com/@karpathy/alphago-in-context-c47718cb95a5) by Andrej Karpathy  
 
 	AlphaGo vs Lee Sedol match:
 
@@ -143,9 +143,6 @@
 	game 3: [video](https://youtube.com/watch?v=ru0E7N0-kFE) +
 		[analysis](https://youtube.com/watch?v=CUZxe7bXKxo)  
 
-	<https://theverge.com/2017/5/30/15712300/alphago-ai-humanity-google-artificial-intelligence-ke-jie>  
-	<https://medium.com/@karpathy/alphago-in-context-c47718cb95a5>  
-
   - *Poker*  
 	["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](#moravcik-et-al---deepstack-expert-level-artificial-intelligence-in-no-limit-poker) by Moravcik et al.  
 	[Science paper](http://science.sciencemag.org/content/early/2017/03/01/science.aam6960)  
@@ -167,7 +164,7 @@
   - *Chess*  
 	["Giraffe: Using Deep Reinforcement Learning to Play Chess"](#lai---giraffe-using-deep-reinforcement-learning-to-play-chess) by Lai
 
-  - *Dota 2*
+  - *Dota 2*  
 	<https://blog.openai.com/dota-2/>  
 	[overview](https://blog.openai.com/more-on-dota-2/)  
 
@@ -248,15 +245,13 @@
 
 ----
 
-  overview by David Silver:  
-	<http://techtalks.tv/talks/deep-reinforcement-learning/62360/>  
-	<http://videolectures.net/rldm2015_silver_reinforcement_learning/>  
-	<http://youtube.com/watch?v=qLaDWKd61Ig>  
-	<http://youtube.com/watch?v=3hWn5vMnpiM>  
+  [overview](http://techtalks.tv/talks/deep-reinforcement-learning/62360/) by David Silver  
+  [overview](http://videolectures.net/rldm2015_silver_reinforcement_learning/) by David Silver  
+  [overview](http://youtube.com/watch?v=qLaDWKd61Ig) by David Silver  
+  [overview](http://youtube.com/watch?v=3hWn5vMnpiM) by David Silver  
 
-  overview by Pieter Abbeel:  
-	<http://youtube.com/watch?v=evq4p1zhS7Q>  
-	<http://research.microsoft.com/apps/video/default.aspx?id=260045>  
+  [overview](http://youtube.com/watch?v=evq4p1zhS7Q) by Pieter Abbeel  
+  [overview](http://research.microsoft.com/apps/video/default.aspx?id=260045) by Pieter Abbeel  
 
 ----
 
@@ -760,7 +755,7 @@
 
 ----
 
-  (John Langford) "The Atari results are very fun but obviously unimpressive on about 1/4 of the games. My hypothesis for why is that the solution does only local (epsilon-greedy style) exploration rather than global exploration so they can only learn policies addressing either very short credit assignment problems or with greedily accessible polices. Global exploration strategies are known to result in exponentially more efficient strategies in general for [deterministic decision processes](http://idm-lab.org/bib/abstracts/papers/aaai93.pdf) (1993), [Markov Decision Processes](http://www.cis.upenn.edu/~mkearns/papers/KearnsSinghE3.pdf) (1998), and for [MDPs without modelling](http://research.microsoft.com/pubs/178886/published.pdf) (2006). The reason these strategies are not used is because they are based on tabular learning rather than function fitting. That’s why I shifted to Contextual Bandit research after the 2006 paper. We’ve learned quite a bit there, enough to start tackling a [Contextual Deterministic Decision Process](http://arxiv.org/abs/1602.02722) (2016), but that solution is still far from practical."
+  "The Atari results are very fun but obviously unimpressive on about 1/4 of the games. My hypothesis for why is that the solution does only local (epsilon-greedy style) exploration rather than global exploration so they can only learn policies addressing either very short credit assignment problems or with greedily accessible polices. Global exploration strategies are known to result in exponentially more efficient strategies in general for [deterministic decision processes](http://idm-lab.org/bib/abstracts/papers/aaai93.pdf) (1993), [Markov Decision Processes](http://www.cis.upenn.edu/~mkearns/papers/KearnsSinghE3.pdf) (1998), and for [MDPs without modelling](http://research.microsoft.com/pubs/178886/published.pdf) (2006). The reason these strategies are not used is because they are based on tabular learning rather than function fitting. That’s why I shifted to Contextual Bandit research after the 2006 paper. We’ve learned quite a bit there, enough to start tackling a [Contextual Deterministic Decision Process](http://arxiv.org/abs/1602.02722) (2016), but that solution is still far from practical." *(John Langford)*
 
   [global exploration strategies](#exploration-and-intrinsic-motivation)
 
@@ -914,6 +909,8 @@
 ---
 ### value-based methods
 
+  ["Temporal-Difference Learning"](http://videolectures.net/deeplearning2017_sutton_td_learning/) by Richard Sutton  
+
   ["Markov Decision Process"](https://youtube.com/watch?v=lfHX2hHRMVQ) by David Silver  
   ["Planning by Dynamic Programming"](https://youtube.com/watch?v=Nd1-UUMVfz4) by David Silver  
   ["Model-Free Prediction"](https://youtube.com/watch?v=PnHCvfgC_ZA) by David Silver  
@@ -924,8 +921,6 @@
   "Q-Function Learning Methods" by John Schulman
 	([first part](https://youtube.com/watch?v=Wnl-Qh2UHGg&t=19m06s),
 	[second part](https://youtube.com/watch?v=h1-pj4Y9-kM))  
-
-  [introduction to Deep Q-Network](http://youtube.com/watch?v=dV80NAlEins) by Nando de Freitas  
 
   ["Temporal Difference"](https://yadi.sk/i/cVawsPkK3EtGJj) by Fedor Ratnikov (in russian)  
   "Value-based Methods" by Fedor Ratnikov (in russian)
@@ -970,15 +965,11 @@
     * robust gradients  
 
 
-  [overview](https://yadi.sk/i/EeUeheri3FT3ra) of Deep Q-Network implementation by Oleg Vasilev and Fedor Ratnikov (in russian)  
-
-
 
 ---
 ### policy-based methods
 
   [introduction](http://youtube.com/watch?v=KHZVXao4qXs) by David Silver  
-  [introduction](http://youtube.com/watch?v=kUiR0RLmGCo) by Nando de Freitas  
 
   [introduction](http://karpathy.github.io/2016/05/31/rl/) by Andrej Karpathy  
   [introduction](https://dropbox.com/s/yefei7380x7jeo7/Deep%20Reinforcement%20Learning%20Tutorial%20%28OpenAI%29.html) by John Schulman  
@@ -1301,7 +1292,7 @@
 [selected papers and books](https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va)
 
 
-interesting papers (see below):  
+interesting papers:  
   - [applications](#interesting-papers---applications)  
   - [exploration and intrinsic motivation](#interesting-papers---exploration-and-intrinsic-motivation)  
   - [abstractions for states and actions](#interesting-papers---abstractions-for-states-and-actions)  
@@ -1823,7 +1814,7 @@ interesting recent papers:
   - <https://youtube.com/watch?v=nbbMSMv3v5k>
   - <https://youtu.be/WRFqzYWHsZA?t=18m38s> (Abbeel)
   - <https://youtube.com/watch?v=sRIjxxjVrnY> (Panin)
-  - <https://yadi.sk/i/_2_0yqeW3HDbcn> (Panin) (in russian) ([slides](https://yadi.sk/i/8sx42nau3HEYKg) in english)
+  - <https://yadi.sk/i/_2_0yqeW3HDbcn> (32:16) (Panin) (in russian) ([slides](https://yadi.sk/i/8sx42nau3HEYKg) in english)
   - <http://pemami4911.github.io/paper-summaries/2016/09/04/VIME.html>
   - <https://github.com/openai/vime>
   - [Artificial Curiosity and Creativity](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) by Juergen Schmidhuber
@@ -2138,18 +2129,20 @@ interesting recent papers:
 [interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration-models) on bayesian exploration methods
 
 
-#### Hausknecht, Stone - ["Deep Recurrent Q-Learning for Partially Observable MDPs"](http://arxiv.org/abs/1507.06527)
->	"Deep Reinforcement Learning has yielded proficient controllers for complex tasks. However, these controllers have limited memory and rely on being able to perceive the complete game screen at each decision point. To address these shortcomings, this article investigates the effects of adding recurrency to a Deep Q-Network by replacing the first post-convolutional fully-connected layer with a recurrent LSTM. The resulting Deep Recurrent Q-Network exhibits similar performance on standard Atari 2600 MDPs but better performance on equivalent partially observed domains featuring flickering game screens. Results indicate that given the same length of history, recurrency allows partial information to be integrated through time and is superior to alternatives such as stacking a history of frames in the network's input layer. We additionally show that when trained with partial observations, DRQN's performance at evaluation time scales as a function of observability. Similarly, when trained with full observations and evaluated with partial observations, DRQN's performance degrades more gracefully than that of DQN. We therefore conclude that when dealing with partially observed domains, the use of recurrency confers tangible benefits."
+#### Depeweg, Hernandez-Lobato, Doshi-Velez, Udluft - ["Learning and Policy Search in Stochastic Dynamic Systems with Bayesian Neural Networks"](https://arxiv.org/abs/1605.07127)
+>	"We present an algorithm for policy search in stochastic dynamical systems using model-based reinforcement learning. The system dynamics are described with Bayesian neural networks (BNNs) that include stochastic input variables. These input variables allow us to capture complex statistical patterns in the transition dynamics (e.g. multi-modality and heteroskedasticity), which are usually missed by alternative modeling approaches. After learning the dynamics, our BNNs are then fed into an algorithm that performs random roll-outs and uses stochastic optimization for policy learning. We train our BNNs by minimizing α-divergences with α = 0.5, which usually produces better results than other techniques such as variational Bayes. We illustrate the performance of our method by solving a challenging problem where model-based approaches usually fail and by obtaining promising results in real-world scenarios including the control of a gas turbine and an industrial benchmark."
 
->	"Real-world tasks often feature incomplete and noisy state information, resulting from partial observability. We modify DQN to better deal with the noisy observations characteristic of POMDPs by leveraging advances in Recurrent Neural Networks. More specifically we combined a Long Short Term Memory with a Deep Q-Network and show the resulting Deep Recurrent Q-Network, despite the lack of convolutional velocity detection, is better equipped than a standard Deep Q-Network to handle the type of partial observability induced by flickering game screens. Further analysis shows that DRQN, when trained with partial observations, can generalize its policies to the case of complete observations. On the Flickering Pong domain, performance scales with the observability of the domain, reaching near-perfect performance when every game screen is observed. This result indicates that the recurrent network learns policies that are both robust enough to handle to missing game screens, and scalable enough to improve performance. Generalization also occurs in the opposite direction: when trained on unobscured Atari games and evaluated against obscured games, DRQN’s performance generalizes better than DQN’s at all levels of partial information. Our results indicate that given access to the same amount of history, processing observations in a recurrent layer (like DRQN) rather than stacking frames in the input layer (like DQN) yields better performance on POMDPs and better generalization for both POMDPs and MDPs."
+>	"Proposed approach enables automatic identification of arbitrary stochastic patterns such as multimodality and heteroskedasticity, without having to manually incorporate these into the model."
 
-----
->	"Demonstrated that recurrent Q learning can perform the required information integration to resolve short-term partial observability (e.g. to estimate velocities) that is achieved via stacks of frames in the original DQN architecture."
+>	"We have extended Bayesian neural network with addition of a random input noise source z. This enables principled Bayesian inference over complex stochastic functions. We have also presented an algorithm that uses random roll-outs and stochastic optimization for learning a parameterized policy in a batch scenario. Our BNNs with random inputs have allowed us to solve a challenging benchmark problem where model-based approaches usually fail."
 
-  - <https://yadi.sk/i/pMdw-_uI3Gke7Z> (36:29) (Fritsler) (in russian)
-  - <https://youtube.com/watch?v=bE5DIJvZexc> (Fritsler) (in russian)
-  - <https://github.com/mhauskn/dqn/tree/recurrent>
-  - <https://github.com/awjuliani/DeepRL-Agents/blob/master/Deep-Recurrent-Q-Network.ipynb>
+>	"For safety, we believe having uncertainty over the underlying stochastic functions will allow us to optimize policies by focusing on worst case results instead of on average performance. For exploration, having uncertainty on the stochastic functions will be useful for efficient data collection."
+
+>	"The optimal policy can be significantly affected by the noise present in the state transitions. This is illustrated by the drunken spider story, in which a spider has two possible paths to go home: either by crossing the bridge or by walking around the lake. In the absence of noise, the bridge option is prefered since it is shorter. However, after heavily drinking alcohol, the spider’s movements may randomly deviate left or right. Since the bridge is narrow, and spiders do not like swimming, the prefered trajectory is now to walk around the lake. The previous example shows how noise can significantly affect optimal control. For example, the optimal policy may change depending on whether the level of noise is high or low. Therefore, we expect to obtain significant improvements in model-based reinforcement learning by capturing with high accuracy any noise patterns present in the state transition data."
+
+  - <https://youtube.com/watch?v=0H3EkUPENSY> (Hernandez-Lobato)
+  - <https://medium.com/towards-data-science/bayesian-neural-networks-with-random-inputs-for-model-based-reinforcement-learning-36606a9399b4> (Hernandez-Lobato)
+  - <https://github.com/siemens/policy_search_bb-alpha>
 
 
 #### Gu, Lillicrap, Sutskever, Levine - ["Continuous Deep Q-Learning with Model-based Acceleration"](http://arxiv.org/abs/1603.00748)
@@ -2315,6 +2308,18 @@ interesting recent papers:
 >	"We have introduced NFSP, the first end-to-end deep reinforcement learning approach to learning approximate Nash equilibria of imperfect-information games from self-play. NFSP addresses three problems. Firstly, NFSP agents learn without prior knowledge. Secondly, they do not rely on local search at runtime. Thirdly, they converge to approximate Nash equilibria in self-play. Our empirical results provide the following insights. The performance of fictitious play degrades gracefully with various approximation errors. NFSP converges reliably to approximate Nash equilibria in a small poker game, whereas DQN’s greedy and average strategies do not. NFSP learned a competitive strategy in a real-world scale imperfect-information game from scratch without using explicit prior knowledge. In this work, we focussed on imperfect-information two-player zero-sum games. Fictitious play, however, is also guaranteed to converge to Nash equilibria in cooperative, potential games. It is therefore conceivable that NFSP can be successfully applied to these games as well. Furthermore, recent developments in continuous-action reinforcement learning (Lillicrap et al., 2015) could enable NFSP to be applied to continuous-action games, which current game-theoretic methods cannot deal with directly."
 
   - <http://techtalks.tv/talks/deep-reinforcement-learning/62360/> (1:05:00) (Silver)
+
+
+#### Hausknecht, Stone - ["Deep Recurrent Q-Learning for Partially Observable MDPs"](http://arxiv.org/abs/1507.06527)
+>	"Deep Reinforcement Learning has yielded proficient controllers for complex tasks. However, these controllers have limited memory and rely on being able to perceive the complete game screen at each decision point. To address these shortcomings, this article investigates the effects of adding recurrency to a Deep Q-Network by replacing the first post-convolutional fully-connected layer with a recurrent LSTM. The resulting Deep Recurrent Q-Network exhibits similar performance on standard Atari 2600 MDPs but better performance on equivalent partially observed domains featuring flickering game screens. Results indicate that given the same length of history, recurrency allows partial information to be integrated through time and is superior to alternatives such as stacking a history of frames in the network's input layer. We additionally show that when trained with partial observations, DRQN's performance at evaluation time scales as a function of observability. Similarly, when trained with full observations and evaluated with partial observations, DRQN's performance degrades more gracefully than that of DQN. We therefore conclude that when dealing with partially observed domains, the use of recurrency confers tangible benefits."
+
+----
+>	"Demonstrated that recurrent Q learning can perform the required information integration to resolve short-term partial observability (e.g. to estimate velocities) that is achieved via stacks of frames in the original DQN architecture."
+
+  - <https://yadi.sk/i/pMdw-_uI3Gke7Z> (36:29) (Fritsler) (in russian)
+  - <https://youtube.com/watch?v=bE5DIJvZexc> (Fritsler) (in russian)
+  - <https://github.com/mhauskn/dqn/tree/recurrent>
+  - <https://github.com/awjuliani/DeepRL-Agents/blob/master/Deep-Recurrent-Q-Network.ipynb>
 
 
 
@@ -2697,6 +2702,7 @@ interesting recent papers:
 
   - <https://youtube.com/watch?v=hXxaepw0zAw> (demo)
   - <http://techtalks.tv/talks/guided-cost-learning-deep-inverse-optimal-control-via-policy-optimization/62472/> (Finn)
+  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (22:48) (Levine)
 
 
 #### Ho, Gupta, Ermon - ["Model-Free Imitation Learning with Policy Optimization"](http://arxiv.org/abs/1605.08478)

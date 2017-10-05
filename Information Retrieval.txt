@@ -70,9 +70,10 @@
 selected papers - https://dropbox.com/sh/pvpzyxfcpy39j8p/AACduJ-pVF9Lh-gn3_SExj1va
 
 
+interesting recent papers - https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#information-retrieval
 
 
-interesting papers (see below):
+interesting papers:
   - ranking
   - document models
   - entity-centric search

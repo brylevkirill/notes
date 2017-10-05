@@ -269,7 +269,7 @@ selected papers - https://dropbox.com/sh/veqe3c800ztpkxe/AABwH6camduJrsTUJpeKobW
 interesting recent papers - https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#dialog-systems
 
 
-interesting papers (see below):
+interesting papers:
   - dialog state management
   - utterance generation
   - utterance understanding
