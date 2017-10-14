@@ -68,9 +68,8 @@
 
   [overview](https://youtube.com/watch?v=-8QMqSWU76Q) by Vikash Mansinghka  
 
-  tutorials by Frank Wood:  
-	<http://research.microsoft.com/apps/video/dl.aspx?id=259568>  
-	<http://youtube.com/watch?v=6Lqt07enBGs> + <http://youtube.com/watch?v=DY5yuBNEuQs>  
+  [tutorial](http://research.microsoft.com/apps/video/dl.aspx?id=259568) by Frank Wood  
+  [turorial](http://youtube.com/watch?v=6Lqt07enBGs) by Frank Wood  
 
   ["Probabilistic Programming and Bayesian Methods for Hackers"](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/) by Davidson-Pilon  
   ["The Design and Implementation of Probabilistic Programming Languages"](http://dippl.org) by Noah Goodman and Andreas Stuhlmuller  
@@ -245,6 +244,12 @@
 >	"Shows that differentiable interpreter-based program induction is inferior to discrete search-based techniques used by the programming languages community. We are then left with the question of how to make progress on program induction using machine learning techniques."
 
   - <https://youtu.be/vzDuVhFMB9Q?t=2m40s> (Gaunt)  
+
+
+#### Meent, Paige, Tolpin, Wood - ["Black-Box Policy Search with Probabilistic Programs"](https://arxiv.org/abs/1507.04635)
+>	"In this work, we explore how probabilistic programs can be used to represent policies in sequential decision problems. In this formulation, a probabilistic program is a black-box stochastic simulator for both the problem domain and the agent. We relate classic policy gradient techniques to recently introduced black-box variational methods which generalize to probabilistic program inference. We present case studies in the Canadian traveler problem, Rock Sample, and a benchmark for optimal diagnosis inspired by Guess Who. Each study illustrates how programs can efficiently represent policies using moderate numbers of parameters."
+
+>	"In this paper we put forward the idea that probabilistic programs can be a productive medium for describing both a problem domain and the agent in sequential decision problems. Programs can often incorporate assumptions about the structure of a problem domain to represent the space of policies in a more targeted manner, using a much smaller number of variables than would be needed in a more general formulation. By combining probabilistic programming with black-box variational inference we obtain a generalized variant of well-established policy gradient techniques that allow us to define and learn policies with arbitrary levels of algorithmic sophistication in moderately high-dimensional parameter spaces. Fundamentally, policy programs represent some form of assumptions about what contextual information is most relevant to a decision, whereas the policy parameters represent domain knowledge that generalizes across episodes."
 
 
 #### Perov, Wood - ["Learning Probabilistic Programs"](http://arxiv.org/abs/1407.2646)

@@ -14,7 +14,7 @@
   * [interesting papers](#interesting-papers)
     - [applications](#interesting-papers---applications)
     - [exploration and intrinsic motivation](#interesting-papers---exploration-and-intrinsic-motivation)
-    - [abstractions for states and actions](#interesting-papers---abstractions-for-states-and-actions)
+    - [hierarchical reinforcement learning](#interesting-papers---hierarchical-reinforcement-learning)
     - [model-based methods](#interesting-papers---model-based-methods)
     - [value-based methods](#interesting-papers---value-based-methods)
     - [policy-based methods](#interesting-papers---policy-based-methods)
@@ -150,6 +150,7 @@
 	<http://deepstack.ai>  
 	<http://twitter.com/DeepStackAI>  
 
+	[overview](https://youtu.be/02xIkHowQOk?t=11m45s) by Michael Bowling  
 	[overview](https://youtube.com/watch?v=qndXrHcV1sM) by Michael Bowling  
 	["Advances in AI in Poker"](http://videolectures.net/aaai2017_bowling_sandholm_poker) by Michael Bowling and Tuomas Sandholm  
 
@@ -191,9 +192,6 @@
 	[Doom gameplay demo](http://youtube.com/watch?v=re6hkcTWVUY)  
 	[blockworld demo](http://youtube.com/watch?v=6jlaBD9LCnM)  
 	[blockworld demo](http://youtube.com/watch?v=6JT6_dRcKAw)  
-
-  - *others*  
-	[games](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games)  
 
 
 ----
@@ -298,8 +296,11 @@
   [course](http://rll.berkeley.edu/deeprlcourse/) by Sergey Levine, John Schulman and Chelsea Finn
 	([videos](https://youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX))
 
-  ["The Nuts and Bolts of Deep RL Research"](http://rll.berkeley.edu/deeprlcourse/docs/nuts-and-bolts.pdf) by John Schulman
-	([write-up](https://github.com/williamFalcon/DeepRLHacks))
+  [Deep RL Bootcamp at Berkeley](https://sites.google.com/view/deep-rl-bootcamp/lectures)
+
+  ["The Nuts and Bolts of Deep RL Research"](https://youtube.com/watch?v=8EcdaCk9KaQ) by John Schulman
+	([slides](http://rll.berkeley.edu/deeprlcourse/docs/nuts-and-bolts.pdf),
+	[write-up](https://github.com/williamFalcon/DeepRLHacks))  
 
 
   ["Deep Reinforcement Learning"](https://sites.google.com/site/deeprlnips2016/) workshop at NIPS 2016  
@@ -395,13 +396,13 @@
 
 ----
 
-  **off-policy methods**:  
+  **off-policy methods**  ([overview](http://videolectures.net/deeplearning2017_thomas_safe_rl/) (30:21) by Philip Thomas):  
   - evaluate target policy to compute control while following another policy  
-  - learn from observing humans or other agents (imperfect expert) 
+  - learn from observing humans or other agents (imperfect expert)  
   - re-use experience generated from old policies  
   - learn about optimal policy while following exploratory policy  
   - learn about multiple policies (options, waypoints) while following one policy  
-  - learning from sessions (recorded data)
+  - learning from sessions (recorded data)  
 
 ----
 
@@ -445,9 +446,11 @@
 
   [**exploration and intrinsic motivation**](#exploration-and-intrinsic-motivation)
 
+  [interesting papers](#interesting-papers---exploration-and-intrinsic-motivation)
+
 ----
 
-  **abstractions for states and actions**:  
+  **hierarchical reinforcement learning**:  
   - simplify dimensionality of the action spaces over which we need to reason  
   - enable quick planning and execution of low-level actions (such as robot movements)  
   - provide a simple mechanism that connects plans and intentions to commands at the level of execution  
@@ -463,9 +466,7 @@
 	["Temporal Abstraction in Reinforcement Learning"](https://youtube.com/watch?v=GntIVgNKkCI) by Doina Precup  
 	["Advances in Option Construction: The Option-Critic Architecture"](https://youtube.com/watch?v=8r_EoYnPjGk) by Pierre-Luc Bacon  
 
-  [model-based methods](#model-based-methods)
-
-  [interesting papers](#interesting-papers---abstractions-for-states-and-actions)
+  [interesting papers](#interesting-papers---hierarchical-reinforcement-learning)
 
 
 
@@ -789,13 +790,30 @@
 	* agent improves its policy  
 
 
+  model-based methods:  
+  - *(plus)* sample efficiency: learn from scratch with a small number of trials  
+  - *(minus)* modeling bias: complex dynamics and costs can cause learning to fail  
+
+  model-free methods:  
+  - *(plus)* can handle systems with arbitrarily complex dynamics and costs  
+  - *(minus)* significantly less sample-efficient  
+
+
+  [overview](https://youtu.be/bsuvM1jO-4w?t=35m2s) by Vlad Mnih
+
   ["Markov Decision Process"](https://youtube.com/watch?v=lfHX2hHRMVQ) by David Silver  
   ["Planning by Dynamic Programming"](https://youtube.com/watch?v=Nd1-UUMVfz4) by David Silver  
   ["Integrating Learning and Planning"](https://youtube.com/watch?v=ItMutbeOHtc) by David Silver  
 
 
   [interesting papers](#interesting-papers---model-based-methods) on model-based methods  
-  [interesting papers](#interesting-papers---abstractions-for-states-and-actions) on abstractions for states and actions  
+
+
+  [Monte Carlo Tree Search](#monte-carlo-tree-search)  
+  [Guided Policy Search](#guided-policy-search)  
+  [deep model-based learning](#deep-model-based-learning)  
+  [bayesian reinforcement learning](#bayesian-reinforcement-learning)  
+
 
 
 ----
@@ -814,6 +832,7 @@
   ["Combining Online and Offline Knowledge in UCT"](http://machinelearning.org/proceedings/icml2007/papers/387.pdf) by Gelly and Silver ([talk](https://youtube.com/watch?v=Bm7zah_LrmE))  
   ["Deep Learning for Real-Time Atari Game Play Using Offline Monte-Carlo Tree Search Planning"](#guo-singh-lee-lewis-wang---deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning) by Guo et al.  
   ["A Monte-Carlo AIXI Approximation"](https://github.com/brylevkirill/notes/blob/Artificial%20Intelligence.md#veness-ng-hutter-uther-silver---a-monte-carlo-aixi-approximation-mc-aixi-ctw-agent) by Veness et al.  
+
 
 ----
 #### Guided Policy Search
@@ -835,6 +854,7 @@
 
 
   [interesting papers](#interesting-papers---behavioral-cloning)
+
 
 
 ----
@@ -860,6 +880,7 @@
 
   ["Deep AutoRegressive Networks"](https://youtu.be/-yX1SYeDHbg?t=49m25s) by Alex Graves  
   ["Deep AutoRegressive Networks"](https://youtu.be/P78QYjWh5sM?t=20m50s) by Karol Gregor  
+
 
 
 ----
@@ -969,10 +990,9 @@
 ---
 ### policy-based methods
 
-  [introduction](http://youtube.com/watch?v=KHZVXao4qXs) by David Silver  
+  introduction by Andrej Karpathy ([post](http://karpathy.github.io/2016/05/31/rl), [talk](https://youtube.com/watch?v=tqrcjHuNdmQ))  
 
-  [introduction](http://karpathy.github.io/2016/05/31/rl/) by Andrej Karpathy  
-  [introduction](https://dropbox.com/s/yefei7380x7jeo7/Deep%20Reinforcement%20Learning%20Tutorial%20%28OpenAI%29.html) by John Schulman  
+  [introduction](http://youtube.com/watch?v=KHZVXao4qXs) by David Silver  
 
   [tutorial](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Reinforcement-Learning-Through-Policy-Optimization) by Pieter Abbeel and John Schulman ([slides](http://people.eecs.berkeley.edu/~pabbeel/nips-tutorial-policy-optimization-Schulman-Abbeel.pdf))  
   [tutorial](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/) by Pieter Abbeel  
@@ -1124,7 +1144,7 @@
 
   ["The Useless Beauty of REINFORCE"](https://theneural.wordpress.com/2011/09/13/the-useless-beauty-of-reinforce/) by Ilya Sutskever
 
-  [introduction](http://karpathy.github.io/2016/05/31/rl) by Andrej Karpathy  
+  introduction by Andrej Karpathy ([post](http://karpathy.github.io/2016/05/31/rl), [talk](https://youtube.com/watch?v=tqrcjHuNdmQ))  
   [introduction](http://kvfrans.com/simple-algoritms-for-solving-cartpole/) by Kevin Frans  
 
   [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=1003) by Pieter Abbeel  
@@ -1295,7 +1315,7 @@
 interesting papers:  
   - [applications](#interesting-papers---applications)  
   - [exploration and intrinsic motivation](#interesting-papers---exploration-and-intrinsic-motivation)  
-  - [abstractions for states and actions](#interesting-papers---abstractions-for-states-and-actions)  
+  - [hierarchical reinforcement learning](#interesting-papers---hierarchical-reinforcement-learning)  
   - [model-based methods](#interesting-papers---model-based-methods)  
   - [value-based methods](#interesting-papers---value-based-methods)  
   - [policy-based methods](#interesting-papers---policy-based-methods)  
@@ -1306,7 +1326,7 @@ interesting papers:
 interesting recent papers:  
   - [agents](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---agents)  
   - [exploration and intrinsic motivation](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
-  - [abstractions for states and actions](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---abstractions-for-states-and-actions)  
+  - [hierarchical reinforcement learning](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---hierarchical-reinforcement-learning)  
   - [simulation and planning](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---simulation-and-planning)  
   - [memory](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---memory)  
   - [transfer](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---transfer)  
@@ -1707,6 +1727,11 @@ interesting recent papers:
 
 >	"This paper suggests a different approach for designing better reinforcement learning algorithms: instead of acting as the designers ourselves, learn the algorithm end-to-end using standard reinforcement learning techniques. That is, the “fast” RL algorithm is a computation whose state is stored in the RNN activations, and the RNN’s weights are learned by a general-purpose “slow” reinforcement learning algorithm. Our method, RL^2, has demonstrated competence comparable with theoretically optimal algorithms in small-scale settings. We have further shown its potential to scale to high-dimensional tasks. In the experiments, we have identified opportunities to improve upon RL^2: the outer-loop reinforcement learning algorithm was shown to be an immediate bottleneck, and we believe that for settings with extremely long horizons, better architecture may also be required for the policy. Although we have used generic methods and architectures for the outer-loop algorithm and the policy, doing this also ignores the underlying episodic structure. We expect algorithms and policy architectures that exploit the problem structure to significantly boost the performance."
 
+>	"MDPs encountered in real world = tiny subset of all MDPs that could be defined"  
+>	"How to acquire a good prior for real-world MDPs?"  
+>	"How to design algorithms that make use of such prior information?"  
+>	"Key idea: learn a fast RL algorithm that make use of such prior information"  
+
 >	"learning to explore"  
 >	"outer episodes (sample a new bandit problem / MDP) and inner episodes (of sampled MDP)"  
 >	"use RNN policy with no state reset between inner episodes for outer POMDP"  
@@ -1733,6 +1758,7 @@ interesting recent papers:
 >	"outer episodes (sample a new bandit problem / MDP) and inner episodes (of sampled MDP)"  
 >	"use RNN policy with no state reset between inner episodes for outer POMDP"  
 
+  - <https://youtu.be/Y85Zn50Eczs?t=20m18s> (Botvinick)
   - <https://youtube.com/watch?v=SfCa1HQMkuw&t=1h16m56s> (Schulman)
   - <https://hackernoon.com/learning-policies-for-learning-policies-meta-reinforcement-learning-rl²-in-tensorflow-b15b592a2ddf> (Juliani)
   - <https://github.com/awjuliani/Meta-RL>
@@ -1942,6 +1968,9 @@ interesting recent papers:
   - <https://youtube.com/watch?v=Uz-zGYrYEjA> (demo)
   - <https://youtube.com/watch?v=VVLYTqZJrXY> (Jaderberg)
   - <https://facebook.com/iclr.cc/videos/1712224178806641/> (1:15:45) (Jaderberg)
+  - <https://youtu.be/bsuvM1jO-4w?t=20m7s> (Mnih)
+  - <https://youtube.com/watch?v=-YiMVR3HEuY> (Kilcher)
+  - <https://yadi.sk/i/_2_0yqeW3HDbcn> (18:25) (Panin) (in russian)
   - <https://github.com/dennybritz/deeplearning-papernotes/blob/b097e313dc59c956575fb1bf23b64fa8d1d84057/notes/rl-auxiliary-tasks.md>
   - <https://github.com/miyosuda/unreal>
 
@@ -2013,9 +2042,9 @@ interesting recent papers:
 
 
 ---
-### interesting papers - abstractions for states and actions
+### interesting papers - hierarchical reinforcement learning
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---abstractions-for-states-and-actions)
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---hierarchical-reinforcement-learning)
 
 
 #### Schmidhuber - ["On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models"](http://arxiv.org/abs/1511.09249)
@@ -2067,8 +2096,11 @@ interesting recent papers:
 
 >	"Value iteration is similar enough to a sequence of convolutions and max-pooling layers that you can emulate an (unrolled) planning computation with a deep network. This allows neural nets to do planning, e.g. moving from start to goal in grid-world, or navigating a website to find query."
 
-  - <https://youtube.com/watch?v=tXBHfbHHlKc> (Tamar) + [slides](http://technion.ac.il/~danielm/icml_slides/Talk7.pdf)
+  - <https://youtu.be/ID150Tl-MMw?t=54m24s> (demo)
+  - <https://youtube.com/watch?v=tXBHfbHHlKc> (Tamar) ([slides](http://technion.ac.il/~danielm/icml_slides/Talk7.pdf))
   - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Value-Iteration-Networks> (Tamar)
+  - <http://www.fields.utoronto.ca/video-archive/2017/02/2267-16530> (31:50) (Abbeel)
+  - <https://youtu.be/bsuvM1jO-4w?t=38m6s> (Mnih)
   - <https://github.com/karpathy/paper-notes/blob/master/vin.md>
   - <https://blog.acolyer.org/2017/02/09/value-iteration-networks/>
   - <https://github.com/avivt/VIN>
