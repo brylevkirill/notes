@@ -21,11 +21,11 @@
     - [theory](#interesting-papers---theory)
     - [connections to biology](#connections-to-biology)
     - [architectures](#interesting-papers---architectures)
-    - [semi-supervised and transfer learning](#interesting-papers---semi-supervised-and-transfer-learning)
+    - [few-shot and transfer learning](#interesting-papers---few-shot-and-transfer-learning)
     - [autoregressive models](#interesting-papers---autoregressive-models)
     - [generative adversarial networks](#interesting-papers---generative-adversarial-networks)
     - [variational autoencoder](#interesting-papers---variational-autoencoder)
-    - [bayesian inference and learning](#interesting-papers---bayesian-inference-and-learning)
+    - [bayesian deep learning](#interesting-papers---bayesian-deep-learning)
     - [applications](#interesting-papers---applications)
 
 
@@ -35,51 +35,42 @@
 
 #### introduction
 
+  [overview](http://www.deeplearningbook.org/contents/intro.html) by Ian Goodfellow, Yoshua Bengio, Aaron Courville  
   [overview](http://goo.gl/gvkiaR) by Yann LeCun, Yoshua Bengio, Geoffrey Hinton  
+  [overview](http://yyue.blogspot.ru/2015/01/a-brief-overview-of-deep-learning.html) by Ilya Sutskever  
 
-  <http://www.deeplearningbook.org/contents/intro.html>  (Ian Goodfellow, Yoshua Bengio, Aaron Courville)  
-  <http://neuralnetworksanddeeplearning.com>  (Michael Nielsen)  
-  <http://metacademy.org/roadmaps/rgrosse/deep_learning>  (Roger Grosse)  
-  <http://yyue.blogspot.ru/2015/01/a-brief-overview-of-deep-learning.html>  (Ilya Sutskever)  
-  <http://blog.keras.io/the-limitations-of-deep-learning.html>  (Francois Chollet)  
-  <http://blog.keras.io/the-future-of-deep-learning.html>  (Francois Chollet)  
+  [overview](http://youtube.com/watch?v=0YLpp_TVhLY) by Juergen Schmidhuber `video`  
+  [overview](http://youtube.com/watch?v=izrG86jycck) by Geoffrey Hinton `video`  
+  [overview](http://youtube.com/watch?v=zaoL0LUctK4) by Yann LeCun `video`  
+  [overview](http://youtube.com/watch?v=11rsu_WwZTc) by Yoshua Bengio `video`  
 
+  ["The Limitations of Deep Learning"](http://blog.keras.io/the-limitations-of-deep-learning.html) by Francois Chollet  
+  ["The Future of Deep Learning"](http://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet  
 
   [interesting quotes](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#interesting-quotes)
-
-
-  - Juergen Schmidhuber  
-	<http://youtube.com/watch?v=0YLpp_TVhLY>  
-
-  - Geoffrey Hinton  
-	<http://youtube.com/watch?v=izrG86jycck>  
-
-  - Yann LeCun  
-	<http://youtube.com/watch?v=zaoL0LUctK4>  
-
-  - Yoshua Bengio  
-	<http://youtube.com/watch?v=11rsu_WwZTc>  
 
 
 #### history
 
   <http://scholarpedia.org/article/Deep_Learning>  
   ["A 'Brief' History of Neural Nets and Deep Learning"](http://andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning/)  
-  ["On the Origin of Deep Learning"](https://arxiv.org/abs/1702.07800)  
+  ["On the Origin of Deep Learning"](https://arxiv.org/abs/1702.07800) `paper`  
 
 
 #### tutorials
 
-  [deep learning](http://youtube.com/watch?v=74VUX2zszms) by Yoshua Bengio & Yann LeCun  
-  [generative models](http://videolectures.net/deeplearning2016_mohamed_generative_models/) by Shakir Mohamed  
-  [generative adversarial networks](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks) by Ian Goodfellow  
-  [variational inference](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods) by David Blei, Rajesh Ranganath, Shakir Mohamed  
-  [deep reinforcement learning](http://techtalks.tv/talks/deep-reinforcement-learning/62360/) by David Silver  
-  [deep reinforcement learning](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Reinforcement-Learning-Through-Policy-Optimization) by Pieter Abbeel & John Schulman  
+  <http://neuralnetworksanddeeplearning.com> by Michael Nielsen
 
-  [Deep Learning Summer School 2017](http://videolectures.net/deeplearning2017_montreal/)  
-  [Deep Learning Summer School 2016](http://videolectures.net/deeplearning2016_montreal/)  
-  [Deep Learning Summer School 2015](http://videolectures.net/deeplearning2015_montreal/)  
+  [deep learning](http://youtube.com/watch?v=74VUX2zszms) by Yoshua Bengio & Yann LeCun `video`  
+  [generative models](http://videolectures.net/deeplearning2016_mohamed_generative_models/) by Shakir Mohamed `video`  
+  [generative adversarial networks](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks) by Ian Goodfellow `video`  
+  [variational inference](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods) by David Blei, Rajesh Ranganath, Shakir Mohamed `video`  
+  [deep reinforcement learning](http://techtalks.tv/talks/deep-reinforcement-learning/62360/) by David Silver `video`  
+  [deep reinforcement learning](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Reinforcement-Learning-Through-Policy-Optimization) by Pieter Abbeel & John Schulman `video`  
+
+  [Deep Learning Summer School 2017](http://videolectures.net/deeplearning2017_montreal/) `video`  
+  [Deep Learning Summer School 2016](http://videolectures.net/deeplearning2016_montreal/) `video`  
+  [Deep Learning Summer School 2015](http://videolectures.net/deeplearning2015_montreal/) `video`  
 
 
 #### courses
@@ -104,8 +95,9 @@
 #### applications
 
   [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)  
+  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)  
   [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
-  [natural language processing/understanding](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt)  
+  [natural language processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt)  
   [personal assistants](https://github.com/brylevkirill/notes/blob/master/Personal%20Assistants.txt)  
   [information retrieval](https://github.com/brylevkirill/notes/blob/master/Information%20Retrieval.txt)  
   [other applications](https://dropbox.com/sh/dio0ypwiph44ehn/AAADQCyEutvVt9iugVU1F5S8a)  
@@ -147,6 +139,10 @@
 
 ---
 ### theory
+
+  [papers and resources](#interesting-papers---theory)
+
+----
 
   [theoretical motivations](http://rinuboney.github.io/2015/10/18/theoretical-motivations-deep-learning.html)  
 
@@ -251,7 +247,7 @@
   2) optimization of the empirical loss — can we characterize the convergence of stochastic gradient descent on the non-convex empirical loss encountered in deep learning?  
   3) generalization — why do deep learning models, despite being highly over-parameterized, could still generalize well?"  
 
-  *(["Theory of Deep Learning III: Generalization Properties of SGD"](https://cbmm.mit.edu/publications/theory-deep-learning-iii-generalization-properties-sgd) by Zhang et al.)*
+  *(["Theory of Deep Learning III: Generalization Properties of SGD"](https://cbmm.mit.edu/publications/theory-deep-learning-iii-generalization-properties-sgd) by Zhang et al. `paper`)*
 
 ----
 
@@ -273,6 +269,64 @@
 
 ---
 ### bayesian deep learning
+
+  [papers and resources](#interesting-papers---bayesian-inference-and-learning)
+
+  ["Bayesian Reasoning and Deep Learning in Agent-based Systems"](https://youtube.com/watch?v=AggqBRdz6CQ) by Shakir Mohamed `video`  
+  ["Is Bayesian Deep Learning the Most Brilliant Thing Ever"](https://youtube.com/watch?v=HumFmLu3CJ8) panel discussion `video`  
+
+  ["Neurobayesian Approach for Machine Learning"](https://youtu.be/kFe5zSkro0E?t=17m16s) by Dmitry Vetrov (in russian) `video`
+	([write-up](https://habrahabr.ru/company/yandex/blog/321434/) in russian)  
+  ["Bayesian Methods in Deep Learning"](http://deepbayes.ru) school (in russian)
+	([videos](https://youtube.com/playlist?list=PLEqoHzpnmTfBSyGmE4nBlhxxi28dCZwWN) in russian)  
+
+----
+
+  "Most applications of neural nets can be considered graphical models that use neural nets to provide some of the conditional probability distributions. You could argue that the graphical model perspective is growing less useful because so many recent neural models have such simple graph structure (GANs, VAEs and NICE are bipartite graphs with every latent variable connected to every observed variable, PixelRNNs/MADE/NADE are the complete graph with no latent variables). These graphs are not very structured compared to neural models that were popular a few years ago like DBMs. But there are some recent models that make a little bit of use of graph structure, like VAEs with auxiliary variables."
+
+  *(Ian Goodfellow)*
+
+  ["Marrying Graphical Models & Deep Learning"](http://videolectures.net/deeplearning2017_welling_inference/) by Max Welling `video`
+
+  ["Graphical Models"](http://www.deeplearningbook.org/contents/graphical_models.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
+
+  ["A Neural Network is a Monference, Not a Model"](http://blog.jacobandreas.net/monference.html) by Jacob Andreas  
+  ["Deep Learning and Graphical Models"](https://plus.google.com/+YannLeCunPhD/posts/51gWtf7X3Ee) by Yann LeCun  
+
+----
+
+  [variational inference](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#variational-inference)  
+  [variational autoencoder](#generative-models---variational-autoencoder)  
+
+----
+
+  ["A History of Bayesian Neural Networks"](https://youtube.com/watch?v=FD8l2vPU5FY) by Zoubin Ghahramani `video`  
+  ["Bayesian Neural Networks"](https://youtube.com/watch?v=tqGEX_Ucu04) by Dmitry Molchanov (in russian) `video`
+	([slides](https://drive.google.com/file/d/0B1xR8nRvoZdNMGR0Y2JsdG9CSGs/) in english)  
+
+----
+
+  ["Deep Learning: Efficiency is the Driver of Uncertainty"](http://inverseprobability.com/2016/03/04/deep-learning-and-uncertainty) by Neil Lawrence  
+  ["Deep Learning Is Not Good Enough, We Need Bayesian Deep Learning for Safe AI"](https://alexgkendall.com/computer_vision/bayesian_deep_learning_for_safe_ai/) by Alex Kendall  
+
+  ["What My Deep Model Doesn't Know..."](http://mlg.eng.cam.ac.uk/yarin/blog_3d801aa532c1ce.html) by Yarin Gal  
+  ["Uncertainty In Deep Learning"](http://mlg.eng.cam.ac.uk/yarin/blog_2248.html) by Yarin Gal  
+
+  ["Course on Information Theory, Pattern Recognition, and Neural Networks"](http://videolectures.net/course_information_theory_pattern_recognition/) by David MacKay `video`  
+
+----
+
+  ["A Statistical View of Deep Learning"](http://blog.shakirm.com/2015/07/a-statistical-view-of-deep-learning-retrospective/) by Shakir Mohamed:  
+  - ["Recursive GLMs"](http://blog.shakirm.com/2015/01/a-statistical-view-of-deep-learning-i-recursive-glms/)  
+  - ["Auto-encoders and Free Energy"](http://blog.shakirm.com/2015/03/a-statistical-view-of-deep-learning-ii-auto-encoders-and-free-energy/)  
+  - ["Memory and Kernels"](http://blog.shakirm.com/2015/04/a-statistical-view-of-deep-learning-iii-memory-and-kernels/)  
+  - ["Recurrent Nets and Dynamical Systems"](http://blog.shakirm.com/2015/05/a-statistical-view-of-deep-learning-iv-recurrent-nets-and-dynamical-systems/)  
+  - ["Generalisation and Regularisation"](http://blog.shakirm.com/2015/05/a-statistical-view-of-deep-learning-v-generalisation-and-regularisation/)  
+  - ["What is Deep?"](http://blog.shakirm.com/2015/06/a-statistical-view-of-deep-learning-vi-what-is-deep/)  
+
+  ["Everything that Works Works Because it's Bayesian: Why Deep Nets Generalize?"](http://inference.vc/everything-that-works-works-because-its-bayesian-2/) by Ferenc Huszar
+
+----
 
   deep learning (framework for constructing flexible models):  
   - *(plus)* rich non-linear models for classification and sequence prediction  
@@ -315,64 +369,19 @@
   - *other hybrid architectures*  
 	We can more freely build all kinds of neural networks. For example, Bayesian non-parametrics could be used to flexibly adjust the size and shape of the hidden layers to optimally scale the network architecture to the problem at hand during training. Currently, this requires costly hyper-parameter optimization and a lot of tribal knowledge.
 
-----
-
-  ["Bayesian Reasoning and Deep Learning in Agent-based Systems"](https://youtube.com/watch?v=AggqBRdz6CQ) by Shakir Mohamed  
-  ["Is Bayesian Deep Learning the Most Brilliant Thing Ever"](https://youtube.com/watch?v=HumFmLu3CJ8) panel discussion  
-
-  ["Neurobayesian Approach for Machine Learning"](https://youtu.be/kFe5zSkro0E?t=17m16s) ([write-up](https://habrahabr.ru/company/yandex/blog/321434/) in russian)  
-
-----
-
-  "Most applications of neural nets can be considered graphical models that use neural nets to provide some of the conditional probability distributions. You could argue that the graphical model perspective is growing less useful because so many recent neural models have such simple graph structure (GANs, VAEs and NICE are bipartite graphs with every latent variable connected to every observed variable, PixelRNNs/MADE/NADE are the complete graph with no latent variables). These graphs are not very structured compared to neural models that were popular a few years ago like DBMs. But there are some recent models that make a little bit of use of graph structure, like VAEs with auxiliary variables." *(Ian Goodfellow)*
-
-
-  ["Marrying Graphical Models & Deep Learning"](http://videolectures.net/deeplearning2017_welling_inference/) by Max Welling
-
-  [Graphical Models](http://www.deeplearningbook.org/contents/graphical_models.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
-
-  ["A Neural Network is a Monference, Not a Model"](http://blog.jacobandreas.net/monference.html) by Jacob Andreas  
-  ["Deep Learning and Graphical Models"](https://plus.google.com/+YannLeCunPhD/posts/51gWtf7X3Ee) by Yann LeCun  
-
-  see also ["generative models - variational autoencoder"](#generative-models---variational-autoencoder) section  
-  see also "[variational inference]" section of <https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt>  
-
-----
-
-  ["A History of Bayesian Neural Networks"](https://youtube.com/watch?v=FD8l2vPU5FY) by Zoubin Ghahramani  
-  ["Bayesian Neural Networks"](https://youtube.com/watch?v=tqGEX_Ucu04) by Dmitry Molchanov (in russian)
-	([slides](https://drive.google.com/file/d/0B1xR8nRvoZdNMGR0Y2JsdG9CSGs/) in english)  
-
-----
-
-  ["Deep Learning: Efficiency is the Driver of Uncertainty"](http://inverseprobability.com/2016/03/04/deep-learning-and-uncertainty) by Neil Lawrence  
-  ["Deep Learning Is Not Good Enough, We Need Bayesian Deep Learning for Safe AI"](https://alexgkendall.com/computer_vision/bayesian_deep_learning_for_safe_ai/) by Alex Kendall  
-
-  ["What My Deep Model Doesn't Know..."](http://mlg.eng.cam.ac.uk/yarin/blog_3d801aa532c1ce.html) by Yarin Gal  
-  ["Uncertainty In Deep Learning"](http://mlg.eng.cam.ac.uk/yarin/blog_2248.html) by Yarin Gal  
-
-  ["Course on Information Theory, Pattern Recognition, and Neural Networks"](http://videolectures.net/course_information_theory_pattern_recognition/) by David MacKay  
-
-----
-
-  ["A Statistical View of Deep Learning"](http://blog.shakirm.com/2015/07/a-statistical-view-of-deep-learning-retrospective/) by Shakir Mohamed:  
-  - ["Recursive GLMs"](http://blog.shakirm.com/2015/01/a-statistical-view-of-deep-learning-i-recursive-glms/)  
-  - ["Auto-encoders and Free Energy"](http://blog.shakirm.com/2015/03/a-statistical-view-of-deep-learning-ii-auto-encoders-and-free-energy/)  
-  - ["Memory and Kernels"](http://blog.shakirm.com/2015/04/a-statistical-view-of-deep-learning-iii-memory-and-kernels/)  
-  - ["Recurrent Nets and Dynamical Systems"](http://blog.shakirm.com/2015/05/a-statistical-view-of-deep-learning-iv-recurrent-nets-and-dynamical-systems/)  
-  - ["Generalisation and Regularisation"](http://blog.shakirm.com/2015/05/a-statistical-view-of-deep-learning-v-generalisation-and-regularisation/)  
-  - ["What is Deep?"](http://blog.shakirm.com/2015/06/a-statistical-view-of-deep-learning-vi-what-is-deep/)  
-
-  ["Everything that Works Works Because it's Bayesian: Why Deep Nets Generalize?"](http://inference.vc/everything-that-works-works-because-its-bayesian-2/) by Ferenc Huszar
-
-----
-
-[interesting papers](#interesting-papers---bayesian-inference-and-learning)
-
 
 
 ---
 ### unsupervised learning
+
+  ["Unsupervised learning, one notion or many?"](http://www.offconvex.org/2017/06/27/unsupervised1/) by Sanjeev Arora and Andrej Risteski
+
+  ["Representation Learning and the Information Bottleneck Approach"](http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/) by Ference Huszar  
+  ["Is Maximum Likelihood Useful for Representation Learning?"](http://inference.vc/maximum-likelihood-for-representation-learning-2/) by Ference Huszar  
+
+  [recent interesting papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#unsupervised-learning)
+
+----
 
   potential benefits of unsupervised learning:  
   - take advantage of huge quantitities of unlabeled data  
@@ -392,23 +401,15 @@
   - learn to generate samples that cannot be distinguished by a classifier from the training samples (GAN)  
   - maximize the likelihood of the data under some probabilistic model  
 
-----
-
-  ["Unsupervised learning, one notion or many?"](http://www.offconvex.org/2017/06/27/unsupervised1/) by Sanjeev Arora and Andrej Risteski  
-
-  ["Representation Learning and the Information Bottleneck Approach"](http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/) by Ference Huszar  
-  ["Is Maximum Likelihood Useful for Representation Learning?"](http://inference.vc/maximum-likelihood-for-representation-learning-2/) by Ference Huszar  
-
 
 
 ---
 ### generative models
 
-  ["Generative Models"](https://openai.com/blog/generative-models/) by OpenAI  
-  ["Recent Progress in Generative Modeling"](http://scaledml.org/2016/slides/ilya.pdf) by Ilya Sutskever  
+  ["Deep Generative Models"](http://www.deeplearningbook.org/contents/generative_models.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
 
-  ["Generative Models"](https://youtube.com/watch?v=5WoItGTWV54) by Serena Yeung  
-  ["Building Machines that Imagine and Reason: Principles and Applications of Deep Generative Models"](http://videolectures.net/deeplearning2016_mohamed_generative_models/) by Shakir Mohamed  
+  ["Generative Models"](https://youtube.com/watch?v=5WoItGTWV54) by Serena Yeung `video`  
+  ["Building Machines that Imagine and Reason: Principles and Applications of Deep Generative Models"](http://videolectures.net/deeplearning2016_mohamed_generative_models/) by Shakir Mohamed `video`  
 
   ["Differentiable Inference and Generative Models"](http://www.cs.toronto.edu/~duvenaud/courses/csc2541/index.html) course by David Duvenaud
 
@@ -516,7 +517,9 @@
 
 ----
 
-  *(David Pfau)* "In unsupervised learning, you'd like high held-out likelihood, realistic samples and meaningful latent state. In practice, pick 2 of 3."
+  "In unsupervised learning, you'd like high held-out likelihood, realistic samples and meaningful latent state. In practice, pick 2 of 3."
+
+  *(David Pfau)*
 
 ----
 
@@ -530,17 +533,15 @@
 ---
 ### generative models - generative adversarial networks
 
-  [introduction](https://youtu.be/5WoItGTWV54?t=51m14s) by Serena Yeung
+  [papers and resources](#interesting-papers---generative-adversarial-networks)
 
+  [introduction](https://youtu.be/5WoItGTWV54?t=51m14s) by Serena Yeung `video`
 
-  ["NIPS 2016 Tutorial: Generative Adversarial Networks"](https://arxiv.org/abs/1701.00160) by Ian Goodfellow
+  ["NIPS 2016 Tutorial: Generative Adversarial Networks"](https://arxiv.org/abs/1701.00160) by Ian Goodfellow `paper`  
+  [tutorial](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks) by Ian Goodfellow `video` ([slides](http://iangoodfellow.com/slides/2016-12-04-NIPS.pdf))  
 
-  [tutorial](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks) at NIPS 2016 by Ian Goodfellow ([slides](http://iangoodfellow.com/slides/2016-12-04-NIPS.pdf))  
-  [tutorial](https://dl.dropboxusercontent.com/u/16027344/ICML%202015%20Deep%20Learning%20Workshop/Ian%20Goodfellow%2C%20GOOGLE.p2g/Default.html) at ICML 2015 by Ian Goodfellow  
-
-
-  [overview](https://youtube.com/watch?v=m80Vp-jz-Io) by Iliya Tolstikhin  
-  [overview](https://youtube.com/watch?v=jAI3rBI6poU) by Dmitry Ulyanov (in russian)
+  [overview](https://youtube.com/watch?v=m80Vp-jz-Io) by Iliya Tolstikhin `video`  
+  [overview](https://youtube.com/watch?v=jAI3rBI6poU) by Dmitry Ulyanov (in russian) `video`
 	([slides](https://drive.google.com/open?id=0B_-hq6gL70bUQmhhQ3dwU2lPQXM) in english)  
 
 ----
@@ -552,9 +553,12 @@
 
 
   ["Some Open Questions"](http://www.offconvex.org/2017/03/15/GANs/) by Sanjeev Arora  
-  ["Generalization and Equilibrium in Generative Adversarial Networks"](http://www.offconvex.org/2017/03/30/GANs2/) by Sanjeev Arora ([talk](https://youtube.com/watch?v=V7TliSCqOwI))  
+  ["Generalization and Equilibrium in Generative Adversarial Networks"](http://www.offconvex.org/2017/03/30/GANs2/) by Sanjeev Arora ([talk](https://youtube.com/watch?v=V7TliSCqOwI) `video`)  
+  ["Do GANs Actually Do Distribution Learning?"](http://www.offconvex.org/2017/07/07/GANs3/) by Sanjeev Arora  
 
 ----
+
+  ![architectures by Chris Olah](https://pbs.twimg.com/media/CwM0BzjVUAAWTn4.jpg:large)  
 
   "Consists of a generator which converts random noise into samples and a discriminator which tries to distinguish between generated and real samples from training set. The training procedure establishes a minimax game between the generator and the discriminator as follows. On one hand, the discriminator is trained to differentiate between natural samples sampled from the true data distribution, and synthetic samples produced by the generator. On the other hand, the generator is trained to produce samples that confuse the discriminator into mistaking them for genuine samples. The goal is for the generator to produce increasingly more realistic samples as the discriminator learns to pick up on increasingly more subtle inaccuracies that allow it to tell apart real and fake images."
 
@@ -562,11 +566,43 @@
 
 ----
 
-  "The cost function used to train a generative model should fit the purpose of the model. If the model is intended for tasks such as generating perceptually correct samples, it is beneficial to maximise the likelihood of a sample drawn from the model, Q, coming from the same distribution as the training data, P. This is equivalent to minimising the Kullback-Leibler distance, KL[Q||P]. However, if the model is intended for tasks such as retrieval or classification it is beneficial to maximise the likelihood that a sample drawn from the training data is captured by the model, equivalent to minimising KL[P||Q]. The cost function used in adversarial training optimises the Jensen-Shannon entropy which can be seen as an even interpolation between KL[Q||P] and KL[P||Q]."
+  "The cost function used to train a generative model should fit the purpose of the model. If the model is intended for tasks such as generating perceptually correct samples, it is beneficial to maximise the likelihood of a sample drawn from the model, Q, coming from the same distribution as the training data, P. This is equivalent to minimising the Kullback-Leibler distance, DKL[Q||P]. However, if the model is intended for tasks such as retrieval or classification it is beneficial to maximise the likelihood that a sample drawn from the training data is captured by the model, equivalent to minimising DKL[P||Q]. The cost function used in adversarial training optimises the Jensen-Shannon entropy which can be seen as an even interpolation between DKL[Q||P] and DKL[P||Q]."
 
-  "One can think of the log-likelihood as just a measuring of the KL-divergence between the distribution of data distribution as the reference and distribution of the model. But there is another KL-divergence which is another way around which would also be minimized if they were equal. It would behave differently than minimizing first one, it would land itself to picking some of the modes and not necessarily paying attention to all the modes. This is more like what GAN does which approximately optimizes something like a mixture between those divergences. That's why one sees sharper images and we would also expect that log-likelihood, if we were able to measure it, would be not so great."
+  *(Antonia Creswell)*
 
   "Adversarial training is powerful when all else fails to quantify divergence between complicated, potentially degenerate distributions in high dimensions, such as images or video. Our toolkit for dealing with images is limited, CNNs are the best tool we have, so it makes sense to incorporate them in training generative models for images. Adversarial training makes no assumptions about the distributions compared, other than sampling from them. This comes very handy when both p and q are nasty such as in the generative adversarial network scenario: there, p is the distribution of natural images, q is a super complicated, degenerate distribution produced by squashing noise through a deep convnet. The price we pay for this flexibility is this: when p or q are actually easy to work with, adversarial training cannot exploit that, it still has to sample."
+
+  *(Ferenc Huszar)*
+
+  "All the theory says GANs should be great at the Nash equilibrium, but gradient descent is only guaranteed to get to the Nash equilibrium in the convex case. When both players are represented by neural nets, it’s possible for them to keep adapting their strategies forever without actually arriving at the equilibrium."
+
+  - "How do you address the fact that the minimax game between the generator and discriminator may never approach an equilibrium? In other words, how do you build a system using GANs so that you know that it will converge to a good solution?"  
+  - "Even if they do converge, current systems still have issues with global structure: they cannot count (e.g. the number of eyes on a dog) and frequently get long-range connections wrong (e.g. they show multiple perspectives as part of the same image)."  
+  - "How can we use GANs in discrete settings, such as for generating text?"  
+
+  *(Ian Goodfellow)*
+
+----
+
+  Unlike autoencoders, which minimize an explicit reconstruction error, forcing a model to remember "perceptually irrelevant" details of data, GANs circumvent this need via parametric discriminator.  
+  In contrast to probabilistic generative models (such as variational autoencoders) GANs don't allow to calculate likelihood of generated sample and don't allow to assess quality of model on test data.  
+  Another disadvantage of GANs is that in their original formulation there is no clear way to perform inference in the model, i.e. to recover the posterior distribution p(z|x).  
+  One can additionally argue that GANs learning process and the lack of a heuristic cost function (such as pixel-wise independent mean-square error) are attractive to representation learning.  
+  Training requires discriminator network to be reoptimised every time generative network changes. Gradient descent in the inner loop of gradient descent makes optimization unstable and slow.  
+  GANs require differentiation through the visible units and thus cannot model discrete data, while VAEs require differentiation through the hidden units and thus can't have discrete latent variables.  
+
+
+  generative adversarial networks:  
+  - generator gets local features right but not global structure  
+  - possible underfitting due to non-convergence of optimization  
+  - generator never sees the data  
+  - need REINFORCE to learn discrete visible variables  
+
+  variational autoencoders:  
+  - gets global image composition right but blurs details  
+  - possible underfitting due to variational approximation  
+  - generator gets direct output target  
+  - need REINFORCE to learn discrete latent variables  
 
 ----
 
@@ -579,6 +615,61 @@
 
   *(Ian Goodfellow)*
 
+  "While most deep generative models are trained by maximizing log likelihood or a lower bound on log likelihood, GANs take a radically different approach that does not require inference or explicit calculation of the data likelihood. Instead, two models are used to solve a minimax game: a generator which samples data, and a discriminator which classifies the data as real or generated. In theory these models are capable of modeling an arbitrarily complex probability distribution. When using the optimal discriminator for a given class of generators, the original GAN proposed by Goodfellow et al. minimizes the Jensen-Shannon divergence between the data distribution and the generator, and extensions generalize this to a wider class of divergences. The ability to train extremely flexible generating functions, without explicitly computing likelihoods or performing inference, and while targeting more mode-seeking divergences has made GANs extremely successful in image generation. In practice, however, GANs suffer from many issues, particularly during training. One common failure mode involves the generator collapsing to produce only a single sample or a small family of very similar samples. Another involves the generator and discriminator oscillating during training, rather than converging to a fixed point. In addition, if one agent becomes much more powerful than the other, the learning signal to the other agent becomes useless, and the system does not learn. The set of hyperparameters for which training is successful is generally very small in practice. Once converged, the generative models produced by the GAN training procedure normally do not cover the whole distribution, even when targeting a mode-covering divergence such as KL. Additionally, because it is intractable to compute the GAN training loss, and because approximate measures of performance such as Parzen window estimates suffer from major flaws, evaluation of GAN performance is challenging. Currently, human judgement of sample quality is one of the leading metrics for evaluating GANs. In practice this metric does not take into account mode dropping if the number of modes is greater than the number of samples one is visualizing. In fact, the mode dropping problem generally helps visual sample quality as the model can choose to focus on only the most common modes. These common modes correspond, by definition, to more typical samples. Additionally, the generative model is able to allocate more expressive power to the modes it does cover than it would if it attempted to cover all modes."
+
+  *(Luke Metz)*
+
+  "GANs don't minimise likelihood or other better understood things like that, and other than being superior at generating pretty samples it is unclear why they should work in the really interesting applications of generative models: representation, semi-supervised learning. A lot of papers are just various hacks to make them work. Plumbing GANs and VAEs and autoencoders and whatnots together until they produce pretty pictures. Many people in ML are very annoyed by this kind of wild-wild-west attitude, I-can-code-this-up-therefore-it-makes-sense work, this is why deep learning itself was not taken seriously for a long time. It's just one of those things that are overhyped today, and everybody wants to do GANs for X, at the cost of actually trying things that we have known to work well for X for ages. It's quite predictable that once we understand them better there won't be quite as much excitement around them. The same kind of hype and overfocus of attention happened around Bayesian nonparametrics, kernel methods, sparse LASSO-type stuff a few years ago. GANs don't really work today. Practically, they don't really converge, the results are highly cherry-picked with the training stopped when samples look good. If you change a hyperparameter it all falls apart. Fundamentally, it's minimising a lower bound which is dubious. Serious work needs to be done before they reach the maturity of variational inference or something like the EM algorithm."
+
+  *(Ferenc Huszar)*
+
+
+
+---
+### generative models - variational autoencoder
+
+  [papers and resources](#interesting-papers---variational-autoencoder)
+
+  [introduction](https://youtu.be/5WoItGTWV54?t=19m58s) by Serena Yeung `video`
+
+  [tutorial](http://arxiv.org/abs/1606.05908) by Carl Doersch `paper` ([code](https://github.com/cdoersch/vae_tutorial))  
+  ["Variational Inference & Deep Learning: A New Synthesis"](https://dropbox.com/s/v6ua3d9yt44vgb3/cover_and_thesis.pdf) by Diederik Kingma `paper`  
+
+  [overview](http://videolectures.net/deeplearning2015_courville_autoencoder_extension/) by Aaron Courville `video`  
+  [overview](https://youtu.be/_qrHcSdQ2J4?t=1h37m21s) by Dmitry Vetrov (in russian) `video`  
+
+----
+
+  ["Variational auto-encoders do not train complex generative models"](http://dustintran.com/blog/variational-auto-encoders-do-not-train-complex-generative-models/) by Dustin Tran
+
+  [variational inference](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#variational-inference)  
+  [reparametrization trick](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#pathwise-derivative-estimator-for-gradient-of-elbo)  
+
+  ![architecture (Diederik Kingma)](https://pbs.twimg.com/media/DF3GRw-UAAA9A7-.jpg)
+
+  "VAE aims to maximize log-likelihood of observed data x by introducing a set of stochastic latent variables z and marginalizing them out of the joint distribution p(x,z). While exact marginalization of latent variables is generally intractable, VAE introduces an approximate variational posterior q(z|x) and maximizes a variational lower bound on log-likelihood of p(x). VAE allows powerful generative models to be trained efficiently by replacing slow iterative inference algorithms with fast feedforward approximate inference neural networks. The inference networks, which map observations to samples from variational posterior, are trained jointly with the model by maximizing a common objective. This objective is a variational lower bound on the marginal log-likelihood."
+
+  "Let x be a random variable (real or binary) representing the observed data and z a collection of real-valued latent variables. The generative model over the pair (x,z) is given by p(x,z) = p(x|z)p(z), where p(z) is the prior distribution over the latent variables and p(x|z) is the conditional likelihood function. Generally, we assume that the components of z are independent Bernoulli or Gaussian random variables. The likelihood function is parameterized by a deep neural network pθ(x|z) = N(x|mu\_p(z), sigma\_p(z)) referred to as the decoder. A key aspect of VAEs is the use of a learned approximate inference procedure that is trained purely using gradient-based methods. This is achieved by using a learned approximate posterior qφ(z|x) = N(z|mu\_q(x), sigma\_q(x)) whose parameters are given by another deep neural network referred to as the encoder. Thus, we have z∼ Enc(x) = q(z|x) and x∼ Dec(z) = p(x|z). The parameters of these networks are optimized by minimizing the upper-bound on the expected negative log-likelihood of x, which is given by Eq(z|x)[-log pθ(x|z)] + DKL(q(z|x)||p(z)). The first term corresponds to the reconstruction error, and the second term is a regularizer that ensures that the approximate posterior stays close to the prior."
+
+  VAE learns to approximate pθ(z|x) by maximizing variational lower bound L(θ,φ,x) on log-likelihood of data log pθ(x): log pθ(x) ≥ L(θ,φ,x)
+
+  log pθ(x) = log ∫ pθ(x,z)dz = log ∫ (qφ(z|x)/qφ(z|x))pθ(x,z)dz ≥ <Jensen's inequality> ∫ qφ(z|x)log(pθ(x,z)/qφ(z|x))dz = ∫ qφ(z|x)(log pθ(x,z) - log qφ(z|x))dz = ∫ qφ(z|x)((log pθ(x|z) + log pθ(z)) - log qφ(z|x))dz = ∫ qφ(z|x)(log pθ(x|z) - log(qφ(z|x)/pθ(z)))dz = ∫ qφ(z|x)log pθ(x|z)dz - DKL(qφ(z|x)||pθ(z)) = L(θ,φ,x)
+
+  L(θ,φ,x) = Lx(θ,φ,x) + Lz(θ,φ,x), where  
+	Lx(θ,φ,x) := ∫ qφ(z|x)log pθ(x|z)dz    (*reconstruction term*, decoder pθ(x|z) evaluating codes from encoder qφ(z|x))  
+	Lz(θ,φ,x) := - DKL(qφ(z|x)||pθ(z))    (*regularization term*, negative expected reconstruction error of x under qφ(z|x))  
+
+  "Reconstruction term will walk decoder to be able to reconstruct individual examples as best as it can. This term tries to make z as unique as possible so that it can reconstruct the x as accurately as possible. Regularization term wants posterior distribution to be as close to prior on z as possible. This term tries to make output of q indepedent of x."
+
+----
+
+  comparison with [generative adversarial networks](#generative-models---generative-adversarial-networks):  
+  - easier to train and get working  
+  - relatively easy to implement and robust to hyperparameter choices  
+  - tractable likelihood  
+  - has an explicit inference network so it lets one do reconstruction  
+  - if p(x|z) makes conditional independence assumptions then it might make blurring effect  
+
 ----
 
   "An advantage for VAEs is that there is a clear and recognized way to evaluate the quality of the model (log-likelihood, either estimated by importance sampling or lower-bounded). Right now it’s not clear how to compare two GANs or compare a GAN and other generative models except by visualizing samples.  
@@ -587,192 +678,40 @@
 
   *(Yoshua Bengio)*
 
-  Unlike autoencoders, which minimize an explicit reconstruction error, forcing a model to remember "perceptually irrelevant" details of data, GANs circumvent this need via parametric discriminator.
-  In contrast to probabilistic generative models (such as variational autoencoders) GANs don't allow to calculate likelihood of generated sample and don't allow to assess quality of model on test data.
-  Another disadvantage of GANs is that in their original formulation there is no clear way to perform inference in the model, i.e. to recover the posterior distribution p(z|x).
-  One can additionally argue that GANs learning process and the lack of a heuristic cost function (such as pixel-wise independent mean-square error) are attractive to representation learning.
-  Training requires discriminator network to be reoptimised every time generative network changes. Gradient descent in the inner loop of gradient descent makes optimization unstable and slow.
-  GANs require differentiation through the visible units and thus cannot model discrete data, while VAEs require differentiation through the hidden units and thus can't have discrete latent variables.
+  "One of the main issues in variational inference is finding the best approximation to an intractable posterior distribution of interest by searching through a class of known probability distributions. The class of approximations used is often limited, e.g., mean-field approximations, implying that no solution is ever able to resemble the true posterior distribution. This is a widely raised objection to variational methods, in that unlike MCMC, the true posterior distribution may not be recovered even in the asymptotic regime. Challenge for VAE-type generative models is to fit posterior approximators that are both flexible and computationally cheap to sample from and differentiate. Simple posterior approximations, like normal distributions with diagonal covariances, are often insufficiently capable of accurately modeling the true posterior distributions. This leads to looseness of the variational bound, meaning that the objective that is optimized (the variational bound) lies far from the objective we’re actually interested in (the marginal likelihood). This leads to many of the problems encountered when trying to scale VAEs up to high-dimensional spatiotemporal datasets."
 
-  generative adversarial network:  
-  - gets local image features right but not global structure  
-  - possible underfitting due to non-convergence of optimization  
-  - generator never sees the data  
-  - need REINFORCE to do discrete visible variables  
+  *(Mevlana Gemici)*
 
-  variational autoencoder:  
-  - gets global image composition right but blurs details  
-  - possible underfitting due to variational approximation  
-  - generator gets direct output target  
-  - need REINFORCE to do discrete latent variables  
+  "One of the benefits of VAE is that it generally gives interpretable latent variables - to do this it basically collapses all the dimensions it doesn't need i.e. 100, 1000 dimensions in the latent, but only a few are used. It is a challenge because this makes it hard to get "big" VAEs, since they tend to just throw away/not use parameters they don't need. Some of the papers are combatting this tendency. Inverse Autoregressive Flow fixes this to some extent. One can see it by training a VAE but having a multiplier (alpha) on the KL. Turning alpha lower and lower lets more and more of the latent be used, until alpha = 0 when it basically just becomes a regular autoencoder. It is an interesting attribute of the VAE, and one that is important to know about. The disentangling is a powerful thing VAEs can do, but it does have a cost if the goal is feature learning or generation."
 
-----
-
-  "Can we figure out a way to preserve the properties that we like with GANs? That we don't need to hard-code an explicit reconstruction penalty or likelihood function - while avoiding the problems that they currently suffer from, especially mode-dropping and unreliable optimization."
-
-  "All the theory says GANs should be great at the Nash equilibrium, but gradient descent is only guaranteed to get to the Nash equilibrium in the convex case. When both players are represented by neural nets, it’s possible for them to keep adapting their strategies forever without actually arriving at the equilibrium."
-
-  - "How do you address the fact that the minimax game between the generator and discriminator may never approach an equilibrium? In other words, how do you build a system using GANs so that you know that it will converge to a good solution?"  
-  - "Even if they do converge, current systems still have issues with global structure: they cannot count (e.g. the number of eyes on a dog) and frequently get long-range connections wrong (e.g. they show multiple perspectives as part of the same image)."  
-  - "How can we use GANs in discrete settings, such as for generating text?"  
-
-----
-
-  "While most deep generative models are trained by maximizing log likelihood or a lower bound on log likelihood, GANs take a radically different approach that does not require inference or explicit calculation of the data likelihood. Instead, two models are used to solve a minimax game: a generator which samples data, and a discriminator which classifies the data as real or generated. In theory these models are capable of modeling an arbitrarily complex probability distribution. When using the optimal discriminator for a given class of generators, the original GAN proposed by Goodfellow et al. minimizes the Jensen-Shannon divergence between the data distribution and the generator, and extensions generalize this to a wider class of divergences. The ability to train extremely flexible generating functions, without explicitly computing likelihoods or performing inference, and while targeting more mode-seeking divergences has made GANs extremely successful in image generation. In practice, however, GANs suffer from many issues, particularly during training. One common failure mode involves the generator collapsing to produce only a single sample or a small family of very similar samples. Another involves the generator and discriminator oscillating during training, rather than converging to a fixed point. In addition, if one agent becomes much more powerful than the other, the learning signal to the other agent becomes useless, and the system does not learn. The set of hyperparameters for which training is successful is generally very small in practice. Once converged, the generative models produced by the GAN training procedure normally do not cover the whole distribution, even when targeting a mode-covering divergence such as KL. Additionally, because it is intractable to compute the GAN training loss, and because approximate measures of performance such as Parzen window estimates suffer from major flaws, evaluation of GAN performance is challenging. Currently, human judgement of sample quality is one of the leading metrics for evaluating GANs. In practice this metric does not take into account mode dropping if the number of modes is greater than the number of samples one is visualizing. In fact, the mode dropping problem generally helps visual sample quality as the model can choose to focus on only the most common modes. These common modes correspond, by definition, to more typical samples. Additionally, the generative model is able to allocate more expressive power to the modes it does cover than it would if it attempted to cover all modes."
-
-  *(Luke Metz)*
-
-
-  "GANs don't minimise likelihood or other better understood things like that, and other than being superior at generating pretty samples it is unclear why they should work in the really interesting applications of generative models: representation, semi-supervised learning. A lot of papers are just various hacks to make them work. Plumbing GANs and VAEs and autoencoders and whatnots together until they produce pretty pictures. Many people in ML are very annoyed by this kind of wild-wild-west attitude, I-can-code-this-up-therefore-it-makes-sense work, this is why deep learning itself was not taken seriously for a long time. It's just one of those things that are overhyped today, and everybody wants to do GANs for X, at the cost of actually trying things that we have known to work well for X for ages. It's quite predictable that once we understand them better there won't be quite as much excitement around them. The same kind of hype and overfocus of attention happened around Bayesian nonparametrics, kernel methods, sparse LASSO-type stuff a few years ago. GANs don't really work today. Practically, they don't really converge, the results are highly cherry-picked with the training stopped when samples look good. If you change a hyperparameter it all falls apart. Fundamentally, it's minimising a lower bound which is dubious. Serious work needs to be done before they reach the maturity of variational inference or something like the EM algorithm."
-
-  *(Ferenc Huszar)*
-
-----
-
-  [architecture variations](https://pbs.twimg.com/media/CwM0BzjVUAAWTn4.jpg:large)  
-  [implementations](https://github.com/wiseodd/generative-models/tree/master/GAN)  
-  [papers](https://github.com/zhangqianhui/AdversarialNetsPapers)  
-
-  [tips & tricks](https://github.com/soumith/ganhacks) by Soumith Chintala ([talk](https://youtube.com/watch?v=X1mUN6dD8uE))  
-
-  [interesting papers](#interesting-papers---generative-adversarial-networks)
-
-
-
----
-### generative models - variational autoencoder
-
-  [introduction](https://youtu.be/5WoItGTWV54?t=19m58s) by Serena Yeung
-
-  [introduction](http://kvfrans.com/variational-autoencoders-explained/) by Kevin Frans  
-  [introduction](https://hsaghir.github.io/data_science/denoising-vs-variational-autoencoder/) by Hamidreza Saghir  
-  [introduction](http://jaan.io/what-is-variational-autoencoder-vae-tutorial/) by Jaan Altosaar  
-  [introduction](https://vdumoulin.github.io/morphing_faces/) by Vincent Dumoulin  
-
-  [tutorial](http://arxiv.org/abs/1606.05908) by Carl Doersch ([code](https://github.com/cdoersch/vae_tutorial))  
-  ["Variational Inference & Deep Learning: A New Synthesis"](https://dropbox.com/s/v6ua3d9yt44vgb3/cover_and_thesis.pdf) by Diederik Kingma  
-
-  [overview](http://videolectures.net/deeplearning2015_courville_autoencoder_extension/) by Aaron Courville  
-  [overview](https://youtu.be/_qrHcSdQ2J4?t=1h37m21s) by Dmitry Vetrov (in russian)  
-  [overview](https://dl.dropboxusercontent.com/u/16027344/ICML%202015%20Deep%20Learning%20Workshop/Karol%20Gregor%2C%20GOOGLE%20Deepmind.p2g/Default.html) by Karol Gregor  
-  [overview](http://youtube.com/watch?v=P78QYjWh5sM) by Karol Gregor  
-  [overview](http://youtube.com/watch?v=rjZL7aguLAs) by Durk Kingma  
-
-
-  ["Variational auto-encoders do not train complex generative models"](http://dustintran.com/blog/variational-auto-encoders-do-not-train-complex-generative-models/) by Dustin Tran  
-  see "[variational inference]" section of <https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt>  
-
-----
-
-  "VAE framework aims to maximize the log-likelihood of the observed data x by introducing a set of stochastic latent variables z and marginalizing them out of the joint distribution p(x,z). While exact marginalization of the latent variables is generally intractable, the VAE introduces an approximate posterior q(z|x) and maximizes a variational lower bound on the log-likelihood of p(x). VAE allows powerful generative models to be trained efficiently by replacing slow iterative inference algorithms with fast feedforward approximate inference neural networks. The inference networks, which map observations to samples from the variational posterior, are trained jointly with the model by maximizing a common objective. This objective is a variational lower bound on the marginal log-likelihood."
-
-  "Let x be a random variable (real or binary) representing the observed data and z a collection of real-valued latent variables. The generative model over the pair (x,z) is given by p(x,z) = p(x|z)p(z), where p(z) is the prior distribution over the latent variables and p(x|z) is the conditional likelihood function. Generally, we assume that the components of z are independent Bernoulli or Gaussian random variables. The likelihood function is parameterized by a deep neural network pθ(x|z) = N(x|mu\_p(z),sigma\_p(z)) referred to as the decoder. A key aspect of VAEs is the use of a learned approximate inference procedure that is trained purely using gradient-based methods. This is achieved by using a learned approximate posterior qφ(z|x) = N(z|mu\_q(x),sigma\_q(x)) whose parameters are given by another deep neural network referred to as the encoder. Thus, we have z∼ Enc(x) = q(z|x) and x∼ Dec(z) = p(x|z). The parameters of these networks are optimized by minimizing the upper-bound on the expected negative log-likelihood of x, which is given by Eq(z|x)[-log pθ(x|z)]+KL(q(z|x)||p(z)). The first term corresponds to the reconstruction error, and the second term is a regularizer that ensures that the approximate posterior stays close to the prior."
-
-  encoder learns to approximate pθ(z|x) by maximizing a variational lower bound on the data log-likelihood: log pθ(x) ≥ L(θ,φ,x)
-
-  log pθ(x) = log ∫ pθ(x,z)dz = log ∫ (qφ(z|x)/qφ(z|x))pθ(x,z)dz ≥ <Jensen's inequality> [L(θ,φ,x):=] ∫ qφ(z|x)log(pθ(x,z)/qφ(z|x))dz = ∫ qφ(z|x)(log pθ(x,z) - log qφ(z|x))dz = ∫ qφ(z|x)((log pθ(x|z) + log pθ(z)) - log qφ(z|x))dz = ∫ qφ(z|x)(log pθ(x|z) - log(qφ(z|x)/pθ(z)))dz = ∫ qφ(z|x)log pθ(x|z)dz <reconstruction term> - Dkl(qφ(z|x)||pθ(z)) <regularization term>
-
-  variational lower bound:  
-	log pθ(x) >= L(θ,φ,x) = Lz(θ,φ,x) + Lx(θ,φ,x), where  
-	Lz(θ,φ,x) := - Dkl(qφ(z|x)||pθ(z))    (regularization term, negative expected reconstruction error of x under the conditional likelihood with respect to qφ(z|x))  
-	Lx(θ,φ,x) := ∫ qφ(z|x)log pθ(x|z)dz    (reconstruction term, decoder pθ(x|z) evaluating codes from the encoder qφ(z|x))  
-
-  "First, we're talking about reconstruction process. In order to reconstruct the input x you need to obtain its latent representation z using encoder q(z|x). Since q(z|x) is a distribution, you sample z from that distribution. Now you can either take the mean of p(x|z) as your reconstruction, or, again, sample from this distribution. The difference shouldn't matter in low dimensional spaces since most of the mass of normal distribution is concentrated around the mean, and normal distribution has little probability mass on its tails (i.e. it's not heavy-tailed).
-  Then, there's also sampling process. Remember that VAE is a generative (unsupervised) model, so we'd like to sample unseen x's from the model. If we didn't see them, we can't compute corresponding q(z|x) to sample z from. This is where the prior p(z) comes in: during the learning we optimized both reconstruction error and "regularization" term KL(q(z|x)||p(z)), which kept our encoder close to the prior. Now in order to sample from the model we first sample z from p(z) (in the paper it's standard multivariate Gaussian N(0, I)), and then use that z in the decoder p(x|z)."
-
-  "In variational autoencoder there are two forces acting on the sampling layer. One is the likelihood (i.e. loss from the decoder p(x|z)) which tries to make the samples as deterministic as possible. The second is the KL term between the prior and the posterior (i.e. encoder distribution), which tries to make the samples look like samples from the prior. Competition between these two terms is what makes learning the variance of the distribution work, if you take away the KL term then the variance of the encoder will collapse."
-
-  "Reconstruction term will walk decoder to be able to reconstruct individual examples as best as it can. This term tries to make z as unique as possible so that it can reconstruct the x as accurately as possible. Regularization term wants posterior distribution to be as close to prior on z as possible. This term tries to make output of q indepedent of x."
-
-  "The difference between VAE and conventional autoencoder is, given a probability distribution, VAE learns the best possible representation that is parametrized by defined distribution. Let's say we want to fit gaussian distribution to the data. Then, it is able to learn mean and standard deviation of the multiple gaussian functions (corresponding VAE latent units) with backpropagation with a simple parametrization trick. Eventually, you obtain multiple gaussians with different mean and std on the latent units of VAE and you can sample new instances out of these."
-
-  "Current best practice in variational inference performs optimization of ELBO using mini-batches and stochastic gradient descent, which is what allows variational inference to be scaled to problems with very large data sets. There are two problems that must be addressed to successfully use the variational approach: 1) efficient computation of the derivatives of the expected log-likelihood ∇φEqφ(z)[log pθ(x|z)], and 2) choosing the richest, computationally-feasible approximate posterior distribution q(·). The bulk of research in variational inference over the years has been on ways in which to compute ∇φEqφ(z)[log p(x|z)]. Whereas we would have previously resorted to local variational methods, in general we now always compute such expectations using Monte Carlo approximations (including the KL term in the bound, if it is not analytically known). This forms what has been aptly named doubly stochastic estimation, since we have one source of stochasticity from the minibatch and a second from the Monte Carlo approximation of the expectation."
-
-----
-
-  stochastic backpropagation with reparametrization trick:
-
-  <http://blog.shakirm.com/2015/10/machine-learning-trick-of-the-day-4-reparameterisation-tricks/>
-
-  E p(y|x) [g(y)] = ∫ g(f(x,ξ))ρ(ξ)dξ, where ξ ~ ρ(.) a fixed noise distribution and y=f(x,ξ) is differentiable transformation (such as a location-scale transformation or cumulative distribution function)
-
-  "The reparameterization trick enables the optimization of large scale stochastic computation graphs via gradient descent. The essence of the trick is to refactor each stochastic node into a differentiable function of its parameters and a random variable with fixed distribution. After refactoring, the gradients of the loss propagated by the chain rule through the graph are low variance unbiased estimators of the gradients of the expected loss."
-
-  "The "trick" part of the reparameterization trick is that you make the randomness an input to your model instead of something that happens "inside" it, which means you never need to differentiate with respect to sampling (which you can't do). Since the randomness is an input the whole network is deterministic, and you can differentiate the whole thing as normal. In particular, consider the following two ways of writing the objective:  
-
-  - f(z) where z = gφ(eps, x) and eps ~ p(eps)  
-  - f(z) where z ~ pφ(x)  
-
-  In the first version you can compute the gradient of f with respect to phi, because the sampling has been "moved out of the way", but in the second version the sampling step "blocks" the gradient from z to phi."
-
-  location-scale transformation:  z∼ N(z|µ,σ^2) <=> z = µ+σε, ε∼ N(0,1)
-
-  backpropagation with Monte Carlo:  ∇φ(E qφ(z) [fθ(z)]) <=> E N(ε|0,1) [∇φfθ(µ + σε)]
-
-  "A number of general purpose approaches based on Monte Carlo control variate estimators exist as an alternative to stochastic backpropagation, and allow for gradient computation with latent variables that may be continuous or discrete. An important advantage of stochastic backpropagation is that, for models with continuous latent variables, it has the lowest variance among competing estimators."
-
-----
-
-  naive way to evaluate the likelihood p(x) of particular x (requires to compute many samples):  
-
-  step 1. Draw a bunch of z\_i from your chosen prior distribution (typically N(0,I)) which does not have any dependence on a particular x - not the variational approximate posterior q(z|x).  
-  step 2. For each z\_i, evaluate p(x|z\_i). You must have a probabilistic model for this conditional x|z relationship (e.g. Gaussian), otherwise the likelihood is not defined to begin with.  
-  step 3. Return average of the p(x|z\_i) values, which will be a good estimate for p(x), assuming you've drawn sufficiently many z\_i in Step 1.  
-
-  another way to evaluate the likelihood p(x) (lower-variance estimate via importance sampling):
-
-  log p(x) = log ∫ p(x, z) dz = log ∫ p(x, z) q(z|x) / q(z|x) dz = log E {q(z|x)} [ p(x, z) / q(z|x)]  
-  Monte Carlo approximation of the expectation using M samples of z will be 1/M ∑ p(x, zⱼ) / q(zⱼ|x)  
-
-  ["A Note on the Evaluation of Generative Models"](http://arxiv.org/abs/1511.01844)  
-  ["On the Quantitative Analysis of Decoder-based Generative Models"](http://arxiv.org/abs/1611.04273)  
-
-----
-
-comparison with Generative Adversarial Networks:  
-  - easier to train and get working  
-  - relatively easy to implement and robust to hyperparameter choices  
-  - tractable likelihood  
-  - has an explicit inference network so it lets one do reconstruction  
-  - if p(x|z) makes conditional independence assumptions then it might have the blurring effect  
-
-"One of the main issues in variational inference is finding the best approximation to an intractable posterior distribution of interest by searching through a class of known probability distributions. The class of approximations used is often limited, e.g., mean-field approximations, implying that no solution is ever able to resemble the true posterior distribution. This is a widely raised objection to variational methods, in that unlike MCMC, the true posterior distribution may not be recovered even in the asymptotic regime. Challenge for VAE-type generative models is to fit posterior approximators that are both flexible and computationally cheap to sample from and differentiate. Simple posterior approximations, like normal distributions with diagonal covariances, are often insufficiently capable of accurately modeling the true posterior distributions. This leads to looseness of the variational bound, meaning that the objective that is optimized (the variational bound) lies far from the objective we’re actually interested in (the marginal likelihood). This leads to many of the problems encountered when trying to scale VAEs up to high-dimensional spatiotemporal datasets."
-
-  "One of the benefits of the VAE is that it generally gives interpretable latent variables - to do this it basically collapses all the dimensions it doesn't need i.e. 100, 1000 dimensions in the latent, but only a few are used. It is a challenge because this makes it hard to get "big" VAEs, since they tend to just throw away/not use parameters they don't need. Some of the papers are combatting this tendency. Inverse Autoregressive Flow fixes this to some extent. One can see it by training a VAE but having a multiplier (alpha) on the KL. Turning alpha lower and lower lets more and more of the latent be used, until alpha = 0 when it basically just becomes a regular autoencoder. It is an interesting attribute of the VAE, and one that is important to know about. The disentangling is a powerful thing VAEs can do, but it does have a cost if the goal is feature learning or generation."
-
-----
-
-[implementations](https://github.com/wiseodd/generative-models/tree/master/VAE)
-
-[interesting papers](#interesting-papers---variational-autoencoder)
+  *(Kyle Kastner)*
 
 
 
 ---
 ### generative models - autoregressive models
 
-  - choose an ordering of the dimensions in input x  
-  - define the conditionals in the product rule expression of p(x) = ∏ p(xk&vert;x&lt;k)  
+  [papers and resources](#interesting-papers---autoregressive-models)
 
-properties:  
-  - *pros*: p(x) is tractable, so easy to train, easy to sample (though slower)  
-  - *cons*: doesn't have a natural latent representation  
+  [introduction](https://youtu.be/5WoItGTWV54?t=9m12s) by Serena Yeung `video`  
 
-examples:  
-  - masked autoencoder distribution estimator (MADE), pixelCNN  
-  - neural autoregressive distribution estimator (NADE), spatial LSTM, pixelRNN  
+  ["Generative Modelling as Sequence Learning"](https://youtube.com/watch?v=leu286ciQcE) by Nal Kalchbrenner `video`  
+  ["Autoregressive Generative Models with Deep Learning"](http://www.fields.utoronto.ca/video-archive/2017/01/2267-16372) by Hugo Larochelle `video`  
 
-
-[introduction](https://youtu.be/5WoItGTWV54?t=9m12s) by Serena Yeung  
-
-["Generative Modelling as Sequence Learning"](https://youtube.com/watch?v=leu286ciQcE) by Nal Kalchbrenner  
-["Autoregressive Generative Models with Deep Learning"](http://www.fields.utoronto.ca/video-archive/2017/01/2267-16372) by Hugo Larochelle  
-
-["Autoregressive Generative Models"](https://ift6266h17.files.wordpress.com/2017/03/autoregressive_gen.pdf) by Hugo Larochelle, Vincent Dumoulin, Aaron Courville
+  ["Autoregressive Generative Models"](https://ift6266h17.files.wordpress.com/2017/03/autoregressive_gen.pdf) by Hugo Larochelle, Vincent Dumoulin, Aaron Courville `slides`
 
 ----
 
-[interesting papers](#interesting-papers---autoregressive-models)
+  - choose an ordering of the dimensions in input x  
+  - define the conditionals in the product rule expression of p(x) = ∏ p(xk&vert;x&lt;k)  
+
+  properties:  
+  - *pros*: p(x) is tractable, so easy to train, easy to sample (though slower)  
+  - *cons*: doesn't have a natural latent representation  
+
+  examples:  
+  - masked autoencoder distribution estimator (MADE), pixelCNN  
+  - neural autoregressive distribution estimator (NADE), spatial LSTM, pixelRNN  
 
 
 
@@ -782,25 +721,22 @@ examples:
   ["The Miracle of the Boltzmann Machine"](https://theneural.wordpress.com/2011/07/08/the-miracle-of-the-boltzmann-machine/) by Ilya Sutskever  
   ["Undirected Models are Better at Sampling"](https://theneural.wordpress.com/2011/07/17/undirected-models-are-better-at-sampling/) by Ilya Sutskever  
 
-  [difference with other models](https://stats.stackexchange.com/questions/114385/what-is-the-difference-between-convolutional-neural-networks-restricted-boltzma)  
+  [differences with other models](https://stats.stackexchange.com/questions/114385/what-is-the-difference-between-convolutional-neural-networks-restricted-boltzma)  
 
   introduction by Geoffrey Hinton:  
-  - <http://sms.cam.ac.uk/media/2017973> (9:00)  
-  - ["Hopfield Nets and Boltzmann Machines"](http://youtube.com/watch?v=iQu1ZgmapJQ&list=PLnnr1O8OWc6br8B9iXYFkVJcMc9OnjoZS)  
-  - ["Restricted Boltzmann Machines"](http://youtube.com/watch?v=V2z80aXF8b4&list=PLnnr1O8OWc6bh5CYcqrAjfyzPH3QV745M)  
-  - ["Stacking RBMs to Make Deep Belief Nets"](https://youtube.com/watch?v=ZInARyllo1U&list=PLnnr1O8OWc6YkAcnIkKAz9UgWChh1YUSp)  
-  - ["Deep Neural Nets with Generative Pre-Training"](https://youtube.com/watch?v=7YJVvbzFmDA&list=PLnnr1O8OWc6bcYPBkaOzCyeTjIRd_kiaJ)  
+  - [overview](http://sms.cam.ac.uk/media/2017973) (9:00) `video`  
+  - ["Hopfield Nets and Boltzmann Machines"](http://youtube.com/watch?v=iQu1ZgmapJQ&list=PLnnr1O8OWc6br8B9iXYFkVJcMc9OnjoZS) `video`  
+  - ["Restricted Boltzmann Machines"](http://youtube.com/watch?v=V2z80aXF8b4&list=PLnnr1O8OWc6bh5CYcqrAjfyzPH3QV745M) `video`  
+  - ["Stacking RBMs to Make Deep Belief Nets"](https://youtube.com/watch?v=ZInARyllo1U&list=PLnnr1O8OWc6YkAcnIkKAz9UgWChh1YUSp) `video`  
+  - ["Deep Neural Nets with Generative Pre-Training"](https://youtube.com/watch?v=7YJVvbzFmDA&list=PLnnr1O8OWc6bcYPBkaOzCyeTjIRd_kiaJ) `video`  
 
-  ["Undirected Graphical Models"](http://videolectures.net/deeplearning2015_courville_graphical_models/) tutorial by Aaron Courville
+  ["Undirected Graphical Models"](http://videolectures.net/deeplearning2015_courville_graphical_models/) tutorial by Aaron Courville `video`
 
-  ["Learning Deep Generative Models"](http://www.cs.toronto.edu/~rsalakhu/papers/annrev.pdf) tutorial by Ruslan Salakhutdinov
+  ["Learning Deep Generative Models"](http://www.cs.toronto.edu/~rsalakhu/papers/annrev.pdf) tutorial by Ruslan Salakhutdinov `paper`
 
 ----
 
   "RBM learns internal (not defined by the user) concepts that help to explain (that can generate) the observed data. These concepts are captured by random variables (called hidden units) that have a joint distribution (statistical dependencies) among themselves and with the data, and that allow the learner to capture highly non-linear and complex interactions between the parts (observed random variables) of any observed example (like the pixels in an image). One can also think of these higher-level factors or hidden units as another, more abstract, representation of the data. RBM is parametrized through simple two-way interactions between every pair of random variable involved (the observed ones as well as the hidden ones)."
-
-  stochastic binary units:  Probability of turning on is determined by the weighted input from other units plus a bias.  
-  maximum likelihood estimation learning:  Start with a training vector v on the visible units, then alternate between updating all the hidden units in parallel and all the visible units in parallel.  
 
   - can characterize uncertainty
   - deal with missing or noisy data
@@ -811,7 +747,7 @@ examples:
 ---
 ### architectures
 
-  ["The Neural Network Zoo"](http://asimovinstitute.org/neural-network-zoo/)
+  ["The Neural Network Zoo"](http://asimovinstitute.org/neural-network-zoo/) by Fjodor van Veen
 
 ----
 
@@ -841,7 +777,7 @@ examples:
 	There is information here which is important to my task/goal.  
 >	p(Y|X) rather than just p(X)
 
-"Bayes rule: p(Y | X) = p(X | Y) * p(Y) / p(X)  
+  "Bayes rule: p(Y | X) = p(X | Y) * p(Y) / p(X)  
   In supervised classification, we basically only care about p(Y | X); p(X) and p(Y) are basically thrown away if we don't know anything about X or Y. Note that we could probably do better if we did assume something about p(X) or P(Y), and that assumption was accurate.  
   In semi-supervised classification we generally care about both p(Y | X) and p(X) because we exploit p(X) on the way to p(Y | X) since we have way more X samples than known Y samples.  
   For unsupervised learning p(X) is all we know and usually all we care about, so we can optimize it directly (in general, with certain assumptions).  
@@ -868,17 +804,17 @@ examples:
 
   ["Convolutional Neural Network"](http://www.deeplearningbook.org/contents/convnets.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
 
-  [overview](https://youtube.com/watch?v=LxfUGhug-iQ) by Andrej Karpathy  
-  [overview](https://youtube.com/watch?v=bNb2fEVKeEo) by Serena Young  
-  [overview](http://videolectures.net/deeplearning2016_fergus_neural_networks/) by Rob Fergus  
-  [overview](https://youtu.be/Xogn6veSyxA?t=40m30s) by Ian Goodfellow  
-  [overview](https://youtube.com/watch?v=6-yBs3XLM20) by Victor Lempitsky (in russian)  
+  [overview](https://youtube.com/watch?v=LxfUGhug-iQ) by Andrej Karpathy `video`  
+  [overview](https://youtube.com/watch?v=bNb2fEVKeEo) by Serena Young `video`  
+  [overview](http://videolectures.net/deeplearning2016_fergus_neural_networks/) by Rob Fergus `video`  
+  [overview](https://youtu.be/Xogn6veSyxA?t=40m30s) by Ian Goodfellow `video`  
+  [overview](https://youtube.com/watch?v=6-yBs3XLM20) by Victor Lempitsky (in russian) `video`  
 
   [overview](http://cs231n.github.io/convolutional-networks/) by Andrej Karpathy  
   ["Conv Nets: A Modular Perspective"](http://colah.github.io/posts/2014-07-Conv-Nets-Modular/) by Chris Olah  
   ["Understanding Convolutions"](http://colah.github.io/posts/2014-07-Understanding-Convolutions/) by Chris Olah  
 
-  ["CNN Architectures"](https://youtube.com/watch?v=DAOcjicFr1Y) by Serena Young  
+  ["CNN Architectures"](https://youtube.com/watch?v=DAOcjicFr1Y) by Serena Young `video`  
   [overview of architectures](https://medium.com/towards-data-science/neural-network-architectures-156e5bad51ba) by Eugenio Culurciello  
 
 ----
@@ -896,10 +832,10 @@ examples:
 
   ["Recurrent Neural Network"](http://www.deeplearningbook.org/contents/rnn.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
 
-  [overview](https://youtube.com/watch?v=yCC09vCHzF8) by Andrej Karpathy  
-  [overview](https://youtube.com/watch?v=6niqTuYFZLQ) by Justin Johnson  
-  [overview](https://youtube.com/watch?v=ZVN14xYm7JA) by Ian Goodfellow  
-  [overview](http://videolectures.net/deeplearning2016_bengio_neural_networks/) by Yoshua Bengio  
+  [overview](https://youtube.com/watch?v=yCC09vCHzF8) by Andrej Karpathy `video`  
+  [overview](https://youtube.com/watch?v=6niqTuYFZLQ) by Justin Johnson `video`  
+  [overview](https://youtube.com/watch?v=ZVN14xYm7JA) by Ian Goodfellow `video`  
+  [overview](http://videolectures.net/deeplearning2016_bengio_neural_networks/) by Yoshua Bengio `video`  
 
   ["The Unreasonable Effectiveness of Recurrent Neural Networks"](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) by Andrej Karpathy  
   ["A Critical Review of Recurrent Neural Networks for Sequence Learning"](https://arxiv.org/abs/1506.00019) by Lipton et al.  
@@ -909,11 +845,11 @@ examples:
 
   **Long Short Term Memory (LSTM)**
 
-  [overview](https://youtu.be/yCC09vCHzF8?t=45m31s) by Andrej Karpathy  
+  [overview](https://youtu.be/yCC09vCHzF8?t=45m31s) by Andrej Karpathy `video`  
 
   ["Understanding LSTM Networks"](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) by Chris Olah  
   ["Understanding, Deriving and Extending the LSTM"](http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html)  
-  ["Backpropogating an LSTM: A Numerical Example"](http://blog.aidangomez.ca/2016/04/17/Backpropogating-an-LSTM-A-Numerical-Example/)  
+  ["Backpropogating an LSTM: A Numerical Example"](http://blog.aidangomez.ca/2016/04/17/Backpropogating-an-LSTM-A-Numerical-Example/) by Aidan Gomez  
 
 ----
 
@@ -933,20 +869,22 @@ examples:
 
 ----
 
-  ["Limitations of RNNs: A Computational Perspective"](https://youtu.be/FIr_SaKT52U?t=30m27s) by Edward Grefenstette  
-  ["Beyond Seq2Seq with Augmented RNNs"](http://videolectures.net/deeplearning2016_grefenstette_augmented_rnn/) by Edward Grefenstette  
+  ["Limitations of RNNs: A Computational Perspective"](https://youtu.be/FIr_SaKT52U?t=30m27s) by Edward Grefenstette `video`  
+  ["Beyond Seq2Seq with Augmented RNNs"](http://videolectures.net/deeplearning2016_grefenstette_augmented_rnn/) by Edward Grefenstette `video`  
 
-  ["Frontiers in Recurrent Neural Network Research"](https://youtube.com/watch?v=pwyBoPFsQ4M) by Alex Graves  
-  ["New Directions for Recurrent Neural Networks"](https://facebook.com/iclr.cc/videos/1713144705381255/) by Alex Graves  
+  ["Frontiers in Recurrent Neural Network Research"](https://youtube.com/watch?v=pwyBoPFsQ4M) by Alex Graves `video`  
+  ["New Directions for Recurrent Neural Networks"](https://facebook.com/iclr.cc/videos/1713144705381255/) by Alex Graves `video`  
 
 
 
 ---
 ### architectures - compute and memory
 
-  ["Deep Learning and Reasoning, Memory-Augmented Networks"](http://videolectures.net/deeplearning2016_chopra_attention_memory/) by Rob Fergus  
-  ["Reasoning, Attention and Memory"](http://videolectures.net/deeplearning2016_chopra_attention_memory/) by Sumit Chopra  
-  ["Beyond Seq2Seq with Augmented RNNs"](http://videolectures.net/deeplearning2016_grefenstette_augmented_rnn/) by Edward Grefenstette  
+  [papers and resources](#interesting-papers---architectures)
+
+  ["Deep Learning and Reasoning, Memory-Augmented Networks"](http://videolectures.net/deeplearning2016_chopra_attention_memory/) by Rob Fergus `video`  
+  ["Reasoning, Attention and Memory"](http://videolectures.net/deeplearning2016_chopra_attention_memory/) by Sumit Chopra `video`  
+  ["Beyond Seq2Seq with Augmented RNNs"](http://videolectures.net/deeplearning2016_grefenstette_augmented_rnn/) by Edward Grefenstette `video`  
 
   ["Attention and Augmented Recurrent Neural Networks"](http://distill.pub/2016/augmented-rnns/) by Chris Olah and Shan Carter  
 
@@ -961,9 +899,7 @@ examples:
 
   - [*Neural GPU*](#kaiser-sutskever---neural-gpus-learn-algorithms)  
 
-  - [*Memory Networks*](#weston-chopra-bordes---memory-networks)  
-
-  - [*Stack-Augmented Recurrent Neural Network*](#joulin-mikolov---inferring-algorithmic-patterns-with-stack-augmented-recurrent-nets)  
+  - [*Memory Networks*](#sukhbaatar-szlam-weston-fergus---end-to-end-memory-networks)  
 
   - [*Neural Stacks/Queues*](#grefenstette-hermann-suleyman-blunsom---learning-to-transduce-with-unbounded-memory)  
 
@@ -992,10 +928,6 @@ examples:
   "It could be also the case that many "real-world" experimental benchmarks that have been tried so far are not very "algorithmic", hence NTMs don't have an advantage over LSTMs, but experimental conditions where training and test examples are i.i.d. sampled from the same distribution are actually somewhat artificial, thus in more realistic applications the NTMs may benefit from an increased generalization ability. In any case, if the end goal is to reach at least human-level learning performance, being able to do this kind of generalization seems necessary."
 
   *(Antonio Valerio Miceli-Barone)*
-
-----
-
-[interesting papers](#interesting-papers---architectures)
 
 
 
@@ -1035,25 +967,34 @@ examples:
 
 ----
 
-  [overview](https://youtu.be/9U0drwafE78?t=36m22s) by Oriol Vinyals  
-  [overview](https://youtube.com/watch?v=_XRBlhzb31U) by Mikhail Figurnov (in russian)  
+  [overview](https://youtu.be/9U0drwafE78?t=36m22s) by Oriol Vinyals `video`  
+  [overview](https://youtube.com/watch?v=_XRBlhzb31U) by Mikhail Figurnov (in russian) `video`  
 
   [overview](http://distill.pub/2016/augmented-rnns/#attentional-interfaces) by Chris Olah and Shan Carter  
   [overview](http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/) by Denny Britz  
 
-  ["Smooth Operators: the Rise of Differentiable Attention in Deep Learning"](http://www.thespermwhale.com/jaseweston/ram/slides/session2/Smooth%20Operators-NIPS2015.pptx) by Alex Graves
+  ["Smooth Operators: the Rise of Differentiable Attention in Deep Learning"](http://www.thespermwhale.com/jaseweston/ram/slides/session2/Smooth%20Operators-NIPS2015.pptx) by Alex Graves `slides`
 
 
 
 ---
 ### architectures - distributed representations
 
-  "We are attempting to replace symbols by vectors so we can replace logic by algebra." *(Yann LeCun)*
+  "The idea of distributed representations was introduced with reference to cognitive representations: a mental object can be represented efficiently (both in terms of number of bits and in terms of number of examples needed to generalize about it) by characterizing the object using many features, each of which can separately each be active or inactive. For example, with m binary features, one can describe up to 2^m different objects. The idea is that the brain would be learning and using such representations because they help it generalize to new objects that are similar to known ones in many respects. A distributed representation is opposed to a local representation, in which only one neuron (or very few) is active at each time, i.e., as with grandmother cells. One can view n-gram models as a mostly local representation: only the units associated with the specific subsequences of the input sequence are turned on. Hence the number of units needed to capture the possible sequences of interest grows exponentially with sequence length."
 
-  "The idea of distributed representations was introduced with reference to cognitive representations: a mental object can be represented efficiently (both in terms of number of bits and in terms of number of examples needed to generalize about it) by characterizing the object using many features, each of which can separately each be active or inactive. For example, with m binary features, one can describe up to 2^m different objects. The idea is that the brain would be learning and using such representations because they help it generalize to new objects that are similar to known ones in many respects. A distributed representation is opposed to a local representation, in which only one neuron (or very few) is active at each time, i.e., as with grandmother cells. One can view n-gram models as a mostly local representation: only the units associated with the specific subsequences of the input sequence are turned on. Hence the number of units needed to capture the possible sequences of interest grows exponentially with sequence length." *(Yoshua Bengio)*
+  *(Yoshua Bengio)*
 
+  ["Representation Learning"](http://www.deeplearningbook.org/contents/representation.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
 
-  ["Aetherial Symbols"](https://drive.google.com/file/d/0B8i61jl8OE3XdHRCSkV1VFNqTWc) by Geoffrey Hinton
+  ["Visualizing Representations"](http://colah.github.io/posts/2015-01-Visualizing-Representations/) by Chris Colah
+
+----
+
+  "We are attempting to replace symbols by vectors so we can replace logic by algebra."
+
+  *(Yann LeCun)*
+
+  ["Aetherial Symbols"](https://drive.google.com/file/d/0B8i61jl8OE3XdHRCSkV1VFNqTWc) by Geoffrey Hinton `slides`  
 > - words are the symbolic indicators of thought vectors
 > - words carry with each a probabilistic stream of potential further thoughts and links to past symbols
 > - much like implicit CFD, they are backward convolved with prior words to determine most likely hidden thought, and then forward solved to determine next word
@@ -1061,9 +1002,19 @@ examples:
 > - knowledge of more or varied relationships (and more logic paths) provides more efficient/accurate ways to solve an optimized path through the higher dimensions of word/symbol space
 > - in a sense, one may never know the idea of "bros/sis" but it is probabilistically highly likely that given a male and female with the same parents that they are also bros/sis
 
-  ["Distributed Representations"](http://www.cs.toronto.edu/~bonner/courses/2014s/csc321/lectures/lec5.pdf) by Geoffrey Hinton
+  ["Distributed Representations"](http://www.cs.toronto.edu/~bonner/courses/2014s/csc321/lectures/lec5.pdf) by Geoffrey Hinton `slides`
 
-  ["Representation Learning"](http://www.deeplearningbook.org/contents/representation.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
+  ["A Theoretical Approach to Semantic Representations"](https://youtube.com/watch?v=KR46z_V0BVw) by Sanjeev Arora `video`  
+  "Word Embeddings: Explaining their properties" by Sanjeev Arora
+	([part 1](http://www.offconvex.org/2015/12/12/word-embeddings-1/), [part 2](http://www.offconvex.org/2016/02/14/word-embeddings-2/))  
+
+  ["Deep Meaning Beyond Thought Vectors"](https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/) by David McAllester
+
+  ["Low-Dimensional Embeddings of Logic"](http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/) by Tim Rocktaschel `video`
+
+----
+
+  [neural architectures for reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#neural-architectures)  
 
 ----
 
@@ -1101,54 +1052,34 @@ examples:
   - what is a proof in embeddings?  
   - how can explicit background knowledge be injected into embeddings?  
 
-----
-
-  ["Visualizing Representations"](http://colah.github.io/posts/2015-01-Visualizing-Representations/) by Chris Colah
-
-  ["A Theoretical Approach to Semantic Representations"](https://youtube.com/watch?v=KR46z_V0BVw) by Sanjeev Arora  
-  "Word Embeddings: Explaining their properties" by Sanjeev Arora
-	([part 1](http://www.offconvex.org/2015/12/12/word-embeddings-1/), [part 2](http://www.offconvex.org/2016/02/14/word-embeddings-2/))  
-
-  ["Deep Meaning Beyond Thought Vectors"](https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/) by David McAllester
-
-  ["Low-Dimensional Embeddings of Logic"](http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/) by Tim Rocktaschel
-
-----
-
-  [neural architectures for reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#neural-architectures)  
-
 
 
 ---
 ### interesting papers
 
-<http://arxiv-sanity.com/top>  
-<http://shortscience.org/?tab=recent>  
-
-
-[selected papers and books](https://dropbox.com/sh/87z7vpizfuws8qq/AAA2u6uyiQdzJoBJhKukqOEza)
+  - [theory](#interesting-papers---theory)  
+  - [connections to biology](#connections-to-biology)  
+  - [architectures](#interesting-papers---architectures)  
+  - [few-shot and transfer learning](#interesting-papers---few-shot-and-transfer-learning)  
+  - [autoregressive models](#interesting-papers---autoregressive-models)  
+  - [generative adversarial networks](#interesting-papers---generative-adversarial-networks)  
+  - [variational autoencoder](#interesting-papers---variational-autoencoder)  
+  - [bayesian deep learning](#interesting-papers---bayesian-deep-learning)  
+  - [applications](#interesting-papers---applications)  
 
 
 [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md)
 
 
-interesting papers:  
-  - [theory](#interesting-papers---theory)  
-  - [connections to biology](#connections-to-biology)  
-  - [architectures](#interesting-papers---architectures)  
-  - [semi-supervised and transfer learning](#interesting-papers---semi-supervised-and-transfer-learning)  
-  - [autoregressive models](#interesting-papers---autoregressive-models)  
-  - [generative adversarial networks](#interesting-papers---generative-adversarial-networks)  
-  - [variational autoencoder](#interesting-papers---variational-autoencoder)  
-  - [bayesian inference and learning](#interesting-papers---bayesian-inference-and-learning)  
-  - [applications](#interesting-papers---applications)  
+<http://arxiv-sanity.com/top>  
+<http://shortscience.org/?tab=recent>  
 
 
 
 ---
 ### interesting papers - theory
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#theory)
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#deep-learning-theory)
 
 
 #### Shwartz-Ziv, Tishby - ["Opening the Black Box of Deep Neural Networks via Information"](http://arxiv.org/abs/1703.00810)
@@ -1177,12 +1108,13 @@ interesting papers:
 
 >	"The general result is that networks go through two phases of learning. In retrospect, this is kind of obvious to anyone that's trained neural networks in practice. There is typically a short phase where it makes rapid progress, followed by a much longer phase of "fine tuning". The real contribution of this paper is showing that these stages correspond to a phase change in how the mutual information of the encoder/decoder distributions of each layer change. The first stage is when each layer is learning to do its fair share of information preservation. During this stage, mutual information between each layer's representation and the input/output increases to the point that the network's representation in the information plane is more or less linear. All this means is that information loss/gain from layer to layer is approximately constant, so in a sense no layer is doing more work than others. The second phase consists of continuing to maximizing the mutual information between each layer and the output, but now at the expense of the mutual information between each layer and the input. This is in contrast to the first stage where both quantities were being maximized in. In other words, each layer is now learning to prioritize information that is important for the task at hand."
 
-  - <https://youtube.com/watch?v=bLqJHjXihK8> (Tishby)
-  - <https://youtube.com/watch?v=ekUWO_pI2M8> (Tishby)
-  - <https://youtu.be/RKvS958AqGY?t=12m7s> (Tishby)
-  - <https://theneuralperspective.com/2017/03/24/opening-the-black-box-of-deep-neural-networks-via-information/>
-  - <https://quantamagazine.org/new-theory-cracks-open-the-black-box-of-deep-learning-20170921>
-  - <https://reddit.com/r/MachineLearning/comments/60fhyb/r_opening_the_black_box_of_deep_neural_networks/df8jsbm/>
+  - `video` <https://youtube.com/watch?v=bLqJHjXihK8> (Tishby)
+  - `video` <https://youtube.com/watch?v=ekUWO_pI2M8> (Tishby)
+  - `video` <https://youtu.be/RKvS958AqGY?t=12m7s> (Tishby)
+  - `notes` <https://theneuralperspective.com/2017/03/24/opening-the-black-box-of-deep-neural-networks-via-information/>
+  - `notes` <https://reddit.com/r/MachineLearning/comments/60fhyb/r_opening_the_black_box_of_deep_neural_networks/df8jsbm/>
+  - `press` <https://quantamagazine.org/new-theory-cracks-open-the-black-box-of-deep-learning-20170921>
+  - `paper` ["Deep Learning and the Information Bottleneck Principle"](#tishby-zaslavsky---deep-learning-and-the-information-bottleneck-principle) by Tishby and Zaslavsky
 
 
 #### Tishby, Zaslavsky - ["Deep Learning and the Information Bottleneck Principle"](https://arxiv.org/abs/1503.02406)
@@ -1196,37 +1128,31 @@ interesting papers:
 
 >	"We suggest a novel information theoretic analysis of deep neural networks based on the information bottleneck principle. Arguably, DNNs learn to extract efficient representations of the relevant features of the input layer X for predicting the output label Y, given a finite sample of the joint distribution p(X, Y). This representation can be compared with the theoretically optimal relevant compression of the variable X with respect to Y, provided by the information bottleneck (or information distortion) tradeoff. This is done by introducing a new information theoretic view of DNN training as an successive (Markovian) relevant compression of the input variable X, given the empirical training data. The DNN’s prediction is activating the trained compression layered hierarchy to generate a predicted label Yˆ. Maximizing the mutual information I(Y; Yˆ), for a sequence of evoking inputs X, emerges as the natural DNN optimization goal."
 
-  - <https://youtube.com/watch?v=ei59sYLVuqA> (Tishby)
-  - <http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/>
+  - `video` <https://youtube.com/watch?v=ei59sYLVuqA> (Tishby)
+  - `post` <http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/>
 
 
 #### Hardt, Recht, Singer - ["Train Faster, Generalize Better: Stability of Stochastic Gradient Descent"](http://arxiv.org/abs/1509.01240)
 >	"We show that parametric models trained by a stochastic gradient method with few iterations have vanishing generalization error. We prove our results by arguing that SGM is algorithmically stable in the sense of Bousquet and Elisseeff. Our analysis only employs elementary tools from convex and continuous optimization. We derive stability bounds for both convex and non-convex optimization under standard Lipschitz and smoothness assumptions. Applying our results to the convex case, we provide new insights for why multiple epochs of stochastic gradient methods generalize well in practice. In the non-convex case, we give a new interpretation of common practices in neural networks, and formally show that popular techniques for training large deep models are indeed stability-promoting. Our findings conceptually underscore the importance of reducing training time beyond its obvious benefit."
 
-  - <http://argmin.net/2016/04/18/bottoming-out/> (Recht)
-  - <http://www.offconvex.org/2016/03/14/stability/> (Hardt)
-  - <http://www.offconvex.org/2016/03/22/saddlepoints/> (Ge)
-  - <http://www.offconvex.org/2016/03/24/saddles-again/> (Recht)
+  - `post` <http://argmin.net/2016/04/18/bottoming-out/> (Recht)
+  - `post` <http://www.offconvex.org/2016/03/14/stability/> (Hardt)
+  - `post` <http://www.offconvex.org/2016/03/22/saddlepoints/> (Ge)
+  - `post` <http://www.offconvex.org/2016/03/24/saddles-again/> (Recht)
 
 
 #### Koh, Liang - ["Understanding Black-box Predictions via Influence Functions"](https://arxiv.org/abs/1703.04730)
 >	"How can we explain the predictions of a black-box model? In this paper, we use influence functions -- a classic technique from robust statistics -- to trace a model's prediction through the learning algorithm and back to its training data, thereby identifying training points most responsible for a given prediction. To scale up influence functions to modern machine learning settings, we develop a simple, efficient implementation that requires only oracle access to gradients and Hessian-vector products. We show that even on non-convex and non-differentiable models where the theory breaks down, approximations to influence functions can still provide valuable information. On linear models and convolutional neural networks, we demonstrate that influence functions are useful for multiple purposes: understanding model behavior, debugging models, detecting dataset errors, and even creating visually-indistinguishable training-set attacks."
-  - <https://youtube.com/watch?v=0w9fLX_T6tY> (Pang Wei Koh)
-  - <https://github.com/kohpangwei/influence-release>
+  - `video` <https://youtube.com/watch?v=0w9fLX_T6tY> (Koh)
+  - `code` <https://github.com/kohpangwei/influence-release>
 
 
 #### Szegedy, Zaremba, Sutskever, Bruna, Erhan, Goodfellow, Fergus - ["Intriguing Properties of Neural Networks"](http://arxiv.org/abs/1312.6199)
 >	"Deep neural networks are highly expressive models that have recently achieved state of the art performance on speech and visual recognition tasks. While their expressiveness is the reason they succeed, it also causes them to learn uninterpretable solutions that could have counter-intuitive properties. In this paper we report two such properties. First, we find that there is no distinction between individual high level units and random linear combinations of high level units, according to various methods of unit analysis. It suggests that it is the space, rather than the individual units, that contains the semantic information in the high layers of neural networks. Second, we find that deep neural networks learn input-output mappings that are fairly discontinuous to a significant extent. We can cause the network to misclassify an image by applying a certain hardly perceptible perturbation, which is found by maximizing the network’s prediction error. In addition, the specific nature of these perturbations is not a random artifact of learning: the same perturbation can cause a different network, that was trained on a different subset of the dataset, to misclassify the same input."
 
-  Bengio:
->	"My conjecture is that *good* unsupervised learning should generally be much more robust to adversarial distortions because it tries to discriminate the data manifold from its surroundings, in ALL non-manifold directions (at every point on the manifold). This is in contrast with supervised learning, which only needs to worry about the directions that discriminate between the observed classes. Because the number of classes is much less than the dimensionality of the space, for image data, supervised learning is therefore highly underconstrained, leaving many directions of changed "unchecked" (i.e. to which the model is either insensitive when it should not or too sensitive in the wrong way)."
-
-  - <http://deeplearning.twbbs.org> (live demo)
-  - <http://youtube.com/watch?v=pdODJ7JQfjo> (Zaremba)
-  - <http://kdnuggets.com/2015/01/deep-learning-flaws-universal-machine-learning.html>
-  - <http://i-programmer.info/news/105-artificial-intelligence/7352-the-flaw-lurking-in-every-deep-neural-net.html>
-  - <http://postnauka.ru/faq/27392> (Vetrov) (in russian)
-  - <https://karpathy.github.io/2015/03/30/breaking-convnets/>
+  - <http://deeplearning.twbbs.org> (demo)
+  - `video` <http://youtube.com/watch?v=pdODJ7JQfjo> (Zaremba)
+  - `post` <http://i-programmer.info/news/105-artificial-intelligence/7352-the-flaw-lurking-in-every-deep-neural-net.html>
 
 
 #### Goodfellow, Shlens, Szegedy - ["Explaining and Harnessing Adversarial Examples"](http://arxiv.org/abs/1412.6572)
@@ -1252,11 +1178,15 @@ interesting papers:
 
 >	"ReLUs have 2 states: on and off. They're linear when they're on and they're constant 0 when they're off. Now consider an input x. There is some neighbourhood around x where you don't change the states of any ReLU unit in the network. In that neighbourhood, the network behaves exactly as a linear (affine, when you consider biases) function. That's what is meant by linear: as you move around in x space, you hit different on/off configurations of the units, each which is a locally affine function."
 
-  - <http://youtube.com/watch?v=Pq4A2mPCB0Y> (Goodfellow)
-  - <http://youtube.com/watch?v=hDlHpBBGaKs> (Goodfellow)
-  - <http://videolectures.net/deeplearning2015_goodfellow_adversarial_examples/> (Goodfellow)
-  - <http://kdnuggets.com/2015/07/deep-learning-adversarial-examples-misconceptions.html>
-  - <https://karpathy.github.io/2015/03/30/breaking-convnets/>
+----
+Yoshua Bengio:  
+>	"My conjecture is that good unsupervised learning should generally be much more robust to adversarial distortions because it tries to discriminate the data manifold from its surroundings, in ALL non-manifold directions (at every point on the manifold). This is in contrast with supervised learning, which only needs to worry about the directions that discriminate between the observed classes. Because the number of classes is much less than the dimensionality of the space, for image data, supervised learning is therefore highly underconstrained, leaving many directions of changed "unchecked" (i.e. to which the model is either insensitive when it should not or too sensitive in the wrong way)."
+
+  - `video` <http://youtube.com/watch?v=Pq4A2mPCB0Y> (Goodfellow)
+  - `video` <http://youtube.com/watch?v=hDlHpBBGaKs> (Goodfellow)
+  - `video` <http://videolectures.net/deeplearning2015_goodfellow_adversarial_examples/> (Goodfellow)
+  - `post` <https://karpathy.github.io/2015/03/30/breaking-convnets/>
+  - `post` <http://kdnuggets.com/2015/07/deep-learning-adversarial-examples-misconceptions.html>
 
 
 #### Hinton, Vinyals, Dean - ["Distilling the Knowledge in a Neural Network"](http://arxiv.org/abs/1503.02531)
@@ -1268,7 +1198,7 @@ interesting papers:
 
 >	"Train a large network on the original training labels, then learn a much smaller “distilled” model on a weighted combination of the original labels and the (softened) softmax output of the larger model. The authors show that the distilled model has better generalization ability than a model trained on just the labels."
 
-  - <https://youtube.com/watch?v=EK61htlw8hY> (Hinton)
+  - `video` <https://youtube.com/watch?v=EK61htlw8hY> (Hinton)
 
 
 #### Ioffe, Szegedy - ["Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift"](http://arxiv.org/abs/1502.03167)
@@ -1283,24 +1213,21 @@ interesting papers:
 ----
 >	"Batch norm is similar to dropout in the sense that it multiplies each hidden unit by a random value at each step of training. In this case, the random value is the standard deviation of all the hidden units in the minibatch. Because different examples are randomly chosen for inclusion in the minibatch at each step, the standard deviation randomly fluctuates. Batch norm also subtracts a random value (the mean of the minibatch) from each hidden unit at each step. Both of these sources of noise mean that every layer has to learn to be robust to a lot of variation in its input, just like with dropout."
 
-  - <http://research.microsoft.com/apps/video/default.aspx?id=260019> (Ioffe)
-  - <http://videolectures.net/icml2015_ioffe_batch_normalization/> (Ioffe)
-  - <https://youtu.be/Xogn6veSyxA?t=3m46s> (Goodfellow)
-  - <http://www.shortscience.org/paper?bibtexKey=conf/icml/IoffeS15>
-  - <https://www.evernote.com/shard/s267/sh/64195d10-53b4-4312-8c5a-d10ab5138c36/22ce804ec6c8ab2b9ceb3096b8cd929e>
-  - <https://raberrytv.wordpress.com/2016/04/06/batch-normalization-warm-up/>
-  - <https://kevinzakka.github.io/2016/09/14/batch_normalization/>
-  - <https://kratzert.github.io/2016/02/12/understanding-the-gradient-flow-through-the-batch-normalization-layer.html>
-  - <http://www.alexirpan.com/2017/04/26/perils-batch-norm.html>
-
+  - `video` <http://research.microsoft.com/apps/video/default.aspx?id=260019> (Ioffe)
+  - `video` <http://videolectures.net/icml2015_ioffe_batch_normalization/> (Ioffe)
+  - `video` <https://youtu.be/Xogn6veSyxA?t=3m46s> (Goodfellow)
+  - `post` <https://kratzert.github.io/2016/02/12/understanding-the-gradient-flow-through-the-batch-normalization-layer.html>
+  - `post` <https://kevinzakka.github.io/2016/09/14/batch_normalization/>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/icml/IoffeS15>
+  
 
 #### Arpit, Zhou, Kota, Govindaraju - ["Normalization Propagation: A Parametric Technique for Removing Internal Covariate Shift in Deep Networks"](https://arxiv.org/abs/1603.01431)
 >	"While the authors of Batch Normalization identify and address an important problem involved in training deep networks - Internal Covariate Shift - the current solution has certain drawbacks. Specifically, BN depends on batch statistics for layerwise input normalization during training which makes the estimates of mean and standard deviation of input (distribution) to hidden layers inaccurate for validation due to shifting parameter values (especially during initial training epochs). Also, BN cannot be used with batch-size 1 during training. We address these drawbacks by proposing a non-adaptive normalization technique for removing internal covariate shift, that we call Normalization Propagation. Our approach does not depend on batch statistics, but rather uses a data-independent parametric estimate of mean and standard-deviation in every layer thus being computationally faster compared with BN. We exploit the observation that the pre-activation before Rectified Linear Units follow Gaussian distribution in deep networks, and that once the first and second order statistics of any given dataset are normalized, we can forward propagate this normalization without the need for recalculating the approximate statistics for hidden layers."
 
 >	"We have proposed a novel algorithm for addressing the problem of Internal Covariate Shift involved during training deep neural networks that overcomes certain drawbacks of Batch Normalization. Specifically, we propose a parametric approach that avoids estimating the mean and standard deviation of hidden layers’ input distribution using input data mini-batch statistics (that involve shifting network parameters). Instead, NormProp relies on normalizing the statistics of the given dataset and conditioning the weight matrix which ensures normalization done for the dataset is propagated to all hidden layers. Thus NormProp does not need to maintain a moving average estimate of batch statistics of hidden layer inputs for validation/test phase, thus being more representative of the entire data distribution (especially during initial training period when parameters change drastically). This also enables the use of batch size 1 for training. Although we have shown how to apply NormProp in detail for networks with ReLU activation, we have discussed how to extend it for other activations as well. We have empirically shown NormProp achieves more stable convergence and hidden layer input distribution over validation set during training, and better/competitive classification performance compared with BN while being faster by omitting the need to compute mini-batch estimate of mean/standard-deviation for hidden layers’ input. In conclusion, our approach is applicable alongside any activation function and cost objectives for improving training convergence."
 
-  - <http://techtalks.tv/talks/normalization-propagation-a-parametric-technique-for-removing-internal-covariate-shift-in-deep-networks/62369/>
-  - <http://youtube.com/watch?v=-fpBFHti5ZE> (Novikov)
+  - `video` <http://techtalks.tv/talks/normalization-propagation-a-parametric-technique-for-removing-internal-covariate-shift-in-deep-networks/62369/> (Arpit)
+  - `video` <http://youtube.com/watch?v=-fpBFHti5ZE> (Novikov)
 
 
 #### Salimans, Kingma - ["Weight Normalization: A Simple Reparameterization to Accelerate Training of Deep Neural Networks"](http://arxiv.org/abs/1602.07868)
@@ -1309,9 +1236,9 @@ interesting papers:
 ----
 >	"Batch normalization adds noise to gradient updates. While noise is probably good when one is training images with CNNs because it adds a bit of regularization (e.g., it can take care of invariances and stuff that doesn’t matter), it’s not so useful when one wants to do reinforcement learning. Instead of normalizing batches, one does normalization directly onto the weights, the contributions being: weight normalization + data dependent initialization. Scores on reinforcement learning with DQN gets better, sometimes 30% more."  
 
-  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Weight-Normalization-A-Simple-Reparameterization-to-Accelerate-Training-of-Deep-Neural-Networks>  
-  - <https://youtu.be/mrj_hyH974o?t=1h46m43s> (Lobacheva) (in russian)  
-  - <https://github.com/openai/weightnorm>  
+  - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Weight-Normalization-A-Simple-Reparameterization-to-Accelerate-Training-of-Deep-Neural-Networks> (Salimans)
+  - `video` <https://youtu.be/mrj_hyH974o?t=1h46m43s> (Lobacheva) (in russian)
+  - `code` <https://github.com/openai/weightnorm>
 
 
 #### Klambauer, Unterthiner, Mayr, Hochreiter - ["Self-Normalizing Neural Networks"](https://arxiv.org/abs/1706.02515)
@@ -1320,8 +1247,8 @@ interesting papers:
 >	"Weights are initialized in such a way that for any unit in a layer with input weights wi Σ wi = 0 and Σ wi^2 = 1."
 >	"selu(x) = λx for x>0 and selu(x) = λ(αe^x − α) for x≤0, where α≈1.6733 and λ≈1.0507"
 
-  - <https://youtube.com/watch?v=h6eQrkkU9SA> (Hochreiter)
-  - <http://github.com/bioinf-jku/SNNs>
+  - `video` <https://youtube.com/watch?v=h6eQrkkU9SA> (Hochreiter)
+  - `code` <http://github.com/bioinf-jku/SNNs>
 
 
 
@@ -1330,23 +1257,23 @@ interesting papers:
 
 #### Hinton - "Can the brain do back-propagation?"
 >	"problems:  
-> - cortical neurons do not communicate real-valued activities - they send spikes  
-> - how do neurons know dy/dx (the gradient of their non-linear function) if this function wanders?  
-> - the neurons need to send two different types of signal: forward pass (signal = activity = y) and backward pass (signal = dE/dx)  
-> - neurons do not have point-wise reciprocal connections with the same weight in both directions"  
+>	- cortical neurons do not communicate real-valued activities - they send spikes  
+>	- how do neurons know dy/dx (the gradient of their non-linear function) if this function wanders?  
+>	- the neurons need to send two different types of signal: forward pass (signal = activity = y) and backward pass (signal = dE/dx)  
+>	- neurons do not have point-wise reciprocal connections with the same weight in both directions"  
 
 >	"solutions:  
-> - the fact that neurons send spikes rather than real numbers is not a problem: spikes are a great regularizer (similar to dropout)  
-> - error derivatives can be represented as temporal derivatives: this allows a neuron to represent both its activity and its error derivative in the same axon  
-> - spike-time-dependent plasticity is the signature of backpropagation learning  
-> - the problem that each bottom-up connection needs to have a corresponding top-down connection in a non-problem: random top-down weights work just fine"  
+>	- the fact that neurons send spikes rather than real numbers is not a problem: spikes are a great regularizer (similar to dropout)  
+>	- error derivatives can be represented as temporal derivatives: this allows a neuron to represent both its activity and its error derivative in the same axon  
+>	- spike-time-dependent plasticity is the signature of backpropagation learning  
+>	- the problem that each bottom-up connection needs to have a corresponding top-down connection in a non-problem: random top-down weights work just fine"  
 
 ----
 >	"Hinton starts with a discussion on how the brain probably implements something equivalent to backpropagation, despite several huge objections from neuroscience. He reviews how unsupervised learning techniques can help augment/expand the training signal. Next he discusses the brain's immense size (10^14 parameters) relative to supervision bits/training data indicates the brain is operating with a high model/data complexity ratio. He discusses how this is actually ideal in the bayesian sense - more data is always good, and a larger model is always good - provided your model is properly regularized. The best (bayesian) regularization amounts to ensembling over the entire model space. Dropout is an effective trick to approximate that, and dropout is just a particular type of multiplicative noise. He then shows how neural Poisson spiking can implement multiplicative noise - and thus dropout style ensembling. Rest of the talk focuses on how spiking nets can implement backpropagation equivalent credit assignment (error derivatives as temporal derivatives). Autoencoders that learn asymmetric but matched weights, and the 'miracle' in 2014 when Lillicrap et al showed that backpropagation can even work (almost as well) using random, fixed, untrained asymmetric back connections. Conclusion: the brain really is a deep neural network, spikes are just a form of dropout regularization, error derivatives can be represented as temporal derivatives (backpropagation with spike timing dependent plasticity), connections symmetry doesn't matter."
 
-  - <http://youtube.com/watch?v=VIRCybGgHts> (Hinton)
-  - <http://youtube.com/watch?v=cBLk5baHbZ8> (Hinton)
-  - <http://sms.cam.ac.uk/media/2017973> (38:00) (Hinton)
+  - `video` <http://youtube.com/watch?v=VIRCybGgHts> (Hinton)
+  - `video` <http://youtube.com/watch?v=cBLk5baHbZ8> (Hinton)
+  - `video` <http://sms.cam.ac.uk/media/2017973> (38:00) (Hinton)
 
 
 #### Bengio, Lee, Bornschein, Lin - ["Towards Biologically Plausible Deep Learning"](http://arxiv.org/abs/1502.04156)
@@ -1369,21 +1296,21 @@ interesting papers:
 >	"We explore the following crucial question: how could brains potentially perform the kind of powerful credit assignment that allows hidden layers of a very deep network to be trained and that has been so successful with deep learning recently? Global reinforcement learning signals have too much variance (scaling with the number of neurons or synapses) to be credible (by themselves) from a machine learning point of view. Concerns have been raised about how something like back-propagation could be implemented in brains. We present several intriguing results all aimed at answering this question and possibly providing pieces of this puzzle. We start with an update rule that yields updates similar to STDP but that is anchored in quantities such as pre-synaptic and post-synaptic firing rates and temporal rates of change. We then show that if neurons are connected symmetrically and thus define an energy function, (a) their behaviour corresponds to inference, i.e., going down the energy, and (b) after a prediction is made on a sensor and an actual value is observed, the early phases of inference in this network actually propagate prediction error gradients, and (c) using the above STDP-inspired rule yields a gradient descent step on prediction error for feedforward weights. This is based on a new mathematical result which provides a more general framework for machine learning to train dynamical systems at equilibrium. Finally, we discuss some of the limitations of the current model (such as the forced symmetry of synaptic weights and the question of learning the full joint distribution and not just a point prediction, and how to train dynamical systems which are generally not near their equilibrium points) as well as ideas around them."
 
 ----
->	"Well, my perspective is that we know that there are certain ways in which backpropagation is limited to such an extent that it can't be close to what the brain does, so it's interesting to explore biological inspirations for how we can get around these limitations. Here are the major limitations, in my view:
-> - Backpropagation doesn't really work in an online setting, because you need to traverse the whole graph of nodes every time you make an update. Of course, you can truncate the update to recently computed nodes (truncated BPTT) but this limits the length of the dependencies that can be learned.
-> - Backpropagation requires all nodes to be stored in memory.
-> - I think this is a less important limitation, but many neural architectures require parameter sharing, which isn't necessarily achievable in the brain."
+>	"My perspective is that we know that there are certain ways in which backpropagation is limited to such an extent that it can't be close to what the brain does, so it's interesting to explore biological inspirations for how we can get around these limitations. Here are the major limitations, in my view:  
+>	- Backpropagation doesn't really work in an online setting, because you need to traverse the whole graph of nodes every time you make an update. Of course, you can truncate the update to recently computed nodes (truncated BPTT) but this limits the length of the dependencies that can be learned.  
+>	- Backpropagation requires all nodes to be stored in memory.  
+>	- I think this is a less important limitation, but many neural architectures require parameter sharing, which isn't necessarily achievable in the brain."  
 
-  - <https://archive.org/details/Redwood_Center_2016_09_27_Yoshua_Bengio> (Bengio)
-  - <http://youtube.com/watch?v=lKVIXI8Djv4> (Bengio)
-  - <http://youtu.be/exhdfIPzj24?t=59m13s> (Bengio)
-  - <http://iro.umontreal.ca/~bengioy/talks/Brains+Bits-NIPS2016Workshop.pptx.pdf>
+  - `video` <https://archive.org/details/Redwood_Center_2016_09_27_Yoshua_Bengio> (Bengio)
+  - `video` <http://youtube.com/watch?v=lKVIXI8Djv4> (Bengio)
+  - `video` <http://youtu.be/exhdfIPzj24?t=59m13s> (Bengio)
+  - `slides` <http://iro.umontreal.ca/~bengioy/talks/Brains+Bits-NIPS2016Workshop.pptx.pdf>
 
 
 #### Lillicrap, Cownden, Tweed, Akerman - ["Random Feedback Weights Support Learning in Deep Neural Networks"](https://arxiv.org/abs/1411.0247)
 >	"The brain processes information through many layers of neurons. This deep architecture is representationally powerful, but it complicates learning by making it hard to identify the responsible neurons when a mistake is made. In machine learning, the backpropagation algorithm assigns blame to a neuron by computing exactly how it contributed to an error. To do this, it multiplies error signals by matrices consisting of all the synaptic weights on the neuron’s axon and farther downstream. This operation requires a precisely choreographed transport of synaptic weight information, which is thought to be impossible in the brain. Here we present a surprisingly simple algorithm for deep learning, which assigns blame by multiplying error signals by random synaptic weights. We show that a network can learn to extract useful information from signals sent through these random feedback connections. In essence, the network learns to learn. We demonstrate that this new mechanism performs as quickly and accurately as backpropagation on a variety of problems and describe the principles which underlie its function. Our demonstration provides a plausible basis for how a neuron can be adapted using error signals generated at distal locations in the brain, and thus dispels long-held assumptions about the algorithmic constraints on learning in neural circuits."
 
-  - <http://www.nature.com/articles/ncomms13276.epdf>
+  - `paper` <http://www.nature.com/articles/ncomms13276.epdf>
 
 
 #### Nøkland - ["Direct Feedback Alignment Provides Learning in Deep Neural Networks"](https://arxiv.org/abs/1609.01596)
@@ -1401,12 +1328,12 @@ interesting papers:
 
 >	"Hinton seems to believe that all information must somehow still be somewhat visible at the highest level of a hierarchy. With stuff like maxout units, yes, information is lost at higher layers. But the information isn't gone! It's still stored in the activations of the lower layers."
 
-  - <https://youtube.com/watch?v=Mqt8fs6ZbHk> (Hinton)
-  - <http://techtv.mit.edu/collections/bcs/videos/30698-what-s-wrong-with-convolutional-nets> (Hinton) + <https://github.com/WalnutiQ/walnut/issues/157> (transcription)
-  - <https://github.com/mrkulk/Unsupervised-Capsule-Network>
-  - "Dynamic Routing between Capsules" by Sabour, Frosst, Hinton - <https://research.google.com/pubs/pub46351.html>
-  - "Transforming Auto-encoders" by Hinton, Krizhevsky, Wang - <http://www.cs.toronto.edu/~fritz/absps/transauto6.pdf>
-  - "Optimizing Neural Networks that Generate Images" by Tieleman - <http://www.cs.toronto.edu/~tijmen/tijmen_thesis.pdf>
+  - `video` <https://youtube.com/watch?v=Mqt8fs6ZbHk> (Hinton)
+  - `video` <http://techtv.mit.edu/collections/bcs/videos/30698-what-s-wrong-with-convolutional-nets> (Hinton) ([transcription](https://github.com/WalnutiQ/walnut/issues/157))
+  - `code` <https://github.com/mrkulk/Unsupervised-Capsule-Network>
+  - `paper` ["Transforming Auto-encoders"](http://www.cs.toronto.edu/~fritz/absps/transauto6.pdf) by Hinton, Krizhevsky, Wang
+  - `paper` ["Optimizing Neural Networks that Generate Images"](http://www.cs.toronto.edu/~tijmen/tijmen_thesis.pdf) by Tieleman
+  - `paper` ["Dynamic Routing between Capsules"](https://research.google.com/pubs/pub46351.html) by Sabour, Frosst, Hinton
 
 
 
@@ -1423,12 +1350,11 @@ interesting papers:
 ----
 >	"Highway Networks have a gated connection in the depth dimension analogous to the gated connection LSTMs have in the time dimension. There are also Grid LSTMs, which have these gated connections in both dimensions."
 
-  - <http://people.idsia.ch/~rupesh/very_deep_learning/>
-  - <http://research.microsoft.com/apps/video/default.aspx?id=259633> (9:00) (Srivastava)
-  - <https://theneuralperspective.com/2016/12/13/highway-networks/>
-  - <https://medium.com/jim-fleming/highway-networks-with-tensorflow-1e6dfa667daa>
-  - <https://github.com/LeavesBreathe/tensorflow_with_latest_papers/blob/master/highway_network_modern.py>
-  - <https://github.com/Lasagne/Lasagne/blob/highway_example/examples/Highway%20Networks.ipynb>
+  - `post` <http://people.idsia.ch/~rupesh/very_deep_learning/>
+  - `video` <http://research.microsoft.com/apps/video/default.aspx?id=259633> (9:00) (Srivastava)
+  - `post` <https://medium.com/jim-fleming/highway-networks-with-tensorflow-1e6dfa667daa>
+  - `code` <https://theneuralperspective.com/2016/12/13/highway-networks/>
+  - `code` <https://github.com/LeavesBreathe/tensorflow_with_latest_papers/blob/master/highway_network_modern.py>
 
 
 #### He, Zhang, Ren, Sun - ["Deep Residual Learning for Image Recognition"](http://arxiv.org/abs/1512.03385)
@@ -1437,34 +1363,18 @@ interesting papers:
 ----
 >	"One solution for vanishing gradients is residual networks, which has been applied most famously to CNNs such that training neural networks hundreds of layers deep remains feasible. The idea is relatively simple. By default, we like the idea of a layer computing an identity function. This makes sense. If you do well with one layer, you don't expect a two or three to do worse. At worst, the second and third layer should just learn to "copy" the output of the first layer - no modifications. Hence, they just need to learn an identity function. Unfortunately, learning the identity function seems non-trivial for most networks. Even worse, later layers confuse training of earlier layers as the supervision signal - the direction it's meant to go - keeps shifting. As such, the first layer may fail to train well at all if there are more layers below it. To solve this, we bias the architecture of each of these layers towards performing the identity function. We can do this by only allowing the later layers to add deltas (updates) to the existing vector. Now, if the next layer is lazy and outputs nothing but zeroes, that's fine, as you'll still have the original vector."
 
->	"In this paper, the residual of the previous layer is learned as the target of the next layer in the entire network. It sounds similar to gradient boosting, in that each successive learner corrects the mistakes made by the former learner. In an otherwise non-residual network, the latter learners will just identity mappings. This means that adding more and more layers will only add more and more identity mappings, which by themselves do not improve the reconstruction error any better... if I am understanding the paper correctly Pedantic note: this is different from gradient boosting in that layers are not trained "greedily"/successively. They're trained with standard back-propagation, modifying all layers at once at each training step."
-
->	"Highway Networks have a gated connection in the depth dimension analogous to the gated connection LSTMs have in the time dimension. But people are comparing deep residual networks to highway networks, saying it's like highway networks without the gate, with the path always open."
-
->	"Also, there is a minor yet important difference between highway Networks and ResNets. Highway type gating means it is a smooth but exclusive OR gate. ResNets are like AND gates."
-
->	"Unlike for the Highway nets, the residual nets use skip connections with the identity mapping resulting in no extra parameters and better results. Even with a 1102 layer net, they manage to get the error on the training set to zero. For shallower nets it increases the convergence rate. Residual learning seems to be a very broadly applicable technique for which there is no point in not using for anything except very shallow nets."
-
 >	"In a conventional MLP or convnet, only consecutive layers are compatible because of permutation symmetries: even if a layer doesn't do much useful computation, it still randomly permutes all its inputs, so if you take it out the next layer will get inputs shuffled in the wrong order. In a ResNet (or other passthrough network like a Highway Net or a feed-forward LSTM with untied weights), instead, all the hidden layers must use compatible representations."
 
->	"0. Resnet -> 1. Deeper=Better -> 2. IdentityMappings -> 3. ResnetInResnet -> 4. StochasticDepth -> 5.ExpUnit -> DNN=RNN"
-
 ----
-  Schmidhuber:
->	"Highway Networks: feedforward LSTM with forget gates (e.g., Gers et al, 2000); train NNs with hundreds of layers (Srivastava et al, 2015). Very similar: feedforward LSTM without gates, used by Microsoft to win ImageNet (150 layers): y = g(f(x)+x)."
+>	"Highway Networks have a gated connection in the depth dimension analogous to the gated connection LSTMs have in the time dimension. But people are comparing deep residual networks to highway networks, saying it's like highway networks without the gate, with the path always open."
 
->	"Residual networks can be viewed as a special case of Highway networks. The output of each layer of a Highway network is defined as yi+1 ≡ fi+1(yi)·ti+1(yi) + yi·(1 − ti+1(yi)). Highway networks are equivalent to Residual networks when ti(·) = 0.5, in which case data flows equally through both paths. Given an omnipotent solver, highway networks could learn whether each residual module should affect the data. This introduces more parameters and more complexity."
+>	"There is a minor yet important difference between Highway Networks and ResNets. Highway type gating means it is a smooth but exclusive OR gate. ResNets are like AND gates."
 
-  - <http://techtalks.tv/talks/deep-residual-networks-deep-learning-gets-way-deeper/62358/> (He)
-  - <http://youtube.com/watch?v=1PGLj-uKT1w> (He)
-  - <https://blog.init.ai/residual-neural-networks-are-an-exciting-area-of-deep-learning-research-acf14f4912e9>
-  - <http://argmin.net/2016/04/18/bottoming-out/>
-  - <http://people.idsia.ch/~juergen/microsoft-wins-imagenet-through-feedforward-LSTM-without-gates.html> (Schmidhuber)
-  - <https://github.com/raghakot/keras-resnet>
-  - <https://github.com/KaimingHe/deep-residual-networks>
-  - <https://github.com/facebook/fb.resnet.torch>
-  - <https://github.com/elbamos/keras/tree/residual>
-  - <https://github.com/alrojo/lasagne_residual_network>
+  - `video` <http://techtalks.tv/talks/deep-residual-networks-deep-learning-gets-way-deeper/62358/> (He)
+  - `video` <http://youtube.com/watch?v=1PGLj-uKT1w> (He)
+  - `post` <http://people.idsia.ch/~juergen/microsoft-wins-imagenet-through-feedforward-LSTM-without-gates.html> (Schmidhuber)
+  - `post` <https://blog.init.ai/residual-neural-networks-are-an-exciting-area-of-deep-learning-research-acf14f4912e9>
+  - `code` <https://github.com/tensorflow/models/tree/master/research/resnet>
 
 
 #### Veit, Wilber, Belongie - ["Residual Networks are Exponential Ensembles of Relatively Shallow Networks"](http://arxiv.org/abs/1605.06431)
@@ -1478,25 +1388,26 @@ interesting papers:
 
 >	"It is not depth, but the ensemble that makes residual networks strong. In the most recent iteration of residual networks, He et al. claim “We obtain these results via a simple but essential concept - going deeper. These results demonstrate the potential of pushing the limits of depth.” We now know that this is not quite right. Residual networks push the limits of network multiplicity, not network depth. Our proposed unraveled view and the lesion study show that residual networks are an implicit ensemble of exponentially many networks. Further, the paths through the network that contribute gradient are shorter than expected, because deep paths do not contribute any gradient during training due to vanishing gradients. If most of the paths that contribute gradient are very short compared to the overall depth of the network, increased depth alone can’t be the key characteristic of residual networks. We now believe that multiplicity, the network’s expressability in the terms of the number of paths, plays a key role."
 
-  - <https://youtube.com/watch?v=jFJF5hXuo0s>
-  - <https://youtu.be/Jh3D8Gi4N0I?t=13m13s> (Novikov) (in russian)
+  - `video` <https://youtube.com/watch?v=jFJF5hXuo0s>
+  - `video` <https://youtu.be/Jh3D8Gi4N0I?t=13m13s> (Novikov) (in russian)
 
 
 #### Jaderberg, Simonyan, Zisserman, Kavukcuoglu - ["Spatial Transformer Networks"](https://arxiv.org/abs/1506.02025)
 >	"Convolutional Neural Networks define an exceptionally powerful class of models, but are still limited by the lack of ability to be spatially invariant to the input data in a computationally and parameter efficient manner. In this work we introduce a new learnable module, the Spatial Transformer, which explicitly allows the spatial manipulation of data within the network. This differentiable module can be inserted into existing convolutional architectures, giving neural networks the ability to actively spatially transform feature maps, conditional on the feature map itself, without any extra training supervision or modification to the optimisation process. We show that the use of spatial transformers results in models which learn invariance to translation, scale, rotation and more generic warping, resulting in state-of-the-art performance on several benchmarks, and for a number of classes of transformations."
 
-  - <https://youtu.be/T5k0GnBmZVI?t=1m9s> (Jaderberg)
-  - <https://youtu.be/_XRBlhzb31U?t=1h9m29s> (Figurnov) (in russian)
-  - <https://github.com/tensorflow/models/tree/master/transformer>
+  - `video` <https://youtu.be/T5k0GnBmZVI?t=1m9s> (Jaderberg)
+  - `video` <https://youtu.be/_XRBlhzb31U?t=1h9m29s> (Figurnov) (in russian)
+  - `code` <https://github.com/tensorflow/models/tree/master/research/transformer>
 
 
 #### Vaswani et al. - ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762)
 >	"The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.0 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data."
-  - <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) (in russian)
-  - <https://research.googleblog.com/2017/08/transformer-novel-neural-network.html>
-  - <https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/> (McAllester)
-  - <https://medium.com/@sharaf/a-paper-a-day-24-attention-is-all-you-need-26eb2da90a91>
-  - <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/transformer.py>
+
+  - `post` <https://research.googleblog.com/2017/08/transformer-novel-neural-network.html>
+  - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) (in russian)
+  - `post` <https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/> (McAllester)
+  - `notes` <https://medium.com/@sharaf/a-paper-a-day-24-attention-is-all-you-need-26eb2da90a91>
+  - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/transformer.py>
 
 
 #### Sutskever, Vinyals, Le - ["Sequence to Sequence Learning with Neural Networks"](http://arxiv.org/abs/1409.3215)
@@ -1505,43 +1416,16 @@ interesting papers:
   Geoffrey Hinton:
 >	"You feed the sequence of words in an English sentence to the English encoder LSTM. The final hidden state of the encoder is the neural network's representation of the "thought" that the sentence expresses. You then make that thought be the initial state of the decoder LSTM for French. The decoder then outputs a probability distribution over French words that might start the sentence. If you pick from this distribution and make the word you picked be the next input to the decoder, it will then produce a probability distribution for the second word. You keep on picking words and feeding them back in until you pick a full stop. The process I just described defines a probability distribution across all French strings of words that end in a full stop. The log probability of a French string is just the sum of the log probabilities of the individual picks. To raise the log probability of a particular translation you just have to backpropagate the derivatives of the log probabilities of the individual picks through the combination of encoder and decoder. The amazing thing is that when an encoder and decoder net are trained on a fairly big set of translated pairs, the quality of the translations beats the former state-of-the-art for systems trained with the same amount of data. With more data and more research I'm pretty confident that the encoder-decoder pairs will take over in the next few years. There will be one encoder for each language and one decoder for each language and they will be trained so that all pairings work. One nice aspect of this approach is that it should learn to represent thoughts in a language-independent way and it will be able to translate between pairs of foreign languages without having to go via English. Another nice aspect is that it can take advantage of multiple translations. If a Dutch sentence is translated into Turkish and Polish and 23 other languages, we can backpropagate through all 25 decoders to get gradients for the Dutch encoder. This is like 25-way stereo on the thought. If 25 encoders and one decoder would fit on a chip, maybe it could go in your ear."
 
-  - <http://research.microsoft.com/apps/video/?id=239083> (Sutskever)
-  - <http://youtube.com/watch?v=UdSK7nnJKHU> (Sutskever)
-  - <http://youtube.com/watch?v=9U0drwafE78> (Vinyals)
-  - <http://youtube.com/watch?v=i2gzr1kXTxM> (Vinyals)
-  - <http://www.shortscience.org/paper?bibtexKey=conf/nips/SutskeverVL14>
-  - <https://github.com/farizrahman4u/seq2seq>
-  - <https://github.com/an-kumar/seq2seq>
+  - `video` <http://research.microsoft.com/apps/video/?id=239083> (Sutskever)
+  - `video` <http://youtube.com/watch?v=UdSK7nnJKHU> (Sutskever)
+  - `video` <http://youtube.com/watch?v=9U0drwafE78> (Vinyals)
+  - `video` <http://youtube.com/watch?v=i2gzr1kXTxM> (Vinyals)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/nips/SutskeverVL14>
+  - `code` <https://github.com/farizrahman4u/seq2seq>
 
 
 #### Norouzi, Bengio, Chen, Jaitly, Schuster, Wu, Schuurmans - ["Reward Augmented Maximum Likelihood for Neural Structured Prediction"](https://arxiv.org/abs/1609.00150)
->	"A key problem in structured output prediction is direct optimization of the task reward function that matters for test evaluation. This paper presents a simple and computationally efficient approach to incorporate task reward into a maximum likelihood framework. We establish a connection between the log-likelihood and regularized expected reward objectives, showing that at a zero temperature, they are approximately equivalent in the vicinity of the optimal solution. We show that optimal regularized expected reward is achieved when the conditional distribution of the outputs given the inputs is proportional to their exponentiated (temperature adjusted) rewards. Based on this observation, we optimize conditional log-probability of edited outputs that are sampled proportionally to their scaled exponentiated reward. We apply this framework to optimize edit distance in the output label space. Experiments on speech recognition and machine translation for neural sequence to sequence models show notable improvements over a maximum likelihood baseline by using edit distance augmented maximum likelihood."
-
->	"Neural sequence models use a maximum likelihood framework to maximize the conditional probability of the ground-truth outputs given corresponding inputs. These models do not explicitly consider the task reward during training, hoping that conditional log-likelihood would serve as a good surrogate for the task reward. Such methods make no distinction between alternative incorrect outputs: log-probability is only measured on the ground-truth input-output pairs, and all alternative outputs are equally penalized, whether near or far from the ground-truth target. We believe that one can improve upon maximum likelihood sequence models, if the difference in the rewards of alternative outputs is taken into account. A key property of ML training for locally normalized RNN models is that the objective function factorizes into individual loss terms, which could be efficiently optimized using stochastic gradient descend. In particular, ML training does not require any form of inference or sampling from the model during training, which leads to computationally efficient and easy to implementations."
-
->	"Alternatively, one can use reinforcement learning algorithms, such as policy gradient, to optimize expected task reward during training. Even though expected task reward seems like a natural objective, direct policy optimization faces significant challenges: unlike ML, the gradient for a mini-batch of training examples is extremely noisy and has a high variance; gradients need to be estimated via sampling from the model, which is a non-stationary distribution; the reward is often sparse in a high-dimensional output space, which makes it difficult to find any high value predictions, preventing learning from getting off the ground; and, finally, maximizing reward does not explicitly consider the supervised labels, which seems inefficient. In fact, all previous attempts at direct policy optimization for structured output prediction has started by bootstrapping from a previously trained ML solution and they use several heuristics and tricks to make learning stable."
-
->	"This paper presents a new approach to task reward optimization that combines the computational efficiency and simplicity of ML with the conceptual advantages of expected reward maximization. Our algorithm called reward augmented maximum likelihood simply adds a sampling step on top of the typical likelihood objective. Instead of optimizing conditional log-likelihood on training input-output pairs, given each training input, we first sample an output proportional to its exponentiated scaled reward. Then, we optimize log-likelihood on such auxiliary output samples given corresponding inputs. When the reward for an output is defined as its similarity to a ground-truth output, then the output sampling distribution is peaked at the ground-truth output, and its concentration is controlled by a temperature hyper-parameter."
-
->	"Surprisingly, we find that the best performance is achieved with output sampling distributions that put a lot of the weight away from the ground-truth outputs. In fact, in our experiments, the training algorithm rarely sees the original unperturbed outputs. Our results give further evidence that models trained with imperfect outputs and their reward values can improve upon models that are only exposed to a single ground-truth output per input."
-
->	"There are several critical differences between gradient estimators for RML loss (reward augmented maximum likelihood) and RL loss (regularized expected reward) that make SGD optimization of RML loss more desirable. First, for RML loss, one has to sample from a stationary distribution, the so called exponentiated payoff distribution, whereas for RL loss one has to sample from the model distribution as it is evolving. Not only sampling from the model could slow down training, but also one needs to employ several tricks to get a better estimate of the gradient of RL loss. Further, the reward is often sparse in a high-dimensional output space, which makes finding any reasonable predictions challenging, when RL loss is used to refine a randomly initialized model. Thus, smart model initialization is needed. By contrast, we initialize the models randomly and refine them using RML loss."
-
-----
->	"This reads as another way to use a world model to mitigate the sample complexity of reinforcement learning (e.g., what if edit distance was just the initial model of the reward?)."
-
->	"Andrej Karpathy provided another perspective: We can also view the process of optimizing LRML as distilling the exponentiated payoff distribution q(y|y*;τ) into the model pθ(y|x). The objective reaches a maximum when these two distributions are equivalent. From this distillation view, the question is clear: how can we distill more complex objects into pθ? Concretely, this means we should develop more complex reward distributions q to use in this setup. We have seen two examples so far: the exponentiated payoff from the paper and the label smoothing example of the previous section. We could define q to be a complex pre-trained model or a mixture of experts, and use this training process to distill them into a single model pθ. We just need to make sure that we can efficiently sample from the q we select."
-
->	"Alec Radford mentioned that the data augmentation suggested in the paper sounds similar in spirit to virtual adversarial training, where the current model is encouraged to make robust predictions not only for the examples in the training set but also for inputs “nearby” those that exist in the training set. A high-level comparison:
-	  - Adversarial training can be seen as data-augmentation in the input space X. The RML objective does data-augmentation in the output space Y.
-	  - Adversarial training performs model-based data augmentation: the examples generated are those for which the current model is maximally vulnerable. RML training performs data-based augmentation: the examples generated have outputs that are “near” the ground-truth outputs. (Here 'near' is defined by the reward function.)"
-
-  - <https://youtu.be/fZNyHoXgV7M?t=24m59s> (Norouzi)
-  - <https://youtu.be/uohtFXD_39c?t=38m10s> (Samy Bengio)
-  - <http://youtube.com/watch?v=agA-rc71Uec> (Samy Bengio)
-  - <http://drive.google.com/file/d/0B3Rdm_P3VbRDVUQ4SVBRYW82dU0> (Gauthier)
-  - <http://www.shortscience.org/paper?bibtexKey=journals/corr/1609.00150>
-  - <http://www.shortscience.org/paper?bibtexKey=conf%2Fnips%2FNorouziBCJSWS16>
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#norouzi-bengio-chen-jaitly-schuster-wu-schuurmans---reward-augmented-maximum-likelihood-for-neural-structured-prediction>
 
 
 #### Vinyals, Fortunato, Jaitly - ["Pointer Networks"](http://arxiv.org/abs/1506.03134)
@@ -1558,13 +1442,12 @@ interesting papers:
 
 >	"In the pointer networks, the output space of the target sequence is constrained to be the observations in the input sequence (not the input space). And instead of having a fixed dimension softmax output layer, softmax outputs of varying dimension is dynamically computed for each input sequence in such a way to maximize the attention probability of the target input."
 
-  - <http://youtube.com/watch?v=yS7rHi_lUGU> (triangulation task demo)
-  - <http://youtu.be/9U0drwafE78?t=44m30s> (Vinyals)
-  - <http://fastml.com/introduction-to-pointer-networks/>
-  - <https://medium.com/@sharaf/a-paper-a-day-11-pointer-networks-59f7af1a611c>
-  - <https://github.com/ikostrikov/TensorFlow-Pointer-Networks>
-  - <https://github.com/devsisters/pointer-network-tensorflow>
-  - <https://github.com/vshallc/PtrNets>
+  - `video` <http://youtube.com/watch?v=yS7rHi_lUGU> (demo)
+  - `video` <http://youtu.be/9U0drwafE78?t=44m30s> (Vinyals)
+  - `post` <http://fastml.com/introduction-to-pointer-networks/>
+  - `notes` <https://medium.com/@sharaf/a-paper-a-day-11-pointer-networks-59f7af1a611c>
+  - `code` <https://github.com/ikostrikov/TensorFlow-Pointer-Networks>
+  - `code` <https://github.com/devsisters/pointer-network-tensorflow>
 
 
 #### Li, Zemel, Brockschmidt, Tarlow - ["Gated Graph Sequence Neural Networks"](http://arxiv.org/abs/1511.05493)
@@ -1582,27 +1465,8 @@ interesting papers:
 
 >	"We are particularly interested in continuing to develop end-to-end learnable systems that can learn about semantic properties of programs, that can learn more complicated graph algorithms, and in applying these ideas to problems that require reasoning over knowledge bases and databases. More generally, we consider these graph neural networks as representing a step towards a model that can combine structured representations with the powerful algorithms of deep learning, with the aim of taking advantage of known structure while learning and inferring how to reason with and extend these representations."
 
-  - <https://youtu.be/pJ5EEesntbA?t=48m01s> (Tarlow)
-  - <http://research.microsoft.com/apps/video/default.aspx?id=263975&r=1> (Li)
-
-
-#### Weston, Chopra, Bordes - ["Memory Networks"](http://arxiv.org/abs/1410.3916)
->	"We describe a new class of learning models called memory networks. Memory networks reason with inference components combined with a long-term memory component; they learn how to use these jointly. The long-term memory can be read and written to, with the goal of using it for prediction. We investigate these models in the context of question answering where the long-term memory effectively acts as a (dynamic) knowledge base, and the output is a textual response. We evaluate them on a large-scale QA task, and a smaller, but more complex, toy task generated from a simulated world. In the latter, we show the reasoning power of such models by chaining multiple supporting sentences to answer questions that require understanding the intension of verbs."
-
->	"Most machine learning models lack an easy way to read and write to part of a (potentially very large) long-term memory component, and to combine this seamlessly with inference. Hence, they do not take advantage of one of the great assets of a modern day computer. For example, consider the task of being told a set of facts or a story, and then having to answer questions on that subject. In principle this could be achieved by a language modeler such as a recurrent neural network as these models are trained to predict the next (set of) word(s) to output after having read a stream of words. However, their memory (encoded by hidden states and weights) is typically too small, and is not compartmentalized enough to accurately remember facts from the past (knowledge is compressed into dense vectors). RNNs are known to have difficulty in performing memorization, for example the simple copying task of outputting the same input sequence they have just read. The situation is similar for other tasks, e.g., in the vision and audio domains a long term memory is required to watch a movie and answer questions about it. In this work, we introduce a class of models called memory networks that attempt to rectify this problem. The central idea is to combine the successful learning strategies developed in the machine learning literature for inference with a memory component that can be read and written to. The model is then trained to learn how to operate effectively with the memory component."
-
-  Yann LeCun:
->	"The MemNN and NTM models are both neural nets augmented with a memory (of some kind). You could think of LSTM recurrent nets as belonging to the same category. Regular recurrent nets are notoriously bad at remembering stuff in their state, which is why the best way to get them to remember stuff is to augment them with a separate memory module. MemNN stores hidden states in a sort of FIFO, NTM uses a "tape", and a more recent proposal by Armand Joulin and Tomas Mikolov uses a stack. The human brain is also notoriously bad at remembering things in its state. That's why we have a separate short-term memory module in the form of the hippocampus. Without a hippocampus, the cortex can't remember facts for more than about 20 seconds."
-
-  - <https://facebook.com/video.php?v=10153098860532200>  (demo)
-  - <http://youtube.com/watch?v=Xumy3Yjq4zk> (Weston)
-  - <http://techtalks.tv/talks/memory-networks-for-language-understanding/62356/> (Weston)
-  - <http://youtu.be/jRkm6PXRVF8?t=16m29s> (Weston)
-  - <http://youtu.be/jRkm6PXRVF8?t=17m36s> (Weston)
-  - <http://blog.acolyer.org/2016/03/10/memory-networks/>
-  - <https://docs.google.com/file/d/0B_hicYJxvbiOT3QyTm4wdHlaeWs>
-  - <https://reddit.com/r/MachineLearning/comments/2xcyrl/i_am_j%C3%BCrgen_schmidhuber_ama/cp4ecce>
-  - <https://github.com/fchollet/keras/blob/master/examples/babi_memnn.py>
+  - `video` <https://youtu.be/pJ5EEesntbA?t=48m01s> (Tarlow)
+  - `video` <http://research.microsoft.com/apps/video/default.aspx?id=263975&r=1> (Li)
 
 
 #### Sukhbaatar, Szlam, Weston, Fergus - ["End-To-End Memory Networks"](http://arxiv.org/abs/1503.08895)
@@ -1610,15 +1474,15 @@ interesting papers:
 
 >	"In this work we showed that a neural network with an explicit memory and a recurrent attention mechanism for reading the memory can be sucessfully trained via backpropagation on diverse tasks from question answering to language modeling. Compared to the Memory Network implementation there is no supervision of supporting facts and so our model can be used in more realistic QA settings. Our model approaches the same performance of that model, and is significantly better than other baselines with the same level of supervision. On language modeling tasks, it slightly outperforms tuned RNNs and LSTMs of comparable complexity. On both tasks we can see that increasing the number of memory hops improves performance. However, there is still much to do. Our model is still unable to exactly match the performance of the memory networks trained with strong supervision, and both fail on several of the QA tasks. Furthermore, smooth lookups may not scale well to the case where a larger memory is required. For these settings, we plan to explore multiscale notions of attention or hashing."
 
-  - <http://research.microsoft.com/apps/video/default.aspx?id=259920> (Sukhbaatar)
-  - <http://youtube.com/watch?v=8keqd1ewsno> (Bordes)
-  - <http://www.shortscience.org/paper?bibtexKey=conf/nips/SukhbaatarSWF15>
-  - <https://github.com/facebook/MemNN>
-  - <https://github.com/vinhkhuc/MemN2N-babi-python>
-  - <https://github.com/fchollet/keras/blob/master/examples/babi_memnn.py>
-  - <https://github.com/domluna/memn2n>
-  - <https://github.com/carpedm20/MemN2N-tensorflow>
-  - <https://github.com/npow/MemNN>
+  - `video` <http://research.microsoft.com/apps/video/default.aspx?id=259920> (Sukhbaatar)
+  - `video` <http://youtube.com/watch?v=8keqd1ewsno> (Bordes)
+  - `video` <http://youtube.com/watch?v=Xumy3Yjq4zk> (Weston)
+  - `video` <http://techtalks.tv/talks/memory-networks-for-language-understanding/62356/> (Weston)
+  - `video` <http://youtu.be/jRkm6PXRVF8?t=17m51s> (Weston)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/nips/SukhbaatarSWF15>
+  - `code` <https://github.com/fchollet/keras/blob/master/examples/babi_memnn.py>
+  - `code` <https://github.com/carpedm20/MemN2N-tensorflow>
+  - `code` <https://github.com/domluna/memn2n>
 
 
 #### Peng, Lu, Li, Wong - ["Towards Neural Network-based Reasoning"](http://arxiv.org/abs/1508.05508)
@@ -1628,40 +1492,7 @@ interesting papers:
 
 >	"similar to Memory Networks but with non-linear function to compute interaction between control state and memory slot"
 
-  - <https://www.evernote.com/shard/s189/sh/54f4534f-3813-44de-8feb-af7180eceb8e/953160fcc0f551cb9855d46cf686375b>
-
-
-#### Joulin, Mikolov - ["Inferring Algorithmic Patterns with Stack-Augmented Recurrent Nets"](http://arxiv.org/abs/1503.01007)
->	"While machine learning is currently very successful in several application domains, we are still very far from achieving a real artificial intelligence. In this paper, we study basic sequence prediction problems that are beyond the scope of what is learnable with popular methods such as recurrent networks. We show that simple algorithms can be learned from sequential data with a recurrent network associated with trainable stacks. We focus our study on algorithmically generated sequences such as a^nb^n, that can only be learned by models which have the capacity to count. Once trained, we show that our method is able generalize to sequences up to an arbitrary size. We discuss the limitations of standard machine learning approaches to learn algorithimic regularities of this type. We propose directions to overcome these shortcomings, such as using search based optimization."
-
->	"We study basic patterns which are difficult to represent and learn for deep models. In particular, we study simple sequences of symbols generated from simple algorithms. Interestingly, we find that such patterns are difficult to learn even for some advanced deep learning models, such as recurrent networks. We attempt to increase the learning capabilities of recurrent nets by allowing them to learn structured memory, similar to pushdown stack that is widely used to parse context free languages. An example of very simple problem of this type is a sequence a^nb^n, i.e., a sequence where the regularity is in the equal number of symbols a and b. A model that solves this task must be able to generalize for any reasonable n, i.e., after training on sequences up to some fixed length, our model should be able to recognize longer sequences generated from the same algorithm. While these patterns seem relatively basic, solving them could potentially lead to approaches able to learn small algorithms from sequential data. This can be useful for numerous applications in fields requiring some form of planning. We are aware that the model we propose in this paper is too simple to learn all possible algorithms, but it is interesting to see what problems can possibly be solved."
-
->	"Our definition of a stack in a recurrent net is through constraining part of the recurrent matrix, similar to (Mikolov et al., 2014) where it was shown that diagonal recurrent matrix can help the recurrent net to store longer memory. In case of a stack, we show that simple structural constrains can allow the network to operate as if it did perform the PUSH and POP stack operations."
-
->	"Training the above recurrent stack network with SGD seems to be an elegant solution. However, for the type of problems that we are interested in this paper, it seems that SGD may not be adapted: ultimately, we want to learn how to operate stack-based long term memory, and the PUSH and POP operations are in principle discrete. Thus, there is a significant risk that for non-trivial problems, SGD based training will always get stuck in local minima. An example of such unwanted behavior may be learning a bigram model first (understanding the frequency of symbol co-occurrence), which may not be an optimal solution. Every subsequent attempt to move outside of such solution may be prevented by the nature of SGD. To avoid getting stuck in local minima where the chance of finding better solution becomes zero, one can consider adding random noise to the training examples. A more principled approach would be to include a search based strategy. As a model trained with SGD can only follow one path during its optimization (it has only one set of weights), any non-linear choice made during optimization of the parameters may prevent finding a good local minimum. Using search with many models, we may expect that different models will choose to explore different parts of the search space, and on average should find much better solutions than pure SGD."
-
->	"At every step, it executes exactly one action. Instead of having just one model, we keep a pool of models. The mapping from the hidden layer to the output can easily be learned with gradient descent. However, this cannot be done for the action outputs - we do not have the targets, and the choice of actions has very non-linear behavior that often influences the state of the stacks far into the future. To obtain the target for the action outputs, we use a strategy inspired by reinforcement learning: we sample it using the probability distribution over actions computed by the current model. This stochastic choice quickly makes the models different, which is exactly what we aim for - diversity seems crucial for any efficient search strategy. We continue sampling the targets for several time steps (30 in our experiments; using significantly more steps would make the models less diverse, following the law of big numbers). After that, we train all models using just targets for the output predictions for another 2000 steps. Then, we run evaluation of all models on novel data, again using 2000 steps, to see which model performs the best. All models that have below average performance are replaced in the next training epoch by the best performing model. The last tricks are to keep one copy of the best model unchanged, and train one copy with just SGD and no target action sampling."
-
->	"On simulated world question answering task, like LSTM our model fails to capture long discrete patterns even in a relatively low noise setting. We think that there are two reasons for this result: first the number of combinations of entities and places in this database pushes the limit of our model representation power. Second, we think that our model struggles to store complex information required to solve these tasks. This suggests that more complex structures than stacks may be required for this type of tasks."
-
->	"In our paper, we show that certain simple algorithmic patterns can be efficiently learned using continuous optimization technique (stochastic gradient descent) and a continuous model representation (in our case a RNN). At the same time, we believe that using a continuous representation and an non-convex continuous optimization approach are not the right tools to properly learn algorithms. It seems more natural to attempt to solve these problems with a discrete approach, such as for example a search based approach. This motivated our approach where we combined the continuous and discrete optimization, which allowed us to solve certain problems that seemed to be too difficult for purely continuous optimization. It is possible that the future of learning of algorithmic patterns will involve such combination of discrete and continuous optimization."
-
->	"We have shown that simple stack-based recurrent net can solve certain basic problems such as a^nb^n and memorization, without any hints (such as where the sequence starts), while using just SGD. The solution generalizes to much larger n than what the model is trained on. This is quite positive result, considering the prior work on this difficult topic. Nonetheless, the SGD seems to be severely limited and when moving to more complex tasks, we had to combine it with search-based learning to solve more complex tasks of the form a^nb^(kn) which require to learn much more complex manipulation with the stack memory. While we were successful at solving some of these toy problems, our model fails on simple algorithmic patterns such as multiplication and it is clear that fully scalable solution to learning algorithmic patterns in sequential data is still an open problem. While scaling models to larger sizes and training them on more data is very important, we also believe that questioning the limitation of popular architectures and training algorithms is crucial to advance the field toward artificial intelligence."
-
->	"The good:  
-> - Turing-complete model of computation (with >=2 stacks)  
-> - Has long term memory  
-> - Learns some algorithmic patterns that breaks RNNs and LSTMs (such as sequence memorization and binary addition)"  
-
->	"The bad:  
-> - The long term memory is used only to store partial computation (i.e. learned skills are not stored there yet)  
-> - Does not seem to be a good model for incremental learning due to computational inefficiency of the model  
-> - Stacks do not seem to be a very general choice for the topology of the memory"  
-
-  - <http://research.microsoft.com/apps/video/default.aspx?id=259646> (15:00) (Joulin)
-  - <http://youtu.be/FUlTjKL-mVA?t=43m48s> + <https://youtu.be/gi4Zf59_IcU?t=54m43s> (Mikolov)
-  - <https://research.facebook.com/blog/1642778845966521/inferring-algorithmic-patterns-with-stack/>
-  - <https://github.com/facebook/Stack-RNN>
+  - `notes` <https://www.evernote.com/shard/s189/sh/54f4534f-3813-44de-8feb-af7180eceb8e/953160fcc0f551cb9855d46cf686375b>
 
 
 #### Grefenstette, Hermann, Suleyman, Blunsom - ["Learning to Transduce with Unbounded Memory"](http://arxiv.org/abs/1506.02516)
@@ -1683,10 +1514,10 @@ interesting papers:
 
 >	"Bounded memory is useful in many ways, not least because it enforces some resource-sensitivity in the controller, which in turn encourages the learning of usefully compressed representations. On the other hand, unbounded memory means you don't need to worry about memory size, which is one less data-dependent hyperparameter to worry about, and is useful for tasks where you cannot estimate the length of computation (dynamic environment, RL, etc)."
 
-  - <http://videolectures.net/deeplearning2015_blunsom_memory_reading/> (Blunsom)
-  - <http://egrefen.com/docs/NIPSStackPoster.pdf>
-  - <https://iamtrask.github.io/2016/02/25/deepminds-neural-stack-machine/>
-  - <https://jasdeep06.github.io/posts/Neural-Stacks/>
+  - `poster` <http://egrefen.com/docs/NIPSStackPoster.pdf>
+  - `video` <http://videolectures.net/deeplearning2015_blunsom_memory_reading/> (Blunsom)
+  - `post` <https://iamtrask.github.io/2016/02/25/deepminds-neural-stack-machine/>
+  - `code` <https://jasdeep06.github.io/posts/Neural-Stacks/>
 
 
 #### Zaremba, Sutskever - ["Learning to Execute"](http://arxiv.org/abs/1410.4615)
@@ -1694,11 +1525,9 @@ interesting papers:
 
 >	"Although current results are promising, they are very limited. We are able to deal with programs that can be evaluated by reading them once from left-to-right, but generic programs are far more complex. Our reasoning system has to be able to evaluate for an arbitrarily long time, if the task requires it. Moreover, it shouldn’t be limited by a fixed memory size. Instead, memory should be available as an interface."
 
-  - <http://www.shortscience.org/paper?bibtexKey=journals/corr/ZarembaS14>
-  - <http://cs.nyu.edu/~zaremba/docs/Learning%20to%20manipulate%20symbols.pdf> (Zaremba)
-  - <http://postnauka.ru/faq/35960>
-  - <https://github.com/wojciechz/learning_to_execute>
-  - <https://github.com/raindeer/seq2seq_experiments>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/ZarembaS14>
+  - `code` <https://github.com/wojciechz/learning_to_execute>
+  - `code` <https://github.com/raindeer/seq2seq_experiments>
 
 
 #### Graves, Wayne, Danihelka - ["Neural Turing Machines"](http://arxiv.org/abs/1410.5401)
@@ -1729,22 +1558,13 @@ interesting papers:
   Geoffrey Hinton:
 >	"Its very impressive that they can get an RNN to invent a sorting algorithm. Its the first time I've believed that deep learning would be able to do real reasoning in the not too distant future. There will be a lot of future work in making the NTM (or its descendants) learn much more complicated algorithms and it will probably have many applications."
 
-  - <http://research.microsoft.com/apps/video/default.aspx?id=260037> (Graves)
-  - <http://youtube.com/watch?v=otRoAQtc5Dk> (Polykovskiy)
-  - <http://postnauka.ru/faq/36436> (in russian)
-  - <http://blog.yhat.com/posts/neural-turing-machines.html>
-  - <http://rylanschaeffer.github.io/content/research/neural_turing_machine/main.html>
-  - <http://blog.acolyer.org/2016/03/09/neural-turing-machines/>
-  - <http://ikuz.eu/2014/11/19/neural-turing-machines-by-google-deepmind-article-overview/>
-  - <http://doctorteeth.github.io/2015/11/15/fancy-addressing/>
-  - <https://github.com/loudinthecloud/pytorch-ntm>
-  - <https://github.com/flomlo/ntm_keras/>
-  - <https://github.com/carpedm20/NTM-tensorflow>
-  - <https://github.com/fumin/ntm> + <http://awawfumin.blogspot.ru/2015/03/neural-turing-machines-implementation.html>
-  - <https://github.com/shawntan/neural-turing-machines>
-  - <https://github.com/gcgibson/NTM>
-  - <https://github.com/JanTkacik/NTM>
-  - <https://github.com/DoctorTeeth/diffmem>
+  - `video` <http://research.microsoft.com/apps/video/default.aspx?id=260037> (Graves)
+  - `video` <http://youtube.com/watch?v=otRoAQtc5Dk> (Polykovskiy)
+  - `notes` <http://rylanschaeffer.github.io/content/research/neural_turing_machine/main.html>
+  - `notes` <http://blog.acolyer.org/2016/03/09/neural-turing-machines/>
+  - `code` <https://github.com/loudinthecloud/pytorch-ntm>
+  - `code` <https://github.com/flomlo/ntm_keras/>
+  - `code` <https://github.com/carpedm20/NTM-tensorflow>
 
 
 #### Graves et al. - ["Hybrid Computing using a Neural Network with Dynamic External Memory"](http://www.nature.com.sci-hub.cc/nature/journal/vaop/ncurrent/full/nature20101.html)
@@ -1762,17 +1582,15 @@ interesting papers:
 
 >	(learns to find shortest path in graph)
 
-  - <https://deepmind.com/blog/differentiable-neural-computers/>
-  - <https://youtube.com/watch?v=steioHoiEms> (Graves)
-  - <https://facebook.com/iclr.cc/videos/1713144705381255/> (9:09) (Graves)
-  - <https://youtube.com/watch?v=PQrlOjj8gAc> (Wayne)
-  - <https://youtu.be/otRoAQtc5Dk?t=59m56s> (Polykovskiy)
-  - <https://youtube.com/watch?v=r5XKzjTFCZQ> (Raval)
-  - <https://github.com/deepmind/dnc>
-  - <https://github.com/yos1up/DNC>
-  - <https://github.com/Mostafa-Samir/DNC-tensorflow>
-  - <https://github.com/frownyface/dnc>
-  - <https://github.com/khaotik/dnc-theano>
+  - `post` <https://deepmind.com/blog/differentiable-neural-computers/>
+  - `video` <https://youtube.com/watch?v=steioHoiEms> (Graves)
+  - `video` <https://facebook.com/iclr.cc/videos/1713144705381255/> (9:09) (Graves)
+  - `video` <https://youtube.com/watch?v=PQrlOjj8gAc> (Wayne)
+  - `video` <https://youtu.be/otRoAQtc5Dk?t=59m56s> (Polykovskiy)
+  - `video` <https://youtube.com/watch?v=r5XKzjTFCZQ> (Raval)
+  - `code` <https://github.com/deepmind/dnc>
+  - `code` <https://github.com/Mostafa-Samir/DNC-tensorflow>
+  - `code` <https://github.com/frownyface/dnc>
 
 
 #### Zaremba, Sutskever - ["Reinforcement Learning Neural Turing Machines"](http://arxiv.org/abs/1505.00521)
@@ -1790,9 +1608,8 @@ interesting papers:
 
 >	"The expressive power of a machine learning model is closely related to the number of sequential computational steps it can learn. For example, Deep Neural Networks have been more successful than shallow networks because they can perform a greater number of sequential computational steps (each highly parallel). The Neural Turing Machine is a model that can compactly express an even greater number of sequential computational steps, so it is even more powerful than a DNN. Its memory addressing operations are designed to be differentiable; thus the NTM can be trained with backpropagation. While differentiable memory is relatively easy to implement and train, it necessitates accessing the entire memory content at each computational step. This makes it difficult to implement a fast NTM. In this work, we use the Reinforce algorithm to learn where to access the memory, while using backpropagation to learn what to write to the memory. We call this model the RL-NTM. Reinforce allows our model to access a constant number of memory cells at each computational step, so its implementation can be faster. The RL-NTM is the first model that can, in principle, learn programs of unbounded running time. We successfully trained the RL-NTM to solve a number of algorithmic tasks that are simpler than the ones solvable by the fully differentiable NTM. As the RL-NTM is a fairly intricate model, we needed a method for verifying the correctness of our implementation. To do so, we developed a simple technique for numerically checking arbitrary implementations of models that use Reinforce, which may be of independent interest."
 
-  - <https://youtu.be/ezE-13X0UoM?t=39m4s> (Zaremba)
-  - <http://cs.nyu.edu/~zaremba/docs/Stanford%20-%20Reinforcement%20Learning%20Neural%20Turing%20Machine.pdf> (Zaremba)
-  - <https://github.com/ilyasu123/rlntm>
+  - `video` <https://youtu.be/ezE-13X0UoM?t=39m4s> (Zaremba)
+  - `code` <https://github.com/ilyasu123/rlntm>
 
 
 #### Zaremba, Mikolov, Joulin, Fergus - ["Learning Simple Algorithms from Examples"](http://arxiv.org/abs/1511.07275)
@@ -1802,10 +1619,10 @@ interesting papers:
 
 >	(learns to add multi-digit numbers and to multiply single-digit numbers)
 
-  - <http://youtube.com/watch?v=GVe6kfJnRAw> (demo)
-  - <http://youtube.com/watch?v=ezE-13X0UoM> (Zaremba)
-  - <http://techtalks.tv/talks/learning-simple-algorithms-from-examples/62524/> (Zaremba)
-  - <https://github.com/wojzaremba/algorithm-learning>
+  - `video` <http://youtube.com/watch?v=GVe6kfJnRAw> (demo)
+  - `video` <http://youtube.com/watch?v=ezE-13X0UoM> (Zaremba)
+  - `video` <http://techtalks.tv/talks/learning-simple-algorithms-from-examples/62524/> (Zaremba)
+  - `code` <https://github.com/wojzaremba/algorithm-learning>
 
 
 #### Nachum, Norouzi, Schuurmans - ["Improving Policy Gradient by Exploring Under-appreciated Rewards"](https://arxiv.org/abs/1611.09321)
@@ -1828,7 +1645,7 @@ interesting papers:
 
 >	(learns to calculate parity of bit array)
 
-  - <https://github.com/coreylynch/grid-lstm>
+  - `code` <https://github.com/coreylynch/grid-lstm>
 
 
 #### Kaiser, Sutskever - ["Neural GPUs Learn Algorithms"](http://arxiv.org/abs/1511.08228)
@@ -1846,11 +1663,11 @@ interesting papers:
 
 >	(learns to add and multiply long binary numbers without errors)
 
-  - <https://youtube.com/watch?v=LzC8NkTZAF4> (demo)
-  - <https://youtube.com/watch?v=hVv4M0bTBJc> (Sutskever)
-  - <https://github.com/lukaszkaiser/NeuralGPU/>
-  - <https://github.com/tensorflow/models/tree/master/neural_gpu>
-  - <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/neural_gpu.py>
+  - `video` <https://youtube.com/watch?v=LzC8NkTZAF4> (demo)
+  - `video` <https://youtube.com/watch?v=hVv4M0bTBJc> (Sutskever)
+  - `code` <https://github.com/tensorflow/models/tree/master/research/neural_gpu>
+  - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/neural_gpu.py>
+  - `code` <https://github.com/lukaszkaiser/NeuralGPU/>
 
 
 #### Price, Zaremba, Sutskever - ["Extensions and Limitations of the Neural GPU"](http://www.cs.nyu.edu/~zaremba/neuralgpu.pdf)
@@ -1872,7 +1689,7 @@ interesting papers:
 
 >	"To better understand the main shortcoming of previous active memory models, let us look at the average log-perplexities of different attention models. A pure Neural GPU model yields 3.5, a Markovian one yields 2.5, and only a model with full dependence, trained with teacher forcing, achieves 1.3. The recurrent dependence in generating the output distribution turns out to be the key to achieving good performance. We find it illuminating that the issue of dependencies in the output distribution can be disentangled from the particularities of the model or model class. In earlier works, such dependence (and training with teacher forcing) was always used in LSTM and GRU models, but very rarely in other kinds models. We show that it can be beneficial to consider this issue separately from the model architecture. It allows us to create the Extended Neural GPU and this way of thinking might also prove fruitful for other classes of models. When the issue of recurrent output dependencies is addressed, as we do in the Extended Neural GPU, an active memory model can indeed match or exceed attention models on a large-scale real-world task. Does this mean we can always replace attention by active memory? The answer could be yes for the case of soft attention. Its cost is approximately the same as active memory, it performs much worse on some tasks like learning algorithms, and – with the introduction of the Extended Neural GPU – we do not know of a task where it performs clearly better. Still, an attention mask is a very natural concept, and it is probable that some tasks can benefit from a selector that focuses on single items by definition. This is especially obvious for hard attention: it can be used over large memories with potentially much less computational cost than an active memory, so it might be indispensable for devising long-term memory mechanisms. Luckily, active memory and attention are not exclusive, and we look forward to investigating models that combine these mechanisms."
 
-  - <http://www.shortscience.org/paper?bibtexKey=conf%2Fnips%2FKaiserB16>  
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=conf%2Fnips%2FKaiserB16>
 
 
 #### Neelakantan, Le, Sutskever - ["Neural Programmer: Inducing Latent Programs with Gradient Descent"](http://arxiv.org/abs/1511.04834)
@@ -1897,11 +1714,11 @@ interesting papers:
 
 >	"Authors propose a neural programmer by defining a set of symbolic operations (e.g., argmax, greater than); at each step, all possible execution results are fused by a softmax layer, which predicts the probability of each operator at the current step. The step-by-step fusion is accomplished by weighted sum and the model is trained with mean square error. Hence, such approaches work with numeric tables, but may not be suited for other operations like string matching; it also suffers from the problem of “exponential numbers of combinatorial states.”"
 
-  - <http://youtu.be/lc68_d_DnYs?t=24m44s> (Neelakantan)
-  - <http://youtu.be/KmOdBS4BXZ0?t=1h8m44s> (Le)
-  - <http://distill.pub/2016/augmented-rnns/>
-  - <https://github.com/tensorflow/models/tree/master/neural_programmer>
-  - ["Learning a Natural Language Interface with Neural Programmer"](http://arxiv.org/abs/1611.08945)
+  - `video` <http://youtu.be/lc68_d_DnYs?t=24m44s> (Neelakantan)
+  - `video` <http://youtu.be/KmOdBS4BXZ0?t=1h8m44s> (Le)
+  - `post` <http://distill.pub/2016/augmented-rnns/>
+  - `code` <https://github.com/tensorflow/models/tree/master/research/neural_programmer>
+  - `paper` ["Learning a Natural Language Interface with Neural Programmer"](http://arxiv.org/abs/1611.08945) by Neelakantan et al.
 
 
 #### Reed, de Freitas - ["Neural Programmer-Interpreters"](http://arxiv.org/abs/1511.06279)
@@ -1958,16 +1775,16 @@ interesting papers:
 >	"I strongly agree with building the foundations of representations and skills that could give rise to communication, language and writing. Much of my work is indeed in this area. This in fact was one of the driving forces behind NPI. One part of language is procedural understanding. If I say "sort the the following numbers: 2,4,3,6 in descending order", how do you understand the meaning of the sentence? There's a few ways. One natural way requires that you know what sort means. If you can't sort in any way, I don't think you can understand the sentence properly. As Feynman said: "What I cannot create, I do not understand". Moreover, another strong part of what is explored in NPI is the ability of harnessing the environment to do computation - this I believe is very tied to writing. I believe in externalism: My mind is not something inside my head. My mind is made of many memory devices that I know how to access and write to - it is like a search engine in the real world. My mind is also made of other people, who are now extending its ability to think."
 
   - <http://www-personal.umich.edu/~reedscot/iclr_project.html>
-  - <http://youtube.com/watch?v=B70tT4WMyJk> (overview)
-  - <http://youtube.com/watch?v=s7PuBqwI2YA> (demo)
-  - <http://youtu.be/SAcHyzMdbXc?t=5m14s> (de Freitas)
-  - <http://videolectures.net/kdd2016_de_freitas_recurrent_neural/#t=3120> (de Freitas)
-  - <http://videolectures.net/iclr2016_reed_neural_programmer/> (Reed)
-  - <https://pseudoprofound.wordpress.com/2016/06/07/neural-programmer-interpreters-programs-that-can-learn-programs/>
-  - <http://near.ai/articles/2017-05-31-NPI/>
-  - <https://reddit.com/r/MachineLearning/comments/3y4zai/ama_nando_de_freitas/cyc53gt>
-  - <https://reddit.com/r/MachineLearning/comments/3y4zai/ama_nando_de_freitas/cydu4az>
-  - <https://github.com/mokemokechicken/keras_npi>
+  - `video` <http://youtube.com/watch?v=B70tT4WMyJk> (overview)
+  - `video` <http://youtube.com/watch?v=s7PuBqwI2YA> (demo)
+  - `video` <http://youtu.be/SAcHyzMdbXc?t=5m14s> (de Freitas)
+  - `video` <http://videolectures.net/kdd2016_de_freitas_recurrent_neural/#t=3120> (de Freitas)
+  - `video` <http://videolectures.net/iclr2016_reed_neural_programmer/> (Reed)
+  - `post` <https://pseudoprofound.wordpress.com/2016/06/07/neural-programmer-interpreters-programs-that-can-learn-programs/>
+  - `post` <http://near.ai/articles/2017-05-31-NPI/>
+  - `post` <https://reddit.com/r/MachineLearning/comments/3y4zai/ama_nando_de_freitas/cyc53gt>
+  - `post` <https://reddit.com/r/MachineLearning/comments/3y4zai/ama_nando_de_freitas/cydu4az>
+  - `code` <https://github.com/mokemokechicken/keras_npi>
 
 
 #### Cortes, Gonzalvo, Kuznetsov, Mohri, Yang - ["AdaNet: Adaptive Structural Learning of Artificial Neural Networks"](http://arxiv.org/abs/1607.01097)
@@ -1984,7 +1801,7 @@ interesting papers:
 
 >	"Not all machine learning problems admit the same level of difficulty, and different tasks naturally require varying levels of complexity. The typical approach to training a neural network requires the model-builder to know and specify as an architecture the right level of complexity. This is often unreasonably hard and can lead to large amounts of hyperparameter tuning, a statistically wasteful task. Moreover, if a network architecture is specified a priori and trained using back-propagation, the model will always have as many layers as the one specified because there needs to be at least one path through the network in order for the hypothesis to be non-trivial. Single weights may be pruned, a technique originally termed Optimal Brain Damage, but the architecture itself is unchanged. This imposes a stringent lower bound on the complexity of the model and can make the model prone to overfitting when there is insufficient data. In contrast to enforcing high complexity, we will attempt to learn the requisite model complexity for a machine learning problem in an adaptive way. Starting from a simple single layer neural network, we will add more neurons and additional layers as needed. From the cognitive perspective, we will adapt the neural complexity and architecture to the difficulty of the problem. The additional neurons that we add will be carefully selected and penalized according to rigorous estimates from the theory of statistical learning. This will serve as a catalyst for the sparsity of our model as well as the strong generalization bounds that we will be able to derive. Incredibly, our method will also turn out to be convex and hence more stable than the current methodologies employed."
 
-  - <https://events.yandex.ru/events/science-seminars/24-may-2016/> - "Deep Boosting" (Mohri)
+  - `video` ["Deep Boosting"](https://youtube.com/watch?v=_GGmkyrT1Po) (Mohri)
 
 
 #### Maclaurin, Duvenaud, Adams - ["Gradient-based Hyperparameter Optimization through Reversible Learning"](http://arxiv.org/abs/1502.03492)
@@ -1999,10 +1816,10 @@ interesting papers:
 
 >	"There's a very fuzzy line between "learning architecture" and "tuning weights". An obvious connection is that, if you begin with a large hidden layer, then eliminating nodes -- which you'd usually think of as an "architecture" choice -- is equivalent to just setting the weights of those nodes to zero, which gradient descent could do if you use a sparsity-inducing prior. In a broad sense, weights in neural networks are really just a continuous parameterization of choices that a circuit designer would think of as architectural, e.g., how many nodes to use, which nodes should be connected to which other nodes, and what the nature of the connections should be. In principle you can do gradient descent on any architectural parameter that has a continuous relationship to the network output. The paper basically figures out all the tricks you need to apply automatic differentiation to the backprop algorithm itself, which allows them to do gradient-based optimization of hyperparameters with respect to validation set loss."
 
-  - <http://youtube.com/watch?v=VG2uCpKJkSg> (Adams)
-  - <http://videolectures.net/icml2015_duvenaud_reversible_learning/>
-  - <https://github.com/HIPS/hypergrad>
-  - <https://www.evernote.com/shard/s189/sh/eb8503b0-f63d-49b7-b51f-747b7e10e69e/4cabf65c28de7f388417c0c4fba71c29> (Larochelle)
+  - `video` <http://youtube.com/watch?v=VG2uCpKJkSg> (Adams)
+  - `video` <http://videolectures.net/icml2015_duvenaud_reversible_learning/> (Duvenaud)
+  - `notes` <https://www.evernote.com/shard/s189/sh/eb8503b0-f63d-49b7-b51f-747b7e10e69e/4cabf65c28de7f388417c0c4fba71c29> (Larochelle)
+  - `code` <https://github.com/HIPS/hypergrad>
 
 
 #### Andrychowicz, Denil, Gomez, Hoffman, Pfau, Schaul, de Freitas - ["Learning to Learn by Gradient Descent by Gradient Descent"](https://arxiv.org/abs/1606.04474)
@@ -2010,52 +1827,31 @@ interesting papers:
 
 >	"We have shown how to cast the design of optimization algorithms as a learning problem, which enables us to train optimizers that are specialized to particular classes of functions. Our experiments have confirmed that learned neural optimizers compare favorably against state-of-the-art optimization methods used in deep learning. We witnessed a remarkable degree of transfer, with for example the LSTM optimizer trained on 12,288 parameter neural art tasks being able to generalize to tasks with 49,152 parameters, different styles, and different content images all at the same time. We observed similar impressive results when transferring to different architectures in the MNIST task. The results on the CIFAR image labeling task show that the LSTM optimizers outperform handengineered optimizers when transferring to datasets drawn from the same data distribution. In future work we plan to continue investigating the design of the NTM-BFGS optimizers. We observed that these outperformed the LSTM optimizers for quadratic functions, but we saw no benefit of using these methods in the other stochastic optimization tasks. Another important direction for future work is to develop optimizers that scale better in terms of memory usage."
 
-  - <https://youtu.be/SAcHyzMdbXc?t=10m24s> (de Freitas)
-  - <https://youtu.be/x1kf4Zojtb0?t=1h4m53s> (de Freitas)
-  - <http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/> (27:49) (de Freitas)
-  - <https://theneuralperspective.com/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>
-  - <https://blog.acolyer.org/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>
-  - <https://hackernoon.com/learning-to-learn-by-gradient-descent-by-gradient-descent-4da2273d64f2>
-  - <https://github.com/deepmind/learning-to-learn>
-  - <https://github.com/ikostrikov/pytorch-meta-optimizer>
+  - `video` <https://youtu.be/SAcHyzMdbXc?t=10m24s> (de Freitas)
+  - `video` <https://youtu.be/x1kf4Zojtb0?t=1h4m53s> (de Freitas)
+  - `video` <http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/> (27:49) (de Freitas)
+  - `notes` <https://theneuralperspective.com/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>
+  - `notes` <https://blog.acolyer.org/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>
+  - `post` <https://hackernoon.com/learning-to-learn-by-gradient-descent-by-gradient-descent-4da2273d64f2>
+  - `code` <https://github.com/deepmind/learning-to-learn>
+  - `code` <https://github.com/ikostrikov/pytorch-meta-optimizer>
 
 
 
 ---
-### interesting papers - semi-supervised and transfer learning
+### interesting papers - few-shot and transfer learning
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#unsupervised-learning) on unsupervised learning  
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#one-shot-learning) on one-shot learning  
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#few-shot-learning) on few-shot learning  
 [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---transfer) on transfer in reinforcement learning  
-
-
-#### Kingma, Rezende, Mohamed, Welling - ["Semi-supervised Learning with Deep Generative Models"](http://arxiv.org/abs/1406.5298)
->	"The ever-increasing size of modern data sets combined with the difficulty of obtaining label information has made semi-supervised learning one of the problems of significant practical importance in modern data analysis. We revisit the approach to semi-supervised learning with generative models and develop new models that allow for effective generalisation from small labelled data sets to large unlabelled ones. Generative approaches have thus far been either inflexible, inefficient or non-scalable. We show that deep generative models and approximate Bayesian inference exploiting recent advances in variational methods can be used to provide significant improvements, making generative approaches highly competitive for semi-supervised learning."
-
->	"The approximate inference methods introduced here can be easily extended to the model’s parameters, harnessing the full power of variational learning. Such an extension also provides a principled ground for performing model selection. Efficient model selection is particularly important when the amount of available data is not large, such as in semi-supervised learning. For image classification tasks, one area of interest is to combine such methods with convolutional neural networks that form the gold-standard for current supervised classification methods. Since all the components of our model are parametrised by neural networks we can readily exploit convolutional or more general locally-connected architectures – and forms a promising avenue for future exploration."
-
->	"A limitation of the models we have presented is that they scale linearly in the number of classes in the data sets. Having to re-evaluate the generative likelihood for each class during training is an expensive operation. Potential reduction of the number of evaluations could be achieved by using a truncation of the posterior mass. For instance we could combine our method with the truncation algorithm suggested by Pal et al. (2005), or by using mechanisms such as error-correcting output codes. The extension of our model to multi-label classification problems that is essential for image-tagging is also possible, but requires similar approximations to reduce the number of likelihood-evaluations per class."
-
->	"We have developed new models for semi-supervised learning that allow us to improve the quality of prediction by exploiting information in the data density using generative models. We have developed an efficient variational optimisation algorithm for approximate Bayesian inference in these models and demonstrated that they are amongst the most competitive models currently available for semisupervised learning."
-
->"
-> - We describe a new framework for semi-supervised learning with generative models, employing rich parametric density estimators formed by the fusion of probabilistic modelling and deep neural networks.  
-> - We show for the first time how variational inference can be brought to bear upon the problem of semi-supervised classification. In particular, we develop a stochastic variational inference algorithm that allows for joint optimisation of both model and variational parameters, and that is scalable to large datasets.  
-> - We demonstrate the performance of our approach on a number of data sets providing state-of-the-art results on benchmark problems.  
-> - We show qualitatively generative semi-supervised models learn to separate the data classes (content types) from the intra-class variabilities (styles), allowing in a very straightforward fashion to simulate analogies of images on a variety of datasets."  
-
-  - <https://youtube.com/watch?v=bJhV2C5KKZ4> (Kingma)
-  - <http://videolectures.net/deeplearning2015_courville_autoencoder_extension/#t=3192> (Courville)
-  - <https://youtu.be/0veUbpdBqyk?t=1h7m46s> (Chervinsky) (in russian)
 
 
 #### Ganin, Ustinova, Ajakan, Germain, Larochelle, Laviolette, Marchand, Lempitsky - ["Domain-Adversarial Training of Neural Networks"](http://arxiv.org/abs/1505.07818)
 >	"We introduce a new representation learning approach for domain adaptation, in which data at training and test time come from similar but different distributions. Our approach is directly inspired by the theory on domain adaptation suggesting that, for effective domain transfer to be achieved, predictions must be made based on features that cannot discriminate between the training (source) and test (target) domains. The approach implements this idea in the context of neural network architectures that are trained on labeled data from the source domain and unlabeled data from the target domain (no labeled target-domain data is necessary). As the training progresses, the approach promotes the emergence of features that are (i) discriminative for the main learning task on the source domain and (ii) indiscriminate with respect to the shift between the domains. We show that this adaptation behaviour can be achieved in almost any feed-forward model by augmenting it with few standard layers and a new gradient reversal layer. The resulting augmented architecture can be trained using standard backpropagation and stochastic gradient descent, and can thus be implemented with little effort using any of the deep learning packages. We demonstrate the success of our approach for two distinct classification problems (document sentiment analysis and image classification), where state-of-the-art domain adaptation performance on standard benchmarks is achieved. We also validate the approach for descriptor learning task in the context of person re-identification application."
 
-  - <http://videolectures.net/icml2015_ganin_domain_adaptation/> (Ganin)
-  - <http://youtu.be/FpZqmnOB-R8?t=9m> (Lempitsky) (in russian)
-  - "Unsupervised Domain Adaptation by Backpropagation" by Ganin and Lempitsky - <http://arxiv.org/abs/1409.7495>
-  - <https://github.com/pumpikano/tf-dann>
+  - `video` <http://videolectures.net/icml2015_ganin_domain_adaptation/> (Ganin)
+  - `video` <http://youtu.be/FpZqmnOB-R8?t=9m> (Lempitsky) (in russian)
+  - `paper` ["Unsupervised Domain Adaptation by Backpropagation"](http://arxiv.org/abs/1409.7495) by Ganin and Lempitsky
+  - `code` <https://github.com/pumpikano/tf-dann>
 
 
 #### Taigman, Polyak, Wolf - ["Unsupervised Cross-Domain Image Generation"](https://arxiv.org/abs/1611.02200)
@@ -2073,7 +1869,7 @@ interesting papers:
 
 >	"Unsupervised domain adaptation addresses the following problem: given a labeled training set in S×Y, for some target space Y, and an unlabeled set of samples from domain T, learn a function h:T → Y (Chen et al., 2012; Ganin et al., 2016). One can solve the sample transfer problem using domain adaptation and vice versa. In both cases, the solution is indirect. In order to solve domain adaptation using domain transfer, one would learn a function from S to Y and use it as the input method of the domain transfer algorithm in order to obtain a map from S to T. The training samples could then be transferred to T and used to learn a classifier there. In the other direction, given the function f, one can invert f in the domain T by generating training samples (f(x), x) for x∈ T and learn from them a function h from f(T) = {f(x)|x∈ T} to T. Domain adaptation can then be used in order to map f(S) = {f(x)|x∈ S} to T, thus achieving domain transfer."
 
-  - <https://github.com/yunjey/dtn-tensorflow>
+  - `code` <https://github.com/yunjey/dtn-tensorflow>
 
 
 #### Johansson, Shalit, Sontag - ["Learning Representations for Counterfactual Inference"](http://arxiv.org/abs/1605.03661)
@@ -2081,15 +1877,15 @@ interesting papers:
 
 >	"As machine learning is becoming a major tool for researchers and policy makers across different fields such as healthcare and economics, causal inference becomes a crucial issue for the practice of machine learning. In this paper we focus on counterfactual inference, which is a widely applicable special case of causal inference. We cast counterfactual inference as a type of domain adaptation problem, and derive a novel way of learning representations suited for this problem. Our models rely on a novel type of regularization criteria: learning balanced representations, representations which have similar distributions among the treated and untreated populations. We show that trading off a balancing criterion with standard data fitting and regularization terms is both practically and theoretically prudent. Open questions which remain are how to generalize this method for cases where more than one treatment is in question, deriving better optimization algorithms and using richer discrepancy measures."
 
-  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (Shalit)
-  - <http://techtalks.tv/talks/learning-representations-for-counterfactual-inference/62489/> (Johansson)
-  - <http://www.shortscience.org/paper?bibtexKey=journals/corr/JohanssonSS16>
+  - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (Shalit)
+  - `video` <http://techtalks.tv/talks/learning-representations-for-counterfactual-inference/62489/> (Johansson)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/JohanssonSS16>
 
 
 #### Norouzi, Mikolov, Bengio, Singer, Shlens, Frome, Corrado, Dean - ["Zero-Shot Learning by Convex Combination of Semantic Embeddings"](http://arxiv.org/abs/1312.5650)
 >	"Several recent publications have proposed methods for mapping images into continuous semantic embedding spaces. In some cases the embedding space is trained jointly with the image transformation. In other cases the semantic embedding space is established by an independent natural language processing task, and then the image transformation into that space is learned in a second stage. Proponents of these image embedding systems have stressed their advantages over the traditional n-way classification framing of image understanding, particularly in terms of the promise for zero-shot learning - the ability to correctly annotate images of previously unseen object categories. In this paper, we propose a simple method for constructing an image embedding system from any existing n-way image classifier and a semantic word embedding model, which contains the n class labels in its vocabulary. Our method maps images into the semantic embedding space via convex combination of the class label embedding vectors, and requires no additional training. We show that this simple and direct method confers many of the advantages associated with more complex image embedding schemes, and indeed outperforms state of the art methods on the ImageNet zero-shot learning task."
 
-  - <http://youtube.com/watch?v=PIcEumTJyXY> (Norouzi)
+  - `video` <http://youtube.com/watch?v=PIcEumTJyXY> (Norouzi)
 
 
 #### Chollet - ["Information-Theoretical Label Embeddings for Large-Scale Image Classification"](http://arxiv.org/abs/1607.05691)
@@ -2119,11 +1915,11 @@ interesting papers:
 > - The shuffling means mixing up the labels e.g. giving a picture of 1 the class label 3, and the picture of 2 a class label of 5 etc. This way the network can't encode mappings in its weights, it has to learn how to learn (store examples in memory for comparison later). More explicitly, it has to store a sample and its label in the next time step if it intends to use it for comparison with new data.  
 >"
 
-  - <http://techtalks.tv/talks/meta-learning-with-memory-augmented-neural-networks/62523/> + <https://vk.com/wall-44016343_8782> (Santoro)
-  - <https://youtube.com/watch?v=qos2CcviAuY> (Bartunov) (in russian)
-  - <http://rylanschaeffer.github.io/content/research/one_shot_learning_with_memory_augmented_nn/main.html>
-  - <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.06065>
-  - <https://github.com/tristandeleu/ntm-one-shot>
+  - `video` <http://techtalks.tv/talks/meta-learning-with-memory-augmented-neural-networks/62523/> + <https://vk.com/wall-44016343_8782> (Santoro)
+  - `video` <https://youtube.com/watch?v=qos2CcviAuY> (Bartunov) (in russian)
+  - `notes` <http://rylanschaeffer.github.io/content/research/one_shot_learning_with_memory_augmented_nn/main.html>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.06065>
+  - `code` <https://github.com/tristandeleu/ntm-one-shot>
 
 
 
@@ -2142,11 +1938,10 @@ interesting papers:
 
   - <http://distill.pub/2016/handwriting/> (demo)
   - <http://www.cs.toronto.edu/~graves/handwriting.html> (demo)
-  - <http://blog.otoro.net/2015/12/12/handwriting-generation-demo-in-tensorflow/>
-  - <http://youtube.com/watch?v=-yX1SYeDHbg> (Graves)
-  - <https://github.com/tensorflow/magenta/blob/master/magenta/reviews/summary_generation_sequences.md>
-  - <https://github.com/hardmaru/write-rnn-tensorflow>
-  - <https://github.com/szcom/rnnlib>
+  - `video` <http://youtube.com/watch?v=-yX1SYeDHbg> (Graves)
+  - `notes` <https://github.com/tensorflow/magenta/blob/master/magenta/reviews/summary_generation_sequences.md>
+  - `post` <http://blog.otoro.net/2015/12/12/handwriting-generation-demo-in-tensorflow/>
+  - `code` <https://github.com/hardmaru/write-rnn-tensorflow>
 
 
 #### Gregor, Danihelka, Mnih, Blundell, Wierstra - ["Deep AutoRegressive Networks"](http://arxiv.org/abs/1310.8499)
@@ -2159,10 +1954,10 @@ interesting papers:
 ----
 >	"When compared to sigmoid belief networks that make use of mean-field approximations, deep auto-regressive networks use a posterior approximation with an autoregressive dependency structure that provides a clear improvement in performance."
 
-  - <https://youtu.be/-yX1SYeDHbg?t=49m25s> + <https://youtu.be/P78QYjWh5sM?t=20m50s> (demo)
-  - <http://techtalks.tv/talks/deep-autoregressive-networks/60884/> (Gregor)
-  - <http://youtube.com/watch?v=P78QYjWh5sM> (Gregor)
-  - <http://techtalks.tv/beta/talks/neural-variational-inference-and-learning-in-belief-networks/60886/> (Mnih)
+  - `video` <https://youtu.be/-yX1SYeDHbg?t=49m25s> + <https://youtu.be/P78QYjWh5sM?t=20m50s> (demo)
+  - `video` <http://techtalks.tv/talks/deep-autoregressive-networks/60884/> (Gregor)
+  - `video` <http://youtube.com/watch?v=P78QYjWh5sM> (Gregor)
+  - `video` <http://techtalks.tv/beta/talks/neural-variational-inference-and-learning-in-belief-networks/60886/> (Mnih)
 
 
 #### Germain, Gregor, Murray, Larochelle - ["MADE: Masked Autoencoder for Distribution Estimation"](http://arxiv.org/abs/1502.03509)
@@ -2170,18 +1965,17 @@ interesting papers:
 
 >	"We proposed MADE, a simple modification of autoencoders allowing them to be used as distribution estimators. MADE demonstrates that it is possible to get direct, cheap estimates of a high-dimensional joint probabilities, from a single pass through an autoencoder. Like standard autoencoders, our extension is easy to vectorize and implement on GPUs. MADE can evaluate high-dimensional probably distributions with better scaling than before, while maintaining state-of-the-art statistical performance."
 
-  - <http://videolectures.net/icml2015_germain_distribution_estimation/> (Germain)
-  - <http://www.fields.utoronto.ca/video-archive/2017/01/2267-16372> (Larochelle)
-  - <http://videolectures.net/deeplearning2015_larochelle_deep_learning/> (Larochelle) + <http://www-labs.iro.umontreal.ca/~memisevr/dlss2015/dlss_nade.pdf>
-  - <http://inference.vc/masked-autoencoders-icml-paper-highlight/>
-  - <http://inference.vc/exchangeable-processes-via-neural-networks/>
-  - <https://github.com/mgermain/MADE/releases/tag/ICML2015>
+  - `video` <http://videolectures.net/icml2015_germain_distribution_estimation/> (Germain)
+  - `video` <http://www.fields.utoronto.ca/video-archive/2017/01/2267-16372> (Larochelle)
+  - `video` <http://videolectures.net/deeplearning2015_larochelle_deep_learning/> (Larochelle)
+  - `post` <http://inference.vc/masked-autoencoders-icml-paper-highlight/>
+  - `code` <https://github.com/mgermain/MADE>
 
 
 #### Uria, Cote, Gregor, Murray, Larochelle - ["Neural Autoregressive Distribution Estimation"](http://arxiv.org/abs/1605.02226)
 >	"We present Neural Autoregressive Distribution Estimation (NADE) models, which are neural network architectures applied to the problem of unsupervised distribution and density estimation. They leverage the probability product rule and a weight sharing scheme inspired from restricted Boltzmann machines, to yield an estimator that is both tractable and has good generalization performance. We discuss how they achieve competitive performance in modeling both binary and real-valued observations. We also present how deep NADE models can be trained to be agnostic to the ordering of input dimensions used by the autoregressive product rule decomposition. Finally, we also show how to exploit the topological structure of pixels in images using a deep convolutional architecture for NADE."
 
-  - <http://www.fields.utoronto.ca/video-archive/2017/01/2267-16372> (Larochelle)
+  - `video` <http://www.fields.utoronto.ca/video-archive/2017/01/2267-16372> (Larochelle)
 
 
 #### Gregor, Danihelka, Graves, Wierstra - ["DRAW: A Recurrent Neural Network For Image Generation"](http://arxiv.org/abs/1502.04623)
@@ -2193,18 +1987,14 @@ interesting papers:
 
 >	"We also established that the two-dimensional differentiable attention mechanism embedded in DRAW is beneficial not only to image generation, but also to cluttered image classification."
 
-  - <http://youtube.com/watch?v=Zt-7MI9eKEo> (demo)
-  - <http://youtube.com/watch?v=P78QYjWh5sM&t=22m14s> (Gregor)
-  - <https://dl.dropboxusercontent.com/u/16027344/ICML%202015%20Deep%20Learning%20Workshop/Karol%20Gregor%2C%20GOOGLE%20Deepmind.p2g/Default.html> (Gregor)
-  - <http://videolectures.net/deeplearning2015_courville_autoencoder_extension/#t=4380> (Courville)
-  - <http://github.com/tensorflow/magenta/blob/master/magenta/reviews/draw.md> (Cooijmans)
-  - <http://blog.evjang.com/2016/06/understanding-and-implementing.html>
-  - <http://kvfrans.com/what-is-draw-deep-recurrent-attentive-writer/>
-  - <https://github.com/ikostrikov/TensorFlow-VAE-GAN-DRAW/blob/master/main-draw.py>
-  - <https://github.com/ericjang/draw>
-  - <https://github.com/vivanov879/draw>
-  - <https://github.com/jbornschein/draw>
-  - <https://github.com/skaae/lasagne-draw>
+  - `video` <http://youtube.com/watch?v=Zt-7MI9eKEo> (demo)
+  - `video` <http://youtube.com/watch?v=P78QYjWh5sM&t=22m14s> (Gregor)
+  - `video` <http://videolectures.net/deeplearning2015_courville_autoencoder_extension/#t=4380> (Courville)
+  - `post` <http://kvfrans.com/what-is-draw-deep-recurrent-attentive-writer/>
+  - `post` <http://blog.evjang.com/2016/06/understanding-and-implementing.html>
+  - `notes` <http://github.com/tensorflow/magenta/blob/master/magenta/reviews/draw.md>
+  - `code` <https://github.com/ikostrikov/TensorFlow-VAE-GAN-DRAW/blob/master/main-draw.py>
+  - `code` <https://github.com/ericjang/draw>
 
 
 #### Chen, Kingma, Salimans, Duan, Dhariwal, Schulman, Sutskever, Abbeel - ["Variational Lossy Autoencoder"](http://arxiv.org/abs/1611.02731)
@@ -2219,40 +2009,30 @@ interesting papers:
 
 [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models---generative-adversarial-networks)
 
-<https://github.com/nightrome/really-awesome-gan/>
+<https://github.com/zhangqianhui/AdversarialNetsPapers>  
+<https://github.com/nightrome/really-awesome-gan/>  
 
 
 #### Goodfellow, Pouget-Abadie, Mirza, Xu, Warde-Farley, Ozair, Courville, Bengio - ["Generative Adversarial Networks"](http://arxiv.org/abs/1406.2661)
 >	"We propose a new framework for estimating generative models via an adversarial process, in which we simultaneously train two models: a generative model G that captures the data distribution, and a discriminative model D that estimates the probability that a sample came from the training data rather than G. The training procedure for G is to maximize the probability of D making a mistake. This framework corresponds to a minimax two-player game. In the space of arbitrary functions G and D, a unique solution exists, with G recovering the training data distribution and D equal to 1/2 everywhere. In the case where G and D are defined by multilayer perceptrons, the entire system can be trained with backpropagation. There is no need for any Markov chains or unrolled approximate inference networks during either training or generation of samples."
 
-  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks> (Goodfellow)
-  - <https://dl.dropboxusercontent.com/u/16027344/ICML%202015%20Deep%20Learning%20Workshop/Ian%20Goodfellow%2C%20GOOGLE.p2g/Default.html> (Goodfellow)
-  - <http://www.offconvex.org/2017/03/15/GANs/> (Arora)
-  - <http://inference.vc/how-to-train-your-generative-models-why-generative-adversarial-networks-work-so-well-2/>
-  - <http://inference.vc/an-alternative-update-rule-for-generative-adversarial-networks/>
   - <http://cs.stanford.edu/people/karpathy/gan/> (demo)
-  - <http://blog.evjang.com/2016/06/generative-adversarial-nets-in.html>
-  - <https://oshearesearch.com/index.php/2016/07/01/mnist-generative-adversarial-model-in-keras/>
-  - <https://github.com/255BITS/HyperGAN> + <https://www.255bits.com/articles/hypergan-people/> (demo)
-  - <https://github.com/goodfeli/adversarial>
-  - <https://github.com/phreeza/keras-GAN>
-  - <https://github.com/osh/KerasGAN/blob/master/mnist_gan.py> + <http://kdnuggets.com/2016/07/mnist-generative-adversarial-model-keras.html>
-  - <https://github.com/skaae/torch-gan>
-  - <https://github.com/kvfrans/generative-adversial>
-  - <https://github.com/nivwusquorum/tf-adversarial/blob/master/Adversarial-LSUN.ipynb>
-
-
-#### Goodfellow - ["NIPS 2016 Tutorial: Generative Adversarial Networks"](https://arxiv.org/abs/1701.00160)
->	"This report summarizes the tutorial presented by the author at NIPS 2016 on generative adversarial networks (GANs). The tutorial describes: (1) Why generative modeling is a topic worth studying, (2) how generative models work, and how GANs compare to other generative models, (3) the details of how GANs work, (4) research frontiers in GANs, and (5) state-of-the-art image models that combine GANs with other methods. Finally, the tutorial contains three exercises for readers to complete, and the solutions to these exercises."
-
-  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks> (Goodfellow) + <http://iangoodfellow.com/slides/2016-12-04-NIPS.pdf>
+  - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks> (Goodfellow)
+  - `video` ["Tips & tricks"](https://youtube.com/watch?v=X1mUN6dD8uE) (Chintala)
+  - `post` ["Tips & tricks"](https://github.com/soumith/ganhacks) (Chintala)
+  - `post` <http://www.offconvex.org/2017/03/15/GANs/> (Arora)
+  - `post` <http://inference.vc/how-to-train-your-generative-models-why-generative-adversarial-networks-work-so-well-2/>
+  - `post` <http://inference.vc/an-alternative-update-rule-for-generative-adversarial-networks/>
+  - `post` <http://blog.evjang.com/2016/06/generative-adversarial-nets-in.html>
+  - `post` <https://oshearesearch.com/index.php/2016/07/01/mnist-generative-adversarial-model-in-keras/>
+  - `code` <https://github.com/wiseodd/generative-models/tree/master/GAN>
 
 
 #### Mohamed, Lakshminarayanan - ["Learning in Implicit Generative Models"](https://arxiv.org/abs/1610.03483)
 >	"Generative adversarial networks (GANs) provide an algorithmic framework for constructing generative models with several appealing properties: they do not require a likelihood function to be specified, only a generating procedure; they provide samples that are sharp and compelling; and they allow us to harness our knowledge of building highly accurate neural network classifiers. Here, we develop our understanding of GANs with the aim of forming a rich view of this growing area of machine learning---to build connections to the diverse set of statistical thinking on this topic, of which much can be gained by a mutual exchange of ideas. We frame GANs within the wider landscape of algorithms for learning in implicit generative models--models that only specify a stochastic procedure with which to generate data--and relate these ideas to modelling problems in related fields, such as econometrics and approximate Bayesian computation. We develop likelihood-free inference methods and highlight hypothesis testing as a principle for learning in implicit generative models, using which we are able to derive the objective function used by GANs, and many other related objectives. The testing viewpoint directs our focus to the general problem of density ratio estimation. There are four approaches for density ratio estimation, one of which is a solution using classifiers to distinguish real from generated data. Other approaches such as divergence minimisation and moment matching have also been explored in the GAN literature, and we synthesise these views to form an understanding in terms of the relationships between them and the wider literature, highlighting avenues for future exploration and cross-pollination."
-  - <https://youtu.be/RZOKRFBtSh4?t=5m37s> (Mohamed)
-  - <https://youtu.be/jAI3rBI6poU?t=37m56s> (Ulyanov) (in russian)
-  - <https://casmls.github.io/general/2017/05/24/ligm.html>
+  - `video` <https://youtu.be/RZOKRFBtSh4?t=5m37s> (Mohamed)
+  - `video` <https://youtu.be/jAI3rBI6poU?t=37m56s> (Ulyanov) (in russian)
+  - `post` <https://casmls.github.io/general/2017/05/24/ligm.html>
 
 
 #### Pfau, Vinyals - ["Connecting Generative Adversarial Networks and Actor-Critic Methods"](https://arxiv.org/abs/1610.01945)
@@ -2264,15 +2044,15 @@ interesting papers:
 
 >	"Actor-critic methods and generative adversarial networks are two such classes of multilevel optimization problems which have close parallels. In both cases the information flow is a simple feedforward pass from one model which either takes an action (AC) or generates a sample (GANs) to a second model which evaluates the output of the first model. In both cases, the second model is the only one which has direct access to special information in the environment, either reward information (AC) or real samples from the distribution in question (GANs), and the first model must learn based on error signals from the second model alone. GANs and AC methods have important differences as well, and we show a construction that bridges the two. Both of these models suffer from stability issues, and techniques for stabilizing training have been developed largely independently by the two communities."
 
-  - <https://youtube.com/watch?v=RZOKRFBtSh4&t=1m5s> (Pfau)
-  - <https://youtube.com/watch?v=3s4UyoMilQo> (Pfau)
+  - `video` <https://youtube.com/watch?v=RZOKRFBtSh4&t=1m5s> (Pfau)
+  - `video` <https://youtube.com/watch?v=3s4UyoMilQo> (Pfau)
 
 
 #### Finn, Christiano, Abbeel, Levine - ["A Connection Between Generative Adversarial Networks, Inverse Reinforcement Learning, and Energy-Based Models"](http://arxiv.org/abs/1611.03852)
 >	"Generative adversarial networks (GANs) are a recently proposed class of generative models in which a generator is trained to optimize a cost function that is being simultaneously learned by a discriminator. While the idea of learning cost functions is relatively new to the field of generative modeling, learning costs has long been studied in control and reinforcement learning (RL) domains, typically for imitation learning from demonstrations. In these fields, learning cost function underlying observed behavior is known as inverse reinforcement learning (IRL) or inverse optimal control. While at first the connection between cost learning in RL and cost learning in generative modeling may appear to be a superficial one, we show in this paper that certain IRL methods are in fact mathematically equivalent to GANs. In particular, we demonstrate an equivalence between a sample-based algorithm for maximum entropy IRL and a GAN in which the generator's density can be evaluated and is provided as an additional input to the discriminator. Interestingly, maximum entropy IRL is a special case of an energy-based model. We discuss the interpretation of GANs as an algorithm for training energy-based models, and relate this interpretation to other recent work that seeks to connect GANs and EBMs. By formally highlighting the connection between GANs, IRL, and EBMs, we hope that researchers in all three communities can better identify and apply transferable ideas from one domain to another, particularly for developing more stable and scalable algorithms: a major challenge in all three domains."
 
-  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (33:17) (Levine)
-  - <https://youtu.be/RZOKRFBtSh4?t=10m48s> (Finn)
+  - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (33:17) (Levine)
+  - `video` <https://youtu.be/RZOKRFBtSh4?t=10m48s> (Finn)
 
 
 #### Makhzani, Shlens, Jaitly, Goodfellow - ["Adversarial Autoencoders"](https://arxiv.org/abs/1511.05644)
@@ -2284,12 +2064,10 @@ interesting papers:
 
 >	"Minimising DKL[Q(Z|X) || P(Z)] of VAE penalises the model Q(Z) if it contains samples that are outside the support of the true distribution P(Z), which might mean that Q(Z) captures only a part of P(Z). This means that when sampling P(Z), we may sample a region that is not captured by Q(Z). The reverse KL divergence, DKL[P(Z) || Q(Z|X)], penalises the model Q(Z) if P(Z) produces samples that are outside of the support of Q(Z). By minimising this KL divergence, most samples in P(Z) will likely be in Q(Z) as well. AAEs are regularised using the JS entropy, given by 1/2 * DKL[P(Z) || 1/2 * (P(Z) + Q(Z|X))] + 1/2 * DKL[Q(Z|X) || 1/2 * (P(Z) + Q(Z|X))]. Minimising this cost function attempts to find a compromise between the aforementioned extremes."
 
-  - <http://dustintran.com/blog/adversarial-autoencoders/>
-  - <http://inference.vc/adversarial-autoencoders/>
-  - <https://blog.paperspace.com/adversarial-autoencoders-with-pytorch/>
-  - <https://github.com/wiseodd/generative-models/tree/master/VAE/adversarial_autoencoder>
-  - <https://github.com/musyoku/adversarial-autoencoder>
-  - <https://github.com/Kaixhin/Autoencoders/blob/master/models/AdvAE.lua>
+  - `post` <http://dustintran.com/blog/adversarial-autoencoders/>
+  - `post` <http://inference.vc/adversarial-autoencoders/>
+  - `post` <https://blog.paperspace.com/adversarial-autoencoders-with-pytorch/>
+  - `code` <https://github.com/wiseodd/generative-models/tree/master/VAE/adversarial_autoencoder>
 
 
 #### Chen, Duan, Houthooft, Schulman, Sutskever, Abbeel - ["InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets"](https://arxiv.org/abs/1606.03657)
@@ -2299,12 +2077,12 @@ interesting papers:
 
 >	"An extension of GAN that learns disentangled and interpretable representations for images. A regular GAN achieves the objective of reproducing the data distribution in the model, but the layout and organization of the code space is underspecified - there are many possible solutions to mapping the unit Gaussian to images and the one we end up with might be intricate and highly entangled. The InfoGAN imposes additional structure on this space by adding new objectives that involve maximizing the mutual information between small subsets of the representation variables and the observation. This approach provides quite remarkable results. For example, in the images of 3D faces we vary one continuous dimension of the code, keeping all others fixed. It's clear from the five provided examples that the resulting dimensions in the code capture interpretable dimensions, and that the model has perhaps understood that there are camera angles, facial variations, etc., without having been told that these features exist and are important."
 
-  - <https://goo.gl/58Ishd> (demo, azimuth) + <https://goo.gl/q7Hp99> (demo, elevation) + <https://goo.gl/Ceqlr4> (demo, lightning) + <https://goo.gl/9ibbsV> (demo, wide or narrow)
-  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-1> (53:28) (Chen)
-  - <http://inference.vc/infogan-variational-bound-on-mutual-information-twice/>
-  - <http://wiseodd.github.io/techblog/2017/01/29/infogan/>
-  - <https://github.com/openai/InfoGAN>
-  - <https://github.com/wiseodd/generative-models/tree/master/GAN/infogan>
+  - <https://goo.gl/58Ishd> + <https://goo.gl/q7Hp99> + <https://goo.gl/Ceqlr4> + <https://goo.gl/9ibbsV> (demo)
+  - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-1> (53:28) (Chen)
+  - `post` <http://inference.vc/infogan-variational-bound-on-mutual-information-twice/>
+  - `post` <http://wiseodd.github.io/techblog/2017/01/29/infogan/>
+  - `code` <https://github.com/openai/InfoGAN>
+  - `code` <https://github.com/wiseodd/generative-models/tree/master/GAN/infogan>
 
 
 #### Berthelot, Schumm, Metz - ["BEGAN: Boundary Equilibrium Generative Adversarial Networks"](https://arxiv.org/abs/1703.10717)
@@ -2320,10 +2098,10 @@ interesting papers:
 >	"There are still many unexplored avenues. Does the discriminator have to be an auto-encoder? Having pixel-level feedback seems to greatly help convergence, however using an auto-encoder has its drawbacks: what internal embedding size is best for a dataset? When should noise be added to the input and how much? What impact would using other varieties of auto-encoders such Variational Auto-Encoders have?"
 
   - <https://pbs.twimg.com/media/C8lYiYbW0AI4_yk.jpg:large> + <https://pbs.twimg.com/media/C8c6T2kXsAAI-BN.jpg> (demo)
-  - <https://blog.heuritech.com/2017/04/11/began-state-of-the-art-generation-of-faces-with-generative-adversarial-networks/>
-  - <https://reddit.com/r/MachineLearning/comments/633jal/r170310717_began_boundary_equilibrium_generative/dfrktje/>
-  - <https://github.com/carpedm20/BEGAN-tensorflow>
-  - <https://github.com/carpedm20/BEGAN-pytorch>
+  - `post` <https://blog.heuritech.com/2017/04/11/began-state-of-the-art-generation-of-faces-with-generative-adversarial-networks/>
+  - `notes` <https://reddit.com/r/MachineLearning/comments/633jal/r170310717_began_boundary_equilibrium_generative/dfrktje/>
+  - `code` <https://github.com/carpedm20/BEGAN-tensorflow>
+  - `code` <https://github.com/carpedm20/BEGAN-pytorch>
 
 
 #### Salimans, Goodfellow, Zaremba, Cheung, Radford, Chen - ["Improved Techniques for Training GANs"](http://arxiv.org/abs/1606.03498)
@@ -2333,11 +2111,11 @@ interesting papers:
 
 >	"In addition to generating pretty pictures, we introduce an approach for semi-supervised learning with GANs that involves the discriminator producing an additional output indicating the label of the input. This approach allows us to obtain state of the art results on MNIST, SVHN, and CIFAR-10 in settings with very few labeled examples. On MNIST, for example, we achieve 99.14% accuracy with only 10 labeled examples per class with a fully connected neural network — a result that’s very close to the best known results with fully supervised approaches using all 60,000 labeled examples."
 
-  - <https://youtu.be/RZOKRFBtSh4?t=26m18s> (Metz)
-  - <https://github.com/aleju/papers/blob/master/neural-nets/Improved_Techniques_for_Training_GANs.md>
-  - <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FSalimansGZCRC16>
-  - <http://inference.vc/understanding-minibatch-discrimination-in-gans/>
-  - <https://github.com/openai/improved-gan>
+  - `video` <https://youtu.be/RZOKRFBtSh4?t=26m18s> (Metz)
+  - `notes` <https://github.com/aleju/papers/blob/master/neural-nets/Improved_Techniques_for_Training_GANs.md>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FSalimansGZCRC16>
+  - `post` <http://inference.vc/understanding-minibatch-discrimination-in-gans/>
+  - `code` <https://github.com/openai/improved-gan>
 
 
 #### Radford, Metz, Chintala - ["Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks"](http://arxiv.org/abs/1511.06434)
@@ -2345,21 +2123,9 @@ interesting papers:
 
   - <https://plus.google.com/+SoumithChintala/posts/MCtDVqsef6f> (demo)
   - <https://mattya.github.io/chainer-DCGAN/> (demo)
-  - <https://mattya.github.io/chainer-DCGAN/> (demo)
-  - <https://youtube.com/watch?v=4_5KTdS-b-U> (Chintala)
-  - <https://github.com/jacobgil/keras-dcgan>
-  - <https://github.com/Newmu/dcgan_code>
-  - <https://github.com/soumith/dcgan.torch>
-  - <https://github.com/mattya/chainer-DCGAN>
-  - <https://github.com/carpedm20/DCGAN-tensorflow>
-  - <http://carpedm20.github.io/faces/>
-
-
-#### Zhang, Xu, Li, Zhang, Huang, Wang, Metaxas - ["StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks"](https://arxiv.org/abs/1612.03242)
->	"Synthesizing photo-realistic images from text descriptions is a challenging problem in computer vision and has many practical applications. Samples generated by existing text-to-image approaches can roughly reflect the meaning of the given descriptions, but they fail to contain necessary details and vivid object parts. In this paper, we propose stacked Generative Adversarial Networks (StackGAN) to generate photo-realistic images conditioned on text descriptions. The Stage-I GAN sketches the primitive shape and basic colors of the object based on the given text description, yielding Stage-I low resolution images. The Stage-II GAN takes Stage-I results and text descriptions as inputs, and generates high resolution images with photorealistic details. The Stage-II GAN is able to rectify defects and add compelling details with the refinement process. Samples generated by StackGAN are more plausible than those generated by existing approaches. Importantly, our StackGAN for the first time generates realistic 256 × 256 images conditioned on only text descriptions, while state-of-the-art methods can generate at most 128 × 128 images. To demonstrate the effectiveness of the proposed StackGAN, extensive experiments are conducted on CUB and Oxford-102 datasets, which contain enough object appearance variations and are widely-used for text-toimage generation analysis."
-
-  - <https://youtube.com/watch?v=93yaf_kE0Fg> + <https://youtube.com/watch?v=SuRyL5vhCIM> (demo)
-  - <https://github.com/hanzhanggit/StackGAN>
+  - `video` <https://youtube.com/watch?v=4_5KTdS-b-U> (Chintala)
+  - `code` <https://github.com/jacobgil/keras-dcgan>
+  - `code` <https://github.com/carpedm20/DCGAN-tensorflow>
 
 
 #### Yu, Zhang, Wang, Yu - ["SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient"](http://arxiv.org/abs/1609.05473)
@@ -2371,7 +2137,7 @@ interesting papers:
 
 >	"Extensive experiments based on synthetic and real data are conducted to investigate the efficacy and properties of the proposed SeqGAN. In our synthetic data environment, SeqGAN significantly outperforms the maximum likelihood methods, scheduled sampling and PG-BLEU. In three real-world tasks, i.e. poem generation, speech language generation and music generation, SeqGAN significantly outperforms the compared baselines in various metrics including human expert judgement."
 
-  - <https://github.com/LantaoYu/SeqGAN>
+  - `code` <https://github.com/LantaoYu/SeqGAN>
 
 
 
@@ -2387,31 +2153,47 @@ interesting papers:
 ----
 >	"Latent variable probabilistic models are ubiquitous, but often inference in such models is intractable. Variational inference methods based on approximation of the true posterior currently are most popular deterministic inference techniques. Recently one particularly interesting method for parametric variational approximation was proposed called Auto-encoding variational bayes. In this method, approximate posterior explicitly depends on data and may be almost arbitrary complex, e.g. a deep neural network. Thus, the problem of variational inference may be considered as a learning of auto-encoder where the code is represented by latent variables, encoder is the likelihood model and decoder is our variational approximation. Since neural networks can serve as universal function approximators, such inference method may allow to obtain better results than for "shallow" parametric approximations or free-form mean-field ones."
 
-  - <http://youtube.com/watch?v=rjZL7aguLAs> (Kingma)
-  - <http://videolectures.net/deeplearning2015_courville_autoencoder_extension/> (Courville)
-  - <https://dl.dropboxusercontent.com/u/16027344/ICML%202015%20Deep%20Learning%20Workshop/Karol%20Gregor%2C%20GOOGLE%20Deepmind.p2g/Default.html> (Gregor)
-  - <https://youtu.be/_qrHcSdQ2J4?t=1h37m21s> (Vetrov) (in russian)
-  - <http://hsaghir.github.io/denoising-vs-variational-autoencoder/>
-  - <http://arxiv.org/abs/1606.05908> + <https://github.com/cdoersch/vae_tutorial> (tutorial)
-  - <http://arxiv.org/abs/1610.09296> (explanation)
-  - <http://blog.fastforwardlabs.com/post/148842796218/introducing-variational-autoencoders-in-prose-and> + <http://blog.fastforwardlabs.com/post/149329060653/under-the-hood-of-the-variational-autoencoder-in>
-  - <http://kvfrans.com/variational-autoencoders-explained/>
-  - <http://jaan.io/what-is-variational-autoencoder-vae-tutorial/>
-  - <http://blog.keras.io/building-autoencoders-in-keras.html>
-  - <https://github.com/fchollet/keras/blob/master/examples/variational_autoencoder.py>
-  - <https://jmetzen.github.io/2015-11-27/vae.html>
-  - <https://github.com/casperkaae/parmesan>
-  - <https://github.com/arahuja/generative-tf>
-  - <https://github.com/blei-lab/edward/blob/master/examples/vae_convolutional.py>
-  - <https://github.com/Kaixhin/Autoencoders/blob/master/models/VAE.lua>
+  - `video` <http://youtube.com/watch?v=rjZL7aguLAs> (Kingma)
+  - `video` <http://videolectures.net/deeplearning2015_courville_autoencoder_extension/> (Courville)
+  - `video` <https://youtu.be/_qrHcSdQ2J4?t=1h37m21s> (Vetrov) (in russian)
+  - `paper` <http://arxiv.org/abs/1606.05908> + <https://github.com/cdoersch/vae_tutorial> (tutorial)
+  - `paper` <http://arxiv.org/abs/1610.09296> (explanation)
+  - `post` <http://kvfrans.com/variational-autoencoders-explained/>
+  - `post` <http://hsaghir.github.io/denoising-vs-variational-autoencoder/>
+  - `post` <http://jaan.io/what-is-variational-autoencoder-vae-tutorial/>
+  - `post` <http://blog.keras.io/building-autoencoders-in-keras.html>
+  - `post` <https://jmetzen.github.io/2015-11-27/vae.html>
+  - `post` <http://blog.fastforwardlabs.com/post/148842796218/introducing-variational-autoencoders-in-prose-and>
+  - `post` <http://blog.fastforwardlabs.com/post/149329060653/under-the-hood-of-the-variational-autoencoder-in>
+  - `code` <https://github.com/wiseodd/generative-models/tree/master/VAE>
+  - `code` <https://github.com/fchollet/keras/blob/master/examples/variational_autoencoder.py>
 
 
 #### Rezende, Mohamed, Wiestra - ["Stochastic Backpropagation and Approximate Inference in Deep Generative Models"](http://arxiv.org/abs/1401.4082)
 >	"We marry ideas from deep neural networks and approximate Bayesian inference to derive a generalised class of deep, directed generative models, endowed with a new algorithm for scalable inference and learning. Our algorithm introduces a recognition model to represent an approximate posterior distribution and uses this for optimisation of a variational lower bound. We develop stochastic back-propagation rules for gradient backpropagation through stochastic variables and derive an algorithm that allows for joint optimisation of the parameters of both the generative and recognition models. We demonstrate on several real-world data sets that by using stochastic backpropagation and variational inference, we obtain models that are able to generate realistic samples of data, allow for accurate imputations of missing data, and provide a useful tool for high-dimensional data visualisation."
 
-  - <http://techtalks.tv/talks/stochastic-backpropagation-and-approximate-inference-in-deep-generative-models/60885/>
-  - <http://vk.com/video-44016343_456239093> (Stepochkin) (in russian)
-  - <https://dropbox.com/s/s1mgon5e7lf5svx/Stochastic%20Backpropagation%20and%20Approximate%20Variational%20Inference%20in%20Deep%20Generative%20Models%20%28slides%29.pdf> (in russian)
+  - `video` <http://techtalks.tv/talks/stochastic-backpropagation-and-approximate-inference-in-deep-generative-models/60885/>
+  - `video` <http://vk.com/video-44016343_456239093> (Stepochkin) (in russian)
+
+
+#### Kingma, Rezende, Mohamed, Welling - ["Semi-supervised Learning with Deep Generative Models"](http://arxiv.org/abs/1406.5298)
+>	"The ever-increasing size of modern data sets combined with the difficulty of obtaining label information has made semi-supervised learning one of the problems of significant practical importance in modern data analysis. We revisit the approach to semi-supervised learning with generative models and develop new models that allow for effective generalisation from small labelled data sets to large unlabelled ones. Generative approaches have thus far been either inflexible, inefficient or non-scalable. We show that deep generative models and approximate Bayesian inference exploiting recent advances in variational methods can be used to provide significant improvements, making generative approaches highly competitive for semi-supervised learning."
+
+>	"The approximate inference methods introduced here can be easily extended to the model’s parameters, harnessing the full power of variational learning. Such an extension also provides a principled ground for performing model selection. Efficient model selection is particularly important when the amount of available data is not large, such as in semi-supervised learning. For image classification tasks, one area of interest is to combine such methods with convolutional neural networks that form the gold-standard for current supervised classification methods. Since all the components of our model are parametrised by neural networks we can readily exploit convolutional or more general locally-connected architectures – and forms a promising avenue for future exploration."
+
+>	"A limitation of the models we have presented is that they scale linearly in the number of classes in the data sets. Having to re-evaluate the generative likelihood for each class during training is an expensive operation. Potential reduction of the number of evaluations could be achieved by using a truncation of the posterior mass. For instance we could combine our method with the truncation algorithm suggested by Pal et al. (2005), or by using mechanisms such as error-correcting output codes. The extension of our model to multi-label classification problems that is essential for image-tagging is also possible, but requires similar approximations to reduce the number of likelihood-evaluations per class."
+
+>	"We have developed new models for semi-supervised learning that allow us to improve the quality of prediction by exploiting information in the data density using generative models. We have developed an efficient variational optimisation algorithm for approximate Bayesian inference in these models and demonstrated that they are amongst the most competitive models currently available for semisupervised learning."
+
+>"
+>	- We describe a new framework for semi-supervised learning with generative models, employing rich parametric density estimators formed by the fusion of probabilistic modelling and deep neural networks.  
+>	- We show for the first time how variational inference can be brought to bear upon the problem of semi-supervised classification. In particular, we develop a stochastic variational inference algorithm that allows for joint optimisation of both model and variational parameters, and that is scalable to large datasets.  
+>	- We demonstrate the performance of our approach on a number of data sets providing state-of-the-art results on benchmark problems.  
+>	- We show qualitatively generative semi-supervised models learn to separate the data classes (content types) from the intra-class variabilities (styles), allowing in a very straightforward fashion to simulate analogies of images on a variety of datasets."  
+
+  - `video` <https://youtube.com/watch?v=bJhV2C5KKZ4> (Kingma)
+  - `video` <http://videolectures.net/deeplearning2015_courville_autoencoder_extension/#t=3192> (Courville)
+  - `video` <https://youtu.be/0veUbpdBqyk?t=1h7m46s> (Chervinsky) (in russian)
 
 
 #### Chen, Kingma, Salimans, Duan, Dhariwal, Schulman, Sutskever, Abbeel - ["Variational Lossy Autoencoder"](http://arxiv.org/abs/1611.02731)
@@ -2423,7 +2205,7 @@ interesting papers:
 #### Mescheder, Nowozin, Geiger - ["Adversarial Variational Bayes: Unifying Variational Autoencoders and Generative Adversarial Networks"](https://arxiv.org/abs/1701.04722)
 >	"Variational Autoencoders (VAEs) are expressive latent variable models that can be used to learn complex probability distributions from training data. However, the quality of the resulting model crucially relies on the expressiveness of the inference model used during training. We introduce Adversarial Variational Bayes (AVB), a technique for training Variational Autoencoders with arbitrarily expressive inference models. We achieve this by introducing an auxiliary discriminative network that allows to rephrase the maximum-likelihood-problem as a two-player game, hence establishing a principled connection between VAEs and Generative Adversarial Networks (GANs). We show that in the nonparametric limit our method yields an exact maximumlikelihood assignment for the parameters of the generative model, as well as the exact posterior distribution over the latent variables given an observation. Contrary to competing approaches which combine VAEs with GANs, our approach has a clear theoretical justification, retains most advantages of standard Variational Autoencoders and is easy to implement."
 
->	"We presented a new training procedure for Variational Autoencoders based on adversarial training. This allows us to make the inference model much more flexible, effectively allowing it to represent almost any family of conditional distributions over the latent variables. We believe that further progress can be made by investigating the class of neural network architectures used for the adversary and the encoder and decoder networks."
+>	"We presented a new training procedure for Variational Autoencoders based on adversarial training. This allows us to make the inference model much more flexible, effectively allowing it to represent almost any family of conditional distributions over the latent variables."
 
 >	"Adversarial Variational Bayes strives to optimize the same objective as a standard Variational Autoencoder (Kingma & Welling, 2013; Rezende et al., 2014), but approximates the Kullback-Leibler divergence using an adversary instead of relying on a closed-form formula."
 
@@ -2439,67 +2221,13 @@ x."
 >
 >	log p(x|θ) ≥ ∫ q(z) log [p(x,z|θ) / q(z)] dz = E[log p(x|z,θ)] - E[log q(z|x)/p(z)]
 >
->	where the expectations are taken with respect to the approximate posterior q. Usually we pick some known, common distribution q and optimize our hearts out. However, picking an appropriate q can be a challenge since we don't know what the true posterior really looks like and if we did, there'd be no need for variational inference. The clever trick with AVB is that the authors noticed that if the log [q(z|x)/p(z)] term can be replaced by something that doesn't require q(z|x) to be evaluated (i.e. to compute the actual probability), then the variational inference objective only requires that q(z|x) be sampled from, which can be done by a GAN-like generator network z = f(y) where y ~ N(0,1) and f is the neural network. They get around evaluating q by using a discriminator network to model the ratio directly (see this for general discussion of the approach)."
+>	where the expectations are taken with respect to the approximate posterior q. Usually we pick some known, common distribution q and optimize our hearts out. However, picking an appropriate q can be a challenge since we don't know what the true posterior really looks like and if we did, there'd be no need for variational inference. The clever trick with AVB is that the authors noticed that if the log [q(z|x)/p(z)] term can be replaced by something that doesn't require q(z|x) to be evaluated (i.e. to compute the actual probability), then the variational inference objective only requires that q(z|x) be sampled from, which can be done by a GAN-like generator network z = f(y) where y ~ N(0,1) and f is the neural network. They get around evaluating q by using a discriminator network to model the ratio directly."
 
->	"Nice theory that never holds in practice. Practically I don't think is any better than normal adversarial autoencoder (without epsilon) for large datasets. So the method allows for very complicated posteriors. However, for the syntetic data that makes some sense, as you literally have 4 data points. On the other hand when you have lots of data, let's say like MNIST, I'm not sure for an individual data point that you need such a complex posterior. Additionally, when your generator is not a GM, but a Net that is amplified. However, the aggregated posterior for a certain class could be complicated, but not for a single data point. Thus as there were no direct comparison in terms of metrics to a normal adversarial auto encoder, I'm not convinced practically this adds too much to it. Yes the theory is nice, but all of the ELBO stuff is valid when T is optimal, which not only is not, all of the time it is far from that. I think the authors should have done comparison to a normal adversarial autoencoder, e.g. without any epsilon."
-
->	"The original AAE paper already proposes a "Universal approximator posterior", which is essentially the same as "AVB". The authors of AAE found it to be no better than deterministic posterior, so they only report the deterministic case."
-
->	"This is means that the AVB is essentially in the AAE work. The only contribution is the relationship to the normal ELBO when the discriminator is optimal, but I'm not sure if that is not obvious."
-
-  - <https://youtu.be/y7pUN2t5LrA?t=14m19s> (Nowozin)
-  - <http://inference.vc/variational-inference-with-implicit-models-part-ii-amortised-inference-2/>
-  - <https://github.com/wiseodd/generative-models/tree/master/VAE/adversarial_vb>
-  - <https://gist.github.com/poolio/b71eb943d6537d01f46e7b20e9225149>
-
-
-#### Arulkumaran, Creswell, Bharath - ["Improving Sampling from Generative Autoencoders with Markov Chains"](https://arxiv.org/abs/1610.09296)
->	"We focus on generative autoencoders, such as variational or adversarial autoencoders, which jointly learn a generative model alongside an inference model. We define generative autoencoders as autoencoders which are trained to softly enforce a prior on the latent distribution learned by the model. However, the model does not necessarily learn to match the prior. We formulate a Markov chain Monte Carlo (MCMC) sampling process, equivalent to iteratively encoding and decoding, which allows us to sample from the learned latent distribution. Using this we can improve the quality of samples drawn from the model, especially when the learned distribution is far from the prior."
-
->	"In this paper we derive a MCMC sampling process that allows us to directly draw samples from Q(Z), the latent distribution learned by generative autoencoders, where Q(Z) approximates a specified prior distribution, P(Z). This allows us to improve samples x~Q(X|Z), as MCMC sampling allows us to condition these on z~Q(Z). The process is simple, where each step requires iteratively encoding and decoding. Furthermore, as Q(Z) is constrained to be close to P(Z), the initial sample z0 can be drawn from P(Z) to quickly reach regions of high probability under Q(Z). We show that not only do initially poor samples improve, but unusual artefacts from performing interpolations across the latent space can be corrected through the use of further sampling. We further validate our work by showing that the denoising properties of denoising generative autoencoders are best revealed the use of MCMC sampling. Our MCMC sampling process is straightforward, and can be applied easily to existing generative autoencoders. This technique is orthogonal to the use of more powerful posteriors in AAEs and VAEs, and the combination of both could result in further improvements in generative modelling. Finally, our basic MCMC proces opens the doors to apply a large existing body of research on sampling methods to generative autoencoders."
-
->	"The choice of prior may effect how much improvement can be gained when using MCMC sampling, assuming that the optimisation process converges to a reasonable solution. We first consider the case of VAEs, which minimise DKL[Q(Z|X) || P(Z)]. Minimizing this KL divergence penalises the model Q(Z) if it contains samples that are outside the support of the true distribution P(Z), which might mean that Q(Z) captures only a part of P(Z). This means that when sampling P(Z), we may sample a region that is not captured by Q(Z). This suggests that MCMC sampling can improve samples from VAEs by walking them towards denser regions in Q(Z)."
-
->	"The reverse KL divergence, DKL[P(Z) || Q(Z|X)], penalises the model Q(Z) if P(Z) produces samples that are outside of the support of Q(Z). By minimising this KL divergence, most samples in P(Z) will likely be in Q(Z) as well. AAEs are regularised using the JS entropy, given by 1/2 * DKL[P(Z) || 1/2 * (P(Z) + Q(Z|X))] + 1/2 * DKL[Q(Z|X) || 1/2 * (P(Z) + Q(Z|X))]. Minimising this cost function attempts to find a compromise between the aforementioned extremes. However, this still suggests that some samples from P(Z) may lie outside Q(Z), and so we expect AAEs to also benefit from MCMC sampling."
-
-
-#### Agrawal, Dukkipati - ["Deep Variational Inference Without Pixel-Wise Reconstruction"](http://arxiv.org/abs/1611.05209)
->	"Variational autoencoders, that are built upon deep neural networks have emerged as popular generative models in computer vision. Most of the work towards improving variational autoencoders has focused mainly on making the approximations to the posterior flexible and accurate, leading to tremendous progress. However, there have been limited efforts to replace pixel-wise reconstruction, which have known shortcomings. In this work, we use real-valued non-volume preserving transformations (real NVP) to exactly compute the conditional likelihood of the data given the latent distribution. We show that a simple VAE with this form of reconstruction is competitive with complicated VAE structures, on image modeling tasks. As part of our model, we develop powerful conditional coupling layers that enable real NVP to learn with fewer intermediate layers."
-
->	"VAPNEV is competitive with convolutional DRAW which is a complicated VAE structure with multiple stochastic layers and recurrent connections. This establishes that replacing pixel-wise reconstruction with exact likelihood methods like real NVP is beneficial to the performance of VAEs. The model is also competitive with real NVP, which uses a much bigger architecture. This shows the power of the conditional coupling layer transform, which is able to effectively utilize the semantic representation learned by the VAE latent distribution."
-
->	"Unlike a regular VAE, a single z might lead to different samples in VAPNEV, because of stochasticity in the Y space."
-
->	"We develop powerful conditional coupling layer transforms which enable the model to learn with smaller architectures. VAPNEV provides a lot of advantages such as (i) it provides a way to replace pixel-wise reconstruction which has known shortcomings, (ii) it gives a generative model which can be trained and sampled from efficiently and (iii) it is a latent variable model which can be used for downstream supervised or semi-supervised learning. This work can be extended in several ways. Using deeper architectures, and combining with expressive posterior computations like inverse autoregressive flow, it may be possible to compete with or even beat state-of-the-art models. This technique can be used to improve VAE models for other tasks such as semi-supervised learning and conditional density modeling."
-
-
-#### Larsen, Sonderby, Larochelle, Winther - ["Autoencoding Beyond Pixels Using a Learned Similarity Metric"](https://arxiv.org/abs/1512.09300)
->	"We present an autoencoder that leverages learned representations to better measure similarities in data space. By combining a variational autoencoder with a generative adversarial network we can use learned feature representations in the GAN discriminator as basis for the VAE reconstruction objective. Thereby, we replace element-wise errors with feature-wise errors to better capture the data distribution while offering invariance towards e.g. translation. We apply our method to images of faces and show that it outperforms VAEs with element-wise similarity measures in terms of visual fidelity. Moreover, we show that the method learns an embedding in which high-level abstract visual features (e.g. wearing glasses) can be modified using simple arithmetic."
-
->	"The problems with element-wise distance metrics are well known in the literature and many attempts have been made at going beyond pixels – typically using hand-engineered measures. Much in the spirit of deep learning, we argue that the similarity measure is yet another component which can be replaced by a learned model capable of capturing high-level structure relevant to the data distribution. In this work, our main contribution is an unsupervised scheme for learning and applying such a distance measure. With the learned distance measure we are able to train an image encoder-decoder network generating images of unprecedented visual fidelity as shown by our experiments. Moreover, we show that our network is able to disentangle factors of variation in the input data distribution and discover visual attributes in the high-level representation of the latent space. In principle, this lets us employ a large set of unlabeled images for training and use a small set of labeled images to discover features in latent space."
-
->	"We regard our method as an extension of the VAE framework. Though, it must be noted that the high quality of our generated images is due to the combined training of Dec as a both a VAE decoder and a GAN generator. This makes our method more of a hybrid between VAE and GAN, and alternatively, one could view our method more as an extension of GAN where p(z) is constrained by an additional network."
-
->	"It is not obvious that the discriminator network of a GAN provides a useful similarity measure as it is trained for a different task, namely being able to tell generated samples from real samples. However, convolutional features are often surprisingly good for transfer learning, and as we show, good enough in our case to improve on element-wise distances for images. It would be interesting to see if better features in the distance measure would improve the model, e.g. by employing a similarity measure provided by a Siamese network trained on faces, though in practice Siamese networks are not a good fit with our method as they require labeled data. Alternatively one could investigate the effect of using a pretrained feedforward network for measuring similarity."
-
->	"In summary, we have demonstrated a first attempt at unsupervised learning of encoder-decoder models as well as a similarity measure. Our results show that the visual fidelity of our method is competitive with GAN, which in that regard is considered state-of-the art. We therefore consider learned similarity measures a promising step towards scaling up generative models to more complex data distributions."
-
-  - <http://techtalks.tv/talks/autoencoding-beyond-pixels-using-a-learned-similarity-metric/62603/>
-  - <https://github.com/andersbll/autoencoding_beyond_pixels/>
-  - <https://github.com/commaai/research/blob/master/models/autoencoder.py>
-  - <https://github.com/timsainb/Tensorflow-MultiGPU-VAE-GAN>
-  - <https://github.com/stitchfix/fauxtograph>
-
-
-#### Lamb, Dumoulin, Courville - ["Discriminative Regularization for Generative Models"](http://arxiv.org/abs/1602.03220)
->	"We explore the question of whether the representations learned by classifiers can be used to enhance the quality of generative models. Our conjecture is that labels correspond to characteristics of natural data which are most salient to humans: identity in faces, objects in images, and utterances in speech. We propose to take advantage of this by using the representations from discriminative classifiers to augment the objective function corresponding to a generative model. In particular we enhance the objective function of the variational autoencoder, a popular generative model, with a discriminative regularization term. We show that enhancing the objective function in this way leads to samples that are clearer and have higher visual quality than the samples from the standard variational autoencoders."
-
->	"A common view in cognitive science is that generative modeling will play a central role in the development of artificial intelligence by enabling feature learning where labeled data and reward signals are sparse. In this view generative models serve to assist other models by learning representations and discovering causal factors from the nearly unlimited supply of unlabeled data. Our paper shows that this interaction ought to be a two-way street, in which supervised learning contributes to generative modeling by determining which attributes of the data are worth learning to represent. We have demonstrated that discriminative information can be used to regularize generative models to improve the perceptual quality of their samples."
-
-  - <https://www.flickr.com/photos/dribnet/27220301226/sizes/o/> + <https://www.flickr.com/photos/dribnet/albums/72157670872636082> (demo)
-  - <https://www.flickr.com/photos/dribnet/albums/72157670872636082>
-  - <https://twitter.com/smilevector> (demo)
-  - <https://github.com/vdumoulin/discgen>
+  - `video` <https://youtu.be/y7pUN2t5LrA?t=14m19s> (Nowozin)
+  - `video` <https://youtu.be/m80Vp-jz-Io?t=1h28m34s> (Tolstikhin)
+  - `post` <http://inference.vc/variational-inference-with-implicit-models-part-ii-amortised-inference-2/>
+  - `code` <https://github.com/wiseodd/generative-models/tree/master/VAE/adversarial_vb>
+  - `code` <https://gist.github.com/poolio/b71eb943d6537d01f46e7b20e9225149>
 
 
 #### Dumoulin, Belghazi, Poole, Lamb, Arjovsky, Mastropietro, Courville - ["Adversarially Learned Inference"](http://arxiv.org/abs/1606.00704)
@@ -2516,18 +2244,18 @@ x."
 ----
 >	"Modified GAN setup to have a "visible generator" compete against a "latent generator" so that the network can perform inference, generation, and semantic reconstruction."
 
-  - <https://ishmaelbelghazi.github.io/ALI/>
-  - <https://youtube.com/watch?v=yyl0-y-k4Nc> (Courville)
-  - <https://youtube.com/watch?v=K3r2k93zJrw> (Courville)
-  - <http://inference.vc/variational-inference-using-implicit-models-part-iii-joint-contrastive-inference-ali-and-bigan/>
-  - <https://github.com/IshmaelBelghazi/ALI>
+  - `post` <https://ishmaelbelghazi.github.io/ALI/>
+  - `video` <https://youtube.com/watch?v=yyl0-y-k4Nc> (Courville)
+  - `video` <https://youtube.com/watch?v=K3r2k93zJrw> (Courville)
+  - `post` <http://inference.vc/variational-inference-using-implicit-models-part-iii-joint-contrastive-inference-ali-and-bigan/>
+  - `code` <https://github.com/IshmaelBelghazi/ALI>
 
 
 #### Donahue, Krahenbuhl, Darrell - ["Adversarial Feature Learning"](https://arxiv.org/abs/1605.09782)
 >	"The ability of the Generative Adversarial Networks framework to learn generative models mapping from simple latent distributions to arbitrarily complex data distributions has been demonstrated empirically, with compelling results showing generators learn to “linearize semantics” in the latent space of such models. Intuitively, such latent spaces may serve as useful feature representations for auxiliary problems where semantics are relevant. However, in their existing form, GANs have no means of learning the inverse mapping – projecting data back into the latent space. We propose Bidirectional Generative Adversarial Networks (BiGANs) as a means of learning this inverse mapping, and demonstrate that the resulting learned feature representation is useful for auxiliary supervised discrimination tasks, competitive with contemporary approaches to unsupervised and self-supervised feature learning."
 
-  - <https://youtube.com/watch?v=yyl0-y-k4Nc> (Courville)
-  - <http://inference.vc/variational-inference-using-implicit-models-part-iii-joint-contrastive-inference-ali-and-bigan/>
+  - `video` <https://youtube.com/watch?v=yyl0-y-k4Nc> (Courville)
+  - `post` <http://inference.vc/variational-inference-using-implicit-models-part-iii-joint-contrastive-inference-ali-and-bigan/>
 
 
 #### Rezende, Eslami, Mohamed, Battaglia, Jaderberg, Heess - ["Unsupervised Learning of 3D Structure from Images"](http://arxiv.org/abs/1607.00662)
@@ -2538,25 +2266,25 @@ x."
 >	"There have been many attempts at performing this kind of reasoning, dating back to the earliest years of the field. Despite this, progress has been slow for several reasons: First, the task is inherently ill-posed. Objects always appear under self-occlusion, and there are an infinite number of 3D structures that could give rise to a particular 2D observation. The natural way to address this problem is by learning statistical models that recognize which 3D structures are likely and which are not. Second, even when endowed with such a statistical model, inference is intractable. This includes the sub-tasks of mapping image pixels to 3D representations, detecting and establishing correspondences between different images of the same structures, and that of handling the multi-modality of the representations in this 3D space. Third, it is unclear how 3D structures are best represented, e.g., via dense volumes of voxels, via a collection of vertices, edges and faces that define a polyhedral mesh, or some other kind of representation. Finally, ground-truth 3D data is difficult and expensive to collect and therefore datasets have so far been relatively limited in size and scope."
 
 >"
-> - We design a strong generative model of 3D structures, defined over the space of volumes and meshes, using ideas from state-of-the-art generative models of images.  
-> - We show that our models produce high-quality samples, can effectively capture uncertainty and are amenable to probabilistic inference, allowing for applications in 3D generation and simulation. We report log-likelihoods on a dataset of shape primitives, a 3D version of MNIST, and on ShapeNet, which to the best of our knowledge, constitutes the first quantitative benchmark for 3D density modeling.  
-> - We show how complex inference tasks, e.g., that of inferring plausible 3D structures given a 2D image, can be achieved using conditional training of the models. We demonstrate that such models recover 3D representations in one forward pass of a neural network and they accurately capture the multi-modality of the posterior.  
-> - We explore both volumetric and mesh-based representations of 3D structure. The latter is achieved by flexible inclusion of off-the-shelf renders such as OpenGL. This allows us to build in further knowledge of the rendering process, e.g., how light bounces of surfaces and interacts with its material’s attributes.  
-> - We show how the aforementioned models and inference networks can be trained end-to-end directly from 2D images without any use of ground-truth 3D labels. This demonstrates for the first time the feasibility of learning to infer 3D representations of the world in a purely unsupervised manner."  
+>	We design a strong generative model of 3D structures, defined over the space of volumes and meshes, using ideas from state-of-the-art generative models of images.  
+>	We show that our models produce high-quality samples, can effectively capture uncertainty and are amenable to probabilistic inference, allowing for applications in 3D generation and simulation. We report log-likelihoods on a dataset of shape primitives, a 3D version of MNIST, and on ShapeNet, which to the best of our knowledge, constitutes the first quantitative benchmark for 3D density modeling.  
+>	We show how complex inference tasks, e.g., that of inferring plausible 3D structures given a 2D image, can be achieved using conditional training of the models. We demonstrate that such models recover 3D representations in one forward pass of a neural network and they accurately capture the multi-modality of the posterior.  
+>	We explore both volumetric and mesh-based representations of 3D structure. The latter is achieved by flexible inclusion of off-the-shelf renders such as OpenGL. This allows us to build in further knowledge of the rendering process, e.g., how light bounces of surfaces and interacts with its material’s attributes.  
+>	We show how the aforementioned models and inference networks can be trained end-to-end directly from 2D images without any use of ground-truth 3D labels. This demonstrates for the first time the feasibility of learning to infer 3D representations of the world in a purely unsupervised manner."  
 
 >	"In this paper we introduced a powerful family of 3D generative models inspired by recent advances in image modeling. We showed that when trained on ground-truth volumes, they can produce high-quality samples that capture the multi-modality of the data. We further showed how common inference tasks, such as that of inferring a posterior over 3D structures given a 2D image, can be performed efficiently via conditional training. We also demonstrated end-to-end training of such models directly from 2D images through the use of differentiable renderers. We experimented with two kinds of 3D representations: volumes and meshes. Volumes are flexible and can capture a diverse range of structures, however they introduce modeling and computational challenges due to their high dimensionality. Conversely, meshes can be much lower dimensional and therefore easier to work with, and they are the data-type of choice for common rendering engines, however standard paramaterizations can be restrictive in the range of shapes they can capture."
 
-  - <https://youtube.com/watch?v=stvDAGQwL5c> + <https://goo.gl/9hCkxs> (demos)
-  - <https://docs.google.com/presentation/d/12uZQ_Vbvt3tzQYhWR3BexqOzbZ-8AeT_jZjuuYjPJiY/pub?start=true&loop=true&delayms=30000#slide=id.g1329951dde_0_0> (demos)
-  - <https://youtu.be/AggqBRdz6CQ?t=13m29s> (Mohamed)
-  - <https://blog.acolyer.org/2017/01/05/unsupervised-learning-of-3d-structure-from-images/>
+  - `video` <https://youtube.com/watch?v=stvDAGQwL5c> + <https://goo.gl/9hCkxs> (demo)
+  - `video` <https://docs.google.com/presentation/d/12uZQ_Vbvt3tzQYhWR3BexqOzbZ-8AeT_jZjuuYjPJiY/pub?start=true&loop=true&delayms=30000#slide=id.g1329951dde_0_0> (demo)
+  - `video` <https://youtu.be/AggqBRdz6CQ?t=13m29s> (Mohamed)
+  - `notes` <https://blog.acolyer.org/2017/01/05/unsupervised-learning-of-3d-structure-from-images/>
 
 
 
 ---
-### interesting papers - bayesian inference and learning
+### interesting papers - bayesian deep learning
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#bayesian-inference-and-learning)
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#bayesian-deep-learning)
 
 
 #### Blei, Kucukelbir, McAuliffe - ["Variational Inference: A Review for Statisticians"](http://arxiv.org/abs/1601.00670)
@@ -2573,17 +2301,17 @@ x."
 
 >	"In this work we developed a simple approach for learning highly non-Gaussian posterior densities by learning transformations of simple densities to more complex ones through a normalizing flow. When combined with an amortized approach for variational inference using inference networks and efficient Monte Carlo gradient estimation, we are able to show clear improvements over simple approximations on different problems. Using this view of normalizing flows, we are able to provide a unified perspective of other closely related methods for flexible posterior estimation that points to a wide spectrum of approaches for designing more powerful posterior approximations with different statistical and computational tradeoffs. An important conclusion from the discussion in section 3 is that there exist classes of normalizing flows that allow us to create extremely rich posterior approximations for variational inference. With normalizing flows, we are able to show that in the asymptotic regime, the space of solutions is rich enough to contain the true posterior distribution. If we combine this with the local convergence and consistency results for maximum likelihood parameter estimation in certain classes of latent variables models, we see that we are now able overcome the objections to using variational inference as a competitive and default approach for statistical inference. Making such statements rigorous is an important line of future research. Normalizing flows allow us to control the complexity of the posterior at run-time by simply increasing the flow length of the sequence. The approach we presented considered normalizing flows based on simple transformations of the form (10) and (14). These are just two of the many maps that can be used, and alternative transforms can be designed for posterior approximations that may require other constraints, e.g., a restricted support. An important avenue of future research lies in describing the classes of transformations that allow for different characteristics of the posterior and that still allow for efficient, linear-time computation."
 
-  - <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods> (1:05:06) (Mohamed)
-  - <https://youtu.be/tqGEX_Ucu04?t=33m58s> (Molchanov) (in russian)
-  - <https://ferrine.github.io/blog/2017/07/11/normalizing-flows-overview/>
-  - <https://github.com/pymc-devs/pymc3/blob/master/pymc3/variational/flows.py>
+  - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods> (1:05:06) (Mohamed)
+  - `video` <https://youtu.be/tqGEX_Ucu04?t=33m58s> (Molchanov) (in russian)
+  - `post` <https://ferrine.github.io/blog/2017/07/11/normalizing-flows-overview/>
+  - `code` <https://github.com/pymc-devs/pymc3/blob/master/pymc3/variational/flows.py>
 
 
 #### Hernandez-Lobato, Li, Rowland, Hernandez-Lobato, Bui, Turner - ["Black-Box α-Divergence Minimization"](https://arxiv.org/abs/1511.03243)
 >	"Black-box alpha is a new approximate inference method based on the minimization of α-divergences. BB-α scales to large datasets because it can be implemented using stochastic gradient descent. BB-α can be applied to complex probabilistic models with little effort since it only requires as input the likelihood function and its gradients. These gradients can be easily obtained using automatic differentiation. By changing the divergence parameter α, the method is able to interpolate between variational Bayes (VB) (α→ 0) and an algorithm similar to expectation propagation (EP) (α= 1). Experiments on probit regression and neural network regression and classification problems show that BB-α with non-standard settings of α, such as α= 0.5, usually produces better predictions than with α→ 0 (VB) or α= 1 (EP)."
 >	"We have proposed BB-α as a black-box inference algorithm to approximate power EP. This is done by considering the energy function used by power EP and constraining the form of the site approximations in this method. The proposed method locally minimizes the α-divergence that is a rich family of divergence measures between distributions including the Kullback-Leibler divergence. Such a method is guaranteed to converge under certain conditions, and can be implemented by optimizing an energy function without having to use inefficient double-loop algorithms. Scalability to large datasets can be achieved by using stochastic gradient descent with minibatches. Furthermore, a combination of a Monte Carlo approximation and automatic differentiation methods allows our technique to be applied in a straightforward manner to a wide range ofprobabilistic models with complex likelihood factors. Experiments with neural networks applied to small and large datasets demonstrate both the accuracy and the scalability of the proposed approach. The evaluations also indicate the optimal setting for α may vary for different tasks."
 
-  - <https://youtube.com/watch?v=Ev-6s8b3QrI> (Hernandez-Lobato)
+  - `video` <https://youtube.com/watch?v=Ev-6s8b3QrI> (Hernandez-Lobato)
 
 
 #### Papamakarios, Murray - ["Fast Epsilon-free Inference of Simulation Models with Bayesian Conditional Density Estimation"](http://arxiv.org/abs/1605.06376)
@@ -2591,8 +2319,8 @@ x."
 
 >	"Conventional ABC algorithms such as the above suffer from three drawbacks. First, they only represent the parameter posterior as a set of (possibly weighted or correlated) samples. A sample-based representation easily gives estimates and error bars of individual parameters, and model predictions. However these computations are noisy, and it is not obvious how to perform some other computations using samples, such as combining posteriors from two separate analyses. Second, the parameter samples do not come from the correct Bayesian posterior, but from an approximation based on assuming a pseudo-observation that the data is within an Epsilon-ball centred on the data actually observed. Third, as the Epsilon-tolerance is reduced, it can become impractical to simulate the model enough times to match the observed data even once. When simulations are expensive to perform, good quality inference becomes impractical. In this paper, we propose an alternative approach to likelihood-free inference, which unlike conventional ABC does not suffer from the above three issues. Instead of returning a set of parameter samples from an approximate posterior, our approach learns a parametric approximation to the exact posterior, which can be made as accurate as required. Furthermore, we present a strategy for learning our parametric approximation by making efficient use of simulations from the model. We show experimentally that our approach is capable of closely approximating the exact posterior, while making efficient use of simulations compared to conventional ABC. Our approach is based on conditional density estimation using Bayesian neural networks, and draws upon advances in density estimation, stochastic variational inference, and recognition networks. To the best of our knowledge, this is the first work that applies such techniques to the field of likelihood-free inference."
 
-  - <http://dennisprangle.github.io/research/2016/06/07/bayesian-inference-by-neural-networks> + <http://dennisprangle.github.io/research/2016/06/07/bayesian-inference-by-neural-networks2>
-  - <https://github.com/gpapamak/epsilon_free_inference>
+  - `post` <http://dennisprangle.github.io/research/2016/06/07/bayesian-inference-by-neural-networks> + <http://dennisprangle.github.io/research/2016/06/07/bayesian-inference-by-neural-networks2>
+  - `code` <https://github.com/gpapamak/epsilon_free_inference>
 
 
 #### Johnson, Duvenaud, Wiltschko, Datta, Adams - ["Composing Graphical Models with Neural Networks for Structured Representations and Fast Inference"](http://arxiv.org/abs/1603.06277)
@@ -2602,19 +2330,19 @@ x."
 
 >	"Our approach uses graphical models for representing structured probability distributions, and uses ideas from variational autoencoders for learning not only the nonlinear feature manifold but also bottom-up recognition networks to improve inference. Thus our method enables the combination of flexible deep learning feature models with structured Bayesian and even Bayesian nonparametric priors. Our approach yields a single variational inference objective in which all components of the model are learned simultaneously. Furthermore, we develop a scalable fitting algorithm that combines several advances in efficient inference, including stochastic variational inference, graphical model message passing, and backpropagation with the reparameterization trick."
 
-  - <https://youtube.com/watch?v=btr1poCYIzw>
-  - <http://videolectures.net/deeplearning2017_johnson_graphical_models/> (Johnson)
-  - <https://youtube.com/watch?v=vnO3w8OgTE8> (Duvenaud)
-  - <http://www.cs.toronto.edu/~duvenaud/courses/csc2541/slides/svae-slides.pdf>
-  - <http://github.com/mattjj/svae>
+  - `video` <https://youtube.com/watch?v=btr1poCYIzw>
+  - `video` <http://videolectures.net/deeplearning2017_johnson_graphical_models/> (Johnson)
+  - `video` <https://youtube.com/watch?v=vnO3w8OgTE8> (Duvenaud)
+  - `slides` <http://www.cs.toronto.edu/~duvenaud/courses/csc2541/slides/svae-slides.pdf>
+  - `code` <http://github.com/mattjj/svae>
 
 
 #### Rezende, Mohamed, Danihelka, Gregor, Wierstra - ["One-Shot Generalization in Deep Generative Models"](https://arxiv.org/abs/1603.05106)
 >	"Humans have an impressive ability to reason about new concepts and experiences from just a single example. In particular, humans have an ability for one-shot generalization: an ability to encounter a new concept, understand its structure, and then be able to generate compelling alternative variations of the concept. We develop machine learning systems with this important capacity by developing new deep generative models, models that combine the representational power of deep learning with the inferential power of Bayesian reasoning. We develop a class of sequential generative models that are built on the principles of feedback and attention. These two characteristics lead to generative models that are among the state-of-the art in density estimation and image generation. We demonstrate the one-shot generalization ability of our models using three tasks: unconditional sampling, generating new exemplars of a given concept, and generating new exemplars of a family of concepts. In all cases our models are able to generate compelling and diverse samples---having seen new examples just once---providing an important class of general-purpose models for one-shot machine learning."
 
-  - <http://youtube.com/watch?v=TpmoQ_j3Jv4> (demo)
-  - <http://techtalks.tv/talks/one-shot-generalization-in-deep-generative-models/62365/>
-  - <https://youtu.be/XpIDCzwNe78?t=43m> (Bartunov)
+  - `video` <http://youtube.com/watch?v=TpmoQ_j3Jv4> (demo)
+  - `video` <http://techtalks.tv/talks/one-shot-generalization-in-deep-generative-models/62365/>
+  - `video` <https://youtu.be/XpIDCzwNe78?t=43m> (Bartunov)
 
 
 #### Edwards, Storkey - ["Towards a Neural Statistician"](http://arxiv.org/abs/1606.02185)
@@ -2624,16 +2352,16 @@ x."
 
 >	"Potentially a more powerful alternative to Variational Autoencoder."
 
-  - <http://techtalks.tv/talks/neural-statistician/63048/> (Edwards)
-  - <https://youtu.be/XpIDCzwNe78?t=51m53s> (Bartunov)
-  - <http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.02185>
+  - `video` <http://techtalks.tv/talks/neural-statistician/63048/> (Edwards)
+  - `video` <https://youtu.be/XpIDCzwNe78?t=51m53s> (Bartunov)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.02185>
 
 
 #### Hernandez-Lobato, Adams - ["Probabilistic Backpropagation for Scalable Learning of Bayesian Neural Networks"](http://arxiv.org/abs/1502.05336)
 >	"Large multilayer neural networks trained with backpropagation have recently achieved state-of-the-art results in a wide range of problems. However, using backprop for neural net learning still has some disadvantages, e.g., having to tune a large number of hyperparameters to the data, lack of calibrated probabilistic predictions, and a tendency to overfit the training data. In principle, the Bayesian approach to learning neural networks does not have these problems. However, existing Bayesian techniques lack scalability to large dataset and network sizes. In this work we present a novel scalable method for learning Bayesian neural networks, called probabilistic backpropagation. Similar to classical backpropagation, PBP works by computing a forward propagation of probabilities through the network and then doing a backward computation of gradients. A series of experiments on ten real-world datasets show that PBP is significantly faster than other techniques, while offering competitive predictive abilities. Our experiments also show that PBP provides accurate estimates of the posterior variance on the network weights."
 
-  - <http://videolectures.net/icml2015_hernandez_lobato_bayesian_neural/> (Hernandez-Lobato)
-  - <https://github.com/HIPS/Probabilistic-Backpropagation>
+  - `video` <http://videolectures.net/icml2015_hernandez_lobato_bayesian_neural/> (Hernandez-Lobato)
+  - `code` <https://github.com/HIPS/Probabilistic-Backpropagation>
 
 
 #### Blundell, Cornebise, Kavukcuoglu, Wierstra - ["Weight Uncertainty in Neural Networks"](http://arxiv.org/abs/1505.05424)
@@ -2651,17 +2379,17 @@ x."
 
 >	"We introduced a new algorithm for learning neural networks with uncertainty on the weights called Bayes by Backprop. It optimises a well-defined objective function to learn a distribution on the weights of a neural network. The algorithm achieves good results in several domains. When classifying MNIST digits, performance from Bayes by Backprop is comparable to that of dropout. We demonstrated on a simple non-linear regression problem that the uncertainty introduced allows the network to make more reasonable predictions about unseen data. Finally, for contextual bandits, we showed how Bayes by Backprop can automatically learn how to trade-off exploration and exploitation. Since Bayes by Backprop simply uses gradient updates, it can readily be scaled using multi-machine optimisation schemes such as asynchronous SGD."
 
-  - <http://videolectures.net/icml2015_blundell_neural_network/> (Blundell)
-  - <https://github.com/tabacof/bayesian-nn-uncertainty>
-  - <https://github.com/blei-lab/edward/blob/master/examples/bayesian_nn.py>
-  - <https://github.com/ferrine/gelato>
-  - <https://gist.github.com/rocknrollnerd/c5af642cf217971d93f499e8f70fcb72>
+  - `video` <http://videolectures.net/icml2015_blundell_neural_network/> (Blundell)
+  - `code` <https://github.com/tabacof/bayesian-nn-uncertainty>
+  - `code` <https://github.com/blei-lab/edward/blob/master/examples/bayesian_nn.py>
+  - `code` <https://github.com/ferrine/gelato>
+  - `code` <https://gist.github.com/rocknrollnerd/c5af642cf217971d93f499e8f70fcb72>
 
 
 #### Korattikara, Rathod, Murphy, Welling - ["Bayesian Dark Knowledge"](https://arxiv.org/abs/1506.04416)
 >	"We consider the problem of Bayesian parameter estimation for deep neural networks, which is important in problem settings where we may have little data, and/or where we need accurate posterior predictive densities, e.g., for applications involving bandits or active learning. One simple approach to this is to use online Monte Carlo methods, such as SGLD (stochastic gradient Langevin dynamics). Unfortunately, such a method needs to store many copies of the parameters (which wastes memory), and needs to make predictions using many versions of the model (which wastes time). We describe a method for "distilling" a Monte Carlo approximation to the posterior predictive density into a more compact form, namely a single deep neural network. We compare to two very recent approaches to Bayesian neural networks, namely an approach based on expectation propagation [Hernandez-Lobato and Adams, 2015] and an approach based on variational Bayes [Blundell et al., 2015]. Our method performs better than both of these, is much simpler to implement, and uses less computation at test time."
 
-  - <https://youtu.be/tqGEX_Ucu04?t=1h1m23s> (Molchanov) (in russian)
+  - `video` <https://youtu.be/tqGEX_Ucu04?t=1h1m23s> (Molchanov) (in russian)
 
 
 #### Gal, Ghahramani - ["Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning"](http://arxiv.org/abs/1506.02142)
@@ -2675,15 +2403,21 @@ x."
 
 >	"It has long been known that infinitely wide (single hidden layer) NNs with distributions placed over their weights converge to Gaussian processes. This known relation is through a limit argument that does not allow us to translate properties from the Gaussian process to finite NNs easily. Finite NNs with distributions placed over the weights have been studied extensively as Bayesian neural networks. These offer robustness to over-fitting as well, but with challenging inference and additional computational costs. Variational inference has been applied to these models, but with limited success. Recent advances in variational inference introduced new techniques into the field such as sampling-based variational inference and stochastic variational inference. These have been used to obtain new approximations for Bayesian neural networks that perform as well as dropout. However these models come with a prohibitive computational cost. To represent uncertainty, the number of parameters in these models is doubled for the same network size. Further, they require more time to converge and do not improve on existing techniques. Given that good uncertainty estimates can be cheaply obtained from common dropout models, this results in unnecessary additional computation. An alternative approach to variational inference makes use of expectation propagation and has improved considerably in RMSE and uncertainty estimation on VI approaches. In the results section we compare dropout to these approaches and show a significant improvement in both RMSE and uncertainty estimation."
 
-  - <http://arxiv.org/abs/1506.02157> (Appendix)
-  - <http://research.microsoft.com/apps/video/default.aspx?id=259218> (Gal)
-  - <http://techtalks.tv/talks/dropout-as-a-bayesian-approximation-representing-model-uncertainty-in-deep-learning/62508/> (Gal)
-  - <https://youtu.be/tqGEX_Ucu04?t=12m43s> (Molchanov) (in russian)
-  - <http://mlg.eng.cam.ac.uk/yarin/blog_3d801aa532c1ce.html> (Gal)
-  - <https://www.evernote.com/shard/s189/sh/0b46fb48-dd1a-4e3b-ac5c-289f4925ff7e/3f0f03231757ded363b42ce71ebfcc70> (Larochelle)
-  - <https://plus.google.com/u/0/+AnkurHanda/posts/DnXB81efTwa>
-  - <http://computervisionblog.com/2016/06/making-deep-networks-probabilistic-via.html>
-  - <https://github.com/tabacof/bayesian-nn-uncertainty>
+----
+>	"We show that a neural network with arbitrary depth and non-linearities, with dropout applied before every weight layer, is mathematically equivalent to an approximation to a well known Bayesian model. This interpretation might offer an explanation to some of dropout's key properties, such as its robustness to over-fitting. Our interpretation allows us to reason about uncertainty in deep learning, and allows the introduction of the Bayesian machinery into existing deep learning frameworks in a principled way."
+
+----
+>	"The main result of this paper is that deep networks with dropout are mathematically equivalent to variational approximation of Gaussian processes with a particular choice of covariance function."
+
+  - `paper` ["Dropout as a Bayesian Approximation: Appendix"](http://arxiv.org/abs/1506.02157) by Gal and Ghahramani
+  - `video` <http://research.microsoft.com/apps/video/default.aspx?id=259218> (Gal)
+  - `video` <http://techtalks.tv/talks/dropout-as-a-bayesian-approximation-representing-model-uncertainty-in-deep-learning/62508/> (Gal)
+  - `video` <https://youtu.be/tqGEX_Ucu04?t=12m43s> (Molchanov) (in russian)
+  - `post` <http://mlg.eng.cam.ac.uk/yarin/blog_3d801aa532c1ce.html> (Gal)
+  - `post` <http://www.computervisionblog.com/2016/06/making-deep-networks-probabilistic-via.html>
+  - `notes` <https://www.evernote.com/shard/s189/sh/0b46fb48-dd1a-4e3b-ac5c-289f4925ff7e/3f0f03231757ded363b42ce71ebfcc70> (Larochelle)
+  - `notes` <https://plus.google.com/u/0/+AnkurHanda/posts/DnXB81efTwa>
+  - `code` <https://github.com/tabacof/bayesian-nn-uncertainty>
 
 
 #### Gal - ["A Theoretically Grounded Application of Dropout in Recurrent Neural Networks"](http://arxiv.org/abs/1512.05287)
@@ -2697,8 +2431,8 @@ x."
 
 >	"We introduce the Bayesian RNN - an RNN with weights treated as random variables. Approximating the posterior distribution over the weights with a Bernoulli approximating variational distributions reveals how dropout should be applied in RNNs. More specifically, the random weights when conditioned on some observations have a posterior. This posterior is approximated with a Bernoulli approximating distribution. Implementing this approximate inference procedure is identical to repeating the same dropout mask throughout the sequence. When used with discrete inputs (i.e. words) we place a distribution over the word embeddings as well - resulting in a fully Bayesian model. This corresponds to randomly dropping words in the sentence, and might be interpreted as forcing the model not to rely on single words for its task."
 
-  - <https://youtu.be/tqGEX_Ucu04?t=19m1s> (Molchanov) (in russian)
-  - <https://github.com/yaringal/BayesianRNN>
+  - `video` <https://youtu.be/tqGEX_Ucu04?t=19m1s> (Molchanov) (in russian)
+  - `code` <https://github.com/yaringal/BayesianRNN>
 
 
 #### Osband - ["Risk versus Uncertainty in Deep Learning: Bayes, Bootstrap and the Dangers of Dropout"](http://bayesiandeeplearning.org/papers/BDL_4.pdf)
@@ -2716,7 +2450,7 @@ x."
 
 >	"We have proposed a simple and scalable solution that provides a very strong baseline on evaluation metrics for uncertainty quantification. Our method uses scoring rules as training objectives to encourage the neural network to produce better calibrated predictions and uses a combination of ensembles and adversarial training for robustness to model misspecification and dataset shift. Our method is well suited for large scale distributed computation and can be readily implemented for a wide variety of architectures such as MLPs, CNNs, etc including those which do not use dropout (e.g. residual networks). It is perhaps surprising to the Bayesian deep learning community that a non-Bayesian (yet probabilistic) approach can perform as well as Bayesian neural networks. We hope that this work will encourage community to think about hybrid approaches (e.g. using non-Bayesian approaches such as ensembles) and other interesting metrics for evaluating predictive uncertainty."
 
-  - <https://github.com/axelbrando/Mixture-Density-Networks-for-distribution-and-uncertainty-estimation/>
+  - `code` <https://github.com/axelbrando/Mixture-Density-Networks-for-distribution-and-uncertainty-estimation>
 
 
 #### Louizos, Welling - ["Multiplicative Normalizing Flows for Variational Bayesian Neural Networks"](https://arxiv.org/abs/1703.01961)
@@ -2726,7 +2460,7 @@ x."
 
 >	"Another promising direction is that of designing better priors for Bayesian neural networks. For example (Neal, 1995) has identified limitations of Gaussian priors and proposes alternative priors such as the Cauchy. Furthermore, the prior over the parameters also affects the type of uncertainty we get in our predictions; for instance we observed in our experiments a significant difference in uncertainty between Gaussian and log-uniform priors. Since different problems require different types of uncertainty it makes sense to choose the prior accordingly, e.g. use an informative prior so as to alleviate adversarial examples."
 
-  - <https://youtu.be/tqGEX_Ucu04?t=39m23s> (Molchanov) (in russian)
+  - `video` <https://youtu.be/tqGEX_Ucu04?t=39m23s> (Molchanov) (in russian)
 
 
 
@@ -2742,10 +2476,7 @@ x."
 >	"Neural Machine Translation is an end-to-end learning approach for automated translation, with the potential to overcome many of the weaknesses of conventional phrase-based translation systems. Unfortunately, NMT systems are known to be computationally expensive both in training and in translation inference. Also, most NMT systems have difficulty with rare words. These issues have hindered NMT's use in practical deployments and services, where both accuracy and speed are essential. In this work, we present GNMT, Google's Neural Machine Translation system, which attempts to address many of these issues. Our model consists of a deep LSTM network with 8 encoder and 8 decoder layers using attention and residual connections. To improve parallelism and therefore decrease training time, our attention mechanism connects the bottom layer of the decoder to the top layer of the encoder. To accelerate the final translation speed, we employ low-precision arithmetic during inference computations. To improve handling of rare words, we divide words into a limited set of common sub-word units ("wordpieces") for both input and output. This method provides a good balance between the flexibility of "character"-delimited models and the efficiency of "word"-delimited models, naturally handles translation of rare words, and ultimately improves the overall accuracy of the system. Our beam search technique employs a length-normalization procedure and uses a coverage penalty, which encourages generation of an output sentence that is most likely to cover all the words in the source sentence. On the WMT'14 English-to-French and English-to-German benchmarks, GNMT achieves competitive results to state-of-the-art. Using a human side-by-side evaluation on a set of isolated simple sentences, it reduces translation errors by an average of 60% compared to Google's phrase-based production system."
 
   - <http://translate.google.com> (demo)
-  - <http://smerity.com/articles/2016/google_nmt_arch.html>
-  - <http://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-with-gpus/>
-  - <http://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-gpus-part-2/>
-  - <http://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-gpus-part-3/>
+  - `notes` <http://smerity.com/articles/2016/google_nmt_arch.html>
 
 
 #### Iyyer, Boyd-Graber, Claudino, Socher, Daume - ["A Neural Network for Factoid Question Answering over Paragraphs"](http://cs.umd.edu/~miyyer/qblearn/)
@@ -2765,19 +2496,18 @@ x."
 
 >	"Unlike easier tasks like translation, however, a model like sequence to sequence will not be able to successfully “solve” the problem of modeling dialogue due to several obvious simplifications: the objective function being optimized does not capture the actual objective achieved through human communication, which is typically longer term and based on exchange of information rather than next step prediction. The lack of a model to ensure consistency and general world knowledge is another obvious limitation of a purely unsupervised model."
 
-  - <http://www.shortscience.org/paper?bibtexKey=journals/corr/VinyalsL15>
-  - <https://github.com/macournoyer/neuralconvo>
-  - <https://github.com/deepcoord/seq2seq>
-  - <https://github.com/farizrahman4u/seq2seq>
-  - <https://github.com/nicolas-ivanov/lasagne_seq2seq>
-  - <https://github.com/pbhatia243/Neural_Conversation_Models>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/VinyalsL15>
+  - `code` <https://github.com/macournoyer/neuralconvo>
+  - `code` <https://github.com/deepcoord/seq2seq>
+  - `code` <https://github.com/farizrahman4u/seq2seq>
+  - `code` <https://github.com/nicolas-ivanov/lasagne_seq2seq>
+  - `code` <https://github.com/pbhatia243/Neural_Conversation_Models>
 
 
 #### Zaremba, Kurach, Fergus - ["Learning to Discover Efficient Mathematical Identities"](http://arxiv.org/abs/1406.1584)
 >	"In this paper we explore how machine learning techniques can be applied to the discovery of efficient mathematical identities. We introduce an attribute grammar framework for representing symbolic expressions. Given a grammar of math operators, we build trees that combine them in different ways, looking for compositions that are analytically equivalent to a target expression but of lower computational complexity. However, as the space of trees grows exponentially with the complexity of the target expression, brute force search is impractical for all but the simplest of expressions. Consequently, we introduce two novel learning approaches that are able to learn from simpler expressions to guide the tree search. The first of these is a simple n-gram model, the other being a recursive neural network. We show how these approaches enable us to derive complex identities, beyond reach of brute-force search, or human derivation."
 
-  - <http://youtube.com/watch?v=Hx20MUmWAfg> (Fergus)
-  - <http://cs.nyu.edu/~zaremba/docs/Learning%20to%20manipulate%20symbols.pdf> (Zaremba)
+  - `video` <http://youtube.com/watch?v=Hx20MUmWAfg> (Fergus)
 
 
 #### Duvenaud, Maclaurin, Aguilera-Iparraguirre, Gomez-Bombarelli, Hirzel, Aspuru-Guzik, Adams - ["Convolutional Networks on Graphs for Learning Molecular Fingerprints"](http://arxiv.org/abs/1509.09292)
@@ -2793,18 +2523,18 @@ x."
 #### Bojarski, Del Testa, Dworakowski, Firner, Flepp, Goyal, Jackel, Monfort, Muller, Zhang, Zhao, Zieba - ["End to End Learning for Self-Driving Cars"](http://arxiv.org/abs/1604.07316)
 >	"We trained a convolutional neural network to map raw pixels from a single front-facing camera directly to steering commands. This end-to-end approach proved surprisingly powerful. With minimum training data from humans the system learns to drive in traffic on local roads with or without lane markings and on highways. It also operates in areas with unclear visual guidance such as in parking lots and on unpaved roads. The system automatically learns internal representations of the necessary processing steps such as detecting useful road features with only the human steering angle as the training signal. We never explicitly trained it to detect, for example, the outline of roads. Compared to explicit decomposition of the problem, such as lane marking detection, path planning, and control, our end-to-end system optimizes all processing steps simultaneously. We argue that this will eventually lead to better performance and smaller systems. Better performance will result because the internal components self-optimize to maximize overall system performance, instead of optimizing human-selected intermediate criteria, e.g., lane detection. Such criteria understandably are selected for ease of human interpretation which doesn’t automatically guarantee maximum system performance. Smaller networks are possible because the system learns to solve the problem with the minimal number of processing steps."
 
-  - <https://youtube.com/watch?v=-96BEoXJMs0> + <https://drive.google.com/file/d/0B9raQzOpizn1TkRIa241ZnBEcjQ/view> (demo)
-  - <https://devblogs.nvidia.com/parallelforall/deep-learning-self-driving-cars/>
-  - <https://github.com/SullyChen/Nvidia-Autopilot-TensorFlow>
-  - <https://github.com/DJTobias/Cherry-Autonomous-Racecar>
+  - `post` <https://devblogs.nvidia.com/parallelforall/deep-learning-self-driving-cars/>
+  - `video` <https://youtube.com/watch?v=-96BEoXJMs0> + <https://drive.google.com/file/d/0B9raQzOpizn1TkRIa241ZnBEcjQ/view> (demo)
+  - `code` <https://github.com/SullyChen/Nvidia-Autopilot-TensorFlow>
+  - `code` <https://github.com/DJTobias/Cherry-Autonomous-Racecar>
 
 
 #### Hannun, Case, Casper, Catanzaro, Diamos, Elsen, Prenger, Satheesh, Sengupta, Coates, Ng - ["DeepSpeech: Scaling up end-to-end speech recognition"](http://arxiv.org/abs/1412.5567)
 >	"We present a state-of-the-art speech recognition system developed using end-to-end deep learning. Our architecture is significantly simpler than traditional speech systems, which rely on laboriously engineered processing pipelines; these traditional systems also tend to perform poorly when used in noisy environments. In contrast, our system does not need hand-designed components to model background noise, reverberation, or speaker variation, but instead directly learns a function that is robust to such effects. We do not need a phoneme dictionary, nor even the concept of a "phoneme." Key to our approach is a well-optimized RNN training system that uses multiple GPUs, as well as a set of novel data synthesis techniques that allow us to efficiently obtain a large amount of varied data for training. Our system, called DeepSpeech, outperforms previously published results on the widely studied Switchboard Hub5'00, achieving 16.5% error on the full test set. DeepSpeech also handles challenging noisy environments better than widely used, state-of-the-art commercial speech systems."
 
-  - <http://youtube.com/watch?v=kAnJdvf_KeE> (demo)
-  - <http://on-demand.gputechconf.com/gtc/2015/video/S5631.html> (Catanzaro)
-  - <http://youtube.com/watch?v=P9GLDezYVX4> (Hannun)
+  - `video` <http://youtube.com/watch?v=kAnJdvf_KeE> (demo)
+  - `video` <http://on-demand.gputechconf.com/gtc/2015/video/S5631.html> (Catanzaro)
+  - `video` <http://youtube.com/watch?v=P9GLDezYVX4> (Hannun)
 
 
 #### Ba, Mnih, Kavukcuoglu - ["Multiple Object Recognition With Visual Attention"](http://arxiv.org/abs/1412.7755)
@@ -2812,8 +2542,8 @@ x."
 
 >	"Applying convolutional neural networks to large images is computationally expensive because the amount of computation scales linearly with the number of image pixels. We present a novel recurrent neural network model that is capable of extracting information from an image or video by adaptively selecting a sequence of regions or locations and only processing the selected regions at high resolution. Like convolutional neural networks, the proposed model has a degree of translation invariance built-in, but the amount of computation it performs can be controlled independently of the input image size. While the model is non-differentiable, it can be trained using reinforcement learning methods to learn task-specific policies. We evaluate our model on several image classification tasks, where it significantly outperforms a convolutional neural network baseline on cluttered images, and on a dynamic visual control problem, where it learns to track a simple object without an explicit training signal for doing so."
 
-  - <http://youtube.com/watch?v=xzM7eI7caRk> (Mnih)
-  - <http://youtu.be/kUiR0RLmGCo?t=15m30s> (de Freitas)
+  - `video` <http://youtube.com/watch?v=xzM7eI7caRk> (Mnih)
+  - `video` <http://youtu.be/kUiR0RLmGCo?t=15m30s> (de Freitas)
 
 
 #### Jaderberg, Simonyan, Vedaldi, Zisserman - ["Deep Structured Output Learning For Unconstrained Text Recognition"](http://arxiv.org/abs/1412.5903)
@@ -2825,7 +2555,7 @@ x."
 
 >	"In this paper we have introduced a new formulation for word recognition, designed to be used identically in language and non-language scenarios. By modelling character positions and the presence of common N-grams, we can define a joint graphical model. This can be trained effectively by backpropagating structured output loss, and results in a more accurate word recognition system than predicting characters alone. We show impressive results for unconstrained text recognition with the ability to generalise recognition to previously unseen words, and match state-of-the-art accuracy when comparing in lexicon constrained scenarios."
 
-  - <http://youtube.com/watch?v=NYkG38RCoRg> (Jaderberg)
+  - `video` <http://youtube.com/watch?v=NYkG38RCoRg> (Jaderberg)
 
 
 #### Gygli, Norouzi, Angelova - ["Deep Value Networks Learn to Evaluate and Iteratively Refine Structured Outputs"](https://arxiv.org/abs/1703.04363)
@@ -2839,10 +2569,10 @@ x."
 #### Xu, Ba, Kiros, Cho, Courville, Salakhutdinov, Zemel, Bengio - ["Show, Attend and Tell: Neural Image Caption Generation with Visual Attention"](http://arxiv.org/abs/1502.03044)
 >	"Inspired by recent work in machine translation and object detection, we introduce an attention based model that automatically learns to describe the content of images. We describe how we can train this model in a deterministic manner using standard backpropagation techniques and stochastically by maximizing a variational lower bound. We also show through visualization how the model is able to automatically learn to fix its gaze on salient objects while generating the corresponding words in the output sequence. We validate the use of attention with state-of-the-art performance on three benchmark datasets: Flickr8k, Flickr30k and MS COCO."
 
-  - <http://videolectures.net/deeplearning2015_salakhutdinov_deep_learning_2/#t=739> (Salakhutdinov)
-  - <http://videolectures.net/icml2015_xu_visual_attention/> (Xu)
-  - <https://youtu.be/_XRBlhzb31U?t=3m27s> (Figurnov) (in russian)
-  - <https://github.com/kelvinxu/arctic-captions>
+  - `video` <http://videolectures.net/deeplearning2015_salakhutdinov_deep_learning_2/#t=739> (Salakhutdinov)
+  - `video` <http://videolectures.net/icml2015_xu_visual_attention/> (Xu)
+  - `video` <https://youtu.be/_XRBlhzb31U?t=3m27s> (Figurnov) (in russian)
+  - `code` <https://github.com/kelvinxu/arctic-captions>
 
 
 #### Denton, Chintala, Szlam, Fergus - ["Deep Generative Image Models using a Laplacian Pyramid of Adversarial Networks"](http://arxiv.org/abs/1506.05751)
@@ -2857,10 +2587,10 @@ x."
 >	"There are so many things to explore, as follow-up work to this paper. A list of simple ideas would be: instead of one-hot coding, give word-embeddings as the conditional vector. Imagine the awesomeness of going from image captions to images. Apply the same exact method to generate audio and video."
 
   - <http://soumith.ch/eyescream/> (demo)
-  - <https://github.com/facebook/eyescream>
-  - <http://inference.vc/generative-image-models-via-laplacian-pyramids/>
-  - <http://youtube.com/watch?v=JEJk-Ug_ebI> + <http://research.microsoft.com/apps/video/default.aspx?id=260051> (Denton)
-  - <http://93.180.23.59/videos/video/2487/in/channel/1/> (Gitman)
+  - `video` <http://youtube.com/watch?v=JEJk-Ug_ebI> + <http://research.microsoft.com/apps/video/default.aspx?id=260051> (Denton)
+  - `video` <http://93.180.23.59/videos/video/2487/in/channel/1/> (Gitman)
+  - `post` <http://inference.vc/generative-image-models-via-laplacian-pyramids/>
+  - `code` <https://github.com/facebook/eyescream>
 
 
 #### Reed, Akata, Yan, Logeswaran, Schiele, Lee - ["Generative Adversarial Text to Image Synthesis"](https://arxiv.org/abs/1605.05396)
@@ -2868,8 +2598,8 @@ x."
 
 >	"In this work we developed a simple and effective model for generating images based on detailed visual descriptions. We demonstrated that the model can synthesize many plausible visual interpretations of a given text caption. Our manifold interpolation regularizer substantially improved the text to image synthesis on CUB. We showed disentangling of style and content, and bird pose and background transfer from query images onto text descriptions. Finally we demonstrated the generalizability of our approach to generating images with multiple objects and variable backgrounds with our results on MS-COCO dataset. In future work, we aim to further scale up the model to higher resolution images and add more types of text."
 
-  - <https://youtube.com/watch?v=hnT-P3aALVE> (demo)
-  - <http://youtube.com/watch?v=TQ_hJ63YCTw#t=22m> (demo)
-  - <http://techtalks.tv/talks/generative-adversarial-text-to-image-synthesis/62602/>
-  - <https://github.com/reedscot/icml2016>
-  - <https://github.com/paarthneekhara/text-to-image>
+  - `video` <https://youtube.com/watch?v=hnT-P3aALVE> (demo)
+  - `video` <http://youtube.com/watch?v=TQ_hJ63YCTw#t=22m> (demo)
+  - `video` <http://techtalks.tv/talks/generative-adversarial-text-to-image-synthesis/62602/>
+  - `code` <https://github.com/reedscot/icml2016>
+  - `code` <https://github.com/paarthneekhara/text-to-image>

@@ -22,7 +22,7 @@
   [machine learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md)  
   [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
   [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)  
-  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt)  
+  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)  
   [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
 
   [natural language processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt)  
@@ -170,9 +170,9 @@
 ---
 ### knowledge representation
 
-  [Knowledge Representation](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
-  [Deep Learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
-  [Probabilistic Programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
+  [knowledge representation](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
+  [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
+  [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
 
 
   "Knowledge is in our minds and language is just orienting us within our common experiences."  
@@ -193,9 +193,9 @@
 ---
 ### inference/reasoning
 
-  [Reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
-  [Bayesian Inference and Learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt)  
-  [Machine Learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md)  
+  [reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
+  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)  
+  [machine learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md)  
 
 
   approaches:
@@ -213,23 +213,23 @@
 	statistical - [probabilistic programs](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
   - *reasoning*:  
 	logical - satisfiability testing/proving  
-	statistical - [bayesian inference](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt)  
+	statistical - [bayesian inference](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)  
   - *learning*:  
 	logical - inductive logic programming  
 	statistical - [bayesian deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)
 
 
-["On Chomsky and the Two Cultures of Statistical Learning"](http://norvig.com/chomsky.html) by Peter Norvig  
+  ["On Chomsky and the Two Cultures of Statistical Learning"](http://norvig.com/chomsky.html) by Peter Norvig  
 >	"mathematical model specifies a relation among variables, either in functional or in relational form"  
 >	"statistical model is a mathematical model which is modified or trained by the input of data points"  
 >	"probabilistic model specifies a probability distribution over possible values of random variables"  
 >	"statistical models are often but not always probabilistic and probabilistic ones are statistical"  
 
-["Unifying Logic and Probability"](https://www.cs.berkeley.edu/~russell/papers/ipmu14-oupm.pdf) by Stuart Russell
+  ["Unifying Logic and Probability"](https://www.cs.berkeley.edu/~russell/papers/ipmu14-oupm.pdf) by Stuart Russell
 	([video](http://video.upmc.fr/differe.php?collec=S_C_colloquium_lip6_2012&video=3))
 >	"Beginning with Leibniz, scholars have attempted to unify logic and probability. For “classical” AI, based largely on first-order logic, the purpose of such a unification is to handle uncertainty and facilitate learning from real data; for “modern” AI, based largely on probability theory, the purpose is to acquire formal languages with sufficient expressive power to handle complex domains and incorporate prior knowledge."
 
-["Unifying Logical and Statistical AI"](http://homes.cs.washington.edu/~pedrod/papers/aaai06c.pdf) by Pedro Domingos
+  ["Unifying Logical and Statistical AI"](http://homes.cs.washington.edu/~pedrod/papers/aaai06c.pdf) by Pedro Domingos
 	([video](http://youtube.com/watch?v=bW5DzNZgGxY))
 >	"logic handles complexity and statistics handles uncertainty"
 
@@ -603,23 +603,20 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 ---
 ### interesting papers
 
+  - [definitions and measures of intelligence](#interesting-papers---definitions-and-measures-of-intelligence)  
+  - [Solomonoff Induction and AIXI](#interesting-papers---solomonoff-induction-and-aixi)  
+  - [Artificial Curiosity and Creativity](#interesting-papers---artificial-curiosity-and-creativity)  
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md)
 
-
-interesting papers:  
   - [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers)  
   - [machine learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#interesting-papers)  
   - [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers)  
   - [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers)  
-  - [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt#interesting-papers)  
+  - [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#interesting-papers)  
   - [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers)  
 
 
-interesting papers:  
-  - [definitions and measures of intelligence](#interesting-papers---definitions-and-measures-of-intelligence)  
-  - [Solomonoff Induction and AIXI](#interesting-papers---solomonoff-induction-and-aixi)  
-  - [Artificial Curiosity and Creativity](#interesting-papers---artificial-curiosity-and-creativity)  
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md)
 
 
 

@@ -18,6 +18,7 @@
     - [loss function and grounding](#interesting-quotes---loss-function-and-grounding)
     - [bayesian inference and learning](#interesting-quotes---bayesian-inference-and-learning)
   * [interesting papers](#interesting-papers)
+    - [theory](#interesting-papers---theory)
     - [automated machine learning](#interesting-papers---automated-machine-learning)
     - [systems](#interesting-papers---systems)
 
@@ -25,7 +26,7 @@
 
   [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
   [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)  
-  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt)  
+  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)  
   [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
 
 
@@ -218,32 +219,6 @@
 ---
 ### theory
 
-  **goals**  
-  - prediction with high accuracy  
-  - prediction of "rare" events (outlier detection)  
-  - interpretable modeling  
-  - hypothesis testing  
-  - visualization  
-  - drawing causal conclusions  
-  - quantifying uncertainty/risk  
-  - generating new samples  
-  - clustering  
-  - online/active/reinforcement learning  
-
-  **data**  
-  - text  
-  - networks  
-  - time series  
-  - streaming data  
-  - bag data or full distributions  
-  - paired samples  
-  - clinical trial  
-  - A/B testing  
-  - spatial data  
-  - high-dimensional data  
-  - low-sample-size data  
-  - non-metric-space data  
-
   **challenges**  
   - How to decide which representation is best for target knowledge?  
   - How to tell genuine regularities from chance occurrences?  
@@ -272,16 +247,15 @@
 
 #### bayesian framework
 
-  - probability as measure of uncertainty, encodes ignorance in terms of distributions  
-  - treats everything as random variables, no difference between random and unknown variables  
-  - makes use of Bayes theorem: posterior = likelihood * prior / evidence  
-  - possible to compute the estimate p(U|O) for arbitrary unknown variable (U) given observed data (O) and not having any knowledge about latent variables (L) from the joint distribution p(U, O, L)  
-  - possibility to use posterior distributions as priors, combination of multiple models  
-
-
-  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt)  
+  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#theory)  
   [bayesian deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)  
-  [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
+  [bayesian reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#bayesian-reinforcement-learning)  
+
+----
+
+#### representation learning
+
+  [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#theory)
 
 ----
 
@@ -520,8 +494,8 @@
 
   [Probabilistic Programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
 
-  [selected papers](https://dropbox.com/sh/vrr1gs798zy02n1/AACj7hlXOiRt1nXltXVC-2Wca)  
   [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#program-induction)  
+  [selected papers](https://dropbox.com/sh/vrr1gs798zy02n1/AACj7hlXOiRt1nXltXVC-2Wca)  
 
 
 
@@ -532,7 +506,6 @@
   - model selection, hyper-parameter optimization, and model search  
   - meta learning and transfer learning  
   - representation learning and automatic feature extraction / construction  
-  - demonstrations (demos) of working AutoML systems  
   - automatic generation of workflows / workflow reuse  
   - automatic problem "ingestion" (from raw data and miscellaneous formats)  
   - automatic feature transformation to match algorithm requirements  
@@ -993,24 +966,23 @@
 ---
 ### interesting papers
 
+  - [theory](#interesting-papers---theory)
+  - [automated machine learning](#interesting-papers---automated-machine-learning)
+  - [systems](#interesting-papers---systems)
 
-[selected papers and books](https://dropbox.com/sh/kpd5tvfnc29lstj/AAD3oGVCUdkoMS56_2g8Oj7_a)
 
 [interesting papers - deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers)  
 [interesting papers - reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers)  
-[interesting papers - bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt#interesting-papers)  
+[interesting papers - bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#interesting-papers)  
 [interesting papers - probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers)  
 
 
 [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md)
 
 
-interesting papers:
-  - [automated machine learning](#interesting-papers---automated-machine-learning)
-  - [systems](#interesting-papers---systems)
 
-----
-
+---
+### interesting papers - theory
 
 #### Valiant - ["A Theory of the Learnable"](https://people.mpi-inf.mpg.de/~mehlhorn/SeminarEvolvability/ValiantLearnable.pdf)
 >	"Humans appear to be able to learn new concepts without needing to be programmed explicitly in any conventional sense. In this paper we regard learning as the phenomenon of knowledge acquisition in the absence of explicit programming. We give a precise methodology for studying this phenomenon from a computational viewpoint. It consists of choosing an appropriate information gathering mechanism, the learning protocol, and exploring the class of concepts that can be learned using it in a reasonable (polynomial) number of steps. Although inherent algorithmic complexity appears to set serious limits to the range of concepts that can be learned, we show that there are some important nontrivial classes of propositional concepts that can be learned in a realistic sense."

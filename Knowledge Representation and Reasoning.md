@@ -90,11 +90,19 @@
 ---
 ### knowledge representation
 
+  Knowledge Representation is organizing information in a way that computer can use to solve complex tasks.
+
   - [natural language](#knowledge-representation---natural-language)
   - [knowledge graph](#knowledge-representation---knowledge-graph)
   - [probabilistic database](#knowledge-representation---probabilistic-database)
   - [probabilistic program](#knowledge-representation---probabilistic-program)
   - [distributed representations](#knowledge-representation---distributed-representations)
+
+  interesting papers:
+  - [knowledge bases](#interesting-papers---knowledge-bases)
+  - [knowledge bases with discrete representations](#interesting-papers---knowledge-bases-with-discrete-representations)
+  - [knowledge bases with continuous representations](#interesting-papers---knowledge-bases-with-continuous-representations)
+  - [information extraction and integration](#interesting-papers---information-extraction-and-integration)
 
 
 
@@ -154,8 +162,6 @@
   - mistakes made by tools (noisy information extraction, entity linking/reconciliation)
   - limited or no reuse of identifiers
   - metadata not always representative of content
-
-  [interesting papers](https://dropbox.com/sh/c427b94xex62a40/AABii9_MRHrCZPGJ_Adx_b3Ma)
 
 
 
@@ -656,11 +662,18 @@
 ---
 ### reasoning
 
- - [neural architectures](#neural-architectures)
- - [natural logic](#natural-logic)
- - [formal logic](#formal-logic)
- - [bayesian inference](#bayesian-inference)
- - [commonsense reasoning](#commonsense-reasoning)
+  Reasoning is algebraically manipulating previously acquired knowledge in order to answer a new question.  
+
+  - [neural architectures](#neural-architectures)
+  - [natural logic](#natural-logic)
+  - [formal logic](#formal-logic)
+  - [bayesian inference](#bayesian-inference)
+  - [commonsense reasoning](#commonsense-reasoning)
+
+  interesting papers:
+  - [question answering over knowledge bases](#interesting-papers---question-answering-over-knowledge-bases)
+  - [question answering over texts](#interesting-papers---question-answering-over-texts)
+  - [reasoning](#interesting-papers---reasoning)
 
 ----
 
@@ -750,7 +763,7 @@
 
 #### bayesian inference
 
-  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt)
+  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
 
   [probabilistic programs](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-program) as bayesian models of cognition
 
@@ -830,7 +843,7 @@
 	- difficult, in that it is far beyond the current state of the art
 
 
-  - *Facebook CommAI*
+  - *Facebook CommAI*  
   	<https://github.com/facebookresearch/CommAI-env>
 
 	["A Roadmap Towards Machine Intelligence"](http://arxiv.org/abs/1511.08130) by Mikolov, Joulin, Baroni  
@@ -841,7 +854,7 @@
 	<http://fb.ai/babi>
 
 
-  - *Stanford Question Answering Dataset (SQuAD)*
+  - *Stanford Question Answering Dataset (SQuAD)*  
 	<https://rajpurkar.github.io/SQuAD-explorer/>
 
 
@@ -1057,6 +1070,7 @@
   Getoor, Taskar - ["Introduction to Statistical Relational Learning"](http://www.cs.umd.edu/srl-book/)  
 
   Brenden Lake - ["Towards More Human-Like Concept Learning in Machines: Compositionality, Causality and Learning-to-learn"](http://cims.nyu.edu/~brenden/LakePhDThesis.pdf)  
+  Arvind Neelakantan - ["Knowledge Representation and Reasoning with Deep Neural Networks"](https://people.cs.umass.edu/~arvind/arvind_thesis.pdf)  
   Samuel Bowman - ["Modeling Natural Language Semantics in Learned Representations"](https://www.nyu.edu/projects/bowman/bowman2016phd.pdf)  
   Michael Wick - ["Epistemological Databases for Probabilistic Knowledge Base Construction"](http://scholarworks.umass.edu/cgi/viewcontent.cgi?article=1338&context=dissertations_2)  
   Christopher Re - ["Managing Large-scale Probabilistic Databases"](http://pages.cs.wisc.edu/~chrisre/papers/re_thesis.pdf)  
@@ -1071,21 +1085,6 @@
 ---
 ### interesting papers
 
-
-  - [knowledge representation and reasoning](https://dropbox.com/sh/9ytscy4pwegbvhb/AACtB7tQGj-vigo0yExfciu0a)
-  - [information extraction and integration](https://dropbox.com/sh/jmkl4mhajjghjxk/AABfAImA69Kzxx3b0IhCGouMa)
-  - [reasoning](https://dropbox.com/sh/ju4oi0221zo3ql7/AAC8SscYIxR5uk3CVhQXpkuda)
-  - [Resource Description Framework](https://dropbox.com/sh/c427b94xex62a40/AABii9_MRHrCZPGJ_Adx_b3Ma)
-
-
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md)
-
-
-interesting papers:
-  - "[continuous space representations]" section of [Natural Language Processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt)  
-
-
-interesting papers:  
   - [knowledge bases](#interesting-papers---knowledge-bases)  
   - [knowledge bases with discrete representations](#interesting-papers---knowledge-bases-with-discrete-representations)  
   - [knowledge bases with continuous representations](#interesting-papers---knowledge-bases-with-continuous-representations)  
@@ -1093,6 +1092,11 @@ interesting papers:
   - [question answering over texts](#interesting-papers---question-answering-over-texts)  
   - [reasoning](#interesting-papers---reasoning)  
   - [information extraction and integration](#interesting-papers---information-extraction-and-integration)  
+
+  - "[continuous space representations]" section of [Natural Language Processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt)  
+
+
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md)
 
 
 
@@ -1434,7 +1438,7 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
   - <http://youtu.be/lc68_d_DnYs?t=24m44s> (Neelakantan)
   - <http://youtu.be/KmOdBS4BXZ0?t=1h8m44s> (Le)
   - <http://distill.pub/2016/augmented-rnns/>
-  - <https://github.com/tensorflow/models/tree/master/neural_programmer>
+  - <https://github.com/tensorflow/models/tree/master/research/neural_programmer>
   - ["Learning a Natural Language Interface with Neural Programmer"](http://arxiv.org/abs/1611.08945)
 
 
@@ -1463,6 +1467,7 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 
   - <http://bair.berkeley.edu/blog/2017/06/20/learning-to-reason-with-neural-module-networks>
   - <https://youtu.be/ejQNdTdyTBM?t=28m8s> (Kretov) (in russian)
+  - <https://github.com/tensorflow/models/tree/master/research/qa_kg>
 
 
 #### Das, Zaheer, Reddy, McCallum - ["Question Answering on Knowledge Bases and Text using Universal Schema and Memory Networks"](https://arxiv.org/abs/1704.08384)  (entity embedding)

@@ -7,12 +7,11 @@
   * [applications](#applications)
   * [projects](#projects)
   * [interesting papers](#interesting-papers)
-    - [inference](#interesting-papers---inference)
     - [applications](#interesting-papers---applications)
 
 ----
 
-  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.txt)
+  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
 
 
 
@@ -147,12 +146,6 @@
 	<http://youtube.com/watch?v=DkRLTToCw-0>  
 
 
-----
-
-
-[selected papers](https://dropbox.com/sh/2m10m5bsctmd4zr/AADSvK7nWzyB7jViNXBuXghca)
-
-
 
 ---
 ### interesting papers
@@ -168,11 +161,6 @@
 >	"First, there is an ongoing quest for efficient inference approaches for languages that support a broad range of programming concepts. Promising directions include lifted inference, which aims at exploiting symmetries and abstraction over individuals to speed up inference, knowledge compilation, which has contributed many data structures for compactly representing and efficiently querying various types of knowledge, and approximate methods such as MCMC, which is used in many probabilistic programming languages, but still requires proposal functions to be custom made for the program at hand. There also is a need for a clear understanding of the relative computational complexity of the various probabilistic languages and concepts that exist to date. Another question that has only seen partial answers so far is how to efficiently deal with evidence and constraints in different inference techniques. Adapting and extending program transformation and analysis techniques to the probabilistic setting promises opportunities to recognize and exploit program parts that are amenable to more efficient inference. Concepts such as time and dynamics require inference approaches that on the one hand exploit repeated structure, but on the other hand can also deal with changing structure over time. Last but not least, it still is a challenge to learn probabilistic programs, although a wide variety of learning techniques for probabilistic programming has already been developed. Many key challenges for both parameter and structure learning remain, many of which are related to efficient inference, as learning requires inference."
 
   - <https://lirias.kuleuven.be/bitstream/123456789/504183/1/pp-tutorial-ijcai15.pdf>
-
-
-
----
-### interesting papers - inference
 
 
 #### Tran, Hoffman, Saurous, Brevdo, Murphy, Blei - ["Deep Probabilistic Programming"](https://arxiv.org/abs/1701.03757)

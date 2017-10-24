@@ -340,7 +340,7 @@
   - lifelong learning  
   - efficient sample-based planning (e.g., based on Monte-Carlo tree search)  
   - multiagent or distributed learning  
-  - learning from demostrations  
+  - learning from demonstrations  
 
 ----
 
@@ -483,13 +483,16 @@
 
 ----
 
-  **bayesian exploration methods**:
+  **bayesian exploration models**:
+>	"Bayesian reinforcement learning provides approach to optimal exploration during learning and beyond. Prior information about the problem is represented in parametric form, and Bayesian inference is used to incorporate any new information about the model. Thus the exploration-exploitation problem can be handled as an explicit sequential decision problem, where the agent seeks to maximize future expected return with respect to its current uncertainty on the model. The decision-making process is significantly more complex since it involves reasoning about all possible models and courses of action."
 
-  [**bayesian reinforcement learning**](#bayesian-reinforcement-learning)
+>	"The optimal Bayesian policy chooses actions based not only on how they will affect the next state of the system, but also based on how they will affect the next belief state; and, since a better knowledge of the MDP will typically lead to greater future reward, the Bayesian policy will very naturally trade off between exploring the system to gain more knowledge, and exploiting its current knowledge of the system. Unfortunately, while the Bayesian approach provides a very elegant solution to the exploration/exploitation problem, it is typically not possible to compute the Bayesian policy exactly."
 
-  "Bayesian reinforcement learning provides approach to optimal exploration during learning and beyond. In this framework, prior information about the problem (including uncertainty) is represented in parametric form, and Bayesian inference is used to incorporate any new information about the model. Thus the exploration-exploitation problem can be handled as an explicit sequential decision problem, where the agent seeks to maximize future expected return with respect to its current uncertainty on the model. An important limitation of this approach is that the decision-making process is significantly more complex since it involves reasoning about all possible models and courses of action."
+>	"Since the dimension of the belief state grows polynomially in the number of states and actions, computing the Bayesian value function using value iteration or other methods is typically not tractable. One exception, where the Bayesian approach is tractable, is the domain of a k-armed bandit (i.e., an MDP with one state and k actions, where the rewards are unknown). In this case, the Bayesian approach leads to the well-known Gittins indices. However, the approach does not scale analytically to multi-state MDPs. This has lead to numerous methods that approximate the Bayesian exploration policy."
 
   [overview](https://youtu.be/sGuiWX07sKw?t=57m28s) by David Silver `video`  
+
+  [**bayesian reinforcement learning**](#bayesian-reinforcement-learning)
 
 
   ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](#guez-silver-dayan---efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search) by Guez et al. `paper`  
@@ -505,6 +508,8 @@
   ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](#duan-schulman-chen-bartlett-sutskever-abbeel---rl2-fast-reinforcement-learning-via-slow-reinforcement-learning) by Duan et al. `paper`  
   ["Learning to Reinforcement Learn"](#wang-et-al---learning-to-reinforcement-learn) by Wang et al. `paper`  
 
+  [interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration-models)
+
 ----
 
   ["How Can We Define Intrinsic Motivation"](http://pyoudeyer.com/epirob08OudeyerKaplan.pdf) by Oudeyer and Kaplan `paper`:  
@@ -517,13 +522,16 @@
 	reward for every event inversely proportional to its probability of observation  
 
 	["Action-Conditional Video Prediction using Deep Networks in Atari Games"](#oh-guo-lee-lewis-singh---action-conditional-video-prediction-using-deep-networks-in-atari-games) by Oh et al. `paper`  (approximate visitation counting in a learned state embedding using Gaussian kernels)  
+	["Recurrent Environment Simulators"](https://arxiv.org/abs/1704.02254) by Chiappa et al. `paper`  
 	["Unifying Count-Based Exploration and Intrinsic Motivation"](#bellemare-srinivasan-ostrovski-schaul-saxton-munos---unifying-count-based-exploration-and-intrinsic-motivation) by Bellemare et al. `paper`  (relationship between the pseudo-count, a variant of Schmidhuber’s compression progress or prediction gain, and Bayesian information gain)  
 	["Count-Based Exploration with Neural Density Models"](#ostrovski-bellemare-van-den-oord-munos---count-based-exploration-with-neural-density-models) by Ostrovski et al. `paper`  
 	["\#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning"](#tang-et-al---exploration-a-study-of-count-based-exploration-for-deep-reinforcement-learning) by Tang et al. `paper`  
 	["EX2: Exploration with Exemplar Models for Deep Reinforcement Learning"](#fu-co-reyes-levine---ex2-exploration-with-exemplar-models-for-deep-reinforcement-learning) by Fu et al. `paper`  
 
+	[interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---uncertainty-motivation)
+
   - *information gain motivation*  
-	decrease of uncertainty in knowledge that an agent has of environment after an event has happened  
+	reward for decrease of uncertainty in knowledge that agent has of environment after event has happened  
 
 	["An Information-theoretic Approach to Curiosity-driven Reinforcement Learning"](#still-precup---an-information-theoretic-approach-to-curiosity-driven-reinforcement-learning) by Still and Precup `paper`  
 	["VIME: Variational Information Maximizing Exploration"](#houthooft-chen-duan-schulman-turck-abbeel---vime-variational-information-maximizing-exploration) by Houthooft et al. `paper`  
@@ -531,20 +539,24 @@
 	["Exploration Potential"](#leike---exploration-potential) by Leike `paper`  
 	["Towards Information-Seeking Agents"](#bachman-sordoni-trischler---towards-information-seeking-agents) by Bachman et al. `paper`  
 
+	[interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---information-gain-motivation)
+
   - *empowerment*  
-	agent's ability to affect its environment, reward for sequences of actions that can transfer maximal amount of information to its sensors through environment  
-	maximizing mutual information between actions and future states, i.e. information contained in a about s' or information that can be "injected" into s' by a  
+	reward for sequences of actions that can transfer maximal amount of information in agent's observations of environment, i.e. agent's ability to influence environment  
+	channel capacity between actions and states - mutual information between actions and future states, i.e. information contained in a about s' or information that can be "injected" into s' by a  
 
 	["Empowerment - An Introduction"](#salge-glackin-polani---empowerment---an-introduction) by Salge et al. `paper`  
 	["Variational Information Maximisation for Intrinsically Motivated Reinforcement Learning"](#mohamed-rezende---variational-information-maximisation-for-intrinsically-motivated-reinforcement-learning) by Mohamed and Rezende `paper`  
 	["Variational Intrinsic Control"](#gregor-rezende-wierstra---variational-intrinsic-control) by Gregor et al. `paper`  (the primary goal is not to understand or predict the observations but to control the environment - agents can often control an environment perfectly well without much understanding, and focusing on understanding might significantly distract and impair the agent, as such reducing the control it achieves)  
+
+	[interesting-papers](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---empowerment)
 
 
   **predictive models**:  
 >	"Often, knowledge and expectations in agent are not represented by complete probability distributions, but rather based on the use of predictors such as neural networks that make direct predictions about future events. These predictors, denoted Π, are typically used to predict some properties or sensorimotor states that will happen in the future (close or far) given the current sensorimotor context SM(t) and possibly the past sensorimotor context."
 
   - *predictive novelty motivation*  
-	interesting situations are those for which the prediction errors are highest  
+	reward for interesting situations, for which prediction errors are highest  
 
 	["Incentivizing Exploration In Reinforcement Learning With Deep Predictive Models"](#stadie-levine-abbeel---incentivizing-exploration-in-reinforcement-learning-with-deep-predictive-models) by Stadie et al. `paper`  
 	["Curiosity-driven Exploration by Self-supervised Prediction"](#pathak-agrawal-efros-darrell---curiosity-driven-exploration-by-self-supervised-prediction) by Pathak et al. `paper`  
@@ -553,28 +565,34 @@
 	["Feature Control as Intrinsic Motivation for Hierarchical Reinforcement Learning"](https://arxiv.org/abs/1705.06769) by Dilokthanakul et al. `paper`  
 	["Improving Policy Gradient by Exploring Under-appreciated Rewards"](#nachum-norouzi-schuurmans---improving-policy-gradient-by-exploring-under-appreciated-rewards) by Nachum et al. `paper`  
 
+	[interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---predictive-novelty-motivation)
+
   - *learning progress motivation*  
 	reward for prediction progress, i.e. decrease of prediction errors  
-	difference in prediction error of the predictor, about the same sensorimotor context, between the first prediction and a second prediction made just after the predictor has been updated with a learning rule  
+	difference in prediction error of the predictor, about the same sensorimotor context, between first prediction and second prediction made just after predictor has been updated using learning rule  
 
 	[Artificial Curiosity and Creativity](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) by Schmidhuber  
 	["Automated Curriculum Learning for Neural Networks"](#graves-bellemare-menick-munos-kavukcuoglu---automated-curriculum-learning-for-neural-networks) by Graves et al. `paper`  
 
+	[interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---learning-progress-motivation)
+
   - *predictive familiarity motivation*  
-	motivation to search for situations which are very predictable and thus familiar  
+	reward for situations which are very predictable and thus familiar  
 
 
   **competence-based models**:  
 >	"A third major computational approach to intrinsic motivation is based on measures of competence that an agent has for achieving self-determined results or goals. Central here is the concept of “challenge”, with associated measures of difficulty as well as measures of actual performance. A “challenge” or “goal” here will be any sensorimotor configuration, or any set of properties of a sensorimotor configuration, that an agent sets by itself and that it tries to achieve through action. It is the properties of the achievement process, rather than the “meaning” of the particular goal being achieved, that will determine the level of interestingness of the associated activity. While prediction mechanisms or probability models, as used in previous sections, can be used in the goal-reaching architecture, they are not mandatory. The capacity to predict what happens in a situation can be sometimes only loosely coupled to the capacity to modify a situation in order to achieve a given self-determined goal."
 
   - *maximizing incompetence motivation*  
-	reward measure that pushes an agent to set challenges/goals for which its performance is lowest  
+	reward for setting challenges/goals for which agent's performance is lowest  
 
 	["Intrinsic Motivation and Automatic Curricula via Asymmetric Self-Play"](#sukhbaatar-lin-kostrikov-synnaeve-szlam---intrinsic-motivation-and-automatic-curricula-via-asymmetric-self-play) by Sukhbaatar et al. `paper`  
 	["Automatic Goal Generation for Reinforcement Learning Agents"](#held-geng-florensa-abbeel---automatic-goal-generation-for-reinforcement-learning-agents) by Held et al. `paper`  
 
+	[interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---competence-based-models---maximizing-incompetence-motivation)
+
   - *maximizing competence progress*  
-	interestingness of a challenge as the competence progress that is experienced as an agent repeatedly tries to achieve it  
+	reward for interestingness of challenge as competence progress that is experienced as agent repeatedly tries to achieve it  
 
 
   **morphological models**:  
@@ -790,10 +808,10 @@
   [interesting papers](#interesting-papers---model-based-methods) on model-based methods  
 
 
-  [Monte Carlo Tree Search](#monte-carlo-tree-search)  
-  [Guided Policy Search](#guided-policy-search)  
-  [deep model-based learning](#deep-model-based-learning)  
-  [bayesian reinforcement learning](#bayesian-reinforcement-learning)  
+  - [Monte Carlo Tree Search](#monte-carlo-tree-search)  
+  - [Guided Policy Search](#guided-policy-search)  
+  - [deep model-based learning](#deep-model-based-learning)  
+  - [bayesian reinforcement learning](#bayesian-reinforcement-learning)  
 
 
 
@@ -1022,10 +1040,6 @@
   - *policy gradient optimization*:  scalable, not sample-efficient, not robust, no off-policy  
   - *trust region policy optimization*:  less scalable, more sample-efficient, more robust, no off-policy  
   - *value-based policy optimization*:  scalable in state space, more sample-efficient, not robust, more off-policy  
-
-
-  ["Benchmarking Deep Reinforcement Learning for Continuous Control"](http://arxiv.org/abs/1604.06778) by Duan et al. `paper`
-	([video](http://techtalks.tv/talks/benchmarking-deep-reinforcement-learning-for-continuous-control/62380/), [code](https://github.com/openai/rllab))
 
 ----
 
@@ -1273,7 +1287,7 @@
 
   "Calculating gradients to optimise stochastic policies by reparameterising the stochasticity away from the network, thereby allowing standard gradients to be used instead of the high-variance REINFORCE estimator."
 
-  reparametrization trick: E p(y|x)[g(y)]=∫g(f(x,ξ))ρ(ξ)dξ where y=f(x,ξ) and ξ\~ρ(.) a fixed noise distribution
+  reparametrization trick: E p(y|x)[g(y)]=∫g(f(x,ε))ρ(ε)dε where y=f(x,ε) and ε~ρ(.) a fixed noise distribution
 
   "SVG methods are flexible and can be used both with (SVG(0) and SVG(1)) and without (SVG(∞)) value function critics, and with (SVG(∞) and SVG(1)) and without (SVG(0)) learned models."  
 
@@ -1287,10 +1301,6 @@
 ---
 ### interesting papers
 
-[selected papers and books](https://dropbox.com/sh/zc5qxqksgqmxs0a/AAA4C1y_6Y0-3dm3gPuQhb_va)
-
-
-interesting papers:  
   - [applications](#interesting-papers---applications)  
   - [exploration and intrinsic motivation](#interesting-papers---exploration-and-intrinsic-motivation)  
   - [hierarchical reinforcement learning](#interesting-papers---hierarchical-reinforcement-learning)  
@@ -1302,14 +1312,12 @@ interesting papers:
 
 
 interesting recent papers:  
-  - [agents](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---agents)  
+  - [model-free methods](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-free-methods)  
+  - [model-based methods](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-based-methods)  
   - [exploration and intrinsic motivation](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
   - [hierarchical reinforcement learning](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---hierarchical-reinforcement-learning)  
-  - [simulation and planning](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---simulation-and-planning)  
-  - [memory](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---memory)  
   - [transfer](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---transfer)  
   - [imitation](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---imitation)  
-  - [applications](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---applications)  
 
 
 
@@ -1428,31 +1436,6 @@ interesting recent papers:
   - `code` <https://github.com/xbpeng/DeepTerrainRL>
 
 
-#### Agarwal et al. - ["Making Contextual Decisions with Low Technical Debt"](http://arxiv.org/abs/1606.03966)
->	"Applications and systems are constantly faced with decisions that require picking from a set of actions based on contextual information. Reinforcement-based learning algorithms such as contextual bandits can be very effective in these settings, but applying them in practice is fraught with technical debt, and no general system exists that supports them completely. We address this and create the first general system for contextual learning, called the Decision Service. Existing systems often suffer from technical debt that arises from issues like incorrect data collection and weak debuggability, issues we systematically address through our ML methodology and system abstractions. The Decision Service enables all aspects of contextual bandit learning using four system abstractions which connect together in a loop: explore (the decision space), log, learn, and deploy. Notably, our new explore and log abstractions ensure the system produces correct, unbiased data, which our learner uses for online learning and to enable real-time safeguards, all in a fully reproducible manner. The Decision Service has a simple user interface and works with a variety of applications: we present two live production deployments for content recommendation that achieved click-through improvements of 25-30%, another with 18% revenue lift in the landing page, and ongoing applications in tech support and machine failure handling. The service makes real-time decisions and learns continuously and scalably, while significantly lowering technical debt."
-
->	"We have presented the Decision Service: a powerful tool to support the complete data lifecycle, which automates many of the burdensome tasks that data scientists face such as gathering the right data and deploying in an appropriate manner. Instead, a data scientist can focus on more core tasks such as finding the right features, representation, or signal to optimize against. The data lifecycle support also makes basic application of the Decision Service feasible without a data scientist. To assist in lowering the barrier to entry, we are exploring techniques based on expert learning and hyperparameter search that may further automate the process. Since the policy evaluation techniques can provide accurate predictions of online performance, such automations are guaranteed to be statistically sound. We are also focusing on making the decision service easy to deploy and use because we believe this is key to goal of democratizing machine learning for everyone. The Decision Service can also naturally be extended to a greater variety of problems, all of which can benefit from data lifecycle support. Plausible extensions might address advanced variants like reinforcement and active learning, and simpler ones like supervised learning."
-
-----
->	"It is the first general purpose reinforcement-based learning system. Wouldn’t it be great if Reinforcement Learning algorithms could easily be used to solve all reinforcement learning problems? But there is a well-known problem: It’s very easy to create natural RL problems for which all standard RL algorithms (epsilon-greedy Q-learning, SARSA, etc) fail catastrophically. That’s a serious limitation which both inspires research and which I suspect many people need to learn the hard way. Removing the credit assignment problem from reinforcement learning yields the Contextual Bandit setting which we know is generically solvable in the same manner as common supervised learning problems."
-
->	"Many people have tried to create online learning system that do not take into account the biasing effects of decisions. These fail near-universally. For example they might be very good at predicting what was shown (and hence clicked on) rather that what should be shown to generate the most interest."
-
->	"We need a system that explores over appropriate choices with logging of features, actions, probabilities of actions, and outcomes. These must then be fed into an appropriate learning algorithm which trains a policy and then deploys the policy at the point of decision. The system enables a fully automatic causally sound learning loop for contextual control of a small number of actions. It is strongly scalable, for example a version of this is in use for personalized news on MSN."
-
-  - <https://azure.microsoft.com/en-us/services/cognitive-services/custom-decision-service/>
-  - <https://ds.microsoft.com>
-  - <https://mwtds.azurewebsites.net>
-  - <http://research.microsoft.com/en-us/projects/mwt/>
-  - `video` <https://youtube.com/watch?v=7ic_d5TeIUk> (Langford)
-  - `video` <https://youtube.com/watch?v=5JXRbhPLSQw> (Agarwal)
-  - `video` <https://youtu.be/N5x48g2sp8M?t=52m> (Schapire)
-  - `video` <https://youtu.be/3q4OvzIyPug?t=6m12s> (Agarwal)
-  - `post` <http://hunch.net/?p=4464948> (Langford)
-  - `post` <http://machinedlearnings.com/2017/01/reinforcement-learning-as-service.html> (Mineiro)
-  - `paper` ["Taming the Monster: A Fast and Simple Algorithm for Contextual Bandits"](https://arxiv.org/abs/1402.0555) by Agarwal et al.
-
-
 #### Xia, He, Qin, Wang, Yu, Liu, Ma - ["Dual Learning for Machine Translation"](https://arxiv.org/abs/1611.00179)
 >	"While neural machine translation (NMT) is making good progress in the past two years, tens of millions of bilingual sentence pairs are needed for its training. However, human labeling is very costly. To tackle this training data bottleneck, we develop a dual-learning mechanism, which can enable an NMT system to automatically learn from unlabeled data through a dual-learning game. This mechanism is inspired by the following observation: any machine translation task has a dual task, e.g., English-to-French translation (primal) versus French-to-English translation (dual); the primal and dual tasks can form a closed loop, and generate informative feedback signals to train the translation models, even if without the involvement of a human labeler. In the dual-learning mechanism, we use one agent to represent the model for the primal task and the other agent to represent the model for the dual task, then ask them to teach each other through a reinforcement learning process. Based on the feedback signals generated during this process (e.g., the languagemodel likelihood of the output of a model, and the reconstruction error of the original sentence after the primal and dual translations), we can iteratively update the two models until convergence (e.g., using the policy gradient methods). We call the corresponding approach to neural machine translation dual-NMT. Experiments show that dual-NMT works very well on English↔French translation; especially, by learning from monolingual data (with 10% bilingual data for warm start), it achieves a comparable accuracy to NMT trained from the full bilingual data for the French-to-English translation task."
 
@@ -1460,12 +1443,15 @@ interesting recent papers:
 
 >	"Second, although we have focused on dual learning on two tasks, our technology is not restricted to two tasks only. Actually, our key idea is to form a closed loop so that we can extract feedback signals by comparing the original input data with the final output data. Therefore, if more than two associated tasks can form a closed loop, we can apply our technology to improve the model in each task from unlabeled data. For example, for an English sentence x, we can first translate it to a Chinese sentence y, then translate y to a French sentence z, and finally translate z back to an English sentence x 0 . The similarity between x and x 0 can indicate the effectiveness of the three translation models in the loop, and we can once again apply the policy gradient methods to update and improve these models based on the feedback signals during the loop. We would like to name this generalized dual learning as close-loop learning, and will test its effectiveness in the future."
 
->	"We plan to explore the following directions in the future. First, in the experiments we used bilingual data to warm start the training of dual-NMT. A more exciting direction is to learn from scratch, i.e., to learn translations directly from monolingual data of two languages (maybe plus lexical dictionary). Second, our dual-NMT was based on NMT systems in this work. Our basic idea can also be applied to phrase-based SMT systems and we will look into this direction. Third, we only considered a pair of languages in this paper. We will extend our approach to jointly train multiple translation models for a tuple of 3+ languages using monolingual data."
-
 ----
 >	"The authors finetune an FR -> EN NMT model using a RL-based dual game. 1. Pick a French sentence from a monolingual corpus and translate it to EN. 2. Use an EN language model to get a reward for the translation 3. Translate the translation back into FR using an EN -> FR system. 4. Get a reward based on the consistency between original and reconstructed sentence. Training this architecture using Policy Gradient authors can make efficient use of monolingual data and show that a system trained on only 10% of parallel data and finetuned with monolingual data achieves comparable BLUE scores as a system trained on the full set of parallel data."
 
   - `notes` <https://github.com/dennybritz/deeplearning-papernotes/blob/master/notes/dual-learning-mt.md>
+
+
+#### [Neural Combinatorial Optimization with Reinforcement Learning](http://arxiv.org/abs/1611.09940) (Google Brain)
+>	"This paper presents a framework to tackle combinatorial optimization problems using neural networks and reinforcement learning. We focus on the traveling salesman problem (TSP) and train a recurrent network that, given a set of city coordinates, predicts a distribution over different city permutations. Using negative tour length as the reward signal, we optimize the parameters of the recurrent network using a policy gradient method. We compare learning the network parameters on a set of training graphs against learning them on individual test graphs. Despite the computational expense, without much engineering and heuristic designing, Neural Combinatorial Optimization achieves close to optimal results on 2D Euclidean graphs with up to 100 nodes. Applied to the KnapSack, another NP-hard problem, the same method obtains optimal solutions for instances with up to 200 items."  
+  - `video` <https://youtube.com/watch?v=mxCVgVrUw50> (Bengio)
 
 
 #### Norouzi, Bengio, Chen, Jaitly, Schuster, Wu, Schuurmans - ["Reward Augmented Maximum Likelihood for Neural Structured Prediction"](https://arxiv.org/abs/1609.00150)
@@ -1501,6 +1487,31 @@ interesting recent papers:
   - `paper` ["Softmax Q-Distribution Estimation for Structured Prediction: A Theoretical Interpretation for RAML"](https://arxiv.org/abs/1705.07136) by Ma et al.
 
 
+#### Agarwal et al. - ["Making Contextual Decisions with Low Technical Debt"](http://arxiv.org/abs/1606.03966)
+>	"Applications and systems are constantly faced with decisions that require picking from a set of actions based on contextual information. Reinforcement-based learning algorithms such as contextual bandits can be very effective in these settings, but applying them in practice is fraught with technical debt, and no general system exists that supports them completely. We address this and create the first general system for contextual learning, called the Decision Service. Existing systems often suffer from technical debt that arises from issues like incorrect data collection and weak debuggability, issues we systematically address through our ML methodology and system abstractions. The Decision Service enables all aspects of contextual bandit learning using four system abstractions which connect together in a loop: explore (the decision space), log, learn, and deploy. Notably, our new explore and log abstractions ensure the system produces correct, unbiased data, which our learner uses for online learning and to enable real-time safeguards, all in a fully reproducible manner. The Decision Service has a simple user interface and works with a variety of applications: we present two live production deployments for content recommendation that achieved click-through improvements of 25-30%, another with 18% revenue lift in the landing page, and ongoing applications in tech support and machine failure handling. The service makes real-time decisions and learns continuously and scalably, while significantly lowering technical debt."
+
+>	"We have presented the Decision Service: a powerful tool to support the complete data lifecycle, which automates many of the burdensome tasks that data scientists face such as gathering the right data and deploying in an appropriate manner. Instead, a data scientist can focus on more core tasks such as finding the right features, representation, or signal to optimize against. The data lifecycle support also makes basic application of the Decision Service feasible without a data scientist. To assist in lowering the barrier to entry, we are exploring techniques based on expert learning and hyperparameter search that may further automate the process. Since the policy evaluation techniques can provide accurate predictions of online performance, such automations are guaranteed to be statistically sound. We are also focusing on making the decision service easy to deploy and use because we believe this is key to goal of democratizing machine learning for everyone. The Decision Service can also naturally be extended to a greater variety of problems, all of which can benefit from data lifecycle support. Plausible extensions might address advanced variants like reinforcement and active learning, and simpler ones like supervised learning."
+
+----
+>	"It is the first general purpose reinforcement-based learning system. Wouldn’t it be great if Reinforcement Learning algorithms could easily be used to solve all reinforcement learning problems? But there is a well-known problem: It’s very easy to create natural RL problems for which all standard RL algorithms (epsilon-greedy Q-learning, SARSA, etc) fail catastrophically. That’s a serious limitation which both inspires research and which I suspect many people need to learn the hard way. Removing the credit assignment problem from reinforcement learning yields the Contextual Bandit setting which we know is generically solvable in the same manner as common supervised learning problems."
+
+>	"Many people have tried to create online learning system that do not take into account the biasing effects of decisions. These fail near-universally. For example they might be very good at predicting what was shown (and hence clicked on) rather that what should be shown to generate the most interest."
+
+>	"We need a system that explores over appropriate choices with logging of features, actions, probabilities of actions, and outcomes. These must then be fed into an appropriate learning algorithm which trains a policy and then deploys the policy at the point of decision. The system enables a fully automatic causally sound learning loop for contextual control of a small number of actions. It is strongly scalable, for example a version of this is in use for personalized news on MSN."
+
+  - <https://azure.microsoft.com/en-us/services/cognitive-services/custom-decision-service/>
+  - <https://ds.microsoft.com>
+  - <https://mwtds.azurewebsites.net>
+  - <http://research.microsoft.com/en-us/projects/mwt/>
+  - `video` <https://youtube.com/watch?v=7ic_d5TeIUk> (Langford)
+  - `video` <https://youtube.com/watch?v=5JXRbhPLSQw> (Agarwal)
+  - `video` <https://youtu.be/N5x48g2sp8M?t=52m> (Schapire)
+  - `video` <https://youtu.be/3q4OvzIyPug?t=6m12s> (Agarwal)
+  - `post` <http://hunch.net/?p=4464948> (Langford)
+  - `post` <http://machinedlearnings.com/2017/01/reinforcement-learning-as-service.html> (Mineiro)
+  - `paper` ["Taming the Monster: A Fast and Simple Algorithm for Contextual Bandits"](https://arxiv.org/abs/1402.0555) by Agarwal et al.
+
+
 
 ---
 ### interesting papers - exploration and intrinsic motivation
@@ -1515,7 +1526,7 @@ interesting recent papers:
 
 ----
 
-  * [bayesian exploration methods](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration-methods)
+  * [bayesian exploration models](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration-models)
   * information theoretic and distributional models
     - [uncertainty motivation](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---uncertainty-motivation)
     - [information gain motivation](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---information-gain-motivation)
@@ -1529,7 +1540,10 @@ interesting recent papers:
 
 
 ---
-### interesting papers - exploration and intrinsic motivation - bayesian exploration methods
+### interesting papers - exploration and intrinsic motivation - bayesian exploration models
+
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)
+
 
 #### Guez, Silver, Dayan - ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](https://arxiv.org/abs/1205.3109)
 >	"Bayesian model-based reinforcement learning is a formally elegant approach to learning optimal behaviour under model uncertainty, trading off exploration and exploitation in an ideal way. Unfortunately, finding the resulting Bayes-optimal policies is notoriously taxing, since the search space becomes enormous. In this paper we introduce a tractable, sample-based method for approximate Bayes-optimal planning which exploits Monte-Carlo tree search. Our approach outperformed prior Bayesian model-based RL algorithms by a significant margin on several well-known benchmark problems – because it avoids expensive applications of Bayes rule within the search tree by lazily sampling models from the current beliefs. We illustrate the advantages of our approach by showing it working in an infinite state space domain which is qualitatively out of reach of almost all previous work in Bayesian exploration."
@@ -1699,9 +1713,12 @@ interesting recent papers:
 >	"How to design algorithms that make use of such prior information?"  
 >	"Key idea: learn a fast RL algorithm that make use of such prior information"  
 
->	"learning to explore"  
->	"outer episodes (sample a new bandit problem / MDP) and inner episodes (of sampled MDP)"  
->	"use RNN policy with no state reset between inner episodes for outer POMDP"  
+>	"RNN is made to ingest multiple rollouts from many different MDPs and then perform a policy gradient update through the entire temporal span of the RNN. The hope is that the RNN will learn a faster RL algorithm in its memory weights."  
+>	"Suppose L represents an RNN. Let Envk(a) be a function that takes an action, uses it to interact with the MDP representing task k, and returns the next observation o, reward r, and a termination flag d. Then we have:  
+>	xt = [ot−1, at−1, rt−1, dt−1]  
+>	L(ht, xt) = [at, ht+1]  
+>	Envk(at) = [ot, rt, dt]  
+>	To train this RNN, we sample N MDPs from M and obtain k rollouts for each MDP by running the MDP through the RNN as above. We then compute a policy gradient update to move the RNN parameters in a direction which maximizes the returns over the k trials performed for each MDP."  
 
 >	"future directions:  
 	- better outer-loop algorithms  
@@ -1734,6 +1751,9 @@ interesting recent papers:
 
 ---
 ### interesting papers - exploration and intrinsic motivation - information theoretic and distributional models - uncertainty motivation
+
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)
+
 
 #### Oh et al. - ["Action-Conditional Video Prediction using Deep Networks in Atari Games"](#oh-guo-lee-lewis-singh---action-conditional-video-prediction-using-deep-networks-in-atari-games)
 >	approximate visitation counting in a learned state embedding using Gaussian kernels
@@ -1784,6 +1804,9 @@ interesting recent papers:
 
 ---
 ### interesting papers - exploration and intrinsic motivation - information theoretic and distributional models - information gain motivation
+
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)
+
 
 #### Still, Precup - ["An Information-Theoretic Approach to Curiosity-Driven Reinforcement Learning"](http://www2.hawaii.edu/~sstill/StillPrecup2011.pdf)
 >	"We provide a fresh look at the problem of exploration in reinforcement learning, drawing on ideas from information theory. First, we show that Boltzmann-style exploration, one of the main exploration methods used in reinforcement learning, is optimal from an information-theoretic point of view. Second, we address the problem of curiosity-driven learning. We propose that, in addition to maximizing the expected return, a learner should chose a policy that maximizes the predictive power of its own behavior, measured by the information that the most recent state-action pair carries about the future. This makes the world “interesting” and exploitable. The general result has the form of Boltzmann-style exploration with a bonus that contains a novel exploration-exploitation trade-off that emerges from the proposed optimization principle. Importantly, this exploration-exploitation trade-off is also present when the “temperature”-like parameter in the Boltzmann distribution tends to zero, i.e. when there is no exploration due to randomness. As a result, exploration emerges as a directed behavior that optimizes information gain, rather than being modeled solely as behavior randomization."
@@ -1847,6 +1870,9 @@ interesting recent papers:
 ---
 ### interesting papers - exploration and intrinsic motivation - information theoretic and distributional models - empowerment
 
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)
+
+
 #### Salge, Glackin, Polani - ["Empowerment - An Introduction"](https://arxiv.org/abs/1310.1863)
 >	"Is it better for you to own a corkscrew or not? If asked, you as a human being would likely say “yes”, but more importantly, you are somehow able to make this decision. You are able to decide this, even if your current acute problems or task do not include opening a wine bottle. Similarly, it is also unlikely that you evaluated several possible trajectories your life could take and looked at them with and without a corkscrew, and then measured your survival or reproductive fitness in each. When you, as a human cognitive agent, made this decision, you were likely relying on a behavioural “proxy”, an internal motivation that abstracts the problem of evaluating a decision impact on your overall life, but evaluating it in regard to some simple fitness function. One example would be the idea of curiosity, urging you to act so that your experience new sensations and learn about the environment. On average, this should lead to better and richer models of the world, which give you a better chance of reaching your ultimate goals of survival and reproduction."
 
@@ -1896,6 +1922,9 @@ interesting recent papers:
 
 ---
 ### interesting papers - exploration and intrinsic motivation - predictive models - predictive novelty motivation
+
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)
+
 
 #### Stadie, Levine, Abbeel - ["Incentivizing Exploration In Reinforcement Learning With Deep Predictive Models"](http://arxiv.org/abs/1507.00814)
 >	"Achieving efficient and scalable exploration in complex domains poses a major challenge in reinforcement learning. While Bayesian and PAC-MDP approaches to the exploration problem offer strong formal guarantees, they are often impractical in higher dimensions due to their reliance on enumerating the state-action space. Hence, exploration in complex domains is often performed with simple epsilon-greedy methods. To achieve more efficient exploration, we develop a method for assigning exploration bonuses based on a concurrently learned model of the system dynamics. By parameterizing our learned model with a neural network, we are able to develop a scalable and efficient approach to exploration bonuses that can be applied to tasks with complex, high-dimensional state spaces. We demonstrate our approach on the task of learning to play Atari games from raw pixel inputs. In this domain, our method offers substantial improvements in exploration efficiency when compared with the standard epsilon greedy approach. As a result of our improved exploration strategy, we are able to achieve state-of-the-art results on several games that pose a major challenge for prior methods."
@@ -1950,11 +1979,15 @@ interesting recent papers:
 >	"To confirm whether our method is able to find the correct algorithm for multi-digit addition, we investigate its generalization to longer input sequences than provided during training. We evaluate the trained models on inputs up to a length of 2000 digits, even though training sequences were at most 33 characters. For each length, we test the model on 100 randomly generated inputs, stopping when the accuracy falls below 100%. Out of the 60 models trained on addition with UREX, we find that 5 models generalize to numbers up to 2000 digits without any observed mistakes."
 
   - `video` <https://youtu.be/fZNyHoXgV7M?t=55m45s> (Norouzi)
+  - `code` <https://github.com/tensorflow/models/tree/master/research/pcl_rl>
 
 
 
 ---
 ### interesting papers - exploration and intrinsic motivation - predictive models - learning progress motivation
+
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)
+
 
 #### Schmidhuber - ["Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes"](http://arxiv.org/abs/0812.4360)
 >	"I argue that data becomes temporarily interesting by itself to some self-improving, but computationally limited, subjective observer once he learns to predict or compress the data in a better way, thus making it subjectively simpler and more beautiful. Curiosity is the desire to create or discover more non-random, non-arbitrary, regular data that is novel and surprising not in the traditional sense of Boltzmann and Shannon but in the sense that it allows for compression progress because its regularity was not yet known. This drive maximizes interestingness, the first derivative of subjective beauty or compressibility, that is, the steepness of the learning curve. It motivates exploring infants, pure mathematicians, composers, artists, dancers, comedians, yourself, and artificial systems."
@@ -1991,6 +2024,9 @@ interesting recent papers:
 
 ---
 ### interesting papers - exploration and intrinsic motivation - competence-based models - maximizing incompetence motivation
+
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)
+
 
 #### Sukhbaatar, Lin, Kostrikov, Synnaeve, Szlam - ["Intrinsic Motivation and Automatic Curricula via Asymmetric Self-Play"](https://arxiv.org/abs/1703.05407)
 >	"We describe a simple scheme that allows an agent to learn about its environment in an unsupervised manner. Our scheme pits two versions of the same agent, Alice and Bob, against one another. Alice proposes a task for Bob to complete; and then Bob attempts to complete the task. In this work we will focus on two kinds of environments: (nearly) reversible environments and environments that can be reset. Alice will "propose" the task by doing a sequence of actions and then Bob must undo or repeat them, respectively. Via an appropriate reward structure, Alice and Bob automatically generate a curriculum of exploration, enabling unsupervised training of the agent. When Bob is deployed on an RL task within the environment, this unsupervised training reduces the number of supervised episodes needed to learn, and in some cases converges to a higher reward."
@@ -2122,10 +2158,7 @@ interesting recent papers:
 ---
 ### interesting papers - model-based methods
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---simulation-and-planning) on simulation and planning  
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---memory) on memory  
-
-[interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration-models) on bayesian exploration methods
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-based-methods)
 
 
 #### Depeweg, Hernandez-Lobato, Doshi-Velez, Udluft - ["Learning and Policy Search in Stochastic Dynamic Systems with Bayesian Neural Networks"](https://arxiv.org/abs/1605.07127)
@@ -2190,7 +2223,7 @@ interesting recent papers:
 ---
 ### interesting papers - value-based methods
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---agents)
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-free-methods)
 
 
 #### Mnih, Kavukcuoglu, Silver, Graves, Antonoglou, Wierstra, Riedmiller - ["Playing Atari with Deep Reinforcement Learning"](https://arxiv.org/abs/1312.5602)
@@ -2314,7 +2347,7 @@ interesting recent papers:
 ---
 ### interesting papers - policy-based methods
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---agents)
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-free-methods)
 
 
 #### Duan, Chen, Houthooft, Schulman, Abbeel - ["Benchmarking Deep Reinforcement Learning for Continuous Control"](http://arxiv.org/abs/1604.06778)
