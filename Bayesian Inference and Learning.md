@@ -14,7 +14,7 @@
   * [inference and learning](#inference-and-learning)
     - [expectation maximization](#expectation-maximization)
     - [variational inference](#variational-inference)
-    - [monte carlo methods](#monte-carlo-methods)
+    - [monte carlo inference](#monte-carlo-inference)
     - [likelihood-free inference](#likelihood-free-inference)
     - [causal inference](#causal-inference)
   * [interesting papers](#interesting-papers)
@@ -27,7 +27,7 @@
   ![(yet another) history of life as we know it...](http://www.brera.mi.astro.it/~andreon/inference/primate.png)  
   ["Inference, do you know it?"](http://www.brera.mi.astro.it/~andreon/inference/Inference.html) by Stefano Andreon  
 
-  [frequentist vs bayesian statistics](https://github.com/brylevkirill/notes/blob/master/Statistics.md)
+  [frequentist vs bayesian statistics](https://github.com/brylevkirill/notes/blob/master/Statistics.txt)
 
 ----
 
@@ -90,7 +90,8 @@
   ["Scalable Bayesian Methods"](https://youtube.com/watch?v=if9bTlZOiO8) by Dmitry Vetrov `video` `in russian`
 	([slides](https://drive.google.com/open?id=0BwU8otKU0BqQOGdzYTdMem1UTEk) `in english`)  
 
-  [course](https://compscicenter.ru/courses/bayes-course/2015-summer/classes/) by Dmitry Vetrov `video` `in russian`
+  [course](https://compscicenter.ru/courses/bayes-course/2015-summer/classes/) by Dmitry Vetrov `video` `in russian`  
+  [course](https://lektorium.tv/lecture/30977) by Sergey Nikolenko `video` `in russian`  
 
   textbook ([part 1](http://machinelearning.ru/wiki/images/e/e1/BayesML-2007-textbook-1.pdf),
 	[part 2](http://machinelearning.ru/wiki/images/4/43/BayesML-2007-textbook-2.pdf))
@@ -102,7 +103,7 @@
 
   [**bayesian reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#bayesian-reinforcement-learning)
 
-  [**Solomonoff Induction**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#solomonoff-induction-and-aixi)
+  [**Solomonoff induction**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#solomonoff-induction-and-aixi)
 
 ----
 
@@ -265,10 +266,8 @@
 
 ----
 
-  "Many real phenomena are of essentially unlimited complexity.  
-  Suppose we model consumer behaviour by categorizing consumers into various “types” (mixture components). There is no reason to think that there are only (say) five types of consumer. Surely there are an unlimited number of types, though some may be rare.  
-  Suppose we model the growth rate of trees as a function of climate, soil type, genetic characteristics, disease suppression measures taken, etc. There is no reason to think any simple functional form (eg, linear, low-order polynomial) will capture the many ways these factors interact to determine tree growth.  
-  How can we build a model that accommodates such complexity?  
+  "Many real phenomena are of essentially unlimited complexity. Suppose we model consumer behaviour by categorizing consumers into various “types” (mixture components). There is no reason to think that there are only (say) five types of consumer. Surely there are an unlimited number of types, though some may be rare. Suppose we model the growth rate of trees as a function of climate, soil type, genetic characteristics, disease suppression measures taken, etc. There is no reason to think any simple functional form (eg, linear, low-order polynomial) will capture the many ways these factors interact to determine tree growth. How can we build a model that accommodates such complexity?
+
   One approach:  
   - Define models that can have any finite amount of complexity (e.g., a finite number of mixture components, or of hidden units).  
   - Define priors for these models that make sense.  
@@ -371,16 +370,18 @@
   "Stochastic Computation Graphs" by Artem Sobolev ([slides](http://slides.com/asobolev/stochastic-computation-graphs#/))  
   [overview](https://youtu.be/tqGEX_Ucu04?t=48m42s) of alternatives to variational inference by Dmitry Molchanov `video` `in russian`  
 
+----
+
   ["Neural Variational Inference"](http://artem.sobolev.name/tags/modern%20variational%20inference%20series.html) by Artem Sobolev:  
-  ["Classical Theory"](http://artem.sobolev.name/posts/2016-07-01-neural-variational-inference-classical-theory.html)  
-  ["Scaling Up"](http://artem.sobolev.name/posts/2016-07-04-neural-variational-inference-stochastic-variational-inference.html)  
-  ["Blackbox Mode"](http://artem.sobolev.name/posts/2016-07-05-neural-variational-inference-blackbox.html)  
-  ["Variational Autoencoders and Helmholtz machines"](http://artem.sobolev.name/posts/2016-07-11-neural-variational-inference-variational-autoencoders-and-Helmholtz-machines.html)  
-  ["Importance Weighted Autoencoders"](http://artem.sobolev.name/posts/2016-07-14-neural-variational-importance-weighted-autoencoders.html)  
+  - ["Classical Theory"](http://artem.sobolev.name/posts/2016-07-01-neural-variational-inference-classical-theory.html)  
+  - ["Scaling Up"](http://artem.sobolev.name/posts/2016-07-04-neural-variational-inference-stochastic-variational-inference.html)  
+  - ["Blackbox Mode"](http://artem.sobolev.name/posts/2016-07-05-neural-variational-inference-blackbox.html)  
+  - ["Variational Autoencoders and Helmholtz machines"](http://artem.sobolev.name/posts/2016-07-11-neural-variational-inference-variational-autoencoders-and-Helmholtz-machines.html)  
+  - ["Importance Weighted Autoencoders"](http://artem.sobolev.name/posts/2016-07-14-neural-variational-importance-weighted-autoencoders.html)  
 
   ["Stochastic Computation Graphs"](http://artem.sobolev.name/tags/stochastic%20computation%20graphs%20series.html) by Artem Sobolev:  
-  ["Continuous Case"](http://artem.sobolev.name/posts/2017-09-10-stochastic-computation-graphs-continuous-case.html)  
-  ["Discrete Relaxations"](http://artem.sobolev.name/posts/2017-10-28-stochastic-computation-graphs-discrete-relaxations.html)  
+  - ["Continuous Case"](http://artem.sobolev.name/posts/2017-09-10-stochastic-computation-graphs-continuous-case.html)  
+  - ["Discrete Relaxations"](http://artem.sobolev.name/posts/2017-10-28-stochastic-computation-graphs-discrete-relaxations.html)  
 
 ----
 
@@ -490,15 +491,16 @@
 
 
 ---
-### monte carlo methods
+### monte carlo inference
 
   "Monte Carlo methods are a diverse class of algorithms that rely on repeated random sampling to compute the solution to problems whose solution space is too large to explore systematically or whose systemic behavior is too complex to model."
-
 
   ["Why is it hard to directly sample from certain statistical distributions"](https://quora.com/Why-is-it-hard-to-directly-sample-from-certain-statistical-distributions#!n=12)
 
   ["Introduction to MCMC"](http://johndcook.com/blog/2016/01/23/introduction-to-mcmc/) by John Cook  
   ["Markov Chain Monte Carlo Without all the Bullshit"](http://jeremykun.com/2015/04/06/markov-chain-monte-carlo-without-all-the-bullshit/) by Jeremy Kun  
+
+----
 
   [introduction](https://youtube.com/watch?v=TNZk8lo4e-Q) by Nando de Freitas `video`  
   [introduction](https://youtube.com/watch?v=M6aoDSsq2ig) by Alex Smola `video`  
@@ -506,8 +508,10 @@
   [introduction](https://youtube.com/watch?v=4qfTUF9LudY) by Igor Kuralenok `video` `in russian`  
   introduction by Igor Kuralenok ([first part](https://youtube.com/watch?v=q-J-wh74OJA), [second part](https://youtube.com/watch?v=6Q1YdWP92mo)) `video` `in russian`  
 
-  [tutorial](http://nowozin.net/sebastian/blog/history-of-monte-carlo-methods-part-1.html) by Sebastian Nowozin `video`  
   [tutorial](http://research.microsoft.com/apps/video/default.aspx?id=259575) by Iain Murray `video`  
+  [tutorial](http://nowozin.net/sebastian/blog/history-of-monte-carlo-methods-part-1.html) by Sebastian Nowozin `video`  
+
+----
 
   ["Monte Carlo Theory, Methods and Examples"](http://statweb.stanford.edu/~owen/mc/) book by Art Owen
 
@@ -555,38 +559,41 @@
 
 ----
 
-  [introduction](https://medium.com/@akelleh/causal-data-science-721ed63a4027) by Adam Kelleher:  
-	["If Correlation Doesn’t Imply Causation, Then What Does?"](https://medium.com/@akelleh/if-correlation-doesnt-imply-causation-then-what-does-c74f20d26438)  
-	["Understanding Bias: A Prerequisite For Trustworthy Results"](https://medium.com/@akelleh/understanding-bias-a-pre-requisite-for-trustworthy-results-ee590b75b1be)  
-	["Speed vs. Accuracy: When Is Correlation Enough? When Do You Need Causation?"](https://medium.com/@akelleh/speed-vs-accuracy-when-is-correlation-enough-when-do-you-need-causation-708c8ca93753)  
-	["A Technical Primer on Causality"](https://medium.com/@akelleh/a-technical-primer-on-causality-181db2575e41)  
-	["The Data Processing Inequality"](https://medium.com/@akelleh/the-data-processing-inequality-da242b40800b)  
-	["Causal Graph Inference"](https://medium.com/@akelleh/causal-graph-inference-b3e3afd47110)  
+  [introduction](https://medium.com/@akelleh/causal-data-science-721ed63a4027) by Adam Kelleher:
+  - ["If Correlation Doesn’t Imply Causation, Then What Does?"](https://medium.com/@akelleh/if-correlation-doesnt-imply-causation-then-what-does-c74f20d26438)
+  - ["Understanding Bias: A Prerequisite For Trustworthy Results"](https://medium.com/@akelleh/understanding-bias-a-pre-requisite-for-trustworthy-results-ee590b75b1be)
+  - ["Speed vs. Accuracy: When Is Correlation Enough? When Do You Need Causation?"](https://medium.com/@akelleh/speed-vs-accuracy-when-is-correlation-enough-when-do-you-need-causation-708c8ca93753)
+  - ["A Technical Primer on Causality"](https://medium.com/@akelleh/a-technical-primer-on-causality-181db2575e41)
+  - ["The Data Processing Inequality"](https://medium.com/@akelleh/the-data-processing-inequality-da242b40800b)
+  - ["Causal Graph Inference"](https://medium.com/@akelleh/causal-graph-inference-b3e3afd47110)
 
   ["Introduction to Causal Inference"](http://jmlr.org/papers/volume11/spirtes10a/spirtes10a.pdf) by Peter Spirtes `paper`
 
+  ["The Art and Science of Cause and Effect"](http://bayes.cs.ucla.edu/BOOK-2K/causality2-epilogue.pdf) book by Judea Pearl
 
-  [tutorial](http://techtalks.tv/talks/causal-inference-for-observational-studies/62355/) by David Sontag and Uri Shalit `video`  
+----
+
   [tutorial](https://youtube.com/watch?v=zvrcyqcN9Wo) by Jonas Peters `video`  
   [tutorial](https://youtube.com/watch?v=_wFagI5Fn9I) by Jonas Peters `video`  
   [tutorial](https://youtube.com/watch?v=KsbftkwZTq4) by Bernhard Scholkopf and Dominik Janzing `video`  
 
+  ["Connections between Causality and Machine Learning"](https://youtube.com/watch?v=9pm0eXuiTZs) by Jonas Peters `video`
+
+  ["Counterfactual Reasoning and Massive Data Sets"](https://youtube.com/watch?v=s37cIYDOM6s) by Leon Bottou `video`  
+  ["The Missing Signal"](https://youtube.com/watch?v=DfJeaa--xO0) by Leon Bottou `video`  
 
   ["Toward Causal Machine Learning"](https://youtube.com/watch?v=ooeRlw3U2zU) by Bernhard Scholkopf `video`  
   ["Statistical and Causal Approaches to Machine Learning"](https://youtu.be/ek9jwRA2Jio?t=26m) by Bernhard Scholkopf `video`  
 
-
-  ["The Missing Signal"](https://youtube.com/watch?v=DfJeaa--xO0) by Leon Bottou `video`  
-  ["Counterfactual Reasoning and Massive Data Sets"](https://youtube.com/watch?v=s37cIYDOM6s) by Leon Bottou `video`  
-
-
-  ["Counterfactual Reasoning and Learning Systems: The Example of Computational Advertising"](http://jmlr.org/papers/volume14/bottou13a/bottou13a.pdf) by Bottou et al. `paper` ([talk](https://youtube.com/watch?v=qmQceWeYg04) by Leon Bottou `video`)  
-  ["Discovering Causal Signals in Images"](https://arxiv.org/abs/1605.08179) by `paper` ([talk](https://youtube.com/watch?v=DfJeaa--xO0) by Leon Bottou `video`)  
-  ["Learning Representations for Counterfactual Inference"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#johansson-shalit-sontag---learning-representations-for-counterfactual-inference) by Johansson, Shalit, Sontag `paper`  
+  ["The Mathematics of Causal Inference, with Reflections on Machine Learning and the Logic of Science"](https://youtube.com/watch?v=zHjdd--W6o4) by Judea Pearl `video`  
 
 ----
 
-  ["The Art and Science of Cause and Effect"](http://bayes.cs.ucla.edu/BOOK-2K/causality2-epilogue.pdf) book by Judea Pearl
+  ["Counterfactual Reasoning and Learning Systems: The Example of Computational Advertising"](http://jmlr.org/papers/volume14/bottou13a/bottou13a.pdf) by Bottou et al. `paper` ([talk](https://youtube.com/watch?v=qmQceWeYg04) by Leon Bottou `video`)  
+  ["Discovering Causal Signals in Images"](https://arxiv.org/abs/1605.08179) by Lopez-Paz et al. `paper` ([talk](https://youtube.com/watch?v=DfJeaa--xO0) by Leon Bottou `video`)  
+  ["Learning Representations for Counterfactual Inference"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#johansson-shalit-sontag---learning-representations-for-counterfactual-inference) by Johansson, Shalit, Sontag `paper`
+	([talk](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3) by Uri Shalit)  
+  ["Implicit Causal Models for Genome-wide Association Studies"](https://arxiv.org/abs/1710.10742) by Tran and Blei `paper`  
 
 ----
 
@@ -736,3 +743,7 @@
 
 #### ["Automatic Differentiation Variational Inference"](http://arxiv.org/abs/1603.00788) Kucukelbir, Tran, Ranganath, Gelman, Blei
 >	"Probabilistic modeling is iterative. A scientist posits a simple model, fits it to her data, refines it according to her analysis, and repeats. However, fitting complex models to large data is a bottleneck in this process. Deriving algorithms for new models can be both mathematically and computationally challenging, which makes it difficult to efficiently cycle through the steps. To this end, we develop automatic differentiation variational inference. Using our method, the scientist only provides a probabilistic model and a dataset, nothing else. ADVI automatically derives an efficient variational inference algorithm, freeing the scientist to refine and explore many models. ADVI supports a broad class of models - no conjugacy assumptions are required. We study ADVI across ten different models and apply it to a dataset with millions of observations. ADVI is integrated into Stan, a probabilistic programming system; it is available for immediate use."
+
+
+#### ["A Generative Vision Model that Trains with High Data Efficiency and Breaks Text-based CAPTCHAs"](http://science.sciencemag.org/content/early/2017/10/26/science.aag2612.full) George et al.
+>	"Learning from few examples and generalizing to dramatically different situations are capabilities of human visual intelligence that are yet to be matched by leading machine learning models. By drawing inspiration from systems neuroscience, we introduce a probabilistic generative model for vision in which message-passing based inference handles recognition, segmentation and reasoning in a unified way. The model demonstrates excellent generalization and occlusion-reasoning capabilities, and outperforms deep neural networks on a challenging scene text recognition benchmark while being 300-fold more data efficient. In addition, the model fundamentally breaks the defense of modern text-based CAPTCHAs by generatively segmenting characters without CAPTCHA-specific heuristics. Our model emphasizes aspects like data efficiency and compositionality that may be important in the path toward general artificial intelligence."

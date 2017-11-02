@@ -94,7 +94,13 @@
 
   - [natural language](#knowledge-representation---natural-language)
   - [knowledge graph](#knowledge-representation---knowledge-graph)
+    * [description logic](#description-logic)
+    * [relational learning](#relational-learning)
   - [probabilistic database](#knowledge-representation---probabilistic-database)
+    * [Epistemological Database](#probabilistic-database---epistemological-database)
+    * [Markov Logic Network](#probabilistic-database---markov-logic-network)
+    * [Probabilistic Soft Logic](#probabilistic-database---probabilistic-soft-logic)
+    * [ProPPR](#probabilistic-database---proppr)
   - [probabilistic program](#knowledge-representation---probabilistic-program)
   - [distributed representations](#knowledge-representation---distributed-representations)
 
@@ -140,21 +146,37 @@
 
 
 ---
-### knowledge graph
+### knowledge representation - knowledge graph
 
-  [Resource Description Framework](https://github.com/brylevkirill/tech/blob/master/RDF/RDF.txt)  
-  [Web Ontology Language](https://github.com/brylevkirill/tech/blob/master/RDF/OWL.txt)  
-
-  ["OWL: The Web Ontology Language"](https://youtube.com/watch?v=EXXIIlfqb0c) by Pavel Klinov  
-  ["Ontologies and Knowledge Representation"](https://lektorium.tv/course/22781) course by Boris Konev `in russian`  
+  - [description logic](#description-logic)  
+  - [relational learning](#relational-learning)  
 
 
-  ["Schema.org: Evolution of Structured Data on the Web"](http://queue.acm.org/detail.cfm?id=2857276) by Guha, Brickley, Macbeth  
+
+---
+### description logic
+
+  [Resource Description Framework](https://github.com/brylevkirill/tech/tree/master/RDF) (RDF)
+
+----
+
+  [Web Ontology Language](https://github.com/brylevkirill/tech/blob/master/RDF/OWL.txt) (OWL)
+
+  ["OWL: The Web Ontology Language"](https://youtube.com/watch?v=EXXIIlfqb0c) by Pavel Klinov `video`  
+  ["Ontologies and Knowledge Representation"](https://lektorium.tv/course/22781) course by Boris Konev `video` `in russian`  
+
+----
+
+  [schema.org](https://github.com/brylevkirill/tech/blob/master/RDF/schema.org.txt)
+
+  ["Schema.org: Evolution of Structured Data on the Web"](http://queue.acm.org/detail.cfm?id=2857276) by Guha et al. `paper`  
 >	"We report some key schema.org adoption metrics from a sample of 10 billion pages from a combination of the Google index and Web Data Commons. In this sample, 31.3% of pages have schema.org markup, up from 22% one year ago. Structured data markup is now a core part of the modern web."
 
-  RDF on the web with schema.org types as the largest existing structured knowledge base - [overview by Ramanathan Guha](http://youtube.com/watch?v=-UljtBjV8jM)  
->	"I don't think we even have the begginings of theory [filtering, entity resolution, graph reconciliation]"
+  [overview](http://youtube.com/watch?v=-UljtBjV8jM) by Ramanathan Guha `video`  
+>	"RDF on the web marked with schema.org types is the largest existing structured knowledge base."  
+>	"I don't think we even have the begginings of theory [entity resolution, graph reconciliation]."  
 
+----
 
   problems of RDF on the web:
   - strong assumptions (nothing is ever wrong, no contradictions)
@@ -166,10 +188,10 @@
 
 
 ---
-### Relational Machine Learning
+### relational learning
 
-  *traditional ML*: data = matrix  
-  *relational ML*:  
+  *traditional learning*: data = matrix  
+  *relational learning*:  
   - multiple data sources, different tuples of variables  
   - share representations of same types across data sources  
   - shared learned representations help propagate information among data sources  
@@ -197,21 +219,19 @@
 
 ----
 
-  "Multi-relational learning can be categorized into three categories:  
-  - *statistical relational learning* which directly encodes multi-relational graphs using probabilistic models such as Markov Logic Networks  
-  - *path ranking method* which explicitly explores the large relational feature space of relations with random walk  
-  - *embedding-based models* which embed multi-relational knowledge into low-dimensional representations of entities and relations via tensor/matrix factorization, Bayesian clustering framework or neural networks."  
+  Multi-relational learning can be categorized into three categories:  
+  - *statistical relational learning* methods - encode multi-relational graphs via probabilistic models such as Markov Logic Networks  
+  - *path ranking* methods - explore feature space of relations via random walk  
+  - *embedding* methods - project multi-relational knowledge into low-dimensional representations of entities and relations via tensor/matrix factorization, Bayesian clustering or neural networks  
 
   history of approaches:  
-  - tensor factorization (Harshman'94)  
-  - probabilistic relational learning (Friedman'99)  
-  - relational Markov networks (Taskar'02)  
-  - Markov logic networks (Kok'07)  
-  - spectral clustering (undirected graphs) (Dong'12)  
-  - ranking of random walks (Lao'11)  
-  - collective matrix factorization (Nickel'11)  
-  - matrix factorization & universal schema (Riedel'13)  
-  - embedding models (Bordes'11)  
+  - [tensor factorization](#tensor-factorization) (Harshman'94)  
+  - [probabilistic relational learning](#bayesian-network) (Friedman'99)  
+  - [Relational Markov Network](#markov-network) (Taskar'02)  
+  - [Markov Logic Network](#markov-logic-network) (Kok'07)  
+  - [ranking of random walks](#random-walk-inference) (Lao'11)  
+  - [embedding models](#continuous-embeddings) (Bordes'11)  
+  - [matrix factorization and universal schema](#matrix-factorization-and-univeral-schema) (Riedel'13)  
 
 
 ----
@@ -246,7 +266,7 @@
   - <http://youtube.com/watch?v=FVjuwv1_EDw> (Weston)  
 
 
-  [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#distributed-representations)  
+  [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)  
   [representations of natural language](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt#continuous-space-representations)  
 
 
@@ -259,7 +279,7 @@
 
 
 ----
-#### matrix factorization of knowledge graph
+#### matrix factorization and univeral schema
 
   [Epistemological Database with Universal Schema](#probabilistic-database---epistemological-database)
 
@@ -279,7 +299,7 @@
 
 
 ----
-#### tensor factorization of knowledge graph
+#### tensor factorization
 
   ["Machine Learning with Knowledge Graphs"](http://videolectures.net/eswc2014_tresp_machine_learning/) by Volker Tresp
 	[(slides)](http://www.dbs.ifi.lmu.de/~tresp/papers/ESWC-Keynote.pdf)
@@ -289,7 +309,7 @@
 
 
 ----
-#### Mixture models
+#### mixture models
 
   *advantage*:  no need for good prior knowledge about relational dependencies as in bayes nets and markov nets  
   *advantage*:  great simplicity of the model - no need to think about rules, conditional independencies, loops or global partition functions  
@@ -315,9 +335,11 @@
   *disadvantage*:  maximum likelihood learning with complete data is already non-trivial  
   *disadvantage*:  no causal interpretation  
 
-----
 
-  **Markov Logic Network**
+----
+#### Markov Logic Network
+
+  [Markov Logic Network](#probabilistic-database---markov-logic-network)
 
   - MLN does not require local normalization, i.e. an interpretation of the terms as local conditional probabilities - it requires global normalization
   - in MLN one can use any FOL formula, not just the ones derived from bayes nets
@@ -329,8 +351,6 @@
   *advantage*:  no need to worry about completeness, there can be any number of formulae (from none to more than there are ground atoms) - with no formulae each configuration of node states has the same probability (maximum entropy principle)  
   *disadvantage*:  no interpretation of local conditional distribution (no causal interpretation)  
   *disadvantage*:  difficult parameter learning (unlike in bayes nets with complete data) due to global normalization constant (sum over all states) - typical approach: closed-world assumption and optimization of a pseudo-likelihood  
-
-  [Markov Logic Network](#probabilistic-database---markov-logic-network)
 
 
 
@@ -642,7 +662,7 @@
 ---
 ### knowledge representation - distributed representations
 
-  [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#distributed-representations)  
+  [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)  
   [representations of natural language](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt#continuous-space-representations)  
 
 
@@ -670,7 +690,7 @@
   "One of the main benefits in using neural networks is that they can be trained to handle very subtle kinds of logic that humans use in casual language that defy axiomatization. Propositional logic, first-order logic, higher-order logic, modal logic, nonmonotonic logic, probabilistic logic, fuzzy logic - none of them seem to quite be adequate; but if you use the right kind of recursive net, you don't even have to specify the logic to get it to make useful deductions, if you have enough training data."
 
 
-  [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#distributed-representations)  
+  [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)  
   [architectures - compute and memory](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---compute-and-memory)  
 
 
@@ -807,7 +827,6 @@
 	[second place](https://github.com/bwilbertz/kaggle_allen_ai)  
 	[third place](https://github.com/amsqr/Allen_AI_Kaggle)  
 
-
   - *Winograd Schema Challenge*  
 	<http://commonsensereasoning.org/winograd.html>
 
@@ -833,35 +852,17 @@
 	- vivid, in that it is obvious to non-experts that a program that fails to get right answers clearly has gaps
 	- difficult, in that it is far beyond the current state of the art
 
-
-  - *Facebook CommAI*  
-  	<https://github.com/facebookresearch/CommAI-env>
-
-	["A Roadmap Towards Machine Intelligence"](http://arxiv.org/abs/1511.08130) by Mikolov, Joulin, Baroni  
-	["Simple Tasks, Grand Challenges: Defining an Evaluation Roadmap for General AI"](https://youtube.com/watch?v=zAyqIdKJuh8) by Marco Baroni  
-
-
-  - *Facebook bAbi*  
-	<http://fb.ai/babi>
-
-
-  - *Stanford Question Answering Dataset (SQuAD)*  
+  - *Stanford Question Answering Dataset*  
 	<https://rajpurkar.github.io/SQuAD-explorer/>
-
 
   - *WikiTableQuestions*  
 	<http://nlp.stanford.edu/blog/wikitablequestions-a-complex-real-world-question-understanding-dataset/>
 
-
   - *TAC Knowledge Base Population*  
 	<http://www.nist.gov/tac/2017/KBP/>
 
-	["Overview of TAC-KBP2014 Entity Discovery and Linking Tasks"](http://nlp.cs.rpi.edu/paper/edl2014overview.pdf)
-	
-
   - *Visual Genome*  
 	<http://visualgenome.org>
-
 
   - *commonsense reasoning*  
 	<http://commonsensereasoning.org/problem_page.html>
@@ -871,7 +872,15 @@
 ---
 ### machine reading projects
 
+  - [Google Knowledge Vault](#google-knowledge-vault)  
+  - [Snorkel](#snorkel)  
+  - [DeepDive](#deepdive)  
+  - [Never-Ending Language Learning (NELL)](#never-ending-language-learning-nell)  
+  - [AI2 Aristo](#ai2-aristo)  
+  - [IBM Watson](#ibm-watson)  
 
+
+----
 #### Google Knowledge Vault
 
   ["A Web-Scale Approach to Probabilistic Knowledge Fusion"](http://videolectures.net/kdd2014_murphy_knowledge_vault/) by Kevin Murphy `video`  
@@ -1414,7 +1423,7 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 ---
 ### interesting papers - question answering over knowledge bases
 
-[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)  
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)  
 
 
 #### ["No Need to Pay Attention: Simple Recurrent Neural Networks Work! (for Answering "Simple" Questions) Ture, Jojic"](http://arxiv.org/abs/1606.05029)
@@ -1605,8 +1614,8 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 ---
 ### interesting papers - question answering over texts
 
-[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#information-retrieval) on information retrieval  
-[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning) on reasoning  
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#information-retrieval) on information retrieval  
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning) on reasoning  
 
 
 #### ["A Paradigm for Situated and Goal-Driven Language Learning"](https://arxiv.org/abs/1610.03585) Gauthier, Mordatch
@@ -1738,7 +1747,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 ---
 ### interesting papers - reasoning
 
-[recent interesting papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)  
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)  
 
 
 #### ["End-to-end Differentiable Proving"](https://arxiv.org/abs/1705.11040) Rocktaschel, Riedel

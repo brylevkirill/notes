@@ -46,28 +46,8 @@ interesting older papers:
 [interesting older papers](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---theory)
 
 ----
-#### ["Opening the Black Box of Deep Neural Networks via Information"](http://arxiv.org/abs/1703.00810) (Tishby)
->	"DNNs with SGD have two phases: error minimization, then representation compression"  
->	"
->	The Information Plane provides a unique visualization of DL  
->	  - Most of the learning time goes to compression  
->	  - Layers are learnt bottom up - and "help" each other  
->	  - Layers converge to special (critical?) points on the IB bound  
->	The advantage of the layers is mostly computational  
->	  - Relaxation times are super-linear (exponential?) in the Entropy gap  
->	  - Hidden layers provide intermediate steps and boost convergence time  
->	  - Hidden layers help in avoiding critical slowing down  
->	"
-  - `video` <https://youtube.com/watch?v=bLqJHjXihK8> (Tishby)
-  - `video` <https://youtube.com/watch?v=ekUWO_pI2M8> (Tishby)
-  - `video` <https://youtu.be/RKvS958AqGY?t=12m7s> (Tishby)
-  - `notes` <https://theneuralperspective.com/2017/03/24/opening-the-black-box-of-deep-neural-networks-via-information/>
-  - `notes` <https://reddit.com/r/MachineLearning/comments/60fhyb/r_opening_the_black_box_of_deep_neural_networks/df8jsbm/>
-  - `press` <https://quantamagazine.org/new-theory-cracks-open-the-black-box-of-deep-learning-20170921>
-
-#### ["On the Information Bottleneck Theory of Deep Learning"](https://openreview.net/forum?id=ry_WPG-A-)
-
 #### ["Understanding Deep Learning Requires Rethinking Generalization"](http://arxiv.org/abs/1611.03530) (Google Brain)
+  `generalization`
 >	"1. The effective capacity of neural networks is large enough for a brute-force memorization of the entire data set.  
 >	 2. Even optimization on random labels remains easy. In fact, training time increases only by a small constant factor compared with training on the true labels.  
 >	 3. Randomizing labels is solely a data transformation, leaving all other properties of the learning problem unchanged."  
@@ -90,32 +70,67 @@ interesting older papers:
   - `notes` <https://reddit.com/r/MachineLearning/comments/6ailoh/r_understanding_deep_learning_requires_rethinking/dhis1hz/>
 
 #### ["Deep Nets Don't Learn via Memorization"](https://openreview.net/pdf?id=rJv6ZgHYg) (MILA)
->	"We use empirical methods to argue that deep neural networks do not achieve their performance by memorizing training data, in spite of overlyexpressive model architectures. Instead, they learn a simple available hypothesis that fits the finite data samples. In support of this view, we establish that there are qualitative differences when learning noise vs. natural datasets, showing that: (1) more capacity is needed to fit noise, (2) time to convergence is longer for random labels, but shorter for random inputs, and (3) DNNs trained on real data examples learn simpler functions than when trained with noise data, as measured by the sharpness of the loss function at convergence. Finally, we demonstrate that for appropriately tuned explicit regularization, e.g. dropout, we can degrade DNN training performance on noise datasets without compromising generalization on real data."
+  `generalization`
+>	"We use empirical methods to argue that deep neural networks do not achieve their performance by memorizing training data, in spite of overly expressive model architectures. Instead, they learn a simple available hypothesis that fits the finite data samples. In support of this view, we establish that there are qualitative differences when learning noise vs. natural datasets, showing that: (1) more capacity is needed to fit noise, (2) time to convergence is longer for random labels, but shorter for random inputs, and (3) DNNs trained on real data examples learn simpler functions than when trained with noise data, as measured by the sharpness of the loss function at convergence. Finally, we demonstrate that for appropriately tuned explicit regularization, e.g. dropout, we can degrade DNN training performance on noise datasets without compromising generalization on real data."
+
+#### ["A Bayesian Perspective on Generalization and Stochastic Gradient Descent"](https://arxiv.org/abs/1710.06451) (Google Brain)
+  `generalization`
+
+#### ["On Large-Batch Training for Deep Learning: Generalization Gap and Sharp Minima"](https://arxiv.org/abs/1609.04836)
+  `generalization`
+>	"Deep networks generalise better with smaller batch-size when no other form of regularisation is used. And it may be because SGD biases learning towards flat local minima, rather than sharp local minima."  
+>	"Using large batch sizes tends to find sharped minima and generalize worse. We can’t talk about generalization without taking training algorithm into account."  
+  - `post` <http://inference.vc/everything-that-works-works-because-its-bayesian-2/>
+  - `code` <https://github.com/keskarnitish/large-batch-training>
+
+#### ["Opening the Black Box of Deep Neural Networks via Information"](http://arxiv.org/abs/1703.00810) (Tishby)
+  `generalization`
+>	"DNNs with SGD have two phases: error minimization, then representation compression"  
+>	"
+>	The Information Plane provides a unique visualization of DL  
+>	  - Most of the learning time goes to compression  
+>	  - Layers are learnt bottom up - and "help" each other  
+>	  - Layers converge to special (critical?) points on the IB bound  
+>	The advantage of the layers is mostly computational  
+>	  - Relaxation times are super-linear (exponential?) in the Entropy gap  
+>	  - Hidden layers provide intermediate steps and boost convergence time  
+>	  - Hidden layers help in avoiding critical slowing down  
+>	"
+  - `video` <https://youtube.com/watch?v=bLqJHjXihK8> (Tishby)
+  - `video` <https://youtube.com/watch?v=ekUWO_pI2M8> (Tishby)
+  - `video` <https://youtu.be/RKvS958AqGY?t=12m7s> (Tishby)
+  - `notes` <https://theneuralperspective.com/2017/03/24/opening-the-black-box-of-deep-neural-networks-via-information/>
+  - `notes` <https://reddit.com/r/MachineLearning/comments/60fhyb/r_opening_the_black_box_of_deep_neural_networks/df8jsbm/>
+  - `press` <https://quantamagazine.org/new-theory-cracks-open-the-black-box-of-deep-learning-20170921>
+
+#### ["On the Information Bottleneck Theory of Deep Learning"](https://openreview.net/forum?id=ry_WPG-A-)
+  `generalization`
 
 #### ["On the Emergence of Invariance and Disentangling in Deep Representations"](https://arxiv.org/abs/1706.01350)
+  `generalization`
 >	"We have presented bounds, some of which tight, that connect the amount of information in the weights, the amount of information in the activations, the invariance property of the network, and the geometry of the residual loss."  
 >	"This leads to the somewhat surprising result that reducing information stored in the weights about the past (dataset) results in desirable properties of the representation of future data (test datum)."  
 
 >	"We conducted experiments to validate the assumptions underlying these bounds, and found that the results match the qualitative behavior observed on real data and architectures. In particular, the theory predicts a verifiable phase transition between an underfitting and overfitting regime for random labels, and the amount of information in nats needed to cross the transition."  
   - `video` <https://youtube.com/watch?v=BCSoRTMYQcw> (Achille)
 
-#### ["Capacity and Trainability in Recurrent Neural Networks"](http://arxiv.org/abs/1611.09913) (Google Brain)
->	"RNNs can store an amount of task information which is linear in the number of parameters, and is approximately 5 bits per parameter.  
->	RNNs can additionally store approximately one real number from their input history per hidden unit."  
+#### ["mixup: Beyond Empirical Risk Minimization"](https://arxiv.org/abs/1710.09412) (Facebook AI Research)
+  `generalization`
+>	"mixup trains a neural network on convex combinations of pairs of examples and their labels. By doing so, mixup regularizes the neural network to favor simple linear behavior in-between training examples."  
+>	"On the one hand, Empirical Risk Minimization allows large neural networks to memorize (instead of generalize from) the training data even in the presence of strong regularization, or in classification problems where the labels are assigned at random. On the other hand, neural networks trained with ERM change their predictions drastically when evaluated on examples just outside the training distribution, also known as adversarial examples. This evidence suggests that ERM is unable to explain or provide generalization on testing distributions that differ only slightly from the training data."  
+>	"In Vicinal Risk Minimization, human knowledge is required to describe a vicinity or neighborhood around each example in the training data. Then, additional virtual examples can be drawn from the vicinity distribution of the training examples to enlarge the support of the training distribution. For instance, when performing image classification, it is common to define the vicinity of one image as the set of its horizontal reflections, slight rotations, and mild scalings. mixup extends the training distribution by incorporating the prior knowledge that linear interpolations of feature vectors should lead to linear interpolations of the associated targets."  
 
-#### ["On Large-Batch Training for Deep Learning: Generalization Gap and Sharp Minima"](https://arxiv.org/abs/1609.04836)
->	"Deep networks generalise better with smaller batch-size when no other form of regularisation is used. And it may be because SGD biases learning towards flat local minima, rather than sharp local minima."  
->	"Using large batch sizes tends to find sharped minima and generalize worse. We can’t talk about generalization without taking training algorithm into account."  
-  - `post` <http://inference.vc/everything-that-works-works-because-its-bayesian-2/>
-  - `code` <https://github.com/keskarnitish/large-batch-training>
-
+----
 #### ["The Marginal Value of Adaptive Gradient Methods in Machine Learning"](https://arxiv.org/abs/1705.08292) (Recht)
+  `optimization`
 >	"Despite the fact that our experimental evidence demonstrates that adaptive methods are not advantageous for machine learning, the Adam algorithm remains incredibly popular. We are not sure exactly as to why, but hope that our step-size tuning suggestions make it easier for practitioners to use standard stochastic gradient methods in their research. In our conversations with other researchers, we have surmised that adaptive gradient methods are particularly popular for training GANs and Q-learning with function approximation. Both of these applications stand out because they are not solving optimization problems. It is possible that the dynamics of Adam are accidentally well matched to these sorts of optimization-free iterative search procedures. It is also possible that carefully tuned stochastic gradient methods may work as well or better in both of these applications."  
 
 #### ["First-order Methods Almost Always Avoid Saddle Points"](https://arxiv.org/abs/1710.07406) (Jordan, Recht)
+  `optimization`
 >	"We establish that first-order methods avoid saddle points for almost all initializations. Our results apply to a wide variety of first-order methods, including gradient descent, block coordinate descent, mirror descent and variants thereof. The connecting thread is that such algorithms can be studied from a dynamical systems perspective in which appropriate instantiations of the Stable Manifold Theorem allow for a global stability analysis. Thus, neither access to second-order derivative information nor randomness beyond initialization is necessary to provably avoid saddle points."
 
 #### ["Self-Normalizing Neural Networks"](https://arxiv.org/abs/1706.02515) (Hochreiter)
+  `optimization`
 >	"While batch normalization requires explicit normalization, neuron activations of SNNs automatically converge towards zero mean and unit variance. The activation function of SNNs are "scaled exponential linear units" (SELUs), which induce self-normalizing properties. Using the Banach fixed-point theorem, we prove that activations close to zero mean and unit variance that are propagated through many network layers will converge towards zero mean and unit variance -- even under the presence of noise and perturbations."  
 >	"For activations not close to unit variance, we prove an upper and lower bound on the variance, thus, vanishing and exploding gradients are impossible."  
 >
@@ -125,16 +140,15 @@ interesting older papers:
   - `code` <http://github.com/bioinf-jku/SNNs>
 
 #### ["The Shattered Gradients Problem: If resnets are the answer, then what is the question?"](https://arxiv.org/abs/1702.08591)
+  `optimization`
 >	"We show that the correlation between gradients in standard feedforward networks decays exponentially with depth resulting in gradients that resemble white noise."  
 >	"We present a new “looks linear” (LL) initialization that prevents shattering. Preliminary experiments show the new initialization allows to train very deep networks without the addition of skip-connections."  
 >	"In a randomly initialized network, the gradients of deeper layers are increasingly uncorrelated. Shattered gradients play havoc with the optimization methods currently in use and may explain the difficulty in training deep feedforward networks even when effective initialization and batch normalization are employed. Averaging gradients over minibatches becomes analogous to integrating over white noise – there is no clear trend that can be summarized in a single average direction. Shattered gradients can also introduce numerical instabilities, since small differences in the input can lead to large differences in gradients."  
 >	"Skip-connections in combination with suitable rescaling reduce shattering. Specifically, we show that the rate at which correlations between gradients decays changes from exponential for feedforward architectures to sublinear for resnets. The analysis uncovers a surprising and unexpected side-effect of batch normalization."  
 
-#### ["Learning Deep ResNet Blocks Sequentially using Boosting Theory"](https://arxiv.org/abs/1706.04964) (Schapire)
->	"We construct T weak module classifiers, each contains two of the T layers, such that the combined strong learner is a ResNet."  
->	"We introduce an alternative Deep ResNet training algorithm, which is particularly suitable in non-differentiable architectures."  
-
+----
 #### ["Understanding Black-box Predictions via Influence Functions"](https://arxiv.org/abs/1703.04730) (Liang)
+  `interpretability`
 >	"We use influence functions, a classic technique from robust statistics, to trace a model's prediction through the learning algorithm and back to its training data, thereby identifying training points most responsible for a given prediction."  
 >	"We show that even on non-convex and non-differentiable models where the theory breaks down, approximations to influence functions can still provide valuable information."  
 >	"On linear models and convolutional neural networks, we demonstrate that influence functions are useful for multiple purposes: understanding model behavior, debugging models, detecting dataset errors, and even creating visually-indistinguishable training-set attacks."  
@@ -156,12 +170,20 @@ interesting older papers:
 
 ----
 #### ["A Bayesian Perspective on Generalization and Stochastic Gradient Descent"](https://arxiv.org/abs/1710.06451) (Google Brain)
+  `generalization`
+
+#### ["Stochastic Gradient Descent Performs Variational Inference, Converges to Limit Cycles for Deep Networks"](https://arxiv.org/abs/1710.11029)
+  `generalization`
+>	"We prove that SGD minimizes an average potential over the posterior distribution of weights along with an entropic regularization term. This potential is however not the original loss function in general. So SGD does perform variational inference, but for a different loss than the one used to compute the gradients. Even more surprisingly, SGD does not even converge in the classical sense: we show that the most likely trajectories of SGD for deep networks do not behave like Brownian motion around critical points. Instead, they resemble closed loops with deterministic components. We prove that such “out-of-equilibrium” behavior is a consequence of the fact that the gradient noise in SGD is highly non-isotropic; the covariance matrix of mini-batch gradients has a rank as small as 1% of its dimension."  
+>	"It is widely believed that SGD is an implicit regularizer. This belief stems from its remarkable empirical performance. Our results show that such intuition is very well-placed. Thanks to the special architecture of deep networks where gradient noise is highly non-isotropic, SGD helps itself to a potential Φ with properties that lead to both generalization and acceleration."  
 
 #### ["Stochastic Gradient Descent as Approximate Bayesian Inference"](https://arxiv.org/abs/1704.04289) (Blei)
+  `generalization`
   - `notes` <https://reddit.com/r/MachineLearning/comments/6d7nb1/d_machine_learning_wayr_what_are_you_reading_week/dihh54a/>
 
 ----
 #### ["What Uncertainties Do We Need in Bayesian Deep Learning for Computer Vision?"](https://arxiv.org/abs/1703.04977)
+  `uncertainty estimation`
 >	"We presented a novel Bayesian deep learning framework to learn a mapping to aleatoric uncertainty from the input data, which is composed on top of epistemic uncertainty models. We derived our framework for both regression and classification applications.  
 >	We showed that it is important to model epistemic uncertainty for:  
 	- Safety-critical applications, because epistemic uncertainty is required to understand examples which are different from training data  
@@ -176,52 +198,65 @@ interesting older papers:
   - `post` <https://alexgkendall.com/computer_vision/bayesian_deep_learning_for_safe_ai/> (Kendall)
 
 #### ["Decomposition of Uncertainty for Active Learning and Reliable Reinforcement Learning in Stochastic Systems"](https://arxiv.org/abs/1710.07283)
+  `uncertainty estimation`
 >	"We have studied a decomposition of predictive uncertainty into its epistemic and aleatoric components when working with Bayesian neural networks with latent variables. This decomposition naturally arises when applying information-theoretic active learning setting, and it also enabled us to derive a novel risk objective for reliable reinforcement learning by decomposing risk into a model bias and noise. In both of these settings, our approch allows us to efficiently learn in the face of sophisticated stochastic functions."  
 >	"We investigate safe RL using a risk-sensitive criterion which focuses only on risk related to model bias, that is, the risk of the policy performing at test time significantly different from at training time. The proposed criterion quantifies the amount of epistemic uncertainty (model bias risk) in the model’s predictive distribution and ignores any risk stemming from the aleatoric uncertainty."  
 >	"We can identify two distinct forms of uncertainties in the class of models given by BNNs with latent variables. Aleatoric uncertainty captures noise inherent in the observations. On the other hand, epistemic uncertainty accounts for uncertainty in the model. In particular, epistemic uncertainty arises from our lack of knowledge of the values of the synaptic weights in the network, whereas aleatoric uncertainty originates from our lack of knowledge of the value of the latent variables. In the domain of model-based RL the epistemic uncertainty is the source of model bias. When there is high discrepancy between model and real-world dynamics, policy behavior may deteriorate. In analogy to the principle that ”a chain is only as strong as its weakest link” a drastic error in estimating the ground truth MDP at a single transition stepcan render the complete policy useless."  
 
 #### ["Bayesian Uncertainty Estimation for Batch Normalized Deep Networks"](https://openreview.net/forum?id=BJlrSmbAZ)
+  `uncertainty estimation`
 
 #### ["Deep and Confident Prediction for Time Series at Uber"](https://arxiv.org/abs/1709.01907) (Uber)
+  `uncertainty estimation`
   - `post` <https://eng.uber.com/neural-networks-uncertainty-estimation/>
 
 #### ["Dropout Inference in Bayesian Neural Networks with Alpha-divergences"](http://mlg.eng.cam.ac.uk/yarin/PDFs/LiGal2017.pdf)
+  `uncertainty estimation`
 >	"We demonstrate improved uncertainty estimates and accuracy compared to VI in dropout networks. We study our model’s epistemic uncertainty far away from the data using adversarial images, showing that these can be distinguished from non-adversarial images by examining our model’s uncertainty."
 
 #### ["Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles"](http://arxiv.org/abs/1612.01474) (DeepMind)
+  `uncertainty estimation`
 >	"Adversarial Training to improve the uncertainty measure of the entropy score of the neural network."  
   - `code` <https://github.com/vvanirudh/deep-ensembles-uncertainty>
 
 ----
 #### ["Model Selection in Bayesian Neural Networks via Horseshoe Priors"](https://arxiv.org/abs/1705.10388)
+  `model selection`
 >	"Model selection - even choosing the number of nodes - remains an open question. In this work, we apply a horseshoe prior over node pre-activations of a Bayesian neural network, which effectively turns off nodes that do not help explain the data. We demonstrate that our prior prevents the BNN from underfitting even when the number of nodes required is grossly over-estimated. Moreover, this model selection over the number of nodes doesn’t come at the expense of predictive or computational performance; in fact, we learn smaller networks with comparable predictive performance to current approaches."  
 
 #### ["Structured Bayesian Pruning via Log-Normal Multiplicative Noise"](https://arxiv.org/abs/1705.07283)
+  `model selection`
   - `video` <https://youtu.be/jJDVYAxyE3U?t=32m45s> (Molchanov) `in russian`
 
 #### ["Variational Dropout Sparsifies Deep Neural Networks"](https://arxiv.org/abs/1701.05369)
+  `model selection`
 >	"Interpretation of Gaussian dropout as performing variational inference in a network with log uniform priors over weights leads to sparsity in weights. This is an interesting approach, wherein sparsity stemsfrom variational optimization instead of the prior."  
   - `video` <https://youtube.com/watch?v=jJDVYAxyE3U> (Molchanov) `in russian`
   - `code` <https://github.com/ars-ashuha/variational-dropout-sparsifies-dnn>
 
 ----
 #### ["Variational Boosting: Iteratively Refining Posterior Approximations"](http://arxiv.org/abs/1611.06585) (Adams)
+  `posterior approximation`
   - `post` <http://andymiller.github.io/2016/11/23/vb.html>
   - `video` <https://youtu.be/Jh3D8Gi4N0I?t=1h9m52s> (Nekludov) `in russian`
 
 #### ["Improving Variational Inference with Inverse Autoregressive Flow"](http://arxiv.org/abs/1606.04934) (OpenAI)
+  `posterior approximation`
 >	"Most VAEs have so far been trained using crude approximate posteriors, where every latent variable is independent. Normalizing Flows have addressed this problem by conditioning each latent variable on the others before it in a chain, but this is computationally inefficient due to the introduced sequential dependencies. The core contribution of this work, termed inverse autoregressive flow (IAF), is a new approach that, unlike previous work, allows us to parallelize the computation of rich approximate posteriors, and make them almost arbitrarily flexible."  
   - `code` <https://github.com/openai/iaf>
 
 #### ["Auxiliary Deep Generative Models"](http://arxiv.org/abs/1602.05473)
+  `posterior approximation`
   - `video` <http://techtalks.tv/talks/auxiliary-deep-generative-models/62509/> (Maaløe)
   - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods> (1:23:13) (Mohamed)
   - `code` <https://github.com/larsmaaloee/auxiliary-deep-generative-models>
 
 #### ["Hierarchical Variational Models"](https://arxiv.org/pdf/1511.02386) (Blei)
+  `posterior approximation`
   - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods> (1:23:13) (Mohamed)
 
 #### ["Importance Weighted Autoencoders"](http://arxiv.org/abs/1509.00519) (Salakhutdinov)
+  `posterior approximation`
 >	"As we show empirically, the VAE objective can lead to overly simplified representations which fail to use the network's entire modeling capacity. We present the importance weighted autoencoder, a generative model with the same architecture as the VAE, but which uses a strictly tighter log-likelihood lower bound derived from importance weighting. In the IWAE, the recognition network uses multiple samples to approximate the posterior, giving it increased flexibility to model complex posteriors which do not fit the VAE modeling assumptions."  
   - `post` <http://dustintran.com/blog/importance-weighted-autoencoders/>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/BurdaGS15>
@@ -231,18 +266,20 @@ interesting older papers:
 
 ----
 #### ["Backpropagation through the Void: Optimizing Control Variates for Black-box Gradient Estimation"](https://openreview.net/forum?id=SyzKd1bCW)
-  `RELAX`
+  `variables with discrete distributions` `RELAX`
 >	"We generalize REBAR to learn a free-form control variate parameterized by a neural network, giving a lower-variance, unbiased gradient estimator which can be applied to a wider variety of problems with greater flexibility. Most notably, our method is applicable even when no continuous relaxation is available, as in reinforcement learning or black box function optimization. Furthermore, we derive improved variants of popular reinforcement learning methods with unbiased, action-dependent gradient estimates and lower variance."  
 
 #### ["REBAR: Low-variance, unbiased gradient estimates for discrete latent variable models"](http://arxiv.org/abs/1703.07370) (Google Brain + DeepMind)
+  `variables with discrete distributions` `REBAR`
 >	"Learning in models with discrete latent variables is challenging due to high variance gradient estimators. Generally, approaches have relied on control variates to reduce the variance of the REINFORCE estimator. Recent work (Jang et al. 2016; Maddison et al. 2016) has taken a different approach, introducing a continuous relaxation of discrete variables to produce low-variance, but biased, gradient estimates. In this work, we combine the two approaches through a novel control variate that produces low-variance, unbiased gradient estimates."  
 >	"Using continuous relaxation to construct a control variate for functions of discrete random variables. Low-variance estimates of the expectation of the control variate can be computed using the reparameterization trick to produce an unbiased estimator with lower variance than previous methods. Showing how to tune the free parameters of these relaxations to minimize the estimator’s variance during training."  
   - `code` <https://github.com/tensorflow/models/tree/master/research/rebar>
 
-#### ["The Concrete Distribution: A Continuous Relaxation of Discrete Random Variables"](http://arxiv.org/abs/1611.00712) (DeepMind)  
-#### ["Categorical Reparametrization with Gumbel-Softmax"](http://arxiv.org/abs/1611.01144) (Google Brain)
+#### ["The Concrete Distribution: A Continuous Relaxation of Discrete Random Variables"](http://arxiv.org/abs/1611.00712) (DeepMind) + ["Categorical Reparametrization with Gumbel-Softmax"](http://arxiv.org/abs/1611.01144) (Google Brain)
+  `variables with discrete distributions`
   - `video` <http://youtube.com/watch?v=JFgXEbgcT7g> (Jang)
   - `video` <https://youtu.be/_XRBlhzb31U?t=28m33s> (Figurnov) `in russian`
+  - `post` <http://artem.sobolev.name/posts/2017-10-28-stochastic-computation-graphs-discrete-relaxations.html>
   - `post` <https://laurent-dinh.github.io/2016/11/21/gumbel-max.html>
   - `post` <https://casmls.github.io/general/2017/02/01/GumbelSoftmax.html>
   - `post` <http://timvieira.github.io/blog/post/2014/07/31/gumbel-max-trick/>
@@ -252,17 +289,30 @@ interesting older papers:
   - `code` <https://gist.github.com/gngdb/ef1999ce3a8e0c5cc2ed35f488e19748>
   - `code` <https://github.com/EderSantana/gumbel>
 
+#### ["Reparameterizing the Birkhoff Polytope for Variational Permutation Inference"](https://arxiv.org/abs/1710.09508)
+  `variables with complex discrete distributions`
+>	"Many matching, tracking, sorting, and ranking problems require probabilistic reasoning about possible permutations, a set that grows factorially with dimension. Combinatorial optimization algorithms may enable efficient point estimation, but fully Bayesian inference poses a severe challenge in this high-dimensional, discrete space. To surmount this challenge, we start with the usual step of relaxing a discrete set (here, of permutation matrices) to its convex hull, which here is the Birkhoff polytope: the set of all doublystochastic matrices. We then introduce two novel transformations: first, an invertible and differentiable stick-breaking procedure that maps unconstrained space to the Birkhoff polytope; second, a map that rounds points toward the vertices of the polytope. Both transformations include a temperature parameter that, in the limit, concentrates the densities on permutation matrices."  
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1710.09508>
+
 #### ["Reparameterization Gradients through Acceptance-Rejection Sampling Algorithms"](http://arxiv.org/abs/1610.05683) (Blei)
+  `variables with complex distributions`
 >	"For many distributions of interest (such as the gamma or Dirichlet), simulation of random variables relies on acceptance-rejection sampling. The discontinuity introduced by the accept-reject step means that standard reparameterization tricks are not applicable. We propose a new method that lets us leverage reparameterization gradients even when variables are outputs of a acceptance-rejection sampling algorithm. Our approach enables reparameterization on a larger class of variational distributions."  
   - `post` <http://artem.sobolev.name/posts/2017-09-10-stochastic-computation-graphs-continuous-case.html>
 
 #### ["The Generalized Reparameterization Gradient"](http://arxiv.org/abs/1610.02287) (Blei)
+  `variables with complex distributions`
 >	"The reparameterization gradient does not easily apply to commonly used distributions such as beta or gamma without further approximations, and most practical applications of the reparameterization gradient fit Gaussian distributions. We introduce the generalized reparameterization gradient, a method that extends the reparameterization gradient to a wider class of variational distributions. Generalized reparameterizations use invertible transformations of the latent variables which lead to transformed distributions that weakly depend on the variational parameters. This results in new Monte Carlo gradients that combine reparameterization gradients and score function gradients."  
   - `video` <https://youtu.be/mrj_hyH974o?t=1h23m40s> (Vetrov) `in russian`
   - `post` <http://artem.sobolev.name/posts/2017-09-10-stochastic-computation-graphs-continuous-case.html>
 
 #### ["Stochastic Backpropagation through Mixture Density Distributions"](http://arxiv.org/abs/1607.05690) (DeepMind)
+  `variables with mixture distributions`
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1607.05690>
+
+#### ["Stick-Breaking Variational Autoencoders"](http://arxiv.org/abs/1605.06197)
+  `variables with stochastic dimensionality`
+  - `post` <http://blog.shakirm.com/2015/12/machine-learning-trick-of-the-day-6-tricks-with-sticks/>
+  - `code` <https://github.com/enalisnick/stick-breaking_dgms>
 
 ----
 #### ["Bayesian Hypernetworks"](https://arxiv.org/abs/1710.04759) (MILA)
@@ -376,6 +426,7 @@ interesting older papers:
   - `video` <https://youtu.be/bsuvM1jO-4w?t=42m10s> (Mnih)
   - `notes` <http://rylanschaeffer.github.io/content/research/neural_episodic_control/main.html>
   - `code` <https://github.com/EndingCredits/Neural-Episodic-Control>
+  - `code` <https://github.com/NervanaSystems/coach/blob/master/agents/nec_agent.py>
 
 #### ["Model-Free Episodic Control"](http://arxiv.org/abs/1606.04460) (DeepMind)
 >	"This might be achieved by a dual system (hippocampus vs neocortex) where information are stored in alternated way such that new nonstationary experience is rapidly encoded in the hippocampus (most flexible region of the brain with the highest amount of plasticity and neurogenesis); long term memory in the cortex is updated in a separate phase where what is updated (both in terms of samples and targets) can be controlled and does not put the system at risk of instabilities."  
@@ -442,6 +493,29 @@ interesting older papers:
   - `code` <https://github.com/dannyneil/public_plstm>
 
 ----
+#### ["Dynamic Routing Between Capsules"](https://arxiv.org/abs/1710.09829) Sabour, Frosst, Hinton
+  `CapsNet`
+>	"A capsule is a group of neurons whose activity vector represents the instantiation parameters of a specific type of entity such as an object or object part. We use the length of the activity vector to represent the probability that the entity exists and its orientation to represent the instantiation paramters. Active capsules at one level make predictions, via transformation matrices, for the instantiation parameters of higher-level capsules. When multiple predictions agree, a higher level capsule becomes active. We show that a discrimininatively trained, multi-layer capsule system achieves state-of-the-art performance on MNIST and is considerably better than a convolutional net at recognizing highly overlapping digits. To achieve these results we use an iterative routing-by-agreement mechanism: A lower-level capsule prefers to send its output to higher level capsules whose activity vectors have a big scalar product with the prediction coming from the lower-level capsule."  
+>	"Dynamic routing can be viewed as a parallel attention mechanism that allows each capsule at one level to attend to some active capsules at the level below and to ignore others. This should allow the model to recognize multiple objects in the image even if objects overlap. The routing-by-agreement should make it possible to use a prior about shape of objects to help segmentation and it should obviate the need to make higher-level segmentation decisions in the domain of pixels."  
+>	"For thirty years, the state-of-the-art in speech recognition used hidden Markov models with Gaussian mixtures as output distributions. These models were easy to learn on small computers, but they had a representational limitation that was ultimately fatal: The one-of-n representations they use are exponentially inefficient compared with, say, a recurrent neural network that uses distributed representations. To double the amount of information that an HMM can remember about the string it has generated so far, we need to square the number of hidden nodes. For a recurrent net we only need to double the number of hidden neurons.  
+>	Now that convolutional neural networks have become the dominant approach to object recognition, it makes sense to ask whether there are any exponential inefficiencies that may lead to their demise. A good candidate is the difficulty that convolutional nets have in generalizing to novel viewpoints. The ability to deal with translation is built in, but for the other dimensions of an affine transformation we have to chose between replicating feature detectors on a grid that grows exponentially with the number of dimensions, or increasing the size of the labelled training set in a similarly exponential way. Capsules avoid these exponential inefficiencies by converting pixel intensities into vectors of instantiation parameters of recognized fragments and then applying transformation matrices to the fragments to predict the instantiation parameters of larger fragments. Transformation matrices that learn to encode the intrinsic spatial relationship between a part and a whole constitute viewpoint invariant knowledge that automatically generalizes to novel viewpoints.  
+>	Capsules make a very strong representational assumption: At each location in the image, there is at most one instance of the type of entity that a capsule represents. This assumption eliminates the binding problem and allows a capsule to use a distributed representation (its activity vector) to encode the instantiation parameters of the entity of that type at a given location. This distributed representation is exponentially more efficient than encoding the instantiation parameters by activating a point on a high-dimensional grid and with the right distributed representation, capsules can then take full advantage of the fact that spatial relationships can be modelled by matrix multiplies.  
+>	Capsules use neural activities that vary as viewpoint varies rather than trying to eliminate viewpoint variation from the activities. This gives them an advantage over "normalization" methods like spatial transformer networks: They can deal with multiple different affine transformations of different objects or object parts at the same time.  
+>	Research on capsules is now at a similar stage to research on recurrent neural networks for speech recognition at the beginning of this century. There are fundamental representational reasons for believing that it is a better approach but it probably requires a lot more small insights before it can out-perform a highly developed technology. The fact that a simple capsules system already gives unparalleled performance at segmenting overlapping digits is an early indication that capsules are a direction worth exploring."  
+  - `video` ["What is wrong with convolutional neural nets?"](https://youtube.com/watch?v=Mqt8fs6ZbHk) (Hinton)
+  - `video` ["What's wrong with convolutional nets?"](http://techtv.mit.edu/collections/bcs/videos/30698-what-s-wrong-with-convolutional-nets) (Hinton) ([transcription](https://github.com/WalnutiQ/walnut/issues/157))
+  - `video` ["Does the Brain do Inverse Graphics?"](https://youtube.com/watch?v=TFIMqt0yT2I) (Hinton)
+  - `video` <https://youtube.com/watch?v=VKoLGnq15RM> (Raval)
+  - `code` <https://github.com/llSourcell/capsule_networks>
+  - `code` <https://github.com/InnerPeace-Wu/CapsNet-tensorflow>
+  - `code` <https://github.com/nishnik/CapsNet-PyTorch>
+  - `code` <https://github.com/XifengGuo/CapsNet-Keras>
+  - `paper` ["Transforming Auto-encoders"](http://www.cs.toronto.edu/~fritz/absps/transauto6.pdf) by Hinton, Krizhevsky, Wang
+  - `paper` ["Optimizing Neural Networks that Generate Images"](http://www.cs.toronto.edu/~tijmen/tijmen_thesis.pdf) by Tieleman ([code](https://github.com/mrkulk/Unsupervised-Capsule-Network))
+
+#### ["Matrix Capsules with EM Routing"](https://openreview.net/forum?id=HJWLfGWRb)
+
+----
 #### ["Decoupled Neural Interfaces using Synthetic Gradients"](http://arxiv.org/abs/1608.05343) (DeepMind)
 >	"We incorporate a learnt model of error gradients, which means we can update networks without full backpropagation. We show how this can be applied to feed-forward networks which allows every layer to be trained asynchronously, to RNNs which extends the time over which models can remember, and to multi-network systems to allow communication."  
   - `post` <https://deepmind.com/blog/decoupled-neural-networks-using-synthetic-gradients/>
@@ -450,6 +524,7 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=qirjknNY1zo> (Raval)
   - `post` <https://iamtrask.github.io/2017/03/21/synthetic-gradients/>
   - `notes` <http://cnichkawde.github.io/SyntheticGradients.html>
+  - `code` <https://github.com/koz4k/dni-pytorch>
 
 #### ["Understanding Synthetic Gradients and Decoupled Neural Interfaces"](http://arxiv.org/abs/1703.00522) (DeepMind)
 
@@ -566,8 +641,6 @@ interesting older papers:
 ---
 ### few-shot learning
 
-[interesting older papers](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---few-shot-and-transfer-learning)
-
 ----
 #### ["Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks"](https://arxiv.org/abs/1703.03400) (Abbeel, Levine)
   `MAML`
@@ -639,7 +712,11 @@ interesting older papers:
 ### unsupervised learning
 
 ----
+#### ["Implicit Causal Models for Genome-wide Association Studies"](https://arxiv.org/abs/1710.10742) (Blei)
+>	"GAN-style models for identifying causal mutations in a GWAS with adjustment for population-based confounders."  
+
 #### ["Independently Controllable Features"](https://arxiv.org/abs/1708.01289) (Bengio)
+  `causal learning`
 >	"It has been postulated that a good representation is one that disentangles the underlying explanatory factors of variation. However, it remains an open question what kind of training framework could potentially achieve that. Whereas most previous work focuses on the static setting (e.g. with images), we postulate that some of the causal factors could be discovered if the learner is allowed to interact with its environment. The agent can experiment with different actions and observe their effects. We hypothesize that some of these factors correspond to aspects of the environment which are independently controllable, i.e., that there exists a policy and a learnable feature for each such aspect of the environment, such that this policy can yield changes in that feature with minimal changes to other features that explain the statistical variations in the observed data."  
 >	"In interactive environments, the temporal dependency between successive observations creates a new opportunity to notice causal structure in data which may not be apparent using only observational studies. In reinforcement learning, several approaches explore mechanisms that push the internal representations of learned models to be “good” in the sense that they provide better control, and control is a particularly important causal relationship between an agent and elements of its environment."  
 >	"We propose and explore a more direct mechanism for representation learning, which explicitly links an agent’s control over its environment with its internal feature representations. Specifically, we hypothesize that some of the factors explaining variations in the data correspond to aspects of the world that can be controlled by the agent. For example, an object that could be pushed around or picked up independently of others is an independently controllable aspect of the environment. Our approach therefore aims to jointly discover a set of features (functions of the environment state) and policies (which change the state) such that each policy controls the associated feature while leaving the other features unchanged as much as possible."  
@@ -647,6 +724,7 @@ interesting older papers:
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/BengioTPPB17#hlarochelle> (Larochelle)
 
 #### ["Discovering Causal Signals in Images"](https://arxiv.org/abs/1605.08179) (Facebook AI Research)
+  `causal learning`
 >	"First, we take a learning approach to observational causal inference, and build a classifier that achieves state-of-the-art performance on finding the causal direction between pairs of random variables, when given samples from their joint distribution. Second, we use our causal direction finder to effectively distinguish between features of objects and features of their contexts in collections of static images. Our experiments demonstrate the existence of (1) a relation between the direction of causality and the difference between objects and their contexts, and (2) observable causal signals in collections of static images."  
 >	"Causal features are those that cause the presence of the object of interest in the image (that is, those features that cause the object’s class label), while anticausal features are those caused by the presence of the object in the image (that is, those features caused by the class label)."  
 >	"Paper aims to verify experimentally that the higher-order statistics of image datasets can inform about causal relations. Authors conjecture that object features and anticausal features are closely related and vice-versa context features and causal features are not necessarily related. Context features give the background while object features are what it would be usually inside bounding boxes in an image dataset."  
@@ -655,63 +733,80 @@ interesting older papers:
   - `post` <http://giorgiopatrini.org/posts/2017/09/06/in-search-of-the-missing-signals/>
 
 ----
+#### ["Neural Expectation Maximization"](https://arxiv.org/abs/1708.03498) (Schmidhuber)
+  `concept learning`
+>	"differentiable clustering method that simultaneously learns how to group and represent individual entities"  
+  - `code` <https://github.com/sjoerdvansteenkiste/Neural-EM>
+
 #### ["Generative Models of Visually Grounded Imagination"](https://arxiv.org/abs/1705.10762) (Google)
+  `concept learning`
 >	"Consider how easy it is for people to imagine what a "purple hippo" would look like, even though they do not exist. If we instead said "purple hippo with wings", they could just as easily create a different internal mental representation, to represent this more specific concept. To assess whether the person has correctly understood the concept, we can ask them to draw a few sketches, to illustrate their thoughts. We call the ability to map text descriptions of concepts to latent representations and then to images (or vice versa) visually grounded semantic imagination. We propose a latent variable model for images and attributes, based on variational auto-encoders, which can perform this task. Our method uses a novel training objective, and a novel product-of-experts inference network, which can handle partially specified (abstract) concepts in a principled and efficient way."  
   - `video` <https://youtu.be/IyP1pxgM_eE?t=1h5m14s> (Murphy)
 
 #### ["SCAN: Learning Abstract Hierarchical Compositional Visual Concepts"](https://arxiv.org/abs/1707.03389) (DeepMind)
+  `concept learning`
 >	"We first use the previously published beta-VAE (Higgins et al., 2017a) architecture to learn a disentangled representation of the latent structure of the visual world, before training SCAN to extract abstract concepts grounded in such disentangled visual primitives through fast symbol association."  
   - `post` <https://deepmind.com/blog/imagine-creating-new-visual-concepts-recombining-familiar-ones/>
 
 #### ["beta-VAE: Learning Basic Visual Concepts with a Constrained Variational Framework"](http://openreview.net/forum?id=Sy2fzU9gl) (DeepMind)
+  `concept learning`
 >	"This paper proposes a modification of the variational ELBO in encourage 'disentangled' representations, and proposes a measure of disentanglement."  
   - <http://tinyurl.com/jgbyzke> (demo)
 
 #### ["Early Visual Concept Learning with Unsupervised Deep Learning"](http://arxiv.org/abs/1606.05579) (DeepMind)
+  `concept learning`
   - `code` <https://github.com/loliverhennigh/Early-Visual-Concept-Learning-Recreation-of-Some-Results>
 
 #### ["Towards Conceptual Compression"](http://arxiv.org/abs/1604.08772) (DeepMind)
+  `concept learning`
   - `poster` <https://pbs.twimg.com/media/Cy3pYfWWIAA_C9h.jpg:large>
 
-----
-#### ["Generative Temporal Models with Memory"](http://arxiv.org/abs/1702.04649) (DeepMind)
->	"A sufficiently powerful temporal model should separate predictable elements of the sequence from unpredictable elements, express uncertainty about those unpredictable elements, and rapidly identify novel elements that may help to predict the future. To create such models, we introduce Generative Temporal Models augmented with external memory systems."  
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1702.04649>
-
-#### ["Learning Disentangled Representations with Semi-Supervised Deep Generative Models"](http://arxiv.org/abs/1706.00400)
->	"Variational autoencoders learn representations of data by jointly training a probabilistic encoder and decoder network. Typically these models encode all features of the data into a single variable. Here we are interested in learning disentangled representations that encode distinct aspects of the data into separate variables. We propose to learn such representations using model architectures that generalize from standard VAEs, employing a general graphical model structure in the encoder and decoder. This allows us to train partially-specified models that make relatively strong assumptions about a subset of interpretable variables and rely on the flexibility of neural networks to learn representations for the remaining variables."  
-
-#### ["Inducing Interpretable Representations with Variational Autoencoders"](http://arxiv.org/abs/1611.07492) (Goodman)
-
 #### ["Attend, Infer, Repeat: Fast Scene Understanding with Generative Models"](http://arxiv.org/abs/1603.08575) (DeepMind)
+  `concept learning`
+>	"Learning to perform inference in partially specified 2D models (variable-sized variational auto-encoders) and fully specified 3D models (probabilistic renderers)."  
+>	"Models learn to identify multiple objects - counting, locating and classifying the elements of a scene - without any supervision, e.g., decomposing 3D images with various numbers of objects in a single forward pass of a neural network."  
   - `video` <https://youtube.com/watch?v=4tc84kKdpY4> (demo)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/EslamiHWTKH16> (Larochelle)
 
 ----
-#### ["Neural Expectation Maximization"](https://arxiv.org/abs/1708.03498) (Schmidhuber)
->	"Based on the Expectation Maximization framework we then derive a differentiable clustering method that simultaneously learns how to group and represent individual entities."  
+#### ["Generative Temporal Models with Memory"](http://arxiv.org/abs/1702.04649) (DeepMind)
+  `learning disentangled representation` `variational inference`
+>	"A sufficiently powerful temporal model should separate predictable elements of the sequence from unpredictable elements, express uncertainty about those unpredictable elements, and rapidly identify novel elements that may help to predict the future. To create such models, we introduce Generative Temporal Models augmented with external memory systems."  
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1702.04649>
 
-#### ["Deep Unsupervised Clustering with Gaussian Mixture Variational Autoencoders"](http://arxiv.org/abs/1611.02648) (Arulkumaran)
-  - `post` <http://ruishu.io/2016/12/25/gmvae/>
-
-----
-#### ["Optimizing the Latent Space of Generative Networks"](https://arxiv.org/abs/1707.05776) (Facebook AI Research)
-  - `post` <https://facebook.com/yann.lecun/posts/10154646915277143>
-
-#### ["Unsupervised Learning by Predicting Noise"](https://arxiv.org/abs/1704.05310) (Facebook AI Research)
->	"The authors give a nice analogy: it's a SOM, but instead of mapping a latent vector to each input vector, the convolutional filters are learned in order to map each input vector to a fixed latent vector. In more words: each image is assigned a unique random latent vector as the label, and the mapping from image to label is taught in a supervised manner. Every few epochs, the label assignments are adjusted (but only within batches due to computational cost), so that an image might be assigned a different latent vector label which it is already close to in 'feature space'."
-  - `post` <http://inference.vc/unsupervised-learning-by-predicting-noise-an-information-maximization-view-2/>
+#### ["Learning Disentangled Representations with Semi-Supervised Deep Generative Models"](http://arxiv.org/abs/1706.00400)
+  `learning disentangled representation`
+>	"Variational autoencoders learn representations of data by jointly training a probabilistic encoder and decoder network. Typically these models encode all features of the data into a single variable. Here we are interested in learning disentangled representations that encode distinct aspects of the data into separate variables. We propose to learn such representations using model architectures that generalize from standard VAEs, employing a general graphical model structure in the encoder and decoder. This allows us to train partially-specified models that make relatively strong assumptions about a subset of interpretable variables and rely on the flexibility of neural networks to learn representations for the remaining variables."  
 
 #### ["Disentangling Factors of Variation in Deep Representations using Adversarial Training"](http://arxiv.org/abs/1611.03383) (LeCun)
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1611.03383>
+  `learning disentangled representation`
   - `notes` <http://www.shortscience.org/paper?bibtexKey=conf%2Fnips%2FMathieuZZRSL16>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1611.03383>
+
+#### ["Deep Unsupervised Clustering with Gaussian Mixture Variational Autoencoders"](http://arxiv.org/abs/1611.02648)
+  `learning disentangled representation`
+  - `post` <http://ruishu.io/2016/12/25/gmvae/>
+
+#### ["Inducing Interpretable Representations with Variational Autoencoders"](http://arxiv.org/abs/1611.07492) (Goodman)
+  `learning disentangled representation`
 
 #### ["The Variational Fair Autoencoder"](http://arxiv.org/abs/1511.00830)
+  `learning disentangled representation`
 >	"We investigate the problem of learning representations that are invariant to certain nuisance or sensitive factors of variation in the data while retaining as much of the remaining information as possible."  
   - `video` <http://videolectures.net/iclr2016_louizos_fair_autoencoder/> (Louizos)
 
 ----
+#### ["Optimizing the Latent Space of Generative Networks"](https://arxiv.org/abs/1707.05776) (Facebook AI Research)
+  `learning embedding`
+  - `post` <https://facebook.com/yann.lecun/posts/10154646915277143>
+
+#### ["Unsupervised Learning by Predicting Noise"](https://arxiv.org/abs/1704.05310) (Facebook AI Research)
+  `learning embedding`
+>	"The authors give a nice analogy: it's a SOM, but instead of mapping a latent vector to each input vector, the convolutional filters are learned in order to map each input vector to a fixed latent vector. In more words: each image is assigned a unique random latent vector as the label, and the mapping from image to label is taught in a supervised manner. Every few epochs, the label assignments are adjusted (but only within batches due to computational cost), so that an image might be assigned a different latent vector label which it is already close to in 'feature space'."
+  - `post` <http://inference.vc/unsupervised-learning-by-predicting-noise-an-information-maximization-view-2/>
+
 #### ["Poincare Embeddings for Learning Hierarchical Representations"](https://arxiv.org/abs/1705.08039) (Facebook AI Research)
+  `learning embedding`
   - `notes` <https://medium.com/towards-data-science/facebook-research-just-published-an-awesome-paper-on-learning-hierarchical-representations-34e3d829ede7>
   - `notes` <https://theneuralperspective.com/2017/06/05/more-on-embeddings-spring-2017/>
   - `code` <https://github.com/TatsuyaShirakawa/poincare-embedding>
@@ -1004,11 +1099,6 @@ interesting older papers:
 >	- Parametrize the prior distribution with a autoregressive model showing that a type of autoregressive latent code can reduce inefficiency in Bits-Back coding."  
   - `post` <http://tsong.me/blog/lossy-vae/>
 
-#### ["Stick-Breaking Variational Autoencoders"](http://arxiv.org/abs/1605.06197)
->	"latent representation with stochastic dimensionality"  
-  - `post` <http://blog.shakirm.com/2015/12/machine-learning-trick-of-the-day-6-tricks-with-sticks/>
-  - `code` <https://github.com/enalisnick/stick-breaking_dgms>
-
 #### ["Actively Learning What Makes a Discrete Sequence Valid"](https://arxiv.org/abs/1708.04465)
 
 #### ["Grammar Variational Autoencoder"](http://arxiv.org/abs/1703.01925)
@@ -1124,8 +1214,17 @@ interesting older papers:
 [interesting older papers - policy-based methods](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---policy-based-methods)  
 
 ----
+#### ["Distributional Reinforcement Learning with Quantile Regression"](https://arxiv.org/abs/1710.10044) (DeepMind)
+  `QR-DQN`
+>	"One of the theoretical contributions of the C51 work was a proof that the distributional Bellman operator is a contraction in a maximal form of the Wasserstein metric between probability distributions. In this context, the Wasserstein metric is particularly interesting because it does not suffer from disjoint-support issues which arise when performing Bellman updates. Unfortunately, this result does not directly lead to a practical algorithm: the Wasserstein metric, viewed as a loss, cannot generally be minimized using stochastic gradient methods. This negative result left open the question as to whether it is possible to devise an online distributional reinforcement learning algorithm which takes advantage of the contraction result. Instead, the C51 algorithm first performs a heuristic projection step, followed by the minimization of a KL divergence between projected Bellman update and prediction. The work therefore leaves a theory-practice gap in our understanding of distributional reinforcement learning, which makes it difficult to explain the good performance of C51. Thus, the existence of a distributional algorithm that operates end-to-end on the Wasserstein metric remains an open question."  
+>	"In this paper, we answer this question affirmatively. By appealing to the theory of quantile regression, we show that there exists an algorithm, applicable in a stochastic approximation setting, which can perform distributional reinforcement learning over the Wasserstein metric. Our method relies on the following techniques:  
+>	- We “transpose” the parametrization from C51: whereas the former uses N fixed locations for its approximation distribution and adjusts their probabilities, we assign fixed, uniform probabilities to N adjustable locations  
+>	- We show that quantile regression may be used to stochastically adjust the distributions’ locations so as to minimize the Wasserstein distance to a target distribution  
+>	- We formally prove contraction mapping results for our overall algorithm, and use these results to conclude that our method performs distributional RL end-to-end under the Wasserstein metric, as desired"  
+  - `code` <https://github.com/NervanaSystems/coach/blob/master/agents/qr_dqn_agent.py>
+
 #### ["A Distributional Perspective on Reinforcement Learning"](https://arxiv.org/abs/1707.06887) (DeepMind)
-  `Categorical DQN`
+  `C51` `Categorical DQN`
 >	"The value function gives the expected future discounted return. This ignores variance and multi-modality. Authors argue for modelling the full distribution of the return."  
 >	"Distributional Bellman equation"  
 >	"It is unclear if method works because of modelling uncertainty over rewards, training network with richer signal (categorical loss) or using distributional Bellman update."  
@@ -1133,6 +1232,8 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=yFBwyPuO2Vg> (demo)
   - `video` <https://vimeo.com/235922311> (Bellemare)
   - `video` <https://youtu.be/bsuvM1jO-4w?t=4m45s> (Mnih)
+  - `post` <https://flyyufelix.github.io/2017/10/24/distributional-bellman.html>
+  - `code` <https://github.com/flyyufelix/C51-DDQN-Keras>
   - `code` <https://github.com/reinforceio/tensorforce/blob/master/tensorforce/models/categorical_dqn_model.py>
   - `code` <https://github.com/floringogianu/categorical-dqn>
 
@@ -1142,6 +1243,7 @@ interesting older papers:
 
 ----
 ["Scalable Trust-region Method for Deep Reinforcement Learning using Kronecker-factored Approximation"](https://arxiv.org/abs/1708.05144)  # ACKTR
+>	"KFAC for simple networks is equivalent to gradient descent where activation and backprop values are whitened."  
   - `video` <https://youtube.com/watch?v=0rrffaYuUi4> (Wu)
   - `video` ["Optimizing Neural Networks using Structured Probabilistic Models of the Gradient Computation"](https://fields.utoronto.ca/video-archive/2017/02/2267-16498 (Grosse)
   - `post` <https://medium.com/@yaroslavvb/optimizing-deeper-networks-with-kfac-in-pytorch-4004adcba1b0>
@@ -1363,7 +1465,7 @@ interesting older papers:
   - `post` <https://deepmind.com/blog/agents-imagine-and-plan/>
   - `video` <https://youtube.com/watch?v=56GW1IlWgMg> (Kilcher)
 
-#### ["TreeQN and ATreeC: Differentiable Tree Planning for Deep Reinforcement Learning"](https://openreview.net/pdf?id=H1dh6Ax0Z)
+#### ["TreeQN and ATreeC: Differentiable Tree Planning for Deep Reinforcement Learning"](https://arxiv.org/abs/1710.11417)
   `learning abstract environment model` `learning to plan`
 >	"By formulating the tree search in a differentiable way and integrating it directly into the Q-function or policy, we train the entire agent, including its learned model, end-to-end, thus ensuring that the model is optimised for the correct goal and is suitable for on-line planning during execution of the policy."  
 >	"Our approach can alternatively be viewed as a model-free method in which the fully connected layers of DQN are replaced by a recursive network that applies transition functions with shared parameters at each tree node expansion. The resulting architecture, which we call TreeQN, encodes an inductive bias based on the prior knowledge that the environment is a stationary Markov process, which facilitates faster learning of better policies. We also present an actor-critic variant, ATreeC, in which the tree planner is augmented with a softmax layer and used as a policy network."  
@@ -1484,7 +1586,7 @@ interesting older papers:
 >	"PixelCNN for exploration, neural alternative to Context Tree Switching"  
   - `video` <http://youtube.com/watch?v=qSfd27AgcEk> (Bellemare)
 
-[#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning](http://arxiv.org/abs/1611.04717) (Abbeel)
+#### ["#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning"](http://arxiv.org/abs/1611.04717) (Abbeel)
   `exploration in state space guided by probability of observation`
 >	"The authors encourage exploration by adding a pseudo-reward of the form beta/sqrt(count(state)) for infrequently visited states. State visits are counted using Locality Sensitive Hashing (LSH) based on an environment-specific feature representation like raw pixels or autoencoder representations. The authors show that this simple technique achieves gains in various classic RL control tasks and several games in the ATARI domain. While the algorithm itself is simple there are now several more hyperaprameters to tune: The bonus coefficient beta, the LSH hashing granularity (how many bits to use for hashing) as well as the type of feature representation based on which the hash is computed, which itself may have more parameters. The experiments don't paint a consistent picture and different environments seem to need vastly different hyperparameter settings, which in my opinion will make this technique difficult to use in practice."  
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1611.04717>
@@ -1689,8 +1791,7 @@ hieves."
   - `post` <https://blog.openai.com/learning-a-hierarchy/>
   - `code` <https://github.com/openai/mlsh>
 
-----
-#### ["Variational Intrinsic Control"](http://arxiv.org/abs/1611.07507) (DeepMind)
+#### ["Eigenoption Discovery Through The Deep Successor Rerpesentation"](https://arxiv.org/abs/1710.11089) (IBM)
 
 #### ["A Laplacian Framework for Option Discovery in Reinforcement Learning"](https://arxiv.org/abs/1703.00956) (Bowling)
 >	"Proto-value functions are a well-known approach for representation learning in MDPs. We address the option discovery problem by showing how PVFs implicitly define options. We do it by introducing eigenpurposes, intrinsic reward functions derived from the learned representations. The options discovered from eigenpurposes traverse the principal directions of the state space."  
@@ -1698,29 +1799,20 @@ hieves."
   - `video` <https://youtube.com/watch?v=2BVicx4CDWA> (demo)
   - `video` <https://vimeo.com/220484541> (Machado)
 
-#### ["Strategic Attentive Writer for Learning Macro-Actions"](http://arxiv.org/abs/1606.04695) (DeepMind)
->	"method that learns to initialize and update a plan, but which does not use a model and instead directly maps new observations to plan updates"
-  - `video` <https://youtube.com/watch?v=niMOdSu3yio> (demo)
-  - `notes` <https://blog.acolyer.org/2017/01/06/strategic-attentive-writer-for-learning-macro-actions/>
-  - `post` <http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/> (Mohamed)
+#### ["Variational Intrinsic Control"](http://arxiv.org/abs/1611.07507) (DeepMind)
 
 #### ["The Option-Critic Architecture"](http://arxiv.org/abs/1609.05140) (McGill)
   - `video` <https://youtube.com/watch?v=8r_EoYnPjGk> (Bacon)
   - `video` <https://youtube.com/watch?v=y_ZjBI5CCCM> (Bacon)
   - `video` <https://youtube.com/watch?v=ID150Tl-MMw&t=56m55s> (Abbeel)
 
-#### ["Options Discovery with Budgeted Reinforcement Learning"](https://arxiv.org/abs/1611.06824)
+#### ["Probabilistic Inference for Determining Options in Reinforcement Learning"](https://link.springer.com/article/10.1007/s10994-016-5580-x)
+
+#### ["Strategic Attentive Writer for Learning Macro-Actions"](http://arxiv.org/abs/1606.04695) (DeepMind)
+  - `video` <https://youtube.com/watch?v=niMOdSu3yio> (demo)
+  - `notes` <https://blog.acolyer.org/2017/01/06/strategic-attentive-writer-for-learning-macro-actions/>
 
 ----
-#### ["Modular Multitask Reinforcement Learning with Policy Sketches"](http://arxiv.org/abs/1611.01796) (Levine)
-  - `video` <https://youtube.com/watch?v=NRIcDEB64x8> (Andreas)
-  - `code` <https://github.com/jacobandreas/psketch>
-
-#### ["Stochastic Neural Networks for Hierarchical Reinforcement Learning"](https://arxiv.org/abs/1704.03012) (Abbeel)
->	"Our SNN hierarchical approach outperforms state-of-the-art intrinsic motivation results like VIME (Houthooft et al., 2016)."  
-  - `video` <https://youtube.com/playlist?list=PLEbdzN4PXRGVB8NsPffxsBSOCcWFBMQx3> (demo)
-  - `code` <https://github.com/florensacc/snn4hrl>
-
 #### ["FeUdal Networks for Hierarchical Reinforcement Learning"](http://arxiv.org/abs/1703.01161) (DeepMind)
 >	"A novel architecture that formulates sub-goals as directions in latent state space, which, if followed, translates into a meaningful behavioural primitives. FuN clearly separates the module that discovers and sets sub-goals from the module that generates behaviour through primitive actions. This creates a natural hierarchy that is stable and allows both modules to learn in complementary ways."  
 >	"Agent with two level hierarchy: manager and worker."  
@@ -1733,8 +1825,14 @@ hieves."
   - `video` <https://youtube.com/watch?v=0e_uGa7ic74&t=20m10s> (Hadsell)
   - `code` <https://github.com/dmakian/feudal_networks>
 
-#### ["A Deep Hierarchical Approach to Lifelong Learning in Minecraft"](http://arxiv.org/abs/1604.07255)
-  - `video` <https://youtube.com/watch?v=RwjfE4kc6j8> (demo)
+#### ["Stochastic Neural Networks for Hierarchical Reinforcement Learning"](https://arxiv.org/abs/1704.03012) (Abbeel)
+>	"Our SNN hierarchical approach outperforms state-of-the-art intrinsic motivation results like VIME (Houthooft et al., 2016)."  
+  - `video` <https://youtube.com/playlist?list=PLEbdzN4PXRGVB8NsPffxsBSOCcWFBMQx3> (demo)
+  - `code` <https://github.com/florensacc/snn4hrl>
+
+#### ["Modular Multitask Reinforcement Learning with Policy Sketches"](http://arxiv.org/abs/1611.01796) (Levine)
+  - `video` <https://youtube.com/watch?v=NRIcDEB64x8> (Andreas)
+  - `code` <https://github.com/jacobandreas/psketch>
 
 ----
 #### ["Principled Option Learning in Markov Decision Processes"](https://arxiv.org/abs/1609.05524) (Tishby)
@@ -1771,11 +1869,6 @@ hieves."
   - `code` <https://github.com/eparisotto/ActorMimic>
 
 ----
-#### ["Deep Successor Reinforcement Learning"](https://arxiv.org/abs/1606.02396)
-  - `video` <https://youtube.com/watch?v=OCHwXxSW70o> (Kulkarni)
-  - `video` <https://youtube.com/watch?v=kNqXCn7K-BM> (Garipov)
-  - `code` <https://github.com/Ardavans/DSR>
-
 #### ["Learning to Act by Predicting the Future"](https://arxiv.org/pdf/1611.01779)
 >	"application of deep successor reinforcement learning"  
   - `video` <https://youtube.com/watch?v=947bSUtuSQ0> + <https://youtube.com/watch?v=947bSUtuSQ0> (demo)
@@ -1785,8 +1878,14 @@ hieves."
   - `post` <https://oreilly.com/ideas/reinforcement-learning-for-complex-goals-using-tensorflow>
   - `notes` <https://blog.acolyer.org/2017/05/12/learning-to-act-by-predicting-the-future/>
   - `code` <https://github.com/IntelVCL/DirectFuturePrediction>
+  - `code` <https://github.com/NervanaSystems/coach/blob/master/agents/dfp_agent.py>
 
 #### ["Successor Features for Transfer in Reinforcement Learning"](http://arxiv.org/abs/1606.05312) (DeepMind)
+
+#### ["Deep Successor Reinforcement Learning"](https://arxiv.org/abs/1606.02396)
+  - `video` <https://youtube.com/watch?v=OCHwXxSW70o> (Kulkarni)
+  - `video` <https://youtube.com/watch?v=kNqXCn7K-BM> (Garipov)
+  - `code` <https://github.com/Ardavans/DSR>
 
 ----
 #### ["Learning and Transfer of Modulated Locomotor Controllers"](http://arxiv.org/abs/1610.05182) (DeepMind)
@@ -2095,6 +2194,20 @@ hieves."
 ### natural language processing
 
 [interesting older papers](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt#interesting-papers)
+
+----
+#### ["Unsupervised Machine Translation Using Monolingual Corpora Only"](https://arxiv.org/abs/1711.00043) (Facebook AI Research)
+
+#### ["Unsupervised Neural Machine Translation"](https://arxiv.org/abs/1710.11041)
+
+#### ["Word Translation Without Parallel Data"](https://arxiv.org/abs/1710.04087) (Facebook AI Research)
+>	"Our method leverages adversarial training to learn a linear mapping from a source to a target space and operates in two steps. First, in a two-player game, a discriminator is trained to distinguish between the mapped source embeddings and the target embeddings, while the mapping (which can be seen as a generator) is jointly trained to fool the discriminator. Second, we extract a synthetic dictionary from the resulting shared embedding space and fine-tune the mapping with the closed-form Procrustes solution."  
+>	"(A) There are two distributions of word embeddings, English words in red denoted by X and Italian words in blue denoted by Y, which we want to align/translate. Each dot represents a word in that space. The size of the dot is proportional to the frequency of the words in the training corpus of that language.  
+>	(B) Using adversarial learning, we learn a rotation matrix W which roughly aligns the two distributions. The green stars are randomly selected words that are fed to the discriminator to determine whether the two word embeddings come from the same distribution.  
+>	(C) The mapping W is further refined via Procrustes. This method uses frequent words aligned by the previous step as anchor points, and minimizes an energy function that corresponds to a spring system between anchor points. The refined mapping is then used to map all words in the dictionary.  
+>	(D) Finally, we translate by using the mapping W and a distance metric, dubbed CSLS, that expands the space where there is high density of points (like the area around the word “cat”), so that “hubs” (like the word “cat”) become less close to other word vectors than they would otherwise (compare to the same region in panel (A))."  
+
+#### ["Style Transfer from Non-Parallel Text by Cross-Alignment"](https://arxiv.org/abs/1705.09655)
 
 ----
 #### ["Improving Neural Language Models with a Continuous Cache"](http://arxiv.org/abs/1612.04426) (Facebook AI Research)

@@ -180,11 +180,15 @@
   "Computers may be programmed to analyze data and detect meaning but humans are the source of meaning."  
 
   - *symbolic knowledge* ("dog as word") - logic networks
+	[[relational learning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#relational-learning)]
   - *conceptual knowledge* ("dog as mammal, a good companion, a good guardian") - open research area
-  - *perceptual knowledge* ("dog as something with certain physical appearance") - deep learning
+  - *perceptual knowledge* ("dog as something with certain physical appearance") - distributed representations
+	[[deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)]
 
-  symbolic -> conceptual (words have to be grounded in real world and actions to be not recursive)  
-  perceptual -> conceptual (prediction and classification are not enough for some tasks without reasoning over concepts)  
+  *symbolic knowledge* -> *conceptual knowledge* (words have to be grounded in real world, actions have to be not recursive) -
+	[[language grounding](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#language-grounding)]  
+  *perceptual knowledge* -> *conceptual knowledge* (prediction is not enough for some tasks, reasoning over concepts is needed) -
+	[[concept learning](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#unsupervised-learning)]  
 
 
 
