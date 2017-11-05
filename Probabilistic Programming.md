@@ -95,21 +95,17 @@
 
   <http://probabilistic-programming.org>
 
+  [Forest](http://forestdb.org) - a repository for generative models  
+  [Probability Zoo](http://edwardlib.org/zoo) - a community repository for pre-trained probabilistic models  
 
-  * Forest - "a repository for generative models"  
-	<http://forestdb.org>  
-
-  * Probability Zoo - "a community repository for pre-trained probabilistic models"  
-	<http://edwardlib.org/zoo>  
 
   * Edward  
 	<http://github.com/blei-lab/edward>  
 	<http://dustintran.com/blog/a-quick-update-edward-and-some-motivations/>  
 	<http://github.com/blei-lab/edward/wiki>  
-	<http://dustintran.com/talks/Tran_Edward.pdf>  
 	[sample models](http://edwardlib.org/iclr2017)  
-	["Deep Probabilistic Programming"](https://arxiv.org/abs/1701.03757)  
-	<https://youtube.com/watch?v=PvyVahNl8H8> (Tran)  
+	["Deep Probabilistic Programming"](https://arxiv.org/abs/1701.03757) by Tran et al. `paper`  
+	<https://youtube.com/watch?v=PvyVahNl8H8> (Tran) `video` ([slides](http://dustintran.com/talks/Tran_Edward.pdf))  
 
   * Stan  
 	<https://youtube.com/watch?v=6NXRCtWQNMg>  
@@ -122,6 +118,9 @@
 
   * BayesFlow  
 	<https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/bayesflow>  
+
+  * PyRo
+	<https://eng.uber.com/pyro/>
 
   * Infer.NET  
 	<http://research.microsoft.com/infernet>  
@@ -139,11 +138,6 @@
 	<http://probcomp.csail.mit.edu/bayesdb/>  
 	<https://youtube.com/watch?v=-8QMqSWU76Q>  
 	<https://youtube.com/watch?v=7_m7JCLKmTY>  
-
-  * FACTORIE  
-	<http://factorie.cs.umass.edu>  
-	<http://youtube.com/watch?v=MEhN9K36BfQ>  
-	<http://youtube.com/watch?v=DkRLTToCw-0>  
 
 
 

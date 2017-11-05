@@ -1236,6 +1236,7 @@ Yoshua Bengio:
   `interpretability`
 >	"How can we explain the predictions of a black-box model? In this paper, we use influence functions -- a classic technique from robust statistics -- to trace a model's prediction through the learning algorithm and back to its training data, thereby identifying training points most responsible for a given prediction. To scale up influence functions to modern machine learning settings, we develop a simple, efficient implementation that requires only oracle access to gradients and Hessian-vector products. We show that even on non-convex and non-differentiable models where the theory breaks down, approximations to influence functions can still provide valuable information. On linear models and convolutional neural networks, we demonstrate that influence functions are useful for multiple purposes: understanding model behavior, debugging models, detecting dataset errors, and even creating visually-indistinguishable training-set attacks."
   - `video` <https://youtube.com/watch?v=0w9fLX_T6tY> (Koh)
+  - `video` <https://facebook.com/academics/videos/1633085090076225/> (1:23:28) (Liang)
   - `code` <https://github.com/kohpangwei/influence-release>
 
 
@@ -1422,10 +1423,9 @@ Yoshua Bengio:
 >	"It has long been known that infinitely wide (single hidden layer) NNs with distributions placed over their weights converge to Gaussian processes. This known relation is through a limit argument that does not allow us to translate properties from the Gaussian process to finite NNs easily. Finite NNs with distributions placed over the weights have been studied extensively as Bayesian neural networks. These offer robustness to over-fitting as well, but with challenging inference and additional computational costs. Variational inference has been applied to these models, but with limited success. Recent advances in variational inference introduced new techniques into the field such as sampling-based variational inference and stochastic variational inference. These have been used to obtain new approximations for Bayesian neural networks that perform as well as dropout. However these models come with a prohibitive computational cost. To represent uncertainty, the number of parameters in these models is doubled for the same network size. Further, they require more time to converge and do not improve on existing techniques. Given that good uncertainty estimates can be cheaply obtained from common dropout models, this results in unnecessary additional computation. An alternative approach to variational inference makes use of expectation propagation and has improved considerably in RMSE and uncertainty estimation on VI approaches. In the results section we compare dropout to these approaches and show a significant improvement in both RMSE and uncertainty estimation."
 
 ----
->	"We show that a neural network with arbitrary depth and non-linearities, with dropout applied before every weight layer, is mathematically equivalent to an approximation to a well known Bayesian model. This interpretation might offer an explanation to some of dropout's key properties, such as its robustness to over-fitting. Our interpretation allows us to reason about uncertainty in deep learning, and allows the introduction of the Bayesian machinery into existing deep learning frameworks in a principled way."
+>	"The main result of this paper is that neural network with arbitrary depth and non-linearities, with dropout applied before every weight layer, is mathematically equivalent to variational approximation of Gaussian process with a particular choice of covariance function. This interpretation might offer an explanation to some of dropout's key properties, such as its robustness to over-fitting. Our interpretation allows us to reason about uncertainty in deep learning, and allows the introduction of the Bayesian machinery into existing deep learning frameworks in a principled way."
 
-----
->	"The main result of this paper is that deep networks with dropout are mathematically equivalent to variational approximation of Gaussian processes with a particular choice of covariance function."
+>	"Dropout can be interpreted as a variational Bayesian approximation, where the approximating distribution is a mixture of two Gaussians with small variances and the mean of one of the Gaussians fixed at zero. The uncertainty in the weights induces prediction uncertainty by marginalising over the approximate posterior using Monte Carlo integration. This amounts to the regular dropout procedure only with dropout also applied at test time, giving output uncertainty from our dynamics model."
 
   - `paper` ["Dropout as a Bayesian Approximation: Appendix"](http://arxiv.org/abs/1506.02157) by Gal and Ghahramani
   - `video` <http://research.microsoft.com/apps/video/default.aspx?id=259218> (Gal)
@@ -1875,8 +1875,11 @@ x."
   - `video` ["What's wrong with convolutional nets?"](http://techtv.mit.edu/collections/bcs/videos/30698-what-s-wrong-with-convolutional-nets) (Hinton) ([transcription](https://github.com/WalnutiQ/walnut/issues/157))
   - `video` ["Does the Brain do Inverse Graphics?"](https://youtube.com/watch?v=TFIMqt0yT2I) (Hinton)
   - `video` <https://youtube.com/watch?v=VKoLGnq15RM> (Raval)
+  - `post` <https://hackernoon.com/what-is-a-capsnet-or-capsule-network-2bfbe48769cc>
+  - `post` <https://medium.com/@pechyonkin/understanding-hintons-capsule-networks-part-i-intuition-b4b559d1159b>
   - `code` <https://github.com/llSourcell/capsule_networks>
   - `code` <https://github.com/InnerPeace-Wu/CapsNet-tensorflow>
+  - `code` <https://github.com/naturomics/CapsNet-Tensorflow>
   - `code` <https://github.com/nishnik/CapsNet-PyTorch>
   - `code` <https://github.com/XifengGuo/CapsNet-Keras>
   - `paper` ["Matrix Capsules with EM Routing"](https://openreview.net/forum?id=HJWLfGWRb)

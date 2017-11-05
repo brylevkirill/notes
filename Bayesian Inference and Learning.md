@@ -513,7 +513,7 @@
 
 ----
 
-  ["Monte Carlo Theory, Methods and Examples"](http://statweb.stanford.edu/~owen/mc/) book by Art Owen
+  ["Monte Carlo Theory, Methods and Examples"](http://statweb.stanford.edu/~owen/mc/) by Art Owen `book`
 
   [visualization](https://chi-feng.github.io/mcmc-demo/app.html)
 
@@ -533,7 +533,12 @@
 
   ["Machine Learning and Likelihood-Free Inference in Particle Physics"](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Machine-Learning-and-Likelihood-Free-Inference-in-Particle-Physics) by Kyle Cranmer `video`  
 
+----
+
   [history and key papers](http://dennisprangle.github.io/research/2016/01/03/LFtimeline)
+
+  ["Likelihood-free Inference via Classification"](#likelihood-free-inference-via-classification-gutmann-dutta-kaski-corander) by Gutmann et al. `paper`  
+  ["Fast Epsilon-free Inference of Simulation Models with Bayesian Conditional Density Estimation"](https://github.com/brylevcyrill/notes/blob/master/Deep%20Learning.md#fast-epsilon-free-inference-of-simulation-models-with-bayesian-conditional-density-estimation-papamakarios-murray) by Papamakarios et al. `paper`  
 
   [generative adversarial networks](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#generative-models---generative-adversarial-networks) as implicit models with likelihood-free inference
 
@@ -569,7 +574,7 @@
 
   ["Introduction to Causal Inference"](http://jmlr.org/papers/volume11/spirtes10a/spirtes10a.pdf) by Peter Spirtes `paper`
 
-  ["The Art and Science of Cause and Effect"](http://bayes.cs.ucla.edu/BOOK-2K/causality2-epilogue.pdf) book by Judea Pearl
+  ["The Art and Science of Cause and Effect"](http://bayes.cs.ucla.edu/BOOK-2K/causality2-epilogue.pdf) by Judea Pearl `book`
 
 ----
 
@@ -592,7 +597,7 @@
   ["Counterfactual Reasoning and Learning Systems: The Example of Computational Advertising"](http://jmlr.org/papers/volume14/bottou13a/bottou13a.pdf) by Bottou et al. `paper` ([talk](https://youtube.com/watch?v=qmQceWeYg04) by Leon Bottou `video`)  
   ["Discovering Causal Signals in Images"](https://arxiv.org/abs/1605.08179) by Lopez-Paz et al. `paper` ([talk](https://youtube.com/watch?v=DfJeaa--xO0) by Leon Bottou `video`)  
   ["Learning Representations for Counterfactual Inference"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#johansson-shalit-sontag---learning-representations-for-counterfactual-inference) by Johansson, Shalit, Sontag `paper`
-	([talk](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3) by Uri Shalit)  
+	([talk](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3) by Uri Shalit `video`)  
   ["Implicit Causal Models for Genome-wide Association Studies"](https://arxiv.org/abs/1710.10742) by Tran and Blei `paper`  
 
 ----
@@ -651,6 +656,12 @@
 
 #### ["Markov Chain Monte Carlo and Variational Inference: Bridging the Gap"](http://jmlr.org/proceedings/papers/v37/salimans15.pdf) Salimans, Kingma, Welling
 >	"Recent advances in stochastic gradient variational inference have made it possible to perform variational Bayesian inference with posterior approximations containing auxiliary random variables. This enables us to explore a new synthesis of variational inference and Monte Carlo methods where we incorporate one or more steps of MCMC into our variational approximation. By doing so we obtain a rich class of inference algorithms bridging the gap between variational methods and MCMC, and offering the best of both worlds: fast posterior approximation through the maximization of an explicit objective, with the option of trading off additional computation for additional accuracy. We describe the theoretical foundations that make this possible and show some promising first results."
+
+
+#### ["Likelihood-free Inference via Classification"](https://arxiv.org/abs/1407.4981) Gutmann, Dutta, Kaski, Corander
+>	"Increasingly complex generative models are being used across disciplines as they allow for realistic characterization of data, but a common difficulty with them is the prohibitively large computational cost to evaluate the likelihood function and thus to perform likelihood-based statistical inference. A likelihood-free inference framework has emerged where the parameters are identified by finding values that yield simulated data resembling the observed data. While widely applicable, a major difficulty in this framework is how to measure the discrepancy between the simulated and observed data. Transforming the original problem into a problem of classifying the data into simulated versus observed, we find that classification accuracy can be used to assess the discrepancy. The complete arsenal of classification methods becomes thereby available for inference of intractable generative models. We validate our approach using theory and simulations for both point estimation and Bayesian inference, and demonstrate its use on real data by inferring an individual-based epidemiological model for bacterial infections in child care centers."
+
+>	"At about the same time we first presented our work, Goodfellow et al (2014) proposed to use nonlinear logistic regression to train a neural network (Generative Adversarial Networks) such that it transforms “noise” samples into samples approximately following the same distribution as some given data set. The main difference to our work is that the method of Goodfellow et al (2014) is a method for producing random samples while ours is a method for statistical inference."
 
 
 

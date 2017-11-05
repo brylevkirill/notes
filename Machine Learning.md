@@ -278,6 +278,9 @@
   ["Deep Learning and the Triumph of Empiricism"](http://kdnuggets.com/2015/07/deep-learning-triumph-empiricism-over-theoretical-mathematical-guarantees.html) by Zachary Lipton  
 
 
+  ["Computational Learning Theory, AI and Beyond"](https://www.math.ias.edu/files/mathandcomp.pdf) chapter of "Mathematics and Computation" book by Avi Wigderson
+
+
   [introduction](https://mostafa-samir.github.io/ml-theory-pt1/) by Mostafa Samir  
 
   introduction by Jeremy Kun:  
@@ -546,6 +549,8 @@
   ["Automated Machine Learning: A Short History"](https://datarobot.com/blog/automated-machine-learning-short-history/) by Thomas Dinsmore
 
 ----
+
+  ["AutoML for large scale image classification and object detection"](https://research.googleblog.com/2017/11/automl-for-large-scale-image.html) by Zoph et al.
 
   [TPOT Data Science Assistant](http://rhiever.github.io/tpot/) project
 

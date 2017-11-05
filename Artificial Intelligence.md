@@ -332,10 +332,10 @@ following up conjectures suggested by analogies). Good mathematicians see analog
   [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)
 
   "Learning in Brains and Machines" by Shakir Mohamed:  
-	["Temporal Differences"](http://blog.shakirm.com/2016/02/learning-in-brains-and-machines-1/)  
-	["The Dogma of Sparsity"](http://blog.shakirm.com/2016/04/learning-in-brains-and-machines-2/)  
-	["Synergistic and Modular Action"](http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/)  
-	["Episodic and Interactive Memory"](http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-4-episodic-and-interactive-memory/)  
+  - ["Temporal Differences"](http://blog.shakirm.com/2016/02/learning-in-brains-and-machines-1/)  
+  - ["The Dogma of Sparsity"](http://blog.shakirm.com/2016/04/learning-in-brains-and-machines-2/)  
+  - ["Synergistic and Modular Action"](http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/)  
+  - ["Episodic and Interactive Memory"](http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-4-episodic-and-interactive-memory/)  
 
 
 

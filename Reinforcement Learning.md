@@ -91,7 +91,9 @@
 #### games
 
   - *Go*  
-	["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper`
+	["Mastering the Game of Go without Human Knowledge"](#mastering-the-game-of-go-without-human-knowledge-silver-et-al) by Silver et al. `paper`  
+	["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper`  
+	["Combining Online and Offline Knowledge in UCT"](http://machinelearning.org/proceedings/icml2007/papers/387.pdf) by Gelly and Silver `paper` ([talk](https://youtube.com/watch?v=Bm7zah_LrmE) `video`)  
 
 	[overview](https://youtu.be/i3lEG6aRGm8?t=16m) by Demis Hassabis `video`  
 	overview by David Silver and Chris Maddison
@@ -152,7 +154,8 @@
 	[demo matches against top human players](https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ) `video`  
 
   - *Chess*  
-	["Giraffe: Using Deep Reinforcement Learning to Play Chess"](#giraffe-using-deep-reinforcement-learning-to-play-chess-lai) by Lai `paper`
+	["Giraffe: Using Deep Reinforcement Learning to Play Chess"](#giraffe-using-deep-reinforcement-learning-to-play-chess-lai) by Lai `paper`  
+	["KnightCap: A Chess Program that Learns by Combining TD(lambda) with Game-tree Search"](https://arxiv.org/abs/cs/9901002) by Baxter, Tridgell, Weaver `paper`  
 
   - *Dota 2*  
 	<https://blog.openai.com/dota-2/>  
@@ -270,6 +273,7 @@
   [exercises and solutions](http://www.wildml.com/2016/10/learning-reinforcement-learning/) by Denny Britz  
   [course with exercises and solutions](https://github.com/yandexdataschool/Practical_RL/) from Yandex  
 
+  [implementations of algorithms](https://github.com/NervanaSystems/coach) from Intel Nervana  
   [implementations of algorithms](https://github.com/rlcode/reinforcement-learning) from RLCode team  
   [implementations of algorithms](https://github.com/openai/rllab/tree/master/rllab/algos) from OpenAI  
 
@@ -812,7 +816,7 @@
   ["Integrating Learning and Planning"](https://youtube.com/watch?v=ItMutbeOHtc) by David Silver `video`  
 
 
-  [interesting papers](#interesting-papers---model-based-methods) on model-based methods  
+  [interesting papers](#interesting-papers---model-based-methods)
 
 
   - [Monte Carlo Tree Search](#monte-carlo-tree-search)  
@@ -1343,6 +1347,24 @@ interesting recent papers:
 >	"We give an overview of recent exciting achievements of deep reinforcement learning. We start with background of deep learning and reinforcement learning, as well as introduction of testbeds. Next we discuss Deep Q-Network and its extensions, asynchronous methods, policy optimization, reward, and planning. After that, we talk about attention and memory, unsupervised learning, and learning to learn. Then we discuss various applications of RL, including games, in particular, AlphaGo, robotics, spoken dialogue systems (a.k.a. chatbot), machine translation, text sequence prediction, neural architecture design, personalized web services, healthcare, finance, and music generation. We mention topics/papers not reviewed yet. After listing a collection of RL resources, we close with discussions."
 
 
+#### ["Mastering the Game of Go without Human Knowledge"](https://deepmind.com/documents/119/agz_unformatted_nature.pdf) Silver et al.
+>	"A long-standing goal of artificial intelligence is an algorithm that learns, tabula rasa, superhuman proficiency in challenging domains. Recently, AlphaGo became the first program to defeat a world champion in the game of Go. The tree search in AlphaGo evaluated positions and selected moves using deep neural networks. These neural networks were trained by supervised learning from human expert moves, and by reinforcement learning from self-play. Here, we introduce an algorithm based solely on reinforcement learning, without human data, guidance, or domain knowledge beyond game rules. AlphaGo becomes its own teacher: a neural network is trained to predict AlphaGo’s own move selections and also the winner of AlphaGo’s games. This neural network improves the strength of tree search, resulting in higher quality move selection and stronger self-play in the next iteration. Starting tabula rasa, our new program AlphaGo Zero achieved superhuman performance, winning 100-0 against the previously published, champion-defeating AlphaGo."
+
+>	"AlphaGo Zero learns two functions (which take as input the current board):
+>	- A prior over moves p is trained to predict what AlphaGo will eventually decide to do
+>	- A value function v is trained to predict which player will win (if AlphaGo plays both sides)
+>
+>	Both are trained with supervised learning. Once we have these two functions, AlphaGo actually picks its moves by using 1600 steps of Monte Carlo tree search (MCTS), using p and v to guide the search. It trains p to bypass this expensive search process and directly pick good moves. As p improves, the expensive search becomes more powerful, and p chases this moving target."
+
+>	"AlphaGo Zero uses a quite different approach to deep RL than typical (model-free) algorithms such as policy gradient or Q-learning. By using AlphaGo search we massively improve the policy and self-play outcomes - and then we apply simple, gradient based updates to train the next policy + value network. This appears to be much more stable than incremental, gradient-based policy improvements that can potentially forget previous improvements."  
+>	"We chose to focus more on reinforcement learning, as we believed it would ultimately take us beyond human knowledge. Our recent results actually show that a supervised-only approach can achieve a surprisingly high performance - but that reinforcement learning was absolutely key to progressing far beyond human levels."  
+
+  - `post` <https://deepmind.com/blog/alphago-zero-learning-scratch/>
+  - `post` <http://inference.vc/alphago-zero-policy-improvement-and-vector-fields/>
+  - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
+  - `post` <http://tim.hibal.org/blog/alpha-zero-how-and-why-it-works/>
+
+
 #### ["Mastering the Game of Go with Deep Neural Networks and Tree Search"](https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf) Silver et al.
 >	"The game of Go has long been viewed as the most challenging of classic games for artificial intelligence due to its enormous search space and the difficulty of evaluating board positions and moves. We introduce a new approach to computer Go that uses value networks to evaluate board positions and policy networks to select moves. These deep neural networks are trained by a novel combination of supervised learning from human expert games, and reinforcement learning from games of self-play. Without any lookahead search, the neural networks play Go at the level of state-of-the-art Monte-Carlo tree search programs that simulate thousands of random games of self-play. We also introduce a new search algorithm that combines Monte-Carlo simulation with value and policy networks. Using this search algorithm, our program AlphaGo achieved a 99.8% winning rate against other Go programs, and defeated the European Go champion by 5 games to 0. This is the first time that a computer program has defeated a human professional player in the full-sized game of Go, a feat previously thought to be at least a decade away."
 
@@ -1419,6 +1441,7 @@ interesting recent papers:
 >	"It is clear that Giraffe’s evaluation function has at least comparable positional understanding compared to evaluation functions of top engines in the world, which is remarkable because their evaluation functions are all carefully hand-designed behemoths with hundreds of parameters that have been tuned both manually and automatically over several years, and many of them have been worked on by human grandmasters. The test suite likely under-estimates the positional understanding of Giraffe compared to other engines, because most of the themes tested by the test suite are generally well-understood concepts in computer chess that are implemented by many engines, and since the test suite is famous, it is likely that at least some of the engines have been tuned specifically against the test suite. Since Giraffe discovered all the evaluation features through self-play, it is likely that it knows about patterns that have not yet been studied by humans, and hence not included in the test suite. As far as we are aware, this is the first successful attempt at using machine learning to create a chess evaluation function from self-play, including automatic feature extraction (many previous attempts are weight-tuning for hand-designed features), starting from minimal hand-coded knowledge, and achieving comparable performance to state-of-the-art expert-designed evaluation functions."
 
   - `code` <https://bitbucket.org/waterreaction/giraffe>
+  - `paper` ["KnightCap: A Chess Program that Learns by Combining TD(lambda) with Game-tree Search"](https://arxiv.org/abs/cs/9901002) (TDLeaf(lambda)) by Baxter, Tridgell, Weaver
 
 
 #### ["Bootstrapping from Game Tree Search"](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Applications_files/bootstrapping.pdf) Veness, Silver, Uther, Blair
@@ -2292,6 +2315,7 @@ interesting recent papers:
   - `post` <https://oreilly.com/ideas/reinforcement-learning-for-complex-goals-using-tensorflow>
   - `notes` <https://blog.acolyer.org/2017/05/12/learning-to-act-by-predicting-the-future/>
   - `code` <https://github.com/IntelVCL/DirectFuturePrediction>
+  - `code` <https://github.com/NervanaSystems/coach/blob/master/agents/dfp_agent.py>
 
 
 #### ["Deep Reinforcement Learning from Self-Play in Imperfect-Information Games"](http://arxiv.org/abs/1603.01121) Heinrich, Silver (Poker)
