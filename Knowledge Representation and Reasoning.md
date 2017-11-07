@@ -762,7 +762,7 @@
 ----
 #### formal logic
 
-  [knowledge graph - description logic](#knowledge-representation---knowledge-graph)
+  [knowledge graph - description logic](#description-logic)
 
 
   ["Simply Logical - Intelligent Reasoning by Example"](https://www.cs.bris.ac.uk/~flach/SL/SL.pdf) by Peter Flach

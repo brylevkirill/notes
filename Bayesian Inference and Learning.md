@@ -538,7 +538,7 @@
   [history and key papers](http://dennisprangle.github.io/research/2016/01/03/LFtimeline)
 
   ["Likelihood-free Inference via Classification"](#likelihood-free-inference-via-classification-gutmann-dutta-kaski-corander) by Gutmann et al. `paper`  
-  ["Fast Epsilon-free Inference of Simulation Models with Bayesian Conditional Density Estimation"](https://github.com/brylevcyrill/notes/blob/master/Deep%20Learning.md#fast-epsilon-free-inference-of-simulation-models-with-bayesian-conditional-density-estimation-papamakarios-murray) by Papamakarios et al. `paper`  
+  ["Fast Epsilon-free Inference of Simulation Models with Bayesian Conditional Density Estimation"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#fast-epsilon-free-inference-of-simulation-models-with-bayesian-conditional-density-estimation-papamakarios-murray) by Papamakarios et al. `paper`  
 
   [generative adversarial networks](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#generative-models---generative-adversarial-networks) as implicit models with likelihood-free inference
 
@@ -614,16 +614,15 @@
 
 ----
 
-  "In retrospect, my greatest challenge was to break away from probabilistic thinking and accept, first, that people are not probability thinkers but cause-effect thinkers and, second, that causal thinking cannot be captured in the language of probability; it requires a formal language of its own."  
+  "In retrospect, my greatest challenge was to break away from probabilistic thinking and accept, first, that people are not probability thinkers but cause-effect thinkers and, second, that causal thinking cannot be captured in the language of probability; it requires a formal language of its own."
+
   "What is more likely, that a daughter will have blue eyes given that her mother has blue eyes or the other way around — that the mother will have blue eyes given that the daughter has blue eyes? Most people will say the former — they'll prefer the causal direction. But it turns out the two probabilities are the same, because the number of blue-eyed people in every generation remains stable. I took it as evidence that people think causally, not probabilistically — they're biased by having easy access to causal explanations, even though probability theory tells you something different.  
   There are many biases in our judgment that are created by our inclination to attribute causal relationships where they do not belong. We see the world as a collection of causal relationships and not as a collection of statistical or associative relationships. Most of the time, we can get by, because they are closely tied together. Once in a while we fail. The blue-eye story is an example of such failure.  
   The slogan, "Correlation doesn't imply causation" leads to many paradoxes. For instance, the size of a child's thumb is highly correlated with their reading ability. So, naively, if you want to be taller, you should learn to read better. This kind of paradoxical example convinces us that correlation does not imply causation. Still, people fall into that trap quite often because they crave causal explanations. The mind is a causal processor, not an association processor. Once you acknowledge that, the question remains how we reconcile the discrepancies between the two. How do we organize causal relationships in our mind? How do we operate on and update such a mental presentation?"  
 
+  "I now take causal relations as the fundamental building block that of physical reality and of human understanding of that reality, and I regard probabilistic relationships as but the surface phenomena of the causal machinery that underlies and propels our understanding of our world."
+
   *(Judea Pearl)*
-
-  "To me, causal inference is one of the most interesting fields in statistics and machine learning, and with the greatest potential for long term impact. It can significantly speed up progress towards something like artificial general intelligence (and is arguably necessary to achieve it). And most immediately, it enables richer data analyses to capture scientific phenomena. In order for our models to truly infer generative processes, they must understand and learn causal notions of the world."  
-
-  *(Dustin Tran)*
 
 
 

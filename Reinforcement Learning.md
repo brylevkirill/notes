@@ -411,7 +411,8 @@
 
 ----
 
-  **imitation learning** / **behavioral cloning**:
+  **imitation learning** / **behavioral cloning**:  
+  - learn agent's behavior in environment with unknown cost function via imitation of another agent's behavior
 
   ["Supervised Learning of Behaviors: Deep Learning, Dynamical Systems, and Behavior Cloning"](https://youtube.com/watch?v=kl_G95uKTHw) by Sergey Levine `video`  
   ["Learning Policies by Imitating Optimal Control"](https://youtube.com/watch?v=o0Ebur3aNMo) by Sergey Levine `video`  
@@ -427,7 +428,7 @@
 
   **inverse reinforcement learning**:  
   - infer underlying reward structure guiding agent’s behavior based on observations and model of environment  
-  - learn reward structure for modelling purposes or for imitation of demonstrator's behavior (apprenticeship)  
+  - learn reward structure for modelling purposes or for imitation of another agent's behavior (apprenticeship)  
 
   [introduction](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/) (part 2, 20:40) by Pieter Abbeel `video`  
   [overview](https://youtube.com/watch?v=d9DlQSJQAoI) by Chelsea Finn `video`  
@@ -808,6 +809,7 @@
   - *(plus)* can handle systems with arbitrarily complex dynamics and costs  
   - *(minus)* significantly less sample-efficient  
 
+----
 
   [overview](https://youtu.be/bsuvM1jO-4w?t=35m2s) by Vlad Mnih `video`
 
@@ -816,8 +818,10 @@
   ["Integrating Learning and Planning"](https://youtube.com/watch?v=ItMutbeOHtc) by David Silver `video`  
 
 
-  [interesting papers](#interesting-papers---model-based-methods)
+  [interesting papers](#interesting-papers---model-based-methods)  
+  [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-based-methods)  
 
+----
 
   - [Monte Carlo Tree Search](#monte-carlo-tree-search)  
   - [Guided Policy Search](#guided-policy-search)  
@@ -842,6 +846,7 @@
   ["Combining Online and Offline Knowledge in UCT"](http://machinelearning.org/proceedings/icml2007/papers/387.pdf) by Gelly and Silver `paper` ([talk](https://youtube.com/watch?v=Bm7zah_LrmE) `video`)  
   ["Deep Learning for Real-Time Atari Game Play Using Offline Monte-Carlo Tree Search Planning"](#deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning-guo-singh-lee-lewis-wang) by Guo et al. `paper`  
   ["A Monte-Carlo AIXI Approximation"](https://github.com/brylevkirill/notes/blob/Artificial%20Intelligence.md#a-monte-carlo-aixi-approximation-mc-aixi-ctw-agent-veness-ng-hutter-uther-silver) by Veness et al. `paper`  
+
 
 
 ----
@@ -925,6 +930,7 @@
 	([slides](https://drive.google.com/drive/folders/0B2zoFVYw1rN3N0RUNXE1WnNObTQ) `in english`)  
 
   ["Reinforced Variational Inference"](#reinforced-variational-inference-weber-heess-eslami-schulman-wingate-silver) by Weber et al. `paper`  
+  ["Reinforcement Learning as Variational Inference: Two Recent Approaches"](http://people.ee.duke.edu/~lcarin/Rohith8.11.2017.pdf) by Rohith Kuditipudi `slides`  
 
   bayesian policy search in variational MDP (variational decision making):  
   Fπ(θ) = E q(a,z|x) [R(a|x)] - α * Dkl[qθ(z|x) || p(z|x)] + α * H[πθ(a|z)]  
@@ -1045,7 +1051,6 @@
   - pathwise derivative policy gradient  
     * [Deep Deterministic Policy Gradient](#deep-deterministic-policy-gradient-ddpg)  (policy gradient estimation using gradient of critic as model of returns)  
     * [Stochastic Value Gradient](#stochastic-value-gradient-svg)  (policy gradient estimation using gradient of critic or gradient of environment model)  
-  - [stochastic computation graphs](#schulman-heess-weber-abbeel---gradient-estimation-using-stochastic-computation-graphs)  (policy gradient estimation using both likelihood ratio and pathwise derivative)  
 
 
   what's the right core model-free algorithm is not clear:  
@@ -1057,7 +1062,6 @@
 ----
 
   "Policy gradient methods are attractive because they are end-to-end: there is explicit policy and principled approach that directly optimizes expected reward."  
-  "Policy gradient methods work well only in settings where there are few discrete choices so that algorithm is not hopelessly sampling through huge search space."  
 
   limitations of policy gradient optimization:  
   - inefficient use of data, large number of samples required  
@@ -1103,18 +1107,25 @@
 ----
 #### Evolution Strategies (ES)
 
-  policy gradient estimation using finite differences instead of derivative of loss function
+  policy gradient estimation using finite differences instead of derivative of loss function  
+  ES does not fully exploit architecture of policy network or temporal structure of problem  
 
-  (Juergen Schmidhuber) "Evolutionary computation is one of the most useful practical methods for direct search in policy space, especially when there is no teacher who knows which output actions the system should produce at which time. Especially in partially observable environments where memories of previous events are needed to disambiguate states, this often works much better than other reinforcement learning techniques based on dynamic programming. In case of teacher-given desired output actions or labels, gradient descent such as backpropagation (also through time) usually works much better, especially for NNs with many weights."
+  "Evolutionary computation is one of the most useful practical methods for direct search in policy space, especially when there is no teacher who knows which output actions the system should produce at which time. Especially in partially observable environments where memories of previous events are needed to disambiguate states, this often works much better than other reinforcement learning techniques based on dynamic programming. In case of teacher-given desired output actions or labels, gradient descent such as backpropagation (also through time) usually works much better, especially for NNs with many weights."
 
+  *(Juergen Schmidhuber)*
+
+----
 
   [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement#t=784) by Pieter Abbeel `video`
 
   ["A Visual Guide to Evolution Strategies"](http://blog.otoro.net/2017/10/29/visual-evolution-strategies/) by David Ha
 
+  <http://scholarpedia.org/article/Evolution_strategies>
+
 ----
 
-  ["Natural Evolution Strategies"](http://jmlr.org/papers/volume15/wierstra14a/wierstra14a.pdf) by Wierstra et al. `paper`
+  ["Completely Derandomized Self-Adaptation in Evolution Strategies"](https://www.lri.fr/~hansen/cmaartic.pdf) (CMA-ES) by Hansen and Ostermeier `paper`  
+  ["Natural Evolution Strategies"](http://jmlr.org/papers/volume15/wierstra14a/wierstra14a.pdf) by Wierstra et al. `paper`  
 
 ----
 
@@ -1142,6 +1153,8 @@
   [overview](http://inference.vc/evolution-strategies-variational-optimisation-and-natural-es-2/) by Ferenc Huszar  
   [overview](http://davidbarber.github.io/blog/2017/04/03/variational-optimisation/) by David Barber  
   [overview](http://argmin.net/2017/04/03/evolution/) by Ben Recht and Roy Frostig  
+
+  ["Random Gradient-Free Minimization of Convex Functions"](https://mipt.ru/dcam/students/elective/a_5gc1te/RandomGradFree.PDF) by Nesterov `paper`
 
 
   https://en.wikipedia.org/wiki/Simultaneous_perturbation_stochastic_approximation  
@@ -1334,6 +1347,7 @@ interesting recent papers:
   - [hierarchical reinforcement learning](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---hierarchical-reinforcement-learning)  
   - [transfer](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---transfer)  
   - [imitation](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---imitation)  
+  - [multi-agent](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---multi-agent)  
 
 
 
@@ -1358,6 +1372,9 @@ interesting recent papers:
 
 >	"AlphaGo Zero uses a quite different approach to deep RL than typical (model-free) algorithms such as policy gradient or Q-learning. By using AlphaGo search we massively improve the policy and self-play outcomes - and then we apply simple, gradient based updates to train the next policy + value network. This appears to be much more stable than incremental, gradient-based policy improvements that can potentially forget previous improvements."  
 >	"We chose to focus more on reinforcement learning, as we believed it would ultimately take us beyond human knowledge. Our recent results actually show that a supervised-only approach can achieve a surprisingly high performance - but that reinforcement learning was absolutely key to progressing far beyond human levels."  
+
+>	"AlphaGo improves the policy through REINFORCE, which is highly sample-inefficient. Then, it learns the value function for that policy. In REINFORCE one generates trajectories and then changes their probability based on the outcome of the match.  
+>	AlphaGo Zero, on the other hand, changes the trajectories themselves. During self-play, an expert (MCTS) tells the policy-value network how to improve its policy-part right away. Moreover, the improved move is the one that's played, so, in the end, the outcome will be based on the improved policy. Therefore we're basically doing Generalized Policy Iteration because we're greedily improving the policy as we go and learning the value of this improved policy."  
 
   - `post` <https://deepmind.com/blog/alphago-zero-learning-scratch/>
   - `post` <http://inference.vc/alphago-zero-policy-improvement-and-vector-fields/>
@@ -1680,6 +1697,10 @@ interesting recent papers:
 
 >	"Interestingly, we did not find that using dropout produced satisfying confidence intervals for this task. Bootstrapped uncertainty estimates for the Q-value functions have another crucial advantage over dropout which does not appear in the supervised problem. Unlike random dropout masks trained against random target networks, our implementation of bootstrap DQN trains against its own temporally consistent target network. This means that our bootstrap estimates are able to “bootstrap” (in the TD sense) on their ownestimates of the long run value. This is important to quantify the long run uncertainty over Q and drive deep exploration."
 
+----
+  Yarin Gal:  
+>	"This technique to estimate model uncertainty uses an ensemble of deterministic models, meaning that each model in the ensemble produces a point estimate rather than a distribution. It works by independently training many randomly initialised instances of a model on the same dataset (or different random subsets in the case of bootstrapping), and given an input test point, evaluating the sample variance of the outputs from all deterministic models. Even though this approach is more computationally efficient than many Bayesian approaches to model uncertainty (apart from the need to represent the parameters of multiple models), its produced uncertainty estimates lack in many ways as explained in the next illustrative example. To see this, let’s see what would happen if each deterministic model were to be given by an RBF network (whose predictions coincide with the predictive mean of a Gaussian process with a squared-exponential covariance function). An RBF network predicts zero for test points far from the training data. This means that in an ensemble of RBF networks, each and every network will predict zero for a given test point far from the training data. As a result, the sample variance of this technique will be zero at the given test point. The ensemble of models will have very high confidence in its prediction of zero even though the test point lies far from the data! This limitation can be alleviated by using an ensemble of probabilistic models instead of deterministic models. Even though the RBF network’s predictions coincide with the predictive mean of the SE Gaussian process, by using a Gaussian process we could also make use of its predictive variance. The Gaussian process predictions far from the training data will have large model uncertainty. In the ensemble, we would thus wish to take into account each model’s confidence as well as its mean (by sampling an output from each model’s predictive distribution before calculating our sample variance)."
+
   - `video` <http://youtube.com/watch?v=Zm2KoT82O_M> + <http://youtube.com/watch?v=0jvEcC5JvGY> (demo)
   - `video` <http://youtube.com/watch?v=6SAdmG3zAMg>
   - `video` <https://youtu.be/ck4GixLs4ZQ?t=1h27m39s> (Osband) + [slides](https://docs.google.com/presentation/d/1lis0yBGT-uIXnAsi0vlP3SuWD2svMErJWy_LYtfzMOA/)
@@ -1700,13 +1721,7 @@ interesting recent papers:
 
 
 #### ["Risk versus Uncertainty in Deep Learning: Bayes, Bootstrap and the Dangers of Dropout"](http://bayesiandeeplearning.org/papers/BDL_4.pdf) Osband
->	"In this paper we investigate several popular approaches for uncertainty estimation in neural networks. We find that several popular approximations to the uncertainty of a unknown neural net model are in fact approximations to the risk given a fixed model. We review that conflating risk with uncertainty can lead to arbitrarily poor performance in a sequential decision problem. We present a simple and practical solution to this problem based upon smoothed bootstrap sampling."
-
->	"In sequential decision problems there is an important distinction between risk and uncertainty. We identify risk as inherent stochasticity in a model and uncertainty as the confusion over which model parameters apply. For example, a coin may have a fixed p = 0.5 of heads and so the outcome of any single flip holds some risk; a learning agent may also be uncertain of p. The demarcation between risk and uncertainty is tied to the specific model class, in this case a Bernoulli random variable; with a more detailed model of flip dynamics even the outcome of a coin may not be risky at all. Our distinction is that unlike risk, uncertainty captures the variability of an agent’s posterior belief which can be resolved through statistical analysis of the appropriate data. For a learning agent looking to maximize cumulative utility through time, this distinction represents a crucial dichotomy. Consider the reinforcement learning problem of an agent interacting with its environment while trying to maximize cumulative utility through time. At each timestep, the agent faces a fundamental tradeoff: by exploring uncertain states and actions the agent can learn to improve its future performance, but it may attain better short-run performance by exploiting its existing knowledge. At a high level this effect means uncertain states are more attractive since they can provide important information to the agent going forward. On the other hand, states and actions with high risk are actually less attractive for an agent in both exploration and exploitation. For exploitation, any concave utility will naturally penalize risk. For exploration, risk also makes any single observation less informative. Although colloquially similar, risk and uncertainty can require radically different treatment."
-
->	"One of the most popular recent suggestions has been to use dropout sampling (where individual neurons are independently set to zero with probability p) to “get uncertainty information from these deep learning models for free – without changing a thing”. Unfortunately, as we now show, dropout sampling can be better thought of as an approximation the risk in y, rather than the uncertainty of the learned model. Further, using a fixed dropout rate p, rather than optimizing this variational parameter can lead an arbitrarily bad approximation to the risk."
-
->	"We extend the analysis to linear functions and argue that this behavior also carries over to deep learning; extensive computational results support this claim. We investigate the importance of risk and uncertainty in sequential decision problems and why this setting is crucially distinct from standard supervised learning tasks. We highlight the dangers of a naive applications of dropout (or any other approximate risk measure) as a proxy for uncertainty. We present analytical regret bounds for algorithms based upon smoothed bootstrapped uncertainty estimates that complement their strong performance in complex nonlinear domains."
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#risk-versus-uncertainty-in-deep-learning-bayes-bootstrap-and-the-dangers-of-dropout-osband>
 
 
 #### ["Noisy Networks for Exploration"](https://arxiv.org/abs/1706.10295) Fortunato et al.
@@ -2074,7 +2089,7 @@ interesting recent papers:
 ### interesting papers - hierarchical reinforcement learning
 
 [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---hierarchical-reinforcement-learning)  
-[interesting recent papers - transfer](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---transfer) on transfer  
+[interesting recent papers - transfer](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---transfer)  
 
 
 #### ["On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models"](http://arxiv.org/abs/1511.09249) Schmidhuber
@@ -2413,8 +2428,8 @@ interesting recent papers:
   - `post` <http://davidbarber.github.io/blog/2017/04/03/variational-optimisation/> (Barber)
   - `post` <http://argmin.net/2017/04/03/evolution/> (Recht)
   - `post` <http://blog.otoro.net/2017/10/29/visual-evolution-strategies/>
+  - `paper` ["Stochastic Gradient Estimation with Finite Differences"](http://approximateinference.org/accepted/BuesingEtAl2016.pdf) by Buesing et al.
   - `paper` ["Random Gradient-Free Minimization of Convex Functions"](https://mipt.ru/dcam/students/elective/a_5gc1te/RandomGradFree.PDF) by Nesterov
-  - `paper` ["Natural Evolution Strategies"](http://jmlr.org/papers/volume15/wierstra14a/wierstra14a.pdf) by Wierstra et al.
   - `code` <https://github.com/openai/evolution-strategies-starter>
   - `code` <https://github.com/atgambardella/pytorch-es>
 
@@ -2534,40 +2549,6 @@ interesting recent papers:
   - `video` <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724> (Abbeel)
   - `video` <https://youtu.be/mrgJ53TIcQc?t=1h10m31s> (Seleznev) `in russian`
   - `video` <https://youtu.be/rO7Dx8pSJQw?t=50m> (Schulman)
-
-
-#### ["Gradient Estimation Using Stochastic Computation Graphs"](http://arxiv.org/abs/1506.05254) Schulman, Heess, Weber, Abbeel
->	"In a variety of problems originating in supervised, unsupervised, and reinforcement learning, the loss function is defined by an expectation over a collection of random variables, which might be part of a probabilistic model or the external world. Estimating the gradient of this loss function, using samples, lies at the core of gradient-based learning algorithms for these problems. We introduce the formalism of stochastic computation graphs---directed acyclic graphs that include both deterministic functions and conditional probability distributions---and describe how to easily and automatically derive an unbiased estimator of the loss function's gradient. The resulting algorithm for computing the gradient estimator is a simple modification of the standard backpropagation algorithm. The generic scheme we propose unifies estimators derived in variety of prior work, along with variance-reduction techniques therein. It could assist researchers in developing intricate models involving a combination of stochastic and deterministic operations, enabling, for example, attention, memory, and control actions."
-
->	"We have developed a framework for describing a computation with stochastic and deterministic operations, called a stochastic computation graph. Given a stochastic computation graph, we can automatically obtain a gradient estimator, given that the graph satisfies the appropriate conditions on differentiability of the functions at its nodes. The gradient can be computed efficiently in a backwards traversal through the graph: one approach is to apply the standard backpropagation algorithm to one of the surrogate loss functions; another approach (which is roughly equivalent) is to apply a modified backpropagation procedure. The results we have presented are sufficiently general to automatically reproduce a variety of gradient estimators that have been derived in prior work in reinforcement learning and probabilistic modeling. We hope that this work will facilitate further development of interesting and expressive models."
-
->	"Can mix and match likelihood ratio and path derivative. If black-box node: might need to place stochastic node in front of it and use likelihood ratio. This includes recurrent neural net policies."
-
-  - `video` <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724> (Abbeel)
-  - `paper` ["Optimizing Expectations: From Deep Reinforcement Learning to Stochastic Computation Graphs"](http://joschu.net/docs/thesis.pdf) by Schulman
-
-
-#### ["MuProp: Unbiased Backpropagation for Stochastic Neural Networks"](http://arxiv.org/abs/1511.05176) Gu, Levine, Sutskever, Mnih
->	"Deep neural networks are powerful parametric models that can be trained efficiently using the backpropagation algorithm. Stochastic neural networks combine the power of large parametric functions with that of graphical models, which makes it possible to learn very complex distributions. However, as backpropagation is not directly applicable to stochastic networks that include discrete sampling operations within their computational graph, training such networks remains difficult. We present MuProp, an unbiased gradient estimator for stochastic networks, designed to make this task easier. MuProp improves on the likelihood-ratio estimator by reducing its variance using a control variate based on the first-order Taylor expansion of a mean-field network. Crucially, unlike prior attempts at using backpropagation for training stochastic networks, the resulting estimator is unbiased and well behaved. Our experiments on structured output prediction and discrete latent variable modeling demonstrate that MuProp yields consistently good performance across a range of difficult tasks."
-
->	"In this paper, we presented MuProp, which is an unbiased estimator of derivatives in stochastic computational graphs that combines the statistical efficiency of backpropagation with the correctness of a likelihood ratio method. MuProp has a number of natural extensions. First, we might consider using other functions for the baseline rather than just the Taylor expansion, which could be learned in a manner that resembles Q-learning and target propagation. In reinforcement learning, fitted Q-functions obtained by estimating the expected return of a given policy πθ summarize all future costs, and a good Q-function can greatly simplify the temporal credit assignment problem. Combining MuProp with such fitted Q-functions could greatly reduce the variance of the estimator and make it better suited for very deep computational graphs, such as long recurrent neural networks and applications in reinforcement learning. The second extension is to make x¯ depend on samples of its parent nodes. This could substantially improve performance on deeper networks, where the value from a singletrunk mean-field pass may diverge significantly from any samples drawn with a fully stochastic pass. By drawing x¯ using mean-field passes originating at sampled values from preceding layers would prevent such divergence, though at additional computational cost, since the number of mean-field passes would depend on the depth n of the network, for a total of O(n^2) partial passes through the network. Intuitively, the single mean-field “chain” would turn into a “tree,” with a sampled trunk and a different mean-field branch at each layer."
-
->	"The versatility of stochastic neural networks motivates research into more effective algorithms for training them. Models with continuous latent variables and simple approximate posteriors can already be trained efficiently using the variational lower bound along with the reparameterization trick, which makes it possible to train both the model and the inference network using backpropagation. Training models with discrete latent variable distributions, such as Bernoulli or multinomial, is considerably more difficult. Unbiased estimators based on the likelihood-ratio method tend to be significantly less effective than biased estimators, such as the straight-through method and the estimator proposed by Gregor et al. (2014). We hypothesize that this is due to the fact that, unlike the biased estimators, the unbiased ones do not take advantage of the gradient information provided by the backpropagation algorithm. However, the biased estimators are heuristic and not well understood, which means that it is difficult to enumerate the situations in which these estimators will work well. We posit that an effective method for training stochastic neural networks should take advantage of the highly efficient backpropagation algorithm, while still providing the convergence guarantees of an unbiased estimator."
-
->	"To that end, we derive MuProp, an unbiased gradient estimator for deep stochastic neural networks that is based on backpropagation. To the best of our knowledge, it is the first unbiased estimator that can handle both continuous and discrete stochastic variables while taking advantage of analytic gradient information. MuProp’s simple and general formulation allows a straightforward derivation of unbiased gradient estimators for arbitrary stochastic computational graphs – directed acyclic graph with a mix of stochastic and deterministic computational nodes. While the algorithm is applicable to both continuous and discrete distributions, we used only discrete models in our experiments, since the reparameterization trick already provides an effective method for handling continuous variables. We present experimental results for training neural networks with discrete Bernoulli and multinomial variables for both supervised and unsupervised learning tasks. With these models, which are notoriously difficult to train, biased methods often significantly outperform the unbiased ones, except in certain cases. Our results indicate that MuProp’s performance is more consistent and often superior to that of the competing estimators. It is the first time that a well-grounded, unbiased estimator consistently performs as well or better than the biased gradient estimators across a range of difficult tasks."
-
-  - `video` <https://youtu.be/_XRBlhzb31U?t=25m19s> (Figurnov) `in russian`
-  - `notes` <http://dustintran.com/blog/muprop-unbiased-backpropagation-for-stochastic-neural-networks/>
-  - `notes` <https://www.evernote.com/shard/s189/sh/29a7d673-a22c-4ca7-9638-fccfd9d18330/9074c362de09b3cd22983db2939456b7> (Larochelle)
-  - `code` <https://github.com/tensorflow/models/tree/master/research/rebar>
-
-
-#### ["Variational Inference for Monte Carlo Objectives"](http://arxiv.org/abs/1602.06725) Mnih, Rezende
->	"Recent progress in deep latent variable models has largely been driven by the development of flexible and scalable variational inference methods. Variational training of this type involves maximizing a lower bound on the log-likelihood, using samples from the variational posterior to compute the required gradients. Recently, Burda et al. (2016) have derived a tighter lower bound using a multi-sample importance sampling estimate of the likelihood and showed that optimizing it yields models that use more of their capacity and achieve higher likelihoods. This development showed the importance of such multi-sample objectives and explained the success of several related approaches. We extend the multi-sample approach to discrete latent variables and analyze the difficulty encountered when estimating the gradients involved. We then develop the first unbiased gradient estimator designed for importance-sampled objectives and evaluate it at training generative and structured output prediction models. The resulting estimator, which is based on low-variance per-sample learning signals, is both simpler and more effective than the NVIL estimator proposed for the single-sample variational objective, and is competitive with the currently used biased estimators."
-
-  - `video` <http://techtalks.tv/talks/variational-inference-for-monte-carlo-objectives/62507/>
-  - `video` <https://youtu.be/_XRBlhzb31U?t=27m16s> (Figurnov) `in russian`
-  - `notes` <https://evernote.com/shard/s189/sh/54a9fb88-1a71-4e8a-b0e3-f13480a68b8d/0663de49b93d397f519c7d7f73b6a441>
 
 
 #### ["Reinforced Variational Inference"](http://approximateinference.org/accepted/WeberEtAl2015.pdf) Weber, Heess, Eslami, Schulman, Wingate, Silver

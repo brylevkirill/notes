@@ -48,7 +48,7 @@
 	["Deep Learning and AI"](https://youtube.com/watch?v=izrG86jycck) `video`  
 
   - Yann LeCun  
-	["Obstacles to Progress in AI"](https://youtube.com/watch?v=9Kgk4s7yG1c) `video`  
+	["How Does The Brain Learn so Much so Quickly?"](https://youtube.com/watch?v=cWzi38-vDbE) `video`  
 
   - Yoshua Bengio  
 	["Deep Learning and General AI"](https://youtube.com/watch?v=exhdfIPzj24) `video`  
