@@ -77,7 +77,7 @@
 
   [datacenter cooling](https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/) (Google)  
 
-  ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1701.07274) by Yuxi Li `paper`  
+  ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1701.07274) by Yuxi Li `paper` ([slides](https://dropbox.com/s/kzkc8t61t7tz9eu/AISeminar.pdf))  
 
   [other applications](https://dropbox.com/sh/c0zocw1w8ujrpk5/AAAdIYB8U3szR1fL8iCkIt97a)  
 
@@ -155,7 +155,8 @@
 
   - *Chess*  
 	["Giraffe: Using Deep Reinforcement Learning to Play Chess"](#giraffe-using-deep-reinforcement-learning-to-play-chess-lai) by Lai `paper`  
-	["KnightCap: A Chess Program that Learns by Combining TD(lambda) with Game-tree Search"](https://arxiv.org/abs/cs/9901002) by Baxter, Tridgell, Weaver `paper`  
+	["Bootstrapping from Game Tree Search"](#bootstrapping-from-game-tree-search-veness-silver-uther-blair) by Veness et al. `paper`  
+	["KnightCap: A Chess Program that Learns by Combining TD(lambda) with Game-tree Search"](https://arxiv.org/abs/cs/9901002) by Baxter et al. `paper`  
 
   - *Dota 2*  
 	<https://blog.openai.com/dota-2/>  
@@ -167,7 +168,7 @@
 	[game vs Pajkatt](https://youtube.com/watch?v=BBUiwCEmrxU) `video`  
 
   - *Doom*  
-	["Learning to Act by Predicting the Future"](https://arxiv.org/pdf/1611.01779) by Dosovitskiy and Koltun `paper`  
+	["Learning to Act by Predicting the Future"](https://arxiv.org/abs/1611.01779) by Dosovitskiy and Koltun `paper`  
 	[overview](https://youtube.com/watch?v=Q0ldKJbAwR8) of IntelAct agent by Alexey Dosovitskiy `video` `in russian`  
 	[demo](https://youtube.com/watch?v=947bSUtuSQ0) of IntelAct agent `video`  
 
@@ -282,7 +283,7 @@
 ---
 ### deep reinforcement learning
 
-  ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1701.07274) by Yuxi Li `paper`
+  ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1701.07274) by Yuxi Li `paper` ([slides](https://dropbox.com/s/kzkc8t61t7tz9eu/AISeminar.pdf))
 
   [course](http://rll.berkeley.edu/deeprlcourse/) by Sergey Levine, John Schulman and Chelsea Finn `video`  
 
@@ -1344,7 +1345,7 @@ interesting recent papers:
   - [model-free methods](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-free-methods)  
   - [model-based methods](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-based-methods)  
   - [exploration and intrinsic motivation](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
-  - [hierarchical reinforcement learning](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---hierarchical-reinforcement-learning)  
+  - [hierarchical reinforcement learning](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---hierarchical)  
   - [transfer](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---transfer)  
   - [imitation](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---imitation)  
   - [multi-agent](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---multi-agent)  
@@ -1359,6 +1360,8 @@ interesting recent papers:
 
 #### ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1701.07274) Li
 >	"We give an overview of recent exciting achievements of deep reinforcement learning. We start with background of deep learning and reinforcement learning, as well as introduction of testbeds. Next we discuss Deep Q-Network and its extensions, asynchronous methods, policy optimization, reward, and planning. After that, we talk about attention and memory, unsupervised learning, and learning to learn. Then we discuss various applications of RL, including games, in particular, AlphaGo, robotics, spoken dialogue systems (a.k.a. chatbot), machine translation, text sequence prediction, neural architecture design, personalized web services, healthcare, finance, and music generation. We mention topics/papers not reviewed yet. After listing a collection of RL resources, we close with discussions."
+
+  - `slides` <https://dropbox.com/s/kzkc8t61t7tz9eu/AISeminar.pdf>
 
 
 #### ["Mastering the Game of Go without Human Knowledge"](https://deepmind.com/documents/119/agz_unformatted_nature.pdf) Silver et al.
@@ -1378,8 +1381,11 @@ interesting recent papers:
 
   - `post` <https://deepmind.com/blog/alphago-zero-learning-scratch/>
   - `post` <http://inference.vc/alphago-zero-policy-improvement-and-vector-fields/>
-  - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
   - `post` <http://tim.hibal.org/blog/alpha-zero-how-and-why-it-works/>
+  - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
+  - `video` <https://youtube.com/watch?v=vC66XFoN4DE> (Raval)
+  - `notes` <https://dropbox.com/s/fuwhivftv998f6q/AlphaGoZeroPseudoCode.pdf>
+  - `paper` ["Bootstrapping from Game Tree Search"](https://papers.nips.cc/paper/3722-bootstrapping-from-game-tree-search.pdf) by Veness, Silver, Uther, Blair
 
 
 #### ["Mastering the Game of Go with Deep Neural Networks and Tree Search"](https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf) Silver et al.
@@ -1461,10 +1467,21 @@ interesting recent papers:
   - `paper` ["KnightCap: A Chess Program that Learns by Combining TD(lambda) with Game-tree Search"](https://arxiv.org/abs/cs/9901002) (TDLeaf(lambda)) by Baxter, Tridgell, Weaver
 
 
-#### ["Bootstrapping from Game Tree Search"](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Applications_files/bootstrapping.pdf) Veness, Silver, Uther, Blair
+#### ["Bootstrapping from Game Tree Search"](https://papers.nips.cc/paper/3722-bootstrapping-from-game-tree-search) Veness, Silver, Uther, Blair
 >	"In this paper we introduce a new algorithm for updating the parameters of a heuristic evaluation function, by updating the heuristic towards the values computed by an alpha-beta search. Our algorithm differs from previous approaches to learning from search, such as Samuel’s checkers player and the TD-Leaf algorithm, in two key ways. First, we update all nodes in the search tree, rather than a single node. Second, we use the outcome of a deep search, instead of the outcome of a subsequent search, as the training signal for the evaluation function. We implemented our algorithm in a chess program Meep, using a linear heuristic function. After initialising its weight vector to small random values, Meep was able to learn high quality weights from self-play alone. When tested online against human opponents, Meep played at a master level, the best performance of any chess program with a heuristic learned entirely from self-play."
 
   - `video` <http://videolectures.net/nips09_veness_bfg/> (Veness)
+
+
+#### ["Thinking Fast and Slow with Deep Learning and Tree Search"](https://arxiv.org/abs/1705.08439) Anthony, Tian, Barber
+>	"Sequential decision making problems, such as structured prediction, robotic control, and game playing, require a combination of planning policies and generalisation of those plans. In this paper, we present Expert Iteration, a novel reinforcement learning algorithm which decomposes the problem into separate planning and generalisation tasks. Planning new policies is performed by tree search, while a deep neural network generalises those plans. Subsequently, tree search is improved by using the neural network policy to guide search, increasing the strength of new plans. In contrast, standard deep Reinforcement Learning algorithms rely on a neural network not only to generalise plans, but to discover them too. We show that ExIt outperforms REINFORCE for training a neural network to play the board game Hex, and our final tree search agent, trained tabula rasa, defeats MOHEX, the previous state-of-the-art Hex player."
+
+>	"ExIt can be viewed as an extension of Imitation Learning methods to domains where the best known experts are unable to achieve satisfactory performance. In standard IL an apprentice is trained to imitate the behaviour of an expert. In ExIt, we extend this to an iterative learning process. Between each iteration, we perform an Expert Improvement step, where we bootstrap the (fast) apprentice policy to increase the performance of the (comparatively slow) expert."
+
+>	"Imitation Learning is generally appreciated to be easier than Reinforcement Learning, and this partly explains why ExIt is more successful than model-free methods like REINFORCE. Furthermore, for MCTS to recommend a move, it must be unable to find any weakness with its search. Effectively, therefore, a move played by MCTS is good against a large selection of possible opponents. In contrast, in regular self play (in which the opponent move is made by the network playing as the opposite colour), moves are recommended if they beat only this single opponent under consideration. This is, we believe, a key insight into why ExIt works well (when using MCTS as the expert) - the apprentice effectively learns to play well against many opponents."
+
+  - `post` <https://davidbarber.github.io/blog/2017/11/07/Learning-From-Scratch-by-Thinking-Fast-and-Slow-with-Deep-Learning-and-Tree-Search/> (Barber)
+  - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
 
 
 #### ["Automatic Bridge Bidding Using Deep Reinforcement Learning"](http://arxiv.org/abs/1607.03290) Yeh, Lin
@@ -2088,7 +2105,7 @@ interesting recent papers:
 ---
 ### interesting papers - hierarchical reinforcement learning
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---hierarchical-reinforcement-learning)  
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---hierarchical)  
 [interesting recent papers - transfer](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---transfer)  
 
 
@@ -2318,7 +2335,7 @@ interesting recent papers:
   - `code` <https://github.com/Ardavans/DSR>
 
 
-#### ["Learning to Act by Predicting the Future"](https://arxiv.org/pdf/1611.01779) Dosovitskiy, Koltun
+#### ["Learning to Act by Predicting the Future"](https://arxiv.org/abs/1611.01779) Dosovitskiy, Koltun
 >	"We present an approach to sensorimotor control in immersive environments. Our approach utilizes a high-dimensional sensory stream and a lower-dimensional measurement stream. The cotemporal structure of these streams provides a rich supervisory signal, which enables training a sensorimotor control model by interacting with the environment. The model is trained using supervised learning techniques, but without extraneous supervision. It learns to act based on raw sensory input from a complex three-dimensional environment. The presented formulation enables learning without a fixed goal at training time, and pursuing dynamically changing goals at test time. We conduct extensive experiments in three-dimensional simulations based on the classical first-person game Doom. The results demonstrate that the presented approach outperforms sophisticated prior formulations, particularly on challenging tasks. The results also show that trained models successfully generalize across environments and goals. A model trained using the presented approach won the Full Deathmatch track of the Visual Doom AI Competition, which was held in previously unseen environments."
 
 >	"application of deep successor reinforcement learning"

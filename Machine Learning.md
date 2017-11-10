@@ -51,17 +51,20 @@
   ["When is Machine Learning Worth It?"](http://inference.vc/when-is-machine-learning-worth-it/) by Ferenc Huszar  
   ["Machine Learning is the new algorithms"](http://nlpers.blogspot.ru/2014/10/machine-learning-is-new-algorithms.html) by Hal Daume  
 
-  introduction by Dmitry Vetrov `in russian` ([first](https://youtu.be/srIcbDBAJBo), [second](https://youtu.be/ftlbxFypW74))  
+----
+
+  ["The Talking Machines"](http://thetalkingmachines.com/blog/) podcast `audio`
 
 ----
 
   ["Machine Learning Basics"](http://www.deeplearningbook.org/contents/ml.html) by Ian Goodfellow, Yoshua Bengio, Aaron Courville  
   ["Machine Learning for Humans"](https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12) by Vishal Maini  
 
-  ["The Talking Machines"](http://thetalkingmachines.com/blog/) podcast  
+----
 
-  [overview](http://youtube.com/watch?v=lkh7bLUc30g) by Dmitry Vetrov `in russian`  
-  overview by Igor Kuralenok `in russian` ([first](https://youtu.be/ynS7XvkAdLU?t=12m5s), [second](https://youtu.be/jiyD0r2SC-g?t=12m55s))  
+  overview by Dmitry Vetrov ([first](https://youtu.be/srIcbDBAJBo), [second](https://youtu.be/ftlbxFypW74)) `video` `in russian`  
+  [overview](http://youtube.com/watch?v=lkh7bLUc30g) by Dmitry Vetrov `video` `in russian`  
+  overview by Igor Kuralenok ([first](https://youtu.be/ynS7XvkAdLU?t=12m5s), [second](https://youtu.be/jiyD0r2SC-g?t=12m55s)) `video` `in russian`  
 
 
 
@@ -79,63 +82,57 @@
 
 #### guides
 
-  [things to know](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)  
-  [Google's rules](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf)  
-  [common pitfalls](http://danielnee.com/?p=155&utm_content=buffer163ed)  
-  [methods of overfitting](http://hunch.net/?p=22)  
-  [more data or better algorithms](http://kdnuggets.com/2015/06/machine-learning-more-data-better-algorithms.html)  
-  [cross-validation](http://robjhyndman.com/hyndsight/crossvalidation/)  
-  [baseline](http://nlpers.blogspot.ru/2014/11/the-myth-of-strong-baseline.html)  
-  [fitting models with more parameters than data points](https://jakevdp.github.io/blog/2015/07/06/model-complexity-myth/)  
-  [dimensionality reduction](https://colah.github.io/posts/2014-10-Visualizing-MNIST/)  
-  [deception of supervised learning](http://kdnuggets.com/2016/09/deception-of-supervised-learning.html)  
-  [classification vs prediction](http://fharrell.com/2017/01/classification-vs-prediction.html)  
-  [causality in machine learning](http://unofficialgoogledatascience.com/2017/01/causality-in-machine-learning.html)  
-  [interpretable machine learning](https://oreilly.com/ideas/ideas-on-interpreting-machine-learning)  
-  [machine learning and statistics](https://www.ics.uci.edu/~welling/publications/papers/WhyMLneedsStatistics.pdf)  
-  [machine learning and information theory](https://blog.recast.ai/introduction-information-theory-care/)  
-  [machine learning and engineering](http://machinedlearnings.com/2017_02_01_archive.html)  
-  [basics](http://frnsys.com/ai_notes/)  
+  ["A Few Useful Things to Know about Machine Learning"](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf) by Pedro Domingos  
+  ["Rules of Machine Learning: Best Practices for ML Engineering"](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf) by Martin Zinkevich  
+  ["Common Pitfalls in Machine Learning"](http://danielnee.com/?p=155) by Daniel Nee  
+  ["Clever Methods of Overfitting"](http://hunch.net/?p=22) by John Langford  
+  ["In Machine Learning, What is Better: More Data or better Algorithms"](http://kdnuggets.com/2015/06/machine-learning-more-data-better-algorithms.html) by Xavier Amatriain  
+  ["Classification vs. Prediction"](http://fharrell.com/2017/01/classification-vs-prediction.html) by Frank Harrell  
+  ["Causality in machine learning"](http://unofficialgoogledatascience.com/2017/01/causality-in-machine-learning.html) by Muralidharan et al.  
+  ["Are ML and Statistics Complementary?"](https://www.ics.uci.edu/~welling/publications/papers/WhyMLneedsStatistics.pdf) by Max Welling  
+  ["Introduction to Information Theory and Why You Should Care"](https://blog.recast.ai/introduction-information-theory-care/) by Gil Katz  
+  ["Ideas on interpreting machine learning"](https://oreilly.com/ideas/ideas-on-interpreting-machine-learning) by Hall et al.  
+  ["Software Engineering vs Machine Learning Concepts"](http://machinedlearnings.com/2017_02_01_archive.html) by Paul Mineiro  
 
 
 #### courses
 
-  [Andrew Ng](https://youtube.com/playlist?list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN) ([Coursera](http://coursera.org/learn/machine-learning))  
-  [Pedro Domingos](http://youtube.com/playlist?list=PLTPQEx-31JXgtDaC6-3HxWcp7fq4N8YGr)  
-  [Nando de Freitas](http://youtube.com/playlist?list=PLE6Wd9FR--Ecf_5nCbnSQMHqORpiChfJf) (undergraduate)  
-  [Nando de Freitas](http://youtube.com/playlist?list=PLE6Wd9FR--EdyJ5lbFl8UuGjecvVw66F6) (graduate)  
-  [Alex Smola](http://youtube.com/playlist?list=PLZSO_6-bSqHTTV7w9u7grTXBHMH-mw3qn)  
-  [Trevor Hastie and Rob Tibshirani](http://dataschool.io/15-hours-of-expert-machine-learning-videos/)  
-  [Hal Daume](http://ciml.info)  
+  [course](https://youtube.com/playlist?list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN) by Andrew Ng `video` ([Coursera](http://coursera.org/learn/machine-learning))  
+  [course](http://youtube.com/playlist?list=PLE6Wd9FR--Ecf_5nCbnSQMHqORpiChfJf) by Nando de Freitas `video`  
+  [course](http://youtube.com/playlist?list=PLE6Wd9FR--EdyJ5lbFl8UuGjecvVw66F6) by Nando de Freitas `video`  
+  [course](http://youtube.com/playlist?list=PLTPQEx-31JXgtDaC6-3HxWcp7fq4N8YGr) by Pedro Domingos `video`  
+  [course](http://youtube.com/playlist?list=PLZSO_6-bSqHTTV7w9u7grTXBHMH-mw3qn) by Alex Smola `video`  
+  [course](http://dataschool.io/15-hours-of-expert-machine-learning-videos/) by Trevor Hastie and Rob Tibshirani `video`  
+  [course](https://youtube.com/playlist?list=PLD0F06AA0D2E8FFBA) by Jeff Miller `video`  
 
-  [Yandex](http://coursera.org/specializations/machine-learning-data-analysis/) `in russian`  
-  [OpenDataScience](https://github.com/Yorko/mlcourse_open) `in russian`  
-  [Konstantin Vorontsov](http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC) `in russian`  
-  [Igor Kuralenok](http://youtube.com/playlist?list=PLlb7e2G7aSpTd91sd82VxWNdtTZ8QnFne) `in russian`  
-  [Igor Kuralenok](http://youtube.com/playlist?list=PLlb7e2G7aSpSWVExpq74FnwFnWgLby56L) `in russian`  
-  [Igor Kuralenok](http://youtube.com/playlist?list=PLlb7e2G7aSpSSsCeUMLN-RxYOLAI9l2ld) `in russian`  
-  [Igor Kuralenok](http://lektorium.tv/course/22975) `in russian`  
+  [course](http://ciml.info) by Hal Daume
 
-  [Machine Learning Summer Schools](http://mlss.cc)  
+  [course](http://coursera.org/specializations/machine-learning-data-analysis/) by Yandex `video` `in russian`  
+  [course](https://github.com/Yorko/mlcourse_open) by OpenDataScience `video` `in russian`  
+  [course](http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC) by Konstantin Vorontsov `video` `in russian`  
+  [course](http://youtube.com/playlist?list=PLlb7e2G7aSpTd91sd82VxWNdtTZ8QnFne) by Igor Kuralenok `video` `in russian`  
+  [course](http://youtube.com/playlist?list=PLlb7e2G7aSpSWVExpq74FnwFnWgLby56L) by Igor Kuralenok `video` `in russian`  
+  [course](http://youtube.com/playlist?list=PLlb7e2G7aSpSSsCeUMLN-RxYOLAI9l2ld) by Igor Kuralenok `video` `in russian`  
+  [course](http://lektorium.tv/course/22975) by Igor Kuralenok `video` `in russian`  
 
 
 #### books
 
-  Pedro Domingos - ["The Master Algorithm"](http://basicbooks.com/full-details?isbn=9780465065707)  
-  Max Welling - ["A First Encounter with Machine Learning"](https://www.ics.uci.edu/~welling/teaching/ICS273Afall11/IntroMLBook.pdf)  
-  Ian Goodfellow, Yoshua Bengio, Aaron Courville - ["Deep Learning"](http://www.deeplearningbook.org)  
-  Richard Sutton, Andrew Barto - ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/sutton/book/ebook/the-book.html)
-	([second edition](http://incompleteideas.net/sutton/book/the-book-2nd.html))  
-  Tom Mitchell - ["Machine Learning"](https://goo.gl/tyNHMH)  
-  Shai Shalev-Shwartz, Shai Ben-David - ["Understanding Machine Learning: From Theory to Algorithms"](https://goo.gl/tHmsdD)  
-  Chris Bishop - ["Pattern Recognition and Machine Learning"](https://goo.gl/58Yvvp)  
-  Bradley Efron, Trevor Hastie - ["Computer Age Statistical Inference"](https://web.stanford.edu/~hastie/CASI_files/PDF/casi.pdf)  
-  Trevor Hastie, Robert Tibshirani, Jerome Friedman - ["The Elements of Statistical Learning"](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf)  
-  Kevin Murphy - ["Machine Learning - A Probabilistic Perspective"](https://goo.gl/Vh7Jje)  
-  David MacKay - ["Information Theory, Inference, and Learning Algorithms"](http://users.aims.ac.za/~mackay/itila/book.html)  
-  David Barber - ["Bayesian Reasoning and Machine Learning"](http://web4.cs.ucl.ac.uk/staff/D.Barber/pmwiki/pmwiki.php?n=Brml.Online)  
-  Mehryar Mohri - ["Foundations of Machine Learning"](http://www.cs.nyu.edu/~mohri/mlbook/)  
-  Ron Bekkerman, Mikhail Bilenko, John Langford - ["Scaling Up Machine Learning: Parallel and Distributed Approaches"](https://goo.gl/dE7jPb)  
+  ["The Master Algorithm"](http://basicbooks.com/full-details?isbn=9780465065707) by Pedro Domingos  
+  ["A First Encounter with Machine Learning"](https://www.ics.uci.edu/~welling/teaching/ICS273Afall11/IntroMLBook.pdf) by Max Welling  
+  ["Deep Learning"](http://www.deeplearningbook.org) by Ian Goodfellow, Yoshua Bengio, Aaron Courville  
+  ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/sutton/book/ebook/the-book.html)
+	([second edition](http://incompleteideas.net/sutton/book/the-book-2nd.html)) by Richard Sutton and Andrew Barto  
+  ["Machine Learning"](https://goo.gl/tyNHMH) by Tom Mitchell  
+  ["Understanding Machine Learning: From Theory to Algorithms"](https://goo.gl/tHmsdD) by Shai Shalev-Shwartz and Shai Ben-David  
+  ["Pattern Recognition and Machine Learning"](https://goo.gl/58Yvvp) by Chris Bishop  
+  ["Computer Age Statistical Inference"](https://web.stanford.edu/~hastie/CASI_files/PDF/casi.pdf) by Bradley Efron and Trevor Hastie  
+  ["The Elements of Statistical Learning"](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf) by Trevor Hastie, Robert Tibshirani, Jerome Friedman  
+  ["Machine Learning - A Probabilistic Perspective"](https://goo.gl/Vh7Jje) by Kevin Murphy  
+  ["Information Theory, Inference, and Learning Algorithms"](http://users.aims.ac.za/~mackay/itila/book.html) by David MacKay  
+  ["Bayesian Reasoning and Machine Learning"](http://web4.cs.ucl.ac.uk/staff/D.Barber/pmwiki/pmwiki.php?n=Brml.Online) by David Barber  
+  ["Foundations of Machine Learning"](http://www.cs.nyu.edu/~mohri/mlbook/) by Mehryar Mohri  
+  ["Scaling Up Machine Learning: Parallel and Distributed Approaches"](https://goo.gl/dE7jPb) by Ron Bekkerman, Mikhail Bilenko, John Langford  
 
 
 #### blogs
@@ -275,7 +272,6 @@
 
 
   ["Learning Theory: Purely Theoretical?"](https://hips.seas.harvard.edu/blog/2013/02/15/learning-theory-purely-theoretical/) by Jonathan Huggins  
-  ["Deep Learning and the Triumph of Empiricism"](http://kdnuggets.com/2015/07/deep-learning-triumph-empiricism-over-theoretical-mathematical-guarantees.html) by Zachary Lipton  
 
 
   ["Computational Learning Theory, AI and Beyond"](https://www.math.ias.edu/files/mathandcomp.pdf) chapter of "Mathematics and Computation" book by Avi Wigderson
@@ -284,12 +280,12 @@
   [introduction](https://mostafa-samir.github.io/ml-theory-pt1/) by Mostafa Samir  
 
   introduction by Jeremy Kun:  
-  ["Probably Approximately Correct - A Formal Theory of Learning"](http://jeremykun.com/2014/01/02/probably-approximately-correct-a-formal-theory-of-learning/)  
-  ["A Problem That is Not (Properly) PAC-learnable"](http://jeremykun.com/2014/04/21/an-un-pac-learnable-problem/)  
-  ["Occam’s Razor and PAC-learning"](http://jeremykun.com/2014/09/19/occams-razor-and-pac-learning/)  
+  - ["Probably Approximately Correct - A Formal Theory of Learning"](http://jeremykun.com/2014/01/02/probably-approximately-correct-a-formal-theory-of-learning/)  
+  - ["A Problem That is Not (Properly) PAC-learnable"](http://jeremykun.com/2014/04/21/an-un-pac-learnable-problem/)  
+  - ["Occam’s Razor and PAC-learning"](http://jeremykun.com/2014/09/19/occams-razor-and-pac-learning/)  
 
 
-  [course](http://work.caltech.edu/telecourse.html) by Yaser Abu-Mostafa  
+  [course](http://work.caltech.edu/telecourse.html) by Yaser Abu-Mostafa `video`  
   [course](https://blogs.princeton.edu/imabandit/2015/10/13/crash-course-on-learning-theory-part-1/) by Sebastien Bubeck  
   [course](https://web.stanford.edu/class/cs229t/Lectures/percy-notes.pdf) by Percy Liang  
 
@@ -408,18 +404,18 @@
 
 ----
 
+  ["The Three Cultures of Machine Learning"](https://www.cs.jhu.edu/~jason/tutorials/ml-simplex.html) by Jason Eisner  
+  ["Algorithmic Dimensions"](https://justindomke.wordpress.com/2015/09/14/algorithmic-dimensions/) by Justin Domke  
+  ["All Models of Learning have Flaws"](http://hunch.net/?p=224) by John Langford  
+
+----
+
   <http://en.wikipedia.org/wiki/List_of_machine_learning_algorithms>
 
-  <https://justindomke.wordpress.com/2015/09/14/algorithmic-dimensions/>  
-  <https://www.cs.jhu.edu/~jason/tutorials/ml-simplex.html>  
-
-  ["All Models of Learning have Flaws"](http://hunch.net/?p=224) by John Langford
+  <http://eferm.com/wp-content/uploads/2011/05/cheat3.pdf>  
+  <http://github.com/soulmachine/machine-learning-cheat-sheet/blob/master/machine-learning-cheat-sheet.pdf>  
 
   <http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html>  
-  <http://eferm.com/wp-content/uploads/2011/05/cheat3.pdf>  
-  <https://github.com/soulmachine/machine-learning-cheat-sheet/blob/master/machine-learning-cheat-sheet.pdf>  
-
-  <http://dataschool.io/comparing-supervised-learning-algorithms/>
 
 
 
@@ -432,6 +428,7 @@
 
   "In representation learning, the goal isn’t to make predictions about observables, but to learn a representation which would later help us to answer various queries. Sometimes the representations are meant for people, such as when we visualize data as a two-dimensional embedding. Sometimes they’re meant for machines, such as when the binary vector representations learned by deep Boltzmann machines are fed into a supervised classifier. In either case, what’s important is that mathematical operations map to the underlying relationships in the data in systematic ways."
 
+----
 
   ["What is representation learning?"](https://hips.seas.harvard.edu/blog/2013/02/25/what-is-representation-learning/) by Roger Grosse  
   ["Predictive learning vs. representation learning"](https://hips.seas.harvard.edu/blog/2013/02/04/predictive-learning-vs-representation-learning/) by Roger Grosse  
@@ -472,13 +469,16 @@
 
 ----
 
-  "For me there are two types of generalisation, which I will refer to as Symbolic and Connectionist generalisation. If we teach a machine to sort sequences of numbers of up to length 10 or 100, we should expect them to sort sequences of length 1000 say. Obviously symbolic approaches have no problem with this form of generalisation, but neural nets do poorly. On the other hand, neural nets are very good at generalising from data (such as images), but symbolic approaches do poorly here. One of the holy grails is to build machines that are capable of both symbolic and connectionist generalisation. Neural Programmer Interpreters is a very early step toward this. NPI can do symbolic operations such as sorting and addition, but it can also plan by taking images as input and it's able to generalise the plans to different images (e.g. in the NPI car example, the cars are test set cars not seen before)." *(Nando de Freitas)*
+  "For me there are two types of generalisation, which I will refer to as Symbolic and Connectionist generalisation. If we teach a machine to sort sequences of numbers of up to length 10 or 100, we should expect them to sort sequences of length 1000 say. Obviously symbolic approaches have no problem with this form of generalisation, but neural nets do poorly. On the other hand, neural nets are very good at generalising from data (such as images), but symbolic approaches do poorly here. One of the holy grails is to build machines that are capable of both symbolic and connectionist generalisation. Neural Programmer Interpreters is a very early step toward this. NPI can do symbolic operations such as sorting and addition, but it can also plan by taking images as input and it's able to generalise the plans to different images (e.g. in the NPI car example, the cars are test set cars not seen before)."
+
+  *(Nando de Freitas)*
 
 ----
 
   [inductive programming](https://en.wikipedia.org/wiki/Inductive_programming)
 
   ["Program Synthesis Explained"](http://homes.cs.washington.edu/~bornholt/post/synthesis-for-architects.html) by James Bornholt  
+  ["Inductive Programming Meets the Real World"](https://microsoft.com/en-us/research/publication/inductive-programming-meets-real-world/) by Gulwani et al.  
 
   ["Symbolic Machine Learning"](http://languagengine.co/blog/symbolic-machine-learning/) by Darryl McAdams  
   ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet  
@@ -488,12 +488,12 @@
   ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi) workshop at NIPS 2016
 	([videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt))  
   [panel](https://youtu.be/nqiUFc52g78?t=1h29m3s) at NAMPI workshop
-	with Percy Liang, Juergen Schmidhuber, Joshua Tenenbaum, Martin Vechev, Daniel Tarlow, Dawn Song  
+	with Percy Liang, Juergen Schmidhuber, Joshua Tenenbaum, Martin Vechev, Daniel Tarlow, Dawn Song `video`  
 
-  ["Learning to Code: Machine Learning for Program Induction"](https://youtu.be/vzDuVhFMB9Q?t=2m40s) by Alex Gaunt  
-  ["TerpreT: A Probabilistic Programming Language for Program Induction"](https://arxiv.org/abs/1608.04428) by Gaunt et al.  
+----
 
-  ["Inductive Programming Meets the Real World"](https://microsoft.com/en-us/research/publication/inductive-programming-meets-real-world/) by Gulwani et al.  
+  ["Learning to Code: Machine Learning for Program Induction"](https://youtu.be/vzDuVhFMB9Q?t=2m40s) by Alex Gaunt `video`  
+  ["TerpreT: A Probabilistic Programming Language for Program Induction"](https://arxiv.org/abs/1608.04428) by Gaunt et al. `paper`  
 
 ----
 
@@ -544,7 +544,7 @@
 
 ----
 
-  ["Automated Machine Learning"](https://youtube.com/watch?v=AFeozhAD9xE) by Andreas Mueller
+  ["Automated Machine Learning"](https://youtube.com/watch?v=AFeozhAD9xE) by Andreas Mueller `video`
 
   ["Automated Machine Learning: A Short History"](https://datarobot.com/blog/automated-machine-learning-short-history/) by Thomas Dinsmore
 
@@ -552,20 +552,24 @@
 
   ["AutoML for large scale image classification and object detection"](https://research.googleblog.com/2017/11/automl-for-large-scale-image.html) by Zoph et al.
 
-  [TPOT Data Science Assistant](http://rhiever.github.io/tpot/) project
+----
 
-  ["The Automatic Statistician"](https://youtu.be/H7AMB0oo__4?t=53m20s) by Zoubin Ghahramani ([slides](http://webdav.tuebingen.mpg.de/mlss2013/2015/slides/ghahramani/mlss15future.pdf))  
-  ["The Automatic Statistician: A project update"](https://youtube.com/watch?v=WW2eunuApAU) by Zoubin Ghahramani  
+  [TPOT](http://rhiever.github.io/tpot/) project
+
+  [auto_ml](http://auto-ml.readthedocs.io/en/latest/) project
+
+  [The Automatic Statistician](https://automaticstatistician.com) project  
+  - ["The Automatic Statistician"](https://youtu.be/H7AMB0oo__4?t=53m20s) by Zoubin Ghahramani `video`  
+  - ["The Automatic Statistician: A Project Update"](https://youtube.com/watch?v=WW2eunuApAU) by Zoubin Ghahramani `video`  
+
+  [BayesDB](http://probcomp.org/bayesdb/) project  
+  - [overview](https://youtube.com/watch?v=-8QMqSWU76Q) by Vikash Mansinghka `video`  
+  - ["BayesDB: Query the Probable Implications of Data"](https://youtube.com/watch?v=7_m7JCLKmTY) by Richard Tibbetts `video`  
 
 ----
 
-  [AutoML](http://automl.chalearn.org):  
+  [AutoML](http://automl.chalearn.org) challenge  
 >	"Design the perfect machine learning “black box” capable of performing all model selection and hyper-parameter tuning without any human intervention"  
-
-  [DARPA's Data-Driven Discovery of Models (D3M)](http://www.darpa.mil/news-events/2016-06-17):  
->	"The goal of D3M is to help overcome the data-science expertise gap by enabling non-experts to construct complex empirical models through automation of large parts of the model-creation process. If successful, researchers using D3M tools will effectively have access to an army of “virtual data scientists”."
-
->	"The construction of empirical models today is largely a manual process, requiring data experts to translate stochastic elements, such as weather and traffic, into models that engineers and scientists can then ask questions of. We have an urgent need to develop machine-based modeling for users with no data-science background. We believe it’s possible to automate certain aspects of data science, and specifically to have machines learn from prior example how to construct new models."
 
 ----
 
@@ -1015,8 +1019,8 @@
 
 >	"During last fifty years a strong machine learning theory has been developed. This theory includes: 1. The necessary and sufficient conditions for consistency of learning processes. 2. The bounds on the rate of convergence which in general cannot be improved. 3. The new inductive principle (SRM) which always achieves the smallest risk. 4. The effective algorithms, (such as SVM), that realize consistency property of SRM principle. It looked like general learning theory has been complied: it answered almost all standard questions that is asked in the statistical theory of inference. Meantime, the common observation was that human students require much less examples for training than learning machine. Why? The talk is an attempt to answer this question. The answer is that it is because the human students have an Intelligent Teacher and that Teacher-Student interactions are based not only on the brute force methods of function estimation from observations. Speed of learning also based on Teacher-Student interactions which have additional mechanisms that boost learning process. To learn from smaller number of observations learning machine has to use these mechanisms. In the talk I will introduce a model of learning that includes the so called Intelligent Teacher who during a training session supplies a Student with intelligent (privileged) information in contrast to the classical model where a student is given only outcomes y for events x. Based on additional privileged information x* for event x two mechanisms of Teacher-Student interactions (special and general) are introduced: 1. The Special Mechanism: To control Student's concept of similarity between training examples. and 2. The General Mechanism: To transfer knowledge that can be obtained in space of privileged information to the desired space of decision rules. Both mechanisms can be considered as special forms of capacity control in the universally consistent SRM inductive principle. Privileged information exists for almost any inference problem and can make a big difference in speed of learning processes."
 
-  - <https://video.ias.edu/csdm/2015/0330-VladimirVapnik> (Vapnik)
-  - <http://learningtheory.org/learning-has-just-started-an-interview-with-prof-vladimir-vapnik/>
+  - `video` <https://video.ias.edu/csdm/2015/0330-VladimirVapnik> (Vapnik)
+  - `press` <http://learningtheory.org/learning-has-just-started-an-interview-with-prof-vladimir-vapnik/>
 
 
 #### ["Compression and Machine Learning: A New Perspective on Feature Space Vectors"](http://www.eecs.tufts.edu/~dsculley/papers/compressionAndVectors.pdf) Sculley, Brodley
@@ -1041,30 +1045,22 @@
 
 >	"In the data programming approach to developing a machine learning system, the developer focuses on writing a set of labeling functions, which create a large but noisy training set. Snorkel then learns a generative model of this noise - learning, essentially, which labeling functions are more accurate than others - and uses this to train a discriminative classifier. At a high level, the idea is that developers can focus on writing labeling functions - which are just (Python) functions that provide a label for some subset of data points - and not think about algorithms or features!"
 
-  - <https://youtube.com/watch?v=iSQHelJ1xxU>
-  - <https://soundcloud.com/nlp-highlights/28-data-programming-creating-large-training-sets-quickly>
-  - <http://hazyresearch.github.io/snorkel/blog/weak_supervision.html>
-  - <http://hazyresearch.github.io/snorkel/blog/dp_with_tf_blog_post.html>
-  - <https://github.com/b12io/reading-group/blob/master/data-programming-snorkel.md>
-  - <https://github.com/HazyResearch/snorkel>
-  - ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](https://arxiv.org/abs/1703.05028) by Wu et al.
+  - `video` <https://youtube.com/watch?v=iSQHelJ1xxU>
+  - `post` <http://hazyresearch.github.io/snorkel/blog/weak_supervision.html>
+  - `post` <http://hazyresearch.github.io/snorkel/blog/dp_with_tf_blog_post.html>
+  - `audio` <https://soundcloud.com/nlp-highlights/28-data-programming-creating-large-training-sets-quickly> (Ratner)
+  - `notes` <https://github.com/b12io/reading-group/blob/master/data-programming-snorkel.md>
+  - `code` <https://github.com/HazyResearch/snorkel>
+  - `paper` ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](https://arxiv.org/abs/1703.05028) by Wu et al.
 
 
-#### [Socratic Learning: Empowering the Generative Model](http://arxiv.org/abs/1610.08123) Varma, He, Iter, Xu, Yu, De Sa, Re
+#### ["Socratic Learning: Empowering the Generative Model"](http://arxiv.org/abs/1610.08123) Varma et al.
 >	"A challenge in training discriminative models like neural networks is obtaining enough labeled training data. Recent approaches have leveraged generative models to denoise weak supervision sources that a discriminative model can learn from. These generative models directly encode the users' background knowledge. Therefore, these models may be incompletely specified and fail to model latent classes in the data. We present Socratic learning to systematically correct such generative model misspecification by utilizing feedback from the discriminative model. We prove that under mild conditions, Socratic learning can recover features from the discriminator that informs the generative model about these latent classes. Experimentally, we show that without any hand-labeled data, the corrected generative model improves discriminative performance by up to 4.47 points and reduces error for an image classification task by 80% compared to a state-of-the-art weak supervision modeling technique."
 
-  - <https://youtube.com/watch?v=0gRNochbK9c>
-  - <http://hazyresearch.github.io/snorkel/blog/socratic_learning.html>
-  - <https://github.com/HazyResearch/snorkel>
-  - ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](https://arxiv.org/abs/1703.05028) by Wu et al.
-
-
-#### ["Estimating Accuracy from Unlabeled Data"](http://auai.org/uai2014/proceedings/individuals/313.pdf) Platanios, Blum, Mitchell
->	"We consider the question of how unlabeled data can be used to estimate the true accuracy of learned classifiers. This is an important question for any autonomous learning system that must estimate its accuracy without supervision, and also when classifiers trained from one data distribution must be applied to a new distribution (e.g., document classifiers trained on one text corpus are to be applied to a second corpus). We first show how to estimate error rates exactly from unlabeled data when given a collection of competing classifiers that make independent errors, based on the agreement rates between subsets of these classifiers. We further show that even when the competing classifiers do not make independent errors, both their accuracies and error dependencies can be estimated by making certain relaxed assumptions. Experiments on two real-world data sets produce estimates within a few percent of the true accuracy, using solely unlabeled data. These results are of practical significance in situations where labeled data is scarce and shed light on the more general question of how the consistency among multiple functions is related to their true accuracies."
-
->	"Estimating accuracy of classifiers is central to machine learning and many other fields. Traditionally, one estimates accuracy of a function based on its performance over a set of labeled test examples. This paper considers the question of under what conditions is it possible to estimate accuracy based instead on unlabeled data. We show that accuracy can be estimated exactly from unlabeled data in the case that at least three different approximations to the same function are available, so long as these functions make independent errors and have better than chance accuracy. More interestingly, we show that even if one does not assume independent errors, one can still estimate accuracy given a sufficient number of competing approximations to the same function, by viewing the degree of independence of those approximations as an optimization criterion. We present experimental results demonstrating the success of this approach in estimating classification accuracies to within a few percentage points of their true value, in two diverse domains."
-
-  - <https://youtu.be/PF6ViL5pcGs?t=5m3s> (Mitchell)
+  - `video` <https://youtube.com/watch?v=0gRNochbK9c>
+  - `post` <http://hazyresearch.github.io/snorkel/blog/socratic_learning.html>
+  - `code` <https://github.com/HazyResearch/snorkel>
+  - `paper` ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](https://arxiv.org/abs/1703.05028) by Wu et al.
 
 
 
@@ -1075,13 +1071,11 @@
 #### ["Machine Learning: The High-Interest Credit Card of Technical Debt"](http://research.google.com/pubs/pub43146.html) Sculley et al.
 >	"Machine learning offers a fantastically powerful toolkit for building complex systems quickly. This paper argues that it is dangerous to think of these quick wins as coming for free. Using the framework of technical debt, we note that it is remarkably easy to incur massive ongoing maintenance costs at the system level when applying machine learning. The goal of this paper is highlight several machine learning specific risk factors and design patterns to be avoided or refactored where possible. These include boundary erosion, entanglement, hidden feedback loops, undeclared consumers, data dependencies, changes in the external world, and a variety of system-level anti-patterns."
 
-  - <http://john-foreman.com/blog/the-perilous-world-of-machine-learning-for-fun-and-profit-pipeline-jungles-and-hidden-feedback-loops>
+  - `post` <http://john-foreman.com/blog/the-perilous-world-of-machine-learning-for-fun-and-profit-pipeline-jungles-and-hidden-feedback-loops>
 
 
 #### ["TensorFlow: A system for large-scale machine learning"](https://arxiv.org/abs/1605.08695) Abadi et al.
 >	"TensorFlow is a machine learning system that operates at large scale and in heterogeneous environments. TensorFlow uses dataflow graphs to represent computation, shared state, and the operations that mutate that state. It maps the nodes of a dataflow graph across many machines in a cluster, and within a machine across multiple computational devices, including multicore CPUs, general-purpose GPUs, and custom designed ASICs known as Tensor Processing Units (TPUs). This architecture gives flexibility to the application developer: whereas in previous “parameter server” designs the management of shared state is built into the system, TensorFlow enables developers to experiment with novel optimizations and training algorithms. TensorFlow supports a variety of applications, with particularly strong support for training and inference on deep neural networks. Several Google services use TensorFlow in production, we have released it as an open-source project, and it has become widely used for machine learning research. In this paper, we describe the TensorFlow dataflow model in contrast to existing systems, and demonstrate the compelling performance that TensorFlow achieves for several real-world applications."
-
-  - <https://github.com/nlintz/TensorFlow-Tutorials>
 
 
 #### ["A Reliable Effective Terascale Linear Learning System"](http://arxiv.org/abs/1110.4198) Agarwal, Chapelle, Dudik, Langford
@@ -1096,22 +1090,16 @@
 >	 - Causation instead of correlation  
 >	 - Learn to control based on feedback"  
 
-  - <http://youtube.com/watch?v=wwlKkFhEhxE> (Langford)
   - <https://github.com/JohnLangford/vowpal_wabbit/wiki>
-  - "Bring The Noise: Embracing Randomness Is the Key to Scaling Up Machine Learning Algorithms" - <http://online.liebertpub.com/doi/pdf/10.1089/big.2013.0010>
+  - `video` <http://youtube.com/watch?v=wwlKkFhEhxE> (Langford)
+  - `paper` ["Bring The Noise: Embracing Randomness Is the Key to Scaling Up Machine Learning Algorithms"](http://online.liebertpub.com/doi/pdf/10.1089/big.2013.0010) by Brian Dalessandro
 
 
 #### ["Making Contextual Decisions with Low Technical Debt"](http://arxiv.org/abs/1606.03966) Agarwal et al.
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#making-contextual-decisions-with-low-technical-debt-agarwal-et-al>
 
 
-#### ["ICE: Enabling Non-Experts to Build Models Interactively for Large-Scale Lopsided Problems"](http://arxiv.org/abs/1409.4814) Simard et al.
->	"Quick interaction between a human teacher and a learning machine presents numerous benefits and challenges when working with web-scale data. The human teacher guides the machine towards accomplishing the task of interest. The learning machine leverages big data to find examples that maximize the training value of its interaction with the teacher. When the teacher is restricted to labeling examples selected by the machine, this problem is an instance of active learning. When the teacher can provide additional information to the machine (e.g., suggestions on what examples or predictive features should be used) as the learning task progresses, then the problem becomes one of interactive learning. To accommodate the two-way communication channel needed for efficient interactive learning, the teacher and the machine need an environment that supports an interaction language. The machine can access, process, and summarize more examples than the teacher can see in a lifetime. Based on the machine’s output, the teacher can revise the definition of the task or make it more precise. Both the teacher and the machine continuously learn and benefit from the interaction. We have built a platform to (1) produce valuable and deployable models and (2) support research on both the machine learning and user interface challenges of the interactive learning problem. The platform relies on a dedicated, low-latency, distributed, in-memory architecture that allows us to construct web-scale learning machines with quick interaction speed. The purpose of this paper is to describe this architecture and demonstrate how it supports our research efforts. Preliminary results are presented as illustrations of the architecture but are not the primary focus of the paper."
-
-  - used in Microsoft LUIS according to <http://arxiv.org/abs/1606.03966>
-
-
 #### ["Communication-Efficient Learning of Deep Networks from Decentralized Data"](https://arxiv.org/abs/1602.05629) McMahan, Moore, Ramage, Hampson, Arcas
 >	"Modern mobile devices have access to a wealth of data suitable for learning models, which in turn can greatly improve the user experience on the device. For example, language models can improve speech recognition and text entry, and image models can automatically select good photos. However, this rich data is often privacy sensitive, large in quantity, or both, which may preclude logging to the data center and training there using conventional approaches. We advocate an alternative that leaves the training data distributed on the mobile devices, and learns a shared model by aggregating locally-computed updates. We term this decentralized approach Federated Learning. We present a practical method for the federated learning of deep networks based on iterative model averaging, and conduct an extensive empirical evaluation, considering five different model architectures and four datasets. These experiments demonstrate the approach is robust to the unbalanced and non-IID data distributions that are a defining characteristic of this setting. Communication costs are the principal constraint, and we show a reduction in required communication rounds by 10-100x as compared to synchronized stochastic gradient descent."
 
-  - used in Android - <https://research.googleblog.com/2017/04/federated-learning-collaborative.html>
+  - `post` <https://research.googleblog.com/2017/04/federated-learning-collaborative.html>

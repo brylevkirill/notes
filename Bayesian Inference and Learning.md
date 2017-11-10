@@ -27,8 +27,6 @@
   ![(yet another) history of life as we know it...](http://www.brera.mi.astro.it/~andreon/inference/primate.png)  
   ["Inference, do you know it?"](http://www.brera.mi.astro.it/~andreon/inference/Inference.html) by Stefano Andreon  
 
-  [frequentist vs bayesian statistics](https://github.com/brylevkirill/notes/blob/master/Statistics.txt)
-
 ----
 
   "Probability is the representation of uncertain or partial knowledge about the truth of statements."
@@ -556,6 +554,7 @@
   overview of [role](https://youtube.com/watch?v=uyZOcUDhIbY&t=20m5s) and [applications](https://youtube.com/watch?v=uyZOcUDhIbY&t=58m) by Michael I. Jordan `video`  
   [overview](https://www.edge.org/conversation/judea_pearl-engines-of-evidence) by Judea Pearl  
 
+  ["Causality in Machine Learning"](http://unofficialgoogledatascience.com/2017/01/causality-in-machine-learning.html) by Muralidharan et al.  
   ["Latent Variables and Model Mis-specification"](https://jsteinhardt.wordpress.com/2017/01/10/latent-variables-and-model-mis-specification/) by Jacob Steinhardt  
 
   examples of implication of causality on decision making:  
@@ -598,6 +597,7 @@
   ["Discovering Causal Signals in Images"](https://arxiv.org/abs/1605.08179) by Lopez-Paz et al. `paper` ([talk](https://youtube.com/watch?v=DfJeaa--xO0) by Leon Bottou `video`)  
   ["Learning Representations for Counterfactual Inference"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#johansson-shalit-sontag---learning-representations-for-counterfactual-inference) by Johansson, Shalit, Sontag `paper`
 	([talk](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3) by Uri Shalit `video`)  
+  ["Causal Effect Inference with Deep Latent-Variable Models"](https://arxiv.org/abs/1705.08821) by Louizos et al. `paper`  
   ["Implicit Causal Models for Genome-wide Association Studies"](https://arxiv.org/abs/1710.10742) by Tran and Blei `paper`  
 
 ----
@@ -661,6 +661,10 @@
 >	"Increasingly complex generative models are being used across disciplines as they allow for realistic characterization of data, but a common difficulty with them is the prohibitively large computational cost to evaluate the likelihood function and thus to perform likelihood-based statistical inference. A likelihood-free inference framework has emerged where the parameters are identified by finding values that yield simulated data resembling the observed data. While widely applicable, a major difficulty in this framework is how to measure the discrepancy between the simulated and observed data. Transforming the original problem into a problem of classifying the data into simulated versus observed, we find that classification accuracy can be used to assess the discrepancy. The complete arsenal of classification methods becomes thereby available for inference of intractable generative models. We validate our approach using theory and simulations for both point estimation and Bayesian inference, and demonstrate its use on real data by inferring an individual-based epidemiological model for bacterial infections in child care centers."
 
 >	"At about the same time we first presented our work, Goodfellow et al (2014) proposed to use nonlinear logistic regression to train a neural network (Generative Adversarial Networks) such that it transforms “noise” samples into samples approximately following the same distribution as some given data set. The main difference to our work is that the method of Goodfellow et al (2014) is a method for producing random samples while ours is a method for statistical inference."
+
+
+#### ["AIDE: An Algorithm for Measuring the Accuracy of Probabilistic Inference Algorithms"](https://arxiv.org/abs/1705.07224) Cusumano-Towner, Mansinghka
+>	"Approximate probabilistic inference algorithms are central to many fields. Examples include sequential Monte Carlo inference in robotics, variational inference in machine learning, and Markov chain Monte Carlo inference in statistics. A key problem faced by practitioners is measuring the accuracy of an approximate inference algorithm on a specific data set. This paper introduces the auxiliary inference divergence estimator (AIDE), an algorithm for measuring the accuracy of approximate inference algorithms. AIDE is based on the observation that inference algorithms can be treated as probabilistic models and the random variables used within the inference algorithm can be viewed as auxiliary variables. This view leads to a new estimator for the symmetric KL divergence between the approximating distributions of two inference algorithms. The paper illustrates application of AIDE to algorithms for inference in regression, hidden Markov, and Dirichlet process mixture models. The experiments show that AIDE captures the qualitative behavior of a broad class of inference algorithms and can detect failure modes of inference algorithms that are missed by standard heuristics."
 
 
 

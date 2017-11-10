@@ -59,13 +59,10 @@
   - Joshua Tenenbaum  
 	["Building Machines That Learn like Humans"](https://youtube.com/watch?v=quPN7Hpk014) `video`  
 
+----
 
-  "What you wanted to know about AI" (informal) -
-	[first part](http://fastml.com/what-you-wanted-to-know-about-ai/) +
-	[second part](http://fastml.com/what-you-wanted-to-know-about-ai-part-ii/)
-
-
-  [introductory course](https://youtube.com/channel/UCHBzJsIcRIVuzzHVYabikTQ/videos) from UC Berkeley `video`  
+  [introductory course](https://youtube.com/channel/UCHBzJsIcRIVuzzHVYabikTQ/videos) by UC Berkeley `video`  
+  [notes on AI](http://frnsys.com/ai_notes/) by Francis Tseng  
 
 
 
@@ -695,7 +692,7 @@ following up conjectures suggested by analogies). Good mathematicians see analog
   - `code` <https://github.com/GoodAI/SummerCamp/tree/master/AIXIModule>
 
 
-#### ["Is there an Elegant Universal Theory of Prediction?"](http://arxiv.org/pdf/cs/0606070.pdf) Legg
+#### ["Is there an Elegant Universal Theory of Prediction?"](http://arxiv.org/abs/cs/0606070) Legg
 >	"Solomonoff induction is an elegant and extremely general model of inductive learning. It neatly brings together the philosophical principles of Occam’s razor, Epicurus’ principle of multiple explanations, Bayes theorem and Turing’s model of universal computation into a theoretical sequence predictor with astonishingly powerful properties. If theoretical models of prediction can have such elegance and power, one cannot help but wonder whether similarly beautiful and highly general computable theories of prediction are also possible.
 >	What we have shown here is that there does not exist an elegant constructive theory of prediction for computable sequences, even if we assume unbounded computational resources, unbounded data and learning time, and place moderate bounds on the Kolmogorov complexity of the sequences to be predicted. Very powerful computable predictors are therefore necessarily complex. We have further shown that the source of this problem is computable sequences which are extremely expensive to compute. While we have proven that very powerful prediction algorithms which can learn to predict these sequences exist, we have also proven that, unfortunately, mathematical analysis cannot be used to discover these algorithms due to problems of Goedel incompleteness.
 >	These results can be extended to more general settings, specifically to those problems which are equivalent to, or depend on, sequence prediction. Consider, for example, a reinforcement learning agent interacting with an environment. In each interaction cycle the agent must choose its actions so as to maximise the future rewards that it receives from the environment. Of course the agent cannot know for certain whether or not some action will lead to rewards in the future, thus it must predict these. Clearly, at the heart of reinforcement learning lies a prediction problem, and so the results for computable predictors presented in this paper also apply to computable reinforcement learners. More specifically, it follows that very powerful computable reinforcement learners are necessarily complex, and it follows that it is impossible to discover extremely powerful reinforcement learning algorithms mathematically."
@@ -821,7 +818,7 @@ following up conjectures suggested by analogies). Good mathematicians see analog
   - `video` <http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/> (Schmidhuber)
 
 
-#### ["PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem"](http://arxiv.org/pdf/1112.5309v2.pdf) Schmidhuber
+#### ["PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem"](http://arxiv.org/abs/1112.5309) Schmidhuber
 >	"Most of computer science focuses on automatically solving given computational problems. I focus on automatically inventing or discovering problems in a way inspired by the playful behavior of animals and humans, to train a more and more general problem solver from scratch in an unsupervised fashion. Consider the infinite set of all computable descriptions of tasks with possibly computable solutions. Given a general problem solving architecture, at any given time, the novel algorithmic framework PowerPlay searches the space of possible pairs of new tasks and modifications of the current problem solver, until it finds a more powerful problem solver that provably solves all previously learned tasks plus the new one, while the unmodified predecessor does not. Newly invented tasks may require to achieve a wow-effect by making previously learned skills more efficient such that they require less time and space. New skills may (partially) re-use previously learned skills. The greedy search of typical PowerPlay variants uses time-optimal program search to order candidate pairs of tasks and solver modifications by their conditional computational (time & space) complexity, given the stored experience so far. The new task and its corresponding task-solving skill are those first found and validated. This biases the search towards pairs that can be described compactly and validated quickly. The computational costs of validating new tasks need not grow with task repertoire size. Standard problem solver architectures of personal computers or neural networks tend to generalize by solving numerous tasks outside the self-invented training set; PowerPlay’s ongoing search for novelty keeps breaking the generalization abilities of its present solver. This is related to Goedel’s sequence of increasingly powerful formal theories based on adding formerly unprovable statements to the axioms without affecting previously provable theorems. The continually increasing repertoire of problem solving procedures can be exploited by a parallel search for solutions to additional externally posed tasks. PowerPlay may be viewed as a greedy but practical implementation of basic principles of creativity."
 
   - `video` <https://youtu.be/SAcHyzMdbXc?t=16m6s> (de Freitas)

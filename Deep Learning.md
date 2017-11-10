@@ -139,41 +139,28 @@
 
 ----
 
-  [theoretical motivations](http://rinuboney.github.io/2015/10/18/theoretical-motivations-deep-learning.html)  
+  ["The Holy Grail of Deep Learning: Modelling Invariances"](http://inference.vc/the-holy-gr/) by Ferenc Huszar  *(priors)*  
+  ["Representation Learning and the Information Bottleneck Approach"](http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/) by Ferenc Huszar  *(priors)*  
+  ["Regularization for Deep Learning: A Taxonomy"](https://arxiv.org/abs/1710.10686) by Kukacka et al.  *(priors)*  
 
-  [deep learning and priors for modelling invariances](http://inference.vc/the-holy-gr/)  
-  [representation learning and priors](http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/)  
-  [regularization](https://arxiv.org/abs/1710.10686)  
+  ["Bottoming Out"](http://argmin.net/2016/04/18/bottoming-out/) by Ben Recht  *(generalization)*  
+  ["Everything that Works Works Because it's Bayesian: Why Deep Nets Generalize?"](http://inference.vc/everything-that-works-works-because-its-bayesian-2/)  *(generalization)*  
 
-  [universal approximation theorem explained](http://neuralnetworksanddeeplearning.com/chap4.html)  
-  [overfitting and generalization](http://argmin.net/2016/04/18/bottoming-out/)  
-  [bayesian view of generalization](http://inference.vc/everything-that-works-works-because-its-bayesian-2/)  
-  [stability as foundation of learning](http://www.offconvex.org/2016/03/14/stability/)  
+  ["Back-propagation, An Introduction"](http://www.offconvex.org/2016/12/20/backprop/) by Sanjeev Arora and Tengyu Ma  *(gradient of loss function)*  
+  ["Calculus on Computational Graphs: Backpropagation"](http://colah.github.io/posts/2015-08-Backprop/) by Chris Olah  *(gradient of loss function)*  
+  ["Calculus and Backpropagation"](https://github.com/mtomassoli/papers/blob/master/backprop.pdf) by Massimiliano Tomassoli  *(gradient of loss function)*  
 
-  [back-propagation](http://www.offconvex.org/2016/12/20/backprop/)  
-  [calculus on computational graphs: backpropagation](http://colah.github.io/posts/2015-08-Backprop/)  
-  [calculus and backpropagation](https://github.com/mtomassoli/papers/blob/master/backprop.pdf)  
-  [automatic differentiation](https://timvieira.github.io/blog/post/2016/09/25/evaluating-fx-is-as-fast-as-fx/)  
+  ["The Zen of Gradient Descent"](http://mrtz.org/blog/the-zen-of-gradient-descent/) by Moritz Hardt  *(optimization of loss function)*  
+  ["An Overview of Gradient Descent Optimization Algorithms"](http://sebastianruder.com/optimizing-gradient-descent/) by Sebastian Ruder  *(optimization of loss function)*  
+  ["Why Momentum Really Works"](http://distill.pub/2017/momentum/) by Gabriel Goh  *(optimization of loss function)*  
+  ["Hessian Free Optimization"](http://andrew.gibiansky.com/blog/machine-learning/hessian-free-optimization/) by Andrew Gibiansky  *(optimization of loss function)*  
+  ["The Natural Gradient"](https://hips.seas.harvard.edu/blog/2013/01/25/the-natural-gradient/) by Nick Foti  *(optimization of loss function)*  
 
-  [gradient descent optimization](http://mrtz.org/blog/the-zen-of-gradient-descent/)  
-  [gradient descent algorithms](http://sebastianruder.com/optimizing-gradient-descent/)  
-  [why momentum really works](http://distill.pub/2017/momentum/)  
-  [Hessian free optimization](http://andrew.gibiansky.com/blog/machine-learning/hessian-free-optimization/)  
-  [natural gradient descent](https://hips.seas.harvard.edu/blog/2013/01/25/the-natural-gradient/)  
+  ["Transfer Learning - Machine Learning's Next Frontier"](http://ruder.io/transfer-learning/) by Sebastian Ruder  *(representation learning)*  
+  ["An Overview of Multi-Task Learning in Deep Neural Networks"](http://sebastianruder.com/multi-task/) by Sebastian Ruder  *(representation learning)*  
 
-  [statistical view of deep learning](http://blog.shakirm.com/2015/07/a-statistical-view-of-deep-learning-retrospective/)  
-
-  [connections with manifolds and topology](http://colah.github.io/posts/2014-03-NN-Manifolds-Topology/)  
-  [connections with functional programming](http://colah.github.io/posts/2015-09-NN-Types-FP/)  
-
-  [common misconceptions](http://stuartreid.co.za/misconceptions-about-neural-networks/)  
-
-  [transfer learning](http://sebastianruder.com/transfer-learning/)  
-  [multi-task learning](http://sebastianruder.com/multi-task/)  
-
-  [empiricism over theoretical mathematical guarantees](http://kdnuggets.com/2015/07/deep-learning-triumph-empiricism-over-theoretical-mathematical-guarantees.html)  
-  [deep learning and scientific process](http://mlg.eng.cam.ac.uk/yarin/blog_5058.html)  
-  [learn something harder](http://inference.vc/deep-learning-is-easy/)  
+  ["A Statistical View of Deep Learning: Retrospective"](http://blog.shakirm.com/2015/07/a-statistical-view-of-deep-learning-retrospective/) by Shakir Mohamed  
+  ["Deep Learning is Easy - Learn Something Harder"](http://inference.vc/deep-learning-is-easy/) by Ferenc Huszar  
 
 ----
 
@@ -267,6 +254,10 @@
 ### bayesian deep learning
 
   [papers and resources](#interesting-papers---bayesian-inference-and-learning)
+
+  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
+
+----
 
   ["Bayesian Reasoning and Deep Learning in Agent-based Systems"](https://youtube.com/watch?v=AggqBRdz6CQ) by Shakir Mohamed `video`  
   ["Is Bayesian Deep Learning the Most Brilliant Thing Ever"](https://youtube.com/watch?v=HumFmLu3CJ8) panel discussion `video`  
@@ -1151,6 +1142,7 @@
   - `notes` <https://theneuralperspective.com/2017/03/24/opening-the-black-box-of-deep-neural-networks-via-information/>
   - `notes` <https://reddit.com/r/MachineLearning/comments/60fhyb/r_opening_the_black_box_of_deep_neural_networks/df8jsbm/>
   - `press` <https://quantamagazine.org/new-theory-cracks-open-the-black-box-of-deep-learning-20170921>
+  - `post` <http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/>
   - `paper` ["Deep Learning and the Information Bottleneck Principle"](#tishby-zaslavsky---deep-learning-and-the-information-bottleneck-principle) by Tishby and Zaslavsky
 
 
