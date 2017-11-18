@@ -1,5 +1,5 @@
-  Knowledge Representation is organizing information in a way that computer can use to solve complex tasks.  
-  Reasoning is algebraically manipulating previously acquired knowledge in order to answer a new question.  
+  Knowledge Representation is transformation of information into computable form to solve problems.  
+  Reasoning is algebraic manipulation of previously acquired knowledge in order to solve problems.  
 
   How knowledge can be represented? How knowledge can be used? How knowledge can be acquired?
 
@@ -12,11 +12,11 @@
     - [probabilistic program](#knowledge-representation---probabilistic-program)
     - [distributed representations](#knowledge-representation---distributed-representations)
   * [reasoning](#reasoning)
-    - [neural architectures](#neural-architectures)
-    - [natural logic](#natural-logic)
-    - [formal logic](#formal-logic)
-    - [bayesian inference](#bayesian-inference)
-    - [commonsense reasoning](#commonsense-reasoning)
+    - [neural architectures](#reasoning---neural-architectures)
+    - [natural logic](#reasoning---natural-logic)
+    - [formal logic](#reasoning---formal-logic)
+    - [bayesian inference](#reasoning---bayesian-inference)
+    - [commonsense reasoning](#reasoning---commonsense-reasoning)
   * [machine reading benchmarks](#machine-reading-benchmarks)
   * [machine reading projects](#machine-reading-projects)
   * [interesting papers](#interesting-papers)
@@ -131,11 +131,17 @@
 ---
 ### knowledge representation
 
-  Knowledge Representation is organizing information in a way that computer can use to solve complex tasks.
+  Knowledge Representation is transformation of information into computable form to solve problems.
+
+  ["What Is a Knowledge Representation"](https://aaai.org/ojs/index.php/aimagazine/article/view/1029) by Davis, Shrobe, Szolovits `paper`
+
+  <https://en.wikipedia.org/wiki/Knowledge_representation_and_reasoning>
+
+----
 
   - [natural language](#knowledge-representation---natural-language)
   - [knowledge graph](#knowledge-representation---knowledge-graph)
-    * [description logic](#description-logic)
+    * [ontology](#ontology)
     * [relational learning](#relational-learning)
   - [probabilistic database](#knowledge-representation---probabilistic-database)
     * [Epistemological Database](#probabilistic-database---epistemological-database)
@@ -180,19 +186,19 @@
 ---
 ### knowledge representation - knowledge graph
 
-  - [description logic](#description-logic)  
+  - [ontology](#ontology)  
   - [relational learning](#relational-learning)  
 
 
 
 ---
-### description logic
+### ontology
 
-  [Resource Description Framework](https://github.com/brylevkirill/tech/tree/master/RDF) (RDF)
+  [overview](https://github.com/brylevkirill/tech/tree/master/RDF) of Resource Description Framework (RDF)
 
 ----
 
-  [Web Ontology Language](https://github.com/brylevkirill/tech/blob/master/RDF/OWL.txt) (OWL)
+  [overview](https://github.com/brylevkirill/tech/blob/master/RDF/OWL.txt) of Web Ontology Language (OWL)
 
   ["OWL: The Web Ontology Language"](https://youtube.com/watch?v=EXXIIlfqb0c) by Pavel Klinov `video`  
   ["Ontologies and Knowledge Representation"](https://lektorium.tv/course/22781) course by Boris Konev `video` `in russian`  
@@ -521,8 +527,10 @@
 
 ----
 
-  ["Markov Logic Networks for Natural Language Question Answering"](#markov-logic-networks-for-natural-language-question-answering-khot-balasubramanian-gribkoff-sabharwal-clark-etzioni) by Khot et al.  *(application to question answering by [AI2](#ai2-aristo))*  
-  ["Probabilistic Inference and Factor Graphs"](http://deepdive.stanford.edu/inference)  *(application to information extraction, integration and curation by [DeepDive](#deepdive))*  ([overview](http://deepdive.stanford.edu/inference))  
+  ["Markov Logic Networks for Natural Language Question Answering"](#markov-logic-networks-for-natural-language-question-answering-khot-balasubramanian-gribkoff-sabharwal-clark-etzioni) by Khot et al. `paper`
+	*(application to question answering by [AI2](#ai2-aristo))*  
+  ["Tuffy: Scaling up Statistical Inference in Markov Logic Networks using an RDBMS"](#tuffy-scaling-up-statistical-inference-in-markov-logic-networks-using-an-rdbms-niu-re-doan-shavlik) by Niu et al. `paper`
+	*(application to information extraction, integration and curation by [DeepDive](#deepdive))*  ([overview](http://deepdive.stanford.edu/inference))  
 
 ----
 
@@ -734,13 +742,15 @@
 ---
 ### reasoning
 
-  Reasoning is algebraically manipulating previously acquired knowledge in order to answer a new question.  
+  Reasoning is algebraic manipulation of previously acquired knowledge in order to solve problems.
 
-  - [neural architectures](#neural-architectures)
-  - [natural logic](#natural-logic)
-  - [formal logic](#formal-logic)
-  - [bayesian inference](#bayesian-inference)
-  - [commonsense reasoning](#commonsense-reasoning)
+----
+
+  - [neural architectures](#reasoning---neural-architectures)
+  - [natural logic](#reasoning---natural-logic)
+  - [formal logic](#reasoning---formal-logic)
+  - [bayesian inference](#reasoning---bayesian-inference)
+  - [commonsense reasoning](#reasoning---commonsense-reasoning)
 
   interesting papers:
   - [question answering over knowledge bases](#interesting-papers---question-answering-over-knowledge-bases)
@@ -750,8 +760,9 @@
   [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)
 
 
-----
-#### neural architectures
+
+---
+### reasoning - neural architectures
 
   "One of the main benefits in using neural networks is that they can be trained to handle very subtle kinds of logic that humans use in casual language that defy axiomatization. Propositional logic, first-order logic, higher-order logic, modal logic, nonmonotonic logic, probabilistic logic, fuzzy logic - none of them seem to quite be adequate; but if you use the right kind of recursive net, you don't even have to specify the logic to get it to make useful deductions, if you have enough training data."
 
@@ -771,6 +782,7 @@
   - How to properly evaluate reasoning models? Are artificial tasks a good way? Where do they break down and real tasks are needed?
   - Can we draw inspiration from how animal or human memories are stored and used?
 
+----
 
   "Many machine reading approaches, from shallow information extraction to deep semantic parsing, map natural language to symbolic representations of meaning. Representations such as first-order logic capture the richness of natural language and support complex reasoning, but often fail in practice due to their reliance on logical background knowledge and the difficulty of scaling up inference. In contrast, low-dimensional embeddings (i.e. distributional representations) are efficient and enable generalization, but it is unclear how reasoning with embeddings could support the full power of symbolic representations such as first-order logic."
 
@@ -796,9 +808,15 @@
 
   ["Cognitive Architectures"](https://machinethoughts.wordpress.com/2016/06/20/cognitive-architectures/) by David McAllester
 
-
 ----
-#### natural logic
+
+  [overview](https://youtube.com/watch?v=UAa2o0W7vcg) of difference between pattern matching and abstraction + reasoning by Francois Chollet `video`  
+  ["The Future of Deep Learning"](http://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34?t=11m43s) `video`)  
+
+
+
+---
+### reasoning - natural logic
 
   textual entailment: "Recognizing when the meaning of a text snippet is contained in the meaning of a second piece of text. This simple abstraction of an exceedingly complex problem has broad appeal partly because it can be conceived also as a component in other NLP applications. It also avoids commitment to any specific meaning representation and reasoning framework, broadening its appeal within the research community."
 
@@ -817,6 +835,7 @@
   - we make these types of inferences regularly and instantly
   - we expect readers to make these inferences instantly
 
+----
 
   [introduction](https://youtu.be/uAk152lIib0?t=25m51s) by Chris Manning `video`  
   ["Open Domain Inference with Natural Logic"](https://youtube.com/watch?v=EX1hKxePxkk) by Gabor Angeli `video`  
@@ -825,13 +844,18 @@
   ["Learning Distributed Word Representations for Natural Logic Reasoning"](https://goo.gl/CCofxS) by Bowman, Potts, Manning `slides`  
 
 
-----
-#### formal logic
 
-  [knowledge graph - description logic](#description-logic)
+---
+### reasoning - formal logic
+
+  [Description logic](https://en.wikipedia.org/wiki/Description_logic) is formal language to represent [ontologies](#ontology)
 
 
   ["Simply Logical - Intelligent Reasoning by Example"](https://www.cs.bris.ac.uk/~flach/SL/SL.pdf) by Peter Flach `book`
+
+----
+
+  ["Applying Deep Learning to Mathematical Reasoning"](https://youtube.com/watch?v=UAa2o0W7vcg) by Francois Chollet `video`
 
 
   "Quite reachable is deep automated semantic understanding of most of LaTeX-written mathematical textbooks. This has been blocked by three factors: (i) lack of annotated formal/informal corpora to train such semantic parsing on, (ii) lack of sufficiently large repository of background mathematical knowledge needed for “obvious-knowledge gap-filling”, and (iii) lack of sufficiently strong large-theory ATP that could fill the reasoning gaps using the large repository of background knowledge. One way to try to get them automatically is again through basic computer understanding of LaTeX-written mathematical texts, and learning what high-level concepts like “by analogy” and “using diagonalization” exactly semantically mean in various contexts. This is also related to the ability to reformulate problems and map them to a setting (for current ATPs, the best is purely equational) where the theorem proving becomes more easy. And another related work that needs to be done is “explaining back” the long ATP proofs using an understandable mathematical presentation."
@@ -839,18 +863,20 @@
   [*(Josef Urban)*](https://intelligence.org/2013/12/21/josef-urban-on-machine-learning-and-automated-reasoning/)
 
 
-----
-#### bayesian inference
+
+---
+### reasoning - bayesian inference
 
   [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
 
   [probabilistic programs](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-program)  *(bayesian models of cognition)*
 
-  [Solomonoff Induction and AIXI](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#solomonoff-induction-and-aixi)  *(bayesian optimal prediction and decision making)*
+  [Solomonoff induction and AIXI](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#solomonoff-induction-and-aixi)  *(bayesian optimal prediction and decision making)*
 
 
-----
-#### commonsense reasoning
+
+---
+### reasoning - commonsense reasoning
 
   "Humans have the capacity to draw commonsense inferences: things that are likely but not certain to hold based on established discourse and are rarely stated explicitly."  
   "A program has common sense if it automatically deduces for itself a sufficiently wide class of immediate consequences of anything it is told and what it already knows."  
@@ -863,6 +889,7 @@
 
   "A well-known example from Terry Winograd is the pair of sentences "The city council refused the demonstrators a permit because they feared violence," vs "... because they advocated violence." To determine that "they" in the first sentence refers to the council if the verb is "feared," but refers to the demonstrators if the verb is "advocated" demands knowledge about the characteristic relations of city councils and demonstrators to violence; no purely linguistic clue suffices."
 
+----
 
   "Cognitive Machine Learning" by Shakir Mohamed:  
   - ["Prologue"](http://blog.shakirm.com/2016/10/cognitive-machine-learning-prologue/)  
@@ -963,6 +990,8 @@
 
   <http://github.com/HazyResearch/snorkel>  
   <http://hazyresearch.github.io/snorkel/>  
+
+  [overview](https://youtube.com/watch?v=HmocI2b5YfA) by Chris Re `video`
 
 ----
 
@@ -1152,6 +1181,7 @@
   `Snorkel`
 >	"We introduce Fonduer, a knowledge base construction framework for richly formatted information extraction, where entity relations and attributes are conveyed via structural, tabular, visual, and textual expressions. Fonduer introduces a new programming model for KBC built around a unified data representation that accounts for three challenging characteristics of richly formatted data: (1) prevalent document-level relations, (2) multimodality, and (3) data variety. Fonduer is the first KBC system for richly formatted data and uses a human-in-the-loop paradigm for training machine learning systems, referred to as data programming. Data programming softens the burden of traditional supervision by only asking users to provide lightweight functions that programmatically assign (potentially noisy) labels to the input data. Fonduer’s unified data model, together with data programming, allows users to use domain expertise as weak signals of supervision that help guide the KBC process over richly formatted data. We evaluate Fonduer on four real-world applications over different domains and achieve an average improvement of 42 F1 points over the upper bound of state-of-the-art approaches. In some domains, our users have produced up to 1.87× the number of correct entires compared to expert-curated public knowledge bases. Fonduer scales gracefully to millions of documents and is used in both academia and industry to create knowledge bases for real-world problems in many domains."
 
+  - `video` <https://youtube.com/watch?v=HmocI2b5YfA> (Re)
   - `post` <https://hazyresearch.github.io/snorkel/blog/fonduer.html>
   - `code` <https://github.com/HazyResearch/snorkel/>
   - `paper` ["Data Programming"](https://github.com/brylevkirill/notes/blob/test/Machine%20Learning.md#data-programming-creating-large-training-sets-quickly-ratner-sa-wu-selsam-re) by Ratner et al.

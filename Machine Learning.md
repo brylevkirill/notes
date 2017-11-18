@@ -57,8 +57,7 @@
 
 ----
 
-  ["Machine Learning Basics"](http://www.deeplearningbook.org/contents/ml.html) by Ian Goodfellow, Yoshua Bengio, Aaron Courville  
-  ["Machine Learning for Humans"](https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12) by Vishal Maini  
+  ["Machine Learning Basics"](http://www.deeplearningbook.org/contents/ml.html) by Ian Goodfellow, Yoshua Bengio, Aaron Courville
 
 ----
 
@@ -107,7 +106,7 @@
 
   [course](http://ciml.info) by Hal Daume
 
-  [course](http://coursera.org/specializations/machine-learning-data-analysis/) by Yandex `video` `in russian`  
+  [course](http://coursera.org/specializations/machine-learning-data-analysis) by Yandex `video` `in russian`  
   [course](https://github.com/Yorko/mlcourse_open) by OpenDataScience `video` `in russian`  
   [course](http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC) by Konstantin Vorontsov `video` `in russian`  
   [course](http://youtube.com/playlist?list=PLlb7e2G7aSpTd91sd82VxWNdtTZ8QnFne) by Igor Kuralenok `video` `in russian`  
@@ -481,7 +480,7 @@
   ["Inductive Programming Meets the Real World"](https://microsoft.com/en-us/research/publication/inductive-programming-meets-real-world/) by Gulwani et al.  
 
   ["Symbolic Machine Learning"](http://languagengine.co/blog/symbolic-machine-learning/) by Darryl McAdams  
-  ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet  
+  ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34) `video`)  
 
 ----
 
@@ -494,6 +493,7 @@
 
   ["Learning to Code: Machine Learning for Program Induction"](https://youtu.be/vzDuVhFMB9Q?t=2m40s) by Alex Gaunt `video`  
   ["TerpreT: A Probabilistic Programming Language for Program Induction"](https://arxiv.org/abs/1608.04428) by Gaunt et al. `paper`  
+  ["Learning Explanatory Rules from Noisy Data"](https://arxiv.org/abs/1711.04574) by Evans and Grefenstette `paper`  
 
 ----
 
@@ -573,7 +573,7 @@
 
 ----
 
-  ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet
+  ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34?t=11m43s) `video`)
 
 ----
 
@@ -1046,12 +1046,14 @@
 >	"In the data programming approach to developing a machine learning system, the developer focuses on writing a set of labeling functions, which create a large but noisy training set. Snorkel then learns a generative model of this noise - learning, essentially, which labeling functions are more accurate than others - and uses this to train a discriminative classifier. At a high level, the idea is that developers can focus on writing labeling functions - which are just (Python) functions that provide a label for some subset of data points - and not think about algorithms or features!"
 
   - `video` <https://youtube.com/watch?v=iSQHelJ1xxU>
+  - `video` <https://youtube.com/watch?v=HmocI2b5YfA> (Re)
   - `post` <http://hazyresearch.github.io/snorkel/blog/weak_supervision.html>
   - `post` <http://hazyresearch.github.io/snorkel/blog/dp_with_tf_blog_post.html>
   - `audio` <https://soundcloud.com/nlp-highlights/28-data-programming-creating-large-training-sets-quickly> (Ratner)
   - `notes` <https://github.com/b12io/reading-group/blob/master/data-programming-snorkel.md>
   - `code` <https://github.com/HazyResearch/snorkel>
   - `paper` ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](https://arxiv.org/abs/1703.05028) by Wu et al.
+  - [Snorkel](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#snorkel) project
 
 
 #### ["Socratic Learning: Empowering the Generative Model"](http://arxiv.org/abs/1610.08123) Varma et al.
@@ -1061,6 +1063,7 @@
   - `post` <http://hazyresearch.github.io/snorkel/blog/socratic_learning.html>
   - `code` <https://github.com/HazyResearch/snorkel>
   - `paper` ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](https://arxiv.org/abs/1703.05028) by Wu et al.
+  - [Snorkel](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#snorkel) project
 
 
 

@@ -287,6 +287,10 @@
 ---
 ### inference and learning
 
+  Imagine you have a distribution p(x) and you want to compute the integral ∫p(x)F(x)dx for some function F(x) of interest. We call the computation of this integral as inference. Examples include Bayesian inference where now p(x) is some posterior distribution and F(x) is the likelihood function of x on unseen data. Or if p(x) is unnormalised, taking F(x)=1 would return the integral as the normalising constant (or partition function) of p. Unfortunately for many complicated models we are fancy on now (say neural networks) this integral is intractable, and here intractability means you can't compute the exact value of the integral due to computational constraints (say running time, memory usage, precision, etc). So instead we use approximate inference to approximate that integral. There are mainly two ways to do approximate inference: directly approximating the integral you want, or, finding an accurate approximation q to the target distribution p and using it for integration later. The first approach is mainly dominated by Monte Carlo methods while the second one is dominated by variational inference methods.
+
+----
+
   - [expectation maximization](#expectation-maximization)
   - [variational inference](#variational-inference)
   - [monte carlo methods](#monte-carlo-methods)
@@ -298,8 +302,9 @@
 ---
 ### expectation maximization
 
-  "EM algorithm estimates parameters of model iteratively, starting from some initial guess. Each iteration consists of Expectation step, which finds distribution for unobserved variables, given known values for observed variables and current estimate of parameters, and Maximization step, which re-estimates the parameters with maximum likelihood, under assumption that distribution found on E step is correct."
+  EM algorithm estimates parameters of model iteratively, starting from some initial guess. Each iteration consists of Expectation step, which finds distribution for unobserved variables, given known values for observed variables and current estimate of parameters, and Maximization step, which re-estimates the parameters with maximum likelihood, under assumption that distribution found on E step is correct.
 
+----
 
   [introduction](https://youtu.be/PpX6hllPVLs?t=1h1m22s) by Alex Smola `video`
 
@@ -345,6 +350,8 @@
 
   Variational inference is an umbrella term for algorithms which cast Bayesian inference as optimization.
 
+  Variational inference approximates Bayesian posterior distribution over a set of latent variables W by optimising the evidence lower bound (ELBO) L(q) = Eq(W)[log p(Y|X,W)] − DKL(q(W)||p(W)) with respect to approximate posterior q(W).
+
 ----
 
   [introduction](https://youtu.be/yzNbaAPKXA8?t=19m45s) by Zoubin Ghahramani `video`  
@@ -365,7 +372,6 @@
 
   ["Reparametrization Trick: Revolution in Stochastic Computational Graphs"](https://youtu.be/0q5p7xP4cdA?t=5h3m29s)
 	by Dmitry Vetrov `video` `in russian` ([slides](https://sdsj.ru/slides/Vetrov.pdf) `in english`)  
-  "Stochastic Computation Graphs" by Artem Sobolev ([slides](http://slides.com/asobolev/stochastic-computation-graphs#/))  
   [overview](https://youtu.be/tqGEX_Ucu04?t=48m42s) of alternatives to variational inference by Dmitry Molchanov `video` `in russian`  
 
 ----
@@ -376,10 +382,6 @@
   - ["Blackbox Mode"](http://artem.sobolev.name/posts/2016-07-05-neural-variational-inference-blackbox.html)  
   - ["Variational Autoencoders and Helmholtz machines"](http://artem.sobolev.name/posts/2016-07-11-neural-variational-inference-variational-autoencoders-and-Helmholtz-machines.html)  
   - ["Importance Weighted Autoencoders"](http://artem.sobolev.name/posts/2016-07-14-neural-variational-importance-weighted-autoencoders.html)  
-
-  ["Stochastic Computation Graphs"](http://artem.sobolev.name/tags/stochastic%20computation%20graphs%20series.html) by Artem Sobolev:  
-  - ["Continuous Case"](http://artem.sobolev.name/posts/2017-09-10-stochastic-computation-graphs-continuous-case.html)  
-  - ["Discrete Relaxations"](http://artem.sobolev.name/posts/2017-10-28-stochastic-computation-graphs-discrete-relaxations.html)  
 
 ----
 
@@ -486,12 +488,23 @@
 
   LR estimator suffers from high variance because expectation is with respect to q and because q depends on the parameters with respect to which differentiating is performed.
 
+----
+#### stochastic computation graphs
+
+  ["Stochastic Computation Graphs"](https://youtube.com/watch?v=_JTu50iDhkA) by Artem Sobolev ([slides](http://slides.com/asobolev/stochastic-computation-graphs#/))
+
+  ["Stochastic Computation Graphs"](http://artem.sobolev.name/tags/stochastic%20computation%20graphs%20series.html) by Artem Sobolev:  
+  - ["Continuous Case"](http://artem.sobolev.name/posts/2017-09-10-stochastic-computation-graphs-continuous-case.html)  
+  - ["Discrete Relaxations"](http://artem.sobolev.name/posts/2017-10-28-stochastic-computation-graphs-discrete-relaxations.html)  
+
 
 
 ---
 ### monte carlo inference
 
-  "Monte Carlo methods are a diverse class of algorithms that rely on repeated random sampling to compute the solution to problems whose solution space is too large to explore systematically or whose systemic behavior is too complex to model."
+  Monte Carlo methods are a diverse class of algorithms that rely on repeated random sampling to compute the solution to problems whose solution space is too large to explore systematically or whose systemic behavior is too complex to model.
+
+----
 
   ["Why is it hard to directly sample from certain statistical distributions"](https://quora.com/Why-is-it-hard-to-directly-sample-from-certain-statistical-distributions#!n=12)
 
@@ -522,12 +535,13 @@
 ---
 ### likelihood-free inference
 
-  "Some statistical models are specified via data generating process for which likelihood function is intractable and cannot be evaluated numerically in a practical time."  
-   Standard likelihood-based inference is then not feasible but model parameters can be inferred by finding values which yield simulated data that resemble observed data."  
+  Some statistical models are specified via data generating process for which likelihood function is intractable and cannot be evaluated numerically in a practical time.  
+  Standard likelihood-based inference is then not feasible but model parameters can be inferred by finding values which yield simulated data that resemble observed data.  
 
+----
 
-  [introduction](https://casmls.github.io/general/2016/10/02/abc.html) by Scott Linderman  
-  [introduction](http://dennisprangle.github.io/research/2016/06/07/bayesian-inference-by-neural-networks) by Dennis Prangle  
+  [overview](http://dennisprangle.github.io/research/2016/06/07/bayesian-inference-by-neural-networks) by Dennis Prangle  
+  [overview](https://casmls.github.io/general/2016/10/02/abc.html) by Scott Linderman  
 
   ["Machine Learning and Likelihood-Free Inference in Particle Physics"](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Machine-Learning-and-Likelihood-Free-Inference-in-Particle-Physics) by Kyle Cranmer `video`  
 
@@ -545,7 +559,7 @@
 ---
 ### causal inference
 
-  "Causal inference is the problem of uncovering the cause-effect relationships between the variables of a data generating system. Causal structures provide understanding about how this process will behave under changing, unseen environments. In turn, knowledge about these causal dynamics allows to answer "what if" questions, describing the potential responses of the system under hypothetical manipulations and interventions."
+  Causal inference is the problem of uncovering the cause-effect relationships between the variables of a data generating system. Causal structures provide understanding about how this process will behave under changing, unseen environments. In turn, knowledge about these causal dynamics allows to answer "what if" questions, describing the potential responses of the system under hypothetical manipulations and interventions.
 
   "What if some railways are closed, what will passengers do? What if we incentivize a member of a social network to propagate an idea, how influential can they be? What if some genes in a cell are knocked-out, which phenotypes can we expect? Such questions need to be addressed via a combination of experimental and observational data, and require a careful approach to modelling heterogeneous datasets and structural assumptions concerning the causal relations among the components of the system."
 
@@ -703,6 +717,7 @@
   - `video` <http://youtube.com/watch?v=kzl8Bn4VtR8> (Lake)
   - `video` <http://techtalks.tv/talks/one-shot-learning-of-simple-fractal-concepts/63049/> (Lake)
   - `video` <http://youtu.be/quPN7Hpk014?t=21m5s> (Tenenbaum)
+  - `notes` <https://casmls.github.io/general/2017/02/08/oneshot.html>
   - `code` <https://github.com/brendenlake/BPL>
 
 

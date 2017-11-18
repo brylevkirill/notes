@@ -43,8 +43,8 @@
   [overview](http://youtube.com/watch?v=zaoL0LUctK4) by Yann LeCun `video`  
   [overview](http://youtube.com/watch?v=11rsu_WwZTc) by Yoshua Bengio `video`  
 
-  ["The Limitations of Deep Learning"](http://blog.keras.io/the-limitations-of-deep-learning.html) by Francois Chollet  
-  ["The Future of Deep Learning"](http://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet  
+  ["The Limitations of Deep Learning"](http://blog.keras.io/the-limitations-of-deep-learning.html) by Francois Chollet ([talk](https://youtube.com/watch?v=MUF32XHqM34) `video`)  
+  ["The Future of Deep Learning"](http://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34?t=11m43s) `video`)  
 
   [interesting quotes](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#interesting-quotes)
 
@@ -526,6 +526,8 @@
 
   [papers and resources](#interesting-papers---generative-adversarial-networks)
 
+  ["Deep Generative Models"](http://www.deeplearningbook.org/contents/generative_models.html) chapter (section 20.10.4) of "Deep Learning" book by Goodfellow, Bengio, Courville
+
   [introduction](https://youtu.be/5WoItGTWV54?t=51m14s) by Serena Yeung `video`
 
   ["NIPS 2016 Tutorial: Generative Adversarial Networks"](https://arxiv.org/abs/1701.00160) by Ian Goodfellow `paper`  
@@ -629,6 +631,8 @@
 
   [papers and resources](#interesting-papers---variational-autoencoder)
 
+  ["Deep Generative Models"](http://www.deeplearningbook.org/contents/generative_models.html) chapter (section 20.10.3) of "Deep Learning" book by Goodfellow, Bengio, Courville
+
   [introduction](https://youtu.be/5WoItGTWV54?t=19m58s) by Serena Yeung `video`  
 
   [tutorial](http://arxiv.org/abs/1606.05908) by Carl Doersch `paper` ([code](https://github.com/cdoersch/vae_tutorial))  
@@ -699,6 +703,8 @@
 
   [papers and resources](#interesting-papers---autoregressive-models)
 
+  ["Deep Generative Models"](http://www.deeplearningbook.org/contents/generative_models.html) chapter (sections 20.10.7-20.10.10) of "Deep Learning" book by Goodfellow, Bengio, Courville
+
   [introduction](https://youtu.be/5WoItGTWV54?t=9m12s) by Serena Yeung `video`  
 
   ["Generative Modelling as Sequence Learning"](https://youtube.com/watch?v=leu286ciQcE) by Nal Kalchbrenner `video`  
@@ -723,6 +729,8 @@
 
 ---
 ### generative models - restricted boltzmann machine
+
+  ["Structured Probabilistic Models for Deep Learning"](http://www.deeplearningbook.org/contents/generative_models.html) chapter (section 16.7.1) of "Deep Learning" book by Goodfellow, Bengio, Courville
 
   ["The Miracle of the Boltzmann Machine"](https://theneural.wordpress.com/2011/07/08/the-miracle-of-the-boltzmann-machine/) by Ilya Sutskever  
   ["Undirected Models are Better at Sampling"](https://theneural.wordpress.com/2011/07/17/undirected-models-are-better-at-sampling/) by Ilya Sutskever  
@@ -1019,7 +1027,7 @@
 
 ----
 
-  [neural architectures for reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#neural-architectures)  
+  [neural architectures for reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---neural-architectures)
 
 ----
 
@@ -1132,17 +1140,31 @@
 >	"
 
 ----
+
+>	"We gave two independent theoretical arguments on why compression of representation dramatically improves generalization, and how stochastic relaxation, due to either noise of the SGD, OR a noisy training energy surface effectively adds noise also to BGD push the weights distribution to a Gibbs measure in the training error (this is an old argument we use in our statistical mechanics of learning papers 25 years ago, and is used today by many others, e.g. Tommy Poggio). Then we show that this weight Gibbs distribution leads directly (essentially through Bayes rule) to the IB optimal encoder of the layers."
+
+>	"We also showed some of newer simulations, which include much larger and different problems (MNIST, Cifar-10, different architectures, CNN, etc.), including ReLU non-linearities and linear Networks. In all these networks we see essentially the same picture: the last hidden layer first improves generalization error (which is actually proved to be directly bounded by the mutual information on Y) by fitting the training data and adding more information on the inputs, and then further improve generalization by compressing the representation and “forget” the irrelevant details of the inputs. During both these phases of learning the information on the relevant components of the input increases monotonically. You can of course have compression without generalization, when the training size is too small and one can’t keep the homogeneity of the cover."
+
+>	"We also showed that there are clearly and directly two phases of the gradients distribution. First, high SNR gradients follow by a sharp flip to low SNR gradients, which correspond to the slow saturation of the training error. This clear gradients phase transition, which we see with all types of non-linearities and architectures, beautifully corresponds to the “knee” between memorization and compression in the information plane. This can easily be explained as done by Poggio in his theory 3 paper, or by more complicated calculations by Riccardo Zecchina and his coworkers using statistical mechanics."
+
+----
+>	"For representation Z, maximizing mutual information with the output while minimizing mutual information with the input."
+
 >	"The general result is that networks go through two phases of learning. In retrospect, this is kind of obvious to anyone that's trained neural networks in practice. There is typically a short phase where it makes rapid progress, followed by a much longer phase of "fine tuning". The real contribution of this paper is showing that these stages correspond to a phase change in how the mutual information of the encoder/decoder distributions of each layer change. The first stage is when each layer is learning to do its fair share of information preservation. During this stage, mutual information between each layer's representation and the input/output increases to the point that the network's representation in the information plane is more or less linear. All this means is that information loss/gain from layer to layer is approximately constant, so in a sense no layer is doing more work than others. The second phase consists of continuing to maximizing the mutual information between each layer and the output, but now at the expense of the mutual information between each layer and the input. This is in contrast to the first stage where both quantities were being maximized in. In other words, each layer is now learning to prioritize information that is important for the task at hand."
 
->	"For representation Z, maximizing mutual information with the output while minimizing mutual information with the input."
+>	"Authors describe SGD as having two distinct phases, a drift phase and a diffusion phase. SGD begins in the first phase, basically exploring the multidimensional space of solutions. When it begins converging, it arrives at the diffusion phase where it is extremely chaotic and the convergence rate slows to a crawl. An intuition of what’s happening in this phase is that the network is learning to compress. That is, the behavior makes a phase transition from high mean with low variance to one with a low mean but high variance. This provides further explanation to Smith et. al’s observations, that in the region near convergence, it is highly chaotic. This of course does not fully explain why a high learning rate will knock the system into a place of high loss."
 
   - `video` <https://youtube.com/watch?v=bLqJHjXihK8> (Tishby)
   - `video` <https://youtube.com/watch?v=ekUWO_pI2M8> (Tishby)
   - `video` <https://youtu.be/RKvS958AqGY?t=12m7s> (Tishby)
+  - `post` <https://weberna.github.io/jekyll/update/2017/11/08/Information-Bottleneck-Part1.html>
+  - `post` <http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/>
+  - `post` <https://medium.com/intuitionmachine/the-peculiar-behavior-of-deep-learning-loss-surfaces-330cb741ec17>
+  - `notes` <https://blog.acolyer.org/2017/11/15/opening-the-black-box-of-deep-neural-networks-via-information-part-i/>
+  - `notes` <https://blog.acolyer.org/2017/11/16/opening-the-black-box-of-deep-neural-networks-via-information-part-ii/>
   - `notes` <https://theneuralperspective.com/2017/03/24/opening-the-black-box-of-deep-neural-networks-via-information/>
   - `notes` <https://reddit.com/r/MachineLearning/comments/60fhyb/r_opening_the_black_box_of_deep_neural_networks/df8jsbm/>
   - `press` <https://quantamagazine.org/new-theory-cracks-open-the-black-box-of-deep-learning-20170921>
-  - `post` <http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/>
   - `paper` ["Deep Learning and the Information Bottleneck Principle"](#tishby-zaslavsky---deep-learning-and-the-information-bottleneck-principle) by Tishby and Zaslavsky
 
 
@@ -1316,6 +1338,7 @@ Yoshua Bengio:
   - `video` <http://videolectures.net/deeplearning2017_johnson_graphical_models/> (Johnson)
   - `video` <https://youtube.com/watch?v=vnO3w8OgTE8> (Duvenaud)
   - `slides` <http://www.cs.toronto.edu/~duvenaud/courses/csc2541/slides/svae-slides.pdf>
+  - `notes` <https://casmls.github.io/general/2016/12/11/SVAEandfLDS.html>
   - `code` <http://github.com/mattjj/svae>
 
 
@@ -1325,6 +1348,7 @@ Yoshua Bengio:
   - `video` <http://youtube.com/watch?v=TpmoQ_j3Jv4> (demo)
   - `video` <http://techtalks.tv/talks/one-shot-generalization-in-deep-generative-models/62365/>
   - `video` <https://youtu.be/XpIDCzwNe78?t=43m> (Bartunov)
+  - `notes` <https://casmls.github.io/general/2017/02/08/oneshot.html>
 
 
 #### ["Towards a Neural Statistician"](http://arxiv.org/abs/1606.02185) Edwards, Storkey
@@ -1371,6 +1395,7 @@ Yoshua Bengio:
 
   - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods> (1:05:06) (Mohamed)
   - `video` <https://youtu.be/tqGEX_Ucu04?t=33m58s> (Molchanov) `in russian`
+  - `post` <https://casmls.github.io/general/2016/09/25/normalizing-flows.html>
   - `post` <https://ferrine.github.io/blog/2017/07/11/normalizing-flows-overview/>
   - `code` <https://github.com/pymc-devs/pymc3/blob/master/pymc3/variational/flows.py>
 
@@ -1459,6 +1484,7 @@ Yoshua Bengio:
   - `post` <http://mlg.eng.cam.ac.uk/yarin/blog_3d801aa532c1ce.html> (Gal)
   - `post` <http://mlg.eng.cam.ac.uk/yarin/blog_2248.html> (Gal)
   - `post` <http://www.computervisionblog.com/2016/06/making-deep-networks-probabilistic-via.html>
+  - `notes` <https://casmls.github.io/general/2016/11/11/dropout.html>
   - `notes` <https://www.evernote.com/shard/s189/sh/0b46fb48-dd1a-4e3b-ac5c-289f4925ff7e/3f0f03231757ded363b42ce71ebfcc70> (Larochelle)
   - `notes` <https://plus.google.com/u/0/+AnkurHanda/posts/DnXB81efTwa>
   - `code` <https://github.com/yaringal/DropoutUncertaintyExps>
@@ -1489,6 +1515,8 @@ Yoshua Bengio:
 
 >	"One of the most popular recent suggestions has been to use dropout sampling (where individual neurons are independently set to zero with probability p) to “get uncertainty information from these deep learning models for free – without changing a thing”. Unfortunately, as we now show, dropout sampling can be better thought of as an approximation to the risk in y, rather than the uncertainty of the learned model. Further, using a fixed dropout rate p, rather than optimizing this variational parameter can lead an arbitrarily bad approximation to the risk."
 
+>	"The resulting “dropout posterior” can have arbitrarily small or large variance depending on the interaction between the dropout rate p and the model size K".
+
 >	"We extend the analysis to linear functions and argue that this behavior also carries over to deep learning; extensive computational results support this claim. We investigate the importance of risk and uncertainty in sequential decision problems and why this setting is crucially distinct from standard supervised learning tasks. We highlight the dangers of a naive applications of dropout (or any other approximate risk measure) as a proxy for uncertainty."
 
 >	"We present analytical regret bounds for algorithms based upon smoothed bootstrapped uncertainty estimates that complement their strong performance in complex nonlinear domains."
@@ -1496,6 +1524,14 @@ Yoshua Bengio:
 ----
   Yarin Gal:  
 >	"One technique to estimate model uncertainty uses an ensemble of deterministic models, meaning that each model in the ensemble produces a point estimate rather than a distribution. It works by independently training many randomly initialised instances of a model on the same dataset (or different random subsets in the case of bootstrapping), and given an input test point, evaluating the sample variance of the outputs from all deterministic models. Even though this approach is more computationally efficient than many Bayesian approaches to model uncertainty (apart from the need to represent the parameters of multiple models), its produced uncertainty estimates lack in many ways as explained in the next illustrative example. To see this, let’s see what would happen if each deterministic model were to be given by an RBF network (whose predictions coincide with the predictive mean of a Gaussian process with a squared-exponential covariance function). An RBF network predicts zero for test points far from the training data. This means that in an ensemble of RBF networks, each and every network will predict zero for a given test point far from the training data. As a result, the sample variance of this technique will be zero at the given test point. The ensemble of models will have very high confidence in its prediction of zero even though the test point lies far from the data! This limitation can be alleviated by using an ensemble of probabilistic models instead of deterministic models. Even though the RBF network’s predictions coincide with the predictive mean of the SE Gaussian process, by using a Gaussian process we could also make use of its predictive variance. The Gaussian process predictions far from the training data will have large model uncertainty. In the ensemble, we would thus wish to take into account each model’s confidence as well as its mean (by sampling an output from each model’s predictive distribution before calculating our sample variance)."
+
+----
+  Ian Osband:  
+>	"- There is a difference between the posterior distribution for an outcome, and your posterior distribution for what you think is the mean of an outcome.  
+>	- Both of these can be very useful, but since these distributions can be very different you need to pick which type you are approximating. If you want to do Thompson sampling for exploration you should sample over the right thing.  
+>	- Something feels a strange about a Bayesian posterior that doesn't concentrate with more data."  
+
+  - <https://reddit.com/r/MachineLearning/comments/7bm4b2/d_what_is_the_current_state_of_dropout_as/dpjc07g/>
 
 
 #### ["Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles"](https://arxiv.org/abs/1612.01474) Lakshminarayanan, Pritzel, Blundell
@@ -1805,6 +1841,7 @@ x."
   - `video` <https://youtu.be/xFCuXE1Nb8w?t=26m55s> (Nowozin)
   - `video` <https://youtu.be/m80Vp-jz-Io?t=1h28m34s> (Tolstikhin)
   - `post` <http://inference.vc/variational-inference-with-implicit-models-part-ii-amortised-inference-2/>
+  - `notes` <https://casmls.github.io/general/2017/02/23/modified-gans.html>
   - `code` <https://github.com/wiseodd/generative-models/tree/master/VAE/adversarial_vb>
   - `code` <https://gist.github.com/poolio/b71eb943d6537d01f46e7b20e9225149>
 
@@ -1856,6 +1893,7 @@ x."
   - `video` <http://www.fields.utoronto.ca/video-archive/2017/01/2267-16372> (Larochelle)
   - `video` <http://videolectures.net/deeplearning2015_larochelle_deep_learning/> (Larochelle)
   - `post` <http://inference.vc/masked-autoencoders-icml-paper-highlight/>
+  - `notes` <https://casmls.github.io/general/2016/11/19/MADENADE.html>
   - `code` <https://github.com/mgermain/MADE>
 
 
@@ -1863,6 +1901,7 @@ x."
 >	"We present Neural Autoregressive Distribution Estimation (NADE) models, which are neural network architectures applied to the problem of unsupervised distribution and density estimation. They leverage the probability product rule and a weight sharing scheme inspired from restricted Boltzmann machines, to yield an estimator that is both tractable and has good generalization performance. We discuss how they achieve competitive performance in modeling both binary and real-valued observations. We also present how deep NADE models can be trained to be agnostic to the ordering of input dimensions used by the autoregressive product rule decomposition. Finally, we also show how to exploit the topological structure of pixels in images using a deep convolutional architecture for NADE."
 
   - `video` <http://www.fields.utoronto.ca/video-archive/2017/01/2267-16372> (Larochelle)
+  - `notes` <https://casmls.github.io/general/2016/11/19/MADENADE.html>
 
 
 #### ["DRAW: A Recurrent Neural Network For Image Generation"](http://arxiv.org/abs/1502.04623) Gregor, Danihelka, Graves, Wierstra
@@ -1880,6 +1919,7 @@ x."
   - `post` <http://kvfrans.com/what-is-draw-deep-recurrent-attentive-writer/>
   - `post` <http://blog.evjang.com/2016/06/understanding-and-implementing.html>
   - `notes` <http://github.com/tensorflow/magenta/blob/master/magenta/reviews/draw.md>
+  - `notes` <https://casmls.github.io/general/2016/10/16/attention_model.html>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/icml/GregorDGRW15>
   - `code` <https://github.com/ikostrikov/TensorFlow-VAE-GAN-DRAW/blob/master/main-draw.py>
   - `code` <https://github.com/ericjang/draw>
@@ -1917,11 +1957,17 @@ x."
   - `video` ["What's wrong with convolutional nets?"](http://techtv.mit.edu/collections/bcs/videos/30698-what-s-wrong-with-convolutional-nets) (Hinton) ([transcription](https://github.com/WalnutiQ/walnut/issues/157))
   - `video` ["Does the Brain do Inverse Graphics?"](https://youtube.com/watch?v=TFIMqt0yT2I) (Hinton)
   - `video` <https://youtube.com/watch?v=VKoLGnq15RM> (Raval)
+  - `video` <https://youtube.com/watch?v=UZ9BgrofhKk> (Kozlov) `in russian`
+  - `post` <https://reddit.com/r/MachineLearning/comments/7c78sw/r_capsule_networks_explained/dpo6p0n/>
   - `post` <https://hackernoon.com/what-is-a-capsnet-or-capsule-network-2bfbe48769cc>
   - `post` <https://medium.com/@pechyonkin/understanding-hintons-capsule-networks-part-i-intuition-b4b559d1159b>
+  - `post` <https://medium.com/@pechyonkin/understanding-hintons-capsule-networks-part-ii-how-capsules-work-153b6ade9f66>
+  - `post` <https://kndrck.co/posts/capsule_networks_explained/>
+  - `notes` <https://blog.acolyer.org/2017/11/13/dynamic-routing-between-capsules/>
   - `code` <https://github.com/llSourcell/capsule_networks>
   - `code` <https://github.com/InnerPeace-Wu/CapsNet-tensorflow>
   - `code` <https://github.com/naturomics/CapsNet-Tensorflow>
+  - `code` <https://github.com/gram-ai/capsule-networks>
   - `code` <https://github.com/nishnik/CapsNet-PyTorch>
   - `code` <https://github.com/XifengGuo/CapsNet-Keras>
   - `paper` ["Matrix Capsules with EM Routing"](https://openreview.net/forum?id=HJWLfGWRb)
@@ -1986,15 +2032,13 @@ x."
   - `code` <https://github.com/tensorflow/models/tree/master/research/transformer>
 
 
-#### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani et al.
->	"The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.0 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data."
+#### ["Connectionist Temporal Classification: Labelling Unsegmented Sequence Data with Recurrent Neural Networks"](https://www.cs.toronto.edu/~graves/icml_2006.pdf) Graves, Fernandez, Gomez, Schmidhuber
+>	"Many real-world sequence learning tasks require the prediction of sequences of labels from noisy, unsegmented input data. In speech recognition, for example, an acoustic signal is transcribed into words or sub-word units. Recurrent neural networks are powerful sequence learners that would seem well suited to such tasks. However, because they require pre-segmented training data, and post-processing to transform their outputs into label sequences, their applicability has so far been limited. This paper presents a novel method for training RNNs to label unsegmented sequences directly, thereby solving both problems. An experiment on the TIMIT speech corpus demonstrates its advantages over both a baseline HMM and a hybrid HMM-RNN."
 
-  - `post` <https://research.googleblog.com/2017/08/transformer-novel-neural-network.html>
-  - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) `in russian`
-  - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani)
-  - `post` <https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/> (McAllester)
-  - `notes` <https://medium.com/@sharaf/a-paper-a-day-24-attention-is-all-you-need-26eb2da90a91>
-  - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/transformer.py>
+----
+>	"CTC is a type of neural network output and associated scoring function, for training recurrent neural networks such as LSTM networks to tackle sequence problems where the timing is variable. It can be used for tasks like recognising phonemes in speech audio. CTC refers to the outputs and scoring, and is independent of the underlying neural network structure. A CTC network has a continuous output (e.g. softmax), which is fitted through training to model the probability of a label. The input is a sequence of observations, and the outputs are a sequence of labels, which can include blank outputs. CTC does not attempt to learn boundaries and timings: Label sequences are considered equivalent if they differ only in alignment, ignoring blanks. Equivalent label sequences can occur in many ways – which makes scoring a non-trivial task. Fortunately there is an efficient forward-backwards algorithm. CTC scores can then be used with the back-propagation algorithm to update the neural network weights."
+
+  - `post` <https://machinethoughts.wordpress.com/2017/11/02/ctc-training-latent-discrete-sequential-decisions-without-rl/>
 
 
 #### ["Sequence to Sequence Learning with Neural Networks"](http://arxiv.org/abs/1409.3215) Sutskever, Vinyals, Le
@@ -2035,6 +2079,18 @@ x."
   - `notes` <https://medium.com/@sharaf/a-paper-a-day-11-pointer-networks-59f7af1a611c>
   - `code` <https://github.com/ikostrikov/TensorFlow-Pointer-Networks>
   - `code` <https://github.com/devsisters/pointer-network-tensorflow>
+
+
+#### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani et al.
+>	"The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.0 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data."
+
+  - `post` <https://research.googleblog.com/2017/08/transformer-novel-neural-network.html>
+  - `video` <https://youtube.com/watch?v=rBCqOTEfxvg> (Kaiser)
+  - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) `in russian`
+  - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani)
+  - `post` <https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/> (McAllester)
+  - `notes` <https://medium.com/@sharaf/a-paper-a-day-24-attention-is-all-you-need-26eb2da90a91>
+  - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/transformer.py>
 
 
 #### ["Gated Graph Sequence Neural Networks"](http://arxiv.org/abs/1511.05493) Li, Zemel, Brockschmidt, Tarlow
@@ -2498,6 +2554,7 @@ x."
 >	- Backpropagation requires all nodes to be stored in memory.  
 >	- I think this is a less important limitation, but many neural architectures require parameter sharing, which isn't necessarily achievable in the brain."  
 
+  - `video` <https://youtube.com/watch?v=W86H4DpFnLY> (Bengio)
   - `video` <https://archive.org/details/Redwood_Center_2016_09_27_Yoshua_Bengio> (Bengio)
   - `video` <http://youtube.com/watch?v=lKVIXI8Djv4> (Bengio)
   - `video` <http://youtu.be/exhdfIPzj24?t=59m13s> (Bengio)
