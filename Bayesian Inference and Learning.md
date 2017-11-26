@@ -74,12 +74,11 @@
   [overview](http://metacademy.org/roadmaps/rgrosse/bayesian_machine_learning) by Roger Grosse  
   [overview](http://www.cs.toronto.edu/~radford/ftp/bayes-tut.pdf) by Radford Neal  
   [overview](https://slackprop.wordpress.com/2016/08/28/the-three-faces-of-bayes/) by Burr Settles  
+  [overview](http://frnsys.com/ai_notes/machine_learning/bayesian_learning.html) by Francis Tseng  
 
-  [notes](http://frnsys.com/ai_notes/machine_learning/bayesian_learning.html) by Francis Tseng
+  ["Probabilistic Learning and Reasoning"](https://www.cs.toronto.edu/~duvenaud/courses/csc412/index.html) course by David Duvenaud
 
-  [Coursera course](https://coursera.org/learn/bayesian-methods-in-machine-learning) by Daniil Polykovskiy and Alexander Novikov `video`
-
-  ["Probabilistic Programming & Bayesian Methods for Hackers"](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/) by Cam Davidson-Pilon
+  [Coursera](https://coursera.org/learn/bayesian-methods-in-machine-learning) course by Daniil Polykovskiy and Alexander Novikov `video`
 
 ----
 
@@ -287,7 +286,9 @@
 ---
 ### inference and learning
 
-  Imagine you have a distribution p(x) and you want to compute the integral ∫p(x)F(x)dx for some function F(x) of interest. We call the computation of this integral as inference. Examples include Bayesian inference where now p(x) is some posterior distribution and F(x) is the likelihood function of x on unseen data. Or if p(x) is unnormalised, taking F(x)=1 would return the integral as the normalising constant (or partition function) of p. Unfortunately for many complicated models we are fancy on now (say neural networks) this integral is intractable, and here intractability means you can't compute the exact value of the integral due to computational constraints (say running time, memory usage, precision, etc). So instead we use approximate inference to approximate that integral. There are mainly two ways to do approximate inference: directly approximating the integral you want, or, finding an accurate approximation q to the target distribution p and using it for integration later. The first approach is mainly dominated by Monte Carlo methods while the second one is dominated by variational inference methods.
+  "Imagine you have a distribution p(x) and you want to compute the integral ∫p(x)F(x)dx for some function F(x) of interest. We call the computation of this integral as inference. Examples include Bayesian inference where now p(x) is some posterior distribution and F(x) is the likelihood function of x on unseen data. Or if p(x) is unnormalised, taking F(x)=1 would return the integral as the normalising constant (or partition function) of p. Unfortunately for many complicated models we are fancy on now (say neural networks) this integral is intractable, and here intractability means you can't compute the exact value of the integral due to computational constraints (say running time, memory usage, precision, etc). So instead we use approximate inference to approximate that integral. There are mainly two ways to do approximate inference: directly approximating the integral you want, or, finding an accurate approximation q to the target distribution p and using it for integration later. The first approach is mainly dominated by Monte Carlo methods while the second one is dominated by variational inference methods."
+
+  ["Topics in Approximate Inference"](http://yingzhenli.net/home/en/?page_id=895) by Yingzhen Li
 
 ----
 

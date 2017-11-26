@@ -9,14 +9,6 @@
   * [program induction](#program-induction)
   * [automated machine learning](#automated-machine-learning)
   * [interesting quotes](#interesting-quotes)
-    - [architectures](#interesting-quotes---architectures)
-    - [representation](#interesting-quotes---representation)
-    - [learning and generalisation](#interesting-quotes---learning-and-generalisation)
-    - [symbolic approach](#interesting-quotes---symbolic-approach)
-    - [theory and black box](#interesting-quotes---theory-and-black-box)
-    - [unsupervised learning](#interesting-quotes---unsupervised-learning)
-    - [loss function and grounding](#interesting-quotes---loss-function-and-grounding)
-    - [bayesian inference and learning](#interesting-quotes---bayesian-inference-and-learning)
   * [interesting papers](#interesting-papers)
     - [theory](#interesting-papers---theory)
     - [automated machine learning](#interesting-papers---automated-machine-learning)
@@ -82,16 +74,17 @@
 #### guides
 
   ["A Few Useful Things to Know about Machine Learning"](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf) by Pedro Domingos  
-  ["Rules of Machine Learning: Best Practices for ML Engineering"](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf) by Martin Zinkevich  
-  ["Common Pitfalls in Machine Learning"](http://danielnee.com/?p=155) by Daniel Nee  
-  ["Clever Methods of Overfitting"](http://hunch.net/?p=22) by John Langford  
-  ["In Machine Learning, What is Better: More Data or better Algorithms"](http://kdnuggets.com/2015/06/machine-learning-more-data-better-algorithms.html) by Xavier Amatriain  
+  ["Expressivity, Trainability, and Generalization in Machine Learning"](http://blog.evjang.com/2017/11/exp-train-gen.html) by Eric Jang  
+  ["In Machine Learning, What is Better: More Data or Better Algorithms"](http://kdnuggets.com/2015/06/machine-learning-more-data-better-algorithms.html) by Xavier Amatriain  
   ["Classification vs. Prediction"](http://fharrell.com/2017/01/classification-vs-prediction.html) by Frank Harrell  
-  ["Causality in machine learning"](http://unofficialgoogledatascience.com/2017/01/causality-in-machine-learning.html) by Muralidharan et al.  
+  ["Causality in Machine Learning"](http://unofficialgoogledatascience.com/2017/01/causality-in-machine-learning.html) by Muralidharan et al.  
   ["Are ML and Statistics Complementary?"](https://www.ics.uci.edu/~welling/publications/papers/WhyMLneedsStatistics.pdf) by Max Welling  
   ["Introduction to Information Theory and Why You Should Care"](https://blog.recast.ai/introduction-information-theory-care/) by Gil Katz  
-  ["Ideas on interpreting machine learning"](https://oreilly.com/ideas/ideas-on-interpreting-machine-learning) by Hall et al.  
+  ["Ideas on Interpreting Machine Learning"](https://oreilly.com/ideas/ideas-on-interpreting-machine-learning) by Hall et al.  
+  ["Clever Methods of Overfitting"](http://hunch.net/?p=22) by John Langford  
+  ["Common Pitfalls in Machine Learning"](http://danielnee.com/?p=155) by Daniel Nee  
   ["Software Engineering vs Machine Learning Concepts"](http://machinedlearnings.com/2017_02_01_archive.html) by Paul Mineiro  
+  ["Rules of Machine Learning: Best Practices for ML Engineering"](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf) by Martin Zinkevich  
 
 
 #### courses
@@ -264,16 +257,25 @@
   - how much data do we need to learn something  
   - how can we make sure what we learn will generalize to future data  
 
+  theory helps to:  
+  - design algorithms  
+  - understand behaviour of algorithms  
+  - quantify knowledge/uncertainty  
+  - identify new and refine old challenges  
+
   frameworks:  
   - Statistical learning theory  
   - PAC learning or PAC-Bayes  
   - Minimax estimation (estimation/decision theory)  
 
 
-  ["Learning Theory: Purely Theoretical?"](https://hips.seas.harvard.edu/blog/2013/02/15/learning-theory-purely-theoretical/) by Jonathan Huggins  
+  ["Learning Theory: Purely Theoretical?"](https://hips.seas.harvard.edu/blog/2013/02/15/learning-theory-purely-theoretical/) by Jonathan Huggins
 
 
   ["Computational Learning Theory, AI and Beyond"](https://www.math.ias.edu/files/mathandcomp.pdf) chapter of "Mathematics and Computation" book by Avi Wigderson
+
+
+  ["Theory of Reinforcement Learning"](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) by Csaba Szepesvari `video`
 
 
   [introduction](https://mostafa-samir.github.io/ml-theory-pt1/) by Mostafa Samir  
@@ -615,7 +617,7 @@
 
   - [architectures](#interesting-quotes---architectures)  
   - [representation](#interesting-quotes---representation)  
-  - [learning and generalisation](#interesting-quotes---learning-and-generalisation)  
+  - [learning and generalization](#interesting-quotes---learning-and-generalization)  
   - [symbolic approach](#interesting-quotes---symbolic-approach)  
   - [theory and black box](#interesting-quotes---theory-and-black-box)  
   - [unsupervised learning](#interesting-quotes---unsupervised-learning)  
@@ -629,17 +631,11 @@
   Juergen Schmidhuber:
   > "A search for solution-computing, perturbation-resistant, low-complexity neural networks describable by few bits of information can reduce overfitting and improve learning, including reinforcement learning in the case of partially observable environments. Deep learning often create hierarchies of more and more abstract representations of stationary data, sequential data or reinforcement learning policies. Unlike these systems, humans learn to actively perceive patterns by sequentially directing attention to relevant parts of the available data. Near future deep NNs will do so, too, extending previous work on neural networks that learn selective attention through reinforcement learning of (a) motor actions such as saccade control and (b) internal actions controlling spotlights of attention within RNNs, thus closing the general sensorimotor loop through both external and internal feedback. Many future deep neural networks will also take into account that it costs energy to activate neurons, and to send signals between them. Brains seem to minimize such computational costs during problem solving in at least two ways: (1) At a given time, only a small fraction of all neurons is active because local competition through winner-take-all mechanisms shuts down many neighbouring neurons, and only winners can activate other neurons through outgoing connections. (2) Numerous neurons are sparsely connected in a compact 3D volume by many short-range and few long-range connections (much like microchips in traditional supercomputers). Often neighbouring neurons are allocated to solve a single task, thus reducing communication costs. Physics seems to dictate that any efficient computational hardware will in the future also have to be brain-like in keeping with these two constraints. The most successful current deep recurrent neural networks, however, are not. Unlike certain spiking neural networks, they usually activate all units at least slightly, and tend to be strongly connected, ignoring natural constraints of 3D hardware. It should be possible to improve them by adopting (1) and (2), and by minimizing non-differentiable energy and communication costs through direct search in program (weight) space. These more brain-like RNNs will allocate neighboring RNN parts to related behaviors, and distant RNN parts to less related ones, thus self-modularizing in a way more general than that of traditional self-organizing maps in feedforward neural networks. They will also implement Occam’s razor as a by-product of energy minimization, by finding simple (highly generalizing) problem solutions that require few active neurons and few, mostly short connections. The more distant future may belong to general purpose learning algorithms that improve themselves in provably optimal ways, but these are not yet practical or commercially relevant."
 
-  Juergen Schmidhuber:
-  > "Lightspeed constraints seem to dictate that future efficient computational hardware will have to be somewhat brain-like, namely, with many compactly placed processors in 3-dimensional space, connected by many short and few long wires, to minimize total connection cost (even if the "wires" are actually light beams)."
-
   Geoffrey Hinton:
   > "Dumb stuff like stochastic gradient descent working so well raises huge problems for GOFAI advocates. These techniques are always going to beat a smart system which can't learn, provided they can learn a huge number of parameters. So the real lesson here is that dumb systems that learn are better than smart systems that don't. And the other lesson is, of course, that smart systems that learn billions of parameters are going to be even better. Models should be bigger than the data. Ex: your brain has many more synapses than experiences."
 
   Paul Mineiro:
   > "Gerald Tesauro dusted off his old Neurogammon code, ran it on a more powerful computer (his current laptop), and got much better results. Unfortunately, we cannot conclude that NVIDIA will solve AI for us if we wait long enough. In 2 player games or in simulated environments more generally, computational power equates to sample complexity, because you can simulate more. In the real world we have sample complexity constraints: you have to perform actual actions to get actual rewards. However, in the same way that cars and planes are faster than people because they have unfair energetic advantages (we are 100W machines; airplanes are much higher), I think “superhuman AI”, should it come about, will be because of sample complexity advantages, i.e., a distributed collection of robots that can perform more actions and experience more rewards (and remember and share all of them with each other). So really Boston Dynamics, not NVIDIA, is the key."
-
-  Geoffrey Hinton:
-  > "Fast associative memory should allow neural network models of sequential human reasoning."
 
   Raia Hadsell:
   > "Biological brains are amazing. We have watched Lee Sedol deliberately change his style of play over this week, fluidly and consciously adapting and exploring. Presumably he will use the experience of winning Game 4 to further adapt to try to gain an advantage in Game 5. This points to one of the largest differences between human learning and modern machine learning. Deep networks, such as AlphaGo's policy and value nets, learn with lots of data and are generalists. They do not retain and refer back to individual examples, nor can they learn meaningfully from single examples. Moreover, if trained on data from a changing distribution, they will forget previous skills, quickly and catastrophically."
@@ -649,14 +645,6 @@
 
   Nando de Freitas:
   > "I think we are still missing good environments. I believe intelligent agents are mirrors of their environments. Our brain is the way it is because of being on planet earth. It is a consequence of evolution. However, we'd like to do things faster this time, so we need to make more progress in memory architectures, attention, concept and program induction, continual learning, teaching and social learning."
-
-  Yoshua Bengio:
-  > "To reach AI:
-  > - needs knowledge
-  > - needs learning (involves priors + optimization/search + efficient computation)
-  > - needs generalization (guessing where probability mass concentrates)
-  > - needs ways to fight the curse of dimensionality (exponentially many configurations of the variables to consider)
-  > - needs disentangling the underlying explanatory factors (making sense of the data)"
 
 
   ----
@@ -691,7 +679,7 @@
 
 
   ----
-  #### interesting quotes - learning and generalisation
+  #### interesting quotes - learning and generalization
 
   Ilya Sutskever:
   > "The success of Deep Learning hinges on a very fortunate fact: that well-tuned and carefully-initialized stochastic gradient descent can train deep neural networks on problems that occur in practice. It is not a trivial fact since the training error of a neural network as a function of its weights is highly non-convex. And when it comes to non-convex optimization, we were taught that all bets are off. Only convex is good, and non-convex is bad. And yet, somehow, stochastic gradient descent seems to be very good at training those large deep neural networks on the tasks that we care about. The problem of training neural networks is NP-hard, and in fact there exists a family of datasets such that the problem of finding the best neural network with three hidden units is NP-hard. And yet, SGD just solves it in practice. My hypothesis (which is shared by many other scientists) is that neural networks start their learning process by noticing the most “blatant” correlations between the input and the output, and once they notice them they introduce several hidden units to detect them, which enables the neural network to see more complicated correlations."

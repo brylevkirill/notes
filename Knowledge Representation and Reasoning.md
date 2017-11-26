@@ -848,7 +848,7 @@
 ---
 ### reasoning - formal logic
 
-  [Description logic](https://en.wikipedia.org/wiki/Description_logic) is formal language to represent [ontologies](#ontology)
+  [Description logic](https://en.wikipedia.org/wiki/Description_logic) - formal language to represent [ontologies](#ontology)
 
 
   ["Simply Logical - Intelligent Reasoning by Example"](https://www.cs.bris.ac.uk/~flach/SL/SL.pdf) by Peter Flach `book`
@@ -857,6 +857,7 @@
 
   ["Applying Deep Learning to Mathematical Reasoning"](https://youtube.com/watch?v=UAa2o0W7vcg) by Francois Chollet `video`
 
+----
 
   "Quite reachable is deep automated semantic understanding of most of LaTeX-written mathematical textbooks. This has been blocked by three factors: (i) lack of annotated formal/informal corpora to train such semantic parsing on, (ii) lack of sufficiently large repository of background mathematical knowledge needed for “obvious-knowledge gap-filling”, and (iii) lack of sufficiently strong large-theory ATP that could fill the reasoning gaps using the large repository of background knowledge. One way to try to get them automatically is again through basic computer understanding of LaTeX-written mathematical texts, and learning what high-level concepts like “by analogy” and “using diagonalization” exactly semantically mean in various contexts. This is also related to the ability to reformulate problems and map them to a setting (for current ATPs, the best is purely equational) where the theorem proving becomes more easy. And another related work that needs to be done is “explaining back” the long ATP proofs using an understandable mathematical presentation."
 
@@ -1013,12 +1014,12 @@
   ["Data Programming: Creating Large Training Sets, Quickly"](https://arxiv.org/abs/1605.07723) `paper` ([video](https://youtube.com/watch?v=iSQHelJ1xxU))  
   ["Socratic Learning: Empowering the Generative Model"](https://arxiv.org/abs/1610.08123) `paper` ([video](https://youtube.com/watch?v=0gRNochbK9c))  
   ["Data Programming with DDLite: Putting Humans in a Different Part of the Loop"](http://cs.stanford.edu/people/chrismre/papers/DDL_HILDA_2016.pdf) `paper`  
-  ["Snorkel: A System for Lightweight Extraction"](http://cidrdb.org/cidr2017/gongshow/abstracts/cidr2017_73.pdf) `paper`  
-  ["Snorkel: Fast Training Set Generation for Information Extraction"](https://hazyresearch.github.io/snorkel/pdfs/snorkel_demo.pdf) `paper`  
-  ["Learning the Structure of Generative Models without Labeled Data"](https://arxiv.org/abs/1703.00854) `paper`  
+  ["Snorkel: A System for Lightweight Extraction"](http://cidrdb.org/cidr2017/gongshow/abstracts/cidr2017_73.pdf) `paper` ([talk](https://youtube.com/watch?v=HmocI2b5YfA) `video`)  
+  ["Snorkel: Fast Training Set Generation for Information Extraction"](https://hazyresearch.github.io/snorkel/pdfs/snorkel_demo.pdf) `paper` ([talk](https://youtube.com/watch?v=HmocI2b5YfA) `video`)  
+  ["Learning the Structure of Generative Models without Labeled Data"](https://arxiv.org/abs/1703.00854) `paper` ([talk](https://vimeo.com/240606552) `video`)  
   ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](https://arxiv.org/abs/1703.05028) `paper`  
-  ["Learning to Compose Domain-Specific Transformations for Data Augmentation"](https://arxiv.org/abs/1709.01643) `paper`  
-  ["Inferring Generative Model Structure with Static Analysis"](https://arxiv.org/abs/1709.02477) `paper`  
+  ["Learning to Compose Domain-Specific Transformations for Data Augmentation"](https://arxiv.org/abs/1709.01643) `paper` ([video](https://youtube.com/watch?v=eh2LAOjW78A))  
+  ["Inferring Generative Model Structure with Static Analysis"](https://arxiv.org/abs/1709.02477) `paper` ([video](https://youtube.com/watch?v=Do1On5AzHE4))  
 
 ----
 

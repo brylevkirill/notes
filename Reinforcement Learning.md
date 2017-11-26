@@ -191,15 +191,17 @@
 ----
 #### robotics
 
-  [overview](http://oreilly.com/ai/deep-learning-for-robotics.csp) by Pieter Abbeel `video`  
-  [overview](https://youtu.be/xe-z4i3l-iQ?t=30m35s) by Pieter Abbeel `video`  
-  [overview](http://on-demand.gputechconf.com/gtc/2016/video/S6812.html) by Pieter Abbeel `video`  
-  [overview](http://youtube.com/watch?v=xMHjkZBvnfU) by Pieter Abbeel `video`  
-
+  [overview](https://youtube.com/watch?v=lYU5nq0dAQQ) by Sergey Levine `video`  
+  [overview](https://youtube.com/watch?v=eKaYnXQUb2g) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=jtjW5Pye_44) by Sergey Levine `video`  
   [overview](http://videolectures.net/iclr2016_levine_deep_learning/) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=f41JXf-ojrM) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=EtMyH_--vnU) by Sergey Levine `video`  
+
+  [overview](http://oreilly.com/ai/deep-learning-for-robotics.csp) by Pieter Abbeel `video`  
+  [overview](https://youtu.be/xe-z4i3l-iQ?t=30m35s) by Pieter Abbeel `video`  
+  [overview](http://on-demand.gputechconf.com/gtc/2016/video/S6812.html) by Pieter Abbeel `video`  
+  [overview](https://youtube.com/watch?v=xMHjkZBvnfU) by Pieter Abbeel `video`  
 
 
 ----
@@ -212,6 +214,8 @@
 
   [introduction](https://youtube.com/watch?v=2pWv7GOvuf0) by David Silver `video`  
   [introduction](https://yadi.sk/i/bMo0qa-x3DoqkS) by Fedor Ratnikov `video` `in russian`  
+
+----
 
   introduction by Kevin Frans:  
   - [basics](http://kvfrans.com/reinforcement-learning-basics/)  
@@ -255,6 +259,10 @@
   [course](https://udacity.com/course/reinforcement-learning--ud600) by Michael Littman `video`  
 
   [Reinforcement Learning Summer School 2017](http://videolectures.net/deeplearning2017_montreal/) `video`
+
+----
+
+  ["Theory of Reinforcement Learning"](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) by Csaba Szepesvari `video`
 
 ----
 
@@ -357,7 +365,7 @@
   dimensions for classification of methods  ([overview](http://incompleteideas.net/sutton/book/ebook/node105.html) by Sutton and Barto):  
   - prediction vs control  
   - MDPs vs bandits  
-  - model-based vs value-based vs policy-based  ([overview](http://youtube.com/watch?v=P_agNaSrVhc) by Michael Littman `video`)  
+  - model-based vs value-based vs policy-based  
   - on-policy vs off-policy  
   - bootstrapping vs Monte Carlo  
 
@@ -385,15 +393,7 @@
   - suboptimal values does not necessarily give suboptimal actions in every state (but optimal values do)  
   - easier generalization to continuous action spaces  
 
-----
-
-  **off-policy methods**  ([overview](http://videolectures.net/deeplearning2017_thomas_safe_rl/) (30:21) by Philip Thomas `video`):  
-  - evaluate target policy to compute control while following another policy  
-  - learn from observing humans or other agents (imperfect expert)  
-  - re-use experience generated from old policies  
-  - learn about optimal policy while following exploratory policy  
-  - learn about multiple policies (options, waypoints) while following one policy  
-  - learning from sessions (recorded data)  
+  [overview](http://youtube.com/watch?v=P_agNaSrVhc) by Michael Littman `video`
 
 ----
 
@@ -407,12 +407,13 @@
     * task-relevant properties of environment  
     * exploration and intrinsic motivation  
 
-  ["Utilities"](https://youtube.com/watch?v=yA6wXERug70) by Pieter Abbeel  
-  ["Rethinking State Action and Reward in Reinforcement Learning"](https://youtube.com/watch?v=MhIP1SOqlS8) by Satinder Singh  
+  ["Utilities"](https://youtube.com/watch?v=yA6wXERug70) by Pieter Abbeel `video`  
+  ["Rethinking State Action and Reward in Reinforcement Learning"](https://youtube.com/watch?v=MhIP1SOqlS8) by Satinder Singh `video`  
 
 ----
 
-  **imitation learning** / **behavioral cloning**:  
+  **imitation learning** / **behavioral cloning**
+
   - learn agent's behavior in environment with unknown cost function via imitation of another agent's behavior
 
   ["Supervised Learning of Behaviors: Deep Learning, Dynamical Systems, and Behavior Cloning"](https://youtube.com/watch?v=kl_G95uKTHw) by Sergey Levine `video`  
@@ -427,7 +428,8 @@
 
 ----
 
-  **inverse reinforcement learning**:  
+  **inverse reinforcement learning**
+
   - infer underlying reward structure guiding agent’s behavior based on observations and model of environment  
   - learn reward structure for modelling purposes or for imitation of another agent's behavior (apprenticeship)  
 
@@ -448,7 +450,8 @@
 
 ----
 
-  **hierarchical reinforcement learning**:  
+  **hierarchical reinforcement learning**
+ 
   - simplify dimensionality of the action spaces over which we need to reason  
   - enable quick planning and execution of low-level actions (such as robot movements)  
   - provide a simple mechanism that connects plans and intentions to commands at the level of execution  
@@ -465,6 +468,14 @@
 	["Advances in Option Construction: The Option-Critic Architecture"](https://youtube.com/watch?v=8r_EoYnPjGk) by Pierre-Luc Bacon `video`  
 
   [interesting papers](#interesting-papers---hierarchical-reinforcement-learning)
+
+----
+
+  **off-policy learning**
+
+  Updates to a statistic of a dynamical process are said to be off-policy if their distribution does not match the dynamics of the process, particularly if the mismatch is due to the way actions are chosen. The prototypical example is learning of value function for one policy, the target policy, using data obtained while following another policy, the behavior policy.
+
+  [overview](http://videolectures.net/deeplearning2017_thomas_safe_rl/) (30:21) by Philip Thomas `video`
 
 
 
@@ -1018,12 +1029,12 @@
 
   introduction by Andrej Karpathy ([post](http://karpathy.github.io/2016/05/31/rl), [talk](https://youtube.com/watch?v=tqrcjHuNdmQ) `video`)
 
+  [introduction](http://youtube.com/watch?v=S_gwYj1Q-44) by Pieter Abbeel `video`  
   [introduction](http://youtube.com/watch?v=KHZVXao4qXs) by David Silver `video`  
 
   [tutorial](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Reinforcement-Learning-Through-Policy-Optimization) by Pieter Abbeel and John Schulman `video`
 	([slides](http://people.eecs.berkeley.edu/~pabbeel/nips-tutorial-policy-optimization-Schulman-Abbeel.pdf))  
   [tutorial](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/) by Pieter Abbeel `video`  
-  [tutorial](https://youtube.com/watch?v=PtAIh9KSnjo) by John Schulman `video`  
 
   [overview](https://yadi.sk/i/I3M09HKQ3GKBiP) by Fedor Ratnikov `video` `in russian`  
   [overview](https://youtu.be/mrgJ53TIcQc?t=41m35s) by Alexey Seleznev `video` `in russian`  
@@ -1041,7 +1052,8 @@
 	https://youtube.com/watch?v=gb5Q2XL5c8A  
 
 
-  ["Optimizing Expectations: From Deep Reinforcement Learning to Stochastic Computation Graphs"](http://joschu.net/docs/thesis.pdf) by John Schulman `paper`
+  ["Optimizing Expectations: From Deep Reinforcement Learning to Stochastic Computation Graphs"](http://joschu.net/docs/thesis.pdf)
+	by John Schulman `paper` ([talk](https://youtube.com/watch?v=jmMsNQ2eug4) `video`)
 
 
   [interesting papers](#interesting-papers---policy-based-methods)
@@ -1391,7 +1403,9 @@ interesting recent papers:
   - `post` <http://tim.hibal.org/blog/alpha-zero-how-and-why-it-works/>
   - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
   - `video` <https://youtube.com/watch?v=vC66XFoN4DE> (Raval)
+  - `notes` <https://blog.acolyer.org/2017/11/17/mastering-the-game-of-go-without-human-knowledge/>
   - `notes` <https://dropbox.com/s/fuwhivftv998f6q/AlphaGoZeroPseudoCode.pdf>
+  - `code` <https://github.com/gcp/leela-zero/>
   - `paper` ["Bootstrapping from Game Tree Search"](https://papers.nips.cc/paper/3722-bootstrapping-from-game-tree-search.pdf) by Veness, Silver, Uther, Blair
 
 
@@ -1545,6 +1559,7 @@ interesting recent papers:
   - `video` ["Towards a Unified View of Supervised Learning and Reinforcement Learning"](https://youtu.be/fZNyHoXgV7M?t=24m59s) (Norouzi)
   - `video` <https://youtu.be/uohtFXD_39c?t=38m10s> (Samy Bengio)
   - `video` <http://youtube.com/watch?v=agA-rc71Uec> (Samy Bengio)
+  - `video` <https://vimeo.com/240428387#t=58m19s> (Jaitly)
   - `notes` <http://drive.google.com/file/d/0B3Rdm_P3VbRDVUQ4SVBRYW82dU0> (Gauthier)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1609.00150>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=conf%2Fnips%2FNorouziBCJSWS16>
@@ -2140,8 +2155,9 @@ interesting recent papers:
   - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Value-Iteration-Networks> (Tamar)
   - `video` <http://www.fields.utoronto.ca/video-archive/2017/02/2267-16530> (31:50) (Abbeel)
   - `video` <https://youtu.be/bsuvM1jO-4w?t=38m6s> (Mnih)
-  - `post` <https://github.com/karpathy/paper-notes/blob/master/vin.md>
-  - `post` <https://blog.acolyer.org/2017/02/09/value-iteration-networks/>
+  - `notes` <https://github.com/karpathy/paper-notes/blob/master/vin.md>
+  - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Value_Iteration_Networks.md>
+  - `notes` <https://blog.acolyer.org/2017/02/09/value-iteration-networks/>
   - `code` <https://github.com/avivt/VIN>
   - `code` <https://github.com/TheAbhiKumar/tensorflow-value-iteration-networks>
   - `code` <https://github.com/zuoxingdong/VIN_TensorFlow>
@@ -2220,6 +2236,7 @@ interesting recent papers:
 
   - `video` <http://techtalks.tv/talks/continuous-deep-q-learning-with-model-based-acceleration/62474/> (Gu)
   - `video` <https://youtu.be/M6nfipCxQBc?t=10m48s> (Lillicrap)
+  - `video` <https://youtu.be/jtjW5Pye_44?t=1h17m18s> (Levine)
   - `video` <https://youtu.be/mrgJ53TIcQc?t=57m> (Seleznev) `in russian`
   - `code` <https://github.com/reinforceio/tensorforce/blob/master/tensorforce/models/naf_model.py>
   - `code` <https://github.com/ikostrikov/pytorch-naf>
@@ -2355,6 +2372,8 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=Q0ldKJbAwR8> (Dosovitskiy) `in russian`
   - `video` <https://yadi.sk/i/pMdw-_uI3Gke7Z> (1:02:03) (Shvechikov) `in russian`
   - `post` <https://oreilly.com/ideas/reinforcement-learning-for-complex-goals-using-tensorflow>
+  - `post` <https://flyyufelix.github.io/2017/11/17/direct-future-prediction.html>
+  - `notes` <https://danieltakeshi.github.io/2017/10/10/learning-to-act-by-predicting-the-future/>
   - `notes` <https://blog.acolyer.org/2017/05/12/learning-to-act-by-predicting-the-future/>
   - `code` <https://github.com/IntelVCL/DirectFuturePrediction>
   - `code` <https://github.com/NervanaSystems/coach/blob/master/agents/dfp_agent.py>
@@ -2557,6 +2576,7 @@ interesting recent papers:
   - `code` <https://github.com/openai/baselines/tree/master/baselines/ddpg>
   - `code` <https://github.com/matthiasplappert/keras-rl/blob/master/rl/agents/ddpg.py>
   - `code` <https://github.com/yandexdataschool/AgentNet/blob/master/agentnet/learning/dpg_n_step.py>
+  - `code` <https://github.com/Scitator/Run-Skeleton-Run> (demo)
   - `paper` ["Deterministic Policy Gradient Algorithms"](#deterministic-policy-gradient-algorithms-silver-lever-heess-degris-wierstra-riedmiller) by Silver et al.
 
 
