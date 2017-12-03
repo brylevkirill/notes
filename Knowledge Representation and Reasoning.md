@@ -172,7 +172,7 @@
 
 ----
 
-  [Natural Language Processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt#overview)
+  [Natural Language Processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#overview)
 
 ----
 
@@ -310,7 +310,7 @@
 
 
   [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)  
-  [representations of natural language](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt#continuous-space-representations)  
+  [representations of natural language](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#continuous-space-representations)  
 
 
 ----
@@ -735,7 +735,7 @@
 ### knowledge representation - distributed representations
 
   [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)  
-  [representations of natural language](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt#continuous-space-representations)  
+  [representations of natural language](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#continuous-space-representations)  
 
 
 
@@ -1017,6 +1017,7 @@
   ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](https://arxiv.org/abs/1703.05028) `paper`  
   ["Learning to Compose Domain-Specific Transformations for Data Augmentation"](https://arxiv.org/abs/1709.01643) `paper` ([video](https://youtube.com/watch?v=eh2LAOjW78A))  
   ["Inferring Generative Model Structure with Static Analysis"](https://arxiv.org/abs/1709.02477) `paper` ([video](https://youtube.com/watch?v=Do1On5AzHE4))  
+  ["Snorkel: Rapid Training Data Creation with Weak Supervision"](https://arxiv.org/abs/1711.10160) `paper` ([talk](https://youtube.com/watch?v=HmocI2b5YfA) `video`)  
 
 ----
 

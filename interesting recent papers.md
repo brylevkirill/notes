@@ -35,7 +35,7 @@ interesting older papers:
   - [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers)
   - [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#interesting-papers)
   - [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers)
-  - [natural language processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt#interesting-papers)
+  - [natural language processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#interesting-papers)
   - [information retrieval](https://github.com/brylevkirill/notes/blob/master/Information%20Retrieval.md#interesting-papers)
 
 
@@ -1365,10 +1365,27 @@ interesting older papers:
 
 ----
 #### ["Grammar Variational Autoencoder"](http://arxiv.org/abs/1703.01925) Kusner, Paige, Hernandez-Lobato
+>	"Generative modeling of discrete data such as arithmetic expressions and molecular structures poses significant challenges. State-of-the-art methods often produce outputs that are not valid. We make the key observation that frequently, discrete data can be represented as a parse tree from a context-free grammar. We propose a variational autoencoder which encodes and decodes directly to and from these parse trees, ensuring the generated outputs are always valid. Surprisingly, we show that not only does our model more often generate valid outputs, it also learns a more coherent latent space in which nearby points decode to similar discrete outputs. We demonstrate the effectiveness of our learned models by showing their improved performance in Bayesian optimization for symbolic regression and molecular synthesis."  
   - `video` <https://youtube.com/watch?v=XkY1z6kCY_s> (Hernandez-Lobato)
   - `video` <https://vimeo.com/238222537> (Kusner)
   - `video` <https://youtube.com/watch?v=ar4Fm1V65Fw> (Paige)
   - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/grammar-vae/> `in russian`
+
+----
+#### ["Toward Controlled Generation of Text"](http://arxiv.org/abs/1703.00955) Hu, Yang, Liang, Salakhutdinov, Xing
+  - `video` <https://vimeo.com/238222247> (Hu)
+
+#### ["Improved Variational Autoencoders for Text Modeling using Dilated Convolutions"](http://arxiv.org/abs/1702.08139) Yang, Hu, Salakhutdinov, Berg-Kirkpatrick
+  - `video` <https://vimeo.com/238222483> (Hu)
+  - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/improved-variational-autoencoders-for-text-modeling-using-dilated-convolutions/> `in russian`
+
+#### ["A Hybrid Convolutional Variational Autoencoder for Text Generation"](http://arxiv.org/abs/1702.02390) Semeniuta, Severyn, Barth
+  - `code` <https://github.com/stas-semeniuta/textvae>
+
+#### ["Generating Sentences from a Continuous Space"](http://arxiv.org/abs/1511.06349) Bowman, Vilnis, Vinyals, Dai, Jozefowicz, Bengio
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1511.06349>
+  - `code` <https://github.com/analvikingur/pytorch_RVAE>
+  - `code` <https://github.com/cheng6076/Variational-LSTM-Autoencoder>
 
 
 
@@ -2284,6 +2301,14 @@ hieves."
   - `video` <https://youtube.com/watch?v=sZqrWFl0wQ4> (demo)
   - `video` <https://vimeo.com/237274156> (Higgins)
 
+#### ["Towards Deep Symbolic Reinforcement Learning"](http://arxiv.org/abs/1609.05518) Garnelo, Arulkumaran, Shanahan
+  `semantic representation`
+>	"Contemporary DRL systems require very large datasets to work effectively, entailing that they are slow to learn even when such datasets are available. Moreover, they lack the ability to reason on an abstract level, which makes it difficult to implement high-level cognitive functions such as transfer learning, analogical reasoning, and hypothesis-based reasoning. Finally, their operation is largely opaque to humans, rendering them unsuitable for domains in which verifiability is important. We propose an end-to-end RL architecture comprising a neural back end and a symbolic front end with the potential to overcome each of these shortcomings."  
+>	"Resulting system learns effectively and, by acquiring a set of symbolic rules that are easily comprehensible to humans, dramatically outperforms a conventional, fully neural DRL system on a stochastic variant of the game."  
+>	"We tested the transfer learning capabilities of our algorithm by training an agent only on games of the grid variant then testing it on games of the random variant. After training, the unsupervised neural back end of the system is able to form a symbolic representation of any given frame within the micro-world of the game. In effect it has acquired the ontology of that micro-world, and this capability can be applied to any game within that micro-world irrespective of its specific rules. In the present case, no re-training of the back end was required when the system was applied to new variants of the game."  
+>	"The key is for the system to understand when a new situation is analogous to one previously encountered or, more potently, to hypothesise that a new situation contains elements of several previously encountered situations combined in a novel way. In the present system, this capability is barely exploited."  
+  - `video` <https://youtube.com/watch?v=HOAVhPy6nrc> (Shanahan)
+
 ----
 #### ["Mutual Alignment Transfer Learning"](https://arxiv.org/abs/1707.07907) Wulfmeier, Posner, Abbeel
   `simulation to real world`
@@ -2530,9 +2555,9 @@ hieves."
 ### program induction
 
 ----
-#### ["Learning Explanatory Rules from Noisy Data"](https://arxiv.org/abs/1711.04574) (DeepMind)
+#### ["Learning Explanatory Rules from Noisy Data"](https://arxiv.org/abs/1711.04574) Evans, Grefenstette
 
-#### ["Learning Neural Programs To Parse Programs"](https://arxiv.org/abs/1706.01284)
+#### ["Learning Neural Programs To Parse Programs"](https://arxiv.org/abs/1706.01284) Chen, Liu, Song
 >	"We explore a new direction to learn domain-specific programs significantly more complex than previously considered in the literature of learning programs from input-output examples only. In particular, we consider an exemplary problem to learn a program to parse an input satisfying a context-free grammar into its abstract syntax tree. This problem is challenging when the underlying grammar is unknown, and only input-output examples are provided. The program to be synthesized in this problem, i.e., a parser, is more complex than programs consisting of string operations as in many previous work, and thus serves as a good next step challenge to tackle in the domain of learning programs from input-output examples."  
 >	"Recent works propose to use sequence-to-sequence models to directly generate parse trees from inputs. However, they often do not generalize well, and our experiments show that their test accuracy is almost 0% on inputs longer than those seen in training."  
 >	"This work is the first successful demonstration that reinforcement learning can be applied to train a neural program operating a non-differentiable machine with input-output pairs only, while the learned neural program can fully generalize to longer inputs on a non-trivial task."  
@@ -2543,31 +2568,31 @@ hieves."
   - `notes` <https://github.com/carpedm20/paper-notes/blob/master/notes/neural-ll-parser.md>
   - `code` <http://github.com/liuchangacm/neuralparser>
 
-#### ["RobustFill: Neural Program Learning under Noisy I/O"](https://arxiv.org/abs/1703.07469) (Microsoft)
+#### ["RobustFill: Neural Program Learning under Noisy I/O"](https://arxiv.org/abs/1703.07469) Devlin, Uesato, Bhupatiraju, Singh, Mohamed, Kohli
   - `video` <https://vimeo.com/238227939> (Uesato, Bhupatiraju)
 
-#### ["Differentiable Programs with Neural Libraries"](https://arxiv.org/abs/1611.02109) (Microsoft)
+#### ["Differentiable Programs with Neural Libraries"](https://arxiv.org/abs/1611.02109) Gaunt, Brockschmidt, Kushman, Tarlow
   - `video` <https://vimeo.com/238227833> (Gaunt)
 
-#### ["Neuro-Symbolic Program Synthesis"](https://arxiv.org/abs/1611.01855) (Microsoft)
+#### ["Neuro-Symbolic Program Synthesis"](https://arxiv.org/abs/1611.01855) Parisotto, Mohamed, Singh, Li, Zhou, Kohli
 
-#### ["TerpreT: A Probabilistic Programming Language for Program Induction"](http://arxiv.org/abs/1608.04428) (Microsoft)
+#### ["TerpreT: A Probabilistic Programming Language for Program Induction"](http://arxiv.org/abs/1608.04428) Gaunt, Brockschmidt, Singh, Kushman, Kohli, Taylor, Tarlow
 >	"These works raise questions of (a) whether new models can be designed specifically to synthesize interpretable source code that may contain looping and branching structures, and (b) whether searching over program space using techniques developed for training deep neural networks is a useful alternative to the combinatorial search methods used in traditional IPS. In this work, we make several contributions in both of these directions."  
 >	"Shows that differentiable interpreter-based program induction is inferior to discrete search-based techniques used by the programming languages community. We are then left with the question of how to make progress on program induction using machine learning techniques."  
   - `video` <https://youtu.be/vzDuVhFMB9Q?t=2m40s> (Gaunt)
 
-#### ["Programming with a Differentiable Forth Interpreter"](http://arxiv.org/abs/1605.06640) (Riedel)
+#### ["Programming with a Differentiable Forth Interpreter"](http://arxiv.org/abs/1605.06640) Bošnjak, Rocktaschel, Naradowsky, Riedel
   `learning details of probabilistic program`
 >	"The paper talks about a certain class of neural networks that incorporate procedural knowledge. The way they are constructed is by compiling Forth code (procedural) to TensorFlow expressions (linear algebra) to be able to train slots (missing pieces in the code) end-to-end from input-output pairs using backpropagation."  
   - `video` <https://vimeo.com/238227890> (Bosnjak)
 
-#### ["Making Neural Programming Architectures Generalize via Recursion"](https://arxiv.org/abs/1704.06611)
+#### ["Making Neural Programming Architectures Generalize via Recursion"](https://arxiv.org/abs/1704.06611) Cai, Shin, Song
   `Neural Programmer-Interpreter with recursion`
 >	"We implement recursion in the Neural Programmer-Interpreter framework on four tasks: grade-school addition, bubble sort, topological sort, and quicksort."  
   - `video` <https://facebook.com/iclr.cc/videos/1713144705381255/> (49:59) (Cai)
   - `notes` <https://theneuralperspective.com/2017/03/14/making-neural-programming-architecture-generalize-via-recursion/>
 
-#### ["Adaptive Neural Compilation"](http://arxiv.org/abs/1605.07969)
+#### ["Adaptive Neural Compilation"](http://arxiv.org/abs/1605.07969) Bunel, Desmaison, Kohli, Torr, Kumar
 
 
 
@@ -2734,10 +2759,12 @@ hieves."
 
 ----
 #### ["A Paradigm for Situated and Goal-Driven Language Learning"](https://arxiv.org/abs/1610.03585) Gauthier, Mordatch
+  `goal-driven language learning`
   - `post` ["On 'Solving Language'"](http://foldl.me/2016/solving-language/) (Gauthier)
   - `post` ["Situated Language Learning"](http://foldl.me/2016/situated-language-learning/) (Gauthier)
 
 #### ["Learning with Latent Language"](https://arxiv.org/abs/1711.00482) Andreas, Klein, Levine
+  `goal-driven language learning`
 >	"optimizing models in a space parameterized by natural language"  
 >	"Using standard neural encoder–decoder components to build models for representation and search in this space, we demonstrated that our approach outperforms strong baselines on classification, structured prediction and reinforcement learning tasks."  
 >	"The approach outperforms both multi-task and meta-learning approaches that map directly from training examples to outputs by way of a real-valued parameterization, as well as approaches that make use of natural language annotations as an additional supervisory signal rather than an explicit latent parameter. The natural language concept descriptions inferred by our approach often agree with human annotations when they are correct, and provide an interpretable debugging signal when incorrect. In short, by equipping models with the ability to “think out loud” when learning, they become both more comprehensible and more accurate."  
@@ -2748,46 +2775,51 @@ hieves."
   - `code` <http://github.com/jacobandreas/l3>
 
 #### ["Grounded Language Learning in a Simulated 3D World"](https://arxiv.org/abs/1706.06551) Hermann et al.
+  `goal-driven language learning`
 >	"The agent learns simple language by making predictions about the world in which that language occurs, and by discovering which combinations of words, perceptual cues and action decisions result in positive outcomes. Its knowledge is distributed across language, vision and policy networks, and pertains to modifiers, relational concepts and actions, as well as concrete objects. Its semantic representations enable the agent to productively interpret novel word combinations, to apply known relations and modifiers to unfamiliar objects and to re-use knowledge pertinent to the concepts it already has in the process of acquiring new concepts."  
 >	"While our simulations focus on language, the outcomes are relevant to machine learning in a more general sense. In particular, the agent exhibits active, multi-modal concept induction, the ability to transfer its learning and apply its knowledge representations in unfamiliar settings, a facility for learning multiple, distinct tasks, and the effective synthesis of unsupervised and reinforcement learning. At the same time, learning in the agent reflects various effects that are characteristic of human development, such as rapidly accelerating rates of vocabulary growth, the ability to learn from both rewarded interactions and predictions about the world, a natural tendency to generalise and re-use semantic knowledge, and improved outcomes when learning is moderated by curricula."  
   - `video` <https://youtube.com/watch?v=wJjdu1bPJ04> (demo)
   - `video` <http://videolectures.net/deeplearning2017_blunsom_language_processing/> (48:54) (Blunsom)
 
 #### ["Programmable Agents"](https://arxiv.org/abs/1706.06383) Denil, Colmenarejo, Cabi, Saxton, Freitas
+  `goal-driven language learning`
   - `video` <https://youtube.com/playlist?list=PLs1LSEoK_daRDnPUB2u7VAXSonlNU7IcV> (demo)
   - `video` <http://videolectures.net/deeplearning2017_de_freitas_deep_control/> (32:57) (de Freitas)
   - `code` <https://github.com/jaesik817/programmable-agents_tensorflow>
 
 #### ["Gated-Attention Architectures for Task-Oriented Language Grounding"](https://arxiv.org/abs/1706.07230) Chaplot, Sathyendra, Pasumarthi, Rajagopal, Salakhutdinov
+  `goal-driven language learning`
 
-#### ["Towards Deep Symbolic Reinforcement Learning"](http://arxiv.org/abs/1609.05518) Garnelo, Arulkumaran, Shanahan
->	"end-to-end reinforcement learning architecture comprising a neural back end and a symbolic front end"  
->	"resulting system, by acquiring a set of symbolic rules that are easily comprehensible to humans, dramatically outperforms a conventional, fully neural DRL system on a stochastic variant of the game"  
-  - `video` <https://youtube.com/watch?v=HOAVhPy6nrc> (Shanahan)
+#### ["A Deep Compositional Framework for Human-like Language Acquisition in Virtual Environment"](https://arxiv.org/abs/1703.09831) Yu, Zhang, Xu
+  `goal-driven language learning`
 
 ----
 #### ["Natural Language Does Not Emerge ‘Naturally’ in Multi-Agent Dialog"](https://arxiv.org/abs/1706.08502) Kottur, Moura, Lee, Batra
+  `language emergence in dialog`
 
 #### ["Emergent Language in a Multi-Modal, Multi-Step Referential Game"](https://arxiv.org/abs/1705.10369) Evtimova, Drozdov, Kiela, Cho
+  `language emergence in dialog`
 
 #### ["Translating Neuralese"](https://arxiv.org/abs/1704.06960) Andreas, Dragan, Klein
+  `language emergence in dialog`
 >	"Authors take the vector messages (“neuralese”) passed between two machines trained to perform a collaborative task, and translate them into natural language utterances. To overcome the absence of neuralese-to-English parallel data, authors consider a pair of messages equivalent if they are used in similar scenarios by human and machine agents."  
   - `audio` <https://soundcloud.com/nlp-highlights/34-translating-neuralese-with-jacob-andreas> (Andreas)
   - `code` <http://github.com/jacobandreas/neuralese>
 
 #### ["Deal or No Deal? End-to-End Learning for Negotiation Dialogues"](https://arxiv.org/abs/1706.05125) Lewis, Yarats, Dauphin, Parikh, Batra
+  `language emergence in dialog`
   - `post` <https://code.facebook.com/posts/1686672014972296>
   - `video` <https://ku.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e76f464c-6f81-4e31-b942-839312cf0f8c> (Lewis)
   - `code` <https://github.com/facebookresearch/end-to-end-negotiator>
 
 #### ["Learning Cooperative Visual Dialog Agents with Deep Reinforcement Learning"](https://arxiv.org/abs/1703.06585) Das, Kottur, Moura, Lee, Batra
+  `language emergence in dialog`
   - `video` <https://youtube.com/watch?v=SztC8VOWwRQ> (demo)
   - `video` <https://youtube.com/watch?v=I9OlorMh7wU> (Das)
   - `video` <http://videolectures.net/deeplearning2017_parikh_batra_deep_rl/> (part 2, 25:47) (Batra)
 
-#### ["A Deep Compositional Framework for Human-like Language Acquisition in Virtual Environment"](https://arxiv.org/abs/1703.09831) Yu, Zhang, Xu
-
 #### ["Emergence of Grounded Compositional Language in Multi-Agent Populations"](http://arxiv.org/abs/1703.04908) Mordatch, Abbeel
+  `language emergence in dialog`
 >	"Though the agents come up with words that we found to correspond to objects and other agents, as well as actions like 'Look at' or 'Go to', to the agents these words are abstract symbols represented by one-hot vector - we label these one-hot vectors with English words that capture their meaning for the sake of interpretability."  
 >
 >	"One possible scenario is from goal oriented-dialog systems. Where one agent tries to transmit to another certain API call that it should perform (book restaurant, hotel, whatever). I think these models can make it more data efficient. At the first stage two agents have to communicate and discover their own language, then you can add regularization to make the language look more like natural language and on the final stage, you are adding a small amount of real data (dialog examples specific for your task). I bet that using additional communication loss will make the model more data efficient."  
@@ -2800,9 +2832,11 @@ hieves."
   - `paper` ["A Paradigm for Situated and Goal-Driven Language Learning"](https://arxiv.org/abs/1610.03585)  
 
 #### ["Multi-Agent Cooperation and the Emergence of (Natural) Language"](https://arxiv.org/abs/1612.07182) Lazaridou, Peysakhovich, Baroni
+  `language emergence in dialog`
   - `video` <https://facebook.com/iclr.cc/videos/1712966538732405/> (Peysakhovich)
 
 #### ["Learning Language Games through Interaction"](http://arxiv.org/abs/1606.02447) Wang, Liang, Manning
+  `language emergence in dialog`
   - `post` <http://nlp.stanford.edu/blog/interactive-language-learning/>
   - `video` <http://youtube.com/watch?v=PfW4_3tCiw0> (demo, calendar)
   - <http://shrdlurn.sidaw.xyz> (demo, blocks world)
@@ -2815,203 +2849,91 @@ hieves."
 ---
 ### natural language processing
 
-[interesting older papers](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt#interesting-papers)
+[interesting older papers](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#interesting-papers)
 
 ----
-#### ["Non-Autoregressive Neural Machine Translation"](https://openreview.net/forum?id=B1l8BtlCb)
+#### ["Non-Autoregressive Neural Machine Translation"](https://arxiv.org/abs/1711.02281) Gu, Bradbury, Xiong, Li, Socher
+  `translation`
   - `post` <https://einstein.ai/research/non-autoregressive-neural-machine-translation>
 
-#### ["Unsupervised Machine Translation Using Monolingual Corpora Only"](https://arxiv.org/abs/1711.00043) (Facebook AI Research)
+#### ["Unsupervised Machine Translation Using Monolingual Corpora Only"](https://arxiv.org/abs/1711.00043) Lample, Denoyer, Ranzato
+  `translation`
 >	"learn to map sentences of the two languages into the same feature space by denoising both via auto-encoding and via cross-domain encoding"  
   - `notes` <http://ankitg.me/blog/2017/11/05/unsupervised-machine-translation.html>
 
-#### ["Unsupervised Neural Machine Translation"](https://arxiv.org/abs/1710.11041) (Cho)
+#### ["Unsupervised Neural Machine Translation"](https://arxiv.org/abs/1710.11041) Artetxe, Labaka, Agirre, Cho
+  `translation`
   - `notes` <http://ankitg.me/blog/2017/11/05/unsupervised-machine-translation.html>
 
-#### ["Word Translation Without Parallel Data"](https://arxiv.org/abs/1710.04087) (Facebook AI Research)
+#### ["Word Translation Without Parallel Data"](https://arxiv.org/abs/1710.04087) Conneau, Lample, Ranzato, Denoyer, Jegou
+  `translation`
 >	"Our method leverages adversarial training to learn a linear mapping from a source to a target space and operates in two steps. First, in a two-player game, a discriminator is trained to distinguish between the mapped source embeddings and the target embeddings, while the mapping (which can be seen as a generator) is jointly trained to fool the discriminator. Second, we extract a synthetic dictionary from the resulting shared embedding space and fine-tune the mapping with the closed-form Procrustes solution."  
 >	"(A) There are two distributions of word embeddings, English words in red denoted by X and Italian words in blue denoted by Y, which we want to align/translate. Each dot represents a word in that space. The size of the dot is proportional to the frequency of the words in the training corpus of that language.  
 >	(B) Using adversarial learning, we learn a rotation matrix W which roughly aligns the two distributions. The green stars are randomly selected words that are fed to the discriminator to determine whether the two word embeddings come from the same distribution.  
 >	(C) The mapping W is further refined via Procrustes. This method uses frequent words aligned by the previous step as anchor points, and minimizes an energy function that corresponds to a spring system between anchor points. The refined mapping is then used to map all words in the dictionary.  
 >	(D) Finally, we translate by using the mapping W and a distance metric, dubbed CSLS, that expands the space where there is high density of points (like the area around the word “cat”), so that “hubs” (like the word “cat”) become less close to other word vectors than they would otherwise (compare to the same region in panel (A))."  
 
-#### ["Style Transfer from Non-Parallel Text by Cross-Alignment"](https://arxiv.org/abs/1705.09655) (Barzilay)
+#### ["Style Transfer from Non-Parallel Text by Cross-Alignment"](https://arxiv.org/abs/1705.09655) Shen, Lei, Barzilay, Jaakkola
+  `translation`
 
 ----
-#### ["Unbounded Cache Model for Online Language Modeling with Open Vocabulary"](https://arxiv.org/abs/1711.02604) (Facebook AI Research)
->	"We propose an extension of continuous cache models, which can scale to larger contexts. We use a large scale non-parametric memory component that stores all the hidden activations seen in the past. We leverage recent advances in approximate nearest neighbor search and quantization algorithms to store millions of representations while searching them efficiently."  
-
-#### ["Improving Neural Language Models with a Continuous Cache"](http://arxiv.org/abs/1612.04426) (Facebook AI Research)
-  `adaptive softmax`
-
-#### ["Learning to Compute Word Embeddings On the Fly"](https://arxiv.org/abs/1706.00286) (Bengio)
-  - `notes` <https://theneuralperspective.com/2017/06/05/more-on-embeddings-spring-2017/>
-
-----
-#### ["Pointer Sentinel Mixture Models"](http://arxiv.org/abs/1609.07843) (MetaMind)
->	"The authors combine a standard LSTM softmax with Pointer Networks in a mixture model called Pointer-Sentinel LSTM (PS-LSTM). The pointer networks helps with rare words and long-term dependencies but is unable to refer to words that are not in the input. The opposite is the case for the standard softmax."  
-  - `video` <https://youtube.com/watch?v=Ibt8ZpbX3D8> (Merity)
-  - `video` <https://youtu.be/Q7ifcUuMZvk?t=30m11s> (Socher)
-  - `notes` <https://theneuralperspective.com/2016/10/04/pointer-sentinel-mixture-models/>
-
-#### ["Pointing the Unknown Words"](http://arxiv.org/abs/1603.08148) (Bengio)
-
-----
-#### ["Towards Universal Paraphrastic Sentence Embeddings"](http://arxiv.org/abs/1511.08198)
-  `outperforming LSTM`
-  - `video` <http://videolectures.net/iclr2016_wieting_universal_paraphrastic/> (Wieting)
-
-#### ["Order-Embeddings of Images and Language"](http://arxiv.org/abs/1511.06361)
-  - `video` <http://videolectures.net/iclr2016_vendrov_order_embeddings/> (Vendrov)
-  - `code` <https://github.com/ivendrov/order-embedding>
-  - `code` <https://github.com/ivendrov/order-embeddings-wordnet>
-  - `code` <https://github.com/LeavesBreathe/tensorflow_with_latest_papers/blob/master/partial_ordering_embedding.py>
-
-----
-#### ["Bag of Tricks for Efficient Text Classification"](http://arxiv.org/abs/1607.01759) (Facebook AI Research)
-  `fastText`
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1607.01759#shagunsodhani>
+#### ["Bag of Tricks for Efficient Text Classification"](http://arxiv.org/abs/1607.01759) Joulin, Grave, Bojanowski, Mikolov
+  `classification` `fastText`
+>	"At par with deep learning models in terms of accuracy though an order of magnitude faster in performance."  
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1607.01759>
+  - `notes` <https://medium.com/paper-club/bag-of-tricks-for-efficient-text-classification-818bc47e90f>
+  - `code` <https://fasttext.cc>
   - `code` <https://github.com/fchollet/keras/blob/master/examples/imdb_fasttext.py>
 
 ----
-#### ["Globally Normalized Transition-Based Neural Networks"](http://arxiv.org/abs/1603.06042) (Google)
-  `SyntaxNet` `Parsey McParseface`
+#### ["Discovering Discrete Latent Topics with Neural Variational Inference"](https://arxiv.org/abs/1706.00359) Miao, Grefenstette, Blunsom
+  `topic modeling`
+>	"Traditional inference methods have sought closed-form derivations for updating the models, however as the expressiveness of these models grows, so does the difficulty of performing fast and accurate inference over their parameters. This paper presents alternative neural approaches to topic modelling by providing parameterisable distributions over topics which permit training by backpropagation in the framework of neural variational inference. In addition, with the help of a stick-breaking construction, we propose a recurrent network that is able to discover a notionally unbounded number of topics, analogous to Bayesian non-parametric topic models."  
+  - `video` <https://vimeo.com/238222598> (Miao)
+
+----
+#### ["Learning a Neural Semantic Parser from User Feedback"](https://arxiv.org/abs/1704.08760) Iyer, Konstas, Cheung, Krishnamurthy, Zettlemoyer
+  `semantic parsing`
+>	"We learn a semantic parser for an academic domain from scratch by deploying an online system using our interactive learning algorithm. After three train-deploy cycles, the system correctly answered 63.51% of user’s questions. To our knowledge, this is the first effort to learn a semantic parser using a live system, and is enabled by our models that can directly parse language to SQL without manual intervention."  
+#### ["Semantic Parsing with Semi-Supervised Sequential Autoencoders"](http://arxiv.org/abs/1609.09315) Kocisky, Melis, Grefenstette, Dyer, Ling, Blunsom, Hermann
+  `semantic parsing`
+
+#### ["Open-Vocabulary Semantic Parsing with both Distributional Statistics and Formal Knowledge"](http://arxiv.org/abs/1607.03542) Gardner, Krishnamurthy
+  `semantic parsing`
+
+----
+#### ["Globally Normalized Transition-Based Neural Networks"](http://arxiv.org/abs/1603.06042) Andor, Alberti, Weiss, Severyn, Presta, Ganchev, Petrov, Collins
+  `dependency parsing` `SyntaxNet` `Parsey McParseface`
 >	"The parser uses a feed forward NN, which is much faster than the RNN usually used for parsing. Also the paper is using a global method to solve the label bias problem. This method can be used for many tasks and indeed in the paper it is used also to shorten sentences by throwing unnecessary words. The label bias problem arises when predicting each label in a sequence using a softmax over all possible label values in each step. This is a local approach but what we are really interested in is a global approach in which the sequence of all labels that appeared in a training example are normalized by all possible sequences. This is intractable so instead a beam search is performed to generate alternative sequences to the training sequence. The search is stopped when the training sequence drops from the beam or ends. The different beams with the training sequence are then used to compute the global loss."  
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1603.06042>
   - `code` <https://github.com/tensorflow/models/tree/master/research/syntaxnet>
 
 ----
-#### ["Semantic Parsing with Semi-Supervised Sequential Autoencoders"](http://arxiv.org/abs/1609.09315) (DeepMind)
+#### ["A Simple but Tough-to-Beat Baseline for Sentence Embeddings"](https://openreview.net/pdf?id=SyK00v5xx) Arora, Liang, Ma
+  `text embedding`
+>	"The success of neural network methods for computing word embeddings has motivated methods for generating semantic embeddings of longer pieces of text, such as sentences and paragraphs. Surprisingly, Wieting et al (ICLR’16) showed that such complicated methods are outperformed, especially in out-of-domain (transfer learning) settings, by simpler methods involving mild retraining of word embeddings and basic linear regression. The method of Wieting et al. requires retraining with a substantial labeled dataset such as Paraphrase Database (Ganitkevitch et al., 2013). The current paper goes further, showing that the following completely unsupervised sentence embedding is a formidable baseline: Use word embeddings computed using one of the popular methods on unlabeled corpus like Wikipedia, represent the sentence by a weighted average of the word vectors, and then modify them a bit using PCA/SVD. This weighting improves performance by about 10% to 30% in textual similarity tasks, and beats sophisticated supervised methods including RNN’s and LSTM’s."  
+>	"The paper also gives a theoretical explanation of the success of the above unsupervised method using a latent variable generative model for sentences, which is a simple extension of the model in Arora et al. (TACL’16) with new “smoothing” terms that allow for words occurring out of context, as well as high probabilities for words like and, not in all contexts."  
+  - `video` <https://youtube.com/watch?v=BCsOrewkmH4> (Liang)
+  - `video` <https://youtu.be/KR46z_V0BVw?t=49m10s> (Arora)
+  - <https://akshayka.github.io/papers/html/arora2017sentence-embeddings.html>
+  - <https://github.com/PrincetonML/SIF>
+  - <https://github.com/YingyuLiang/SIF>
 
-#### ["Open-Vocabulary Semantic Parsing with both Distributional Statistics and Formal Knowledge"](http://arxiv.org/abs/1607.03542) (Gardner)
-
-#### ["Learning a Neural Semantic Parser from User Feedback"](https://arxiv.org/abs/1704.08760)
->	"We learn a semantic parser for an academic domain from scratch by deploying an online system using our interactive learning algorithm. After three train-deploy cycles, the system correctly answered 63.51% of user’s questions. To our knowledge, this is the first effort to learn a semantic parser using a live system, and is enabled by our models that can directly parse language to SQL without manual intervention."
-
-----
-#### ["Discovering Discrete Latent Topics with Neural Variational Inference"](https://arxiv.org/abs/1706.00359) (DeepMind)
-  - `video` <https://vimeo.com/238222598> (Miao)
-
-#### ["Neural Variational Inference for Text Processing"](http://arxiv.org/abs/1511.06038) (DeepMind)
-  - `post` <http://dustintran.com/blog/neural-variational-inference-for-text-processing/>
-  - `code` <https://github.com/carpedm20/variational-text-tensorflow>
-  - `code` <https://github.com/cheng6076/NVDM>
+#### ["Learning to Compute Word Embeddings On the Fly"](https://arxiv.org/abs/1706.00286) Bahdanau, Bosc, Jastrzebski, Grefenstette, Vincent, Bengio
+  `word embedding`
+  - `notes` <https://theneuralperspective.com/2017/06/05/more-on-embeddings-spring-2017/>
 
 ----
-#### ["Toward Controlled Generation of Text"](http://arxiv.org/abs/1703.00955) (Salakhutdinov)
-  - `video` <https://vimeo.com/238222247> (Hu)
+#### ["Unbounded Cache Model for Online Language Modeling with Open Vocabulary"](https://arxiv.org/abs/1711.02604) Grave, Cisse, Joulin
+  `language modeling`
+>	"We propose an extension of continuous cache models, which can scale to larger contexts. We use a large scale non-parametric memory component that stores all the hidden activations seen in the past. We leverage recent advances in approximate nearest neighbor search and quantization algorithms to store millions of representations while searching them efficiently."  
 
-#### ["Improved Variational Autoencoders for Text Modeling using Dilated Convolutions"](http://arxiv.org/abs/1702.08139) (Salakhutdinov)
-  - `video` <https://vimeo.com/238222483> (Hu)
-  - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/improved-variational-autoencoders-for-text-modeling-using-dilated-convolutions/> `in russian`
+#### ["Improving Neural Language Models with a Continuous Cache"](http://arxiv.org/abs/1612.04426) Grave, Joulin, Usunier
+  `language modeling` `adaptive softmax`
 
-#### ["A Hybrid Convolutional Variational Autoencoder for Text Generation"](http://arxiv.org/abs/1702.02390)
-  - `code` <https://github.com/stas-semeniuta/textvae>
-
-#### ["Generating Sentences from a Continuous Space"](http://arxiv.org/abs/1511.06349) (Google Brain)
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1511.06349>
-  - `code` <https://github.com/analvikingur/pytorch_RVAE>
-  - `code` <https://github.com/cheng6076/Variational-LSTM-Autoencoder>
-
-
-
----
-### dialog systems
-
-----
-#### ["How NOT To Evaluate Your Dialogue System: An Empirical Study of Unsupervised Evaluation Metrics for Dialogue Response Generation"](http://arxiv.org/abs/1603.08023)
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/LiuLSNCP16#shagunsodhani>
-
-#### ["On the Evaluation of Dialogue Systems with Next Utterance Classification"](http://arxiv.org/abs/1605.05414)
-
-#### ["Towards an Automatic Turing Test: Learning to Evaluate Dialogue Responses"](https://arxiv.org/abs/1708.07149)
-  - `video` <https://youtube.com/watch?v=vTgwWobuoFw> (Pineau)
-
-----
-#### ["A Deep Reinforcement Learning Chatbot"](https://arxiv.org/abs/1709.02349) (Bengio)
-
-----
-#### ["Learning from Real Users: Rating Dialogue Success with Neural Networks for Reinforcement Learning in Spoken Dialogue Systems"](http://arxiv.org/abs/1508.03386) (Young)
-
-#### ["On-line Active Reward Learning for Policy Optimisation in Spoken Dialogue Systems"](http://arxiv.org/abs/1605.07669) (Young)
-
-#### ["Continuously Learning Neural Dialogue Management"](http://arxiv.org/abs/1606.02689) (Young)
-
-#### ["Online Sequence-to-Sequence Reinforcement Learning for Open-domain Conversational Agents"](http://arxiv.org/abs/1612.03929)
-
-----
-#### ["Generative Deep Neural Networks for Dialogue: A Short Review"](http://arxiv.org/abs/1611.06216) (Pineau)
-
-#### ["Emulating Human Conversations using Convolutional Neural Network-based IR"](http://arxiv.org/abs/1606.07056)
-
-#### ["Two are Better than One: An Ensemble of Retrieval- and Generation-Based Dialog Systems"](http://arxiv.org/abs/1610.07149)
-
-#### ["Machine Comprehension by Text-to-Text Neural Question Generation"](https://arxiv.org/abs/1705.02012) (Maluuba)
-  - `video` <https://youtube.com/watch?v=UIzcIC5RQN8>
-
-----
-#### ["Latent Intention Dialogue Models"](https://arxiv.org/abs/1705.10229) (Young)
->	"Learning an end-to-end dialogue system is appealing but challenging because of the credit assignment problem. Discrete latent variable dialogue models such as LIDM are attractive because the latent variable can serve as an interface for decomposing the learning of language and the internal dialogue decision-making. This decomposition can effectively help us resolve the credit assignment problem where different learning signals can be applied to different sub-modules to update the parameters. In variational inference for discrete latent variables, the latent distribution is basically updated by the reward from the variational lower bound. While in reinforcement learning, the latent distribution (i.e. policy network) is updated by the rewards from dialogue success and sentence BLEU score. Hence, the latent variable bridges the different learning paradigms such as Bayesian learning and reinforcement learning and brings them together under the same framework. This framework provides a more robust neural network-based approach than previous approaches because it does not depend solely on sequence-to-sequence learning but instead explicitly models the hidden dialogue intentions underlying the user’s utterances and allows the agent to directly learn a dialogue policy through interaction."  
-  - `video` <https://vimeo.com/238222204> (Miao)
-
-#### ["Hybrid Code Networks: Practical and Efficient End-to-end Dialog Control with Supervised and Reinforcement Learning"](https://arxiv.org/abs/1702.03274) (Zweig)
->	"End-to-end methods lack a general mechanism for injecting domain knowledge and constraints. For example, simple operations like sorting a list of database results or updating a dictionary of entities can expressed in a few lines of software, yet may take thousands of dialogs to learn. Moreover, in some practical settings, programmed constraints are essential – for example, a banking dialog system would require that a user is logged in before they can retrieve account information."  
->	"In addition to learning an RNN, HCNs also allow a developer to express domain knowledge via software and action templates."  
-
-#### ["Adversarial Learning for Neural Dialogue Generation"](http://arxiv.org/abs/1701.06547) (Jurafsky)
-  - `code` <https://github.com/jiweil/Neural-Dialogue-Generation>
-
-#### ["End-to-End Reinforcement Learning of Dialogue Agents for Information Access"](http://arxiv.org/abs/1609.00777) (Deng)
-
-#### ["Efficient Exploration for Dialog Policy Learning with Deep BBQ Networks & Replay Buffer Spiking"](http://arxiv.org/abs/1608.05081) (Deng)
-
-#### ["Neural Belief Tracker: Data-Driven Dialogue State Tracking"](http://arxiv.org/abs/1606.03777) (Young)
-
-#### ["Policy Networks with Two-Stage Training for Dialogue Systems"](http://arxiv.org/abs/1606.03152) (Maluuba)
-  - `post` <http://www.maluuba.com/blog/2016/11/23/deep-reinforcement-learning-in-dialogue-systems>
-
-----
-#### ["Deep Reinforcement Learning for Dialogue Generation"](http://arxiv.org/abs/1606.01541) (Jurafsky)
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/emnlp/LiMRJGG16>
-
-#### ["End-to-End LSTM-based Dialog Control Optimized with Supervised and Reinforcement Learning"](http://arxiv.org/abs/1606.01269) (Zweig)
-
-#### ["Learning End-to-End Goal-Oriented Dialog"](http://arxiv.org/abs/1605.07683) (Facebook AI Research)
-  - `video` <https://facebook.com/iclr.cc/videos/1712966538732405/> (27:39) (Boureau)
-
-#### ["A Network-based End-to-End Trainable Task-oriented Dialogue System"](http://arxiv.org/abs/1604.04562) (Young)
-  - `video` <http://videolectures.net/deeplearning2016_wen_network_based/> (Wen)
-
-#### ["Towards Conversational Recommender Systems"](http://kdd.org/kdd2016/subtopic/view/towards-conversational-recommender-systems) (Hoffman)
-  - `video` <https://periscope.tv/WiMLworkshop/1vAGRXDbvbkxl> (Christakopoulou)
-  - `video` <https://youtube.com/watch?v=nLUfAJqXFUI> (Christakopoulou)
-
-----
-#### ["A Copy-Augmented Sequence-to-Sequence Architecture Gives Good Performance on Task-Oriented Dialogue"](http://arxiv.org/abs/1701.04024) (Manning)
-  - `notes` <https://medium.com/@sharaf/a-paper-a-day-14-a-copy-augmented-sequence-to-sequence-architecture-gives-good-performance-on-44727e880044>
-
-#### ["Multiresolution Recurrent Neural Networks: An Application to Dialogue Response Generation"](http://arxiv.org/abs/1606.00776) (Bengio)
-
-#### ["An Attentional Neural Conversation Model with Improved Specificity"](http://arxiv.org/abs/1606.01292) (Zweig)
-
-#### ["A Hierarchical Latent Variable Encoder-Decoder Model for Generating Dialogues"](http://arxiv.org/abs/1605.06069) (Bengio)
-  - `slides` <http://cs.mcgill.ca/~rlowe1/problem_with_neural_chatbots.pdf> (Lowe)
-
-----
-#### ["LSTM-based Mixture-of-Experts for Knowledge-Aware Dialogues"](http://arxiv.org/abs/1605.01652)
-
-#### ["Multi-domain Neural Network Language Generation for Spoken Dialogue Systems"](http://arxiv.org/abs/1603.01232)
-
-#### ["Sentence Level Recurrent Topic Model: Letting Topics Speak for Themselves"](http://arxiv.org/abs/1604.02038)
-
-#### ["Context-aware Natural Language Generation with Recurrent Neural Networks"](http://arxiv.org/abs/1611.09900)
-
-#### ["Data Distillation for Controlling Specificity in Dialogue Generation"](http://arxiv.org/abs/1702.06703) (Jurafsky)
-
-----
-#### ["A Persona-Based Neural Conversation Model"](http://arxiv.org/abs/1603.06155)
-  - `code` <https://github.com/jiweil/Neural-Dialogue-Generation>
-
-#### ["Conversational Contextual Cues: The Case of Personalization and History for Response Ranking"](http://arxiv.org/abs/1606.00372) (Kurzweil)
-
-#### ["A Sequence-to-Sequence Model for User Simulation in Spoken Dialogue Systems"](http://arxiv.org/abs/1607.00070) (Maluuba)
+#### ["Pointer Sentinel Mixture Models"](http://arxiv.org/abs/1609.07843) Merity, Xiong, Bradbury, Socher
+  `language modeling`
+>	"The authors combine a standard LSTM softmax with Pointer Networks in a mixture model called Pointer-Sentinel LSTM. The pointer networks helps with rare words and long-term dependencies but is unable to refer to words that are not in the input. The opposite is the case for the standard softmax."  
+  - `video` <https://youtube.com/watch?v=Ibt8ZpbX3D8> (Merity)
+  - `video` <https://youtu.be/Q7ifcUuMZvk?t=30m11s> (Socher)
+  - `notes` <https://theneuralperspective.com/2016/10/04/pointer-sentinel-mixture-models/>

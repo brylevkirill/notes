@@ -25,7 +25,7 @@
   [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)  
   [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
 
-  [natural language processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.txt)  
+  [natural language processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md)  
   [information retrieval](https://github.com/brylevkirill/notes/blob/master/Information%20Retrieval.md)  
   [semantic web](https://github.com/brylevkirill/tech/blob/master/RDF/RDF.txt)  
 
