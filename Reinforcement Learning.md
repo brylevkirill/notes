@@ -944,7 +944,8 @@
 
 ----
 
-  [overview](https://youtu.be/AggqBRdz6CQ?t=9m53s) of deep bayesian reinforcement learning by Shakir Mohamed `video`  
+  ["Bayesian Policy Search"](https://youtu.be/AggqBRdz6CQ?t=9m53s) by Shakir Mohamed `video`  
+  ["Is Reinforcement Learning Inference in a Graphical Model?"](https://vimeo.com/240428644#t=1h16m18s) by Sergey Levine `video`  
   ["Bayesian Inference for Reinforcement Learning"](https://youtube.com/watch?v=KZd-jkmeIcU) by Sergey Bartunov `video` `in russian`
 	([slides](https://drive.google.com/drive/folders/0B2zoFVYw1rN3N0RUNXE1WnNObTQ) `in english`)  
 
@@ -1923,6 +1924,7 @@ interesting recent papers:
 >	"For maximum likelihood training, we found prediction gain to be the most consistent signal, while for variational inference training, gradient variational complexity gain performed best. Importantly, both are instantaneous, in the sense that they can be evaluated using only the samples used for training."  
 
   - `video` <https://youtu.be/-u32TOPGIbQ?t=2m43s> (Graves)
+  - `video` <https://vimeo.com/237275086> (Bellemare)
   - [Artificial Curiosity and Creativity](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory of Juergen Schmidhuber
 
 
@@ -2377,6 +2379,7 @@ interesting recent papers:
   - `notes` <https://blog.acolyer.org/2017/05/12/learning-to-act-by-predicting-the-future/>
   - `code` <https://github.com/IntelVCL/DirectFuturePrediction>
   - `code` <https://github.com/NervanaSystems/coach/blob/master/agents/dfp_agent.py>
+  - `code` <https://github.com/flyyufelix/Direct-Future-Prediction-Keras>
 
 
 #### ["Deep Reinforcement Learning from Self-Play in Imperfect-Information Games"](http://arxiv.org/abs/1603.01121) Heinrich, Silver (Poker)
@@ -2593,9 +2596,10 @@ interesting recent papers:
 >	"Stochastic value gradients generalize DPG to stochastic policies in a number of ways, giving a spectrum from model-based to model-free algorithms. While SVG(0) is a direct stochastic generalization of DPG, SVG(1) combines an actor, critic and model f. The actor is trained through a combination of gradients from the critic, model and reward simultaneously."
 
   - `video` <https://youtu.be/PYdL7bcn_cM> (demo)
+  - `video` <https://youtu.be/rO7Dx8pSJQw?t=50m> (Schulman)
   - `video` <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724> (Abbeel)
   - `video` <https://youtu.be/mrgJ53TIcQc?t=1h10m31s> (Seleznev) `in russian`
-  - `video` <https://youtu.be/rO7Dx8pSJQw?t=50m> (Schulman)
+  - `post` <https://bayesgroup.github.io/sufficient-statistics/posts/learning-continuous-control-policies-by-stochastic-value-gradients/> `in russian`
 
 
 #### ["Reinforced Variational Inference"](http://approximateinference.org/accepted/WeberEtAl2015.pdf) Weber, Heess, Eslami, Schulman, Wingate, Silver
@@ -2747,6 +2751,7 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=bcnCo9RxhB8> (Ermon)
   - `video` <https://youtu.be/d9DlQSJQAoI?t=22m12s> (Finn)
   - `video` <http://videolectures.net/deeplearning2017_de_freitas_deep_control/> (1:09:43) (de Freitas)
+  - `notes` <http://tsong.me/blog/gail/>
   - `code` <https://github.com/openai/imitation>
   - `code` <https://github.com/DanielTakeshi/rl_algorithms/tree/master/il>
 

@@ -16,6 +16,7 @@
     - [variational inference](#variational-inference)
     - [monte carlo inference](#monte-carlo-inference)
     - [likelihood-free inference](#likelihood-free-inference)
+    - [belief propagation](#belief-propagation)
     - [causal inference](#causal-inference)
   * [interesting papers](#interesting-papers)
 
@@ -66,17 +67,21 @@
 ---
 ### overview
 
-  ["Probabilistic Machine Learning - Foundations and Frontiers"](https://youtube.com/watch?v=3foXO9noKj8) by Zoubin Ghahramani `video`  
-  ["Probabilistic Modelling and Bayesian Inference"](https://youtube.com/watch?v=kjo9Y_Vrgn4) by Zoubin Ghahramani `video`  
-  ["Introduction to Bayesian Inference"](http://videolectures.net/mlss09uk_bishop_ibi/) by Chris Bishop `video`  
+  ["The Three Faces of Bayes"](https://slackprop.wordpress.com/2016/08/28/the-three-faces-of-bayes/) by Burr Settles  
+  ["Bayesian Machine Learning"](http://fastml.com/bayesian-machine-learning/) by Zygmunt Zajac  
 
-  [overview](http://fastml.com/bayesian-machine-learning/) by Zygmunt Zajac  
+  ["Bayesian Methods for Machine Learning"](http://www.cs.toronto.edu/~radford/ftp/bayes-tut.pdf) by Radford Neal  
+
   [overview](http://metacademy.org/roadmaps/rgrosse/bayesian_machine_learning) by Roger Grosse  
-  [overview](http://www.cs.toronto.edu/~radford/ftp/bayes-tut.pdf) by Radford Neal  
-  [overview](https://slackprop.wordpress.com/2016/08/28/the-three-faces-of-bayes/) by Burr Settles  
   [overview](http://frnsys.com/ai_notes/machine_learning/bayesian_learning.html) by Francis Tseng  
 
   ["Probabilistic Learning and Reasoning"](https://www.cs.toronto.edu/~duvenaud/courses/csc412/index.html) course by David Duvenaud
+
+----
+
+  ["Probabilistic Machine Learning - Foundations and Frontiers"](https://youtube.com/watch?v=3foXO9noKj8) by Zoubin Ghahramani `video`  
+  ["Probabilistic Modelling and Bayesian Inference"](https://youtube.com/watch?v=kjo9Y_Vrgn4) by Zoubin Ghahramani `video`  
+  ["Introduction to Bayesian Inference"](http://videolectures.net/mlss09uk_bishop_ibi/) by Chris Bishop `video`  
 
   [Coursera](https://coursera.org/learn/bayesian-methods-in-machine-learning) course by Daniil Polykovskiy and Alexander Novikov `video`
 
@@ -156,10 +161,9 @@
   ["Information Theory, Inference and Learning Algorithms"](http://www.inference.phy.cam.ac.uk/mackay/itila/book.html) by David MacKay  
   ["Bayesian Reasoning and Machine Learning"](http://web4.cs.ucl.ac.uk/staff/D.Barber/pmwiki/pmwiki.php?n=Brml.Online) by David Barber  
   ["Probabilistic Graphical Models: Principles and Techniques"](https://dropbox.com/s/cc3mafx3wp0ad1t/Daphne%20Koller%20and%20Nir%20Friedman%20-%20Probabilistic%20Graphical%20Models%20-%20Principles%20and%20Techniques.pdf) by Daphne Koller and Nir Friedman  
+  ["Graphical Models, Exponential Families, and Variational Inference"](https://people.eecs.berkeley.edu/~wainwrig/Papers/WaiJor08_FTML.pdf) by Martin Wainwright and Michael Jordan  
   ["Causality: Models, Reasoning, and Inference"](https://dropbox.com/s/m2m1935e6tohii9/Pearl%20-%20Causality%3A%20Models%2C%20Reasoning%2C%20and%20Inference.pdf) by Judea Pearl  
   ["Probability Theory: The Logic of Science"](https://dropbox.com/s/pt5tpm9i5wofbl5/Jaynes%20-%20Probability%20Theory%20-%20The%20Logic%20of%20Science.pdf) by E.T. Jaynes  
-
-  [reading list](https://cocosci.berkeley.edu/tom/bayes.html)
 
 ----
 
@@ -222,13 +226,16 @@
 
   "The biggest advantage of graphical models is relatively simple way to distinguish conditionally independent variables, which simplify further analysis and allows to significantly lower number of factors given variable depends on."
 
+  overview by Roger Grosse
+	([first part](https://metacademy.org/roadmaps/rgrosse/bayesian_machine_learning#models),
+	[second part](https://metacademy.org/roadmaps/rgrosse/bayesian_machine_learning#advanced-topics))
 
   [notes](https://ermongroup.github.io/cs228-notes/) by Volodymyr Kuleshov et al.  
   ["Graphical Models"](http://www.deeplearningbook.org/contents/graphical_models.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville  
 
-  [introduction](http://youtube.com/watch?v=ju1Grt2hdko) by Chris Bishop `video`  
-  [introduction](http://youtube.com/watch?v=W6XyXeB3Cko) by Alex Smola `video`  
-  [introduction](http://youtube.com/watch?v=D_dNxrIazco) by Dmitry Vetrov `video` `in russian`  
+  [overview](http://youtube.com/watch?v=ju1Grt2hdko) by Chris Bishop `video`  
+  [overview](http://youtube.com/watch?v=W6XyXeB3Cko) by Alex Smola `video`  
+  [overview](http://youtube.com/watch?v=D_dNxrIazco) by Dmitry Vetrov `video` `in russian`  
 
   ["Probabilistic Graphical Models"](https://coursera.org/course/pgm) course by Daphne Koller ([videos](https://youtube.com/playlist?list=PL50E6E80E8525B59C))
 
@@ -244,6 +251,7 @@
 
   "The basic point of non-parametric models is that they provide a prior distribution on real-valued functions. This lets you do regression as Bayesian inference: given observed data, Bayes rule turns your prior on functions into a posterior distribution. Having a posterior distribution on functions, rather than just a single learned function, means you can reason about uncertainty of your predictions at any set of points."
 
+  [overview](https://metacademy.org/roadmaps/rgrosse/bayesian_machine_learning#bayesian-nonparametrics) by Roger Grosse
 
   [overview](https://youtu.be/H7AMB0oo__4?t=21m51s) by Zoubin Ghahramani `video`  
 
@@ -286,6 +294,10 @@
 ---
 ### inference and learning
 
+  [overview](https://metacademy.org/roadmaps/rgrosse/bayesian_machine_learning#basic-inference-algorithms) by Roger Grosse
+
+----
+
   "Imagine you have a distribution p(x) and you want to compute the integral ∫p(x)F(x)dx for some function F(x) of interest. We call the computation of this integral as inference. Examples include Bayesian inference where now p(x) is some posterior distribution and F(x) is the likelihood function of x on unseen data. Or if p(x) is unnormalised, taking F(x)=1 would return the integral as the normalising constant (or partition function) of p. Unfortunately for many complicated models we are fancy on now (say neural networks) this integral is intractable, and here intractability means you can't compute the exact value of the integral due to computational constraints (say running time, memory usage, precision, etc). So instead we use approximate inference to approximate that integral. There are mainly two ways to do approximate inference: directly approximating the integral you want, or, finding an accurate approximation q to the target distribution p and using it for integration later. The first approach is mainly dominated by Monte Carlo methods while the second one is dominated by variational inference methods."
 
   ["Topics in Approximate Inference"](http://yingzhenli.net/home/en/?page_id=895) by Yingzhen Li
@@ -296,6 +308,7 @@
   - [variational inference](#variational-inference)
   - [monte carlo methods](#monte-carlo-methods)
   - [likelihood-free inference](#likelihood-free-inference)
+  - [belief propagation](#belief-propagation)
   - [causal inference](#causal-inference)
 
 
@@ -305,16 +318,22 @@
 
   EM algorithm estimates parameters of model iteratively, starting from some initial guess. Each iteration consists of Expectation step, which finds distribution for unobserved variables, given known values for observed variables and current estimate of parameters, and Maximization step, which re-estimates the parameters with maximum likelihood, under assumption that distribution found on E step is correct.
 
+  EM algorithm can be interpreted as coordinate ascent procedure which optimizes variational lower bound on the likelihood function. This connects it with variational inference algorithms and justifies various generalizations and approximations to the algorithm.
+
 ----
 
-  [introduction](https://youtu.be/PpX6hllPVLs?t=1h1m22s) by Alex Smola `video`
-
-  introduction by Dmitry Vetrov ([part 1](http://youtu.be/U0LylVL-zJM?t=35m59s), [part 2](http://youtube.com/watch?v=CqjqTbUgbOo)) `video` `in russian`  
-  [introduction](https://youtube.com/watch?v=vPRphQh1eGQ&t=32m54s) by Konstantin Vorontsov `video` `in russian`  
+  [overview](https://metacademy.org/graphs/concepts/expectation_maximization)
 
   ["EM Algorithm and Variants: an Informal Tutorial"](http://arxiv.org/abs/1105.1476) by Alexis Roche `paper`
 
   ["VAE = EM"](https://machinethoughts.wordpress.com/2017/10/02/vae-em/) by David McAllester
+
+----
+
+  [overview](https://youtu.be/PpX6hllPVLs?t=1h1m22s) by Alex Smola `video`
+
+  overview by Dmitry Vetrov ([part 1](http://youtu.be/U0LylVL-zJM?t=35m59s), [part 2](http://youtube.com/watch?v=CqjqTbUgbOo)) `video` `in russian`  
+  [overview](https://youtube.com/watch?v=vPRphQh1eGQ&t=32m54s) by Konstantin Vorontsov `video` `in russian`  
 
 ----
 
@@ -355,8 +374,7 @@
 
 ----
 
-  [introduction](https://youtu.be/yzNbaAPKXA8?t=19m45s) by Zoubin Ghahramani `video`  
-  [introduction](https://youtube.com/watch?v=2pEkWk-LHmU) by Jordan Boyd-Graber `video`  
+  [overview](https://metacademy.org/roadmaps/rgrosse/bayesian_machine_learning#variational-inference) by Roger Grosse
 
   ["Variational Inference in 5 Minutes"](http://davmre.github.io/inference/2015/11/13/elbo-in-5min/) by Dave Moore  
   ["General Purpose Variational Inference"](http://davmre.github.io/inference/2015/11/13/general_purpose_variational_inference/) by Dave Moore  
@@ -366,6 +384,9 @@
   ["An Introduction to Variational Methods for Graphical Model"](https://www.cs.berkeley.edu/~jordan/papers/variational-intro.pdf) by Jordan et al. `paper`  
 
 ----
+
+  [overview](https://youtu.be/yzNbaAPKXA8?t=19m45s) by Zoubin Ghahramani `video`  
+  [overview](https://youtube.com/watch?v=2pEkWk-LHmU) by Jordan Boyd-Graber `video`  
 
   ["Variational Inference: Foundations and Innovations"](https://youtube.com/watch?v=Dv86zdWjJKQ) by David Blei `video`  
   ["Variational Inference: Foundations and Modern Methods"](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods)
@@ -507,18 +528,22 @@
 
 ----
 
-  ["Why is it hard to directly sample from certain statistical distributions"](https://quora.com/Why-is-it-hard-to-directly-sample-from-certain-statistical-distributions#!n=12)
+  [overview](https://metacademy.org/roadmaps/rgrosse/bayesian_machine_learning#sampling-algorithms) by Roger Grosse
 
   ["Introduction to MCMC"](http://johndcook.com/blog/2016/01/23/introduction-to-mcmc/) by John Cook  
   ["Markov Chain Monte Carlo Without all the Bullshit"](http://jeremykun.com/2015/04/06/markov-chain-monte-carlo-without-all-the-bullshit/) by Jeremy Kun  
 
+  ["Markov Chains: Why Walk When You Can Flow?"](http://elevanth.org/blog/2017/11/28/build-a-better-markov-chain/) by Richard McElreath
+
+  ["Why is it hard to directly sample from certain statistical distributions"](https://quora.com/Why-is-it-hard-to-directly-sample-from-certain-statistical-distributions/answer/Charles-Yang-Zheng)
+
 ----
 
-  [introduction](https://youtube.com/watch?v=TNZk8lo4e-Q) by Nando de Freitas `video`  
-  [introduction](https://youtube.com/watch?v=M6aoDSsq2ig) by Alex Smola `video`  
-  [introduction](https://youtu.be/qQFF4tPgeWI?t=1h55m39s) by Bob Carpenter `video`  
-  [introduction](https://youtube.com/watch?v=4qfTUF9LudY) by Igor Kuralenok `video` `in russian`  
-  introduction by Igor Kuralenok ([first part](https://youtube.com/watch?v=q-J-wh74OJA), [second part](https://youtube.com/watch?v=6Q1YdWP92mo)) `video` `in russian`  
+  [overview](https://youtube.com/watch?v=TNZk8lo4e-Q) by Nando de Freitas `video`  
+  [overview](https://youtube.com/watch?v=M6aoDSsq2ig) by Alex Smola `video`  
+  [overview](https://youtu.be/qQFF4tPgeWI?t=1h55m39s) by Bob Carpenter `video`  
+  [overview](https://youtube.com/watch?v=4qfTUF9LudY) by Igor Kuralenok `video` `in russian`  
+  overview by Igor Kuralenok ([first part](https://youtube.com/watch?v=q-J-wh74OJA), [second part](https://youtube.com/watch?v=6Q1YdWP92mo)) `video` `in russian`  
 
   [tutorial](http://research.microsoft.com/apps/video/default.aspx?id=259575) by Iain Murray `video`  
   [tutorial](http://nowozin.net/sebastian/blog/history-of-monte-carlo-methods-part-1.html) by Sebastian Nowozin `video`  
@@ -554,6 +579,15 @@
   ["Fast Epsilon-free Inference of Simulation Models with Bayesian Conditional Density Estimation"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#fast-epsilon-free-inference-of-simulation-models-with-bayesian-conditional-density-estimation-papamakarios-murray) by Papamakarios et al. `paper`  
 
   [generative adversarial networks](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#generative-models---generative-adversarial-networks) as implicit models with likelihood-free inference
+
+
+
+---
+### belief propagation
+
+  [overview](https://metacademy.org/roadmaps/rgrosse/bayesian_machine_learning#belief-propagation) by Roger Grosse
+
+  [expectation propagation](https://metacademy.org/graphs/concepts/expectation_propagation)
 
 
 
@@ -601,6 +635,7 @@
   ["Counterfactual Reasoning and Massive Data Sets"](https://youtube.com/watch?v=s37cIYDOM6s) by Leon Bottou `video`  
   ["The Missing Signal"](https://youtube.com/watch?v=DfJeaa--xO0) by Leon Bottou `video`  
 
+  ["Causal Learning"](https://vimeo.com/238274659#t=13m22s) by Bernhard Scholkopf `video`  
   ["Toward Causal Machine Learning"](https://youtube.com/watch?v=ooeRlw3U2zU) by Bernhard Scholkopf `video`  
   ["Statistical and Causal Approaches to Machine Learning"](https://youtu.be/ek9jwRA2Jio?t=26m) by Bernhard Scholkopf `video`  
 

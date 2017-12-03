@@ -70,7 +70,7 @@
 
 ----
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#information-retrieval)
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)
 
 
 ----
@@ -95,10 +95,17 @@
 
 
 #### ["Ask the Right Questions: Active Question Reformulation with Reinforcement Learning"](https://arxiv.org/abs/1705.07830) Buck et al.
-  `query reformulation`
->	"We frame Question Answering as a Reinforcement Learning task, an approach that we call Active Question Answering. We propose an agent that sits between the user and a black box question-answering system and which learns to reformulate questions to elicit the best possible answers. The agent probes the system with, potentially many, natural languagere formulations of an initial question and aggregates the returned evidence to yield the best answer. The reformulation system is trained end-to-end to maximize answer quality using policy gradient. We evaluate on SearchQA, a dataset of complex questions extracted from Jeopardy!. Our agent improves F1 by 11% over a state-of-the-art base model that uses the original question/answer pairs."
+>	"We frame Question Answering as a Reinforcement Learning task, an approach that we call Active Question Answering. We propose an agent that sits between the user and a black box question-answering system and which learns to reformulate questions to elicit the best possible answers. The agent probes the system with, potentially many, natural language reformulations of an initial question and aggregates the returned evidence to yield the best answer. The reformulation system is trained end-to-end to maximize answer quality using policy gradient. We evaluate on SearchQA, a dataset of complex questions extracted from Jeopardy!. Our agent improves F1 by 11% over a state-of-the-art base model that uses the original question/answer pairs."
 
   - `video` <https://youtu.be/soZXAH3leeQ?t=34m43s> (Cho)
+
+
+#### ["Task-Oriented Query Reformulation with Reinforcement Learning"](https://arxiv.org/abs/1704.04572) Nogueira, Cho
+>	"Search engines play an important role in our everyday lives by assisting us in finding the information we need. When we input a complex query, however, results are often far from satisfactory. In this work, we introduce a query reformulation system based on a neural network that rewrites a query to maximize the number of relevant documents returned. We train this neural network with reinforcement learning. The actions correspond to selecting terms to build a reformulated query, and the reward is the document recall. We evaluate our approach on three datasets against strong baselines and show a relative improvement of 5-20% in terms of recall. Furthermore, we present a simple method to estimate a conservative upper-bound performance of a model in a particular environment and verify that there is still large room for improvements."
+
+  - `video` <https://youtu.be/soZXAH3leeQ?t=34m16s> (Cho)
+  - `video` <https://ku.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c933f3da-392f-4aeb-bd09-e766a8ba83aa> (5:03:10) (Nogueira)
+  - `code` <https://github.com/nyu-dl/QueryReformulator>
 
 
 

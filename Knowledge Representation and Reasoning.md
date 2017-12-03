@@ -850,9 +850,6 @@
 
   [Description logic](https://en.wikipedia.org/wiki/Description_logic) - formal language to represent [ontologies](#ontology)
 
-
-  ["Simply Logical - Intelligent Reasoning by Example"](https://www.cs.bris.ac.uk/~flach/SL/SL.pdf) by Peter Flach `book`
-
 ----
 
   ["Applying Deep Learning to Mathematical Reasoning"](https://youtube.com/watch?v=UAa2o0W7vcg) by Francois Chollet `video`
@@ -1340,6 +1337,7 @@ noise, inferring missing information, and determining which candidate facts shou
 >	"In this paper we explore a row-less extension of universal schema that forgoes explicit row representations for an aggregation function over its observed columns. This extension allows prediction between all rows in new textual mentions - whether seen at train time or not - and also provides a natural connection to the provenance supporting the prediction. Our models also have a smaller memory footprint. In this work we show that an aggregation function based on query-specific attention over relation types outperforms query independent aggregations. We show that aggregation models are able to predict on par with models with explicit row representations on seen row entries."
 
   - `video` <http://www.fields.utoronto.ca/video-archive/2016/11/2267-16181> (30:45) (McCallum)
+  - `audio` <https://soundcloud.com/nlp-highlights/18a> (Gardner, Ammar)
   - `slides` <http://akbc.ws/2016/slides/verga-akbc16.pdf>
 
 
@@ -1605,8 +1603,7 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 ---
 ### interesting papers - question answering over texts
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#information-retrieval) on information retrieval  
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning) on reasoning  
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)
 
 
 #### ["Adversarial Examples for Evaluating Reading Comprehension Systems"](https://arxiv.org/abs/1707.07328) Jia, Liang
@@ -1867,6 +1864,14 @@ these knowledge bases are greatly incomplete. For example, over 70% of people in
 >	"We describe Stanford’s two systems in the 2014 KBP Slot Filling competition. The first, and best performing system, is built on top of the DeepDive framework. The central lesson we would like to emphasize from this system is that leveraging large computers allows for completely removing the information retrieval component of a traditional KBP system, and allows for quick turnaround times while processing the entire source corpus as a single unit. DeepDive offers a convenient framework for developing systems on these large computers, including defining the pre-processing pipelines (feature engineering, entity linking, mention detection, etc.) and then defining and training a relation extraction model. The second system Stanford submitted is based around the MIML-RE relation extractor, following closely from the 2013 submission, but with the addition of learned patterns, and with MIML-RE trained fixing carefully selected manually annotated sentences. The central lesson we would like to emphasize from this system is that a relatively small annotation effort (10k sentences) over carefully selected examples can yield a surprisingly large gain in end-to-end performance on the Slot Filling task."
 
 >	"In DeepDive, calibration plots are used to summarize the overall quality of the results. Because DeepDive uses a joint probability model, each random variable is assigned a marginal probability. Ideally, if one takes all the facts to which DeepDive assigns a probability score of 0.95, then 95% of these facts are correct. We believe that probabilities remove a key element: the developer reasons about features, not the algorithms underneath. This is a type of algorithm independence that we believe is critical."
+
+
+#### ["Improving Information Extraction by Acquiring External Evidence with Reinforcement Learning"](http://arxiv.org/abs/1603.07954) Narasimhan, Yala, Barzilay
+  `knowledge base population`
+>	"Most successful information extraction systems operate with access to a large collection of documents. In this work, we explore the task of acquiring and incorporating external evidence to improve extraction accuracy in domains where the amount of training data is scarce. This process entails issuing search queries, extraction from new sources and reconciliation of extracted values, which are repeated until sufficient evidence is collected. We approach the problem using a reinforcement learning framework where our model learns to select optimal actions based on contextual information. We employ a deep Q-network, trained to optimize a reward function that reflects extraction accuracy while penalizing extra effort. Our experiments on two databases -- of shooting incidents, and food adulteration cases -- demonstrate that our system significantly outperforms traditional extractors and a competitive meta-classifier baseline."
+
+  - `video` <https://youtu.be/k5KWUpqMO2U?t=47m37s> (Narasimhan)
+  - `code` <https://github.com/karthikncode/DeepRL-InformationExtraction>
 
 
 #### ["Biperpedia: An Ontology for Search Applications"](http://www.vldb.org/pvldb/vol7/p505-gupta.pdf) Gupta, Halevy, Wang, Whang, Wu

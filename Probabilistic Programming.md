@@ -112,6 +112,10 @@
 
 ----
 
+  * [**TensorFlow**](https://www.tensorflow.org)  
+	[TensorFlow Distributions](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/distributions) ([paper](https://arxiv.org/abs/1711.10604) by Dillon et al.)  
+	[BayesFlow](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/bayesflow)  
+
   * [**Edward**](http://github.com/blei-lab/edward)  
 	["Edward, and some motivations"](http://dustintran.com/blog/a-quick-update-edward-and-some-motivations/) by Dustin Tran
 
@@ -119,8 +123,6 @@
 	["Edward: Library for probabilistic modeling, inference, and criticism"](https://youtube.com/watch?v=PvyVahNl8H8) by Dustin Tran `video` ([slides](http://dustintran.com/talks/Tran_Edward.pdf))  
 
 	[sample models](http://edwardlib.org/iclr2017)
-
-	[BayesFlow](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/bayesflow) from Google
 
   * [**Stan**](https://github.com/stan-dev)  
 	["Stan Hands-on"](https://youtube.com/watch?v=6NXRCtWQNMg) by Bob Carpenter `video`  

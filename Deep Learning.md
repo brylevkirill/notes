@@ -76,6 +76,8 @@
   ["Neural Networks for Machine Learning"](https://coursera.org/course/neuralnets) by Geoffrey Hinton ([videos](http://youtube.com/user/aicourses/playlists?shelf_id=2&view=50))  
   ["Convolutional Neural Networks for Visual Recognition"](http://cs231n.stanford.edu) by Andrej Karpathy ([videos](https://youtube.com/channel/UC2__PIf36huAgKFumlOIs6A))  
 
+  ["Neural Networks in Machine Learning"](https://sphere.mail.ru/curriculum/program/discipline/120/) by Daniil Polykovsky and Kuzma Hrabrov `in russian` ([videos](https://youtube.com/playlist?list=PLrCZzMib1e9oOGNLh6_d65HyfdqlJwTQP))
+
 
 #### books
 
@@ -1965,16 +1967,16 @@ x."
   - `video` <https://youtube.com/watch?v=EATWLTyLfmc> (Canziani)
   - `video` <https://youtube.com/watch?v=VKoLGnq15RM> (Raval)
   - `video` <https://youtube.com/watch?v=UZ9BgrofhKk> (Kozlov) `in russian`
-  - `post` <https://reddit.com/r/MachineLearning/comments/7c78sw/r_capsule_networks_explained/dpo6p0n/>
-  - `post` <https://hackernoon.com/what-is-a-capsnet-or-capsule-network-2bfbe48769cc>
   - `post` <https://medium.com/@pechyonkin/understanding-hintons-capsule-networks-part-i-intuition-b4b559d1159b>
-  - `post` <https://medium.com/@pechyonkin/understanding-hintons-capsule-networks-part-ii-how-capsules-work-153b6ade9f66>
+  - `post` <https://hackernoon.com/what-is-a-capsnet-or-capsule-network-2bfbe48769cc>
   - `post` <https://kndrck.co/posts/capsule_networks_explained/>
+  - `post` <https://medium.com/@mike_ross/a-visual-representation-of-capsule-network-computations-83767d79e737>
   - `notes` <https://blog.acolyer.org/2017/11/13/dynamic-routing-between-capsules/>
   - `code` <https://github.com/llSourcell/capsule_networks>
   - `code` <https://github.com/InnerPeace-Wu/CapsNet-tensorflow>
   - `code` <https://github.com/naturomics/CapsNet-Tensorflow>
   - `code` <https://github.com/gram-ai/capsule-networks>
+  - `code` <https://github.com/adambielski/CapsNet-pytorch>
   - `code` <https://github.com/nishnik/CapsNet-PyTorch>
   - `code` <https://github.com/XifengGuo/CapsNet-Keras>
   - `paper` ["Matrix Capsules with EM Routing"](https://openreview.net/forum?id=HJWLfGWRb)
@@ -2045,6 +2047,7 @@ x."
 ----
 >	"CTC is a type of neural network output and associated scoring function, for training recurrent neural networks such as LSTM networks to tackle sequence problems where the timing is variable. It can be used for tasks like recognising phonemes in speech audio. CTC refers to the outputs and scoring, and is independent of the underlying neural network structure. A CTC network has a continuous output (e.g. softmax), which is fitted through training to model the probability of a label. The input is a sequence of observations, and the outputs are a sequence of labels, which can include blank outputs. CTC does not attempt to learn boundaries and timings: Label sequences are considered equivalent if they differ only in alignment, ignoring blanks. Equivalent label sequences can occur in many ways – which makes scoring a non-trivial task. Fortunately there is an efficient forward-backwards algorithm. CTC scores can then be used with the back-propagation algorithm to update the neural network weights."
 
+  - `post` <https://distill.pub/2017/ctc/>
   - `post` <https://machinethoughts.wordpress.com/2017/11/02/ctc-training-latent-discrete-sequential-decisions-without-rl/>
 
 
@@ -2093,8 +2096,9 @@ x."
 
   - `post` <https://research.googleblog.com/2017/08/transformer-novel-neural-network.html>
   - `video` <https://youtube.com/watch?v=rBCqOTEfxvg> (Kaiser)
+  - `video` <https://youtube.com/watch?v=iDulhoQ2pro> (Kilcher)
   - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) `in russian`
-  - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani)
+  - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani, Uszkoreit)
   - `post` <https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/> (McAllester)
   - `notes` <https://blog.tomrochette.com/machine-learning/papers/ashish-vaswani-attention-is-all-you-need>
   - `notes` <https://medium.com/@sharaf/a-paper-a-day-24-attention-is-all-you-need-26eb2da90a91>
@@ -2726,6 +2730,8 @@ x."
 >	"To enable effective iterative refinement of structured outputs via gradient descent on the score of a DVN, we relax our outputs to live in a continuous space instead of a discrete space, and extend the domain of loss function so the loss applies to continuous variable outputs. Then, we train a DVN on many output examples encouraging the network to predict very accurate (negative) loss scores for any output hypothesis. We generate the output hypotheses via gradient descent at training time, so that the value net’s estimate around the inference trajectory is as accurate as possible. We also generate output hypotheses by finding adversarial cases. Once the value network is optimized, at inference, it finds output structures that maximize the score via gradient ascent on continuous relaxations of structured outputs."
 
 >	"deep value network that evaluates different output structures for a given input + gradient descent inference algorithm for structured output prediction"
+
+  - `video` <https://vimeo.com/238243269> (Norouzi)
 
 
 #### ["Show, Attend and Tell: Neural Image Caption Generation with Visual Attention"](http://arxiv.org/abs/1502.03044) Xu, Ba, Kiros, Cho, Courville, Salakhutdinov, Zemel, Bengio
