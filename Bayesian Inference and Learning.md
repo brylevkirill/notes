@@ -600,6 +600,10 @@
 
 ----
 
+  ["Causality"](http://www.homepages.ucl.ac.uk/~ucgtrbd/papers/causality.pdf) by Ricardo Silva `paper`
+
+----
+
   overview of [role](https://youtube.com/watch?v=uyZOcUDhIbY&t=20m5s) and [applications](https://youtube.com/watch?v=uyZOcUDhIbY&t=58m) by Michael I. Jordan `video`  
   [overview](https://www.edge.org/conversation/judea_pearl-engines-of-evidence) by Judea Pearl  
 

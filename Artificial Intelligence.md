@@ -61,6 +61,19 @@
 
 ----
 
+  "Cognitive Machine Learning" by Shakir Mohamed:
+  - ["Prologue"](http://blog.shakirm.com/2016/10/cognitive-machine-learning-prologue/)
+  - ["Learning to Explain"](http://blog.shakirm.com/2017/02/cognitive-machine-learning-1-learning-to-explain/)
+  - ["Uncertain Thoughts"](http://blog.shakirm.com/2017/03/cognitive-machine-learning-2-uncertain-thoughts/)
+
+  "Learning in Brains and Machines" by Shakir Mohamed:
+  - ["Temporal Differences"](http://blog.shakirm.com/2016/02/learning-in-brains-and-machines-1/)
+  - ["The Dogma of Sparsity"](http://blog.shakirm.com/2016/04/learning-in-brains-and-machines-2/)
+  - ["Synergistic and Modular Action"](http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/)
+  - ["Episodic and Interactive Memory"](http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-4-episodic-and-interactive-memory/)
+
+----
+
   [introductory course](https://youtube.com/channel/UCHBzJsIcRIVuzzHVYabikTQ/videos) by UC Berkeley `video`  
   [notes on AI](http://frnsys.com/ai_notes/) by Francis Tseng  
 
@@ -329,12 +342,6 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
   [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)
 
-  "Learning in Brains and Machines" by Shakir Mohamed:  
-  - ["Temporal Differences"](http://blog.shakirm.com/2016/02/learning-in-brains-and-machines-1/)  
-  - ["The Dogma of Sparsity"](http://blog.shakirm.com/2016/04/learning-in-brains-and-machines-2/)  
-  - ["Synergistic and Modular Action"](http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/)  
-  - ["Episodic and Interactive Memory"](http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-4-episodic-and-interactive-memory/)  
-
 
 
 ---
@@ -380,12 +387,14 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
   [overview](http://scholarpedia.org/article/Metalearning) by Tom Schaul and Juergen Schmidhuber
 
+  ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34?t=16m55s) `video`)
+
   ["Learning to Learn, to Program, to Explore and to Seek Knowledge"](https://youtube.com/watch?v=SAcHyzMdbXc) by Nando de Freitas `video`  
   ["Learning to Learn"](http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/) by Nando de Freitas `video`  
+  ["Deep Learning Trends: Learning to Learn"](https://facebook.com/NIPSlive/videos/1489196207802887/) (5:49) by Oriol Vinyals `video`  
+
   ["Learning how to Learn Learning Algorithms: Recursive Self-Improvement"](https://youtube.com/watch?v=nqiUFc52g78) by Juergen Schmidhuber `video`  
   ["The Future of Machines that Learn Algorithms"](https://youtube.com/watch?v=zSNkbhgMkzQ) panel with Juergen Schmidhuber, Ilya Sutskever, Alex Graves et al. `video`  
-
-  ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34?t=16m55s) `video`)
 
   ["Learning to Optimize with Reinforcement Learning"](http://bair.berkeley.edu/blog/2017/09/12/learning-to-optimize-with-rl/) by Ke Li
 

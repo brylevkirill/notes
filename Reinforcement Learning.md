@@ -111,30 +111,35 @@
 
 	AlphaGo vs Lee Sedol match:
 
-	game 1: [video](https://youtube.com/watch?v=bIQxOsRAXCo) +
-		[analysis](https://gogameguru.com/alphago-defeats-lee-sedol-game-1/) +
-		[analysis](http://deeplearningskysthelimit.blogspot.ru/2016/04/part-6-review-of-game-1-lee-sedol.html)  
-	game 2: [video](https://youtube.com/watch?v=1aMt7ulL6EI) +
-		[analysis](https://gogameguru.com/alphago-races-ahead-2-0-lee-sedol/) +
-		[analysis](http://deeplearningskysthelimit.blogspot.ru/2016/04/part-7-review-of-game-2-alphagos-new.html)  
-	game 3: [video](https://youtube.com/watch?v=6hROM_bxZ9E) +
-		[analysis](https://gogameguru.com/alphago-shows-true-strength-3rd-victory-lee-sedol/) +
-		[analysis](http://deeplearningskysthelimit.blogspot.ru/2016/04/part-8-review-of-game-3-lee-sedols.html)  
-	game 4: [video](https://youtube.com/watch?v=G5gJ-pVo1gs) +
-		[analysis](https://gogameguru.com/lee-sedol-defeats-alphago-masterful-comeback-game-4/) +
-		[analysis](http://deeplearningskysthelimit.blogspot.ru/2016/04/part-9-review-of-game-4-lee-sedols.html)  
-	game 5: [video](https://youtube.com/watch?v=QxHdPdRcMhw) +
-		[analysis](https://gogameguru.com/alphago-defeats-lee-sedol-4-1/) +
-		[analysis](http://deeplearningskysthelimit.blogspot.ru/2016/05/part-10-review-of-game-5-alphago.html)  
+	game 1: [overview](https://youtu.be/9M-yo1huLoU?t=7m49s) `video` +
+		[overview](https://youtube.com/watch?v=bIQxOsRAXCo) `video` +
+		[overview](https://gogameguru.com/alphago-defeats-lee-sedol-game-1/) `text` +
+		[overview](http://deeplearningskysthelimit.blogspot.ru/2016/04/part-6-review-of-game-1-lee-sedol.html) `text`  
+	game 2: [overview](https://youtu.be/9M-yo1huLoU?t=20m13s) `video` +
+		[overview](https://youtube.com/watch?v=1aMt7ulL6EI) `video` +
+		[overview](https://gogameguru.com/alphago-races-ahead-2-0-lee-sedol/) `text` +
+		[overview](http://deeplearningskysthelimit.blogspot.ru/2016/04/part-7-review-of-game-2-alphagos-new.html) `text`  
+	game 3: [overview](https://youtu.be/9M-yo1huLoU?t=27m10s) `video` +
+		[overview](https://youtube.com/watch?v=6hROM_bxZ9E) `video` +
+		[overview](https://gogameguru.com/alphago-shows-true-strength-3rd-victory-lee-sedol/) `text` +
+		[overview](http://deeplearningskysthelimit.blogspot.ru/2016/04/part-8-review-of-game-3-lee-sedols.html) `text`  
+	game 4: [overview](https://youtu.be/9M-yo1huLoU?t=33m23s) `video` +
+		[overview](https://youtube.com/watch?v=G5gJ-pVo1gs) `video` +
+		[overview](https://gogameguru.com/lee-sedol-defeats-alphago-masterful-comeback-game-4/) `text` +
+		[overview](http://deeplearningskysthelimit.blogspot.ru/2016/04/part-9-review-of-game-4-lee-sedols.html) `text`  
+	game 5: [overview](https://youtu.be/9M-yo1huLoU?t=38m40s) `video` +
+		[overview](https://youtube.com/watch?v=QxHdPdRcMhw) `video` +
+		[overview](https://gogameguru.com/alphago-defeats-lee-sedol-4-1/) `text` +
+		[overview](http://deeplearningskysthelimit.blogspot.ru/2016/05/part-10-review-of-game-5-alphago.html) `text`  
 
 	AlphaGo Master vs Ke Jie match:
 
-	game 1: [video](https://youtube.com/watch?v=Z-HL5nppBnM) +
-		[analysis](https://youtube.com/watch?v=HIu9P9wEIsc)   
-	game 2: [video](https://youtube.com/watch?v=1U1p4Mwis60) +
-		[analysis](https://youtube.com/watch?v=SF486mbvAOI)  
-	game 3: [video](https://youtube.com/watch?v=ru0E7N0-kFE) +
-		[analysis](https://youtube.com/watch?v=CUZxe7bXKxo)  
+	game 1: [overview](https://youtube.com/watch?v=Z-HL5nppBnM) `video` +
+		[overview](https://youtube.com/watch?v=HIu9P9wEIsc) `text`  
+	game 2: [overview](https://youtube.com/watch?v=1U1p4Mwis60) `video` +
+		[overview](https://youtube.com/watch?v=SF486mbvAOI) `text`  
+	game 3: [overview](https://youtube.com/watch?v=ru0E7N0-kFE) `video` +
+		[overview](https://youtube.com/watch?v=CUZxe7bXKxo) `text`  
 
   - *Poker*  
 	["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](#deepstack-expert-level-artificial-intelligence-in-no-limit-poker-moravcik-et-al) by Moravcik et al. `paper`  
@@ -1403,6 +1408,7 @@ interesting recent papers:
   - `post` <http://inference.vc/alphago-zero-policy-improvement-and-vector-fields/>
   - `post` <http://tim.hibal.org/blog/alpha-zero-how-and-why-it-works/>
   - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
+  - `video` <https://youtube.com/watch?v=XuzIqE2IshY> (Kington)
   - `video` <https://youtube.com/watch?v=vC66XFoN4DE> (Raval)
   - `notes` <https://blog.acolyer.org/2017/11/17/mastering-the-game-of-go-without-human-knowledge/>
   - `notes` <https://dropbox.com/s/fuwhivftv998f6q/AlphaGoZeroPseudoCode.pdf>

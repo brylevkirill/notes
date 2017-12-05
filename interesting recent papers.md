@@ -23,7 +23,6 @@ interesting recent papers:
   * [reasoning](#reasoning)
   * [language grounding](#language-grounding)
   * [natural language processing](#natural-language-processing)
-  * [dialog systems](#dialog-systems)
 
 ----
 interesting older papers:
@@ -558,6 +557,7 @@ interesting older papers:
   - `video` <https://vimeo.com/238243674> (Pritzel)
   - `video` <https://youtu.be/bsuvM1jO-4w?t=42m10s> (Mnih)
   - `notes` <http://rylanschaeffer.github.io/content/research/neural_episodic_control/main.html>
+  - `post` <http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-4-episodic-and-interactive-memory/>
   - `code` <https://github.com/EndingCredits/Neural-Episodic-Control>
   - `code` <https://github.com/NervanaSystems/coach/blob/master/agents/nec_agent.py>
 
@@ -1803,6 +1803,7 @@ interesting older papers:
   - `post` <http://inference.vc/alphago-zero-policy-improvement-and-vector-fields/>
   - `post` <http://tim.hibal.org/blog/alpha-zero-how-and-why-it-works/>
   - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
+  - `video` <https://youtube.com/watch?v=XuzIqE2IshY> (Kington)
   - `video` <https://youtube.com/watch?v=vC66XFoN4DE> (Raval)
   - `notes` <https://blog.acolyer.org/2017/11/17/mastering-the-game-of-go-without-human-knowledge/>
   - `notes` <https://dropbox.com/s/fuwhivftv998f6q/AlphaGoZeroPseudoCode.pdf>
@@ -2570,6 +2571,7 @@ hieves."
 
 #### ["RobustFill: Neural Program Learning under Noisy I/O"](https://arxiv.org/abs/1703.07469) Devlin, Uesato, Bhupatiraju, Singh, Mohamed, Kohli
   - `video` <https://vimeo.com/238227939> (Uesato, Bhupatiraju)
+  - `video` <https://facebook.com/NIPSlive/videos/1489196207802887/> (31:06) (Reed)
 
 #### ["Differentiable Programs with Neural Libraries"](https://arxiv.org/abs/1611.02109) Gaunt, Brockschmidt, Kushman, Tarlow
   - `video` <https://vimeo.com/238227833> (Gaunt)
@@ -2585,6 +2587,7 @@ hieves."
   `learning details of probabilistic program`
 >	"The paper talks about a certain class of neural networks that incorporate procedural knowledge. The way they are constructed is by compiling Forth code (procedural) to TensorFlow expressions (linear algebra) to be able to train slots (missing pieces in the code) end-to-end from input-output pairs using backpropagation."  
   - `video` <https://vimeo.com/238227890> (Bosnjak)
+  - `video` <https://facebook.com/NIPSlive/videos/1489196207802887/> (26:57) (Reed)
 
 #### ["Making Neural Programming Architectures Generalize via Recursion"](https://arxiv.org/abs/1704.06611) Cai, Shin, Song
   `Neural Programmer-Interpreter with recursion`
@@ -2899,6 +2902,9 @@ hieves."
   `semantic parsing`
 
 #### ["Open-Vocabulary Semantic Parsing with both Distributional Statistics and Formal Knowledge"](http://arxiv.org/abs/1607.03542) Gardner, Krishnamurthy
+  `semantic parsing`
+
+#### ["Language to Logical Form with Neural Attention"](http://arxiv.org/abs/1601.01280) Dong, Lapata
   `semantic parsing`
 
 ----
