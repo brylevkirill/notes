@@ -142,6 +142,7 @@
   - [natural language](#knowledge-representation---natural-language)
   - [knowledge graph](#knowledge-representation---knowledge-graph)
     * [ontology](#ontology)
+    * [information extraction and integration](#information-extraction-and-integration)
     * [relational learning](#relational-learning)
   - [probabilistic database](#knowledge-representation---probabilistic-database)
     * [Epistemological Database](#probabilistic-database---epistemological-database)
@@ -187,6 +188,7 @@
 ### knowledge representation - knowledge graph
 
   - [ontology](#ontology)  
+  - [information extraction and integration](#information-extraction-and-integration)  
   - [relational learning](#relational-learning)  
 
 
@@ -226,6 +228,18 @@
 
 
 ---
+### information extraction and integration
+
+  ["Knowledge Graph Construction From Text"](https://kgtutorial.github.io/?hootPostID=a5af9fab7ef1fb922ef7135a2e6d4f14) tutorial by Jay Pujara, Sameer Singh, Bhavana Dalvi  
+  ["Constructing and Mining Web-Scale Knowledge Graphs"](http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs) tutorial by Evgeniy Gabrilovich and Antoine Bordes `video`  
+
+----
+
+  [interesting papers](#interesting-papers---information-extraction-and-integration)
+
+
+
+---
 ### relational learning
 
   *traditional learning*: data = matrix  
@@ -249,7 +263,6 @@
 ----
 
   ["Statistical Relational Learning"](http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning) tutorial by Tresp `video`  
-  ["Constructing and Mining Web-Scale Knowledge Graphs"](http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs) tutorial by Gabrilovich and Bordes `video`  
 
   ["Relational Models"](https://arxiv.org/abs/1609.03145) by Tresp and Nickel `paper`  
   ["A Review of Relational Machine Learning for Knowledge Graphs: From Multi-Relational Link Prediction to Automated Knowledge Graph Construction"](#a-review-of-relational-machine-learning-for-knowledge-graphs-from-multi-relational-link-prediction-to-automated-knowledge-graph-construction-nickel-murphy-tresp-gabrilovich)
@@ -296,6 +309,8 @@
 
   ["An Overview of Embedding Models of Entities and Relationships for Knowledge Base Completion"](http://arxiv.org/abs/1703.08098) by Nguyen `paper`
 
+  ["Knowledge Graph Construction From Text: Embedding-Based Techniques"](https://kgtutorial.github.io/slides/Part3b_Embds.pdf) by Pujara, Singh, Dalvi `slides`
+
 
   applications in [Google Knowledge Vault](#google-knowledge-vault):  
   - ["A Review of Relational Machine Learning for Knowledge Graphs"](#a-review-of-relational-machine-learning-for-knowledge-graphs-from-multi-relational-link-prediction-to-automated-knowledge-graph-construction-nickel-murphy-tresp-gabrilovich) by Nickel, Murphy, Tresp, Gabrilovich `paper`  
@@ -306,7 +321,8 @@
   - [overview](http://youtube.com/watch?v=FVjuwv1_EDw) by Jason Weston `video`  
 
 
-  ["Poincare Embeddings for Learning Hierarchical Representations"](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#poincare-embeddings-for-learning-hierarchical-representations-facebook-ai-research) by Nickel and Kiela `paper`
+  ["Order-Embeddings of Images and Language"](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#order-embeddings-of-images-and-language-vendrov-kiros-fidler-urtasun) by Vendrov et al. `paper`  
+  ["Poincare Embeddings for Learning Hierarchical Representations"](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#poincare-embeddings-for-learning-hierarchical-representations-facebook-ai-research) by Nickel and Kiela `paper`  
 
 
   [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)  
@@ -998,7 +1014,7 @@
   ["SLiMFast: Assessing the Reliability of Data"](http://hazyresearch.github.io/snorkel/blog/slimfast.html) `post`  
   ["Data Programming + TensorFlow Tutorial"](http://hazyresearch.github.io/snorkel/blog/dp_with_tf_blog_post.html) `post`  
   ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](https://hazyresearch.github.io/snorkel/blog/fonduer.html) `post`  
-  ["Babble Labble: Learning from Natural Language Explanations"](https://hazyresearch.github.io/snorkel/blog/babble_labble.html) `post`  
+  ["Babble Labble: Learning from Natural Language Explanations"](https://hazyresearch.github.io/snorkel/blog/babble_labble.html) `post` ([overview](https://youtube.com/watch?v=YBeAX-deMDg) `video`)  
   ["Structure Learning: Are Your Sources Only Telling You What You Want to Hear?"](https://hazyresearch.github.io/snorkel/blog/structure_learning.html) `post`  
   ["HoloClean: Weakly Supervised Data Repairing"](https://hazyresearch.github.io/snorkel/blog/holoclean.html) `post`  
   ["Scaling Up Snorkel with Spark"](https://hazyresearch.github.io/snorkel/blog/snark.html) `post`  
@@ -1770,7 +1786,16 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 
 >	"To overcome computational limitations of end-to-end differentiable proving, we want to investigate the use of hierarchical attention and recent reinforcement learning methods such as Monte Carlo tree search that have been used for learning to play Go and chemical synthesis planning. Orthogonal to that, more flexible individual components of end-to-end differentiable provers are conceivable. For instance, unification, rule selection, and rule application could be modeled as parameterized functions, and thus could potentially learn a more optimal behavior from data in a KB. In addition, we plan to support function terms in the future. Lastly, we are interested in applying NTPs to automated proving of mathematical theorems, either in logical or natural language form."
 
-  - `slides` ["Deep Prolog: End-to-end Differentiable Proving in Knowledge Bases"](http://aitp-conference.org/2017/slides/Tim_aitp.pdf)
+>	"Aim:  
+>	- Neural network for proving queries to a knowledge base  
+>	- Proof success differentiable w.r.t. vector representations of symbols  
+>	- Learn vector representations of symbols end-to-end from proof success  
+>	- Make use of provided rules in soft proofs  
+>	- Induce interpretable rules end-to-end from proof success"  
+
+  - `slides` <https://rockt.github.io/pdf/rocktaschel2017end-slides.pdf> (Rocktaschel)
+  - `slides` <http://aitp-conference.org/2017/slides/Tim_aitp.pdf> (Rocktaschel)
+  - `slides` <http://on-demand.gputechconf.com/gtc-eu/2017/presentation/23372-tim-rocktäschel-gpu-accelerated-deep-neural-networks-for-end-to-end-differentiable-planning-and-reasoning.pdf> (Rocktaschel)
   - `audio` <https://soundcloud.com/nlp-highlights/19a> (Rocktaschel)
   - `paper` ["Learning Knowledge Base Inference with Neural Theorem Provers"](http://akbc.ws/2016/papers/14_Paper.pdf) by Rocktaschel and Riedel
 

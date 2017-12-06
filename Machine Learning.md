@@ -156,7 +156,10 @@
 #### conferences
 
   - ICLR 2018  
+	<http://search.iclr2018.smerity.com/>  
 	<http://iclr2018.mmanukyan.io>  
+
+  - NIPS 2017
 
   - ICML 2017  
 	<https://vimeo.com/user72337760>
@@ -271,23 +274,30 @@
   - PAC learning or PAC-Bayes  
   - Minimax estimation (estimation/decision theory)  
 
+----
+
+  ["Machine Learning has become Alchemy"](https://youtube.com/watch?v=Qi1Yry33TQE&t=11m2s) by Ali Rahimi `video`  
+  ["Statistics in Machine Learning"](https://youtube.com/watch?v=uyZOcUDhIbY&t=17m27s) by Michael I. Jordan `video`  
+  ["Theory in Machine Learning"](https://youtube.com/watch?v=uyZOcUDhIbY&t=23m1s) by Michael I. Jordan `video`  
 
   ["Learning Theory: Purely Theoretical?"](https://hips.seas.harvard.edu/blog/2013/02/15/learning-theory-purely-theoretical/) by Jonathan Huggins
 
-
-  ["Computational Learning Theory, AI and Beyond"](https://www.math.ias.edu/files/mathandcomp.pdf) chapter of "Mathematics and Computation" book by Avi Wigderson
-
+----
 
   ["Theory of Reinforcement Learning"](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) by Csaba Szepesvari `video`
 
+---
 
-  [introduction](https://mostafa-samir.github.io/ml-theory-pt1/) by Mostafa Samir  
+  ["Computational Learning Theory, AI and Beyond"](https://www.math.ias.edu/files/mathandcomp.pdf) chapter of "Mathematics and Computation" book by Avi Wigderson
 
-  introduction by Jeremy Kun:  
+  [overview](https://mostafa-samir.github.io/ml-theory-pt1/) by Mostafa Samir
+
+  overview by Jeremy Kun:  
   - ["Probably Approximately Correct - A Formal Theory of Learning"](http://jeremykun.com/2014/01/02/probably-approximately-correct-a-formal-theory-of-learning/)  
   - ["A Problem That is Not (Properly) PAC-learnable"](http://jeremykun.com/2014/04/21/an-un-pac-learnable-problem/)  
   - ["Occam’s Razor and PAC-learning"](http://jeremykun.com/2014/09/19/occams-razor-and-pac-learning/)  
 
+----
 
   [course](http://work.caltech.edu/telecourse.html) by Yaser Abu-Mostafa `video`  
   [course](https://blogs.princeton.edu/imabandit/2015/10/13/crash-course-on-learning-theory-part-1/) by Sebastien Bubeck  
@@ -818,13 +828,13 @@
   > "There are 4 factors that explain the success of deep learning: (1) computing power, (2) large datasets, (3) large flexible models and (4) powerful biases (preferences in the space of functions, or priors in Bayesian parlance). Deep nets benefit from built-in assumptions about the underlying data, including: assumption of multiple underlying factors (distributed representations, causality), assumption of composition of factors (depth), equivariance and temporal coherence assumptions (in convolutional nets), temporal stationarity (in recurrent nets), etc. Although the first 3 factors are mostly in the realm of computer science, the last and probably most interesting one clearly involves thinking in a statistical way. There is little hope to interpret the billions of parameters that large deep nets are learning, but there is hope to understand the priors implicitly or explicitly introduced in these networks."
 
   Yann LeCun:
-  > "I do think that there is a need for better theoretical understanding of deep learning. But if a method works, it should not be abandoned nor dismissed just because theorists haven’t yet figured out how to explain it. The field of machine learning made that mistake in the mid 1990s, largely dismissing neural nets (and sometimes even making fun of it). The reasons for this are complicated, but that clearly was a bad collective mistake in that the field was set back by at least a decade. By working strictly on methods that you can fully analyze theoretically, you confine yourself to using excessively naive methods. Physicists don’t work like that. They don’t get to choose the complexity of the systems they study: the physical world is what it is. To them, complex systems are more interesting. For example, a lot of interesting mathematics and theoretical physics methods were developed in the context of studying spin glasses and other “disordered” systems. Physicists couldn’t simply choose to not study these systems because they were too complicated. On our engineering-oriented field, in which the systems we study are artifact of our own creation, we can be tempted to simplify those creations in order to analyze them more easily. But if we over-simplify them in the process in such a way that they no longer work, we have thrown the baby with the bath water."
+  > "I do think that there is a need for better theoretical understanding of deep learning. But if a method works, it should not be abandoned nor dismissed just because theorists haven’t yet figured out how to explain it. The field of machine learning made that mistake in the mid 1990s, largely dismissing neural nets (and sometimes even making fun of it). The reasons for this are complicated, but that clearly was a bad collective mistake in that the field was set back by at least a decade. One theoretical puzzle is why the type of non-convex optimization that needs to be done when training deep neural nets seems to work reliably. A naive intuition would suggest that optimizing a non-convex function is difficult because we can get trapped in local minima and get slowed down by plateaus and saddle points. While plateaus and saddle points can be a problem, local minima never seem to cause problems. Our intuition is wrong, because we picture an energy landscape in low dimension (e.g. 2 or 3). But the objective function of deep neural nets is often in 100 million dimensions or more. It’s hard to build a box in 100 million dimensions. That’s a lot of walls. By working strictly on methods that you can fully analyze theoretically, you confine yourself to using excessively naive methods. Physicists don’t work like that. They don’t get to choose the complexity of the systems they study: the physical world is what it is. To them, complex systems are more interesting. For example, a lot of interesting mathematics and theoretical physics methods were developed in the context of studying spin glasses and other “disordered” systems. Physicists couldn’t simply choose to not study these systems because they were too complicated. On our engineering-oriented field, in which the systems we study are artifact of our own creation, we can be tempted to simplify those creations in order to analyze them more easily. But if we over-simplify them in the process in such a way that they no longer work, we have thrown the baby with the bath water."
 
   Yann LeCun:
   > "I don’t think there is a choice to make between performance and theory. If there is performance, there will be theory to explain it. Also, what kind of theory are we talking about? Is it a generalization bound? Convnets have a finite VC dimension, hence they are consistent and admit the classical VC bounds. What more do you want? Do you want a tighter bound, like what you get for SVMs? No theoretical bound that I know of is tight enough to be useful in practice. So I really don’t understand the point. Sure, generic VC bounds are atrociously non tight, but non-generic bounds (like for SVMs) are only slightly less atrociously non tight. No one uses generalization bounds to do model selection. Everyone in their right mind use (cross)validation. If what you desire are convergence proofs (or guarantees), that’s a little more complicated. The loss function of multi-layer nets is non-convex, so the easy proofs that assume convexity are out the window. But we all know that in practice, a convnet will almost always converge to the same level of performance, regardless of the starting point (if the initialization is done properly). There is theoretical evidence that there are lots and lots of equivalent local minima and a very small number of “bad” local minima. Hence convergence is rarely a problem."
 
-  Yoshua Bengio:
-  > "In case of local minima in a very high dimensional space (the space of parameters), all the directions should go up in all dimensions. If there is somehow a randomness in how all the functions are constructed and if the direction are independently chosen, it is exponentially unlikely that all directions go up except near the bottom of the landscape ie., near the global minima. The intuition is that when there is a minima that’s close to the global minima, all directions go up and it’s not possible to go further down. Hence, the local minima exists but are very close to global minima in terms of objective functions. Theoretical results from statistical physics and matrix theory suggests that for some families of functions that are fairly large, there is a concentration of probability between the index of the critical points and the objective function. Index is the fraction of directions that are going down. When index = 0, it is a local minimum and when index = 1, it is a local maximum. If index is something in between, then it is a saddle point. So, local minima is a special case of saddle point when index = 0. For a particular training objective, most of the critical points are saddle points with a particular index. Empirical results verify that indeed there is a tight relation between index and the objective function. It’s only an empirical validation and there is no proof that the results apply to optimization of neural networks. There is some evidence that the behaviour observed corresponds to what the theory suggests. In practice, it is observed that stochastic gradient descent will almost always escape from surfaces other than local minima."
+  Yann LeCun:
+  > "Simple and general theorems are good. Thermodynamics gave us principles that prevented us from wasting our time looking for perfectly efficient thermal machines or perpetual motion. We already have such theorems in ML that apply to just about every learning machine, including neural networks (e.g. VC theory consistency/capacity, no-free-lunch, etc). But it could very well be that we won't have "simple" theorems that are more specific to neural networks, for the same reasons we don't have analytical solutions of Navier-Stokes or the 3-body problem."
 
 
   ----

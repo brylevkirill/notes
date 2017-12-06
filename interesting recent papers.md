@@ -147,6 +147,7 @@ interesting older papers:
 >	"Weights are initialized in such a way that for any unit in a layer with input weights wi Σ wi = 0 and Σ wi^2 = 1."  
 >	"selu(x) = λx for x>0 and selu(x) = λ(αe^x − α) for x≤0, where α≈1.6733 and λ≈1.0507"  
   - `video` <https://youtube.com/watch?v=h6eQrkkU9SA> (Hochreiter)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1706.02515>
   - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/self-normalizing-neural-networks/> `in russian`
   - `code` <http://github.com/bioinf-jku/SNNs>
 
@@ -264,6 +265,7 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=3zEYjw-cB4Y>
   - `video` <https://youtube.com/watch?v=SjYKP8BFhgw> (Nekludov)
   - `video` <https://youtu.be/jJDVYAxyE3U?t=32m45s> (Molchanov) `in russian`
+  - `code` <https://github.com/necludov/group-sparsity-sbp>
   - `paper` ["Variational Gaussian Dropout is not Bayesian"](https://arxiv.org/abs/1711.02989) by Hron, Matthews, Ghahramani
 
 #### ["Variational Dropout Sparsifies Deep Neural Networks"](https://arxiv.org/abs/1701.05369) Molchanov, Ashukha, Vetrov
@@ -823,6 +825,7 @@ interesting older papers:
 
 #### ["Learning to Learn without Gradient Descent by Gradient Descent"](https://arxiv.org/abs/1611.03824) Chen, Hoffman, Colmenarejo, Denil, Lillicrap, Botvinick, de Freitas
 >	"Differentiable neural computers as alternatives to parallel Bayesian optimization for hyperparameter tuning of other networks."  
+>	"Proposes RNN optimizers that match performance of Bayesian optimization methods (e.g. Spearmint, SMAC, TPE) but are massively faster."  
   - `video` <http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/> (52:35) (de Freitas)
 
 #### ["Learning to Learn by Gradient Descent by Gradient Descent"](http://arxiv.org/abs/1606.04474) Andrychowicz, Denil, Gomez, Hoffman, Pfau, Schaul, Shillingford, de Freitas
@@ -911,7 +914,7 @@ interesting older papers:
 >	"In interactive environments, the temporal dependency between successive observations creates a new opportunity to notice causal structure in data which may not be apparent using only observational studies. In reinforcement learning, several approaches explore mechanisms that push the internal representations of learned models to be “good” in the sense that they provide better control, and control is a particularly important causal relationship between an agent and elements of its environment."  
 >	"We propose and explore a more direct mechanism for representation learning, which explicitly links an agent’s control over its environment with its internal feature representations. Specifically, we hypothesize that some of the factors explaining variations in the data correspond to aspects of the world that can be controlled by the agent. For example, an object that could be pushed around or picked up independently of others is an independently controllable aspect of the environment. Our approach therefore aims to jointly discover a set of features (functions of the environment state) and policies (which change the state) such that each policy controls the associated feature while leaving the other features unchanged as much as possible."  
 >	"Assume that there are factors of variation underlying the observations coming from an interactive environment that are independently controllable. That is, a controllable factor of variation is one for which there exists a policy which will modify that factor only, and not the others. For example, the object associated with a set of pixels could be acted on independently from other objects, which would explain variations in its pose and scale when we move it around while leaving the others generally unchanged. The object position in this case is a factor of variation. What poses a challenge for discovering and mapping such factors into computed features is the fact that the factors are not explicitly observed. Our goal is for the agent to autonomously discover such factors – which we call independently controllable features – along with policies that control them. While these may seem like strong assumptions about the nature of the environment, we argue that these assumptions are similar to regularizers, and are meant to make a difficult learning problem (that of learning good representations which disentangle underlying factors) better constrained."  
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/BengioTPPB17#hlarochelle> (Larochelle)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/BengioTPPB17>
 
 #### ["Discovering Causal Signals in Images"](https://arxiv.org/abs/1605.08179) Lopez-Paz, Nishihara, Chintala, Scholkopf, Bottou
   `causal learning`
@@ -999,7 +1002,7 @@ interesting older papers:
 #### ["Poincare Embeddings for Learning Hierarchical Representations"](https://arxiv.org/abs/1705.08039) Nickel, Kiela
   `learning embedding`
   - `notes` <https://medium.com/towards-data-science/facebook-research-just-published-an-awesome-paper-on-learning-hierarchical-representations-34e3d829ede7>
-  - `notes` <https://theneuralperspective.com/2017/06/05/more-on-embeddings-spring-2017/>
+  - `notes` <https://medium.com/@hol_io/word-embeddings-exploration-explanation-and-exploitation-with-code-in-python-5dac99d5d795>
   - `code` <https://github.com/TatsuyaShirakawa/poincare-embedding>
 
 
@@ -1299,6 +1302,7 @@ interesting older papers:
 #### ["High-Resolution Image Synthesis and Semantic Manipulation with Conditional GANs"](https://arxiv.org/abs/1711.11585) Wang, Liu, Zhu, Tao, Kautz, Catanzaro
   `GAN applications` `image synthesis`
   - <https://tcwang0509.github.io/pix2pixHD/> (demo)
+  - `code` <https://github.com/NVIDIA/pix2pixHD>
 
 #### ["Progressive Growing of GANs for Improved Quality, Stability, and Variation"](http://research.nvidia.com/sites/default/files/pubs/2017-10_Progressive-Growing-of/karras2017gan-paper.pdf) Karras, Aila, Laine, Lehtinen
   `GAN applications` `image synthesis`
@@ -1409,6 +1413,7 @@ interesting older papers:
   - `notes` <https://blog.tomrochette.com/machine-learning/papers/ashish-vaswani-attention-is-all-you-need>
   - `notes` <https://medium.com/@sharaf/a-paper-a-day-24-attention-is-all-you-need-26eb2da90a91>
   - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/transformer.py>
+  - `code` <https://colab.research.google.com/notebook#fileId=/v2/external/notebooks/t2t/hello_t2t.ipynb>
   - `code` <https://github.com/jadore801120/attention-is-all-you-need-pytorch>
 
 ----
@@ -1637,6 +1642,7 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=0rrffaYuUi4> (Wu)
   - `video` ["Optimizing Neural Networks using Structured Probabilistic Models of the Gradient Computation"](https://fields.utoronto.ca/video-archive/2017/02/2267-16498) (Grosse)
   - `video` ["Optimizing NN using Kronecker-factored Approximate Curvature"](https://youtube.com/watch?v=FLV-MLPt3sU) (Kropotov)
+  - `slides` <https://csc2541-f17.github.io/slides/lec10.pdf#page=55> (Grosse)
   - `post` <https://medium.com/@yaroslavvb/optimizing-deeper-networks-with-kfac-in-pytorch-4004adcba1b0>
   - `code` <https://github.com/ikostrikov/pytorch-a2c-ppo-acktr>
 
@@ -1962,7 +1968,9 @@ interesting older papers:
 #### ["Self-Supervised Visual Planning with Temporal Skip Connections"](https://arxiv.org/abs/1710.05268) Ebert, Finn, Lee, Levine
   `learning to simulate` `learning video prediction model`
   - <https://sites.google.com/view/sna-visual-mpc> (demo)
+  - `video` <https://youtube.com/watch?v=6k7GHG4IUCY> (Finn)
   - `video` <https://youtu.be/UDLI9K6b9G8?t=1h14m56s> (Ebert)
+  - `code` <https://github.com/febert/visual_mpc>
 
 ----
 #### ["Learning Multimodal Transition Dynamics for Model-Based Reinforcement Learning"](https://arxiv.org/abs/1705.00470) Moerland, Broekens, Jonker
@@ -2476,6 +2484,8 @@ hieves."
 
 #### ["Inferring the Latent Structure of Human Decision-Making from Raw Visual Inputs"](https://arxiv.org/abs/1703.08840) Li, Song, Ermon
   `adversarial imitation learning`
+>	"Expert demonstrations provided by humans often show significant variability due to latent factors that are typically not explicitly modeled. We propose a new algorithm that can infer the latent structure of expert demonstrations in an unsupervised way. Our method, built on top of GAIL, can not only imitate complex behaviors, but also learn interpretable and meaningful representations of complex behavioral data, including visual demonstrations, and recover semantically meaningful factors of variation in the data."  
+  - `video` <https://youtube.com/watch?v=YtNPBAW6h5k> (demo)
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Inferring_The_Latent_Structure_of_Human_Decision-Making_from_Raw_Visual_Inputs.md>
   - `code` <https://github.com/YunzhuLi/InfoGAIL>
 
@@ -2534,6 +2544,7 @@ hieves."
 ----
 #### ["Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments"](https://arxiv.org/abs/1706.02275) Lowe, Wu, Tamar, Harb, Abbeel, Mordatch
   - `video` <https://youtube.com/watch?v=QCmBo91Wy64> (demo)
+  - `code` <https://github.com/openai/multiagent-particle-envs>
 
 #### ["Counterfactual Multi-Agent Policy Gradients"](https://arxiv.org/abs/1705.08926) Foerster, Farquhar, Afouras, Nardelli, Whiteson
 >	"We evaluate COMA in the testbed of StarCraft unit micromanagement, using a decentralised variant with significant partial observability. COMA significantly improves average performance over other multi-agent actor-critic methods in this setting, and the best performing agents are competitive with state-of-the-art centralised controllers that get access to the full state."  
@@ -2610,6 +2621,13 @@ hieves."
 #### ["End-to-end Differentiable Proving"](https://arxiv.org/abs/1705.11040) Rocktaschel, Riedel
   `learning logic`
 >	"We introduce neural networks for end-to-end differentiable theorem proving that operate on dense vector representations of symbols. These neural networks are constructed recursively by taking inspiration from the backward chaining algorithm as used in Prolog. Specifically, we replace symbolic unification with a differentiable computation on vector representations of symbols using a radial basis function kernel, thereby combining symbolic reasoning with learning subsymbolic vector representations. By using gradient descent, the resulting neural network can be trained to infer facts from a given incomplete knowledge base. It learns to (i) place representations of similar symbols in close proximity in a vector space, (ii) make use of such similarities to prove facts, (iii) induce logical rules, and (iv) use provided and induced logical rules for complex multi-hop reasoning. We demonstrate that this architecture outperforms ComplEx, a state-of-the-art neural link prediction model, on four benchmark knowledge bases while at the same time inducing interpretable function-free first-order logic rules."  
+>	"Aim:  
+>	- Neural network for proving queries to a knowledge base  
+>	- Proof success differentiable w.r.t. vector representations of symbols  
+>	- Learn vector representations of symbols end-to-end from proof success  
+>	- Make use of provided rules in soft proofs  
+>	- Induce interpretable rules end-to-end from proof success"  
+  - `slides` <https://rockt.github.io/pdf/rocktaschel2017end-slides.pdf> (Rocktaschel)
   - `slides` <http://aitp-conference.org/2017/slides/Tim_aitp.pdf> (Rocktaschel)
   - `slides` <http://on-demand.gputechconf.com/gtc-eu/2017/presentation/23372-tim-rocktäschel-gpu-accelerated-deep-neural-networks-for-end-to-end-differentiable-planning-and-reasoning.pdf> (Rocktaschel)
   - `audio` <https://soundcloud.com/nlp-highlights/19a> (Rocktaschel)
@@ -2924,6 +2942,9 @@ hieves."
   - <https://akshayka.github.io/papers/html/arora2017sentence-embeddings.html>
   - <https://github.com/PrincetonML/SIF>
   - <https://github.com/YingyuLiang/SIF>
+
+#### ["On the Use of Word Embeddings Alone to Represent Natural Language Sequences"](https://openreview.net/forum?id=Sy5OAyZC-)
+>	"To construct representations for natural language sequences, information from two main sources needs to be captured: (i) semantic meaning of individual words, and (ii) their compositionality. These two types of information are usually represented in the form of word embeddings and compositional functions, respectively. For the latter, Recurrent Neural Networks (RNNs) and Convolutional Neural Networks (CNNs) have been considered. There has not been a rigorous evaluation regarding the relative importance of each component to different text-representation-based tasks; i.e., how important is the modeling capacity of word embeddings alone, relative to the added value of a compositional function? We conduct an extensive comparative study between Simple Word Embeddings-based Models (SWEMs), with no compositional parameters, relative to employing word embeddings within RNN/CNN-based models. Surprisingly, SWEMs exhibit comparable or even superior performance in the majority of cases considered."  
 
 #### ["Learning to Compute Word Embeddings On the Fly"](https://arxiv.org/abs/1706.00286) Bahdanau, Bosc, Jastrzebski, Grefenstette, Vincent, Bengio
   `word embedding`
