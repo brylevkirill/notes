@@ -24,6 +24,14 @@
 ---
 ### overview
 
+  "All existing NLP is about mapping the internal statistical dependencies of language, missing the point that language is a communication protocol. You cannot study language without considering agents communicating about something. The only reason language even has any statistical dependencies to study is because it's imperfect. A maximally efficient communication protocol would look like random noise, out of context (besides error correction mechanisms). All culture is a form of communication, so "understanding" art requires grounding. Mimicking what humans do isn't enough. You can't understand language without considering it in context: agents communicating about something. An analogy could be trying to understand an economy by looking at statistical structure in stock prices only."
+
+  *(Francois Chollet)*
+
+  "No general solution to the problem of computer understanding of natural language is possible, i.e. language is understood only in contextual frameworks, that even these can be shared by people to only a limited extent, and that consequently even people are not embodiments of any such general solution."
+
+  *(Joseph Weizenbaum)*
+
   "The ambiguous nature of natural language might seem like a flaw, but in fact, it is exactly this ambiguity that makes natural language so powerful. Think of language as a game between a speaker and a listener. Game play proceeds as follows: the speaker thinks of a concept, she chooses an utterance to convey that concept, and the listener interprets the utterance. Both players win if the listener’s interpretation matches the speaker’s intention. To play this game well, the speaker should thus choose the simplest utterance that conveys her intended concept - anything the listener can infer can be omitted. How can a computer fill in these gaps, which depend on the breadth of human experience involving perception of the world and social interactions?"
 
   *(Percy Liang)*
@@ -32,19 +40,11 @@
 
   *(Ludwig Wittgenstein)*
 
-  "This game is not just a game of words but a game of words causing things and of other things causing words. We can’t fully define the meaning of a word like “slab” without referring to the physical actions of A and B. In this way, linguistic meaning has to bottom out at some point in nonlinguistic facts."
+  "This game is not just a game of words but a game of words causing things and of other things causing words. We can’t fully define the meaning of a word like “slab” without referring to the physical actions of the builder A and the assistant B. In this way, linguistic meaning has to bottom out at some point in nonlinguistic facts."
 
   *(Jon Gauthier)*
 
-  "No general solution to the problem of computer understanding of natural language is possible, i.e. language is understood only in contextual frameworks, that even these can be shared by people to only a limited extent, and that consequently even people are not embodiments of any such general solution."
-
-  *(Joseph Weizenbaum, creator of ELIZA chat bot)*
-
-  "All existing NLP is about mapping the internal statistical dependencies of language, missing the point that language is a *communication protocol*. You cannot study language without considering *agents* communicating *about something*. The only reason language even has any statistical dependencies to study is because it's imperfect. A maximally efficient communication protocol would look like random noise, out of context (besides error correction mechanisms). All culture is a form of communication, so "understanding" art requires grounding. Mimicking what humans do isn't enough. You can't understand language without considering it in context: agents communicating about something. An analogy could be trying to understand an economy by looking at statistical structure in stock prices only."
-
-  *(Francois Chollet)*
-
-  "We have a lot of language data [at Google]... and we don't even know how we would annotate it."
+  "We have a lot of language [data at Google] but it's not annotated with what it means, and we don't even know how we would annotate it. That's a big challenge now in AI."
 
   *(Ray Kurzweil)* ([talk](https://youtube.com/watch?v=w9sz7eW6MY8#t=4m27s) `video`)
 
@@ -58,7 +58,7 @@
 
   ["From Models of Language Understanding to Agents of Language Use"](http://research.microsoft.com/apps/video/default.aspx?id=266643) by Felix Hill `video`
 
-  [interesting recent papers - language grounding](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#language-grounding)
+  [interesting papers - language grounding](#interesting-papers---language-grounding)
 
 
 
@@ -67,18 +67,18 @@
 
   **classic NLP**
 
-  [course](http://youtube.com/playlist?list=PL6397E4B26D00A269) by Chris Manning and Dan Jurafsky ([slides](https://web.stanford.edu/~jurafsky/NLPCourseraSlides.html))  
-  [course](http://youtube.com/user/afigfigueira/playlists?shelf_id=5&view=50) by Michael Collins  
-  [course](http://youtube.com/playlist?list=PLegWUnz91WfuPebLI97-WueAP90JO-15i) by Jordan Boyd-Graber  
-  [course](https://stepik.org/course/1233) by Pavel Braslavski `in russian`  
+  [course](http://youtube.com/playlist?list=PL6397E4B26D00A269) by Chris Manning and Dan Jurafsky `video` ([slides](https://web.stanford.edu/~jurafsky/NLPCourseraSlides.html))  
+  [course](http://youtube.com/user/afigfigueira/playlists?shelf_id=5&view=50) by Michael Collins `video`  
+  [course](http://youtube.com/playlist?list=PLegWUnz91WfuPebLI97-WueAP90JO-15i) by Jordan Boyd-Graber `video`  
+  [course](https://stepik.org/course/1233) by Pavel Braslavski `video` `in russian`  
 
 ----
 
   **NLP with Deep Learning**
 
-  [course](http://youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6) from Stanford ([notes](https://github.com/stanfordnlp/cs224n-winter17-notes))  
-  [course](http://github.com/oxford-cs-deepnlp-2017/lectures) from Oxford and DeepMind  
-  [course](http://phontron.com/class/nn4nlp2017/index.html) from CMU  
+  [course](http://youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6) from Stanford `video` ([notes](https://github.com/stanfordnlp/cs224n-winter17-notes))  
+  [course](http://github.com/oxford-cs-deepnlp-2017/lectures) from Oxford and DeepMind `video`  
+  [course](http://phontron.com/class/nn4nlp2017/index.html) from CMU `video`  
 
 ----
 
@@ -240,7 +240,7 @@
 
 ----
 
-  “You can’t cram the meaning of a whole %&!$ing sentence into a single $&!*ing vector!”
+  “You can’t cram the meaning of a whole %&!\$ing sentence into a single \$&!*ing vector!”
 
   *(Ray Mooney)*
 
@@ -266,7 +266,7 @@
   "Word Embeddings: Explaining their properties" by Sanjeev Arora
 	([part 1](http://www.offconvex.org/2015/12/12/word-embeddings-1/), [part 2](http://www.offconvex.org/2016/02/14/word-embeddings-2/))  
 
-  ["Are Distributional Representations Ready for the Real World? Evaluating Word Vectors for Grounded Perceptual Meaning"](https://arxiv.org/abs/1705.11168) by Lucy and Gauthier
+  ["Are Distributional Representations Ready for the Real World? Evaluating Word Vectors for Grounded Perceptual Meaning"](https://arxiv.org/abs/1705.11168) by Lucy and Gauthier `paper`
 
 
 
@@ -293,7 +293,7 @@
 ---
 ### interesting papers - language grounding
 
-[interesting recent papers - language grounding](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#language-grounding)  
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#language-grounding)
 
 
 #### ["A Paradigm for Situated and Goal-Driven Language Learning"](https://arxiv.org/abs/1610.03585) Gauthier, Mordatch
@@ -422,6 +422,8 @@
 
 #### ["Style Transfer from Non-Parallel Text by Cross-Alignment"](https://arxiv.org/abs/1705.09655) Shen, Lei, Barzilay, Jaakkola
 >	"This paper focuses on style transfer on the basis of non-parallel text. This is an instance of a broader family of problems including machine translation, decipherment, and sentiment modification. The key technical challenge is to separate the content from desired text characteristics such as sentiment. We leverage refined alignment of latent representations across mono-lingual text corpora with different characteristics. We deliberately modify encoded examples according to their characteristics, requiring the reproduced instances to match available examples with the altered characteristics as a population. We demonstrate the effectiveness of this cross-alignment method on three tasks: sentiment modification, decipherment of word substitution ciphers, and recovery of word order."
+
+  - `video` <https://facebook.com/NIPSlive/videos/1491773310878510/> (1:20:43) (Shen)
 
 
 

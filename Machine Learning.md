@@ -117,7 +117,7 @@
   ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/sutton/book/ebook/the-book.html)
 	([second edition](http://incompleteideas.net/sutton/book/the-book-2nd.html)) by Richard Sutton and Andrew Barto  
   ["Machine Learning"](https://goo.gl/tyNHMH) by Tom Mitchell  
-  ["Understanding Machine Learning: From Theory to Algorithms"](https://goo.gl/tHmsdD) by Shai Shalev-Shwartz and Shai Ben-David  
+  ["Understanding Machine Learning: From Theory to Algorithms"](http://cs.huji.ac.il/~shais/UnderstandingMachineLearning/) by Shai Shalev-Shwartz and Shai Ben-David  
   ["Pattern Recognition and Machine Learning"](https://goo.gl/58Yvvp) by Chris Bishop  
   ["Computer Age Statistical Inference"](https://web.stanford.edu/~hastie/CASI_files/PDF/casi.pdf) by Bradley Efron and Trevor Hastie  
   ["The Elements of Statistical Learning"](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf) by Trevor Hastie, Robert Tibshirani, Jerome Friedman  
@@ -159,21 +159,22 @@
 	<http://search.iclr2018.smerity.com/>  
 	<http://iclr2018.mmanukyan.io>  
 
-  - NIPS 2017
+  - NIPS 2017  
 
   - ICML 2017  
-	<https://vimeo.com/user72337760>
+	<https://vimeo.com/user72337760> `video`
 
 	<http://artem.sobolev.name/posts/2017-08-14-icml-2017.html>  
 	<https://olgalitech.wordpress.com/tag/icml2017/>  
 
   - ICLR 2017  
-	<https://facebook.com/pg/iclr.cc/videos/>  
-	<https://medium.com/@karpathy/iclr-2017-vs-arxiv-sanity-d1488ac5c131>  
+	<https://facebook.com/pg/iclr.cc/videos/> `video`
+
+	<https://medium.com/@karpathy/iclr-2017-vs-arxiv-sanity-d1488ac5c131>
 
   - NIPS 2016  
-	<https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016>  
-	<https://nips.cc/Conferences/2016/SpotlightVideos>  
+	<https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016> `video`  
+	<https://nips.cc/Conferences/2016/SpotlightVideos> `video`  
 
 	<http://people.idsia.ch/~rupesh/rnnsymposium2016/program.html> + <https://youtube.com/playlist?list=PLPwzH56Rdmq4hcuEMtvBGxUrcQ4cAkoSc>  
 	<https://sites.google.com/site/nips2016adversarial/> + <https://youtube.com/playlist?list=PLJscN9YDD1buxCitmej1pjJkR5PMhenTF>  
@@ -184,37 +185,124 @@
 	<http://artem.sobolev.name/posts/2016-12-31-nips-2016-summaries.html>  
 
   - ICML 2016  
-	<http://techtalks.tv/icml/2016/>  
+	<http://techtalks.tv/icml/2016/> `video`
 
   - ICLR 2016  
-	<http://videolectures.net/iclr2016_san_juan/>  
-	<https://tensortalk.com/?cat=conference-iclr-2016>  
-	<http://www.computervisionblog.com/2016/06/deep-learning-trends-iclr-2016.html>
+	<http://videolectures.net/iclr2016_san_juan/> `video`
+
+	<http://www.computervisionblog.com/2016/06/deep-learning-trends-iclr-2016.html>  
 
   - NIPS 2015  
-	<http://research.microsoft.com/apps/catalog/default.aspx?p=1&sb=no&ps=25&t=videos&sf=&s=&r=&vr=&ra=>  
-	<http://www.iro.umontreal.ca/~bengioy/talks/DL-Tutorial-NIPS2015.pdf>  
-	<http://colinraffel.com/wiki/tag/nips_2015?do=showtag&tag=NIPS_2015>  
+	<https://youtube.com/playlist?list=PLD7HFcN7LXRdvgfR6qNbuvzxIwG0ecE9Q> `video`  
+	<https://youtube.com/user/NeuralInformationPro/search?query=NIPS+2015> `video`  
+ 
 	<http://reddit.com/r/MachineLearning/comments/3x2ueg/nips_2015_overviews_collection/>  
 	<http://cinrizasti.blogspot.ru/2015/12/a-blog-post-about-blog-posts-about-nips.html>  
 
   - ICML 2015  
-	<http://dpkingma.com/?page_id=483>  
-	<https://youtube.com/playlist?list=PLdH9u0f1XKW8cUM3vIVjnpBfk_FKzviCu>  
+	<https://youtube.com/playlist?list=PLdH9u0f1XKW8cUM3vIVjnpBfk_FKzviCu> `video`  
+	<http://dpkingma.com/?page_id=483> `video`  
 
   - ICLR 2015  
-	<http://iclr.cc/doku.php?id=iclr2015:main#conference_schedule>  
-	<http://youtube.com/channel/UCqxFGrNL5nX10lS62bswp9w>  
+	<http://youtube.com/channel/UCqxFGrNL5nX10lS62bswp9w> `video`
 
   - NIPS 2014  
-	<https://nips.cc/Conferences/2014/Schedule?type=Oral>  
-	<https://nips.cc/Conferences/2014/Schedule>  
-	<http://youtube.com/user/NeuralInformationPro/videos>  
+	<https://youtube.com/user/NeuralInformationPro/search?query=NIPS+2014> `video`
 
 
 
 ---
 ### theory
+
+
+----
+#### bayesian framework
+
+  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#theory)  
+  [bayesian deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)  
+  [bayesian reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#bayesian-reinforcement-learning)  
+
+
+----
+#### representation learning
+
+  [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#theory)
+
+
+----
+#### reinforcement learning
+
+  ["Theory of Reinforcement Learning"](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) by Csaba Szepesvari `video`
+
+
+----
+#### learning theory
+
+  ["Machine Learning has become Alchemy"](https://youtube.com/watch?v=Qi1Yry33TQE&t=11m2s) by Ali Rahimi `video`  
+  ["Statistics in Machine Learning"](https://youtube.com/watch?v=uyZOcUDhIbY&t=17m27s) by Michael I. Jordan `video`  
+  ["Theory in Machine Learning"](https://youtube.com/watch?v=uyZOcUDhIbY&t=23m1s) by Michael I. Jordan `video`  
+
+  ["Learning Theory: Purely Theoretical?"](https://hips.seas.harvard.edu/blog/2013/02/15/learning-theory-purely-theoretical/) by Jonathan Huggins
+
+----
+
+  - what does it mean to learn  
+  - when is a concept/function learnable  
+  - how much data do we need to learn something  
+  - how can we make sure what we learn will generalize to future data  
+
+  theory helps to:  
+  - design algorithms  
+  - understand behaviour of algorithms  
+  - quantify knowledge/uncertainty  
+  - identify new and refine old challenges  
+
+  frameworks:  
+  - Statistical learning theory  
+  - PAC learning or PAC-Bayes  
+  - Minimax estimation (estimation/decision theory)  
+
+----
+
+  Statistical learning theory ingredients:
+  - distributions
+  - i.i.d. samples
+  - learning algorithms
+  - predictors
+  - loss functions
+
+  *A priori analysis*: How well a learning algorithm will perform on new data?  
+  - (Vapnik's learning theory) Can we compete with best hypothesis from a given set of hypotheses?  
+  - (statistics) Can we match the best possible loss assuming data generating distribution belongs to known family?  
+
+  *A posteriori analysis*: How well is a learning algorithm doing on some data? Quantify uncertainty left
+
+  *Fundamental theorem of statistical learning theory*:  
+  In binary classification, to match the loss of hypothesis in class H up to accuracy ε, one needs O(VC(H)/ε^2) observations.
+
+  *Theorem (computational complexity of learning linear classifiers)*:  
+  Unless NP=RP, linear classifiers (hyperplanes) cannot be learned in polynomial time.
+
+----
+
+  ["Machine Learning Theory"](https://mostafa-samir.github.io/ml-theory-pt1/) by Mostafa Samir  
+  ["Crash Course on Learning Theory"](https://blogs.princeton.edu/imabandit/2015/10/13/crash-course-on-learning-theory-part-1/) by Sebastien Bubeck  
+  ["Statistical Learning Theory"](https://web.stanford.edu/class/cs229t/Lectures/percy-notes.pdf) by Percy Liang  
+
+  [course](http://work.caltech.edu/telecourse.html) by Yaser Abu-Mostafa `video`
+
+----
+
+  ["Computational Learning Theory, AI and Beyond"](https://www.math.ias.edu/files/mathandcomp.pdf) chapter of "Mathematics and Computation" book by Avi Wigderson
+
+  ["Probably Approximately Correct - A Formal Theory of Learning"](http://jeremykun.com/2014/01/02/probably-approximately-correct-a-formal-theory-of-learning/) by Jeremy Kun  
+  ["A Problem That is Not (Properly) PAC-learnable"](http://jeremykun.com/2014/04/21/an-un-pac-learnable-problem/) by Jeremy Kun  
+  ["Occam’s Razor and PAC-learning"](http://jeremykun.com/2014/09/19/occams-razor-and-pac-learning/) by Jeremy Kun  
+
+
+
+---
+### methods
 
   **challenges**  
   - How to decide which representation is best for target knowledge?  
@@ -241,72 +329,6 @@
   - correlation does not imply causation  
 
 ----
-
-#### bayesian framework
-
-  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#theory)  
-  [bayesian deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)  
-  [bayesian reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#bayesian-reinforcement-learning)  
-
-----
-
-#### representation learning
-
-  [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#theory)
-
-----
-
-#### learning theory
-
-  - what does it mean to learn  
-  - when is a concept/function learnable  
-  - how much data do we need to learn something  
-  - how can we make sure what we learn will generalize to future data  
-
-  theory helps to:  
-  - design algorithms  
-  - understand behaviour of algorithms  
-  - quantify knowledge/uncertainty  
-  - identify new and refine old challenges  
-
-  frameworks:  
-  - Statistical learning theory  
-  - PAC learning or PAC-Bayes  
-  - Minimax estimation (estimation/decision theory)  
-
-----
-
-  ["Machine Learning has become Alchemy"](https://youtube.com/watch?v=Qi1Yry33TQE&t=11m2s) by Ali Rahimi `video`  
-  ["Statistics in Machine Learning"](https://youtube.com/watch?v=uyZOcUDhIbY&t=17m27s) by Michael I. Jordan `video`  
-  ["Theory in Machine Learning"](https://youtube.com/watch?v=uyZOcUDhIbY&t=23m1s) by Michael I. Jordan `video`  
-
-  ["Learning Theory: Purely Theoretical?"](https://hips.seas.harvard.edu/blog/2013/02/15/learning-theory-purely-theoretical/) by Jonathan Huggins
-
-----
-
-  ["Theory of Reinforcement Learning"](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) by Csaba Szepesvari `video`
-
----
-
-  ["Computational Learning Theory, AI and Beyond"](https://www.math.ias.edu/files/mathandcomp.pdf) chapter of "Mathematics and Computation" book by Avi Wigderson
-
-  [overview](https://mostafa-samir.github.io/ml-theory-pt1/) by Mostafa Samir
-
-  overview by Jeremy Kun:  
-  - ["Probably Approximately Correct - A Formal Theory of Learning"](http://jeremykun.com/2014/01/02/probably-approximately-correct-a-formal-theory-of-learning/)  
-  - ["A Problem That is Not (Properly) PAC-learnable"](http://jeremykun.com/2014/04/21/an-un-pac-learnable-problem/)  
-  - ["Occam’s Razor and PAC-learning"](http://jeremykun.com/2014/09/19/occams-razor-and-pac-learning/)  
-
-----
-
-  [course](http://work.caltech.edu/telecourse.html) by Yaser Abu-Mostafa `video`  
-  [course](https://blogs.princeton.edu/imabandit/2015/10/13/crash-course-on-learning-theory-part-1/) by Sebastien Bubeck  
-  [course](https://web.stanford.edu/class/cs229t/Lectures/percy-notes.pdf) by Percy Liang  
-
-
-
----
-### methods
 
   *machine learning* = *representation* + *evaluation* + *optimization*
 

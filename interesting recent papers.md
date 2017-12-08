@@ -147,6 +147,7 @@ interesting older papers:
 >	"Weights are initialized in such a way that for any unit in a layer with input weights wi Σ wi = 0 and Σ wi^2 = 1."  
 >	"selu(x) = λx for x>0 and selu(x) = λ(αe^x − α) for x≤0, where α≈1.6733 and λ≈1.0507"  
   - `video` <https://youtube.com/watch?v=h6eQrkkU9SA> (Hochreiter)
+  - `video` <https://facebook.com/nipsfoundation/videos/1555553784535855/> (47:04) (Klambauer)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1706.02515>
   - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/self-normalizing-neural-networks/> `in russian`
   - `code` <http://github.com/bioinf-jku/SNNs>
@@ -1064,6 +1065,7 @@ interesting older papers:
   `unifying GANs and VAEs`
 >	"We introduce hierarchical implicit models. HIMs combine the idea of implicit densities with hierarchical Bayesian modeling, thereby defining models via simulators of data with rich hidden structure."  
 >	"We develop likelihood-free variational inference, a scalable variational inference algorithm for HIMs. Key to LFVI is specifying a variational family that is also implicit. This matches the model's flexibility and allows for accurate approximation of the posterior."  
+  - `poster` <http://dustintran.com/papers/TranRanganathBlei2017_poster.pdf>
   - `post` <http://dustintran.com/blog/deep-and-hierarchical-implicit-models>
   - `post` <https://bayesgroup.github.io/sufficient-statistics/posts/hierarchical-implicit-models-and-likelihood-free-variational-inference/> `in russian`
 
@@ -1099,12 +1101,24 @@ interesting older papers:
 [interesting recent papers - generative models](#generative-models)
 
 ----
+#### ["Masked Autoregressive Flow for Density Estimation"](https://arxiv.org/abs/1705.07057) Papamakarios, Pavlakou, Murray
+>	"We describe an approach for increasing the flexibility of an autoregressive model, based on modelling the random numbers that the model uses internally when generating data. By constructing a stack of autoregressive models, each modelling the random numbers of the next model in the stack, we obtain a type of normalizing flow suitable for density estimation. This type of flow is closely related to Inverse Autoregressive Flow and is a generalization of Real NVP."  
+>	"MAF:  
+>	- fast to calculate p(x)  
+>	- slow to sample from  
+>	Real NVP:  
+>	- fast to calculate p(x)  
+>	- fast to sample from  
+>	- limited capacity vs MAF"  
+  - `video` <https://facebook.com/NIPSlive/videos/1492589610796880/> (2:15) (Papamakarios)
+  - `code` <https://github.com/gpapamak/maf>
+
 #### ["Density Estimation using Real NVP"](http://arxiv.org/abs/1605.08803) Dinh, Sohl-Dickstein, Bengio
->	"Real-valued Non Volume Preserving transform:"  
->	"- one-pass and exact inference and sampling"  
->	"- explicit learning of a latent representation"  
->	"- tractable log-likelihood"  
->	"- coherent and sharp samples"  
+>	"Real-valued Non Volume Preserving transform:  
+>	- one-pass and exact inference and sampling  
+>	- explicit learning of a latent representation  
+>	- tractable log-likelihood  
+>	- coherent and sharp samples"  
   - <https://laurent-dinh.github.io/2016/07/12/real-nvp-visualization.html> (demo)
   - `video` <https://channel9.msdn.com/events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-1> (08:19) (Dinh)
   - `video` <https://periscope.tv/hugo_larochelle/1ypKdAVmbEpGW> (Dinh)
@@ -2100,6 +2114,7 @@ hieves."
 #### ["Noisy Networks for Exploration"](https://arxiv.org/abs/1706.10295) Fortunato, Azar, Piot, Menick, Osband, Graves, Mnih, Munos, Hassabis, Pietquin, Blundell, Legg
   `approximate bayesian exploration`
 >	"scale of perturbation to parameters is learned along with original objective function"  
+  - `video` <https://youtu.be/fevMOp5TDQs?t=1h27s> (Mnih)
   - `code` <https://github.com/Kaixhin/NoisyNet-A3C>
   - `code` <https://github.com/andrewliao11/NoisyNet-DQN>
 
@@ -2896,6 +2911,7 @@ hieves."
 
 #### ["Style Transfer from Non-Parallel Text by Cross-Alignment"](https://arxiv.org/abs/1705.09655) Shen, Lei, Barzilay, Jaakkola
   `translation`
+  - `video` <https://facebook.com/NIPSlive/videos/1491773310878510/> (1:20:43) (Shen)
 
 ----
 #### ["Bag of Tricks for Efficient Text Classification"](http://arxiv.org/abs/1607.01759) Joulin, Grave, Bojanowski, Mikolov

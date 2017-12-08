@@ -1313,6 +1313,7 @@ Yoshua Bengio:
 >	"selu(x) = λx for x>0 and selu(x) = λ(αe^x − α) for x≤0, where α≈1.6733 and λ≈1.0507"
 
   - `video` <https://youtube.com/watch?v=h6eQrkkU9SA> (Hochreiter)
+  - `video` <https://facebook.com/nipsfoundation/videos/1555553784535855/> (47:04) (Klambauer)
   - `code` <http://github.com/bioinf-jku/SNNs>
 
 

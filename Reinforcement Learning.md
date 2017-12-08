@@ -5,7 +5,7 @@
   * [applications](#applications)
   * [overview](#overview)
   * [deep reinforcement learning](#deep-reinforcement-learning)
-  * [theory](#theory)
+  * [problems](#problems)
   * [exploration and intrinsic motivation](#exploration-and-intrinsic-motivation)
   * [bandits](#bandits)
   * [model-based methods](#model-based-methods)
@@ -263,6 +263,7 @@
   [course](http://youtube.com/playlist?list=PL5X3mDkKaJrL42i_jhE4N-p6E2Ol62Ofa) by David Silver `video`
 	([slides](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html))  
   [course](https://udacity.com/course/reinforcement-learning--ud600) by Michael Littman `video`  
+  [course](https://github.com/yandexdataschool/Practical_RL/) from Yandex `video` `in russian`  
 
   [Reinforcement Learning Summer School 2017](http://videolectures.net/deeplearning2017_montreal/) `video`
 
@@ -307,6 +308,7 @@
 	([slides](http://rll.berkeley.edu/deeprlcourse/docs/nuts-and-bolts.pdf),
 	[write-up](https://github.com/williamFalcon/DeepRLHacks))  
 
+----
 
   ["Deep Reinforcement Learning"](https://sites.google.com/site/deeprlnips2016/) workshop at NIPS 2016  
   ["Abstraction in RL"](http://rlabstraction2016.wix.com/icml) workshop at ICML 2016  
@@ -314,10 +316,14 @@
   ["Deep Reinforcement Learning"](http://rll.berkeley.edu/deeprlworkshop/) workshop at NIPS 2015  
   ["Novel Trends and Applications in RL"](https://tcrl14.wordpress.com/videos/) workshop at NIPS 2014  
 
+----
+
+  [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)
+
 
 
 ---
-### theory
+### problems
 
   differences between reinforcement learning and other learning paradigms  ([overview](https://youtube.com/watch?v=2pWv7GOvuf0&t=9m37s) by David Silver `video`):  
   - there is no supervisor, only a reward signal  
@@ -329,16 +335,20 @@
   - no full access to analytic representation of loss function being optimized - value has to be queried by interaction with environment  
   - interacting with stateful environment (unknown, nonlinear, stochastic, arbitrarily complex) - next input depends on previous actions  
 
+  differences between batch reinforcement learning and supervised learning  ([overview](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) (33:45) by Csaba Szepesvari `video`)
+
+  differences between reinforcement learning and statistical learning theory  ([overview](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) (13:01) by Csaba Szepesvari `video`)
+
+----
+
   characteristics:  
   - can learn any function  
   - inherently handles uncertainty  
     * uncertainty in actions (the world)  
     * uncertainty in observations (sensors)  
-  - directly maximise criteria we care about (instead of loss function on samples)  
+  - directly maximises criteria we care about  
   - copes with delayed feedback  
     * temporal credit assignment problem  
-
-----
 
   challenges:  
   - stability (non-stationary, fleeting nature of time and online data)  
@@ -652,6 +662,10 @@
 ---
 ### bandits
 
+  reinforcement learning problem with single state
+
+----
+
   [introduction](http://youtube.com/watch?v=sGuiWX07sKw) by David Silver `video`  
   [overview](http://youtube.com/watch?v=fIKkhoI1kF4&t=19m22s) by Emma Brunskill `video`  
 
@@ -720,6 +734,10 @@
 
 ---
 ### contextual bandits
+
+  reinforcement learning problem with next state chosen at random independently of chosen action
+
+----
 
   [introduction](https://youtu.be/sGuiWX07sKw?t=1h29m7s) by David Silver `video`
 
@@ -826,22 +844,34 @@
 	* agent improves its policy  
 
 
-  model-based methods:  
-  - *(plus)* sample efficiency: learn from scratch with a small number of trials  
-  - *(minus)* modeling bias: complex dynamics and costs can cause learning to fail  
-
   model-free methods:  
   - *(plus)* can handle systems with arbitrarily complex dynamics and costs  
   - *(minus)* significantly less sample-efficient  
 
+  model-based methods:  
+  - *(plus)* sample efficiency: learn from scratch with a small number of trials  
+  - *(minus)* modeling bias: complex dynamics and costs can cause learning to fail  
+
+
+  planning methods:  
+  - forward methods  
+	* lookahead tree building  
+  - global methods  
+	* approximate dynamic programming  
+	* policy search  
+	* hybrids  
+  - hybrid forward and global methods  
+
 ----
 
-  [overview](https://youtu.be/bsuvM1jO-4w?t=35m2s) by Vlad Mnih `video`
+  [overview](https://youtu.be/bsuvM1jO-4w?t=35m2s) by Vlad Mnih `video`  
+  [overview](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) (49:34) by Csaba Szepesvari `video`  
 
   ["Markov Decision Process"](https://youtube.com/watch?v=lfHX2hHRMVQ) by David Silver `video`  
   ["Planning by Dynamic Programming"](https://youtube.com/watch?v=Nd1-UUMVfz4) by David Silver `video`  
   ["Integrating Learning and Planning"](https://youtube.com/watch?v=ItMutbeOHtc) by David Silver `video`  
 
+----
 
   [interesting papers](#interesting-papers---model-based-methods)  
   [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-based-methods)  
@@ -863,19 +893,30 @@
   [overview](https://youtube.com/watch?v=onBYsen2_eA) by Michael Littman `video`  
   [overview](https://yadi.sk/i/lOAUu7o13JBHFz) by Fedor Ratnikov `video` `in russian`  
 
+----
 
   ["A Survey of Monte Carlo Tree Search Methods"](http://www.cameronius.com/cv/mcts-survey-master.pdf) by Browne et al. `paper`
-
 
   ["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper`  
   ["Combining Online and Offline Knowledge in UCT"](http://machinelearning.org/proceedings/icml2007/papers/387.pdf) by Gelly and Silver `paper` ([talk](https://youtube.com/watch?v=Bm7zah_LrmE) `video`)  
   ["Deep Learning for Real-Time Atari Game Play Using Offline Monte-Carlo Tree Search Planning"](#deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning-guo-singh-lee-lewis-wang) by Guo et al. `paper`  
   ["A Monte-Carlo AIXI Approximation"](https://github.com/brylevkirill/notes/blob/Artificial%20Intelligence.md#a-monte-carlo-aixi-approximation-mc-aixi-ctw-agent-veness-ng-hutter-uther-silver) by Veness et al. `paper`  
 
+  [interesting papers](#interesting-papers---model-based-methods)  
+  [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-based-methods)  
+
 
 
 ----
 #### Guided Policy Search
+
+  - uses expert trajectories obtained previously to learn locally linear approximations of environment dynamics  
+  - uses optimal control algorithms to find the locally linear optimal policies corresponding to these dynamics  
+  - uses supervised learning to train a neural network to fit the trajectories generated by these policies  
+
+  "GPS takes a few sequences of actions from another controller which could be constructed using a separate method such as optimal control. GPS learns from them by using supervised learning in combination with importance sampling which corrects for off-policy samples. This approach effectively biases the search towards a good (local) optimum. GPS works in a loop, by optimising policies to match sampled trajectories, and  optimising trajectory guiding distributions to match the policy and minimise costs."
+
+----
 
   [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/) by Pieter Abbeel (part 2) `video`  
   [overview](http://youtube.com/watch?v=EtMyH_--vnU) by Sergey Levine `video`  
@@ -885,15 +926,9 @@
   ["Optimal Control and Trajectory Optimization"](https://youtube.com/watch?v=mZtlW_xtarI) by Sergey Levine `video`  
   ["Learning Policies by Imitating Optimal Control"](https://youtube.com/watch?v=o0Ebur3aNMo) by Sergey Levine `video`  
 
+----
 
-  - uses expert trajectories obtained previously to learn locally linear approximations of environment dynamics  
-  - uses optimal control algorithms to find the locally linear optimal policies corresponding to these dynamics  
-  - uses supervised learning to train a neural network to fit the trajectories generated by these policies  
-
-  "GPS takes a few sequences of actions from another controller which could be constructed using a separate method such as optimal control. GPS learns from them by using supervised learning in combination with importance sampling which corrects for off-policy samples. This approach effectively biases the search towards a good (local) optimum. GPS works in a loop, by optimising policies to match sampled trajectories, and  optimising trajectory guiding distributions to match the policy and minimise costs."
-
-
-  [interesting papers](#interesting-papers---behavioral-cloning)
+  [interesting papers - behavioral cloning](#interesting-papers---behavioral-cloning)
 
 
 
@@ -910,6 +945,7 @@
     * n-layer network can “lookahead” n steps  
     * are transition models required at all?  
 
+----
 
   ["Learning Dynamical System Models from Data"](https://youtube.com/watch?v=qVsLk5CVy_c) by Sergey Levine `video`  
   ["Advanced Model Learning"](https://youtube.com/watch?v=6EasN2FAIX0) by Chelsea Finn `video`  
@@ -920,6 +956,11 @@
 
   ["Deep AutoRegressive Networks"](https://youtu.be/-yX1SYeDHbg?t=49m25s) by Alex Graves `video`  
   ["Deep AutoRegressive Networks"](https://youtu.be/P78QYjWh5sM?t=20m50s) by Karol Gregor `video`  
+
+----
+
+  [interesting papers](#interesting-papers---model-based-methods)  
+  [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-based-methods)  
 
 
 
@@ -969,12 +1010,16 @@
   [General Reinforcement Learning Agent Zoo](http://aslanides.io/aixijs/) by John Aslanides
 	([demo](http://aslanides.io/aixijs/demo.html), [code](https://github.com/aslanides/aixijs), [paper](https://arxiv.org/abs/1705.07615))   
 
+----
+
+  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
+
 
 
 ---
 ### value-based methods
 
-  ["Temporal-Difference Learning"](http://videolectures.net/deeplearning2017_sutton_td_learning/) by Richard Sutton `video`  
+  ["Temporal-Difference Learning"](http://videolectures.net/deeplearning2017_sutton_td_learning/) by Richard Sutton `video`
 
   ["Markov Decision Process"](https://youtube.com/watch?v=lfHX2hHRMVQ) by David Silver `video`  
   ["Planning by Dynamic Programming"](https://youtube.com/watch?v=Nd1-UUMVfz4) by David Silver `video`  
@@ -990,16 +1035,6 @@
   ["Temporal Difference"](https://yadi.sk/i/cVawsPkK3EtGJj) by Fedor Ratnikov `video` `in russian`  
   "Value-based Methods" by Fedor Ratnikov
 	([first part](https://yadi.sk/i/I7XcP6vU3ExNrT), [second part](https://yadi.sk/i/XbqNQmjm3ExNsq)) `video` `in russian`  
-  ["Approximate Reinforcement Learning"](https://yadi.sk/i/AHDU2p_j3FT3nr) by Fedor Ratnikov `video` `in russian`  
-
-
-  latest developments:  
-  - [overview](http://techtalks.tv/talks/deep-reinforcement-learning/62360/) by David Silver `video`  
-  - [overview](http://youtu.be/qLaDWKd61Ig?t=9m16s) by David Silver `video`  
-  - [overview](http://videolectures.net/rldm2015_silver_reinforcement_learning/) by David Silver `video`  
-  - overview by Alexander Fritsler and Fedor Ratnikov
-	([first part](https://yadi.sk/i/yBO0q4mI3GAxYd), [second part](https://yadi.sk/i/oWC2M5803GAyFB)) `video` `in russian`
-  - [overview](http://youtube.com/watch?v=mrgJ53TIcQc) of Deep Q-Network by Mikhail Pavlov `video` `in russian`  
 
 
   [derivations](http://www.alexirpan.com/rl-derivations/#q-learning) by Alex Irpan
@@ -1007,6 +1042,32 @@
 
   [interesting papers](#interesting-papers---value-based-methods)
 
+----
+
+  latest developments:  
+  - [overview](http://youtube.com/watch?v=bsuvM1jO-4w) by Vlad Mnih `video`  
+  - [overview](http://youtu.be/fevMOp5TDQs?t=53m32s) by Vlad Mnih `video`  
+  - [overview](http://techtalks.tv/talks/deep-reinforcement-learning/62360/) by David Silver `video`  
+  - [overview](http://youtu.be/qLaDWKd61Ig?t=9m16s) by David Silver `video`  
+  - [overview](http://videolectures.net/rldm2015_silver_reinforcement_learning/) by David Silver `video`  
+  - [overview](https://yadi.sk/i/yBO0q4mI3GAxYd) by Alexander Fritsler `video` `in russian`  
+  - [overview](http://youtube.com/watch?v=mrgJ53TIcQc) (Pavlov) `in russian`
+
+
+  [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-free-methods)
+
+
+----
+#### Deep Q-Network (DQN)
+
+  [overview](http://youtube.com/watch?v=dV80NAlEins) by Nando de Freitas `video`  
+  [overview](http://youtube.com/watch?v=fevMOp5TDQs) by Vlad Mnih `video`  
+
+  [from value function approximation to Deep Q-Network](http://youtu.be/UoPei5o4fps?t=1h9m) by David Silver `video`  
+  [from Fitted Value Iteration to Deep Q-Network](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) (48:49) by Czaba Szepesvari `video`  
+  ["Approximate Reinforcement Learning"](https://yadi.sk/i/AHDU2p_j3FT3nr) by Fedor Ratnikov `video` `in russian`  
+
+----
 
   - naive Q-learning oscillates or diverges with neural networks  
     * data is sequential  
@@ -1018,7 +1079,7 @@
     * naive Q-learning gradients can be large  
     * unstable when backpropagated  
 
-  **Deep Q-Network (DQN)**:  
+  Deep Q-Network:  
   - use experience replay  
     * break correlations in data, bring us back to iid setting  
     * learn from all past policies  
@@ -1398,11 +1459,11 @@ interesting recent papers:
   - `video` <http://youtube.com/watch?v=EfGD2qveGdQ> (demo)
   - `video` <http://youtube.com/user/eldubro/videos> (demo)
   - <http://cs.stanford.edu/people/karpathy/convnetjs/demo/rldemo.html> (demo)
-  - `video` <http://videolectures.net/nipsworkshops2013_mnih_atari/> (Mnih)
-  - `video` <http://youtube.com/watch?v=xzM7eI7caRk> (Mnih)
+  - `video` <http://youtube.com/watch?v=fevMOp5TDQs> (Mnih)
   - `video` <http://youtube.com/watch?v=dV80NAlEins> (de Freitas)
-  - `video` <http://youtube.com/watch?v=HUmEbUkeQHg> (de Freitas)
-  - `video` <http://youtube.com/watch?v=mrgJ53TIcQc> (Pavlov) `in russian`
+  - `video` [from value function approximation to Deep Q-Network](http://youtu.be/UoPei5o4fps?t=1h9m) (Silver)
+  - `video` [from Fitted Value Iteration to Deep Q-Network](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) (48:49) (Szepesvari)
+  - `video` <https://yadi.sk/i/AHDU2p_j3FT3nr> + <https://yadi.sk/i/EeUeheri3FT3ra> (Ratnikov and Vasilev) `in russian`
 
 
 #### ["Playing FPS Games with Deep Reinforcement Learning"](https://arxiv.org/abs/1609.05521) Lample, Chaplot
@@ -1489,6 +1550,8 @@ interesting recent papers:
 >	"The game of chess is the most widely-studied domain in the history of artificial intelligence. The strongest programs are based on a combination of sophisticated search techniques, domain-specific adaptations, and handcrafted evaluation functions that have been refined by human experts over several decades. In contrast, the AlphaGo Zero program recently achieved superhuman performance in the game of Go, by tabula rasa reinforcement learning from games of self-play. In this paper, we generalise this approach into a single AlphaZero algorithm that can achieve, tabula rasa, superhuman performance in many challenging domains. Starting from random play, and given no domain knowledge except the game rules, AlphaZero achieved within 24 hours a superhuman level of play in the games of chess and shogi (Japanese chess) as well as Go, and convincingly defeated a world-champion program in each case."
 
 ----
+>	"AlphaGo Zero tuned the hyper-parameter of its search by Bayesian optimization. In AlphaZero they reuse the same hyper-parameters for all games without game-specific tuning. The sole exception is the noise that is added to the prior policy to ensure exploration; this is scaled in proportion to the typical number of legal moves for that game type. Like AlphaGo Zero, the board state is encoded by spatial planes based only on the basic rules for each game. The actions are encoded by either spatial planes or a flat vector, again based only on the basic rules for each game. They applied the AlphaZero algorithm to chess, shogi, and also Go. Unless otherwise specified, the same algorithm settings, network architecture, and hyper-parameters were used for all three games."
+
 >	"no opening book, no endgame database, no heuristics, no anything"
 
 
@@ -2290,12 +2353,11 @@ interesting recent papers:
   - `video` <http://youtube.com/watch?v=EfGD2qveGdQ> (demo)
   - `video` <http://youtube.com/user/eldubro/videos> (demo)
   - <http://cs.stanford.edu/people/karpathy/convnetjs/demo/rldemo.html> (demo)
-  - `video` <http://videolectures.net/nipsworkshops2013_mnih_atari/> (Mnih)
-  - `video` <http://youtube.com/watch?v=xzM7eI7caRk> (Mnih)
+  - `video` <http://youtube.com/watch?v=fevMOp5TDQs> (Mnih)
   - `video` <http://youtube.com/watch?v=dV80NAlEins> (de Freitas)
-  - `video` <http://youtube.com/watch?v=HUmEbUkeQHg> (de Freitas)
+  - `video` [from value function approximation to Deep Q-Network](http://youtu.be/UoPei5o4fps?t=1h9m) (Silver)
+  - `video` [from Fitted Value Iteration to Deep Q-Network](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) (48:49) (Szepesvari)
   - `video` <https://yadi.sk/i/AHDU2p_j3FT3nr> + <https://yadi.sk/i/EeUeheri3FT3ra> (Ratnikov and Vasilev) `in russian`
-  - `video` <http://youtube.com/watch?v=mrgJ53TIcQc> (Pavlov) `in russian`
 
 
 #### ["Dueling Network Architectures for Deep Reinforcement Learning"](http://arxiv.org/abs/1511.06581) Wang, Schaul, Hessel, van Hasselt, Lanctot, de Freitas
@@ -2310,6 +2372,7 @@ interesting recent papers:
 
   - `video` <https://youtube.com/watch?v=TpGuQaswaHs> + <https://youtube.com/watch?v=oNLITLfrvQY> (demo)
   - `video` <http://techtalks.tv/talks/dueling-network-architectures-for-deep-reinforcement-learning/62381/> (Wang)
+  - `video` <https://youtu.be/fevMOp5TDQs?t=58m24s> (Mnih)
   - `video` <https://yadi.sk/i/yBO0q4mI3GAxYd> (56:26) (Fritsler) `in russian`
   - `video` <https://youtu.be/mrgJ53TIcQc?t=35m4s> (Pavlov) `in russian`
   - `post` <http://torch.ch/blog/2016/04/30/dueling_dqn.html>
@@ -2326,6 +2389,7 @@ interesting recent papers:
 >	"Single estimator used in the Q-learning update rule over-estimates the expected return due to the use of the maximum action value as an approximation of the maximum expected action value."
 
   - `video` <https://youtu.be/qLaDWKd61Ig?t=32m52s> (Silver)
+  - `video` <https://youtu.be/fevMOp5TDQs?t=53m42s> (Mnih)
   - `video` <https://yadi.sk/i/yBO0q4mI3GAxYd> (15:02) (Fritsler) `in russian`
   - `video` <https://youtu.be/mrgJ53TIcQc?t=17m31s> (Pavlov) `in russian`
   - `code` <https://github.com/carpedm20/deep-rl-tensorflow>
@@ -2353,6 +2417,7 @@ interesting recent papers:
 
 >	"Numerous neuroscience studies have identified mechanisms of experience replay in the hippocampus of rodents, where sequences of prior experience are replayed, either during awake resting or sleep, and in particular that this happens more for rewarded paths. Furthermore, there is a likely link between increased replay of an experience, and how much can be learned from it, or its TD-error."
 
+  - `video` <https://youtu.be/fevMOp5TDQs?t=56m51s> (Mnih)
   - `video` <https://yadi.sk/i/yBO0q4mI3GAxYd> (33:13) (Fritsler) `in russian`
   - `video` <https://youtu.be/mrgJ53TIcQc?t=25m43s> (Pavlov) `in russian`
   - `code` <https://github.com/Kaixhin/Atari>
