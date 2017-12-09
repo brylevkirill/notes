@@ -156,7 +156,7 @@
 	[discussion](http://thinkingpoker.net/2017/04/episode-210-michael-johanson-and-dustin-morrill/) with Michael Johanson and Dustin Morrill  
 	[discussion](http://thinkingpoker.net/2017/08/episode-225-taking-the-variance-out-of-poker/) with Michael Bowling and Dustin Morrill  
 
-	[demo matches against top human players](https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ) `video`  
+	[matches against professional players](https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ) `video`
 
   - *Chess*  
 	["Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm"](#mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm-silver-et-al) by Silver et al. `paper`  
@@ -174,24 +174,15 @@
 	[game vs Pajkatt](https://youtube.com/watch?v=BBUiwCEmrxU) `video`  
 
   - *Doom*  
-	["Learning to Act by Predicting the Future"](https://arxiv.org/abs/1611.01779) by Dosovitskiy and Koltun `paper`  
-	[overview](https://youtube.com/watch?v=Q0ldKJbAwR8) of IntelAct agent by Alexey Dosovitskiy `video` `in russian`  
-	[demo](https://youtube.com/watch?v=947bSUtuSQ0) of IntelAct agent `video`  
+	["Learning to Act by Predicting the Future"](#learning-to-act-by-predicting-the-future-dosovitskiy-koltun) by Dosovitskiy and Koltun `paper`
 
+	[demo](https://youtube.com/watch?v=947bSUtuSQ0) of IntelAct agent `video`  
 	[demo](https://youtube.com/channel/UC8UghzsxS5uEFUEbvcAWwlQ/videos) of agents from ViZDoom competition `video`  
 
-  - *Atari video games*  
-	["Playing Atari with Deep Reinforcement Learning"](#playing-atari-with-deep-reinforcement-learning-mnih-kavukcuoglu-silver-graves-antonoglou-wierstra-riedmiller) by Mnih et al. `paper`  
-	["Nature" magazine](https://goo.gl/jHRkZr) `paper`  
+  - *Atari*  
+	["Playing Atari with Deep Reinforcement Learning"](#playing-atari-with-deep-reinforcement-learning-mnih-kavukcuoglu-silver-graves-antonoglou-wierstra-riedmiller) by Mnih et al. `paper`
 
-	[overview](http://youtube.com/watch?v=dV80NAlEins) of Deep Q-Network agent by Nando de Freitas `video`  
-	[demo](http://youtube.com/watch?v=EfGD2qveGdQ) of Deep Q-Network agent `video`  
-
-	[3D racing demo](http://youtube.com/watch?v=0xo1Ldx3L5Q) `video`  
-	[3D labyrinth demo](http://youtube.com/watch?v=nMR5mjCFZCw) `video`  
-	[Doom gameplay demo](http://youtube.com/watch?v=re6hkcTWVUY) `video`  
-	[blockworld demo](http://youtube.com/watch?v=6jlaBD9LCnM) `video`  
-	[blockworld demo](http://youtube.com/watch?v=6JT6_dRcKAw) `video`  
+	[demo](http://youtube.com/watch?v=EfGD2qveGdQ) `video`
 
 
 ----
@@ -1036,11 +1027,29 @@
   "Value-based Methods" by Fedor Ratnikov
 	([first part](https://yadi.sk/i/I7XcP6vU3ExNrT), [second part](https://yadi.sk/i/XbqNQmjm3ExNsq)) `video` `in russian`  
 
+----
+
+  [interesting papers](#interesting-papers---value-based-methods)  
+  [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-free-methods)  
+
+----
+
+  methods:  
+  - [Deep Q-Network](#deep-q-network-dqn)
+
+
+
+----
+#### Deep Q-Network (DQN)
+
+  [overview](http://youtube.com/watch?v=dV80NAlEins) by Nando de Freitas `video`  
+  [overview](http://youtube.com/watch?v=fevMOp5TDQs) by Vlad Mnih `video`  
+
+  [from value function approximation to Deep Q-Network](http://youtu.be/UoPei5o4fps?t=1h9m) by David Silver `video`  
+  [from Fitted Value Iteration to Deep Q-Network](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) (48:49) by Czaba Szepesvari `video`  
+  ["Approximate Reinforcement Learning"](https://yadi.sk/i/AHDU2p_j3FT3nr) by Fedor Ratnikov `video` `in russian`  
 
   [derivations](http://www.alexirpan.com/rl-derivations/#q-learning) by Alex Irpan
-
-
-  [interesting papers](#interesting-papers---value-based-methods)
 
 ----
 
@@ -1053,19 +1062,10 @@
   - [overview](https://yadi.sk/i/yBO0q4mI3GAxYd) by Alexander Fritsler `video` `in russian`  
   - [overview](http://youtube.com/watch?v=mrgJ53TIcQc) (Pavlov) `in russian`
 
-
-  [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-free-methods)
-
-
 ----
-#### Deep Q-Network (DQN)
 
-  [overview](http://youtube.com/watch?v=dV80NAlEins) by Nando de Freitas `video`  
-  [overview](http://youtube.com/watch?v=fevMOp5TDQs) by Vlad Mnih `video`  
-
-  [from value function approximation to Deep Q-Network](http://youtu.be/UoPei5o4fps?t=1h9m) by David Silver `video`  
-  [from Fitted Value Iteration to Deep Q-Network](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) (48:49) by Czaba Szepesvari `video`  
-  ["Approximate Reinforcement Learning"](https://yadi.sk/i/AHDU2p_j3FT3nr) by Fedor Ratnikov `video` `in russian`  
+  [interesting papers](#interesting-papers---value-based-methods)  
+  [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-free-methods)  
 
 ----
 
@@ -1104,6 +1104,9 @@
 	([slides](http://people.eecs.berkeley.edu/~pabbeel/nips-tutorial-policy-optimization-Schulman-Abbeel.pdf))  
   [tutorial](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/) by Pieter Abbeel `video`  
 
+  ["Optimizing Expectations: From Deep Reinforcement Learning to Stochastic Computation Graphs"](http://joschu.net/docs/thesis.pdf)
+	by John Schulman `paper` ([talk](https://youtube.com/watch?v=jmMsNQ2eug4) `video`)
+
   [overview](https://yadi.sk/i/I3M09HKQ3GKBiP) by Fedor Ratnikov `video` `in russian`  
   [overview](https://youtu.be/mrgJ53TIcQc?t=41m35s) by Alexey Seleznev `video` `in russian`  
 
@@ -1119,12 +1122,10 @@
 	https://youtube.com/watch?v=rO7Dx8pSJQw  
 	https://youtube.com/watch?v=gb5Q2XL5c8A  
 
+----
 
-  ["Optimizing Expectations: From Deep Reinforcement Learning to Stochastic Computation Graphs"](http://joschu.net/docs/thesis.pdf)
-	by John Schulman `paper` ([talk](https://youtube.com/watch?v=jmMsNQ2eug4) `video`)
-
-
-  [interesting papers](#interesting-papers---policy-based-methods)
+  [interesting papers](#interesting-papers---policy-based-methods)  
+  [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-free-methods)  
 
 ----
 
@@ -1455,6 +1456,7 @@ interesting recent papers:
 >	"The theory of reinforcement learning provides a normative account, deeply rooted in psychological and neuroscientific perspectives on animal behaviour, of how agents may optimize their control of an environment. To use reinforcement learning successfully in situations approaching real-world complexity, however, agents are confronted with a difficult task: they must derive efficient representations of the environment from high-dimensional sensory inputs, and use these to generalize past experience to new situations. Remarkably, humans and other animals seem to solve this problem through a harmonious combination of reinforcement learning and hierarchical sensory processing systems, the former evidenced by a wealth of neural data revealing notable parallels between the phasic signals emitted by dopaminergic neurons and temporal difference reinforcement learning algorithms. While reinforcement learning agents have achieved some successes in a variety of domains, their applicability has previously been limited to domains in which useful features can be handcrafted, or to domains with fully observed, low-dimensional state spaces. Here we use recent advances in training deep neural networks to develop a novel artificial agent, termed a deep Q-network, that can learn successful policies directly from high-dimensional sensory inputs using end-to-end reinforcement learning. We tested this agent on the challenging domain of classic Atari 2600 games. We demonstrate that the deep Q-network agent, receiving only the pixels and the game score as inputs, was able to surpass the performance of all previous algorithms and achieve a level comparable to that of a professional human games tester across a set of 49 games, using the same algorithm, network architecture and hyperparameters. This work bridges the divide between high-dimensional sensory inputs and actions, resulting in the first artificial agent that is capable of learning to excel at a diverse array of challenging tasks."
 
   - `paper` <http://nature.com/nature/journal/v518/n7540/full/nature14236.html>
+  - `video` <http://youtube.com/watch?v=re6hkcTWVUY> (ViZDoom demo)
   - `video` <http://youtube.com/watch?v=iqXKQf2BOSE> (demo)
   - `video` <http://youtube.com/watch?v=EfGD2qveGdQ> (demo)
   - `video` <http://youtube.com/user/eldubro/videos> (demo)
@@ -2350,6 +2352,7 @@ interesting recent papers:
 #### ["Playing Atari with Deep Reinforcement Learning"](https://arxiv.org/abs/1312.5602) Mnih, Kavukcuoglu, Silver, Graves, Antonoglou, Wierstra, Riedmiller
 >	"We present the first deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning. The model is a convolutional neural network, trained with a variant of Q-learning, whose input is raw pixels and whose output is a value function estimating future rewards. We apply our method to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. We find that it outperforms all previous approaches on six of the games and surpasses a human expert on three of them."
 
+  - `video` <http://youtube.com/watch?v=re6hkcTWVUY> (ViZDoom demo)
   - `video` <http://youtube.com/watch?v=EfGD2qveGdQ> (demo)
   - `video` <http://youtube.com/user/eldubro/videos> (demo)
   - <http://cs.stanford.edu/people/karpathy/convnetjs/demo/rldemo.html> (demo)

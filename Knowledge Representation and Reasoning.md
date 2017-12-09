@@ -139,6 +139,10 @@
 
 ----
 
+  [symbolic vs conceptual vs perceptual knowledge](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#knowledge-representation)
+
+----
+
   - [natural language](#knowledge-representation---natural-language)
   - [knowledge graph](#knowledge-representation---knowledge-graph)
     * [ontology](#ontology)
@@ -152,11 +156,15 @@
   - [probabilistic program](#knowledge-representation---probabilistic-program)
   - [distributed representations](#knowledge-representation---distributed-representations)
 
+----
+
   interesting papers:
   - [knowledge bases](#interesting-papers---knowledge-bases)
   - [knowledge bases with discrete representations](#interesting-papers---knowledge-bases-with-discrete-representations)
   - [knowledge bases with continuous representations](#interesting-papers---knowledge-bases-with-continuous-representations)
   - [information extraction and integration](#interesting-papers---information-extraction-and-integration)
+
+  [interesting recent papers - language grounding](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#language-grounding)
 
 
 
@@ -760,6 +768,8 @@
 
   Reasoning is algebraic manipulation of previously acquired knowledge in order to solve problems.
 
+  <https://en.wikipedia.org/wiki/Knowledge_representation_and_reasoning>
+
 ----
 
   - [neural architectures](#reasoning---neural-architectures)
@@ -767,6 +777,8 @@
   - [formal logic](#reasoning---formal-logic)
   - [bayesian inference](#reasoning---bayesian-inference)
   - [commonsense reasoning](#reasoning---commonsense-reasoning)
+
+----
 
   interesting papers:
   - [question answering over knowledge bases](#interesting-papers---question-answering-over-knowledge-bases)

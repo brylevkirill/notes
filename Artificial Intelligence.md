@@ -2,10 +2,13 @@
 
 
   * [overview](#overview)
-  * [benchmarks and competitions](#benchmarks-and-competitions)
+  * [benchmarks](#benchmarks)
   * [problems](#problems)
   * [knowledge representation](#knowledge-representation)
   * [inference / reasoning](#inference--reasoning)
+    - [logical vs statistical approaches](#logical-vs-statistical-approaches)
+    - [symbolic vs non-symbolic approaches](#symbolic-vs-non-symbolic-approaches)
+    - [deductive vs inductive reasoning](#deductive-vs-inductive-reasoning)
   * [decisions / actions](#decisions--actions)
     - [reinforcement learning](#reinforcement-learning)
     - [meta-learning](#meta-learning)
@@ -74,91 +77,66 @@
 
 ----
 
-  [introductory course](https://youtube.com/channel/UCHBzJsIcRIVuzzHVYabikTQ/videos) by UC Berkeley `video`  
-  [notes on AI](http://frnsys.com/ai_notes/) by Francis Tseng  
+  [introductory course](https://youtube.com/channel/UCHBzJsIcRIVuzzHVYabikTQ/videos) from UC Berkeley `video`  
+  [notes](http://frnsys.com/ai_notes/) by Francis Tseng  
 
 
 
 ---
-### benchmarks and competitions
+### benchmarks
 
-  ["Tests of Machine Intelligence"](http://arxiv.org/abs/0712.3825) by Legg and Hutter `paper`  
-
-----
-#### universal problem solving
-
-  ["A Formal Measure of Machine Intelligence"](https://arxiv.org/abs/cs/0605024) by Legg and Hutter `paper`  
-  ["An Approximation of the Universal Intelligence Measure"](http://arxiv.org/abs/1109.5951) by Legg and Veness `paper`  
-  ["Space-Time Embedded Intelligence"](http://frontiersinai.com/turingfiles/December/orseau.pdf) by Orseau and Ring `paper`  
+  ["Tests of Machine Intelligence"](http://arxiv.org/abs/0712.3825) by Legg and Hutter `paper`
 
 ----
-#### automated science
 
-  [automated machine learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#automated-machine-learning)
+  ["Measuring the Progress of AI Research"](https://eff.org/files/AI-progress-metrics.html)  
+  ["Unsolved Problems in AI"](https://medium.com/ai-roadmap-institute/unsolved-problems-in-ai-38f4ce18921d)  
+  ["Concrete AI Tasks for Forecasting"](http://aiimpacts.org/concrete-ai-tasks-for-forecasting/)  
 
 ----
-#### dialog interaction
 
-  ["A Paradigm for Situated and Goal-Driven Language Learning"](https://arxiv.org/abs/1610.03585) by Gauthier and Mordatch `paper`  
+  - [**universal problem solving**](#interesting-papers---definitions-and-measures-of-intelligence)  
+  - [**automated machine learning**](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#automated-machine-learning)  
+  - [**machine reading**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#machine-reading-benchmarks)  
+  - [**robotics**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#robotics)  
+  - [**games**](#games)  
+  - [**open world problems**](#open-world-problems)  
+
 
 ----
 #### games
 
-  ["Measuring Intelligence through Games"](http://arxiv.org/abs/1109.1314) by Schaul, Togelius, Schmidhuber `paper`  
-
   ["A 'Brief' History of Game AI Up To AlphaGo"](http://andreykurenkov.com/writing/a-brief-history-of-game-ai/) by Andrey Kurenkov  
   ["AI for classic games"](http://youtube.com/watch?v=kZ_AUmFcZtk) by David Silver `video`  
 
-  ["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#deepstack-expert-level-artificial-intelligence-in-no-limit-poker-moravcik-et-al) by Michael Bowling et al. `paper`  
-  ["Mastering the Game of Go with Deep Neural Networks and Tree Search"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by David Silver et al. `paper`  
-  ["Giraffe: Using Deep Reinforcement Learning to Play Chess"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#giraffe-using-deep-reinforcement-learning-to-play-chess-lai) by Matthew Lai `paper`  
-
+  ["Measuring Intelligence through Games"](#measuring-intelligence-through-games-schaul-togelius-schmidhuber) by Schaul, Togelius, Schmidhuber `paper`  
   ["Why video games are essential for inventing artificial intelligence"](http://togelius.blogspot.ru/2016/01/why-video-games-are-essential-for.html) by Julian Togelius  
-  ["Deep Learning for Video Game Playing"](https://arxiv.org/abs/1708.07902) by Justesen et al. `paper`  
 
-  [games](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games)  
+  ["Deep Learning for Video Game Playing"](https://arxiv.org/abs/1708.07902) by Justesen et al. `paper`
+
+  [overview](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games) of latest advances
+
 
 ----
 #### open world problems
 
-  - OpenAI Universe  
-	<https://universe.openai.com>  
-	<https://openai.com/blog/universe/>  
-	<https://youtube.com/watch?v=BskhUBPRrqE> (Ilya Sutskever)  
+  - [**OpenAI Gym**](https://gym.openai.com)  
+	<https://openai.com/blog/openai-gym-beta/>
 
-  - OpenAI World of Bits  
-	<http://alpha.openai.com/miniwob/index.html>  
-	<http://proceedings.mlr.press/v70/shi17a.html>  
-	<http://alpha.openai.com/ak_rework_2017.pdf> (Andrej Karpathy)  
-	<https://vimeo.com/240778004> (Tianlin Shi)  
-	<https://youtube.com/watch?v=w6PCLESiExQ> (Linxi Fan)  
-	<http://alpha.openai.com/kalite_exercises/index.html>  
+  - [**DeepMind Lab**](https://github.com/deepmind/lab)  
+	<https://deepmind.com/blog/open-sourcing-deepmind-lab/>
 
-  - OpenAI Gym  
-	<https://gym.openai.com>  
-	<https://gym.openai.com/envs>  
-	<https://openai.com/blog/openai-gym-beta/>  
+  - [**Microsoft Malmo**](https://microsoft.com/en-us/research/project/project-malmo/)  
+	[overview](https://youtube.com/watch?v=399qJUBRA0o) by Katja Hofmann `video`
 
-  - DeepMind Lab  
-	<https://github.com/deepmind/lab>  
-	<https://deepmind.com/blog/open-sourcing-deepmind-lab/>  
+  - [**Mini World of Bits**](http://alpha.openai.com/miniwob)  
+	[Khan Academy lite exercises](http://alpha.openai.com/kalite_exercises/index.html)
 
-  - Microsoft Malmo  
-	<https://microsoft.com/en-us/research/project/project-malmo/>  
-	<https://youtube.com/watch?v=KkVj_ddseO8>  
-	<https://youtube.com/watch?v=399qJUBRA0o> (Katja Hofmann)  
+	[overview](http://alpha.openai.com/ak_rework_2017.pdf) by Andrej Karpathy `video`  
+	[overview](https://vimeo.com/240778004) by Tianlin Shi `video`  
+	[overview](https://youtube.com/watch?v=w6PCLESiExQ) by Linxi Fan `video`  
 
-----
-#### [machine reading](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#machine-reading-benchmarks)  
-
-----
-
-  ["Measuring the Progress of AI Research"](https://eff.org/files/AI-progress-metrics.html)
-
-----
-
-  ["Unsolved Problems in AI"](https://medium.com/ai-roadmap-institute/unsolved-problems-in-ai-38f4ce18921d)  
-  ["Concrete AI tasks for forecasting"](http://aiimpacts.org/concrete-ai-tasks-for-forecasting/)  
+	["World of Bits: An Open-Domain Platform for Web-Based Agents"](http://proceedings.mlr.press/v70/shi17a.html) by Shi et al. `paper`
 
 
 
@@ -183,12 +161,14 @@
   [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)  
   [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
 
+----
 
   "Knowledge is in our minds and language is just orienting us within our common experiences."  
-  "Language is complex indexing system that points to shared experiences of people on which meaning is grounded."  
+  "Language is index that points to shared experiences of people on which meaning is grounded."  
   "Communicating using language is possible only after lining up experiences."  
-  "Language is very flexible thing and not a formal mathematical structure at all."  
-  "Computers may be programmed to analyze data and detect meaning but humans are the source of meaning."  
+  "Language is flexible thing and not a formal mathematical structure at all."  
+
+----
 
   - *symbolic knowledge* ("dog as word") - logic networks
 	[[relational learning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#relational-learning)]
@@ -197,9 +177,9 @@
 	[[deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)]
 
   *symbolic knowledge* -> *conceptual knowledge* (words have to be grounded in real world, actions have to be not recursive) -
-	[[language grounding](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#language-grounding)]  
+	[[language grounding](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#interesting-papers---language-grounding)]  
   *perceptual knowledge* -> *conceptual knowledge* (prediction is not enough for some tasks, reasoning over concepts is needed) -
-	[[concept learning](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#unsupervised-learning)]  
+	[[concept learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#unsupervised-learning)]  
 
 
 
@@ -216,6 +196,7 @@
 	vs  
 	[statistical](#logical-vs-statistical-approaches) / [non-symbolic](#symbolic-vs-non-symbolic-approaches) / connectionism / correlational / data-driven / numerical
    - [deductive vs inductive reasoning](#deductive-vs-inductive-reasoning)
+
 
 
 ----
@@ -249,6 +230,7 @@
 >	"logic handles complexity and statistics handles uncertainty"
 
 
+
 ----
 #### symbolic vs non-symbolic approaches
 
@@ -267,6 +249,7 @@
 >	"There are no symbols inside the encoder and decoder neural nets for machine translation. The only symbols are at the input and output. Processing pixel arrays is not done by manipulating internal pixels. Maybe processing symbol strings is not done by manipulating internal symbol strings. It was obvious to physicists that light waves must have an aether to propagate from one place to the next. They thought there was no other possibility. It was obvious to AI researchers that people must use formal rules of inference to propagate implications from one proposition to the next. They thought there was no other possibility. What is inside the black box is not necessarily what goes in or what comes out. The physical symbol system hypothesis is probably false."
 
 >	"Most of our reasoning is by analogy; it's not logical reasoning. The early AI guys thought we had to use logic as a model and so they couldn't cope with reasoning by analogy. The honest ones, like Allen Newell, realized that reasoning by analogy was a huge problem for them, but they weren't willing to say that reasoning by analogy is the core kind of reasoning we do, and logic is just a sort of superficial thing on top of it that happens much later."
+
 
 
 ---- 
@@ -648,24 +631,37 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 ### interesting papers - definitions and measures of intelligence
 
 
-#### ["Building Machines That Learn and Think Like People"](http://arxiv.org/abs/1604.00289) Lake, Ullman, Tenenbaum, Gershman
->	"Recent progress in artificial intelligence has renewed interest in building systems that learn and think like people. Many advances have come from using deep neural networks trained end-to-end in tasks such as object recognition, video games, and board games, achieving performance that equals or even beats humans in some respects. Despite their biological inspiration and performance achievements, these systems differ from human intelligence in crucial ways. We review progress in cognitive science suggesting that truly human-like learning and thinking machines will have to reach beyond current engineering trends in both what they learn, and how they learn it. Specifically, we argue that these machines should (a) build causal models of the world that support explanation and understanding, rather than merely solving pattern recognition problems; (b) ground learning in intuitive theories of physics and psychology, to support and enrich the knowledge that is learned; and (c) harness compositionality and learning-to-learn to rapidly acquire and generalize knowledge to new tasks and situations. We suggest concrete challenges and promising routes towards these goals that can combine the strengths of recent neural network advances with more structured cognitive models."
-
-  - `paper` <https://cims.nyu.edu/~brenden/LakeEtAl2017BBS.pdf>
-  - `video` <https://youtube.com/watch?v=O0MF-r9PsvE> (Gershman)
-  - `notes` <http://pemami4911.github.io/paper-summaries/2016/05/13/learning-to-think.html>
-
-
 #### ["Universal Intelligence: A Definition of Machine Intelligence"](http://arxiv.org/abs/0712.3329) Legg, Hutter
 >	"A fundamental problem in artificial intelligence is that nobody really knows what intelligence is. The problem is especially acute when we need to consider artificial systems which are significantly different to humans. In this paper we approach this problem in the following way: We take a number of well known informal definitions of human intelligence that have been given by experts, and extract their essential features. These are then mathematically formalised to produce a general measure of intelligence for arbitrary machines. We believe that this equation formally captures the concept of machine intelligence in the broadest reasonable sense. We then show how this formal definition is related to the theory of universal optimal learning agents. Finally, we survey the many other tests and definitions of intelligence that have been proposed for machines."
+
+  - `paper` ["Tests of Machine Intelligence"](http://arxiv.org/abs/0712.3825) by Legg and Hutter
+  - `paper` ["A Formal Measure of Machine Intelligence"](https://arxiv.org/abs/cs/0605024) by Legg and Hutter
+
+
+#### ["An Approximation of the Universal Intelligence Measure"](http://arxiv.org/abs/1109.5951) Legg, Veness
+>	"The Universal Intelligence Measure is a recently proposed formal definition of intelligence. It is mathematically specified, extremely general, and captures the essence of many informal definitions of intelligence. It is based on Hutter's Universal Artificial Intelligence theory, an extension of Ray Solomonoff's pioneering work on universal induction. Since the Universal Intelligence Measure is only asymptotically computable, building a practical intelligence test from it is not straightforward. This paper studies the practical issues involved in developing a real-world UIM-based performance metric. Based on our investigation, we develop a prototype implementation which we use to evaluate a number of different artificial agents."
+
+
+#### ["Measuring Intelligence through Games"](http://arxiv.org/abs/1109.1314) Schaul, Togelius, Schmidhuber
+>	"Artificial general intelligence refers to research aimed at tackling the full problem of artificial intelligence, that is, create truly intelligent agents. This sets it apart from most AI research which aims at solving relatively narrow domains, such as character recognition, motion planning, or increasing player satisfaction in games. But how do we know when an agent is truly intelligent? A common point of reference in the AGI community is Legg and Hutter’s formal definition of universal intelligence, which has the appeal of simplicity and generality but is unfortunately incomputable. Games of various kinds are commonly used as benchmarks for “narrow” AI research, as they are considered to have many important properties. We argue that many of these properties carry over to the testing of general intelligence as well. We then sketch how such testing could practically be carried out. The central part of this sketch is an extension of universal intelligence to deal with finite time, and the use of sampling of the space of games expressed in a suitably biased game description language."
+
+  - `post` <http://togelius.blogspot.ru/2016/01/why-video-games-are-essential-for.html>
+
+
+#### ["Provably Bounded-Optimal Agents"](https://arxiv.org/abs/cs/9505103) Russell, Subramanian
+>	"Since its inception, artificial intelligence has relied upon a theoretical foundation centered around perfect rationality as the desired property of intelligent systems. We argue, as others have done, that this foundation is inadequate because it imposes fundamentally unsatisfiable requirements. As a result, there has arisen a wide gap between theory and practice in AI, hindering progress in the field. We propose instead a property called bounded optimality. Roughly speaking, an agent is bounded-optimal if its program is a solution to the constrained optimization problem presented by its architecture and the task environment. We show how to construct agents with this property for a simple class of machine architectures in a broad class of real-time environments. We illustrate these results using a simple model of an automated mail sorting facility. We also define a weaker property, asymptotic bounded optimality (ABO), that generalizes the notion of optimality in classical complexity theory. We then construct universal ABO programs, i.e., programs that are ABO no matter what real-time constraints are applied. Universal ABO programs can be used as building blocks for more complex systems. We conclude with a discussion of the prospects for bounded optimality as a theoretical basis for AI, and relate it to similar trends in philosophy, economics, and game theory."
 
 
 #### ["Space-Time Embedded Intelligence"](http://frontiersinai.com/turingfiles/December/orseau.pdf) Orseau, Ring
 >	"This paper presents the first formal measure of intelligence for agents fully embedded within their environment. Whereas previous measures such as Legg’s universal intelligence measure and Russell’s bounded optimality provide theoretical insights into agents that interact with an external world, ours describes an intelligence that is computed by, can be modified by, and is subject to the time and space constraints of the environment with which it interacts. Our measure merges and goes beyond Legg’s and Russell’s, leading to a new, more realistic definition of artificial intelligence that we call Space-Time Embedded Intelligence."
 
 
-#### ["Measuring Intelligence through Games"](http://arxiv.org/abs/1109.1314) Schaul, Togelius, Schmidhuber
->	"Artificial general intelligence refers to research aimed at tackling the full problem of artificial intelligence, that is, create truly intelligent agents. This sets it apart from most AI research which aims at solving relatively narrow domains, such as character recognition, motion planning, or increasing player satisfaction in games. But how do we know when an agent is truly intelligent? A common point of reference in the AGI community is Legg and Hutter’s formal definition of universal intelligence, which has the appeal of simplicity and generality but is unfortunately incomputable. Games of various kinds are commonly used as benchmarks for “narrow” AI research, as they are considered to have many important properties. We argue that many of these properties carry over to the testing of general intelligence as well. We then sketch how such testing could practically be carried out. The central part of this sketch is an extension of universal intelligence to deal with finite time, and the use of sampling of the space of games expressed in a suitably biased game description language."
+#### ["Building Machines That Learn and Think Like People"](http://arxiv.org/abs/1604.00289) Lake, Ullman, Tenenbaum, Gershman
+>	"Recent progress in artificial intelligence has renewed interest in building systems that learn and think like people. Many advances have come from using deep neural networks trained end-to-end in tasks such as object recognition, video games, and board games, achieving performance that equals or even beats humans in some respects. Despite their biological inspiration and performance achievements, these systems differ from human intelligence in crucial ways. We review progress in cognitive science suggesting that truly human-like learning and thinking machines will have to reach beyond current engineering trends in both what they learn, and how they learn it. Specifically, we argue that these machines should (a) build causal models of the world that support explanation and understanding, rather than merely solving pattern recognition problems; (b) ground learning in intuitive theories of physics and psychology, to support and enrich the knowledge that is learned; and (c) harness compositionality and learning-to-learn to rapidly acquire and generalize knowledge to new tasks and situations. We suggest concrete challenges and promising routes towards these goals that can combine the strengths of recent neural network advances with more structured cognitive models."
+
+  - `paper` <https://cims.nyu.edu/~brenden/LakeEtAl2017BBS.pdf>
+  - `video` <https://youtube.com/watch?v=O0MF-r9PsvE> (Gershman)
+  - `notes` <http://pemami4911.github.io/paper-summaries/2016/05/13/learning-to-think.html>
 
 
 #### ["Thinking Required"](http://arxiv.org/abs/1512.01926) Rocki

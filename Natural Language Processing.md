@@ -44,7 +44,7 @@
 
   *(Jon Gauthier)*
 
-  "We have a lot of language [data at Google] but it's not annotated with what it means, and we don't even know how we would annotate it. That's a big challenge now in AI."
+  "We have a lot of language [data at Google] but it's not annotated with what it means, and we don't even know how we would annotate it. That's a big challenge now."
 
   *(Ray Kurzweil)* ([talk](https://youtube.com/watch?v=w9sz7eW6MY8#t=4m27s) `video`)
 

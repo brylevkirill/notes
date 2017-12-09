@@ -281,6 +281,7 @@ interesting older papers:
 #### ["Implicit Causal Models for Genome-wide Association Studies"](https://arxiv.org/abs/1710.10742) Tran, Blei
   `causal inference`
 >	"GAN-style models for identifying causal mutations in a GWAS with adjustment for population-based confounders."  
+  - `slides` <http://dustintran.com/talks/Tran_Genomics.pdf>
 
 #### ["Causal Effect Inference with Deep Latent-Variable Models"](https://arxiv.org/abs/1705.08821) Louizos, Shalit, Mooij, Sontag, Zemel, Welling
   `causal inference`
@@ -1195,6 +1196,7 @@ interesting older papers:
 >	"We call it Adaptive GAN, but we could actually use any other generator: a Gaussian mixture model, a VAE, a WGAN, or even an unrolled or mode-regularized GAN, which were both already specifically developed to tackle the missing mode problem. Thus, we do not aim at improving the original GAN or any other generative algorithm. We rather propose and analyse a meta-algorithm that can be used on top of any of them. This meta-algorithm is similar in spirit to AdaBoost in the sense that each iteration corresponds to learning a “weak” generative model (e.g., GAN) with respect to a re-weighted data distribution. The weights change over time to focus on the “hard” examples, i.e. those that the mixture has not been able to properly generate so far."  
 >
 >	"New components are added to the mixture until the original distribution is recovered and authors show exponential convergence to the underlying density. Our concern with the proof is its practical applicability, as it requires that, at each step, the GAN estimated density, call it dQ, and the true underlying density of the data, call it dPd, satisfy that βdQ ≤ dPd. However, it is indeed unknown how to design a generative network that induces a density dQ that would guarantee βdQ ≤ dPd with a non-zero β when dPd is a high-dimensional structure generative process."  
+  - `video` <https://youtube.com/watch?v=5EEaY_cVYkk>
   - `video` <https://youtube.com/watch?v=myvoMklo5Uc> (Tolstikhin)
   - `video` <https://youtube.com/watch?v=wPKGIIy4rtU> (Bousquet)
 
@@ -1982,7 +1984,7 @@ interesting older papers:
 #### ["Self-Supervised Visual Planning with Temporal Skip Connections"](https://arxiv.org/abs/1710.05268) Ebert, Finn, Lee, Levine
   `learning to simulate` `learning video prediction model`
   - <https://sites.google.com/view/sna-visual-mpc> (demo)
-  - `video` <https://youtube.com/watch?v=6k7GHG4IUCY> (Finn)
+  - `video` <https://youtube.com/watch?v=6k7GHG4IUCY>
   - `video` <https://youtu.be/UDLI9K6b9G8?t=1h14m56s> (Ebert)
   - `code` <https://github.com/febert/visual_mpc>
 
@@ -2666,6 +2668,9 @@ hieves."
   - `code` <https://github.com/mast-group/eqnet>
 
 ----
+#### ["Go for a Walk and Arrive at the Answer: Reasoning Over Paths in Knowledge Bases using Reinforcement Learning"](https://arxiv.org/abs/1711.05851) Das, Dhuliawala, Zaheer, Vilnis, Durugkar, Krishnamurthy, Smola, McCallum
+  `question answering over knowledge bases`
+
 #### ["Question Answering on Knowledge Bases and Text using Universal Schema and Memory Networks"](https://arxiv.org/abs/1704.08384) Das, Zaheer, Reddy, McCallum
   `question answering over knowledge bases`
   - `video` <https://youtu.be/lc68_d_DnYs?t=7m28s> (Neelakantan)
