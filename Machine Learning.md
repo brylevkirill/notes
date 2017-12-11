@@ -160,6 +160,10 @@
 	<http://iclr2018.mmanukyan.io>  
 
   - NIPS 2017  
+	<https://facebook.com/pg/nipsfoundation/videos/> `video`  
+	<https://facebook.com/NIPSlive/videos/> `video`  
+
+	<https://nips17.ml>
 
   - ICML 2017  
 	<https://vimeo.com/user72337760> `video`

@@ -106,11 +106,13 @@
 
 ----
 
-  * [**TensorFlow**](https://www.tensorflow.org)  
+  - [TensorFlow](https://www.tensorflow.org)  
+
 	[TensorFlow Distributions](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/distributions) ([paper](https://arxiv.org/abs/1711.10604) by Dillon et al.)  
 	[BayesFlow](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/bayesflow)  
 
-  * [**Edward**](http://github.com/blei-lab/edward)  
+  - [Edward](http://github.com/blei-lab/edward)  
+
 	["Edward, and some motivations"](http://dustintran.com/blog/a-quick-update-edward-and-some-motivations/) by Dustin Tran
 
 	["Deep Probabilistic Programming"](https://arxiv.org/abs/1701.03757) by Tran et al. `paper`  
@@ -118,25 +120,29 @@
 
 	[sample models](http://edwardlib.org/iclr2017)
 
-  * [**Stan**](https://github.com/stan-dev)  
+  - [Stan](https://github.com/stan-dev)  
+
 	["Stan Hands-on"](https://youtube.com/watch?v=6NXRCtWQNMg) by Bob Carpenter `video`  
 	["Probabilistic Modelling and Inference Made Easy"](https://vimeo.com/132156595) by Bob Carpenter `video`  
 
 	[Prophet](https://facebookincubator.github.io/prophet/) from Facebook
 
-  * [**PyMC**](https://github.com/pymc-devs)  
+  - [PyMC](https://github.com/pymc-devs)  
+
 	["Probabilistic Programming and Bayesian Methods for Hackers"](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/) by Cam Davidson-Pilon `book`
 
-  * [**PyRo**](https://github.com/uber/pyro)
+  - [PyRo](https://github.com/uber/pyro)
 
-  * [**WebPPL**](https://github.com/probmods/webppl)
+  - [WebPPL](https://github.com/probmods/webppl)
 
-  * [**BLOG**](https://github.com/BayesianLogic)
+  - [BLOG](https://github.com/BayesianLogic)
 
-  * [**BayesDB**](http://probcomp.org/bayesdb)  
+  - [BayesDB](http://probcomp.org/bayesdb)  
+
 	[overview](https://youtube.com/watch?v=-8QMqSWU76Q) by Vikash Mansinghka `video`
 
-  * [**Venture**](https://github.com/venture)  
+  - [Venture](https://github.com/venture)  
+
 	[overview](https://youtu.be/-8QMqSWU76Q?t=35m30s) by Vikash Mansinghka `video`
 
 

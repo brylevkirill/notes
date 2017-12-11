@@ -2439,6 +2439,11 @@ hieves."
 >	"Most work on RL in high-dimensional continuous control problems relies on well-tuned shaping rewards both for communicating the goal to the agent as well as easing the exploration problem. While many of these tasks can be defined by a terminal goal state fairly easily, tuning a proper shaping reward that does not lead to degenerate solutions is very difficult. We replaced these difficult to tune shaping reward functions with demonstrations of the task from a human demonstrator. This eases the exploration problem without requiring careful tuning of shaping rewards."  
   - `video` <https://youtube.com/watch?v=WGJwLfeVN9w> + <https://youtube.com/watch?v=Vno6FGqhvDc> (demo)
 
+#### ["Time-Contrastive Networks: Self-Supervised Learning from Video"](https://arxiv.org/abs/1704.06888) Sermanet, Lynch, Chebotar, Hsu, Jang, Schaal, Levine
+  `reinforcement learning from demonstrations` `TCN`
+  - `video` <https://youtube.com/watch?v=b1UTUQpxPSY>
+  - `code` <https://github.com/tensorflow/models/tree/master/research/tcn>
+
 #### ["Learning from Demonstrations for Real World Reinforcement Learning"](https://arxiv.org/abs/1704.03732) Hester et al.
   `reinforcement learning from demonstrations` `DQfD`
 >	"DQfD leverages small sets of demonstration data to massively accelerate the learning process even from relatively small amounts of demonstration data and is able to automatically assess the necessary ratio of demonstration data while learning thanks to a prioritized replay mechanism. DQfD works by combining temporal difference updates with supervised classification of the demonstrator's actions."  

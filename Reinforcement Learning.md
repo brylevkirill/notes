@@ -200,9 +200,7 @@
   [overview](http://on-demand.gputechconf.com/gtc/2016/video/S6812.html) by Pieter Abbeel `video`  
   [overview](https://youtube.com/watch?v=xMHjkZBvnfU) by Pieter Abbeel `video`  
 
-
-----
-#### [open world problems](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#open-world-problems)
+  [interesting recent papers - imitation learning](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---imitation)
 
 
 
@@ -991,7 +989,7 @@
   ["Reinforcement Learning as Variational Inference: Two Recent Approaches"](http://people.ee.duke.edu/~lcarin/Rohith8.11.2017.pdf) by Rohith Kuditipudi `slides`  
 
   bayesian policy search in variational MDP (variational decision making):  
-  Fπ(θ) = E q(a,z|x) [R(a|x)] - α * Dkl[qθ(z|x) || p(z|x)] + α * H[πθ(a|z)]  
+  Fπ(θ) = E q(a,z|x) [R(a|x)] - α * DKL[qθ(z|x) || p(z|x)] + α * H[πθ(a|z)]  
 
 ----
 
@@ -1284,7 +1282,7 @@
 
   "To improve its policy, TRPO attempts to maximize the expectation of Q-values over the distribution of states and actions given by θnew:
 
-  maxθ [Σs pθ(s) * (Σa πθ(a|s) * Qθold(s,a))]  subject to  Dkl(pθold, pθ) ≤ δ
+  maxθ [Σs pθ(s) * (Σa πθ(a|s) * Qθold(s,a))]  subject to  DKL(pθold, pθ) ≤ δ
 
   This objective can be approximated by using an importance-sampled Monte Carlo estimate of Q-values, with a distribution of states sampled from policy θold. However, theres a constraint to updating θ: the average KL divergence between the new policy and old policy cannot be greater than a constant δ. This acts as a limiter on the step size we can take on each update, and can be compared to the natural gradient. The theory behind TRPO guarantees gradual improvement over the expected return of a policy."
 
@@ -1968,9 +1966,9 @@ interesting recent papers:
 >	"This paper proposes a curiosity-driven exploration strategy, making use of information gain about the agent’s internal belief of the dynamics model as a driving force. This principle can be traced back to the concepts of curiosity and surprise (Schmidhuber). Within this framework, agents are encouraged to take actions that result in states they deem surprising - i.e., states that cause large updates to the dynamics model distribution. We propose a practical implementation of measuring information gain using variational inference. Herein, the agent’s current understanding of the environment dynamics is represented by a Bayesian neural networks. We also show how this can be interpreted as measuring compression improvement, a proposed model of curiosity (Schmidhuber). In contrast to previous curiosity-based approaches, our model scales naturally to continuous state and action spaces. The presented approach is evaluated on a range of continuous control tasks, and multiple underlying RL algorithms. Experimental results show that VIME achieves significantly better performance than naïve exploration strategies."
 
 >	"Variational inference is used to approximate the posterior distribution of a Bayesian neural network that represents the environment dynamics. Using information gain in this learned dynamics model as intrinsic rewards allows the agent to optimize for both external reward and intrinsic surprise simultaneously."  
->	"r'(st,at,st+1) = r(st,at) + μ * Dkl[p(θ|ξt,at,st+1)||p(θ|ξt)]"  
+>	"r'(st,at,st+1) = r(st,at) + μ * DKL[p(θ|ξt,at,st+1)||p(θ|ξt)]"  
 
->	"It is possible to derive an interesting relationship between compression improvement - an intrinsic reward objective defined in Schmidhuber's Artificial Curiosity and Creativity theory, and the information gain. The agent’s curiosity is equated with compression improvement, measured through C(ξt; φt-1) - C(ξt; φt), where C(ξ; φ) is the description length of ξ using φ as a model. Furthermore, it is known that the negative variational lower bound can be viewed as the description length. Hence, we can write compression improvement as L[q(θ; φt), ξt] - L[q(θ; φt-1), ξt]. In addition, due to alternative formulation of the variational lower bound, compression improvement can be written as (log p(ξt) - Dkl[q(θ; φt)||p(θ|ξt)]) - (log p(ξt) - Dkl[q(θ; φt-1)||p(θ|ξt)]). If we assume that φt perfectly optimizes the variational lower bound for the history ξt, then Dkl[q(θ; φt)||p(θ|ξt)] = 0, which occurs when the approximation equals the true posterior, i.e., q(θ; φt) = p(θ|ξt). Hence, compression improvement becomes Dkl[p(θ|ξt-1) || p(θ|ξt)]. Therefore, optimizing for compression improvement comes down to optimizing the KL divergence from the posterior given the past history ξt-1 to the posterior given the total history ξt. As such, we arrive at an alternative way to encode curiosity than information gain, namely Dkl[p(θ|ξt)||p(θ|ξt,at,st+1)], its reversed KL divergence. In experiments, we noticed no significant difference between the two KL divergence variants. This can be explained as both variants are locally equal when introducing small changes to the parameter distributions. Investigation of how to combine both information gain and compression improvement is deferred to future work."
+>	"It is possible to derive an interesting relationship between compression improvement - an intrinsic reward objective defined in Schmidhuber's Artificial Curiosity and Creativity theory, and the information gain. The agent’s curiosity is equated with compression improvement, measured through C(ξt; φt-1) - C(ξt; φt), where C(ξ; φ) is the description length of ξ using φ as a model. Furthermore, it is known that the negative variational lower bound can be viewed as the description length. Hence, we can write compression improvement as L[q(θ; φt), ξt] - L[q(θ; φt-1), ξt]. In addition, due to alternative formulation of the variational lower bound, compression improvement can be written as (log p(ξt) - DKL[q(θ; φt)||p(θ|ξt)]) - (log p(ξt) - DKL[q(θ; φt-1)||p(θ|ξt)]). If we assume that φt perfectly optimizes the variational lower bound for the history ξt, then DKL[q(θ; φt)||p(θ|ξt)] = 0, which occurs when the approximation equals the true posterior, i.e., q(θ; φt) = p(θ|ξt). Hence, compression improvement becomes DKL[p(θ|ξt-1) || p(θ|ξt)]. Therefore, optimizing for compression improvement comes down to optimizing the KL divergence from the posterior given the past history ξt-1 to the posterior given the total history ξt. As such, we arrive at an alternative way to encode curiosity than information gain, namely DKL[p(θ|ξt)||p(θ|ξt,at,st+1)], its reversed KL divergence. In experiments, we noticed no significant difference between the two KL divergence variants. This can be explained as both variants are locally equal when introducing small changes to the parameter distributions. Investigation of how to combine both information gain and compression improvement is deferred to future work."
 
   - <https://goo.gl/fyxLvI> (demo)
   - `video` <https://youtube.com/watch?v=nbbMSMv3v5k>

@@ -7,16 +7,16 @@
   * [overview](#overview)
   * [knowledge representation](#knowledge-representation)
     - [natural language](#knowledge-representation---natural-language)
-    - [knowledge graph](#knowledge-representation---knowledge-graph)  
-    - [probabilistic database](#knowledge-representation---probabilistic-database)  
+    - [knowledge graph](#knowledge-representation---knowledge-graph)
+    - [probabilistic database](#knowledge-representation---probabilistic-database)
     - [probabilistic program](#knowledge-representation---probabilistic-program)
     - [distributed representations](#knowledge-representation---distributed-representations)
   * [reasoning](#reasoning)
-    - [neural architectures](#reasoning---neural-architectures)
     - [natural logic](#reasoning---natural-logic)
     - [formal logic](#reasoning---formal-logic)
     - [bayesian inference](#reasoning---bayesian-inference)
     - [commonsense reasoning](#reasoning---commonsense-reasoning)
+    - [neural architectures](#reasoning---neural-architectures)
   * [machine reading benchmarks](#machine-reading-benchmarks)
   * [machine reading projects](#machine-reading-projects)
   * [interesting papers](#interesting-papers)
@@ -204,7 +204,7 @@
 ---
 ### ontology
 
-  [overview](https://github.com/brylevkirill/tech/tree/master/RDF) of Resource Description Framework (RDF)
+  [overview](https://github.com/brylevkirill/tech/blob/master/RDF/RDF.txt) of Resource Description Framework (RDF)
 
 ----
 
@@ -334,7 +334,7 @@
 
 
   [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)  
-  [embeddings of natural language](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#continuous-space-representations)  
+  [embeddings of natural language](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#embeddings)  
 
 
 ----
@@ -759,7 +759,7 @@
 ### knowledge representation - distributed representations
 
   [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)  
-  [representations of natural language](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#continuous-space-representations)  
+  [distributed representations of natural language](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#continuous-space-representations)  
 
 
 
@@ -772,11 +772,11 @@
 
 ----
 
-  - [neural architectures](#reasoning---neural-architectures)
   - [natural logic](#reasoning---natural-logic)
   - [formal logic](#reasoning---formal-logic)
   - [bayesian inference](#reasoning---bayesian-inference)
   - [commonsense reasoning](#reasoning---commonsense-reasoning)
+  - [neural architectures](#reasoning---neural-architectures)
 
 ----
 
@@ -786,6 +786,94 @@
   - [reasoning](#interesting-papers---reasoning)
 
   [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)
+
+
+
+---
+### reasoning - natural logic
+
+  [introduction](https://youtu.be/uAk152lIib0?t=25m51s) by Chris Manning `video`  
+  ["Open Domain Inference with Natural Logic"](https://youtube.com/watch?v=EX1hKxePxkk) by Gabor Angeli `video`  
+
+  ["Natural Logic: Logical Inference over Text"](http://akbc.ws/2016/slides/manning-akbc16.pdf) by Chris Manning `paper`  
+  ["Learning Distributed Word Representations for Natural Logic Reasoning"](https://goo.gl/CCofxS) by Bowman, Potts, Manning `slides`  
+
+----
+
+  textual entailment: "Recognizing when the meaning of a text snippet is contained in the meaning of a second piece of text. This simple abstraction of an exceedingly complex problem has broad appeal partly because it can be conceived also as a component in other NLP applications. It also avoids commitment to any specific meaning representation and reasoning framework, broadening its appeal within the research community."
+
+  - idea of doing inference over unstructured text
+  - weak proof theory over surface linguistic forms
+  - can nevertheless model many of the commonsense inferences
+
+  computationally fast during inference:
+  - "semantic" parse is just a syntactic parse
+  - logical inference is lexical mutation/insertion/deletion
+
+  computationally fast to pre-process:
+  - everything is plain text
+
+  captures many common inferences:
+  - we make these types of inferences regularly and instantly
+  - we expect readers to make these inferences instantly
+
+
+
+---
+### reasoning - formal logic
+
+  [Description logic](https://en.wikipedia.org/wiki/Description_logic) - formal language to represent [ontologies](#ontology)
+
+----
+
+  ["Applying Deep Learning to Mathematical Reasoning"](https://youtube.com/watch?v=UAa2o0W7vcg) by Francois Chollet `video`
+
+----
+
+  "Quite reachable is deep automated semantic understanding of most of LaTeX-written mathematical textbooks. This has been blocked by three factors: (i) lack of annotated formal/informal corpora to train such semantic parsing on, (ii) lack of sufficiently large repository of background mathematical knowledge needed for “obvious-knowledge gap-filling”, and (iii) lack of sufficiently strong large-theory ATP that could fill the reasoning gaps using the large repository of background knowledge. One way to try to get them automatically is again through basic computer understanding of LaTeX-written mathematical texts, and learning what high-level concepts like “by analogy” and “using diagonalization” exactly semantically mean in various contexts. This is also related to the ability to reformulate problems and map them to a setting (for current ATPs, the best is purely equational) where the theorem proving becomes more easy. And another related work that needs to be done is “explaining back” the long ATP proofs using an understandable mathematical presentation."
+
+  [*(Josef Urban)*](https://intelligence.org/2013/12/21/josef-urban-on-machine-learning-and-automated-reasoning/)
+
+
+
+---
+### reasoning - bayesian inference
+
+  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
+
+  [causal inference](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#causal-inference)
+
+----
+
+  [probabilistic programs](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-program)  *(bayesian models of cognitive processes)*
+
+  [Solomonoff induction and AIXI](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#solomonoff-induction-and-aixi)  *(bayesian optimal prediction and decision making)*
+
+
+
+---
+### reasoning - commonsense reasoning
+
+  [notes](http://jhamrick.github.io/quals/) by Jessica Hamrick
+
+  ["Commonsense Reasoning and Commonsense Knowledge in Artificial Intelligence"](https://goo.gl/L5Cp6v) by Davis and Marcus `paper`  
+  ["Simulation as an Engine of Physical Scene Understanding"](http://www.pnas.org/content/110/45/18327.short) by Battaglia, Hamrick, Tenenbaum `paper`  
+  ["Computational Rationality: A Converging Paradigm for Intelligence in Brains, Minds and Machines"](https://goo.gl/jWaJVf) by Gershman, Horvitz, Tenenbaum `paper`  
+
+  ["Computational Cognitive Science: Generative Models, Probabilistic Programs and Common Sense"](https://youtube.com/watch?v=2WQO9e5Mdj4) by Tenenbaum `video`
+
+----
+
+  "Humans have the capacity to draw commonsense inferences: things that are likely but not certain to hold based on established discourse and are rarely stated explicitly."  
+  "A program has common sense if it automatically deduces for itself a sufficiently wide class of immediate consequences of anything it is told and what it already knows."  
+
+  "Requirement of common-sense knowledge in language understanding has been long-cited. This knowledge is viewed as a key component in filling in the gaps between the telegraphic style of natural language statements: we are able to convey considerable information in a relatively sparse channel, presumably owing to a partially shared model at the start of any discourse. Common-sense inference - inferences based on common-sense knowledge - is possibilistic: things everyone more or less would expect to hold in a given context, but without always the strength of logical entailment."
+
+  "Owing to human reporting bias, deriving the knowledge needed to perform these inferences exclusively from corpora has led to results most accurately considered models of language, rather than of the world. Facts such that a person walking into a room is very likely to be regularly blinking and breathing are not often explicitly stated, so their real-world likelihoods do not align to language model probabilities. We would like a system capable of reading a sentence describing some situation, such as found in a newspaper, and be able to infer how likely other statements hold of that situation, in the real world. This as compared to, e.g., knowing the likelihood of the next observed sentence in that newspaper article."
+
+  "To achieve human-level performance in domains such as natural language processing, vision, and robotics, basic knowledge of the commonsense world - time, space, physical interactions, people, and so on - will be necessary."
+
+  "A well-known example from Terry Winograd is the pair of sentences "The city council refused the demonstrators a permit because they feared violence," vs "... because they advocated violence." To determine that "they" in the first sentence refers to the council if the verb is "feared," but refers to the demonstrators if the verb is "advocated" demands knowledge about the characteristic relations of city councils and demonstrators to violence; no purely linguistic clue suffices."
 
 
 
@@ -844,98 +932,9 @@
 
 
 ---
-### reasoning - natural logic
-
-  textual entailment: "Recognizing when the meaning of a text snippet is contained in the meaning of a second piece of text. This simple abstraction of an exceedingly complex problem has broad appeal partly because it can be conceived also as a component in other NLP applications. It also avoids commitment to any specific meaning representation and reasoning framework, broadening its appeal within the research community."
-
-  - idea of doing inference over unstructured text
-  - weak proof theory over surface linguistic forms
-  - can nevertheless model many of the commonsense inferences
-
-  computationally fast during inference:
-  - "semantic" parse is just a syntactic parse
-  - logical inference is lexical mutation/insertion/deletion
-
-  computationally fast to pre-process:
-  - everything is plain text
-
-  captures many common inferences:
-  - we make these types of inferences regularly and instantly
-  - we expect readers to make these inferences instantly
-
-----
-
-  [introduction](https://youtu.be/uAk152lIib0?t=25m51s) by Chris Manning `video`  
-  ["Open Domain Inference with Natural Logic"](https://youtube.com/watch?v=EX1hKxePxkk) by Gabor Angeli `video`  
-
-  ["Natural Logic: Logical Inference over Text"](http://akbc.ws/2016/slides/manning-akbc16.pdf) by Chris Manning `paper`  
-  ["Learning Distributed Word Representations for Natural Logic Reasoning"](https://goo.gl/CCofxS) by Bowman, Potts, Manning `slides`  
-
-
-
----
-### reasoning - formal logic
-
-  [Description logic](https://en.wikipedia.org/wiki/Description_logic) - formal language to represent [ontologies](#ontology)
-
-----
-
-  ["Applying Deep Learning to Mathematical Reasoning"](https://youtube.com/watch?v=UAa2o0W7vcg) by Francois Chollet `video`
-
-----
-
-  "Quite reachable is deep automated semantic understanding of most of LaTeX-written mathematical textbooks. This has been blocked by three factors: (i) lack of annotated formal/informal corpora to train such semantic parsing on, (ii) lack of sufficiently large repository of background mathematical knowledge needed for “obvious-knowledge gap-filling”, and (iii) lack of sufficiently strong large-theory ATP that could fill the reasoning gaps using the large repository of background knowledge. One way to try to get them automatically is again through basic computer understanding of LaTeX-written mathematical texts, and learning what high-level concepts like “by analogy” and “using diagonalization” exactly semantically mean in various contexts. This is also related to the ability to reformulate problems and map them to a setting (for current ATPs, the best is purely equational) where the theorem proving becomes more easy. And another related work that needs to be done is “explaining back” the long ATP proofs using an understandable mathematical presentation."
-
-  [*(Josef Urban)*](https://intelligence.org/2013/12/21/josef-urban-on-machine-learning-and-automated-reasoning/)
-
-
-
----
-### reasoning - bayesian inference
-
-  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
-
-  [probabilistic programs](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-program)  *(bayesian models of cognition)*
-
-  [Solomonoff induction and AIXI](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#solomonoff-induction-and-aixi)  *(bayesian optimal prediction and decision making)*
-
-
-
----
-### reasoning - commonsense reasoning
-
-  "Humans have the capacity to draw commonsense inferences: things that are likely but not certain to hold based on established discourse and are rarely stated explicitly."  
-  "A program has common sense if it automatically deduces for itself a sufficiently wide class of immediate consequences of anything it is told and what it already knows."  
-
-  "Requirement of common-sense knowledge in language understanding has been long-cited. This knowledge is viewed as a key component in filling in the gaps between the telegraphic style of natural language statements: we are able to convey considerable information in a relatively sparse channel, presumably owing to a partially shared model at the start of any discourse. Common-sense inference - inferences based on common-sense knowledge - is possibilistic: things everyone more or less would expect to hold in a given context, but without always the strength of logical entailment."
-
-  "Owing to human reporting bias, deriving the knowledge needed to perform these inferences exclusively from corpora has led to results most accurately considered models of language, rather than of the world. Facts such that a person walking into a room is very likely to be regularly blinking and breathing are not often explicitly stated, so their real-world likelihoods do not align to language model probabilities. We would like a system capable of reading a sentence describing some situation, such as found in a newspaper, and be able to infer how likely other statements hold of that situation, in the real world. This as compared to, e.g., knowing the likelihood of the next observed sentence in that newspaper article."
-
-  "To achieve human-level performance in domains such as natural language processing, vision, and robotics, basic knowledge of the commonsense world - time, space, physical interactions, people, and so on - will be necessary."
-
-  "A well-known example from Terry Winograd is the pair of sentences "The city council refused the demonstrators a permit because they feared violence," vs "... because they advocated violence." To determine that "they" in the first sentence refers to the council if the verb is "feared," but refers to the demonstrators if the verb is "advocated" demands knowledge about the characteristic relations of city councils and demonstrators to violence; no purely linguistic clue suffices."
-
-----
-
-  "Cognitive Machine Learning" by Shakir Mohamed:  
-  - ["Prologue"](http://blog.shakirm.com/2016/10/cognitive-machine-learning-prologue/)  
-  - ["Learning to Explain"](http://blog.shakirm.com/2017/02/cognitive-machine-learning-1-learning-to-explain/)  
-  - ["Uncertain Thoughts"](http://blog.shakirm.com/2017/03/cognitive-machine-learning-2-uncertain-thoughts/)  
-
-  [notes](http://jhamrick.github.io/quals/) by Jessica Hamrick
-
-  ["Commonsense Reasoning and Commonsense Knowledge in Artificial Intelligence"](https://goo.gl/L5Cp6v) by Davis and Marcus `paper`  
-  ["Simulation as an Engine of Physical Scene Understanding"](http://www.pnas.org/content/110/45/18327.short) by Battaglia, Hamrick, Tenenbaum `paper`  
-  ["Computational Rationality: A Converging Paradigm for Intelligence in Brains, Minds and Machines"](https://goo.gl/jWaJVf) by Gershman, Horvitz, Tenenbaum `paper`  
-
-  ["Computational Cognitive Science: Generative Models, Probabilistic Programs and Common Sense"](https://youtube.com/watch?v=2WQO9e5Mdj4) by Tenenbaum `video`
-
-
-
----
 ### machine reading benchmarks
 
-  - [**Allen AI Science Challenge**](https://kaggle.com/c/the-allen-ai-science-challenge)
+  - [Allen AI Science Challenge](https://kaggle.com/c/the-allen-ai-science-challenge)
 
 	["Moving Beyond the Turing Test with the Allen AI Science Challenge"](https://arxiv.org/abs/1604.04315)
 		([slides](http://akbc.ws/2016/slides/etzioni-akbc16.pptx))
@@ -944,7 +943,7 @@
 	[second place](https://github.com/bwilbertz/kaggle_allen_ai)  
 	[third place](https://github.com/amsqr/Allen_AI_Kaggle)  
 
-  - [**Winograd Schema Challenge**](http://commonsensereasoning.org/winograd.html)
+  - [Winograd Schema Challenge](http://commonsensereasoning.org/winograd.html)
 
 	[results of 2016 competition](http://whatsnext.nuance.com/in-the-labs/winograd-schema-challenge-2016-results/)  
 
@@ -968,15 +967,15 @@
 	- vivid, in that it is obvious to non-experts that a program that fails to get right answers clearly has gaps
 	- difficult, in that it is far beyond the current state of the art
 
-  - [**Stanford Question Answering Dataset**](https://rajpurkar.github.io/SQuAD-explorer/)
+  - [Stanford Question Answering Dataset](https://rajpurkar.github.io/SQuAD-explorer/)
 
-  - [**WikiTableQuestions**](http://nlp.stanford.edu/blog/wikitablequestions-a-complex-real-world-question-understanding-dataset/)
+  - [WikiTableQuestions](http://nlp.stanford.edu/blog/wikitablequestions-a-complex-real-world-question-understanding-dataset/)
 
-  - [**TAC Knowledge Base Population**](http://www.nist.gov/tac/2017/KBP/)
+  - [TAC Knowledge Base Population](http://www.nist.gov/tac/2017/KBP/)
 
-  - [**Visual Genome**](http://visualgenome.org)
+  - [Visual Genome](http://visualgenome.org)
 
-  - [**commonsense reasoning**](http://commonsensereasoning.org/problem_page.html)
+  - [commonsense reasoning](http://commonsensereasoning.org/problem_page.html)
 
 
 

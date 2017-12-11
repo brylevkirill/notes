@@ -1,3 +1,5 @@
+  Knowledge is in our minds and language is just orienting us within our shared experiences.  
+  Language is an index pointing to shared experiences of people on which meaning is grounded.  
 
 
   * [overview](#overview)
@@ -5,7 +7,7 @@
   * [problems](#problems)
   * [semantics](#semantics)
   * [compositionality](#compositionality)
-  * [continuous space representations](#continuous-space-representations)
+  * [embeddings](#embeddings)
   * [interesting papers](#interesting-papers)
     - [language grounding](#interesting-papers---language-grounding)
     - [machine translation](#interesting-papers---machine-translation)
@@ -234,7 +236,7 @@
 
 
 ---
-### continuous space representations
+### embeddings
 
   [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)
 
@@ -578,13 +580,23 @@
 
 
 #### ["Efficient Estimation of Word Representations in Vector Space"](http://arxiv.org/abs/1301.3781) Mikolov, Chen, Corrado, Dean
-  `word2vec`
+  `word2vec` `Skip-gram`
 >	"We propose two novel model architectures for computing continuous vector representations of words from very large data sets. The quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks. We observe large improvements in accuracy at much lower computational cost, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set. Furthermore, we show that these vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities."
 
   - `notes` <http://www.shortscience.org/paper?bibtexKey=mikolov2013efficient>
   - `post` <http://alexminnaar.com/word2vec-tutorial-part-i-the-skip-gram-model.html>
   - `post` <http://alexminnaar.com/word2vec-tutorial-part-ii-the-continuous-bag-of-words-model.html>
   - `video` <http://youtube.com/watch?v=fwcJpSYNsNs> (Mikolov)
+
+
+#### ["Distributed Representations of Words and Phrases and Their Compositionality"](http://arxiv.org/abs/1310.4546) Mikolov, Sutskever, Chen, Corrado, Dean
+  `word2vec` `Skip-gram`
+>	"The recently introduced continuous Skip-gram model is an efficient method for learning high-quality distributed vector representations that capture a large number of precise syntactic and semantic word relationships. In this paper we present several extensions that improve both the quality of the vectors and the training speed. By subsampling of the frequent words we obtain significant speedup and also learn more regular word representations. We also describe a simple alternative to the hierarchical softmax called negative sampling. An inherent limitation of word representations is their indifference to word order and their inability to represent idiomatic phrases. For example, the meanings of "Canada" and "Air" cannot be easily combined to obtain "Air Canada". Motivated by this example, we present a simple method for finding phrases in text, and show that learning good vector representations for millions of phrases is possible."
+
+----
+>	"First, they provide a slightly modified objective function and a few other sampling heuristics that result in a more computationally efficient model. Why does this produce good word representations? The distributional hypothesis states that words in similar contexts have similar meanings. The objective above clearly tries to increase the quantity vw·vc for good word-context pairs, and decrease it for bad ones. Intuitively, this means that words that share many contexts will be similar to each other (note also that contexts sharing many words will also be similar to each other).  
+>	Second, they show that their model works with phrases, too, though they just do this by replacing the individual tokens in a multiword expression with a single symbol representing the phrase - pretty simple, but it works.  
+>	Third, they show what to me was a very surprising additional feature of the learned vector spaces: some relationships are encoded compositionally in the vector space, meaning that you can just add the vectors for two words like "Russian" and "capital" to get a vector that is very close to "Moscow". They didn't do any kind of thorough evaluation of this, but the fact the it works at all was very surprising to me. They did give a reasonable explanation, however, and I've put it into math below. The probability of two words i and j appearing in the same context in this model is proportional to exp(vi⋅vj). Now, if we have a third word, k, and its probability of appearing with both word i and word j is proportional to exp(vk⋅vi)*exp(vk⋅vj)=exp(vk⋅(vi+vj)). So what you get when you add the vectors for two words is something that is likely to show up in the contexts of both of them. Thus if you pick word i to be "Russian" and word j to be "capital", a word k that has high probability might very well be "Moscow", because it tends to show up in the context of both of those words. So we can see that this method does have some reasonable explanation for why it works."
 
 
 #### ["word2vec Explained: Deriving Mikolov et al.’s Negative-Sampling Word-Embedding Method"](http://arxiv.org/abs/1402.3722) Goldberg, Levy
@@ -629,6 +641,19 @@
 >	"Due to the fact that Skip-Gram Negative Sampling slides a sampling window through the entire training corpus, a significant drawback of the algorithm is that it requires training time proportional to the size of the corpus."
 
   - `code` <https://github.com/tensorflow/models/tree/master/research/swivel>
+
+
+#### ["Bag of Tricks for Efficient Text Classification"](http://arxiv.org/abs/1607.01759) Joulin, Grave, Bojanowski, Mikolov
+  `fastText`
+>	"This paper explores a simple and efficient baseline for text classification. Our experiments show that our fast text classifier fastText is often on par with deep learning classifiers in terms of accuracy, and many orders of magnitude faster for training and evaluation. We can train fastText on more than one billion words in less than ten minutes using a standard multicore CPU, and classify half a million sentences among 312K classes in less than a minute."
+
+----
+>	"At par with deep learning models in terms of accuracy though an order of magnitude faster in performance."
+
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1607.01759>
+  - `notes` <https://medium.com/paper-club/bag-of-tricks-for-efficient-text-classification-818bc47e90f>
+  - `code` <https://fasttext.cc>
+  - `code` <https://github.com/fchollet/keras/blob/master/examples/imdb_fasttext.py>
 
 
 #### ["Linguistic Regularities in Sparse and Explicit Word Representations"](https://levyomer.files.wordpress.com/2014/04/linguistic-regularities-in-sparse-and-explicit-word-representations-conll-2014.pdf) Levy, Goldberg
@@ -740,17 +765,6 @@
 
 ---
 ### interesting papers - text embeddings
-
-
-#### ["Distributed Representations of Words and Phrases and Their Compositionality"](http://arxiv.org/abs/1310.4546) Mikolov, Sutskever, Chen, Corrado, Dean
-  `word2vec` `Skip-gram`
->	"The recently introduced continuous Skip-gram model is an efficient method for learning high-quality distributed vector representations that capture a large number of precise syntactic and semantic word relationships. In this paper we present several extensions that improve both the quality of the vectors and the training speed. By subsampling of the frequent words we obtain significant speedup and also learn more regular word representations. We also describe a simple alternative to the hierarchical softmax called negative sampling. An inherent limitation of word representations is their indifference to word order and their inability to represent idiomatic phrases. For example, the meanings of "Canada" and "Air" cannot be easily combined to obtain "Air Canada". Motivated by this example, we present a simple method for finding phrases in text, and show that learning good vector representations for millions of phrases is possible."
-
-----
->	"First, they provide a slightly modified objective function and a few other sampling heuristics that result in a more computationally efficient model. Why does this produce good word representations? The distributional hypothesis states that words in similar contexts have similar meanings. The objective above clearly tries to increase the quantity vw·vc for good word-context pairs, and decrease it for bad ones. Intuitively, this means that words that share many contexts will be similar to each other (note also that contexts sharing many words will also be similar to each other).  
->	Second, they show that their model works with phrases, too, though they just do this by replacing the individual tokens in a multiword expression with a single symbol representing the phrase - pretty simple, but it works.  
->	Third, they show what to me was a very surprising additional feature of the learned vector spaces: some relationships are encoded compositionally in the vector space, meaning that you can just add the vectors for two words like "Russian" and "capital" to get a vector that is very close to "Moscow". They didn't do any kind of thorough evaluation of this, but the fact the it works at all was very surprising to me. They did give a reasonable explanation, however, and I've put it into math below. The probability of two words i and j appearing in the same context in this model is proportional to exp(vi⋅vj). Now, if we have a third word, k, and its probability of appearing with both word i and word j is proportional to exp(vk⋅vi)*exp(vk⋅vj)=exp(vk⋅(vi+vj)). So what you get when you add the vectors for two words is something that is likely to show up in the contexts of both of them. Thus if you pick word i to be "Russian" and word j to be "capital", a word k that has high probability might very well be "Moscow", because it tends to show up in the context of both of those words. So we can see that this method does have some reasonable explanation for why it works."
-
 
 #### ["Learning to Understand Phrases by Embedding the Dictionary"](http://arxiv.org/abs/1504.00548) Hill, Cho, Korhonen, Bengio
 >	"Distributional models that learn rich semantic word representations are a success story of recent NLP research. However, developing models that learn useful representations of phrases and sentences has proved far harder. We propose using the definitions found in everyday dictionaries as a means of bridging this gap between lexical and phrasal semantics. We train a recurrent neural network to map dictionary definitions (phrases) to (lexical) representations of the words those definitions define. We present two applications of this architecture: a reverse dictionary, for returning the name of a concept given a definition or description, and a general-knowledge (crossword) question answerer. On both tasks, the RNN trained on definitions from a handful of freely-available lexical resources performs comparably or better than existing commercial systems that rely on major task-specific engineering and far greater memory footprints. This strong performance highlights the general effectiveness of both neural language models and definition-based training for training machines to understand phrases and sentences."
@@ -939,15 +953,7 @@
 
 #### ["Bag of Tricks for Efficient Text Classification"](http://arxiv.org/abs/1607.01759) Joulin, Grave, Bojanowski, Mikolov
   `fastText`
->	"This paper explores a simple and efficient baseline for text classification. Our experiments show that our fast text classifier fastText is often on par with deep learning classifiers in terms of accuracy, and many orders of magnitude faster for training and evaluation. We can train fastText on more than one billion words in less than ten minutes using a standard multicore~CPU, and classify half a million sentences among~312K classes in less than a minute."
-
-----
->	"At par with deep learning models in terms of accuracy though an order of magnitude faster in performance."
-
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1607.01759>
-  - `notes` <https://medium.com/paper-club/bag-of-tricks-for-efficient-text-classification-818bc47e90f>
-  - `code` <https://fasttext.cc>
-  - `code` <https://github.com/fchollet/keras/blob/master/examples/imdb_fasttext.py>
+  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#bag-of-tricks-for-efficient-text-classification-joulin-grave-bojanowski-mikolov>
 
 
 #### ["Deep Multi-Instance Transfer Learning"](http://arxiv.org/abs/1411.3128) Kotzias, Denil, Blunsom, Freitas

@@ -6,9 +6,6 @@
   * [problems](#problems)
   * [knowledge representation](#knowledge-representation)
   * [inference / reasoning](#inference--reasoning)
-    - [logical vs statistical approaches](#logical-vs-statistical-approaches)
-    - [symbolic vs non-symbolic approaches](#symbolic-vs-non-symbolic-approaches)
-    - [deductive vs inductive reasoning](#deductive-vs-inductive-reasoning)
   * [decisions / actions](#decisions--actions)
     - [reinforcement learning](#reinforcement-learning)
     - [meta-learning](#meta-learning)
@@ -41,12 +38,6 @@
 	["Compression Progress: The Algorithmic Principle Behind Curiosity and Creativity"](https://youtube.com/watch?v=h7F5sCLIbKQ) `video`  
 	["Formal Theory of Fun & Creativity"](http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/) `video`  
 
-  - Demis Hassabis  
-	["Towards General Artificial Intelligence"](https://youtube.com/watch?v=vQXAsdMa_8A) `video`  
-
-  - Richard Sutton  
-	["The Future of Artificial Intelligence Belongs to Search and Learning"](http://www.fields.utoronto.ca/talks/advances-reinforcement-learning) `video`  
-
   - Geoffrey Hinton  
 	["Deep Learning and AI"](https://youtube.com/watch?v=izrG86jycck) `video`  
 
@@ -56,18 +47,19 @@
   - Yoshua Bengio  
 	["Deep Learning and General AI"](https://youtube.com/watch?v=exhdfIPzj24) `video`  
 
+  - Richard Sutton  
+	["The Future of Artificial Intelligence Belongs to Search and Learning"](http://www.fields.utoronto.ca/talks/advances-reinforcement-learning) `video`  
+
   - David Ferucci  
-	["AI: A Return To Meaning"](https://youtube.com/watch?v=F_0hpnLdNjk) `video`  
+	["AI: A Return To Meaning"](https://youtube.com/watch?v=1n-cwezu8j4) `video`  
 
   - Joshua Tenenbaum  
 	["Building Machines That Learn like Humans"](https://youtube.com/watch?v=quPN7Hpk014) `video`  
 
-----
+  - Demis Hassabis  
+	["Towards General Artificial Intelligence"](https://youtube.com/watch?v=vQXAsdMa_8A) `video`  
 
-  "Cognitive Machine Learning" by Shakir Mohamed:
-  - ["Prologue"](http://blog.shakirm.com/2016/10/cognitive-machine-learning-prologue/)
-  - ["Learning to Explain"](http://blog.shakirm.com/2017/02/cognitive-machine-learning-1-learning-to-explain/)
-  - ["Uncertain Thoughts"](http://blog.shakirm.com/2017/03/cognitive-machine-learning-2-uncertain-thoughts/)
+----
 
   "Learning in Brains and Machines" by Shakir Mohamed:
   - ["Temporal Differences"](http://blog.shakirm.com/2016/02/learning-in-brains-and-machines-1/)
@@ -75,10 +67,15 @@
   - ["Synergistic and Modular Action"](http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/)
   - ["Episodic and Interactive Memory"](http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-4-episodic-and-interactive-memory/)
 
+  "Cognitive Machine Learning" by Shakir Mohamed:
+  - ["Prologue"](http://blog.shakirm.com/2016/10/cognitive-machine-learning-prologue/)
+  - ["Learning to Explain"](http://blog.shakirm.com/2017/02/cognitive-machine-learning-1-learning-to-explain/)
+  - ["Uncertain Thoughts"](http://blog.shakirm.com/2017/03/cognitive-machine-learning-2-uncertain-thoughts/)
+
 ----
 
   [introductory course](https://youtube.com/channel/UCHBzJsIcRIVuzzHVYabikTQ/videos) from UC Berkeley `video`  
-  [notes](http://frnsys.com/ai_notes/) by Francis Tseng  
+  [introductory notes](http://frnsys.com/ai_notes/) by Francis Tseng  
 
 
 
@@ -95,12 +92,12 @@
 
 ----
 
-  - [**universal problem solving**](#interesting-papers---definitions-and-measures-of-intelligence)  
-  - [**automated machine learning**](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#automated-machine-learning)  
-  - [**machine reading**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#machine-reading-benchmarks)  
-  - [**robotics**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#robotics)  
-  - [**games**](#games)  
-  - [**open world problems**](#open-world-problems)  
+  - [universal problem solving](#interesting-papers---definitions-and-measures-of-intelligence)  
+  - [automated machine learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#automated-machine-learning)  
+  - [machine reading](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#machine-reading-benchmarks)  
+  - [robotics](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#robotics)  
+  - [games](#games)  
+  - [environments](#environments)  
 
 
 ----
@@ -112,31 +109,27 @@
   ["Measuring Intelligence through Games"](#measuring-intelligence-through-games-schaul-togelius-schmidhuber) by Schaul, Togelius, Schmidhuber `paper`  
   ["Why video games are essential for inventing artificial intelligence"](http://togelius.blogspot.ru/2016/01/why-video-games-are-essential-for.html) by Julian Togelius  
 
-  ["Deep Learning for Video Game Playing"](https://arxiv.org/abs/1708.07902) by Justesen et al. `paper`
-
   [overview](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games) of latest advances
 
 
 ----
-#### open world problems
+#### environments
 
-  - [**OpenAI Gym**](https://gym.openai.com)  
-	<https://openai.com/blog/openai-gym-beta/>
+  - [OpenAI Gym](https://github.com/openai/gym) ([post](https://openai.com/blog/openai-gym-beta/), [paper](https://arxiv.org/abs/1606.01540))
 
-  - [**DeepMind Lab**](https://github.com/deepmind/lab)  
-	<https://deepmind.com/blog/open-sourcing-deepmind-lab/>
+  - [DeepMind Lab](https://github.com/deepmind/lab) ([post](https://deepmind.com/blog/open-sourcing-deepmind-lab/), [paper](https://arxiv.org/abs/1612.03801))
 
-  - [**Microsoft Malmo**](https://microsoft.com/en-us/research/project/project-malmo/)  
+  - [Microsoft Malmo](https://github.com/Microsoft/malmo)
+
 	[overview](https://youtube.com/watch?v=399qJUBRA0o) by Katja Hofmann `video`
 
-  - [**Mini World of Bits**](http://alpha.openai.com/miniwob)  
-	[Khan Academy lite exercises](http://alpha.openai.com/kalite_exercises/index.html)
+  - [OpenAI Mini World of Bits](http://alpha.openai.com/miniwob) ([paper](http://proceedings.mlr.press/v70/shi17a.html))
 
 	[overview](http://alpha.openai.com/ak_rework_2017.pdf) by Andrej Karpathy `video`  
 	[overview](https://vimeo.com/240778004) by Tianlin Shi `video`  
 	[overview](https://youtube.com/watch?v=w6PCLESiExQ) by Linxi Fan `video`  
 
-	["World of Bits: An Open-Domain Platform for Web-Based Agents"](http://proceedings.mlr.press/v70/shi17a.html) by Shi et al. `paper`
+	[Khan Academy lite exercises](http://alpha.openai.com/kalite_exercises/index.html)
 
 
 
@@ -157,16 +150,25 @@
 ---
 ### knowledge representation
 
-  [knowledge representation](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation)  
-  [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)  
-  [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
+  What is space of possible beliefs? How do beliefs interact?
 
 ----
 
-  "Knowledge is in our minds and language is just orienting us within our common experiences."  
-  "Language is index that points to shared experiences of people on which meaning is grounded."  
-  "Communicating using language is possible only after lining up experiences."  
-  "Language is flexible thing and not a formal mathematical structure at all."  
+  [knowledge representation](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation)
+
+  knowledge representations:
+  - [natural language](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---natural-language)
+  - [knowledge graph](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---knowledge-graph)
+  - [probabilistic database](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-database)
+  - [probabilistic program](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-program)
+  - [distributed representations](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---distributed-representations)
+
+----
+
+  Knowledge is in our minds and language is just orienting us within our shared experiences.  
+  Language is an index pointing to shared experiences of people on which meaning is grounded.  
+  Communicating using language is possible only after lining up experiences.  
+  Language is a very flexible thing and not a formal mathematical structure.  
 
 ----
 
@@ -186,23 +188,45 @@
 ---
 ### inference / reasoning
 
-  [reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning)  
-  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)  
-  [machine learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md)  
-
-
-  approaches:
-   - [logical](#logical-vs-statistical-approaches) / [symbolic](#symbolic-vs-non-symbolic-approaches) / computationalism / causational / theory-driven / relational  
-	vs  
-	[statistical](#logical-vs-statistical-approaches) / [non-symbolic](#symbolic-vs-non-symbolic-approaches) / connectionism / correlational / data-driven / numerical
-   - [deductive vs inductive reasoning](#deductive-vs-inductive-reasoning)
-
-
+  How can inference and reasoning be performed over beliefs?
 
 ----
-#### logical vs statistical approaches
 
-  "Beginning with Leibniz, scholars have attempted to unify logic and probability. For “classical” AI, based largely on first-order logic, the purpose of such a unification is to handle uncertainty and facilitate learning from real data; for “modern” AI, based largely on probability theory, the purpose is to acquire formal languages with sufficient expressive power to handle complex domains and incorporate prior knowledge. The world is uncertain and it has things in it. To deal with this, we have to unify logic and probability."
+  inference frameworks:
+  - [machine learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md)
+  - [causal inference](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#causal-inference)
+  - [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
+  - [Solomonoff induction](#solomonoff-induction-and-aixi)
+
+----
+
+  [reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning)
+
+  reasoning frameworks:
+  - [natural logic](#reasoning---natural-logic)
+  - [formal logic](#reasoning---formal-logic)
+  - [bayesian inference](#reasoning---bayesian-inference)
+  - [commonsense reasoning](#reasoning---commonsense-reasoning)
+  - [neural architectures](#reasoning---neural-architectures)
+
+----
+
+  approaches:
+  - [logical](#inference--reasoning---logical-vs-statistical) / [symbolic](#inference--reasoning---symbolic-vs-non-symbolic) / computationalism / causational / theory-driven / relational  
+	vs  
+	[statistical](#inference--reasoning---logical-vs-statistical) / [non-symbolic](#inference--reasoning---symbolic-vs-non-symbolic) / connectionism / correlational / data-driven / numerical
+  - [deductive vs inductive](#inference--reasoning---deductive-vs-inductive)
+
+
+
+---
+### inference / reasoning - logical vs statistical
+
+  "Beginning with Leibniz, scholars have attempted to unify logic and probability. For classical AI, based largely on first-order logic, the purpose of such a unification is to handle uncertainty and facilitate learning from real data; for modern AI, based largely on probability theory, the purpose is to acquire formal languages with sufficient expressive power to handle complex domains and incorporate prior knowledge. The world is uncertain and it has things in it. To deal with this, we have to unify logic and probability."
+
+  *(Stuart Russell)*
+
+----
 
   - *knowledge representation*:  
 	logical - first-order logic  
@@ -214,6 +238,7 @@
 	logical - inductive logic programming  
 	statistical - [bayesian deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)  
 
+----
 
   ["On Chomsky and the Two Cultures of Statistical Learning"](http://norvig.com/chomsky.html) by Peter Norvig
 >	"mathematical model specifies a relation among variables, either in functional or in relational form"  
@@ -231,10 +256,10 @@
 
 
 
-----
-#### symbolic vs non-symbolic approaches
+---
+### inference / reasoning - symbolic vs non-symbolic
 
-  "Neural Programmer Interpreters" by Nando de Freitas ([talk](https://youtu.be/SAcHyzMdbXc?t=5m13s) `video`, [talk](http://videolectures.net/kdd2016_de_freitas_recurrent_neural/#t=3130) `video`)
+  ["Neural Programmer Interpreters"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#neural-programmer-interpreters-reed-de-freitas) by Nando de Freitas ([talk](https://youtu.be/SAcHyzMdbXc?t=5m13s) `video`, [talk](http://videolectures.net/kdd2016_de_freitas_recurrent_neural/#t=3130) `video`)
 >	"For me there are two types of generalisation, which I will refer to as Symbolic and Connectionist generalisation. If we teach a machine to sort sequences of numbers of up to length 10 or 100, we should expect them to sort sequences of length 1000 say. Obviously symbolic approaches have no problem with this form of generalisation, but neural nets do poorly. On the other hand, neural nets are very good at generalising from data (such as images), but symbolic approaches do poorly here. One of the holy grails is to build machines that are capable of both symbolic and connectionist generalisation. Neural Programmer Interpreters is a very early step toward this. NPI can do symbolic operations such as sorting and addition, but it can also plan by taking images as input and it's able to generalise the plans to different images (e.g. in the NPI car example, the cars are test set cars not seen before)."
 
 ----
@@ -250,10 +275,15 @@
 
 >	"Most of our reasoning is by analogy; it's not logical reasoning. The early AI guys thought we had to use logic as a model and so they couldn't cope with reasoning by analogy. The honest ones, like Allen Newell, realized that reasoning by analogy was a huge problem for them, but they weren't willing to say that reasoning by analogy is the core kind of reasoning we do, and logic is just a sort of superficial thing on top of it that happens much later."
 
+----
+
+  [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)  
+  [neural architectures for reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---neural-architectures)  
 
 
----- 
-#### deductive vs inductive reasoning
+
+--- 
+### inference / reasoning - deductive vs inductive
 
   ["Probability Theory - The Logic of Science"](https://goo.gl/zqDwOF) by E. T. Jaynes `paper`
 
@@ -313,6 +343,10 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 ---
 ### decisions / actions
 
+  How can beliefs conspire to produce decisions and actions?
+
+----
+
   - [reinforcement learning](#reinforcement-learning)
   - [meta-learning](#meta-learning)
   - [artificial curiosity and creativity](#artificial-curiosity-and-creativity)
@@ -336,48 +370,13 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
 ----
 
-  ["Why Tool AIs Want to Be Agent AIs"](http://www.gwern.net/Tool%20AI) by Gwern Branwen:
-
-  "Roughly, we can try to categorize the different kinds of agentiness by the level of the neural network they work on. There are:  
-  - actions internal to a computation  
-    * inputs  
-    * intermediate states  
-    * accessing the external environment  
-    * amount of computation  
-    * enforcing constraints/finetuning quality of output  
-    * changing the loss function applied to output  
-  - actions internal to training the neural network  
-    * the gradient itself  
-    * size & direction of gradient descent steps on each parameter  
-    * overall gradient descent learning rate and learning rate schedule  
-    * choice of data samples to train on  
-  - internal to the neural network design step  
-    * hyperparameter optimization  
-    * neural network architecture  
-  - internal to the dataset  
-    * active learning  
-    * optimal experiment design  
-  - internal to interaction with environment  
-    * adaptive experiment  
-    * multi-armed bandit  
-    * exploration for reinforcement learning"  
-
-  "The logical extension of these neural networks all the way down papers is that an actor like Google/Baidu/Facebook/MS could effectively turn neural networks into a black box: a user/developer uploads through an API a dataset of input/output pairs of a specified type and a monetary loss function, and a top-level neural network running on a large GPU cluster starts autonomously optimizing over architectures & hyperparameters for the neural network design which balances GPU cost and the monetary loss, interleaved with further optimization over the thousands of previous submitted tasks, sharing its learning across all of the datasets/loss functions/architectures/hyperparameters, and the original user simply submits future data through the API for processing by the best neural network so far."
-
-  *(Gwern Branwen)*
+  ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34?t=16m55s) `video`)
 
 ----
-
-  [overview](http://scholarpedia.org/article/Metalearning) by Tom Schaul and Juergen Schmidhuber
-
-  ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34?t=16m55s) `video`)
 
   ["Learning to Learn, to Program, to Explore and to Seek Knowledge"](https://youtube.com/watch?v=SAcHyzMdbXc) by Nando de Freitas `video`  
   ["Learning to Learn"](http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/) by Nando de Freitas `video`  
   ["Deep Learning Trends: Learning to Learn"](https://facebook.com/NIPSlive/videos/1489196207802887/) (5:49) by Oriol Vinyals `video`  
-
-  ["Learning how to Learn Learning Algorithms: Recursive Self-Improvement"](https://youtube.com/watch?v=nqiUFc52g78) by Juergen Schmidhuber `video`  
-  ["The Future of Machines that Learn Algorithms"](https://youtube.com/watch?v=zSNkbhgMkzQ) panel with Juergen Schmidhuber, Ilya Sutskever, Alex Graves et al. `video`  
 
   ["Learning to Optimize with Reinforcement Learning"](http://bair.berkeley.edu/blog/2017/09/12/learning-to-optimize-with-rl/) by Ke Li
 
@@ -385,28 +384,43 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
 ----
 
-  [Learning to Learn](http://people.idsia.ch/~juergen/metalearner.html) by Juergen Schmidhuber
+  [overview](http://scholarpedia.org/article/Metalearning) by Tom Schaul and Juergen Schmidhuber
 
-  [overview](https://youtu.be/nqiUFc52g78?t=21m13s) of Goedel Machine by Juergen Schmidhuber `video`
+  ["Learning how to Learn Learning Algorithms: Recursive Self-Improvement"](https://youtube.com/watch?v=nqiUFc52g78) by Juergen Schmidhuber `video`  
+  ["The Future of Machines that Learn Algorithms"](https://youtube.com/watch?v=zSNkbhgMkzQ) panel with Juergen Schmidhuber, Ilya Sutskever, Alex Graves et al. `video`  
 
-  [Goedel Machine](https://en.wikipedia.org/wiki/G%C3%B6del_machine) by Juergen Schmidhuber  
+
+
+---
+### meta-learning - Goedel Machine
+
+  [Goedel Machine](https://en.wikipedia.org/wiki/G%C3%B6del_machine)
+
+  [Learning to Learn](http://people.idsia.ch/~juergen/metalearner.html) by Juergen Schmidhuber  
+  [Goedel Machine](http://people.idsia.ch/~juergen/goedelmachine.html) by Juergen Schmidhuber  
   [Goedel Machine vs AIXI](http://people.idsia.ch/~juergen/gmweb2/node21.html) by Juergen Schmidhuber  
-  ["Towards An Actual Goedel Machine Implementation: A Lesson in Self-Reflective Systems"](http://people.idsia.ch/~juergen/selfreflection.pdf) by Steunebrink and Schmidhuber `video`  
 
+  [overview](https://youtu.be/nqiUFc52g78?t=21m13s) of Goedel Machine by Juergen Schmidhuber `video`  
+
+  ["Towards An Actual Goedel Machine Implementation: A Lesson in Self-Reflective Systems"](http://people.idsia.ch/~juergen/selfreflection.pdf) by Steunebrink and Schmidhuber `paper`
+
+----
 
   "Self-improving universal methods have also been defined, including some that justify self-changes (including changes of the learning algorithm) through empirical evidence in a lifelong learning context and the Goedel Machine that self-improves via proving theorems about itself, and can improve any part of its software (including the learning algorithm itself) in a way that is provably time-optimal in a sense that takes constant overheads into account and goes beyond asymptotic optimality. At each step of the way, the Goedel Machine takes the action that it can prove, according to its axiom system and its perceptual data, will be the best way to achieve its goals. The current versions of the Goedel Machine are not computationally tractable in complex environments, however."
 
   "Goedel machines are limited by the basic limits of math and computation identified by the founder of modern theoretical computer science himself, Kurt Goedel: some theorems are true but cannot be proven by any computational theorem proving procedure (unless the axiomatic system itself is flawed). That is, in some situations the GM may never find a proof of the benefits of some change to its own code."
-
-  "It’s currently not sufficiently formalized, so it’s difficult to state if and how it really works. Searching for proofs is extremely complicated: Making a parallel with Levin search, where given a goal output string (an improvement in the Goedel Machine), you enumerate programs (propositions in the GM) and run them to see if they output the goal string (search for a proof of improvement in GM). This last part is the problem: in LS, the programs are fast to run, whereas in GM there is an additional search step for each proposition, so this looks very roughly like going from exponential (LS) to double-exponential (GM). And LS is already not really practical. Theorem proving is even more complicated when you need to prove that there will be an improvement of the system at an unknown future step. Maybe it would work better if the kinds of proofs were limited to some class, for example use simulation of the future steps up to some horizon given a model of the world. These kinds of proofs are easier to check and have a guaranteed termination, e.g. if the model class for the environment is based on Schmidhuber’s Speed Prior. But this starts to look pretty much like an approximation of AIXI."
-
-  "We looked into existing proof verification systems. Some of them may turn out to be useful for limited AI applications. Unfortunately, however, off-the-shelf verifiers make implicit assumptions that are broken in self-referential proof-based Goedel Machines. They assume that (1) the thing being reasoned about is static (not an active and running program) and (2) the thing being reasoned about does not contain the reasoner itself."
 
   "MC-AIXI is a probabilistic approximation of AIXI. What might be the equivalent for the self-referential proof searcher of a GM? One possibility comes to mind: Holographic proofs, where errors in the derivation of a theorem are 'apparent after checking just a negligible fraction of bits of the proof'."
 
   "A Goedel Machine may indeed change its utility function and target theorem, but not in some arbitrary way. It can do so only if the change is provably useful according to its initial utility function. E.g., it may be useful to replace some complex-looking utility function by an equivalent simpler one. In certain environments, a Goedel Machine may even prove the usefulness of deleting its own proof searcher, and stop proving utility-related theorems, e.g., when the expected computational costs of proof search exceed the expected reward."
 
   *(Juergen Schmidhuber)*
+
+----
+
+  "It’s currently not sufficiently formalized, so it’s difficult to state if and how it really works. Searching for proofs is extremely complicated: Making a parallel with Levin search, where given a goal output string (an improvement in the Goedel Machine), you enumerate programs (propositions in the Goedel Machine) and run them to see if they output the goal string (search for a proof of improvement in Goedel Machine). This last part is the problem: in Levin Search, the programs are fast to run, whereas in Goedel Machine there is an additional search step for each proposition, so this looks very roughly like going from exponential (Levin Search) to double-exponential (Goedel Machine). And Levin Search is already not really practical. Theorem proving is even more complicated when you need to prove that there will be an improvement of the system at an unknown future step. Maybe it would work better if the kinds of proofs were limited to some class, for example use simulation of the future steps up to some horizon given a model of the world. These kinds of proofs are easier to check and have a guaranteed termination, e.g. if the model class for the environment is based on Schmidhuber’s Speed Prior. But this starts to look pretty much like an approximation of AIXI."
+
+  *(Laurent Orseau)*
 
 
 
@@ -441,6 +455,7 @@ following up conjectures suggested by analogies). Good mathematicians see analog
   [overview](https://vimeo.com/28759091) by Juergen Schmidhuber `video`  
   [overview](https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber) by Juergen Schmidhuber `video`  
 
+----
 
   ["Driven by compression progress: A simple principle explains essential aspects of subjective beauty, novelty, surprise, interestingness, attention, curiosity, creativity, art, science, music, jokes"](http://arxiv.org/abs/0812.4360) by Juergen Schmidhuber `paper`
 >	"I argue that data becomes temporarily interesting by itself to some self-improving, but computationally limited, subjective observer once he learns to predict or compress the data in a better way, thus making it subjectively simpler and more beautiful. Curiosity is the desire to create or discover more non-random, non-arbitrary, regular data that is novel and surprising not in the traditional sense of Boltzmann and Shannon but in the sense that it allows for compression progress because its regularity was not yet known. This drive maximizes interestingness, the first derivative of subjective beauty or compressibility, that is, the steepness of the learning curve. It motivates exploring infants, pure mathematicians, composers, artists, dancers, comedians, yourself, and artificial systems."
@@ -473,11 +488,10 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
   ["VIME: Variational Information Maximizing Exploration"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#vime-variational-information-maximizing-exploration-houthooft-chen-duan-schulman-turck-abbeel) by Houthooft et al. `paper`
 >	"Variational inference is used to approximate the posterior distribution of a Bayesian neural network that represents the environment dynamics. Using information gain in this learned dynamics model as intrinsic rewards allows the agent to optimize for both external reward and intrinsic surprise simultaneously."  
->	"r'(st,at,st+1) = r(st,at) + μ * Dkl[p(θ|ξt,at,st+1)||p(θ|ξt)]"  
 >
->	"It is possible to derive an interesting relationship between compression improvement - an intrinsic reward objective defined in Schmidhuber's Artificial Curiosity and Creativity theory, and the information gain. The agent’s curiosity is equated with compression improvement, measured through C(ξt; φt-1) - C(ξt; φt), where C(ξ; φ) is the description length of ξ using φ as a model. Furthermore, it is known that the negative variational lower bound can be viewed as the description length. Hence, we can write compression improvement as L[q(θ; φt), ξt] - L[q(θ; φt-1), ξt]. In addition, due to alternative formulation of the variational lower bound, compression improvement can be written as (log p(ξt) - Dkl[q(θ; φt)||p(θ|ξt)]) - (log p(ξt) - Dkl[q(θ; φt-1)||p(θ|ξt)]). If we assume that φt perfectly optimizes the variational lower bound for the history ξt, then Dkl[q(θ; φt)||p(θ|ξt)] = 0, which occurs when the approximation equals the true posterior, i.e., q(θ; φt) = p(θ|ξt). Hence, compression improvement becomes Dkl[p(θ|ξt-1) || p(θ|ξt)]. Therefore, optimizing for compression improvement comes down to optimizing the KL divergence from the posterior given the past history ξt-1 to the posterior given the total history ξt. As such, we arrive at an alternative way to encode curiosity than information gain, namely Dkl[p(θ|ξt)||p(θ|ξt,at,st+1)], its reversed KL divergence. In experiments, we noticed no significant difference between the two KL divergence variants. This can be explained as both variants are locally equal when introducing small changes to the parameter distributions."  
-  - [demo](https://goo.gl/fyxLvI) `video`
-  - [overview](https://youtube.com/watch?v=nbbMSMv3v5k) `video`
+>	"r'(st,at,st+1) = r(st,at) + μ * DKL[p(θ|ξt,at,st+1)||p(θ|ξt)]"  
+>
+>	"It is possible to derive an interesting relationship between compression improvement - an intrinsic reward objective defined in Schmidhuber's Artificial Curiosity and Creativity theory, and the information gain. The agent’s curiosity is equated with compression improvement, measured through C(ξt; φt-1) - C(ξt; φt), where C(ξ; φ) is the description length of ξ using φ as a model. Furthermore, it is known that the negative variational lower bound can be viewed as the description length. Hence, we can write compression improvement as L[q(θ; φt), ξt] - L[q(θ; φt-1), ξt]. In addition, due to alternative formulation of the variational lower bound, compression improvement can be written as (log p(ξt) - DKL[q(θ; φt)||p(θ|ξt)]) - (log p(ξt) - DKL[q(θ; φt-1)||p(θ|ξt)]). If we assume that φt perfectly optimizes the variational lower bound for the history ξt, then DKL[q(θ; φt)||p(θ|ξt)] = 0, which occurs when the approximation equals the true posterior, i.e., q(θ; φt) = p(θ|ξt). Hence, compression improvement becomes DKL[p(θ|ξt-1) || p(θ|ξt)]. Therefore, optimizing for compression improvement comes down to optimizing the KL divergence from the posterior given the past history ξt-1 to the posterior given the total history ξt. As such, we arrive at an alternative way to encode curiosity than information gain, namely DKL[p(θ|ξt)||p(θ|ξt,at,st+1)], its reversed KL divergence. In experiments, we noticed no significant difference between the two KL divergence variants. This can be explained as both variants are locally equal when introducing small changes to the parameter distributions."  
 
   ["Automated Curriculum Learning for Neural Networks"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#automated-curriculum-learning-for-neural-networks-#graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper`
 >	"We focus on variants of prediction gain, and also introduce a novel class of progress signals which we refer to as complexity gain. Derived from minimum description length principles, complexity gain equates acquisition of knowledge with an increase in effective information encoded in the network weights."  
@@ -583,17 +597,15 @@ following up conjectures suggested by analogies). Good mathematicians see analog
   *(Laurent Orseau)*
 
 
-#### A Monte-Carlo AIXI Approximation (MC-AIXI-CTW)
+#### A Monte-Carlo AIXI Approximation
 
-  ["A Monte Carlo AIXI Approximation"](https://arxiv.org/abs/0909.0801) by Veness, Ng, Hutter, Uther, Silver `video`  
+  ["A Monte Carlo AIXI Approximation"](#a-monte-carlo-aixi-approximation-veness-ng-hutter-uther-silver) by Veness, Ng, Hutter, Uther, Silver `paper`  
   ["Approximate Universal Artificial Intelligence and Self-Play Learning for Games"](http://jveness.info/publications/veness_phd_thesis_final.pdf) by Joel Veness `paper`  
-
-  [Ms. Pac-Man demo](http://youtube.com/watch?v=yfsMHtmGDKE) `video`
 
 
 #### Formal Theory of Fun and Creativity and Intrinsic Motivation
 
-  ["Artificial Curiosity and Creativity"](#artificial-curiosity-and-creativity) by Juergen Schmidhuber
+  [Artificial Curiosity and Creativity](#artificial-curiosity-and-creativity) by Juergen Schmidhuber
 
   "The ultimate optimal Bayesian approach to machine learning is embodied by the AIXI model. Any computational problem can be phrased as the maximization of a reward function. AIXI is based on Solomonoff's universal mixture M of all computable probability distributions. If the probabilities of the world's responses to some reinforcement learning agent's actions are computable (there is no physical evidence against that), then the agent may predict its future sensory inputs and rewards using M instead of the true but unknown distribution. The agent can indeed act optimally by choosing those action sequences that maximize M-predicted reward. This may be dubbed the unbeatable, ultimate statistical approach to AI - it demonstrates the mathematical limits of what's possible. However, AIXI’s notion of optimality ignores computation time, which is the reason why we are still in business with less universal but more practically feasible approaches such as deep learning based on more limited local search techniques such as gradient descent."
 
@@ -602,6 +614,7 @@ following up conjectures suggested by analogies). Good mathematicians see analog
   *(Juergen Schmidhuber)*
 
   ["On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models"](#on-learning-to-think-algorithmic-information-theory-for-novel-combinations-of-reinforcement-learning-controllers-and-recurrent-neural-world-models-schmidhuber) by Juergen Schmidhuber `paper`
+>	"We motivate controller network C to become an efficient explorer and an artificial scientist, by adding to its standard external reward (or fitness) for solving user-given tasks another intrinsic reward for generating novel action sequences (= experiments) that allow world model network M to improve its compression performance on the resulting data. At first glance, repeatedly evaluating M’s compression performance on the entire history seems impractical. A heuristic to overcome this is to focus on M’s improvements on the most recent trial, while regularly re-training M on randomly selected previous trials, to avoid catastrophic forgetting. A related problem is that C’s incremental program search may find it difficult to identify (and assign credit to) those parts of C responsible for improvements of a huge, black box-like, monolithic M. But we can implement M as a self-modularizing, computation cost-minimizing, winner-take-all RNN. Then it is possible to keep track of which parts of M are used to encode which parts of the history. That is, to evaluate weight changes of M, only the affected parts of the stored history have to be re-tested. Then C’s search can be facilitated by tracking which parts of C affected those parts of M. By penalizing C’s programs for the time consumed by such tests, the search for C is biased to prefer programs that conduct experiments causing data yielding quickly verifiable compression progress of M. That is, the program search will prefer to change weights of M that are not used to compress large parts of the history that are expensive to verify. The first implementations of this simple principle were described in our work on the POWERPLAY framework, which incrementally searches the space of possible pairs of new tasks and modifications of the current program, until it finds a more powerful program that, unlike the unmodified program, solves all previously learned tasks plus the new one, or simplifies/compresses/speeds up previous solutions, without forgetting any."
 
 
 
@@ -690,7 +703,7 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 >	"Specialized intelligent systems can be found everywhere: finger print, hand-writing, speech, and face recognition, spam filtering, chess and other game programs, robots, et al. This decade the first presumably complete mathematical theory of artificial intelligence based on universal induction-prediction-decision-action has been proposed. This information-theoretic approach solidifies the foundations of inductive inference and artificial intelligence. Getting the foundations right usually marks a significant progress and maturing of a field. The theory provides a gold standard and guidance for researchers working on intelligent algorithms. The roots of universal induction have been laid exactly half-a-century ago and the roots of universal intelligence exactly one decade ago. So it is timely to take stock of what has been achieved and what remains to be done. Since there are already good recent surveys, I describe the state-of-the-art only in passing and refer the reader to the literature. This article concentrates on the open problems in universal induction and its extension to universal intelligence."
 
 
-#### ["A Monte-Carlo AIXI Approximation"](https://www.jair.org/media/3125/live-3125-5397-jair.pdf) Veness, Ng, Hutter, Uther, Silver
+#### ["A Monte-Carlo AIXI Approximation"](https://arxiv.org/abs/0909.0801) Veness, Ng, Hutter, Uther, Silver
   `MC-AIXI-CTW agent`
 >	"This paper introduces a principled approach for the design of a scalable general reinforcement learning agent. Our approach is based on a direct approximation of AIXI, a Bayesian optimality notion for general reinforcement learning agents. Previously, it has been unclear whether the theory of AIXI could motivate the design of practical algorithms. We answer this hitherto open question in the affirmative, by providing the first computationally feasible approximation to the AIXI agent. To develop our approximation, we introduce a new Monte-Carlo Tree Search algorithm along with an agent-specific extension to the Context Tree Weighting algorithm. Empirically, we present a set of encouraging results on a variety of stochastic and partially observable domains. We conclude by proposing a number of directions for future research."
 
@@ -698,7 +711,6 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
   - `video` <http://youtube.com/watch?v=yfsMHtmGDKE> (demo)
   - <http://aslanides.io/aixijs/demo.html> (demo)
-  - `video` <http://videolectures.net/nips09_veness_bfg/> (Veness)
   - `paper` ["Approximate Universal Artificial Intelligence and Self-Play Learning for Games"](http://jveness.info/publications/veness_phd_thesis_final.pdf) by Joel Veness `paper`
   - `code` <http://jveness.info/software/mcaixi_jair_2010.zip>
   - `code` <https://github.com/moridinamael/mc-aixi>

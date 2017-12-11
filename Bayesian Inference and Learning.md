@@ -224,7 +224,7 @@
 ---
 ### graphical models
 
-  "The biggest advantage of graphical models is relatively simple way to distinguish conditionally independent variables, which simplify further analysis and allows to significantly lower number of factors given variable depends on."
+  The biggest advantage of graphical models is relatively simple way to distinguish conditionally independent variables, which simplify further analysis and allows to significantly lower number of factors given variable depends on.
 
   overview by Roger Grosse
 	([first part](https://metacademy.org/roadmaps/rgrosse/bayesian_machine_learning#models),
@@ -249,14 +249,15 @@
 ---
 ### non-parametric models
 
-  "The basic point of non-parametric models is that they provide a prior distribution on real-valued functions. This lets you do regression as Bayesian inference: given observed data, Bayes rule turns your prior on functions into a posterior distribution. Having a posterior distribution on functions, rather than just a single learned function, means you can reason about uncertainty of your predictions at any set of points."
+  The basic point of non-parametric models is that they provide a prior distribution on real-valued functions. This lets you do regression as Bayesian inference: given observed data, Bayes rule turns your prior on functions into a posterior distribution. Having a posterior distribution on functions, rather than just a single learned function, means you can reason about uncertainty of your predictions at any set of points.
 
   [overview](https://metacademy.org/roadmaps/rgrosse/bayesian_machine_learning#bayesian-nonparametrics) by Roger Grosse
 
+  ["Bayesian Nonparametric Models"](http://www.stats.ox.ac.uk/~teh/research/npbayes/OrbTeh2010a.pdf) by Peter Orbanz and Yee Whye Teh  
+
   [overview](https://youtu.be/H7AMB0oo__4?t=21m51s) by Zoubin Ghahramani `video`  
 
-  ["Yes, You Can Fit Models With More Parameters Than Data Points"](https://jakevdp.github.io/blog/2015/07/06/model-complexity-myth/) by Jake VanderPlas  
-  ["Bayesian Nonparametric Models"](http://www.stats.ox.ac.uk/~teh/research/npbayes/OrbTeh2010a.pdf) by Peter Orbanz and Yee Whye Teh  
+----
 
   [Gaussian Processes](https://youtube.com/watch?v=4vGiHC35j9s) by Nando de Freitas `video`  
   [Gaussian Processes](https://youtube.com/watch?v=50Vgw11qn0o) by Philipp Hennig `video`  
@@ -264,6 +265,8 @@
 
   ["Gaussian Processes and Bayesian Optimization"](https://youtube.com/watch?v=PgJMLpIfIc8) by Evgeny Burnaev `video` `in russian`  
   ["Scalable and Deep Gaussian Processes"](https://youtube.com/watch?v=NqOBWLUYBm4) by Dmitry Kropotov `video` `in russian`  
+
+----
 
   ["Nonparametric Bayesian Methods: Models, Algorithms, and Applications"](https://youtube.com/watch?v=I7bgrZjoRhM) course by Tamara Broderick and Michael I. Jordan `video`  
   ["Bayesian Nonparametrics"](https://youtube.com/watch?v=kKZkNUvsJ4M) course by Tamara Broderick `video`  
@@ -379,6 +382,13 @@
   ["Variational Inference in 5 Minutes"](http://davmre.github.io/inference/2015/11/13/elbo-in-5min/) by Dave Moore  
   ["General Purpose Variational Inference"](http://davmre.github.io/inference/2015/11/13/general_purpose_variational_inference/) by Dave Moore  
 
+  ["Neural Variational Inference"](http://artem.sobolev.name/tags/modern%20variational%20inference%20series.html) by Artem Sobolev:  
+  - ["Classical Theory"](http://artem.sobolev.name/posts/2016-07-01-neural-variational-inference-classical-theory.html)  
+  - ["Scaling Up"](http://artem.sobolev.name/posts/2016-07-04-neural-variational-inference-stochastic-variational-inference.html)  
+  - ["Blackbox Mode"](http://artem.sobolev.name/posts/2016-07-05-neural-variational-inference-blackbox.html)  
+  - ["Variational Autoencoders and Helmholtz machines"](http://artem.sobolev.name/posts/2016-07-11-neural-variational-inference-variational-autoencoders-and-Helmholtz-machines.html)  
+  - ["Importance Weighted Autoencoders"](http://artem.sobolev.name/posts/2016-07-14-neural-variational-importance-weighted-autoencoders.html)  
+
   ["Variational Inference: A Review for Statisticians"](http://arxiv.org/abs/1601.00670) by Blei et al. `paper`  
   ["Variational Inference"](https://www.cs.princeton.edu/courses/archive/fall11/cos597C/lectures/variational-inference-i.pdf) by David Blei `paper`  
   ["An Introduction to Variational Methods for Graphical Model"](https://www.cs.berkeley.edu/~jordan/papers/variational-intro.pdf) by Jordan et al. `paper`  
@@ -395,15 +405,6 @@
   ["Reparametrization Trick: Revolution in Stochastic Computational Graphs"](https://youtu.be/0q5p7xP4cdA?t=5h3m29s)
 	by Dmitry Vetrov `video` `in russian` ([slides](https://sdsj.ru/slides/Vetrov.pdf) `in english`)  
   [overview](https://youtu.be/tqGEX_Ucu04?t=48m42s) of alternatives to variational inference by Dmitry Molchanov `video` `in russian`  
-
-----
-
-  ["Neural Variational Inference"](http://artem.sobolev.name/tags/modern%20variational%20inference%20series.html) by Artem Sobolev:  
-  - ["Classical Theory"](http://artem.sobolev.name/posts/2016-07-01-neural-variational-inference-classical-theory.html)  
-  - ["Scaling Up"](http://artem.sobolev.name/posts/2016-07-04-neural-variational-inference-stochastic-variational-inference.html)  
-  - ["Blackbox Mode"](http://artem.sobolev.name/posts/2016-07-05-neural-variational-inference-blackbox.html)  
-  - ["Variational Autoencoders and Helmholtz machines"](http://artem.sobolev.name/posts/2016-07-11-neural-variational-inference-variational-autoencoders-and-Helmholtz-machines.html)  
-  - ["Importance Weighted Autoencoders"](http://artem.sobolev.name/posts/2016-07-14-neural-variational-importance-weighted-autoencoders.html)  
 
 ----
 
@@ -554,7 +555,8 @@
 
   [visualization](https://chi-feng.github.io/mcmc-demo/app.html)
 
-  [notebook with implementations](https://plot.ly/ipython-notebooks/computational-bayesian-analysis/)
+  [implementations](https://github.com/wiseodd/MCMC)  
+  [implementations](https://plot.ly/ipython-notebooks/computational-bayesian-analysis/)  
 
 
 
@@ -596,27 +598,27 @@
 
   Causal inference is the problem of uncovering the cause-effect relationships between the variables of a data generating system. Causal structures provide understanding about how this process will behave under changing, unseen environments. In turn, knowledge about these causal dynamics allows to answer "what if" questions, describing the potential responses of the system under hypothetical manipulations and interventions.
 
-  "What if some railways are closed, what will passengers do? What if we incentivize a member of a social network to propagate an idea, how influential can they be? What if some genes in a cell are knocked-out, which phenotypes can we expect? Such questions need to be addressed via a combination of experimental and observational data, and require a careful approach to modelling heterogeneous datasets and structural assumptions concerning the causal relations among the components of the system."
+  What if some railways are closed, what will passengers do? What if we incentivize members of a social network to propagate an idea, how influential can they be? What if some genes in a cell are knocked-out, which phenotypes can we expect? Such questions need to be addressed via a combination of experimental and observational data, and require a careful approach to modelling heterogeneous datasets and structural assumptions concerning the causal relations among the components of the system.
 
 ----
 
-  ["Causality"](http://www.homepages.ucl.ac.uk/~ucgtrbd/papers/causality.pdf) by Ricardo Silva `paper`
+  ["Theoretical Impediments to Machine Learning"](http://web.cs.ucla.edu/~kaoru/theoretical-impediments.pdf) by Judea Pearl `paper`
 
-----
-
-  overview of [role](https://youtube.com/watch?v=uyZOcUDhIbY&t=20m5s) and [applications](https://youtube.com/watch?v=uyZOcUDhIbY&t=58m) by Michael I. Jordan `video`  
-  [overview](https://www.edge.org/conversation/judea_pearl-engines-of-evidence) by Judea Pearl  
+  [conversation](https://www.edge.org/conversation/judea_pearl-engines-of-evidence) with Judea Pearl `video`  
+  overview of [role](https://youtube.com/watch?v=uyZOcUDhIbY&t=20m5s) and [applications](https://youtube.com/watch?v=uyZOcUDhIbY&t=58m) in machine learning by Michael I. Jordan `video`  
 
   ["Causality in Machine Learning"](http://unofficialgoogledatascience.com/2017/01/causality-in-machine-learning.html) by Muralidharan et al.  
   ["Latent Variables and Model Mis-specification"](https://jsteinhardt.wordpress.com/2017/01/10/latent-variables-and-model-mis-specification/) by Jacob Steinhardt  
 
-  examples of implication of causality on decision making:  
+----
+
+  examples of implications of causality on decision making:
   - [Simpson paradox](https://en.wikipedia.org/wiki/Simpson%27s_paradox#Implications_for_decision_making)
   - ["The Neural Net Tank Urban Legend"](http://gwern.net/Tanks) by Gwern Branwen
 
 ----
 
-  [introduction](https://medium.com/@akelleh/causal-data-science-721ed63a4027) by Adam Kelleher:
+  ["Causal Data Science"](https://medium.com/@akelleh/causal-data-science-721ed63a4027) by Adam Kelleher:
   - ["If Correlation Doesn’t Imply Causation, Then What Does?"](https://medium.com/@akelleh/if-correlation-doesnt-imply-causation-then-what-does-c74f20d26438)
   - ["Understanding Bias: A Prerequisite For Trustworthy Results"](https://medium.com/@akelleh/understanding-bias-a-pre-requisite-for-trustworthy-results-ee590b75b1be)
   - ["Speed vs. Accuracy: When Is Correlation Enough? When Do You Need Causation?"](https://medium.com/@akelleh/speed-vs-accuracy-when-is-correlation-enough-when-do-you-need-causation-708c8ca93753)
@@ -624,7 +626,8 @@
   - ["The Data Processing Inequality"](https://medium.com/@akelleh/the-data-processing-inequality-da242b40800b)
   - ["Causal Graph Inference"](https://medium.com/@akelleh/causal-graph-inference-b3e3afd47110)
 
-  ["Introduction to Causal Inference"](http://jmlr.org/papers/volume11/spirtes10a/spirtes10a.pdf) by Peter Spirtes `paper`
+  ["Causality"](http://www.homepages.ucl.ac.uk/~ucgtrbd/papers/causality.pdf) by Ricardo Silva `paper`  
+  ["Introduction to Causal Inference"](http://jmlr.org/papers/volume11/spirtes10a/spirtes10a.pdf) by Peter Spirtes `paper`  
 
   ["The Art and Science of Cause and Effect"](http://bayes.cs.ucla.edu/BOOK-2K/causality2-epilogue.pdf) by Judea Pearl `book`
 
@@ -633,6 +636,8 @@
   [tutorial](https://youtube.com/watch?v=zvrcyqcN9Wo) by Jonas Peters `video`  
   [tutorial](https://youtube.com/watch?v=_wFagI5Fn9I) by Jonas Peters `video`  
   [tutorial](https://youtube.com/watch?v=KsbftkwZTq4) by Bernhard Scholkopf and Dominik Janzing `video`  
+
+----
 
   ["Connections between Causality and Machine Learning"](https://youtube.com/watch?v=9pm0eXuiTZs) by Jonas Peters `video`
 
@@ -656,18 +661,6 @@
 
 ----
 
-  "Causal graph and the intervention types and targets may be (partially) unknown. This is a realistic setting in many practical applications. For example, in biology, many interventions that can be performed on organisms are known to result in measurable downstream effects, but the exact mechanism and direct intervention targets are unknown, and therefore it is not clear whether the knowledge gained may be transferred to other species. In pharmaceutical research, it is desirable to target the root causes of illness directly and minimize side-effects; however, as the causal mechanisms are often poorly understood, it is unclear what exactly a drug is doing and whether the results of a particular study on a subpopulation of patients (say, middle-aged males in the US) will generalize to other subpopulations (e.g., elderly women with dementia). In policy decisions, changing tax rules may have different repercussions for different socio-economic classes, but the exact workings of an economy can only be modeled to a certain extent. Machine learning may help to make such predictions more data-driven, but should then correctly take into account the transfer of distributions that result from interventions and context changes."
-
-  "For prediction in IID setting, imitating the exterior of a process is enough (i.e. can disregard causal structure). Anything else can benefit from causal learning."
-
-  "Link between causality and probability:  
-  1) if X and Y are statistically dependent, then there is a Z causally influencing both.  
-  2) Z screens X and Y from each other (given Z, the observables X and Y become independent)."  
-
-  "Under probabilistic interpretation of causation from Pearl, the causal structure underlying a set of random variables X=(X1, ..., Xd), with joint distribution P, is often described in terms of a Directed Acyclic Graph, denoted by G = (V, E). In this graph, each vertex Vi ∈ V is associated to the random variable Xi ∈ X, and an edge Eji ∈ E from Vj to Vi denotes the causal relationship “Xi ← Xj”. More specifically, these causal relationships are defined by a structural equation model: each Xi ← fi(Pa(Xi), Ni), where fi is a function, Pa(Xi) is the parental set of Vi ∈ V, and Ni is some independent noise variable. Then, causal inference is the task of recovering G from S ∼ P^n."
-
-----
-
   "In retrospect, my greatest challenge was to break away from probabilistic thinking and accept, first, that people are not probability thinkers but cause-effect thinkers and, second, that causal thinking cannot be captured in the language of probability; it requires a formal language of its own."
 
   "What is more likely, that a daughter will have blue eyes given that her mother has blue eyes or the other way around — that the mother will have blue eyes given that the daughter has blue eyes? Most people will say the former — they'll prefer the causal direction. But it turns out the two probabilities are the same, because the number of blue-eyed people in every generation remains stable. I took it as evidence that people think causally, not probabilistically — they're biased by having easy access to causal explanations, even though probability theory tells you something different.  
@@ -677,6 +670,44 @@
   "I now take causal relations as the fundamental building block that of physical reality and of human understanding of that reality, and I regard probabilistic relationships as but the surface phenomena of the causal machinery that underlies and propels our understanding of our world."
 
   *(Judea Pearl)*
+
+----
+
+  ["Theoretical Impediments to Machine Learning"](http://web.cs.ucla.edu/~kaoru/theoretical-impediments.pdf) by Judea Pearl `paper`
+
+  "If we examine the information that drives machine learning today, we find that it is almost entirely statistical. In other words, learning machines improve their performance by optimizing parameters over a stream of sensory inputs received from the environment. It is a slow process, analogous in many respects to the evolutionary survival-of-the-fittest process that explains how species like eagles and snakes have developed superb vision systems over millions of years. It cannot explain however the super-evolutionary process that enabled humans to build eyeglasses and telescopes over barely one thousand years. What humans possessed that other species lacked was a mental representation, a blue-print of their environment which they could manipulate at will to imagine alternative hypothetical environments for planning and learning. Anthropologists like N. Harari, and S. Mithen are in general agreement that the decisive ingredient that gave our homo sapiens ancestors the ability to achieve global dominion, about 40,000 years ago, was their ability to sketch and store a representation of their environment, interrogate that representation, distort it by mental acts of imagination and finally answer “What if?” kind of questions. Examples are interventional questions: “What if I act?” and retrospective or explanatory questions: “What if I had acted differently?” No learning machine in operation today can answer such questions about actions not taken before. Moreover, most learning machine today do not utilize a representation from which such questions can be answered. We postulate that the major impediment to achieving accelerated learning speeds as well as human level performance can be overcome by removing these barriers and equipping learning machines with causal reasoning tools. This postulate would have been speculative twenty years ago, prior to the mathematization of counterfactuals. Not so today. Advances in graphical and structural models have made counterfactuals computationally manageable and thus rendered metastatistical learning worthy of serious exploration."
+
+  "An extremely useful insight unveiled by the logic of causal reasoning is the existence of a sharp classification of causal information, in terms of the kind of questions that each class is capable of answering. The classification forms a 3-level hierarchy in the sense that questions at one level can only be answered if information from next levels is available."
+
+  - association P(y|x) - seeing (what is?)
+
+	How would seeing X change my belief in Y?  
+	What does a symptom tell me about a disease?  
+
+  - intervention P(y|do(x),z) - doing (what if?)
+
+	What if I do X?  
+	What if I take aspirin, will my headache be cured?  
+	What if we ban cigarettes?  
+
+  - counterfactuals P(yx|x0,y0) - imagining, retrospection (why?)
+
+	Was it X that caused Y?  
+	What if I had acted differently?  
+	Was it the aspirin that stopped my headache?  
+	What if I had not been smoking the past 2 years?  
+
+  *(Judea Pearl)*
+
+----
+
+  "Link between causality and probability:  
+  1) if X and Y are statistically dependent, then there is a Z causally influencing both.  
+  2) Z screens X and Y from each other (given Z, the observables X and Y become independent)."  
+
+  "Under probabilistic interpretation of causation from Pearl, the causal structure underlying a set of random variables X=(X1, ..., Xd), with joint distribution P, is often described in terms of a Directed Acyclic Graph, denoted by G = (V, E). In this graph, each vertex Vi ∈ V is associated to the random variable Xi ∈ X, and an edge Eji ∈ E from Vj to Vi denotes the causal relationship “Xi ← Xj”. More specifically, these causal relationships are defined by a structural equation model: each Xi ← fi(Pa(Xi), Ni), where fi is a function, Pa(Xi) is the parental set of Vi ∈ V, and Ni is some independent noise variable. Then, causal inference is the task of recovering G from S ∼ P^n."
+
+  "Causal graph and the intervention types and targets may be (partially) unknown. This is a realistic setting in many practical applications. For example, in biology, many interventions that can be performed on organisms are known to result in measurable downstream effects, but the exact mechanism and direct intervention targets are unknown, and therefore it is not clear whether the knowledge gained may be transferred to other species. In pharmaceutical research, it is desirable to target the root causes of illness directly and minimize side-effects; however, as the causal mechanisms are often poorly understood, it is unclear what exactly a drug is doing and whether the results of a particular study on a subpopulation of patients (say, middle-aged males in the US) will generalize to other subpopulations (e.g., elderly women with dementia). In policy decisions, changing tax rules may have different repercussions for different socio-economic classes, but the exact workings of an economy can only be modeled to a certain extent. Machine learning may help to make such predictions more data-driven, but should then correctly take into account the transfer of distributions that result from interventions and context changes. For prediction in IID setting, imitating the exterior of a process is enough (i.e. can disregard causal structure). Anything else can benefit from causal learning."
 
 
 

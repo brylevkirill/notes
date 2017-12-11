@@ -1028,7 +1028,7 @@
   ["Deep Meaning Beyond Thought Vectors"](https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/) by David McAllester
 
 
-  [embeddings of natural language](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#continuous-space-representations)  
+  [distributed representations of natural language](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#embeddings)  
   [neural architectures for reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---neural-architectures)  
 
 ----
