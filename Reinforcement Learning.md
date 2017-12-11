@@ -91,8 +91,8 @@
 #### games
 
   - *Go*  
-	["Mastering the Game of Go without Human Knowledge"](#mastering-the-game-of-go-without-human-knowledge-silver-et-al) by Silver et al. `paper`  
-	["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper`  
+	["Mastering the Game of Go without Human Knowledge"](#mastering-the-game-of-go-without-human-knowledge-silver-et-al) by Silver et al. `paper` `summary`  
+	["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper` `summary`  
 	["Combining Online and Offline Knowledge in UCT"](http://machinelearning.org/proceedings/icml2007/papers/387.pdf) by Gelly and Silver `paper` ([talk](https://youtube.com/watch?v=Bm7zah_LrmE) `video`)  
 
 	[overview](https://youtu.be/i3lEG6aRGm8?t=16m) by Demis Hassabis `video`  
@@ -142,7 +142,7 @@
 		[overview](https://youtube.com/watch?v=CUZxe7bXKxo) `text`  
 
   - *Poker*  
-	["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](#deepstack-expert-level-artificial-intelligence-in-no-limit-poker-moravcik-et-al) by Moravcik et al. `paper`  
+	["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](#deepstack-expert-level-artificial-intelligence-in-no-limit-poker-moravcik-et-al) by Moravcik et al. `paper` `summary`  
 	["Science" magazine](http://science.sciencemag.org/content/early/2017/03/01/science.aam6960) `paper`  
 
 	<http://deepstack.ai>  
@@ -159,9 +159,9 @@
 	[matches against professional players](https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ) `video`
 
   - *Chess*  
-	["Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm"](#mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm-silver-et-al) by Silver et al. `paper`  
-	["Giraffe: Using Deep Reinforcement Learning to Play Chess"](#giraffe-using-deep-reinforcement-learning-to-play-chess-lai) by Lai `paper`  
-	["Bootstrapping from Game Tree Search"](#bootstrapping-from-game-tree-search-veness-silver-uther-blair) by Veness et al. `paper`  
+	["Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm"](#mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm-silver-et-al) by Silver et al. `paper` `summary`  
+	["Giraffe: Using Deep Reinforcement Learning to Play Chess"](#giraffe-using-deep-reinforcement-learning-to-play-chess-lai) by Lai `paper` `summary`  
+	["Bootstrapping from Game Tree Search"](#bootstrapping-from-game-tree-search-veness-silver-uther-blair) by Veness et al. `paper` `summary`  
 	["KnightCap: A Chess Program that Learns by Combining TD(lambda) with Game-tree Search"](https://arxiv.org/abs/cs/9901002) by Baxter et al. `paper`  
 
   - *Dota 2*  
@@ -174,13 +174,13 @@
 	[game vs Pajkatt](https://youtube.com/watch?v=BBUiwCEmrxU) `video`  
 
   - *Doom*  
-	["Learning to Act by Predicting the Future"](#learning-to-act-by-predicting-the-future-dosovitskiy-koltun) by Dosovitskiy and Koltun `paper`
+	["Learning to Act by Predicting the Future"](#learning-to-act-by-predicting-the-future-dosovitskiy-koltun) by Dosovitskiy and Koltun `paper` `summary`
 
 	[demo](https://youtube.com/watch?v=947bSUtuSQ0) of IntelAct agent `video`  
 	[demo](https://youtube.com/channel/UC8UghzsxS5uEFUEbvcAWwlQ/videos) of agents from ViZDoom competition `video`  
 
   - *Atari*  
-	["Playing Atari with Deep Reinforcement Learning"](#playing-atari-with-deep-reinforcement-learning-mnih-kavukcuoglu-silver-graves-antonoglou-wierstra-riedmiller) by Mnih et al. `paper`
+	["Playing Atari with Deep Reinforcement Learning"](#playing-atari-with-deep-reinforcement-learning-mnih-kavukcuoglu-silver-graves-antonoglou-wierstra-riedmiller) by Mnih et al. `paper` `summary`
 
 	[demo](http://youtube.com/watch?v=EfGD2qveGdQ) `video`
 
@@ -524,24 +524,24 @@
   [**bayesian reinforcement learning**](#bayesian-reinforcement-learning)
 
 
-  ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](#efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search-guez-silver-dayan) by Guez et al. `paper`  
-  ["Learning to Optimize Via Posterior Sampling"](#learning-to-optimize-via-posterior-sampling-russo-van-roy) by Russo and van Roy `paper`  
-  ["Why is Posterior Sampling Better than Optimism for Reinforcement Learning?"](#why-is-posterior-sampling-better-than-optimism-for-reinforcement-learning-osband-van-roy) by Osband and van Roy `paper`  
+  ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](#efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search-guez-silver-dayan) by Guez et al. `paper` `summary`  
+  ["Learning to Optimize Via Posterior Sampling"](#learning-to-optimize-via-posterior-sampling-russo-van-roy) by Russo and van Roy `paper` `summary`  
+  ["Why is Posterior Sampling Better than Optimism for Reinforcement Learning?"](#why-is-posterior-sampling-better-than-optimism-for-reinforcement-learning-osband-van-roy) by Osband and van Roy `paper` `summary`  
   ["A Tutorial on Thompson Sampling"](https://arxiv.org/abs/1707.02038) by Russo et al. `paper`  
-  ["Nonparametric General Reinforcement Learning"](#nonparametric-general-reinforcement-learning-leike) by Leike `paper`  *(estimating reward by sampling environment model from posterior distribution and running episode using it)*  
-  ["Weight Uncertainty in Neural Networks"](#weight-uncertainty-in-neural-networks-blundell-cornebise-kavukcuoglu-wierstra) by Blundell et al. `paper`  *(training bayesian neural network to predict reward, sampling particular network weights from posterior and choosing action with highest predicted reward)*  
-  ["Deep Exploration via Bootstrapped DQN"](#deep-exploration-via-bootstrapped-dqn-osband-blundell-pritzel-van-roy) by Osband et al. `paper`  *(training multiple value function networks with shared bottom layers using bootstrapping, sampling value function network and running episode using it)*  
-  ["Deep Exploration via Randomized Value Functions"](#deep-exploration-via-randomized-value-functions-osband-russo-wen-van-roy) by Osband et al. `paper`  
-  ["Noisy Networks for Exploration"](#noisy-networks-for-exploration-fortunato-et-al) by Fortunato et al. `paper`  
-  ["Approximate Bayes Optimal Policy Search using Neural Networks"](#approximate-bayes-optimal-policy-search-using-neural-networks-castronovo-francois-lavet-fonteneau-ernst-couetoux) by Castronovo et al. `paper`  
-  ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](#rl2-fast-reinforcement-learning-via-slow-reinforcement-learning-duan-schulman-chen-bartlett-sutskever-abbeel) by Duan et al. `paper`  
-  ["Learning to Reinforcement Learn"](#learning-to-reinforcement-learn-wang-et-al) by Wang et al. `paper`  
+  ["Nonparametric General Reinforcement Learning"](#nonparametric-general-reinforcement-learning-leike) by Leike `paper` `summary`  *(estimating reward by sampling environment model from posterior distribution and running episode using it)*  
+  ["Weight Uncertainty in Neural Networks"](#weight-uncertainty-in-neural-networks-blundell-cornebise-kavukcuoglu-wierstra) by Blundell et al. `paper` `summary`  *(training bayesian neural network to predict reward, sampling particular network weights from posterior and choosing action with highest predicted reward)*  
+  ["Deep Exploration via Bootstrapped DQN"](#deep-exploration-via-bootstrapped-dqn-osband-blundell-pritzel-van-roy) by Osband et al. `paper` `summary`  *(training multiple value function networks with shared bottom layers using bootstrapping, sampling value function network and running episode using it)*  
+  ["Deep Exploration via Randomized Value Functions"](#deep-exploration-via-randomized-value-functions-osband-russo-wen-van-roy) by Osband et al. `paper` `summary`  
+  ["Noisy Networks for Exploration"](#noisy-networks-for-exploration-fortunato-et-al) by Fortunato et al. `paper` `summary`  
+  ["Approximate Bayes Optimal Policy Search using Neural Networks"](#approximate-bayes-optimal-policy-search-using-neural-networks-castronovo-francois-lavet-fonteneau-ernst-couetoux) by Castronovo et al. `paper` `summary`  
+  ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](#rl2-fast-reinforcement-learning-via-slow-reinforcement-learning-duan-schulman-chen-bartlett-sutskever-abbeel) by Duan et al. `paper` `summary`  
+  ["Learning to Reinforcement Learn"](#learning-to-reinforcement-learn-wang-et-al) by Wang et al. `paper` `summary`  
 
   [interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration-models)
 
 ----
 
-  ["How Can We Define Intrinsic Motivation"](http://pyoudeyer.com/epirob08OudeyerKaplan.pdf) by Oudeyer and Kaplan `paper`:
+  ["How Can We Define Intrinsic Motivation"](#how-can-we-define-intrinsic-motivation-oudeyer-kaplan) by Oudeyer and Kaplan `paper` `summary`:
   - information theoretic and distributional models
   - predictive models
   - competence-based models
@@ -555,23 +555,23 @@
   - *uncertainty motivation*  
 	reward for every event inversely proportional to its probability of observation  
 
-	["Action-Conditional Video Prediction using Deep Networks in Atari Games"](#action-conditional-video-prediction-using-deep-networks-in-atari-games-oh-guo-lee-lewis-singh) by Oh et al. `paper`  *(approximate visitation counting in a learned state embedding using Gaussian kernels)*  
+	["Action-Conditional Video Prediction using Deep Networks in Atari Games"](#action-conditional-video-prediction-using-deep-networks-in-atari-games-oh-guo-lee-lewis-singh) by Oh et al. `paper` `summary`  *(approximate visitation counting in a learned state embedding using Gaussian kernels)*  
 	["Recurrent Environment Simulators"](https://arxiv.org/abs/1704.02254) by Chiappa et al. `paper`  
-	["Unifying Count-Based Exploration and Intrinsic Motivation"](#unifying-count-based-exploration-and-intrinsic-motivation-bellemare-srinivasan-ostrovski-schaul-saxton-munos) by Bellemare et al. `paper`  *(relationship between the pseudo-count, a variant of Schmidhuber’s compression progress or prediction gain, and Bayesian information gain)*  
-	["Count-Based Exploration with Neural Density Models"](#count-based-exploration-with-neural-density-models-ostrovski-bellemare-van-den-oord-munos) by Ostrovski et al. `paper`  
-	["\#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning"](#exploration-a-study-of-count-based-exploration-for-deep-reinforcement-learning-tang-et-al) by Tang et al. `paper`  
-	["EX2: Exploration with Exemplar Models for Deep Reinforcement Learning"](#ex2-exploration-with-exemplar-models-for-deep-reinforcement-learning-fu-co-reyes-levine) by Fu et al. `paper`  
+	["Unifying Count-Based Exploration and Intrinsic Motivation"](#unifying-count-based-exploration-and-intrinsic-motivation-bellemare-srinivasan-ostrovski-schaul-saxton-munos) by Bellemare et al. `paper` `summary`  *(relationship between the pseudo-count, a variant of Schmidhuber’s compression progress or prediction gain, and Bayesian information gain)*  
+	["Count-Based Exploration with Neural Density Models"](#count-based-exploration-with-neural-density-models-ostrovski-bellemare-van-den-oord-munos) by Ostrovski et al. `paper` `summary`  
+	["\#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning"](#exploration-a-study-of-count-based-exploration-for-deep-reinforcement-learning-tang-et-al) by Tang et al. `paper` `summary`  
+	["EX2: Exploration with Exemplar Models for Deep Reinforcement Learning"](#ex2-exploration-with-exemplar-models-for-deep-reinforcement-learning-fu-co-reyes-levine) by Fu et al. `paper` `summary`  
 
 	[interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---uncertainty-motivation)
 
   - *information gain motivation*  
 	reward for decrease of uncertainty in knowledge that agent has of environment after event has happened  
 
-	["An Information-theoretic Approach to Curiosity-driven Reinforcement Learning"](#an-information-theoretic-approach-to-curiosity-driven-reinforcement-learning-still-precup) by Still and Precup `paper`  
-	["VIME: Variational Information Maximizing Exploration"](#vime-variational-information-maximizing-exploration-houthooft-chen-duan-schulman-turck-abbeel) by Houthooft et al. `paper`  
-	["Automated Curriculum Learning for Neural Networks"](#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper`  
-	["Exploration Potential"](#exploration-potential-leike) by Leike `paper`  
-	["Towards Information-Seeking Agents"](#towards-information-seeking-agents-bachman-sordoni-trischler) by Bachman et al. `paper`  
+	["An Information-theoretic Approach to Curiosity-driven Reinforcement Learning"](#an-information-theoretic-approach-to-curiosity-driven-reinforcement-learning-still-precup) by Still and Precup `paper` `summary`  
+	["VIME: Variational Information Maximizing Exploration"](#vime-variational-information-maximizing-exploration-houthooft-chen-duan-schulman-turck-abbeel) by Houthooft et al. `paper` `summary`  
+	["Automated Curriculum Learning for Neural Networks"](#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper` `summary`  
+	["Exploration Potential"](#exploration-potential-leike) by Leike `paper` `summary`  
+	["Towards Information-Seeking Agents"](#towards-information-seeking-agents-bachman-sordoni-trischler) by Bachman et al. `paper` `summary`  
 
 	[interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---information-gain-motivation)
 
@@ -579,9 +579,9 @@
 	reward for sequences of actions that can transfer maximal amount of information in agent's observations of environment, i.e. agent's ability to influence environment  
 	channel capacity between actions and states - mutual information between actions and future states, i.e. information contained in a about s' or information that can be "injected" into s' by a  
 
-	["Empowerment - An Introduction"](#an-introduction-salge-glackin-polani---empowerment) by Salge et al. `paper`  
-	["Variational Information Maximisation for Intrinsically Motivated Reinforcement Learning"](#variational-information-maximisation-for-intrinsically-motivated-reinforcement-learning-mohamed-rezende) by Mohamed and Rezende `paper`  
-	["Variational Intrinsic Control"](#variational-intrinsic-control-gregor-rezende-wierstra) by Gregor et al. `paper`  *(the primary goal is not to understand or predict the observations but to control the environment - agents can often control an environment perfectly well without much understanding, and focusing on understanding might significantly distract and impair the agent, as such reducing the control it achieves)*  
+	["Empowerment - An Introduction"](#an-introduction-salge-glackin-polani---empowerment) by Salge et al. `paper` `summary`  
+	["Variational Information Maximisation for Intrinsically Motivated Reinforcement Learning"](#variational-information-maximisation-for-intrinsically-motivated-reinforcement-learning-mohamed-rezende) by Mohamed and Rezende `paper` `summary`  
+	["Variational Intrinsic Control"](#variational-intrinsic-control-gregor-rezende-wierstra) by Gregor et al. `paper` `summary`  *(the primary goal is not to understand or predict the observations but to control the environment - agents can often control an environment perfectly well without much understanding, and focusing on understanding might significantly distract and impair the agent, as such reducing the control it achieves)*  
 
 	[interesting-papers](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---empowerment)
 
@@ -592,12 +592,12 @@
   - *predictive novelty motivation*  
 	reward for interesting situations, for which prediction errors are highest  
 
-	["Incentivizing Exploration In Reinforcement Learning With Deep Predictive Models"](#incentivizing-exploration-in-reinforcement-learning-with-deep-predictive-models-stadie-levine-abbeel) by Stadie et al. `paper`  
-	["Curiosity-driven Exploration by Self-supervised Prediction"](#curiosity-driven-exploration-by-self-supervised-prediction-pathak-agrawal-efros-darrell) by Pathak et al. `paper`  
-	["Reinforcement Learning with Unsupervised Auxiliary Tasks"](#reinforcement-learning-with-unsupervised-auxiliary-tasks-jaderberg-mnih-czarnecki-schaul-leibo-silver-kavukcuoglu) by Jaderberg et al. `paper`  *(using auxiliary tasks of pixel control, reward prediction and value function replay the agent is forced to learn about the controllability of its environment and the sorts of sequences which lead to rewards)*  
+	["Incentivizing Exploration In Reinforcement Learning With Deep Predictive Models"](#incentivizing-exploration-in-reinforcement-learning-with-deep-predictive-models-stadie-levine-abbeel) by Stadie et al. `paper` `summary`  
+	["Curiosity-driven Exploration by Self-supervised Prediction"](#curiosity-driven-exploration-by-self-supervised-prediction-pathak-agrawal-efros-darrell) by Pathak et al. `paper` `summary`  
+	["Reinforcement Learning with Unsupervised Auxiliary Tasks"](#reinforcement-learning-with-unsupervised-auxiliary-tasks-jaderberg-mnih-czarnecki-schaul-leibo-silver-kavukcuoglu) by Jaderberg et al. `paper` `summary`  *(using auxiliary tasks of pixel control, reward prediction and value function replay the agent is forced to learn about the controllability of its environment and the sorts of sequences which lead to rewards)*  
 	["Loss is Its Own Reward: Self-Supervision for Reinforcement Learning"](https://arxiv.org/abs/1612.07307) by Shelhamer et al. `paper`  
 	["Feature Control as Intrinsic Motivation for Hierarchical Reinforcement Learning"](https://arxiv.org/abs/1705.06769) by Dilokthanakul et al. `paper`  
-	["Improving Policy Gradient by Exploring Under-appreciated Rewards"](#improving-policy-gradient-by-exploring-under-appreciated-rewards-nachum-norouzi-schuurmans) by Nachum et al. `paper`  
+	["Improving Policy Gradient by Exploring Under-appreciated Rewards"](#improving-policy-gradient-by-exploring-under-appreciated-rewards-nachum-norouzi-schuurmans) by Nachum et al. `paper` `summary`  
 
 	[interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---predictive-novelty-motivation)
 
@@ -606,7 +606,7 @@
 	difference in prediction error of the predictor, about the same sensorimotor context, between first prediction and second prediction made just after predictor has been updated using learning rule  
 
 	[Artificial Curiosity and Creativity](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) by Schmidhuber  
-	["Automated Curriculum Learning for Neural Networks"](#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper`  
+	["Automated Curriculum Learning for Neural Networks"](#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper` `summary`  
 
 	[interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---learning-progress-motivation)
 
@@ -620,8 +620,8 @@
   - *maximizing incompetence motivation*  
 	reward for setting challenges/goals for which agent's performance is lowest  
 
-	["Intrinsic Motivation and Automatic Curricula via Asymmetric Self-Play"](#intrinsic-motivation-and-automatic-curricula-via-asymmetric-self-play-sukhbaatar-lin-kostrikov-synnaeve-szlam) by Sukhbaatar et al. `paper`  
-	["Automatic Goal Generation for Reinforcement Learning Agents"](#automatic-goal-generation-for-reinforcement-learning-agents-held-geng-florensa-abbeel) by Held et al. `paper`  
+	["Intrinsic Motivation and Automatic Curricula via Asymmetric Self-Play"](#intrinsic-motivation-and-automatic-curricula-via-asymmetric-self-play-sukhbaatar-lin-kostrikov-synnaeve-szlam) by Sukhbaatar et al. `paper` `summary`  
+	["Automatic Goal Generation for Reinforcement Learning Agents"](#automatic-goal-generation-for-reinforcement-learning-agents-held-geng-florensa-abbeel) by Held et al. `paper` `summary`  
 
 	[interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---competence-based-models---maximizing-incompetence-motivation)
 
@@ -793,7 +793,7 @@
 
   ["Doubly Robust Policy Evaluation and Learning"](https://arxiv.org/abs/1103.4601) by Dudik, Langford, Li `paper` ([summary](https://medium.com/@sharaf/a-paper-a-day-12-doubly-robust-policy-evaluation-and-learning-7e6a09665d7f))  
   ["Taming the Monster: A Fast and Simple Algorithm for Contextual Bandits"](https://arxiv.org/abs/1402.0555) by Agarwal et al. `paper` ([overview](https://youtube.com/watch?v=mi_G5tw7Etg) by Alekh Agarwal `video`)  
-  ["Making Contextual Decisions with Low Technical Debt"](http://arxiv.org/abs/1606.03966) by Agarwal et al. `paper` ([overviews](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al))  
+  ["Making Contextual Decisions with Low Technical Debt"](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) by Agarwal et al. `paper` `summary`  
 
   ["The Contextual Bandits Problem: A New, Fast, and Simple Algorithm"](https://youtube.com/watch?v=gzxRDw3lXv8) by Robert Schapire `video`
 
@@ -805,7 +805,7 @@
 
 ----
 
-  ["Multi-armed Bandit Experiments in the Online Service Economy"](https://research.google.com/pubs/pub42550.html) by Steven Scott  
+  ["Multi-armed Bandit Experiments in the Online Service Economy"](https://research.google.com/pubs/pub42550.html) by Steven Scott `paper`  
   ["Bayesian Multi-armed Bandits vs A/B Tests"](https://habrahabr.ru/company/ods/blog/325416/) `in russian`  
 
   ["Reinforcement Learning in Industry"](http://videolectures.net/deeplearning2017_le_roux_recommendation_system/) by Nicolas Le Roux `video`
@@ -886,10 +886,10 @@
 
   ["A Survey of Monte Carlo Tree Search Methods"](http://www.cameronius.com/cv/mcts-survey-master.pdf) by Browne et al. `paper`
 
-  ["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper`  
+  ["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper` `summary`  
   ["Combining Online and Offline Knowledge in UCT"](http://machinelearning.org/proceedings/icml2007/papers/387.pdf) by Gelly and Silver `paper` ([talk](https://youtube.com/watch?v=Bm7zah_LrmE) `video`)  
-  ["Deep Learning for Real-Time Atari Game Play Using Offline Monte-Carlo Tree Search Planning"](#deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning-guo-singh-lee-lewis-wang) by Guo et al. `paper`  
-  ["A Monte-Carlo AIXI Approximation"](https://github.com/brylevkirill/notes/blob/Artificial%20Intelligence.md#a-monte-carlo-aixi-approximation-mc-aixi-ctw-agent-veness-ng-hutter-uther-silver) by Veness et al. `paper`  
+  ["Deep Learning for Real-Time Atari Game Play Using Offline Monte-Carlo Tree Search Planning"](#deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning-guo-singh-lee-lewis-wang) by Guo et al. `paper` `summary`  
+  ["A Monte-Carlo AIXI Approximation"](https://github.com/brylevkirill/notes/blob/Artificial%20Intelligence.md#a-monte-carlo-aixi-approximation-mc-aixi-ctw-agent-veness-ng-hutter-uther-silver) by Veness et al. `paper` `summary`  
 
   [interesting papers](#interesting-papers---model-based-methods)  
   [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-based-methods)  
@@ -973,10 +973,10 @@
   ["Planning in Partially Observable Markov Decision Process"](https://yadi.sk/i/lOAUu7o13JBHFz) (55:08) by Pavel Shvechikov `video` `in russian`  
 
   ["Bayesian Reinforcement Learning: A Survey"](https://arxiv.org/abs/1609.04436) by Ghavamzadeh et al. `paper`  
-  ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](#efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search-guez-silver-dayan) by Guez et al. `paper`  
+  ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](#efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search-guez-silver-dayan) by Guez et al. `paper` `summary`  
   ["Monte-Carlo Planning in Large POMDPs"](https://papers.nips.cc/paper/4031-monte-carlo-planning-in-large-pomdps) by Silver et al. `paper`
-	([overview](https://yadi.sk/i/lOAUu7o13JBHFz) (1:39:35) by Pavel Shvechikov `video` `in russian`)  
-  ["Approximate Bayes Optimal Policy Search using Neural Networks"](#approximate-bayes-optimal-policy-search-using-neural-networks-castronovo-francois-lavet-fonteneau-ernst-couetoux) by Castronovo et al. `paper`  
+	([overview](https://yadi.sk/i/lOAUu7o13JBHFz) (1:39:35) by Pavel Shvechikov `video` `in russian`, [demo](https://youtube.com/watch?v=fXuOeNM_yEk) `video`)  
+  ["Approximate Bayes Optimal Policy Search using Neural Networks"](#approximate-bayes-optimal-policy-search-using-neural-networks-castronovo-francois-lavet-fonteneau-ernst-couetoux) by Castronovo et al. `paper` `summary`  
 
 ----
 
@@ -985,7 +985,7 @@
   ["Bayesian Inference for Reinforcement Learning"](https://youtube.com/watch?v=KZd-jkmeIcU) by Sergey Bartunov `video` `in russian`
 	([slides](https://drive.google.com/drive/folders/0B2zoFVYw1rN3N0RUNXE1WnNObTQ) `in english`)  
 
-  ["Reinforced Variational Inference"](#reinforced-variational-inference-weber-heess-eslami-schulman-wingate-silver) by Weber et al. `paper`  
+  ["Reinforced Variational Inference"](#reinforced-variational-inference-weber-heess-eslami-schulman-wingate-silver) by Weber et al. `paper` `summary`  
   ["Reinforcement Learning as Variational Inference: Two Recent Approaches"](http://people.ee.duke.edu/~lcarin/Rohith8.11.2017.pdf) by Rohith Kuditipudi `slides`  
 
   bayesian policy search in variational MDP (variational decision making):  
@@ -995,7 +995,7 @@
 
   ["Modeling Agents with Probabilistic Programs"](http://agentmodels.org) by Evans et al.
 
-  [AIXI](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#solomonoff-induction-and-aixi) - general bayesian reinforcement learning agent  
+  [AIXI](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#aixi)  *(bayesian optimal general reinforcement learning agent)*  
   [General Reinforcement Learning Agent Zoo](http://aslanides.io/aixijs/) by John Aslanides
 	([demo](http://aslanides.io/aixijs/demo.html), [code](https://github.com/aslanides/aixijs), [paper](https://arxiv.org/abs/1705.07615))   
 
@@ -1172,22 +1172,14 @@
   - For each parameter set, compute a noisy score by running your policy on the environment you care about.  
   - Take the top 20% percentile (say) of sampled parameter sets. Fit a Gaussian distribution to this set, then go to (1) and repeat using this as the new prior."  
 
+----
 
   [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement#t=517) by Pieter Abbeel `video`  
   [overview](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Reinforcement-Learning-Through-Policy-Optimization) by Pieter Abbeel (07:07) `video`  
   [overview](https://youtu.be/aUrX-rP_ss4?t=27m20s) by John Schulman `video`  
   [overview](https://yadi.sk/i/5yf_4oGI3EDJhJ) by Fedor Ratnikov `video` `in russian`  
 
-  [overview of implementation](https://yadi.sk/i/dPsWYMK13EDJj7) by Oleg Vasilev `video` `in russian`  
-
-
   ["The Cross Entropy method for Fast Policy Search"](http://aaai.org/Papers/ICML/2003/ICML03-068.pdf) by Mannor, Rubinstein, Gat `paper`
-
-
-  implementations:  
-  - <https://github.com/openai/gym/blob/master/examples/agents/cem.py>  
-  - <https://github.com/openai/rllab/blob/master/rllab/algos/cem.py>  
-  - <https://github.com/matthiasplappert/keras-rl/blob/master/rl/agents/cem.py>  
 
 
 
@@ -1216,7 +1208,7 @@
 
 ----
 
-  ["Evolution Strategies as a Scalable Alternative to Reinforcement Learning"](#evolution-strategies-as-a-scalable-alternative-to-reinforcement-learning-salimans-ho-chen-sutskever) by Salimans, Ho, Chen, Sutskever `paper`
+  ["Evolution Strategies as a Scalable Alternative to Reinforcement Learning"](#evolution-strategies-as-a-scalable-alternative-to-reinforcement-learning-salimans-ho-chen-sutskever) by Salimans, Ho, Chen, Sutskever `paper` `summary`
 
   <https://blog.openai.com/evolution-strategies/> :  
 >	"Our work demonstrates that ES achieves strong performance, dispelling the common belief that ES methods are impossible to apply to high dimensional problems."  
@@ -1272,7 +1264,7 @@
 ----
 #### Trust Region Policy Optimization (TRPO)
 
-  ["Trust Region Policy Optimization"](#trust-region-policy-optimization-schulman-levine-moritz-jordan-abbeel) by Schulman et al. `paper`
+  ["Trust Region Policy Optimization"](#trust-region-policy-optimization-schulman-levine-moritz-jordan-abbeel) by Schulman et al. `paper` `summary`
 
 ----
 
@@ -1327,7 +1319,7 @@
 ----
 #### Advantage Actor-Critic (A2C)
 
-  ["Asynchronous Methods for Deep Reinforcement Learning"](#asynchronous-methods-for-deep-reinforcement-learning-mnih-badia-mirza-graves-lillicrap-harley-silver-kavukcuoglu) by Mnih et al. `paper`
+  ["Asynchronous Methods for Deep Reinforcement Learning"](#asynchronous-methods-for-deep-reinforcement-learning-mnih-badia-mirza-graves-lillicrap-harley-silver-kavukcuoglu) by Mnih et al. `paper` `summary`
 
 
   - critic learns only state value function V(s) rather than action value function Q(s,a) and thus cannot pass back to actor gradients of value function with respect to action  
@@ -1343,7 +1335,7 @@
 ----
 #### Generalized Advantage Estimation (GAE)
 
-  ["High-Dimensional Continuous Control Using Generalized Advantage Estimation"](#high-dimensional-continuous-control-using-generalized-advantage-estimation-schulman-moritz-levine-jordan-abbeel) by Schulman et al. `paper`
+  ["High-Dimensional Continuous Control Using Generalized Advantage Estimation"](#high-dimensional-continuous-control-using-generalized-advantage-estimation-schulman-moritz-levine-jordan-abbeel) by Schulman et al. `paper` `summary`
 
 
   [overview](https://youtu.be/xe-z4i3l-iQ?t=30m35s) by Pieter Abbeel `video`  
@@ -1367,8 +1359,8 @@
 ----
 #### Deep Deterministic Policy Gradient (DDPG)
 
-  ["Deterministic Policy Gradient Algorithms"](#deterministic-policy-gradient-algorithms-silver-lever-heess-degris-wierstra-riedmiller) by Silver et al. `paper`  
-  ["Continuous Control with Deep Reinforcement Learning"](#continuous-control-with-deep-reinforcement-learning-lillicrap-hunt-pritzel-heess-erez-tassa-silver-wierstra) by Lillicrap et al. `paper`  
+  ["Deterministic Policy Gradient Algorithms"](#deterministic-policy-gradient-algorithms-silver-lever-heess-degris-wierstra-riedmiller) by Silver et al. `paper` `summary`  
+  ["Continuous Control with Deep Reinforcement Learning"](#continuous-control-with-deep-reinforcement-learning-lillicrap-hunt-pritzel-heess-erez-tassa-silver-wierstra) by Lillicrap et al. `paper` `summary`  
 
 
   - continuous analogue to DQN which exploits differentiability of Q-network  
@@ -1394,7 +1386,7 @@
 ----
 #### Stochastic Value Gradient (SVG)
 
-  ["Learning Continuous Control Policies by Stochastic Value Gradients"](#learning-continuous-control-policies-by-stochastic-value-gradients-heess-wayne-silver-lillicrap-tassa-erez) by Heess et al. `paper`
+  ["Learning Continuous Control Policies by Stochastic Value Gradients"](#learning-continuous-control-policies-by-stochastic-value-gradients-heess-wayne-silver-lillicrap-tassa-erez) by Heess et al. `paper` `summary`
 
 
   - generalizes DPG to stochastic policies in a number of ways, giving spectrum from model-based to model-free algorithms  
@@ -1453,7 +1445,7 @@ interesting recent papers:
 #### ["Human-Level Control Through Deep Reinforcement Learning"](https://goo.gl/jHRkZr) Mnih et al.
 >	"The theory of reinforcement learning provides a normative account, deeply rooted in psychological and neuroscientific perspectives on animal behaviour, of how agents may optimize their control of an environment. To use reinforcement learning successfully in situations approaching real-world complexity, however, agents are confronted with a difficult task: they must derive efficient representations of the environment from high-dimensional sensory inputs, and use these to generalize past experience to new situations. Remarkably, humans and other animals seem to solve this problem through a harmonious combination of reinforcement learning and hierarchical sensory processing systems, the former evidenced by a wealth of neural data revealing notable parallels between the phasic signals emitted by dopaminergic neurons and temporal difference reinforcement learning algorithms. While reinforcement learning agents have achieved some successes in a variety of domains, their applicability has previously been limited to domains in which useful features can be handcrafted, or to domains with fully observed, low-dimensional state spaces. Here we use recent advances in training deep neural networks to develop a novel artificial agent, termed a deep Q-network, that can learn successful policies directly from high-dimensional sensory inputs using end-to-end reinforcement learning. We tested this agent on the challenging domain of classic Atari 2600 games. We demonstrate that the deep Q-network agent, receiving only the pixels and the game score as inputs, was able to surpass the performance of all previous algorithms and achieve a level comparable to that of a professional human games tester across a set of 49 games, using the same algorithm, network architecture and hyperparameters. This work bridges the divide between high-dimensional sensory inputs and actions, resulting in the first artificial agent that is capable of learning to excel at a diverse array of challenging tasks."
 
-  - `paper` <http://nature.com/nature/journal/v518/n7540/full/nature14236.html>
+  - `paper` <http://nature.com/nature/journal/v518/n7540/full/nature14236.html> ("Nature")
   - `video` <http://youtube.com/watch?v=re6hkcTWVUY> (ViZDoom demo)
   - `video` <http://youtube.com/watch?v=iqXKQf2BOSE> (demo)
   - `video` <http://youtube.com/watch?v=EfGD2qveGdQ> (demo)
@@ -1498,7 +1490,7 @@ interesting recent papers:
   - `notes` <https://blog.acolyer.org/2017/11/17/mastering-the-game-of-go-without-human-knowledge/>
   - `notes` <https://dropbox.com/s/fuwhivftv998f6q/AlphaGoZeroPseudoCode.pdf>
   - `code` <https://github.com/gcp/leela-zero/>
-  - `paper` ["Bootstrapping from Game Tree Search"](https://papers.nips.cc/paper/3722-bootstrapping-from-game-tree-search.pdf) by Veness, Silver, Uther, Blair
+  - `paper` ["Bootstrapping from Game Tree Search"](#bootstrapping-from-game-tree-search-veness-silver-uther-blair) by Veness, Silver, Uther, Blair `summary`
 
 
 #### ["Mastering the Game of Go with Deep Neural Networks and Tree Search"](https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf) Silver et al.
@@ -1536,7 +1528,7 @@ interesting recent papers:
 
 >	"Part of DeepStack's development is also a technique designed to find flaws in poker strategies. Local Best Response (LBR) is one of the cool new algorithms in Science paper. LBR looks directly at the strategy, like what a human could get from playing millions of hands to know its range. Older programs get beat by LBR for 4x more than folding every hand! DeepStack has no holes exposed by the LBR algorithm."
 
-  - `paper` <http://science.sciencemag.org/content/early/2017/03/01/science.aam6960>
+  - `paper` <http://science.sciencemag.org/content/early/2017/03/01/science.aam6960> ("Science")
   - `video` <https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ> (demo matches)
   - <http://deepstack.ai>
   - <http://twitter.com/DeepStackAI>
@@ -2546,10 +2538,10 @@ interesting recent papers:
   - `post` <http://davidbarber.github.io/blog/2017/04/03/variational-optimisation/> (Barber)
   - `post` <http://argmin.net/2017/04/03/evolution/> (Recht)
   - `post` <http://blog.otoro.net/2017/10/29/visual-evolution-strategies/>
-  - `paper` ["Stochastic Gradient Estimation with Finite Differences"](http://approximateinference.org/accepted/BuesingEtAl2016.pdf) by Buesing et al.
-  - `paper` ["Random Gradient-Free Minimization of Convex Functions"](https://mipt.ru/dcam/students/elective/a_5gc1te/RandomGradFree.PDF) by Nesterov
   - `code` <https://github.com/openai/evolution-strategies-starter>
   - `code` <https://github.com/atgambardella/pytorch-es>
+  - `paper` ["Stochastic Gradient Estimation with Finite Differences"](http://approximateinference.org/accepted/BuesingEtAl2016.pdf) by Buesing et al.
+  - `paper` ["Random Gradient-Free Minimization of Convex Functions"](https://mipt.ru/dcam/students/elective/a_5gc1te/RandomGradFree.PDF) by Nesterov
 
 
 #### ["Asynchronous Methods for Deep Reinforcement Learning"](https://arxiv.org/abs/1602.01783) Mnih, Badia, Mirza, Graves, Lillicrap, Harley, Silver, Kavukcuoglu
@@ -2649,7 +2641,7 @@ interesting recent papers:
   - `code` <https://github.com/matthiasplappert/keras-rl/blob/master/rl/agents/ddpg.py>
   - `code` <https://github.com/yandexdataschool/AgentNet/blob/master/agentnet/learning/dpg_n_step.py>
   - `code` <https://github.com/Scitator/Run-Skeleton-Run> (demo)
-  - `paper` ["Deterministic Policy Gradient Algorithms"](#deterministic-policy-gradient-algorithms-silver-lever-heess-degris-wierstra-riedmiller) by Silver et al.
+  - `paper` ["Deterministic Policy Gradient Algorithms"](#deterministic-policy-gradient-algorithms-silver-lever-heess-degris-wierstra-riedmiller) by Silver et al. `summary`
 
 
 #### ["Learning Continuous Control Policies by Stochastic Value Gradients"](http://arxiv.org/abs/1510.09142) Heess, Wayne, Silver, Lillicrap, Tassa, Erez

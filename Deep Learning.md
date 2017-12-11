@@ -730,6 +730,26 @@
   - masked autoencoder distribution estimator (MADE), pixelCNN  
   - neural autoregressive distribution estimator (NADE), spatial LSTM, pixelRNN  
 
+----
+
+  RNNs:
+  - unbounded receptive field
+  - serial training compute: O(N) matrix-vector ops
+  - O(N) dependency steps
+  - size of state does not depend on captured context length: O(1)
+
+  Masked CNNs:
+  - finite (exponential) receptive field O(L) or O(2^L)
+  - parallel training compute: O(1) matrix-vector ops
+  - O(N) dependency steps or O(log N) for dilated conv
+  - size of state depends on captured context length: O(N) or O(log N)
+
+  Masked Self-Attention Nets:
+  - unbounded receptive field
+  - parallel compute: O(1) matrix-vector ops, but O(N^2) factor
+  - O(1) dependency steps
+  - the state is the captured context: O(N)
+
 
 
 ---
@@ -1116,6 +1136,7 @@
   - `notes` <https://theneuralperspective.com/2017/01/24/understanding-deep-learning-requires-rethinking-generalization/>
   - `notes` <https://blog.acolyer.org/2017/05/11/understanding-deep-learning-requires-re-thinking-generalization/>
   - `notes` <https://reddit.com/r/MachineLearning/comments/6ailoh/r_understanding_deep_learning_requires_rethinking/dhis1hz/>
+  - `post` <http://www.offconvex.org/2017/12/08/generalization1/> (Arora)
 
 
 #### ["Opening the Black Box of Deep Neural Networks via Information"](http://arxiv.org/abs/1703.00810) Shwartz-Ziv, Tishby
@@ -1167,7 +1188,7 @@
   - `notes` <https://theneuralperspective.com/2017/03/24/opening-the-black-box-of-deep-neural-networks-via-information/>
   - `notes` <https://reddit.com/r/MachineLearning/comments/60fhyb/r_opening_the_black_box_of_deep_neural_networks/df8jsbm/>
   - `press` <https://quantamagazine.org/new-theory-cracks-open-the-black-box-of-deep-learning-20170921>
-  - `paper` ["Deep Learning and the Information Bottleneck Principle"](#tishby-zaslavsky---deep-learning-and-the-information-bottleneck-principle) by Tishby and Zaslavsky
+  - `paper` ["Deep Learning and the Information Bottleneck Principle"](#tishby-zaslavsky---deep-learning-and-the-information-bottleneck-principle) by Tishby and Zaslavsky `summary`
 
 
 #### ["Deep Learning and the Information Bottleneck Principle"](https://arxiv.org/abs/1503.02406) Tishby, Zaslavsky
@@ -2575,7 +2596,7 @@ x."
 #### ["Random Feedback Weights Support Learning in Deep Neural Networks"](https://arxiv.org/abs/1411.0247) Lillicrap, Cownden, Tweed, Akerman
 >	"The brain processes information through many layers of neurons. This deep architecture is representationally powerful, but it complicates learning by making it hard to identify the responsible neurons when a mistake is made. In machine learning, the backpropagation algorithm assigns blame to a neuron by computing exactly how it contributed to an error. To do this, it multiplies error signals by matrices consisting of all the synaptic weights on the neuron’s axon and farther downstream. This operation requires a precisely choreographed transport of synaptic weight information, which is thought to be impossible in the brain. Here we present a surprisingly simple algorithm for deep learning, which assigns blame by multiplying error signals by random synaptic weights. We show that a network can learn to extract useful information from signals sent through these random feedback connections. In essence, the network learns to learn. We demonstrate that this new mechanism performs as quickly and accurately as backpropagation on a variety of problems and describe the principles which underlie its function. Our demonstration provides a plausible basis for how a neuron can be adapted using error signals generated at distal locations in the brain, and thus dispels long-held assumptions about the algorithmic constraints on learning in neural circuits."
 
-  - `paper` <http://www.nature.com/articles/ncomms13276.epdf>
+  - `paper` <http://www.nature.com/articles/ncomms13276.epdf> ("Nature")
 
 
 #### ["Direct Feedback Alignment Provides Learning in Deep Neural Networks"](https://arxiv.org/abs/1609.01596) Nøkland

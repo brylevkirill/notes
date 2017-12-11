@@ -52,7 +52,7 @@
 
 ----
 
-  ["A Paradigm for Situated and Goal-Driven Language Learning"](#a-paradigm-for-situated-and-goal-driven-language-learning-gauthier-mordatch) by Jon Gauthier and Igor Mordatch `paper`  
+  ["A Paradigm for Situated and Goal-Driven Language Learning"](#a-paradigm-for-situated-and-goal-driven-language-learning-gauthier-mordatch) by Jon Gauthier and Igor Mordatch `paper` `summary`  
 >	"We outlined a paradigm for grounded and goal-driven language learning in artificial agents. The paradigm is centered around a utilitarian definition of language understanding, which equates language understanding with the ability to cooperate with other language users in real-world environments. This position demotes language from its position as a separate task to be solved to one of several communicative tools agents might use to accomplish their real-world goals."
 
   ["On 'Solving Language'"](http://foldl.me/2016/solving-language/) by Jon Gauthier  
@@ -268,7 +268,7 @@
   "Word Embeddings: Explaining their properties" by Sanjeev Arora
 	([part 1](http://www.offconvex.org/2015/12/12/word-embeddings-1/), [part 2](http://www.offconvex.org/2016/02/14/word-embeddings-2/))  
 
-  ["Are Distributional Representations Ready for the Real World? Evaluating Word Vectors for Grounded Perceptual Meaning"](https://arxiv.org/abs/1705.11168) by Lucy and Gauthier `paper`
+  ["Are Distributional Representations Ready for the Real World? Evaluating Word Vectors for Grounded Perceptual Meaning"](#are-distributional-representations-ready-for-the-real-world-evaluating-word-vectors-for-grounded-perceptual-meaning-lucy-gauthier) by Lucy and Gauthier `paper` `summary`
 
 
 
@@ -319,7 +319,7 @@
   - `post` <https://blog.openai.com/learning-to-communicate/>
   - `video` <https://youtube.com/watch?v=liVFy7ZO4OA> (demo)
   - `video` <https://youtube.com/watch?v=f4gKhK8Q6mY&t=22m20s> (Abbeel)
-  - `paper` ["A Paradigm for Situated and Goal-Driven Language Learning"](#a-paradigm-for-situated-and-goal-driven-language-learning-gauthier-mordatch) by Gauthier and Mordatch
+  - `paper` ["A Paradigm for Situated and Goal-Driven Language Learning"](#a-paradigm-for-situated-and-goal-driven-language-learning-gauthier-mordatch) by Gauthier and Mordatch `summary`
 
 
 #### ["Learning Language Games through Interaction"](https://arxiv.org/abs/1606.02447) Wang, Liang, Manning

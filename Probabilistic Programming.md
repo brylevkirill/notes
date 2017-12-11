@@ -115,7 +115,7 @@
 
 	["Edward, and some motivations"](http://dustintran.com/blog/a-quick-update-edward-and-some-motivations/) by Dustin Tran
 
-	["Deep Probabilistic Programming"](https://arxiv.org/abs/1701.03757) by Tran et al. `paper`  
+	["Deep Probabilistic Programming"](#deep-probabilistic-programming-tran-hoffman-saurous-brevdo-murphy-blei) by Tran et al. `paper` `summary`  
 	["Edward: Library for probabilistic modeling, inference, and criticism"](https://youtube.com/watch?v=PvyVahNl8H8) by Dustin Tran `video` ([slides](http://dustintran.com/talks/Tran_Edward.pdf))  
 
 	[sample models](http://edwardlib.org/iclr2017)

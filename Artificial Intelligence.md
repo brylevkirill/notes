@@ -10,25 +10,11 @@
     - [reinforcement learning](#reinforcement-learning)
     - [meta-learning](#meta-learning)
     - [artificial curiosity and creativity](#artificial-curiosity-and-creativity)
-    - [Solomonoff induction and AIXI](#solomonoff-induction-and-aixi)
+    - [AIXI](#aixi)
   * [interesting papers](#interesting-papers)
     - [definitions and measures of intelligence](#interesting-papers---definitions-and-measures-of-intelligence)
     - [Solomonoff induction and AIXI](#interesting-papers---solomonoff-induction-and-aixi)
     - [artificial curiosity and creativity](#interesting-papers---artificial-curiosity-and-creativity)
-
-----
-
-  [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
-  [machine learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md)  
-  [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
-  [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)  
-  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)  
-  [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
-
-  [natural language processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md)  
-  [information retrieval](https://github.com/brylevkirill/notes/blob/master/Information%20Retrieval.md)  
-  [semantic web](https://github.com/brylevkirill/tech/blob/master/RDF/RDF.txt)  
-
 
 
 ---
@@ -106,7 +92,7 @@
   ["A 'Brief' History of Game AI Up To AlphaGo"](http://andreykurenkov.com/writing/a-brief-history-of-game-ai/) by Andrey Kurenkov  
   ["AI for classic games"](http://youtube.com/watch?v=kZ_AUmFcZtk) by David Silver `video`  
 
-  ["Measuring Intelligence through Games"](#measuring-intelligence-through-games-schaul-togelius-schmidhuber) by Schaul, Togelius, Schmidhuber `paper`  
+  ["Measuring Intelligence through Games"](#measuring-intelligence-through-games-schaul-togelius-schmidhuber) by Schaul, Togelius, Schmidhuber `paper` `summary`  
   ["Why video games are essential for inventing artificial intelligence"](http://togelius.blogspot.ru/2016/01/why-video-games-are-essential-for.html) by Julian Togelius  
 
   [overview](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games) of latest advances
@@ -196,7 +182,7 @@
   - [machine learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md)
   - [causal inference](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#causal-inference)
   - [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
-  - [Solomonoff induction](#solomonoff-induction-and-aixi)
+  - [Solomonoff induction](#solomonoff-induction)
 
 ----
 
@@ -350,7 +336,7 @@ following up conjectures suggested by analogies). Good mathematicians see analog
   - [reinforcement learning](#reinforcement-learning)
   - [meta-learning](#meta-learning)
   - [artificial curiosity and creativity](#artificial-curiosity-and-creativity)
-  - [Solomonoff induction and AIXI](#solomonoff-induction-and-aixi)
+  - [AIXI](#aixi)
 
 
 
@@ -457,13 +443,13 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
 ----
 
-  ["Driven by compression progress: A simple principle explains essential aspects of subjective beauty, novelty, surprise, interestingness, attention, curiosity, creativity, art, science, music, jokes"](http://arxiv.org/abs/0812.4360) by Juergen Schmidhuber `paper`
+  ["Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes"](#driven-by-compression-progress-a-simple-principle-explains-essential-aspects-of-subjective-beauty-novelty-surprise-interestingness-attention-curiosity-creativity-art-science-music-jokes-schmidhuber) by Juergen Schmidhuber `paper` `summary`
 >	"I argue that data becomes temporarily interesting by itself to some self-improving, but computationally limited, subjective observer once he learns to predict or compress the data in a better way, thus making it subjectively simpler and more beautiful. Curiosity is the desire to create or discover more non-random, non-arbitrary, regular data that is novel and surprising not in the traditional sense of Boltzmann and Shannon but in the sense that it allows for compression progress because its regularity was not yet known. This drive maximizes interestingness, the first derivative of subjective beauty or compressibility, that is, the steepness of the learning curve. It motivates exploring infants, pure mathematicians, composers, artists, dancers, comedians, yourself, and artificial systems."
 
-  ["Formal Theory of Creativity, Fun, and Intrinsic Motivation"](http://people.idsia.ch/~juergen/ieeecreative.pdf) by Juergen Schmidhuber `paper`
+  ["Formal Theory of Creativity, Fun, and Intrinsic Motivation"](#formal-theory-of-creativity-fun-and-intrinsic-motivation-schmidhuber) by Juergen Schmidhuber `paper` `summary`
 >	"The simple but general formal theory of fun & intrinsic motivation & creativity is based on the concept of maximizing intrinsic reward for the active creation or discovery of novel, surprising patterns allowing for improved prediction or data compression. It generalizes the traditional field of active learning, and is related to old but less formal ideas in aesthetics theory and developmental psychology. It has been argued that the theory explains many essential aspects of intelligence including autonomous development, science, art, music, humor. This overview first describes theoretically optimal (but not necessarily practical) ways of implementing the basic computational principles on exploratory, intrinsically motivated agents or robots, encouraging them to provoke event sequences exhibiting previously unknown but learnable algorithmic regularities."
 
-  ["On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models"](#on-learning-to-think-algorithmic-information-theory-for-novel-combinations-of-reinforcement-learning-controllers-and-recurrent-neural-world-models-schmidhuber) by Juergen Schmidhuber `paper`
+  ["On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models"](#on-learning-to-think-algorithmic-information-theory-for-novel-combinations-of-reinforcement-learning-controllers-and-recurrent-neural-world-models-schmidhuber) by Juergen Schmidhuber `paper` `summary`
 >	"Humans, even as infants, invent their own tasks in a curious and creative fashion, continually increasing their problem solving repertoire even without an external reward or teacher. They seem to get intrinsic reward for creating experiments leading to observations that obey a previously unknown law that allows for better compression of the observations - corresponding to the discovery of a temporarily interesting, subjectively novel regularity. For example, a video of 100 falling apples can be greatly compressed via predictive coding once the law of gravity is discovered. Likewise, the video-like image sequence perceived while moving through an office can be greatly compressed by constructing an internal 3D model of the office space. The 3D model allows for re-computing the entire high-resolution video from a compact sequence of very low-dimensional eye coordinates and eye directions. The model itself can be specified by far fewer bits of information than needed to store the raw pixel data of a long video. Even if the 3D model is not precise, only relatively few extra bits will be required to encode the observed deviations from the predictions of the model."
 
 >	"Even mirror neurons are easily explained as by-products of history compression. They fire both when an animal acts and when the animal observes the same action performed by another. Due to mutual algorithmic information shared by perceptions of similar actions performed by various animals, efficient RNN-based predictive coding profits from using the same feature detectors (neurons) to encode the shared information, thus saving storage space."
@@ -478,22 +464,22 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
   ["Toward Intelligent Humanoids"](https://vimeo.com/51011081) demo by Schmidhuber's group `video`
 
-  ["Curiosity Driven Reinforcement Learning Motion Planning on Humanoids"](http://goo.gl/FKNPth) by Frank, Schmidhuber et al. `paper`  
-  ["PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem"](https://arxiv.org/abs/1112.5309) by Schmidhuber `paper`  
-  ["Continually Adding Self-Invented Problems to the Repertoire: First Experiments with PowerPlay"](http://goo.gl/lTYm6o) by Srivastava, Schmidhuber et al. `paper`  
+  ["Curiosity Driven Reinforcement Learning Motion Planning on Humanoids"](#curiosity-driven-reinforcement-learning-for-motion-planning-on-humanoids-frank-leitner-stollenga-forster-schmidhuber) by Frank, Schmidhuber et al. `paper` `summary`  
+  ["PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem"](#powerplay-training-an-increasingly-general-problem-solver-by-continually-searching-for-the-simplest-still-unsolvable-problem-schmidhuber) by Schmidhuber `paper` `summary`  
+  ["Continually Adding Self-Invented Problems to the Repertoire: First Experiments with PowerPlay"](#continually-adding-self-invented-problems-to-the-repertoire-first-experiments-with-powerplay-srivastava-steunebrink-stollenga-schmidhuber) by Srivastava, Schmidhuber et al. `paper` `summary`  
 
 ----
 
   **approximations**
 
-  ["VIME: Variational Information Maximizing Exploration"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#vime-variational-information-maximizing-exploration-houthooft-chen-duan-schulman-turck-abbeel) by Houthooft et al. `paper`
+  ["VIME: Variational Information Maximizing Exploration"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#vime-variational-information-maximizing-exploration-houthooft-chen-duan-schulman-turck-abbeel) by Houthooft et al. `paper` `summary`
 >	"Variational inference is used to approximate the posterior distribution of a Bayesian neural network that represents the environment dynamics. Using information gain in this learned dynamics model as intrinsic rewards allows the agent to optimize for both external reward and intrinsic surprise simultaneously."  
 >
 >	"r'(st,at,st+1) = r(st,at) + μ * DKL[p(θ|ξt,at,st+1)||p(θ|ξt)]"  
 >
 >	"It is possible to derive an interesting relationship between compression improvement - an intrinsic reward objective defined in Schmidhuber's Artificial Curiosity and Creativity theory, and the information gain. The agent’s curiosity is equated with compression improvement, measured through C(ξt; φt-1) - C(ξt; φt), where C(ξ; φ) is the description length of ξ using φ as a model. Furthermore, it is known that the negative variational lower bound can be viewed as the description length. Hence, we can write compression improvement as L[q(θ; φt), ξt] - L[q(θ; φt-1), ξt]. In addition, due to alternative formulation of the variational lower bound, compression improvement can be written as (log p(ξt) - DKL[q(θ; φt)||p(θ|ξt)]) - (log p(ξt) - DKL[q(θ; φt-1)||p(θ|ξt)]). If we assume that φt perfectly optimizes the variational lower bound for the history ξt, then DKL[q(θ; φt)||p(θ|ξt)] = 0, which occurs when the approximation equals the true posterior, i.e., q(θ; φt) = p(θ|ξt). Hence, compression improvement becomes DKL[p(θ|ξt-1) || p(θ|ξt)]. Therefore, optimizing for compression improvement comes down to optimizing the KL divergence from the posterior given the past history ξt-1 to the posterior given the total history ξt. As such, we arrive at an alternative way to encode curiosity than information gain, namely DKL[p(θ|ξt)||p(θ|ξt,at,st+1)], its reversed KL divergence. In experiments, we noticed no significant difference between the two KL divergence variants. This can be explained as both variants are locally equal when introducing small changes to the parameter distributions."  
 
-  ["Automated Curriculum Learning for Neural Networks"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#automated-curriculum-learning-for-neural-networks-#graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper`
+  ["Automated Curriculum Learning for Neural Networks"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#automated-curriculum-learning-for-neural-networks-#graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper` `summary`
 >	"We focus on variants of prediction gain, and also introduce a novel class of progress signals which we refer to as complexity gain. Derived from minimum description length principles, complexity gain equates acquisition of knowledge with an increase in effective information encoded in the network weights."  
 >	"VIME uses a reward signal that is closely related to variational complexity gain. The difference is that while VIME measures the KL between the posterior before and after a step in parameter space, we consider the change in KL between the posterior and prior induced by the step. Therefore, while VIME looks for any change to the posterior, we focus only on changes that alter the divergence from the prior. Further research will be needed to assess the relative merits of the two signals."  
 
@@ -503,21 +489,51 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
 
 
----
-### Solomonoff induction and AIXI
+----
+#### Solomonoff induction
 
-  [Algorithmic Probability](http://scholarpedia.org/article/Algorithmic_probability)  
+  [Algorithmic Probability](http://scholarpedia.org/article/Algorithmic_probability)
 
-  [introduction](https://wiki.lesswrong.com/wiki/Solomonoff_induction) to Solomonoff induction  
-  [intuitive explanation](http://lesswrong.com/lw/dhg/an_intuitive_explanation_of_solomonoff_induction/) of Solomonoff induction  
+  [introduction](https://wiki.lesswrong.com/wiki/Solomonoff_induction)  
+  [intuitive explanation](http://lesswrong.com/lw/dhg/an_intuitive_explanation_of_solomonoff_induction/)  
   ["How Bayes theorem is consistent with Solomonoff induction"](http://lesswrong.com/r/discussion/lw/di3/how_bayes_theorem_is_consistent_with_solomonoff/)  
 
-  [introduction](http://youtube.com/watch?v=F2bQ5TSB-cE) to AIXI by Marcus Hutter `video`  
-  [introduction](http://jan.leike.name/AIXI.html) to AIXI by Jan Leike  
+  [interesting papers](#interesting-papers---solomonoff-induction-and-aixi)
+
+
+
+----
+#### AIXI
+
+  [introduction](http://youtube.com/watch?v=F2bQ5TSB-cE) by Marcus Hutter `video`
+
+  [overview](http://youtube.com/watch?v=vUUeHZJFN2Q) by Marcus Hutter `video`  
+  [overview](http://vimeo.com/14888930) by Marcus Hutter `video`  
+  [overview](http://youtube.com/watch?v=gb4oXRsw3yA) by Marcus Hutter `video`  
+
+  [tutorial](http://videolectures.net/ssll09_hutter_uai/) by Marcus Hutter `video`  
+  [tutorial](http://videolectures.net/mlss08au_hutter_fund/) by Marcus Hutter `video`  
+  [tutorial](http://youtube.com/watch?v=BP7vhBaBDyk) by Tom Everitt `video`  
+
+----
+
+  [introduction](http://jan.leike.name/AIXI.html) by Jan Leike
+
+  [overview](http://geektimes.ru/post/148002/) by Alexey Potapov `in russian`  
+  [overview](http://geektimes.ru/post/150056/) by Alexey Potapov `in russian`  
+  [overview](http://geektimes.ru/post/150902/) by Alexey Potapov `in russian`  
+  [overview](http://geektimes.ru/post/151838/) by Alexey Potapov `in russian`  
+
+  [book](http://hutter1.net/ai/uaibook.htm) by Marcus Hutter
+
+----
+
   [General Reinforcement Learning Agent Zoo](http://aslanides.io/aixijs/) by John Aslanides
 	([demo](http://aslanides.io/aixijs/demo.html), [code](https://github.com/aslanides/aixijs), [paper](https://arxiv.org/abs/1705.07615))
 
-  [interesting papers](#solomonoff-induction-and-aixi)
+----
+
+  [interesting papers](#interesting-papers---solomonoff-induction-and-aixi)
 
 ----
 
@@ -559,26 +575,9 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
   "AIXI is an agent that interacts with an environment in cycles k=1,2,...,m. In cycle k, AIXI takes action ak (e.g. a limb movement) based on past perceptions o1 r1...ok-1 rk-1. Thereafter, the environment provides a (regular) observation ok (e.g. a camera image) to AIXI and a real-valued reward rk. The reward can be very scarce, e.g. just +1 (-1) for winning (losing) a chess game, and 0 at all other times. Then the next cycle k+1 starts. The expression shows that AIXI tries to maximize its total future reward rk+...+rm. If the environment is modeled by a deterministic program q, then the future perceptions ...okrk...omrm = U(q,a1..am) can be computed, where U is a universal (monotone Turing) machine executing q given a1..am. Since q is unknown, AIXI has to maximize its expected reward, i.e. average rk+...+rm over all possible future perceptions created by all possible environments q that are consistent with past perceptions. The simpler an environment, the higher is its a-priori contribution 2^-l(q), where simplicity is measured by the length l of program q. AIXI effectively learns by eliminating Turing machines q once they become inconsistent with the progressing history. Since noisy environments are just mixtures of deterministic environments, they are automatically included. The sums in the formula constitute the averaging process. Averaging and maximization have to be performed in chronological order, hence the interleaving of max and Σ (similarly to minimax for games). One can fix any finite action and perception space, any reasonable U, and any large finite lifetime m. This completely and uniquely defines AIXI's actions ak, which are limit-computable via the expression above (all quantities are known)."
 
-----
-
-  [overview](http://youtube.com/watch?v=vUUeHZJFN2Q) by Marcus Hutter `video`  
-  [overview](http://vimeo.com/14888930) by Marcus Hutter `video`  
-  [overview](http://youtube.com/watch?v=gb4oXRsw3yA) by Marcus Hutter `video`  
-
-  [tutorial](http://videolectures.net/ssll09_hutter_uai/) by Marcus Hutter `video`  
-  [tutorial](http://videolectures.net/mlss08au_hutter_fund/) by Marcus Hutter `video`  
-  [tutorial](http://youtube.com/watch?v=BP7vhBaBDyk) by Tom Everitt `video`  
-
-  [overview](http://geektimes.ru/post/148002/) by Alexey Potapov `in russian`  
-  [overview](http://geektimes.ru/post/150056/) by Alexey Potapov `in russian`  
-  [overview](http://geektimes.ru/post/150902/) by Alexey Potapov `in russian`  
-  [overview](http://geektimes.ru/post/151838/) by Alexey Potapov `in russian`  
-
-  [book](http://hutter1.net/ai/uaibook.htm) by Marcus Hutter  
 
 ----
-
-  **limitations**
+#### AIXI limitations
   
   "AIXI it is not a feasible AI, because Solomonoff induction is not computable."
 
@@ -588,22 +587,24 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
   "Solomonoff induction treats the world as a sort of qualia factory, a complicated mechanism that outputs experiences for the inductor. Its hypothesis space tacitly assumes a Cartesian barrier separating the inductor's cognition from the hypothesized programs generating the perceptions. Through that barrier, only sensory bits and action bits can pass. Real agents, on the other hand, will be in the world they're trying to learn about. A computable approximation of AIXI, like AIXI-tl, would be a physical object. Its environment would affect it in unseen and sometimes drastic ways; and it would have involuntary effects on its environment, and on itself. Solomonoff induction doesn't appear to be a viable conceptual foundation for artificial intelligence - not because it's an uncomputable idealization, but because it's Cartesian."
 
-----
 
-  **approximations**
+----
+#### AIXI approximations
 
   "Even without considering AIXI approximations, AIXI still is very important for AGI research because it unifies all important properties of cognition, like agency (interaction with an environment), knowledge representation and memory, understanding, reasoning, goals, problem solving, planning and action selection, abstraction, generalization without overfitting, multiple hypotheses, creativity, exploration and curiosity, optimization and utility maximization, prediction, uncertainty, with incremental, on-line, lifelong, continual learning in arbitrarily complex environments, without a restart state, no i.i.d. or stationarity assumption, etc. and does all this in a very simple, elegant and precise manner."
 
   *(Laurent Orseau)*
 
 
-#### A Monte-Carlo AIXI Approximation
+----
+#### AIXI approximations - Monte-Carlo approximation
 
-  ["A Monte Carlo AIXI Approximation"](#a-monte-carlo-aixi-approximation-veness-ng-hutter-uther-silver) by Veness, Ng, Hutter, Uther, Silver `paper`  
+  ["A Monte Carlo AIXI Approximation"](#a-monte-carlo-aixi-approximation-veness-ng-hutter-uther-silver) by Veness, Ng, Hutter, Uther, Silver `paper` `summary`  
   ["Approximate Universal Artificial Intelligence and Self-Play Learning for Games"](http://jveness.info/publications/veness_phd_thesis_final.pdf) by Joel Veness `paper`  
 
 
-#### Formal Theory of Fun and Creativity and Intrinsic Motivation
+----
+#### AIXI approximations - Artificial Curiosity and Creativity
 
   [Artificial Curiosity and Creativity](#artificial-curiosity-and-creativity) by Juergen Schmidhuber
 
@@ -613,7 +614,7 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
   *(Juergen Schmidhuber)*
 
-  ["On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models"](#on-learning-to-think-algorithmic-information-theory-for-novel-combinations-of-reinforcement-learning-controllers-and-recurrent-neural-world-models-schmidhuber) by Juergen Schmidhuber `paper`
+  ["On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models"](#on-learning-to-think-algorithmic-information-theory-for-novel-combinations-of-reinforcement-learning-controllers-and-recurrent-neural-world-models-schmidhuber) by Juergen Schmidhuber `paper` `summary`
 >	"We motivate controller network C to become an efficient explorer and an artificial scientist, by adding to its standard external reward (or fitness) for solving user-given tasks another intrinsic reward for generating novel action sequences (= experiments) that allow world model network M to improve its compression performance on the resulting data. At first glance, repeatedly evaluating M’s compression performance on the entire history seems impractical. A heuristic to overcome this is to focus on M’s improvements on the most recent trial, while regularly re-training M on randomly selected previous trials, to avoid catastrophic forgetting. A related problem is that C’s incremental program search may find it difficult to identify (and assign credit to) those parts of C responsible for improvements of a huge, black box-like, monolithic M. But we can implement M as a self-modularizing, computation cost-minimizing, winner-take-all RNN. Then it is possible to keep track of which parts of M are used to encode which parts of the history. That is, to evaluate weight changes of M, only the affected parts of the stored history have to be re-tested. Then C’s search can be facilitated by tracking which parts of C affected those parts of M. By penalizing C’s programs for the time consumed by such tests, the search for C is biased to prefer programs that conduct experiments causing data yielding quickly verifiable compression progress of M. That is, the program search will prefer to change weights of M that are not used to compress large parts of the history that are expensive to verify. The first implementations of this simple principle were described in our work on the POWERPLAY framework, which incrementally searches the space of possible pairs of new tasks and modifications of the current program, until it finds a more powerful program that, unlike the unmodified program, solves all previously learned tasks plus the new one, or simplifies/compresses/speeds up previous solutions, without forgetting any."
 
 
@@ -672,7 +673,7 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 #### ["Building Machines That Learn and Think Like People"](http://arxiv.org/abs/1604.00289) Lake, Ullman, Tenenbaum, Gershman
 >	"Recent progress in artificial intelligence has renewed interest in building systems that learn and think like people. Many advances have come from using deep neural networks trained end-to-end in tasks such as object recognition, video games, and board games, achieving performance that equals or even beats humans in some respects. Despite their biological inspiration and performance achievements, these systems differ from human intelligence in crucial ways. We review progress in cognitive science suggesting that truly human-like learning and thinking machines will have to reach beyond current engineering trends in both what they learn, and how they learn it. Specifically, we argue that these machines should (a) build causal models of the world that support explanation and understanding, rather than merely solving pattern recognition problems; (b) ground learning in intuitive theories of physics and psychology, to support and enrich the knowledge that is learned; and (c) harness compositionality and learning-to-learn to rapidly acquire and generalize knowledge to new tasks and situations. We suggest concrete challenges and promising routes towards these goals that can combine the strengths of recent neural network advances with more structured cognitive models."
 
-  - `paper` <https://cims.nyu.edu/~brenden/LakeEtAl2017BBS.pdf>
+  - `paper` <https://cims.nyu.edu/~brenden/LakeEtAl2017BBS.pdf> ("Behavioral and Brain Sciences")
   - `video` <https://youtube.com/watch?v=O0MF-r9PsvE> (Gershman)
   - `notes` <http://pemami4911.github.io/paper-summaries/2016/05/13/learning-to-think.html>
 
@@ -813,6 +814,12 @@ following up conjectures suggested by analogies). Good mathematicians see analog
   Alex Graves:
 > 	"To learn as fast as possible about a piece of data, decrease as rapidly as possible the number of bits you need to compress that data. This is exactly how probabilistic models are trained: ∇-log Pr(x)  
   But what if you can choose which data to observe or even create your own? You should create the data that maximises the decrease in bits - the compression progress - of everything else you and your peers have ever observed. In other words, create the thing that makes the most sense of the world: art, science, music, jokes... Happiness is the first derivative of life!"
+
+  - <http://idsia.ch/~juergen/creativity.html>
+  - `video` <https://youtube.com/watch?v=h7F5sCLIbKQ&t=7m12s> (Schmidhuber)
+  - `video` <http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/> (Schmidhuber)
+  - `video` <https://vimeo.com/28759091> (Schmidhuber)
+  - `video` <https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber> (Schmidhuber)
 
 
 #### ["Formal Theory of Creativity, Fun, and Intrinsic Motivation"](http://people.idsia.ch/~juergen/ieeecreative.pdf) Schmidhuber

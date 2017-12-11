@@ -518,7 +518,7 @@
   [inductive programming](https://en.wikipedia.org/wiki/Inductive_programming)
 
   ["Program Synthesis Explained"](http://homes.cs.washington.edu/~bornholt/post/synthesis-for-architects.html) by James Bornholt  
-  ["Inductive Programming Meets the Real World"](https://microsoft.com/en-us/research/publication/inductive-programming-meets-real-world/) by Gulwani et al. `paper  
+  ["Inductive Programming Meets the Real World"](https://microsoft.com/en-us/research/publication/inductive-programming-meets-real-world/) by Gulwani et al. `paper`  
 
   ["Symbolic Machine Learning"](http://languagengine.co/blog/symbolic-machine-learning/) by Darryl McAdams
 
@@ -1089,7 +1089,6 @@
   - `audio` <https://soundcloud.com/nlp-highlights/28-data-programming-creating-large-training-sets-quickly> (Ratner)
   - `notes` <https://github.com/b12io/reading-group/blob/master/data-programming-snorkel.md>
   - `code` <https://github.com/HazyResearch/snorkel>
-  - `paper` ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](https://arxiv.org/abs/1703.05028) by Wu et al.
   - [Snorkel](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#snorkel) project
 
 
@@ -1099,7 +1098,6 @@
   - `video` <https://youtube.com/watch?v=0gRNochbK9c>
   - `post` <http://hazyresearch.github.io/snorkel/blog/socratic_learning.html>
   - `code` <https://github.com/HazyResearch/snorkel>
-  - `paper` ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](https://arxiv.org/abs/1703.05028) by Wu et al.
   - [Snorkel](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#snorkel) project
 
 

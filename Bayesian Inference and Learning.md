@@ -105,7 +105,8 @@
 
   [**bayesian reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#bayesian-reinforcement-learning)
 
-  [**Solomonoff induction**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#solomonoff-induction-and-aixi)
+  [**Solomonoff induction**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#solomonoff-induction)  *(bayesian optimal prediction)*  
+  [**AIXI**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#aixi)  *(bayesian optimal decision making)*  
 
 ----
 
@@ -389,7 +390,7 @@
   - ["Variational Autoencoders and Helmholtz machines"](http://artem.sobolev.name/posts/2016-07-11-neural-variational-inference-variational-autoencoders-and-Helmholtz-machines.html)  
   - ["Importance Weighted Autoencoders"](http://artem.sobolev.name/posts/2016-07-14-neural-variational-importance-weighted-autoencoders.html)  
 
-  ["Variational Inference: A Review for Statisticians"](http://arxiv.org/abs/1601.00670) by Blei et al. `paper`  
+  ["Variational Inference: A Review for Statisticians"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#variational-inference-a-review-for-statisticians-blei-kucukelbir-mcauliffe) by Blei et al. `paper` `summary`  
   ["Variational Inference"](https://www.cs.princeton.edu/courses/archive/fall11/cos597C/lectures/variational-inference-i.pdf) by David Blei `paper`  
   ["An Introduction to Variational Methods for Graphical Model"](https://www.cs.berkeley.edu/~jordan/papers/variational-intro.pdf) by Jordan et al. `paper`  
 
@@ -577,8 +578,8 @@
 
   [history and key papers](http://dennisprangle.github.io/research/2016/01/03/LFtimeline)
 
-  ["Likelihood-free Inference via Classification"](#likelihood-free-inference-via-classification-gutmann-dutta-kaski-corander) by Gutmann et al. `paper`  
-  ["Fast Epsilon-free Inference of Simulation Models with Bayesian Conditional Density Estimation"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#fast-epsilon-free-inference-of-simulation-models-with-bayesian-conditional-density-estimation-papamakarios-murray) by Papamakarios et al. `paper`  
+  ["Likelihood-free Inference via Classification"](#likelihood-free-inference-via-classification-gutmann-dutta-kaski-corander) by Gutmann et al. `paper` `summary`  
+  ["Fast Epsilon-free Inference of Simulation Models with Bayesian Conditional Density Estimation"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#fast-epsilon-free-inference-of-simulation-models-with-bayesian-conditional-density-estimation-papamakarios-murray) by Papamakarios et al. `paper` `summary`  
 
   [generative adversarial networks](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#generative-models---generative-adversarial-networks) as implicit models with likelihood-free inference
 
@@ -654,7 +655,7 @@
 
   ["Counterfactual Reasoning and Learning Systems: The Example of Computational Advertising"](http://jmlr.org/papers/volume14/bottou13a/bottou13a.pdf) by Bottou et al. `paper` ([talk](https://youtube.com/watch?v=qmQceWeYg04) by Leon Bottou `video`)  
   ["Discovering Causal Signals in Images"](https://arxiv.org/abs/1605.08179) by Lopez-Paz et al. `paper` ([talk](https://youtube.com/watch?v=DfJeaa--xO0) by Leon Bottou `video`)  
-  ["Learning Representations for Counterfactual Inference"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#johansson-shalit-sontag---learning-representations-for-counterfactual-inference) by Johansson, Shalit, Sontag `paper`
+  ["Learning Representations for Counterfactual Inference"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#johansson-shalit-sontag---learning-representations-for-counterfactual-inference) by Johansson, Shalit, Sontag `paper` `summary`
 	([talk](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3) by Uri Shalit `video`)  
   ["Causal Effect Inference with Deep Latent-Variable Models"](https://arxiv.org/abs/1705.08821) by Louizos et al. `paper`  
   ["Implicit Causal Models for Genome-wide Association Studies"](https://arxiv.org/abs/1710.10742) by Tran and Blei `paper`  

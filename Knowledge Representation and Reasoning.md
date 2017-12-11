@@ -274,7 +274,7 @@
 
   ["Relational Models"](https://arxiv.org/abs/1609.03145) by Tresp and Nickel `paper`  
   ["A Review of Relational Machine Learning for Knowledge Graphs: From Multi-Relational Link Prediction to Automated Knowledge Graph Construction"](#a-review-of-relational-machine-learning-for-knowledge-graphs-from-multi-relational-link-prediction-to-automated-knowledge-graph-construction-nickel-murphy-tresp-gabrilovich)
-	by Nickel, Murphy, Tresp, Gabrilovich `paper` ([talk](https://youtu.be/wJMNuNBrFlQ?t=8m25s) by Tresp `video`)  
+	by Nickel, Murphy, Tresp, Gabrilovich `paper` `summary` ([talk](https://youtu.be/wJMNuNBrFlQ?t=8m25s) by Tresp `video`)  
 
 ----
 
@@ -298,18 +298,18 @@
 
   - Path Ranking Algorithm  
 	*(used in [Google Knowledge Vault](#google-knowledge-vault) and [NELL](#never-ending-language-learning-nell))*  
-	["Random Walk Inference and Learning in A Large Scale Knowledge Base"](#random-walk-inference-and-learning-in-a-large-scale-knowledge-base-lao-mitchell-cohen) by Lao, Mitchell, Cohen `paper`  
+	["Random Walk Inference and Learning in A Large Scale Knowledge Base"](#random-walk-inference-and-learning-in-a-large-scale-knowledge-base-lao-mitchell-cohen) by Lao, Mitchell, Cohen `paper` `summary`  
 	["Efficient Random Walk Inference with Knowledge Bases"](https://www.cs.cmu.edu/~nlao/publication/2012/thesis.pdf) thesis by Ni Lao `paper` ([slides](http://cs.cmu.edu/~nlao/publication/2012/defense.pdf))  
 	["Incorporating Vector Space Similarity in Random Walk Inference over Knowledge Bases"](http://rtw.ml.cmu.edu/emnlp2014_vector_space_pra/paper.pdf) by Gardner et al. `paper`  
 
   - subgraph feature extraction (improvement over PRA)  
 	*(used in [NELL](#never-ending-language-learning-nell))*  
-	["Efficient and Expressive Knowledge Base Completion Using Subgraph Feature Extraction"](#efficient-and-expressive-knowledge-base-completion-using-subgraph-feature-extraction-gardner-mitchell) by Gardner and Mitchell `paper` ([talk](http://youtube.com/watch?v=dp2waL7OLbI) `video`)  
+	["Efficient and Expressive Knowledge Base Completion Using Subgraph Feature Extraction"](#efficient-and-expressive-knowledge-base-completion-using-subgraph-feature-extraction-gardner-mitchell) by Gardner and Mitchell `paper` `summary` ([talk](http://youtube.com/watch?v=dp2waL7OLbI) `video`)  
 	["Reading and Reasoning with Knowledge Graphs"](http://www.cs.cmu.edu/~mg1/thesis.pdf) thesis by Matt Gardner `paper`  
 
   - PRA over proof space for first-order logic  
 	*(used in [ProPPR](#probabilistic-database---proppr))*  
-	["Efficient Inference and Learning in a Large Knowledge Base: Reasoning with Extracted Information using a Locally Groundable First-Order Probabilistic Logic"](#efficient-inference-and-learning-in-a-large-knowledge-base-reasoning-with-extracted-information-using-a-locally-groundable-first-order-probabilistic-logic-wang-mazaitis-lao-mitchell-cohen) by Wang et al. `paper` ([talk](http://youtu.be/--pYaISROqE?t=12m35s) `video`)  
+	["Efficient Inference and Learning in a Large Knowledge Base: Reasoning with Extracted Information using a Locally Groundable First-Order Probabilistic Logic"](#efficient-inference-and-learning-in-a-large-knowledge-base-reasoning-with-extracted-information-using-a-locally-groundable-first-order-probabilistic-logic-wang-mazaitis-lao-mitchell-cohen) by Wang et al. `paper` `summary` ([talk](http://youtu.be/--pYaISROqE?t=12m35s) `video`)  
 
 
 ----
@@ -321,7 +321,7 @@
 
 
   applications in [Google Knowledge Vault](#google-knowledge-vault):  
-  - ["A Review of Relational Machine Learning for Knowledge Graphs"](#a-review-of-relational-machine-learning-for-knowledge-graphs-from-multi-relational-link-prediction-to-automated-knowledge-graph-construction-nickel-murphy-tresp-gabrilovich) by Nickel, Murphy, Tresp, Gabrilovich `paper`  
+  - ["A Review of Relational Machine Learning for Knowledge Graphs"](#a-review-of-relational-machine-learning-for-knowledge-graphs-from-multi-relational-link-prediction-to-automated-knowledge-graph-construction-nickel-murphy-tresp-gabrilovich) by Nickel, Murphy, Tresp, Gabrilovich `paper` `summary`  
   - [overview](http://youtu.be/i2r5J4XAhsw?t=3m7s) by Kevin Murphy `video`  
   - [overview](http://youtu.be/wJMNuNBrFlQ?t=8m25s) by Volker Tresp `video`  
   - [overview](http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning/) (part 2, 1:19:37) by Volker Tresp `video`  
@@ -329,8 +329,8 @@
   - [overview](http://youtube.com/watch?v=FVjuwv1_EDw) by Jason Weston `video`  
 
 
-  ["Order-Embeddings of Images and Language"](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#order-embeddings-of-images-and-language-vendrov-kiros-fidler-urtasun) by Vendrov et al. `paper`  
-  ["Poincare Embeddings for Learning Hierarchical Representations"](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#poincare-embeddings-for-learning-hierarchical-representations-facebook-ai-research) by Nickel and Kiela `paper`  
+  ["Order-Embeddings of Images and Language"](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#order-embeddings-of-images-and-language-vendrov-kiros-fidler-urtasun) by Vendrov et al. `paper` `summary`  
+  ["Poincare Embeddings for Learning Hierarchical Representations"](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#poincare-embeddings-for-learning-hierarchical-representations-facebook-ai-research) by Nickel and Kiela `paper` `summary`  
 
 
   [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)  
@@ -362,7 +362,7 @@
   *advantage*:  in the spirit of OpenIE, a universal schema can use textual patterns as novel relations and hence increases the coverage of traditional schemas  
   *advantage*:  matrix factorization learns better embeddings for entity-pairs for which only surface form patterns are observed, and these can also lead to better extractions of canonical relations  
 
-  ["Injecting Logical Background Knowledge into Embeddings for Relation Extraction"](#injecting-logical-background-knowledge-into-embeddings-for-relation-extraction-rocktaschel-singh-riedel) by Rocktaschel et al. `paper`
+  ["Injecting Logical Background Knowledge into Embeddings for Relation Extraction"](#injecting-logical-background-knowledge-into-embeddings-for-relation-extraction-rocktaschel-singh-riedel) by Rocktaschel et al. `paper` `summary`
 	([talk](http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/) `video`)
 	*(combining matrix factorization with knowledge represented as first-order logic)*
 
@@ -547,13 +547,13 @@
   ["Markov Logic: An Interface Layer for Artificial Intelligence"](http://morganclaypool.com/doi/abs/10.2200/S00206ED1V01Y200907AIM007) by Domingos and Lowd `paper`  
 >	"Most subfields of computer science have an interface layer via which applications communicate with the infrastructure, and this is key to their success (e.g., the Internet in networking, the relational model in databases, etc.). So far this interface layer has been missing in AI. First-order logic and probabilistic graphical models each have some of the necessary features, but a viable interface layer requires combining both. Markov logic is a powerful new language that accomplishes this by attaching weights to first-order formulas and treating them as templates for features of Markov random fields. Most statistical models in wide use are special cases of Markov logic, and first-order logic is its infinite-weight limit. Inference algorithms for Markov logic combine ideas from satisfiability, Markov chain Monte Carlo, belief propagation, and resolution. Learning algorithms make use of conditional likelihood, convex optimization, and inductive logic programming."
 
-  ["Markov Logic"](http://homes.cs.washington.edu/~pedrod/papers/pilp.pdf) by Domingos et al.
+  ["Markov Logic"](http://homes.cs.washington.edu/~pedrod/papers/pilp.pdf) by Domingos et al. `paper`
 
 ----
 
-  ["Markov Logic Networks for Natural Language Question Answering"](#markov-logic-networks-for-natural-language-question-answering-khot-balasubramanian-gribkoff-sabharwal-clark-etzioni) by Khot et al. `paper`
+  ["Markov Logic Networks for Natural Language Question Answering"](#markov-logic-networks-for-natural-language-question-answering-khot-balasubramanian-gribkoff-sabharwal-clark-etzioni) by Khot et al. `paper` `summary`
 	*(application to question answering by [AI2](#ai2-aristo))*  
-  ["Tuffy: Scaling up Statistical Inference in Markov Logic Networks using an RDBMS"](#tuffy-scaling-up-statistical-inference-in-markov-logic-networks-using-an-rdbms-niu-re-doan-shavlik) by Niu et al. `paper`
+  ["Tuffy: Scaling up Statistical Inference in Markov Logic Networks using an RDBMS"](#tuffy-scaling-up-statistical-inference-in-markov-logic-networks-using-an-rdbms-niu-re-doan-shavlik) by Niu et al. `paper` `summary`
 	*(application to information extraction, integration and curation by [DeepDive](#deepdive))*  ([overview](http://deepdive.stanford.edu/inference))  
 
 ----
@@ -607,8 +607,8 @@
 
   [overview](http://youtube.com/watch?v=6ZJzfRdCZjc) by Pedro Domingos `video`
 
-  ["Tractable Probabilistic Knowledge Base: Wikipedia and Beyond"](http://aaai.org/ocs/index.php/WS/AAAIW14/paper/download/8722/8239) by Niepert and Domingos `paper`  
-  ["Learning and Inference in Tractable Probabilistic Knowledge Bases"](http://homes.cs.washington.edu/~pedrod/papers/uai15.pdf) by Niepert and Domingos `paper`  
+  ["Tractable Probabilistic Knowledge Bases: Wikipedia and Beyond"](http://aaai.org/ocs/index.php/WS/AAAIW14/paper/download/8722/8239) by Niepert and Domingos `paper`  
+  ["Learning and Inference in Tractable Probabilistic Knowledge Bases"](#learning-and-inference-in-tractable-probabilistic-knowledge-bases-niepert-domingos) by Niepert and Domingos `paper` `summary`  
 
 ----
 
@@ -666,8 +666,8 @@
 ----
 
   ["ProPPR: Efficient First-Order Probabilistic Logic Programming for Structure Discovery, Parameter Learning, and Scalable Inference"](http://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/yww/papers/starAI.pdf) by Wang, Mazaitis, Cohen `paper`  
-  ["Efficient Inference and Learning in a Large Knowledge Base: Reasoning with Extracted Information using a Locally Groundable First-Order Probabilistic Logic"](#efficient-inference-and-learning-in-a-large-knowledge-base-reasoning-with-extracted-information-using-a-locally-groundable-first-order-probabilistic-logic-wang-mazaitis-lao-mitchell-cohen) by Wang, Mazaitis, Mitchell, Cohen et al. `paper` ([talk](http://youtu.be/--pYaISROqE?t=12m35s) `video`)  
-  ["Structure Learning via Parameter Learning"](#structure-learning-via-parameter-learning-wang-mazaitis-cohen) by Wang, Mazaitis, Cohen `paper` ([talk](http://youtu.be/--pYaISROqE?t=21m35s) `video`)  
+  ["Efficient Inference and Learning in a Large Knowledge Base: Reasoning with Extracted Information using a Locally Groundable First-Order Probabilistic Logic"](#efficient-inference-and-learning-in-a-large-knowledge-base-reasoning-with-extracted-information-using-a-locally-groundable-first-order-probabilistic-logic-wang-mazaitis-lao-mitchell-cohen) by Wang, Mazaitis, Mitchell, Cohen et al. `paper` `summary` ([talk](http://youtu.be/--pYaISROqE?t=12m35s) `video`)  
+  ["Structure Learning via Parameter Learning"](#structure-learning-via-parameter-learning-wang-mazaitis-cohen) by Wang, Mazaitis, Cohen `paper` `summary` ([talk](http://youtu.be/--pYaISROqE?t=21m35s) `video`)  
 
 ----
 
@@ -795,7 +795,7 @@
   [introduction](https://youtu.be/uAk152lIib0?t=25m51s) by Chris Manning `video`  
   ["Open Domain Inference with Natural Logic"](https://youtube.com/watch?v=EX1hKxePxkk) by Gabor Angeli `video`  
 
-  ["Natural Logic: Logical Inference over Text"](http://akbc.ws/2016/slides/manning-akbc16.pdf) by Chris Manning `paper`  
+  ["Natural Logic: Logical Inference over Text"](http://akbc.ws/2016/slides/manning-akbc16.pdf) by Chris Manning `slides`  
   ["Learning Distributed Word Representations for Natural Logic Reasoning"](https://goo.gl/CCofxS) by Bowman, Potts, Manning `slides`  
 
 ----
@@ -847,7 +847,7 @@
 
   [probabilistic programs](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-program)  *(bayesian models of cognitive processes)*
 
-  [Solomonoff induction and AIXI](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#solomonoff-induction-and-aixi)  *(bayesian optimal prediction and decision making)*
+  [Solomonoff induction](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#solomonoff-induction)  *(bayesian optimal prediction)*
 
 
 
@@ -908,7 +908,7 @@
 
   ["Reading and Reasoning with Vector Representations"](https://dropbox.com/s/6myacfkrp9raakq/Sheffield%202017%20Talk.pdf) by Sebastian Riedel `slides`
 
-  ["Low-Dimensional Embeddings of Logic"](#rocktaschel-bosnjak-singh-riedel---low-dimensional-embeddings-of-logic--embedding-of-logic) by Tim Rocktaschel `paper`
+  ["Low-Dimensional Embeddings of Logic"](#rocktaschel-bosnjak-singh-riedel---low-dimensional-embeddings-of-logic--embedding-of-logic) by Tim Rocktaschel `paper` `summary`
 	([talk](http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/) `video`)
 
   ["What Can Deep Learning Learn from Symbolic Inference?"](http://www.bicv.org/?wpdmdl=2309) by Tim Rocktaschel  
@@ -1002,12 +1002,12 @@
 
 ----
 
-  ["Knowledge Vault: A Web-Scale Approach to Probabilistic Knowledge Fusion"](#knowledge-vault-a-web-scale-approach-to-probabilistic-knowledge-fusion-dong-et-al) by Dong et al. `paper`  
-  ["From Data Fusion to Knowledge Fusion"](#from-data-fusion-to-knowledge-fusion-dong-et-al) by Dong et al. `paper`  
-  ["Knowledge-Based Trust: Estimating the Trustworthiness of Web Sources"](#knowledge-based-trust-estimating-the-trustworthiness-of-web-sources-dong-et-al) by Dong et al. `paper`  
+  ["Knowledge Vault: A Web-Scale Approach to Probabilistic Knowledge Fusion"](#knowledge-vault-a-web-scale-approach-to-probabilistic-knowledge-fusion-dong-et-al) by Dong et al. `paper` `summary`  
+  ["From Data Fusion to Knowledge Fusion"](#from-data-fusion-to-knowledge-fusion-dong-et-al) by Dong et al. `paper` `summary`  
+  ["Knowledge-Based Trust: Estimating the Trustworthiness of Web Sources"](#knowledge-based-trust-estimating-the-trustworthiness-of-web-sources-dong-et-al) by Dong et al. `paper` `summary`  
   ["A Review of Relational Machine Learning for Knowledge Graphs: From Multi-Relational Link Prediction to Automated Knowledge Graph Construction"](#a-review-of-relational-machine-learning-for-knowledge-graphs-from-multi-relational-link-prediction-to-automated-knowledge-graph-construction-nickel-murphy-tresp-gabrilovich)
-	by Nickel, Murphy, Tresp, Gabrilovich `paper` ([talk](https://youtu.be/wJMNuNBrFlQ?t=8m25s) by Tresp `video`)  
-  ["Knowledge Base Completion via Search-Based Question Answering" ](#knowledge-base-completion-via-search-based-question-answering-west-et-al) by West et al. `paper`  
+	by Nickel, Murphy, Tresp, Gabrilovich `paper` `summary` ([talk](https://youtu.be/wJMNuNBrFlQ?t=8m25s) by Tresp `video`)  
+  ["Knowledge Base Completion via Search-Based Question Answering"](#knowledge-base-completion-via-search-based-question-answering-west-et-al) by West et al. `paper` `summary`  
 
 
 ----
@@ -1035,16 +1035,16 @@
 
 ----
 
-  ["Data Programming: Creating Large Training Sets, Quickly"](https://arxiv.org/abs/1605.07723) `paper` ([video](https://youtube.com/watch?v=iSQHelJ1xxU))  
-  ["Socratic Learning: Empowering the Generative Model"](https://arxiv.org/abs/1610.08123) `paper` ([video](https://youtube.com/watch?v=0gRNochbK9c))  
+  ["Data Programming: Creating Large Training Sets, Quickly"](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#data-programming-creating-large-training-sets-quickly-ratner-sa-wu-selsam-re) `paper` `summary` ([video](https://youtube.com/watch?v=iSQHelJ1xxU))  
+  ["Socratic Learning: Empowering the Generative Model"](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#socratic-learning-empowering-the-generative-model-varma-et-al) `paper` `summary` ([video](https://youtube.com/watch?v=0gRNochbK9c))  
   ["Data Programming with DDLite: Putting Humans in a Different Part of the Loop"](http://cs.stanford.edu/people/chrismre/papers/DDL_HILDA_2016.pdf) `paper`  
   ["Snorkel: A System for Lightweight Extraction"](http://cidrdb.org/cidr2017/gongshow/abstracts/cidr2017_73.pdf) `paper` ([talk](https://youtube.com/watch?v=HmocI2b5YfA) `video`)  
   ["Snorkel: Fast Training Set Generation for Information Extraction"](https://hazyresearch.github.io/snorkel/pdfs/snorkel_demo.pdf) `paper` ([talk](https://youtube.com/watch?v=HmocI2b5YfA) `video`)  
   ["Learning the Structure of Generative Models without Labeled Data"](https://arxiv.org/abs/1703.00854) `paper` ([talk](https://vimeo.com/240606552) `video`)  
-  ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](https://arxiv.org/abs/1703.05028) `paper`  
+  ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](#fonduer-knowledge-base-construction-from-richly-formatted-data-wu-et-al) `paper` `summary`  
   ["Learning to Compose Domain-Specific Transformations for Data Augmentation"](https://arxiv.org/abs/1709.01643) `paper` ([video](https://youtube.com/watch?v=eh2LAOjW78A))  
   ["Inferring Generative Model Structure with Static Analysis"](https://arxiv.org/abs/1709.02477) `paper` ([video](https://youtube.com/watch?v=Do1On5AzHE4))  
-  ["Snorkel: Rapid Training Data Creation with Weak Supervision"](https://arxiv.org/abs/1711.10160) `paper` ([talk](https://youtube.com/watch?v=HmocI2b5YfA) `video`)  
+  ["Snorkel: Rapid Training Data Creation with Weak Supervision"](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#snorkel-rapid-training-data-creation-with-weak-supervision-ratner-bach-ehrenberg-fries-wu-re) `paper` `summary` ([talk](https://youtube.com/watch?v=HmocI2b5YfA) `video`)  
 
 ----
 
@@ -1070,8 +1070,8 @@
 
   ["DeepDive: Design Principles"](http://cs.stanford.edu/people/chrismre/papers/dd.pdf) by Chris Re `paper`
 
-  ["Incremental Knowledge Base Construction Using DeepDive"](#incremental-knowledge-base-construction-using-deepdive-wu-zhang-wang-re) by Wu et al. `paper`  
-  ["Feature Engineering for Knowledge Base Construction"](#feature-engineering-for-knowledge-base-construction-re-et-al) by Re et al. `paper`  
+  ["Incremental Knowledge Base Construction Using DeepDive"](#incremental-knowledge-base-construction-using-deepdive-wu-zhang-wang-re) by Wu et al. `paper` `summary`  
+  ["Feature Engineering for Knowledge Base Construction"](#feature-engineering-for-knowledge-base-construction-re-et-al) by Re et al. `paper` `summary`  
 
   ["Knowledge Base Construction"](http://deepdive.stanford.edu/kbc)
 
@@ -1080,7 +1080,7 @@
   [Markov Logic Network](#probabilistic-database---markov-logic-network) as knowledge representation
 
   ["Probabilistic Inference and Factor Graphs"](http://deepdive.stanford.edu/inference)  
-  ["Tuffy: Scaling up Statistical Inference in Markov Logic Networks using an RDBMS"](#tuffy-scaling-up-statistical-inference-in-markov-logic-networks-using-an-rdbms-niu-re-doan-shavlik) by Niu et al. `paper`  
+  ["Tuffy: Scaling up Statistical Inference in Markov Logic Networks using an RDBMS"](#tuffy-scaling-up-statistical-inference-in-markov-logic-networks-using-an-rdbms-niu-re-doan-shavlik) by Niu et al. `paper` `summary`  
 
 ----
 
@@ -1089,7 +1089,7 @@
 
   winner of TAC-KBP 2014 English Slot Filling challenge:  
   ["Overview of the English Slot Filling Track at the TAC2014 Knowledge Base Population Evaluation"](http://nlp.cs.rpi.edu/paper/sf2014overview.pdf) by Surdeanu and Ji `paper`  
-  ["Stanford’s 2014 Slot Filling Systems"](#stanfords-2014-slot-filling-systems-angeli-et-al) by Angeli et al. `paper`  
+  ["Stanford’s 2014 Slot Filling Systems"](#stanfords-2014-slot-filling-systems-angeli-et-al) by Angeli et al. `paper` `summary`  
 
 ----
 
@@ -1117,13 +1117,13 @@
 
 ----
 
-  ["Never-Ending Learning"](#never-ending-learning-mitchell-et-al) by Mitchell et al. `paper`  
-  ["Random Walk Inference and Learning in A Large Scale Knowledge Base"](#random-walk-inference-and-learning-in-a-large-scale-knowledge-base-lao-mitchell-cohen) by Lao, Mitchell, Cohen `paper`  
-  ["Large-Scale Knowledge Graph Identification using PSL"](#large-scale-knowledge-graph-identification-using-psl-pujara-miao-getoor-cohen) by Pujara, Miao, Getoor, Cohen `paper` ([Probabilistic Soft Logic](#probabilistic-database---probabilistic-soft-logic) as knowledge representation)  
-  ["Classifying Entities into an Incomplete Ontology"](#classifying-entities-into-an-incomplete-ontology-dalvi-cohen-callan) by Dalvi, Cohen, Callan `paper`  
-  ["PIDGIN: Ontology Alignment using Web Text as Interlingua"](#pidgin-ontology-alignment-using-web-text-as-interlingua-wijaya-talukdar-mitchell) by Wijaya, Talukdar, Mitchell `paper`  
-  ["Estimating Accuracy from Unlabeled Data"](#estimating-accuracy-from-unlabeled-data-platanios-blum-mitchell) by Platanios, Blum, Mitchell `paper`  
-  ["Language-Aware Truth Assessment of Fact Candidates"](#language-aware-truth-assessment-of-fact-candidates-nakashole-mitchell) Nakashole and Mitchell `paper`  
+  ["Never-Ending Learning"](#never-ending-learning-mitchell-et-al) by Mitchell et al. `paper` `summary`  
+  ["Random Walk Inference and Learning in A Large Scale Knowledge Base"](#random-walk-inference-and-learning-in-a-large-scale-knowledge-base-lao-mitchell-cohen) by Lao, Mitchell, Cohen `paper` `summary`  
+  ["Large-Scale Knowledge Graph Identification using PSL"](#large-scale-knowledge-graph-identification-using-psl-pujara-miao-getoor-cohen) by Pujara, Miao, Getoor, Cohen `paper` `summary` ([Probabilistic Soft Logic](#probabilistic-database---probabilistic-soft-logic) as knowledge representation)  
+  ["Classifying Entities into an Incomplete Ontology"](#classifying-entities-into-an-incomplete-ontology-dalvi-cohen-callan) by Dalvi, Cohen, Callan `paper` `summary`  
+  ["PIDGIN: Ontology Alignment using Web Text as Interlingua"](#pidgin-ontology-alignment-using-web-text-as-interlingua-wijaya-talukdar-mitchell) by Wijaya, Talukdar, Mitchell `paper` `summary`  
+  ["Estimating Accuracy from Unlabeled Data"](#estimating-accuracy-from-unlabeled-data-platanios-blum-mitchell) by Platanios, Blum, Mitchell `paper` `summary`  
+  ["Language-Aware Truth Assessment of Fact Candidates"](#language-aware-truth-assessment-of-fact-candidates-nakashole-mitchell) by Nakashole and Mitchell `paper` `summary`  
 
 ----
 
@@ -1147,7 +1147,7 @@
 
   [overview](https://youtube.com/watch?v=u7n7vKEmfb4) by Peter Clark `video`
 
-  ["Automatic Construction of Inference-Supporting Knowledge Bases"](#automatic-construction-of-inference-supporting-knowledge-bases-clark-et-al) by Clark et al. `paper` ([talk](http://youtube.com/watch?v=eyjpLPjhSPU) `video`)
+  ["Automatic Construction of Inference-Supporting Knowledge Bases"](#automatic-construction-of-inference-supporting-knowledge-bases-clark-et-al) by Clark et al. `paper` `summary` ([talk](http://youtube.com/watch?v=eyjpLPjhSPU) `video`)
 
 ----
 
@@ -1210,7 +1210,7 @@
   - `video` <https://youtube.com/watch?v=HmocI2b5YfA> (Re)
   - `post` <https://hazyresearch.github.io/snorkel/blog/fonduer.html>
   - `code` <https://github.com/HazyResearch/snorkel/>
-  - `paper` ["Data Programming"](https://github.com/brylevkirill/notes/blob/test/Machine%20Learning.md#data-programming-creating-large-training-sets-quickly-ratner-sa-wu-selsam-re) by Ratner et al.
+  - `paper` ["Data Programming"](https://github.com/brylevkirill/notes/blob/test/Machine%20Learning.md#data-programming-creating-large-training-sets-quickly-ratner-sa-wu-selsam-re) by Ratner et al. `summary`
 
 
 #### ["Feature Engineering for Knowledge Base Construction"](http://arxiv.org/abs/1407.6439) Re et al.
@@ -1399,11 +1399,11 @@ noise, inferring missing information, and determining which candidate facts shou
 
   - `video` <http://videolectures.net/eswc2014_tresp_machine_learning/> (Tresp) ([slides](http://www.dbs.ifi.lmu.de/~tresp/papers/ESWC-Keynote.pdf))
   - `slides` ["Machine Learning on Linked Data: Tensors and Their Applications In Graph-Structured Domains"](http://www.cip.ifi.lmu.de/~nickel/iswc2012-slides/#/) by Maximilian Nickel
-  - `paper` ["Tensor Factorization for Relational Learning"](http://edoc.ub.uni-muenchen.de/16056/1/Nickel_Maximilian.pdf) thesis by Maximilian Nickel
   - `post` <http://matt-gardner.github.io/paper-thoughts/2015/01/14/tensor-decomposition.html>
   - `code` <https://github.com/mnick/scikit-tensor>
   - `code` <https://github.com/mnick/rescal.py>
   - `code` <https://github.com/nzhiltsov/Ext-RESCAL> ([post](http://nzhiltsov.blogspot.ru/2014/10/ext-rescal-tensor-factorization.html))
+  - `paper` ["Tensor Factorization for Relational Learning"](http://edoc.ub.uni-muenchen.de/16056/1/Nickel_Maximilian.pdf) thesis by Maximilian Nickel
 
 
 #### ["Large-Scale Factorization of Type-Constrained Multi-Relational Data"](http://www.dbs.ifi.lmu.de/~tresp/papers/LargeScaleFactorizationOfTypeConstraintMultiRelationalData.pdf) Krompass, Nickel, Tresp
@@ -1716,8 +1716,8 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
   - `slides` <http://egrefen.com/docs/HowMuchLinguistics2015.pdf>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/nips/HermannKGEKSB15>
   - `notes` <https://www.evernote.com/shard/s189/sh/ade22da1-4813-4b5c-89a5-3fdf7dbad8ee/ce8b7234b42c62882609047ecc289920>
-  - `paper` ["A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task"](https://arxiv.org/abs/1606.02858) by Chen, Bolton, Manning
   - `code` <https://github.com/carpedm20/attentive-reader-tensorflow>
+  - `paper` ["A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task"](https://arxiv.org/abs/1606.02858) by Chen, Bolton, Manning
 
 
 #### ["Text Understanding with the Attention Sum Reader Network"](http://arxiv.org/abs/1603.01547) Kadlec, Schmid, Bajgar, Kleindienst
@@ -1760,7 +1760,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 >	"In this work, we describe a large-scale goal-driven web navigation task and argue that it serves as a useful test bed for evaluating the capabilities of artificial agents on natural language understanding and planning. We release a software tool, called WebNav, that compiles a given website into a goal-driven web navigation task. As an example, we construct WikiNav from Wikipedia using WebNav. We extend WikiNav with Jeopardy! questions, thus creating WikiNav-Jeopardy. We evaluate various neural net based agents on WikiNav and WikiNav-Jeopardy. Our results show that more sophisticated agents have better performance, thus supporting our claim that this task is well suited to evaluate future progress in natural language understanding and planning. Furthermore, we show that our agent pretrained on WikiNav outperforms two strong inverted-index based search engines on the WikiNav-Jeopardy. These empirical results support our claim on the usefulness of the proposed task and agents in challenging applications such as focused crawling and question-answering."
 
   - `video` <https://youtu.be/tXBHfbHHlKc?t=31m20s> (Tamar)
-  - `paper` ["Value Iteration Networks"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#value-iteration-networks-tamar-wu-thomas-levine-abbeel) by Tamar et al.
+  - `paper` ["Value Iteration Networks"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#value-iteration-networks-tamar-wu-thomas-levine-abbeel) by Tamar et al. `summary`
 
 
 #### ["Value Iteration Networks"](http://arxiv.org/abs/1602.02867) Tamar, Wu, Thomas, Levine, Abbeel
