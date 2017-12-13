@@ -489,8 +489,8 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
 
 
-----
-#### Solomonoff induction
+---
+### Solomonoff induction
 
   [Algorithmic Probability](http://scholarpedia.org/article/Algorithmic_probability)
 
@@ -502,8 +502,8 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
 
 
-----
-#### AIXI
+---
+### AIXI
 
   [introduction](http://youtube.com/watch?v=F2bQ5TSB-cE) by Marcus Hutter `video`
 

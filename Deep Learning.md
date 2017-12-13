@@ -1,4 +1,4 @@
-  Deep Learning is learning to represent knowledge with composition of functions and learning all functions in composition jointly and end-to-end.
+  Deep Learning is learning to represent knowledge with composition of continuous functions.
 
 
   * [overview](#overview)
@@ -58,14 +58,9 @@
 
 #### tutorials
 
-  [deep learning](http://youtube.com/watch?v=74VUX2zszms) by Yoshua Bengio & Yann LeCun `video`  
-  [generative models](http://videolectures.net/deeplearning2016_mohamed_generative_models/) by Shakir Mohamed `video`  
-  [generative adversarial networks](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks) by Ian Goodfellow `video`  
-  [variational inference](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods) by David Blei, Rajesh Ranganath, Shakir Mohamed `video`  
+  [Deep Learning: Practice and Trends](http://youtube.com/watch?v=YJnddoa8sHk) by Oriol Vinyals and Scott Reed `video` ([slides](http://goo.gl/b6QBBh))
 
-  [Deep Learning Summer School 2017](http://videolectures.net/deeplearning2017_montreal/) `video`  
-  [Deep Learning Summer School 2016](http://videolectures.net/deeplearning2016_montreal/) `video`  
-  [Deep Learning Summer School 2015](http://videolectures.net/deeplearning2015_montreal/) `video`  
+  [Deep Learning Summer School](http://videolectures.net/deeplearning2017_montreal/) `video`
 
 
 #### courses
@@ -399,8 +394,10 @@
 
   ["Deep Generative Models"](http://www.deeplearningbook.org/contents/generative_models.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
 
-  ["Generative Models"](https://youtube.com/watch?v=5WoItGTWV54) by Serena Yeung `video`  
-  ["Building Machines that Imagine and Reason: Principles and Applications of Deep Generative Models"](http://videolectures.net/deeplearning2016_mohamed_generative_models/) by Shakir Mohamed `video`  
+  [overview](http://videolectures.net/deeplearning2017_goodfellow_generative_models/) by Ian Goodfellow `video`  
+  [overview](http://videolectures.net/deeplearning2017_courville_generative_models/) by Aaron Courville `video`  
+
+  ["Building Machines that Imagine and Reason: Principles and Applications of Deep Generative Models"](http://videolectures.net/deeplearning2016_mohamed_generative_models/) by Shakir Mohamed `video`
 
   ["Differentiable Inference and Generative Models"](http://www.cs.toronto.edu/~duvenaud/courses/csc2541/index.html) course by David Duvenaud
 
@@ -1447,7 +1444,7 @@ Yoshua Bengio:
 
   - `video` <https://youtu.be/_XRBlhzb31U?t=25m19s> (Figurnov) `in russian`
   - `notes` <http://dustintran.com/blog/muprop-unbiased-backpropagation-for-stochastic-neural-networks/>
-  - `notes` <https://www.evernote.com/shard/s189/sh/29a7d673-a22c-4ca7-9638-fccfd9d18330/9074c362de09b3cd22983db2939456b7> (Larochelle)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/GuLSM15>
   - `code` <https://github.com/tensorflow/models/tree/master/research/rebar>
 
 
@@ -1459,6 +1456,7 @@ Yoshua Bengio:
 
 
 #### ["Weight Uncertainty in Neural Networks"](http://arxiv.org/abs/1505.05424) Blundell, Cornebise, Kavukcuoglu, Wierstra
+  `Bayes by Backprop`
 >	"We introduce a new, efficient, principled and backpropagation-compatible algorithm for learning a probability distribution on the weights of a neural network, called Bayes by Backprop. It regularises the weights by minimising a compression cost, known as the variational free energy or the expected lower bound on the marginal likelihood. We show that this principled kind of regularisation yields comparable performance to dropout on MNIST classification. We then demonstrate how the learnt uncertainty in the weights can be used to improve generalisation in non-linear regression problems, and how this weight uncertainty can be used to drive the exploration-exploitation trade-off in reinforcement learning."
 
 >	"Plain feedforward neural networks are prone to overfitting. When applied to supervised or reinforcement learning problems these networks are also often incapable of correctly assessing the uncertainty in the training data and so make overly confident decisions about the correct class, prediction or action. We shall address both of these concerns by using variational Bayesian learning to introduce uncertainty in the weights of the network. We call our algorithm Bayes by Backprop. We suggest at least three motivations for introducing uncertainty on the weights: 1) regularisation via a compression cost on the weights, 2) richer representations and predictions from cheap model averaging, and 3) exploration in simple reinforcement learning problems such as contextual bandits."
@@ -1508,9 +1506,10 @@ Yoshua Bengio:
   - `video` <https://youtu.be/tqGEX_Ucu04?t=12m43s> (Molchanov) `in russian`
   - `post` <http://mlg.eng.cam.ac.uk/yarin/blog_3d801aa532c1ce.html> (Gal)
   - `post` <http://mlg.eng.cam.ac.uk/yarin/blog_2248.html> (Gal)
+  - `post` ["Demos demonstrating the difference between homoscedastic and heteroscedastic regression with dropout uncertainty"](https://github.com/yaringal/HeteroscedasticDropoutUncertainty) (Gal)
   - `post` <http://www.computervisionblog.com/2016/06/making-deep-networks-probabilistic-via.html>
   - `notes` <https://casmls.github.io/general/2016/11/11/dropout.html>
-  - `notes` <https://www.evernote.com/shard/s189/sh/0b46fb48-dd1a-4e3b-ac5c-289f4925ff7e/3f0f03231757ded363b42ce71ebfcc70> (Larochelle)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/GalG15>
   - `notes` <https://plus.google.com/u/0/+AnkurHanda/posts/DnXB81efTwa>
   - `code` <https://github.com/yaringal/DropoutUncertaintyExps>
   - `code` <https://github.com/tabacof/bayesian-nn-uncertainty>
@@ -1557,6 +1556,13 @@ Yoshua Bengio:
 >	- Something feels a strange about a Bayesian posterior that doesn't concentrate with more data."  
 
   - <https://reddit.com/r/MachineLearning/comments/7bm4b2/d_what_is_the_current_state_of_dropout_as/dpjc07g/>
+
+
+#### ["Variational Dropout and the Local Reparameterization Trick"](https://arxiv.org/abs/1506.02557) Kingma, Salimans, Welling
+>	"We investigate a local reparameterizaton technique for greatly reducing the variance of stochastic gradients for variational Bayesian inference (SGVB) of a posterior over model parameters, while retaining parallelizability. This local reparameterization translates uncertainty about global parameters into local noise that is independent across datapoints in the minibatch. Such parameterizations can be trivially parallelized and have variance that is inversely proportional to the minibatch size, generally leading to much faster convergence. Additionally, we explore a connection with dropout: Gaussian dropout objectives correspond to SGVB with local reparameterization, a scale-invariant prior and proportionally fixed posterior variance. Our method allows inference of more flexibly parameterized posteriors; specifically, we propose variational dropout, a generalization of Gaussian dropout where the dropout rates are learned, often leading to better models. The method is demonstrated through several experiments."
+
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/nips/BlumHP15>
+  - `code` <https://github.com/kefirski/variational_dropout>
 
 
 #### ["Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles"](https://arxiv.org/abs/1612.01474) Lakshminarayanan, Pritzel, Blundell
@@ -2167,7 +2173,7 @@ x."
 
 >	"similar to Memory Networks but with non-linear function to compute interaction between control state and memory slot"
 
-  - `notes` <https://www.evernote.com/shard/s189/sh/54f4534f-3813-44de-8feb-af7180eceb8e/953160fcc0f551cb9855d46cf686375b>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/PengLLW15>
 
 
 #### ["Learning to Transduce with Unbounded Memory"](http://arxiv.org/abs/1506.02516) Grefenstette, Hermann, Suleyman, Blunsom
@@ -2517,7 +2523,7 @@ x."
 
   - `video` <http://youtube.com/watch?v=VG2uCpKJkSg> (Adams)
   - `video` <http://videolectures.net/icml2015_duvenaud_reversible_learning/> (Duvenaud)
-  - `notes` <https://www.evernote.com/shard/s189/sh/eb8503b0-f63d-49b7-b51f-747b7e10e69e/4cabf65c28de7f388417c0c4fba71c29> (Larochelle)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/icml/MaclaurinDA15>
   - `code` <https://github.com/HIPS/hypergrad>
 
 

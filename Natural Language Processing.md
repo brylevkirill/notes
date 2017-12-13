@@ -462,7 +462,7 @@
 
 >	"Our results show that MIXER with a simple greedy search achieves much better accuracy compared to the baselines on Text Summarization, Machine Translation and Image Captioning tasks. In addition we show that MIXER with greedy search is even more accurate than the cross entropy model augmented with beam search at inference time as a post-processing step. This is particularly remarkable because MIXER with greedy search is at least 10 times faster than the cross entropy model with a beam of size 10. Lastly, we note that MIXER and beam search are complementary to each other and can be combined to further improve performance, although the extent of the improvement is task dependent."
 
-  - `notes` <https://www.evernote.com/shard/s189/sh/ada01a82-70a9-48d4-985c-20492ab91e84/8da92be19e704996dc2b929473abed46> (Larochelle)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/RanzatoCAZ15>
   - `code` <https://github.com/facebookresearch/MIXER>
 
 
@@ -546,9 +546,7 @@
 >	"Analysis of word representations obtained from the character composition part of the model further indicates that the model is able to encode semantically meaningful features that are not immediately apparent from orthography alone. Our work questions the necessity of word embeddings as inputs for neural language modeling. Insofar as language modeling mostly relies on capturing a word’s syntactic role, it would be interesting to see if the architecture introduced in this paper is viable for more semantic tasks - for example, as an encoder/decoder in neural machine translation."
 
   - `video` <http://research.microsoft.com/apps/video/default.aspx?id=260041> (Sontag)
-  - `notes` <https://www.evernote.com/shard/s267/sh/64195d10-53b4-4312-8c5a-d10ab5138c36/22ce804ec6c8ab2b9ceb3096b8cd929e>
-  - `code` <https://github.com/yoonkim/lstm-char-cnn>
-  - `code` <https://github.com/carpedm20/lstm-char-cnn-tensorflow>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/aaai/KimJSR16>
 
 
 #### ["Unbounded Cache Model for Online Language Modeling with Open Vocabulary"](https://arxiv.org/abs/1711.02604) Grave, Cisse, Joulin
@@ -747,7 +745,7 @@
 
 >	"During training, the iSGM allows word representations to grow naturally based on how well they can predict their context. This behavior enables the vectors of specific words to use few dimensions and the vectors of vague words to elongate as needed. Manual and experimental analysis reveals this dynamic representation elegantly captures specificity, polysemy, and homonymy without explicit definition of such concepts within the model."
 
-  - `notes` <https://www.evernote.com/shard/s189/sh/2da41f5c-7fc2-4bb1-8c00-dad613404328/e1d1c853162af5fbe537a02796a4ba4e>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/NalisnickR15>
   - `post` <http://dustintran.com/blog/infinite-dimensional-word-embeddings/>
   - `video` <http://videolectures.net/deeplearning2016_cote_boltzmann_machine/> (Cote)
 

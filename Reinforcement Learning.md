@@ -1546,6 +1546,8 @@ interesting recent papers:
 
 >	"no opening book, no endgame database, no heuristics, no anything"
 
+  - `video` <https://youtube.com/watch?v=A3ekFcZ3KNw> (Silver)
+
 
 #### ["Giraffe: Using Deep Reinforcement Learning to Play Chess"](http://arxiv.org/abs/1509.01549) Lai
 >	"This report presents Giraffe, a chess engine that uses self-play to discover all its domain-specific knowledge, with minimal hand-crafted knowledge given by the programmer. Unlike previous attempts using machine learning only to perform parameter tuning on hand-crafted evaluation functions, Giraffe’s learning system also performs automatic feature extraction and pattern recognition. The trained evaluation function performs comparably to the evaluation functions of state-of-the-art chess engines - all of which containing thousands of lines of carefully hand-crafted pattern recognizers, tuned over many years by both computer chess experts and human chess masters. Giraffe is the most successful attempt thus far at using end-to-end machine learning to play chess. We also investigated the possibility of using probability thresholds instead of depth to shape search trees. Depth-based searches form the backbone of virtually all chess engines in existence today, and is an algorithm that has become well-established over the past half century. Preliminary comparisons between a basic implementation of probability-based search and a basic implementation of depth-based search showed that our new probability-based approach performs moderately better than the established approach. There are also evidences suggesting that many successful ad-hoc add-ons to depth-based searches are generalized by switching to a probability-based search. We believe the probability-based search to be a more fundamentally correct way to perform minimax. Finally, we designed another machine learning system to shape search trees within the probability-based search framework. Given any position, this system estimates the probability of each of the moves being the best move without looking ahead. The system is highly effective - the actual best move is within the top 3 ranked moves 70% of the time, out of an average of approximately 35 legal moves from each position. This also resulted in a significant increase in playing strength. With the move evaluator guiding a probability-based search using the learned evaluator, Giraffe plays at approximately the level of an FIDE International Master (top 2.2% of tournament chess players with an official rating)."
@@ -2048,7 +2050,7 @@ interesting recent papers:
 
   - `video` <https://youtube.com/watch?v=tMiiKXPirAQ> + <https://youtube.com/watch?v=LV5jYY-JFpE> (demo)
   - `video` <https://youtube.com/watch?v=WCE9hhPbCmc> + <https://youtube.com/watch?v=DpQKpSAMauY> (Kretov) `in russian`
-  - `notes` <https://www.evernote.com/shard/s189/sh/8c7ff9d9-c321-4e83-a802-58f55ebed9ac/bfc614113180a5f4624390df56e73889> (Larochelle)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/nips/MohamedR15>
 
 
 #### ["Variational Intrinsic Control"](http://arxiv.org/abs/1611.07507) Gregor, Rezende, Wierstra

@@ -76,7 +76,6 @@
 
   ["A Few Useful Things to Know about Machine Learning"](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf) by Pedro Domingos  
   ["Expressivity, Trainability, and Generalization in Machine Learning"](http://blog.evjang.com/2017/11/exp-train-gen.html) by Eric Jang  
-  ["In Machine Learning, What is Better: More Data or Better Algorithms"](http://kdnuggets.com/2015/06/machine-learning-more-data-better-algorithms.html) by Xavier Amatriain  
   ["Classification vs. Prediction"](http://fharrell.com/2017/01/classification-vs-prediction.html) by Frank Harrell  
   ["Causality in Machine Learning"](http://unofficialgoogledatascience.com/2017/01/causality-in-machine-learning.html) by Muralidharan et al.  
   ["Are ML and Statistics Complementary?"](https://www.ics.uci.edu/~welling/publications/papers/WhyMLneedsStatistics.pdf) by Max Welling  
@@ -218,42 +217,19 @@
 ---
 ### theory
 
-
-----
-#### bayesian framework
-
-  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#theory)  
-  [bayesian deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)  
-  [bayesian reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#bayesian-reinforcement-learning)  
-
-
-----
-#### representation learning
-
-  [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#theory)
-
-
-----
-#### reinforcement learning
-
-  ["Theory of Reinforcement Learning"](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) by Csaba Szepesvari `video`
-
-
-----
-#### learning theory
-
-  ["Machine Learning has become Alchemy"](https://youtube.com/watch?v=Qi1Yry33TQE&t=11m2s) by Ali Rahimi `video`  
-  ["Statistics in Machine Learning"](https://youtube.com/watch?v=uyZOcUDhIbY&t=17m27s) by Michael I. Jordan `video`  
-  ["Theory in Machine Learning"](https://youtube.com/watch?v=uyZOcUDhIbY&t=23m1s) by Michael I. Jordan `video`  
+  [machine learning has become alchemy](https://youtube.com/watch?v=Qi1Yry33TQE&t=11m2s) by Ali Rahimi `video`  
+  [statistics in machine learning](https://youtube.com/watch?v=uyZOcUDhIbY&t=17m27s) by Michael I. Jordan `video`  
+  [theory in machine learning](https://youtube.com/watch?v=uyZOcUDhIbY&t=23m1s) by Michael I. Jordan `video`  
 
   ["Learning Theory: Purely Theoretical?"](https://hips.seas.harvard.edu/blog/2013/02/15/learning-theory-purely-theoretical/) by Jonathan Huggins
 
 ----
 
-  - what does it mean to learn  
-  - when is a concept/function learnable  
-  - how much data do we need to learn something  
-  - how can we make sure what we learn will generalize to future data  
+  problems:  
+  - What does it mean to learn?  
+  - When is a concept/function learnable?  
+  - How much data do we need to learn something?  
+  - How can we make sure what we learn will generalize to future data?  
 
   theory helps to:  
   - design algorithms  
@@ -262,13 +238,14 @@
   - identify new and refine old challenges  
 
   frameworks:  
-  - Statistical learning theory  
-  - PAC learning or PAC-Bayes  
-  - Minimax estimation (estimation/decision theory)  
+  - [statistical learning theory](#theory---statistical-learning-theory)  
+  - [computational learning theory](#theory---computational-learning-theory) (PAC learning or PAC-Bayes)  
+
 
 ----
+#### theory - statistical learning theory
 
-  Statistical learning theory ingredients:
+  ingredients:
   - distributions
   - i.i.d. samples
   - learning algorithms
@@ -295,13 +272,26 @@
 
   [course](http://work.caltech.edu/telecourse.html) by Yaser Abu-Mostafa `video`
 
+
 ----
+#### theory - computational learning theory
 
   ["Computational Learning Theory, AI and Beyond"](https://www.math.ias.edu/files/mathandcomp.pdf) chapter of "Mathematics and Computation" book by Avi Wigderson
 
   ["Probably Approximately Correct - A Formal Theory of Learning"](http://jeremykun.com/2014/01/02/probably-approximately-correct-a-formal-theory-of-learning/) by Jeremy Kun  
   ["A Problem That is Not (Properly) PAC-learnable"](http://jeremykun.com/2014/04/21/an-un-pac-learnable-problem/) by Jeremy Kun  
   ["Occam’s Razor and PAC-learning"](http://jeremykun.com/2014/09/19/occams-razor-and-pac-learning/) by Jeremy Kun  
+
+
+----
+#### theory - applications
+
+  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#theory)
+
+  [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#theory)
+
+  [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#problems)  
+  ["Theory of Reinforcement Learning"](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) by Csaba Szepesvari `video`  
 
 
 
@@ -318,6 +308,8 @@
   - How to quantify uncertainty?  
   - How to take into account the costs of decisions?  
   - How to handle non-indepedent and non-stationary data?  
+
+----
 
   [**things to know**](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)  
   - it's generalization that counts  
@@ -446,7 +438,7 @@
 
   ["The Three Cultures of Machine Learning"](https://www.cs.jhu.edu/~jason/tutorials/ml-simplex.html) by Jason Eisner  
   ["Algorithmic Dimensions"](https://justindomke.wordpress.com/2015/09/14/algorithmic-dimensions/) by Justin Domke  
-  ["All Models of Learning have Flaws"](http://hunch.net/?p=224) by John Langford  
+  ["All Models of Learning Have Flaws"](http://hunch.net/?p=224) by John Langford  
 
 ----
 
@@ -1073,8 +1065,16 @@
 >	"ChaLearn is organizing for IJCNN 2015 an Automatic Machine Learning challenge (AutoML) to solve classification and regression problems from given feature representations, without any human intervention. This is a challenge with code submission: the code submitted can be executed automatically on the challenge servers to train and test learning machines on new datasets. However, there is no obligation to submit code. Half of the prizes can be won by just submitting prediction results. There are six rounds (Prep, Novice, Intermediate, Advanced, Expert, and Master) in which datasets of progressive difficulty are introduced (5 per round). There is no requirement to participate in previous rounds to enter a new round. The rounds alternate AutoML phases in which submitted code is “blind tested” on datasets the participants have never seen before, and Tweakathon phases giving time (~1 month) to the participants to improve their methods by tweaking their code on those datasets. This challenge will push the state-of-the-art in fully automatic machine learning on a wide range of problems taken from real world applications."
 
 
-#### ["Taking the Human Out of the Loop: A Review of Bayesian Optimization"](https://www.cs.ox.ac.uk/people/nando.defreitas/publications/BayesOptLoop.pdf) Shahriari, Swersky, Wang, Adams, de Freitas
->	"Big data applications are typically associated with systems involving large numbers of users, massive complex software systems, and large-scale heterogeneous computing and storage architectures. The construction of such systems involves many distributed design choices. The end products (e.g., recommendation systems, medical analysis tools, real-time game engines, speech recognizers) thus involves many tunable configuration parameters. These parameters are often specified and hard-coded into the software by various developers or teams. If optimized jointly, these parameters can result in significant improvements. Bayesian optimization is a powerful tool for the joint optimization of design choices that is gaining great popularity in recent years. It promises greater automation so as to increase both product quality and human productivity. This review paper introduces Bayesian optimization, highlights some of its methodological aspects, and showcases a wide range of applications."
+#### ["Population Based Training of Neural Networks"](https://arxiv.org/abs/1711.09846) Jaderberg et al.
+>	"Neural networks dominate the modern machine learning landscape, but their training and success still suffer from sensitivity to empirical choices of hyperparameters such as model architecture, loss function, and optimisation algorithm. In this work we present Population Based Training, a simple asynchronous optimisation algorithm which effectively utilises a fixed computational budget to jointly optimise a population of models and their hyperparameters to maximise performance. Importantly, PBT discovers a schedule of hyperparameter settings rather than following the generally sub-optimal strategy of trying to find a single fixed set to use for the whole course of training. With just a small modification to a typical distributed hyperparameter training framework, our method allows robust and reliable training of models. We demonstrate the effectiveness of PBT on deep reinforcement learning problems, showing faster wall-clock convergence and higher final performance of agents by optimising over a suite of hyperparameters. In addition, we show the same method can be applied to supervised learning for machine translation, where PBT is used to maximise the BLEU score directly, and also to training of Generative Adversarial Networks to maximise the Inception score of generated images. In all cases PBT results in the automatic discovery of hyperparameter schedules and model selection which results in stable training and better final performance."
+
+>	"Two common tracks for the tuning of hyperparameters exist: parallel search and sequential optimisation, which trade-off concurrently used computational resources with the time required to achieve optimal results. Parallel search performs many parallel optimisation processes (by optimisation process we refer to neural network training runs), each with different hyperparameters, with a view to finding a single best output from one of the optimisation processes – examples of this are grid search and random search. Sequential optimisation performs few optimisation processes in parallel, but does so many times sequentially, to gradually perform hyperparameter optimisation using information obtained from earlier training runs to inform later ones – examples of this are hand tuning and Bayesian optimisation. Sequential optimisation will in general provide the best solutions, but requires multiple sequential training runs, which is often unfeasible for lengthy optimisation processes."
+
+>	"In this work, we present a simple method, Population Based Training which bridges and extends parallel search methods and sequential optimisation methods. Advantageously, our proposal has a wallclock run time that is no greater than that of a single optimisation process, does not require sequential runs, and is also able to use fewer computational resources than naive search methods such as random or grid search. Our approach leverages information sharing across a population of concurrently running optimisation processes, and allows for online propagation/transfer of parameters and hyperparameters between members of the population based on their performance."
+
+>	"Furthermore, unlike most other adaptation schemes, our method is capable of performing online adaptation of hyperparameters – which can be particularly important in problems with highly non-stationary learning dynamics, such as reinforcement learning settings, where the learning problem itself can be highly non-stationary (e.g. dependent on which parts of an environment an agent is currently able to explore). As a consequence, it might be the case that the ideal hyperparameters for such learning problems are themselves highly non-stationary, and should vary in a way that precludes setting their schedule in advance."
+
+  - `post` <https://deepmind.com/blog/population-based-training-neural-networks/>
 
 
 #### ["Data Programming: Creating Large Training Sets, Quickly"](https://arxiv.org/abs/1605.07723) Ratner, Sa, Wu, Selsam, Re

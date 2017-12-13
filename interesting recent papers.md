@@ -275,7 +275,7 @@ interesting older papers:
 >	"Interpretation of Gaussian dropout as performing variational inference in a network with log uniform priors over weights leads to sparsity in weights. This is an interesting approach, wherein sparsity stemsfrom variational optimization instead of the prior."  
   - `video` <https://vimeo.com/238221185> (Molchanov)
   - `video` <https://youtube.com/watch?v=jJDVYAxyE3U> (Molchanov) `in russian`
-  - `code` <https://github.com/ars-ashuha/variational-dropout-sparsifies-dnn>
+  - `code` <https://github.com/BayesWatch/tf-variational-dropout>
   - `paper` ["Variational Gaussian Dropout is not Bayesian"](https://arxiv.org/abs/1711.02989) by Hron, Matthews, Ghahramani
 
 ----
@@ -327,9 +327,24 @@ interesting older papers:
   - `post` <http://yingzhenli.net/home/blog/?p=536>
   - `code` <https://github.com/DartML/Stein-Variational-Gradient-Descent>
 
+#### ["Bayesian Hypernetworks"](https://arxiv.org/abs/1710.04759) Krueger, Huang, Islam, Turner, Lacoste, Courville
+  `variational inference` `posterior approximation` `normalizing flows`
+>	"A Bayesian hypernetwork, h, is a neural network which learns to transform a simple noise distribution, p(ϵ)=N(0,I), to a distribution q(θ) = q(h(ϵ)) over the parameters θ of primary neural network. We train q with variational inference, using an invertible h to enable efficient estimation of the variational lower bound on the posterior p(θ|D) via sampling. In contrast to most methods for Bayesian deep learning, Bayesian hypernets can represent a complex multimodal approximate posterior with correlations between parameters, while enabling cheap i.i.d. sampling of q(θ)."  
+>	"The key insight for building such a model is the use of an invertible hypernet, which enables Monte Carlo estimation of the entropy term log q(θ) in the variational inference training objective."  
+>	"The number of parameters of a DNN scales approximately quadratically in the number of units per layer, so naively parametrizing a large primary net would require an impractically large hypernet. Efficient parametrization of hypernets, however, can actually compress the total size of a network. Factoring a 100x100 weight matrix, W into as W = E100×7 * H7×100 can be viewed as using a simple hypernet (H) to compress the rows of W into 7-dimensional encodings (E)."  
+>	"Bayes by Backprop can be can be viewed as a trivial instance of a Bayesian hypernet, where the hypernetwork only performs an element-wise scale and shift of the noise (yielding a factorial Gaussian distribution), which is equivalent to using a hypernet with 0 coupling layers."  
+>	"In order to scale BHNs to large primary networks, we use the weight normalization reparametrization: θ = gu; u = v/||v||. We only output the scaling factors g from the hypernet, and learn a maximum likelihood estimate of v. This allows us to overcome the computational limitations of naively-parametrized BHNs, since computation now scales linearly, instead of quadratically, in the number of primary net units. Using this parametrization restricts the family of approximate posteriors, but still allows for a high degree of multimodality and dependence between the parameters. Since q(θ) is now a degenerate distribution (i.e. it is entirely concentrated in a lower-dimensional manifold), we cannot compute KL(q(θ)||p(θ|D)). Instead, we treat g as a random variable, whose distribution induces a distribution (parametrized by u) over θ, and simply compute KL(q(g)||p(g|D)). Since the scale of u is fixed, the scale of g is intuitively meaningful, and we can easily translate commonly-used spherical prior distributions over θ into the priors over g."  
+  - `video` <http://videolectures.net/deeplearning2017_krueger_bayesian_networks/> (Krueger)
+
+#### ["Multiplicative Normalizing Flows for Variational Bayesian Neural Networks"](https://arxiv.org/abs/1703.01961) Louizos, Welling
+  `variational inference` `posterior approximation` `normalizing flows` `auxiliary variables`
+>	"We reinterpret multiplicative noise in neural networks as auxiliary random variables that augment the approximate posterior in a variational setting for Bayesian neural networks. We show that through this interpretation it is both efficient and straightforward to improve the approximation by employing normalizing flows while still allowing for local reparametrizations and a tractable lower bound."  
+>	"Authors propose and dismiss Bayesian Hypernetworks due to the issues of scaling to large primary networks. They use a hypernet to generate scaling factors, z on the means µ of a factorial Gaussian distribution. Because z can follow a complicated distribution, this forms a highly flexible approximate posterior: q(θ) = ∫q(θ|z)q(z)dz. This approach also requires to introduce an auxiliary inference network to approximate p(z|θ) in order to estimate the entropy term of the variational lower bound, resulting in lower bound on the variational lower bound."  
+  - `code` <https://github.com/AMLab-Amsterdam/MNF_VBNN>
+
 #### ["Improving Variational Inference with Inverse Autoregressive Flow"](http://arxiv.org/abs/1606.04934) Kingma, Salimans, Jozefowicz, Chen, Sutskever, Welling
-  `variational inference` `posterior approximation`
->	"Most VAEs have so far been trained using crude approximate posteriors, where every latent variable is independent. Normalizing Flows have addressed this problem by conditioning each latent variable on the others before it in a chain, but this is computationally inefficient due to the introduced sequential dependencies. The core contribution of this work, termed inverse autoregressive flow (IAF), is a new approach that, unlike previous work, allows us to parallelize the computation of rich approximate posteriors, and make them almost arbitrarily flexible."  
+  `variational inference` `posterior approximation` `normalizing flows` `IAF`
+>	"Most VAEs have so far been trained using crude approximate posteriors, where every latent variable is independent. Normalizing Flows have addressed this problem by conditioning each latent variable on the others before it in a chain, but this is computationally inefficient due to the introduced sequential dependencies. Inverse autoregressive flow, unlike previous work, allows us to parallelize the computation of rich approximate posteriors, and make them almost arbitrarily flexible."  
   - `code` <https://github.com/openai/iaf>
 
 #### ["Neural Variational Inference and Learning in Undirected Graphical Models"](https://arxiv.org/abs/1711.02679) Kuleshov, Ermon
@@ -356,7 +371,7 @@ interesting older papers:
   `variational inference` `posterior approximation` `discrete latent variables`
   - `video` <http://techtalks.tv/talks/variational-inference-for-monte-carlo-objectives/62507/>
   - `video` <https://youtu.be/_XRBlhzb31U?t=27m16s> (Figurnov) `in russian`
-  - `notes` <https://evernote.com/shard/s189/sh/54a9fb88-1a71-4e8a-b0e3-f13480a68b8d/0663de49b93d397f519c7d7f73b6a441>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/MnihR16>
 
 #### ["Importance Weighted Autoencoders"](http://arxiv.org/abs/1509.00519) Burda, Grosse, Salakhutdinov
   `variational inference` `posterior approximation`
@@ -431,10 +446,6 @@ interesting older papers:
 #### ["Deep Neural Networks as Gaussian Processes"](https://arxiv.org/abs/1711.00165) Lee, Bahri, Novak, Schoenholz, Pennington, Sohl-Dickstein
   `bayesian model`
 
-#### ["Bayesian Hypernetworks"](https://arxiv.org/abs/1710.04759) Krueger, Huang, Islam, Turner, Lacoste, Courville
-  `bayesian model`
-  - `video` <http://videolectures.net/deeplearning2017_krueger_bayesian_networks/> (Krueger)
-
 #### ["Bayesian GAN"](https://arxiv.org/abs/1705.09558) Saatchi, Wilson
   `bayesian model`
 >	"In this paper, we present a simple Bayesian formulation for end-to-end unsupervised and semi-supervised learning with generative adversarial networks. Within this framework, we marginalize the posteriors over the weights of the generator and discriminator using stochastic gradient Hamiltonian Monte Carlo. We interpret data samples from the generator, showing exploration across several distinct modes in the generator weights. We also show data and iteration efficient learning of the true distribution. We also demonstrate state of the art semi-supervised learning performance on several benchmarks, including SVHN, MNIST, CIFAR-10, and CelebA. The simplicity of the proposed approach is one of its greatest strengths: inference is straightforward, interpretable, and stable. Indeed all of the experimental results were obtained without feature matching, normalization, or any ad-hoc techniques."
@@ -442,9 +453,10 @@ interesting older papers:
   - `code` <https://github.com/andrewgordonwilson/bayesgan/>
 
 #### ["Bayesian Recurrent Neural Networks"](https://arxiv.org/abs/1704.02798) Fortunato, Blundell, Vinyals
-  `bayesian model`
+  `bayesian model` `uncertainty estimation` `Bayes by Backprop`
   - `code` <https://github.com/DeNeutoy/bayesian-rnn>
   - `code` <https://github.com/mirceamironenco/BayesianRecurrentNN>
+  - `paper` ["Weight Uncertainty in Neural Networks"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#weight-uncertainty-in-neural-networks-blundell-cornebise-kavukcuoglu-wierstra) by Blundell et al. `summary`
 
 #### ["Sequential Neural Models with Stochastic Layers"](http://arxiv.org/abs/1605.07571) Fraccaro, Sønderby, Paquet, Winther
   `bayesian model`
@@ -655,7 +667,7 @@ interesting older papers:
   - `video` <https://youtu.be/nqiUFc52g78?t=58m45s> (Graves)
   - `video` <https://vimeo.com/240428387#t=1h28m28s> (Vinyals)
   - `post` <http://distill.pub/2016/augmented-rnns/>
-  - `notes` <https://www.evernote.com/shard/s189/sh/fd165646-b630-48b7-844c-86ad2f07fcda/c9ab960af967ef847097f21d94b0bff7>
+  - `post` <https://www.evernote.com/shard/s189/sh/fd165646-b630-48b7-844c-86ad2f07fcda/c9ab960af967ef847097f21d94b0bff7>
   - `code` <https://github.com/DeNeutoy/act-tensorflow>
 
 ----
@@ -1533,6 +1545,13 @@ interesting older papers:
 >	"Bellman residuals are prevalent in Approximate Dynamic Programming. Notably, value iteration minimizes such a residual using a fixed-point approach and policy iteration minimizes it with a Newton descent. On another hand, maximizing the mean value is prevalent in policy search approaches."  
 >	"As Bellman residual minimization methods are naturally value-based and mean value maximization approaches policy-based, we introduced a policy-based residual minimization algorithm in order to study both optimization problems together. For the introduced residual method, we proved a proxy bound, better than value-based residual minimization. The different nature of the bounds made the comparison difficult, but both involve the same concentrability coefficient, a term often underestimated in RL bounds. Therefore, we compared both approaches empirically on a set of randomly generated Garnets, the study being designed to quantify the influence of this concentrability coefficient. From these experiments, it appears that the Bellman residual is a good proxy for the error (the distance to the optimal value function) only if, luckily, the concentrability coefficient is small for the considered MDP and the distribution of interest, or one can afford a change of measure for the optimization problem, such that the sampling distribution is close to the ideal one."  
 
+#### ["Bayesian Policy Gradients via Alpha Divergence Dropout Inference"](https://arxiv.org/abs/1712.02037) Henderson, Doan, Islam, Meger
+  `α-BNN` `Q-learning` `continuous control`
+>	"Policy gradient methods have had great success in solving continuous control tasks, yet the stochastic nature of such problems makes deterministic value estimation difficult. We propose an approach which instead estimates a distribution by fitting the value function with a Bayesian Neural Network. We optimize an α-divergence objective with Bayesian dropout approximation to learn and estimate this distribution. We show that using the Monte Carlo posterior mean of the Bayesian value function distribution, rather than a deterministic network, improves stability and performance of policy gradient methods (TRPO, PPO and DDPG) in continuous control MuJoCo simulations."  
+>	"We build off of work in Bayesian Neural Networks and distributional perspectives in uncertain value functions to demonstrate an extension which can successfully be leveraged in continuous control domains with dropout uncertainty estimates."  
+>	"We find large improvements in Proximal Policy Optimization from using the posterior mean. We suspect that these improvements are partially due to the added exploration, aiding the on-policy and adaptive nature of PPO, during early stages of learning where the uncertainty distribution is large. This is backed by ablation analysis where we find that PPO in the Half-Cheetah environment sees larger improvements from a higher dropout rate (presumably yielding slightly more exploratory value estimates)."  
+>	"We found that the Q-value estimates in DDPG were much lower than in the baseline version. We believe this is due to a variance reduction property as in Double-DQN. While in Double-DQN, two function approximators are used for the Q-value function, using dropout effectively creates a parallel to Double-DQN where many different approximators are used from the same set of network weights."  
+
 #### ["Distributional Reinforcement Learning with Quantile Regression"](https://arxiv.org/abs/1710.10044) Dabney, Rowland, Bellemare, Munos
   `QR-DQN` `Q-learning`
 >	"One of the theoretical contributions of the C51 work was a proof that the distributional Bellman operator is a contraction in a maximal form of the Wasserstein metric between probability distributions. In this context, the Wasserstein metric is particularly interesting because it does not suffer from disjoint-support issues which arise when performing Bellman updates. Unfortunately, this result does not directly lead to a practical algorithm: the Wasserstein metric, viewed as a loss, cannot generally be minimized using stochastic gradient methods. This negative result left open the question as to whether it is possible to devise an online distributional reinforcement learning algorithm which takes advantage of the contraction result. Instead, the C51 algorithm first performs a heuristic projection step, followed by the minimization of a KL divergence between projected Bellman update and prediction. The work therefore leaves a theory-practice gap in our understanding of distributional reinforcement learning, which makes it difficult to explain the good performance of C51. Thus, the existence of a distributional algorithm that operates end-to-end on the Wasserstein metric remains an open question."  
@@ -1540,6 +1559,7 @@ interesting older papers:
 >	- We “transpose” the parametrization from C51: whereas the former uses N fixed locations for its approximation distribution and adjusts their probabilities, we assign fixed, uniform probabilities to N adjustable locations  
 >	- We show that quantile regression may be used to stochastically adjust the distributions’ locations so as to minimize the Wasserstein distance to a target distribution  
 >	- We formally prove contraction mapping results for our overall algorithm, and use these results to conclude that our method performs distributional RL end-to-end under the Wasserstein metric, as desired"  
+  - `post` <https://mtomassoli.github.io/2017/12/08/distributional_rl/>
   - `code` <https://github.com/NervanaSystems/coach/blob/master/agents/qr_dqn_agent.py>
 
 #### ["A Distributional Perspective on Reinforcement Learning"](https://arxiv.org/abs/1707.06887) Bellemare, Dabney, Munos
@@ -1552,6 +1572,7 @@ interesting older papers:
   - `video` <https://vimeo.com/235922311> (Bellemare)
   - `video` <https://vimeo.com/237274251> (Bellemare)
   - `video` <https://youtu.be/bsuvM1jO-4w?t=4m45s> (Mnih)
+  - `post` <https://mtomassoli.github.io/2017/12/08/distributional_rl/>
   - `post` <https://flyyufelix.github.io/2017/10/24/distributional-bellman.html>
   - `code` <https://github.com/flyyufelix/C51-DDQN-Keras>
   - `code` <https://github.com/reinforceio/tensorforce/blob/master/tensorforce/models/categorical_dqn_model.py>
@@ -2115,16 +2136,17 @@ hieves."
 
 ----
 #### ["Noisy Networks for Exploration"](https://arxiv.org/abs/1706.10295) Fortunato, Azar, Piot, Menick, Osband, Graves, Mnih, Munos, Hassabis, Pietquin, Blundell, Legg
-  `approximate bayesian exploration`
+  `state dependent exploration` 
 >	"scale of perturbation to parameters is learned along with original objective function"  
   - `video` <https://youtu.be/fevMOp5TDQs?t=1h27s> (Mnih)
   - `code` <https://github.com/Kaixhin/NoisyNet-A3C>
   - `code` <https://github.com/andrewliao11/NoisyNet-DQN>
 
 #### ["Parameter Space Noise for Exploration"](https://arxiv.org/abs/1706.01905) Plappert, Houthooft, Dhariwal, Sidor, Chen, Chen, Asfour, Abbeel, Andrychowicz
-  `approximate bayesian exploration`
+  `state dependent exploration` 
   - `post` <https://blog.openai.com/better-exploration-with-parameter-noise/>
 
+----
 #### ["UCB and InfoGain Exploration via Q-Ensembles"](https://arxiv.org/abs/1706.01502) Chen, Sidor, Abbeel, Schulman
   `approximate bayesian exploration`
 
@@ -2442,6 +2464,7 @@ hieves."
 
 #### ["Time-Contrastive Networks: Self-Supervised Learning from Video"](https://arxiv.org/abs/1704.06888) Sermanet, Lynch, Chebotar, Hsu, Jang, Schaal, Levine
   `reinforcement learning from demonstrations` `TCN`
+  - <https://sermanet.github.io/imitate/>
   - `video` <https://youtube.com/watch?v=b1UTUQpxPSY>
   - `code` <https://github.com/tensorflow/models/tree/master/research/tcn>
 
@@ -2650,6 +2673,8 @@ hieves."
 >	- Learn vector representations of symbols end-to-end from proof success  
 >	- Make use of provided rules in soft proofs  
 >	- Induce interpretable rules end-to-end from proof success"  
+  - `video` <https://facebook.com/nipsfoundation/videos/1554402331317667> (28:51)
+  - `poster` <https://rockt.github.io/pdf/rocktaschel2017end-poster.pdf>
   - `slides` <https://rockt.github.io/pdf/rocktaschel2017end-slides.pdf> (Rocktaschel)
   - `slides` <http://aitp-conference.org/2017/slides/Tim_aitp.pdf> (Rocktaschel)
   - `slides` <http://on-demand.gputechconf.com/gtc-eu/2017/presentation/23372-tim-rocktäschel-gpu-accelerated-deep-neural-networks-for-end-to-end-differentiable-planning-and-reasoning.pdf> (Rocktaschel)

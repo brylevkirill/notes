@@ -1032,6 +1032,7 @@
   ["Weak Supervision: The New Programming Paradigm for Machine Learning"](https://hazyresearch.github.io/snorkel/blog/ws_blog_post.html) `post`  
   ["Learning to Compose Domain-Specific Transformations for Data Augmentation"](https://hazyresearch.github.io/snorkel/blog/tanda.html) `post`  
   ["Exploiting Building Blocks of Data to Efficiently Create Training Sets"](http://dawn.cs.stanford.edu/2017/09/14/coral/) `post`  
+  ["Programming Training Data: The New Interface Layer for ML"](https://hazyresearch.github.io/snorkel/blog/snorkel_programming_training_data.html) `post`  
 
 ----
 
@@ -1715,7 +1716,6 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
   - `video` <http://youtu.be/-WPP9f1P-Xc?t=22m28s> (Blunsom)
   - `slides` <http://egrefen.com/docs/HowMuchLinguistics2015.pdf>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/nips/HermannKGEKSB15>
-  - `notes` <https://www.evernote.com/shard/s189/sh/ade22da1-4813-4b5c-89a5-3fdf7dbad8ee/ce8b7234b42c62882609047ecc289920>
   - `code` <https://github.com/carpedm20/attentive-reader-tensorflow>
   - `paper` ["A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task"](https://arxiv.org/abs/1606.02858) by Chen, Bolton, Manning
 
