@@ -164,6 +164,10 @@
 
 	<https://nips17.ml>
 
+	<https://github.com/hindupuravinash/nips2017>  
+	<https://github.com/kihosuh/nips_2017>  
+	<https://github.com/sbarratt/nips2017>  
+
   - ICML 2017  
 	<https://vimeo.com/user72337760> `video`
 
@@ -469,7 +473,7 @@
 
   [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
   [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
-  [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
+  [knowledge representation](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation)  
 
 
 
@@ -489,15 +493,6 @@
   - *over-representation*:  Often syntactically distinct programs will be semantically identical (i.e. represent the same underlying behavior or functional mapping). Lacking prior knowledge, many algorithms will inefficiently sample semantically identical programs repeatedly.  
   - *chaotic execution*: Programs that are very similar, syntactically, may be very different, semantically. This presents difficulty for many heuristic search algorithms, which require syntactic and semantic distance to be correlated.  
   - *high resource-variance*:  Programs in the same space may vary greatly in the space and time they require to execute."  
-
-  "Limitations of program learning:  
-  - can't overrule no-free-lunch  
-    * averaged over all possible scoring functions  
-  - can't learn to model "arbitrary" Turing machines  
-  - can't scale up to large programs  
-    * without external guidance  
-    * without strong structural inductive bias  
-    * without relatedness to past problems"  
 
 ----
 

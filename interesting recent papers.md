@@ -45,6 +45,9 @@ interesting older papers:
 [interesting older papers](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---theory)
 
 ----
+#### ["Mathematics of Deep Learning"](https://arxiv.org/abs/1712.04741) Vidal, Bruna, Giryes, Soatto
+
+----
 #### ["Understanding Deep Learning Requires Rethinking Generalization"](http://arxiv.org/abs/1611.03530) Zhang, Bengio, Hardt, Recht, Vinyals
   `generalization`
 >	"1. The effective capacity of neural networks is large enough for a brute-force memorization of the entire data set.  
@@ -235,7 +238,7 @@ interesting older papers:
 #### ["A Scalable Laplace Approximation for Neural Networks"](https://openreview.net/forum?id=Skdvd2xAZ)
   `uncertainty estimation`
 >	"We leverage recent insights from second-order optimisation for neural networks to construct a Kronecker factored Laplace approximation to the posterior over the weights of a trained network. Our approximation requires no modification of the training procedure, enabling practitioners to estimate the uncertainty of their models currently used in production without having to retrain them. We extensively compare our method to using Dropout and a diagonal Laplace approximation for estimating the uncertainty of a network. We demonstrate that our Kronecker factored method leads to better uncertainty estimates on out-of-distribution data and is more robust to simple adversarial attacks. We illustrate its scalability by applying it to a state-of-the-art convolutional network architecture."  
-  - `video` ["Optimizing Neural Networks using Structured Probabilistic Models of the Gradient Computation"](https://fields.utoronto.ca/video-archive/2017/02/2267-16498) (Grosse)
+  - `video` ["Optimizing Neural Networks using Structured Probabilistic Models of the Gradient Computation"](https://www.fields.utoronto.ca/video-archive/2017/02/2267-16498) (Grosse)
   - `video` ["Optimizing NN using Kronecker-factored Approximate Curvature"](https://youtube.com/watch?v=FLV-MLPt3sU) (Kropotov)
   - `post` <https://medium.com/@yaroslavvb/optimizing-deeper-networks-with-kfac-in-pytorch-4004adcba1b0>
 
@@ -782,7 +785,7 @@ interesting older papers:
   `MAML`
 >	"Tasks are sampled and a policy gradient update is computed for each task with respect to a fixed initial set of parameters. Subsequently, a meta update is performed where a gradient step is taken that moves the initial parameter in a direction that would have maximally benefited the average return over all of the sub-updates."  
 >	"Unlike prior methods, the MAML learner’s weights are updated using the gradient, rather than a learned update rule. Our method does not introduce any additional parameters into the learning process and does not require a particular learner model architecture."  
->	"MAML optimizes for a set of parameters such that when a gradient step is taken with respect to a particular task i, the parameters are close to the optimal parameters θi for task i."  
+>	"MAML finds a shared parameter θ such that for a given task, one gradient step on θ using the training set will yield a model with good predictions on the test set. Then, a meta-gradient update is performed from the test error through the one gradient step in the training set, to update θ."  
   - <https://sites.google.com/view/maml> (demo)
   - `video` <https://youtu.be/Ko8IBbYjdq8?t=18m51s> (Finn)
   - `video` <https://youtu.be/lYU5nq0dAQQ?t=44m57s> (Levine)
@@ -792,7 +795,7 @@ interesting older papers:
 
 #### ["Optimization as a Model for Few-Shot Learning"](https://openreview.net/forum?id=rJY0-Kcll) Ravi, Larochelle
 >	"Using LSTM meta-learner in a few-shot classification setting, where the traditional learner was a convolutional-network-based classifier. In this setting, the whole meta-learning algorithm is decomposed into two parts: the traditional learner’s initial parameters are trained to be suitable for fast gradient-based adaptation; the LSTM meta-learner is trained to be an optimization algorithm adapted for meta-learning tasks."  
->	"few-shot learning by unrolling gradient descent on small training set" 
+>	"Encoding network reads the training set and generate the parameters of a model, which is trained to perform well on the testing set."  
   - `video` <https://facebook.com/iclr.cc/videos/1713144705381255/> (1:26:48) (Ravi)
   - `video` <http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/> (1:08:08) (de Freitas)
   - `code` <https://github.com/twitter/meta-learning-lstm>
@@ -870,13 +873,15 @@ interesting older papers:
 #### ["Few-shot Autoregressive Density Estimation: Towards Learning to Learn Distributions"](https://arxiv.org/abs/1710.10304) Reed, Chen, Paine, Oord, Eslami, Rezende, Vinyals, de Freitas
 
 ----
-#### ["Prototypical Networks for Few-shot Learning"](https://arxiv.org/abs/1703.05175) Snell, Swersky, Zemel
-
 #### ["Learning to Remember Rare Events"](http://arxiv.org/abs/1703.03129) Kaiser, Nachum, Roy, Bengio
   - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#learning-to-remember-rare-events-kaiser-nachum-roy-bengio>
 
+#### ["Prototypical Networks for Few-shot Learning"](https://arxiv.org/abs/1703.05175) Snell, Swersky, Zemel
+>	"Extension to Matching Networks which uses euclidean distance instead of cosine and builds a prototype representation of each class for the few-shot learning scenario."  
+
 #### ["Matching Networks for One Shot Learning"](http://arxiv.org/abs/1606.04080) Vinyals, Blundell, Lillicrap, Kavukcuoglu, Wierstra
->	"Given just a few, or even a single, examples of an unseen class, it is possible to attain high classification accuracy on ImageNet using Matching Networks.  The core architecture is simple and straightforward to train and performant across a range of image and text classification tasks. Matching Networks are trained in the same way as they are tested: by presenting a series of instantaneous one shot learning training tasks, where each instance of the training set is fed into the network in parallel. Matching Networks are then trained to classify correctly over many different input training sets. The effect is to train a network that can classify on a novel data set without the need for a single step of gradient descent."  
+>	"Given just a few, or even a single, examples of an unseen class, it is possible to attain high classification accuracy on ImageNet using Matching Networks. Matching Networks are trained in the same way as they are tested: by presenting a series of instantaneous one shot learning training tasks, where each instance of the training set is fed into the network in parallel. Matching Networks are then trained to classify correctly over many different input training sets. The effect is to train a network that can classify on a novel data set without the need for a single step of gradient descent."  
+>	"End-to-end trainable K-nearest neighbors which accepts support sets of images as input and maps them to desired labels. Attention LSTM takes into account all samples of subset when computing the pair-wise cosine distance between samples."  
   - `poster` <https://pbs.twimg.com/media/Cy7Eyh5WgAAZIw2.jpg:large>
   - `notes` <https://theneuralperspective.com/2017/01/03/matching-networks-for-one-shot-learning/>
   - `notes` <https://blog.acolyer.org/2017/01/03/matching-networks-for-one-shot-learning/>
@@ -1031,9 +1036,18 @@ interesting older papers:
   - [autoregressive models](#generative-models---autoregressive-models)
 
 ----
-#### ["A Note on the Evaluation of Generative Models"](http://arxiv.org/abs/1511.01844) Theis, Oord, Bethge
+#### ["Comparison of Maximum Likelihood and GAN-based training of Real NVPs"](https://arxiv.org/abs/1705.05263) Danihelka, Lakshminarayanan, Uria, Wierstra, Dayan
   `evaluation`
-  - `video` <http://videolectures.net/iclr2016_theis_generative_models/> (Theis)
+>	"We use a tractable generator architecture for which the log-probability densities can be computed exactly. We train the generator architecture by maximum likelihood and we also train the same generator architecture by GAN. We then compare the properties of the learned generators."  
+>	"Generators trained by WGAN produce more globally coherent samples even from a relatively shallow generator."  
+>	"Minimization of the approximate Wasserstein distance does not correspond to minimization of the negative log-probability density. The negative log-probability densities became worse than densities from a uniform distribution."  
+>	"An approximation of the Wasserstein distance ranked correctly generators trained by maximum likelihood."  
+>	"The approximate Wasserstein distance between the training data and the generator distribution became smaller than the distance between the test data and the generator distribution. This overfitting was observed for generators trained by maximum likelihood and also for generators trained by WGAN."  
+>	"We inspected the negative log-probability density of samples from generator trained by WGAN. The negative log-probability density can be negative, if the probability density is bigger than 1. In contrast, the NVP generator trained by maximum likelihood assigned on average positive values to its own generated samples. A deep generator trained by WGAN learns a distribution lying on a low dimensional manifold. The generator is then putting the probability mass only to a space with a near-zero volume. We may need a more powerful critic to recognize the excessively correlated pixels. Approximating the likelihood by annealed importance sampling (Wu et al., 2016) would not discover this problem, as their analysis assumes a Gaussian observation model with a fixed variance. The problem is not unique to WGAN. We also obtained near-infinite negative log-probability densities when training GAN to minimize the Jensen-Shannon divergence."  
+>	"One of the advantages of real NVPs is that we can infer the original latent z0 for a given generated sample. We know that the distribution of the latent variables is the prior N(0,1), if the given images are from the generator. We are curious to see the distribution of the latent variables, if the given images are from the validation set. We display a 2D histogram of the first 2 latent variables z0[1], z0[2]. The histogram was obtained by inferring the latent variables for all examples from the validation set. When the generator was trained by maximum likelihood, the inferred latent variables had the following means and standard deviations: µ1 = 0.05, µ2 = 0.05, σ1 = 1.06, σ2 = 1.03. In contrast, the generator trained by WGAN had inferred latent variables with significantly larger standard deviations: µ1 = 0.02, µ2 = 1.62, σ1 = 3.95, σ2 = 8.96. When generating the latent variables from the N(0,1) prior, the samples from the generator trained by WGAN would have a different distribution than the validation set."  
+>	"Real NVPs are invertible transformations and have perfect reconstructions. We can still visualize reconstructions from a partially resampled latent vector. Gregor et al. (2016) and Dinh et al. (2016) visualized ‘conceptual compression’ by inferring the latent variables and then resampling a part of the latent variables from the normal N(0,1) prior. The subsequent reconstruction should still form a valid image. If the original image was generated by the generator, the partially resampled latent vector would still have the normal N(0,1) distribution. We show the reconstructions if resampling the first half or the second half of the latent vector. The generator trained by maximum likelihood has partial reconstructions similar to generated samples. In comparison, the partial reconstructions from the generator trained by WGAN do not resemble samples from WGAN. This again indicates that the validation examples have a different distribution than WGAN samples."  
+>	"We looked at the approximate Wasserstein distance between the validation data and the generator distribution. We will train another critic to assign high values to validation samples and low values to generated samples. This independent critic will be used only for evaluation. The generator will not see the gradients from the independent critic. We display the approximate Wasserstein distance between the validation set and the generator distribution. The first thing to notice is the correct ordering of generators trained by maximum likelihood. The deepest generator has the smallest approximate distance from the validation set, as indicated by the thick solid lines. We also display an approximate distance between the training set and generator distribution, and the approximate distance between the test set and the generator distribution. The approximate distance between the test set and the generator distribution is a little bit smaller than the approximate distance between the validation set and the generator distribution. The approximate distance between the training set and the generator distribution is much smaller. The generators are overfitting the training set."  
+>	"Real NVP can be used as an encoder in Adversarial Variational Bayes. We were able to measure the gap between the unbiased KL estimate log q(z|x) - log p(z) and its approximation from GAN. We show that Adversarial Variational Bayes underestimates the KL divergence."  
 
 #### ["On the Quantitative Analysis of Decoder-based Generative Models"](http://arxiv.org/abs/1611.04273) Wu, Burda, Salakhutdinov, Grosse
   `evaluation`
@@ -1058,6 +1072,10 @@ interesting older papers:
 >
 >	"If we compare images in pixel space, none of the generated distributions by GANs pass those tests. Basically this method notice that there are artefacts in which the two-sample tests can lock onto to distinguish between real and fake images."  
 >	"Authors also showed that if instead comparing in the pixel space, the comparison is made in some transformed space (in their case the final layer in a Resnet structure), the fake samples and the true samples were indistinguishable. This result is quite appealing, because there are some statistics in which the GANs samples are distributed like the real samples and those statistics are sufficient for our problem in hand then we might be able to rely on GANs as a simulator. The main questions is for which statistics this happens and how broad they are."  
+
+#### ["A Note on the Evaluation of Generative Models"](http://arxiv.org/abs/1511.01844) Theis, Oord, Bethge
+  `evaluation`
+  - `video` <http://videolectures.net/iclr2016_theis_generative_models/> (Theis)
 
 ----
 #### ["Variational Approaches for Auto-Encoding Generative Adversarial Networks"](https://arxiv.org/abs/1706.04987) Rosca, Lakshminarayanan, Warde-Farley, Mohamed
@@ -1099,6 +1117,7 @@ interesting older papers:
 
 #### ["Adversarial Variational Bayes: Unifying Variational Autoencoders and Generative Adversarial Networks"](http://arxiv.org/abs/1701.04722) Mescheder, Nowozin, Geiger
   `unifying GANs and VAEs`
+>	"Real NVP can be used as an encoder in order to measure the gap between the unbiased KL estimate log q(z|x) - log p(z) and its approximation from GAN. We show that Adversarial Variational Bayes underestimates the KL divergence."  
   - `video` <https://youtu.be/y7pUN2t5LrA?t=14m19s> (Nowozin)
   - `video` <https://youtu.be/xFCuXE1Nb8w?t=26m55s> (Nowozin)
   - `video` <https://youtu.be/m80Vp-jz-Io?t=1h28m34s> (Tolstikhin)
@@ -1605,6 +1624,11 @@ interesting older papers:
 >	"Currently, there are a multitude of algorithms that can be used to perform TD control, including Sarsa, Q-learning, and Expected Sarsa. These methods are often studied in the one-step case, but they can be extended across multiple time steps to achieve better performance. Each of these algorithms is seemingly distinct, and no one dominates the others for all problems. In this paper, we study a new multi-step action-value algorithm called Q(σ) which unifies and generalizes these existing algorithms, while subsuming them as special cases. A new parameter, σ, is introduced to allow the degree of sampling performed by the algorithm at each step during its backup to be continuously varied, with Sarsa existing at one extreme (full sampling), and Expected Sarsa existing at the other (pure expectation)."  
   - `video` <https://youtube.com/watch?v=MidZJ-oCpRk> (De Asis)
 
+#### ["Convergent Tree-Backup and Retrace with Function Approximation"](https://arxiv.org/abs/1705.09322) Touati, Bacon, Precup, Vincent
+  `Retrace` `value-based` `off-policy evaluation`
+>	"We show that Tree Backup and Retrace algorithms are unstable with linear function approximation, both in theory and with specific examples. We addressed these issues by formulating gradient-based versions of these algorithms which minimize the mean-square projected Bellman error. Using a saddle-point formulation, we were also able to provide convergence guarantees and characterize the convergence rate of our algorithms."  
+>	"The design and analysis of off-policy algorithms using all the features of reinforcement learning, e.g. bootstrapping, multi-step updates (eligibility traces), and function approximation has been explored extensively over three decades. While off-policy learning and function approximation have been understood in isolation, their combination with multi-steps bootstrapping produces a so-called deadly triad, i.e., many algorithms in this category are unstable. A convergent approach to this triad is provided by importance sampling, which bends the behavior policy distribution onto the target one. However, as the length of the trajectories increases, the variance of importance sampling corrections tends to become very large. An alternative approach which was developed for tabular representations of the value function is the tree backup algorithm which, remarkably, does not rely on importance sampling directly. Tree Backup has recently been revisited by authors of Retrace(λ) algorithm. Both Tree Backup and Retrace(λ) were only shown to converge with a tabular value function representation, and whether they would also converge with function approximation was an open question, which we tackle in this paper."  
+
 #### ["Safe and Efficient Off-Policy Reinforcement Learning"](http://arxiv.org/abs/1606.02647) Munos, Stepleton, Harutyunyan, Bellemare
   `Retrace` `value-based` `off-policy evaluation`
 >	"Retrace(λ) is a new strategy to weight a sample for off-policy learning, it provides low-variance, safe and efficient updates."  
@@ -1692,12 +1716,14 @@ interesting older papers:
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Proximal_Policy_Optimization_Algorithms.md>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/pposgd>
   - `code` <https://github.com/ikostrikov/pytorch-a2c-ppo-acktr>
+  - `code` <https://github.com/ShangtongZhang/DeepRL>
 
 #### ["Emergence of Locomotion Behaviours in Rich Environments"](https://arxiv.org/abs/1707.02286) Heess et al.
-  `PPO` `policy gradient` `on-policy`
+  `DPPO` `policy gradient` `on-policy`
 >	"parallelized Proximal Policy Optimization"  
   - `video` <https://youtube.com/watch?v=hx_bgoTF7bs> (demo)
   - `video` <https://vimeo.com/238221551#t=42m48s> (Hadsell)
+  - `code` <https://github.com/ShangtongZhang/DeepRL>
   - `code` <https://github.com/alexis-jacq/Pytorch-DPPO>
 
 #### ["Evolution Strategies as a Scalable Alternative to Reinforcement Learning"](http://arxiv.org/abs/1703.03864) Salimans, Ho, Chen, Sidor, Sutskever
@@ -1824,15 +1850,24 @@ interesting older papers:
 
 ----
 #### ["Learning Generalized Reactive Policies using Deep Neural Networks"](https://arxiv.org/abs/1708.07280) Groshev, Tamar, Srivastava, Abbeel
-  `learning to guide planning` `using available environment model`
+  `learning to guide planning` `using available environment model` `search-based policy iteration`
 >	"learning a reactive policy that imitates execution traces produced by a planner"  
 >	"We consider the problem of learning for planning, where knowledge acquired while planning is reused to plan faster in new problem instances. For robotic tasks, among others, plan execution can be captured as a sequence of visual images."  
 >	"We investigate architectural properties of deep networks that are suitable for learning long-horizon planning behavior, and explore how to learn, in addition to the policy, a heuristic function that can be used with classical planners or search algorithms such as A*."  
 >	"Results on the challenging Sokoban domain suggest that DNNs have the capability to extract powerful features from observations, and the potential to learn the type of ‘visual thinking’ that makes some planning problems easy to humans but very hard for automatic planners."  
   - <https://sites.google.com/site/learn2plannips/> (demo)
 
+#### ["Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm"](https://arxiv.org/abs/1712.01815) Silver et al.
+  `learning to guide planning` `using available environment model` `search-based policy iteration`
+>	"The game of chess is the most widely-studied domain in the history of artificial intelligence. The strongest programs are based on a combination of sophisticated search techniques, domain-specific adaptations, and handcrafted evaluation functions that have been refined by human experts over several decades. In contrast, the AlphaGo Zero program recently achieved superhuman performance in the game of Go, by tabula rasa reinforcement learning from games of self-play. In this paper, we generalise this approach into a single AlphaZero algorithm that can achieve, tabula rasa, superhuman performance in many challenging domains. Starting from random play, and given no domain knowledge except the game rules, AlphaZero achieved within 24 hours a superhuman level of play in the games of chess and shogi (Japanese chess) as well as Go, and convincingly defeated a world-champion program in each case."  
+>	"no opening book, no endgame database, no heuristics, no anything"  
+>	"One reason why MCTS is so effective compared to Alpha-Beta when you start to use function approximators is that neural network will inevitably have approximation errors. Alpha-Beta search is kind of minimax search and is like glorified big max operator alternating with mins, which will pick out biggest errors in function approximation and propagate it to the root of search tree. Whilst MCTS is averaging over evaluations which tends to cancel out errors in search and can be more effective because of that."  
+>	"AlphaGo Zero tuned the hyper-parameter of its search by Bayesian optimization. In AlphaZero they reuse the same hyper-parameters for all games without game-specific tuning. The sole exception is the noise that is added to the prior policy to ensure exploration; this is scaled in proportion to the typical number of legal moves for that game type. Like AlphaGo Zero, the board state is encoded by spatial planes based only on the basic rules for each game. The actions are encoded by either spatial planes or a flat vector, again based only on the basic rules for each game. They applied the AlphaZero algorithm to chess, shogi, and also Go. Unless otherwise specified, the same algorithm settings, network architecture, and hyper-parameters were used for all three games."  
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games> (demo)
+  - `video` <https://youtu.be/A3ekFcZ3KNw?t=23m28s> (Silver)
+
 #### ["Mastering the Game of Go without Human Knowledge"](https://deepmind.com/documents/119/agz_unformatted_nature.pdf) Silver et al.
-  `learning to guide planning` `using available environment model`
+  `learning to guide planning` `using available environment model` `search-based policy iteration`
 >	"AlphaGo Zero learns two functions (which take as input the current board):  
 >	- A prior over moves p is trained to predict what AlphaGo will eventually decide to do  
 >	- A value function v is trained to predict which player will win (if AlphaGo plays both sides)  
@@ -1843,19 +1878,26 @@ interesting older papers:
 >
 >	"AlphaGo improves the policy through REINFORCE, which is highly sample-inefficient. Then, it learns the value function for that policy. In REINFORCE one generates trajectories and then changes their probability based on the outcome of the match.  
 >	AlphaGo Zero, on the other hand, changes the trajectories themselves. During self-play, an expert (MCTS) tells the policy-value network how to improve its policy-part right away. Moreover, the improved move is the one that's played, so, in the end, the outcome will be based on the improved policy. Therefore we're basically doing Generalized Policy Iteration because we're greedily improving the policy as we go and learning the value of this improved policy."  
+>
+>	"Differences from AlphaGo:  
+>	- No human data. Learns solely by self-play reinforcement learning, starting from random.  
+>	- No human features. Only takes raw board as input.  
+>	- Single neural network. Policy and value networks are combined into one neural network (resnet).  
+>	- Simpler search. No randomised Monte-Carlo rollouts, only uses neural network to evaluate."  
   - `post` <https://deepmind.com/blog/alphago-zero-learning-scratch/>
   - `post` <http://inference.vc/alphago-zero-policy-improvement-and-vector-fields/>
   - `post` <http://tim.hibal.org/blog/alpha-zero-how-and-why-it-works/>
   - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
+  - `video` <https://youtu.be/A3ekFcZ3KNw?t=10m50s> (Silver)
+  - `video` <https://youtube.com/watch?v=6fKG4wJ7uBk> (Baudis)
   - `video` <https://youtube.com/watch?v=XuzIqE2IshY> (Kington)
   - `video` <https://youtube.com/watch?v=vC66XFoN4DE> (Raval)
   - `notes` <https://blog.acolyer.org/2017/11/17/mastering-the-game-of-go-without-human-knowledge/>
   - `notes` <https://dropbox.com/s/fuwhivftv998f6q/AlphaGoZeroPseudoCode.pdf>
   - `code` <https://github.com/gcp/leela-zero/>
-  - `paper` ["Bootstrapping from Game Tree Search"](https://papers.nips.cc/paper/3722-bootstrapping-from-game-tree-search.pdf) by Veness, Silver, Uther, Blair
 
 #### ["Thinking Fast and Slow with Deep Learning and Tree Search"](https://arxiv.org/abs/1705.08439) Anthony, Tian, Barber
-  `learning to guide planning` `using available environment model`
+  `learning to guide planning` `using available environment model` `search-based policy iteration` `Expert Iteration`
 >	"Planning new policies is performed by tree search, while a deep neural network generalises those plans"  
 >	"Expert Iteration (ExIt) can be viewed as an extension of Imitation Learning methods to domains where the best known experts are unable to achieve satisfactory performance. In standard IL an apprentice is trained to imitate the behaviour of an expert. In ExIt, we extend this to an iterative learning process. Between each iteration, we perform an Expert Improvement step, where we bootstrap the (fast) apprentice policy to increase the performance of the (comparatively slow) expert."  
 >	"Imitation Learning is generally appreciated to be easier than Reinforcement Learning, and this partly explains why ExIt is more successful than model-free methods like REINFORCE. Furthermore, for MCTS to recommend a move, it must be unable to find any weakness with its search. Effectively, therefore, a move played by MCTS is good against a large selection of possible opponents. In contrast, in regular self play (in which the opponent move is made by the network playing as the opposite colour), moves are recommended if they beat only this single opponent under consideration. This is, we believe, a key insight into why ExIt works well (when using MCTS as the expert) - the apprentice effectively learns to play well against many opponents."  
@@ -2210,6 +2252,7 @@ hieves."
 >	"HER may be seen as a form of implicit curriculum as the goals used for replay naturally shift from ones which are simple to achieve even by a random agent to more difficult ones. However, in contrast to explicit curriculum, HER does not require having any control over the distribution of initial environment states."  
 >	"Not only does HER learn with extremely sparse rewards, in our experiments it also performs better with sparse rewards than with shaped ones. These results are indicative of the practical challenges with reward shaping, and that shaped rewards would often constitute a compromise on the metric we truly care about (such as binary success/failure)."  
   - <https://sites.google.com/site/hindsightexperiencereplay/> (demo)
+  - `video` <https://youtu.be/pYQqMQ20oPU?t=29m32s> (Sutskever)
   - `video` <https://youtu.be/TERCdog1ddE?t=50m45s> (Abbeel)
   - `paper` ["Universal Value Function Approximators"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#schaul-horgan-gregor-silver---universal-value-function-approximators) by Schaul et al.
 
@@ -2267,6 +2310,7 @@ hieves."
 
 #### ["Meta Learning Shared Hierarchies"](https://arxiv.org/abs/1710.09767) Frans, Ho, Chen, Abbeel, Schulman
   - `post` <https://blog.openai.com/learning-a-hierarchy/> (demo)
+  - `video` <https://youtu.be/pYQqMQ20oPU?t=40m43s> (Sutskever)
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Meta_Learning_Shared_Hierarchies.md>
   - `code` <https://github.com/openai/mlsh>
 
@@ -2373,7 +2417,7 @@ hieves."
 >	"The assumption is that the tasks are related to each other (e.g. being in the same environment or having the same physics) and so good action sequences tend to recur across tasks. Our method achieves this by simultaneously distilling task-specific policies into a common default policy, and transferring this common knowledge across tasks by regularising all task-specific policies towards the default policy."  
 >	"We observe that distillation arises naturally as one half of an optimization procedure when using KL divergences to regularize the output of task models towards a distilled model. The other half corresponds to using the distilled model as a regularizer for training the task models."  
 >	"Another observation is that parameters in deep networks do not typically by themselves have any semantic meaning, so instead of regularizing networks in parameter space, it is worthwhile considering regularizing networks in a more semantically meaningful space, e.g. of policies."  
-  - `video` <http://www.fields.utoronto.ca/talks/DisTraL-Distill-and-Transfer-Deep-Multitask-Reinforcement-Learning> (Teh)
+  - `video` <http://www.fields.utoronto.ca/video-archive/2017/11/2509-17850> (Teh)
   - `video` <https://vimeo.com/238221551#t=20m7s> (Hadsell)
   - `notes` <http://shaofanlai.com/post/37>
 

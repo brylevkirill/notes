@@ -702,6 +702,8 @@
 
   [overview](https://youtube.com/watch?v=-8QMqSWU76Q) by Vikash Mansinghka `video`
 
+  ["Engineering and Reverse-Engineering Intelligence Using Probabilistic Programs, Program Induction, and Deep Learning"](https://facebook.com/nipsfoundation/videos/1552446408179926/) by Josh Tenenbaum and Vikash Mansinghka `video`
+
   probabilistic programming:
   - languages for models & systems that simplify / automate aspects of inference
   - models and queries defined in terms of complex stochastic computations

@@ -8,6 +8,7 @@
   * [problems](#problems)
   * [exploration and intrinsic motivation](#exploration-and-intrinsic-motivation)
   * [bandits](#bandits)
+  * [contextual bandits](#contextual-bandits)
   * [model-based methods](#model-based-methods)
   * [value-based methods](#value-based-methods)
   * [policy-based methods](#policy-based-methods)
@@ -68,7 +69,7 @@
 ----
 
   [Custom Decision Service](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-decision-service/custom-decision-service-overview) (Microsoft)
-	([overviews](#agarwal-et-al---making-contextual-decisions-with-low-technical-debt))  
+	([summary](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al))  
 
   [personalized news](http://thenewstack.io/reinforcement-learning-ready-real-world/) (Microsoft)  
 >	"For MSN homepage 25% relative lift in click-through rate while no previous learning method had been more successful than humans curating the content manually."  
@@ -95,16 +96,15 @@
 	["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper` `summary`  
 	["Combining Online and Offline Knowledge in UCT"](http://machinelearning.org/proceedings/icml2007/papers/387.pdf) by Gelly and Silver `paper` ([talk](https://youtube.com/watch?v=Bm7zah_LrmE) `video`)  
 
-	[overview](https://youtu.be/i3lEG6aRGm8?t=16m) by Demis Hassabis `video`  
-	overview by David Silver and Chris Maddison
-		([part 1](https://youtu.be/yCALyQRN3hw?t=15m18s), [part 2](https://youtu.be/qUAmTYHEyM8?t=15m31s), [part 3](https://youtu.be/mzpW10DPHeQ?t=10m22s)) `video`  
-	[overview](https://youtube.com/watch?v=4D5yGiYe8p4) by David Silver `video`  
-	[overview](https://youtu.be/LX8Knl0g0LE?t=4m41s) by Aja Huang `video`  
+	[AlphaGo Zero overview](https://youtu.be/A3ekFcZ3KNw?t=10m50s) by David Silver `video`
 
-	"Google AlphaGo is a historical tour of AI ideas: 70s (Alpha-Beta), 80s/90s (RL & self-play), 00's (Monte-Carlo), 10's (deep neural networks)."
+	[AlphaGo overview](https://youtu.be/i3lEG6aRGm8?t=16m) by Demis Hassabis `video`  
+	[AlphaGo overview](https://youtu.be/4D5yGiYe8p4) by David Silver `video`  
+	[AlphaGo overview](https://youtu.be/LX8Knl0g0LE?t=4m41s) by Aja Huang `video`  
 
-	["Combining Online and Offline Knowledge in UCT"](https://youtube.com/watch?v=Bm7zah_LrmE) by David Silver and Sylvain Gelly `video`  
+	"Google AlphaGo is a historical tour of AI ideas: 70s (Alpha-Beta), 80s/90s (RL & self-play), 00's (Monte-Carlo), 10's (deep neural networks)."  
 	[history of ideas](http://youtube.com/watch?v=UMm0XaCFTJQ) by Rich Sutton, Czaba Szepesvari, Michael Bowling, Ryan Hayward, Martin Muller `video`  
+	["Combining Online and Offline Knowledge in UCT"](https://youtube.com/watch?v=Bm7zah_LrmE) by David Silver and Sylvain Gelly `video`  
 
 	["5 Easy Pieces: How Deepmind mastered Go"](https://xcorr.net/2016/02/03/5-easy-pieces-how-deepmind-mastered-go/) by Patrick Mineault  
 	["AlphaGo, In Context"](https://medium.com/@karpathy/alphago-in-context-c47718cb95a5) by Andrej Karpathy  
@@ -148,8 +148,8 @@
 	<http://deepstack.ai>  
 	<http://twitter.com/DeepStackAI>  
 
-	[overview](https://youtu.be/02xIkHowQOk?t=11m45s) by Michael Bowling `video`  
-	[overview](https://youtube.com/watch?v=qndXrHcV1sM) by Michael Bowling `video`  
+	[DeepStack overview](https://youtu.be/02xIkHowQOk?t=11m45s) by Michael Bowling `video`  
+	[DeepStack overview](https://youtube.com/watch?v=qndXrHcV1sM) by Michael Bowling `video`  
 	["Advances in AI in Poker"](http://videolectures.net/aaai2017_bowling_sandholm_poker) by Michael Bowling and Tuomas Sandholm `video`  
 
 	[discussion](http://thinkingpoker.net/2017/03/episode-208-michael-bowling-of-cprg/) with Michael Bowling  
@@ -163,6 +163,18 @@
 	["Giraffe: Using Deep Reinforcement Learning to Play Chess"](#giraffe-using-deep-reinforcement-learning-to-play-chess-lai) by Lai `paper` `summary`  
 	["Bootstrapping from Game Tree Search"](#bootstrapping-from-game-tree-search-veness-silver-uther-blair) by Veness et al. `paper` `summary`  
 	["KnightCap: A Chess Program that Learns by Combining TD(lambda) with Game-tree Search"](https://arxiv.org/abs/cs/9901002) by Baxter et al. `paper`  
+
+	[AlphaZero overview](https://youtu.be/A3ekFcZ3KNw?t=23m28s) by David Silver `video`
+
+	AlphaZero vs Stockfish match:
+
+	[highlights](https://youtube.com/watch?v=6z1o48Sgrck) `video`
+
+	game 3: [overview](https://youtube.com/watch?v=akgalUq5vew) `video`  
+	game 5: [overview](https://youtube.com/watch?v=9AMI3520S5Y) `video`  
+	game 8: [overview](https://youtube.com/watch?v=6z1o48Sgrck) `video`  
+	game 9: [overview](https://youtube.com/watch?v=MTWkX6KZO2A) `video`  
+	game 10: [overview](https://youtube.com/watch?v=DiJeP9oifsc) `video`  
 
   - *Dota 2*  
 	<https://blog.openai.com/dota-2/>  
@@ -262,8 +274,8 @@
 
 ----
 
-  ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/sutton/book/ebook/the-book.html) book by Rich Sutton and Andrew Barto (first edition)  
-  ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/sutton/book/the-book-2nd.html) book by Rich Sutton and Andrew Barto (second edition)  
+  ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/book/the-book-2nd.html) book by Rich Sutton and Andrew Barto (second edition) ([code](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction))  
+  ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/book/the-book-1st.html) book by Rich Sutton and Andrew Barto (first edition)  
   ["Algorithms for Reinforcement Learning"](http://www.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf) book by Csaba Szepesvari  
 
 ----
@@ -278,6 +290,7 @@
   [exercises and solutions](http://www.wildml.com/2016/10/learning-reinforcement-learning/) by Denny Britz  
   [course with exercises and solutions](https://github.com/yandexdataschool/Practical_RL/) from Yandex  
 
+  [implementations of algorithms](https://github.com/ShangtongZhang/DeepRL) from Shangtong Zhang  
   [implementations of algorithms](https://github.com/NervanaSystems/coach) from Intel Nervana  
   [implementations of algorithms](https://github.com/rlcode/reinforcement-learning) from RLCode team  
   [implementations of algorithms](https://github.com/openai/rllab/tree/master/rllab/algos) from OpenAI  
@@ -314,19 +327,23 @@
 ---
 ### problems
 
-  differences between reinforcement learning and other learning paradigms  ([overview](https://youtube.com/watch?v=2pWv7GOvuf0&t=9m37s) by David Silver `video`):  
+  **reinforcement learning and supervised learning**
+
+  [differences](https://youtube.com/watch?v=2pWv7GOvuf0&t=9m37s) `video` (*David Silver*):  
   - there is no supervisor, only a reward signal  
   - feedback is delayed, not instantaneous  
   - time really matters (sequential, not i.i.d. data)  
   - agent's actions affect subsequent data it receives  
 
-  differences between reinforcement learning and supervised learning  ([overview](https://youtube.com/watch?v=8jQIKgTzQd4&t=50m28s) by John Schulman `video`):  
+  [differences](https://youtube.com/watch?v=8jQIKgTzQd4&t=50m28s) `video` (*John Schulman*):  
   - no full access to analytic representation of loss function being optimized - value has to be queried by interaction with environment  
   - interacting with stateful environment (unknown, nonlinear, stochastic, arbitrarily complex) - next input depends on previous actions  
 
-  differences between batch reinforcement learning and supervised learning  ([overview](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) (33:45) by Csaba Szepesvari `video`)
+  [differences](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) `video` (33:45) (*Csaba Szepesvari*)
 
-  differences between reinforcement learning and statistical learning theory  ([overview](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) (13:01) by Csaba Szepesvari `video`)
+  [theory](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) `video` (13:01) (*Csaba Szepesvari*)
+
+  [expressivity, trainability, generalization](http://blog.evjang.com/2017/11/exp-train-gen.html) `post` (*Eric Jang*)
 
 ----
 
@@ -499,6 +516,7 @@
   - faster training if external rewards are sparse  
   - transferrable skills (discovering and combining skills)  
 
+----
 
   [overview](http://youtube.com/watch?v=SfCa1HQMkuw) by John Schulman `video`  
   [overview](http://youtube.com/watch?v=sGuiWX07sKw) by David Silver `video`  
@@ -519,10 +537,9 @@
 
 >	"Since the dimension of the belief state grows polynomially in the number of states and actions, computing the Bayesian value function using value iteration or other methods is typically not tractable. One exception, where the Bayesian approach is tractable, is the domain of a k-armed bandit (i.e., an MDP with one state and k actions, where the rewards are unknown). In this case, the Bayesian approach leads to the well-known Gittins indices. However, the approach does not scale analytically to multi-state MDPs. This has lead to numerous methods that approximate the Bayesian exploration policy."
 
+  [bayesian reinforcement learning](#bayesian-reinforcement-learning)
+
   [overview](https://youtu.be/sGuiWX07sKw?t=57m28s) by David Silver `video`  
-
-  [**bayesian reinforcement learning**](#bayesian-reinforcement-learning)
-
 
   ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](#efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search-guez-silver-dayan) by Guez et al. `paper` `summary`  
   ["Learning to Optimize Via Posterior Sampling"](#learning-to-optimize-via-posterior-sampling-russo-van-roy) by Russo and van Roy `paper` `summary`  
@@ -698,6 +715,10 @@
 
 ----
 
+  [example implementation](http://jeremykun.com/2013/12/09/bandits-and-stocks/)
+
+----
+
   "Bandit feedback means we only observe the feedback δ(x,y) for the specific y that was predicted, but not for any other possible (counterfactual) predictions Y\{y} unlike in supervised learning. The feedback is just a number, called the loss δ: X × Y → R. Smaller numbers are desirable. In general, the loss is the (noisy) realization of a stochastic random variable. The expected loss - called risk - of a hypothesis R(h) is R(h) = Ex∼Pr(X) Ey∼h(x) [δ(x,y)] = Eh [δ(x,y)]. The aim of learning is to find a hypothesis h∈ H that has minimum risk."
 
   "Most interactive systems (e.g. search engines, recommender systems, ad platforms) record large quantities of log data which contain valuable information about the system’s performance and user experience. For example, the logs of an ad-placement system record which ad was presented in a given context and whether the user clicked on it. While these logs contain information that should inform the design of future systems, the log entries do not provide supervised training data in the conventional sense. This prevents us from directly employing supervised learning algorithms to improve these systems. In particular, each entry only provides bandit feedback since the loss/reward is only observed for the particular action chosen by the system (e.g. the presented ad) but not for all the other actions the system could have taken. Moreover, the log entries are biased since actions that are systematically favored by the system will by over-represented in the logs. Learning from historical logs data can be formalized as batch learning from logged bandit feedback. Unlike the well-studied problem of online learning from bandit feedback, this setting does not require the learner to have interactive control over the system. Learning in such a setting is closely related to the problem of off-policy evaluation in reinforcement learning - we would like to know how well a new system (policy) would perform if it had been used in the past. This motivates the use of counterfactual estimators. Following an approach analogous to Empirical Risk Minimization, it was shown that such estimators can be used to design learning algorithms for batch learning from logged bandit feedback. Batch learning from logged bandit feedback is an instance of causal inference."
@@ -712,12 +733,7 @@
 
   Gittins indices exploit the weak dependence between actions to compute the optimal action in time that is linear in the number of arms. Gittins indices, however, are guaranteed to be optimal only for the basic multi-armed bandit problem, require a discounted infinite-horizon objective, and provably cannot be extended to most interesting and practical problems which involve correlations between arms or an additional context."
 
-
   ["Multi Armed Bandits and Exploration Strategies"](http://sudeepraja.github.io/Bandits/)
-
-----
-
-  [example implementation](http://jeremykun.com/2013/12/09/bandits-and-stocks/)
 
 
 
@@ -728,12 +744,13 @@
 
 ----
 
-  [introduction](https://youtu.be/sGuiWX07sKw?t=1h29m7s) by David Silver `video`
+  [introduction](https://youtu.be/sGuiWX07sKw?t=1h29m7s) by David Silver `video`  
+  [introduction](https://youtu.be/7ic_d5TeIUk) by John Langford `video`  
 
-  [history of contextual bandits](https://youtu.be/7ic_d5TeIUk?t=6m41s) by John Langford `video`  
-  [interactive machine learning systems](https://youtu.be/3q4OvzIyPug?t=6m12s) by Alekh Agarwal `video`  
+  [overview](http://youtube.com/watch?v=N5x48g2sp8M) of theory by Robert Schapire `video`  
+  [overview](https://vimeo.com/240429210) of applications by John Langford and Alekh Agarwal `video`  
 
-  [overview](http://youtube.com/watch?v=N5x48g2sp8M) by Robert Schapire `video`  
+  [interactive machine learning](https://youtu.be/3q4OvzIyPug?t=6m12s) by Alekh Agarwal `audio`
 
 ----
 
@@ -775,15 +792,25 @@
   G(q) = ∫s∫a p(s)q(a|s)r(a,s)dads = ∫s∫a p(s)(q(a|s)/p(a|s))p(a|s)r(a,s)dads ≈ 1/N ∑i q(ai|si)/p(ai|si)*ri
 
 
-  "Given experience (xt,at,pt,rt)* generated using some policy, it is possible to evaluate another policy π: x -> a using estimator:
+  Given experience (xt,at,pt,rt)* generated using some policy, it is possible to evaluate another policy π: x -> a using *Inverse Propensity Score* estimator:
 
   V(π) = 1/n * Σ(xt,at,pt,rt) I(π(x) = at)/pt*rt
 
-  This estimator (inverse propensity scoring) has three important properties. First, it is data-efficient. Each interaction on which π matches the exploration data can be used in evaluating π, regardless of the policy collecting the data. In contrast, A/B testing only uses data collected using π to evaluate π. Second, the division by pt makes it statistically unbiased: it converges to the true reward as n → ∞. Third, the estimator can be recomputed incrementally when new data arrives.
+  variance of V(π) = variance of rewards + E r(π(x))^2 * (1 - p(π(x))) / p(π(x))
 
-  Thus, using a fixed exploration dataset, accurate counterfactual estimates of how arbitrary policies would have performed can be computed without actually running them in real time. This is precisely the question A/B testing attempts to answer, except A/B testing must run a live experiment to test each policy.
 
-  Let us compare the statistical efficiency of MWT to that of A/B testing. Suppose N data points are collected using an exploration policy which places probability at least on each action (for EpsilonGreedy, ε = ε0/#actions), and we wish to evaluate K different policies. Then the ips estimators for all K policies have confidence intervals whose width is (C/(εN)\*log(K/δ))^1/2, with probability at least 1−δ, where C is a small absolute constant and δ > 0 and N > 1/ε. This is an exponential (in K) improvement over A/B testing since an A/B test of K policies collecting N data points has confidence intervals of width C\*(K/N\*log(K/δ))^1/2. This also shows the necessity of exploration for policy learning. If ε = 0, we cannot correctly evaluate arbitrary policies."
+  properties of IPS estimator:  
+  - *data-efficient*. Each interaction on which π matches the exploration data can be used in evaluating π, regardless of the policy collecting the data.  
+  - *statistically unbiased*. It converges to the true reward as n → ∞.  
+  - *incremental*. It can be calculated incrementally when new data arrives.  
+
+----
+
+  "A/B testing only uses data collected using π to evaluate π."
+
+  "Using a fixed exploration dataset, accurate counterfactual estimates of how arbitrary policies would have performed can be computed without actually running them in real time. This is precisely the question A/B testing attempts to answer, except A/B testing must run a live experiment to test each policy."
+
+  "Lets compare the statistical efficiency of MWT to that of A/B testing. Suppose N data points are collected using an exploration policy which places probability at least on each action (for EpsilonGreedy, ε = ε0/#actions), and we wish to evaluate K different policies. Then the ips estimators for all K policies have confidence intervals whose width is (C/(εN)\*log(K/δ))^1/2, with probability at least 1−δ, where C is a small absolute constant and δ > 0 and N > 1/ε. This is an exponential (in K) improvement over A/B testing since an A/B test of K policies collecting N data points has confidence intervals of width C\*(K/N\*log(K/δ))^1/2. This also shows the necessity of exploration for policy learning. If ε = 0, we cannot correctly evaluate arbitrary policies."
 
   "Contextual bandits allow testing and optimization over exponentially more policies for a given number of events. In one realistic scenario, one can handle 1 billion policies for the data collection cost of 21 A/B tests. The essential reason for such an improvement is that each data point can be used to evaluate all the policies picking the same action for the same context (i.e., make the same decision for the same input features rather than just a single policy as in A/B testing). An important property is that policies being tested do not need to be approved, implemented in production, and run live for a period of time (thus saving much business and engineering effort). Furthermore, the policies do not even need to be known during data collection."
 
@@ -799,23 +826,25 @@
 
 ----
 
-  "The Atari results are very fun but obviously unimpressive on about 1/4 of the games. My hypothesis for why is that the solution does only local (epsilon-greedy style) exploration rather than global exploration so they can only learn policies addressing either very short credit assignment problems or with greedily accessible polices. Global exploration strategies are known to result in exponentially more efficient strategies in general for [deterministic decision processes](http://idm-lab.org/bib/abstracts/papers/aaai93.pdf) (1993), [Markov Decision Processes](http://www.cis.upenn.edu/~mkearns/papers/KearnsSinghE3.pdf) (1998), and for [MDPs without modelling](http://research.microsoft.com/pubs/178886/published.pdf) (2006). The reason these strategies are not used is because they are based on tabular learning rather than function fitting. That’s why I shifted to Contextual Bandit research after the 2006 paper. We’ve learned quite a bit there, enough to start tackling a [Contextual Deterministic Decision Process](http://arxiv.org/abs/1602.02722) (2016), but that solution is still far from practical." *(John Langford)*
-
-  [global exploration strategies](#exploration-and-intrinsic-motivation)
-
-----
-
   ["Multi-armed Bandit Experiments in the Online Service Economy"](https://research.google.com/pubs/pub42550.html) by Steven Scott `paper`  
   ["Bayesian Multi-armed Bandits vs A/B Tests"](https://habrahabr.ru/company/ods/blog/325416/) `in russian`  
 
   ["Reinforcement Learning in Industry"](http://videolectures.net/deeplearning2017_le_roux_recommendation_system/) by Nicolas Le Roux `video`
 
-  [Microsoft Custom Decision Service](#industry)  
+  [Microsoft Custom Decision Service](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al)  
   ["Taming the Monster: A Fast and Simple Algorithm for Contextual Bandits"](https://arxiv.org/abs/1402.0555) by Agarwal et al. `paper`  
 
 ----
 
   [example implementation](https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-1-5-contextual-bandits-bff01d1aad9c)
+
+----
+
+  "The Atari results are very fun but obviously unimpressive on about 1/4 of the games. My hypothesis for why is that the solution does only local (epsilon-greedy style) exploration rather than global exploration so they can only learn policies addressing either very short credit assignment problems or with greedily accessible polices. Global exploration strategies are known to result in exponentially more efficient strategies in general for [deterministic decision processes](http://idm-lab.org/bib/abstracts/papers/aaai93.pdf) (1993), [Markov Decision Processes](http://www.cis.upenn.edu/~mkearns/papers/KearnsSinghE3.pdf) (1998), and for [MDPs without modelling](http://research.microsoft.com/pubs/178886/published.pdf) (2006). The reason these strategies are not used is because they are based on tabular learning rather than function fitting. That’s why I shifted to Contextual Bandit research after the 2006 paper. We’ve learned quite a bit there, enough to start tackling a [Contextual Deterministic Decision Process](http://arxiv.org/abs/1602.02722) (2016), but that solution is still far from practical."
+
+  *(John Langford)*
+
+  [global exploration strategies](#exploration-and-intrinsic-motivation)
 
 
 
@@ -1481,16 +1510,23 @@ interesting recent papers:
 >	"AlphaGo improves the policy through REINFORCE, which is highly sample-inefficient. Then, it learns the value function for that policy. In REINFORCE one generates trajectories and then changes their probability based on the outcome of the match.  
 >	AlphaGo Zero, on the other hand, changes the trajectories themselves. During self-play, an expert (MCTS) tells the policy-value network how to improve its policy-part right away. Moreover, the improved move is the one that's played, so, in the end, the outcome will be based on the improved policy. Therefore we're basically doing Generalized Policy Iteration because we're greedily improving the policy as we go and learning the value of this improved policy."  
 
+>	"Differences from AlphaGo:  
+>	- No human data. Learns solely by self-play reinforcement learning, starting from random.  
+>	- No human features. Only takes raw board as input.  
+>	- Single neural network. Policy and value networks are combined into one neural network (resnet).  
+>	- Simpler search. No randomised Monte-Carlo rollouts, only uses neural network to evaluate."  
+
   - `post` <https://deepmind.com/blog/alphago-zero-learning-scratch/>
   - `post` <http://inference.vc/alphago-zero-policy-improvement-and-vector-fields/>
   - `post` <http://tim.hibal.org/blog/alpha-zero-how-and-why-it-works/>
   - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
+  - `video` <https://youtu.be/A3ekFcZ3KNw?t=10m50s> (Silver)
+  - `video` <https://youtube.com/watch?v=6fKG4wJ7uBk> (Baudis)
   - `video` <https://youtube.com/watch?v=XuzIqE2IshY> (Kington)
   - `video` <https://youtube.com/watch?v=vC66XFoN4DE> (Raval)
   - `notes` <https://blog.acolyer.org/2017/11/17/mastering-the-game-of-go-without-human-knowledge/>
   - `notes` <https://dropbox.com/s/fuwhivftv998f6q/AlphaGoZeroPseudoCode.pdf>
   - `code` <https://github.com/gcp/leela-zero/>
-  - `paper` ["Bootstrapping from Game Tree Search"](#bootstrapping-from-game-tree-search-veness-silver-uther-blair) by Veness, Silver, Uther, Blair `summary`
 
 
 #### ["Mastering the Game of Go with Deep Neural Networks and Tree Search"](https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf) Silver et al.
@@ -1500,6 +1536,7 @@ interesting recent papers:
 >	"Google AlphaGo is a historical tour of AI ideas: 70s (Alpha-Beta), 80s/90s (reinforcement learning & self-play), 00's (Monte-Carlo), 10's (deep neural networks)."  
 >	"The most important application of reinforcement learning here is to learn a value function which aims to predict with which probability a certain position will lead to winning the game. The learned expert moves are already good, but the network that produces them did not learn with the objective to win the game, but only to minimize the differences to the teacher values in the training data set."  
 
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games> (demo)
   - `video` <http://youtube.com/watch?v=4D5yGiYe8p4> (Silver)
   - `video` <http://youtube.com/watch?v=LX8Knl0g0LE> (Huang)
   - `video` <http://youtube.com/watch?v=UMm0XaCFTJQ> (Sutton, Szepesvari, Bowling, Hayward, Muller)
@@ -1528,6 +1565,7 @@ interesting recent papers:
 
 >	"Part of DeepStack's development is also a technique designed to find flaws in poker strategies. Local Best Response (LBR) is one of the cool new algorithms in Science paper. LBR looks directly at the strategy, like what a human could get from playing millions of hands to know its range. Older programs get beat by LBR for 4x more than folding every hand! DeepStack has no holes exposed by the LBR algorithm."
 
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games> (demo)
   - `paper` <http://science.sciencemag.org/content/early/2017/03/01/science.aam6960> ("Science")
   - `video` <https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ> (demo matches)
   - <http://deepstack.ai>
@@ -1542,11 +1580,15 @@ interesting recent papers:
 >	"The game of chess is the most widely-studied domain in the history of artificial intelligence. The strongest programs are based on a combination of sophisticated search techniques, domain-specific adaptations, and handcrafted evaluation functions that have been refined by human experts over several decades. In contrast, the AlphaGo Zero program recently achieved superhuman performance in the game of Go, by tabula rasa reinforcement learning from games of self-play. In this paper, we generalise this approach into a single AlphaZero algorithm that can achieve, tabula rasa, superhuman performance in many challenging domains. Starting from random play, and given no domain knowledge except the game rules, AlphaZero achieved within 24 hours a superhuman level of play in the games of chess and shogi (Japanese chess) as well as Go, and convincingly defeated a world-champion program in each case."
 
 ----
->	"AlphaGo Zero tuned the hyper-parameter of its search by Bayesian optimization. In AlphaZero they reuse the same hyper-parameters for all games without game-specific tuning. The sole exception is the noise that is added to the prior policy to ensure exploration; this is scaled in proportion to the typical number of legal moves for that game type. Like AlphaGo Zero, the board state is encoded by spatial planes based only on the basic rules for each game. The actions are encoded by either spatial planes or a flat vector, again based only on the basic rules for each game. They applied the AlphaZero algorithm to chess, shogi, and also Go. Unless otherwise specified, the same algorithm settings, network architecture, and hyper-parameters were used for all three games."
-
 >	"no opening book, no endgame database, no heuristics, no anything"
 
-  - `video` <https://youtube.com/watch?v=A3ekFcZ3KNw> (Silver)
+>	"One reason why MCTS is so effective compared to Alpha-Beta when you start to use function approximators is that neural network will inevitably have approximation errors. Alpha-Beta search is kind of minimax search and is like glorified big max operator alternating with mins, which will pick out biggest errors in function approximation and propagate it to the root of search tree. Whilst MCTS is averaging over evaluations which tends to cancel out errors in search and can be more effective because of that."
+
+----
+>	"AlphaGo Zero tuned the hyper-parameter of its search by Bayesian optimization. In AlphaZero they reuse the same hyper-parameters for all games without game-specific tuning. The sole exception is the noise that is added to the prior policy to ensure exploration; this is scaled in proportion to the typical number of legal moves for that game type. Like AlphaGo Zero, the board state is encoded by spatial planes based only on the basic rules for each game. The actions are encoded by either spatial planes or a flat vector, again based only on the basic rules for each game. They applied the AlphaZero algorithm to chess, shogi, and also Go. Unless otherwise specified, the same algorithm settings, network architecture, and hyper-parameters were used for all three games."
+
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games> (demo)
+  - `video` <https://youtu.be/A3ekFcZ3KNw?t=23m28s> (Silver)
 
 
 #### ["Giraffe: Using Deep Reinforcement Learning to Play Chess"](http://arxiv.org/abs/1509.01549) Lai
@@ -1644,11 +1686,13 @@ interesting recent papers:
   - <https://mwtds.azurewebsites.net>
   - <http://research.microsoft.com/en-us/projects/mwt/>
   - `video` <https://youtube.com/watch?v=7ic_d5TeIUk> (Langford)
+  - `video` <https://vimeo.com/240429210> (Langford, Agarwal)
   - `video` <https://youtube.com/watch?v=5JXRbhPLSQw> (Agarwal)
   - `video` <https://youtu.be/N5x48g2sp8M?t=52m> (Schapire)
-  - `video` <https://youtu.be/3q4OvzIyPug?t=6m12s> (Agarwal)
+  - `audio` <https://youtu.be/3q4OvzIyPug?t=6m12s> (Agarwal)
   - `post` <http://hunch.net/?p=4464948> (Langford)
   - `post` <http://machinedlearnings.com/2017/01/reinforcement-learning-as-service.html> (Mineiro)
+  - `code` <https://github.com/Microsoft/mwt-ds>
   - `paper` ["Taming the Monster: A Fast and Simple Algorithm for Contextual Bandits"](https://arxiv.org/abs/1402.0555) by Agarwal et al.
 
 
@@ -1724,7 +1768,7 @@ interesting recent papers:
 >	"PSRL is orders of magnitude more statistically efficient than UCRL and S-times less computationally expensive. In the future, we believe that analysts will be able to formally specify an OFU approach to RL whose statistical efficiency matches PSRL. However, we argue that the resulting confidence sets which address both the coupling over H and S will result in a computationally intractable optimization problem. For this reason, computationally efficient approaches to OFU RL will sacrifice statistical efficiency; this is why posterior sampling is better than optimism for reinforcement learning."
 
   - `video` <http://videolectures.net/rldm2015_van_roy_function_randomization/> (van Roy)
-  - `video` <https://youtube.com/watch?v=ck4GixLs4ZQ> (Osband) + [slides](https://docs.google.com/presentation/d/1lis0yBGT-uIXnAsi0vlP3SuWD2svMErJWy_LYtfzMOA/)
+  - `video` <https://youtube.com/watch?v=ck4GixLs4ZQ> (Osband) ([slides](https://docs.google.com/presentation/d/1lis0yBGT-uIXnAsi0vlP3SuWD2svMErJWy_LYtfzMOA/))
   - `code` <https://sudeepraja.github.io/PSRL/>
   - `code` <https://github.com/iosband/TabulaRL>
 
@@ -2303,7 +2347,6 @@ interesting recent papers:
   - `code` <https://github.com/reinforceio/tensorforce/blob/master/tensorforce/models/naf_model.py>
   - `code` <https://github.com/ikostrikov/pytorch-naf>
   - `code` <https://github.com/carpedm20/NAF-tensorflow>
-  - `code` <https://github.com/tambetm/gymexperiments>
 
 
 #### ["Action-Conditional Video Prediction using Deep Networks in Atari Games"](http://arxiv.org/abs/1507.08750) Oh, Guo, Lee, Lewis, Singh
@@ -2640,8 +2683,8 @@ interesting recent papers:
   - `post` <https://yanpanlau.github.io/2016/10/11/Torcs-Keras.html>
   - `post` <http://pemami4911.github.io/blog_posts/2016/08/21/ddpg-rl.html>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/ddpg>
+  - `code` <https://github.com/ikostrikov/pytorch-ddpg-naf>
   - `code` <https://github.com/matthiasplappert/keras-rl/blob/master/rl/agents/ddpg.py>
-  - `code` <https://github.com/yandexdataschool/AgentNet/blob/master/agentnet/learning/dpg_n_step.py>
   - `code` <https://github.com/Scitator/Run-Skeleton-Run> (demo)
   - `paper` ["Deterministic Policy Gradient Algorithms"](#deterministic-policy-gradient-algorithms-silver-lever-heess-degris-wierstra-riedmiller) by Silver et al. `summary`
 

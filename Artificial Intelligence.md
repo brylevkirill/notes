@@ -460,17 +460,21 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 
 ----
 
-  **applications**
+  [exploration and intrinsic motivation](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#exploration-and-intrinsic-motivation)
 
-  ["Toward Intelligent Humanoids"](https://vimeo.com/51011081) demo by Schmidhuber's group `video`
+
+----
+#### artificial curiosity and creativity - applications
+
+  ["Toward Intelligent Humanoids"](https://vimeo.com/51011081) demo from Schmidhuber's group `video`
 
   ["Curiosity Driven Reinforcement Learning Motion Planning on Humanoids"](#curiosity-driven-reinforcement-learning-for-motion-planning-on-humanoids-frank-leitner-stollenga-forster-schmidhuber) by Frank, Schmidhuber et al. `paper` `summary`  
   ["PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem"](#powerplay-training-an-increasingly-general-problem-solver-by-continually-searching-for-the-simplest-still-unsolvable-problem-schmidhuber) by Schmidhuber `paper` `summary`  
   ["Continually Adding Self-Invented Problems to the Repertoire: First Experiments with PowerPlay"](#continually-adding-self-invented-problems-to-the-repertoire-first-experiments-with-powerplay-srivastava-steunebrink-stollenga-schmidhuber) by Srivastava, Schmidhuber et al. `paper` `summary`  
 
-----
 
-  **approximations**
+----
+#### artificial curiosity and creativity - approximations
 
   ["VIME: Variational Information Maximizing Exploration"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#vime-variational-information-maximizing-exploration-houthooft-chen-duan-schulman-turck-abbeel) by Houthooft et al. `paper` `summary`
 >	"Variational inference is used to approximate the posterior distribution of a Bayesian neural network that represents the environment dynamics. Using information gain in this learned dynamics model as intrinsic rewards allows the agent to optimize for both external reward and intrinsic surprise simultaneously."  
@@ -482,10 +486,6 @@ following up conjectures suggested by analogies). Good mathematicians see analog
   ["Automated Curriculum Learning for Neural Networks"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#automated-curriculum-learning-for-neural-networks-#graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper` `summary`
 >	"We focus on variants of prediction gain, and also introduce a novel class of progress signals which we refer to as complexity gain. Derived from minimum description length principles, complexity gain equates acquisition of knowledge with an increase in effective information encoded in the network weights."  
 >	"VIME uses a reward signal that is closely related to variational complexity gain. The difference is that while VIME measures the KL between the posterior before and after a step in parameter space, we consider the change in KL between the posterior and prior induced by the step. Therefore, while VIME looks for any change to the posterior, we focus only on changes that alter the divergence from the prior. Further research will be needed to assess the relative merits of the two signals."  
-
-----
-
-  [exploration and intrinsic motivation](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#exploration-and-intrinsic-motivation)
 
 
 
