@@ -89,13 +89,10 @@
 ----
 #### games
 
-  ["A 'Brief' History of Game AI Up To AlphaGo"](http://andreykurenkov.com/writing/a-brief-history-of-game-ai/) by Andrey Kurenkov  
-  ["AI for classic games"](http://youtube.com/watch?v=kZ_AUmFcZtk) by David Silver `video`  
+  [overview](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games) of historical and latest advances
 
   ["Measuring Intelligence through Games"](#measuring-intelligence-through-games-schaul-togelius-schmidhuber) by Schaul, Togelius, Schmidhuber `paper` `summary`  
   ["Why video games are essential for inventing artificial intelligence"](http://togelius.blogspot.ru/2016/01/why-video-games-are-essential-for.html) by Julian Togelius  
-
-  [overview](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games) of latest advances
 
 
 ----

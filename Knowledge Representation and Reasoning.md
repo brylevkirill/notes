@@ -882,38 +882,25 @@
 ---
 ### reasoning - neural architectures
 
-  "One of the main benefits in using neural networks is that they can be trained to handle very subtle kinds of logic that humans use in casual language that defy axiomatization. Propositional logic, first-order logic, higher-order logic, modal logic, nonmonotonic logic, probabilistic logic, fuzzy logic - none of them seem to quite be adequate; but if you use the right kind of recursive net, you don't even have to specify the logic to get it to make useful deductions, if you have enough training data."
-
-
   [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)  
   [architectures - compute and memory](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---compute-and-memory)  
 
-
-  open problems:
-  - How to decide what to write and what not to write in the memory?
-  - How to represent knowledge to be stored in memories?
-  - Types of memory (arrays, stacks, or stored within weights of model), when they should be used, and how can they be learnt?
-  - How to do fast retrieval of relevant knowledge from memories when the scale is huge?
-  - How to build hierarchical memories, e.g. employing multiscale notions of attention?
-  - How to build hierarchical reasoning, e.g. via composition of functions?
-  - How to incorporate forgetting/compression of information which is not important?
-  - How to properly evaluate reasoning models? Are artificial tasks a good way? Where do they break down and real tasks are needed?
-  - Can we draw inspiration from how animal or human memories are stored and used?
-
 ----
 
-  "Many machine reading approaches, from shallow information extraction to deep semantic parsing, map natural language to symbolic representations of meaning. Representations such as first-order logic capture the richness of natural language and support complex reasoning, but often fail in practice due to their reliance on logical background knowledge and the difficulty of scaling up inference. In contrast, low-dimensional embeddings (i.e. distributional representations) are efficient and enable generalization, but it is unclear how reasoning with embeddings could support the full power of symbolic representations such as first-order logic."
-
+  [overview](https://youtube.com/watch?v=UAa2o0W7vcg) of differences between pattern matching and abstract modeling + reasoning by Francois Chollet `video`  
+  ["The Future of Deep Learning"](http://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34?t=11m43s) `video`)  
 
   ["From Machine Learning to Machine Reasoning"](http://research.microsoft.com/pubs/192773/tr-2011-02-08.pdf) by Leon Bottou `paper`
 	([talk](http://youtube.com/watch?v=tzp_BikdgyM) `video`)
 
-  ["Reading and Reasoning with Vector Representations"](https://dropbox.com/s/6myacfkrp9raakq/Sheffield%202017%20Talk.pdf) by Sebastian Riedel `slides`
+  ["Cognitive Architectures"](https://machinethoughts.wordpress.com/2016/06/20/cognitive-architectures/) by David McAllester
+
+----
 
   ["Low-Dimensional Embeddings of Logic"](#rocktaschel-bosnjak-singh-riedel---low-dimensional-embeddings-of-logic--embedding-of-logic) by Tim Rocktaschel `paper` `summary`
 	([talk](http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/) `video`)
 
-  ["What Can Deep Learning Learn from Symbolic Inference?"](http://www.bicv.org/?wpdmdl=2309) by Tim Rocktaschel  
+  ["What Can Deep Learning Learn from Symbolic Inference?"](http://www.bicv.org/?wpdmdl=2309) by Tim Rocktaschel `slides`  
 >  - Deep Learning and symbolic rules can be combined efficiently  
 >    * map logical formulae to differentiable expressions  
 >    * generalization via learned vector representations  
@@ -924,12 +911,15 @@
 >    * induces a latent logic program  
 >    * trivial to incorporate prior knowledge in form of rules  
 
-  ["Cognitive Architectures"](https://machinethoughts.wordpress.com/2016/06/20/cognitive-architectures/) by David McAllester
+  ["Reading and Reasoning with Vector Representations"](https://dropbox.com/s/6myacfkrp9raakq/Sheffield%202017%20Talk.pdf) by Sebastian Riedel `slides`
+
+  ["Machine Reading and Reasoning with Neural Program Interpreters"](http://akbc.ws/2017/slides/sebastian-riedel-slides.pdf) by Sebastian Riedel `slides`
 
 ----
 
-  [overview](https://youtube.com/watch?v=UAa2o0W7vcg) of difference between pattern matching and abstraction + reasoning by Francois Chollet `video`  
-  ["The Future of Deep Learning"](http://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34?t=11m43s) `video`)  
+  "One of the main benefits in using neural networks is that they can be trained to handle very subtle kinds of logic that humans use in casual language that defy axiomatization. Propositional logic, first-order logic, higher-order logic, modal logic, nonmonotonic logic, probabilistic logic, fuzzy logic - none of them seem to quite be adequate; but if you use the right kind of recursive net, you don't even have to specify the logic to get it to make useful deductions, if you have enough training data."
+
+  "Many machine reading approaches, from shallow information extraction to deep semantic parsing, map natural language to symbolic representations of meaning. Representations such as first-order logic capture the richness of natural language and support complex reasoning, but often fail in practice due to their reliance on logical background knowledge and the difficulty of scaling up inference. In contrast, low-dimensional embeddings (i.e. distributional representations) are efficient and enable generalization, but it is unclear how reasoning with embeddings could support the full power of symbolic representations such as first-order logic."
 
 
 

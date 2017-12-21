@@ -98,6 +98,7 @@ interesting older papers:
 >	"On the one hand, Empirical Risk Minimization allows large neural networks to memorize (instead of generalize from) the training data even in the presence of strong regularization, or in classification problems where the labels are assigned at random. On the other hand, neural networks trained with ERM change their predictions drastically when evaluated on examples just outside the training distribution, also known as adversarial examples. This evidence suggests that ERM is unable to explain or provide generalization on testing distributions that differ only slightly from the training data."  
 >	"In Vicinal Risk Minimization, human knowledge is required to describe a vicinity or neighborhood around each example in the training data. Then, additional virtual examples can be drawn from the vicinity distribution of the training examples to enlarge the support of the training distribution. For instance, when performing image classification, it is common to define the vicinity of one image as the set of its horizontal reflections, slight rotations, and mild scalings. mixup extends the training distribution by incorporating the prior knowledge that linear interpolations of feature vectors should lead to linear interpolations of the associated targets."  
   - `post` <http://inference.vc/mixup-data-dependent-data-augmentation/>
+  - `code` <https://github.com/leehomyc/mixup_pytorch>
 
 #### ["Opening the Black Box of Deep Neural Networks via Information"](http://arxiv.org/abs/1703.00810) Shwartz-Ziv, Tishby
   `generalization`
@@ -599,6 +600,7 @@ interesting older papers:
   `episodic memory`
 >	"Memory was given a 2D structure in order to resemble a spatial map to address specific problems such as 2D or 3D navigation."  
 >	"Size and computational cost doesn't grow with time horizon of environment."  
+  - `slides` <http://www.cs.cmu.edu/~rsalakhu/NIPS2017_StructureMemoryForDeepRL.pdf>
   - `video` <https://yadi.sk/i/pMdw-_uI3Gke7Z> (Shvechikov) `in russian`
 
 #### ["A Growing Long-term Episodic and Semantic Memory"](http://arxiv.org/abs/1610.06402) Pickett, Al-Rfou, Shao, Tar
@@ -693,11 +695,13 @@ interesting older papers:
   - `video` ["Does the Brain do Inverse Graphics?"](https://youtube.com/watch?v=TFIMqt0yT2I) (Hinton)
   - `video` <https://youtube.com/watch?v=pPN8d0E3900> (Geron)
   - `video` <https://youtube.com/watch?v=EATWLTyLfmc> (Canziani)
+  - `video` <https://youtube.com/watch?v=hYt3FcJUf6w> (Uziela)
   - `video` <https://youtube.com/watch?v=VKoLGnq15RM> (Raval)
   - `video` <https://youtube.com/watch?v=UZ9BgrofhKk> (Kozlov) `in russian`
   - `post` <https://medium.com/@pechyonkin/understanding-hintons-capsule-networks-part-i-intuition-b4b559d1159b>
   - `post` <https://hackernoon.com/what-is-a-capsnet-or-capsule-network-2bfbe48769cc>
   - `post` <https://kndrck.co/posts/capsule_networks_explained/>
+  - `post` <https://jhui.github.io/2017/11/03/Dynamic-Routing-Between-Capsules/>
   - `post` <https://medium.com/@mike_ross/a-visual-representation-of-capsule-network-computations-83767d79e737>
   - `notes` <https://blog.acolyer.org/2017/11/13/dynamic-routing-between-capsules/>
   - `code` <https://github.com/llSourcell/capsule_networks>
@@ -712,7 +716,9 @@ interesting older papers:
 
 #### ["Matrix Capsules with EM Routing"](https://openreview.net/forum?id=HJWLfGWRb)
   `information routing` `CapsNet`
+  - `video` <https://youtube.com/watch?v=hYt3FcJUf6w> (Uziela)
   - `notes` <https://blog.acolyer.org/2017/11/14/matrix-capsules-with-em-routing/>
+  - `post` <https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/>
 
 #### ["Decoupled Neural Interfaces using Synthetic Gradients"](http://arxiv.org/abs/1608.05343) Jaderberg, Czarnecki, Osindero, Vinyals, Graves, Silver, Kavukcuoglu
   `information routing`
@@ -1328,6 +1334,7 @@ interesting older papers:
   `GAN training protocol`
   - `video` <https://youtube.com/watch?v=RZOKRFBtSh4&t=1m5s> (Pfau)
   - `video` <https://youtube.com/watch?v=1zQDCkqj3Tc> (Pfau)
+  - `video` <https://youtu.be/xfyK03MEZ9Q?t=5h21m15s> (Bagnell)
 
 ----
 #### ["Adversarially Regularized Autoencoders"](https://arxiv.org/abs/1706.04223) Zhao, Kim, Zhang, Rush, LeCun
@@ -1352,8 +1359,9 @@ interesting older papers:
   - <https://tcwang0509.github.io/pix2pixHD/> (demo)
   - `code` <https://github.com/NVIDIA/pix2pixHD>
 
-#### ["Progressive Growing of GANs for Improved Quality, Stability, and Variation"](http://research.nvidia.com/sites/default/files/pubs/2017-10_Progressive-Growing-of/karras2017gan-paper.pdf) Karras, Aila, Laine, Lehtinen
+#### ["Progressive Growing of GANs for Improved Quality, Stability, and Variation"](https://arxiv.org/abs/1710.10196) Karras, Aila, Laine, Lehtinen
   `GAN applications` `image synthesis`
+>	"Instead of Wassersteinizing, just keep the KL loss, but get rid of the disjoint support problem by doing multiresolution approximation of the data distribution."  
   - `video` <https://youtube.com/watch?v=XOxxPcy5Gr4> (demo)
   - `code` <https://github.com/tkarras/progressive_growing_of_gans>
   - `code` <https://github.com/ptrblck/prog_gans_pytorch_inference>
@@ -1465,7 +1473,7 @@ interesting older papers:
   - `code` <https://github.com/jadore801120/attention-is-all-you-need-pytorch>
 
 ----
-#### ["Parallel WaveNet: Fast High-Fidelity Speech Synthesis"](https://deepmind.com/documents/131/Distilling_WaveNet.pdf) Oord et al.
+#### ["Parallel WaveNet: Fast High-Fidelity Speech Synthesis"](https://arxiv.org/abs/1711.10433) Oord et al.
   `WaveNet`
 >	"Inverse autoregressive flows represent a kind of dual formulation of deep autoregressive modelling, in which sampling can be performed in parallel, while the inference procedure required for likelihood estimation is sequential and slow. The goal of this paper is to marry the best features of both models: the efficient training of WaveNet and the efficient sampling of IAF networks. The bridge between them is a new form of neural network distillation, which we refer to as Probability Density Distillation, where a trained WaveNet model is used as a teacher for training feedforward IAF model with no significant difference in quality."  
   - <https://deepmind.com/blog/wavenet-launches-google-assistant/> (demo)
@@ -1635,6 +1643,7 @@ interesting older papers:
 >	"Our goal is to design a RL algorithm with two desired properties. Firstly, to use off-policy data, which is important for exploration, when we use memory replay, or observe log-data. Secondly, to use multi-steps returns in order to propagate rewards faster and avoid accumulation of approximation/estimation errors. Both properties are crucial in deep RL. We introduce the “Retrace” algorithm, which uses multi-steps returns and can safely and efficiently utilize any off-policy data."  
 >	"open issue: off policy unbiased, low variance estimators for long horizon delayed reward problems"  
 >	"As a corollary, we prove the convergence of Watkins’ Q(λ), which was an open problem since 1989."  
+  - `video` <https://youtu.be/WuFMrk3ZbkE?t=35m30s> (Bellemare)
   - `video` <https://youtube.com/watch?v=8hK0NnG_DhY&t=25m27s> (Brunskill)
 
 #### ["Q(λ) with Off-Policy Corrections"](http://arxiv.org/abs/1602.04951) Harutyunyan, Bellemare, Stepleton, Munos
@@ -2252,7 +2261,7 @@ hieves."
 >	"HER may be seen as a form of implicit curriculum as the goals used for replay naturally shift from ones which are simple to achieve even by a random agent to more difficult ones. However, in contrast to explicit curriculum, HER does not require having any control over the distribution of initial environment states."  
 >	"Not only does HER learn with extremely sparse rewards, in our experiments it also performs better with sparse rewards than with shaped ones. These results are indicative of the practical challenges with reward shaping, and that shaped rewards would often constitute a compromise on the metric we truly care about (such as binary success/failure)."  
   - <https://sites.google.com/site/hindsightexperiencereplay/> (demo)
-  - `video` <https://youtu.be/pYQqMQ20oPU?t=29m32s> (Sutskever)
+  - `video` <https://youtu.be/BCzFs9Xb9_o?t=21m2s> (Sutskever)
   - `video` <https://youtu.be/TERCdog1ddE?t=50m45s> (Abbeel)
   - `paper` ["Universal Value Function Approximators"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#schaul-horgan-gregor-silver---universal-value-function-approximators) by Schaul et al.
 
@@ -2310,7 +2319,7 @@ hieves."
 
 #### ["Meta Learning Shared Hierarchies"](https://arxiv.org/abs/1710.09767) Frans, Ho, Chen, Abbeel, Schulman
   - `post` <https://blog.openai.com/learning-a-hierarchy/> (demo)
-  - `video` <https://youtu.be/pYQqMQ20oPU?t=40m43s> (Sutskever)
+  - `video` <https://youtu.be/BCzFs9Xb9_o?t=32m35s> (Sutskever)
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Meta_Learning_Shared_Hierarchies.md>
   - `code` <https://github.com/openai/mlsh>
 
@@ -2410,6 +2419,7 @@ hieves."
 >	"We demonstrate that auxiliary rewards, which guide the exploration on the target platform, improve performance in environments with sparse rewards and can even guide the agent if only uninformative or no environment rewards at all are given for the target agent."  
 >	"In addition to aligning the robot policy to adapt to progress in simulation, the reciprocal alignment of the simulation policy can be beneficial as the agent in simulation will be driven to explore better behaviours from states visited by the robot agent."  
   - <https://sites.google.com/view/matl> (demo)
+  - `video` <https://youtu.be/xfyK03MEZ9Q?t=6h24m47s> (Wulfmeier)
 
 ----
 #### ["Distral: Robust Multitask Reinforcement Learning"](https://arxiv.org/abs/1707.04175) Teh, Bapst, Czarnecki, Quan, Kirkpatrick, Hadsell, Heess, Pascanu
@@ -2480,6 +2490,7 @@ hieves."
   `modular networks`
   - `video` <https://youtube.com/watch?v=aWAP_CWEtSI> (Hadsell)
   - `video` <http://techtalks.tv/talks/progressive-nets-for-sim-to-real-transfer-learning/63043/> (Hadsell)
+  - `video` <https://youtu.be/xfyK03MEZ9Q?t=5h47m16s> (Hadsell)
   - `notes` <https://blog.acolyer.org/2016/10/11/progressive-neural-networks/>
   - `code` <https://github.com/synpon/prog_nn>
 
@@ -2717,6 +2728,9 @@ hieves."
 >	- Learn vector representations of symbols end-to-end from proof success  
 >	- Make use of provided rules in soft proofs  
 >	- Induce interpretable rules end-to-end from proof success"  
+>	"Limitations:  
+>	- knowledge bases with <10k facts  
+>	- small proof depth"  
   - `video` <https://facebook.com/nipsfoundation/videos/1554402331317667> (28:51)
   - `poster` <https://rockt.github.io/pdf/rocktaschel2017end-poster.pdf>
   - `slides` <https://rockt.github.io/pdf/rocktaschel2017end-slides.pdf> (Rocktaschel)

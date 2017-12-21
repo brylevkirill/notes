@@ -1628,6 +1628,7 @@ Yoshua Bengio:
 
   - `video` <https://youtube.com/watch?v=RZOKRFBtSh4&t=1m5s> (Pfau)
   - `video` <https://youtube.com/watch?v=3s4UyoMilQo> (Pfau)
+  - `video` <https://youtu.be/xfyK03MEZ9Q?t=5h21m15s> (Bagnell)
 
 
 #### ["A Connection Between Generative Adversarial Networks, Inverse Reinforcement Learning, and Energy-Based Models"](http://arxiv.org/abs/1611.03852) Finn, Christiano, Abbeel, Levine
@@ -1993,11 +1994,13 @@ x."
   - `video` ["Does the Brain do Inverse Graphics?"](https://youtube.com/watch?v=TFIMqt0yT2I) (Hinton)
   - `video` <https://youtube.com/watch?v=pPN8d0E3900> (Geron)
   - `video` <https://youtube.com/watch?v=EATWLTyLfmc> (Canziani)
+  - `video` <https://youtube.com/watch?v=hYt3FcJUf6w> (Uziela)
   - `video` <https://youtube.com/watch?v=VKoLGnq15RM> (Raval)
   - `video` <https://youtube.com/watch?v=UZ9BgrofhKk> (Kozlov) `in russian`
   - `post` <https://medium.com/@pechyonkin/understanding-hintons-capsule-networks-part-i-intuition-b4b559d1159b>
   - `post` <https://hackernoon.com/what-is-a-capsnet-or-capsule-network-2bfbe48769cc>
   - `post` <https://kndrck.co/posts/capsule_networks_explained/>
+  - `post` <https://jhui.github.io/2017/11/03/Dynamic-Routing-Between-Capsules/>
   - `post` <https://medium.com/@mike_ross/a-visual-representation-of-capsule-network-computations-83767d79e737>
   - `notes` <https://blog.acolyer.org/2017/11/13/dynamic-routing-between-capsules/>
   - `code` <https://github.com/llSourcell/capsule_networks>

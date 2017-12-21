@@ -69,29 +69,33 @@
 ----
 
   [Custom Decision Service](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-decision-service/custom-decision-service-overview) (Microsoft)
-	([summary](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al))  
+	([summary](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al))
 
   [personalized news](http://thenewstack.io/reinforcement-learning-ready-real-world/) (Microsoft)  
->	"For MSN homepage 25% relative lift in click-through rate while no previous learning method had been more successful than humans curating the content manually."  
-
   [recommender systems](https://deepmind.com/blog/deep-reinforcement-learning/) (Google)  
-
   [datacenter cooling](https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/) (Google)  
 
-  ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1701.07274) by Yuxi Li `paper` ([slides](https://dropbox.com/s/kzkc8t61t7tz9eu/AISeminar.pdf))  
+  ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1701.07274) by Yuxi Li `paper` ([slides](https://dropbox.com/s/kzkc8t61t7tz9eu/AISeminar.pdf))
 
-  [other applications](https://dropbox.com/sh/c0zocw1w8ujrpk5/AAAdIYB8U3szR1fL8iCkIt97a)  
+  [other applications](https://dropbox.com/sh/c0zocw1w8ujrpk5/AAAdIYB8U3szR1fL8iCkIt97a)
 
 ----
 
   ["Why Tool AIs Want to Be Agent AIs"](http://gwern.net/Tool%20AI) by Gwern Branwen:  
->	"The logical extension of these neural networks all the way down papers is that an actor like Google/Baidu/Facebook/MS could effectively turn neural networks into a black box: a user/developer uploads through an API a dataset of input/output pairs of a specified type and a monetary loss function, and a top-level neural network running on a large GPU cluster starts autonomously optimizing over architectures & hyperparameters for the neural network design which balances GPU cost and the monetary loss, interleaved with further optimization over the thousands of previous submitted tasks, sharing its learning across all of the datasets/loss functions/architectures/hyperparameters, and the original user simply submits future data through the API for processing by the best neural network so far."
+>	"The logical extension of these neural networks all the way down papers is that an actor like Google / Baidu / Facebook / MS could effectively turn neural networks into a black box: a user/developer uploads through an API a dataset of input/output pairs of a specified type and a monetary loss function, and a top-level neural network running on a large GPU cluster starts autonomously optimizing over architectures & hyperparameters for the neural network design which balances GPU cost and the monetary loss, interleaved with further optimization over the thousands of previous submitted tasks, sharing its learning across all of the datasets / loss functions / architectures / hyperparameters, and the original user simply submits future data through the API for processing by the best neural network so far."
 
 
 ----
 #### games
 
+  ["A 'Brief' History of Game AI Up To AlphaGo"](http://andreykurenkov.com/writing/a-brief-history-of-game-ai/) by Andrey Kurenkov
+
+  ["AI for Classic Games"](http://youtube.com/watch?v=kZ_AUmFcZtk) by David Silver `video`  
+  ["From TD(λ) to AlphaGo: Games, Neural Nets, Reinforcement Learning and Rollouts"](http://techtalks.tv/talks/on-td-learning-and-links-with-deeprl-in-atari-and-alphago/63031/) by Gerry Tesauro `video`  
+
+----
   - *Go*  
+
 	["Mastering the Game of Go without Human Knowledge"](#mastering-the-game-of-go-without-human-knowledge-silver-et-al) by Silver et al. `paper` `summary`  
 	["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper` `summary`  
 	["Combining Online and Offline Knowledge in UCT"](http://machinelearning.org/proceedings/icml2007/papers/387.pdf) by Gelly and Silver `paper` ([talk](https://youtube.com/watch?v=Bm7zah_LrmE) `video`)  
@@ -104,10 +108,8 @@
 
 	"Google AlphaGo is a historical tour of AI ideas: 70s (Alpha-Beta), 80s/90s (RL & self-play), 00's (Monte-Carlo), 10's (deep neural networks)."  
 	[history of ideas](http://youtube.com/watch?v=UMm0XaCFTJQ) by Rich Sutton, Czaba Szepesvari, Michael Bowling, Ryan Hayward, Martin Muller `video`  
-	["Combining Online and Offline Knowledge in UCT"](https://youtube.com/watch?v=Bm7zah_LrmE) by David Silver and Sylvain Gelly `video`  
 
-	["5 Easy Pieces: How Deepmind mastered Go"](https://xcorr.net/2016/02/03/5-easy-pieces-how-deepmind-mastered-go/) by Patrick Mineault  
-	["AlphaGo, In Context"](https://medium.com/@karpathy/alphago-in-context-c47718cb95a5) by Andrej Karpathy  
+	["AlphaGo, In Context"](https://medium.com/@karpathy/alphago-in-context-c47718cb95a5) by Andrej Karpathy
 
 	AlphaGo vs Lee Sedol match:
 
@@ -141,7 +143,9 @@
 	game 3: [overview](https://youtube.com/watch?v=ru0E7N0-kFE) `video` +
 		[overview](https://youtube.com/watch?v=CUZxe7bXKxo) `text`  
 
+----
   - *Poker*  
+
 	["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](#deepstack-expert-level-artificial-intelligence-in-no-limit-poker-moravcik-et-al) by Moravcik et al. `paper` `summary`  
 	["Science" magazine](http://science.sciencemag.org/content/early/2017/03/01/science.aam6960) `paper`  
 
@@ -156,9 +160,11 @@
 	[discussion](http://thinkingpoker.net/2017/04/episode-210-michael-johanson-and-dustin-morrill/) with Michael Johanson and Dustin Morrill  
 	[discussion](http://thinkingpoker.net/2017/08/episode-225-taking-the-variance-out-of-poker/) with Michael Bowling and Dustin Morrill  
 
-	[matches against professional players](https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ) `video`
+	[DeepStack vs professional players](https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ) `video`
 
+----
   - *Chess*  
+
 	["Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm"](#mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm-silver-et-al) by Silver et al. `paper` `summary`  
 	["Giraffe: Using Deep Reinforcement Learning to Play Chess"](#giraffe-using-deep-reinforcement-learning-to-play-chess-lai) by Lai `paper` `summary`  
 	["Bootstrapping from Game Tree Search"](#bootstrapping-from-game-tree-search-veness-silver-uther-blair) by Veness et al. `paper` `summary`  
@@ -168,7 +174,7 @@
 
 	AlphaZero vs Stockfish match:
 
-	[highlights](https://youtube.com/watch?v=6z1o48Sgrck) `video`
+	[match highlights](https://youtube.com/watch?v=6z1o48Sgrck) `video`
 
 	game 3: [overview](https://youtube.com/watch?v=akgalUq5vew) `video`  
 	game 5: [overview](https://youtube.com/watch?v=9AMI3520S5Y) `video`  
@@ -176,25 +182,42 @@
 	game 9: [overview](https://youtube.com/watch?v=MTWkX6KZO2A) `video`  
 	game 10: [overview](https://youtube.com/watch?v=DiJeP9oifsc) `video`  
 
+----
   - *Dota 2*  
-	<https://blog.openai.com/dota-2/>  
-	[overview](https://blog.openai.com/more-on-dota-2/)  
 
-	[game vs Dendi](https://youtube.com/watch?v=wiOopO9jTZw) `video`  
-	[game vs SumaiL](https://youtube.com/watch?v=IbaHI38Ewws) `video`  
-	[game vs Arteezy](https://youtube.com/watch?v=rNSH8CviQQw) `video`  
-	[game vs Pajkatt](https://youtube.com/watch?v=BBUiwCEmrxU) `video`  
+	[overview](https://blog.openai.com/dota-2/) of OpenAI bot  
+	[overview](https://blog.openai.com/more-on-dota-2/) of OpenAI bot  
 
+	[OpenAI bot vs Dendi](https://youtube.com/watch?v=wiOopO9jTZw) `video`  
+	[OpenAI bot vs SumaiL](https://youtube.com/watch?v=IbaHI38Ewws) `video`  
+	[OpenAI bot vs Arteezy](https://youtube.com/watch?v=rNSH8CviQQw) `video`  
+	[OpenAI bot vs Pajkatt](https://youtube.com/watch?v=BBUiwCEmrxU) `video`  
+
+----
   - *Doom*  
+
 	["Learning to Act by Predicting the Future"](#learning-to-act-by-predicting-the-future-dosovitskiy-koltun) by Dosovitskiy and Koltun `paper` `summary`
 
 	[demo](https://youtube.com/watch?v=947bSUtuSQ0) of IntelAct agent `video`  
 	[demo](https://youtube.com/channel/UC8UghzsxS5uEFUEbvcAWwlQ/videos) of agents from ViZDoom competition `video`  
 
+----
   - *Atari*  
+
 	["Playing Atari with Deep Reinforcement Learning"](#playing-atari-with-deep-reinforcement-learning-mnih-kavukcuoglu-silver-graves-antonoglou-wierstra-riedmiller) by Mnih et al. `paper` `summary`
 
 	[demo](http://youtube.com/watch?v=EfGD2qveGdQ) `video`
+
+----
+  - *Jeopardy!*  
+
+	["Simulation, Learning and Optimization Techniques in Watson's Game Strategies"](https://researchgate.net/publication/260624027_Simulation_learning_and_optimization_techniques_in_Watson%27s_game_strategies) by Tesauro et al. `paper`  
+	["Analysis of Watson's Strategies for Playing Jeopardy!"](https://arxiv.org/abs/1402.0571) by Tesauro et al. `paper`  
+
+	["How Watson Learns Superhuman Jeopardy! Strategies"](https://youtube.com/watch?v=7rIf2Njye5k) by Gerry Tesauro `video`
+
+	[IBM Watson](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#ibm-watson) `summary`
+
 
 
 ----
@@ -288,7 +311,7 @@
 
   [exercises and solutions](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction) by Shangtong Zhang  
   [exercises and solutions](http://www.wildml.com/2016/10/learning-reinforcement-learning/) by Denny Britz  
-  [course with exercises and solutions](https://github.com/yandexdataschool/Practical_RL/) from Yandex  
+  [exercises and solutions](https://github.com/yandexdataschool/Practical_RL/) from Yandex  
 
   [implementations of algorithms](https://github.com/ShangtongZhang/DeepRL) from Shangtong Zhang  
   [implementations of algorithms](https://github.com/NervanaSystems/coach) from Intel Nervana  
@@ -1957,18 +1980,19 @@ interesting recent papers:
 
 >	"Although I'm a bit bothered by the assumption of the density model being "learning-positive", which seems central to their theoretical derivation of pseudo-counts: after you observe a state, your subjective probability of observing it again immediately should generally decrease unless you believe that the state is a fixed point attractor with high probability. I can see that in practice the assumption works well in their experimental setting since they use pixel-level factored models and, by the nature of the ATARI games they test on, most pixels don't change value from frame to frame, but in a more general setting, e.g. a side-scroller game or a 3D first-person game this assumption would not hold."
 
-  - `video` <https://youtube.com/watch?v=0yI2wJ6F8r0> (demo)
-  - `video` <https://youtube.com/watch?v=qSfd27AgcEk> (Bellemare)
+  - `video` <https://youtube.com/watch?v=0yI2wJ6F8r0> + <https://youtube.com/watch?v=qeeTok1qDZk> + <https://youtube.com/watch?v=EzQwCmGtEHs> (demo)
+  - `video` <https://youtu.be/qSfd27AgcEk?t=29m5s> (Bellemare)
+  - `video` <https://youtu.be/WuFMrk3ZbkE?t=1h27m37s> (Bellemare)
   - `video` <https://youtu.be/qduxl-vKz1E?t=1h16m30s> (Seleznev) `in russian`
   - `video` <https://youtube.com/watch?v=qKyOLNVpknQ> (Pavlov) `in russian`
   - `notes` <http://pemami4911.github.io/paper-summaries/deep-rl/2016/10/08/unifying-count-based-exploration-and-intrinsic-motivation.html>
-  - `code` <https://github.com/lake4790k/pseudo-count-atari>
+  - `code` <https://github.com/brendanator/atari-rl>
 
 
 #### ["Count-Based Exploration with Neural Density Models"](http://arxiv.org/abs/1703.01310) Ostrovski, Bellemare, van den Oord, Munos
 >	"Bellemare et al. (2016) introduced the notion of a pseudo-count to generalize count-based exploration to non-tabular reinforcement learning. This pseudo-count is derived from a density model which effectively replaces the count table used in the tabular setting. Using an exploration bonus based on this pseudo-count and a mixed Monte Carlo update applied to a DQN agent was sufficient to achieve state-of-the-art on the Atari 2600 game Montezuma's Revenge. In this paper we consider two questions left open by their work: First, how important is the quality of the density model for exploration? Second, what role does the Monte Carlo update play in exploration? We answer the first question by demonstrating the use of PixelCNN, an advanced neural density model for images, to supply a pseudo-count. In particular, we examine the intrinsic difficulties in adapting Bellemare et al's approach when assumptions about the model are violated. The result is a more practical and general algorithm requiring no special apparatus. We combine PixelCNN pseudo-counts with different agent architectures to dramatically improve the state of the art on several hard Atari games. One surprising finding is that the mixed Monte Carlo update is a powerful facilitator of exploration in the sparsest of settings, including Montezuma's Revenge."
 
-  - `video` <http://youtube.com/watch?v=qSfd27AgcEk> (Bellemare)
+  - `paper` ["Unifying Count-Based Exploration and Intrinsic Motivation"](#unifying-count-based-exploration-and-intrinsic-motivation-bellemare-srinivasan-ostrovski-schaul-saxton-munos) by Bellemare et al. `summary`
 
 
 #### ["\#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning"](http://arxiv.org/abs/1611.04717) Tang et al.
@@ -2723,6 +2747,9 @@ interesting recent papers:
 >	"Sequential prediction problems such as imitation learning, where future observations depend on previous predictions (actions), violate the common i.i.d. assumptions made in statistical learning. This leads to poor performance in theory and often in practice. Some recent approaches (Daumé III et al., 2009; Ross and Bagnell, 2010) provide stronger guarantees in this setting, but remain somewhat unsatisfactory as they train either non-stationary or stochastic policies and require a large number of iterations. In this paper, we propose a new iterative algorithm, which trains a stationary deterministic policy, that can be seen as a no regret algorithm in an online learning setting. We show that any such no regret algorithm, combined with additional reduction assumptions, must find a policy with good performance under the distribution of observations it induces in such sequential settings. We demonstrate that this new approach outperforms previous approaches on two challenging imitation learning problems and a benchmark sequence labeling problem."
 
 >	"We show that by batching over iterations of interaction with a system, no-regret methods, including the presented DAGGER approach can provide a learning reduction with strong performance guarantees in both imitation learning and structured prediction. In future work, we will consider more sophisticated strategies than simple greedy forward decoding for structured prediction, as well as using base classifiers that rely on Inverse Optimal Control (Abbeel and Ng, 2004; Ratliff et al., 2006) techniques to learn a cost function for a planner to aid prediction in imitation learning. Further we believe techniques similar to those presented, by leveraging a cost-to-go estimate, may provide an understanding of the success of online methods for reinforcement learning and suggest a similar data-aggregation method that can guarantee performance in such settings."
+
+----
+>	"non i.i.d. supervised learning from oracle demonstrations under own state distribution"
 
   - `video` <https://youtube.com/watch?v=kl_G95uKTHw&t=1h5m38s> (Levine)
   - `paper` <http://ciml.info/dl/v0_99/ciml-v0_99-ch18.pdf> (Daume)
