@@ -131,6 +131,11 @@
   - produce explanations for decisions  
   - integrate knowledge  
 
+  disadvantages:  
+  - learning can be wrong if model is wrong  
+  - not all prior knowledge can be encoded as joint distributions  
+  - simple analytic forms of conditional distributions  
+
   applications:  
   - data-efficient learning  
   - exploration  

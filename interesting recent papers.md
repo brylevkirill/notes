@@ -380,6 +380,7 @@ interesting older papers:
 #### ["Importance Weighted Autoencoders"](http://arxiv.org/abs/1509.00519) Burda, Grosse, Salakhutdinov
   `variational inference` `posterior approximation`
 >	"As we show empirically, the VAE objective can lead to overly simplified representations which fail to use the network's entire modeling capacity. We present the importance weighted autoencoder, a generative model with the same architecture as the VAE, but which uses a strictly tighter log-likelihood lower bound derived from importance weighting. In the IWAE, the recognition network uses multiple samples to approximate the posterior, giving it increased flexibility to model complex posteriors which do not fit the VAE modeling assumptions."  
+  - `video` <https://facebook.com/nipsfoundation/videos/1555493854541848/> (29:31) (Teh)
   - `post` <http://dustintran.com/blog/importance-weighted-autoencoders/>
   - `post` <https://casmls.github.io/general/2017/04/24/iwae-aae.html>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/BurdaGS15>
@@ -409,6 +410,7 @@ interesting older papers:
 >	"Continuous reparemetrisation based on the so-called Concrete or Gumbel-softmax distribution, which is a continuous distribution and has a temperature constant that can be annealed during training to converge to a discrete distribution in the limit. In the beginning of training the variance of the gradients is low but biased, and towards the end of training the variance becomes high but unbiased."  
 >	"Doesn't close the performance gap of VAEs with continuous latent variables where one can use the Gaussian reparameterisation trick which benefits from much lower variance in the gradients."  
   - `video` <http://youtube.com/watch?v=JFgXEbgcT7g> (Jang)
+  - `video` <https://facebook.com/nipsfoundation/videos/1555493854541848/> (25:13) (Teh)
   - `video` <https://youtu.be/_XRBlhzb31U?t=28m33s> (Figurnov) `in russian`
   - `post` <http://artem.sobolev.name/posts/2017-10-28-stochastic-computation-graphs-discrete-relaxations.html>
   - `post` <https://laurent-dinh.github.io/2016/11/21/gumbel-max.html>
@@ -452,8 +454,12 @@ interesting older papers:
 
 #### ["Bayesian GAN"](https://arxiv.org/abs/1705.09558) Saatchi, Wilson
   `bayesian model`
->	"In this paper, we present a simple Bayesian formulation for end-to-end unsupervised and semi-supervised learning with generative adversarial networks. Within this framework, we marginalize the posteriors over the weights of the generator and discriminator using stochastic gradient Hamiltonian Monte Carlo. We interpret data samples from the generator, showing exploration across several distinct modes in the generator weights. We also show data and iteration efficient learning of the true distribution. We also demonstrate state of the art semi-supervised learning performance on several benchmarks, including SVHN, MNIST, CIFAR-10, and CelebA. The simplicity of the proposed approach is one of its greatest strengths: inference is straightforward, interpretable, and stable. Indeed all of the experimental results were obtained without feature matching, normalization, or any ad-hoc techniques."
+>	"Instead of learning one generative network learn a distribution over networks. To generate an example: draw random network, draw random sample."  
+>	"We marginalize the posteriors over the weights of generator and discriminator using stochastic gradient Hamiltonian Monte Carlo."  
+>	"The simplicity of the proposed approach is one of its greatest strengths: inference is straightforward, interpretable, and stable. Indeed all of the experimental results were obtained without feature matching, normalization, or any ad-hoc techniques."  
+>	"We interpret data samples from the generator, showing exploration across several distinct modes in the generator weights."  
   - `video` <https://youtube.com/watch?v=24A8tWs6aug>
+  - `video` <https://youtu.be/ZHucm52V3Zw?t=52m36s> (Umnov)
   - `code` <https://github.com/andrewgordonwilson/bayesgan/>
 
 #### ["Bayesian Recurrent Neural Networks"](https://arxiv.org/abs/1704.02798) Fortunato, Blundell, Vinyals
@@ -634,7 +640,7 @@ interesting older papers:
   - `notes` <https://github.com/dennybritz/deeplearning-papernotes/blob/3718d181a0fed5ed806582822ed0dbde530122bf/notes/mixture-experts.md>
 
 #### ["Overcoming Catastrophic Forgetting in Neural Networks"](http://arxiv.org/abs/1612.00796) Kirkpatrick et al.
-  `catastrophic forgetting` `continual learning`
+  `catastrophic forgetting` `continual learning` `Elastic Weight Consolidation`
 >	"The Mixture of Experts Layer is trained using back-propagation. The Gating Network outputs an (artificially made) sparse vector that acts as a chooser of which experts to consult. More than one expert can be consulted at once (although the paper doesn’t give any precision on the optimal number of experts). The Gating Network also decides on output weights for each expert."  
 >
 >	Huszar:  
@@ -645,6 +651,7 @@ interesting older papers:
   - `paper` <http://www.pnas.org/content/early/2017/03/13/1611835114.abstract>
   - `post` <https://deepmind.com/blog/enabling-continual-learning-in-neural-networks/>
   - `video` <https://vimeo.com/238221551#t=13m9s> (Hadsell)
+  - `video` <https://facebook.com/nipsfoundation/videos/1555493854541848/> (17:58) (Teh)
   - `post` <http://rylanschaeffer.github.io/content/research/overcoming_catastrophic_forgetting/main.html>
   - `post` <http://inference.vc/comment-on-overcoming-catastrophic-forgetting-in-nns-are-multiple-penalties-needed-2/>
   - `notes` <https://theneuralperspective.com/2017/04/01/overcoming-catastrophic-forgetting-in-neural-networks/>
@@ -1029,6 +1036,7 @@ interesting older papers:
   `learning embedding`
   - `notes` <https://medium.com/towards-data-science/facebook-research-just-published-an-awesome-paper-on-learning-hierarchical-representations-34e3d829ede7>
   - `notes` <https://medium.com/@hol_io/word-embeddings-exploration-explanation-and-exploitation-with-code-in-python-5dac99d5d795>
+  - `post` <https://rare-technologies.com/implementing-poincare-embeddings/>
   - `code` <https://github.com/TatsuyaShirakawa/poincare-embedding>
 
 
@@ -1085,8 +1093,12 @@ interesting older papers:
 
 ----
 #### ["Variational Approaches for Auto-Encoding Generative Adversarial Networks"](https://arxiv.org/abs/1706.04987) Rosca, Lakshminarayanan, Warde-Farley, Mohamed
-  `unifying GANs and VAEs`
+  `unifying GANs and VAEs` `α-GAN`
+>	"Use more general likelihoods than in VAE. Fight intractability using discriminators."  
+  - `video` <https://youtu.be/ZHucm52V3Zw?t=5m5s> (Umnov)
   - `video` <https://youtu.be/jAI3rBI6poU?t=1h1m33s> (Ulyanov) `in russian`
+  - `slides` <http://elarosca.net/slides/iccv_autoencoder_gans.pdf>
+  - `notes` <https://medium.com/@g789872001darren/paper-note-variational-approaches-for-auto-encoding-generative-adversarial-networks-fefc3b3841ff>
   - `code` <https://github.com/victor-shepardson/alpha-GAN>
 
 #### ["On Unifying Deep Generative Models"](https://arxiv.org/abs/1706.00550) Hu, Yang, Salakhutdinov, Xing
@@ -1385,6 +1397,11 @@ interesting older papers:
   `GAN applications` `domain translation`
   - `code` <https://github.com/wiseodd/generative-models/tree/master/GAN/dual_gan>
 
+#### ["Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks"](https://arxiv.org/abs/1703.10593) Zhu, Park, Isola, Efros
+  `GAN applications` `domain translation` `CycleGAN`
+  - <https://junyanz.github.io/CycleGAN/> (demo)
+  - `code` <https://github.com/junyanz/CycleGAN>
+
 #### ["Unsupervised Image-to-Image Translation Networks"](http://arxiv.org/abs/1703.00848) Liu, Breuel, Kautz
   `GAN applications` `domain translation`
 
@@ -1402,6 +1419,15 @@ interesting older papers:
 ----
 #### ["An Information-Theoretic Analysis of Deep Latent-Variable Models"](https://arxiv.org/abs/1711.00464) Alemi, Poole, Fischer, Dillon, Saurous, Murphy
 >	"We present an information-theoretic framework for understanding trade-offs in unsupervised learning of deep latent-variables models using variational inference. This framework emphasizes the need to consider latent-variable models along two dimensions: the ability to reconstruct inputs (distortion) and the communication cost (rate). We derive the optimal frontier of generative models in the two-dimensional rate-distortion plane, and show how the standard evidence lower bound objective is insufficient to select between points along this frontier. However, by performing targeted optimization to learn generative models with different rates, we are able to learn many models that can achieve similar generative performance but make vastly different trade-offs in terms of the usage of the latent variable."  
+
+----
+#### ["Wasserstein Auto-Encoders"](https://arxiv.org/abs/1711.01558) Tolstikhin, Bousquet, Gelly, Scholkopf
+  `WAE`
+>	"WAE minimizes a penalized form of the Wasserstein distance between the model distribution and the target distribution, which leads to a different regularizer than the one used by VAE."  
+>	"Both VAE and WAE minimize two terms: the reconstruction cost and the regularizer penalizing discrepancy between Pz and distribution induced by the encoder Q. VAE forces Q(Z|X=x) to match Pz for all the different input examples x drawn from Px. Every single red ball is forced to match Pz depicted as the white shape. Red balls start intersecting, which leads to problems with reconstruction. In contrast, WAE forces the continuous mixture Qz:=∫Q(z|x)dPx to match Pz. As a result latent codes of different examples get a chance to stay far away from each other, promoting a better reconstruction."  
+>	"WAE shares many of the properties of VAEs (stable training, encoder-decoder architecture, nice latent manifold structure) while generating samples of better quality, as measured by the FID score."  
+>	"WAE is a generalization of adversarial auto-encoder."  
+  - `paper` ["Adversarial Autoencoders"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#adversarial-autoencoders-makhzani-shlens-jaitly-goodfellow) by Makhzani et al. `summary`
 
 ----
 #### ["Neural Discrete Representation Learning"](https://arxiv.org/abs/1711.00937) Oord, Vinyals, Kavukcuoglu
@@ -1460,6 +1486,23 @@ interesting older papers:
 #### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin
   `Transformer`
 >	"The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely."  
+>
+>	"n - sequence length, d - representation dimension, k - convolution kernel size, r - neighborhood size  
+>	complexity per layer:  
+>	- self-attention: O(n^2*d)  
+>	- recurrent: O(n*d^2)  
+>	- convolutional: O(k*n*d^2)  
+>	- self-attention (restricted): O(r*n*d)  
+>	sequential operations:  
+>	- O(1)  
+>	- O(n)  
+>	- O(1)  
+>	- O(1)  
+>	maximum path integral:  
+>	- O(1)  
+>	- O(n)  
+>	- O(logk(n))  
+>	- O(n/r)"  
   - `post` <https://research.googleblog.com/2017/08/transformer-novel-neural-network.html>
   - `video` <https://youtube.com/watch?v=rBCqOTEfxvg> (Kaiser)
   - `video` <https://youtube.com/watch?v=iDulhoQ2pro> (Kilcher)
@@ -1961,6 +2004,12 @@ interesting older papers:
   - `code` <http://github.com/etalvitie/hdaggermc>
 
 ----
+#### ["Self-supervised Deep Reinforcement Learning with Generalized Computation Graphs for Robot Navigation"](https://arxiv.org/abs/1709.10489) Kahn, Villaflor, Ding, Abbeel, Levine
+  `learning to plan` `learning abstract environment model`
+>	"generalized computation graph that subsumes value-based model-free methods and model-based methods, with specific instantiations interpolating between model-free and model-based"  
+  - `video` <https://youtube.com/watch?v=vgiW0HlQWVE> (demo)
+  - `code` <http://github.com/gkahn13/gcg>
+
 #### ["Learning Model-based Planning from Scratch"](https://arxiv.org/abs/1707.06170) Pascanu, Li, Vinyals, Heess, Buesing, Racaniere, Reichert, Weber, Wierstra, Battaglia
   `learning to plan` `learning abstract environment model` `IBP`
 >	"- A fully learnable model-based planning agent for continuous control.  
@@ -1973,12 +2022,6 @@ interesting older papers:
   - `post` <https://deepmind.com/blog/agents-imagine-and-plan/>
   - `video` <https://youtube.com/watch?v=56GW1IlWgMg> (Kilcher)
   - `paper` ["Interaction Networks for Learning about Objects, Relations and Physics"](http://arxiv.org/abs/1612.00222) by Battaglia et al.
-
-#### ["Self-supervised Deep Reinforcement Learning with Generalized Computation Graphs for Robot Navigation"](https://arxiv.org/abs/1709.10489) Kahn, Villaflor, Ding, Abbeel, Levine
-  `learning to plan` `learning abstract environment model`
->	"generalized computation graph that subsumes value-based model-free methods and model-based methods, with specific instantiations interpolating between model-free and model-based"  
-  - `video` <https://youtube.com/watch?v=vgiW0HlQWVE> (demo)
-  - `code` <http://github.com/gkahn13/gcg>
 
 #### ["Value Prediction Network"](https://arxiv.org/abs/1707.03497) Oh, Singh, Lee
   `learning to plan` `learning abstract environment model`
@@ -2219,6 +2262,7 @@ hieves."
 >	- value function replay: value function regression for the base agent with varying window for n-step returns"  
 >	"By using these tasks we force the agent to learn about the controllability of its environment and the sorts of sequences which lead to rewards, and all of this shapes the features of the agent."
 >	"This approach exploits the multithreading capabilities of standard CPUs. The idea is to execute many instances of our agent in parallel, but using a shared model. This provides a viable alternative to experience replay, since parallelisation also diversifies and decorrelates the data. Our asynchronous actor-critic algorithm, A3C, combines a deep Q-network with a deep policy network for selecting actions. It achieves state-of-the-art results, using a fraction of the training time of DQN and a fraction of the resource consumption of Gorila."  
+  - `post` <https://deepmind.com/blog/reinforcement-learning-unsupervised-auxiliary-tasks/>
   - `video` <https://youtube.com/watch?v=Uz-zGYrYEjA> (demo)
   - `video` <https://youtube.com/watch?v=VVLYTqZJrXY> (Jaderberg)
   - `video` <https://facebook.com/iclr.cc/videos/1712224178806641/> (1:15:45) (Jaderberg)
@@ -2272,6 +2316,7 @@ hieves."
 >
 >	"Solve the task in reverse, first training from positions closer to the goal and then bootstrap this knowledge to solve from further."  
 >	"Sample more start states from where you succeed sometimes but not always (for best efficiency)."  
+  - `post` <http://bair.berkeley.edu/blog/2017/12/20/reverse-curriculum/>
   - `video` <https://youtu.be/xfyK03MEZ9Q?t=7h32m35s> (Florensa)
 
 #### ["Teacher-Student Curriculum Learning"](https://arxiv.org/abs/1707.00183) Matiisen, Oliver, Cohen, Schulman
@@ -2505,6 +2550,7 @@ hieves."
 ----
 #### ["Deep Reinforcement Learning from Human Preferences"](https://arxiv.org/abs/1706.03741) Christiano, Leike, Brown, Martic, Legg, Amodei
   `reinforcement learning from preferences`
+>	"Algorithm provides two possible solutions for task to human who indicates which one is better. The process is repeated and the algorithm learns from 900 bits of feedback how to solve the problem."  
   - `video` <https://drive.google.com/drive/folders/0BwcFziBYuA8RM2NTdllSNVNTWTg> (demo)
   - `post` <https://deepmind.com/blog/learning-through-human-feedback/>
   - `post` <https://blog.openai.com/deep-reinforcement-learning-from-human-preferences/>
@@ -2669,6 +2715,7 @@ hieves."
 
 ----
 #### ["Learning Explanatory Rules from Noisy Data"](https://arxiv.org/abs/1711.04574) Evans, Grefenstette
+  - `post` <https://deepmind.com/research/publications/learning-explanatory-rules-noisy-data/>
 
 #### ["Learning Neural Programs To Parse Programs"](https://arxiv.org/abs/1706.01284) Chen, Liu, Song
 >	"We explore a new direction to learn domain-specific programs significantly more complex than previously considered in the literature of learning programs from input-output examples only. In particular, we consider an exemplary problem to learn a program to parse an input satisfying a context-free grammar into its abstract syntax tree. This problem is challenging when the underlying grammar is unknown, and only input-output examples are provided. The program to be synthesized in this problem, i.e., a parser, is more complex than programs consisting of string operations as in many previous work, and thus serves as a good next step challenge to tackle in the domain of learning programs from input-output examples."  
@@ -2982,10 +3029,17 @@ hieves."
 [interesting older papers](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#interesting-papers)
 
 ----
+#### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin
+  `sequence transduction` `Transformer`
+  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#attention-is-all-you-need-vaswani-shazeer-parmar-uszkoreit-jones-gomez-kaiser-polosukhin>
+
 #### ["Non-Autoregressive Neural Machine Translation"](https://arxiv.org/abs/1711.02281) Gu, Bradbury, Xiong, Li, Socher
-  `translation`
+  `translation` `Non-Autoregressive Transformer`
+>	"Existing approaches to neural machine translation condition each output word on previously generated outputs. We introduce a model that avoids this autoregressive property and produces its outputs in parallel, allowing an order of magnitude lower latency during inference. Through knowledge distillation, the use of input token fertilities as a latent variable, and policy gradient fine-tuning, we achieve this at a cost of as little as 2.0 BLEU points relative to the autoregressive Transformer network used as a teacher."  
+>	"parallel decoder in addition to parallel encoder - up to 8x speed-up"  
   - `post` <https://einstein.ai/research/non-autoregressive-neural-machine-translation>
 
+----
 #### ["Unsupervised Machine Translation Using Monolingual Corpora Only"](https://arxiv.org/abs/1711.00043) Lample, Denoyer, Ranzato
   `translation`
 >	"learn to map sentences of the two languages into the same feature space by denoising both via auto-encoding and via cross-domain encoding"  
@@ -2995,13 +3049,14 @@ hieves."
   `translation`
   - `notes` <http://ankitg.me/blog/2017/11/05/unsupervised-machine-translation.html>
 
-#### ["Word Translation Without Parallel Data"](https://arxiv.org/abs/1710.04087) Conneau, Lample, Ranzato, Denoyer, Jegou
+#### ["Word Translation without Parallel Data"](https://arxiv.org/abs/1710.04087) Conneau, Lample, Ranzato, Denoyer, Jegou
   `translation`
 >	"Our method leverages adversarial training to learn a linear mapping from a source to a target space and operates in two steps. First, in a two-player game, a discriminator is trained to distinguish between the mapped source embeddings and the target embeddings, while the mapping (which can be seen as a generator) is jointly trained to fool the discriminator. Second, we extract a synthetic dictionary from the resulting shared embedding space and fine-tune the mapping with the closed-form Procrustes solution."  
->	"(A) There are two distributions of word embeddings, English words in red denoted by X and Italian words in blue denoted by Y, which we want to align/translate. Each dot represents a word in that space. The size of the dot is proportional to the frequency of the words in the training corpus of that language.  
->	(B) Using adversarial learning, we learn a rotation matrix W which roughly aligns the two distributions. The green stars are randomly selected words that are fed to the discriminator to determine whether the two word embeddings come from the same distribution.  
->	(C) The mapping W is further refined via Procrustes. This method uses frequent words aligned by the previous step as anchor points, and minimizes an energy function that corresponds to a spring system between anchor points. The refined mapping is then used to map all words in the dictionary.  
->	(D) Finally, we translate by using the mapping W and a distance metric, dubbed CSLS, that expands the space where there is high density of points (like the area around the word “cat”), so that “hubs” (like the word “cat”) become less close to other word vectors than they would otherwise (compare to the same region in panel (A))."  
+>	"There are two distributions of word embeddings, English words in red denoted by X and Italian words in blue denoted by Y, which we want to align/translate. Each dot represents a word in that space. The size of the dot is proportional to the frequency of the words in the training corpus of that language.  
+>	Using adversarial learning, we learn a rotation matrix W which roughly aligns the two distributions. The green stars are randomly selected words that are fed to the discriminator to determine whether the two word embeddings come from the same distribution.  
+>	The mapping W is further refined via Procrustes. This method uses frequent words aligned by the previous step as anchor points, and minimizes an energy function that corresponds to a spring system between anchor points. The refined mapping is then used to map all words in the dictionary.  
+>	Finally, we translate by using the mapping W and a distance metric, dubbed CSLS, that expands the space where there is high density of points (like the area around the word “cat”), so that “hubs” (like the word “cat”) become less close to other word vectors than they would otherwise (compare to the same region in panel (A))."  
+  - `code` <https://github.com/facebookresearch/MUSE>
 
 #### ["Style Transfer from Non-Parallel Text by Cross-Alignment"](https://arxiv.org/abs/1705.09655) Shen, Lei, Barzilay, Jaakkola
   `translation`

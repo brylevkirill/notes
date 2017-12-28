@@ -20,7 +20,7 @@
 	tutorial by Bhaskar Mitra and Nick Craswell (WSDM 2017)
 	([slides](https://slideshare.net/BhaskarMitra3/neural-text-embeddings-for-information-retrieval-wsdm-2017), [paper](https://arxiv.org/abs/1705.01509))  
 
-  ["An Introduction to Information Retrieval"](http://nlp.stanford.edu/IR-book/pdf/irbookprint.pdf) book by Manning, Raghavan, Schutze  
+  ["An Introduction to Information Retrieval"](https://nlp.stanford.edu/IR-book/) book by Manning, Raghavan, Schutze  
   ["Search Engines. Information Retrieval in Practice"](http://ciir.cs.umass.edu/irbook/) book by Croft, Metzler, Strohman  
 
 ----
@@ -113,23 +113,52 @@
 ### interesting papers - ranking
 
 
-#### ["From RankNet to LambdaRank to LambdaMART: An Overview"](https://www.microsoft.com/en-us/research/publication/from-ranknet-to-lambdarank-to-lambdamart-an-overview/) Burges
-  `overview of ERR/pFound`
->	"LambdaMART is the boosted tree version of LambdaRank, which is based on RankNet. RankNet, LambdaRank, and LambdaMART have proven to be very successful algorithms for solving real world ranking problems: for example an ensemble of LambdaMART rankers won Track 1 of the 2010 Yahoo! Learning To Rank Challenge. The details of these algorithms are spread across several papers and reports, and so here we give a self-contained, detailed and complete description of them."
-
->	"Although here we will concentrate on ranking, it is straightforward to modify MART in general, and LambdaMART in particular, to solve a wide range of supervised learning problems (including maximizing information retrieval functions, like NDCG, which are not smooth functions of the model scores).
+#### ["Learning Rank Functionals: An Empirical Study"](https://arxiv.org/abs/1407.6089) Tran et al.
+>	"Ranking is a key aspect of many applications, such as information retrieval, question answering, ad placement and recommender systems. Learning to rank has the goal of estimating a ranking model automatically from training data. In practical settings, the task often reduces to estimating a rank functional of an object with respect to a query. In this paper, we investigate key issues in designing an effective learning to rank algorithm. These include data representation, the choice of rank functionals, the design of the loss function so that it is correlated with the rank metrics used in evaluation. For the loss function, we study three techniques: approximating the rank metric by a smooth function, decomposition of the loss into a weighted sum of element-wise losses and into a weighted sum of pairwise losses. We then present derivations of piecewise losses using the theory of high-order Markov chains and Markov random fields. In experiments, we evaluate these design aspects on two tasks: answer ranking in a Social Question Answering site, and Web Information Retrieval."
 
 
 #### ["Learning to Rank using Gradient Descent"](http://icml.cc/2015/wp-content/uploads/2015/06/icml_ranking.pdf) Burges et al.
+  `RankNet`
 >	"We investigate using gradient descent methods for learning ranking functions; we propose a simple probabilistic cost function, and we introduce RankNet, an implementation of these ideas using a neural network to model the underlying ranking function. We present test results on toy data and on data from a commercial internet search engine."
 
 >	"We have proposed a probabilistic cost for training systems to learn ranking functions using pairs of training examples. The approach can be used for any differentiable function; we explored using a neural network formulation, RankNet. RankNet is simple to train and gives excellent performance on a real world ranking problem with large amounts of data. Comparing the linear RankNet with other linear systems clearly demonstrates the benefit of using our pair-based cost function together with gradient descent; the two layer net gives further improvement. For future work it will be interesting to investigate extending the approach to using other machine learning methods for the ranking function; however evaluation speed and simplicity is a critical constraint for such systems."
 
   - `video` <http://videolectures.net/icml2015_burges_learning_to_rank/> (Burges)
+  - `video` <https://youtu.be/3R6vBd_Y8O4> (Nikolenko) `in russian`
 
 
 #### ["Learning to Rank with Nonsmooth Cost Functions"](https://papers.nips.cc/paper/2971-learning-to-rank-with-nonsmooth-cost-functions) Burges et al.
+  `LambdaRank`
 >	"The quality measures used in information retrieval are particularly difficult to optimize directly, since they depend on the model scores only through the sorted order of the documents returned for a given query. Thus, the derivatives of the cost with respect to the model parameters are either zero, or are undefined. In this paper, we propose a class of simple, flexible algorithms, called LambdaRank, which avoids these difficulties by working with implicit cost functions. We describe LambdaRank using neural network models, although the idea applies to any differentiable function class. We give necessary and sufficient conditions for the resulting implicit cost function to be convex, and we show that the general method has a simple mechanical interpretation. We demonstrate significantly improved accuracy, over a state-of-the-art ranking algorithm, on several datasets. We also show that LambdaRank provides a method for significantly speeding up the training phase of that ranking algorithm. Although this paper is directed towards ranking, the proposed method can be extended to any non-smooth and multivariate cost functions."
+
+----
+>	"LambdaRank is a method for learning arbitrary information retrieval measures; it can be applied to any algorithm that learns through gradient descent. LambdaRank is a listwise method, in that the cost depends on the sorted order of the documents. The key LambdaRank insight is to define the gradient of the cost with respect to the score that the model assigns to a given xi after all of the xi have been sorted by their scores si; thus the gradients take into account the rank order of the documents, as defined by the current model. LambdaRank is an empirical algorithm, in that the form that the gradients take was chosen empirically: the λ’s are those gradients, and the contribution to a given feature vector xi’s λi from a pair (xi, xj), y(xi) != y(xj), is just the gradient of the logistic regression loss (viewed as a function of si - sj) multiplied by the change in Z caused by swapping the rank positions of the two documents while keeping all other documents fixed, where Z is the information retrieval measure being learned. λi is then the sum of contributions for all such pairs. Remarkably, it has been shown that a LambdaRank model trained on Z, for Z equal to Normalized Cumulative Discounted Gain (NDCG), Mean Reciprocal Rank, or Mean Average Precision (three commonly used IR measures), given sufficient training data, consistently finds a local optimum of that IR measure (in the space of the measure viewed as a function of the model parameters)."
+
+  - `video` <https://youtu.be/3R6vBd_Y8O4?t=32m8s> (Nikolenko) `in russian`
+  - `paper` ["Learning to Rank Using an Ensemble of Lambda-Gradient Models"](http://proceedings.mlr.press/v14/burges11a/burges11a.pdf) by Burges et al. (optimizing Expected Reciprocal Rank)
+
+
+#### ["From RankNet to LambdaRank to LambdaMART: An Overview"](https://www.microsoft.com/en-us/research/publication/from-ranknet-to-lambdarank-to-lambdamart-an-overview/) Burges
+  `LambdaMART`
+>	"LambdaMART is the boosted tree version of LambdaRank, which is based on RankNet. RankNet, LambdaRank, and LambdaMART have proven to be very successful algorithms for solving real world ranking problems: for example an ensemble of LambdaMART rankers won Track 1 of the 2010 Yahoo! Learning To Rank Challenge. The details of these algorithms are spread across several papers and reports, and so here we give a self-contained, detailed and complete description of them."
+
+----
+>	"While LambdaRank was originally instantiated using neural nets, it was found that a boosted tree multiclass classifier (McRank) gave improved performance. Combining these ideas led to LambdaMART, which instantiates the LambdaRank idea using gradient boosted decision trees. This work showed that McRank’s improved performance over LambdaRank (instantiated in a neural net) is due to the difference in the expressiveness of the underlying models (boosted decision trees versus neural nets) rather than being due to an inherent limitation of the lambda-gradient idea."
+
+>	"LambdaMART combines LambdaRank and MART (Multiple Additive Regression Trees). While MART uses gradient boosted decision trees for prediction tasks, LambdaMART uses gradient boosted decision trees using a cost function derived from LambdaRank for solving a ranking task. On experimental datasets, LambdaMART has shown better results than LambdaRank and the original RankNet."
+
+>	"Cascade of trees, in which each new tree contributes to a gradient step in the direction that minimises the loss function. The ensemble of these trees is the final model. LambdaMART uses this ensemble but it replaces that gradient with the lambda (gradient computed given the candidate pairs) presented in LambdaRank."
+
+  - `video` <https://youtu.be/3R6vBd_Y8O4?t=48m9s> (Nikolenko) `in russian`
+  - `post` <https://wellecks.wordpress.com/2015/02/21/peering-into-the-black-box-visualizing-lambdamart/>
+  - `paper` ["Learning to Rank Using an Ensemble of Lambda-Gradient Models"](http://proceedings.mlr.press/v14/burges11a/burges11a.pdf) by Burges et al.
+
+
+#### ["An Efficient Boosting Algorithm for Combining Preferences"](http://jmlr.org/papers/volume4/freund03a/freund03a.pdf) Freund, Iyer, Schapire, Singer
+  `RankBoost`
+>	"We study the problem of learning to accurately rank a set of objects by combining a given collection of ranking or preference functions. This problem of combining preferences arises in several applications, such as that of combining the results of different search engines, or the "collaborative-filtering" problem of ranking movies for a user based on the movie rankings provided by other users. In this work, we begin by presenting a formal framework for this general problem. We then describe and analyze an efficient algorithm called RankBoost for combining preferences based on the boosting approach to machine learning. We give theoretical results describing the algorithm's behavior both on the training data, and on new test data not seen during training. We also describe an efficient implementation of the algorithm for a particular restricted but common case. We next discuss two experiments we carried out to assess the performance of RankBoost. In the first experiment, we used the algorithm to combine different web search strategies, each of which is a query expansion for a given domain. The second experiment is a collaborative-filtering task for making movie recommendations."
+
+  - `video` <https://youtu.be/3R6vBd_Y8O4?t=42m13s> (Nikolenko) `in russian`
 
 
 #### ["Learning to Rank Short Text Pairs with Convolutional Deep Neural Networks"](http://disi.unitn.it/~severyn/papers/sigir-2015-long.pdf) Severyn, Moschitti

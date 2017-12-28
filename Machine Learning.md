@@ -159,6 +159,7 @@
 	<http://iclr2018.mmanukyan.io>  
 
   - NIPS 2017  
+	<https://nips.cc/Conferences/2017/Videos> `video`  
 	<https://facebook.com/pg/nipsfoundation/videos/> `video`  
 	<https://facebook.com/NIPSlive/videos/> `video`  
 
@@ -642,7 +643,7 @@
     * multi-armed bandit
     * exploration for reinforcement learning"
 
-  "The logical extension of these neural networks all the way down papers is that an actor like Google/Baidu/Facebook/MS could effectively turn neural networks into a black box: a user/developer uploads through an API a dataset of input/output pairs of a specified type and a monetary loss function, and a top-level neural network running on a large GPU cluster starts autonomously optimizing over architectures & hyperparameters for the neural network design which balances GPU cost and the monetary loss, interleaved with further optimization over the thousands of previous submitted tasks, sharing its learning across all of the datasets/loss functions/architectures/hyperparameters, and the original user simply submits future data through the API for processing by the best neural network so far."
+  "The logical extension of these neural networks all the way down papers is that an actor like Google / Baidu / Facebook / MS could effectively turn neural networks into a black box: a user/developer uploads through an API a dataset of input/output pairs of a specified type and a monetary loss function, and a top-level neural network running on a large GPU cluster starts autonomously optimizing over architectures & hyperparameters for the neural network design which balances GPU cost and the monetary loss, interleaved with further optimization over the thousands of previous submitted tasks, sharing its learning across all of the datasets / loss functions / architectures / hyperparameters, and the original user simply submits future data through the API for processing by the best neural network so far."
 
   *(Gwern Branwen)*
 

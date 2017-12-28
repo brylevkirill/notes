@@ -1516,6 +1516,7 @@ interesting recent papers:
 >	"We introduced a method to augment a DRQN model with high-level game information, and modularized our architecture to incorporate independent networks responsible for different phases of the game. These methods lead to dramatic improvements over the standard DRQN model when applied to complicated tasks like a deathmatch. We showed that the proposed model is able to outperform built-in bots as well as human players and demonstrated the generalizability of our model to unknown maps."
 
   - `video` <https://youtube.com/playlist?list=PLduGZax9wmiHg-XPFSgqGg8PEAV51q1FT> (demo)
+  - `code` <https://github.com/glample/Arnold>
 
 
 #### ["Mastering the Game of Go without Human Knowledge"](https://deepmind.com/documents/119/agz_unformatted_nature.pdf) Silver et al.
@@ -2169,6 +2170,7 @@ interesting recent papers:
 
 >	"This approach exploits the multithreading capabilities of standard CPUs. The idea is to execute many instances of our agent in parallel, but using a shared model. This provides a viable alternative to experience replay, since parallelisation also diversifies and decorrelates the data. Our asynchronous actor-critic algorithm, A3C, combines a deep Q-network with a deep policy network for selecting actions. It achieves state-of-the-art results, using a fraction of the training time of DQN and a fraction of the resource consumption of Gorila."
 
+  - `post` <https://deepmind.com/blog/reinforcement-learning-unsupervised-auxiliary-tasks/>
   - `video` <https://youtube.com/watch?v=Uz-zGYrYEjA> (demo)
   - `video` <https://youtube.com/watch?v=VVLYTqZJrXY> (Jaderberg)
   - `video` <https://facebook.com/iclr.cc/videos/1712224178806641/> (1:15:45) (Jaderberg)

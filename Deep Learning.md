@@ -87,12 +87,16 @@
 
 #### applications
 
+  [applications](#interesting-papers---applications)
+
   [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)  
   [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)  
+  [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
   [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
   [natural language processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md)  
   [information retrieval](https://github.com/brylevkirill/notes/blob/master/Information%20Retrieval.md)  
-  [other applications](https://dropbox.com/sh/dio0ypwiph44ehn/AAADQCyEutvVt9iugVU1F5S8a)  
+
+  [other applications](https://dropbox.com/sh/dio0ypwiph44ehn/AAADQCyEutvVt9iugVU1F5S8a)
 
 
 #### research areas
@@ -266,10 +270,6 @@
 
 ----
 
-  "Most applications of neural nets can be considered graphical models that use neural nets to provide some of the conditional probability distributions. You could argue that the graphical model perspective is growing less useful because so many recent neural models have such simple graph structure (GANs, VAEs and NICE are bipartite graphs with every latent variable connected to every observed variable, PixelRNNs/MADE/NADE are the complete graph with no latent variables). These graphs are not very structured compared to neural models that were popular a few years ago like DBMs. But there are some recent models that make a little bit of use of graph structure, like VAEs with auxiliary variables."
-
-  *(Ian Goodfellow)*
-
   ["Marrying Graphical Models & Deep Learning"](http://videolectures.net/deeplearning2017_welling_inference/) by Max Welling `video`
 
   ["Graphical Models"](http://www.deeplearningbook.org/contents/graphical_models.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
@@ -314,6 +314,9 @@
 
 ----
 
+  bayesian deep learning - bayesian concepts applied to deep learning methods  
+  deep bayesian learning - deep learning concepts applied to bayesian methods  
+
   deep learning (framework for constructing flexible models):  
   - *(plus)* rich non-linear models for classification and sequence prediction  
   - *(plus)* scalable learning using stochastic approximations and conceptually simple  
@@ -329,31 +332,6 @@
   - *(plus)* tools for model selection and composition  
   - *(minus)* mainly conjugate and linear models  
   - *(minus)* potentially intractable inference leading to expensive computation or long simulation times  
-
-----
-
-  *deterministic view*:  layers transform observed input to feature space and final one to target output space  
-  *probabilistic view*:  each layer defines a distribution of hidden units given the observed input  
-
-  bayesian neural networks:
-
-  - *uncertainty in predictions*  
-	Bayesian neural network informs about the uncertainty in its predictions. Uncertainty is an underappreciated concept in machine learning as it's clearly important for real-world applications. But it could also be useful in training. For example, one could train the model specifically on samples it is most uncertain about.
-
-  - *uncertainty in representations*  
-	One also gets uncertainty estimates of weights which could inform about the stability of the learned representations of the network.
-
-  - *regularization with priors*  
-	Weights are often L2-regularized to avoid overfitting, this very naturally becomes a Gaussian prior for the weight coefficients. One could, however, imagine all kinds of other priors, like spike-and-slab to enforce sparsity (this would be more like using the L1-norm).
-
-  - *transfer learning with informed priors*  
-	If one wanted to train a network on a new object recognition data set, he could bootstrap the learning by placing informed priors centered around weights retrieved from other pre-trained networks, like GoogLeNet.
-
-  - *hierarchical neural networks*  
-	A very powerful approach is hierarchical modeling that allows pooling of things that were learned on sub-groups to the overall population. We could train individual neural nets to specialize on sub-groups while still being informed about representations of the overall population. For example, imagine a network trained to classify car models from pictures of cars. One could train a hierarchical neural network where a sub-neural network is trained to tell apart models from only a single manufacturer. The intuition being that all cars from a certain manufactures share certain similarities so it would make sense to train individual networks that specialize on brands. However, due to the individual networks being connected at a higher layer, they would still share information with the other specialized sub-networks about features that are useful to all brands. Interestingly, different layers of the network could be informed by various levels of the hierarchy -- e.g. early layers that extract visual lines could be identical in all sub-networks while the higher-order representations would be different. The hierarchical model would learn all that from the data.
-
-  - *other hybrid architectures*  
-	We can more freely build all kinds of neural networks. For example, Bayesian non-parametrics could be used to flexibly adjust the size and shape of the hidden layers to optimally scale the network architecture to the problem at hand during training. Currently, this requires costly hyper-parameter optimization and a lot of tribal knowledge.
 
 
 
@@ -1221,6 +1199,8 @@
   - <http://deeplearning.twbbs.org> (demo)
   - `video` <http://youtube.com/watch?v=pdODJ7JQfjo> (Zaremba)
   - `post` <http://i-programmer.info/news/105-artificial-intelligence/7352-the-flaw-lurking-in-every-deep-neural-net.html>
+  - `code` <https://github.com/tensorflow/cleverhans>
+  - `code` <https://github.com/bethgelab/foolbox>
 
 
 #### ["Explaining and Harnessing Adversarial Examples"](http://arxiv.org/abs/1412.6572) Goodfellow, Shlens, Szegedy
@@ -1256,6 +1236,8 @@ Yoshua Bengio:
   - `video` <http://videolectures.net/deeplearning2015_goodfellow_adversarial_examples/> (Goodfellow)
   - `post` <https://karpathy.github.io/2015/03/30/breaking-convnets/>
   - `post` <http://kdnuggets.com/2015/07/deep-learning-adversarial-examples-misconceptions.html>
+  - `code` <https://github.com/tensorflow/cleverhans>
+  - `code` <https://github.com/bethgelab/foolbox>
 
 
 #### ["Distilling the Knowledge in a Neural Network"](http://arxiv.org/abs/1503.02531) Hinton, Vinyals, Dean
@@ -2124,6 +2106,23 @@ x."
 
 #### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani et al.
 >	"The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.0 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data."
+
+>	"n - sequence length, d - representation dimension, k - convolution kernel size, r - neighborhood size  
+>	complexity per layer:  
+>	- self-attention: O(n^2*d)  
+>	- recurrent: O(n*d^2)  
+>	- convolutional: O(k*n*d^2)  
+>	- self-attention (restricted): O(r*n*d)  
+>	sequential operations:  
+>	- O(1)  
+>	- O(n)  
+>	- O(1)  
+>	- O(1)  
+>	maximum path integral:  
+>	- O(1)  
+>	- O(n)  
+>	- O(logk(n))  
+>	- O(n/r)"  
 
   - `post` <https://research.googleblog.com/2017/08/transformer-novel-neural-network.html>
   - `video` <https://youtube.com/watch?v=rBCqOTEfxvg> (Kaiser)
