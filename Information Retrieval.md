@@ -35,9 +35,10 @@
 
   [course](http://nzhiltsov.github.io/IR-course/) by Nikita Zhiltsov `in russian`
 
-  introduction to ranking by Nikita Volkov
+  [overview](https://youtube.com/watch?v=3R6vBd_Y8O4) of ranking by Sergey Nikolenko `video` `in russian`  
+  overview of ranking by Nikita Volkov
 	([first part](https://youtube.com/watch?v=GctrEpJinhI),
-	[second part](https://youtube.com/watch?v=GZmXKBzIfkA)) `video` `in russian`
+	[second part](https://youtube.com/watch?v=GZmXKBzIfkA)) `video` `in russian`  
 
 ---
 

@@ -67,7 +67,7 @@
 
   ["Deep Learning"](https://coursera.org/specializations/deep-learning) by Andrew Ng ([videos](https://youtube.com/channel/UCcIXc5mJsHVYTZR1maL5l9w))  
   ["Neural Networks"](http://info.usherbrooke.ca/hlarochelle/neural_networks/content.html) by Hugo Larochelle ([videos](http://youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH))  
-  ["Machine Learning"](https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/) by Nando de Freitas ([videos](http://youtube.com/playlist?list=PLE6Wd9FR--EfW8dtjAuPoTuPcqmOV53Fu))  
+  ["Deep Learning"](https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/) by Nando de Freitas ([videos](http://youtube.com/playlist?list=PLE6Wd9FR--EfW8dtjAuPoTuPcqmOV53Fu))  
   ["Neural Networks for Machine Learning"](https://coursera.org/course/neuralnets) by Geoffrey Hinton ([videos](http://youtube.com/user/aicourses/playlists?shelf_id=2&view=50))  
   ["Convolutional Neural Networks for Visual Recognition"](http://cs231n.stanford.edu) by Andrej Karpathy ([videos](https://youtube.com/channel/UC2__PIf36huAgKFumlOIs6A))  
 
@@ -1182,16 +1182,6 @@
   - `post` <http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/>
 
 
-#### ["Train Faster, Generalize Better: Stability of Stochastic Gradient Descent"](http://arxiv.org/abs/1509.01240) Hardt, Recht, Singer
-  `generalization`
->	"We show that parametric models trained by a stochastic gradient method with few iterations have vanishing generalization error. We prove our results by arguing that SGM is algorithmically stable in the sense of Bousquet and Elisseeff. Our analysis only employs elementary tools from convex and continuous optimization. We derive stability bounds for both convex and non-convex optimization under standard Lipschitz and smoothness assumptions. Applying our results to the convex case, we provide new insights for why multiple epochs of stochastic gradient methods generalize well in practice. In the non-convex case, we give a new interpretation of common practices in neural networks, and formally show that popular techniques for training large deep models are indeed stability-promoting. Our findings conceptually underscore the importance of reducing training time beyond its obvious benefit."
-
-  - `post` <http://argmin.net/2016/04/18/bottoming-out/> (Recht)
-  - `post` <http://www.offconvex.org/2016/03/14/stability/> (Hardt)
-  - `post` <http://www.offconvex.org/2016/03/22/saddlepoints/> (Ge)
-  - `post` <http://www.offconvex.org/2016/03/24/saddles-again/> (Recht)
-
-
 #### ["Intriguing Properties of Neural Networks"](http://arxiv.org/abs/1312.6199) Szegedy, Zaremba, Sutskever, Bruna, Erhan, Goodfellow, Fergus
   `generalization`
 >	"Deep neural networks are highly expressive models that have recently achieved state of the art performance on speech and visual recognition tasks. While their expressiveness is the reason they succeed, it also causes them to learn uninterpretable solutions that could have counter-intuitive properties. In this paper we report two such properties. First, we find that there is no distinction between individual high level units and random linear combinations of high level units, according to various methods of unit analysis. It suggests that it is the space, rather than the individual units, that contains the semantic information in the high layers of neural networks. Second, we find that deep neural networks learn input-output mappings that are fairly discontinuous to a significant extent. We can cause the network to misclassify an image by applying a certain hardly perceptible perturbation, which is found by maximizing the network’s prediction error. In addition, the specific nature of these perturbations is not a random artifact of learning: the same perturbation can cause a different network, that was trained on a different subset of the dataset, to misclassify the same input."
@@ -1251,14 +1241,31 @@ Yoshua Bengio:
 >	"Train a large network on the original training labels, then learn a much smaller “distilled” model on a weighted combination of the original labels and the (softened) softmax output of the larger model. The authors show that the distilled model has better generalization ability than a model trained on just the labels."
 
   - `video` <https://youtube.com/watch?v=EK61htlw8hY> (Hinton)
+  - `video` <http://videolectures.net/deeplearning2017_larochelle_neural_networks/> (part 2, 1:28:45) (Larochelle)
+  - `paper` ["Distilling a Neural Network Into a Soft Decision Tree"](https://arxiv.org/abs/1711.09784) by Frosst, Hinton
 
 
-#### ["Understanding Black-box Predictions via Influence Functions"](https://arxiv.org/abs/1703.04730) Koh, Liang
-  `interpretability`
->	"How can we explain the predictions of a black-box model? In this paper, we use influence functions -- a classic technique from robust statistics -- to trace a model's prediction through the learning algorithm and back to its training data, thereby identifying training points most responsible for a given prediction. To scale up influence functions to modern machine learning settings, we develop a simple, efficient implementation that requires only oracle access to gradients and Hessian-vector products. We show that even on non-convex and non-differentiable models where the theory breaks down, approximations to influence functions can still provide valuable information. On linear models and convolutional neural networks, we demonstrate that influence functions are useful for multiple purposes: understanding model behavior, debugging models, detecting dataset errors, and even creating visually-indistinguishable training-set attacks."
-  - `video` <https://youtube.com/watch?v=0w9fLX_T6tY> (Koh)
-  - `video` <https://facebook.com/academics/videos/1633085090076225/> (1:23:28) (Liang)
-  - `code` <https://github.com/kohpangwei/influence-release>
+#### ["Train Faster, Generalize Better: Stability of Stochastic Gradient Descent"](http://arxiv.org/abs/1509.01240) Hardt, Recht, Singer
+  `generalization` `optimization`
+>	"We show that parametric models trained by a stochastic gradient method with few iterations have vanishing generalization error. We prove our results by arguing that SGM is algorithmically stable in the sense of Bousquet and Elisseeff. Our analysis only employs elementary tools from convex and continuous optimization. We derive stability bounds for both convex and non-convex optimization under standard Lipschitz and smoothness assumptions. Applying our results to the convex case, we provide new insights for why multiple epochs of stochastic gradient methods generalize well in practice. In the non-convex case, we give a new interpretation of common practices in neural networks, and formally show that popular techniques for training large deep models are indeed stability-promoting. Our findings conceptually underscore the importance of reducing training time beyond its obvious benefit."
+
+  - `post` <http://argmin.net/2016/04/18/bottoming-out/> (Recht)
+  - `post` <http://www.offconvex.org/2016/03/14/stability/> (Hardt)
+  - `post` <http://www.offconvex.org/2016/03/22/saddlepoints/> (Ge)
+  - `post` <http://www.offconvex.org/2016/03/24/saddles-again/> (Recht)
+
+
+#### ["Identifying and Attacking the Saddle Point Problem in High-dimensional Non-convex Optimization"](http://arxiv.org/abs/1406.2572) Dauphin, Pascanu, Gulcehre, Cho, Ganguli, Bengio
+  `optimization`
+>	"A central challenge to many fields of science and engineering involves minimizing non-convex error functions over continuous, high dimensional spaces. Gradient descent or quasi-Newton methods are almost ubiquitously used to perform such minimizations, and it is often thought that a main source of difficulty for these local methods to find the global minimum is the proliferation of local minima with much higher error than the global minimum. Here we argue, based on results from statistical physics, random matrix theory, neural network theory, and empirical evidence, that a deeper and more profound difficulty originates from the proliferation of saddle points, not local minima, especially in high dimensional problems of practical interest. Such saddle points are surrounded by high error plateaus that can dramatically slow down learning, and give the illusory impression of the existence of a local minimum. Motivated by these arguments, we propose a new approach to second-order optimization, the saddle-free Newton method, that can rapidly escape high dimensional saddle points, unlike gradient descent and quasi-Newton methods. We apply this algorithm to deep or recurrent neural network training, and provide numerical evidence for its superior optimization performance."
+
+>	"In summary, we have drawn from disparate literatures spanning statistical physics and random matrix theory to neural network theory, to argue that (a) non-convex error surfaces in high dimensional spaces generically suffer from a proliferation of saddle points, and (b) in contrast to conventional wisdom derived from low dimensional intuition, local minima with high error are exponentially rare in high dimensions. Moreover, we have provided the first experimental tests of these theories by performing new measurements of the statistical properties of critical points in neural network error surfaces. These tests were enabled by a novel application of Newton’s method to search for critical points of any index (fraction of negative eigenvalues), and they confirmed the main qualitative prediction of theory that the index of a critical point tightly and positively correlates with its error level."
+
+>	"It is often the case that our geometric intuition, derived from experience within a low dimensional physical world, is inadequate for thinking about the geometry of typical error surfaces in high-dimensional spaces. To illustrate this, consider minimizing a randomly chosen error function of a single scalar variable, given by a single draw of a Gaussian process. (Rasmussen and Williams, 2005) have shown that such a random error function would have many local minima and maxima, with high probability over the choice of the function, but saddles would occur with negligible probability. On the other-hand, as we review below, typical, random Gaussian error functions over N scalar variables, or dimensions, are increasingly likely to have saddle points rather than local minima as N increases. Indeed the ratio of the number of saddle points to local minima increases exponentially with the dimensionality N."
+
+>	"A typical problem for both local minima and saddle-points is that they are often surrounded by plateaus of small curvature in the error. While gradient descent dynamics are repelled away from a saddle point to lower error by following directions of negative curvature, this repulsion can occur slowly due to the plateau. Second order methods, like the Newton method, are designed to rapidly descend plateaus surrounding local minima by rescaling gradient steps by the inverse eigenvalues of the Hessian matrix. However, the Newton method does not treat saddle points appropriately; as argued below, saddle-points instead become attractive under the Newton dynamics. Thus, given the proliferation of saddle points, not local minima, in high dimensional problems, the entire theoretical justification for quasi-Newton methods, i.e. the ability to rapidly descend to the bottom of a convex local minimum, becomes less relevant in high dimensional non-convex optimization."
+
+  - `video` <http://videolectures.net/deeplearning2017_larochelle_neural_networks/> (part 2, 1:16:54) (Larochelle)
 
 
 #### ["Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift"](http://arxiv.org/abs/1502.03167) Ioffe, Szegedy
@@ -1282,29 +1289,6 @@ Yoshua Bengio:
   - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/icml/IoffeS15>
   
 
-#### ["Normalization Propagation: A Parametric Technique for Removing Internal Covariate Shift in Deep Networks"](https://arxiv.org/abs/1603.01431) Arpit, Zhou, Kota, Govindaraju
-  `optimization`
->	"While the authors of Batch Normalization identify and address an important problem involved in training deep networks - Internal Covariate Shift - the current solution has certain drawbacks. Specifically, BN depends on batch statistics for layerwise input normalization during training which makes the estimates of mean and standard deviation of input (distribution) to hidden layers inaccurate for validation due to shifting parameter values (especially during initial training epochs). Also, BN cannot be used with batch-size 1 during training. We address these drawbacks by proposing a non-adaptive normalization technique for removing internal covariate shift, that we call Normalization Propagation. Our approach does not depend on batch statistics, but rather uses a data-independent parametric estimate of mean and standard-deviation in every layer thus being computationally faster compared with BN. We exploit the observation that the pre-activation before Rectified Linear Units follow Gaussian distribution in deep networks, and that once the first and second order statistics of any given dataset are normalized, we can forward propagate this normalization without the need for recalculating the approximate statistics for hidden layers."
-
->	"We have proposed a novel algorithm for addressing the problem of Internal Covariate Shift involved during training deep neural networks that overcomes certain drawbacks of Batch Normalization. Specifically, we propose a parametric approach that avoids estimating the mean and standard deviation of hidden layers’ input distribution using input data mini-batch statistics (that involve shifting network parameters). Instead, NormProp relies on normalizing the statistics of the given dataset and conditioning the weight matrix which ensures normalization done for the dataset is propagated to all hidden layers. Thus NormProp does not need to maintain a moving average estimate of batch statistics of hidden layer inputs for validation/test phase, thus being more representative of the entire data distribution (especially during initial training period when parameters change drastically). This also enables the use of batch size 1 for training. Although we have shown how to apply NormProp in detail for networks with ReLU activation, we have discussed how to extend it for other activations as well. We have empirically shown NormProp achieves more stable convergence and hidden layer input distribution over validation set during training, and better/competitive classification performance compared with BN while being faster by omitting the need to compute mini-batch estimate of mean/standard-deviation for hidden layers’ input. In conclusion, our approach is applicable alongside any activation function and cost objectives for improving training convergence."
-
-  - `video` <http://techtalks.tv/talks/normalization-propagation-a-parametric-technique-for-removing-internal-covariate-shift-in-deep-networks/62369/> (Arpit)
-  - `video` <http://youtube.com/watch?v=-fpBFHti5ZE> (Novikov)
-
-
-#### ["Weight Normalization: A Simple Reparameterization to Accelerate Training of Deep Neural Networks"](http://arxiv.org/abs/1602.07868) Salimans, Kingma
-  `optimization`
->	"We present weight normalization: a reparameterization of the weight vectors in a neural network that decouples the length of those weight vectors from their direction. By reparameterizing the weights in this way we improve the conditioning of the optimization problem and we speed up convergence of stochastic gradient descent. Our reparameterization is inspired by batch normalization but does not introduce any dependencies between the examples in a minibatch. This means that our method can also be applied successfully to recurrent models such as LSTMs and to noise-sensitive applications such as deep reinforcement learning or generative models, for which batch normalization is less well suited. Although our method is much simpler, it still provides much of the speed-up of full batch normalization. In addition, the computational overhead of our method is lower, permitting more optimization steps to be taken in the same amount of time. We demonstrate the usefulness of our method on applications in supervised image recognition, generative modelling, and deep reinforcement learning."
-
-----
->	"Batch normalization adds noise to gradient updates. While noise is probably good when one is training images with CNNs because it adds a bit of regularization (e.g., it can take care of invariances and stuff that doesn’t matter), it’s not so useful when one wants to do reinforcement learning. Instead of normalizing batches, one does normalization directly onto the weights, the contributions being: weight normalization + data dependent initialization. Scores on reinforcement learning with DQN gets better, sometimes 30% more."  
-
-  - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Weight-Normalization-A-Simple-Reparameterization-to-Accelerate-Training-of-Deep-Neural-Networks> (Salimans)
-  - `video` <https://youtu.be/mrj_hyH974o?t=1h46m43s> (Lobacheva) `in russian`
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/nips/SalimansK16>
-  - `code` <https://github.com/openai/weightnorm>
-
-
 #### ["Self-Normalizing Neural Networks"](https://arxiv.org/abs/1706.02515) Klambauer, Unterthiner, Mayr, Hochreiter
   `optimization`
 >	"Deep Learning has revolutionized vision via convolutional neural networks (CNNs) and natural language processing via recurrent neural networks (RNNs). However, success stories of Deep Learning with standard feed-forward neural networks (FNNs) are rare. FNNs that perform well are typically shallow and, therefore cannot exploit many levels of abstract representations. We introduce self-normalizing neural networks (SNNs) to enable high-level abstract representations. While batch normalization requires explicit normalization, neuron activations of SNNs automatically converge towards zero mean and unit variance. The activation function of SNNs are "scaled exponential linear units" (SELUs), which induce self-normalizing properties. Using the Banach fixed-point theorem, we prove that activations close to zero mean and unit variance that are propagated through many network layers will converge towards zero mean and unit variance -- even under the presence of noise and perturbations. This convergence property of SNNs allows to (1) train deep networks with many layers, (2) employ strong regularization, and (3) to make learning highly robust. Furthermore, for activations not close to unit variance, we prove an upper and lower bound on the variance, thus, vanishing and exploding gradients are impossible. We compared SNNs on (a) 121 tasks from the UCI machine learning repository, on (b) drug discovery benchmarks, and on (c) astronomy tasks with standard FNNs and other machine learning methods such as random forests and support vector machines. SNNs significantly outperformed all competing FNN methods at 121 UCI tasks, outperformed all competing methods at the Tox21 dataset, and set a new record at an astronomy data set. The winning SNN architectures are often very deep."
@@ -1315,6 +1299,14 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=h6eQrkkU9SA> (Hochreiter)
   - `video` <https://facebook.com/nipsfoundation/videos/1555553784535855/> (47:04) (Klambauer)
   - `code` <http://github.com/bioinf-jku/SNNs>
+
+
+#### ["Understanding Black-box Predictions via Influence Functions"](https://arxiv.org/abs/1703.04730) Koh, Liang
+  `interpretability`
+>	"How can we explain the predictions of a black-box model? In this paper, we use influence functions -- a classic technique from robust statistics -- to trace a model's prediction through the learning algorithm and back to its training data, thereby identifying training points most responsible for a given prediction. To scale up influence functions to modern machine learning settings, we develop a simple, efficient implementation that requires only oracle access to gradients and Hessian-vector products. We show that even on non-convex and non-differentiable models where the theory breaks down, approximations to influence functions can still provide valuable information. On linear models and convolutional neural networks, we demonstrate that influence functions are useful for multiple purposes: understanding model behavior, debugging models, detecting dataset errors, and even creating visually-indistinguishable training-set attacks."
+  - `video` <https://youtube.com/watch?v=0w9fLX_T6tY> (Koh)
+  - `video` <https://facebook.com/academics/videos/1633085090076225/> (1:23:28) (Liang)
+  - `code` <https://github.com/kohpangwei/influence-release>
 
 
 
@@ -1431,6 +1423,7 @@ Yoshua Bengio:
 
 
 #### ["Probabilistic Backpropagation for Scalable Learning of Bayesian Neural Networks"](http://arxiv.org/abs/1502.05336) Hernandez-Lobato, Adams
+  `Expectation Propagation`
 >	"Large multilayer neural networks trained with backpropagation have recently achieved state-of-the-art results in a wide range of problems. However, using backprop for neural net learning still has some disadvantages, e.g., having to tune a large number of hyperparameters to the data, lack of calibrated probabilistic predictions, and a tendency to overfit the training data. In principle, the Bayesian approach to learning neural networks does not have these problems. However, existing Bayesian techniques lack scalability to large dataset and network sizes. In this work we present a novel scalable method for learning Bayesian neural networks, called probabilistic backpropagation. Similar to classical backpropagation, PBP works by computing a forward propagation of probabilities through the network and then doing a backward computation of gradients. A series of experiments on ten real-world datasets show that PBP is significantly faster than other techniques, while offering competitive predictive abilities. Our experiments also show that PBP provides accurate estimates of the posterior variance on the network weights."
 
   - `video` <http://videolectures.net/icml2015_hernandez_lobato_bayesian_neural/> (Hernandez-Lobato)
@@ -1545,6 +1538,7 @@ Yoshua Bengio:
 
   - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/nips/BlumHP15>
   - `code` <https://github.com/kefirski/variational_dropout>
+  - `paper` ["Variational Gaussian Dropout is not Bayesian"](https://arxiv.org/abs/1711.02989) by Hron, Matthews, Ghahramani
 
 
 #### ["Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles"](https://arxiv.org/abs/1612.01474) Lakshminarayanan, Pritzel, Blundell
@@ -1692,18 +1686,6 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=4_5KTdS-b-U> (Chintala)
   - `code` <https://github.com/jacobgil/keras-dcgan>
   - `code` <https://github.com/carpedm20/DCGAN-tensorflow>
-
-
-#### ["SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient"](http://arxiv.org/abs/1609.05473) Yu, Zhang, Wang, Yu
->	"As a new way of training generative models, Generative Adversarial Nets that uses a discriminative model to guide the training of the generative model has enjoyed considerable success in generating real-valued data. However, it has limitations when the goal is for generating sequences of discrete tokens. A major reason lies in that the discrete outputs from the generative model make it difficult to pass the gradient update from the discriminative model to the generative model. Also, the discriminative model can only assess a complete sequence, while for a partially generated sequence, it is non-trivial to balance its current score and the future one once the entire sequence has been generated. In this paper, we propose a sequence generation framework, called SeqGAN, to solve the problems. Modeling the data generator as a stochastic policy in reinforcement learning, SeqGAN bypasses the generator differentiation problem by directly performing gradient policy update. The RL reward signal comes from the GAN discriminator judged on a complete sequence, and is passed back to the intermediate state-action steps using Monte Carlo search. Extensive experiments on synthetic data and real-world tasks demonstrate significant improvements over strong baselines."
-
->	"In this paper, we proposed a sequence generation method, SeqGAN, to effectively train generative adversarial nets for structured sequences generation via policy gradient. To our best knowledge, this is the first work extending GANs to generate sequences of discrete tokens. In our synthetic data experiments, we used an oracle evaluation mechanism to explicitly illustrate the superiority of SeqGAN over strong baselines. For three real-world scenarios, i.e., poems, speech language and music generation, SeqGAN showed excellent performance on generating the creative sequences. We also performed a set of experiments to investigate the robustness and stability of training SeqGAN. For future work, we plan to build Monte Carlo tree search and value network (Silver et al. 2016) to improve action decision making for large scale data and in the case of longer-term planning."
-
->	"We consider the sequence generation procedure as a sequential decision making process. The generative model is treated as an agent of reinforcement learning; the state is the generated tokens so far and the action is the next token to be generated. Unlike the work in (Ranzato et al. 2015; Bahdanau et al. 2016) that requires a task-specific sequence score, such as BLEU in machine translation, to give the reward, we employ a discriminator to evaluate the sequence and feedback the evaluation to guide the learning of the generative model. To solve the problem that the gradient cannot pass back to the generative model when the output is discrete, we regard the generative model as a stochastic parametrized policy. In our policy gradient, we employ Monte Carlo (MC) search to approximate the state-action value. We directly train the policy (generative model) via policy gradient (Sutton et al. 1999), which naturally avoids the differentiation difficulty for discrete data in a conventional GAN."
-
->	"Extensive experiments based on synthetic and real data are conducted to investigate the efficacy and properties of the proposed SeqGAN. In our synthetic data environment, SeqGAN significantly outperforms the maximum likelihood methods, scheduled sampling and PG-BLEU. In three real-world tasks, i.e. poem generation, speech language generation and music generation, SeqGAN significantly outperforms the compared baselines in various metrics including human expert judgement."
-
-  - `code` <https://github.com/LantaoYu/SeqGAN>
 
 
 
@@ -2489,7 +2471,7 @@ x."
   - `video` <http://youtube.com/watch?v=B70tT4WMyJk> (overview)
   - `video` <http://youtube.com/watch?v=s7PuBqwI2YA> (demo)
   - `video` <http://youtu.be/SAcHyzMdbXc?t=5m14s> (de Freitas)
-  - `video` <http://videolectures.net/kdd2016_de_freitas_recurrent_neural/#t=3120> (de Freitas)
+  - `video` <http://youtu.be/x1kf4Zojtb0?t=52m22s> (de Freitas)
   - `video` <http://videolectures.net/iclr2016_reed_neural_programmer/> (Reed)
   - `post` <https://pseudoprofound.wordpress.com/2016/06/07/neural-programmer-interpreters-programs-that-can-learn-programs/>
   - `post` <http://near.ai/articles/2017-05-31-NPI/>
@@ -2647,8 +2629,9 @@ x."
 
   - `video` <http://videolectures.net/icml2015_ganin_domain_adaptation/> (Ganin)
   - `video` <http://youtu.be/FpZqmnOB-R8?t=9m> (Lempitsky) `in russian`
-  - `paper` ["Unsupervised Domain Adaptation by Backpropagation"](http://arxiv.org/abs/1409.7495) by Ganin and Lempitsky
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1409.7495>
   - `code` <https://github.com/pumpikano/tf-dann>
+  - `paper` ["Unsupervised Domain Adaptation by Backpropagation"](http://arxiv.org/abs/1409.7495) by Ganin and Lempitsky
 
 
 #### ["Unsupervised Cross-Domain Image Generation"](https://arxiv.org/abs/1611.02200) Taigman, Polyak, Wolf

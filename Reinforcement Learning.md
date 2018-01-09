@@ -227,13 +227,11 @@
   [overview](https://youtube.com/watch?v=eKaYnXQUb2g) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=jtjW5Pye_44) by Sergey Levine `video`  
   [overview](http://videolectures.net/iclr2016_levine_deep_learning/) by Sergey Levine `video`  
-  [overview](https://youtube.com/watch?v=f41JXf-ojrM) by Sergey Levine `video`  
-  [overview](https://youtube.com/watch?v=EtMyH_--vnU) by Sergey Levine `video`  
 
+  [overview](https://facebook.com/nipsfoundation/videos/1554594181298482/) by Pieter Abbeel `video`  
   [overview](http://oreilly.com/ai/deep-learning-for-robotics.csp) by Pieter Abbeel `video`  
-  [overview](https://youtu.be/xe-z4i3l-iQ?t=30m35s) by Pieter Abbeel `video`  
   [overview](http://on-demand.gputechconf.com/gtc/2016/video/S6812.html) by Pieter Abbeel `video`  
-  [overview](https://youtube.com/watch?v=xMHjkZBvnfU) by Pieter Abbeel `video`  
+  [overview](https://youtu.be/xe-z4i3l-iQ?t=30m35s) by Pieter Abbeel `video`  
 
   [interesting recent papers - imitation learning](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---imitation)
 
@@ -733,8 +731,7 @@
 	([part 1](https://blogs.princeton.edu/imabandit/2016/05/11/bandit-theory-part-i/),
 	[part 2](https://blogs.princeton.edu/imabandit/2016/05/13/bandit-theory-part-ii/))
 
-  ["Regret Analysis of Stochastic and Nonstochastic Multi-armed Bandit Problems"](https://arxiv.org/abs/1204.5721) by Bubeck and Cesa-Bianchi `paper`
-	([slides](https://microsoft.com/en-us/research/wp-content/uploads/2017/01/TutorialMLSS16.pdf))
+  ["Introduction to Multi-Armed Bandits"](http://slivkins.com/work/MAB-book.pdf) by Aleksandrs Slivkins `paper`
 
 ----
 
@@ -1541,13 +1538,14 @@ interesting recent papers:
 >	- Simpler search. No randomised Monte-Carlo rollouts, only uses neural network to evaluate."  
 
   - `post` <https://deepmind.com/blog/alphago-zero-learning-scratch/>
-  - `post` <http://inference.vc/alphago-zero-policy-improvement-and-vector-fields/>
-  - `post` <http://tim.hibal.org/blog/alpha-zero-how-and-why-it-works/>
-  - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
   - `video` <https://youtu.be/A3ekFcZ3KNw?t=10m50s> (Silver)
   - `video` <https://youtube.com/watch?v=6fKG4wJ7uBk> (Baudis)
   - `video` <https://youtube.com/watch?v=XuzIqE2IshY> (Kington)
   - `video` <https://youtube.com/watch?v=vC66XFoN4DE> (Raval)
+  - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
+  - `post` <http://inference.vc/alphago-zero-policy-improvement-and-vector-fields/>
+  - `post` <http://tim.hibal.org/blog/alpha-zero-how-and-why-it-works/>
+  - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
   - `notes` <https://blog.acolyer.org/2017/11/17/mastering-the-game-of-go-without-human-knowledge/>
   - `notes` <https://dropbox.com/s/fuwhivftv998f6q/AlphaGoZeroPseudoCode.pdf>
   - `code` <https://github.com/gcp/leela-zero/>
@@ -1564,6 +1562,7 @@ interesting recent papers:
   - `video` <http://youtube.com/watch?v=4D5yGiYe8p4> (Silver)
   - `video` <http://youtube.com/watch?v=LX8Knl0g0LE> (Huang)
   - `video` <http://youtube.com/watch?v=UMm0XaCFTJQ> (Sutton, Szepesvari, Bowling, Hayward, Muller)
+  - `video` <https://youtu.be/WM4HC720Cms?t=1h18m21s> (Nikolenko) `in russian`
   - `notes` <https://github.com/Rochester-NRT/RocAlphaGo/wiki>
 
 
@@ -1613,6 +1612,7 @@ interesting recent papers:
 
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games> (demo)
   - `video` <https://youtu.be/A3ekFcZ3KNw?t=23m28s> (Silver)
+  - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
 
 
 #### ["Giraffe: Using Deep Reinforcement Learning to Play Chess"](http://arxiv.org/abs/1509.01549) Lai

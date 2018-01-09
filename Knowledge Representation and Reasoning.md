@@ -1,4 +1,4 @@
-  Knowledge Representation is transformation of information into computable form to solve problems.  
+  Knowledge representation captures information in some computable form in order to solve problems.  
   Reasoning is algebraic manipulation of previously acquired knowledge in order to solve problems.  
 
   How knowledge can be represented? How knowledge can be used? How knowledge can be acquired?
@@ -92,6 +92,7 @@
   ["Introduction to Statistical Relational Learning"](http://www.cs.umd.edu/srl-book/) by Getoor and Taskar `book`  
 
   ["Towards More Human-Like Concept Learning in Machines: Compositionality, Causality and Learning-to-learn"](http://cims.nyu.edu/~brenden/LakePhDThesis.pdf) thesis by Brenden Lake `paper`  
+  ["Combining Representation Learning with Logic for Language Processing"](https://arxiv.org/abs/1712.09687) thesis by Tim Rocktaschel `paper`  
   ["Knowledge Representation and Reasoning with Deep Neural Networks"](https://people.cs.umass.edu/~arvind/arvind_thesis.pdf) thesis by Arvind Neelakantan `paper`  
   ["Modeling Natural Language Semantics in Learned Representations"](https://www.nyu.edu/projects/bowman/bowman2016phd.pdf) thesis by Samuel Bowman `paper`  
   ["Reading and Reasoning with Knowledge Graphs"](http://www.cs.cmu.edu/~mg1/thesis.pdf) thesis by Matt Gardner `paper`  
@@ -131,7 +132,7 @@
 ---
 ### knowledge representation
 
-  Knowledge Representation is transformation of information into computable form to solve problems.
+  Knowledge representation captures information in some computable form in order to solve problems.
 
   ["What Is a Knowledge Representation"](https://aaai.org/ojs/index.php/aimagazine/article/view/1029) by Davis, Shrobe, Szolovits `paper`
 
@@ -628,14 +629,18 @@
 
   probability distribution over possible worlds
 
-  <http://psl.cs.umd.edu>  
+  <http://psl.linqs.org>  
   <https://github.com/linqs/psl>  
 
   ["Introduction to Probabilistic Soft Logic"](https://github.com/linqs/psl/wiki/Introduction-to-probabilistic-soft-logic) `wiki`
 
+  [overview](http://facebook.com/nipsfoundation/videos/1554329184658315/) by Lise Getoor `video`  
   [overview](http://youtube.com/watch?v=1lwGKhFAXU0) by Lise Getoor `video`  
-  [overview](http://youtube.com/watch?v=z_VzaNy36xE) by Jay Pujara `video`  
-  [overview](http://youtube.com/watch?v=GhBHRhIsQIE) by Raymond Mooney `video`  
+
+----
+
+  ["Hinge-Loss Markov Random Fields and Probabilistic Soft Logic"](#hinge-loss-markov-random-fields-and-probabilistic-soft-logic-bach-broecheler-huang-getoor) by Bach, Broecheler, Huang, Getoor `paper` `summary`  
+  ["Large-Scale Knowledge Graph Identification using PSL"](#large-scale-knowledge-graph-identification-using-psl-pujara-miao-getoor-cohen) by Pujara, Miao, Getoor, Cohen `paper` `summary`  
 
 ----
 
@@ -1300,7 +1305,7 @@
   - `paper` ["Tractable Probabilistic Knowledge Bases: Wikipedia and Beyond"](http://www.aaai.org/ocs/index.php/WS/AAAIW14/paper/download/8722/8239) by Niepert and Domingos
 
 
-#### ["Large-Scale Knowledge Graph Identification using PSL"](http://linqs.cs.umd.edu/basilic/web/Publications/2013/pujara:slg13/pujara_slg13.pdf) Pujara, Miao, Getoor, Cohen
+#### ["Large-Scale Knowledge Graph Identification using PSL"](https://aaai.org/ocs/index.php/FSS/FSS13/paper/viewFile/7593/7552) Pujara, Miao, Getoor, Cohen
   `PSL probabilistic database` `NELL`
 >	"Knowledge graphs present a Big Data problem: reasoning collectively about millions of interrelated facts. We formulate the problem of knowledge graph identification, jointly inferring a knowledge graph from the noisy output of an information extraction system through a combined process of determining co-referent entities, predicting relational links, collectively classifying entity labels, and enforcing ontological constraints. Using PSL, we illustrate the scalability benefits of our approach on a large-scale dataset from NELL, while producing high-precision results. Our method provides a substantial increase in F1 score while also improving AUC and scales linearly with the number of ground rules. In practice, we show that on a NELL dataset our method can infer a full knowledge graph in just two hours or make predictions on a known query set in a matter of seconds."
 
@@ -1308,6 +1313,11 @@
 noise, inferring missing information, and determining which candidate facts should be included into a knowledge graph as knowledge graph identification. In order to perform this task, we must reason jointly about candidate facts and their associated extraction confidences, identify coreferent entities, and incorporate ontological constraints. Our proposed approach uses Probabilistic Soft Logic, a recently introduced probabilistic modeling framework which easily scales to millions of facts. We demonstrate the power of our method on a synthetic Linked Data corpus derived from the MusicBrainz music community and a real-world set of extractions from the NELL project containing over 1M extractions and 70K ontological relations. We show that compared to existing methods, our approach is able to achieve improved AUC and F1 with significantly lower running time."
 
   - `video` <http://youtube.com/watch?v=z_VzaNy36xE> (Pujara)
+
+
+#### ["Hinge-Loss Markov Random Fields and Probabilistic Soft Logic"](https://arxiv.org/abs/1505.04406) Bach, Broecheler, Huang, Getoor
+  `PSL probabilistic database`
+>	"A fundamental challenge in developing high-impact machine learning technologies is balancing the need to model rich, structured domains with the ability to scale to big data. Many important problem areas are both richly structured and large scale, from social and biological networks, to knowledge graphs and the Web, to images, video, and natural language. In this paper, we introduce two new formalisms for modeling structured data, and show that they can both capture rich structure and scale to big data. The first, hinge-loss Markov random fields (HL-MRFs), is a new kind of probabilistic graphical model that generalizes different approaches to convex inference. We unite three approaches from the randomized algorithms, probabilistic graphical models, and fuzzy logic communities, showing that all three lead to the same inference objective. We then define HL-MRFs by generalizing this unified objective. The second new formalism, probabilistic soft logic (PSL), is a probabilistic programming language that makes HL-MRFs easy to define using a syntax based on first-order logic. We introduce an algorithm for inferring most-probable variable assignments (MAP inference) that is much more scalable than general-purpose convex optimization methods, because it uses message passing to take advantage of sparse dependency structures. We then show how to learn the parameters of HL-MRFs. The learned HL-MRFs are as accurate as analogous discrete models, but much more scalable. Together, these algorithms enable HL-MRFs and PSL to model rich, structured data at scales not previously possible."
 
 
 #### ["Efficient Inference and Learning in a Large Knowledge Base: Reasoning with Extracted Information using a Locally Groundable First-Order Probabilistic Logic"](http://arxiv.org/abs/1404.3301) Wang, Mazaitis, Lao, Mitchell, Cohen

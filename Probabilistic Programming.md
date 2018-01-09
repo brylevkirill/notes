@@ -139,6 +139,8 @@
 
   - [BLOG](https://github.com/BayesianLogic)
 
+	["Unifying Logic and Probability: The BLOG Language"](https://youtube.com/watch?v=rdsPMCYMcZA) by Stuart Russell `video`
+
   - [BayesDB](http://probcomp.org/bayesdb)
 
 	[overview](https://youtube.com/watch?v=-8QMqSWU76Q) by Vikash Mansinghka `video`
