@@ -608,7 +608,8 @@
 
 ----
 
-  ["Theoretical Impediments to Machine Learning"](http://web.cs.ucla.edu/~kaoru/theoretical-impediments.pdf) by Judea Pearl `paper`
+  ["Theoretical Impediments to Machine Learning"](http://web.cs.ucla.edu/~kaoru/theoretical-impediments.pdf) by Judea Pearl `paper`  
+  ["Theoretical Impediments to Machine Learning with Seven Sparks from the Causal Revolution"](https://arxiv.org/abs/1801.04016) by Judea Pearl `paper`  
 
   [conversation](https://www.edge.org/conversation/judea_pearl-engines-of-evidence) with Judea Pearl `video`  
   overview of [role](https://youtube.com/watch?v=uyZOcUDhIbY&t=20m5s) and [applications](https://youtube.com/watch?v=uyZOcUDhIbY&t=58m) in machine learning by Michael I. Jordan `video`  
@@ -681,8 +682,6 @@
 
 ----
 
-  ["Theoretical Impediments to Machine Learning"](http://web.cs.ucla.edu/~kaoru/theoretical-impediments.pdf) by Judea Pearl `paper`
-
   "If we examine the information that drives machine learning today, we find that it is almost entirely statistical. In other words, learning machines improve their performance by optimizing parameters over a stream of sensory inputs received from the environment. It is a slow process, analogous in many respects to the evolutionary survival-of-the-fittest process that explains how species like eagles and snakes have developed superb vision systems over millions of years. It cannot explain however the super-evolutionary process that enabled humans to build eyeglasses and telescopes over barely one thousand years. What humans possessed that other species lacked was a mental representation, a blue-print of their environment which they could manipulate at will to imagine alternative hypothetical environments for planning and learning. Anthropologists like N. Harari, and S. Mithen are in general agreement that the decisive ingredient that gave our homo sapiens ancestors the ability to achieve global dominion, about 40,000 years ago, was their ability to sketch and store a representation of their environment, interrogate that representation, distort it by mental acts of imagination and finally answer “What if?” kind of questions. Examples are interventional questions: “What if I act?” and retrospective or explanatory questions: “What if I had acted differently?” No learning machine in operation today can answer such questions about actions not taken before. Moreover, most learning machine today do not utilize a representation from which such questions can be answered. We postulate that the major impediment to achieving accelerated learning speeds as well as human level performance can be overcome by removing these barriers and equipping learning machines with causal reasoning tools. This postulate would have been speculative twenty years ago, prior to the mathematization of counterfactuals. Not so today. Advances in graphical and structural models have made counterfactuals computationally manageable and thus rendered metastatistical learning worthy of serious exploration."
 
   "An extremely useful insight unveiled by the logic of causal reasoning is the existence of a sharp classification of causal information, in terms of the kind of questions that each class is capable of answering. The classification forms a 3-level hierarchy in the sense that questions at one level can only be answered if information from next levels is available."
@@ -705,7 +704,13 @@
 	Was it the aspirin that stopped my headache?  
 	What if I had not been smoking the past 2 years?  
 
-  *(Judea Pearl)*
+  "The first level, Association, invokes purely statistical relationships, defined by the naked data. For instance, observing a customer who buys toothpaste makes it more likely that he/she buys floss; such association can be inferred directly from the observed data using conditional expectation. Questions at this layer, because they require no causal information, are placed at the bottom level on the hierarchy.  
+  The second level, Intervention, ranks higher than Association because it involves not just seeing what is, but changing what we see. A typical question at this level would be: What happens if we double the price? Such questions cannot be answered from sales data alone, because they involve a change in customers behavior, in reaction to the new pricing. These choices may differ substantially from those taken in previous price-raising situations. Unless we replicate precisely the market conditions that existed when the price reached double its current value.  
+  The third level, Counterfactuals, is placed at the top of the hierarchy because they subsume interventional and associational questions. A typical question in the counterfactual category is “What if I had acted differently” thus necessitating retrospective reasoning.  
+  If we have a model that can answer counterfactual queries, we can also answer questions about interventions and observations. For example, the interventional question “What will happen if we double the price?” can be answered by asking the counterfactual question: “What would happen had the price been twice its current value?” Likewise, associational questions can be answered once we can answer interventional questions; we simply ignore the action part and let observations take over.  
+  The translation does not work in the opposite direction. Interventional questions cannot be answered from purely observational information (i.e., from statistical data alone). No counterfactual question involving retrospection can be answered from purely interventional information, such as that acquired from controlled experiments; we cannot re-run an experiment on subjects who were treated with a drug and see how they behave had they not given the drug."
+
+  [*(Judea Pearl)*](http://web.cs.ucla.edu/~kaoru/theoretical-impediments.pdf)
 
 ----
 
@@ -771,6 +776,10 @@
 
 #### ["A Generative Vision Model that Trains with High Data Efficiency and Breaks Text-based CAPTCHAs"](http://science.sciencemag.org/content/early/2017/10/26/science.aag2612.full) George et al.
 >	"Learning from few examples and generalizing to dramatically different situations are capabilities of human visual intelligence that are yet to be matched by leading machine learning models. By drawing inspiration from systems neuroscience, we introduce a probabilistic generative model for vision in which message-passing based inference handles recognition, segmentation and reasoning in a unified way. The model demonstrates excellent generalization and occlusion-reasoning capabilities, and outperforms deep neural networks on a challenging scene text recognition benchmark while being 300-fold more data efficient. In addition, the model fundamentally breaks the defense of modern text-based CAPTCHAs by generatively segmenting characters without CAPTCHA-specific heuristics. Our model emphasizes aspects like data efficiency and compositionality that may be important in the path toward general artificial intelligence."
+
+  - `post` <https://vicarious.com/2017/10/26/common-sense-cortex-and-captcha/>
+  - `video` <https://youtube.com/watch?v=y459Yip5vRQ> (George)
+  - `code` <https://github.com/vicariousinc/science_rcn>
 
 
 #### ["Unsupervised Learning of 3D Structure from Images"](http://arxiv.org/abs/1607.00662) Rezende, Eslami, Mohamed, Battaglia, Jaderberg, Heess

@@ -1,4 +1,4 @@
-  Intelligence is information processing necessary to achieve goals with limited resources.  
+  Intelligence is information processing necessary to achieve goals with limited resources.
 
 
   * [overview](#overview)
@@ -19,6 +19,10 @@
 
 ---
 ### overview
+
+  Intelligence is predicting what can be predicted and acting based upon prediction errors. ([definition](https://blog.piekniewski.info/2017/04/13/ai-confuses-intelligent/) by Filip Piekniewski)
+
+----
 
   - Juergen Schmidhuber  
 	["Compression Progress: The Algorithmic Principle Behind Curiosity and Creativity"](https://youtube.com/watch?v=h7F5sCLIbKQ) `video`  
@@ -226,10 +230,10 @@
 ----
 
   ["On Chomsky and the Two Cultures of Statistical Learning"](http://norvig.com/chomsky.html) by Peter Norvig
->	"mathematical model specifies a relation among variables, either in functional or in relational form"  
->	"statistical model is a mathematical model which is modified or trained by the input of data points"  
->	"probabilistic model specifies a probability distribution over possible values of random variables"  
->	"statistical models are often but not always probabilistic and probabilistic ones are statistical"  
+>	"Mathematical model specifies a relation among variables, either in functional or in relational form."  
+>	"Statistical model is a mathematical model which is modified or trained by the input of data points."  
+>	"Probabilistic model specifies a probability distribution over possible values of random variables."  
+>	"Statistical models are often but not always probabilistic and probabilistic ones are statistical."  
 
   ["Unifying Logic and Probability"](https://www.cs.berkeley.edu/~russell/papers/ipmu14-oupm.pdf) by Stuart Russell `paper`
 	([talk](http://video.upmc.fr/differe.php?collec=S_C_colloquium_lip6_2012&video=3) `video`)
@@ -244,7 +248,7 @@
 ---
 ### inference / reasoning - symbolic vs non-symbolic
 
-  ["Neural Programmer Interpreters"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#neural-programmer-interpreters-reed-de-freitas) by Nando de Freitas `paper` `summary`  
+  ["Neural Programmer Interpreters"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#neural-programmer-interpreters-reed-de-freitas) by Nando de Freitas `paper` `summary`
 >	"For me there are two types of generalisation, which I will refer to as Symbolic and Connectionist generalisation. If we teach a machine to sort sequences of numbers of up to length 10 or 100, we should expect them to sort sequences of length 1000 say. Obviously symbolic approaches have no problem with this form of generalisation, but neural nets do poorly. On the other hand, neural nets are very good at generalising from data (such as images), but symbolic approaches do poorly here. One of the holy grails is to build machines that are capable of both symbolic and connectionist generalisation. Neural Programmer Interpreters is a very early step toward this. NPI can do symbolic operations such as sorting and addition, but it can also plan by taking images as input and it's able to generalise the plans to different images (e.g. in the NPI car example, the cars are test set cars not seen before)."
 
 ----
@@ -356,7 +360,7 @@ following up conjectures suggested by analogies). Good mathematicians see analog
 ----
 
   [overview](https://facebook.com/nipsfoundation/videos/1554594181298482/) (4:37) by Pieter Abbeel `video`  
-  [overview](https://facebook.com/NIPSlive/videos/1489196207802887/) (5:49) by Oriol Vinyals `video`  
+  [overview](https://facebook.com/nipsfoundation/videos/1552060484885185/) (1:13:00) by Oriol Vinyals `video`  
   [overview](http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/#t=631) by Nando de Freitas `video`  
 
   ["Learning to Optimize with Reinforcement Learning"](http://bair.berkeley.edu/blog/2017/09/12/learning-to-optimize-with-rl/) by Ke Li

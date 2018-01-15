@@ -229,7 +229,7 @@
   [overview](http://videolectures.net/iclr2016_levine_deep_learning/) by Sergey Levine `video`  
 
   [overview](https://facebook.com/nipsfoundation/videos/1554594181298482/) by Pieter Abbeel `video`  
-  [overview](http://oreilly.com/ai/deep-learning-for-robotics.csp) by Pieter Abbeel `video`  
+  [overview](https://youtube.com/watch?v=TERCdog1ddE) by Pieter Abbeel `video`  
   [overview](http://on-demand.gputechconf.com/gtc/2016/video/S6812.html) by Pieter Abbeel `video`  
   [overview](https://youtu.be/xe-z4i3l-iQ?t=30m35s) by Pieter Abbeel `video`  
 
@@ -301,14 +301,11 @@
 
 ----
 
-  ["MDP Cheatsheet Reference"](http://rll.berkeley.edu/deeprlcourse/docs/mdp-cheatsheet.pdf) by John Schulman  
-
   [course notes](https://web.stanford.edu/class/msande338/lecture_notes.html) by Ben Van Roy  
-  [course notes](http://dustintran.com/notes/cs282r.pdf) by Dustin Tran  
   [course slides](http://incompleteideas.net/sutton/609%20dropbox/slides%20(pdf%20and%20keynote)) by Rich Sutton  
 
   [exercises and solutions](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction) by Shangtong Zhang  
-  [exercises and solutions](http://www.wildml.com/2016/10/learning-reinforcement-learning/) by Denny Britz  
+  [exercises and solutions](https://github.com/dennybritz/reinforcement-learning) by Denny Britz  
   [exercises and solutions](https://github.com/yandexdataschool/Practical_RL/) from Yandex  
 
   [implementations of algorithms](https://github.com/ShangtongZhang/DeepRL) from Shangtong Zhang  
@@ -731,7 +728,7 @@
 	([part 1](https://blogs.princeton.edu/imabandit/2016/05/11/bandit-theory-part-i/),
 	[part 2](https://blogs.princeton.edu/imabandit/2016/05/13/bandit-theory-part-ii/))
 
-  ["Introduction to Multi-Armed Bandits"](http://slivkins.com/work/MAB-book.pdf) by Aleksandrs Slivkins `paper`
+  ["Introduction to Multi-Armed Bandits"](http://slivkins.com/work/MAB-book.pdf) book by Aleksandrs Slivkins
 
 ----
 
@@ -838,11 +835,8 @@
 
   ["Counterfactual Reasoning and Learning from Logged Data"](http://timvieira.github.io/blog/post/2016/12/19/counterfactual-reasoning-and-learning-from-logged-data/) by Tim Vieira
 
-  ["Doubly Robust Policy Evaluation and Learning"](https://arxiv.org/abs/1103.4601) by Dudik, Langford, Li `paper` ([summary](https://medium.com/@sharaf/a-paper-a-day-12-doubly-robust-policy-evaluation-and-learning-7e6a09665d7f))  
-  ["Taming the Monster: A Fast and Simple Algorithm for Contextual Bandits"](https://arxiv.org/abs/1402.0555) by Agarwal et al. `paper` ([overview](https://youtube.com/watch?v=mi_G5tw7Etg) by Alekh Agarwal `video`)  
-  ["Making Contextual Decisions with Low Technical Debt"](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) by Agarwal et al. `paper` `summary`  
-
-  ["The Contextual Bandits Problem: A New, Fast, and Simple Algorithm"](https://youtube.com/watch?v=gzxRDw3lXv8) by Robert Schapire `video`
+  ["Doubly Robust Policy Evaluation and Learning"](https://arxiv.org/abs/1103.4601) by Dudik, Langford, Li `paper` ([overview](https://youtu.be/gzxRDw3lXv8?t=35m45s) by Robert Schapire `video`) ([notes](https://medium.com/@sharaf/a-paper-a-day-12-doubly-robust-policy-evaluation-and-learning-7e6a09665d7f))  
+  ["Taming the Monster: A Fast and Simple Algorithm for Contextual Bandits"](https://arxiv.org/abs/1402.0555) by Agarwal et al. `paper` ([overview](https://youtube.com/watch?v=mi_G5tw7Etg) by Alekh Agarwal `video`) ([overview](https://youtu.be/gzxRDw3lXv8?t=37m8s) by Robert Schapire `video`)  
 
 ----
 
@@ -852,7 +846,9 @@
   ["Reinforcement Learning in Industry"](http://videolectures.net/deeplearning2017_le_roux_recommendation_system/) by Nicolas Le Roux `video`
 
   [Microsoft Custom Decision Service](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al)  
-  ["Taming the Monster: A Fast and Simple Algorithm for Contextual Bandits"](https://arxiv.org/abs/1402.0555) by Agarwal et al. `paper`  
+  ["Making Contextual Decisions with Low Technical Debt"](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) by Agarwal et al. `paper` `summary`  
+
+  ["Counterfactual Evaluation and Learning for Search, Recommendation and Ad Placement"](http://www.cs.cornell.edu/~adith/CfactSIGIR2016/) tutorial by Adith Swaminathan and Thorsten Joachims `video`
 
 ----
 
@@ -1613,6 +1609,7 @@ interesting recent papers:
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games> (demo)
   - `video` <https://youtu.be/A3ekFcZ3KNw?t=23m28s> (Silver)
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
+  - `notes` <https://blog.acolyer.org/2018/01/10/mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm/>
 
 
 #### ["Giraffe: Using Deep Reinforcement Learning to Play Chess"](http://arxiv.org/abs/1509.01549) Lai
@@ -1720,6 +1717,13 @@ interesting recent papers:
   - `paper` ["Taming the Monster: A Fast and Simple Algorithm for Contextual Bandits"](https://arxiv.org/abs/1402.0555) by Agarwal et al.
 
 
+#### ["Off-policy Evaluation for Slate Recommendation"](https://arxiv.org/abs/1605.04812) Swaminathan, Krishnamurthy, Agarwal, Dudík, Langford, Jose, Zitouni
+>	"This paper studies the evaluation of policies that recommend an ordered set of items (e.g., a ranking) based on some context---a common scenario in web search, ads, and recommendation. We build on techniques from combinatorial bandits to introduce a new practical estimator that uses logged data to estimate a policy's performance. A thorough empirical evaluation on real-world data reveals that our estimator is accurate in a variety of settings, including as a subroutine in a learning-to-rank task, where it achieves competitive performance. We derive conditions under which our estimator is unbiased---these conditions are weaker than prior heuristics for slate evaluation---and experimentally demonstrate a smaller bias than parametric approaches, even when these conditions are violated. Finally, our theory and experiments also show exponential savings in the amount of required data compared with general unbiased estimators."
+
+  - `video` <https://facebook.com/nipsfoundation/videos/1554741347950432/> (3:42) (Swaminathan)
+  - `video` ["Counterfactual Evaluation and Learning for Search, Recommendation and Ad Placement"](http://www.cs.cornell.edu/~adith/CfactSIGIR2016/) tutorial by Adith Swaminathan and Thorsten Joachims
+
+
 
 ---
 ### interesting papers - exploration and intrinsic motivation
@@ -1802,14 +1806,15 @@ interesting recent papers:
 
 
 #### ["Nonparametric General Reinforcement Learning"](https://jan.leike.name/publications/Nonparametric%20General%20Reinforcement%20Learning%20-%20Leike%202016.pdf) Leike
->	"Reinforcement learning problems are often phrased in terms of Markov decision processes. In this thesis we go beyond MDPs and consider reinforcement learning in environments that are non-Markovian, non-ergodic and only partially observable. Our focus is not on practical algorithms, but rather on the fundamental underlying problems: How do we balance exploration and exploitation? How do we explore optimally? When is an agent optimal? We follow the nonparametric realizable paradigm: we assume the data is drawn from an unknown source that belongs to a known countable class of candidates.
->	First, we consider the passive (sequence prediction) setting, learning from data that is not independent and identically distributed. We collect results from artificial intelligence, algorithmic information theory, and game theory and put them in a reinforcement learning context: they demonstrate how agent can learn the value of its own policy. Next, we establish negative results on Bayesian reinforcement learning agents, in particular AIXI. We show that unlucky or adversarial choices of the prior cause the agent to misbehave drastically. Therefore Legg-Hutter intelligence and balanced Pareto optimality, which depend crucially on the choice of the prior, are entirely subjective. Moreover, in the class of all computable environments every policy is Pareto optimal. This undermines all existing optimality properties for AIXI.
->	However, there are Bayesian approaches to general reinforcement learning that satisfy objective optimality guarantees: We prove that Thompson sampling is asymptotically optimal in stochastic environments in the sense that its value converges to the value of the optimal policy. We connect asymptotic optimality to regret given a recoverability assumption on the environment that allows the agent to recover from mistakes. Hence Thompson sampling achieves sublinear regret in these environments.
->	AIXI is known to be incomputable. We quantify this using the arithmetical hierarchy, and establish upper and corresponding lower bounds for incomputability. Further, we show that AIXI is not limit computable, thus cannot be approximated using finite computation. However there are limit computable ε-optimal approximations to AIXI. We also derive computability bounds for knowledge-seeking agents, and give a limit computable weakly asymptotically optimal reinforcement learning agent.
+>	"Reinforcement learning problems are often phrased in terms of Markov decision processes. In this thesis we go beyond MDPs and consider reinforcement learning in environments that are non-Markovian, non-ergodic and only partially observable. Our focus is not on practical algorithms, but rather on the fundamental underlying problems: How do we balance exploration and exploitation? How do we explore optimally? When is an agent optimal? We follow the nonparametric realizable paradigm: we assume the data is drawn from an unknown source that belongs to a known countable class of candidates.  
+>	First, we consider the passive (sequence prediction) setting, learning from data that is not independent and identically distributed. We collect results from artificial intelligence, algorithmic information theory, and game theory and put them in a reinforcement learning context: they demonstrate how agent can learn the value of its own policy. Next, we establish negative results on Bayesian reinforcement learning agents, in particular AIXI. We show that unlucky or adversarial choices of the prior cause the agent to misbehave drastically. Therefore Legg-Hutter intelligence and balanced Pareto optimality, which depend crucially on the choice of the prior, are entirely subjective. Moreover, in the class of all computable environments every policy is Pareto optimal. This undermines all existing optimality properties for AIXI.  
+>	However, there are Bayesian approaches to general reinforcement learning that satisfy objective optimality guarantees: We prove that Thompson sampling is asymptotically optimal in stochastic environments in the sense that its value converges to the value of the optimal policy. We connect asymptotic optimality to regret given a recoverability assumption on the environment that allows the agent to recover from mistakes. Hence Thompson sampling achieves sublinear regret in these environments.  
+>	AIXI is known to be incomputable. We quantify this using the arithmetical hierarchy, and establish upper and corresponding lower bounds for incomputability. Further, we show that AIXI is not limit computable, thus cannot be approximated using finite computation. However there are limit computable ε-optimal approximations to AIXI. We also derive computability bounds for knowledge-seeking agents, and give a limit computable weakly asymptotically optimal reinforcement learning agent.  
 >	Finally, our results culminate in a formal solution to the grain of truth problem: A Bayesian agent acting in a multi-agent environment learns to predict the other agents’ policies if its prior assigns positive probability to them (the prior contains a grain of truth). We construct a large but limit computable class containing a grain of truth and show that agents based on Thompson sampling over this class converge to play ε-Nash equilibria in arbitrary unknown computable multi-agent environments."
 
 ----
 >	"Recently it was revealed that these optimality notions are trivial or subjective: a Bayesian agent does not explore enough to lose the prior’s bias, and a particularly bad prior can make the agent conform to any arbitrarily bad policy as long as this policy yields some rewards. These negative results put the Bayesian approach to (general) RL into question. We remedy the situation by showing that using Bayesian techniques an agent can indeed be optimal in an objective sense."
+
 >	"The agent we consider is known as Thompson sampling or posterior sampling. It samples an environment ρ from the posterior, follows the ρ-optimal policy for one effective horizon (a lookahead long enough to encompass most of the discount function’s mass), and then repeats. We show that this agent’s policy is asymptotically optimal in mean (and, equivalently, in probability). Furthermore, using a recoverability assumption on the environment, and some (minor) assumptions on the discount function, we prove that the worst-case regret is sublinear. This is the first time convergence and regret bounds of Thompson sampling have been shown under such general conditions."
 
   - `video` <https://youtube.com/watch?v=hSiuJuvTBoE> (Leike)

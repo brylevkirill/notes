@@ -14,8 +14,8 @@
   * [architectures](#architectures)
     - [convolutional neural network](#architectures---convolutional-neural-network)
     - [recurrent neural network](#architectures---recurrent-neural-network)
-    - [compute and memory](#architectures---compute-and-memory)
     - [attention](#architectures---attention)
+    - [compute and memory](#architectures---compute-and-memory)
     - [distributed representations](#architectures---distributed-representations)
   * [interesting papers](#interesting-papers)
     - [theory](#interesting-papers---theory)
@@ -58,7 +58,7 @@
 
 #### tutorials
 
-  [Deep Learning: Practice and Trends](http://youtube.com/watch?v=YJnddoa8sHk) by Oriol Vinyals and Scott Reed `video` ([slides](http://goo.gl/b6QBBh))
+  [Deep Learning: Practice and Trends](https://facebook.com/nipsfoundation/videos/1552060484885185/) by Oriol Vinyals and Scott Reed `video` ([slides](http://goo.gl/b6QBBh))
 
   [Deep Learning Summer School](http://videolectures.net/deeplearning2017_montreal/) `video`
 
@@ -808,8 +808,8 @@
 
   - [convolutional neural network](#architectures---convolutional-neural-network)
   - [recurrent neural network](#architectures---recurrent-neural-network)
-  - [compute and memory](#architectures---compute-and-memory)
   - [attention](#architectures---attention)
+  - [compute and memory](#architectures---compute-and-memory)
   - [distributed representations](#architectures---distributed-representations)
 
 
@@ -873,7 +873,7 @@
   - Don't multiply, use addition instead.  
   - Gate all operations so that you don't cram everything."  
 
-"First statement means instead of multiplying the previous hidden state by a matrix to get the new state, you add something to your old hidden state and get the new state (not called "hidden" but called "cell"). Why? Because multiplication ~ vanishing gradients. Now, we are capable of long term memory since we are not losing it by repeated multiplications. But is storing everything useful? Obviously no. Also, do we want to output everything we have stored at each instant? Again no."
+  "First statement means instead of multiplying the previous hidden state by a matrix to get the new state, you add something to your old hidden state and get the new state (not called "hidden" but called "cell"). Why? Because multiplication ~ vanishing gradients. Now, we are capable of long term memory since we are not losing it by repeated multiplications. But is storing everything useful? Obviously no. Also, do we want to output everything we have stored at each instant? Again no."
 
   "There are 3 projections in a vanilla RNN: input to hidden, hidden to hidden, hidden to output. LSTM regulates each one of them with input, forget and output gates respectively. Each of these gates are calculated as a function of what we already know, and current input i.e f(H_prev, X). Now our internal hidden state will become holy and the access to it becomes highly restricted. So it has a new name - the cell."
 
@@ -890,6 +890,53 @@
 
   ["Frontiers in Recurrent Neural Network Research"](https://youtube.com/watch?v=pwyBoPFsQ4M) by Alex Graves `video`  
   ["New Directions for Recurrent Neural Networks"](https://facebook.com/iclr.cc/videos/1713144705381255/) by Alex Graves `video`  
+
+
+
+---
+### architectures - attention
+
+  [overview](https://youtu.be/9U0drwafE78?t=36m22s) by Oriol Vinyals `video`  
+  [overview](https://youtube.com/watch?v=_XRBlhzb31U) by Mikhail Figurnov `video` `in russian`  
+
+  [overview](http://wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/) by Denny Britz  
+  [overview](http://distill.pub/2016/augmented-rnns/) by Chris Olah and Shan Carter  
+  [overview](http://thespermwhale.com/jaseweston/ram/slides/session2/Smooth%20Operators-NIPS2015.pptx) by Alex Graves  
+
+  ["Attention Is All You Need"](#attention-is-all-you-need-vaswani-shazeer-parmar-uszkoreit-jones-gomez-kaiser-polosukhin) by Vaswani et al. `paper`
+
+----
+
+  "Models that can do even more sequential computation should be more successful because they are able to express more intricate algorithms. It’s like allowing your parallel computer to run for more steps. We already see the beginning of this, in the form of attention models. In current approach, you take your input vector and give it to the neural network. The neural network runs it, applies several processing stages to it, and then gets an output. In an attention model, you have a neural network, but you run the neural network for much longer. There is a mechanism in the neural network, which decides which part of the input it wants to “look” at. Normally, if the input is very large, you need a large neural network to process it. But if you have an attention model, you can decide on the best size of the neural network, independent of the size of the input. Say you have a sentence, a sequence of, say, 100 words. The attention model will issue a query on the input sentence and create a distribution over the input words, such that a word that is more similar to the query will have higher probability, and words that are less similar to the query will have lower probability. Then you take the weighted average of them. Since every step is differentiable, we can train the attention model where to look with backpropagation, which is the reason for its appeal and success. Differentiable attention is computationally expensive because it requires accessing your entire input at each step of the model’s operation. And this is fine when the input is a sentence that’s only, say, 100 words, but it’s not practical when the input is a 10,000-word document. So, one of the main issues is speed. Attention should be fast, but differentiable attention is not fast. Reinforcement learning of attention is potentially faster, but training attentional control using reinforcement learning over thousands of objects would be non-trivial."
+
+  *(Ilya Sutskever)*
+
+----
+
+  "The ability to focus on one thing and ignore others has a vital role in guiding cognition. Not only does this allow us to pick out salient information from noisy data (the cocktail party problem) it also allows us to pursue one thought at a time, remember one event rather than all events."
+
+  "Even with no explicit attention mechanism, neural networks learn a form of implicit attention where they respond more strongly to some parts of the data than others. Implicit attention is great, but there are still reasons to favour an explicit attention mechanism that limits the data presented to the network in some way:  
+  - computational efficiency  
+  - scalability (e.g. fixed size glimpse for any size image)  
+  - don't have to learn to ignore things  
+  - sequential processing of static data (e.g. gaze moving around image)"  
+
+
+  types of attention:  
+  - positional  
+  - associative  
+
+  hard (stochastic variables, learned via reinforcement) vs soft (continuous variables, learned via backpropagation) attention models:  
+  - if you care about variables (want to read off the attention) then make them hard (optimization is quicker with hard decisions, randomization helps with better initializations for attention)  
+  - if you don't care (just part of the process to get end result) then make them soft (inference is computationally easier than with graphical models of stochastic variables, determenistic attention prevents exploration)  
+
+  soft attention models:  
+  - computationally expensive (they had to examine every image location, hard to scale to large datasets)  
+  - deterministic (can be trained by backprop)  
+
+  hard attention models:  
+  - computationally more efficient (the need to process only small part of each image frame)  
+  - stochastic (require some form of sampling because they must make discrete choices)  
 
 
 
@@ -944,52 +991,6 @@
   "It could be also the case that many "real-world" experimental benchmarks that have been tried so far are not very "algorithmic", hence NTMs don't have an advantage over LSTMs, but experimental conditions where training and test examples are i.i.d. sampled from the same distribution are actually somewhat artificial, thus in more realistic applications the NTMs may benefit from an increased generalization ability. In any case, if the end goal is to reach at least human-level learning performance, being able to do this kind of generalization seems necessary."
 
   *(Antonio Valerio Miceli-Barone)*
-
-
-
----
-### architectures - attention
-
-  [overview](https://youtu.be/9U0drwafE78?t=36m22s) by Oriol Vinyals `video`  
-  [overview](https://youtube.com/watch?v=_XRBlhzb31U) by Mikhail Figurnov `video` `in russian`  
-
-  [overview](http://distill.pub/2016/augmented-rnns/#attentional-interfaces) by Chris Olah and Shan Carter  
-  [overview](http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/) by Denny Britz  
-
-  ["Smooth Operators: the Rise of Differentiable Attention in Deep Learning"](http://www.thespermwhale.com/jaseweston/ram/slides/session2/Smooth%20Operators-NIPS2015.pptx) by Alex Graves `slides`
-
-----
-
-  "Models that can do even more sequential computation should be more successful because they are able to express more intricate algorithms. It’s like allowing your parallel computer to run for more steps. We already see the beginning of this, in the form of attention models. In current approach, you take your input vector and give it to the neural network. The neural network runs it, applies several processing stages to it, and then gets an output. In an attention model, you have a neural network, but you run the neural network for much longer. There is a mechanism in the neural network, which decides which part of the input it wants to “look” at. Normally, if the input is very large, you need a large neural network to process it. But if you have an attention model, you can decide on the best size of the neural network, independent of the size of the input. Say you have a sentence, a sequence of, say, 100 words. The attention model will issue a query on the input sentence and create a distribution over the input words, such that a word that is more similar to the query will have higher probability, and words that are less similar to the query will have lower probability. Then you take the weighted average of them. Since every step is differentiable, we can train the attention model where to look with backpropagation, which is the reason for its appeal and success. Differentiable attention is computationally expensive because it requires accessing your entire input at each step of the model’s operation. And this is fine when the input is a sentence that’s only, say, 100 words, but it’s not practical when the input is a 10,000-word document. So, one of the main issues is speed. Attention should be fast, but differentiable attention is not fast. Reinforcement learning of attention is potentially faster, but training attentional control using reinforcement learning over thousands of objects would be non-trivial."
-
-  *(Ilya Sutskever)*
-
-----
-
-  "The ability to focus on one thing and ignore others has a vital role in guiding cognition. Not only does this allow us to pick out salient information from noisy data (the cocktail party problem) it also allows us to pursue one thought at a time, remember one event rather than all events."
-
-  "Even with no explicit attention mechanism, neural networks learn a form of implicit attention where they respond more strongly to some parts of the data than others. Implicit attention is great, but there are still reasons to favour an explicit attention mechanism that limits the data presented to the network in some way:  
-  - computational efficiency  
-  - scalability (e.g. fixed size glimpse for any size image)  
-  - don't have to learn to ignore things  
-  - sequential processing of static data (e.g. gaze moving around image)"  
-
-
-  types of attention:  
-  - positional  
-  - associative  
-
-  hard (stochastic variables, learned via reinforcement) vs soft (continuous variables, learned via backpropagation) attention models:  
-  - if you care about variables (want to read off the attention) then make them hard (optimization is quicker with hard decisions, randomization helps with better initializations for attention)  
-  - if you don't care (just part of the process to get end result) then make them soft (inference is computationally easier than with graphical models of stochastic variables, determenistic attention prevents exploration)  
-
-  soft attention models:  
-  - computationally expensive (they had to examine every image location, hard to scale to large datasets)  
-  - deterministic (can be trained by backprop)  
-
-  hard attention models:  
-  - computationally more efficient (the need to process only small part of each image frame)  
-  - stochastic (require some form of sampling because they must make discrete choices)  
 
 
 
@@ -1953,6 +1954,7 @@ x."
 
 >	"A fully connected layer would route the features based on their agreement with a learned weight vector. This defeats the intent of dynamic routing, the whole purpose of which is to route activations to capsules where they agree with other activations. It does the routing based on a fast iterative process in the forward pass, not a slow learning process like gradient descent."
 
+  - `video` <https://facebook.com/nipsfoundation/videos/1553634558061111/> (1:37:04) (Frosst)
   - `video` ["What is wrong with convolutional neural nets?"](https://youtube.com/watch?v=Mqt8fs6ZbHk) (Hinton)
   - `video` ["What's wrong with convolutional nets?"](http://techtv.mit.edu/collections/bcs/videos/30698-what-s-wrong-with-convolutional-nets) (Hinton) ([transcription](https://github.com/WalnutiQ/walnut/issues/157))
   - `video` ["Does the Brain do Inverse Graphics?"](https://youtube.com/watch?v=TFIMqt0yT2I) (Hinton)
@@ -1970,6 +1972,7 @@ x."
   - `code` <https://github.com/llSourcell/capsule_networks>
   - `code` <https://github.com/InnerPeace-Wu/CapsNet-tensorflow>
   - `code` <https://github.com/naturomics/CapsNet-Tensorflow>
+  - `code` <https://github.com/higgsfield/Capsule-Network-Tutorial>
   - `code` <https://github.com/gram-ai/capsule-networks>
   - `code` <https://github.com/adambielski/CapsNet-pytorch>
   - `code` <https://github.com/nishnik/CapsNet-PyTorch>
@@ -2089,6 +2092,19 @@ x."
 #### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani et al.
 >	"The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.0 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data."
 
+>	"- constant path length between any two input positions  
+>	- gating/multiplication enables crisp error propagation  
+>	- trivial to parallelize  
+>	- can replace sequence-aligned recurrence entirely"  
+
+>	"multi-head attention:  
+>	- convolutions use different parameters per relative position  
+>	- allows identifying different information from different positions  
+>	- multiple attention layers in parallel achieve a similar effect  
+>	- projecting to fewer dimensions keeps computation ~ constant"  
+
+>	"trains >3x faster than GNMT and ConvSeq2Seq with better performance on machine translation problem"  
+
 >	"n - sequence length, d - representation dimension, k - convolution kernel size, r - neighborhood size  
 >	complexity per layer:  
 >	- self-attention: O(n^2*d)  
@@ -2096,18 +2112,19 @@ x."
 >	- convolutional: O(k*n*d^2)  
 >	- self-attention (restricted): O(r*n*d)  
 >	sequential operations:  
->	- O(1)  
->	- O(n)  
->	- O(1)  
->	- O(1)  
+>	- self-attention: O(1)  
+>	- recurrent: O(n)  
+>	- convolutional: O(1)  
+>	- self-attention (restricted): O(1)  
 >	maximum path integral:  
->	- O(1)  
->	- O(n)  
->	- O(logk(n))  
->	- O(n/r)"  
+>	- self-attention: O(1)  
+>	- recurrent: O(n)  
+>	- convolutional: O(logk(n))  
+>	- self-attention (restricted): O(n/r)"  
 
   - `post` <https://research.googleblog.com/2017/08/transformer-novel-neural-network.html>
   - `video` <https://youtube.com/watch?v=rBCqOTEfxvg> (Kaiser)
+  - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747/> (18:27) (Vaswani, Shazeer)
   - `video` <https://youtube.com/watch?v=iDulhoQ2pro> (Kilcher)
   - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) `in russian`
   - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani, Uszkoreit)
@@ -2229,6 +2246,7 @@ x."
 
   - `video` <http://research.microsoft.com/apps/video/default.aspx?id=260037> (Graves)
   - `video` <http://youtube.com/watch?v=otRoAQtc5Dk> (Polykovskiy)
+  - `post` <https://distill.pub/2016/augmented-rnns/>
   - `notes` <http://rylanschaeffer.github.io/content/research/neural_turing_machine/main.html>
   - `notes` <http://blog.acolyer.org/2016/03/09/neural-turing-machines/>
   - `code` <https://github.com/loudinthecloud/pytorch-ntm>
@@ -2700,13 +2718,13 @@ x."
 >	"We report a method to convert discrete representations of molecules to and from a multidimensional continuous representation. This generative model allows efficient search and optimization through open-ended spaces of chemical compounds. We train deep neural networks on hundreds of thousands of existing chemical structures to construct two coupled functions: an encoder and a decoder. The encoder converts the discrete representation of a molecule into a real-valued continuous vector, and the decoder converts these continuous vectors back to the discrete representation from this latent space. Continuous representations allow us to automatically generate novel chemical structures by performing simple operations in the latent space, such as decoding random vectors, perturbing known chemical structures, or interpolating between molecules. Continuous representations also allow the use of powerful gradient-based optimization to efficiently guide the search for optimized functional compounds. We demonstrate our method in the design of drug-like molecules as well as organic light-emitting diodes."
 
 
-#### ["End to End Learning for Self-Driving Cars"](http://arxiv.org/abs/1604.07316) Bojarski, Del Testa, Dworakowski, Firner, Flepp, Goyal, Jackel, Monfort, Muller, Zhang, Zhao, Zieba
+#### ["End to End Learning for Self-Driving Cars"](http://arxiv.org/abs/1604.07316) Bojarski et al.
 >	"We trained a convolutional neural network to map raw pixels from a single front-facing camera directly to steering commands. This end-to-end approach proved surprisingly powerful. With minimum training data from humans the system learns to drive in traffic on local roads with or without lane markings and on highways. It also operates in areas with unclear visual guidance such as in parking lots and on unpaved roads. The system automatically learns internal representations of the necessary processing steps such as detecting useful road features with only the human steering angle as the training signal. We never explicitly trained it to detect, for example, the outline of roads. Compared to explicit decomposition of the problem, such as lane marking detection, path planning, and control, our end-to-end system optimizes all processing steps simultaneously. We argue that this will eventually lead to better performance and smaller systems. Better performance will result because the internal components self-optimize to maximize overall system performance, instead of optimizing human-selected intermediate criteria, e.g., lane detection. Such criteria understandably are selected for ease of human interpretation which doesn’t automatically guarantee maximum system performance. Smaller networks are possible because the system learns to solve the problem with the minimal number of processing steps."
 
   - `post` <https://devblogs.nvidia.com/parallelforall/deep-learning-self-driving-cars/>
   - `video` <https://youtube.com/watch?v=-96BEoXJMs0> + <https://drive.google.com/file/d/0B9raQzOpizn1TkRIa241ZnBEcjQ/view> (demo)
+  - `post` <https://blog.piekniewski.info/2016/11/03/reactive-vs-predictive-ai/>
   - `code` <https://github.com/SullyChen/Nvidia-Autopilot-TensorFlow>
-  - `code` <https://github.com/DJTobias/Cherry-Autonomous-Racecar>
 
 
 #### ["DeepSpeech: Scaling up end-to-end speech recognition"](http://arxiv.org/abs/1412.5567) Hannun, Case, Casper, Catanzaro, Diamos, Elsen, Prenger, Satheesh, Sengupta, Coates, Ng

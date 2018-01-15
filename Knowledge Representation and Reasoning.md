@@ -251,11 +251,14 @@
 ---
 ### relational learning
 
-  *traditional learning*: data = matrix  
-  *relational learning*:  
+  traditional learning:  
+  - data = matrix  
+
+  relational learning:  
   - multiple data sources, different tuples of variables  
   - share representations of same types across data sources  
   - shared learned representations help propagate information among data sources  
+
 
   problems:  
   - *link prediction/mining*:  predicting whether or not two or more objects are related  *[graph completion]*  
@@ -271,7 +274,9 @@
 
 ----
 
-  ["Statistical Relational Learning"](http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning) tutorial by Tresp `video`  
+  ["Statistical Relational Artificial Intelligence: Logic, Probability and Computation"](https://facebook.com/nipsfoundation/videos/1552222671535633/) tutorial by Raedt, Poole, Kersting, Natarajan `video`
+
+  ["Statistical Relational Learning"](http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning) tutorial by Tresp `video`
 
   ["Relational Models"](https://arxiv.org/abs/1609.03145) by Tresp and Nickel `paper`  
   ["A Review of Relational Machine Learning for Knowledge Graphs: From Multi-Relational Link Prediction to Automated Knowledge Graph Construction"](#a-review-of-relational-machine-learning-for-knowledge-graphs-from-multi-relational-link-prediction-to-automated-knowledge-graph-construction-nickel-murphy-tresp-gabrilovich)
@@ -280,9 +285,9 @@
 ----
 
   Multi-relational learning can be categorized into three categories:  
-  - *statistical relational learning* methods - encode multi-relational graphs via probabilistic models such as Markov Logic Networks  
-  - *path ranking* methods - explore feature space of relations via random walk  
-  - *embedding* methods - project multi-relational knowledge into low-dimensional representations of entities and relations via tensor/matrix factorization, Bayesian clustering or neural networks  
+  - *statistical relational learning*: encode multi-relational graphs via probabilistic models such as Markov Logic Networks  
+  - *path ranking*: explore feature space of relations via random walk  
+  - *embedding*: project multi-relational knowledge into low-dimensional representations of entities and relations via tensor/matrix factorization, Bayesian clustering or neural networks  
 
   history of approaches to relational learning:  
   - [tensor factorization](#tensor-factorization) (Harshman'94)  
@@ -645,7 +650,6 @@
 ----
 
   "PSL uses first order logic rules as a template language for graphical models over random variables with soft truth values from the interval [0, 1]. This allows one to directly incorporate similarity functions, both on the level of individuals and on the level of sets. For instance, when modeling opinions in social networks, PSL allows one to not only model different types of relations between users, such as friendship or family relations, but also multiple notions of similarity, for instance based on hobbies, beliefs, or opinions on specific topics. Technically, PSL represents the domain of interest as logical atoms. It uses first order logic rules to capture the dependency structure of the domain, based on which it builds a joint probabilistic model over all atoms. Each rule has an associated non-negative weight that captures the rule’s relative importance. Due to the use of soft truth values, inference (most probable explanation and marginal inference) in PSL is a continuous optimization problem, which can be solved efficiently."
-  "Also, in PSL the formula syntax is restricted to rules with conjunctive bodies."
 
   - input: set of weighted FOPL rules and a set of evidence (just as in MLN)
   - MAP/MPE inference is a linear optimization problem that can efficiently draw probabilistic conclusions (in MLN combinatorial counting problem)
@@ -707,7 +711,7 @@
 
   [overview](https://youtube.com/watch?v=-8QMqSWU76Q) by Vikash Mansinghka `video`
 
-  ["Engineering and Reverse-Engineering Intelligence Using Probabilistic Programs, Program Induction, and Deep Learning"](https://facebook.com/nipsfoundation/videos/1552446408179926/) by Josh Tenenbaum and Vikash Mansinghka `video`
+----
 
   probabilistic programming:
   - languages for models & systems that simplify / automate aspects of inference
@@ -729,6 +733,8 @@
   *(Andreas Stuhlmueller)*
 
 ----
+
+  ["Engineering and Reverse-Engineering Intelligence Using Probabilistic Programs, Program Induction, and Deep Learning"](https://facebook.com/nipsfoundation/videos/1552446408179926/) by Josh Tenenbaum and Vikash Mansinghka `video`
 
   ["Engineering & Reverse-Engineering Human Common Sense"](https://youtube.com/watch?v=hfoeRiZU5YQ) by Josh Tenenbaum `video`  
   ["Cognitive Foundations for Common-sense Knowledge Representation and Reasoning"](https://youtube.com/watch?v=oSAG57plHnI) by Josh Tenenbaum `video`  
@@ -1291,6 +1297,7 @@
   - [DeepDive](#deepdive)
   - ["Probabilistic Inference and Factor Graphs"](http://deepdive.stanford.edu/inference)
   - `paper` ["Markov Logic"](http://homes.cs.washington.edu/~pedrod/papers/pilp.pdf) by Domingos et al.
+  - [Markov Logic Network](#probabilistic-database---markov-logic-network)
 
 
 #### ["Learning and Inference in Tractable Probabilistic Knowledge Bases"](http://homes.cs.washington.edu/~pedrod/papers/uai15.pdf) Niepert, Domingos
@@ -1303,6 +1310,7 @@
   - `code` <http://alchemy.cs.washington.edu/lite/>
   - `paper` ["A Tractable First-Order Probabilistic Logic"](http://homes.cs.washington.edu/~pedrod/papers/aaai12.pdf) by Domingos and Webb
   - `paper` ["Tractable Probabilistic Knowledge Bases: Wikipedia and Beyond"](http://www.aaai.org/ocs/index.php/WS/AAAIW14/paper/download/8722/8239) by Niepert and Domingos
+  - [Markov Logic Network](#probabilistic-database---markov-logic-network)
 
 
 #### ["Large-Scale Knowledge Graph Identification using PSL"](https://aaai.org/ocs/index.php/FSS/FSS13/paper/viewFile/7593/7552) Pujara, Miao, Getoor, Cohen
@@ -1313,11 +1321,14 @@
 noise, inferring missing information, and determining which candidate facts should be included into a knowledge graph as knowledge graph identification. In order to perform this task, we must reason jointly about candidate facts and their associated extraction confidences, identify coreferent entities, and incorporate ontological constraints. Our proposed approach uses Probabilistic Soft Logic, a recently introduced probabilistic modeling framework which easily scales to millions of facts. We demonstrate the power of our method on a synthetic Linked Data corpus derived from the MusicBrainz music community and a real-world set of extractions from the NELL project containing over 1M extractions and 70K ontological relations. We show that compared to existing methods, our approach is able to achieve improved AUC and F1 with significantly lower running time."
 
   - `video` <http://youtube.com/watch?v=z_VzaNy36xE> (Pujara)
+  - [Probabilistic Soft Logic](#probabilistic-database---probabilistic-soft-logic)
 
 
 #### ["Hinge-Loss Markov Random Fields and Probabilistic Soft Logic"](https://arxiv.org/abs/1505.04406) Bach, Broecheler, Huang, Getoor
   `PSL probabilistic database`
 >	"A fundamental challenge in developing high-impact machine learning technologies is balancing the need to model rich, structured domains with the ability to scale to big data. Many important problem areas are both richly structured and large scale, from social and biological networks, to knowledge graphs and the Web, to images, video, and natural language. In this paper, we introduce two new formalisms for modeling structured data, and show that they can both capture rich structure and scale to big data. The first, hinge-loss Markov random fields (HL-MRFs), is a new kind of probabilistic graphical model that generalizes different approaches to convex inference. We unite three approaches from the randomized algorithms, probabilistic graphical models, and fuzzy logic communities, showing that all three lead to the same inference objective. We then define HL-MRFs by generalizing this unified objective. The second new formalism, probabilistic soft logic (PSL), is a probabilistic programming language that makes HL-MRFs easy to define using a syntax based on first-order logic. We introduce an algorithm for inferring most-probable variable assignments (MAP inference) that is much more scalable than general-purpose convex optimization methods, because it uses message passing to take advantage of sparse dependency structures. We then show how to learn the parameters of HL-MRFs. The learned HL-MRFs are as accurate as analogous discrete models, but much more scalable. Together, these algorithms enable HL-MRFs and PSL to model rich, structured data at scales not previously possible."
+
+  - [Probabilistic Soft Logic](#probabilistic-database---probabilistic-soft-logic)
 
 
 #### ["Efficient Inference and Learning in a Large Knowledge Base: Reasoning with Extracted Information using a Locally Groundable First-Order Probabilistic Logic"](http://arxiv.org/abs/1404.3301) Wang, Mazaitis, Lao, Mitchell, Cohen
@@ -1331,6 +1342,7 @@ noise, inferring missing information, and determining which candidate facts shou
   - `slides` ["Can KR Represent Real-World Knowledge?"](https://drive.google.com/file/d/0B_hicYJxvbiOc05xNEhvdVVSQWc/)
   - `code` <https://github.com/TeamCohen/ProPPR>
   - `paper` ["ProPPR: Efficient First-Order Probabilistic Logic Programming for Structure Discovery, Parameter Learning, and Scalable Inference"](http://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/yww/papers/starAI.pdf) by Wang, Mazaitis, Cohen
+  - [ProPPR](#probabilistic-database---proppr)
 
 
 #### ["Structure Learning via Parameter Learning"](https://www.cs.cmu.edu/~wcohen/postscript/cikm-2014-structure.pdf) Wang, Mazaitis, Cohen
@@ -1340,6 +1352,7 @@ noise, inferring missing information, and determining which candidate facts shou
   - `video` <http://youtu.be/--pYaISROqE?t=21m35s> (Cohen)
   - `code` <https://github.com/TeamCohen/ProPPR>
   - `paper` ["ProPPR: Efficient First-Order Probabilistic Logic Programming for Structure Discovery, Parameter Learning, and Scalable Inference"](http://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/yww/papers/starAI.pdf) by Wang, Mazaitis, Cohen
+  - [ProPPR](#probabilistic-database---proppr)
 
 
 
@@ -1557,8 +1570,10 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
   `query semantic parsing` `entity embedding`
 >	"Natural language questions are inherently compositional, and many are most easily answered by reasoning about their decomposition into modular sub-problems. For example, to answer "is there an equal number of balls and boxes?" we can look for balls, look for boxes, count them, and compare the results. The recently proposed Neural Module Network (NMN) architecture implements this approach to question answering by parsing questions into linguistic substructures and assembling question-specific deep networks from smaller modules that each solve one subtask. However, existing NMN implementations rely on brittle off-the-shelf parsers, and are restricted to the module configurations proposed by these parsers rather than learning them from data. In this paper, we propose End-to-End Module Networks (N2NMNs), which learn to reason by directly predicting instance-specific network layouts without the aid of a parser. Our model learns to generate network structures (by imitating expert demonstrations) while simultaneously learning network parameters (using the downstream task loss). Experimental results on the new CLEVR dataset targeted at compositional question answering show that N2NMNs achieve an error reduction of nearly 50% relative to state-of-the-art attentional approaches, while discovering interpretable network architectures specialized for each question."
 
+  - <http://ronghanghu.com/n2nmn/>
   - `post` <http://bair.berkeley.edu/blog/2017/06/20/learning-to-reason-with-neural-module-networks>
   - `video` <https://youtu.be/ejQNdTdyTBM?t=28m8s> (Kretov) `in russian`
+  - `code` <https://github.com/ronghanghu/n2nmn>
   - `code` <https://github.com/tensorflow/models/tree/master/research/qa_kg>
 
 

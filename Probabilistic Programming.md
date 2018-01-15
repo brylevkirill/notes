@@ -226,7 +226,7 @@
 
   - `video` <https://youtube.com/watch?v=quPN7Hpk014> (Tenenbaum)
   - `video` <https://youtu.be/-8QMqSWU76Q?t=44m8s> (Mansinghka)
-  - `video` <https://facebook.com/NIPSlive/videos/1489196207802887/> (32:48) (Reed)
+  - `video` <https://facebook.com/nipsfoundation/videos/1552060484885185/> (1:39:48) (Reed)
 
 
 #### ["Practical Optimal Experiment Design with Probabilistic Programs"](https://arxiv.org/abs/1608.05046) Ouyang, Tessler, Ly, Goodman

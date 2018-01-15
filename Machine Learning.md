@@ -140,6 +140,8 @@
   <http://wildml.com>  
   <http://blogs.princeton.edu/imabandit>  
   <http://timvieira.github.io/blog/>  
+  <http://r2rt.com>  
+  <http://danieltakeshi.github.io>  
   <http://theneuralperspective.com>  
 
 
@@ -161,7 +163,6 @@
   - NIPS 2017  
 	<https://nips.cc/Conferences/2017/Videos> `video`  
 	<https://facebook.com/pg/nipsfoundation/videos/> `video`  
-	<https://facebook.com/NIPSlive/videos/> `video`  
 
 	<https://nips17.ml>
 
@@ -516,7 +517,7 @@
 
 ----
 
-  ["Deep Learning Trends: Program Induction"](https://facebook.com/NIPSlive/videos/1489196207802887/) (23:12) by Scott Reed `video`  
+  ["Deep Learning Trends: Program Induction"](https://facebook.com/nipsfoundation/videos/1552060484885185/) (1:30:12) by Scott Reed `video`  
   ["Learning to Code: Machine Learning for Program Induction"](https://youtu.be/vzDuVhFMB9Q?t=2m40s) by Alex Gaunt `video`  
 
   ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi) workshop at NIPS 2016

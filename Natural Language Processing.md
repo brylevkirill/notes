@@ -408,7 +408,7 @@
 #### ["Style Transfer from Non-Parallel Text by Cross-Alignment"](https://arxiv.org/abs/1705.09655) Shen, Lei, Barzilay, Jaakkola
 >	"This paper focuses on style transfer on the basis of non-parallel text. This is an instance of a broader family of problems including machine translation, decipherment, and sentiment modification. The key technical challenge is to separate the content from desired text characteristics such as sentiment. We leverage refined alignment of latent representations across mono-lingual text corpora with different characteristics. We deliberately modify encoded examples according to their characteristics, requiring the reproduced instances to match available examples with the altered characteristics as a population. We demonstrate the effectiveness of this cross-alignment method on three tasks: sentiment modification, decipherment of word substitution ciphers, and recovery of word order."
 
-  - `video` <https://facebook.com/NIPSlive/videos/1491773310878510/> (1:20:43) (Shen)
+  - `video` <https://facebook.com/nipsfoundation/videos/1554741734617060/> (1:20:50) (Shen)
 
 
 
@@ -432,8 +432,9 @@
   - `video` <http://videolectures.net/deeplearning2017_blunsom_language_understanding/> (1:15:45) (Blunsom)
 
 
-#### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani et al.
-  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#attention-is-all-you-need-vaswani-et-al>
+#### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin
+  `Transformer`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#attention-is-all-you-need-vaswani-shazeer-parmar-uszkoreit-jones-gomez-kaiser-polosukhin>
 
 
 #### ["Sequence Level Training with Recurrent Neural Networks"](http://arxiv.org/abs/1511.06732) Ranzato, Chopra, Auli, Zaremba
@@ -768,11 +769,11 @@
 ----
 >	"It turns out that skip-thought vectors have some intriguing properties that allow us to construct F in a really simple way. Suppose we have 3 vectors: an image caption x, a "caption style" vector c and a "book style" vector b. Then we define F as F(x) = x - c + b which intuitively means: keep the "thought" of the caption, but replace the image caption style with that of a story. Then, we simply feed F(x) to the decoder."
 
-  - `post` <https://medium.com/@samim/generating-stories-about-images-d163ba41e4ed> (demo)
   - `video` <http://videolectures.net/deeplearning2015_salakhutdinov_deep_learning_2/#t=3776> (Salakhutdinov)
+  - `post` <https://medium.com/@samim/generating-stories-about-images-d163ba41e4ed> (demo)
+  - `post` <http://sanyam5.github.io/my-thoughts-on-skip-thoughts/>
   - `code` <https://github.com/tensorflow/models/tree/master/research/skip_thoughts>
-  - `code` <https://github.com/ryankiros/skip-thoughts>
-  - `code` <https://github.com/ryankiros/neural-storyteller>
+  - `code` <https://github.com/sanyam5/skip-thoughts>
 
 
 #### ["Deep Unordered Composition Rivals Syntactic Methods for Text Classification"](http://cs.umd.edu/~miyyer/pubs/2015_acl_dan.pdf) Iyyer, Manjunatha, Boyd-Graber, Daume
@@ -858,6 +859,7 @@
 #### ["Poincare Embeddings for Learning Hierarchical Representations"](https://arxiv.org/abs/1705.08039) Nickel, Kiela
 >	"Representation learning has become an invaluable approach for learning from symbolic data such as text and graphs. However, while complex symbolic datasets often exhibit a latent hierarchical structure, state-of-the-art methods typically learn embeddings in Euclidean vector spaces, which do not account for this property. For this purpose, we introduce a new approach for learning hierarchical representations of symbolic data by embedding them into hyperbolic space -- or more precisely into an n-dimensional Poincar\'e ball. Due to the underlying hyperbolic geometry, this allows us to learn parsimonious representations of symbolic data by simultaneously capturing hierarchy and similarity. We introduce an efficient algorithm to learn the embeddings based on Riemannian optimization and show experimentally that Poincar\'e embeddings outperform Euclidean embeddings significantly on data with latent hierarchies, both in terms of representation capacity and in terms of generalization ability."
 
+  - `video` <https://facebook.com/nipsfoundation/videos/1553634558061111/> (1:03:01) (Nickel)
   - `notes` <https://medium.com/towards-data-science/facebook-research-just-published-an-awesome-paper-on-learning-hierarchical-representations-34e3d829ede7>
   - `notes` <https://medium.com/@hol_io/word-embeddings-exploration-explanation-and-exploitation-with-code-in-python-5dac99d5d795>
   - `post` <https://rare-technologies.com/implementing-poincare-embeddings/>
