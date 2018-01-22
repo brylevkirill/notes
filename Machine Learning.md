@@ -66,10 +66,8 @@
 #### knowledge bases
 
   <http://metacademy.org>  
+  <http://en.wikipedia.org/wiki/Machine_learning> ([*guide*](https://github.com/Nixonite/open-source-machine-learning-degree/blob/master/Introduction%20to%20Machine%20Learning%20-%20Wikipedia.pdf))  
   <http://machinelearning.ru/wiki/> `in russian`  
-
-  <https://en.wikipedia.org/wiki/Machine_learning>  
-  ["Introduction to Machine Learning - The Wikipedia Guide"](https://github.com/Nixonite/open-source-machine-learning-degree/blob/master/Introduction%20to%20Machine%20Learning%20-%20Wikipedia.pdf)  
 
 
 #### guides
@@ -89,7 +87,7 @@
 
 #### courses
 
-  [course](https://youtube.com/playlist?list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN) by Andrew Ng `video` ([Coursera](http://coursera.org/learn/machine-learning))  
+  [course](https://youtube.com/playlist?list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN) by Andrew Ng `video`  
   [course](http://youtube.com/playlist?list=PLE6Wd9FR--Ecf_5nCbnSQMHqORpiChfJf) by Nando de Freitas `video`  
   [course](http://youtube.com/playlist?list=PLE6Wd9FR--EdyJ5lbFl8UuGjecvVw66F6) by Nando de Freitas `video`  
   [course](http://youtube.com/playlist?list=PLTPQEx-31JXgtDaC6-3HxWcp7fq4N8YGr) by Pedro Domingos `video`  
@@ -113,8 +111,8 @@
   ["The Master Algorithm"](http://basicbooks.com/full-details?isbn=9780465065707) by Pedro Domingos  
   ["A First Encounter with Machine Learning"](https://www.ics.uci.edu/~welling/teaching/ICS273Afall11/IntroMLBook.pdf) by Max Welling  
   ["Deep Learning"](http://www.deeplearningbook.org) by Ian Goodfellow, Yoshua Bengio, Aaron Courville  
-  ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/sutton/book/ebook/the-book.html)
-	([second edition](http://incompleteideas.net/sutton/book/the-book-2nd.html)) by Richard Sutton and Andrew Barto  
+  ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/book/ebook/the-book.html)
+	([second edition](http://incompleteideas.net/book/the-book-2nd.html)) by Richard Sutton and Andrew Barto  
   ["Machine Learning"](https://goo.gl/tyNHMH) by Tom Mitchell  
   ["Understanding Machine Learning: From Theory to Algorithms"](http://cs.huji.ac.il/~shais/UnderstandingMachineLearning/) by Shai Shalev-Shwartz and Shai Ben-David  
   ["Pattern Recognition and Machine Learning"](https://goo.gl/58Yvvp) by Chris Bishop  
@@ -171,7 +169,7 @@
 	<https://github.com/sbarratt/nips2017>  
 
   - ICML 2017  
-	<https://vimeo.com/user72337760> `video`
+	<https://icml.cc/Conferences/2017/Videos> `video`
 
 	<http://artem.sobolev.name/posts/2017-08-14-icml-2017.html>  
 	<https://olgalitech.wordpress.com/tag/icml2017/>  
@@ -185,10 +183,10 @@
 	<https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016> `video`  
 	<https://nips.cc/Conferences/2016/SpotlightVideos> `video`  
 
-	<http://people.idsia.ch/~rupesh/rnnsymposium2016/program.html> + <https://youtube.com/playlist?list=PLPwzH56Rdmq4hcuEMtvBGxUrcQ4cAkoSc>  
-	<https://sites.google.com/site/nips2016adversarial/> + <https://youtube.com/playlist?list=PLJscN9YDD1buxCitmej1pjJkR5PMhenTF>  
-	<http://bayesiandeeplearning.org> + <https://youtube.com/channel/UC_LBLWLfKk5rMKDOHoO7vPQ>  
-	<https://uclmr.github.io/nampi/> + <https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt>  
+	<https://youtube.com/playlist?list=PLPwzH56Rdmq4hcuEMtvBGxUrcQ4cAkoSc> `video`  
+	<https://youtube.com/playlist?list=PLJscN9YDD1buxCitmej1pjJkR5PMhenTF> `video`  
+	<https://youtube.com/channel/UC_LBLWLfKk5rMKDOHoO7vPQ> `video`  
+	<https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt> `video`  
 
 	<https://github.com/hindupuravinash/nips2016>  
 	<http://artem.sobolev.name/posts/2016-12-31-nips-2016-summaries.html>  
@@ -307,28 +305,13 @@
   **challenges**  
   - How to decide which representation is best for target knowledge?  
   - How to tell genuine regularities from chance occurrences?  
-  - How to exploit pre-existing domain knowledge knowledge?  
+  - How to exploit pre-existing domain knowledge?  
   - How to learn with limited computational resources?  
   - How to learn with limited data?  
   - How to make learned results understandable?  
   - How to quantify uncertainty?  
   - How to take into account the costs of decisions?  
   - How to handle non-indepedent and non-stationary data?  
-
-----
-
-  [**things to know**](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf)  
-  - it's generalization that counts  
-  - data alone is not enough  
-  - overfitting has many faces  
-  - intuition fails in high dimensions  
-  - theoretical guarantees are not what they seem  
-  - feature engineering is the key  
-  - more data beats a cleverer algorithm  
-  - learn many models, not just one (ensembles)  
-  - simplicity does not imply accuracy  
-  - representable does not imply learnable  
-  - correlation does not imply causation  
 
 ----
 
@@ -482,23 +465,29 @@
 ---
 ### program induction
 
-  "The essence of programmatic representations is that they are well-specified, compact, combinatorial and hierarchical.  
-  - *well-specified*:  Unlike sentences in natural language, programs are unambiguous, although two distinct programs can be precisely equivalent.  
-  - *compact*:  Programs allow us to compress data on the basis of their regularities.  
-  - *combinatorial*:  Programs can access the results of running other programs, as well as delete, duplicate, and rearrange these results.  
-  - *hierarchical*:  Programs have an intrinsic hierarchical organization and may be decomposed into subprograms."  
+  programmatic representations:  
+  - *well-specified*  
+	Unlike sentences in natural language, programs are unambiguous, although two distinct programs can be precisely equivalent.  
+  - *compact*  
+	Programs allow us to compress data on the basis of their regularities.  
+  - *combinatorial*  
+	Programs can access the results of running other programs, as well as delete, duplicate, and rearrange these results.  
+  - *hierarchical*  
+	Programs have an intrinsic hierarchical organization and may be decomposed into subprograms.  
 
-  "Alternative representations for procedural abstractions such as neural networks have serious downsides including opacity and inefficiency."
-
-  "Challenges with programmatic representations:  
-  - *open-endedness*:  In contrast to other knowledge representations in machine learning, programs may vary in size and “shape”, and there is no obvious problem-independent upper bound on program size. This makes it difficult to represent programs as points in a fixed-dimensional space, or learn programs with algorithms that assume such a space.  
-  - *over-representation*:  Often syntactically distinct programs will be semantically identical (i.e. represent the same underlying behavior or functional mapping). Lacking prior knowledge, many algorithms will inefficiently sample semantically identical programs repeatedly.  
-  - *chaotic execution*: Programs that are very similar, syntactically, may be very different, semantically. This presents difficulty for many heuristic search algorithms, which require syntactic and semantic distance to be correlated.  
-  - *high resource-variance*:  Programs in the same space may vary greatly in the space and time they require to execute."  
+  challenges:  
+  - *open-endedness*  
+	In contrast to other knowledge representations in machine learning, programs may vary in size and shape, and there is no obvious problem-independent upper bound on program size. This makes it difficult to represent programs as points in a fixed-dimensional space, or learn programs with algorithms that assume such a space.  
+  - *over-representation*  
+	Often syntactically distinct programs will be semantically identical (i.e. represent the same underlying behavior or functional mapping). Lacking prior knowledge, many algorithms will inefficiently sample semantically identical programs repeatedly.  
+  - *chaotic execution*  
+	Programs that are very similar, syntactically, may be very different, semantically. This presents difficulty for many heuristic search algorithms, which require syntactic and semantic distance to be correlated.  
+  - *high resource-variance*  
+	Programs in the same space may vary greatly in the space and time they require to execute.  
 
 ----
 
-  "For me there are two types of generalisation, which I will refer to as Symbolic and Connectionist generalisation. If we teach a machine to sort sequences of numbers of up to length 10 or 100, we should expect them to sort sequences of length 1000 say. Obviously symbolic approaches have no problem with this form of generalisation, but neural nets do poorly. On the other hand, neural nets are very good at generalising from data (such as images), but symbolic approaches do poorly here. One of the holy grails is to build machines that are capable of both symbolic and connectionist generalisation. Neural Programmer Interpreters is a very early step toward this. NPI can do symbolic operations such as sorting and addition, but it can also plan by taking images as input and it's able to generalise the plans to different images (e.g. in the NPI car example, the cars are test set cars not seen before)."
+  "For me there are two types of generalisation, which I will refer to as Symbolic and Connectionist generalisation. If we teach a machine to sort sequences of numbers of up to length 10 or 100, we should expect them to sort sequences of length 1000 say. Obviously symbolic approaches have no problem with this form of generalisation, but neural nets do poorly. On the other hand, neural nets are very good at generalising from data (such as images), but symbolic approaches do poorly here. One of the holy grails is to build machines that are capable of both symbolic and connectionist generalisation."
 
   *(Nando de Freitas)*
 
@@ -783,7 +772,7 @@
   > "Imagine if back in Newton's day, they were analyzing data from physical random variables with deep neural networks. Sure, they might get great prediction accuracy on how far a ball will go given measurements of its weight, initial force/angle, and some other irrelevant variables, but would this really be the best approach to discover all of the useful laws of physics such as f = ma and the conversion from potential to kinetic energy via the gravitational constant? Probably not, in fact the predictions might be in some sense "too good" incorporating other confounding effects such as air drag and the shape / spin of the ball which obfuscate the desired law. In many settings where an interpretation of what is going on in the data is desired, a clear model is necessary with simple knobs that have clear effects when turned. This may also be a requirement not only for human interpretation, but an also AI system which is able to learn and combine facts about the world (rather than only storing the complex functions which represent the relationships between things as inferred by a neural network)."
 
   Nando de Freitas:
-  > "For me there are two types of generalisation, which I will refer to as Symbolic and Connectionist generalisation. If we teach a machine to sort sequences of numbers of up to length 10 or 100, we should expect them to sort sequences of length 1000 say. Obviously symbolic approaches have no problem with this form of generalisation, but neural nets do poorly. On the other hand, neural nets are very good at generalising from data (such as images), but symbolic approaches do poorly here. One of the holy grails is to build machines that are capable of both symbolic and connectionist generalisation. Neural Programmer Interpreters is a very early step toward this. NPI can do symbolic operations such as sorting and addition, but it can also plan by taking images as input and it's able to generalise the plans to different images (e.g. in the NPI car example, the cars are test set cars not seen before)."
+  > "For me there are two types of generalisation, which I will refer to as Symbolic and Connectionist generalisation. If we teach a machine to sort sequences of numbers of up to length 10 or 100, we should expect them to sort sequences of length 1000 say. Obviously symbolic approaches have no problem with this form of generalisation, but neural nets do poorly. On the other hand, neural nets are very good at generalising from data (such as images), but symbolic approaches do poorly here. One of the holy grails is to build machines that are capable of both symbolic and connectionist generalisation."
 
   Christian Szegedy:
   > "The inroads of machine learning will transform all of information technologies. Most prominently, the way we program our computers will slowly shift from prescribing how to solve problems to just specifying them and let machines learn to cope with them. We could even have them distill their solution to formal procedures akin to our current programs. In order to truly get there, the most exciting developments will come from the synergy of currently disjoint areas: the marriage of formal, discrete methods and fuzzy, probabilistic approaches, like deep neural networks."

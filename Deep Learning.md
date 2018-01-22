@@ -374,6 +374,7 @@
 
   [overview](http://videolectures.net/deeplearning2017_goodfellow_generative_models/) by Ian Goodfellow `video`  
   [overview](http://videolectures.net/deeplearning2017_courville_generative_models/) by Aaron Courville `video`  
+  [overview](https://youtube.com/watch?v=JrO5fSskISY) by Shakir Mohamed and Danilo Rezende `video`  
 
   ["Building Machines that Imagine and Reason: Principles and Applications of Deep Generative Models"](http://videolectures.net/deeplearning2016_mohamed_generative_models/) by Shakir Mohamed `video`
 
@@ -1333,6 +1334,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=btr1poCYIzw>
   - `video` <http://videolectures.net/deeplearning2017_johnson_graphical_models/> (Johnson)
   - `video` <https://youtube.com/watch?v=vnO3w8OgTE8> (Duvenaud)
+  - `audio` <https://youtube.com/watch?v=P7zucOImw04> (Duvenaud)
   - `slides` <http://www.cs.toronto.edu/~duvenaud/courses/csc2541/slides/svae-slides.pdf>
   - `notes` <https://casmls.github.io/general/2016/12/11/SVAEandfLDS.html>
   - `code` <http://github.com/mattjj/svae>
@@ -1390,9 +1392,12 @@ Yoshua Bengio:
 >	"In this work we developed a simple approach for learning highly non-Gaussian posterior densities by learning transformations of simple densities to more complex ones through a normalizing flow. When combined with an amortized approach for variational inference using inference networks and efficient Monte Carlo gradient estimation, we are able to show clear improvements over simple approximations on different problems. Using this view of normalizing flows, we are able to provide a unified perspective of other closely related methods for flexible posterior estimation that points to a wide spectrum of approaches for designing more powerful posterior approximations with different statistical and computational tradeoffs. An important conclusion from the discussion in section 3 is that there exist classes of normalizing flows that allow us to create extremely rich posterior approximations for variational inference. With normalizing flows, we are able to show that in the asymptotic regime, the space of solutions is rich enough to contain the true posterior distribution. If we combine this with the local convergence and consistency results for maximum likelihood parameter estimation in certain classes of latent variables models, we see that we are now able overcome the objections to using variational inference as a competitive and default approach for statistical inference. Making such statements rigorous is an important line of future research. Normalizing flows allow us to control the complexity of the posterior at run-time by simply increasing the flow length of the sequence. The approach we presented considered normalizing flows based on simple transformations of the form (10) and (14). These are just two of the many maps that can be used, and alternative transforms can be designed for posterior approximations that may require other constraints, e.g., a restricted support. An important avenue of future research lies in describing the classes of transformations that allow for different characteristics of the posterior and that still allow for efficient, linear-time computation."
 
   - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods> (1:05:06) (Mohamed)
+  - `video` <https://youtu.be/JrO5fSskISY?t=1h2m19s> (Mohamed)
   - `video` <https://youtu.be/tqGEX_Ucu04?t=33m58s> (Molchanov) `in russian`
   - `post` <https://casmls.github.io/general/2016/09/25/normalizing-flows.html>
   - `post` <https://ferrine.github.io/blog/2017/07/11/normalizing-flows-overview/>
+  - `post` <http://docs.pymc.io/notebooks/normalizing_flows_overview.html>
+  - `post` <http://blog.evjang.com/2018/01/nf1.html>
   - `code` <https://github.com/pymc-devs/pymc3/blob/master/pymc3/variational/flows.py>
 
 

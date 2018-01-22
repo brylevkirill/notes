@@ -1001,6 +1001,8 @@
 ----
 #### bayesian reinforcement learning
 
+  **policy search in belief-augmented MDP**
+
   BRL agent aims to maximise expected sum of future rewards obtained when interacting with unknown Markov Decision Process while using some prior knowledge.  
   Belief-augmented Markov Decision Process is an MDP obtained when considering augmented states made of concatenation of actual state and posterior beliefs.  
   BRL agent maintains distribution over worlds and either samples a world and acts as if it is real, or chooses action by reasoning about full distribution.  
@@ -1009,9 +1011,8 @@
   Under this framework actions that yield highest instant reward and actions that maximise gathering of knowledge about environment are often very different.  
   BAMDP framework leads to rigorous definition of optimal solution based on finding policy that reaches optimal balance between exploration and exploitation.  
 
-----
 
-  [overview](https://youtu.be/sGuiWX07sKw?t=1h8m44s) of reinforcement learning with information state space by David Silver `video`  
+  [overview](https://youtu.be/sGuiWX07sKw?t=1h8m44s) by David Silver `video`  
   ["Bandits, Active Learning, Bayesian RL and Global Optimization"](https://youtu.be/5rev-zVx1Ps?t=58m45s) by Marc Toussaint `video`  
   ["Reinforcement Learning: Beyond Markov Decision Processes"](https://youtube.com/watch?v=_dkaynuKUFE) by Alexey Seleznev `video` `in russian`  
   ["Partially Observable Markov Decision Process in Reinforcement Learning"](https://yadi.sk/i/pMdw-_uI3Gke7Z) by Pavel Shvechikov `video` `in russian`  
@@ -1025,16 +1026,23 @@
 
 ----
 
+  **bayesian policy search in variational MDP**
+
+  p(z) = N(z|0,I)  
+  p(a1..T|z) = Un(a)  
+  p(R|a1..T) ~ exp(v*R(a,x))  
+  q(z|x) = N(z|μφ(x),Σφ(x))  
+  q(a|z) = Cat(a|Πθ(z))  
+  Fπ(θ) = E q(a,z|x) [R(a|x)] - α*DKL[qθ(z|x)||p(z|x)] + α*H[πθ(a|z)]  
+
+
+  ["Probabilistic Policy Learning"](https://youtu.be/JrO5fSskISY?t=1h19m29s) by Shakir Mohamed `video`  
   ["Bayesian Policy Search"](https://youtu.be/AggqBRdz6CQ?t=9m53s) by Shakir Mohamed `video`  
-  ["Is Reinforcement Learning Inference in a Graphical Model?"](https://vimeo.com/240428644#t=1h16m18s) by Sergey Levine `video`  
   ["Bayesian Inference for Reinforcement Learning"](https://youtube.com/watch?v=KZd-jkmeIcU) by Sergey Bartunov `video` `in russian`
 	([slides](https://drive.google.com/drive/folders/0B2zoFVYw1rN3N0RUNXE1WnNObTQ) `in english`)  
 
   ["Reinforced Variational Inference"](#reinforced-variational-inference-weber-heess-eslami-schulman-wingate-silver) by Weber et al. `paper` `summary`  
   ["Reinforcement Learning as Variational Inference: Two Recent Approaches"](http://people.ee.duke.edu/~lcarin/Rohith8.11.2017.pdf) by Rohith Kuditipudi `slides`  
-
-  bayesian policy search in variational MDP (variational decision making):  
-  Fπ(θ) = E q(a,z|x) [R(a|x)] - α * DKL[qθ(z|x) || p(z|x)] + α * H[πθ(a|z)]  
 
 ----
 
@@ -1538,6 +1546,7 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=6fKG4wJ7uBk> (Baudis)
   - `video` <https://youtube.com/watch?v=XuzIqE2IshY> (Kington)
   - `video` <https://youtube.com/watch?v=vC66XFoN4DE> (Raval)
+  - `video` <https://youtu.be/Lz5_xFGt2hA?t=3m11s> (Grinchuk) `in russian`
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
   - `post` <http://inference.vc/alphago-zero-policy-improvement-and-vector-fields/>
   - `post` <http://tim.hibal.org/blog/alpha-zero-how-and-why-it-works/>
@@ -1924,6 +1933,11 @@ interesting recent papers:
 >	"How to design algorithms that make use of such prior information?"  
 >	"Key idea: learn a fast RL algorithm that make use of such prior information"  
 
+>	"RL agent = RNN = generic computation architecture  
+>	- different weights in the RNN means different RL algorithm and prior  
+>	- different activations in the RNN means different current policy  
+>	- meta-train objective can be optimized with existing (slow) RL algorithm"  
+
 >	"RNN is made to ingest multiple rollouts from many different MDPs and then perform a policy gradient update through the entire temporal span of the RNN. The hope is that the RNN will learn a faster RL algorithm in its memory weights."  
 >	"Suppose L represents an RNN. Let Envk(a) be a function that takes an action, uses it to interact with the MDP representing task k, and returns the next observation o, reward r, and a termination flag d. Then we have:  
 >	xt = [ot−1, at−1, rt−1, dt−1]  
@@ -1931,32 +1945,24 @@ interesting recent papers:
 >	Envk(at) = [ot, rt, dt]  
 >	To train this RNN, we sample N MDPs from M and obtain k rollouts for each MDP by running the MDP through the RNN as above. We then compute a policy gradient update to move the RNN parameters in a direction which maximizes the returns over the k trials performed for each MDP."  
 
->	"future directions:  
-	- better outer-loop algorithms  
-	- scaling RL^2 to 1M games  
-	- model-based RL^2  
-	- curriculum learning / universal RL^2  
-	- RL^2 + one-shot imitation learning  
-	- RL^2 for simulation -> real world transfer"  
-
+  - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482/> (7:31) (Abbeel)
   - `video` <http://www.fields.utoronto.ca/video-archive/2017/02/2267-16530> (19:00) (Abbeel)
   - `video` <https://youtu.be/SfCa1HQMkuw?t=1h16m56s> (Schulman)
-  - `video` <https://youtu.be/BskhUBPRrqE?t=6m28s> (Sutskever)
-  - `video` <https://youtu.be/19eNQ1CLt5A?t=7m52s> (Sutskever)
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/RL2-Fast_Reinforcement_Learning_via_Slow_Reinforcement_Learning.md>
+  - `paper` ["Learning to Reinforcement Learn"](#learning-to-reinforcement-learn-wang-et-al) by Wang et al. `summary`
 
 
 #### ["Learning to Reinforcement Learn"](http://arxiv.org/abs/1611.05763) Wang et al.
->	"In recent years deep reinforcement learning (RL) systems have attained superhuman performance in a number of challenging task domains. However, a major limitation of such applications is their demand for massive amounts of training data. A critical present objective is thus to develop deep RL methods that can adapt rapidly to new tasks. In the present work we introduce a novel approach to this challenge, which we refer to as deep meta-reinforcement learning. Previous work has shown that recurrent networks can support meta-learning in a fully supervised context. We extend this approach to the RL setting. What emerges is a system that is trained using one RL algorithm, but whose recurrent dynamics implement a second, quite separate RL procedure. This second, learned RL algorithm can differ from the original one in arbitrary ways. Importantly, because it is learned, it is configured to exploit structure in the training domain. We unpack these points in a series of seven proof-of-concept experiments, each of which examines a key aspect of deep meta-RL. We consider prospects for extending and scaling up the approach, and also point out some potentially important implications for neuroscience."
+>	"In recent years deep reinforcement learning systems have attained superhuman performance in a number of challenging task domains. However, a major limitation of such applications is their demand for massive amounts of training data. A critical present objective is thus to develop deep RL methods that can adapt rapidly to new tasks. In the present work we introduce a novel approach to this challenge, which we refer to as deep meta-reinforcement learning. Previous work has shown that recurrent networks can support meta-learning in a fully supervised context. We extend this approach to the RL setting. What emerges is a system that is trained using one RL algorithm, but whose recurrent dynamics implement a second, quite separate RL procedure. This second, learned RL algorithm can differ from the original one in arbitrary ways. Importantly, because it is learned, it is configured to exploit structure in the training domain. We unpack these points in a series of seven proof-of-concept experiments, each of which examines a key aspect of deep meta-RL. We consider prospects for extending and scaling up the approach, and also point out some potentially important implications for neuroscience."
 
 >	"learning to explore"  
 >	"outer episodes (sample a new bandit problem / MDP) and inner episodes (of sampled MDP)"  
 >	"use RNN policy with no state reset between inner episodes for outer POMDP"  
 
   - `video` <https://youtu.be/Y85Zn50Eczs?t=20m18s> (Botvinick)
-  - `video` <https://youtube.com/watch?v=SfCa1HQMkuw&t=1h16m56s> (Schulman)
   - `post` <https://hackernoon.com/learning-policies-for-learning-policies-meta-reinforcement-learning-rl²-in-tensorflow-b15b592a2ddf> (Juliani)
   - `code` <https://github.com/awjuliani/Meta-RL>
+  - `paper` ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](#rl2-fast-reinforcement-learning-via-slow-reinforcement-learning-duan-schulman-chen-bartlett-sutskever-abbeel) by Duan et al. `summary`
 
 
 
@@ -2507,6 +2513,7 @@ interesting recent papers:
 >	"application of deep successor reinforcement learning"
 
   - `video` <https://youtube.com/watch?v=947bSUtuSQ0> + <https://youtube.com/watch?v=947bSUtuSQ0> (demo)
+  - `video` <https://facebook.com/iclr.cc/videos/1712224178806641/> (54:12) (Dosovitskiy)
   - `video` <https://youtube.com/watch?v=buUF5F8UCH8> (Lamb, Ozair)
   - `video` <https://youtube.com/watch?v=Q0ldKJbAwR8> (Dosovitskiy) `in russian`
   - `video` <https://yadi.sk/i/pMdw-_uI3Gke7Z> (1:02:03) (Shvechikov) `in russian`
@@ -2653,6 +2660,7 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=gb5Q2XL5c8A> (Schulman)
   - `video` <https://yadi.sk/i/1oyihBnm3HiKHm> + <https://yadi.sk/i/b0ol2gUV3HiKKJ> (Fritsler and Ratnikov) `in russian` ([slides](https://yadi.sk/i/9j6S4WVp3HgEdn) `in english`)
   - `post` <http://kvfrans.com/what-is-the-natural-gradient-and-where-does-it-appear-in-trust-region-policy-optimization/>
+  - `notes` <https://towardsdatascience.com/introduction-to-various-reinforcement-learning-algorithms-part-ii-trpo-ppo-87f2c5919bb9>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/trpo_mpi>
   - `code` <https://github.com/reinforceio/tensorforce/blob/master/tensorforce/models/trpo_model.py>
   - `code` <https://github.com/ikostrikov/pytorch-trpo>

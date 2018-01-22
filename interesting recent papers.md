@@ -87,6 +87,7 @@ interesting older papers:
 >	"Deep networks generalise better with smaller batch-size when no other form of regularisation is used. And it may be because SGD biases learning towards flat local minima, rather than sharp local minima."  
 >	"Using large batch sizes tends to find sharped minima and generalize worse. This means that we can’t talk about generalization without taking training algorithm into account."  
   - `video` <http://videolectures.net/deeplearning2017_larochelle_neural_networks/> (part 2, 1:25:55) (Larochelle)
+  - `slides` <https://iclr.cc/archive/www/lib/exe/fetch.php%3Fmedia=iclr2017:nocedal_iclr2017.pdf>
   - `post` <http://inference.vc/everything-that-works-works-because-its-bayesian-2/>
   - `code` <https://github.com/keskarnitish/large-batch-training>
   - `paper` ["Flat Minima"](http://www.bioinf.jku.at/publications/older/3304.pdf) by Hochreiter, Schmidhuber
@@ -529,6 +530,7 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=btr1poCYIzw>
   - `video` <http://videolectures.net/deeplearning2017_johnson_graphical_models/> (Johnson)
   - `video` <https://youtube.com/watch?v=vnO3w8OgTE8> (Duvenaud)
+  - `audio` <https://youtube.com/watch?v=P7zucOImw04> (Duvenaud)
   - `slides` <http://www.cs.toronto.edu/~duvenaud/courses/csc2541/slides/svae-slides.pdf>
   - `notes` <https://casmls.github.io/general/2016/12/11/SVAEandfLDS.html>
   - `code` <https://github.com/mattjj/svae>
@@ -573,6 +575,7 @@ interesting older papers:
 
 #### ["Scaling Memory-Augmented Neural Networks with Sparse Reads and Writes"](http://arxiv.org/abs/1610.09027) Rae, Hunt, Harley, Danihelka, Senior, Wayne, Graves, Lillicrap
   `compute and memory` `Differentiable Neural Computer`
+  - `video` <https://facebook.com/iclr.cc/videos/1713144705381255/> (28:47) (Graves)
 
 #### ["Using Fast Weights to Attend to the Recent Past"](http://arxiv.org/abs/1610.06258) Ba, Hinton, Mnih, Leibo, Ionescu
   `compute and memory`
@@ -637,11 +640,6 @@ interesting older papers:
   - `code` <https://github.com/ShibiHe/Model-Free-Episodic-Control>
   - `code` <https://github.com/sudeepraja/Model-Free-Episodic-Control>
 
-#### ["Learning to Remember Rare Events"](http://arxiv.org/abs/1703.03129) Kaiser, Nachum, Roy, Bengio
-  `episodic memory`
->	"We present a large-scale life-long memory module for use in deep learning. The module exploits fast nearest-neighbor algorithms for efficiency and thus scales to large memory sizes. Except for the nearest-neighbor query, the module is fully differentiable and trained end-to-end with no extra supervision. It operates in a life-long manner, i.e., without the need to reset it during training. Our memory module can be easily added to any part of a supervised neural network. The enhanced network gains the ability to remember and do life-long one-shot learning. Our module remembers training examples shown many thousands of steps in the past and it can successfully generalize from them."  
-  - `code` <https://github.com/tensorflow/models/tree/master/research/learning_to_remember_rare_events>
-
 #### ["Neural Map: Structured Memory for Deep Reinforcement Learning"](https://arxiv.org/abs/1702.08360) Parisotto, Salakhutdinov
   `episodic memory`
 >	"Memory was given a 2D structure in order to resemble a spatial map to address specific problems such as 2D or 3D navigation."  
@@ -649,38 +647,50 @@ interesting older papers:
   - `slides` <http://www.cs.cmu.edu/~rsalakhu/NIPS2017_StructureMemoryForDeepRL.pdf>
   - `video` <https://yadi.sk/i/pMdw-_uI3Gke7Z> (Shvechikov) `in russian`
 
+----
+#### ["Learning Long-term Dependencies with Deep Memory States"](https://people.eecs.berkeley.edu/~vitchyr/learning_long_term_dependencies_with_deep_memory_states__pong_gu_levine.pdf) Pong, Gu, Levine
+  `continual learning`
+>	"Training an agent to use past memories to adapt to new tasks and environments is important for lifelong learning algorithms. Training such an agent to use its memory efficiently is difficult as the size of its memory grows with each successive interaction. Previous work has not yet addressed this problem, as they either use backpropagation through time (BPTT), which is computationally expensive, or truncated BPTT, which cannot learn long-term dependencies, to train recurrent policies. We propose a reinforcement learning method that addresses the limitations of truncated BPTT by using a learned critic to estimate truncated gradients and by saving and loading hidden states outputted by recurrent neural networks. We present results showing that our algorithm can learn long-term dependencies while avoiding the computational constraints of BPTT. These results suggest that our method can potentially be used to train an agent that stores and effectively learns from past memories."  
+>	"While feed-forward, reactive policies can perform complex skills in isolation, the ability to store past events in an internal memory is crucial for a wide range of behaviors. For example, a robot navigating a building might need to incorporate past observations to optimally estimate its location, or remember a command previously issued by a person. Perhaps more importantly, long-term memory can be utilized for lifelong learning, where an agent uses past experiences to quickly modify its behavior in response to changing environments. Such recurrent meta-learning has been demonstrated on a variety of supervised learning tasks, and more recently applied to a variety of reinforcement learning tasks. However, realistic applications of policies with memory may demand particularly long-term memorization. For example, a robot tasked with setting the silverware on the table would need to remember where it last stored it, potentially hours or days ago. This kind of long-term memorization is very difficult with current reinforcement learning methods. Specialized architectures have been developed that improve the capabilities of recurrent networks to store information, but such methods still require back-propagation through time (BPTT) for training, which typically limits how far back the error is propagated to at most the length of the trajectory. Past this size, the gradient is truncated. Truncating the gradient between when the policy must perform a crucial task (such as finding the silverware) and the observation that needs to be memorized to know which action to perform (the last location of the silverware) can make it impossible to successfully perform the task."  
+>	"While some tasks may be solved by loading entire episodes into memory and avoiding truncation, a lifelong learning agent has no notion of episodes. Instead, a lifelong learning agent lives out a single episode that continuously grows. Computational constraints, both in terms of memory and practical training times, impose a fundamental limit on the memory capacity of neural network policies. Rather than loading full episodes or truncating gradients, one can instead augment the original MDP with memory states. In addition to regular MDP actions, a policy outputs a vector called memory states, which it receives as input at the next time step. These memory states are equivalent to hidden states in normal recurrent neural network, but by interpreting memory states as just another part of the MDP state, recurrent policies can be trained using standard reinforcement learning methods, including efficient off-policy algorithms that can handle potentially infinite episode lengths. However, the use of memory states forces the learning algorithm to rely on the much less efficient gradient-free RL optimization to learn memorization strategies, rather than the low-variance gradients obtained from back-propagation through time (BPTT). For this reason, even truncated BPTT is usually preferred over the memory states approach when using model-free RL algorithms."  
+>	"We propose a hybrid recurrent reinforcement learning algorithm that combines both memory states and BPTT. To obtain a practical algorithm that enables memorization over potentially unbounded episodes, we must use some form of memory states to manage computational constraints. However, we must also use BPTT as much as possible to make it feasible for the learner to acquire appropriate memorization strategies. Our actor-critic algorithm includes memory states and write actions, but performs analytic BPTT within each batch, loading subsequences for each training iteration. This approach allows us to use batches of reasonable size with enough subsequences to decorrelate each batch, while still benefiting from the efficiency of BPTT. Unfortunately, the use of memory states by itself is insufficient to provide for a  Markovian state description, since an untrained policy may not store the right information in the memory. This makes it difficult to use memory states with a critic, which assumes Markovian state. To address this issue, we also propose a method for backpropagating Bellman error gradients, which encourages the policy to take write actions that reduce future Bellman error."  
+
+#### ["Learning to Remember Rare Events"](http://arxiv.org/abs/1703.03129) Kaiser, Nachum, Roy, Bengio
+  `continual learning` `catastrophic forgetting`
+>	"We present a large-scale life-long memory module for use in deep learning. The module exploits fast nearest-neighbor algorithms for efficiency and thus scales to large memory sizes. Except for the nearest-neighbor query, the module is fully differentiable and trained end-to-end with no extra supervision. It operates in a life-long manner, i.e., without the need to reset it during training. Our memory module can be easily added to any part of a supervised neural network. The enhanced network gains the ability to remember and do life-long one-shot learning. Our module remembers training examples shown many thousands of steps in the past and it can successfully generalize from them."  
+  - `code` <https://github.com/tensorflow/models/tree/master/research/learning_to_remember_rare_events>
+
 #### ["A Growing Long-term Episodic and Semantic Memory"](http://arxiv.org/abs/1610.06402) Pickett, Al-Rfou, Shao, Tar
-  `episodic memory`
+  `continual learning` `catastrophic forgetting`
 >	"We describe a lifelong learning system that leverages a fast, though non-differentiable, content-addressable memory which can be exploited to encode both a long history of sequential episodic knowledge and semantic knowledge over many episodes for an unbounded number of domains."  
 
-----
 #### ["Variational Continual Learning"](https://arxiv.org/abs/1710.10628) Nguyen, Li, Bui, Turner
-  `catastrophic forgetting` `continual learning`
+  `continual learning` `catastrophic forgetting`
 >	"The framework can successfully train both deep discriminative models and deep generative models in complex continual learning settings where existing tasks evolve over time and entirely new tasks emerge. Experimental results show that variational continual learning outperforms state-of-the-art continual learning methods on a variety of tasks, avoiding catastrophic forgetting in a fully automatic way."  
 
 #### ["Gradient Episodic Memory for Continuum Learning"](https://arxiv.org/abs/1706.08840) Lopez-Paz, Ranzato
-  `catastrophic forgetting` `continual learning`
+  `continual learning` `catastrophic forgetting`
   - `notes` <http://rayraycano.github.io/data%20science/tech/2017/07/31/A-Paper-a-Day-GEM.html>
 
 #### ["Improved Multitask Learning Through Synaptic Intelligence"](https://arxiv.org/abs/1703.04200) Zenke, Poole, Ganguli
-  `catastrophic forgetting` `continual learning`
+  `continual learning` `catastrophic forgetting`
 >	"The regularization penalty is similar to EWC. However, our approach computes the per-synapse consolidation strength in an online fashion, whereas for EWC synaptic importance is computed offline after training on a designated task."  
   - `video` <https://vimeo.com/238242232> (Zenke)
   - `code` <https://github.com/spiglerg/TF_ContinualLearningViaSynapticIntelligence>
 
 #### ["PathNet: Evolution Channels Gradient Descent in Super Neural Networks"](http://arxiv.org/abs/1701.08734) Fernando, Banarse, Blundell, Zwols, Ha, Rusu, Pritzel, Wierstra
-  `catastrophic forgetting` `continual learning`
+  `continual learning` `catastrophic forgetting`
   - `video` <https://youtube.com/watch?v=Wkz4bG_JlcU>
   - `post` <https://medium.com/intuitionmachine/pathnet-a-modular-deep-learning-architecture-for-agi-5302fcf53273>
   - `code` <https://github.com/jaesik817/pathnet>
 
 #### ["Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"](https://arxiv.org/abs/1701.06538) Shazeer, Mirhoseini, Maziarz, Davis, Le, Hinton, Dean
-  `catastrophic forgetting` `continual learning`
+  `continual learning` `catastrophic forgetting`
 >	"The MoE with experts shows higher accuracy (or lower perplexity) than the state of the art using only 16% of the training time."  
   - `notes` <https://github.com/dennybritz/deeplearning-papernotes/blob/3718d181a0fed5ed806582822ed0dbde530122bf/notes/mixture-experts.md>
 
 #### ["Overcoming Catastrophic Forgetting in Neural Networks"](http://arxiv.org/abs/1612.00796) Kirkpatrick et al.
-  `catastrophic forgetting` `continual learning` `Elastic Weight Consolidation`
+  `continual learning` `catastrophic forgetting` `Elastic Weight Consolidation`
 >	"The Mixture of Experts Layer is trained using back-propagation. The Gating Network outputs an (artificially made) sparse vector that acts as a chooser of which experts to consult. More than one expert can be consulted at once (although the paper doesn’t give any precision on the optimal number of experts). The Gating Network also decides on output weights for each expert."  
 >
 >	Huszar:  
@@ -717,6 +727,7 @@ interesting older papers:
   `compute and memory resources`
   - `video` <https://youtu.be/tA8nRlBEVr0?t=1m26s> (Graves)
   - `video` <https://youtu.be/nqiUFc52g78?t=58m45s> (Graves)
+  - `video` <https://facebook.com/iclr.cc/videos/1713144705381255/> (39:28) (Graves)
   - `video` <https://vimeo.com/240428387#t=1h28m28s> (Vinyals)
   - `post` <http://distill.pub/2016/augmented-rnns/>
   - `post` <https://www.evernote.com/shard/s189/sh/fd165646-b630-48b7-844c-86ad2f07fcda/c9ab960af967ef847097f21d94b0bff7>
@@ -774,6 +785,7 @@ interesting older papers:
 >	"We incorporate a learnt model of error gradients, which means we can update networks without full backpropagation. We show how this can be applied to feed-forward networks which allows every layer to be trained asynchronously, to RNNs which extends the time over which models can remember, and to multi-network systems to allow communication."  
   - `post` <https://deepmind.com/blog/decoupled-neural-networks-using-synthetic-gradients/>
   - `video` <https://youtu.be/tA8nRlBEVr0?t=14m40s> + <https://youtube.com/watch?v=-u32TOPGIbQ> (Graves)
+  - `video` <https://facebook.com/iclr.cc/videos/1713144705381255/> (30:58) (Graves)
   - `video` <https://youtube.com/watch?v=1z_Gv98-mkQ> (Geron)
   - `video` <https://youtube.com/watch?v=qirjknNY1zo> (Raval)
   - `post` <https://iamtrask.github.io/2017/03/21/synthetic-gradients/>
@@ -832,9 +844,11 @@ interesting older papers:
   `continual learning`
 >	"extending Model-Agnostic Meta-Learning to the case of dynamically changing tasks"
   - <https://sites.google.com/view/adaptation-via-metalearning> (demo)
+  - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482/> (30:38) (Abbeel)
 
 #### ["Meta-Learning and Universality: Deep Representations and Gradient Descent can Approximate any Learning Algorithm"](https://arxiv.org/abs/1710.11622) Finn, Levine
   `MAML`
+  - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482/> (20:04) (Abbeel)
 >	"It is particularly important to develop meta-learning algorithms that can generalize well from a manageable number of training tasks, in the sense that it can perform well on new tasks sampled from the same distribution. One idea is to restrict the set of algorithms expressible by the parameterized model. At one extreme we have methods such as RL^2, TCML and one-shot imitation learning, which use generic recurrent architectures and are, in theory, capable of approximating any algorithm that can run on a Turing machine. At the other extreme, we have methods that merely tune hyperparameters over a set of training tasks. There are many possibilities between these two extremes. MAML restricts the underlying algorithm to be policy gradient and only meta-learn an initial set of parameters."  
 
 #### ["Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks"](https://arxiv.org/abs/1703.03400) Finn, Abbeel, Levine
@@ -845,6 +859,7 @@ interesting older papers:
   - <https://sites.google.com/view/maml> (demo)
   - `video` <https://youtu.be/Ko8IBbYjdq8?t=18m51s> (Finn)
   - `video` <https://youtu.be/lYU5nq0dAQQ?t=44m57s> (Levine)
+  - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482/> (18:05) (Abbeel)
   - `video` <https://youtube.com/watch?v=ID150Tl-MMw&t=1h1m22s> + <https://youtube.com/watch?v=ID150Tl-MMw&t=1h9m10s> (Abbeel)
   - `post` <http://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/> (Finn)
   - `code` <https://github.com/cbfinn/maml>
@@ -859,6 +874,8 @@ interesting older papers:
 ----
 #### ["A Simple Neural Attentive Meta-Learner"](https://openreview.net/forum?id=B1DmUzWAW)
   `SNAIL`
+  - <https://sites.google.com/view/snail-iclr-2018/> (demo)
+  - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482/> (16:10) (Abbeel)
 
 #### ["Meta-Learning with Temporal Convolutions"](https://arxiv.org/abs/1707.03141) Mishra, Rohaninejad, Chen, Abbeel
   `TCML`
@@ -875,25 +892,30 @@ interesting older papers:
 >	"How to design algorithms that make use of such prior information?"  
 >	"Key idea: learn a fast RL algorithm that make use of such prior information"  
 >
+>	"RL agent = RNN = generic computation architecture  
+>	- different weights in the RNN means different RL algorithm and prior  
+>	- different activations in the RNN means different current policy  
+>	- meta-train objective can be optimized with existing (slow) RL algorithm"  
+>
 >	"RNN is made to ingest multiple rollouts from many different MDPs and then perform a policy gradient update through the entire temporal span of the RNN. The hope is that the RNN will learn a faster RL algorithm in its memory weights."  
 >	"Suppose L represents an RNN. Let Envk(a) be a function that takes an action, uses it to interact with the MDP representing task k, and returns the next observation o, reward r, and a termination flag d. Then we have:  
 >	xt = [ot−1, at−1, rt−1, dt−1]  
 >	L(ht, xt) = [at, ht+1]  
 >	Envk(at) = [ot, rt, dt]  
 >	To train this RNN, we sample N MDPs from M and obtain k rollouts for each MDP by running the MDP through the RNN as above. We then compute a policy gradient update to move the RNN parameters in a direction which maximizes the returns over the k trials performed for each MDP."  
+  - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482/> (7:31) (Abbeel)
   - `video` <http://www.fields.utoronto.ca/video-archive/2017/02/2267-16530> (19:00) (Abbeel)
   - `video` <https://youtube.com/watch?v=SfCa1HQMkuw&t=1h16m56s> (Schulman)
-  - `video` <https://youtu.be/BskhUBPRrqE?t=6m28s> (Sutskever)
-  - `video` <https://youtu.be/19eNQ1CLt5A?t=7m52s> (Sutskever)
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/RL2-Fast_Reinforcement_Learning_via_Slow_Reinforcement_Learning.md>
+  - `paper` ["Learning to Reinforcement Learn"](#learning-to-reinforcement-learn-wang-et-al) by Wang et al. `summary`
 
 #### ["Learning to Reinforcement Learn"](http://arxiv.org/abs/1611.05763) Wang et al.
 >	"outer episodes (sample a new bandit problem / MDP) and inner episodes (of sampled MDP)"  
 >	"use RNN policy with no state reset between inner episodes for outer POMDP"  
   - `video` <https://youtu.be/Y85Zn50Eczs?t=20m18s> (Botvinick)
-  - `video` <https://youtube.com/watch?v=SfCa1HQMkuw&t=1h16m56s> (Schulman)
   - `post` <https://hackernoon.com/learning-policies-for-learning-policies-meta-reinforcement-learning-rl²-in-tensorflow-b15b592a2ddf> (Juliani)
   - `code` <https://github.com/awjuliani/Meta-RL>
+  - `paper` ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](#rl2-fast-reinforcement-learning-via-slow-reinforcement-learning-duan-schulman-chen-bartlett-sutskever-abbeel) by Duan et al. `summary`
 
 ----
 #### ["Learned Optimizers that Scale and Generalize"](http://arxiv.org/abs/1703.04813) Wichrowska, Maheswaranathan, Hoffman, Colmenarejo, Denil, de Freitas, Sohl-Dickstein
@@ -1072,6 +1094,7 @@ interesting older papers:
 #### ["Optimizing the Latent Space of Generative Networks"](https://arxiv.org/abs/1707.05776) Bojanowski, Joulin, Lopez-Paz, Szlam
   `learning embedding`
   - `post` <https://facebook.com/yann.lecun/posts/10154646915277143>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/BojanowskiJLS17>
 
 #### ["Unsupervised Learning by Predicting Noise"](https://arxiv.org/abs/1704.05310) Bojanowski, Joulin
   `learning embedding`
@@ -1215,6 +1238,7 @@ interesting older papers:
 >	- fast to sample from  
 >	- limited capacity vs MAF"  
   - `video` <https://facebook.com/nipsfoundation/videos/1555553784535855/> (2:17) (Papamakarios)
+  - `post` <http://blog.evjang.com/2018/01/nf2.html>
   - `code` <https://github.com/gpapamak/maf>
 
 #### ["Density Estimation using Real NVP"](http://arxiv.org/abs/1605.08803) Dinh, Sohl-Dickstein, Bengio
@@ -1226,6 +1250,7 @@ interesting older papers:
   - <https://laurent-dinh.github.io/2016/07/12/real-nvp-visualization.html> (demo)
   - `video` <https://channel9.msdn.com/events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-1> (08:19) (Dinh)
   - `video` <https://periscope.tv/hugo_larochelle/1ypKdAVmbEpGW> (Dinh)
+  - `post` <http://blog.evjang.com/2018/01/nf2.html>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.08803>
   - `code` <https://github.com/tensorflow/models/tree/master/research/real_nvp>
   - `code` <https://github.com/taesung89/real-nvp>
@@ -1710,6 +1735,7 @@ interesting older papers:
   - `video` <https://vimeo.com/235922311> (Bellemare)
   - `video` <https://vimeo.com/237274251> (Bellemare)
   - `video` <https://youtu.be/bsuvM1jO-4w?t=4m45s> (Mnih)
+  - `video` <https://youtu.be/5REJGbNu-Kk?t=11m45s> (Grinchuk) `in russian`
   - `post` <https://mtomassoli.github.io/2017/12/08/distributional_rl/>
   - `post` <https://flyyufelix.github.io/2017/10/24/distributional-bellman.html>
   - `code` <https://github.com/flyyufelix/C51-DDQN-Keras>
@@ -1743,6 +1769,7 @@ interesting older papers:
   `Q(σ)` `value-based`
 >	"Currently, there are a multitude of algorithms that can be used to perform TD control, including Sarsa, Q-learning, and Expected Sarsa. These methods are often studied in the one-step case, but they can be extended across multiple time steps to achieve better performance. Each of these algorithms is seemingly distinct, and no one dominates the others for all problems. In this paper, we study a new multi-step action-value algorithm called Q(σ) which unifies and generalizes these existing algorithms, while subsuming them as special cases. A new parameter, σ, is introduced to allow the degree of sampling performed by the algorithm at each step during its backup to be continuously varied, with Sarsa existing at one extreme (full sampling), and Expected Sarsa existing at the other (pure expectation)."  
   - `video` <https://youtube.com/watch?v=MidZJ-oCpRk> (De Asis)
+  - `video` <https://youtu.be/dZmCOIJ7Cyc?t=7m3s> (Bobyrev) `in russian`
 
 #### ["Convergent Tree-Backup and Retrace with Function Approximation"](https://arxiv.org/abs/1705.09322) Touati, Bacon, Precup, Vincent
   `Retrace` `value-based` `off-policy evaluation`
@@ -1757,6 +1784,7 @@ interesting older papers:
 >	"As a corollary, we prove the convergence of Watkins’ Q(λ), which was an open problem since 1989."  
   - `video` <https://youtu.be/WuFMrk3ZbkE?t=35m30s> (Bellemare)
   - `video` <https://youtube.com/watch?v=8hK0NnG_DhY&t=25m27s> (Brunskill)
+  - `video` <https://youtu.be/ggPGtMSoVN8?t=51m10s> (Petrenko) `in russian`
 
 #### ["Q(λ) with Off-Policy Corrections"](http://arxiv.org/abs/1602.04951) Harutyunyan, Bellemare, Stepleton, Munos
   `Q(λ)` `value-based` `off-policy evaluation`
@@ -1786,6 +1814,7 @@ interesting older papers:
   `soft Q-learning` `policy gradient` `maximum entropy policy`
 >	"Q-learning methods can be effective and sample-efficient when they work, however, it is not well-understood why they work, since empirically, the Q-values they estimate are very inaccurate. A partial explanation may be that Q-learning methods are secretly implementing policy gradient updates. We show that there is a precise equivalence between Q-learning and policy gradient methods in the setting of entropy-regularized reinforcement learning, that "soft" (entropy-regularized) Q-learning is exactly equivalent to a policy gradient method."  
   - `video` <https://vimeo.com/240428644#t=1h16m18s> (Levine)
+  - `video` <https://youtube.com/watch?v=gmWmQZvg6hA> (Konobeev) `in russian`
   - `post` <http://bair.berkeley.edu/blog/2017/10/06/soft-q-learning/>
 
 #### ["Reinforcement Learning with Deep Energy-Based Policies"](https://arxiv.org/abs/1702.08165) Haarnoja, Tang, Abbeel, Levine
@@ -1860,6 +1889,7 @@ interesting older papers:
 >	"PPO alternates between sampling data through interaction with the environment, and optimizing a "surrogate" objective function using stochastic gradient ascent. Whereas standard policy gradient methods perform one gradient update per data sample, we propose a novel objective function that enables multiple epochs of minibatch updates."
   - `post` <https://blog.openai.com/openai-baselines-ppo/> (demo)
   - `post` <https://learningai.io/projects/2017/07/28/ai-gym-workout.html>
+  - `notes` <https://towardsdatascience.com/introduction-to-various-reinforcement-learning-algorithms-part-ii-trpo-ppo-87f2c5919bb9>
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Proximal_Policy_Optimization_Algorithms.md>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/pposgd>
   - `code` <https://github.com/ikostrikov/pytorch-a2c-ppo-acktr>
@@ -1937,6 +1967,7 @@ interesting older papers:
 >	"can be understood as REINFORCE with state-action-dependent baseline with bias correction term instead of unbiased state-dependent baseline"  
   - `video` <https://facebook.com/iclr.cc/videos/1712224178806641/> (1:36:47) (Gu)
   - `video` <https://youtu.be/M6nfipCxQBc?t=16m11s> (Lillicrap)
+  - `video` <https://youtu.be/ggPGtMSoVN8?t=8m28s> (Petrenko) `in russian`
   - `notes` <http://www.alexirpan.com/rl-derivations/#q-prop>
   - `code` <https://github.com/shaneshixiang/rllabplusplus>
 
@@ -1951,6 +1982,7 @@ interesting older papers:
 >	"Policy gradient methods are restricted to continuous domains or to very specific tasks such as playing Go. The existing variants applicable to both continuous and discrete domains, such as the on-policy A3C, are sample inefficient."  
 >	"ACER capitalizes on recent advances in deep neural networks, variance reduction techniques, the off-policy Retrace algorithm and parallel training of RL agents. Yet, crucially, its success hinges on innovations advanced in this paper: truncated importance sampling with bias correction, stochastic dueling network architectures, and efficient trust region policy optimization."  
 >	"On the theoretical front, the paper proves that the Retrace operator can be rewritten from our proposed truncated importance sampling with bias correction technique."  
+  - `video` <https://youtu.be/ggPGtMSoVN8?t=1h9m45s> (Petrenko) `in russian`
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FWangBHMMKF16>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/acer>
   - `code` <https://github.com/hercky/ACER_tf>
@@ -2038,6 +2070,7 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=6fKG4wJ7uBk> (Baudis)
   - `video` <https://youtube.com/watch?v=XuzIqE2IshY> (Kington)
   - `video` <https://youtube.com/watch?v=vC66XFoN4DE> (Raval)
+  - `video` <https://youtu.be/Lz5_xFGt2hA?t=3m11s> (Grinchuk) `in russian`
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
   - `post` <http://inference.vc/alphago-zero-policy-improvement-and-vector-fields/>
   - `post` <http://tim.hibal.org/blog/alpha-zero-how-and-why-it-works/>
@@ -2186,6 +2219,8 @@ interesting older papers:
 >	"Our results show it can be trained to accurately simulate the physical trajectories of dozens of objects over thousands of time steps, estimate abstract quantities such as energy, and generalize automatically to systems with different numbers and configurations of objects and relations."  
 >	"Our interaction network implementation is the first general-purpose, learnable physics engine, and a powerful general framework for reasoning about object and relations in a wide variety of complex real-world domains."  
 >	"The interaction network may also serve as a powerful model for model-predictive control inputting active control signals as external effects – because it is differentiable, it naturally supports gradient-based planning."  
+>	"Graph based framework for dynamic systems which is able to simulate the physical trajectories of n-body, bouncing ball, and non-rigid string systems accurately over thousands of time steps, after training only on single step predictions."  
+  - `video` <https://youtube.com/watch?v=zsvYr5tyj9M> (Erzat) `in russian`
   - `notes` <https://blog.acolyer.org/2017/01/02/interaction-networks-for-learning-about-objects-relations-and-physics/>
   - `code` <https://github.com/jaesik817/Interaction-networks_tensorflow>
   - `code` <https://github.com/higgsfield/interaction_network_pytorch>
@@ -2226,6 +2261,7 @@ interesting older papers:
 >	"The optimal policy can be significantly affected by the noise present in the state transitions. This is illustrated by the drunken spider story, in which a spider has two possible paths to go home: either by crossing the bridge or by walking around the lake. In the absence of noise, the bridge option is prefered since it is shorter. However, after heavily drinking alcohol, the spider’s movements may randomly deviate left or right. Since the bridge is narrow, and spiders do not like swimming, the prefered trajectory is now to walk around the lake. The previous example shows how noise can significantly affect optimal control. For example, the optimal policy may change depending on whether the level of noise is high or low. Therefore, we expect to obtain significant improvements in model-based reinforcement learning by capturing with high accuracy any noise patterns present in the state transition data."  
   - `post` <https://medium.com/towards-data-science/bayesian-neural-networks-with-random-inputs-for-model-based-reinforcement-learning-36606a9399b4> (Hernandez-Lobato)
   - `video` <https://youtube.com/watch?v=0H3EkUPENSY> (Hernandez-Lobato)
+  - `slides` <https://yadi.sk/i/NCrM4cEb3NhQux>
   - `code` <https://github.com/siemens/policy_search_bb-alpha>
 
 #### ["Recurrent Environment Simulators"](https://arxiv.org/abs/1704.02254) Chiappa, Racaniere, Wierstra, Mohamed
@@ -2414,9 +2450,11 @@ hieves."
 
 #### ["Hindsight Experience Replay"](https://arxiv.org/abs/1707.01495) Andrychowicz, Wolski, Ray, Schneider, Fong, Welinder, McGrew, Tobin, Abbeel, Zaremba
   `exploration guided by learning progress`
+>	"Get reward signal from any experience by simply assuming the goal equals whatever happened."  
 >	"HER may be seen as a form of implicit curriculum as the goals used for replay naturally shift from ones which are simple to achieve even by a random agent to more difficult ones. However, in contrast to explicit curriculum, HER does not require having any control over the distribution of initial environment states."  
 >	"Not only does HER learn with extremely sparse rewards, in our experiments it also performs better with sparse rewards than with shaped ones. These results are indicative of the practical challenges with reward shaping, and that shaped rewards would often constitute a compromise on the metric we truly care about (such as binary success/failure)."  
   - <https://sites.google.com/site/hindsightexperiencereplay/> (demo)
+  - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482/> (38:00) (Abbeel)
   - `video` <https://youtu.be/BCzFs9Xb9_o?t=21m2s> (Sutskever)
   - `video` <https://youtu.be/TERCdog1ddE?t=50m45s> (Abbeel)
   - `paper` ["Universal Value Function Approximators"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#schaul-horgan-gregor-silver---universal-value-function-approximators) by Schaul et al. `summary`
@@ -2488,7 +2526,9 @@ hieves."
 #### ["Learning with Options that Terminate Off-Policy"](https://arxiv.org/abs/1711.03817) Harutyunyan, Vrancx, Bacon, Precup, Nowe
 
 #### ["Meta Learning Shared Hierarchies"](https://arxiv.org/abs/1710.09767) Frans, Ho, Chen, Abbeel, Schulman
+>	"Meta-learning formulation of hierarchical RL: Agent has to solve a distribution of related long-horizon tasks, with the goal of learning new tasks in the distribution quickly."  
   - `post` <https://blog.openai.com/learning-a-hierarchy/> (demo)
+  - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482/> (21:22) (Abbeel)
   - `video` <https://youtu.be/BCzFs9Xb9_o?t=32m35s> (Sutskever)
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Meta_Learning_Shared_Hierarchies.md>
   - `code` <https://github.com/openai/mlsh>
@@ -2554,7 +2594,9 @@ hieves."
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Probabilistic_Inference_for_Determining_Options_in_Reinforcement_Learning.md>
 
 #### ["Strategic Attentive Writer for Learning Macro-Actions"](http://arxiv.org/abs/1606.04695) Vezhnevets, Mnih, Agapiou, Osindero, Graves, Vinyals, Kavukcuoglu
+  `STRAW`
   - `video` <https://youtube.com/watch?v=niMOdSu3yio> (demo)
+  - `video` <http://videolectures.net/deeplearning2016_mohamed_generative_models/> (1:13:55) (Mohamed)
   - `notes` <https://theberkeleyview.wordpress.com/2017/01/03/strategic-attentive-writer-for-learning-macro-actions/>
   - `notes` <https://blog.acolyer.org/2017/01/06/strategic-attentive-writer-for-learning-macro-actions/>
 
@@ -2620,6 +2662,7 @@ hieves."
   `successor features`
 >	"application of deep successor reinforcement learning"  
   - `video` <https://youtube.com/watch?v=947bSUtuSQ0> + <https://youtube.com/watch?v=947bSUtuSQ0> (demo)
+  - `video` <https://facebook.com/iclr.cc/videos/1712224178806641/> (54:12) (Dosovitskiy)
   - `video` <https://youtube.com/watch?v=buUF5F8UCH8> (Lamb, Ozair)
   - `video` <https://youtube.com/watch?v=Q0ldKJbAwR8> (Dosovitskiy) `in russian`
   - `video` <https://yadi.sk/i/pMdw-_uI3Gke7Z> (1:02:03) (Shvechikov) `in russian`
@@ -2722,6 +2765,7 @@ hieves."
   `imitation learning` `meta-learning`
   - `video` <http://bit.ly/one-shot-imitation> (demo)
   - `post` <https://blog.openai.com/robots-that-learn/>
+  - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482/> (25:43) (Abbeel)
   - `video` <http://videolectures.net/deeplearning2017_de_freitas_deep_control/> (1:03:10) (de Freitas)
   - `notes` <https://medium.com/incogito/openais-new-approach-for-one-shot-imitation-learning-a-sneak-peak-into-the-future-of-ai-efcdddca8e2e>
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/One-Shot_Imitation_Learning.md>
@@ -3091,8 +3135,10 @@ hieves."
 
 #### ["Programmable Agents"](https://arxiv.org/abs/1706.06383) Denil, Colmenarejo, Cabi, Saxton, Freitas
   `goal-driven language learning`
+>	"Agents that execute declarative programs and can generalize to a wide variety of zero-shot semantic tasks."  
   - `video` <https://youtube.com/playlist?list=PLs1LSEoK_daRDnPUB2u7VAXSonlNU7IcV> (demo)
   - `video` <http://videolectures.net/deeplearning2017_de_freitas_deep_control/> (32:57) (de Freitas)
+  - `video` <https://youtu.be/zsvYr5tyj9M?t=50m27s> (Erzat) `in russian`
   - `code` <https://github.com/jaesik817/programmable-agents_tensorflow>
 
 #### ["Gated-Attention Architectures for Task-Oriented Language Grounding"](https://arxiv.org/abs/1706.07230) Chaplot, Sathyendra, Pasumarthi, Rajagopal, Salakhutdinov

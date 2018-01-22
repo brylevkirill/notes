@@ -168,6 +168,7 @@
   ["Bayesian Reasoning and Machine Learning"](http://web4.cs.ucl.ac.uk/staff/D.Barber/pmwiki/pmwiki.php?n=Brml.Online) by David Barber  
   ["Probabilistic Graphical Models: Principles and Techniques"](https://dropbox.com/s/cc3mafx3wp0ad1t/Daphne%20Koller%20and%20Nir%20Friedman%20-%20Probabilistic%20Graphical%20Models%20-%20Principles%20and%20Techniques.pdf) by Daphne Koller and Nir Friedman  
   ["Graphical Models, Exponential Families, and Variational Inference"](https://people.eecs.berkeley.edu/~wainwrig/Papers/WaiJor08_FTML.pdf) by Martin Wainwright and Michael Jordan  
+  ["Elements of Causal Inference"](https://mitpress.mit.edu/books/elements-causal-inference) by Jonas Peters, Dominik Janzing, Bernhard Scholkopf  
   ["Causality: Models, Reasoning, and Inference"](https://dropbox.com/s/m2m1935e6tohii9/Pearl%20-%20Causality%3A%20Models%2C%20Reasoning%2C%20and%20Inference.pdf) by Judea Pearl  
   ["Probability Theory: The Logic of Science"](https://dropbox.com/s/pt5tpm9i5wofbl5/Jaynes%20-%20Probability%20Theory%20-%20The%20Logic%20of%20Science.pdf) by E.T. Jaynes  
 
@@ -611,8 +612,8 @@
   ["Theoretical Impediments to Machine Learning"](http://web.cs.ucla.edu/~kaoru/theoretical-impediments.pdf) by Judea Pearl `paper`  
   ["Theoretical Impediments to Machine Learning with Seven Sparks from the Causal Revolution"](https://arxiv.org/abs/1801.04016) by Judea Pearl `paper`  
 
-  [conversation](https://www.edge.org/conversation/judea_pearl-engines-of-evidence) with Judea Pearl `video`  
-  overview of [role](https://youtube.com/watch?v=uyZOcUDhIbY&t=20m5s) and [applications](https://youtube.com/watch?v=uyZOcUDhIbY&t=58m) in machine learning by Michael I. Jordan `video`  
+  [overview](https://www.edge.org/conversation/judea_pearl-engines-of-evidence) by Judea Pearl `video`  
+  overview of [role](https://youtube.com/watch?v=uyZOcUDhIbY&t=20m5s) and [applications](https://youtube.com/watch?v=uyZOcUDhIbY&t=58m) by Michael I. Jordan `video`  
 
   ["Causality in Machine Learning"](http://unofficialgoogledatascience.com/2017/01/causality-in-machine-learning.html) by Muralidharan et al.  
   ["Latent Variables and Model Mis-specification"](https://jsteinhardt.wordpress.com/2017/01/10/latent-variables-and-model-mis-specification/) by Jacob Steinhardt  
@@ -637,8 +638,11 @@
 
   ["Causality"](http://www.homepages.ucl.ac.uk/~ucgtrbd/papers/causality.pdf) by Ricardo Silva `paper`  
   ["Introduction to Causal Inference"](http://jmlr.org/papers/volume11/spirtes10a/spirtes10a.pdf) by Peter Spirtes `paper`  
+  ["Graphical Causal Models"](http://www.stat.cmu.edu/~cshalizi/uADA/12/lectures/ch22.pdf) by Cosma Shalizi `paper`  
 
-  ["The Art and Science of Cause and Effect"](http://bayes.cs.ucla.edu/BOOK-2K/causality2-epilogue.pdf) by Judea Pearl `book`
+  ["The Art and Science of Cause and Effect"](http://bayes.cs.ucla.edu/BOOK-2K/causality2-epilogue.pdf) by Judea Pearl `paper`
+
+  ["Elements of Causal Inference"](https://mitpress.mit.edu/books/elements-causal-inference) book by Jonas Peters, Dominik Janzing, Bernhard Scholkopf
 
 ----
 

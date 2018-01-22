@@ -20,10 +20,6 @@
 ---
 ### overview
 
-  Intelligence is predicting what can be predicted and acting based upon prediction errors. ([definition](https://blog.piekniewski.info/2017/04/13/ai-confuses-intelligent/) by Filip Piekniewski)
-
-----
-
   - Juergen Schmidhuber  
 	["Compression Progress: The Algorithmic Principle Behind Curiosity and Creativity"](https://youtube.com/watch?v=h7F5sCLIbKQ) `video`  
 	["Formal Theory of Fun & Creativity"](http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/) `video`  
@@ -34,9 +30,6 @@
   - Yann LeCun  
 	["How Does The Brain Learn so Much so Quickly?"](https://youtube.com/watch?v=cWzi38-vDbE) `video`  
 
-  - Yoshua Bengio  
-	["Deep Learning and General AI"](https://youtube.com/watch?v=exhdfIPzj24) `video`  
-
   - Richard Sutton  
 	["The Future of Artificial Intelligence Belongs to Search and Learning"](http://www.fields.utoronto.ca/talks/advances-reinforcement-learning) `video`  
 
@@ -45,9 +38,6 @@
 
   - Joshua Tenenbaum  
 	["Building Machines That Learn like Humans"](https://youtube.com/watch?v=quPN7Hpk014) `video`  
-
-  - Demis Hassabis  
-	["Towards General Artificial Intelligence"](https://youtube.com/watch?v=vQXAsdMa_8A) `video`  
 
 ----
 
@@ -65,7 +55,9 @@
 ----
 
   [introductory course](https://youtube.com/channel/UCHBzJsIcRIVuzzHVYabikTQ/videos) from UC Berkeley `video`  
-  [introductory notes](http://frnsys.com/ai_notes/) by Francis Tseng  
+  [introductory course](https://agi.mit.edu) from MIT `video`  
+
+  [introductory notes](http://frnsys.com/ai_notes/) by Francis Tseng
 
 
 
@@ -73,6 +65,8 @@
 ### benchmarks
 
   ["Tests of Machine Intelligence"](http://arxiv.org/abs/0712.3825) by Legg and Hutter `paper`
+
+  ["Intelligence Confuses The Intelligent"](https://blog.piekniewski.info/2017/04/13/ai-confuses-intelligent/) by Filip Piekniewski
 
 ----
 
