@@ -100,7 +100,8 @@
 	["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper` `summary`  
 	["Combining Online and Offline Knowledge in UCT"](http://machinelearning.org/proceedings/icml2007/papers/387.pdf) by Gelly and Silver `paper` ([talk](https://youtube.com/watch?v=Bm7zah_LrmE) `video`)  
 
-	[AlphaGo Zero overview](https://youtu.be/A3ekFcZ3KNw?t=10m50s) by David Silver `video`
+	[AlphaGo Zero overview](https://youtu.be/A3ekFcZ3KNw?t=10m50s) by David Silver `video`  
+	[AlphaGo Zero overview](https://youtu.be/DXNqYSNvnjA?t=16m41s) by Demis Hassabis `video`  
 
 	[AlphaGo overview](https://youtu.be/i3lEG6aRGm8?t=16m) by Demis Hassabis `video`  
 	[AlphaGo overview](https://youtu.be/4D5yGiYe8p4) by David Silver `video`  
@@ -170,7 +171,8 @@
 	["Bootstrapping from Game Tree Search"](#bootstrapping-from-game-tree-search-veness-silver-uther-blair) by Veness et al. `paper` `summary`  
 	["KnightCap: A Chess Program that Learns by Combining TD(lambda) with Game-tree Search"](https://arxiv.org/abs/cs/9901002) by Baxter et al. `paper`  
 
-	[AlphaZero overview](https://youtu.be/A3ekFcZ3KNw?t=23m28s) by David Silver `video`
+	[AlphaZero overview](https://youtu.be/A3ekFcZ3KNw?t=23m28s) by David Silver `video`  
+	[AlphaZero overview](https://youtu.be/DXNqYSNvnjA?t=21m24s) by Demis Hassabis `video`  
 
 	AlphaZero vs Stockfish match:
 
@@ -320,7 +322,8 @@
 
   ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1701.07274) by Yuxi Li `paper` ([slides](https://dropbox.com/s/kzkc8t61t7tz9eu/AISeminar.pdf))
 
-  [course](http://rll.berkeley.edu/deeprlcourse/) by Sergey Levine, John Schulman and Chelsea Finn `video`  
+  [course](http://rll.berkeley.edu/deeprlcourse) by Sergey Levine, John Schulman and Chelsea Finn ([videos](https://youtube.com/playlist?list=PLkFD6_40KJIznC9CDbVTjAF2oyt8_VAe3))  
+  [course](http://katefvision.github.io) by Ruslan Salakhutdinov and Katerina Fragkiadaki ([videos](https://youtube.com/playlist?list=PLpIxOj-HnDsNPFdu2UqCu2McJKHs-eWXv))  
 
   [Deep RL Bootcamp at Berkeley](https://sites.google.com/view/deep-rl-bootcamp/lectures) `video`  
 
@@ -642,11 +645,14 @@
 
 	[Artificial Curiosity and Creativity](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) by Schmidhuber  
 	["Automated Curriculum Learning for Neural Networks"](#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper` `summary`  
+	["Exploration in Model-based Reinforcement Learning by Empirically Estimating Learning Progress"](https://papers.nips.cc/paper/4642-exploration-in-model-based-reinforcement-learning-by-empirically-estimating-learning-progress) by Lopes et al. `paper`  
 
 	[interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---learning-progress-motivation)
 
   - *predictive familiarity motivation*  
 	reward for situations which are very predictable and thus familiar  
+
+	["Information Theoretically Aided Reinforcement Learning for Embodied Agents"](https://arxiv.org/abs/1605.09735) by Montufar et al. `paper`
 
 
   **competence-based models**:  
@@ -1001,7 +1007,11 @@
 ----
 #### bayesian reinforcement learning
 
-  **policy search in belief-augmented MDP**
+  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
+
+
+----
+#### bayesian reinforcement learning - policy search in belief-augmented MDP
 
   BRL agent aims to maximise expected sum of future rewards obtained when interacting with unknown Markov Decision Process while using some prior knowledge.  
   Belief-augmented Markov Decision Process is an MDP obtained when considering augmented states made of concatenation of actual state and posterior beliefs.  
@@ -1011,6 +1021,7 @@
   Under this framework actions that yield highest instant reward and actions that maximise gathering of knowledge about environment are often very different.  
   BAMDP framework leads to rigorous definition of optimal solution based on finding policy that reaches optimal balance between exploration and exploitation.  
 
+----
 
   [overview](https://youtu.be/sGuiWX07sKw?t=1h8m44s) by David Silver `video`  
   ["Bandits, Active Learning, Bayesian RL and Global Optimization"](https://youtu.be/5rev-zVx1Ps?t=58m45s) by Marc Toussaint `video`  
@@ -1018,43 +1029,44 @@
   ["Partially Observable Markov Decision Process in Reinforcement Learning"](https://yadi.sk/i/pMdw-_uI3Gke7Z) by Pavel Shvechikov `video` `in russian`  
   ["Planning in Partially Observable Markov Decision Process"](https://yadi.sk/i/lOAUu7o13JBHFz) (55:08) by Pavel Shvechikov `video` `in russian`  
 
+----
+
   ["Bayesian Reinforcement Learning: A Survey"](https://arxiv.org/abs/1609.04436) by Ghavamzadeh et al. `paper`  
   ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](#efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search-guez-silver-dayan) by Guez et al. `paper` `summary`  
   ["Monte-Carlo Planning in Large POMDPs"](https://papers.nips.cc/paper/4031-monte-carlo-planning-in-large-pomdps) by Silver et al. `paper`
 	([overview](https://yadi.sk/i/lOAUu7o13JBHFz) (1:39:35) by Pavel Shvechikov `video` `in russian`, [demo](https://youtube.com/watch?v=fXuOeNM_yEk) `video`)  
   ["Approximate Bayes Optimal Policy Search using Neural Networks"](#approximate-bayes-optimal-policy-search-using-neural-networks-castronovo-francois-lavet-fonteneau-ernst-couetoux) by Castronovo et al. `paper` `summary`  
 
-----
 
-  **bayesian policy search in variational MDP**
+----
+#### bayesian reinforcement learning - bayesian policy search in variational MDP
 
   p(z) = N(z|0,I)  
   p(a1..T|z) = Un(a)  
-  p(R|a1..T) ~ exp(v*R(a,x))  
+  p(R|a1..T) ~ exp(v\*R(a,x))  
   q(z|x) = N(z|μφ(x),Σφ(x))  
   q(a|z) = Cat(a|Πθ(z))  
-  Fπ(θ) = E q(a,z|x) [R(a|x)] - α*DKL[qθ(z|x)||p(z|x)] + α*H[πθ(a|z)]  
+  Fπ(θ) = E q(a,z|x) [R(a|x)] - α\*DKL[qθ(z|x)||p(z|x)] + α\*H[πθ(a|z)]  
 
+----
 
   ["Probabilistic Policy Learning"](https://youtu.be/JrO5fSskISY?t=1h19m29s) by Shakir Mohamed `video`  
   ["Bayesian Policy Search"](https://youtu.be/AggqBRdz6CQ?t=9m53s) by Shakir Mohamed `video`  
   ["Bayesian Inference for Reinforcement Learning"](https://youtube.com/watch?v=KZd-jkmeIcU) by Sergey Bartunov `video` `in russian`
 	([slides](https://drive.google.com/drive/folders/0B2zoFVYw1rN3N0RUNXE1WnNObTQ) `in english`)  
 
+----
+
   ["Reinforced Variational Inference"](#reinforced-variational-inference-weber-heess-eslami-schulman-wingate-silver) by Weber et al. `paper` `summary`  
   ["Reinforcement Learning as Variational Inference: Two Recent Approaches"](http://people.ee.duke.edu/~lcarin/Rohith8.11.2017.pdf) by Rohith Kuditipudi `slides`  
 
-----
 
-  ["Modeling Agents with Probabilistic Programs"](http://agentmodels.org) by Evans et al.
+----
+#### bayesian reinforcement learning - general reinforcement learning
 
   [AIXI](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#aixi)  *(bayesian optimal general reinforcement learning agent)*  
   [General Reinforcement Learning Agent Zoo](http://aslanides.io/aixijs/) by John Aslanides
 	([demo](http://aslanides.io/aixijs/demo.html), [code](https://github.com/aslanides/aixijs), [paper](https://arxiv.org/abs/1705.07615))   
-
-----
-
-  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
 
 
 
@@ -1543,11 +1555,13 @@ interesting recent papers:
 
   - `post` <https://deepmind.com/blog/alphago-zero-learning-scratch/>
   - `video` <https://youtu.be/A3ekFcZ3KNw?t=10m50s> (Silver)
+  - `video` <https://youtu.be/DXNqYSNvnjA?t=16m41s> (Hassabis)
   - `video` <https://youtube.com/watch?v=6fKG4wJ7uBk> (Baudis)
   - `video` <https://youtube.com/watch?v=XuzIqE2IshY> (Kington)
   - `video` <https://youtube.com/watch?v=vC66XFoN4DE> (Raval)
   - `video` <https://youtu.be/Lz5_xFGt2hA?t=3m11s> (Grinchuk) `in russian`
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
+  - `video` <https://youtu.be/zHjE07NBA_o?t=1h10m24s> (Kozlov) `in russian`
   - `post` <http://inference.vc/alphago-zero-policy-improvement-and-vector-fields/>
   - `post` <http://tim.hibal.org/blog/alpha-zero-how-and-why-it-works/>
   - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
@@ -1568,6 +1582,7 @@ interesting recent papers:
   - `video` <http://youtube.com/watch?v=LX8Knl0g0LE> (Huang)
   - `video` <http://youtube.com/watch?v=UMm0XaCFTJQ> (Sutton, Szepesvari, Bowling, Hayward, Muller)
   - `video` <https://youtu.be/WM4HC720Cms?t=1h18m21s> (Nikolenko) `in russian`
+  - `video` <https://youtube.com/watch?v=zHjE07NBA_o> (Kozlov) `in russian`
   - `notes` <https://github.com/Rochester-NRT/RocAlphaGo/wiki>
 
 
@@ -1617,6 +1632,7 @@ interesting recent papers:
 
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games> (demo)
   - `video` <https://youtu.be/A3ekFcZ3KNw?t=23m28s> (Silver)
+  - `video` <https://youtu.be/DXNqYSNvnjA?t=21m24s> (Hassabis)
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
   - `notes` <https://blog.acolyer.org/2018/01/10/mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm/>
 
@@ -2642,6 +2658,7 @@ interesting recent papers:
   - `code` <https://github.com/openai/baselines/tree/master/baselines/a2c>
   - `code` <https://github.com/reinforceio/tensorforce/blob/master/tensorforce/models/dqn_nstep_model.py>
   - `code` <https://github.com/ikostrikov/pytorch-a3c>
+  - `code` <https://github.com/dgriff777/a3c_continuous>
 
 
 #### ["Trust Region Policy Optimization"](http://arxiv.org/abs/1502.05477) Schulman, Levine, Moritz, Jordan, Abbeel
@@ -2744,6 +2761,7 @@ interesting recent papers:
   - `video` <https://youtu.be/rO7Dx8pSJQw?t=50m> (Schulman)
   - `video` <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724> (Abbeel)
   - `video` <https://youtu.be/mrgJ53TIcQc?t=1h10m31s> (Seleznev) `in russian`
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1510.09142>
   - `post` <https://bayesgroup.github.io/sufficient-statistics/posts/learning-continuous-control-policies-by-stochastic-value-gradients/> `in russian`
 
 

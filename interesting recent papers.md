@@ -160,6 +160,7 @@ interesting older papers:
 >	"selu(x) = λx for x>0 and selu(x) = λ(αe^x − α) for x≤0, where α≈1.6733 and λ≈1.0507"  
   - `video` <https://youtube.com/watch?v=h6eQrkkU9SA> (Hochreiter)
   - `video` <https://facebook.com/nipsfoundation/videos/1555553784535855/> (47:04) (Klambauer)
+  - `video` <https://youtube.com/watch?v=gH-KWepKSNs> (Klambauer)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1706.02515>
   - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/self-normalizing-neural-networks/> `in russian`
   - `code` <http://github.com/bioinf-jku/SNNs>
@@ -332,6 +333,7 @@ interesting older papers:
   `sampling` `posterior approximation`
 >	"We present a general-purpose method to train Markov chain Monte Carlo kernels, parameterized by deep neural networks, that converge and mix quickly to their target distribution. Our method generalizes Hamiltonian Monte Carlo and is trained to maximize expected squared jumped distance, a proxy for mixing speed. We demonstrate large empirical gains on a collection of simple but challenging distributions, for instance achieving a 49x improvement in effective sample size in one case, and mixing when standard HMC makes no measurable progress in a second."  
 >	"Hamiltonian Monte Carlo + Real NVP = trainable MCMC sampler that generalizes, and far outperforms, HMC."  
+  - `notes` <https://colindcarroll.com/2018/01/20/a-summary-of-generalizing-hamiltonian-monte-carlo-with-neural-networks/>
   - `code` <https://github.com/brain-research/l2hmc>
 
 ----
@@ -569,6 +571,7 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=PQrlOjj8gAc> (Wayne)
   - `video` <https://youtu.be/otRoAQtc5Dk?t=59m56s> (Polykovskiy)
   - `video` <https://youtube.com/watch?v=r5XKzjTFCZQ> (Raval)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=10.1038/nature20101>
   - `code` <https://github.com/deepmind/dnc>
   - `code` <https://github.com/ixaxaar/pytorch-dnc>
   - `code` <https://github.com/Mostafa-Samir/DNC-tensorflow>
@@ -645,6 +648,7 @@ interesting older papers:
 >	"Memory was given a 2D structure in order to resemble a spatial map to address specific problems such as 2D or 3D navigation."  
 >	"Size and computational cost doesn't grow with time horizon of environment."  
   - `slides` <http://www.cs.cmu.edu/~rsalakhu/NIPS2017_StructureMemoryForDeepRL.pdf>
+  - `video` <https://youtu.be/x_kK4Pc4qow?t=18m3s> (Salakhutdinov)
   - `video` <https://yadi.sk/i/pMdw-_uI3Gke7Z> (Shvechikov) `in russian`
 
 ----
@@ -932,6 +936,7 @@ interesting older papers:
   - `video` <https://youtu.be/SAcHyzMdbXc?t=10m24s> (de Freitas)
   - `video` <https://youtu.be/x1kf4Zojtb0?t=1h4m53s> (de Freitas)
   - `video` <http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/> (27:49) (de Freitas)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.04474>
   - `notes` <https://theneuralperspective.com/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>
   - `notes` <https://blog.acolyer.org/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>
   - `post` <https://hackernoon.com/learning-to-learn-by-gradient-descent-by-gradient-descent-4da2273d64f2>
@@ -985,7 +990,8 @@ interesting older papers:
 >	"To illustrate the advantages of this approach we incorporate it into a variational autoencoder and apply the resulting model to the task of generative few-shot learning. The intuition behind this architecture is that the memory module can pick a relevant template from memory and the continuous part of the model can concentrate on modeling remaining variations. We demonstrate empirically that our model is able to identify and access the relevant memory contents even with hundreds of unseen Omniglot characters in memory."  
 
 #### ["Fast Adaptation in Generative Models with Generative Matching Networks"](http://arxiv.org/abs/1612.02192) Bartunov, Vetrov
-  - `video` <https://youtu.be/XpIDCzwNe78> (Bartunov) ([slides](https://bayesgroup.github.io/bmml_sem/2016/bartunov-oneshot.pdf))
+  - `video` <https://youtube.com/watch?v=2CHdHmhPq5E> (Bartunov)
+  - `video` <https://youtube.com/watch?v=XpIDCzwNe78> (Bartunov) ([slides](https://bayesgroup.github.io/bmml_sem/2016/bartunov-oneshot.pdf))
   - `code` <http://github.com/sbos/gmn>
 
 #### ["Towards a Neural Statistician"](http://arxiv.org/abs/1606.02185) Edwards, Storkey
@@ -1107,6 +1113,7 @@ interesting older papers:
   - `notes` <https://medium.com/towards-data-science/facebook-research-just-published-an-awesome-paper-on-learning-hierarchical-representations-34e3d829ede7>
   - `notes` <https://medium.com/@hol_io/word-embeddings-exploration-explanation-and-exploitation-with-code-in-python-5dac99d5d795>
   - `post` <https://rare-technologies.com/implementing-poincare-embeddings/>
+  - `code` <https://github.com/facebookresearch/poincare-embeddings>
   - `code` <https://github.com/TatsuyaShirakawa/poincare-embedding>
 
 
@@ -1351,9 +1358,11 @@ interesting older papers:
 >	"Our originality is a focus on continuous distributions with low-dimensional support and the idea to parametrize f in order to obtain a fast algorithm."  
   - `video` <https://youtube.com/watch?v=DfJeaa--xO0&t=26m27s> (Bottou)
   - `video` <https://facebook.com/iclr.cc/videos/1710657292296663/> (1:30:02) (Arjowski)
+  - `video` <https://youtube.com/watch?v=OdsXPcBfO-c> (Arjowski)
   - `post` <http://www.alexirpan.com/2017/02/22/wasserstein-gan.html>
   - `post` <https://paper.dropbox.com/doc/Wasserstein-GAN-GvU0p2V9ThzdwY3BbhoP7>
   - `post` <http://wiseodd.github.io/techblog/2017/02/04/wasserstein-gan/>
+  - `post` <https://vincentherrmann.github.io/blog/wasserstein/>
   - `notes` <https://casmls.github.io/general/2017/02/23/modified-gans.html>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1701.07875>
   - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/wasserstein-generative-adversarial-networks/> `in russian`
@@ -1424,30 +1433,13 @@ interesting older papers:
   - `video` <https://youtu.be/xfyK03MEZ9Q?t=5h21m15s> (Bagnell)
 
 ----
-#### ["Adversarially Regularized Autoencoders"](https://arxiv.org/abs/1706.04223) Zhao, Kim, Zhang, Rush, LeCun
-  `GAN applications` `discrete output`
-
-#### ["Maximum-Likelihood Augmented Discrete Generative Adversarial Networks"](http://arxiv.org/abs/1702.07983) Che, Li, Zhang, Hjelm, Li, Song, Bengio
-  `GAN applications` `discrete output`
-
-#### ["Boundary-Seeking Generative Adversarial Networks"](http://arxiv.org/abs/1702.08431) Hjelm, Jacob, Che, Cho, Bengio
-  `GAN applications` `discrete output`
->	"We observe that the recently proposed Gumbel-Softmax technique for re-parametrizing the discrete variables does not work for training a GAN with discrete data."  
-  - `post` <http://wiseodd.github.io/techblog/2017/03/07/boundary-seeking-gan/>
-  - `code` <https://github.com/wiseodd/generative-models/tree/master/GAN/boundary_seeking_gan>
-
-#### ["GANS for Sequences of Discrete Elements with the Gumbel-softmax Distribution"](http://arxiv.org/abs/1611.04051) Kusner, Hernandez-Lobato
-  `GAN applications` `discrete output`
-  - `post` <https://casmls.github.io/general/2017/02/01/GumbelSoftmax.html>
-
-----
 #### ["High-Resolution Image Synthesis and Semantic Manipulation with Conditional GANs"](https://arxiv.org/abs/1711.11585) Wang, Liu, Zhu, Tao, Kautz, Catanzaro
   `GAN applications` `image synthesis`
   - <https://tcwang0509.github.io/pix2pixHD/> (demo)
   - `code` <https://github.com/NVIDIA/pix2pixHD>
 
 #### ["Progressive Growing of GANs for Improved Quality, Stability, and Variation"](https://arxiv.org/abs/1710.10196) Karras, Aila, Laine, Lehtinen
-  `GAN applications` `image synthesis`
+  `GAN applications` `image synthesis` `ProGAN`
 >	"Instead of Wassersteinizing, just keep the KL loss, but get rid of the disjoint support problem by doing multiresolution approximation of the data distribution."  
   - `video` <https://youtube.com/watch?v=XOxxPcy5Gr4> (demo)
   - `code` <https://github.com/tkarras/progressive_growing_of_gans>
@@ -1498,6 +1490,7 @@ interesting older papers:
 
 #### ["An Information-Theoretic Analysis of Deep Latent-Variable Models"](https://arxiv.org/abs/1711.00464) Alemi, Poole, Fischer, Dillon, Saurous, Murphy
 >	"We present an information-theoretic framework for understanding trade-offs in unsupervised learning of deep latent-variables models using variational inference. This framework emphasizes the need to consider latent-variable models along two dimensions: the ability to reconstruct inputs (distortion) and the communication cost (rate). We derive the optimal frontier of generative models in the two-dimensional rate-distortion plane, and show how the standard evidence lower bound objective is insufficient to select between points along this frontier. However, by performing targeted optimization to learn generative models with different rates, we are able to learn many models that can achieve similar generative performance but make vastly different trade-offs in terms of the usage of the latent variable."  
+>	"We have motivated the β-VAE objective on information theoretic grounds, and demonstrated that comparing model architectures in terms of the rate-distortion plot offers a much better look at their performance and tradeoffs than simply comparing their marginal log likelihoods."  
 
 ----
 #### ["Wasserstein Auto-Encoders"](https://arxiv.org/abs/1711.01558) Tolstikhin, Bousquet, Gelly, Scholkopf
@@ -2044,6 +2037,7 @@ interesting older papers:
 >	"AlphaGo Zero tuned the hyper-parameter of its search by Bayesian optimization. In AlphaZero they reuse the same hyper-parameters for all games without game-specific tuning. The sole exception is the noise that is added to the prior policy to ensure exploration; this is scaled in proportion to the typical number of legal moves for that game type. Like AlphaGo Zero, the board state is encoded by spatial planes based only on the basic rules for each game. The actions are encoded by either spatial planes or a flat vector, again based only on the basic rules for each game. They applied the AlphaZero algorithm to chess, shogi, and also Go. Unless otherwise specified, the same algorithm settings, network architecture, and hyper-parameters were used for all three games."  
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games> (demo)
   - `video` <https://youtu.be/A3ekFcZ3KNw?t=23m28s> (Silver)
+  - `video` <https://youtu.be/DXNqYSNvnjA?t=21m24s> (Hassabis)
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
   - `notes` <https://blog.acolyer.org/2018/01/10/mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm/>
 
@@ -2067,6 +2061,7 @@ interesting older papers:
 >	- Simpler search. No randomised Monte-Carlo rollouts, only uses neural network to evaluate."  
   - `post` <https://deepmind.com/blog/alphago-zero-learning-scratch/>
   - `video` <https://youtu.be/A3ekFcZ3KNw?t=10m50s> (Silver)
+  - `video` <https://youtu.be/DXNqYSNvnjA?t=16m41s> (Hassabis)
   - `video` <https://youtube.com/watch?v=6fKG4wJ7uBk> (Baudis)
   - `video` <https://youtube.com/watch?v=XuzIqE2IshY> (Kington)
   - `video` <https://youtube.com/watch?v=vC66XFoN4DE> (Raval)
@@ -2387,6 +2382,7 @@ hieves."
 #### ["Curiosity-driven Exploration by Self-supervised Prediction"](https://arxiv.org/abs/1705.05363) Pathak, Agrawal, Efros, Darrell
   `exploration guided by prediction error`
 >	"Our main contribution is in designing an intrinsic reward signal based on prediction error of the agent’s knowledge about its environment that scales to high-dimensional continuous state spaces like images, bypasses the hard problem of predicting pixels and is unaffected by the unpredictable aspects of the environment that do not affect the agent."  
+>	"Adding representation network able to filter out information from the observed state that is not relevant to predict how the agent actions affect the future state."  
   - `video` <https://vimeo.com/237270588> (Pathak)
   - `post` <https://pathak22.github.io/noreward-rl/index.html> (demo)
   - `code` <https://github.com/pathak22/noreward-rl>
@@ -2748,8 +2744,9 @@ hieves."
 
 #### ["Deeply AggreVaTeD: Differentiable Imitation Learning for Sequential Prediction"](https://arxiv.org/abs/1703.01030) Sun, Venkatraman, Gordon, Boots, Bagnell
   `reinforcement learning from demonstrations` `AggreVaTeD`
->	"a policy gradient extension of DAgger"  
+>	"policy gradient extension of DAgger"  
   - `video` <https://vimeo.com/238243230> (Sun)
+  - `paper` ["Convergence of Value Aggregation for Imitation Learning"](https://arxiv.org/abs/1801.07292) by Cheng and Boots
 
 #### ["Query-Efficient Imitation Learning for End-to-End Autonomous Driving"](https://arxiv.org/abs/1605.06450) Zhang, Cho
   `reinforcement learning from demonstrations` `SafeDAgger`
@@ -2865,6 +2862,7 @@ hieves."
   - `code` <https://github.com/openai/multiagent-particle-envs>
 
 #### ["Counterfactual Multi-Agent Policy Gradients"](https://arxiv.org/abs/1705.08926) Foerster, Farquhar, Afouras, Nardelli, Whiteson
+>	"One of the great challenges when training multi-agent policies is the credit assignment problem. Just like in a football team, the reward achieved depends on the actions of all of the different agents. Given that all agents are constantly improving their policies, it is difficult for any given agent to evaluate the impact of their individual action on the overall performance of the team."  
 >	"We evaluate COMA in the testbed of StarCraft unit micromanagement, using a decentralised variant with significant partial observability. COMA significantly improves average performance over other multi-agent actor-critic methods in this setting, and the best performing agents are competitive with state-of-the-art centralised controllers that get access to the full state."  
   - `video` <https://youtube.com/watch?v=3OVvjE5B9LU> (Whiteson)
 
@@ -2977,7 +2975,9 @@ hieves."
 
 ----
 #### ["Go for a Walk and Arrive at the Answer: Reasoning Over Paths in Knowledge Bases using Reinforcement Learning"](https://arxiv.org/abs/1711.05851) Das, Dhuliawala, Zaheer, Vilnis, Durugkar, Krishnamurthy, Smola, McCallum
-  `question answering over knowledge bases`
+  `question answering over knowledge bases` `MINERVA`
+>	"RL agent which answers queries in a knowledge graph of entities and relations. Starting from an entity node, MINERVA learns to navigate the graph conditioned on the input query till it reaches the answer entity."  
+  - `code` <https://github.com/shehzaadzd/MINERVA>
 
 #### ["Question Answering on Knowledge Bases and Text using Universal Schema and Memory Networks"](https://arxiv.org/abs/1704.08384) Das, Zaheer, Reddy, McCallum
   `question answering over knowledge bases`

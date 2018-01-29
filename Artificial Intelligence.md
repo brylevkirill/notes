@@ -64,9 +64,11 @@
 ---
 ### benchmarks
 
-  ["Tests of Machine Intelligence"](http://arxiv.org/abs/0712.3825) by Legg and Hutter `paper`
-
   ["Intelligence Confuses The Intelligent"](https://blog.piekniewski.info/2017/04/13/ai-confuses-intelligent/) by Filip Piekniewski
+
+----
+
+  ["Tests of Machine Intelligence"](http://arxiv.org/abs/0712.3825) by Legg and Hutter `paper`
 
 ----
 

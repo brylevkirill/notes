@@ -70,6 +70,7 @@
   ["Deep Learning"](https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/) by Nando de Freitas ([videos](http://youtube.com/playlist?list=PLE6Wd9FR--EfW8dtjAuPoTuPcqmOV53Fu))  
   ["Neural Networks for Machine Learning"](https://coursera.org/course/neuralnets) by Geoffrey Hinton ([videos](http://youtube.com/user/aicourses/playlists?shelf_id=2&view=50))  
   ["Convolutional Neural Networks for Visual Recognition"](http://cs231n.stanford.edu) by Andrej Karpathy ([videos](https://youtube.com/channel/UC2__PIf36huAgKFumlOIs6A))  
+  ["Topics in Deep Learning"](https://cs.cmu.edu/~rsalakhu/10707/) by Ruslan Salakhutdinov ([videos](https://youtube.com/playlist?list=PLpIxOj-HnDsOSL__Buy7_UEVQkyfhHapa))  
 
   ["Neural Networks in Machine Learning"](https://sphere.mail.ru/curriculum/program/discipline/120/) by Daniil Polykovsky and Kuzma Hrabrov `in russian` ([videos](https://youtube.com/playlist?list=PLrCZzMib1e9oOGNLh6_d65HyfdqlJwTQP))
 
@@ -1819,18 +1820,18 @@ Yoshua Bengio:
 
 
 #### ["Adversarial Variational Bayes: Unifying Variational Autoencoders and Generative Adversarial Networks"](https://arxiv.org/abs/1701.04722) Mescheder, Nowozin, Geiger
->	"Variational Autoencoders (VAEs) are expressive latent variable models that can be used to learn complex probability distributions from training data. However, the quality of the resulting model crucially relies on the expressiveness of the inference model used during training. We introduce Adversarial Variational Bayes (AVB), a technique for training Variational Autoencoders with arbitrarily expressive inference models. We achieve this by introducing an auxiliary discriminative network that allows to rephrase the maximum-likelihood-problem as a two-player game, hence establishing a principled connection between VAEs and Generative Adversarial Networks (GANs). We show that in the nonparametric limit our method yields an exact maximumlikelihood assignment for the parameters of the generative model, as well as the exact posterior distribution over the latent variables given an observation. Contrary to competing approaches which combine VAEs with GANs, our approach has a clear theoretical justification, retains most advantages of standard Variational Autoencoders and is easy to implement."
+>	"Variational Autoencoders are expressive latent variable models that can be used to learn complex probability distributions from training data. However, the quality of the resulting model crucially relies on the expressiveness of the inference model used during training. We introduce Adversarial Variational Bayes, a technique for training Variational Autoencoders with arbitrarily expressive inference models. We achieve this by introducing an auxiliary discriminative network that allows to rephrase the maximum-likelihood-problem as a two-player game, hence establishing a principled connection between VAEs and Generative Adversarial Networks. We show that in the nonparametric limit our method yields an exact maximumlikelihood assignment for the parameters of the generative model, as well as the exact posterior distribution over the latent variables given an observation. Contrary to competing approaches which combine VAEs with GANs, our approach has a clear theoretical justification, retains most advantages of standard Variational Autoencoders and is easy to implement."
 
 >	"We presented a new training procedure for Variational Autoencoders based on adversarial training. This allows us to make the inference model much more flexible, effectively allowing it to represent almost any family of conditional distributions over the latent variables."
 
->	"Adversarial Variational Bayes strives to optimize the same objective as a standard Variational Autoencoder (Kingma & Welling, 2013; Rezende et al., 2014), but approximates the Kullback-Leibler divergence using an adversary instead of relying on a closed-form formula."
+>	"Adversarial Variational Bayes strives to optimize the same objective as a standard Variational Autoencoder, but approximates the Kullback-Leibler divergence using an adversary instead of relying on a closed-form formula."
 
 >	"However, no other approach we are aware of allows to use black-box inference models parameterized by a general neural network that takes as input a data point and a noise vector and produces a sample from the approximate posterior."
 
->	"Interestingly, the approach of Adversarial Autoencoders (Makhzani et al.) can be regarded as an approximation to our approach, where T(x, z) is restricted to the class of functions that do not depend on
+>	"Interestingly, the approach of Adversarial Autoencoders can be regarded as an approximation to our approach, where T(x,z) is restricted to the class of functions that do not depend on
 x."
 
->	"BiGANs (Donahue et al., 2016; Dumoulin et al., 2016) are a recent extension of generative adversarial networks with the goal to add an inference network to the generative model. Similarly to our approach, the authors introduce an adversary that acts on pairs (x, z) of data points and latent codes. However, whereas in BiGANs the adversary is used to optimize the generative and inference networks separately, our approach optimizes the generative and inference model jointly. As a result, our approach obtains good reconstructions of the input data, whereas for BiGANs we obtain these reconstruction only indirectly."
+>	"BiGANs are a recent extension of generative adversarial networks with the goal to add an inference network to the generative model. Similarly to our approach, the authors introduce an adversary that acts on pairs (x,z) of data points and latent codes. However, whereas in BiGANs the adversary is used to optimize the generative and inference networks separately, our approach optimizes the generative and inference model jointly. As a result, our approach obtains good reconstructions of the input data, whereas for BiGANs we obtain these reconstruction only indirectly."
 
 ----
 >	"We often want to work with some Bayesian model but find its posterior distribution intractable. Variational inference is a way of coping with this problem. We learn an approximate posterior distribution, call it q(z|x), (along with the original model) by optimizing the following lowerbound:
@@ -2280,6 +2281,7 @@ x."
   - `video` <https://youtube.com/watch?v=PQrlOjj8gAc> (Wayne)
   - `video` <https://youtu.be/otRoAQtc5Dk?t=59m56s> (Polykovskiy)
   - `video` <https://youtube.com/watch?v=r5XKzjTFCZQ> (Raval)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=10.1038/nature20101>
   - `code` <https://github.com/deepmind/dnc>
   - `code` <https://github.com/ixaxaar/pytorch-dnc>
   - `code` <https://github.com/Mostafa-Samir/DNC-tensorflow>
@@ -2546,6 +2548,7 @@ x."
   - `video` <https://youtu.be/SAcHyzMdbXc?t=10m24s> (de Freitas)
   - `video` <https://youtu.be/x1kf4Zojtb0?t=1h4m53s> (de Freitas)
   - `video` <http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/> (27:49) (de Freitas)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.04474>
   - `notes` <https://theneuralperspective.com/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>
   - `notes` <https://blog.acolyer.org/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>
   - `post` <https://hackernoon.com/learning-to-learn-by-gradient-descent-by-gradient-descent-4da2273d64f2>

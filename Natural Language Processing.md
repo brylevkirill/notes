@@ -80,7 +80,11 @@
 
   [course](http://youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6) from Stanford `video` ([notes](https://github.com/stanfordnlp/cs224n-winter17-notes))  
   [course](http://github.com/oxford-cs-deepnlp-2017/lectures) from Oxford and DeepMind `video`  
-  [course](http://phontron.com/class/nn4nlp2017/index.html) from CMU `video`  
+  [course](http://phontron.com/class/nn4nlp2017/schedule.html) from CMU `video`  
+
+----
+
+  ["Statistical NLP"](https://uclmr.github.io/stat-nlp-book) interactive lecture notes, slides and exercises from UCL Machine Reading group
 
 ----
 
@@ -271,7 +275,7 @@
   - [coreference resolution](#interesting-papers---coreference-resolution)
 
 
-[interesting recent papers - natural language processing](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#natural-language-processing)  
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#natural-language-processing)  
 
 
 
@@ -863,6 +867,7 @@
   - `notes` <https://medium.com/towards-data-science/facebook-research-just-published-an-awesome-paper-on-learning-hierarchical-representations-34e3d829ede7>
   - `notes` <https://medium.com/@hol_io/word-embeddings-exploration-explanation-and-exploitation-with-code-in-python-5dac99d5d795>
   - `post` <https://rare-technologies.com/implementing-poincare-embeddings/>
+  - `code` <https://github.com/facebookresearch/poincare-embeddings>
   - `code` <https://github.com/TatsuyaShirakawa/poincare-embedding>
 
 

@@ -1,5 +1,5 @@
   Statistical learning frames models as distributions over data and latent variables, allowing models to address a broad array of downstream tasks, and underlying methodology of latent variable models is typically Bayesian.  
-  A central problem involves modeling complex data-sets using highly flexible families of probability distributions in which learning, sampling, inference, and evaluation are still analytically or computationally tractable.  
+  A central problem involves modeling complex data sets using highly flexible families of probability distributions in which learning, sampling, inference, and evaluation are still analytically or computationally tractable.  
 
 
   * [introduction](#introduction)

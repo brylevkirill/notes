@@ -939,16 +939,22 @@
 
   - [Allen AI Science Challenge](https://kaggle.com/c/the-allen-ai-science-challenge)
 
-	["Moving Beyond the Turing Test with the Allen AI Science Challenge"](https://arxiv.org/abs/1604.04315)
+	["Moving Beyond the Turing Test with the Allen AI Science Challenge"](https://arxiv.org/abs/1604.04315) by Schoenick et al. `paper`
 		([slides](http://akbc.ws/2016/slides/etzioni-akbc16.pptx))
 
 	[first place](https://github.com/Cardal/Kaggle_AllenAIscience)  
 	[second place](https://github.com/bwilbertz/kaggle_allen_ai)  
 	[third place](https://github.com/amsqr/Allen_AI_Kaggle)  
 
+  - [Stanford Question Answering Dataset (SQuAD)](https://rajpurkar.github.io/SQuAD-explorer/)
+
+  - [WikiTableQuestions](http://nlp.stanford.edu/blog/wikitablequestions-a-complex-real-world-question-understanding-dataset/)
+
+  - [TAC Knowledge Base Population](http://www.nist.gov/tac/2017/KBP/)
+
   - [Winograd Schema Challenge](http://commonsensereasoning.org/winograd.html)
 
-	[results of 2016 competition](http://whatsnext.nuance.com/in-the-labs/winograd-schema-challenge-2016-results/)  
+	[results in 2016](http://whatsnext.nuance.com/in-the-labs/winograd-schema-challenge-2016-results/)  
 
 	["The Winograd Schema Challenge"](http://www.cs.toronto.edu/~hector/Papers/winograd.pdf) by Hector Levesque  
 	["On Our Best Behaviour"](http://www.cs.toronto.edu/~hector/Papers/ijcai-13-paper.pdf) by Hector Levesque  
@@ -970,14 +976,6 @@
 	- vivid, in that it is obvious to non-experts that a program that fails to get right answers clearly has gaps
 	- difficult, in that it is far beyond the current state of the art
 
-  - [Stanford Question Answering Dataset](https://rajpurkar.github.io/SQuAD-explorer/)
-
-  - [WikiTableQuestions](http://nlp.stanford.edu/blog/wikitablequestions-a-complex-real-world-question-understanding-dataset/)
-
-  - [TAC Knowledge Base Population](http://www.nist.gov/tac/2017/KBP/)
-
-  - [Visual Genome](http://visualgenome.org)
-
   - [commonsense reasoning](http://commonsensereasoning.org/problem_page.html)
 
 
@@ -996,8 +994,8 @@
 ----
 #### Google Knowledge Vault
 
+  [overview](http://youtube.com/watch?v=i2r5J4XAhsw) by Kevin Murphy `video`  
   ["A Web-Scale Approach to Probabilistic Knowledge Fusion"](http://videolectures.net/kdd2014_murphy_knowledge_vault/) by Kevin Murphy `video`  
-  [overview](http://youtube.com/watch?v=i2r5J4XAhsw) (novel facts, trustworthy facts, multimodal knowledge) by Kevin Murphy `video`  
   ["Constructing and Mining Web-Scale Knowledge Graphs"](http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs/) by Evgeniy Gabrilovich `video`  
   ["Knowledge Vault and Knowledge-Based Trust"](http://youtube.com/watch?v=Z6tmDdrBnpU) by Xin Luna Dong `video`  
   ["From Data Fusion to Knowledge Fusion"](http://lunadong.com/talks/fromDFtoKF.pdf) by Xin Luna Dong `slides`  
@@ -1976,10 +1974,18 @@ these knowledge bases are greatly incomplete. For example, over 70% of people in
   `truth finding` `Google Knowledge Vault`
 >	"The quality of web sources has been traditionally evaluated using exogenous signals such as the hyperlink structure of the graph. We propose a new approach that relies on endogenous signals, namely, the correctness of factual information provided by the source. A source that has few false facts is considered to be trustworthy. The facts are automatically extracted from each source by information extraction methods commonly used to construct knowledge bases. We propose a way to distinguish errors made in the extraction process from factual errors in the web source per se, by using joint inference in a novel multi-layer probabilistic model. We call the trustworthiness score we computed Knowledge-Based Trust. On synthetic data, we show that our method can reliably compute the true trustworthiness levels of the sources. We then apply it to a database of 2.8B facts extracted from the web, and thereby estimate the trustworthiness of 119M webpages. Manual evaluation of a subset of the results confirms the effectiveness of the method."
 
+>	"How can we estimate the trustworthiness of a webpage when we don't know the truth? (cf crowdsourcing)"  
+>	"We can formulate a latent variable model and use EM."  
+>	"But we must be careful to distinguish errors in the source from errors in the extraction systems."  
+>	"Fact is more likely to be correct if extracted by high-precision extractors; more likely to be wrong if not extracted by high-recall extractors."  
+
+>	"This paper proposes a new metric for evaluating web-source quality - knowledge-based trust. We proposed a sophisticated probabilistic model that jointly estimates the correctness of extractions and source data, and the trustworthiness of sources. In addition, we presented an algorithm that dynamically decides the level of granularity for each source."  
+
 >	"challenges:  
 >	 - how to detect if triple is indeed claimed by the source instead of an extraction error?  
 >	 - how to compute well-calibrated triple probability?  
 >	 - how to handle too large sources or too small sources?"  
+
 >	"strategies:  
 >	1. Graphical model - predict at the same time:  
 >	 - extraction correctness  
@@ -1992,17 +1998,16 @@ these knowledge bases are greatly incomplete. For example, over 70% of people in
 >	3. source/extractor hierarchy  
 >	 - break down "large" sources  
 >	 - group "small" sources"  
->	"Fact is more likely to be correct if extracted by high-precision sources; more likely to be wrong if not extracted by high-recall sources."  
 
 >	"algorithm:  
 >	 - compute P(web source provides triple | extractor quality) by Bayesian analysis (E-step)  
 >	 - compute P(T | web source quality) by Bayesian analysis (E-step)  
 >	 - compute source accuracy (M-step)  
 >	 - compute extractor precision and recall (M-step)"  
->	"This paper proposes a new metric for evaluating web-source quality - knowledge-based trust. We proposed a sophisticated probabilistic model that jointly estimates the correctness of extractions and source data, and the trustworthiness of sources. In addition, we presented an algorithm that dynamically decides the level of granularity for each source. Experimental results have shown both promise in evaluating web source quality and improvement over existing techniques for knowledge fusion."  
 
   - `video` <https://youtube.com/watch?v=Z6tmDdrBnpU> (Dong)
   - `video` <https://youtube.com/watch?v=6UNgtOhhGjI> (Dong)
+  - `video` <https://youtu.be/i2r5J4XAhsw?t=18m2s> (Murphy)
 
 
 #### ["Language-Aware Truth Assessment of Fact Candidates"](https://aclweb.org/anthology/P/P14/P14-1095.pdf) Nakashole, Mitchell
