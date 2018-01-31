@@ -145,8 +145,9 @@
   ["Representation Learning and the Information Bottleneck Approach"](http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/) by Ferenc Huszar  *(priors)*  
   ["Regularization for Deep Learning: A Taxonomy"](https://arxiv.org/abs/1710.10686) by Kukacka et al.  *(priors)*  
 
-  ["Bottoming Out"](http://argmin.net/2016/04/18/bottoming-out/) by Ben Recht  *(generalization)*  
+  ["Modern Theory of Deep Learning: Why Does It Work so Well"](https://medium.com/mlreview/modern-theory-of-deep-learning-why-does-it-works-so-well-9ee1f7fb2808) by Dmytrii S.  *(generalization)*  
   ["Everything that Works Works Because it's Bayesian: Why Deep Nets Generalize?"](http://inference.vc/everything-that-works-works-because-its-bayesian-2/)  *(generalization)*  
+  ["Bottoming Out"](http://argmin.net/2016/04/18/bottoming-out/) by Ben Recht  *(generalization)*  
 
   ["Back-propagation, An Introduction"](http://www.offconvex.org/2016/12/20/backprop/) by Sanjeev Arora and Tengyu Ma  *(gradient of loss function)*  
   ["Calculus on Computational Graphs: Backpropagation"](http://colah.github.io/posts/2015-08-Backprop/) by Chris Olah  *(gradient of loss function)*  
@@ -163,6 +164,12 @@
 
   ["A Statistical View of Deep Learning: Retrospective"](http://blog.shakirm.com/2015/07/a-statistical-view-of-deep-learning-retrospective/) by Shakir Mohamed  
   ["Deep Learning is Easy - Learn Something Harder"](http://inference.vc/deep-learning-is-easy/) by Ferenc Huszar  
+
+----
+
+  ["Theories of Deep Learning"](https://stats385.github.io) course from Stanford ([videos](https://researchgate.net/project/Theories-of-Deep-Learning))
+
+  ["Interplay between Optimization and Generalization in Deep Neural Networks"](https://youtube.com/watch?v=cHjI37DsQCQ) by Keerthi Selvaraj `video`
 
 ----
 
@@ -1141,7 +1148,6 @@
 >	"
 
 ----
-
 >	"We gave two independent theoretical arguments on why compression of representation dramatically improves generalization, and how stochastic relaxation, due to either noise of the SGD, OR a noisy training energy surface effectively adds noise also to BGD push the weights distribution to a Gibbs measure in the training error (this is an old argument we use in our statistical mechanics of learning papers 25 years ago, and is used today by many others, e.g. Tommy Poggio). Then we show that this weight Gibbs distribution leads directly (essentially through Bayes rule) to the IB optimal encoder of the layers."
 
 >	"We also showed some of newer simulations, which include much larger and different problems (MNIST, Cifar-10, different architectures, CNN, etc.), including ReLU non-linearities and linear Networks. In all these networks we see essentially the same picture: the last hidden layer first improves generalization error (which is actually proved to be directly bounded by the mutual information on Y) by fitting the training data and adding more information on the inputs, and then further improve generalization by compressing the representation and “forget” the irrelevant details of the inputs. During both these phases of learning the information on the relevant components of the input increases monotonically. You can of course have compression without generalization, when the training size is too small and one can’t keep the homogeneity of the cover."
@@ -1155,9 +1161,15 @@
 
 >	"Authors describe SGD as having two distinct phases, a drift phase and a diffusion phase. SGD begins in the first phase, basically exploring the multidimensional space of solutions. When it begins converging, it arrives at the diffusion phase where it is extremely chaotic and the convergence rate slows to a crawl. An intuition of what’s happening in this phase is that the network is learning to compress. That is, the behavior makes a phase transition from high mean with low variance to one with a low mean but high variance. This provides further explanation to Smith et. al’s observations, that in the region near convergence, it is highly chaotic. This of course does not fully explain why a high learning rate will knock the system into a place of high loss."
 
+>	"Consider the gradient of the loss with respect to the weights.  
+>	Phase 1 (drift): Mean gradient size is much larger than the standard deviation.  
+>	Phase 2 (diffusion): Mean gradient is smaller and noise takes over - Langevin/Boltzmann effect kicks in.  
+>	Authors claim that SGD training compresses (reduces I(X;T)) in the diffusion phase."  
+
   - `video` <https://youtube.com/watch?v=bLqJHjXihK8> (Tishby)
   - `video` <https://youtube.com/watch?v=ekUWO_pI2M8> (Tishby)
   - `video` <https://youtu.be/RKvS958AqGY?t=12m7s> (Tishby)
+  - `video` <https://youtu.be/cHjI37DsQCQ?t=41m40s> (Selvaraj)
   - `post` <https://weberna.github.io/jekyll/update/2017/11/08/Information-Bottleneck-Part1.html>
   - `post` <http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/>
   - `post` <https://medium.com/intuitionmachine/the-peculiar-behavior-of-deep-learning-loss-surfaces-330cb741ec17>
@@ -1970,22 +1982,24 @@ x."
   - `video` <https://youtube.com/watch?v=VKoLGnq15RM> (Raval)
   - `video` <https://youtube.com/watch?v=UZ9BgrofhKk> (Kozlov) `in russian`
   - `post` <https://medium.com/@pechyonkin/understanding-hintons-capsule-networks-part-i-intuition-b4b559d1159b>
-  - `post` <https://hackernoon.com/what-is-a-capsnet-or-capsule-network-2bfbe48769cc>
-  - `post` <https://kndrck.co/posts/capsule_networks_explained/>
+  - `post` <https://hackernoon.com/uncovering-the-intuition-behind-capsule-networks-and-inverse-graphics-part-i-7412d121798d>
   - `post` <https://jhui.github.io/2017/11/03/Dynamic-Routing-Between-Capsules/>
+  - `post` <https://hackernoon.com/what-is-a-capsnet-or-capsule-network-2bfbe48769cc>
   - `post` <https://medium.com/@mike_ross/a-visual-representation-of-capsule-network-computations-83767d79e737>
   - `notes` <https://blog.acolyer.org/2017/11/13/dynamic-routing-between-capsules/>
-  - `code` <https://github.com/llSourcell/capsule_networks>
-  - `code` <https://github.com/InnerPeace-Wu/CapsNet-tensorflow>
-  - `code` <https://github.com/naturomics/CapsNet-Tensorflow>
-  - `code` <https://github.com/higgsfield/Capsule-Network-Tutorial>
-  - `code` <https://github.com/gram-ai/capsule-networks>
-  - `code` <https://github.com/adambielski/CapsNet-pytorch>
-  - `code` <https://github.com/nishnik/CapsNet-PyTorch>
-  - `code` <https://github.com/XifengGuo/CapsNet-Keras>
-  - `paper` ["Matrix Capsules with EM Routing"](https://openreview.net/forum?id=HJWLfGWRb)
+  - `code` <https://github.com/loretoparisi/CapsNet>
   - `paper` ["Transforming Auto-encoders"](http://www.cs.toronto.edu/~fritz/absps/transauto6.pdf) by Hinton, Krizhevsky, Wang
   - `paper` ["Optimizing Neural Networks that Generate Images"](http://www.cs.toronto.edu/~tijmen/tijmen_thesis.pdf) by Tieleman ([code](https://github.com/mrkulk/Unsupervised-Capsule-Network))
+
+
+#### ["Matrix Capsules with EM Routing"](https://openreview.net/forum?id=HJWLfGWRb) Hinton, Sabour, Frosst
+  `CapsNet`
+>	"A capsule is a group of neurons whose outputs represent different properties of the same entity. Each layer in a capsule network contains many capsules [a group of capsules forms a capsule layer and can be used in place of a traditional layer in a neural net]. We describe a version of capsules in which each capsule has a logistic unit to represent the presence of an entity and a 4x4 matrix which could learn to represent the relationship between that entity and the viewer (the pose). A capsule in one layer votes for the pose matrix of many different capsules in the layer above by multiplying its own pose matrix by trainable viewpoint-invariant transformation matrices that could learn to represent part-whole relationships. Each of these votes is weighted by an assignment coefficient. These coefficients are iteratively updated for each image using the Expectation-Maximization algorithm such that the output of each capsule is routed to a capsule in the layer above that receives a cluster of similar votes. The transformation matrices are trained discriminatively by backpropagating through the unrolled iterations of EM between each pair of adjacent capsule layers. On the smallNORB benchmark, capsules reduce the number of test errors by 45\% compared to the state-of-the-art. Capsules also show far more resistance to white box adversarial attack than our baseline convolutional neural network."
+  - `video` <https://youtu.be/hYt3FcJUf6w?t=50m38s> (Uziela)
+  - `post` <https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/>
+  - `post` <https://towardsdatascience.com/demystifying-matrix-capsules-with-em-routing-part-1-overview-2126133a8457>
+  - `notes` <https://blog.acolyer.org/2017/11/14/matrix-capsules-with-em-routing/>
+  - `code` <https://github.com/loretoparisi/CapsNet>
 
 
 #### ["Highway Networks"](http://arxiv.org/abs/1505.00387) Srivastava, Greff, Schmidhuber
@@ -2129,8 +2143,9 @@ x."
 >	- self-attention (restricted): O(n/r)"  
 
   - `post` <https://research.googleblog.com/2017/08/transformer-novel-neural-network.html>
-  - `video` <https://youtube.com/watch?v=rBCqOTEfxvg> (Kaiser)
   - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747/> (18:27) (Vaswani, Shazeer)
+  - `video` <https://youtu.be/I0nX4HDmXKc?t=7m46s> (Polosukhin)
+  - `video` <https://youtube.com/watch?v=rBCqOTEfxvg> (Kaiser)
   - `video` <https://youtube.com/watch?v=iDulhoQ2pro> (Kilcher)
   - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) `in russian`
   - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani, Uszkoreit)
@@ -2635,9 +2650,9 @@ x."
 ---
 ### interesting papers - applications
 
-[reinforcement learning - applications](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---applications)
+[interesting papers - reinforcement learning - applications](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---applications)
 
-[other applications](https://dropbox.com/sh/dio0ypwiph44ehn/AAADQCyEutvVt9iugVU1F5S8a)
+[interesting papers - other applications](https://dropbox.com/sh/dio0ypwiph44ehn/AAADQCyEutvVt9iugVU1F5S8a)
 
 
 #### ["Learning Representations for Counterfactual Inference"](http://arxiv.org/abs/1605.03661) Johansson, Shalit, Sontag

@@ -112,6 +112,8 @@
 
 	["AlphaGo, In Context"](https://medium.com/@karpathy/alphago-in-context-c47718cb95a5) by Andrej Karpathy
 
+	[AlphaGo documentary](https://netflix.com/title/80190844) `video`
+
 	AlphaGo vs Lee Sedol match:
 
 	game 1: [overview](https://youtu.be/9M-yo1huLoU?t=7m49s) `video` +
@@ -465,6 +467,8 @@
 
   ["An Invitation to Imitation"](http://ri.cmu.edu/pub_files/2015/3/InvitationToImitation_3_1415.pdf) by Andrew Bagnell  
   ["Imitation Learning" chapter](http://ciml.info) by Hal Daume  
+
+  ["Global Overview of Imitation Learning"](https://arxiv.org/abs/1801.06503) by Attia and Dayan `paper`  
   ["Imitation Learning: A Survey of Learning Methods"](https://researchgate.net/publication/312591539_Imitation_Learning_A_Survey_of_Learning_Methods) by Hussein et al. `paper`  
 
   [interesting papers](#interesting-papers---behavioral-cloning)
@@ -854,7 +858,8 @@
   [Microsoft Custom Decision Service](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al)  
   ["Making Contextual Decisions with Low Technical Debt"](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) by Agarwal et al. `paper` `summary`  
 
-  ["Counterfactual Evaluation and Learning for Search, Recommendation and Ad Placement"](http://www.cs.cornell.edu/~adith/CfactSIGIR2016/) tutorial by Adith Swaminathan and Thorsten Joachims `video`
+  ["Counterfactual Evaluation and Learning for Search, Recommendation and Ad Placement"](http://www.cs.cornell.edu/~adith/CfactSIGIR2016/) tutorial by Adith Swaminathan and Thorsten Joachims `video`  
+  ["Deep Learning from Logged Interventions"](https://youtube.com/watch?v=lzA5K4im2no) by Thorsten Joachims `video`  
 
 ----
 
@@ -1167,23 +1172,11 @@
 	([slides](http://people.eecs.berkeley.edu/~pabbeel/nips-tutorial-policy-optimization-Schulman-Abbeel.pdf))  
   [tutorial](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/) by Pieter Abbeel `video`  
 
-  ["Optimizing Expectations: From Deep Reinforcement Learning to Stochastic Computation Graphs"](http://joschu.net/docs/thesis.pdf)
-	by John Schulman `paper` ([talk](https://youtube.com/watch?v=jmMsNQ2eug4) `video`)
+  course by John Schulman (parts [1](https://youtube.com/watch?v=BB-BhTn6DCM), [2](https://youtube.com/watch?v=_t5fpZuuf-4), [3](https://youtube.com/watch?v=Fauwwkiy-bo), [4](https://youtube.com/watch?v=IDSA2wAACr0)) `video`  
+  course by John Schulman (parts [1](https://youtube.com/watch?v=aUrX-rP_ss4), [2](https://youtube.com/watch?v=oPGVsoBonLM), [3](https://youtube.com/watch?v=rO7Dx8pSJQw), [4](https://youtube.com/watch?v=gb5Q2XL5c8A)) `video`  
 
   [overview](https://yadi.sk/i/I3M09HKQ3GKBiP) by Fedor Ratnikov `video` `in russian`  
   [overview](https://youtu.be/mrgJ53TIcQc?t=41m35s) by Alexey Seleznev `video` `in russian`  
-
-  course by John Schulman:  
-	https://youtube.com/watch?v=BB-BhTn6DCM  
-	https://youtube.com/watch?v=_t5fpZuuf-4  
-	https://youtube.com/watch?v=Fauwwkiy-bo  
-	https://youtube.com/watch?v=IDSA2wAACr0  
-
-  course by John Schulman:  
-	https://youtube.com/watch?v=aUrX-rP_ss4  
-	https://youtube.com/watch?v=oPGVsoBonLM  
-	https://youtube.com/watch?v=rO7Dx8pSJQw  
-	https://youtube.com/watch?v=gb5Q2XL5c8A  
 
 ----
 
@@ -1538,8 +1531,7 @@ interesting recent papers:
 >	"AlphaGo Zero learns two functions (which take as input the current board):
 >	- A prior over moves p is trained to predict what AlphaGo will eventually decide to do
 >	- A value function v is trained to predict which player will win (if AlphaGo plays both sides)
->
->	Both are trained with supervised learning. Once we have these two functions, AlphaGo actually picks its moves by using 1600 steps of Monte Carlo tree search (MCTS), using p and v to guide the search. It trains p to bypass this expensive search process and directly pick good moves. As p improves, the expensive search becomes more powerful, and p chases this moving target."
+>	Both are trained with supervised learning. Once we have these two functions, AlphaGo actually picks its moves by using 1600 steps of Monte Carlo Tree Search, using p and v to guide the search. It trains p to bypass this expensive search process and directly pick good moves. As p improves, the expensive search becomes more powerful, and p chases this moving target."
 
 >	"AlphaGo Zero uses a quite different approach to deep RL than typical (model-free) algorithms such as policy gradient or Q-learning. By using AlphaGo search we massively improve the policy and self-play outcomes - and then we apply simple, gradient based updates to train the next policy + value network. This appears to be much more stable than incremental, gradient-based policy improvements that can potentially forget previous improvements."  
 >	"We chose to focus more on reinforcement learning, as we believed it would ultimately take us beyond human knowledge. Our recent results actually show that a supervised-only approach can achieve a surprisingly high performance - but that reinforcement learning was absolutely key to progressing far beyond human levels."  
@@ -1552,6 +1544,9 @@ interesting recent papers:
 >	- No human features. Only takes raw board as input.  
 >	- Single neural network. Policy and value networks are combined into one neural network (resnet).  
 >	- Simpler search. No randomised Monte-Carlo rollouts, only uses neural network to evaluate."  
+
+----
+>	"There's a continuum between expert iteration and policy gradients. Let's say we have a two probability distributions, called policy and expert. We can write down a distance between them in two different ways. (1) KL[policy, expert] = policy * log(expert) - S[policy] (2) KL[expert, policy] = expert * log(policy) + constant. Policy gradients uses (1), and we set expert = exp(advantage estimate). AGZ uses (2) and defines expert using MCTS on the policy. The continuum between policy gradients and AGZ arises because we can vary the amount of work we put into computing the expert policy. On one extreme, policy gradient methods use a very cheap-to-compute expert: the advantage function estimate. On the other extreme, AGZ uses a very expensive-to-compute expert (via MCTS), which is much better than the current policy. Another dimension in this expert space is the bias-variance tradeoff: whether we use a Monte-Carlo estimate of returns or a learned value function. I'm curious to know under what conditions you benefit from using a more expensive expert. Anyway, I think there are a lot of interesting experiments left to do to analyze the space of algorithms between policy gradients and expert iteration."  
 
   - `post` <https://deepmind.com/blog/alphago-zero-learning-scratch/>
   - `video` <https://youtu.be/A3ekFcZ3KNw?t=10m50s> (Silver)
@@ -1567,7 +1562,21 @@ interesting recent papers:
   - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
   - `notes` <https://blog.acolyer.org/2017/11/17/mastering-the-game-of-go-without-human-knowledge/>
   - `notes` <https://dropbox.com/s/fuwhivftv998f6q/AlphaGoZeroPseudoCode.pdf>
+  - `code` <https://github.com/tensorflow/minigo>
   - `code` <https://github.com/gcp/leela-zero/>
+  - `paper` ["Reinforcement Learning as Classification: Leveraging Modern Classifiers"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.7.474&rep=rep1&type=pdf) by Lagoudakis and Parr
+
+
+#### ["Thinking Fast and Slow with Deep Learning and Tree Search"](https://arxiv.org/abs/1705.08439) Anthony, Tian, Barber
+  `Expert Iteration`
+>	"Sequential decision making problems, such as structured prediction, robotic control, and game playing, require a combination of planning policies and generalisation of those plans. In this paper, we present Expert Iteration (ExIt), a novel reinforcement learning algorithm which decomposes the problem into separate planning and generalisation tasks. Planning new policies is performed by tree search, while a deep neural network generalises those plans. Subsequently, tree search is improved by using the neural network policy to guide search, increasing the strength of new plans. In contrast, standard deep Reinforcement Learning algorithms rely on a neural network not only to generalise plans, but to discover them too. We show that ExIt outperforms REINFORCE for training a neural network to play the board game Hex, and our final tree search agent, trained tabula rasa, defeats MoHex 1.0, the most recent Olympiad Champion player to be publicly released."
+
+>	"Planning new policies is performed by tree search, while a deep neural network generalises those plans."  
+>	"Expert Iteration can be viewed as an extension of Imitation Learning methods to domains where the best known experts are unable to achieve satisfactory performance. In standard IL an apprentice is trained to imitate the behaviour of an expert. In ExIt, we extend this to an iterative learning process. Between each iteration, we perform an Expert Improvement step, where we bootstrap the (fast) apprentice policy to increase the performance of the (comparatively slow) expert."  
+>	"Imitation Learning is generally appreciated to be easier than Reinforcement Learning, and this partly explains why ExIt is more successful than model-free methods like REINFORCE. Furthermore, for MCTS to recommend a move, it must be unable to find any weakness with its search. Effectively, therefore, a move played by MCTS is good against a large selection of possible opponents. In contrast, in regular self play (in which the opponent move is made by the network playing as the opposite colour), moves are recommended if they beat only this single opponent under consideration. This is, we believe, a key insight into why ExIt works well (when using MCTS as the expert) - the apprentice effectively learns to play well against many opponents."  
+
+  - `post` <https://davidbarber.github.io/blog/2017/11/07/Learning-From-Scratch-by-Thinking-Fast-and-Slow-with-Deep-Learning-and-Tree-Search/> (Barber)
+  - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
 
 
 #### ["Mastering the Game of Go with Deep Neural Networks and Tree Search"](https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf) Silver et al.
@@ -1584,6 +1593,7 @@ interesting recent papers:
   - `video` <https://youtu.be/WM4HC720Cms?t=1h18m21s> (Nikolenko) `in russian`
   - `video` <https://youtube.com/watch?v=zHjE07NBA_o> (Kozlov) `in russian`
   - `notes` <https://github.com/Rochester-NRT/RocAlphaGo/wiki>
+  - `code` <https://github.com/brilee/MuGo>
 
 
 #### ["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](http://arxiv.org/abs/1701.01724) Moravcik et al.
@@ -2204,7 +2214,7 @@ interesting recent papers:
   - `video` <https://youtu.be/bsuvM1jO-4w?t=20m7s> (Mnih)
   - `video` <https://youtube.com/watch?v=-YiMVR3HEuY> (Kilcher)
   - `video` <https://yadi.sk/i/_2_0yqeW3HDbcn> (18:25) (Panin) `in russian`
-  - `notes` <https://github.com/dennybritz/deeplearning-papernotes/blob/b097e313dc59c956575fb1bf23b64fa8d1d84057/notes/rl-auxiliary-tasks.md>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1611.05397>
   - `code` <https://github.com/miyosuda/unreal>
 
 
