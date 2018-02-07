@@ -1406,6 +1406,7 @@ Yoshua Bengio:
 
   - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods> (1:05:06) (Mohamed)
   - `video` <https://youtu.be/JrO5fSskISY?t=1h2m19s> (Mohamed)
+  - `video` <https://cds.cern.ch/record/2302480> (38:20) (Rezende)
   - `video` <https://youtu.be/tqGEX_Ucu04?t=33m58s> (Molchanov) `in russian`
   - `post` <https://casmls.github.io/general/2016/09/25/normalizing-flows.html>
   - `post` <https://ferrine.github.io/blog/2017/07/11/normalizing-flows-overview/>
@@ -1972,6 +1973,16 @@ x."
 
 >	"A fully connected layer would route the features based on their agreement with a learned weight vector. This defeats the intent of dynamic routing, the whole purpose of which is to route activations to capsules where they agree with other activations. It does the routing based on a fast iterative process in the forward pass, not a slow learning process like gradient descent."
 
+----
+>	"- requires less training data  
+>	- position and pose information are preserved (equivarience)  
+>	- promising for image segmentation and object detection  
+>	- routing by agreement is great for overlapping objects (explaining away)  
+>	- capsule activations nicely map the hierarchy of parts  
+>	- offers robustness to affine transformations  
+>	- activation vectors are easier to interpret (rotation, thickness, skew)"  
+
+  - `video` <https://youtube.com/watch?v=gq-7HgzfDBM>
   - `video` <https://facebook.com/nipsfoundation/videos/1553634558061111/> (1:37:04) (Frosst)
   - `video` ["What is wrong with convolutional neural nets?"](https://youtube.com/watch?v=Mqt8fs6ZbHk) (Hinton)
   - `video` ["What's wrong with convolutional nets?"](http://techtv.mit.edu/collections/bcs/videos/30698-what-s-wrong-with-convolutional-nets) (Hinton) ([transcription](https://github.com/WalnutiQ/walnut/issues/157))
@@ -1981,12 +1992,14 @@ x."
   - `video` <https://youtube.com/watch?v=hYt3FcJUf6w> (Uziela)
   - `video` <https://youtube.com/watch?v=VKoLGnq15RM> (Raval)
   - `video` <https://youtube.com/watch?v=UZ9BgrofhKk> (Kozlov) `in russian`
+  - `video` <https://youtube.com/watch?v=8R3gXmh1F0c> (Lykov) `in russian`
   - `post` <https://medium.com/@pechyonkin/understanding-hintons-capsule-networks-part-i-intuition-b4b559d1159b>
   - `post` <https://hackernoon.com/uncovering-the-intuition-behind-capsule-networks-and-inverse-graphics-part-i-7412d121798d>
   - `post` <https://jhui.github.io/2017/11/03/Dynamic-Routing-Between-Capsules/>
   - `post` <https://hackernoon.com/what-is-a-capsnet-or-capsule-network-2bfbe48769cc>
   - `post` <https://medium.com/@mike_ross/a-visual-representation-of-capsule-network-computations-83767d79e737>
   - `notes` <https://blog.acolyer.org/2017/11/13/dynamic-routing-between-capsules/>
+  - `code` <https://github.com/Sarasra/models/tree/master/research/capsules>
   - `code` <https://github.com/loretoparisi/CapsNet>
   - `paper` ["Transforming Auto-encoders"](http://www.cs.toronto.edu/~fritz/absps/transauto6.pdf) by Hinton, Krizhevsky, Wang
   - `paper` ["Optimizing Neural Networks that Generate Images"](http://www.cs.toronto.edu/~tijmen/tijmen_thesis.pdf) by Tieleman ([code](https://github.com/mrkulk/Unsupervised-Capsule-Network))

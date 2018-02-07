@@ -1780,7 +1780,6 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 
 #### ["Value Iteration Networks"](http://arxiv.org/abs/1602.02867) Tamar, Wu, Thomas, Levine, Abbeel
   `using web search engine`
-
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#value-iteration-networks-tamar-wu-thomas-levine-abbeel>
   - `video` <https://youtu.be/tXBHfbHHlKc?t=31m20s> (Tamar)
 

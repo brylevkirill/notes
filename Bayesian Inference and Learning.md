@@ -314,6 +314,15 @@
 
 ----
 
+  applications:
+  - prediction:  p(x(t+1,...,∞)|x(-∞,...,t))  *(inference)*
+  - parameter estimation:  p(θ|x(0,...,N))  *(learning as inference)*
+  - planning:  J = Ep[∫dtC(xt)|x0,u]  *([policy evaluation / optimization](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#bayesian-reinforcement-learning))*
+  - experiment design:  EIG = DKL[p(f(x(t,...,∞))|u);p(f(x(-∞,...,t)))]  *(expected information gain)*
+  - hypothesis testing:  p(f(x(-∞,...,t))|H0) / p(f(x(-∞,...,t))|H1)  *(bayes factor)*
+
+----
+
   - [expectation maximization](#expectation-maximization)
   - [variational inference](#variational-inference)
   - [monte carlo methods](#monte-carlo-methods)
@@ -336,14 +345,17 @@
 
   ["EM Algorithm and Variants: an Informal Tutorial"](http://arxiv.org/abs/1105.1476) by Alexis Roche `paper`
 
-  ["VAE = EM"](https://machinethoughts.wordpress.com/2017/10/02/vae-em/) by David McAllester
-
 ----
 
   [overview](https://youtu.be/PpX6hllPVLs?t=1h1m22s) by Alex Smola `video`
 
   overview by Dmitry Vetrov ([part 1](http://youtu.be/U0LylVL-zJM?t=35m59s), [part 2](http://youtube.com/watch?v=CqjqTbUgbOo)) `video` `in russian`  
   [overview](https://youtube.com/watch?v=vPRphQh1eGQ&t=32m54s) by Konstantin Vorontsov `video` `in russian`  
+
+----
+
+  [EM and VI](https://youtu.be/yzNbaAPKXA8?t=19m45s) by Zoubin Ghahramani `video`  *([variational inference](#variational-inference))*  
+  ["VAE = EM"](https://machinethoughts.wordpress.com/2017/10/02/vae-em/) by David McAllester  *([variational auto-encoder](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#generative-models---variational-autoencoder))*  
 
 ----
 
@@ -402,9 +414,6 @@
 
 ----
 
-  [overview](https://youtu.be/yzNbaAPKXA8?t=19m45s) by Zoubin Ghahramani `video`  
-  [overview](https://youtube.com/watch?v=2pEkWk-LHmU) by Jordan Boyd-Graber `video`  
-
   ["Variational Inference: Foundations and Innovations"](https://youtube.com/watch?v=Dv86zdWjJKQ) by David Blei `video`  
   ["Variational Inference: Foundations and Modern Methods"](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods)
 	tutorial by David Blei, Rajesh Ranganath, Shakir Mohamed `video` ([slides](http://www.cs.columbia.edu/~blei/talks/2016_NIPS_VI_tutorial.pdf))  
@@ -415,8 +424,9 @@
 
 ----
 
-  [variational autoencoder](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#generative-models---variational-autoencoder)  *(approximates the posterior over latent variables given a datapoint)*  
-  [bayesian neural network](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)  *(approximates the posterior over model parameters given a dataset)*  
+  applications:
+  - [variational autoencoder](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#generative-models---variational-autoencoder)  *(approximating posterior over latent variables given a datapoint)*
+  - [bayesian neural network](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)  *(approximating posterior over model parameters given a dataset)*
 
 ----
 

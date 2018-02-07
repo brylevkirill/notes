@@ -244,10 +244,9 @@
 ---
 ### overview
 
-  [introduction](https://youtube.com/watch?v=2pWv7GOvuf0) by David Silver `video`  
-  [introduction](https://yadi.sk/i/bMo0qa-x3DoqkS) by Fedor Ratnikov `video` `in russian`  
-
-----
+  introduction by Benjamin Recht:  
+  - ["Make It Happen"](http://argmin.net/2018/01/29/taxonomy/)  
+  - ["Total Control"](http://argmin.net/2018/02/01/control-tour/)  
 
   introduction by Kevin Frans:  
   - [basics](http://kvfrans.com/reinforcement-learning-basics/)  
@@ -270,30 +269,23 @@
 
 ----
 
-  [overview](http://techtalks.tv/talks/deep-reinforcement-learning/62360/) by David Silver `video`  
-  [overview](http://videolectures.net/rldm2015_silver_reinforcement_learning/) by David Silver `video`  
-  [overview](http://youtube.com/watch?v=qLaDWKd61Ig) by David Silver `video`  
-  [overview](http://youtube.com/watch?v=3hWn5vMnpiM) by David Silver `video`  
-
-  [overview](http://youtube.com/watch?v=evq4p1zhS7Q) by Pieter Abbeel `video`  
-  [overview](http://research.microsoft.com/apps/video/default.aspx?id=260045) by Pieter Abbeel `video`  
+  [overview](https://youtube.com/watch?v=2pWv7GOvuf0) by David Silver `video`  
+  [overview](https://yadi.sk/i/bMo0qa-x3DoqkS) by Fedor Ratnikov `video` `in russian`  
 
 ----
-
-  [tutorial](https://youtube.com/watch?v=Fsh1qMTg1xI) by Rich Sutton `video` ([write-up](https://goo.gl/PxHMLK))  
-  [tutorial](http://videolectures.net/deeplearning2016_pineau_reinforcement_learning/) by Joelle Pineau `video`  
-  [tutorial](https://youtube.com/watch?v=fIKkhoI1kF4) by Emma Brunskill `video`  
-
-----
-
-  [course](http://youtube.com/playlist?list=PL5X3mDkKaJrL42i_jhE4N-p6E2Ol62Ofa) by David Silver `video`
-	([slides](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html))  
-  [course](https://udacity.com/course/reinforcement-learning--ud600) by Michael Littman `video`  
-  [course](https://github.com/yandexdataschool/Practical_RL/) from Yandex `video` `in russian`  
 
   [Reinforcement Learning Summer School 2017](http://videolectures.net/deeplearning2017_montreal/) `video`
 
 ----
+
+  [course](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html) by David Silver `video`  
+  [course](https://udacity.com/course/reinforcement-learning--ud600) by Michael Littman `video`  
+  [course](https://github.com/yandexdataschool/Practical_RL/) from Yandex `video` `in russian`  
+
+----
+
+  [tutorial](https://youtube.com/watch?v=Fsh1qMTg1xI) by Rich Sutton `video` ([write-up](https://goo.gl/PxHMLK))  
+  [tutorial](https://youtube.com/watch?v=fIKkhoI1kF4) by Emma Brunskill `video`  
 
   ["Theory of Reinforcement Learning"](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) by Csaba Szepesvari `video`
 
@@ -322,7 +314,10 @@
 ---
 ### deep reinforcement learning
 
-  ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1701.07274) by Yuxi Li `paper` ([slides](https://dropbox.com/s/kzkc8t61t7tz9eu/AISeminar.pdf))
+  ["A Brief Survey of Deep Reinforcement Learning"](https://arxiv.org/abs/1708.05866) by Arulkumaran et al. `paper`  
+  ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1701.07274) by Yuxi Li `paper` ([slides](https://dropbox.com/s/kzkc8t61t7tz9eu/AISeminar.pdf))  
+
+----
 
   [course](http://rll.berkeley.edu/deeprlcourse) by Sergey Levine, John Schulman and Chelsea Finn ([videos](https://youtube.com/playlist?list=PLkFD6_40KJIznC9CDbVTjAF2oyt8_VAe3))  
   [course](http://katefvision.github.io) by Ruslan Salakhutdinov and Katerina Fragkiadaki ([videos](https://youtube.com/playlist?list=PLpIxOj-HnDsNPFdu2UqCu2McJKHs-eWXv))  
@@ -362,9 +357,9 @@
   - no full access to analytic representation of loss function being optimized - value has to be queried by interaction with environment  
   - interacting with stateful environment (unknown, nonlinear, stochastic, arbitrarily complex) - next input depends on previous actions  
 
-  [differences](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) `video` (33:45) (*Csaba Szepesvari*)
+  [differences](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/#t=2026) `video` (*Csaba Szepesvari*)
 
-  [theory](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) `video` (13:01) (*Csaba Szepesvari*)
+  [theory](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/#t=782) `video` (*Csaba Szepesvari*)
 
   [expressivity, trainability, generalization](http://blog.evjang.com/2017/11/exp-train-gen.html) `post` (*Eric Jang*)
 
@@ -438,7 +433,8 @@
   - suboptimal values does not necessarily give suboptimal actions in every state (but optimal values do)  
   - easier generalization to continuous action spaces  
 
-  [overview](http://youtube.com/watch?v=P_agNaSrVhc) by Michael Littman `video`
+  [overview](http://argmin.net/2018/02/01/control-tour/) by Benjamin Recht  
+  [overview](http://youtube.com/watch?v=P_agNaSrVhc) by Michael Littman `video`  
 
 ----
 
@@ -564,7 +560,8 @@
 
   [bayesian reinforcement learning](#bayesian-reinforcement-learning)
 
-  [overview](https://youtu.be/sGuiWX07sKw?t=57m28s) by David Silver `video`  
+  [overview](https://youtu.be/sGuiWX07sKw?t=57m28s) by David Silver `video`
+
 
   ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](#efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search-guez-silver-dayan) by Guez et al. `paper` `summary`  
   ["Learning to Optimize Via Posterior Sampling"](#learning-to-optimize-via-posterior-sampling-russo-van-roy) by Russo and van Roy `paper` `summary`  
@@ -594,6 +591,7 @@
   **information theoretic and distributional models**:  
 >	"This approach is based on the use of representations, built by an agent, that estimate the distributions of probabilities of observing certain events ek in particular contexts, defined as mathematical configurations in the sensorimotor flow. There are several types of such events, but the probabilities that are measured are typically either the probability of observing a certain state SMk in the sensorimotor flow, denoted P(SMk), or the probability of observing particular transitions between states, such as P(SMk(t),SMl(t+1)), or the probability of observing a particular state after having observed a given state P(SMk(t+1)|SMl(t)). Here, the states SMk can either be direct numerical prototypes or complete regions within the sensorimotor space (and it may involve a mechanism for discretizing the space). We assume that the agent possesses a mechanism that allows it to build internally, and as it experiences the world, an estimation of the probability distribution of events across the whole space E of possible events (but the space of possible events is not predefined and should also be discovered by the agent, so typically this is an initially empty space that grows with experience)."
 
+
   - *uncertainty motivation*  
 	reward for every event inversely proportional to its probability of observation  
 
@@ -606,6 +604,7 @@
 
 	[interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---uncertainty-motivation)
 
+
   - *information gain motivation*  
 	reward for decrease of uncertainty in knowledge that agent has of environment after event has happened  
 
@@ -616,6 +615,7 @@
 	["Towards Information-Seeking Agents"](#towards-information-seeking-agents-bachman-sordoni-trischler) by Bachman et al. `paper` `summary`  
 
 	[interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---information-gain-motivation)
+
 
   - *empowerment*  
 	reward for sequences of actions that can transfer maximal amount of information in agent's observations of environment, i.e. agent's ability to influence environment  
@@ -631,8 +631,9 @@
   **predictive models**:  
 >	"Often, knowledge and expectations in agent are not represented by complete probability distributions, but rather based on the use of predictors such as neural networks that make direct predictions about future events. These predictors, denoted Π, are typically used to predict some properties or sensorimotor states that will happen in the future (close or far) given the current sensorimotor context SM(t) and possibly the past sensorimotor context."
 
+
   - *predictive novelty motivation*  
-	reward for interesting situations, for which prediction errors are highest  
+	reward for interesting situations, for which prediction errors are the highest  
 
 	["Incentivizing Exploration In Reinforcement Learning With Deep Predictive Models"](#incentivizing-exploration-in-reinforcement-learning-with-deep-predictive-models-stadie-levine-abbeel) by Stadie et al. `paper` `summary`  
 	["Curiosity-driven Exploration by Self-supervised Prediction"](#curiosity-driven-exploration-by-self-supervised-prediction-pathak-agrawal-efros-darrell) by Pathak et al. `paper` `summary`  
@@ -642,6 +643,7 @@
 	["Improving Policy Gradient by Exploring Under-appreciated Rewards"](#improving-policy-gradient-by-exploring-under-appreciated-rewards-nachum-norouzi-schuurmans) by Nachum et al. `paper` `summary`  
 
 	[interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---predictive-novelty-motivation)
+
 
   - *learning progress motivation*  
 	reward for prediction progress, i.e. decrease of prediction errors  
@@ -653,6 +655,7 @@
 
 	[interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---learning-progress-motivation)
 
+
   - *predictive familiarity motivation*  
 	reward for situations which are very predictable and thus familiar  
 
@@ -662,6 +665,7 @@
   **competence-based models**:  
 >	"A third major computational approach to intrinsic motivation is based on measures of competence that an agent has for achieving self-determined results or goals. Central here is the concept of “challenge”, with associated measures of difficulty as well as measures of actual performance. A “challenge” or “goal” here will be any sensorimotor configuration, or any set of properties of a sensorimotor configuration, that an agent sets by itself and that it tries to achieve through action. It is the properties of the achievement process, rather than the “meaning” of the particular goal being achieved, that will determine the level of interestingness of the associated activity. While prediction mechanisms or probability models, as used in previous sections, can be used in the goal-reaching architecture, they are not mandatory. The capacity to predict what happens in a situation can be sometimes only loosely coupled to the capacity to modify a situation in order to achieve a given self-determined goal."
 
+
   - *maximizing incompetence motivation*  
 	reward for setting challenges/goals for which agent's performance is lowest  
 
@@ -670,12 +674,14 @@
 
 	[interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---competence-based-models---maximizing-incompetence-motivation)
 
+
   - *maximizing competence progress*  
 	reward for interestingness of challenge as competence progress that is experienced as agent repeatedly tries to achieve it  
 
 
   **morphological models**:  
 >	"The three previous computational approaches to motivation were based on measures comparing information characterizing a stimulus perceived in the present and information characterizing stimuli perceived in the past and represented in memory. A fourth approach that can be taken is based on the comparison of information characterizing several pieces of stimuli perceived at the same time in several parts of the perceptive field. Pragmatically, this approach consists in attributing interest depending on morphological mathematical properties of the current flow of sensorimotor values, irrespective of what the internal cognitive system might predict or master."
+
 
   - *synchronicity motivation*  
 	high short-term correlation between a maximally large number of sensorimotor channels  
@@ -701,7 +707,7 @@
 ----
 
   [introduction](http://youtube.com/watch?v=sGuiWX07sKw) by David Silver `video`  
-  [overview](http://youtube.com/watch?v=fIKkhoI1kF4&t=19m22s) by Emma Brunskill `video`  
+  [overview](http://youtu.be/fIKkhoI1kF4?t=19m23s) by Emma Brunskill `video`  
 
   [introduction](http://banditalgs.com/2016/09/04/bandits-a-new-beginning/) by Csaba Szepesvari  
 
@@ -1565,6 +1571,7 @@ interesting recent papers:
   - `code` <https://github.com/tensorflow/minigo>
   - `code` <https://github.com/gcp/leela-zero/>
   - `paper` ["Reinforcement Learning as Classification: Leveraging Modern Classifiers"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.7.474&rep=rep1&type=pdf) by Lagoudakis and Parr
+  - `paper` ["Approximate Modified Policy Iteration and its Application to the Game of Tetris"](http://jmlr.org/papers/v16/scherrer15a.html) by Scherrer et al.
 
 
 #### ["Thinking Fast and Slow with Deep Learning and Tree Search"](https://arxiv.org/abs/1705.08439) Anthony, Tian, Barber
@@ -1944,20 +1951,24 @@ interesting recent papers:
 #### ["Approximate Bayes Optimal Policy Search using Neural Networks"](http://orbi.ulg.ac.be/bitstream/2268/204410/1/ANN-BRL.pdf) Castronovo, Francois-Lavet, Fonteneau, Ernst, Couetoux
 >	"Bayesian Reinforcement Learning agents aim to maximise the expected collected rewards obtained when interacting with an unknown Markov Decision Process while using some prior knowledge. State-of-the-art BRL agents rely on frequent updates of the belief on the MDP, as new observations of the environment are made. This offers theoretical guarantees to converge to an optimum, but is computationally intractable, even on small-scale problems. In this paper, we present a method that circumvents this issue by training a parametric policy able to recommend an action directly from raw observations. Artificial Neural Networks are used to represent this policy, and are trained on the trajectories sampled from the prior. The trained model is then used online, and is able to act on the real MDP at a very low computational cost. Our new algorithm shows strong empirical performance, on a wide range of test problems, and is robust to inaccuracies of the prior distribution."
 
+>	"Bayes-Adaptive Markov Decision Processes form a natural framework to deal with sequential decision-making problems when some of the information is hidden. In these problems, an agent navigates in an initially unknown environment and receives a numerical reward according to its actions. However, actions that yield the highest instant reward and actions that maximise the gathering of knowledge about the environment are often different. The BAMDP framework leads to a rigorous definition of an optimal solution to this learning problem, which is based on finding a policy that reaches an optimal balance between exploration and exploitation. In this research, the case where prior knowledge is available about the environment is studied. More specifically, this knowledge is represented as a random distribution over possible environments, and can be updated as the agent makes new observations."
+
 >	"State-of-the-art Bayesian algorithms generally do not use offline training. Instead, they rely on Bayes updates and sampling techniques during the interaction, which may be too computationally expensive, even on very small MDPs. In order to reduce significantly this cost, we propose a new practical algorithm to solve BAMDPs: Artificial Neural Networks for Bayesian Reinforcement Learning. Our algorithm aims at finding an optimal policy, i.e. a mapping from observations to actions, which maximises the rewards in a certain environment. This policy is trained to act optimally on some MDPs sampled from the prior distribution, and then it is used in the test environment. By design, our approach does not use any Bayes update, and is thus computationally inexpensive during online interactions."
 
 >	"We developed ANN-BRL, an offline policy-search algorithm for addressing BAMDPs. As shown by our experiments, ANN-BRL obtained state-of-the-art performance on all benchmarks considered in this paper. In particular, on the most challenging benchmark 9, a score 4 times higher than the one measured for the second best algorithm has been observed. Moreover, ANN-BRL is able to make online decisions faster than most BRL algorithms. Our idea is to define a parametric policy as an ANN, and train it using backpropagation algorithm. This requires a training set made of observations-action pairs and in order to generate this dataset, several simulations have been performed on MDPs drawn from prior distribution. In theory, we should label each example with a Bayes optimal action. However, those are too expensive to compute for the whole dataset. Instead, we chose to use optimal actions under full observability hypothesis. Due to the modularity of our approach, a better labelling technique could easily be integrated in ANN-BRL, and may bring stronger empirical results. Moreover, two types of features have been considered for representing the current history: Q-values and transition counters. The use of Q-values allows to reach state-of-the-art performance on most benchmarks and outperfom all other algorithms on the most difficult one. On the contrary, computing a good policy from transition counters only is a difficult task to achieve, even for Artificial Neural Networks. Nevertheless, we found that the difference between this approach and state-of-the-art algorithms was much less noticeable when prior distribution differs from test distribution, which means that at least in some cases, it is possible to compute efficient policies without relying on online computationally expensive tools such as Q-values."
 
 
 #### ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](http://arxiv.org/abs/1611.02779) Duan, Schulman, Chen, Bartlett, Sutskever, Abbeel
->	"Deep reinforcement learning (deep RL) has been successful in learning sophisticated behaviors automatically; however, the learning process requires a huge number of trials. In contrast, animals can learn new tasks in just a few trials, benefiting from their prior knowledge about the world. This paper seeks to bridge this gap. Rather than designing a "fast" reinforcement learning algorithm, we propose to represent it as a recurrent neural network (RNN) and learn it from data. In our proposed method, RL^2, the algorithm is encoded in the weights of the RNN, which are learned slowly through a general-purpose ("slow") RL algorithm. The RNN receives all information a typical RL algorithm would receive, including observations, actions, rewards, and termination flags; and it retains its state across episodes in a given Markov Decision Process (MDP). The activations of the RNN store the state of the "fast" RL algorithm on the current (previously unseen) MDP. We evaluate RL^2 experimentally on both small-scale and large-scale problems. On the small-scale side, we train it to solve randomly generated multi-arm bandit problems and finite MDPs. After RL^2 is trained, its performance on new MDPs is close to human-designed algorithms with optimality guarantees. On the large-scale side, we test RL^2 on a vision-based navigation task and show that it scales up to high-dimensional problems."
+>	"Deep reinforcement learning has been successful in learning sophisticated behaviors automatically; however, the learning process requires a huge number of trials. In contrast, animals can learn new tasks in just a few trials, benefiting from their prior knowledge about the world. This paper seeks to bridge this gap. Rather than designing a "fast" reinforcement learning algorithm, we propose to represent it as a recurrent neural network and learn it from data. In our proposed method, RL^2, the algorithm is encoded in the weights of the RNN, which are learned slowly through a general-purpose ("slow") RL algorithm. The RNN receives all information a typical RL algorithm would receive, including observations, actions, rewards, and termination flags; and it retains its state across episodes in a given Markov Decision Process. The activations of the RNN store the state of the "fast" RL algorithm on the current (previously unseen) MDP. We evaluate RL^2 experimentally on both small-scale and large-scale problems. On the small-scale side, we train it to solve randomly generated multi-arm bandit problems and finite MDPs. After RL^2 is trained, its performance on new MDPs is close to human-designed algorithms with optimality guarantees. On the large-scale side, we test RL^2 on a vision-based navigation task and show that it scales up to high-dimensional problems."
 
->	"This paper suggests a different approach for designing better reinforcement learning algorithms: instead of acting as the designers ourselves, learn the algorithm end-to-end using standard reinforcement learning techniques. That is, the “fast” RL algorithm is a computation whose state is stored in the RNN activations, and the RNN’s weights are learned by a general-purpose “slow” reinforcement learning algorithm. Our method, RL^2, has demonstrated competence comparable with theoretically optimal algorithms in small-scale settings. We have further shown its potential to scale to high-dimensional tasks. In the experiments, we have identified opportunities to improve upon RL^2: the outer-loop reinforcement learning algorithm was shown to be an immediate bottleneck, and we believe that for settings with extremely long horizons, better architecture may also be required for the policy. Although we have used generic methods and architectures for the outer-loop algorithm and the policy, doing this also ignores the underlying episodic structure. We expect algorithms and policy architectures that exploit the problem structure to significantly boost the performance."
+>	"Although Bayesian reinforcement learning provides a solid framework for incorporating prior knowledge into the learning process, exact computation of the Bayesian update is intractable in all but the simplest cases. Thus, practical reinforcement learning algorithms often incorporate a mixture of Bayesian and domain-specific ideas to bring down sample complexity and computational burden. Notable examples include guided policy search with unknown dynamics and PILCO. These methods can learn a task using a few minutes to a few hours of real experience, compared to days or even weeks required by previous methods. However, these methods tend to make assumptions about the environment (e.g., instrumentation for access to the state at learning time), or become computationally intractable in high-dimensional settings. Rather than hand-designing domain-specific reinforcement learning algorithms, we take a different approach in this paper: we view the learning process of the agent itself as an objective, which can be optimized using standard reinforcement learning algorithms. The objective is averaged across all possible MDPs according to a specific distribution, which reflects the prior that we would like to distill into the agent. We structure the agent as a recurrent neural network, which receives past rewards, actions, and termination flags as inputs in addition to the normally received observations. Furthermore, its internal state is preserved across episodes, so that it has the capacity to perform learning in its own hidden activations. The learned agent thus also acts as the learning algorithm, and can adapt to the task at hand when deployed."
 
 >	"MDPs encountered in real world = tiny subset of all MDPs that could be defined"  
 >	"How to acquire a good prior for real-world MDPs?"  
 >	"How to design algorithms that make use of such prior information?"  
 >	"Key idea: learn a fast RL algorithm that make use of such prior information"  
+
+>	"This paper suggests a different approach for designing better reinforcement learning algorithms: instead of acting as the designers ourselves, learn the algorithm end-to-end using standard reinforcement learning techniques. That is, the “fast” RL algorithm is a computation whose state is stored in the RNN activations, and the RNN’s weights are learned by a general-purpose “slow” reinforcement learning algorithm."
 
 >	"RL agent = RNN = generic computation architecture  
 >	- different weights in the RNN means different RL algorithm and prior  
