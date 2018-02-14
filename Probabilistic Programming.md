@@ -143,11 +143,13 @@
 
   - [BayesDB](http://probcomp.org/bayesdb)
 
-	[overview](https://youtube.com/watch?v=-8QMqSWU76Q) by Vikash Mansinghka `video`
+	[overview](https://youtube.com/watch?v=-8QMqSWU76Q) by Vikash Mansinghka `video`  
+	[overview](https://youtu.be/Rte-y6ThwAQ?t=17m33s) by Vikash Mansinghka `video`  
 
   - [Venture](https://github.com/venture)
 
-	[overview](https://youtu.be/-8QMqSWU76Q?t=35m30s) by Vikash Mansinghka `video`
+	[overview](https://youtu.be/-8QMqSWU76Q?t=35m30s) by Vikash Mansinghka `video`  
+	[overview](https://youtu.be/Rte-y6ThwAQ?t=35m59s) by Vikash Mansinghka `video`  
 
 
 
@@ -226,6 +228,7 @@
 
   - `video` <https://youtube.com/watch?v=quPN7Hpk014> (Tenenbaum)
   - `video` <https://youtu.be/-8QMqSWU76Q?t=44m8s> (Mansinghka)
+  - `video` <https://youtu.be/Rte-y6ThwAQ?t=5m18s> (Mansinghka)
   - `video` <https://facebook.com/nipsfoundation/videos/1552060484885185/> (1:39:48) (Reed)
 
 

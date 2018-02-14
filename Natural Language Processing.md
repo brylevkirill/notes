@@ -642,14 +642,6 @@
   - `code` <https://github.com/fchollet/keras/blob/master/examples/imdb_fasttext.py>
 
 
-#### ["Linguistic Regularities in Sparse and Explicit Word Representations"](https://levyomer.files.wordpress.com/2014/04/linguistic-regularities-in-sparse-and-explicit-word-representations-conll-2014.pdf) Levy, Goldberg
->	"Recent work has shown that neural-embedded word representations capture many relational similarities, which can be recovered by means of vector arithmetic in the embedded space. We show that Mikolov et al.’s method of first adding and subtracting word vectors, and then searching for a word similar to the result, is equivalent to searching for a word that maximizes a linear combination of three pairwise word similarities. Based on this observation, we suggest an improved method of recovering relational similarities, improving the state-of-the-art results on two recent word-analogy datasets. Moreover, we demonstrate that analogy recovery is not restricted to neural word embeddings, and that a similar amount of relational similarities can be recovered from traditional distributional word representations."
-
->	"Paper tries to give some intuition for why the skip-gram models work on analogy tasks - it seems surprising that they should, as you wouldn't a priori expect that relationships between words are consistently encoded as linear translations in the vector space learned by these models. Levy and Goldberg show that these relationships still exist in what they call the "explicit" vector space (also called "count" models), so they are not a product of the neural network embedding, just preserved by it. But it turns out that you need to slightly change the similarity equation to match the performance of skip-gram with an explicit vector space - instead of adding together the similarities of the words in the analogy, you have to multiply them."
-
->	"This fascinating result raises a question: to what extent are the relational semantic properties a result of the embedding process? Experiments show that the RNN-based embeddings are superior to other dense representations, but how crucial is it for a representation to be dense and low-dimensional at all?"
-
-
 #### ["Neural Word Embedding as Implicit Matrix Factorization"](http://papers.nips.cc/paper/5477-neural-word-embedding-as-implicit-matrix-factorization.pdf) Levy, Goldberg
 >	"We analyze skip-gram with negative-sampling, a word embedding method introduced by Mikolov et al., and show that it is implicitly factorizing a word-context matrix, whose cells are the pointwise mutual information of the respective word and context pairs (shifted by a global constant). We find that another embedding method, NCE, is implicitly factorizing a similar matrix, where each cell is the (shifted) log conditional probability of a word given its context. We show that using a sparse Shifted Positive PMI word-context matrix to represent words improves results on two word similarity tasks and one of two analogy tasks. When dense, low-dimensional vectors are preferred, exact factorization with SVD can achieve solutions that are at least as good as SGNS’s solutions for word similarity tasks. On analogy questions SGNS remains superior to SVD. We conjecture that this stems from the weighted nature of SGNS’s factorization."
 
@@ -661,6 +653,7 @@
 
 >	"Skip-Gram Negative Sampling can be seen as producing two matrices, W for focus words and W ̃ for context words, such that their product WW ̃ approximates the observed PMI between respective word/context pairs. Given a specific focus word i and context word j, SGNS minimizes the magnitude of the difference between wiT*w ̃j and pmi(i; j), tempered by a monotonically increasing weighting function of the observed co-occurrence count."
 
+  - `video` <https://youtu.be/KEXWC-ICH_Y?t=28m51s> (Potapenko) `in russian`
   - `post` <https://minhlab.wordpress.com/2015/06/08/a-new-proof-for-the-equivalence-of-word2vec-skip-gram-and-shifted-ppmi/>
   - `post` <https://building-babylon.net/2016/05/12/skipgram-isnt-matrix-factorisation/>
   - `post` <http://blog.aylien.com/overview-word-embeddings-history-word2vec-cbow-glove/>
@@ -671,7 +664,7 @@
 
   - `video` <http://youtube.com/watch?v=gaVR3WnczOQ> (Ma)
   - `video` <http://youtube.com/watch?v=KR46z_V0BVw> (Arora)
-  - `video` <http://youtube.com/watch?v=BCsOrewkmH4> (Liang)
+  - `video` <http://youtube.com/watch?v=BCsOrewkmH4> (Ma)
   - `post` <http://www.offconvex.org/2015/12/12/word-embeddings-1/> + <http://www.offconvex.org/2016/02/14/word-embeddings-2/>
   - `notes` <https://akshayka.github.io/papers/html/arora2016pmi-embeddings.html>
   - `code` <https://github.com/YingyuLiang/SemanticVector>
@@ -805,7 +798,7 @@
 #### ["A Simple but Tough-to-Beat Baseline for Sentence Embeddings"](https://openreview.net/pdf?id=SyK00v5xx) Arora, Liang, Ma
 >	"The success of neural network methods for computing word embeddings has motivated methods for generating semantic embeddings of longer pieces of text, such as sentences and paragraphs. Surprisingly, Wieting et al (ICLR’16) showed that such complicated methods are outperformed, especially in out-of-domain (transfer learning) settings, by simpler methods involving mild retraining of word embeddings and basic linear regression. The method of Wieting et al. requires retraining with a substantial labeled dataset such as Paraphrase Database (Ganitkevitch et al., 2013). The current paper goes further, showing that the following completely unsupervised sentence embedding is a formidable baseline: Use word embeddings computed using one of the popular methods on unlabeled corpus like Wikipedia, represent the sentence by a weighted average of the word vectors, and then modify them a bit using PCA/SVD. This weighting improves performance by about 10% to 30% in textual similarity tasks, and beats sophisticated supervised methods including RNN’s and LSTM’s. It even improves Wieting et al.’s embeddings. This simple method should be used as the baseline to beat in future, especially when labeled training data is scarce or nonexistent. The paper also gives a theoretical explanation of the success of the above unsupervised method using a latent variable generative model for sentences, which is a simple extension of the model in Arora et al. (TACL’16) with new “smoothing” terms that allow for words occurring out of context, as well as high probabilities for words like and, not in all contexts."
 
-  - `video` <https://youtube.com/watch?v=BCsOrewkmH4> (Liang)
+  - `video` <https://youtube.com/watch?v=BCsOrewkmH4> (Ma)
   - `video` <https://youtu.be/KR46z_V0BVw?t=49m10s> (Arora)
   - `post` <https://akshayka.github.io/papers/html/arora2017sentence-embeddings.html>
   - `code` <https://github.com/PrincetonML/SIF>

@@ -15,7 +15,9 @@
   [course](http://homepages.inf.ed.ac.uk/vlavrenk/tts.html) by Victor Lavrenko
 	([videos](http://youtube.com/user/victorlavrenko/playlists?view=1&sort=dd))  
 
-  ["Foundations of Information Retrieval"](https://drive.google.com/file/d/0B-GJrccmbImkZ3pjNl9sczQxd3M) by Maarten de Rijke (SIGIR 2017) `slides`  
+  ["Foundations of Information Retrieval"](https://drive.google.com/file/d/0B-GJrccmbImkZ3pjNl9sczQxd3M) by Maarten de Rijke (SIGIR 2017) `slides`
+
+  ["Neural Networks for Information Retrieval"](http://nn4ir.com/wsdm2018/) tutorial (WSDM 2018) `slides`  
   ["Neural Text Embeddings for Information Retrieval"](https://microsoft.com/en-us/research/event/wsdm-2017-tutorial-neural-text-embeddings-information-retrieval/)
 	tutorial by Bhaskar Mitra and Nick Craswell (WSDM 2017)
 	([slides](https://slideshare.net/BhaskarMitra3/neural-text-embeddings-for-information-retrieval-wsdm-2017), [paper](https://arxiv.org/abs/1705.01509))  

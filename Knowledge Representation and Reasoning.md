@@ -641,6 +641,7 @@
 
   [overview](http://facebook.com/nipsfoundation/videos/1554329184658315/) by Lise Getoor `video`  
   [overview](http://youtube.com/watch?v=1lwGKhFAXU0) by Lise Getoor `video`  
+  [overview](http://youtube.com/watch?v=v7WjCVYoxtQ) by Lise Getoor `video`  
 
 ----
 
@@ -1832,6 +1833,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
   - `slides` <http://aitp-conference.org/2017/slides/Tim_aitp.pdf> (Rocktaschel)
   - `slides` <http://on-demand.gputechconf.com/gtc-eu/2017/presentation/23372-tim-rocktäschel-gpu-accelerated-deep-neural-networks-for-end-to-end-differentiable-planning-and-reasoning.pdf> (Rocktaschel)
   - `audio` <https://soundcloud.com/nlp-highlights/19a> (Rocktaschel)
+  - `code` <https://github.com/uclmr/ntp>
   - `paper` ["Learning Knowledge Base Inference with Neural Theorem Provers"](http://akbc.ws/2016/papers/14_Paper.pdf) by Rocktaschel and Riedel
 
 
@@ -1971,6 +1973,9 @@ these knowledge bases are greatly incomplete. For example, over 70% of people in
 
   - `video` <https://youtube.com/watch?v=JNNpJ7HAKtk> (Mitchell)
   - `video` <https://youtu.be/PF6ViL5pcGs?t=5m3s> (Mitchell)
+  - `code` <https://github.com/eaplatanios/makina>
+  - `paper` ["Estimating Accuracy from Unlabeled Data: A Bayesian Approach"](http://proceedings.mlr.press/v48/platanios16) by Platanios, Dubey, Mitchell ([talk](http://techtalks.tv/talks/estimating-accuracy-from-unlabeled-data-a-bayesian-approach/62629/) by Anthony Platanios `video`)
+  - `paper` ["Estimating Accuracy from Unlabeled Data: A Probabilistic Logic Approach"](https://arxiv.org/abs/1705.07086) by Platanios, Poon, Mitchell, Horvitz
 
 
 #### ["Data Fusion: Resolving Conflicts from Multiple Sources"](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/41657.pdf) Dong, Berti-Equille, Srivastava

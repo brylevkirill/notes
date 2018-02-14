@@ -1264,6 +1264,7 @@ Yoshua Bengio:
   `generalization` `optimization`
 >	"We show that parametric models trained by a stochastic gradient method with few iterations have vanishing generalization error. We prove our results by arguing that SGM is algorithmically stable in the sense of Bousquet and Elisseeff. Our analysis only employs elementary tools from convex and continuous optimization. We derive stability bounds for both convex and non-convex optimization under standard Lipschitz and smoothness assumptions. Applying our results to the convex case, we provide new insights for why multiple epochs of stochastic gradient methods generalize well in practice. In the non-convex case, we give a new interpretation of common practices in neural networks, and formally show that popular techniques for training large deep models are indeed stability-promoting. Our findings conceptually underscore the importance of reducing training time beyond its obvious benefit."
 
+  - `video` <http://techtalks.tv/talks/train-faster-generalize-better-stability-of-stochastic-gradient-descent/62637/> (Recht)
   - `post` <http://argmin.net/2016/04/18/bottoming-out/> (Recht)
   - `post` <http://www.offconvex.org/2016/03/14/stability/> (Hardt)
   - `post` <http://www.offconvex.org/2016/03/22/saddlepoints/> (Ge)
@@ -1346,6 +1347,7 @@ Yoshua Bengio:
 
   - `video` <https://youtube.com/watch?v=btr1poCYIzw>
   - `video` <http://videolectures.net/deeplearning2017_johnson_graphical_models/> (Johnson)
+  - `video` <https://youtube.com/watch?v=KcbfuUJ_a0A> (Johnson)
   - `video` <https://youtube.com/watch?v=vnO3w8OgTE8> (Duvenaud)
   - `audio` <https://youtube.com/watch?v=P7zucOImw04> (Duvenaud)
   - `slides` <http://www.cs.toronto.edu/~duvenaud/courses/csc2541/slides/svae-slides.pdf>
@@ -1370,6 +1372,7 @@ Yoshua Bengio:
 >	"Potentially a more powerful alternative to Variational Autoencoder."
 
   - `video` <http://techtalks.tv/talks/neural-statistician/63048/> (Edwards)
+  - `video` <https://youtube.com/watch?v=29t1qc7IWro> (Edwards)
   - `video` <https://youtu.be/XpIDCzwNe78?t=51m53s> (Bartunov)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.02185>
 
@@ -1387,6 +1390,7 @@ Yoshua Bengio:
 >	"Black-box alpha is a new approximate inference method based on the minimization of α-divergences. BB-α scales to large datasets because it can be implemented using stochastic gradient descent. BB-α can be applied to complex probabilistic models with little effort since it only requires as input the likelihood function and its gradients. These gradients can be easily obtained using automatic differentiation. By changing the divergence parameter α, the method is able to interpolate between variational Bayes (VB) (α→ 0) and an algorithm similar to expectation propagation (EP) (α= 1). Experiments on probit regression and neural network regression and classification problems show that BB-α with non-standard settings of α, such as α= 0.5, usually produces better predictions than with α→ 0 (VB) or α= 1 (EP)."
 >	"We have proposed BB-α as a black-box inference algorithm to approximate power EP. This is done by considering the energy function used by power EP and constraining the form of the site approximations in this method. The proposed method locally minimizes the α-divergence that is a rich family of divergence measures between distributions including the Kullback-Leibler divergence. Such a method is guaranteed to converge under certain conditions, and can be implemented by optimizing an energy function without having to use inefficient double-loop algorithms. Scalability to large datasets can be achieved by using stochastic gradient descent with minibatches. Furthermore, a combination of a Monte Carlo approximation and automatic differentiation methods allows our technique to be applied in a straightforward manner to a wide range ofprobabilistic models with complex likelihood factors. Experiments with neural networks applied to small and large datasets demonstrate both the accuracy and the scalability of the proposed approach. The evaluations also indicate the optimal setting for α may vary for different tasks."
 
+  - `video` <http://techtalks.tv/talks/black-box-alpha-divergence-minimization/62506/> (Hernandez-Lobato)
   - `video` <https://youtube.com/watch?v=Ev-6s8b3QrI> (Hernandez-Lobato)
 
 
@@ -2673,6 +2677,7 @@ x."
 
 >	"As machine learning is becoming a major tool for researchers and policy makers across different fields such as healthcare and economics, causal inference becomes a crucial issue for the practice of machine learning. In this paper we focus on counterfactual inference, which is a widely applicable special case of causal inference. We cast counterfactual inference as a type of domain adaptation problem, and derive a novel way of learning representations suited for this problem. Our models rely on a novel type of regularization criteria: learning balanced representations, representations which have similar distributions among the treated and untreated populations. We show that trading off a balancing criterion with standard data fitting and regularization terms is both practically and theoretically prudent. Open questions which remain are how to generalize this method for cases where more than one treatment is in question, deriving better optimization algorithms and using richer discrepancy measures."
 
+  - `video` <http://techtalks.tv/talks/learning-representations-for-counterfactual-inference/62489/> (Johansson)
   - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (Shalit)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/JohanssonSS16>
   - `code` <https://github.com/clinicalml/cfrnet>
@@ -2836,6 +2841,5 @@ x."
 
   - `video` <https://youtube.com/watch?v=hnT-P3aALVE> (demo)
   - `video` <http://youtube.com/watch?v=TQ_hJ63YCTw#t=22m> (demo)
-  - `video` <http://techtalks.tv/talks/generative-adversarial-text-to-image-synthesis/62602/>
   - `code` <https://github.com/reedscot/icml2016>
   - `code` <https://github.com/paarthneekhara/text-to-image>

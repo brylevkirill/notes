@@ -33,11 +33,11 @@
   - Richard Sutton  
 	["The Future of Artificial Intelligence Belongs to Search and Learning"](http://www.fields.utoronto.ca/talks/advances-reinforcement-learning) `video`  
 
+  - Joshua Tenenbaum  
+	["Building Machines That See, Learn and Think Like People"](https://youtube.com/watch?v=7ROelYvo8f0) `video`  
+
   - David Ferucci  
 	["AI: A Return To Meaning"](https://youtube.com/watch?v=1n-cwezu8j4) `video`  
-
-  - Joshua Tenenbaum  
-	["Building Machines That Learn like Humans"](https://youtube.com/watch?v=quPN7Hpk014) `video`  
 
 ----
 
@@ -58,6 +58,10 @@
   [introductory course](https://agi.mit.edu) from MIT `video`  
 
   [introductory notes](http://frnsys.com/ai_notes/) by Francis Tseng
+
+----
+
+  ["The Limits of Modern AI: A Story"](https://thebestschools.org/magazine/limits-of-modern-ai/) by Erik Larson
 
 
 

@@ -157,6 +157,10 @@
   - ICLR 2018  
 	<http://search.iclr2018.smerity.com/>  
 	<http://iclr2018.mmanukyan.io>  
+	<http://chillee.github.io/OpenReviewExplorer>  
+
+  - AAAI 2018  
+	<https://cs.brown.edu/people/dabel/blog/posts/misc/aaai_2018.pdf> `notes`
 
   - NIPS 2017  
 	<https://nips.cc/Conferences/2017/Videos> `video`  
@@ -167,6 +171,8 @@
 	<https://github.com/hindupuravinash/nips2017>  
 	<https://github.com/kihosuh/nips_2017>  
 	<https://github.com/sbarratt/nips2017>  
+
+	<https://cs.brown.edu/~dabel/blog/posts/misc/nips_2017.pdf> `notes`
 
   - ICML 2017  
 	<https://icml.cc/Conferences/2017/Videos> `video`
@@ -518,6 +524,8 @@
 
   ["TerpreT: A Probabilistic Programming Language for Program Induction"](https://arxiv.org/abs/1608.04428) by Gaunt et al. `paper`  
   ["Learning Explanatory Rules from Noisy Data"](https://arxiv.org/abs/1711.04574) by Evans and Grefenstette `paper`  
+
+  ["Recent Advances in Neural Program Synthesis"](https://arxiv.org/abs/1802.02353) by Kant `paper`
 
   [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#program-induction)  
   [selected papers](https://dropbox.com/sh/vrr1gs798zy02n1/AACj7hlXOiRt1nXltXVC-2Wca)  

@@ -652,7 +652,10 @@
 
   ["The Art and Science of Cause and Effect"](http://bayes.cs.ucla.edu/BOOK-2K/causality2-epilogue.pdf) by Judea Pearl `paper`
 
-  ["Elements of Causal Inference"](https://mitpress.mit.edu/books/elements-causal-inference) book by Jonas Peters, Dominik Janzing, Bernhard Scholkopf
+----
+
+  ["Elements of Causal Inference"](https://mitpress.mit.edu/books/elements-causal-inference) book by Jonas Peters, Dominik Janzing, Bernhard Scholkopf  
+  ["Causal Inference Book"](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/) book by Miguel Hernan and James Robins  
 
 ----
 
@@ -681,6 +684,7 @@
 	([talk](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3) by Uri Shalit `video`)  
   ["Causal Effect Inference with Deep Latent-Variable Models"](https://arxiv.org/abs/1705.08821) by Louizos et al. `paper`  
   ["Implicit Causal Models for Genome-wide Association Studies"](https://arxiv.org/abs/1710.10742) by Tran and Blei `paper`  
+  ["Causal Generative Neural Networks"](https://arxiv.org/abs/1711.08936) by Goudet et al. `paper`  
 
 ----
 
