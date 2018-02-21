@@ -61,7 +61,9 @@
 
 ----
 
-  ["The Limits of Modern AI: A Story"](https://thebestschools.org/magazine/limits-of-modern-ai/) by Erik Larson
+  ["The Limits of Modern AI: A Story"](https://thebestschools.org/magazine/limits-of-modern-ai/) by Erik Larson  
+  ["Deep Reinforcement Learning Doesn't Work Yet"](https://www.alexirpan.com/2018/02/14/rl-hard.html) by Alex Irpan  
+  ["The Limitations of Deep Learning"](https://blog.keras.io/the-limitations-of-deep-learning.html) by Francois Chollet  
 
 
 

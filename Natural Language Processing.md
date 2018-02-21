@@ -517,6 +517,7 @@
 
   - <http://yerevann.com/dmn-ui/> (demo)
   - `video` <https://youtube.com/watch?v=T3octNTE7Is> (Socher)
+  - `video` <https://youtube.com/watch?v=FCtpHt6JEI8> (Socher)
   - `video` <http://videolectures.net/deeplearning2015_socher_nlp_applications/#t=2520> (Socher)
   - `notes` <https://theneuralperspective.com/2016/11/28/ask-me-anything-dynamic-memory-networks-for-natural-language-processing/>
   - `post` <http://yerevann.github.io/2016/02/05/implementing-dynamic-memory-networks/>

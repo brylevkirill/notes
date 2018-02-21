@@ -112,20 +112,11 @@
   - [AKBC 2014 (videos)](http://youtube.com/user/NeuralInformationPro/search?query=AKBC)  
   - [AKBC 2012 (videos)](http://videolectures.net/akbcwekex2012_montreal/)  
   - [AKBC 2010 (videos)](http://videolectures.net/akbc2010_grenoble/)  
-
-  [Knowledge Base Construction, Reasoning and Mining](http://kbcom.org) workshop
-
-  [Statistical and Relational](http://starai.org) workshop
-
-  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi/) workshop at NIPS 2016
-	([videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt))
-
-  ["Reasoning, Attention, Memory"](http://thespermwhale.com/jaseweston/ram/) workshop at NIPS 2015  
-  ["Cognitive Computation: Integrating Neural and Symbolic Approaches"](http://neural-symbolic.org/CoCo2015/) workshop at NIPS 2015  
-
-  ["Knowledge Representation and Reasoning: Integrating Symbolic and Neural Approaches"](https://sites.google.com/site/krr2015/) workshop
-
-  ["Learning Semantics"](https://sites.google.com/site/learningsemantics2014/) workshop
+  [Statistical Relational AI](http://starai.org) workshop  
+  [Knowledge Base Construction, Reasoning and Mining](http://kbcom.org) workshop  
+  [Machine Reading for Question Answering](https://mrqa2018.github.io) workshop  
+  [Neural Abstract Machines & Program Induction](https://uclmr.github.io/nampi/) workshop  
+  [Reasoning, Attention, Memory](http://thespermwhale.com/jaseweston/ram/) workshop  
 
 
 
@@ -1676,6 +1667,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
   - `video` <http://youtube.com/watch?v=kTXJCEvCDYk> (exhibition match against Ken Jennings)
   - `video` <http://youtube.com/watch?v=c2kGD1EdfFw> (exhibition match against Quiz Bowl champions)
   - `video` <http://youtube.com/watch?v=bYFqMINXayc> (exhibition match at HSNCT)
+  - `video` <http://youtube.com/watch?v=0kgnEUDMeug> (exhibition match at NIPS 2017)
   - `video` <http://youtube.com/watch?v=ZVHR8OAHDlI> (Boyd-Graber, Iyyer)
   - `video` <http://youtube.com/watch?v=ZRYObdTOaEI> (Iyyer)
   - `video` <http://youtube.com/watch?v=YArUk9QcMe0> (Boyd-Graber)
@@ -1827,6 +1819,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 >	- knowledge bases with <10k facts  
 >	- small proof depth"  
 
+  - `video` <https://youtube.com/watch?v=2ovZnvVPiQ8> (Rocktaschel)
   - `video` <https://facebook.com/nipsfoundation/videos/1554402331317667> (28:51)
   - `poster` <https://rockt.github.io/pdf/rocktaschel2017end-poster.pdf>
   - `slides` <https://rockt.github.io/pdf/rocktaschel2017end-slides.pdf> (Rocktaschel)

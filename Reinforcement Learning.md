@@ -237,6 +237,8 @@
   [overview](http://on-demand.gputechconf.com/gtc/2016/video/S6812.html) by Pieter Abbeel `video`  
   [overview](https://youtu.be/xe-z4i3l-iQ?t=30m35s) by Pieter Abbeel `video`  
 
+  ["Is (Deep) Reinforcement Learning Barking Up The Wrong Tree?"](https://youtube.com/watch?v=2GW7ozcUCFE) by Chris Atkeson `video`
+
   [interesting recent papers - imitation learning](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---imitation)
 
 
@@ -345,7 +347,51 @@
 ---
 ### problems
 
-  **reinforcement learning and supervised learning**
+  characteristics:  
+  - can learn any function  
+  - inherently handles uncertainty  
+    * uncertainty in actions
+    * uncertainty in observations
+  - directly maximizes criteria we care about  
+  - copes with delayed feedback  
+    * temporal credit assignment problem  
+
+  challenges:  
+  - stability (non-stationary and online data)  
+  - credit assigment (delayed rewards and consequences)  
+  - exploration vs exploitation (need for trial and error)  
+  - using learned model of environment  
+
+  problems:  
+  - adaptive methods for large number of conditions  
+  - exploration problem in large MDPs  
+  - learning and acting under partial information  
+  - hierarchical learning over multiple time scales  
+  - sample efficiency  
+  - algorithms for large or continuous action spaces  
+  - transfer learning  
+  - lifelong learning  
+  - efficient sample-based planning  
+  - multiagent or distributed learning  
+  - learning from demonstrations  
+
+----
+
+  components of algorithms  ([overview](https://youtube.com/watch?v=_UVYhuATS9E&t=2m44s) by Sergey Levine `video`):   
+  - generate samples / run the policy  
+  - fit a model / estimate the return  
+  - improve the policy  
+
+  classifications of methods  ([overview](http://incompleteideas.net/sutton/book/ebook/node105.html) by Sutton and Barto):  
+  - prediction vs control  
+  - MDPs vs bandits  
+  - model-based vs value-based vs policy-based  
+  - on-policy vs off-policy  
+  - bootstrapping vs Monte Carlo  
+
+
+----
+#### reinforcement learning vs supervised learning
 
   [differences](https://youtube.com/watch?v=2pWv7GOvuf0&t=9m37s) `video` (*David Silver*):  
   - there is no supervisor, only a reward signal  
@@ -359,57 +405,14 @@
 
   [differences](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/#t=2026) `video` (*Csaba Szepesvari*)
 
-  [theory](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/#t=782) `video` (*Csaba Szepesvari*)
-
-  [expressivity, trainability, generalization](http://blog.evjang.com/2017/11/exp-train-gen.html) `post` (*Eric Jang*)
-
 ----
 
-  characteristics:  
-  - can learn any function  
-  - inherently handles uncertainty  
-    * uncertainty in actions (the world)  
-    * uncertainty in observations (sensors)  
-  - directly maximises criteria we care about  
-  - copes with delayed feedback  
-    * temporal credit assignment problem  
+  ["Expressivity, Trainability, and Generalization in Machine Learning"](http://blog.evjang.com/2017/11/exp-train-gen.html) by Eric Jang  
+  ["An Outsider's Tour of Reinforcement Learning"](http://argmin.net/2018/02/20/outsider-rl/) by Benjamin Recht  
 
-  challenges:  
-  - stability (non-stationary, fleeting nature of time and online data)  
-  - credit assigment (delayed rewards and consequences)  
-  - exploration vs exploitation (need for trial and error)  
-  - using learned model of environment  
-
-  open problems:  
-  - adaptive methods which work under large number of conditions  
-  - addressing exploration problem in large MDPs  
-  - large-scale empirical evaluations  
-  - learning and acting under partial information  
-  - modular and hierarchical learning over multiple time scales  
-  - sample efficiency  
-  - improving existing value-function and policy search methods  
-  - algorithms that work well with large or continuous action spaces  
-  - transfer learning  
-  - lifelong learning  
-  - efficient sample-based planning (e.g., based on Monte-Carlo tree search)  
-  - multiagent or distributed learning  
-  - learning from demonstrations  
 
 ----
-
-  components of reinforcement learning algorithm  ([overview](https://youtube.com/watch?v=_UVYhuATS9E&t=2m44s) by Sergey Levine `video`):   
-  - generate samples / run the policy  
-  - fit a model / estimate the return  
-  - improve the policy  
-
-  dimensions for classification of methods  ([overview](http://incompleteideas.net/sutton/book/ebook/node105.html) by Sutton and Barto):  
-  - prediction vs control  
-  - MDPs vs bandits  
-  - model-based vs value-based vs policy-based  
-  - on-policy vs off-policy  
-  - bootstrapping vs Monte Carlo  
-
-----
+#### model-based vs value-based vs policy-based methods
 
   [**model-based methods**](#model-based-methods):  
   - build prediction model for next state and reward after action  
@@ -433,12 +436,13 @@
   - suboptimal values does not necessarily give suboptimal actions in every state (but optimal values do)  
   - easier generalization to continuous action spaces  
 
-  [overview](http://argmin.net/2018/02/01/control-tour/) by Benjamin Recht  
   [overview](http://youtube.com/watch?v=P_agNaSrVhc) by Michael Littman `video`  
+  [overview](http://argmin.net/2018/02/01/control-tour/) by Benjamin Recht  
+
 
 ----
+#### forms of supervision
 
-  **forms of supervision**  ([overview](https://youtu.be/hKeSPnvNNJ8?t=4m2s) by Sergey Levine `video`):  
   - scalar rewards  
   - demonstrated behavior (imitation, inferring reward)  
   - self-supervision, prediction (model-based control)  
@@ -448,12 +452,14 @@
     * task-relevant properties of environment  
     * exploration and intrinsic motivation  
 
+  [overview](https://youtu.be/hKeSPnvNNJ8?t=4m2s) by Sergey Levine `video`
+
   ["Utilities"](https://youtube.com/watch?v=yA6wXERug70) by Pieter Abbeel `video`  
   ["Rethinking State Action and Reward in Reinforcement Learning"](https://youtube.com/watch?v=MhIP1SOqlS8) by Satinder Singh `video`  
 
-----
 
-  **imitation learning** / **behavioral cloning**
+----
+#### imitation learning / behavioral cloning
 
   - learn agent's behavior in environment with unknown cost function via imitation of another agent's behavior
 
@@ -469,9 +475,9 @@
 
   [interesting papers](#interesting-papers---behavioral-cloning)
 
-----
 
-  **inverse reinforcement learning**
+----
+#### inverse reinforcement learning
 
   - infer underlying reward structure guiding agent’s behavior based on observations and model of environment  
   - learn reward structure for modelling purposes or for imitation of another agent's behavior (apprenticeship)  
@@ -485,15 +491,13 @@
 
   [interesting papers](#interesting-papers---inverse-reinforcement-learning)
 
-----
 
+----
   [**exploration and intrinsic motivation**](#exploration-and-intrinsic-motivation)
 
-  [interesting papers](#interesting-papers---exploration-and-intrinsic-motivation)
 
 ----
-
-  **hierarchical reinforcement learning**
+#### hierarchical reinforcement learning
  
   - simplify dimensionality of the action spaces over which we need to reason  
   - enable quick planning and execution of low-level actions (such as robot movements)  
@@ -506,15 +510,15 @@
   ["Towards Representations for Efficient Reinforcement Learning"](https://youtube.com/watch?v=Pk3E5zqhl9k) by Emma Brunskill `video`  
 
   Options framework:  
-	[introduction](http://videolectures.net/deeplearning2016_precup_advanced_lr/) by Doina Precup `video`  
+	[overview](http://videolectures.net/deeplearning2016_precup_advanced_lr/) by Doina Precup `video`  
 	["Temporal Abstraction in Reinforcement Learning"](https://youtube.com/watch?v=GntIVgNKkCI) by Doina Precup `video`  
 	["Advances in Option Construction: The Option-Critic Architecture"](https://youtube.com/watch?v=8r_EoYnPjGk) by Pierre-Luc Bacon `video`  
 
   [interesting papers](#interesting-papers---hierarchical-reinforcement-learning)
 
-----
 
-  **off-policy learning**
+----
+#### off-policy learning
 
   Updates to a statistic of a dynamical process are said to be off-policy if their distribution does not match the dynamics of the process, particularly if the mismatch is due to the way actions are chosen. The prototypical example is learning of value function for one policy, the target policy, using data obtained while following another policy, the behavior policy.
 
@@ -569,8 +573,10 @@
   ["A Tutorial on Thompson Sampling"](https://arxiv.org/abs/1707.02038) by Russo et al. `paper`  
   ["Nonparametric General Reinforcement Learning"](#nonparametric-general-reinforcement-learning-leike) by Leike `paper` `summary`  *(estimating reward by sampling environment model from posterior distribution and running episode using it)*  
   ["Weight Uncertainty in Neural Networks"](#weight-uncertainty-in-neural-networks-blundell-cornebise-kavukcuoglu-wierstra) by Blundell et al. `paper` `summary`  *(training bayesian neural network to predict reward, sampling particular network weights from posterior and choosing action with highest predicted reward)*  
+  ["BBQ-Networks: Efficient Exploration in Deep Reinforcement Learning for Task-Oriented Dialogue Systems"](https://arxiv.org/abs/1608.05081) by Lipton et al. `paper`  
   ["Deep Exploration via Bootstrapped DQN"](#deep-exploration-via-bootstrapped-dqn-osband-blundell-pritzel-van-roy) by Osband et al. `paper` `summary`  *(training multiple value function networks with shared bottom layers using bootstrapping, sampling value function network and running episode using it)*  
   ["Deep Exploration via Randomized Value Functions"](#deep-exploration-via-randomized-value-functions-osband-russo-wen-van-roy) by Osband et al. `paper` `summary`  
+  ["Efficient Exploration through Bayesian Deep Q-Networks"](https://arxiv.org/abs/1802.04412) by Azizzadenesheli et al. `paper`  
   ["Noisy Networks for Exploration"](#noisy-networks-for-exploration-fortunato-et-al) by Fortunato et al. `paper` `summary`  
   ["Approximate Bayes Optimal Policy Search using Neural Networks"](#approximate-bayes-optimal-policy-search-using-neural-networks-castronovo-francois-lavet-fonteneau-ernst-couetoux) by Castronovo et al. `paper` `summary`  
   ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](#rl2-fast-reinforcement-learning-via-slow-reinforcement-learning-duan-schulman-chen-bartlett-sutskever-abbeel) by Duan et al. `paper` `summary`  
@@ -706,10 +712,10 @@
 
 ----
 
-  [introduction](http://youtube.com/watch?v=sGuiWX07sKw) by David Silver `video`  
+  [overview](http://youtube.com/watch?v=sGuiWX07sKw) by David Silver `video`  
   [overview](http://youtu.be/fIKkhoI1kF4?t=19m23s) by Emma Brunskill `video`  
 
-  [introduction](http://banditalgs.com/2016/09/04/bandits-a-new-beginning/) by Csaba Szepesvari  
+  [overview](http://banditalgs.com/2016/09/04/bandits-a-new-beginning/) by Csaba Szepesvari
 
   ["Efficient Experimentation and the Multi-Armed Bandit"](http://iosband.github.io/2015/07/19/Efficient-experimentation-and-multi-armed-bandits.html) by Ian Osband  
   ["Optimism in the Face of Uncertainty: the UCB1 Algorithm"](http://jeremykun.com/2013/10/28/optimism-in-the-face-of-uncertainty-the-ucb1-algorithm/) by Jeremy Kun  
@@ -1169,7 +1175,7 @@
 ---
 ### policy-based methods
 
-  introduction by Andrej Karpathy ([post](http://karpathy.github.io/2016/05/31/rl), [talk](https://youtube.com/watch?v=tqrcjHuNdmQ) `video`)
+  introduction by Andrej Karpathy ([post](http://karpathy.github.io/2016/05/31/rl), [talk](https://youtube.com/watch?v=tqrcjHuNdmQ) `video`)  
 
   [introduction](http://youtube.com/watch?v=S_gwYj1Q-44) by Pieter Abbeel `video`  
   [introduction](http://youtube.com/watch?v=KHZVXao4qXs) by David Silver `video`  
@@ -1229,7 +1235,7 @@
 ----
 #### Cross-Entropy Method (CEM)
 
-  no policy gradient estimation, evolutionary algorithm with selection buth without recombination and mutation
+  no policy gradient estimation, evolutionary algorithm with selection operator buth without recombination and mutation operators
 
   "If your policy has a small number of parameters (say 20), and sometimes even if it has a moderate number (say 2000), you might be better off using the Cross-Entropy Method than any of the fancy methods. It works like this:  
   - Sample n sets of parameters from some prior that allows for closed-form updating, e.g. a multivariate Gaussian.  
@@ -1255,7 +1261,7 @@
 
   "Evolutionary computation is one of the most useful practical methods for direct search in policy space, especially when there is no teacher who knows which output actions the system should produce at which time. Especially in partially observable environments where memories of previous events are needed to disambiguate states, this often works much better than other reinforcement learning techniques based on dynamic programming. In case of teacher-given desired output actions or labels, gradient descent such as backpropagation (also through time) usually works much better, especially for NNs with many weights."
 
-  *(Juergen Schmidhuber)*
+  [*(Juergen Schmidhuber)*](https://reddit.com/r/MachineLearning/comments/2xcyrl/i_am_jürgen_schmidhuber_ama/cp48nkc/)
 
 ----
 
@@ -1265,43 +1271,9 @@
 
   <http://scholarpedia.org/article/Evolution_strategies>
 
-----
-
   ["Completely Derandomized Self-Adaptation in Evolution Strategies"](https://www.lri.fr/~hansen/cmaartic.pdf) (CMA-ES) by Hansen and Ostermeier `paper`  
   ["Natural Evolution Strategies"](http://jmlr.org/papers/volume15/wierstra14a/wierstra14a.pdf) by Wierstra et al. `paper`  
-
-----
-
-  ["Evolution Strategies as a Scalable Alternative to Reinforcement Learning"](#evolution-strategies-as-a-scalable-alternative-to-reinforcement-learning-salimans-ho-chen-sutskever) by Salimans, Ho, Chen, Sutskever `paper` `summary`
-
-  <https://blog.openai.com/evolution-strategies/> :  
->	"Our work demonstrates that ES achieves strong performance, dispelling the common belief that ES methods are impossible to apply to high dimensional problems."  
->	"ES rivals the performance of standard RL techniques on modern benchmarks, while overcoming many of RL’s inconveniences. ES is simpler to implement (there is no need for backpropagation), it is easier to scale in a distributed setting, it does not suffer in settings with sparse rewards, and has fewer hyperparameters. This outcome is surprising because ES resembles simple hill-climbing in a high-dimensional space based only on finite differences along a few random directions at each step."  
->
->	"Mathematically, you’ll notice that this is also equivalent to estimating the gradient of the expected reward in the parameter space using finite differences, except we only do it along 100 random directions. Yet another way to see it is that we’re still doing RL (Policy Gradients, or REINFORCE specifically), where the agent’s actions are to emit entire parameter vectors using a gaussian policy."  
->	"Notice that the objective is identical to the one that RL optimizes: the expected reward. However, RL injects noise in the action space and uses backpropagation to compute the parameter updates, while ES injects noise directly in the parameter space. Another way to describe this is that RL is a “guess and check” on actions, while ES is a “guess and check” on parameters. Since we’re injecting noise in the parameters, it is possible to use deterministic policies (and we do, in our experiments). It is also possible to add noise in both actions and parameters to potentially combine the two approaches."  
->
->	"ES enjoys multiple advantages over RL algorithms:  
->	No need for backpropagation. ES only requires the forward pass of the policy and does not require backpropagation (or value function estimation), which makes the code shorter and between 2-3 times faster in practice. On memory-constrained systems, it is also not necessary to keep a record of the episodes for a later update. There is also no need to worry about exploding gradients in RNNs. Lastly, we can explore a much larger function class of policies, including networks that are not differentiable (such as in binary networks), or ones that include complex modules (e.g. pathfinding, or various optimization layers).  
->	Highly parallelizable. ES only requires workers to communicate a few scalars between each other, while in RL it is necessary to synchronize entire parameter vectors (which can be millions of numbers). Intuitively, this is because we control the random seeds on each worker, so each worker can locally reconstruct the perturbations of the other workers. Thus, all that we need to communicate between workers is the reward of each perturbation. As a result, we observed linear speedups in our experiments as we added on the order of thousands of CPU cores to the optimization.  
->	Structured exploration. Some RL algorithms (especially policy gradients) initialize with random policies, which often manifests as random jitter on spot for a long time. This effect is mitigated in Q-Learning due to epsilon-greedy policies, where the max operation can cause the agents to perform some consistent action for a while (e.g. holding down a left arrow). This is more likely to do something in a game than if the agent jitters on spot, as is the case with policy gradients. Similar to Q-learning, ES does not suffer from these problems because we can use deterministic policies and achieve consistent exploration.  
->	Credit assignment over long time scales. By studying both ES and RL gradient estimators mathematically we can see that ES is an attractive choice especially when the number of time steps in an episode is big, where actions have longlasting effects, or if no good value function estimates are available."  
-
-
-  [overview](https://youtube.com/watch?v=SQtOI9jsrJ0) by Xi Chen `video`  
-  [overview](https://youtube.com/watch?v=Rd0UdJFYkqI) by Pavel Temirchev `video` `in russian`  
-
-
-  [overview](http://inference.vc/evolutionary-strategies-embarrassingly-parallelizable-optimization/) by Ferenc Huszar  
-  [overview](http://inference.vc/evolution-strategies-variational-optimisation-and-natural-es-2/) by Ferenc Huszar  
-  [overview](http://davidbarber.github.io/blog/2017/04/03/variational-optimisation/) by David Barber  
-  [overview](http://argmin.net/2017/04/03/evolution/) by Ben Recht and Roy Frostig  
-
-  ["Random Gradient-Free Minimization of Convex Functions"](https://mipt.ru/dcam/students/elective/a_5gc1te/RandomGradFree.PDF) by Nesterov `paper`
-
-
-  https://en.wikipedia.org/wiki/Simultaneous_perturbation_stochastic_approximation  
-  ["Stochastic Gradient Estimation with Finite Differences"](http://approximateinference.org/accepted/BuesingEtAl2016.pdf) by Buesing et al. `paper`  
+  ["Evolution Strategies as a Scalable Alternative to Reinforcement Learning"](#evolution-strategies-as-a-scalable-alternative-to-reinforcement-learning-salimans-ho-chen-sutskever) by Salimans, Ho, Chen, Sutskever `paper` `summary`  
 
 
 
@@ -1311,15 +1283,14 @@
   likelihood ratio policy gradient estimation
 
 
-  ["The Useless Beauty of REINFORCE"](https://theneural.wordpress.com/2011/09/13/the-useless-beauty-of-reinforce/) by Ilya Sutskever
-
   introduction by Andrej Karpathy ([post](http://karpathy.github.io/2016/05/31/rl), [talk](https://youtube.com/watch?v=tqrcjHuNdmQ) `video`)   
   [introduction](http://kvfrans.com/simple-algoritms-for-solving-cartpole/) by Kevin Frans  
+  [introduction](https://www.alexirpan.com/rl-derivations/#reinforce) by Alex Irpan  
+
+  ["The Policy of Truth"](http://argmin.net/2018/02/20/reinforce/) by Benjamin Recht  *(REINFORCE is nothing more than random search)*
 
   [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=1003) by Pieter Abbeel `video`  
   overview by John Schulman ([part 1](https://youtube.com/watch?v=oPGVsoBonLM), [part 2](https://youtube.com/watch?v=oPGVsoBonLM)) `video`  
-
-  [derivations](http://www.alexirpan.com/rl-derivations/#reinforce) by Alex Irpan
 
   [overview of implementation](https://yadi.sk/i/8f9NX_E73GKBkT) by Fedor Ratnikov `video` `in russian`
 
@@ -1330,9 +1301,20 @@
 
   ["Trust Region Policy Optimization"](#trust-region-policy-optimization-schulman-levine-moritz-jordan-abbeel) by Schulman et al. `paper` `summary`
 
+
+  [overview](https://youtu.be/xe-z4i3l-iQ?t=30m35s) by Pieter Abbeel `video`  
+  [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=1630) by Pieter Abbeel `video`  
+  [overview](https://youtube.com/watch?v=gb5Q2XL5c8A) by John Schulman `video`  
+  [overview](https://yadi.sk/i/1oyihBnm3HiKHm) by Alexander Fritsler `video` `in russian`  
+
+  [overview of implementation](https://yadi.sk/i/b0ol2gUV3HiKKJ) by Alexander Fritsler and Fedor Ratnikov `video` `in russian`  
+
+  [explanation](http://kvfrans.com/what-is-the-natural-gradient-and-where-does-it-appear-in-trust-region-policy-optimization/) of natural gradient in TRPO by Kevin Frans  
+  [explanation](http://www.alexirpan.com/rl-derivations/#natural-policy-gradient) of natural gradient by Alex Irpan  
+
 ----
 
-  "TRPO uses the notion of a trust region, which restricts optimisation steps to within a region where the approximation of the true cost function still holds."
+  "TRPO uses the notion of a trust region, which restricts optimization steps to within a region where the approximation of the true cost function still holds."
 
   "As you iteratively improve your policy, it’s important to avoid parameter updates that change your policy too much, as enforced by constraining the KL divergence between the distributions predicted by the old and the new policy on a batch of data to be less than some constant δ. This δ (in the unit of nats) is better than a fixed step size, since the meaning of the step size changes depending on what the rewards and problem structure look like at different points in training. It matters more as we do more experience replay. Instead of conjugate gradients the simplest instantiation of this idea could be implemented by doing a line search and checking the KL along the way."
 
@@ -1343,18 +1325,6 @@
   This objective can be approximated by using an importance-sampled Monte Carlo estimate of Q-values, with a distribution of states sampled from policy θold. However, theres a constraint to updating θ: the average KL divergence between the new policy and old policy cannot be greater than a constant δ. This acts as a limiter on the step size we can take on each update, and can be compared to the natural gradient. The theory behind TRPO guarantees gradual improvement over the expected return of a policy."
 
   "One downside to TRPO algorithm is its on-policy nature, requiring new Q-values after every policy update. We cannot use methods such as experience replay which reuse past information, so that we must acquire new Monte Carlo estimates of Q for every new policy. Furthermore, Monte Carlo estimates are known to have higher variance than methods such as one-step TD updates, since the return is affected by independent future decisions. Bringing this variance down requires many episodes of experience per policy update, making TRPO a data-heavy algorithm."
-
-----
-
-  [overview](https://youtu.be/xe-z4i3l-iQ?t=30m35s) by Pieter Abbeel `video`  
-  [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=1630) by Pieter Abbeel `video`  
-  [overview](https://youtube.com/watch?v=gb5Q2XL5c8A) by John Schulman `video`  
-  [overview](https://yadi.sk/i/1oyihBnm3HiKHm) by Alexander Fritsler `video` `in russian`  
-
-  [overview of implementation](https://yadi.sk/i/b0ol2gUV3HiKKJ) by Alexander Fritsler and Fedor Ratnikov `video` `in russian`  
-
-  [explanation](http://kvfrans.com/what-is-the-natural-gradient-and-where-does-it-appear-in-trust-region-policy-optimization/) of natural gradient in TRPO by Kevin Frans  
-  [derivations](http://www.alexirpan.com/rl-derivations/#natural-policy-gradient) by Alex Irpan  
 
 
 
@@ -1385,15 +1355,15 @@
 
   ["Asynchronous Methods for Deep Reinforcement Learning"](#asynchronous-methods-for-deep-reinforcement-learning-mnih-badia-mirza-graves-lillicrap-harley-silver-kavukcuoglu) by Mnih et al. `paper` `summary`
 
+  [overview](https://youtube.com/watch?v=9sx1_u2qVhQ) by Andriy Mnih `video`  
+  [overview](http://techtalks.tv/talks/asynchronous-methods-for-deep-reinforcement-learning/62475/) by Andriy Mnih `video`  
+
+----
 
   - critic learns only state value function V(s) rather than action value function Q(s,a) and thus cannot pass back to actor gradients of value function with respect to action  
   - critic approximates action value with rewards from several steps of experience and passes TD error to actor  
   - exploiting multithreading capabilities and executing many instances of agent in parallel using shared model  
   - alternative to experience replay since parallelization also diversifies and decorrelates experience data  
-
-
-  [overview](https://youtube.com/watch?v=9sx1_u2qVhQ) by Andriy Mnih `video`  
-  [overview](http://techtalks.tv/talks/asynchronous-methods-for-deep-reinforcement-learning/62475/) by Andriy Mnih `video`  
 
 
 ----
@@ -1412,9 +1382,9 @@
 
   "For reinforcement learning there are two widely known ways of optimizing a policy based on sampled sequences of actions and outcomes: There’s (a) likelihood-ratio gradient estimator, which updates the policy such that action sequences that lead to higher scores happen more often and that doesn’t need gradients, and (b) pathwise derivative gradient estimator, which adjusts individual actions such that the policy results in a higher score and that needs gradients. Likelihood-ratio estimator changes probabilities of experienced paths by shifting probability mass towards better ones and, unlike pathwise estimator, does not try to change the paths. While pathwise methods may be more sample-efficient, they work less generally due to high bias and don’t scale up as well to very high-dimensional problems."
 
+----
 
   [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724) by Pieter Abbeel `video`
-
 
   - [Deep Deterministic Policy Gradient (DDPG)](#deep-deterministic-policy-gradient-ddpg)  
   - [Stochastic Value Gradient (SVG)](#stochastic-value-gradient-svg)  
@@ -1426,6 +1396,15 @@
   ["Deterministic Policy Gradient Algorithms"](#deterministic-policy-gradient-algorithms-silver-lever-heess-degris-wierstra-riedmiller) by Silver et al. `paper` `summary`  
   ["Continuous Control with Deep Reinforcement Learning"](#continuous-control-with-deep-reinforcement-learning-lillicrap-hunt-pritzel-heess-erez-tassa-silver-wierstra) by Lillicrap et al. `paper` `summary`  
 
+  [overview](http://videolectures.net/rldm2015_silver_reinforcement_learning/#t=4043) by David Silver `video`  
+  [overview](http://youtu.be/qLaDWKd61Ig?t=39m) by David Silver `video`  
+  [overview](http://youtu.be/KHZVXao4qXs?t=52m58s) by David Silver `video`  
+  [overview](http://youtu.be/M6nfipCxQBc?t=7m45s) by Timothy Lillicrap `video`  
+  [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724) by Pieter Abbeel `video`  
+  [overview](https://youtu.be/rO7Dx8pSJQw?t=50m) by John Schulman `video`  
+  [overview](https://youtu.be/mrgJ53TIcQc?t=1h3m2s) by Alexey Seleznev `video` `in russian`  
+
+----
 
   - continuous analogue to DQN which exploits differentiability of Q-network  
   - instead of requiring samples from stochastic policy and encouraging samples with higher scores, use deterministic policy and get gradient information directly from second network that models score function  
@@ -1438,20 +1417,16 @@
   ∇θJ(μθ) = ∫ ρμ(s)∇aQμ(s,a)|a=μθ(s)∇θμθ(s) ds = E s\~ρμ [∇aQμ(s,a)|a=μθ(s)∇θμθ(s)]  
 
 
-  [overview](http://videolectures.net/rldm2015_silver_reinforcement_learning/#t=4043) by David Silver `video`  
-  [overview](http://youtu.be/qLaDWKd61Ig?t=39m) by David Silver `video`  
-  [overview](http://youtu.be/KHZVXao4qXs?t=52m58s) by David Silver `video`  
-  [overview](http://youtu.be/M6nfipCxQBc?t=7m45s) by Timothy Lillicrap `video`  
-  [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724) by Pieter Abbeel `video`  
-  [overview](https://youtu.be/rO7Dx8pSJQw?t=50m) by John Schulman `video`  
-  [overview](https://youtu.be/mrgJ53TIcQc?t=1h3m2s) by Alexey Seleznev `video` `in russian`  
-
-
 ----
 #### Stochastic Value Gradient (SVG)
 
   ["Learning Continuous Control Policies by Stochastic Value Gradients"](#learning-continuous-control-policies-by-stochastic-value-gradients-heess-wayne-silver-lillicrap-tassa-erez) by Heess et al. `paper` `summary`
 
+  [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724) by Pieter Abbeel `video`  
+  [overview](https://youtu.be/rO7Dx8pSJQw?t=50m) by John Schulman `video`  
+  [overview](https://youtu.be/mrgJ53TIcQc?t=1h10m31s) by Alexey Seleznev `video` `in russian`  
+
+----
 
   - generalizes DPG to stochastic policies in a number of ways, giving spectrum from model-based to model-free algorithms  
   - while SVG(0) is direct stochastic generalization of DPG, SVG(1) combines actor, critic and environment dynamics model f  
@@ -1462,11 +1437,6 @@
   reparametrization trick: E p(y|x)[g(y)]=∫g(f(x,ε))ρ(ε)dε where y=f(x,ε) and ε~ρ(.) a fixed noise distribution
 
   "SVG methods are flexible and can be used both with (SVG(0) and SVG(1)) and without (SVG(∞)) value function critics, and with (SVG(∞) and SVG(1)) and without (SVG(0)) learned models."  
-
-
-  [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724) by Pieter Abbeel `video`  
-  [overview](https://youtu.be/rO7Dx8pSJQw?t=50m) by John Schulman `video`  
-  [overview](https://youtu.be/mrgJ53TIcQc?t=1h10m31s) by Alexey Seleznev `video` `in russian`  
 
 
 
@@ -1652,6 +1622,7 @@ interesting recent papers:
   - `video` <https://youtu.be/DXNqYSNvnjA?t=21m24s> (Hassabis)
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
   - `notes` <https://blog.acolyer.org/2018/01/10/mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm/>
+  - `code` <https://github.com/glinscott/leela-chess>
 
 
 #### ["Giraffe: Using Deep Reinforcement Learning to Play Chess"](http://arxiv.org/abs/1509.01549) Lai
@@ -2636,7 +2607,17 @@ interesting recent papers:
 >	"All games were trained for 1 billion frames, which requires about the same amount of neural network computation as the published 1-day results for A3C which uses 320 million frames. The difference is due to the fact that ES does not perform backpropagation and does not use a value function. By parallelizing the evaluation of perturbed parameters across 720 CPUs on Amazon EC2, we can bring down the time required for the training process to about one hour per game. After training, we compared final performance against the published A3C results and found that ES performed better in 23 games tested, while it performed worse in 28."
 
 ----
->	"ES rivals the performance of standard RL techniques on moder benchmarks, while overcoming many of RL’s inconveniences. ES is simpler to implement (there is no need for backpropagation), it is easier to scale in a distributed setting, it does not suffer in settings with sparse rewards, and has fewer hyperparameters. This outcome is surprising because ES resembles simple hill-climbing in a high-dimensional space based only on finite differences along a few random directions at each step."
+>	"Our work demonstrates that ES achieves strong performance, dispelling the common belief that ES methods are impossible to apply to high dimensional problems."  
+>	"ES rivals the performance of standard RL techniques on modern benchmarks, while overcoming many of RL’s inconveniences. ES is simpler to implement (there is no need for backpropagation), it is easier to scale in a distributed setting, it does not suffer in settings with sparse rewards, and has fewer hyperparameters. This outcome is surprising because ES resembles simple hill-climbing in a high-dimensional space based only on finite differences along a few random directions at each step."  
+>
+>	"Mathematically, you’ll notice that this is also equivalent to estimating the gradient of the expected reward in the parameter space using finite differences, except we only do it along 100 random directions. Yet another way to see it is that we’re still doing RL (Policy Gradients, or REINFORCE specifically), where the agent’s actions are to emit entire parameter vectors using a gaussian policy."  
+>	"Notice that the objective is identical to the one that RL optimizes: the expected reward. However, RL injects noise in the action space and uses backpropagation to compute the parameter updates, while ES injects noise directly in the parameter space. Another way to describe this is that RL is a “guess and check” on actions, while ES is a “guess and check” on parameters. Since we’re injecting noise in the parameters, it is possible to use deterministic policies (and we do, in our experiments). It is also possible to add noise in both actions and parameters to potentially combine the two approaches."  
+>
+>	"ES enjoys multiple advantages over RL algorithms:  
+>	- No need for backpropagation. ES only requires the forward pass of the policy and does not require backpropagation (or value function estimation), which makes the code shorter and between 2-3 times faster in practice. On memory-constrained systems, it is also not necessary to keep a record of the episodes for a later update. There is also no need to worry about exploding gradients in RNNs. Lastly, we can explore a much larger function class of policies, including networks that are not differentiable (such as in binary networks), or ones that include complex modules (e.g. pathfinding, or various optimization layers).  
+>	- Highly parallelizable. ES only requires workers to communicate a few scalars between each other, while in RL it is necessary to synchronize entire parameter vectors (which can be millions of numbers). Intuitively, this is because we control the random seeds on each worker, so each worker can locally reconstruct the perturbations of the other workers. Thus, all that we need to communicate between workers is the reward of each perturbation. As a result, we observed linear speedups in our experiments as we added on the order of thousands of CPU cores to the optimization.  
+>	- Structured exploration. Some RL algorithms (especially policy gradients) initialize with random policies, which often manifests as random jitter on spot for a long time. This effect is mitigated in Q-Learning due to epsilon-greedy policies, where the max operation can cause the agents to perform some consistent action for a while (e.g. holding down a left arrow). This is more likely to do something in a game than if the agent jitters on spot, as is the case with policy gradients. Similar to Q-learning, ES does not suffer from these problems because we can use deterministic policies and achieve consistent exploration.  
+>	- Credit assignment over long time scales. By studying both ES and RL gradient estimators mathematically we can see that ES is an attractive choice especially when the number of time steps in an episode is big, where actions have longlasting effects, or if no good value function estimates are available."  
 
 ----
 >	"Mathematically, you’ll notice that this is also equivalent to estimating the gradient of the expected reward in the parameter space using finite differences, except we only do it along 100 random directions. Yet another way to see it is that we’re still doing RL (Policy Gradients, or REINFORCE specifically), where the agent’s actions are to emit entire parameter vectors using a gaussian policy."
@@ -2663,8 +2644,10 @@ interesting recent papers:
   - `post` <http://blog.otoro.net/2017/10/29/visual-evolution-strategies/>
   - `code` <https://github.com/openai/evolution-strategies-starter>
   - `code` <https://github.com/atgambardella/pytorch-es>
-  - `paper` ["Stochastic Gradient Estimation with Finite Differences"](http://approximateinference.org/accepted/BuesingEtAl2016.pdf) by Buesing et al.
+  - `paper` ["Parameter-exploring Policy Gradients"](https://mediatum.ub.tum.de/doc/1287490/409330.pdf) by Sehnke et al.
   - `paper` ["Random Gradient-Free Minimization of Convex Functions"](https://mipt.ru/dcam/students/elective/a_5gc1te/RandomGradFree.PDF) by Nesterov
+  - `paper` ["Stochastic Gradient Estimation with Finite Differences"](http://approximateinference.org/accepted/BuesingEtAl2016.pdf) by Buesing et al.
+  -  <https://en.wikipedia.org/wiki/Simultaneous_perturbation_stochastic_approximation>
 
 
 #### ["Asynchronous Methods for Deep Reinforcement Learning"](https://arxiv.org/abs/1602.01783) Mnih, Badia, Mirza, Graves, Lillicrap, Harley, Silver, Kavukcuoglu
@@ -2701,6 +2684,7 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=gb5Q2XL5c8A> (Schulman)
   - `video` <https://yadi.sk/i/1oyihBnm3HiKHm> + <https://yadi.sk/i/b0ol2gUV3HiKKJ> (Fritsler and Ratnikov) `in russian` ([slides](https://yadi.sk/i/9j6S4WVp3HgEdn) `in english`)
   - `post` <http://kvfrans.com/what-is-the-natural-gradient-and-where-does-it-appear-in-trust-region-policy-optimization/>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/SchulmanLMJA15>
   - `notes` <https://towardsdatascience.com/introduction-to-various-reinforcement-learning-algorithms-part-ii-trpo-ppo-87f2c5919bb9>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/trpo_mpi>
   - `code` <https://github.com/reinforceio/tensorforce/blob/master/tensorforce/models/trpo_model.py>

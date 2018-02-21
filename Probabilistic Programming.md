@@ -79,7 +79,7 @@
 ---
 ### applications
 
-  [Facebook Prophet](https://facebookincubator.github.io/prophet/)  *(uses Stan)*  
+  [Facebook Prophet](https://facebook.github.io/prophet/)  *(uses Stan)*  
   [Microsoft Office 365](https://cambridgenetwork.co.uk/news/email-clutter-machine-learning-probabilistic-programming/)  *(uses Infer.NET)*  
   [Microsoft Excel plugin](http://research.microsoft.com/en-us/projects/tabular/)  *(uses Infer.NET)*  
 
@@ -113,17 +113,17 @@
 
   - [Edward](http://github.com/blei-lab/edward)
 
-	["Edward, and some motivations"](http://dustintran.com/blog/a-quick-update-edward-and-some-motivations/) by Dustin Tran
-
+	["Edward, and some motivations"](http://dustintran.com/blog/a-quick-update-edward-and-some-motivations/) by Dustin Tran  
 	["Deep Probabilistic Programming"](#deep-probabilistic-programming-tran-hoffman-saurous-brevdo-murphy-blei) by Tran et al. `paper` `summary`  
-	["Edward: Library for probabilistic modeling, inference, and criticism"](https://youtube.com/watch?v=PvyVahNl8H8) by Dustin Tran `video` ([slides](http://dustintran.com/talks/Tran_Edward.pdf))  
+
+	[overview](https://youtube.com/watch?v=PvyVahNl8H8) by Dustin Tran `video` ([slides](http://dustintran.com/talks/Tran_Edward.pdf))
 
 	[sample models](http://edwardlib.org/iclr2017)
 
   - [Stan](https://github.com/stan-dev)
 
-	["Stan Hands-on"](https://youtube.com/watch?v=6NXRCtWQNMg) by Bob Carpenter `video`  
-	["Probabilistic Modelling and Inference Made Easy"](https://vimeo.com/132156595) by Bob Carpenter `video`  
+	[overview](https://youtube.com/watch?v=6NXRCtWQNMg) by Bob Carpenter `video`  
+	[overview](https://vimeo.com/132156595) by Bob Carpenter `video`  
 
 	[Prophet](https://facebookincubator.github.io/prophet/) from Facebook
 
@@ -139,7 +139,7 @@
 
   - [BLOG](https://github.com/BayesianLogic)
 
-	["Unifying Logic and Probability: The BLOG Language"](https://youtube.com/watch?v=rdsPMCYMcZA) by Stuart Russell `video`
+	[overview](https://youtube.com/watch?v=rdsPMCYMcZA) by Stuart Russell `video`
 
   - [BayesDB](http://probcomp.org/bayesdb)
 

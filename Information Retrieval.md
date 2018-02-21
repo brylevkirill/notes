@@ -12,8 +12,7 @@
 ### overview
 
   [course](http://youtube.com/watch?v=5L1qemKyUKA&index=75&list=PL6397E4B26D00A269) by Chris Manning `video`  
-  [course](http://homepages.inf.ed.ac.uk/vlavrenk/tts.html) by Victor Lavrenko
-	([videos](http://youtube.com/user/victorlavrenko/playlists?view=1&sort=dd))  
+  [course](http://homepages.inf.ed.ac.uk/vlavrenk/tts.html) by Victor Lavrenko `video`  
 
   ["Foundations of Information Retrieval"](https://drive.google.com/file/d/0B-GJrccmbImkZ3pjNl9sczQxd3M) by Maarten de Rijke (SIGIR 2017) `slides`
 
