@@ -85,6 +85,8 @@
 
   [Coursera](https://coursera.org/learn/bayesian-methods-in-machine-learning) course by Daniil Polykovskiy and Alexander Novikov `video`
 
+  ["Information Theory, Pattern Recognition and Neural Networks"](http://videolectures.net/course_information_theory_pattern_recognition/) course by David MacKay `video`
+
 ----
 
   ["Latent Variable Models"](https://youtube.com/watch?v=7yLOF07Mv5I) by Dmitry Vetrov `video` `in russian`
@@ -481,52 +483,17 @@
 
 ----
 
-  log pθ(x) = L(θ,φ,x) + DKL(qφ(z|x) || pθ(z|x))  
-  where  
-  L(θ,φ,x) := ∫ qφ(z|x)log(pθ(x,z)/qφ(z|x))dz  
-  and  
-  DKL(qφ(z|x) || pθ(z|x)) = ∫ qφ(z|x)log(qφ(z|x)/pθ(z|x))dz  
-
-  DKL(.|.) >=0  =>  L(θ,φ,x) <= log pθ(x)
- 
-  L(θ,φ,x) - evidence / variational lower bound (ELBO) or, in case of unnormalized factors in qφ(z|x), variational free energy  
-
-
-  ∇φL(θ,φ,x) = ∫ ∇φ( qφ(z|x)(log(pθ(x,z))-log(qφ(z|x))) )dz = ∫ ∇φqφ(z|x)(log(pθ(x,z))-log(qφ(z|x)))dz - ∫ qφ(z|x)∇φlog(qφ(z|x))dz  
-
-  ∫ qφ(z|x)∇φlog(qφ(z|x))dz = ∫ ∇φqφ(z|x)dz = ∇φ∫ qφ(z|x)dz = ∇φ1 = 0  =>  ∇φL(θ,φ,x) = ∫ ∇φqφ(z|x)(log(pθ(x,z))-log(qφ(z|x)))dz
-
-
-  "Current best practice in variational inference performs optimization of ELBO using mini-batches and stochastic gradient descent, which is what allows variational inference to be scaled to problems with very large data sets. There are two problems that must be addressed to successfully use the variational approach: 1) efficient computation of the derivatives of the expected log-likelihood ∇φEqφ(z)[log pθ(x|z)], and 2) choosing the richest, computationally-feasible approximate posterior distribution q(·). The bulk of research in variational inference over the years has been on ways in which to compute ∇φEqφ(z)[log p(x|z)]. Whereas we would have previously resorted to local variational methods, in general we now always compute such expectations using Monte Carlo approximations (including the KL term in the bound, if it is not analytically known). This forms what has been aptly named doubly stochastic estimation, since we have one source of stochasticity from the minibatch and a second from the Monte Carlo approximation of the expectation."
-
-----
-
   ["Variational Inference: Tricks of the Trade"](http://blog.shakirm.com/2015/01/variational-inference-tricks-of-the-trade/) by Shakir Mohamed
 
 ----
 #### pathwise derivative estimator for gradient of ELBO
 
-  [reparametrization trick](http://blog.shakirm.com/2015/10/machine-learning-trick-of-the-day-4-reparameterisation-tricks/):  
-  E q(z|x) [f(z)]dz = ∫ f(g(x,ε))ρ(ε)dε and ∇φE qφ(z|x) [f(z)]dz = ∫ ∇φf(g(x,ε;φ))ρ(ε)dε where z=g(x,ε) and ε~ρ(.) is fixed noise distribution
-
-  - rewriting gradient of ELBO such that the expectation distribution does not depend on ε~ρ(.)  
-  - expressing z=g(ε;φ) as samples from un-parameterized distribution followed by parameteric deterministic transformation  
-
-  ∇φL(θ,φ,x) = ∇φ∫ qφ(z|x)(log(pθ(x,z))-log(qφ(z|x)))dz = ∫ ∇φ(log(pθ(x,g(ε;φ))-log(q(g(ε;φ)|x))))ρ(ε)dε
-
-  PD estimator transforms variational and model distributions into distributions over independent ‘noise’ random variables with applied parametric deterministic transformations.  
-  Given fixed assignment to ‘noise’ variables, derivatives can propagate from log probabilities back to parameters, leading to much more stable estimates than with LR estimator.  
+  [reparametrization trick](http://blog.shakirm.com/2015/10/machine-learning-trick-of-the-day-4-reparameterisation-tricks/)
 
 ----
 #### likelihood ratio estimator for gradient of ELBO
 
-  [log derivative trick](http://blog.shakirm.com/2015/11/machine-learning-trick-of-the-day-5-log-derivative-trick/):  
-  ∇φL(θ,φ,x) = ∫ ∇φqφ(z|x)(log(pθ(x,z)) - log(qφ(z|x)))dz = ∫ qφ(z|x)∇φlog(qφ(z|x))(log(pθ(x,z))-log(qφ(z|x))dz
-
-  Monte Carlo estimation:  
-  ∇φL(θ,φ,x) = ∫ qφ(z|x)∇φlog(qφ(z|x))(log(pθ(x,z))-log(qφ(z|x))dz ~ 1/N Σx ∇φlog(qφ(z|x))(log(pθ(x,z))-log(qφ(z|x)-C) where C is some constant to reduce estimator's variance
-
-  LR estimator suffers from high variance because expectation is with respect to q and because q depends on the parameters with respect to which differentiating is performed.
+  [log derivative trick](http://blog.shakirm.com/2015/11/machine-learning-trick-of-the-day-5-log-derivative-trick/)
 
 ----
 #### stochastic computation graphs

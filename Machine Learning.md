@@ -227,7 +227,7 @@
 ---
 ### theory
 
-  [machine learning has become alchemy](https://youtube.com/watch?v=Qi1Yry33TQE&t=11m2s) by Ali Rahimi `video`  
+  [machine learning has become alchemy](https://youtube.com/watch?v=Qi1Yry33TQE&t=11m2s) by Ali Rahimi `video` ([post](http://argmin.net/2017/12/05/kitchen-sinks/))  
   [statistics in machine learning](https://youtube.com/watch?v=uyZOcUDhIbY&t=17m27s) by Michael I. Jordan `video`  
   [theory in machine learning](https://youtube.com/watch?v=uyZOcUDhIbY&t=23m1s) by Michael I. Jordan `video`  
 

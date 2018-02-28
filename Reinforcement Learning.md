@@ -246,10 +246,6 @@
 ---
 ### overview
 
-  introduction by Benjamin Recht:  
-  - ["Make It Happen"](http://argmin.net/2018/01/29/taxonomy/)  
-  - ["Total Control"](http://argmin.net/2018/02/01/control-tour/)  
-
   introduction by Kevin Frans:  
   - [basics](http://kvfrans.com/reinforcement-learning-basics/)  
   - [Markov processes](http://kvfrans.com/markov-processes-in-reinforcement-learning/)  
@@ -264,6 +260,10 @@
   - [Temporal Difference](https://mpatacchiola.github.io/blog/2017/01/29/dissecting-reinforcement-learning-3.html)  
   - [Actor-Critic](https://mpatacchiola.github.io/blog/2017/02/11/dissecting-reinforcement-learning-4.html)  
   - [Genetic Algorithms](https://mpatacchiola.github.io/blog/2017/03/14/dissecting-reinforcement-learning-5.html)  
+
+  introduction by Benjamin Recht:  
+  - ["Make It Happen"](http://argmin.net/2018/01/29/taxonomy/)  
+  - ["Total Control"](http://argmin.net/2018/02/01/control-tour/)  
 
   introduction by Shakir Mohamed:  
   - ["Learning in Brains and Machines: Temporal Differences"](http://blog.shakirm.com/2016/02/learning-in-brains-and-machines-1/)  
@@ -408,7 +408,8 @@
 ----
 
   ["Expressivity, Trainability, and Generalization in Machine Learning"](http://blog.evjang.com/2017/11/exp-train-gen.html) by Eric Jang  
-  ["An Outsider's Tour of Reinforcement Learning"](http://argmin.net/2018/02/20/outsider-rl/) by Benjamin Recht  
+  ["Deep Reinforcement Learning Doesn't Work Yet"](https://www.alexirpan.com/2018/02/14/rl-hard.html) by Alex Irpan  
+  ["Reinforcement Learning Never Worked, and 'Deep' Only Helped a Bit"](https://himanshusahni.github.io/2018/02/23/reinforcement-learning-never-worked.html) by Himanshu Sahni  
 
 
 ----
@@ -485,6 +486,8 @@
   [introduction](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/) (part 2, 20:40) by Pieter Abbeel `video`  
   [overview](https://youtube.com/watch?v=d9DlQSJQAoI) by Chelsea Finn `video`  
   [overview](https://youtube.com/watch?v=J2blDuU3X1I) by Chelsea Finn `video`  
+
+  [tutorial](https://thinkingwires.com/posts/2018-02-13-irl-tutorial-1.html) by Johannes Heidecke
 
   ["Apprenticeship Learning and Reinforcement Learning with Application to Robotic Control"](http://ai.stanford.edu/~pabbeel/thesis/thesis.pdf) by Pieter Abbeel `paper`  
   ["Maximum Entropy Inverse Reinforcement Learning"](https://aaai.org/Papers/AAAI/2008/AAAI08-227.pdf) by Ziebart et al. `paper`  
@@ -1175,7 +1178,7 @@
 ---
 ### policy-based methods
 
-  introduction by Andrej Karpathy ([post](http://karpathy.github.io/2016/05/31/rl), [talk](https://youtube.com/watch?v=tqrcjHuNdmQ) `video`)  
+  introduction by Andrej Karpathy ([post](http://karpathy.github.io/2016/05/31/rl), [talk](https://youtube.com/watch?v=tqrcjHuNdmQ) `video`)
 
   [introduction](http://youtube.com/watch?v=S_gwYj1Q-44) by Pieter Abbeel `video`  
   [introduction](http://youtube.com/watch?v=KHZVXao4qXs) by David Silver `video`  

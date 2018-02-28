@@ -450,6 +450,7 @@ interesting older papers:
 #### ["Backpropagation through the Void: Optimizing Control Variates for Black-box Gradient Estimation"](https://arxiv.org/abs/1711.00123) Grathwohl, Choi, Wu, Roeder, Duvenaud
   `variables with discrete distributions` `RELAX`
 >	"We generalize REBAR to learn a free-form control variate parameterized by a neural network, giving a lower-variance, unbiased gradient estimator which can be applied to a wider variety of problems with greater flexibility. Most notably, our method is applicable even when no continuous relaxation is available, as in reinforcement learning or black box function optimization. Furthermore, we derive improved variants of popular reinforcement learning methods with unbiased, action-dependent gradient estimates and lower variance."  
+  - `video` <https://youtu.be/hkRBoiaplEE?t=1h8m1s> (Sobolev)
   - `code` <https://github.com/duvenaud/relax>
   - `code` <https://github.com/Bonnevie/rebar>
 
@@ -461,6 +462,7 @@ interesting older papers:
 >	"Estimators for gradient ∇φ E pθ(h)[f(h)] of expectation over discrete distribution pθ(h): unbiased (REINFORCE, NVIL, MuProp) and biased (Straight Through, 1/2 estimator, Concrete/Gumbel-Softmax)."  
   - `video` <https://youtube.com/watch?v=QODYgBhv_no>
   - `video` <https://facebook.com/nipsfoundation/videos/1554402064651027/> (16:33) (Tucker)
+  - `video` <https://youtu.be/hkRBoiaplEE?t=34m27s> (Sobolev)
   - `code` <https://github.com/tensorflow/models/tree/master/research/rebar>
   - `code` <https://github.com/Bonnevie/rebar>
 
@@ -806,12 +808,14 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=VKoLGnq15RM> (Raval)
   - `video` <https://youtube.com/watch?v=UZ9BgrofhKk> (Kozlov) `in russian`
   - `video` <https://youtube.com/watch?v=8R3gXmh1F0c> (Lykov) `in russian`
+  - `post` <https://oreilly.com/ideas/introducing-capsule-networks>
   - `post` <https://medium.com/@pechyonkin/understanding-hintons-capsule-networks-part-i-intuition-b4b559d1159b>
   - `post` <https://hackernoon.com/uncovering-the-intuition-behind-capsule-networks-and-inverse-graphics-part-i-7412d121798d>
   - `post` <https://jhui.github.io/2017/11/03/Dynamic-Routing-Between-Capsules/>
   - `post` <https://hackernoon.com/what-is-a-capsnet-or-capsule-network-2bfbe48769cc>
   - `post` <https://medium.com/@mike_ross/a-visual-representation-of-capsule-network-computations-83767d79e737>
   - `notes` <https://blog.acolyer.org/2017/11/13/dynamic-routing-between-capsules/>
+  - `code` <https://github.com/ageron/handson-ml/blob/master/extra_capsnets.ipynb>
   - `code` <https://github.com/Sarasra/models/tree/master/research/capsules>
   - `code` <https://github.com/loretoparisi/CapsNet>
   - `paper` ["Transforming Auto-encoders"](http://www.cs.toronto.edu/~fritz/absps/transauto6.pdf) by Hinton, Krizhevsky, Wang
@@ -902,6 +906,9 @@ interesting older papers:
 >	"Due to RL^2’s policy-gradient-based optimization procedure, it does not directly optimize the final policy performance nor exhibit exploration. In E-RL^2 the rewards for episodes sampled early in the learning process are deliberately set to zero to drive exploratory behavior."  
   - `video` <https://youtu.be/16UUb4HF0fo?t=54m56s> (Golikov) `in russian`
 
+#### ["Recasting Gradient-Based Meta-Learning as Hierarchical Bayes"](https://arxiv.org/abs/1801.08930) Grant, Finn, Levine, Darrell, Griffiths
+  `MAML` `learning initialization algorithm`
+
 #### ["Meta-Learning and Universality: Deep Representations and Gradient Descent can Approximate any Learning Algorithm"](https://arxiv.org/abs/1710.11622) Finn, Levine
   `MAML` `learning initialization algorithm`
 >	"It is particularly important to develop meta-learning algorithms that can generalize well from a manageable number of training tasks, in the sense that it can perform well on new tasks sampled from the same distribution. One idea is to restrict the set of algorithms expressible by the parameterized model. At one extreme we have methods such as RL^2, TCML and one-shot imitation learning, which use generic recurrent architectures and are, in theory, capable of approximating any algorithm that can run on a Turing machine. At the other extreme, we have methods that merely tune hyperparameters over a set of training tasks. There are many possibilities between these two extremes. MAML restricts the underlying algorithm to be policy gradient and only meta-learn an initial set of parameters."  
@@ -919,6 +926,7 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=ID150Tl-MMw&t=1h1m22s> + <https://youtube.com/watch?v=ID150Tl-MMw&t=1h9m10s> (Abbeel)
   - `video` <https://youtu.be/16UUb4HF0fo?t=7m34s> (Golikov) `in russian`
   - `post` <http://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/> (Finn)
+  - `post` <http://noahgolmant.com/maml.html>
   - `code` <https://github.com/cbfinn/maml>
 
 ----
@@ -1025,6 +1033,7 @@ interesting older papers:
 #### ["Prototypical Networks for Few-shot Learning"](https://arxiv.org/abs/1703.05175) Snell, Swersky, Zemel
 >	"Extension to Matching Networks which uses euclidean distance instead of cosine and builds a prototype representation of each class for the few-shot learning scenario."  
   - `code` <https://github.com/orobix/Prototypical-Networks-for-Few-shot-Learning-PyTorch>
+  - `code` <https://github.com/abdulfatir/prototypical-networks-tensorflow>
 
 #### ["Matching Networks for One Shot Learning"](http://arxiv.org/abs/1606.04080) Vinyals, Blundell, Lillicrap, Kavukcuoglu, Wierstra
 >	"Given just a few, or even a single, examples of an unseen class, it is possible to attain high classification accuracy on ImageNet using Matching Networks. Matching Networks are trained in the same way as they are tested: by presenting a series of instantaneous one shot learning training tasks, where each instance of the training set is fed into the network in parallel. Matching Networks are then trained to classify correctly over many different input training sets. The effect is to train a network that can classify on a novel data set without the need for a single step of gradient descent."  
@@ -1084,8 +1093,8 @@ interesting older papers:
 >	"In interactive environments, the temporal dependency between successive observations creates a new opportunity to notice causal structure in data which may not be apparent using only observational studies. In reinforcement learning, several approaches explore mechanisms that push the internal representations of learned models to be “good” in the sense that they provide better control, and control is a particularly important causal relationship between an agent and elements of its environment."  
 >	"We propose and explore a more direct mechanism for representation learning, which explicitly links an agent’s control over its environment with its internal feature representations. Specifically, we hypothesize that some of the factors explaining variations in the data correspond to aspects of the world that can be controlled by the agent. For example, an object that could be pushed around or picked up independently of others is an independently controllable aspect of the environment. Our approach therefore aims to jointly discover a set of features (functions of the environment state) and policies (which change the state) such that each policy controls the associated feature while leaving the other features unchanged as much as possible."  
 >	"Assume that there are factors of variation underlying the observations coming from an interactive environment that are independently controllable. That is, a controllable factor of variation is one for which there exists a policy which will modify that factor only, and not the others. For example, the object associated with a set of pixels could be acted on independently from other objects, which would explain variations in its pose and scale when we move it around while leaving the others generally unchanged. The object position in this case is a factor of variation. What poses a challenge for discovering and mapping such factors into computed features is the fact that the factors are not explicitly observed. Our goal is for the agent to autonomously discover such factors – which we call independently controllable features – along with policies that control them. While these may seem like strong assumptions about the nature of the environment, we argue that these assumptions are similar to regularizers, and are meant to make a difficult learning problem (that of learning good representations which disentangle underlying factors) better constrained."  
->
->	"- Expand to sequences of actions and use them to define options  
+>	"  
+>	- Expand to sequences of actions and use them to define options  
 >	- Notion of objects and attributes naturally falls out  
 >	- Extension to non-static set of objects: types & instances  
 >	- Objects are groups of controllable features: by whom? Agents  
@@ -1295,6 +1304,7 @@ interesting older papers:
   - `video` <https://youtu.be/xFCuXE1Nb8w?t=26m55s> (Nowozin)
   - `video` <https://youtu.be/m80Vp-jz-Io?t=1h28m34s> (Tolstikhin)
   - `post` <http://inference.vc/variational-inference-with-implicit-models-part-ii-amortised-inference-2/>
+  - `post` <https://chrisorm.github.io/AVB-pyt.html>
   - `notes` <https://casmls.github.io/general/2017/02/23/modified-gans.html>
   - `code` <https://github.com/wiseodd/generative-models/tree/master/VAE/adversarial_vb>
   - `code` <https://gist.github.com/poolio/b71eb943d6537d01f46e7b20e9225149>
@@ -1687,6 +1697,7 @@ interesting older papers:
   - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) `in russian`
   - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani, Uszkoreit)
   - `post` <https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/>
+  - `notes` <https://ricardokleinklein.github.io/2017/11/16/Attention-is-all-you-need.html>
   - `notes` <https://blog.tomrochette.com/machine-learning/papers/ashish-vaswani-attention-is-all-you-need>
   - `notes` <https://medium.com/@sharaf/a-paper-a-day-24-attention-is-all-you-need-26eb2da90a91>
   - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/transformer.py>
@@ -1800,6 +1811,9 @@ interesting older papers:
 >	"We build off of work in Bayesian Neural Networks and distributional perspectives in uncertain value functions to demonstrate an extension which can successfully be leveraged in continuous control domains with dropout uncertainty estimates."  
 >	"We find large improvements in Proximal Policy Optimization from using the posterior mean. We suspect that these improvements are partially due to the added exploration, aiding the on-policy and adaptive nature of PPO, during early stages of learning where the uncertainty distribution is large. This is backed by ablation analysis where we find that PPO in the Half-Cheetah environment sees larger improvements from a higher dropout rate (presumably yielding slightly more exploratory value estimates)."  
 >	"We found that the Q-value estimates in DDPG were much lower than in the baseline version. We believe this is due to a variance reduction property as in Double-DQN. While in Double-DQN, two function approximators are used for the Q-value function, using dropout effectively creates a parallel to Double-DQN where many different approximators are used from the same set of network weights."  
+
+#### ["An Analysis of Categorical Distributional Reinforcement Learning"](https://arxiv.org/abs/1802.08163) Rowland, Bellemare, Dabney, Munos, Teh
+  `CDRL` `Q-learning`
 
 #### ["Distributional Reinforcement Learning with Quantile Regression"](https://arxiv.org/abs/1710.10044) Dabney, Rowland, Bellemare, Munos
   `QR-DQN` `Q-learning`
@@ -2209,6 +2223,7 @@ interesting older papers:
 >	"Although we have focused on a supervised learning setup, our approach could easily be extended to a reinforcement learning setup by leveraging policy iteration with MCTS. We have focused on small searches, more similar in scale to the plans that are processed by the human brain, than to the massive-scale searches in high-performance games or planning applications. In fact, our learned search performed better than a standard MCTS with more than an order-of-magnitude more computation, suggesting that neural approaches to search may ultimately replace their handcrafted counterparts."  
 >	"We present a neural network architecture that includes the same processing stages as a typical MCTS, but inside the neural network itself, as a dynamic computational graph. The key idea is to represent the internal state of the search, at each node, by a memory vector. The computation of the network proceeds forwards from the root state, just like a simulation of MCTS, using a simulation policy based on the memory vector to select the trajectory to traverse. The leaf state is then processed by an embedding network to initialize the memory vector at the leaf. The network proceeds backwards up the trajectory, updating the memory at each visited state according to a backup network that propagates from child to parent. Finally, the root memory vector is used to compute an overall prediction of value or action."  
 >	"The major benefit of our planning architecture, compared to more traditional planning algorithms, is that it can be exposed to gradient-based optimisation. This allows us to replace every component of MCTS with a richer, learnable equivalent - while maintaining the desirable structural properties of MCTS such as the use of a model, iterative local computations, and structured memory. We jointly train the parameters of the evaluation network, backup network and simulation policy so as to optimise the overall predictions of the MCTS network. The majority of the network is fully differentiable, allowing for efficient training by gradient descent. Still, internal action sequences directing the control flow of the network cannot be differentiated, and learning this internal policy presents a challenging credit assignment problem. To address this, we propose a novel, generally applicable approximate scheme for credit assignment that leverages the anytime property of our computational graph, allowing us to also effectively learn this part of the search network from data."  
+  - `video` <https://drive.google.com/drive/folders/0B8hmSuYkl6xuVE1Id25kZ2swUVU> (demo)
 
 #### ["Learning and Querying Fast Generative Models for Reinforcement Learning"](https://arxiv.org/abs/1802.03006) Buesing, Weber, Racaniere, Eslami, Rezende, Reichert, Viola, Besse, Gregor, Hassabis, Wierstra
   `learning to plan` `using available environment model` `I2A`
@@ -2569,15 +2584,17 @@ hieves."
   - <http://ashvin.me/demoddpg-website/> (demo)
 
 #### ["Hindsight Experience Replay"](https://arxiv.org/abs/1707.01495) Andrychowicz, Wolski, Ray, Schneider, Fong, Welinder, McGrew, Tobin, Abbeel, Zaremba
-  `exploration guided by learning progress`
+  `exploration guided by learning progress` `HER`
 >	"Get reward signal from any experience by simply assuming the goal equals whatever happened."  
 >	"HER may be seen as a form of implicit curriculum as the goals used for replay naturally shift from ones which are simple to achieve even by a random agent to more difficult ones. However, in contrast to explicit curriculum, HER does not require having any control over the distribution of initial environment states."  
 >	"Not only does HER learn with extremely sparse rewards, in our experiments it also performs better with sparse rewards than with shaped ones. These results are indicative of the practical challenges with reward shaping, and that shaped rewards would often constitute a compromise on the metric we truly care about (such as binary success/failure)."  
+  - `post` <https://blog.openai.com/ingredients-for-robotics-research/>
   - <https://sites.google.com/site/hindsightexperiencereplay/> (demo)
   - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482/> (38:00) (Abbeel)
   - `video` <https://youtu.be/BCzFs9Xb9_o?t=21m2s> (Sutskever)
   - `video `<https://youtu.be/RvEwFvl-TrY?t=19m18s> (Sutskever)
   - `video` <https://youtu.be/TERCdog1ddE?t=50m45s> (Abbeel)
+  - `code` <https://github.com/openai/baselines/tree/master/baselines/her>
   - `paper` ["Universal Value Function Approximators"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#schaul-horgan-gregor-silver---universal-value-function-approximators) by Schaul et al. `summary`
 
 #### ["Reverse Curriculum Generation for Reinforcement Learning"](https://arxiv.org/abs/1707.05300) Florensa, Held, Wulfmeier, Zhang, Abbeel
@@ -2987,7 +3004,10 @@ hieves."
 
 ----
 #### ["Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments"](https://arxiv.org/abs/1706.02275) Lowe, Wu, Tamar, Harb, Abbeel, Mordatch
+  `MADDPG`
+  - `post` <https://blog.openai.com/learning-to-cooperate-compete-and-communicate/>
   - `video` <https://youtube.com/watch?v=QCmBo91Wy64> (demo)
+  - `code` <https://github.com/openai/maddpg>
   - `code` <https://github.com/openai/multiagent-particle-envs>
 
 #### ["Counterfactual Multi-Agent Policy Gradients"](https://arxiv.org/abs/1705.08926) Foerster, Farquhar, Afouras, Nardelli, Whiteson
@@ -3013,11 +3033,25 @@ hieves."
 ### program induction
 
 ----
+#### ["Leveraging Grammar and Reinforcement Learning for Neural Program Synthesis"](https://openreview.net/forum?id=H1Xw62kRZ) Bunel, Hausknecht, Devlin, Singh, Kohli
+>	"Using the DSL grammar and reinforcement learning to improve synthesis of programs with complex control flow."  
+>	"Sequence-to-sequence generation models are trained to maximize the likelihood of known reference programs. This strategy has two key limitations. First, it ignores Program Aliasing: the fact that many different programs may satisfy a given specification (especially with incomplete specifications such as a few input-output examples). By maximizing the likelihood of only a single reference program, it penalizes many semantically correct programs, which can adversely affect the synthesizer performance. Second, this strategy overlooks the fact that programs have a strict syntax that can be efficiently checked."  
+  - `code` <https://github.com/carpedm20/program-synthesis-rl-tensorflow>
+  - `code` <https://github.com/carpedm20/karel>
+
 #### ["Learning Explanatory Rules from Noisy Data"](https://arxiv.org/abs/1711.04574) Evans, Grefenstette
 >	"We demonstrate it is possible for systems to combine intuitive perceptual with conceptual interpretable reasoning. The system we describe, ∂ILP, is robust to noise, data-efficient, and produces interpretable rules."  
 >	"∂ILP differs from standard neural nets because it is able to generalise symbolically, and it differs from standard symbolic programs because it is able to generalise visually. It learns explicit programs from examples that are readable, interpretable, and verifiable. ∂ILP is given a partial set of examples (the desired results) and produces a program that satisfies them. It searches through the space of programs using gradient descent. If the outputs of the program conflict with the desired outputs from the reference data, the system revises the program to better match the data."  
   - `post` <https://deepmind.com/blog/learning-explanatory-rules-noisy-data/>
+  - `post` <https://reddit.com/r/MachineLearning/comments/7tthm3/r_learning_explanatory_rules_from_noisy_data/dtgu2uw/>
   - `video` <https://youtube.com/watch?v=_wuFBF_Cgm0> (Evans)
+
+#### ["Learning to Select Examples for Program Synthesis"](https://arxiv.org/abs/1711.03243) Pu, Miranda, Solar-Lezama, Kaelbling
+>	"Due to its precise and combinatorial nature, program synthesis is commonly formulated as a constraint satisfaction problem, where input-output examples are encoded as constraints and solved with a constraint solver. A key challenge of this formulation is scalability: while constraint solvers work well with few well-chosen examples, a large set of examples can incur significant overhead in both time and memory. We address this challenge by constructing a representative subset of examples that is both small and able to constrain the solver sufficiently. We build the subset one example at a time, using a neural network to predict the probability of unchosen input-output examples conditioned on the chosen input-output examples, and adding the least probable example to the subset."  
+
+#### ["Neural Program Meta-Induction"](https://arxiv.org/abs/1710.04157) Devlin, Bunel, Singh, Hausknecht, Kohli
+  - `post` <https://microsoft.com/en-us/research/blog/neural-program-induction>
+  - `code` <https://github.com/carpedm20/karel>
 
 #### ["Learning Neural Programs To Parse Programs"](https://arxiv.org/abs/1706.01284) Chen, Liu, Song
 >	"We explore a new direction to learn domain-specific programs significantly more complex than previously considered in the literature of learning programs from input-output examples only. In particular, we consider an exemplary problem to learn a program to parse an input satisfying a context-free grammar into its abstract syntax tree. This problem is challenging when the underlying grammar is unknown, and only input-output examples are provided. The program to be synthesized in this problem, i.e., a parser, is more complex than programs consisting of string operations as in many previous work, and thus serves as a good next step challenge to tackle in the domain of learning programs from input-output examples."  
@@ -3360,7 +3394,11 @@ hieves."
 >	"parallel decoder in addition to parallel encoder - up to 8x speed-up"  
   - `post` <https://einstein.ai/research/non-autoregressive-neural-machine-translation>
 
-----
+#### ["Generating Wikipedia by Summarizing Long Sequences"](https://arxiv.org/abs/1801.10198) Liu, Saleh, Pot, Goodrich, Sepassi, Kaiser, Shazeer
+  `summarization`
+>	"Extractive summarization to coarsely identify salient information and a neural abstractive model to generate the article. For the abstractive model, decoder-only Transformer architecture that can scalably attend to very long sequences, much longer than typical encoder-decoder architectures used in sequence transduction."  
+
+---
 #### ["Unsupervised Machine Translation Using Monolingual Corpora Only"](https://arxiv.org/abs/1711.00043) Lample, Denoyer, Ranzato
   `translation`
 >	"learn to map sentences of the two languages into the same feature space by denoising both via auto-encoding and via cross-domain encoding"  

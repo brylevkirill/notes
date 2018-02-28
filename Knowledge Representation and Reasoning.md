@@ -521,14 +521,6 @@
 ---
 ### probabilistic database - Markov Logic Network
 
-  superset of first-order logic and undirected graphical models
-
-  "There was something really right about logic. It wasn't deductive inference which is too weak and brittle but abstraction. And if we combine abstraction of predicate logic with power of statistical learning and inference, we can do some pretty cool things."
-
-  *(Josh Tenenbaum)*
-
-----
-
   overview by Pedro Domingos:  
   - ["Unifying Logical and Statistical AI"](http://youtube.com/watch?v=bW5DzNZgGxY) `video`  
   - ["Combining Logic and Probability: Languages, Algorithms and Applications"](http://videolectures.net/uai2011_domingos_kersting_combining/) `video`  
@@ -536,8 +528,10 @@
   - ["Machine Learning for the Web: A Unified View"](http://videolectures.net/bsciw08_domingos_mlwuv/) `video`  
   - ["Statistical Modeling of Relational Data"](http://videolectures.net/kdd07_domingos_smord/) `video`  
 
-  [overview](http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning/) (part 2) by Volker Tresp `video`
+  [overview](http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning/) (part 2) by Volker Tresp `video`  
+  [overview](http://youtube.com/watch?v=e3Sb06myxAU) by Vishal Bhalla `video`  
 
+----
 
   ["What’s Missing in AI: The Interface Layer"](http://homes.cs.washington.edu/~pedrod/papers/ai100.pdf) by Pedro Domingos `paper`
 
@@ -623,8 +617,6 @@
 ---
 ### probabilistic database - Probabilistic Soft Logic
 
-  probability distribution over possible worlds
-
   <http://psl.linqs.org>  
   <https://github.com/linqs/psl>  
 
@@ -652,8 +644,6 @@
 
 ---
 ### probabilistic database - ProPPR
-
-  graph-algorithm inference over local groundings of first-order logic programs, strict generalization of PRA
 
   <https://github.com/TeamCohen/ProPPR>
 
@@ -692,18 +682,12 @@
   - inference (MLN: approximate, intractable) (ProPPR: Personalized PageRank aka Random Walk with Reset, linear)
   - learning (MLN: approximate, intractable) (ProPPR: pSGD, fast but non-convex, can parallelize)
 
-  scales to 10^5-10^6 facts and requires 10^3 training queries
-
 
 
 ---
 ### knowledge representation - probabilistic program
 
-  [Probabilistic Programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)
-
-  [overview](https://youtube.com/watch?v=-8QMqSWU76Q) by Vikash Mansinghka `video`
-
-----
+  [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)
 
   probabilistic programming:
   - languages for models & systems that simplify / automate aspects of inference
@@ -712,19 +696,7 @@
 
 ----
 
-  "For me there are two types of generalisation, which I will refer to as Symbolic and Connectionist generalisation. If we teach a machine to sort sequences of numbers of up to length 10 or 100, we should expect them to sort sequences of length 1000 say. Obviously symbolic approaches have no problem with this form of generalisation, but neural nets do poorly. On the other hand, neural nets are very good at generalising from data (such as images), but symbolic approaches do poorly here. One of the holy grails is to build machines that are capable of both symbolic and connectionist generalisation. Neural Programmer Interpreters is a very early step toward this. NPI can do symbolic operations such as sorting and addition, but it can also plan by taking images as input and it's able to generalise the plans to different images (e.g. in the NPI car example, the cars are test set cars not seen before)."
-
-  *(Nando de Freitas)*
-
-  "Probabilistic graphical models provide a formal lingua franca for modeling and a common target for efficient inference algorithms. However, many of the most innovative and useful probabilistic models published by the AI, machine learning, and statistics community far outstrip the representational capacity of graphical models and associated inference techniques. Models are communicated using a mix of natural language, pseudo code, and mathematical formulae and solved using special purpose, one-off inference methods. Rather than precise specifications suitable for automatic inference, graphical models typically serve as coarse, high-level descriptions, eliding critical aspects such as fine-grained independence, abstraction and recursion. Probabilistic programming languages aim to close this representational gap, unifying general purpose programming with probabilistic modeling; literally, users specify a probabilistic model in its entirety (e.g., by writing code that generates a sample from the joint distribution) and inference follows automatically given the specification. These languages provide the full power of modern programming languages for describing complex distributions, and can enable reuse of libraries of models, support interactive modeling and formal verification, and provide a much-needed abstraction barrier to foster generic, efficient inference in universal model classes."
-
-  *(Pedro Domingos)*
-
-  "Probabilistic programs express generative models, i.e., formal descriptions of processes that generate data. To the extent that we can mirror mechanisms “out there in the world” in a formal language, we can pose queries within this language and expect the answer to line up with what happens in the real world. For example, if we can accurately describe how genes give rise to proteins, this helps us in predicting which genetic changes lead to desirable results and which lead to harm. Traditionally, Bayesian networks have been used to formalize and reason about such processes. While extremely useful, this formalism is limited in its expressive power compared to programming languages in general. Probabilistic programming languages like Church provide a substrate for computational modeling that brings together Bayesian statistics and Turing-complete programming languages. What is the structure of thought? The language of thought hypothesis proposes that thoughts are expressions in a mental language, and that thinking consists of syntactic manipulation of these expressions. The probabilistic language of thought hypothesis suggests that these representations have probabilistic meaning. If we treat concepts as stochastic programs and thinking as approximate Bayesian inference, can we predict human behavior in experimental settings better than using other approaches, e.g., prototype theory? If we learn more about the primitives and composition mechanisms used in the brain to represent abstract concepts, can this inform how we construct tools for reasoning?"
-
-  *(Andreas Stuhlmueller)*
-
-----
+  [overview](https://youtube.com/watch?v=-8QMqSWU76Q) by Vikash Mansinghka `video`
 
   ["Engineering and Reverse-Engineering Intelligence Using Probabilistic Programs, Program Induction, and Deep Learning"](https://facebook.com/nipsfoundation/videos/1552446408179926/) by Josh Tenenbaum and Vikash Mansinghka `video`
 
