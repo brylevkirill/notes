@@ -589,6 +589,8 @@
 
   ["AutoML for large scale image classification and object detection"](https://research.googleblog.com/2017/11/automl-for-large-scale-image.html) by Zoph et al.
 
+  [interesting papers](#interesting-papers---automated-machine-learning)
+
 ----
 
   [TPOT](http://rhiever.github.io/tpot/) project
@@ -1069,6 +1071,7 @@
 >	"Furthermore, unlike most other adaptation schemes, our method is capable of performing online adaptation of hyperparameters – which can be particularly important in problems with highly non-stationary learning dynamics, such as reinforcement learning settings, where the learning problem itself can be highly non-stationary (e.g. dependent on which parts of an environment an agent is currently able to explore). As a consequence, it might be the case that the ideal hyperparameters for such learning problems are themselves highly non-stationary, and should vary in a way that precludes setting their schedule in advance."
 
   - `post` <https://deepmind.com/blog/population-based-training-neural-networks/>
+  - `video` <https://vimeo.com/250399261> (Jaderberg)
 
 
 #### ["Data Programming: Creating Large Training Sets, Quickly"](https://arxiv.org/abs/1605.07723) Ratner, Sa, Wu, Selsam, Re

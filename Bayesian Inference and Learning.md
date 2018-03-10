@@ -30,6 +30,8 @@
 
 ----
 
+  "Bayesian inference is application of Bayes' theorem to update probability of hypothesis as more evidence or information becomes available."
+
   "Probability is the representation of uncertain or partial knowledge about the truth of statements."
 
   "Logical inference is about what is certain to be true. Statistical inference is about what is likely to be true."
@@ -37,8 +39,6 @@
   "How do you extend classical logic to reason with uncertain propositions? Suppose we agree to represent degrees of plausibility with real numbers, larger numbers indicating greater plausibility. If we also agree to a few axioms to quantify what we mean by consistency and common sense, there is a unique and inevitable system for plausible reasoning that satisfies the axioms, which is probability theory. And this has been proven over 60 years ago. The important implication is that all other systems of plausible reasoning - fuzzy logic, neural networks, artificial intelligence, etc. - must either lead to the same conclusions as probability theory, or violate one of the axioms used to derive probability theory."
 
   "In Bayesian approach, probability is used not only to describe “physical” randomness, such as errors in labeling, but also uncertainty regarding the true values of the parameters. These prior and posterior probabilities represent degrees of belief, before and after seeing the data. The Bayesian approach takes modeling seriously. A Bayesian model includes a suitable prior distribution for model parameters. If the model/prior are chosen without regard for the actual situation, there is no justification for believing the results of Bayesian inference. The model and prior are chosen based on our knowledge of the problem. These choices are not, in theory, affected by the amount of data collected, or by the question we are interested in answering. We do not, for example, restrict the complexity of the model just because we have only a small amount of data. Pragmatic compromises are inevitable in practice - no model and prior perfectly express to our knowledge of the situation. The Bayesian approach relies on reducing such flaws to a level where we think they won’t seriously affect the results."
-
-  "From a Bayesian point of view, we should be integrating over likelihoods instead of using optimization methods to select a point estimate of model parameters, usually with ad hoc regularization tuned by cross validation."
 
   [interesting quotes](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#interesting-quotes---bayesian-inference-and-learning)
 
@@ -824,7 +824,7 @@
 #### ["Matchbox: Large Scale Bayesian Recommendations"](http://research.microsoft.com/apps/pubs/default.aspx?id=79460) Stern, Herbrich, Graepel
 >	"We present a probabilistic model for generating personalised recommendations of items to users of a web service. The Matchbox system makes use of content information in the form of user and item meta data in combination with collaborative filtering information from previous user behavior in order to predict the value of an item for a user. Users and items are represented by feature vectors which are mapped into a low-dimensional ‘trait space’ in which similarity is measured in terms of inner products. The model can be trained from different types of feedback in order to learn user-item preferences. Here we present three alternatives: direct observation of an absolute rating each user gives to some items, observation of a binary preference (like/ don’t like) and observation of a set of ordinal ratings on a userspecific scale. Efficient inference is achieved by approximate message passing involving a combination of Expectation Propagation and Variational Message Passing. We also include a dynamics model which allows an item’s popularity, a user’s taste or a user’s personal rating scale to drift over time. By using Assumed-Density Filtering for training, the model requires only a single pass through the training data. This is an on-line learning algorithm capable of incrementally taking account of new data so the system can immediately reflect the latest user preferences. We evaluate the performance of the algorithm on the MovieLens and Netflix data sets consisting of approximately 1,000,000 and 100,000,000 ratings respectively. This demonstrates that training the model using the on-line ADF approach yields state-of-the-art performance with the option of improving performance further if computational resources are available by performing multiple EP passes over the training data."
 
-  - `video` <http://videolectures.net/ecmlpkdd2010_graepel_mlm/> (21:05) (Graepel)
+  - `video` <http://videolectures.net/ecmlpkdd2010_graepel_mlm/#t=1265> (Graepel)
 
 
 #### ["Inverting a Steady-State"](http://theory.stanford.edu/~sergei/papers/wsdm15-cset.pdf) Kumar, Tomkins, Vassilvitskii, Vee

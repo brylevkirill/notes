@@ -106,7 +106,7 @@ interesting older papers:
   - `code` <https://github.com/leehomyc/mixup_pytorch>
 
 #### ["Opening the Black Box of Deep Neural Networks via Information"](http://arxiv.org/abs/1703.00810) Shwartz-Ziv, Tishby
-  `generalization`
+  `generalization` `information bottleneck`
 >	"DNNs with SGD have two phases: error minimization, then representation compression"  
 >	"
 >	The Information Plane provides a unique visualization of DL  
@@ -138,18 +138,21 @@ interesting older papers:
   - `press` <https://quantamagazine.org/new-theory-cracks-open-the-black-box-of-deep-learning-20170921>
 
 #### ["Deep Variational Information Bottleneck"](https://arxiv.org/abs/1612.00410) Alemi, Fischer, Dillon, Murphy
-  `generalization`
+  `generalization` `information bottleneck`
 >	"The IB principle is appealing, since it defines what we mean by a good representation, in terms of the fundamental tradeoff between having a concise representation and one with good predictive power. The main drawback of the IB principle is that computing mutual information is, in general, computationally challenging. We propose to use variational inference to construct a lower bound on the IB objective. By using the reparameterization trick, we can use Monte Carlo sampling to get an unbiased estimate of the gradient, and hence we can optimize the objective using stochastic gradient descent. This allows us to use deep neural networks to parameterize our distributions, and thus to handle high-dimensional, continuous data, such as images, avoiding the previous restrictions to the discrete or Gaussian cases."  
 >	"Stochastic neural networks, fit using our VIB method, are robust to overfitting, since VIB finds a representation Z which ignores as many details of the input X as possible. In addition, they are more robust to adversarial inputs than deterministic models which are fit using (penalized) maximum likelihood estimation. Intuitively this is because each input image gets mapped to a distribution rather than a unique Z, so it is more difficult to pass small, idiosyncratic perturbations through the latent bottleneck."  
 
 #### ["On the Emergence of Invariance and Disentangling in Deep Representations"](https://arxiv.org/abs/1706.01350) Achille, Soatto
-  `generalization`
+  `generalization` `information bottleneck`
 >	"We have presented bounds, some of which tight, that connect the amount of information in the weights, the amount of information in the activations, the invariance property of the network, and the geometry of the residual loss."  
 >	"This leads to the somewhat surprising result that reducing information stored in the weights about the past (dataset) results in desirable properties of the representation of future data (test datum)."  
 
 >	"We conducted experiments to validate the assumptions underlying these bounds, and found that the results match the qualitative behavior observed on real data and architectures. In particular, the theory predicts a verifiable phase transition between an underfitting and overfitting regime for random labels, and the amount of information in nats needed to cross the transition."  
 >	"We show that in a deep neural network invariance to nuisance factors is equivalent to information minimality of the learned representation, and that stacking layers and injecting noise during training naturally bias the network towards learning invariant representations. We then show that, in order to avoid memorization, we need to limit the quantity of information stored in the weights, which leads to a novel usage of the Information Bottleneck Lagrangian on the weights as a learning criterion."  
+>	"Information Bottleneck principle: minimize mutual information of the representation with the training data."  
   - `video` <https://youtube.com/watch?v=BCSoRTMYQcw> (Achille)
+  - `video` <https://youtube.com/watch?v=zbg49SMP5kY> (Soatto)
+
 
 ----
 #### ["The Marginal Value of Adaptive Gradient Methods in Machine Learning"](https://arxiv.org/abs/1705.08292) Wilson, Roelofs, Stern, Srebro, Recht
@@ -239,6 +242,7 @@ interesting older papers:
   `stochastic gradient descent` `approximate inference`
 >	"We prove that SGD minimizes an average potential over the posterior distribution of weights along with an entropic regularization term. This potential is however not the original loss function in general. So SGD does perform variational inference, but for a different loss than the one used to compute the gradients. Even more surprisingly, SGD does not even converge in the classical sense: we show that the most likely trajectories of SGD for deep networks do not behave like Brownian motion around critical points. Instead, they resemble closed loops with deterministic components. We prove that such “out-of-equilibrium” behavior is a consequence of the fact that the gradient noise in SGD is highly non-isotropic; the covariance matrix of mini-batch gradients has a rank as small as 1% of its dimension."  
 >	"It is widely believed that SGD is an implicit regularizer. This belief stems from its remarkable empirical performance. Our results show that such intuition is very well-placed. Thanks to the special architecture of deep networks where gradient noise is highly non-isotropic, SGD helps itself to a potential Φ with properties that lead to both generalization and acceleration."  
+  - `video` <https://youtube.com/watch?v=NFeZ6MggJjw> (Chaudhari)
 
 #### ["Stochastic Gradient Descent as Approximate Bayesian Inference"](https://arxiv.org/abs/1704.04289) Mandt, Hoffman, Blei
   `stochastic gradient descent` `approximate inference`
@@ -303,16 +307,19 @@ interesting older papers:
 >	"Existing bayesian solutions (MCMC, VI, MC-Dropout) are hard to scale and requires significant modifications for training."  
 >	"Single network and MC-Dropout can produce overconfident wrong predictions, whereas deep ensembles are more robust."  
   - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747/> (1:00:23) (Lakshminarayanan)
+  - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/simple-and-scalable-predictive-uncertainty-estimation-using-deep-ensembles/> `in russian`
   - `code` <https://github.com/vvanirudh/deep-ensembles-uncertainty>
 
 ----
 #### ["Model Selection in Bayesian Neural Networks via Horseshoe Priors"](https://arxiv.org/abs/1705.10388) Ghosh, Doshi-Velez
   `model selection`
 >	"Model selection - even choosing the number of nodes - remains an open question. In this work, we apply a horseshoe prior over node pre-activations of a Bayesian neural network, which effectively turns off nodes that do not help explain the data. We demonstrate that our prior prevents the BNN from underfitting even when the number of nodes required is grossly over-estimated. Moreover, this model selection over the number of nodes doesn’t come at the expense of predictive or computational performance; in fact, we learn smaller networks with comparable predictive performance to current approaches."  
+  - `post` <https://bayesgroup.github.io/sufficient-statistics/posts/the-horseshoe-prior/> `in russian`
 
 #### ["Bayesian Compression for Deep Learning"](https://arxiv.org/abs/1705.08665) Louizos, Ullrich, Welling
   `model selection`
   - `video` <http://videolectures.net/deeplearning2017_ullrich_bayesian_compression/> (Ullrich)
+  - `post` <https://bayesgroup.github.io/sufficient-statistics/posts/the-horseshoe-prior/> `in russian`
   - `paper` ["Variational Dropout and the Local Reparameterization Trick"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#variational-dropout-and-the-local-reparameterization-trick-kingma-salimans-welling) by Kingma, Salimans, Welling `summary`
   - `paper` ["Variational Gaussian Dropout is not Bayesian"](https://arxiv.org/abs/1711.02989) by Hron, Matthews, Ghahramani
 
@@ -856,8 +863,10 @@ interesting older papers:
 
 #### ["Learning Multiagent Communication with Backpropagation"](http://arxiv.org/abs/1605.07736) Sukhbaatar, Szlam, Fergus
   `information routing`
-  - `video` <https://youtu.be/SAcHyzMdbXc?t=19m> (de Freitas)
+  - `video` <https://youtube.com/watch?v=9fZ8JiDZqCA> (Sukhbaatar)
   - `video` <https://youtu.be/_iVVXWkoEAs?t=30m6s> (Fergus)
+  - `video` <https://youtu.be/SAcHyzMdbXc?t=19m> (de Freitas)
+  - `slides` <https://uclmr.github.io/nampi/talk_slides/rob-nampi.pdf>
   - `code` <https://github.com/facebookresearch/CommNet>
   - `code` <https://github.com/rickyhan/CommNet>
 
@@ -869,7 +878,8 @@ interesting older papers:
   - `code` <https://github.com/ajbrock/SMASH>
 
 #### ["Learning Transferable Architectures for Scalable Image Recognition"](https://arxiv.org/abs/1707.07012) Zoph, Vasudevan, Shlens, Le
-  `architecture search`
+  `architecture search` `NASNet`
+  - `video` <https://vimeo.com/250399509> (Le)
   - `post` <https://research.googleblog.com/2017/11/automl-for-large-scale-image.html>
 
 #### ["Neural Architecture Search with Reinforcement Learning"](http://arxiv.org/abs/1611.01578) Zoph, Le
@@ -891,6 +901,14 @@ interesting older papers:
 >	"Method is capable of learning a loss function over thousands of sequential environmental actions. Crucially, this learned loss is both highly adaptive (allowing for quicker learning of new tasks) and highly instructive (sometimes eliminating the need for environmental rewards at test time)."  
 >	"Our loss’ instructive nature – which allows it to operate at test time without environmental rewards – is interesting and desirable. This instructive nature can be understood as the loss function’s internalization of the reward structures it has previously encountered under the training task distribution. We see this internalization as a step toward learning intrinsic motivation. A good intrinsically motivated agent would successfully infer useful actions in new situations by using heuristics it developed over its entire lifetime. This ability is likely required to achieve truly intelligent agents."  
 >	"In addition to internalizing environment rewards, learned loss could, in principle, have several other positive effects. For example, by examining the agent’s history, the loss could incentivize desirable extended behaviors, such as exploration. Further, the loss could perform a form of system identification, inferring environment parameters and adapting how it guides the agent as a function of these parameters (e.g., by adjusting the effective learning rate of the agent)."  
+
+#### ["Deep Learning for Reward Design to Improve Monte Carlo Tree Search in ATARI Games"](https://arxiv.org/abs/1604.07095) Guo, Singh, Lewis, Lee
+  `learning reward function`
+>	"Monte Carlo Tree Search methods have proven powerful in planning for sequential decision-making problems such as Go and video games, but their performance can be poor when the planning depth and sampling trajectories are limited or when the rewards are sparse. We present an adaptation of PGRD (policy-gradient for reward design) for learning a reward-bonus function to improve UCT (a MCTS algorithm). Unlike previous applications of PGRD in which the space of reward-bonus functions was limited to linear functions of hand-coded state-action-features, we use PGRD with a multi-layer convolutional neural network to automatically learn features from raw perception as well as to adapt the non-linear reward-bonus function parameters. We also adopt a variance-reducing gradient method to improve PGRD’s performance. The new method improves UCT’s performance on multiple ATARI games compared to UCT without the reward bonus. Combining PGRD and Deep Learning in this way should make adapting rewards for MCTS algorithms far more widely and practically applicable than before."  
+  - `video` <https://vimeo.com/250399421> (Singh)
+  - `video` <http://videolectures.net/deeplearning2017_singh_reinforcement_learning/#t=1177> (Singh)
+  - `video` <https://youtube.com/watch?v=MhIP1SOqlS8> (Singh)
+  - `paper` ["Where Do Rewards Come From?"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.151.8250) by Singh, Lewis, Barto
 
 ----
 #### ["Continuous Adaptation via Meta-Learning in Nonstationary and Competitive Environments"](https://arxiv.org/abs/1710.03641) Al-Shedivat, Bansal, Burda, Sutskever, Mordatch, Abbeel
@@ -916,9 +934,10 @@ interesting older papers:
 
 #### ["Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks"](https://arxiv.org/abs/1703.03400) Finn, Abbeel, Levine
   `MAML` `learning initialization algorithm`
+>	"End-to-end learning of parameter θ that is good init for fine-tuning for many tasks."  
+>	"MAML finds a shared parameter θ such that for a given task, one gradient step on θ using the training set will yield a model with good predictions on the test set. Then, a meta-gradient update is performed from the test error through the one gradient step in the training set, to update θ."  
 >	"Tasks are sampled and a policy gradient update is computed for each task with respect to a fixed initial set of parameters. Subsequently, a meta update is performed where a gradient step is taken that moves the initial parameter in a direction that would have maximally benefited the average return over all of the sub-updates."  
 >	"Unlike prior methods, the MAML learner’s weights are updated using the gradient, rather than a learned update rule. Our method does not introduce any additional parameters into the learning process and does not require a particular learner model architecture."  
->	"MAML finds a shared parameter θ such that for a given task, one gradient step on θ using the training set will yield a model with good predictions on the test set. Then, a meta-gradient update is performed from the test error through the one gradient step in the training set, to update θ."  
   - <https://sites.google.com/view/maml> (demo)
   - `video` <https://youtu.be/Ko8IBbYjdq8?t=18m51s> (Finn)
   - `video` <https://youtu.be/lYU5nq0dAQQ?t=44m57s> (Levine)
@@ -935,7 +954,7 @@ interesting older papers:
 >	"Meta-learning algorithm is decomposed into two parts: the traditional learner’s initial parameters are trained to be suitable for fast gradient-based adaptation; the LSTM meta-learner is trained to be an optimization algorithm adapted for meta-learning tasks."  
 >	"Encoding network reads the training set and generate the parameters of a model, which is trained to perform well on the testing set."  
   - `video` <https://facebook.com/iclr.cc/videos/1713144705381255/> (1:26:48) (Ravi)
-  - `video` <http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/> (1:08:08) (de Freitas)
+  - `video` <http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/#t=4088> (de Freitas)
   - `video` <https://youtu.be/QIcpGa-_bvA?t=34m> (Vinyals)
   - `code` <https://github.com/twitter/meta-learning-lstm>
 
@@ -981,6 +1000,7 @@ interesting older papers:
   `learning learning algorithm`
 >	"outer episodes (sample a new bandit problem / MDP) and inner episodes (of sampled MDP)"  
 >	"use RNN policy with no state reset between inner episodes for outer POMDP"  
+  - `video` <https://vimeo.com/250399556> (Wang)
   - `video` <https://youtu.be/Y85Zn50Eczs?t=20m18s> (Botvinick)
   - `post` <https://hackernoon.com/learning-policies-for-learning-policies-meta-reinforcement-learning-rl²-in-tensorflow-b15b592a2ddf> (Juliani)
   - `code` <https://github.com/awjuliani/Meta-RL>
@@ -989,21 +1009,21 @@ interesting older papers:
 ----
 #### ["Learned Optimizers that Scale and Generalize"](http://arxiv.org/abs/1703.04813) Wichrowska, Maheswaranathan, Hoffman, Colmenarejo, Denil, de Freitas, Sohl-Dickstein
   `learning optimization algorithm`
-  - `video` <http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/> (42:40) (de Freitas)
+  - `video` <http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/#t=2560> (de Freitas)
   - `code` <https://github.com/tensorflow/models/tree/master/research/learned_optimizer>
 
 #### ["Learning to Learn without Gradient Descent by Gradient Descent"](https://arxiv.org/abs/1611.03824) Chen, Hoffman, Colmenarejo, Denil, Lillicrap, Botvinick, de Freitas
   `learning optimization algorithm`
 >	"Differentiable neural computers as alternatives to parallel Bayesian optimization for hyperparameter tuning of other networks."  
 >	"Proposes RNN optimizers that match performance of Bayesian optimization methods (e.g. Spearmint, SMAC, TPE) but are massively faster."  
-  - `video` <http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/> (52:35) (de Freitas)
+  - `video` <http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/#t=3155> (de Freitas)
 
 #### ["Learning to Learn by Gradient Descent by Gradient Descent"](http://arxiv.org/abs/1606.04474) Andrychowicz, Denil, Gomez, Hoffman, Pfau, Schaul, Shillingford, de Freitas
   `learning optimization algorithm`
 >	"Take some computation where you usually wouldn’t keep around intermediate states, such as a planning computation (say value iteration, where you only keep your most recent estimate of the value function) or stochastic gradient descent (where you only keep around your current best estimate of the parameters). Now keep around those intermediate states as well, perhaps reifying the unrolled computation in a neural net, and take gradients to optimize the entire computation with respect to some loss function. Instances: Value Iteration Networks, Learning to learn by gradient descent by gradient descent."  
   - `video` <https://youtu.be/SAcHyzMdbXc?t=10m24s> (de Freitas)
   - `video` <https://youtu.be/x1kf4Zojtb0?t=1h4m53s> (de Freitas)
-  - `video` <http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/> (27:49) (de Freitas)
+  - `video` <http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/#t=1669> (de Freitas)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.04474>
   - `notes` <https://theneuralperspective.com/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>
   - `notes` <https://blog.acolyer.org/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>
@@ -1187,6 +1207,7 @@ interesting older papers:
 
 #### ["Poincare Embeddings for Learning Hierarchical Representations"](https://arxiv.org/abs/1705.08039) Nickel, Kiela
   `learning embedding`
+  - `video` <https://cds.cern.ch/record/2306315> (Nickel)
   - `video` <https://facebook.com/nipsfoundation/videos/1553634558061111/> (1:03:01) (Nickel)
   - `notes` <https://medium.com/towards-data-science/facebook-research-just-published-an-awesome-paper-on-learning-hierarchical-representations-34e3d829ede7>
   - `notes` <https://medium.com/@hol_io/word-embeddings-exploration-explanation-and-exploitation-with-code-in-python-5dac99d5d795>
@@ -1217,6 +1238,7 @@ interesting older papers:
 >	"Real NVPs are invertible transformations and have perfect reconstructions. We can still visualize reconstructions from a partially resampled latent vector. Gregor et al. (2016) and Dinh et al. (2016) visualized ‘conceptual compression’ by inferring the latent variables and then resampling a part of the latent variables from the normal N(0,1) prior. The subsequent reconstruction should still form a valid image. If the original image was generated by the generator, the partially resampled latent vector would still have the normal N(0,1) distribution. We show the reconstructions if resampling the first half or the second half of the latent vector. The generator trained by maximum likelihood has partial reconstructions similar to generated samples. In comparison, the partial reconstructions from the generator trained by WGAN do not resemble samples from WGAN. This again indicates that the validation examples have a different distribution than WGAN samples."  
 >	"We looked at the approximate Wasserstein distance between the validation data and the generator distribution. We will train another critic to assign high values to validation samples and low values to generated samples. This independent critic will be used only for evaluation. The generator will not see the gradients from the independent critic. We display the approximate Wasserstein distance between the validation set and the generator distribution. The first thing to notice is the correct ordering of generators trained by maximum likelihood. The deepest generator has the smallest approximate distance from the validation set, as indicated by the thick solid lines. We also display an approximate distance between the training set and generator distribution, and the approximate distance between the test set and the generator distribution. The approximate distance between the test set and the generator distribution is a little bit smaller than the approximate distance between the validation set and the generator distribution. The approximate distance between the training set and the generator distribution is much smaller. The generators are overfitting the training set."  
 >	"Real NVP can be used as an encoder in Adversarial Variational Bayes. We were able to measure the gap between the unbiased KL estimate log q(z|x) - log p(z) and its approximation from GAN. We show that Adversarial Variational Bayes underestimates the KL divergence."  
+  - `slides` <http://www.gatsby.ucl.ac.uk/~balaji/Understanding-GANs.pdf>
 
 #### ["On the Quantitative Analysis of Decoder-based Generative Models"](http://arxiv.org/abs/1611.04273) Wu, Burda, Salakhutdinov, Grosse
   `evaluation`
@@ -1262,6 +1284,7 @@ interesting older papers:
   - `video` <https://youtu.be/ZHucm52V3Zw?t=5m5s> (Umnov)
   - `video` <https://youtu.be/jAI3rBI6poU?t=1h1m33s> (Ulyanov) `in russian`
   - `slides` <http://elarosca.net/slides/iccv_autoencoder_gans.pdf>
+  - `slides` <http://www.gatsby.ucl.ac.uk/~balaji/Understanding-GANs.pdf>
   - `notes` <https://medium.com/@g789872001darren/paper-note-variational-approaches-for-auto-encoding-generative-adversarial-networks-fefc3b3841ff>
   - `code` <https://github.com/victor-shepardson/alpha-GAN>
 
@@ -1296,6 +1319,7 @@ interesting older papers:
   - `video` <https://youtu.be/RZOKRFBtSh4?t=5m37s> (Mohamed)
   - `video` <https://youtu.be/jAI3rBI6poU?t=37m56s> (Ulyanov) `in russian`
   - `post` <https://casmls.github.io/general/2017/05/24/ligm.html>
+  - `slides` <http://www.gatsby.ucl.ac.uk/~balaji/Understanding-GANs.pdf>
 
 #### ["Adversarial Variational Bayes: Unifying Variational Autoencoders and Generative Adversarial Networks"](http://arxiv.org/abs/1701.04722) Mescheder, Nowozin, Geiger
   `unifying GANs and VAEs`
@@ -1348,6 +1372,7 @@ interesting older papers:
   - `post` <http://blog.evjang.com/2018/01/nf2.html>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.08803>
   - `code` <https://github.com/tensorflow/models/tree/master/research/real_nvp>
+  - `code` <https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/distributions/python/ops/bijectors/real_nvp.py>
   - `code` <https://github.com/taesung89/real-nvp>
 
 
@@ -1381,7 +1406,7 @@ interesting older papers:
 >	The first relates to the role of the discriminator in the quality of the approximation. In practice, the discriminator is usually restricted to belong to some family, and it is not understood in what sense this restriction affects the distribution output by the generator.  
 >	The second question relates to convergence; different variants of GANs have been proposed that involve different objective functions (to be optimized by the generator and the discriminator). However, it is not understood under what conditions minimizing the objective function leads to a good approximation of the target distribution. More precisely, does a sequence of distributions output by the generator that converges to the global minimum under the objective function always converge to the target distribution µ under some standard notion of distributional convergence?"  
 >	"We first characterize a very general class of objective functions that we call adversarial divergences, and we show that they capture the objective functions used by a variety of existing procedures that include the original GAN, f-GAN, MMD-GAN, WGAN, improved WGAN, as well as a class of entropic regularized optimal transport problems. We then define the class of strict adversarial divergences – a subclass of adversarial divergences where the minimizer of the objective function is uniquely the target distribution."  
->	"We show that if the objective function is an adversarial divergence that obeys certain conditions, then using a restricted class of discriminators has the effect of matching generalized moments. A concrete consequence of this result is that in linear f-GANs, where the discriminator family is the set of all affine functions over a vector ψ of features maps, and the objective function is an f-GAN, the optimal distribution ν output by the GAN will satisfy Ex~µ[ψ(x)] = Ex~ν[ψ(x)] regardless of the specific f-divergence chosen in the objective function. Furthermore, we show that a neural network GAN is just a supremum of linear GANs, therefore has the same moment-matching effect."  
+>	"We show that if the objective function is an adversarial divergence that obeys certain conditions, then using a restricted class of discriminators has the effect of matching generalized moments. A concrete consequence of this result is that in linear f-GANs, where the discriminator family is the set of all affine functions over a vector ψ of features maps, and the objective function is an f-GAN, the optimal distribution ν output by the GAN will satisfy Ex\~µ[ψ(x)] = Ex\~ν[ψ(x)] regardless of the specific f-divergence chosen in the objective function. Furthermore, we show that a neural network GAN is just a supremum of linear GANs, therefore has the same moment-matching effect."  
 >	"We show that convergence in an adversarial divergence implies some standard notion of topological convergence. Particularly, we show that provided an objective function is a strict adversarial divergence, convergence to µ in the objective function implies weak convergence of the output distribution to µ. An additional consequence of this result is the observation that as the Wasserstein distance metrizes weak convergence of probability distributions, Wasserstein-GANs have the weakest objective functions in the class of strict adversarial divergences."  
 >
 >	"Authors worry about two important aspects of GAN convergence: what how good the generative distribution approximates the real distribution; and, when does this convergence takes place. For the first question the answer is the discriminator forces some kind of moment matching between the real and fake distributions. In order to get full representation of the density we will need that the discriminator grows with the data. For the second question, they show a week convergence result. This result is somewhat complementary to Arora et al. (2017), because it indicates that the discriminator complexity needs to grow indefinitely to achieve convergence. The question that remains to be answer is the rate of convergence, as the moments need to be matched for complicated distributions might require large data and complex discriminators. So in practice, we cannot tell if the generated distribution is close enough to the distribution we are interested in."  
@@ -1413,6 +1438,7 @@ interesting older papers:
   `GAN objective`
 >	"Are GANs successful because of adversarial training or the use of ConvNets? We show that a ConvNet generator trained with a simple reconstruction loss and learnable noise vectors leads many of the desirable properties of a GAN."  
 >	"We introduce Generative Latent Optimization, a framework to train deep convolutional generators without using discriminators, thus avoiding the instability of adversarial optimization problems. Throughout a variety of experiments, we show that GLO enjoys many of the desirable properties of GANs: learning from large data, synthesizing visually-appealing samples, interpolating meaningfully between samples, and performing linear arithmetic with noise vectors."  
+  - `video` <https://youtu.be/r7oSmy_AtZY?t=29m4s> (Szlam)
   - `post` <https://facebook.com/yann.lecun/posts/10154646915277143>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/BojanowskiJLS17>
 
@@ -1432,6 +1458,7 @@ interesting older papers:
 #### ["Improved Training of Wasserstein GANs"](https://arxiv.org/abs/1704.00028) Gulrajani, Ahmed, Arjovsky, Dumoulin, Courville
   `GAN objective`
   - `post` <https://casmls.github.io/general/2017/04/13/gan.html>
+  - `post` <https://lernapparat.de/improved-wasserstein-gan>
   - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/wasserstein-generative-adversarial-networks/> `in russian`
   - `code` <https://github.com/wiseodd/generative-models/tree/master/GAN/improved_wasserstein_gan>
   - `code` <https://github.com/igul222/improved_wgan_training>
@@ -1492,6 +1519,7 @@ interesting older papers:
 
 #### ["How to Train Your DRAGAN"](https://arxiv.org/abs/1705.07215) Kodali, Abernethy, Hays, Kira
   `GAN training protocol`
+  - `post` <http://lernapparat.de/more-improved-wgan>
   - `code` <https://github.com/hwalsuklee/tensorflow-generative-model-collections/blob/master/DRAGAN.py>
 
 #### ["BEGAN: Boundary Equilibrium Generative Adversarial Networks"](https://arxiv.org/abs/1703.10717) Berthelot, Schumm, Metz
@@ -1539,6 +1567,7 @@ interesting older papers:
   `GAN applications` `image synthesis` `ProGAN`
 >	"Instead of Wassersteinizing, just keep the KL loss, but get rid of the disjoint support problem by doing multiresolution approximation of the data distribution."  
   - `video` <https://youtube.com/watch?v=XOxxPcy5Gr4> (demo)
+  - `post` <https://bayesgroup.github.io/sufficient-statistics/posts/multilevel-gans/> `in russian`
   - `code` <https://github.com/tkarras/progressive_growing_of_gans>
   - `code` <https://github.com/ptrblck/prog_gans_pytorch_inference>
 
@@ -1835,6 +1864,7 @@ interesting older papers:
   - `video` <https://vimeo.com/235922311> (Bellemare)
   - `video` <https://vimeo.com/237274251> (Bellemare)
   - `video` <https://youtu.be/bsuvM1jO-4w?t=4m45s> (Mnih)
+  - `video` <https://youtu.be/fnwo3GCmyEo?t=6m45s> (Fritzler) `in russian`
   - `video` <https://youtu.be/5REJGbNu-Kk?t=11m45s> (Grinchuk) `in russian`
   - `post` <https://mtomassoli.github.io/2017/12/08/distributional_rl/>
   - `post` <https://flyyufelix.github.io/2017/10/24/distributional-bellman.html>
@@ -1849,7 +1879,7 @@ interesting older papers:
 #### ["Learning to Play in a Day: Faster Deep Reinforcement Learning by Optimality Tightening"](https://arxiv.org/abs/1611.01606) He, Liu, Schwing, Peng
   `Q-learning`
 >	"We propose a novel training algorithm for reinforcement learning which combines the strength of deep Q-learning with a constrained optimization approach to tighten optimality and encourage faster reward propagation."  
-  - `video` <https://yadi.sk/i/yBO0q4mI3GAxYd> (1:10:20) (Fritsler) `in russian`
+  - `video` <https://yadi.sk/i/yBO0q4mI3GAxYd> (1:10:20) (Fritzler) `in russian`
   - `video` <https://youtu.be/mrj_hyH974o?t=16m13s> (Podoprikhin) `in russian`
 
 ----
@@ -1955,6 +1985,7 @@ interesting older papers:
 >	"We also prove that EPG reduces the variance of the gradient estimates without requiring deterministic policies and, for the Gaussian case, with no computational overhead. When the policy is Gaussian, we can now reinterpret deterministic policy gradients as an on-policy method: the deterministic policy of the original formulation is just the result of analytically integrating across actions in the Gaussian policy."  
 >	"Both SPG and DPG approaches have significant shortcomings. For SPG, variance in the gradient estimates means that many trajectories are usually needed for learning. Since gathering trajectories is typically expensive, there is a great need for more sample efficient methods. DPG’s use of deterministic policies mitigates the problem of variance in the gradient but raises other difficulties. The theoretical support for DPG is limited since it assumes a critic that approximates ∇aQ when in practice it approximates Q instead. In addition, DPG learns off-policy, which is undesirable when we want learning to take the cost of exploration into account. More importantly, learning off-policy necessitates designing a suitable exploration policy, which is difficult in practice. In fact, efficient exploration in DPG is an open problem and most applications simply use independent Gaussian noise or the Ornstein-Uhlenbeck heuristic."  
 >	"EPG also enables a practical contribution. Under certain conditions, we get an analytical expression for the covariance of the Gaussian that leads to a principled directed exploration strategy for continuous problems. We show that it is optimal in a certain sense to explore with a Gaussian policy such that the covariance is proportional to exp(H), where H is the scaled Hessian of the critic with respect to the actions. We present empirical results confirming that this new approach to exploration substantially outperforms DPG with Ornstein-Uhlenbeck exploration in four challenging MuJoCo domains."  
+  - `video` <https://youtube.com/watch?v=x2NFiP6cuXI> (Ciosek)
 
 #### ["Scalable Trust-region Method for Deep Reinforcement Learning using Kronecker-Factored Approximation"](https://arxiv.org/abs/1708.05144) Wu, Mansimov, Liao, Grosse, Ba
   `ACKTR` `policy gradient` `on-policy`
@@ -2047,7 +2078,7 @@ interesting older papers:
 >	"More precisely, this intentional-unintentional architecture consists of two neural networks. The actor neural network has multiple-heads representing different policies with shared lower-level representations. The critic network represents several state-action value functions, sharing a common representation for the observations."  
 >	"Our experiments demonstrate that when acting according to the policy associated with one of the hardest tasks, we are able to learn all other tasks off-policy. The results for the playroom domain also showed that by increasing the number of tasks, all actors and critics learn faster. In fact, in some settings, learning with many goals was essential to solve hard many-body control tasks."  
   - `video` <https://youtu.be/xfyK03MEZ9Q?t=7h20m39s> (Cabi)
-  - `video` <http://videolectures.net/deeplearning2017_de_freitas_deep_control/> (20:40) (de Freitas)
+  - `video` <http://videolectures.net/deeplearning2017_de_freitas_deep_control/#t=1240> (de Freitas)
 
 #### ["Trust-PCL: An Off-Policy Trust Region Method for Continuous Control"](https://arxiv.org/abs/1707.01891) Nachum, Norouzi, Xu, Schuurmans
   `Trust-PCL` `policy gradient` `on-policy + off-policy`
@@ -2114,6 +2145,11 @@ interesting older papers:
 [interesting older papers](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---model-based-methods)
 
 ----
+#### ["Composable Planning with Attributes"](https://arxiv.org/abs/1803.00512) Zhang, Lerer, Sukhbaatar, Fergus, Szlam
+  `planning` `using available environment model`
+>	"The tasks that an agent will need to solve often are not known during training. However, if the agent knows which properties of the environment are important then, after learning how its actions affect those properties, it may be able to use this knowledge to solve complex tasks without training specifically for them. Towards this end, we consider a setup in which an environment is augmented with a set of user defined attributes that parameterize the features of interest. We propose a method that learns a policy for transitioning between “nearby” sets of attributes, and maintains a graph of possible transitions. Given a task at test time that can be expressed in terms of a target set of attributes, and a current state, our model infers the attributes of the current state and searches over paths through attribute space to get a high level plan, and then uses its low level policy to execute the plan. We show in 3D block stacking, gridworld games, and StarCraft that our model is able to generalize to longer, more complex tasks at test time by composing simpler learned policies."  
+  - `video` <https://youtube.com/watch?v=r7oSmy_AtZY> (Szlam)
+
 #### ["Neural Network Dynamics for Model-Based Deep Reinforcement Learning with Model-Free Fine-Tuning"](https://arxiv.org/abs/1708.02596) Nagabandi, Kahn, Fearing, Levine
   `planning` `using available environment model`
 >	"Calculating optimal plan is difficult due to the dynamics and reward functions being nonlinear, but many techniques exist for obtaining approximate solutions to finite-horizon control problems that are sufficient for succeeding at the desired task. We use a simple random-sampling shooting method in which K candidate action sequences are randomly generated, the corresponding state sequences are predicted using the learned dynamics model, the rewards for all sequences are calculated, and the candidate action sequence with the highest expected cumulative reward is chosen. Rather than have the policy execute this action sequence in open-loop, we use model predictive control: the policy executes only the first action, receives updated state information, and recalculates the optimal action sequence at the next time step. This combination of predictive dynamics model plus controller is beneficial in that the model is trained only once, but by simply changing the reward function, we can accomplish a variety of goals at run-time, without a need for live task-specific retraining."  
@@ -2157,6 +2193,8 @@ interesting older papers:
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
   - `notes` <https://blog.acolyer.org/2018/01/10/mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm/>
   - `code` <https://github.com/glinscott/leela-chess>
+  - `code` <https://github.com/Zeta36/chess-alpha-zero>
+  - `code` <https://github.com/junxiaosong/AlphaZero_Gomoku>
 
 #### ["Mastering the Game of Go without Human Knowledge"](https://deepmind.com/documents/119/agz_unformatted_nature.pdf) Silver et al.
   `learning to guide planning` `using available environment model` `search-based policy iteration` `expert iteration`
@@ -2279,7 +2317,7 @@ interesting older papers:
 >	"VPN combines model-based RL (i.e., learning the dynamics of an abstract state space sufficient for computing future rewards and values) and model-free RL (i.e., mapping the learned abstract states to rewards and values) in a unified framework. In order to train a VPN, we propose a combination of temporal-difference search (TD search) and n-step Q-learning. In brief, VPNs learn to predict values via Q-learning and rewards via supervised learning. At the same time, VPNs perform lookahead planning to choose actions and compute bootstrapped target Q-values."  
 >	"Extends the Predictron model from policy evaluation to optimal control."  
 >	"Uses the model to construct a look-ahead tree only when constructing bootstrap targets and selecting actions, similarly to TD-search. Crucially, the model is not embedded in a planning algorithm during optimisation."  
-  - `video` <http://videolectures.net/deeplearning2017_singh_reinforcement_learning/> (1:12:46) (Singh)
+  - `video` <http://videolectures.net/deeplearning2017_singh_reinforcement_learning/#t=4366> (Singh)
   - `video` <https://youtu.be/PRQ8-FwDPRE?t=16m> (Holland)
 
 #### ["The Predictron: End-to-End Learning and Planning"](https://arxiv.org/abs/1612.08810) Silver et al.
@@ -2291,8 +2329,8 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=BeaLdaN2C3Q> (demo)
   - `video` <https://vimeo.com/238243832>
   - `video` <https://youtube.com/watch?v=ID150Tl-MMw&t=55m9s> (Abbeel)
-  - `video` <http://videolectures.net/deeplearning2017_singh_reinforcement_learning/> (1:12:46) (Singh)
   - `video` <https://youtu.be/bsuvM1jO-4w?t=38m6s> (Mnih)
+  - `video` <http://videolectures.net/deeplearning2017_singh_reinforcement_learning/#t=4366> (Singh)
   - `code` <https://github.com/zhongwen/predictron>
   - `code` <https://github.com/muupan/predictron>
 
@@ -2445,6 +2483,7 @@ interesting older papers:
   `approximate bayesian exploration` `approximate posterior sampling`
 >	"scale of perturbation to parameters is learned along with original objective function"  
   - `video` <https://youtu.be/fevMOp5TDQs?t=1h27s> (Mnih)
+  - `video` <https://youtu.be/fnwo3GCmyEo?t=49m46s> (Fritzler) `in russian`
   - `code` <https://github.com/Kaixhin/NoisyNet-A3C>
   - `code` <https://github.com/andrewliao11/NoisyNet-DQN>
 
@@ -2486,7 +2525,10 @@ interesting older papers:
 #### ["EX2: Exploration with Exemplar Models for Deep Reinforcement Learning"](https://arxiv.org/abs/1703.01260) Fu, Co-Reyes, Levine
   `exploration guided by observation novelty`
 >	"Many of the most effective exploration techniques rely on tabular representations, or on the ability to construct a generative model over states and actions. This paper introduces a novel approach, EX2, which approximates state visitation densities by training an ensemble of discriminators, and assigns reward bonuses to rarely visited states."  
+  - <https://sites.google.com/view/ex2exploration> (demo)
   - `video` <https://facebook.com/nipsfoundation/videos/1554741347950432/> (1:15:15) (Fu)
+  - `code` <https://github.com/jcoreyes/ex2>
+  - `code` <https://github.com/justinjfu/exemplar_models>
 
 #### ["#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning"](http://arxiv.org/abs/1611.04717) Tang, Houthooft, Foote, Stooke, Chen, Duan, Schulman, Turck, Abbeel
   `exploration guided by observation novelty`
@@ -2734,7 +2776,7 @@ hieves."
 #### ["Strategic Attentive Writer for Learning Macro-Actions"](http://arxiv.org/abs/1606.04695) Vezhnevets, Mnih, Agapiou, Osindero, Graves, Vinyals, Kavukcuoglu
   `STRAW`
   - `video` <https://youtube.com/watch?v=niMOdSu3yio> (demo)
-  - `video` <http://videolectures.net/deeplearning2016_mohamed_generative_models/> (1:13:55) (Mohamed)
+  - `video` <http://videolectures.net/deeplearning2016_mohamed_generative_models/#t=4435> (Mohamed)
   - `notes` <https://theberkeleyview.wordpress.com/2017/01/03/strategic-attentive-writer-for-learning-macro-actions/>
   - `notes` <https://blog.acolyer.org/2017/01/06/strategic-attentive-writer-for-learning-macro-actions/>
 
@@ -2909,7 +2951,7 @@ hieves."
   - `video` <http://bit.ly/one-shot-imitation> (demo)
   - `post` <https://blog.openai.com/robots-that-learn/>
   - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482/> (25:43) (Abbeel)
-  - `video` <http://videolectures.net/deeplearning2017_de_freitas_deep_control/> (1:03:10) (de Freitas)
+  - `video` <http://videolectures.net/deeplearning2017_de_freitas_deep_control/#t=3790> (de Freitas)
   - `notes` <https://medium.com/incogito/openais-new-approach-for-one-shot-imitation-learning-a-sneak-peak-into-the-future-of-ai-efcdddca8e2e>
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/One-Shot_Imitation_Learning.md>
 
@@ -2956,7 +2998,7 @@ hieves."
 >	"The base of our model is a new type of variational autoencoder on demonstration trajectories that learns semantic policy embeddings, which can be smoothly interpolated with a resulting smooth interpolation of reaching behavior."  
   - `post` <https://deepmind.com/blog/producing-flexible-behaviours-simulated-environments/>
   - `video` <https://youtube.com/watch?v=necs0XfnFno> (demo)
-  - `video` <http://videolectures.net/deeplearning2017_de_freitas_deep_control/> (1:16:00) (de Freitas)
+  - `video` <http://videolectures.net/deeplearning2017_de_freitas_deep_control/#t=4560> (de Freitas)
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Robust_Imitation_of_Diverse_Behaviors.md>
 
 #### ["End-to-End Differentiable Adversarial Imitation Learning"](http://proceedings.mlr.press/v70/baram17a.html) Baram, Anschel, Caspi, Mannor
@@ -2972,7 +3014,7 @@ hieves."
 >	"Uses a GAN framework to discriminate between teacher and student experience and force the student to behave close to the teacher."  
   - `video` <https://youtube.com/watch?v=bcnCo9RxhB8> (Ermon)
   - `video` <https://youtu.be/d9DlQSJQAoI?t=22m12s> (Finn)
-  - `video` <http://videolectures.net/deeplearning2017_de_freitas_deep_control/> (1:09:43) (de Freitas)
+  - `video` <http://videolectures.net/deeplearning2017_de_freitas_deep_control/#t=4183> (de Freitas)
   - `notes` <http://tsong.me/blog/gail/>
   - `code` <https://github.com/openai/imitation>
   - `code` <https://github.com/DanielTakeshi/rl_algorithms/tree/master/il>
@@ -3021,6 +3063,8 @@ hieves."
 ----
 #### ["Emergent Complexity via Multi-Agent Competition"](https://arxiv.org/abs/1710.03748) Bansal, Pachocki, Sidor, Sutskever, Mordatch
   - `post` <https://blog.openai.com/competitive-self-play/> (demo)
+  - <https://sites.google.com/view/multi-agent-competition> (demo)
+  - `video` <https://vimeo.com/250399465#t=7m56s> (Sutskever)
   - `notes` <https://blog.acolyer.org/2018/01/11/emergent-complexity-via-multi-agent-competition/>
   - `code` <https://github.com/openai/multiagent-competition>
 
@@ -3064,6 +3108,11 @@ hieves."
   - `notes` <https://github.com/carpedm20/paper-notes/blob/master/notes/neural-ll-parser.md>
   - `code` <http://github.com/liuchangacm/neuralparser>
 
+#### ["Making Neural Programming Architectures Generalize via Recursion"](https://arxiv.org/abs/1704.06611) Cai, Shin, Song
+>	"We implement recursion in the Neural Programmer-Interpreter framework on four tasks: grade-school addition, bubble sort, topological sort, and quicksort."  
+  - `video` <https://facebook.com/iclr.cc/videos/1713144705381255/> (49:59) (Cai)
+  - `notes` <https://theneuralperspective.com/2017/03/14/making-neural-programming-architecture-generalize-via-recursion/>
+
 #### ["RobustFill: Neural Program Learning under Noisy I/O"](https://arxiv.org/abs/1703.07469) Devlin, Uesato, Bhupatiraju, Singh, Mohamed, Kohli
   - `video` <https://vimeo.com/238227939> (Uesato, Bhupatiraju)
   - `video` <https://facebook.com/nipsfoundation/videos/1552060484885185/> (1:38:05) (Reed)
@@ -3085,12 +3134,6 @@ hieves."
   - `video` <https://facebook.com/nipsfoundation/videos/1552060484885185/> (1:33:57) (Reed)
   - `code` <https://github.com/uclmr/d4>
 
-#### ["Making Neural Programming Architectures Generalize via Recursion"](https://arxiv.org/abs/1704.06611) Cai, Shin, Song
-  `Neural Programmer-Interpreter with recursion`
->	"We implement recursion in the Neural Programmer-Interpreter framework on four tasks: grade-school addition, bubble sort, topological sort, and quicksort."  
-  - `video` <https://facebook.com/iclr.cc/videos/1713144705381255/> (49:59) (Cai)
-  - `notes` <https://theneuralperspective.com/2017/03/14/making-neural-programming-architecture-generalize-via-recursion/>
-
 #### ["Adaptive Neural Compilation"](http://arxiv.org/abs/1605.07969) Bunel, Desmaison, Kohli, Torr, Kumar
 
 
@@ -3106,17 +3149,19 @@ hieves."
 #### ["End-to-end Differentiable Proving"](https://arxiv.org/abs/1705.11040) Rocktaschel, Riedel
   `learning logic`
 >	"We introduce neural networks for end-to-end differentiable theorem proving that operate on dense vector representations of symbols. These neural networks are constructed recursively by taking inspiration from the backward chaining algorithm as used in Prolog. Specifically, we replace symbolic unification with a differentiable computation on vector representations of symbols using a radial basis function kernel, thereby combining symbolic reasoning with learning subsymbolic vector representations. By using gradient descent, the resulting neural network can be trained to infer facts from a given incomplete knowledge base. It learns to (i) place representations of similar symbols in close proximity in a vector space, (ii) make use of such similarities to prove facts, (iii) induce logical rules, and (iv) use provided and induced logical rules for complex multi-hop reasoning. We demonstrate that this architecture outperforms ComplEx, a state-of-the-art neural link prediction model, on four benchmark knowledge bases while at the same time inducing interpretable function-free first-order logic rules."  
+>
 >	"Aim:  
 >	- Neural network for proving queries to a knowledge base  
 >	- Proof success differentiable w.r.t. vector representations of symbols  
 >	- Learn vector representations of symbols end-to-end from proof success  
 >	- Make use of provided rules in soft proofs  
 >	- Induce interpretable rules end-to-end from proof success"  
+>
 >	"Limitations:  
 >	- knowledge bases with <10k facts  
 >	- small proof depth"  
   - `video` <https://youtube.com/watch?v=2ovZnvVPiQ8> (Rocktaschel)
-  - `video` <https://facebook.com/nipsfoundation/videos/1554402331317667> (28:51)
+  - `video` <https://facebook.com/nipsfoundation/videos/1554402331317667> (28:51) (Rocktaschel)
   - `poster` <https://rockt.github.io/pdf/rocktaschel2017end-poster.pdf>
   - `slides` <https://rockt.github.io/pdf/rocktaschel2017end-slides.pdf> (Rocktaschel)
   - `slides` <http://aitp-conference.org/2017/slides/Tim_aitp.pdf> (Rocktaschel)
@@ -3307,13 +3352,13 @@ hieves."
 >	"The agent learns simple language by making predictions about the world in which that language occurs, and by discovering which combinations of words, perceptual cues and action decisions result in positive outcomes. Its knowledge is distributed across language, vision and policy networks, and pertains to modifiers, relational concepts and actions, as well as concrete objects. Its semantic representations enable the agent to productively interpret novel word combinations, to apply known relations and modifiers to unfamiliar objects and to re-use knowledge pertinent to the concepts it already has in the process of acquiring new concepts."  
 >	"While our simulations focus on language, the outcomes are relevant to machine learning in a more general sense. In particular, the agent exhibits active, multi-modal concept induction, the ability to transfer its learning and apply its knowledge representations in unfamiliar settings, a facility for learning multiple, distinct tasks, and the effective synthesis of unsupervised and reinforcement learning. At the same time, learning in the agent reflects various effects that are characteristic of human development, such as rapidly accelerating rates of vocabulary growth, the ability to learn from both rewarded interactions and predictions about the world, a natural tendency to generalise and re-use semantic knowledge, and improved outcomes when learning is moderated by curricula."  
   - `video` <https://youtube.com/watch?v=wJjdu1bPJ04> (demo)
-  - `video` <http://videolectures.net/deeplearning2017_blunsom_language_processing/> (48:54) (Blunsom)
+  - `video` <http://videolectures.net/deeplearning2017_blunsom_language_processing/#t=2934> (Blunsom)
 
 #### ["Programmable Agents"](https://arxiv.org/abs/1706.06383) Denil, Colmenarejo, Cabi, Saxton, Freitas
   `goal-driven language learning`
 >	"Agents that execute declarative programs and can generalize to a wide variety of zero-shot semantic tasks."  
   - `video` <https://youtube.com/playlist?list=PLs1LSEoK_daRDnPUB2u7VAXSonlNU7IcV> (demo)
-  - `video` <http://videolectures.net/deeplearning2017_de_freitas_deep_control/> (32:57) (de Freitas)
+  - `video` <http://videolectures.net/deeplearning2017_de_freitas_deep_control/#t=1977> (de Freitas)
   - `video` <https://youtu.be/zsvYr5tyj9M?t=50m27s> (Erzat) `in russian`
   - `code` <https://github.com/jaesik817/programmable-agents_tensorflow>
 

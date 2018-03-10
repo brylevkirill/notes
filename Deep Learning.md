@@ -1551,6 +1551,8 @@ Yoshua Bengio:
 
 >	"We have proposed a simple and scalable solution that provides a very strong baseline on evaluation metrics for uncertainty quantification. Our method uses scoring rules as training objectives to encourage the neural network to produce better calibrated predictions and uses a combination of ensembles and adversarial training for robustness to model misspecification and dataset shift. Our method is well suited for large scale distributed computation and can be readily implemented for a wide variety of architectures such as MLPs, CNNs, etc including those which do not use dropout (e.g. residual networks). It is perhaps surprising to the Bayesian deep learning community that a non-Bayesian (yet probabilistic) approach can perform as well as Bayesian neural networks. We hope that this work will encourage community to think about hybrid approaches (e.g. using non-Bayesian approaches such as ensembles) and other interesting metrics for evaluating predictive uncertainty."
 
+  - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747/> (1:00:23) (Lakshminarayanan)
+  - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/simple-and-scalable-predictive-uncertainty-estimation-using-deep-ensembles/> `in russian`
   - `code` <https://github.com/axelbrando/Mixture-Density-Networks-for-distribution-and-uncertainty-estimation>
 
 
@@ -2544,7 +2546,7 @@ x."
 
   - `video` <https://youtu.be/SAcHyzMdbXc?t=10m24s> (de Freitas)
   - `video` <https://youtu.be/x1kf4Zojtb0?t=1h4m53s> (de Freitas)
-  - `video` <http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/> (27:49) (de Freitas)
+  - `video` <http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/#t=1669> (de Freitas)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.04474>
   - `notes` <https://theneuralperspective.com/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>
   - `notes` <https://blog.acolyer.org/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>

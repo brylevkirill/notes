@@ -771,6 +771,7 @@
 
   [introduction](https://youtu.be/uAk152lIib0?t=25m51s) by Chris Manning `video`  
   ["Open Domain Inference with Natural Logic"](https://youtube.com/watch?v=EX1hKxePxkk) by Gabor Angeli `video`  
+  ["Toward Natural Language Semantics in Learned Representations"](https://youtube.com/watch?v=NeqzL6jwgE0) by Sam Bowman `video`  
 
   ["Natural Logic: Logical Inference over Text"](http://akbc.ws/2016/slides/manning-akbc16.pdf) by Chris Manning `slides`  
   ["Learning Distributed Word Representations for Natural Logic Reasoning"](https://goo.gl/CCofxS) by Bowman, Potts, Manning `slides`  

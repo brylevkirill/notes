@@ -228,6 +228,9 @@
 	[overview](http://lxmls.it.pt/2016/Part2_Dependency_Parsing_2016.pdf) by Slav Petrov `slides`  
 	[overview](http://youtube.com/watch?v=du9VQaFEyeA) by John Boyd-Graber `video`  
 
+	[overview](http://youtube.com/watch?v=zgd_ZuaWvfs) of transition-based parsing by Graham Neubig `video`  
+	[overview](http://youtube.com/watch?v=wUjIOxeCnqM) of graph-based parsing by Graham Neubig `video`  
+
   - CCG parsing  
 	[overview](http://youtube.com/playlist?list=PLun-LUE1uLNvWi-qV-tRHohfHR90Y_cAk) by Yoav Artzi `video`
 
@@ -433,7 +436,7 @@
 #### ["The Neural Noisy Channel"](https://arxiv.org/abs/1611.02554) Yu, Blunsom, Dyer, Grefenstette, Kocisky
 >	"We formulate sequence to sequence transduction as a noisy channel decoding problem and use recurrent neural networks to parameterise the source and channel models. Unlike direct models which can suffer from explaining-away effects during training, noisy channel models must produce outputs that explain their inputs, and their component models can be trained with not only paired training samples but also unpaired samples from the marginal output distribution. Using a latent variable to control how much of the conditioning sequence the channel model needs to read in order to generate a subsequent symbol, we obtain a tractable and effective beam search decoder. Experimental results on abstractive sentence summarisation, morphological inflection, and machine translation show that noisy channel models outperform direct models, and that they significantly benefit from increased amounts of unpaired output data that direct models cannot easily use."
 
-  - `video` <http://videolectures.net/deeplearning2017_blunsom_language_understanding/> (1:15:45) (Blunsom)
+  - `video` <http://videolectures.net/deeplearning2017_blunsom_language_understanding/#t=4545> (Blunsom)
 
 
 #### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin
@@ -857,6 +860,7 @@
 #### ["Poincare Embeddings for Learning Hierarchical Representations"](https://arxiv.org/abs/1705.08039) Nickel, Kiela
 >	"Representation learning has become an invaluable approach for learning from symbolic data such as text and graphs. However, while complex symbolic datasets often exhibit a latent hierarchical structure, state-of-the-art methods typically learn embeddings in Euclidean vector spaces, which do not account for this property. For this purpose, we introduce a new approach for learning hierarchical representations of symbolic data by embedding them into hyperbolic space -- or more precisely into an n-dimensional Poincar\'e ball. Due to the underlying hyperbolic geometry, this allows us to learn parsimonious representations of symbolic data by simultaneously capturing hierarchy and similarity. We introduce an efficient algorithm to learn the embeddings based on Riemannian optimization and show experimentally that Poincar\'e embeddings outperform Euclidean embeddings significantly on data with latent hierarchies, both in terms of representation capacity and in terms of generalization ability."
 
+  - `video` <https://cds.cern.ch/record/2306315> (Nickel)
   - `video` <https://facebook.com/nipsfoundation/videos/1553634558061111/> (1:03:01) (Nickel)
   - `notes` <https://medium.com/towards-data-science/facebook-research-just-published-an-awesome-paper-on-learning-hierarchical-representations-34e3d829ede7>
   - `notes` <https://medium.com/@hol_io/word-embeddings-exploration-explanation-and-exploitation-with-code-in-python-5dac99d5d795>
