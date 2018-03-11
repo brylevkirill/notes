@@ -22,7 +22,6 @@
 
   - Juergen Schmidhuber  
 	["Compression Progress: The Algorithmic Principle Behind Curiosity and Creativity"](https://youtube.com/watch?v=h7F5sCLIbKQ) `video`  
-	["Formal Theory of Fun & Creativity"](http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/) `video`  
 
   - Geoffrey Hinton  
 	["Deep Learning and AI"](https://youtube.com/watch?v=izrG86jycck) `video`  
@@ -41,6 +40,11 @@
 
 ----
 
+  [introductory course](https://agi.mit.edu) from MIT `video`  
+  [introductory course](https://youtube.com/channel/UCHBzJsIcRIVuzzHVYabikTQ/videos) from UC Berkeley `video`  
+
+----
+
   "Learning in Brains and Machines" by Shakir Mohamed:
   - ["Temporal Differences"](http://blog.shakirm.com/2016/02/learning-in-brains-and-machines-1/)
   - ["The Dogma of Sparsity"](http://blog.shakirm.com/2016/04/learning-in-brains-and-machines-2/)
@@ -51,13 +55,6 @@
   - ["Prologue"](http://blog.shakirm.com/2016/10/cognitive-machine-learning-prologue/)
   - ["Learning to Explain"](http://blog.shakirm.com/2017/02/cognitive-machine-learning-1-learning-to-explain/)
   - ["Uncertain Thoughts"](http://blog.shakirm.com/2017/03/cognitive-machine-learning-2-uncertain-thoughts/)
-
-----
-
-  [introductory course](https://youtube.com/channel/UCHBzJsIcRIVuzzHVYabikTQ/videos) from UC Berkeley `video`  
-  [introductory course](https://agi.mit.edu) from MIT `video`  
-
-  [introductory notes](http://frnsys.com/ai_notes/) by Francis Tseng
 
 ----
 
@@ -145,34 +142,32 @@
 
 ----
 
-  [knowledge representation](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation)
-
-  knowledge representations:
+  [knowledge representation](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation) kinds:
   - [natural language](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---natural-language)
   - [knowledge graph](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---knowledge-graph)
   - [probabilistic database](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-database)
   - [probabilistic program](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-program)
-  - [distributed representations](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---distributed-representations)
+  - [distributed representation](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---distributed-representation)
 
 ----
 
-  Knowledge is in our minds and language is just orienting us within our shared experiences.  
-  Language is an index pointing to shared experiences of people on which meaning is grounded.  
-  Communicating using language is possible only after lining up experiences.  
-  Language is a very flexible thing and not a formal mathematical structure.  
-
-----
-
-  - *symbolic knowledge* ("dog as word") - logic networks
+  - *symbolic knowledge* ("dog as word") - logic network
 	[[relational learning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#relational-learning)]
   - *conceptual knowledge* ("dog as mammal, a good companion, a good guardian") - open research area
-  - *perceptual knowledge* ("dog as something with certain physical appearance") - distributed representations
-	[[deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)]
+  - *perceptual knowledge* ("dog as something with certain physical appearance") - distributed representation
+	[[deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representation)]
 
   *symbolic knowledge* -> *conceptual knowledge* (words have to be grounded in real world, actions have to be not recursive) -
 	[[language grounding](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#interesting-papers---language-grounding)]  
   *perceptual knowledge* -> *conceptual knowledge* (prediction is not enough for some tasks, reasoning over concepts is needed) -
 	[[concept learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#unsupervised-learning)]  
+
+----
+
+  "Knowledge is in our minds and language is just orienting us within our shared experiences."  
+  "Language is an index pointing to shared experiences of people on which meaning is grounded."  
+  "Communicating using language is possible only after lining up experiences."  
+  "Language is a very flexible thing and not a formal mathematical structure."  
 
 
 
@@ -186,19 +181,17 @@
   inference frameworks:
   - [machine learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md)
   - [causal inference](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#causal-inference)
-  - [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
+  - [bayesian inference](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
   - [Solomonoff induction](#solomonoff-induction)
 
 ----
 
-  [reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning)
-
-  reasoning frameworks:
-  - [natural logic](#reasoning---natural-logic)
-  - [formal logic](#reasoning---formal-logic)
-  - [bayesian inference](#reasoning---bayesian-inference)
-  - [commonsense reasoning](#reasoning---commonsense-reasoning)
-  - [neural architectures](#reasoning---neural-architectures)
+  [reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning) frameworks:
+  - [natural logic](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---natural-logic)
+  - [formal logic](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---formal-logic)
+  - [bayesian reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---bayesian-reasoning)
+  - [commonsense reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---commonsense-reasoning)
+  - [neural reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---neural-reasoning)
 
 ----
 
@@ -213,17 +206,11 @@
 ---
 ### inference / reasoning - logical vs statistical
 
-  "Beginning with Leibniz, scholars have attempted to unify logic and probability. For classical AI, based largely on first-order logic, the purpose of such a unification is to handle uncertainty and facilitate learning from real data; for modern AI, based largely on probability theory, the purpose is to acquire formal languages with sufficient expressive power to handle complex domains and incorporate prior knowledge. The world is uncertain and it has things in it. To deal with this, we have to unify logic and probability."
-
-  *(Stuart Russell)*
-
-----
-
   - *knowledge representation*:  
 	logical - first-order logic  
 	statistical - [probabilistic programs](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
   - *reasoning*:  
-	logical - satisfiability testing/proving  
+	logical - satisfiability testing / proving  
 	statistical - [bayesian inference](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)  
   - *learning*:  
 	logical - inductive logic programming  
@@ -245,54 +232,50 @@
 	([talk](http://youtube.com/watch?v=bW5DzNZgGxY) `video`)
 >	"logic handles complexity and statistics handles uncertainty"
 
+----
+
+  "Beginning with Leibniz, scholars have attempted to unify logic and probability. For classical AI, based largely on first-order logic, the purpose of such a unification is to handle uncertainty and facilitate learning from real data; for modern AI, based largely on probability theory, the purpose is to acquire formal languages with sufficient expressive power to handle complex domains and incorporate prior knowledge. The world is uncertain and it has things in it. To deal with this, we have to unify logic and probability."
+
+  *(Stuart Russell)*
+
 
 
 ---
 ### inference / reasoning - symbolic vs non-symbolic
 
-  ["Neural Programmer Interpreters"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#neural-programmer-interpreters-reed-de-freitas) by Nando de Freitas `paper` `summary`
->	"For me there are two types of generalisation, which I will refer to as Symbolic and Connectionist generalisation. If we teach a machine to sort sequences of numbers of up to length 10 or 100, we should expect them to sort sequences of length 1000 say. Obviously symbolic approaches have no problem with this form of generalisation, but neural nets do poorly. On the other hand, neural nets are very good at generalising from data (such as images), but symbolic approaches do poorly here. One of the holy grails is to build machines that are capable of both symbolic and connectionist generalisation. Neural Programmer Interpreters is a very early step toward this. NPI can do symbolic operations such as sorting and addition, but it can also plan by taking images as input and it's able to generalise the plans to different images (e.g. in the NPI car example, the cars are test set cars not seen before)."
+  - [natural logic](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---natural-logic)  *(symbolic + non-symbolic)*
+  - [formal logic](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---formal-logic)  *(symbolic)*
+  - [bayesian reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---bayesian-reasoning)  *(symbolic)*
+  - [commonsense reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---commonsense-reasoning)  *(symbolic + non-symbolic)*
+  - [neural reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---neural-reasoning)  *(non-symbolic)*
 
 ----
 
-  ["Aetherial Symbols"](https://drive.google.com/file/d/0B8i61jl8OE3XdHRCSkV1VFNqTWc) by Geoffrey Hinton
->	"The fathers of AI believed that formal logic provided insight into how human reasoning must work. For implications to travel from one sentence to the next, there had to be rules of inference containing variables that got bound to symbols in the first sentence and carried the implications to the second sentence. I shall demonstrate that this belief is as incorrect as the belief that a lightwave can only travel through space by causing disturbances in the luminiferous aether. In both cases, scientists were misled by compelling but incorrect analogies to the only systems they knew that had the required properties. Arguments have little impact on such strongly held beliefs. What is needed is a demonstration that it is possible to propagate implications in some quite different way that does not involve rules of inference and has no resemblance to formal logic. Recent results in machine translation using recurrent neural networks show that the meaning of a sentence can be captured by a "thought vector" which is simply the hidden state vector of a recurrent net that has read the sentence one word at a time. In future, it will be possible to predict thought vectors from the sequence of previous thought vectors and this will capture natural human reasoning. With sufficient effort, it may even be possible to train such a system to ignore nearly all of the contents of its thoughts and to make predictions based purely on those features of the thoughts that capture the logical form of the sentences used to express them."
+  "For me there are two types of generalisation, which I will refer to as Symbolic and Connectionist generalisation. If we teach a machine to sort sequences of numbers of up to length 10 or 100, we should expect them to sort sequences of length 1000 say. Obviously symbolic approaches have no problem with this form of generalisation, but neural nets do poorly. On the other hand, neural nets are very good at generalising from data (such as images), but symbolic approaches do poorly here. One of the holy grails is to build machines that are capable of both symbolic and connectionist generalisation."
 
->	"If we can convert a sentence into a vector that captures the meaning of the sentence, then google can do much better searches, they can search based on what is being said in a document. Also, if you can convert each sentence in a document into a vector, you can then take that sequence of vectors and try and model why you get this vector after you get these vectors, that's called reasoning, that's natural reasoning, and that was kind of the core of good old fashioned AI and something they could never do because natural reasoning is a complicated business, and logic isn't a very good model of it, here we can say, well, look, if we can read every english document on the web, and turn each sentence into a thought vector, we've got plenty of data for training a system that can reason like people do. Now, you might not want to reason like people do on the web, but at least we can see what they would think."
-
->	"Most people fall for the traditional AI fallacy that thought in the brain must somehow resemble lisp expressions. You can tell someone what thought you are having by producing a string of words that would normally give rise to that thought but this doesn't mean the thought is a string of symbols in some unambiguous internal language. The new recurrent network translation models make it clear that you can get a very long way by treating a thought as a big state vector. Traditional AI researchers will be horrified by the view that thoughts are merely the hidden states of a recurrent net and even more horrified by the idea that reasoning is just sequences of such state vectors. That's why I think its currently very important to get our critics to state, in a clearly decideable way, what it is they think these nets won't be able to learn to do. Otherwise each advance of neural networks will be met by a new reason for why that advance does not really count. So far, I have got both Garry Marcus and Hector Levesque to agree that they will be impressed if neural nets can correctly answer questions about "Winograd" sentences such as "The city councilmen refused to give the demonstrators a licence because they feared violence." Who feared the violence?"
-
->	"There are no symbols inside the encoder and decoder neural nets for machine translation. The only symbols are at the input and output. Processing pixel arrays is not done by manipulating internal pixels. Maybe processing symbol strings is not done by manipulating internal symbol strings. It was obvious to physicists that light waves must have an aether to propagate from one place to the next. They thought there was no other possibility. It was obvious to AI researchers that people must use formal rules of inference to propagate implications from one proposition to the next. They thought there was no other possibility. What is inside the black box is not necessarily what goes in or what comes out. The physical symbol system hypothesis is probably false."
-
->	"Most of our reasoning is by analogy; it's not logical reasoning. The early AI guys thought we had to use logic as a model and so they couldn't cope with reasoning by analogy. The honest ones, like Allen Newell, realized that reasoning by analogy was a huge problem for them, but they weren't willing to say that reasoning by analogy is the core kind of reasoning we do, and logic is just a sort of superficial thing on top of it that happens much later."
-
-----
-
-  [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)  
-  [neural architectures for reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---neural-architectures)  
+  *(Nando de Freitas)*
 
 
 
 --- 
 ### inference / reasoning - deductive vs inductive
 
-  ["Probability Theory - The Logic of Science"](https://goo.gl/zqDwOF) by E. T. Jaynes `paper`
+  "Reasoning is deductive when enough information is at hand to permit it and inductive/plausible when necessary information is not available.
 
-  >  Reasoning is deductive when enough information is at hand to permit it and inductive/plausible when necessary information is not available.
+  Rules for deductive reasoning:  
+  (1)  (if A is true, then B is true), (A is true) |- (B is true)  
+  (2)  (if A is true, then B is true), (B is false) |- (A is false)  
 
-  >  Rules for deductive reasoning:  
-  >  (1)  (if A is true, then B is true), (A is true) |- (B is true)  
-  >  (2)  (if A is true, then B is true), (B is false) |- (A is false)  
-
-  >  Rules for inductive/plausible reasoning:  
-  >  (3)  (if A is true, then B is true), (B is true) |- (A becomes more plausible)  
-  >  (4)  (if A is true, then B is true), (A is false) |- (B becomes less plausible)  
-  >  (5)  (if A is true, then B becomes more plausible), (B is true) |- (A becomes more plausible)  
+  Rules for inductive/plausible reasoning:  
+  (3)  (if A is true, then B is true), (B is true) |- (A becomes more plausible)  
+  (4)  (if A is true, then B is true), (A is false) |- (B becomes less plausible)  
+  (5)  (if A is true, then B becomes more plausible), (B is true) |- (A becomes more plausible)  
  
-  >  The reasoning of a scientist, by which he accepts or rejects his theories, consists almost entirely of syllogisms of the kinds (2) and (3).
+  The reasoning of a scientist, by which he accepts or rejects his theories, consists almost entirely of syllogisms of the kinds (2) and (3).
 
-  >  Evidently, the deductive reasoning described above has the property that we can go through long chains of reasoning of the type (1) and (2) and the conclusions have just as much certainty as the premises. With the other kinds of reasoning, (3)–(5), the reliability of the conclusion changes as we go through several stages. But in their quantitative form we shall find that in many cases our conclusions can still approach the certainty of deductive reasoning. Pólya showed that even a pure mathematician actually uses these weaker forms of reasoning most of the time. Of course, on publishing a new theorem, the mathematician will try very hard to invent an argument which uses only the first kind; but the reasoning process which led to the theorem in the first place almost always involves one of the weaker forms (based, for example, on
-following up conjectures suggested by analogies). Good mathematicians see analogies between theorems; great mathematicians see analogies between analogies.
+  Evidently, the deductive reasoning described above has the property that we can go through long chains of reasoning of the type (1) and (2) and the conclusions have just as much certainty as the premises. With the other kinds of reasoning, (3)–(5), the reliability of the conclusion changes as we go through several stages. But in their quantitative form we shall find that in many cases our conclusions can still approach the certainty of deductive reasoning. Pólya showed that even a pure mathematician actually uses these weaker forms of reasoning most of the time. Of course, on publishing a new theorem, the mathematician will try very hard to invent an argument which uses only the first kind; but the reasoning process which led to the theorem in the first place almost always involves one of the weaker forms (based, for example, on following up conjectures suggested by analogies). Good mathematicians see analogies between theorems; great mathematicians see analogies between analogies."
+
+  [*(E.T. Jaynes, "Probability Theory - The Logic of Science")*](https://goo.gl/zqDwOF)
 
 ----
  

@@ -556,9 +556,10 @@
   [**bandits**](#bandits)  
   [**contextual bandits**](#contextual-bandits)  
 
-----
 
-  **bayesian exploration models**:
+----
+#### exploration and intrinsic motivation - bayesian exploration models
+
 >	"Bayesian reinforcement learning provides approach to optimal exploration during learning and beyond. Prior information about the problem is represented in parametric form, and Bayesian inference is used to incorporate any new information about the model. Thus the exploration-exploitation problem can be handled as an explicit sequential decision problem, where the agent seeks to maximize future expected return with respect to its current uncertainty on the model. The decision-making process is significantly more complex since it involves reasoning about all possible models and courses of action."
 
 >	"The optimal Bayesian policy chooses actions based not only on how they will affect the next state of the system, but also based on how they will affect the next belief state; and, since a better knowledge of the MDP will typically lead to greater future reward, the Bayesian policy will very naturally trade off between exploring the system to gain more knowledge, and exploiting its current knowledge of the system. Unfortunately, while the Bayesian approach provides a very elegant solution to the exploration/exploitation problem, it is typically not possible to compute the Bayesian policy exactly."
@@ -590,14 +591,15 @@
 ----
 
   ["How Can We Define Intrinsic Motivation"](#how-can-we-define-intrinsic-motivation-oudeyer-kaplan) by Oudeyer and Kaplan `paper` `summary`:
-  - information theoretic and distributional models
-  - predictive models
-  - competence-based models
-  - morphological models
+  - [information theoretic and distributional models](#exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models)
+  - [predictive models](#exploration-and-intrinsic-motivation---predictive-models)
+  - [competence-based models](#exploration-and-intrinsic-motivation---competence-based-models)
+  - [morphological models](#exploration-and-intrinsic-motivation---morphological-models)
+
 
 ----
+#### exploration and intrinsic motivation - information theoretic and distributional models
 
-  **information theoretic and distributional models**:  
 >	"This approach is based on the use of representations, built by an agent, that estimate the distributions of probabilities of observing certain events ek in particular contexts, defined as mathematical configurations in the sensorimotor flow. There are several types of such events, but the probabilities that are measured are typically either the probability of observing a certain state SMk in the sensorimotor flow, denoted P(SMk), or the probability of observing particular transitions between states, such as P(SMk(t),SMl(t+1)), or the probability of observing a particular state after having observed a given state P(SMk(t+1)|SMl(t)). Here, the states SMk can either be direct numerical prototypes or complete regions within the sensorimotor space (and it may involve a mechanism for discretizing the space). We assume that the agent possesses a mechanism that allows it to build internally, and as it experiences the world, an estimation of the probability distribution of events across the whole space E of possible events (but the space of possible events is not predefined and should also be discovered by the agent, so typically this is an initially empty space that grows with experience)."
 
 
@@ -637,7 +639,9 @@
 	[interesting-papers](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---empowerment)
 
 
-  **predictive models**:  
+----
+#### exploration and intrinsic motivation - predictive models
+
 >	"Often, knowledge and expectations in agent are not represented by complete probability distributions, but rather based on the use of predictors such as neural networks that make direct predictions about future events. These predictors, denoted Π, are typically used to predict some properties or sensorimotor states that will happen in the future (close or far) given the current sensorimotor context SM(t) and possibly the past sensorimotor context."
 
 
@@ -671,7 +675,9 @@
 	["Information Theoretically Aided Reinforcement Learning for Embodied Agents"](https://arxiv.org/abs/1605.09735) by Montufar et al. `paper`
 
 
-  **competence-based models**:  
+----
+#### exploration and intrinsic motivation - competence-based models
+
 >	"A third major computational approach to intrinsic motivation is based on measures of competence that an agent has for achieving self-determined results or goals. Central here is the concept of “challenge”, with associated measures of difficulty as well as measures of actual performance. A “challenge” or “goal” here will be any sensorimotor configuration, or any set of properties of a sensorimotor configuration, that an agent sets by itself and that it tries to achieve through action. It is the properties of the achievement process, rather than the “meaning” of the particular goal being achieved, that will determine the level of interestingness of the associated activity. While prediction mechanisms or probability models, as used in previous sections, can be used in the goal-reaching architecture, they are not mandatory. The capacity to predict what happens in a situation can be sometimes only loosely coupled to the capacity to modify a situation in order to achieve a given self-determined goal."
 
 
@@ -688,7 +694,9 @@
 	reward for interestingness of challenge as competence progress that is experienced as agent repeatedly tries to achieve it  
 
 
-  **morphological models**:  
+----
+#### exploration and intrinsic motivation - morphological models
+
 >	"The three previous computational approaches to motivation were based on measures comparing information characterizing a stimulus perceived in the present and information characterizing stimuli perceived in the past and represented in memory. A fourth approach that can be taken is based on the comparison of information characterizing several pieces of stimuli perceived at the same time in several parts of the perceptive field. Pragmatically, this approach consists in attributing interest depending on morphological mathematical properties of the current flow of sensorimotor values, irrespective of what the internal cognitive system might predict or master."
 
 

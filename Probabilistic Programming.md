@@ -83,14 +83,14 @@
 ---
 ### applications
 
+  [cognitive models](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-program)
+
   [Facebook Prophet](https://facebook.github.io/prophet/)  *(uses Stan)*  
   [Microsoft Office 365](https://cambridgenetwork.co.uk/news/email-clutter-machine-learning-probabilistic-programming/)  *(uses Infer.NET)*  
   [Microsoft Excel plugin](http://research.microsoft.com/en-us/projects/tabular/)  *(uses Infer.NET)*  
 
   [graphics in reverse](http://newsoffice.mit.edu/2015/better-probabilistic-programming-0413)  
   [machine teaching](http://blogs.microsoft.com/next/2015/07/10/the-next-evolution-of-machine-learning-machine-teaching/)  
-
-  [applications in cognitive science](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-program)
 
 
 

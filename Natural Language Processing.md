@@ -243,10 +243,6 @@
 ---
 ### embeddings
 
-  [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)
-
-----
-
   [overview](http://blog.aylien.com/overview-word-embeddings-history-word2vec-cbow-glove/) of word embeddings by Sebastian Ruder  
   "On Word Embeddings" by Sebastian Ruder ([part 1](http://sebastianruder.com/word-embeddings-1/index.html), [part 2](http://sebastianruder.com/word-embeddings-softmax/index.html))  
 
@@ -259,6 +255,10 @@
 	([part 1](http://www.offconvex.org/2015/12/12/word-embeddings-1/), [part 2](http://www.offconvex.org/2016/02/14/word-embeddings-2/))  
 
   ["Are Distributional Representations Ready for the Real World? Evaluating Word Vectors for Grounded Perceptual Meaning"](#are-distributional-representations-ready-for-the-real-world-evaluating-word-vectors-for-grounded-perceptual-meaning-lucy-gauthier) by Lucy and Gauthier `paper` `summary`
+
+----
+
+  [distributed representation](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representation)
 
 
 
@@ -822,6 +822,7 @@
   - `video` <https://youtu.be/x7B6RudUQLI?t=1h5m5s> (Gulin) `in russian`
   - `post` <https://habrahabr.ru/company/yandex/blog/314222/> `in russian`
   - `code` <https://github.com/faneshion/MatchZoo>
+  - `code` <https://github.com/airalcorn2/Deep-Semantic-Similarity-Model>
 
 
 #### ["Distributed Representations of Sentences and Documents"](http://arxiv.org/abs/1405.4053) Le, Mikolov

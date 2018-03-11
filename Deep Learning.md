@@ -16,7 +16,7 @@
     - [recurrent neural network](#architectures---recurrent-neural-network)
     - [attention](#architectures---attention)
     - [compute and memory](#architectures---compute-and-memory)
-    - [distributed representations](#architectures---distributed-representations)
+    - [distributed representation](#architectures---distributed-representation)
   * [interesting papers](#interesting-papers)
     - [theory](#interesting-papers---theory)
     - [bayesian deep learning](#interesting-papers---bayesian-deep-learning)
@@ -798,7 +798,7 @@
   - [recurrent neural network](#architectures---recurrent-neural-network)
   - [attention](#architectures---attention)
   - [compute and memory](#architectures---compute-and-memory)
-  - [distributed representations](#architectures---distributed-representations)
+  - [distributed representation](#architectures---distributed-representation)
 
 
 
@@ -983,7 +983,7 @@
 
 
 ---
-### architectures - distributed representations
+### architectures - distributed representation
 
   "The idea of distributed representations was introduced with reference to cognitive representations: a mental object can be represented efficiently (both in terms of number of bits and in terms of number of examples needed to generalize about it) by characterizing the object using many features, each of which can separately each be active or inactive. For example, with m binary features, one can describe up to 2^m different objects. The idea is that the brain would be learning and using such representations because they help it generalize to new objects that are similar to known ones in many respects. A distributed representation is opposed to a local representation, in which only one neuron (or very few) is active at each time, i.e., as with grandmother cells. One can view n-gram models as a mostly local representation: only the units associated with the specific subsequences of the input sequence are turned on. Hence the number of units needed to capture the possible sequences of interest grows exponentially with sequence length."
 
@@ -1012,8 +1012,8 @@
   ["Deep Meaning Beyond Thought Vectors"](https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/) by David McAllester
 
 
-  [distributed representations of natural language](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#embeddings)  
-  [neural architectures for reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---neural-architectures)  
+  [distributed representation of natural language](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#embeddings)  
+  [neural architectures for reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---neural-reasoning)  
 
 ----
 

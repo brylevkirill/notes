@@ -10,13 +10,13 @@
     - [knowledge graph](#knowledge-representation---knowledge-graph)
     - [probabilistic database](#knowledge-representation---probabilistic-database)
     - [probabilistic program](#knowledge-representation---probabilistic-program)
-    - [distributed representations](#knowledge-representation---distributed-representations)
+    - [distributed representation](#knowledge-representation---distributed-representation)
   * [reasoning](#reasoning)
     - [natural logic](#reasoning---natural-logic)
     - [formal logic](#reasoning---formal-logic)
-    - [bayesian inference](#reasoning---bayesian-inference)
+    - [bayesian reasoning](#reasoning---bayesian-reasoning)
     - [commonsense reasoning](#reasoning---commonsense-reasoning)
-    - [neural architectures](#reasoning---neural-architectures)
+    - [neural reasoning](#reasoning---neural-reasoning)
   * [machine reading benchmarks](#machine-reading-benchmarks)
   * [machine reading projects](#machine-reading-projects)
   * [interesting papers](#interesting-papers)
@@ -146,7 +146,7 @@
     * [Probabilistic Soft Logic](#probabilistic-database---probabilistic-soft-logic)
     * [ProPPR](#probabilistic-database---proppr)
   - [probabilistic program](#knowledge-representation---probabilistic-program)
-  - [distributed representations](#knowledge-representation---distributed-representations)
+  - [distributed representation](#knowledge-representation---distributed-representation)
 
 ----
 
@@ -196,18 +196,18 @@
 ---
 ### ontology
 
-  [overview](https://github.com/brylevkirill/tech/blob/master/RDF/RDF.txt) of Resource Description Framework (RDF)
+  [RDF](https://github.com/brylevkirill/tech/blob/master/RDF/RDF.txt) (Resource Description Framework) `summary`
 
 ----
 
-  [overview](https://github.com/brylevkirill/tech/blob/master/RDF/OWL.txt) of Web Ontology Language (OWL)
+  [OWL](https://github.com/brylevkirill/tech/blob/master/RDF/OWL.txt) (Web Ontology Language) `summary`
 
   ["OWL: The Web Ontology Language"](https://youtube.com/watch?v=EXXIIlfqb0c) by Pavel Klinov `video`  
   ["Ontologies and Knowledge Representation"](https://lektorium.tv/course/22781) course by Boris Konev `video` `in russian`  
 
 ----
 
-  [schema.org](https://github.com/brylevkirill/tech/blob/master/RDF/schema.org.txt)
+  [schema.org](https://github.com/brylevkirill/tech/blob/master/RDF/schema.org.txt) `summary`
 
   ["Schema.org: Evolution of Structured Data on the Web"](http://queue.acm.org/detail.cfm?id=2857276) by Guha et al. `paper`  
 >	"We report some key schema.org adoption metrics from a sample of 10 billion pages from a combination of the Google index and Web Data Commons. In this sample, 31.3% of pages have schema.org markup, up from 22% one year ago. Structured data markup is now a core part of the modern web."
@@ -330,7 +330,7 @@
   ["Poincare Embeddings for Learning Hierarchical Representations"](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#poincare-embeddings-for-learning-hierarchical-representations-facebook-ai-research) by Nickel and Kiela `paper` `summary`  
 
 
-  [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)  
+  [distributed representation](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representation)  
   [embeddings of natural language](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#embeddings)  
 
 
@@ -687,19 +687,16 @@
 ---
 ### knowledge representation - probabilistic program
 
-  [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)
-
-  probabilistic programming:
-  - languages for models & systems that simplify / automate aspects of inference
+  [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md):
+  - languages for models that simplify and automate aspects of inference
   - models and queries defined in terms of complex stochastic computations
   - programs and languages as formal representations of probabilistic objects
 
 ----
 
-  [overview](https://youtube.com/watch?v=-8QMqSWU76Q) by Vikash Mansinghka `video`
-
   ["Engineering and Reverse-Engineering Intelligence Using Probabilistic Programs, Program Induction, and Deep Learning"](https://facebook.com/nipsfoundation/videos/1552446408179926/) by Josh Tenenbaum and Vikash Mansinghka `video`
 
+  ["Computational Cognitive Science: Generative Models, Probabilistic Programs and Common Sense"](https://youtube.com/watch?v=2WQO9e5Mdj4) by Josh Tenenbaum `video`  
   ["Engineering & Reverse-Engineering Human Common Sense"](https://youtube.com/watch?v=hfoeRiZU5YQ) by Josh Tenenbaum `video`  
   ["Cognitive Foundations for Common-sense Knowledge Representation and Reasoning"](https://youtube.com/watch?v=oSAG57plHnI) by Josh Tenenbaum `video`  
   ["Building Machines That Learn Like Humans"](https://youtube.com/watch?v=quPN7Hpk014) by Josh Tenenbaum `video`  
@@ -711,8 +708,6 @@
   ["Probabilistic Programs: A New Language for AI"](http://youtube.com/watch?v=fclvsoaUI-U) by Noah Goodman `video`
 
 ----
-
-  ["How Does the Brain Do Plausible Reasoning"](http://bayes.wustl.edu/etj/articles/brain.pdf) by E.T. Jaynes `paper`
 
   ["What are probabilistic models of cognition?"](http://jhamrick.github.io/quals/responses/response1.pdf) by Jessica Hamrick `notes`
 
@@ -733,10 +728,10 @@
 
 
 ---
-### knowledge representation - distributed representations
+### knowledge representation - distributed representation
 
-  [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)  
-  [distributed representations of natural language](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#continuous-space-representations)  
+  [distributed representation](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representation)  
+  [distributed representation of natural language](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#embeddings)  
 
 
 
@@ -751,9 +746,9 @@
 
   - [natural logic](#reasoning---natural-logic)
   - [formal logic](#reasoning---formal-logic)
-  - [bayesian inference](#reasoning---bayesian-inference)
+  - [bayesian reasoning](#reasoning---bayesian-reasoning)
   - [commonsense reasoning](#reasoning---commonsense-reasoning)
-  - [neural architectures](#reasoning---neural-architectures)
+  - [neural reasoning](#reasoning---neural-reasoning)
 
 ----
 
@@ -775,6 +770,10 @@
 
   ["Natural Logic: Logical Inference over Text"](http://akbc.ws/2016/slides/manning-akbc16.pdf) by Chris Manning `slides`  
   ["Learning Distributed Word Representations for Natural Logic Reasoning"](https://goo.gl/CCofxS) by Bowman, Potts, Manning `slides`  
+
+----
+
+  [knowledge representation - natural language](#knowledge-representation---natural-language)
 
 ----
 
@@ -804,6 +803,10 @@
 
 ----
 
+  [knowledge representation - knowledge graph](#knowledge-representation---knowledge-graph)
+
+----
+
   ["Applying Deep Learning to Mathematical Reasoning"](https://youtube.com/watch?v=UAa2o0W7vcg) by Francois Chollet `video`
 
 ----
@@ -815,17 +818,16 @@
 
 
 ---
-### reasoning - bayesian inference
+### reasoning - bayesian reasoning
 
-  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
-
-  [causal inference](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#causal-inference)
+  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)  
+  [causal inference](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#causal-inference)  
+  [Solomonoff induction](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#solomonoff-induction)  
 
 ----
 
-  [probabilistic programs](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-program)  *(bayesian models of cognitive processes)*
-
-  [Solomonoff induction](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#solomonoff-induction)  *(bayesian optimal prediction)*
+  [knowledge representation - probabilistic database](#knowledge-representation---probabilistic-database)  
+  [knowledge representation - probabilistic program](#knowledge-representation---probabilistic-program)  
 
 
 
@@ -838,7 +840,9 @@
   ["Simulation as an Engine of Physical Scene Understanding"](http://www.pnas.org/content/110/45/18327.short) by Battaglia, Hamrick, Tenenbaum `paper`  
   ["Computational Rationality: A Converging Paradigm for Intelligence in Brains, Minds and Machines"](https://goo.gl/jWaJVf) by Gershman, Horvitz, Tenenbaum `paper`  
 
-  ["Computational Cognitive Science: Generative Models, Probabilistic Programs and Common Sense"](https://youtube.com/watch?v=2WQO9e5Mdj4) by Tenenbaum `video`
+----
+
+  [knowledge representation - probabilistic program](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-program)
 
 ----
 
@@ -856,10 +860,13 @@
 
 
 ---
-### reasoning - neural architectures
+### reasoning - neural reasoning
 
-  [distributed representations](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representations)  
-  [architectures - compute and memory](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---compute-and-memory)  
+  [neural architectures for reasoning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures)
+
+----
+
+  [knowledge representation - distributed representation](#knowledge-representation---distributed-representation)
 
 ----
 
@@ -872,9 +879,6 @@
   ["Cognitive Architectures"](https://machinethoughts.wordpress.com/2016/06/20/cognitive-architectures/) by David McAllester
 
 ----
-
-  ["Low-Dimensional Embeddings of Logic"](#rocktaschel-bosnjak-singh-riedel---low-dimensional-embeddings-of-logic--embedding-of-logic) by Tim Rocktaschel `paper` `summary`
-	([talk](http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/) `video`)
 
   ["What Can Deep Learning Learn from Symbolic Inference?"](http://www.bicv.org/?wpdmdl=2309) by Tim Rocktaschel `slides`  
 >  - Deep Learning and symbolic rules can be combined efficiently  
@@ -893,9 +897,16 @@
 
 ----
 
-  "One of the main benefits in using neural networks is that they can be trained to handle very subtle kinds of logic that humans use in casual language that defy axiomatization. Propositional logic, first-order logic, higher-order logic, modal logic, nonmonotonic logic, probabilistic logic, fuzzy logic - none of them seem to quite be adequate; but if you use the right kind of recursive net, you don't even have to specify the logic to get it to make useful deductions, if you have enough training data."
+  ["Low-Dimensional Embeddings of Logic"](#rocktaschel-bosnjak-singh-riedel---low-dimensional-embeddings-of-logic--embedding-of-logic) by Tim Rocktaschel `paper` `summary`
+	([talk](http://techtalks.tv/talks/injecting-logical-background-knowledge-into-embeddings-for-relation-extraction/61526/) `video`)
 
-  "Many machine reading approaches, from shallow information extraction to deep semantic parsing, map natural language to symbolic representations of meaning. Representations such as first-order logic capture the richness of natural language and support complex reasoning, but often fail in practice due to their reliance on logical background knowledge and the difficulty of scaling up inference. In contrast, low-dimensional embeddings (i.e. distributional representations) are efficient and enable generalization, but it is unclear how reasoning with embeddings could support the full power of symbolic representations such as first-order logic."
+  [interesting papers](#interesting-papers---reasoning)
+
+----
+
+  "One of the main benefits in using neural networks is that they can be trained to handle very subtle kinds of logic that humans use in casual language that defy axiomatization. Propositional logic, first-order logic, higher-order logic, modal logic, nonmonotonic logic, probabilistic logic, fuzzy logic - none of them seem to quite be adequate; but if you use the right kind of recursive net, you don't even have to specify logic to get it to make useful deductions, if you have enough training data."
+
+  "Many machine reading approaches map natural language to symbolic representations of meaning. Representations such as first-order logic capture the richness of natural language and support complex reasoning, but often fail due to their reliance on logical background knowledge and difficulty of scaling up inference. In contrast, distributed representations are efficient and enable generalization, but it is unclear how reasoning with embeddings could support full power of symbolic representations."
 
 
 
