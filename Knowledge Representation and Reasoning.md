@@ -141,6 +141,7 @@
     * [information extraction and integration](#information-extraction-and-integration)
     * [relational learning](#relational-learning)
   - [probabilistic database](#knowledge-representation---probabilistic-database)
+    * [BayesDB](#probabilistic-database---bayes-db)
     * [Epistemological Database](#probabilistic-database---epistemological-database)
     * [Markov Logic Network](#probabilistic-database---markov-logic-network)
     * [Probabilistic Soft Logic](#probabilistic-database---probabilistic-soft-logic)
@@ -438,10 +439,20 @@
 
 ----
 
+  - [BayesDB](#probabilistic-database---bayes-db)
   - [Epistemological Database](#probabilistic-database---epistemological-database)
   - [Markov Logic Network](#probabilistic-database---markov-logic-network)
   - [Probabilistic Soft Logic](#probabilistic-database---probabilistic-soft-logic)
   - [ProPPR](#probabilistic-database---proppr)
+
+
+---
+### probabilistic database - BayesDB
+
+  [BayesDB](http://probcomp.org/bayesdb/) project
+
+  [overview](https://youtube.com/watch?v=-8QMqSWU76Q) by Vikash Mansinghka `video`  
+  ["BayesDB: Query the Probable Implications of Data"](https://youtube.com/watch?v=7_m7JCLKmTY) by Richard Tibbetts `video`  
 
 
 ---
@@ -623,6 +634,7 @@
   ["Introduction to Probabilistic Soft Logic"](https://github.com/linqs/psl/wiki/Introduction-to-probabilistic-soft-logic) `wiki`
 
   [overview](http://facebook.com/nipsfoundation/videos/1554329184658315/) by Lise Getoor `video`  
+  [overview](http://youtube.com/watch?v=7k-Ta024vQs) by Lise Getoor `video`  
   [overview](http://youtube.com/watch?v=1lwGKhFAXU0) by Lise Getoor `video`  
   [overview](http://youtube.com/watch?v=v7WjCVYoxtQ) by Lise Getoor `video`  
 
@@ -1302,6 +1314,7 @@ noise, inferring missing information, and determining which candidate facts shou
   `PSL probabilistic database`
 >	"A fundamental challenge in developing high-impact machine learning technologies is balancing the need to model rich, structured domains with the ability to scale to big data. Many important problem areas are both richly structured and large scale, from social and biological networks, to knowledge graphs and the Web, to images, video, and natural language. In this paper, we introduce two new formalisms for modeling structured data, and show that they can both capture rich structure and scale to big data. The first, hinge-loss Markov random fields (HL-MRFs), is a new kind of probabilistic graphical model that generalizes different approaches to convex inference. We unite three approaches from the randomized algorithms, probabilistic graphical models, and fuzzy logic communities, showing that all three lead to the same inference objective. We then define HL-MRFs by generalizing this unified objective. The second new formalism, probabilistic soft logic (PSL), is a probabilistic programming language that makes HL-MRFs easy to define using a syntax based on first-order logic. We introduce an algorithm for inferring most-probable variable assignments (MAP inference) that is much more scalable than general-purpose convex optimization methods, because it uses message passing to take advantage of sparse dependency structures. We then show how to learn the parameters of HL-MRFs. The learned HL-MRFs are as accurate as analogous discrete models, but much more scalable. Together, these algorithms enable HL-MRFs and PSL to model rich, structured data at scales not previously possible."
 
+  - `video` <https://youtu.be/7k-Ta024vQs?t=25m11s> (Getoor)
   - [Probabilistic Soft Logic](#probabilistic-database---probabilistic-soft-logic)
 
 

@@ -11,9 +11,6 @@
 ---
 ### overview
 
-  [course](http://youtube.com/watch?v=5L1qemKyUKA&index=75&list=PL6397E4B26D00A269) by Chris Manning `video`  
-  [course](http://homepages.inf.ed.ac.uk/vlavrenk/tts.html) by Victor Lavrenko `video`  
-
   ["Foundations of Information Retrieval"](https://drive.google.com/file/d/0B-GJrccmbImkZ3pjNl9sczQxd3M) by Maarten de Rijke (SIGIR 2017) `slides`
 
   ["Neural Networks for Information Retrieval"](http://nn4ir.com/wsdm2018/) tutorial (WSDM 2018) `slides`  
@@ -21,10 +18,15 @@
 	tutorial by Bhaskar Mitra and Nick Craswell (WSDM 2017)
 	([slides](https://slideshare.net/BhaskarMitra3/neural-text-embeddings-for-information-retrieval-wsdm-2017), [paper](https://arxiv.org/abs/1705.01509))  
 
+  ["What every software engineer should know about search"](https://medium.com/startup-grind/what-every-software-engineer-should-know-about-search-27d1df99f80d) by Max Grigorev
+
   ["An Introduction to Information Retrieval"](https://nlp.stanford.edu/IR-book/) book by Manning, Raghavan, Schutze  
   ["Search Engines. Information Retrieval in Practice"](http://ciir.cs.umass.edu/irbook/) book by Croft, Metzler, Strohman  
 
 ----
+
+  [course](http://youtube.com/watch?v=5L1qemKyUKA&index=75&list=PL6397E4B26D00A269) by Chris Manning `video`  
+  [course](http://homepages.inf.ed.ac.uk/vlavrenk/tts.html) by Victor Lavrenko `video`  
 
   [course](https://compscicenter.ru/courses/information-retrieval/2016-autumn/) from Yandex `video` `in russian`  
   [course](https://compsciclub.ru/courses/informationretrieval) from Yandex `video` `in russian`  

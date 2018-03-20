@@ -397,7 +397,9 @@
 #### ["Unsupervised Neural Machine Translation"](https://arxiv.org/abs/1710.11041) Artetxe, Labaka, Agirre, Cho
 >	"In spite of the recent success of neural machine translation in standard benchmarks, the lack of large parallel corpora poses a major practical problem for many language pairs. There have been several proposals to alleviate this issue with, for instance, triangulation and semi-supervised learning techniques, but they still require a strong cross-lingual signal. In this work, we completely remove the need of parallel data and propose a novel method to train an NMT system in a completely unsupervised manner, relying on nothing but monolingual corpora. Our model builds upon the recent work on unsupervised embedding mappings, and consists of a slightly modified attentional encoder-decoder model that can be trained on monolingual corpora alone using a combination of denoising and backtranslation. Despite the simplicity of the approach, our system obtains 15.56 and 10.21 BLEU points in WMT 2014 French → English and German → English translation. The model can also profit from small parallel corpora, and attains 21.81 and 15.24 points when combined with 100,000 parallel sentences, respectively. Our approach is a breakthrough in unsupervised NMT, and opens exciting opportunities for future research."
 
+  - `video` <https://youtu.be/_tQVfq2IOHA?t=25m30s> (Cho)
   - `notes` <http://ankitg.me/blog/2017/11/05/unsupervised-machine-translation.html>
+  - `code` <https://github.com/artetxem/undreamt>
 
 
 #### ["Unsupervised Machine Translation Using Monolingual Corpora Only"](https://arxiv.org/abs/1711.00043) Lample, Denoyer, Ranzato
@@ -646,6 +648,12 @@
   - `code` <https://github.com/fchollet/keras/blob/master/examples/imdb_fasttext.py>
 
 
+#### ["Learning to Compute Word Embeddings On the Fly"](https://arxiv.org/abs/1706.00286) Bahdanau, Bosc, Jastrzebski, Grefenstette, Vincent, Bengio
+>	"Words in natural language follow a Zipfian distribution whereby some words are frequent but most are rare. Learning representations for words in the "long tail" of this distribution requires enormous amounts of data. Representations of rare words trained directly on end-tasks are usually poor, requiring us to pre-train embeddings on external data, or treat all rare words as out-of-vocabulary words with a unique representation. We provide a method for predicting embeddings of rare words on the fly from small amounts of auxiliary data with a network trained against the end task. We show that this improves results against baselines where embeddings are trained on the end task in a reading comprehension task, a recognizing textual entailment task, and in language modelling."
+
+  - `notes` <https://theneuralperspective.com/2017/06/05/more-on-embeddings-spring-2017/>
+
+
 #### ["Neural Word Embedding as Implicit Matrix Factorization"](http://papers.nips.cc/paper/5477-neural-word-embedding-as-implicit-matrix-factorization.pdf) Levy, Goldberg
 >	"We analyze skip-gram with negative-sampling, a word embedding method introduced by Mikolov et al., and show that it is implicitly factorizing a word-context matrix, whose cells are the pointwise mutual information of the respective word and context pairs (shifted by a global constant). We find that another embedding method, NCE, is implicitly factorizing a similar matrix, where each cell is the (shifted) log conditional probability of a word given its context. We show that using a sparse Shifted Positive PMI word-context matrix to represent words improves results on two word similarity tasks and one of two analogy tasks. When dense, low-dimensional vectors are preferred, exact factorization with SVD can achieve solutions that are at least as good as SGNS’s solutions for word similarity tasks. On analogy questions SGNS remains superior to SVD. We conjecture that this stems from the weighted nature of SGNS’s factorization."
 
@@ -664,7 +672,7 @@
 
 
 #### ["RAND-WALK: A Latent Variable Model Approach to Word Embeddings"](http://arxiv.org/abs/1502.03520) Arora, Li, Liang, Ma, Risteski
->	"Semantic word embeddings represent the meaning of a word via a vector, and are created by diverse methods. Many use nonlinear operations on co-occurrence statistics, and have hand-tuned hyperparameters and reweighting methods. This paper proposes a new generative model, a dynamic version of the log-linear topic model of Mnih and Hinton (2007). The methodological novelty is to use the prior to compute closed form expressions for word statistics. This provides a theoretical justification for nonlinear models like PMI, word2vec, and GloVe, as well as some hyperparameter choices. It also helps explain why lowdimensional semantic embeddings contain linear algebraic structure that allows solution of word analogies, as shown by Mikolov et al. (2013a) and many subsequent papers. Experimental support is provided for the generative model assumptions, the most important of which is that latent word vectors are fairly uniformly dispersed in space."
+>	"Semantic word embeddings represent the meaning of a word via a vector, and are created by diverse methods. Many use nonlinear operations on co-occurrence statistics, and have hand-tuned hyperparameters and reweighting methods. This paper proposes a new generative model, a dynamic version of the log-linear topic model of Mnih and Hinton (2007). The methodological novelty is to use the prior to compute closed form expressions for word statistics. This provides a theoretical justification for nonlinear models like PMI, word2vec, and GloVe, as well as some hyperparameter choices. It also helps explain why low-dimensional semantic embeddings contain linear algebraic structure that allows solution of word analogies, as shown by Mikolov et al. (2013a) and many subsequent papers. Experimental support is provided for the generative model assumptions, the most important of which is that latent word vectors are fairly uniformly dispersed in space."
 
   - `video` <http://youtube.com/watch?v=gaVR3WnczOQ> (Ma)
   - `video` <http://youtube.com/watch?v=KR46z_V0BVw> (Arora)
@@ -674,10 +682,12 @@
   - `code` <https://github.com/YingyuLiang/SemanticVector>
 
 
-#### ["Learning to Compute Word Embeddings On the Fly"](https://arxiv.org/abs/1706.00286) Bahdanau, Bosc, Jastrzebski, Grefenstette, Vincent, Bengio
->	"Words in natural language follow a Zipfian distribution whereby some words are frequent but most are rare. Learning representations for words in the "long tail" of this distribution requires enormous amounts of data. Representations of rare words trained directly on end-tasks are usually poor, requiring us to pre-train embeddings on external data, or treat all rare words as out-of-vocabulary words with a unique representation. We provide a method for predicting embeddings of rare words on the fly from small amounts of auxiliary data with a network trained against the end task. We show that this improves results against baselines where embeddings are trained on the end task in a reading comprehension task, a recognizing textual entailment task, and in language modelling."
+#### ["Skip-Gram – Zipf + Uniform = Vector Additivity"](http://aclweb.org/anthology/P17-1007) Gittens, Achlioptas, Mahoney
+>	"In recent years word-embedding models have gained great popularity due to their remarkable performance on several tasks, including word analogy questions and caption generation. An unexpected “sideeffect” of such models is that their vectors often exhibit compositionality, i.e., adding two word-vectors results in a vector that is only a small angle away from the vector of a word representing the semantic composite of the original words, e.g., “man” + “royal” = “king”."
 
-  - `notes` <https://theneuralperspective.com/2017/06/05/more-on-embeddings-spring-2017/>
+>	"This work provides a theoretical justification for the presence of additive compositionality in word vectors learned using the Skip-Gram model. In particular, it shows that additive compositionality holds in an even stricter sense (small distance rather than small angle) under certain assumptions on the process generating the corpus. As a corollary, it explains the success of vector calculus in solving word analogies. When these assumptions do not hold, this work describes the correct non-linear composition operator."
+
+>	"Finally, this work establishes a connection between the Skip-Gram model and the Sufficient Dimensionality Reduction framework of Globerson and Tishby: the parameters of SDR models can be obtained from those of Skip-Gram models simply by adding information on symbol frequencies. This shows that SkipGram embeddings are optimal in the sense of Globerson and Tishby and, further, implies that the heuristics commonly used to approximately fit Skip-Gram models can be used to fit SDR models."
 
 
 

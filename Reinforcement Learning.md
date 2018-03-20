@@ -68,12 +68,8 @@
 
 ----
 
-  [Custom Decision Service](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-decision-service/custom-decision-service-overview) (Microsoft)
-	([summary](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al))
-
-  [personalized news](http://thenewstack.io/reinforcement-learning-ready-real-world/) (Microsoft)  
-  [recommender systems](https://deepmind.com/blog/deep-reinforcement-learning/) (Google)  
-  [datacenter cooling](https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/) (Google)  
+  [personalized news](http://thenewstack.io/reinforcement-learning-ready-real-world/) at Microsoft (Custom Decision Service [paper](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) `summary`)  
+  [datacenter cooling](https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/) at Google ([paper](https://arxiv.org/abs/1711.11165))  
 
   ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1701.07274) by Yuxi Li `paper` ([slides](https://dropbox.com/s/kzkc8t61t7tz9eu/AISeminar.pdf))
 
@@ -509,13 +505,17 @@
 
   ["Learning in Brains and Machines: Synergistic and Modular Action"](http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/) by Shakir Mohamed
 
-  ["Combining State and Temporal Abstractions"](https://youtube.com/watch?v=iLSUByYY6so) by George Konidaris `video`  
-  ["Towards Representations for Efficient Reinforcement Learning"](https://youtube.com/watch?v=Pk3E5zqhl9k) by Emma Brunskill `video`  
-
   Options framework:  
 	[overview](http://videolectures.net/deeplearning2016_precup_advanced_lr/) by Doina Precup `video`  
 	["Temporal Abstraction in Reinforcement Learning"](https://youtube.com/watch?v=GntIVgNKkCI) by Doina Precup `video`  
 	["Advances in Option Construction: The Option-Critic Architecture"](https://youtube.com/watch?v=8r_EoYnPjGk) by Pierre-Luc Bacon `video`  
+	["Progress on Deep Reinforcement Learning with Temporal Abstraction"](https://vimeo.com/249559422) by Doina Precup `video`  
+
+  Feudal framework:  
+	[overview](https://vimeo.com/249557775) by David Silver `video`  
+
+  [Hierarchical RL](http://sites.google.com/view/hrlnips2017) workshop `video`  
+  [Abstraction in RL](http://rlabstraction2016.wixsite.com/icml) workshop `video`  
 
   [interesting papers](#interesting-papers---hierarchical-reinforcement-learning)
 
@@ -553,8 +553,23 @@
 
 ----
 
+  [interesting papers](#interesting-papers---exploration-and-intrinsic-motivation)  
+  [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
+
+----
+
   [**bandits**](#bandits)  
   [**contextual bandits**](#contextual-bandits)  
+  [**bayesian exploration models**](#exploration-and-intrinsic-motivation---bayesian-exploration-models)  
+
+----
+
+  ["How Can We Define Intrinsic Motivation"](#how-can-we-define-intrinsic-motivation-oudeyer-kaplan) by Oudeyer and Kaplan `paper` `summary`
+
+  [**information theoretic and distributional models**](#exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models)  
+  [**predictive models**](#exploration-and-intrinsic-motivation---predictive-models)  
+  [**competence-based models**](#exploration-and-intrinsic-motivation---competence-based-models)  
+  [**morphological models**](#exploration-and-intrinsic-motivation---morphological-models)  
 
 
 ----
@@ -587,14 +602,6 @@
   ["Learning to Reinforcement Learn"](#learning-to-reinforcement-learn-wang-et-al) by Wang et al. `paper` `summary`  
 
   [interesting papers](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration-models)
-
-----
-
-  ["How Can We Define Intrinsic Motivation"](#how-can-we-define-intrinsic-motivation-oudeyer-kaplan) by Oudeyer and Kaplan `paper` `summary`:
-  - [information theoretic and distributional models](#exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models)
-  - [predictive models](#exploration-and-intrinsic-motivation---predictive-models)
-  - [competence-based models](#exploration-and-intrinsic-motivation---competence-based-models)
-  - [morphological models](#exploration-and-intrinsic-motivation---morphological-models)
 
 
 ----
@@ -702,17 +709,6 @@
 
   - *synchronicity motivation*  
 	high short-term correlation between a maximally large number of sensorimotor channels  
-
-----
-
-  "In sequential decision problems there is an important distinction between risk and uncertainty. We identify risk as inherent stochasticity in a model and uncertainty as the confusion over which model parameters apply. For example, a coin may have a fixed p = 0.5 of heads and so the outcome of any single flip holds some risk; a learning agent may also be uncertain of p. The demarcation between risk and uncertainty is tied to the specific model class, in this case a Bernoulli random variable; with a more detailed model of flip dynamics even the outcome of a coin may not be risky at all. Our distinction is that unlike risk, uncertainty captures the variability of an agent’s posterior belief which can be resolved through statistical analysis of the appropriate data. For a learning agent looking to maximize cumulative utility through time, this distinction represents a crucial dichotomy. Consider the reinforcement learning problem of an agent interacting with its environment while trying to maximize cumulative utility through time. At each timestep, the agent faces a fundamental tradeoff: by exploring uncertain states and actions the agent can learn to improve its future performance, but it may attain better short-run performance by exploiting its existing knowledge. At a high level this effect means uncertain states are more attractive since they can provide important information to the agent going forward. On the other hand, states and action with high risk are actually less attractive for an agent in both exploration and exploitation. For exploitation, any concave utility will naturally penalize risk. For exploration, risk also makes any single observation less informative. Although colloquially similar, risk and uncertainty can require radically different treatment."
-
-  *(Ian Osband)*
-
-----
-
-  [interesting papers](#interesting-papers---exploration-and-intrinsic-motivation)  
-  [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
 
 
 
@@ -2184,6 +2180,8 @@ interesting recent papers:
 >	"Our main contribution is in designing an intrinsic reward signal based on prediction error of the agent’s knowledge about its environment that scales to high-dimensional continuous state spaces like images, bypasses the hard problem of predicting pixels and is unaffected by the unpredictable aspects of the environment that do not affect the agent."
 
   - `post` <https://pathak22.github.io/noreward-rl/index.html> (demo)
+  - `video` <https://vimeo.com/237270588> (Pathak)
+  - `video` <https://youtube.com/watch?v=_Z9ZP1eiKsI> (Kilcher)
   - `code` <https://github.com/pathak22/noreward-rl>
 
 

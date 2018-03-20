@@ -574,36 +574,27 @@
 
 ----
 
-  "We can put a unified framework around the various approaches. Borrowing from the conventional classification of feature selection methods, model search strategies can be categorized into filters, wrappers, and embedded methods.  
-  Filters are methods for narrowing down the model space, without training the learning machine. Such methods include preprocessing, feature construction, kernel design, architecture design, choice of prior or regularizers, choice of a noise model, and filter methods for feature selection. Although some filters use training data, many incorporate human prior knowledge of the task or knowledge compiled from previous tasks (a form of meta learning or transfer learning). Recently, it has been proposed to apply collaborative filtering methods to model search.  
-  Wrapper methods consider the learning machine as a black-box capable of learning from examples and making predictions once trained. They operate with a search algorithm in hyper-parameter space (for example grid search or stochastic search) and an evaluation function assessing the trained learning machine performances (for example the cross-validation error or the Bayesian evidence).  
-  Embedded methods are similar to wrappers, but they exploit the knowledge of the learning machine algorithm to make the search more efficient. For instance, some embedded methods compute the leave-one-out solution in a closed form, without leaving anything out, i.e., by performing a single model training on all the training data. Other embedded methods jointly optimize parameters and hyperparameters."  
-
-----
-
-  ["Automated Machine Learning"](https://youtube.com/watch?v=AFeozhAD9xE) by Andreas Mueller `video`
-
   ["Automated Machine Learning: A Short History"](https://datarobot.com/blog/automated-machine-learning-short-history/) by Thomas Dinsmore
 
-----
-
-  ["AutoML for large scale image classification and object detection"](https://research.googleblog.com/2017/11/automl-for-large-scale-image.html) by Zoph et al.
+  ["Automated Machine Learning"](https://youtube.com/watch?v=AFeozhAD9xE) by Andreas Mueller `video`  
+  ["AutoML and How To Speed It Up"](https://vimeo.com/250399200) by Frank Hutter `video`  
+  ["Neural Architecture Search"](https://vimeo.com/250399509) by Quoc Le `video`
+	([post](https://research.googleblog.com/2017/11/automl-for-large-scale-image.html))  
 
   [interesting papers](#interesting-papers---automated-machine-learning)
 
 ----
 
-  [TPOT](http://rhiever.github.io/tpot/) project
+  [auto-sklearn](https://github.com/automl/auto-sklearn) project  
 
-  [auto_ml](http://auto-ml.readthedocs.io/en/latest/) project
+  [TPOT](https://github.com/EpistasisLab/tpot) project  
+
+  [auto_ml](http://auto-ml.readthedocs.io/en/latest/) project  
 
   [The Automatic Statistician](https://automaticstatistician.com) project  
   - ["The Automatic Statistician"](https://youtu.be/H7AMB0oo__4?t=53m20s) by Zoubin Ghahramani `video`  
   - ["The Automatic Statistician: A Project Update"](https://youtube.com/watch?v=WW2eunuApAU) by Zoubin Ghahramani `video`  
-
-  [BayesDB](http://probcomp.org/bayesdb/) project  
-  - [overview](https://youtube.com/watch?v=-8QMqSWU76Q) by Vikash Mansinghka `video`  
-  - ["BayesDB: Query the Probable Implications of Data"](https://youtube.com/watch?v=7_m7JCLKmTY) by Richard Tibbetts `video`  
+  - ["The Automatic Statistician: an AI for Data Science"](https://www.snn.ru.nl/v2/img/ml2015/slides/Ghahramani_nijmegen15part2.pdf) by Zoubin Ghahramani `slides`  
 
 ----
 
@@ -614,7 +605,6 @@
 
   ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34?t=11m43s) `video`)
 
-----
 
   ["Why Tool AIs Want to Be Agent AIs"](http://www.gwern.net/Tool%20AI) by Gwern Branwen:  
 
