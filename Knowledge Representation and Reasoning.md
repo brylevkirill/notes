@@ -112,6 +112,7 @@
   - [AKBC 2014 (videos)](http://youtube.com/user/NeuralInformationPro/search?query=AKBC)  
   - [AKBC 2012 (videos)](http://videolectures.net/akbcwekex2012_montreal/)  
   - [AKBC 2010 (videos)](http://videolectures.net/akbc2010_grenoble/)  
+
   [Statistical Relational AI](http://starai.org) workshop  
   [Knowledge Base Construction, Reasoning and Mining](http://kbcom.org) workshop  
   [Machine Reading for Question Answering](https://mrqa2018.github.io) workshop  

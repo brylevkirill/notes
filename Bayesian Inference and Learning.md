@@ -57,7 +57,7 @@
 
 ----
 
-  ["How Does the Brain Do Plausible Reasoning"](http://bayes.wustl.edu/etj/articles/brain.pdf) by E.T. Jaynes `paper`
+  ["Probability as Extended Logic"](http://bjlkeng.github.io/posts/probability-the-logic-of-science/) by Brian Keng
 
   [definitions](https://youtube.com/watch?v=Ihud7yG2iKs) of probability by Andrey Kolmogorov and E.T. Jaynes `video` `in russian`  
   [definition](https://youtube.com/watch?v=X0Lo5IWLjko) of randomness in algorithmic information theory `video` `in russian`  

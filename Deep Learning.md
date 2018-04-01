@@ -1145,6 +1145,7 @@
 >	Phase 2 (diffusion): Mean gradient is smaller and noise takes over - Langevin/Boltzmann effect kicks in.  
 >	Authors claim that SGD training compresses (reduces I(X;T)) in the diffusion phase."  
 
+  - `video` <https://youtube.com/watch?v=EQTtBRM0sIs> (Tishby)
   - `video` <https://youtube.com/watch?v=bLqJHjXihK8> (Tishby)
   - `video` <https://youtube.com/watch?v=ekUWO_pI2M8> (Tishby)
   - `video` <https://youtu.be/RKvS958AqGY?t=12m7s> (Tishby)
@@ -1698,6 +1699,7 @@ Yoshua Bengio:
   - `paper` <http://arxiv.org/abs/1606.05908> + <https://github.com/cdoersch/vae_tutorial> (tutorial)
   - `paper` <http://arxiv.org/abs/1610.09296> (explanation)
   - `post` <http://kvfrans.com/variational-autoencoders-explained/>
+  - `post` <https://towardsdatascience.com/intuitively-understanding-variational-autoencoders-1bfe67eb5daf>
   - `post` <http://hsaghir.github.io/denoising-vs-variational-autoencoder/>
   - `post` <http://jaan.io/what-is-variational-autoencoder-vae-tutorial/>
   - `post` <http://blog.keras.io/building-autoencoders-in-keras.html>
@@ -1733,6 +1735,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=bJhV2C5KKZ4> (Kingma)
   - `video` <http://videolectures.net/deeplearning2015_courville_autoencoder_extension/#t=3192> (Courville)
   - `video` <https://youtu.be/0veUbpdBqyk?t=1h7m46s> (Chervinsky) `in russian`
+  - `post` <http://bjlkeng.github.io/posts/semi-supervised-learning-with-variational-autoencoders/>
 
 
 #### ["Unsupervised Learning of 3D Structure from Images"](http://arxiv.org/abs/1607.00662) Rezende, Eslami, Mohamed, Battaglia, Jaderberg, Heess
@@ -1880,6 +1883,7 @@ x."
   - `video` <http://videolectures.net/icml2015_germain_distribution_estimation/> (Germain)
   - `video` <http://www.fields.utoronto.ca/video-archive/2017/01/2267-16372> (Larochelle)
   - `video` <http://videolectures.net/deeplearning2015_larochelle_deep_learning/> (Larochelle)
+  - `post` <http://bjlkeng.github.io/posts/autoregressive-autoencoders/>
   - `post` <http://inference.vc/masked-autoencoders-icml-paper-highlight/>
   - `notes` <https://casmls.github.io/general/2016/11/19/MADENADE.html>
   - `code` <https://github.com/mgermain/MADE>
