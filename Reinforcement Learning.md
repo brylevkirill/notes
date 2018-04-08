@@ -68,12 +68,12 @@
 
 ----
 
-  [personalized news](http://thenewstack.io/reinforcement-learning-ready-real-world/) at Microsoft (Custom Decision Service [paper](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) `summary`)  
+  [personalized web services](http://thenewstack.io/reinforcement-learning-ready-real-world/) at Microsoft (Custom Decision Service [paper](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) `summary`)  
+  ["Personalized Web Services"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto  
+
   [datacenter cooling](https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/) at Google ([paper](https://arxiv.org/abs/1711.11165))  
 
   ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1701.07274) by Yuxi Li `paper` ([slides](https://dropbox.com/s/kzkc8t61t7tz9eu/AISeminar.pdf))
-
-  [other applications](https://dropbox.com/sh/c0zocw1w8ujrpk5/AAAdIYB8U3szR1fL8iCkIt97a)
 
 ----
 
@@ -92,6 +92,8 @@
 ----
   - *Go*  
 
+	["Mastering the Game of Go"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto
+
 	["Mastering the Game of Go without Human Knowledge"](#mastering-the-game-of-go-without-human-knowledge-silver-et-al) by Silver et al. `paper` `summary`  
 	["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper` `summary`  
 	["Combining Online and Offline Knowledge in UCT"](http://machinelearning.org/proceedings/icml2007/papers/387.pdf) by Gelly and Silver `paper` ([talk](https://youtube.com/watch?v=Bm7zah_LrmE) `video`)  
@@ -104,7 +106,7 @@
 	[AlphaGo overview](https://youtu.be/LX8Knl0g0LE?t=4m41s) by Aja Huang `video`  
 
 	"Google AlphaGo is a historical tour of AI ideas: 70s (Alpha-Beta), 80s/90s (RL & self-play), 00's (Monte-Carlo), 10's (deep neural networks)."  
-	[history of ideas](http://youtube.com/watch?v=UMm0XaCFTJQ) by Rich Sutton, Czaba Szepesvari, Michael Bowling, Ryan Hayward, Martin Muller `video`  
+	[history of ideas](http://youtube.com/watch?v=UMm0XaCFTJQ) by Richard Sutton, Czaba Szepesvari, Michael Bowling, Ryan Hayward, Martin Muller `video`  
 
 	["AlphaGo, In Context"](https://medium.com/@karpathy/alphago-in-context-c47718cb95a5) by Andrej Karpathy
 
@@ -204,6 +206,8 @@
 ----
   - *Atari*  
 
+	["Human-level Video Game Play"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto
+
 	["Playing Atari with Deep Reinforcement Learning"](#playing-atari-with-deep-reinforcement-learning-mnih-kavukcuoglu-silver-graves-antonoglou-wierstra-riedmiller) by Mnih et al. `paper` `summary`
 
 	[demo](http://youtube.com/watch?v=EfGD2qveGdQ) `video`
@@ -211,12 +215,22 @@
 ----
   - *Jeopardy!*  
 
+	["Watson’s Daily-Double Wagering"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto
+
 	["Simulation, Learning and Optimization Techniques in Watson's Game Strategies"](https://researchgate.net/publication/260624027_Simulation_learning_and_optimization_techniques_in_Watson%27s_game_strategies) by Tesauro et al. `paper`  
 	["Analysis of Watson's Strategies for Playing Jeopardy!"](https://arxiv.org/abs/1402.0571) by Tesauro et al. `paper`  
 
 	["How Watson Learns Superhuman Jeopardy! Strategies"](https://youtube.com/watch?v=7rIf2Njye5k) by Gerry Tesauro `video`
 
-	[IBM Watson](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#ibm-watson) `summary`
+	[IBM Watson](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#machine-reading-projects---ibm-watson) project `summary`
+
+----
+  - *TD-Gammon*  
+
+	["TD-Gammon"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto
+
+	[overview](http://techtalks.tv/talks/on-td-learning-and-links-with-deeprl-in-atari-and-alphago/63031/) by Gerry Tesauro `video`  
+	[overview](https://youtu.be/kZ_AUmFcZtk?t=42m29s) by David Silver `video`  
 
 
 
@@ -282,21 +296,21 @@
 
 ----
 
-  [tutorial](https://youtube.com/watch?v=Fsh1qMTg1xI) by Rich Sutton `video` ([write-up](https://goo.gl/PxHMLK))  
+  [tutorial](https://youtube.com/watch?v=Fsh1qMTg1xI) by Richard Sutton `video` ([write-up](https://goo.gl/PxHMLK))  
   [tutorial](https://youtube.com/watch?v=fIKkhoI1kF4) by Emma Brunskill `video`  
 
   ["Theory of Reinforcement Learning"](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) by Csaba Szepesvari `video`
 
 ----
 
-  ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/book/the-book-2nd.html) book by Rich Sutton and Andrew Barto (second edition) ([code](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction))  
-  ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/book/the-book-1st.html) book by Rich Sutton and Andrew Barto (first edition)  
+  ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/book/the-book-2nd.html) book by Richard Sutton and Andrew Barto (second edition) ([code](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction))  
+  ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/book/the-book-1st.html) book by Richard Sutton and Andrew Barto (first edition)  
   ["Algorithms for Reinforcement Learning"](http://www.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf) book by Csaba Szepesvari  
 
 ----
 
   [course notes](https://web.stanford.edu/class/msande338/lecture_notes.html) by Ben Van Roy  
-  [course slides](http://incompleteideas.net/sutton/609%20dropbox/slides%20(pdf%20and%20keynote)) by Rich Sutton  
+  [course slides](http://incompleteideas.net/sutton/609%20dropbox/slides%20(pdf%20and%20keynote)) by Richard Sutton  
 
   [exercises and solutions](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction) by Shangtong Zhang  
   [exercises and solutions](https://github.com/dennybritz/reinforcement-learning) by Denny Britz  

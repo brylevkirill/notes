@@ -829,8 +829,9 @@
 >	"DSSM stands for Deep Structured Semantic Model, or more general, Deep Semantic Similarity Model. DSSM is a deep neural network modeling technique for representing text strings (sentences, queries, predicates, entity mentions, etc.) in a continuous semantic space and modeling semantic similarity between two text strings (e.g., Sent2Vec). DSSM has wide applications including information retrieval and web search ranking (Huang et al. 2013; Shen et al. 2014a,2014b), ad selection/relevance, contextual entity search and interestingness tasks (Gao et al. 2014a), question answering (Yih et al., 2014), knowledge inference (Yang et al., 2014), image captioning (Fang et al., 2014), and machine translation (Gao et al., 2014b) etc. DSSM can be used to develop latent semantic models that project entities of different types (e.g., queries and documents) into a common low-dimensional semantic space for a variety of machine learning tasks such as ranking and classification. For example, in web search ranking, the relevance of a document given a query can be readily computed as the distance between them in that space. With the latest GPUs from Nvidia, we are able to train our models on billions of words."
 
   - <http://research.microsoft.com/en-us/projects/dssm/>
-  - `slides` <http://research.microsoft.com/pubs/232372/CIKM14_tutorial_HeGaoDeng.pdf>
+  - `video` <https://youtu.be/g1Pgo5yTIKg?t=17m10s> (Mitra)
   - `video` <https://youtu.be/x7B6RudUQLI?t=1h5m5s> (Gulin) `in russian`
+  - `slides` <http://research.microsoft.com/pubs/232372/CIKM14_tutorial_HeGaoDeng.pdf>
   - `post` <https://habrahabr.ru/company/yandex/blog/314222/> `in russian`
   - `code` <https://github.com/faneshion/MatchZoo>
   - `code` <https://github.com/airalcorn2/Deep-Semantic-Similarity-Model>

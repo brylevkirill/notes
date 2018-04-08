@@ -142,7 +142,7 @@
     * [information extraction and integration](#information-extraction-and-integration)
     * [relational learning](#relational-learning)
   - [probabilistic database](#knowledge-representation---probabilistic-database)
-    * [BayesDB](#probabilistic-database---bayes-db)
+    * [BayesDB](#probabilistic-database---bayesdb)
     * [Epistemological Database](#probabilistic-database---epistemological-database)
     * [Markov Logic Network](#probabilistic-database---markov-logic-network)
     * [Probabilistic Soft Logic](#probabilistic-database---probabilistic-soft-logic)
@@ -283,26 +283,26 @@
   - *embedding*: project multi-relational knowledge into low-dimensional representations of entities and relations via tensor/matrix factorization, Bayesian clustering or neural networks  
 
   history of approaches to relational learning:  
-  - [tensor factorization](#tensor-factorization) (Harshman'94)  
-  - [probabilistic relational learning](#bayesian-network) (Friedman'99)  
-  - [Relational Markov Network](#markov-network) (Taskar'02)  
-  - [Markov Logic Network](#markov-logic-network) (Kok'07)  
-  - [ranking of random walks](#random-walk-inference) (Lao'11)  
-  - [embedding models](#continuous-embeddings) (Bordes'11)  
-  - [matrix factorization and universal schema](#matrix-factorization-and-univeral-schema) (Riedel'13)  
+  - [tensor factorization](#relational-learning---tensor-factorization) (Harshman'94)  
+  - [probabilistic relational learning](#relational-learning---bayesian-network) (Friedman'99)  
+  - [Relational Markov Network](#relational-learning---markov-network) (Taskar'02)  
+  - [Markov Logic Network](#relational-learning---markov-logic-network) (Kok'07)  
+  - [ranking of random walks](#relational-learning---random-walk-inference) (Lao'11)  
+  - [embedding models](#relational-learning---continuous-embeddings) (Bordes'11)  
+  - [matrix factorization and universal schema](#relational-learning---matrix-factorization-and-univeral-schema) (Riedel'13)  
 
 
 ----
-#### random walk inference
+#### relational learning - random walk inference
 
   - Path Ranking Algorithm  
-	*(used in [Google Knowledge Vault](#google-knowledge-vault) and [NELL](#never-ending-language-learning-nell))*  
+	*(used in [Google Knowledge Vault](#machine-reading-projects---google-knowledge-vault) and [NELL](#machine-reading-projects---nell))*  
 	["Random Walk Inference and Learning in A Large Scale Knowledge Base"](#random-walk-inference-and-learning-in-a-large-scale-knowledge-base-lao-mitchell-cohen) by Lao, Mitchell, Cohen `paper` `summary`  
 	["Efficient Random Walk Inference with Knowledge Bases"](https://www.cs.cmu.edu/~nlao/publication/2012/thesis.pdf) thesis by Ni Lao `paper` ([slides](http://cs.cmu.edu/~nlao/publication/2012/defense.pdf))  
 	["Incorporating Vector Space Similarity in Random Walk Inference over Knowledge Bases"](http://rtw.ml.cmu.edu/emnlp2014_vector_space_pra/paper.pdf) by Gardner et al. `paper`  
 
   - subgraph feature extraction (improvement over PRA)  
-	*(used in [NELL](#never-ending-language-learning-nell))*  
+	*(used in [NELL](#machine-reading-projects---nell))*  
 	["Efficient and Expressive Knowledge Base Completion Using Subgraph Feature Extraction"](#efficient-and-expressive-knowledge-base-completion-using-subgraph-feature-extraction-gardner-mitchell) by Gardner and Mitchell `paper` `summary` ([talk](http://youtube.com/watch?v=dp2waL7OLbI) `video`)  
 	["Reading and Reasoning with Knowledge Graphs"](http://www.cs.cmu.edu/~mg1/thesis.pdf) thesis by Matt Gardner `paper`  
 
@@ -312,14 +312,14 @@
 
 
 ----
-#### continuous embeddings
+#### relational learning - continuous embeddings
 
   ["An Overview of Embedding Models of Entities and Relationships for Knowledge Base Completion"](http://arxiv.org/abs/1703.08098) by Nguyen `paper`
 
   ["Knowledge Graph Construction From Text: Embedding-Based Techniques"](https://kgtutorial.github.io/slides/Part3b_Embds.pdf) by Pujara, Singh, Dalvi `slides`
 
 
-  applications in [Google Knowledge Vault](#google-knowledge-vault):  
+  applications in [Google Knowledge Vault](#machine-reading-projects---google-knowledge-vault):  
   - ["A Review of Relational Machine Learning for Knowledge Graphs"](#a-review-of-relational-machine-learning-for-knowledge-graphs-from-multi-relational-link-prediction-to-automated-knowledge-graph-construction-nickel-murphy-tresp-gabrilovich) by Nickel, Murphy, Tresp, Gabrilovich `paper` `summary`  
   - [overview](http://youtu.be/i2r5J4XAhsw?t=3m7s) by Kevin Murphy `video`  
   - [overview](http://youtu.be/wJMNuNBrFlQ?t=8m25s) by Volker Tresp `video`  
@@ -337,7 +337,7 @@
 
 
 ----
-#### latent factor models
+#### relational learning - latent factor models
 
   with latent features one gets collective learning - information can globally propagate in the network of random variables
 
@@ -345,7 +345,7 @@
 
 
 ----
-#### matrix factorization and univeral schema
+#### relational learning - matrix factorization and univeral schema
 
   [Epistemological Database with Universal Schema](#probabilistic-database---epistemological-database)
 
@@ -367,7 +367,7 @@
 
 
 ----
-#### tensor factorization
+#### relational learning - tensor factorization
 
   ["Machine Learning with Knowledge Graphs"](http://videolectures.net/eswc2014_tresp_machine_learning/) by Volker Tresp `video`
 	([slides](http://www.dbs.ifi.lmu.de/~tresp/papers/ESWC-Keynote.pdf))
@@ -377,14 +377,14 @@
 
 
 ----
-#### mixture models
+#### relational learning - mixture models
 
   *advantage*:  no need for good prior knowledge about relational dependencies as in bayes nets and markov nets  
   *advantage*:  great simplicity of the model - no need to think about rules, conditional independencies, loops or global partition functions  
 
 
 ----
-#### Bayesian network
+#### relational learning - Bayesian network
 
   works well if there is a prior knowledge about possible candidates for relational dependencies
 
@@ -395,7 +395,7 @@
 
 
 ----
-#### Markov network
+#### relational learning - Markov network
 
   typically better suited for modeling symmetric interactions (e.g. friendOf) - no concern about directed loops
 
@@ -405,7 +405,7 @@
 
 
 ----
-#### Markov Logic Network
+#### relational learning - Markov Logic Network
 
   [Markov Logic Network](#probabilistic-database---markov-logic-network)
 
@@ -425,18 +425,10 @@
 ---
 ### knowledge representation - probabilistic database
 
-  ["Probabilistic Programming"](https://microsoft.com/en-us/research/publication/probabilistic-programming/) by Gordon et al. `paper`  
->	"A probabilistic database is a relational database in which the tuples stored have associated uncertainties. That is, each tuple t has an associated indicator random variable Xt which takes a value 1 if the tuple is present in the database and 0 if the tuple is absent. Each instantiation of values to all of the random variables is called a world. The probabilistic database is the joint probability distribution over the random variables, which implicitly specifies a distribution over all the possible worlds. The answer to a query Q on a probabilistic database is the set of tuples T that are possible answers to Q, along with a probability P(t) for every t∈ T denoting the probability that t belongs the answer for query Q. A probabilistic database together with a query can be encoded as a probabilistic program, and the answer to query evaluation can be phrased as probabilistic inference. Work in probabilistic databases has identified a class of queries (called safe queries) for which query evaluation can be performed efficiently, by pushing the probabilistic inference inside particular query plans (called safe plans)."
+  "A probabilistic database is a relational database in which the tuples stored have associated uncertainties. That is, each tuple t has an associated indicator random variable Xt which takes a value 1 if the tuple is present in the database and 0 if the tuple is absent. Each instantiation of values to all of the random variables is called a world. The probabilistic database is the joint probability distribution over the random variables, which implicitly specifies a distribution over all the possible worlds. The answer to a query Q on a probabilistic database is the set of tuples T that are possible answers to Q, along with a probability P(t) for every t∈ T denoting the probability that t belongs the answer for query Q. A probabilistic database together with a query can be encoded as a probabilistic program, and the answer to query evaluation can be phrased as probabilistic inference. Work in probabilistic databases has identified a class of queries (called safe queries) for which query evaluation can be performed efficiently, by pushing the probabilistic inference inside particular query plans (called safe plans)."
 
+  ["10 Years of Probabilistic Querying - What Next?"](https://lirias.kuleuven.be/bitstream/123456789/403578/1/theobald-adbis13.pdf) by Theobald et al. `paper`  
   ["Probabilistic Databases"](http://www.dblab.ntua.gr/~gtsat/collection/Morgan%20Claypool/Probabilistic%20Databases%20-%20Dan%20Suciu%20-%20Morgan%20Clayman.pdf) by Suciu et al. `paper`  
->	"Probabilistic databases are databases where the value of some attributes or the presence of some records are uncertain and known only with some probability. Applications in many areas such as information extraction, RFID and scientific data management, data cleaning, data integration, and financial risk assessment produce large volumes of uncertain data, which are best modeled and processed by a probabilistic database. This book presents the state of the art in representation formalisms and query processing techniques for probabilistic data. It starts by discussing the basic principles for representing large probabilistic databases, by decomposing them into tuple-independent tables, block-independent-disjoint tables, or U-databases. Then it discusses two classes of techniques for query evaluation on probabilistic databases. In extensional query evaluation, the entire probabilistic inference can be pushed into the database engine and, therefore, processed as effectively as the evaluation of standard SQL queries. The relational queries that can be evaluated this way are called safe queries. In intensional query evaluation, the probabilistic inference is performed over a propositional formula called lineage expression: every relational query can be evaluated this way, but the data complexity dramatically depends on the query being evaluated, and can be #P-hard. The book also discusses some advanced topics in probabilistic data management such as top-k query processing, sequential probabilistic databases, indexing and materialized views, and Monte Carlo databases."
-
-  ["10 Years of Probabilistic Querying - What Next?"](https://lirias.kuleuven.be/bitstream/123456789/403578/1/theobald-adbis13.pdf) by Theobald et al. `paper`
-
-----
-
-  <https://en.wikipedia.org/wiki/Probabilistic_logic>
->	"The aim of a probabilistic logic is to combine the capacity of probability theory to handle uncertainty with the capacity of deductive logic to exploit structure. The result is a richer and more expressive formalism with a broad range of possible application areas."
 
 ----
 
@@ -555,9 +547,9 @@
 ----
 
   ["Markov Logic Networks for Natural Language Question Answering"](#markov-logic-networks-for-natural-language-question-answering-khot-balasubramanian-gribkoff-sabharwal-clark-etzioni) by Khot et al. `paper` `summary`
-	*(application to question answering by [AI2](#ai2-aristo))*  
+	*(application to question answering by [AI2 Aristo](#machine-reading-projects---ai2-aristo))*  
   ["Tuffy: Scaling up Statistical Inference in Markov Logic Networks using an RDBMS"](#tuffy-scaling-up-statistical-inference-in-markov-logic-networks-using-an-rdbms-niu-re-doan-shavlik) by Niu et al. `paper` `summary`
-	*(application to information extraction, integration and curation by [DeepDive](#deepdive))*  ([overview](http://deepdive.stanford.edu/inference))  
+	*(application to information extraction, integration and curation by [DeepDive](#machine-reading-projects---deepdive))*  ([overview](http://deepdive.stanford.edu/inference))  
 
 ----
 
@@ -972,16 +964,17 @@
 ---
 ### machine reading projects
 
-  - [Google Knowledge Vault](#google-knowledge-vault)  
-  - [Snorkel](#snorkel)  
-  - [DeepDive](#deepdive)  
-  - [Never-Ending Language Learning (NELL)](#never-ending-language-learning-nell)  
-  - [AI2 Aristo](#ai2-aristo)  
-  - [IBM Watson](#ibm-watson)  
+  - [Google Knowledge Vault](#machine-reading-projects---google-knowledge-vault)  
+  - [Snorkel](#machine-reading-projects---snorkel)  
+  - [DeepDive](#machine-reading-projects---deepdive)  
+  - [NELL](#machine-reading-projects---nell)  
+  - [AI2 Aristo](#machine-reading-projects---ai2-aristo)  
+  - [IBM Watson](#machine-reading-projects---ibm-watson)  
 
 
-----
-#### Google Knowledge Vault
+
+---
+### machine reading projects - Google Knowledge Vault
 
   [overview](http://youtube.com/watch?v=i2r5J4XAhsw) by Kevin Murphy `video`  
   ["A Web-Scale Approach to Probabilistic Knowledge Fusion"](http://videolectures.net/kdd2014_murphy_knowledge_vault/) by Kevin Murphy `video`  
@@ -1000,11 +993,14 @@
   ["Knowledge Base Completion via Search-Based Question Answering"](#knowledge-base-completion-via-search-based-question-answering-west-et-al) by West et al. `paper` `summary`  
 
 
-----
-#### Snorkel
 
-  <http://github.com/HazyResearch/snorkel>  
-  <http://hazyresearch.github.io/snorkel/>  
+---
+### machine reading projects - Snorkel
+
+  [Snorkel](http://github.com/HazyResearch/snorkel) project  
+  [Snorkel](http://hazyresearch.github.io/snorkel) blog  
+
+----
 
   [overview](https://youtube.com/watch?v=HmocI2b5YfA) by Chris Re `video`
 
@@ -1048,10 +1044,13 @@
   "The Fonduer programming model allows users to iteratively improve the quality of their labeling functions through error analysis, without executing the full pipeline as in previous techniques like [incremental knowledge base construction](#incremental-knowledge-base-construction-using-deepdive-wu-zhang-wang-re)."
 
 
-----
-#### DeepDive
 
-  <http://deepdive.stanford.edu>
+---
+### machine reading projects - DeepDive
+
+  [DeepDive](http://deepdive.stanford.edu) project
+
+----
 
   [overview](https://vimeo.com/173069166) by Chris Re `video`  
   [overview](http://youtube.com/watch?v=j1k9lDYCQbA) by Chris Re `video`  
@@ -1095,10 +1094,13 @@
   "One way to improve a KBP system is to integrate domain knowledge. DeepDive supports this operation by allowing the user to integrate constraints and domain knowledge as correlations among random variables. Imagine that the user wants to integrate a simple rule that says “one person is likely to be the spouse of only one person.” For example, given a single entity “Barack Obama,” this rule gives positive preference to the case where only one of (Barack Obama, Michelle Obama) and (Barack Obama, Michelle Williams) is true."
 
 
-----
-#### Never-Ending Language Learning (NELL)
 
-  <http://rtw.ml.cmu.edu/rtw/>  
+---
+### machine reading projects - NELL
+
+  [Never-Ending Language Learning](http://rtw.ml.cmu.edu/rtw) project
+
+----
  
   [overview](http://youtube.com/watch?v=psFnHkIjHA0) by Tom Mitchell `video`  
   [overview](http://videolectures.net/akbcwekex2012_mitchell_language_learning/) by Tom Mitchell `video`  
@@ -1129,16 +1131,23 @@
   - distantly training the candidate generators from the promoted beliefs
 
 
+
+---
+### machine reading projects - AI2 Aristo
+
+  [AI2 Aristo](http://allenai.org/aristo) project  
+  [AI2 Aristo](https://aristo-quiz.allenai.org) live demo  
+
 ----
-#### AI2 Aristo
 
-  <http://allenai.org/aristo/>
+  [overview](https://youtube.com/watch?v=u7n7vKEmfb4) by Peter Clark `video`  
+  [overview](https://youtube.com/watch?v=eyjpLPjhSPU) by Peter Clark `video`  
 
-  [live demo](https://aristo-quiz.allenai.org)
+----
 
-  [overview](https://youtube.com/watch?v=u7n7vKEmfb4) by Peter Clark `video`
-
-  ["Automatic Construction of Inference-Supporting Knowledge Bases"](#automatic-construction-of-inference-supporting-knowledge-bases-clark-et-al) by Clark et al. `paper` `summary` ([talk](http://youtube.com/watch?v=eyjpLPjhSPU) `video`)
+  ["Markov Logic Networks for Natural Language Question Answering"](#markov-logic-networks-for-natural-language-question-answering-khot-balasubramanian-gribkoff-sabharwal-clark-etzioni) by Khot et al. `paper` `summary`  
+  ["Question Answering via Integer Programming over Semi-Structured Knowledge"](#question-answering-via-integer-programming-over-semi-structured-knowledge-khashabi-khot-sabharwal-clark-etzioni-roth) by Khashabi et al. `paper` `summary`  
+  ["Automatic Construction of Inference-Supporting Knowledge Bases"](#automatic-construction-of-inference-supporting-knowledge-bases-clark-et-al) by Clark et al. `paper` `summary`  
 
 ----
 
@@ -1149,8 +1158,9 @@
   "A first step towards a machine that contains large amounts of knowledge in machine-computable form that can answer questions, explain those answers, and discuss those answers with users. Central to the project is machine reading - semi-automated acquisition of knowledge from natural language texts. We are also integrating semi-formal methods for reasoning with knowledge, such as textual entailment and evidential reasoning, and a robust hybrid architecture that has multiple reasoning modules operating in tandem."
 
 
-----
-#### IBM Watson
+
+---
+### machine reading projects - IBM Watson
 
   ["The Science Behind an Answer"](http://youtube.com/watch?v=DywO4zksfXw) `video`
 
@@ -1159,6 +1169,8 @@
   ["Inside the Mind of Watson"](http://youtube.com/watch?v=grDKpicM5y0) by Chris Welty `video`  
   ["Building Watson - A Brief Overview of DeepQA"](http://youtube.com/watch?v=_dXNXCv5eo8) by Karthik Visweswariah `video`  
   ["Going Beyond Fact-Based Question Answering"](https://youtube.com/watch?v=w87_VsP3zec) by Erik Mueller `video`  
+
+----
 
   ["Building Watson: An Overview of the DeepQA Project"](https://aaai.org/ojs/index.php/aimagazine/article/view/2303) by Ferrucci et al. `paper`  
   [papers](https://dropbox.com/sh/udz1kpzzz95xfd6/AADgpBmFsTS1CtkbClfmbyyqa)  
@@ -1281,7 +1293,7 @@
 
 >	"Motivated by a staggeringly large set of applications, we propose Tuffy that pushes MLN inference inside an RDBMS. We find that MLN inference uses many “relational-like” operations and that these operations are a substantial bottleneck in MLN inference. To alleviate this bottleneck, we propose cTuffy, which in addition to using an RDBMS modified the state-of-the-art search algorithms to be set-ata-time. We believe that we are the first to push search algorithms inside an RDBMS, and that our prototype cTuffy demonstrates that this is a promising new direction for database research to support increasingly sophisticated statistical models. As future work, we plan to study whether main memory databases can be used in conjunction with RDBMSes to provide more efficient implementation of search procedures."
 
-  - [DeepDive](#deepdive)
+  - [DeepDive](#machine-reading-projects---deepdive) project `summary`
   - ["Probabilistic Inference and Factor Graphs"](http://deepdive.stanford.edu/inference)
   - `paper` ["Markov Logic"](http://homes.cs.washington.edu/~pedrod/papers/pilp.pdf) by Domingos et al.
   - [Markov Logic Network](#probabilistic-database---markov-logic-network)

@@ -40,9 +40,8 @@
 ---
 ### overview
 
-  ["Machine Learning: Trends, Perspectives and Prospects"](https://goo.gl/U8552O) by Michael I. Jordan and Tom Mitchell  
+  ["Machine Learning is The New Algorithms"](http://nlpers.blogspot.ru/2014/10/machine-learning-is-new-algorithms.html) by Hal Daume  
   ["When is Machine Learning Worth It?"](http://inference.vc/when-is-machine-learning-worth-it/) by Ferenc Huszar  
-  ["Machine Learning is the new algorithms"](http://nlpers.blogspot.ru/2014/10/machine-learning-is-new-algorithms.html) by Hal Daume  
 
 ----
 
@@ -50,11 +49,6 @@
 
 ----
 
-  ["Machine Learning Basics"](http://www.deeplearningbook.org/contents/ml.html) by Ian Goodfellow, Yoshua Bengio, Aaron Courville
-
-----
-
-  overview by Dmitry Vetrov ([first](https://youtu.be/srIcbDBAJBo), [second](https://youtu.be/ftlbxFypW74)) `video` `in russian`  
   [overview](http://youtube.com/watch?v=lkh7bLUc30g) by Dmitry Vetrov `video` `in russian`  
   overview by Igor Kuralenok ([first](https://youtu.be/ynS7XvkAdLU?t=12m5s), [second](https://youtu.be/jiyD0r2SC-g?t=12m55s)) `video` `in russian`  
 
@@ -72,6 +66,7 @@
 
 #### guides
 
+  ["Machine Learning Basics"](http://www.deeplearningbook.org/contents/ml.html) by Ian Goodfellow, Yoshua Bengio, Aaron Courville  
   ["A Few Useful Things to Know about Machine Learning"](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf) by Pedro Domingos  
   ["Expressivity, Trainability, and Generalization in Machine Learning"](http://blog.evjang.com/2017/11/exp-train-gen.html) by Eric Jang  
   ["Classification vs. Prediction"](http://fharrell.com/2017/01/classification-vs-prediction.html) by Frank Harrell  
@@ -1075,7 +1070,7 @@
   - `audio` <https://soundcloud.com/nlp-highlights/28-data-programming-creating-large-training-sets-quickly> (Ratner)
   - `notes` <https://github.com/b12io/reading-group/blob/master/data-programming-snorkel.md>
   - `code` <https://github.com/HazyResearch/snorkel>
-  - [Snorkel](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#snorkel) project
+  - [Snorkel](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#machine-reading-projects---snorkel) project `summary`
 
 
 #### ["Socratic Learning: Empowering the Generative Model"](http://arxiv.org/abs/1610.08123) Varma et al.
@@ -1084,14 +1079,14 @@
   - `video` <https://youtube.com/watch?v=0gRNochbK9c>
   - `post` <http://hazyresearch.github.io/snorkel/blog/socratic_learning.html>
   - `code` <https://github.com/HazyResearch/snorkel>
-  - [Snorkel](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#snorkel) project
+  - [Snorkel](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#machine-reading-projects---snorkel) project `summary`
 
 
 #### ["Snorkel: Rapid Training Data Creation with Weak Supervision"](https://arxiv.org/abs/1711.10160) Ratner, Bach, Ehrenberg, Fries, Wu, Re
 >	"Labeling training data is increasingly the largest bottleneck in deploying machine learning systems. We present Snorkel, a first-of-its-kind system that enables users to train stateof-the-art models without hand labeling any training data. Instead, users write labeling functions that express arbitrary heuristics, which can have unknown accuracies and correlations. Snorkel denoises their outputs without access to ground truth by incorporating the first end-to-end implementation of our recently proposed machine learning paradigm, data programming. We present a flexible interface layer for writing labeling functions based on our experience over the past year collaborating with companies, agencies, and research labs. In a user study, subject matter experts build models 2.8× faster and increase predictive performance an average 45.5% versus seven hours of hand labeling. We study the modeling tradeoffs in this new setting and propose an optimizer for automating tradeoff decisions that gives up to 1.8× speedup per pipeline execution. In two collaborations, with the U.S. Department of Veterans Affairs and the U.S. Food and Drug Administration, and on four open-source text and image data sets representative of other deployments, Snorkel provides 132% average improvements to predictive performance over prior heuristic approaches and comes within an average 3.60% of the predictive performance of large hand-curated training sets."
 
   - `video` <https://youtube.com/watch?v=HmocI2b5YfA> (Re)
-  - [Snorkel](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#snorkel) project
+  - [Snorkel](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#machine-reading-projects---snorkel) project `summary`
 
 
 

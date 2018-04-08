@@ -13,15 +13,19 @@
 
   ["Foundations of Information Retrieval"](https://drive.google.com/file/d/0B-GJrccmbImkZ3pjNl9sczQxd3M) by Maarten de Rijke (SIGIR 2017) `slides`
 
+  ["What Every Software Engineer Should Know about Search"](https://medium.com/startup-grind/what-every-software-engineer-should-know-about-search-27d1df99f80d) by Max Grigorev
+
+  ["An Introduction to Information Retrieval"](https://nlp.stanford.edu/IR-book/) book by Manning, Raghavan, Schutze  
+  ["Search Engines. Information Retrieval in Practice"](http://ciir.cs.umass.edu/irbook/) book by Croft, Metzler, Strohman  
+
+----
+
   ["Neural Networks for Information Retrieval"](http://nn4ir.com/wsdm2018/) tutorial (WSDM 2018) `slides`  
   ["Neural Text Embeddings for Information Retrieval"](https://microsoft.com/en-us/research/event/wsdm-2017-tutorial-neural-text-embeddings-information-retrieval/)
 	tutorial by Bhaskar Mitra and Nick Craswell (WSDM 2017)
 	([slides](https://slideshare.net/BhaskarMitra3/neural-text-embeddings-for-information-retrieval-wsdm-2017), [paper](https://arxiv.org/abs/1705.01509))  
 
-  ["What every software engineer should know about search"](https://medium.com/startup-grind/what-every-software-engineer-should-know-about-search-27d1df99f80d) by Max Grigorev
-
-  ["An Introduction to Information Retrieval"](https://nlp.stanford.edu/IR-book/) book by Manning, Raghavan, Schutze  
-  ["Search Engines. Information Retrieval in Practice"](http://ciir.cs.umass.edu/irbook/) book by Croft, Metzler, Strohman  
+  ["Neural Models for Information Retrieval"](https://youtube.com/watch?v=g1Pgo5yTIKg) by Bhaskar Mitra `video`
 
 ----
 
@@ -82,6 +86,7 @@
 #### ["Neural Models for Information Retrieval"](https://arxiv.org/abs/1705.01509) Mitra, Craswell
 >	"Neural ranking models for information retrieval use shallow or deep neural networks to rank search results in response to a query. Traditional learning to rank models employ machine learning techniques over hand-crafted IR features. By contrast, neural models learn representations of language from raw text that can bridge the gap between query and document vocabulary. Unlike classical IR models, these new machine learning based approaches are data-hungry, requiring large scale training data before they can be deployed. This tutorial introduces basic concepts and intuitions behind neural IR models, and places them in the context of traditional retrieval models. We begin by introducing fundamental concepts of IR and different neural and non-neural approaches to learning vector representations of text. We then review shallow neural IR methods that employ pre-trained neural term embeddings without learning the IR task end-to-end. We introduce deep neural networks next, discussing popular deep architectures. Finally, we review the current DNN models for information retrieval. We conclude with a discussion on potential future directions for neural IR."
 
+  - `video` <https://youtube.com/watch?v=g1Pgo5yTIKg> (Mitra)
   - `slides` <https://slideshare.net/BhaskarMitra3/neural-text-embeddings-for-information-retrieval-wsdm-2017>
 
 
@@ -205,13 +210,25 @@
 
 >	"We postulate that the proposed Dual Embedding Space Model (DESM) captures evidence on whether a document is about a query term in addition to what is modelled by traditional term-frequency based approaches. Our experiments show that the DESM can re-rank top documents returned by a commercial Web search engine, like Bing, better than a term-matching based signal like TF-IDF. However, when ranking a larger set of candidate documents, we find the embeddings-based approach is prone to false positives, retrieving documents that are only loosely related to the query. We demonstrate that this problem can be solved effectively by ranking based on a linear mixture of the DESM and the word counting features."
 
+  - `video` <https://youtu.be/g1Pgo5yTIKg?t=30m1s> (Mitra)
   - `code` <https://github.com/bmitra-msft/Demos/blob/master/notebooks/DESM.ipynb>
+
+
+#### ["Query Expansion with Locally-Trained Word Embeddings"](https://arxiv.org/abs/1605.07891) Diaz, Mitra, Craswell
+>	"Continuous space word embeddings have received a great deal of attention in the natural language processing and machine learning communities for their ability to model term similarity and other relationships. We study the use of term relatedness in the context of query expansion for ad hoc information retrieval. We demonstrate that word embeddings such as word2vec and GloVe, when trained globally, underperform corpus and query specific embeddings for retrieval tasks. These results suggest that other tasks benefiting from global embeddings may also benefit from local embeddings."
+
+>	"The success of local embeddings on this task should alarm natural language processing researchers using global embeddings as a representational tool. For one, the approach of learning from vast amounts of data is only effective if the data is appropriate for the task at hand. And, when provided, much smaller high-quality data can provide much better performance. Beyond this, our results suggest that the approach of estimating global representations, while computationally convenient, may overlook insights possible at query time, or evaluation time in general. A similar local embedding approach can be adopted for any natural language processing task where topical locality is expected and can be estimated. Although we used a query to re-weight the corpus in our experiments, we could just as easily use alternative contextual information (e.g. a sentence, paragraph, or document) in other tasks."
+
+>	"Although local embeddings provide effectiveness gains, they can be quite inefficient compared to global embeddings. We believe that there is opportunity to improve the efficiency by considering offline computation of local embeddings at a coarser level than queries but more specialized than the corpus. If the retrieval algorithm is able to select the appropriate embedding at query time, we can avoid training the local embedding."
+
+  - `video` <https://youtu.be/g1Pgo5yTIKg?t=38m58s> (Mitra)
 
 
 #### ["Learning to Match Using Local and Distributed Representations of Text for Web Search"](https://arxiv.org/abs/1610.08136) Mitra, Diaz, Craswell
   `Duet`
 >	"Models such as latent semantic analysis and those based on neural embeddings learn distributed representations of text, and match the query against the document in the latent semantic space. In traditional information retrieval models, on the other hand, terms have discrete or local representations, and the relevance of a document is determined by the exact matches of query terms in the body text. We hypothesize that matching with distributed representations complements matching with traditional local representations, and that a combination of the two is favorable. We propose a novel document ranking model composed of two separate deep neural networks, one that matches the query and the document using a local representation, and another that matches the query and the document using learned distributed representations. The two networks are jointly trained as part of a single neural network. We show that this combination or ‘duet’ performs significantly better than either neural network individually on a Web page ranking task, and also significantly outperforms traditional baselines and other recently proposed models based on neural networks."
 
+  - `video` <https://youtu.be/g1Pgo5yTIKg?t=46m31s> (Mitra)
   - `code` <https://github.com/faneshion/MatchZoo>
   - `code` <https://github.com/bmitra-msft/NDRM/blob/master/notebooks/Duet.ipynb>
 

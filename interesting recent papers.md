@@ -130,6 +130,7 @@ interesting older papers:
 >	Phase 1 (drift): Mean gradient size is much larger than the standard deviation.  
 >	Phase 2 (diffusion): Mean gradient is smaller and noise takes over - Langevin/Boltzmann effect kicks in.  
 >	Authors claim that SGD training compresses (reduces I(X;T)) in the diffusion phase."  
+  - `video` <https://youtube.com/watch?v=XL07WEc2TRI> (Tishby)
   - `video` <https://youtube.com/watch?v=EQTtBRM0sIs> (Tishby)
   - `video` <https://youtube.com/watch?v=bLqJHjXihK8> (Tishby)
   - `video` <https://youtube.com/watch?v=ekUWO_pI2M8> (Tishby)
@@ -1754,6 +1755,7 @@ interesting older papers:
   - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) `in russian`
   - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani, Uszkoreit)
   - `post` <https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/>
+  - `post` <http://nlp.seas.harvard.edu/2018/04/03/attention.html>
   - `notes` <https://ricardokleinklein.github.io/2017/11/16/Attention-is-all-you-need.html>
   - `notes` <https://blog.tomrochette.com/machine-learning/papers/ashish-vaswani-attention-is-all-you-need>
   - `notes` <https://medium.com/@sharaf/a-paper-a-day-24-attention-is-all-you-need-26eb2da90a91>
@@ -1790,10 +1792,6 @@ interesting older papers:
 #### ["Parallel Multiscale Autoregressive Density Estimation"](http://arxiv.org/abs/1703.03664) Reed, Oord, Kalchbrenner, Colmenarejo, Wang, Belov, de Freitas
   `PixelCNN`
 >	"O(log N) sampling instead of O(N)"  
-
-#### ["PixelCNN++: A PixelCNN Implementation with Discretized Logistic Mixture Likelihood and Other Modifications"](https://arxiv.org/abs/1701.05517) Salimans, Karpathy, Chen, Kingma
-  `PixelCNN`
-  - `code` <https://github.com/openai/pixel-cnn>
 
 #### ["Conditional Image Generation with PixelCNN Decoders"](http://arxiv.org/abs/1606.05328) Oord, Kalchbrenner, Vinyals, Espeholt, Graves, Kavukcuoglu
   `PixelCNN`
@@ -1981,6 +1979,8 @@ interesting older papers:
 >	"Soft Q-learning algorithm for learning multi-modal stochastic policies via entropy maximization, leading to better exploration in environments with multi-modal reward landscapes, combined with actor-critic framework into Soft Actor-Criti, an off-policy actor-critic method in which the actor aims to maximize both the expected reward and the entropy of a stochastic policy."  
 >	"DDPG uses a Q-function estimator to enable off-policy learning, and a deterministic actor that maximizes this Q-function. As such, this method can be viewed both as a deterministic actor-critic algorithm and an approximate Q-learning algorithm. Unfortunately, the interplay between the deterministic actor network and the Q-function typically makes DDPG extremely difficult to stabilize and brittle to hyperparameter settings. As a consequence, it is difficult to extend DDPG to very complex, high-dimensional tasks, and on-policy policy gradient methods still tend to produce the best results in such settings. Our method instead combines off-policy actor-critic training with a stochastic actor, and further aims to maximize the entropy of this actor with an entropy maximization objective. We find that this actually results in a substantially more stable and scalable algorithm that, in practice, exceeds both the efficiency and final performance of DDPG."  
 >	"Many actor-critic algorithms build on the standard, on-policy policy gradient formulation to update the actor, and many of them also consider the entropy of the policy, but instead of maximizing the entropy, they use it as an regularizer. This tends to improve stability, but results in very poor sample complexity. Maximum entropy reinforcement learning optimizes policies to maximize both the expected return and the expected entropy of the policy."  
+  - `video` <https://vimeo.com/252185258> (Haarnoja)
+  - `video` <https://youtube.com/watch?v=NiTJOw1aST4> (Grinchuk) `in russian`
 
 #### ["A Unified View of Entropy-Regularized Markov Decision Processes"](https://arxiv.org/abs/1705.07798) Neu, Gomez, Jonsson
   `soft Q-learning` `policy gradient` `maximum entropy policy`

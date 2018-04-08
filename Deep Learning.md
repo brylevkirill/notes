@@ -1145,6 +1145,7 @@
 >	Phase 2 (diffusion): Mean gradient is smaller and noise takes over - Langevin/Boltzmann effect kicks in.  
 >	Authors claim that SGD training compresses (reduces I(X;T)) in the diffusion phase."  
 
+  - `video` <https://youtube.com/watch?v=XL07WEc2TRI> (Tishby)
   - `video` <https://youtube.com/watch?v=EQTtBRM0sIs> (Tishby)
   - `video` <https://youtube.com/watch?v=bLqJHjXihK8> (Tishby)
   - `video` <https://youtube.com/watch?v=ekUWO_pI2M8> (Tishby)
