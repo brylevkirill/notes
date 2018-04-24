@@ -244,6 +244,7 @@ interesting older papers:
 >	"We show that natural gradient ascent with adaptive weight noise can be interpreted as fitting a variational posterior to maximize the evidence lower bound. This insight allows us to train full covariance, fully factorized, and matrix variate Gaussian variational posteriors using noisy versions of natural gradient, Adam, and K-FAC, respectively."  
 >	"On standard regression benchmarks, our noisy K-FAC algorithm makes better predictions and matches HMC’s predictive variances better than existing methods. Its improved uncertainty estimates lead to more efficient exploration in the settings of active learning and intrinsic motivation for reinforcement learning."  
 >	"We introduce and exploit a surprising connection between natural gradient descent and variational inference. In particular, several approximate natural gradient optimizers have been proposed which fit tractable approximations to the Fisher matrix to gradients sampled during training such as Adam and K-FAC. While these procedures were described as natural gradient descent on the weights using an approximate Fisher matrix, we reinterpret these algorithms as natural gradient on a variational posterior using the exact Fisher matrix. Both the weight updates and the Fisher matrix estimation can be seen as natural gradient ascent on a unified evidence lower bound, analogously to how Neal and Hinton interpreted the E and M steps of Expectation-Maximization as coordinate ascent on a single objective. Using this insight, we give an alternative training method for variational Bayesian neural networks. For a factorial Gaussian posterior, it corresponds to a diagonal natural gradient method with weight noise, and matches the performance of Bayes By Backprop, but converges faster. We also present noisy K-FAC, an efficient and GPU-friendly method for fitting a full matrix-variate Gaussian posterior, using a variant of Kronecker-Factored Approximate Curvature with correlated weight noise."  
+  - `video` <https://youtube.com/watch?v=bWItvHYqKl8> (Grosse)
   - `code` <https://github.com/wlwkgus/NoisyNaturalGradient>
 
 #### ["Stochastic Gradient Descent Performs Variational Inference, Converges to Limit Cycles for Deep Networks"](https://arxiv.org/abs/1710.11029) Chaudhari, Soatto
@@ -329,7 +330,7 @@ interesting older papers:
   - `video` <http://videolectures.net/deeplearning2017_ullrich_bayesian_compression/> (Ullrich)
   - `post` <https://bayesgroup.github.io/sufficient-statistics/posts/the-horseshoe-prior/> `in russian`
   - `paper` ["Variational Dropout and the Local Reparameterization Trick"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#variational-dropout-and-the-local-reparameterization-trick-kingma-salimans-welling) by Kingma, Salimans, Welling `summary`
-  - `paper` ["Variational Gaussian Dropout is not Bayesian"](https://arxiv.org/abs/1711.02989) by Hron, Matthews, Ghahramani
+  - `paper` ["Variational Gaussian Dropout is not Bayesian"](https://arxiv.org/abs/1711.02989) by Hron, Matthews, Ghahramani ([talk](https://youtu.be/k5hb4V73RY0?t=14m34s) by Alexander Matthews `video`)
 
 #### ["Structured Bayesian Pruning via Log-Normal Multiplicative Noise"](https://arxiv.org/abs/1705.07283) Neklyudov, Molchanov, Ashukha, Vetrov
   `model selection`
@@ -338,7 +339,7 @@ interesting older papers:
   - `video` <https://youtu.be/jJDVYAxyE3U?t=32m45s> (Molchanov) `in russian`
   - `code` <https://github.com/necludov/group-sparsity-sbp>
   - `paper` ["Variational Dropout and the Local Reparameterization Trick"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#variational-dropout-and-the-local-reparameterization-trick-kingma-salimans-welling) by Kingma, Salimans, Welling `summary`
-  - `paper` ["Variational Gaussian Dropout is not Bayesian"](https://arxiv.org/abs/1711.02989) by Hron, Matthews, Ghahramani
+  - `paper` ["Variational Gaussian Dropout is not Bayesian"](https://arxiv.org/abs/1711.02989) by Hron, Matthews, Ghahramani ([talk](https://youtu.be/k5hb4V73RY0?t=14m34s) by Alexander Matthews `video`)
 
 #### ["Variational Dropout Sparsifies Deep Neural Networks"](https://arxiv.org/abs/1701.05369) Molchanov, Ashukha, Vetrov
   `model selection`
@@ -347,7 +348,7 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=jJDVYAxyE3U> (Molchanov) `in russian`
   - `code` <https://github.com/BayesWatch/tf-variational-dropout>
   - `paper` ["Variational Dropout and the Local Reparameterization Trick"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#variational-dropout-and-the-local-reparameterization-trick-kingma-salimans-welling) by Kingma, Salimans, Welling `summary`
-  - `paper` ["Variational Gaussian Dropout is not Bayesian"](https://arxiv.org/abs/1711.02989) by Hron, Matthews, Ghahramani
+  - `paper` ["Variational Gaussian Dropout is not Bayesian"](https://arxiv.org/abs/1711.02989) by Hron, Matthews, Ghahramani ([talk](https://youtu.be/k5hb4V73RY0?t=14m34s) by Alexander Matthews `video`)
 
 ----
 #### ["Implicit Causal Models for Genome-wide Association Studies"](https://arxiv.org/abs/1710.10742) Tran, Blei
@@ -686,6 +687,7 @@ interesting older papers:
   - `video` <https://youtu.be/bsuvM1jO-4w?t=42m10s> (Mnih)
   - `notes` <http://rylanschaeffer.github.io/content/research/neural_episodic_control/main.html>
   - `post` <http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-4-episodic-and-interactive-memory/>
+  - `code` <https://github.com/mjacar/pytorch-nec>
   - `code` <https://github.com/EndingCredits/Neural-Episodic-Control>
   - `code` <https://github.com/NervanaSystems/coach/blob/master/agents/nec_agent.py>
 
@@ -728,6 +730,7 @@ interesting older papers:
 #### ["Variational Continual Learning"](https://arxiv.org/abs/1710.10628) Nguyen, Li, Bui, Turner
   `continual learning` `catastrophic forgetting`
 >	"The framework can successfully train both deep discriminative models and deep generative models in complex continual learning settings where existing tasks evolve over time and entirely new tasks emerge. Experimental results show that variational continual learning outperforms state-of-the-art continual learning methods on a variety of tasks, avoiding catastrophic forgetting in a fully automatic way."  
+  - `video` <https://youtube.com/watch?v=qRXPS_6fAfE> (Turner)
 
 #### ["Gradient Episodic Memory for Continuum Learning"](https://arxiv.org/abs/1706.08840) Lopez-Paz, Ranzato
   `continual learning` `catastrophic forgetting`
@@ -918,6 +921,8 @@ interesting older papers:
 >	"Method is capable of learning a loss function over thousands of sequential environmental actions. Crucially, this learned loss is both highly adaptive (allowing for quicker learning of new tasks) and highly instructive (sometimes eliminating the need for environmental rewards at test time)."  
 >	"Our loss’ instructive nature – which allows it to operate at test time without environmental rewards – is interesting and desirable. This instructive nature can be understood as the loss function’s internalization of the reward structures it has previously encountered under the training task distribution. We see this internalization as a step toward learning intrinsic motivation. A good intrinsically motivated agent would successfully infer useful actions in new situations by using heuristics it developed over its entire lifetime. This ability is likely required to achieve truly intelligent agents."  
 >	"In addition to internalizing environment rewards, learned loss could, in principle, have several other positive effects. For example, by examining the agent’s history, the loss could incentivize desirable extended behaviors, such as exploration. Further, the loss could perform a form of system identification, inferring environment parameters and adapting how it guides the agent as a function of these parameters (e.g., by adjusting the effective learning rate of the agent)."  
+  - `post` <https://blog.openai.com/evolved-policy-gradients>
+  - `code` <https://github.com/openai/EPG>
 
 #### ["Deep Learning for Reward Design to Improve Monte Carlo Tree Search in ATARI Games"](https://arxiv.org/abs/1604.07095) Guo, Singh, Lewis, Lee
   `learning reward function`
@@ -1019,7 +1024,8 @@ interesting older papers:
 >	"use RNN policy with no state reset between inner episodes for outer POMDP"  
   - `video` <https://vimeo.com/250399556> (Wang)
   - `video` <https://youtu.be/Y85Zn50Eczs?t=20m18s> (Botvinick)
-  - `post` <https://hackernoon.com/learning-policies-for-learning-policies-meta-reinforcement-learning-rl²-in-tensorflow-b15b592a2ddf> (Juliani)
+  - `video` <https://youtu.be/LnXgs73OUjE?t=29m20s> (Botvinick)
+  - `post` <https://hackernoon.com/learning-policies-for-learning-policies-meta-reinforcement-learning-rl²-in-tensorflow-b15b592a2ddf>
   - `code` <https://github.com/awjuliani/Meta-RL>
   - `paper` ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](#rl2-fast-reinforcement-learning-via-slow-reinforcement-learning-duan-schulman-chen-bartlett-sutskever-abbeel) by Duan et al. `summary`
 
@@ -1769,12 +1775,14 @@ interesting older papers:
 >	"Inverse autoregressive flows represent a kind of dual formulation of deep autoregressive modelling, in which sampling can be performed in parallel, while the inference procedure required for likelihood estimation is sequential and slow. The goal of this paper is to marry the best features of both models: the efficient training of WaveNet and the efficient sampling of IAF networks. The bridge between them is a new form of neural network distillation, which we refer to as Probability Density Distillation, where a trained WaveNet model is used as a teacher for training feedforward IAF model with no significant difference in quality."  
   - <https://deepmind.com/blog/wavenet-launches-google-assistant/> (demo)
   - `post` <https://deepmind.com/blog/high-fidelity-speech-synthesis-wavenet/>
+  - `video` <https://youtu.be/YyUXG-BfDbE?t=26m19s> (Andrews)
 
 #### ["WaveNet: A Generative Model for Raw Audio"](http://arxiv.org/abs/1609.03499) Oord et al.
   `WaveNet`
   - `post` <https://deepmind.com/blog/wavenet-generative-model-raw-audio/>
   - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-1> (42:36) (van den Oord)
   - `video` <https://youtube.com/watch?v=leu286ciQcE> (Kalchbrenner)
+  - `video` <https://youtube.com/watch?v=YyUXG-BfDbE> (Andrews)
   - `video` <https://youtube.com/watch?v=gUdyQ5Ocr0g> (Zakirov) `in russian`
   - `code` <https://github.com/vincentherrmann/pytorch-wavenet>
   - `code` <https://github.com/ibab/tensorflow-wavenet>
@@ -1981,6 +1989,7 @@ interesting older papers:
 >	"Many actor-critic algorithms build on the standard, on-policy policy gradient formulation to update the actor, and many of them also consider the entropy of the policy, but instead of maximizing the entropy, they use it as an regularizer. This tends to improve stability, but results in very poor sample complexity. Maximum entropy reinforcement learning optimizes policies to maximize both the expected return and the expected entropy of the policy."  
   - `video` <https://vimeo.com/252185258> (Haarnoja)
   - `video` <https://youtube.com/watch?v=NiTJOw1aST4> (Grinchuk) `in russian`
+  - `code` <https://github.com/haarnoja/sac>
 
 #### ["A Unified View of Entropy-Regularized Markov Decision Processes"](https://arxiv.org/abs/1705.07798) Neu, Gomez, Jonsson
   `soft Q-learning` `policy gradient` `maximum entropy policy`
@@ -2242,6 +2251,7 @@ interesting older papers:
   - `code` <https://github.com/glinscott/leela-chess>
   - `code` <https://github.com/Zeta36/chess-alpha-zero>
   - `code` <https://github.com/junxiaosong/AlphaZero_Gomoku>
+  - `code` <https://github.com/suragnair/alpha-zero-general>
 
 #### ["Mastering the Game of Go without Human Knowledge"](https://deepmind.com/documents/119/agz_unformatted_nature.pdf) Silver et al.
   `learning to guide planning` `using available environment model` `search-based policy iteration` `expert iteration`
@@ -2545,6 +2555,7 @@ interesting older papers:
 #### ["Deep Exploration via Randomized Value Functions"](https://arxiv.org/abs/1703.07608) Osband, Russo, Wen, Roy
   `approximate bayesian exploration` `approximate posterior sampling`
 >	"A very recent thread of work builds on count-based (or upper-confidence-bound-based) exploration schemes that operate with value function learning. These methods maintain a density over the state-action space of pseudo-counts, which represent the quantity of data gathered that is relevant to each state-action pair. Such algorithms may offer a viable approach to deep exploration with generalization. There are, however, some potential drawbacks. One is that a separate representation is required to generalize counts, and it's not clear how to design an effective approach to this. As opposed to the optimal value function, which is fixed by the environment, counts are generated by the agent’s choices, so there is no single target function to learn. Second, the count model generates reward bonuses that distort data used to fit the value function, so the value function representation needs to be designed to not only capture properties of the true optimal value function but also such distorted versions. Finally, these approaches treat uncertainties as uncoupled across state-action pairs, and this can incur a substantial negative impact on statistical efficiency."  
+  - `video` <https://youtube.com/watch?v=lfQEPWj97jk> (Osband)
   - `video` <http://techtalks.tv/talks/generalization-and-exploration-via-randomized-value-functions/62467/> (Osband)
   - `video` <https://youtu.be/ck4GixLs4ZQ?t=33m7s> (Osband)
 
@@ -2747,6 +2758,10 @@ hieves."
 [interesting older papers](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---hierarchical-reinforcement-learning)
 
 ----
+#### ["Latent Space Policies for Hierarchical Reinforcement Learning"](https://arxiv.org/abs/1804.02808) Haarnoja, Hartikainen, Abbeel, Levine
+>	"Higher levels in the hierarchy can directly make use of the latent space of the lower levels as their action space, which allows to train the entire hierarchy in a layerwise fashion. This approach to hierarchical reinforcement learning has a number of conceptual and practical benefits. First, each layer in the hierarchy can be trained with exactly the same algorithm. Second, by using an invertible mapping from latent variables to actions, each layer becomes invertible, which means that the higher layer can always perfectly invert any behavior of the lower layer. This makes it possible to train lower layers on heuristic shaping rewards, while higher layers can still optimize task-specific rewards with good asymptotic performance. Finally, our method has a natural interpretation as an iterative procedure for constructing graphical models that gradually simplify the task dynamics."  
+  - `video` <https://sites.google.com/view/latent-space-deep-rl> (demo)
+
 #### ["Learning to Compose Skills"](https://arxiv.org/abs/1711.11289) Sahni, Kumar, Tejani, Isbell
   `ComposeNet`
 >	"A major distinction between our work and recent attempts to learn an optimal sequence of subgoals is that our framework can learn a much richer set of compositions of skills. Our main contribution in this work is the expression of these compositions as differentiable functions. Representations of the individual skill policies are fed to this function as inputs and a representation for the composed task policy is produced. Skill policies are learned only once, and a wide variety of compositions can be created after the fact. We show that learning to compose skills is more efficient than learning to sequence those skills as is typically done in hierarchical RL. Moreover, we show how recursive compositions can be used to create rich hierarchies for more complicated behavior."  
@@ -2776,7 +2791,8 @@ hieves."
 #### ["Eigenoption Discovery Through The Deep Successor Rerpesentation"](https://arxiv.org/abs/1710.11089) Machado, Rosenbaum, Guo, Liu, Tesauro, Campbell
 
 #### ["Stochastic Neural Networks for Hierarchical Reinforcement Learning"](https://arxiv.org/abs/1704.03012) Florensa, Duan, Abbeel
->	"Our SNN hierarchical approach outperforms state-of-the-art intrinsic motivation results like VIME (Houthooft et al., 2016)."  
+>	"SNN approach maximizes the mutual information of the top-level actions and the state distribution."  
+>	"SNN approach outperforms state-of-the-art intrinsic motivation results like VIME (Houthooft et al., 2016)."  
   - `video` <https://youtube.com/playlist?list=PLEbdzN4PXRGVB8NsPffxsBSOCcWFBMQx3> (demo)
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Stochastic_Neural_Networks_for_Hierarchical_Reinforcement_Learning.md>
   - `code` <https://github.com/florensacc/snn4hrl>
@@ -2869,6 +2885,7 @@ hieves."
 >	"Resulting system learns effectively and, by acquiring a set of symbolic rules that are easily comprehensible to humans, dramatically outperforms a conventional, fully neural DRL system on a stochastic variant of the game."  
 >	"We tested the transfer learning capabilities of our algorithm by training an agent only on games of the grid variant then testing it on games of the random variant. After training, the unsupervised neural back end of the system is able to form a symbolic representation of any given frame within the micro-world of the game. In effect it has acquired the ontology of that micro-world, and this capability can be applied to any game within that micro-world irrespective of its specific rules. In the present case, no re-training of the back end was required when the system was applied to new variants of the game."  
 >	"The key is for the system to understand when a new situation is analogous to one previously encountered or, more potently, to hypothesise that a new situation contains elements of several previously encountered situations combined in a novel way. In the present system, this capability is barely exploited."  
+  - `video` <https://youtube.com/watch?v=_9dsx4tyzJ8> (Garnelo)
   - `video` <https://youtube.com/watch?v=HOAVhPy6nrc> (Shanahan)
 
 ----
@@ -2894,6 +2911,7 @@ hieves."
 >	"We observe that distillation arises naturally as one half of an optimization procedure when using KL divergences to regularize the output of task models towards a distilled model. The other half corresponds to using the distilled model as a regularizer for training the task models."  
 >	"Another observation is that parameters in deep networks do not typically by themselves have any semantic meaning, so instead of regularizing networks in parameter space, it is worthwhile considering regularizing networks in a more semantically meaningful space, e.g. of policies."  
   - `video` <http://www.fields.utoronto.ca/video-archive/2017/11/2509-17850> (Teh)
+  - `video` <https://youtube.com/watch?v=scf7Przmh7c> (Teh)
   - `video` <https://vimeo.com/238221551#t=20m7s> (Hadsell)
   - `notes` <http://shaofanlai.com/post/37>
 
@@ -3514,6 +3532,9 @@ hieves."
 >	"Extractive summarization to coarsely identify salient information and a neural abstractive model to generate the article. For the abstractive model, decoder-only Transformer architecture that can scalably attend to very long sequences, much longer than typical encoder-decoder architectures used in sequence transduction."  
 
 ---
+#### ["Phrase-Based & Neural Unsupervised Machine Translation"](https://arxiv.org/abs/1804.07755) Lample, Ott, Conneau, Denoyer, Ranzato
+  `translation`
+
 #### ["Unsupervised Machine Translation Using Monolingual Corpora Only"](https://arxiv.org/abs/1711.00043) Lample, Denoyer, Ranzato
   `translation`
 >	"learn to map sentences of the two languages into the same feature space by denoising both via auto-encoding and via cross-domain encoding"  

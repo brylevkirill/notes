@@ -40,9 +40,9 @@
 
   "In Bayesian approach, probability is used not only to describe “physical” randomness, such as errors in labeling, but also uncertainty regarding the true values of the parameters. These prior and posterior probabilities represent degrees of belief, before and after seeing the data. The Bayesian approach takes modeling seriously. A Bayesian model includes a suitable prior distribution for model parameters. If the model/prior are chosen without regard for the actual situation, there is no justification for believing the results of Bayesian inference. The model and prior are chosen based on our knowledge of the problem. These choices are not, in theory, affected by the amount of data collected, or by the question we are interested in answering. We do not, for example, restrict the complexity of the model just because we have only a small amount of data. Pragmatic compromises are inevitable in practice - no model and prior perfectly express to our knowledge of the situation. The Bayesian approach relies on reducing such flaws to a level where we think they won’t seriously affect the results."
 
-  [interesting quotes](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#interesting-quotes---bayesian-inference-and-learning)
-
 ----
+
+  [introduction](http://mlg.eng.cam.ac.uk/zoubin/bayesian.html) by Zoubin Ghahramani
 
   ["Why probability models?"](http://johndcook.com/blog/probability-modeling/) by John Cook  
   ["What is randomness? What is a random variable?"](http://johndcook.com/blog/2012/04/19/random-is-as-random-does/) by John Cook  
@@ -52,8 +52,6 @@
   ["Embracing Uncertainty - Probabilistic Inference"](http://blogs.technet.com/b/machinelearning/archive/2014/10/30/embracing-uncertainty-probabilistic-inference.aspx) by Chris Bishop  
 
   ["Where Priors Come From"](http://zinkov.com/posts/2015-06-09-where-priors-come-from/) by Rob Zinkov
-
-  ["Probabilistic Modelling"](https://youtube.com/watch?v=pOtvyVYAuW4) by Iain Murray `video`
 
 ----
 

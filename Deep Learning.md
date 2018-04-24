@@ -24,7 +24,7 @@
     - [variational autoencoder](#interesting-papers---variational-autoencoder)
     - [autoregressive models](#interesting-papers---autoregressive-models)
     - [architectures](#interesting-papers---architectures)
-    - [connections to biology](#connections-to-biology)
+    - [connections to neuroscience](#connections-to-neuroscience)
     - [applications](#interesting-papers---applications)
 
 
@@ -45,8 +45,6 @@
 
   ["The Limitations of Deep Learning"](http://blog.keras.io/the-limitations-of-deep-learning.html) by Francois Chollet ([talk](https://youtube.com/watch?v=MUF32XHqM34) `video`)  
   ["The Future of Deep Learning"](http://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34?t=11m43s) `video`)  
-
-  [interesting quotes](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#interesting-quotes)
 
 
 #### history
@@ -349,8 +347,14 @@
 
   ["Unsupervised learning, one notion or many?"](http://www.offconvex.org/2017/06/27/unsupervised1/) by Sanjeev Arora and Andrej Risteski
 
+----
+
+  ["Goals and Principles of Representation Learning"](https://youtube.com/watch?v=2vxZbZC21Gg) by Ferenc Huszar `video`
+
   ["Representation Learning and the Information Bottleneck Approach"](http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/) by Ference Huszar  
   ["Is Maximum Likelihood Useful for Representation Learning?"](http://inference.vc/maximum-likelihood-for-representation-learning-2/) by Ference Huszar  
+
+----
 
   [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#unsupervised-learning)
 
@@ -1062,7 +1066,7 @@
   - [variational autoencoder](#interesting-papers---variational-autoencoder)  
   - [autoregressive models](#interesting-papers---autoregressive-models)  
   - [architectures](#interesting-papers---architectures)  
-  - [connections to biology](#connections-to-biology)  
+  - [connections to neuroscience](#connections-to-neuroscience)  
   - [applications](#interesting-papers---applications)  
 
 
@@ -1887,7 +1891,7 @@ x."
   - `post` <http://bjlkeng.github.io/posts/autoregressive-autoencoders/>
   - `post` <http://inference.vc/masked-autoencoders-icml-paper-highlight/>
   - `notes` <https://casmls.github.io/general/2016/11/19/MADENADE.html>
-  - `code` <https://github.com/mgermain/MADE>
+  - `code` <https://github.com/karpathy/pytorch-made>
 
 
 #### ["Neural Autoregressive Distribution Estimation"](http://arxiv.org/abs/1605.02226) Uria, Cote, Gregor, Murray, Larochelle
@@ -2045,6 +2049,14 @@ x."
   - `video` <https://youtu.be/T5k0GnBmZVI?t=1m9s> (Jaderberg)
   - `video` <https://youtu.be/_XRBlhzb31U?t=1h9m29s> (Figurnov) `in russian`
   - `code` <https://github.com/tensorflow/models/tree/master/research/transformer>
+
+
+#### ["Training Recurrent Networks Online without Backtracking"](https://arxiv.org/abs/1507.07680) Ollivier, Tallec, Charpiat
+>	"We introduce the "NoBackTrack" algorithm to train the parameters of dynamical systems such as recurrent neural networks. This algorithm works in an online, memoryless setting, thus requiring no backpropagation through time, and is scalable, avoiding the large computational and memory cost of maintaining the full gradient of the current state with respect to the parameters. The algorithm essentially maintains, at each time, a single search direction in parameter space. The evolution of this search direction is partly stochastic and is constructed in such a way to provide, at every time, an unbiased random estimate of the gradient of the loss function with respect to the parameters. Because the gradient estimate is unbiased, on average over time the parameter is updated as it should. The resulting gradient estimate can then be fed to a lightweight Kalman-like filter to yield an improved algorithm. For recurrent neural networks, the resulting algorithms scale linearly with the number of parameters. Small-scale experiments confirm the suitability of the approach, showing that the stochastic approximation of the gradient introduced in the algorithm is not detrimental to learning. In particular, the Kalman-like version of NoBackTrack is superior to backpropagation through time when the time span of dependencies in the data is longer than the truncation span for BPTT."
+
+>	"For recurrent neural networks, the computational cost of this algorithm is comparable to that of running the network itself. Previously known algorithms were either not fully online or had a significantly higher computational cost. In our experiments, this algorithm appears as a practical alternative to truncated backpropagation through time, especially in its Kalman version, while the Euclidean version requires smaller learning rates. The (unbiased) noise and rank reduction introduced in the gradient approximation do not appear to prevent learning. The interest of NoBackTrack with respect to truncated BPTT depends on the situation at hand, especially on the scale of time dependencies in the data (which results in biased gradient estimates for BPTT), and on whether the storage of past states and past data required by truncated BPTT is acceptable or not."
+
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/OllivierC15>
 
 
 #### ["Connectionist Temporal Classification: Labelling Unsegmented Sequence Data with Recurrent Neural Networks"](https://www.cs.toronto.edu/~graves/icml_2006.pdf) Graves, Fernandez, Gomez, Schmidhuber
@@ -2562,7 +2574,7 @@ x."
 
 
 ---
-### connections to biology
+### connections to neuroscience
 
 #### "Can the brain do back-propagation?" Hinton
 >	"problems:  
@@ -2589,12 +2601,12 @@ x."
 >	"Neuroscientists have long criticised deep learning algorithms as incompatible with current knowledge of neurobiology. We explore more biologically plausible versions of deep representation learning, focusing here mostly on unsupervised learning but developing a learning mechanism that could account for supervised, unsupervised and reinforcement learning. The starting point is that the basic learning rule believed to govern synaptic weight updates (Spike-Timing-Dependent Plasticity) can be interpreted as gradient descent on some objective function so long as the neuronal dynamics push firing rates towards better values of the objective function (be it supervised, unsupervised, or reward-driven). The second main idea is that this corresponds to a form of the variational EM algorithm, i.e., with approximate rather than exact posteriors, implemented by neural dynamics. Another contribution of this paper is that the gradients required for updating the hidden states in the above variational interpretation can be estimated using an approximation that only requires propagating activations forward and backward, with pairs of layers learning to form a denoising auto-encoder. Finally, we extend the theory about the probabilistic interpretation of auto-encoders to justify improved sampling schemes based on the generative interpretation of denoising auto-encoders, and we validate all these ideas on generative learning tasks."
 
 >	"Deep learning and artificial neural networks have taken their inspiration from brains, but mostly for the form of the computation performed (with much of the biology, such as the presence of spikes remaining to be accounted for). However, what is lacking currently is a credible machine learning interpretation of the learning rules that seem to exist in biological neurons that would explain joint training of a deep neural network, i.e., accounting for credit assignment through a long chain of neural connections. Solving the credit assignment problem therefore means identifying neurons and weights that are responsible for a desired outcome and changing parameters accordingly. Whereas back-propagation offers a machine learning answer, it is not biologically plausible:  
-	(1) the back-propagation computation (coming down from the output layer to lower hidden layers) is purely linear, whereas biological neurons interleave linear and non-linear operations,  
-	(2) if the feedback paths known to exist in the brain (with their own synapses and maybe their own neurons) were used to propagate credit assignment by backprop, they would need precise knowledge of the derivatives of the non-linearities at the operating point used in the corresponding feedforward computation on the feedforward path,  
-	(3) similarly, these feedback paths would have to use exact symmetric weights (with the same connectivity, transposed) of the feedforward connections,  
-	(4) real neurons communicate by (possibly stochastic) binary values (spikes), not by clean continuous values,  
-	(5) the computation would have to be precisely clocked to alternate between feedforward and back-propagation phases (since the latter needs the former’s results),  
-	(6) it is not clear where the output targets would come from."  
+>	(1) the back-propagation computation (coming down from the output layer to lower hidden layers) is purely linear, whereas biological neurons interleave linear and non-linear operations,  
+>	(2) if the feedback paths known to exist in the brain (with their own synapses and maybe their own neurons) were used to propagate credit assignment by backprop, they would need precise knowledge of the derivatives of the non-linearities at the operating point used in the corresponding feedforward computation on the feedforward path,  
+>	(3) similarly, these feedback paths would have to use exact symmetric weights (with the same connectivity, transposed) of the feedforward connections,  
+>	(4) real neurons communicate by (possibly stochastic) binary values (spikes), not by clean continuous values,  
+>	(5) the computation would have to be precisely clocked to alternate between feedforward and back-propagation phases (since the latter needs the former’s results),  
+>	(6) it is not clear where the output targets would come from."  
 
 >	"The approach proposed in this paper has the ambition to address all these issues, although some question marks as to a possible biological implementations remain, and of course many details of the biology that need to be accounted for are not covered here. Note that back-propagation is used not just for classical supervised learning but also for many unsupervised learning algorithms, including all kinds of auto-encoders: sparse auto-encoders, denoising auto-encoders, contractive auto-encoders, and more recently, variational auto-encoders. Other unsupervised learning algorithms exist which do not rely on back-propagation, such as the various Boltzmann machine learning algorithms. Boltzmann machines are probably the most biologically plausible learning algorithms for deep architectures that we currently know, but they also face several question marks in this regard, such as the weight transport problem ((3) above) to achieve symmetric weights, and the positive-phase vs negative-phase synchronization question (similar to (5) above)."
 
@@ -2621,18 +2633,26 @@ x."
 >	"The brain processes information through many layers of neurons. This deep architecture is representationally powerful, but it complicates learning by making it hard to identify the responsible neurons when a mistake is made. In machine learning, the backpropagation algorithm assigns blame to a neuron by computing exactly how it contributed to an error. To do this, it multiplies error signals by matrices consisting of all the synaptic weights on the neuron’s axon and farther downstream. This operation requires a precisely choreographed transport of synaptic weight information, which is thought to be impossible in the brain. Here we present a surprisingly simple algorithm for deep learning, which assigns blame by multiplying error signals by random synaptic weights. We show that a network can learn to extract useful information from signals sent through these random feedback connections. In essence, the network learns to learn. We demonstrate that this new mechanism performs as quickly and accurately as backpropagation on a variety of problems and describe the principles which underlie its function. Our demonstration provides a plausible basis for how a neuron can be adapted using error signals generated at distal locations in the brain, and thus dispels long-held assumptions about the algorithmic constraints on learning in neural circuits."
 
   - `paper` <http://www.nature.com/articles/ncomms13276.epdf> ("Nature")
+  - `video` <http://youtu.be/-kHLKLLxIF4?t=20m28s> (Lillicrap)
 
 
 #### ["Direct Feedback Alignment Provides Learning in Deep Neural Networks"](https://arxiv.org/abs/1609.01596) Nøkland
 >	"Artificial neural networks are most commonly trained with the back-propagation algorithm, where the gradient for learning is provided by back-propagating the error, layer by layer, from the output layer to the hidden layers. A recently discovered method called feedback-alignment shows that the weights used for propagating the error backward don't have to be symmetric with the weights used for propagation the activation forward. In fact, random feedback weights work evenly well, because the network learns how to make the feedback useful. In this work, the feedback alignment principle is used for training hidden layers more independently from the rest of the network, and from a zero initial condition. The error is propagated through fixed random feedback connections directly from the output layer to each hidden layer. This simple method is able to achieve zero training error even in convolutional networks and very deep networks, completely without error back-propagation. The method is a step towards biologically plausible machine learning because the error signal is almost local, and no symmetric or reciprocal weights are required. Experiments show that the test performance on MNIST and CIFAR is almost as good as those obtained with back-propagation for fully connected networks. If combined with dropout, the method achieves 1.45% error on the permutation invariant MNIST task."
 
 
-#### ["Training Recurrent Networks Online without Backtracking"](https://arxiv.org/abs/1507.07680) Ollivier, Tallec, Charpiat
->	"We introduce the "NoBackTrack" algorithm to train the parameters of dynamical systems such as recurrent neural networks. This algorithm works in an online, memoryless setting, thus requiring no backpropagation through time, and is scalable, avoiding the large computational and memory cost of maintaining the full gradient of the current state with respect to the parameters. The algorithm essentially maintains, at each time, a single search direction in parameter space. The evolution of this search direction is partly stochastic and is constructed in such a way to provide, at every time, an unbiased random estimate of the gradient of the loss function with respect to the parameters. Because the gradient estimate is unbiased, on average over time the parameter is updated as it should. The resulting gradient estimate can then be fed to a lightweight Kalman-like filter to yield an improved algorithm. For recurrent neural networks, the resulting algorithms scale linearly with the number of parameters. Small-scale experiments confirm the suitability of the approach, showing that the stochastic approximation of the gradient introduced in the algorithm is not detrimental to learning. In particular, the Kalman-like version of NoBackTrack is superior to backpropagation through time (BPTT) when the time span of dependencies in the data is longer than the truncation span for BPTT."
+#### ["Assessing the Scalability of Biologically-motivated Deep Learning Algorithms and Architectures"](https://openreview.net/forum?id=BypdvewVM) Bartunov, Santoro, Richards, Hinton, Lillicrap
+  `Simplified Difference Target Propagation`
+>	"The backpropagation of error algorithm is often said to be impossible to implement in a real brain. The recent success of deep networks in machine learning and AI, however, has inspired a number of proposals for understanding how the brain might learn across multiple layers, and hence how it might implement or approximate BP. As of yet, none of these proposals have been rigorously evaluated on tasks where BP-guided deep learning has proved critical, or in architectures more structured than simple fully-connected networks. Here we present the first results on scaling up a biologically motivated model of deep learning to datasets which need deep networks with appropriate architectures to achieve good performance. We present results on CIFAR-10 and ImageNet. For CIFAR-10 we show that our algorithm, a straightforward, weight-transport-free variant of difference target-propagation modified to remove backpropagation from the penultimate layer, is competitive with BP in training deep networks with locally defined receptive fields that have untied weights. For ImageNet we find that both DTP and our algorithm perform significantly worse than BP, opening questions about whether different architectures or algorithms are required to scale these approaches. Our results and implementation details help establish baselines for biologically motivated deep learning schemes going forward."
 
->	"For recurrent neural networks, the computational cost of this algorithm is comparable to that of running the network itself. Previously known algorithms were either not fully online or had a significantly higher computational cost. In our experiments, this algorithm appears as a practical alternative to truncated backpropagation through time, especially in its Kalman version, while the Euclidean version requires smaller learning rates. The (unbiased) noise and rank reduction introduced in the gradient approximation do not appear to prevent learning. The interest of NoBackTrack with respect to truncated BPTT depends on the situation at hand, especially on the scale of time dependencies in the data (which results in biased gradient estimates for BPTT), and on whether the storage of past states and past data required by truncated BPTT is acceptable or not."
+>	"- No weight transport (i.e. weight transposes)  
+>	- No weight tying (i.e. convolutional kernels)  
+>	- No feedback of signed errors  
+>	But still:  
+>	- Use continuous rather than spiking signals  
+>	- Use separate forward and backward passes  
+>	- Use local activation derivatives"  
 
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/OllivierC15>
+  - `video` <http://youtu.be/-kHLKLLxIF4?t=32m37s> (Lillicrap)
 
 
 
