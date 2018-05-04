@@ -128,6 +128,7 @@
   <http://hunch.net>  
   <http://machinedlearnings.com>  
   <http://nlpers.blogspot.com>  
+  <http://ruder.io>
   <http://fastml.com>  
   <http://wildml.com>  
   <http://blogs.princeton.edu/imabandit>  
@@ -274,7 +275,8 @@
   ["Crash Course on Learning Theory"](https://blogs.princeton.edu/imabandit/2015/10/13/crash-course-on-learning-theory-part-1/) by Sebastien Bubeck  
   ["Statistical Learning Theory"](https://web.stanford.edu/class/cs229t/Lectures/percy-notes.pdf) by Percy Liang  
 
-  [course](http://work.caltech.edu/telecourse.html) by Yaser Abu-Mostafa `video`
+  [course](http://www.mit.edu/~9.520/fall17/) by Tomaso Poggio, Lorenzo Rosasco, Georgios Evangelopoulos `video`  
+  [course](http://work.caltech.edu/telecourse.html) by Yaser Abu-Mostafa `video`  
 
 
 ----

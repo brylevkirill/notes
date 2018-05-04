@@ -81,6 +81,7 @@ interesting older papers:
   `generalization`
 >	"We examine the role of memorization in deep learning, drawing connections to capacity, generalization, and adversarial robustness. While deep networks are capable of memorizing noise data, our results suggest that they tend to prioritize learning simple patterns first. In our experiments, we expose qualitative differences in gradient-based optimization of deep neural networks on noise vs. real data. We also demonstrate that for appropriately tuned explicit regularization (e.g., dropout) we can degrade DNN training performance on noise datasets without compromising generalization on real data. Our analysis suggests that the notions of effective capacity which are dataset independent are unlikely to explain the generalization performance of deep networks when trained with gradient based methods because training data itself plays an important role in determining the degree of memorization."  
   - `video` <https://vimeo.com/238241921> (Krueger)
+  - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (42:27) (Bengio)
 
 #### ["A Bayesian Perspective on Generalization and Stochastic Gradient Descent"](https://arxiv.org/abs/1710.06451) Smith, Le
   `generalization`
@@ -346,6 +347,7 @@ interesting older papers:
 >	"Interpretation of Gaussian dropout as performing variational inference in a network with log uniform priors over weights leads to sparsity in weights. This is an interesting approach, wherein sparsity stemsfrom variational optimization instead of the prior."  
   - `video` <https://vimeo.com/238221185> (Molchanov)
   - `video` <https://youtube.com/watch?v=jJDVYAxyE3U> (Molchanov) `in russian`
+  - `video` <https://youtu.be/3Lxb-DqPtv4?t=4h45m22s> (Ashukha) `in russian`
   - `code` <https://github.com/BayesWatch/tf-variational-dropout>
   - `paper` ["Variational Dropout and the Local Reparameterization Trick"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#variational-dropout-and-the-local-reparameterization-trick-kingma-salimans-welling) by Kingma, Salimans, Welling `summary`
   - `paper` ["Variational Gaussian Dropout is not Bayesian"](https://arxiv.org/abs/1711.02989) by Hron, Matthews, Ghahramani ([talk](https://youtu.be/k5hb4V73RY0?t=14m34s) by Alexander Matthews `video`)
@@ -469,9 +471,15 @@ interesting older papers:
   - `code` <https://github.com/blei-lab/edward/blob/master/examples/iwvi.py>
 
 ----
+#### ["Stochastic Gradient Estimation With Finite Differences"](http://approximateinference.org/accepted/BuesingEtAl2016.pdf) Buesing, Weber, Mohamed
+  `variables with discrete distributions` `non-differentiable loss`
+>	"If the loss is non-differentiable, as is the case in reinforcement learning, or if the distribution is discrete, as for probabilistic models with discrete latent variables, we have to resort to score-function (SF) gradient estimators. Naive SF estimators have high variance and therefore require sophisticated variance reduction techniques, such as baseline models, to render them effective in practice. Here we show that under certain symmetry and parametric assumptions on the distribution, one can derive unbiased stochastic gradient estimators based on finite differences (FD) of the loss function. These estimators do not require learning baseline models and potentially have less variance. Furthermore, we highlight connections of the FD estimators to simultaneous perturbation sensitivity analysis (SPSA), as well as weak derivative and “straight-through” gradient estimators."
+
 #### ["Backpropagation through the Void: Optimizing Control Variates for Black-box Gradient Estimation"](https://arxiv.org/abs/1711.00123) Grathwohl, Choi, Wu, Roeder, Duvenaud
-  `variables with discrete distributions` `RELAX`
+  `variables with discrete distributions` `non-differentiable loss` `RELAX`
 >	"We generalize REBAR to learn a free-form control variate parameterized by a neural network, giving a lower-variance, unbiased gradient estimator which can be applied to a wider variety of problems with greater flexibility. Most notably, our method is applicable even when no continuous relaxation is available, as in reinforcement learning or black box function optimization. Furthermore, we derive improved variants of popular reinforcement learning methods with unbiased, action-dependent gradient estimates and lower variance."  
+>	"RELAX doesn't solve the problem of discrete random variables but it solves the problem of how to estimate gradient of function which value is known but how to compute or differentiate it is unknown (reinforcement learning and other applications)."  
+  - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (25:20) (Bengio)
   - `video` <https://youtu.be/hkRBoiaplEE?t=1h8m1s> (Sobolev)
   - `code` <https://github.com/duvenaud/relax>
   - `code` <https://github.com/Bonnevie/rebar>
@@ -488,10 +496,6 @@ interesting older papers:
   - `code` <https://github.com/tensorflow/models/tree/master/research/rebar>
   - `code` <https://github.com/Bonnevie/rebar>
 
-#### ["Stochastic Gradient Estimation With Finite Differences"](http://approximateinference.org/accepted/BuesingEtAl2016.pdf) Buesing, Weber, Mohamed
-  `variables with discrete distributions`
->	"If the loss is non-differentiable, as is the case in reinforcement learning, or if the distribution is discrete, as for probabilistic models with discrete latent variables, we have to resort to score-function (SF) gradient estimators. Naive SF estimators have high variance and therefore require sophisticated variance reduction techniques, such as baseline models, to render them effective in practice. Here we show that under certain symmetry and parametric assumptions on the distribution, one can derive unbiased stochastic gradient estimators based on finite differences (FD) of the loss function. These estimators do not require learning baseline models and potentially have less variance. Furthermore, we highlight connections of the FD estimators to simultaneous perturbation sensitivity analysis (SPSA), as well as weak derivative and “straight-through” gradient estimators."
-
 #### ["The Concrete Distribution: A Continuous Relaxation of Discrete Random Variables"](http://arxiv.org/abs/1611.00712) Maddison, Mnih, Teh + ["Categorical Reparametrization with Gumbel-Softmax"](http://arxiv.org/abs/1611.01144) Jang, Gu, Poole
   `variables with discrete distributions`
 >	"Continuous reparemetrisation based on the so-called Concrete or Gumbel-softmax distribution, which is a continuous distribution and has a temperature constant that can be annealed during training to converge to a discrete distribution in the limit. In the beginning of training the variance of the gradients is low but biased, and towards the end of training the variance becomes high but unbiased."  
@@ -499,6 +503,7 @@ interesting older papers:
   - `video` <http://youtube.com/watch?v=JFgXEbgcT7g> (Jang)
   - `video` <https://facebook.com/nipsfoundation/videos/1555493854541848/> (25:13) (Teh)
   - `video` <https://youtu.be/_JTu50iDhkA?t=55m53s> (Sobolev)
+  - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (23:39) (Bengio)
   - `video` <https://youtu.be/_XRBlhzb31U?t=28m33s> (Figurnov) `in russian`
   - `post` <https://laurent-dinh.github.io/2016/11/21/gumbel-max.html>
   - `post` <https://casmls.github.io/general/2017/02/01/GumbelSoftmax.html>
@@ -511,7 +516,7 @@ interesting older papers:
   - `code` <https://gist.github.com/gngdb/ef1999ce3a8e0c5cc2ed35f488e19748>
   - `code` <https://github.com/EderSantana/gumbel>
 
-#### ["Learning Latent Permutations with Gumbel-Sinkhorn Networks"](https://openreview.net/forum?id=Byt3oJ-0W) Mena, Belanger, Linderman, Snoek
+#### ["Learning Latent Permutations with Gumbel-Sinkhorn Networks"](https://arxiv.org/abs/1802.08665) Mena, Belanger, Linderman, Snoek
   `variables with complex discrete distributions`
 >	"A new method for gradient-descent inference of permutations."  
 
@@ -753,6 +758,7 @@ interesting older papers:
 #### ["Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"](https://arxiv.org/abs/1701.06538) Shazeer, Mirhoseini, Maziarz, Davis, Le, Hinton, Dean
   `continual learning` `catastrophic forgetting`
 >	"The MoE with experts shows higher accuracy (or lower perplexity) than the state of the art using only 16% of the training time."  
+  - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (14:39) (Bengio)
   - `video` <https://youtube.com/watch?v=nNZceFX2tQU> (Zakirov) `in russian`
   - `notes` <https://github.com/dennybritz/deeplearning-papernotes/blob/3718d181a0fed5ed806582822ed0dbde530122bf/notes/mixture-experts.md>
 
@@ -872,23 +878,6 @@ interesting older papers:
 #### ["Understanding Synthetic Gradients and Decoupled Neural Interfaces"](http://arxiv.org/abs/1703.00522) Czarnecki, Swirszcz, Jaderberg, Osindero, Vinyals, Kavukcuoglu
   `information routing`
   - `video` <https://vimeo.com/238275152> (Swirszcz)
-
-#### ["Learning to Communicate with Deep Multi-Agent Reinforcement Learning"](http://arxiv.org/abs/1605.06676) Foerster, Assael, de Freitas, Whiteson
-  `information routing`
-  - `video` <https://youtu.be/SAcHyzMdbXc?t=19m> (de Freitas)
-  - `video` <https://youtube.com/watch?v=xL-GKD49FXs> (Foerster)
-  - `video` <http://videolectures.net/deeplearning2016_foerster_learning_communicate/> (Foerster)
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.07133>
-  - `code` <https://github.com/iassael/learning-to-communicate>
-
-#### ["Learning Multiagent Communication with Backpropagation"](http://arxiv.org/abs/1605.07736) Sukhbaatar, Szlam, Fergus
-  `information routing`
-  - `video` <https://youtube.com/watch?v=9fZ8JiDZqCA> (Sukhbaatar)
-  - `video` <https://youtu.be/_iVVXWkoEAs?t=30m6s> (Fergus)
-  - `video` <https://youtu.be/SAcHyzMdbXc?t=19m> (de Freitas)
-  - `slides` <https://uclmr.github.io/nampi/talk_slides/rob-nampi.pdf>
-  - `code` <https://github.com/facebookresearch/CommNet>
-  - `code` <https://github.com/rickyhan/CommNet>
 
 ----
 #### ["SMASH: One-Shot Model Architecture Search through HyperNetworks"](https://arxiv.org/abs/1708.05344) Brock, Lim, Ritchie, Weston
@@ -1156,6 +1145,10 @@ interesting older papers:
   - `post` <http://giorgiopatrini.org/posts/2017/09/06/in-search-of-the-missing-signals/>
 
 ----
+#### ["Relational Neural Expectation Maximization: Unsupervised Discovery of Objects and their Interactions"](https://arxiv.org/abs/1802.10353) Steenkiste, Chang, Greff, Schmidhuber
+  `concept learning`
+>	"A novel method that learns to discover objects and model their physical interactions from raw visual images in a purely unsupervised fashion. It incorporates prior knowledge about the compositional nature of human perception to factor interactions between object-pairs and learn efficiently."  
+
 #### ["Neural Expectation Maximization"](https://arxiv.org/abs/1708.03498) Greff, Steenkiste, Schmidhuber
   `concept learning`
 >	"differentiable clustering method that simultaneously learns how to group and represent individual entities"  
@@ -1196,6 +1189,16 @@ interesting older papers:
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/EslamiHWTKH16>
 
 ----
+#### ["Synthesizing Programs for Images using Reinforced Adversarial Learning"](https://arxiv.org/abs/1804.01118) Ganin, Kulkarni, Babuschkin, Eslami, Vinyals
+  `learning disentangled representation` `SPIRAL`
+>	"Adversarially trained agent that generates a program which is executed by a graphics engine to interpret and sample images. The goal of this agent is to fool a discriminator network that distinguishes between real and rendered data, trained with a distributed reinforcement learning setup without any supervision. To the best of our knowledge, this is the first demonstration of an end-to-end, unsupervised and adversarial inverse graphics agent on challenging real world and synthetic 3D datasets."  
+>	"Trust discriminator to guide learning by using its score as reward for IMPALA agent instead of propagating gradients as in typical GAN."  
+>	"Goal is to achieve better generalisation through use of tools in grounded environment."  
+>	"Unsupervised learning is not only about predicting inputs - SPIRAL learns the rewards through which learning happens and learns the policy to generate a program that generates inputs."  
+  - `post` <https://deepmind.com/blog/learning-to-generate-images>
+  - `video` <https://youtu.be/iSyvwAwa7vk> (demo)
+  - `video` <https://facebook.com/iclr.cc/videos/2125495797479475> (34:29) (Kavukcuoglu)
+
 #### ["Generative Temporal Models with Memory"](http://arxiv.org/abs/1702.04649) Gemici, Hung, Santoro, Wayne, Mohamed, Rezende, Amos, Lillicrap
   `learning disentangled representation`
 >	"A sufficiently powerful temporal model should separate predictable elements of the sequence from unpredictable elements, express uncertainty about those unpredictable elements, and rapidly identify novel elements that may help to predict the future. To create such models, we introduce Generative Temporal Models augmented with external memory systems."  
@@ -1587,11 +1590,9 @@ interesting older papers:
   - `video` <https://youtu.be/xfyK03MEZ9Q?t=5h21m15s> (Bagnell)
 
 ----
-#### ["Synthesizing Programs for Images using Reinforced Adversarial Learning"](https://deepmind.com/documents/183/SPIRAL.pdf) Ganin, Kulkarni, Babuschkin, Eslami, Vinyals
+#### ["Synthesizing Programs for Images using Reinforced Adversarial Learning"](https://arxiv.org/abs/1804.01118) Ganin, Kulkarni, Babuschkin, Eslami, Vinyals
   `GAN applications` `image synthesis` `SPIRAL`
->	"Adversarially trained agent that generates a program which is executed by a graphics engine to interpret and sample images. The goal of this agent is to fool a discriminator network that distinguishes between real and rendered data, trained with a distributed reinforcement learning setup without any supervision. To the best of our knowledge, this is the first demonstration of an end-to-end, unsupervised and adversarial inverse graphics agent on challenging real world and synthetic 3D datasets."  
-  - `post` <https://deepmind.com/blog/learning-to-generate-images>
-  - `video` <https://youtu.be/iSyvwAwa7vk> (demo)
+  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#synthesizing-programs-for-images-using-reinforced-adversarial-learning-ganin-kulkarni-babuschkin-eslami-vinyals>
 
 #### ["High-Resolution Image Synthesis and Semantic Manipulation with Conditional GANs"](https://arxiv.org/abs/1711.11585) Wang, Liu, Zhu, Tao, Kautz, Catanzaro
   `GAN applications` `image synthesis`
@@ -1773,8 +1774,11 @@ interesting older papers:
 #### ["Parallel WaveNet: Fast High-Fidelity Speech Synthesis"](https://arxiv.org/abs/1711.10433) Oord et al.
   `WaveNet`
 >	"Inverse autoregressive flows represent a kind of dual formulation of deep autoregressive modelling, in which sampling can be performed in parallel, while the inference procedure required for likelihood estimation is sequential and slow. The goal of this paper is to marry the best features of both models: the efficient training of WaveNet and the efficient sampling of IAF networks. The bridge between them is a new form of neural network distillation, which we refer to as Probability Density Distillation, where a trained WaveNet model is used as a teacher for training feedforward IAF model with no significant difference in quality."  
+>	"WaveNet: efficient training, slow sampling"  
+>	"IAF: efficient sampling, slow inference"  
   - <https://deepmind.com/blog/wavenet-launches-google-assistant/> (demo)
   - `post` <https://deepmind.com/blog/high-fidelity-speech-synthesis-wavenet/>
+  - `video` <https://facebook.com/iclr.cc/videos/2125495797479475> (8:13) (Kavukcuoglu)
   - `video` <https://youtu.be/YyUXG-BfDbE?t=26m19s> (Andrews)
 
 #### ["WaveNet: A Generative Model for Raw Audio"](http://arxiv.org/abs/1609.03499) Oord et al.
@@ -1945,6 +1949,7 @@ interesting older papers:
 #### ["Multi-step Reinforcement Learning: A Unifying Algorithm"](https://arxiv.org/abs/1703.01327) De Asis, Hernandez-Garcia, Holland, Sutton
   `Q(σ)` `value-based`
 >	"Currently, there are a multitude of algorithms that can be used to perform TD control, including Sarsa, Q-learning, and Expected Sarsa. These methods are often studied in the one-step case, but they can be extended across multiple time steps to achieve better performance. Each of these algorithms is seemingly distinct, and no one dominates the others for all problems. In this paper, we study a new multi-step action-value algorithm called Q(σ) which unifies and generalizes these existing algorithms, while subsuming them as special cases. A new parameter, σ, is introduced to allow the degree of sampling performed by the algorithm at each step during its backup to be continuously varied, with Sarsa existing at one extreme (full sampling), and Expected Sarsa existing at the other (pure expectation)."  
+>	"With a constant value of sampling parameter σ, Q(σ) is a weighted average between tree backups and regular SARSA: σ varies the breadth of the tree backup, contrasted with TD(λ) where λ varies the depth. Q(σ) allows for interpolation in bias-variance tradeoff: if σ is dynamically adjusted, can enforce a desirable tradeoff."  
   - `video` <https://youtube.com/watch?v=MidZJ-oCpRk> (De Asis)
   - `video` <https://youtu.be/dZmCOIJ7Cyc?t=7m3s> (Bobyrev) `in russian`
 
@@ -1995,6 +2000,7 @@ interesting older papers:
   `soft Q-learning` `policy gradient` `maximum entropy policy`
 >	"Our approach is based on extending the linear-programming formulation of policy optimization in MDPs to accommodate convex regularization functions. Our key result is showing that using the conditional entropy of the joint state-action distributions as regularization yields a dual optimization problem closely resembling the Bellman optimality equations. This result enables us to formalize a number of state-of-the-art entropy-regularized reinforcement learning algorithms as approximate variants of Mirror Descent or Dual Averaging, and thus to argue about the convergence properties of these methods."  
 >	"We show that the exact version of the TRPO algorithm of Schulman et al. (2015) actually converges to the optimal policy, while the entropy-regularized policy gradient methods of Mnih et al. (2016) [A2C] may fail to converge to a fixed point."  
+  - `video` <http://videocrm.ca/Machine18/Machine18-20180426-1-GergelyNeu.mp4> (Neu)
 
 #### ["Equivalence Between Policy Gradients and Soft Q-Learning"](https://arxiv.org/abs/1704.06440) Schulman, Chen, Abbeel
   `soft Q-learning` `policy gradient` `maximum entropy policy`
@@ -2127,6 +2133,7 @@ interesting older papers:
   - `post` <https://deepmind.com/blog/impala-scalable-distributed-deeprl-dmlab-30/>
   - `video` <https://youtube.com/playlist?list=PLqYmG7hTraZDRA9vW0zV8iIHlHnBSTBcC> (demo)
   - `video` <http://fields.utoronto.ca/video-archive/2018/01/2509-18003> (Mnih)
+  - `video` <https://facebook.com/iclr.cc/videos/2125495797479475> (21:05) (Kavukcuoglu)
 
 #### ["The Intentional Unintentional Agent: Learning to Solve Many Continuous Control Tasks Simultaneously"](https://arxiv.org/abs/1707.03300) Cabi, Colmenarejo, Hoffman, Denil, Wang, de Freitas
   `IUA` `policy gradient` `on-policy + off-policy` `multi-task`
@@ -2287,6 +2294,7 @@ interesting older papers:
   - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
   - `notes` <https://blog.acolyer.org/2017/11/17/mastering-the-game-of-go-without-human-knowledge/>
   - `notes` <https://dropbox.com/s/fuwhivftv998f6q/AlphaGoZeroPseudoCode.pdf>
+  - `code` <https://github.com/pytorch/ELF/tree/master/src_py/elfgames/go>
   - `code` <https://github.com/tensorflow/minigo>
   - `code` <https://github.com/gcp/leela-zero/>
   - `paper` ["Reinforcement Learning as Classification: Leveraging Modern Classifiers"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.7.474&rep=rep1&type=pdf) by Lagoudakis and Parr
@@ -2537,7 +2545,7 @@ interesting older papers:
   `approximate bayesian exploration` `approximate posterior sampling`
 
 #### ["Noisy Networks for Exploration"](https://arxiv.org/abs/1706.10295) Fortunato, Azar, Piot, Menick, Osband, Graves, Mnih, Munos, Hassabis, Pietquin, Blundell, Legg
-  `approximate bayesian exploration` `approximate posterior sampling`
+  `approximate bayesian exploration` `approximate posterior sampling` `NoisyNet`
 >	"scale of perturbation to parameters is learned along with original objective function"  
   - `video` <https://youtu.be/fevMOp5TDQs?t=1h27s> (Mnih)
   - `video` <https://youtu.be/fnwo3GCmyEo?t=49m46s> (Fritzler) `in russian`
@@ -2789,6 +2797,7 @@ hieves."
   - `code` <https://github.com/openai/mlsh>
 
 #### ["Eigenoption Discovery Through The Deep Successor Rerpesentation"](https://arxiv.org/abs/1710.11089) Machado, Rosenbaum, Guo, Liu, Tesauro, Campbell
+  - `post` <https://manantomar.github.io/2018/04/10/blogpost.html>
 
 #### ["Stochastic Neural Networks for Hierarchical Reinforcement Learning"](https://arxiv.org/abs/1704.03012) Florensa, Duan, Abbeel
 >	"SNN approach maximizes the mutual information of the top-level actions and the state distribution."  
@@ -3135,6 +3144,7 @@ hieves."
 ----
 #### ["Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments"](https://arxiv.org/abs/1706.02275) Lowe, Wu, Tamar, Harb, Abbeel, Mordatch
   `MADDPG`
+>	"Uses learning rule from DDPG to learn a central off-policy critic based on Q-learning and uses certain gradient stimator to learn policies for each agent."  
   - `post` <https://blog.openai.com/learning-to-cooperate-compete-and-communicate/>
   - `video` <https://youtube.com/watch?v=QCmBo91Wy64> (demo)
   - `code` <https://github.com/openai/maddpg>
@@ -3159,12 +3169,32 @@ hieves."
 #### ["Learning with Opponent-Learning Awareness"](https://arxiv.org/abs/1709.04326) Foerster, Chen, Al-Shedivat, Whiteson, Abbeel, Mordatch
   - `post` <https://blog.openai.com/learning-to-model-other-minds/> (demo)
 
+----
+#### ["Learning to Communicate with Deep Multi-Agent Reinforcement Learning"](http://arxiv.org/abs/1605.06676) Foerster, Assael, de Freitas, Whiteson
+  - `video` <https://youtu.be/SAcHyzMdbXc?t=19m> (de Freitas)
+  - `video` <https://youtube.com/watch?v=xL-GKD49FXs> (Foerster)
+  - `video` <http://videolectures.net/deeplearning2016_foerster_learning_communicate/> (Foerster)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.07133>
+  - `code` <https://github.com/iassael/learning-to-communicate>
+
+#### ["Learning Multiagent Communication with Backpropagation"](http://arxiv.org/abs/1605.07736) Sukhbaatar, Szlam, Fergus
+  - `video` <https://youtube.com/watch?v=9fZ8JiDZqCA> (Sukhbaatar)
+  - `video` <https://youtu.be/_iVVXWkoEAs?t=30m6s> (Fergus)
+  - `video` <https://youtu.be/SAcHyzMdbXc?t=19m> (de Freitas)
+  - `slides` <https://uclmr.github.io/nampi/talk_slides/rob-nampi.pdf>
+  - `code` <https://github.com/facebookresearch/CommNet>
+  - `code` <https://github.com/rickyhan/CommNet>
+
 
 
 ---
 ### program induction
 
 ----
+#### ["Synthesizing Programs for Images using Reinforced Adversarial Learning"](https://arxiv.org/abs/1804.01118) Ganin, Kulkarni, Babuschkin, Eslami, Vinyals
+  `SPIRAL`
+  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#synthesizing-programs-for-images-using-reinforced-adversarial-learning-ganin-kulkarni-babuschkin-eslami-vinyals>
+
 #### ["Leveraging Grammar and Reinforcement Learning for Neural Program Synthesis"](https://openreview.net/forum?id=H1Xw62kRZ) Bunel, Hausknecht, Devlin, Singh, Kohli
 >	"Using the DSL grammar and reinforcement learning to improve synthesis of programs with complex control flow."  
 >	"Sequence-to-sequence generation models are trained to maximize the likelihood of known reference programs. This strategy has two key limitations. First, it ignores Program Aliasing: the fact that many different programs may satisfy a given specification (especially with incomplete specifications such as a few input-output examples). By maximizing the likelihood of only a single reference program, it penalizes many semantically correct programs, which can adversely affect the synthesizer performance. Second, this strategy overlooks the fact that programs have a strict syntax that can be efficiently checked."  
@@ -3331,28 +3361,10 @@ hieves."
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.03126>
   - `code` <https://github.com/facebook/MemNN/blob/master/KVmemnn>
 
-#### ["R-NET: Machine Reading Comprehension with Self-matching Networks"](https://microsoft.com/en-us/research/publication/mrc/) Wang et al.
+#### ["QANet: Combining Local Convolution with Global Self-Attention for Reading Comprehension"](https://arxiv.org/abs/1804.09541) Yu, Dohan, Luong, Zhao, Chen, Norouzi, Le
   `question answering over texts` `single paragraph`
-  - `post` <http://yerevann.github.io/2017/08/25/challenges-of-reproducing-r-net-neural-network-using-keras/>
-  - `code` <https://github.com/YerevaNN/R-NET-in-Keras>
-  - `code` <https://github.com/minsangkim142/R-net>
-  - `paper` ["Gated Self-Matching Networks for Reading Comprehension and Question Answering"](http://aclweb.org/anthology/P17-1018) by Wang et al.
-
-#### ["Tracking the World State with Recurrent Entity Networks"](https://arxiv.org/abs/1612.03969) Henaff, Weston, Szlam, Bordes, LeCun
-  `question answering over texts` `single paragraph`
->	"There's a bunch of memory slots that each can be used to represent a single entity. The first time an entity appears, it's written to a slot. Every time that something happens in the story that corresponds to a change in the state of an entity, the change in the state of that entity is combined with the entity's previous state via a modified GRU update equation and rewritten to the same slot."  
-  - `code` <https://github.com/jimfleming/recurrent-entity-networks>
-  - `code` <https://github.com/siddk/entity-network>
-
-#### ["Gated-Attention Readers for Text Comprehension"](http://arxiv.org/abs/1606.01549) Dhingra, Liu, Yang, Cohen, Salakhutdinov
-  `question answering over texts` `single paragraph`
-  - `video` <https://youtube.com/watch?v=ZSDrM-tuOiA> (Salakhutdinov)
-  - `video` <https://youtu.be/Ba1ujtDzvj4?t=7m49s> (Salakhutdinov)
-  - `notes` <https://theneuralperspective.com/2017/01/19/gated-attention-readers-for-text-comprehension/>
-  - `code` <https://github.com/bdhingra/ga-reader>
-
-#### ["Machine Comprehension Using Match-LSTM And Answer Pointer"](http://arxiv.org/abs/1608.07905) Wang, Jiang
-  `question answering over texts` `single paragraph`
+>	"Paper is the first work to achieve both fast and accurate reading comprehension model, by discarding the recurrent networks in favor of feed forward architectures."  
+>	"Paper is the first to mix self-attention and convolutions."  
 
 ----
 #### ["A Generative Vision Model that Trains with High Data Efficiency and Breaks Text-based CAPTCHAs"](http://science.sciencemag.org/content/early/2017/10/26/science.aag2612.full) George et al.
@@ -3625,4 +3637,6 @@ hieves."
 >	"The authors combine a standard LSTM softmax with Pointer Networks in a mixture model called Pointer-Sentinel LSTM. The pointer networks helps with rare words and long-term dependencies but is unable to refer to words that are not in the input. The opposite is the case for the standard softmax."  
   - `video` <https://youtube.com/watch?v=Ibt8ZpbX3D8> (Merity)
   - `video` <https://youtu.be/Q7ifcUuMZvk?t=30m11s> (Socher)
+  - `post` <https://elanmart.github.io/2018-02-10-psmm/>
   - `notes` <https://theneuralperspective.com/2016/10/04/pointer-sentinel-mixture-models/>
+  - `code` <https://github.com/elanmart/psmm>
