@@ -922,11 +922,21 @@ interesting older papers:
   - `paper` ["Where Do Rewards Come From?"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.151.8250) by Singh, Lewis, Barto
 
 ----
+#### ["On First-Order Meta-Learning Algorithms"](https://arxiv.org/abs/1803.02999) Nichol, Achiam, Schulman
+  `Reptile` `learning initialization algorithm`
+>	"We analyze a family of algorithms for learning a parameter initialization that can be fine-tuned quickly on a new task, using only first-order derivatives for the meta-learning updates. This family includes and generalizes first-order MAML, an approximation to MAML obtained by ignoring second-order derivatives. It also includes Reptile which works by repeatedly sampling a task, training on it, and moving the initialization towards the trained weights on that task."  
+  - `post` <https://blog.openai.com/reptile>
+  - `notes` <https://yobibyte.github.io/files/paper_notes/Reptile___a_Scalable_Metalearning_Algorithm__Alex_Nichol_and_John_Schulman__2018.pdf>
+  - `code` <https://github.com/openai/supervised-reptile>
+
 #### ["Continuous Adaptation via Meta-Learning in Nonstationary and Competitive Environments"](https://arxiv.org/abs/1710.03641) Al-Shedivat, Bansal, Burda, Sutskever, Mordatch, Abbeel
-  `continual learning` `learning initialization algorithm`
+  `learning initialization algorithm` `continual learning`
 >	"extending Model-Agnostic Meta-Learning to the case of dynamically changing tasks"  
   - <https://sites.google.com/view/adaptation-via-metalearning> (demo)
+  - `post` <https://blog.openai.com/meta-learning-for-wrestling>
+  - `video` <https://facebook.com/iclr.cc/videos/2126769937352061/> (1:20:51) (Al-Shedivat)
   - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482/> (30:38) (Abbeel)
+  - `code` <https://github.com/openai/robosumo>
 
 #### ["Some Considerations on Learning to Explore via Meta-Reinforcement Learning"](https://openreview.net/forum?id=Skk3Jm96W) Stadie, Yang, Houthooft, Chen, Duan, Wu, Abbeel, Sutskever
   `E-MAML` `E-RL^2` `learning initialization algorithm`
@@ -1603,6 +1613,8 @@ interesting older papers:
   `GAN applications` `image synthesis` `ProGAN`
 >	"Instead of Wassersteinizing, just keep the KL loss, but get rid of the disjoint support problem by doing multiresolution approximation of the data distribution."  
   - `video` <https://youtube.com/watch?v=XOxxPcy5Gr4> (demo)
+  - `video` <https://facebook.com/iclr.cc/videos/2123114954384226> (1:45:11) (Karras)
+  - `notes` <https://blog.acolyer.org/2018/05/10/progressive-growing-of-gans-for-improved-quality-stability-and-variation>
   - `post` <https://bayesgroup.github.io/sufficient-statistics/posts/multilevel-gans/> `in russian`
   - `code` <https://github.com/tkarras/progressive_growing_of_gans>
   - `code` <https://github.com/ptrblck/prog_gans_pytorch_inference>
@@ -1664,6 +1676,7 @@ interesting older papers:
 >	"Both VAE and WAE minimize two terms: the reconstruction cost and the regularizer penalizing discrepancy between Pz and distribution induced by the encoder Q. VAE forces Q(Z|X=x) to match Pz for all the different input examples x drawn from Px. Every single red ball is forced to match Pz depicted as the white shape. Red balls start intersecting, which leads to problems with reconstruction. In contrast, WAE forces the continuous mixture Qz:=∫Q(z|x)dPx to match Pz. As a result latent codes of different examples get a chance to stay far away from each other, promoting a better reconstruction."  
 >	"WAE shares many of the properties of VAEs (stable training, encoder-decoder architecture, nice latent manifold structure) while generating samples of better quality, as measured by the FID score."  
 >	"WAE is a generalization of adversarial auto-encoder."  
+  - `video` <https://facebook.com/iclr.cc/videos/2123421684353553> (47:30) (Gelly)
   - `paper` ["Adversarial Autoencoders"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#adversarial-autoencoders-makhzani-shlens-jaitly-goodfellow) by Makhzani et al. `summary`
 
 ----
@@ -1892,6 +1905,7 @@ interesting older papers:
 
 #### ["An Analysis of Categorical Distributional Reinforcement Learning"](https://arxiv.org/abs/1802.08163) Rowland, Bellemare, Dabney, Munos, Teh
   `CDRL` `Q-learning`
+  - `video` <http://videocrm.ca/Machine18/Machine18-20180423-3-MarcBellemare> (22:23) (Bellemare)
 
 #### ["Distributional Reinforcement Learning with Quantile Regression"](https://arxiv.org/abs/1710.10044) Dabney, Rowland, Bellemare, Munos
   `QR-DQN` `Q-learning`
@@ -1911,6 +1925,7 @@ interesting older papers:
 >	"It is unclear if method works because of modelling uncertainty over rewards, training network with richer signal (categorical loss) or using distributional Bellman update."  
   - `post` <https://deepmind.com/blog/going-beyond-average-reinforcement-learning/>
   - `video` <https://youtube.com/watch?v=yFBwyPuO2Vg> (demo)
+  - `video` <http://videocrm.ca/Machine18/Machine18-20180423-3-MarcBellemare> (Bellemare)
   - `video` <https://vimeo.com/235922311> (Bellemare)
   - `video` <https://vimeo.com/237274251> (Bellemare)
   - `video` <https://youtu.be/bsuvM1jO-4w?t=4m45s> (Mnih)
@@ -1994,6 +2009,7 @@ interesting older papers:
 >	"Many actor-critic algorithms build on the standard, on-policy policy gradient formulation to update the actor, and many of them also consider the entropy of the policy, but instead of maximizing the entropy, they use it as an regularizer. This tends to improve stability, but results in very poor sample complexity. Maximum entropy reinforcement learning optimizes policies to maximize both the expected return and the expected entropy of the policy."  
   - `video` <https://vimeo.com/252185258> (Haarnoja)
   - `video` <https://youtube.com/watch?v=NiTJOw1aST4> (Grinchuk) `in russian`
+  - `notes` <https://github.com/Scitator/papers/blob/master/papers/1801_soft_ac.md>
   - `code` <https://github.com/haarnoja/sac>
 
 #### ["A Unified View of Entropy-Regularized Markov Decision Processes"](https://arxiv.org/abs/1705.07798) Neu, Gomez, Jonsson
@@ -2103,6 +2119,7 @@ interesting older papers:
   - `post` <https://blog.openai.com/evolution-strategies/>
   - `video` <https://youtube.com/watch?v=SQtOI9jsrJ0> (Chen) `video`
   - `video` <https://youtube.com/watch?v=Rd0UdJFYkqI> (Temirchev) `in russian`
+  - `video` <https://youtube.com/watch?v=8jKC95KklT0> (Karazeev) `in russian`
   - `post` <http://inference.vc/evolutionary-strategies-embarrassingly-parallelizable-optimization/> (Huszar)
   - `post` <http://inference.vc/evolution-strategies-variational-optimisation-and-natural-es-2/> (Huszar)
   - `post` <http://davidbarber.github.io/blog/2017/04/03/variational-optimisation/> (Barber)
@@ -2286,7 +2303,7 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=6fKG4wJ7uBk> (Baudis)
   - `video` <https://youtube.com/watch?v=XuzIqE2IshY> (Kington)
   - `video` <https://youtube.com/watch?v=vC66XFoN4DE> (Raval)
-  - `video` <https://youtu.be/Lz5_xFGt2hA?t=3m11s> (Grinchuk) `in russian`
+  - `video` <https://youtu.be/V0HNXVSrvhg?t=1h20m45s> + <https://youtu.be/Lz5_xFGt2hA?t=3m11s> (Grinchuk) `in russian`
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
   - `video` <https://youtu.be/zHjE07NBA_o?t=1h10m24s> (Kozlov) `in russian`
   - `post` <http://inference.vc/alphago-zero-policy-improvement-and-vector-fields/>
@@ -2344,6 +2361,8 @@ interesting older papers:
   - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747/> (18:27) (Weber)
   - `video` <https://youtu.be/bsuvM1jO-4w?t=39m27s> (Mnih)
   - `video` <https://youtube.com/watch?v=agXIYMCICcc> (Kilcher)
+  - `slides` <https://mltrain.cc/wp-content/uploads/2017/10/sebastien-racaniere.pdf>
+  - `code` <https://github.com/vasiloglou/mltrain-nips-2017/blob/master/sebastien_racaniere/I2A%20-%20NIPS%20workshop.ipynb>
 
 #### ["Metacontrol for Adaptive Imagination-Based Optimization"](https://arxiv.org/abs/1705.02670) Hamrick et al.
   `learning to plan` `using available environment model`
@@ -2712,6 +2731,7 @@ hieves."
   - `video` <https://youtu.be/BCzFs9Xb9_o?t=21m2s> (Sutskever)
   - `video `<https://youtu.be/RvEwFvl-TrY?t=19m18s> (Sutskever)
   - `video` <https://youtu.be/TERCdog1ddE?t=50m45s> (Abbeel)
+  - `notes` <https://yobibyte.github.io/files/paper_notes/her.pdf>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/her>
   - `paper` ["Universal Value Function Approximators"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#schaul-horgan-gregor-silver---universal-value-function-approximators) by Schaul et al. `summary`
 
@@ -2850,6 +2870,7 @@ hieves."
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Principled_Option_Learning_in_Markov_Decision_Processes.md>
 
 #### ["The Option-Critic Architecture"](http://arxiv.org/abs/1609.05140) Bacon, Harb, Precup
+>	"The Option-Critic introduces a new gradient update for learning options. It consists of two components: 1) each option should use primitive actions that are better, 2) find good termination conditions (lengthen when the option is good, terminate when it’s bad). A third term also encourages the meta-policy to take better options."  
   - `video` <https://youtube.com/watch?v=8r_EoYnPjGk> (Bacon)
   - `video` <https://vimeo.com/249559422> (Precup)
   - `video` <https://youtube.com/watch?v=ID150Tl-MMw&t=56m55s> (Abbeel)
@@ -2887,6 +2908,7 @@ hieves."
 #### ["Robust and Efficient Transfer Learning with Hidden Parameter Markov Decision Processes"](https://arxiv.org/abs/1706.06544) Killian, Daulton, Konidaris, Doshi-Velez
   `semantic representation`
 >	"A new framework for modeling families of related tasks using low-dimensional latent embeddings, which correctly models the joint uncertainty in the latent parameters and the state space."  
+>	"Define a new class of MDPs that includes a parameter θ which defines a parameterized transition function. Then, learning is done in the parameterized space; if the agent effectively learns the parameter, it can transfer knowledge to any MDP in the class."  
 
 #### ["Towards Deep Symbolic Reinforcement Learning"](http://arxiv.org/abs/1609.05518) Garnelo, Arulkumaran, Shanahan
   `semantic representation`
@@ -2913,6 +2935,7 @@ hieves."
 >	"The idea of having experts which can be used to train new agents through matching the output distributions was adapted for multitask reinforcement learning. Typically one gathers experience from expert policies, which are then used to train a student model using supervised learning. Consequently the focus has hitherto been on compression and teacher-matching, rather than the ultimate goal of reward maximisation. Although it is not explored in these papers, after performing distillation one could fine-tune the student policy using rewards. Kickstarting can be seen as a continuous version of such two-phase learning, with a focus on reward maximisation from the very beginning (which does not require arbitrary stopping criteria for any of the phases, as it is a joint optimisation problem)."  
 >	"The main idea is to employ an auxiliary loss function which encourages the student policy to be close to the teacher policy on the trajectories sampled by the student. Importantly, the weight of this loss in the overall learning objective is allowed to change over time, so that the student can gradually focus more on maximising rewards it receives from the environment, potentially surpassing the teacher (which might indeed have an architecture with less learning capacity). In multi-task problems, it is also straightforward to extend this approach to the case of multiple teachers, each of which is an expert on a particular task: in this case the student will learn from an appropriate teacher on each task using an analogous formulation."  
 >	"Our auxiliary loss can also be seen from the perspective of entropy regularisation. In the A3C method one adds the negated entropy H(πS(a|xt,ω)) as an auxiliary loss to encourage exploration. But minimisation of negated entropy is equivalent to minimising the KL divergence DKL(πS(a|xt,ω),U), where U is a uniform distribution over actions. Similarly the kickstarter loss is equivalent to the KL divergence between the teacher and the student policies. In this sense, the kickstarter loss can be seen as encouraging behaviour similar to the teacher, but just as entropy regularisation is not supposed to lead to convergence to a uniform policy, the goal of kickstarting is not to converge to the teacher’s policy. The aim of both is to provide a helpful auxiliary loss, based on what is a sensible behaviour – for the case of entropy regularization it is just sampling a random action, while for kickstarting it is following the teacher."  
+  - `notes` <https://yobibyte.github.io/files/paper_notes/Kickstarting_Deep_Reinforcement_Learning_Simon_Schmitt__Jonathan_J__Hudson__Augustin_Zidek_et_al___2018.pdf>
 
 #### ["Distral: Robust Multitask Reinforcement Learning"](https://arxiv.org/abs/1707.04175) Teh, Bapst, Czarnecki, Quan, Kirkpatrick, Hadsell, Heess, Pascanu
   `policy distillation`
@@ -3113,6 +3136,7 @@ hieves."
   - `video` <https://youtu.be/d9DlQSJQAoI?t=22m12s> (Finn)
   - `video` <http://videolectures.net/deeplearning2017_de_freitas_deep_control/#t=4183> (de Freitas)
   - `notes` <http://tsong.me/blog/gail/>
+  - `notes` <https://yobibyte.github.io/files/paper_notes/Generative_Adversarial_Imitation_Learning__Ho_Ermon__2017.pdf>
   - `code` <https://github.com/openai/imitation>
   - `code` <https://github.com/DanielTakeshi/rl_algorithms/tree/master/il>
 
@@ -3144,15 +3168,17 @@ hieves."
 ----
 #### ["Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments"](https://arxiv.org/abs/1706.02275) Lowe, Wu, Tamar, Harb, Abbeel, Mordatch
   `MADDPG`
->	"Uses learning rule from DDPG to learn a central off-policy critic based on Q-learning and uses certain gradient stimator to learn policies for each agent."  
+>	"Uses learning rule from DDPG to learn a central off-policy critic based on Q-learning and uses certain on-policy policy gradient estimator to learn policies for each agent."  
   - `post` <https://blog.openai.com/learning-to-cooperate-compete-and-communicate/>
   - `video` <https://youtube.com/watch?v=QCmBo91Wy64> (demo)
   - `code` <https://github.com/openai/maddpg>
   - `code` <https://github.com/openai/multiagent-particle-envs>
 
 #### ["Counterfactual Multi-Agent Policy Gradients"](https://arxiv.org/abs/1705.08926) Foerster, Farquhar, Afouras, Nardelli, Whiteson
+  `COMA`
 >	"One of the great challenges when training multi-agent policies is the credit assignment problem. Just like in a football team, the reward achieved depends on the actions of all of the different agents. Given that all agents are constantly improving their policies, it is difficult for any given agent to evaluate the impact of their individual action on the overall performance of the team."  
 >	"We evaluate COMA in the testbed of StarCraft unit micromanagement, using a decentralised variant with significant partial observability. COMA significantly improves average performance over other multi-agent actor-critic methods in this setting, and the best performing agents are competitive with state-of-the-art centralised controllers that get access to the full state."  
+>	"COMA uses a centralised critic to train decentralised actors, estimating a counterfactual advantage function for each agent in order to address multi-agent credit assignment. COMA learns a fully centralised state-action value function and then uses it to guide the optimisation of decentralised policies in an actor-critic framework. This requires on-policy learning, which can be sample-inefficient, and training the fully centralised critic becomes impractical when there are more than a handful of agents."  
   - `video` <https://youtube.com/watch?v=3OVvjE5B9LU> (Whiteson)
 
 #### ["Stabilising Experience Replay for Deep Multi-Agent Reinforcement Learning"](https://arxiv.org/abs/1702.08887) Foerster, Nardelli, Farquhar, Afouras, Torr, Kohli, Whiteson

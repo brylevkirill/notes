@@ -1556,7 +1556,7 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=6fKG4wJ7uBk> (Baudis)
   - `video` <https://youtube.com/watch?v=XuzIqE2IshY> (Kington)
   - `video` <https://youtube.com/watch?v=vC66XFoN4DE> (Raval)
-  - `video` <https://youtu.be/Lz5_xFGt2hA?t=3m11s> (Grinchuk) `in russian`
+  - `video` <https://youtu.be/V0HNXVSrvhg?t=1h20m45s> + <https://youtu.be/Lz5_xFGt2hA?t=3m11s> (Grinchuk) `in russian`
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
   - `video` <https://youtu.be/zHjE07NBA_o?t=1h10m24s> (Kozlov) `in russian`
   - `post` <http://inference.vc/alphago-zero-policy-improvement-and-vector-fields/>
@@ -1734,6 +1734,7 @@ interesting recent papers:
 
 
 #### ["Making Contextual Decisions with Low Technical Debt"](http://arxiv.org/abs/1606.03966) Agarwal et al.
+  `Microsoft Custom Decision Service`
 >	"Applications and systems are constantly faced with decisions that require picking from a set of actions based on contextual information. Reinforcement-based learning algorithms such as contextual bandits can be very effective in these settings, but applying them in practice is fraught with technical debt, and no general system exists that supports them completely. We address this and create the first general system for contextual learning, called the Decision Service. Existing systems often suffer from technical debt that arises from issues like incorrect data collection and weak debuggability, issues we systematically address through our ML methodology and system abstractions. The Decision Service enables all aspects of contextual bandit learning using four system abstractions which connect together in a loop: explore (the decision space), log, learn, and deploy. Notably, our new explore and log abstractions ensure the system produces correct, unbiased data, which our learner uses for online learning and to enable real-time safeguards, all in a fully reproducible manner. The Decision Service has a simple user interface and works with a variety of applications: we present two live production deployments for content recommendation that achieved click-through improvements of 25-30%, another with 18% revenue lift in the landing page, and ongoing applications in tech support and machine failure handling. The service makes real-time decisions and learns continuously and scalably, while significantly lowering technical debt."
 
 >	"We have presented the Decision Service: a powerful tool to support the complete data lifecycle, which automates many of the burdensome tasks that data scientists face such as gathering the right data and deploying in an appropriate manner. Instead, a data scientist can focus on more core tasks such as finding the right features, representation, or signal to optimize against. The data lifecycle support also makes basic application of the Decision Service feasible without a data scientist. To assist in lowering the barrier to entry, we are exploring techniques based on expert learning and hyperparameter search that may further automate the process. Since the policy evaluation techniques can provide accurate predictions of online performance, such automations are guaranteed to be statistically sound. We are also focusing on making the decision service easy to deploy and use because we believe this is key to goal of democratizing machine learning for everyone. The Decision Service can also naturally be extended to a greater variety of problems, all of which can benefit from data lifecycle support. Plausible extensions might address advanced variants like reinforcement and active learning, and simpler ones like supervised learning."
@@ -2547,6 +2548,7 @@ interesting recent papers:
   - `video` <https://yadi.sk/i/yBO0q4mI3GAxYd> (33:13) (Fritzler) `in russian`
   - `video` <https://youtu.be/fnwo3GCmyEo?t=26m29s> (Fritzler) `in russian`
   - `video` <https://youtu.be/mrgJ53TIcQc?t=25m43s> (Pavlov) `in russian`
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1511.05952>
   - `code` <https://github.com/higgsfield/RL-Adventure/blob/master/4.prioritized%20dqn.ipynb>
   - `code` <https://github.com/Kaixhin/Atari>
   - `code` <https://github.com/carpedm20/deep-rl-tensorflow>
@@ -2684,6 +2686,7 @@ interesting recent papers:
   - `post` <https://blog.openai.com/evolution-strategies/>
   - `video` <https://youtube.com/watch?v=SQtOI9jsrJ0> (Chen) `video`
   - `video` <https://youtube.com/watch?v=Rd0UdJFYkqI> (Temirchev) `in russian`
+  - `video` <https://youtube.com/watch?v=8jKC95KklT0> (Karazeev) `in russian`
   - `post` <http://inference.vc/evolutionary-strategies-embarrassingly-parallelizable-optimization/> (Huszar)
   - `post` <http://inference.vc/evolution-strategies-variational-optimisation-and-natural-es-2/> (Huszar)
   - `post` <http://davidbarber.github.io/blog/2017/04/03/variational-optimisation/> (Barber)
@@ -2974,6 +2977,7 @@ interesting recent papers:
   - `video` <https://youtu.be/d9DlQSJQAoI?t=22m12s> (Finn)
   - `video` <http://videolectures.net/deeplearning2017_de_freitas_deep_control/#t=4183> (de Freitas)
   - `notes` <http://tsong.me/blog/gail/>
+  - `notes` <https://yobibyte.github.io/files/paper_notes/Generative_Adversarial_Imitation_Learning__Ho_Ermon__2017.pdf>
   - `code` <https://github.com/openai/imitation>
   - `code` <https://github.com/DanielTakeshi/rl_algorithms/tree/master/il>
 

@@ -432,7 +432,7 @@
 
 ----
 
-  - [BayesDB](#probabilistic-database---bayes-db)
+  - [BayesDB](#probabilistic-database---bayesdb)
   - [Epistemological Database](#probabilistic-database---epistemological-database)
   - [Markov Logic Network](#probabilistic-database---markov-logic-network)
   - [Probabilistic Soft Logic](#probabilistic-database---probabilistic-soft-logic)
@@ -445,6 +445,7 @@
   [BayesDB](http://probcomp.org/bayesdb/) project
 
   [overview](https://youtube.com/watch?v=-8QMqSWU76Q) by Vikash Mansinghka `video`  
+  [overview](https://youtu.be/Rte-y6ThwAQ?t=17m33s) by Vikash Mansinghka `video`  
   ["BayesDB: Query the Probable Implications of Data"](https://youtube.com/watch?v=7_m7JCLKmTY) by Richard Tibbetts `video`  
 
 
@@ -1796,6 +1797,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
   `using web search engine`
 >	"We frame Question Answering as a Reinforcement Learning task, an approach that we call Active Question Answering. We propose an agent that sits between the user and a black box question-answering system and which learns to reformulate questions to elicit the best possible answers. The agent probes the system with, potentially many, natural languagere formulations of an initial question and aggregates the returned evidence to yield the best answer. The reformulation system is trained end-to-end to maximize answer quality using policy gradient. We evaluate on SearchQA, a dataset of complex questions extracted from Jeopardy!. Our agent improves F1 by 11% over a state-of-the-art base model that uses the original question/answer pairs."
 
+  - `video` <https://facebook.com/iclr.cc/videos/2125495797479475> (1:03:56) (Bulian, Houlsby)
   - `video` <https://youtu.be/soZXAH3leeQ?t=34m43s> (Cho)
 
 

@@ -49,6 +49,7 @@
 
 ---
 
+  challenges:
   - full text document retrieval, passage retrieval, question answering
   - web search, searching social media, distributed information retrieval, entity ranking
   - learning to rank combined with neural network based representation learning
@@ -83,15 +84,15 @@
 
 ----
 
+#### ["Neural Information Retrieval: at the End of the Early Years"](https://link.springer.com/content/pdf/10.1007%2Fs10791-017-9321-y.pdf) Onal et al.
+>	"In this paper, we survey the current landscape of Neural IR research, paying special attention to the use of learned distributed representations of textual units. We highlight the successes of neural IR thus far, catalog obstacles to its wider adoption, and suggest potentially promising directions for future research."
+
+
 #### ["Neural Models for Information Retrieval"](https://arxiv.org/abs/1705.01509) Mitra, Craswell
 >	"Neural ranking models for information retrieval use shallow or deep neural networks to rank search results in response to a query. Traditional learning to rank models employ machine learning techniques over hand-crafted IR features. By contrast, neural models learn representations of language from raw text that can bridge the gap between query and document vocabulary. Unlike classical IR models, these new machine learning based approaches are data-hungry, requiring large scale training data before they can be deployed. This tutorial introduces basic concepts and intuitions behind neural IR models, and places them in the context of traditional retrieval models. We begin by introducing fundamental concepts of IR and different neural and non-neural approaches to learning vector representations of text. We then review shallow neural IR methods that employ pre-trained neural term embeddings without learning the IR task end-to-end. We introduce deep neural networks next, discussing popular deep architectures. Finally, we review the current DNN models for information retrieval. We conclude with a discussion on potential future directions for neural IR."
 
   - `video` <https://youtube.com/watch?v=g1Pgo5yTIKg> (Mitra)
   - `slides` <https://slideshare.net/BhaskarMitra3/neural-text-embeddings-for-information-retrieval-wsdm-2017>
-
-
-#### ["Neural Information Retrieval: A Literature Review"](https://arxiv.org/abs/1611.06792) Zhang et al.
->	"A recent "third wave" of Neural Network approaches now delivers state-of-the-art performance in many machine learning tasks, spanning speech recognition, computer vision, and natural language processing. Because these modern NNs often comprise multiple interconnected layers, this new NN research is often referred to as deep learning. Stemming from this tide of NN work, a number of researchers have recently begun to investigate NN approaches to Information Retrieval. While deep NNs have yet to achieve the same level of success in IR as seen in other areas, the recent surge of interest and work in NNs for IR suggest that this state of affairs may be quickly changing. In this work, we survey the current landscape of Neural IR research, paying special attention to the use of learned representations of queries and documents (i.e., neural embeddings). We highlight the successes of neural IR thus far, catalog obstacles to its wider adoption, and suggest potentially promising directions for future research."
 
 
 
@@ -104,7 +105,7 @@
 
 
 #### ["Learning to Rank using Gradient Descent"](http://icml.cc/2015/wp-content/uploads/2015/06/icml_ranking.pdf) Burges et al.
-  `RankNet`
+  `learning to rank using relevance labels` `RankNet`
 >	"We investigate using gradient descent methods for learning ranking functions; we propose a simple probabilistic cost function, and we introduce RankNet, an implementation of these ideas using a neural network to model the underlying ranking function. We present test results on toy data and on data from a commercial internet search engine."
 
 >	"We have proposed a probabilistic cost for training systems to learn ranking functions using pairs of training examples. The approach can be used for any differentiable function; we explored using a neural network formulation, RankNet. RankNet is simple to train and gives excellent performance on a real world ranking problem with large amounts of data. Comparing the linear RankNet with other linear systems clearly demonstrates the benefit of using our pair-based cost function together with gradient descent; the two layer net gives further improvement. For future work it will be interesting to investigate extending the approach to using other machine learning methods for the ranking function; however evaluation speed and simplicity is a critical constraint for such systems."
@@ -114,7 +115,7 @@
 
 
 #### ["Learning to Rank with Nonsmooth Cost Functions"](https://papers.nips.cc/paper/2971-learning-to-rank-with-nonsmooth-cost-functions) Burges et al.
-  `LambdaRank`
+  `learning to rank using relevance labels` `LambdaRank`
 >	"The quality measures used in information retrieval are particularly difficult to optimize directly, since they depend on the model scores only through the sorted order of the documents returned for a given query. Thus, the derivatives of the cost with respect to the model parameters are either zero, or are undefined. In this paper, we propose a class of simple, flexible algorithms, called LambdaRank, which avoids these difficulties by working with implicit cost functions. We describe LambdaRank using neural network models, although the idea applies to any differentiable function class. We give necessary and sufficient conditions for the resulting implicit cost function to be convex, and we show that the general method has a simple mechanical interpretation. We demonstrate significantly improved accuracy, over a state-of-the-art ranking algorithm, on several datasets. We also show that LambdaRank provides a method for significantly speeding up the training phase of that ranking algorithm. Although this paper is directed towards ranking, the proposed method can be extended to any non-smooth and multivariate cost functions."
 
 ----
@@ -125,7 +126,7 @@
 
 
 #### ["From RankNet to LambdaRank to LambdaMART: An Overview"](https://www.microsoft.com/en-us/research/publication/from-ranknet-to-lambdarank-to-lambdamart-an-overview/) Burges
-  `LambdaMART`
+  `learning to rank using relevance labels` `LambdaMART`
 >	"LambdaMART is the boosted tree version of LambdaRank, which is based on RankNet. RankNet, LambdaRank, and LambdaMART have proven to be very successful algorithms for solving real world ranking problems: for example an ensemble of LambdaMART rankers won Track 1 of the 2010 Yahoo! Learning To Rank Challenge. The details of these algorithms are spread across several papers and reports, and so here we give a self-contained, detailed and complete description of them."
 
 ----
@@ -141,32 +142,37 @@
 
 
 #### ["An Efficient Boosting Algorithm for Combining Preferences"](http://jmlr.org/papers/volume4/freund03a/freund03a.pdf) Freund, Iyer, Schapire, Singer
-  `RankBoost`
+  `learning to rank using relevance labels` `RankBoost`
 >	"We study the problem of learning to accurately rank a set of objects by combining a given collection of ranking or preference functions. This problem of combining preferences arises in several applications, such as that of combining the results of different search engines, or the "collaborative-filtering" problem of ranking movies for a user based on the movie rankings provided by other users. In this work, we begin by presenting a formal framework for this general problem. We then describe and analyze an efficient algorithm called RankBoost for combining preferences based on the boosting approach to machine learning. We give theoretical results describing the algorithm's behavior both on the training data, and on new test data not seen during training. We also describe an efficient implementation of the algorithm for a particular restricted but common case. We next discuss two experiments we carried out to assess the performance of RankBoost. In the first experiment, we used the algorithm to combine different web search strategies, each of which is a query expansion for a given domain. The second experiment is a collaborative-filtering task for making movie recommendations."
 
   - `video` <https://youtu.be/3R6vBd_Y8O4?t=42m13s> (Nikolenko) `in russian`
 
 
 #### ["Neural Ranking Models with Weak Supervision"](https://arxiv.org/abs/1704.08803) Dehghani, Zamani, Severyn, Kamps, Croft
-  `click model`
+  `learning to rank using click data`
 >	"Despite the impressive improvements achieved by unsupervised deep neural networks in computer vision and NLP tasks, such improvements have not yet been observed in ranking for information retrieval. The reason may be the complexity of the ranking problem, as it is not obvious how to learn from queries and documents when no supervised signal is available. Hence, in this paper, we propose to train a neural ranking model using weak supervision, where labels are obtained automatically without human annotators or any external resources (e.g., click data). To this aim, we use the output of an unsupervised ranking model, such as BM25, as a weak supervision signal. We further train a set of simple yet effective ranking models based on feed-forward neural networks. We study their effectiveness under various learning scenarios (point-wise and pair-wise models) and using different input representations (i.e., from encoding query-document pairs into dense/sparse vectors to using word embedding representation). We train our networks using tens of millions of training instances and evaluate it on two standard collections: a homogeneous news collection (Robust) and a heterogeneous large-scale web collection (ClueWeb). Our experiments indicate that employing proper objective functions and letting the networks to learn the input representation based on weakly supervised data leads to impressive performance, with over 13% and 35% MAP improvements over the BM25 model on the Robust and the ClueWeb collections. Our findings also suggest that supervised neural ranking models can greatly benefit from pre-training on large amounts of weakly labeled data that can be easily obtained from unsupervised IR models."
 
 
-#### ["A Neural Click Model for Web Search"](http://www2016.net/proceedings/proceedings/p531.pdf) Borisov, Markov, Rijke, Serdyukov
-  `click model`
->	"Understanding user browsing behavior in web search is key to improving web search effectiveness. Many click models have been proposed to explain or predict user clicks on search engine results. They are based on the probabilistic graphical model (PGM) framework, in which user behavior is represented as a sequence of observable and hidden events. The PGM framework provides a mathematically solid way to reason about a set of events given some information about other events. But the structure of the dependencies between the events has to be set manually. Different click models use different hand-crafted sets of dependencies. We propose an alternative based on the idea of distributed representations: to represent the user’s information need and the information available to the user with a vector state. The components of the vector state are learned to represent concepts that are useful for modeling user behavior. And user behavior is modeled as a sequence of vector states associated with a query session: the vector state is initialized with a query, and then iteratively updated based on information about interactions with the search engine results. This approach allows us to directly understand user browsing behavior from click-through data, i.e., without the need for a predefined set of rules as is customary for PGM-based click models. We illustrate our approach using a set of neural click models. Our experimental results show that the neural click model that uses the same training data as traditional PGM-based click models, has better performance on the click prediction task (i.e., predicting user click on search engine results) and the relevance prediction task (i.e., ranking documents by their relevance to a query). An analysis of the best performing neural click model shows that it learns similar concepts to those used in traditional click models, and that it also learns other concepts that cannot be designed manually."
-
-
 #### ["Gathering Additional Feedback on Search Results by Multi-Armed Bandits with Respect to Production Ranking"](http://www.www2015.it/documents/proceedings/proceedings/p1177.pdf) Vorobev, Lefortier, Gusev, Serdyukov
-  `online learning to rank`
+  `online learning to rank using click data` `BBRA`
 >	"Given a repeatedly issued query and a document with a not-yet-confirmed potential to satisfy the users’ needs, a search system should place this document on a high position in order to gather user feedback and obtain a more confident estimate of the document utility. On the other hand, the main objective of the search system is to maximize expected user satisfaction over a rather long period, what requires showing more relevant documents on average. The state-of-the-art approaches to solving this exploration-exploitation dilemma rely on strongly simplified settings making these approaches infeasible in practice. We improve the most flexible and pragmatic of them to handle some actual practical issues. The first one is utilizing prior information about queries and documents, the second is combining bandit-based learning approaches with a default production ranking algorithm. We show experimentally that our framework enables to significantly improve the ranking of a leading commercial search engine."
 
 
 #### ["Online Learning to Rank in Stochastic Click Models"](https://arxiv.org/abs/1703.02527) Zoghi, Tunys, Ghavamzadeh, Kveton, Szepesvari, Wen
-  `online learning to rank with unknown rewards`
+  `online learning to rank using click data` `BatchRank`
 >	"Online learning to rank is a core problem in information retrieval and machine learning. Many provably efficient algorithms have been recently proposed for this problem in specific click models. The click model is a model of how the user interacts with a list of documents. Though these results are significant, their impact on practice is limited, because all proposed algorithms are designed for specific click models and lack convergence guarantees in other models. In this work, we propose BatchRank, the first online learning to rank algorithm for a broad class of click models. The class encompasses two most fundamental click models, the cascade and position-based models. We derive a gap-dependent upper bound on the T-step regret of BatchRank and evaluate it on a range of web search queries. We observe that BatchRank outperforms ranked bandits and is more robust than CascadeKL-UCB, an existing algorithm for the cascade model."
 
   - `video` <https://youtu.be/__En7H2awqM?t=24m21s> (Szepesvari)
+
+
+#### ["A Neural Click Model for Web Search"](http://www2016.net/proceedings/proceedings/p531.pdf) Borisov, Markov, Rijke, Serdyukov
+  `click prediction`
+>	"Understanding user browsing behavior in web search is key to improving web search effectiveness. Many click models have been proposed to explain or predict user clicks on search engine results. They are based on the probabilistic graphical model (PGM) framework, in which user behavior is represented as a sequence of observable and hidden events. The PGM framework provides a mathematically solid way to reason about a set of events given some information about other events. But the structure of the dependencies between the events has to be set manually. Different click models use different hand-crafted sets of dependencies. We propose an alternative based on the idea of distributed representations: to represent the user’s information need and the information available to the user with a vector state. The components of the vector state are learned to represent concepts that are useful for modeling user behavior. And user behavior is modeled as a sequence of vector states associated with a query session: the vector state is initialized with a query, and then iteratively updated based on information about interactions with the search engine results. This approach allows us to directly understand user browsing behavior from click-through data, i.e., without the need for a predefined set of rules as is customary for PGM-based click models. We illustrate our approach using a set of neural click models. Our experimental results show that the neural click model that uses the same training data as traditional PGM-based click models, has better performance on the click prediction task (i.e., predicting user click on search engine results) and the relevance prediction task (i.e., ranking documents by their relevance to a query). An analysis of the best performing neural click model shows that it learns similar concepts to those used in traditional click models, and that it also learns other concepts that cannot be designed manually."
+
+
+#### ["A Click Sequence Model for Web Search"](https://arxiv.org/abs/1805.03411) Borisov, Wardenaar, Markov, Rijke
+  `click prediction`
+>	"Getting a better understanding of user behavior is important for advancing information retrieval systems. Existing work focuses on modeling and predicting single interaction events, such as clicks. In this paper, we for the first time focus on modeling and predicting sequences of interaction events. And in particular, sequences of clicks. We formulate the problem of click sequence prediction and propose a click sequence model (CSM) that aims to predict the order in which a user will interact with search engine results. CSM is based on a neural network that follows the encoder-decoder architecture. The encoder computes contextual embeddings of the results. The decoder predicts the sequence of positions of the clicked results. It uses an attention mechanism to extract necessary information about the results at each timestep. We optimize the parameters of CSM by maximizing the likelihood of observed click sequences. We test the effectiveness of CSM on three new tasks: (i) predicting click sequences, (ii) predicting the number of clicks, and (iii) predicting whether or not a user will interact with the results in the order these results are presented on a search engine result page (SERP). Also, we show that CSM achieves state-of-the-art results on a standard click prediction task, where the goal is to predict an unordered set of results a user will click on."
 
 
 

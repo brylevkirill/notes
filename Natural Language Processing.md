@@ -18,6 +18,7 @@
     - [text embeddings](#interesting-papers---text-embeddings)
     - [syntactic parsing](#interesting-papers---syntactic-parsing)
     - [text classification](#interesting-papers---text-classification)
+    - [topic modeling](#interesting-papers---topic-modeling)
     - [text summarization](#interesting-papers---text-summarization)
     - [coreference resolution](#interesting-papers---coreference-resolution)
 
@@ -274,6 +275,7 @@
   - [text embeddings](#interesting-papers---text-embeddings)
   - [syntactic parsing](#interesting-papers---syntactic-parsing)
   - [text classification](#interesting-papers---text-classification)
+  - [topic modeling](#interesting-papers---topic-modeling)
   - [text summarization](#interesting-papers---text-summarization)
   - [coreference resolution](#interesting-papers---coreference-resolution)
 
@@ -963,6 +965,30 @@
 
 ----
 >	"sentence-level and entity-level sentiment classification learned from text-level classification"
+
+
+
+---
+### interesting papers - topic modeling
+
+
+#### ["Discovering Discrete Latent Topics with Neural Variational Inference"](https://arxiv.org/abs/1706.00359) Miao, Grefenstette, Blunsom
+>	"Topic models have been widely explored as probabilistic generative models of documents. Traditional inference methods have sought closed-form derivations for updating the models, however as the expressiveness of these models grows, so does the difficulty of performing fast and accurate inference over their parameters. This paper presents alternative neural approaches to topic modelling by providing parameterisable distributions over topics which permit training by backpropagation in the framework of neural variational inference. In addition, with the help of a stick-breaking construction, we propose a recurrent network that is able to discover a notionally unbounded number of topics, analogous to Bayesian non-parametric topic models. Experimental results on the MXM Song Lyrics, 20NewsGroups and Reuters News datasets demonstrate the effectiveness and efficiency of these neural topic models."
+
+  - `video` <https://vimeo.com/238222598> (Miao)
+
+
+#### ["Additive Regularization of Topic Models"](https://link.springer.com/article/10.1007/s10994-014-5476-6) Vorontsov, Potapenko
+  `ARTM`
+>	"Probabilistic topic modeling of text collections has been recently developed mainly within the framework of graphical models and Bayesian inference. In this paper we introduce an alternative semi-probabilistic approach, which we call additive regularization of topic models (ARTM). Instead of building a purely probabilistic generative model of text we regularize an ill-posed problem of stochastic matrix factorization by maximizing a weighted sum of the log-likelihood and additional criteria. This approach enables us to combine probabilistic assumptions with linguistic and problem-specific requirements in a single multi-objective topic model. In the theoretical part of the work we derive the regularized EM-algorithm and provide a pool of regularizers, which can be applied together in any combination. We show that many models previously developed within Bayesian framework can be inferred easier within ARTM and in some cases generalized. In the experimental part we show that a combination of sparsing, smoothing, and decorrelation improves several quality measures at once with almost no loss of the likelihood."
+
+  - `video` <https://youtube.com/watch?v=00qF2yMuRkQ> (Vorontsov)
+  - `video` <https://youtu.be/3Lxb-DqPtv4?t=1h45m9s> (Vorontsov) `in russian`
+  - `video` <https://youtube.com/watch?v=eJzNAhsbQNI> (Vorontsov) `in russian`
+  - `video` <https://youtube.com/watch?v=Y7lGYjJ7TR8> (Ianina) `in russian`
+  - `paper` ["Fast and Modular Regularized Topic Modelling"](https://fruct.org/publications/fruct21/files/Koc.pdf) by Kochedykov et al.
+  - `paper` <http://www.machinelearning.ru/wiki/images/d/d5/Voron17survey-artm.pdf> by Vorontsov `in russian`
+  - `code` <https://github.com/bigartm/bigartm>
 
 
 

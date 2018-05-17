@@ -1416,6 +1416,7 @@ Yoshua Bengio:
 
   - `video` <https://youtube.com/watch?v=jmMsNQ2eug4> (Schulman)
   - `video` <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724> (Abbeel)
+  - `notes` <https://yobibyte.github.io/files/paper_notes/scg.pdf>
   - `paper` ["Optimizing Expectations: From Deep Reinforcement Learning to Stochastic Computation Graphs"](http://joschu.net/docs/thesis.pdf) by Schulman
 
 
