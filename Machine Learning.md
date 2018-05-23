@@ -29,6 +29,7 @@
   [artificial intelligence](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md)  
   [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
   [natural language processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md)  
+  [recommender systems](https://github.com/brylevkirill/notes/blob/master/Recommender%20Systems.md)  
   [information retrieval](https://github.com/brylevkirill/notes/blob/master/Information%20Retrieval.md)  
 
 
@@ -140,11 +141,11 @@
 
 #### news and discussions
 
-  <https://jack-clark.net/import-ai/>  
+  <https://jack-clark.net/import-ai>  
+  <https://newsletter.ruder.io>  
   <https://www.getrevue.co/profile/wildml>  
-  <https://deeplearningweekly.com>  
 
-  <https://reddit.com/r/MachineLearning/>  
+  <https://reddit.com/r/MachineLearning>
 
 
 #### conferences

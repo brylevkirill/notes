@@ -232,8 +232,10 @@
 ---
 ### information extraction and integration
 
-  ["Knowledge Graph Construction From Text"](https://kgtutorial.github.io/?hootPostID=a5af9fab7ef1fb922ef7135a2e6d4f14) tutorial by Jay Pujara, Sameer Singh, Bhavana Dalvi  
-  ["Constructing and Mining Web-Scale Knowledge Graphs"](http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs) tutorial by Evgeniy Gabrilovich and Antoine Bordes `video`  
+  ["Knowledge Graph Construction From Text"](https://kgtutorial.github.io/?hootPostID=a5af9fab7ef1fb922ef7135a2e6d4f14) tutorial by Jay Pujara, Sameer Singh, Bhavana Dalvi `slides`  
+  ["Constructing and Mining Web-scale Knowledge Graphs"](http://www.cs.technion.ac.il/~gabr/publications/papers/SIGIR-2016-KG-tutorial.pdf) tutorial by Evgeniy Gabrilovich and Nicolas Usunier `slides`  
+
+  ["Constructing and Mining Web-Scale Knowledge Graphs"](http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs) tutorial by Evgeniy Gabrilovich and Antoine Bordes `video`
 
 ----
 

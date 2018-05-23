@@ -137,6 +137,7 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=ekUWO_pI2M8> (Tishby)
   - `video` <https://youtu.be/RKvS958AqGY?t=12m7s> (Tishby)
   - `video` <https://youtu.be/cHjI37DsQCQ?t=41m40s> (Selvaraj)
+  - `post` <https://lilianweng.github.io/lil-log/2017/09/28/anatomize-deep-learning-with-information-theory.html>
   - `post` <https://weberna.github.io/jekyll/update/2017/11/08/Information-Bottleneck-Part1.html>
   - `post` <http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/>
   - `post` <https://medium.com/intuitionmachine/the-peculiar-behavior-of-deep-learning-loss-surfaces-330cb741ec17>
@@ -453,11 +454,6 @@ interesting older papers:
   - `notes` <http://artem.sobolev.name/posts/2016-07-14-neural-variational-importance-weighted-autoencoders.html>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/MnihR16>
 
-#### ["Tighter Variational Bounds are Not Necessarily Better"](https://arxiv.org/abs/1802.04537) Rainforth, Kosiorek, Le, Maddison, Igl, Wood, Teh
-  `variational inference` `posterior approximation`
->	"We provide theoretical and empirical evidence that using tighter evidence lower bounds can be detrimental to the process of learning an inference network by reducing the signal-to-noise ratio of the gradient estimator. Our results call into question common implicit assumptions that tighter ELBOs are better variational objectives for simultaneous model learning and inference amortization schemes."  
-  - `post` <http://akosiorek.github.io/ml/2018/03/14/what_is_wrong_with_vaes.html>
-
 #### ["Importance Weighted Autoencoders"](http://arxiv.org/abs/1509.00519) Burda, Grosse, Salakhutdinov
   `variational inference` `posterior approximation`
 >	"As we show empirically, the VAE objective can lead to overly simplified representations which fail to use the network's entire modeling capacity. We present the importance weighted autoencoder, a generative model with the same architecture as the VAE, but which uses a strictly tighter log-likelihood lower bound derived from importance weighting. In the IWAE, the recognition network uses multiple samples to approximate the posterior, giving it increased flexibility to model complex posteriors which do not fit the VAE modeling assumptions."  
@@ -471,10 +467,6 @@ interesting older papers:
   - `code` <https://github.com/blei-lab/edward/blob/master/examples/iwvi.py>
 
 ----
-#### ["Stochastic Gradient Estimation With Finite Differences"](http://approximateinference.org/accepted/BuesingEtAl2016.pdf) Buesing, Weber, Mohamed
-  `variables with discrete distributions` `non-differentiable loss`
->	"If the loss is non-differentiable, as is the case in reinforcement learning, or if the distribution is discrete, as for probabilistic models with discrete latent variables, we have to resort to score-function (SF) gradient estimators. Naive SF estimators have high variance and therefore require sophisticated variance reduction techniques, such as baseline models, to render them effective in practice. Here we show that under certain symmetry and parametric assumptions on the distribution, one can derive unbiased stochastic gradient estimators based on finite differences (FD) of the loss function. These estimators do not require learning baseline models and potentially have less variance. Furthermore, we highlight connections of the FD estimators to simultaneous perturbation sensitivity analysis (SPSA), as well as weak derivative and “straight-through” gradient estimators."
-
 #### ["Backpropagation through the Void: Optimizing Control Variates for Black-box Gradient Estimation"](https://arxiv.org/abs/1711.00123) Grathwohl, Choi, Wu, Roeder, Duvenaud
   `variables with discrete distributions` `non-differentiable loss` `RELAX`
 >	"We generalize REBAR to learn a free-form control variate parameterized by a neural network, giving a lower-variance, unbiased gradient estimator which can be applied to a wider variety of problems with greater flexibility. Most notably, our method is applicable even when no continuous relaxation is available, as in reinforcement learning or black box function optimization. Furthermore, we derive improved variants of popular reinforcement learning methods with unbiased, action-dependent gradient estimates and lower variance."  
@@ -496,7 +488,8 @@ interesting older papers:
   - `code` <https://github.com/tensorflow/models/tree/master/research/rebar>
   - `code` <https://github.com/Bonnevie/rebar>
 
-#### ["The Concrete Distribution: A Continuous Relaxation of Discrete Random Variables"](http://arxiv.org/abs/1611.00712) Maddison, Mnih, Teh + ["Categorical Reparametrization with Gumbel-Softmax"](http://arxiv.org/abs/1611.01144) Jang, Gu, Poole
+#### ["The Concrete Distribution: A Continuous Relaxation of Discrete Random Variables"](http://arxiv.org/abs/1611.00712) Maddison, Mnih, Teh
+["Categorical Reparametrization with Gumbel-Softmax"](http://arxiv.org/abs/1611.01144) Jang, Gu, Poole
   `variables with discrete distributions`
 >	"Continuous reparemetrisation based on the so-called Concrete or Gumbel-softmax distribution, which is a continuous distribution and has a temperature constant that can be annealed during training to converge to a discrete distribution in the limit. In the beginning of training the variance of the gradients is low but biased, and towards the end of training the variance becomes high but unbiased."  
 >	"Doesn't close the performance gap of VAEs with continuous latent variables where one can use the Gaussian reparameterisation trick which benefits from much lower variance in the gradients."  
@@ -1167,6 +1160,7 @@ interesting older papers:
 #### ["Generative Models of Visually Grounded Imagination"](https://arxiv.org/abs/1705.10762) Vedantam, Fischer, Huang, Murphy
   `concept learning`
 >	"Consider how easy it is for people to imagine what a "purple hippo" would look like, even though they do not exist. If we instead said "purple hippo with wings", they could just as easily create a different internal mental representation, to represent this more specific concept. To assess whether the person has correctly understood the concept, we can ask them to draw a few sketches, to illustrate their thoughts. We call the ability to map text descriptions of concepts to latent representations and then to images (or vice versa) visually grounded semantic imagination. We propose a latent variable model for images and attributes, based on variational auto-encoders, which can perform this task. Our method uses a novel training objective, and a novel product-of-experts inference network, which can handle partially specified (abstract) concepts in a principled and efficient way."  
+  - `video` <https://youtu.be/CoXE5DhTX-A?t=35m46s> (Murphy)
   - `video` <https://youtu.be/IyP1pxgM_eE?t=1h5m14s> (Murphy)
   - `code` <https://github.com/google/joint_vae>
 
@@ -1379,6 +1373,10 @@ interesting older papers:
 [interesting recent papers - generative models](#generative-models)
 
 ----
+#### ["Neural Autoregressive Flows"](https://arxiv.org/abs/1804.00779) Huang, Krueger, Lacoste, Courville
+>	"NAF unifies and generalizes MAF and IAF, replacing the (conditionally) affine univariate transformations of MAF/IAF with a more general class of invertible univariate transformations expressed as monotonic neural networks. We demonstrate that NAFs are universal approximators for continuous probability distributions, and their greater expressivity allows them to better capture multimodal target distributions."  
+  - `code` <https://github.com/CW-Huang/NAF>
+
 #### ["Masked Autoregressive Flow for Density Estimation"](https://arxiv.org/abs/1705.07057) Papamakarios, Pavlakou, Murray
 >	"We describe an approach for increasing the flexibility of an autoregressive model, based on modelling the random numbers that the model uses internally when generating data. By constructing a stack of autoregressive models, each modelling the random numbers of the next model in the stack, we obtain a type of normalizing flow suitable for density estimation. This type of flow is closely related to Inverse Autoregressive Flow and is a generalization of Real NVP."  
 >	"MAF:  
@@ -1529,6 +1527,7 @@ interesting older papers:
   - `post` <https://paper.dropbox.com/doc/Wasserstein-GAN-GvU0p2V9ThzdwY3BbhoP7>
   - `post` <http://wiseodd.github.io/techblog/2017/02/04/wasserstein-gan/>
   - `post` <https://vincentherrmann.github.io/blog/wasserstein/>
+  - `post` <https://lilianweng.github.io/lil-log/2017/08/20/from-GAN-to-WGAN.html>
   - `notes` <https://casmls.github.io/general/2017/02/23/modified-gans.html>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1701.07875>
   - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/wasserstein-generative-adversarial-networks/> `in russian`
@@ -1662,11 +1661,15 @@ interesting older papers:
 [interesting recent papers - unsupervised learning](#unsupervised-learning)  
 
 ----
+#### ["Tighter Variational Bounds are Not Necessarily Better"](https://arxiv.org/abs/1802.04537) Rainforth, Kosiorek, Le, Maddison, Igl, Wood, Teh
+>	"We provide theoretical and empirical evidence that using tighter evidence lower bounds can be detrimental to the process of learning an inference network by reducing the signal-to-noise ratio of the gradient estimator. Our results call into question common implicit assumptions that tighter ELBOs are better variational objectives for simultaneous model learning and inference amortization schemes."  
+  - `post` <http://akosiorek.github.io/ml/2018/03/14/what_is_wrong_with_vaes.html>
+
 #### ["Inference Suboptimality in Variational Autoencoders"](https://arxiv.org/abs/1801.03558) Cremer, Li, Duvenaud
 >	"The quality of posterior inference is largely determined by two factors: a) the ability of the variational distribution to model the true posterior and b) the capacity of the recognition network to generalize inference over all datapoints. We find that suboptimal inference is often due to amortizing inference rather than the limited complexity of the approximating distribution. We show that this is due partly to the generator learning to accommodate the choice of approximation. Furthermore, we show that the parameters used to increase the expressiveness of the approximation play a role in generalizing inference rather than simply improving the complexity of the approximation."  
 
-#### ["An Information-Theoretic Analysis of Deep Latent-Variable Models"](https://arxiv.org/abs/1711.00464) Alemi, Poole, Fischer, Dillon, Saurous, Murphy
->	"We present an information-theoretic framework for understanding trade-offs in unsupervised learning of deep latent-variables models using variational inference. This framework emphasizes the need to consider latent-variable models along two dimensions: the ability to reconstruct inputs (distortion) and the communication cost (rate). We derive the optimal frontier of generative models in the two-dimensional rate-distortion plane, and show how the standard evidence lower bound objective is insufficient to select between points along this frontier. However, by performing targeted optimization to learn generative models with different rates, we are able to learn many models that can achieve similar generative performance but make vastly different trade-offs in terms of the usage of the latent variable."  
+#### ["Fixing a Broken ELBO"](https://arxiv.org/abs/1711.00464) Alemi, Poole, Fischer, Dillon, Saurous, Murphy
+>	"Fitting deep directed latent-variable models by maximizing the marginal likelihood or evidence is typically intractable, thus a common approximation is to maximize the evidence lower bound (ELBO) instead. However, maximum likelihood training (whether exact or approximate) does not necessarily result in a good latent representation, as we demonstrate both theoretically and empirically. In particular, we derive variational lower and upper bounds on the mutual information between the input and the latent variable, and use these bounds to derive a rate-distortion curve that characterizes the tradeoff between compression and reconstruction accuracy. Using this framework, we demonstrate that there is a family of models with identical ELBO, but different quantitative and qualitative characteristics. Our framework also suggests a simple new method to ensure that latent variable models with powerful stochastic decoders do not ignore their latent code."  
 >	"We have motivated the β-VAE objective on information theoretic grounds, and demonstrated that comparing model architectures in terms of the rate-distortion plot offers a much better look at their performance and tradeoffs than simply comparing their marginal log likelihoods."  
 
 ----
@@ -2526,6 +2529,10 @@ interesting older papers:
 [interesting older papers - artificial curiosity and creativity](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#interesting-papers---artificial-curiosity-and-creativity)  
 
 ----
+#### ["The Uncertainty Bellman Equation and Exploration"](https://arxiv.org/abs/1709.05380) O'Donoghue, Osband, Munos, Mnih
+  `exploration guided by uncertainty in value function`
+>	"We consider uncertainty Bellman equation which connects the uncertainty at any time-step to the expected uncertainties at subsequent time-steps, thereby extending the potential exploratory benefit of a policy beyond individual time-steps. We prove that the unique fixed point of the UBE yields an upper bound on the variance of the estimated value of any fixed policy. This bound can be much tighter than traditional count-based bonuses that compound standard deviation rather than variance. Importantly, and unlike several existing approaches to optimism, this method scales naturally to large systems with complex generalization."  
+
 #### ["Contextual Decision Processes with Low Bellman Rank are PAC-Learnable"](https://arxiv.org/abs/1610.09512) Jiang, Krishnamurthy, Agarwal, Langford, Schapire
   `provably correct and sample efficient exploration`
 >	"This paper studies systematic exploration for reinforcement learning with rich observations and function approximation. We introduce a new model called contextual decision processes, that unifies and generalizes most prior settings. Our first contribution is a complexity measure, the Bellman rank, that we show enables tractable learning of near-optimal behavior in these processes and is naturally small for many well-studied reinforcement learning settings. Our second contribution is a new reinforcement learning algorithm that engages in systematic exploration to learn contextual decision processes with low Bellman rank. Our algorithm provably learns near-optimal behavior with a number of samples that is polynomial in all relevant parameters but independent of the number of unique observations. The approach uses Bellman error minimization with optimistic exploration and provides new insights into efficient exploration for reinforcement learning with function approximation."  
@@ -2537,10 +2544,6 @@ interesting older papers:
   - `video` <https://vimeo.com/238228755> (Jiang)
   - `video` <https://youtube.com/watch?v=L5Q4Y3omnrY> (Agarwal)
   - `video` <https://vimeo.com/235929810> (Schapire)
-
-#### ["The Uncertainty Bellman Equation and Exploration"](https://arxiv.org/abs/1709.05380) O'Donoghue, Osband, Munos, Mnih
-  `exploration guided by uncertainty in value function`
->	"We consider uncertainty Bellman equation which connects the uncertainty at any time-step to the expected uncertainties at subsequent time-steps, thereby extending the potential exploratory benefit of a policy beyond individual time-steps. We prove that the unique fixed point of the UBE yields an upper bound on the variance of the estimated value of any fixed policy. This bound can be much tighter than traditional count-based bonuses that compound standard deviation rather than variance. Importantly, and unlike several existing approaches to optimism, this method scales naturally to large systems with complex generalization."  
 
 ----
 #### ["Evolved Policy Gradients"](https://arxiv.org/abs/1802.04821) Houthooft, Chen, Isola, Stadie, Wolski, Ho, Abbeel
@@ -2823,6 +2826,8 @@ hieves."
 >	"SNN approach maximizes the mutual information of the top-level actions and the state distribution."  
 >	"SNN approach outperforms state-of-the-art intrinsic motivation results like VIME (Houthooft et al., 2016)."  
   - `video` <https://youtube.com/playlist?list=PLEbdzN4PXRGVB8NsPffxsBSOCcWFBMQx3> (demo)
+  - `video` <https://youtu.be/ARfpQzRCWT4?t=50m3s> (Nikishin)
+  - `notes` <https://medium.com/syncedreview/stochastic-neural-networks-for-hierarchical-reinforcement-learning-7f9133cc18aa>
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Stochastic_Neural_Networks_for_Hierarchical_Reinforcement_Learning.md>
   - `code` <https://github.com/florensacc/snn4hrl>
 
@@ -2873,6 +2878,7 @@ hieves."
 >	"The Option-Critic introduces a new gradient update for learning options. It consists of two components: 1) each option should use primitive actions that are better, 2) find good termination conditions (lengthen when the option is good, terminate when it’s bad). A third term also encourages the meta-policy to take better options."  
   - `video` <https://youtube.com/watch?v=8r_EoYnPjGk> (Bacon)
   - `video` <https://vimeo.com/249559422> (Precup)
+  - `video` <https://youtu.be/ARfpQzRCWT4?t=39m> (Nikishin)
   - `video` <https://youtube.com/watch?v=ID150Tl-MMw&t=56m55s> (Abbeel)
   - `slides` <http://pierrelucbacon.com/optioncritic-aaai2017-slides.pdf>
   - `poster` <http://pierrelucbacon.com/optioncriticposter.pdf>
@@ -3166,6 +3172,10 @@ hieves."
 >	"We introduce a new (weaker) definition of ε-Nash equilibrium in MGs which grasps the strategy’s quality for multiplayer games. We prove that minimizing the norm of two Bellman-like residuals implies to learn such an ε-Nash equilibrium. Then, we show that minimizing an empirical estimate of the Lp norm of these Bellman-like residuals allows learning for general-sum games within the batch setting. Finally, we introduce a neural network architecture that successfully learns a Nash equilibrium in generic multiplayer general-sum turn-based MGs."  
 
 ----
+#### ["QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning"](https://arxiv.org/abs/1803.11485) Rashid, Samvelyan, Witt, Farquhar, Foerster, Whiteson
+  `QMIX`
+>	"Learning joint action-values conditioned on extra state information is an attractive way to exploit centralised learning, where global state information is available and communication constraints are lifted, but the best strategy for then extracting decentralised policies is unclear. QMIX trains decentralised policies in a centralised end-to-end fashion. QMIX employs a network that estimates joint action-values as a complex non-linear combination of per-agent values that condition only on local observations. QMIX structurally enforces that the joint-action value is monotonic in the per-agent values, which allows tractable maximisation of the joint action-value in off-policy learning, and guarantees consistency between the centralised and decentralised policies."  
+
 #### ["Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments"](https://arxiv.org/abs/1706.02275) Lowe, Wu, Tamar, Harb, Abbeel, Mordatch
   `MADDPG`
 >	"Uses learning rule from DDPG to learn a central off-policy critic based on Q-learning and uses certain on-policy policy gradient estimator to learn policies for each agent."  
@@ -3221,7 +3231,7 @@ hieves."
   `SPIRAL`
   - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#synthesizing-programs-for-images-using-reinforced-adversarial-learning-ganin-kulkarni-babuschkin-eslami-vinyals>
 
-#### ["Leveraging Grammar and Reinforcement Learning for Neural Program Synthesis"](https://openreview.net/forum?id=H1Xw62kRZ) Bunel, Hausknecht, Devlin, Singh, Kohli
+#### ["Leveraging Grammar and Reinforcement Learning for Neural Program Synthesis"](https://arxiv.org/abs/1805.04276) Bunel, Hausknecht, Devlin, Singh, Kohli
 >	"Using the DSL grammar and reinforcement learning to improve synthesis of programs with complex control flow."  
 >	"Sequence-to-sequence generation models are trained to maximize the likelihood of known reference programs. This strategy has two key limitations. First, it ignores Program Aliasing: the fact that many different programs may satisfy a given specification (especially with incomplete specifications such as a few input-output examples). By maximizing the likelihood of only a single reference program, it penalizes many semantically correct programs, which can adversely affect the synthesizer performance. Second, this strategy overlooks the fact that programs have a strict syntax that can be efficiently checked."  
   - `code` <https://github.com/carpedm20/program-synthesis-rl-tensorflow>
@@ -3350,6 +3360,7 @@ hieves."
 #### ["Neural Symbolic Machines: Learning Semantic Parsers on Freebase with Weak Supervision"](http://arxiv.org/abs/1611.00020) Liang, Berant, Le, Forbus, Lao
   `question answering over knowledge bases`
 >	"We propose the Manager-Programmer-Computer framework, which integrates neural networks with non-differentiable memory to support abstract, scalable and precise operations through a friendly neural computer interface. Specifically, we introduce a Neural Symbolic Machine, which contains a sequence-to-sequence neural "programmer", and a non-differentiable "computer" that is a Lisp interpreter with code assist."  
+  - `video` <https://vimeo.com/234953110> (Liang)
   - `notes` <https://northanapon.github.io/papers/2017/01/16/neural-symbolic-machine.html>
   - `notes` <https://github.com/carpedm20/paper-notes/blob/master/notes/neural-symbolic-machine.md>
 

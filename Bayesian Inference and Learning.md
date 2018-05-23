@@ -595,14 +595,6 @@
 
 ----
 
-  ["Causal Inference for Observational Studies"](http://techtalks.tv/talks/causal-inference-for-observational-studies/62355/) by David Sontag and Uri Shalit `video` ([slides](https://cs.nyu.edu/~shalit/slides.pdf))
-
-  examples of implications of causality on decision making:
-  - [Simpson paradox](https://en.wikipedia.org/wiki/Simpson%27s_paradox#Implications_for_decision_making)
-  - ["The Neural Net Tank Urban Legend"](http://gwern.net/Tanks) by Gwern Branwen
-
-----
-
   ["Causal Data Science"](https://medium.com/@akelleh/causal-data-science-721ed63a4027) by Adam Kelleher:
   - ["If Correlation Doesn’t Imply Causation, Then What Does?"](https://medium.com/@akelleh/if-correlation-doesnt-imply-causation-then-what-does-c74f20d26438)
   - ["Understanding Bias: A Prerequisite For Trustworthy Results"](https://medium.com/@akelleh/understanding-bias-a-pre-requisite-for-trustworthy-results-ee590b75b1be)
@@ -630,7 +622,11 @@
 
 ----
 
+  ["Causal Inference for Observational Studies"](http://techtalks.tv/talks/causal-inference-for-observational-studies/62355/) by David Sontag and Uri Shalit `video` ([slides](https://cs.nyu.edu/~shalit/slides.pdf))
+
   ["Connections between Causality and Machine Learning"](https://youtube.com/watch?v=9pm0eXuiTZs) by Jonas Peters `video`
+
+  ["Counterfactual Evaluation and Learning for Search, Recommendation and Ad Placement"](http://www.cs.cornell.edu/~adith/CfactSIGIR2016/) by Thorsten Joachims and Adith Swaminathan `video`
 
   ["Counterfactual Reasoning and Massive Data Sets"](https://youtube.com/watch?v=s37cIYDOM6s) by Leon Bottou `video`  
   ["The Missing Signal"](https://youtube.com/watch?v=DfJeaa--xO0) by Leon Bottou `video`  

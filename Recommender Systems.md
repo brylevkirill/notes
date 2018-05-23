@@ -156,6 +156,7 @@
 >	- describing user preferences with interpretable topics  
 
   - `video` <http://www.fields.utoronto.ca/video-archive/2017/03/2267-16706> (26:36) (Blei)
+  - `code` <https://github.com/premgopalan/collabtm>
 
 
 #### ["Scalable Recommendation with Hierarchical Poisson Factorization"](http://auai.org/uai2015/proceedings/papers/208.pdf) Gopalan, Hofman, Blei

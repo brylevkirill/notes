@@ -95,6 +95,12 @@
   - `slides` <https://slideshare.net/BhaskarMitra3/neural-text-embeddings-for-information-retrieval-wsdm-2017>
 
 
+#### ["Online Evaluation for Information Retrieval"](https://microsoft.com/en-us/research/publication/online-evaluation-information-retrieval) Hofmann, Li, Radlinski
+>	"Online evaluation is one of the most common approaches to measure the effectiveness of an information retrieval system. It involves fielding the information retrieval system to real users, and observing these users’ interactions in-situ while they engage with the system. This allows actual users with real world information needs to play an important part in assessing retrieval quality. As such, online evaluation complements the common alternative offline evaluation approaches which may provide more easily interpretable outcomes, yet are often less realistic when measuring of quality and actual user experience.  
+>	In this survey, we provide an overview of online evaluation techniques for information retrieval. We show how online evaluation is used for controlled experiments, segmenting them into experiment designs that allow absolute or relative quality assessments. Our presentation of different metrics further partitions online evaluation based on different sized experimental units commonly of interest: documents, lists and sessions. Additionally, we include an extensive discussion of recent work on data re-use, and experiment estimation based on historical data.  
+>	A substantial part of this work focuses on practical issues: How to run evaluations in practice, how to select experimental parameters, how to take into account ethical considerations inherent in online evaluations, and limitations. While most published work on online experimentation today is at large scale in systems with millions of users, we also emphasize that the same techniques can be applied at small scale. To this end, we emphasize recent work that makes it easier to use at smaller scales and encourage studying real-world information seeking in a wide range of scenarios. Finally, we present a summary of the most recent work in the area, and describe open problems, as well as postulating future directions."
+
+
 
 ---
 ### interesting papers - ranking
@@ -149,8 +155,11 @@
 
 
 #### ["Neural Ranking Models with Weak Supervision"](https://arxiv.org/abs/1704.08803) Dehghani, Zamani, Severyn, Kamps, Croft
-  `learning to rank using click data`
+  `unsupervised learning to rank`
 >	"Despite the impressive improvements achieved by unsupervised deep neural networks in computer vision and NLP tasks, such improvements have not yet been observed in ranking for information retrieval. The reason may be the complexity of the ranking problem, as it is not obvious how to learn from queries and documents when no supervised signal is available. Hence, in this paper, we propose to train a neural ranking model using weak supervision, where labels are obtained automatically without human annotators or any external resources (e.g., click data). To this aim, we use the output of an unsupervised ranking model, such as BM25, as a weak supervision signal. We further train a set of simple yet effective ranking models based on feed-forward neural networks. We study their effectiveness under various learning scenarios (point-wise and pair-wise models) and using different input representations (i.e., from encoding query-document pairs into dense/sparse vectors to using word embedding representation). We train our networks using tens of millions of training instances and evaluate it on two standard collections: a homogeneous news collection (Robust) and a heterogeneous large-scale web collection (ClueWeb). Our experiments indicate that employing proper objective functions and letting the networks to learn the input representation based on weakly supervised data leads to impressive performance, with over 13% and 35% MAP improvements over the BM25 model on the Robust and the ClueWeb collections. Our findings also suggest that supervised neural ranking models can greatly benefit from pre-training on large amounts of weakly labeled data that can be easily obtained from unsupervised IR models."
+
+  - `post` <https://mostafadehghani.com/2017/04/23/beating-the-teacher-neural-ranking-models-with-weak-supervision> (Dehghani)
+  - `slides` <http://mostafadehghani.com/wp-content/uploads/2016/07/SIGIR2017_Presentation.pdf>
 
 
 #### ["Gathering Additional Feedback on Search Results by Multi-Armed Bandits with Respect to Production Ranking"](http://www.www2015.it/documents/proceedings/proceedings/p1177.pdf) Vorobev, Lefortier, Gusev, Serdyukov

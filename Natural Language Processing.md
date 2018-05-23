@@ -259,6 +259,10 @@
 
 ----
 
+  ["Deep Learning for Semantic Composition"](https://vimeo.com/234950059) tutorial by Xiaodan Zhu and Edward Grefenstette `video`
+
+----
+
   [distributed representation](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representation)
 
 
@@ -1013,12 +1017,15 @@
 
 >	"We presented, to our knowledge, a first attempt at building a competitive compression system which is given no linguistic features from the input. The two important components of the system are (1) word embeddings, which can be obtained by anyone either pre-trained, or by running word2vec on a large corpus, and (2) an LSTM model which draws on the very recent advances in research on RNNs. The training data of about two million sentence-compression pairs was collected automatically from the Internet. Our results clearly indicate that a compression model which is not given syntactic information explicitly in the form of features may still achieve competitive performance. The high readability and informativeness scores assigned by human raters support this claim. In the future, we are planning to experiment with more “interesting” paraphrasing models which translate the input not into a zero-one sequence but into words."
 
+  - `video` <https://vimeo.com/159981337> (Alfonseca)
+
 
 #### ["A Neural Attention Model for Abstractive Sentence Summarization"](http://arxiv.org/abs/1509.00685) Rush, Chopra, Weston
 >	"Summarization based on text extraction is inherently limited, but generation-style abstractive methods have proven challenging to build. In this work, we propose a fully data-driven approach to abstractive sentence summarization. Our method utilizes a local attention-based model that generates each word of the summary conditioned on the input sentence. While the model is structurally simple, it can easily be trained end-to-end and scales to a large amount of training data. The model shows significant performance gains on the DUC-2004 shared task compared with several strong baselines."
 
 >	"We have presented a neural attention-based model for abstractive summarization, based on recent developments in neural machine translation. We combine this probabilistic model with a generation algorithm which produces accurate abstractive summaries. As a next step we would like to further improve the grammaticality of the summaries in a data-driven way, as well as scale this system to generate paragraph-level summaries. Both pose additional challenges in terms of efficient alignment and consistency in generation."
 
+  - `video` <https://vimeo.com/159993537> (Rush)
   - `code` <https://github.com/jaseweston/NAMAS>
   - `code` <https://github.com/carpedm20/neural-summary-tensorflow>
 
