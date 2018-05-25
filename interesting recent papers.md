@@ -470,11 +470,18 @@ interesting older papers:
 #### ["Backpropagation through the Void: Optimizing Control Variates for Black-box Gradient Estimation"](https://arxiv.org/abs/1711.00123) Grathwohl, Choi, Wu, Roeder, Duvenaud
   `variables with discrete distributions` `non-differentiable loss` `RELAX`
 >	"We generalize REBAR to learn a free-form control variate parameterized by a neural network, giving a lower-variance, unbiased gradient estimator which can be applied to a wider variety of problems with greater flexibility. Most notably, our method is applicable even when no continuous relaxation is available, as in reinforcement learning or black box function optimization. Furthermore, we derive improved variants of popular reinforcement learning methods with unbiased, action-dependent gradient estimates and lower variance."  
+>	"We would like a general gradient estimator that is:  
+>	- unbiased  
+>	- low variance  
+>	- usable when f(b) is unknown  
+>	- usable when p(b|theta) is discrete"  
 >	"RELAX doesn't solve the problem of discrete random variables but it solves the problem of how to estimate gradient of function which value is known but how to compute or differentiate it is unknown (reinforcement learning and other applications)."  
+  - `video` <https://vimeo.com/252185804> (Grathwohl)
   - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (25:20) (Bengio)
   - `video` <https://youtu.be/hkRBoiaplEE?t=1h8m1s> (Sobolev)
   - `code` <https://github.com/duvenaud/relax>
   - `code` <https://github.com/Bonnevie/rebar>
+  - `paper` ["Action-depedent Control Variates for Policy Optimization via Stein's Identity"](https://arxiv.org/abs/1710.11198) by Liu et al. ([talk](https://vimeo.com/252186257) `video`)
 
 #### ["REBAR: Low-variance, unbiased gradient estimates for discrete latent variable models"](http://arxiv.org/abs/1703.07370) Tucker, Mnih, Maddison, Lawson, Sohl-Dickstein
   `variables with discrete distributions` `REBAR`
@@ -518,8 +525,15 @@ interesting older papers:
 >	"Many matching, tracking, sorting, and ranking problems require probabilistic reasoning about possible permutations, a set that grows factorially with dimension. Combinatorial optimization algorithms may enable efficient point estimation, but fully Bayesian inference poses a severe challenge in this high-dimensional, discrete space. To surmount this challenge, we start with the usual step of relaxing a discrete set (here, of permutation matrices) to its convex hull, which here is the Birkhoff polytope: the set of all doublystochastic matrices. We then introduce two novel transformations: first, an invertible and differentiable stick-breaking procedure that maps unconstrained space to the Birkhoff polytope; second, a map that rounds points toward the vertices of the polytope. Both transformations include a temperature parameter that, in the limit, concentrates the densities on permutation matrices."  
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1710.09508>
 
-#### ["Reparameterization Gradients through Acceptance-Rejection Sampling Algorithms"](http://arxiv.org/abs/1610.05683) Naesseth, Ruiz, Linderman, Blei
+#### ["Implicit Reparameterization Gradients"](https://arxiv.org/abs/1805.08498) Figurnov, Mohamed, Mnih
   `variables with complex distributions`
+>	"Unlike reparameterization trick, implicit reparameterization gradients are applicable to a number of important continuous distributions with numerically tractable CDFs such as truncated, mixture, Gamma, Beta, Dirichlet, Student-t, or von Mises, which can be used as easily as the Normal distribution in stochastic computation graphs and are both faster and more accurate than alternative approaches."  
+>	"Implicit reparameterization gradients can outperform existing stochastic variational methods at training the Latent Dirichlet Allocation topic model in a black-box fashion using amortized inference."  
+>	"Implicit reparameterization gradients can be used to train VAEs with Gamma, Beta, and von Mises latent variables, leading to latent spaces with interesting alternative topologies."  
+>	"Following Graves, we use implicit differentiation to differentiate the CDF rather than its inverse. While the method of Graves is only practical for distributions with analytically tractable CDFs and has been used solely with mixture distributions, we leverage automatic differentiation to handle distributions with numerically tractable CDFs."  
+
+#### ["Reparameterization Gradients through Acceptance-Rejection Sampling Algorithms"](http://arxiv.org/abs/1610.05683) Naesseth, Ruiz, Linderman, Blei
+  `variables with complex distributions` `RSVI`
 >	"For many distributions of interest (such as the gamma or Dirichlet), simulation of random variables relies on acceptance-rejection sampling. The discontinuity introduced by the accept-reject step means that standard reparameterization tricks are not applicable. We propose a new method that lets us leverage reparameterization gradients even when variables are outputs of a acceptance-rejection sampling algorithm. Our approach enables reparameterization on a larger class of variational distributions."  
   - `video` <https://youtu.be/quIuMYSLaYM?t=17m21s> (Ruiz)
   - `post` <https://casmls.github.io/general/2017/04/25/rsvi.html>
@@ -703,10 +717,10 @@ interesting older papers:
 >	"Spatially structured 2D memory to learn to store arbitrary information about the environment over long time lags."  
 >	"Memory was given a 2D structure in order to resemble a spatial map to address specific problems such as 2D or 3D navigation."  
 >	"Size and computational cost doesn't grow with time horizon of environment."  
+  - `video` <https://vimeo.com/252185932> (Salakhutdinov)
   - `video` <https://youtu.be/x_kK4Pc4qow?t=18m3s> (Salakhutdinov)
   - `video` <https://youtu.be/bTWlFiF4Kns?t=6m55s> (Salakhutdinov)
   - `video` <https://yadi.sk/i/pMdw-_uI3Gke7Z> (Shvechikov) `in russian`
-  - `slides` <http://www.cs.cmu.edu/~rsalakhu/NIPS2017_StructureMemoryForDeepRL.pdf>
 
 ----
 #### ["Learning Long-term Dependencies with Deep Memory States"](https://people.eecs.berkeley.edu/~vitchyr/learning_long_term_dependencies_with_deep_memory_states__pong_gu_levine.pdf) Pong, Gu, Levine
@@ -1776,6 +1790,7 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=rBCqOTEfxvg> (Kaiser)
   - `video` <https://youtube.com/watch?v=iDulhoQ2pro> (Kilcher)
   - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) `in russian`
+  - `video` <https://youtu.be/LhH6wMvntSM?t=54m56s> (Suleymanov) `in russian`
   - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani, Uszkoreit)
   - `post` <https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/>
   - `post` <http://nlp.seas.harvard.edu/2018/04/03/attention.html>
@@ -2006,8 +2021,9 @@ interesting older papers:
 
 ----
 #### ["Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor"](https://arxiv.org/abs/1801.01290) Haarnoja, Zhou, Abbeel, Levine
-  `soft Q-learning` `policy gradient` `maximum entropy policy` `on-policy + off-policy`
->	"Soft Q-learning algorithm for learning multi-modal stochastic policies via entropy maximization, leading to better exploration in environments with multi-modal reward landscapes, combined with actor-critic framework into Soft Actor-Criti, an off-policy actor-critic method in which the actor aims to maximize both the expected reward and the entropy of a stochastic policy."  
+  `SAC` `soft Q-learning` `policy gradient` `maximum entropy policy` `on-policy + off-policy`
+>	"Soft Q-learning algorithm for learning multi-modal stochastic policies via entropy maximization, leading to better exploration in environments with multi-modal reward landscapes, combined with actor-critic framework into Soft Actor-Critic, an off-policy actor-critic method in which the actor aims to maximize both the expected reward and the entropy of a stochastic policy."  
+>	"SAC learns the soft Q-function of policy and the policy jointly. SAC is similar to DDPG but with a stochastic policy."  
 >	"DDPG uses a Q-function estimator to enable off-policy learning, and a deterministic actor that maximizes this Q-function. As such, this method can be viewed both as a deterministic actor-critic algorithm and an approximate Q-learning algorithm. Unfortunately, the interplay between the deterministic actor network and the Q-function typically makes DDPG extremely difficult to stabilize and brittle to hyperparameter settings. As a consequence, it is difficult to extend DDPG to very complex, high-dimensional tasks, and on-policy policy gradient methods still tend to produce the best results in such settings. Our method instead combines off-policy actor-critic training with a stochastic actor, and further aims to maximize the entropy of this actor with an entropy maximization objective. We find that this actually results in a substantially more stable and scalable algorithm that, in practice, exceeds both the efficiency and final performance of DDPG."  
 >	"Many actor-critic algorithms build on the standard, on-policy policy gradient formulation to update the actor, and many of them also consider the entropy of the policy, but instead of maximizing the entropy, they use it as an regularizer. This tends to improve stability, but results in very poor sample complexity. Maximum entropy reinforcement learning optimizes policies to maximize both the expected return and the expected entropy of the policy."  
   - `video` <https://vimeo.com/252185258> (Haarnoja)
@@ -2029,7 +2045,7 @@ interesting older papers:
   - `post` <http://bair.berkeley.edu/blog/2017/10/06/soft-q-learning/>
 
 #### ["Reinforcement Learning with Deep Energy-Based Policies"](https://arxiv.org/abs/1702.08165) Haarnoja, Tang, Abbeel, Levine
-  `soft Q-learning` `policy gradient` `maximum entropy policy`
+  `SQL` `soft Q-learning` `policy gradient` `maximum entropy policy`
 >	"parameterise and estimate a so called soft Q-function directly, implicitly inducing a maximum entropy policy"  
 >	"Fox et al. (2015) proposed soft Q-learning which extended the Q-learning with tabular form for the new Bellman optimality equation corresponding to the finite state finite action entropy-regularized MDP. The algorithm does not accomodate for function approximator due to the intractability of the log-sum-exp operation in the soft Q-learning update. To avoid such difficulty, Haarnoja et al. (2017) reformulates the update as an optimization which is approximated by samples from stein variational gradient descent (SVGD) sampler."  
   - <https://sites.google.com/view/softqlearning/home> (demo)
@@ -2238,6 +2254,7 @@ interesting older papers:
 >	"Calculating optimal plan is difficult due to the dynamics and reward functions being nonlinear, but many techniques exist for obtaining approximate solutions to finite-horizon control problems that are sufficient for succeeding at the desired task. We use a simple random-sampling shooting method in which K candidate action sequences are randomly generated, the corresponding state sequences are predicted using the learned dynamics model, the rewards for all sequences are calculated, and the candidate action sequence with the highest expected cumulative reward is chosen. Rather than have the policy execute this action sequence in open-loop, we use model predictive control: the policy executes only the first action, receives updated state information, and recalculates the optimal action sequence at the next time step. This combination of predictive dynamics model plus controller is beneficial in that the model is trained only once, but by simply changing the reward function, we can accomplish a variety of goals at run-time, without a need for live task-specific retraining."  
   - <https://sites.google.com/view/mbmf> (demo)
   - `post` <http://bair.berkeley.edu/blog/2017/11/30/model-based-rl/>
+  - `video` <https://vimeo.com/252186751> (Nagabandi)
   - `code` <https://github.com/nagaban2/nn_dynamics>
 
 #### ["Model-Based Planning in Discrete Action Spaces"](https://arxiv.org/abs/1705.07177) Henaff, Whitney, LeCun
@@ -2271,7 +2288,7 @@ interesting older papers:
 >	"One reason why MCTS is so effective compared to Alpha-Beta when you start to use function approximators is that neural network will inevitably have approximation errors. Alpha-Beta search is kind of minimax search and is like glorified big max operator alternating with mins, which will pick out biggest errors in function approximation and propagate it to the root of search tree. Whilst MCTS is averaging over evaluations which tends to cancel out errors in search and can be more effective because of that."  
 >	"AlphaGo Zero tuned the hyper-parameter of its search by Bayesian optimization. In AlphaZero they reuse the same hyper-parameters for all games without game-specific tuning. The sole exception is the noise that is added to the prior policy to ensure exploration; this is scaled in proportion to the typical number of legal moves for that game type. Like AlphaGo Zero, the board state is encoded by spatial planes based only on the basic rules for each game. The actions are encoded by either spatial planes or a flat vector, again based only on the basic rules for each game. They applied the AlphaZero algorithm to chess, shogi, and also Go. Unless otherwise specified, the same algorithm settings, network architecture, and hyper-parameters were used for all three games."  
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games> (demo)
-  - `video` <https://youtu.be/A3ekFcZ3KNw?t=23m28s> (Silver)
+  - `video` <https://vimeo.com/252184928#t=1468> (Silver)
   - `video` <https://youtu.be/DXNqYSNvnjA?t=21m24s> (Hassabis)
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
   - `notes` <https://blog.acolyer.org/2018/01/10/mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm/>
@@ -2301,7 +2318,7 @@ interesting older papers:
 >
 >	"There's a continuum between expert iteration and policy gradients. Let's say we have a two probability distributions, called policy and expert. We can write down a distance between them in two different ways. (1) KL[policy, expert] = policy * log(expert) - S[policy] (2) KL[expert, policy] = expert * log(policy) + constant. Policy gradients uses (1), and we set expert = exp(advantage estimate). AGZ uses (2) and defines expert using MCTS on the policy. The continuum between policy gradients and AGZ arises because we can vary the amount of work we put into computing the expert policy. On one extreme, policy gradient methods use a very cheap-to-compute expert: the advantage function estimate. On the other extreme, AGZ uses a very expensive-to-compute expert (via MCTS), which is much better than the current policy. Another dimension in this expert space is the bias-variance tradeoff: whether we use a Monte-Carlo estimate of returns or a learned value function. I'm curious to know under what conditions you benefit from using a more expensive expert. Anyway, I think there are a lot of interesting experiments left to do to analyze the space of algorithms between policy gradients and expert iteration."  
   - `post` <https://deepmind.com/blog/alphago-zero-learning-scratch/>
-  - `video` <https://youtu.be/A3ekFcZ3KNw?t=10m50s> (Silver)
+  - `video` <https://vimeo.com/252184928/#t=711> (Silver)
   - `video` <https://youtu.be/DXNqYSNvnjA?t=16m41s> (Hassabis)
   - `video` <https://youtube.com/watch?v=6fKG4wJ7uBk> (Baudis)
   - `video` <https://youtube.com/watch?v=XuzIqE2IshY> (Kington)
@@ -2580,14 +2597,16 @@ interesting older papers:
 >	"Deep reinforcement learning methods generally engage in exploratory behavior through noise injection in the action space. An alternative is to add noise directly to the agent's parameters, which can lead to more consistent exploration and a richer set of behaviors. Methods such as evolutionary strategies use parameter perturbations, but discard all temporal structure in the process and require significantly more samples. Combining parameter noise with traditional RL methods allows to combine the best of both worlds."  
 >	"We demonstrate that both off- and on-policy methods benefit from this approach through experimental comparison of DQN, DDPG, and TRPO on high-dimensional discrete action environments as well as continuous control tasks. Our results show that RL with parameter noise learns more efficiently than traditional RL with action space noise and evolutionary strategies individually."  
 >	"The training updates for the network are unchanged, but when selecting actions, the network weights are perturbed with isotropic Gaussian noise. Crucially, the network uses layer normalization, which ensures that all weights are on the same scale."  
+  - `video` <https://vimeo.com/252185862> (Dhariwal)
   - `post` <https://blog.openai.com/better-exploration-with-parameter-noise/>
 
-#### ["Deep Exploration via Randomized Value Functions"](https://arxiv.org/abs/1703.07608) Osband, Russo, Wen, Roy
+#### ["Deep Exploration via Randomized Value Functions"](https://arxiv.org/abs/1703.07608) Osband, Russo, Wen, van Roy
   `approximate bayesian exploration` `approximate posterior sampling`
 >	"A very recent thread of work builds on count-based (or upper-confidence-bound-based) exploration schemes that operate with value function learning. These methods maintain a density over the state-action space of pseudo-counts, which represent the quantity of data gathered that is relevant to each state-action pair. Such algorithms may offer a viable approach to deep exploration with generalization. There are, however, some potential drawbacks. One is that a separate representation is required to generalize counts, and it's not clear how to design an effective approach to this. As opposed to the optimal value function, which is fixed by the environment, counts are generated by the agent’s choices, so there is no single target function to learn. Second, the count model generates reward bonuses that distort data used to fit the value function, so the value function representation needs to be designed to not only capture properties of the true optimal value function but also such distorted versions. Finally, these approaches treat uncertainties as uncoupled across state-action pairs, and this can incur a substantial negative impact on statistical efficiency."  
   - `video` <https://youtube.com/watch?v=lfQEPWj97jk> (Osband)
   - `video` <http://techtalks.tv/talks/generalization-and-exploration-via-randomized-value-functions/62467/> (Osband)
   - `video` <https://youtu.be/ck4GixLs4ZQ?t=33m7s> (Osband)
+  - `video` <https://vimeo.com/252186381> (van Roy)
 
 #### ["BBQ-Networks: Efficient Exploration in Deep Reinforcement Learning for Task-Oriented Dialogue Systems"](https://arxiv.org/abs/1608.05081) Lipton, Li, Gao, Li, Ahmed, Deng
   `approximate bayesian exploration` `approximate posterior sampling`
@@ -2722,6 +2741,7 @@ hieves."
 >	"Our method, which builds on top of Deep Deterministic Policy Gradients and Hindsight Experience Replay, provides an order of magnitude of speedup over RL on simulated robotics tasks."  
 >	"Our method is able to solve tasks not solvable by either RL or behavior cloning alone, and often ends up outperforming the demonstrator policy."  
   - <http://ashvin.me/demoddpg-website/> (demo)
+  - `video` <https://vimeo.com/252186855> (Nair)
 
 #### ["Hindsight Experience Replay"](https://arxiv.org/abs/1707.01495) Andrychowicz, Wolski, Ray, Schneider, Fong, Welinder, McGrew, Tobin, Abbeel, Zaremba
   `exploration guided by learning progress` `HER`
@@ -3045,8 +3065,9 @@ hieves."
 
 #### ["Time-Contrastive Networks: Self-Supervised Learning from Video"](https://arxiv.org/abs/1704.06888) Sermanet, Lynch, Chebotar, Hsu, Jang, Schaal, Levine
   `reinforcement learning from demonstrations` `TCN`
-  - <https://sermanet.github.io/imitate/>
+>	"Learn a self-supervised understanding of the world and use it to quickly learn real-world tasks, entirely from 3rd person videos of humans (addressing correspondence problem, no labels, no reward function design, providing sample-efficiency of RL, quickly learning tasks, no kinesthetic demonstrations)."  
   - `video` <https://youtube.com/watch?v=b1UTUQpxPSY>
+  - `video` <https://vimeo.com/252185872> (Lynch)
   - `code` <https://github.com/tensorflow/models/tree/master/research/tcn>
 
 #### ["Learning from Demonstrations for Real World Reinforcement Learning"](https://arxiv.org/abs/1704.03732) Hester et al.
@@ -3069,6 +3090,7 @@ hieves."
 ----
 #### ["One-Shot Visual Imitation Learning via Meta-Learning"](https://arxiv.org/abs/1709.04905) Finn, Yu, Zhang, Abbeel, Levine
   `imitation learning from visual observations` `meta-learning`
+  - `video` <https://vimeo.com/252186304> (Finn, Yu)
   - `video` <https://youtu.be/lYU5nq0dAQQ?t=51m> (Levine)
   - `code` <https://github.com/tianheyu927/mil>
 
@@ -3476,11 +3498,14 @@ hieves."
 #### ["Learning with Latent Language"](https://arxiv.org/abs/1711.00482) Andreas, Klein, Levine
   `goal-driven language learning`
 >	"optimizing models in a space parameterized by natural language"  
+>	"turning an instruction following model into a model for few-shot policy learning"  
+>	"learning with natural language parameters provides structure, efficiency, interpretability"  
 >	"Using standard neural encoder–decoder components to build models for representation and search in this space, we demonstrated that our approach outperforms strong baselines on classification, structured prediction and reinforcement learning tasks."  
 >	"The approach outperforms both multi-task and meta-learning approaches that map directly from training examples to outputs by way of a real-valued parameterization, as well as approaches that make use of natural language annotations as an additional supervisory signal rather than an explicit latent parameter. The natural language concept descriptions inferred by our approach often agree with human annotations when they are correct, and provide an interpretable debugging signal when incorrect. In short, by equipping models with the ability to “think out loud” when learning, they become both more comprehensible and more accurate."  
 >	"- Language encourages compositional generalization: standard deep learning architectures are good at recognizing new instances of previously encountered concepts, but not always at generalizing to new ones. By forcing decisions to pass through a linguistic bottleneck in which the underlying compositional structure of concepts is explicitly expressed, stronger generalization becomes possible.  
 >	- Language simplifies structured exploration: relatedly, linguistic scaffolding can provide dramatic advantages in problems like reinforcement learning that require exploration: models with latent linguistic parameterizations can sample in this space, and thus limit exploration to a class of behaviors that are likely a priori to be goal-directed and interpretable.  
 >	- Language can help learning: in multitask settings, it can even improve learning on tasks for which no language data is available at training or test time. While some of these advantages are also provided by techniques like program synthesis that are built on top of formal languages, natural language is at once more expressive and easier to obtain than formal supervision."  
+  - `video` <https://vimeo.com/252185410> (Andreas)
   - `post` <http://blog.jacobandreas.net/fake-language.html>
   - `code` <http://github.com/jacobandreas/l3>
 
@@ -3501,11 +3526,8 @@ hieves."
 
 #### ["Gated-Attention Architectures for Task-Oriented Language Grounding"](https://arxiv.org/abs/1706.07230) Chaplot, Sathyendra, Pasumarthi, Rajagopal, Salakhutdinov
   `goal-driven language learning`
-  - `slides` <http://www.cs.cmu.edu/~dchaplot/talks/AAAI18-Grounding.pdf>
+  - `video` <https://vimeo.com/252185932> (21:57) (Salakhutdinov)
   - `code` <https://github.com/devendrachaplot/DeepRL-Grounding>
-
-#### ["A Deep Compositional Framework for Human-like Language Acquisition in Virtual Environment"](https://arxiv.org/abs/1703.09831) Yu, Zhang, Xu
-  `goal-driven language learning`
 
 ----
 #### ["Natural Language Does Not Emerge ‘Naturally’ in Multi-Agent Dialog"](https://arxiv.org/abs/1706.08502) Kottur, Moura, Lee, Batra
@@ -3587,6 +3609,7 @@ hieves."
 #### ["Unsupervised Machine Translation Using Monolingual Corpora Only"](https://arxiv.org/abs/1711.00043) Lample, Denoyer, Ranzato
   `translation`
 >	"learn to map sentences of the two languages into the same feature space by denoising both via auto-encoding and via cross-domain encoding"  
+  - `video` <https://youtu.be/nIw-hNAjTwE?t=10m57s> (Moiseev) `in russian`
   - `notes` <http://ankitg.me/blog/2017/11/05/unsupervised-machine-translation.html>
 
 #### ["Unsupervised Neural Machine Translation"](https://arxiv.org/abs/1710.11041) Artetxe, Labaka, Agirre, Cho

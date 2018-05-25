@@ -1427,12 +1427,21 @@ Yoshua Bengio:
 
 >	"We generalize REBAR to learn a free-form control variate parameterized by a neural network, giving a lower-variance, unbiased gradient estimator which can be applied to a wider variety of problems with greater flexibility. Most notably, our method is applicable even when no continuous relaxation is available, as in reinforcement learning or black box function optimization. Furthermore, we derive improved variants of popular reinforcement learning methods with unbiased, action-dependent gradient estimates and lower variance."
 
+>	"We would like a general gradient estimator that is:  
+>	- unbiased  
+>	- low variance  
+>	- usable when f(b) is unknown  
+>	- usable when p(b|theta) is discrete"  
+
+----
 >	"RELAX doesn't solve the problem of discrete random variables but it solves the problem of how to estimate gradient of function which value is known but how to compute or differentiate it is unknown (reinforcement learning and other applications)."
 
+  - `video` <https://vimeo.com/252185804> (Grathwohl)
   - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (25:20) (Bengio)
   - `video` <https://youtu.be/hkRBoiaplEE?t=1h8m1s> (Sobolev)
   - `code` <https://github.com/duvenaud/relax>
   - `code` <https://github.com/Bonnevie/rebar>
+  - `paper` ["Action-depedent Control Variates for Policy Optimization via Stein's Identity"](https://arxiv.org/abs/1710.11198) by Liu et al. ([talk](https://vimeo.com/252186257) `video`)
 
 
 #### ["DiCE: The Infinitely Differentiable Monte Carlo Estimator"](https://arxiv.org/abs/1802.05098) Foerster, Farquhar, Al-Shedivat, Rocktaschel, Xing, Whiteson
@@ -2251,6 +2260,7 @@ x."
   - `video` <https://youtube.com/watch?v=rBCqOTEfxvg> (Kaiser)
   - `video` <https://youtube.com/watch?v=iDulhoQ2pro> (Kilcher)
   - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) `in russian`
+  - `video` <https://youtu.be/LhH6wMvntSM?t=54m56s> (Suleymanov) `in russian`
   - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani, Uszkoreit)
   - `post` <https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/> (McAllester)
   - `notes` <https://ricardokleinklein.github.io/2017/11/16/Attention-is-all-you-need.html>

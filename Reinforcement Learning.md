@@ -100,7 +100,7 @@
 	["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper` `summary`  
 	["Combining Online and Offline Knowledge in UCT"](http://machinelearning.org/proceedings/icml2007/papers/387.pdf) by Gelly and Silver `paper` ([talk](https://youtube.com/watch?v=Bm7zah_LrmE) `video`)  
 
-	[AlphaGo Zero overview](https://youtu.be/A3ekFcZ3KNw?t=10m50s) by David Silver `video`  
+	[AlphaGo Zero overview](https://vimeo.com/252184928/#t=711) by David Silver `video`  
 	[AlphaGo Zero overview](https://youtu.be/DXNqYSNvnjA?t=16m41s) by Demis Hassabis `video`  
 
 	[AlphaGo overview](https://youtu.be/i3lEG6aRGm8?t=16m) by Demis Hassabis `video`  
@@ -149,21 +149,44 @@
 ----
   - *Poker*  
 
+	[Libratus "Science" magazine](http://science.sciencemag.org/content/early/2017/12/15/science.aao1733.full) `paper`  
+	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://arxiv.org/abs/1705.02955) by Noam Brown and Tuomas Sandholm `paper` ([talk](https://youtube.com/watch?v=tRiaGahlyy4) `video`)  
+	["Depth-Limited Solving for Imperfect-Information Games"](https://arxiv.org/abs/1805.08195) by Brown, Sandholm, Amos `paper`  
+
+	[Libratus overview](http://videolectures.net/aaai2017_bowling_sandholm_poker/#t=1350) by Tuomas Sandholm `video`  
+	[Libratus overview](https://youtube.com/watch?v=xrWulRY_t1o) by Tuomas Sandholm `video`  
+	[Libratus overview](https://youtube.com/watch?v=2dX0lwaQRX0) by Noam Brown `video`  
+	[Libratus overview](https://youtube.com/watch?v=UTogLB99JKQ) by Noam Brown `video`  
+
+	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://youtube.com/watch?v=tRiaGahlyy4) by Noam Brown `video`  
+	["Reduced Space and Faster Convergence in Imperfect-Information Games via Pruning"](https://vimeo.com/238229930) by Noam Brown `video`  
+	["The State of Techniques for Solving Large Imperfect-Information Games"](https://youtube.com/watch?v=Gz026reyVwc) by Tuomas Sandholm `video`  
+	["The State of Techniques for Solving Large Imperfect-Information Games, Including Poker"](https://youtube.com/watch?v=QgCxCeoW5JI) by Tuomas Sandholm `video`  
+
+	[discussion](https://reddit.com/r/MachineLearning/comments/7jn12v/ama_we_are_noam_brown_and_professor_tuomas) with Noam Brown and Tuomas Sandholm  
+	[discussion](https://youtube.com/watch?v=wKey6eKccYM) with Noam Brown `audio`  
+	[discussion](https://youtube.com/watch?v=ZlPPp_xokd4) with Tuomas Sandholm `audio`  
+
+	[Libratus vs top professional players](https://youtube.com/watch?v=crgmYTMfrSc) match discussion `video`
+
+----
+  - *Poker*  
+
+	[DeepStack "Science" magazine](http://science.sciencemag.org/content/early/2017/03/01/science.aam6960) `paper`  
 	["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](#deepstack-expert-level-artificial-intelligence-in-no-limit-poker-moravcik-et-al) by Moravcik et al. `paper` `summary`  
-	["Science" magazine](http://science.sciencemag.org/content/early/2017/03/01/science.aam6960) `paper`  
 
 	<http://deepstack.ai>  
 	<http://twitter.com/DeepStackAI>  
 
+	[DeepStack overview](http://videolectures.net/aaai2017_bowling_sandholm_poker/#t=177) by Michael Bowling `video`  
 	[DeepStack overview](https://youtu.be/02xIkHowQOk?t=11m45s) by Michael Bowling `video`  
 	[DeepStack overview](https://youtube.com/watch?v=qndXrHcV1sM) by Michael Bowling `video`  
-	["Advances in AI in Poker"](http://videolectures.net/aaai2017_bowling_sandholm_poker) by Michael Bowling and Tuomas Sandholm `video`  
 
 	[discussion](http://thinkingpoker.net/2017/03/episode-208-michael-bowling-of-cprg/) with Michael Bowling  
 	[discussion](http://thinkingpoker.net/2017/04/episode-210-michael-johanson-and-dustin-morrill/) with Michael Johanson and Dustin Morrill  
 	[discussion](http://thinkingpoker.net/2017/08/episode-225-taking-the-variance-out-of-poker/) with Michael Bowling and Dustin Morrill  
 
-	[DeepStack vs professional players](https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ) `video`
+	[DeepStack vs professional players](https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ) games `video`
 
 ----
   - *Chess*  
@@ -173,7 +196,7 @@
 	["Bootstrapping from Game Tree Search"](#bootstrapping-from-game-tree-search-veness-silver-uther-blair) by Veness et al. `paper` `summary`  
 	["KnightCap: A Chess Program that Learns by Combining TD(lambda) with Game-tree Search"](https://arxiv.org/abs/cs/9901002) by Baxter et al. `paper`  
 
-	[AlphaZero overview](https://youtu.be/A3ekFcZ3KNw?t=23m28s) by David Silver `video`  
+	[AlphaZero overview](https://vimeo.com/252184928#t=1468) by David Silver `video`  
 	[AlphaZero overview](https://youtu.be/DXNqYSNvnjA?t=21m24s) by Demis Hassabis `video`  
 
 	AlphaZero vs Stockfish match:
@@ -192,10 +215,10 @@
 	[overview](https://blog.openai.com/dota-2/) of OpenAI bot  
 	[overview](https://blog.openai.com/more-on-dota-2/) of OpenAI bot  
 
-	[OpenAI bot vs Dendi](https://youtube.com/watch?v=wiOopO9jTZw) `video`  
-	[OpenAI bot vs SumaiL](https://youtube.com/watch?v=IbaHI38Ewws) `video`  
-	[OpenAI bot vs Arteezy](https://youtube.com/watch?v=rNSH8CviQQw) `video`  
-	[OpenAI bot vs Pajkatt](https://youtube.com/watch?v=BBUiwCEmrxU) `video`  
+	[OpenAI bot vs Dendi](https://youtube.com/watch?v=wiOopO9jTZw) game `video`  
+	[OpenAI bot vs SumaiL](https://youtube.com/watch?v=IbaHI38Ewws) game `video`  
+	[OpenAI bot vs Arteezy](https://youtube.com/watch?v=rNSH8CviQQw) game `video`  
+	[OpenAI bot vs Pajkatt](https://youtube.com/watch?v=BBUiwCEmrxU) game `video`  
 
 ----
   - *Doom*  
@@ -225,6 +248,8 @@
 	["How Watson Learns Superhuman Jeopardy! Strategies"](https://youtube.com/watch?v=7rIf2Njye5k) by Gerry Tesauro `video`
 
 	[IBM Watson](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#machine-reading-projects---ibm-watson) project `summary`
+
+	[IBM Watson vs Ken Jennings vs Brad Rutter](https://archive.org/details/Jeopardy.2011.02.The.IBM.Challenge) match `video`
 
 ----
   - *TD-Gammon*  
@@ -1551,7 +1576,7 @@ interesting recent papers:
 >	"There's a continuum between expert iteration and policy gradients. Let's say we have a two probability distributions, called policy and expert. We can write down a distance between them in two different ways. (1) KL[policy, expert] = policy * log(expert) - S[policy] (2) KL[expert, policy] = expert * log(policy) + constant. Policy gradients uses (1), and we set expert = exp(advantage estimate). AGZ uses (2) and defines expert using MCTS on the policy. The continuum between policy gradients and AGZ arises because we can vary the amount of work we put into computing the expert policy. On one extreme, policy gradient methods use a very cheap-to-compute expert: the advantage function estimate. On the other extreme, AGZ uses a very expensive-to-compute expert (via MCTS), which is much better than the current policy. Another dimension in this expert space is the bias-variance tradeoff: whether we use a Monte-Carlo estimate of returns or a learned value function. I'm curious to know under what conditions you benefit from using a more expensive expert. Anyway, I think there are a lot of interesting experiments left to do to analyze the space of algorithms between policy gradients and expert iteration."  
 
   - `post` <https://deepmind.com/blog/alphago-zero-learning-scratch/>
-  - `video` <https://youtu.be/A3ekFcZ3KNw?t=10m50s> (Silver)
+  - `video` <https://vimeo.com/252184928/#t=711> (Silver)
   - `video` <https://youtu.be/DXNqYSNvnjA?t=16m41s> (Hassabis)
   - `video` <https://youtube.com/watch?v=6fKG4wJ7uBk> (Baudis)
   - `video` <https://youtube.com/watch?v=XuzIqE2IshY> (Kington)
@@ -1645,7 +1670,7 @@ interesting recent papers:
 >	"AlphaGo Zero tuned the hyper-parameter of its search by Bayesian optimization. In AlphaZero they reuse the same hyper-parameters for all games without game-specific tuning. The sole exception is the noise that is added to the prior policy to ensure exploration; this is scaled in proportion to the typical number of legal moves for that game type. Like AlphaGo Zero, the board state is encoded by spatial planes based only on the basic rules for each game. The actions are encoded by either spatial planes or a flat vector, again based only on the basic rules for each game. They applied the AlphaZero algorithm to chess, shogi, and also Go. Unless otherwise specified, the same algorithm settings, network architecture, and hyper-parameters were used for all three games."
 
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games> (demo)
-  - `video` <https://youtu.be/A3ekFcZ3KNw?t=23m28s> (Silver)
+  - `video` <https://vimeo.com/252184928#t=1468> (Silver)
   - `video` <https://youtu.be/DXNqYSNvnjA?t=21m24s> (Hassabis)
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
   - `notes` <https://blog.acolyer.org/2018/01/10/mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm/>
@@ -1937,6 +1962,7 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=lfQEPWj97jk> (Osband)
   - `video` <http://techtalks.tv/talks/generalization-and-exploration-via-randomized-value-functions/62467/> (Osband)
   - `video` <https://youtu.be/ck4GixLs4ZQ?t=33m7s> (Osband)
+  - `video` <https://vimeo.com/252186381> (van Roy)
 
 
 #### ["Risk versus Uncertainty in Deep Learning: Bayes, Bootstrap and the Dangers of Dropout"](http://bayesiandeeplearning.org/papers/BDL_4.pdf) Osband

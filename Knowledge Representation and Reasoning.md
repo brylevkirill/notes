@@ -1165,7 +1165,8 @@
 ---
 ### machine reading projects - IBM Watson
 
-  ["The Science Behind an Answer"](http://youtube.com/watch?v=DywO4zksfXw) `video`
+  ["The Science Behind an Answer"](http://youtube.com/watch?v=DywO4zksfXw) `video`  
+  [IBM Watson vs Ken Jennings vs Brad Rutter](https://archive.org/details/Jeopardy.2011.02.The.IBM.Challenge) match `video`  
 
   ["Building Watson - A Brief Overview of the DeepQA Project"](http://youtube.com/watch?v=3G2H3DZ8rNc) by David Ferrucci `video`  
   ["AI: A Return to Meaning"](https://youtube.com/watch?v=1n-cwezu8j4) by David Ferrucci `video`  
@@ -1176,7 +1177,7 @@
 ----
 
   ["Building Watson: An Overview of the DeepQA Project"](https://aaai.org/ojs/index.php/aimagazine/article/view/2303) by Ferrucci et al. `paper`  
-  [papers](https://dropbox.com/sh/udz1kpzzz95xfd6/AADgpBmFsTS1CtkbClfmbyyqa)  
+  [papers](https://dropbox.com/sh/udz1kpzzz95xfd6/AADgpBmFsTS1CtkbClfmbyyqa) from IBM Watson team  
 
 
 

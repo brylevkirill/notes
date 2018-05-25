@@ -585,12 +585,13 @@
 
   [TPOT](https://github.com/EpistasisLab/tpot) project  
 
-  [auto_ml](http://auto-ml.readthedocs.io/en/latest/) project  
+  [auto_ml](http://auto-ml.readthedocs.io) project  
 
   [The Automatic Statistician](https://automaticstatistician.com) project  
-  - ["The Automatic Statistician"](https://youtu.be/H7AMB0oo__4?t=53m20s) by Zoubin Ghahramani `video`  
-  - ["The Automatic Statistician: A Project Update"](https://youtube.com/watch?v=WW2eunuApAU) by Zoubin Ghahramani `video`  
-  - ["The Automatic Statistician: an AI for Data Science"](https://www.snn.ru.nl/v2/img/ml2015/slides/Ghahramani_nijmegen15part2.pdf) by Zoubin Ghahramani `slides`  
+  - [overview](https://youtube.com/watch?v=aPDOZfu_Fyk) by Zoubin Ghahramani `video`  
+  - [overview](https://youtu.be/H7AMB0oo__4?t=53m20s) by Zoubin Ghahramani `video`  
+  - [overview](https://youtube.com/watch?v=WW2eunuApAU) by Zoubin Ghahramani `video`  
+  - [overview](https://www.snn.ru.nl/v2/img/ml2015/slides/Ghahramani_nijmegen15part2.pdf) by Zoubin Ghahramani `slides`  
 
 ----
 
