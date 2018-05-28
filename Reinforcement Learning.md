@@ -638,7 +638,6 @@
   ["Deep Exploration via Randomized Value Functions"](#deep-exploration-via-randomized-value-functions-osband-russo-wen-van-roy) by Osband et al. `paper` `summary`  
   ["Efficient Exploration through Bayesian Deep Q-Networks"](https://arxiv.org/abs/1802.04412) by Azizzadenesheli et al. `paper`  
   ["Noisy Networks for Exploration"](#noisy-networks-for-exploration-fortunato-et-al) by Fortunato et al. `paper` `summary`  
-  ["Approximate Bayes Optimal Policy Search using Neural Networks"](#approximate-bayes-optimal-policy-search-using-neural-networks-castronovo-francois-lavet-fonteneau-ernst-couetoux) by Castronovo et al. `paper` `summary`  
   ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](#rl2-fast-reinforcement-learning-via-slow-reinforcement-learning-duan-schulman-chen-bartlett-sutskever-abbeel) by Duan et al. `paper` `summary`  
   ["Learning to Reinforcement Learn"](#learning-to-reinforcement-learn-wang-et-al) by Wang et al. `paper` `summary`  
 
@@ -1099,10 +1098,12 @@
   ["Bayesian Reinforcement Learning: A Survey"](https://arxiv.org/abs/1609.04436) by Ghavamzadeh et al. `paper`  
   ["Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review"](https://arxiv.org/abs/1805.00909) by Sergey Levine `paper` ([talk](https://youtu.be/iOYiPhu5GEk?t=2m34s) `video`)  
 
+  ["Bayes-Adaptive POMDPs"](https://papers.nips.cc/paper/3333-bayes-adaptive-pomdps) by Ross et al. `paper`  
   ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](#efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search-guez-silver-dayan) by Guez et al. `paper` `summary`  
   ["Monte-Carlo Planning in Large POMDPs"](https://papers.nips.cc/paper/4031-monte-carlo-planning-in-large-pomdps) by Silver et al. `paper`
 	([overview](https://yadi.sk/i/lOAUu7o13JBHFz) (1:39:35) by Pavel Shvechikov `video` `in russian`, [demo](https://youtube.com/watch?v=fXuOeNM_yEk) `video`)  
-  ["Approximate Bayes Optimal Policy Search using Neural Networks"](#approximate-bayes-optimal-policy-search-using-neural-networks-castronovo-francois-lavet-fonteneau-ernst-couetoux) by Castronovo et al. `paper` `summary`  
+  ["Learning in POMDPs with Monte Carlo Tree Search"](http://proceedings.mlr.press/v70/katt17a.html) by Katt et al. `paper`  
+  ["Variational Inference for Data-Efficient Model Learning in POMDPs"](https://arxiv.org/abs/1805.09281) by Tschiatschek et al. `paper`  
 
 
 ----
@@ -1539,7 +1540,7 @@ interesting recent papers:
   - `video` <http://youtube.com/watch?v=dV80NAlEins> (de Freitas)
   - `video` [from value function approximation to Deep Q-Network](http://youtu.be/UoPei5o4fps?t=1h9m) (Silver)
   - `video` [from Fitted Value Iteration to Deep Q-Network](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/#t=2929) (Szepesvari)
-  - `video` <https://yadi.sk/i/AHDU2p_j3FT3nr> + <https://yadi.sk/i/EeUeheri3FT3ra> (Ratnikov and Vasilev) `in russian`
+  - `video` <https://yadi.sk/i/AHDU2p_j3FT3nr> + <https://yadi.sk/i/EeUeheri3FT3ra> (Ratnikov, Vasilev) `in russian`
 
 
 #### ["Playing FPS Games with Deep Reinforcement Learning"](https://arxiv.org/abs/1609.05521) Lample, Chaplot
@@ -1976,16 +1977,6 @@ interesting recent papers:
 
   - `code` <https://github.com/Kaixhin/NoisyNet-A3C>
   - `code` <https://github.com/andrewliao11/NoisyNet-DQN>
-
-
-#### ["Approximate Bayes Optimal Policy Search using Neural Networks"](http://orbi.ulg.ac.be/bitstream/2268/204410/1/ANN-BRL.pdf) Castronovo, Francois-Lavet, Fonteneau, Ernst, Couetoux
->	"Bayesian Reinforcement Learning agents aim to maximise the expected collected rewards obtained when interacting with an unknown Markov Decision Process while using some prior knowledge. State-of-the-art BRL agents rely on frequent updates of the belief on the MDP, as new observations of the environment are made. This offers theoretical guarantees to converge to an optimum, but is computationally intractable, even on small-scale problems. In this paper, we present a method that circumvents this issue by training a parametric policy able to recommend an action directly from raw observations. Artificial Neural Networks are used to represent this policy, and are trained on the trajectories sampled from the prior. The trained model is then used online, and is able to act on the real MDP at a very low computational cost. Our new algorithm shows strong empirical performance, on a wide range of test problems, and is robust to inaccuracies of the prior distribution."
-
->	"Bayes-Adaptive Markov Decision Processes form a natural framework to deal with sequential decision-making problems when some of the information is hidden. In these problems, an agent navigates in an initially unknown environment and receives a numerical reward according to its actions. However, actions that yield the highest instant reward and actions that maximise the gathering of knowledge about the environment are often different. The BAMDP framework leads to a rigorous definition of an optimal solution to this learning problem, which is based on finding a policy that reaches an optimal balance between exploration and exploitation. In this research, the case where prior knowledge is available about the environment is studied. More specifically, this knowledge is represented as a random distribution over possible environments, and can be updated as the agent makes new observations."
-
->	"State-of-the-art Bayesian algorithms generally do not use offline training. Instead, they rely on Bayes updates and sampling techniques during the interaction, which may be too computationally expensive, even on very small MDPs. In order to reduce significantly this cost, we propose a new practical algorithm to solve BAMDPs: Artificial Neural Networks for Bayesian Reinforcement Learning. Our algorithm aims at finding an optimal policy, i.e. a mapping from observations to actions, which maximises the rewards in a certain environment. This policy is trained to act optimally on some MDPs sampled from the prior distribution, and then it is used in the test environment. By design, our approach does not use any Bayes update, and is thus computationally inexpensive during online interactions."
-
->	"We developed ANN-BRL, an offline policy-search algorithm for addressing BAMDPs. As shown by our experiments, ANN-BRL obtained state-of-the-art performance on all benchmarks considered in this paper. In particular, on the most challenging benchmark 9, a score 4 times higher than the one measured for the second best algorithm has been observed. Moreover, ANN-BRL is able to make online decisions faster than most BRL algorithms. Our idea is to define a parametric policy as an ANN, and train it using backpropagation algorithm. This requires a training set made of observations-action pairs and in order to generate this dataset, several simulations have been performed on MDPs drawn from prior distribution. In theory, we should label each example with a Bayes optimal action. However, those are too expensive to compute for the whole dataset. Instead, we chose to use optimal actions under full observability hypothesis. Due to the modularity of our approach, a better labelling technique could easily be integrated in ANN-BRL, and may bring stronger empirical results. Moreover, two types of features have been considered for representing the current history: Q-values and transition counters. The use of Q-values allows to reach state-of-the-art performance on most benchmarks and outperfom all other algorithms on the most difficult one. On the contrary, computing a good policy from transition counters only is a difficult task to achieve, even for Artificial Neural Networks. Nevertheless, we found that the difference between this approach and state-of-the-art algorithms was much less noticeable when prior distribution differs from test distribution, which means that at least in some cases, it is possible to compute efficient policies without relying on online computationally expensive tools such as Q-values."
 
 
 #### ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](http://arxiv.org/abs/1611.02779) Duan, Schulman, Chen, Bartlett, Sutskever, Abbeel
@@ -2505,7 +2496,7 @@ interesting recent papers:
   - `video` <http://youtube.com/watch?v=dV80NAlEins> (de Freitas)
   - `video` [from value function approximation to Deep Q-Network](http://youtu.be/UoPei5o4fps?t=1h9m) (Silver)
   - `video` [from Fitted Value Iteration to Deep Q-Network](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/#t=2929) (Szepesvari)
-  - `video` <https://yadi.sk/i/AHDU2p_j3FT3nr> + <https://yadi.sk/i/EeUeheri3FT3ra> (Ratnikov and Vasilev) `in russian`
+  - `video` <https://yadi.sk/i/AHDU2p_j3FT3nr> + <https://yadi.sk/i/EeUeheri3FT3ra> (Ratnikov, Vasilev) `in russian`
   - `code` <https://github.com/higgsfield/RL-Adventure/blob/master/1.dqn.ipynb>
 
 

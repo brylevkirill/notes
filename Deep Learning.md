@@ -90,14 +90,15 @@
 
   [applications](#interesting-papers---applications)
 
+  [other applications](https://yadi.sk/d/mQnJYmxo3WZDvP)
+
   [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)  
   [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)  
   [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
   [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
   [natural language processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md)  
+  [recommender systems](https://github.com/brylevkirill/notes/blob/master/Recommender%20Systems.md)  
   [information retrieval](https://github.com/brylevkirill/notes/blob/master/Information%20Retrieval.md)  
-
-  [other applications](https://dropbox.com/sh/dio0ypwiph44ehn/AAADQCyEutvVt9iugVU1F5S8a)
 
 
 #### research areas
@@ -117,7 +118,6 @@
   - metric learning and kernel learning
   - dimensionality expansion, sparse modeling
   - compositional / hierarchical models
-  - non-convex optimization for representation learning
   - architecture engineering
 
 
@@ -2778,14 +2778,7 @@ x."
 
 
 #### ["Learning Representations for Counterfactual Inference"](http://arxiv.org/abs/1605.03661) Johansson, Shalit, Sontag
->	"Observational studies are rising in importance due to the widespread accumulation of data in fields such as healthcare, education, employment and ecology. We consider the task of answering counterfactual questions such as, "Would this patient have lower blood sugar had she received a different medication?". We propose a new algorithmic framework for counterfactual inference which brings together ideas from domain adaptation and representation learning. In addition to a theoretical justification, we perform an empirical comparison with previous approaches to causal inference from observational data. Our deep learning algorithm significantly outperforms the previous state-of-the-art."
-
->	"As machine learning is becoming a major tool for researchers and policy makers across different fields such as healthcare and economics, causal inference becomes a crucial issue for the practice of machine learning. In this paper we focus on counterfactual inference, which is a widely applicable special case of causal inference. We cast counterfactual inference as a type of domain adaptation problem, and derive a novel way of learning representations suited for this problem. Our models rely on a novel type of regularization criteria: learning balanced representations, representations which have similar distributions among the treated and untreated populations. We show that trading off a balancing criterion with standard data fitting and regularization terms is both practically and theoretically prudent. Open questions which remain are how to generalize this method for cases where more than one treatment is in question, deriving better optimization algorithms and using richer discrepancy measures."
-
-  - `video` <http://techtalks.tv/talks/learning-representations-for-counterfactual-inference/62489/> (Johansson)
-  - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (Shalit)
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/JohanssonSS16>
-  - `code` <https://github.com/clinicalml/cfrnet>
+  - <https://github.com/brylevkirill/notes/blob/master/Causal%20Inference.md#johansson-shalit-sontag---learning-representations-for-counterfactual-inference>
 
 
 #### ["Domain-Adversarial Training of Neural Networks"](http://arxiv.org/abs/1505.07818) Ganin, Ustinova, Ajakan, Germain, Larochelle, Laviolette, Marchand, Lempitsky

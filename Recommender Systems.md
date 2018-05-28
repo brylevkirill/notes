@@ -19,6 +19,7 @@
 
   [overview](https://youtube.com/watch?v=gCaOa3W9kM0) by Alex Smola `video`  
   [overview](https://youtube.com/watch?v=xMr7I-OypVY) by Alex Smola `video`  
+
   [tutorial](http://technocalifornia.blogspot.ru/2014/08/introduction-to-recommender-systems-4.html) by Xavier Amatriain `video`  
   ["The Recommender Problem Revisited"](http://videolectures.net/kdd2014_amatriain_mobasher_recommender_problem) by Xavier Amatriain `video`  
   ["Lessons Learned from Building Real-life Recommender Systems"](https://youtube.com/watch?v=VJOtr47V0eo) by Xavier Amatriain and Deepak Agarwal `video`  
@@ -37,6 +38,8 @@
   [overview](https://youtube.com/watch?v=Te_6TqEhyTI) by Victor Kantor `video` `in russian`  
   [overview](https://youtube.com/watch?v=5ir_fCgzfLM) by Vladimir Gulin `video` `in russian`  
   [overview](https://youtube.com/watch?v=MLljnzsz9Dk) by Alexey Dral `video` `in russian`  
+
+  [overview](https://youtube.com/watch?v=N0NUwz3xWX4) of deep learning for recommender systems by Dmitry Ushanov `video` `in russian`
 
   [overview](https://youtube.com/watch?v=iGAMPnv-0VY) of Yandex.Zen by Igor Lifar and Dmitry Ushanov `video` `in russian`  
   [overview](https://youtube.com/watch?v=JKTneRi2vn8) of Yandex.Disco by Michael Rozner `video` `in russian`  
@@ -132,7 +135,7 @@
 
 >	"An additional advantage of our approach is that it can be applied on top of any existing latent model to provide/enhance its cold start capability. This requires virtually no modification to the original model thus minimizing the implementation barrier for any production environment that’s already running latent models."
 
-  - `video` <https://youtu.be/YSQqHlQwQDY?t=1h44m18s> (Ushanov) `in russian`
+  - `video` <https://youtu.be/N0NUwz3xWX4?t=10m44s> (Ushanov) `in russian`
   - `code` <https://github.com/HongleiXie/DropoutNet>
 
 

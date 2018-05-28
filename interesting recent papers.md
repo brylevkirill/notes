@@ -723,6 +723,9 @@ interesting older papers:
   - `video` <https://yadi.sk/i/pMdw-_uI3Gke7Z> (Shvechikov) `in russian`
 
 ----
+#### ["Continual Lifelong Learning with Neural Networks: A Review"](https://arxiv.org/abs/1802.07569) Parisi, Kemker, Part, Kanan, Wermter
+  `continual learning`
+
 #### ["Learning Long-term Dependencies with Deep Memory States"](https://people.eecs.berkeley.edu/~vitchyr/learning_long_term_dependencies_with_deep_memory_states__pong_gu_levine.pdf) Pong, Gu, Levine
   `continual learning`
 >	"Training an agent to use past memories to adapt to new tasks and environments is important for lifelong learning algorithms. Training such an agent to use its memory efficiently is difficult as the size of its memory grows with each successive interaction. Previous work has not yet addressed this problem, as they either use backpropagation through time (BPTT), which is computationally expensive, or truncated BPTT, which cannot learn long-term dependencies, to train recurrent policies. We propose a reinforcement learning method that addresses the limitations of truncated BPTT by using a learned critic to estimate truncated gradients and by saving and loading hidden states outputted by recurrent neural networks. We present results showing that our algorithm can learn long-term dependencies while avoiding the computational constraints of BPTT. These results suggest that our method can potentially be used to train an agent that stores and effectively learns from past memories."  
@@ -764,20 +767,18 @@ interesting older papers:
 
 #### ["Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"](https://arxiv.org/abs/1701.06538) Shazeer, Mirhoseini, Maziarz, Davis, Le, Hinton, Dean
   `continual learning` `catastrophic forgetting`
+>	"The Mixture of Experts Layer is trained using back-propagation. The Gating Network outputs an (artificially made) sparse vector that acts as a chooser of which experts to consult. More than one expert can be consulted at once (although the paper doesn’t give any precision on the optimal number of experts). The Gating Network also decides on output weights for each expert."  
 >	"The MoE with experts shows higher accuracy (or lower perplexity) than the state of the art using only 16% of the training time."  
   - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (14:39) (Bengio)
   - `video` <https://youtube.com/watch?v=nNZceFX2tQU> (Zakirov) `in russian`
   - `notes` <https://github.com/dennybritz/deeplearning-papernotes/blob/3718d181a0fed5ed806582822ed0dbde530122bf/notes/mixture-experts.md>
 
 #### ["Overcoming Catastrophic Forgetting in Neural Networks"](http://arxiv.org/abs/1612.00796) Kirkpatrick et al.
-  `continual learning` `catastrophic forgetting` `Elastic Weight Consolidation`
->	"The Mixture of Experts Layer is trained using back-propagation. The Gating Network outputs an (artificially made) sparse vector that acts as a chooser of which experts to consult. More than one expert can be consulted at once (although the paper doesn’t give any precision on the optimal number of experts). The Gating Network also decides on output weights for each expert."  
->
->	Huszar:  
->	"on-line sequential (diagonalized) Laplace approximation of Bayesian learning"  
->	"EWC makes sense for any neural network (indeed, any parametric model, really), virtually any task. Doesn't have to be DQN and in fact the paper itself shows examples with way simpler tasks."  
+  `continual learning` `catastrophic forgetting` `Elastic Weight Consolidation` `EWC`
+>	"EWC adds regularization term to the loss which reflects a Gaussian prior for each parameter of neural network whose means are the old parameters. It uses the approximate Fisher information as a way of estimating the Hessian to assess importance, which implicitly sets the variance of each parameter prior."  
 >	"The quadratic penalty/penalties prevent the network from forgetting what it has learnt from previous data - you can think of the quadratic penalty as a summary of the information from the data it has seen so far."  
->	"You can apply it at the level of learning tasks sequentially, or you can even apply it to on-line learning in a single task (in case you can't loop over the same minibatches several time like you do in SGD)."  
+>	"You can apply EWC at the level of learning tasks sequentially, or you can even apply it to on-line learning in a single task (in case you can't loop over the same minibatches several time like you do in SGD)."  
+>	"EWC is an on-line sequential (diagonalized) Laplace approximation of Bayesian learning."  
   - `paper` <http://www.pnas.org/content/early/2017/03/13/1611835114.abstract>
   - `post` <https://deepmind.com/blog/enabling-continual-learning-in-neural-networks/>
   - `video` <https://vimeo.com/238221551#t=13m9s> (Hadsell)
@@ -1405,7 +1406,7 @@ interesting older papers:
 >	- fast to calculate p(x)  
 >	- fast to sample from  
 >	- limited capacity vs MAF"  
-  - `video` <https://facebook.com/nipsfoundation/videos/1555553784535855/> (2:17) (Papamakarios)
+  - `video` <https://vimeo.com/252105837> (Papamakarios)
   - `post` <http://blog.evjang.com/2018/01/nf2.html>
   - `code` <https://github.com/gpapamak/maf>
 
