@@ -168,7 +168,6 @@
   ["Probabilistic Graphical Models: Principles and Techniques"](https://dropbox.com/s/cc3mafx3wp0ad1t/Daphne%20Koller%20and%20Nir%20Friedman%20-%20Probabilistic%20Graphical%20Models%20-%20Principles%20and%20Techniques.pdf) by Daphne Koller and Nir Friedman  
   ["Graphical Models, Exponential Families, and Variational Inference"](https://people.eecs.berkeley.edu/~wainwrig/Papers/WaiJor08_FTML.pdf) by Martin Wainwright and Michael Jordan  
   ["Elements of Causal Inference"](https://mitpress.mit.edu/books/elements-causal-inference) by Jonas Peters, Dominik Janzing, Bernhard Scholkopf  
-  ["Causality: Models, Reasoning, and Inference"](https://dropbox.com/s/m2m1935e6tohii9/Pearl%20-%20Causality%3A%20Models%2C%20Reasoning%2C%20and%20Inference.pdf) by Judea Pearl  
   ["Probability Theory: The Logic of Science"](https://dropbox.com/s/pt5tpm9i5wofbl5/Jaynes%20-%20Probability%20Theory%20-%20The%20Logic%20of%20Science.pdf) by E.T. Jaynes  
 
 ----

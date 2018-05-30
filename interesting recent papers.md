@@ -49,60 +49,30 @@ interesting older papers:
 >	"This tutorial will review recent work that aims to provide a mathematical justification for several properties of deep networks, such as global optimality, geometric stability, and invariance of the learned representations."  
 
 ----
+#### ["Measuring the Tendency of CNNs to Learn Surface Statistical Regularities"](https://arxiv.org/abs/1711.11561) Jo, Bengio
+  `generalization`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#measuring-the-tendency-of-cnns-to-learn-surface-statistical-regularities-jo-bengio>
+
+#### ["Deep Image Prior"](https://arxiv.org/abs/1711.10925) Ulyanov, Vedaldi, Lempitsky
+  `generalization`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#deep-image-prior-ulyanov-vedaldi-lempitsky>
+
 #### ["Understanding Deep Learning Requires Rethinking Generalization"](http://arxiv.org/abs/1611.03530) Zhang, Bengio, Hardt, Recht, Vinyals
   `generalization`
->	"1. The effective capacity of neural networks is large enough for a brute-force memorization of the entire data set.  
->	 2. Even optimization on random labels remains easy. In fact, training time increases only by a small constant factor compared with training on the true labels.  
->	 3. Randomizing labels is solely a data transformation, leaving all other properties of the learning problem unchanged."  
->	"It is likely that learning in the traditional sense still occurs in part, but it appears to be deeply intertwined with massive memorization. Classical approaches are therefore poorly suited for reasoning about why these models generalize well."  
->
->	"Deep Learning networks are just massive associative memory stores! Deep Learning networks are capable of good generalization even when fitting random data. This is indeed strange in that many arguments for the validity of Deep Learning is on the conjecture that ‘natural’ data tends to exists in a very narrow manifold in multi-dimensional space. Random data however does not have that sort of tendency."  
->
->	"Large, unregularized deep nets outperform shallower nets with regularization."  
->	"SOTA models can fit arbitrary label patterns, even on large data-sets like ImageNet."  
->	"Popular models can fit structureless noise."  
-
->	"In the case of one-pass SGD, where each training point is only visited at most once, the algorithm is essentially optimizing the expected loss directly. Therefore, there is no need to define generalization. However, in practice, unless one has access to infinite training samples, one-pass SGD is rarely used. Instead, it is almost always better to run many passes of SGD over the same training set. In this case, the algorithm is optimizing the empirical loss, and the deviation between the empirical loss and the expected loss (i.e. the generalization error) needs to be controlled. In statistical learning theory, the deviation is typically controlled by restricting the complexity of the hypothesis space. For example, in binary classification, for a hypothesis space with VC-dimension d and n i.i.d. training samples, the generalization error could be upper bounded by O(sqrt(d/n)). In the distribution-free setting, the VC dimension also provide a lower bound for the generalization error. For example, if we are highly over-parameterized, i.e. d >> n, then there is a data distribution under which the generalization error could be arbitrarily bad. This worst case behavior is recently demonstrated by a randomization test on large neural networks that have the full capability of shattering the whole training set. In those experiments, zero-error minimizers for the empirical loss are found by SGD. Since the test performance could be only at the level of chance, the worst possible generalization error is observed. On the other hand, those same networks are found to generalize very well on natural image classification datasets, achieving the state-of-the-art performance on some standard benchmarks. This create a puzzle as our traditional characterization of generalization no longer readily apply in this scenario."
-
->	"You might assume that if you can fit each point in a random training set you would have bad generalization performance because because if your model class can do this then all of the standard learning theory bounds for generalization error are quite dire. VC theory gives generalization bounds in terms of the maximum number of points where you can achieve zero training error for every possible labelling (they call this "shattering"). Rademacher complexity gives tighter bounds, but they are in terms of the expected error of the model class over uniform random labellings of your data (the expectation is over the randomness in the random labels). If you model class is powerful enough to fit any arbitrary labelling of your data set then both of these theories give no guarantees at all about generalization error. They can't guarantee you will ever make a single correct prediction, even with infinite test samples. Obviously, experience says otherwise. Neural nets tend to generalize pretty well (often surprisingly well) in spite of the dire predictions of learning theory. That's why this result requires "rethinking generalization"; the stuff we know about generalization doesn't explain any of the success we see in practice."
-  - `video` <https://facebook.com/iclr.cc/videos/1710657292296663/> (18:25) (Recht)
-  - `video` <https://facebook.com/iclr.cc/videos/1710657292296663/> (53:40) (Zhang)
-  - `notes` <https://theneuralperspective.com/2017/01/24/understanding-deep-learning-requires-rethinking-generalization/>
-  - `notes` <https://blog.acolyer.org/2017/05/11/understanding-deep-learning-requires-re-thinking-generalization/>
-  - `notes` <https://reddit.com/r/MachineLearning/comments/6ailoh/r_understanding_deep_learning_requires_rethinking/dhis1hz/>
-  - `post` <http://www.offconvex.org/2017/12/08/generalization1/> (Arora)
-
-#### ["Generalization in Deep Learning"](https://arxiv.org/abs/1710.05468) Kawaguchi, Kaelbling, Bengio
-  `generalization`
->	"Unlike previous bound-based theory, our main theory is quantitatively as tight as possible for every dataset individually, while producing qualitative insights competitively. Our results give insight into why and how deep learning can generalize well, despite its large capacity, complexity, possible algorithmic instability, nonrobustness, and sharp minima, answering to an open question in the literature."  
-  - `video` <https://youtube.com/watch?v=z9je5YlnBgI> (Changkun)
-
-#### ["A Closer Look at Memorization in Deep Networks"](https://arxiv.org/abs/1706.05394) Arpit et al.
-  `generalization`
->	"We examine the role of memorization in deep learning, drawing connections to capacity, generalization, and adversarial robustness. While deep networks are capable of memorizing noise data, our results suggest that they tend to prioritize learning simple patterns first. In our experiments, we expose qualitative differences in gradient-based optimization of deep neural networks on noise vs. real data. We also demonstrate that for appropriately tuned explicit regularization (e.g., dropout) we can degrade DNN training performance on noise datasets without compromising generalization on real data. Our analysis suggests that the notions of effective capacity which are dataset independent are unlikely to explain the generalization performance of deep networks when trained with gradient based methods because training data itself plays an important role in determining the degree of memorization."  
-  - `video` <https://vimeo.com/238241921> (Krueger)
-  - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (42:27) (Bengio)
-
-#### ["A Bayesian Perspective on Generalization and Stochastic Gradient Descent"](https://arxiv.org/abs/1710.06451) Smith, Le
-  `generalization`
->	"How can we predict if a minimum will generalize to the test set, and why does stochastic gradient descent find minima that generalize well? Our work is inspired by Zhang et al. (2017), who showed deep networks can easily memorize randomly labeled training data, despite generalizing well when shown real labels of the same inputs. We show here that the same phenomenon occurs in small linear models. These observations are explained by evaluating the Bayesian evidence, which penalizes sharp minima but is invariant to model parameterization. We also explore the "generalization gap" between small and large batch training, identifying an optimum batch size which maximizes the test set accuracy."  
->	"The optimum batch size is proportional to the learning rate and the training set size. We verify these predictions empirically."  
-  - `paper` ["Don’t Decay the Learning Rate, Increate the Batch Size"](https://arxiv.org/abs/1711.00489) by Smith, Kindermans, Le
-
-#### ["On Large-Batch Training for Deep Learning: Generalization Gap and Sharp Minima"](https://arxiv.org/abs/1609.04836) Keskar, Mudigere, Nocedal, Smelyanskiy, Tang
-  `generalization`
->	"Deep networks generalise better with smaller batch-size when no other form of regularisation is used. And it may be because SGD biases learning towards flat local minima, rather than sharp local minima."  
->	"Using large batch sizes tends to find sharped minima and generalize worse. This means that we can’t talk about generalization without taking training algorithm into account."  
-  - `video` <https://youtu.be/cHjI37DsQCQ?t=29m39s> (Selvaraj)
-  - `video` <http://videolectures.net/deeplearning2017_larochelle_neural_networks/> (part 2, 1:25:55) (Larochelle)
-  - `slides` <https://iclr.cc/archive/www/lib/exe/fetch.php%3Fmedia=iclr2017:nocedal_iclr2017.pdf>
-  - `post` <http://inference.vc/everything-that-works-works-because-its-bayesian-2/>
-  - `code` <https://github.com/keskarnitish/large-batch-training>
-  - `paper` ["Flat Minima"](http://www.bioinf.jku.at/publications/older/3304.pdf) by Hochreiter, Schmidhuber
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#understanding-deep-learning-requires-rethinking-generalization-zhang-bengio-hardt-recht-vinyals>
 
 #### ["Sharp Minima Can Generalize For Deep Nets"](https://arxiv.org/abs/1703.04933) Dinh, Pascanu, Bengio, Bengio
   `generalization`
-  - `video` <https://vimeo.com/237275513> (Dinh)
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#sharp-minima-can-generalize-for-deep-nets-dinh-pascanu-bengio-bengio>
+
+#### ["A Closer Look at Memorization in Deep Networks"](https://arxiv.org/abs/1706.05394) Arpit et al.
+  `generalization`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#a-closer-look-at-memorization-in-deep-networks-arpit-et-al>
+
+#### ["Generalization in Deep Learning"](https://arxiv.org/abs/1710.05468) Kawaguchi, Kaelbling, Bengio
+  `generalization`
+>	"With a direct analysis of neural networks, this paper presents a mathematically tight generalization theory to partially address an open problem regarding the generalization of deep learning. Unlike previous bound-based theory, our main theory is quantitatively as tight as possible for every dataset individually, while producing qualitative insights competitively. Our results give insight into why and how deep learning can generalize well, despite its large capacity, complexity, possible algorithmic instability, nonrobustness, and sharp minima, answering to an open question in the literature. We also discuss limitations of our results and propose additional open problems."  
+  - `video` <https://youtube.com/watch?v=z9je5YlnBgI> (Changkun)
 
 #### ["mixup: Beyond Empirical Risk Minimization"](https://arxiv.org/abs/1710.09412) Zhang, Cisse, Dauphin, Lopez-Paz
   `generalization`
@@ -114,80 +84,47 @@ interesting older papers:
 
 #### ["Opening the Black Box of Deep Neural Networks via Information"](http://arxiv.org/abs/1703.00810) Shwartz-Ziv, Tishby
   `generalization` `information bottleneck`
->	"DNNs with SGD have two phases: error minimization, then representation compression"  
->	"
->	The Information Plane provides a unique visualization of DL  
->	  - Most of the learning time goes to compression  
->	  - Layers are learnt bottom up - and "help" each other  
->	  - Layers converge to special (critical?) points on the IB bound  
->	The advantage of the layers is mostly computational  
->	  - Relaxation times are super-linear (exponential?) in the Entropy gap  
->	  - Hidden layers provide intermediate steps and boost convergence time  
->	  - Hidden layers help in avoiding critical slowing down  
->	"
->	"For representation Z, maximizing mutual information with the output while minimizing mutual information with the input."  
->
->	"Consider the gradient of the loss with respect to the weights.  
->	Phase 1 (drift): Mean gradient size is much larger than the standard deviation.  
->	Phase 2 (diffusion): Mean gradient is smaller and noise takes over - Langevin/Boltzmann effect kicks in.  
->	Authors claim that SGD training compresses (reduces I(X;T)) in the diffusion phase."  
-  - `video` <https://youtube.com/watch?v=XL07WEc2TRI> (Tishby)
-  - `video` <https://youtube.com/watch?v=EQTtBRM0sIs> (Tishby)
-  - `video` <https://youtube.com/watch?v=bLqJHjXihK8> (Tishby)
-  - `video` <https://youtube.com/watch?v=ekUWO_pI2M8> (Tishby)
-  - `video` <https://youtu.be/RKvS958AqGY?t=12m7s> (Tishby)
-  - `video` <https://youtu.be/cHjI37DsQCQ?t=41m40s> (Selvaraj)
-  - `post` <https://lilianweng.github.io/lil-log/2017/09/28/anatomize-deep-learning-with-information-theory.html>
-  - `post` <https://weberna.github.io/jekyll/update/2017/11/08/Information-Bottleneck-Part1.html>
-  - `post` <http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/>
-  - `post` <https://medium.com/intuitionmachine/the-peculiar-behavior-of-deep-learning-loss-surfaces-330cb741ec17>
-  - `notes` <https://blog.acolyer.org/2017/11/15/opening-the-black-box-of-deep-neural-networks-via-information-part-i/>
-  - `notes` <https://blog.acolyer.org/2017/11/16/opening-the-black-box-of-deep-neural-networks-via-information-part-ii/>
-  - `notes` <https://theneuralperspective.com/2017/03/24/opening-the-black-box-of-deep-neural-networks-via-information/>
-  - `notes` <https://reddit.com/r/MachineLearning/comments/60fhyb/r_opening_the_black_box_of_deep_neural_networks/df8jsbm/>
-  - `press` <https://quantamagazine.org/new-theory-cracks-open-the-black-box-of-deep-learning-20170921>
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#opening-the-black-box-of-deep-neural-networks-via-information-shwartz-ziv-tishby>
 
 #### ["Deep Variational Information Bottleneck"](https://arxiv.org/abs/1612.00410) Alemi, Fischer, Dillon, Murphy
   `generalization` `information bottleneck`
->	"The IB principle is appealing, since it defines what we mean by a good representation, in terms of the fundamental tradeoff between having a concise representation and one with good predictive power. The main drawback of the IB principle is that computing mutual information is, in general, computationally challenging. We propose to use variational inference to construct a lower bound on the IB objective. By using the reparameterization trick, we can use Monte Carlo sampling to get an unbiased estimate of the gradient, and hence we can optimize the objective using stochastic gradient descent. This allows us to use deep neural networks to parameterize our distributions, and thus to handle high-dimensional, continuous data, such as images, avoiding the previous restrictions to the discrete or Gaussian cases."  
->	"Stochastic neural networks, fit using our VIB method, are robust to overfitting, since VIB finds a representation Z which ignores as many details of the input X as possible. In addition, they are more robust to adversarial inputs than deterministic models which are fit using (penalized) maximum likelihood estimation. Intuitively this is because each input image gets mapped to a distribution rather than a unique Z, so it is more difficult to pass small, idiosyncratic perturbations through the latent bottleneck."  
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#deep-variational-information-bottleneck-alemi-fischer-dillon-murphy>
 
 #### ["On the Emergence of Invariance and Disentangling in Deep Representations"](https://arxiv.org/abs/1706.01350) Achille, Soatto
   `generalization` `information bottleneck`
->	"We have presented bounds, some of which tight, that connect the amount of information in the weights, the amount of information in the activations, the invariance property of the network, and the geometry of the residual loss."  
->	"This leads to the somewhat surprising result that reducing information stored in the weights about the past (dataset) results in desirable properties of the representation of future data (test datum)."  
-
->	"We conducted experiments to validate the assumptions underlying these bounds, and found that the results match the qualitative behavior observed on real data and architectures. In particular, the theory predicts a verifiable phase transition between an underfitting and overfitting regime for random labels, and the amount of information in nats needed to cross the transition."  
->	"We show that in a deep neural network invariance to nuisance factors is equivalent to information minimality of the learned representation, and that stacking layers and injecting noise during training naturally bias the network towards learning invariant representations. We then show that, in order to avoid memorization, we need to limit the quantity of information stored in the weights, which leads to a novel usage of the Information Bottleneck Lagrangian on the weights as a learning criterion."  
->	"Information Bottleneck principle: minimize mutual information of the representation with the training data."  
-  - `video` <https://youtube.com/watch?v=BCSoRTMYQcw> (Achille)
-  - `video` <https://youtube.com/watch?v=zbg49SMP5kY> (Soatto)
-
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#on-the-emergence-of-invariance-and-disentangling-in-deep-representations-achille-soatto>
 
 ----
+#### ["A Bayesian Perspective on Generalization and Stochastic Gradient Descent"](https://arxiv.org/abs/1710.06451) Smith, Le
+  `optimization` `generalization`
+>	"How can we predict if a minimum will generalize to the test set, and why does stochastic gradient descent find minima that generalize well? Our work is inspired by Zhang et al. (2017), who showed deep networks can easily memorize randomly labeled training data, despite generalizing well when shown real labels of the same inputs. We show here that the same phenomenon occurs in small linear models. These observations are explained by evaluating the Bayesian evidence, which penalizes sharp minima but is invariant to model parameterization. We also explore the "generalization gap" between small and large batch training, identifying an optimum batch size which maximizes the test set accuracy."  
+>	"The optimum batch size is proportional to the learning rate and the training set size. We verify these predictions empirically."  
+  - `paper` ["Don’t Decay the Learning Rate, Increate the Batch Size"](https://arxiv.org/abs/1711.00489) by Smith, Kindermans, Le
+
+#### ["On Large-Batch Training for Deep Learning: Generalization Gap and Sharp Minima"](https://arxiv.org/abs/1609.04836) Keskar, Mudigere, Nocedal, Smelyanskiy, Tang
+  `optimization` `generalization`
+>	"Deep networks generalise better with smaller batch-size when no other form of regularisation is used. And it may be because SGD biases learning towards flat local minima, rather than sharp local minima."  
+>	"Using large batch sizes tends to find sharped minima and generalize worse. This means that we can’t talk about generalization without taking training algorithm into account."  
+  - `video` <https://youtu.be/cHjI37DsQCQ?t=29m39s> (Selvaraj)
+  - `video` <http://videolectures.net/deeplearning2017_larochelle_neural_networks/> (part 2, 1:25:55) (Larochelle)
+  - `slides` <https://iclr.cc/archive/www/lib/exe/fetch.php%3Fmedia=iclr2017:nocedal_iclr2017.pdf>
+  - `post` <http://inference.vc/everything-that-works-works-because-its-bayesian-2/>
+  - `code` <https://github.com/keskarnitish/large-batch-training>
+  - `paper` ["Flat Minima"](http://www.bioinf.jku.at/publications/older/3304.pdf) by Hochreiter, Schmidhuber
+
+#### ["First-order Methods Almost Always Avoid Saddle Points"](https://arxiv.org/abs/1710.07406) Lee, Panageas, Piliouras, Simchowitz, Jordan, Recht
+  `optimization`
+>	"We establish that first-order methods avoid saddle points for almost all initializations. Our results apply to a wide variety of first-order methods, including gradient descent, block coordinate descent, mirror descent and variants thereof. The connecting thread is that such algorithms can be studied from a dynamical systems perspective in which appropriate instantiations of the Stable Manifold Theorem allow for a global stability analysis. Thus, neither access to second-order derivative information nor randomness beyond initialization is necessary to provably avoid saddle points."  
+
+#### ["Self-Normalizing Neural Networks"](https://arxiv.org/abs/1706.02515) Klambauer, Unterthiner, Mayr, Hochreiter
+  `optimization` `SELU`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#self-normalizing-neural-networks-klambauer-unterthiner-mayr-hochreiter>
+
 #### ["The Marginal Value of Adaptive Gradient Methods in Machine Learning"](https://arxiv.org/abs/1705.08292) Wilson, Roelofs, Stern, Srebro, Recht
   `optimization`
 >	"Authors argued that adaptive optimization methods tend to generalize less well than SGD and SGD with momentum (although they did not include K-FAC in their study)."  
 >	"Despite the fact that our experimental evidence demonstrates that adaptive methods are not advantageous for machine learning, the Adam algorithm remains incredibly popular. Adaptive gradient methods are particularly popular for training GANs and Q-learning with function approximation. Both of these applications stand out because they are not solving optimization problems. It is possible that the dynamics of Adam are accidentally well matched to these sorts of optimization-free iterative search procedures. It is also possible that carefully tuned stochastic gradient methods may work as well or better in both of these applications."  
   - `video` <https://facebook.com/nipsfoundation/videos/1554657104625523/> (2:13) (Roelofs)
-
-#### ["First-order Methods Almost Always Avoid Saddle Points"](https://arxiv.org/abs/1710.07406) Lee, Panageas, Piliouras, Simchowitz, Jordan, Recht
-  `optimization`
->	"We establish that first-order methods avoid saddle points for almost all initializations. Our results apply to a wide variety of first-order methods, including gradient descent, block coordinate descent, mirror descent and variants thereof. The connecting thread is that such algorithms can be studied from a dynamical systems perspective in which appropriate instantiations of the Stable Manifold Theorem allow for a global stability analysis. Thus, neither access to second-order derivative information nor randomness beyond initialization is necessary to provably avoid saddle points."
-
-#### ["Self-Normalizing Neural Networks"](https://arxiv.org/abs/1706.02515) Klambauer, Unterthiner, Mayr, Hochreiter
-  `optimization` `SELU`
->	"While batch normalization requires explicit normalization, neuron activations of SNNs automatically converge towards zero mean and unit variance. The activation function of SNNs are "scaled exponential linear units" (SELUs), which induce self-normalizing properties. Using the Banach fixed-point theorem, we prove that activations close to zero mean and unit variance that are propagated through many network layers will converge towards zero mean and unit variance -- even under the presence of noise and perturbations."  
->	"For activations not close to unit variance, we prove an upper and lower bound on the variance, thus, vanishing and exploding gradients are impossible."  
->
->	"Weights are initialized in such a way that for any unit in a layer with input weights wi Σ wi = 0 and Σ wi^2 = 1."  
->	"selu(x) = λx for x>0 and selu(x) = λ(αe^x − α) for x≤0, where α≈1.6733 and λ≈1.0507"  
-  - `video` <https://youtube.com/watch?v=h6eQrkkU9SA> (Hochreiter)
-  - `video` <https://facebook.com/nipsfoundation/videos/1555553784535855/> (47:04) (Klambauer)
-  - `video` <https://youtube.com/watch?v=gH-KWepKSNs> (Klambauer)
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1706.02515>
-  - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/self-normalizing-neural-networks/> `in russian`
-  - `code` <http://github.com/bioinf-jku/SNNs>
 
 #### ["The Shattered Gradients Problem: If resnets are the answer, then what is the question?"](https://arxiv.org/abs/1702.08591) Balduzzi, Frean, Leary, Lewis, Ma, McWilliams
   `optimization`
@@ -198,27 +135,21 @@ interesting older papers:
   - `video` <https://vimeo.com/237275640> (McWilliams)
 
 ----
+#### ["Measuring the Intrinsic Dimension of Objective Landscapes"](https://arxiv.org/abs/1804.08838) Li, Farkhoor, Liu, Yosinski
+  `interpretability`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#measuring-the-intrinsic-dimension-of-objective-landscapes-li-farkhoor-liu-yosinski>
+
 #### ["Interpretation of Neural Network is Fragile"](https://arxiv.org/abs/1710.10547) Ghorbani, Abid, Zou
   `interpretability`
->	"In this paper, we show that interpretation of deep learning predictions is extremely fragile in the following sense:  two perceptively indistinguishable inputs with the same predicted label can be assigned very different interpretations. We systematically characterize the fragility of several widely-used feature-importance interpretation methods (saliency maps, relevance propagation, and DeepLIFT) on ImageNet and CIFAR-10. Our experiments show that even small random perturbation can change the feature importance and new systematic perturbations can lead to dramatically different interpretations without changing the label. We extend these results to show that interpretations based on exemplars (e.g. influence functions) are similarly fragile. Our analysis of the geometry of the Hessian matrix gives insight on why fragility could be a fundamental challenge to the current interpretation approaches."  
-
-#### ["Understanding Black-box Predictions via Influence Functions"](https://arxiv.org/abs/1703.04730) Koh, Liang
-  `interpretability`
->	"We use influence functions, a classic technique from robust statistics, to trace a model's prediction through the learning algorithm and back to its training data, thereby identifying training points most responsible for a given prediction."  
->	"We show that even on non-convex and non-differentiable models where the theory breaks down, approximations to influence functions can still provide valuable information."  
->	"On linear models and convolutional neural networks, we demonstrate that influence functions are useful for multiple purposes: understanding model behavior, debugging models, detecting dataset errors, and even creating visually-indistinguishable training-set attacks."  
-  - `video` <https://youtube.com/watch?v=0w9fLX_T6tY> (Koh)
-  - `video` <https://vimeo.com/237274831> (Koh)
-  - `video` <https://facebook.com/academics/videos/1633085090076225/> (1:23:28) (Liang)
-  - `video` <https://youtube.com/watch?v=dk6UsEzfKdU> (Matushkin) `in russian`
-  - `code` <https://github.com/kohpangwei/influence-release>
-  - `code` <https://github.com/darkonhub/darkon>
+>	"In this paper, we show that interpretation of deep learning predictions is extremely fragile in the following sense: two perceptively indistinguishable inputs with the same predicted label can be assigned very different interpretations. We systematically characterize the fragility of several widely-used feature-importance interpretation methods (saliency maps, relevance propagation, and DeepLIFT) on ImageNet and CIFAR-10. Our experiments show that even small random perturbation can change the feature importance and new systematic perturbations can lead to dramatically different interpretations without changing the label. We extend these results to show that interpretations based on exemplars (e.g. influence functions) are similarly fragile. Our analysis of the geometry of the Hessian matrix gives insight on why fragility could be a fundamental challenge to the current interpretation approaches."  
 
 #### ["On Calibration of Modern Neural Networks"](https://arxiv.org/abs/1706.04599) Guo, Pleiss, Sun, Weinberger
   `interpretability`
->	"Confidence calibration - the problem of predicting probability estimates representative of the true correctness likelihood - is important for classification models in many applications. We discover that modern neural networks, unlike those from a decade ago, are poorly calibrated. Through extensive experiments, we observe that depth, width, weight decay, and Batch Normalization are important factors influencing calibration. We evaluate the performance of various post-processing calibration methods on state-of-the-art architectures with image and document classification datasets. Our analysis and experiments not only offer insights into neural network learning, but also provide a simple and straightforward recipe for practical settings: on most datasets, temperature scaling - a single-parameter variant of Platt Scaling - is surprisingly effective at calibrating predictions."  
->	"A network should provide a calibrated confidence measure in addition to its prediction. In other words, the probability associated with the predicted class label should reflect its ground truth correctness likelihood. Calibrated confidence estimates are also important for model interpretability. Good confidence estimates provide a valuable extra bit of information to establish trustworthiness with the user - especially for neural networks, whose classification decisions are often difficult to interpret. Further, good probability estimates can be used to incorporate neural networks into other probabilistic models."  
-  - `video` <https://vimeo.com/238242536> (Pleiss)
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#on-calibration-of-modern-neural-networks-guo-pleiss-sun-weinberger>
+
+#### ["Understanding Black-box Predictions via Influence Functions"](https://arxiv.org/abs/1703.04730) Koh, Liang
+  `interpretability`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#understanding-black-box-predictions-via-influence-functions-koh-liang>
 
 
 
@@ -289,17 +220,9 @@ interesting older papers:
 >	"We investigate safe RL using a risk-sensitive criterion which focuses only on risk related to model bias, that is, the risk of the policy performing at test time significantly different from at training time. The proposed criterion quantifies the amount of epistemic uncertainty (model bias risk) in the model’s predictive distribution and ignores any risk stemming from the aleatoric uncertainty."  
 >	"We can identify two distinct forms of uncertainties in the class of models given by BNNs with latent variables. Aleatoric uncertainty captures noise inherent in the observations. On the other hand, epistemic uncertainty accounts for uncertainty in the model. In particular, epistemic uncertainty arises from our lack of knowledge of the values of the synaptic weights in the network, whereas aleatoric uncertainty originates from our lack of knowledge of the value of the latent variables. In the domain of model-based RL the epistemic uncertainty is the source of model bias. When there is high discrepancy between model and real-world dynamics, policy behavior may deteriorate. In analogy to the principle that ”a chain is only as strong as its weakest link” a drastic error in estimating the ground truth MDP at a single transition stepcan render the complete policy useless."  
 
-#### ["Deep Bayesian Active Learning with Image Data"](https://arxiv.org/abs/1703.02910) Gal, Islam, Ghahramani
-  `uncertainty estimation`
-  - `video` <https://vimeo.com/240606680> (Hernandez-Lobato)
-  - `code` <https://github.com/Riashat/Deep-Bayesian-Active-Learning>
-
 #### ["A Scalable Laplace Approximation for Neural Networks"](https://openreview.net/forum?id=Skdvd2xAZ) Ritter, Botev, Barber
   `uncertainty estimation`
 >	"We leverage recent insights from second-order optimisation for neural networks to construct a Kronecker factored Laplace approximation to the posterior over the weights of a trained network. Our approximation requires no modification of the training procedure, enabling practitioners to estimate the uncertainty of their models currently used in production without having to retrain them. We extensively compare our method to using Dropout and a diagonal Laplace approximation for estimating the uncertainty of a network. We demonstrate that our Kronecker factored method leads to better uncertainty estimates on out-of-distribution data and is more robust to simple adversarial attacks. We illustrate its scalability by applying it to a state-of-the-art convolutional network architecture."  
-
-#### ["Bayesian Uncertainty Estimation for Batch Normalized Deep Networks"](https://openreview.net/forum?id=BJlrSmbAZ) Teye, Azizpour, Smith
-  `uncertainty estimation`
 
 #### ["Deep and Confident Prediction for Time Series at Uber"](https://arxiv.org/abs/1709.01907) Zhu, Laptev
   `uncertainty estimation`
@@ -311,15 +234,14 @@ interesting older papers:
   - `video` <https://vimeo.com/238221241> (Li)
   - `code` <https://github.com/YingzhenLi/Dropout_BBalpha>
 
+#### ["Deep Bayesian Active Learning with Image Data"](https://arxiv.org/abs/1703.02910) Gal, Islam, Ghahramani
+  `uncertainty estimation`
+  - `video` <https://vimeo.com/240606680> (Hernandez-Lobato)
+  - `code` <https://github.com/Riashat/Deep-Bayesian-Active-Learning>
+
 #### ["Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles"](http://arxiv.org/abs/1612.01474) Lakshminarayanan, Pritzel, Blundell
   `uncertainty estimation`
->	"Adversarial Training to improve the uncertainty measure of the entropy score of the neural network."  
->	"Good uncertainty estimate: calibration + higher uncertainty on out-of-distribution examples."  
->	"Existing bayesian solutions (MCMC, VI, MC-Dropout) are hard to scale and requires significant modifications for training."  
->	"Single network and MC-Dropout can produce overconfident wrong predictions, whereas deep ensembles are more robust."  
-  - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747/> (1:00:23) (Lakshminarayanan)
-  - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/simple-and-scalable-predictive-uncertainty-estimation-using-deep-ensembles/> `in russian`
-  - `code` <https://github.com/vvanirudh/deep-ensembles-uncertainty>
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#simple-and-scalable-predictive-uncertainty-estimation-using-deep-ensembles-lakshminarayanan-pritzel-blundell>
 
 ----
 #### ["Model Selection in Bayesian Neural Networks via Horseshoe Priors"](https://arxiv.org/abs/1705.10388) Ghosh, Doshi-Velez
@@ -352,16 +274,6 @@ interesting older papers:
   - `code` <https://github.com/BayesWatch/tf-variational-dropout>
   - `paper` ["Variational Dropout and the Local Reparameterization Trick"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#variational-dropout-and-the-local-reparameterization-trick-kingma-salimans-welling) by Kingma, Salimans, Welling `summary`
   - `paper` ["Variational Gaussian Dropout is not Bayesian"](https://arxiv.org/abs/1711.02989) by Hron, Matthews, Ghahramani ([talk](https://youtu.be/k5hb4V73RY0?t=14m34s) by Alexander Matthews `video`)
-
-----
-#### ["Implicit Causal Models for Genome-wide Association Studies"](https://arxiv.org/abs/1710.10742) Tran, Blei
-  `causal inference`
->	"GAN-style models for identifying causal mutations in a GWAS with adjustment for population-based confounders."  
-  - `slides` <http://dustintran.com/talks/Tran_Genomics.pdf>
-
-#### ["Causal Effect Inference with Deep Latent-Variable Models"](https://arxiv.org/abs/1705.08821) Louizos, Shalit, Mooij, Sontag, Zemel, Welling
-  `causal inference`
->	"The most important aspect of inferring causal effects from observational data is the handling of confounders, factors that affect both an intervention and its outcome. A carefully designed observational study attempts to measure all important confounders. However, even if one does not have direct access to all confounders, there may exist noisy and uncertain measurement of proxies for confounders. We build on recent advances in latent variable modeling to simultaneously estimate the unknown latent space summarizing the confounders and the causal effect. Our method is based on Variational Autoencoders which follow the causal structure of inference with proxies."  
 
 ----
 #### ["Generalizing Hamiltonian Monte Carlo with Neural Networks"](https://arxiv.org/abs/1711.09268) Levy, Hoffman, Sohl-Dickstein
@@ -467,54 +379,28 @@ interesting older papers:
   - `code` <https://github.com/blei-lab/edward/blob/master/examples/iwvi.py>
 
 ----
+#### ["Implicit Reparameterization Gradients"](https://arxiv.org/abs/1805.08498) Figurnov, Mohamed, Mnih
+  `variables with complex distributions`
+>	"Unlike reparameterization trick, implicit reparameterization gradients are applicable to a number of important continuous distributions with numerically tractable CDFs such as truncated, mixture, Gamma, Beta, Dirichlet, Student-t, or von Mises, which can be used as easily as the Normal distribution in stochastic computation graphs and are both faster and more accurate than alternative approaches."  
+>	"Implicit reparameterization gradients can outperform existing stochastic variational methods at training the Latent Dirichlet Allocation topic model in a black-box fashion using amortized inference."  
+>	"Implicit reparameterization gradients can be used to train VAEs with Gamma, Beta, and von Mises latent variables, leading to latent spaces with interesting alternative topologies."  
+>	"Following Graves, we use implicit differentiation to differentiate the CDF rather than its inverse. While the method of Graves is only practical for distributions with analytically tractable CDFs and has been used solely with mixture distributions, we leverage automatic differentiation to handle distributions with numerically tractable CDFs."  
+
 #### ["Backpropagation through the Void: Optimizing Control Variates for Black-box Gradient Estimation"](https://arxiv.org/abs/1711.00123) Grathwohl, Choi, Wu, Roeder, Duvenaud
   `variables with discrete distributions` `non-differentiable loss` `RELAX`
->	"We generalize REBAR to learn a free-form control variate parameterized by a neural network, giving a lower-variance, unbiased gradient estimator which can be applied to a wider variety of problems with greater flexibility. Most notably, our method is applicable even when no continuous relaxation is available, as in reinforcement learning or black box function optimization. Furthermore, we derive improved variants of popular reinforcement learning methods with unbiased, action-dependent gradient estimates and lower variance."  
->	"We would like a general gradient estimator that is:  
->	- unbiased  
->	- low variance  
->	- usable when f(b) is unknown  
->	- usable when p(b|theta) is discrete"  
->	"RELAX doesn't solve the problem of discrete random variables but it solves the problem of how to estimate gradient of function which value is known but how to compute or differentiate it is unknown (reinforcement learning and other applications)."  
-  - `video` <https://vimeo.com/252185804> (Grathwohl)
-  - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (25:20) (Bengio)
-  - `video` <https://youtu.be/hkRBoiaplEE?t=1h8m1s> (Sobolev)
-  - `code` <https://github.com/duvenaud/relax>
-  - `code` <https://github.com/Bonnevie/rebar>
-  - `paper` ["Action-depedent Control Variates for Policy Optimization via Stein's Identity"](https://arxiv.org/abs/1710.11198) by Liu et al. ([talk](https://vimeo.com/252186257) `video`)
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#backpropagation-through-the-void-optimizing-control-variates-for-black-box-gradient-estimation-grathwohl-choi-wu-roeder-duvenaud>
 
 #### ["REBAR: Low-variance, unbiased gradient estimates for discrete latent variable models"](http://arxiv.org/abs/1703.07370) Tucker, Mnih, Maddison, Lawson, Sohl-Dickstein
   `variables with discrete distributions` `REBAR`
->	"Learning in models with discrete latent variables is challenging due to high variance gradient estimators. Generally, approaches have relied on control variates to reduce the variance of the REINFORCE estimator. Recent work (Jang et al. 2016; Maddison et al. 2016) has taken a different approach, introducing a continuous relaxation of discrete variables to produce low-variance, but biased, gradient estimates. In this work, we combine the two approaches through a novel control variate that produces low-variance, unbiased gradient estimates. Then, we introduce a novel continuous relaxation and show that the tightness of the relaxation can be adapted online, removing it as a hyperparameter."  
->	"Using continuous relaxation to construct a control variate for functions of discrete random variables. Low-variance estimates of the expectation of the control variate can be computed using the reparameterization trick to produce an unbiased estimator with lower variance than previous methods. Showing how to tune the free parameters of these relaxations to minimize the estimator’s variance during training."  
->	"REBAR gives unbiased gradients with lower variance than REINFORCE - self-tuning and general."  
->	"Estimators for gradient ∇φ E pθ(h)[f(h)] of expectation over discrete distribution pθ(h): unbiased (REINFORCE, NVIL, MuProp) and biased (Straight Through, 1/2 estimator, Concrete/Gumbel-Softmax)."  
-  - `video` <https://youtube.com/watch?v=QODYgBhv_no>
-  - `video` <https://facebook.com/nipsfoundation/videos/1554402064651027/> (16:33) (Tucker)
-  - `video` <https://youtu.be/hkRBoiaplEE?t=34m27s> (Sobolev)
-  - `code` <https://github.com/tensorflow/models/tree/master/research/rebar>
-  - `code` <https://github.com/Bonnevie/rebar>
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#rebar-low-variance-unbiased-gradient-estimates-for-discrete-latent-variable-models-tucker-mnih-maddison-lawson-sohl-dickstein>
 
 #### ["The Concrete Distribution: A Continuous Relaxation of Discrete Random Variables"](http://arxiv.org/abs/1611.00712) Maddison, Mnih, Teh
-["Categorical Reparametrization with Gumbel-Softmax"](http://arxiv.org/abs/1611.01144) Jang, Gu, Poole
   `variables with discrete distributions`
->	"Continuous reparemetrisation based on the so-called Concrete or Gumbel-softmax distribution, which is a continuous distribution and has a temperature constant that can be annealed during training to converge to a discrete distribution in the limit. In the beginning of training the variance of the gradients is low but biased, and towards the end of training the variance becomes high but unbiased."  
->	"Doesn't close the performance gap of VAEs with continuous latent variables where one can use the Gaussian reparameterisation trick which benefits from much lower variance in the gradients."  
-  - `video` <http://youtube.com/watch?v=JFgXEbgcT7g> (Jang)
-  - `video` <https://facebook.com/nipsfoundation/videos/1555493854541848/> (25:13) (Teh)
-  - `video` <https://youtu.be/_JTu50iDhkA?t=55m53s> (Sobolev)
-  - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (23:39) (Bengio)
-  - `video` <https://youtu.be/_XRBlhzb31U?t=28m33s> (Figurnov) `in russian`
-  - `post` <https://laurent-dinh.github.io/2016/11/21/gumbel-max.html>
-  - `post` <https://casmls.github.io/general/2017/02/01/GumbelSoftmax.html>
-  - `post` <http://timvieira.github.io/blog/post/2014/07/31/gumbel-max-trick/>
-  - `post` <https://cmaddis.github.io/gumbel-machinery>
-  - `post` <https://hips.seas.harvard.edu/blog/2013/04/06/the-gumbel-max-trick-for-discrete-distributions/>
-  - `post` <https://blog.evjang.com/2016/11/tutorial-categorical-variational.html>
-  - `post` <http://artem.sobolev.name/posts/2017-10-28-stochastic-computation-graphs-discrete-relaxations.html>
-  - `code` <https://github.com/ericjang/gumbel-softmax/blob/master/gumbel_softmax_vae_v2.ipynb>
-  - `code` <https://gist.github.com/gngdb/ef1999ce3a8e0c5cc2ed35f488e19748>
-  - `code` <https://github.com/EderSantana/gumbel>
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#the-concrete-distribution-a-continuous-relaxation-of-discrete-random-variables-maddison-mnih-teh>
+
+#### ["Categorical Reparametrization with Gumbel-Softmax"](http://arxiv.org/abs/1611.01144) Jang, Gu, Poole
+  `variables with discrete distributions`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#categorical-reparametrization-with-gumbel-softmax-jang-gu-poole>
 
 #### ["Learning Latent Permutations with Gumbel-Sinkhorn Networks"](https://arxiv.org/abs/1802.08665) Mena, Belanger, Linderman, Snoek
   `variables with complex discrete distributions`
@@ -525,32 +411,17 @@ interesting older papers:
 >	"Many matching, tracking, sorting, and ranking problems require probabilistic reasoning about possible permutations, a set that grows factorially with dimension. Combinatorial optimization algorithms may enable efficient point estimation, but fully Bayesian inference poses a severe challenge in this high-dimensional, discrete space. To surmount this challenge, we start with the usual step of relaxing a discrete set (here, of permutation matrices) to its convex hull, which here is the Birkhoff polytope: the set of all doublystochastic matrices. We then introduce two novel transformations: first, an invertible and differentiable stick-breaking procedure that maps unconstrained space to the Birkhoff polytope; second, a map that rounds points toward the vertices of the polytope. Both transformations include a temperature parameter that, in the limit, concentrates the densities on permutation matrices."  
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1710.09508>
 
-#### ["Implicit Reparameterization Gradients"](https://arxiv.org/abs/1805.08498) Figurnov, Mohamed, Mnih
-  `variables with complex distributions`
->	"Unlike reparameterization trick, implicit reparameterization gradients are applicable to a number of important continuous distributions with numerically tractable CDFs such as truncated, mixture, Gamma, Beta, Dirichlet, Student-t, or von Mises, which can be used as easily as the Normal distribution in stochastic computation graphs and are both faster and more accurate than alternative approaches."  
->	"Implicit reparameterization gradients can outperform existing stochastic variational methods at training the Latent Dirichlet Allocation topic model in a black-box fashion using amortized inference."  
->	"Implicit reparameterization gradients can be used to train VAEs with Gamma, Beta, and von Mises latent variables, leading to latent spaces with interesting alternative topologies."  
->	"Following Graves, we use implicit differentiation to differentiate the CDF rather than its inverse. While the method of Graves is only practical for distributions with analytically tractable CDFs and has been used solely with mixture distributions, we leverage automatic differentiation to handle distributions with numerically tractable CDFs."  
-
 #### ["Reparameterization Gradients through Acceptance-Rejection Sampling Algorithms"](http://arxiv.org/abs/1610.05683) Naesseth, Ruiz, Linderman, Blei
   `variables with complex distributions` `RSVI`
->	"For many distributions of interest (such as the gamma or Dirichlet), simulation of random variables relies on acceptance-rejection sampling. The discontinuity introduced by the accept-reject step means that standard reparameterization tricks are not applicable. We propose a new method that lets us leverage reparameterization gradients even when variables are outputs of a acceptance-rejection sampling algorithm. Our approach enables reparameterization on a larger class of variational distributions."  
-  - `video` <https://youtu.be/quIuMYSLaYM?t=17m21s> (Ruiz)
-  - `post` <https://casmls.github.io/general/2017/04/25/rsvi.html>
-  - `post` <http://artem.sobolev.name/posts/2017-09-10-stochastic-computation-graphs-continuous-case.html>
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#reparameterization-gradients-through-acceptance-rejection-sampling-algorithms-naesseth-ruiz-linderman-blei>
 
 #### ["The Generalized Reparameterization Gradient"](http://arxiv.org/abs/1610.02287) Ruiz, Titsias, Blei
   `variables with complex distributions`
->	"The reparameterization gradient does not easily apply to commonly used distributions such as beta or gamma without further approximations, and most practical applications of the reparameterization gradient fit Gaussian distributions. We introduce the generalized reparameterization gradient, a method that extends the reparameterization gradient to a wider class of variational distributions. Generalized reparameterizations use invertible transformations of the latent variables which lead to transformed distributions that weakly depend on the variational parameters. This results in new Monte Carlo gradients that combine reparameterization gradients and score function gradients."  
->	"Reparametrization removes dependence on parameters completely. What if we remove it just partially?"  
-  - `video` <https://youtu.be/_JTu50iDhkA?t=29m20s> (Sobolev)
-  - `video` <https://youtu.be/mrj_hyH974o?t=1h23m40s> (Vetrov) `in russian`
-  - `post` <http://artem.sobolev.name/posts/2017-09-10-stochastic-computation-graphs-continuous-case.html>
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#the-generalized-reparameterization-gradient-ruiz-titsias-blei>
 
 #### ["Stochastic Backpropagation through Mixture Density Distributions"](http://arxiv.org/abs/1607.05690) Graves
   `variables with mixture distributions`
-  - `video` <https://youtu.be/_JTu50iDhkA?t=21m54s> (Sobolev)
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1607.05690>
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#stochastic-backpropagation-through-mixture-density-distributions-graves>
 
 #### ["Stick-Breaking Variational Autoencoders"](http://arxiv.org/abs/1605.06197) Nalisnick, Smyth
   `variables with stochastic dimensionality`
@@ -596,14 +467,7 @@ interesting older papers:
 
 #### ["Composing Graphical Models with Neural Networks for Structured Representations and Fast Inference"](http://arxiv.org/abs/1603.06277) Johnson, Duvenaud, Wiltschko, Datta, Adams
   `bayesian model`
-  - `video` <https://youtube.com/watch?v=btr1poCYIzw>
-  - `video` <http://videolectures.net/deeplearning2017_johnson_graphical_models/> (Johnson)
-  - `video` <https://youtube.com/watch?v=KcbfuUJ_a0A> (Johnson)
-  - `video` <https://youtube.com/watch?v=vnO3w8OgTE8> (Duvenaud)
-  - `audio` <https://youtube.com/watch?v=P7zucOImw04> (Duvenaud)
-  - `slides` <http://www.cs.toronto.edu/~duvenaud/courses/csc2541/slides/svae-slides.pdf>
-  - `notes` <https://casmls.github.io/general/2016/12/11/SVAEandfLDS.html>
-  - `code` <https://github.com/mattjj/svae>
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#composing-graphical-models-with-neural-networks-for-structured-representations-and-fast-inference-johnson-duvenaud-wiltschko-datta-adams>
 
 #### ["The Variational Gaussian Process"](http://arxiv.org/abs/1511.06499) Tran, Ranganath, Blei
   `bayesian model`
@@ -865,6 +729,7 @@ interesting older papers:
 #### ["Matrix Capsules with EM Routing"](https://openreview.net/forum?id=HJWLfGWRb) Hinton, Sabour, Frosst
   `information routing` `CapsNet`
   - `video` <https://youtu.be/hYt3FcJUf6w?t=50m38s> (Uziela)
+  - `video` <https://youtube.com/watch?v=akq6PNnkKY8> (Ou)
   - `post` <https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/>
   - `post` <https://towardsdatascience.com/demystifying-matrix-capsules-with-em-routing-part-1-overview-2126133a8457>
   - `notes` <https://blog.acolyer.org/2017/11/14/matrix-capsules-with-em-routing/>
@@ -1166,6 +1031,8 @@ interesting older papers:
 #### ["Relational Neural Expectation Maximization: Unsupervised Discovery of Objects and their Interactions"](https://arxiv.org/abs/1802.10353) Steenkiste, Chang, Greff, Schmidhuber
   `concept learning`
 >	"A novel method that learns to discover objects and model their physical interactions from raw visual images in a purely unsupervised fashion. It incorporates prior knowledge about the compositional nature of human perception to factor interactions between object-pairs and learn efficiently."  
+  - <https://sites.google.com/view/r-nem-gifs>
+  - `video` <https://youtu.be/IjkNnu8CCnY?t=30m55s> (Chang)
 
 #### ["Neural Expectation Maximization"](https://arxiv.org/abs/1708.03498) Greff, Steenkiste, Schmidhuber
   `concept learning`
@@ -1407,6 +1274,7 @@ interesting older papers:
 >	- fast to sample from  
 >	- limited capacity vs MAF"  
   - `video` <https://vimeo.com/252105837> (Papamakarios)
+  - `audio` <https://youtube.com/watch?v=315xKcYX-1w> (Papamakarios)
   - `post` <http://blog.evjang.com/2018/01/nf2.html>
   - `code` <https://github.com/gpapamak/maf>
 

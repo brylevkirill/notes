@@ -13,12 +13,8 @@
 
   ["Theoretical Impediments to Machine Learning"](http://web.cs.ucla.edu/~kaoru/theoretical-impediments.pdf) by Judea Pearl `paper`  
   ["Theoretical Impediments to Machine Learning with Seven Sparks from the Causal Revolution"](https://arxiv.org/abs/1801.04016) by Judea Pearl `paper`  
-  ["The Art and Science of Cause and Effect"](http://bayes.cs.ucla.edu/BOOK-2K/causality2-epilogue.pdf) by Judea Pearl `paper`  
 
-  ["ML beyond Curve Fitting: An Intro to Causal Inference and do-Calculus"](http://inference.vc/untitled) by Ferenc Huszar  
-  ["If Correlation Doesn’t Imply Causation, then What Does?"](http://michaelnielsen.org/ddi/if-correlation-doesnt-imply-causation-then-what-does) by Michael Nielsen  
-  ["Causality in Machine Learning"](http://unofficialgoogledatascience.com/2017/01/causality-in-machine-learning.html) by Muralidharan et al.  
-  ["Latent Variables and Model Mis-specification"](https://jsteinhardt.wordpress.com/2017/01/10/latent-variables-and-model-mis-specification/) by Jacob Steinhardt  
+  ["ML beyond Curve Fitting: An Intro to Causal Inference and do-Calculus"](http://inference.vc/untitled) by Ferenc Huszar
 
   ["Causal Data Science"](https://medium.com/@akelleh/causal-data-science-721ed63a4027) by Adam Kelleher:
   - ["If Correlation Doesn’t Imply Causation, Then What Does?"](https://medium.com/@akelleh/if-correlation-doesnt-imply-causation-then-what-does-c74f20d26438)
@@ -28,18 +24,22 @@
   - ["The Data Processing Inequality"](https://medium.com/@akelleh/the-data-processing-inequality-da242b40800b)
   - ["Causal Graph Inference"](https://medium.com/@akelleh/causal-graph-inference-b3e3afd47110)
 
+  ["If Correlation Doesn’t Imply Causation, then What Does?"](http://michaelnielsen.org/ddi/if-correlation-doesnt-imply-causation-then-what-does) by Michael Nielsen  
+  ["Causality in Machine Learning"](http://unofficialgoogledatascience.com/2017/01/causality-in-machine-learning.html) by Muralidharan et al.  
+  ["Latent Variables and Model Mis-specification"](https://jsteinhardt.wordpress.com/2017/01/10/latent-variables-and-model-mis-specification/) by Jacob Steinhardt  
+
   ["Causality"](http://www.homepages.ucl.ac.uk/~ucgtrbd/papers/causality.pdf) by Ricardo Silva `paper`  
   ["Introduction to Causal Inference"](http://jmlr.org/papers/volume11/spirtes10a/spirtes10a.pdf) by Peter Spirtes `paper`  
   ["Graphical Causal Models"](http://www.stat.cmu.edu/~cshalizi/uADA/12/lectures/ch22.pdf) by Cosma Shalizi `paper`  
 
-  ["The Book of Why: The New Science of Cause and Effect"](https://amazon.com/Book-Why-Science-Cause-Effect/dp/046509760X) by Judea Pearl `book` ([introduction](http://bayes.cs.ucla.edu/WHY/why-intro.pdf))  
+----
+
+  ["The Book of Why: The New Science of Cause and Effect"](https://amazon.com/Book-Why-Science-Cause-Effect/dp/046509760X) by Judea Pearl `book` ([overview](http://bayes.cs.ucla.edu/WHY/why-intro.pdf))  
+  ["Causality: Models, Reasoning, and Inference"](https://dropbox.com/s/m2m1935e6tohii9/Pearl%20-%20Causality%3A%20Models%2C%20Reasoning%2C%20and%20Inference.pdf) by Judea Pearl ([epilogue](http://bayes.cs.ucla.edu/BOOK-2K/causality2-epilogue.pdf))  
   ["Elements of Causal Inference"](https://mitpress.mit.edu/books/elements-causal-inference) by Jonas Peters, Dominik Janzing, Bernhard Scholkopf `book`  
   ["Causal Inference Book"](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/) by Miguel Hernan and James Robins `book`  
 
 ----
-
-  [overview](https://www.edge.org/conversation/judea_pearl-engines-of-evidence) by Judea Pearl `video`  
-  overview of [role](https://youtube.com/watch?v=uyZOcUDhIbY&t=20m5s) and [applications](https://youtube.com/watch?v=uyZOcUDhIbY&t=58m) by Michael I. Jordan `video`  
 
   [tutorial](https://youtube.com/watch?v=zvrcyqcN9Wo) by Jonas Peters `video`  
   [tutorial](https://youtube.com/watch?v=_wFagI5Fn9I) by Jonas Peters `video`  

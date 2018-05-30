@@ -14,6 +14,7 @@
   * [architectures](#architectures)
     - [convolutional neural network](#architectures---convolutional-neural-network)
     - [recurrent neural network](#architectures---recurrent-neural-network)
+    - [graph neural network](#architectures---graph-neural-network)
     - [attention](#architectures---attention)
     - [compute and memory](#architectures---compute-and-memory)
     - [distributed representation](#architectures---distributed-representation)
@@ -802,6 +803,7 @@
 
   - [convolutional neural network](#architectures---convolutional-neural-network)
   - [recurrent neural network](#architectures---recurrent-neural-network)
+  - [graph neural network](#architectures---graph-neural-network)
   - [attention](#architectures---attention)
   - [compute and memory](#architectures---compute-and-memory)
   - [distributed representation](#architectures---distributed-representation)
@@ -885,6 +887,27 @@
 
   ["Frontiers in Recurrent Neural Network Research"](https://youtube.com/watch?v=pwyBoPFsQ4M) by Alex Graves `video`  
   ["New Directions for Recurrent Neural Networks"](https://facebook.com/iclr.cc/videos/1713144705381255/) by Alex Graves `video`  
+
+
+
+---
+### architectures - graph neural network
+
+  ["Graph Neural Networks: Variations and Applications](https://youtube.com/watch?v=cWIeTMklzNg) by Alexander Gaunt `video`  
+  ["Convolutional Neural Networks on Graphs"](https://youtube.com/watch?v=v3jZRkvIOIM) by Xavier Bresson `video`  
+  ["Large-scale Graph Representation Learning"](https://youtube.com/watch?v=oQL4E1gK3VU) by Jure Leskovec `video`  
+
+  ["Graph Convolutional Networks"](https://tkipf.github.io/graph-convolutional-networks) by Thomas Kipf
+
+----
+
+  <http://geometricdeeplearning.com>
+
+  ["Geometric Deep Learning"](https://vimeo.com/248497329) tutorial by Bronstein, Bruna, Szlam, Bresson, LeCun `video`  
+  ["Geometric Deep Learning"](https://youtube.com/watch?v=ptcBmEHDWds) by Michael Bronstein `video`  
+  ["Geometric Deep Learning"](https://youtube.com/watch?v=Qtgep2CEExY) by Joan Bruna and Michael Bronstein `audio`  
+
+  ["Geometric Deep Learning: Going beyond Euclidean Data"](https://arxiv.org/abs/1611.08097) by Bronstein, Bruna, LeCun, Szlam, Vandergheynst `paper`
 
 
 
@@ -1111,6 +1134,38 @@
   - `post` <http://www.offconvex.org/2017/12/08/generalization1/> (Arora)
 
 
+#### ["Sharp Minima Can Generalize For Deep Nets"](https://arxiv.org/abs/1703.04933) Dinh, Pascanu, Bengio, Bengio
+  `generalization`
+>	"Despite their overwhelming capacity to overfit, deep learning architectures tend to generalize relatively well to unseen data, allowing them to be deployed in practice. However, explaining why this is the case is still an open area of research. One standing hypothesis that is gaining popularity, e.g. Hochreiter & Schmidhuber (1997); Keskar et al. (2017), is that the flatness of minima of the loss function found by stochastic gradient based methods results in good generalization. This paper argues that most notions of flatness are problematic for deep models and can not be directly applied to explain generalization. Specifically, when focusing on deep networks with rectifier units, we can exploit the particular geometry of parameter space induced by the inherent symmetries that these architectures exhibit to build equivalent models corresponding to arbitrarily sharper minima. Furthermore, if we allow to reparametrize a function, the geometry of its parameters can change drastically without affecting its generalization properties."
+
+  - `video` <https://vimeo.com/237275513> (Dinh)
+
+
+#### ["A Closer Look at Memorization in Deep Networks"](https://arxiv.org/abs/1706.05394) Arpit et al.
+  `generalization`
+>	"We examine the role of memorization in deep learning, drawing connections to capacity, generalization, and adversarial robustness. While deep networks are capable of memorizing noise data, our results suggest that they tend to prioritize learning simple patterns first. In our experiments, we expose qualitative differences in gradient-based optimization of deep neural networks on noise vs. real data. We also demonstrate that for appropriately tuned explicit regularization (e.g., dropout) we can degrade DNN training performance on noise datasets without compromising generalization on real data. Our analysis suggests that the notions of effective capacity which are dataset independent are unlikely to explain the generalization performance of deep networks when trained with gradient based methods because training data itself plays an important role in determining the degree of memorization."
+
+  - `video` <https://vimeo.com/238241921> (Krueger)
+  - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (42:27) (Bengio)
+
+
+#### ["Deep Learning and the Information Bottleneck Principle"](https://arxiv.org/abs/1503.02406) Tishby, Zaslavsky
+  `generalization`
+>	"Deep Neural Networks are analyzed via the theoretical framework of the information bottleneck principle. We first show that any DNN can be quantified by the mutual information between the layers and the input and output variables. Using this representation we can calculate the optimal information theoretic limits of the DNN and obtain finite sample generalization bounds. The advantage of getting closer to the theoretical limit is quantifiable both by the generalization bound and by the network’s simplicity. We argue that both the optimal architecture, number of layers and features/connections at each layer, are related to the bifurcation points of the information bottleneck tradeoff, namely, relevant compression of the input layer with respect to the output layer. The hierarchical representations at the layered network naturally correspond to the structural phase transitions along the information curve. We believe that this new insight can lead to new optimality bounds and deep learning algorithms."
+
+>	"In this work we express this important insight using information theoretic concepts and formulate the goal of deep learning as an information theoretic tradeoff between compression and prediction. We first argue that the goal of any supervised learning is to capture and efficiently represent the relevant information in the input variable about the output - label - variable. Namely, to extract an approximate minimal sufficient statistics of the input with respect to the output. The information theoretic interpretation of minimal sufficient statistics suggests a principled way of doing that: find a maximally compressed mapping of the input variable that preserves as much as possible the information on the output variable. This is precisely the goal of the Information Bottleneck method."
+
+>	"Several interesting issues arise when applying this principle to DNNs. First, the layered structure of the network generates a successive Markov chain of intermediate representations, which together form the (approximate) sufficient statistics. This is closely related to successive refinement of information in Rate Distortion Theory. Each layer in the network can now be quantified by the amount of information it retains on the input variable, on the (desired) output variable, as well as on the predicted output of the network. The Markovian structure and data processing inequalities enable us to examine the efficiency of the internal representations of the network’s hidden layers, which is not possible with other distortion/error measures. It also provides us with the information theoretic limits of the compression/prediction problem and theoretically quantify each proposed DNN for the given training data. In addition, this representation of DNNs gives a new theoretical sample complexity bound, using the known finite sample bounds on the IB."
+
+>	"Another outcome of this representation is a possible explanation of the layered architecture of the network. Neurons, as non-linear (e.g. sigmoidal) functions of a dot-product of their input, can only capture linearly separable properties of their input layer. Linear separability is possible when the input layer units are close to conditional independence, given the output classification. This is generally not true for the data distribution and intermediate hidden layer are required. We suggest here that the break down of the linear-separability is associated with a representational phase transition (bifurcation) in the IB optimal curve, as both result from the second order dependencies in the data. Our analysis suggests new information theoretic optimality conditions, sample complexity bounds, and design principle for DNN models."
+
+>	"We suggest a novel information theoretic analysis of deep neural networks based on the information bottleneck principle. Arguably, DNNs learn to extract efficient representations of the relevant features of the input layer X for predicting the output label Y, given a finite sample of the joint distribution p(X, Y). This representation can be compared with the theoretically optimal relevant compression of the variable X with respect to Y, provided by the information bottleneck (or information distortion) tradeoff. This is done by introducing a new information theoretic view of DNN training as an successive (Markovian) relevant compression of the input variable X, given the empirical training data. The DNN’s prediction is activating the trained compression layered hierarchy to generate a predicted label Yˆ. Maximizing the mutual information I(Y; Yˆ), for a sequence of evoking inputs X, emerges as the natural DNN optimization goal."
+
+  - <https://en.wikipedia.org/wiki/Information_bottleneck_method>
+  - `video` <https://youtube.com/watch?v=ei59sYLVuqA> (Tishby)
+  - `post` <http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/>
+
+
 #### ["Opening the Black Box of Deep Neural Networks via Information"](http://arxiv.org/abs/1703.00810) Shwartz-Ziv, Tishby
   `generalization`
 >	"Despite their great success, there is still no comprehensive theoretical understanding of learning with Deep Neural Networks or their inner organization. Previous work [Tishby & Zaslavsky (2015)] proposed to analyze DNNs in the Information Plane; i.e., the plane of the Mutual Information values that each layer preserves on the input and output variables. They suggested that the goal of the network is to optimize the Information Bottleneck tradeoff between compression and prediction, successively, for each layer. In this work we follow up on this idea and demonstrate the effectiveness of the Information-Plane visualization of DNNs. We first show that the stochastic gradient descent epochs have two distinct phases: fast empirical error minimization followed by slow representation compression, for each layer. We then argue that the DNN layers end up very close to the IB theoretical bound, and present a new theoretical argument for the computational benefit of the hidden layers."
@@ -1153,6 +1208,7 @@
 >	Phase 2 (diffusion): Mean gradient is smaller and noise takes over - Langevin/Boltzmann effect kicks in.  
 >	Authors claim that SGD training compresses (reduces I(X;T)) in the diffusion phase."  
 
+  - <https://en.wikipedia.org/wiki/Information_bottleneck_method>
   - `video` <https://youtube.com/watch?v=XL07WEc2TRI> (Tishby)
   - `video` <https://youtube.com/watch?v=EQTtBRM0sIs> (Tishby)
   - `video` <https://youtube.com/watch?v=bLqJHjXihK8> (Tishby)
@@ -1171,20 +1227,28 @@
   - `paper` ["Deep Learning and the Information Bottleneck Principle"](#tishby-zaslavsky---deep-learning-and-the-information-bottleneck-principle) by Tishby and Zaslavsky `summary`
 
 
-#### ["Deep Learning and the Information Bottleneck Principle"](https://arxiv.org/abs/1503.02406) Tishby, Zaslavsky
-  `generalization`
->	"Deep Neural Networks are analyzed via the theoretical framework of the information bottleneck principle. We first show that any DNN can be quantified by the mutual information between the layers and the input and output variables. Using this representation we can calculate the optimal information theoretic limits of the DNN and obtain finite sample generalization bounds. The advantage of getting closer to the theoretical limit is quantifiable both by the generalization bound and by the network’s simplicity. We argue that both the optimal architecture, number of layers and features/connections at each layer, are related to the bifurcation points of the information bottleneck tradeoff, namely, relevant compression of the input layer with respect to the output layer. The hierarchical representations at the layered network naturally correspond to the structural phase transitions along the information curve. We believe that this new insight can lead to new optimality bounds and deep learning algorithms."
+#### ["Deep Variational Information Bottleneck"](https://arxiv.org/abs/1612.00410) Alemi, Fischer, Dillon, Murphy
+  `generalization` `information bottleneck`
+>	"The Information Bottleneck principle is appealing, since it defines what we mean by a good representation, in terms of the fundamental tradeoff between having a concise representation and one with good predictive power. The main drawback of the IB principle is that computing mutual information is, in general, computationally challenging. We propose to use variational inference to construct a lower bound on the IB objective. By using the reparameterization trick, we can use Monte Carlo sampling to get an unbiased estimate of the gradient, and hence we can optimize the objective using stochastic gradient descent. This allows us to use deep neural networks to parameterize our distributions, and thus to handle high-dimensional, continuous data, such as images, avoiding the previous restrictions to the discrete or Gaussian cases."
+>	"Stochastic neural networks, fit using our VIB method, are robust to overfitting, since VIB finds a representation Z which ignores as many details of the input X as possible. In addition, they are more robust to adversarial inputs than deterministic models which are fit using (penalized) maximum likelihood estimation. Intuitively this is because each input image gets mapped to a distribution rather than a unique Z, so it is more difficult to pass small, idiosyncratic perturbations through the latent bottleneck."
 
->	"In this work we express this important insight using information theoretic concepts and formulate the goal of deep learning as an information theoretic tradeoff between compression and prediction. We first argue that the goal of any supervised learning is to capture and efficiently represent the relevant information in the input variable about the output - label - variable. Namely, to extract an approximate minimal sufficient statistics of the input with respect to the output. The information theoretic interpretation of minimal sufficient statistics suggests a principled way of doing that: find a maximally compressed mapping of the input variable that preserves as much as possible the information on the output variable. This is precisely the goal of the Information Bottleneck method."
+  - <https://en.wikipedia.org/wiki/Information_bottleneck_method>
+  - `code` <https://github.com/alexalemi/vib_demo>
+  - `code` <https://github.com/1Konny/VIB-pytorch>
 
->	"Several interesting issues arise when applying this principle to DNNs. First, the layered structure of the network generates a successive Markov chain of intermediate representations, which together form the (approximate) sufficient statistics. This is closely related to successive refinement of information in Rate Distortion Theory. Each layer in the network can now be quantified by the amount of information it retains on the input variable, on the (desired) output variable, as well as on the predicted output of the network. The Markovian structure and data processing inequalities enable us to examine the efficiency of the internal representations of the network’s hidden layers, which is not possible with other distortion/error measures. It also provides us with the information theoretic limits of the compression/prediction problem and theoretically quantify each proposed DNN for the given training data. In addition, this representation of DNNs gives a new theoretical sample complexity bound, using the known finite sample bounds on the IB."
 
->	"Another outcome of this representation is a possible explanation of the layered architecture of the network. Neurons, as non-linear (e.g. sigmoidal) functions of a dot-product of their input, can only capture linearly separable properties of their input layer. Linear separability is possible when the input layer units are close to conditional independence, given the output classification. This is generally not true for the data distribution and intermediate hidden layer are required. We suggest here that the break down of the linear-separability is associated with a representational phase transition (bifurcation) in the IB optimal curve, as both result from the second order dependencies in the data. Our analysis suggests new information theoretic optimality conditions, sample complexity bounds, and design principle for DNN models."
+#### ["On the Emergence of Invariance and Disentangling in Deep Representations"](https://arxiv.org/abs/1706.01350) Achille, Soatto
+  `generalization` `information bottleneck`
+>	"We have presented bounds, some of which tight, that connect the amount of information in the weights, the amount of information in the activations, the invariance property of the network, and the geometry of the residual loss."  
+>	"This leads to the somewhat surprising result that reducing information stored in the weights about the past (dataset) results in desirable properties of the representation of future data (test datum)."  
 
->	"We suggest a novel information theoretic analysis of deep neural networks based on the information bottleneck principle. Arguably, DNNs learn to extract efficient representations of the relevant features of the input layer X for predicting the output label Y, given a finite sample of the joint distribution p(X, Y). This representation can be compared with the theoretically optimal relevant compression of the variable X with respect to Y, provided by the information bottleneck (or information distortion) tradeoff. This is done by introducing a new information theoretic view of DNN training as an successive (Markovian) relevant compression of the input variable X, given the empirical training data. The DNN’s prediction is activating the trained compression layered hierarchy to generate a predicted label Yˆ. Maximizing the mutual information I(Y; Yˆ), for a sequence of evoking inputs X, emerges as the natural DNN optimization goal."
+>	"We conducted experiments to validate the assumptions underlying these bounds, and found that the results match the qualitative behavior observed on real data and architectures. In particular, the theory predicts a verifiable phase transition between an underfitting and overfitting regime for random labels, and the amount of information in nats needed to cross the transition."  
+>	"We show that in a deep neural network invariance to nuisance factors is equivalent to information minimality of the learned representation, and that stacking layers and injecting noise during training naturally bias the network towards learning invariant representations. We then show that, in order to avoid memorization, we need to limit the quantity of information stored in the weights, which leads to a novel usage of the Information Bottleneck Lagrangian on the weights as a learning criterion."  
+>	"Information Bottleneck principle: minimize mutual information of the representation with the training data."  
 
-  - `video` <https://youtube.com/watch?v=ei59sYLVuqA> (Tishby)
-  - `post` <http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/>
+  - <https://en.wikipedia.org/wiki/Information_bottleneck_method>
+  - `video` <https://youtube.com/watch?v=BCSoRTMYQcw> (Achille)
+  - `video` <https://youtube.com/watch?v=zbg49SMP5kY> (Soatto)
 
 
 #### ["Intriguing Properties of Neural Networks"](http://arxiv.org/abs/1312.6199) Szegedy, Zaremba, Sutskever, Bruna, Erhan, Goodfellow, Fergus
@@ -1202,19 +1266,19 @@
   `generalization`
 >	"Several machine learning models, including neural networks, consistently misclassify adversarial examples - inputs formed by applying small but intentionally worst-case perturbations to examples from the dataset, such that the perturbed input results in the model outputting an incorrect answer with high confidence. Early attempts at explaining this phenomenon focused on nonlinearity and overfitting. We argue instead that the primary cause of neural networks’ vulnerability to adversarial perturbation is their linear nature. This explanation is supported by new quantitative results while giving the first explanation of the most intriguing fact about them: their generalization across architectures and training sets. Moreover, this view yields a simple and fast method of generating adversarial examples. Using this approach to provide examples for adversarial training, we reduce the test set error of a maxout network on the MNIST dataset."
 
->	"The criticism of deep networks as vulnerable to adversarial examples is misguided, because unlike shallow linear models, deep networks are at least able to represent functions that resist adversarial perturbation.
-	"Adversarial examples can be explained as a property of high-dimensional dot products. They are a result of models being too linear, rather than too nonlinear.
-	The generalization of adversarial examples across different models can be explained as a result of adversarial perturbations being highly aligned with the weight vectors of a model, and different models learning similar functions when trained to perform the same task.
-	The direction of perturbation, rather than the specific point in space, matters most. Space is not full of pockets of adversarial examples that finely tile the reals like the rational numbers.
-	Because it is the direction that matters most, adversarial perturbations generalize across different clean examples.
-	Adversarial training can result in regularization; even further regularization than dropout.
-	Models that are easy to optimize are easy to perturb.
-	Fooling examples are ubiquitous and easily generated.
-	RBF networks are resistant to adversarial examples.
-	Linear models lack the capacity to resist adversarial perturbation; only structures with a hidden layer (where the universal approximator theorem applies) should be trained to resist adversarial perturbation.
-	Models trained to model the input distribution are not resistant to adversarial examples.
-	Ensembles are not resistant to adversarial examples.
-	Shallow linear models are not resistant to fooling examples."
+>	"The criticism of deep networks as vulnerable to adversarial examples is misguided, because unlike shallow linear models, deep networks are at least able to represent functions that resist adversarial perturbation.  
+>	"Adversarial examples can be explained as a property of high-dimensional dot products. They are a result of models being too linear, rather than too nonlinear.  
+>	The generalization of adversarial examples across different models can be explained as a result of adversarial perturbations being highly aligned with the weight vectors of a model, and different models learning similar functions when trained to perform the same task.  
+>	The direction of perturbation, rather than the specific point in space, matters most. Space is not full of pockets of adversarial examples that finely tile the reals like the rational numbers.  
+>	Because it is the direction that matters most, adversarial perturbations generalize across different clean examples.  
+>	Adversarial training can result in regularization; even further regularization than dropout.  
+>	Models that are easy to optimize are easy to perturb.  
+>	Fooling examples are ubiquitous and easily generated.  
+>	RBF networks are resistant to adversarial examples.  
+>	Linear models lack the capacity to resist adversarial perturbation; only structures with a hidden layer (where the universal approximator theorem applies) should be trained to resist adversarial perturbation.  
+>	Models trained to model the input distribution are not resistant to adversarial examples.  
+>	Ensembles are not resistant to adversarial examples.  
+>	Shallow linear models are not resistant to fooling examples."  
 
 >	"Competence of CNNs is relatively limited to a small region around the data manifold that contains natural-looking images and distributions, and that once we artificially push images away from this manifold by computing noise patterns with backpropagation, we stumble into parts of image space where all bets are off, and where the linear functions in the network induce large subspaces of fooling inputs. With wishful thinking, one might hope that ConvNets would produce all-diffuse probabilities in regions outside the training data, but there is no part in an ordinary objective (e.g. mean cross-entropy loss) that explicitly enforces this constraint. Indeed, it seems that the class scores in these regions of space are all over the place, and worse, a straight-forward attempt to patch this up by introducing a background class and iteratively adding fooling images as a new background class during training are not effective in mitigating the problem. It seems that to fix this problem we need to change our objectives, our forward functional forms, or even the way we optimize our models."
 
@@ -1248,6 +1312,24 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=EK61htlw8hY> (Hinton)
   - `video` <http://videolectures.net/deeplearning2017_larochelle_neural_networks/> (part 2, 1:28:45) (Larochelle)
   - `paper` ["Distilling a Neural Network Into a Soft Decision Tree"](https://arxiv.org/abs/1711.09784) by Frosst, Hinton
+
+
+#### ["Measuring the Tendency of CNNs to Learn Surface Statistical Regularities"](https://arxiv.org/abs/1711.11561) Jo, Bengio
+  `generalization`
+>	"Deep CNNs are known to exhibit the following peculiarity: on the one hand they generalize extremely well to a test set, while on the other hand they are extremely sensitive to so-called adversarial perturbations. The extreme sensitivity of high performance CNNs to adversarial examples casts serious doubt that these networks are learning high level abstractions in the dataset. We are concerned with the following question: How can a deep CNN that does not learn any high level semantics of the dataset manage to generalize so well?"
+
+>	"The goal of this article is to measure the tendency of CNNs to learn surface statistical regularities of the dataset. To this end, we use Fourier filtering to construct datasets which share the exact same high level abstractions but exhibit qualitatively different surface statistical regularities. For the SVHN and CIFAR-10 datasets, we present two Fourier filtered variants: a low frequency variant and a randomly filtered variant. Each of the Fourier filtering schemes is tuned to preserve the recognizability of the objects. Our main finding is that CNNs exhibit a tendency to latch onto the Fourier image statistics of the training dataset, sometimes exhibiting up to a 28% generalization gap across the various test sets. Moreover, we observe that significantly increasing the depth of a network has a very marginal impact on closing the aforementioned generalization gap. Thus we provide quantitative evidence supporting the hypothesis that deep CNNs tend to learn surface statistical regularities in the dataset rather than higher-level abstract concepts."
+
+  - `notes` <https://blog.acolyer.org/2018/05/29/measuring-the-tendency-of-cnns-to-learn-surface-statistical-regularities>
+
+
+#### ["Deep Image Prior"](https://arxiv.org/abs/1711.10925) Ulyanov, Vedaldi, Lempitsky
+  `generalization`
+>	"Deep convolutional networks have become a popular tool for image generation and restoration. Generally, their excellent performance is imputed to their ability to learn realistic image priors from a large number of example images. In this paper, we show that, on the contrary, the structure of a generator network is sufficient to capture a great deal of low-level image statistics prior to any learning. In order to do so, we show that a randomly-initialized neural network can be used as a handcrafted prior with excellent results in standard inverse problems such as denoising, superresolution, and inpainting. Furthermore, the same prior can be used to invert deep neural representations to diagnose them, and to restore images based on flash-no flash input pairs."
+
+  - <https://dmitryulyanov.github.io/deep_image_prior>
+  - `video` <https://youtube.com/watch?v=fj0yLTa_bmA> (Ulyanov)
+  - `code` <https://github.com/DmitryUlyanov/deep-image-prior>
 
 
 #### ["Train Faster, Generalize Better: Stability of Stochastic Gradient Descent"](http://arxiv.org/abs/1509.01240) Hardt, Recht, Singer
@@ -1305,20 +1387,57 @@ Yoshua Bengio:
 
   - `video` <https://youtube.com/watch?v=h6eQrkkU9SA> (Hochreiter)
   - `video` <https://facebook.com/nipsfoundation/videos/1555553784535855/> (47:04) (Klambauer)
+  - `video` <https://youtube.com/watch?v=gH-KWepKSNs> (Klambauer)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1706.02515>
+  - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/self-normalizing-neural-networks/> `in russian`
   - `code` <http://github.com/bioinf-jku/SNNs>
+
+
+#### ["Measuring the Intrinsic Dimension of Objective Landscapes"](https://arxiv.org/abs/1804.08838) Li, Farkhoor, Liu, Yosinski
+  `interpretability`
+>	"Many recently trained neural networks employ large numbers of parameters to achieve good performance. One may intuitively use the number of parameters required as a rough gauge of the difficulty of a problem. But how accurate are such notions? How many parameters are really needed? In this paper we attempt to answer this question by training networks not in their native parameter space, but instead in a smaller, randomly oriented subspace. We slowly increase the dimension of this subspace, note at which dimension solutions first appear, and define this to be the intrinsic dimension of the objective landscape. The approach is simple to implement, computationally tractable, and produces several suggestive conclusions. Many problems have smaller intrinsic dimensions than one might suspect, and the intrinsic dimension for a given dataset varies little across a family of models with vastly different sizes. This latter result has the profound implication that once a parameter space is large enough to solve a problem, extra parameters serve directly to increase the dimensionality of the solution manifold. Intrinsic dimension allows some quantitative comparison of problem difficulty across supervised, reinforcement, and other types of learning where we conclude, for example, that solving the inverted pendulum problem is 100 times easier than classifying digits from MNIST, and playing Atari Pong from pixels is about as hard as classifying CIFAR-10."
+
+  - <https://eng.uber.com/intrinsic-dimension>
+  - `video` <https://youtube.com/watch?v=uSZWeRADTFI>
+  - `code` <https://github.com/uber-research/intrinsic-dimension>
+
+
+#### ["On Calibration of Modern Neural Networks"](https://arxiv.org/abs/1706.04599) Guo, Pleiss, Sun, Weinberger
+  `interpretability`
+>	"Confidence calibration - the problem of predicting probability estimates representative of the true correctness likelihood - is important for classification models in many applications. We discover that modern neural networks, unlike those from a decade ago, are poorly calibrated. Through extensive experiments, we observe that depth, width, weight decay, and Batch Normalization are important factors influencing calibration. We evaluate the performance of various post-processing calibration methods on state-of-the-art architectures with image and document classification datasets. Our analysis and experiments not only offer insights into neural network learning, but also provide a simple and straightforward recipe for practical settings: on most datasets, temperature scaling - a single-parameter variant of Platt Scaling - is surprisingly effective at calibrating predictions."
+
+>	"A network should provide a calibrated confidence measure in addition to its prediction. In other words, the probability associated with the predicted class label should reflect its ground truth correctness likelihood. Calibrated confidence estimates are also important for model interpretability. Good confidence estimates provide a valuable extra bit of information to establish trustworthiness with the user - especially for neural networks, whose classification decisions are often difficult to interpret. Further, good probability estimates can be used to incorporate neural networks into other probabilistic models."
+
+  - `video` <https://vimeo.com/238242536> (Pleiss)
 
 
 #### ["Understanding Black-box Predictions via Influence Functions"](https://arxiv.org/abs/1703.04730) Koh, Liang
   `interpretability`
 >	"How can we explain the predictions of a black-box model? In this paper, we use influence functions -- a classic technique from robust statistics -- to trace a model's prediction through the learning algorithm and back to its training data, thereby identifying training points most responsible for a given prediction. To scale up influence functions to modern machine learning settings, we develop a simple, efficient implementation that requires only oracle access to gradients and Hessian-vector products. We show that even on non-convex and non-differentiable models where the theory breaks down, approximations to influence functions can still provide valuable information. On linear models and convolutional neural networks, we demonstrate that influence functions are useful for multiple purposes: understanding model behavior, debugging models, detecting dataset errors, and even creating visually-indistinguishable training-set attacks."
+
+>	"We use influence functions, a classic technique from robust statistics, to trace a model's prediction through the learning algorithm and back to its training data, thereby identifying training points most responsible for a given prediction."  
+>	"We show that even on non-convex and non-differentiable models where the theory breaks down, approximations to influence functions can still provide valuable information."  
+>	"On linear models and convolutional neural networks, we demonstrate that influence functions are useful for multiple purposes: understanding model behavior, debugging models, detecting dataset errors, and even creating visually-indistinguishable training-set attacks."  
+
   - `video` <https://youtube.com/watch?v=0w9fLX_T6tY> (Koh)
+  - `video` <https://vimeo.com/237274831> (Koh)
   - `video` <https://facebook.com/academics/videos/1633085090076225/> (1:23:28) (Liang)
+  - `video` <https://youtube.com/watch?v=dk6UsEzfKdU> (Matushkin) `in russian`
   - `code` <https://github.com/kohpangwei/influence-release>
+  - `code` <https://github.com/darkonhub/darkon>
 
 
 
 ---
 ### interesting papers - gradient estimation
+
+
+#### ["Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation"](https://arxiv.org/abs/1308.3432) Bengio, Leonard, Courville
+  `gradient estimation` `straight-through estimator`
+>	"Stochastic neurons and hard non-linearities can be useful for a number of reasons in deep learning models, but in many cases they pose a challenging problem: how to estimate the gradient of a loss function with respect to the input of such stochastic or non-smooth neurons? I.e., can we “back-propagate” through these stochastic neurons? We examine this question, existing approaches, and compare four families of solutions, applicable in different settings. One of them is the minimum variance unbiased gradient estimator for stochatic binary neurons (a special case of the REINFORCE algorithm). A second approach, introduced here, decomposes the operation of a binary stochastic neuron into a stochastic binary part and a smooth differentiable part, which approximates the expected effect of the pure stochatic binary neuron to first order. A third approach involves the injection of additive or multiplicative noise in a computational graph that is otherwise differentiable. A fourth approach heuristically copies the gradient with respect to the stochastic output directly as an estimator of the gradient with respect to the sigmoid argument (we call this the straight-through estimator). To explore a context where these estimators are useful, we consider a small-scale version of conditional computation, where sparse stochastic units form a distributed representation of gaters that can turn off in combinatorially many ways large chunks of the computation performed in the rest of the neural network. In this case, it is important that the gating units produce an actual 0 most of the time. The resulting sparsity can be potentially be exploited to greatly reduce the computational cost of large deep networks for which conditional computation would be useful."
+
+  - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (14:35) (Bengio)
+  - `video` <https://youtu.be/_JTu50iDhkA?t=1h21m53s> (Sobolev)
 
 
 #### ["Gradient Estimation Using Stochastic Computation Graphs"](http://arxiv.org/abs/1506.05254) Schulman, Heess, Weber, Abbeel
@@ -1336,7 +1455,7 @@ Yoshua Bengio:
 
 
 #### ["MuProp: Unbiased Backpropagation for Stochastic Neural Networks"](http://arxiv.org/abs/1511.05176) Gu, Levine, Sutskever, Mnih
-  `gradient estimation`
+  `gradient estimation` `MuProp`
 >	"Deep neural networks are powerful parametric models that can be trained efficiently using the backpropagation algorithm. Stochastic neural networks combine the power of large parametric functions with that of graphical models, which makes it possible to learn very complex distributions. However, as backpropagation is not directly applicable to stochastic networks that include discrete sampling operations within their computational graph, training such networks remains difficult. We present MuProp, an unbiased gradient estimator for stochastic networks, designed to make this task easier. MuProp improves on the likelihood-ratio estimator by reducing its variance using a control variate based on the first-order Taylor expansion of a mean-field network. Crucially, unlike prior attempts at using backpropagation for training stochastic networks, the resulting estimator is unbiased and well behaved. Our experiments on structured output prediction and discrete latent variable modeling demonstrate that MuProp yields consistently good performance across a range of difficult tasks."
 
 >	"In this paper, we presented MuProp, which is an unbiased estimator of derivatives in stochastic computational graphs that combines the statistical efficiency of backpropagation with the correctness of a likelihood ratio method. MuProp has a number of natural extensions. First, we might consider using other functions for the baseline rather than just the Taylor expansion, which could be learned in a manner that resembles Q-learning and target propagation. In reinforcement learning, fitted Q-functions obtained by estimating the expected return of a given policy πθ summarize all future costs, and a good Q-function can greatly simplify the temporal credit assignment problem. Combining MuProp with such fitted Q-functions could greatly reduce the variance of the estimator and make it better suited for very deep computational graphs, such as long recurrent neural networks and applications in reinforcement learning. The second extension is to make x¯ depend on samples of its parent nodes. This could substantially improve performance on deeper networks, where the value from a singletrunk mean-field pass may diverge significantly from any samples drawn with a fully stochastic pass. By drawing x¯ using mean-field passes originating at sampled values from preceding layers would prevent such divergence, though at additional computational cost, since the number of mean-field passes would depend on the depth n of the network, for a total of O(n^2) partial passes through the network. Intuitively, the single mean-field “chain” would turn into a “tree,” with a sampled trunk and a different mean-field branch at each layer."
@@ -1361,7 +1480,7 @@ Yoshua Bengio:
 
 
 #### ["Reparameterization Gradients through Acceptance-Rejection Sampling Algorithms"](http://arxiv.org/abs/1610.05683) Naesseth, Ruiz, Linderman, Blei
-  `variables with complex distributions`
+  `variables with complex distributions` `RSVI`
 >	"For many distributions of interest (such as the gamma or Dirichlet), simulation of random variables relies on acceptance-rejection sampling. The discontinuity introduced by the accept-reject step means that standard reparameterization tricks are not applicable. We propose a new method that lets us leverage reparameterization gradients even when variables are outputs of a acceptance-rejection sampling algorithm. Our approach enables reparameterization on a larger class of variational distributions."
 
   - `video` <https://youtu.be/quIuMYSLaYM?t=17m21s> (Ruiz)
@@ -1381,6 +1500,7 @@ Yoshua Bengio:
 
 
 #### ["The Concrete Distribution: A Continuous Relaxation of Discrete Random Variables"](http://arxiv.org/abs/1611.00712) Maddison, Mnih, Teh
++
 #### ["Categorical Reparametrization with Gumbel-Softmax"](http://arxiv.org/abs/1611.01144) Jang, Gu, Poole
   `variables with discrete distributions`
 >	"Continuous reparemetrisation based on the so-called Concrete or Gumbel-softmax distribution, which is a continuous distribution and has a temperature constant that can be annealed during training to converge to a discrete distribution in the limit. In the beginning of training the variance of the gradients is low but biased, and towards the end of training the variance becomes high but unbiased."
@@ -1404,7 +1524,7 @@ Yoshua Bengio:
   - `code` <https://github.com/EderSantana/gumbel>
 
 
-#### ["REBAR: Low-variance, unbiased gradient estimates for discrete latent variable models"](http://arxiv.org/abs/1703.07370) Tucker, Mnih, Maddison, Lawson, Sohl-Dickstein
+#### ["REBAR: Low-variance, Unbiased Gradient Estimates for Discrete Latent Variable Models"](http://arxiv.org/abs/1703.07370) Tucker, Mnih, Maddison, Lawson, Sohl-Dickstein
   `variables with discrete distributions` `REBAR`
 >	"Learning in models with discrete latent variables is challenging due to high variance gradient estimators. Generally, approaches have relied on control variates to reduce the variance of the REINFORCE estimator. Recent work (Jang et al. 2016; Maddison et al. 2016) has taken a different approach, introducing a continuous relaxation of discrete variables to produce low-variance, but biased, gradient estimates. In this work, we combine the two approaches through a novel control variate that produces low-variance, unbiased gradient estimates. Then, we introduce a novel continuous relaxation and show that the tightness of the relaxation can be adapted online, removing it as a hyperparameter."
 
@@ -1668,6 +1788,11 @@ Yoshua Bengio:
 >	"Deep neural networks are powerful black box predictors that have recently achieved impressive performance on a wide spectrum of tasks. Quantifying predictive uncertainty in neural networks is a challenging and yet unsolved problem. Bayesian neural networks, which learn a distribution over weights, are currently the state-of-the-art for estimating predictive uncertainty; however these require significant modifications to the training procedure and are computationally expensive compared to standard (non-Bayesian) neural neural networks. We propose an alternative to Bayesian neural networks, that is simple to implement, readily parallelisable and yields high quality predictive uncertainty estimates. Through a series of experiments on classification and regression benchmarks, we demonstrate that our method produces well-calibrated uncertainty estimates which are as good or better than approximate Bayesian neural networks. To assess robustness to dataset shift, we evaluate the predictive uncertainty on test examples from known and unknown distributions, and show that our method is able to express higher uncertainty on unseen data. We demonstrate the scalability of our method by evaluating predictive uncertainty estimates on ImageNet."
 
 >	"We have proposed a simple and scalable solution that provides a very strong baseline on evaluation metrics for uncertainty quantification. Our method uses scoring rules as training objectives to encourage the neural network to produce better calibrated predictions and uses a combination of ensembles and adversarial training for robustness to model misspecification and dataset shift. Our method is well suited for large scale distributed computation and can be readily implemented for a wide variety of architectures such as MLPs, CNNs, etc including those which do not use dropout (e.g. residual networks). It is perhaps surprising to the Bayesian deep learning community that a non-Bayesian (yet probabilistic) approach can perform as well as Bayesian neural networks. We hope that this work will encourage community to think about hybrid approaches (e.g. using non-Bayesian approaches such as ensembles) and other interesting metrics for evaluating predictive uncertainty."
+
+>	"Adversarial Training to improve the uncertainty measure of the entropy score of the neural network."  
+>	"Good uncertainty estimate: calibration + higher uncertainty on out-of-distribution examples."  
+>	"Existing bayesian solutions (MCMC, VI, MC-Dropout) are hard to scale and requires significant modifications for training."  
+>	"Single network and MC-Dropout can produce overconfident wrong predictions, whereas deep ensembles are more robust."  
 
   - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747/> (1:00:23) (Lakshminarayanan)
   - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/simple-and-scalable-predictive-uncertainty-estimation-using-deep-ensembles/> `in russian`
@@ -2940,4 +3065,4 @@ x."
   - `video` <https://youtube.com/watch?v=hnT-P3aALVE> (demo)
   - `video` <http://youtube.com/watch?v=TQ_hJ63YCTw#t=22m> (demo)
   - `code` <https://github.com/reedscot/icml2016>
-  - `code` <https://github.com/paarthneekhara/text-to-image>
+  a `code` <https://github.com/paarthneekhara/text-to-image>
