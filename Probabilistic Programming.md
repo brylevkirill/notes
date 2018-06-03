@@ -9,10 +9,6 @@
   * [interesting papers](#interesting-papers)
     - [applications](#interesting-papers---applications)
 
-----
-
-  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
-
 
 
 ---

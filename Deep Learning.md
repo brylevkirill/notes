@@ -14,7 +14,6 @@
   * [architectures](#architectures)
     - [convolutional neural network](#architectures---convolutional-neural-network)
     - [recurrent neural network](#architectures---recurrent-neural-network)
-    - [graph neural network](#architectures---graph-neural-network)
     - [attention](#architectures---attention)
     - [compute and memory](#architectures---compute-and-memory)
     - [distributed representation](#architectures---distributed-representation)
@@ -58,9 +57,8 @@
 
 #### tutorials
 
-  [Deep Learning: Practice and Trends](https://facebook.com/nipsfoundation/videos/1552060484885185/) by Oriol Vinyals and Scott Reed `video` ([slides](http://goo.gl/b6QBBh))
-
-  [Deep Learning Summer School](http://videolectures.net/deeplearning2017_montreal/) `video`
+  [Deep Learning: Practice and Trends](https://facebook.com/nipsfoundation/videos/1552060484885185/) by Oriol Vinyals and Scott Reed `video` ([slides](http://goo.gl/b6QBBh))  
+  [Deep Learning Summer School](http://videolectures.net/deeplearning2017_montreal/) `video`  
 
 
 #### courses
@@ -266,7 +264,7 @@
 
   [papers and resources](#interesting-papers---bayesian-inference-and-learning)
 
-  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
+  [**bayesian inference and learning**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
 
 ----
 
@@ -289,8 +287,8 @@
 
 ----
 
-  [variational inference](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#variational-inference)  
-  [variational autoencoder](#generative-models---variational-autoencoder)  
+  [**variational inference**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#variational-inference)  
+  [**variational autoencoder**](#generative-models---variational-autoencoder)  
 
 ----
 
@@ -803,7 +801,6 @@
 
   - [convolutional neural network](#architectures---convolutional-neural-network)
   - [recurrent neural network](#architectures---recurrent-neural-network)
-  - [graph neural network](#architectures---graph-neural-network)
   - [attention](#architectures---attention)
   - [compute and memory](#architectures---compute-and-memory)
   - [distributed representation](#architectures---distributed-representation)
@@ -828,6 +825,24 @@
 
   ["CNN Architectures"](https://youtube.com/watch?v=DAOcjicFr1Y) by Serena Young `video`  
   [overview of architectures](https://medium.com/towards-data-science/neural-network-architectures-156e5bad51ba) by Eugenio Culurciello  
+
+----
+
+  **graph neural network**
+
+  ["Graph Neural Networks: Variations and Applications](https://youtube.com/watch?v=cWIeTMklzNg) by Alexander Gaunt `video`  
+  ["Convolutional Neural Networks on Graphs"](https://youtube.com/watch?v=v3jZRkvIOIM) by Xavier Bresson `video`  
+  ["Large-scale Graph Representation Learning"](https://youtube.com/watch?v=oQL4E1gK3VU) by Jure Leskovec `video`  
+
+  ["Graph Convolutional Networks"](https://tkipf.github.io/graph-convolutional-networks) by Thomas Kipf
+
+  <http://geometricdeeplearning.com>
+
+  ["Geometric Deep Learning"](https://vimeo.com/248497329) tutorial by Bronstein, Bruna, Szlam, Bresson, LeCun `video`  
+  ["Geometric Deep Learning"](https://youtube.com/watch?v=ptcBmEHDWds) by Michael Bronstein `video`  
+  ["Geometric Deep Learning"](https://youtube.com/watch?v=Qtgep2CEExY) by Joan Bruna and Michael Bronstein `audio`  
+
+  ["Geometric Deep Learning: Going beyond Euclidean Data"](https://arxiv.org/abs/1611.08097) by Bronstein, Bruna, LeCun, Szlam, Vandergheynst `paper`
 
 ----
 
@@ -887,27 +902,6 @@
 
   ["Frontiers in Recurrent Neural Network Research"](https://youtube.com/watch?v=pwyBoPFsQ4M) by Alex Graves `video`  
   ["New Directions for Recurrent Neural Networks"](https://facebook.com/iclr.cc/videos/1713144705381255/) by Alex Graves `video`  
-
-
-
----
-### architectures - graph neural network
-
-  ["Graph Neural Networks: Variations and Applications](https://youtube.com/watch?v=cWIeTMklzNg) by Alexander Gaunt `video`  
-  ["Convolutional Neural Networks on Graphs"](https://youtube.com/watch?v=v3jZRkvIOIM) by Xavier Bresson `video`  
-  ["Large-scale Graph Representation Learning"](https://youtube.com/watch?v=oQL4E1gK3VU) by Jure Leskovec `video`  
-
-  ["Graph Convolutional Networks"](https://tkipf.github.io/graph-convolutional-networks) by Thomas Kipf
-
-----
-
-  <http://geometricdeeplearning.com>
-
-  ["Geometric Deep Learning"](https://vimeo.com/248497329) tutorial by Bronstein, Bruna, Szlam, Bresson, LeCun `video`  
-  ["Geometric Deep Learning"](https://youtube.com/watch?v=ptcBmEHDWds) by Michael Bronstein `video`  
-  ["Geometric Deep Learning"](https://youtube.com/watch?v=Qtgep2CEExY) by Joan Bruna and Michael Bronstein `audio`  
-
-  ["Geometric Deep Learning: Going beyond Euclidean Data"](https://arxiv.org/abs/1611.08097) by Bronstein, Bruna, LeCun, Szlam, Vandergheynst `paper`
 
 
 
@@ -1376,7 +1370,8 @@ Yoshua Bengio:
   - `post` <https://kratzert.github.io/2016/02/12/understanding-the-gradient-flow-through-the-batch-normalization-layer.html>
   - `post` <https://kevinzakka.github.io/2016/09/14/batch_normalization/>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/icml/IoffeS15>
-  
+  - `paper` ["How Does Batch Normalization Help Optimization (No, It Is Not About Internal Covariate Shift)"](https://arxiv.org/abs/1805.11604) by Santurkar et al.
+
 
 #### ["Self-Normalizing Neural Networks"](https://arxiv.org/abs/1706.02515) Klambauer, Unterthiner, Mayr, Hochreiter
   `optimization`
@@ -3065,4 +3060,4 @@ x."
   - `video` <https://youtube.com/watch?v=hnT-P3aALVE> (demo)
   - `video` <http://youtube.com/watch?v=TQ_hJ63YCTw#t=22m> (demo)
   - `code` <https://github.com/reedscot/icml2016>
-  a `code` <https://github.com/paarthneekhara/text-to-image>
+  - `code` <https://github.com/paarthneekhara/text-to-image>

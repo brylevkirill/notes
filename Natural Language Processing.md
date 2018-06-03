@@ -85,7 +85,8 @@
 
 ----
 
-  ["Statistical NLP"](https://uclmr.github.io/stat-nlp-book) interactive lecture notes, slides and exercises from UCL Machine Reading group
+  ["Statistical NLP"](https://uclmr.github.io/stat-nlp-book) interactive lecture notes, slides and exercises from UCL Machine Reading group  
+  ["Natural Language Processing"](https://github.com/jacobeisenstein/gt-nlp-class/) notes and slides from Georgia Tech  
 
 ----
 

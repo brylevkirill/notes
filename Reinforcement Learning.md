@@ -1238,6 +1238,8 @@
   course by John Schulman (parts [1](https://youtube.com/watch?v=BB-BhTn6DCM), [2](https://youtube.com/watch?v=_t5fpZuuf-4), [3](https://youtube.com/watch?v=Fauwwkiy-bo), [4](https://youtube.com/watch?v=IDSA2wAACr0)) `video`  
   course by John Schulman (parts [1](https://youtube.com/watch?v=aUrX-rP_ss4), [2](https://youtube.com/watch?v=oPGVsoBonLM), [3](https://youtube.com/watch?v=rO7Dx8pSJQw), [4](https://youtube.com/watch?v=gb5Q2XL5c8A)) `video`  
 
+  ["Advanced Policy Gradient Methods"](https://youtube.com/watch?v=ycCtmp4hcUs) by Joshua Achiam `video`
+
   [overview](https://yadi.sk/i/I3M09HKQ3GKBiP) by Fedor Ratnikov `video` `in russian`  
   [overview](https://youtu.be/mrgJ53TIcQc?t=41m35s) by Alexey Seleznev `video` `in russian`  
 
@@ -1255,6 +1257,7 @@
   - likelihood ratio policy gradient  
     * [REINFORCE](#reinforce)  (policy gradient estimation using simple baseline for returns)  
     * [Trust Region Policy Optimization](#trust-region-policy-optimization-trpo)  (policy gradient estimation using natural gradient / trust region)  
+    * [Proximal Policy Optimization](#proximal-policy-optimization-ppo)  (KL-constrained policy gradient estimation without using natural gradient)  
     * [Actor-Critic](#actor-critic-ac), [Advantage Actor-Critic](#advantage-actor-critic-a2c), [Generalized Advantage Estimation](#generalized-advantage-estimation-gae)  (policy gradient estimation using critic as baseline for returns)  
   - pathwise derivative policy gradient  
     * [Deep Deterministic Policy Gradient](#deep-deterministic-policy-gradient-ddpg)  (policy gradient estimation using gradient of critic as model of returns)  
@@ -1352,10 +1355,10 @@
 
   ["Trust Region Policy Optimization"](#trust-region-policy-optimization-schulman-levine-moritz-jordan-abbeel) by Schulman et al. `paper` `summary`
 
-
   [overview](https://youtu.be/xe-z4i3l-iQ?t=30m35s) by Pieter Abbeel `video`  
   [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=1630) by Pieter Abbeel `video`  
   [overview](https://youtube.com/watch?v=gb5Q2XL5c8A) by John Schulman `video`  
+  [overview](https://youtu.be/ycCtmp4hcUs?t=58m53s) by Joshua Achiam `video`  
   [overview](https://yadi.sk/i/1oyihBnm3HiKHm) by Alexander Fritzler `video` `in russian`  
 
   [overview of implementation](https://yadi.sk/i/b0ol2gUV3HiKKJ) by Alexander Fritzler and Fedor Ratnikov `video` `in russian`  
@@ -1376,6 +1379,15 @@
   This objective can be approximated by using an importance-sampled Monte Carlo estimate of Q-values, with a distribution of states sampled from policy θold. However, theres a constraint to updating θ: the average KL divergence between the new policy and old policy cannot be greater than a constant δ. This acts as a limiter on the step size we can take on each update, and can be compared to the natural gradient. The theory behind TRPO guarantees gradual improvement over the expected return of a policy."
 
   "One downside to TRPO algorithm is its on-policy nature, requiring new Q-values after every policy update. We cannot use methods such as experience replay which reuse past information, so that we must acquire new Monte Carlo estimates of Q for every new policy. Furthermore, Monte Carlo estimates are known to have higher variance than methods such as one-step TD updates, since the return is affected by independent future decisions. Bringing this variance down requires many episodes of experience per policy update, making TRPO a data-heavy algorithm."
+
+
+
+----
+#### Proximal Policy Optimization (PPO)
+
+  ["Proximal Policy Optimization Algorithms"](#proximal-policy-optimization-algorithms-schulman-wolski-dhariwal-radford-klimov) by Schulman et al. `paper` `summary`
+
+  [overview](https://youtu.be/ycCtmp4hcUs?t=1h7m) by Joshua Achiam `video`
 
 
 
@@ -1421,7 +1433,6 @@
 #### Generalized Advantage Estimation (GAE)
 
   ["High-Dimensional Continuous Control Using Generalized Advantage Estimation"](#high-dimensional-continuous-control-using-generalized-advantage-estimation-schulman-moritz-levine-jordan-abbeel) by Schulman et al. `paper` `summary`
-
 
   [overview](https://youtu.be/xe-z4i3l-iQ?t=30m35s) by Pieter Abbeel `video`  
   [overview](https://youtu.be/rO7Dx8pSJQw?t=40m20s) by John Schulman `video`  
@@ -2598,14 +2609,6 @@ interesting recent papers:
   - `code` <https://github.com/flyyufelix/Direct-Future-Prediction-Keras>
 
 
-#### ["Deep Reinforcement Learning from Self-Play in Imperfect-Information Games"](http://arxiv.org/abs/1603.01121) Heinrich, Silver (Poker)
->	"Many real-world applications can be described as large-scale games of imperfect information. To deal with these challenging domains, prior work has focused on computing Nash equilibria in a handcrafted abstraction of the domain. In this paper we introduce the first scalable end-to-end approach to learning approximate Nash equilibria without any prior knowledge. Our method combines fictitious self-play with deep reinforcement learning. When applied to Leduc poker, Neural Fictitious Self-Play (NFSP) approached a Nash equilibrium, whereas common reinforcement learning methods diverged. In Limit Texas Holdem, a poker game of real-world scale, NFSP learnt a competitive strategy that approached the performance of human experts and state-of-the-art methods."
-
->	"We have introduced NFSP, the first end-to-end deep reinforcement learning approach to learning approximate Nash equilibria of imperfect-information games from self-play. NFSP addresses three problems. Firstly, NFSP agents learn without prior knowledge. Secondly, they do not rely on local search at runtime. Thirdly, they converge to approximate Nash equilibria in self-play. Our empirical results provide the following insights. The performance of fictitious play degrades gracefully with various approximation errors. NFSP converges reliably to approximate Nash equilibria in a small poker game, whereas DQN’s greedy and average strategies do not. NFSP learned a competitive strategy in a real-world scale imperfect-information game from scratch without using explicit prior knowledge. In this work, we focussed on imperfect-information two-player zero-sum games. Fictitious play, however, is also guaranteed to converge to Nash equilibria in cooperative, potential games. It is therefore conceivable that NFSP can be successfully applied to these games as well. Furthermore, recent developments in continuous-action reinforcement learning (Lillicrap et al., 2015) could enable NFSP to be applied to continuous-action games, which current game-theoretic methods cannot deal with directly."
-
-  - `video` <http://techtalks.tv/talks/deep-reinforcement-learning/62360/> (1:05:00) (Silver)
-
-
 #### ["Deep Recurrent Q-Learning for Partially Observable MDPs"](http://arxiv.org/abs/1507.06527) Hausknecht, Stone
 >	"Deep Reinforcement Learning has yielded proficient controllers for complex tasks. However, these controllers have limited memory and rely on being able to perceive the complete game screen at each decision point. To address these shortcomings, this article investigates the effects of adding recurrency to a Deep Q-Network by replacing the first post-convolutional fully-connected layer with a recurrent LSTM. The resulting Deep Recurrent Q-Network exhibits similar performance on standard Atari 2600 MDPs but better performance on equivalent partially observed domains featuring flickering game screens. Results indicate that given the same length of history, recurrency allows partial information to be integrated through time and is superior to alternatives such as stacking a history of frames in the network's input layer. We additionally show that when trained with partial observations, DRQN's performance at evaluation time scales as a function of observability. Similarly, when trained with full observations and evaluated with partial observations, DRQN's performance degrades more gracefully than that of DQN. We therefore conclude that when dealing with partially observed domains, the use of recurrency confers tangible benefits."
 
@@ -2750,6 +2753,7 @@ interesting recent papers:
   - `video` <https://youtu.be/xe-z4i3l-iQ?t=30m35s> (Abbeel)
   - `video` <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=1630> (Abbeel)
   - `video` <https://youtube.com/watch?v=gb5Q2XL5c8A> (Schulman)
+  - `video` <https://youtu.be/ycCtmp4hcUs?t=58m53s> (Achiam)
   - `video` <https://yadi.sk/i/1oyihBnm3HiKHm> + <https://yadi.sk/i/b0ol2gUV3HiKKJ> (Fritzler and Ratnikov) `in russian` ([slides](https://yadi.sk/i/9j6S4WVp3HgEdn) `in english`)
   - `post` <http://kvfrans.com/what-is-the-natural-gradient-and-where-does-it-appear-in-trust-region-policy-optimization/>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/SchulmanLMJA15>
@@ -2771,6 +2775,20 @@ interesting recent papers:
   - `notes` <https://danieltakeshi.github.io/2017/04/02/notes-on-the-generalized-advantage-estimation-paper/>
   - `code` <https://github.com/joschu/modular_rl>
   - `code` <https://github.com/rll/deeprlhw2/blob/master/ppo.py>
+
+
+#### ["Proximal Policy Optimization Algorithms"](https://arxiv.org/abs/1707.06347) Schulman, Wolski, Dhariwal, Radford, Klimov
+  `PPO` `policy gradient` `on-policy`
+>	"We propose a new family of policy gradient methods for reinforcement learning, which alternate between sampling data through interaction with the environment, and optimizing a "surrogate" objective function using stochastic gradient ascent. Whereas standard policy gradient methods perform one gradient update per data sample, we propose a novel objective function that enables multiple epochs of minibatch updates. The new methods, which we call proximal policy optimization, have some of the benefits of trust region policy optimization, but they are much simpler to implement, more general, and have better sample complexity (empirically). Our experiments test PPO on a collection of benchmark tasks, including simulated robotic locomotion and Atari game playing, and we show that PPO outperforms other online policy gradient methods, and overall strikes a favorable balance between sample complexity, simplicity, and wall-time."
+
+  - `post` <https://blog.openai.com/openai-baselines-ppo/> (demo)
+  - `video` <https://youtu.be/ycCtmp4hcUs?t=1h7m> (Achiam)
+  - `post` <https://learningai.io/projects/2017/07/28/ai-gym-workout.html>
+  - `notes` <https://towardsdatascience.com/introduction-to-various-reinforcement-learning-algorithms-part-ii-trpo-ppo-87f2c5919bb9>
+  - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Proximal_Policy_Optimization_Algorithms.md>
+  - `code` <https://github.com/openai/baselines/tree/master/baselines/pposgd>
+  - `code` <https://github.com/ikostrikov/pytorch-a2c-ppo-acktr>
+  - `code` <https://github.com/ShangtongZhang/DeepRL>
 
 
 #### ["Deterministic Policy Gradient Algorithms"](http://jmlr.org/proceedings/papers/v32/silver14.html) Silver, Lever, Heess, Degris, Wierstra, Riedmiller

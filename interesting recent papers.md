@@ -112,6 +112,12 @@ interesting older papers:
   - `code` <https://github.com/keskarnitish/large-batch-training>
   - `paper` ["Flat Minima"](http://www.bioinf.jku.at/publications/older/3304.pdf) by Hochreiter, Schmidhuber
 
+----
+#### ["How Does Batch Normalization Help Optimization? (No, It Is Not About Internal Covariate Shift)"](https://arxiv.org/abs/1805.11604) Santurkar, Tsipras, Ilyas, Madry
+  `optimization`
+>	"Batch Normalization (BatchNorm) is a widely adopted technique that enables faster and more stable training of deep neural networks (DNNs). Despite its pervasiveness, the exact reasons for BatchNorm's effectiveness are still poorly understood. The popular belief is that this effectiveness stems from controlling the change of the layers' input distributions during training to reduce the so-called "internal covariate shift". In this work, we demonstrate that such distributional stability of layer inputs has little to do with the success of BatchNorm. Instead, we uncover a more fundamental impact of BatchNorm on the training process: it makes the optimization landscape significantly smoother. This smoothness induces a more predictive and stable behavior of the gradients, allowing for faster training."  
+  - `notes` <https://twitter.com/arimorcos/status/1001856542268952576>
+
 #### ["First-order Methods Almost Always Avoid Saddle Points"](https://arxiv.org/abs/1710.07406) Lee, Panageas, Piliouras, Simchowitz, Jordan, Recht
   `optimization`
 >	"We establish that first-order methods avoid saddle points for almost all initializations. Our results apply to a wide variety of first-order methods, including gradient descent, block coordinate descent, mirror descent and variants thereof. The connecting thread is that such algorithms can be studied from a dynamical systems perspective in which appropriate instantiations of the Stable Manifold Theorem allow for a global stability analysis. Thus, neither access to second-order derivative information nor randomness beyond initialization is necessary to provably avoid saddle points."  
@@ -1577,6 +1583,7 @@ interesting older papers:
 >	"We show promising results on learning long term structure of environments for reinforcement learning."  
   - `post` <https://avdnoord.github.io/homepage/vqvae/> (demo)
   - `slides` <https://avdnoord.github.io/homepage/slides/SANE2017.pdf>
+  - `code` <https://github.com/deepmind/sonnet/blob/master/sonnet/examples/vqvae_example.ipynb>
 
 #### ["Variational Lossy Autoencoder"](http://arxiv.org/abs/1611.02731) Chen, Kingma, Salimans, Duan, Dhariwal, Schulman, Sutskever, Abbeel
 >	"Information that can be modeled locally by decoding distribution p(x|z) without access to z will be encoded locally and only the remainder will be encoded in z.  
@@ -1983,14 +1990,7 @@ interesting older papers:
 
 #### ["Proximal Policy Optimization Algorithms"](https://arxiv.org/abs/1707.06347) Schulman, Wolski, Dhariwal, Radford, Klimov
   `PPO` `policy gradient` `on-policy`
->	"PPO alternates between sampling data through interaction with the environment, and optimizing a "surrogate" objective function using stochastic gradient ascent. Whereas standard policy gradient methods perform one gradient update per data sample, we propose a novel objective function that enables multiple epochs of minibatch updates."
-  - `post` <https://blog.openai.com/openai-baselines-ppo/> (demo)
-  - `post` <https://learningai.io/projects/2017/07/28/ai-gym-workout.html>
-  - `notes` <https://towardsdatascience.com/introduction-to-various-reinforcement-learning-algorithms-part-ii-trpo-ppo-87f2c5919bb9>
-  - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Proximal_Policy_Optimization_Algorithms.md>
-  - `code` <https://github.com/openai/baselines/tree/master/baselines/pposgd>
-  - `code` <https://github.com/ikostrikov/pytorch-a2c-ppo-acktr>
-  - `code` <https://github.com/ShangtongZhang/DeepRL>
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#proximal-policy-optimization-algorithms-schulman-wolski-dhariwal-radford-klimov>
 
 #### ["Emergence of Locomotion Behaviours in Rich Environments"](https://arxiv.org/abs/1707.02286) Heess et al.
   `DPPO` `policy gradient` `on-policy`
@@ -2028,6 +2028,7 @@ interesting older papers:
 >	- E-step: In the E-step we obtain an estimate of the distribution of return-weighted trajectories. We perform this step by re-weighting state action samples using a learned value function. This is akin to posterior inference step when estimating the parameters of a probabilistic models with latent variables.  
 >	- M-step: In the M-step we update the parametric policy in a supervised learning step using the reweighted state-action samples from the E-step as targets. This corresponds to the update of the model parameters given the complete data log-likelihood when performing EM for a probabilistic model."  
 >	"These choices lead to the following desirable properties: (a) low-variance estimates of the expected return via function approximation; (b) low-sample complexity of value function estimate via robust off-policy learning; (c) minimal parametric assumption about the form of the trajectory distribution in the E-step; (d) policy updates via supervised learning in the M step; (e) robust updates via hard trust-region constraints in both the E and the M step."  
+  - `video` <https://youtube.com/watch?v=he_BPw32PwU>
   - `video` <http://dropbox.com/s/pgcmjst7t0zwm4y/MPO.mp4> + <https://vimeo.com/240200982> (demo)
 
 #### ["IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures"](https://arxiv.org/abs/1802.01561) Espeholt, Soyer, Munos, Simonyan, Mnih, Ward, Doron, Firoiu, Harley, Dunning, Legg, Kavukcuoglu
@@ -2142,6 +2143,10 @@ interesting older papers:
   - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Blazing-the-trails-before-beating-the-path-Sample-efficient-Monte-Carlo-planning> (Grill)
 
 ----
+#### ["Dual Policy Iteration"](https://arxiv.org/abs/1805.10755) Sun, Gordon, Boots, Bagnell
+>	"Recently, a novel class of Approximate Policy Iteration algorithms such as ExIt and AlphaGo-Zero have demonstrated impressive practical performance. This new family of algorithms maintains, and alternately optimizes, two policies: a fast, reactive policy (e.g., a deep neural network) deployed at test time, and a slow, non-reactive policy (e.g., Tree Search), that can plan multiple steps ahead. The reactive policy is updated under supervision from the non-reactive policy, while the non-reactive policy is improved with guidance from the reactive policy. In this work we study this Dual Policy Iteration strategy in an alternating optimization framework and provide a convergence analysis that extends existing API theory."  
+>	"We also develop a special instance of this framework which reduces the update of non-reactive policies to model-based optimal control using learned local models, and provides a theoretically sound way of unifying model-free and model-based RL approaches with unknown dynamics. We demonstrate the efficacy of our approach on various continuous control Markov Decision Processes."  
+
 #### ["Learning Generalized Reactive Policies using Deep Neural Networks"](https://arxiv.org/abs/1708.07280) Groshev, Tamar, Srivastava, Abbeel
   `learning to guide planning` `using available environment model` `search-based policy iteration`
 >	"learning a reactive policy that imitates execution traces produced by a planner"  
@@ -2207,9 +2212,9 @@ interesting older papers:
   - `paper` ["Approximate Modified Policy Iteration and its Application to the Game of Tetris"](http://jmlr.org/papers/v16/scherrer15a.html) by Scherrer et al.
 
 #### ["Thinking Fast and Slow with Deep Learning and Tree Search"](https://arxiv.org/abs/1705.08439) Anthony, Tian, Barber
-  `learning to guide planning` `using available environment model` `search-based policy iteration` `expert iteration`
+  `learning to guide planning` `using available environment model` `search-based policy iteration` `expert iteration` `ExIt`
 >	"Planning new policies is performed by tree search, while a deep neural network generalises those plans."  
->	"Expert Iteration (ExIt) can be viewed as an extension of Imitation Learning methods to domains where the best known experts are unable to achieve satisfactory performance. In standard IL an apprentice is trained to imitate the behaviour of an expert. In ExIt, we extend this to an iterative learning process. Between each iteration, we perform an Expert Improvement step, where we bootstrap the (fast) apprentice policy to increase the performance of the (comparatively slow) expert."  
+>	"Expert Iteration can be viewed as an extension of Imitation Learning methods to domains where the best known experts are unable to achieve satisfactory performance. In standard IL an apprentice is trained to imitate the behaviour of an expert. In ExIt, we extend this to an iterative learning process. Between each iteration, we perform an Expert Improvement step, where we bootstrap the (fast) apprentice policy to increase the performance of the (comparatively slow) expert."  
 >	"Imitation Learning is generally appreciated to be easier than Reinforcement Learning, and this partly explains why ExIt is more successful than model-free methods like REINFORCE. Furthermore, for MCTS to recommend a move, it must be unable to find any weakness with its search. Effectively, therefore, a move played by MCTS is good against a large selection of possible opponents. In contrast, in regular self play (in which the opponent move is made by the network playing as the opposite colour), moves are recommended if they beat only this single opponent under consideration. This is, we believe, a key insight into why ExIt works well (when using MCTS as the expert) - the apprentice effectively learns to play well against many opponents."  
   - `post` <https://davidbarber.github.io/blog/2017/11/07/Learning-From-Scratch-by-Thinking-Fast-and-Slow-with-Deep-Learning-and-Tree-Search/> (Barber)
   - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
