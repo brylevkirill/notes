@@ -2,7 +2,6 @@
 
 
   * [overview](#overview)
-  * [study](#study)
   * [theory](#theory)
   * [methods](#methods)
   * [representation learning](#representation-learning)
@@ -16,52 +15,41 @@
 
 ----
 
-  [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
-  [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)  
-  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)  
-  [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
-
-
-
-----
-#### applications
-
-  [artificial intelligence](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md)  
-  [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
-  [natural language processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md)  
-  [recommender systems](https://github.com/brylevkirill/notes/blob/master/Recommender%20Systems.md)  
-  [information retrieval](https://github.com/brylevkirill/notes/blob/master/Information%20Retrieval.md)  
-
-
-  Any source code for expression y = f(x), where f(x) has some parameters and is used to make decision, prediction or estimate, has potential to be replaced by machine learning algorithm.
+  [**deep learning**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
+  [**reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)  
+  [**bayesian inference and learning**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)  
+  [**probabilistic programming**](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
+  [**causal inference**](https://github.com/brylevkirill/notes/blob/master/Causal%20Inference.md)  
 
 
 
 ---
 ### overview
 
+  ["The Talking Machines"](http://thetalkingmachines.com/blog/) podcast `audio`
+
+  overview by Igor Kuralenok ([first](https://youtu.be/ynS7XvkAdLU?t=12m5s), [second](https://youtu.be/jiyD0r2SC-g?t=12m55s)) `video` `in russian`
+
+
+#### applications
+
+  [**artificial intelligence**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md)  
+  [**knowledge representation and reasoning**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
+  [**natural language processing**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md)  
+  [**recommender systems**](https://github.com/brylevkirill/notes/blob/master/Recommender%20Systems.md)  
+  [**information retrieval**](https://github.com/brylevkirill/notes/blob/master/Information%20Retrieval.md)  
+
   ["Machine Learning is The New Algorithms"](http://nlpers.blogspot.ru/2014/10/machine-learning-is-new-algorithms.html) by Hal Daume  
   ["When is Machine Learning Worth It?"](http://inference.vc/when-is-machine-learning-worth-it/) by Ferenc Huszar  
 
-----
+  Any source code for expression y = f(x), where f(x) has some parameters and is used to make decision, prediction or estimate, has potential to be replaced by machine learning algorithm.
 
-  ["The Talking Machines"](http://thetalkingmachines.com/blog/) podcast `audio`
-
-----
-
-  [overview](http://youtube.com/watch?v=lkh7bLUc30g) by Dmitry Vetrov `video` `in russian`  
-  overview by Igor Kuralenok ([first](https://youtu.be/ynS7XvkAdLU?t=12m5s), [second](https://youtu.be/jiyD0r2SC-g?t=12m55s)) `video` `in russian`  
-
-
-
----
-### study
 
 #### knowledge bases
 
   <http://metacademy.org>  
   <http://en.wikipedia.org/wiki/Machine_learning> ([*guide*](https://github.com/Nixonite/open-source-machine-learning-degree/blob/master/Introduction%20to%20Machine%20Learning%20-%20Wikipedia.pdf))  
-  <http://machinelearning.ru/wiki/> `in russian`  
+  <http://machinelearning.ru> `in russian`  
 
 
 #### guides
@@ -129,11 +117,11 @@
   <http://hunch.net>  
   <http://machinedlearnings.com>  
   <http://nlpers.blogspot.com>  
-  <http://ruder.io>
+  <http://ruder.io>  
   <http://fastml.com>  
   <http://wildml.com>  
   <http://blogs.princeton.edu/imabandit>  
-  <http://timvieira.github.io/blog/>  
+  <http://timvieira.github.io/blog>  
   <http://r2rt.com>  
   <http://danieltakeshi.github.io>  
   <http://theneuralperspective.com>  
@@ -244,8 +232,8 @@
   - identify new and refine old challenges  
 
   frameworks:  
-  - [statistical learning theory](#theory---statistical-learning-theory)  
-  - [computational learning theory](#theory---computational-learning-theory) (PAC learning or PAC-Bayes)  
+  - [**statistical learning theory**](#theory---statistical-learning-theory)  
+  - [**computational learning theory**](#theory---computational-learning-theory) (PAC learning or PAC-Bayes)  
 
 
 ----
@@ -293,11 +281,11 @@
 ----
 #### theory - applications
 
-  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#theory)
+  [**bayesian inference and learning**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#theory)
 
-  [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#theory)
+  [**deep learning**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#theory)
 
-  [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#problems)  
+  [**reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#problems)  
   ["Theory of Reinforcement Learning"](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) by Csaba Szepesvari `video`  
 
 
@@ -349,9 +337,9 @@
 
 ----
 
-  [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
-  [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
-  [knowledge representation](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation)  
+  [**deep learning**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
+  [**probabilistic programming**](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
+  [**knowledge representation**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation)  
 
 
 
@@ -389,11 +377,13 @@
   [inductive programming](https://en.wikipedia.org/wiki/Inductive_programming)
 
   ["Program Synthesis Explained"](http://homes.cs.washington.edu/~bornholt/post/synthesis-for-architects.html) by James Bornholt  
+
   ["Inductive Programming Meets the Real World"](https://microsoft.com/en-us/research/publication/inductive-programming-meets-real-world/) by Gulwani et al. `paper`  
+  ["Approaches and Applications of Inductive Programming"](http://drops.dagstuhl.de/opus/volltexte/2018/8590/pdf/dagrep_v007_i009_p086_17382.pdf) by Schmid, Muggleton, Singh `paper`  
+  ["Recent Advances in Neural Program Synthesis"](https://arxiv.org/abs/1802.02353) by Neel Kant `paper`  
 
-----
-
-  ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34) `video`)
+  [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#program-induction)  
+  [**selected papers**](https://yadi.sk/d/LZYQN7Lu3WxVVb)  
 
 ----
 
@@ -402,19 +392,12 @@
 
   ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi) workshop at NIPS 2016
 	([videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt))  
-  [panel](https://youtu.be/nqiUFc52g78?t=1h29m3s) at NAMPI workshop
+  [panel](https://youtu.be/nqiUFc52g78?t=1h29m3s) at NAMPI 2016
 	with Percy Liang, Juergen Schmidhuber, Joshua Tenenbaum, Martin Vechev, Daniel Tarlow, Dawn Song `video`  
 
 ----
 
-  ["Approaches and Applications of Inductive Programming"](http://drops.dagstuhl.de/opus/volltexte/2018/8590/pdf/dagrep_v007_i009_p086_17382.pdf) by Schmid, Muggleton, Singh `paper`  
-  ["Recent Advances in Neural Program Synthesis"](https://arxiv.org/abs/1802.02353) by Neel Kant `paper`  
-
-  ["TerpreT: A Probabilistic Programming Language for Program Induction"](https://arxiv.org/abs/1608.04428) by Gaunt et al. `paper`  
-  ["Learning Explanatory Rules from Noisy Data"](https://arxiv.org/abs/1711.04574) by Evans and Grefenstette `paper`  
-
-  [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#program-induction)  
-  [selected papers](https://dropbox.com/sh/vrr1gs798zy02n1/AACj7hlXOiRt1nXltXVC-2Wca)  
+  ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34) `video`)
 
 
 
@@ -430,7 +413,7 @@
   [Metalearning symposium](https://vimeo.com/250399623) panel `video`  
   [RNN symposium](https://youtube.com/watch?v=zSNkbhgMkzQ) panel `video`  
 
-  [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#meta-learning)
+  [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#meta-learning)
 
 ----
 
@@ -439,7 +422,7 @@
   ["On Learning How to Learn Learning Strategies"](https://vimeo.com/250399374) by Juergen Schmidhuber `video`  
   ["Learning how to Learn Learning Algorithms: Recursive Self-Improvement"](https://youtube.com/watch?v=nqiUFc52g78) by Juergen Schmidhuber `video`  
 
-  [Goedel Machine](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#meta-learning---goedel-machine)
+  [**Goedel Machine**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#meta-learning---goedel-machine)
 
 ----
 
@@ -495,7 +478,7 @@
   ["Neural Architecture Search"](https://vimeo.com/250399509) by Quoc Le `video`
 	([post](https://research.googleblog.com/2017/11/automl-for-large-scale-image.html))  
 
-  [interesting papers](#interesting-papers---automated-machine-learning)
+  [**interesting papers**](#interesting-papers---automated-machine-learning)
 
 ----
 
@@ -520,6 +503,7 @@
 
   ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34?t=11m43s) `video`)
 
+----
 
   ["Why Tool AIs Want to Be Agent AIs"](http://www.gwern.net/Tool%20AI) by Gwern Branwen:  
 
@@ -562,13 +546,13 @@
   - [systems](#interesting-papers---systems)
 
 
-[interesting papers - deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers)  
-[interesting papers - reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers)  
-[interesting papers - bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#interesting-papers)  
-[interesting papers - probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers)  
+[**interesting papers - deep learning**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers)  
+[**interesting papers - reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers)  
+[**interesting papers - bayesian inference and learning**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#interesting-papers)  
+[**interesting papers - probabilistic programming**](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers)  
 
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md)
+[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md)
 
 
 

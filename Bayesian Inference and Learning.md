@@ -682,10 +682,11 @@
 #### ["TrueSkill(TM): A Bayesian Skill Rating System"](http://research.microsoft.com/apps/pubs/default.aspx?id=67956) Herbrich, Minka, Graepel
 >	"We present a new Bayesian skill rating system which can be viewed as a generalisation of the Elo system used in Chess. The new system tracks the uncertainty about player skills, explicitly models draws, can deal with any number of competing entities and can infer individual skills from team results. Inference is performed by approximate message passing on a factor graph representation of the model. We present experimental evidence on the increased accuracy and convergence speed of the system compared to Elo and report on our experience with the new rating system running in a large-scale commercial online gaming service under the name of TrueSkill."
 
+  - <http://trueskill.org>
   - `video` <https://youtube.com/watch?v=Y3obG7F1crw&t=32m28s> (Bishop)
   - `video` <http://videolectures.net/ecmlpkdd2010_graepel_mlm/> (Graepel)
   - `post` <http://moserware.com/2010/03/computing-your-skill.html>
-  - `code` <http://trueskill.org>
+  - `paper` <http://moserware.com/assets/computing-your-skill/The%20Math%20Behind%20TrueSkill.pdf>
 
 
 #### ["Matchbox: Large Scale Bayesian Recommendations"](http://research.microsoft.com/apps/pubs/default.aspx?id=79460) Stern, Herbrich, Graepel

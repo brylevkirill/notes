@@ -150,15 +150,15 @@
   - *Poker*  
 
 	[Libratus "Science" magazine](http://science.sciencemag.org/content/early/2017/12/15/science.aao1733.full) `paper`  
-	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://arxiv.org/abs/1705.02955) by Noam Brown and Tuomas Sandholm `paper` ([talk](https://youtube.com/watch?v=tRiaGahlyy4) `video`)  
+	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://arxiv.org/abs/1705.02955) by Noam Brown and Tuomas Sandholm `paper` ([talk](https://vimeo.com/248533943#t=53s) `video`)  
 	["Depth-Limited Solving for Imperfect-Information Games"](https://arxiv.org/abs/1805.08195) by Brown, Sandholm, Amos `paper`  
 
-	[Libratus overview](http://videolectures.net/aaai2017_bowling_sandholm_poker/#t=1350) by Tuomas Sandholm `video`  
 	[Libratus overview](https://youtube.com/watch?v=xrWulRY_t1o) by Tuomas Sandholm `video`  
+	[Libratus overview](http://videolectures.net/aaai2017_bowling_sandholm_poker/#t=1350) by Tuomas Sandholm `video`  
 	[Libratus overview](https://youtube.com/watch?v=2dX0lwaQRX0) by Noam Brown `video`  
 	[Libratus overview](https://youtube.com/watch?v=UTogLB99JKQ) by Noam Brown `video`  
 
-	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://youtube.com/watch?v=tRiaGahlyy4) by Noam Brown `video`  
+	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://vimeo.com/248533943#t=53s) by Noam Brown `video`  
 	["Reduced Space and Faster Convergence in Imperfect-Information Games via Pruning"](https://vimeo.com/238229930) by Noam Brown `video`  
 	["The State of Techniques for Solving Large Imperfect-Information Games"](https://youtube.com/watch?v=Gz026reyVwc) by Tuomas Sandholm `video`  
 	["The State of Techniques for Solving Large Imperfect-Information Games, Including Poker"](https://youtube.com/watch?v=QgCxCeoW5JI) by Tuomas Sandholm `video`  
@@ -178,9 +178,10 @@
 	<http://deepstack.ai>  
 	<http://twitter.com/DeepStackAI>  
 
-	[DeepStack overview](http://videolectures.net/aaai2017_bowling_sandholm_poker/#t=177) by Michael Bowling `video`  
+	[DeepStack overview](https://vimeo.com/248532904) by Michael Bowling `video`  
 	[DeepStack overview](https://youtu.be/02xIkHowQOk?t=11m45s) by Michael Bowling `video`  
 	[DeepStack overview](https://youtube.com/watch?v=qndXrHcV1sM) by Michael Bowling `video`  
+	[DeepStack overview](http://videolectures.net/aaai2017_bowling_sandholm_poker/#t=177) by Michael Bowling `video`  
 
 	[discussion](http://thinkingpoker.net/2017/03/episode-208-michael-bowling-of-cprg/) with Michael Bowling  
 	[discussion](http://thinkingpoker.net/2017/04/episode-210-michael-johanson-and-dustin-morrill/) with Michael Johanson and Dustin Morrill  
@@ -1346,8 +1347,6 @@
   [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=1003) by Pieter Abbeel `video`  
   overview by John Schulman ([part 1](https://youtube.com/watch?v=oPGVsoBonLM), [part 2](https://youtube.com/watch?v=oPGVsoBonLM)) `video`  
 
-  [overview of implementation](https://yadi.sk/i/8f9NX_E73GKBkT) by Fedor Ratnikov `video` `in russian`
-
 
 
 ----
@@ -1360,8 +1359,6 @@
   [overview](https://youtube.com/watch?v=gb5Q2XL5c8A) by John Schulman `video`  
   [overview](https://youtu.be/ycCtmp4hcUs?t=58m53s) by Joshua Achiam `video`  
   [overview](https://yadi.sk/i/1oyihBnm3HiKHm) by Alexander Fritzler `video` `in russian`  
-
-  [overview of implementation](https://yadi.sk/i/b0ol2gUV3HiKKJ) by Alexander Fritzler and Fedor Ratnikov `video` `in russian`  
 
   [explanation](http://kvfrans.com/what-is-the-natural-gradient-and-where-does-it-appear-in-trust-region-policy-optimization/) of natural gradient in TRPO by Kevin Frans  
   [explanation](http://www.alexirpan.com/rl-derivations/#natural-policy-gradient) of natural gradient by Alex Irpan  
@@ -1664,9 +1661,10 @@ interesting recent papers:
   - `video` <https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ> (demo matches)
   - <http://deepstack.ai>
   - <http://twitter.com/DeepStackAI>
+  - `video` <https://vimeo.com/248532904> (Bowling)
   - `video` <https://youtu.be/02xIkHowQOk?t=11m45s> (Bowling)
   - `video` <https://youtube.com/watch?v=qndXrHcV1sM> (Bowling)
-  - `video` <http://videolectures.net/aaai2017_bowling_sandholm_poker> (Bowling, Sandholm)
+  - `video` <http://videolectures.net/aaai2017_bowling_sandholm_poker/#t=177> (Bowling)
   - `code` <https://github.com/lifrordi/DeepStack-Leduc>
 
 
@@ -2786,6 +2784,7 @@ interesting recent papers:
   - `post` <https://learningai.io/projects/2017/07/28/ai-gym-workout.html>
   - `notes` <https://towardsdatascience.com/introduction-to-various-reinforcement-learning-algorithms-part-ii-trpo-ppo-87f2c5919bb9>
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Proximal_Policy_Optimization_Algorithms.md>
+  - `post` <http://blog.varunajayasiri.com/ml/ppo.html>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/pposgd>
   - `code` <https://github.com/ikostrikov/pytorch-a2c-ppo-acktr>
   - `code` <https://github.com/ShangtongZhang/DeepRL>

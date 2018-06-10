@@ -823,7 +823,6 @@
 
   - `video` <https://youtube.com/watch?v=BCsOrewkmH4> (Ma)
   - `video` <https://youtu.be/KR46z_V0BVw?t=49m10s> (Arora)
-  - `post` <https://akshayka.github.io/papers/html/arora2017sentence-embeddings.html>
   - `code` <https://github.com/PrincetonML/SIF>
   - `code` <https://github.com/YingyuLiang/SIF>
 
@@ -888,6 +887,7 @@
   - `post` <https://rare-technologies.com/implementing-poincare-embeddings/>
   - `code` <https://github.com/facebookresearch/poincare-embeddings>
   - `code` <https://github.com/TatsuyaShirakawa/poincare-embedding>
+  - `code` <https://github.com/lateral/poincare-embeddings>
 
 
 
