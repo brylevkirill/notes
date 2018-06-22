@@ -227,10 +227,6 @@ interesting older papers:
 >	"We investigate safe RL using a risk-sensitive criterion which focuses only on risk related to model bias, that is, the risk of the policy performing at test time significantly different from at training time. The proposed criterion quantifies the amount of epistemic uncertainty (model bias risk) in the model’s predictive distribution and ignores any risk stemming from the aleatoric uncertainty."  
 >	"We can identify two distinct forms of uncertainties in the class of models given by BNNs with latent variables. Aleatoric uncertainty captures noise inherent in the observations. On the other hand, epistemic uncertainty accounts for uncertainty in the model. In particular, epistemic uncertainty arises from our lack of knowledge of the values of the synaptic weights in the network, whereas aleatoric uncertainty originates from our lack of knowledge of the value of the latent variables. In the domain of model-based RL the epistemic uncertainty is the source of model bias. When there is high discrepancy between model and real-world dynamics, policy behavior may deteriorate. In analogy to the principle that ”a chain is only as strong as its weakest link” a drastic error in estimating the ground truth MDP at a single transition stepcan render the complete policy useless."  
 
-#### ["A Scalable Laplace Approximation for Neural Networks"](https://openreview.net/forum?id=Skdvd2xAZ) Ritter, Botev, Barber
-  `uncertainty estimation`
->	"We leverage recent insights from second-order optimisation for neural networks to construct a Kronecker factored Laplace approximation to the posterior over the weights of a trained network. Our approximation requires no modification of the training procedure, enabling practitioners to estimate the uncertainty of their models currently used in production without having to retrain them. We extensively compare our method to using Dropout and a diagonal Laplace approximation for estimating the uncertainty of a network. We demonstrate that our Kronecker factored method leads to better uncertainty estimates on out-of-distribution data and is more robust to simple adversarial attacks. We illustrate its scalability by applying it to a state-of-the-art convolutional network architecture."  
-
 #### ["Deep and Confident Prediction for Time Series at Uber"](https://arxiv.org/abs/1709.01907) Zhu, Laptev
   `uncertainty estimation`
   - `post` <https://eng.uber.com/neural-networks-uncertainty-estimation/>
@@ -822,7 +818,7 @@ interesting older papers:
   - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482/> (30:38) (Abbeel)
   - `code` <https://github.com/openai/robosumo>
 
-#### ["Some Considerations on Learning to Explore via Meta-Reinforcement Learning"](https://openreview.net/forum?id=Skk3Jm96W) Stadie, Yang, Houthooft, Chen, Duan, Wu, Abbeel, Sutskever
+#### ["Some Considerations on Learning to Explore via Meta-Reinforcement Learning"](https://arxiv.org/abs/1803.01118) Stadie, Yang, Houthooft, Chen, Duan, Wu, Abbeel, Sutskever
   `E-MAML` `E-RL^2` `learning initialization algorithm`
 >	"We introduce two new algorithms: E-MAML and E-RL2, which are derived by reformulating the underlying meta-learning objective to account for the impact of initial sampling on future (post-meta-updated) returns."  
 >	"Meta RL agent must not learn how to master the environments it is given, but rather it must learn how to learn so that it can quickly train at test time."  
@@ -862,9 +858,10 @@ interesting older papers:
   - `video` <http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/#t=4088> (de Freitas)
   - `video` <https://youtu.be/QIcpGa-_bvA?t=34m> (Vinyals)
   - `code` <https://github.com/twitter/meta-learning-lstm>
+  - `code` <https://github.com/gitabcworld/FewShotLearning>
 
 ----
-#### ["A Simple Neural Attentive Meta-Learner"](https://openreview.net/forum?id=B1DmUzWAW) Mishra, Rohaninejad, Chen, Abbeel
+#### ["A Simple Neural Attentive Meta-Learner"](https://arxiv.org/abs/1707.03141) Mishra, Rohaninejad, Chen, Abbeel
   `SNAIL` `learning learning algorithm`
   - <https://sites.google.com/view/snail-iclr-2018/> (demo)
   - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482/> (16:10) (Abbeel)
@@ -1039,6 +1036,15 @@ interesting older papers:
   - `post` <http://giorgiopatrini.org/posts/2017/09/06/in-search-of-the-missing-signals/>
 
 ----
+#### ["Neural Scene Representation and Rendering"](https://deepmind.com/documents/211/Neural_Scene_Representation_and_Rendering_preprint.pdf) Eslami et al.
+  `concept learning` `GQN`
+>	"Generative Query Network, a framework within which machines learn to represent scenes using only their own sensors. The GQN takes as input images of a scene taken from different viewpoints, constructs an internal representation, and uses this representation to predict the appearance of that scene from previously unobserved viewpoints. The GQN demonstrates representation learning without human labels or domain knowledge, paving the way toward machines that autonomously learn to understand the world around them."  
+>	"Classical neural approaches to this learning problem - e.g., autoencoding and density models - are required to capture only the distribution of observed images, and there is no explicit mechanism to encourage learning of how different views of the same 3D scene relate to one another. The expectation is that statistical compression principles will be sufficient to enable networks to discover the 3D structure of the environment; however, in practice, they fall short of achieving this kind of meaningful representation and instead focus on regularities of colors and patches in the image space."  
+  - `video` <https://youtube.com/watch?v=G-kWNQJ4idw> (demo)
+  - `video` <https://youtube.com/watch?v=IVSZnTknyqw> (demo)
+  - `post` <https://deepmind.com/blog/neural-scene-representation-and-rendering>
+  - `paper` <http://science.sciencemag.org/content/sci/360/6394/1204.full.pdf>
+
 #### ["Relational Neural Expectation Maximization: Unsupervised Discovery of Objects and their Interactions"](https://arxiv.org/abs/1802.10353) Steenkiste, Chang, Greff, Schmidhuber
   `concept learning`
 >	"A novel method that learns to discover objects and model their physical interactions from raw visual images in a purely unsupervised fashion. It incorporates prior knowledge about the compositional nature of human perception to factor interactions between object-pairs and learn efficiently."  
@@ -1195,21 +1201,36 @@ interesting older papers:
 
 #### ["A Note on the Evaluation of Generative Models"](http://arxiv.org/abs/1511.01844) Theis, Oord, Bethge
   `evaluation`
+>	"Authors emphasize that an improvement of log-likelihood does not necessarily translate to higher perceptual quality, and that the KL loss is more likely to produce atypical samples than some other training criteria."  
   - `video` <http://videolectures.net/iclr2016_theis_generative_models/> (Theis)
 
 ----
+#### ["Autoregressive Quantile Networks for Generative Modeling"](http://arxiv.org/abs/1806.05575) Ostrovski, Dabney, Munos
+  `alternative to KL divergence` `AIQN` `PixelIQN` `AIQN-VAE`
+>	"Most existing generative models for images belong to one of two classes. The first are likelihood-based models, trained with an element-wise KL reconstruction loss, which, while perceptually meaningless, provides robust optimization properties and high sample diversity. The second are GANs, trained based on a discriminator loss, typically better aligned with a perceptual metric and enabling the generator to produce realistic, globally consistent samples. Their advantages come at the cost of a harder optimization problem, high parameter sensitivity, and most importantly, a tendency to collapse modes of the data distribution."  
+>	"AIQNs are a new, fundamentally different, technique for generative modeling. By using a quantile regression loss instead of KL divergence, they combine some of the best properties of the two model classes. By their nature, they preserve modes of the learned distribution, while producing perceptually appealing high-quality samples. The inevitable approximation trade-offs a generative model makes when constrained by capacity or insufficient training can vary significantly depending on the loss used. We argue that the proposed quantile regression loss aligns more effectively with a given metric and therefore makes subjectively more advantageous trade-offs."  
+>	"IQN, computationally cheap and technically simple, can be readily applied to existing architectures, PixelCNN and VAE, improving robustness and sampling quality of the underlying model."  
+>	"PixelIQN model achieves a performance level comparable to that of the fully trained PixelCNN with only about one third the number of training updates (and about one third of the wall-clock time)."  
+>	"PixelIQN, due to the continuous nature of the quantile function, can be used to learn distributions over lower-dimensional, latent spaces, such as those produced by an autoencoder, variational or otherwise. Specifically, we use a standard VAE, but simultaneously train a small AIQN to model the training distribution over latent codes. For sampling, we then generate samples of the latent distribution using AIQN instead of the VAE prior. This approach works well for two reasons. First, even a thoroughly trained VAE does not produce an encoder that fully matches the Gaussian prior. Generaly, the data distribution exists on a non-Gaussian manifold in the latent space, despite the use of variational training. Second, unlike existing methods, AIQN learns to approximate the full continuous-valued distribution without discretizing values or making prior assumptions about the value range or underlying distribution."  
+>	"A common perspective in generative modeling is that the choice of model should encode existing metric assumptions about the domain, combined with a generic likelihood-focused loss such as the KL divergence. Under this view, the KL’s general applicability and robust optimization properties make it a natural choice, and most of the methods attempt to, at least indirectly, minimize a version of the KL. On the other hand, as every model inevitably makes trade-offs when constrained by capacity or limited training, it is desirable for its optimization goal to incentivize trade-offs prioritizing approximately correct solutions, when the data space is endowed with a metric supporting a meaningful (albeit potentially subjective) notion of approximation. It has been argued that the KL may not always be appropriate from this perspective, by making sub-optimal trade-offs between likelihood and similarity."  
+>	"Many limitations of existing models can be traced back to the use of KL, and the resulting trade-offs in approximate solutions it implies. For instance, its use appears to play a central role in one of the primary failure modes of VAEs, that of blurry samples. Zhao et al. (2017) argue that the Gaussian posterior pθ(x|z) implies an overly simple model, which, when unable to perfectly fit the data, is forced to average (thus creating blur), and is not incentivized by the KL towards an alternative notion of approximate solution. Theis et al. (2015) emphasized that an improvement of log-likelihood does not necessarily translate to higher perceptual quality, and that the KL loss is more likely to produce atypical samples than some other training criteria. We offer an alternative perspective: a good model should encode assumptions about the data distribution, whereas a good loss should encode the notion of similarity, that is, the underlying metric on the data space. From this point of view, the KL corresponds to an actual absence of explicit underlying metric, with complete focus on probability."  
+>	"Wasserstein GAN reposes the two-player game as the estimation of the gradient of the 1-Wasserstein distance between the data and generator distributions. It reframes this in terms of the dual form of the 1-Wasserstein, with the critic estimating a function f which maximally separates the two distributions. It still faces limitations when the critic solution is approximate, i.e. when f* is not found before each update. In this case, due to insufficient training of the critic or limitations of the function approximator, the gradient direction produced can be arbitrarily bad. We are left with the question of how to minimize a distribution loss respecting an underlying metric. Recent work in distributional reinforcement learning has proposed the use of quantile regression as a method for minimizing the 1-Wasserstein in the univariate case when approximating using a mixture of Dirac functions."  
+
 #### ["From Optimal Transport to Generative Modeling: the VEGAN Cookbook"](https://arxiv.org/abs/1705.07642) Bousquet, Gelly, Tolstikhin, Simon-Gabriel, Scholkopf
-  `unifying GANs and VAEs`
+  `alternative to KL divergence` `unifying GANs and VAEs`
 >	"The Optimal Transport cost is a way to measure a distance between probability distributions and provides a much weaker topology than many others, including f-divergences associated with the original GAN algorithms. This is particularly important in applications, where data is usually supported on low dimensional manifolds in the input space X. As a result, stronger notions of distances (such as f-divergences, which capture the density ratio between distributions) often max out, providing no useful gradients for training. In contrast, the Optimal Transport behave nicer and may lead to a more stable training."  
 >	"We show that the Optimal Transport problem can be equivalently written in terms of probabilistic encoders, which are constrained to match the posterior and prior distributions over the latent space. When relaxed, this constrained optimization problem leads to a penalized optimal transport (POT) objective, which can be efficiently minimized using stochastic gradient descent by sampling from Px and Pg."  
 >	"We show that POT for the 2-Wasserstein distance coincides with the objective heuristically employed in adversarial auto-encoders, which provides the first theoretical justification for AAEs known to the authors."  
 >	"We also compare POT to other popular techniques like variational auto-encoders. Our theoretical results include (a) a better understanding of the commonly observed blurriness of images generated by VAEs, and (b) establishing duality between Wasserstein GAN and POT for the 1-Wasserstein distance."  
 >	"WGAN and VAE are respectively dual and primal approximations with deep-nets of an optimal transport estimator (minimum Kantorovich distance estimator). The approximation is so crude however that OT theory is probably mostly of cosmetic use."  
+>	"The optimal transport metrics Wc, for underlying metric c(x,x0), and in particular the p-Wasserstein distance, when c is an Lp metric, have frequently been proposed as being well-suited replacements to KL. Briefly, the advantages are (1) avoidance of mode collapse (no need to choose between spreading over modes or collapsing to a single mode as in KL), and (2) the ability to trade off errors and incentivize approximations that respect the underlying metric."  
   - `paper` ["GAN and VAE from an Optimal Transport Point of View"](https://arxiv.org/abs/1706.01807) by Genevay, Peyre, Cuturi
   - `paper` ["On Minimum Kantorovich Distance Estimators"](https://www.sciencedirect.com/science/article/pii/S0167715206000381) by Bassetti, Bodini, Regazzini
 
+----
 #### ["Variational Approaches for Auto-Encoding Generative Adversarial Networks"](https://arxiv.org/abs/1706.04987) Rosca, Lakshminarayanan, Warde-Farley, Mohamed
   `unifying GANs and VAEs` `α-GAN`
+>	"Attempt to sample from the true latent distribution of a VAE-like latent variable model with sampling distribution trained using a GAN."  
 >	"Use more general likelihoods than in VAE. Fight intractability using discriminators."  
   - `video` <https://youtu.be/ZHucm52V3Zw?t=5m5s> (Umnov)
   - `video` <https://youtu.be/jAI3rBI6poU?t=1h1m33s> (Ulyanov) `in russian`
@@ -1418,7 +1439,9 @@ interesting older papers:
 >
 >	"Using Wasserstein objective reduces instability, but we still lack proof of existence of an equilibrium. Game theory doesn’t help because we need a so-called pure equilibrium, and simple counter-examples such as rock/paper/scissors show that it doesn’t exist in general. Such counterexamples are easily turned into toy GAN scenarios with generator and discriminator having finite capacity, and the game lacks a pure equilibrium."  
 >
->	"Our originality is a focus on continuous distributions with low-dimensional support and the idea to parametrize f in order to obtain a fast algorithm."  
+>	"The originality is a focus on continuous distributions with low-dimensional support and the idea to parametrize f in order to obtain a fast algorithm."  
+>
+>	"Reposing the two-player game as the estimation of the gradient of the 1-Wasserstein distance between the data and generator distributions. Reframing this in terms of the dual form of the 1-Wasserstein, with the critic estimating a function f which maximally separates the two distributions. It still faces limitations when the critic solution is approximate, i.e. when f* is not found before each update. In this case, due to insufficient training of the critic or limitations of the function approximator, the gradient direction produced can be arbitrarily bad."  
   - `video` <https://youtube.com/watch?v=DfJeaa--xO0&t=26m27s> (Bottou)
   - `video` <https://facebook.com/iclr.cc/videos/1710657292296663/> (1:30:02) (Arjowski)
   - `video` <https://youtube.com/watch?v=OdsXPcBfO-c> (Arjowski)
@@ -1818,8 +1841,10 @@ interesting older papers:
 >	- We “transpose” the parametrization from C51: whereas the former uses N fixed locations for its approximation distribution and adjusts their probabilities, we assign fixed, uniform probabilities to N adjustable locations  
 >	- We show that quantile regression may be used to stochastically adjust the distributions’ locations so as to minimize the Wasserstein distance to a target distribution  
 >	- We formally prove contraction mapping results for our overall algorithm, and use these results to conclude that our method performs distributional RL end-to-end under the Wasserstein metric, as desired"  
+>	"Authors proposed the use of quantile regression as a method for minimizing the 1-Wasserstein in the univariate case when approximating using a mixture of Dirac functions."  
+>	"The quantile regression loss for a quantile at τ∈ [0,1] and error u (positive for underestimation and negative for overestimation) is given by ρτ(u) = (τ − I{u ≤ 0})u. It is an asymmetric loss function penalizing underestimation by weight τ and overestimation by weight 1 − τ. For a given scalar distribution Z with c.d.f. Fz and a quantile τ, the inverse c.d.f. q = Fz−1(τ) minimizes the expected quantile regression loss E z∼ Z [ρτ(z − q)]. Using this loss allows one to train a neural network to approximate a scalar distribution represented by its inverse c.d.f. For this, the network can output a fixed grid of quantiles, with the respective quantile regression losses being applied to each output independently. A more effective approach is to provide the desired quantile τ as an additional input to the network, and train it to output the corresponding value of Fz−1(τ)."  
   - `post` <https://mtomassoli.github.io/2017/12/08/distributional_rl/>
-  - `code` <https://github.com/higgsfield/RL-Adventure/blob/master/8.quantile%20regression%20dqn.ipynb>
+  - `code` <https://github.com/higgsfield/RL-Adventure>
   - `code` <https://github.com/NervanaSystems/coach/blob/master/agents/qr_dqn_agent.py>
 
 #### ["A Distributional Perspective on Reinforcement Learning"](https://arxiv.org/abs/1707.06887) Bellemare, Dabney, Munos
@@ -1837,7 +1862,7 @@ interesting older papers:
   - `video` <https://youtu.be/5REJGbNu-Kk?t=11m45s> (Grinchuk) `in russian`
   - `post` <https://mtomassoli.github.io/2017/12/08/distributional_rl/>
   - `post` <https://flyyufelix.github.io/2017/10/24/distributional-bellman.html>
-  - `code` <https://github.com/higgsfield/RL-Adventure/blob/master/6.categorical%20dqn.ipynb>
+  - `code` <https://github.com/higgsfield/RL-Adventure>
   - `code` <https://github.com/floringogianu/categorical-dqn>
   - `code` <https://github.com/flyyufelix/C51-DDQN-Keras>
   - `code` <https://github.com/reinforceio/tensorforce/blob/master/tensorforce/models/categorical_dqn_model.py>
@@ -1913,9 +1938,11 @@ interesting older papers:
 >	"DDPG uses a Q-function estimator to enable off-policy learning, and a deterministic actor that maximizes this Q-function. As such, this method can be viewed both as a deterministic actor-critic algorithm and an approximate Q-learning algorithm. Unfortunately, the interplay between the deterministic actor network and the Q-function typically makes DDPG extremely difficult to stabilize and brittle to hyperparameter settings. As a consequence, it is difficult to extend DDPG to very complex, high-dimensional tasks, and on-policy policy gradient methods still tend to produce the best results in such settings. Our method instead combines off-policy actor-critic training with a stochastic actor, and further aims to maximize the entropy of this actor with an entropy maximization objective. We find that this actually results in a substantially more stable and scalable algorithm that, in practice, exceeds both the efficiency and final performance of DDPG."  
 >	"Many actor-critic algorithms build on the standard, on-policy policy gradient formulation to update the actor, and many of them also consider the entropy of the policy, but instead of maximizing the entropy, they use it as an regularizer. This tends to improve stability, but results in very poor sample complexity. Maximum entropy reinforcement learning optimizes policies to maximize both the expected return and the expected entropy of the policy."  
   - `video` <https://vimeo.com/252185258> (Haarnoja)
+  - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h51m28s> (Sigaud)
   - `video` <https://youtube.com/watch?v=NiTJOw1aST4> (Grinchuk) `in russian`
   - `notes` <https://github.com/Scitator/papers/blob/master/papers/1801_soft_ac.md>
   - `code` <https://github.com/haarnoja/sac>
+  - `code` <https://github.com/higgsfield/RL-Adventure-2>
 
 #### ["A Unified View of Entropy-Regularized Markov Decision Processes"](https://arxiv.org/abs/1705.07798) Neu, Gomez, Jonsson
   `soft Q-learning` `policy gradient` `maximum entropy policy`
@@ -1962,14 +1989,6 @@ interesting older papers:
   - `code` <https://github.com/abhishm/PGQ>
 
 ----
-#### ["Expected Policy Gradients"](https://arxiv.org/abs/1706.05374) Ciosek, Whiteson
-  `EPG` `policy gradient` `on-policy`
->	"EPG unify stochastic policy gradients (SPG) and deterministic policy gradients (DPG) for reinforcement learning. Inspired by expected SARSA, EPG integrates across the action when estimating the gradient, instead of relying only on the action selected during the sampled trajectory. We establish a new general policy gradient theorem, of which the stochastic and deterministic policy gradient theorems are special cases."  
->	"We also prove that EPG reduces the variance of the gradient estimates without requiring deterministic policies and, for the Gaussian case, with no computational overhead. When the policy is Gaussian, we can now reinterpret deterministic policy gradients as an on-policy method: the deterministic policy of the original formulation is just the result of analytically integrating across actions in the Gaussian policy."  
->	"Both SPG and DPG approaches have significant shortcomings. For SPG, variance in the gradient estimates means that many trajectories are usually needed for learning. Since gathering trajectories is typically expensive, there is a great need for more sample efficient methods. DPG’s use of deterministic policies mitigates the problem of variance in the gradient but raises other difficulties. The theoretical support for DPG is limited since it assumes a critic that approximates ∇aQ when in practice it approximates Q instead. In addition, DPG learns off-policy, which is undesirable when we want learning to take the cost of exploration into account. More importantly, learning off-policy necessitates designing a suitable exploration policy, which is difficult in practice. In fact, efficient exploration in DPG is an open problem and most applications simply use independent Gaussian noise or the Ornstein-Uhlenbeck heuristic."  
->	"EPG also enables a practical contribution. Under certain conditions, we get an analytical expression for the covariance of the Gaussian that leads to a principled directed exploration strategy for continuous problems. We show that it is optimal in a certain sense to explore with a Gaussian policy such that the covariance is proportional to exp(H), where H is the scaled Hessian of the critic with respect to the actions. We present empirical results confirming that this new approach to exploration substantially outperforms DPG with Ornstein-Uhlenbeck exploration in four challenging MuJoCo domains."  
-  - `video` <https://youtube.com/watch?v=x2NFiP6cuXI> (Ciosek)
-
 #### ["Scalable Trust-region Method for Deep Reinforcement Learning using Kronecker-Factored Approximation"](https://arxiv.org/abs/1708.05144) Wu, Mansimov, Liao, Grosse, Ba
   `ACKTR` `policy gradient` `on-policy`
 >	"A2C + K-FAC (Kronecker-Factored Approximate Curvature)"  
@@ -1992,6 +2011,7 @@ interesting older papers:
 >	- using moving average to accumulate Fisher statistics, in order to get a better estimate of the curvature"  
   - `video` <https://youtube.com/watch?v=0rrffaYuUi4> (Wu)
   - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747/> (45:03) (Wu)
+  - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h54m20s> (Sigaud)
   - `video` ["Optimizing Neural Networks using Structured Probabilistic Models of the Gradient Computation"](https://fields.utoronto.ca/video-archive/2017/02/2267-16498) (Grosse)
   - `video` ["Optimizing NN using Kronecker-factored Approximate Curvature"](https://youtube.com/watch?v=FLV-MLPt3sU) (Kropotov)
   - `slides` <https://csc2541-f17.github.io/slides/lec10.pdf#page=55> (Grosse)
@@ -2028,7 +2048,7 @@ interesting older papers:
   - `codd` <https://github.com/atgambardella/pytorch-es>
 
 ----
-#### ["Maximum a Posteriori Policy Optimisation"](https://openreview.net/forum?id=S1ANxQW0b) Abdolmaleki, Springenberg, Tassa, Munos, Heess, Riedmiller
+#### ["Maximum a Posteriori Policy Optimisation"](https://arxiv.org/abs/1806.06920) Abdolmaleki, Springenberg, Tassa, Munos, Heess, Riedmiller
   `MPO` `policy gradient` `on-policy + off-policy`
 >	"To derive our algorithm, we take advantage of the duality between control and estimation by using Expectation Maximization, a powerful tool from the probabilistic estimation toolbox, in order to solve control problems. This duality can be understood as replacing the question “what are the actions which maximise future rewards?” with the question “assuming future success in maximising rewards, what are the actions most likely to have been taken?”. By using this estimation objective we have more control over the policy change in both E and M steps yielding robust learning. We show that several algorithms, including TRPO, can be directly related to this perspective."  
 >	"We leverage the fast convergence properties of EM-style coordinate ascent by alternating a non-parametric data-based E-step which re-weights state-action samples, with a supervised, parametric M-step using deep neural networks. This process is stable enough to allow us to use full covariance matrices, rather than just diagonal, in our policies."  
@@ -2040,6 +2060,11 @@ interesting older papers:
 >	"These choices lead to the following desirable properties: (a) low-variance estimates of the expected return via function approximation; (b) low-sample complexity of value function estimate via robust off-policy learning; (c) minimal parametric assumption about the form of the trajectory distribution in the E-step; (d) policy updates via supervised learning in the M step; (e) robust updates via hard trust-region constraints in both the E and the M step."  
   - `video` <https://youtube.com/watch?v=he_BPw32PwU>
   - `video` <http://dropbox.com/s/pgcmjst7t0zwm4y/MPO.mp4> + <https://vimeo.com/240200982> (demo)
+
+#### ["Addressing Function Approximation Error in Actor-Critic Methods"](https://arxiv.org/abs/1802.09477) Fujimoto, Hoof, Meger
+  `TD3` `policy gradient` `on-policy + off-policy`
+>	"In value-based reinforcement learning methods such as deep Q-learning, function approximation errors are known to lead to overestimated value estimates and suboptimal policies. We show that this problem persists in an actor-critic setting and propose novel mechanisms to minimize its effects on both the actor and the critic. Our algorithm builds on Double Q-learning, by taking the minimum value between a pair of critics to limit overestimation. We draw the connection between target networks and overestimation bias, and suggest delaying policy updates to reduce per-update error and further improve performance."  
+  - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h22m44s> (Sigaud)
 
 #### ["IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures"](https://arxiv.org/abs/1802.01561) Espeholt, Soyer, Munos, Simonyan, Mnih, Ward, Doron, Firoiu, Harley, Dunning, Legg, Kavukcuoglu
   `IMPALA` `V-Trace` `policy gradient` `on-policy + off-policy` `multi-task`
@@ -2065,6 +2090,14 @@ interesting older papers:
 >	"Optimal relative-entropy regularized policy satisfies path consistencies relating state values at ends of path to log-probabilities of actions along path. Trust-PCL implicitly optimizes trust region constraint using off-policy data by minimizing inconsistencies with maintained lagged policy along paths sampled from replay buffer."  
   - `video` <https://youtu.be/xfyK03MEZ9Q?t=7h38m11s> (Nachum)
   - `code` <https://github.com/tensorflow/models/tree/master/research/pcl_rl>
+
+#### ["Expected Policy Gradients"](https://arxiv.org/abs/1706.05374) Ciosek, Whiteson
+  `EPG` `policy gradient` `on-policy + off-policy`
+>	"EPG unify stochastic policy gradients (SPG) and deterministic policy gradients (DPG) for reinforcement learning. Inspired by expected SARSA, EPG integrates across the action when estimating the gradient, instead of relying only on the action selected during the sampled trajectory. We establish a new general policy gradient theorem, of which the stochastic and deterministic policy gradient theorems are special cases."  
+>	"We also prove that EPG reduces the variance of the gradient estimates without requiring deterministic policies and, for the Gaussian case, with no computational overhead. When the policy is Gaussian, we can now reinterpret deterministic policy gradients as an on-policy method: the deterministic policy of the original formulation is just the result of analytically integrating across actions in the Gaussian policy."  
+>	"Both SPG and DPG approaches have significant shortcomings. For SPG, variance in the gradient estimates means that many trajectories are usually needed for learning. Since gathering trajectories is typically expensive, there is a great need for more sample efficient methods. DPG’s use of deterministic policies mitigates the problem of variance in the gradient but raises other difficulties. The theoretical support for DPG is limited since it assumes a critic that approximates ∇aQ when in practice it approximates Q instead. In addition, DPG learns off-policy, which is undesirable when we want learning to take the cost of exploration into account. More importantly, learning off-policy necessitates designing a suitable exploration policy, which is difficult in practice. In fact, efficient exploration in DPG is an open problem and most applications simply use independent Gaussian noise or the Ornstein-Uhlenbeck heuristic."  
+>	"EPG also enables a practical contribution. Under certain conditions, we get an analytical expression for the covariance of the Gaussian that leads to a principled directed exploration strategy for continuous problems. We show that it is optimal in a certain sense to explore with a Gaussian policy such that the covariance is proportional to exp(H), where H is the scaled Hessian of the critic with respect to the actions. We present empirical results confirming that this new approach to exploration substantially outperforms DPG with Ornstein-Uhlenbeck exploration in four challenging MuJoCo domains."  
+  - `video` <https://youtube.com/watch?v=x2NFiP6cuXI> (Ciosek)
 
 #### ["Interpolated Policy Gradient: Merging On-Policy and Off-Policy Gradient Estimation for Deep Reinforcement Learning"](https://arxiv.org/abs/1706.00387) Gu, Lillicrap, Ghahramani, Turner, Scholkopf, Levine
   `IPG` `policy gradient` `on-policy + off-policy`
@@ -2104,6 +2137,7 @@ interesting older papers:
   - `video` <https://youtu.be/ggPGtMSoVN8?t=1h9m45s> (Petrenko) `in russian`
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FWangBHMMKF16>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/acer>
+  - `code` <https://github.com/higgsfield/RL-Adventure-2>
   - `code` <https://github.com/hercky/ACER_tf>
   - `code` <https://github.com/Kaixhin/ACER>
 
@@ -2308,6 +2342,7 @@ interesting older papers:
 >	"Uses the model to construct a look-ahead tree only when constructing bootstrap targets and selecting actions, similarly to TD-search. Crucially, the model is not embedded in a planning algorithm during optimisation."  
   - `video` <http://videolectures.net/deeplearning2017_singh_reinforcement_learning/#t=4366> (Singh)
   - `video` <https://youtu.be/PRQ8-FwDPRE?t=16m> (Holland)
+  - `video` <https://youtu.be/RwLTrQUyDvA?t=14m58s> (Diaz Rodriguez)
 
 #### ["The Predictron: End-to-End Learning and Planning"](https://arxiv.org/abs/1612.08810) Silver et al.
   `learning to plan` `learning abstract environment model`
@@ -2455,13 +2490,13 @@ interesting older papers:
   `learning intrinsic motivation` `meta-learning`
   - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#evolved-policy-gradients-houthooft-chen-isola-stadie-wolski-ho-abbeel>
 
-#### ["Some Considerations on Learning to Explore via Meta-Reinforcement Learning"](https://openreview.net/forum?id=Skk3Jm96W) Stadie, Yang, Houthooft, Chen, Duan, Wu, Abbeel, Sutskever
+#### ["Some Considerations on Learning to Explore via Meta-Reinforcement Learning"](https://arxiv.org/abs/1803.01118) Stadie, Yang, Houthooft, Chen, Duan, Wu, Abbeel, Sutskever
   `learning to explore` `meta-learning`
 >	"It is likely that future work in this area will focus on meta-learning a curiosity signal which is robust and transfers across tasks. Perhaps this will enable meta agents which learn to explore rather than being forced to explore by mathematical trickery in their objectives."  
   - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#some-considerations-on-learning-to-explore-via-meta-reinforcement-learning-stadie-yang-houthooft-chen-duan-wu-abbeel-sutskever>
 
 ----
-#### ["Deep Bayesian Bandits Showdown: An Empirical Comparison of Bayesian Deep Networks for Thompson Sampling"](https://openreview.net/forum?id=SyYe6k-CW) Riquelme, Tucker, Snoek
+#### ["Deep Bayesian Bandits Showdown: An Empirical Comparison of Bayesian Deep Networks for Thompson Sampling"](https://arxiv.org/abs/1802.09127) Riquelme, Tucker, Snoek
   `approximate bayesian exploration` `posterior sampling`
 >	"empirical comparison of bayesian deep networks for Thompson sampling"  
 >	"We study an algorithm, which we call NeuralLinear, that is remarkably simple, and combines two classic ideas (NNs and Bayesian linear regression). In our evaluation, NeuralLinear performs well across datasets. Our insight is that, once the learned representation is of decent quality, being able to exactly compute the posterior in closed form with something as simple as a linear model already leads to better decisions than most of the other methods. NeuralLinear is based on a standard deep neural network. However, decisions are made according to a Bayesian linear regression applied to the features at the last layer of the network. Note that the last hidden layer representation determines the final output of the network via a linear function, so we can expect a representation that explains the expected value of an action with a linear model. For all the training contexts, their deep representation is computed, and then uncertainty estimates on linear parameters for each action are derived via standard formulas. Thompson sampling will sample from this distribution, say \beta_t,i at time t for action i, and the next context will be pushed through the network until the last layer, leading to its representation c_t. Then, the sampled beta’s will predict an expected value, and the action with the highest prediction will be taken. Importantly, the algorithm does not use any uncertainty estimates on the representation itself (as opposed to variational methods, for example). On the other hand, the way the algorithm handles uncertainty conditional on the representation and the linear assumption is exact, which seems to be key to its success."  
@@ -2476,7 +2511,7 @@ interesting older papers:
 >	"scale of perturbation to parameters is learned along with original objective function"  
   - `video` <https://youtu.be/fevMOp5TDQs?t=1h27s> (Mnih)
   - `video` <https://youtu.be/fnwo3GCmyEo?t=49m46s> (Fritzler) `in russian`
-  - `code` <https://github.com/higgsfield/RL-Adventure/blob/master/5.noisy%20dqn.ipynb>
+  - `code` <https://github.com/higgsfield/RL-Adventure>
   - `code` <https://github.com/Kaixhin/NoisyNet-A3C>
   - `code` <https://github.com/andrewliao11/NoisyNet-DQN>
 
@@ -2563,6 +2598,7 @@ hieves."
   - `post` <https://pathak22.github.io/noreward-rl/index.html> (demo)
   - `video` <https://vimeo.com/237270588> (Pathak)
   - `video` <https://youtube.com/watch?v=_Z9ZP1eiKsI> (Kilcher)
+  - `video` <https://youtu.be/RwLTrQUyDvA?t=18m2s> (Diaz Rodriguez)
   - `code` <https://github.com/pathak22/noreward-rl>
 
 #### ["Surprise-Based Intrinsic Motivation for Deep Reinforcement Learning"](http://arxiv.org/abs/1703.01732) Achiam, Sastry
@@ -2642,8 +2678,10 @@ hieves."
   - `video` <https://youtu.be/BCzFs9Xb9_o?t=21m2s> (Sutskever)
   - `video `<https://youtu.be/RvEwFvl-TrY?t=19m18s> (Sutskever)
   - `video` <https://youtu.be/TERCdog1ddE?t=50m45s> (Abbeel)
+  - `video` <https://youtu.be/BXe2A5i4ESw?t=10m42s> (Fournier)
   - `notes` <https://yobibyte.github.io/files/paper_notes/her.pdf>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/her>
+  - `code` <https://github.com/higgsfield/RL-Adventure-2>
   - `paper` ["Universal Value Function Approximators"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#schaul-horgan-gregor-silver---universal-value-function-approximators) by Schaul et al. `summary`
 
 #### ["Reverse Curriculum Generation for Reinforcement Learning"](https://arxiv.org/abs/1707.05300) Florensa, Held, Wulfmeier, Zhang, Abbeel
@@ -3055,7 +3093,8 @@ hieves."
   - `notes` <http://tsong.me/blog/gail/>
   - `notes` <https://yobibyte.github.io/files/paper_notes/Generative_Adversarial_Imitation_Learning__Ho_Ermon__2017.pdf>
   - `code` <https://github.com/openai/imitation>
-  - `code` <https://github.com/DanielTakeshi/rl_algorithms/tree/master/il>
+  - `code` <https://github.com/higgsfield/RL-Adventure-2>
+  - `code` <https://github.com/DanielTakeshi/rl_algorithms>
 
 #### ["A Connection between Generative Adversarial Networks, Inverse Reinforcement Learning, and Energy-Based Models"](https://arxiv.org/abs/1611.03852) Finn, Christiano, Abbeel, Levine
   `adversarial imitation learning` `maximum entropy inverse reinforcement learning`
@@ -3405,6 +3444,7 @@ hieves."
 >	"While our simulations focus on language, the outcomes are relevant to machine learning in a more general sense. In particular, the agent exhibits active, multi-modal concept induction, the ability to transfer its learning and apply its knowledge representations in unfamiliar settings, a facility for learning multiple, distinct tasks, and the effective synthesis of unsupervised and reinforcement learning. At the same time, learning in the agent reflects various effects that are characteristic of human development, such as rapidly accelerating rates of vocabulary growth, the ability to learn from both rewarded interactions and predictions about the world, a natural tendency to generalise and re-use semantic knowledge, and improved outcomes when learning is moderated by curricula."  
   - `video` <https://youtube.com/watch?v=wJjdu1bPJ04> (demo)
   - `video` <http://videolectures.net/deeplearning2017_blunsom_language_processing/#t=2934> (Blunsom)
+  - `code` <https://github.com/dai-dao/Grounded-Language-Learning-in-Pytorch>
 
 #### ["Programmable Agents"](https://arxiv.org/abs/1706.06383) Denil, Colmenarejo, Cabi, Saxton, Freitas
   `goal-driven language learning`
@@ -3559,12 +3599,7 @@ hieves."
 ----
 #### ["A Simple but Tough-to-Beat Baseline for Sentence Embeddings"](https://openreview.net/pdf?id=SyK00v5xx) Arora, Liang, Ma
   `text embedding`
->	"The success of neural network methods for computing word embeddings has motivated methods for generating semantic embeddings of longer pieces of text, such as sentences and paragraphs. Surprisingly, Wieting et al (ICLR’16) showed that such complicated methods are outperformed, especially in out-of-domain (transfer learning) settings, by simpler methods involving mild retraining of word embeddings and basic linear regression. The method of Wieting et al. requires retraining with a substantial labeled dataset such as Paraphrase Database (Ganitkevitch et al., 2013). The current paper goes further, showing that the following completely unsupervised sentence embedding is a formidable baseline: Use word embeddings computed using one of the popular methods on unlabeled corpus like Wikipedia, represent the sentence by a weighted average of the word vectors, and then modify them a bit using PCA/SVD. This weighting improves performance by about 10% to 30% in textual similarity tasks, and beats sophisticated supervised methods including RNN’s and LSTM’s."  
->	"The paper also gives a theoretical explanation of the success of the above unsupervised method using a latent variable generative model for sentences, which is a simple extension of the model in Arora et al. (TACL’16) with new “smoothing” terms that allow for words occurring out of context, as well as high probabilities for words like and, not in all contexts."  
-  - `video` <https://youtube.com/watch?v=BCsOrewkmH4> (Ma)
-  - `video` <https://youtu.be/KR46z_V0BVw?t=49m10s> (Arora)
-  - `code` <https://github.com/PrincetonML/SIF>
-  - `code` <https://github.com/YingyuLiang/SIF>
+  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#a-simple-but-tough-to-beat-baseline-for-sentence-embeddings-arora-liang-ma>
 
 #### ["On the Use of Word Embeddings Alone to Represent Natural Language Sequences"](https://openreview.net/forum?id=Sy5OAyZC-) Shen et al.
 >	"To construct representations for natural language sequences, information from two main sources needs to be captured: (i) semantic meaning of individual words, and (ii) their compositionality. These two types of information are usually represented in the form of word embeddings and compositional functions, respectively. For the latter, Recurrent Neural Networks (RNNs) and Convolutional Neural Networks (CNNs) have been considered. There has not been a rigorous evaluation regarding the relative importance of each component to different text-representation-based tasks; i.e., how important is the modeling capacity of word embeddings alone, relative to the added value of a compositional function? We conduct an extensive comparative study between Simple Word Embeddings-based Models (SWEMs), with no compositional parameters, relative to employing word embeddings within RNN/CNN-based models. Surprisingly, SWEMs exhibit comparable or even superior performance in the majority of cases considered."  

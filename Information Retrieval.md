@@ -20,7 +20,7 @@
 
 ----
 
-  ["Neural Networks for Information Retrieval"](http://nn4ir.com/wsdm2018/) tutorial (WSDM 2018) `slides`  
+  ["Neural Networks for Information Retrieval"](http://nn4ir.com) tutorials (ECIR 2018, WSDM 2018, SIGIR 2017) `slides`  
   ["Neural Text Embeddings for Information Retrieval"](https://microsoft.com/en-us/research/event/wsdm-2017-tutorial-neural-text-embeddings-information-retrieval/)
 	tutorial by Bhaskar Mitra and Nick Craswell (WSDM 2017)
 	([slides](https://slideshare.net/BhaskarMitra3/neural-text-embeddings-for-information-retrieval-wsdm-2017), [paper](https://arxiv.org/abs/1705.01509))  
@@ -118,6 +118,7 @@
 
   - `video` <http://videolectures.net/icml2015_burges_learning_to_rank/> (Burges)
   - `video` <https://youtu.be/3R6vBd_Y8O4> (Nikolenko) `in russian`
+  - `code` <https://github.com/shiba24/learning2rank>
 
 
 #### ["Learning to Rank with Nonsmooth Cost Functions"](https://papers.nips.cc/paper/2971-learning-to-rank-with-nonsmooth-cost-functions) Burges et al.
