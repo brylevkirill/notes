@@ -1007,7 +1007,8 @@
 
 ----
 
-  [overview](https://youtube.com/watch?v=HmocI2b5YfA) by Chris Re `video`
+  [overview](https://youtube.com/watch?v=HmocI2b5YfA) by Chris Re `video`  
+  [overview](https://youtu.be/aDtfTFU_c6U?t=7h10m20s) by Chris Re `video`  
 
 ----
 

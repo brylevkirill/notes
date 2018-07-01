@@ -915,7 +915,7 @@
   [overview](http://distill.pub/2016/augmented-rnns/) by Chris Olah and Shan Carter  
   [overview](http://thespermwhale.com/jaseweston/ram/slides/session2/Smooth%20Operators-NIPS2015.pptx) by Alex Graves  
 
-  ["Attention Is All You Need"](#attention-is-all-you-need-vaswani-shazeer-parmar-uszkoreit-jones-gomez-kaiser-polosukhin) by Vaswani et al. `paper`
+  ["Attention Is All You Need"](#attention-is-all-you-need-vaswani-shazeer-parmar-uszkoreit-jones-gomez-kaiser-polosukhin) by Vaswani et al. `paper` `summary`
 
 ----
 
@@ -1287,6 +1287,7 @@ Yoshua Bengio:
   - `video` <http://youtube.com/watch?v=Pq4A2mPCB0Y> (Goodfellow)
   - `video` <http://youtube.com/watch?v=hDlHpBBGaKs> (Goodfellow)
   - `video` <http://videolectures.net/deeplearning2015_goodfellow_adversarial_examples/> (Goodfellow)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1412.6572>
   - `post` <https://karpathy.github.io/2015/03/30/breaking-convnets/>
   - `post` <http://kdnuggets.com/2015/07/deep-learning-adversarial-examples-misconceptions.html>
   - `code` <https://github.com/tensorflow/cleverhans>
@@ -1380,8 +1381,9 @@ Yoshua Bengio:
 >	"Weights are initialized in such a way that for any unit in a layer with input weights wi Σ wi = 0 and Σ wi^2 = 1."
 >	"selu(x) = λx for x>0 and selu(x) = λ(αe^x − α) for x≤0, where α≈1.6733 and λ≈1.0507"
 
-  - `video` <https://youtube.com/watch?v=h6eQrkkU9SA> (Hochreiter)
   - `video` <https://facebook.com/nipsfoundation/videos/1555553784535855/> (47:04) (Klambauer)
+  - `video` <https://youtube.com/watch?v=h6eQrkkU9SA> (Hochreiter)
+  - `video` <https://youtu.be/NZEAqdepq0w?t=34m3s> (Hochreiter)
   - `video` <https://youtube.com/watch?v=gH-KWepKSNs> (Klambauer)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1706.02515>
   - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/self-normalizing-neural-networks/> `in russian`
@@ -1864,6 +1866,7 @@ Yoshua Bengio:
 
   - <https://goo.gl/58Ishd> + <https://goo.gl/q7Hp99> + <https://goo.gl/Ceqlr4> + <https://goo.gl/9ibbsV> (demo)
   - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-1> (53:28) (Chen)
+  - `post` <http://depthfirstlearning.com/2018/InfoGAN>
   - `post` <http://inference.vc/infogan-variational-bound-on-mutual-information-twice/>
   - `post` <http://wiseodd.github.io/techblog/2017/01/29/infogan/>
   - `code` <https://github.com/openai/InfoGAN>
@@ -2028,6 +2031,7 @@ Yoshua Bengio:
   - `post` <https://ishmaelbelghazi.github.io/ALI/>
   - `video` <https://youtube.com/watch?v=yyl0-y-k4Nc> (Courville)
   - `video` <https://youtube.com/watch?v=K3r2k93zJrw> (Courville)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.00704>
   - `post` <http://inference.vc/variational-inference-using-implicit-models-part-iii-joint-contrastive-inference-ali-and-bigan/>
   - `code` <https://github.com/IshmaelBelghazi/ALI>
 
@@ -2342,6 +2346,7 @@ x."
 
 
 #### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani et al.
+  `Transformer`
 >	"The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.0 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data."
 
 >	"- constant path length between any two input positions  
@@ -2382,7 +2387,9 @@ x."
   - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) `in russian`
   - `video` <https://youtu.be/LhH6wMvntSM?t=54m56s> (Suleymanov) `in russian`
   - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani, Uszkoreit)
-  - `post` <https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/> (McAllester)
+  - `post` <https://jalammar.github.io/illustrated-transformer/>
+  - `post` <http://nlp.seas.harvard.edu/2018/04/03/attention.html>
+  - `post` <https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/>
   - `notes` <https://ricardokleinklein.github.io/2017/11/16/Attention-is-all-you-need.html>
   - `notes` <https://blog.tomrochette.com/machine-learning/papers/ashish-vaswani-attention-is-all-you-need>
   - `notes` <https://medium.com/@sharaf/a-paper-a-day-24-attention-is-all-you-need-26eb2da90a91>

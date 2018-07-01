@@ -110,7 +110,7 @@ interesting older papers:
   - `slides` <https://iclr.cc/archive/www/lib/exe/fetch.php%3Fmedia=iclr2017:nocedal_iclr2017.pdf>
   - `post` <http://inference.vc/everything-that-works-works-because-its-bayesian-2/>
   - `code` <https://github.com/keskarnitish/large-batch-training>
-  - `paper` ["Flat Minima"](http://www.bioinf.jku.at/publications/older/3304.pdf) by Hochreiter, Schmidhuber
+  - `paper` ["Flat Minima"](http://www.bioinf.jku.at/publications/older/3304.pdf) by Hochreiter, Schmidhuber ([overview](https://youtu.be/NZEAqdepq0w?t=28m40s) by Sepp Hochreiter `video`)
 
 ----
 #### ["How Does Batch Normalization Help Optimization? (No, It Is Not About Internal Covariate Shift)"](https://arxiv.org/abs/1805.11604) Santurkar, Tsipras, Ilyas, Madry
@@ -446,6 +446,7 @@ interesting older papers:
 >	"We interpret data samples from the generator, showing exploration across several distinct modes in the generator weights."  
   - `video` <https://youtube.com/watch?v=24A8tWs6aug>
   - `video` <https://facebook.com/nipsfoundation/videos/1554402331317667/> (1:19:38) (Saatchi, Wilson)
+  - `video` <https://youtube.com/watch?v=8rOnLuD2l6o> (Wilson)
   - `video` <https://youtu.be/ZHucm52V3Zw?t=52m36s> (Umnov)
   - `code` <https://github.com/andrewgordonwilson/bayesgan/>
 
@@ -791,6 +792,7 @@ interesting older papers:
 >	"Our loss’ instructive nature – which allows it to operate at test time without environmental rewards – is interesting and desirable. This instructive nature can be understood as the loss function’s internalization of the reward structures it has previously encountered under the training task distribution. We see this internalization as a step toward learning intrinsic motivation. A good intrinsically motivated agent would successfully infer useful actions in new situations by using heuristics it developed over its entire lifetime. This ability is likely required to achieve truly intelligent agents."  
 >	"In addition to internalizing environment rewards, learned loss could, in principle, have several other positive effects. For example, by examining the agent’s history, the loss could incentivize desirable extended behaviors, such as exploration. Further, the loss could perform a form of system identification, inferring environment parameters and adapting how it guides the agent as a function of these parameters (e.g., by adjusting the effective learning rate of the agent)."  
   - `post` <https://blog.openai.com/evolved-policy-gradients>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1802.04821>
   - `code` <https://github.com/openai/EPG>
 
 #### ["Deep Learning for Reward Design to Improve Monte Carlo Tree Search in ATARI Games"](https://arxiv.org/abs/1604.07095) Guo, Singh, Lewis, Lee
@@ -816,6 +818,7 @@ interesting older papers:
   - `post` <https://blog.openai.com/meta-learning-for-wrestling>
   - `video` <https://facebook.com/iclr.cc/videos/2126769937352061/> (1:20:51) (Al-Shedivat)
   - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482/> (30:38) (Abbeel)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1710.03641>
   - `code` <https://github.com/openai/robosumo>
 
 #### ["Some Considerations on Learning to Explore via Meta-Reinforcement Learning"](https://arxiv.org/abs/1803.01118) Stadie, Yang, Houthooft, Chen, Duan, Wu, Abbeel, Sutskever
@@ -955,6 +958,7 @@ interesting older papers:
 
 #### ["Prototypical Networks for Few-shot Learning"](https://arxiv.org/abs/1703.05175) Snell, Swersky, Zemel
 >	"Extension to Matching Networks which uses euclidean distance instead of cosine and builds a prototype representation of each class for the few-shot learning scenario."  
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1703.05175>
   - `code` <https://github.com/orobix/Prototypical-Networks-for-Few-shot-Learning-PyTorch>
   - `code` <https://github.com/abdulfatir/prototypical-networks-tensorflow>
 
@@ -1478,6 +1482,7 @@ interesting older papers:
 >	"In experiments, TTUR improves learning for DCGANs, improved Wasserstein GANs, and BEGANs."  
 >	"to the best of our knowledge this is the first convergence proof for GANs"  
   - `video` <https://youtu.be/h6eQrkkU9SA?t=21m6s> (Hochreiter)
+  - `video` <https://youtu.be/NZEAqdepq0w?t=46m25s> (Hochreiter)
   - `code` <https://github.com/bioinf-jku/TTUR>
 
 #### ["How to Train Your DRAGAN"](https://arxiv.org/abs/1705.07215) Kodali, Abernethy, Hays, Kira
@@ -1565,6 +1570,7 @@ interesting older papers:
 #### ["Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks"](https://arxiv.org/abs/1703.10593) Zhu, Park, Isola, Efros
   `GAN applications` `domain translation` `CycleGAN`
   - <https://junyanz.github.io/CycleGAN/> (demo)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1703.10593>
   - `code` <https://github.com/junyanz/CycleGAN>
 
 #### ["Unsupervised Image-to-Image Translation Networks"](http://arxiv.org/abs/1703.00848) Liu, Breuel, Kautz
@@ -1615,6 +1621,7 @@ interesting older papers:
 >	"When we condition the decoder in the VQ-VAE on the speaker-id, we can extract latent codes from a speech fragment and reconstruct with a different speaker-id. The VQ-VAE never saw any aligned data during training and was always optimizing the reconstruction of the orginal waveform. These experiments suggest that the encoder has factored out speaker-specific information in the encoded representations, as they have same meaning across different voice characteristics. This behaviour arises naturally because the decoder gets the speaker-id for free so the limited bandwith of latent codes gets used for other speaker-independent, phonetic information. In the paper we show that the latent codes discovered by the VQ-VAE are actually very closely related to the human-designed alphabet of phonemes."  
 >	"We show promising results on learning long term structure of environments for reinforcement learning."  
   - `post` <https://avdnoord.github.io/homepage/vqvae/> (demo)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1711.00937>
   - `slides` <https://avdnoord.github.io/homepage/slides/SANE2017.pdf>
   - `code` <https://github.com/deepmind/sonnet/blob/master/sonnet/examples/vqvae_example.ipynb>
 
@@ -1660,55 +1667,9 @@ interesting older papers:
 [interesting recent papers - generative models](#generative-models)
 
 ----
-#### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin
+#### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani et al.
   `Transformer`
->	"The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely."  
->
->	"- constant path length between any two input positions  
->	- gating/multiplication enables crisp error propagation  
->	- trivial to parallelize  
->	- can replace sequence-aligned recurrence entirely"  
->
->	"multi-head attention:  
->	- convolutions use different parameters per relative position  
->	- allows identifying different information from different positions  
->	- multiple attention layers in parallel achieve a similar effect  
->	- projecting to fewer dimensions keeps computation ~ constant"  
->
->	"trains >3x faster than GNMT and ConvSeq2Seq with better performance on machine translation problem"  
->
->	"n - sequence length, d - representation dimension, k - convolution kernel size, r - neighborhood size  
->	complexity per layer:  
->	- self-attention: O(n^2*d)  
->	- recurrent: O(n*d^2)  
->	- convolutional: O(k*n*d^2)  
->	- self-attention (restricted): O(r*n*d)  
->	sequential operations:  
->	- self-attention: O(1)  
->	- recurrent: O(n)  
->	- convolutional: O(1)  
->	- self-attention (restricted): O(1)  
->	maximum path integral:  
->	- self-attention: O(1)  
->	- recurrent: O(n)  
->	- convolutional: O(logk(n))  
->	- self-attention (restricted): O(n/r)"  
-  - `post` <https://research.googleblog.com/2017/08/transformer-novel-neural-network.html>
-  - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747/> (18:27) (Vaswani, Shazeer)
-  - `video` <https://youtu.be/I0nX4HDmXKc?t=7m46s> (Polosukhin)
-  - `video` <https://youtube.com/watch?v=rBCqOTEfxvg> (Kaiser)
-  - `video` <https://youtube.com/watch?v=iDulhoQ2pro> (Kilcher)
-  - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) `in russian`
-  - `video` <https://youtu.be/LhH6wMvntSM?t=54m56s> (Suleymanov) `in russian`
-  - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani, Uszkoreit)
-  - `post` <https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/>
-  - `post` <http://nlp.seas.harvard.edu/2018/04/03/attention.html>
-  - `notes` <https://ricardokleinklein.github.io/2017/11/16/Attention-is-all-you-need.html>
-  - `notes` <https://blog.tomrochette.com/machine-learning/papers/ashish-vaswani-attention-is-all-you-need>
-  - `notes` <https://medium.com/@sharaf/a-paper-a-day-24-attention-is-all-you-need-26eb2da90a91>
-  - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/transformer.py>
-  - `code` <https://colab.research.google.com/notebook#fileId=/v2/external/notebooks/t2t/hello_t2t.ipynb>
-  - `code` <https://github.com/jadore801120/attention-is-all-you-need-pytorch>
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#attention-is-all-you-need-vaswani-et-al>
 
 ----
 #### ["Parallel WaveNet: Fast High-Fidelity Speech Synthesis"](https://arxiv.org/abs/1711.10433) Oord et al.
@@ -1807,6 +1768,14 @@ interesting older papers:
 [interesting older papers - policy-based methods](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---policy-based-methods)  
 
 ----
+#### ["RUDDER: Return Decomposition for Delayed Rewards"](https://arxiv.org/abs/1806.07857) Arjona-Medina, Gillhofer, Widrich, Unterthiner, Hochreiter
+>	"We propose a novel reinforcement learning approach for finite Markov decision processes with delayed rewards. In this work, biases of temporal difference estimates are proved to be corrected only exponentially slowly in the number of delay steps. Furthermore, variances of Monte Carlo estimates are proved to increase the variance of other estimates, the number of which can exponentially grow in the number of delay steps. We introduce RUDDER, a return decomposition method, which creates a new MDP with same optimal policies as the original MDP but with redistributed rewards that have largely reduced delays. If the return decomposition is optimal, then the new MDP does not have delayed rewards and TD estimates are unbiased. In this case, the rewards track Q-values so that the future expected reward is always zero. We experimentally confirm our theoretical results on bias and variance of TD and MC estimates. On artificial tasks with different lengths of reward delays, we show that RUDDER is exponentially faster than TD, MC, and MC Tree Search. RUDDER outperforms Rainbow, A3C, DDQN, Distributional DQN, Dueling DDQN, Noisy DQN, and Prioritized DDQN on the delayed reward Atari game Venture in only a fraction of the learning time."  
+>	"At its core RUDDER transforms the MDP in a new one which is not delayed and retains all optimal policies. In this new MDP all Q-values are identical to the immediate reward r(s,a) and TD methods are unbiased."  
+>	"We show the bias correction for TD Methods takes exponentially long if reward is delayed. We also show that there may be exponentially many states affected from Q-value variances when MC methods are applied."  
+  - `video` <https://youtube.com/playlist?list=PLDfrC-Vpg-CzVTqSjxVeLQZy3f7iv9vyY> (demo)
+  - `video` <https://youtu.be/NZEAqdepq0w?t=56m34s> (Hochreiter)
+  - `code` <https://github.com/ml-jku/baselines-rudder>
+
 #### ["Simple Random Search Provides a Competitive Approach to Reinforcement Learning"](https://arxiv.org/abs/1803.07055) Mania, Guy, Recht
 >	"We attempted to find the simplest algorithm for model-free RL that performs well on the continuous control benchmarks used in the RL literature. We demonstrated that with a few algorithmic augmentations, basic random search could be used to train linear policies that achieve state-of-theart sample efficiency on the MuJoCo locomotion tasks. We showed that linear policies match the performance of complex neural network policies and can be found through a simple algorithm."  
 >	"For application to continuous control, we augment the basic random search method with three simple features. First, we scale each update step by the standard deviation of the rewards collected for computing that update step. Second, we normalize the system’s states by online estimates of their mean and standard deviation. Third, we discard from the computation of the update steps the directions that yield the least improvement of the reward."  
@@ -2075,6 +2044,7 @@ interesting older papers:
   - `video` <https://youtube.com/playlist?list=PLqYmG7hTraZDRA9vW0zV8iIHlHnBSTBcC> (demo)
   - `video` <http://fields.utoronto.ca/video-archive/2018/01/2509-18003> (Mnih)
   - `video` <https://facebook.com/iclr.cc/videos/2125495797479475> (21:05) (Kavukcuoglu)
+  - `code` <https://github.com/deepmind/scalable_agent>
 
 #### ["The Intentional Unintentional Agent: Learning to Solve Many Continuous Control Tasks Simultaneously"](https://arxiv.org/abs/1707.03300) Cabi, Colmenarejo, Hoffman, Denil, Wang, de Freitas
   `IUA` `policy gradient` `on-policy + off-policy` `multi-task`
