@@ -1,48 +1,48 @@
 interesting recent papers:
 
-  * [deep learning theory](#deep-learning-theory)
-  * [bayesian deep learning](#bayesian-deep-learning)
-  * [compute and memory architectures](#compute-and-memory-architectures)
-  * [meta-learning](#meta-learning)
-  * [few-shot learning](#few-shot-learning)
-  * [unsupervised learning](#unsupervised-learning)
-  * [generative models](#generative-models)
-    - [invertible density estimation](#generative-models---invertible-density-estimation)
-    - [generative adversarial networks](#generative-models---generative-adversarial-networks)
-    - [variational autoencoders](#generative-models---variational-autoencoders)
-    - [autoregressive models](#generative-models---autoregressive-models)
-  * [reinforcement learning](#reinforcement-learning---model-free-methods)
-    - [model-free methods](#reinforcement-learning---model-free-methods)
-    - [model-based methods](#reinforcement-learning---model-based-methods)
-    - [exploration and intrinsic motivation](#reinforcement-learning---exploration-and-intrinsic-motivation)
-    - [hierarchical](#reinforcement-learning---hierarchical)
-    - [transfer](#reinforcement-learning---transfer)
-    - [imitation](#reinforcement-learning---imitation)
-    - [multi-agent](#reinforcement-learning---multi-agent)
-  * [program induction](#program-induction)
-  * [reasoning](#reasoning)
-  * [language grounding](#language-grounding)
-  * [natural language processing](#natural-language-processing)
+  * [**deep learning theory**](#deep-learning-theory)
+  * [**bayesian deep learning**](#bayesian-deep-learning)
+  * [**compute and memory architectures**](#compute-and-memory-architectures)
+  * [**meta-learning**](#meta-learning)
+  * [**few-shot learning**](#few-shot-learning)
+  * [**unsupervised learning**](#unsupervised-learning)
+  * [**generative models**](#generative-models)
+    - [**invertible density estimation**](#generative-models---invertible-density-estimation)
+    - [**generative adversarial networks**](#generative-models---generative-adversarial-networks)
+    - [**variational autoencoders**](#generative-models---variational-autoencoders)
+    - [**autoregressive models**](#generative-models---autoregressive-models)
+  * [**reinforcement learning**](#reinforcement-learning---model-free-methods)
+    - [**model-free methods**](#reinforcement-learning---model-free-methods)
+    - [**model-based methods**](#reinforcement-learning---model-based-methods)
+    - [**exploration and intrinsic motivation**](#reinforcement-learning---exploration-and-intrinsic-motivation)
+    - [**hierarchical**](#reinforcement-learning---hierarchical)
+    - [**transfer**](#reinforcement-learning---transfer)
+    - [**imitation**](#reinforcement-learning---imitation)
+    - [**multi-agent**](#reinforcement-learning---multi-agent)
+  * [**program induction**](#program-induction)
+  * [**reasoning**](#reasoning)
+  * [**language grounding**](#language-grounding)
+  * [**natural language processing**](#natural-language-processing)
 
 ----
 interesting older papers:
 
-  - [artificial intelligence](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#interesting-papers)
-  - [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers)
-  - [machine learning](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#interesting-papers)
-  - [deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers)
-  - [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers)
-  - [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#interesting-papers)
-  - [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers)
-  - [natural language processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#interesting-papers)
-  - [information retrieval](https://github.com/brylevkirill/notes/blob/master/Information%20Retrieval.md#interesting-papers)
+  - [**artificial intelligence**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#interesting-papers)
+  - [**knowledge representation and reasoning**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers)
+  - [**machine learning**](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#interesting-papers)
+  - [**deep learning**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers)
+  - [**reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers)
+  - [**bayesian inference and learning**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#interesting-papers)
+  - [**probabilistic programming**](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers)
+  - [**natural language processing**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#interesting-papers)
+  - [**information retrieval**](https://github.com/brylevkirill/notes/blob/master/Information%20Retrieval.md#interesting-papers)
 
 
 
 ---
 ### deep learning theory
 
-[interesting older papers](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---theory)
+[**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---theory)
 
 ----
 #### ["Mathematics of Deep Learning"](https://arxiv.org/abs/1712.04741) Vidal, Bruna, Giryes, Soatto
@@ -162,13 +162,13 @@ interesting older papers:
 ---
 ### bayesian deep learning
 
-[interesting older papers](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---bayesian-deep-learning)  
-[interesting older papers - bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#interesting-papers)  
+[**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---bayesian-deep-learning)  
+[**interesting older papers - bayesian inference and learning**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#interesting-papers)  
 
-[interesting recent papers - variational autoencoders](#generative-models---variational-autoencoders)  
-[interesting recent papers - unsupervised learning](#unsupervised-learning)  
-[interesting recent papers - model-based reinforcement learning](#reinforcement-learning---model-based-methods)  
-[interesting recent papers - exploration and intrinsic motivation](#reinforcement-learning---exploration-and-intrinsic-motivation)  
+[**interesting recent papers - variational autoencoders**](#generative-models---variational-autoencoders)  
+[**interesting recent papers - unsupervised learning**](#unsupervised-learning)  
+[**interesting recent papers - model-based reinforcement learning**](#reinforcement-learning---model-based-methods)  
+[**interesting recent papers - exploration and intrinsic motivation**](#reinforcement-learning---exploration-and-intrinsic-motivation)  
 
 ----
 #### ["A Bayesian Perspective on Generalization and Stochastic Gradient Descent"](https://arxiv.org/abs/1710.06451) Smith, Le
@@ -391,6 +391,7 @@ interesting older papers:
 >	"One common example of implicit differentiation is the inverse function theorem. Suppose that you can easily compute y = f(x), but computing f^-1(y) is expensive/hard. Then, you can take points x, compute y = f(x), and by definition have x = f^-1(y). The inverse function theorem tells you that (f^-1(y))' = 1 / f'(x) . So, you can compute the derivative of the inverse even when you cannot easily compute x = f^-1(y) for any y. Implicit differentiation is an extension of this idea that handles the case when the inverse is taken w.r.t. one argument and differentiation is performed w.r.t. another."  
   - <https://i.imgur.com/iEVFES7.png>
   - <https://www.math.ucdavis.edu/~kouba/CalcOneDIRECTORY/implicitdiffdirectory/ImplicitDiff.html>
+  - `code` <https://github.com/tensorflow/probability/blob/master/tensorflow_probability/examples/latent_dirichlet_allocation.py>
 
 #### ["Backpropagation through the Void: Optimizing Control Variates for Black-box Gradient Estimation"](https://arxiv.org/abs/1711.00123) Grathwohl, Choi, Wu, Roeder, Duvenaud
   `variables with discrete distributions` `non-differentiable loss` `RELAX`
@@ -500,21 +501,12 @@ interesting older papers:
 ---
 ### compute and memory architectures
 
-[interesting older papers](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---architectures)
+[**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---architectures)
 
 ----
 #### ["Hybrid Computing using a Neural Network with Dynamic External Memory"](http://rdcu.be/kXhV) Graves et al.
   `compute and memory` `Differentiable Neural Computer`
-  - `post` <https://deepmind.com/blog/differentiable-neural-computers/>
-  - `video` <https://youtube.com/watch?v=steioHoiEms> (Graves)
-  - `video` <https://facebook.com/iclr.cc/videos/1713144705381255/> (9:09) (Graves)
-  - `video` <https://youtube.com/watch?v=PQrlOjj8gAc> (Wayne)
-  - `video` <https://youtu.be/otRoAQtc5Dk?t=59m56s> (Polykovskiy)
-  - `video` <https://youtube.com/watch?v=r5XKzjTFCZQ> (Raval)
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=10.1038/nature20101>
-  - `code` <https://github.com/deepmind/dnc>
-  - `code` <https://github.com/ixaxaar/pytorch-dnc>
-  - `code` <https://github.com/Mostafa-Samir/DNC-tensorflow>
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#hybrid-computing-using-a-neural-network-with-dynamic-external-memory-graves-et-al>
 
 #### ["Scaling Memory-Augmented Neural Networks with Sparse Reads and Writes"](http://arxiv.org/abs/1610.09027) Rae, Hunt, Harley, Danihelka, Senior, Wayne, Graves, Lillicrap
   `compute and memory` `Differentiable Neural Computer`
@@ -1293,7 +1285,7 @@ interesting older papers:
 ---
 ### generative models - invertible density estimation
 
-[interesting recent papers - generative models](#generative-models)
+[**interesting recent papers - generative models**](#generative-models)
 
 ----
 #### ["Neural Autoregressive Flows"](https://arxiv.org/abs/1804.00779) Huang, Krueger, Lacoste, Courville
@@ -1340,9 +1332,9 @@ interesting older papers:
 ---
 ### generative models - generative adversarial networks
 
-[interesting older papers](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---generative-adversarial-networks)
+[**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---generative-adversarial-networks)
 
-[interesting recent papers - generative models](#generative-models)
+[**interesting recent papers - generative models**](#generative-models)
 
 ----
 #### ["What Are GANs Useful For?"](https://openreview.net/forum?id=HkwrqtlR-) Olmos, Hitaj, Gasti, Ateniese, Perez-Cruz
@@ -1582,11 +1574,11 @@ interesting older papers:
 ---
 ### generative models - variational autoencoders
 
-[interesting older papers](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---variational-autoencoder)
+[**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---variational-autoencoder)
 
-[interesting recent papers - generative models](#generative-models)  
-[interesting recent papers - bayesian deep learning](#bayesian-deep-learning)  
-[interesting recent papers - unsupervised learning](#unsupervised-learning)  
+[**interesting recent papers - generative models**](#generative-models)  
+[**interesting recent papers - bayesian deep learning**](#bayesian-deep-learning)  
+[**interesting recent papers - unsupervised learning**](#unsupervised-learning)  
 
 ----
 #### ["Tighter Variational Bounds are Not Necessarily Better"](https://arxiv.org/abs/1802.04537) Rainforth, Kosiorek, Le, Maddison, Igl, Wood, Teh
@@ -1654,7 +1646,7 @@ interesting older papers:
 
 #### ["Generating Sentences from a Continuous Space"](http://arxiv.org/abs/1511.06349) Bowman, Vilnis, Vinyals, Dai, Jozefowicz, Bengio
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1511.06349>
-  - `code` <https://github.com/analvikingur/pytorch_RVAE>
+  - `code` <https://github.com/kefirski/pytorch_RVAE>
   - `code` <https://github.com/cheng6076/Variational-LSTM-Autoencoder>
 
 
@@ -1662,9 +1654,9 @@ interesting older papers:
 ---
 ### generative models - autoregressive models
 
-[interesting older papers](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---autoregressive-models)
+[**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---autoregressive-models)
 
-[interesting recent papers - generative models](#generative-models)
+[**interesting recent papers - generative models**](#generative-models)
 
 ----
 #### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani et al.
@@ -1764,16 +1756,18 @@ interesting older papers:
 ---
 ### reinforcement learning - model-free methods
 
-[interesting older papers - value-based methods](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---value-based-methods)  
-[interesting older papers - policy-based methods](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---policy-based-methods)  
+[**interesting older papers - value-based methods**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---value-based-methods)  
+[**interesting older papers - policy-based methods**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---policy-based-methods)  
 
 ----
 #### ["RUDDER: Return Decomposition for Delayed Rewards"](https://arxiv.org/abs/1806.07857) Arjona-Medina, Gillhofer, Widrich, Unterthiner, Hochreiter
 >	"We propose a novel reinforcement learning approach for finite Markov decision processes with delayed rewards. In this work, biases of temporal difference estimates are proved to be corrected only exponentially slowly in the number of delay steps. Furthermore, variances of Monte Carlo estimates are proved to increase the variance of other estimates, the number of which can exponentially grow in the number of delay steps. We introduce RUDDER, a return decomposition method, which creates a new MDP with same optimal policies as the original MDP but with redistributed rewards that have largely reduced delays. If the return decomposition is optimal, then the new MDP does not have delayed rewards and TD estimates are unbiased. In this case, the rewards track Q-values so that the future expected reward is always zero. We experimentally confirm our theoretical results on bias and variance of TD and MC estimates. On artificial tasks with different lengths of reward delays, we show that RUDDER is exponentially faster than TD, MC, and MC Tree Search. RUDDER outperforms Rainbow, A3C, DDQN, Distributional DQN, Dueling DDQN, Noisy DQN, and Prioritized DDQN on the delayed reward Atari game Venture in only a fraction of the learning time."  
 >	"At its core RUDDER transforms the MDP in a new one which is not delayed and retains all optimal policies. In this new MDP all Q-values are identical to the immediate reward r(s,a) and TD methods are unbiased."  
 >	"We show the bias correction for TD Methods takes exponentially long if reward is delayed. We also show that there may be exponentially many states affected from Q-value variances when MC methods are applied."  
+>	"Math aside, the big idea of RUDDER is the following: we use an LSTM to predict the return of an episode. To do this, the LSTM will have to recognize what actually causes the reward (e.g. shooting the gun in the right direction causes the reward, even if we get the reward only once the bullet hits the enemy after travelling along the screen). We then use a salience method (e.g. layer-wise relevance propagation or integrated gradients) to get that information out of the LSTM, and redistribute the reward accordingly (i.e., we then give reward already once the gun is shot in the right direction). Once the reward is redistributed this way, solving/learning the actual reinforcement learning problem is much, much easier and as we prove in the paper, the optimal policy does not change with this redistribution."  
   - `video` <https://youtube.com/playlist?list=PLDfrC-Vpg-CzVTqSjxVeLQZy3f7iv9vyY> (demo)
   - `video` <https://youtu.be/NZEAqdepq0w?t=56m34s> (Hochreiter)
+  - `post` <https://widmi.github.io>
   - `code` <https://github.com/ml-jku/baselines-rudder>
 
 #### ["Simple Random Search Provides a Competitive Approach to Reinforcement Learning"](https://arxiv.org/abs/1803.07055) Mania, Guy, Recht
@@ -2125,7 +2119,7 @@ interesting older papers:
 ---
 ### reinforcement learning - model-based methods
 
-[interesting older papers](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---model-based-methods)
+[**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---model-based-methods)
 
 ----
 #### ["Composable Planning with Attributes"](https://arxiv.org/abs/1803.00512) Zhang, Lerer, Sukhbaatar, Fergus, Szlam
@@ -2432,8 +2426,8 @@ interesting older papers:
 ---
 ### reinforcement learning - exploration and intrinsic motivation
 
-[interesting older papers](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---exploration-and-intrinsic-motivation)  
-[interesting older papers - artificial curiosity and creativity](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#interesting-papers---artificial-curiosity-and-creativity)  
+[**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---exploration-and-intrinsic-motivation)  
+[**interesting older papers - artificial curiosity and creativity**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#interesting-papers---artificial-curiosity-and-creativity)  
 
 ----
 #### ["The Uncertainty Bellman Equation and Exploration"](https://arxiv.org/abs/1709.05380) O'Donoghue, Osband, Munos, Mnih
@@ -2702,7 +2696,7 @@ hieves."
 ---
 ### reinforcement learning - hierarchical
 
-[interesting older papers](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---hierarchical-reinforcement-learning)
+[**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---hierarchical-reinforcement-learning)
 
 ----
 #### ["Latent Space Policies for Hierarchical Reinforcement Learning"](https://arxiv.org/abs/1804.02808) Haarnoja, Hartikainen, Abbeel, Levine
@@ -2941,8 +2935,8 @@ hieves."
 ---
 ### reinforcement learning - imitation
 
-[interesting older papers - behavioral cloning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---behavioral-cloning)  
-[interesting older papers - inverse reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---inverse-reinforcement-learning)  
+[**interesting older papers - behavioral cloning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---behavioral-cloning)  
+[**interesting older papers - inverse reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---inverse-reinforcement-learning)  
 
 ----
 #### ["Deep Reinforcement Learning from Human Preferences"](https://arxiv.org/abs/1706.03741) Christiano, Leike, Brown, Martic, Legg, Amodei
@@ -3216,9 +3210,9 @@ hieves."
 ---
 ### reasoning
 
-[interesting older papers - reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---reasoning)  
-[interesting older papers - question answering over knowledge bases](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---question-answering-over-knowledge-bases)  
-[interesting older papers - question answering over texts](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---question-answering-over-texts)  
+[**interesting older papers - reasoning**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---reasoning)  
+[**interesting older papers - question answering over knowledge bases**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---question-answering-over-knowledge-bases)  
+[**interesting older papers - question answering over texts**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---question-answering-over-texts)  
 
 ----
 #### ["End-to-end Differentiable Proving"](https://arxiv.org/abs/1705.11040) Rocktaschel, Riedel
@@ -3485,7 +3479,7 @@ hieves."
 ---
 ### natural language processing
 
-[interesting older papers](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#interesting-papers)
+[**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#interesting-papers)
 
 ----
 #### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin

@@ -2,25 +2,25 @@
   Language is an index pointing to shared experiences of people on which meaning is grounded.  
 
 
-  * [overview](#overview)
-  * [study](#study)
-  * [problems](#problems)
-  * [semantics](#semantics)
-  * [compositionality](#compositionality)
-  * [embeddings](#embeddings)
-  * [interesting papers](#interesting-papers)
-    - [language grounding](#interesting-papers---language-grounding)
-    - [machine translation](#interesting-papers---machine-translation)
-    - [sequence transduction](#interesting-papers---sequence-transduction)
-    - [language modeling](#interesting-papers---language-modeling)
-    - [word embeddings](#interesting-papers---word-embeddings)
-    - [word sense disambiguation](#interesting-papers---word-sense-disambiguation)
-    - [text embeddings](#interesting-papers---text-embeddings)
-    - [syntactic parsing](#interesting-papers---syntactic-parsing)
-    - [text classification](#interesting-papers---text-classification)
-    - [topic modeling](#interesting-papers---topic-modeling)
-    - [text summarization](#interesting-papers---text-summarization)
-    - [coreference resolution](#interesting-papers---coreference-resolution)
+  * [**overview**](#overview)
+  * [**study**](#study)
+  * [**problems**](#problems)
+  * [**semantics**](#semantics)
+  * [**compositionality**](#compositionality)
+  * [**embeddings**](#embeddings)
+  * [**interesting papers**](#interesting-papers)
+    - [**language grounding**](#interesting-papers---language-grounding)
+    - [**machine translation**](#interesting-papers---machine-translation)
+    - [**sequence transduction**](#interesting-papers---sequence-transduction)
+    - [**language modeling**](#interesting-papers---language-modeling)
+    - [**word embeddings**](#interesting-papers---word-embeddings)
+    - [**word sense disambiguation**](#interesting-papers---word-sense-disambiguation)
+    - [**text embeddings**](#interesting-papers---text-embeddings)
+    - [**syntactic parsing**](#interesting-papers---syntactic-parsing)
+    - [**text classification**](#interesting-papers---text-classification)
+    - [**topic modeling**](#interesting-papers---topic-modeling)
+    - [**text summarization**](#interesting-papers---text-summarization)
+    - [**coreference resolution**](#interesting-papers---coreference-resolution)
 
 
 
@@ -61,7 +61,7 @@
 
   ["From Models of Language Understanding to Agents of Language Use"](http://research.microsoft.com/apps/video/default.aspx?id=266643) by Felix Hill `video`
 
-  [interesting papers - language grounding](#interesting-papers---language-grounding)
+  [**interesting papers - language grounding**](#interesting-papers---language-grounding)
 
 
 
@@ -107,6 +107,10 @@
 
 ---
 ### problems
+
+  [state-of-the-art methods](https://github.com/sebastianruder/NLP-progress)
+
+----
 
   - anaphora resolution
   - answer sentence selection
@@ -264,35 +268,35 @@
 
 ----
 
-  [distributed representation](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representation)
+  [**distributed representation**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representation)
 
 
 
 ---
 ### interesting papers
 
-  - [language grounding](#interesting-papers---language-grounding)
-  - [machine translation](#interesting-papers---machine-translation)
-  - [sequence transduction](#interesting-papers---sequence-transduction)
-  - [language modeling](#interesting-papers---language-modeling)
-  - [word embeddings](#interesting-papers---word-embeddings)
-  - [word sense disambiguation](#interesting-papers---word-sense-disambiguation)
-  - [text embeddings](#interesting-papers---text-embeddings)
-  - [syntactic parsing](#interesting-papers---syntactic-parsing)
-  - [text classification](#interesting-papers---text-classification)
-  - [topic modeling](#interesting-papers---topic-modeling)
-  - [text summarization](#interesting-papers---text-summarization)
-  - [coreference resolution](#interesting-papers---coreference-resolution)
+  - [**language grounding**](#interesting-papers---language-grounding)
+  - [**machine translation**](#interesting-papers---machine-translation)
+  - [**sequence transduction**](#interesting-papers---sequence-transduction)
+  - [**language modeling**](#interesting-papers---language-modeling)
+  - [**word embeddings**](#interesting-papers---word-embeddings)
+  - [**word sense disambiguation**](#interesting-papers---word-sense-disambiguation)
+  - [**text embeddings**](#interesting-papers---text-embeddings)
+  - [**syntactic parsing**](#interesting-papers---syntactic-parsing)
+  - [**text classification**](#interesting-papers---text-classification)
+  - [**topic modeling**](#interesting-papers---topic-modeling)
+  - [**text summarization**](#interesting-papers---text-summarization)
+  - [**coreference resolution**](#interesting-papers---coreference-resolution)
 
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#natural-language-processing)  
+[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#natural-language-processing)  
 
 
 
 ---
 ### interesting papers - language grounding
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#language-grounding)
+[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#language-grounding)
 
 
 #### ["A Paradigm for Situated and Goal-Driven Language Learning"](https://arxiv.org/abs/1610.03585) Gauthier, Mordatch

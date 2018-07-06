@@ -2,9 +2,9 @@
   What if some railways are closed, what will passengers do? What if we incentivize members of a social network to propagate an idea, how influential can they be? What if some genes in a cell are knocked-out, which phenotypes can we expect? Such questions need to be addressed via a combination of experimental and observational data, and require a careful approach to modelling heterogeneous datasets and structural assumptions concerning the causal relations among components of the system.  
 
 
-  * [overview](#overview)
-  * [theory](#theory)
-  * [interesting papers](#interesting-papers)
+  * [**overview**](#overview)
+  * [**theory**](#theory)
+  * [**interesting papers**](#interesting-papers)
 
 
 

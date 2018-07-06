@@ -1,17 +1,17 @@
   A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.
 
 
-  * [overview](#overview)
-  * [theory](#theory)
-  * [methods](#methods)
-  * [representation learning](#representation-learning)
-  * [program induction](#program-induction)
-  * [meta-learning](#meta-learning)
-  * [automated machine learning](#automated-machine-learning)
-  * [interesting papers](#interesting-papers)
-    - [theory](#interesting-papers---theory)
-    - [automated machine learning](#interesting-papers---automated-machine-learning)
-    - [systems](#interesting-papers---systems)
+  * [**overview**](#overview)
+  * [**theory**](#theory)
+  * [**methods**](#methods)
+  * [**representation learning**](#representation-learning)
+  * [**program induction**](#program-induction)
+  * [**meta-learning**](#meta-learning)
+  * [**automated machine learning**](#automated-machine-learning)
+  * [**interesting papers**](#interesting-papers)
+    - [**theory**](#interesting-papers---theory)
+    - [**automated machine learning**](#interesting-papers---automated-machine-learning)
+    - [**systems**](#interesting-papers---systems)
 
 ----
 
@@ -541,9 +541,9 @@
 ---
 ### interesting papers
 
-  - [theory](#interesting-papers---theory)
-  - [automated machine learning](#interesting-papers---automated-machine-learning)
-  - [systems](#interesting-papers---systems)
+  - [**theory**](#interesting-papers---theory)
+  - [**automated machine learning**](#interesting-papers---automated-machine-learning)
+  - [**systems**](#interesting-papers---systems)
 
 
 [**interesting papers - deep learning**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers)  

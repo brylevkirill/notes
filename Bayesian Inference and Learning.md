@@ -2,32 +2,27 @@
   A central problem involves modeling complex data sets using highly flexible families of probability distributions in which learning, sampling, inference, and evaluation are still analytically or computationally tractable.  
 
 
-  * [introduction](#introduction)
-  * [overview](#overview)
-    - [bayesian deep learning](#overview)
-    - [bayesian reinforcement learning](#overview)
-  * [theory](#theory)
-  * [models](#models)
-    - [graphical models](#graphical-models)
-    - [non-parametric models](#non-parametric-models)
-    - [probabilistic programming](#probabilistic-programming)
-  * [inference and learning](#inference-and-learning)
-    - [expectation maximization](#expectation-maximization)
-    - [variational inference](#variational-inference)
-    - [monte carlo inference](#monte-carlo-inference)
-    - [likelihood-free inference](#likelihood-free-inference)
-    - [belief propagation](#belief-propagation)
-  * [interesting papers](#interesting-papers)
+  * [**introduction**](#introduction)
+  * [**overview**](#overview)
+    - [**bayesian deep learning**](#overview)
+    - [**bayesian reinforcement learning**](#overview)
+  * [**theory**](#theory)
+  * [**models**](#models)
+    - [**graphical models**](#graphical-models)
+    - [**non-parametric models**](#non-parametric-models)
+    - [**probabilistic programming**](#probabilistic-programming)
+  * [**inference and learning**](#inference-and-learning)
+    - [**expectation maximization**](#expectation-maximization)
+    - [**variational inference**](#variational-inference)
+    - [**monte carlo inference**](#monte-carlo-inference)
+    - [**likelihood-free inference**](#likelihood-free-inference)
+    - [**belief propagation**](#belief-propagation)
+  * [**interesting papers**](#interesting-papers)
 
 
 
 ---
 ### introduction
-
-  ![(yet another) history of life as we know it...](http://www.brera.mi.astro.it/~andreon/inference/primate.png)  
-  ["Inference, do you know it?"](http://www.brera.mi.astro.it/~andreon/inference/Inference.html) by Stefano Andreon  
-
-----
 
   "Bayesian inference is application of Bayes' theorem to update probability of hypothesis as more evidence or information becomes available."
 
@@ -105,7 +100,7 @@
   [**bayesian reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#bayesian-reinforcement-learning)
 
   [**Solomonoff induction**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#solomonoff-induction)  *(bayesian optimal prediction)*  
-  [**AIXI**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#aixi)  *(bayesian optimal decision making)*  
+  [**AIXI**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---aixi)  *(bayesian optimal decision making)*  
 
 ----
 
@@ -220,9 +215,9 @@
 ---
 ### models
 
-  - [graphical models](#graphical-models)
-  - [non-parametric models](#non-parametric-models)
-  - [probabilistic programming](#probabilistic-programming)
+  - [**graphical models**](#graphical-models)
+  - [**non-parametric models**](#non-parametric-models)
+  - [**probabilistic programming**](#probabilistic-programming)
 
 
 
@@ -246,8 +241,8 @@
 
 ----
 
-  [variational autoencoder](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#generative-models---variational-autoencoder)  
-  [bayesian neural network](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)  
+  [**variational autoencoder**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#generative-models---variational-autoencoder)  
+  [**bayesian neural network**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)  
 
 
 
@@ -295,7 +290,7 @@
 ---
 ### probabilistic programming
 
-  [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)
+  [**probabilistic programming**](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)
 
 
 
@@ -321,11 +316,11 @@
 
 ----
 
-  - [expectation maximization](#expectation-maximization)
-  - [variational inference](#variational-inference)
-  - [monte carlo methods](#monte-carlo-methods)
-  - [likelihood-free inference](#likelihood-free-inference)
-  - [belief propagation](#belief-propagation)
+  - [**expectation maximization**](#expectation-maximization)
+  - [**variational inference**](#variational-inference)
+  - [**monte carlo methods**](#monte-carlo-methods)
+  - [**likelihood-free inference**](#likelihood-free-inference)
+  - [**belief propagation**](#belief-propagation)
 
 
 
@@ -351,8 +346,8 @@
 
 ----
 
-  [EM and VI](https://youtu.be/yzNbaAPKXA8?t=19m45s) by Zoubin Ghahramani `video`  *([variational inference](#variational-inference))*  
-  ["VAE = EM"](https://machinethoughts.wordpress.com/2017/10/02/vae-em/) by David McAllester  *([variational auto-encoder](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#generative-models---variational-autoencoder))*  
+  [EM and VI](https://youtu.be/yzNbaAPKXA8?t=19m45s) by Zoubin Ghahramani `video`  ([**variational inference**](#variational-inference))  
+  ["VAE = EM"](https://machinethoughts.wordpress.com/2017/10/02/vae-em/) by David McAllester  ([**variational auto-encoder**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#generative-models---variational-autoencoder))  
 
 ----
 
@@ -422,8 +417,8 @@
 ----
 
   applications:
-  - [variational autoencoder](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#generative-models---variational-autoencoder)  *(approximating posterior over latent variables given a datapoint)*
-  - [bayesian neural network](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)  *(approximating posterior over model parameters given a dataset)*
+  - [**variational autoencoder**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#generative-models---variational-autoencoder)  *(approximating posterior over latent variables given a datapoint)*
+  - [**bayesian neural network**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)  *(approximating posterior over model parameters given a dataset)*
 
 ----
 
@@ -563,7 +558,7 @@
 
 ----
 
-  [generative adversarial networks](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#generative-models---generative-adversarial-networks) as implicit models with likelihood-free inference
+  [**generative adversarial networks**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#generative-models---generative-adversarial-networks) as implicit models with likelihood-free inference
 
 
 
@@ -579,14 +574,14 @@
 ---
 ### interesting papers
 
-[interesting papers - bayesian deep learning](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---bayesian-deep-learning)  
-[interesting papers - variational autoencoder](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---variational-autoencoder)  
-[interesting papers - probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers)  
+[**interesting papers - bayesian deep learning**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---bayesian-deep-learning)  
+[**interesting papers - variational autoencoder**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---variational-autoencoder)  
+[**interesting papers - probabilistic programming**](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers)  
 
 
-[interesting recent papers - bayesian deep learning](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#bayesian-deep-learning)  
-[interesting recent papers - variational autoencoders](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models---variational-autoencoders)  
-[interesting recent papers - unsupervised learning](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#unsupervised-learning)  
+[**interesting recent papers - bayesian deep learning**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#bayesian-deep-learning)  
+[**interesting recent papers - variational autoencoders**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models---variational-autoencoders)  
+[**interesting recent papers - unsupervised learning**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#unsupervised-learning)  
 
 
 
@@ -623,7 +618,7 @@
 ---
 ### interesting papers - applications
 
-[interesting papers - probabilistic programming - applications](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers---applications)  
+[**interesting papers - probabilistic programming - applications**](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers---applications)  
 
 
 #### ["A Generative Vision Model that Trains with High Data Efficiency and Breaks Text-based CAPTCHAs"](http://science.sciencemag.org/content/early/2017/10/26/science.aag2612.full) George et al.

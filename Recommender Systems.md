@@ -1,11 +1,11 @@
 
 
-  * [overview](#overview)
-  * [interesting papers](#interesting-papers)
-    - [item similarity](#interesting-papers---item-similarity)
-    - [user preferences](#interesting-papers---user-preferences)
-    - [deep learning](#interesting-papers---deep-learning)
-    - [active learning](#interesting-papers---active-learning)
+  * [**overview**](#overview)
+  * [**interesting papers**](#interesting-papers)
+    - [**item similarity**](#interesting-papers---item-similarity)
+    - [**user preferences**](#interesting-papers---user-preferences)
+    - [**deep learning**](#interesting-papers---deep-learning)
+    - [**active learning**](#interesting-papers---active-learning)
 
 
 
@@ -60,13 +60,13 @@
 ---
 ### interesting papers
 
-  - [item similarity](#interesting-papers---item-similarity)
-  - [user preferences](#interesting-papers---user-preferences)
-  - [deep learning](#interesting-papers---deep-learning)
-  - [active learning](#interesting-papers---active-learning)
+  - [**item similarity**](#interesting-papers---item-similarity)
+  - [**user preferences**](#interesting-papers---user-preferences)
+  - [**deep learning**](#interesting-papers---deep-learning)
+  - [**active learning**](#interesting-papers---active-learning)
 
 
-[selected papers](https://yadi.sk/d/RtAsSjLG3PhrT2)
+[**selected papers**](https://yadi.sk/d/RtAsSjLG3PhrT2)
 
 
 

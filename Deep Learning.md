@@ -1,32 +1,32 @@
   Deep Learning is learning to represent knowledge with composition of continuous functions.
 
 
-  * [overview](#overview)
-  * [research](#research)
-  * [theory](#theory)
-  * [bayesian deep learning](#bayesian-deep-learning)
-  * [unsupervised learning](#unsupervised-learning)
-  * [generative models](#generative-models)
-    - [generative adversarial networks](#generative-models---generative-adversarial-networks)
-    - [variational autoencoder](#generative-models---variational-autoencoder)
-    - [autoregressive models](#generative-models---autoregressive-models)
-    - [restricted boltzmann machine](#generative-models---restricted-boltzmann-machine)
-  * [architectures](#architectures)
-    - [convolutional neural network](#architectures---convolutional-neural-network)
-    - [recurrent neural network](#architectures---recurrent-neural-network)
-    - [attention](#architectures---attention)
-    - [compute and memory](#architectures---compute-and-memory)
-    - [distributed representation](#architectures---distributed-representation)
-  * [interesting papers](#interesting-papers)
-    - [theory](#interesting-papers---theory)
-    - [gradient estimation](#interesting-papers---gradient-estimation)
-    - [bayesian deep learning](#interesting-papers---bayesian-deep-learning)
-    - [generative adversarial networks](#interesting-papers---generative-adversarial-networks)
-    - [variational autoencoder](#interesting-papers---variational-autoencoder)
-    - [autoregressive models](#interesting-papers---autoregressive-models)
-    - [architectures](#interesting-papers---architectures)
-    - [connections to neuroscience](#connections-to-neuroscience)
-    - [applications](#interesting-papers---applications)
+  * [**overview**](#overview)
+  * [**research**](#research)
+  * [**theory**](#theory)
+  * [**bayesian deep learning**](#bayesian-deep-learning)
+  * [**unsupervised learning**](#unsupervised-learning)
+  * [**generative models**](#generative-models)
+    - [**generative adversarial networks**](#generative-models---generative-adversarial-networks)
+    - [**variational autoencoder**](#generative-models---variational-autoencoder)
+    - [**autoregressive models**](#generative-models---autoregressive-models)
+    - [**restricted boltzmann machine**](#generative-models---restricted-boltzmann-machine)
+  * [**architectures**](#architectures)
+    - [**convolutional neural network**](#architectures---convolutional-neural-network)
+    - [**recurrent neural network**](#architectures---recurrent-neural-network)
+    - [**attention**](#architectures---attention)
+    - [**compute and memory**](#architectures---compute-and-memory)
+    - [**distributed representation**](#architectures---distributed-representation)
+  * [**interesting papers**](#interesting-papers)
+    - [**theory**](#interesting-papers---theory)
+    - [**gradient estimation**](#interesting-papers---gradient-estimation)
+    - [**bayesian deep learning**](#interesting-papers---bayesian-deep-learning)
+    - [**generative adversarial networks**](#interesting-papers---generative-adversarial-networks)
+    - [**variational autoencoder**](#interesting-papers---variational-autoencoder)
+    - [**autoregressive models**](#interesting-papers---autoregressive-models)
+    - [**architectures**](#interesting-papers---architectures)
+    - [**connections to neuroscience**](#connections-to-neuroscience)
+    - [**applications**](#interesting-papers---applications)
 
 
 
@@ -87,17 +87,17 @@
 
 #### applications
 
-  [applications](#interesting-papers---applications)
+  [**applications**](#interesting-papers---applications)
 
-  [other applications](https://yadi.sk/d/mQnJYmxo3WZDvP)
+  [**other applications**](https://yadi.sk/d/mQnJYmxo3WZDvP)
 
-  [reinforcement learning](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)  
-  [bayesian inference and learning](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)  
-  [probabilistic programming](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
-  [knowledge representation and reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
-  [natural language processing](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md)  
-  [recommender systems](https://github.com/brylevkirill/notes/blob/master/Recommender%20Systems.md)  
-  [information retrieval](https://github.com/brylevkirill/notes/blob/master/Information%20Retrieval.md)  
+  [**reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)  
+  [**bayesian inference and learning**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)  
+  [**probabilistic programming**](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
+  [**knowledge representation and reasoning**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md)  
+  [**natural language processing**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md)  
+  [**recommender systems**](https://github.com/brylevkirill/notes/blob/master/Recommender%20Systems.md)  
+  [**information retrieval**](https://github.com/brylevkirill/notes/blob/master/Information%20Retrieval.md)  
 
 
 #### research areas
@@ -120,23 +120,11 @@
   - architecture engineering
 
 
-#### research objectives
-
-  - unsupervised learning - learning two-way transformation of data into space where variables are disentangled or mostly independent
-  - models that incorporate planning and taking decisions in learning process - playing out what-if scenarios via generative component
-  - resolve problems with maximum likelihood - mismatch between training and test conditions
-  - models of really long-term dependencies in sequential data - learners that discover hierarchical representation at multiple time scales
-  - natural language and knowledge representation on large scale - computations scale much worse than linearly
-  - understand and fix optimization issues
-  - ramp up theoretical understanding
-  - bridge the gap with biology
-
-
 
 ---
 ### theory
 
-  [papers and resources](#interesting-papers---theory)
+  [**papers and resources**](#interesting-papers---theory)
 
 ----
 
@@ -262,7 +250,7 @@
 ---
 ### bayesian deep learning
 
-  [papers and resources](#interesting-papers---bayesian-inference-and-learning)
+  [**papers and resources**](#interesting-papers---bayesian-inference-and-learning)
 
   [**bayesian inference and learning**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
 
@@ -357,7 +345,7 @@
 
 ----
 
-  [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#unsupervised-learning)
+  [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#unsupervised-learning)
 
 ----
 
@@ -396,7 +384,7 @@
 
 ----
 
-  [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models)
+  [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models)
 
 ----
 
@@ -433,23 +421,23 @@
 
   - implicit density
 
-	[*generative adversarial networks*](#generative-models---generative-adversarial-networks)  
+	[**generative adversarial networks**](#generative-models---generative-adversarial-networks)  
 	A way to train generative models by optimizing them to fool a classifier, the discriminator network, that tries to distinguish between real data and data generated by the generator network.  
 
   - approximate explicit density
 
-	[*variational autoencoders*](#generative-models---variational-autoencoder)  
+	[**variational autoencoders**](#generative-models---variational-autoencoder)  
 	Latent variable models that use a neural network to do approximate inference. The recognition network looks at each datapoint x and outputs an approximate posterior on the latents q(z|x) for that datapoint.  
 
-	[*restricted boltzmann machine*](#generative-models---restricted-boltzmann-machine)  
+	[**restricted boltzmann machine**](#generative-models---restricted-boltzmann-machine)  
 	Latent variable model with hidden units conditionally independent given the visible states, so we can quickly get an unbiased sample from the posterior distribution when given a data vector.  
 
   - tractable explicit density
 
-	[*autoregressive models*](#generative-models---autoregressive-models)  
+	[**autoregressive models**](#generative-models---autoregressive-models)  
 	Another way to model p(x) is to break the model into a series of conditional distributions: p(x)=p(x1)p(x2|x1)p(x3|x2,x1)…p(x)=p(x1)p(x2|x1)p(x3|x2,x1)… This is the approach used, for example, by recurrent neural networks. These models are also realitvely easy to train, but the downside is that they don't support all of the same queries we can make of latent variable models.  
 
-	[*invertible density estimation*](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models---invertible-density-estimation)  
+	[**invertible density estimation**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models---invertible-density-estimation)  
 	A way to specify complex generative models by transforming a simple latent distribution with a series of invertible functions. These approaches are restricted to a more limited set of possible operations, but sidestep the difficult integrals required to train standard latent variable models.  
 
 
@@ -502,23 +490,17 @@
 
 ----
 
-  "In unsupervised learning, you'd like high held-out likelihood, realistic samples and meaningful latent state. In practice, pick 2 of 3."
-
-  *(David Pfau)*
-
-----
-
-  - [generative adversarial networks](#generative-models---generative-adversarial-networks)  
-  - [variational autoencoder](#generative-models---variational-autoencoder)  
-  - [autoregressive models](#generative-models---autoregressive-models)  
-  - [restricted boltzmann machine](#generative-models---restricted-boltzmann-machine)  
+  - [**generative adversarial networks**](#generative-models---generative-adversarial-networks)  
+  - [**variational autoencoder**](#generative-models---variational-autoencoder)  
+  - [**autoregressive models**](#generative-models---autoregressive-models)  
+  - [**restricted boltzmann machine**](#generative-models---restricted-boltzmann-machine)  
 
 
 
 ---
 ### generative models - generative adversarial networks
 
-  [papers and resources](#interesting-papers---generative-adversarial-networks)
+  [**papers and resources**](#interesting-papers---generative-adversarial-networks)
 
   ["Deep Generative Models"](http://www.deeplearningbook.org/contents/generative_models.html) chapter (section 20.10.4) of "Deep Learning" book by Goodfellow, Bengio, Courville
 
@@ -619,7 +601,7 @@
 ---
 ### generative models - variational autoencoder
 
-  [papers and resources](#interesting-papers---variational-autoencoder)
+  [**papers and resources**](#interesting-papers---variational-autoencoder)
 
   ["Deep Generative Models"](http://www.deeplearningbook.org/contents/generative_models.html) chapter (section 20.10.3) of "Deep Learning" book by Goodfellow, Bengio, Courville
 
@@ -640,12 +622,12 @@
   ["Variational auto-encoders do not train complex generative models"](http://dustintran.com/blog/variational-auto-encoders-do-not-train-complex-generative-models/) by Dustin Tran  
   ["VAE = EM"](https://machinethoughts.wordpress.com/2017/10/02/vae-em/) by David McAllester  
 
-  [variational inference](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#variational-inference)  
-  [reparametrization trick](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#pathwise-derivative-estimator-for-gradient-of-elbo)  
+  [**variational inference**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#variational-inference)  
+  [**reparametrization trick**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#pathwise-derivative-estimator-for-gradient-of-elbo)  
 
 ----
 
-  comparison with [generative adversarial networks](#generative-models---generative-adversarial-networks):  
+  comparison with [**generative adversarial networks**](#generative-models---generative-adversarial-networks):  
   - easier to train and get working  
   - relatively easy to implement and robust to hyperparameter choices  
   - tractable likelihood  
@@ -673,7 +655,7 @@
 ---
 ### generative models - autoregressive models
 
-  [papers and resources](#interesting-papers---autoregressive-models)
+  [**papers and resources**](#interesting-papers---autoregressive-models)
 
   ["Deep Generative Models"](http://www.deeplearningbook.org/contents/generative_models.html) chapter (sections 20.10.7-20.10.10) of "Deep Learning" book by Goodfellow, Bengio, Courville
 
@@ -799,11 +781,11 @@
 
 ----
 
-  - [convolutional neural network](#architectures---convolutional-neural-network)
-  - [recurrent neural network](#architectures---recurrent-neural-network)
-  - [attention](#architectures---attention)
-  - [compute and memory](#architectures---compute-and-memory)
-  - [distributed representation](#architectures---distributed-representation)
+  - [**convolutional neural network**](#architectures---convolutional-neural-network)
+  - [**recurrent neural network**](#architectures---recurrent-neural-network)
+  - [**attention**](#architectures---attention)
+  - [**compute and memory**](#architectures---compute-and-memory)
+  - [**distributed representation**](#architectures---distributed-representation)
 
 
 
@@ -955,7 +937,7 @@
 ---
 ### architectures - compute and memory
 
-  [papers and resources](#interesting-papers---architectures)
+  [**papers and resources**](#interesting-papers---architectures)
 
   ["Deep Learning and Reasoning, Memory-Augmented Networks"](http://videolectures.net/deeplearning2016_chopra_attention_memory/) by Rob Fergus `video`  
   ["Reasoning, Attention and Memory"](http://videolectures.net/deeplearning2016_chopra_attention_memory/) by Sumit Chopra `video`  
@@ -968,19 +950,13 @@
 
 ----
 
-  - [*Pointer Networks*](#vinyals-fortunato-jaitly---pointer-networks)  
-
-  - [*Grid LSTM*](#kalchbrenner-danihelka-graves---grid-long-short-term-memory)  
-
-  - [*Neural GPU*](#kaiser-sutskever---neural-gpus-learn-algorithms)  
-
-  - [*Memory Networks*](#sukhbaatar-szlam-weston-fergus---end-to-end-memory-networks)  
-
-  - [*Neural Stacks/Queues*](#grefenstette-hermann-suleyman-blunsom---learning-to-transduce-with-unbounded-memory)  
-
-  - [*Neural Turing Machine*](#graves-wayne-danihelka---neural-turing-machines)  
-
-  - [*Differentiable Neural Computer*](#graves-et-al---hybrid-computing-using-a-neural-network-with-dynamic-external-memory)  
+  - [**Pointer Networks**](#vinyals-fortunato-jaitly---pointer-networks)  
+  - [**Grid LSTM**](#kalchbrenner-danihelka-graves---grid-long-short-term-memory)  
+  - [**Neural GPU**](#kaiser-sutskever---neural-gpus-learn-algorithms)  
+  - [**Memory Networks**](#sukhbaatar-szlam-weston-fergus---end-to-end-memory-networks)  
+  - [**Neural Stacks/Queues**](#grefenstette-hermann-suleyman-blunsom---learning-to-transduce-with-unbounded-memory)  
+  - [**Neural Turing Machine**](#graves-wayne-danihelka---neural-turing-machines)  
+  - [**Differentiable Neural Computer**](#graves-et-al---hybrid-computing-using-a-neural-network-with-dynamic-external-memory)  
 
 ----
 
@@ -1036,8 +1012,8 @@
   ["Deep Meaning Beyond Thought Vectors"](https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/) by David McAllester
 
 
-  [distributed representation of natural language](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#embeddings)  
-  [neural architectures for reasoning](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---neural-reasoning)  
+  [**distributed representation of natural language**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#embeddings)  
+  [**neural architectures for reasoning**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---neural-reasoning)  
 
 ----
 
@@ -1080,25 +1056,25 @@
 ---
 ### interesting papers
 
-  - [theory](#interesting-papers---theory)  
-  - [gradient estimation](#interesting-papers---gradient-estimation)  
-  - [bayesian deep learning](#interesting-papers---bayesian-deep-learning)  
-  - [generative adversarial networks](#interesting-papers---generative-adversarial-networks)  
-  - [variational autoencoder](#interesting-papers---variational-autoencoder)  
-  - [autoregressive models](#interesting-papers---autoregressive-models)  
-  - [architectures](#interesting-papers---architectures)  
-  - [connections to neuroscience](#connections-to-neuroscience)  
-  - [applications](#interesting-papers---applications)  
+  - [**theory**](#interesting-papers---theory)  
+  - [**gradient estimation**](#interesting-papers---gradient-estimation)  
+  - [**bayesian deep learning**](#interesting-papers---bayesian-deep-learning)  
+  - [**generative adversarial networks**](#interesting-papers---generative-adversarial-networks)  
+  - [**variational autoencoder**](#interesting-papers---variational-autoencoder)  
+  - [**autoregressive models**](#interesting-papers---autoregressive-models)  
+  - [**architectures**](#interesting-papers---architectures)  
+  - [**connections to neuroscience**](#connections-to-neuroscience)  
+  - [**applications**](#interesting-papers---applications)  
 
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md)
+[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md)
 
 
 
 ---
 ### interesting papers - theory
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#deep-learning-theory)
+[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#deep-learning-theory)
 
 
 #### ["Understanding Deep Learning Requires Rethinking Generalization"](http://arxiv.org/abs/1611.03530) Zhang, Bengio, Hardt, Recht, Vinyals
@@ -1571,13 +1547,13 @@ Yoshua Bengio:
 ---
 ### interesting papers - bayesian deep learning
 
-[interesting papers - variational autoencoder](#interesting-papers---variational-autoencoder)
+[**interesting papers - variational autoencoder**](#interesting-papers---variational-autoencoder)
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#bayesian-deep-learning)  
-[interesting recent papers - variational autoencoders](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models---variational-autoencoders)  
-[interesting recent papers - unsupervised learning](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#unsupervised-learning)  
-[interesting recent papers - model-based reinforcement learning](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-based-methods)  
-[interesting recent papers - exploration and intrinsic motivation](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
+[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#bayesian-deep-learning)  
+[**interesting recent papers - variational autoencoders**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models---variational-autoencoders)  
+[**interesting recent papers - unsupervised learning**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#unsupervised-learning)  
+[**interesting recent papers - model-based reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-based-methods)  
+[**interesting recent papers - exploration and intrinsic motivation**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
 
 
 #### ["Composing Graphical Models with Neural Networks for Structured Representations and Fast Inference"](http://arxiv.org/abs/1603.06277) Johnson, Duvenaud, Wiltschko, Datta, Adams
@@ -1810,8 +1786,8 @@ Yoshua Bengio:
 ---
 ### interesting papers - generative adversarial networks
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models---generative-adversarial-networks)  
-[interesting recent papers - generative models](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models)  
+[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models---generative-adversarial-networks)  
+[**interesting recent papers - generative models**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models)  
 
 <https://github.com/zhangqianhui/AdversarialNetsPapers>  
 <https://github.com/nightrome/really-awesome-gan/>  
@@ -1920,11 +1896,11 @@ Yoshua Bengio:
 ---
 ### interesting papers - variational autoencoder
 
-[interesting papers - bayesian deep learning](#interesting-papers---bayesian-deep-learning)
+[**interesting papers - bayesian deep learning**](#interesting-papers---bayesian-deep-learning)
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models---variational-autoencoders)  
-[interesting recent papers - generative models](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models)  
-[interesting recent papers - bayesian deep learning](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#bayesian-deep-learning)  
+[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models---variational-autoencoders)  
+[**interesting recent papers - generative models**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models)  
+[**interesting recent papers - bayesian deep learning**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#bayesian-deep-learning)  
 
 
 #### ["Auto-Encoding Variational Bayes"](http://arxiv.org/abs/1312.6114) Kingma, Welling
@@ -2081,8 +2057,8 @@ x."
 ---
 ### interesting papers - autoregressive models
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models---autoregressive-models)  
-[interesting recent papers - generative models](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models)  
+[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models---autoregressive-models)  
+[**interesting recent papers - generative models**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models)  
 
 
 #### ["Generating Sequences With Recurrent Neural Networks"](http://arxiv.org/abs/1308.0850) Graves
@@ -2162,8 +2138,8 @@ x."
 ---
 ### interesting papers - architectures
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#compute-and-memory-architectures) on compute and memory architectures  
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#meta-learning) on meta-learning  
+[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#compute-and-memory-architectures) on compute and memory architectures  
+[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#meta-learning) on meta-learning  
 
 
 #### ["Dynamic Routing Between Capsules"](https://arxiv.org/abs/1710.09829) Sabour, Frosst, Hinton
@@ -2524,7 +2500,8 @@ x."
 >	"The Neural Turing Machine was the predecessor to the DNC described in this work. It used a similar architecture of neural network controller with read–write access to a memory matrix, but differed in the access mechanism used to interface with the memory. In the NTM, content-based addressing was combined with location-based addressing to allow the network to iterate through memory locations in order of their indices (for example, location n followed by n + 1 and so on). This allowed the network to store and retrieve temporal sequences in contiguous blocks of memory. However, there were several drawbacks. First, the NTM has no mechanism to ensure that blocks of allocated memory do not overlap and interfere — a basic problem of computer memory management. Interference is not an issue for the dynamic memory allocation used by DNCs, which provides single free locations at a time, irrespective of index, and therefore does not require contiguous blocks. Second, the NTM has no way of freeing locations that have already been written to and, hence, no way of reusing memory when processing long sequences. This problem is addressed in DNCs by the free gates used for de-allocation. Third, sequential information is preserved only as long as the NTM continues to iterate through consecutive locations; as soon as the write head jumps to a different part of the memory (using content-based addressing) the order of writes before and after the jump cannot be recovered by the read head. The temporal link matrix used by DNCs does not suffer from this problem because it tracks the order in which writes were made."
 
 ----
->	"- temporal link between successive records keeps track of order that writes happened  
+>	"
+>	- temporal link between successive records keeps track of order that writes happened  
 >	- controller can choose whether or not to write anything to memory each timestep  
 >	- same controller can do transitive reasoning (a new read conditioned on read from previous timestep) during inference time  
 >	- three attention types: content, temporal, allocation"  
@@ -2534,6 +2511,7 @@ x."
   - `post` <https://deepmind.com/blog/differentiable-neural-computers/>
   - `video` <https://youtube.com/watch?v=steioHoiEms> (Graves)
   - `video` <https://facebook.com/iclr.cc/videos/1713144705381255/> (9:09) (Graves)
+  - `video` <https://youtu.be/9z3_tJAu7MQ?t=3m16s> (Wayne)
   - `video` <https://youtube.com/watch?v=PQrlOjj8gAc> (Wayne)
   - `video` <https://youtu.be/otRoAQtc5Dk?t=59m56s> (Polykovskiy)
   - `video` <https://youtube.com/watch?v=r5XKzjTFCZQ> (Raval)
@@ -2641,7 +2619,6 @@ x."
   - `video` <https://youtube.com/watch?v=hVv4M0bTBJc> (Sutskever)
   - `code` <https://github.com/tensorflow/models/tree/master/research/neural_gpu>
   - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/neural_gpu.py>
-  - `code` <https://github.com/lukaszkaiser/NeuralGPU/>
 
 
 #### ["Extensions and Limitations of the Neural GPU"](http://www.cs.nyu.edu/~zaremba/neuralgpu.pdf) Price, Zaremba, Sutskever
@@ -2899,9 +2876,9 @@ x."
 ---
 ### interesting papers - applications
 
-[interesting papers - reinforcement learning - applications](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---applications)
+[**interesting papers - reinforcement learning - applications**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---applications)
 
-[interesting papers - other applications](https://dropbox.com/sh/dio0ypwiph44ehn/AAADQCyEutvVt9iugVU1F5S8a)
+[**interesting papers - other applications**](https://dropbox.com/sh/dio0ypwiph44ehn/AAADQCyEutvVt9iugVU1F5S8a)
 
 
 #### ["Learning Representations for Counterfactual Inference"](http://arxiv.org/abs/1605.03661) Johansson, Shalit, Sontag

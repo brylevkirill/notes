@@ -1,10 +1,10 @@
 
 
-  * [overview](#overview)
-  * [interesting papers](#interesting-papers)
-    - [ranking](#interesting-papers---ranking)
-    - [document models](#interesting-papers---document-models)
-    - [entity-centric search](#interesting-papers---entity-centric-search)
+  * [**overview**](#overview)
+  * [**interesting papers**](#interesting-papers)
+    - [**ranking**](#interesting-papers---ranking)
+    - [**document models**](#interesting-papers---document-models)
+    - [**entity-centric search**](#interesting-papers---entity-centric-search)
 
 
 
@@ -67,19 +67,19 @@
 ---
 ### interesting papers
 
-  - [ranking](#interesting-papers---ranking)  
-  - [document models](#interesting-papers---document-models)  
-  - [entity-centric search](#interesting-papers---entity-centric-search)  
+  - [**ranking**](#interesting-papers---ranking)  
+  - [**document models**](#interesting-papers---document-models)  
+  - [**entity-centric search**](#interesting-papers---entity-centric-search)  
 
 ----
 
-  - [question answering over texts](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---question-answering-over-texts)  
-  - [question answering over knowledge bases](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---question-answering-over-knowledge-bases)  
-  - [information extraction and integration](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---information-extraction-and-integration)  
+  - [**question answering over texts**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---question-answering-over-texts)  
+  - [**question answering over knowledge bases**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---question-answering-over-knowledge-bases)  
+  - [**information extraction and integration**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---information-extraction-and-integration)  
 
 ----
 
-[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)
+[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)
 
 
 ----
@@ -189,7 +189,7 @@
 ---
 ### interesting papers - document models
 
-[interesting papers - question answering over texts](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---question-answering-over-texts)
+[**interesting papers - question answering over texts**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---question-answering-over-texts)
 
 
 #### ["Learning Deep Structured Semantic Models for Web Search using Clickthrough Data"](http://research.microsoft.com/apps/pubs/default.aspx?id=198202) Huang, He, Gao, Deng, Acero, Heck
@@ -253,8 +253,8 @@
 ---
 ### interesting papers - entity-centric search
 
-[interesting papers - question answering over knowledge bases](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---question-answering-over-knowledge-bases)  
-[interesting papers - information extraction and integration](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---information-extraction-and-integration)  
+[**interesting papers - question answering over knowledge bases**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---question-answering-over-knowledge-bases)  
+[**interesting papers - information extraction and integration**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---information-extraction-and-integration)  
 
 
 #### ["Fast and Space-Efficient Entity Linking in Queries"](http://labs.yahoo.com/publication/fast-and-space-efficient-entity-linking-in-queries/) Blanco, Ottaviano, Meij
