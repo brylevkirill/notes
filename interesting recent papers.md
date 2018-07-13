@@ -337,7 +337,8 @@ interesting older papers:
 #### ["Improving Variational Inference with Inverse Autoregressive Flow"](http://arxiv.org/abs/1606.04934) Kingma, Salimans, Jozefowicz, Chen, Sutskever, Welling
   `variational inference` `posterior approximation` `normalizing flows` `IAF`
 >	"Most VAEs have so far been trained using crude approximate posteriors, where every latent variable is independent. Normalizing Flows have addressed this problem by conditioning each latent variable on the others before it in a chain, but this is computationally inefficient due to the introduced sequential dependencies. Inverse autoregressive flow, unlike previous work, allows us to parallelize the computation of rich approximate posteriors, and make them almost arbitrarily flexible."  
-  - `post` <http://bjlkeng.github.io/posts/variational-autoencoders-with-inverse-autoregressive-flows/>
+  - `post` <http://bjlkeng.github.io/posts/variational-autoencoders-with-inverse-autoregressive-flows>
+  - `post` <http://akosiorek.github.io/ml/2018/04/03/norm_flows.html>
   - `code` <https://github.com/openai/iaf>
 
 #### ["Neural Variational Inference and Learning in Undirected Graphical Models"](https://arxiv.org/abs/1711.02679) Kuleshov, Ermon
@@ -787,9 +788,15 @@ interesting older papers:
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1802.04821>
   - `code` <https://github.com/openai/EPG>
 
+#### ["On Learning Intrinsic Rewards for Policy Gradient Methods"](https://arxiv.org/abs/1804.06459) Zheng, Oh, Singh
+  `learning reward function`
+>	"Optimal Rewards Framework defines the optimal intrinsic reward function as one that when used by an agent achieves behavior that optimizes the task-specifying or extrinsic reward function. Previous work in this framework has shown how good intrinsic reward functions can be learned for lookahead search based planning agents. Whether it is possible to learn intrinsic reward functions for learning agents remains an open problem. In this paper we derive a novel algorithm for learning intrinsic rewards for policy-gradient based learning agents."  
+  - `video` <https://youtu.be/_4oL3DDCwCw?t=38m> (Singh)
+
 #### ["Deep Learning for Reward Design to Improve Monte Carlo Tree Search in ATARI Games"](https://arxiv.org/abs/1604.07095) Guo, Singh, Lewis, Lee
   `learning reward function`
 >	"Monte Carlo Tree Search methods have proven powerful in planning for sequential decision-making problems such as Go and video games, but their performance can be poor when the planning depth and sampling trajectories are limited or when the rewards are sparse. We present an adaptation of PGRD (policy-gradient for reward design) for learning a reward-bonus function to improve UCT (a MCTS algorithm). Unlike previous applications of PGRD in which the space of reward-bonus functions was limited to linear functions of hand-coded state-action-features, we use PGRD with a multi-layer convolutional neural network to automatically learn features from raw perception as well as to adapt the non-linear reward-bonus function parameters. We also adopt a variance-reducing gradient method to improve PGRD’s performance. The new method improves UCT’s performance on multiple ATARI games compared to UCT without the reward bonus. Combining PGRD and Deep Learning in this way should make adapting rewards for MCTS algorithms far more widely and practically applicable than before."  
+  - `video` <https://youtu.be/_4oL3DDCwCw?t=11m47s> (Singh)
   - `video` <https://vimeo.com/250399421> (Singh)
   - `video` <http://videolectures.net/deeplearning2017_singh_reinforcement_learning/#t=1177> (Singh)
   - `video` <https://youtube.com/watch?v=MhIP1SOqlS8> (Singh)
@@ -1288,11 +1295,31 @@ interesting older papers:
 [**interesting recent papers - generative models**](#generative-models)
 
 ----
+#### ["Glow: Generative Flow with Invertible 1x1 Convolutions"](https://arxiv.org/abs/1807.03039) Kingma, Dhariwal
+  `Glow`
+>	"We demonstrate that a generative model optimized towards the plain log-likelihood objective is capable of efficient realistic-looking synthesis and manipulation of large images."  
+  - `post` <https://blog.openai.com/glow>
+  - `video` <https://youtube.com/watch?v=exJZOC3ZceA> (demo)
+  - `code` <https://github.com/openai/glow>
+
 #### ["Neural Autoregressive Flows"](https://arxiv.org/abs/1804.00779) Huang, Krueger, Lacoste, Courville
+  `NAF`
 >	"NAF unifies and generalizes MAF and IAF, replacing the (conditionally) affine univariate transformations of MAF/IAF with a more general class of invertible univariate transformations expressed as monotonic neural networks. We demonstrate that NAFs are universal approximators for continuous probability distributions, and their greater expressivity allows them to better capture multimodal target distributions."  
   - `code` <https://github.com/CW-Huang/NAF>
 
+#### ["Parallel WaveNet: Fast High-Fidelity Speech Synthesis"](https://arxiv.org/abs/1711.10433) Oord et al.
+  `Parallel WaveNet`
+>	"Inverse autoregressive flows represent a kind of dual formulation of deep autoregressive modelling, in which sampling can be performed in parallel, while the inference procedure required for likelihood estimation is sequential and slow. The goal of this paper is to marry the best features of both models: the efficient training of WaveNet and the efficient sampling of IAF networks. The bridge between them is a new form of neural network distillation, which we refer to as Probability Density Distillation, where a trained WaveNet model is used as a teacher for training feedforward IAF model with no significant difference in quality."  
+>	"WaveNet: efficient training, slow sampling"  
+>	"IAF: efficient sampling, slow inference"  
+>	"Distribution Distillation combines the advantages of both types of flows. It trains one model, which closely resembles MAF, for density estimation. Its role is just to evaluate probability of a data point, given that data point. Once this model is trained, the authors instantiate a second model parametrised by IAF. Now, we can draw samples from IAF and evaluate their probability under the MAF. This allows us to compute Monte-Carlo approximation of the KL-divergence between the two probability distributions, which we can use as a training objective for IAF. This way, MAF acts as a teacher and IAF as a student. This clever application of both types of flows allowed to improve efficiency of the original WaveNet by the factor of 300."
+  - <https://deepmind.com/blog/wavenet-launches-google-assistant/> (demo)
+  - `post` <https://deepmind.com/blog/high-fidelity-speech-synthesis-wavenet/>
+  - `video` <https://facebook.com/iclr.cc/videos/2125495797479475> (8:13) (Kavukcuoglu)
+  - `video` <https://youtu.be/YyUXG-BfDbE?t=26m19s> (Andrews)
+
 #### ["Masked Autoregressive Flow for Density Estimation"](https://arxiv.org/abs/1705.07057) Papamakarios, Pavlakou, Murray
+  `MAF`
 >	"We describe an approach for increasing the flexibility of an autoregressive model, based on modelling the random numbers that the model uses internally when generating data. By constructing a stack of autoregressive models, each modelling the random numbers of the next model in the stack, we obtain a type of normalizing flow suitable for density estimation. This type of flow is closely related to Inverse Autoregressive Flow and is a generalization of Real NVP."  
 >	"MAF:  
 >	- fast to calculate p(x)  
@@ -1309,9 +1336,11 @@ interesting older papers:
   - `video` <https://vimeo.com/252105837> (Papamakarios)
   - `audio` <https://youtube.com/watch?v=315xKcYX-1w> (Papamakarios)
   - `post` <http://blog.evjang.com/2018/01/nf2.html>
+  - `post` <http://akosiorek.github.io/ml/2018/04/03/norm_flows.html>
   - `code` <https://github.com/gpapamak/maf>
 
 #### ["Density Estimation using Real NVP"](http://arxiv.org/abs/1605.08803) Dinh, Sohl-Dickstein, Bengio
+  `Real NVP` `RNVP`
 >	"Real-valued Non Volume Preserving transform:  
 >	- one-pass and exact inference and sampling  
 >	- explicit learning of a latent representation  
@@ -1322,6 +1351,7 @@ interesting older papers:
   - `video` <https://periscope.tv/hugo_larochelle/1ypKdAVmbEpGW> (Dinh)
   - `video` <https://cds.cern.ch/record/2302480> (43:54) (Rezende)
   - `post` <http://blog.evjang.com/2018/01/nf2.html>
+  - `post` <http://akosiorek.github.io/ml/2018/04/03/norm_flows.html>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.08803>
   - `code` <https://github.com/tensorflow/models/tree/master/research/real_nvp>
   - `code` <https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/distributions/python/ops/bijectors/real_nvp.py>
@@ -1411,7 +1441,7 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=wPKGIIy4rtU> (Bousquet)
 
 #### ["Improved Training of Wasserstein GANs"](https://arxiv.org/abs/1704.00028) Gulrajani, Ahmed, Arjovsky, Dumoulin, Courville
-  `GAN objective`
+  `GAN objective` `WGAN-GP`
   - `post` <https://casmls.github.io/general/2017/04/13/gan.html>
   - `post` <https://lernapparat.de/improved-wasserstein-gan>
   - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/wasserstein-generative-adversarial-networks/> `in russian`
@@ -1420,7 +1450,7 @@ interesting older papers:
   - `code` <https://github.com/igul222/improved_wgan_training>
 
 #### ["Wasserstein GAN"](https://arxiv.org/abs/1701.07875) Arjovsky, Chintala, Bottou
-  `GAN objective`
+  `GAN objective` `WGAN`
 >	"Paper uses Wasserstein distance instead of Jensen-Shannon divergence to compare distributions."  
 >	"Paper gets rid of a few unnecessary logarithms, and clips weights."  
 >
@@ -1664,16 +1694,6 @@ interesting older papers:
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#attention-is-all-you-need-vaswani-et-al>
 
 ----
-#### ["Parallel WaveNet: Fast High-Fidelity Speech Synthesis"](https://arxiv.org/abs/1711.10433) Oord et al.
-  `WaveNet`
->	"Inverse autoregressive flows represent a kind of dual formulation of deep autoregressive modelling, in which sampling can be performed in parallel, while the inference procedure required for likelihood estimation is sequential and slow. The goal of this paper is to marry the best features of both models: the efficient training of WaveNet and the efficient sampling of IAF networks. The bridge between them is a new form of neural network distillation, which we refer to as Probability Density Distillation, where a trained WaveNet model is used as a teacher for training feedforward IAF model with no significant difference in quality."  
->	"WaveNet: efficient training, slow sampling"  
->	"IAF: efficient sampling, slow inference"  
-  - <https://deepmind.com/blog/wavenet-launches-google-assistant/> (demo)
-  - `post` <https://deepmind.com/blog/high-fidelity-speech-synthesis-wavenet/>
-  - `video` <https://facebook.com/iclr.cc/videos/2125495797479475> (8:13) (Kavukcuoglu)
-  - `video` <https://youtu.be/YyUXG-BfDbE?t=26m19s> (Andrews)
-
 #### ["WaveNet: A Generative Model for Raw Audio"](http://arxiv.org/abs/1609.03499) Oord et al.
   `WaveNet`
   - `post` <https://deepmind.com/blog/wavenet-generative-model-raw-audio/>
@@ -1837,6 +1857,7 @@ interesting older papers:
 #### ["Learning to Play in a Day: Faster Deep Reinforcement Learning by Optimality Tightening"](https://arxiv.org/abs/1611.01606) He, Liu, Schwing, Peng
   `Q-learning`
 >	"We propose a novel training algorithm for reinforcement learning which combines the strength of deep Q-learning with a constrained optimization approach to tighten optimality and encourage faster reward propagation."  
+>	"Optimality tightening introduces an objective based on the lower/upper bound of the optimal Q-function."  
   - `video` <https://yadi.sk/i/yBO0q4mI3GAxYd> (1:10:20) (Fritzler) `in russian`
   - `video` <https://youtu.be/mrj_hyH974o?t=16m13s> (Podoprikhin) `in russian`
 
@@ -1864,6 +1885,7 @@ interesting older papers:
   `Retrace` `value-based` `off-policy evaluation`
 >	"We show that Tree Backup and Retrace algorithms are unstable with linear function approximation, both in theory and with specific examples. We addressed these issues by formulating gradient-based versions of these algorithms which minimize the mean-square projected Bellman error. Using a saddle-point formulation, we were also able to provide convergence guarantees and characterize the convergence rate of our algorithms."  
 >	"The design and analysis of off-policy algorithms using all the features of reinforcement learning, e.g. bootstrapping, multi-step updates (eligibility traces), and function approximation has been explored extensively over three decades. While off-policy learning and function approximation have been understood in isolation, their combination with multi-steps bootstrapping produces a so-called deadly triad, i.e., many algorithms in this category are unstable. A convergent approach to this triad is provided by importance sampling, which bends the behavior policy distribution onto the target one. However, as the length of the trajectories increases, the variance of importance sampling corrections tends to become very large. An alternative approach which was developed for tabular representations of the value function is the tree backup algorithm which, remarkably, does not rely on importance sampling directly. Tree Backup has recently been revisited by authors of Retrace(λ) algorithm. Both Tree Backup and Retrace(λ) were only shown to converge with a tabular value function representation, and whether they would also converge with function approximation was an open question, which we tackle in this paper."  
+  - `video` <https://facebook.com/icml.imls/videos/430846900763164> (5:03) (Touati)
 
 #### ["Safe and Efficient Off-Policy Reinforcement Learning"](http://arxiv.org/abs/1606.02647) Munos, Stepleton, Harutyunyan, Bellemare
   `Retrace` `value-based` `off-policy evaluation`
@@ -1894,13 +1916,37 @@ interesting older papers:
   - `code` <https://github.com/noahgolmant/simpledgn>
 
 ----
+#### ["Self-Imitation Learning"](https://arxiv.org/abs/1806.05635) Oh, Guo, Singh, Lee
+  `SIL` `lower-bound soft Q-learning`
+>	"A simple off-policy actor-critic algorithm that learns to reproduce the agent’s past good decisions."  
+>	"SIL stores experiences in a replay buffer and learns to imitate state-action pairs in the replay buffer only when the return in the past episode is greater than the agent’s value estimate."  
+>	"A theoretical justification of the SIL objective is given by showing that the SIL objective is derived from the lower bound of the optimal Q-function."  
+>	"SIL combined with advantage actor-critic is competitive to the state-of-the-art count-based exploration actor-critic methods on several hard exploration Atari games."  
+>	"SIL improves the performance of PPO on MuJoCo continuous control tasks, demonstrating that SIL may be generally applicable to any actor-critic architecture."  
+>	"Intuitively, A2C updates the policy in the direction of increasing the expected return of the learner policy and enforces consistency between the value and the policy from on-policy trajectories. On the other hand, SIL updates each of them directly towards optimal policies and values respectively from off-policy trajectories."  
+  - `notes` <https://medium.com/intelligentunit/paper-notes-2-self-imitation-learning-b3a0fbdee351>
+  - `code` <https://github.com/junhyukoh/self-imitation-learning>
+
+#### ["Smoothed Action Value Functions for Learning Gaussian Policies"](https://arxiv.org/abs/1803.02348) Nachum, Norouzi, Tucker, Schuurmans
+  `Smoothie` `smoothed Q-learning` `policy gradient`
+>	"A new notion of action value defined by a Gaussian smoothed version of the expected Q-value."  
+>	"Smoothed Q-values still satisfy a Bellman equation, making them learnable via function approximation and bootstrapping."  
+>	"Gradients of expected reward with respect to the mean and covariance of a parameterized Gaussian policy can be recovered from the gradient and Hessian of the smoothed Q-value function."  
+>	"In the spirit of DDPG, trains a policy using the derivatives of a trained smoothed Q-value function to learn a Gaussian policy."  
+>	"Unlike DDPG, which is restricted to deterministic policies and is well-known to have poor exploratory behavior, Smoothie is able to utilize a non-deterministic Gaussian policy parameterized by both a mean and a covariance, thus allowing the policy to be exploratory by default and alleviating the need for excessive hyperparameter tuning."  
+>	"Unlike DDPG, Smoothie can be adapted to incorporate proximal policy optimization techniques by augmenting the objective with a penalty on KL-divergence from a previous version of the policy."  
+>	"Unlike standard policy gradient, Smoothie utilizes derivatives of a Q-value function to train a policy and thus avoids the high variance and sample inefficiency of stochastic updates."  
+>	"Q-value at a state s and action a answers the question, “What would my future value from s be if I were to take an initial action a?”. Such information about a hypothetical action is helpful when learning a policy; we want to nudge the policy distribution to favor actions with potentially higher Q-values. We investigate the practicality and benefits of answering a more difficult, but more relevant, question: “What would my future value from s be if I were to sample my initial action from a distribution centered at a?”"  
+  - `video` <https://facebook.com/icml.imls/videos/430993334081854> (1:28:55) (Nachum)
+
 #### ["Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor"](https://arxiv.org/abs/1801.01290) Haarnoja, Zhou, Abbeel, Levine
   `SAC` `soft Q-learning` `policy gradient` `maximum entropy policy` `on-policy + off-policy`
 >	"Soft Q-learning algorithm for learning multi-modal stochastic policies via entropy maximization, leading to better exploration in environments with multi-modal reward landscapes, combined with actor-critic framework into Soft Actor-Critic, an off-policy actor-critic method in which the actor aims to maximize both the expected reward and the entropy of a stochastic policy."  
 >	"SAC learns the soft Q-function of policy and the policy jointly. SAC is similar to DDPG but with a stochastic policy."  
 >	"DDPG uses a Q-function estimator to enable off-policy learning, and a deterministic actor that maximizes this Q-function. As such, this method can be viewed both as a deterministic actor-critic algorithm and an approximate Q-learning algorithm. Unfortunately, the interplay between the deterministic actor network and the Q-function typically makes DDPG extremely difficult to stabilize and brittle to hyperparameter settings. As a consequence, it is difficult to extend DDPG to very complex, high-dimensional tasks, and on-policy policy gradient methods still tend to produce the best results in such settings. Our method instead combines off-policy actor-critic training with a stochastic actor, and further aims to maximize the entropy of this actor with an entropy maximization objective. We find that this actually results in a substantially more stable and scalable algorithm that, in practice, exceeds both the efficiency and final performance of DDPG."  
 >	"Many actor-critic algorithms build on the standard, on-policy policy gradient formulation to update the actor, and many of them also consider the entropy of the policy, but instead of maximizing the entropy, they use it as an regularizer. This tends to improve stability, but results in very poor sample complexity. Maximum entropy reinforcement learning optimizes policies to maximize both the expected return and the expected entropy of the policy."  
-  - `video` <https://vimeo.com/252185258> (Haarnoja)
+  - `video` <https://vimeo.com/252185258>
+  - `video` <https://facebook.com/icml.imls/videos/430993334081854> (1:48:05) (Haarnoja)
   - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h51m28s> (Sigaud)
   - `video` <https://youtube.com/watch?v=NiTJOw1aST4> (Grinchuk) `in russian`
   - `notes` <https://github.com/Scitator/papers/blob/master/papers/1801_soft_ac.md>
@@ -1936,6 +1982,7 @@ interesting older papers:
 >	"Path Consistency Learning minimizes inconsistency measured along multi-step action sequences extracted from both on- and off-policy traces."  
 >	"We show how a single model can be used to represent both a policy and its softmax action values. Beyond eliminating the need for a separate critic, the unification demonstrates how policy gradients can be stabilized via self-bootstrapping from both on- and off-policy data. An experimental evaluation demonstrates that both algorithms can significantly outperform strong actor-critic and Q-learning baselines across several benchmark tasks."  
 >	"PCL optimizes the upper bound of the mean square consistency Bellman error."  
+>	"Entropy-regularized A2C can be viewed as n-step online soft Q-learning or path consistency learning."  
   - `video` <https://youtu.be/fZNyHoXgV7M?t=1h16m17s> (Norouzi)
   - `notes` <https://github.com/ethancaballero/paper-notes/blob/master/Bridging%20the%20Gap%20Between%20Value%20and%20Policy%20Based%20Reinforcement%20Learning.md>
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Bridging_the_Gap_Between_Value_and_Policy_Based_Reinforcement_Learning.md>
@@ -1943,10 +1990,10 @@ interesting older papers:
   - `code` <https://github.com/rarilurelo/pcl_keras>
   - `code` <https://github.com/pfnet/chainerrl/blob/master/chainerrl/agents/pcl.py>
 
-#### ["Combining policy gradient and Q-learning"](http://arxiv.org/abs/1611.01626) O'Donoghue, Munos, Kavukcuoglu, Mnih
-  `PGQ` `Q-learning` `policy gradient`
+#### ["Combining Policy Gradient and Q-learning"](http://arxiv.org/abs/1611.01626) O'Donoghue, Munos, Kavukcuoglu, Mnih
+  `PGQL` `Q-learning` `policy gradient`
+>	"A connection between the fixed points of the regularized policy gradient algorithm and the Q-values allows us to estimate the Q-values from the action preferences of the policy, to which we apply Q-learning updates."  
 >	"We establish an equivalency between action-value fitting techniques and actor-critic algorithms, showing that regularized policy gradient techniques can be interpreted as advantage function learning algorithms."  
->	"This connection allows us to estimate the Q-values from the action preferences of the policy, to which we apply Q-learning updates."  
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/ODonoghueMKM16>
   - `code` <https://github.com/Fritz449/Asynchronous-RL-agent>
   - `code` <https://github.com/abhishm/PGQ>
@@ -2026,7 +2073,8 @@ interesting older papers:
 
 #### ["Addressing Function Approximation Error in Actor-Critic Methods"](https://arxiv.org/abs/1802.09477) Fujimoto, Hoof, Meger
   `TD3` `policy gradient` `on-policy + off-policy`
->	"In value-based reinforcement learning methods such as deep Q-learning, function approximation errors are known to lead to overestimated value estimates and suboptimal policies. We show that this problem persists in an actor-critic setting and propose novel mechanisms to minimize its effects on both the actor and the critic. Our algorithm builds on Double Q-learning, by taking the minimum value between a pair of critics to limit overestimation. We draw the connection between target networks and overestimation bias, and suggest delaying policy updates to reduce per-update error and further improve performance."  
+>	"In Q-learning function approximation errors lead to overestimated value estimates and suboptimal policies. We show that this problem persists in an actor-critic setting and propose novel mechanisms to minimize its effects on both the actor and the critic. Our algorithm builds on Double Q-learning, by taking the minimum value between a pair of critics to limit overestimation. We draw the connection between target networks and overestimation bias, and suggest delaying policy updates to reduce per-update error and further improve performance."  
+  - `video` <https://facebook.com/icml.imls/videos/430993334081854> (1:58:27) (Fujimoto)
   - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h22m44s> (Sigaud)
 
 #### ["IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures"](https://arxiv.org/abs/1802.01561) Espeholt, Soyer, Munos, Simonyan, Mnih, Ward, Doron, Firoiu, Harley, Dunning, Legg, Kavukcuoglu
@@ -2037,6 +2085,7 @@ interesting older papers:
   - `post` <https://deepmind.com/blog/impala-scalable-distributed-deeprl-dmlab-30/>
   - `video` <https://youtube.com/playlist?list=PLqYmG7hTraZDRA9vW0zV8iIHlHnBSTBcC> (demo)
   - `video` <http://fields.utoronto.ca/video-archive/2018/01/2509-18003> (Mnih)
+  - `video` <https://facebook.com/icml.imls/videos/432150780632776> (24:18) (Espeholt)
   - `video` <https://facebook.com/iclr.cc/videos/2125495797479475> (21:05) (Kavukcuoglu)
   - `code` <https://github.com/deepmind/scalable_agent>
 
@@ -2063,10 +2112,6 @@ interesting older papers:
 >	"EPG also enables a practical contribution. Under certain conditions, we get an analytical expression for the covariance of the Gaussian that leads to a principled directed exploration strategy for continuous problems. We show that it is optimal in a certain sense to explore with a Gaussian policy such that the covariance is proportional to exp(H), where H is the scaled Hessian of the critic with respect to the actions. We present empirical results confirming that this new approach to exploration substantially outperforms DPG with Ornstein-Uhlenbeck exploration in four challenging MuJoCo domains."  
   - `video` <https://youtube.com/watch?v=x2NFiP6cuXI> (Ciosek)
 
-#### ["Interpolated Policy Gradient: Merging On-Policy and Off-Policy Gradient Estimation for Deep Reinforcement Learning"](https://arxiv.org/abs/1706.00387) Gu, Lillicrap, Ghahramani, Turner, Scholkopf, Levine
-  `IPG` `policy gradient` `on-policy + off-policy`
->	"REINFORCE, TRPO, Q-Prop, DDPG, SVG(0), PGQ, ACER are special limiting cases of IPG."  
-
 #### ["Q-Prop: Sample-Efficient Policy Gradient with An Off-Policy Critic"](http://arxiv.org/abs/1611.02247) Gu, Lillicrap, Ghahramani, Turner, Levine
   `Q-Prop` `policy gradient` `on-policy + off-policy`
 >	"Batch policy gradient methods offer stable learning, but at the cost of high variance, which often requires large batches. TD-style methods, such as off-policy actor-critic and Q-learning, are more sample-efficient but biased, and often require costly hyperparameter sweeps to stabilize. In this work, we aim to develop methods that combine the stability of policy gradients with the efficiency of off-policy RL."  
@@ -2086,6 +2131,7 @@ interesting older papers:
   - `video` <https://youtu.be/ggPGtMSoVN8?t=8m28s> (Petrenko) `in russian`
   - `notes` <http://www.alexirpan.com/rl-derivations/#q-prop>
   - `code` <https://github.com/shaneshixiang/rllabplusplus>
+  - `paper` ["The Mirage of Action-Dependent Baselines in Reinforcement Learning"](https://arxiv.org/abs/1802.10031) by Tucker et al. ([talk](https://facebook.com/icml.imls/videos/430993334081854) (1:08:07) by Tucker `video`)
 
 #### ["The Reactor: A Sample-Efficient Actor-Critic Architecture"](https://arxiv.org/abs/1704.04651) Gruslys, Azar, Bellemare, Munos
   `Reactor` `policy gradient` `on-policy + off-policy`
@@ -2132,6 +2178,7 @@ interesting older papers:
 >	"Calculating optimal plan is difficult due to the dynamics and reward functions being nonlinear, but many techniques exist for obtaining approximate solutions to finite-horizon control problems that are sufficient for succeeding at the desired task. We use a simple random-sampling shooting method in which K candidate action sequences are randomly generated, the corresponding state sequences are predicted using the learned dynamics model, the rewards for all sequences are calculated, and the candidate action sequence with the highest expected cumulative reward is chosen. Rather than have the policy execute this action sequence in open-loop, we use model predictive control: the policy executes only the first action, receives updated state information, and recalculates the optimal action sequence at the next time step. This combination of predictive dynamics model plus controller is beneficial in that the model is trained only once, but by simply changing the reward function, we can accomplish a variety of goals at run-time, without a need for live task-specific retraining."  
   - <https://sites.google.com/view/mbmf> (demo)
   - `post` <http://bair.berkeley.edu/blog/2017/11/30/model-based-rl/>
+  - `video` <https://youtube.com/watch?v=G7lXiuEC8x0>
   - `video` <https://vimeo.com/252186751> (Nagabandi)
   - `code` <https://github.com/nagaban2/nn_dynamics>
 
@@ -2429,6 +2476,8 @@ interesting older papers:
 [**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---exploration-and-intrinsic-motivation)  
 [**interesting older papers - artificial curiosity and creativity**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#interesting-papers---artificial-curiosity-and-creativity)  
 
+[papers](https://sites.google.com/view/erl-2018/accepted-papers) from ICML 2018 workshop
+
 ----
 #### ["The Uncertainty Bellman Equation and Exploration"](https://arxiv.org/abs/1709.05380) O'Donoghue, Osband, Munos, Mnih
   `exploration guided by uncertainty in value function`
@@ -2446,9 +2495,6 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=L5Q4Y3omnrY> (Agarwal)
   - `video` <https://vimeo.com/235929810> (Schapire)
 
-#### ["Why is Posterior Sampling Better than Optimism for Reinforcement Learning?"](http://arxiv.org/abs/1607.00215) Osband, van Roy
-  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#why-is-posterior-sampling-better-than-optimism-for-reinforcement-learning-osband-van-roy>
-
 ----
 #### ["Evolved Policy Gradients"](https://arxiv.org/abs/1802.04821) Houthooft, Chen, Isola, Stadie, Wolski, Ho, Abbeel
   `learning intrinsic motivation` `meta-learning`
@@ -2460,6 +2506,10 @@ interesting older papers:
   - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#some-considerations-on-learning-to-explore-via-meta-reinforcement-learning-stadie-yang-houthooft-chen-duan-wu-abbeel-sutskever>
 
 ----
+#### ["A Contextual Bandit Bake-off"](https://arxiv.org/abs/1802.04064) Bietti, Agarwal, Langford
+  `approximate bayesian exploration`
+>	"We leverage the availability of large numbers of supervised learning datasets to compare and empirically optimize contextual bandit algorithms, focusing on practical methods that learn by relying on optimization oracles from supervised learning."  
+
 #### ["Deep Bayesian Bandits Showdown: An Empirical Comparison of Bayesian Deep Networks for Thompson Sampling"](https://arxiv.org/abs/1802.09127) Riquelme, Tucker, Snoek
   `approximate bayesian exploration` `posterior sampling`
 >	"empirical comparison of bayesian deep networks for Thompson sampling"  
@@ -2487,6 +2537,10 @@ interesting older papers:
   - `video` <https://vimeo.com/252185862> (Dhariwal)
   - `post` <https://blog.openai.com/better-exploration-with-parameter-noise/>
 
+#### ["Randomized Prior Functions for Deep Reinforcement Learning"](https://arxiv.org/abs/1806.03335) Osband, Aslanides, Cassirer
+  `approximate bayesian exploration` `approximate posterior sampling`
+>	"A simple modification where each member of the ensemble is initialized together with a random but fixed prior function. Predictions are then taken as the sum of the trainable neural network and the prior function. We show that this approach passes a sanity check by demonstrating an equivalence to Bayesian inference with linear models. We also present a series of simple experiments designed to extend this intuition to deep learning. We show that many of the most popular approaches for uncertainty estimation in deep RL do not pass these sanity checks, and crystallize these shortcomings in a series of lemmas and small examples. We demonstrate that our simple modification can facilitate aspiration in difficult tasks where previous approaches for deep RL fail. We believe that this work presents a simple and practical approach to encoding prior knowledge with deep reinforcement learning."  
+
 #### ["Deep Exploration via Randomized Value Functions"](https://arxiv.org/abs/1703.07608) Osband, Russo, Wen, van Roy
   `approximate bayesian exploration` `approximate posterior sampling`
 >	"A very recent thread of work builds on count-based (or upper-confidence-bound-based) exploration schemes that operate with value function learning. These methods maintain a density over the state-action space of pseudo-counts, which represent the quantity of data gathered that is relevant to each state-action pair. Such algorithms may offer a viable approach to deep exploration with generalization. There are, however, some potential drawbacks. One is that a separate representation is required to generalize counts, and it's not clear how to design an effective approach to this. As opposed to the optimal value function, which is fixed by the environment, counts are generated by the agent’s choices, so there is no single target function to learn. Second, the count model generates reward bonuses that distort data used to fit the value function, so the value function representation needs to be designed to not only capture properties of the true optimal value function but also such distorted versions. Finally, these approaches treat uncertainties as uncoupled across state-action pairs, and this can incur a substantial negative impact on statistical efficiency."  
@@ -2494,6 +2548,10 @@ interesting older papers:
   - `video` <http://techtalks.tv/talks/generalization-and-exploration-via-randomized-value-functions/62467/> (Osband)
   - `video` <https://youtu.be/ck4GixLs4ZQ?t=33m7s> (Osband)
   - `video` <https://vimeo.com/252186381> (van Roy)
+
+#### ["Why is Posterior Sampling Better than Optimism for Reinforcement Learning?"](http://arxiv.org/abs/1607.00215) Osband, van Roy
+  `approximate bayesian exploration`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#why-is-posterior-sampling-better-than-optimism-for-reinforcement-learning-osband-van-roy>
 
 #### ["BBQ-Networks: Efficient Exploration in Deep Reinforcement Learning for Task-Oriented Dialogue Systems"](https://arxiv.org/abs/1608.05081) Lipton, Li, Gao, Li, Ahmed, Deng
   `approximate bayesian exploration` `approximate posterior sampling`
@@ -2512,7 +2570,7 @@ interesting older papers:
 
 ----
 #### ["Count-Based Exploration with Neural Density Models"](http://arxiv.org/abs/1703.01310) Ostrovski, Bellemare, Oord, Munos
-  `exploration guided by observation novelty`
+  `exploration guided by observation novelty` `Reactor-PixelCNN`
 >	"PixelCNN for exploration, neural alternative to Context Tree Switching"  
   - `video` <http://youtube.com/watch?v=qSfd27AgcEk> (Bellemare)
   - `video` <https://vimeo.com/238243932> (Bellemare)
@@ -2526,7 +2584,7 @@ interesting older papers:
   - `code` <https://github.com/justinjfu/exemplar_models>
 
 #### ["#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning"](http://arxiv.org/abs/1611.04717) Tang, Houthooft, Foote, Stooke, Chen, Duan, Schulman, Turck, Abbeel
-  `exploration guided by observation novelty`
+  `exploration guided by observation novelty` `SimHash`
 >	"The authors encourage exploration by adding a pseudo-reward of the form beta/sqrt(count(state)) for infrequently visited states. State visits are counted using Locality Sensitive Hashing (LSH) based on an environment-specific feature representation like raw pixels or autoencoder representations. The authors show that this simple technique achieves gains in various classic RL control tasks and several games in the ATARI domain. While the algorithm itself is simple there are now several more hyperaprameters to tune: The bonus coefficient beta, the LSH hashing granularity (how many bits to use for hashing) as well as the type of feature representation based on which the hash is computed, which itself may have more parameters. The experiments don't paint a consistent picture and different environments seem to need vastly different hyperparameter settings, which in my opinion will make this technique difficult to use in practice."  
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1611.04717>
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/%23Exploration:_A_Study_of_Count-Based_Exploration_for_Deep_Reinforcement_Learning.md>
@@ -2624,7 +2682,7 @@ hieves."
 
 ----
 #### ["Overcoming Exploration in Reinforcement Learning with Demonstrations"](https://arxiv.org/abs/1709.10089) Nair, McGrew, Andrychowicz, Zaremba, Abbeel
-  `exploration guided by learning progress and demonstrations`
+  `exploration guided by learning progress and demonstrations` `Q-filter`
 >	"We use demonstrations to overcome the exploration problem and successfully learn to perform long-horizon, multi-step robotics tasks with continuous control such as stacking blocks with a robot arm."  
 >	"Our method, which builds on top of Deep Deterministic Policy Gradients and Hindsight Experience Replay, provides an order of magnitude of speedup over RL on simulated robotics tasks."  
 >	"Our method is able to solve tasks not solvable by either RL or behavior cloning alone, and often ends up outperforming the demonstrator policy."  
@@ -2671,11 +2729,13 @@ hieves."
 
 #### ["Automatic Goal Generation for Reinforcement Learning Agents"](https://arxiv.org/abs/1705.06366) Graves, Bellemare, Menick, Munos, Kavukcuoglu
   `exploration guided by learning progress`
+  - <https://sites.google.com/view/goalgeneration4rl>
   - `notes` <https://blog.tomrochette.com/machine-learning/papers/alex-graves-automated-curriculum-learning-for-neural-networks>
 
 #### ["Intrinsic Motivation and Automatic Curricula via Asymmetric Self-Play"](http://arxiv.org/abs/1703.05407) Sukhbaatar, Lin, Kostrikov, Synnaeve, Szlam, Fergus
   `exploration guided by learning progress`
 >	"self-play between the policy and a task-setter in order to automatically generate goal states which are on the border of what the current policy can achieve"  
+>	"A separate policy to find new slightly harder goals. A goal-generating policy may only generate goals in a small region of the goal-space, having difficulties to quickly cover the full set of goals. Inevitable differences in improvement rate of the goal-generating and the goal-learning agents leads to instabilities and local optima."  
   - `video` <https://youtube.com/watch?v=EHHiFwStqaA> (demo)
   - `video` <https://youtube.com/watch?v=X1O21ziUqUY> (Fergus)
   - `video` <https://youtube.com/watch?v=5dNAnCYBFN4> (Szlam)
@@ -2699,9 +2759,22 @@ hieves."
 [**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---hierarchical-reinforcement-learning)
 
 ----
+#### ["Self-Consistent Trajectory Autoencoder: Hierarchical Reinforcement Learning with Trajectory Embeddings"](https://arxiv.org/abs/1806.02813) Co-Reyes, Liu, Gupta, Eysenbach, Abbeel, Levine
+  `SeCTAR`
+>	"The problem of learning lower layers in a hierarchy is transformed into the problem of learning trajectory-level generative models."  
+>	"Continuous latent representations of trajectories are effective in solving temporally extended and multi-stage problems."  
+>	"State decoder learns to model a continuous space of behaviors. Policy decoder learns to realize behaviors in the environment."  
+>	"Given the same latent, policy decoder generates a trajectory which should match the trajectory predicted by state decoder."  
+>	"SeCTAR combines model-based planning via model predictive control in latent space with unsupervised exploration objective."  
+  - <https://sites.google.com/view/sectar> (demo)
+  - `video` <https://facebook.com/icml.imls/videos/429761510871703> (1:42:02) (Liu)
+  - `code` <https://github.com/wyndwarrior/Sectar>
+
 #### ["Latent Space Policies for Hierarchical Reinforcement Learning"](https://arxiv.org/abs/1804.02808) Haarnoja, Hartikainen, Abbeel, Levine
 >	"Higher levels in the hierarchy can directly make use of the latent space of the lower levels as their action space, which allows to train the entire hierarchy in a layerwise fashion. This approach to hierarchical reinforcement learning has a number of conceptual and practical benefits. First, each layer in the hierarchy can be trained with exactly the same algorithm. Second, by using an invertible mapping from latent variables to actions, each layer becomes invertible, which means that the higher layer can always perfectly invert any behavior of the lower layer. This makes it possible to train lower layers on heuristic shaping rewards, while higher layers can still optimize task-specific rewards with good asymptotic performance. Finally, our method has a natural interpretation as an iterative procedure for constructing graphical models that gradually simplify the task dynamics."  
   - `video` <https://sites.google.com/view/latent-space-deep-rl> (demo)
+  - `video` <https://facebook.com/icml.imls/videos/429761510871703> (1:22:50) (Haarnoja)
+  - `code` <https://github.com/haarnoja/sac/blob/master/sac/policies/latent_space_policy.py>
 
 #### ["Learning to Compose Skills"](https://arxiv.org/abs/1711.11289) Sahni, Kumar, Tejani, Isbell
   `ComposeNet`
@@ -2784,8 +2857,13 @@ hieves."
 >	"We suggest a mathematical characterization of good sets of options using tools from information theory. This characterization enables us to find conditions for a set of options to be optimal and an algorithm that outputs a useful set of options and illustrate the proposed algorithm in simulation."  
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Principled_Option_Learning_in_Markov_Decision_Processes.md>
 
+#### ["An Inference-Based Policy Gradient Method for Learning Options"](http://proceedings.mlr.press/v80/smith18a.html) Smith, Hoof, Pineau
+>	"A novel policy gradient method for the automatic learning of policies with options. It uses inference methods to simultaneously improve all of the options available to an agent, and thus can be employed in an off-policy manner, without observing option labels. The differentiable inference procedure employed yields options that can be easily interpreted."  
+  - `video` <https://facebook.com/icml.imls/videos/429761510871703> (1:52:54) (Smith)
+
 #### ["The Option-Critic Architecture"](http://arxiv.org/abs/1609.05140) Bacon, Harb, Precup
->	"The Option-Critic introduces a new gradient update for learning options. It consists of two components: 1) each option should use primitive actions that are better, 2) find good termination conditions (lengthen when the option is good, terminate when it’s bad). A third term also encourages the meta-policy to take better options."  
+>	"The Option-Critic provides a policy gradient for learning options in an end-to-end manner and leverages an augmented state space in order to do so."  
+>	"The Option-Critic consists of two components: 1) each option should use primitive actions that are better, 2) find good termination conditions (lengthen when the option is good, terminate when it’s bad). A third term also encourages the meta-policy to take better options."  
   - `video` <https://youtube.com/watch?v=8r_EoYnPjGk> (Bacon)
   - `video` <https://vimeo.com/249559422> (Precup)
   - `video` <https://youtu.be/ARfpQzRCWT4?t=39m> (Nikishin)
@@ -2879,9 +2957,21 @@ hieves."
   - `code` <https://github.com/eparisotto/ActorMimic>
 
 ----
+#### ["Transfer in Deep Reinforcement Learning Using Successor Features and Generalised Policy Improvement"](http://proceedings.mlr.press/v80/barreto18a) Barreto et al.
+  `successor features`
+>	"Extension to SF&GPI (Successor Features + Generalized Policy Improvement) framework in two ways."  
+>	"First, its applicability is broader than initially shown. SF&GPI was designed for the scenario where each task corresponds to a different reward function; one of the basic assumptions in the original formulation was that the rewards of all tasks can be computed as a linear combination of a fixed set of features. Such an assumption is not strictly necessary, and in fact it is possible to have guarantees on the performance of the transferred policy even on tasks that are not in the span of the features. The realisation above adds some flexibility to the problem of computing features that are useful for transfer."  
+>	"Second, by looking at the associated approximation from a slightly different angle, we show that one can replace the features with actual rewards. This makes it possible to apply SF&GPI online at scale."  
+>	"We show that the transfer promoted by SF&GPI leads to good policies on unseen tasks almost instantaneously. Furthermore, we show how to learn policies that are specialised to the new tasks in a way that allows them to be added to the agent’s ever-growing set of skills, a crucial ability for continual learning."  
+  - `video` <https://youtu.be/-dTnqfwTRMI> (demo)
+
+#### ["Successor Features for Transfer in Reinforcement Learning"](http://arxiv.org/abs/1606.05312) Barreto, Munos, Schaul, Silver
+  `successor features`
+>	"Our approach rests on two key ideas: "successor features", a value function representation that decouples the dynamics of the environment from the rewards, and "generalised policy improvement", a generalisation of dynamic programming’s policy improvement step that considers a set of policies rather than a single one. Put together, the two ideas lead to an approach that integrates seamlessly within the reinforcement learning framework and allows transfer to take place between tasks without any restriction."  
+  - `video` <https://facebook.com/nipsfoundation/videos/1554741347950432/> (1:24:34) (Barreto)
+
 #### ["Learning to Act by Predicting the Future"](https://arxiv.org/abs/1611.01779) Dosovitskiy, Koltun
   `successor features`
->	"application of deep successor reinforcement learning"  
   - `video` <https://youtube.com/watch?v=947bSUtuSQ0> + <https://youtube.com/watch?v=947bSUtuSQ0> (demo)
   - `video` <https://facebook.com/iclr.cc/videos/1712224178806641/> (54:12) (Dosovitskiy)
   - `video` <https://youtube.com/watch?v=buUF5F8UCH8> (Lamb, Ozair)
@@ -2894,11 +2984,6 @@ hieves."
   - `code` <https://github.com/IntelVCL/DirectFuturePrediction>
   - `code` <https://github.com/NervanaSystems/coach/blob/master/agents/dfp_agent.py>
   - `code` <https://github.com/flyyufelix/Direct-Future-Prediction-Keras>
-
-#### ["Successor Features for Transfer in Reinforcement Learning"](http://arxiv.org/abs/1606.05312) Barreto, Munos, Schaul, Silver
-  `successor features`
->	"Our approach rests on two key ideas: "successor features", a value function representation that decouples the dynamics of the environment from the rewards, and "generalised policy improvement", a generalisation of dynamic programming’s policy improvement step that considers a set of policies rather than a single one. Put together, the two ideas lead to an approach that integrates seamlessly within the reinforcement learning framework and allows transfer to take place between tasks without any restriction."  
-  - `video` <https://facebook.com/nipsfoundation/videos/1554741347950432/> (1:24:34) (Barreto)
 
 #### ["Deep Successor Reinforcement Learning"](https://arxiv.org/abs/1606.02396) Kulkarni, Saeedi, Gautam, Gershman
   `successor features`

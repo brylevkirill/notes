@@ -155,9 +155,10 @@
 
 ----
 
-  ["Theories of Deep Learning"](https://stats385.github.io) course from Stanford ([videos](https://researchgate.net/project/Theories-of-Deep-Learning))
+  ["Toward Theoretical Understanding of Deep Learning"](https://facebook.com/icml.imls/videos/428562880991566) by Sanjeev Arora `video`  
+  ["Interplay between Optimization and Generalization in Deep Neural Networks"](https://youtube.com/watch?v=cHjI37DsQCQ) by Keerthi Selvaraj `video`  
 
-  ["Interplay between Optimization and Generalization in Deep Neural Networks"](https://youtube.com/watch?v=cHjI37DsQCQ) by Keerthi Selvaraj `video`
+  ["Theories of Deep Learning"](https://stats385.github.io) course from Stanford ([videos](https://researchgate.net/project/Theories-of-Deep-Learning))
 
 ----
 
@@ -622,8 +623,7 @@
   ["Variational auto-encoders do not train complex generative models"](http://dustintran.com/blog/variational-auto-encoders-do-not-train-complex-generative-models/) by Dustin Tran  
   ["VAE = EM"](https://machinethoughts.wordpress.com/2017/10/02/vae-em/) by David McAllester  
 
-  [**variational inference**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#variational-inference)  
-  [**reparametrization trick**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#pathwise-derivative-estimator-for-gradient-of-elbo)  
+  [**variational inference**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#variational-inference)
 
 ----
 
@@ -1632,9 +1632,10 @@ Yoshua Bengio:
   - `video` <https://cds.cern.ch/record/2302480> (38:20) (Rezende)
   - `video` <https://youtu.be/tqGEX_Ucu04?t=33m58s> (Molchanov) `in russian`
   - `post` <https://casmls.github.io/general/2016/09/25/normalizing-flows.html>
-  - `post` <https://ferrine.github.io/blog/2017/07/11/normalizing-flows-overview/>
   - `post` <http://docs.pymc.io/notebooks/normalizing_flows_overview.html>
   - `post` <http://blog.evjang.com/2018/01/nf1.html>
+  - `post` <http://akosiorek.github.io/ml/2018/04/03/norm_flows.html>
+  - `post` <https://ferrine.github.io/blog/2017/07/11/normalizing-flows-overview>
   - `code` <https://github.com/pymc-devs/pymc3/blob/master/pymc3/variational/flows.py>
 
 
@@ -2870,6 +2871,7 @@ x."
 >	- Use local activation derivatives"  
 
   - `video` <http://youtu.be/-kHLKLLxIF4?t=32m37s> (Lillicrap)
+  - `video` <http://youtube.com/watch?v=XzSRtu413CY> (Lillicrap)
 
 
 

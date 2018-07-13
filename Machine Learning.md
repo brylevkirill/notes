@@ -138,8 +138,11 @@
 
 #### conferences
 
+  - ICML 2018
+	<https://facebook.com/icml.imls> `video`
+
   - ICLR 2018  
-	<http://search.iclr2018.smerity.com/>  
+	<http://search.iclr2018.smerity.com>  
 	<http://iclr2018.mmanukyan.io>  
 	<http://chillee.github.io/OpenReviewExplorer>  
 

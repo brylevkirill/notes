@@ -150,7 +150,7 @@
   - *Poker*  
 
 	[Libratus "Science" magazine](http://science.sciencemag.org/content/early/2017/12/15/science.aao1733.full) `paper`  
-	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://arxiv.org/abs/1705.02955) by Noam Brown and Tuomas Sandholm `paper` ([talk](https://vimeo.com/248533943#t=53s) `video`)  
+	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://arxiv.org/abs/1705.02955) by Noam Brown and Tuomas Sandholm `paper` ([talk](https://vimeo.com/248533943#t=53s) `video`, [post](https://thegradient.pub/libratus-poker))  
 	["Depth-Limited Solving for Imperfect-Information Games"](https://arxiv.org/abs/1805.08195) by Brown, Sandholm, Amos `paper`  
 
 	[Libratus overview](https://youtube.com/watch?v=xrWulRY_t1o) by Tuomas Sandholm `video`  
@@ -394,6 +394,13 @@
 
   [**deep learning**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)
 
+----
+
+  ["Expressivity, Trainability, and Generalization in Machine Learning"](http://blog.evjang.com/2017/11/exp-train-gen.html) by Eric Jang  
+  ["On “Solving” Montezuma’s Revenge"](https://medium.com/@awjuliani/on-solving-montezumas-revenge-2146d83f0bc3) by Arthur Juliani  
+  ["Deep Reinforcement Learning Doesn't Work Yet"](https://www.alexirpan.com/2018/02/14/rl-hard.html) by Alex Irpan  
+  ["Reinforcement Learning Never Worked, and 'Deep' Only Helped a Bit"](https://himanshusahni.github.io/2018/02/23/reinforcement-learning-never-worked.html) by Himanshu Sahni  
+
 
 
 ---
@@ -459,9 +466,7 @@
 
 ----
 
-  ["Expressivity, Trainability, and Generalization in Machine Learning"](http://blog.evjang.com/2017/11/exp-train-gen.html) by Eric Jang  
-  ["Deep Reinforcement Learning Doesn't Work Yet"](https://www.alexirpan.com/2018/02/14/rl-hard.html) by Alex Irpan  
-  ["Reinforcement Learning Never Worked, and 'Deep' Only Helped a Bit"](https://himanshusahni.github.io/2018/02/23/reinforcement-learning-never-worked.html) by Himanshu Sahni  
+  ["Expressivity, Trainability, and Generalization in Machine Learning"](http://blog.evjang.com/2017/11/exp-train-gen.html) by Eric Jang
 
 
 ----
@@ -515,6 +520,8 @@
 #### imitation learning / behavioral cloning
 
   - learn agent's behavior in environment with unknown cost function via imitation of another agent's behavior
+
+  [tutorial](https://facebook.com/icml.imls/videos/428362527678268) by Yisong Yue and Hoang Le `video`
 
   ["Supervised Learning of Behaviors: Deep Learning, Dynamical Systems, and Behavior Cloning"](https://youtube.com/watch?v=kl_G95uKTHw) by Sergey Levine `video`  
   ["Learning Policies by Imitating Optimal Control"](https://youtube.com/watch?v=o0Ebur3aNMo) by Sergey Levine `video`  
@@ -643,16 +650,17 @@
 
 
   ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](#efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search-guez-silver-dayan) by Guez et al. `paper` `summary`  
-  ["Learning to Optimize Via Posterior Sampling"](#learning-to-optimize-via-posterior-sampling-russo-van-roy) by Russo and van Roy `paper` `summary`  
+  ["Learning to Optimize via Posterior Sampling"](#learning-to-optimize-via-posterior-sampling-russo-van-roy) by Russo and van Roy `paper` `summary`  
   ["Why is Posterior Sampling Better than Optimism for Reinforcement Learning?"](#why-is-posterior-sampling-better-than-optimism-for-reinforcement-learning-osband-van-roy) by Osband and van Roy `paper` `summary`  
-  ["A Tutorial on Thompson Sampling"](https://arxiv.org/abs/1707.02038) by Russo et al. `paper`  
-  ["Nonparametric General Reinforcement Learning"](#nonparametric-general-reinforcement-learning-leike) by Leike `paper` `summary`  *(estimating reward by sampling environment model from posterior distribution and running episode using it)*  
-  ["Weight Uncertainty in Neural Networks"](#weight-uncertainty-in-neural-networks-blundell-cornebise-kavukcuoglu-wierstra) by Blundell et al. `paper` `summary`  *(training bayesian neural network to predict reward, sampling particular network weights from posterior and choosing action with highest predicted reward)*  
-  ["BBQ-Networks: Efficient Exploration in Deep Reinforcement Learning for Task-Oriented Dialogue Systems"](https://arxiv.org/abs/1608.05081) by Lipton et al. `paper`  
-  ["Deep Exploration via Bootstrapped DQN"](#deep-exploration-via-bootstrapped-dqn-osband-blundell-pritzel-van-roy) by Osband et al. `paper` `summary`  *(training multiple value function networks with shared bottom layers using bootstrapping, sampling value function network and running episode using it)*  
+  ["A Tutorial on Thompson Sampling"](#a-tutorial-on-thompson-sampling-russo-van-roy-kazerouni-osband-wen) by Russo et al. `paper` `summary`  
+  ["Deep Exploration via Bootstrapped DQN"](#deep-exploration-via-bootstrapped-dqn-osband-blundell-pritzel-van-roy) by Osband et al. `paper` `summary`  
   ["Deep Exploration via Randomized Value Functions"](#deep-exploration-via-randomized-value-functions-osband-russo-wen-van-roy) by Osband et al. `paper` `summary`  
-  ["Efficient Exploration through Bayesian Deep Q-Networks"](https://arxiv.org/abs/1802.04412) by Azizzadenesheli et al. `paper`  
+  ["Randomized Prior Functions for Deep Reinforcement Learning"](https://arxiv.org/abs/1806.03335) by Osband et al. `paper`  
+  ["Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#dropout-as-a-bayesian-approximation-representing-model-uncertainty-in-deep-learning-gal-ghahramani) by Gal et al. `paper` `summary`  
+  ["Weight Uncertainty in Neural Networks"](#weight-uncertainty-in-neural-networks-blundell-cornebise-kavukcuoglu-wierstra) by Blundell et al. `paper` `summary`  
+  ["BBQ-Networks: Efficient Exploration in Deep Reinforcement Learning for Task-Oriented Dialogue Systems"](https://arxiv.org/abs/1608.05081) by Lipton et al. `paper`  
   ["Noisy Networks for Exploration"](#noisy-networks-for-exploration-fortunato-et-al) by Fortunato et al. `paper` `summary`  
+  ["Efficient Exploration through Bayesian Deep Q-Networks"](https://arxiv.org/abs/1802.04412) by Azizzadenesheli et al. `paper`  
   ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](#rl2-fast-reinforcement-learning-via-slow-reinforcement-learning-duan-schulman-chen-bartlett-sutskever-abbeel) by Duan et al. `paper` `summary`  
   ["Learning to Reinforcement Learn"](#learning-to-reinforcement-learn-wang-et-al) by Wang et al. `paper` `summary`  
 
@@ -668,9 +676,9 @@
   - *uncertainty motivation*  
 	reward for every event inversely proportional to its probability of observation  
 
-	["Action-Conditional Video Prediction using Deep Networks in Atari Games"](#action-conditional-video-prediction-using-deep-networks-in-atari-games-oh-guo-lee-lewis-singh) by Oh et al. `paper` `summary`  *(approximate visitation counting in a learned state embedding using Gaussian kernels)*  
+	["Action-Conditional Video Prediction using Deep Networks in Atari Games"](#action-conditional-video-prediction-using-deep-networks-in-atari-games-oh-guo-lee-lewis-singh) by Oh et al. `paper` `summary`  
 	["Recurrent Environment Simulators"](https://arxiv.org/abs/1704.02254) by Chiappa et al. `paper`  
-	["Unifying Count-Based Exploration and Intrinsic Motivation"](#unifying-count-based-exploration-and-intrinsic-motivation-bellemare-srinivasan-ostrovski-schaul-saxton-munos) by Bellemare et al. `paper` `summary`  *(relationship between the pseudo-count, a variant of Schmidhuber’s compression progress or prediction gain, and Bayesian information gain)*  
+	["Unifying Count-Based Exploration and Intrinsic Motivation"](#unifying-count-based-exploration-and-intrinsic-motivation-bellemare-srinivasan-ostrovski-schaul-saxton-munos) by Bellemare et al. `paper` `summary`  
 	["Count-Based Exploration with Neural Density Models"](#count-based-exploration-with-neural-density-models-ostrovski-bellemare-van-den-oord-munos) by Ostrovski et al. `paper` `summary`  
 	["\#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning"](#exploration-a-study-of-count-based-exploration-for-deep-reinforcement-learning-tang-et-al) by Tang et al. `paper` `summary`  
 	["EX2: Exploration with Exemplar Models for Deep Reinforcement Learning"](#ex2-exploration-with-exemplar-models-for-deep-reinforcement-learning-fu-co-reyes-levine) by Fu et al. `paper` `summary`  
@@ -696,7 +704,7 @@
 
 	["Empowerment - An Introduction"](#an-introduction-salge-glackin-polani---empowerment) by Salge et al. `paper` `summary`  
 	["Variational Information Maximisation for Intrinsically Motivated Reinforcement Learning"](#variational-information-maximisation-for-intrinsically-motivated-reinforcement-learning-mohamed-rezende) by Mohamed and Rezende `paper` `summary`  
-	["Variational Intrinsic Control"](#variational-intrinsic-control-gregor-rezende-wierstra) by Gregor et al. `paper` `summary`  *(the primary goal is not to understand or predict the observations but to control the environment - agents can often control an environment perfectly well without much understanding, and focusing on understanding might significantly distract and impair the agent, as such reducing the control it achieves)*  
+	["Variational Intrinsic Control"](#variational-intrinsic-control-gregor-rezende-wierstra) by Gregor et al. `paper` `summary`  
 
 	[**interesting-papers**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---empowerment)
 
@@ -712,7 +720,7 @@
 
 	["Incentivizing Exploration In Reinforcement Learning With Deep Predictive Models"](#incentivizing-exploration-in-reinforcement-learning-with-deep-predictive-models-stadie-levine-abbeel) by Stadie et al. `paper` `summary`  
 	["Curiosity-driven Exploration by Self-supervised Prediction"](#curiosity-driven-exploration-by-self-supervised-prediction-pathak-agrawal-efros-darrell) by Pathak et al. `paper` `summary`  
-	["Reinforcement Learning with Unsupervised Auxiliary Tasks"](#reinforcement-learning-with-unsupervised-auxiliary-tasks-jaderberg-mnih-czarnecki-schaul-leibo-silver-kavukcuoglu) by Jaderberg et al. `paper` `summary`  *(using auxiliary tasks of pixel control, reward prediction and value function replay the agent is forced to learn about the controllability of its environment and the sorts of sequences which lead to rewards)*  
+	["Reinforcement Learning with Unsupervised Auxiliary Tasks"](#reinforcement-learning-with-unsupervised-auxiliary-tasks-jaderberg-mnih-czarnecki-schaul-leibo-silver-kavukcuoglu) by Jaderberg et al. `paper` `summary`  
 	["Loss is Its Own Reward: Self-Supervision for Reinforcement Learning"](https://arxiv.org/abs/1612.07307) by Shelhamer et al. `paper`  
 	["Feature Control as Intrinsic Motivation for Hierarchical Reinforcement Learning"](https://arxiv.org/abs/1705.06769) by Dilokthanakul et al. `paper`  
 	["Improving Policy Gradient by Exploring Under-appreciated Rewards"](#improving-policy-gradient-by-exploring-under-appreciated-rewards-nachum-norouzi-schuurmans) by Nachum et al. `paper` `summary`  
@@ -1861,7 +1869,7 @@ interesting recent papers:
   - `video` <https://youtu.be/sGuiWX07sKw?t=1h35m58s> (Silver)
 
 
-#### ["Learning to Optimize Via Posterior Sampling"](https://arxiv.org/abs/1301.2609) Russo, van Roy
+#### ["Learning to Optimize via Posterior Sampling"](https://arxiv.org/abs/1301.2609) Russo, van Roy
 >	"This paper considers the use of a simple posterior sampling algorithm to balance between exploration and exploitation when learning to optimize actions such as in multi-armed bandit problems. The algorithm, also known as Thompson Sampling and as probability matching, offers significant advantages over the popular upper confidence bound (UCB) approach, and can be applied to problems with finite or infinite action spaces and complicated relationships among action rewards. We make two theoretical contributions. The first establishes a connection between posterior sampling and UCB algorithms. This result lets us convert regret bounds developed for UCB algorithms into Bayesian regret bounds for posterior sampling. Our second theoretical contribution is a Bayesian regret bound for posterior sampling that applies broadly and can be specialized to many model classes. This bound depends on a new notion we refer to as the eluder dimension, which measures the degree of dependence among action rewards. Compared to UCB algorithm Bayesian regret bounds for specific model classes, our general bound matches the best available for linear models and is stronger than the best available for generalized linear models. Further, our analysis provides insight into performance advantages of posterior sampling, which are highlighted through simulation results that demonstrate performance surpassing recently proposed UCB algorithms."
 
 >	"The Thompson Sampling algorithm randomly selects an action according to the probability it is optimal. Although posterior sampling was first proposed almost eighty years ago, it has until recently received little attention in the literature on multi-armed bandits. While its asymptotic convergence has been established in some generality, not much else is known about its theoretical properties in the case of dependent arms, or even in the case of independent arms with general prior distributions. Our work provides some of the first theoretical guarantees."
@@ -2063,6 +2071,7 @@ interesting recent papers:
 
 
 #### ["Unifying Count-Based Exploration and Intrinsic Motivation"](http://arxiv.org/abs/1606.01868) Bellemare, Srinivasan, Ostrovski, Schaul, Saxton, Munos
+  `A3C-CTS`
 >	"We consider an agent's uncertainty about its environment and the problem of generalizing this uncertainty across observations. Specifically, we focus on the problem of exploration in non-tabular reinforcement learning. Drawing inspiration from the intrinsic motivation literature, we use density models to measure uncertainty, and propose a novel algorithm for deriving a pseudo-count from an arbitrary density model. This technique enables us to generalize count-based exploration algorithms to the non-tabular case. We apply our ideas to Atari 2600 games, providing sensible pseudo-counts from raw pixels. We transform these pseudo-counts into intrinsic rewards and obtain significantly improved exploration in a number of hard games, including the infamously difficult Montezuma's Revenge."
 
 >	"Many of hard RL problems share one thing in common: rewards are few and far between. In reinforcement learning, exploration is the process by which an agent comes to understand its environment and discover where the reward is. Most practical RL applications still rely on crude algorithms, like epsilon-greedy (once in awhile, choose a random action), because more theoretically-motivated approaches don't scale. But epsilon-greedy is quite data inefficient, and often can't even get off the ground. In this paper we show that it's possible to use simple density models (assigning probabilities to states) to "count" the number of times we've visited a particular state. We call the output of our algorithm a pseudo-count. Pseudo-counts give us a handle on uncertainty: how confident are we that we've explored this part of the game?"
@@ -2088,12 +2097,14 @@ interesting recent papers:
 
 
 #### ["Count-Based Exploration with Neural Density Models"](http://arxiv.org/abs/1703.01310) Ostrovski, Bellemare, van den Oord, Munos
+  `Reactor-PixelCNN`
 >	"Bellemare et al. (2016) introduced the notion of a pseudo-count to generalize count-based exploration to non-tabular reinforcement learning. This pseudo-count is derived from a density model which effectively replaces the count table used in the tabular setting. Using an exploration bonus based on this pseudo-count and a mixed Monte Carlo update applied to a DQN agent was sufficient to achieve state-of-the-art on the Atari 2600 game Montezuma's Revenge. In this paper we consider two questions left open by their work: First, how important is the quality of the density model for exploration? Second, what role does the Monte Carlo update play in exploration? We answer the first question by demonstrating the use of PixelCNN, an advanced neural density model for images, to supply a pseudo-count. In particular, we examine the intrinsic difficulties in adapting Bellemare et al's approach when assumptions about the model are violated. The result is a more practical and general algorithm requiring no special apparatus. We combine PixelCNN pseudo-counts with different agent architectures to dramatically improve the state of the art on several hard Atari games. One surprising finding is that the mixed Monte Carlo update is a powerful facilitator of exploration in the sparsest of settings, including Montezuma's Revenge."
 
   - `paper` ["Unifying Count-Based Exploration and Intrinsic Motivation"](#unifying-count-based-exploration-and-intrinsic-motivation-bellemare-srinivasan-ostrovski-schaul-saxton-munos) by Bellemare et al. `summary`
 
 
 #### ["\#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning"](http://arxiv.org/abs/1611.04717) Tang et al.
+  `SimHash`
 >	"Count-based exploration algorithms are known to perform near-optimally when used in conjunction with tabular reinforcement learning methods for solving small discrete Markov decision processes (MDPs). It is generally thought that count-based methods cannot be applied in high-dimensional state spaces, since most states will only occur once. Recent deep RL exploration strategies are able to deal with high-dimensional continuous state spaces through complex heuristics, often relying on optimism in the face of uncertainty or intrinsic motivation. In this work, we describe a surprising finding: a simple generalization of the classic count-based approach can reach near state-of-the-art performance on various highdimensional and/or continuous deep RL benchmarks. States are mapped to hash codes, which allows to count their occurrences with a hash table. These counts are then used to compute a reward bonus according to the classic count-based exploration theory. We find that simple hash functions can achieve surprisingly good results on many challenging tasks. Furthermore, we show that a domain-dependent learned hash code may further improve these results. Detailed analysis reveals important aspects of a good hash function: 1) having appropriate granularity and 2) encoding information relevant to solving the MDP. This exploration strategy achieves near state-of-the-art performance on both continuous control tasks and Atari 2600 games, hence providing a simple yet powerful baseline for solving MDPs that require considerable exploration."
 
 >	"The authors encourage exploration by adding a pseudo-reward of the form beta/sqrt(count(state)) for infrequently visited states. State visits are counted using Locality Sensitive Hashing (LSH) based on an environment-specific feature representation like raw pixels or autoencoder representations."
@@ -2101,8 +2112,8 @@ interesting recent papers:
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1611.04717>
 
 
-#### ["EX2: Exploration with Exemplar Models for Deep Reinforcement Learning"](https://arxiv.org/abs/1703.01260) Fu, Co-Reyes Levine
->	"Deep reinforcement learning algorithms have been shown to learn complex tasks using highly general policy classes. However, sparse reward problems remain a significant challenge. Exploration methods based on novelty detection have been particularly successful in such settings but typically require generative or predictive models of the observations, which can be difficult to train when the observations are very high-dimensional and complex, as in the case of raw images. We propose a novelty detection algorithm for exploration that is based entirely on discriminatively trained exemplar models, where classifiers are trained to discriminate each visited state against all others. Intuitively, novel states are easier to distinguish against other states seen during training. We show that this kind of discriminative modeling corresponds to implicit density estimation, and that it can be combined with count-based exploration to produce competitive results on a range of popular benchmark tasks, including state-of-the-art results on challenging egocentric observations in the vizDoom benchmark."
+#### ["EX2: Exploration with Exemplar Models for Deep Reinforcement Learning"](https://arxiv.org/abs/1703.01260) Fu, Co-Reyes, Levine
+>      "Deep reinforcement learning algorithms have been shown to learn complex tasks using highly general policy classes. However, sparse reward problems remain a significant challenge. Exploration methods based on novelty detection have been particularly successful in such settings but typically require generative or predictive models of the observations, which can be difficult to train when the observations are very high-dimensional and complex, as in the case of raw images. We propose a novelty detection algorithm for exploration that is based entirely on discriminatively trained exemplar models, where classifiers are trained to discriminate each visited state against all others. Intuitively, novel states are easier to distinguish against other states seen during training. We show that this kind of discriminative modeling corresponds to implicit density estimation, and that it can be combined with count-based exploration to produce competitive results on a range of popular benchmark tasks, including state-of-the-art results on challenging egocentric observations in the vizDoom benchmark."
 
 
 
@@ -2828,6 +2839,9 @@ interesting recent papers:
 >	"A key feature of the approach is its simplicity: it requires only a straightforward actor-critic architecture and learning algorithm with very few “moving parts”, making it easy to implement and scale to more difficult problems and larger networks. For the physical control problems we compare our results to a baseline computed by a planner that has full access to the underlying simulated dynamics and its derivatives. Interestingly, DDPG can sometimes find policies that exceed the performance of the planner, in some cases even when learning from pixels (the planner always plans over the true, low-dimensional state space)."
 
 >	"Surprisingly, in some simpler tasks, learning policies from pixels is just as fast as learning using the low-dimensional state descriptor. This may be due to the action repeats making the problem simpler. It may also be that the convolutional layers provide an easily separable representation of state space, which is straightforward for the higher layers to learn on quickly."
+
+----
+>	"Although DDPG performs experience replay without importance sampling, it is limited to continuous control."
 
   - `video` <http://youtube.com/watch?v=tJBIqkC1wWM> (demo)
   - `video` <http://youtube.com/watch?v=Tb5gASEJIRM> (demo)
