@@ -81,7 +81,7 @@
 
   [course](http://youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6) from Stanford `video` ([notes](https://github.com/stanfordnlp/cs224n-winter17-notes))  
   [course](http://github.com/oxford-cs-deepnlp-2017/lectures) from Oxford and DeepMind `video`  
-  [course](http://phontron.com/class/nn4nlp2017/schedule.html) from CMU `video`  
+  [course](http://phontron.com/class/nn4nlp2018/schedule.html) from CMU ([videos](https://youtube.com/playlist?list=PL8PYTP1V4I8Ba7-rY4FoB4-jfuJ7VDKEE))  
 
 ----
 
@@ -432,7 +432,7 @@
 #### ["Style Transfer from Non-Parallel Text by Cross-Alignment"](https://arxiv.org/abs/1705.09655) Shen, Lei, Barzilay, Jaakkola
 >	"This paper focuses on style transfer on the basis of non-parallel text. This is an instance of a broader family of problems including machine translation, decipherment, and sentiment modification. The key technical challenge is to separate the content from desired text characteristics such as sentiment. We leverage refined alignment of latent representations across mono-lingual text corpora with different characteristics. We deliberately modify encoded examples according to their characteristics, requiring the reproduced instances to match available examples with the altered characteristics as a population. We demonstrate the effectiveness of this cross-alignment method on three tasks: sentiment modification, decipherment of word substitution ciphers, and recovery of word order."
 
-  - `video` <https://facebook.com/nipsfoundation/videos/1554741734617060/> (1:20:50) (Shen)
+  - `video` <https://facebook.com/nipsfoundation/videos/1554741734617060?t=4850> (Shen)
 
 
 
@@ -888,7 +888,7 @@
 >	"Representation learning has become an invaluable approach for learning from symbolic data such as text and graphs. However, while complex symbolic datasets often exhibit a latent hierarchical structure, state-of-the-art methods typically learn embeddings in Euclidean vector spaces, which do not account for this property. For this purpose, we introduce a new approach for learning hierarchical representations of symbolic data by embedding them into hyperbolic space -- or more precisely into an n-dimensional Poincar\'e ball. Due to the underlying hyperbolic geometry, this allows us to learn parsimonious representations of symbolic data by simultaneously capturing hierarchy and similarity. We introduce an efficient algorithm to learn the embeddings based on Riemannian optimization and show experimentally that Poincar\'e embeddings outperform Euclidean embeddings significantly on data with latent hierarchies, both in terms of representation capacity and in terms of generalization ability."
 
   - `video` <https://cds.cern.ch/record/2306315> (Nickel)
-  - `video` <https://facebook.com/nipsfoundation/videos/1553634558061111/> (1:03:01) (Nickel)
+  - `video` <https://facebook.com/nipsfoundation/videos/1553634558061111?t=3781> (Nickel)
   - `notes` <https://medium.com/towards-data-science/facebook-research-just-published-an-awesome-paper-on-learning-hierarchical-representations-34e3d829ede7>
   - `notes` <https://medium.com/@hol_io/word-embeddings-exploration-explanation-and-exploitation-with-code-in-python-5dac99d5d795>
   - `post` <https://rare-technologies.com/implementing-poincare-embeddings/>

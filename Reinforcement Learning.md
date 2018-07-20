@@ -96,6 +96,8 @@
 
 	["Mastering the Game of Go"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto
 
+	[AlphaGo Zero overview](http://www.depthfirstlearning.com/2018/AlphaGoZero)
+
 	["Mastering the Game of Go without Human Knowledge"](#mastering-the-game-of-go-without-human-knowledge-silver-et-al) by Silver et al. `paper` `summary`  
 	["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper` `summary`  
 	["Combining Online and Offline Knowledge in UCT"](http://machinelearning.org/proceedings/icml2007/papers/387.pdf) by Gelly and Silver `paper` ([talk](https://youtube.com/watch?v=Bm7zah_LrmE) `video`)  
@@ -149,6 +151,8 @@
 ----
   - *Poker*  
 
+	[Libratus overview](https://thegradient.pub/libratus-poker)
+
 	[Libratus "Science" magazine](http://science.sciencemag.org/content/early/2017/12/15/science.aao1733.full) `paper`  
 	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://arxiv.org/abs/1705.02955) by Noam Brown and Tuomas Sandholm `paper` ([talk](https://vimeo.com/248533943#t=53s) `video`, [post](https://thegradient.pub/libratus-poker))  
 	["Depth-Limited Solving for Imperfect-Information Games"](https://arxiv.org/abs/1805.08195) by Brown, Sandholm, Amos `paper`  
@@ -172,11 +176,13 @@
 ----
   - *Poker*  
 
-	[DeepStack "Science" magazine](http://science.sciencemag.org/content/early/2017/03/01/science.aam6960) `paper`  
-	["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](#deepstack-expert-level-artificial-intelligence-in-no-limit-poker-moravcik-et-al) by Moravcik et al. `paper` `summary`  
-
 	<http://deepstack.ai>  
 	<http://twitter.com/DeepStackAI>  
+
+	[DeepStack overview](https://www.depthfirstlearning.com/2018/DeepStack)
+
+	[DeepStack "Science" magazine](http://science.sciencemag.org/content/early/2017/03/01/science.aam6960) `paper`  
+	["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](#deepstack-expert-level-artificial-intelligence-in-no-limit-poker-moravcik-et-al) by Moravcik et al. `paper` `summary`  
 
 	[DeepStack overview](https://vimeo.com/248532904) by Michael Bowling `video`  
 	[DeepStack overview](https://youtu.be/02xIkHowQOk?t=11m45s) by Michael Bowling `video`  
@@ -227,9 +233,9 @@
 ----
   - *Quake III Arena CTF*
 
-	["Human-level Performance in First-person Multiplayer Games with Population-based Deep Reinforcement Learning"](https://deepmind.com/documents/224/capture_the_flag.pdf) by Jaderberg et al. `paper`
+	[FTW agent overview](https://deepmind.com/blog/capture-the-flag)
 
-	[FTW agent overview](https://deepmind.com/blog/capture-the-flag/)
+	["Human-level Performance in First-person Multiplayer Games with Population-based Deep Reinforcement Learning"](#human-level-performance-in-first-person-multiplayer-games-with-population-based-deep-reinforcement-learning-jaderberg-et-al) by Jaderberg et al. `paper` `summary`
 
 	[FTW agents team vs human team](https://youtube.com/watch?v=dltN4MxV1RI) `video`
 
@@ -282,7 +288,7 @@
   [overview](https://youtube.com/watch?v=jtjW5Pye_44) by Sergey Levine `video`  
   [overview](http://videolectures.net/iclr2016_levine_deep_learning/) by Sergey Levine `video`  
 
-  [overview](https://facebook.com/nipsfoundation/videos/1554594181298482/) by Pieter Abbeel `video`  
+  [overview](https://facebook.com/nipsfoundation/videos/1554594181298482) by Pieter Abbeel `video`  
   [overview](https://youtube.com/watch?v=TERCdog1ddE) by Pieter Abbeel `video`  
   [overview](http://on-demand.gputechconf.com/gtc/2016/video/S6812.html) by Pieter Abbeel `video`  
   [overview](https://youtu.be/xe-z4i3l-iQ?t=30m35s) by Pieter Abbeel `video`  
@@ -660,9 +666,7 @@
   ["Weight Uncertainty in Neural Networks"](#weight-uncertainty-in-neural-networks-blundell-cornebise-kavukcuoglu-wierstra) by Blundell et al. `paper` `summary`  
   ["BBQ-Networks: Efficient Exploration in Deep Reinforcement Learning for Task-Oriented Dialogue Systems"](https://arxiv.org/abs/1608.05081) by Lipton et al. `paper`  
   ["Noisy Networks for Exploration"](#noisy-networks-for-exploration-fortunato-et-al) by Fortunato et al. `paper` `summary`  
-  ["Efficient Exploration through Bayesian Deep Q-Networks"](https://arxiv.org/abs/1802.04412) by Azizzadenesheli et al. `paper`  
-  ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](#rl2-fast-reinforcement-learning-via-slow-reinforcement-learning-duan-schulman-chen-bartlett-sutskever-abbeel) by Duan et al. `paper` `summary`  
-  ["Learning to Reinforcement Learn"](#learning-to-reinforcement-learn-wang-et-al) by Wang et al. `paper` `summary`  
+  ["The Uncertainty Bellman Equation and Exploration"](https://arxiv.org/abs/1709.05380) by O'Donoghue et al. `paper`  
 
   [**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration-models)
 
@@ -1585,6 +1589,21 @@ interesting recent papers:
   - `code` <https://github.com/glample/Arnold>
 
 
+#### ["Human-level Performance in First-person Multiplayer Games with Population-based Deep Reinforcement Learning"](https://arxiv.org/abs/1807.01281) Jaderberg et al.
+>	"The real-world contains multiple agents, each learning and acting independently to cooperate and compete with other agents, and environments reflecting this degree of complexity remain an open challenge. In this work, we demonstrate for the first time that an agent can achieve human-level in a popular 3D multiplayer first-person video game, Quake III Arena Capture the Flag, using only pixels and game points as input. These results were achieved by a novel two-tier optimisation process in which a population of independent RL agents are trained concurrently from thousands of parallel matches with agents playing in teams together and against each other on randomly generated environments. Each agent in the population learns its own internal reward signal to complement the sparse delayed reward from winning, and selects actions using a novel temporally hierarchical representation that enables the agent to reason at multiple timescales. During game-play, these agents display human-like behaviours such as navigating, following, and defending based on a rich learned representation that is shown to encode high-level game knowledge. In an extensive tournament-style evaluation the trained agents exceeded the win-rate of strong human players both as teammates and opponents, and proved far stronger than existing state-of-the-art agents."
+
+>	"The proposed training algorithm stabilises the learning process in partially observable multi-agent environments by concurrently training a diverse population of agents who learn by playing with each other, and in addition the agent population provides a mechanism for meta-optimisation. We solve the prohibitively hard credit assignment problem of learning from the sparse and delayed episodic team win/loss signal (optimising thousands of actions based on a single final reward) by enabling agents to evolve an internal reward signal that acts as a proxy for winning and provides denser rewards. Finally, we meet the memory and long-term temporal reasoning requirements of high-level, strategic CTF play by introducing an agent architecture that features a multi-timescale representation, reminiscent of what has been observed in primate cerebral cortex, and an external working memory module, broadly inspired by human episodic memory."
+
+>	"Actions in this model are generated conditional on a stochastic latent variable, whose distribution is modulated by a more slowly evolving prior process. The variational objective function encodes a trade-off between maximising expected reward and consistency between the two timescales of inference. Whereas some previous hierarchical RL agents construct explicit hierarchical goals or skills, this agent architecture is conceptually more closely related to work on building hierarchical temporal representations and recurrent latent variable models for sequential data. The resulting model constructs a temporally hierarchical representation space in a novel way to promote the use of memory and temporally coherent action sequences."
+
+>	"Intuitively, this objective function captures the idea that the slow LSTM generates a prior on z which predicts the evolution of z for the subsequent τ steps, while the fast LSTM generates a variational posterior on z that incorporates new observations, but adheres to the predictions made by the prior. All the while, z must be a useful representation for maximising reward and auxiliary task performance. This architecture can be easily extended to more than two hierarchical layers, but we found in practice that more layers made little difference on this task. We also augmented this dual-LSTM agent with shared DNC memory to further increase its ability to store and recall past experience."
+
+>	"This can be seen as a two-tier reinforcement learning problem. The inner optimisation maximises Jinner, the agents’ expected future discounted internal rewards. The outer optimisation of Jouter can be viewed as a meta-game, in which the meta-reward of winning the match is maximised with respect to internal reward schemes and hyperparameters, with the inner optimisation providing the meta transition dynamics. We solve the inner optimisation with RL, and the outer optimisation with Population Based Training. PBT is an online evolutionary process which adapts internal rewards and hyperparameters and performs model selection by replacing under-performing agents with mutated versions of better agents. This joint optimisation of the agent policy using RL together with the optimisation of the RL procedure itself towards a high-level goal proves to be an effective and generally applicable strategy, and utilises the potential of combining learning and evolution in large scale learning systems."
+
+  - `post` <https://deepmind.com/blog/capture-the-flag>
+  - `video` <https://youtube.com/watch?v=dltN4MxV1RI> (demo)
+
+
 #### ["Mastering the Game of Go without Human Knowledge"](https://deepmind.com/documents/119/agz_unformatted_nature.pdf) Silver et al.
 >	"A long-standing goal of artificial intelligence is an algorithm that learns, tabula rasa, superhuman proficiency in challenging domains. Recently, AlphaGo became the first program to defeat a world champion in the game of Go. The tree search in AlphaGo evaluated positions and selected moves using deep neural networks. These neural networks were trained by supervised learning from human expert moves, and by reinforcement learning from self-play. Here, we introduce an algorithm based solely on reinforcement learning, without human data, guidance, or domain knowledge beyond game rules. AlphaGo becomes its own teacher: a neural network is trained to predict AlphaGo’s own move selections and also the winner of AlphaGo’s games. This neural network improves the strength of tree search, resulting in higher quality move selection and stronger self-play in the next iteration. Starting tabula rasa, our new program AlphaGo Zero achieved superhuman performance, winning 100-0 against the previously published, champion-defeating AlphaGo."
 
@@ -1684,12 +1703,13 @@ interesting recent papers:
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games> (demo)
   - `paper` <http://science.sciencemag.org/content/early/2017/03/01/science.aam6960> ("Science")
   - `video` <https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ> (demo matches)
-  - <http://deepstack.ai>
-  - <http://twitter.com/DeepStackAI>
   - `video` <https://vimeo.com/248532904> (Bowling)
   - `video` <https://youtu.be/02xIkHowQOk?t=11m45s> (Bowling)
   - `video` <https://youtube.com/watch?v=qndXrHcV1sM> (Bowling)
   - `video` <http://videolectures.net/aaai2017_bowling_sandholm_poker/#t=177> (Bowling)
+  - `post` <https://www.depthfirstlearning.com/2018/DeepStack>
+  - <http://deepstack.ai>
+  - <http://twitter.com/DeepStackAI>
   - `code` <https://github.com/lifrordi/DeepStack-Leduc>
 
 
@@ -1824,7 +1844,7 @@ interesting recent papers:
 #### ["Off-policy Evaluation for Slate Recommendation"](https://arxiv.org/abs/1605.04812) Swaminathan, Krishnamurthy, Agarwal, Dudík, Langford, Jose, Zitouni
 >	"This paper studies the evaluation of policies that recommend an ordered set of items (e.g., a ranking) based on some context---a common scenario in web search, ads, and recommendation. We build on techniques from combinatorial bandits to introduce a new practical estimator that uses logged data to estimate a policy's performance. A thorough empirical evaluation on real-world data reveals that our estimator is accurate in a variety of settings, including as a subroutine in a learning-to-rank task, where it achieves competitive performance. We derive conditions under which our estimator is unbiased---these conditions are weaker than prior heuristics for slate evaluation---and experimentally demonstrate a smaller bias than parametric approaches, even when these conditions are violated. Finally, our theory and experiments also show exponential savings in the amount of required data compared with general unbiased estimators."
 
-  - `video` <https://facebook.com/nipsfoundation/videos/1554741347950432/> (3:42) (Swaminathan)
+  - `video` <https://facebook.com/nipsfoundation/videos/1554741347950432?t=222> (Swaminathan)
   - `video` ["Counterfactual Evaluation and Learning for Search, Recommendation and Ad Placement"](http://www.cs.cornell.edu/~adith/CfactSIGIR2016/) tutorial by Adith Swaminathan and Thorsten Joachims
 
 
@@ -2037,7 +2057,7 @@ interesting recent papers:
 >	Envk(at) = [ot, rt, dt]  
 >	To train this RNN, we sample N MDPs from M and obtain k rollouts for each MDP by running the MDP through the RNN as above. We then compute a policy gradient update to move the RNN parameters in a direction which maximizes the returns over the k trials performed for each MDP."  
 
-  - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482/> (7:31) (Abbeel)
+  - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482?t=451> (Abbeel)
   - `video` <http://www.fields.utoronto.ca/video-archive/2017/02/2267-16530> (19:00) (Abbeel)
   - `video` <https://youtu.be/SfCa1HQMkuw?t=1h16m56s> (Schulman)
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/RL2-Fast_Reinforcement_Learning_via_Slow_Reinforcement_Learning.md>
@@ -2162,6 +2182,7 @@ interesting recent papers:
 
   - `video` <https://youtu.be/-u32TOPGIbQ?t=2m43s> (Graves)
   - `video` <https://vimeo.com/237275086> (Bellemare)
+  - `notes` <https://blog.tomrochette.com/machine-learning/papers/alex-graves-automated-curriculum-learning-for-neural-networks>
   - [Artificial Curiosity and Creativity](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory of Juergen Schmidhuber
 
 
@@ -2283,7 +2304,7 @@ interesting recent papers:
   - `post` <https://deepmind.com/blog/reinforcement-learning-unsupervised-auxiliary-tasks/>
   - `video` <https://youtube.com/watch?v=Uz-zGYrYEjA> (demo)
   - `video` <https://youtube.com/watch?v=VVLYTqZJrXY> (Jaderberg)
-  - `video` <https://facebook.com/iclr.cc/videos/1712224178806641/> (1:15:45) (Jaderberg)
+  - `video` <https://facebook.com/iclr.cc/videos/1712224178806641?t=4545> (Jaderberg)
   - `video` <https://youtu.be/bsuvM1jO-4w?t=20m7s> (Mnih)
   - `video` <https://youtube.com/watch?v=-YiMVR3HEuY> (Kilcher)
   - `video` <https://yadi.sk/i/_2_0yqeW3HDbcn> (18:25) (Panin) `in russian`
@@ -2359,6 +2380,9 @@ interesting recent papers:
 #### ["Automatic Goal Generation for Reinforcement Learning Agents"](https://arxiv.org/abs/1705.06366) Held, Geng, Florensa, Abbeel
 >	"Reinforcement learning is a powerful technique to train an agent to perform a task. However, an agent that is trained using reinforcement learning is only capable of achieving the single task that is specified via its reward function. Such an approach does not scale well to settings in which an agent needs to perform a diverse set of tasks, such as navigating to varying positions in a room or moving objects to varying locations. Instead, we propose a method that allows an agent to automatically discover the range of tasks that it is capable of performing in its environment. We use a generator network to propose tasks for the agent to try to achieve, each task being specified as reaching a certain parametrized sub-set of the state-space. The generator network is optimized using adversarial training to produce tasks that are always at the appropriate level of difficulty for the agent. Our method thus automatically produces a curriculum of tasks for the agent to learn. We show that, by using this framework, an agent can efficiently and automatically learn to perform a wide set of tasks without requiring any prior knowledge of its environment. Our method can also learn to achieve tasks with sparse rewards, which traditionally pose significant challenges."
 
+  - <https://sites.google.com/view/goalgeneration4rl>
+  - `video` <https://facebook.com/icml.imls/videos/429963197518201?t=2655> (Florensa)
+
 
 #### ["Automated Curriculum Learning for Neural Networks"](https://arxiv.org/abs/1704.03003) Graves, Bellemare, Menick, Munos, Kavukcuoglu
 
@@ -2377,35 +2401,9 @@ interesting recent papers:
   - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#on-learning-to-think-algorithmic-information-theory-for-novel-combinations-of-reinforcement-learning-controllers-and-recurrent-neural-world-models-schmidhuber>
 
 
-#### ["Value Iteration Networks"](http://arxiv.org/abs/1602.02867) Tamar, Wu, Thomas, Levine, Abbeel
->	"We introduce the value iteration network (VIN): a fully differentiable neural network with a ‘planning module’ embedded within. VINs can learn to plan, and are suitable for predicting outcomes that involve planning-based reasoning, such as policies for reinforcement learning. Key to our approach is a novel differentiable approximation of the value-iteration algorithm, which can be represented as a convolutional neural network, and trained end-to-end using standard backpropagation. We evaluate VIN based policies on discrete and continuous path-planning domains, and on a natural-language based search task. We show that by learning an explicit planning computation, VIN policies generalize better to new, unseen domains."
-
->	"The introduction of powerful and scalable RL methods has opened up a range of new problems for deep learning. However, few recent works investigate policy architectures that are specifically tailored for planning under uncertainty, and current RL theory and benchmarks rarely investigate the generalization properties of a trained policy. This work takes a step in this direction, by exploring better generalizing policy representations. Our VIN policies learn an approximate planning computation relevant for solving the task, and we have shown that such a computation leads to better generalization in a diverse set of tasks, ranging from simple gridworlds that are amenable to value iteration, to continuous control, and even to navigation of Wikipedia links. In future work we intend to learn different planning computations, based on simulation, or optimal linear control, and combine them with reactive policies, to potentially develop RL solutions for task and motion planning"
-
->	"In our experiment in continuous control we used hierarchical policy: high-level policy solved low-resolution map and low-level policy executed it. This is very different from options/skills framework. There is one smooth policy that implements everything. We don't need to learn initiation sets or termination sets. But more importantly, the motivation for using hierarchy here was different. The motivation wasn't to increase learning rate or exploration - the motivation was to generalize. We understood that low-resolution map is sufficient for doing planning which promotes generalization, but low-level policy uses the fact that dynamics is similar across different tasks."
-
-----
->	"Its contribution is to offer a new way to think about value iteration in the context of deep networks. It shows how the CNN architecture can be hijacked to implement the Bellman optimality operator, and how the backprop signal can be used to learn a deterministic model of the underlying MDP."
-
->	"Value iteration is similar enough to a sequence of convolutions and max-pooling layers that you can emulate an (unrolled) planning computation with a deep network. This allows neural nets to do planning, e.g. moving from start to goal in grid-world, or navigating a website to find query."
-
-----
->	"The value function V_{n}(s') takes the place of the input to the layer, while P(s'|s,a) form the weights of |A| convolution channels. In many tasks of interest such as grid world navigation, P(s'|s,a) reflects the locality of the problem since transitions are only possible to nearby states. This is analogous to the locality of convolutional kernels in standard CNNs, which is useful due to the hierarchical structure in natural images. Due to this connection, value iteration can be performed by a differentiable Value Iteration block that is composed of recursively connecting K such convolutional blocks. One must then choose K in such a way as to ensure convergence while not incurring a high computational cost by setting it to be too large."
-
-  - `video` <https://youtu.be/ID150Tl-MMw?t=54m24s> (demo)
-  - `video` <https://youtube.com/watch?v=tXBHfbHHlKc> (Tamar) ([slides](http://technion.ac.il/~danielm/icml_slides/Talk7.pdf))
-  - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Value-Iteration-Networks> (Tamar)
-  - `video` <http://www.fields.utoronto.ca/video-archive/2017/02/2267-16530> (31:50) (Abbeel)
-  - `video` <https://youtu.be/bsuvM1jO-4w?t=38m6s> (Mnih)
-  - `notes` <https://github.com/karpathy/paper-notes/blob/master/vin.md>
-  - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Value_Iteration_Networks.md>
-  - `notes` <https://blog.acolyer.org/2017/02/09/value-iteration-networks/>
-  - `code` <https://github.com/avivt/VIN>
-  - `code` <https://github.com/TheAbhiKumar/tensorflow-value-iteration-networks>
-  - `code` <https://github.com/zuoxingdong/VIN_TensorFlow>
-  - `code` <https://github.com/zuoxingdong/VIN_PyTorch_Visdom>
-  - `code` <https://github.com/kentsommer/pytorch-value-iteration-networks>
-  - `code` <https://github.com/onlytailei/Value-Iteration-Networks-PyTorch>
+#### ["Human-level Performance in First-person Multiplayer Games with Population-based Deep Reinforcement Learning"](https://arxiv.org/abs/1807.01281) Jaderberg et al.
+  `FTW`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#human-level-performance-in-first-person-multiplayer-games-with-population-based-deep-reinforcement-learning-jaderberg-et-al>
 
 
 #### ["Stochastic Neural Networks for Hierarchical Reinforcement Learning"](https://arxiv.org/abs/1704.03012) Florensa, Duan, Abbeel
@@ -2453,6 +2451,41 @@ interesting recent papers:
 ### interesting papers - model-based methods
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-based-methods)
+
+
+#### ["Value Iteration Networks"](http://arxiv.org/abs/1602.02867) Tamar, Wu, Thomas, Levine, Abbeel
+>	"We introduce the value iteration network (VIN): a fully differentiable neural network with a ‘planning module’ embedded within. VINs can learn to plan, and are suitable for predicting outcomes that involve planning-based reasoning, such as policies for reinforcement learning. Key to our approach is a novel differentiable approximation of the value-iteration algorithm, which can be represented as a convolutional neural network, and trained end-to-end using standard backpropagation. We evaluate VIN based policies on discrete and continuous path-planning domains, and on a natural-language based search task. We show that by learning an explicit planning computation, VIN policies generalize better to new, unseen domains."
+
+>	"The introduction of powerful and scalable RL methods has opened up a range of new problems for deep learning. However, few recent works investigate policy architectures that are specifically tailored for planning under uncertainty, and current RL theory and benchmarks rarely investigate the generalization properties of a trained policy. This work takes a step in this direction, by exploring better generalizing policy representations. Our VIN policies learn an approximate planning computation relevant for solving the task, and we have shown that such a computation leads to better generalization in a diverse set of tasks, ranging from simple gridworlds that are amenable to value iteration, to continuous control, and even to navigation of Wikipedia links. In future work we intend to learn different planning computations, based on simulation, or optimal linear control, and combine them with reactive policies, to potentially develop RL solutions for task and motion planning"
+
+>	"In our experiment in continuous control we used hierarchical policy: high-level policy solved low-resolution map and low-level policy executed it. This is very different from options/skills framework. There is one smooth policy that implements everything. We don't need to learn initiation sets or termination sets. But more importantly, the motivation for using hierarchy here was different. The motivation wasn't to increase learning rate or exploration - the motivation was to generalize. We understood that low-resolution map is sufficient for doing planning which promotes generalization, but low-level policy uses the fact that dynamics is similar across different tasks."
+
+----
+>	"Its contribution is to offer a new way to think about value iteration in the context of deep networks. It shows how the CNN architecture can be hijacked to implement the Bellman optimality operator, and how the backprop signal can be used to learn a deterministic model of the underlying MDP."
+
+>	"Value iteration is similar enough to a sequence of convolutions and max-pooling layers that you can emulate an (unrolled) planning computation with a deep network. This allows neural nets to do planning, e.g. moving from start to goal in grid-world, or navigating a website to find query."
+
+----
+>	"The value function V_{n}(s') takes the place of the input to the layer, while P(s'|s,a) form the weights of |A| convolution channels. In many tasks of interest such as grid world navigation, P(s'|s,a) reflects the locality of the problem since transitions are only possible to nearby states. This is analogous to the locality of convolutional kernels in standard CNNs, which is useful due to the hierarchical structure in natural images. Due to this connection, value iteration can be performed by a differentiable Value Iteration block that is composed of recursively connecting K such convolutional blocks. One must then choose K in such a way as to ensure convergence while not incurring a high computational cost by setting it to be too large."
+
+----
+>	"trains deep network to implicitly plan via iterative rollouts"  
+>	"uses implicit environment model which does not capture dynamics"  
+
+  - `video` <https://youtu.be/ID150Tl-MMw?t=54m24s> (demo)
+  - `video` <https://youtube.com/watch?v=tXBHfbHHlKc> (Tamar) ([slides](http://technion.ac.il/~danielm/icml_slides/Talk7.pdf))
+  - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Value-Iteration-Networks> (Tamar)
+  - `video` <http://www.fields.utoronto.ca/video-archive/2017/02/2267-16530> (31:50) (Abbeel)
+  - `video` <https://youtu.be/bsuvM1jO-4w?t=38m6s> (Mnih)
+  - `notes` <https://github.com/karpathy/paper-notes/blob/master/vin.md>
+  - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Value_Iteration_Networks.md>
+  - `notes` <https://blog.acolyer.org/2017/02/09/value-iteration-networks/>
+  - `code` <https://github.com/avivt/VIN>
+  - `code` <https://github.com/TheAbhiKumar/tensorflow-value-iteration-networks>
+  - `code` <https://github.com/zuoxingdong/VIN_TensorFlow>
+  - `code` <https://github.com/zuoxingdong/VIN_PyTorch_Visdom>
+  - `code` <https://github.com/kentsommer/pytorch-value-iteration-networks>
+  - `code` <https://github.com/onlytailei/Value-Iteration-Networks-PyTorch>
 
 
 #### ["Learning and Policy Search in Stochastic Dynamic Systems with Bayesian Neural Networks"](https://arxiv.org/abs/1605.07127) Depeweg, Hernandez-Lobato, Doshi-Velez, Udluft
@@ -2608,7 +2641,7 @@ interesting recent papers:
 >	"application of deep successor reinforcement learning"
 
   - `video` <https://youtube.com/watch?v=947bSUtuSQ0> + <https://youtube.com/watch?v=947bSUtuSQ0> (demo)
-  - `video` <https://facebook.com/iclr.cc/videos/1712224178806641/> (54:12) (Dosovitskiy)
+  - `video` <https://facebook.com/iclr.cc/videos/1712224178806641?t=3252> (Dosovitskiy)
   - `video` <https://youtube.com/watch?v=buUF5F8UCH8> (Lamb, Ozair)
   - `video` <https://youtube.com/watch?v=Q0ldKJbAwR8> (Dosovitskiy) `in russian`
   - `video` <https://yadi.sk/i/pMdw-_uI3Gke7Z> (1:02:03) (Shvechikov) `in russian`
@@ -2770,6 +2803,7 @@ interesting recent papers:
   - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h35m20s> (Sigaud)
   - `video` <https://yadi.sk/i/1oyihBnm3HiKHm> + <https://yadi.sk/i/b0ol2gUV3HiKKJ> (Fritzler and Ratnikov) `in russian` ([slides](https://yadi.sk/i/9j6S4WVp3HgEdn) `in english`)
   - `post` <http://depthfirstlearning.com/2018/TRPO>
+  - `post` <https://towardsdatascience.com/the-pursuit-of-robotic-happiness-how-trpo-and-ppo-stabilize-policy-gradient-methods-545784094e3b>
   - `post` <http://kvfrans.com/what-is-the-natural-gradient-and-where-does-it-appear-in-trust-region-policy-optimization/>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/SchulmanLMJA15>
   - `notes` <https://towardsdatascience.com/introduction-to-various-reinforcement-learning-algorithms-part-ii-trpo-ppo-87f2c5919bb9>
@@ -2803,6 +2837,7 @@ interesting recent papers:
   - `post` <https://learningai.io/projects/2017/07/28/ai-gym-workout.html>
   - `notes` <https://towardsdatascience.com/introduction-to-various-reinforcement-learning-algorithms-part-ii-trpo-ppo-87f2c5919bb9>
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Proximal_Policy_Optimization_Algorithms.md>
+  - `post` <https://towardsdatascience.com/the-pursuit-of-robotic-happiness-how-trpo-and-ppo-stabilize-policy-gradient-methods-545784094e3b>
   - `post` <http://blog.varunajayasiri.com/ml/ppo.html>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/ppo2>
   - `code` <https://github.com/ikostrikov/pytorch-a2c-ppo-acktr>

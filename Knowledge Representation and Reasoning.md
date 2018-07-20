@@ -319,6 +319,9 @@
   ["Knowledge Graph Construction From Text: Embedding-Based Techniques"](https://kgtutorial.github.io/slides/Part3b_Embds.pdf) by Pujara, Singh, Dalvi `slides`
 
 
+  [overview](https://youtu.be/bVWDxyydyEM?t=9m20s) by Graham Neubig `video`
+
+
   applications in [**Google Knowledge Vault**](#machine-reading-projects---google-knowledge-vault):  
   - ["A Review of Relational Machine Learning for Knowledge Graphs"](#a-review-of-relational-machine-learning-for-knowledge-graphs-from-multi-relational-link-prediction-to-automated-knowledge-graph-construction-nickel-murphy-tresp-gabrilovich) by Nickel, Murphy, Tresp, Gabrilovich `paper` `summary`  
   - [overview](http://youtu.be/i2r5J4XAhsw?t=3m7s) by Kevin Murphy `video`  
@@ -698,39 +701,6 @@
   - models and queries defined in terms of complex stochastic computations
   - programs and languages as formal representations of probabilistic objects
 
-----
-
-  ["Engineering and Reverse-Engineering Intelligence Using Probabilistic Programs, Program Induction, and Deep Learning"](https://facebook.com/nipsfoundation/videos/1552446408179926/) by Josh Tenenbaum and Vikash Mansinghka `video`
-
-  ["Computational Cognitive Science: Generative Models, Probabilistic Programs and Common Sense"](https://youtube.com/watch?v=2WQO9e5Mdj4) by Josh Tenenbaum `video`  
-  ["Engineering & Reverse-Engineering Human Common Sense"](https://youtube.com/watch?v=hfoeRiZU5YQ) by Josh Tenenbaum `video`  
-  ["Cognitive Foundations for Common-sense Knowledge Representation and Reasoning"](https://youtube.com/watch?v=oSAG57plHnI) by Josh Tenenbaum `video`  
-  ["Building Machines That Learn Like Humans"](https://youtube.com/watch?v=quPN7Hpk014) by Josh Tenenbaum `video`  
-  ["Towards More Human-like Machine Learning of Word Meanings"](http://techtalks.tv/talks/towards-more-human-like-machine-learning-of-word-meanings/54913/) by Josh Tenenbaum `video`  
-  ["How to Grow a Mind: Statistics, Structure, and Abstraction"](http://videolectures.net/aaai2012_tenenbaum_grow_mind/) by Josh Tenenbaum `video`  
-  ["Development of Intelligence: Bayesian Inference"](http://youtube.com/watch?v=icEdI0AIOlU) by Josh Tenenbaum `video`  
-  ["Machine vs Human Learning"](http://youtube.com/watch?v=UNYnpO1mkT4) by Josh Tenenbaum `video`  
-
-  ["Probabilistic Programs: A New Language for AI"](http://youtube.com/watch?v=fclvsoaUI-U) by Noah Goodman `video`
-
-----
-
-  ["What are probabilistic models of cognition?"](http://jhamrick.github.io/quals/responses/response1.pdf) by Jessica Hamrick `notes`
-
-  ["Concepts in a Probabilistic Language of Thought"](https://web.stanford.edu/~ngoodman/papers/ConceptsChapter-final.pdf) by Goodman, Tenenbaum, Gerstenberg `paper`  
->	"Knowledge organizes our understanding of the world, determining what we expect given what we have already seen. Our predictive representations have two key properties: they are productive, and they are graded. Productive generalization is possible because our knowledge decomposes into concepts - elements of knowledge that are combined and recombined to describe particular situations. Gradedness is the observable effect of accounting for uncertainty - our knowledge encodes degrees of belief that lead to graded probabilistic predictions. To put this a different way, concepts form a combinatorial system that enables description of many different situations; each such situation specifies a distribution over what we expect to see in the world, given what we have seen. We may think of this system as a probabilistic language of thought in which representations are built from language-like composition of concepts and the content of those representations is a probability distribution on world states."  
->	"Probabilistic language of thought hypothesis (informal version): Concepts have a language-like compositionality and encode probabilistic knowledge. These features allow them to be extended productively to new situations and support flexible reasoning and learning by probabilistic inference."  
-
-----
-
-  ["Probabilistic Models of Cognition"](http://probmods.org) by Noah Goodman and Josh Tenenbaum `book`  
-  ["Modeling Agents with Probabilistic Programs"](http://agentmodels.org) by Owain Evans, Andreas Stuhlmuller, John Salvatier and Daniel Filan `book`  
-
-----
-
-  ["Modeling Cognition with Probabilistic Programs: Representations and Algorithms"](https://stuhlmueller.org/papers/stuhlmueller-phdthesis.pdf) thesis by Andreas Stuhlmueller `paper`  
-  ["Towards More Human-like Concept Learning in Machines: Compositionality, Causality, and Learning-to-learn"](http://cims.nyu.edu/~brenden/LakePhDThesis.pdf) thesis by Brenden Lake `paper`  
-
 
 
 ---
@@ -813,10 +783,6 @@
 
 ----
 
-  ["Applying Deep Learning to Mathematical Reasoning"](https://youtube.com/watch?v=UAa2o0W7vcg) by Francois Chollet `video`
-
-----
-
   "Quite reachable is deep automated semantic understanding of most of LaTeX-written mathematical textbooks. This has been blocked by three factors: (i) lack of annotated formal/informal corpora to train such semantic parsing on, (ii) lack of sufficiently large repository of background mathematical knowledge needed for “obvious-knowledge gap-filling”, and (iii) lack of sufficiently strong large-theory ATP that could fill the reasoning gaps using the large repository of background knowledge. One way to try to get them automatically is again through basic computer understanding of LaTeX-written mathematical texts, and learning what high-level concepts like “by analogy” and “using diagonalization” exactly semantically mean in various contexts. This is also related to the ability to reformulate problems and map them to a setting (for current ATPs, the best is purely equational) where the theorem proving becomes more easy. And another related work that needs to be done is “explaining back” the long ATP proofs using an understandable mathematical presentation."
 
   [*(Josef Urban)*](https://intelligence.org/2013/12/21/josef-urban-on-machine-learning-and-automated-reasoning/)
@@ -840,11 +806,35 @@
 ---
 ### reasoning - commonsense reasoning
 
-  [notes](http://jhamrick.github.io/quals/) by Jessica Hamrick
-
   ["Commonsense Reasoning and Commonsense Knowledge in Artificial Intelligence"](https://goo.gl/L5Cp6v) by Davis and Marcus `paper`  
   ["Simulation as an Engine of Physical Scene Understanding"](http://www.pnas.org/content/110/45/18327.short) by Battaglia, Hamrick, Tenenbaum `paper`  
   ["Computational Rationality: A Converging Paradigm for Intelligence in Brains, Minds and Machines"](https://goo.gl/jWaJVf) by Gershman, Horvitz, Tenenbaum `paper`  
+
+  [notes](http://jhamrick.github.io/quals/) by Jessica Hamrick
+
+----
+
+  ["What Are Probabilistic Models of Cognition?"](http://jhamrick.github.io/quals/responses/response1.pdf) by Jessica Hamrick `notes`
+
+  ["Probabilistic Models of Cognition"](http://probmods.org) by Noah Goodman and Josh Tenenbaum `book`  
+  ["Modeling Agents with Probabilistic Programs"](http://agentmodels.org) by Owain Evans, Andreas Stuhlmuller, John Salvatier and Daniel Filan `book`  
+
+  ["Concepts in a Probabilistic Language of Thought"](https://web.stanford.edu/~ngoodman/papers/ConceptsChapter-final.pdf) by Goodman, Tenenbaum, Gerstenberg `paper`  
+  ["Modeling Cognition with Probabilistic Programs: Representations and Algorithms"](https://stuhlmueller.org/papers/stuhlmueller-phdthesis.pdf) by Andreas Stuhlmueller `paper`  
+  ["Towards More Human-like Concept Learning in Machines: Compositionality, Causality, and Learning-to-learn"](http://cims.nyu.edu/~brenden/LakePhDThesis.pdf) by Brenden Lake `paper`  
+
+----
+
+  ["Engineering and Reverse Engineering Intelligence with Probabilistic Programs, Program Induction, and Deep Learning"](https://vimeo.com/248502450) by Josh Tenenbaum and Vikash Mansinghka `video`  
+  ["Building Machines That See, Learn and Think Like People"](https://youtube.com/watch?v=7ROelYvo8f0) by Joshua Tenenbaum `video`  
+  ["Building Machines That Learn and Think Like People"](https://facebook.com/icml.imls/videos/432412777273243?t=4362) by Josh Tenenbaum `video`  
+  ["Engineering & Reverse-Engineering Human Common Sense"](https://youtube.com/watch?v=hfoeRiZU5YQ) by Josh Tenenbaum `video`  
+  ["Cognitive Foundations for Common-sense Knowledge Representation and Reasoning"](https://youtube.com/watch?v=oSAG57plHnI) by Josh Tenenbaum `video`  
+  ["Building Machines That Learn Like Humans"](https://youtube.com/watch?v=quPN7Hpk014) by Josh Tenenbaum `video`  
+  ["Towards More Human-like Machine Learning of Word Meanings"](http://techtalks.tv/talks/towards-more-human-like-machine-learning-of-word-meanings/54913/) by Josh Tenenbaum `video`  
+  ["How to Grow a Mind: Statistics, Structure, and Abstraction"](http://videolectures.net/aaai2012_tenenbaum_grow_mind/) by Josh Tenenbaum `video`  
+  ["Development of Intelligence: Bayesian Inference"](http://youtube.com/watch?v=icEdI0AIOlU) by Josh Tenenbaum `video`  
+  ["Machine vs Human Learning"](http://youtube.com/watch?v=UNYnpO1mkT4) by Josh Tenenbaum `video`  
 
 ----
 
@@ -852,16 +842,11 @@
 
 ----
 
-  "Humans have the capacity to draw commonsense inferences: things that are likely but not certain to hold based on established discourse and are rarely stated explicitly."  
-  "A program has common sense if it automatically deduces for itself a sufficiently wide class of immediate consequences of anything it is told and what it already knows."  
+  "Humans have the capacity to draw commonsense inferences: things that are likely but not certain to hold based on established discourse and are rarely stated explicitly. A program has common sense if it automatically deduces for itself a sufficiently wide class of immediate consequences of anything it is told and what it already knows."
 
   "Requirement of common-sense knowledge in language understanding has been long-cited. This knowledge is viewed as a key component in filling in the gaps between the telegraphic style of natural language statements: we are able to convey considerable information in a relatively sparse channel, presumably owing to a partially shared model at the start of any discourse. Common-sense inference - inferences based on common-sense knowledge - is possibilistic: things everyone more or less would expect to hold in a given context, but without always the strength of logical entailment."
 
-  "Owing to human reporting bias, deriving the knowledge needed to perform these inferences exclusively from corpora has led to results most accurately considered models of language, rather than of the world. Facts such that a person walking into a room is very likely to be regularly blinking and breathing are not often explicitly stated, so their real-world likelihoods do not align to language model probabilities. We would like a system capable of reading a sentence describing some situation, such as found in a newspaper, and be able to infer how likely other statements hold of that situation, in the real world. This as compared to, e.g., knowing the likelihood of the next observed sentence in that newspaper article."
-
-  "To achieve human-level performance in domains such as natural language processing, vision, and robotics, basic knowledge of the commonsense world - time, space, physical interactions, people, and so on - will be necessary."
-
-  "A well-known example from Terry Winograd is the pair of sentences "The city council refused the demonstrators a permit because they feared violence," vs "... because they advocated violence." To determine that "they" in the first sentence refers to the council if the verb is "feared," but refers to the demonstrators if the verb is "advocated" demands knowledge about the characteristic relations of city councils and demonstrators to violence; no purely linguistic clue suffices."
+  "Deriving the knowledge needed to perform these inferences exclusively from corpora has led to results most accurately considered models of language, rather than of the world. Facts such that a person walking into a room is very likely to be regularly blinking and breathing are not often explicitly stated, so their real-world likelihoods do not align to language model probabilities. We would like a system capable of reading a sentence describing some situation, such as found in a newspaper, and be able to infer how likely other statements hold of that situation, in the real world. This as compared to, e.g., knowing the likelihood of the next observed sentence in that newspaper article."
 
 
 
@@ -1271,6 +1256,7 @@
 >	"We consider the problem of performing learning and inference in a large scale knowledge base containing imperfect knowledge with incomplete coverage. We show that a soft inference procedure based on a combination of constrained, weighted, random walks through the knowledge base graph can be used to reliably infer new beliefs for the knowledge base. More specifically, we show that the system can learn to infer different target relations by tuning the weights associated with random walks that follow different paths through the graph, using a version of the Path Ranking Algorithm. We apply this approach to a knowledge base of approximately 500,000 beliefs extracted imperfectly from the web by NELL, a never-ending language learner. This new system improves significantly over NELL’s earlier Horn-clause learning and inference method: it obtains nearly double the precision at rank 100, and the new learning method is also applicable to many more inference tasks."
 
   - `slides` <http://cs.cmu.edu/~nlao/publication/2012/defense.pdf>
+  - `video` <https://youtu.be/bVWDxyydyEM?t=38m24s> (Neubig)
   - `video` <https://youtu.be/i2r5J4XAhsw?t=5m7s> (Murphy)
   - `code` <https://github.com/matt-gardner/pra>
   - `paper` ["Efficient Random Walk Inference with Knowledge Bases"](https://www.cs.cmu.edu/~nlao/publication/2012/thesis.pdf) thesis by Ni Lao
@@ -1585,6 +1571,7 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 
 >	"We have two key empirical findings: First, we show that compositional training enables us to answer path queries up to at least length 5 by substantially reducing cascading errors present in the base vector space model. Second, we find that somewhat surprisingly, compositional training also improves upon state-of-the-art performance for knowledge base completion, which is a special case of answering unit length path queries. Therefore, compositional training can also be seen as a new form of structural regularization for existing models."
 
+  - `video` <https://youtu.be/bVWDxyydyEM?t=39m36s> (Guu)
   - `notes` <https://codalab.org/worksheets/0xfcace41fdeec45f3bc6ddf31107b829f>
 
 
@@ -1698,48 +1685,12 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
   - `code` <https://github.com/siyuanzhao/key-value-memory-networks>
 
 
-#### ["Teaching Machines to Read and Comprehend"](http://arxiv.org/abs/1506.03340) Hermann, Kocisky, Grefenstette, Espeholt, Kay, Suleyman, Blunsom
->	"Teaching machines to read natural language documents remains an elusive challenge. Machine reading systems can be tested on their ability to answer questions posed on the contents of documents that they have seen, but until now large scale training and test datasets have been missing for this type of evaluation. In this work we define a new methodology that resolves this bottleneck and provides large scale supervised reading comprehension data. This allows us to develop a class of attention based deep neural networks that learn to read real documents and answer complex questions with minimal prior knowledge of language structure."
-
->	"Progress on the path from shallow bag-of-words information retrieval algorithms to machines capable of reading and understanding documents has been slow. Traditional approaches to machine reading and comprehension have been based on either hand engineered grammars, or information extraction methods of detecting predicate argument triples that can later be queried as a relational database. Supervised machine learning approaches have largely been absent from this space due to both the lack of large scale training datasets, and the difficulty in structuring statistical models flexible enough to learn to exploit document structure. While obtaining supervised natural language reading comprehension data has proved difficult, some researchers have explored generating synthetic narratives and queries. Such approaches allow the generation of almost unlimited amounts of supervised data and enable researchers to isolate the performance of their algorithms on individual simulated phenomena. Work on such data has shown that neural network based models hold promise for modelling reading comprehension, something that we will build upon here. Historically, however, many similar approaches in Computational Linguistics have failed to manage the transition from synthetic data to real environments, as such closed worlds inevitably fail to capture the complexity, richness, and noise of natural language. In this work we seek to directly address the lack of real natural language training data by introducing a novel approach to building a supervised reading comprehension data set. We observe that summary and paraphrase sentences, with their associated documents, can be readily converted to context-query-answer triples using simple entity detection and anonymisation algorithms. Using this approach we have collected two new corpora of roughly a million news stories with associated queries from the CNN and Daily Mail websites. We demonstrate the efficacy of our new corpora by building novel deep learning models for reading comprehension. These models draw on recent developments for incorporating attention mechanisms into recurrent neural network architectures. This allows a model to focus on the aspects of a document that it believes will help it answer a question, and also allows us to visualises its inference process. We compare these neural models to a range of baselines and heuristic benchmarks based upon a traditional frame semantic analysis provided by a state-of-the-art natural language processing."
-
->	"The supervised paradigm for training machine reading and comprehension models provides a promising avenue for making progress on the path to building full natural language understanding systems. We have demonstrated a methodology for obtaining a large number of document-query-answer triples and shown that recurrent and attention based neural networks provide an effective modelling framework for this task. Our analysis indicates that the Attentive and Impatient Readers are able to propagate and integrate semantic information over long distances. In particular we believe that the incorporation of an attention mechanism is the key contributor to these results. The attention mechanism that we have employed is just one instantiation of a very general idea which can be further exploited. However, the incorporation of world knowledge and multi-document queries will also require the development of attention and embedding mechanisms whose complexity to query does not scale linearly with the data set size. There are still many queries requiring complex inference and long range reference resolution that our models are not yet able to answer. As such our data provides a scalable challenge that should support NLP research into the future. Further, significantly bigger training data sets can be acquired using the techniques we have described, undoubtedly allowing us to train more expressive and accurate models."
-
->	"Summary:  
->	- Supervised machine reading is a viable research direction with the available data  
->	- LSTM based recurrent networks constantly surprise with their ability to encode dependencies in sequences  
->	- Attention is a very effective and flexible modelling technique"  
-
->	"Future directions:  
->	- More and better data, corpus querying, and cross document queries  
->	- Recurrent networks incorporating long term and working memory are well suited to NLU task"  
-
-----
->	"The model has to be able to detect symbol in the input (answer placeholder in the question) and substitute it with another symbol (word from document)."
-
->	"Two strategies for transducing with replacement of answer placeholder symbol with entity symbol: document||query (putting all the information about document into thought vector before knowing the query) or query||document (putting all the information about query before thinking about the answer). The second approach (filtering document after digesting query) works better."
-
->	"We do not tell the model anything about the structure. We don't tell it there are query and document (they are just symbols). We don't tell it there is symbol it has to substitute (it just has to learn them). So there is really long range between variable in query and answer in document (thousands of words). And the problem is more difficult than other transduction problems because of that."
-
-  - `video` <http://videolectures.net/deeplearning2015_blunsom_memory_reading/#t=1980> (Blunsom)
-  - `video` <http://youtu.be/-WPP9f1P-Xc?t=22m28s> (Blunsom)
-  - `slides` <http://egrefen.com/docs/HowMuchLinguistics2015.pdf>
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/nips/HermannKGEKSB15>
-  - `code` <https://github.com/carpedm20/attentive-reader-tensorflow>
-  - `paper` ["A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task"](https://arxiv.org/abs/1606.02858) by Chen, Bolton, Manning
-
-
 #### ["Text Understanding with the Attention Sum Reader Network"](http://arxiv.org/abs/1603.01547) Kadlec, Schmid, Bajgar, Kleindienst
   `Attention Sum Reader`
 >	"Several large cloze-style context-question-answer datasets have been introduced recently: the CNN and Daily Mail news data and the Children’s Book Test. Thanks to the size of these datasets, the associated text comprehension task is well suited for deep-learning techniques that currently seem to outperform all alternative approaches. We present a new, simple model that uses attention to directly pick the answer from the context as opposed to computing the answer using a blended representation of words in the document as is usual in similar models. This makes the model particularly suitable for question-answering problems where the answer is a single word from the document. Our model outperforms models previously proposed for these tasks by a large margin."
 
 >	"The words from the document and the question are first converted into vector embeddings using a look-up matrix V. The document is then read by a bidirectional GRU network. A concatenation of the hidden states of the forward and backward GRUs at each word is then used as a contextual embedding of this word, intuitively representing the context in which the word is appearing. We can also understand it as representing the set of questions to which this word may be an answer. Similarly the question is read by a bidirectional GRU but in this case only the final hidden states are concatenated to form the question embedding. The attention over each word in the context is then calculated as the dot product of its contextual embedding with the question embedding. This attention is then normalized by the softmax function. While most previous models used this attention as weights to calculate a blended representation of the answer word, we simply sum the attention across all occurrences of each unique words and then simply select the word with the highest sum as the final answer. While simple, this trick seems both to improve accuracy and to speed-up training."
 
-  - `code` <https://github.com/cairoHy/attention-sum-reader>
-
-
-#### ["Embracing data abundance: BookTest Dataset for Reading Comprehension"](https://arxiv.org/abs/1610.00956) Bajgar, Kadlec, Kleindienst
-  `Attention Sum Reader`
 >	"There is a practically unlimited amount of natural language data available. Still, recent work in text comprehension has focused on datasets which are small relative to current computing possibilities. This article is making a case for the community to move to larger data and as a step in that direction it is proposing the BookTest, a new dataset similar to the popular Children’s Book Test (CBT), however more than 60 times larger. We show that training on the new data improves the accuracy of our Attention-Sum Reader model on the original CBT test data by a much larger margin than many recent attempts to improve the model architecture. On one version of the dataset our ensemble even exceeds the human baseline provided by Facebook. We then show in our own human study that there is still space for further improvement."
 
 >	"We have shown that simply infusing a model with more data can yield performance improvements of up to 14.8% where several attempts to improve the model architecture on the same training data have given gains of at most 2.1% compared to our best ensemble result."
@@ -1748,25 +1699,31 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 
 >	"If we move model training from joint CBT NE+CN training data to a subset of the BookTest of the same size (230k examples), we see a drop in accuracy of around 10% on the CBT test datasets. Hence even though the Children’s Book Test and BookTest datasets are almost as close as two disjoint datasets can get, the transfer is still very imperfect. This also suggests that the increase in accuracy when using more data that are strictly in the same domain as the original training data results in a performance increase even larger that the one we are reporting on CBT. However the scenario of having to look for additional data elsewhere is more realistic."
 
+  - `video` <https://youtu.be/fpycaHd1Z08?t=14m46s> (Neubig)
   - `code` <https://github.com/cairoHy/attention-sum-reader>
+  - `paper` ["Embracing data abundance: BookTest Dataset for Reading Comprehension"](https://arxiv.org/abs/1610.00956) by Bajgar, Kadlec, Kleindienst
+
+
+#### ["Question Answering from Unstructured Text by Retrieval and Comprehension"](https://arxiv.org/abs/1703.08885) Watanabe, Dhingra, Salakhutdinov
+  `extended Attention Sum Reader`
+>	"Open domain Question Answering systems must interact with external knowledge sources, such as web pages, to find relevant information. Information sources like Wikipedia, however, are not well structured and difficult to utilize in comparison with Knowledge Bases. In this work we present a two-step approach to question answering from unstructured text, consisting of a retrieval step and a comprehension step. For comprehension, we present an RNN based attention model with a novel mixture mechanism for selecting answers from either retrieved articles or a fixed vocabulary. For retrieval we introduce a hand-crafted model and a neural model for ranking relevant articles. We achieve state-of-the-art performance on WIKIMOVIES dataset, reducing the error by 40%. Our experimental results further demonstrate the importance of each of the introduced components."
+
+  - <https://theneuralperspective.com/2017/04/26/question-answering-from-unstructured-text-by-retrieval-and-comprehension/>
+  - <https://soundcloud.com/nlp-highlights/13a>
 
 
 #### ["Bidirectional Attention Flow for Machine Comprehension"](https://arxiv.org/abs/1611.01603) Seo, Kembhavi, Farhadi, Hajishirzi
   `BiDAF`
 >	"Machine comprehension, answering a query about a given context paragraph, requires modeling complex interactions between the context and the query. Recently, attention mechanisms have been successfully extended to MC. Typically these methods use attention to focus on a small portion of the context and summarize it with a fixed-size vector, couple attentions temporally, and/or often form a uni-directional attention. In this paper we introduce the Bi-Directional Attention Flow network, a multi-stage hierarchical process that represents the context at different levels of granularity and uses bidirectional attention flow mechanism to obtain a query-aware context representation without early summarization."
 
+  - `video` <https://youtu.be/fpycaHd1Z08?t=20m28s> (Neubig)
   - `code` <https://github.com/allenai/allennlp/tree/master/allennlp/models/reading_comprehension>
 
 
 #### ["Coarse-to-Fine Question Answering for Long Documents"](https://arxiv.org/abs/1611.01839) Choi, Hewlett, Lacoste, Polosukhin, Uszkoreit, Berant
 >	"We present a framework for question answering that can efficiently scale to longer documents while maintaining or even improving performance of state-of-the-art models. While most successful approaches for reading comprehension rely on recurrent neural networks, running them over long documents is prohibitively slow because it is difficult to parallelize over sequences. Inspired by how people first skim the document, identify relevant parts, and carefully read these parts to produce an answer, we combine a coarse, fast model for selecting relevant sentences and a more expensive RNN for producing the answer from those sentences. We treat sentence selection as a latent variable trained jointly from the answer only using reinforcement learning. Experiments demonstrate the state of the art performance on a challenging subset of the WIKIREADING dataset and on a new dataset, while speeding up the model by 3.5x-6.7x."
 
-
-#### ["Question Answering from Unstructured Text by Retrieval and Comprehension"](https://arxiv.org/abs/1703.08885) Watanabe, Dhingra, Salakhutdinov
-  `extended Attention Sum Reader`
->	"Open domain Question Answering systems must interact with external knowledge sources, such as web pages, to find relevant information. Information sources like Wikipedia, however, are not well structured and difficult to utilize in comparison with Knowledge Bases. In this work we present a two-step approach to question answering from unstructured text, consisting of a retrieval step and a comprehension step. For comprehension, we present an RNN based attention model with a novel mixture mechanism for selecting answers from either retrieved articles or a fixed vocabulary. For retrieval we introduce a hand-crafted model and a neural model for ranking relevant articles. We achieve state-of-the-art performance on WIKIMOVIES dataset, reducing the error by 40%. Our experimental results further demonstrate the importance of each of the introduced components."
-  - <https://theneuralperspective.com/2017/04/26/question-answering-from-unstructured-text-by-retrieval-and-comprehension/>
-  - <https://soundcloud.com/nlp-highlights/13a>
+  - `video` <https://youtu.be/fpycaHd1Z08?t=36m14s> (Neubig)
 
 
 #### ["End-to-End Goal-Driven Web Navigation"](http://arxiv.org/abs/1602.02261) Nogueira, Cho
@@ -1789,7 +1746,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
   `using web search engine`
 >	"We frame Question Answering as a Reinforcement Learning task, an approach that we call Active Question Answering. We propose an agent that sits between the user and a black box question-answering system and which learns to reformulate questions to elicit the best possible answers. The agent probes the system with, potentially many, natural languagere formulations of an initial question and aggregates the returned evidence to yield the best answer. The reformulation system is trained end-to-end to maximize answer quality using policy gradient. We evaluate on SearchQA, a dataset of complex questions extracted from Jeopardy!. Our agent improves F1 by 11% over a state-of-the-art base model that uses the original question/answer pairs."
 
-  - `video` <https://facebook.com/iclr.cc/videos/2125495797479475> (1:03:56) (Bulian, Houlsby)
+  - `video` <https://facebook.com/iclr.cc/videos/2125495797479475?t=3836> (Bulian, Houlsby)
   - `video` <https://youtu.be/soZXAH3leeQ?t=34m43s> (Cho)
 
 
@@ -1829,7 +1786,8 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 >	- small proof depth"  
 
   - `video` <https://youtube.com/watch?v=2ovZnvVPiQ8> (Rocktaschel)
-  - `video` <https://facebook.com/nipsfoundation/videos/1554402331317667> (28:51)
+  - `video` <https://facebook.com/nipsfoundation/videos/1554402331317667?t=1731>
+  - `video` <https://youtu.be/fpycaHd1Z08?t=38m53s> (Neubig)
   - `poster` <https://rockt.github.io/pdf/rocktaschel2017end-poster.pdf>
   - `slides` <https://rockt.github.io/pdf/rocktaschel2017end-slides.pdf> (Rocktaschel)
   - `slides` <http://aitp-conference.org/2017/slides/Tim_aitp.pdf> (Rocktaschel)

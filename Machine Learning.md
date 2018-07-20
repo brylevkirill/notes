@@ -5,7 +5,7 @@
   * [**theory**](#theory)
   * [**methods**](#methods)
   * [**representation learning**](#representation-learning)
-  * [**program induction**](#program-induction)
+  * [**program synthesis**](#program-synthesis)
   * [**meta-learning**](#meta-learning)
   * [**automated machine learning**](#automated-machine-learning)
   * [**interesting papers**](#interesting-papers)
@@ -91,7 +91,6 @@
 
 #### books
 
-  ["The Master Algorithm"](http://basicbooks.com/full-details?isbn=9780465065707) by Pedro Domingos  
   ["A First Encounter with Machine Learning"](https://www.ics.uci.edu/~welling/teaching/ICS273Afall11/IntroMLBook.pdf) by Max Welling  
   ["Deep Learning"](http://www.deeplearningbook.org) by Ian Goodfellow, Yoshua Bengio, Aaron Courville  
   ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/book/ebook/the-book.html)
@@ -138,16 +137,17 @@
 
 #### conferences
 
-  - ICML 2018
-	<https://facebook.com/icml.imls> `video`
+  - ICML 2018  
+	<https://facebook.com/icml.imls/videos> `video`
+
+	<https://david-abel.github.io/blog/posts/misc/icml_2018.pdf> `notes`
 
   - ICLR 2018  
+	<https://facebook.com/iclr.cc/videos> `video`
+
 	<http://search.iclr2018.smerity.com>  
 	<http://iclr2018.mmanukyan.io>  
 	<http://chillee.github.io/OpenReviewExplorer>  
-
-  - AAAI 2018  
-	<https://cs.brown.edu/people/dabel/blog/posts/misc/aaai_2018.pdf> `notes`
 
   - NIPS 2017  
 	<https://nips.cc/Conferences/2017/Videos> `video`  
@@ -168,7 +168,7 @@
 	<https://olgalitech.wordpress.com/tag/icml2017/>  
 
   - ICLR 2017  
-	<https://facebook.com/pg/iclr.cc/videos/> `video`
+	<https://facebook.com/iclr.cc/videos> `video`
 
 	<https://medium.com/@karpathy/iclr-2017-vs-arxiv-sanity-d1488ac5c131>
 
@@ -269,6 +269,7 @@
 
   [course](http://www.mit.edu/~9.520/fall17/) by Tomaso Poggio, Lorenzo Rosasco, Georgios Evangelopoulos `video`  
   [course](http://work.caltech.edu/telecourse.html) by Yaser Abu-Mostafa `video`  
+  [course](http://youtube.com/watch?v=jX7Ky76eI7E) by Sebastien Bubeck `video`  
 
 
 ----
@@ -347,7 +348,7 @@
 
 
 ---
-### program induction
+### program synthesis
 
   programmatic representations:  
   - *well-specified*  
@@ -379,10 +380,13 @@
 
   [inductive programming](https://en.wikipedia.org/wiki/Inductive_programming)
 
-  ["Program Synthesis Explained"](http://homes.cs.washington.edu/~bornholt/post/synthesis-for-architects.html) by James Bornholt  
+  ["Program Synthesis Explained"](http://homes.cs.washington.edu/~bornholt/post/synthesis-for-architects.html) by James Bornholt
 
   ["Inductive Programming Meets the Real World"](https://microsoft.com/en-us/research/publication/inductive-programming-meets-real-world/) by Gulwani et al. `paper`  
+  ["Program Synthesis"](https://microsoft.com/en-us/research/wp-content/uploads/2017/10/program_synthesis_now.pdf) by Gulwani, Polozov, Singh `paper`  
   ["Approaches and Applications of Inductive Programming"](http://drops.dagstuhl.de/opus/volltexte/2018/8590/pdf/dagrep_v007_i009_p086_17382.pdf) by Schmid, Muggleton, Singh `paper`  
+
+  ["Program Synthesis in 2017-18"](https://alexpolozov.com/blog/program-synthesis-2018) by Oleksandr Polozov  
   ["Recent Advances in Neural Program Synthesis"](https://arxiv.org/abs/1802.02353) by Neel Kant `paper`  
 
   [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#program-induction)  
@@ -390,7 +394,7 @@
 
 ----
 
-  ["Deep Learning Trends: Program Induction"](https://facebook.com/nipsfoundation/videos/1552060484885185/) (1:30:12) by Scott Reed `video`  
+  ["Deep Learning Trends: Program Induction"](https://facebook.com/nipsfoundation/videos/1552060484885185?t=5412) by Scott Reed `video`  
   ["Learning to Code: Machine Learning for Program Induction"](https://youtu.be/vzDuVhFMB9Q?t=2m40s) by Alex Gaunt `video`  
 
   ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi) workshop at NIPS 2016
@@ -407,7 +411,7 @@
 ---
 ### meta-learning
 
-  [overview](https://facebook.com/nipsfoundation/videos/1554594181298482/) (4:37) by Pieter Abbeel `video`  
+  [overview](https://facebook.com/nipsfoundation/videos/1554594181298482?t=277) by Pieter Abbeel `video`  
   [overview](https://vimeo.com/250423463) by Oriol Vinyals `video`  
   [overview](http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/#t=631) by Nando de Freitas `video`  
 
@@ -679,7 +683,20 @@
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#making-contextual-decisions-with-low-technical-debt-agarwal-et-al>
 
 
-#### ["Communication-Efficient Learning of Deep Networks from Decentralized Data"](https://arxiv.org/abs/1602.05629) McMahan, Moore, Ramage, Hampson, Arcas
->	"Modern mobile devices have access to a wealth of data suitable for learning models, which in turn can greatly improve the user experience on the device. For example, language models can improve speech recognition and text entry, and image models can automatically select good photos. However, this rich data is often privacy sensitive, large in quantity, or both, which may preclude logging to the data center and training there using conventional approaches. We advocate an alternative that leaves the training data distributed on the mobile devices, and learns a shared model by aggregating locally-computed updates. We term this decentralized approach Federated Learning. We present a practical method for the federated learning of deep networks based on iterative model averaging, and conduct an extensive empirical evaluation, considering five different model architectures and four datasets. These experiments demonstrate the approach is robust to the unbalanced and non-IID data distributions that are a defining characteristic of this setting. Communication costs are the principal constraint, and we show a reduction in required communication rounds by 10-100x as compared to synchronized stochastic gradient descent."
+#### ["CatBoost: Gradient Boosting with Categorical Features Support"](http://learningsys.org/nips17/assets/papers/paper_11.pdf) Dorogush, Ershov, Gulin
+>	"In this paper we present CatBoost, a new open-sourced gradient boosting library that successfully handles categorical features and outperforms existing publicly available implementations of gradient boosting in terms of quality on a set of popular publicly available datasets. The library has a GPU implementation of learning algorithm and a CPU implementation of scoring algorithm, which are significantly faster than other gradient boosting libraries on ensembles of similar sizes."
 
-  - `post` <https://research.googleblog.com/2017/04/federated-learning-collaborative.html>
+>	"Two critical algorithmic advances introduced in CatBoost are the implementation of ordered boosting, a permutation-driven alternative to the classic algorithm, and an innovative algorithm for processing categorical features. Both techniques were created to fight a prediction shift caused by a special kind of target leakage present in all currently existing implementations of gradient boosting algorithms."
+
+  - <https://catboost.yandex>
+  - `video` <https://youtube.com/watch?v=8o0e-r0B5xQ> (Dorogush)
+  - `video` <https://youtube.com/watch?v=db-iLhQvcH8> (Prokhorenkova)
+  - `video` <https://youtube.com/watch?v=UYDwhuyWYSo> (Dorogush) `in russian`
+  - `video` <https://youtube.com/watch?v=9ZrfErvm97M> (Dorogush) `in russian`
+  - `video` <https://youtube.com/watch?v=Q_xa4RvnDcY> (Dorogush) `in russian`
+  - `code` <https://github.com/catboost/catboost>
+  - `paper` ["CatBoost: Unbiased Boosting with Categorical Features"](https://arxiv.org/abs/1706.09516) by Prokhorenkova, Gusev, Vorobev, Dorogush, Gulin
+
+
+#### ["Consistent Individualized Feature Attribution for Tree Ensembles"](https://arxiv.org/abs/1802.03888) Lundberg, Erion, Lee
+>	"Interpreting predictions from tree ensemble methods such as gradient boosting machines and random forests is important, yet feature attribution for trees is often heuristic and not individualized for each prediction. Here we show that popular feature attribution methods are inconsistent, meaning they can lower a feature's assigned importance when the true impact of that feature actually increases. This is a fundamental problem that casts doubt on any comparison between features. To address it we turn to recent applications of game theory and develop fast exact tree solutions for SHAP (SHapley Additive exPlanation) values, which are the unique consistent and locally accurate attribution values. We then extend SHAP values to interaction effects and define SHAP interaction values. We propose a rich visualization of individualized feature attributions that improves over classic attribution summaries and partial dependence plots, and a unique "supervised" clustering (clustering based on feature attributions). We demonstrate better agreement with human intuition through a user study, exponential improvements in run time, improved clustering performance, and better identification of influential features. An implementation of our algorithm has also been merged into XGBoost and LightGBM."

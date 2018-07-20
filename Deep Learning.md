@@ -505,10 +505,11 @@
 
   ["Deep Generative Models"](http://www.deeplearningbook.org/contents/generative_models.html) chapter (section 20.10.4) of "Deep Learning" book by Goodfellow, Bengio, Courville
 
-  [introduction](https://youtu.be/5WoItGTWV54?t=51m14s) by Serena Yeung `video`
-
   ["NIPS 2016 Tutorial: Generative Adversarial Networks"](https://arxiv.org/abs/1701.00160) by Ian Goodfellow `paper`  
   [tutorial](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks) by Ian Goodfellow `video` ([slides](http://iangoodfellow.com/slides/2016-12-04-NIPS.pdf))  
+
+  ["The GAN Landscape: Losses, Architectures, Regularization, and Normalization"](https://arxiv.org/abs/1807.04720) by Kurach et al. `paper`  
+  ["What Are GANs Useful For?"](https://openreview.net/pdf?id=HkwrqtlR-) by Omlos et al. `paper`  
 
   ["Probabilistic Deep Learning"](https://youtu.be/xFCuXE1Nb8w&t=8m25s) by Sebastian Nowozin `video`  
   ["Implicit Generative Models: Dual and Primal Approaches"](https://youtube.com/watch?v=m80Vp-jz-Io) by Iliya Tolstikhin `video`  
@@ -521,10 +522,6 @@
   ["An Alternative Update Rule for Generative Adversarial Networks"](http://inference.vc/an-alternative-update-rule-for-generative-adversarial-networks/) by Ferenc Huszar  
   ["Adversarial Preference Loss"](http://inference.vc/adversarial-preference-loss/) by Ferenc Huszar  
   ["New Perspectives on Adversarial Training"](http://inference.vc/my-summary-of-adversarial-training-nips-workshop/) by Ferenc Huszar  
-
-
-  ["What Are GANs Useful For?"](https://openreview.net/pdf?id=HkwrqtlR-) `paper`
-
 
   ["Some Open Questions"](http://www.offconvex.org/2017/03/15/GANs/) by Sanjeev Arora  
   ["Generalization and Equilibrium in Generative Adversarial Networks"](http://www.offconvex.org/2017/03/30/GANs2/) by Sanjeev Arora ([talk](https://youtube.com/watch?v=V7TliSCqOwI) `video`)  
@@ -606,8 +603,6 @@
 
   ["Deep Generative Models"](http://www.deeplearningbook.org/contents/generative_models.html) chapter (section 20.10.3) of "Deep Learning" book by Goodfellow, Bengio, Courville
 
-  [introduction](https://youtu.be/5WoItGTWV54?t=19m58s) by Serena Yeung `video`  
-
   [tutorial](http://arxiv.org/abs/1606.05908) by Carl Doersch `paper` ([code](https://github.com/cdoersch/vae_tutorial))  
   ["Variational Inference & Deep Learning: A New Synthesis"](https://dropbox.com/s/v6ua3d9yt44vgb3/cover_and_thesis.pdf) by Diederik Kingma `paper`  
 
@@ -658,8 +653,6 @@
   [**papers and resources**](#interesting-papers---autoregressive-models)
 
   ["Deep Generative Models"](http://www.deeplearningbook.org/contents/generative_models.html) chapter (sections 20.10.7-20.10.10) of "Deep Learning" book by Goodfellow, Bengio, Courville
-
-  [introduction](https://youtu.be/5WoItGTWV54?t=9m12s) by Serena Yeung `video`  
 
   ["Sequence-To-Sequence Modeling with Neural Networks"](https://vimeo.com/240428387) by Oriol Vinyals and Navdeep Jaitly `video`  
   ["Generative Modelling as Sequence Learning"](https://youtube.com/watch?v=leu286ciQcE) by Nal Kalchbrenner `video`  
@@ -1096,8 +1089,8 @@
 
 >	"You might assume that if you can fit each point in a random training set you would have bad generalization performance because because if your model class can do this then all of the standard learning theory bounds for generalization error are quite dire. VC theory gives generalization bounds in terms of the maximum number of points where you can achieve zero training error for every possible labelling (they call this "shattering"). Rademacher complexity gives tighter bounds, but they are in terms of the expected error of the model class over uniform random labellings of your data (the expectation is over the randomness in the random labels). If you model class is powerful enough to fit any arbitrary labelling of your data set then both of these theories give no guarantees at all about generalization error. They can't guarantee you will ever make a single correct prediction, even with infinite test samples. Obviously, experience says otherwise. Neural nets tend to generalize pretty well (often surprisingly well) in spite of the dire predictions of learning theory. That's why this result requires "rethinking generalization"; the stuff we know about generalization doesn't explain any of the success we see in practice."
 
-  - `video` <https://facebook.com/iclr.cc/videos/1710657292296663/> (18:25) (Recht)
-  - `video` <https://facebook.com/iclr.cc/videos/1710657292296663/> (53:40) (Zhang)
+  - `video` <https://facebook.com/iclr.cc/videos/1710657292296663?t=1105> (Recht)
+  - `video` <https://facebook.com/iclr.cc/videos/1710657292296663?t=3220> (Zhang)
   - `notes` <https://theneuralperspective.com/2017/01/24/understanding-deep-learning-requires-rethinking-generalization/>
   - `notes` <https://blog.acolyer.org/2017/05/11/understanding-deep-learning-requires-re-thinking-generalization/>
   - `notes` <https://reddit.com/r/MachineLearning/comments/6ailoh/r_understanding_deep_learning_requires_rethinking/dhis1hz/>
@@ -1357,7 +1350,7 @@ Yoshua Bengio:
 >	"Weights are initialized in such a way that for any unit in a layer with input weights wi Σ wi = 0 and Σ wi^2 = 1."
 >	"selu(x) = λx for x>0 and selu(x) = λ(αe^x − α) for x≤0, where α≈1.6733 and λ≈1.0507"
 
-  - `video` <https://facebook.com/nipsfoundation/videos/1555553784535855/> (47:04) (Klambauer)
+  - `video` <https://facebook.com/nipsfoundation/videos/1555553784535855?t=2824> (Klambauer)
   - `video` <https://youtube.com/watch?v=h6eQrkkU9SA> (Hochreiter)
   - `video` <https://youtu.be/NZEAqdepq0w?t=34m3s> (Hochreiter)
   - `video` <https://youtube.com/watch?v=gH-KWepKSNs> (Klambauer)
@@ -1394,7 +1387,7 @@ Yoshua Bengio:
 
   - `video` <https://youtube.com/watch?v=0w9fLX_T6tY> (Koh)
   - `video` <https://vimeo.com/237274831> (Koh)
-  - `video` <https://facebook.com/academics/videos/1633085090076225/> (1:23:28) (Liang)
+  - `video` <https://facebook.com/academics/videos/1633085090076225?t=5008> (Liang)
   - `video` <https://youtube.com/watch?v=dk6UsEzfKdU> (Matushkin) `in russian`
   - `code` <https://github.com/kohpangwei/influence-release>
   - `code` <https://github.com/darkonhub/darkon>
@@ -1423,6 +1416,7 @@ Yoshua Bengio:
 
   - `video` <https://youtube.com/watch?v=jmMsNQ2eug4> (Schulman)
   - `video` <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724> (Abbeel)
+  - `video` <https://facebook.com/icml.imls/videos/429607650887089?t=281> (Foerster)
   - `notes` <https://yobibyte.github.io/files/paper_notes/scg.pdf>
   - `paper` ["Optimizing Expectations: From Deep Reinforcement Learning to Stochastic Computation Graphs"](http://joschu.net/docs/thesis.pdf) by Schulman
 
@@ -1481,7 +1475,7 @@ Yoshua Bengio:
 >	"Doesn't close the performance gap of VAEs with continuous latent variables where one can use the Gaussian reparameterisation trick which benefits from much lower variance in the gradients."
 
   - `video` <http://youtube.com/watch?v=JFgXEbgcT7g> (Jang)
-  - `video` <https://facebook.com/nipsfoundation/videos/1555493854541848/> (25:13) (Teh)
+  - `video` <https://facebook.com/nipsfoundation/videos/1555493854541848?t=1513> (Teh)
   - `video` <https://youtu.be/_JTu50iDhkA?t=55m53s> (Sobolev)
   - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (23:39) (Bengio)
   - `video` <https://youtu.be/_XRBlhzb31U?t=28m33s> (Figurnov) `in russian`
@@ -1508,7 +1502,7 @@ Yoshua Bengio:
 >	"Estimators for gradient ∇φ E pθ(h)[f(h)] of expectation over discrete distribution pθ(h): unbiased (REINFORCE, NVIL, MuProp) and biased (Straight Through, 1/2 estimator, Concrete/Gumbel-Softmax)."
 
   - `video` <https://youtube.com/watch?v=QODYgBhv_no>
-  - `video` <https://facebook.com/nipsfoundation/videos/1554402064651027/> (16:33) (Tucker)
+  - `video` <https://facebook.com/nipsfoundation/videos/1554402064651027?t=993> (Tucker)
   - `video` <https://youtu.be/hkRBoiaplEE?t=34m27s> (Sobolev)
   - `code` <https://github.com/tensorflow/models/tree/master/research/rebar>
   - `code` <https://github.com/Bonnevie/rebar>
@@ -1540,6 +1534,8 @@ Yoshua Bengio:
 #### ["DiCE: The Infinitely Differentiable Monte Carlo Estimator"](https://arxiv.org/abs/1802.05098) Foerster, Farquhar, Al-Shedivat, Rocktaschel, Xing, Whiteson
 >	"The score function estimator is widely used for estimating gradients of stochastic objectives in Stochastic Computation Graphs, e.g., in reinforcement learning and meta-learning. While deriving the first order gradient estimators by differentiating a surrogate loss (SL) objective is computationally and conceptually simple, using the same approach for higher order gradients is more challenging. Firstly, analytically deriving and implementing such estimators is laborious and not compliant with automatic differentiation. Secondly, repeatedly applying SL to construct new objectives for each order gradient involves increasingly cumbersome graph manipulations. Lastly, to match the first order gradient under differentiation, SL treats part of the cost as a fixed sample, which we show leads to missing and wrong terms for higher order gradient estimators. To address all these shortcomings in a unified way, we introduce DICE, which provides a single objective that can be differentiated repeatedly, generating correct gradient estimators of any order in SCGs. Unlike SL, DICE relies on automatic differentiation for performing the requisite graph manipulations. We verify the correctness of DICE both through a proof and through numerical evaluation of the DICE gradient estimates. We also use DICE to propose and evaluate a novel approach for multi-agent learning."
 
+  - `video` <https://facebook.com/icml.imls/videos/429607650887089?t=197> (Foerster)
+  - `code` <https://github.com/tensorflow/probability/blob/master/tensorflow_probability/python/monte_carlo.py>
   - `code` <https://drive.google.com/drive/folders/1qjuLTdRbM5CoyNGEyaCJdFKJ9UEwhU28>
 
 
@@ -1768,7 +1764,7 @@ Yoshua Bengio:
 >	"Existing bayesian solutions (MCMC, VI, MC-Dropout) are hard to scale and requires significant modifications for training."  
 >	"Single network and MC-Dropout can produce overconfident wrong predictions, whereas deep ensembles are more robust."  
 
-  - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747/> (1:00:23) (Lakshminarayanan)
+  - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747?t=3623> (Lakshminarayanan)
   - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/simple-and-scalable-predictive-uncertainty-estimation-using-deep-ensembles/> `in russian`
   - `code` <https://github.com/axelbrando/Mixture-Density-Networks-for-distribution-and-uncertainty-estimation>
 
@@ -2173,7 +2169,7 @@ x."
 >	- activation vectors are easier to interpret (rotation, thickness, skew)"  
 
   - `video` <https://youtube.com/watch?v=gq-7HgzfDBM>
-  - `video` <https://facebook.com/nipsfoundation/videos/1553634558061111/> (1:37:04) (Frosst)
+  - `video` <https://facebook.com/nipsfoundation/videos/1553634558061111?t=5824> (Frosst)
   - `video` ["What is wrong with convolutional neural nets?"](https://youtube.com/watch?v=Mqt8fs6ZbHk) (Hinton)
   - `video` ["What's wrong with convolutional nets?"](http://techtv.mit.edu/collections/bcs/videos/30698-what-s-wrong-with-convolutional-nets) (Hinton) ([transcription](https://github.com/WalnutiQ/walnut/issues/157))
   - `video` ["Does the Brain do Inverse Graphics?"](https://youtube.com/watch?v=TFIMqt0yT2I) (Hinton)
@@ -2357,7 +2353,7 @@ x."
 >	- self-attention (restricted): O(n/r)"  
 
   - `post` <https://research.googleblog.com/2017/08/transformer-novel-neural-network.html>
-  - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747/> (18:27) (Vaswani, Shazeer)
+  - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747?t=1107> (Vaswani, Shazeer)
   - `video` <https://youtu.be/I0nX4HDmXKc?t=7m46s> (Polosukhin)
   - `video` <https://youtube.com/watch?v=rBCqOTEfxvg> (Kaiser)
   - `video` <https://youtube.com/watch?v=iDulhoQ2pro> (Kilcher)
@@ -2511,7 +2507,7 @@ x."
 
   - `post` <https://deepmind.com/blog/differentiable-neural-computers/>
   - `video` <https://youtube.com/watch?v=steioHoiEms> (Graves)
-  - `video` <https://facebook.com/iclr.cc/videos/1713144705381255/> (9:09) (Graves)
+  - `video` <https://facebook.com/iclr.cc/videos/1713144705381255?t=549> (Graves)
   - `video` <https://youtu.be/9z3_tJAu7MQ?t=3m16s> (Wayne)
   - `video` <https://youtube.com/watch?v=PQrlOjj8gAc> (Wayne)
   - `video` <https://youtu.be/otRoAQtc5Dk?t=59m56s> (Polykovskiy)
@@ -2858,7 +2854,7 @@ x."
 >	"Artificial neural networks are most commonly trained with the back-propagation algorithm, where the gradient for learning is provided by back-propagating the error, layer by layer, from the output layer to the hidden layers. A recently discovered method called feedback-alignment shows that the weights used for propagating the error backward don't have to be symmetric with the weights used for propagation the activation forward. In fact, random feedback weights work evenly well, because the network learns how to make the feedback useful. In this work, the feedback alignment principle is used for training hidden layers more independently from the rest of the network, and from a zero initial condition. The error is propagated through fixed random feedback connections directly from the output layer to each hidden layer. This simple method is able to achieve zero training error even in convolutional networks and very deep networks, completely without error back-propagation. The method is a step towards biologically plausible machine learning because the error signal is almost local, and no symmetric or reciprocal weights are required. Experiments show that the test performance on MNIST and CIFAR is almost as good as those obtained with back-propagation for fully connected networks. If combined with dropout, the method achieves 1.45% error on the permutation invariant MNIST task."
 
 
-#### ["Assessing the Scalability of Biologically-motivated Deep Learning Algorithms and Architectures"](https://openreview.net/forum?id=BypdvewVM) Bartunov, Santoro, Richards, Hinton, Lillicrap
+#### ["Assessing the Scalability of Biologically-motivated Deep Learning Algorithms and Architectures"](https://arxiv.org/abs/1807.04587) Bartunov, Santoro, Richards, Hinton, Lillicrap
   `Simplified Difference Target Propagation`
 >	"The backpropagation of error algorithm is often said to be impossible to implement in a real brain. The recent success of deep networks in machine learning and AI, however, has inspired a number of proposals for understanding how the brain might learn across multiple layers, and hence how it might implement or approximate BP. As of yet, none of these proposals have been rigorously evaluated on tasks where BP-guided deep learning has proved critical, or in architectures more structured than simple fully-connected networks. Here we present the first results on scaling up a biologically motivated model of deep learning to datasets which need deep networks with appropriate architectures to achieve good performance. We present results on CIFAR-10 and ImageNet. For CIFAR-10 we show that our algorithm, a straightforward, weight-transport-free variant of difference target-propagation modified to remove backpropagation from the penultimate layer, is competitive with BP in training deep networks with locally defined receptive fields that have untied weights. For ImageNet we find that both DTP and our algorithm perform significantly worse than BP, opening questions about whether different architectures or algorithms are required to scale these approaches. Our results and implementation details help establish baselines for biologically motivated deep learning schemes going forward."
 
@@ -2924,10 +2920,6 @@ x."
 
 #### ["A Neural Network for Factoid Question Answering over Paragraphs"](http://cs.umd.edu/~miyyer/qblearn/) Iyyer, Boyd-Graber, Claudino, Socher, Daume
   - <https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#a-neural-network-for-factoid-question-answering-over-paragraphs-iyyer-boyd-graber-claudino-socher-daume>
-
-
-#### ["Teaching Machines to Read and Comprehend"](http://arxiv.org/abs/1506.03340) Hermann, Kocisky, Grefenstette, Espeholt, Kay, Suleyman, Blunsom
-  - <https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#teaching-machines-to-read-and-comprehend-hermann-kocisky-grefenstette-espeholt-kay-suleyman-blunsom>
 
 
 #### ["A Neural Conversational Model"](http://arxiv.org/abs/1506.05869) Vinyals, Le
