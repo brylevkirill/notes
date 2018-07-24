@@ -163,16 +163,6 @@
 ---
 ### knowledge representation - natural language
 
-  "AI requires a lot of knowledge. Reading is the easiest way to acquire it. Text is rich but messy."
-
-  *(Pedro Domingos)*
-
-  "A machine comprehends a passage of text if, for any question regarding that text that can be answered correctly by a majority of native speakers, that machine can provide a string which those speakers would agree both answers that question, and does not contain information irrelevant to that question."
-
-  *(Christopher Manning)*
-
-----
-
   [**Natural Language Processing**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#overview)
 
 ----
@@ -696,10 +686,7 @@
 ---
 ### knowledge representation - probabilistic program
 
-  [**probabilistic programming**](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md):
-  - languages for models that simplify and automate aspects of inference
-  - models and queries defined in terms of complex stochastic computations
-  - programs and languages as formal representations of probabilistic objects
+  [**probabilistic programming**](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)
 
 
 
@@ -949,7 +936,7 @@
 ### machine reading projects
 
   - [**Google Knowledge Vault**](#machine-reading-projects---google-knowledge-vault)  
-  - [**Snorkel**](#machine-reading-projects---snorkel)  
+  - [**Fonduer**](#machine-reading-projects---fonduer)  
   - [**DeepDive**](#machine-reading-projects---deepdive)  
   - [**NELL**](#machine-reading-projects---nell)  
   - [**AI2 Aristo**](#machine-reading-projects---ai2-aristo)  
@@ -979,54 +966,21 @@
 
 
 ---
-### machine reading projects - Snorkel
+### machine reading projects - Fonduer
 
-  [Snorkel](http://github.com/HazyResearch/snorkel) project  
-  [Snorkel](http://hazyresearch.github.io/snorkel) blog  
-
-----
-
-  [overview](https://youtube.com/watch?v=HmocI2b5YfA) by Chris Re `video`  
-  [overview](https://youtu.be/aDtfTFU_c6U?t=7h10m20s) by Chris Re `video`  
+  [Fonduer](https://github.com/HazyResearch/fonduer) project
 
 ----
 
-  ["Data Programming: ML with Weak Supervision"](http://hazyresearch.github.io/snorkel/blog/weak_supervision.html) `post`  
-  ["Socratic Learning: Debugging ML Models"](http://hazyresearch.github.io/snorkel/blog/socratic_learning.html) `post`  
-  ["SLiMFast: Assessing the Reliability of Data"](http://hazyresearch.github.io/snorkel/blog/slimfast.html) `post`  
-  ["Data Programming + TensorFlow Tutorial"](http://hazyresearch.github.io/snorkel/blog/dp_with_tf_blog_post.html) `post`  
   ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](https://hazyresearch.github.io/snorkel/blog/fonduer.html) `post`  
-  ["Babble Labble: Learning from Natural Language Explanations"](https://hazyresearch.github.io/snorkel/blog/babble_labble.html) `post` ([overview](https://youtube.com/watch?v=YBeAX-deMDg) `video`)  
-  ["Structure Learning: Are Your Sources Only Telling You What You Want to Hear?"](https://hazyresearch.github.io/snorkel/blog/structure_learning.html) `post`  
-  ["HoloClean: Weakly Supervised Data Repairing"](https://hazyresearch.github.io/snorkel/blog/holoclean.html) `post`  
-  ["Scaling Up Snorkel with Spark"](https://hazyresearch.github.io/snorkel/blog/snark.html) `post`  
-  ["Weak Supervision: The New Programming Paradigm for Machine Learning"](https://hazyresearch.github.io/snorkel/blog/ws_blog_post.html) `post`  
-  ["Learning to Compose Domain-Specific Transformations for Data Augmentation"](https://hazyresearch.github.io/snorkel/blog/tanda.html) `post`  
-  ["Exploiting Building Blocks of Data to Efficiently Create Training Sets"](http://dawn.cs.stanford.edu/2017/09/14/coral/) `post`  
-  ["Programming Training Data: The New Interface Layer for ML"](https://hazyresearch.github.io/snorkel/blog/snorkel_programming_training_data.html) `post`  
 
-----
-
-  ["Data Programming: Creating Large Training Sets, Quickly"](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#data-programming-creating-large-training-sets-quickly-ratner-sa-wu-selsam-re) `paper` `summary` ([video](https://youtube.com/watch?v=iSQHelJ1xxU))  
-  ["Socratic Learning: Empowering the Generative Model"](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#socratic-learning-empowering-the-generative-model-varma-et-al) `paper` `summary` ([video](https://youtube.com/watch?v=0gRNochbK9c))  
-  ["Data Programming with DDLite: Putting Humans in a Different Part of the Loop"](http://cs.stanford.edu/people/chrismre/papers/DDL_HILDA_2016.pdf) `paper`  
-  ["Snorkel: A System for Lightweight Extraction"](http://cidrdb.org/cidr2017/gongshow/abstracts/cidr2017_73.pdf) `paper` ([talk](https://youtube.com/watch?v=HmocI2b5YfA) `video`)  
-  ["Snorkel: Fast Training Set Generation for Information Extraction"](https://hazyresearch.github.io/snorkel/pdfs/snorkel_demo.pdf) `paper` ([talk](https://youtube.com/watch?v=HmocI2b5YfA) `video`)  
-  ["Learning the Structure of Generative Models without Labeled Data"](https://arxiv.org/abs/1703.00854) `paper` ([talk](https://vimeo.com/240606552) `video`)  
   ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](#fonduer-knowledge-base-construction-from-richly-formatted-data-wu-et-al) `paper` `summary`  
-  ["Learning to Compose Domain-Specific Transformations for Data Augmentation"](https://arxiv.org/abs/1709.01643) `paper` ([video](https://youtube.com/watch?v=eh2LAOjW78A))  
-  ["Inferring Generative Model Structure with Static Analysis"](https://arxiv.org/abs/1709.02477) `paper` ([video](https://youtube.com/watch?v=Do1On5AzHE4))  
-  ["Snorkel: Rapid Training Data Creation with Weak Supervision"](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#snorkel-rapid-training-data-creation-with-weak-supervision-ratner-bach-ehrenberg-fries-wu-re) `paper` `summary` ([talk](https://youtube.com/watch?v=HmocI2b5YfA) `video`)  
 
 ----
 
-  "Snorkel is a system for rapidly creating, modeling, and managing training data, currently focused on accelerating the development of structured or "dark" data extraction applications for domains in which large labeled training sets are not available or easy to obtain.
+  "Fonduer is a framework for building knowledge base construction applications from richy formatted data and is implemented as a library on top of a modified version of [**Snorkel**](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#weak-supervision---data-programming)."
 
-  Today's state-of-the-art machine learning models require massive labeled training sets--which usually do not exist for real-world applications. Instead, Snorkel is based around the new data programming paradigm, in which the developer focuses on writing a set of labeling functions, which are just scripts that programmatically label data. The resulting labels are noisy, but Snorkel automatically models this process - learning, essentially, which labeling functions are more accurate than others - and then uses this to train an end model (for example, a deep neural network in TensorFlow).
-
-  Surprisingly, by modeling a noisy training set creation process in this way, we can take potentially low-quality labeling functions from the user, and use these to train high-quality end models. We see Snorkel as providing a general framework for many weak supervision techniques, and as defining a new programming model for weakly-supervised machine learning systems."
-
-  "The Fonduer programming model allows users to iteratively improve the quality of their labeling functions through error analysis, without executing the full pipeline as in previous techniques like [incremental knowledge base construction](#incremental-knowledge-base-construction-using-deepdive-wu-zhang-wang-re)."
+  "The Fonduer programming model allows users to iteratively improve the quality of their labeling functions through error analysis, without executing the full pipeline as in previous techniques like [**incremental knowledge base construction**](#incremental-knowledge-base-construction-using-deepdive-wu-zhang-wang-re)."
 
 
 
@@ -1048,7 +1002,7 @@
   ["Incremental Knowledge Base Construction Using DeepDive"](#incremental-knowledge-base-construction-using-deepdive-wu-zhang-wang-re) by Wu et al. `paper` `summary`  
   ["Feature Engineering for Knowledge Base Construction"](#feature-engineering-for-knowledge-base-construction-re-et-al) by Re et al. `paper` `summary`  
 
-  ["Knowledge Base Construction"](http://deepdive.stanford.edu/kbc)
+  [overview](http://deepdive.stanford.edu/kbc)
 
 ----
 
@@ -1193,13 +1147,13 @@
 
 
 #### ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](http://arxiv.org/abs/1703.05028) Wu et al.
-  `Snorkel`
+  `Fonduer`
 >	"We introduce Fonduer, a knowledge base construction framework for richly formatted information extraction, where entity relations and attributes are conveyed via structural, tabular, visual, and textual expressions. Fonduer introduces a new programming model for KBC built around a unified data representation that accounts for three challenging characteristics of richly formatted data: (1) prevalent document-level relations, (2) multimodality, and (3) data variety. Fonduer is the first KBC system for richly formatted data and uses a human-in-the-loop paradigm for training machine learning systems, referred to as data programming. Data programming softens the burden of traditional supervision by only asking users to provide lightweight functions that programmatically assign (potentially noisy) labels to the input data. Fonduer’s unified data model, together with data programming, allows users to use domain expertise as weak signals of supervision that help guide the KBC process over richly formatted data. We evaluate Fonduer on four real-world applications over different domains and achieve an average improvement of 42 F1 points over the upper bound of state-of-the-art approaches. In some domains, our users have produced up to 1.87× the number of correct entires compared to expert-curated public knowledge bases. Fonduer scales gracefully to millions of documents and is used in both academia and industry to create knowledge bases for real-world problems in many domains."
 
   - `video` <https://youtube.com/watch?v=HmocI2b5YfA> (Re)
   - `post` <https://hazyresearch.github.io/snorkel/blog/fonduer.html>
   - `code` <https://github.com/HazyResearch/snorkel/>
-  - `paper` ["Data Programming"](https://github.com/brylevkirill/notes/blob/test/Machine%20Learning.md#data-programming-creating-large-training-sets-quickly-ratner-sa-wu-selsam-re) by Ratner et al. `summary`
+  - `paper` ["Data Programming"](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#data-programming-creating-large-training-sets-quickly-ratner-sa-wu-selsam-re) by Ratner et al. `summary`
 
 
 #### ["Feature Engineering for Knowledge Base Construction"](http://arxiv.org/abs/1407.6439) Re et al.
@@ -1887,7 +1841,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 ---
 ### interesting papers - information extraction and integration
 
-[**selected papers**](https://dropbox.com/sh/jmkl4mhajjghjxk/AABfAImA69Kzxx3b0IhCGouMa)  
+[**selected papers**](https://yadi.sk/d/5WLsH_nd3ZUJU4)  
 [papers on entity discovery and linking](http://nlp.cs.rpi.edu/kbp/2017/elreading.html)  
 
 

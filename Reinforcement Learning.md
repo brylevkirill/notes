@@ -62,7 +62,14 @@
 ---
 ### applications
 
-#### industry
+  - [industry](#applications---industry)
+  - [games](#applications---games)
+  - [robotics](#applications---robotics)
+
+
+
+---
+### applications - industry
 
   ["Reinforcement Learning in Industry"](http://videolectures.net/deeplearning2017_le_roux_recommendation_system/) by Nicolas Le Roux `video`
 
@@ -83,8 +90,9 @@
 >	"The logical extension of these neural networks all the way down papers is that an actor like Google / Baidu / Facebook / MS could effectively turn neural networks into a black box: a user/developer uploads through an API a dataset of input/output pairs of a specified type and a monetary loss function, and a top-level neural network running on a large GPU cluster starts autonomously optimizing over architectures & hyperparameters for the neural network design which balances GPU cost and the monetary loss, interleaved with further optimization over the thousands of previous submitted tasks, sharing its learning across all of the datasets / loss functions / architectures / hyperparameters, and the original user simply submits future data through the API for processing by the best neural network so far."
 
 
-----
-#### games
+
+---
+### applications - games
 
   ["A 'Brief' History of Game AI Up To AlphaGo"](http://andreykurenkov.com/writing/a-brief-history-of-game-ai/) by Andrey Kurenkov
 
@@ -280,8 +288,8 @@
 
 
 
-----
-#### robotics
+---
+### applications - robotics
 
   [overview](https://youtube.com/watch?v=lYU5nq0dAQQ) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=eKaYnXQUb2g) by Sergey Levine `video`  
@@ -1855,23 +1863,22 @@ interesting recent papers:
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)
 
 
+  * [**bayesian exploration models**](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration-models)
+  * information theoretic and distributional models
+    - [**uncertainty motivation**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---uncertainty-motivation)
+    - [**information gain motivation**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---information-gain-motivation)
+    - [**empowerment**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---empowerment)
+  * predictive models
+    - [**predictive novelty motivation**](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---predictive-novelty-motivation)
+    - [**learning progress motivation**](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---learning-progress-motivation)
+  * competence-based models
+    - [**maximizing incompetence motivation**](#interesting-papers---exploration-and-intrinsic-motivation---competence-based-models---maximizing-incompetence-motivation)
+
+
 #### ["How Can We Define Intrinsic Motivation"](http://pyoudeyer.com/epirob08OudeyerKaplan.pdf) Oudeyer, Kaplan
 >	"Intrinsic motivation is a crucial mechanism for open-ended cognitive development since it is the driver of spontaneous exploration and curiosity. Yet, it has so far only been conceptualized in ad hoc manners in the epigenetic robotics community. After reviewing different approaches to intrinsic motivation in psychology, this paper presents a unified definition of intrinsic motivation, based on the theory of Daniel Berlyne. Based on this definition, we propose a landscape of types of computational approaches, making it possible to position existing and future models relative to each other, and we show that important approaches are still to be explored."
 
-  - [models of intrinsic motivation](#exploration-and-intrinsic-motivation) described by Oudeyer and Kaplan
-
-----
-
-  * [bayesian exploration models](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration-models)
-  * information theoretic and distributional models
-    - [uncertainty motivation](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---uncertainty-motivation)
-    - [information gain motivation](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---information-gain-motivation)
-    - [empowerment](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---empowerment)
-  * predictive models
-    - [predictive novelty motivation](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---predictive-novelty-motivation)
-    - [learning progress motivation](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---learning-progress-motivation)
-  * competence-based models
-    - [maximizing incompetence motivation](#interesting-papers---exploration-and-intrinsic-motivation---competence-based-models---maximizing-incompetence-motivation)
+  - [**intrinsic motivation**](#exploration-and-intrinsic-motivation)
 
 
 
@@ -2397,10 +2404,6 @@ interesting recent papers:
 [**interesting recent papers - transfer**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---transfer)  
 
 
-#### ["On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models"](http://arxiv.org/abs/1511.09249) Schmidhuber
-  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#on-learning-to-think-algorithmic-information-theory-for-novel-combinations-of-reinforcement-learning-controllers-and-recurrent-neural-world-models-schmidhuber>
-
-
 #### ["Human-level Performance in First-person Multiplayer Games with Population-based Deep Reinforcement Learning"](https://arxiv.org/abs/1807.01281) Jaderberg et al.
   `FTW`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#human-level-performance-in-first-person-multiplayer-games-with-population-based-deep-reinforcement-learning-jaderberg-et-al>
@@ -2428,9 +2431,18 @@ interesting recent papers:
 
 >	"Perhaps the biggest remaining limitation of our work is the assumption that all options apply everywhere. In the case of function approximation, a natural extension to initiation sets is to use a classifier over features, or some other form of function approximation. As a result, determining which options are allowed may have similar cost to evaluating a policy over options (unlike in the tabular setting, where options with sparse initiation sets lead to faster decisions). This is akin to eligibility traces, which are more expensive than using no trace in the tabular case, but have the same complexity with function approximation. If initiation sets are to be learned, the main constraint that needs to be added is that the options and the policy over them lead to an ergodic chain in the augmented state-option space. This can be expressed as a flow condition that links initiation sets with terminations. The precise description of this condition, as well as sparsity regularization for initiation sets, is left for future work."
 
-  - `video` <http://videolectures.net/deeplearning2016_precup_advanced_lr/> (Precup)
-  - `video` <http://youtube.com/watch?v=8r_EoYnPjGk> (Bacon)
-  - `post` <http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/>
+----
+>	"The Option-Critic provides a policy gradient for learning options in an end-to-end manner and leverages an augmented state space in order to do so."  
+>	"The Option-Critic consists of two components: 1) each option should use primitive actions that are better, 2) find good termination conditions (lengthen when the option is good, terminate when it’s bad). A third term also encourages the meta-policy to take better options."  
+
+  - `video` <https://youtube.com/watch?v=8r_EoYnPjGk> (Bacon)
+  - `video` <https://vimeo.com/249559422> (Precup)
+  - `video` <https://youtu.be/ARfpQzRCWT4?t=39m> (Nikishin)
+  - `video` <https://youtube.com/watch?v=ID150Tl-MMw&t=56m55s> (Abbeel)
+  - `slides` <http://pierrelucbacon.com/optioncritic-aaai2017-slides.pdf>
+  - `poster` <http://pierrelucbacon.com/optioncriticposter.pdf>
+  - `notes` <http://tsong.me/blog/option-critic/>
+  - `code` <https://github.com/jeanharb/option_critic>
 
 
 #### ["Universal Value Function Approximators"](http://jmlr.org/proceedings/papers/v37/schaul15.pdf) Schaul, Horgan, Gregor, Silver
@@ -2451,6 +2463,10 @@ interesting recent papers:
 ### interesting papers - model-based methods
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-based-methods)
+
+
+#### ["On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models"](http://arxiv.org/abs/1511.09249) Schmidhuber
+  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#on-learning-to-think-algorithmic-information-theory-for-novel-combinations-of-reinforcement-learning-controllers-and-recurrent-neural-world-models-schmidhuber>
 
 
 #### ["Value Iteration Networks"](http://arxiv.org/abs/1602.02867) Tamar, Wu, Thomas, Levine, Abbeel
@@ -2796,6 +2812,7 @@ interesting recent papers:
 >	"As you iteratively improve your policy, it’s important to constrain the KL divergence between the old and new policy to be less than some constant δ. This δ (in the unit of nats) is better than a fixed step size, since the meaning of the step size changes depending on what the rewards and problem structure look like at different points in training. This is called Trust Region Policy Optimization (or, in a first-order variant, Proximal Policy Optimization) and it matters more as we do more experience replay."
 
   - `video` <https://youtube.com/watch?v=jeid0wIrSn4> + <https://vimeo.com/113957342> (demo)
+  - `video` <https://youtube.com/watch?v=CKaN5PgkSBc>
   - `video` <https://youtu.be/xe-z4i3l-iQ?t=30m35s> (Abbeel)
   - `video` <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=1630> (Abbeel)
   - `video` <https://youtube.com/watch?v=gb5Q2XL5c8A> (Schulman)

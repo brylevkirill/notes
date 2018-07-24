@@ -8,6 +8,7 @@
   * [**program synthesis**](#program-synthesis)
   * [**meta-learning**](#meta-learning)
   * [**automated machine learning**](#automated-machine-learning)
+  * [**weak supervision**](#weak-supervision)
   * [**interesting papers**](#interesting-papers)
     - [**theory**](#interesting-papers---theory)
     - [**automated machine learning**](#interesting-papers---automated-machine-learning)
@@ -546,6 +547,65 @@
 
 
 ---
+### weak supervision
+
+  [**data programming**](#weak-supervision---data-programming)
+
+  ["CleanNet: Transfer Learning for Scalable Image Classifier Training with Label Noise"](https://arxiv.org/abs/1711.07131) by Lee et al. `paper`
+	([post](https://microsoft.com/en-us/research/blog/using-transfer-learning-to-address-label-noise-for-large-scale-image-classification),
+	[post](https://blogs.bing.com/search-quality-insights/2018-06/Artificial-intelligence-human-intelligence-Training-data-breakthrough))
+
+
+
+---
+### weak supervision - data programming
+
+  [Snorkel](http://github.com/HazyResearch/snorkel) project  
+  [Snorkel](http://hazyresearch.github.io/snorkel) blog  
+
+----
+
+  [overview](https://youtube.com/watch?v=08jorbiyLwY) by Chris Re `video`  
+  [overview](https://youtube.com/watch?v=HmocI2b5YfA) by Chris Re `video`  
+
+----
+
+  ["Data Programming: ML with Weak Supervision"](http://hazyresearch.github.io/snorkel/blog/weak_supervision.html) `post`  
+  ["Socratic Learning: Debugging ML Models"](http://hazyresearch.github.io/snorkel/blog/socratic_learning.html) `post`  
+  ["SLiMFast: Assessing the Reliability of Data"](http://hazyresearch.github.io/snorkel/blog/slimfast.html) `post`  
+  ["Data Programming + TensorFlow Tutorial"](http://hazyresearch.github.io/snorkel/blog/dp_with_tf_blog_post.html) `post`  
+  ["Babble Labble: Learning from Natural Language Explanations"](https://hazyresearch.github.io/snorkel/blog/babble_labble.html) `post` ([overview](https://youtube.com/watch?v=YBeAX-deMDg) `video`)  
+  ["Structure Learning: Are Your Sources Only Telling You What You Want to Hear?"](https://hazyresearch.github.io/snorkel/blog/structure_learning.html) `post`  
+  ["HoloClean: Weakly Supervised Data Repairing"](https://hazyresearch.github.io/snorkel/blog/holoclean.html) `post`  
+  ["Scaling Up Snorkel with Spark"](https://hazyresearch.github.io/snorkel/blog/snark.html) `post`  
+  ["Weak Supervision: The New Programming Paradigm for Machine Learning"](https://hazyresearch.github.io/snorkel/blog/ws_blog_post.html) `post`  
+  ["Learning to Compose Domain-Specific Transformations for Data Augmentation"](https://hazyresearch.github.io/snorkel/blog/tanda.html) `post`  
+  ["Exploiting Building Blocks of Data to Efficiently Create Training Sets"](http://dawn.cs.stanford.edu/2017/09/14/coral/) `post`  
+  ["Programming Training Data: The New Interface Layer for ML"](https://hazyresearch.github.io/snorkel/blog/snorkel_programming_training_data.html) `post`  
+
+----
+
+  ["Data Programming: Creating Large Training Sets, Quickly"](#data-programming-creating-large-training-sets-quickly-ratner-sa-wu-selsam-re) `paper` `summary` ([video](https://youtube.com/watch?v=iSQHelJ1xxU))  
+  ["Socratic Learning: Empowering the Generative Model"](#socratic-learning-empowering-the-generative-model-varma-et-al) `paper` `summary` ([video](https://youtube.com/watch?v=0gRNochbK9c))  
+  ["Data Programming with DDLite: Putting Humans in a Different Part of the Loop"](http://cs.stanford.edu/people/chrismre/papers/DDL_HILDA_2016.pdf) `paper`  
+  ["Snorkel: A System for Lightweight Extraction"](http://cidrdb.org/cidr2017/gongshow/abstracts/cidr2017_73.pdf) `paper` ([talk](https://youtube.com/watch?v=HmocI2b5YfA) `video`)  
+  ["Snorkel: Fast Training Set Generation for Information Extraction"](https://hazyresearch.github.io/snorkel/pdfs/snorkel_demo.pdf) `paper` ([talk](https://youtube.com/watch?v=HmocI2b5YfA) `video`)  
+  ["Learning the Structure of Generative Models without Labeled Data"](https://arxiv.org/abs/1703.00854) `paper` ([talk](https://vimeo.com/240606552) `video`)  
+  ["Learning to Compose Domain-Specific Transformations for Data Augmentation"](https://arxiv.org/abs/1709.01643) `paper` ([video](https://youtube.com/watch?v=eh2LAOjW78A))  
+  ["Inferring Generative Model Structure with Static Analysis"](https://arxiv.org/abs/1709.02477) `paper` ([video](https://youtube.com/watch?v=Do1On5AzHE4))  
+  ["Snorkel: Rapid Training Data Creation with Weak Supervision"](#snorkel-rapid-training-data-creation-with-weak-supervision-ratner-bach-ehrenberg-fries-wu-re) `paper` `summary` ([talk](https://youtube.com/watch?v=HmocI2b5YfA) `video`)  
+
+----
+
+  "Snorkel is a system for rapidly creating, modeling, and managing training data, currently focused on accelerating the development of structured or "dark" data extraction applications for domains in which large labeled training sets are not available or easy to obtain.
+
+  Today's state-of-the-art machine learning models require massive labeled training sets--which usually do not exist for real-world applications. Instead, Snorkel is based around the new data programming paradigm, in which the developer focuses on writing a set of labeling functions, which are just scripts that programmatically label data. The resulting labels are noisy, but Snorkel automatically models this process - learning, essentially, which labeling functions are more accurate than others - and then uses this to train an end model (for example, a deep neural network in TensorFlow).
+
+  Surprisingly, by modeling a noisy training set creation process in this way, we can take potentially low-quality labeling functions from the user, and use these to train high-quality end models. We see Snorkel as providing a general framework for many weak supervision techniques, and as defining a new programming model for weakly-supervised machine learning systems."
+
+
+
+---
 ### interesting papers
 
   - [**theory**](#interesting-papers---theory)
@@ -666,13 +726,14 @@
   `Vowpal Wabbit`
 >	"We present a system and a set of techniques for learning linear predictors with convex losses on terascale data sets, with trillions of features, 1 billions of training examples and millions of parameters in an hour using a cluster of 1000 machines. Individually none of the component techniques are new, but the careful synthesis required to obtain an efficient implementation is. The result is, up to our knowledge, the most scalable and efficient linear learning system reported in the literature. We describe and thoroughly evaluate the components of the system, showing the importance of the various design choices."
 
->	"
+>	"  
 >	 - Online by default  
 >	 - Hashing, raw text is fine  
 >	 - Most scalable public algorithm  
 >	 - Reduction to simple problems  
 >	 - Causation instead of correlation  
->	 - Learn to control based on feedback"  
+>	 - Learn to control based on feedback  
+>	"  
 
   - <https://github.com/JohnLangford/vowpal_wabbit/wiki>
   - `video` <http://youtube.com/watch?v=wwlKkFhEhxE> (Langford)

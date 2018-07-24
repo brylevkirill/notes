@@ -253,11 +253,13 @@
 
   [overview](https://metacademy.org/roadmaps/rgrosse/bayesian_machine_learning#bayesian-nonparametrics) by Roger Grosse
 
-  ["Bayesian Nonparametric Models"](http://www.stats.ox.ac.uk/~teh/research/npbayes/OrbTeh2010a.pdf) by Peter Orbanz and Yee Whye Teh  
+  ["Bayesian Nonparametric Models"](http://www.stats.ox.ac.uk/~teh/research/npbayes/OrbTeh2010a.pdf) by Peter Orbanz and Yee Whye Teh `paper`
 
-  [overview](https://youtu.be/H7AMB0oo__4?t=21m51s) by Zoubin Ghahramani `video`  
+  ["Gaussian Processes for Machine Learning"](http://gaussianprocess.org/gpml) by Carl Rasmussen and Christopher Williams `book`
 
 ----
+
+  [overview](https://youtu.be/H7AMB0oo__4?t=21m51s) by Zoubin Ghahramani `video`
 
   [Gaussian Processes](https://youtube.com/watch?v=4vGiHC35j9s) by Nando de Freitas `video`  
   [Gaussian Processes](https://youtube.com/watch?v=50Vgw11qn0o) by Philipp Hennig `video`  
@@ -265,8 +267,6 @@
 
   ["Gaussian Processes and Bayesian Optimization"](https://youtube.com/watch?v=PgJMLpIfIc8) by Evgeny Burnaev `video` `in russian`  
   ["Scalable and Deep Gaussian Processes"](https://youtube.com/watch?v=NqOBWLUYBm4) by Dmitry Kropotov `video` `in russian`  
-
-----
 
   ["Nonparametric Bayesian Methods: Models, Algorithms, and Applications"](https://youtube.com/watch?v=I7bgrZjoRhM) course by Tamara Broderick and Michael I. Jordan `video`  
   ["Bayesian Nonparametrics"](https://youtube.com/watch?v=kKZkNUvsJ4M) course by Tamara Broderick `video`  

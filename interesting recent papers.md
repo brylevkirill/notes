@@ -849,7 +849,9 @@ interesting older papers:
   - `video` <https://youtu.be/16UUb4HF0fo?t=7m34s> (Golikov) `in russian`
   - `post` <http://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/> (Finn)
   - `post` <http://noahgolmant.com/maml.html>
+  - `code` <https://github.com/tristandeleu/pytorch-maml-rl>
   - `code` <https://github.com/cbfinn/maml>
+  - `code` <https://github.com/cbfinn/maml_rl>
 
 ----
 #### ["Optimization as a Model for Few-Shot Learning"](https://openreview.net/forum?id=rJY0-Kcll) Ravi, Larochelle
@@ -1070,12 +1072,14 @@ interesting older papers:
   `concept learning`
 >	"We first use the previously published beta-VAE (Higgins et al., 2017a) architecture to learn a disentangled representation of the latent structure of the visual world, before training SCAN to extract abstract concepts grounded in such disentangled visual primitives through fast symbol association."  
   - `post` <https://deepmind.com/blog/imagine-creating-new-visual-concepts-recombining-familiar-ones/>
+  - `video` <https://youtu.be/XNGo9xqpgMo?t=18m43s> (Higgins)
 
 #### ["beta-VAE: Learning Basic Visual Concepts with a Constrained Variational Framework"](http://openreview.net/forum?id=Sy2fzU9gl) Higgins, Matthey, Pal, Burgess, Glorot, Botvinick, Mohamed, Lerchner
   `concept learning`
 >	"This paper proposes a modification of the variational ELBO in encourage 'disentangled' representations, and proposes a measure of disentanglement."  
 >	"Beta-VAE is a VAE with beta coefficient in KL divergence term where beta=1 is exactly same formulation of vanilla VAE. By increasing beta, the weighted factor forces model to learn more disentangled representation than VAE. The authors also proposed disentanglement metric by training a simple classifier with low capacity and use it’s prediction accuracy. But the metric can be only calculated in simulator (ground truth generator) setting where we can control independent factors to generate different samples with controlled property."  
   - <http://tinyurl.com/jgbyzke> (demo)
+  - `video` <https://youtu.be/XNGo9xqpgMo?t=10m8s> (Higgins)
 
 #### ["Early Visual Concept Learning with Unsupervised Deep Learning"](http://arxiv.org/abs/1606.05579) Higgins, Matthey, Glorot, Pal, Uria, Blundell, Mohamed, Lerchner
   `concept learning`
@@ -1417,7 +1421,7 @@ interesting older papers:
   `GAN theory`
 
 ----
-#### ["A Geometric View of Optimal Transportation and Generative Model"](https://arxiv.org/abs/1710.05488) Lei, Su, Cui, Yau, Gu
+#### ["A Geometric View of Optimal Transportation and Generative Model"](https://arxiv.org/abs/1710.05488) Lei et al.
   `GAN objective`
 >	"We show the intrinsic relations between optimal transportation and convex geometry, especially the variational approach to solve Alexandrov problem: constructing a convex polytope with prescribed face normals and volumes."  
 >	"By using the optimal transportation view of GAN model, we show that the discriminator computes the Kantorovich potential, the generator calculates the transportation map. For a large class of transportation costs, the Kantorovich potential can give the optimal transportation map by a close-form formula. Therefore, it is sufficient to solely optimize the discriminator. This shows the adversarial competition can be avoided, and the computational architecture can be simplified."  
@@ -1446,6 +1450,7 @@ interesting older papers:
 
 #### ["Improved Training of Wasserstein GANs"](https://arxiv.org/abs/1704.00028) Gulrajani, Ahmed, Arjovsky, Dumoulin, Courville
   `GAN objective` `WGAN-GP`
+>	"The recently proposed Wasserstein GAN makes progress toward stable training of GANs, but sometimes can still generate only low-quality samples or fail to converge. We find that these problems are often due to the use of weight clipping in WGAN to enforce a Lipschitz constraint on the critic, which can lead to undesired behavior. We propose an alternative to clipping weights: penalize the norm of gradient of the critic with respect to its input."  
   - `post` <https://casmls.github.io/general/2017/04/13/gan.html>
   - `post` <https://lernapparat.de/improved-wasserstein-gan>
   - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/wasserstein-generative-adversarial-networks/> `in russian`
@@ -1472,6 +1477,7 @@ interesting older papers:
 >	"The originality is a focus on continuous distributions with low-dimensional support and the idea to parametrize f in order to obtain a fast algorithm."  
 >
 >	"Reposing the two-player game as the estimation of the gradient of the 1-Wasserstein distance between the data and generator distributions. Reframing this in terms of the dual form of the 1-Wasserstein, with the critic estimating a function f which maximally separates the two distributions. It still faces limitations when the critic solution is approximate, i.e. when f* is not found before each update. In this case, due to insufficient training of the critic or limitations of the function approximator, the gradient direction produced can be arbitrarily bad."  
+  - `video` <https://youtube.com/watch?v=31mqB4yGgQY>
   - `video` <https://youtube.com/watch?v=DfJeaa--xO0&t=26m27s> (Bottou)
   - `video` <https://facebook.com/iclr.cc/videos/1710657292296663?t=5402> (Arjowski)
   - `video` <https://youtube.com/watch?v=OdsXPcBfO-c> (Arjowski)
@@ -1552,6 +1558,11 @@ interesting older papers:
   - `video` <https://youtu.be/xfyK03MEZ9Q?t=5h21m15s> (Bagnell)
 
 ----
+#### ["Self-Attention Generative Adversarial Networks"](https://arxiv.org/abs/1805.08318) Zhang, Goodfellow, Metaxas, Odena
+  `GAN applications` `image synthesis` `SAGAN`
+>	"SAGAN allows attention-driven, long-range dependency modeling for image generation tasks. Traditional convolutional GANs generate high-resolution details as a function of only spatially local points in lower-resolution feature maps. In SAGAN, details can be generated using cues from all feature locations. Moreover, the discriminator can check that highly detailed features in distant portions of the image are consistent with each other."  
+  - `video` <https://youtube.com/watch?v=FdeHlC4QiqA> (Chen)
+
 #### ["Synthesizing Programs for Images using Reinforced Adversarial Learning"](https://arxiv.org/abs/1804.01118) Ganin, Kulkarni, Babuschkin, Eslami, Vinyals
   `GAN applications` `image synthesis` `SPIRAL`
   - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#synthesizing-programs-for-images-using-reinforced-adversarial-learning-ganin-kulkarni-babuschkin-eslami-vinyals>
@@ -1789,7 +1800,7 @@ interesting older papers:
 >	"We propose RUDDER, a novel reinforcement learning approach for finite Markov decision processes with delayed rewards, which creates a new MDP with same optimal policies as the original MDP but with redistributed rewards that have largely reduced delays. If the return decomposition is optimal, then the new MDP does not have delayed rewards and TD estimates are unbiased. In this case, the rewards track Q-values so that the future expected reward is always zero."  
 >	"We experimentally confirm our theoretical results on bias and variance of TD and MC estimates. On artificial tasks with different lengths of reward delays, we show that RUDDER is exponentially faster than TD, MC, and MC Tree Search. RUDDER outperforms Rainbow, A3C, DDQN, Distributional DQN, Dueling DDQN, Noisy DQN, and Prioritized DDQN on the delayed reward Atari game Venture in only a fraction of the learning time."  
 >	"The core of the paper breaks down to transforming the reward function of an MDP into one which is simpler to learn, because the delayed reward is redistributed to key events. Also, in non-deterministic cases, high variance in later states are moved back (via reward redistribution) to the key-events responsible for that variance."  
->	"The big idea of RUDDER is to use LSTM to predict return of an episode. To do this, the LSTM will have to recognize what actually causes the reward (e.g. shooting the gun in the right direction causes the reward, even if we get the reward only once the bullet hits the enemy after travelling along the screen). We then use a salience method (layer-wise relevance propagation or integrated gradients) to get that information out of LSTM, and redistribute reward accordingly (i.e., we then give reward already once the gun is shot in the right direction). Once the reward is redistributed this way, solving/learning the actual reinforcement learning problem is much, much easier and as we prove in the paper, the optimal policy does not change with this redistribution."  
+>	"The big idea of RUDDER is to use LSTM to predict return of an episode. To do this, the LSTM will have to recognize what actually causes the reward (e.g. shooting the gun in the right direction causes the reward, even if we get the reward only once the bullet hits the enemy after travelling along the screen). We then use a salience method (Layer-Wise Relevance Propagation or Integrated Gradients) to get that information out of LSTM, and redistribute reward accordingly (i.e., we then give reward already once the gun is shot in the right direction). Once the reward is redistributed this way, solving/learning the actual reinforcement learning problem is much, much easier and as we prove in the paper, the optimal policy does not change with this redistribution."  
 >	"Theoretical results:  
 >	- bias-variance treatment via exponential averages and arithmetic means of TD and MC  
 >	- variance formula for sampling return from an MDP  
@@ -1799,7 +1810,6 @@ interesting older papers:
 >	- return-equivalent transformation of immediate reward MDP into delayed reward MDP which can be used to train LSTM which only sees reward at episode's end  
 >	- return-equivalent transformation of delayed reward MDP into MDP with much reduced delay of reward using reward redistribution and return decomposition  
 >	"  
->	"Reinforcement learning is about credit assignment. Sepp Hochreiter thought about propagating reward backwards 20 years ago, but it was only with sensitivity analysis (derivatives and gradients) which did not work. What made it work is contribution analysis (Layer-Wise Relevance Propagation or Integrated Gradients)."  
   - `video` <https://youtube.com/playlist?list=PLDfrC-Vpg-CzVTqSjxVeLQZy3f7iv9vyY> (demo)
   - `video` <https://youtu.be/NZEAqdepq0w?t=56m34s> (Hochreiter)
   - `post` <https://widmi.github.io>
@@ -2241,79 +2251,19 @@ interesting older papers:
 
 #### ["Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm"](https://arxiv.org/abs/1712.01815) Silver et al.
   `learning to guide planning` `using available environment model` `search-based policy iteration` `expert iteration`
->	"The game of chess is the most widely-studied domain in the history of artificial intelligence. The strongest programs are based on a combination of sophisticated search techniques, domain-specific adaptations, and handcrafted evaluation functions that have been refined by human experts over several decades. In contrast, the AlphaGo Zero program recently achieved superhuman performance in the game of Go, by tabula rasa reinforcement learning from games of self-play. In this paper, we generalise this approach into a single AlphaZero algorithm that can achieve, tabula rasa, superhuman performance in many challenging domains. Starting from random play, and given no domain knowledge except the game rules, AlphaZero achieved within 24 hours a superhuman level of play in the games of chess and shogi (Japanese chess) as well as Go, and convincingly defeated a world-champion program in each case."  
->	"no opening book, no endgame database, no heuristics, no anything"  
->	"One reason why MCTS is so effective compared to Alpha-Beta when you start to use function approximators is that neural network will inevitably have approximation errors. Alpha-Beta search is kind of minimax search and is like glorified big max operator alternating with mins, which will pick out biggest errors in function approximation and propagate it to the root of search tree. Whilst MCTS is averaging over evaluations which tends to cancel out errors in search and can be more effective because of that."  
->	"AlphaGo Zero tuned the hyper-parameter of its search by Bayesian optimization. In AlphaZero they reuse the same hyper-parameters for all games without game-specific tuning. The sole exception is the noise that is added to the prior policy to ensure exploration; this is scaled in proportion to the typical number of legal moves for that game type. Like AlphaGo Zero, the board state is encoded by spatial planes based only on the basic rules for each game. The actions are encoded by either spatial planes or a flat vector, again based only on the basic rules for each game. They applied the AlphaZero algorithm to chess, shogi, and also Go. Unless otherwise specified, the same algorithm settings, network architecture, and hyper-parameters were used for all three games."  
-  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games> (demo)
-  - `video` <https://vimeo.com/252184928#t=1468> (Silver)
-  - `video` <https://youtu.be/DXNqYSNvnjA?t=21m24s> (Hassabis)
-  - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
-  - `notes` <https://blog.acolyer.org/2018/01/10/mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm/>
-  - `code` <https://github.com/glinscott/leela-chess>
-  - `code` <https://github.com/Zeta36/chess-alpha-zero>
-  - `code` <https://github.com/junxiaosong/AlphaZero_Gomoku>
-  - `code` <https://github.com/suragnair/alpha-zero-general>
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm-silver-et-al>
 
 #### ["Mastering the Game of Go without Human Knowledge"](https://deepmind.com/documents/119/agz_unformatted_nature.pdf) Silver et al.
   `learning to guide planning` `using available environment model` `search-based policy iteration` `expert iteration`
->	"AlphaGo Zero learns two functions (which take as input the current board):  
->	- A prior over moves p is trained to predict what AlphaGo will eventually decide to do  
->	- A value function v is trained to predict which player will win (if AlphaGo plays both sides)  
->	Both are trained with supervised learning. Once we have these two functions, AlphaGo actually picks its moves by using 1600 steps of Monte Carlo tree search (MCTS), using p and v to guide the search. It trains p to bypass this expensive search process and directly pick good moves. As p improves, the expensive search becomes more powerful, and p chases this moving target."  
->
->	"AlphaGo Zero uses a quite different approach to deep RL than typical (model-free) algorithms such as policy gradient or Q-learning. By using AlphaGo search we massively improve the policy and self-play outcomes - and then we apply simple, gradient based updates to train the next policy + value network. This appears to be much more stable than incremental, gradient-based policy improvements that can potentially forget previous improvements."  
->	"We chose to focus more on reinforcement learning, as we believed it would ultimately take us beyond human knowledge. Our recent results actually show that a supervised-only approach can achieve a surprisingly high performance - but that reinforcement learning was absolutely key to progressing far beyond human levels."  
->
->	"AlphaGo improves the policy through REINFORCE, which is highly sample-inefficient. Then, it learns the value function for that policy. In REINFORCE one generates trajectories and then changes their probability based on the outcome of the match.  
->	AlphaGo Zero, on the other hand, changes the trajectories themselves. During self-play, an expert (MCTS) tells the policy-value network how to improve its policy-part right away. Moreover, the improved move is the one that's played, so, in the end, the outcome will be based on the improved policy. Therefore we're basically doing Generalized Policy Iteration because we're greedily improving the policy as we go and learning the value of this improved policy."  
->
->	"Differences from AlphaGo:  
->	- No human data. Learns solely by self-play reinforcement learning, starting from random.  
->	- No human features. Only takes raw board as input.  
->	- Single neural network. Policy and value networks are combined into one neural network (resnet).  
->	- Simpler search. No randomised Monte-Carlo rollouts, only uses neural network to evaluate."  
->
->	"There's a continuum between expert iteration and policy gradients. Let's say we have a two probability distributions, called policy and expert. We can write down a distance between them in two different ways. (1) KL[policy, expert] = policy * log(expert) - S[policy] (2) KL[expert, policy] = expert * log(policy) + constant. Policy gradients uses (1), and we set expert = exp(advantage estimate). AGZ uses (2) and defines expert using MCTS on the policy. The continuum between policy gradients and AGZ arises because we can vary the amount of work we put into computing the expert policy. On one extreme, policy gradient methods use a very cheap-to-compute expert: the advantage function estimate. On the other extreme, AGZ uses a very expensive-to-compute expert (via MCTS), which is much better than the current policy. Another dimension in this expert space is the bias-variance tradeoff: whether we use a Monte-Carlo estimate of returns or a learned value function. I'm curious to know under what conditions you benefit from using a more expensive expert. Anyway, I think there are a lot of interesting experiments left to do to analyze the space of algorithms between policy gradients and expert iteration."  
-  - `post` <https://deepmind.com/blog/alphago-zero-learning-scratch/>
-  - `video` <https://vimeo.com/252184928/#t=711> (Silver)
-  - `video` <https://youtu.be/DXNqYSNvnjA?t=16m41s> (Hassabis)
-  - `video` <https://youtube.com/watch?v=6fKG4wJ7uBk> (Baudis)
-  - `video` <https://youtube.com/watch?v=XuzIqE2IshY> (Kington)
-  - `video` <https://youtube.com/watch?v=vC66XFoN4DE> (Raval)
-  - `video` <https://youtu.be/V0HNXVSrvhg?t=1h20m45s> + <https://youtu.be/Lz5_xFGt2hA?t=3m11s> (Grinchuk) `in russian`
-  - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
-  - `video` <https://youtu.be/zHjE07NBA_o?t=1h10m24s> (Kozlov) `in russian`
-  - `post` <http://inference.vc/alphago-zero-policy-improvement-and-vector-fields/>
-  - `post` <http://tim.hibal.org/blog/alpha-zero-how-and-why-it-works/>
-  - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
-  - `notes` <https://blog.acolyer.org/2017/11/17/mastering-the-game-of-go-without-human-knowledge/>
-  - `notes` <https://dropbox.com/s/fuwhivftv998f6q/AlphaGoZeroPseudoCode.pdf>
-  - `code` <https://github.com/pytorch/ELF/tree/master/src_py/elfgames/go>
-  - `code` <https://github.com/tensorflow/minigo>
-  - `code` <https://github.com/gcp/leela-zero/>
-  - `paper` ["Reinforcement Learning as Classification: Leveraging Modern Classifiers"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.7.474&rep=rep1&type=pdf) by Lagoudakis and Parr
-  - `paper` ["Approximate Modified Policy Iteration and its Application to the Game of Tetris"](http://jmlr.org/papers/v16/scherrer15a.html) by Scherrer et al.
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#mastering-the-game-of-go-without-human-knowledge-silver-et-al>
 
 #### ["Thinking Fast and Slow with Deep Learning and Tree Search"](https://arxiv.org/abs/1705.08439) Anthony, Tian, Barber
   `learning to guide planning` `using available environment model` `search-based policy iteration` `expert iteration` `ExIt`
->	"Planning new policies is performed by tree search, while a deep neural network generalises those plans."  
->	"Expert Iteration can be viewed as an extension of Imitation Learning methods to domains where the best known experts are unable to achieve satisfactory performance. In standard IL an apprentice is trained to imitate the behaviour of an expert. In ExIt, we extend this to an iterative learning process. Between each iteration, we perform an Expert Improvement step, where we bootstrap the (fast) apprentice policy to increase the performance of the (comparatively slow) expert."  
->	"Imitation Learning is generally appreciated to be easier than Reinforcement Learning, and this partly explains why ExIt is more successful than model-free methods like REINFORCE. Furthermore, for MCTS to recommend a move, it must be unable to find any weakness with its search. Effectively, therefore, a move played by MCTS is good against a large selection of possible opponents. In contrast, in regular self play (in which the opponent move is made by the network playing as the opposite colour), moves are recommended if they beat only this single opponent under consideration. This is, we believe, a key insight into why ExIt works well (when using MCTS as the expert) - the apprentice effectively learns to play well against many opponents."  
-  - `post` <https://davidbarber.github.io/blog/2017/11/07/Learning-From-Scratch-by-Thinking-Fast-and-Slow-with-Deep-Learning-and-Tree-Search/> (Barber)
-  - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#thinking-fast-and-slow-with-deep-learning-and-tree-search-anthony-tian-barber>
 
 #### ["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](http://arxiv.org/abs/1701.01724) Moravcik et al.
   `learning to guide planning` `using available environment model`
-  - `paper` <http://science.sciencemag.org/content/early/2017/03/01/science.aam6960>
-  - `video` <https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ> (demo matches)
-  - <http://deepstack.ai>
-  - <http://twitter.com/DeepStackAI>
-  - `video` <https://vimeo.com/248532904> (Bowling)
-  - `video` <https://youtu.be/02xIkHowQOk?t=11m45s> (Bowling)
-  - `video` <https://youtube.com/watch?v=qndXrHcV1sM> (Bowling)
-  - `video` <http://videolectures.net/aaai2017_bowling_sandholm_poker/#t=177> (Bowling)
-  - `code` <https://github.com/lifrordi/DeepStack-Leduc>
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#deepstack-expert-level-artificial-intelligence-in-no-limit-poker-moravcik-et-al>
 
 ----
 #### ["Learning to Search with MCTSnets"](https://arxiv.org/abs/1802.04697) Guez, Weber, Antonoglou, Simonyan, Vinyals, Wierstra, Munos, Silver
@@ -2880,16 +2830,7 @@ hieves."
   - `video` <https://facebook.com/icml.imls/videos/429761510871703?t=6774> (Smith)
 
 #### ["The Option-Critic Architecture"](http://arxiv.org/abs/1609.05140) Bacon, Harb, Precup
->	"The Option-Critic provides a policy gradient for learning options in an end-to-end manner and leverages an augmented state space in order to do so."  
->	"The Option-Critic consists of two components: 1) each option should use primitive actions that are better, 2) find good termination conditions (lengthen when the option is good, terminate when it’s bad). A third term also encourages the meta-policy to take better options."  
-  - `video` <https://youtube.com/watch?v=8r_EoYnPjGk> (Bacon)
-  - `video` <https://vimeo.com/249559422> (Precup)
-  - `video` <https://youtu.be/ARfpQzRCWT4?t=39m> (Nikishin)
-  - `video` <https://youtube.com/watch?v=ID150Tl-MMw&t=56m55s> (Abbeel)
-  - `slides` <http://pierrelucbacon.com/optioncritic-aaai2017-slides.pdf>
-  - `poster` <http://pierrelucbacon.com/optioncriticposter.pdf>
-  - `notes` <http://tsong.me/blog/option-critic/>
-  - `code` <https://github.com/jeanharb/option_critic>
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#the-option-critic-architecture-bacon-harb-precup>
 
 #### ["Probabilistic Inference for Determining Options in Reinforcement Learning"](https://link.springer.com/article/10.1007/s10994-016-5580-x) Daniel, Hoof, Peters, Neumann
 >	"Tasks that require many sequential decisions or complex solutions are hard to solve using conventional reinforcement learning algorithms. Based on the semi Markov decision process setting (SMDP) and the option framework, we propose a model which aims to alleviate these concerns. Instead of learning a single monolithic policy, the agent learns a set of simpler sub-policies as well as the initiation and termination probabilities for each of those sub-policies. While existing option learning algorithms frequently require manual specification of components such as the sub-policies, we present an algorithm which infers all relevant components of the option framework from data."  
@@ -2916,6 +2857,7 @@ hieves."
 >	- learn policy network (learn to act)"  
   - `video` <https://youtube.com/watch?v=sZqrWFl0wQ4> (demo)
   - `video` <https://vimeo.com/237274156> (Higgins)
+  - `video` <https://youtu.be/XNGo9xqpgMo?t=16m46s> (Higgins)
 
 #### ["Robust and Efficient Transfer Learning with Hidden Parameter Markov Decision Processes"](https://arxiv.org/abs/1706.06544) Killian, Daulton, Konidaris, Doshi-Velez
   `semantic representation`
@@ -3143,14 +3085,6 @@ hieves."
   - `video` <http://videolectures.net/deeplearning2017_de_freitas_deep_control/#t=4560> (de Freitas)
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Robust_Imitation_of_Diverse_Behaviors.md>
 
-#### ["End-to-End Differentiable Adversarial Imitation Learning"](http://proceedings.mlr.press/v70/baram17a.html) Baram, Anschel, Caspi, Mannor
-  `adversarial imitation learning`
->	"Model-free approach does not allow the system to be differentiable, which requires the use of high-variance gradient estimations."  
->	"We show how to use a forward model to make the system fully differentiable, which enables us to train policies using the stochastic gradient of discriminator."  
-  - `video` <https://vimeo.com/237272985> (Baram)
-  - `slides` <http://icri-ci.technion.ac.il/files/2017/05/14-Shie-Mannor-170509.pdf>
-  - `code` <https://github.com/itaicaspi/mgail>
-
 #### ["Generative Adversarial Imitation Learning"](http://arxiv.org/abs/1606.03476) Ho, Ermon
   `adversarial imitation learning` `GAIL`
 >	"Uses a GAN framework to discriminate between teacher and student experience and force the student to behave close to the teacher."  
@@ -3252,6 +3186,10 @@ hieves."
 [overview](https://alexpolozov.com/blog/program-synthesis-2018) of recent papers by Oleksandr Polozov
 
 ----
+#### ["Evolving Simple Programs for Playing Atari Game"](https://arxiv.org/abs/1806.05695) Wilson, Cussat-Blanc, Luga, Miller
+>	"Programs are evolved using mixed type Cartesian Genetic Programming with a function set suited for matrix operations, including image processing, but allowing for controller behavior to emerge."  
+>	"While the programs are relatively small, many controllers are competitive with state of the art methods for the Atari benchmark set and require less training time."  
+
 #### ["Synthesizing Programs for Images using Reinforced Adversarial Learning"](https://arxiv.org/abs/1804.01118) Ganin, Kulkarni, Babuschkin, Eslami, Vinyals
   `SPIRAL`
   - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#synthesizing-programs-for-images-using-reinforced-adversarial-learning-ganin-kulkarni-babuschkin-eslami-vinyals>

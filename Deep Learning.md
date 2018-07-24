@@ -1632,6 +1632,7 @@ Yoshua Bengio:
   - `post` <http://blog.evjang.com/2018/01/nf1.html>
   - `post` <http://akosiorek.github.io/ml/2018/04/03/norm_flows.html>
   - `post` <https://ferrine.github.io/blog/2017/07/11/normalizing-flows-overview>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1505.05770>
   - `code` <https://github.com/pymc-devs/pymc3/blob/master/pymc3/variational/flows.py>
 
 
@@ -2274,6 +2275,7 @@ x."
 ----
 >	"CTC is a type of neural network output and associated scoring function, for training recurrent neural networks such as LSTM networks to tackle sequence problems where the timing is variable. It can be used for tasks like recognising phonemes in speech audio. CTC refers to the outputs and scoring, and is independent of the underlying neural network structure. A CTC network has a continuous output (e.g. softmax), which is fitted through training to model the probability of a label. The input is a sequence of observations, and the outputs are a sequence of labels, which can include blank outputs. CTC does not attempt to learn boundaries and timings: Label sequences are considered equivalent if they differ only in alignment, ignoring blanks. Equivalent label sequences can occur in many ways – which makes scoring a non-trivial task. Fortunately there is an efficient forward-backwards algorithm. CTC scores can then be used with the back-propagation algorithm to update the neural network weights."
 
+  - `video` <https://youtube.com/watch?v=UMxvZ9qHwJs> (Gharbieh)
   - `post` <https://distill.pub/2017/ctc/>
   - `post` <https://machinethoughts.wordpress.com/2017/11/02/ctc-training-latent-discrete-sequential-decisions-without-rl/>
 
@@ -2735,23 +2737,6 @@ x."
   - `code` <https://github.com/mokemokechicken/keras_npi>
 
 
-#### ["AdaNet: Adaptive Structural Learning of Artificial Neural Networks"](http://arxiv.org/abs/1607.01097) Cortes, Gonzalvo, Kuznetsov, Mohri, Yang
->	"We present a new theoretical framework for analyzing and learning artificial neural networks. Our approach simultaneously and adaptively learns both the structure of the network as well as its weights. The methodology is based upon and accompanied by strong data-dependent theoretical learning guarantees, so that the final network architecture provably adapts to the complexity of any given problem."
-
->	"Our method optimizes for generalization performance, and it explicitly and automatically addresses the trade-off between model architecture and empirical risk minimization, ideas that have been under-explored in deep learning. Our techniques are general and can be applied to other neural network architectures, including CNNs and LSTMs as well as to other learning settings such as multi-class classification and regression, all of which serve as interesting avenues for future work."
-
->	"Despite the compelling arguments for using neural networks as a general template for solving machine learning problems, the training of these models and design of the right network for a given task has been filled with many theoretical gaps and practical concerns. For training a network, one needs to specify an often large network architecture with several layers and nodes, and then solve a difficult non-convex optimization problem. Additionally, the pre-specified architecture is often treated as a hyperparameter which is tuned using a validation set. These spaces can become exorbitantly large. From an optimization perspective, there is no guarantee of stability of an output model or near optimality of the learning objective, and often, one needs to implement ad hoc methods (e.g. gradient clipping) to produce coherent models. From the statistical standpoint, large-scale hyperparameter tuning for an effective network architecture is extremely wasteful of data (due to cross validation), and can also exhaust a lot of time and resources (e.g. grid search, random search). In this paper, we attempt to remedy some of these issues. Accepting the general structure of a neural network as an effective parametrized model for supervised learning, we provide a theoretical analysis of this model and proceed to derive an algorithm benefitting from that theory. In the process, we introduce a framework for training neural networks that:
-	1. uses a stable and robust algorithm with a unique solution.
-	2. can produce much sparser and/or shallower networks compared to existing methods.
-	3. adapts the structure and complexity of the network to the difficulty of the particular problem at hand, with no pre-defined architecture.
-	4. is accompanied and in fact motivated by strong data-dependent generalization bounds, validating their adaptivity and statistical efficacy.
-	5. is intuitive from the cognitive standpoint that originally motivated neural network architectures."
-
->	"Not all machine learning problems admit the same level of difficulty, and different tasks naturally require varying levels of complexity. The typical approach to training a neural network requires the model-builder to know and specify as an architecture the right level of complexity. This is often unreasonably hard and can lead to large amounts of hyperparameter tuning, a statistically wasteful task. Moreover, if a network architecture is specified a priori and trained using back-propagation, the model will always have as many layers as the one specified because there needs to be at least one path through the network in order for the hypothesis to be non-trivial. Single weights may be pruned, a technique originally termed Optimal Brain Damage, but the architecture itself is unchanged. This imposes a stringent lower bound on the complexity of the model and can make the model prone to overfitting when there is insufficient data. In contrast to enforcing high complexity, we will attempt to learn the requisite model complexity for a machine learning problem in an adaptive way. Starting from a simple single layer neural network, we will add more neurons and additional layers as needed. From the cognitive perspective, we will adapt the neural complexity and architecture to the difficulty of the problem. The additional neurons that we add will be carefully selected and penalized according to rigorous estimates from the theory of statistical learning. This will serve as a catalyst for the sparsity of our model as well as the strong generalization bounds that we will be able to derive. Incredibly, our method will also turn out to be convex and hence more stable than the current methodologies employed."
-
-  - `video` ["Deep Boosting"](https://youtube.com/watch?v=_GGmkyrT1Po) (Mohri)
-
-
 #### ["Gradient-based Hyperparameter Optimization through Reversible Learning"](http://arxiv.org/abs/1502.03492) Maclaurin, Duvenaud, Adams
 >	"Tuning hyperparameters of learning algorithms is hard because gradients are usually unavailable. We compute exact gradients of cross-validation performance with respect to all hyperparameters by chaining derivatives backwards through the entire training procedure. These gradients allow us to optimize thousands of hyperparameters, including step-size and momentum schedules, weight initialization distributions, richly parameterized regularization schemes, and neural network architectures. We compute hyperparameter gradients by exactly reversing the dynamics of stochastic gradient descent with momentum."
 
@@ -2876,7 +2861,7 @@ x."
 
 [**interesting papers - reinforcement learning - applications**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---applications)
 
-[**interesting papers - other applications**](https://dropbox.com/sh/dio0ypwiph44ehn/AAADQCyEutvVt9iugVU1F5S8a)
+[**selected papers**](https://yadi.sk/d/mQnJYmxo3WZDvP)
 
 
 #### ["Learning Representations for Counterfactual Inference"](http://arxiv.org/abs/1605.03661) Johansson, Shalit, Sontag
