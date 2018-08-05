@@ -1048,6 +1048,7 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=G-kWNQJ4idw> (demo)
   - `video` <https://youtube.com/watch?v=IVSZnTknyqw> (demo)
   - `post` <https://deepmind.com/blog/neural-scene-representation-and-rendering>
+  - `code` <https://github.com/ogroth/tf-gqn>
   - `paper` <http://science.sciencemag.org/content/sci/360/6394/1204.full.pdf>
 
 #### ["Relational Neural Expectation Maximization: Unsupervised Discovery of Objects and their Interactions"](https://arxiv.org/abs/1802.10353) Steenkiste, Chang, Greff, Schmidhuber
@@ -1312,6 +1313,7 @@ interesting older papers:
 #### ["Neural Autoregressive Flows"](https://arxiv.org/abs/1804.00779) Huang, Krueger, Lacoste, Courville
   `NAF`
 >	"NAF unifies and generalizes MAF and IAF, replacing the (conditionally) affine univariate transformations of MAF/IAF with a more general class of invertible univariate transformations expressed as monotonic neural networks. We demonstrate that NAFs are universal approximators for continuous probability distributions, and their greater expressivity allows them to better capture multimodal target distributions."  
+  - `post` <https://habr.com/company/yandex/blog/418421> `in russian`
   - `code` <https://github.com/CW-Huang/NAF>
 
 #### ["Parallel WaveNet: Fast High-Fidelity Speech Synthesis"](https://arxiv.org/abs/1711.10433) Oord et al.
@@ -1636,6 +1638,7 @@ interesting older papers:
 #### ["Fixing a Broken ELBO"](https://arxiv.org/abs/1711.00464) Alemi, Poole, Fischer, Dillon, Saurous, Murphy
 >	"Fitting deep directed latent-variable models by maximizing the marginal likelihood or evidence is typically intractable, thus a common approximation is to maximize the evidence lower bound (ELBO) instead. However, maximum likelihood training (whether exact or approximate) does not necessarily result in a good latent representation, as we demonstrate both theoretically and empirically. In particular, we derive variational lower and upper bounds on the mutual information between the input and the latent variable, and use these bounds to derive a rate-distortion curve that characterizes the tradeoff between compression and reconstruction accuracy. Using this framework, we demonstrate that there is a family of models with identical ELBO, but different quantitative and qualitative characteristics. Our framework also suggests a simple new method to ensure that latent variable models with powerful stochastic decoders do not ignore their latent code."  
 >	"We have motivated the β-VAE objective on information theoretic grounds, and demonstrated that comparing model architectures in terms of the rate-distortion plot offers a much better look at their performance and tradeoffs than simply comparing their marginal log likelihoods."  
+  - `notes` <https://habr.com/company/yandex/blog/418421> `in russian`
 
 ----
 #### ["Wasserstein Auto-Encoders"](https://arxiv.org/abs/1711.01558) Tolstikhin, Bousquet, Gelly, Scholkopf
@@ -2147,6 +2150,7 @@ interesting older papers:
 >	"We also prove that EPG reduces the variance of the gradient estimates without requiring deterministic policies and, for the Gaussian case, with no computational overhead. When the policy is Gaussian, we can now reinterpret deterministic policy gradients as an on-policy method: the deterministic policy of the original formulation is just the result of analytically integrating across actions in the Gaussian policy."  
 >	"Both SPG and DPG approaches have significant shortcomings. For SPG, variance in the gradient estimates means that many trajectories are usually needed for learning. Since gathering trajectories is typically expensive, there is a great need for more sample efficient methods. DPG’s use of deterministic policies mitigates the problem of variance in the gradient but raises other difficulties. The theoretical support for DPG is limited since it assumes a critic that approximates ∇aQ when in practice it approximates Q instead. In addition, DPG learns off-policy, which is undesirable when we want learning to take the cost of exploration into account. More importantly, learning off-policy necessitates designing a suitable exploration policy, which is difficult in practice. In fact, efficient exploration in DPG is an open problem and most applications simply use independent Gaussian noise or the Ornstein-Uhlenbeck heuristic."  
 >	"EPG also enables a practical contribution. Under certain conditions, we get an analytical expression for the covariance of the Gaussian that leads to a principled directed exploration strategy for continuous problems. We show that it is optimal in a certain sense to explore with a Gaussian policy such that the covariance is proportional to exp(H), where H is the scaled Hessian of the critic with respect to the actions. We present empirical results confirming that this new approach to exploration substantially outperforms DPG with Ornstein-Uhlenbeck exploration in four challenging MuJoCo domains."  
+>	"EPG learns a stochastic policy but for a Gaussian policy is equivalent to DPG with a specific form of exploration, implying that it'd be fine to use it deterministically once trained."  
   - `video` <https://youtube.com/watch?v=x2NFiP6cuXI> (Ciosek)
 
 #### ["Q-Prop: Sample-Efficient Policy Gradient with An Off-Policy Critic"](http://arxiv.org/abs/1611.02247) Gu, Lillicrap, Ghahramani, Turner, Levine
@@ -2522,6 +2526,7 @@ interesting older papers:
 
 #### ["BBQ-Networks: Efficient Exploration in Deep Reinforcement Learning for Task-Oriented Dialogue Systems"](https://arxiv.org/abs/1608.05081) Lipton, Li, Gao, Li, Ahmed, Deng
   `approximate bayesian exploration` `approximate posterior sampling`
+  - `video` <https://youtube.com/watch?v=DmasOMKbczg> (Lipton)
 
 #### ["UCB and InfoGain Exploration via Q-Ensembles"](https://arxiv.org/abs/1706.01502) Chen, Sidor, Abbeel, Schulman
   `approximate bayesian exploration` `information gain`
@@ -2671,6 +2676,7 @@ hieves."
   - `video` <https://youtu.be/TERCdog1ddE?t=50m45s> (Abbeel)
   - `video` <https://youtu.be/BXe2A5i4ESw?t=10m42s> (Fournier)
   - `notes` <https://yobibyte.github.io/files/paper_notes/her.pdf>
+  - `post` <https://jangirrishabh.github.io/2018/03/25/Overcoming-exploration-demos.html>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/her>
   - `code` <https://github.com/higgsfield/RL-Adventure-2>
   - `paper` ["Universal Value Function Approximators"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#schaul-horgan-gregor-silver---universal-value-function-approximators) by Schaul et al. `summary`
@@ -3159,6 +3165,7 @@ hieves."
   - `video` <https://facebook.com/icml.imls/videos/429607650887089?t=900> (Foerster)
   - `post` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1709.04326>
   - `code` <http://github.com/alshedivat/lola>
+  - `code` <https://github.com/alexis-jacq/LOLA_DiCE>
 
 ----
 #### ["Learning to Communicate with Deep Multi-Agent Reinforcement Learning"](http://arxiv.org/abs/1605.06676) Foerster, Assael, de Freitas, Whiteson
@@ -3264,8 +3271,11 @@ hieves."
 [**interesting older papers - question answering over texts**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---question-answering-over-texts)  
 
 ----
+#### ["Towards Neural Theorem Proving at Scale"](https://arxiv.org/abs/1807.08204) Minervini, Bosnjak, Rocktaschel, Riedel
+  `learning logic` `NTP 2.0`
+
 #### ["End-to-end Differentiable Proving"](https://arxiv.org/abs/1705.11040) Rocktaschel, Riedel
-  `learning logic`
+  `learning logic` `NTP`
   - <https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#end-to-end-differentiable-proving-rocktaschel-riedel>
 
 #### ["Differentiable Learning of Logical Rules for Knowledge Base Reasoning"](https://arxiv.org/abs/1702.08367) Yang, Yang, Cohen

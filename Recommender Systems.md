@@ -12,6 +12,8 @@
 ---
 ### overview
 
+  ["Model-Based Machine Learning: Making Recommendations"](http://mbmlbook.com/Recommender.html) by Chris Bishop
+
   ["Recommender Systems: The Textbook"](http://charuaggarwal.net/Recommender-Systems.htm) by Charu Aggarwal ([book](https://yadi.sk/i/eMDtp31h3P8AxL))  
   ["Recommender Systems Handbook"](http://www.cs.ubbcluj.ro/~gabis/DocDiplome/SistemeDeRecomandare/Recommender_systems_handbook.pdf) by Ricci, Rokach, Shapira, Kantor  
 

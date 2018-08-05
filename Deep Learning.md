@@ -1127,6 +1127,7 @@
   - <https://en.wikipedia.org/wiki/Information_bottleneck_method>
   - `video` <https://youtube.com/watch?v=ei59sYLVuqA> (Tishby)
   - `post` <http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/>
+  - `paper` ["The Information Bottleneck Method"](https://arxiv.org/abs/physics/0004057) by Tishby, Pereira, Bialek
 
 
 #### ["Opening the Black Box of Deep Neural Networks via Information"](http://arxiv.org/abs/1703.00810) Shwartz-Ziv, Tishby

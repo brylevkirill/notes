@@ -340,7 +340,7 @@
 
 ----
 
-  [Reinforcement Learning Summer School 2017](http://videolectures.net/deeplearning2017_montreal/) `video`
+  [Reinforcement Learning Summer School 2017](http://videolectures.net/deeplearning2017_montreal/) `video` ([overview](https://yobibyte.github.io/rlss17.html))
 
 ----
 
@@ -360,6 +360,7 @@
   ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/book/the-book-2nd.html) book by Richard Sutton and Andrew Barto (second edition) ([code](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction))  
   ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/book/the-book-1st.html) book by Richard Sutton and Andrew Barto (first edition)  
   ["Algorithms for Reinforcement Learning"](http://www.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf) book by Csaba Szepesvari  
+  ["Bandit Algorithms"](http://downloads.tor-lattimore.com/banditbook/book.pdf) book by Tor Lattimore and Csaba Szepesvari  
 
 ----
 
@@ -384,6 +385,8 @@
 
   ["A Brief Survey of Deep Reinforcement Learning"](https://arxiv.org/abs/1708.05866) by Arulkumaran et al. `paper`  
   ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1701.07274) by Yuxi Li `paper` ([slides](https://dropbox.com/s/kzkc8t61t7tz9eu/AISeminar.pdf))  
+
+  ["Deep Reinforcement Learning Hands-On"](https://amazon.com/gp/product/1788834240) by Maxim Lapan `book`
 
 ----
 
@@ -414,6 +417,7 @@
   ["On “Solving” Montezuma’s Revenge"](https://medium.com/@awjuliani/on-solving-montezumas-revenge-2146d83f0bc3) by Arthur Juliani  
   ["Deep Reinforcement Learning Doesn't Work Yet"](https://www.alexirpan.com/2018/02/14/rl-hard.html) by Alex Irpan  
   ["Reinforcement Learning Never Worked, and 'Deep' Only Helped a Bit"](https://himanshusahni.github.io/2018/02/23/reinforcement-learning-never-worked.html) by Himanshu Sahni  
+  ["A Real World Reinforcement Learning Research Program"](http://hunch.net/?p=9828091) by John Langford  
 
 
 
@@ -797,18 +801,22 @@
   [overview](http://youtube.com/watch?v=sGuiWX07sKw) by David Silver `video`  
   [overview](http://youtu.be/fIKkhoI1kF4?t=19m23s) by Emma Brunskill `video`  
 
+  tutorial by Csaba Szepesvari
+	([part 1](https://youtube.com/watch?v=VVcLnAoU9Gw),
+	[part 2](https://youtube.com/watch?v=cknukHreMdI),
+	[part 3](https://youtube.com/watch?v=ruIO79C2IQc)) `video`
+
+----
+
   [overview](http://banditalgs.com/2016/09/04/bandits-a-new-beginning/) by Csaba Szepesvari
 
   ["Efficient Experimentation and the Multi-Armed Bandit"](http://iosband.github.io/2015/07/19/Efficient-experimentation-and-multi-armed-bandits.html) by Ian Osband  
   ["Optimism in the Face of Uncertainty: the UCB1 Algorithm"](http://jeremykun.com/2013/10/28/optimism-in-the-face-of-uncertainty-the-ucb1-algorithm/) by Jeremy Kun  
   ["Adversarial Bandits and the Exp3 Algorithm"](http://jeremykun.com/2013/11/08/adversarial-bandits-and-the-exp3-algorithm/) by Jeremy Kun  
 
-----
+  [example implementation](http://jeremykun.com/2013/12/09/bandits-and-stocks/) by Jeremy Kun
 
-  tutorial by Csaba Szepesvari
-	([part 1](https://youtube.com/watch?v=VVcLnAoU9Gw),
-	[part 2](https://youtube.com/watch?v=cknukHreMdI),
-	[part 3](https://youtube.com/watch?v=ruIO79C2IQc)) `video`
+----
 
   course by Csaba Szepesvari and Tor Lattimore:  
 	["Bandits: A new beginning"](http://banditalgs.com/2016/09/04/bandits-a-new-beginning/)  
@@ -832,11 +840,10 @@
 	([part 1](https://blogs.princeton.edu/imabandit/2016/05/11/bandit-theory-part-i/),
 	[part 2](https://blogs.princeton.edu/imabandit/2016/05/13/bandit-theory-part-ii/))
 
-  ["Introduction to Multi-Armed Bandits"](http://slivkins.com/work/MAB-book.pdf) book by Aleksandrs Slivkins
-
 ----
 
-  [example implementation](http://jeremykun.com/2013/12/09/bandits-and-stocks/)
+  ["Bandit Algorithms"](http://downloads.tor-lattimore.com/banditbook/book.pdf) book by Tor Lattimore and Csaba Szepesvari  
+  ["Introduction to Multi-Armed Bandits"](http://slivkins.com/work/MAB-book.pdf) book by Aleksandrs Slivkins  
 
 ----
 
@@ -1610,6 +1617,7 @@ interesting recent papers:
 
   - `post` <https://deepmind.com/blog/capture-the-flag>
   - `video` <https://youtube.com/watch?v=dltN4MxV1RI> (demo)
+  - `video` <https://youtube.com/watch?v=MvFABFWPBrw>
 
 
 #### ["Mastering the Game of Go without Human Knowledge"](https://deepmind.com/documents/119/agz_unformatted_nature.pdf) Silver et al.

@@ -257,9 +257,8 @@
 
 ----
 
-  ["Statistical Relational Artificial Intelligence: Logic, Probability and Computation"](https://facebook.com/nipsfoundation/videos/1552222671535633/) tutorial by Raedt, Poole, Kersting, Natarajan `video`
-
-  ["Statistical Relational Learning"](http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning) tutorial by Tresp `video`
+  ["Statistical Relational Artificial Intelligence: Logic, Probability and Computation"](https://facebook.com/nipsfoundation/videos/1552222671535633/) tutorial by Raedt, Poole, Kersting, Natarajan `video`  
+  ["Statistical Relational Learning"](http://videolectures.net/mlpmsummerschool2014_tresp_statistical_learning) tutorial by Tresp `video`  
 
   ["Relational Models"](https://arxiv.org/abs/1609.03145) by Tresp and Nickel `paper`  
   ["A Review of Relational Machine Learning for Knowledge Graphs: From Multi-Relational Link Prediction to Automated Knowledge Graph Construction"](#a-review-of-relational-machine-learning-for-knowledge-graphs-from-multi-relational-link-prediction-to-automated-knowledge-graph-construction-nickel-murphy-tresp-gabrilovich)
@@ -972,9 +971,7 @@
 
 ----
 
-  ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](https://hazyresearch.github.io/snorkel/blog/fonduer.html) `post`  
-
-  ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](#fonduer-knowledge-base-construction-from-richly-formatted-data-wu-et-al) `paper` `summary`  
+  ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](#fonduer-knowledge-base-construction-from-richly-formatted-data-wu-et-al) `paper` `summary` ([post](https://hazyresearch.github.io/snorkel/blog/fonduer.html))
 
 ----
 
@@ -1150,10 +1147,9 @@
   `Fonduer`
 >	"We introduce Fonduer, a knowledge base construction framework for richly formatted information extraction, where entity relations and attributes are conveyed via structural, tabular, visual, and textual expressions. Fonduer introduces a new programming model for KBC built around a unified data representation that accounts for three challenging characteristics of richly formatted data: (1) prevalent document-level relations, (2) multimodality, and (3) data variety. Fonduer is the first KBC system for richly formatted data and uses a human-in-the-loop paradigm for training machine learning systems, referred to as data programming. Data programming softens the burden of traditional supervision by only asking users to provide lightweight functions that programmatically assign (potentially noisy) labels to the input data. Fonduer’s unified data model, together with data programming, allows users to use domain expertise as weak signals of supervision that help guide the KBC process over richly formatted data. We evaluate Fonduer on four real-world applications over different domains and achieve an average improvement of 42 F1 points over the upper bound of state-of-the-art approaches. In some domains, our users have produced up to 1.87× the number of correct entires compared to expert-curated public knowledge bases. Fonduer scales gracefully to millions of documents and is used in both academia and industry to create knowledge bases for real-world problems in many domains."
 
-  - `video` <https://youtube.com/watch?v=HmocI2b5YfA> (Re)
   - `post` <https://hazyresearch.github.io/snorkel/blog/fonduer.html>
-  - `code` <https://github.com/HazyResearch/snorkel/>
-  - `paper` ["Data Programming"](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#data-programming-creating-large-training-sets-quickly-ratner-sa-wu-selsam-re) by Ratner et al. `summary`
+  - `code` <https://github.com/HazyResearch/fonduer>
+  - [**Snorkel**](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#weak-supervision---data-programming) project
 
 
 #### ["Feature Engineering for Knowledge Base Construction"](http://arxiv.org/abs/1407.6439) Re et al.

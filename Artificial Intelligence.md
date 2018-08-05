@@ -2,7 +2,6 @@
 
 
   * [**overview**](#overview)
-  * [**benchmarks**](#benchmarks)
   * [**problems**](#problems)
   * [**knowledge representation**](#knowledge-representation)
   * [**inference / reasoning**](#inference--reasoning)
