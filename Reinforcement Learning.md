@@ -78,7 +78,7 @@
   [personalized web services](http://thenewstack.io/reinforcement-learning-ready-real-world/) at Microsoft (Custom Decision Service [paper](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) `summary`)  
   ["Personalized Web Services"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto  
 
-  [datacenter cooling](https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/) at Google ([paper](https://arxiv.org/abs/1711.11165))
+  [datacenter cooling](https://deepmind.com/blog/safety-first-ai-autonomous-data-centre-cooling-and-industrial-control/) at Google ([patent](http://freepatentsonline.com/y2018/0204116.html), [paper](https://arxiv.org/abs/1711.11165))
 
   ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1701.07274) by Yuxi Li `paper` ([slides](https://dropbox.com/s/kzkc8t61t7tz9eu/AISeminar.pdf))
 
@@ -227,8 +227,13 @@
 ----
   - *Dota 2*  
 
+	[OpenAI Five](https://openai.com/five/)  
 	[OpenAI Five bots overview](https://blog.openai.com/openai-five/)  
-	[specification](https://gist.github.com/dfarhi/66ec9d760ae0c49a5c492c9fae93984a) of reward function  
+	[OpenAI Five bots overview](https://blog.openai.com/openai-five-benchmark-results/)  
+	[OpenAI Five bots architecture](https://s3-us-west-2.amazonaws.com/openai-assets/dota_benchmark_results/network_diagram_08_06_2018.pdf)  
+	[OpenAI Five bots reward function](https://gist.github.com/dfarhi/66ec9d760ae0c49a5c492c9fae93984a)  
+
+	[OpenAI Five bots vs Blitz Cap Fogged Merlini MoonMeander](https://twitch.tv/videos/293517383) game `video` ([overview](https://youtube.com/watch?v=80pm62J9kto) `video`)
 
 	[OpenAI 1v1 bot overview](https://blog.openai.com/dota-2/)  
 	[OpenAI 1v1 bot overview](https://blog.openai.com/more-on-dota-2/)  
@@ -652,6 +657,10 @@
   [**competence-based models**](#exploration-and-intrinsic-motivation---competence-based-models)  
   [**morphological models**](#exploration-and-intrinsic-motivation---morphological-models)  
 
+----
+
+  ["Comparing Intrinsic Motivations in a Unified Framework"](https://agi2018imtutorial.wordpress.com) tutorial by Martin Biehl ([slides](https://slides.com/slides_martin/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework))
+
 
 ----
 #### exploration and intrinsic motivation - bayesian exploration models
@@ -1008,7 +1017,7 @@
 
 ----
 
-  [overview](https://youtu.be/bsuvM1jO-4w?t=35m2s) by Vlad Mnih `video`
+  ["The Next Big Step in AI: Planning with a Learned Model"](https://youtube.com/watch?v=6-Uiq8-wKrg) by Richard Sutton `video`
 
   ["Planning by Dynamic Programming"](https://youtube.com/watch?v=Nd1-UUMVfz4) by David Silver `video`  
   ["Integrating Learning and Planning"](https://youtube.com/watch?v=ItMutbeOHtc) by David Silver `video`  
@@ -1091,15 +1100,16 @@
 
 ----
 
-  [overview](https://youtube.com/watch?v=iC2a7M9voYU) by Chelsea Finn `video`  
+  [overview](https://youtu.be/bsuvM1jO-4w?t=35m2s) by Vlad Mnih `video`  
+  ["A Case Against Generative Models in RL?"](https://youtube.com/watch?v=EA2RtXsLSWU) by Shakir Mohamed `video`  
+
+  ["Model-based Deep Reinforcement Learning"](https://youtube.com/watch?v=iC2a7M9voYU) by Chelsea Finn `video`  
   ["Learning Dynamical System Models from Data"](https://youtube.com/watch?v=qVsLk5CVy_c) by Sergey Levine `video`  
   ["Advanced Model Learning"](https://youtube.com/watch?v=6EasN2FAIX0) by Chelsea Finn `video`  
 
   ["Approximate Reinforcement Learning in Partially Observable Markov Decision Process"](https://yadi.sk/i/pMdw-_uI3Gke7Z) (35:54) by Pavel Shvechikov `video` `in russian`  
   ["Deep Recurrent Q-Network"](https://youtube.com/watch?v=bE5DIJvZexc) by Alexander Fritzler `video` `in russian`  
   ["Deep Reinforcement Learning with Memory"](http://93.180.23.59/videos/video/2420/in/channel/1/) by Sergey Bartunov `video` `in russian`  
-
-  ["A Case Against Generative Models in RL?"](https://youtube.com/watch?v=EA2RtXsLSWU) by Shakir Mohamed `video`
 
 ----
 
@@ -1175,8 +1185,6 @@
 #### bayesian reinforcement learning - general reinforcement learning
 
   [**AIXI**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---aixi)  *(bayesian optimal general reinforcement learning agent)*  
-  [General Reinforcement Learning Agent Zoo](http://aslanides.io/aixijs/) by John Aslanides
-	([demo](http://aslanides.io/aixijs/demo.html), [code](https://github.com/aslanides/aixijs), [paper](https://arxiv.org/abs/1705.07615))   
 
 
 
@@ -1648,7 +1656,7 @@ interesting recent papers:
   - `video` <https://youtu.be/DXNqYSNvnjA?t=16m41s> (Hassabis)
   - `video` <https://youtube.com/watch?v=6fKG4wJ7uBk> (Baudis)
   - `video` <https://youtube.com/watch?v=XuzIqE2IshY> (Kington)
-  - `video` <https://youtube.com/watch?v=vC66XFoN4DE> (Raval)
+  - `video` <https://youtube.com/watch?v=UzYeqAJ2bA8> (Raval)
   - `video` <https://youtu.be/V0HNXVSrvhg?t=1h20m45s> + <https://youtu.be/Lz5_xFGt2hA?t=3m11s> (Grinchuk) `in russian`
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
   - `video` <https://youtu.be/zHjE07NBA_o?t=1h10m24s> (Kozlov) `in russian`
@@ -2297,9 +2305,13 @@ interesting recent papers:
 
 >	"Our main contribution is in designing an intrinsic reward signal based on prediction error of the agent’s knowledge about its environment that scales to high-dimensional continuous state spaces like images, bypasses the hard problem of predicting pixels and is unaffected by the unpredictable aspects of the environment that do not affect the agent."
 
+>	"Adding representation network able to filter out information from the observed state that is not relevant to predict how the agent actions affect the future state."
+
   - `post` <https://pathak22.github.io/noreward-rl/index.html> (demo)
   - `video` <https://vimeo.com/237270588> (Pathak)
   - `video` <https://youtube.com/watch?v=_Z9ZP1eiKsI> (Kilcher)
+  - `video` <https://youtu.be/RwLTrQUyDvA?t=18m2s> (Diaz Rodriguez)
+  - `video` <https://youtu.be/0Ey02HT_1Ho?t=5m37s> (Steenbrugge)
   - `code` <https://github.com/pathak22/noreward-rl>
 
 
@@ -2322,6 +2334,7 @@ interesting recent papers:
   - `video` <https://facebook.com/iclr.cc/videos/1712224178806641?t=4545> (Jaderberg)
   - `video` <https://youtu.be/bsuvM1jO-4w?t=20m7s> (Mnih)
   - `video` <https://youtube.com/watch?v=-YiMVR3HEuY> (Kilcher)
+  - `video` <https://youtu.be/0Ey02HT_1Ho?t=1m18s> (Steenbrugge)
   - `video` <https://yadi.sk/i/_2_0yqeW3HDbcn> (18:25) (Panin) `in russian`
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1611.05397>
   - `code` <https://github.com/miyosuda/unreal>

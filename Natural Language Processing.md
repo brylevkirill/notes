@@ -5,6 +5,7 @@
   * [**overview**](#overview)
   * [**study**](#study)
   * [**problems**](#problems)
+  * [**grounding**](#grounding)
   * [**semantics**](#semantics)
   * [**compositionality**](#compositionality)
   * [**embeddings**](#embeddings)
@@ -50,18 +51,6 @@
   "We have a lot of language [data at Google] but it's not annotated with what it means, and we don't even know how we would annotate it. That's a big challenge now."
 
   *(Ray Kurzweil)* ([talk](https://youtube.com/watch?v=w9sz7eW6MY8#t=4m27s) `video`)
-
-----
-
-  ["A Paradigm for Situated and Goal-Driven Language Learning"](#a-paradigm-for-situated-and-goal-driven-language-learning-gauthier-mordatch) by Jon Gauthier and Igor Mordatch `paper` `summary`  
->	"We outlined a paradigm for grounded and goal-driven language learning in artificial agents. The paradigm is centered around a utilitarian definition of language understanding, which equates language understanding with the ability to cooperate with other language users in real-world environments. This position demotes language from its position as a separate task to be solved to one of several communicative tools agents might use to accomplish their real-world goals."
-
-  ["On 'Solving Language'"](http://foldl.me/2016/solving-language/) by Jon Gauthier  
-  ["Situated Language Learning"](http://foldl.me/2016/situated-language-learning/) by Jon Gauthier  
-
-  ["From Models of Language Understanding to Agents of Language Use"](http://research.microsoft.com/apps/video/default.aspx?id=266643) by Felix Hill `video`
-
-  [**interesting papers - language grounding**](#interesting-papers---language-grounding)
 
 
 
@@ -109,6 +98,8 @@
 ### problems
 
   [state-of-the-art methods](https://github.com/sebastianruder/NLP-progress)
+
+  ["NLP’s generalization problem, and how researchers are tackling it"](https://thegradient.pub/frontiers-of-generalization-in-natural-language-processing) by Ana Marasovic
 
 ----
 
@@ -159,6 +150,21 @@
   - topic modeling
   - word segmentation
   - word sense disambiguation
+
+
+
+---
+### grounding
+
+  ["A Paradigm for Situated and Goal-Driven Language Learning"](#a-paradigm-for-situated-and-goal-driven-language-learning-gauthier-mordatch) by Jon Gauthier and Igor Mordatch `paper` `summary`  
+>	"We outlined a paradigm for grounded and goal-driven language learning in artificial agents. The paradigm is centered around a utilitarian definition of language understanding, which equates language understanding with the ability to cooperate with other language users in real-world environments. This position demotes language from its position as a separate task to be solved to one of several communicative tools agents might use to accomplish their real-world goals."
+
+  ["On 'Solving Language'"](http://foldl.me/2016/solving-language/) by Jon Gauthier  
+  ["Situated Language Learning"](http://foldl.me/2016/situated-language-learning/) by Jon Gauthier  
+
+  ["From Models of Language Understanding to Agents of Language Use"](http://research.microsoft.com/apps/video/default.aspx?id=266643) by Felix Hill `video`
+
+  [**interesting papers - language grounding**](#interesting-papers---language-grounding)
 
 
 
@@ -590,14 +596,16 @@
   `word2vec` `Skip-gram`
 >	"We propose two novel model architectures for computing continuous vector representations of words from very large data sets. The quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks. We observe large improvements in accuracy at much lower computational cost, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set. Furthermore, we show that these vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities."
 
+  - `video` <https://youtube.com/watch?v=fwcJpSYNsNs> (Mikolov)
+  - `video` <https://youtube.com/watch?v=c3yRH0XZN2g> (Boyd-Graber)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=mikolov2013efficient>
   - `post` <http://alexminnaar.com/word2vec-tutorial-part-i-the-skip-gram-model.html>
   - `post` <http://alexminnaar.com/word2vec-tutorial-part-ii-the-continuous-bag-of-words-model.html>
-  - `video` <http://youtube.com/watch?v=fwcJpSYNsNs> (Mikolov)
+  - `paper` ["word2vec Parameter Learning Explained"](http://www-personal.umich.edu/~ronxin/pdf/w2vexp.pdf) by Rong
 
 
 #### ["Distributed Representations of Words and Phrases and Their Compositionality"](http://arxiv.org/abs/1310.4546) Mikolov, Sutskever, Chen, Corrado, Dean
-  `word2vec` `Skip-gram`
+  `word2vec` `Skip-gram` `negative sampling`
 >	"The recently introduced continuous Skip-gram model is an efficient method for learning high-quality distributed vector representations that capture a large number of precise syntactic and semantic word relationships. In this paper we present several extensions that improve both the quality of the vectors and the training speed. By subsampling of the frequent words we obtain significant speedup and also learn more regular word representations. We also describe a simple alternative to the hierarchical softmax called negative sampling. An inherent limitation of word representations is their indifference to word order and their inability to represent idiomatic phrases. For example, the meanings of "Canada" and "Air" cannot be easily combined to obtain "Air Canada". Motivated by this example, we present a simple method for finding phrases in text, and show that learning good vector representations for millions of phrases is possible."
 
 ----
@@ -605,13 +613,7 @@
 >	Second, they show that their model works with phrases, too, though they just do this by replacing the individual tokens in a multiword expression with a single symbol representing the phrase - pretty simple, but it works.  
 >	Third, they show what to me was a very surprising additional feature of the learned vector spaces: some relationships are encoded compositionally in the vector space, meaning that you can just add the vectors for two words like "Russian" and "capital" to get a vector that is very close to "Moscow". They didn't do any kind of thorough evaluation of this, but the fact the it works at all was very surprising to me. They did give a reasonable explanation, however, and I've put it into math below. The probability of two words i and j appearing in the same context in this model is proportional to exp(vi⋅vj). Now, if we have a third word, k, and its probability of appearing with both word i and word j is proportional to exp(vk⋅vi)*exp(vk⋅vj)=exp(vk⋅(vi+vj)). So what you get when you add the vectors for two words is something that is likely to show up in the contexts of both of them. Thus if you pick word i to be "Russian" and word j to be "capital", a word k that has high probability might very well be "Moscow", because it tends to show up in the context of both of those words. So we can see that this method does have some reasonable explanation for why it works."
 
-
-#### ["word2vec Explained: Deriving Mikolov et al.’s Negative-Sampling Word-Embedding Method"](http://arxiv.org/abs/1402.3722) Goldberg, Levy
->	"The word2vec software of Tomas Mikolov and colleagues has gained a lot of traction lately, and provides state-of-the-art word embeddings. The learning models behind the software are described in two research papers. We found the description of the models in these papers to be somewhat cryptic and hard to follow. While the motivations and presentation may be obvious to the neural-networks language-modeling crowd, we had to struggle quite a bit to figure out the rationale behind the equations. This note is an attempt to explain equation (4) (negative sampling)."
-
-
-#### ["word2vec Parameter Learning Explained"](http://www-personal.umich.edu/~ronxin/pdf/w2vexp.pdf) Rong
->	"The word2vec model and application by Mikolov et al. have attracted a great amount of attention in recent two years. The vector representations of words learned by word2vec models have been proven to be able to carry semantic meanings and are useful in various NLP tasks. As an increasing number of researchers would like to experiment with word2vec, I notice that there lacks a material that comprehensively explains the parameter learning process of word2vec in details, thus preventing many people with less neural network experience from understanding how exactly word2vec works. This note provides detailed derivations and explanations of the parameter update equations for the word2vec models, including the original continuous bag-of-word and skip-gram models, as well as advanced tricks, hierarchical soft-max and negative sampling. In the appendix a review is given on the basics of neuron network models and backpropagation."
+  - `paper` ["word2vec Explained: Deriving Mikolov et al.’s Negative-Sampling Word-Embedding Method"](http://arxiv.org/abs/1402.3722) by Goldberg and Levy
 
 
 #### ["GloVe: Global Vectors for Word Representation"](http://nlp.stanford.edu/pubs/glove.pdf) Pennington, Socher, Manning
@@ -812,6 +814,7 @@
 >	"We compare DANs to both the shallow NBOW model as well as more complicated syntactic models on sentence and document-level sentiment analysis and factoid question answering tasks. Our results show that DANs outperform other bag-ofwords models and many syntactic models with very little training time. On the question-answering task, DANs effectively train on out-of-domain data, while RecNNs struggle to reconcile the syntactic differences between the training and test data."
 
   - `video` <http://youtube.com/watch?v=y1_0i1RF74c> (Iyyer)
+  - `video` <https://youtube.com/watch?v=losFCNJbnZY> (Boyd-Graber)
   - `slides` <https://cs.umd.edu/~miyyer/data/acldan_slides.pdf>
   - `code` <http://github.com/miyyer/dan>
 

@@ -93,6 +93,7 @@
 #### books
 
   ["A First Encounter with Machine Learning"](https://www.ics.uci.edu/~welling/teaching/ICS273Afall11/IntroMLBook.pdf) by Max Welling  
+  ["Model-Based Machine Learning"](http://mbmlbook.com) by John Winn, Christopher Bishop and Thomas Diethe  
   ["Deep Learning"](http://www.deeplearningbook.org) by Ian Goodfellow, Yoshua Bengio, Aaron Courville  
   ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/book/ebook/the-book.html)
 	([second edition](http://incompleteideas.net/book/the-book-2nd.html)) by Richard Sutton and Andrew Barto  
@@ -491,10 +492,9 @@
 ----
 
   [auto-sklearn](https://github.com/automl/auto-sklearn) project  
-
   [TPOT](https://github.com/EpistasisLab/tpot) project  
-
   [auto_ml](http://auto-ml.readthedocs.io) project  
+  [H2O AutoML](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html) project  
 
   [The Automatic Statistician](https://automaticstatistician.com) project  
   - [overview](https://youtube.com/watch?v=aPDOZfu_Fyk) by Zoubin Ghahramani `video`  
@@ -505,7 +505,9 @@
 ----
 
   [AutoML](http://automl.chalearn.org) challenge  
->	"Design the perfect machine learning “black box” capable of performing all model selection and hyper-parameter tuning without any human intervention"  
+>	"Design the perfect machine learning “black box” capable of performing all model selection and hyper-parameter tuning without any human intervention"
+
+  ["Benchmarking Automatic Machine Learning Frameworks"](https://arxiv.org/abs/1808.06492) by Balaji and Allen `paper`
 
 ----
 
@@ -565,6 +567,7 @@
 
 ----
 
+  [overview](https://youtu.be/Tkl6ERLWAbA?t=27m10s) by Chris Re `video`  
   [overview](https://youtube.com/watch?v=08jorbiyLwY) by Chris Re `video`  
   [overview](https://youtube.com/watch?v=HmocI2b5YfA) by Chris Re `video`  
 
@@ -594,6 +597,8 @@
   ["Learning to Compose Domain-Specific Transformations for Data Augmentation"](https://arxiv.org/abs/1709.01643) `paper` ([video](https://youtube.com/watch?v=eh2LAOjW78A))  
   ["Inferring Generative Model Structure with Static Analysis"](https://arxiv.org/abs/1709.02477) `paper` ([video](https://youtube.com/watch?v=Do1On5AzHE4))  
   ["Snorkel: Rapid Training Data Creation with Weak Supervision"](#snorkel-rapid-training-data-creation-with-weak-supervision-ratner-bach-ehrenberg-fries-wu-re) `paper` `summary` ([talk](https://youtube.com/watch?v=HmocI2b5YfA) `video`)  
+  ["Training Complex Models with Multi-Task Weak Supervision"](https://ajratner.github.io/assets/papers/mts-draft.pdf) `paper`  
+  ["Snorkel MeTaL: Weak Supervision for Multi-Task Learning"](https://ajratner.github.io/assets/papers/deem-metal-prototype.pdf) `paper`  
 
 ----
 

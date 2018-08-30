@@ -1048,6 +1048,7 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=G-kWNQJ4idw> (demo)
   - `video` <https://youtube.com/watch?v=IVSZnTknyqw> (demo)
   - `post` <https://deepmind.com/blog/neural-scene-representation-and-rendering>
+  - `code` <https://github.com/wohlert/generative-query-network-pytorch>
   - `code` <https://github.com/ogroth/tf-gqn>
   - `paper` <http://science.sciencemag.org/content/sci/360/6394/1204.full.pdf>
 
@@ -1081,6 +1082,7 @@ interesting older papers:
 >	"Beta-VAE is a VAE with beta coefficient in KL divergence term where beta=1 is exactly same formulation of vanilla VAE. By increasing beta, the weighted factor forces model to learn more disentangled representation than VAE. The authors also proposed disentanglement metric by training a simple classifier with low capacity and use it’s prediction accuracy. But the metric can be only calculated in simulator (ground truth generator) setting where we can control independent factors to generate different samples with controlled property."  
   - <http://tinyurl.com/jgbyzke> (demo)
   - `video` <https://youtu.be/XNGo9xqpgMo?t=10m8s> (Higgins)
+  - `post` <https://lilianweng.github.io/lil-log/2018/08/12/from-autoencoder-to-beta-vae.html#beta-vae>
 
 #### ["Early Visual Concept Learning with Unsupervised Deep Learning"](http://arxiv.org/abs/1606.05579) Higgins, Matthey, Glorot, Pal, Uria, Blundell, Mohamed, Lerchner
   `concept learning`
@@ -1309,6 +1311,7 @@ interesting older papers:
   - `post` <https://blog.openai.com/glow>
   - `video` <https://youtube.com/watch?v=exJZOC3ZceA> (demo)
   - `code` <https://github.com/openai/glow>
+  - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/research/glow_ops.py>
 
 #### ["Neural Autoregressive Flows"](https://arxiv.org/abs/1804.00779) Huang, Krueger, Lacoste, Courville
   `NAF`
@@ -1610,7 +1613,7 @@ interesting older papers:
   `GAN applications` `domain translation` `CycleGAN`
   - <https://junyanz.github.io/CycleGAN/> (demo)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1703.10593>
-  - `code` <https://github.com/junyanz/CycleGAN>
+  - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/research/cycle_gan.py>
 
 #### ["Unsupervised Image-to-Image Translation Networks"](http://arxiv.org/abs/1703.00848) Liu, Breuel, Kautz
   `GAN applications` `domain translation`
@@ -1638,6 +1641,7 @@ interesting older papers:
 #### ["Fixing a Broken ELBO"](https://arxiv.org/abs/1711.00464) Alemi, Poole, Fischer, Dillon, Saurous, Murphy
 >	"Fitting deep directed latent-variable models by maximizing the marginal likelihood or evidence is typically intractable, thus a common approximation is to maximize the evidence lower bound (ELBO) instead. However, maximum likelihood training (whether exact or approximate) does not necessarily result in a good latent representation, as we demonstrate both theoretically and empirically. In particular, we derive variational lower and upper bounds on the mutual information between the input and the latent variable, and use these bounds to derive a rate-distortion curve that characterizes the tradeoff between compression and reconstruction accuracy. Using this framework, we demonstrate that there is a family of models with identical ELBO, but different quantitative and qualitative characteristics. Our framework also suggests a simple new method to ensure that latent variable models with powerful stochastic decoders do not ignore their latent code."  
 >	"We have motivated the β-VAE objective on information theoretic grounds, and demonstrated that comparing model architectures in terms of the rate-distortion plot offers a much better look at their performance and tradeoffs than simply comparing their marginal log likelihoods."  
+  - `notes` <https://medium.com/peltarion/generative-adversarial-nets-and-variational-autoencoders-at-icml-2018-6878416ebf22>
   - `notes` <https://habr.com/company/yandex/blog/418421> `in russian`
 
 ----
@@ -1707,6 +1711,11 @@ interesting older papers:
 [**interesting recent papers - generative models**](#generative-models)
 
 ----
+#### ["Universal Transformers"](https://arxiv.org/abs/1807.03819) Dehghani, Gouws, Vinyals, Uszkoreit, Kaiser
+  `Transformer`
+  - `post` <https://ai.googleblog.com/2018/08/moving-beyond-translation-with.html>
+  - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/research/universal_transformer.py>
+
 #### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani et al.
   `Transformer`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#attention-is-all-you-need-vaswani-et-al>
@@ -1818,6 +1827,15 @@ interesting older papers:
   - `post` <https://widmi.github.io>
   - `code` <https://github.com/ml-jku/baselines-rudder>
 
+#### ["TD or not TD: Analyzing the Role of Temporal Differencing in Deep Reinforcement Learning"](https://arxiv.org/abs/1806.01175) Amiranashvili, Dosovitskiy, Koltun, Brox
+>	"There is little understanding of when and why certain deep RL algorithms work well. Theoretical results are mainly based on tabular environments or linear function approximators. Their assumptions do not cover the typical application domains of deep RL, which feature extremely high input dimensionality (typically in the tens of thousands) and the use of nonlinear function approximators. Thus, our understanding of deep RL is based primarily on empirical results, and these empirical results guide the design of deep RL algorithms."  
+>	"We perform a controlled experimental study aiming at better understanding the role of temporal differencing in modern deep reinforcement learning, which is characterized by essentially infinite-dimensional state spaces, extremely high observation dimensionality, partial observability, and deep nonlinear models used as function approximators. We focus on environments with visual inputs and discrete action sets, and algorithms that involve prediction of value or action-value functions."  
+>	"By varying the parameters such as the balance between TD and MC in the learning update or the prediction horizon, we are able to clearly isolate the effect of these parameters on learning. Moreover, we designed a series of controlled scenarios that focus on specific characteristics of RL problems: reward sparsity, reward delay, perceptual complexity, and properties of terminal states."  
+>	"Temporal differencing methods are generally considered superior to Monte Carlo methods in reinforcement learning. This opinion is largely based on empirical evidence from domains such as gridworlds, cart pole, and mountain car. Our results agree: in gridworlds and on Atari games we find that n-step Q learning outperforms QMC. We further find, similar to the TD(λ) experiments from the past, that a mixture of MC and TD achieves best results in n-step Q and A3C. However, the situation changes in perceptually complex environments. In our experiments in immersive three-dimensional simulations, a finite-horizon MC method matches or outperforms TD-based methods."  
+>	"Our findings in modern deep RL settings both support and contradict past results on the merits of TD. On the one hand, value-based infinite-horizon methods perform best with a mixture of TD and MC; this is consistent with the TD(λ) results of Sutton (1988). On the other hand, in sharp contrast to prior beliefs, we observe that Monte Carlo algorithms can perform very well on challenging RL tasks. This is made possible by simply limiting the prediction to a finite horizon. Surprisingly, finite-horizon Monte Carlo training is successful in dealing with sparse and delayed rewards, which are generally assumed to impair this class of methods. Monte Carlo training is also more stable to noisy rewards and is particularly robust to perceptual complexity and variability."  
+>	"While TD is at an advantage in tasks with simple perception, long planning horizons, or terminal rewards, MC training is more robust to noisy rewards, effective for training perception systems from raw sensory inputs, and surprisingly successful in dealing with sparse and delayed rewards."  
+>	"What is the reason for this contrast between classic findings and our results? We believe that the key difference is in the complexity of perception in immersive three-dimensional environments, which was not present in gridworlds and other classic problems, and is only partially present in Atari games. In immersive simulation, the agent’s observation is a high-dimensional image that represents a partial view of a large (mostly hidden) three-dimensional environment. The dimensionality of the state space is essentially infinite: the underlying environment is specified by continuous surfaces in three-dimensional space. Memorizing all possible states is easy and routine in gridworlds and is also possible in some Atari games, but is not feasible in immersive three-dimensional simulations. Therefore, in order to successfully operate in such simulations, the agent has to learn to extract useful representations from the observations it receives. Encoding a meaningful representation from rich perceptual input is where Monte Carlo methods are at an advantage due to the reliability of their training signals. Monte Carlo methods train on ground-truth targets, not “guess from a guess”, as TD methods do."  
+
 #### ["Simple Random Search Provides a Competitive Approach to Reinforcement Learning"](https://arxiv.org/abs/1803.07055) Mania, Guy, Recht
 >	"We attempted to find the simplest algorithm for model-free RL that performs well on the continuous control benchmarks used in the RL literature. We demonstrated that with a few algorithmic augmentations, basic random search could be used to train linear policies that achieve state-of-theart sample efficiency on the MuJoCo locomotion tasks. We showed that linear policies match the performance of complex neural network policies and can be found through a simple algorithm."  
 >	"For application to continuous control, we augment the basic random search method with three simple features. First, we scale each update step by the standard deviation of the rewards collected for computing that update step. Second, we normalize the system’s states by online estimates of their mean and standard deviation. Third, we discard from the computation of the update steps the directions that yield the least improvement of the reward."  
@@ -1832,6 +1850,7 @@ interesting older papers:
   `Q-learning`
 >	"The theoretical question of "whether model-free algorithms can be made sample efficient" is one of the most fundamental questions in RL, and remains unsolved even in the basic scenario with finitely many states and actions."  
 >	"We prove that, in an episodic MDP setting, Q-learning with UCB exploration achieves regret O(sqrt(H^3SAT)), where S and A are the numbers of states and actions, H is the number of steps per episode, and T is the total number of steps. This sample efficiency matches the optimal regret that can be achieved by any model-based approach, up to a single √H factor. To the best of our knowledge, this is the first analysis in the model-free setting that establishes √T regret without requiring access to a "simulator."  
+  - `video` <https://youtu.be/Tge7LPT9vGA?t=20m37s> (Jin)
 
 #### ["Is the Bellman Residual a Bad Proxy?"](https://hal.archives-ouvertes.fr/hal-01629739/document) Geist, Piot, Pietquin
   `Q-learning`
@@ -1918,6 +1937,7 @@ interesting older papers:
 >	"Currently, there are a multitude of algorithms that can be used to perform TD control, including Sarsa, Q-learning, and Expected Sarsa. These methods are often studied in the one-step case, but they can be extended across multiple time steps to achieve better performance. Each of these algorithms is seemingly distinct, and no one dominates the others for all problems. In this paper, we study a new multi-step action-value algorithm called Q(σ) which unifies and generalizes these existing algorithms, while subsuming them as special cases. A new parameter, σ, is introduced to allow the degree of sampling performed by the algorithm at each step during its backup to be continuously varied, with Sarsa existing at one extreme (full sampling), and Expected Sarsa existing at the other (pure expectation)."  
 >	"With a constant value of sampling parameter σ, Q(σ) is a weighted average between tree backups and regular SARSA: σ varies the breadth of the tree backup, contrasted with TD(λ) where λ varies the depth. Q(σ) allows for interpolation in bias-variance tradeoff: if σ is dynamically adjusted, can enforce a desirable tradeoff."  
   - `video` <https://youtube.com/watch?v=MidZJ-oCpRk> (De Asis)
+  - `video` <https://youtube.com/watch?v=_OP5g1gRP5s> (Hernandez-Garcia)
   - `video` <https://youtu.be/dZmCOIJ7Cyc?t=7m3s> (Bobyrev) `in russian`
 
 #### ["Convergent Tree-Backup and Retrace with Function Approximation"](https://arxiv.org/abs/1705.09322) Touati, Bacon, Precup, Vincent
@@ -2461,14 +2481,17 @@ interesting older papers:
   - `video` <https://vimeo.com/235929810> (Schapire)
 
 ----
-#### ["Evolved Policy Gradients"](https://arxiv.org/abs/1802.04821) Houthooft, Chen, Isola, Stadie, Wolski, Ho, Abbeel
-  `learning intrinsic motivation` `meta-learning`
-  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#evolved-policy-gradients-houthooft-chen-isola-stadie-wolski-ho-abbeel>
+#### ["Meta-Reinforcement Learning of Structured Exploration Strategies"](https://arxiv.org/abs/1802.07245) Gupta, Mendonca, Liu, Abbeel, Levine
+  `learning to explore` `meta-learning`
 
 #### ["Some Considerations on Learning to Explore via Meta-Reinforcement Learning"](https://arxiv.org/abs/1803.01118) Stadie, Yang, Houthooft, Chen, Duan, Wu, Abbeel, Sutskever
   `learning to explore` `meta-learning`
 >	"It is likely that future work in this area will focus on meta-learning a curiosity signal which is robust and transfers across tasks. Perhaps this will enable meta agents which learn to explore rather than being forced to explore by mathematical trickery in their objectives."  
   - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#some-considerations-on-learning-to-explore-via-meta-reinforcement-learning-stadie-yang-houthooft-chen-duan-wu-abbeel-sutskever>
+
+#### ["Evolved Policy Gradients"](https://arxiv.org/abs/1802.04821) Houthooft, Chen, Isola, Stadie, Wolski, Ho, Abbeel
+  `learning intrinsic motivation` `meta-learning`
+  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#evolved-policy-gradients-houthooft-chen-isola-stadie-wolski-ho-abbeel>
 
 ----
 #### ["A Contextual Bandit Bake-off"](https://arxiv.org/abs/1802.04064) Bietti, Agarwal, Langford
@@ -2587,13 +2610,7 @@ hieves."
 
 #### ["Curiosity-driven Exploration by Self-supervised Prediction"](https://arxiv.org/abs/1705.05363) Pathak, Agrawal, Efros, Darrell
   `exploration guided by prediction error`
->	"Our main contribution is in designing an intrinsic reward signal based on prediction error of the agent’s knowledge about its environment that scales to high-dimensional continuous state spaces like images, bypasses the hard problem of predicting pixels and is unaffected by the unpredictable aspects of the environment that do not affect the agent."  
->	"Adding representation network able to filter out information from the observed state that is not relevant to predict how the agent actions affect the future state."  
-  - `post` <https://pathak22.github.io/noreward-rl/index.html> (demo)
-  - `video` <https://vimeo.com/237270588> (Pathak)
-  - `video` <https://youtube.com/watch?v=_Z9ZP1eiKsI> (Kilcher)
-  - `video` <https://youtu.be/RwLTrQUyDvA?t=18m2s> (Diaz Rodriguez)
-  - `code` <https://github.com/pathak22/noreward-rl>
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#curiosity-driven-exploration-by-self-supervised-prediction-pathak-agrawal-efros-darrell>
 
 #### ["Surprise-Based Intrinsic Motivation for Deep Reinforcement Learning"](http://arxiv.org/abs/1703.01732) Achiam, Sastry
   `exploration guided by prediction error`
@@ -2617,22 +2634,7 @@ hieves."
 
 #### ["Reinforcement Learning with Unsupervised Auxiliary Tasks"](http://arxiv.org/abs/1611.05397) Jaderberg, Mnih, Czarnecki, Schaul, Leibo, Silver, Kavukcuoglu
   `UNREAL` `exploration guided by additional tasks`
->	"Auxiliary tasks:  
->	- pixel changes: learn a policy for maximally changing the pixels in a grid of cells overlaid over the images  
->	- network features: learn a policy for maximally activating units in a specific hidden layer  
->	- reward prediction: predict the next reward given some historical context  
->	- value function replay: value function regression for the base agent with varying window for n-step returns"  
->	"By using these tasks we force the agent to learn about the controllability of its environment and the sorts of sequences which lead to rewards, and all of this shapes the features of the agent."
->	"This approach exploits the multithreading capabilities of standard CPUs. The idea is to execute many instances of our agent in parallel, but using a shared model. This provides a viable alternative to experience replay, since parallelisation also diversifies and decorrelates the data. Our asynchronous actor-critic algorithm, A3C, combines a deep Q-network with a deep policy network for selecting actions. It achieves state-of-the-art results, using a fraction of the training time of DQN and a fraction of the resource consumption of Gorila."  
-  - `post` <https://deepmind.com/blog/reinforcement-learning-unsupervised-auxiliary-tasks/>
-  - `video` <https://youtube.com/watch?v=Uz-zGYrYEjA> (demo)
-  - `video` <https://youtube.com/watch?v=VVLYTqZJrXY> (Jaderberg)
-  - `video` <https://facebook.com/iclr.cc/videos/1712224178806641?t=4545> (Jaderberg)
-  - `video` <https://youtu.be/bsuvM1jO-4w?t=20m7s> (Mnih)
-  - `video` <https://youtube.com/watch?v=-YiMVR3HEuY> (Kilcher)
-  - `video` <https://yadi.sk/i/_2_0yqeW3HDbcn> (18:25) (Panin) `in russian`
-  - `notes`  <http://www.shortscience.org/paper?bibtexKey=journals/corr/1611.05397>
-  - `code` <https://github.com/miyosuda/unreal>
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#reinforcement-learning-with-unsupervised-auxiliary-tasks-jaderberg-mnih-czarnecki-schaul-leibo-silver-kavukcuoglu>
 
 #### ["Learning to Navigate in Complex Environments"](http://arxiv.org/abs/1611.03673) Mirowski, Pascanu, Viola, Soyer, Ballard, Banino, Denil, Goroshin, Sifre, Kavukcuoglu, Kumaran, Hadsell
   `exploration guided by additional tasks`
@@ -2675,6 +2677,7 @@ hieves."
   - `video `<https://youtu.be/RvEwFvl-TrY?t=19m18s> (Sutskever)
   - `video` <https://youtu.be/TERCdog1ddE?t=50m45s> (Abbeel)
   - `video` <https://youtu.be/BXe2A5i4ESw?t=10m42s> (Fournier)
+  - `video` <https://youtu.be/0Ey02HT_1Ho?t=10m57s> (Steenbrugge)
   - `notes` <https://yobibyte.github.io/files/paper_notes/her.pdf>
   - `post` <https://jangirrishabh.github.io/2018/03/25/Overcoming-exploration-demos.html>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/her>
@@ -2938,18 +2941,7 @@ hieves."
 
 #### ["Learning to Act by Predicting the Future"](https://arxiv.org/abs/1611.01779) Dosovitskiy, Koltun
   `successor features`
-  - `video` <https://youtube.com/watch?v=947bSUtuSQ0> + <https://youtube.com/watch?v=947bSUtuSQ0> (demo)
-  - `video` <https://facebook.com/iclr.cc/videos/1712224178806641?t=3252> (Dosovitskiy)
-  - `video` <https://youtube.com/watch?v=buUF5F8UCH8> (Lamb, Ozair)
-  - `video` <https://youtube.com/watch?v=Q0ldKJbAwR8> (Dosovitskiy) `in russian`
-  - `video` <https://yadi.sk/i/pMdw-_uI3Gke7Z> (1:02:03) (Shvechikov) `in russian`
-  - `post` <https://oreilly.com/ideas/reinforcement-learning-for-complex-goals-using-tensorflow>
-  - `post` <https://flyyufelix.github.io/2017/11/17/direct-future-prediction.html>
-  - `notes` <https://danieltakeshi.github.io/2017/10/10/learning-to-act-by-predicting-the-future/>
-  - `notes` <https://blog.acolyer.org/2017/05/12/learning-to-act-by-predicting-the-future/>
-  - `code` <https://github.com/IntelVCL/DirectFuturePrediction>
-  - `code` <https://github.com/NervanaSystems/coach/blob/master/agents/dfp_agent.py>
-  - `code` <https://github.com/flyyufelix/Direct-Future-Prediction-Keras>
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#learning-to-act-by-predicting-the-future-dosovitskiy-koltun>
 
 #### ["Deep Successor Reinforcement Learning"](https://arxiv.org/abs/1606.02396) Kulkarni, Saeedi, Gautam, Gershman
   `successor features`

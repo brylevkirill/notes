@@ -2276,6 +2276,7 @@ x."
 ----
 >	"CTC is a type of neural network output and associated scoring function, for training recurrent neural networks such as LSTM networks to tackle sequence problems where the timing is variable. It can be used for tasks like recognising phonemes in speech audio. CTC refers to the outputs and scoring, and is independent of the underlying neural network structure. A CTC network has a continuous output (e.g. softmax), which is fitted through training to model the probability of a label. The input is a sequence of observations, and the outputs are a sequence of labels, which can include blank outputs. CTC does not attempt to learn boundaries and timings: Label sequences are considered equivalent if they differ only in alignment, ignoring blanks. Equivalent label sequences can occur in many ways – which makes scoring a non-trivial task. Fortunately there is an efficient forward-backwards algorithm. CTC scores can then be used with the back-propagation algorithm to update the neural network weights."
 
+  - `video` <https://youtube.com/watch?v=e0ia-mN-7Kk> (Ding, Brigden)
   - `video` <https://youtube.com/watch?v=UMxvZ9qHwJs> (Gharbieh)
   - `post` <https://distill.pub/2017/ctc/>
   - `post` <https://machinethoughts.wordpress.com/2017/11/02/ctc-training-latent-discrete-sequential-decisions-without-rl/>

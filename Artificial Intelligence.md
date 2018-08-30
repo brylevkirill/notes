@@ -20,9 +20,9 @@
 ### overview
 
   ["Compression Progress: The Algorithmic Principle Behind Curiosity and Creativity"](https://youtube.com/watch?v=h7F5sCLIbKQ) by Juergen Schmidhuber `video`  
-  ["Deep Learning and AI"](https://youtube.com/watch?v=izrG86jycck) by Geoffrey Hinton `video`  
+  ["The Next Big Step in AI: Planning with a Learned Model"](https://youtube.com/watch?v=6-Uiq8-wKrg) by Richard Sutton `video`  
   ["How Does The Brain Learn so Much so Quickly?"](https://youtube.com/watch?v=cWzi38-vDbE) by Yann LeCun`video`  
-  ["The Future of Artificial Intelligence Belongs to Search and Learning"](http://www.fields.utoronto.ca/talks/advances-reinforcement-learning) by Richard Sutton `video`  
+  ["Deep Learning and AI"](https://youtube.com/watch?v=izrG86jycck) by Geoffrey Hinton `video`  
   ["Building Machines That See, Learn and Think Like People"](https://youtube.com/watch?v=7ROelYvo8f0) by Joshua Tenenbaum `video`  
   ["AI: A Return To Meaning"](https://youtube.com/watch?v=1n-cwezu8j4) by David Ferucci `video`  
   ["On Thermodynamics and the Future of Computing"](https://ieeetv.ieee.org/conference-highlights/on-thermodynamics-and-the-future-of-computing-ieee-rebooting-computing-2017) by Todd Hylton `video`  
@@ -650,6 +650,15 @@
 
 ---
 ### interesting papers - universal artificial intelligence
+
+
+#### ["Universal Reinforcement Learning Algorithms: Survey and Experiments"](https://arxiv.org/abs/1705.10557) Aslanides, Leike, Hutter
+>	"Many state-of-the-art reinforcement learning algorithms typically assume that the environment is an ergodic Markov Decision Process. In contrast, the field of universal reinforcement learning is concerned with algorithms that make as few assumptions as possible about the environment. The universal Bayesian agent AIXI and a family of related URL algorithms have been developed in this setting. While numerous theoretical optimality results have been proven for these agents, there has been no empirical investigation of their behavior to date. We present a short and accessible survey of these URL algorithms under a unified notation and framework, along with results of some experiments that qualitatively illustrate some properties of the resulting policies, and their relative performance on partially-observable gridworld environments. We also present an opensource reference implementation of the algorithms which we hope will facilitate further understanding of, and experimentation with, these ideas."
+
+  - <http://aslanides.io/aixijs/demo.html> (demo)
+  - `post` <http://aslanides.io/aixijs>
+  - `code` <http://github.com/aslanides/aixijs>
+  - `paper` ["AIXIjs: A Software Demo for General Reinforcement Learning"](https://arxiv.org/abs/1705.07615) by Aslanides
 
 
 #### ["On Universal Prediction and Bayesian Confirmation"](http://arxiv.org/abs/0709.1516) Hutter
