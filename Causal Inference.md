@@ -1,5 +1,3 @@
-  Causal inference is a problem of uncovering cause-effect relationships between variables of data generating system. Causal structures provide understanding about how the system will behave under changing, unseen environments. Knowledge about these causal dynamics allows to answer "what if" questions, describing potential responses of the system under hypothetical manipulations and interventions.  
-  What if some railways are closed, what will passengers do? What if we incentivize members of a social network to propagate an idea, how influential can they be? What if some genes in a cell are knocked-out, which phenotypes can we expect? Such questions need to be addressed via a combination of experimental and observational data, and require a careful approach to modelling heterogeneous datasets and structural assumptions concerning the causal relations among components of the system.  
 
 
   * [**overview**](#overview)
@@ -8,8 +6,8 @@
 
 
 
-----
-#### overview
+---
+### overview
 
   ["The Seven Pillars of Causal Reasoning with Reflections on Machine Learning"](http://ftp.cs.ucla.edu/pub/stat_ser/r481.pdf) by Judea Pearl `paper`  
   ["Theoretical Impediments to Machine Learning"](http://web.cs.ucla.edu/~kaoru/theoretical-impediments.pdf) by Judea Pearl `paper`  
@@ -64,8 +62,14 @@
 
 
 
+---
+### theory
+
+  Causal inference is a problem of uncovering cause-effect relations between variables of data generating system. Causal structures provide understanding about how the system will behave under changing and unseen environments. Knowledge about these causal dynamics allows to answer "what if" questions, describing potential responses of the system under hypothetical manipulations and interventions.
+
+  What if some railways are closed, what will passengers do? What if we incentivize members of a social network to propagate an idea, how influential can they be? What if some genes in a cell are knocked-out, which phenotypes can we expect? Such questions need to be addressed via a combination of experimental and observational data, and require a careful approach to modelling heterogeneous datasets and structural assumptions concerning the causal relations among components of the system.
+
 ----
-#### theory
 
   "In retrospect, my greatest challenge was to break away from probabilistic thinking and accept, first, that people are not probability thinkers but cause-effect thinkers and, second, that causal thinking cannot be captured in the language of probability; it requires a formal language of its own."
 
@@ -123,6 +127,8 @@
 
 ---
 ### interesting papers
+
+[recent papers](http://deeplearningpatterns.com/doku.php?id=causal_analysis)
 
 
 #### ["Counterfactual Reasoning and Learning Systems: The Example of Computational Advertising"](https://arxiv.org/abs/1209.2355) Bottou et al.

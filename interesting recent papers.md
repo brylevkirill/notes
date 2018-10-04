@@ -1082,6 +1082,7 @@ interesting older papers:
 >	"Beta-VAE is a VAE with beta coefficient in KL divergence term where beta=1 is exactly same formulation of vanilla VAE. By increasing beta, the weighted factor forces model to learn more disentangled representation than VAE. The authors also proposed disentanglement metric by training a simple classifier with low capacity and use it’s prediction accuracy. But the metric can be only calculated in simulator (ground truth generator) setting where we can control independent factors to generate different samples with controlled property."  
   - <http://tinyurl.com/jgbyzke> (demo)
   - `video` <https://youtu.be/XNGo9xqpgMo?t=10m8s> (Higgins)
+  - `video` <https://youtu.be/Uj3uAQGolQU?t=27m17s> (Achille)
   - `post` <https://lilianweng.github.io/lil-log/2018/08/12/from-autoencoder-to-beta-vae.html#beta-vae>
 
 #### ["Early Visual Concept Learning with Unsupervised Deep Learning"](http://arxiv.org/abs/1606.05579) Higgins, Matthey, Glorot, Pal, Uria, Blundell, Mohamed, Lerchner
@@ -1312,10 +1313,12 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=exJZOC3ZceA> (demo)
   - `code` <https://github.com/openai/glow>
   - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/research/glow_ops.py>
+  - `code` <https://github.com/ikostrikov/pytorch-flows>
 
 #### ["Neural Autoregressive Flows"](https://arxiv.org/abs/1804.00779) Huang, Krueger, Lacoste, Courville
   `NAF`
 >	"NAF unifies and generalizes MAF and IAF, replacing the (conditionally) affine univariate transformations of MAF/IAF with a more general class of invertible univariate transformations expressed as monotonic neural networks. We demonstrate that NAFs are universal approximators for continuous probability distributions, and their greater expressivity allows them to better capture multimodal target distributions."  
+  - `post` <https://medium.com/element-ai-research-lab/neural-autoregressive-flows-f164d6b8e462>
   - `post` <https://habr.com/company/yandex/blog/418421> `in russian`
   - `code` <https://github.com/CW-Huang/NAF>
 
@@ -1349,6 +1352,7 @@ interesting older papers:
   - `audio` <https://youtube.com/watch?v=315xKcYX-1w> (Papamakarios)
   - `post` <http://blog.evjang.com/2018/01/nf2.html>
   - `post` <http://akosiorek.github.io/ml/2018/04/03/norm_flows.html>
+  - `code` <https://github.com/ikostrikov/pytorch-flows>
   - `code` <https://github.com/gpapamak/maf>
 
 #### ["Density Estimation using Real NVP"](http://arxiv.org/abs/1605.08803) Dinh, Sohl-Dickstein, Bengio
@@ -1367,7 +1371,7 @@ interesting older papers:
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.08803>
   - `code` <https://github.com/tensorflow/models/tree/master/research/real_nvp>
   - `code` <https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/distributions/python/ops/bijectors/real_nvp.py>
-  - `code` <https://github.com/taesung89/real-nvp>
+  - `code` <https://github.com/ikostrikov/pytorch-flows>
 
 
 
@@ -1512,6 +1516,12 @@ interesting older papers:
   - `code` <https://github.com/wiseodd/generative-models/tree/master/GAN/f_gan>
 
 ----
+#### ["Which Training Methods for GANs Do Actually Converge?"](https://arxiv.org/abs/1801.04406) Mescheder, Geiger, Nowozin
+  `GAN training protocol`
+>	"Recent work has shown local convergence of GAN training for absolutely continuous data and generator distributions. In this paper, we show that the requirement of absolute continuity is necessary: we describe a simple yet prototypical counterexample showing that in the more realistic case of distributions that are not absolutely continuous, unregularized GAN training is not always convergent. Furthermore, we discuss regularization strategies that were recently proposed to stabilize GAN training. Our analysis shows that GAN training with instance noise or zero-centered gradient penalties converges. On the other hand, we show that Wasserstein-GANs and WGAN-GP with a finite number of discriminator updates per generator update do not always converge to the equilibrium point."  
+>	"We discuss these results, leading us to a new explanation for the stability problems of GAN training. Based on our analysis, we extend our convergence results to more general GANs and prove local convergence for simplified gradient penalties even if the generator and data distributions lie on lower dimensional manifolds. We find these penalties to work well in practice and use them to learn high-resolution generative image models for a variety of datasets with little hyperparameter tuning."  
+  - `code` <https://github.com/LMescheder/GAN_stability>
+
 #### ["GANs Trained by a Two Time-Scale Update Rule Converge to a Nash Equilibrium"](https://arxiv.org/abs/1706.08500) Heusel, Ramsauer, Unterthiner, Nessler, Hochreiter
   `GAN training protocol`
 >	"We propose a two time-scale update rule (TTUR) for training GANs with stochastic gradient descent that has an individual learning rate for both the discriminator and the generator."  
@@ -1576,16 +1586,6 @@ interesting older papers:
   `GAN applications` `image synthesis`
   - <https://tcwang0509.github.io/pix2pixHD/> (demo)
   - `code` <https://github.com/NVIDIA/pix2pixHD>
-
-#### ["Progressive Growing of GANs for Improved Quality, Stability, and Variation"](https://arxiv.org/abs/1710.10196) Karras, Aila, Laine, Lehtinen
-  `GAN applications` `image synthesis` `ProGAN`
->	"Instead of Wassersteinizing, just keep the KL loss, but get rid of the disjoint support problem by doing multiresolution approximation of the data distribution."  
-  - `video` <https://youtube.com/watch?v=XOxxPcy5Gr4> (demo)
-  - `video` <https://facebook.com/iclr.cc/videos/2123114954384226?t=6311> (Karras)
-  - `notes` <https://blog.acolyer.org/2018/05/10/progressive-growing-of-gans-for-improved-quality-stability-and-variation>
-  - `post` <https://bayesgroup.github.io/sufficient-statistics/posts/multilevel-gans/> `in russian`
-  - `code` <https://github.com/tkarras/progressive_growing_of_gans>
-  - `code` <https://github.com/ptrblck/prog_gans_pytorch_inference>
 
 ----
 #### ["Learning from Simulated and Unsupervised Images through Adversarial Training"](http://arxiv.org/abs/1612.07828) Shrivastava, Pfister, Tuzel, Susskind, Wang, Webb
@@ -2082,6 +2082,7 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=0rrffaYuUi4> (Wu)
   - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747?t=2703> (Wu)
   - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h54m20s> (Sigaud)
+  - `video` <https://youtu.be/xvRrgxcpaHY?t=34m54s> (Schulman)
   - `video` ["Optimizing Neural Networks using Structured Probabilistic Models of the Gradient Computation"](https://fields.utoronto.ca/video-archive/2017/02/2267-16498) (Grosse)
   - `video` ["Optimizing NN using Kronecker-factored Approximate Curvature"](https://youtube.com/watch?v=FLV-MLPt3sU) (Kropotov)
   - `slides` <https://csc2541-f17.github.io/slides/lec10.pdf#page=55> (Grosse)
@@ -2262,32 +2263,37 @@ interesting older papers:
 
 ----
 #### ["Dual Policy Iteration"](https://arxiv.org/abs/1805.10755) Sun, Gordon, Boots, Bagnell
+  `learning from planning` `using available environment model` `expert iteration`
 >	"Recently, a novel class of Approximate Policy Iteration algorithms such as ExIt and AlphaGo-Zero have demonstrated impressive practical performance. This new family of algorithms maintains, and alternately optimizes, two policies: a fast, reactive policy (e.g., a deep neural network) deployed at test time, and a slow, non-reactive policy (e.g., Tree Search), that can plan multiple steps ahead. The reactive policy is updated under supervision from the non-reactive policy, while the non-reactive policy is improved with guidance from the reactive policy. In this work we study this Dual Policy Iteration strategy in an alternating optimization framework and provide a convergence analysis that extends existing API theory."  
 >	"We also develop a special instance of this framework which reduces the update of non-reactive policies to model-based optimal control using learned local models, and provides a theoretically sound way of unifying model-free and model-based RL approaches with unknown dynamics. We demonstrate the efficacy of our approach on various continuous control Markov Decision Processes."  
 
+#### ["ExpIt-OOS: Towards Learning from Planning in Imperfect Information Games"](https://arxiv.org/abs/1808.10120) Kitchen, Benedetti
+  `learning from planning` `using available environment model` `expert iteration` `ExpIt-OOS`
+>	"A novel approach to playing imperfect information games within the Expert Iteration framework and inspired by AlphaZero. We use Online Outcome Sampling, an online search algorithm for imperfect information games in place of MCTS. While training online, our neural strategy is used to improve the accuracy of playouts in OOS, allowing a learning and planning feedback loop for imperfect information games."  
+
+#### ["Thinking Fast and Slow with Deep Learning and Tree Search"](https://arxiv.org/abs/1705.08439) Anthony, Tian, Barber
+  `learning from planning` `using available environment model` `expert iteration` `ExIt`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#thinking-fast-and-slow-with-deep-learning-and-tree-search-anthony-tian-barber>
+
+#### ["Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm"](https://arxiv.org/abs/1712.01815) Silver et al.
+  `learning from planning` `using available environment model` `expert iteration`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm-silver-et-al>
+
+#### ["Mastering the Game of Go without Human Knowledge"](https://deepmind.com/documents/119/agz_unformatted_nature.pdf) Silver et al.
+  `learning from planning` `using available environment model` `expert iteration`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#mastering-the-game-of-go-without-human-knowledge-silver-et-al>
+
+#### ["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](http://arxiv.org/abs/1701.01724) Moravcik et al.
+  `learning from planning` `using available environment model`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#deepstack-expert-level-artificial-intelligence-in-no-limit-poker-moravcik-et-al>
+
 #### ["Learning Generalized Reactive Policies using Deep Neural Networks"](https://arxiv.org/abs/1708.07280) Groshev, Tamar, Srivastava, Abbeel
-  `learning to guide planning` `using available environment model` `search-based policy iteration`
+  `learning from planning` `using available environment model`
 >	"learning a reactive policy that imitates execution traces produced by a planner"  
 >	"We consider the problem of learning for planning, where knowledge acquired while planning is reused to plan faster in new problem instances. For robotic tasks, among others, plan execution can be captured as a sequence of visual images."  
 >	"We investigate architectural properties of deep networks that are suitable for learning long-horizon planning behavior, and explore how to learn, in addition to the policy, a heuristic function that can be used with classical planners or search algorithms such as A*."  
 >	"Results on the challenging Sokoban domain suggest that DNNs have the capability to extract powerful features from observations, and the potential to learn the type of ‘visual thinking’ that makes some planning problems easy to humans but very hard for automatic planners."  
   - <https://sites.google.com/site/learn2plannips/> (demo)
-
-#### ["Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm"](https://arxiv.org/abs/1712.01815) Silver et al.
-  `learning to guide planning` `using available environment model` `search-based policy iteration` `expert iteration`
-  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm-silver-et-al>
-
-#### ["Mastering the Game of Go without Human Knowledge"](https://deepmind.com/documents/119/agz_unformatted_nature.pdf) Silver et al.
-  `learning to guide planning` `using available environment model` `search-based policy iteration` `expert iteration`
-  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#mastering-the-game-of-go-without-human-knowledge-silver-et-al>
-
-#### ["Thinking Fast and Slow with Deep Learning and Tree Search"](https://arxiv.org/abs/1705.08439) Anthony, Tian, Barber
-  `learning to guide planning` `using available environment model` `search-based policy iteration` `expert iteration` `ExIt`
-  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#thinking-fast-and-slow-with-deep-learning-and-tree-search-anthony-tian-barber>
-
-#### ["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](http://arxiv.org/abs/1701.01724) Moravcik et al.
-  `learning to guide planning` `using available environment model`
-  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#deepstack-expert-level-artificial-intelligence-in-no-limit-poker-moravcik-et-al>
 
 ----
 #### ["Learning to Search with MCTSnets"](https://arxiv.org/abs/1802.04697) Guez, Weber, Antonoglou, Simonyan, Vinyals, Wierstra, Munos, Silver
@@ -2477,6 +2483,7 @@ interesting older papers:
 >	- no bound on how much data needed  
 >	- no theory on how to explore in large spaces"  
   - `video` <https://vimeo.com/238228755> (Jiang)
+  - `video` <https://youtube.com/watch?v=VBkUmD5Em2k> (Agarwal)
   - `video` <https://youtube.com/watch?v=L5Q4Y3omnrY> (Agarwal)
   - `video` <https://vimeo.com/235929810> (Schapire)
 
@@ -3248,6 +3255,7 @@ hieves."
   `learning details of probabilistic program`
 >	"The paper talks about a certain class of neural networks that incorporate procedural knowledge. The way they are constructed is by compiling Forth code (procedural) to TensorFlow expressions (linear algebra) to be able to train slots (missing pieces in the code) end-to-end from input-output pairs using backpropagation."  
   - `video` <https://vimeo.com/238227890> (Bosnjak)
+  - `video` <https://youtu.be/LsLPp7gqwA4?t=27m8s> (Minervini)
   - `video` <https://facebook.com/nipsfoundation/videos/1552060484885185?t=5637> (Reed)
   - `code` <https://github.com/uclmr/d4>
 
@@ -3264,10 +3272,12 @@ hieves."
 
 ----
 #### ["Towards Neural Theorem Proving at Scale"](https://arxiv.org/abs/1807.08204) Minervini, Bosnjak, Rocktaschel, Riedel
-  `learning logic` `NTP 2.0`
+  `learning logic` `NTP`
+  - `video` <https://youtu.be/LsLPp7gqwA4?t=43m46s> (Minervini)
 
 #### ["End-to-end Differentiable Proving"](https://arxiv.org/abs/1705.11040) Rocktaschel, Riedel
   `learning logic` `NTP`
+  - `video` <https://youtu.be/LsLPp7gqwA4?t=32m45s> (Minervini)
   - <https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#end-to-end-differentiable-proving-rocktaschel-riedel>
 
 #### ["Differentiable Learning of Logical Rules for Knowledge Base Reasoning"](https://arxiv.org/abs/1702.08367) Yang, Yang, Cohen
@@ -3354,10 +3364,7 @@ hieves."
 ----
 #### ["A Generative Vision Model that Trains with High Data Efficiency and Breaks Text-based CAPTCHAs"](http://science.sciencemag.org/content/early/2017/10/26/science.aag2612.full) George et al.
   `question answering over images`
->	"Learning from few examples and generalizing to dramatically different situations are capabilities of human visual intelligence that are yet to be matched by leading machine learning models. By drawing inspiration from systems neuroscience, we introduce a probabilistic generative model for vision in which message-passing based inference handles recognition, segmentation and reasoning in a unified way. The model demonstrates excellent generalization and occlusion-reasoning capabilities, and outperforms deep neural networks on a challenging scene text recognition benchmark while being 300-fold more data efficient. In addition, the model fundamentally breaks the defense of modern text-based CAPTCHAs by generatively segmenting characters without CAPTCHA-specific heuristics. Our model emphasizes aspects like data efficiency and compositionality that may be important in the path toward general artificial intelligence."  
-  - `post` <https://vicarious.com/2017/10/26/common-sense-cortex-and-captcha/>
-  - `video` <https://youtube.com/watch?v=y459Yip5vRQ> (George)
-  - `code` <https://github.com/vicariousinc/science_rcn>
+  - <https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#a-generative-vision-model-that-trains-with-high-data-efficiency-and-breaks-text-based-captchas-george-et-al>
 
 #### ["Recurrent Relational Networks for Complex Relational Reasoning"](https://arxiv.org/abs/1711.08028) Palm, Paquet, Winther
   `question answering over images`

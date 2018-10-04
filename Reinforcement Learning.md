@@ -165,6 +165,7 @@
 	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://arxiv.org/abs/1705.02955) by Noam Brown and Tuomas Sandholm `paper` ([talk](https://vimeo.com/248533943#t=53s) `video`, [post](https://thegradient.pub/libratus-poker))  
 	["Depth-Limited Solving for Imperfect-Information Games"](https://arxiv.org/abs/1805.08195) by Brown, Sandholm, Amos `paper`  
 
+	[Libratus overview](https://youtube.com/watch?v=EhvH4jdF-ko) by Tuomas Sandholm `video`  
 	[Libratus overview](https://youtube.com/watch?v=xrWulRY_t1o) by Tuomas Sandholm `video`  
 	[Libratus overview](http://videolectures.net/aaai2017_bowling_sandholm_poker/#t=1350) by Tuomas Sandholm `video`  
 	[Libratus overview](https://youtube.com/watch?v=2dX0lwaQRX0) by Noam Brown `video`  
@@ -227,21 +228,18 @@
 ----
   - *Dota 2*  
 
-	[OpenAI Five](https://openai.com/five/)  
-	[OpenAI Five bots overview](https://blog.openai.com/openai-five/)  
-	[OpenAI Five bots overview](https://blog.openai.com/openai-five-benchmark-results/)  
-	[OpenAI Five bots architecture](https://s3-us-west-2.amazonaws.com/openai-assets/dota_benchmark_results/network_diagram_08_06_2018.pdf)  
-	[OpenAI Five bots reward function](https://gist.github.com/dfarhi/66ec9d760ae0c49a5c492c9fae93984a)  
+	[OpenAI Five](https://openai.com/five/)
 
-	[OpenAI Five bots vs Blitz Cap Fogged Merlini MoonMeander](https://twitch.tv/videos/293517383) game `video` ([overview](https://youtube.com/watch?v=80pm62J9kto) `video`)
+	[OpenAI Five overview](https://blog.openai.com/openai-five-benchmark-results/)  
+	[OpenAI Five architecture](https://s3-us-west-2.amazonaws.com/openai-assets/dota_benchmark_results/network_diagram_08_06_2018.pdf)  
+	[OpenAI Five reward function](https://gist.github.com/dfarhi/66ec9d760ae0c49a5c492c9fae93984a)  
 
-	[OpenAI 1v1 bot overview](https://blog.openai.com/dota-2/)  
-	[OpenAI 1v1 bot overview](https://blog.openai.com/more-on-dota-2/)  
+	[OpenAI Five overview](https://youtu.be/w3ues-NayAs?t=2m26s) by Ilya Sutskever `video`  
+	[OpenAI Five discussion](https://twitch.tv/videos/293517383?t=4h41m56s) `video`  
 
-	[OpenAI 1v1 bot vs Dendi](https://youtube.com/watch?v=wiOopO9jTZw) game `video`  
-	[OpenAI 1v1 bot vs SumaiL](https://youtube.com/watch?v=IbaHI38Ewws) game `video`  
-	[OpenAI 1v1 bot vs Arteezy](https://youtube.com/watch?v=rNSH8CviQQw) game `video`  
-	[OpenAI 1v1 bot vs Pajkatt](https://youtube.com/watch?v=BBUiwCEmrxU) game `video`  
+	[OpenAI Five vs Blitz Cap Fogged Merlini MoonMeander](https://twitch.tv/videos/293517383) game `video` ([overview](https://youtube.com/watch?v=80pm62J9kto) `video`)  
+	[OpenAI Five vs Kingrd Duster hFn tavo w33](https://youtube.com/watch?v=TFOQnzvBHdw) `video`  
+	[OpenAI Five vs xiao8 BurNIng rOtk Ferrari Sansheng Big God](https://youtube.com/watch?v=o9jTEP0u8mg) `video`  
 
 ----
   - *Quake III Arena CTF*
@@ -659,7 +657,9 @@
 
 ----
 
-  ["Comparing Intrinsic Motivations in a Unified Framework"](https://agi2018imtutorial.wordpress.com) tutorial by Martin Biehl ([slides](https://slides.com/slides_martin/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework))
+  ["Comparing Intrinsic Motivations in a Unified Framework"](https://agi2018imtutorial.wordpress.com) tutorial by Martin Biehl
+	([video](https://slideslive.com/38909803/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework),
+	[slides](https://slides.com/slides_martin/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework))
 
 
 ----
@@ -1435,7 +1435,8 @@
 
   ["Proximal Policy Optimization Algorithms"](#proximal-policy-optimization-algorithms-schulman-wolski-dhariwal-radford-klimov) by Schulman et al. `paper` `summary`
 
-  [overview](https://youtu.be/ycCtmp4hcUs?t=1h7m) by Joshua Achiam `video`
+  [overview](https://youtu.be/xvRrgxcpaHY?t=28m34s) by John Schulman `video`  
+  [overview](https://youtu.be/ycCtmp4hcUs?t=1h7m) by Joshua Achiam `video`  
 
 
 
@@ -1668,7 +1669,8 @@ interesting recent papers:
   - `notes` <https://dropbox.com/s/fuwhivftv998f6q/AlphaGoZeroPseudoCode.pdf>
   - `code` <https://github.com/pytorch/ELF/tree/master/src_py/elfgames/go>
   - `code` <https://github.com/tensorflow/minigo>
-  - `code` <https://github.com/gcp/leela-zero/>
+  - `code` <https://github.com/gcp/leela-zero>
+  - `code` <https://github.com/maxpumperla/deep_learning_and_the_game_of_go>
   - `paper` ["Reinforcement Learning as Classification: Leveraging Modern Classifiers"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.7.474&rep=rep1&type=pdf) by Lagoudakis and Parr
   - `paper` ["Approximate Modified Policy Iteration and its Application to the Game of Tetris"](http://jmlr.org/papers/v16/scherrer15a.html) by Scherrer et al.
 
@@ -1700,6 +1702,7 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=zHjE07NBA_o> (Kozlov) `in russian`
   - `notes` <https://github.com/Rochester-NRT/RocAlphaGo/wiki>
   - `code` <https://github.com/brilee/MuGo>
+  - `code` <https://github.com/maxpumperla/deep_learning_and_the_game_of_go>
 
 
 #### ["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](http://arxiv.org/abs/1701.01724) Moravcik et al.
@@ -2870,8 +2873,10 @@ interesting recent papers:
 >	"We propose a new family of policy gradient methods for reinforcement learning, which alternate between sampling data through interaction with the environment, and optimizing a "surrogate" objective function using stochastic gradient ascent. Whereas standard policy gradient methods perform one gradient update per data sample, we propose a novel objective function that enables multiple epochs of minibatch updates. The new methods, which we call proximal policy optimization, have some of the benefits of trust region policy optimization, but they are much simpler to implement, more general, and have better sample complexity (empirically). Our experiments test PPO on a collection of benchmark tasks, including simulated robotic locomotion and Atari game playing, and we show that PPO outperforms other online policy gradient methods, and overall strikes a favorable balance between sample complexity, simplicity, and wall-time."
 
   - `post` <https://blog.openai.com/openai-baselines-ppo/> (demo)
+  - `video` <https://youtu.be/xvRrgxcpaHY?t=28m34s> (Schulman)
   - `video` <https://youtu.be/ycCtmp4hcUs?t=1h7m> (Achiam)
   - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h44m24s> (Sigaud)
+  - `video` <https://youtube.com/watch?v=5P7I-xPq8u8> (Steenbrugge)
   - `post` <https://learningai.io/projects/2017/07/28/ai-gym-workout.html>
   - `notes` <https://towardsdatascience.com/introduction-to-various-reinforcement-learning-algorithms-part-ii-trpo-ppo-87f2c5919bb9>
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Proximal_Policy_Optimization_Algorithms.md>

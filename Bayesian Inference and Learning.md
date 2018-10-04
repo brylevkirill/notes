@@ -625,6 +625,7 @@
 >	"Learning from few examples and generalizing to dramatically different situations are capabilities of human visual intelligence that are yet to be matched by leading machine learning models. By drawing inspiration from systems neuroscience, we introduce a probabilistic generative model for vision in which message-passing based inference handles recognition, segmentation and reasoning in a unified way. The model demonstrates excellent generalization and occlusion-reasoning capabilities, and outperforms deep neural networks on a challenging scene text recognition benchmark while being 300-fold more data efficient. In addition, the model fundamentally breaks the defense of modern text-based CAPTCHAs by generatively segmenting characters without CAPTCHA-specific heuristics. Our model emphasizes aspects like data efficiency and compositionality that may be important in the path toward general artificial intelligence."
 
   - `post` <https://vicarious.com/2017/10/26/common-sense-cortex-and-captcha/>
+  - `video` <https://slideslive.com/38909792/building-machines-that-work-like-the-brain> (George)
   - `video` <https://youtube.com/watch?v=y459Yip5vRQ> (George)
   - `code` <https://github.com/vicariousinc/science_rcn>
 

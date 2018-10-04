@@ -1211,6 +1211,7 @@
 >	"Information Bottleneck principle: minimize mutual information of the representation with the training data."  
 
   - <https://en.wikipedia.org/wiki/Information_bottleneck_method>
+  - `video` <https://youtube.com/watch?v=Uj3uAQGolQU> (Achille)
   - `video` <https://youtube.com/watch?v=BCSoRTMYQcw> (Achille)
   - `video` <https://youtube.com/watch?v=zbg49SMP5kY> (Soatto)
 
@@ -1338,6 +1339,7 @@ Yoshua Bengio:
   - `video` <http://research.microsoft.com/apps/video/default.aspx?id=260019> (Ioffe)
   - `video` <http://videolectures.net/icml2015_ioffe_batch_normalization/> (Ioffe)
   - `video` <https://youtu.be/Xogn6veSyxA?t=3m46s> (Goodfellow)
+  - `video` <https://youtube.com/watch?v=-1yfr_YBzX4> (Lykov) `in russian`
   - `post` <https://kratzert.github.io/2016/02/12/understanding-the-gradient-flow-through-the-batch-normalization-layer.html>
   - `post` <https://kevinzakka.github.io/2016/09/14/batch_normalization/>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/icml/IoffeS15>
@@ -2102,6 +2104,7 @@ x."
   - `post` <http://bjlkeng.github.io/posts/autoregressive-autoencoders/>
   - `post` <http://inference.vc/masked-autoencoders-icml-paper-highlight/>
   - `notes` <https://casmls.github.io/general/2016/11/19/MADENADE.html>
+  - `code` <https://github.com/ikostrikov/pytorch-flows>
   - `code` <https://github.com/karpathy/pytorch-made>
 
 
@@ -2732,6 +2735,7 @@ x."
   - `video` <http://youtu.be/SAcHyzMdbXc?t=5m14s> (de Freitas)
   - `video` <http://youtu.be/x1kf4Zojtb0?t=52m22s> (de Freitas)
   - `video` <http://videolectures.net/iclr2016_reed_neural_programmer/> (Reed)
+  - `video` <https://youtu.be/LsLPp7gqwA4?t=21m19s> (Minervini)
   - `post` <https://pseudoprofound.wordpress.com/2016/06/07/neural-programmer-interpreters-programs-that-can-learn-programs/>
   - `post` <http://near.ai/articles/2017-05-31-NPI/>
   - `post` <https://reddit.com/r/MachineLearning/comments/3y4zai/ama_nando_de_freitas/cyc53gt>

@@ -74,7 +74,8 @@
 
 ----
 
-  ["The Design and Implementation of Probabilistic Programming Languages"](http://dippl.org) by Noah Goodman and Andreas Stuhlmuller `book`
+  ["An Introduction to Probabilistic Programming"](https://arxiv.org/abs/1809.10756) by Meent, Paige, Yang, Wood `book`  
+  ["The Design and Implementation of Probabilistic Programming Languages"](http://dippl.org) by Goodman and Stuhlmuller `book`  
 
 
 

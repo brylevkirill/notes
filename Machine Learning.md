@@ -272,6 +272,7 @@
   [course](http://www.mit.edu/~9.520/fall17/) by Tomaso Poggio, Lorenzo Rosasco, Georgios Evangelopoulos `video`  
   [course](http://work.caltech.edu/telecourse.html) by Yaser Abu-Mostafa `video`  
   [course](http://youtube.com/watch?v=jX7Ky76eI7E) by Sebastien Bubeck `video`  
+  [course](http://youtube.com/playlist?list=PLyGKBDfnk-iAtLO6oLW4swMiQGz4f2OPY) by Tomaso Poggio and Lorenzo Rosasco `video`  
 
 
 ----
@@ -709,6 +710,7 @@
 >	"Labeling training data is increasingly the largest bottleneck in deploying machine learning systems. We present Snorkel, a first-of-its-kind system that enables users to train stateof-the-art models without hand labeling any training data. Instead, users write labeling functions that express arbitrary heuristics, which can have unknown accuracies and correlations. Snorkel denoises their outputs without access to ground truth by incorporating the first end-to-end implementation of our recently proposed machine learning paradigm, data programming. We present a flexible interface layer for writing labeling functions based on our experience over the past year collaborating with companies, agencies, and research labs. In a user study, subject matter experts build models 2.8× faster and increase predictive performance an average 45.5% versus seven hours of hand labeling. We study the modeling tradeoffs in this new setting and propose an optimizer for automating tradeoff decisions that gives up to 1.8× speedup per pipeline execution. In two collaborations, with the U.S. Department of Veterans Affairs and the U.S. Food and Drug Administration, and on four open-source text and image data sets representative of other deployments, Snorkel provides 132% average improvements to predictive performance over prior heuristic approaches and comes within an average 3.60% of the predictive performance of large hand-curated training sets."
 
   - `video` <https://youtube.com/watch?v=HmocI2b5YfA> (Re)
+  - `notes` <https://blog.acolyer.org/2018/08/22/snorkel-rapid-training-data-creation-with-weak-supervision>
   - [Snorkel](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#machine-reading-projects---snorkel) project `summary`
 
 
