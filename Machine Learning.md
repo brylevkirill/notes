@@ -58,14 +58,14 @@
   ["Machine Learning Basics"](http://www.deeplearningbook.org/contents/ml.html) by Ian Goodfellow, Yoshua Bengio, Aaron Courville  
   ["A Few Useful Things to Know about Machine Learning"](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf) by Pedro Domingos  
   ["Expressivity, Trainability, and Generalization in Machine Learning"](http://blog.evjang.com/2017/11/exp-train-gen.html) by Eric Jang  
+  ["Clever Methods of Overfitting"](http://hunch.net/?p=22) by John Langford  
+  ["Common Pitfalls in Machine Learning"](http://danielnee.com/?p=155) by Daniel Nee  
   ["Classification vs. Prediction"](http://fharrell.com/2017/01/classification-vs-prediction.html) by Frank Harrell  
   ["Causality in Machine Learning"](http://unofficialgoogledatascience.com/2017/01/causality-in-machine-learning.html) by Muralidharan et al.  
   ["Are ML and Statistics Complementary?"](https://www.ics.uci.edu/~welling/publications/papers/WhyMLneedsStatistics.pdf) by Max Welling  
   ["Introduction to Information Theory and Why You Should Care"](https://blog.recast.ai/introduction-information-theory-care/) by Gil Katz  
   ["Ideas on Interpreting Machine Learning"](https://oreilly.com/ideas/ideas-on-interpreting-machine-learning) by Hall et al.  
-  ["Clever Methods of Overfitting"](http://hunch.net/?p=22) by John Langford  
-  ["Common Pitfalls in Machine Learning"](http://danielnee.com/?p=155) by Daniel Nee  
-  ["Software Engineering vs Machine Learning Concepts"](http://machinedlearnings.com/2017_02_01_archive.html) by Paul Mineiro  
+  ["Mathematics for Machine Learning"](https://mml-book.com) by Marc Peter Deisenroth, A Aldo Faisal, Cheng Soon Ong  
   ["Rules of Machine Learning: Best Practices for ML Engineering"](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf) by Martin Zinkevich  
 
 

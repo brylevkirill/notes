@@ -1211,7 +1211,7 @@
 >	"Information Bottleneck principle: minimize mutual information of the representation with the training data."  
 
   - <https://en.wikipedia.org/wiki/Information_bottleneck_method>
-  - `video` <https://youtube.com/watch?v=Uj3uAQGolQU> (Achille)
+  - `video` <https://youtube.com/watch?v=Wgvcxd98tvU> (Achille)
   - `video` <https://youtube.com/watch?v=BCSoRTMYQcw> (Achille)
   - `video` <https://youtube.com/watch?v=zbg49SMP5kY> (Soatto)
 
@@ -2101,6 +2101,7 @@ x."
   - `video` <http://videolectures.net/icml2015_germain_distribution_estimation/> (Germain)
   - `video` <http://www.fields.utoronto.ca/video-archive/2017/01/2267-16372> (Larochelle)
   - `video` <http://videolectures.net/deeplearning2015_larochelle_deep_learning/> (Larochelle)
+  - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#made>
   - `post` <http://bjlkeng.github.io/posts/autoregressive-autoencoders/>
   - `post` <http://inference.vc/masked-autoencoders-icml-paper-highlight/>
   - `notes` <https://casmls.github.io/general/2016/11/19/MADENADE.html>
@@ -2827,6 +2828,7 @@ x."
 >	- Backpropagation requires all nodes to be stored in memory.  
 >	- I think this is a less important limitation, but many neural architectures require parameter sharing, which isn't necessarily achievable in the brain."  
 
+  - `video` <https://youtube.com/watch?v=TvZLAyOByMQ> (Bengio)
   - `video` <https://youtube.com/watch?v=W86H4DpFnLY> (Bengio)
   - `video` <https://archive.org/details/Redwood_Center_2016_09_27_Yoshua_Bengio> (Bengio)
   - `video` <http://youtube.com/watch?v=lKVIXI8Djv4> (Bengio)

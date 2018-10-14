@@ -1381,6 +1381,8 @@
   ["Natural Evolution Strategies"](http://jmlr.org/papers/volume15/wierstra14a/wierstra14a.pdf) by Wierstra et al. `paper`  
   ["Evolution Strategies as a Scalable Alternative to Reinforcement Learning"](#evolution-strategies-as-a-scalable-alternative-to-reinforcement-learning-salimans-ho-chen-sutskever) by Salimans, Ho, Chen, Sutskever `paper` `summary`  
 
+  ["Evolutionary Computation for Reinforcement Learning"](http://cs.ox.ac.uk/publications/publication10159-abstract.html) by Shimon Whiteson `paper`
+
 
 
 ----
@@ -2315,7 +2317,9 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=_Z9ZP1eiKsI> (Kilcher)
   - `video` <https://youtu.be/RwLTrQUyDvA?t=18m2s> (Diaz Rodriguez)
   - `video` <https://youtu.be/0Ey02HT_1Ho?t=5m37s> (Steenbrugge)
+  - `post` <https://navneet-nmk.github.io/2018-08-10-first-post>
   - `code` <https://github.com/pathak22/noreward-rl>
+  - `code` <https://github.com/navneet-nmk/pytorch-rl/blob/master/models/CuriosityDrivenExploration.py>
 
 
 #### ["Reinforcement Learning with Unsupervised Auxiliary Tasks"](http://arxiv.org/abs/1611.05397) Jaderberg, Mnih, Czarnecki, Schaul, Leibo, Silver, Kavukcuoglu

@@ -1696,8 +1696,10 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
   `using web search engine`
 >	"We frame Question Answering as a Reinforcement Learning task, an approach that we call Active Question Answering. We propose an agent that sits between the user and a black box question-answering system and which learns to reformulate questions to elicit the best possible answers. The agent probes the system with, potentially many, natural languagere formulations of an initial question and aggregates the returned evidence to yield the best answer. The reformulation system is trained end-to-end to maximize answer quality using policy gradient. We evaluate on SearchQA, a dataset of complex questions extracted from Jeopardy!. Our agent improves F1 by 11% over a state-of-the-art base model that uses the original question/answer pairs."
 
+  - `post` <https://ai.googleblog.com/2018/10/open-sourcing-active-question.html>
   - `video` <https://facebook.com/iclr.cc/videos/2125495797479475?t=3836> (Bulian, Houlsby)
   - `video` <https://youtu.be/soZXAH3leeQ?t=34m43s> (Cho)
+  - `code` <https://github.com/google/active-qa>
 
 
 #### ["Task-Oriented Query Reformulation with Reinforcement Learning"](https://arxiv.org/abs/1704.04572) Nogueira, Cho

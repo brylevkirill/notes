@@ -339,8 +339,8 @@
 
 ----
 
-  [overview](https://youtu.be/PpX6hllPVLs?t=1h1m22s) by Alex Smola `video`
-
+  [overview](https://youtube.com/watch?v=cn4sI39uD_Q) by Dmitry Vetrov `video`  
+  [overview](https://youtube.com/watch?v=CYeCeQ-pULE) by Ekaterina Lobacheva `video`  
   overview by Dmitry Vetrov ([part 1](http://youtu.be/U0LylVL-zJM?t=35m59s), [part 2](http://youtube.com/watch?v=CqjqTbUgbOo)) `video` `in russian`  
   [overview](https://youtube.com/watch?v=vPRphQh1eGQ&t=32m54s) by Konstantin Vorontsov `video` `in russian`  
 
@@ -410,8 +410,7 @@
   ["Variational Inference: Foundations and Modern Methods"](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods)
 	tutorial by David Blei, Rajesh Ranganath, Shakir Mohamed `video` ([slides](http://www.cs.columbia.edu/~blei/talks/2016_NIPS_VI_tutorial.pdf))  
 
-  ["Reparametrization Trick: Revolution in Stochastic Computational Graphs"](https://youtu.be/0q5p7xP4cdA?t=5h3m29s)
-	by Dmitry Vetrov `video` `in russian` ([slides](https://sdsj.ru/slides/Vetrov.pdf) `in english`)  
+  [overview](https://youtube.com/watch?v=d0LZE6Drqyc) by Dmitry Kropotov `video`  
   [overview](https://youtu.be/tqGEX_Ucu04?t=48m42s) of alternatives to variational inference by Dmitry Molchanov `video` `in russian`  
 
 ----
@@ -488,7 +487,9 @@
 ----
 #### stochastic computation graphs
 
-  ["Stochastic Computation Graphs"](https://youtube.com/watch?v=_JTu50iDhkA) by Artem Sobolev ([slides](http://slides.com/asobolev/stochastic-computation-graphs#/))
+  ["Stochastic Computation Graphs"](https://youtube.com/watch?v=_JTu50iDhkA) by Artem Sobolev ([slides](http://slides.com/asobolev/stochastic-computation-graphs#/))  
+  ["Reparametrization Trick: Revolution in Stochastic Computational Graphs"](https://youtu.be/0q5p7xP4cdA?t=5h3m29s)
+	by Dmitry Vetrov `video` `in russian` ([slides](https://sdsj.ru/slides/Vetrov.pdf) `in english`)  
 
   ["Stochastic Computation Graphs"](http://artem.sobolev.name/tags/stochastic%20computation%20graphs%20series.html) by Artem Sobolev:  
   - ["Continuous Case"](http://artem.sobolev.name/posts/2017-09-10-stochastic-computation-graphs-continuous-case.html)  
@@ -682,12 +683,14 @@
   - `video` <https://youtube.com/watch?v=Y3obG7F1crw&t=32m28s> (Bishop)
   - `video` <http://videolectures.net/ecmlpkdd2010_graepel_mlm/> (Graepel)
   - `post` <http://moserware.com/2010/03/computing-your-skill.html>
-  - `paper` <http://moserware.com/assets/computing-your-skill/The%20Math%20Behind%20TrueSkill.pdf>
+  - `paper` ["The Math Behind TrueSkill"](http://www.moserware.com/assets/computing-your-skill/The%20Math%20Behind%20TrueSkill.pdf) by Jeff Moser
+  - `paper` ["TrueSkill 2: An Improved Bayesian Skill Rating System"](https://microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system) by Minka, Cleven, Zaykov
 
 
 #### ["Matchbox: Large Scale Bayesian Recommendations"](http://research.microsoft.com/apps/pubs/default.aspx?id=79460) Stern, Herbrich, Graepel
 >	"We present a probabilistic model for generating personalised recommendations of items to users of a web service. The Matchbox system makes use of content information in the form of user and item meta data in combination with collaborative filtering information from previous user behavior in order to predict the value of an item for a user. Users and items are represented by feature vectors which are mapped into a low-dimensional ‘trait space’ in which similarity is measured in terms of inner products. The model can be trained from different types of feedback in order to learn user-item preferences. Here we present three alternatives: direct observation of an absolute rating each user gives to some items, observation of a binary preference (like/don’t like) and observation of a set of ordinal ratings on a user-specific scale. Efficient inference is achieved by approximate message passing involving a combination of Expectation Propagation and Variational Message Passing. We also include a dynamics model which allows an item’s popularity, a user’s taste or a user’s personal rating scale to drift over time. By using Assumed-Density Filtering for training, the model requires only a single pass through the training data. This is an on-line learning algorithm capable of incrementally taking account of new data so the system can immediately reflect the latest user preferences. We evaluate the performance of the algorithm on the MovieLens and Netflix data sets consisting of approximately 1,000,000 and 100,000,000 ratings respectively. This demonstrates that training the model using the on-line ADF approach yields state-of-the-art performance with the option of improving performance further if computational resources are available by performing multiple EP passes over the training data."
 
+  - <https://dotnet.github.io/infer/userguide/Learners/Matchbox%20recommender.html>
   - `video` <http://videolectures.net/ecmlpkdd2010_graepel_mlm/#t=1265> (Graepel)
 
 

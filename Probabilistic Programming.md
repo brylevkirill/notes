@@ -138,6 +138,8 @@
 
   - [ProbTorch](https://github.com/probtorch/probtorch)
 
+  - [Infer.NET](https://github.com/dotnet/infer)
+
   - [WebPPL](https://github.com/probmods/webppl)
 
   - [BLOG](https://github.com/BayesianLogic)

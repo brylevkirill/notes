@@ -339,6 +339,7 @@ interesting older papers:
 >	"Most VAEs have so far been trained using crude approximate posteriors, where every latent variable is independent. Normalizing Flows have addressed this problem by conditioning each latent variable on the others before it in a chain, but this is computationally inefficient due to the introduced sequential dependencies. Inverse autoregressive flow, unlike previous work, allows us to parallelize the computation of rich approximate posteriors, and make them almost arbitrarily flexible."  
   - `post` <http://bjlkeng.github.io/posts/variational-autoencoders-with-inverse-autoregressive-flows>
   - `post` <http://akosiorek.github.io/ml/2018/04/03/norm_flows.html>
+  - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#inverse-autoregressive-flow>
   - `code` <https://github.com/openai/iaf>
 
 #### ["Neural Variational Inference and Learning in Undirected Graphical Models"](https://arxiv.org/abs/1711.02679) Kuleshov, Ermon
@@ -1082,7 +1083,7 @@ interesting older papers:
 >	"Beta-VAE is a VAE with beta coefficient in KL divergence term where beta=1 is exactly same formulation of vanilla VAE. By increasing beta, the weighted factor forces model to learn more disentangled representation than VAE. The authors also proposed disentanglement metric by training a simple classifier with low capacity and use it’s prediction accuracy. But the metric can be only calculated in simulator (ground truth generator) setting where we can control independent factors to generate different samples with controlled property."  
   - <http://tinyurl.com/jgbyzke> (demo)
   - `video` <https://youtu.be/XNGo9xqpgMo?t=10m8s> (Higgins)
-  - `video` <https://youtu.be/Uj3uAQGolQU?t=27m17s> (Achille)
+  - `video` <https://youtu.be/Wgvcxd98tvU?t=27m17s> (Achille)
   - `post` <https://lilianweng.github.io/lil-log/2018/08/12/from-autoencoder-to-beta-vae.html#beta-vae>
 
 #### ["Early Visual Concept Learning with Unsupervised Deep Learning"](http://arxiv.org/abs/1606.05579) Higgins, Matthey, Glorot, Pal, Uria, Blundell, Mohamed, Lerchner
@@ -1311,6 +1312,7 @@ interesting older papers:
 >	"We demonstrate that a generative model optimized towards the plain log-likelihood objective is capable of efficient realistic-looking synthesis and manipulation of large images."  
   - `post` <https://blog.openai.com/glow>
   - `video` <https://youtube.com/watch?v=exJZOC3ZceA> (demo)
+  - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#glow>
   - `code` <https://github.com/openai/glow>
   - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/research/glow_ops.py>
   - `code` <https://github.com/ikostrikov/pytorch-flows>
@@ -1352,6 +1354,7 @@ interesting older papers:
   - `audio` <https://youtube.com/watch?v=315xKcYX-1w> (Papamakarios)
   - `post` <http://blog.evjang.com/2018/01/nf2.html>
   - `post` <http://akosiorek.github.io/ml/2018/04/03/norm_flows.html>
+  - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#masked-autoregressive-flow>
   - `code` <https://github.com/ikostrikov/pytorch-flows>
   - `code` <https://github.com/gpapamak/maf>
 
@@ -1368,6 +1371,7 @@ interesting older papers:
   - `video` <https://cds.cern.ch/record/2302480> (43:54) (Rezende)
   - `post` <http://blog.evjang.com/2018/01/nf2.html>
   - `post` <http://akosiorek.github.io/ml/2018/04/03/norm_flows.html>
+  - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#realnvp>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.08803>
   - `code` <https://github.com/tensorflow/models/tree/master/research/real_nvp>
   - `code` <https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/distributions/python/ops/bijectors/real_nvp.py>
@@ -1728,6 +1732,7 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=leu286ciQcE> (Kalchbrenner)
   - `video` <https://youtube.com/watch?v=YyUXG-BfDbE> (Andrews)
   - `video` <https://youtube.com/watch?v=gUdyQ5Ocr0g> (Zakirov) `in russian`
+  - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#wavenet>
   - `code` <https://github.com/vincentherrmann/pytorch-wavenet>
   - `code` <https://github.com/ibab/tensorflow-wavenet>
   - `code` <https://github.com/basveeling/wavenet>
@@ -1756,7 +1761,8 @@ interesting older papers:
 #### ["Pixel Recurrent Neural Networks"](http://arxiv.org/abs/1601.06759) Oord, Kalchbrenner, Kavukcuoglu
   `PixelRNN`
   - `video` <http://techtalks.tv/talks/pixel-recurrent-neural-networks/62375/> (Oord)
-  - `post` <https://github.com/tensorflow/magenta/blob/master/magenta/reviews/pixelrnn.md> (Kastner)
+  - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#pixelrnn>
+  - `post` <https://github.com/tensorflow/magenta/blob/master/magenta/reviews/pixelrnn.md>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/OordKK16>
   - `code` <https://github.com/carpedm20/pixel-rnn-tensorflow>
 
