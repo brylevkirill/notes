@@ -9,7 +9,7 @@
 ---
 ### overview
 
-  ["The Seven Pillars of Causal Reasoning with Reflections on Machine Learning"](http://ftp.cs.ucla.edu/pub/stat_ser/r481.pdf) by Judea Pearl `paper`  
+  ["The Seven Tools of Causal Inference with Reflections on Machine Learning"](http://ftp.cs.ucla.edu/pub/stat_ser/r481.pdf) by Judea Pearl `paper`  
   ["Theoretical Impediments to Machine Learning"](http://web.cs.ucla.edu/~kaoru/theoretical-impediments.pdf) by Judea Pearl `paper`  
 
   ["ML beyond Curve Fitting: An Intro to Causal Inference and do-Calculus"](http://inference.vc/untitled) by Ferenc Huszar

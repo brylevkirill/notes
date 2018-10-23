@@ -140,7 +140,8 @@
 #### conferences
 
   - ICML 2018  
-	<https://facebook.com/icml.imls/videos> `video`
+	<https://vimeo.com/channels/1408270/videos> `video`  
+	<https://facebook.com/icml.imls/videos> `video`  
 
 	<https://david-abel.github.io/blog/posts/misc/icml_2018.pdf> `notes`
 

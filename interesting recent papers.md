@@ -184,6 +184,7 @@ interesting older papers:
 >	"On standard regression benchmarks, our noisy K-FAC algorithm makes better predictions and matches HMC’s predictive variances better than existing methods. Its improved uncertainty estimates lead to more efficient exploration in the settings of active learning and intrinsic motivation for reinforcement learning."  
 >	"We introduce and exploit a surprising connection between natural gradient descent and variational inference. In particular, several approximate natural gradient optimizers have been proposed which fit tractable approximations to the Fisher matrix to gradients sampled during training such as Adam and K-FAC. While these procedures were described as natural gradient descent on the weights using an approximate Fisher matrix, we reinterpret these algorithms as natural gradient on a variational posterior using the exact Fisher matrix. Both the weight updates and the Fisher matrix estimation can be seen as natural gradient ascent on a unified evidence lower bound, analogously to how Neal and Hinton interpreted the E and M steps of Expectation-Maximization as coordinate ascent on a single objective. Using this insight, we give an alternative training method for variational Bayesian neural networks. For a factorial Gaussian posterior, it corresponds to a diagonal natural gradient method with weight noise, and matches the performance of Bayes By Backprop, but converges faster. We also present noisy K-FAC, an efficient and GPU-friendly method for fitting a full matrix-variate Gaussian posterior, using a variant of Kronecker-Factored Approximate Curvature with correlated weight noise."  
   - `video` <https://youtube.com/watch?v=bWItvHYqKl8> (Grosse)
+  - `video` <https://vimeo.com/287804838> (Zhang)
   - `code` <https://github.com/wlwkgus/NoisyNaturalGradient>
 
 #### ["Stochastic Gradient Descent Performs Variational Inference, Converges to Limit Cycles for Deep Networks"](https://arxiv.org/abs/1710.11029) Chaudhari, Soatto
@@ -226,6 +227,7 @@ interesting older papers:
 >	"We have studied a decomposition of predictive uncertainty into its epistemic and aleatoric components when working with Bayesian neural networks with latent variables. This decomposition naturally arises when applying information-theoretic active learning setting, and it also enabled us to derive a novel risk objective for reliable reinforcement learning by decomposing risk into a model bias and noise. In both of these settings, our approch allows us to efficiently learn in the face of sophisticated stochastic functions."  
 >	"We investigate safe RL using a risk-sensitive criterion which focuses only on risk related to model bias, that is, the risk of the policy performing at test time significantly different from at training time. The proposed criterion quantifies the amount of epistemic uncertainty (model bias risk) in the model’s predictive distribution and ignores any risk stemming from the aleatoric uncertainty."  
 >	"We can identify two distinct forms of uncertainties in the class of models given by BNNs with latent variables. Aleatoric uncertainty captures noise inherent in the observations. On the other hand, epistemic uncertainty accounts for uncertainty in the model. In particular, epistemic uncertainty arises from our lack of knowledge of the values of the synaptic weights in the network, whereas aleatoric uncertainty originates from our lack of knowledge of the value of the latent variables. In the domain of model-based RL the epistemic uncertainty is the source of model bias. When there is high discrepancy between model and real-world dynamics, policy behavior may deteriorate. In analogy to the principle that ”a chain is only as strong as its weakest link” a drastic error in estimating the ground truth MDP at a single transition stepcan render the complete policy useless."  
+  - `video` <https://vimeo.com/287804426> (Hernandez-Lobato)
 
 #### ["Deep and Confident Prediction for Time Series at Uber"](https://arxiv.org/abs/1709.01907) Zhu, Laptev
   `uncertainty estimation`
@@ -266,7 +268,7 @@ interesting older papers:
   - `video` <https://youtu.be/jJDVYAxyE3U?t=32m45s> (Molchanov) `in russian`
   - `code` <https://github.com/necludov/group-sparsity-sbp>
   - `paper` ["Variational Dropout and the Local Reparameterization Trick"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#variational-dropout-and-the-local-reparameterization-trick-kingma-salimans-welling) by Kingma, Salimans, Welling `summary`
-  - `paper` ["Variational Gaussian Dropout is not Bayesian"](https://arxiv.org/abs/1711.02989) by Hron, Matthews, Ghahramani ([talk](https://youtu.be/k5hb4V73RY0?t=14m34s) by Alexander Matthews `video`)
+  - `paper` ["Variational Gaussian Dropout is not Bayesian"](https://arxiv.org/abs/1711.02989) by Hron, Matthews, Ghahramani ([talk](https://vimeo.com/287804267) by Jiri Hron `video`, [talk](https://youtu.be/k5hb4V73RY0?t=14m34s) by Alexander Matthews `video`)
 
 #### ["Variational Dropout Sparsifies Deep Neural Networks"](https://arxiv.org/abs/1701.05369) Molchanov, Ashukha, Vetrov
   `model selection`
@@ -1172,6 +1174,16 @@ interesting older papers:
   - [autoregressive models](#generative-models---autoregressive-models)
 
 ----
+#### ["Do Deep Generative Models Know What They Don't Know?"](https://arxiv.org/abs/1810.09136) Nalisnick, Matsukawa, Teh, Gorur, Lakshminarayanan
+  `evaluation` `out-of-distribution`
+>	"We show that deep generative models can assign higher likelihood to out-of-distribution inputs than the training data."  
+>	"A neural network deployed in the wild may be asked to make predictions for inputs that were drawn from a different distribution than that of the training data. A plethora of work has demonstrated that it is easy to find or synthesize inputs for which a neural network is highly confident yet wrong. Generative models are widely viewed to be robust to such mistaken confidence as modeling the density of the input features can be used to detect novel, out-of-distribution inputs. In this paper we challenge this assumption. We find that the model density from flow-based models, VAEs and PixelCNN cannot distinguish images of common objects such as dogs, trucks, and horses (i.e. CIFAR-10) from those of house numbers (i.e. SVHN), assigning a higher likelihood to the latter when the model is trained on the former. We focus our analysis on flow-based generative models in particular since they are trained and evaluated via the exact marginal likelihood. We find such behavior persists even when we restrict the flow models to constant-volume transformations. These transformations admit some theoretical analysis, and we show that the difference in likelihoods can be explained by the location and variances of the data and the model curvature, which shows that such behavior is more general and not just restricted to the pairs of datasets used in our experiments. Our results caution against using the density estimates from deep generative models to identify inputs similar to the training distribution, until their behavior on out-of-distribution inputs is better understood."  
+>	"We have shown that comparing likelihoods alone cannot identify the training set or inputs like it. Moreover, our analysis shows that the SVHN vs CIFAR-10 problem we report would persist for any constant-volume flow no matter the parameter settings nor the choice of latent density (as long as it is log-concave). The models seem to capture low-level statistics rather than high-level semantics. While we cannot conclude that this is necessarily a pathology in deep generative models, it does suggest they need to be further improved. It could be a problem that plagues any generative model, no matter how high its capacity."  
+
+#### ["Generative Ensembles for Robust Anomaly Detection"](https://arxiv.org/abs/1810.01392) Choi, Jang
+  `evaluation` `out-of-distribution`
+>	"Deep generative models are capable of learning probability distributions over large, high-dimensional datasets such as images, video and natural language. Generative models trained on samples from p(x) ought to assign low likelihoods to out-of-distribution samples from q(x), making them suitable for anomaly detection applications. We show that in practice, likelihood models are themselves susceptible to OoD errors, and even assign large likelihoods to images from other natural datasets. To mitigate these issues, we propose Generative Ensembles, a model-independent technique for OoD detection that combines density-based anomaly detection with uncertainty estimation. Our method outperforms ODIN and VIB baselines on image datasets, and achieves comparable performance to a classification model on the Kaggle Credit Fraud dataset."  
+
 #### ["Pros and Cons of GAN Evaluation Measures"](https://arxiv.org/abs/1802.03446) Borji
   `evaluation`
 
@@ -1230,6 +1242,7 @@ interesting older papers:
 >	"A common perspective in generative modeling is that the choice of model should encode existing metric assumptions about the domain, combined with a generic likelihood-focused loss such as the KL divergence. Under this view, the KL’s general applicability and robust optimization properties make it a natural choice, and most of the methods attempt to, at least indirectly, minimize a version of the KL. On the other hand, as every model inevitably makes trade-offs when constrained by capacity or limited training, it is desirable for its optimization goal to incentivize trade-offs prioritizing approximately correct solutions, when the data space is endowed with a metric supporting a meaningful (albeit potentially subjective) notion of approximation. It has been argued that the KL may not always be appropriate from this perspective, by making sub-optimal trade-offs between likelihood and similarity."  
 >	"Many limitations of existing models can be traced back to the use of KL, and the resulting trade-offs in approximate solutions it implies. For instance, its use appears to play a central role in one of the primary failure modes of VAEs, that of blurry samples. Zhao et al. (2017) argue that the Gaussian posterior pθ(x|z) implies an overly simple model, which, when unable to perfectly fit the data, is forced to average (thus creating blur), and is not incentivized by the KL towards an alternative notion of approximate solution. Theis et al. (2015) emphasized that an improvement of log-likelihood does not necessarily translate to higher perceptual quality, and that the KL loss is more likely to produce atypical samples than some other training criteria. We offer an alternative perspective: a good model should encode assumptions about the data distribution, whereas a good loss should encode the notion of similarity, that is, the underlying metric on the data space. From this point of view, the KL corresponds to an actual absence of explicit underlying metric, with complete focus on probability."  
 >	"Wasserstein GAN reposes the two-player game as the estimation of the gradient of the 1-Wasserstein distance between the data and generator distributions. It reframes this in terms of the dual form of the 1-Wasserstein, with the critic estimating a function f which maximally separates the two distributions. It still faces limitations when the critic solution is approximate, i.e. when f* is not found before each update. In this case, due to insufficient training of the critic or limitations of the function approximator, the gradient direction produced can be arbitrarily bad. We are left with the question of how to minimize a distribution loss respecting an underlying metric. Recent work in distributional reinforcement learning has proposed the use of quantile regression as a method for minimizing the 1-Wasserstein in the univariate case when approximating using a mixture of Dirac functions."  
+  - `video` <https://vimeo.com/287766947> (Dabney)
 
 #### ["From Optimal Transport to Generative Modeling: the VEGAN Cookbook"](https://arxiv.org/abs/1705.07642) Bousquet, Gelly, Tolstikhin, Simon-Gabriel, Scholkopf
   `alternative to KL divergence` `unifying GANs and VAEs`
@@ -1332,6 +1345,7 @@ interesting older papers:
 >	"Distribution Distillation combines the advantages of both types of flows. It trains one model, which closely resembles MAF, for density estimation. Its role is just to evaluate probability of a data point, given that data point. Once this model is trained, the authors instantiate a second model parametrised by IAF. Now, we can draw samples from IAF and evaluate their probability under the MAF. This allows us to compute Monte-Carlo approximation of the KL-divergence between the two probability distributions, which we can use as a training objective for IAF. This way, MAF acts as a teacher and IAF as a student. This clever application of both types of flows allowed to improve efficiency of the original WaveNet by the factor of 300."
   - <https://deepmind.com/blog/wavenet-launches-google-assistant/> (demo)
   - `post` <https://deepmind.com/blog/high-fidelity-speech-synthesis-wavenet/>
+  - `video` <https://vimeo.com/287766925> (Oord)
   - `video` <https://facebook.com/iclr.cc/videos/2125495797479475?t=493> (Kavukcuoglu)
   - `video` <https://youtu.be/YyUXG-BfDbE?t=26m19s> (Andrews)
 
@@ -1813,6 +1827,9 @@ interesting older papers:
 [**interesting older papers - policy-based methods**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---policy-based-methods)  
 
 ----
+#### ["Optimizing Agent Behavior over Long Time Scales by Transporting Value"](https://arxiv.org/abs/1810.06721) Hung et al.
+>	"Humans spend a remarkable fraction of waking life engaged in acts of "mental time travel". We dwell on our actions in the past and experience satisfaction or regret. More than merely autobiographical storytelling, we use these event recollections to change how we will act in similar scenarios in the future. This process endows us with a computationally important ability to link actions and consequences across long spans of time, which figures prominently in addressing the problem of long-term temporal credit assignment; in artificial intelligence this is the question of how to evaluate the utility of the actions within a long-duration behavioral sequence leading to success or failure in a task. Existing approaches to shorter-term credit assignment in AI cannot solve tasks with long delays between actions and consequences. Here, we introduce a new paradigm for reinforcement learning where agents use recall of specific memories to credit actions from the past, allowing them to solve problems that are intractable for existing algorithms."  
+
 #### ["RUDDER: Return Decomposition for Delayed Rewards"](https://arxiv.org/abs/1806.07857) Arjona-Medina, Gillhofer, Widrich, Unterthiner, Hochreiter
 >	"In this work, biases of temporal difference estimates are proved to be corrected only exponentially slowly in the number of delay steps. Furthermore, variances of Monte Carlo estimates are proved to increase the variance of other estimates, the number of which can exponentially grow in the number of delay steps."  
 >	"We propose RUDDER, a novel reinforcement learning approach for finite Markov decision processes with delayed rewards, which creates a new MDP with same optimal policies as the original MDP but with redistributed rewards that have largely reduced delays. If the return decomposition is optimal, then the new MDP does not have delayed rewards and TD estimates are unbiased. In this case, the rewards track Q-values so that the future expected reward is always zero."  
@@ -1937,6 +1954,7 @@ interesting older papers:
   `ARM` `value-based`
 >	"Algorithm based on counterfactual regret minimization that iteratively updates an approximation to a cumulative clipped advantage function."  
 >	"In contrast to prior methods, advantage-based regret minimization is well suited to partially observed or non-Markovian environments."  
+  - `video` <https://vimeo.com/287803161> (Jin)
 
 #### ["Multi-step Reinforcement Learning: A Unifying Algorithm"](https://arxiv.org/abs/1703.01327) De Asis, Hernandez-Garcia, Holland, Sutton
   `Q(σ)` `value-based`
@@ -2018,6 +2036,7 @@ interesting older papers:
   - `notes` <https://github.com/Scitator/papers/blob/master/papers/1801_soft_ac.md>
   - `code` <https://github.com/haarnoja/sac>
   - `code` <https://github.com/higgsfield/RL-Adventure-2>
+  - `code` <https://github.com/navneet-nmk/pytorch-rl/blob/master/models/SAC.py>
 
 #### ["A Unified View of Entropy-Regularized Markov Decision Processes"](https://arxiv.org/abs/1705.07798) Neu, Gomez, Jonsson
   `soft Q-learning` `policy gradient` `maximum entropy policy`
@@ -2242,6 +2261,7 @@ interesting older papers:
   `planning` `using available environment model`
 >	"The tasks that an agent will need to solve often are not known during training. However, if the agent knows which properties of the environment are important then, after learning how its actions affect those properties, it may be able to use this knowledge to solve complex tasks without training specifically for them. Towards this end, we consider a setup in which an environment is augmented with a set of user defined attributes that parameterize the features of interest. We propose a method that learns a policy for transitioning between “nearby” sets of attributes, and maintains a graph of possible transitions. Given a task at test time that can be expressed in terms of a target set of attributes, and a current state, our model infers the attributes of the current state and searches over paths through attribute space to get a high level plan, and then uses its low level policy to execute the plan. We show in 3D block stacking, gridworld games, and StarCraft that our model is able to generalize to longer, more complex tasks at test time by composing simpler learned policies."  
   - `video` <https://youtube.com/watch?v=r7oSmy_AtZY> (Szlam)
+  - `video` <https://vimeo.com/287812698> (Zhang, Lerer)
 
 #### ["Neural Network Dynamics for Model-Based Deep Reinforcement Learning with Model-Free Fine-Tuning"](https://arxiv.org/abs/1708.02596) Nagabandi, Kahn, Fearing, Levine
   `planning` `using available environment model`
@@ -2598,9 +2618,14 @@ interesting older papers:
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/%23Exploration:_A_Study_of_Count-Based_Exploration_for_Deep_Reinforcement_Learning.md>
 
 ----
+#### ["Empowerment-driven Exploration using Mutual Information Estimation"](https://arxiv.org/abs/1810.05533) Kumar
+  `exploration guided by empowerment`
+>	"using Mutual Information Neural Estimation to calculate empowerment"  
+  - `post` <https://navneet-nmk.github.io/2018-08-26-empowerment>
+  - `code` <https://github.com/navneet-nmk/pytorch-rl/blob/master/models/empowerment_models.py>
+
 #### ["Unsupervised Real-Time Control through Variational Empowerment"](https://arxiv.org/abs/1710.05101) Karl, Soelch, Becker-Ehmck, Benbouzid, Smagt, Bayer
   `exploration guided by empowerment`
->	"empowerment - channel capacity between actions and states"  
 
 #### ["Variational Intrinsic Control"](http://arxiv.org/abs/1611.07507) Gregor, Rezende, Wierstra
   `exploration guided by empowerment`
@@ -3137,6 +3162,7 @@ hieves."
 #### ["QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning"](https://arxiv.org/abs/1803.11485) Rashid, Samvelyan, Witt, Farquhar, Foerster, Whiteson
   `QMIX`
 >	"Learning joint action-values conditioned on extra state information is an attractive way to exploit centralised learning, where global state information is available and communication constraints are lifted, but the best strategy for then extracting decentralised policies is unclear. QMIX trains decentralised policies in a centralised end-to-end fashion. QMIX employs a network that estimates joint action-values as a complex non-linear combination of per-agent values that condition only on local observations. QMIX structurally enforces that the joint-action value is monotonic in the per-agent values, which allows tractable maximisation of the joint action-value in off-policy learning, and guarantees consistency between the centralised and decentralised policies."  
+  - `video` <https://vimeo.com/287801892> (Rashid)
 
 #### ["Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments"](https://arxiv.org/abs/1706.02275) Lowe, Wu, Tamar, Harb, Abbeel, Mordatch
   `MADDPG`
@@ -3323,6 +3349,7 @@ hieves."
 #### ["Neural Symbolic Machines: Learning Semantic Parsers on Freebase with Weak Supervision"](http://arxiv.org/abs/1611.00020) Liang, Berant, Le, Forbus, Lao
   `question answering over knowledge bases`
 >	"We propose the Manager-Programmer-Computer framework, which integrates neural networks with non-differentiable memory to support abstract, scalable and precise operations through a friendly neural computer interface. Specifically, we introduce a Neural Symbolic Machine, which contains a sequence-to-sequence neural "programmer", and a non-differentiable "computer" that is a Lisp interpreter with code assist."  
+  - `video` <https://youtube.com/watch?v=KFkqosOGTxM> (Liang)
   - `video` <https://vimeo.com/234953110> (Liang)
   - `notes` <https://northanapon.github.io/papers/2017/01/16/neural-symbolic-machine.html>
   - `notes` <https://github.com/carpedm20/paper-notes/blob/master/notes/neural-symbolic-machine.md>

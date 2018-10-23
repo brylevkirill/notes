@@ -320,6 +320,9 @@
   - [overview](http://youtube.com/watch?v=FVjuwv1_EDw) by Jason Weston `video`  
 
 
+  [graph embeddings](https://gist.github.com/mommi84/07f7c044fa18aaaa7b5133230207d8d4)
+
+
   ["Order-Embeddings of Images and Language"](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#order-embeddings-of-images-and-language-vendrov-kiros-fidler-urtasun) by Vendrov et al. `paper` `summary`  
   ["Poincare Embeddings for Learning Hierarchical Representations"](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#poincare-embeddings-for-learning-hierarchical-representations-facebook-ai-research) by Nickel and Kiela `paper` `summary`  
 
@@ -766,6 +769,10 @@
 ----
 
   [**knowledge representation - knowledge graph**](#knowledge-representation---knowledge-graph)
+
+----
+
+  ["Computer Understandable Math and Science"](https://slideslive.com/38909911/no-one-shall-drive-us-from-the-semantic-ai-paradise-of-computerunderstandable-math-and-science) by Josef Urban `video`
 
 ----
 

@@ -159,7 +159,8 @@
 ----
   - *Poker*  
 
-	[Libratus overview](https://thegradient.pub/libratus-poker)
+	[Libratus overview](https://int8.io/counterfactual-regret-minimization-for-poker-ai/#Libratus_8211_DeepStack8217s_main_rival_from_Carnegie_Mellon_University) by Kamil Czarnogorski  
+	[Libratus overview](https://thegradient.pub/libratus-poker) by Jiren Zhu  
 
 	[Libratus "Science" magazine](http://science.sciencemag.org/content/early/2017/12/15/science.aao1733.full) `paper`  
 	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://arxiv.org/abs/1705.02955) by Noam Brown and Tuomas Sandholm `paper` ([talk](https://vimeo.com/248533943#t=53s) `video`, [post](https://thegradient.pub/libratus-poker))  
@@ -168,6 +169,7 @@
 	[Libratus overview](https://youtube.com/watch?v=EhvH4jdF-ko) by Tuomas Sandholm `video`  
 	[Libratus overview](https://youtube.com/watch?v=xrWulRY_t1o) by Tuomas Sandholm `video`  
 	[Libratus overview](http://videolectures.net/aaai2017_bowling_sandholm_poker/#t=1350) by Tuomas Sandholm `video`  
+	[Libratus overview](https://youtube.com/watch?v=McV4a6umbAY) by Noam Brown `video`  
 	[Libratus overview](https://youtube.com/watch?v=2dX0lwaQRX0) by Noam Brown `video`  
 	[Libratus overview](https://youtube.com/watch?v=UTogLB99JKQ) by Noam Brown `video`  
 
@@ -188,7 +190,8 @@
 	<http://deepstack.ai>  
 	<http://twitter.com/DeepStackAI>  
 
-	[DeepStack overview](https://www.depthfirstlearning.com/2018/DeepStack)
+	[DeepStack overview](https://int8.io/counterfactual-regret-minimization-for-poker-ai/#DeepStack_8211_Neural_Network_based_AI_playing_Heads_Up_No-Limit_Texas_Hold8217em) by Kamil Czarnogorski  
+	[DeepStack overview](https://www.depthfirstlearning.com/2018/DeepStack) by Cinjon Resnick  
 
 	[DeepStack "Science" magazine](http://science.sciencemag.org/content/early/2017/03/01/science.aam6960) `paper`  
 	["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](#deepstack-expert-level-artificial-intelligence-in-no-limit-poker-moravcik-et-al) by Moravcik et al. `paper` `summary`  
@@ -380,6 +383,7 @@
   [implementations of algorithms](https://github.com/NervanaSystems/coach) from Intel Nervana  
   [implementations of algorithms](https://github.com/rlcode/reinforcement-learning) from RLCode team  
   [implementations of algorithms](https://github.com/openai/rllab/tree/master/rllab/algos) from OpenAI  
+  [implementations of algorithms](https://github.com/navneet-nmk/pytorch-rl) from Navneet Kumar  
 
 
 
@@ -542,7 +546,8 @@
 
   - learn agent's behavior in environment with unknown cost function via imitation of another agent's behavior
 
-  [tutorial](https://facebook.com/icml.imls/videos/428362527678268) by Yisong Yue and Hoang Le `video`
+  [tutorial](https://facebook.com/icml.imls/videos/428362527678268) by Yisong Yue and Hoang Le `video`  
+  ["New Frontiers in Imitation Learning"](https://youtube.com/watch?v=teyGpr2Dgm4) by Yisong Yue `video`  
 
   ["Supervised Learning of Behaviors: Deep Learning, Dynamical Systems, and Behavior Cloning"](https://youtube.com/watch?v=kl_G95uKTHw) by Sergey Levine `video`  
   ["Learning Policies by Imitating Optimal Control"](https://youtube.com/watch?v=o0Ebur3aNMo) by Sergey Levine `video`  
@@ -1045,6 +1050,8 @@
   [overview](https://yadi.sk/i/lOAUu7o13JBHFz) by Fedor Ratnikov `video` `in russian`  
 
 ----
+
+  [overview](https://int8.io/monte-carlo-tree-search-beginners-guide) by Kamil Czarnogorski
 
   ["A Survey of Monte Carlo Tree Search Methods"](http://www.cameronius.com/cv/mcts-survey-master.pdf) by Browne et al. `paper`
 
@@ -1580,7 +1587,7 @@ interesting recent papers:
 ---
 ### interesting papers - applications
 
-[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---applications)
+[**selected papers**](https://yadi.sk/d/tiaE7sdi3WEhDS)
 
 
 #### ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1701.07274) Li
