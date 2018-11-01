@@ -1622,6 +1622,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
   - `video` <http://videolectures.net/deeplearning2015_socher_nlp_applications/#t=540> (Socher)
   - `video` <http://youtu.be/9RAo50pVDGI?t=33m20s> (Daume)
   - `video` <http://youtube.com/watch?v=hqGU-6ZPQzw> + <http://youtube.com/watch?v=OhK5dY_W4Jc> (Boyd-Graber)
+  - `audio` <https://soundcloud.com/nlp-highlights/72-the-anatomy-question-answering-task-with-jordan-boyd-graber> (Boyd-Graber)
   - `poster` <http://emnlp2014.org/material/poster-EMNLP2014070.pdf> (technical overview)
   - `code` <https://github.com/Pinafore/qb>
   - `code` <https://github.com/miyyer/qb>

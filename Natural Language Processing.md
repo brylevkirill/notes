@@ -372,6 +372,7 @@
 
   - `video` <http://slideshot.epfl.ch/play/khnnunGF0elc> (Cho)
   - `video` <https://youtube.com/watch?v=QuvRWevJMZ4> (Chevalier)
+  - `video` <https://youtube.com/watch?v=wyQBfi6uOHk> (Chen)
   - `video` <https://youtu.be/_XRBlhzb31U?t=42m26s> (Figurnov) `in russian`
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/BahdanauCB14>
   - `post` <http://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-with-gpus/>
@@ -412,6 +413,7 @@
 >	(D) Finally, we translate by using the mapping W and a distance metric, dubbed CSLS, that expands the space where there is high density of points (like the area around the word “cat”), so that “hubs” (like the word “cat”) become less close to other word vectors than they would otherwise (compare to the same region in panel (A))."  
 
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1710.04087>
+  - `code` <https://github.com/facebookresearch/MUSE>
 
 
 #### ["Unsupervised Neural Machine Translation"](https://arxiv.org/abs/1710.11041) Artetxe, Labaka, Agirre, Cho
@@ -425,6 +427,7 @@
 #### ["Unsupervised Machine Translation Using Monolingual Corpora Only"](https://arxiv.org/abs/1711.00043) Lample, Denoyer, Ranzato
 >	"Machine translation has recently achieved impressive performance thanks to recent advances in deep learning and the availability of large-scale parallel corpora. There have been numerous attempts to extend these successes to low-resource language pairs, yet requiring tens of thousands of parallel sentences. In this work, we take this research direction to the extreme and investigate whether it is possible to learn to translate even without any parallel data. We propose a model that takes sentences from monolingual corpora in two different languages and maps them into the same latent space. By learning to reconstruct in both languages from this shared feature space, the model effectively learns to translate without using any labeled data. We demonstrate our model on two widely used datasets and two language pairs, reporting BLEU scores up to 32.8, without using even a single parallel sentence at training time."
 
+  - `video` <https://youtube.com/watch?v=yRlINjCQnc8> (Lample)
   - `video` <https://youtu.be/nIw-hNAjTwE?t=10m57s> (Moiseev) `in russian`
   - `notes` <http://ankitg.me/blog/2017/11/05/unsupervised-machine-translation.html>
 

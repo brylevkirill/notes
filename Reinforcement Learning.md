@@ -80,6 +80,8 @@
 
   [datacenter cooling](https://deepmind.com/blog/safety-first-ai-autonomous-data-centre-cooling-and-industrial-control/) at Google ([patent](http://freepatentsonline.com/y2018/0204116.html), [paper](https://arxiv.org/abs/1711.11165))
 
+  [artwork personalization](https://medium.com/netflix-techblog/artwork-personalization-c589f074ad76) at Netflix
+
   ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1701.07274) by Yuxi Li `paper` ([slides](https://dropbox.com/s/kzkc8t61t7tz9eu/AISeminar.pdf))
 
   [**other applications**](https://yadi.sk/d/tiaE7sdi3WEhDS)
@@ -346,7 +348,8 @@
 
 ----
 
-  [Reinforcement Learning Summer School 2017](http://videolectures.net/deeplearning2017_montreal/) `video` ([overview](https://yobibyte.github.io/rlss17.html))
+  [Reinforcement Learning Summer School 2018](http://videolectures.net/DLRLsummerschool2018_toronto/) `video`  
+  [Reinforcement Learning Summer School 2017](http://videolectures.net/deeplearning2017_montreal/) `video` ([overview](https://yobibyte.github.io/rlss17.html))  
 
 ----
 
@@ -545,7 +548,9 @@
 #### imitation learning / behavioral cloning
 
   - learn agent's behavior in environment with unknown cost function via imitation of another agent's behavior
+  - use expert's demonstrations to alleviate difficulties with exploration, credit assignment and reward design
 
+  [tutorial](http://videolectures.net/DLRLsummerschool2018_daume_imitation_learning) by Hal Daume `video`  
   [tutorial](https://facebook.com/icml.imls/videos/428362527678268) by Yisong Yue and Hoang Le `video`  
   ["New Frontiers in Imitation Learning"](https://youtube.com/watch?v=teyGpr2Dgm4) by Yisong Yue `video`  
 
@@ -748,7 +753,7 @@
   - *predictive novelty motivation*  
 	reward for interesting situations, for which prediction errors are the highest  
 
-	["Incentivizing Exploration In Reinforcement Learning With Deep Predictive Models"](#incentivizing-exploration-in-reinforcement-learning-with-deep-predictive-models-stadie-levine-abbeel) by Stadie et al. `paper` `summary`  
+	["Large-Scale Study of Curiosity-Driven Learning"](#large-scale-study-of-curiosity-driven-learning-burda-edwards-pathak-storkey-darrell-efros) by Burda et al. `paper` `summary`  
 	["Curiosity-driven Exploration by Self-supervised Prediction"](#curiosity-driven-exploration-by-self-supervised-prediction-pathak-agrawal-efros-darrell) by Pathak et al. `paper` `summary`  
 	["Reinforcement Learning with Unsupervised Auxiliary Tasks"](#reinforcement-learning-with-unsupervised-auxiliary-tasks-jaderberg-mnih-czarnecki-schaul-leibo-silver-kavukcuoglu) by Jaderberg et al. `paper` `summary`  
 	["Loss is Its Own Reward: Self-Supervision for Reinforcement Learning"](https://arxiv.org/abs/1612.07307) by Shelhamer et al. `paper`  
@@ -1685,12 +1690,14 @@ interesting recent papers:
 
 
 #### ["Thinking Fast and Slow with Deep Learning and Tree Search"](https://arxiv.org/abs/1705.08439) Anthony, Tian, Barber
-  `Expert Iteration`
+  `Expert Iteration` `ExIt`
 >	"Sequential decision making problems, such as structured prediction, robotic control, and game playing, require a combination of planning policies and generalisation of those plans. In this paper, we present Expert Iteration (ExIt), a novel reinforcement learning algorithm which decomposes the problem into separate planning and generalisation tasks. Planning new policies is performed by tree search, while a deep neural network generalises those plans. Subsequently, tree search is improved by using the neural network policy to guide search, increasing the strength of new plans. In contrast, standard deep Reinforcement Learning algorithms rely on a neural network not only to generalise plans, but to discover them too. We show that ExIt outperforms REINFORCE for training a neural network to play the board game Hex, and our final tree search agent, trained tabula rasa, defeats MoHex 1.0, the most recent Olympiad Champion player to be publicly released."
 
 >	"Planning new policies is performed by tree search, while a deep neural network generalises those plans."  
 >	"Expert Iteration can be viewed as an extension of Imitation Learning methods to domains where the best known experts are unable to achieve satisfactory performance. In standard IL an apprentice is trained to imitate the behaviour of an expert. In ExIt, we extend this to an iterative learning process. Between each iteration, we perform an Expert Improvement step, where we bootstrap the (fast) apprentice policy to increase the performance of the (comparatively slow) expert."  
 >	"Imitation Learning is generally appreciated to be easier than Reinforcement Learning, and this partly explains why ExIt is more successful than model-free methods like REINFORCE. Furthermore, for MCTS to recommend a move, it must be unable to find any weakness with its search. Effectively, therefore, a move played by MCTS is good against a large selection of possible opponents. In contrast, in regular self play (in which the opponent move is made by the network playing as the opposite colour), moves are recommended if they beat only this single opponent under consideration. This is, we believe, a key insight into why ExIt works well (when using MCTS as the expert) - the apprentice effectively learns to play well against many opponents."  
+
+>	"ExIt is closely analogous to the Bellman update in Q-learning and can be viewed as analog of dynamic programming where neural networks replace lookup tables."
 
   - `post` <https://davidbarber.github.io/blog/2017/11/07/Learning-From-Scratch-by-Thinking-Fast-and-Slow-with-Deep-Learning-and-Tree-Search/> (Barber)
   - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
@@ -1797,6 +1804,14 @@ interesting recent papers:
 
   - `post` <https://davidbarber.github.io/blog/2017/11/07/Learning-From-Scratch-by-Thinking-Fast-and-Slow-with-Deep-Learning-and-Tree-Search/> (Barber)
   - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
+
+
+#### ["Solving the Rubik’s Cube Without Human Knowledge"](https://arxiv.org/abs/1805.07470) McAleer, Agostinelli, Shmakov, Baldi
+>	"A generally intelligent agent must be able to teach itself how to solve problems in complex domains with minimal human supervision. Recently, deep reinforcement learning algorithms combined with self-play have achieved superhuman proficiency in Go, Chess, and Shogi without human data or domain knowledge. In these environments, a reward is always received at the end of the game; however, for many combinatorial optimization environments, rewards are sparse and episodes are not guaranteed to terminate. We introduce Autodidactic Iteration: a novel reinforcement learning algorithm that is able to teach itself how to solve the Rubik’s Cube with no human assistance. Our algorithm is able to solve 100% of randomly scrambled cubes while achieving a median solve length of 30 moves - less than or equal to solvers that employ human domain knowledge."
+
+>	"Autodidactic Iteration trains the value function through an iterative supervised learning process. In each iteration, the inputs to the neural network are created by starting from the goal state and randomly taking actions. The targets seek to estimate the optimal value function by performing a breadth-first search from each input state and using the current network to estimate the value of each of the leaves in the tree. Updated value estimates for the root nodes are obtained by recursively backing up the values for each node using a max operator. The policy network is similarly trained by constructing targets from the move that maximizes the value. After the network is trained, it is combined with MCTS to efficiently solve the Rubik’s Cube."
+
+  - `video` <https://youtube.com/watch?v=DYKS0rC98ME> (Lapan) `in russian`
 
 
 #### ["Terrain-Adaptive Locomotion Skills Using Deep Reinforcement Learning"](http://www.cs.ubc.ca/~van/papers/2016-TOG-deepRL/2016-TOG-deepRL.pdf) Peng, Berseth, van de Panne
@@ -2299,17 +2314,16 @@ interesting recent papers:
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)
 
 
-#### ["Incentivizing Exploration In Reinforcement Learning With Deep Predictive Models"](http://arxiv.org/abs/1507.00814) Stadie, Levine, Abbeel
->	"Achieving efficient and scalable exploration in complex domains poses a major challenge in reinforcement learning. While Bayesian and PAC-MDP approaches to the exploration problem offer strong formal guarantees, they are often impractical in higher dimensions due to their reliance on enumerating the state-action space. Hence, exploration in complex domains is often performed with simple epsilon-greedy methods. To achieve more efficient exploration, we develop a method for assigning exploration bonuses based on a concurrently learned model of the system dynamics. By parameterizing our learned model with a neural network, we are able to develop a scalable and efficient approach to exploration bonuses that can be applied to tasks with complex, high-dimensional state spaces. We demonstrate our approach on the task of learning to play Atari games from raw pixel inputs. In this domain, our method offers substantial improvements in exploration efficiency when compared with the standard epsilon greedy approach. As a result of our improved exploration strategy, we are able to achieve state-of-the-art results on several games that pose a major challenge for prior methods."
+#### ["Large-Scale Study of Curiosity-Driven Learning"](https://arxiv.org/abs/1808.04355) Burda, Edwards, Pathak, Storkey, Darrell, Efros
+  `exploration guided by prediction error`
+>	"Reinforcement learning algorithms rely on carefully engineering environment rewards that are extrinsic to the agent. However, annotating each environment with hand-designed, dense rewards is not scalable, motivating the need for developing reward functions that are intrinsic to the agent. Curiosity is a type of intrinsic reward function which uses prediction error as reward signal. In this paper: (a) We perform the first large-scale study of purely curiosity-driven learning, i.e. without any extrinsic rewards, across 54 standard benchmark environments, including the Atari game suite. Our results show surprisingly good performance, and a high degree of alignment between the intrinsic curiosity objective and the hand-designed extrinsic rewards of many game environments. (b) We investigate the effect of using different feature spaces for computing prediction error and show that random features are sufficient for many popular RL game benchmarks, but learned features appear to generalize better (e.g. to novel game levels in Super Mario Bros.). (c) We demonstrate limitations of the prediction-based rewards in stochastic setups."
 
->	"In the field of reinforcement learning, agents acting in unknown environments face the exploration versus exploitation tradeoff. Without adequate exploration, the agent might fail to discover effective control strategies, particularly in complex domains. Both PAC-MDP algorithms and Bayesian algorithms have managed this tradeoff by assigning exploration bonuses to novel states. In these methods, the novelty of a state-action pair is derived from the number of times an agent has visited that pair. While these approaches offer strong formal guarantees, their requirement of an enumerable representation of the agent’s environment renders them impractical for large-scale tasks. As such, exploration in large RL tasks is still most often performed using simple heuristics, such as the epsilon-greedy strategy, which can be inadequate in more complex settings. To achieve better exploration, we develop a method for assigning exploration bonuses based on a learned model of the system dynamics. Rather than requiring an a priori and enumerable representation of the agent’s environment, we instead propose to learn a state representation from observations, and then optimize a dynamics model concurrently with the policy. The misprediction error in our learned dynamics model is then used to assess the novelty of a given state; since novel states are expected to disagree more strongly with the model than those states that have been visited frequently in the past. These exploration bonuses are motivated by Bayesian exploration bonuses, in which state-action counts serve to capture the uncertainty in the belief space over a model’s transition matrices. Though it is intractable to construct such transition matrices for complex, partially observed tasks with high-dimensional observations such as image pixels, our method captures a similar notion of uncertainty via the misprediction error in the learned dynamics model over the observation space."
-
->	"There are a number of directions for future work. Our method assumes unpredictability is a good indicator for the need for more exploration, but in highly stochastic environments there can be transitions that remain unpredictable even after sufficient exploration, and a distributional prediction (rather than a single next state prediction) would become important. An important question both in policy learning and model learning with complex, high-dimensional observations is the question of representation. In the case of our model, we learn a representation using an autoencoder trained on prior experience, in an unsupervised setting. More generally, one can imagine learning representations as part of the model learning process in a supervised way, or even sharing representations between the model and the policy. Furthermore, although our method learns a model of the dynamics, the reinforcement learning is performed in a model-free way. We make no attempt to incorporate the model into the policy update except via exploration bonuses. An interesting direction for future work is to incorporate model-based updates with the same type of predictive model."
-
->	"exploration bonus := error in next-state prediction"  
->	"stochastic environment leads to infinite exploration"  
-
-  - `video` <http://research.microsoft.com/apps/video/default.aspx?id=260045> (12:30) (Abbeel)
+  - <https://pathak22.github.io/large-scale-curiosity>
+  - `video` <https://youtube.com/watch?v=l1FqtAHfJLI>
+  - `video` <https://vk.com/video-44016343_456240849> (Efros)
+  - `video` <https://youtu.be/8NR6euSDfsM?t=9m4s> (Darrell)
+  - `video` <https://youtube.com/watch?v=aom4RMOHezc> (Raval)
+  - `code` <https://github.com/openai/large-scale-curiosity>
 
 
 #### ["Curiosity-driven Exploration by Self-supervised Prediction"](https://arxiv.org/abs/1705.05363) Pathak, Agrawal, Efros, Darrell
@@ -3114,6 +3128,7 @@ interesting recent papers:
 
 
 #### ["Generative Adversarial Imitation Learning"](http://arxiv.org/abs/1606.03476) Ho, Ermon
+  `GAIL`
 >	"Consider learning a policy from example expert behavior, without interaction with the expert or access to reinforcement signal. One approach is to recover the expert’s cost function with inverse reinforcement learning, then extract a policy from that cost function with reinforcement learning. This approach is indirect and can be slow. We propose a new general framework for directly extracting a policy from data, as if it were obtained by reinforcement learning following inverse reinforcement learning. We show that a certain instantiation of our framework draws an analogy between imitation learning and generative adversarial networks, from which we derive a model-free imitation learning algorithm that obtains significant performance gains over existing model-free methods in imitating complex behaviors in large, high-dimensional environments."
 
 >	"As we demonstrated, our method is generally quite sample efficient in terms of expert data. However, it is not particularly sample efficient in terms of environment interaction during training. The number of such samples required to estimate the imitation objective gradient was comparable to the number needed for TRPO to train the expert policies from reinforcement signals. We believe that we could significantly improve learning speed for our algorithm by initializing policy parameters with behavioral cloning, which requires no environment interaction at all. Fundamentally, our method is model free, so it will generally need more environment interaction than model-based methods. Guided cost learning, for instance, builds upon guided policy search and inherits its sample efficiency, but also inherits its requirement that the model is well-approximated by iteratively fitted time-varying linear dynamics. Interestingly, both our Algorithm 1 and guided cost learning alternate between policy optimization steps and cost fitting (which we called discriminator fitting), even though the two algorithms are derived completely differently. Our approach builds upon a vast line of work on IRL, and hence, just like IRL, our approach does not interact with the expert during training. Our method explores randomly to determine which actions bring a policy’s occupancy measure closer to the expert’s, whereas methods that do interact with the expert, like DAgger, can simply ask the expert for such actions. Ultimately, we believe that a method that combines well-chosen environment models with expert interaction will win in terms of sample complexity of both expert data and environment interaction."
@@ -3131,8 +3146,13 @@ interesting recent papers:
 
 
 #### ["Inferring The Latent Structure of Human Decision-Making from Raw Visual Inputs"](https://arxiv.org/abs/1703.08840) Li, Song, Ermon
+  `InfoGAIL`
 >	"The goal of imitation learning is to match example expert behavior, without access to a reinforcement signal. Expert demonstrations provided by humans, however, often show signifi- cant variability due to latent factors that are not explicitly modeled. We introduce an extension to the Generative Adversarial Imitation Learning method that can infer the latent structure of human decision-making in an unsupervised way. Our method can not only imitate complex behaviors, but also learn interpretable and meaningful representations. We demonstrate that the approach is applicable to high-dimensional environments including raw visual inputs. In the highway driving domain, we show that a model learned from demonstrations is able to both produce different styles of human-like driving behaviors and accurately anticipate human actions. Our method surpasses various baselines in terms of performance and functionality."
 
 >	"In imitation learning, example demonstrations are typically provided by human experts. These demonstrations can show significant variability. For example, they might be collected from multiple experts, each employing a different policy. External latent factors of variation that are not explicitly captured by the simulation environment can also significantly affect the observed behavior. For example, expert driving demonstrations might be collected from users with different skills and habits. The goal of this paper is to develop an imitation learning framework that is able to automatically discover and disentangle the latent factors of variation underlying human decision-making. Analogous to the goal of uncovering style, shape, and color in generative modeling of images (Chen et al., 2016), we aim to automatically learn concepts such as driver aggressiveness from human demonstrations."
 
 >	"We propose a new method for learning a latent variable generative model of trajectories in a dynamic environment that not only accurately reproduce expert behavior, but also learns a latent space that is semantically meaningful. Our approach is an extension of GAIL, where the objective is augmented with a mutual information term between the latent variables and the observed state-action pairs. We demonstrate an application in autonomous driving, where we learn to imitate complex driving behaviors while learning semantically meaningful structure, without any supervision beyond the expert trajectories. Remarkably, our method performs directly on raw visual inputs, using raw pixels as the only source of perceptual information."
+
+  - `video` <https://youtube.com/watch?v=YtNPBAW6h5k> (demo)
+  - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Inferring_The_Latent_Structure_of_Human_Decision-Making_from_Raw_Visual_Inputs.md>
+  - `code` <https://github.com/YunzhuLi/InfoGAIL>

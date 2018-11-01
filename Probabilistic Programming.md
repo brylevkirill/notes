@@ -136,6 +136,8 @@
 
   - [Pyro](https://github.com/uber/pyro)
 
+	["Pyro: Deep Universal Probabilistic Programming"](https://arxiv.org/abs/1810.09538) by Bingham et al. `paper`
+
   - [ProbTorch](https://github.com/probtorch/probtorch)
 
   - [Infer.NET](https://github.com/dotnet/infer)

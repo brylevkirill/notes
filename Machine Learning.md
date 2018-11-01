@@ -482,6 +482,8 @@
 
 ----
 
+  ["AutoML: Methods, Systems, Challenges"](https://automl.org/book) book by Frank Hutter, Lars Kotthoff, Joaquin Vanschoren
+
   ["Automated Machine Learning: A Short History"](https://datarobot.com/blog/automated-machine-learning-short-history/) by Thomas Dinsmore
 
   ["Automated Machine Learning"](https://youtube.com/watch?v=AFeozhAD9xE) by Andreas Mueller `video`  
