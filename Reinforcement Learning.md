@@ -398,6 +398,8 @@
 
   ["Deep Reinforcement Learning Hands-On"](https://amazon.com/gp/product/1788834240) by Maxim Lapan `book`
 
+  ["Spinning Up in Deep RL"](https://spinningup.openai.com)
+
 ----
 
   [course](http://rll.berkeley.edu/deeprlcourse) by Sergey Levine, John Schulman and Chelsea Finn ([videos](https://youtube.com/playlist?list=PLkFD6_40KJIznC9CDbVTjAF2oyt8_VAe3))  
@@ -419,15 +421,11 @@
 
 ----
 
-  [**deep learning**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)
-
-----
-
+  ["A Real World Reinforcement Learning Research Program"](http://hunch.net/?p=9828091) by John Langford  
   ["Expressivity, Trainability, and Generalization in Machine Learning"](http://blog.evjang.com/2017/11/exp-train-gen.html) by Eric Jang  
   ["On “Solving” Montezuma’s Revenge"](https://medium.com/@awjuliani/on-solving-montezumas-revenge-2146d83f0bc3) by Arthur Juliani  
   ["Deep Reinforcement Learning Doesn't Work Yet"](https://www.alexirpan.com/2018/02/14/rl-hard.html) by Alex Irpan  
   ["Reinforcement Learning Never Worked, and 'Deep' Only Helped a Bit"](https://himanshusahni.github.io/2018/02/23/reinforcement-learning-never-worked.html) by Himanshu Sahni  
-  ["A Real World Reinforcement Learning Research Program"](http://hunch.net/?p=9828091) by John Langford  
 
 
 
@@ -550,8 +548,8 @@
   - learn agent's behavior in environment with unknown cost function via imitation of another agent's behavior
   - use expert's demonstrations to alleviate difficulties with exploration, credit assignment and reward design
 
-  [tutorial](http://videolectures.net/DLRLsummerschool2018_daume_imitation_learning) by Hal Daume `video`  
-  [tutorial](https://facebook.com/icml.imls/videos/428362527678268) by Yisong Yue and Hoang Le `video`  
+  [overview](http://videolectures.net/DLRLsummerschool2018_daume_imitation_learning) by Hal Daume `video`  
+  [overview](https://facebook.com/icml.imls/videos/428362527678268) by Yisong Yue and Hoang Le `video`  
   ["New Frontiers in Imitation Learning"](https://youtube.com/watch?v=teyGpr2Dgm4) by Yisong Yue `video`  
 
   ["Supervised Learning of Behaviors: Deep Learning, Dynamical Systems, and Behavior Cloning"](https://youtube.com/watch?v=kl_G95uKTHw) by Sergey Levine `video`  
@@ -568,7 +566,7 @@
 
 
 ----
-#### inverse reinforcement learning
+#### imitation learning / inverse reinforcement learning
 
   - infer underlying reward structure guiding agent’s behavior based on observations and model of environment  
   - learn reward structure for modelling purposes or for imitation of another agent's behavior (apprenticeship)  
@@ -600,7 +598,8 @@
   ["Learning in Brains and Machines: Synergistic and Modular Action"](http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/) by Shakir Mohamed
 
   Options framework:  
-	[overview](http://videolectures.net/deeplearning2016_precup_advanced_lr/) by Doina Precup `video`  
+	[overview](http://videolectures.net/DLRLsummerschool2018_precup_temporal_abstraction) by Doina Precup `video`  
+	[overview](http://videolectures.net/deeplearning2016_precup_advanced_lr) by Doina Precup `video`  
 	["Temporal Abstraction in Reinforcement Learning"](https://youtube.com/watch?v=GntIVgNKkCI) by Doina Precup `video`  
 	["Advances in Option Construction: The Option-Critic Architecture"](https://youtube.com/watch?v=8r_EoYnPjGk) by Pierre-Luc Bacon `video`  
 	["Progress on Deep Reinforcement Learning with Temporal Abstraction"](https://vimeo.com/249559422) by Doina Precup `video`  
@@ -615,11 +614,27 @@
 
 
 ----
-#### off-policy learning
+#### off-policy reinforcement learning
 
   Updates to a statistic of a dynamical process are said to be off-policy if their distribution does not match the dynamics of the process, particularly if the mismatch is due to the way actions are chosen. The prototypical example is learning of value function for one policy, the target policy, using data obtained while following another policy, the behavior policy.
 
-  [overview](http://videolectures.net/deeplearning2017_thomas_safe_rl/#t=1821) by Philip Thomas `video`
+  [overview](http://videolectures.net/DLRLsummerschool2018_white_policy_learning) by Martha White `video`  
+  [overview](http://videolectures.net/deeplearning2017_thomas_safe_rl/#t=1821) by Philip Thomas `video`  
+
+
+----
+#### safe reinforcement learning
+
+  [overview](http://videolectures.net/DLRLsummerschool2018_ghavamzadeh_safety_in_RL) by Mohammad Ghavamzadeh `video`  
+  [overview](http://videolectures.net/deeplearning2017_thomas_safe_rl) by Philip Thomas `video`  
+
+
+----
+#### multi-agent reinforcement learning
+
+  [overview](http://videolectures.net/DLRLsummerschool2018_bowling_multi_agent_RL) by Michael Bowling `video`
+
+  [**recent interesting papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---multi-agent)
 
 
 
@@ -817,8 +832,9 @@
 
 ----
 
-  [overview](http://youtube.com/watch?v=sGuiWX07sKw) by David Silver `video`  
+  [overview](http://youtu.be/sGuiWX07sKw?t=11m46s) by David Silver `video`  
   [overview](http://youtu.be/fIKkhoI1kF4?t=19m23s) by Emma Brunskill `video`  
+  [overview](http://videolectures.net/DLRLsummerschool2018_lattimore_bandits) by Tor Lattimore `video`  
 
   tutorial by Csaba Szepesvari
 	([part 1](https://youtube.com/watch?v=VVcLnAoU9Gw),
@@ -891,13 +907,12 @@
 
 ----
 
-  [introduction](https://youtu.be/sGuiWX07sKw?t=1h29m7s) by David Silver `video`  
-  [introduction](https://youtu.be/7ic_d5TeIUk) by John Langford `video`  
+  [overview](https://youtu.be/sGuiWX07sKw?t=1h29m7s) by David Silver `video`  
+  [overview](https://youtu.be/7ic_d5TeIUk) by John Langford `video`  
+  [overview](https://vimeo.com/240429210) by John Langford and Alekh Agarwal `video`  
+  [overview](https://youtu.be/3q4OvzIyPug?t=6m12s) by Alekh Agarwal `audio`  
 
   [overview](http://youtube.com/watch?v=N5x48g2sp8M) of theory by Robert Schapire `video`  
-  [overview](https://vimeo.com/240429210) of applications by John Langford and Alekh Agarwal `video`  
-
-  [overview](https://youtu.be/3q4OvzIyPug?t=6m12s) of interactive machine learning by Alekh Agarwal `audio`
 
 ----
 
@@ -1086,7 +1101,6 @@
   [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/) by Pieter Abbeel (part 2) `video`  
   [overview](http://youtube.com/watch?v=EtMyH_--vnU) by Sergey Levine `video`  
   [overview](https://video.seas.harvard.edu/media/ME+Sergey+Levine+2015+-04-01/1_gqqp9r3o/23375211) by Sergey Levine `video`  
-  [overview](http://youtube.com/watch?v=xMHjkZBvnfU) by Pieter Abbeel `video`  
 
   ["Optimal Control and Trajectory Optimization"](https://youtube.com/watch?v=mZtlW_xtarI) by Sergey Levine `video`  
   ["Learning Policies by Imitating Optimal Control"](https://youtube.com/watch?v=o0Ebur3aNMo) by Sergey Levine `video`  
@@ -1215,6 +1229,8 @@
   "Q-Function Learning Methods" by John Schulman
 	([first part](https://youtube.com/watch?v=Wnl-Qh2UHGg&t=19m06s),
 	[second part](https://youtube.com/watch?v=h1-pj4Y9-kM)) `video`  
+
+  ["Approximate Dynamic Programming and Batch Reinforcement Learning"](http://videolectures.net/DLRLsummerschool2018_farahmand_batch_RL) by Amir-massoud Farahmand `video`
 
   ["Temporal Difference"](https://yadi.sk/i/cVawsPkK3EtGJj) by Fedor Ratnikov `video` `in russian`  
   "Value-based Methods" by Fedor Ratnikov
@@ -2860,6 +2876,10 @@ interesting recent papers:
 
 >	"As you iteratively improve your policy, it’s important to constrain the KL divergence between the old and new policy to be less than some constant δ. This δ (in the unit of nats) is better than a fixed step size, since the meaning of the step size changes depending on what the rewards and problem structure look like at different points in training. This is called Trust Region Policy Optimization (or, in a first-order variant, Proximal Policy Optimization) and it matters more as we do more experience replay."
 
+----
+>	"There's an identity that was first proven by Sham and Kakade in 2002 that lets you express a policy in terms of how good it is compared to another, different, policy. Furthermore, you can show that using this identity, it's possible to guarantee that the policy improves during an update. The goal of TRPO is to maximize the improvement of the "new" policy that you get after optimization compared to the previous "old" policy. To do this, you have to assume that the state visitation distributions of the two policies are similar (this comes from the identity), which they will be if you constrain the KL-divergence between them (i.e. this is like saying "if the new policy is better than the old policy in every state, the new policy is better than the old policy")."  
+>	"TRPO treats this as a constrained optimization problem; i.e. maximize the improvement of the new policy compared to the old policy such that the KL divergence is smaller than a given value. Since you need to take multiple update steps for non-convex constrained optimization (generally using the conjugate gradient method and line search) the advantage estimate is no longer on-policy during the optimization process because you're changing the weights of pi_new compared to pi_old, and then comparing using the rollout taken under pi_old. To correct for the now different policy distributions, importance sampling is used (and this actually falls out the aforementioned identity from Sham and Kakade)."  
+
   - `video` <https://youtube.com/watch?v=jeid0wIrSn4> + <https://vimeo.com/113957342> (demo)
   - `video` <https://youtube.com/watch?v=CKaN5PgkSBc>
   - `video` <https://youtu.be/xe-z4i3l-iQ?t=30m35s> (Abbeel)
@@ -2896,6 +2916,11 @@ interesting recent papers:
 #### ["Proximal Policy Optimization Algorithms"](https://arxiv.org/abs/1707.06347) Schulman, Wolski, Dhariwal, Radford, Klimov
   `PPO` `policy gradient` `on-policy`
 >	"We propose a new family of policy gradient methods for reinforcement learning, which alternate between sampling data through interaction with the environment, and optimizing a "surrogate" objective function using stochastic gradient ascent. Whereas standard policy gradient methods perform one gradient update per data sample, we propose a novel objective function that enables multiple epochs of minibatch updates. The new methods, which we call proximal policy optimization, have some of the benefits of trust region policy optimization, but they are much simpler to implement, more general, and have better sample complexity (empirically). Our experiments test PPO on a collection of benchmark tasks, including simulated robotic locomotion and Atari game playing, and we show that PPO outperforms other online policy gradient methods, and overall strikes a favorable balance between sample complexity, simplicity, and wall-time."
+
+----
+>	"There's an identity that was first proven by Sham and Kakade in 2002 that lets you express a policy in terms of how good it is compared to another, different, policy. Furthermore, you can show that using this identity, it's possible to guarantee that the policy improves during an update. The goal of both TRPO and PPO is to maximize the improvement of the "new" policy that you get after optimization compared to the previous "old" policy. To do this, you have to assume that the state visitation distributions of the two policies are similar (this comes from the identity), which they will be if you constrain the KL-divergence between them (i.e. this is like saying "if the new policy is better than the old policy in every state, the new policy is better than the old policy")."  
+>	"TRPO treats this as a constrained optimization problem; i.e. maximize the improvement of the new policy compared to the old policy such that the KL divergence is smaller than a given value. Since you need to take multiple update steps for non-convex constrained optimization (generally using the conjugate gradient method and line search) the advantage estimate is no longer on-policy during the optimization process because you're changing the weights of pi_new compared to pi_old, and then comparing using the rollout taken under pi_old. To correct for the now different policy distributions, importance sampling is used (and this actually falls out the aforementioned identity from Sham and Kakade)."  
+>	"PPO takes this idea, and applies it to first order methods. Say we want to do multiple gradient updates on a single batch of data in order to speed up learning -- the problem with this is that the Monte-Carlo return is no longer on-policy after the first gradient update. PPO uses importance sampling the same way that TRPO does to correct for the change in the policy distribution. In order to ensure that the two distributions remain close (to keep the state distributions close) a momentum term based on the KL divergence is added to decelerate the gradient update as it moves away from the initial policy over subsequent updates. The second way of doing PPO (using the clamped heuristic) involves taking the most pessimistic update at every step by clamping the gradient to a fixed region, and then taking whatever the minimum step is. This way, you effectively decelerate updates that move the new policy further and further away from the original policy (though you can still break it by taking too many update steps)."  
 
   - `post` <https://blog.openai.com/openai-baselines-ppo/> (demo)
   - `video` <https://youtu.be/xvRrgxcpaHY?t=28m34s> (Schulman)

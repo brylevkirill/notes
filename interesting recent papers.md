@@ -393,6 +393,8 @@ interesting older papers:
 >	"Implicit reparameterization gradients can be used to train VAEs with Gamma, Beta, and von Mises latent variables, leading to latent spaces with interesting alternative topologies."  
 >	"Following Graves, we use implicit differentiation to differentiate the CDF rather than its inverse. While the method of Graves is only practical for distributions with analytically tractable CDFs and has been used solely with mixture distributions, we leverage automatic differentiation to handle distributions with numerically tractable CDFs."  
 >	"One common example of implicit differentiation is the inverse function theorem. Suppose that you can easily compute y = f(x), but computing f^-1(y) is expensive/hard. Then, you can take points x, compute y = f(x), and by definition have x = f^-1(y). The inverse function theorem tells you that (f^-1(y))' = 1 / f'(x) . So, you can compute the derivative of the inverse even when you cannot easily compute x = f^-1(y) for any y. Implicit differentiation is an extension of this idea that handles the case when the inverse is taken w.r.t. one argument and differentiation is performed w.r.t. another."  
+  - `video` <https://youtu.be/BV465lgleHA?t=44m31s> (Figurnov)
+  - `video` <https://youtube.com/watch?v=5bGdZhonDrg> (Mnih)
   - <https://i.imgur.com/iEVFES7.png>
   - <https://www.math.ucdavis.edu/~kouba/CalcOneDIRECTORY/implicitdiffdirectory/ImplicitDiff.html>
   - `code` <https://github.com/tensorflow/probability/blob/master/tensorflow_probability/examples/latent_dirichlet_allocation.py>
@@ -1837,6 +1839,28 @@ interesting older papers:
 [**interesting older papers - policy-based methods**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---policy-based-methods)  
 
 ----
+#### ["Are Deep Policy Gradient Algorithms Truly Policy Gradient Algorithms?"](https://arxiv.org/abs/1811.02553) Ilyas et al.
+>	"Deep reinforcement learning algorithms are rooted in a well-grounded framework of classical RL. However, as our investigations uncover, this framework fails to explain much of the behavior of these algorithms. This disconnect impedes our understanding of why these algorithms succeed (or fail). It also poses a major barrier to addressing key challenges facing deep RL, such as widespread brittleness and poor reproducibility. To close this gap, we need to either develop methods that adhere more closely to theory, or build theory that can capture what makes existing policy gradient methods successful. In both cases, the first step is to precisely pinpoint where theory and practice diverge.  
+>	"Gradient estimation. Our analysis shows that the quality of gradient estimates that policy gradient algorithms use is rather poor. Indeed, even when agents are still improving, such gradient estimates are often virtually uncorrelated with the true gradient and with each other. Our results thus indicate that adhering to existing theory would require algorithms that obtain better estimates of the gradient. Alternatively, one might aim to broaden the theory to explain why modern policy gradient algorithms are successful despite relying on such poor gradient estimates.  
+>	Value prediction. The findings presented identify two key issues. First, while the value network successfully solves the supervised learning task it is trained on, it does not accurately model the “true” value function. Second, employing the value network as a baseline does decrease the gradient variance (compared to the trivial (“zero”) baseline). However, this decrease is rather marginal compared to the variance reduction offered by the “true” value function, but employing a value network dramatically increases agent’s performance. These phenomena motivate us to ask: is this failure in modeling the true value function inevitable? And what is the real role of the value network in policy gradient methods?  
+>	Optimization landscape. The optimization landscape induced by modern policy gradient algorithms is often not reflective of the underlying true reward landscape. In fact, in the sample-regime where policy gradient methods operate, the true reward landscape is noisy and the surrogate reward is often misleading. We thus need a better understanding of why the current methods succeed despite these issues, and, more broadly, how to navigate the true reward landscape more accurately.  
+>	Trust region approximation. Our findings indicate that there may be a number of reasons why policies need to be locally similar. These include noisy gradient estimates, poor baseline functions and misalignment of the surrogate landscape. Not only is our theory surrounding trust region optimization oblivious to these factors, it is also notoriously difficult to translate this theory into efficient algorithms. Deep policy gradient methods thus resort to relaxations of trust region constraints, which makes their performance difficult to properly understand and analyze. Therefore, we need either techniques that enforce trust regions more strictly, or a rigorous theory of trust region relaxations."  
+
+#### ["Simple Random Search Provides a Competitive Approach to Reinforcement Learning"](https://arxiv.org/abs/1803.07055) Mania, Guy, Recht
+>	"We attempted to find the simplest algorithm for model-free RL that performs well on the continuous control benchmarks used in the RL literature. We demonstrated that with a few algorithmic augmentations, basic random search could be used to train linear policies that achieve state-of-theart sample efficiency on the MuJoCo locomotion tasks. We showed that linear policies match the performance of complex neural network policies and can be found through a simple algorithm."  
+>	"For application to continuous control, we augment the basic random search method with three simple features. First, we scale each update step by the standard deviation of the rewards collected for computing that update step. Second, we normalize the system’s states by online estimates of their mean and standard deviation. Third, we discard from the computation of the update steps the directions that yield the least improvement of the reward."  
+>	"Since the algorithm and policies are simple, we were able to perform extensive sensitivity studies, and observed that our method can find good solutions to highly nonconvex problems a large fraction of the time. Our results emphasize the high variance intrinsic to the training of policies for MuJoCo RL tasks. Therefore, it is not clear what is gained by evaluating RL algorithms on only a small numbers of random seeds, as is common in the RL literature. Evaluation on small numbers of random seeds does not capture performance adequately due to high variance."  
+>	"Though many RL researchers are concerned about minimizing sample complexity, it does not make sense to optimize the running time of an algorithm on a single instance. The running time of an algorithm is only a meaningful notion if either (a) evaluated on a family of instances, or (b) when clearly restricting the class of algorithms. Common RL practice, however, does not follow either (a) or (b). Instead researchers run algorithm A on task T with a given hyperparameter configuration, and plot a “learning curve” showing the algorithm reaches a target reward after collecting X samples. Then the “sample complexity” of the method is reported as the number of samples required to reach a target reward threshold, with the given hyperparameter configuration. However, any number of hyperparameter configurations can be tried. Any number of algorithmic enhancements can be added or discarded and then tested in simulation. For a fair measurement of sample complexity, should we not count the number of rollouts used for every tested hyperparameters?"  
+  - `post` <http://argmin.net/2018/03/20/mujocoloco/>
+  - `post` <http://argmin.net/2018/03/26/outsider-rl/>
+  - `code` <https://github.com/modestyachts/ARS>
+
+#### ["Towards Generalization and Simplicity in Continuous Control"](https://arxiv.org/abs/1703.02660) Rajeswaran, Lowrey, Todorov, Kakade
+>	"This work shows that policies with simple linear and RBF parameterizations can be trained to solve a variety of continuous control tasks, including the OpenAI gym benchmarks. The performance of these trained policies are competitive with state of the art results, obtained with more elaborate parameterizations such as fully connected neural networks. Furthermore, existing training and testing scenarios are shown to be very limited and prone to over-fitting, thus giving rise to only trajectory-centric policies. Training with a diverse initial state distribution is shown to produce more global policies with better generalization. This allows for interactive control scenarios where the system recovers from large on-line perturbations."  
+  - `video` <https://youtube.com/watch?v=frojcskMkkY>
+  - `code` <https://github.com/aravindr93/mjrl>
+
+----
 #### ["Optimizing Agent Behavior over Long Time Scales by Transporting Value"](https://arxiv.org/abs/1810.06721) Hung et al.
   `TVT` `credit assignment`
 >	"Humans spend a remarkable fraction of waking life engaged in acts of "mental time travel". We dwell on our actions in the past and experience satisfaction or regret. More than merely autobiographical storytelling, we use these event recollections to change how we will act in similar scenarios in the future. This process endows us with a computationally important ability to link actions and consequences across long spans of time, which figures prominently in addressing the problem of long-term temporal credit assignment; in artificial intelligence this is the question of how to evaluate the utility of the actions within a long-duration behavioral sequence leading to success or failure in a task. Existing approaches to shorter-term credit assignment in AI cannot solve tasks with long delays between actions and consequences. Here, we introduce a new paradigm for reinforcement learning where agents use recall of specific memories to credit actions from the past, allowing them to solve problems that are intractable for existing algorithms."  
@@ -1881,15 +1905,6 @@ interesting older papers:
 >	"We demonstrate that contemporary RL algorithms struggle to solve simple tasks when enough information is concealed from the sensors of the agent, a property called "partial observability". An obvious requirement for handling partially observed tasks is access to extensive memory, but we show memory is not enough; it is critical that the right information be stored in the right format. We develop a model, the Memory, RL, and Inference Network, in which memory formation is guided by a process of predictive modeling."  
   - `video` <https://youtu.be/9z3_tJAu7MQ?t=22m45s> (Wayne)
 
-#### ["Simple Random Search Provides a Competitive Approach to Reinforcement Learning"](https://arxiv.org/abs/1803.07055) Mania, Guy, Recht
->	"We attempted to find the simplest algorithm for model-free RL that performs well on the continuous control benchmarks used in the RL literature. We demonstrated that with a few algorithmic augmentations, basic random search could be used to train linear policies that achieve state-of-theart sample efficiency on the MuJoCo locomotion tasks. We showed that linear policies match the performance of complex neural network policies and can be found through a simple algorithm."  
->	"For application to continuous control, we augment the basic random search method with three simple features. First, we scale each update step by the standard deviation of the rewards collected for computing that update step. Second, we normalize the system’s states by online estimates of their mean and standard deviation. Third, we discard from the computation of the update steps the directions that yield the least improvement of the reward."  
->	"Since the algorithm and policies are simple, we were able to perform extensive sensitivity studies, and observed that our method can find good solutions to highly nonconvex problems a large fraction of the time. Our results emphasize the high variance intrinsic to the training of policies for MuJoCo RL tasks. Therefore, it is not clear what is gained by evaluating RL algorithms on only a small numbers of random seeds, as is common in the RL literature. Evaluation on small numbers of random seeds does not capture performance adequately due to high variance."  
->	"Though many RL researchers are concerned about minimizing sample complexity, it does not make sense to optimize the running time of an algorithm on a single instance. The running time of an algorithm is only a meaningful notion if either (a) evaluated on a family of instances, or (b) when clearly restricting the class of algorithms. Common RL practice, however, does not follow either (a) or (b). Instead researchers run algorithm A on task T with a given hyperparameter configuration, and plot a “learning curve” showing the algorithm reaches a target reward after collecting X samples. Then the “sample complexity” of the method is reported as the number of samples required to reach a target reward threshold, with the given hyperparameter configuration. However, any number of hyperparameter configurations can be tried. Any number of algorithmic enhancements can be added or discarded and then tested in simulation. For a fair measurement of sample complexity, should we not count the number of rollouts used for every tested hyperparameters?"  
-  - `post` <http://argmin.net/2018/03/20/mujocoloco/>
-  - `post` <http://argmin.net/2018/03/26/outsider-rl/>
-  - `code` <https://github.com/modestyachts/ARS>
-
 ----
 #### ["Is Q-learning Provably Efficient?"](https://arxiv.org/abs/1807.03765) Jin, Allen-Zhu, Bubeck, Jordan
   `Q-learning`
@@ -1915,6 +1930,7 @@ interesting older papers:
 >	"Using quantile regression to approximate the full quantile function for the state-action return distribution. By reparameterizing a distribution over the sample space, this yields an implicitly defined return distribution and gives rise to a large class of risk-sensitive policies."  
 >	"There may be additional benefits to implicit quantile networks beyond the obvious increase in representational fidelity. As with UVFAs, we might hope that training over many different τ’s (goals in the case of the UVFA) leads to better generalization between values and improved sample complexity than attempting to train each separately."  
   - `video` <https://facebook.com/icml.imls/videos/429611280886726?t=2511> (Dabney)
+  - `code` <https://github.com/google/dopamine/blob/master/dopamine/agents/implicit_quantile/implicit_quantile_agent.py>
 
 #### ["An Analysis of Categorical Distributional Reinforcement Learning"](https://arxiv.org/abs/1802.08163) Rowland, Bellemare, Dabney, Munos, Teh
   `CDRL` `distributional RL` `Q-learning`
@@ -1938,11 +1954,17 @@ interesting older papers:
 >	"The value function gives the expected future discounted return. This ignores variance and multi-modality. Authors argue for modelling the full distribution of the return."  
 >	"Distributional Bellman equation"  
 >	"It is unclear if method works because of modelling uncertainty over rewards, training network with richer signal (categorical loss) or using distributional Bellman update."  
+>	"Bellman (1957): Bellman equation for mean  
+>	Sobel (1982): ... for variance  
+>	Engel (2003): ... for Bayesian uncertainty  
+>	Azar et al. (2011), Lattimore & Hutter (2012): ... for higher moments  
+>	Morimura et al. (2010, 2010b): ... for densities"  
   - `post` <https://deepmind.com/blog/going-beyond-average-reinforcement-learning/>
   - `video` <https://youtube.com/watch?v=yFBwyPuO2Vg> (demo)
   - `video` <http://videocrm.ca/Machine18/Machine18-20180423-3-MarcBellemare> (Bellemare)
   - `video` <https://vimeo.com/235922311> (Bellemare)
   - `video` <https://vimeo.com/237274251> (Bellemare)
+  - `video` <https://videolectures.net/DLRLsummerschool2018_bellemare_deep_RL/#t=2010> (Bellemare)
   - `video` <https://youtu.be/bsuvM1jO-4w?t=4m45s> (Mnih)
   - `video` <https://youtu.be/fnwo3GCmyEo?t=6m45s> (Fritzler) `in russian`
   - `video` <https://youtu.be/5REJGbNu-Kk?t=11m45s> (Grinchuk) `in russian`
@@ -2084,7 +2106,7 @@ interesting older papers:
   - `paper` ["Taming the Noise in Reinforcement Learning via Soft Updates"](https://arxiv.org/abs/1512.08562) by Fox, Pakman, Tishby
 
 #### ["Bridging the Gap Between Value and Policy Reinforcement Learning"](http://arxiv.org/abs/1702.08892) Nachum, Norouzi, Xu, Schuurmans
-  `PCL` `soft Q-learning` `policy gradient`
+  `PCL` `soft Q-learning` `policy gradient` `on-policy + off-policy`
 >	"Softmax temporally consistent action values satisfy a strong consistency property with optimal entropy regularized policy probabilities along any action sequence, regardless of provenance."  
 >	"Path Consistency Learning minimizes inconsistency measured along multi-step action sequences extracted from both on- and off-policy traces."  
 >	"We show how a single model can be used to represent both a policy and its softmax action values. Beyond eliminating the need for a separate critic, the unification demonstrates how policy gradients can be stabilized via self-bootstrapping from both on- and off-policy data. An experimental evaluation demonstrates that both algorithms can significantly outperform strong actor-critic and Q-learning baselines across several benchmark tasks."  
@@ -2310,6 +2332,15 @@ interesting older papers:
   - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Blazing-the-trails-before-beating-the-path-Sample-efficient-Monte-Carlo-planning> (Grill)
 
 ----
+#### ["Understanding and Generalizing AlphaGo Zero"](https://openreview.net/forum?id=rkxtl3C5YX)
+  `learning from planning` `using available environment model` `expert iteration`
+>	"We provide a formal framework to study AGZ. We argue that the self-play in AGZ corresponds to learning a Nash equilibrium for the two-player game; and the supervised learning with MCTS is attempting to learn the policy corresponding to the Nash equilibrium, by establishing a novel bound on the difference between the expected return achieved by two policies in terms of the expected KL divergence (cross-entropy) of their induced distributions."  
+>	"To extend AGZ to generic sequential decision-making problems, we introduce a robust MDP framework, in which the agent and nature effectively play a zero-sum game: the agent aims to take actions to maximize reward while nature seeks state transitions, subject to the constraints of that environment, that minimize the agent’s reward. For a challenging network scheduling domain, we find that AGZ within the robust MDP framework provides near-optimal performance, matching one of the best known scheduling policies that has taken the networking community three decades of intensive research to develop."  
+>	"The questions. We are interested in three key unanswered questions about AGZ:  
+>	Question 1. What is the optimal policy that AGZ is trying to learn? We would like a formal model to understand how learning via self-play impacts the policy to which AGZ converges.  
+>	Question 2. Why is minimizing cross-entropy (or KL divergence) the right objective? We seek to precisely characterize the distribution under which cross-entropy should be evaluated, and derive quantitative performance guarantees that explain what optimizing for this metric achieves.  
+>	Question 3. How does AGZ extend to generic sequential decision-making problems? In generic sequential decision-making, the agent chooses actions and earns rewards while the state evolves per the environment. This is different from two-player zero-sum games for which AGZ was designed."  
+
 #### ["Dual Policy Iteration"](https://arxiv.org/abs/1805.10755) Sun, Gordon, Boots, Bagnell
   `learning from planning` `using available environment model` `expert iteration`
 >	"Recently, a novel class of Approximate Policy Iteration algorithms such as ExIt and AlphaGo-Zero have demonstrated impressive practical performance. This new family of algorithms maintains, and alternately optimizes, two policies: a fast, reactive policy (e.g., a deep neural network) deployed at test time, and a slow, non-reactive policy (e.g., Tree Search), that can plan multiple steps ahead. The reactive policy is updated under supervision from the non-reactive policy, while the non-reactive policy is improved with guidance from the reactive policy. In this work we study this Dual Policy Iteration strategy in an alternating optimization framework and provide a convergence analysis that extends existing API theory."  
@@ -2412,6 +2443,7 @@ interesting older papers:
   - `video` <http://videolectures.net/deeplearning2017_singh_reinforcement_learning/#t=4366> (Singh)
   - `video` <https://youtu.be/PRQ8-FwDPRE?t=16m> (Holland)
   - `video` <https://youtu.be/RwLTrQUyDvA?t=14m58s> (Diaz Rodriguez)
+  - `notes` <https://medium.com/arxiv-bytes/summary-value-prediction-networks-vpn-474c0b080b2a>
 
 #### ["The Predictron: End-to-End Learning and Planning"](https://arxiv.org/abs/1612.08810) Silver et al.
   `learning to plan` `learning abstract environment model`
@@ -2624,6 +2656,7 @@ interesting older papers:
 >	"PixelCNN for exploration, neural alternative to Context Tree Switching"  
   - `video` <http://youtube.com/watch?v=qSfd27AgcEk> (Bellemare)
   - `video` <https://vimeo.com/238243932> (Bellemare)
+  - `video` <http://videolectures.net/DLRLsummerschool2018_bellemare_deep_RL/#t=3474> (Bellemare)
 
 #### ["EX2: Exploration with Exemplar Models for Deep Reinforcement Learning"](https://arxiv.org/abs/1703.01260) Fu, Co-Reyes, Levine
   `exploration guided by observation novelty`
@@ -2675,6 +2708,9 @@ hieves."
 >	RND obviates factors 2 and 3 since the target network can be chosen to be deterministic and inside the model-class of the predictor network."  
   - `post` <https://blog.openai.com/reinforcement-learning-with-prediction-based-rewards> (demo)
   - `code` <https://github.com/openai/random-network-distillation>
+
+#### ["Randomized Prior Functions for Deep Reinforcement Learning"](https://arxiv.org/abs/1806.03335) Osband, Aslanides, Cassirer
+  `exploration guided by prediction error`
 
 #### ["Large-Scale Study of Curiosity-Driven Learning"](https://arxiv.org/abs/1808.04355) Burda, Edwards, Pathak, Storkey, Darrell, Efros
   `exploration guided by prediction error`

@@ -702,10 +702,10 @@
 
   ["Structured Probabilistic Models for Deep Learning"](http://www.deeplearningbook.org/contents/generative_models.html) chapter (section 16.7.1) of "Deep Learning" book by Goodfellow, Bengio, Courville
 
+  ["Boltzmann Machines and Energy-based Models"](https://arxiv.org/abs/1708.06008) by Osogami `paper`
+
   ["The Miracle of the Boltzmann Machine"](https://theneural.wordpress.com/2011/07/08/the-miracle-of-the-boltzmann-machine/) by Ilya Sutskever  
   ["Undirected Models are Better at Sampling"](https://theneural.wordpress.com/2011/07/17/undirected-models-are-better-at-sampling/) by Ilya Sutskever  
-
-  [differences with other models](https://stats.stackexchange.com/questions/114385/what-is-the-difference-between-convolutional-neural-networks-restricted-boltzma)  
 
   introduction by Geoffrey Hinton:  
   - [overview](http://sms.cam.ac.uk/media/2017973) (9:00) `video`  
@@ -1565,6 +1565,7 @@ Yoshua Bengio:
 >	"Our approach uses graphical models for representing structured probability distributions, and uses ideas from variational autoencoders for learning not only the nonlinear feature manifold but also bottom-up recognition networks to improve inference. Thus our method enables the combination of flexible deep learning feature models with structured Bayesian and even Bayesian nonparametric priors. Our approach yields a single variational inference objective in which all components of the model are learned simultaneously. Furthermore, we develop a scalable fitting algorithm that combines several advances in efficient inference, including stochastic variational inference, graphical model message passing, and backpropagation with the reparameterization trick."
 
   - `video` <https://youtube.com/watch?v=btr1poCYIzw>
+  - `video` <https://youtube.com/watch?v=5RA-TMwdpbw> (Johnson)
   - `video` <http://videolectures.net/deeplearning2017_johnson_graphical_models/> (Johnson)
   - `video` <https://youtube.com/watch?v=KcbfuUJ_a0A> (Johnson)
   - `video` <https://youtube.com/watch?v=vnO3w8OgTE8> (Duvenaud)
@@ -2865,6 +2866,7 @@ x."
 
   - `video` <http://youtu.be/-kHLKLLxIF4?t=32m37s> (Lillicrap)
   - `video` <http://youtube.com/watch?v=XzSRtu413CY> (Lillicrap)
+  - `video` <https://youtu.be/4u2ZF37i4Hs?t=1h45m25s> (Bartunov) `in russian`
 
 
 

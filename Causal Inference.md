@@ -177,6 +177,7 @@
 
   - `video` <https://vimeo.com/253922904> (Tran)
   - `slides` <http://dustintran.com/talks/Tran_Genomics.pdf>
+  - `post` <https://www.alexdamour.com/blog/public/2018/05/18/non-identification-in-latent-confounder-models>
 
 
 #### ["Learning Functional Causal Models with Generative Neural Networks"](https://arxiv.org/abs/1709.05321) Goudet, Kalainathan, Caillou, Lopez-Paz, Guyon, Sebag, Tritas, Tubaro
