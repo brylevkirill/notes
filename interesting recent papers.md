@@ -118,19 +118,9 @@ interesting older papers:
 >	"Batch Normalization (BatchNorm) is a widely adopted technique that enables faster and more stable training of deep neural networks (DNNs). Despite its pervasiveness, the exact reasons for BatchNorm's effectiveness are still poorly understood. The popular belief is that this effectiveness stems from controlling the change of the layers' input distributions during training to reduce the so-called "internal covariate shift". In this work, we demonstrate that such distributional stability of layer inputs has little to do with the success of BatchNorm. Instead, we uncover a more fundamental impact of BatchNorm on the training process: it makes the optimization landscape significantly smoother. This smoothness induces a more predictive and stable behavior of the gradients, allowing for faster training."  
   - `notes` <https://twitter.com/arimorcos/status/1001856542268952576>
 
-#### ["First-order Methods Almost Always Avoid Saddle Points"](https://arxiv.org/abs/1710.07406) Lee, Panageas, Piliouras, Simchowitz, Jordan, Recht
-  `optimization`
->	"We establish that first-order methods avoid saddle points for almost all initializations. Our results apply to a wide variety of first-order methods, including gradient descent, block coordinate descent, mirror descent and variants thereof. The connecting thread is that such algorithms can be studied from a dynamical systems perspective in which appropriate instantiations of the Stable Manifold Theorem allow for a global stability analysis. Thus, neither access to second-order derivative information nor randomness beyond initialization is necessary to provably avoid saddle points."  
-
 #### ["Self-Normalizing Neural Networks"](https://arxiv.org/abs/1706.02515) Klambauer, Unterthiner, Mayr, Hochreiter
   `optimization` `SELU`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#self-normalizing-neural-networks-klambauer-unterthiner-mayr-hochreiter>
-
-#### ["The Marginal Value of Adaptive Gradient Methods in Machine Learning"](https://arxiv.org/abs/1705.08292) Wilson, Roelofs, Stern, Srebro, Recht
-  `optimization`
->	"Authors argued that adaptive optimization methods tend to generalize less well than SGD and SGD with momentum (although they did not include K-FAC in their study)."  
->	"Despite the fact that our experimental evidence demonstrates that adaptive methods are not advantageous for machine learning, the Adam algorithm remains incredibly popular. Adaptive gradient methods are particularly popular for training GANs and Q-learning with function approximation. Both of these applications stand out because they are not solving optimization problems. It is possible that the dynamics of Adam are accidentally well matched to these sorts of optimization-free iterative search procedures. It is also possible that carefully tuned stochastic gradient methods may work as well or better in both of these applications."  
-  - `video` <https://facebook.com/nipsfoundation/videos/1554657104625523?t=133> (Roelofs)
 
 #### ["The Shattered Gradients Problem: If resnets are the answer, then what is the question?"](https://arxiv.org/abs/1702.08591) Balduzzi, Frean, Leary, Lewis, Ma, McWilliams
   `optimization`
@@ -139,6 +129,20 @@ interesting older papers:
 >	"In a randomly initialized network, the gradients of deeper layers are increasingly uncorrelated. Shattered gradients play havoc with the optimization methods currently in use and may explain the difficulty in training deep feedforward networks even when effective initialization and batch normalization are employed. Averaging gradients over minibatches becomes analogous to integrating over white noise – there is no clear trend that can be summarized in a single average direction. Shattered gradients can also introduce numerical instabilities, since small differences in the input can lead to large differences in gradients."  
 >	"Skip-connections in combination with suitable rescaling reduce shattering. Specifically, we show that the rate at which correlations between gradients decays changes from exponential for feedforward architectures to sublinear for resnets. The analysis uncovers a surprising and unexpected side-effect of batch normalization."  
   - `video` <https://vimeo.com/237275640> (McWilliams)
+
+#### ["First-order Methods Almost Always Avoid Saddle Points"](https://arxiv.org/abs/1710.07406) Lee, Panageas, Piliouras, Simchowitz, Jordan, Recht
+  `optimization`
+>	"We establish that first-order methods avoid saddle points for almost all initializations. Our results apply to a wide variety of first-order methods, including gradient descent, block coordinate descent, mirror descent and variants thereof. The connecting thread is that such algorithms can be studied from a dynamical systems perspective in which appropriate instantiations of the Stable Manifold Theorem allow for a global stability analysis. Thus, neither access to second-order derivative information nor randomness beyond initialization is necessary to provably avoid saddle points."  
+
+#### ["Gradient Descent Converges to Minimizers"](https://arxiv.org/abs/1602.04915) Lee, Simchowitz, Jordan, Recht
+  `optimization`
+>	"We show that gradient descent converges to a local minimizer, almost surely with random initialization. This is proved by applying the Stable Manifold Theorem from dynamical systems theory."  
+
+#### ["The Marginal Value of Adaptive Gradient Methods in Machine Learning"](https://arxiv.org/abs/1705.08292) Wilson, Roelofs, Stern, Srebro, Recht
+  `optimization`
+>	"Authors argued that adaptive optimization methods tend to generalize less well than SGD and SGD with momentum (although they did not include K-FAC in their study)."  
+>	"Despite the fact that our experimental evidence demonstrates that adaptive methods are not advantageous for machine learning, the Adam algorithm remains incredibly popular. Adaptive gradient methods are particularly popular for training GANs and Q-learning with function approximation. Both of these applications stand out because they are not solving optimization problems. It is possible that the dynamics of Adam are accidentally well matched to these sorts of optimization-free iterative search procedures. It is also possible that carefully tuned stochastic gradient methods may work as well or better in both of these applications."  
+  - `video` <https://facebook.com/nipsfoundation/videos/1554657104625523?t=133> (Roelofs)
 
 ----
 #### ["Measuring the Intrinsic Dimension of Objective Landscapes"](https://arxiv.org/abs/1804.08838) Li, Farkhoor, Liu, Yosinski
@@ -831,6 +835,7 @@ interesting older papers:
 >	"Meta RL agent must not learn how to master the environments it is given, but rather it must learn how to learn so that it can quickly train at test time."  
 >	"Due to RL^2’s policy-gradient-based optimization procedure, it does not directly optimize the final policy performance nor exhibit exploration. In E-RL^2 the rewards for episodes sampled early in the learning process are deliberately set to zero to drive exploratory behavior."  
   - `video` <https://youtu.be/16UUb4HF0fo?t=54m56s> (Golikov) `in russian`
+  - `code` <https://github.com/bstadie/krazyworld>
 
 #### ["Recasting Gradient-Based Meta-Learning as Hierarchical Bayes"](https://arxiv.org/abs/1801.08930) Grant, Finn, Levine, Darrell, Griffiths
   `MAML` `learning initialization algorithm`
@@ -2217,6 +2222,7 @@ interesting older papers:
   - `video` <http://fields.utoronto.ca/video-archive/2018/01/2509-18003> (Mnih)
   - `video` <https://facebook.com/icml.imls/videos/432150780632776?t=1458> (Espeholt)
   - `video` <https://facebook.com/iclr.cc/videos/2125495797479475?t=1265> (Kavukcuoglu)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1802.01561>
   - `code` <https://github.com/deepmind/scalable_agent>
 
 #### ["The Intentional Unintentional Agent: Learning to Solve Many Continuous Control Tasks Simultaneously"](https://arxiv.org/abs/1707.03300) Cabi, Colmenarejo, Hoffman, Denil, Wang, de Freitas
@@ -2462,6 +2468,7 @@ interesting older papers:
 #### ["Cognitive Mapping and Planning for Visual Navigation"](https://arxiv.org/abs/1702.03920) Gupta, Davidson, Levine, Sukthankar, Malik
   `learning to plan` `learning abstract environment model`
 >	"1st person mapping + navigation with VIN"  
+  - <https://sites.google.com/view/cognitive-mapping-and-planning>
   - `video` <https://youtu.be/ID150Tl-MMw?t=54m24s> (demo)
   - `code` <https://github.com/tensorflow/models/tree/master/research/cognitive_mapping_and_planning>
 
@@ -2569,7 +2576,9 @@ interesting older papers:
 
 ----
 #### ["Meta-Reinforcement Learning of Structured Exploration Strategies"](https://arxiv.org/abs/1802.07245) Gupta, Mendonca, Liu, Abbeel, Levine
-  `learning to explore` `meta-learning`
+  `learning to explore` `meta-learning` `MAESN`
+>	"Many of the current exploration methods for deep RL use task-agnostic objectives, such as information gain or bonuses based on state visitation. However, many practical applications of RL involve learning more than a single task, and prior tasks can be used to inform how exploration should be performed in new tasks. In this work, we explore how prior tasks can inform an agent about how to explore effectively in new situations. We introduce a novel gradient-based fast adaptation algorithm -- model agnostic exploration with structured noise -- to learn exploration strategies from prior experience. The prior experience is used both to initialize a policy and to acquire a latent exploration space that can inject structured stochasticity into a policy, producing exploration strategies that are informed by prior knowledge and are more effective than random action-space noise."  
+  - `video` <https://youtube.com/watch?v=Tge7LPT9vGA> (Gupta)
 
 #### ["Some Considerations on Learning to Explore via Meta-Reinforcement Learning"](https://arxiv.org/abs/1803.01118) Stadie, Yang, Houthooft, Chen, Duan, Wu, Abbeel, Sutskever
   `learning to explore` `meta-learning`
@@ -2581,6 +2590,11 @@ interesting older papers:
   - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#evolved-policy-gradients-houthooft-chen-isola-stadie-wolski-ho-abbeel>
 
 ----
+#### ["Randomized Prior Functions for Deep Reinforcement Learning"](https://arxiv.org/abs/1806.03335) Osband, Aslanides, Cassirer
+  `approximate bayesian exploration` `approximate posterior sampling`
+>	"A simple modification where each member of the ensemble is initialized together with a random but fixed prior function. Predictions are then taken as the sum of the trainable neural network and the prior function. We show that this approach passes a sanity check by demonstrating an equivalence to Bayesian inference with linear models. We also present a series of simple experiments designed to extend this intuition to deep learning. We show that many of the most popular approaches for uncertainty estimation in deep RL do not pass these sanity checks, and crystallize these shortcomings in a series of lemmas and small examples. We demonstrate that our simple modification can facilitate aspiration in difficult tasks where previous approaches for deep RL fail. We believe that this work presents a simple and practical approach to encoding prior knowledge with deep reinforcement learning."  
+  - <https://sites.google.com/view/randomized-prior-nips-2018> (demo)
+
 #### ["A Contextual Bandit Bake-off"](https://arxiv.org/abs/1802.04064) Bietti, Agarwal, Langford
   `approximate bayesian exploration`
 >	"We leverage the availability of large numbers of supervised learning datasets to compare and empirically optimize contextual bandit algorithms, focusing on practical methods that learn by relying on optimization oracles from supervised learning."  
@@ -2618,10 +2632,6 @@ interesting older papers:
   - `video` <https://vimeo.com/252185862> (Dhariwal)
   - `post` <https://blog.openai.com/better-exploration-with-parameter-noise/>
 
-#### ["Randomized Prior Functions for Deep Reinforcement Learning"](https://arxiv.org/abs/1806.03335) Osband, Aslanides, Cassirer
-  `approximate bayesian exploration` `approximate posterior sampling`
->	"A simple modification where each member of the ensemble is initialized together with a random but fixed prior function. Predictions are then taken as the sum of the trainable neural network and the prior function. We show that this approach passes a sanity check by demonstrating an equivalence to Bayesian inference with linear models. We also present a series of simple experiments designed to extend this intuition to deep learning. We show that many of the most popular approaches for uncertainty estimation in deep RL do not pass these sanity checks, and crystallize these shortcomings in a series of lemmas and small examples. We demonstrate that our simple modification can facilitate aspiration in difficult tasks where previous approaches for deep RL fail. We believe that this work presents a simple and practical approach to encoding prior knowledge with deep reinforcement learning."  
-
 #### ["Deep Exploration via Randomized Value Functions"](https://arxiv.org/abs/1703.07608) Osband, Russo, Wen, van Roy
   `approximate bayesian exploration` `approximate posterior sampling`
 >	"A very recent thread of work builds on count-based (or upper-confidence-bound-based) exploration schemes that operate with value function learning. These methods maintain a density over the state-action space of pseudo-counts, which represent the quantity of data gathered that is relevant to each state-action pair. Such algorithms may offer a viable approach to deep exploration with generalization. There are, however, some potential drawbacks. One is that a separate representation is required to generalize counts, and it's not clear how to design an effective approach to this. As opposed to the optimal value function, which is fixed by the environment, counts are generated by the agent’s choices, so there is no single target function to learn. Second, the count model generates reward bonuses that distort data used to fit the value function, so the value function representation needs to be designed to not only capture properties of the true optimal value function but also such distorted versions. Finally, these approaches treat uncertainties as uncoupled across state-action pairs, and this can incur a substantial negative impact on statistical efficiency."  
@@ -2651,6 +2661,12 @@ interesting older papers:
 >	"Many RL problems require directed exploration because they have reward functions that are sparse or deceptive (i.e. contain local optima), and it is not known how to encourage such exploration with evolution strategies (ES). We show that algorithms that have been invented to promote directed exploration in small-scale evolved neural networks via populations of exploring agents, specifically novelty search (NS) and quality diversity (QD) algorithms, can be hybridized with ES to improve its performance on sparse or deceptive deep RL tasks, while retaining scalability. Our experiments confirm that the resultant new algorithms, NS-ES and a version of QD we call NSR-ES, avoid local optima encountered by ES to achieve higher performance on tasks ranging from playing Atari to simulated robots learning to walk around a deceptive trap."  
 
 ----
+#### ["Count-Based Exploration with the Successor Representation"](https://arxiv.org/abs/1807.11622) Machado, Bellemare, Bowling
+  `exploration guided by observation novelty`
+>	"While the traditional successor representation is a representation that defines state generalization by the similarity of successor states, the substochastic successor representation is also able to implicitly count the number of times each state (or feature) has been observed. This extension connects two until now disjoint areas of research."  
+  - `video` <https://youtube.com/watch?v=bp3l8BNrefk> (Machado)
+  - `video` <https://youtu.be/Tge7LPT9vGA?t=9m36s> (Machado)
+
 #### ["Count-Based Exploration with Neural Density Models"](http://arxiv.org/abs/1703.01310) Ostrovski, Bellemare, Oord, Munos
   `exploration guided by observation novelty` `Reactor-PixelCNN`
 >	"PixelCNN for exploration, neural alternative to Context Tree Switching"  
@@ -2708,9 +2724,6 @@ hieves."
 >	RND obviates factors 2 and 3 since the target network can be chosen to be deterministic and inside the model-class of the predictor network."  
   - `post` <https://blog.openai.com/reinforcement-learning-with-prediction-based-rewards> (demo)
   - `code` <https://github.com/openai/random-network-distillation>
-
-#### ["Randomized Prior Functions for Deep Reinforcement Learning"](https://arxiv.org/abs/1806.03335) Osband, Aslanides, Cassirer
-  `exploration guided by prediction error`
 
 #### ["Large-Scale Study of Curiosity-Driven Learning"](https://arxiv.org/abs/1808.04355) Burda, Edwards, Pathak, Storkey, Darrell, Efros
   `exploration guided by prediction error`
@@ -2852,6 +2865,8 @@ hieves."
 #### ["Human-level Performance in First-person Multiplayer Games with Population-based Deep Reinforcement Learning"](https://arxiv.org/abs/1807.01281) Jaderberg et al.
   `FTW`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#human-level-performance-in-first-person-multiplayer-games-with-population-based-deep-reinforcement-learning-jaderberg-et-al>
+
+#### ["Data-Efficient Hierarchical Reinforcement Learning"](https://arxiv.org/abs/1805.08296) Nachum, Gu, Lee, Levine
 
 #### ["Self-Consistent Trajectory Autoencoder: Hierarchical Reinforcement Learning with Trajectory Embeddings"](https://arxiv.org/abs/1806.02813) Co-Reyes, Liu, Gupta, Eysenbach, Abbeel, Levine
   `SeCTAR`
@@ -3235,6 +3250,9 @@ hieves."
 >	"We introduce a new (weaker) definition of ε-Nash equilibrium in MGs which grasps the strategy’s quality for multiplayer games. We prove that minimizing the norm of two Bellman-like residuals implies to learn such an ε-Nash equilibrium. Then, we show that minimizing an empirical estimate of the Lp norm of these Bellman-like residuals allows learning for general-sum games within the batch setting. Finally, we introduce a neural network architecture that successfully learns a Nash equilibrium in generic multiplayer general-sum turn-based MGs."  
 
 ----
+#### ["Bayesian Action Decoder for Deep Multi-Agent Reinforcement Learning"](https://arxiv.org/abs/1811.01458) Foerster et al.
+
+----
 #### ["QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning"](https://arxiv.org/abs/1803.11485) Rashid, Samvelyan, Witt, Farquhar, Foerster, Whiteson
   `QMIX`
 >	"Learning joint action-values conditioned on extra state information is an attractive way to exploit centralised learning, where global state information is available and communication constraints are lifted, but the best strategy for then extracting decentralised policies is unclear. QMIX trains decentralised policies in a centralised end-to-end fashion. QMIX employs a network that estimates joint action-values as a complex non-linear combination of per-agent values that condition only on local observations. QMIX structurally enforces that the joint-action value is monotonic in the per-agent values, which allows tractable maximisation of the joint action-value in off-policy learning, and guarantees consistency between the centralised and decentralised policies."  
@@ -3267,10 +3285,10 @@ hieves."
   - `code` <https://github.com/openai/multiagent-competition>
 
 #### ["Learning with Opponent-Learning Awareness"](https://arxiv.org/abs/1709.04326) Foerster, Chen, Al-Shedivat, Whiteson, Abbeel, Mordatch
->	"Accounting for other agents also learning."  
+>	"LOLA modifies the learning objective by predicting and differentiating through opponent learning steps. This is intuitively appealing and experimentally successful, encouraging cooperation in settings like the Iterated Prisoner’s Dilemma where more ‘stable’ algorithms like SGA defect. However, LOLA has no guarantees of converging or even preserving fixed points of the game."  
   - `post` <https://blog.openai.com/learning-to-model-other-minds/> (demo)
   - `video` <https://facebook.com/icml.imls/videos/429607650887089?t=900> (Foerster)
-  - `post` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1709.04326>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1709.04326>
   - `code` <http://github.com/alshedivat/lola>
   - `code` <https://github.com/alexis-jacq/LOLA_DiCE>
 
@@ -3664,7 +3682,7 @@ hieves."
   `translation`
   - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#unsupervised-neural-machine-translation-artetxe-labaka-agirre-cho>
 
-#### ["Word Translation without Parallel Data"](https://arxiv.org/abs/1710.04087) Conneau, Lample, Ranzato, Denoyer, Jegou
+#### ["Word Translation Without Parallel Data"](https://arxiv.org/abs/1710.04087) Conneau, Lample, Ranzato, Denoyer, Jegou
   `translation`
   - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#word-translation-without-parallel-data-conneau-lample-ranzato-denoyer-jegou>
 

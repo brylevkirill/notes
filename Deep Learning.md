@@ -886,6 +886,7 @@
 ### architectures - attention
 
   [overview](https://youtu.be/9U0drwafE78?t=36m22s) by Oriol Vinyals `video`  
+  [overview](https://youtube.com/watch?v=Q57rzaHHO0k) by Alex Graves `video`  
   [overview](https://youtube.com/watch?v=_XRBlhzb31U) by Mikhail Figurnov `video` `in russian`  
 
   [overview](http://wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/) by Denny Britz  
@@ -2370,6 +2371,7 @@ x."
   - `video` <https://youtube.com/watch?v=rBCqOTEfxvg> (Kaiser)
   - `video` <https://youtube.com/watch?v=S0KakHcj_rs> (Palermo)
   - `video` <https://youtube.com/watch?v=iDulhoQ2pro> (Kilcher)
+  - `video` <https://youtube.com/watch?v=KMgJFptbNlM> (Lyalin) `in russian`
   - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) `in russian`
   - `video` <https://youtu.be/LhH6wMvntSM?t=54m56s> (Suleymanov) `in russian`
   - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani, Uszkoreit)
@@ -3007,6 +3009,7 @@ x."
 
   - `video` <http://videolectures.net/deeplearning2015_salakhutdinov_deep_learning_2/#t=739> (Salakhutdinov)
   - `video` <http://videolectures.net/icml2015_xu_visual_attention/> (Xu)
+  - `video` <https://www.youtube.com/watch?v=ENVGHs3yw7k> + <https://youtube.com/watch?v=u_Mdp_3RVRA> (Gharbieh)
   - `video` <https://youtu.be/_XRBlhzb31U?t=3m27s> (Figurnov) `in russian`
   - `code` <https://github.com/kelvinxu/arctic-captions>
 

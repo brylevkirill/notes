@@ -27,10 +27,6 @@
 ---
 ### overview
 
-  ["The Talking Machines"](http://thetalkingmachines.com/blog/) podcast `audio`
-
-  overview by Igor Kuralenok ([first](https://youtu.be/ynS7XvkAdLU?t=12m5s), [second](https://youtu.be/jiyD0r2SC-g?t=12m55s)) `video` `in russian`
-
 
 #### applications
 
@@ -763,8 +759,10 @@
 >	"Two critical algorithmic advances introduced in CatBoost are the implementation of ordered boosting, a permutation-driven alternative to the classic algorithm, and an innovative algorithm for processing categorical features. Both techniques were created to fight a prediction shift caused by a special kind of target leakage present in all currently existing implementations of gradient boosting algorithms."
 
   - <https://catboost.yandex>
+  - `video` <https://youtube.com/watch?v=jLU6kNRiZ5o>
   - `video` <https://youtube.com/watch?v=8o0e-r0B5xQ> (Dorogush)
   - `video` <https://youtube.com/watch?v=db-iLhQvcH8> (Prokhorenkova)
+  - `video` <https://youtube.com/watch?v=ZAGXnXmDCT8> (Ershov)
   - `video` <https://youtube.com/watch?v=UYDwhuyWYSo> (Dorogush) `in russian`
   - `video` <https://youtube.com/watch?v=9ZrfErvm97M> (Dorogush) `in russian`
   - `video` <https://youtube.com/watch?v=Q_xa4RvnDcY> (Dorogush) `in russian`

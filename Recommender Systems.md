@@ -34,8 +34,10 @@
 
 ----
 
+  course by Sergey Nikolenko ([part 1](https://youtube.com/watch?v=mr8u54jsveA), [part 2](https://youtube.com/watch?v=cD47Ssp_Flk), [part 3](https://youtube.com/watch?v=OFyb8ukrRDo)) `video` `in russian`  
+  [course](https://lektorium.tv/node/33563) by Evgeny Sokolov and Andrey Zimovnov `video` `in russian`  
+
   [overview](https://youtube.com/watch?v=Us4KJkJiYrM) by Michael Rozner `video` `in russian`  
-  overview by Sergey Nikolenko ([part 1](https://youtube.com/watch?v=mr8u54jsveA), [part 2](https://youtube.com/watch?v=cD47Ssp_Flk), [part 3](https://youtube.com/watch?v=OFyb8ukrRDo)) `video` `in russian`  
   [overview](https://youtube.com/watch?v=kfhqzkcfMqI) by Konstantin Vorontsov `video` `in russian`  
   [overview](https://youtube.com/watch?v=Te_6TqEhyTI) by Victor Kantor `video` `in russian`  
   [overview](https://youtube.com/watch?v=5ir_fCgzfLM) by Vladimir Gulin `video` `in russian`  
@@ -43,8 +45,9 @@
 
   [overview](https://youtube.com/watch?v=N0NUwz3xWX4) of deep learning for recommender systems by Dmitry Ushanov `video` `in russian`
 
-  [overview](https://youtube.com/watch?v=iGAMPnv-0VY) of Yandex.Zen by Igor Lifar and Dmitry Ushanov `video` `in russian`  
-  [overview](https://youtube.com/watch?v=JKTneRi2vn8) of Yandex.Disco by Michael Rozner `video` `in russian`  
+  [overview](https://youtube.com/watch?v=iGAMPnv-0VY) of applications in Yandex by Igor Lifar and Dmitry Ushanov `video` `in russian`  
+  [overview](https://youtube.com/watch?v=OJ0nJb3LfNo) of applications in Yandex by Andrey Zimovnov `video` `in russian`  
+  [overview](https://youtube.com/watch?v=JKTneRi2vn8) of applications in Yandex by Michael Rozner `video` `in russian`  
 
 ----
 
@@ -198,6 +201,9 @@
 
 ---
 ### interesting papers - deep learning
+
+
+#### ["Deep Learning based Recommender System: A Survey and New Perspectives"](https://arxiv.org/abs/1707.07435) Zhang, Yao, Sun, Tay
 
 
 #### ["Wide & Deep Learning"](https://arxiv.org/abs/1606.07792) Cheng et al.
