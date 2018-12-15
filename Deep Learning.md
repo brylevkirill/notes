@@ -337,11 +337,12 @@
 ---
 ### unsupervised learning
 
-  ["Unsupervised learning, one notion or many?"](http://www.offconvex.org/2017/06/27/unsupervised1/) by Sanjeev Arora and Andrej Risteski
+  [tutorial](https://facebook.com/nipsfoundation/videos/795861577420073) by Alex Graves and Marc Aurelio Ranzato `video`  
+  ["Goals and Principles of Representation Learning"](https://youtube.com/watch?v=2vxZbZC21Gg) by Ferenc Huszar `video`  
 
 ----
 
-  ["Goals and Principles of Representation Learning"](https://youtube.com/watch?v=2vxZbZC21Gg) by Ferenc Huszar `video`
+  ["Unsupervised learning, one notion or many?"](http://www.offconvex.org/2017/06/27/unsupervised1/) by Sanjeev Arora and Andrej Risteski
 
   ["Representation Learning and the Information Bottleneck Approach"](http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/) by Ference Huszar  
   ["Is Maximum Likelihood Useful for Representation Learning?"](http://inference.vc/maximum-likelihood-for-representation-learning-2/) by Ference Huszar  

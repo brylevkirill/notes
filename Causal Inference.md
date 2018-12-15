@@ -39,6 +39,9 @@
 
 ----
 
+  ["The New Science of Cause and Effect"](https://youtube.com/watch?v=ZaPV1OSEpHw) by Judea Pearl `video`  
+  ["The Mathematics of Causal Inference, with Reflections on Machine Learning and the Logic of Science"](https://youtube.com/watch?v=zHjdd--W6o4) by Judea Pearl `video`  
+
   [tutorial](https://youtube.com/watch?v=zvrcyqcN9Wo) by Jonas Peters `video`  
   [tutorial](https://youtube.com/watch?v=_wFagI5Fn9I) by Jonas Peters `video`  
   [tutorial](https://youtube.com/watch?v=KsbftkwZTq4) by Bernhard Scholkopf and Dominik Janzing `video`  
@@ -57,8 +60,6 @@
   ["Causal Learning"](https://vimeo.com/238274659#t=13m22s) by Bernhard Scholkopf `video`  
   ["Toward Causal Machine Learning"](https://youtube.com/watch?v=ooeRlw3U2zU) by Bernhard Scholkopf `video`  
   ["Statistical and Causal Approaches to Machine Learning"](https://youtu.be/ek9jwRA2Jio?t=26m) by Bernhard Scholkopf `video`  
-
-  ["The Mathematics of Causal Inference, with Reflections on Machine Learning and the Logic of Science"](https://youtube.com/watch?v=zHjdd--W6o4) by Judea Pearl `video`
 
 
 

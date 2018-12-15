@@ -628,6 +628,7 @@
   - `post` <https://vicarious.com/2017/10/26/common-sense-cortex-and-captcha/>
   - `video` <https://slideslive.com/38909792/building-machines-that-work-like-the-brain> (George)
   - `video` <https://youtube.com/watch?v=y459Yip5vRQ> (George)
+  - `video` <https://youtube.com/watch?v=lmeZIHkep7c> (George)
   - `code` <https://github.com/vicariousinc/science_rcn>
 
 

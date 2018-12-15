@@ -45,6 +45,16 @@ interesting older papers:
 [**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---theory)
 
 ----
+#### ["Deep Learning: Some Criticism for Discussion"](http://tina-vision.net/docs/memos/2018-002.pdf) Thacker
+>	"This document has been motivated by the suggestion that there might be opportunities for research in the area of “deep learning”. I intend to approach the task of constructing a research strategy in three steps. First identify key issues which require attention, then identify existing solutions and finally to target applications for funding at things which have not been addressed.  
+>	This document only begins the first of these stages and is intended as the basis for a discussion. It concentrates on trying to answer the following questions:  
+>	What do people mean when they refer to “Deep Learning”, in particular how is it different to a conventional Artificial Neural Network?  
+>	What is optimised when we train a neural network to minimise cross-entropy?  
+>	What are the consequences for model selection?  
+>	What are the consequences for ANN methods when interpreted as “state-of-the-art”?  
+>	What are the consequences for scientific use?"  
+
+----
 #### ["Mathematics of Deep Learning"](https://arxiv.org/abs/1712.04741) Vidal, Bruna, Giryes, Soatto
 >	"This tutorial will review recent work that aims to provide a mathematical justification for several properties of deep networks, such as global optimality, geometric stability, and invariance of the learned representations."  
 
@@ -787,31 +797,6 @@ interesting older papers:
 ### meta-learning
 
 ----
-#### ["Evolved Policy Gradients"](https://arxiv.org/abs/1802.04821) Houthooft, Chen, Isola, Stadie, Wolski, Ho, Abbeel
-  `learning loss function`
->	"Method evolves a differentiable loss function, such that an agent, which optimizes its policy to minimize this loss, will achieve high rewards. The loss is parametrized via temporal convolutions over the agent’s experience. Because this loss is highly flexible in its ability to take into account the agent’s history, it enables fast task learning and eliminates the need for reward shaping at test time. At test time, the learner optimizes only its learned loss function, and requires no explicit reward signal."  
->	"Method is capable of learning a loss function over thousands of sequential environmental actions. Crucially, this learned loss is both highly adaptive (allowing for quicker learning of new tasks) and highly instructive (sometimes eliminating the need for environmental rewards at test time)."  
->	"Our loss’ instructive nature – which allows it to operate at test time without environmental rewards – is interesting and desirable. This instructive nature can be understood as the loss function’s internalization of the reward structures it has previously encountered under the training task distribution. We see this internalization as a step toward learning intrinsic motivation. A good intrinsically motivated agent would successfully infer useful actions in new situations by using heuristics it developed over its entire lifetime. This ability is likely required to achieve truly intelligent agents."  
->	"In addition to internalizing environment rewards, learned loss could, in principle, have several other positive effects. For example, by examining the agent’s history, the loss could incentivize desirable extended behaviors, such as exploration. Further, the loss could perform a form of system identification, inferring environment parameters and adapting how it guides the agent as a function of these parameters (e.g., by adjusting the effective learning rate of the agent)."  
-  - `post` <https://blog.openai.com/evolved-policy-gradients>
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1802.04821>
-  - `code` <https://github.com/openai/EPG>
-
-#### ["On Learning Intrinsic Rewards for Policy Gradient Methods"](https://arxiv.org/abs/1804.06459) Zheng, Oh, Singh
-  `learning reward function`
->	"Optimal Rewards Framework defines the optimal intrinsic reward function as one that when used by an agent achieves behavior that optimizes the task-specifying or extrinsic reward function. Previous work in this framework has shown how good intrinsic reward functions can be learned for lookahead search based planning agents. Whether it is possible to learn intrinsic reward functions for learning agents remains an open problem. In this paper we derive a novel algorithm for learning intrinsic rewards for policy-gradient based learning agents."  
-  - `video` <https://youtu.be/_4oL3DDCwCw?t=38m> (Singh)
-
-#### ["Deep Learning for Reward Design to Improve Monte Carlo Tree Search in ATARI Games"](https://arxiv.org/abs/1604.07095) Guo, Singh, Lewis, Lee
-  `learning reward function`
->	"Monte Carlo Tree Search methods have proven powerful in planning for sequential decision-making problems such as Go and video games, but their performance can be poor when the planning depth and sampling trajectories are limited or when the rewards are sparse. We present an adaptation of PGRD (policy-gradient for reward design) for learning a reward-bonus function to improve UCT (a MCTS algorithm). Unlike previous applications of PGRD in which the space of reward-bonus functions was limited to linear functions of hand-coded state-action-features, we use PGRD with a multi-layer convolutional neural network to automatically learn features from raw perception as well as to adapt the non-linear reward-bonus function parameters. We also adopt a variance-reducing gradient method to improve PGRD’s performance. The new method improves UCT’s performance on multiple ATARI games compared to UCT without the reward bonus. Combining PGRD and Deep Learning in this way should make adapting rewards for MCTS algorithms far more widely and practically applicable than before."  
-  - `video` <https://youtu.be/_4oL3DDCwCw?t=11m47s> (Singh)
-  - `video` <https://vimeo.com/250399421> (Singh)
-  - `video` <http://videolectures.net/deeplearning2017_singh_reinforcement_learning/#t=1177> (Singh)
-  - `video` <https://youtube.com/watch?v=MhIP1SOqlS8> (Singh)
-  - `paper` ["Where Do Rewards Come From?"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.151.8250) by Singh, Lewis, Barto
-
-----
 #### ["On First-Order Meta-Learning Algorithms"](https://arxiv.org/abs/1803.02999) Nichol, Achiam, Schulman
   `Reptile` `learning initialization algorithm`
 >	"We analyze a family of algorithms for learning a parameter initialization that can be fine-tuned quickly on a new task, using only first-order derivatives for the meta-learning updates. This family includes and generalizes first-order MAML, an approximation to MAML obtained by ignoring second-order derivatives. It also includes Reptile which works by repeatedly sampling a task, training on it, and moving the initialization towards the trained weights on that task."  
@@ -1051,6 +1036,15 @@ interesting older papers:
   - `post` <http://giorgiopatrini.org/posts/2017/09/06/in-search-of-the-missing-signals/>
 
 ----
+#### ["Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations"](https://arxiv.org/abs/1811.12359) Locatello, Bauer, Lucic, Gelly, Scholkopf, Bachem
+  `concept learning`
+>	"The key assumption is that real-world data is generated by a few explanatory factors of variation and that these factors can be recovered by unsupervised learning algorithms. A large number of unsupervised learning approaches based on auto-encoding and quantitative evaluation metrics of disentanglement have been proposed; yet, the efficacy of the proposed approaches and utility of proposed notions of disentanglement has not been challenged in prior work. In this paper, we provide a sober look on recent progress in the field and challenge some common assumptions."  
+>	"We first theoretically show that the unsupervised learning of disentangled representations is fundamentally impossible without inductive biases on both the models and the data. Then, we train more than 12 000 models covering the six most prominent methods, and evaluate them across six disentanglement metrics in a reproducible large-scale experimental study on seven different data sets. On the positive side, we observe that different methods successfully enforce properties “encouraged” by the corresponding losses. On the negative side, we observe that in our study (1) “good” hyperparameters seemingly cannot be identified without access to ground-truth labels, (2) good hyperparameters neither transfer across data sets nor across disentanglement metrics, and (3) that increased disentanglement does not seem to lead to a decreased sample complexity of learning for downstream tasks."  
+>	"We theoretically prove that (perhaps unsurprisingly) the unsupervised learning of disentangled representations is fundamentally impossible without inductive biases both on the considered learning approaches and the data sets."  
+>	"We investigate current approaches and their inductive biases in a reproducible large-scale experimental study with a sound experimental protocol for unsupervised disentanglement learning. We implement from scratch six recent unsupervised disentanglement learning methods as well as six disentanglement measures and train more than 12 000 models on seven data sets."  
+>	"We evaluate our experimental results and challenge many common assumptions in unsupervised disentanglement learning: (i) While all considered methods prove effective at ensuring that the individual dimensions of the aggregated posterior (which is sampled) are not correlated, only one method also consistently ensures that the individual dimensions of the representation (which is taken to be the mean) are not correlated. (ii) We do not find any evidence that they can be used to reliably learn disentangled representations in an unsupervised manner as hyper parameters seem to matter more than the model and “good” hyperparameters seemingly cannot be identified without access to ground-truth labels. Similarly, we observe that good hyperparameters neither transfer across data sets nor across disentanglement metrics. (iii) For the considered models and data sets, we cannot validate the assumption that disentanglement is useful for downstream tasks, for example through a decreased sample complexity of learning."  
+>	"Based on these empirical evidence, we suggest three critical areas of further research: (i) The role of inductive biases and implicit and explicit supervision should be made explicit: unsupervised model selection persists as a key question. (ii) The concrete practical benefits of enforcing a specific notion of disentanglement of the learned representations should be demonstrated. (iii) Experiments should be conducted in a reproducible experimental setup on data sets of varying degrees of difficulty."  
+
 #### ["Neural Scene Representation and Rendering"](https://deepmind.com/documents/211/Neural_Scene_Representation_and_Rendering_preprint.pdf) Eslami et al.
   `concept learning` `GQN`
 >	"Generative Query Network, a framework within which machines learn to represent scenes using only their own sensors. The GQN takes as input images of a scene taken from different viewpoints, constructs an internal representation, and uses this representation to predict the appearance of that scene from previously unobserved viewpoints. The GQN demonstrates representation learning without human labels or domain knowledge, paving the way toward machines that autonomously learn to understand the world around them."  
@@ -1125,7 +1119,8 @@ interesting older papers:
 >	"Unsupervised learning is not only about predicting inputs - SPIRAL learns the rewards through which learning happens and learns the policy to generate a program that generates inputs."  
   - `post` <https://deepmind.com/blog/learning-to-generate-images>
   - `video` <https://youtu.be/iSyvwAwa7vk> (demo)
-  - `video` <https://facebook.com/iclr.cc/videos/2125495797479475?t=2069> (Kavukcuoglu)
+  - `video` <https://youtube.com/watch?v=kkihoMMpBb0> (Vinyals)
+  - `video` <https://facebook.com/iclr.cc/videos/2125495797479475?t=2069> (Kavukcuogl)
 
 #### ["Generative Temporal Models with Memory"](http://arxiv.org/abs/1702.04649) Gemici, Hung, Santoro, Wayne, Mohamed, Rezende, Amos, Lillicrap
   `learning disentangled representation`
@@ -1186,6 +1181,7 @@ interesting older papers:
 >	"We show that deep generative models can assign higher likelihood to out-of-distribution inputs than the training data."  
 >	"A neural network deployed in the wild may be asked to make predictions for inputs that were drawn from a different distribution than that of the training data. A plethora of work has demonstrated that it is easy to find or synthesize inputs for which a neural network is highly confident yet wrong. Generative models are widely viewed to be robust to such mistaken confidence as modeling the density of the input features can be used to detect novel, out-of-distribution inputs. In this paper we challenge this assumption. We find that the model density from flow-based models, VAEs and PixelCNN cannot distinguish images of common objects such as dogs, trucks, and horses (i.e. CIFAR-10) from those of house numbers (i.e. SVHN), assigning a higher likelihood to the latter when the model is trained on the former. We focus our analysis on flow-based generative models in particular since they are trained and evaluated via the exact marginal likelihood. We find such behavior persists even when we restrict the flow models to constant-volume transformations. These transformations admit some theoretical analysis, and we show that the difference in likelihoods can be explained by the location and variances of the data and the model curvature, which shows that such behavior is more general and not just restricted to the pairs of datasets used in our experiments. Our results caution against using the density estimates from deep generative models to identify inputs similar to the training distribution, until their behavior on out-of-distribution inputs is better understood."  
 >	"We have shown that comparing likelihoods alone cannot identify the training set or inputs like it. Moreover, our analysis shows that the SVHN vs CIFAR-10 problem we report would persist for any constant-volume flow no matter the parameter settings nor the choice of latent density (as long as it is log-concave). The models seem to capture low-level statistics rather than high-level semantics. While we cannot conclude that this is necessarily a pathology in deep generative models, it does suggest they need to be further improved. It could be a problem that plagues any generative model, no matter how high its capacity."  
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1810.09136>
 
 #### ["Generative Ensembles for Robust Anomaly Detection"](https://arxiv.org/abs/1810.01392) Choi, Jang
   `evaluation` `out-of-distribution`
@@ -1460,6 +1456,7 @@ interesting older papers:
 >	"In standard generative adversarial network, the discriminator estimates the probability that the input data is real. The generator is trained to increase the probability that fake data is real. We argue that it should also simultaneously decrease the probability that real data is real because 1) this would account for a priori knowledge that half of the data in the mini-batch is fake, 2) this would be observed with divergence minimization, and 3) in optimal settings, SGAN would be equivalent to integral probability metric (IPM) GANs."  
 >	"We show that this property can be induced by using a relativistic discriminator which estimate the probability that the given real data is more realistic than a randomly sampled fake data. We also present a variant in which the discriminator estimate the probability that the given real data is more realistic than fake data, on average. We generalize both approaches to non-standard GAN loss functions and we refer to them respectively as Relativistic GANs (RGANs) and Relativistic average GANs (RaGANs). We show that IPM-based GANs are a subset of RGANs which use the identity function."  
 >	"Empirically, we observe that 1) RGANs and RaGANs are significantly more stable and generate higher quality data samples than their non-relativistic counterparts, 2) Standard RaGAN with gradient penalty generate data of better quality than WGAN-GP while only requiring a single discriminator update per generator update (reducing the time taken for reaching the state-of-the-art by 400%), and 3) RaGANs are able to generate plausible high resolutions images (256x256) from a very small sample (N=2011), while GAN and LSGAN cannot; these images are of significantly better quality than the ones generated by WGAN-GP and SGAN with spectral normalization."  
+>	"Instead of D(x) = activation (C(x)), use 1) D(x_real,x_fake) = activation (C(x_real)-C(x_fake)) or 2) D(x_real, x_fake) = activation (C(x_real)-E[C(x_fake)]) + activation (E[C(x_real)]-C(x_fake))."  
   - `post` <https://ajolicoeur.wordpress.com/relativisticgan>
   - `video` <https://youtu.be/m9USSDtUy40?t=28m38s> (Chavdarova)
   - `code` <https://github.com/AlexiaJM/RelativisticGAN>
@@ -2078,14 +2075,18 @@ interesting older papers:
 >	"SAC learns the soft Q-function of policy and the policy jointly. SAC is similar to DDPG but with a stochastic policy."  
 >	"DDPG uses a Q-function estimator to enable off-policy learning, and a deterministic actor that maximizes this Q-function. As such, this method can be viewed both as a deterministic actor-critic algorithm and an approximate Q-learning algorithm. Unfortunately, the interplay between the deterministic actor network and the Q-function typically makes DDPG extremely difficult to stabilize and brittle to hyperparameter settings. As a consequence, it is difficult to extend DDPG to very complex, high-dimensional tasks, and on-policy policy gradient methods still tend to produce the best results in such settings. Our method instead combines off-policy actor-critic training with a stochastic actor, and further aims to maximize the entropy of this actor with an entropy maximization objective. We find that this actually results in a substantially more stable and scalable algorithm that, in practice, exceeds both the efficiency and final performance of DDPG."  
 >	"Many actor-critic algorithms build on the standard, on-policy policy gradient formulation to update the actor, and many of them also consider the entropy of the policy, but instead of maximizing the entropy, they use it as an regularizer. This tends to improve stability, but results in very poor sample complexity. Maximum entropy reinforcement learning optimizes policies to maximize both the expected return and the expected entropy of the policy."  
+  - `post` <http://bair.berkeley.edu/blog/2018/12/14/sac>
   - `video` <https://vimeo.com/252185258>
   - `video` <https://facebook.com/icml.imls/videos/430993334081854?t=6485> (Haarnoja)
   - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h51m28s> (Sigaud)
   - `video` <https://youtube.com/watch?v=NiTJOw1aST4> (Grinchuk) `in russian`
+  - `post` <https://spinningup.openai.com/en/latest/algorithms/sac.html>
   - `notes` <https://github.com/Scitator/papers/blob/master/papers/1801_soft_ac.md>
+  - `code` <https://github.com/rail-berkeley/softlearning>
+  - `code` <https://github.com/vitchyr/rlkit>
   - `code` <https://github.com/haarnoja/sac>
   - `code` <https://github.com/higgsfield/RL-Adventure-2>
-  - `code` <https://github.com/navneet-nmk/pytorch-rl/blob/master/models/SAC.py>
+  - `paper` ["Soft Actor-Critic Algorithms and Applications"](https://drive.google.com/file/d/1J8gZXJN0RqH-TkTh4UEikYSy8AqPTy9x) by Haarnoja et al.
 
 #### ["A Unified View of Entropy-Regularized Markov Decision Processes"](https://arxiv.org/abs/1705.07798) Neu, Gomez, Jonsson
   `soft Q-learning` `policy gradient` `maximum entropy policy`
@@ -2368,6 +2369,8 @@ interesting older papers:
   `learning from planning` `using available environment model` `expert iteration`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#mastering-the-game-of-go-without-human-knowledge-silver-et-al>
 
+#### ["Deep Counterfactual Regret Minimization"](https://arxiv.org/abs/1811.00164) Brown, Lerer, Gross, Sandholm
+
 #### ["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](http://arxiv.org/abs/1701.01724) Moravcik et al.
   `learning from planning` `using available environment model`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#deepstack-expert-level-artificial-intelligence-in-no-limit-poker-moravcik-et-al>
@@ -2422,6 +2425,13 @@ interesting older papers:
   - `code` <http://github.com/etalvitie/hdaggermc>
 
 ----
+#### ["Temporal Difference Models: Model-Free Deep RL for Model-Based Control"](https://arxiv.org/abs/1802.09081) Pong, Gu, Dalal, Levine
+  `learning to plan` `learning abstract environment model` `TDM`
+>	"A family of goal-conditioned value functions that can be trained with model-free learning and used for model-based control. TDMs combine the benefits of model-free and model-based RL: they leverage the rich information in state transitions to learn very efficiently, while still attaining asymptotic performance that exceeds that of direct model-based RL methods."  
+  - `post` <https://bair.berkeley.edu/blog/2018/04/26/tdm>
+  - `video` <https://youtube.com/watch?v=j-3nUkzMFA8> (Gu)
+  - `code` <https://github.com/vitchyr/rlkit>
+
 #### ["Self-supervised Deep Reinforcement Learning with Generalized Computation Graphs for Robot Navigation"](https://arxiv.org/abs/1709.10489) Kahn, Villaflor, Ding, Abbeel, Levine
   `learning to plan` `learning abstract environment model`
 >	"generalized computation graph that subsumes value-based model-free methods and model-based methods, with specific instantiations interpolating between model-free and model-based"  
@@ -2442,7 +2452,7 @@ interesting older papers:
   - `paper` ["Interaction Networks for Learning about Objects, Relations and Physics"](http://arxiv.org/abs/1612.00222) by Battaglia et al.
 
 #### ["Value Prediction Network"](https://arxiv.org/abs/1707.03497) Oh, Singh, Lee
-  `learning to plan` `learning abstract environment model`
+  `learning to plan` `learning abstract environment model` `VPN`
 >	"VPN combines model-based RL (i.e., learning the dynamics of an abstract state space sufficient for computing future rewards and values) and model-free RL (i.e., mapping the learned abstract states to rewards and values) in a unified framework. In order to train a VPN, we propose a combination of temporal-difference search (TD search) and n-step Q-learning. In brief, VPNs learn to predict values via Q-learning and rewards via supervised learning. At the same time, VPNs perform lookahead planning to choose actions and compute bootstrapped target Q-values."  
 >	"Extends the Predictron model from policy evaluation to optimal control."  
 >	"Uses the model to construct a look-ahead tree only when constructing bootstrap targets and selecting actions, similarly to TD-search. Crucially, the model is not embedded in a planning algorithm during optimisation."  
@@ -2575,6 +2585,34 @@ interesting older papers:
   - `video` <https://vimeo.com/235929810> (Schapire)
 
 ----
+#### ["Unsupervised Control through Non-Parametric Discriminative Rewards"](https://arxiv.org/abs/1811.11359) Warde-Farley, Wiele, Kulkarni, Ionescu, Hansen, Mnih
+  `learning reward function`
+>	"Learning to control an environment without hand-crafted rewards or expert data remains challenging and is at the frontier of reinforcement learning research. We present an unsupervised learning algorithm to train agents to achieve perceptually specified goals using only a stream of observations and actions. Our agent simultaneously learns a goal-conditioned policy and a goal achievement reward function that measures how similar a state is to the goal state. This dual optimization leads to a co-operative game, giving rise to a learned reward function that reflects similarity in controllable aspects of the environment instead of distance in the space of observations. We demonstrate the efficacy of our agent to learn, in an unsupervised manner, to reach a diverse set of goals on three domains – Atari, the DeepMind Control Suite and DeepMind Lab."  
+
+#### ["On Learning Intrinsic Rewards for Policy Gradient Methods"](https://arxiv.org/abs/1804.06459) Zheng, Oh, Singh
+  `learning reward function`
+>	"Optimal Rewards Framework defines the optimal intrinsic reward function as one that when used by an agent achieves behavior that optimizes the task-specifying or extrinsic reward function. Previous work in this framework has shown how good intrinsic reward functions can be learned for lookahead search based planning agents. Whether it is possible to learn intrinsic reward functions for learning agents remains an open problem. In this paper we derive a novel algorithm for learning intrinsic rewards for policy-gradient based learning agents."  
+  - `video` <https://youtu.be/_4oL3DDCwCw?t=38m> (Singh)
+
+#### ["Deep Learning for Reward Design to Improve Monte Carlo Tree Search in ATARI Games"](https://arxiv.org/abs/1604.07095) Guo, Singh, Lewis, Lee
+  `learning reward function`
+>	"Monte Carlo Tree Search methods have proven powerful in planning for sequential decision-making problems such as Go and video games, but their performance can be poor when the planning depth and sampling trajectories are limited or when the rewards are sparse. We present an adaptation of PGRD (policy-gradient for reward design) for learning a reward-bonus function to improve UCT (a MCTS algorithm). Unlike previous applications of PGRD in which the space of reward-bonus functions was limited to linear functions of hand-coded state-action-features, we use PGRD with a multi-layer convolutional neural network to automatically learn features from raw perception as well as to adapt the non-linear reward-bonus function parameters. We also adopt a variance-reducing gradient method to improve PGRD’s performance. The new method improves UCT’s performance on multiple ATARI games compared to UCT without the reward bonus. Combining PGRD and Deep Learning in this way should make adapting rewards for MCTS algorithms far more widely and practically applicable than before."  
+  - `video` <https://youtu.be/_4oL3DDCwCw?t=11m47s> (Singh)
+  - `video` <https://vimeo.com/250399421> (Singh)
+  - `video` <http://videolectures.net/deeplearning2017_singh_reinforcement_learning/#t=1177> (Singh)
+  - `video` <https://youtube.com/watch?v=MhIP1SOqlS8> (Singh)
+  - `paper` ["Where Do Rewards Come From?"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.151.8250) by Singh, Lewis, Barto
+
+#### ["Evolved Policy Gradients"](https://arxiv.org/abs/1802.04821) Houthooft, Chen, Isola, Stadie, Wolski, Ho, Abbeel
+  `learning loss function`
+>	"Method evolves a differentiable loss function, such that an agent, which optimizes its policy to minimize this loss, will achieve high rewards. The loss is parametrized via temporal convolutions over the agent’s experience. Because this loss is highly flexible in its ability to take into account the agent’s history, it enables fast task learning and eliminates the need for reward shaping at test time. At test time, the learner optimizes only its learned loss function, and requires no explicit reward signal."  
+>	"Method is capable of learning a loss function over thousands of sequential environmental actions. Crucially, this learned loss is both highly adaptive (allowing for quicker learning of new tasks) and highly instructive (sometimes eliminating the need for environmental rewards at test time)."  
+>	"Our loss’ instructive nature – which allows it to operate at test time without environmental rewards – is interesting and desirable. This instructive nature can be understood as the loss function’s internalization of the reward structures it has previously encountered under the training task distribution. We see this internalization as a step toward learning intrinsic motivation. A good intrinsically motivated agent would successfully infer useful actions in new situations by using heuristics it developed over its entire lifetime. This ability is likely required to achieve truly intelligent agents."  
+>	"In addition to internalizing environment rewards, learned loss could, in principle, have several other positive effects. For example, by examining the agent’s history, the loss could incentivize desirable extended behaviors, such as exploration. Further, the loss could perform a form of system identification, inferring environment parameters and adapting how it guides the agent as a function of these parameters (e.g., by adjusting the effective learning rate of the agent)."  
+  - `post` <https://blog.openai.com/evolved-policy-gradients>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1802.04821>
+  - `code` <https://github.com/openai/EPG>
+
 #### ["Meta-Reinforcement Learning of Structured Exploration Strategies"](https://arxiv.org/abs/1802.07245) Gupta, Mendonca, Liu, Abbeel, Levine
   `learning to explore` `meta-learning` `MAESN`
 >	"Many of the current exploration methods for deep RL use task-agnostic objectives, such as information gain or bonuses based on state visitation. However, many practical applications of RL involve learning more than a single task, and prior tasks can be used to inform how exploration should be performed in new tasks. In this work, we explore how prior tasks can inform an agent about how to explore effectively in new situations. We introduce a novel gradient-based fast adaptation algorithm -- model agnostic exploration with structured noise -- to learn exploration strategies from prior experience. The prior experience is used both to initialize a policy and to acquire a latent exploration space that can inject structured stochasticity into a policy, producing exploration strategies that are informed by prior knowledge and are more effective than random action-space noise."  
@@ -2584,10 +2622,6 @@ interesting older papers:
   `learning to explore` `meta-learning`
 >	"It is likely that future work in this area will focus on meta-learning a curiosity signal which is robust and transfers across tasks. Perhaps this will enable meta agents which learn to explore rather than being forced to explore by mathematical trickery in their objectives."  
   - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#some-considerations-on-learning-to-explore-via-meta-reinforcement-learning-stadie-yang-houthooft-chen-duan-wu-abbeel-sutskever>
-
-#### ["Evolved Policy Gradients"](https://arxiv.org/abs/1802.04821) Houthooft, Chen, Isola, Stadie, Wolski, Ho, Abbeel
-  `learning intrinsic motivation` `meta-learning`
-  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#evolved-policy-gradients-houthooft-chen-isola-stadie-wolski-ho-abbeel>
 
 ----
 #### ["Randomized Prior Functions for Deep Reinforcement Learning"](https://arxiv.org/abs/1806.03335) Osband, Aslanides, Cassirer
@@ -2817,6 +2851,7 @@ hieves."
   - `notes` <https://yobibyte.github.io/files/paper_notes/her.pdf>
   - `post` <https://jangirrishabh.github.io/2018/03/25/Overcoming-exploration-demos.html>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/her>
+  - `code` <https://github.com/vitchyr/rlkit>
   - `code` <https://github.com/higgsfield/RL-Adventure-2>
   - `paper` ["Universal Value Function Approximators"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#schaul-horgan-gregor-silver---universal-value-function-approximators) by Schaul et al. `summary`
 
@@ -3336,8 +3371,9 @@ hieves."
 >	"We demonstrate it is possible for systems to combine intuitive perceptual with conceptual interpretable reasoning. The system we describe, ∂ILP, is robust to noise, data-efficient, and produces interpretable rules."  
 >	"∂ILP differs from standard neural nets because it is able to generalise symbolically, and it differs from standard symbolic programs because it is able to generalise visually. It learns explicit programs from examples that are readable, interpretable, and verifiable. ∂ILP is given a partial set of examples (the desired results) and produces a program that satisfies them. It searches through the space of programs using gradient descent. If the outputs of the program conflict with the desired outputs from the reference data, the system revises the program to better match the data."  
   - `post` <https://deepmind.com/blog/learning-explanatory-rules-noisy-data/>
-  - `post` <https://reddit.com/r/MachineLearning/comments/7tthm3/r_learning_explanatory_rules_from_noisy_data/dtgu2uw/>
+  - `video` <https://youtube.com/watch?v=AcpbZF4gy7Y> (Evans)
   - `video` <https://youtube.com/watch?v=_wuFBF_Cgm0> (Evans)
+  - `post` <https://reddit.com/r/MachineLearning/comments/7tthm3/r_learning_explanatory_rules_from_noisy_data/dtgu2uw/>
 
 #### ["Learning to Select Examples for Program Synthesis"](https://arxiv.org/abs/1711.03243) Pu, Miranda, Solar-Lezama, Kaelbling
 >	"Due to its precise and combinatorial nature, program synthesis is commonly formulated as a constraint satisfaction problem, where input-output examples are encoded as constraints and solved with a constraint solver. A key challenge of this formulation is scalability: while constraint solvers work well with few well-chosen examples, a large set of examples can incur significant overhead in both time and memory. We address this challenge by constructing a representative subset of examples that is both small and able to constrain the solver sufficiently. We build the subset one example at a time, using a neural network to predict the probability of unchosen input-output examples conditioned on the chosen input-output examples, and adding the least probable example to the subset."  

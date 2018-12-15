@@ -399,10 +399,9 @@
   ["Deep Learning Trends: Program Induction"](https://facebook.com/nipsfoundation/videos/1552060484885185?t=5412) by Scott Reed `video`  
   ["Learning to Code: Machine Learning for Program Induction"](https://youtu.be/vzDuVhFMB9Q?t=2m40s) by Alex Gaunt `video`  
 
-  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi) workshop at NIPS 2016
-	([videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt))  
-  [panel](https://youtu.be/nqiUFc52g78?t=1h29m3s) at NAMPI 2016
-	with Percy Liang, Juergen Schmidhuber, Joshua Tenenbaum, Martin Vechev, Daniel Tarlow, Dawn Song `video`  
+  ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi) workshop
+	(NIPS 2016 [videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt),
+	ICML 2018 [videos](https://youtube.com/playlist?list=PLC79LIGCBo81_H_wIBBIOu2GfF3OIixdN))  
 
 ----
 
@@ -484,10 +483,9 @@
 
   ["Automated Machine Learning: A Short History"](https://datarobot.com/blog/automated-machine-learning-short-history/) by Thomas Dinsmore
 
+  [tutorial](https://facebook.com/nipsfoundation/videos/199543964204829) by Frank Hutter and Joaquin Vanschoren `video`  
   ["Automated Machine Learning"](https://youtube.com/watch?v=AFeozhAD9xE) by Andreas Mueller `video`  
   ["AutoML and How To Speed It Up"](https://vimeo.com/250399200) by Frank Hutter `video`  
-  ["Neural Architecture Search"](https://vimeo.com/250399509) by Quoc Le `video`
-	([post](https://research.googleblog.com/2017/11/automl-for-large-scale-image.html))  
 
   [**interesting papers**](#interesting-papers---automated-machine-learning)
 

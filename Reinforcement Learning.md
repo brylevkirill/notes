@@ -168,6 +168,7 @@
 	[Libratus "Science" magazine](http://science.sciencemag.org/content/early/2017/12/15/science.aao1733.full) `paper`  
 	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://arxiv.org/abs/1705.02955) by Noam Brown and Tuomas Sandholm `paper` ([talk](https://vimeo.com/248533943#t=53s) `video`, [post](https://thegradient.pub/libratus-poker))  
 	["Depth-Limited Solving for Imperfect-Information Games"](https://arxiv.org/abs/1805.08195) by Brown, Sandholm, Amos `paper` ([overview](https://youtube.com/watch?v=S4-g3dPT2gY) `video`)  
+	["Deep Counterfactual Regret Minimization"](https://arxiv.org/abs/1811.00164) by Brown, Lerer, Gross, Sandholm `paper`  
 
 	[Libratus overview](https://youtube.com/watch?v=EhvH4jdF-ko) by Tuomas Sandholm `video`  
 	[Libratus overview](https://youtube.com/watch?v=xrWulRY_t1o) by Tuomas Sandholm `video`  
@@ -394,8 +395,9 @@
 ---
 ### deep reinforcement learning
 
+  ["An Introduction to Deep Reinforcement Learning"](https://arxiv.org/abs/1811.12560) by François-Lavet et al. `paper`  
   ["A Brief Survey of Deep Reinforcement Learning"](https://arxiv.org/abs/1708.05866) by Arulkumaran et al. `paper`  
-  ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1701.07274) by Yuxi Li `paper` ([slides](https://dropbox.com/s/kzkc8t61t7tz9eu/AISeminar.pdf))  
+  ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1701.07274) by Yuxi Li `paper`  
 
   ["Deep Reinforcement Learning Hands-On"](https://amazon.com/gp/product/1788834240) by Maxim Lapan `book`
 
@@ -660,6 +662,7 @@
   [introduction](https://youtube.com/watch?v=GlTYGmVUTbM) by Ian Osband `video`
 
   [overview](http://youtube.com/watch?v=sGuiWX07sKw) by David Silver `video`  
+  [overview](http://youtube.com/watch?v=eM6IBYVqXEA) by Hado van Hasselt `video`  
   [overview](http://youtube.com/watch?v=SfCa1HQMkuw) by John Schulman `video`  
   [overview](http://youtu.be/fIKkhoI1kF4?t=19m23s) by Emma Brunskill `video`  
   [overview](http://youtube.com/watch?v=WCE9hhPbCmc) by Maxim Kretov `video` `in russian`  
@@ -1047,6 +1050,8 @@
 ----
 
   ["The Next Big Step in AI: Planning with a Learned Model"](https://youtube.com/watch?v=6-Uiq8-wKrg) by Richard Sutton `video`
+
+  ["Planning and Models"](https://youtube.com/watch?v=Xrxrd8nl4YI) by Hado van Hasselt `video`
 
   ["Planning by Dynamic Programming"](https://youtube.com/watch?v=Nd1-UUMVfz4) by David Silver `video`  
   ["Integrating Learning and Planning"](https://youtube.com/watch?v=ItMutbeOHtc) by David Silver `video`  
@@ -1621,7 +1626,7 @@ interesting recent papers:
   - `slides` <https://dropbox.com/s/kzkc8t61t7tz9eu/AISeminar.pdf>
 
 
-#### ["Human-Level Control Through Deep Reinforcement Learning"](https://goo.gl/jHRkZr) Mnih et al.
+#### ["Human-level Control Through Deep Reinforcement Learning"](https://goo.gl/jHRkZr) Mnih et al.
 >	"The theory of reinforcement learning provides a normative account, deeply rooted in psychological and neuroscientific perspectives on animal behaviour, of how agents may optimize their control of an environment. To use reinforcement learning successfully in situations approaching real-world complexity, however, agents are confronted with a difficult task: they must derive efficient representations of the environment from high-dimensional sensory inputs, and use these to generalize past experience to new situations. Remarkably, humans and other animals seem to solve this problem through a harmonious combination of reinforcement learning and hierarchical sensory processing systems, the former evidenced by a wealth of neural data revealing notable parallels between the phasic signals emitted by dopaminergic neurons and temporal difference reinforcement learning algorithms. While reinforcement learning agents have achieved some successes in a variety of domains, their applicability has previously been limited to domains in which useful features can be handcrafted, or to domains with fully observed, low-dimensional state spaces. Here we use recent advances in training deep neural networks to develop a novel artificial agent, termed a deep Q-network, that can learn successful policies directly from high-dimensional sensory inputs using end-to-end reinforcement learning. We tested this agent on the challenging domain of classic Atari 2600 games. We demonstrate that the deep Q-network agent, receiving only the pixels and the game score as inputs, was able to surpass the performance of all previous algorithms and achieve a level comparable to that of a professional human games tester across a set of 49 games, using the same algorithm, network architecture and hyperparameters. This work bridges the divide between high-dimensional sensory inputs and actions, resulting in the first artificial agent that is capable of learning to excel at a diverse array of challenging tasks."
 
   - `paper` <http://nature.com/nature/journal/v518/n7540/full/nature14236.html>
@@ -1634,6 +1639,7 @@ interesting recent papers:
   - `video` <http://youtube.com/watch?v=dV80NAlEins> (de Freitas)
   - `video` [from value function approximation to Deep Q-Network](http://youtu.be/UoPei5o4fps?t=1h9m) (Silver)
   - `video` [from Fitted Value Iteration to Deep Q-Network](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/#t=2929) (Szepesvari)
+  - `video` <https://youtube.com/watch?v=teDuLk3cIeI> + <https://youtube.com/watch?v=ugjjjtuVshY> (Pogrebnyakov)
   - `video` <https://yadi.sk/i/AHDU2p_j3FT3nr> + <https://yadi.sk/i/EeUeheri3FT3ra> (Ratnikov, Vasilev) `in russian`
 
 
@@ -2960,6 +2966,7 @@ interesting recent papers:
 
 
 #### ["Continuous Control with Deep Reinforcement Learning"](http://arxiv.org/abs/1509.02971) Lillicrap, Hunt, Pritzel, Heess, Erez, Tassa, Silver, Wierstra
+  `DDPG`
 >	"We adapt the ideas underlying the success of Deep Q-Learning to the continuous action domain. We present an actor-critic, model-free algorithm based on the deterministic policy gradient that can operate over continuous action spaces. Using the same learning algorithm, network architecture and hyper-parameters, our algorithm robustly solves more than 20 simulated physics tasks, including classic problems such as cartpole swing-up, dexterous manipulation, legged locomotion and car driving. Our algorithm is able to find policies whose performance is competitive with those found by a planning algorithm with full access to the dynamics of the domain and its derivatives. We further demonstrate that for many of the tasks the algorithm can learn policies “end-to-end”: directly from raw pixel inputs."
 
 >	"The work presented here combines insights from recent advances in deep learning and reinforcement learning, resulting in an algorithm that robustly solves challenging problems across a variety of domains with continuous action spaces, even when using raw pixels for observations. As with most reinforcement learning algorithms, the use of non-linear function approximators nullifies any convergence guarantees; however, our experimental results demonstrate that stable learning without the need for any modifications between environments. Interestingly, all of our experiments used substantially fewer steps of experience than was used by DQN learning to find solutions in the Atari domain. Nearly all of the problems we looked at were solved within 2.5 million steps of experience (and usually far fewer), a factor of 20 fewer steps than DQN requires for good Atari solutions. This suggests that, given more simulation time, DDPG may solve even more difficult problems than those considered here. A few limitations to our approach remain. Most notably, as with most model-free reinforcement approaches, DDPG requires a large number training episodes to find solutions. However, we believe that a robust model-free approach may be an important component of larger systems which may attack these limitations."
@@ -2988,6 +2995,7 @@ interesting recent papers:
   - `post` <https://yanpanlau.github.io/2016/10/11/Torcs-Keras.html>
   - `post` <http://pemami4911.github.io/blog_posts/2016/08/21/ddpg-rl.html>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/ddpg>
+  - `code` <https://github.com/vitchyr/rlkit>
   - `code` <https://github.com/ikostrikov/pytorch-ddpg-naf>
   - `code` <https://github.com/higgsfield/RL-Adventure-2>
   - `code` <https://github.com/Scitator/Run-Skeleton-Run> (demo)
