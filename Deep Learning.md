@@ -1511,6 +1511,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=QODYgBhv_no>
   - `video` <https://facebook.com/nipsfoundation/videos/1554402064651027?t=993> (Tucker)
   - `video` <https://youtu.be/hkRBoiaplEE?t=34m27s> (Sobolev)
+  - `notes` <http://tuananhle.co.uk/notes/rebar-relax.html>
   - `code` <https://github.com/tensorflow/models/tree/master/research/rebar>
   - `code` <https://github.com/Bonnevie/rebar>
 
@@ -1533,6 +1534,7 @@ Yoshua Bengio:
   - `video` <https://vimeo.com/252185804> (Grathwohl)
   - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (25:20) (Bengio)
   - `video` <https://youtu.be/hkRBoiaplEE?t=1h8m1s> (Sobolev)
+  - `notes` <http://tuananhle.co.uk/notes/rebar-relax.html>
   - `code` <https://github.com/duvenaud/relax>
   - `code` <https://github.com/Bonnevie/rebar>
   - `paper` ["Action-depedent Control Variates for Policy Optimization via Stein's Identity"](https://arxiv.org/abs/1710.11198) by Liu et al. ([talk](https://vimeo.com/252186257) `video`)

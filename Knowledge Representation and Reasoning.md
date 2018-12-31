@@ -819,6 +819,7 @@
 ----
 
   ["Engineering and Reverse Engineering Intelligence with Probabilistic Programs, Program Induction, and Deep Learning"](https://vimeo.com/248502450) by Josh Tenenbaum and Vikash Mansinghka `video`  
+  ["Towards More Human-like Intelligence in Machines"](https://youtube.com/watch?v=0Tj6CeYCmzw) by Josh Tenenbaum `video`  
   ["Building Machines That See, Learn and Think Like People"](https://youtube.com/watch?v=7ROelYvo8f0) by Joshua Tenenbaum `video`  
   ["Building Machines That Learn and Think Like People"](https://facebook.com/icml.imls/videos/432412777273243?t=4362) by Josh Tenenbaum `video`  
   ["Engineering & Reverse-Engineering Human Common Sense"](https://youtube.com/watch?v=hfoeRiZU5YQ) by Josh Tenenbaum `video`  

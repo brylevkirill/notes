@@ -137,6 +137,9 @@
 
   [videos](https://github.com/dustinvtran/ml-videos)
 
+  - NIPS 2018
+	<https://facebook.com/pg/nipsfoundation/videos> `video`
+
   - ICML 2018  
 	<https://vimeo.com/channels/1408270/videos> `video`  
 	<https://facebook.com/icml.imls/videos> `video`  

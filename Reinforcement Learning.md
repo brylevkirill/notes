@@ -82,7 +82,7 @@
 
   [artwork personalization](https://medium.com/netflix-techblog/artwork-personalization-c589f074ad76) at Netflix
 
-  ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1701.07274) by Yuxi Li `paper` ([slides](https://dropbox.com/s/kzkc8t61t7tz9eu/AISeminar.pdf))
+  ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1810.06339) by Yuxi Li `book`
 
   [**other applications**](https://yadi.sk/d/tiaE7sdi3WEhDS)
 
@@ -371,6 +371,7 @@
   ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/book/the-book-2nd.html) book by Richard Sutton and Andrew Barto (second edition) ([code](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction))  
   ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/book/the-book-1st.html) book by Richard Sutton and Andrew Barto (first edition)  
   ["Algorithms for Reinforcement Learning"](http://www.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf) book by Csaba Szepesvari  
+  ["Reinforcement Learning and Optimal Control"](http://web.mit.edu/dimitrib/www/RLbook.html) book by Dimitri Bertsekas  
   ["Bandit Algorithms"](http://downloads.tor-lattimore.com/banditbook/book.pdf) book by Tor Lattimore and Csaba Szepesvari  
 
 ----
@@ -397,9 +398,9 @@
 
   ["An Introduction to Deep Reinforcement Learning"](https://arxiv.org/abs/1811.12560) by François-Lavet et al. `paper`  
   ["A Brief Survey of Deep Reinforcement Learning"](https://arxiv.org/abs/1708.05866) by Arulkumaran et al. `paper`  
-  ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1701.07274) by Yuxi Li `paper`  
 
-  ["Deep Reinforcement Learning Hands-On"](https://amazon.com/gp/product/1788834240) by Maxim Lapan `book`
+  ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1810.06339) by Yuxi Li `book`  
+  ["Deep Reinforcement Learning Hands-On"](https://amazon.com/gp/product/1788834240) by Maxim Lapan `book`  
 
   ["Spinning Up in Deep RL"](https://spinningup.openai.com)
 

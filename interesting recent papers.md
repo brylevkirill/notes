@@ -386,6 +386,7 @@ interesting older papers:
   - `video` <https://youtu.be/_XRBlhzb31U?t=27m16s> (Figurnov) `in russian`
   - `notes` <http://artem.sobolev.name/posts/2016-07-14-neural-variational-importance-weighted-autoencoders.html>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/MnihR16>
+  - `notes` <http://tuananhle.co.uk/notes/vimco.html>
 
 #### ["Importance Weighted Autoencoders"](http://arxiv.org/abs/1509.00519) Burda, Grosse, Salakhutdinov
   `variational inference` `posterior approximation`
@@ -515,6 +516,8 @@ interesting older papers:
 
 #### ["Inference Compilation and Universal Probabilistic Programming"](http://arxiv.org/abs/1610.09900) Le, Baydin, Wood
   `bayesian model`
+  - `video` <https://youtube.com/watch?v=jp3noyIYAbA> (Wood)
+  - `post` <http://tuananhle.co.uk/notes/amortized-inference.html>
 
 
 
@@ -601,6 +604,7 @@ interesting older papers:
 >	"Spatially structured 2D memory to learn to store arbitrary information about the environment over long time lags."  
 >	"Memory was given a 2D structure in order to resemble a spatial map to address specific problems such as 2D or 3D navigation."  
 >	"Size and computational cost doesn't grow with time horizon of environment."  
+  - `video` <https://youtube.com/watch?v=cUW99V5x7fE> (Salakhutdinov)
   - `video` <https://vimeo.com/252185932> (Salakhutdinov)
   - `video` <https://youtu.be/x_kK4Pc4qow?t=18m3s> (Salakhutdinov)
   - `video` <https://youtu.be/bTWlFiF4Kns?t=6m55s> (Salakhutdinov)
@@ -819,6 +823,7 @@ interesting older papers:
 >	"We introduce two new algorithms: E-MAML and E-RL2, which are derived by reformulating the underlying meta-learning objective to account for the impact of initial sampling on future (post-meta-updated) returns."  
 >	"Meta RL agent must not learn how to master the environments it is given, but rather it must learn how to learn so that it can quickly train at test time."  
 >	"Due to RL^2’s policy-gradient-based optimization procedure, it does not directly optimize the final policy performance nor exhibit exploration. In E-RL^2 the rewards for episodes sampled early in the learning process are deliberately set to zero to drive exploratory behavior."  
+>	"It is likely that future work in this area will focus on meta-learning a curiosity signal which is robust and transfers across tasks. Perhaps this will enable meta agents which learn to explore rather than being forced to explore by mathematical trickery in their objectives."  
   - `video` <https://youtu.be/16UUb4HF0fo?t=54m56s> (Golikov) `in russian`
   - `code` <https://github.com/bstadie/krazyworld>
 
@@ -1044,6 +1049,7 @@ interesting older papers:
 >	"We investigate current approaches and their inductive biases in a reproducible large-scale experimental study with a sound experimental protocol for unsupervised disentanglement learning. We implement from scratch six recent unsupervised disentanglement learning methods as well as six disentanglement measures and train more than 12 000 models on seven data sets."  
 >	"We evaluate our experimental results and challenge many common assumptions in unsupervised disentanglement learning: (i) While all considered methods prove effective at ensuring that the individual dimensions of the aggregated posterior (which is sampled) are not correlated, only one method also consistently ensures that the individual dimensions of the representation (which is taken to be the mean) are not correlated. (ii) We do not find any evidence that they can be used to reliably learn disentangled representations in an unsupervised manner as hyper parameters seem to matter more than the model and “good” hyperparameters seemingly cannot be identified without access to ground-truth labels. Similarly, we observe that good hyperparameters neither transfer across data sets nor across disentanglement metrics. (iii) For the considered models and data sets, we cannot validate the assumption that disentanglement is useful for downstream tasks, for example through a decreased sample complexity of learning."  
 >	"Based on these empirical evidence, we suggest three critical areas of further research: (i) The role of inductive biases and implicit and explicit supervision should be made explicit: unsupervised model selection persists as a key question. (ii) The concrete practical benefits of enforcing a specific notion of disentanglement of the learned representations should be demonstrated. (iii) Experiments should be conducted in a reproducible experimental setup on data sets of varying degrees of difficulty."  
+  - `video` <https://youtube.com/watch?v=WYrvh50yu6s> (Kilcher)
 
 #### ["Neural Scene Representation and Rendering"](https://deepmind.com/documents/211/Neural_Scene_Representation_and_Rendering_preprint.pdf) Eslami et al.
   `concept learning` `GQN`
@@ -1107,6 +1113,7 @@ interesting older papers:
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/EslamiHWTKH16>
   - `post` <http://akosiorek.github.io/ml/2017/09/03/implementing-air.html>
   - `post` <http://pyro.ai/examples/air.html>
+  - `notes` <http://tuananhle.co.uk/notes/air.html>
   - `code` <https://github.com/akosiorek/attend_infer_repeat>
   - `code` <https://github.com/uber/pyro/tree/dev/examples/air>
 
@@ -1120,7 +1127,7 @@ interesting older papers:
   - `post` <https://deepmind.com/blog/learning-to-generate-images>
   - `video` <https://youtu.be/iSyvwAwa7vk> (demo)
   - `video` <https://youtube.com/watch?v=kkihoMMpBb0> (Vinyals)
-  - `video` <https://facebook.com/iclr.cc/videos/2125495797479475?t=2069> (Kavukcuogl)
+  - `video` <https://facebook.com/iclr.cc/videos/2125495797479475?t=2069> (Kavukcuoglu)
 
 #### ["Generative Temporal Models with Memory"](http://arxiv.org/abs/1702.04649) Gemici, Hung, Santoro, Wayne, Mohamed, Rezende, Amos, Lillicrap
   `learning disentangled representation`
@@ -1202,6 +1209,7 @@ interesting older papers:
 >	"Real NVPs are invertible transformations and have perfect reconstructions. We can still visualize reconstructions from a partially resampled latent vector. Gregor et al. (2016) and Dinh et al. (2016) visualized ‘conceptual compression’ by inferring the latent variables and then resampling a part of the latent variables from the normal N(0,1) prior. The subsequent reconstruction should still form a valid image. If the original image was generated by the generator, the partially resampled latent vector would still have the normal N(0,1) distribution. We show the reconstructions if resampling the first half or the second half of the latent vector. The generator trained by maximum likelihood has partial reconstructions similar to generated samples. In comparison, the partial reconstructions from the generator trained by WGAN do not resemble samples from WGAN. This again indicates that the validation examples have a different distribution than WGAN samples."  
 >	"We looked at the approximate Wasserstein distance between the validation data and the generator distribution. We will train another critic to assign high values to validation samples and low values to generated samples. This independent critic will be used only for evaluation. The generator will not see the gradients from the independent critic. We display the approximate Wasserstein distance between the validation set and the generator distribution. The first thing to notice is the correct ordering of generators trained by maximum likelihood. The deepest generator has the smallest approximate distance from the validation set, as indicated by the thick solid lines. We also display an approximate distance between the training set and generator distribution, and the approximate distance between the test set and the generator distribution. The approximate distance between the test set and the generator distribution is a little bit smaller than the approximate distance between the validation set and the generator distribution. The approximate distance between the training set and the generator distribution is much smaller. The generators are overfitting the training set."  
 >	"Real NVP can be used as an encoder in Adversarial Variational Bayes. We were able to measure the gap between the unbiased KL estimate log q(z|x) - log p(z) and its approximation from GAN. We show that Adversarial Variational Bayes underestimates the KL divergence."  
+  - `post` <https://colinraffel.com/blog/gans-and-divergence-minimization.html>
   - `slides` <http://www.gatsby.ucl.ac.uk/~balaji/Understanding-GANs.pdf>
 
 #### ["On the Quantitative Analysis of Decoder-based Generative Models"](http://arxiv.org/abs/1611.04273) Wu, Burda, Salakhutdinov, Grosse
@@ -1545,6 +1553,7 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=kQ1eEXgGsCU> (Nowozin)
   - `video` <https://youtube.com/watch?v=y7pUN2t5LrA> (Nowozin)
   - `video` <https://youtu.be/jAI3rBI6poU?t=14m31s> (Ulyanov) `in russian`
+  - `post` <https://colinraffel.com/blog/gans-and-divergence-minimization.html#citation-nowozin2016>
   - `code` <https://github.com/wiseodd/generative-models/tree/master/GAN/f_gan>
 
 ----
@@ -1908,6 +1917,12 @@ interesting older papers:
   - `video` <https://youtu.be/9z3_tJAu7MQ?t=22m45s> (Wayne)
 
 ----
+#### ["Deep Reinforcement Learning and the Deadly Triad"](https://arxiv.org/abs/1812.02648) Hasselt, Doron, Strub, Hessel, Sonnerat, Modayil
+  `Q-learning`
+>	"We know from reinforcement learning theory that temporal difference learning can fail in certain cases. Sutton and Barto identify a deadly triad of function approximation, bootstrapping, and off-policy learning. When these three properties are combined, learning can diverge with the value estimates becoming unbounded. However, several algorithms successfully combine these three properties, which indicates that there is at least a partial gap in our understanding. In this work, we investigate the impact of the deadly triad in practice, in the context of a family of popular deep reinforcement learning models - deep Q-networks trained with experience replay - analysing how the components of this system play a role in the emergence of the deadly triad, and in the agent’s performance."  
+>	"When combining TD learning with function approximation, updating the value at one state creates a risk of inappropriately changing the values of other states, including the state being bootstrapped upon. This is not a concern when the agent updates the values used for bootstrapping as often as they are used. However, if the agent is learning off-policy, it might not update these bootstrap values sufficiently often. This can create harmful learning dynamics that can lead to divergence of the function parameters. The combination of function approximation, off-policy learning, and bootstrapping has been called “the deadly triad” due to this possibility of divergence."  
+>	"The Deep Q-network agent uses deep neural networks to approximate action values, which are updated by Q-learning, an off-policy algorithm. Moreover, DQN uses experience replay to sample transitions, thus the updates are computed from transitions sampled according to a mixture of past policies rather than the current policy. This causes the updates to be even more off-policy. Finally, since DQN uses one-step Q-learning as its learning algorithm, it relies on bootstrapping. Despite combining all these components of the deadly triad, DQN successfully learnt to play many Atari 2600 games."  
+
 #### ["Is Q-learning Provably Efficient?"](https://arxiv.org/abs/1807.03765) Jin, Allen-Zhu, Bubeck, Jordan
   `Q-learning`
 >	"The theoretical question of "whether model-free algorithms can be made sample efficient" is one of the most fundamental questions in RL, and remains unsolved even in the basic scenario with finitely many states and actions."  
@@ -2586,16 +2601,16 @@ interesting older papers:
 
 ----
 #### ["Unsupervised Control through Non-Parametric Discriminative Rewards"](https://arxiv.org/abs/1811.11359) Warde-Farley, Wiele, Kulkarni, Ionescu, Hansen, Mnih
-  `learning reward function`
+  `learning reward function` `intrinsic motivation`
 >	"Learning to control an environment without hand-crafted rewards or expert data remains challenging and is at the frontier of reinforcement learning research. We present an unsupervised learning algorithm to train agents to achieve perceptually specified goals using only a stream of observations and actions. Our agent simultaneously learns a goal-conditioned policy and a goal achievement reward function that measures how similar a state is to the goal state. This dual optimization leads to a co-operative game, giving rise to a learned reward function that reflects similarity in controllable aspects of the environment instead of distance in the space of observations. We demonstrate the efficacy of our agent to learn, in an unsupervised manner, to reach a diverse set of goals on three domains – Atari, the DeepMind Control Suite and DeepMind Lab."  
 
 #### ["On Learning Intrinsic Rewards for Policy Gradient Methods"](https://arxiv.org/abs/1804.06459) Zheng, Oh, Singh
-  `learning reward function`
+  `learning reward function` `intrinsic motivation`
 >	"Optimal Rewards Framework defines the optimal intrinsic reward function as one that when used by an agent achieves behavior that optimizes the task-specifying or extrinsic reward function. Previous work in this framework has shown how good intrinsic reward functions can be learned for lookahead search based planning agents. Whether it is possible to learn intrinsic reward functions for learning agents remains an open problem. In this paper we derive a novel algorithm for learning intrinsic rewards for policy-gradient based learning agents."  
   - `video` <https://youtu.be/_4oL3DDCwCw?t=38m> (Singh)
 
 #### ["Deep Learning for Reward Design to Improve Monte Carlo Tree Search in ATARI Games"](https://arxiv.org/abs/1604.07095) Guo, Singh, Lewis, Lee
-  `learning reward function`
+  `learning reward function` `intrinsic motivation`
 >	"Monte Carlo Tree Search methods have proven powerful in planning for sequential decision-making problems such as Go and video games, but their performance can be poor when the planning depth and sampling trajectories are limited or when the rewards are sparse. We present an adaptation of PGRD (policy-gradient for reward design) for learning a reward-bonus function to improve UCT (a MCTS algorithm). Unlike previous applications of PGRD in which the space of reward-bonus functions was limited to linear functions of hand-coded state-action-features, we use PGRD with a multi-layer convolutional neural network to automatically learn features from raw perception as well as to adapt the non-linear reward-bonus function parameters. We also adopt a variance-reducing gradient method to improve PGRD’s performance. The new method improves UCT’s performance on multiple ATARI games compared to UCT without the reward bonus. Combining PGRD and Deep Learning in this way should make adapting rewards for MCTS algorithms far more widely and practically applicable than before."  
   - `video` <https://youtu.be/_4oL3DDCwCw?t=11m47s> (Singh)
   - `video` <https://vimeo.com/250399421> (Singh)
@@ -2604,7 +2619,7 @@ interesting older papers:
   - `paper` ["Where Do Rewards Come From?"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.151.8250) by Singh, Lewis, Barto
 
 #### ["Evolved Policy Gradients"](https://arxiv.org/abs/1802.04821) Houthooft, Chen, Isola, Stadie, Wolski, Ho, Abbeel
-  `learning loss function`
+  `learning loss function` `intrinsic motivation` `EPG`
 >	"Method evolves a differentiable loss function, such that an agent, which optimizes its policy to minimize this loss, will achieve high rewards. The loss is parametrized via temporal convolutions over the agent’s experience. Because this loss is highly flexible in its ability to take into account the agent’s history, it enables fast task learning and eliminates the need for reward shaping at test time. At test time, the learner optimizes only its learned loss function, and requires no explicit reward signal."  
 >	"Method is capable of learning a loss function over thousands of sequential environmental actions. Crucially, this learned loss is both highly adaptive (allowing for quicker learning of new tasks) and highly instructive (sometimes eliminating the need for environmental rewards at test time)."  
 >	"Our loss’ instructive nature – which allows it to operate at test time without environmental rewards – is interesting and desirable. This instructive nature can be understood as the loss function’s internalization of the reward structures it has previously encountered under the training task distribution. We see this internalization as a step toward learning intrinsic motivation. A good intrinsically motivated agent would successfully infer useful actions in new situations by using heuristics it developed over its entire lifetime. This ability is likely required to achieve truly intelligent agents."  
@@ -2613,15 +2628,11 @@ interesting older papers:
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1802.04821>
   - `code` <https://github.com/openai/EPG>
 
+----
 #### ["Meta-Reinforcement Learning of Structured Exploration Strategies"](https://arxiv.org/abs/1802.07245) Gupta, Mendonca, Liu, Abbeel, Levine
-  `learning to explore` `meta-learning` `MAESN`
+  `learning to explore` `MAESN`
 >	"Many of the current exploration methods for deep RL use task-agnostic objectives, such as information gain or bonuses based on state visitation. However, many practical applications of RL involve learning more than a single task, and prior tasks can be used to inform how exploration should be performed in new tasks. In this work, we explore how prior tasks can inform an agent about how to explore effectively in new situations. We introduce a novel gradient-based fast adaptation algorithm -- model agnostic exploration with structured noise -- to learn exploration strategies from prior experience. The prior experience is used both to initialize a policy and to acquire a latent exploration space that can inject structured stochasticity into a policy, producing exploration strategies that are informed by prior knowledge and are more effective than random action-space noise."  
   - `video` <https://youtube.com/watch?v=Tge7LPT9vGA> (Gupta)
-
-#### ["Some Considerations on Learning to Explore via Meta-Reinforcement Learning"](https://arxiv.org/abs/1803.01118) Stadie, Yang, Houthooft, Chen, Duan, Wu, Abbeel, Sutskever
-  `learning to explore` `meta-learning`
->	"It is likely that future work in this area will focus on meta-learning a curiosity signal which is robust and transfers across tasks. Perhaps this will enable meta agents which learn to explore rather than being forced to explore by mathematical trickery in their objectives."  
-  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#some-considerations-on-learning-to-explore-via-meta-reinforcement-learning-stadie-yang-houthooft-chen-duan-wu-abbeel-sutskever>
 
 ----
 #### ["Randomized Prior Functions for Deep Reinforcement Learning"](https://arxiv.org/abs/1806.03335) Osband, Aslanides, Cassirer
@@ -2688,11 +2699,6 @@ interesting older papers:
 #### ["Exploration Potential"](http://arxiv.org/abs/1609.04994) Leike
   `approximate bayesian exploration` `information gain`
 >	"We introduce exploration potential, a quantity that measures how much a reinforcement learning agent has explored its environment class. In contrast to information gain, exploration potential takes the problem's reward structure into account. This leads to an exploration criterion that is both necessary and sufficient for asymptotic optimality (learning to act optimally across the entire environment class). Our experiments in multi-armed bandits use exploration potential to illustrate how different algorithms make the tradeoff between exploration and exploitation."  
-
-----
-#### ["Improving Exploration in Evolution Strategies for Deep Reinforcement Learning via a Population of Novelty-Seeking Agents"](https://arxiv.org/abs/1712.06560) Conti, Madhavan, Such, Lehman, Stanley, Clune
-  `exploration guided by policy novelty`
->	"Many RL problems require directed exploration because they have reward functions that are sparse or deceptive (i.e. contain local optima), and it is not known how to encourage such exploration with evolution strategies (ES). We show that algorithms that have been invented to promote directed exploration in small-scale evolved neural networks via populations of exploring agents, specifically novelty search (NS) and quality diversity (QD) algorithms, can be hybridized with ES to improve its performance on sparse or deceptive deep RL tasks, while retaining scalability. Our experiments confirm that the resultant new algorithms, NS-ES and a version of QD we call NSR-ES, avoid local optima encountered by ES to achieve higher performance on tasks ranging from playing Atari to simulated robots learning to walk around a deceptive trap."  
 
 ----
 #### ["Count-Based Exploration with the Successor Representation"](https://arxiv.org/abs/1807.11622) Machado, Bellemare, Bowling

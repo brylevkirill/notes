@@ -46,20 +46,18 @@
   [tutorial](https://youtube.com/watch?v=_wFagI5Fn9I) by Jonas Peters `video`  
   [tutorial](https://youtube.com/watch?v=KsbftkwZTq4) by Bernhard Scholkopf and Dominik Janzing `video`  
 
-  ["Causal Inference for Observational Studies"](http://techtalks.tv/talks/causal-inference-for-observational-studies/62355/) by David Sontag and Uri Shalit `video` ([slides](https://cs.nyu.edu/~shalit/slides.pdf))
-
-  ["Connections between Causality and Machine Learning"](https://youtube.com/watch?v=9pm0eXuiTZs) by Jonas Peters `video`
-
-  ["Counterfactual Evaluation and Learning for Search, Recommendation and Ad Placement"](http://www.cs.cornell.edu/~adith/CfactSIGIR2016/) by Thorsten Joachims and Adith Swaminathan `video`
-
-  ["Counterfactual Reasoning and Massive Data Sets"](https://youtube.com/watch?v=s37cIYDOM6s) by Leon Bottou `video`  
-  ["The Missing Signal"](https://youtube.com/watch?v=DfJeaa--xO0) by Leon Bottou `video`  
-
   ["Learning Causal Mechanisms"](https://facebook.com/iclr.cc/videos/2123421684353553?t=294) by Bernhard Scholkopf `video`  
   ["The Role of Causality for Interpretability"](https://vimeo.com/252188186) by Bernhard Scholkopf `video`  
   ["Causal Learning"](https://vimeo.com/238274659#t=13m22s) by Bernhard Scholkopf `video`  
   ["Toward Causal Machine Learning"](https://youtube.com/watch?v=ooeRlw3U2zU) by Bernhard Scholkopf `video`  
   ["Statistical and Causal Approaches to Machine Learning"](https://youtu.be/ek9jwRA2Jio?t=26m) by Bernhard Scholkopf `video`  
+
+  ["Causal Inference for Observational Studies"](http://techtalks.tv/talks/causal-inference-for-observational-studies/62355/) by David Sontag and Uri Shalit `video` ([slides](https://cs.nyu.edu/~shalit/slides.pdf))  
+  ["Counterfactual Inference"](https://facebook.com/nipsfoundation/videos/1291139774361116) tutorial by Susan Athey `video`  
+  ["Connections between Causality and Machine Learning"](https://youtube.com/watch?v=9pm0eXuiTZs) by Jonas Peters `video`  
+  ["Counterfactual Reasoning and Massive Data Sets"](https://youtube.com/watch?v=s37cIYDOM6s) by Leon Bottou `video`  
+  ["The Missing Signal"](https://youtube.com/watch?v=DfJeaa--xO0) by Leon Bottou `video`  
+  ["Counterfactual Evaluation and Learning for Search, Recommendation and Ad Placement"](http://www.cs.cornell.edu/~adith/CfactSIGIR2016/) by Thorsten Joachims and Adith Swaminathan `video`  
 
 
 
