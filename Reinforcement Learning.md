@@ -177,6 +177,7 @@
 	[Libratus overview](https://youtube.com/watch?v=2dX0lwaQRX0) by Noam Brown `video`  
 	[Libratus overview](https://youtube.com/watch?v=UTogLB99JKQ) by Noam Brown `video`  
 
+	["New Results for Solving Imperfect-Information Games"](https://vimeo.com/313942390) by Tuomas Sandholm `video`  
 	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://vimeo.com/248533943#t=53s) by Noam Brown `video`  
 	["Reduced Space and Faster Convergence in Imperfect-Information Games via Pruning"](https://vimeo.com/238229930) by Noam Brown `video`  
 	["The State of Techniques for Solving Large Imperfect-Information Games"](https://youtube.com/watch?v=Gz026reyVwc) by Tuomas Sandholm `video`  

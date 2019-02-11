@@ -138,6 +138,7 @@
   [videos](https://github.com/dustinvtran/ml-videos)
 
   - NIPS 2018
+	<https://nips.cc/Conferences/2018/Videos> `video`
 	<https://facebook.com/pg/nipsfoundation/videos> `video`
 
   - ICML 2018  
@@ -328,6 +329,10 @@
 
   <http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html>  
 
+----
+
+  [state-of-the-art methods](https://paperswithcode.com/sota)
+
 
 
 ---
@@ -428,10 +433,11 @@
 
 ----
 
-  [overview](http://scholarpedia.org/article/Metalearning) by Tom Schaul and Juergen Schmidhuber
-
+  [overview](https://youtu.be/3FIo6evmweo?t=4m6s) of difference between general meta-learning and transfer learning by Juergen Schmidhuber `video`  
   ["On Learning How to Learn Learning Strategies"](https://vimeo.com/250399374) by Juergen Schmidhuber `video`  
   ["Learning how to Learn Learning Algorithms: Recursive Self-Improvement"](https://youtube.com/watch?v=nqiUFc52g78) by Juergen Schmidhuber `video`  
+
+  [overview](http://scholarpedia.org/article/Metalearning) by Tom Schaul and Juergen Schmidhuber
 
   [**Goedel Machine**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#meta-learning---goedel-machine)
 
@@ -573,6 +579,7 @@
   [overview](https://youtu.be/Tkl6ERLWAbA?t=27m10s) by Chris Re `video`  
   [overview](https://youtube.com/watch?v=08jorbiyLwY) by Chris Re `video`  
   [overview](https://youtube.com/watch?v=HmocI2b5YfA) by Chris Re `video`  
+  [overview](https://youtube.com/watch?v=pXoiYSQHf2I) by Stephen Bach `video`  
 
 ----
 
@@ -682,6 +689,7 @@
 
   - `post` <https://deepmind.com/blog/population-based-training-neural-networks/>
   - `video` <https://vimeo.com/250399261> (Jaderberg)
+  - `paper` <https://arxiv.org/abs/1902.01894> by Li et al.
 
 
 #### ["Data Programming: Creating Large Training Sets, Quickly"](https://arxiv.org/abs/1605.07723) Ratner, Sa, Wu, Selsam, Re

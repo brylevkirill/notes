@@ -70,7 +70,7 @@
 
   [course](http://youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6) from Stanford `video` ([notes](https://github.com/stanfordnlp/cs224n-winter17-notes))  
   [course](http://github.com/oxford-cs-deepnlp-2017/lectures) from Oxford and DeepMind `video`  
-  [course](http://phontron.com/class/nn4nlp2018/schedule.html) from CMU ([videos](https://youtube.com/playlist?list=PL8PYTP1V4I8Ba7-rY4FoB4-jfuJ7VDKEE))  
+  [course](http://phontron.com/class/nn4nlp2019/schedule.html) from CMU ([videos](https://youtube.com/user/neubig/playlists))  
 
 ----
 
@@ -778,6 +778,12 @@
 
 ---
 ### interesting papers - text embeddings
+
+#### ["No Training Required: Exploring Random Encoders for Sentence Classification"](https://openreview.net/forum?id=BkgPajAcY7) Wieting, Kiela
+>	"We explore various methods for computing sentence representations from pretrained word embeddings without any training, i.e., using nothing but random parameterizations. Our aim is to put sentence embeddings on more solid footing by 1) looking at how much modern sentence embeddings gain over random methods—as it turns out, surprisingly little; and by 2) providing the field with more appropriate baselines going forward—which are, as it turns out, quite strong. We also make important observations about proper experimental protocol for sentence classification evaluation, together with recommendations for future research."
+
+>	"In this work we have sought to put sentence embeddings on more solid footing by examining how much trained sentence encoders improve over random sentence encoders. As it turns out, differences exist, but are smaller than we would have hoped: in comparison to sentence encoders such as SkipThought (which was trained for a very long time) and InferSent (which requires large amounts of annotated data), performance improvements are less than 2 points on average over the 10 SentEval tasks. Therefore one may wonder to what extent sentence encoders are worth the attention they’re receiving. Hope remains, however, if we as a community start focusing on more sophisticated tasks that require more sophisticated learned representations that cannot merely rely on having good pre-trained word embeddings."
+
 
 #### ["Learning to Understand Phrases by Embedding the Dictionary"](http://arxiv.org/abs/1504.00548) Hill, Cho, Korhonen, Bengio
 >	"Distributional models that learn rich semantic word representations are a success story of recent NLP research. However, developing models that learn useful representations of phrases and sentences has proved far harder. We propose using the definitions found in everyday dictionaries as a means of bridging this gap between lexical and phrasal semantics. We train a recurrent neural network to map dictionary definitions (phrases) to (lexical) representations of the words those definitions define. We present two applications of this architecture: a reverse dictionary, for returning the name of a concept given a definition or description, and a general-knowledge (crossword) question answerer. On both tasks, the RNN trained on definitions from a handful of freely-available lexical resources performs comparably or better than existing commercial systems that rely on major task-specific engineering and far greater memory footprints. This strong performance highlights the general effectiveness of both neural language models and definition-based training for training machines to understand phrases and sentences."

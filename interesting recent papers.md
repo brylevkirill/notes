@@ -55,10 +55,12 @@ interesting older papers:
 >	What are the consequences for scientific use?"  
 
 ----
-#### ["Mathematics of Deep Learning"](https://arxiv.org/abs/1712.04741) Vidal, Bruna, Giryes, Soatto
->	"This tutorial will review recent work that aims to provide a mathematical justification for several properties of deep networks, such as global optimality, geometric stability, and invariance of the learned representations."  
+#### ["Approximating CNNs with Bag-of-local-Features Models Works Surprisingly Well on ImageNet"](https://openreview.net/forum?id=SkfMWhAqYQ) Brendel, Bethge
+  `generalization` `BagNet`
+>	"We introduce a high-performance DNN architecture on ImageNet whose decisions are considerably easier to explain. Our model, a simple variant of the ResNet-50 architecture called BagNet, classifies an image based on the occurrences of small local image features without taking into account their spatial ordering. This strategy is closely related to the bag-of-feature (BoF) models popular before the onset of deep learning and reaches a surprisingly high accuracy on ImageNet (87.6% top-5 for 32 x 32 px features and Alexnet performance for 16 x16 px features). The constraint on local features makes it straight-forward to analyse how exactly each part of the image influences the classification. Furthermore, the BagNets behave similar to state-of-the art deep neural networks such as VGG-16, ResNet-152 or DenseNet-169 in terms of feature sensitivity, error distribution and interactions between image parts. This suggests that the improvements of DNNs over previous bag-of-feature classifiers in the last few years is mostly achieved by better fine-tuning rather than by qualitatively different decision strategies."  
+  - `post` <https://medium.com/bethgelab/neural-networks-seem-to-follow-a-puzzlingly-simple-strategy-to-classify-images-f4229317261f>
+  - `post` <https://blog.evjang.com/2019/02/bagnet.html>
 
-----
 #### ["Measuring the Tendency of CNNs to Learn Surface Statistical Regularities"](https://arxiv.org/abs/1711.11561) Jo, Bengio
   `generalization`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#measuring-the-tendency-of-cnns-to-learn-surface-statistical-regularities-jo-bengio>
@@ -1015,6 +1017,10 @@ interesting older papers:
 ### unsupervised learning
 
 ----
+#### ["Causal Reasoning from Meta-reinforcement Learning"](https://arxiv.org/abs/1901.08162) Dasgupta et al.
+  `causal learning`
+  - <https://github.com/brylevkirill/notes/blob/master/Causal%20Inference.md#causal-reasoning-from-meta-reinforcement-learning-dasgupta-et-al>
+
 #### ["Independently Controllable Features"](https://arxiv.org/abs/1708.01289) Thomas, Pondard, Bengio, Sarfati, Beaudoin, Meurs, Pineau, Precup, Bengio
   `causal learning`
 >	"It has been postulated that a good representation is one that disentangles the underlying explanatory factors of variation. However, it remains an open question what kind of training framework could potentially achieve that. Whereas most previous work focuses on the static setting (e.g. with images), we postulate that some of the causal factors could be discovered if the learner is allowed to interact with its environment. The agent can experiment with different actions and observe their effects. We hypothesize that some of these factors correspond to aspects of the environment which are independently controllable, i.e., that there exists a policy and a learnable feature for each such aspect of the environment, such that this policy can yield changes in that feature with minimal changes to other features that explain the statistical variations in the observed data."  
@@ -1041,6 +1047,10 @@ interesting older papers:
   - `post` <http://giorgiopatrini.org/posts/2017/09/06/in-search-of-the-missing-signals/>
 
 ----
+#### ["Towards a Definition of Disentangled Representations"](https://arxiv.org/abs/1812.02230) Higgins, Amos, Pfau, Racaniere, Matthey, Rezende, Lerchner
+  `concept learning`
+>	"How can intelligent agents solve a diverse set of tasks in a data-efficient manner? The disentangled representation learning approach posits that such an agent would benefit from separating out (disentangling) the underlying structure of the world into disjoint parts of its representation. However, there is no generally agreed-upon definition of disentangling, not least because it is unclear how to formalise the notion of world structure beyond toy datasets with a known ground truth generative process. Here we propose that a principled solution to characterising disentangled representations can be found by focusing on the transformation properties of the world. In particular, we suggest that those transformations that change only some properties of the underlying world state, while leaving all other properties invariant, are what gives exploitable structure to any kind of data. Similar ideas have already been successfully applied in physics, where the study of symmetry transformations has revolutionised the understanding of the world structure. By connecting symmetry transformations to vector representations using the formalism of group and representation theory we arrive at the first formal definition of disentangled representations. Our new definition is in agreement with many of the current intuitions about disentangling, while also providing principled resolutions to a number of previous points of contention. While this work focuses on formally defining disentangling – as opposed to solving the learning problem – we believe that the shift in perspective to studying data transformations can stimulate the development of better representation learning algorithms."  
+
 #### ["Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations"](https://arxiv.org/abs/1811.12359) Locatello, Bauer, Lucic, Gelly, Scholkopf, Bachem
   `concept learning`
 >	"The key assumption is that real-world data is generated by a few explanatory factors of variation and that these factors can be recovered by unsupervised learning algorithms. A large number of unsupervised learning approaches based on auto-encoding and quantitative evaluation metrics of disentanglement have been proposed; yet, the efficacy of the proposed approaches and utility of proposed notions of disentanglement has not been challenged in prior work. In this paper, we provide a sober look on recent progress in the field and challenge some common assumptions."  
@@ -1080,14 +1090,19 @@ interesting older papers:
   - `video` <https://youtu.be/IyP1pxgM_eE?t=1h5m14s> (Murphy)
   - `code` <https://github.com/google/joint_vae>
 
+#### ["Understanding Disentangling in β-VAE"](https://arxiv.org/abs/1804.03599) Burgess et al.
+  `concept learning` `β-VAE`
+>	"We present new intuitions and theoretical assessments of the emergence of disentangled representation in variational autoencoders. Taking a rate-distortion theory perspective, we show the circumstances under which representations aligned with the underlying generative factors of variation of data emerge when optimising the modified ELBO bound in β-VAE, as training progresses. From these insights, we propose a modification to the training regime of β-VAE, that progressively increases the information capacity of the latent code during training. This modification facilitates the robust learning of disentangled representations in β-VAE, without the previous trade-off in reconstruction accuracy."  
+  - `post` <https://towardsdatascience.com/what-a-disentangled-net-we-weave-representation-learning-in-vaes-pt-1-9e5dbc205bd1>
+
 #### ["SCAN: Learning Abstract Hierarchical Compositional Visual Concepts"](https://arxiv.org/abs/1707.03389) Higgins, Sonnerat, Matthey, Pal, Burgess, Botvinick, Hassabis, Lerchner
-  `concept learning`
+  `concept learning` `β-VAE`
 >	"We first use the previously published beta-VAE (Higgins et al., 2017a) architecture to learn a disentangled representation of the latent structure of the visual world, before training SCAN to extract abstract concepts grounded in such disentangled visual primitives through fast symbol association."  
   - `post` <https://deepmind.com/blog/imagine-creating-new-visual-concepts-recombining-familiar-ones/>
   - `video` <https://youtu.be/XNGo9xqpgMo?t=18m43s> (Higgins)
 
 #### ["beta-VAE: Learning Basic Visual Concepts with a Constrained Variational Framework"](http://openreview.net/forum?id=Sy2fzU9gl) Higgins, Matthey, Pal, Burgess, Glorot, Botvinick, Mohamed, Lerchner
-  `concept learning`
+  `concept learning` `β-VAE`
 >	"This paper proposes a modification of the variational ELBO in encourage 'disentangled' representations, and proposes a measure of disentanglement."  
 >	"Beta-VAE is a VAE with beta coefficient in KL divergence term where beta=1 is exactly same formulation of vanilla VAE. By increasing beta, the weighted factor forces model to learn more disentangled representation than VAE. The authors also proposed disentanglement metric by training a simple classifier with low capacity and use it’s prediction accuracy. But the metric can be only calculated in simulator (ground truth generator) setting where we can control independent factors to generate different samples with controlled property."  
   - <http://tinyurl.com/jgbyzke> (demo)
@@ -1096,7 +1111,7 @@ interesting older papers:
   - `post` <https://lilianweng.github.io/lil-log/2018/08/12/from-autoencoder-to-beta-vae.html#beta-vae>
 
 #### ["Early Visual Concept Learning with Unsupervised Deep Learning"](http://arxiv.org/abs/1606.05579) Higgins, Matthey, Glorot, Pal, Uria, Blundell, Mohamed, Lerchner
-  `concept learning`
+  `concept learning` `β-VAE`
   - `video` <https://cds.cern.ch/record/2302480> (52:29) (Rezende)
   - `code` <https://github.com/loliverhennigh/Early-Visual-Concept-Learning-Recreation-of-Some-Results>
 
@@ -2101,7 +2116,8 @@ interesting older papers:
   - `code` <https://github.com/vitchyr/rlkit>
   - `code` <https://github.com/haarnoja/sac>
   - `code` <https://github.com/higgsfield/RL-Adventure-2>
-  - `paper` ["Soft Actor-Critic Algorithms and Applications"](https://drive.google.com/file/d/1J8gZXJN0RqH-TkTh4UEikYSy8AqPTy9x) by Haarnoja et al.
+  - `paper` ["Soft Actor-Critic Algorithms and Applications"](https://arxiv.org/abs/1812.05905) by Haarnoja et al.
+  - `paper` ["Learning to Walk via Deep Reinforcement Learning"](https://arxiv.org/abs/1812.11103) by Haarnoja et al.
 
 #### ["A Unified View of Entropy-Regularized Markov Decision Processes"](https://arxiv.org/abs/1705.07798) Neu, Gomez, Jonsson
   `soft Q-learning` `policy gradient` `maximum entropy policy`
@@ -2601,7 +2617,7 @@ interesting older papers:
 
 ----
 #### ["Unsupervised Control through Non-Parametric Discriminative Rewards"](https://arxiv.org/abs/1811.11359) Warde-Farley, Wiele, Kulkarni, Ionescu, Hansen, Mnih
-  `learning reward function` `intrinsic motivation`
+  `learning reward function` `intrinsic motivation` `DISCERN`
 >	"Learning to control an environment without hand-crafted rewards or expert data remains challenging and is at the frontier of reinforcement learning research. We present an unsupervised learning algorithm to train agents to achieve perceptually specified goals using only a stream of observations and actions. Our agent simultaneously learns a goal-conditioned policy and a goal achievement reward function that measures how similar a state is to the goal state. This dual optimization leads to a co-operative game, giving rise to a learned reward function that reflects similarity in controllable aspects of the environment instead of distance in the space of observations. We demonstrate the efficacy of our agent to learn, in an unsupervised manner, to reach a diverse set of goals on three domains – Atari, the DeepMind Control Suite and DeepMind Lab."  
 
 #### ["On Learning Intrinsic Rewards for Policy Gradient Methods"](https://arxiv.org/abs/1804.06459) Zheng, Oh, Singh
@@ -3283,6 +3299,11 @@ hieves."
 ### reinforcement learning - multi-agent
 
 ----
+#### ["Open-ended Learning in Symmetric Zero-sum Games"](https://arxiv.org/abs/1901.08106) Balduzzi, Garnelo, Bachrach, Czarnecki, Perolat, Jaderberg, Graepel
+>	"PSROrn = Rectified Nash matchmaking, upper left"  
+>	"Zero-sum games such as chess and poker are, abstractly, functions that evaluate pairs of agents, for example labeling them ‘winner’ and ‘loser’. If the game is approximately transitive, then selfplay generates sequences of agents of increasing strength. However, nontransitive games, such as rock-paper-scissors, can exhibit strategic cycles, and there is no longer a clear objective – we want agents to increase in strength, but against whom is unclear. In this paper, we introduce a geometric framework for formulating agent objectives in zero-sum games, in order to construct adaptive sequences of objectives that yield openended learning. The framework allows us to reason about population performance in nontransitive games, and enables the development of a new algorithm (rectified Nash response, PSROrN) that uses game-theoretic niching to construct diverse populations of effective agents, producing a stronger set of agents than existing algorithms."  
+  - `notes` <https://twitter.com/dbalduzzi/status/1089511401587200001>
+
 #### ["A Unified Game-Theoretic Approach to Multiagent Reinforcement Learning"](https://arxiv.org/abs/1711.00832) Lanctot, Zambaldi, Gruslys, Lazaridou, Tuyls, Perolat, Silver, Graepel
 >	"We first observe that independent reinforcement learners produce policies that can be jointly correlated, failing to generalize well during execution with other agents. We quantify this effect by proposing a new metric called joint policy correlation. We then propose an algorithm motivated by game-theoretic foundations, which generalises several previous approaches such as fictitious play, iterated best response, independent RL, and double oracle. We show that our algorithm can reduce joint policy correlation significantly in first-person coordination games, and finds robust counter-strategies in a common poker benchmark game."  
 
@@ -3489,6 +3510,7 @@ hieves."
   - `video` <https://vimeo.com/234953110> (Liang)
   - `notes` <https://northanapon.github.io/papers/2017/01/16/neural-symbolic-machine.html>
   - `notes` <https://github.com/carpedm20/paper-notes/blob/master/notes/neural-symbolic-machine.md>
+  - `code` <https://github.com/crazydonkey200/neural-symbolic-machines>
 
 #### ["Learning a Natural Language Interface with Neural Programmer"](http://arxiv.org/abs/1611.08945) Neelakantan, Le, Abadi, McCallum, Amodei
   `question answering over knowledge bases`

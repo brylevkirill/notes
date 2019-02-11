@@ -220,10 +220,11 @@
 ---
 ### knowledge graph - information extraction and integration
 
+  ["Data Integration and Machine Learning: A Natural Synergy"](https://youtube.com/watch?v=8RMSaFVPT1Q) tutorial by Luna Dong and Theo Rekatsinas `video`  
+  ["Constructing and Mining Web-Scale Knowledge Graphs"](http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs) tutorial by Evgeniy Gabrilovich and Antoine Bordes `video`  
+
   ["Knowledge Graph Construction From Text"](https://kgtutorial.github.io/?hootPostID=a5af9fab7ef1fb922ef7135a2e6d4f14) tutorial by Jay Pujara, Sameer Singh, Bhavana Dalvi `slides`  
   ["Constructing and Mining Web-scale Knowledge Graphs"](http://www.cs.technion.ac.il/~gabr/publications/papers/SIGIR-2016-KG-tutorial.pdf) tutorial by Evgeniy Gabrilovich and Nicolas Usunier `slides`  
-
-  ["Constructing and Mining Web-Scale Knowledge Graphs"](http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs) tutorial by Evgeniy Gabrilovich and Antoine Bordes `video`
 
 ----
 
@@ -979,6 +980,11 @@
 
 ----
 
+  [overview](https://youtube.com/watch?v=VrGM5Qw5xpo) by Sen Wu `video`  
+  ["Rapid Biomedical Knowledge Base Construction from Unstructured Data"](https://youtube.com/watch?v=gR_3_TDYb00) by Jason Fries `video`  
+
+----
+
   ["Fonduer: Knowledge Base Construction from Richly Formatted Data"](#fonduer-knowledge-base-construction-from-richly-formatted-data-wu-et-al) `paper` `summary` ([post](https://hazyresearch.github.io/snorkel/blog/fonduer.html))
 
 ----
@@ -1118,6 +1124,7 @@
 ----
 
   ["Building Watson: An Overview of the DeepQA Project"](https://aaai.org/ojs/index.php/aimagazine/article/view/2303) by Ferrucci et al. `paper`  
+  ["WatsonPaths: Scenario-Based Question Answering and Inference over Unstructured Information"](https://semanticscholar.org/paper/WatsonPaths%3A-Scenario-Based-Question-Answering-and-Lally-Bagchi/6c2ff8ee03978e710c67a8b0d086fc4115583c04) by Lally et al. `paper` ([overview](https://youtu.be/1n-cwezu8j4?t=54m42s) by David Ferrucci `video`)  
   [papers](https://dropbox.com/sh/udz1kpzzz95xfd6/AADgpBmFsTS1CtkbClfmbyyqa) from IBM Watson team  
 
 
@@ -1155,6 +1162,7 @@
   `Fonduer`
 >	"We introduce Fonduer, a knowledge base construction framework for richly formatted information extraction, where entity relations and attributes are conveyed via structural, tabular, visual, and textual expressions. Fonduer introduces a new programming model for KBC built around a unified data representation that accounts for three challenging characteristics of richly formatted data: (1) prevalent document-level relations, (2) multimodality, and (3) data variety. Fonduer is the first KBC system for richly formatted data and uses a human-in-the-loop paradigm for training machine learning systems, referred to as data programming. Data programming softens the burden of traditional supervision by only asking users to provide lightweight functions that programmatically assign (potentially noisy) labels to the input data. Fonduer’s unified data model, together with data programming, allows users to use domain expertise as weak signals of supervision that help guide the KBC process over richly formatted data. We evaluate Fonduer on four real-world applications over different domains and achieve an average improvement of 42 F1 points over the upper bound of state-of-the-art approaches. In some domains, our users have produced up to 1.87× the number of correct entires compared to expert-curated public knowledge bases. Fonduer scales gracefully to millions of documents and is used in both academia and industry to create knowledge bases for real-world problems in many domains."
 
+  - `video` <https://youtube.com/watch?v=VrGM5Qw5xpo> (Wu)
   - `post` <https://hazyresearch.github.io/snorkel/blog/fonduer.html>
   - `code` <https://github.com/HazyResearch/fonduer>
   - [**Snorkel**](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#weak-supervision---data-programming) project
@@ -1594,6 +1602,10 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 ### interesting papers - question answering over texts
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)
+
+
+#### ["Learning and Evaluating General Linguistic Intelligence"](https://arxiv.org/abs/1901.11373) Yogatama et al.
+>	"We define general linguistic intelligence as the ability to reuse previously acquired knowledge about a language's lexicon, syntax, semantics, and pragmatic conventions to adapt to new tasks quickly. Using this definition, we analyze state-of-the-art natural language understanding models and conduct an extensive empirical investigation to evaluate them against these criteria through a series of experiments that assess the task-independence of the knowledge being acquired by the learning process. In addition to task performance, we propose a new evaluation metric based on an online encoding of the test data that quantifies how quickly an existing agent (model) learns a new task. Our results show that while the field has made impressive progress in terms of model architectures that generalize to many tasks, these models still require a lot of in-domain training examples (e.g., for fine tuning, training task-specific modules), and are prone to catastrophic forgetting. Moreover, we find that far from solving general tasks (e.g., document question answering), our models are overfitting to the quirks of particular datasets (e.g., SQuAD). We discuss missing components and conjecture on how to make progress toward general linguistic intelligence."
 
 
 #### ["Adversarial Examples for Evaluating Reading Comprehension Systems"](https://arxiv.org/abs/1707.07328) Jia, Liang

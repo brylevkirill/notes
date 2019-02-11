@@ -12,7 +12,9 @@
   ["The Seven Tools of Causal Inference with Reflections on Machine Learning"](http://ftp.cs.ucla.edu/pub/stat_ser/r481.pdf) by Judea Pearl `paper`  
   ["Theoretical Impediments to Machine Learning"](http://web.cs.ucla.edu/~kaoru/theoretical-impediments.pdf) by Judea Pearl `paper`  
 
-  ["ML beyond Curve Fitting: An Intro to Causal Inference and do-Calculus"](http://inference.vc/untitled) by Ferenc Huszar
+  ["ML beyond Curve Fitting: An Intro to Causal Inference and do-Calculus"](http://inference.vc/untitled) by Ferenc Huszar  
+  ["Causal Inference 2: Illustrating Interventions via a Toy Example"](https://inference.vc/causal-inference-2-illustrating-interventions-in-a-toy-example) by Ferenc Huszar  
+  ["Causal Inference 3: Counterfactuals"](https://inference.vc/causal-inference-3-counterfactuals) by Ferenc Huszar  
 
   ["Causal Data Science"](https://medium.com/@akelleh/causal-data-science-721ed63a4027) by Adam Kelleher:
   - ["If Correlation Doesn’t Imply Causation, Then What Does?"](https://medium.com/@akelleh/if-correlation-doesnt-imply-causation-then-what-does-c74f20d26438)
@@ -21,6 +23,8 @@
   - ["A Technical Primer on Causality"](https://medium.com/@akelleh/a-technical-primer-on-causality-181db2575e41)
   - ["The Data Processing Inequality"](https://medium.com/@akelleh/the-data-processing-inequality-da242b40800b)
   - ["Causal Graph Inference"](https://medium.com/@akelleh/causal-graph-inference-b3e3afd47110)
+
+  ["Causal Inference and Counterfactual Reasoning"](https://causalinference.gitlab.io/icwsm-tutorial) tutorial by Emre Kiciman and Amit Sharma `slides`
 
   ["If Correlation Doesn’t Imply Causation, then What Does?"](http://michaelnielsen.org/ddi/if-correlation-doesnt-imply-causation-then-what-does) by Michael Nielsen  
   ["Causality in Machine Learning"](http://unofficialgoogledatascience.com/2017/01/causality-in-machine-learning.html) by Muralidharan et al.  
@@ -58,6 +62,7 @@
   ["Counterfactual Reasoning and Massive Data Sets"](https://youtube.com/watch?v=s37cIYDOM6s) by Leon Bottou `video`  
   ["The Missing Signal"](https://youtube.com/watch?v=DfJeaa--xO0) by Leon Bottou `video`  
   ["Counterfactual Evaluation and Learning for Search, Recommendation and Ad Placement"](http://www.cs.cornell.edu/~adith/CfactSIGIR2016/) by Thorsten Joachims and Adith Swaminathan `video`  
+  ["Causal Inference in Online Systems: Methods, Pitfalls and Best Practices"](https://mediasite.kellogg.northwestern.edu/Mediasite/Play/8e78dc83c6fb4d20abeeb18028a8f7071d?catalog=1533bdef-0c88-4513-ad97-5fce50c92e62) by Amit Sharma `video` ([slides](https://github.com/amit-sharma/causal-inference-tutorial))  
 
 
 
@@ -190,3 +195,15 @@
 
 #### ["SAM: Structural Agnostic Model, Causal Discovery and Penalized Adversarial Learning"](https://arxiv.org/abs/1803.04929) Kalainathan, Goudet, Guyon, Lopez-Paz, Sebag
 >	"We present the Structural Agnostic Model, a framework to estimate end-to-end non-acyclic causal graphs from observational data. In a nutshell, SAM implements an adversarial game in which a separate model generates each variable, given real values from all others. In tandem, a discriminator attempts to distinguish between the joint distributions of real and generated samples. Finally, a sparsity penalty forces each generator to consider only a small subset of the variables, yielding a sparse causal graph. SAM scales easily to hundreds variables. Our experiments show the state-of-the-art performance of SAM on discovering causal structures and modeling interventions, in both acyclic and non-acyclic graphs."
+
+
+#### ["Causal Reasoning from Meta-reinforcement Learning"](https://arxiv.org/abs/1901.08162) Dasgupta et al.
+>	"Discovering and exploiting the causal structure in the environment is a crucial challenge for intelligent agents. Here we explore whether causal reasoning can emerge via meta-reinforcement learning. We train a recurrent network with model-free reinforcement learning to solve a range of problems that each contain causal structure. We find that the trained agent can perform causal reasoning in novel situations in order to obtain rewards. The agent can select informative interventions, draw causal inferences from observational data, and make counterfactual predictions. Although established formal causal reasoning algorithms also exist, in this paper we show that such reasoning can arise from model-free reinforcement learning, and suggest that causal reasoning in complex settings may benefit from the more end-to-end learning-based approaches presented here. This work also offers new strategies for structured exploration in reinforcement learning, by providing agents with the ability to perform - and interpret - experiments."
+
+>	"Agents trained in this manner performed causal reasoning in three data settings: observational, interventional, and counterfactual. Our approach did not require explicit encoding of formal principles of causal inference. Rather, by optimizing an agent to perform a task that depended on causal structure, the agent learned implicit strategies to generate and use different kinds of available data for causal reasoning, including drawing causal inferences from passive observation, actively intervening, and making counterfactual predictions, all on held out causal CBNs that the agents had never previously seen. A consistent result in all three data settings was that our agents learned to perform good experiment design or active learning. That is, they learned a non-random data collection policy where they actively chose which nodes to intervene (or condition) on in the information phase, and thus could control the kinds of data they saw, leading to higher performance in the quiz phase than that from an agent with a random data collection policy."
+
+>	"We showed that agents learned to perform do-calculus. We saw that, the trained agent with access to only observational data received more reward than the highest possible reward achievable without causal knowledge. We further observed that this performance increase occurred selectively in cases where do-calculus made a prediction distinguishable from the predictions based on correlations – i.e. where the externally intervened node had a parent, meaning that the intervention resulted in a different graph."
+
+>	"We showed that agents learned to resolve unobserved confounders using interventions (which is impossible with only observational data). We saw that agents with access to interventional data performed better than agents with access to only observational data only in cases where the intervened node shared an unobserved parent (a confounder) with other variables in the graph."
+
+>	"We showed that agents learned to use counterfactuals. We saw that agents with additional access to the specific randomness in the test phase performed better than agents with access to only interventional data. We found that the increased performance was observed only in cases where the maximum mean value in the graph was degenerate, and optimal choice was affected by the latent randomness – i.e. where multiple nodes had the same value on average and the specific randomness could be used to distinguish their actual values in that specific case."

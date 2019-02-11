@@ -21,7 +21,7 @@
 
   ["Compression Progress: The Algorithmic Principle Behind Curiosity and Creativity"](https://youtube.com/watch?v=h7F5sCLIbKQ) by Juergen Schmidhuber `video`  
   ["The Next Big Step in AI: Planning with a Learned Model"](https://youtube.com/watch?v=6-Uiq8-wKrg) by Richard Sutton `video`  
-  ["How Does The Brain Learn so Much so Quickly?"](https://youtube.com/watch?v=cWzi38-vDbE) by Yann LeCun`video`  
+  ["The Next Step Towards Artificial Intelligence"](https://youtube.com/watch?v=U2mhZ9E8Fk8) by Yann LeCun`video`  
   ["Deep Learning and AI"](https://youtube.com/watch?v=izrG86jycck) by Geoffrey Hinton `video`  
   ["Building Machines That See, Learn and Think Like People"](https://youtube.com/watch?v=7ROelYvo8f0) by Joshua Tenenbaum `video`  
   ["AI: A Return To Meaning"](https://youtube.com/watch?v=1n-cwezu8j4) by David Ferucci `video`  
@@ -30,7 +30,7 @@
 ----
 
   [introductory course](https://agi.mit.edu) from MIT `video`  
-  [introductory course](https://youtube.com/channel/UCHBzJsIcRIVuzzHVYabikTQ/videos) from UC Berkeley `video`  
+  [introductory course](https://inst.eecs.berkeley.edu/~cs188) from UC Berkeley `video`  
 
 ----
 

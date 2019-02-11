@@ -1343,6 +1343,7 @@ Yoshua Bengio:
   - `video` <http://research.microsoft.com/apps/video/default.aspx?id=260019> (Ioffe)
   - `video` <http://videolectures.net/icml2015_ioffe_batch_normalization/> (Ioffe)
   - `video` <https://youtu.be/Xogn6veSyxA?t=3m46s> (Goodfellow)
+  - `video` <https://youtube.com/watch?v=OioFONrSETc> (Kilcher)
   - `video` <https://youtube.com/watch?v=-1yfr_YBzX4> (Lykov) `in russian`
   - `post` <https://kratzert.github.io/2016/02/12/understanding-the-gradient-flow-through-the-batch-normalization-layer.html>
   - `post` <https://kevinzakka.github.io/2016/09/14/batch_normalization/>
@@ -1855,6 +1856,7 @@ Yoshua Bengio:
   - `post` <http://wiseodd.github.io/techblog/2017/01/29/infogan/>
   - `code` <https://github.com/openai/InfoGAN>
   - `code` <https://github.com/wiseodd/generative-models/tree/master/GAN/infogan>
+  - `code` <https://github.com/Natsu6767/InfoGAN-PyTorch>
 
 
 #### ["BEGAN: Boundary Equilibrium Generative Adversarial Networks"](https://arxiv.org/abs/1703.10717) Berthelot, Schumm, Metz
@@ -2374,6 +2376,7 @@ x."
   - `video` <https://youtube.com/watch?v=rBCqOTEfxvg> (Kaiser)
   - `video` <https://youtube.com/watch?v=S0KakHcj_rs> (Palermo)
   - `video` <https://youtube.com/watch?v=iDulhoQ2pro> (Kilcher)
+  - `video` <https://youtube.com/watch?v=KMY2Knr4iAs> (Chen)
   - `video` <https://youtube.com/watch?v=KMgJFptbNlM> (Lyalin) `in russian`
   - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) `in russian`
   - `video` <https://youtu.be/LhH6wMvntSM?t=54m56s> (Suleymanov) `in russian`
