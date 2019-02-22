@@ -183,9 +183,10 @@
 	["The State of Techniques for Solving Large Imperfect-Information Games"](https://youtube.com/watch?v=Gz026reyVwc) by Tuomas Sandholm `video`  
 	["The State of Techniques for Solving Large Imperfect-Information Games, Including Poker"](https://youtube.com/watch?v=QgCxCeoW5JI) by Tuomas Sandholm `video`  
 
-	[discussion](https://reddit.com/r/MachineLearning/comments/7jn12v/ama_we_are_noam_brown_and_professor_tuomas) with Noam Brown and Tuomas Sandholm  
-	[discussion](https://youtube.com/watch?v=wKey6eKccYM) with Noam Brown `audio`  
+	[discussion](https://youtube.com/watch?v=b7bStIQovcY) with Tuomas Sandholm `video`  
 	[discussion](https://youtube.com/watch?v=ZlPPp_xokd4) with Tuomas Sandholm `audio`  
+	[discussion](https://youtube.com/watch?v=wKey6eKccYM) with Noam Brown `audio`  
+	[discussion](https://reddit.com/r/MachineLearning/comments/7jn12v/ama_we_are_noam_brown_and_professor_tuomas) with Noam Brown and Tuomas Sandholm  
 
 	[Libratus vs top professional players](https://youtube.com/watch?v=crgmYTMfrSc) match discussion `video`
 
@@ -682,12 +683,14 @@
 
 ----
 
-  ["How Can We Define Intrinsic Motivation"](#how-can-we-define-intrinsic-motivation-oudeyer-kaplan) by Oudeyer and Kaplan `paper` `summary`
+  ["How Can We Define Intrinsic Motivation"](http://pyoudeyer.com/epirob08OudeyerKaplan.pdf) by Oudeyer and Kaplan `paper`
 
   [**information theoretic and distributional models**](#exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models)  
   [**predictive models**](#exploration-and-intrinsic-motivation---predictive-models)  
   [**competence-based models**](#exploration-and-intrinsic-motivation---competence-based-models)  
   [**morphological models**](#exploration-and-intrinsic-motivation---morphological-models)  
+
+  ["Computational Theories of Curiosity-Driven Learning"](https://arxiv.org/abs/1802.10546) by Oudeyer `paper`
 
 ----
 
@@ -1187,6 +1190,7 @@
   ["Bayesian Reinforcement Learning: A Survey"](https://arxiv.org/abs/1609.04436) by Ghavamzadeh et al. `paper`  
   ["Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review"](https://arxiv.org/abs/1805.00909) by Sergey Levine `paper` ([talk](https://youtu.be/iOYiPhu5GEk?t=2m34s) `video`)  
 
+  ["Planning to Be Surprised: Optimal Bayesian Exploration in Dynamic Environments"](#planning-to-be-surprised-optimal-bayesian-exploration-in-dynamic-environments) by Sun et al. `paper` `summary`  
   ["Bayes-Adaptive POMDPs"](https://papers.nips.cc/paper/3333-bayes-adaptive-pomdps) by Ross et al. `paper`  
   ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](#efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search-guez-silver-dayan) by Guez et al. `paper` `summary`  
   ["Monte-Carlo Planning in Large POMDPs"](https://papers.nips.cc/paper/4031-monte-carlo-planning-in-large-pomdps) by Silver et al. `paper`
@@ -1952,11 +1956,20 @@ interesting recent papers:
   - [**intrinsic motivation**](#exploration-and-intrinsic-motivation)
 
 
+#### ["Computational Theories of Curiosity-Driven Learning"](https://arxiv.org/abs/1802.10546) Oudeyer
+>	"What are the functions of curiosity? What are the mechanisms of curiosity-driven learning? We approach these questions about the living using concepts and tools from machine learning and developmental robotics. We argue that curiosity-driven learning enables organisms to make discoveries to solve complex problems with rare or deceptive rewards. By fostering exploration and discovery of a diversity of behavioural skills, and ignoring these rewards, curiosity can be efficient to bootstrap learning when there is no information, or deceptive information, about local improvement towards these problems. We also explain the key role of curiosity for efficient learning of world models. We review both normative and heuristic computational frameworks used to understand the mechanisms of curiosity in humans, conceptualizing the child as a sense-making organism. These frameworks enable us to discuss the bi-directional causal links between curiosity and learning, and to provide new hypotheses about the fundamental role of curiosity in self-organizing developmental structures through curriculum learning. We present various developmental robotics experiments that study these mechanisms in action, both supporting these hypotheses to understand better curiosity in humans and opening new research avenues in machine learning and artificial intelligence. Finally, we discuss challenges for the design of experimental paradigms for studying curiosity in psychology and cognitive neuroscience."
+
 
 ---
 ### interesting papers - exploration and intrinsic motivation - bayesian exploration models
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)
+
+
+#### ["Planning to Be Surprised: Optimal Bayesian Exploration in Dynamic Environments"](https://arxiv.org/abs/1103.5708) Sun, Gomez, Schmidhuber
+>	"How should the agent choose the actions such that the knowledge about the environment accumulates as quickly as possible? In this paper, this question is addressed under a classical framework, in which the agent improves its model of the environment through probabilistic inference, and learning progress is measured in terms of Shannon information gain. We show that the agent can, at least in principle, optimally choose actions based on previous experiences, such that the cumulative expected information gain is maximized. We then consider a special case, namely exploration in finite MDPs, where we demonstrate, both in theory and through experiment, that the optimal Bayesian exploration strategy can be effectively approximated by solving a sequence of dynamic programming problems."
+
+>	"An optimal Bayesian framework for curiosity-driven exploration using learning progress. After proving that Information Gain is additive in expectation, a dynamic programming based algorithm was proposed to maximize Information Gain. Experiments however were limited to small tabular MDPs with a Dirichlet prior on transition probabilities."
 
 
 #### ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](https://arxiv.org/abs/1205.3109) Guez, Silver, Dayan
@@ -2346,6 +2359,8 @@ interesting recent papers:
   `exploration guided by prediction error`
 >	"Reinforcement learning algorithms rely on carefully engineering environment rewards that are extrinsic to the agent. However, annotating each environment with hand-designed, dense rewards is not scalable, motivating the need for developing reward functions that are intrinsic to the agent. Curiosity is a type of intrinsic reward function which uses prediction error as reward signal. In this paper: (a) We perform the first large-scale study of purely curiosity-driven learning, i.e. without any extrinsic rewards, across 54 standard benchmark environments, including the Atari game suite. Our results show surprisingly good performance, and a high degree of alignment between the intrinsic curiosity objective and the hand-designed extrinsic rewards of many game environments. (b) We investigate the effect of using different feature spaces for computing prediction error and show that random features are sufficient for many popular RL game benchmarks, but learned features appear to generalize better (e.g. to novel game levels in Super Mario Bros.). (c) We demonstrate limitations of the prediction-based rewards in stochastic setups."
 
+>	"Authors found that curiosity is correlated with the actual objectives of many environments, and report that using random features mitigates some of the non-stationarity implicit in methods based on curiosity."
+
   - <https://pathak22.github.io/large-scale-curiosity>
   - `video` <https://youtube.com/watch?v=l1FqtAHfJLI>
   - `video` <https://vk.com/video-44016343_456240849> (Efros)
@@ -2360,6 +2375,8 @@ interesting recent papers:
 >	"Our main contribution is in designing an intrinsic reward signal based on prediction error of the agent’s knowledge about its environment that scales to high-dimensional continuous state spaces like images, bypasses the hard problem of predicting pixels and is unaffected by the unpredictable aspects of the environment that do not affect the agent."
 
 >	"Adding representation network able to filter out information from the observed state that is not relevant to predict how the agent actions affect the future state."
+
+>	"Using inverse models to avoid learning anything that the agent cannot control to reduce risk and using prediction error in the latent space to perform reactive exploration."
 
   - `post` <https://pathak22.github.io/noreward-rl/index.html> (demo)
   - `video` <https://vimeo.com/237270588> (Pathak)

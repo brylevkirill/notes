@@ -609,6 +609,7 @@
   ["Snorkel: Rapid Training Data Creation with Weak Supervision"](#snorkel-rapid-training-data-creation-with-weak-supervision-ratner-bach-ehrenberg-fries-wu-re) `paper` `summary` ([talk](https://youtube.com/watch?v=HmocI2b5YfA) `video`)  
   ["Training Complex Models with Multi-Task Weak Supervision"](https://ajratner.github.io/assets/papers/mts-draft.pdf) `paper`  
   ["Snorkel MeTaL: Weak Supervision for Multi-Task Learning"](https://ajratner.github.io/assets/papers/deem-metal-prototype.pdf) `paper`  
+  ["Snorkel DryBell: A Case Study in Deploying Weak Supervision at Industrial Scale"](https://arxiv.org/abs/1812.00417) `paper`  
 
 ----
 
@@ -689,6 +690,7 @@
 
   - `post` <https://deepmind.com/blog/population-based-training-neural-networks/>
   - `video` <https://vimeo.com/250399261> (Jaderberg)
+  - `video` <https://youtube.com/watch?v=uuOoqAiB2g0> (Sazanovich) `in russian`
   - `paper` <https://arxiv.org/abs/1902.01894> by Li et al.
 
 

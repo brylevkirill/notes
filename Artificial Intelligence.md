@@ -29,20 +29,21 @@
 
 ----
 
+  ["Intelligence Confuses The Intelligent"](https://blog.piekniewski.info/2017/04/13/ai-confuses-intelligent) by Filip Piekniewski  
+  ["The Limitations of Deep Learning"](https://blog.keras.io/the-limitations-of-deep-learning.html) by Francois Chollet  
+  ["The Limitations of Deep Learning for Vision and How We Might Fix Them"](https://thegradient.pub/the-limitations-of-visual-deep-learning-and-how-we-might-fix-them) by Alan Yuille and Chenxi Liu  
+  ["Expressivity, Trainability, and Generalization in Machine Learning"](http://blog.evjang.com/2017/11/exp-train-gen.html) by Eric Jang  
+  ["Deep Reinforcement Learning Doesn't Work Yet"](https://www.alexirpan.com/2018/02/14/rl-hard.html) by Alex Irpan  
+  ["The Limits of Modern AI: A Story"](https://thebestschools.org/magazine/limits-of-modern-ai) by Erik Larson  
+
+----
+
   [introductory course](https://agi.mit.edu) from MIT `video`  
   [introductory course](https://inst.eecs.berkeley.edu/~cs188) from UC Berkeley `video`  
 
 ----
 
   ["Learning in Brains and Machines"](http://blog.shakirm.com/category/computational-and-biological-learning) by Shakir Mohamed
-
-----
-
-  ["Intelligence Confuses The Intelligent"](https://blog.piekniewski.info/2017/04/13/ai-confuses-intelligent) by Filip Piekniewski  
-  ["The Limitations of Deep Learning"](https://blog.keras.io/the-limitations-of-deep-learning.html) by Francois Chollet  
-  ["Expressivity, Trainability, and Generalization in Machine Learning"](http://blog.evjang.com/2017/11/exp-train-gen.html) by Eric Jang  
-  ["Deep Reinforcement Learning Doesn't Work Yet"](https://www.alexirpan.com/2018/02/14/rl-hard.html) by Alex Irpan  
-  ["The Limits of Modern AI: A Story"](https://thebestschools.org/magazine/limits-of-modern-ai) by Erik Larson  
 
 
 
@@ -57,13 +58,6 @@
 
   - [**decisions / actions**](#decisions--actions)  
 	How can beliefs conspire to produce decisions and actions?  
-
-----
-
-  - [**universal problem solving**](#interesting-papers---definitions-and-measures-of-intelligence)  
-  - [**machine reading**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#machine-reading-benchmarks)  
-  - [**robotics**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#robotics)  
-  - [**games**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games)  
 
 
 

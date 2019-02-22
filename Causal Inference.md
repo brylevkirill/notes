@@ -43,12 +43,22 @@
 
 ----
 
-  ["The New Science of Cause and Effect"](https://youtube.com/watch?v=ZaPV1OSEpHw) by Judea Pearl `video`  
-  ["The Mathematics of Causal Inference, with Reflections on Machine Learning and the Logic of Science"](https://youtube.com/watch?v=zHjdd--W6o4) by Judea Pearl `video`  
-
+  [tutorial](https://youtube.com/watch?v=CTcQlRSnvvM) by Bernhard Scholkopf `video`  
   [tutorial](https://youtube.com/watch?v=zvrcyqcN9Wo) by Jonas Peters `video`  
   [tutorial](https://youtube.com/watch?v=_wFagI5Fn9I) by Jonas Peters `video`  
-  [tutorial](https://youtube.com/watch?v=KsbftkwZTq4) by Bernhard Scholkopf and Dominik Janzing `video`  
+
+  ["Causal Inference in Everyday Machine Learning"](https://youtube.com/watch?v=HOgx_SBBzn0) tutorial by Ferenc Huszar `video`  
+  ["Causal Inference in Online Systems: Methods, Pitfalls and Best Practices"](https://mediasite.kellogg.northwestern.edu/Mediasite/Play/8e78dc83c6fb4d20abeeb18028a8f7071d?catalog=1533bdef-0c88-4513-ad97-5fce50c92e62) tutorial by Amit Sharma `video` ([slides](https://github.com/amit-sharma/causal-inference-tutorial))  
+  ["Counterfactual Inference"](https://facebook.com/nipsfoundation/videos/1291139774361116) tutorial by Susan Athey `video`  
+  ["Causal Inference for Observational Studies"](http://techtalks.tv/talks/causal-inference-for-observational-studies/62355/) tutorial by David Sontag and Uri Shalit `video` ([slides](https://cs.nyu.edu/~shalit/slides.pdf))  
+  ["Counterfactual Evaluation and Learning for Search, Recommendation and Ad Placement"](http://www.cs.cornell.edu/~adith/CfactSIGIR2016/) tutorial by Thorsten Joachims and Adith Swaminathan `video`  
+
+  ["Connections between Causality and Machine Learning"](https://youtube.com/watch?v=9pm0eXuiTZs) by Jonas Peters `video`
+
+  ["Causal Reinforcement Learning"](https://youtube.com/watch?v=bwz3NpVfz6k) by Elias Bareinboim `video`
+
+  ["Counterfactual Reasoning and Massive Data Sets"](https://youtube.com/watch?v=s37cIYDOM6s) by Leon Bottou `video`  
+  ["The Missing Signal"](https://youtube.com/watch?v=DfJeaa--xO0) by Leon Bottou `video`  
 
   ["Learning Causal Mechanisms"](https://facebook.com/iclr.cc/videos/2123421684353553?t=294) by Bernhard Scholkopf `video`  
   ["The Role of Causality for Interpretability"](https://vimeo.com/252188186) by Bernhard Scholkopf `video`  
@@ -56,13 +66,8 @@
   ["Toward Causal Machine Learning"](https://youtube.com/watch?v=ooeRlw3U2zU) by Bernhard Scholkopf `video`  
   ["Statistical and Causal Approaches to Machine Learning"](https://youtu.be/ek9jwRA2Jio?t=26m) by Bernhard Scholkopf `video`  
 
-  ["Causal Inference for Observational Studies"](http://techtalks.tv/talks/causal-inference-for-observational-studies/62355/) by David Sontag and Uri Shalit `video` ([slides](https://cs.nyu.edu/~shalit/slides.pdf))  
-  ["Counterfactual Inference"](https://facebook.com/nipsfoundation/videos/1291139774361116) tutorial by Susan Athey `video`  
-  ["Connections between Causality and Machine Learning"](https://youtube.com/watch?v=9pm0eXuiTZs) by Jonas Peters `video`  
-  ["Counterfactual Reasoning and Massive Data Sets"](https://youtube.com/watch?v=s37cIYDOM6s) by Leon Bottou `video`  
-  ["The Missing Signal"](https://youtube.com/watch?v=DfJeaa--xO0) by Leon Bottou `video`  
-  ["Counterfactual Evaluation and Learning for Search, Recommendation and Ad Placement"](http://www.cs.cornell.edu/~adith/CfactSIGIR2016/) by Thorsten Joachims and Adith Swaminathan `video`  
-  ["Causal Inference in Online Systems: Methods, Pitfalls and Best Practices"](https://mediasite.kellogg.northwestern.edu/Mediasite/Play/8e78dc83c6fb4d20abeeb18028a8f7071d?catalog=1533bdef-0c88-4513-ad97-5fce50c92e62) by Amit Sharma `video` ([slides](https://github.com/amit-sharma/causal-inference-tutorial))  
+  ["The New Science of Cause and Effect"](https://youtube.com/watch?v=ZaPV1OSEpHw) by Judea Pearl `video`  
+  ["The Mathematics of Causal Inference, with Reflections on Machine Learning and the Logic of Science"](https://youtube.com/watch?v=zHjdd--W6o4) by Judea Pearl `video`  
 
 
 
@@ -139,6 +144,7 @@
 >	"This work shows how to leverage causal inference to understand the behavior of complex learning systems interacting with their environment and predict the consequences of changes to the system. Such predictions allow both humans and algorithms to select the changes that would have improved the system performance. This work is illustrated by experiments on the ad placement system associated with the Bing search engine."
 
   - `video` <https://youtube.com/watch?v=qmQceWeYg04> (Bottou)
+  - `video` <https://youtu.be/_RtxTpOb8e4?t=52m6s> (Huszar)
 
 
 #### ["Discovering Causal Signals in Images"](https://arxiv.org/abs/1605.08179) Lopez-Paz, Nishihara, Chintala, Scholkopf, Bottou

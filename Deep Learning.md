@@ -156,10 +156,11 @@
 
 ----
 
+  ["Theories of Deep Learning"](https://stats385.github.io) course from Stanford ([videos](https://researchgate.net/project/Theories-of-Deep-Learning))  
+  ["Theoretical Deep Learning"](https://github.com/deepmipt/tdl) course from MIPT ([videos](https://youtube.com/playlist?list=PLt1IfGj6-_-dMa3Ff8mwjq1yOGijJ89Wa)) `in russian`  
+
   ["Toward Theoretical Understanding of Deep Learning"](https://facebook.com/icml.imls/videos/428562880991566) by Sanjeev Arora `video`  
   ["Interplay between Optimization and Generalization in Deep Neural Networks"](https://youtube.com/watch?v=cHjI37DsQCQ) by Keerthi Selvaraj `video`  
-
-  ["Theories of Deep Learning"](https://stats385.github.io) course from Stanford ([videos](https://researchgate.net/project/Theories-of-Deep-Learning))
 
 ----
 
@@ -1299,6 +1300,7 @@ Yoshua Bengio:
 
   - <https://dmitryulyanov.github.io/deep_image_prior>
   - `video` <https://youtube.com/watch?v=fj0yLTa_bmA> (Ulyanov)
+  - `post` <https://towardsdatascience.com/demystifying-deep-image-prior-7076e777e5ba>
   - `code` <https://github.com/DmitryUlyanov/deep-image-prior>
 
 
