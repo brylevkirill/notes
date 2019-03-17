@@ -338,8 +338,11 @@
 ---
 ### unsupervised learning
 
-  [tutorial](https://facebook.com/nipsfoundation/videos/795861577420073) by Alex Graves and Marc Aurelio Ranzato `video`  
-  ["Goals and Principles of Representation Learning"](https://youtube.com/watch?v=2vxZbZC21Gg) by Ferenc Huszar `video`  
+  [tutorial](https://facebook.com/nipsfoundation/videos/795861577420073) by Alex Graves and Marc Aurelio Ranzato `video`
+
+  [course](https://sites.google.com/view/berkeley-cs294-158-sp19) from UC Berkeley `video`
+
+  ["Goals and Principles of Representation Learning"](https://youtube.com/watch?v=2vxZbZC21Gg) by Ferenc Huszar `video`
 
 ----
 
@@ -1350,7 +1353,7 @@ Yoshua Bengio:
   - `post` <https://kratzert.github.io/2016/02/12/understanding-the-gradient-flow-through-the-batch-normalization-layer.html>
   - `post` <https://kevinzakka.github.io/2016/09/14/batch_normalization/>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/icml/IoffeS15>
-  - `paper` ["How Does Batch Normalization Help Optimization (No, It Is Not About Internal Covariate Shift)"](https://arxiv.org/abs/1805.11604) by Santurkar et al.
+  - `paper` ["How Does Batch Normalization Help Optimization?"](https://arxiv.org/abs/1805.11604) by Santurkar et al.
 
 
 #### ["Self-Normalizing Neural Networks"](https://arxiv.org/abs/1706.02515) Klambauer, Unterthiner, Mayr, Hochreiter

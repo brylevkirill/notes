@@ -970,7 +970,7 @@ interesting older papers:
 >	"Given just a few, or even a single, examples of an unseen class, it is possible to attain high classification accuracy on ImageNet using Matching Networks. Matching Networks are trained in the same way as they are tested: by presenting a series of instantaneous one shot learning training tasks, where each instance of the training set is fed into the network in parallel. Matching Networks are then trained to classify correctly over many different input training sets. The effect is to train a network that can classify on a novel data set without the need for a single step of gradient descent."  
 >	"End-to-end trainable K-nearest neighbors which accepts support sets of images as input and maps them to desired labels. Attention LSTM takes into account all samples of subset when computing the pair-wise cosine distance between samples."  
   - `video` <https://youtu.be/QIcpGa-_bvA?t=31m41s> (Vinyals)
-  - `poster` <https://pbs.twimg.com/media/Cy7Eyh5WgAAZIw2.jpg:large>
+  - `notes` <https://pbs.twimg.com/media/Cy7Eyh5WgAAZIw2.jpg:large>
   - `notes` <https://theneuralperspective.com/2017/01/03/matching-networks-for-one-shot-learning/>
   - `notes` <https://blog.acolyer.org/2017/01/03/matching-networks-for-one-shot-learning/>
 
@@ -1309,7 +1309,7 @@ interesting older papers:
   `unifying GANs and VAEs`
 >	"We introduce hierarchical implicit models. HIMs combine the idea of implicit densities with hierarchical Bayesian modeling, thereby defining models via simulators of data with rich hidden structure."  
 >	"We develop likelihood-free variational inference, a scalable variational inference algorithm for HIMs. Key to LFVI is specifying a variational family that is also implicit. This matches the model's flexibility and allows for accurate approximation of the posterior."  
-  - `poster` <http://dustintran.com/papers/TranRanganathBlei2017_poster.pdf>
+  - `notes` <http://dustintran.com/papers/TranRanganathBlei2017_poster.pdf>
   - `post` <http://dustintran.com/blog/deep-and-hierarchical-implicit-models>
   - `post` <https://bayesgroup.github.io/sufficient-statistics/posts/hierarchical-implicit-models-and-likelihood-free-variational-inference/> `in russian`
 
@@ -1934,6 +1934,11 @@ interesting older papers:
   - `video` <https://youtu.be/9z3_tJAu7MQ?t=22m45s> (Wayne)
 
 ----
+#### ["Diagnosing Bottlenecks in Deep Q-learning Algorithms"](https://arxiv.org/abs/1902.10250) Fu, Kumar, Soh, Levine
+  `Q-learning`
+>	"The behavior of Q-learning methods with function approximation is poorly understood, both theoretically and empirically. In this work, we aim to experimentally investigate potential issues in Q-learning, by means of a "unit testing" framework where we can utilize oracles to disentangle sources of error. Specifically, we investigate questions related to function approximation, sampling error and nonstationarity, and where available, verify if trends found in oracle settings hold true with modern deep RL methods. We find that large neural network architectures have many benefits with regards to learning stability; offer several practical compensations for overfitting; and develop a novel sampling method based on explicitly compensating for function approximation error that yields fair improvement on high-dimensional continuous control domains."  
+>	"Ever wonder if Q-learning will converge? Should you use a big or small model? On-policy or off-policy data? Many or few grad steps?"  
+
 #### ["Deep Reinforcement Learning and the Deadly Triad"](https://arxiv.org/abs/1812.02648) Hasselt, Doron, Strub, Hessel, Sonnerat, Modayil
   `Q-learning`
 >	"We know from reinforcement learning theory that temporal difference learning can fail in certain cases. Sutton and Barto identify a deadly triad of function approximation, bootstrapping, and off-policy learning. When these three properties are combined, learning can diverge with the value estimates becoming unbounded. However, several algorithms successfully combine these three properties, which indicates that there is at least a partial gap in our understanding. In this work, we investigate the impact of the deadly triad in practice, in the context of a family of popular deep reinforcement learning models - deep Q-networks trained with experience replay - analysing how the components of this system play a role in the emergence of the deadly triad, and in the agent’s performance."  
@@ -2919,6 +2924,10 @@ interesting older papers:
 [**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---hierarchical-reinforcement-learning)
 
 ----
+#### ["The Termination Critic"](https://arxiv.org/abs/1902.09996) Harutyunyan, Dabney, Borsa, Heess, Munos, Precup
+>	"We consider the problem of autonomously discovering behavioral abstractions, or options, for reinforcement learning agents. We propose an algorithm that focuses on the termination condition, as opposed to -- as is common -- the policy. The termination condition is usually trained to optimize a control objective: an option ought to terminate if another has better value. We offer a different, information-theoretic perspective, and propose that terminations should focus instead on the compressibility of the option's encoding -- arguably a key reason for using abstractions. To achieve this algorithmically, we leverage the classical options framework, and learn the option transition model as a "critic" for the termination condition."  
+  - `notes` <https://pbs.twimg.com/media/DtxEP5BUUAAVP4h.jpg>
+
 #### ["Human-level Performance in First-person Multiplayer Games with Population-based Deep Reinforcement Learning"](https://arxiv.org/abs/1807.01281) Jaderberg et al.
   `FTW`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#human-level-performance-in-first-person-multiplayer-games-with-population-based-deep-reinforcement-learning-jaderberg-et-al>
@@ -3175,6 +3184,7 @@ interesting older papers:
   `reinforcement learning from preferences`
 >	"Algorithm provides two possible solutions for task to human who indicates which one is better. The process is repeated and the algorithm learns from 900 bits of feedback how to solve the problem."  
   - `video` <https://drive.google.com/drive/folders/0BwcFziBYuA8RM2NTdllSNVNTWTg> (demo)
+  - `video` <https://youtube.com/watch?v=6h3_lTDFMb0> (Yagudin) `in russian`
   - `post` <https://deepmind.com/blog/learning-through-human-feedback/>
   - `post` <https://blog.openai.com/deep-reinforcement-learning-from-human-preferences/>
   - `code` <https://github.com/nottombrown/rl-teacher>
@@ -3340,6 +3350,7 @@ interesting older papers:
 
 #### ["Stabilising Experience Replay for Deep Multi-Agent Reinforcement Learning"](https://arxiv.org/abs/1702.08887) Foerster, Nardelli, Farquhar, Afouras, Torr, Kohli, Whiteson
   - `video` <https://vimeo.com/238243859> (Foerster)
+  - `post` <https://parnian.ghost.io/understanding-stabilising-experience-replay-for-deep-multi-agent-reinforcement-learning>
 
 ----
 #### ["Emergent Complexity via Multi-Agent Competition"](https://arxiv.org/abs/1710.03748) Bansal, Pachocki, Sidor, Sutskever, Mordatch

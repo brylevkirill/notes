@@ -359,6 +359,7 @@
 
   [course](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html) by David Silver `video`  
   [course](https://udacity.com/course/reinforcement-learning--ud600) by Michael Littman `video`  
+  [course](http://web.mit.edu/dimitrib/www/RLbook.html) by Dimitri Bertsekas `video`  
   [course](https://github.com/yandexdataschool/Practical_RL/) from Yandex `video` `in russian`  
 
 ----
@@ -398,13 +399,13 @@
 ---
 ### deep reinforcement learning
 
+  ["Spinning Up in Deep RL"](https://spinningup.openai.com) from OpenAI
+
   ["An Introduction to Deep Reinforcement Learning"](https://arxiv.org/abs/1811.12560) by François-Lavet et al. `paper`  
   ["A Brief Survey of Deep Reinforcement Learning"](https://arxiv.org/abs/1708.05866) by Arulkumaran et al. `paper`  
 
   ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1810.06339) by Yuxi Li `book`  
   ["Deep Reinforcement Learning Hands-On"](https://amazon.com/gp/product/1788834240) by Maxim Lapan `book`  
-
-  ["Spinning Up in Deep RL"](https://spinningup.openai.com)
 
 ----
 
@@ -412,11 +413,12 @@
   [course](http://rll.berkeley.edu/deeprlcourse) by Sergey Levine, John Schulman and Chelsea Finn ([videos](https://youtube.com/playlist?list=PLkFD6_40KJIznC9CDbVTjAF2oyt8_VAe3))  
   [course](http://katefvision.github.io) by Ruslan Salakhutdinov and Katerina Fragkiadaki ([videos](https://youtube.com/playlist?list=PLpIxOj-HnDsNPFdu2UqCu2McJKHs-eWXv))  
 
-  [Deep RL Bootcamp at Berkeley](https://sites.google.com/view/deep-rl-bootcamp/lectures) `video`  
+  ["Spinning Up in Deep RL"](https://youtube.com/watch?v=fdY7dt3ijgY) workshop by OpenAI `video`  
+  [Deep RL Bootcamp](https://sites.google.com/view/deep-rl-bootcamp/lectures) workshop at Berkeley `video`  
 
   ["The Nuts and Bolts of Deep RL Research"](https://youtube.com/watch?v=8EcdaCk9KaQ) by John Schulman `video`
 	([slides](http://rll.berkeley.edu/deeprlcourse/docs/nuts-and-bolts.pdf),
-	[write-up](https://github.com/williamFalcon/DeepRLHacks))  
+	[write-up](https://github.com/williamFalcon/DeepRLHacks))
 
 ----
 
@@ -1704,6 +1706,7 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=6fKG4wJ7uBk> (Baudis)
   - `video` <https://youtube.com/watch?v=XuzIqE2IshY> (Kington)
   - `video` <https://youtube.com/watch?v=UzYeqAJ2bA8> (Raval)
+  - `video` <https://youtube.com/watch?v=_x9bXso3wo4> (Hinzman)
   - `video` <https://youtu.be/V0HNXVSrvhg?t=1h20m45s> + <https://youtu.be/Lz5_xFGt2hA?t=3m11s> (Grinchuk) `in russian`
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
   - `video` <https://youtu.be/zHjE07NBA_o?t=1h10m24s> (Kozlov) `in russian`
@@ -2698,6 +2701,7 @@ interesting recent papers:
 
   - `video` <https://youtu.be/qLaDWKd61Ig?t=32m52s> (Silver)
   - `video` <https://youtu.be/fevMOp5TDQs?t=53m42s> (Mnih)
+  - `video` <https://youtube.com/watch?v=FTfkpCCaORI> (Rana)
   - `video` <https://yadi.sk/i/yBO0q4mI3GAxYd> (15:02) (Fritzler) `in russian`
   - `video` <https://youtu.be/fnwo3GCmyEo?t=18m54s> (Fritzler) `in russian`
   - `video` <https://youtu.be/mrgJ53TIcQc?t=17m31s> (Pavlov) `in russian`

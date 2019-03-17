@@ -20,6 +20,8 @@
 
 ----
 
+  ["An Introduction to Neural Information Retrieval"](https://www.microsoft.com/en-us/research/uploads/prod/2017/06/fntir2018-neuralir-mitra.pdf) by Bhaskar Mitra and Nick Craswell `paper`
+
   ["Neural Networks for Information Retrieval"](http://nn4ir.com) tutorials (ECIR 2018, WSDM 2018, SIGIR 2017) `slides`  
   ["Neural Text Embeddings for Information Retrieval"](https://microsoft.com/en-us/research/event/wsdm-2017-tutorial-neural-text-embeddings-information-retrieval/)
 	tutorial by Bhaskar Mitra and Nick Craswell (WSDM 2017)
