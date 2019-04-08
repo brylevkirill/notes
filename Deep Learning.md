@@ -36,14 +36,9 @@
 #### introduction
 
   [overview](http://www.deeplearningbook.org/contents/intro.html) by Ian Goodfellow, Yoshua Bengio, Aaron Courville  
-  [overview](http://goo.gl/gvkiaR) by Yann LeCun, Yoshua Bengio, Geoffrey Hinton  
-  [overview](http://yyue.blogspot.ru/2015/01/a-brief-overview-of-deep-learning.html) by Ilya Sutskever  
 
-  [overview](http://youtube.com/watch?v=0YLpp_TVhLY) by Juergen Schmidhuber `video`  
-  [overview](http://youtube.com/watch?v=izrG86jycck) by Geoffrey Hinton `video`  
-  [overview](http://youtube.com/watch?v=zaoL0LUctK4) by Yann LeCun `video`  
-  [overview](http://youtube.com/watch?v=11rsu_WwZTc) by Yoshua Bengio `video`  
-
+  ["Deep Learning And Shallow Data"](https://blog.piekniewski.info/2019/04/07/deep-learning-and-shallow-data) by Filip Piekniewski  
+  ["The Limitations of Deep Learning for Vision and How We Might Fix Them"](https://thegradient.pub/the-limitations-of-visual-deep-learning-and-how-we-might-fix-them) by Alan Yuille and Chenxi Liu  
   ["The Limitations of Deep Learning"](http://blog.keras.io/the-limitations-of-deep-learning.html) by Francois Chollet ([talk](https://youtube.com/watch?v=MUF32XHqM34) `video`)  
   ["The Future of Deep Learning"](http://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34?t=11m43s) `video`)  
 
@@ -1285,6 +1280,7 @@ Yoshua Bengio:
 
   - `video` <https://youtube.com/watch?v=EK61htlw8hY> (Hinton)
   - `video` <http://videolectures.net/deeplearning2017_larochelle_neural_networks/> (part 2, 1:28:45) (Larochelle)
+  - `video` <https://youtube.com/watch?v=-4PGNj1CqZc> (Truskovskyi) `in russian`
   - `paper` ["Distilling a Neural Network Into a Soft Decision Tree"](https://arxiv.org/abs/1711.09784) by Frosst, Hinton
 
 
@@ -1926,6 +1922,7 @@ Yoshua Bengio:
 
   - `video` <http://youtube.com/watch?v=rjZL7aguLAs> (Kingma)
   - `video` <http://videolectures.net/deeplearning2015_courville_autoencoder_extension/> (Courville)
+  - `video` <https://youtube.com/watch?v=Tc-XfiDPLf4> (Dolatabadi)
   - `video` <https://youtu.be/_qrHcSdQ2J4?t=1h37m21s> (Vetrov) `in russian`
   - `paper` <http://arxiv.org/abs/1606.05908> + <https://github.com/cdoersch/vae_tutorial> (tutorial)
   - `paper` <http://arxiv.org/abs/1610.09296> (explanation)
@@ -2389,6 +2386,8 @@ x."
   - `post` <https://jalammar.github.io/illustrated-transformer/>
   - `post` <http://nlp.seas.harvard.edu/2018/04/03/attention.html>
   - `post` <https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/>
+  - `post` <https://medium.com/@adityathiruvengadam/transformer-architecture-attention-is-all-you-need-aeccd9f50d09>
+  - `post` <https://staff.fnwi.uva.nl/s.abnar/?p=108>
   - `notes` <https://ricardokleinklein.github.io/2017/11/16/Attention-is-all-you-need.html>
   - `notes` <https://blog.tomrochette.com/machine-learning/papers/ashish-vaswani-attention-is-all-you-need>
   - `notes` <https://medium.com/@sharaf/a-paper-a-day-24-attention-is-all-you-need-26eb2da90a91>

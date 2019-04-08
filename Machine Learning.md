@@ -79,6 +79,7 @@
 
   [course](http://coursera.org/specializations/machine-learning-data-analysis) by Yandex `video` `in russian`  
   [course](https://github.com/Yorko/mlcourse_open) by OpenDataScience `video` `in russian`  
+  [course](https://youtube.com/playlist?list=PLEqoHzpnmTfDwuwrFHWVHdr1-qJsfqCUX) by Evgeny Sokolov `video` `in russian`  
   [course](http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC) by Konstantin Vorontsov `video` `in russian`  
   [course](http://youtube.com/playlist?list=PLlb7e2G7aSpTd91sd82VxWNdtTZ8QnFne) by Igor Kuralenok `video` `in russian`  
   [course](http://youtube.com/playlist?list=PLlb7e2G7aSpSWVExpq74FnwFnWgLby56L) by Igor Kuralenok `video` `in russian`  
@@ -137,7 +138,7 @@
 
   [videos](https://github.com/dustinvtran/ml-videos)
 
-  - NIPS 2018
+  - NeurIPS 2018
 	<https://neurips.cc/Conferences/2018/Videos> `video`  
 	<https://facebook.com/pg/nipsfoundation/videos> `video`  
 
@@ -609,7 +610,7 @@
   ["Snorkel: Rapid Training Data Creation with Weak Supervision"](#snorkel-rapid-training-data-creation-with-weak-supervision-ratner-bach-ehrenberg-fries-wu-re) `paper` `summary` ([talk](https://youtube.com/watch?v=HmocI2b5YfA) `video`)  
   ["Training Complex Models with Multi-Task Weak Supervision"](https://ajratner.github.io/assets/papers/mts-draft.pdf) `paper`  
   ["Snorkel MeTaL: Weak Supervision for Multi-Task Learning"](https://ajratner.github.io/assets/papers/deem-metal-prototype.pdf) `paper`  
-  ["Snorkel DryBell: A Case Study in Deploying Weak Supervision at Industrial Scale"](https://arxiv.org/abs/1812.00417) `paper`  
+  ["Snorkel DryBell: A Case Study in Deploying Weak Supervision at Industrial Scale"](https://arxiv.org/abs/1812.00417) `paper` ([post](https://ai.googleblog.com/2019/03/harnessing-organizational-knowledge-for.html))  
 
 ----
 

@@ -61,6 +61,17 @@ interesting older papers:
   - `post` <https://medium.com/bethgelab/neural-networks-seem-to-follow-a-puzzlingly-simple-strategy-to-classify-images-f4229317261f>
   - `post` <https://blog.evjang.com/2019/02/bagnet.html>
 
+#### ["Excessive Invariance Causes Adversarial Vulnerability"](https://arxiv.org/abs/1811.00401) Jacobsen, Behrmann, Zemel, Bethge
+  `generalization` `ICLR 2019`
+>	"Deep neural networks exhibit striking failures on out-of-distribution inputs. One core idea of adversarial example research is to reveal neural network errors under such distribution shifts. We decompose these errors into two complementary sources: sensitivity and invariance. We show deep networks are not only too sensitive to task-irrelevant changes of their input, as is well-known from epsilon-adversarial examples, but are also too invariant to a wide range of task-relevant changes, thus making vast regions in input space vulnerable to adversarial attacks. We show such excessive invariance occurs across various tasks and architecture types. On MNIST and ImageNet one can manipulate the class-specific content of almost any image without changing the hidden activations. We identify an insufficiency of the standard cross-entropy loss as a reason for these failures. Further, we extend this objective based on an information-theoretic analysis so it encourages the model to consider all task-dependent features in its decision. This provides the first approach tailored explicitly to overcome excessive invariance and resulting vulnerabilities."  
+>	"Failures of deep networks under distribution shift and their difficulty in out-of-distribution generalization are prime examples of the limitations in current machine learning models. The field of adversarial example research aims to close this gap from a robustness point of view. While a lot of work has studied epsilon-adversarial examples, recent trends extend the efforts towards the unrestricted case. However, adversarial examples with no restriction are hard to formalize beyond testing error. We introduce a reverse view on the problem to: (1) show that a major cause for adversarial vulnerability is excessive invariance to semantically meaningful variations, (2) demonstrate that this issue persists across tasks and architectures; and (3) make the control of invariance tractable via fully-invertible networks."  
+>	"We propose an invertible network architecture that gives explicit access to its decision space, enabling class-specific manipulations to images while leaving all dimensions of the representation seen by the final classifier invariant."  
+>	"We demonstrated how a bijective network architecture enables us to identify large adversarial subspaces on multiple datasets like the adversarial spheres, MNIST and ImageNet. Afterwards, we formalized the distribution shifts causing such undesirable behavior via information theory. Using this framework, we find one of the major reasons is the insufficiency of the vanilla cross-entropy loss to learn semantic representations that capture all task-dependent variations in the input. We extend the loss function by components that explicitly encourage a split between semantically meaningful and nuisance features. Finally, we empirically show that this split can remove unwanted invariances by performing a set of targeted invariance-based distribution shift experiments."  
+>	"All images shown cause a competitive ImageNet-trained network to output the exact same probabilities over all 1000 classes (logits shown above each image). The leftmost image is from the ImageNet validation set; all other images are constructed such that they match the non-class related information of images taken from other classes. The excessive invariance revealed by this set of adversarial examples demonstrates that the logits contain only a small fraction of the information perceptually relevant to humans for discrimination between the classes."  
+>	"The invariance perspective suggests that adversarial vulnerability is a consequence of narrow learning, yielding classifiers that rely only on few highly predictive features in their decisions. This has
+also been supported by the observation that deep networks strongly rely on spectral statistical regularities, or stationary statistics to make their decisions, rather than more abstract features like shape and appearance. We hypothesize that a major reason for this excessive invariance can be understood from an information-theoretic viewpoint of cross-entropy, which maximizes a bound on the mutual information between labels and representation, giving no incentive to explain all class-dependent aspects of the input. This may be desirable in some cases, but to achieve truly general understanding of a scene or an object, machine learning models have to learn to successfully separate essence from nuisance and subsequently generalize even under shifted input distributions."  
+  - `post` <https://medium.com/@j.jacobsen/deep-classifiers-ignore-almost-everything-they-see-and-how-we-may-be-able-to-fix-it-a6888012516f>
+
 #### ["Measuring the Tendency of CNNs to Learn Surface Statistical Regularities"](https://arxiv.org/abs/1711.11561) Jo, Bengio
   `generalization`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#measuring-the-tendency-of-cnns-to-learn-surface-statistical-regularities-jo-bengio>
@@ -701,6 +712,7 @@ interesting older papers:
   - `video` <https://youtu.be/nqiUFc52g78?t=58m45s> (Graves)
   - `video` <https://facebook.com/iclr.cc/videos/1713144705381255?t=2368> (Graves)
   - `video` <https://vimeo.com/240428387#t=1h28m28s> (Vinyals)
+  - `video` <https://youtube.com/watch?v=xbWzoAbb8dM> (Laver)
   - `post` <http://distill.pub/2016/augmented-rnns/>
   - `post` <https://www.evernote.com/shard/s189/sh/fd165646-b630-48b7-844c-86ad2f07fcda/c9ab960af967ef847097f21d94b0bff7>
   - `code` <https://github.com/DeNeutoy/act-tensorflow>
@@ -758,6 +770,7 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=akq6PNnkKY8> (Ou)
   - `post` <https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/>
   - `post` <https://towardsdatascience.com/demystifying-matrix-capsules-with-em-routing-part-1-overview-2126133a8457>
+  - `post` <https://staff.fnwi.uva.nl/s.abnar/?p=108>
   - `notes` <https://blog.acolyer.org/2017/11/14/matrix-capsules-with-em-routing/>
   - `code` <https://github.com/loretoparisi/CapsNet>
 
@@ -970,6 +983,7 @@ interesting older papers:
 >	"Given just a few, or even a single, examples of an unseen class, it is possible to attain high classification accuracy on ImageNet using Matching Networks. Matching Networks are trained in the same way as they are tested: by presenting a series of instantaneous one shot learning training tasks, where each instance of the training set is fed into the network in parallel. Matching Networks are then trained to classify correctly over many different input training sets. The effect is to train a network that can classify on a novel data set without the need for a single step of gradient descent."  
 >	"End-to-end trainable K-nearest neighbors which accepts support sets of images as input and maps them to desired labels. Attention LSTM takes into account all samples of subset when computing the pair-wise cosine distance between samples."  
   - `video` <https://youtu.be/QIcpGa-_bvA?t=31m41s> (Vinyals)
+  - `video` <https://youtube.com/watch?v=Q8AtnbHOQ-4> (Ghosh)
   - `notes` <https://pbs.twimg.com/media/Cy7Eyh5WgAAZIw2.jpg:large>
   - `notes` <https://theneuralperspective.com/2017/01/03/matching-networks-for-one-shot-learning/>
   - `notes` <https://blog.acolyer.org/2017/01/03/matching-networks-for-one-shot-learning/>
@@ -1069,6 +1083,7 @@ interesting older papers:
 >	"Classical neural approaches to this learning problem - e.g., autoencoding and density models - are required to capture only the distribution of observed images, and there is no explicit mechanism to encourage learning of how different views of the same 3D scene relate to one another. The expectation is that statistical compression principles will be sufficient to enable networks to discover the 3D structure of the environment; however, in practice, they fall short of achieving this kind of meaningful representation and instead focus on regularities of colors and patches in the image space."  
   - `video` <https://youtube.com/watch?v=G-kWNQJ4idw> (demo)
   - `video` <https://youtube.com/watch?v=IVSZnTknyqw> (demo)
+  - `video` <https://youtube.com/watch?v=XJnuEO59XfQ> (Chen)
   - `post` <https://deepmind.com/blog/neural-scene-representation-and-rendering>
   - `code` <https://github.com/wohlert/generative-query-network-pytorch>
   - `code` <https://github.com/ogroth/tf-gqn>
@@ -1999,6 +2014,7 @@ interesting older papers:
 >	Azar et al. (2011), Lattimore & Hutter (2012): ... for higher moments  
 >	Morimura et al. (2010, 2010b): ... for densities"  
   - `post` <https://deepmind.com/blog/going-beyond-average-reinforcement-learning/>
+  - `post` <http://marcgbellemare.info/blog/eighteen-months-of-rl-research-at-google-brain-in-montreal>
   - `video` <https://youtube.com/watch?v=yFBwyPuO2Vg> (demo)
   - `video` <http://videocrm.ca/Machine18/Machine18-20180423-3-MarcBellemare> (Bellemare)
   - `video` <https://vimeo.com/235922311> (Bellemare)

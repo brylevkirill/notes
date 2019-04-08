@@ -71,6 +71,7 @@
   [course](http://youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6) from Stanford `video` ([notes](https://github.com/stanfordnlp/cs224n-winter17-notes))  
   [course](http://github.com/oxford-cs-deepnlp-2017/lectures) from Oxford and DeepMind `video`  
   [course](http://phontron.com/class/nn4nlp2019/schedule.html) from CMU ([videos](https://youtube.com/user/neubig/playlists))  
+  [course](http://youtube.com/playlist?list=PLt1IfGj6-_-f55ULcae3v7YuG8p_eUjnk) from iPavlov and Yandex `video` `in russian`  
 
 ----
 

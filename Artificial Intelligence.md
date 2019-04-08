@@ -31,8 +31,6 @@
 
   ["Intelligence Confuses The Intelligent"](https://blog.piekniewski.info/2017/04/13/ai-confuses-intelligent) by Filip Piekniewski  
   ["The Limitations of Deep Learning"](https://blog.keras.io/the-limitations-of-deep-learning.html) by Francois Chollet  
-  ["The Limitations of Deep Learning for Vision and How We Might Fix Them"](https://thegradient.pub/the-limitations-of-visual-deep-learning-and-how-we-might-fix-them) by Alan Yuille and Chenxi Liu  
-  ["Expressivity, Trainability, and Generalization in Machine Learning"](http://blog.evjang.com/2017/11/exp-train-gen.html) by Eric Jang  
   ["Deep Reinforcement Learning Doesn't Work Yet"](https://www.alexirpan.com/2018/02/14/rl-hard.html) by Alex Irpan  
   ["The Limits of Modern AI: A Story"](https://thebestschools.org/magazine/limits-of-modern-ai) by Erik Larson  
 

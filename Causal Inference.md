@@ -53,9 +53,8 @@
   ["Causal Inference for Observational Studies"](http://techtalks.tv/talks/causal-inference-for-observational-studies/62355/) tutorial by David Sontag and Uri Shalit `video` ([slides](https://cs.nyu.edu/~shalit/slides.pdf))  
   ["Counterfactual Evaluation and Learning for Search, Recommendation and Ad Placement"](http://www.cs.cornell.edu/~adith/CfactSIGIR2016/) tutorial by Thorsten Joachims and Adith Swaminathan `video`  
 
-  ["Connections between Causality and Machine Learning"](https://youtube.com/watch?v=9pm0eXuiTZs) by Jonas Peters `video`
-
-  ["Causal Reinforcement Learning"](https://youtube.com/watch?v=bwz3NpVfz6k) by Elias Bareinboim `video`
+  ["Connections between Causality and Machine Learning"](https://youtube.com/watch?v=9pm0eXuiTZs) by Jonas Peters `video`  
+  ["Causal Reinforcement Learning"](https://youtube.com/watch?v=bwz3NpVfz6k) by Elias Bareinboim `video`  
 
   ["Counterfactual Reasoning and Massive Data Sets"](https://youtube.com/watch?v=s37cIYDOM6s) by Leon Bottou `video`  
   ["The Missing Signal"](https://youtube.com/watch?v=DfJeaa--xO0) by Leon Bottou `video`  
@@ -68,6 +67,11 @@
 
   ["The New Science of Cause and Effect"](https://youtube.com/watch?v=ZaPV1OSEpHw) by Judea Pearl `video`  
   ["The Mathematics of Causal Inference, with Reflections on Machine Learning and the Logic of Science"](https://youtube.com/watch?v=zHjdd--W6o4) by Judea Pearl `video`  
+
+----
+
+  [workshop](https://sites.google.com/view/nips2018causallearning) at NeurIPS 2018 ([videos](https://youtube.com/playlist?list=PLJscN9YDD1bu1dCKuXSV1qYmicx3g9t7A))  
+  [symposium](https://why19.causalai.net) at AAAI 2019  
 
 
 

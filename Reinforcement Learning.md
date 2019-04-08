@@ -235,6 +235,20 @@
 	game 10: [overview](https://youtube.com/watch?v=DiJeP9oifsc) `video`  
 
 ----
+  - *StarCraft 2*
+
+	[AlphaStar](https://deepmind.com/blog/alphastar-mastering-real-time-strategy-game-starcraft-ii)
+
+	overview by Alex Irpan ([1](https://www.alexirpan.com/2019/02/22/alphastar.html), [2](https://www.alexirpan.com/2019/02/22/alphastar-part2.html))
+
+	AlphaStar vs MaNa match:
+
+	[match](https://youtube.com/watch?v=cUTMhmVh1qs) `video`
+
+	[match highlights](https://youtube.com/watch?v=zgIFoepzhIo) by MaNa  
+	[match highlights](https://youtube.com/watch?v=_YWmU-E2WFc) by Artosis  
+
+----
   - *Dota 2*  
 
 	[OpenAI Five](https://openai.com/five/)
@@ -604,7 +618,8 @@
   - provide a simple mechanism that connects plans and intentions to commands at the level of execution  
   - support rapid learning and generalisation (that humans are capable of)  
 
-  ["Learning in Brains and Machines: Synergistic and Modular Action"](http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/) by Shakir Mohamed
+  ["The Promise of Hierarchical Reinforcement Learning"](https://thegradient.pub/the-promise-of-hierarchical-reinforcement-learning/) by Yannis Flet-Berliac  
+  ["Learning in Brains and Machines: Synergistic and Modular Action"](http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/) by Shakir Mohamed  
 
   Options framework:  
 	[overview](http://videolectures.net/DLRLsummerschool2018_precup_temporal_abstraction) by Doina Precup `video`  

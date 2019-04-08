@@ -86,12 +86,8 @@
   ["Scalable Bayesian Methods"](https://youtube.com/watch?v=if9bTlZOiO8) by Dmitry Vetrov `video` `in russian`
 	([slides](https://drive.google.com/open?id=0BwU8otKU0BqQOGdzYTdMem1UTEk) `in english`)  
 
-  [course](https://compscicenter.ru/courses/bayes-course/2015-summer/classes/) by Dmitry Vetrov `video` `in russian`  
+  [course](https://youtube.com/playlist?list=PLEqoHzpnmTfCiJpMPccTWXD9DB4ERQkyw) by Dmitry Vetrov `video` `in russian`  
   [course](https://lektorium.tv/lecture/30977) by Sergey Nikolenko `video` `in russian`  
-
-  textbook ([part 1](http://machinelearning.ru/wiki/images/e/e1/BayesML-2007-textbook-1.pdf),
-	[part 2](http://machinelearning.ru/wiki/images/4/43/BayesML-2007-textbook-2.pdf))
-	by Dmitry Vetrov and Dmitry Kropotov `in russian`  
 
 ----
 
