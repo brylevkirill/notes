@@ -103,6 +103,30 @@
   ["A 'Brief' History of Game AI Up To AlphaGo"](http://andreykurenkov.com/writing/a-brief-history-of-game-ai/) by Andrey Kurenkov
 
 ----
+  - *Dota 2*  
+
+	[OpenAI Five](https://openai.com/five)
+
+	[OpenAI Five training](https://openai.com/blog/how-to-train-your-openai-five)  
+	[OpenAI Five overview](https://blog.openai.com/openai-five-benchmark-results)  
+	[OpenAI Five architecture](https://s3-us-west-2.amazonaws.com/openai-assets/dota_benchmark_results/network_diagram_08_06_2018.pdf)  
+	[OpenAI Five reward function](https://gist.github.com/dfarhi/66ec9d760ae0c49a5c492c9fae93984a)  
+
+	[OpenAI Five overview](https://youtu.be/w3ues-NayAs?t=2m26s) by Ilya Sutskever `video`  
+	[OpenAI Five discussion](https://twitch.tv/videos/293517383?t=4h41m56s) `video`  
+
+	[OpenAI Five vs humans games](https://twitch.tv/openai/videos) `video`
+
+----
+  - *StarCraft 2*
+
+	[AlphaStar](https://deepmind.com/blog/alphastar-mastering-real-time-strategy-game-starcraft-ii)
+
+	overview by Alex Irpan ([1](https://www.alexirpan.com/2019/02/22/alphastar.html), [2](https://www.alexirpan.com/2019/02/22/alphastar-part2.html))
+
+	[AlphaStar vs humans games](https://youtube.com/watch?v=cUTMhmVh1qs) `video` ([highlights](https://youtube.com/watch?v=zgIFoepzhIo) by MaNa `video`, [highlights](https://youtube.com/watch?v=_YWmU-E2WFc) by Artosis `video`))
+
+----
   - *Go*  
 
 	["Mastering the Game of Go"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto
@@ -235,51 +259,21 @@
 	game 10: [overview](https://youtube.com/watch?v=DiJeP9oifsc) `video`  
 
 ----
-  - *StarCraft 2*
-
-	[AlphaStar](https://deepmind.com/blog/alphastar-mastering-real-time-strategy-game-starcraft-ii)
-
-	overview by Alex Irpan ([1](https://www.alexirpan.com/2019/02/22/alphastar.html), [2](https://www.alexirpan.com/2019/02/22/alphastar-part2.html))
-
-	AlphaStar vs MaNa match:
-
-	[match](https://youtube.com/watch?v=cUTMhmVh1qs) `video`
-
-	[match highlights](https://youtube.com/watch?v=zgIFoepzhIo) by MaNa  
-	[match highlights](https://youtube.com/watch?v=_YWmU-E2WFc) by Artosis  
-
-----
-  - *Dota 2*  
-
-	[OpenAI Five](https://openai.com/five/)
-
-	[OpenAI Five overview](https://blog.openai.com/openai-five-benchmark-results/)  
-	[OpenAI Five architecture](https://s3-us-west-2.amazonaws.com/openai-assets/dota_benchmark_results/network_diagram_08_06_2018.pdf)  
-	[OpenAI Five reward function](https://gist.github.com/dfarhi/66ec9d760ae0c49a5c492c9fae93984a)  
-
-	[OpenAI Five overview](https://youtu.be/w3ues-NayAs?t=2m26s) by Ilya Sutskever `video`  
-	[OpenAI Five discussion](https://twitch.tv/videos/293517383?t=4h41m56s) `video`  
-
-	[OpenAI Five vs Blitz Cap Fogged Merlini MoonMeander](https://twitch.tv/videos/293517383) game `video` ([overview](https://youtube.com/watch?v=80pm62J9kto) `video`)  
-	[OpenAI Five vs Kingrd Duster hFn tavo w33](https://youtube.com/watch?v=TFOQnzvBHdw) `video`  
-	[OpenAI Five vs xiao8 BurNIng rOtk Ferrari Sansheng Big God](https://youtube.com/watch?v=o9jTEP0u8mg) `video`  
-
-----
   - *Quake III Arena CTF*
 
 	[FTW agent overview](https://deepmind.com/blog/capture-the-flag)
 
 	["Human-level Performance in First-person Multiplayer Games with Population-based Deep Reinforcement Learning"](#human-level-performance-in-first-person-multiplayer-games-with-population-based-deep-reinforcement-learning-jaderberg-et-al) by Jaderberg et al. `paper` `summary`
 
-	[FTW agents team vs human team](https://youtube.com/watch?v=dltN4MxV1RI) `video`
+	[FTW agents vs humans games](https://youtube.com/watch?v=dltN4MxV1RI) `video`
 
 ----
   - *Doom*  
 
 	["Learning to Act by Predicting the Future"](#learning-to-act-by-predicting-the-future-dosovitskiy-koltun) by Dosovitskiy and Koltun `paper` `summary`
 
-	[demo](https://youtube.com/watch?v=947bSUtuSQ0) of IntelAct agent `video`  
-	[demo](https://youtube.com/channel/UC8UghzsxS5uEFUEbvcAWwlQ/videos) of agents from ViZDoom competition `video`  
+	[IntelAct agent demo](https://youtube.com/watch?v=947bSUtuSQ0) `video`  
+	[ViZDoom competition games](https://youtube.com/channel/UC8UghzsxS5uEFUEbvcAWwlQ/videos) `video`  
 
 ----
   - *Atari*  
@@ -317,10 +311,12 @@
 ---
 ### applications - robotics
 
+  [Dactyl](https://youtu.be/w3ues-NayAs?t=16m26s) overview by Ilya Sutskever `video`
+
   [overview](https://youtube.com/watch?v=lYU5nq0dAQQ) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=eKaYnXQUb2g) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=jtjW5Pye_44) by Sergey Levine `video`  
-  [overview](http://videolectures.net/iclr2016_levine_deep_learning/) by Sergey Levine `video`  
+  [overview](http://videolectures.net/iclr2016_levine_deep_learning) by Sergey Levine `video`  
 
   [overview](https://facebook.com/nipsfoundation/videos/1554594181298482) by Pieter Abbeel `video`  
   [overview](https://youtube.com/watch?v=TERCdog1ddE) by Pieter Abbeel `video`  
@@ -328,8 +324,6 @@
   [overview](https://youtu.be/xe-z4i3l-iQ?t=30m35s) by Pieter Abbeel `video`  
 
   ["Is (Deep) Reinforcement Learning Barking Up The Wrong Tree?"](https://youtube.com/watch?v=2GW7ozcUCFE) by Chris Atkeson `video`
-
-  [**interesting recent papers - imitation learning**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---imitation)
 
 
 
@@ -496,6 +490,10 @@
   - model-based vs value-based vs policy-based  
   - on-policy vs off-policy  
   - bootstrapping vs Monte Carlo  
+
+----
+
+  ["The Bitter Lesson"](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) by Rich Sutton
 
 
 ----
@@ -937,7 +935,7 @@
 ----
 
   [overview](https://youtu.be/sGuiWX07sKw?t=1h29m7s) by David Silver `video`  
-  [overview](https://youtu.be/7ic_d5TeIUk) by John Langford `video`  
+  [overview](https://youtu.be/zr6H4kR8vTg) by John Langford `video`  
   [overview](https://vimeo.com/240429210) by John Langford and Alekh Agarwal `video`  
   [overview](https://youtu.be/3q4OvzIyPug?t=6m12s) by Alekh Agarwal `audio`  
 
@@ -1009,6 +1007,7 @@
 
   ["Counterfactual Reasoning and Learning from Logged Data"](http://timvieira.github.io/blog/post/2016/12/19/counterfactual-reasoning-and-learning-from-logged-data/) by Tim Vieira
 
+  ["A Contextual Bandit Bake-off"](https://arxiv.org/abs/1802.04064) by Bietti, Agarwal, Langford `paper` ([overview](https://youtu.be/zr6H4kR8vTg?t=50m36s) by John Langford `video`)  
   ["Doubly Robust Policy Evaluation and Learning"](https://arxiv.org/abs/1103.4601) by Dudik, Langford, Li `paper` ([overview](https://youtu.be/gzxRDw3lXv8?t=35m45s) by Robert Schapire `video`) ([notes](https://medium.com/@sharaf/a-paper-a-day-12-doubly-robust-policy-evaluation-and-learning-7e6a09665d7f))  
   ["Taming the Monster: A Fast and Simple Algorithm for Contextual Bandits"](https://arxiv.org/abs/1402.0555) by Agarwal et al. `paper` ([overview](https://youtube.com/watch?v=mi_G5tw7Etg) by Alekh Agarwal `video`) ([overview](https://youtu.be/gzxRDw3lXv8?t=37m8s) by Robert Schapire `video`)  
   ["Making Contextual Decisions with Low Technical Debt"](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) by Agarwal et al. `paper` `summary`  
@@ -1022,10 +1021,6 @@
   ["Deep Learning from Logged Interventions"](https://youtube.com/watch?v=lzA5K4im2no) by Thorsten Joachims `video`  
 
   [**Microsoft Custom Decision Service**](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al)
-
-----
-
-  [example implementation](https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-1-5-contextual-bandits-bff01d1aad9c)
 
 ----
 
@@ -2169,6 +2164,7 @@ interesting recent papers:
   - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482?t=451> (Abbeel)
   - `video` <http://www.fields.utoronto.ca/video-archive/2017/02/2267-16530> (19:00) (Abbeel)
   - `video` <https://youtu.be/SfCa1HQMkuw?t=1h16m56s> (Schulman)
+  - `video` <https://youtu.be/BskhUBPRrqE?t=6m37s> (Sutskever)
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/RL2-Fast_Reinforcement_Learning_via_Slow_Reinforcement_Learning.md>
   - `paper` ["Learning to Reinforcement Learn"](#learning-to-reinforcement-learn-wang-et-al) by Wang et al. `summary`
 

@@ -34,14 +34,12 @@
   ["Deep Reinforcement Learning Doesn't Work Yet"](https://www.alexirpan.com/2018/02/14/rl-hard.html) by Alex Irpan  
   ["The Limits of Modern AI: A Story"](https://thebestschools.org/magazine/limits-of-modern-ai) by Erik Larson  
 
-----
-
-  [introductory course](https://agi.mit.edu) from MIT `video`  
-  [introductory course](https://inst.eecs.berkeley.edu/~cs188) from UC Berkeley `video`  
+  [history](https://youtu.be/w3ues-NayAs?t=27m13s) of AI scepticism by Ilya Sutskever `video`
 
 ----
 
-  ["Learning in Brains and Machines"](http://blog.shakirm.com/category/computational-and-biological-learning) by Shakir Mohamed
+  ["Learning in Brains and Machines"](http://blog.shakirm.com/category/computational-and-biological-learning) by Shakir Mohamed  
+  ["The Bitter Lesson"](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) by Rich Sutton  
 
 
 

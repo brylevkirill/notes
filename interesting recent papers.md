@@ -896,38 +896,11 @@ also been supported by the observation that deep networks strongly rely on spect
 
 #### ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](http://arxiv.org/abs/1611.02779) Duan, Schulman, Chen, Bartlett, Sutskever, Abbeel
   `RL^2` `learning learning algorithm`
->	"MDPs encountered in real world = tiny subset of all MDPs that could be defined"  
->	"How to acquire a good prior for real-world MDPs?"  
->	"How to design algorithms that make use of such prior information?"  
->	"Key idea: learn a fast RL algorithm that make use of such prior information"  
->
->	"RL agent = RNN = generic computation architecture  
->	- different weights in the RNN means different RL algorithm and prior  
->	- different activations in the RNN means different current policy  
->	- meta-train objective can be optimized with existing (slow) RL algorithm"  
->
->	"RNN is made to ingest multiple rollouts from many different MDPs and then perform a policy gradient update through the entire temporal span of the RNN. The hope is that the RNN will learn a faster RL algorithm in its memory weights."  
->	"Suppose L represents an RNN. Let Envk(a) be a function that takes an action, uses it to interact with the MDP representing task k, and returns the next observation o, reward r, and a termination flag d. Then we have:  
->	xt = [ot−1, at−1, rt−1, dt−1]  
->	L(ht, xt) = [at, ht+1]  
->	Envk(at) = [ot, rt, dt]  
->	To train this RNN, we sample N MDPs from M and obtain k rollouts for each MDP by running the MDP through the RNN as above. We then compute a policy gradient update to move the RNN parameters in a direction which maximizes the returns over the k trials performed for each MDP."  
-  - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482?t=451> (Abbeel)
-  - `video` <http://www.fields.utoronto.ca/video-archive/2017/02/2267-16530> (19:00) (Abbeel)
-  - `video` <https://youtube.com/watch?v=SfCa1HQMkuw&t=1h16m56s> (Schulman)
-  - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/RL2-Fast_Reinforcement_Learning_via_Slow_Reinforcement_Learning.md>
-  - `paper` ["Learning to Reinforcement Learn"](#learning-to-reinforcement-learn-wang-et-al) by Wang et al. `summary`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#rl2-fast-reinforcement-learning-via-slow-reinforcement-learning-duan-schulman-chen-bartlett-sutskever-abbeel>
 
 #### ["Learning to Reinforcement Learn"](http://arxiv.org/abs/1611.05763) Wang et al.
   `learning learning algorithm`
->	"outer episodes (sample a new bandit problem / MDP) and inner episodes (of sampled MDP)"  
->	"use RNN policy with no state reset between inner episodes for outer POMDP"  
-  - `video` <https://vimeo.com/250399556> (Wang)
-  - `video` <https://youtu.be/Y85Zn50Eczs?t=20m18s> (Botvinick)
-  - `video` <https://youtu.be/LnXgs73OUjE?t=29m20s> (Botvinick)
-  - `post` <https://hackernoon.com/learning-policies-for-learning-policies-meta-reinforcement-learning-rl²-in-tensorflow-b15b592a2ddf>
-  - `code` <https://github.com/awjuliani/Meta-RL>
-  - `paper` ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](#rl2-fast-reinforcement-learning-via-slow-reinforcement-learning-duan-schulman-chen-bartlett-sutskever-abbeel) by Duan et al. `summary`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#learning-to-reinforcement-learn-wang-et-al>
 
 ----
 #### ["Learned Optimizers that Scale and Generalize"](http://arxiv.org/abs/1703.04813) Wichrowska, Maheswaranathan, Hoffman, Colmenarejo, Denil, de Freitas, Sohl-Dickstein
@@ -1646,6 +1619,11 @@ also been supported by the observation that deep networks strongly rely on spect
   - `video` <https://youtu.be/xfyK03MEZ9Q?t=5h21m15s> (Bagnell)
 
 ----
+#### ["A Style-Based Generator Architecture for Generative Adversarial Networks"](https://arxiv.org/abs/1812.04948) Karras, Laine, Aila
+  `GAN applications` `image synthesis` `StyleGAN`
+>	"We propose an alternative generator architecture for generative adversarial networks, borrowing from style transfer literature. The new architecture leads to an automatically learned, unsupervised separation of high-level attributes (e.g., pose and identity when trained on human faces) and stochastic variation in the generated images (e.g., freckles, hair), and it enables intuitive, scale-specific control of the synthesis."  
+  - `post` <https://www.gwern.net/Faces>
+
 #### ["Self-Attention Generative Adversarial Networks"](https://arxiv.org/abs/1805.08318) Zhang, Goodfellow, Metaxas, Odena
   `GAN applications` `image synthesis` `SAGAN`
 >	"SAGAN allows attention-driven, long-range dependency modeling for image generation tasks. Traditional convolutional GANs generate high-resolution details as a function of only spatially local points in lower-resolution feature maps. In SAGAN, details can be generated using cues from all feature locations. Moreover, the discriminator can check that highly detailed features in distant portions of the image are consistent with each other."  
@@ -2350,11 +2328,11 @@ also been supported by the observation that deep networks strongly rely on spect
 ----
 #### ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](http://arxiv.org/abs/1611.02779) Duan, Schulman, Chen, Bartlett, Sutskever, Abbeel
   `RL^2` `meta-learning`
-  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#rl2-fast-reinforcement-learning-via-slow-reinforcement-learning-duan-schulman-chen-bartlett-sutskever-abbeel>
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#rl2-fast-reinforcement-learning-via-slow-reinforcement-learning-duan-schulman-chen-bartlett-sutskever-abbeel>
 
 #### ["Learning to Reinforcement Learn"](http://arxiv.org/abs/1611.05763) Wang et al.
   `meta-learning`
-  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#learning-to-reinforcement-learn-wang-et-al>
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#learning-to-reinforcement-learn-wang-et-al>
 
 
 
@@ -2627,6 +2605,10 @@ also been supported by the observation that deep networks strongly rely on spect
 [papers](https://sites.google.com/view/erl-2018/accepted-papers) from ICML 2018 workshop
 
 ----
+#### ["A Contextual Bandit Bake-off"](https://arxiv.org/abs/1802.04064) Bietti, Agarwal, Langford
+>	"We leverage the availability of large numbers of supervised learning datasets to compare and empirically optimize contextual bandit algorithms, focusing on practical methods that learn by relying on optimization oracles from supervised learning. We find that a recent method (Foster et al., 2018) using optimism under uncertainty works the best overall. A surprisingly close second is a simple greedy baseline that only explores implicitly through the diversity of contexts, followed by a variant of Online Cover (Agarwal et al., 2014) which tends to be more conservative but robust to problem specification by design."  
+  - `video` <https://youtu.be/zr6H4kR8vTg?t=50m36s> (Langford)
+
 #### ["Contextual Decision Processes with Low Bellman Rank are PAC-Learnable"](https://arxiv.org/abs/1610.09512) Jiang, Krishnamurthy, Agarwal, Langford, Schapire
   `provably correct and sample efficient exploration`
 >	"This paper studies systematic exploration for reinforcement learning with rich observations and function approximation. We introduce a new model called contextual decision processes, that unifies and generalizes most prior settings. Our first contribution is a complexity measure, the Bellman rank, that we show enables tractable learning of near-optimal behavior in these processes and is naturally small for many well-studied reinforcement learning settings. Our second contribution is a new reinforcement learning algorithm that engages in systematic exploration to learn contextual decision processes with low Bellman rank. Our algorithm provably learns near-optimal behavior with a number of samples that is polynomial in all relevant parameters but independent of the number of unique observations. The approach uses Bellman error minimization with optimistic exploration and provides new insights into efficient exploration for reinforcement learning with function approximation."  
@@ -2666,6 +2648,7 @@ also been supported by the observation that deep networks strongly rely on spect
 >	"Our loss’ instructive nature – which allows it to operate at test time without environmental rewards – is interesting and desirable. This instructive nature can be understood as the loss function’s internalization of the reward structures it has previously encountered under the training task distribution. We see this internalization as a step toward learning intrinsic motivation. A good intrinsically motivated agent would successfully infer useful actions in new situations by using heuristics it developed over its entire lifetime. This ability is likely required to achieve truly intelligent agents."  
 >	"In addition to internalizing environment rewards, learned loss could, in principle, have several other positive effects. For example, by examining the agent’s history, the loss could incentivize desirable extended behaviors, such as exploration. Further, the loss could perform a form of system identification, inferring environment parameters and adapting how it guides the agent as a function of these parameters (e.g., by adjusting the effective learning rate of the agent)."  
   - `post` <https://blog.openai.com/evolved-policy-gradients>
+  - `video` <https://youtu.be/JX5E0Tt7K10?t=11m20s> (Sutskever)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1802.04821>
   - `code` <https://github.com/openai/EPG>
 
@@ -2680,10 +2663,6 @@ also been supported by the observation that deep networks strongly rely on spect
   `approximate bayesian exploration` `approximate posterior sampling`
 >	"A simple modification where each member of the ensemble is initialized together with a random but fixed prior function. Predictions are then taken as the sum of the trainable neural network and the prior function. We show that this approach passes a sanity check by demonstrating an equivalence to Bayesian inference with linear models. We also present a series of simple experiments designed to extend this intuition to deep learning. We show that many of the most popular approaches for uncertainty estimation in deep RL do not pass these sanity checks, and crystallize these shortcomings in a series of lemmas and small examples. We demonstrate that our simple modification can facilitate aspiration in difficult tasks where previous approaches for deep RL fail. We believe that this work presents a simple and practical approach to encoding prior knowledge with deep reinforcement learning."  
   - <https://sites.google.com/view/randomized-prior-nips-2018> (demo)
-
-#### ["A Contextual Bandit Bake-off"](https://arxiv.org/abs/1802.04064) Bietti, Agarwal, Langford
-  `approximate bayesian exploration`
->	"We leverage the availability of large numbers of supervised learning datasets to compare and empirically optimize contextual bandit algorithms, focusing on practical methods that learn by relying on optimization oracles from supervised learning."  
 
 #### ["Deep Bayesian Bandits Showdown: An Empirical Comparison of Bayesian Deep Networks for Thompson Sampling"](https://arxiv.org/abs/1802.09127) Riquelme, Tucker, Snoek
   `approximate bayesian exploration` `posterior sampling`
@@ -2796,6 +2775,7 @@ also been supported by the observation that deep networks strongly rely on spect
 >	To avoid the undesirable factors 2 and 3, methods such as those by Schmidhuber (1991a); Oudeyer et al. (2007); Lopes et al. (2012); Achiam & Sastry (2017) instead use a measurement of how much the prediction model improves upon seeing a new datapoint. However these approaches tend to be computationally expensive and hence difficult to scale.  
 >	RND obviates factors 2 and 3 since the target network can be chosen to be deterministic and inside the model-class of the predictor network."  
   - `post` <https://blog.openai.com/reinforcement-learning-with-prediction-based-rewards> (demo)
+  - `video` <https://youtu.be/X-B3nAN7YRM?t=7m8s> (Sutskever)
   - `code` <https://github.com/openai/random-network-distillation>
 
 #### ["Large-Scale Study of Curiosity-Driven Learning"](https://arxiv.org/abs/1808.04355) Burda, Edwards, Pathak, Storkey, Darrell, Efros
@@ -2886,9 +2866,10 @@ also been supported by the observation that deep networks strongly rely on spect
   - `post` <https://blog.openai.com/ingredients-for-robotics-research/>
   - <https://sites.google.com/site/hindsightexperiencereplay/> (demo)
   - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482?t=2280> (Abbeel)
-  - `video` <https://youtu.be/BCzFs9Xb9_o?t=21m2s> (Sutskever)
-  - `video `<https://youtu.be/RvEwFvl-TrY?t=19m18s> (Sutskever)
   - `video` <https://youtu.be/TERCdog1ddE?t=50m45s> (Abbeel)
+  - `video` <https://youtu.be/JX5E0Tt7K10?t=3m50s> (Sutskever)
+  - `video` <https://youtu.be/BCzFs9Xb9_o?t=21m2s> (Sutskever)
+  - `video` <https://youtu.be/RvEwFvl-TrY?t=19m18s> (Sutskever)
   - `video` <https://youtu.be/BXe2A5i4ESw?t=10m42s> (Fournier)
   - `video` <https://youtu.be/0Ey02HT_1Ho?t=10m57s> (Steenbrugge)
   - `notes` <https://yobibyte.github.io/files/paper_notes/her.pdf>
@@ -2988,8 +2969,9 @@ also been supported by the observation that deep networks strongly rely on spect
 >	"Meta-learning formulation of hierarchical RL: Agent has to solve a distribution of related long-horizon tasks, with the goal of learning new tasks in the distribution quickly."  
   - `post` <https://blog.openai.com/learning-a-hierarchy/> (demo)
   - `video` <https://vimeo.com/249558183> (Abbeel)
-  - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482?t=1282>(Abbeel)
+  - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482?t=1282> (Abbeel)
   - `video` <https://youtu.be/BCzFs9Xb9_o?t=32m35s> (Sutskever)
+  - `video` <https://youtu.be/JX5E0Tt7K10?t=9m50s> (Sutskever)
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Meta_Learning_Shared_Hierarchies.md>
   - `code` <https://github.com/openai/mlsh>
 
@@ -3200,6 +3182,7 @@ also been supported by the observation that deep networks strongly rely on spect
   `reinforcement learning from preferences`
 >	"Algorithm provides two possible solutions for task to human who indicates which one is better. The process is repeated and the algorithm learns from 900 bits of feedback how to solve the problem."  
   - `video` <https://drive.google.com/drive/folders/0BwcFziBYuA8RM2NTdllSNVNTWTg> (demo)
+  - `video` <https://youtube.com/watch?v=DekQm9pBbOE> (Shavkunov) `in russian`
   - `video` <https://youtube.com/watch?v=6h3_lTDFMb0> (Yagudin) `in russian`
   - `post` <https://deepmind.com/blog/learning-through-human-feedback/>
   - `post` <https://blog.openai.com/deep-reinforcement-learning-from-human-preferences/>
@@ -3373,6 +3356,7 @@ also been supported by the observation that deep networks strongly rely on spect
   - `post` <https://blog.openai.com/competitive-self-play/> (demo)
   - <https://sites.google.com/view/multi-agent-competition> (demo)
   - `video` <https://vimeo.com/250399465#t=7m56s> (Sutskever)
+  - `video` <https://youtu.be/JX5E0Tt7K10?t=17m42s> (Sutskever)
   - `notes` <https://blog.acolyer.org/2018/01/11/emergent-complexity-via-multi-agent-competition/>
   - `code` <https://github.com/openai/multiagent-competition>
 
@@ -3750,18 +3734,32 @@ also been supported by the observation that deep networks strongly rely on spect
 [**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#interesting-papers)
 
 ----
+#### ["Language Models are Unsupervised Multitask Learners"](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf) Radford, Wu, Child, Luan, Amodei, Sutskever
+  `language modeling` `GPT-2`
+  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#language-models-are-unsupervised-multitask-learners-radford-wu-child-luan-amodei-sutskever>
+
+#### ["BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"](https://arxiv.org/abs/1810.04805) Devlin, Chang, Lee, Toutanova
+  `language modeling` `BERT`
+  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-devlin-chang-lee-toutanova>
+
+----
+#### ["A Simple but Tough-to-Beat Baseline for Sentence Embeddings"](https://openreview.net/pdf?id=SyK00v5xx) Arora, Liang, Ma
+  `text embedding`
+  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#a-simple-but-tough-to-beat-baseline-for-sentence-embeddings-arora-liang-ma>
+
+----
 #### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin
   `sequence transduction` `Transformer`
   - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#attention-is-all-you-need-vaswani-shazeer-parmar-uszkoreit-jones-gomez-kaiser-polosukhin>
 
 #### ["Non-Autoregressive Neural Machine Translation"](https://arxiv.org/abs/1711.02281) Gu, Bradbury, Xiong, Li, Socher
-  `translation` `Non-Autoregressive Transformer`
+  `sequence transduction` `Transformer`
 >	"Existing approaches to neural machine translation condition each output word on previously generated outputs. We introduce a model that avoids this autoregressive property and produces its outputs in parallel, allowing an order of magnitude lower latency during inference. Through knowledge distillation, the use of input token fertilities as a latent variable, and policy gradient fine-tuning, we achieve this at a cost of as little as 2.0 BLEU points relative to the autoregressive Transformer network used as a teacher."  
 >	"parallel decoder in addition to parallel encoder - up to 8x speed-up"  
   - `post` <https://einstein.ai/research/non-autoregressive-neural-machine-translation>
 
 #### ["Generating Wikipedia by Summarizing Long Sequences"](https://arxiv.org/abs/1801.10198) Liu, Saleh, Pot, Goodrich, Sepassi, Kaiser, Shazeer
-  `summarization`
+  `sequence transduction` `Transformer`
 >	"Extractive summarization to coarsely identify salient information and a neural abstractive model to generate the article. For the abstractive model, decoder-only Transformer architecture that can scalably attend to very long sequences, much longer than typical encoder-decoder architectures used in sequence transduction."  
 
 ---
@@ -3818,32 +3816,3 @@ also been supported by the observation that deep networks strongly rely on spect
 >	"The parser uses a feed forward NN, which is much faster than the RNN usually used for parsing. Also the paper is using a global method to solve the label bias problem. This method can be used for many tasks and indeed in the paper it is used also to shorten sentences by throwing unnecessary words. The label bias problem arises when predicting each label in a sequence using a softmax over all possible label values in each step. This is a local approach but what we are really interested in is a global approach in which the sequence of all labels that appeared in a training example are normalized by all possible sequences. This is intractable so instead a beam search is performed to generate alternative sequences to the training sequence. The search is stopped when the training sequence drops from the beam or ends. The different beams with the training sequence are then used to compute the global loss."  
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1603.06042>
   - `code` <https://github.com/tensorflow/models/tree/master/research/syntaxnet>
-
-----
-#### ["A Simple but Tough-to-Beat Baseline for Sentence Embeddings"](https://openreview.net/pdf?id=SyK00v5xx) Arora, Liang, Ma
-  `text embedding`
-  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#a-simple-but-tough-to-beat-baseline-for-sentence-embeddings-arora-liang-ma>
-
-#### ["On the Use of Word Embeddings Alone to Represent Natural Language Sequences"](https://openreview.net/forum?id=Sy5OAyZC-) Shen et al.
->	"To construct representations for natural language sequences, information from two main sources needs to be captured: (i) semantic meaning of individual words, and (ii) their compositionality. These two types of information are usually represented in the form of word embeddings and compositional functions, respectively. For the latter, Recurrent Neural Networks (RNNs) and Convolutional Neural Networks (CNNs) have been considered. There has not been a rigorous evaluation regarding the relative importance of each component to different text-representation-based tasks; i.e., how important is the modeling capacity of word embeddings alone, relative to the added value of a compositional function? We conduct an extensive comparative study between Simple Word Embeddings-based Models (SWEMs), with no compositional parameters, relative to employing word embeddings within RNN/CNN-based models. Surprisingly, SWEMs exhibit comparable or even superior performance in the majority of cases considered."  
-
-#### ["Learning to Compute Word Embeddings On the Fly"](https://arxiv.org/abs/1706.00286) Bahdanau, Bosc, Jastrzebski, Grefenstette, Vincent, Bengio
-  `word embedding`
-  - `notes` <https://theneuralperspective.com/2017/06/05/more-on-embeddings-spring-2017/>
-
-----
-#### ["Unbounded Cache Model for Online Language Modeling with Open Vocabulary"](https://arxiv.org/abs/1711.02604) Grave, Cisse, Joulin
-  `language modeling`
->	"We propose an extension of continuous cache models, which can scale to larger contexts. We use a large scale non-parametric memory component that stores all the hidden activations seen in the past. We leverage recent advances in approximate nearest neighbor search and quantization algorithms to store millions of representations while searching them efficiently."  
-
-#### ["Improving Neural Language Models with a Continuous Cache"](http://arxiv.org/abs/1612.04426) Grave, Joulin, Usunier
-  `language modeling` `adaptive softmax`
-
-#### ["Pointer Sentinel Mixture Models"](http://arxiv.org/abs/1609.07843) Merity, Xiong, Bradbury, Socher
-  `language modeling`
->	"The authors combine a standard LSTM softmax with Pointer Networks in a mixture model called Pointer-Sentinel LSTM. The pointer networks helps with rare words and long-term dependencies but is unable to refer to words that are not in the input. The opposite is the case for the standard softmax."  
-  - `video` <https://youtube.com/watch?v=Ibt8ZpbX3D8> (Merity)
-  - `video` <https://youtu.be/Q7ifcUuMZvk?t=30m11s> (Socher)
-  - `post` <https://elanmart.github.io/2018-02-10-psmm/>
-  - `notes` <https://theneuralperspective.com/2016/10/04/pointer-sentinel-mixture-models/>
-  - `code` <https://github.com/elanmart/psmm>

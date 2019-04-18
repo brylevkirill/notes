@@ -1398,6 +1398,7 @@ Yoshua Bengio:
   - `video` <https://vimeo.com/237274831> (Koh)
   - `video` <https://facebook.com/academics/videos/1633085090076225?t=5008> (Liang)
   - `video` <https://youtube.com/watch?v=dk6UsEzfKdU> (Matushkin) `in russian`
+  - `notes` <https://www.shortscience.org/paper?bibtexKey=conf/icml/KohL17>
   - `code` <https://github.com/kohpangwei/influence-release>
   - `code` <https://github.com/darkonhub/darkon>
 
@@ -2269,14 +2270,6 @@ x."
   - `video` <https://youtu.be/Jh3D8Gi4N0I?t=13m13s> (Novikov) `in russian`
 
 
-#### ["Spatial Transformer Networks"](https://arxiv.org/abs/1506.02025) Jaderberg, Simonyan, Zisserman, Kavukcuoglu
->	"Convolutional Neural Networks define an exceptionally powerful class of models, but are still limited by the lack of ability to be spatially invariant to the input data in a computationally and parameter efficient manner. In this work we introduce a new learnable module, the Spatial Transformer, which explicitly allows the spatial manipulation of data within the network. This differentiable module can be inserted into existing convolutional architectures, giving neural networks the ability to actively spatially transform feature maps, conditional on the feature map itself, without any extra training supervision or modification to the optimisation process. We show that the use of spatial transformers results in models which learn invariance to translation, scale, rotation and more generic warping, resulting in state-of-the-art performance on several benchmarks, and for a number of classes of transformations."
-
-  - `video` <https://youtu.be/T5k0GnBmZVI?t=1m9s> (Jaderberg)
-  - `video` <https://youtu.be/_XRBlhzb31U?t=1h9m29s> (Figurnov) `in russian`
-  - `code` <https://github.com/tensorflow/models/tree/master/research/transformer>
-
-
 #### ["Training Recurrent Networks Online without Backtracking"](https://arxiv.org/abs/1507.07680) Ollivier, Tallec, Charpiat
 >	"We introduce the "NoBackTrack" algorithm to train the parameters of dynamical systems such as recurrent neural networks. This algorithm works in an online, memoryless setting, thus requiring no backpropagation through time, and is scalable, avoiding the large computational and memory cost of maintaining the full gradient of the current state with respect to the parameters. The algorithm essentially maintains, at each time, a single search direction in parameter space. The evolution of this search direction is partly stochastic and is constructed in such a way to provide, at every time, an unbiased random estimate of the gradient of the loss function with respect to the parameters. Because the gradient estimate is unbiased, on average over time the parameter is updated as it should. The resulting gradient estimate can then be fed to a lightweight Kalman-like filter to yield an improved algorithm. For recurrent neural networks, the resulting algorithms scale linearly with the number of parameters. Small-scale experiments confirm the suitability of the approach, showing that the stochastic approximation of the gradient introduced in the algorithm is not detrimental to learning. In particular, the Kalman-like version of NoBackTrack is superior to backpropagation through time when the time span of dependencies in the data is longer than the truncation span for BPTT."
 
@@ -2299,6 +2292,7 @@ x."
 
 
 #### ["Sequence to Sequence Learning with Neural Networks"](http://arxiv.org/abs/1409.3215) Sutskever, Vinyals, Le
+  `seq2seq`
 >	"Deep Neural Networks are powerful models that have achieved excellent performance on difficult learning tasks. Although DNNs work well whenever large labeled training sets are available, they cannot be used to map sequences to sequences. In this paper, we present a general end-to-end approach to sequence learning that makes minimal assumptions on the sequence structure. Our method uses a multilayered Long Short-Term Memory to map the input sequence to a vector of a fixed dimensionality, and then another deep LSTM to decode the target sequence from the vector. Our main result is that on an English to French translation task from the WMT-14 dataset, the translations produced by the LSTM achieve a BLEU score of 34.7 on the entire test set, where the LSTM's BLEU score was penalized on out-of-vocabulary words. Additionally, the LSTM did not have difficulty on long sentences. For comparison, a strong phrase-based SMT system achieves a BLEU score of 33.3 on the same dataset. When we used the LSTM to rerank the 1000 hypotheses produced by the aforementioned SMT system, its BLEU score increases to 36.5, which beats the previous state of the art. The LSTM also learned sensible phrase and sentence representations that are sensitive to word order and are relatively invariant to the active and the passive voice. Finally, we found that reversing the order of the words in all source sentences (but not target sentences) improved the LSTM's performance markedly, because doing so introduced many short term dependencies between the source and the target sentence which made the optimization problem easier."
 
   Geoffrey Hinton:
@@ -2309,7 +2303,7 @@ x."
   - `video` <http://youtube.com/watch?v=9U0drwafE78> (Vinyals)
   - `video` <http://youtube.com/watch?v=i2gzr1kXTxM> (Vinyals)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/nips/SutskeverVL14>
-  - `code` <https://github.com/farizrahman4u/seq2seq>
+  - <https://google.github.io/seq2seq>
 
 
 #### ["Reward Augmented Maximum Likelihood for Neural Structured Prediction"](https://arxiv.org/abs/1609.00150) Norouzi, Bengio, Chen, Jaitly, Schuster, Wu, Schuurmans
@@ -2376,9 +2370,11 @@ x."
   - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747?t=1107> (Vaswani, Shazeer)
   - `video` <https://youtu.be/I0nX4HDmXKc?t=7m46s> (Polosukhin)
   - `video` <https://youtube.com/watch?v=rBCqOTEfxvg> (Kaiser)
+  - `video` <https://youtu.be/54uLU7Nxyv8> + <https://youtu.be/VEcsf0OKhfw> + <https://youtu.be/9vUoBIeqrQg> (Tatman)
   - `video` <https://youtube.com/watch?v=S0KakHcj_rs> (Palermo)
   - `video` <https://youtube.com/watch?v=iDulhoQ2pro> (Kilcher)
   - `video` <https://youtube.com/watch?v=KMY2Knr4iAs> (Chen)
+  - `video` <https://youtube.com/watch?v=YQZRsowJZA8> (Lyalin) `in russian`
   - `video` <https://youtube.com/watch?v=KMgJFptbNlM> (Lyalin) `in russian`
   - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) `in russian`
   - `video` <https://youtu.be/LhH6wMvntSM?t=54m56s> (Suleymanov) `in russian`
