@@ -1,4 +1,4 @@
-  Intelligence is information processing necessary to achieve goals with limited resources.
+  Intelligence is the computational part of the ability to achieve goals in the world. The problem is that we cannot yet characterize in general what kinds of computational procedures we want to call intelligent.
 
 
   * [**overview**](#overview)
@@ -16,16 +16,21 @@
     - [**universal artificial intelligence**](#interesting-papers---universal-artificial-intelligence)
 
 
+
 ---
 ### overview
 
+  ["The Future of Artificial Intelligence Belongs to Search and Learning"](http://www.fields.utoronto.ca/video-archive/2016/10/2267-16158) by Richard Sutton `video`  
   ["Compression Progress: The Algorithmic Principle Behind Curiosity and Creativity"](https://youtube.com/watch?v=h7F5sCLIbKQ) by Juergen Schmidhuber `video`  
-  ["The Next Big Step in AI: Planning with a Learned Model"](https://youtube.com/watch?v=6-Uiq8-wKrg) by Richard Sutton `video`  
-  ["The Next Step Towards Artificial Intelligence"](https://youtube.com/watch?v=U2mhZ9E8Fk8) by Yann LeCun`video`  
   ["Deep Learning and AI"](https://youtube.com/watch?v=izrG86jycck) by Geoffrey Hinton `video`  
   ["Building Machines That See, Learn and Think Like People"](https://youtube.com/watch?v=7ROelYvo8f0) by Joshua Tenenbaum `video`  
   ["AI: A Return To Meaning"](https://youtube.com/watch?v=1n-cwezu8j4) by David Ferucci `video`  
   ["On Thermodynamics and the Future of Computing"](https://ieeetv.ieee.org/conference-highlights/on-thermodynamics-and-the-future-of-computing-ieee-rebooting-computing-2017) by Todd Hylton `video`  
+
+----
+
+  ["Learning in Brains and Machines"](http://blog.shakirm.com/category/computational-and-biological-learning) by Shakir Mohamed  
+  ["The Bitter Lesson"](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) by Rich Sutton ([talk](http://www.fields.utoronto.ca/video-archive/2016/10/2267-16158) `video`)  
 
 ----
 
@@ -35,11 +40,6 @@
   ["The Limits of Modern AI: A Story"](https://thebestschools.org/magazine/limits-of-modern-ai) by Erik Larson  
 
   [history](https://youtu.be/w3ues-NayAs?t=27m13s) of AI scepticism by Ilya Sutskever `video`
-
-----
-
-  ["Learning in Brains and Machines"](http://blog.shakirm.com/category/computational-and-biological-learning) by Shakir Mohamed  
-  ["The Bitter Lesson"](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) by Rich Sutton  
 
 
 

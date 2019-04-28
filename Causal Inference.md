@@ -9,6 +9,8 @@
 ---
 ### overview
 
+  ["Do we still need models or just more data and compute?"](https://staff.fnwi.uva.nl/m.welling/wp-content/uploads/Model-versus-Data-AI-1.pdf) by Max Welling
+
   ["The Seven Tools of Causal Inference with Reflections on Machine Learning"](https://dl.acm.org/citation.cfm?id=3241036) by Judea Pearl `paper`  
   ["Theoretical Impediments to Machine Learning"](http://web.cs.ucla.edu/~kaoru/theoretical-impediments.pdf) by Judea Pearl `paper`  
 

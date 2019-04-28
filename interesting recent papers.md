@@ -1202,6 +1202,13 @@ also been supported by the observation that deep networks strongly rely on spect
 #### ["Pros and Cons of GAN Evaluation Measures"](https://arxiv.org/abs/1802.03446) Borji
   `evaluation`
 
+#### ["Flow-GAN: Bridging Implicit and Prescribed Learning in Generative Models"](https://arxiv.org/abs/1705.08868) Grover, Dhar, Ermon
+  `evaluation`
+>	"generative adversarial network which allows for tractable likelihood evaluation"  
+>	"Since it can be trained both adversarially (like a GAN) and in terms of MLE (like a flow model), we can quantitatively evaluate the trade-offs involved. In particular, we also consider a hybrid objective function which involves both types of losses."  
+>	"The availability of quantitative metrics allow us to compare to simple baselines which essentially “remember” the training data. Our final results show that naive Gaussian Mixture Models outperforms plain WGAN on both samples quality and log-likelihood for both MNIST and CIFAR-10 which we hope will lead to new directions for both implicit and prescribed learning in generative models."  
+  - `post` <https://distill.pub/2019/gan-open-problems/#tradeoffs>
+
 #### ["Comparison of Maximum Likelihood and GAN-based training of Real NVPs"](https://arxiv.org/abs/1705.05263) Danihelka, Lakshminarayanan, Uria, Wierstra, Dayan
   `evaluation`
 >	"We use a tractable generator architecture for which the log-probability densities can be computed exactly. We train the generator architecture by maximum likelihood and we also train the same generator architecture by GAN. We then compare the properties of the learned generators."  
@@ -1215,6 +1222,7 @@ also been supported by the observation that deep networks strongly rely on spect
 >	"We looked at the approximate Wasserstein distance between the validation data and the generator distribution. We will train another critic to assign high values to validation samples and low values to generated samples. This independent critic will be used only for evaluation. The generator will not see the gradients from the independent critic. We display the approximate Wasserstein distance between the validation set and the generator distribution. The first thing to notice is the correct ordering of generators trained by maximum likelihood. The deepest generator has the smallest approximate distance from the validation set, as indicated by the thick solid lines. We also display an approximate distance between the training set and generator distribution, and the approximate distance between the test set and the generator distribution. The approximate distance between the test set and the generator distribution is a little bit smaller than the approximate distance between the validation set and the generator distribution. The approximate distance between the training set and the generator distribution is much smaller. The generators are overfitting the training set."  
 >	"Real NVP can be used as an encoder in Adversarial Variational Bayes. We were able to measure the gap between the unbiased KL estimate log q(z|x) - log p(z) and its approximation from GAN. We show that Adversarial Variational Bayes underestimates the KL divergence."  
   - `post` <https://colinraffel.com/blog/gans-and-divergence-minimization.html>
+  - `post` <https://distill.pub/2019/gan-open-problems/#tradeoffs>
   - `slides` <http://www.gatsby.ucl.ac.uk/~balaji/Understanding-GANs.pdf>
 
 #### ["On the Quantitative Analysis of Decoder-based Generative Models"](http://arxiv.org/abs/1611.04273) Wu, Burda, Salakhutdinov, Grosse
@@ -1286,12 +1294,6 @@ also been supported by the observation that deep networks strongly rely on spect
 #### ["On Unifying Deep Generative Models"](https://arxiv.org/abs/1706.00550) Hu, Yang, Salakhutdinov, Xing
   `unifying GANs and VAEs`
 >	"We show that GANs and VAEs are essentially minimizing KL divergences of respective posterior and inference distributions with opposite directions, extending the two learning phases of classic wake-sleep algorithm, respectively. The unified view provides a powerful tool to analyze a diverse set of existing model variants, and enables to exchange ideas across research lines in a principled way. For example, we transfer the importance weighting method in VAE literatures for improved GAN learning, and enhance VAEs with an adversarial mechanism for leveraging generated samples."  
-
-#### ["Flow-GAN: Bridging Implicit and Prescribed Learning in Generative Models"](https://arxiv.org/abs/1705.08868) Grover, Dhar, Ermon
-  `unifying GANs and VAEs`
->	"generative adversarial network which allows for tractable likelihood evaluation"  
->	"Since it can be trained both adversarially (like a GAN) and in terms of MLE (like a flow model), we can quantitatively evaluate the trade-offs involved. In particular, we also consider a hybrid objective function which involves both types of losses."  
->	"The availability of quantitative metrics allow us to compare to simple baselines which essentially “remember” the training data. Our final results show that naive Gaussian Mixture Models outperforms plain WGAN on both samples quality and log-likelihood for both MNIST and CIFAR-10 which we hope will lead to new directions for both implicit and prescribed learning in generative models."  
 
 #### ["Hierarchical Implicit Models and Likelihood-Free Variational Inference"](http://arxiv.org/abs/1702.08896) Tran, Ranganath, Blei
   `unifying GANs and VAEs`
@@ -2766,17 +2768,7 @@ also been supported by the observation that deep networks strongly rely on spect
 ----
 #### ["Exploration by Random Network Distillation"](https://arxiv.org/abs/1810.12894) Burda, Edwards, Storkey, Klimov
   `exploration guided by prediction error` `RND`
->	"In general, prediction errors can be attributed to a number of factors:  
->	1. Amount of training data. Prediction error is high where few similar examples were seen by the predictor (epistemic uncertainty).  
->	2. Stochasticity. Prediction error is high because the target function is stochastic (aleatoric uncertainty). Stochastic transitions are a source of such error for forward dynamics prediction.  
->	3. Model misspecification. Prediction error is high because necessary information is missing, or the model class is too limited to fit the complexity of the target function.  
->	4. Learning dynamics. Prediction error is high because the optimization process fails to find a predictor in the model class that best approximates the target function.  
->	Factor 1 is what allows one to use prediction error as an exploration bonus. In practice the prediction error is caused by a combination of all of these factors, not all of them desirable. For instance if the prediction problem is forward dynamics, then factor 2 results in the ‘noisy-TV’ problem. This is the thought experiment where an agent that is rewarded for errors in the prediction of its forward dynamics model gets attracted to local sources of entropy in the environment. A TV showing white noise would be such an attractor, as would a coin flip.  
->	To avoid the undesirable factors 2 and 3, methods such as those by Schmidhuber (1991a); Oudeyer et al. (2007); Lopes et al. (2012); Achiam & Sastry (2017) instead use a measurement of how much the prediction model improves upon seeing a new datapoint. However these approaches tend to be computationally expensive and hence difficult to scale.  
->	RND obviates factors 2 and 3 since the target network can be chosen to be deterministic and inside the model-class of the predictor network."  
-  - `post` <https://blog.openai.com/reinforcement-learning-with-prediction-based-rewards> (demo)
-  - `video` <https://youtu.be/X-B3nAN7YRM?t=7m8s> (Sutskever)
-  - `code` <https://github.com/openai/random-network-distillation>
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#exploration-by-random-network-distillation-burda-edwards-storkey-klimov>
 
 #### ["Large-Scale Study of Curiosity-Driven Learning"](https://arxiv.org/abs/1808.04355) Burda, Edwards, Pathak, Storkey, Darrell, Efros
   `exploration guided by prediction error`

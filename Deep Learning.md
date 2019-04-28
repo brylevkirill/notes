@@ -377,6 +377,8 @@
 
   ["Deep Generative Models"](http://www.deeplearningbook.org/contents/generative_models.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
 
+  ["Do we still need models or just more data and compute?"](https://staff.fnwi.uva.nl/m.welling/wp-content/uploads/Model-versus-Data-AI-1.pdf) by Max Welling
+
   [overview](http://videolectures.net/deeplearning2017_goodfellow_generative_models/) by Ian Goodfellow `video`  
   [overview](http://videolectures.net/deeplearning2017_courville_generative_models/) by Aaron Courville `video`  
   [overview](https://youtube.com/watch?v=JrO5fSskISY) by Shakir Mohamed and Danilo Rezende `video`  
@@ -520,14 +522,16 @@
 
 ----
 
-  ["How to Train Your Generative Models? And Why Does Adversarial Training Work So Well?"](http://inference.vc/how-to-train-your-generative-models-why-generative-adversarial-networks-work-so-well-2/) by Ferenc Huszar  
-  ["An Alternative Update Rule for Generative Adversarial Networks"](http://inference.vc/an-alternative-update-rule-for-generative-adversarial-networks/) by Ferenc Huszar  
-  ["Adversarial Preference Loss"](http://inference.vc/adversarial-preference-loss/) by Ferenc Huszar  
-  ["New Perspectives on Adversarial Training"](http://inference.vc/my-summary-of-adversarial-training-nips-workshop/) by Ferenc Huszar  
+  ["Open Questions about Generative Adversarial Networks"](https://distill.pub/2019/gan-open-problems) by Augustus Odena ([talk](https://youtube.com/watch?v=xN_RqzIJbT4) by Rauf Kurbanov `video` `in russian`)
 
   ["Some Open Questions"](http://www.offconvex.org/2017/03/15/GANs/) by Sanjeev Arora  
   ["Generalization and Equilibrium in Generative Adversarial Networks"](http://www.offconvex.org/2017/03/30/GANs2/) by Sanjeev Arora ([talk](https://youtube.com/watch?v=V7TliSCqOwI) `video`)  
   ["Do GANs Actually Do Distribution Learning?"](http://www.offconvex.org/2017/07/07/GANs3/) by Sanjeev Arora  
+
+  ["How to Train Your Generative Models? And Why Does Adversarial Training Work So Well?"](http://inference.vc/how-to-train-your-generative-models-why-generative-adversarial-networks-work-so-well-2/) by Ferenc Huszar  
+  ["An Alternative Update Rule for Generative Adversarial Networks"](http://inference.vc/an-alternative-update-rule-for-generative-adversarial-networks/) by Ferenc Huszar  
+  ["Adversarial Preference Loss"](http://inference.vc/adversarial-preference-loss/) by Ferenc Huszar  
+  ["New Perspectives on Adversarial Training"](http://inference.vc/my-summary-of-adversarial-training-nips-workshop/) by Ferenc Huszar  
 
 ----
 
@@ -1129,6 +1133,7 @@
 
   - <https://en.wikipedia.org/wiki/Information_bottleneck_method>
   - `video` <https://youtube.com/watch?v=ei59sYLVuqA> (Tishby)
+  - `video` <https://youtube.com/watch?v=yoMC0P2x3Fg> (Skorokodov) `in russian`
   - `post` <http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/>
   - `paper` ["The Information Bottleneck Method"](https://arxiv.org/abs/physics/0004057) by Tishby, Pereira, Bialek
 
@@ -1182,6 +1187,7 @@
   - `video` <https://youtube.com/watch?v=ekUWO_pI2M8> (Tishby)
   - `video` <https://youtu.be/RKvS958AqGY?t=12m7s> (Tishby)
   - `video` <https://youtu.be/cHjI37DsQCQ?t=41m40s> (Selvaraj)
+  - `video` <https://youtube.com/watch?v=yoMC0P2x3Fg> (Skorokodov) `in russian`
   - `post` <https://lilianweng.github.io/lil-log/2017/09/28/anatomize-deep-learning-with-information-theory.html>
   - `post` <https://weberna.github.io/jekyll/update/2017/11/08/Information-Bottleneck-Part1.html>
   - `post` <http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/>
@@ -1300,6 +1306,7 @@ Yoshua Bengio:
   - <https://dmitryulyanov.github.io/deep_image_prior>
   - `video` <https://youtube.com/watch?v=fj0yLTa_bmA> (Ulyanov)
   - `post` <https://towardsdatascience.com/demystifying-deep-image-prior-7076e777e5ba>
+  - `post` <https://people.cs.umass.edu/~zezhoucheng/gp-dip>
   - `code` <https://github.com/DmitryUlyanov/deep-image-prior>
 
 
@@ -1484,6 +1491,7 @@ Yoshua Bengio:
 
 >	"Doesn't close the performance gap of VAEs with continuous latent variables where one can use the Gaussian reparameterisation trick which benefits from much lower variance in the gradients."
 
+  - `video` <http://www.fields.utoronto.ca/video-archive/2018/03/2509-18229> (Maddison)
   - `video` <http://youtube.com/watch?v=JFgXEbgcT7g> (Jang)
   - `video` <https://facebook.com/nipsfoundation/videos/1555493854541848?t=1513> (Teh)
   - `video` <https://youtu.be/_JTu50iDhkA?t=55m53s> (Sobolev)
@@ -1513,6 +1521,7 @@ Yoshua Bengio:
 
   - `video` <https://youtube.com/watch?v=QODYgBhv_no>
   - `video` <https://facebook.com/nipsfoundation/videos/1554402064651027?t=993> (Tucker)
+  - `video` <http://www.fields.utoronto.ca/video-archive/2018/03/2509-18229> (24:02) (Maddison)
   - `video` <https://youtu.be/hkRBoiaplEE?t=34m27s> (Sobolev)
   - `notes` <http://tuananhle.co.uk/notes/rebar-relax.html>
   - `code` <https://github.com/tensorflow/models/tree/master/research/rebar>
@@ -1535,6 +1544,7 @@ Yoshua Bengio:
 >	"RELAX doesn't solve the problem of discrete random variables but it solves the problem of how to estimate gradient of function which value is known but how to compute or differentiate it is unknown (reinforcement learning and other applications)."
 
   - `video` <https://vimeo.com/252185804> (Grathwohl)
+  - `video` <http://www.fields.utoronto.ca/video-archive/2018/03/2509-18229> (30:37) (Maddison)
   - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (25:20) (Bengio)
   - `video` <https://youtu.be/hkRBoiaplEE?t=1h8m1s> (Sobolev)
   - `notes` <http://tuananhle.co.uk/notes/rebar-relax.html>
@@ -2370,6 +2380,7 @@ x."
   - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747?t=1107> (Vaswani, Shazeer)
   - `video` <https://youtu.be/I0nX4HDmXKc?t=7m46s> (Polosukhin)
   - `video` <https://youtube.com/watch?v=rBCqOTEfxvg> (Kaiser)
+  - `video` <https://youtube.com/watch?v=HsYPiKDTikg> (Li)
   - `video` <https://youtu.be/54uLU7Nxyv8> + <https://youtu.be/VEcsf0OKhfw> + <https://youtu.be/9vUoBIeqrQg> (Tatman)
   - `video` <https://youtube.com/watch?v=S0KakHcj_rs> (Palermo)
   - `video` <https://youtube.com/watch?v=iDulhoQ2pro> (Kilcher)
@@ -2886,6 +2897,20 @@ x."
 [**selected papers**](https://yadi.sk/d/mQnJYmxo3WZDvP)
 
 
+#### ["Harnessing Deep Neural Networks with Logic Rules"](http://arxiv.org/abs/1603.06318) Hu, Ma, Liu, Hovy, Xing
+>	"Combining deep neural networks with structured logic rules is desirable to harness flexibility and reduce unpredictability of the neural models. We propose a general framework capable of enhancing various types of neural networks (e.g., CNNs and RNNs) with declarative first-order logic rules. Specifically, we develop an iterative distillation method that transfers the structured information of logic rules into the weights of neural networks. We deploy the framework on a CNN for sentiment analysis, and an RNN for named entity recognition. With a few highly intuitive rules, we obtain substantial improvements and achieve state-of-the-art or comparable results to previous best-performing systems."
+
+>	"We have developed a framework which combines deep neural networks with first-order logic rules to allow integrating human knowledge and intentions into the neural models. In particular, we proposed an iterative distillation procedure that transfers the structured information of logic rules into the weights of neural networks. The transferring is done via a teacher network constructed using the posterior regularization principle. Our framework is general and applicable to various types of neural architectures. With a few intuitive rules, our framework significantly improves base networks on sentiment analysis and named entity recognition, demonstrating the practical significance of our approach. The encouraging results indicate a strong potential of our approach on improving other NLP tasks and application domains. We plan to explore more applications and incorporate more structured knowledge in neural networks. We also would like to improve our framework to automatically learn the importance of different rules, and derive new rules from data."
+
+>	"Despite the impressive advances, the widely-used DNN methods still have limitations. The high predictive accuracy has heavily relied on large amounts of labeled data; and the purely data-driven learning can lead to uninterpretable and sometimes counter-intuitive results. It is also difficult to encode human intention to guide the models to capture desired patterns, without expensive direct supervision or ad-hoc initialization. On the other hand, the cognitive process of human beings have indicated that people learn not only from concrete examples (as DNNs do) but also from different forms of general knowledge and rich experiences. Logic rules provide a flexible declarative language for communicating high-level cognition and expressing structured knowledge. It is therefore desirable to integrate logic rules into DNNs, to transfer human intention and domain knowledge to neural models, and regulate the learning process."
+
+>	"We present a framework capable of enhancing general types of neural networks, such as convolutional networks and recurrent networks, on various tasks, with logic rule knowledge. Our framework enables a neural network to learn simultaneously from labeled instances as well as logic rules, through an iterative rule knowledge distillation procedure that transfers the structured information encoded in the logic rules into the network parameters. Since the general logic rules are complementary to the specific data labels, a natural “side-product” of the integration is the support for semi-supervised learning where unlabeled data can be used to better absorb the logical knowledge. Methodologically, our approach can be seen as a combination of the knowledge distillation and the posterior regularization method. In particular, at each iteration we adapt the posterior constraint principle from PR to construct a rule-regularized teacher, and train the student network of interest to imitate the predictions of the teacher network. We leverage soft logic to support flexible rule encoding."
+
+>	"We apply the proposed framework on both CNN and RNN, and deploy on the task of sentiment analysis and named entity recognition, respectively. With only a few (one or two) very intuitive rules, the enhanced networks strongly improve over their basic forms (without rules), and achieve better or comparable performance to state-of-the-art models which typically have more parameters and complicated architectures. By incorporating the bi-gram transition rules, we obtain 1.56 improvement in F1 score that outperforms all previous neural based methods on named entity recognition task, including the BLSTM-CRF model which applies a conditional random field on top of a BLSTM model in order to capture the transition patterns and encourage valid sequences. In contrast, our method implements the desired constraints in a more straightforward way by using the declarative logic rule language, and at the same time does not introduce extra model parameters to learn. Further integration of the list rule provides a second boost in performance, achieving an F1 score very close to the best-performing system Joint-NER-EL which is a probabilistic graphical model based method optimizing NER and entity linking jointly and using large amount of external resources."
+
+  - `notes` <http://www.erogol.com/harnessing-deep-neural-networks-with-logic-rules/>
+
+
 #### ["Learning Representations for Counterfactual Inference"](http://arxiv.org/abs/1605.03661) Johansson, Shalit, Sontag
   - <https://github.com/brylevkirill/notes/blob/master/Causal%20Inference.md#johansson-shalit-sontag---learning-representations-for-counterfactual-inference>
 
@@ -2971,14 +2996,6 @@ x."
   - `code` <https://github.com/SullyChen/Nvidia-Autopilot-TensorFlow>
 
 
-#### ["DeepSpeech: Scaling up end-to-end speech recognition"](http://arxiv.org/abs/1412.5567) Hannun, Case, Casper, Catanzaro, Diamos, Elsen, Prenger, Satheesh, Sengupta, Coates, Ng
->	"We present a state-of-the-art speech recognition system developed using end-to-end deep learning. Our architecture is significantly simpler than traditional speech systems, which rely on laboriously engineered processing pipelines; these traditional systems also tend to perform poorly when used in noisy environments. In contrast, our system does not need hand-designed components to model background noise, reverberation, or speaker variation, but instead directly learns a function that is robust to such effects. We do not need a phoneme dictionary, nor even the concept of a "phoneme." Key to our approach is a well-optimized RNN training system that uses multiple GPUs, as well as a set of novel data synthesis techniques that allow us to efficiently obtain a large amount of varied data for training. Our system, called DeepSpeech, outperforms previously published results on the widely studied Switchboard Hub5'00, achieving 16.5% error on the full test set. DeepSpeech also handles challenging noisy environments better than widely used, state-of-the-art commercial speech systems."
-
-  - `video` <http://youtube.com/watch?v=kAnJdvf_KeE> (demo)
-  - `video` <http://on-demand.gputechconf.com/gtc/2015/video/S5631.html> (Catanzaro)
-  - `video` <http://youtube.com/watch?v=P9GLDezYVX4> (Hannun)
-
-
 #### ["Multiple Object Recognition With Visual Attention"](http://arxiv.org/abs/1412.7755) Ba, Mnih, Kavukcuoglu
 >	"We present an attention-based model for recognizing multiple objects in images. The proposed model is a deep recurrent neural network trained with reinforcement learning to attend to the most relevant regions of the input image. We show that the model learns to both localize and recognize multiple objects despite being given only class labels during training. We evaluate the model on the challenging task of transcribing house number sequences from Google Street View images and show that it is both more accurate than the state-of-the-art convolutional networks and uses fewer parameters and less computation."
 
@@ -3018,24 +3035,6 @@ x."
   - `video` <https://www.youtube.com/watch?v=ENVGHs3yw7k> + <https://youtube.com/watch?v=u_Mdp_3RVRA> (Gharbieh)
   - `video` <https://youtu.be/_XRBlhzb31U?t=3m27s> (Figurnov) `in russian`
   - `code` <https://github.com/kelvinxu/arctic-captions>
-
-
-#### ["Deep Generative Image Models using a Laplacian Pyramid of Adversarial Networks"](http://arxiv.org/abs/1506.05751) Denton, Chintala, Szlam, Fergus
->	"In this paper we introduce a generative parametric model capable of producing high quality samples of natural images. Our approach uses a cascade of convolutional networks within a Laplacian pyramid framework to generate images in a coarse-to-fine fashion. At each level of the pyramid, a separate generative convnet model is trained using the Generative Adversarial Nets approach. Samples drawn from our model are of significantly higher quality than alternate approaches. In a quantitative assessment by human evaluators, our CIFAR10 samples were mistaken for real images around 40% of the time, compared to 10% for samples drawn from a GAN baseline model. We also show samples from models trained on the higher resolution images of the LSUN scene dataset."
-
->	"We have proposed a conceptually simple generative model that is able to produce high-quality sample images that are both qualitatively and quantitatively better than other deep generative modeling approaches. A key point in our work is giving up any “global” notion of fidelity, and instead breaking the generation into plausible successive refinements. We note that many other signal modalities have a multiscale structure that may benefit from a similar approach."
-
->	"One of the easiest thing a generative network can do to generate realistic samples is to simply copy the training images. This is not a true generative model that generalizes to all natural images, but one that overfit heavily on the training set. This is something we meticulously checked while training our networks, i.e. that our network is simply not copying the training samples."
-
->	"Drawing samples conditioned on the same initial image gives us the ability to see if the variability in producing the samples is trivial (copying), or non-trivial. We did a few experiments on the LSUN database and concluded that our samples are fairly different for every draw. For example, the network changes the building architectures, places and removes windows, adds extra tunnels and hulls (and sometimes extra towers) and creates details that are different everytime a sample is drawn."
-
->	"There are so many things to explore, as follow-up work to this paper. A list of simple ideas would be: instead of one-hot coding, give word-embeddings as the conditional vector. Imagine the awesomeness of going from image captions to images. Apply the same exact method to generate audio and video."
-
-  - <http://soumith.ch/eyescream/> (demo)
-  - `video` <http://youtube.com/watch?v=JEJk-Ug_ebI> + <http://research.microsoft.com/apps/video/default.aspx?id=260051> (Denton)
-  - `video` <http://93.180.23.59/videos/video/2487/in/channel/1/> (Gitman)
-  - `post` <http://inference.vc/generative-image-models-via-laplacian-pyramids/>
-  - `code` <https://github.com/facebook/eyescream>
 
 
 #### ["Generative Adversarial Text to Image Synthesis"](https://arxiv.org/abs/1605.05396) Reed, Akata, Yan, Logeswaran, Schiele, Lee

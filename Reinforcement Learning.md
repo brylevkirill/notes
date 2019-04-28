@@ -78,7 +78,7 @@
   [personalized web services](http://thenewstack.io/reinforcement-learning-ready-real-world/) at Microsoft (Custom Decision Service [paper](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) `summary`)  
   ["Personalized Web Services"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto  
 
-  [datacenter cooling](https://deepmind.com/blog/safety-first-ai-autonomous-data-centre-cooling-and-industrial-control/) at Google ([patent](http://freepatentsonline.com/y2018/0204116.html), [paper](https://arxiv.org/abs/1711.11165))
+  [datacenter cooling](https://deepmind.com/blog/safety-first-ai-autonomous-data-centre-cooling-and-industrial-control/) at Google ([paper](https://papers.nips.cc/paper/7638-data-center-cooling-using-model-predictive-control.pdf) by Lazic et al., [patent](http://freepatentsonline.com/y2018/0204116.html))
 
   [artwork personalization](https://medium.com/netflix-techblog/artwork-personalization-c589f074ad76) at Netflix
 
@@ -115,7 +115,9 @@
 	[OpenAI Five overview](https://youtu.be/w3ues-NayAs?t=2m26s) by Ilya Sutskever `video`  
 	[OpenAI Five discussion](https://twitch.tv/videos/293517383?t=4h41m56s) `video`  
 
-	[OpenAI Five vs humans games](https://twitch.tv/openai/videos) `video`
+	[discussion](https://reddit.com/r/DotA2/comments/bf49yk/hello_were_the_dev_team_behind_openai_five_we) with OpenAI team
+
+	[OpenAI Five vs top players games](https://youtube.com/playlist?list=PLOXw6I10VTv-ZFZV4fMqKMfNQmwmkcr0w) `video`
 
 ----
   - *StarCraft 2*
@@ -124,7 +126,7 @@
 
 	overview by Alex Irpan ([1](https://www.alexirpan.com/2019/02/22/alphastar.html), [2](https://www.alexirpan.com/2019/02/22/alphastar-part2.html))
 
-	[AlphaStar vs humans games](https://youtube.com/watch?v=cUTMhmVh1qs) `video` ([highlights](https://youtube.com/watch?v=zgIFoepzhIo) by MaNa `video`, [highlights](https://youtube.com/watch?v=_YWmU-E2WFc) by Artosis `video`))
+	[AlphaStar vs pro players games](https://youtube.com/watch?v=cUTMhmVh1qs) `video` ([highlights](https://youtube.com/watch?v=zgIFoepzhIo) by MaNa `video`, [highlights](https://youtube.com/watch?v=_YWmU-E2WFc) by Artosis `video`))
 
 ----
   - *Go*  
@@ -151,37 +153,8 @@
 
 	[AlphaGo documentary](https://netflix.com/title/80190844) `video`
 
-	AlphaGo vs Lee Sedol match:
-
-	game 1: [overview](https://youtu.be/9M-yo1huLoU?t=7m49s) `video` +
-		[overview](https://youtube.com/watch?v=bIQxOsRAXCo) `video` +
-		[overview](https://gogameguru.com/alphago-defeats-lee-sedol-game-1/) `text` +
-		[overview](http://deeplearningskysthelimit.blogspot.ru/2016/04/part-6-review-of-game-1-lee-sedol.html) `text`  
-	game 2: [overview](https://youtu.be/9M-yo1huLoU?t=20m13s) `video` +
-		[overview](https://youtube.com/watch?v=1aMt7ulL6EI) `video` +
-		[overview](https://gogameguru.com/alphago-races-ahead-2-0-lee-sedol/) `text` +
-		[overview](http://deeplearningskysthelimit.blogspot.ru/2016/04/part-7-review-of-game-2-alphagos-new.html) `text`  
-	game 3: [overview](https://youtu.be/9M-yo1huLoU?t=27m10s) `video` +
-		[overview](https://youtube.com/watch?v=6hROM_bxZ9E) `video` +
-		[overview](https://gogameguru.com/alphago-shows-true-strength-3rd-victory-lee-sedol/) `text` +
-		[overview](http://deeplearningskysthelimit.blogspot.ru/2016/04/part-8-review-of-game-3-lee-sedols.html) `text`  
-	game 4: [overview](https://youtu.be/9M-yo1huLoU?t=33m23s) `video` +
-		[overview](https://youtube.com/watch?v=G5gJ-pVo1gs) `video` +
-		[overview](https://gogameguru.com/lee-sedol-defeats-alphago-masterful-comeback-game-4/) `text` +
-		[overview](http://deeplearningskysthelimit.blogspot.ru/2016/04/part-9-review-of-game-4-lee-sedols.html) `text`  
-	game 5: [overview](https://youtu.be/9M-yo1huLoU?t=38m40s) `video` +
-		[overview](https://youtube.com/watch?v=QxHdPdRcMhw) `video` +
-		[overview](https://gogameguru.com/alphago-defeats-lee-sedol-4-1/) `text` +
-		[overview](http://deeplearningskysthelimit.blogspot.ru/2016/05/part-10-review-of-game-5-alphago.html) `text`  
-
-	AlphaGo Master vs Ke Jie match:
-
-	game 1: [overview](https://youtube.com/watch?v=Z-HL5nppBnM) `video` +
-		[overview](https://youtube.com/watch?v=HIu9P9wEIsc) `text`  
-	game 2: [overview](https://youtube.com/watch?v=1U1p4Mwis60) `video` +
-		[overview](https://youtube.com/watch?v=SF486mbvAOI) `text`  
-	game 3: [overview](https://youtube.com/watch?v=ru0E7N0-kFE) `video` +
-		[overview](https://youtube.com/watch?v=CUZxe7bXKxo) `text`  
+	[AlphaGo vs Lee Sedol games](https://youtube.com/playlist?list=PLqYmG7hTraZDEaLdPx7GJ284kuE2xcFXu) `video`  
+	[AlphaGo vs Ke Jie games](https://youtube.com/playlist?list=PLqYmG7hTraZDEaLdPx7GJ284kuE2xcFXu) `video`  
 
 ----
   - *Poker*  
@@ -212,7 +185,7 @@
 	[discussion](https://youtube.com/watch?v=wKey6eKccYM) with Noam Brown `audio`  
 	[discussion](https://reddit.com/r/MachineLearning/comments/7jn12v/ama_we_are_noam_brown_and_professor_tuomas) with Noam Brown and Tuomas Sandholm  
 
-	[Libratus vs top professional players](https://youtube.com/watch?v=crgmYTMfrSc) match discussion `video`
+	[Libratus vs top players highlights](https://youtube.com/watch?v=crgmYTMfrSc) `video`
 
 ----
   - *Poker*  
@@ -235,7 +208,7 @@
 	[discussion](http://thinkingpoker.net/2017/04/episode-210-michael-johanson-and-dustin-morrill/) with Michael Johanson and Dustin Morrill  
 	[discussion](http://thinkingpoker.net/2017/08/episode-225-taking-the-variance-out-of-poker/) with Michael Bowling and Dustin Morrill  
 
-	[DeepStack vs professional players](https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ) games `video`
+	[DeepStack vs pro players games](https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ) `video`
 
 ----
   - *Chess*  
@@ -248,15 +221,7 @@
 	[AlphaZero overview](https://vimeo.com/252184928#t=1468) by David Silver `video`  
 	[AlphaZero overview](https://youtu.be/DXNqYSNvnjA?t=21m24s) by Demis Hassabis `video`  
 
-	AlphaZero vs Stockfish match:
-
-	[match highlights](https://youtube.com/watch?v=6z1o48Sgrck) `video`
-
-	game 3: [overview](https://youtube.com/watch?v=akgalUq5vew) `video`  
-	game 5: [overview](https://youtube.com/watch?v=9AMI3520S5Y) `video`  
-	game 8: [overview](https://youtube.com/watch?v=6z1o48Sgrck) `video`  
-	game 9: [overview](https://youtube.com/watch?v=MTWkX6KZO2A) `video`  
-	game 10: [overview](https://youtube.com/watch?v=DiJeP9oifsc) `video`  
+	[AlphaZero vs Stockfish games highlights](https://youtube.com/watch?v=6z1o48Sgrck) `video`
 
 ----
   - *Quake III Arena CTF*
@@ -265,7 +230,7 @@
 
 	["Human-level Performance in First-person Multiplayer Games with Population-based Deep Reinforcement Learning"](#human-level-performance-in-first-person-multiplayer-games-with-population-based-deep-reinforcement-learning-jaderberg-et-al) by Jaderberg et al. `paper` `summary`
 
-	[FTW agents vs humans games](https://youtube.com/watch?v=dltN4MxV1RI) `video`
+	[FTW agents vs human players games](https://youtube.com/watch?v=dltN4MxV1RI) `video`
 
 ----
   - *Doom*  
@@ -296,7 +261,7 @@
 
 	[**IBM Watson**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#machine-reading-projects---ibm-watson) project `summary`
 
-	[IBM Watson vs Ken Jennings vs Brad Rutter](https://archive.org/details/Jeopardy.2011.02.The.IBM.Challenge) match `video`
+	[IBM Watson vs top players](https://archive.org/details/Jeopardy.2011.02.The.IBM.Challenge) match `video`
 
 ----
   - *TD-Gammon*  
@@ -493,7 +458,8 @@
 
 ----
 
-  ["The Bitter Lesson"](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) by Rich Sutton
+  ["The Bitter Lesson"](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) by Rich Sutton ([talk](http://www.fields.utoronto.ca/video-archive/2016/10/2267-16158) `video`)  
+  ["Do we still need models or just more data and compute?"](https://staff.fnwi.uva.nl/m.welling/wp-content/uploads/Model-versus-Data-AI-1.pdf) by Max Welling  
 
 
 ----
@@ -795,6 +761,7 @@
   - *predictive novelty motivation*  
 	reward for interesting situations, for which prediction errors are the highest  
 
+	["Exploration by Random Network Distillation"](#exploration-by-random-network-distillation-burda-edwards-storkey-klimov) by Burda et al. `paper` `summary`  
 	["Large-Scale Study of Curiosity-Driven Learning"](#large-scale-study-of-curiosity-driven-learning-burda-edwards-pathak-storkey-darrell-efros) by Burda et al. `paper` `summary`  
 	["Curiosity-driven Exploration by Self-supervised Prediction"](#curiosity-driven-exploration-by-self-supervised-prediction-pathak-agrawal-efros-darrell) by Pathak et al. `paper` `summary`  
 	["Reinforcement Learning with Unsupervised Auxiliary Tasks"](#reinforcement-learning-with-unsupervised-auxiliary-tasks-jaderberg-mnih-czarnecki-schaul-leibo-silver-kavukcuoglu) by Jaderberg et al. `paper` `summary`  
@@ -1066,11 +1033,11 @@
 
 ----
 
-  ["The Next Big Step in AI: Planning with a Learned Model"](https://youtube.com/watch?v=6-Uiq8-wKrg) by Richard Sutton `video`
+  ["The Next Big Step in AI: Planning with a Learned Model"](https://youtube.com/watch?v=6-Uiq8-wKrg) by Richard Sutton `video`  
+  ["The Grand Challenge of Knowledge"](http://www.fields.utoronto.ca/video-archive/2016/10/2267-16158) (41:35) by Richard Sutton `video`  
+  ["Learning World Models: The Next Step Towards AI"](https://youtube.com/watch?v=Wb3cnG0o7b8&t=33m50s) by Yann LeCun `video`  
 
-  ["Planning and Models"](https://youtube.com/watch?v=Xrxrd8nl4YI) by Hado van Hasselt `video`
-
-  ["Planning by Dynamic Programming"](https://youtube.com/watch?v=Nd1-UUMVfz4) by David Silver `video`  
+  ["Planning and Models"](https://youtube.com/watch?v=Xrxrd8nl4YI) by Hado van Hasselt `video`  
   ["Integrating Learning and Planning"](https://youtube.com/watch?v=ItMutbeOHtc) by David Silver `video`  
 
 ----
@@ -2368,6 +2335,21 @@ interesting recent papers:
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)
 
+
+#### ["Exploration by Random Network Distillation"](https://arxiv.org/abs/1810.12894) Burda, Edwards, Storkey, Klimov
+  `exploration guided by prediction error` `RND`
+>	"In general, prediction errors can be attributed to a number of factors:  
+>	1. Amount of training data. Prediction error is high where few similar examples were seen by the predictor (epistemic uncertainty).  
+>	2. Stochasticity. Prediction error is high because the target function is stochastic (aleatoric uncertainty). Stochastic transitions are a source of such error for forward dynamics prediction.  
+>	3. Model misspecification. Prediction error is high because necessary information is missing, or the model class is too limited to fit the complexity of the target function.  
+>	4. Learning dynamics. Prediction error is high because the optimization process fails to find a predictor in the model class that best approximates the target function.  
+>	Factor 1 is what allows one to use prediction error as an exploration bonus. In practice the prediction error is caused by a combination of all of these factors, not all of them desirable. For instance if the prediction problem is forward dynamics, then factor 2 results in the ‘noisy-TV’ problem. This is the thought experiment where an agent that is rewarded for errors in the prediction of its forward dynamics model gets attracted to local sources of entropy in the environment. A TV showing white noise would be such an attractor, as would a coin flip.  
+>	To avoid the undesirable factors 2 and 3, methods such as those by Schmidhuber (1991a); Oudeyer et al. (2007); Lopes et al. (2012); Achiam & Sastry (2017) instead use a measurement of how much the prediction model improves upon seeing a new datapoint. However these approaches tend to be computationally expensive and hence difficult to scale.  
+>	RND obviates factors 2 and 3 since the target network can be chosen to be deterministic and inside the model-class of the predictor network."  
+  - `post` <https://blog.openai.com/reinforcement-learning-with-prediction-based-rewards> (demo)
+  - `video` <https://youtu.be/ElyFDUab30A?t=17m37s> (Sutskever)
+  - `video` <https://youtu.be/X-B3nAN7YRM?t=7m8s> (Sutskever)
+  - `code` <https://github.com/openai/random-network-distillation>
 
 #### ["Large-Scale Study of Curiosity-Driven Learning"](https://arxiv.org/abs/1808.04355) Burda, Edwards, Pathak, Storkey, Darrell, Efros
   `exploration guided by prediction error`
