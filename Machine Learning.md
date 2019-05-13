@@ -138,7 +138,13 @@
 
   [videos](https://github.com/dustinvtran/ml-videos)
 
-  - NeurIPS 2018
+  - ICLR 2019  
+	<https://facebook.com/pg/iclr.cc/videos> `video`  
+	<https://slideslive.com/iclr> `video`  
+
+	<https://david-abel.github.io/notes/iclr_2019.pdf> `notes`
+
+  - NeurIPS 2018  
 	<https://neurips.cc/Conferences/2018/Videos> `video`  
 	<https://facebook.com/pg/nipsfoundation/videos> `video`  
 
@@ -155,7 +161,7 @@
 	<http://iclr2018.mmanukyan.io>  
 	<http://chillee.github.io/OpenReviewExplorer>  
 
-  - NIPS 2017  
+  - NeurIPS 2017  
 	<https://nips.cc/Conferences/2017/Videos> `video`  
 	<https://facebook.com/pg/nipsfoundation/videos/> `video`  
 
@@ -178,7 +184,7 @@
 
 	<https://medium.com/@karpathy/iclr-2017-vs-arxiv-sanity-d1488ac5c131>
 
-  - NIPS 2016  
+  - NeurIPS 2016  
 	<https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016> `video`  
 	<https://nips.cc/Conferences/2016/SpotlightVideos> `video`  
 
@@ -198,7 +204,7 @@
 
 	<http://www.computervisionblog.com/2016/06/deep-learning-trends-iclr-2016.html>  
 
-  - NIPS 2015  
+  - NeurIPS 2015  
 	<https://youtube.com/playlist?list=PLD7HFcN7LXRdvgfR6qNbuvzxIwG0ecE9Q> `video`  
 	<https://youtube.com/user/NeuralInformationPro/search?query=NIPS+2015> `video`  
  
@@ -212,7 +218,7 @@
   - ICLR 2015  
 	<http://youtube.com/channel/UCqxFGrNL5nX10lS62bswp9w> `video`
 
-  - NIPS 2014  
+  - NeurIPS 2014  
 	<https://youtube.com/user/NeuralInformationPro/search?query=NIPS+2014> `video`
 
 

@@ -78,6 +78,8 @@
   [personalized web services](http://thenewstack.io/reinforcement-learning-ready-real-world/) at Microsoft (Custom Decision Service [paper](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) `summary`)  
   ["Personalized Web Services"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto  
 
+  [recommender systems](http://www.fields.utoronto.ca/video-archive/2019/02/2509-19619) at Google `video`
+
   [datacenter cooling](https://deepmind.com/blog/safety-first-ai-autonomous-data-centre-cooling-and-industrial-control/) at Google ([paper](https://papers.nips.cc/paper/7638-data-center-cooling-using-model-predictive-control.pdf) by Lazic et al., [patent](http://freepatentsonline.com/y2018/0204116.html))
 
   [artwork personalization](https://medium.com/netflix-techblog/artwork-personalization-c589f074ad76) at Netflix
@@ -123,6 +125,9 @@
   - *StarCraft 2*
 
 	[AlphaStar](https://deepmind.com/blog/alphastar-mastering-real-time-strategy-game-starcraft-ii)
+
+	[overview](https://youtu.be/3N9phq_yZP0?t=32m52s) by Demis Hassabis `video`  
+	[overview](https://youtu.be/Kedt2or9xlo) by Oriol Vinyals `video`  
 
 	overview by Alex Irpan ([1](https://www.alexirpan.com/2019/02/22/alphastar.html), [2](https://www.alexirpan.com/2019/02/22/alphastar-part2.html))
 
@@ -219,6 +224,7 @@
 	["KnightCap: A Chess Program that Learns by Combining TD(lambda) with Game-tree Search"](https://arxiv.org/abs/cs/9901002) by Baxter et al. `paper`  
 
 	[AlphaZero overview](https://vimeo.com/252184928#t=1468) by David Silver `video`  
+	[AlphaZero overview](https://youtu.be/3N9phq_yZP0?t=12m43s) by Demis Hassabis `video`  
 	[AlphaZero overview](https://youtu.be/DXNqYSNvnjA?t=21m24s) by Demis Hassabis `video`  
 
 	[AlphaZero vs Stockfish games highlights](https://youtube.com/watch?v=6z1o48Sgrck) `video`
@@ -276,8 +282,7 @@
 ---
 ### applications - robotics
 
-  [Dactyl](https://youtu.be/w3ues-NayAs?t=16m26s) overview by Ilya Sutskever `video`
-
+  [overview](https://livestream.com/newyorkacademyofsciences/ml2018-2/videos/171320389) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=lYU5nq0dAQQ) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=eKaYnXQUb2g) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=jtjW5Pye_44) by Sergey Levine `video`  
@@ -285,8 +290,8 @@
 
   [overview](https://facebook.com/nipsfoundation/videos/1554594181298482) by Pieter Abbeel `video`  
   [overview](https://youtube.com/watch?v=TERCdog1ddE) by Pieter Abbeel `video`  
-  [overview](http://on-demand.gputechconf.com/gtc/2016/video/S6812.html) by Pieter Abbeel `video`  
-  [overview](https://youtu.be/xe-z4i3l-iQ?t=30m35s) by Pieter Abbeel `video`  
+
+  [Dactyl](https://youtu.be/w3ues-NayAs?t=16m26s) overview by Ilya Sutskever `video`
 
   ["Is (Deep) Reinforcement Learning Barking Up The Wrong Tree?"](https://youtube.com/watch?v=2GW7ozcUCFE) by Chris Atkeson `video`
 
@@ -1781,6 +1786,7 @@ interesting recent papers:
 
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games> (demo)
   - `video` <https://vimeo.com/252184928#t=1468> (Silver)
+  - `video` <https://youtu.be/3N9phq_yZP0?t=12m43s> (Hassabis)
   - `video` <https://youtu.be/DXNqYSNvnjA?t=21m24s> (Hassabis)
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
   - `notes` <https://blog.acolyer.org/2018/01/10/mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm/>
@@ -1897,6 +1903,7 @@ interesting recent papers:
   - `video` <https://vimeo.com/240429210> (Langford, Agarwal)
   - `video` <https://youtube.com/watch?v=5JXRbhPLSQw> (Agarwal)
   - `video` <https://youtu.be/N5x48g2sp8M?t=52m> (Schapire)
+  - `audio` <https://youtube.com/watch?v=ZUVLo07459U> (Langford)
   - `audio` <https://youtu.be/3q4OvzIyPug?t=6m12s> (Agarwal)
   - `post` <http://hunch.net/?p=4464948> (Langford)
   - `post` <http://machinedlearnings.com/2017/01/reinforcement-learning-as-service.html> (Mineiro)
@@ -3040,6 +3047,67 @@ interesting recent papers:
 
 #### ["Reinforced Variational Inference"](http://approximateinference.org/accepted/WeberEtAl2015.pdf) Weber, Heess, Eslami, Schulman, Wingate, Silver
 >	"Recent years have seen an increase in the complexity and scale of probabilistic models used to understand and analyze data, with a corresponding increase in the difficulty of performing inference. An important enabling factor in this context has been the development of stochastic gradient algorithms for learning variational approximations to posterior distributions. In a separate line of work researchers have been investigating how to use probabilistic inference for the problem of optimal control. By viewing control as an inference problem, they showed that they could ‘borrow’ algorithms from the inference literature (e.g. belief propagation) and turn them into control algorithms. In this work, we do just the opposite: we formally map the problem of learning approximate posterior distributions in variational inference onto the policy optimization problem in reinforcement learning, explaining this connection at two levels. We first provide a high level connection, where draws from the approximate posterior correspond to trajectory samples, free energies to expected returns, and where the core computation involves computing gradients of expectations. We follow by a more detailed, sequential mapping where Markov Decision Processes concepts (state, action, rewards and transitions) are clearly defined in the inference context. We then illustrate how this allows us to leverage ideas from RL for inference network learning, for instance by introducing the concept of value functions in sequential variational inference. For concreteness and simplicity, in the main text we focus on inference for a particular model class and derive the general case in the appendix."
+
+
+#### ["Reinforcement Learning with Deep Energy-Based Policies"](https://arxiv.org/abs/1702.08165) Haarnoja, Tang, Abbeel, Levine
+  `SQL` `soft Q-learning` `policy gradient` `maximum entropy policy`
+>	"We propose a method for learning expressive energy-based policies for continuous states and actions, which has been feasible only in tabular domains before. We apply our method to learning maximum entropy policies, resulting into a new algorithm, called soft Q-learning, that expresses the optimal policy via a Boltzmann distribution. We use the recently proposed amortized Stein variational gradient descent to learn a stochastic sampling network that approximates samples from this distribution. The benefits of the proposed algorithm include improved exploration and compositionality that allows transferring skills between tasks, which we confirm in simulated experiments with swimming and walking robots. We also draw a connection to actor-critic methods, which can be viewed performing approximate inference on the corresponding energy-based model."
+
+>	"Fox et al. (2015) proposed soft Q-learning which extended the Q-learning with tabular form for the new Bellman optimality equation corresponding to the finite state finite action entropy-regularized MDP. The algorithm does not accomodate for function approximator due to the intractability of the log-sum-exp operation in the soft Q-learning update. To avoid such difficulty, Haarnoja et al. (2017) reformulates the update as an optimization which is approximated by samples from stein variational gradient descent (SVGD) sampler."
+
+  - <https://sites.google.com/view/softqlearning/home> (demo)
+  - `post` <http://bair.berkeley.edu/blog/2017/10/06/soft-q-learning/>
+  - `video` <https://youtube.com/watch?v=IAJ1LywY6Zg> (Levine)
+  - `video` <https://livestream.com/newyorkacademyofsciences/ml2018-2/videos/171320389> (14:47) (Levine)
+  - `video` <https://vimeo.com/240428644#t=1h16m18s> (Levine)
+  - `code` <https://github.com/haarnoja/softqlearning>
+  - `paper` ["Taming the Noise in Reinforcement Learning via Soft Updates"](https://arxiv.org/abs/1512.08562) by Fox, Pakman, Tishby
+
+
+#### ["Equivalence Between Policy Gradients and Soft Q-Learning"](https://arxiv.org/abs/1704.06440) Schulman, Chen, Abbeel
+  `soft Q-learning` `policy gradient` `maximum entropy policy`
+>	"Two of the leading approaches for model-free reinforcement learning are policy gradient methods and Q-learning methods. Q-learning methods can be effective and sample-efficient when they work, however, it is not well-understood why they work, since empirically, the Q-values they estimate are very inaccurate. A partial explanation may be that Q-learning methods are secretly implementing policy gradient updates: we show that there is a precise equivalence between Q-learning and policy gradient methods in the setting of entropy-regularized reinforcement learning, that "soft" (entropy-regularized) Q-learning is exactly equivalent to a policy gradient method. We also point out a connection between Q-learning methods and natural policy gradient methods. Experimentally, we explore the entropy-regularized versions of Q-learning and policy gradients, and we find them to perform as well as (or slightly better than) the standard variants on the Atari benchmark. We also show that the equivalence holds in practical settings by constructing a Q-learning method that closely matches the learning dynamics of A3C without using a target network or ϵ-greedy exploration schedule."
+
+  - `video` <https://youtube.com/watch?v=IAJ1LywY6Zg> (Levine)
+  - `video` <https://livestream.com/newyorkacademyofsciences/ml2018-2/videos/171320389> (14:47) (Levine)
+  - `video` <https://vimeo.com/240428644#t=1h16m18s> (Levine)
+  - `video` <https://youtube.com/watch?v=gmWmQZvg6hA> + <https://youtube.com/watch?v=KMf6AANMMx0> (Konobeev) `in russian`
+  - `post` <http://bair.berkeley.edu/blog/2017/10/06/soft-q-learning/>
+
+
+#### ["A Unified View of Entropy-Regularized Markov Decision Processes"](https://arxiv.org/abs/1705.07798) Neu, Gomez, Jonsson
+  `soft Q-learning` `policy gradient` `maximum entropy policy`
+>	"We propose a general framework for entropy-regularized average-reward reinforcement learning in Markov decision processes (MDPs). Our approach is based on extending the linear-programming formulation of policy optimization in MDPs to accommodate convex regularization functions. Our key result is showing that using the conditional entropy of the joint state-action distributions as regularization yields a dual optimization problem closely resembling the Bellman optimality equations. This result enables us to formalize a number of state-of-the-art entropy-regularized reinforcement learning algorithms as approximate variants of Mirror Descent or Dual Averaging, and thus to argue about the convergence properties of these methods. In particular, we show that the exact version of the TRPO algorithm of Schulman et al. (2015) actually converges to the optimal policy, while the entropy-regularized policy gradient methods of Mnih et al. (2016) may fail to converge to a fixed point. Finally, we illustrate empirically the effects of using various regularization techniques on learning performance in a simple reinforcement learning setup."
+
+  - `video` <http://videocrm.ca/Machine18/Machine18-20180426-1-GergelyNeu.mp4> (Neu)
+
+
+#### ["Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor"](https://arxiv.org/abs/1801.01290) Haarnoja, Zhou, Abbeel, Levine
+  `SAC` `soft Q-learning` `policy gradient` `maximum entropy policy` `on-policy + off-policy`
+>	"Model-free deep reinforcement learning algorithms have been demonstrated on a range of challenging decision making and control tasks. However, these methods typically suffer from two major challenges: very high sample complexity and brittle convergence properties, which necessitate meticulous hyperparameter tuning. Both of these challenges severely limit the applicability of such methods to complex, real-world domains. In this paper, we propose soft actor-critic, an off-policy actor-critic deep RL algorithm based on the maximum entropy reinforcement learning framework. In this framework, the actor aims to maximize expected reward while also maximizing entropy. That is, to succeed at the task while acting as randomly as possible. Prior deep RL methods based on this framework have been formulated as Q-learning methods. By combining off-policy updates with a stable stochastic actor-critic formulation, our method achieves state-of-the-art performance on a range of continuous control benchmark tasks, outperforming prior on-policy and off-policy methods. Furthermore, we demonstrate that, in contrast to other off-policy algorithms, our approach is very stable, achieving very similar performance across different random seeds."
+
+>	"Soft Q-learning algorithm for learning multi-modal stochastic policies via entropy maximization, leading to better exploration in environments with multi-modal reward landscapes, combined with actor-critic framework into Soft Actor-Critic, an off-policy actor-critic method in which the actor aims to maximize both the expected reward and the entropy of a stochastic policy."  
+>	"SAC learns the soft Q-function of policy and the policy jointly. SAC is similar to DDPG but with a stochastic policy."  
+>	"DDPG uses a Q-function estimator to enable off-policy learning, and a deterministic actor that maximizes this Q-function. As such, this method can be viewed both as a deterministic actor-critic algorithm and an approximate Q-learning algorithm. Unfortunately, the interplay between the deterministic actor network and the Q-function typically makes DDPG extremely difficult to stabilize and brittle to hyperparameter settings. As a consequence, it is difficult to extend DDPG to very complex, high-dimensional tasks, and on-policy policy gradient methods still tend to produce the best results in such settings. Our method instead combines off-policy actor-critic training with a stochastic actor, and further aims to maximize the entropy of this actor with an entropy maximization objective. We find that this actually results in a substantially more stable and scalable algorithm that, in practice, exceeds both the efficiency and final performance of DDPG."  
+>	"Many actor-critic algorithms build on the standard, on-policy policy gradient formulation to update the actor, and many of them also consider the entropy of the policy, but instead of maximizing the entropy, they use it as an regularizer. This tends to improve stability, but results in very poor sample complexity. Maximum entropy reinforcement learning optimizes policies to maximize both the expected return and the expected entropy of the policy."  
+>	"SAC is particularly well-suited for model-based RL as it uses an objective that (i) improves policy robustness which hinders adversarial model exploitation and (ii) develops multi-modal policies which could mitigate negative effects of planning with inaccurate models."  
+>	"SAC implicitly acts as an empowerment-based directed exploration method (Mohamed & Rezende, 2015) due to its entropy bonus."  
+
+  - `post` <http://bair.berkeley.edu/blog/2018/12/14/sac>
+  - `video` <https://vimeo.com/252185258>
+  - `video` <https://facebook.com/icml.imls/videos/430993334081854?t=6485> (Haarnoja)
+  - `video` <https://livestream.com/newyorkacademyofsciences/ml2018-2/videos/171320389> (14:47) (Levine)
+  - `video` <https://youtu.be/IAJ1LywY6Zg?t=21m4s> (Levine)
+  - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h51m28s> (Sigaud)
+  - `video` <https://youtube.com/watch?v=NiTJOw1aST4> (Grinchuk) `in russian`
+  - `post` <https://spinningup.openai.com/en/latest/algorithms/sac.html>
+  - `notes` <https://github.com/Scitator/papers/blob/master/papers/1801_soft_ac.md>
+  - `code` <https://github.com/rail-berkeley/softlearning>
+  - `code` <https://github.com/vitchyr/rlkit>
+  - `code` <https://github.com/haarnoja/sac>
+  - `code` <https://github.com/higgsfield/RL-Adventure-2>
+  - `paper` ["Soft Actor-Critic Algorithms and Applications"](https://arxiv.org/abs/1812.05905) by Haarnoja et al.
+  - `paper` ["Learning to Walk via Deep Reinforcement Learning"](https://arxiv.org/abs/1812.11103) by Haarnoja et al.
 
 
 

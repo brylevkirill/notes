@@ -7,7 +7,7 @@ interesting recent papers:
   * [**few-shot learning**](#few-shot-learning)
   * [**unsupervised learning**](#unsupervised-learning)
   * [**generative models**](#generative-models)
-    - [**invertible density estimation**](#generative-models---invertible-density-estimation)
+    - [**flow models**](#generative-models---flow-models)
     - [**generative adversarial networks**](#generative-models---generative-adversarial-networks)
     - [**variational autoencoders**](#generative-models---variational-autoencoders)
     - [**autoregressive models**](#generative-models---autoregressive-models)
@@ -45,18 +45,8 @@ interesting older papers:
 [**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---theory)
 
 ----
-#### ["Deep Learning: Some Criticism for Discussion"](http://tina-vision.net/docs/memos/2018-002.pdf) Thacker
->	"This document has been motivated by the suggestion that there might be opportunities for research in the area of “deep learning”. I intend to approach the task of constructing a research strategy in three steps. First identify key issues which require attention, then identify existing solutions and finally to target applications for funding at things which have not been addressed.  
->	This document only begins the first of these stages and is intended as the basis for a discussion. It concentrates on trying to answer the following questions:  
->	What do people mean when they refer to “Deep Learning”, in particular how is it different to a conventional Artificial Neural Network?  
->	What is optimised when we train a neural network to minimise cross-entropy?  
->	What are the consequences for model selection?  
->	What are the consequences for ANN methods when interpreted as “state-of-the-art”?  
->	What are the consequences for scientific use?"  
-
-----
-#### ["Approximating CNNs with Bag-of-local-Features Models Works Surprisingly Well on ImageNet"](https://openreview.net/forum?id=SkfMWhAqYQ) Brendel, Bethge
-  `generalization` `BagNet`
+#### ["Approximating CNNs with Bag-of-local-Features Models Works Surprisingly Well on ImageNet"](https://arxiv.org/abs/1904.00760) Brendel, Bethge
+  `generalization` `BagNet` `ICLR 2019`
 >	"We introduce a high-performance DNN architecture on ImageNet whose decisions are considerably easier to explain. Our model, a simple variant of the ResNet-50 architecture called BagNet, classifies an image based on the occurrences of small local image features without taking into account their spatial ordering. This strategy is closely related to the bag-of-feature (BoF) models popular before the onset of deep learning and reaches a surprisingly high accuracy on ImageNet (87.6% top-5 for 32 x 32 px features and Alexnet performance for 16 x16 px features). The constraint on local features makes it straight-forward to analyse how exactly each part of the image influences the classification. Furthermore, the BagNets behave similar to state-of-the art deep neural networks such as VGG-16, ResNet-152 or DenseNet-169 in terms of feature sensitivity, error distribution and interactions between image parts. This suggests that the improvements of DNNs over previous bag-of-feature classifiers in the last few years is mostly achieved by better fine-tuning rather than by qualitatively different decision strategies."  
   - `post` <https://medium.com/bethgelab/neural-networks-seem-to-follow-a-puzzlingly-simple-strategy-to-classify-images-f4229317261f>
   - `post` <https://blog.evjang.com/2019/02/bagnet.html>
@@ -76,6 +66,13 @@ also been supported by the observation that deep networks strongly rely on spect
   `generalization`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#measuring-the-tendency-of-cnns-to-learn-surface-statistical-regularities-jo-bengio>
 
+#### ["The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks"](https://arxiv.org/abs/1803.03635) Frankle, Carbin
+  `generalization` `ICLR 2019`
+>	"Neural network pruning techniques can reduce the parameter counts of trained networks by over 90%, decreasing storage requirements and improving computational performance of inference without compromising accuracy. However, contemporary experience is that the sparse architectures produced by pruning are difficult to train from the start, which would similarly improve training performance.
+We find that a standard pruning technique naturally uncovers subnetworks whose initializations made them capable of training effectively. Based on these results, we articulate the "lottery ticket hypothesis:" dense, randomly-initialized, feed-forward networks contain subnetworks ("winning tickets") that - when trained in isolation - reach test accuracy comparable to the original network in a similar number of iterations. The winning tickets we find have won the initialization lottery: their connections have initial weights that make training particularly effective."  
+>	"We present an algorithm to identify winning tickets and a series of experiments that support the lottery ticket hypothesis and the importance of these fortuitous initializations. We consistently find winning tickets that are less than 10-20% of the size of several fully-connected and convolutional feed-forward architectures for MNIST and CIFAR10. Above this size, the winning tickets that we find learn faster than the original network and reach higher test accuracy."  
+  - `video` <https://youtube.com/watch?v=s7DqRZVvRiQ> (Frankle)
+
 #### ["Deep Image Prior"](https://arxiv.org/abs/1711.10925) Ulyanov, Vedaldi, Lempitsky
   `generalization`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#deep-image-prior-ulyanov-vedaldi-lempitsky>
@@ -92,15 +89,10 @@ also been supported by the observation that deep networks strongly rely on spect
   `generalization`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#a-closer-look-at-memorization-in-deep-networks-arpit-et-al>
 
-#### ["Generalization in Deep Learning"](https://arxiv.org/abs/1710.05468) Kawaguchi, Kaelbling, Bengio
-  `generalization`
->	"With a direct analysis of neural networks, this paper presents a mathematically tight generalization theory to partially address an open problem regarding the generalization of deep learning. Unlike previous bound-based theory, our main theory is quantitatively as tight as possible for every dataset individually, while producing qualitative insights competitively. Our results give insight into why and how deep learning can generalize well, despite its large capacity, complexity, possible algorithmic instability, nonrobustness, and sharp minima, answering to an open question in the literature. We also discuss limitations of our results and propose additional open problems."  
-  - `video` <https://youtube.com/watch?v=z9je5YlnBgI> (Changkun)
-
 #### ["mixup: Beyond Empirical Risk Minimization"](https://arxiv.org/abs/1710.09412) Zhang, Cisse, Dauphin, Lopez-Paz
   `generalization`
 >	"mixup trains a neural network on convex combinations of pairs of examples and their labels. By doing so, mixup regularizes the neural network to favor simple linear behavior in-between training examples."  
->	"On the one hand, Empirical Risk Minimization allows large neural networks to memorize (instead of generalize from) the training data even in the presence of strong regularization, or in classification problems where the labels are assigned at random. On the other hand, neural networks trained with ERM change their predictions drastically when evaluated on examples just outside the training distribution, also known as adversarial examples. This evidence suggests that ERM is unable to explain or provide generalization on testing distributions that differ only slightly from the training data."  
+>	"Empirical Risk Minimization allows large neural networks to memorize (instead of generalize from) the training data even in the presence of strong regularization, or in classification problems where the labels are assigned at random. On the other hand, neural networks trained with ERM change their predictions drastically when evaluated on examples just outside the training distribution, also known as adversarial examples. This evidence suggests that ERM is unable to explain or provide generalization on testing distributions that differ only slightly from the training data."  
 >	"In Vicinal Risk Minimization, human knowledge is required to describe a vicinity or neighborhood around each example in the training data. Then, additional virtual examples can be drawn from the vicinity distribution of the training examples to enlarge the support of the training distribution. For instance, when performing image classification, it is common to define the vicinity of one image as the set of its horizontal reflections, slight rotations, and mild scalings. mixup extends the training distribution by incorporating the prior knowledge that linear interpolations of feature vectors should lead to linear interpolations of the associated targets."  
   - `post` <http://inference.vc/mixup-data-dependent-data-augmentation/>
   - `code` <https://github.com/leehomyc/mixup_pytorch>
@@ -1047,6 +1039,7 @@ also been supported by the observation that deep networks strongly rely on spect
 >	"We investigate current approaches and their inductive biases in a reproducible large-scale experimental study with a sound experimental protocol for unsupervised disentanglement learning. We implement from scratch six recent unsupervised disentanglement learning methods as well as six disentanglement measures and train more than 12 000 models on seven data sets."  
 >	"We evaluate our experimental results and challenge many common assumptions in unsupervised disentanglement learning: (i) While all considered methods prove effective at ensuring that the individual dimensions of the aggregated posterior (which is sampled) are not correlated, only one method also consistently ensures that the individual dimensions of the representation (which is taken to be the mean) are not correlated. (ii) We do not find any evidence that they can be used to reliably learn disentangled representations in an unsupervised manner as hyper parameters seem to matter more than the model and “good” hyperparameters seemingly cannot be identified without access to ground-truth labels. Similarly, we observe that good hyperparameters neither transfer across data sets nor across disentanglement metrics. (iii) For the considered models and data sets, we cannot validate the assumption that disentanglement is useful for downstream tasks, for example through a decreased sample complexity of learning."  
 >	"Based on these empirical evidence, we suggest three critical areas of further research: (i) The role of inductive biases and implicit and explicit supervision should be made explicit: unsupervised model selection persists as a key question. (ii) The concrete practical benefits of enforcing a specific notion of disentanglement of the learned representations should be demonstrated. (iii) Experiments should be conducted in a reproducible experimental setup on data sets of varying degrees of difficulty."  
+  - `post` <https://ai.googleblog.com/2019/04/evaluating-unsupervised-learning-of.html>
   - `video` <https://youtube.com/watch?v=WYrvh50yu6s> (Kilcher)
   - `code` <https://github.com/google-research/disentanglement_lib>
 
@@ -1182,7 +1175,7 @@ also been supported by the observation that deep networks strongly rely on spect
 ---
 ### generative models
 
-  - [invertible density estimation](#generative-models---invertible-density-estimation)
+  - [flow models](#generative-models---flow-models)
   - [generative adversarial networks](#generative-models---generative-adversarial-networks)
   - [variational autoencoders](#generative-models---variational-autoencoders)
   - [autoregressive models](#generative-models---autoregressive-models)
@@ -1333,7 +1326,7 @@ also been supported by the observation that deep networks strongly rely on spect
 
 
 ---
-### generative models - invertible density estimation
+### generative models - flow models
 
 [**interesting recent papers - generative models**](#generative-models)
 
@@ -1505,52 +1498,11 @@ also been supported by the observation that deep networks strongly rely on spect
 
 #### ["Improved Training of Wasserstein GANs"](https://arxiv.org/abs/1704.00028) Gulrajani, Ahmed, Arjovsky, Dumoulin, Courville
   `GAN objective` `WGAN-GP`
->	"The recently proposed Wasserstein GAN makes progress toward stable training of GANs, but sometimes can still generate only low-quality samples or fail to converge. We find that these problems are often due to the use of weight clipping in WGAN to enforce a Lipschitz constraint on the critic, which can lead to undesired behavior. We propose an alternative to clipping weights: penalize the norm of gradient of the critic with respect to its input."  
-  - `post` <https://casmls.github.io/general/2017/04/13/gan.html>
-  - `post` <https://lernapparat.de/improved-wasserstein-gan>
-  - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/wasserstein-generative-adversarial-networks/> `in russian`
-  - `code` <https://github.com/jalola/improved-wgan-pytorch>
-  - `code` <https://github.com/wiseodd/generative-models/tree/master/GAN/improved_wasserstein_gan>
-  - `code` <https://github.com/igul222/improved_wgan_training>
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#improved-training-of-wasserstein-gans-gulrajani-ahmed-arjovsky-dumoulin-courville>
 
 #### ["Wasserstein GAN"](https://arxiv.org/abs/1701.07875) Arjovsky, Chintala, Bottou
   `GAN objective` `WGAN`
->	"Paper uses Wasserstein distance instead of Jensen-Shannon divergence to compare distributions."  
->	"Paper gets rid of a few unnecessary logarithms, and clips weights."  
->
->	"Loss curves that actually make sense and reflect sample quality."  
->
->	Authors show how one can have meaningful and stable training process without having to cripple or undertrain the discriminator.  
->	Authors show why original GAN formulations (using KL/JS divergence) are problematic and provide a solution for those problems."  
->
->	"There are two fundamental problems in doing image generation using GANs: 1) model structure 2) optimization instability. This paper makes no claims of improving model structure nor does it have experiments in that direction. To improve on imagenet generation, we need some work in (1) as well."  
->
->	"Authors are not claiming that this directly improves image quality, but offers a host of other benefits like stability, the ability to make drastic architecture changes without loss of functionality, and, most importantly, a loss metric that actually appears to correlate with sample quality. That last one is a pretty big deal."  
->
->	"Using Wasserstein objective reduces instability, but we still lack proof of existence of an equilibrium. Game theory doesn’t help because we need a so-called pure equilibrium, and simple counter-examples such as rock/paper/scissors show that it doesn’t exist in general. Such counterexamples are easily turned into toy GAN scenarios with generator and discriminator having finite capacity, and the game lacks a pure equilibrium."  
->
->	"The originality is a focus on continuous distributions with low-dimensional support and the idea to parametrize f in order to obtain a fast algorithm."  
->
->	"Reposing the two-player game as the estimation of the gradient of the 1-Wasserstein distance between the data and generator distributions. Reframing this in terms of the dual form of the 1-Wasserstein, with the critic estimating a function f which maximally separates the two distributions. It still faces limitations when the critic solution is approximate, i.e. when f* is not found before each update. In this case, due to insufficient training of the critic or limitations of the function approximator, the gradient direction produced can be arbitrarily bad."  
-  - `video` <https://youtube.com/watch?v=31mqB4yGgQY>
-  - `video` <https://youtube.com/watch?v=DfJeaa--xO0&t=26m27s> (Bottou)
-  - `video` <https://facebook.com/iclr.cc/videos/1710657292296663?t=5402> (Arjowski)
-  - `video` <https://youtu.be/m9USSDtUy40?t=15m14s> (Chavdarova)
-  - `video` <https://youtube.com/watch?v=OdsXPcBfO-c> (Arjowski)
-  - `post` <http://www.alexirpan.com/2017/02/22/wasserstein-gan.html>
-  - `post` <https://paper.dropbox.com/doc/Wasserstein-GAN-GvU0p2V9ThzdwY3BbhoP7>
-  - `post` <http://wiseodd.github.io/techblog/2017/02/04/wasserstein-gan/>
-  - `post` <https://vincentherrmann.github.io/blog/wasserstein/>
-  - `post` <https://lilianweng.github.io/lil-log/2017/08/20/from-GAN-to-WGAN.html>
-  - `notes` <https://casmls.github.io/general/2017/02/23/modified-gans.html>
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1701.07875>
-  - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/wasserstein-generative-adversarial-networks/> `in russian`
-  - `code` <https://github.com/martinarjovsky/WassersteinGAN>
-  - `code` <https://github.com/wiseodd/generative-models/tree/master/GAN/wasserstein_gan>
-  - `code` <https://github.com/shekkizh/WassersteinGAN.tensorflow>
-  - `code` <https://github.com/kuleshov/tf-wgan>
-  - `code` <https://github.com/blei-lab/edward/blob/master/examples/gan_wasserstein.py>
-  - `code` <https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/WassersteinGAN>
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#wasserstein-gan-arjovsky-chintala-bottou>
 
 #### ["f-GAN: Training Generative Neural Samplers using Variational Divergence Minimization"](http://arxiv.org/abs/1606.00709) Nowozin, Cseke, Tomioka
   `GAN objective`
@@ -2104,51 +2056,22 @@ also been supported by the observation that deep networks strongly rely on spect
 
 #### ["Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor"](https://arxiv.org/abs/1801.01290) Haarnoja, Zhou, Abbeel, Levine
   `SAC` `soft Q-learning` `policy gradient` `maximum entropy policy` `on-policy + off-policy`
->	"Soft Q-learning algorithm for learning multi-modal stochastic policies via entropy maximization, leading to better exploration in environments with multi-modal reward landscapes, combined with actor-critic framework into Soft Actor-Critic, an off-policy actor-critic method in which the actor aims to maximize both the expected reward and the entropy of a stochastic policy."  
->	"SAC learns the soft Q-function of policy and the policy jointly. SAC is similar to DDPG but with a stochastic policy."  
->	"DDPG uses a Q-function estimator to enable off-policy learning, and a deterministic actor that maximizes this Q-function. As such, this method can be viewed both as a deterministic actor-critic algorithm and an approximate Q-learning algorithm. Unfortunately, the interplay between the deterministic actor network and the Q-function typically makes DDPG extremely difficult to stabilize and brittle to hyperparameter settings. As a consequence, it is difficult to extend DDPG to very complex, high-dimensional tasks, and on-policy policy gradient methods still tend to produce the best results in such settings. Our method instead combines off-policy actor-critic training with a stochastic actor, and further aims to maximize the entropy of this actor with an entropy maximization objective. We find that this actually results in a substantially more stable and scalable algorithm that, in practice, exceeds both the efficiency and final performance of DDPG."  
->	"Many actor-critic algorithms build on the standard, on-policy policy gradient formulation to update the actor, and many of them also consider the entropy of the policy, but instead of maximizing the entropy, they use it as an regularizer. This tends to improve stability, but results in very poor sample complexity. Maximum entropy reinforcement learning optimizes policies to maximize both the expected return and the expected entropy of the policy."  
->	"SAC is particularly well-suited for model-based RL as it uses an objective that (i) improves policy robustness which hinders adversarial model exploitation and (ii) develops multi-modal policies which could mitigate negative effects of planning with inaccurate models."  
->	"SAC implicitly acts as an empowerment-based directed exploration method (Mohamed & Rezende, 2015) due to its entropy bonus."  
-  - `post` <http://bair.berkeley.edu/blog/2018/12/14/sac>
-  - `video` <https://vimeo.com/252185258>
-  - `video` <https://facebook.com/icml.imls/videos/430993334081854?t=6485> (Haarnoja)
-  - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h51m28s> (Sigaud)
-  - `video` <https://youtube.com/watch?v=NiTJOw1aST4> (Grinchuk) `in russian`
-  - `post` <https://spinningup.openai.com/en/latest/algorithms/sac.html>
-  - `notes` <https://github.com/Scitator/papers/blob/master/papers/1801_soft_ac.md>
-  - `code` <https://github.com/rail-berkeley/softlearning>
-  - `code` <https://github.com/vitchyr/rlkit>
-  - `code` <https://github.com/haarnoja/sac>
-  - `code` <https://github.com/higgsfield/RL-Adventure-2>
-  - `paper` ["Soft Actor-Critic Algorithms and Applications"](https://arxiv.org/abs/1812.05905) by Haarnoja et al.
-  - `paper` ["Learning to Walk via Deep Reinforcement Learning"](https://arxiv.org/abs/1812.11103) by Haarnoja et al.
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#soft-actor-critic-off-policy-maximum-entropy-deep-reinforcement-learning-with-a-stochastic-actor-haarnoja-zhou-abbeel-levine>
 
 #### ["A Unified View of Entropy-Regularized Markov Decision Processes"](https://arxiv.org/abs/1705.07798) Neu, Gomez, Jonsson
   `soft Q-learning` `policy gradient` `maximum entropy policy`
->	"Our approach is based on extending the linear-programming formulation of policy optimization in MDPs to accommodate convex regularization functions. Our key result is showing that using the conditional entropy of the joint state-action distributions as regularization yields a dual optimization problem closely resembling the Bellman optimality equations. This result enables us to formalize a number of state-of-the-art entropy-regularized reinforcement learning algorithms as approximate variants of Mirror Descent or Dual Averaging, and thus to argue about the convergence properties of these methods."  
->	"We show that the exact version of the TRPO algorithm of Schulman et al. (2015) actually converges to the optimal policy, while the entropy-regularized policy gradient methods of Mnih et al. (2016) [A2C] may fail to converge to a fixed point."  
-  - `video` <http://videocrm.ca/Machine18/Machine18-20180426-1-GergelyNeu.mp4> (Neu)
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#a-unified-view-of-entropy-regularized-markov-decision-processes-neu-gomez-jonsson>
 
 #### ["Equivalence Between Policy Gradients and Soft Q-Learning"](https://arxiv.org/abs/1704.06440) Schulman, Chen, Abbeel
   `soft Q-learning` `policy gradient` `maximum entropy policy`
->	"Q-learning methods can be effective and sample-efficient when they work, however, it is not well-understood why they work, since empirically, the Q-values they estimate are very inaccurate. A partial explanation may be that Q-learning methods are secretly implementing policy gradient updates. We show that there is a precise equivalence between Q-learning and policy gradient methods in the setting of entropy-regularized reinforcement learning, that "soft" (entropy-regularized) Q-learning is exactly equivalent to a policy gradient method."  
-  - `video` <https://vimeo.com/240428644#t=1h16m18s> (Levine)
-  - `video` <https://youtube.com/watch?v=gmWmQZvg6hA> + <https://youtube.com/watch?v=KMf6AANMMx0> (Konobeev) `in russian`
-  - `post` <http://bair.berkeley.edu/blog/2017/10/06/soft-q-learning/>
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#equivalence-between-policy-gradients-and-soft-q-learning-schulman-chen-abbeel>
 
 #### ["Reinforcement Learning with Deep Energy-Based Policies"](https://arxiv.org/abs/1702.08165) Haarnoja, Tang, Abbeel, Levine
   `SQL` `soft Q-learning` `policy gradient` `maximum entropy policy`
->	"parameterise and estimate a so called soft Q-function directly, implicitly inducing a maximum entropy policy"  
->	"Fox et al. (2015) proposed soft Q-learning which extended the Q-learning with tabular form for the new Bellman optimality equation corresponding to the finite state finite action entropy-regularized MDP. The algorithm does not accomodate for function approximator due to the intractability of the log-sum-exp operation in the soft Q-learning update. To avoid such difficulty, Haarnoja et al. (2017) reformulates the update as an optimization which is approximated by samples from stein variational gradient descent (SVGD) sampler."  
-  - <https://sites.google.com/view/softqlearning/home> (demo)
-  - `post` <http://bair.berkeley.edu/blog/2017/10/06/soft-q-learning/>
-  - `video` <https://vimeo.com/240428644#t=1h16m18s> (Levine)
-  - `code` <https://github.com/haarnoja/softqlearning>
-  - `paper` ["Taming the Noise in Reinforcement Learning via Soft Updates"](https://arxiv.org/abs/1512.08562) by Fox, Pakman, Tishby
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#reinforcement-learning-with-deep-energy-based-policies-haarnoja-tang-abbeel-levine>
 
 #### ["Bridging the Gap Between Value and Policy Reinforcement Learning"](http://arxiv.org/abs/1702.08892) Nachum, Norouzi, Xu, Schuurmans
-  `PCL` `soft Q-learning` `policy gradient` `on-policy + off-policy`
+  `PCL` `policy gradient` `on-policy + off-policy`
 >	"Softmax temporally consistent action values satisfy a strong consistency property with optimal entropy regularized policy probabilities along any action sequence, regardless of provenance."  
 >	"Path Consistency Learning minimizes inconsistency measured along multi-step action sequences extracted from both on- and off-policy traces."  
 >	"We show how a single model can be used to represent both a policy and its softmax action values. Beyond eliminating the need for a separate critic, the unification demonstrates how policy gradients can be stabilized via self-bootstrapping from both on- and off-policy data. An experimental evaluation demonstrates that both algorithms can significantly outperform strong actor-critic and Q-learning baselines across several benchmark tasks."  
@@ -2938,6 +2861,7 @@ also been supported by the observation that deep networks strongly rely on spect
 >	"Higher levels in the hierarchy can directly make use of the latent space of the lower levels as their action space, which allows to train the entire hierarchy in a layerwise fashion. This approach to hierarchical reinforcement learning has a number of conceptual and practical benefits. First, each layer in the hierarchy can be trained with exactly the same algorithm. Second, by using an invertible mapping from latent variables to actions, each layer becomes invertible, which means that the higher layer can always perfectly invert any behavior of the lower layer. This makes it possible to train lower layers on heuristic shaping rewards, while higher layers can still optimize task-specific rewards with good asymptotic performance. Finally, our method has a natural interpretation as an iterative procedure for constructing graphical models that gradually simplify the task dynamics."  
   - `video` <https://sites.google.com/view/latent-space-deep-rl> (demo)
   - `video` <https://facebook.com/icml.imls/videos/429761510871703?t=4970> (Haarnoja)
+  - `video` <https://youtu.be/IAJ1LywY6Zg?t=25m55s> (Levine)
   - `code` <https://github.com/haarnoja/sac/blob/master/sac/policies/latent_space_policy.py>
 
 #### ["Learning to Compose Skills"](https://arxiv.org/abs/1711.11289) Sahni, Kumar, Tejani, Isbell
@@ -3321,6 +3245,7 @@ also been supported by the observation that deep networks strongly rely on spect
   `QMIX`
 >	"Learning joint action-values conditioned on extra state information is an attractive way to exploit centralised learning, where global state information is available and communication constraints are lifted, but the best strategy for then extracting decentralised policies is unclear. QMIX trains decentralised policies in a centralised end-to-end fashion. QMIX employs a network that estimates joint action-values as a complex non-linear combination of per-agent values that condition only on local observations. QMIX structurally enforces that the joint-action value is monotonic in the per-agent values, which allows tractable maximisation of the joint action-value in off-policy learning, and guarantees consistency between the centralised and decentralised policies."  
   - `video` <https://vimeo.com/287801892> (Rashid)
+  - `post` <https://medium.com/@gema.parreno.piqueras/qmix-paper-ripped-monotonic-value-function-factorization-for-deep-multi-agent-reinforcement-7e03998f61e7>
   - `code` <https://github.com/oxwhirl/pymarl/blob/master/src/modules/mixers/qmix.py>
 
 #### ["Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments"](https://arxiv.org/abs/1706.02275) Lowe, Wu, Tamar, Harb, Abbeel, Mordatch
@@ -3625,11 +3550,18 @@ also been supported by the observation that deep networks strongly rely on spect
   - `post` ["On 'Solving Language'"](http://foldl.me/2016/solving-language/) (Gauthier)
   - `post` ["Situated Language Learning"](http://foldl.me/2016/situated-language-learning/) (Gauthier)
 
+#### ["From Language to Goals: Inverse Reinforcement Learning for Vision-Based Instruction Following"](https://arxiv.org/abs/1902.07742) Fu, Korattikara, Levine, Guadarrama
+  `goal-driven language learning` `LC-RL` `ICLR 2019`
+  - <https://sites.google.com/view/language-irl>
+>	"We investigate the problem of grounding language commands as reward functions using inverse reinforcement learning, and argue that language-conditioned rewards are more transferable than language-conditioned policies to new environments. We propose language-conditioned reward learning, which grounds language commands as a reward function represented by a deep neural network. We demonstrate that our model learns rewards that transfer to novel tasks and environments on realistic, high-dimensional visual environments with natural language commands, whereas directly learning a language-conditioned policy leads to poor performance."  
+>	 "Reward-learning enables an agent to learn and interact within the test environment rather than relying on zero-shot policy transfer."  
+
 #### ["Learning to Follow Language Instructions with Adversarial Reward Induction"](https://arxiv.org/abs/1806.01946) Bahdanau, Hill, Leike, Hughes, Kohli, Grefenstette
   `goal-driven language learning` `AGILE`
 >	"AGILE, an approach to training instruction-following agents from examples of corresponding goal-states rather than explicit reward functions. This opens up new possibilities for training language-aware agents, because in the real world, and even in rich simulated environments, acquiring such data via human annotation would often be much more viable than defining and implementing reward functions programmatically. Indeed, programming rewards to teach robust and general instruction-following may ultimately be as challenging as writing a program to interpret language directly, an endeavour that is notoriously laborious, and some say, ultimately futile. As well as a means to learn from a potentially more prevalent form of data, our experiments demonstrate that AGILE performs comparably with and can learn as fast as RL with an auxiliary task."  
 >	"An attractive aspect of AGILE is that learning “what should be done” and “how it should be done” is performed by two different model components. Our experiments confirm that the “what” kind of knowledge generalizes better to different environments. When the dynamics of the environment changed at test time, fine-tuning against a frozen discriminator allowed to the policy recover some of its original capability in the new setting."  
 >	"AGILE is strongly inspired by Inverse Reinforcement Learning methods in general, and Generative Adversarial Imitation Learning in particular. However, it develops these methods to enable language learning; the policy and the discriminator are conditioned on an instruction, and that the training data contains goal-states - rather than complete trajectories. An appealing advantage of AGILE is the fact that the discriminator Dφ and the policy πθ learn two related but distinct aspects of an instruction: the discriminator focuses on recognizing the goal-states (what should be done), whereas the policy learns what to do in order to get to a goal-state (how it should be done). The intuition motivating this design is that the knowledge about how instructions define goals should generalize more strongly than the knowledge about which behavior is needed to execute instructions. Following this intuition, we propose to reuse a trained AGILE’s discriminator as a reward function for training or fine-tuning policies."  
+>	"AGILE modifies GAIL to use a goal-based discriminator and false negative filtering, using DQN as a policy optimizer and ρ=0.25."  
   - `video` <https://youtube.com/watch?v=07S-x3MkEoQ>
 
 #### ["Learning with Latent Language"](https://arxiv.org/abs/1711.00482) Andreas, Klein, Levine

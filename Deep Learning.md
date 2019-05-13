@@ -442,7 +442,7 @@
 	[**autoregressive models**](#generative-models---autoregressive-models)  
 	Another way to model p(x) is to break the model into a series of conditional distributions: p(x)=p(x1)p(x2|x1)p(x3|x2,x1)…p(x)=p(x1)p(x2|x1)p(x3|x2,x1)… This is the approach used, for example, by recurrent neural networks. These models are also realitvely easy to train, but the downside is that they don't support all of the same queries we can make of latent variable models.  
 
-	[**invertible density estimation**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models---invertible-density-estimation)  
+	[**flow models**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models---flow-models)  
 	A way to specify complex generative models by transforming a simple latent distribution with a series of invertible functions. These approaches are restricted to a more limited set of possible operations, but sidestep the difficult integrals required to train standard latent variable models.  
 
 
@@ -1131,11 +1131,15 @@
 
 >	"We suggest a novel information theoretic analysis of deep neural networks based on the information bottleneck principle. Arguably, DNNs learn to extract efficient representations of the relevant features of the input layer X for predicting the output label Y, given a finite sample of the joint distribution p(X, Y). This representation can be compared with the theoretically optimal relevant compression of the variable X with respect to Y, provided by the information bottleneck (or information distortion) tradeoff. This is done by introducing a new information theoretic view of DNN training as an successive (Markovian) relevant compression of the input variable X, given the empirical training data. The DNN’s prediction is activating the trained compression layered hierarchy to generate a predicted label Yˆ. Maximizing the mutual information I(Y; Yˆ), for a sequence of evoking inputs X, emerges as the natural DNN optimization goal."
 
+----
+>	"If I(Z;Y) is maximal possible (we do not lose information about labels) and I(Z;X) is minimal possible (we have removed all the unnecessary information from X), then Z is a minimal sufficient statistic for Y. And this means, that we extracted from X all the necessary things we needed for "predicting" Y and discarded all the irrelevant part. And IB Lagrangian gives us a trade-off between sufficiency and minimality, which is kinda good."
+
   - <https://en.wikipedia.org/wiki/Information_bottleneck_method>
   - `video` <https://youtube.com/watch?v=ei59sYLVuqA> (Tishby)
-  - `video` <https://youtube.com/watch?v=yoMC0P2x3Fg> (Skorokodov) `in russian`
+  - `video` <https://youtube.com/watch?v=yoMC0P2x3Fg> + <https://youtube.com/watch?v=7OsyeNbKQjU> (Skorokodov) `in russian`
   - `post` <http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/>
   - `paper` ["The Information Bottleneck Method"](https://arxiv.org/abs/physics/0004057) by Tishby, Pereira, Bialek
+  - `paper` ["Learning and Generalization with the Information Bottleneck"](http://www.cs.huji.ac.il/labs/learning/Papers/ibgen.pdf) by Shamir, Sabato, Tishby
 
 
 #### ["Opening the Black Box of Deep Neural Networks via Information"](http://arxiv.org/abs/1703.00810) Shwartz-Ziv, Tishby
@@ -1187,17 +1191,29 @@
   - `video` <https://youtube.com/watch?v=ekUWO_pI2M8> (Tishby)
   - `video` <https://youtu.be/RKvS958AqGY?t=12m7s> (Tishby)
   - `video` <https://youtu.be/cHjI37DsQCQ?t=41m40s> (Selvaraj)
-  - `video` <https://youtube.com/watch?v=yoMC0P2x3Fg> (Skorokodov) `in russian`
+  - `video` <https://youtube.com/watch?v=yoMC0P2x3Fg> + <https://youtube.com/watch?v=7OsyeNbKQjU> (Skorokodov) `in russian`
   - `post` <https://lilianweng.github.io/lil-log/2017/09/28/anatomize-deep-learning-with-information-theory.html>
   - `post` <https://weberna.github.io/jekyll/update/2017/11/08/Information-Bottleneck-Part1.html>
   - `post` <http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/>
-  - `post` <https://medium.com/intuitionmachine/the-peculiar-behavior-of-deep-learning-loss-surfaces-330cb741ec17>
+  - `post` <https://reddit.com/r/MachineLearning/comments/be8qie/discussion_what_is_the_status_of_the_information/elu8t2f/?context=3>
   - `notes` <https://blog.acolyer.org/2017/11/15/opening-the-black-box-of-deep-neural-networks-via-information-part-i/>
   - `notes` <https://blog.acolyer.org/2017/11/16/opening-the-black-box-of-deep-neural-networks-via-information-part-ii/>
   - `notes` <https://theneuralperspective.com/2017/03/24/opening-the-black-box-of-deep-neural-networks-via-information/>
   - `notes` <https://reddit.com/r/MachineLearning/comments/60fhyb/r_opening_the_black_box_of_deep_neural_networks/df8jsbm/>
   - `press` <https://quantamagazine.org/new-theory-cracks-open-the-black-box-of-deep-learning-20170921>
   - `paper` ["Deep Learning and the Information Bottleneck Principle"](#tishby-zaslavsky---deep-learning-and-the-information-bottleneck-principle) by Tishby and Zaslavsky `summary`
+
+
+#### ["On the Information Bottleneck Theory of Deep Learning"](https://openreview.net/forum?id=ry_WPG-A-) Saxe et al.
+  `generalization` `information bottleneck`
+>	"In this work, we study the information bottleneck theory of deep learning, which makes three specific claims: first, that deep networks undergo two distinct phases consisting of an initial fitting phase and a subsequent compression phase; second, that the compression phase is causally related to the excellent generalization performance of deep networks; and third, that the compression phase occurs due to the diffusion-like behavior of stochastic gradient descent. Here we show that none of these claims hold true in the general case. Through a combination of analytical results and simulation, we demonstrate that the information plane trajectory is predominantly a function of the neural nonlinearity employed: double-sided saturating nonlinearities like tanh yield a compression phase as neural activations enter the saturation regime, but linear activation functions and single-sided saturating nonlinearities like the widely used ReLU in fact do not. Moreover, we find that there is no evident causal connection between compression and generalization: networks that do not compress are still capable of generalization, and vice versa. Next, we show that the compression phase, when it exists, does not arise from stochasticity in training by demonstrating that we can replicate the IB findings using full batch gradient descent rather than stochastic gradient descent. Finally, we show that when an input domain consists of a subset of task-relevant and task-irrelevant information, hidden representations do compress the task-irrelevant information, although the overall information about the input may monotonically increase with training time, and that this compression happens concurrently with the fitting process rather than during a subsequent compression period."
+  - `post` <https://reddit.com/r/MachineLearning/comments/be8qie/discussion_what_is_the_status_of_the_information/elu8t2f/?context=3>
+  - `paper` ["Scalable Mutual Information Estimation using Dependence Graphs"](https://arxiv.org/abs/1801.09125) by Noshad et al.
+
+
+#### ["Estimating Information Flow in Neural Networks"](https://arxiv.org/abs/1810.05728) Goldfeld et al.
+  `generalization` `information bottleneck`
+>	"We study the flow of information and the evolution of internal representations during deep neural network training, aiming to demystify the compression aspect of the information bottleneck theory. The theory suggests that DNN training comprises a rapid fitting phase followed by a slower compression phase, in which the mutual information I(X;T) between the input X and internal representations T decreases. Several papers observe compression of estimated mutual information on different DNN models, but the true I(X;T) over these networks is provably either constant (discrete X) or infinite (continuous X). This work explains the discrepancy between theory and experiments, and clarifies what was actually measured by these past works. To this end, we introduce an auxiliary (noisy) DNN framework for which I(X;T) is a meaningful quantity that depends on the network's parameters. This noisy framework is shown to be a good proxy for the original (deterministic) DNN both in terms of performance and the learned representations. We then develop a rigorous estimator for I(X;T) in noisy DNNs and observe compression in various models. By relating I(X;T) in the noisy DNN to an information-theoretic communication problem, we show that compression is driven by the progressive clustering of hidden representations of inputs from the same class. Several methods to directly monitor clustering of hidden representations, both in noisy and deterministic DNNs, are used to show that meaningful clusters form in the T space. Finally, we return to the estimator of I(X;T) employed in past works, and demonstrate that while it fails to capture the true (vacuous) mutual information, it does serve as a measure for clustering. This clarifies the past observations of compression and isolates the geometric clustering of hidden representations as the true phenomenon of interest."
 
 
 #### ["Deep Variational Information Bottleneck"](https://arxiv.org/abs/1612.00410) Alemi, Fischer, Dillon, Murphy
@@ -1410,6 +1426,16 @@ Yoshua Bengio:
   - `code` <https://github.com/darkonhub/darkon>
 
 
+#### ["Deep Learning: Some Criticism for Discussion"](http://tina-vision.net/docs/memos/2018-002.pdf) Thacker
+>	"This document has been motivated by the suggestion that there might be opportunities for research in the area of “deep learning”. I intend to approach the task of constructing a research strategy in three steps. First identify key issues which require attention, then identify existing solutions and finally to target applications for funding at things which have not been addressed.  
+>	This document only begins the first of these stages and is intended as the basis for a discussion. It concentrates on trying to answer the following questions:  
+>	What do people mean when they refer to “Deep Learning”, in particular how is it different to a conventional Artificial Neural Network?  
+>	What is optimised when we train a neural network to minimise cross-entropy?  
+>	What are the consequences for model selection?  
+>	What are the consequences for ANN methods when interpreted as “state-of-the-art”?  
+>	What are the consequences for scientific use?"  
+
+
 
 ---
 ### interesting papers - gradient estimation
@@ -1534,15 +1560,21 @@ Yoshua Bengio:
 
 >	"We generalize REBAR to learn a free-form control variate parameterized by a neural network, giving a lower-variance, unbiased gradient estimator which can be applied to a wider variety of problems with greater flexibility. Most notably, our method is applicable even when no continuous relaxation is available, as in reinforcement learning or black box function optimization. Furthermore, we derive improved variants of popular reinforcement learning methods with unbiased, action-dependent gradient estimates and lower variance."
 
->	"We would like a general gradient estimator that is:  
+>	"Pros:  
 >	- unbiased  
->	- low variance  
->	- usable when f(b) is unknown  
+>	- low variance (after tuning)  
+>	- usable when f(b) is unknown or not differentiable  
 >	- usable when p(b|theta) is discrete"  
+
+>	"Cons:  
+>	- need to define surrogate  
+>	- when progress is made, need to wait for surrogate to adapt  
+>	- higher-order derivatives still awkward in TensorFlow and PyTorch"  
 
 ----
 >	"RELAX doesn't solve the problem of discrete random variables but it solves the problem of how to estimate gradient of function which value is known but how to compute or differentiate it is unknown (reinforcement learning and other applications)."
 
+  - `video` <https://youtube.com/watch?v=jHhevj0qM5M> (Duvenaud)
   - `video` <https://vimeo.com/252185804> (Grathwohl)
   - `video` <http://www.fields.utoronto.ca/video-archive/2018/03/2509-18229> (30:37) (Maddison)
   - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (25:20) (Bengio)
@@ -1830,13 +1862,6 @@ Yoshua Bengio:
   - `code` <https://github.com/wiseodd/generative-models/tree/master/GAN>
 
 
-#### ["Learning in Implicit Generative Models"](https://arxiv.org/abs/1610.03483) Mohamed, Lakshminarayanan
->	"Generative adversarial networks (GANs) provide an algorithmic framework for constructing generative models with several appealing properties: they do not require a likelihood function to be specified, only a generating procedure; they provide samples that are sharp and compelling; and they allow us to harness our knowledge of building highly accurate neural network classifiers. Here, we develop our understanding of GANs with the aim of forming a rich view of this growing area of machine learning---to build connections to the diverse set of statistical thinking on this topic, of which much can be gained by a mutual exchange of ideas. We frame GANs within the wider landscape of algorithms for learning in implicit generative models--models that only specify a stochastic procedure with which to generate data--and relate these ideas to modelling problems in related fields, such as econometrics and approximate Bayesian computation. We develop likelihood-free inference methods and highlight hypothesis testing as a principle for learning in implicit generative models, using which we are able to derive the objective function used by GANs, and many other related objectives. The testing viewpoint directs our focus to the general problem of density ratio estimation. There are four approaches for density ratio estimation, one of which is a solution using classifiers to distinguish real from generated data. Other approaches such as divergence minimisation and moment matching have also been explored in the GAN literature, and we synthesise these views to form an understanding in terms of the relationships between them and the wider literature, highlighting avenues for future exploration and cross-pollination."
-  - `video` <https://youtu.be/RZOKRFBtSh4?t=5m37s> (Mohamed)
-  - `video` <https://youtu.be/jAI3rBI6poU?t=37m56s> (Ulyanov) `in russian`
-  - `post` <https://casmls.github.io/general/2017/05/24/ligm.html>
-
-
 #### ["Adversarial Autoencoders"](https://arxiv.org/abs/1511.05644) Makhzani, Shlens, Jaitly, Goodfellow
 >	"In this paper we propose a new method for regularizing autoencoders by imposing an arbitrary prior on the latent representation of the autoencoder. Our method, named “adversarial autoencoder”, uses the recently proposed generative adversarial networks in order to match the aggregated posterior of the hidden code vector of the autoencoder with an arbitrary prior. Matching the aggregated posterior to the prior ensures that there are no “holes” in the prior, and generating from any part of prior space results in meaningful samples. As a result, the decoder of the adversarial autoencoder learns a deep generative model that maps the imposed prior to the data distribution. We show how adversarial autoencoders can be used to disentangle style and content of images and achieve competitive generative performance on MNIST, Street View House Numbers and Toronto Face datasets."
 
@@ -1890,28 +1915,61 @@ Yoshua Bengio:
   - `code` <https://github.com/carpedm20/BEGAN-pytorch>
 
 
-#### ["Improved Techniques for Training GANs"](http://arxiv.org/abs/1606.03498) Salimans, Goodfellow, Zaremba, Cheung, Radford, Chen
->	"We present a variety of new architectural features and training procedures that we apply to the generative adversarial networks (GANs) framework. We focus on two applications of GANs: semi-supervised learning, and the generation of images that humans find visually realistic. Unlike most work on generative models, our primary goal is not to train a model that assigns high likelihood to test data, nor do we require the model to be able to learn well without using any labels. Using our new techniques, we achieve state-of-the-art results in semi-supervised classification on MNIST, CIFAR-10 and SVHN. The generated images are of high quality as confirmed by a visual Turing test: our model generates MNIST samples that humans cannot distinguish from real data, and CIFAR-10 samples that yield a human error rate of 21.3%. We also present ImageNet samples with unprecedented resolution and show that our methods enable the model to learn recognizable features of ImageNet classes."
+#### ["Wasserstein GAN"](https://arxiv.org/abs/1701.07875) Arjovsky, Chintala, Bottou
+  `GAN objective` `WGAN`
+>	"We introduce a new algorithm named WGAN, an alternative to traditional GAN training. In this new model, we show that we can improve the stability of learning, get rid of problems like mode collapse, and provide meaningful learning curves useful for debugging and hyperparameter searches. Furthermore, we show that the corresponding optimization problem is sound, and provide extensive theoretical work highlighting the deep connections to other distances between distributions."
 
->	"Our CIFAR-10 samples also look very sharp - Amazon Mechanical Turk workers can distinguish our samples from real data with an error rate of 21.3% (50% would be random guessing)."
+>	"Paper uses Wasserstein distance instead of Jensen-Shannon divergence to compare distributions."  
+>	"Paper gets rid of a few unnecessary logarithms, and clips weights."  
+>
+>	"Loss curves that actually make sense and reflect sample quality."  
+>
+>	Authors show how one can have meaningful and stable training process without having to cripple or undertrain the discriminator.  
+>	Authors show why original GAN formulations (using KL/JS divergence) are problematic and provide a solution for those problems."  
+>
+>	"There are two fundamental problems in doing image generation using GANs: 1) model structure 2) optimization instability. This paper makes no claims of improving model structure nor does it have experiments in that direction. To improve on imagenet generation, we need some work in (1) as well."  
+>
+>	"Authors are not claiming that this directly improves image quality, but offers a host of other benefits like stability, the ability to make drastic architecture changes without loss of functionality, and, most importantly, a loss metric that actually appears to correlate with sample quality. That last one is a pretty big deal."  
+>
+>	"Using Wasserstein objective reduces instability, but we still lack proof of existence of an equilibrium. Game theory doesn’t help because we need a so-called pure equilibrium, and simple counter-examples such as rock/paper/scissors show that it doesn’t exist in general. Such counterexamples are easily turned into toy GAN scenarios with generator and discriminator having finite capacity, and the game lacks a pure equilibrium."  
+>
+>	"The originality is a focus on continuous distributions with low-dimensional support and the idea to parametrize f in order to obtain a fast algorithm."  
+>
+>	"Reposing the two-player game as the estimation of the gradient of the 1-Wasserstein distance between the data and generator distributions. Reframing this in terms of the dual form of the 1-Wasserstein, with the critic estimating a function f which maximally separates the two distributions. It still faces limitations when the critic solution is approximate, i.e. when f* is not found before each update. In this case, due to insufficient training of the critic or limitations of the function approximator, the gradient direction produced can be arbitrarily bad."  
 
->	"In addition to generating pretty pictures, we introduce an approach for semi-supervised learning with GANs that involves the discriminator producing an additional output indicating the label of the input. This approach allows us to obtain state of the art results on MNIST, SVHN, and CIFAR-10 in settings with very few labeled examples. On MNIST, for example, we achieve 99.14% accuracy with only 10 labeled examples per class with a fully connected neural network — a result that’s very close to the best known results with fully supervised approaches using all 60,000 labeled examples."
+  - `post` <http://depthfirstlearning.com/2019/WassersteinGAN>
+  - `video` <https://youtube.com/watch?v=31mqB4yGgQY>
+  - `video` <https://youtube.com/watch?v=DfJeaa--xO0&t=26m27s> (Bottou)
+  - `video` <https://facebook.com/iclr.cc/videos/1710657292296663?t=5402> (Arjowski)
+  - `video` <https://youtu.be/m9USSDtUy40?t=15m14s> (Chavdarova)
+  - `video` <https://youtube.com/watch?v=OdsXPcBfO-c> (Arjowski)
+  - `post` <http://www.alexirpan.com/2017/02/22/wasserstein-gan.html>
+  - `post` <https://paper.dropbox.com/doc/Wasserstein-GAN-GvU0p2V9ThzdwY3BbhoP7>
+  - `post` <http://wiseodd.github.io/techblog/2017/02/04/wasserstein-gan/>
+  - `post` <https://vincentherrmann.github.io/blog/wasserstein/>
+  - `post` <https://lilianweng.github.io/lil-log/2017/08/20/from-GAN-to-WGAN.html>
+  - `notes` <https://casmls.github.io/general/2017/02/23/modified-gans.html>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1701.07875>
+  - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/wasserstein-generative-adversarial-networks/> `in russian`
+  - `code` <https://github.com/martinarjovsky/WassersteinGAN>
+  - `code` <https://github.com/wiseodd/generative-models/tree/master/GAN/wasserstein_gan>
+  - `code` <https://github.com/shekkizh/WassersteinGAN.tensorflow>
+  - `code` <https://github.com/kuleshov/tf-wgan>
+  - `code` <https://github.com/blei-lab/edward/blob/master/examples/gan_wasserstein.py>
+  - `code` <https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/WassersteinGAN>
 
-  - `video` <https://youtu.be/RZOKRFBtSh4?t=26m18s> (Metz)
-  - `notes` <https://github.com/aleju/papers/blob/master/neural-nets/Improved_Techniques_for_Training_GANs.md>
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FSalimansGZCRC16>
-  - `post` <http://inference.vc/understanding-minibatch-discrimination-in-gans/>
-  - `code` <https://github.com/openai/improved-gan>
 
+#### ["Improved Training of Wasserstein GANs"](https://arxiv.org/abs/1704.00028) Gulrajani, Ahmed, Arjovsky, Dumoulin, Courville
+  `GAN objective` `WGAN-GP`
+>	"The recently proposed Wasserstein GAN makes progress toward stable training of GANs, but sometimes can still generate only low-quality samples or fail to converge. We find that these problems are often due to the use of weight clipping in WGAN to enforce a Lipschitz constraint on the critic, which can lead to undesired behavior. We propose an alternative to clipping weights: penalize the norm of gradient of the critic with respect to its input."  
 
-#### ["Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks"](http://arxiv.org/abs/1511.06434) Radford, Metz, Chintala
->	"In recent years, supervised learning with convolutional networks has seen huge adoption in computer vision applications. Comparatively, unsupervised learning with CNNs has received less attention. In this work we hope to help bridge the gap between the success of CNNs for supervised learning and unsupervised learning. We introduce a class of CNNs called deep convolutional generative adversarial networks (DCGANs), that have certain architectural constraints, and demonstrate that they are a strong candidate for unsupervised learning. Training on various image datasets, we show convincing evidence that our deep convolutional adversarial pair learns a hierarchy of representations from object parts to scenes in both the generator and discriminator. Additionally, we use the learned features for novel tasks - demonstrating their applicability as general image representations."
-
-  - <https://plus.google.com/+SoumithChintala/posts/MCtDVqsef6f> (demo)
-  - <https://mattya.github.io/chainer-DCGAN/> (demo)
-  - `video` <https://youtube.com/watch?v=4_5KTdS-b-U> (Chintala)
-  - `code` <https://github.com/jacobgil/keras-dcgan>
-  - `code` <https://github.com/carpedm20/DCGAN-tensorflow>
+  - `post` <http://depthfirstlearning.com/2019/WassersteinGAN>
+  - `post` <https://casmls.github.io/general/2017/04/13/gan.html>
+  - `post` <https://lernapparat.de/improved-wasserstein-gan>
+  - `notes` <https://bayesgroup.github.io/sufficient-statistics/posts/wasserstein-generative-adversarial-networks/> `in russian`
+  - `code` <https://github.com/jalola/improved-wgan-pytorch>
+  - `code` <https://github.com/wiseodd/generative-models/tree/master/GAN/improved_wasserstein_gan>
+  - `code` <https://github.com/igul222/improved_wgan_training>
 
 
 
