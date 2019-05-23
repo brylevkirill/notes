@@ -60,6 +60,7 @@
 
   ["Counterfactual Reasoning and Massive Data Sets"](https://youtube.com/watch?v=s37cIYDOM6s) by Leon Bottou `video`  
   ["The Missing Signal"](https://youtube.com/watch?v=DfJeaa--xO0) by Leon Bottou `video`  
+  ["Learning Representations Using Causal Invariance"](https://facebook.com/722677142/posts/10155953319752143?t=714) by Leon Bottou `video`  
 
   ["Learning Causal Mechanisms"](https://facebook.com/iclr.cc/videos/2123421684353553?t=294) by Bernhard Scholkopf `video`  
   ["The Role of Causality for Interpretability"](https://vimeo.com/252188186) by Bernhard Scholkopf `video`  

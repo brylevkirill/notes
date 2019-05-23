@@ -15,10 +15,29 @@
 
   ["What Every Software Engineer Should Know about Search"](https://medium.com/startup-grind/what-every-software-engineer-should-know-about-search-27d1df99f80d) by Max Grigorev
 
-  ["An Introduction to Information Retrieval"](https://nlp.stanford.edu/IR-book/) book by Manning, Raghavan, Schutze  
-  ["Search Engines. Information Retrieval in Practice"](http://ciir.cs.umass.edu/irbook/) book by Croft, Metzler, Strohman  
+  ["An Introduction to Information Retrieval"](https://nlp.stanford.edu/IR-book/) by Manning, Raghavan, Schutze `book`  
+  ["Search Engines. Information Retrieval in Practice"](http://ciir.cs.umass.edu/irbook/) by Croft, Metzler, Strohman `book`  
 
 ----
+
+  [course](https://youtube.com/user/victorlavrenko/playlists) by Victor Lavrenko `video`
+
+  [course](https://compscicenter.ru/courses/information-retrieval/2016-autumn/) from Yandex `video` `in russian`  
+  course from Mail.ru
+	([first part](https://youtube.com/playlist?list=PLrCZzMib1e9o_BlrSB5bFkLq8h2i4pQjz),
+	[second part](https://youtube.com/playlist?list=PLrCZzMib1e9o7YIhOfJtD1EaneGOGkN-_)) `video` `in russian`  
+  [course](https://youtube.com/playlist?list=PLrCZzMib1e9rIikWB2NlBUF1z7HvaO_IO) from Mail.ru `video` `in russian`  
+
+  [overview](https://youtube.com/watch?v=3R6vBd_Y8O4) of ranking by Sergey Nikolenko `video` `in russian`  
+  overview of ranking by Nikita Volkov
+	([first part](https://youtube.com/watch?v=GctrEpJinhI),
+	[second part](https://youtube.com/watch?v=GZmXKBzIfkA)) `video` `in russian`  
+
+  [course](http://nzhiltsov.github.io/IR-course/) by Nikita Zhiltsov `in russian`
+
+----
+
+  ["Neural Models for Information Retrieval"](https://youtube.com/watch?v=g1Pgo5yTIKg) by Bhaskar Mitra `video`
 
   ["An Introduction to Neural Information Retrieval"](https://www.microsoft.com/en-us/research/uploads/prod/2017/06/fntir2018-neuralir-mitra.pdf) by Bhaskar Mitra and Nick Craswell `paper`
 
@@ -26,28 +45,6 @@
   ["Neural Text Embeddings for Information Retrieval"](https://microsoft.com/en-us/research/event/wsdm-2017-tutorial-neural-text-embeddings-information-retrieval/)
 	tutorial by Bhaskar Mitra and Nick Craswell (WSDM 2017)
 	([slides](https://slideshare.net/BhaskarMitra3/neural-text-embeddings-for-information-retrieval-wsdm-2017), [paper](https://arxiv.org/abs/1705.01509))  
-
-  ["Neural Models for Information Retrieval"](https://youtube.com/watch?v=g1Pgo5yTIKg) by Bhaskar Mitra `video`
-
-----
-
-  [course](http://youtube.com/watch?v=5L1qemKyUKA&index=75&list=PL6397E4B26D00A269) by Chris Manning `video`  
-  [course](http://homepages.inf.ed.ac.uk/vlavrenk/tts.html) by Victor Lavrenko `video`  
-
-  [course](https://compscicenter.ru/courses/information-retrieval/2016-autumn/) from Yandex `video` `in russian`  
-  [course](https://compsciclub.ru/courses/informationretrieval) from Yandex `video` `in russian`  
-
-  course from Mail.ru
-	([first part](https://youtube.com/playlist?list=PLrCZzMib1e9o_BlrSB5bFkLq8h2i4pQjz),
-	[second part](https://youtube.com/playlist?list=PLrCZzMib1e9o7YIhOfJtD1EaneGOGkN-_)) `video` `in russian`  
-  [course](http://habrahabr.ru/company/mailru/blog/257119/) from Mail.ru `video` `in russian`  
-
-  [course](http://nzhiltsov.github.io/IR-course/) by Nikita Zhiltsov `in russian`
-
-  [overview](https://youtube.com/watch?v=3R6vBd_Y8O4) of ranking by Sergey Nikolenko `video` `in russian`  
-  overview of ranking by Nikita Volkov
-	([first part](https://youtube.com/watch?v=GctrEpJinhI),
-	[second part](https://youtube.com/watch?v=GZmXKBzIfkA)) `video` `in russian`  
 
 ---
 
@@ -78,11 +75,6 @@
   - [**question answering over texts**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---question-answering-over-texts)  
   - [**question answering over knowledge bases**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---question-answering-over-knowledge-bases)  
   - [**information extraction and integration**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#interesting-papers---information-extraction-and-integration)  
-
-----
-
-[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)
-
 
 ----
 

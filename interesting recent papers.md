@@ -73,6 +73,11 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"We present an algorithm to identify winning tickets and a series of experiments that support the lottery ticket hypothesis and the importance of these fortuitous initializations. We consistently find winning tickets that are less than 10-20% of the size of several fully-connected and convolutional feed-forward architectures for MNIST and CIFAR10. Above this size, the winning tickets that we find learn faster than the original network and reach higher test accuracy."  
   - `video` <https://youtube.com/watch?v=s7DqRZVvRiQ> (Frankle)
 
+#### ["Deconstructing Lottery Tickets: Zeros, Signs, and the Supermask"](https://arxiv.org/abs/1905.01067) Zhou, Lan, Liu, Yosinski
+  `generalization`
+>	"The recent “Lottery Ticket Hypothesis” paper by Frankle & Carbin showed that a simple approach to creating sparse networks (keep the large weights) results in models that are trainable from scratch, but only when starting from the same initial weights.  The performance of these networks often exceeds the performance of the non-sparse base model, but for reasons that were not well understood. In this paper we study the three critical components of the Lottery Ticket algorithm, showing that each may be varied significantly without impacting the overall results. Ablating these factors leads to new insights for why LT networks perform as well as they do. We show why setting weights to zero is important, how signs are all you need to make the re-initialized network train, and why masking behaves like training. Finally, we discover the existence of Supermasks, or masks that can be applied to an untrained, randomly initialized network to produce a model with performance far better than chance (86% on MNIST, 41% on CIFAR-10)."
+  - `post` <https://www.shortscience.org/paper?bibtexKey=zhou2019deconstructing> (notes)
+
 #### ["Deep Image Prior"](https://arxiv.org/abs/1711.10925) Ulyanov, Vedaldi, Lempitsky
   `generalization`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#deep-image-prior-ulyanov-vedaldi-lempitsky>
@@ -96,6 +101,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"In Vicinal Risk Minimization, human knowledge is required to describe a vicinity or neighborhood around each example in the training data. Then, additional virtual examples can be drawn from the vicinity distribution of the training examples to enlarge the support of the training distribution. For instance, when performing image classification, it is common to define the vicinity of one image as the set of its horizontal reflections, slight rotations, and mild scalings. mixup extends the training distribution by incorporating the prior knowledge that linear interpolations of feature vectors should lead to linear interpolations of the associated targets."  
   - `post` <http://inference.vc/mixup-data-dependent-data-augmentation/>
   - `code` <https://github.com/leehomyc/mixup_pytorch>
+  - `paper` ["MixMatch: A Holistic Approach to Semi-Supervised Learning"](https://arxiv.org/abs/1905.02249) by Berthelot et al.
 
 #### ["Opening the Black Box of Deep Neural Networks via Information"](http://arxiv.org/abs/1703.00810) Shwartz-Ziv, Tishby
   `generalization` `information bottleneck`
@@ -1040,6 +1046,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"We evaluate our experimental results and challenge many common assumptions in unsupervised disentanglement learning: (i) While all considered methods prove effective at ensuring that the individual dimensions of the aggregated posterior (which is sampled) are not correlated, only one method also consistently ensures that the individual dimensions of the representation (which is taken to be the mean) are not correlated. (ii) We do not find any evidence that they can be used to reliably learn disentangled representations in an unsupervised manner as hyper parameters seem to matter more than the model and “good” hyperparameters seemingly cannot be identified without access to ground-truth labels. Similarly, we observe that good hyperparameters neither transfer across data sets nor across disentanglement metrics. (iii) For the considered models and data sets, we cannot validate the assumption that disentanglement is useful for downstream tasks, for example through a decreased sample complexity of learning."  
 >	"Based on these empirical evidence, we suggest three critical areas of further research: (i) The role of inductive biases and implicit and explicit supervision should be made explicit: unsupervised model selection persists as a key question. (ii) The concrete practical benefits of enforcing a specific notion of disentanglement of the learned representations should be demonstrated. (iii) Experiments should be conducted in a reproducible experimental setup on data sets of varying degrees of difficulty."  
   - `post` <https://ai.googleblog.com/2019/04/evaluating-unsupervised-learning-of.html>
+  - `video` <https://slideslive.com/38915874/challenging-common-assumptions-in-the-unsupervised-learning-of-disentangled-representations> (Locatello)
   - `video` <https://youtube.com/watch?v=WYrvh50yu6s> (Kilcher)
   - `code` <https://github.com/google-research/disentanglement_lib>
 
@@ -1892,6 +1899,15 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"When combining TD learning with function approximation, updating the value at one state creates a risk of inappropriately changing the values of other states, including the state being bootstrapped upon. This is not a concern when the agent updates the values used for bootstrapping as often as they are used. However, if the agent is learning off-policy, it might not update these bootstrap values sufficiently often. This can create harmful learning dynamics that can lead to divergence of the function parameters. The combination of function approximation, off-policy learning, and bootstrapping has been called “the deadly triad” due to this possibility of divergence."  
 >	"The Deep Q-network agent uses deep neural networks to approximate action values, which are updated by Q-learning, an off-policy algorithm. Moreover, DQN uses experience replay to sample transitions, thus the updates are computed from transitions sampled according to a mixture of past policies rather than the current policy. This causes the updates to be even more off-policy. Finally, since DQN uses one-step Q-learning as its learning algorithm, it relies on bootstrapping. Despite combining all these components of the deadly triad, DQN successfully learnt to play many Atari 2600 games."  
 
+#### ["Non-delusional Q-learning and Value-iteration"](https://papers.nips.cc/paper/8200-non-delusional-q-learning-and-value-iteration) Lu, Schuurmans, Boutilier
+  `PCQL` `PCVI` `Q-learning` `NeurIPS 2018`
+>	"We identify a fundamental source of error in Q-learning and other forms of dynamic programming with function approximation. Delusional bias arises when the approximation architecture limits the class of expressible greedy policies. Since standard Q-updates make globally uncoordinated action choices with respect to the expressible policy class, inconsistent or even conflicting Q-value estimates can result, leading to pathological behaviour such as over/under-estimation, instability and even divergence. To solve this problem, we introduce a new notion of policy consistency and define a local backup process that ensures global consistency through the use of information sets---sets that record constraints on policies consistent with backed-up Q-values. We prove that both the model-based and model-free algorithms using this backup remove delusional bias, yielding the first known algorithms that guarantee optimal results under general conditions. These algorithms furthermore only require polynomially many information sets (from a potentially exponential support). Finally, we suggest other practical heuristics for value-iteration and Q-learning that attempt to reduce delusional bias."  
+>	"New source of error in value-based RL with value approximation arises due to interaction of two factors:  
+>	- restrictions on realizable greedy policies due to approximator  
+>	- independent Bellman backups: oblivious to policy class"  
+  - `video` <https://youtube.com/watch?v=PSfJ44C3-sU> (Lu)
+  - `video` <http://www.fields.utoronto.ca/video-archive/2019/02/2509-19619> (Boutilier)
+
 #### ["Is Q-learning Provably Efficient?"](https://arxiv.org/abs/1807.03765) Jin, Allen-Zhu, Bubeck, Jordan
   `Q-learning`
 >	"The theoretical question of "whether model-free algorithms can be made sample efficient" is one of the most fundamental questions in RL, and remains unsolved even in the basic scenario with finitely many states and actions."  
@@ -2165,6 +2181,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"These choices lead to the following desirable properties: (a) low-variance estimates of the expected return via function approximation; (b) low-sample complexity of value function estimate via robust off-policy learning; (c) minimal parametric assumption about the form of the trajectory distribution in the E-step; (d) policy updates via supervised learning in the M step; (e) robust updates via hard trust-region constraints in both the E and the M step."  
   - `video` <https://youtube.com/watch?v=he_BPw32PwU>
   - `video` <http://dropbox.com/s/pgcmjst7t0zwm4y/MPO.mp4> + <https://vimeo.com/240200982> (demo)
+  - `video` <https://youtu.be/ZX3l2whplz8?t=18m7s> (Riedmiller)
 
 #### ["Addressing Function Approximation Error in Actor-Critic Methods"](https://arxiv.org/abs/1802.09477) Fujimoto, Hoof, Meger
   `TD3` `policy gradient` `on-policy + off-policy`
@@ -2734,6 +2751,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"It can also be understood as a hierarchical extension of Hindsight Experience Replay, where the agent behaves according to a fixed set of semantically grounded auxiliary tasks – instead of following random goals – and optimizes over the task selection."  
 >	"While IUA, UNREAL and HER mainly consider using auxiliary tasks to provide additional learning signals – and additional exploration by following random sensory goals – we here make active use of the auxiliary tasks by switching between them throughout individual episodes (to achieve exploration for the main task)."  
   - `post` <https://deepmind.com/blog/learning-playing>
+  - `video` <https://youtu.be/ZX3l2whplz8?t=22m6s> (Riedmiller)
   - `video` <https://facebook.com/icml.imls/videos/429963197518201?t=1401> (Hafner)
 
 #### ["The Intentional Unintentional Agent: Learning to Solve Many Continuous Control Tasks Simultaneously"](https://arxiv.org/abs/1707.03300) Cabi, Colmenarejo, Hoffman, Denil, Wang, de Freitas
@@ -3689,6 +3707,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 ---
 #### ["Phrase-Based & Neural Unsupervised Machine Translation"](https://arxiv.org/abs/1804.07755) Lample, Ott, Conneau, Denoyer, Ranzato
   `translation`
+  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#word-translation-without-parallel-data-conneau-lample-ranzato-denoyer-jegou>
 
 #### ["Unsupervised Machine Translation Using Monolingual Corpora Only"](https://arxiv.org/abs/1711.00043) Lample, Denoyer, Ranzato
   `translation`

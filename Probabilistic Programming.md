@@ -52,7 +52,6 @@
 ---
 ### overview
 
-  [introduction](http://plus.google.com/+BeauCronin/posts/KpeRdJKR6Z1) by Beau Cronin  
   [introduction](http://intelligence.org/2014/09/04/daniel-roy/) by Daniel Roy  
   [introduction](http://pl-enthusiast.net/2014/09/08/probabilistic-programming/) by Michael Hicks  
   [introduction](http://habrahabr.ru/post/242993/) by Alexey Popov `in russian`  
@@ -88,7 +87,8 @@
 
   [Facebook Prophet](https://facebook.github.io/prophet/)  *(uses Stan)*  
   [Microsoft Office 365](https://cambridgenetwork.co.uk/news/email-clutter-machine-learning-probabilistic-programming/)  *(uses Infer.NET)*  
-  [Microsoft Excel plugin](http://research.microsoft.com/en-us/projects/tabular/)  *(uses Infer.NET)*  
+  [Microsoft Excel](http://research.microsoft.com/en-us/projects/tabular/)  *(uses Infer.NET)*  
+  [Microsoft Satori Alexandria](https://devblogs.microsoft.com/dotnet/announcing-ml-net-0-6-machine-learning-net)  *(uses Infer.NET)*  
 
   [graphics in reverse](http://newsoffice.mit.edu/2015/better-probabilistic-programming-0413)  
   [machine teaching](http://blogs.microsoft.com/next/2015/07/10/the-next-evolution-of-machine-learning-machine-teaching/)  
@@ -143,6 +143,8 @@
   - [ProbTorch](https://github.com/probtorch/probtorch)
 
   - [Infer.NET](https://github.com/dotnet/infer)
+
+	["Model-Based Machine Learning"](http://mbmlbook.com) by John Winn et al. `book`
 
   - [WebPPL](https://github.com/probmods/webppl)
 

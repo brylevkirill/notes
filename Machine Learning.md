@@ -140,7 +140,7 @@
 
   - ICLR 2019  
 	<https://facebook.com/pg/iclr.cc/videos> `video`  
-	<https://slideslive.com/iclr> `video`  
+	<https://slideslive.com/iclr/iclr-2019> `video`  
 
 	<https://david-abel.github.io/notes/iclr_2019.pdf> `notes`
 
@@ -429,6 +429,7 @@
 
   [overview](https://facebook.com/nipsfoundation/videos/1554594181298482?t=277) by Pieter Abbeel `video`  
   [overview](https://vimeo.com/250423463) by Oriol Vinyals `video`  
+  [overview](https://slideslive.com/38915714/metalearning-challenges-and-frontiers) by Chelsea Finn `video`  
   [overview](http://videolectures.net/deeplearning2017_de_freitas_learning_to_learn/#t=631) by Nando de Freitas `video`  
 
   [Metalearning symposium](http://metalearning-symposium.ml) `video`
@@ -508,11 +509,17 @@
 ----
 
   [auto-sklearn](https://github.com/automl/auto-sklearn) project  
+  - [overview](https://automl.org/book) by Feurer et al.  
+
   [TPOT](https://github.com/EpistasisLab/tpot) project  
+  - [overview](https://automl.org/book) by Olson and Moore  
+
   [auto_ml](http://auto-ml.readthedocs.io) project  
+
   [H2O AutoML](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html) project  
 
   [The Automatic Statistician](https://automaticstatistician.com) project  
+  - [overview](https://automl.org/book) by Steinruecken et al.  
   - [overview](https://youtube.com/watch?v=aPDOZfu_Fyk) by Zoubin Ghahramani `video`  
   - [overview](https://youtu.be/H7AMB0oo__4?t=53m20s) by Zoubin Ghahramani `video`  
   - [overview](https://youtube.com/watch?v=WW2eunuApAU) by Zoubin Ghahramani `video`  
@@ -520,8 +527,9 @@
 
 ----
 
-  [AutoML](http://automl.chalearn.org) challenge  
->	"Design the perfect machine learning “black box” capable of performing all model selection and hyper-parameter tuning without any human intervention"
+  [Google AutoML at Kaggle challenge](https://ai.googleblog.com/2019/05/an-end-to-end-automl-solution-for.html)
+
+  [AutoML challenge](http://automl.chalearn.org)
 
   ["Benchmarking Automatic Machine Learning Frameworks"](https://arxiv.org/abs/1808.06492) by Balaji and Allen `paper`
 

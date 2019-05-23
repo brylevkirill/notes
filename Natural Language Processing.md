@@ -372,7 +372,10 @@
   - `video` <https://youtube.com/watch?v=9-Om2YcHhIA> (Li)
   - `video` <https://youtube.com/watch?v=BhlOGGzC0Q0> + <https://youtube.com/watch?v=rMQMHA-uv_E> (Gharbieh)
   - `video` <https://youtube.com/watch?v=BhlOGGzC0Q0> (Luo)
+  - `video` <https://youtu.be/99CymZY-4Tc?t=5m36s> (Lyalin) `in russian`
+  - `post` <http://jalammar.github.io/illustrated-bert>
   - `post` <https://medium.com/dissecting-bert/dissecting-bert-part-1-d3c3d495cdb3> + <https://medium.com/dissecting-bert/dissecting-bert-part2-335ff2ed9c73> + <https://medium.com/dissecting-bert/dissecting-bert-appendix-the-decoder-3b86f66b0e5f>
+  - `paper` ["BERT Rediscovers the Classical NLP Pipeline"](https://arxiv.org/abs/1905.05950) by Tenney et al.
 
 
 
@@ -481,6 +484,7 @@
 >	(C) The mapping W is further refined via Procrustes. This method uses frequent words aligned by the previous step as anchor points, and minimizes an energy function that corresponds to a spring system between anchor points. The refined mapping is then used to map all words in the dictionary.  
 >	(D) Finally, we translate by using the mapping W and a distance metric, dubbed CSLS, that expands the space where there is high density of points (like the area around the word “cat”), so that “hubs” (like the word “cat”) become less close to other word vectors than they would otherwise (compare to the same region in panel (A))."  
 
+  - `video` <https://youtu.be/Chj8yTm5eGk?t=2m58s> (Lyalin) `in russian`
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1710.04087>
   - `code` <https://github.com/facebookresearch/MUSE>
 
@@ -497,6 +501,7 @@
 >	"Machine translation has recently achieved impressive performance thanks to recent advances in deep learning and the availability of large-scale parallel corpora. There have been numerous attempts to extend these successes to low-resource language pairs, yet requiring tens of thousands of parallel sentences. In this work, we take this research direction to the extreme and investigate whether it is possible to learn to translate even without any parallel data. We propose a model that takes sentences from monolingual corpora in two different languages and maps them into the same latent space. By learning to reconstruct in both languages from this shared feature space, the model effectively learns to translate without using any labeled data. We demonstrate our model on two widely used datasets and two language pairs, reporting BLEU scores up to 32.8, without using even a single parallel sentence at training time."
 
   - `video` <https://youtube.com/watch?v=yRlINjCQnc8> (Lample)
+  - `video` <https://youtu.be/Chj8yTm5eGk?t=15m17s> (Lyalin) `in russian`
   - `video` <https://youtu.be/nIw-hNAjTwE?t=10m57s> (Moiseev) `in russian`
   - `notes` <http://ankitg.me/blog/2017/11/05/unsupervised-machine-translation.html>
 

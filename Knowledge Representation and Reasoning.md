@@ -221,6 +221,7 @@
 ### knowledge graph - information extraction and integration
 
   ["Data Integration and Machine Learning: A Natural Synergy"](https://youtube.com/watch?v=8RMSaFVPT1Q) tutorial by Luna Dong and Theo Rekatsinas `video`  
+  ["Ceres: Harvesting Knowledge from Semi-Structured Web"](https://slideslive.com/38915799/ceres-harvesting-knowledge-from-semistructured-web) by Luna Dong `video`  
   ["Constructing and Mining Web-Scale Knowledge Graphs"](http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs) tutorial by Evgeniy Gabrilovich and Antoine Bordes `video`  
 
   ["Knowledge Graph Construction From Text"](https://kgtutorial.github.io/?hootPostID=a5af9fab7ef1fb922ef7135a2e6d4f14) tutorial by Jay Pujara, Sameer Singh, Bhavana Dalvi `slides`  
@@ -916,8 +917,10 @@
 
 	[results in 2016](http://whatsnext.nuance.com/in-the-labs/winograd-schema-challenge-2016-results/)  
 
-	["The Winograd Schema Challenge"](http://www.cs.toronto.edu/~hector/Papers/winograd.pdf) by Hector Levesque  
-	["On Our Best Behaviour"](http://www.cs.toronto.edu/~hector/Papers/ijcai-13-paper.pdf) by Hector Levesque  
+	["A Surprisingly Robust Trick for Winograd Schema Challenge"](https://arxiv.org/abs/1905.06290) by Kocijan et al. `paper`
+
+	["The Winograd Schema Challenge"](http://www.cs.toronto.edu/~hector/Papers/winograd.pdf) by Hector Levesque `paper`  
+	["On Our Best Behaviour"](http://www.cs.toronto.edu/~hector/Papers/ijcai-13-paper.pdf) by Hector Levesque `paper`  
 
 	set of schemas - pairs of sentences that differ only in one or two words and that contain an ambiguity  
 	this ambiguity is resolved in opposite ways in two sentences which requires world knowledge and reasoning  
@@ -1312,6 +1315,8 @@ noise, inferring missing information, and determining which candidate facts shou
 ---
 ### interesting papers - knowledge bases with continuous representations
 
+[papers](https://github.com/thunlp/KRLPapers)
+
 
 #### ["An Overview of Embedding Models of Entities and Relationships for Knowledge Base Completion"](https://arxiv.org/abs/1703.08098) Nguyen
 >	"Knowledge bases of real-world facts about entities and their relationships are useful resources for a variety of natural language processing tasks. However, because knowledge bases are typically incomplete, it is useful to be able to perform knowledge base completion, i.e., predict whether a relationship not in the knowledge base is likely to be true. This article presents an overview of embedding models of entities and relationships for knowledge base completion, with up-to-date experimental results on two standard evaluation tasks of link prediction (i.e. entity prediction) and triple classification."
@@ -1429,7 +1434,7 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 >	  - Hard to fix mistakes  
 >	  - Fails for new or sparse relations  
 >
->	Formalize background knowledge as logical formluae  
+>	Formalize background knowledge as logical formulae  
 >	  - Easy to modify and improve  
 >	  - Brittle, no generalization (Markov Logic Networks generalize well but offer possibly intractable inference)  
 >
@@ -1688,6 +1693,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 >	"Machine comprehension, answering a query about a given context paragraph, requires modeling complex interactions between the context and the query. Recently, attention mechanisms have been successfully extended to MC. Typically these methods use attention to focus on a small portion of the context and summarize it with a fixed-size vector, couple attentions temporally, and/or often form a uni-directional attention. In this paper we introduce the Bi-Directional Attention Flow network, a multi-stage hierarchical process that represents the context at different levels of granularity and uses bidirectional attention flow mechanism to obtain a query-aware context representation without early summarization."
 
   - `video` <https://youtu.be/fpycaHd1Z08?t=20m28s> (Neubig)
+  - `video` <https://youtu.be/99CymZY-4Tc?t=1h26m40s> (Lyalin) `in russian`
   - `code` <https://github.com/allenai/allennlp/tree/master/allennlp/models/reading_comprehension>
 
 
@@ -1861,7 +1867,14 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 ### interesting papers - information extraction and integration
 
 [**selected papers**](https://yadi.sk/d/5WLsH_nd3ZUJU4)  
-[papers on entity discovery and linking](http://nlp.cs.rpi.edu/kbp/2017/elreading.html)  
+[papers](http://nlp.cs.rpi.edu/kbp/2017/elreading.html) on entity discovery and linking  
+
+
+#### ["Alexandria: Unsupervised High-Precision Knowledge Base Construction using a Probabilistic Program"](https://openreview.net/forum?id=rJgHCgc6pX) Winn et al.
+  `knowledge base population` `Microsoft Satori`
+>	"Creating a knowledge base that is accurate, up-to-date and complete remains a significant challenge despite substantial efforts in automated knowledge base construction.  In this paper, we present Alexandria -- a system for unsupervised, high-precision knowledge base construction. Alexandria uses a probabilistic program to define a process of converting knowledge base facts into unstructured text.  Using probabilistic inference, we can invert this program and so retrieve facts, schemas and entities from web text. The use of a probabilistic program allows uncertainty in the text to be propagated through to the retrieved facts, which increases accuracy and helps merge facts from multiple sources. Because Alexandria does not require labelled training data, knowledge bases can be constructed with the minimum of manual input. We demonstrate this by constructing a high precision (typically 97\%+) knowledge base for people from a single seed fact."
+
+  - `post` <https://devblogs.microsoft.com/dotnet/announcing-ml-net-0-6-machine-learning-net>
 
 
 #### ["From Data Fusion to Knowledge Fusion"](http://www.vldb.org/pvldb/vol7/p881-dong.pdf) Dong et al.

@@ -288,6 +288,7 @@
   [overview](https://youtube.com/watch?v=jtjW5Pye_44) by Sergey Levine `video`  
   [overview](http://videolectures.net/iclr2016_levine_deep_learning) by Sergey Levine `video`  
 
+  [overview](https://slideslive.com/38915873/deep-learning-for-robotics) by Pieter Abbeel `video`  
   [overview](https://facebook.com/nipsfoundation/videos/1554594181298482) by Pieter Abbeel `video`  
   [overview](https://youtube.com/watch?v=TERCdog1ddE) by Pieter Abbeel `video`  
 
@@ -1044,6 +1045,8 @@
 
   ["Planning and Models"](https://youtube.com/watch?v=Xrxrd8nl4YI) by Hado van Hasselt `video`  
   ["Integrating Learning and Planning"](https://youtube.com/watch?v=ItMutbeOHtc) by David Silver `video`  
+
+  ["Structure and Priors in RL"](https://slideslive.com/38915870/panel-questions) discussion `video`
 
 ----
 
@@ -2155,6 +2158,7 @@ interesting recent papers:
   - `video` <https://youtu.be/LnXgs73OUjE?t=29m20s> (Botvinick)
   - `post` <https://hackernoon.com/learning-policies-for-learning-policies-meta-reinforcement-learning-rl²-in-tensorflow-b15b592a2ddf>
   - `code` <https://github.com/awjuliani/Meta-RL>
+  - `paper` ["Reinforcement Learning, Fast and Slow"](https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(19)30061-0) by Botvinick et al. ([talk](https://slideslive.com/38915872/metareinforcement-learning-an-appreciation) by Botvinick `video`) ([talk](https://youtube.com/watch?v=b0LddBiF5jM) by Botvinick `video`) ([overview](https://youtube.com/watch?v=_N_nFzMtWkA) by Kilcher `video`)
   - `paper` ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](#rl2-fast-reinforcement-learning-via-slow-reinforcement-learning-duan-schulman-chen-bartlett-sutskever-abbeel) by Duan et al. `summary`
 
 

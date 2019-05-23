@@ -269,7 +269,6 @@
   ["Graphical Models"](http://www.deeplearningbook.org/contents/graphical_models.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
 
   ["A Neural Network is a Monference, Not a Model"](http://blog.jacobandreas.net/monference.html) by Jacob Andreas  
-  ["Deep Learning and Graphical Models"](https://plus.google.com/+YannLeCunPhD/posts/51gWtf7X3Ee) by Yann LeCun  
 
 ----
 
@@ -845,6 +844,7 @@
   [overview](https://youtube.com/watch?v=ZVN14xYm7JA) by Ian Goodfellow `video`  
   [overview](http://videolectures.net/deeplearning2016_bengio_neural_networks/) by Yoshua Bengio `video`  
 
+  ["When Recurrent Models Don't Need to be Recurrent"](http://offconvex.org/2018/07/27/approximating-recurrent/) by John Miller  
   ["The Unreasonable Effectiveness of Recurrent Neural Networks"](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) by Andrej Karpathy  
   ["A Critical Review of Recurrent Neural Networks for Sequence Learning"](https://arxiv.org/abs/1506.00019) by Lipton et al.  
   ["Learning Over Long Time Lags"](http://arxiv.org/abs/1602.04335) by Hojjat Salehinejad  
@@ -1192,6 +1192,7 @@
   - `video` <https://youtu.be/RKvS958AqGY?t=12m7s> (Tishby)
   - `video` <https://youtu.be/cHjI37DsQCQ?t=41m40s> (Selvaraj)
   - `video` <https://youtube.com/watch?v=yoMC0P2x3Fg> + <https://youtube.com/watch?v=7OsyeNbKQjU> (Skorokodov) `in russian`
+  - `post` <https://reddit.com/r/MachineLearning/comments/be8qie/discussion_what_is_the_status_of_the_information/el9eqwf>
   - `post` <https://lilianweng.github.io/lil-log/2017/09/28/anatomize-deep-learning-with-information-theory.html>
   - `post` <https://weberna.github.io/jekyll/update/2017/11/08/Information-Bottleneck-Part1.html>
   - `post` <http://inference.vc/representation-learning-and-compression-with-the-information-bottleneck/>
@@ -1199,7 +1200,6 @@
   - `notes` <https://blog.acolyer.org/2017/11/15/opening-the-black-box-of-deep-neural-networks-via-information-part-i/>
   - `notes` <https://blog.acolyer.org/2017/11/16/opening-the-black-box-of-deep-neural-networks-via-information-part-ii/>
   - `notes` <https://theneuralperspective.com/2017/03/24/opening-the-black-box-of-deep-neural-networks-via-information/>
-  - `notes` <https://reddit.com/r/MachineLearning/comments/60fhyb/r_opening_the_black_box_of_deep_neural_networks/df8jsbm/>
   - `press` <https://quantamagazine.org/new-theory-cracks-open-the-black-box-of-deep-learning-20170921>
   - `paper` ["Deep Learning and the Information Bottleneck Principle"](#tishby-zaslavsky---deep-learning-and-the-information-bottleneck-principle) by Tishby and Zaslavsky `summary`
 
@@ -1207,7 +1207,7 @@
 #### ["On the Information Bottleneck Theory of Deep Learning"](https://openreview.net/forum?id=ry_WPG-A-) Saxe et al.
   `generalization` `information bottleneck`
 >	"In this work, we study the information bottleneck theory of deep learning, which makes three specific claims: first, that deep networks undergo two distinct phases consisting of an initial fitting phase and a subsequent compression phase; second, that the compression phase is causally related to the excellent generalization performance of deep networks; and third, that the compression phase occurs due to the diffusion-like behavior of stochastic gradient descent. Here we show that none of these claims hold true in the general case. Through a combination of analytical results and simulation, we demonstrate that the information plane trajectory is predominantly a function of the neural nonlinearity employed: double-sided saturating nonlinearities like tanh yield a compression phase as neural activations enter the saturation regime, but linear activation functions and single-sided saturating nonlinearities like the widely used ReLU in fact do not. Moreover, we find that there is no evident causal connection between compression and generalization: networks that do not compress are still capable of generalization, and vice versa. Next, we show that the compression phase, when it exists, does not arise from stochasticity in training by demonstrating that we can replicate the IB findings using full batch gradient descent rather than stochastic gradient descent. Finally, we show that when an input domain consists of a subset of task-relevant and task-irrelevant information, hidden representations do compress the task-irrelevant information, although the overall information about the input may monotonically increase with training time, and that this compression happens concurrently with the fitting process rather than during a subsequent compression period."
-  - `post` <https://reddit.com/r/MachineLearning/comments/be8qie/discussion_what_is_the_status_of_the_information/elu8t2f/?context=3>
+  - `post` <https://reddit.com/r/MachineLearning/comments/be8qie/discussion_what_is_the_status_of_the_information/el9eqwf>
   - `paper` ["Scalable Mutual Information Estimation using Dependence Graphs"](https://arxiv.org/abs/1801.09125) by Noshad et al.
 
 
@@ -1754,7 +1754,6 @@ Yoshua Bengio:
   - `post` <http://www.computervisionblog.com/2016/06/making-deep-networks-probabilistic-via.html>
   - `notes` <https://casmls.github.io/general/2016/11/11/dropout.html>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/GalG15>
-  - `notes` <https://plus.google.com/u/0/+AnkurHanda/posts/DnXB81efTwa>
   - `code` <https://github.com/yaringal/DropoutUncertaintyExps>
   - `code` <https://github.com/tabacof/bayesian-nn-uncertainty>
   - `code` <http://nbviewer.jupyter.org/github/napsternxg/pytorch-practice/blob/master/Pytorch%20Uncertainity-animated.ipynb>
@@ -2254,6 +2253,11 @@ x."
 >	- offers robustness to affine transformations  
 >	- activation vectors are easier to interpret (rotation, thickness, skew)"  
 
+----
+>	"Capsules is the theory of how you do visual perception using reconstruction, and also how you route information to the right places. In standard neural nets, the information, the activity in the layer, just automatically goes somewhere; you don't decide where to send it. The idea of capsules was to make decisions about where to send information. Now, since I started working on capsules, some other very smart people at Google invented transformers, which are doing the same thing. They're deciding where to route information, and that's a big win."
+
+>	"The other thing that motivated capsules was coordinate frames. So when humans do visual, they're always using coordinate frames. If they impose the wrong coordinate frame on an object, they don't even recognize the object. So I'll give you a little task: Imagine a tetrahedron; it’s got a triangular base and three triangular faces, all equilateral triangles. Easy to imagine, right? Now imagine slicing it with a plane, so you get a square cross section. That's not so easy, right? Every time you slice, you get a triangle. It’s not obvious how you get a square. It's not at all obvious. Okay, but I'll give you the same shape described differently. I need your pen. Imagine the shape you get if you take a pen like that, another pen at right angles like this, and you connect all points on this pen to all points on this pen. That's a solid tetrahedron. OK, you're seeing it relative to a different coordinate frame, where the edges of the tetrahedron, these two line up with the coordinate frame. And for this, if you think of the tetrahedron that way, it's pretty obvious that at the top you've got a long rectangle this way, at the bottom we got a long rectangle that way, and there’s a square in the middle. So now it's pretty obvious how you can slice it to get a square, but only if you think of it with that coordinate frame. So it's obvious that for humans, coordinate frames are very important for perception."
+
   - `video` <https://youtube.com/watch?v=gq-7HgzfDBM>
   - `video` <https://facebook.com/nipsfoundation/videos/1553634558061111?t=5824> (Frosst)
   - `video` ["What is wrong with convolutional neural nets?"](https://youtube.com/watch?v=Mqt8fs6ZbHk) (Hinton)
@@ -2374,10 +2378,6 @@ x."
   - <https://google.github.io/seq2seq>
 
 
-#### ["Reward Augmented Maximum Likelihood for Neural Structured Prediction"](https://arxiv.org/abs/1609.00150) Norouzi, Bengio, Chen, Jaitly, Schuster, Wu, Schuurmans
-  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#reward-augmented-maximum-likelihood-for-neural-structured-prediction-norouzi-bengio-chen-jaitly-schuster-wu-schuurmans>
-
-
 #### ["Pointer Networks"](http://arxiv.org/abs/1506.03134) Vinyals, Fortunato, Jaitly
 >	"We introduce a new neural architecture to learn the conditional probability of an output sequence with elements that are discrete tokens corresponding to positions in an input sequence. Such problems cannot be trivially addressed by existent approaches such as sequence-to-sequence and Neural Turing Machines, because the number of target classes in each step of the output depends on the length of the input, which is variable. Problems such as sorting variable sized sequences, and various combinatorial optimization problems belong to this class. Our model solves the problem of variable size output dictionaries using a recently proposed mechanism of neural attention. It differs from the previous attention attempts in that, instead of using attention to blend hidden units of an encoder to a context vector at each decoder step, it uses attention as a pointer to select a member of the input sequence as the output. We call this architecture a Pointer Net. We show Ptr-Nets can be used to learn approximate solutions to three challenging geometric problems - finding planar convex hulls, computing Delaunay triangulations, and the planar Travelling Salesman Problem - using training examples alone. Ptr-Nets not only improve over sequence-to-sequence with input attention, but also allow us to generalize to variable size output dictionaries. We show that the learnt models generalize beyond the maximum lengths they were trained on. We hope our results on these tasks will encourage a broader exploration of neural learning for discrete problems."
 
@@ -2434,6 +2434,9 @@ x."
 >	- convolutional: O(logk(n))  
 >	- self-attention (restricted): O(n/r)"  
 
+----
+  > "Capsules is the theory of how you do visual perception using reconstruction, and also how you route information to the right places. In standard neural nets, the information, the activity in the layer, just automatically goes somewhere; you don't decide where to send it. The idea of capsules was to make decisions about where to send information. Now, since I started working on capsules, some other very smart people at Google invented transformers, which are doing the same thing. They're deciding where to route information, and that's a big win."
+
   - `post` <https://research.googleblog.com/2017/08/transformer-novel-neural-network.html>
   - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747?t=1107> (Vaswani, Shazeer)
   - `video` <https://youtu.be/I0nX4HDmXKc?t=7m46s> (Polosukhin)
@@ -2461,25 +2464,6 @@ x."
   - `code` <https://github.com/jadore801120/attention-is-all-you-need-pytorch>
 
 
-#### ["Gated Graph Sequence Neural Networks"](http://arxiv.org/abs/1511.05493) Li, Zemel, Brockschmidt, Tarlow
->	"Graph-structured data appears frequently in domains including chemistry, natural language semantics, social networks, and knowledge bases. In this work, we study feature learning techniques for graph-structured inputs. Our starting point is previous work on Graph Neural Networks, which we modify to use gated recurrent units and modern optimization techniques and then extend to output sequences. The result is a flexible and broadly useful class of neural network models that has favorable inductive biases relative to purely sequence-based models (e.g., LSTMs) when the problem is graph-structured. We demonstrate the capabilities on some simple AI (bAbI) and graph algorithm learning tasks. We then show it achieves state-of-the-art performance on a problem from program verification, in which subgraphs need to be matched to abstract data structures."
-
->	"Many practical applications build on graph-structured data, and thus we often want to perform machine learning tasks that take graphs as inputs. Standard approaches to this problem include engineering custom features of an input graph, graph kernels, and methods that define graph features in terms of random walks on graphs. Our main contribution is an extension of Graph Neural Networks that outputs sequences. A secondary contribution is highlighting that Graph Neural Networks (and further extensions we develop here) are a broadly useful class of neural network model that is applicable to the problems currently facing the field. Previous work on feature learning for graph-structured inputs has focused on models that produce single outputs such as graph-level classifications, but many problems with graph inputs require outputting sequences. Examples include paths on a graph, enumerations of graph nodes with desirable properties, or sequences of global classifications mixed with, for example, a start and end node. We are not aware of existing graph feature learning work suitable for this problem. Our motivating application comes from program verification and requires outputting logical formulas, which we formulate as a sequential output problem."
-
->	"There are two settings for feature learning on graphs: (1) learning a representation of the input graph, and (2) learning representations of the internal state during the process of producing a sequence of outputs. Here, (1) is mostly achieved by previous work on Graph Neural Networks (Scarselli et al., 2009); we make several minor adaptations of this framework, including changing it to use modern practices around Recurrent Neural Networks. (2) is important because we desire outputs from graph-structured problems that are not solely individual classifications. In these cases, the challenge is how to learn features on the graph that encode the partial output sequence that has already been produced (e.g., the path so far if outputting a path) and that still needs to be produced (e.g., the remaining path). We will show how the GNN framework can be adapted to these settings, leading to a novel graph-based neural network model that we call Gated Graph Sequence Neural Networks."
-
->	"We discuss an application to the verification of computer programs. When attempting to prove properties such as memory safety (i.e., that there are no null pointer dereferences in a program), a core problem is to find mathematical descriptions of the data structures used in a program. Following Brockschmidt et al. (2015), we have phrased this as a machine learning problem where we will learn to map from a set of input graphs representing the state of memory to a logical description of the data structures that have been instantiated. Whereas Brockschmidt et al. (2015) relied on a large amount of hand-engineering of features, we show that the system can be replaced with a GGS-NN at no cost in accuracy."
-
->	"The results in the paper show that GGS-NNs have desirable inductive biases across a range of problems that have some intrinsic graph structure to them, and we believe there to be many more cases where GGS-NNs will be useful. There are, however, some limitations that need to be overcome to make them apply even more broadly. Two limitations that we mentioned previously are that the bAbI task translation does not incorporate temporal order of inputs or ternary and higher order relations. We can imagine several possibilities for lifting these restrictions, such as concatenating a series of GG-NNs, where there is one GG-NNs for each edge, and representing higher order relations as factor graphs. A more significant challenge is how to handle less structured input representations. For example, in the bAbI tasks it would be desirable not to use the symbolic form of the inputs. One possible approach is to incorporate less structured inputs, and latent vectors, in our GGS-NNs."
-
->	"The current GGS-NNs formulation specifies a question only after all the facts have been consumed. This implies that the network must try to derive all consequences of the seen facts and store all pertinent information to a node within its node representation. This is likely not ideal; it would be preferable to develop methods that take the question as an initial input, and then dynamically derive the facts needed to answer the question."
-
->	"We are particularly interested in continuing to develop end-to-end learnable systems that can learn about semantic properties of programs, that can learn more complicated graph algorithms, and in applying these ideas to problems that require reasoning over knowledge bases and databases. More generally, we consider these graph neural networks as representing a step towards a model that can combine structured representations with the powerful algorithms of deep learning, with the aim of taking advantage of known structure while learning and inferring how to reason with and extend these representations."
-
-  - `video` <https://youtu.be/pJ5EEesntbA?t=48m01s> (Tarlow)
-  - `video` <http://research.microsoft.com/apps/video/default.aspx?id=263975&r=1> (Li)
-
-
 #### ["End-To-End Memory Networks"](http://arxiv.org/abs/1503.08895) Sukhbaatar, Szlam, Weston, Fergus
 >	"We introduce a neural network with a recurrent attention model over a possibly large external memory. The architecture is a form of Memory Network but unlike the model in that work, it is trained end-to-end, and hence requires significantly less supervision during training, making it more generally applicable in realistic settings. It can also be seen as an extension of RNNsearch to the case where multiple computational steps (hops) are performed per output symbol. The flexibility of the model allows us to apply it to tasks as diverse as (synthetic) question answering and to language modeling. For the former our approach is competitive with Memory Networks, but with less supervision. For the latter, on the Penn TreeBank and Text8 datasets our approach demonstrates slightly better performance than RNNs and LSTMs. In both cases we show that the key concept of multiple computational hops yields improved results."
 
@@ -2494,16 +2478,6 @@ x."
   - `code` <https://github.com/fchollet/keras/blob/master/examples/babi_memnn.py>
   - `code` <https://github.com/carpedm20/MemN2N-tensorflow>
   - `code` <https://github.com/domluna/memn2n>
-
-
-#### ["Towards Neural Network-based Reasoning"](http://arxiv.org/abs/1508.05508) Peng, Lu, Li, Wong
->	"We propose Neural Reasoner, a framework for neural network-based reasoning over natural language sentences. Given a question, Neural Reasoner can infer over multiple supporting facts and find an answer to the question in specific forms. Neural Reasoner has 1) a specific interaction-pooling mechanism, allowing it to examine multiple facts, and 2) a deep architecture, allowing it to model the complicated logical relations in reasoning tasks. Assuming no particular structure exists in the question and facts, Neural Reasoner is able to accommodate different types of reasoning and different forms of language expressions. Despite the model complexity, Neural Reasoner can still be trained effectively in an end-to-end manner. Our empirical studies show that Neural Reasoner can outperform existing neural reasoning systems with remarkable margins on two difficult artificial tasks (Positional Reasoning and Path Finding) proposed. For example, it improves the accuracy on Path Finding (10K) from 33.4% to over 98%."
-
->	"We have proposed Neural Reasoner, a framework for neural network-based reasoning over natural language sentences. Neural Reasoner is flexible, powerful, and language indepedent. Our empirical studies show that Neural Reasoner can dramatically improve upon existing neural reasoning systems on two difficult artificial tasks. For future work, we will explore 1) tasks with higher difficulty and reasoning depth, e.g., tasks which require a large number of supporting facts and facts with complex intrinsic structures, 2) the common structure in different but similar reasoning tasks (e.g., multiple tasks all with general questions), and 3) automatic selection of the reasoning architecture, for example, determining when to stop the reasoning based on the data."
-
->	"similar to Memory Networks but with non-linear function to compute interaction between control state and memory slot"
-
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/PengLLW15>
 
 
 #### ["Learning to Transduce with Unbounded Memory"](http://arxiv.org/abs/1506.02516) Grefenstette, Hermann, Suleyman, Blunsom
