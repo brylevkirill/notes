@@ -68,7 +68,7 @@
 
   **NLP with Deep Learning**
 
-  [course](http://youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6) from Stanford `video` ([notes](https://github.com/stanfordnlp/cs224n-winter17-notes))  
+  [course](http://youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z) from Stanford `video` ([notes](https://github.com/stanfordnlp/cs224n-winter17-notes))  
   [course](http://github.com/oxford-cs-deepnlp-2017/lectures) from Oxford and DeepMind `video`  
   [course](http://phontron.com/class/nn4nlp2019/schedule.html) from CMU ([videos](https://youtube.com/user/neubig/playlists))  
   [course](http://youtube.com/playlist?list=PLt1IfGj6-_-f55ULcae3v7YuG8p_eUjnk) from iPavlov and Yandex `video` `in russian`  
@@ -233,18 +233,18 @@
 
 ----
 
-  - constituency parsing  
+  - *constituency parsing*  
 	[overview](http://lxmls.it.pt/2016/Part_1_Constituency_Parsing_2016.pdf) by Slav Petrov `slides`  
 	[overview](http://youtube.com/watch?v=sL_W_I8DpuU) by John Boyd-Graber `video`  
 
-  - dependency parsing  
+  - *dependency parsing*  
 	[overview](http://lxmls.it.pt/2016/Part2_Dependency_Parsing_2016.pdf) by Slav Petrov `slides`  
 	[overview](http://youtube.com/watch?v=du9VQaFEyeA) by John Boyd-Graber `video`  
 
 	[overview](http://youtube.com/watch?v=zgd_ZuaWvfs) of transition-based parsing by Graham Neubig `video`  
 	[overview](http://youtube.com/watch?v=wUjIOxeCnqM) of graph-based parsing by Graham Neubig `video`  
 
-  - CCG parsing  
+  - *CCG parsing*  
 	[overview](http://youtube.com/playlist?list=PLun-LUE1uLNvWi-qV-tRHohfHR90Y_cAk) by Yoav Artzi `video`
 
 ----

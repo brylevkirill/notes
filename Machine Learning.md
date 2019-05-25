@@ -36,8 +36,10 @@
   [**recommender systems**](https://github.com/brylevkirill/notes/blob/master/Recommender%20Systems.md)  
   [**information retrieval**](https://github.com/brylevkirill/notes/blob/master/Information%20Retrieval.md)  
 
+  [state-of-the-art algorithms](https://paperswithcode.com/sota)
+
   ["Machine Learning is The New Algorithms"](http://nlpers.blogspot.ru/2014/10/machine-learning-is-new-algorithms.html) by Hal Daume  
-  ["When is Machine Learning Worth It?"](http://inference.vc/when-is-machine-learning-worth-it/) by Ferenc Huszar  
+  ["When is Machine Learning Worth It?"](http://inference.vc/when-is-machine-learning-worth-it) by Ferenc Huszar  
 
   Any source code for expression y = f(x), where f(x) has some parameters and is used to make decision, prediction or estimate, has potential to be replaced by machine learning algorithm.
 
@@ -136,90 +138,23 @@
 
 #### conferences
 
-  [videos](https://github.com/dustinvtran/ml-videos)
+  - ICLR 2019 [[videos](https://facebook.com/pg/iclr.cc/videos)] [[videos](https://slideslive.com/iclr)] [[notes](https://david-abel.github.io/notes/iclr_2019.pdf)]
+  - NeurIPS 2018 [[videos](https://neurips.cc/Conferences/2018/Videos)] [[videos](https://facebook.com/pg/nipsfoundation/videos)]
+  - ICML 2018 [[videos](https://vimeo.com/channels/1408270/videos)] [[videos](https://facebook.com/icml.imls/videos)] [[notes](https://david-abel.github.io/blog/posts/misc/icml_2018.pdf)]
+  - ICLR 2018 [[videos](https://facebook.com/iclr.cc/videos)]
+  - NeurIPS 2017 [[videos](https://nips.cc/Conferences/2017/Videos)] [[videos](https://facebook.com/pg/nipsfoundation/videos)] [[notes](https://cs.brown.edu/~dabel/blog/posts/misc/nips_2017.pdf)]
+	[[summary](https://github.com/hindupuravinash/nips2017)] [[summary](https://github.com/kihosuh/nips_2017)] [[summary](https://github.com/sbarratt/nips2017)]
+  - ICML 2017 [[videos](https://icml.cc/Conferences/2017/Videos)]
+  - ICLR 2017 [[videos](https://facebook.com/iclr.cc/videos)]
+  - NeurIPS 2016 [[videos](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016)] [[videos](https://nips.cc/Conferences/2016/SpotlightVideos)] [[videos](https://youtube.com/playlist?list=PLPwzH56Rdmq4hcuEMtvBGxUrcQ4cAkoSc)] [[videos](https://youtube.com/playlist?list=PLJscN9YDD1buxCitmej1pjJkR5PMhenTF)] [[videos](https://youtube.com/channel/UC_LBLWLfKk5rMKDOHoO7vPQ)] [[videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt)] [[summary](https://github.com/hindupuravinash/nips2016)]
+  - ICML 2016 [[videos](http://techtalks.tv/icml/2016)]
+  - ICLR 2016 [[videos](http://videolectures.net/iclr2016_san_juan)]
+  - NeurIPS 2015 [[videos](https://youtube.com/playlist?list=PLD7HFcN7LXRdvgfR6qNbuvzxIwG0ecE9Q)] [[videos](https://youtube.com/user/NeuralInformationPro/search?query=NIPS+2015)] [[summary](http://reddit.com/r/MachineLearning/comments/3x2ueg/nips_2015_overviews_collection)]
+  - ICML 2015 [[videos](https://youtube.com/playlist?list=PLdH9u0f1XKW8cUM3vIVjnpBfk_FKzviCu)] [[videos](https://youtube.com/playlist?list=PLdH9u0f1XKW8cUM3vIVjnpBfk_FKzviCu)]
+  - ICLR 2015 [[videos](http://youtube.com/channel/UCqxFGrNL5nX10lS62bswp9w)]
+  - NeurIPS 2014 [[videos](https://youtube.com/user/NeuralInformationPro/search?query=NIPS+2014)]
 
-  - ICLR 2019  
-	<https://facebook.com/pg/iclr.cc/videos> `video`  
-	<https://slideslive.com/iclr/iclr-2019> `video`  
-
-	<https://david-abel.github.io/notes/iclr_2019.pdf> `notes`
-
-  - NeurIPS 2018  
-	<https://neurips.cc/Conferences/2018/Videos> `video`  
-	<https://facebook.com/pg/nipsfoundation/videos> `video`  
-
-  - ICML 2018  
-	<https://vimeo.com/channels/1408270/videos> `video`  
-	<https://facebook.com/icml.imls/videos> `video`  
-
-	<https://david-abel.github.io/blog/posts/misc/icml_2018.pdf> `notes`
-
-  - ICLR 2018  
-	<https://facebook.com/iclr.cc/videos> `video`
-
-	<http://search.iclr2018.smerity.com>  
-	<http://iclr2018.mmanukyan.io>  
-	<http://chillee.github.io/OpenReviewExplorer>  
-
-  - NeurIPS 2017  
-	<https://nips.cc/Conferences/2017/Videos> `video`  
-	<https://facebook.com/pg/nipsfoundation/videos/> `video`  
-
-	<https://nips17.ml>
-
-	<https://github.com/hindupuravinash/nips2017>  
-	<https://github.com/kihosuh/nips_2017>  
-	<https://github.com/sbarratt/nips2017>  
-
-	<https://cs.brown.edu/~dabel/blog/posts/misc/nips_2017.pdf> `notes`
-
-  - ICML 2017  
-	<https://icml.cc/Conferences/2017/Videos> `video`
-
-	<http://artem.sobolev.name/posts/2017-08-14-icml-2017.html>  
-	<https://olgalitech.wordpress.com/tag/icml2017/>  
-
-  - ICLR 2017  
-	<https://facebook.com/iclr.cc/videos> `video`
-
-	<https://medium.com/@karpathy/iclr-2017-vs-arxiv-sanity-d1488ac5c131>
-
-  - NeurIPS 2016  
-	<https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016> `video`  
-	<https://nips.cc/Conferences/2016/SpotlightVideos> `video`  
-
-	<https://youtube.com/playlist?list=PLPwzH56Rdmq4hcuEMtvBGxUrcQ4cAkoSc> `video`  
-	<https://youtube.com/playlist?list=PLJscN9YDD1buxCitmej1pjJkR5PMhenTF> `video`  
-	<https://youtube.com/channel/UC_LBLWLfKk5rMKDOHoO7vPQ> `video`  
-	<https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt> `video`  
-
-	<https://github.com/hindupuravinash/nips2016>  
-	<http://artem.sobolev.name/posts/2016-12-31-nips-2016-summaries.html>  
-
-  - ICML 2016  
-	<http://techtalks.tv/icml/2016/> `video`
-
-  - ICLR 2016  
-	<http://videolectures.net/iclr2016_san_juan/> `video`
-
-	<http://www.computervisionblog.com/2016/06/deep-learning-trends-iclr-2016.html>  
-
-  - NeurIPS 2015  
-	<https://youtube.com/playlist?list=PLD7HFcN7LXRdvgfR6qNbuvzxIwG0ecE9Q> `video`  
-	<https://youtube.com/user/NeuralInformationPro/search?query=NIPS+2015> `video`  
- 
-	<http://reddit.com/r/MachineLearning/comments/3x2ueg/nips_2015_overviews_collection/>  
-	<http://cinrizasti.blogspot.ru/2015/12/a-blog-post-about-blog-posts-about-nips.html>  
-
-  - ICML 2015  
-	<https://youtube.com/playlist?list=PLdH9u0f1XKW8cUM3vIVjnpBfk_FKzviCu> `video`  
-	<http://dpkingma.com/?page_id=483> `video`  
-
-  - ICLR 2015  
-	<http://youtube.com/channel/UCqxFGrNL5nX10lS62bswp9w> `video`
-
-  - NeurIPS 2014  
-	<https://youtube.com/user/NeuralInformationPro/search?query=NIPS+2014> `video`
+  [video collection](https://github.com/dustinvtran/ml-videos)
 
 
 
@@ -302,8 +237,7 @@
 
   [**deep learning**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#theory)
 
-  [**reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#problems)  
-  ["Theory of Reinforcement Learning"](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) by Csaba Szepesvari `video`  
+  [**reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#problems)
 
 
 
@@ -329,16 +263,14 @@
 
 ----
 
-  <http://en.wikipedia.org/wiki/List_of_machine_learning_algorithms>
+  [state-of-the-art algorithms](https://paperswithcode.com/sota)
 
-  <http://eferm.com/wp-content/uploads/2011/05/cheat3.pdf>  
-  <http://github.com/soulmachine/machine-learning-cheat-sheet/blob/master/machine-learning-cheat-sheet.pdf>  
+  [algorithms](http://en.wikipedia.org/wiki/List_of_machine_learning_algorithms) (Wikipedia)  
+  [algorithms](http://metacademy.org) (Metacademy)  
+  [algorithms](http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html) (scikit-learn)  
 
-  <http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html>  
-
-----
-
-  [state-of-the-art methods](https://paperswithcode.com/sota)
+  [cheat sheet](http://eferm.com/wp-content/uploads/2011/05/cheat3.pdf)  
+  [cheat sheet](http://github.com/soulmachine/machine-learning-cheat-sheet/blob/master/machine-learning-cheat-sheet.pdf)  
 
 
 

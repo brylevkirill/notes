@@ -119,7 +119,8 @@
 
 	[discussion](https://reddit.com/r/DotA2/comments/bf49yk/hello_were_the_dev_team_behind_openai_five_we) with OpenAI team
 
-	[OpenAI Five vs top players games](https://youtube.com/playlist?list=PLOXw6I10VTv-ZFZV4fMqKMfNQmwmkcr0w) `video`
+	[OpenAI Five vs top players games](https://youtube.com/playlist?list=PLOXw6I10VTv-ZFZV4fMqKMfNQmwmkcr0w) `video`  
+	[OpenAI Five vs ainodehna team games](https://arena.openai.com/#/results) ([highlights](https://cybersport.ru/dota-2/interviews/glavnoe-protiv-botov-otdat-im-udobnykh-dlya-nas-geroev-komanda-kotoraya-trizhdy-pobedila-openai-raskryla-svoyu-taktiku) `in russian`)  
 
 ----
   - *StarCraft 2*
@@ -626,7 +627,8 @@
 ----
 #### multi-agent reinforcement learning
 
-  [overview](http://videolectures.net/DLRLsummerschool2018_bowling_multi_agent_RL) by Michael Bowling `video`
+  [overview](http://videolectures.net/DLRLsummerschool2018_bowling_multi_agent_RL) by Michael Bowling `video`  
+  [overview](http://youtube.com/watch?v=hGEz4Aumd1U) by Arsenii Ashukha `video`  
 
   [**recent interesting papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---multi-agent)
 
@@ -1116,25 +1118,28 @@
 #### deep model-based learning
 
   challenges:  
+  - planning with learned model is dangerous  
+    * planning looks for actions sequence maximizing expected return  
+    * planning looks for and exploits imperfections in learned model  
   - compounding errors  
-    * errors in the transition model compound over the trajectory  
-    * by the end of a long trajectory rewards can be totally wrong  
-    * no success yet in Atari  
-  - deep networks of value/policy can plan implicitly  
-    * each layer of network performs arbitrary computational step  
-    * n-layer network can “lookahead” n steps  
+    * errors in transition model compound over given trajectory  
+    * return can be totally wrong by the end of long trajectory  
+  - deep value/policy networks can plan implicitly  
+    * each layer performs computational step  
+    * n-layer network can lookahead n steps  
     * are transition models required at all?  
 
 ----
 
+  [overview](https://slideslive.com/38915863/learning-models-for-representations-and-planning) by Timothy Lillicrap `video`  
   [overview](https://youtu.be/bsuvM1jO-4w?t=35m2s) by Vlad Mnih `video`  
-  ["A Case Against Generative Models in RL?"](https://youtube.com/watch?v=EA2RtXsLSWU) by Shakir Mohamed `video`  
 
   ["Model-based Deep Reinforcement Learning"](https://youtube.com/watch?v=iC2a7M9voYU) by Chelsea Finn `video`  
   ["Learning Dynamical System Models from Data"](https://youtube.com/watch?v=qVsLk5CVy_c) by Sergey Levine `video`  
   ["Advanced Model Learning"](https://youtube.com/watch?v=6EasN2FAIX0) by Chelsea Finn `video`  
 
-  ["Approximate Reinforcement Learning in Partially Observable Markov Decision Process"](https://yadi.sk/i/pMdw-_uI3Gke7Z) (35:54) by Pavel Shvechikov `video` `in russian`  
+  ["Approximate Learning in POMDPs"](https://youtu.be/aV4wz7FAXmo?t=1h1m55s) by Pavel Shvechikov `video`  
+  ["Approximate Learning in POMDPs"](https://yadi.sk/i/pMdw-_uI3Gke7Z) (35:54) by Pavel Shvechikov `video` `in russian`  
   ["Deep Recurrent Q-Network"](https://youtube.com/watch?v=bE5DIJvZexc) by Alexander Fritzler `video` `in russian`  
   ["Deep Reinforcement Learning with Memory"](http://93.180.23.59/videos/video/2420/in/channel/1/) by Sergey Bartunov `video` `in russian`  
 
@@ -1198,7 +1203,7 @@
 
 ----
 
-  ["Probabilistic Policy Learning"](https://youtu.be/JrO5fSskISY?t=1h19m29s) by Shakir Mohamed `video`  
+  ["A Case Against Generative Models in RL?"](https://youtube.com/watch?v=EA2RtXsLSWU) by Shakir Mohamed `video`  
   ["Bayesian Policy Search"](https://youtu.be/AggqBRdz6CQ?t=9m53s) by Shakir Mohamed `video`  
   ["Bayesian Inference for Reinforcement Learning"](https://youtube.com/watch?v=KZd-jkmeIcU) by Sergey Bartunov `video` `in russian`
 	([slides](https://drive.google.com/drive/folders/0B2zoFVYw1rN3N0RUNXE1WnNObTQ) `in english`)  
@@ -1644,6 +1649,7 @@ interesting recent papers:
   - `video` <https://youtube.com/playlist?list=PLduGZax9wmiHg-XPFSgqGg8PEAV51q1FT> (demo)
   - `video` <http://on-demand.gputechconf.com/gtc/2018/video/S8467/> (Chaplot)
   - `code` <https://github.com/glample/Arnold>
+  - `paper` ["Deep Recurrent Q-Learning for Partially Observable MDPs"](#deep-recurrent-q-learning-for-partially-observable-mdps-hausknecht-stone) by Hausknecht and Stone `summary`
 
 
 #### ["Human-level Performance in First-person Multiplayer Games with Population-based Deep Reinforcement Learning"](https://arxiv.org/abs/1807.01281) Jaderberg et al.
@@ -2773,15 +2779,18 @@ interesting recent papers:
 
 
 #### ["Deep Recurrent Q-Learning for Partially Observable MDPs"](http://arxiv.org/abs/1507.06527) Hausknecht, Stone
+  `DRQN`
 >	"Deep Reinforcement Learning has yielded proficient controllers for complex tasks. However, these controllers have limited memory and rely on being able to perceive the complete game screen at each decision point. To address these shortcomings, this article investigates the effects of adding recurrency to a Deep Q-Network by replacing the first post-convolutional fully-connected layer with a recurrent LSTM. The resulting Deep Recurrent Q-Network exhibits similar performance on standard Atari 2600 MDPs but better performance on equivalent partially observed domains featuring flickering game screens. Results indicate that given the same length of history, recurrency allows partial information to be integrated through time and is superior to alternatives such as stacking a history of frames in the network's input layer. We additionally show that when trained with partial observations, DRQN's performance at evaluation time scales as a function of observability. Similarly, when trained with full observations and evaluated with partial observations, DRQN's performance degrades more gracefully than that of DQN. We therefore conclude that when dealing with partially observed domains, the use of recurrency confers tangible benefits."
 
 ----
 >	"Demonstrated that recurrent Q learning can perform the required information integration to resolve short-term partial observability (e.g. to estimate velocities) that is achieved via stacks of frames in the original DQN architecture."
 
+  - `video` <https://youtu.be/aV4wz7FAXmo?t=1h9m> (Shvechikov)
   - `video` <https://yadi.sk/i/pMdw-_uI3Gke7Z> (36:29) (Fritzler) `in russian`
   - `video` <https://youtube.com/watch?v=bE5DIJvZexc> (Fritzler) `in russian`
   - `code` <https://github.com/mhauskn/dqn/tree/recurrent>
   - `code` <https://github.com/awjuliani/DeepRL-Agents/blob/master/Deep-Recurrent-Q-Network.ipynb>
+  - `paper` ["Playing FPS Games with Deep Reinforcement Learning"](#playing-fps-games-with-deep-reinforcement-learning-lample-chaplot) by Lample and Chaplot `summary`
 
 
 

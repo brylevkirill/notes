@@ -151,6 +151,9 @@
 
 ----
 
+  ["Deep Learning and the 'Alchemy' Debate"](https://youtube.com/watch?v=kqhg-o-KEns) by Sanjeev Arora `video`  
+  ["The Epistemology of Deep Learning"](https://youtube.com/watch?v=gG5NCkMerHU) by Yann LeCun `video`  
+
   ["Theories of Deep Learning"](https://stats385.github.io) course from Stanford ([videos](https://researchgate.net/project/Theories-of-Deep-Learning))  
   ["Theoretical Deep Learning"](https://github.com/deepmipt/tdl) course from MIPT ([videos](https://youtube.com/playlist?list=PLt1IfGj6-_-dMa3Ff8mwjq1yOGijJ89Wa)) `in russian`  
 
@@ -1098,6 +1101,7 @@
 
   - `video` <https://facebook.com/iclr.cc/videos/1710657292296663?t=1105> (Recht)
   - `video` <https://facebook.com/iclr.cc/videos/1710657292296663?t=3220> (Zhang)
+  - `video` <https://youtu.be/mEYerIMYb5Q?t=18m2s> (Goncalves)
   - `notes` <https://theneuralperspective.com/2017/01/24/understanding-deep-learning-requires-rethinking-generalization/>
   - `notes` <https://blog.acolyer.org/2017/05/11/understanding-deep-learning-requires-re-thinking-generalization/>
   - `notes` <https://reddit.com/r/MachineLearning/comments/6ailoh/r_understanding_deep_learning_requires_rethinking/dhis1hz/>
@@ -2927,6 +2931,12 @@ x."
 [**interesting papers - reinforcement learning - applications**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---applications)
 
 [**selected papers**](https://yadi.sk/d/mQnJYmxo3WZDvP)
+
+
+#### ["Deep Nets: What have they ever done for Vision?"](https://arxiv.org/abs/1805.04025) Yuille, Liu
+>	"This is an opinion paper about the strengths and weaknesses of Deep Nets for vision. They are at the center of recent progress on artificial intelligence and are of growing importance in cognitive science and neuroscience. They have enormous successes but also clear limitations. There is also only partial understanding of their inner workings. It seems unlikely that Deep Nets in their current form will be the best long-term solution either for building general purpose intelligent machines or for understanding the mind/brain, but it is likely that many aspects of them will remain. At present Deep Nets do very well on specific types of visual tasks and on specific benchmarked datasets. But Deep Nets are much less general purpose, flexible, and adaptive than the human visual system. Moreover, methods like Deep Nets may run into fundamental difficulties when faced with the enormous complexity of natural images which can lead to a combinatorial explosion."
+
+  - `post` <https://thegradient.pub/the-limitations-of-visual-deep-learning-and-how-we-might-fix-them>
 
 
 #### ["Harnessing Deep Neural Networks with Logic Rules"](http://arxiv.org/abs/1603.06318) Hu, Ma, Liu, Hovy, Xing
