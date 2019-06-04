@@ -231,13 +231,14 @@
 	[AlphaZero vs Stockfish games highlights](https://youtube.com/watch?v=6z1o48Sgrck) `video`
 
 ----
-  - *Quake III Arena CTF*
+  - *Quake III Arena*
 
-	[FTW agent overview](https://deepmind.com/blog/capture-the-flag)
+	[FTW agent overview](https://deepmind.com/blog/capture-the-flag-science)
 
 	["Human-level Performance in First-person Multiplayer Games with Population-based Deep Reinforcement Learning"](#human-level-performance-in-first-person-multiplayer-games-with-population-based-deep-reinforcement-learning-jaderberg-et-al) by Jaderberg et al. `paper` `summary`
 
-	[FTW agents vs human players games](https://youtube.com/watch?v=dltN4MxV1RI) `video`
+	[FTW agents vs FTW agents games](https://youtube.com/watch?v=NXkD77ioGi0) `video`  
+	[FTW agents vs human players games](https://youtube.com/watch?v=dltN4MxV1RI) `video`  
 
 ----
   - *Doom*  
@@ -337,8 +338,9 @@
 
 ----
 
-  [course](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html) by David Silver `video`  
+  [course](https://youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ) by David Silver `video`  
   [course](https://udacity.com/course/reinforcement-learning--ud600) by Michael Littman `video`  
+  [course](https://youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u) by Emma Brunskill `video`  
   [course](http://web.mit.edu/dimitrib/www/RLbook.html) by Dimitri Bertsekas `video`  
   [course](https://github.com/yandexdataschool/Practical_RL/) from Yandex `video` `in russian`  
 
@@ -1010,6 +1012,12 @@
 ---
 ### model-based methods
 
+  - learning a model of the world's state and state-transition dynamics  
+  - planning using the model  
+	* improving a policy or value function through computation rather than by gathering further data  
+	* using the model to look ahead from some states, imagining from each something about its future  
+
+
   two fundamental problems in sequential decision making ([overview](https://youtu.be/2pWv7GOvuf0?t=1h16m16s) by David Silver `video`):  
   - reinforcement learning  
 	* environment is initially unknown  
@@ -1043,6 +1051,7 @@
 
   ["The Next Big Step in AI: Planning with a Learned Model"](https://youtube.com/watch?v=6-Uiq8-wKrg) by Richard Sutton `video`  
   ["The Grand Challenge of Knowledge"](http://www.fields.utoronto.ca/video-archive/2016/10/2267-16158) (41:35) by Richard Sutton `video`  
+  ["Open Questions in Model-based RL"](https://youtube.com/watch?v=OeIVfQz3FUc) by by Richard Sutton `video`  
   ["Learning World Models: The Next Step Towards AI"](https://youtube.com/watch?v=Wb3cnG0o7b8&t=33m50s) by Yann LeCun `video`  
 
   ["Planning and Models"](https://youtube.com/watch?v=Xrxrd8nl4YI) by Hado van Hasselt `video`  
@@ -1415,6 +1424,8 @@
   ["Completely Derandomized Self-Adaptation in Evolution Strategies"](https://www.lri.fr/~hansen/cmaartic.pdf) (CMA-ES) by Hansen and Ostermeier `paper`  
   ["Natural Evolution Strategies"](http://jmlr.org/papers/volume15/wierstra14a/wierstra14a.pdf) by Wierstra et al. `paper`  
   ["Evolution Strategies as a Scalable Alternative to Reinforcement Learning"](#evolution-strategies-as-a-scalable-alternative-to-reinforcement-learning-salimans-ho-chen-sutskever) by Salimans, Ho, Chen, Sutskever `paper` `summary`  
+  ["Improving Exploration in Evolution Strategies for Deep Reinforcement Learning via a Population of Novelty-Seeking Agents"](https://arxiv.org/abs/1712.06560) by Conti et al. `paper`  
+  ["Playing Atari with Six Neurons"](https://arxiv.org/abs/1806.01363) by Cuccu et al. `paper`  
 
   ["Evolutionary Computation for Reinforcement Learning"](http://cs.ox.ac.uk/publications/publication10159-abstract.html) by Shimon Whiteson `paper`
 
@@ -1653,6 +1664,7 @@ interesting recent papers:
 
 
 #### ["Human-level Performance in First-person Multiplayer Games with Population-based Deep Reinforcement Learning"](https://arxiv.org/abs/1807.01281) Jaderberg et al.
+  `FTW`
 >	"The real-world contains multiple agents, each learning and acting independently to cooperate and compete with other agents, and environments reflecting this degree of complexity remain an open challenge. In this work, we demonstrate for the first time that an agent can achieve human-level in a popular 3D multiplayer first-person video game, Quake III Arena Capture the Flag, using only pixels and game points as input. These results were achieved by a novel two-tier optimisation process in which a population of independent RL agents are trained concurrently from thousands of parallel matches with agents playing in teams together and against each other on randomly generated environments. Each agent in the population learns its own internal reward signal to complement the sparse delayed reward from winning, and selects actions using a novel temporally hierarchical representation that enables the agent to reason at multiple timescales. During game-play, these agents display human-like behaviours such as navigating, following, and defending based on a rich learned representation that is shown to encode high-level game knowledge. In an extensive tournament-style evaluation the trained agents exceeded the win-rate of strong human players both as teammates and opponents, and proved far stronger than existing state-of-the-art agents."
 
 >	"The proposed training algorithm stabilises the learning process in partially observable multi-agent environments by concurrently training a diverse population of agents who learn by playing with each other, and in addition the agent population provides a mechanism for meta-optimisation. We solve the prohibitively hard credit assignment problem of learning from the sparse and delayed episodic team win/loss signal (optimising thousands of actions based on a single final reward) by enabling agents to evolve an internal reward signal that acts as a proxy for winning and provides denser rewards. Finally, we meet the memory and long-term temporal reasoning requirements of high-level, strategic CTF play by introducing an agent architecture that features a multi-timescale representation, reminiscent of what has been observed in primate cerebral cortex, and an external working memory module, broadly inspired by human episodic memory."
@@ -1663,9 +1675,14 @@ interesting recent papers:
 
 >	"This can be seen as a two-tier reinforcement learning problem. The inner optimisation maximises Jinner, the agents’ expected future discounted internal rewards. The outer optimisation of Jouter can be viewed as a meta-game, in which the meta-reward of winning the match is maximised with respect to internal reward schemes and hyperparameters, with the inner optimisation providing the meta transition dynamics. We solve the inner optimisation with RL, and the outer optimisation with Population Based Training. PBT is an online evolutionary process which adapts internal rewards and hyperparameters and performs model selection by replacing under-performing agents with mutated versions of better agents. This joint optimisation of the agent policy using RL together with the optimisation of the RL procedure itself towards a high-level goal proves to be an effective and generally applicable strategy, and utilises the potential of combining learning and evolution in large scale learning systems."
 
-  - `post` <https://deepmind.com/blog/capture-the-flag>
+----
+>	"To make things even more interesting, we consider a variant of CTF in which the map layout changes from match to match. As a consequence, our agents are forced to acquire general strategies rather than memorising the map layout. Additionally, to level the playing field, our learning agents experience the world of CTF in a similar way to humans: they observe a stream of pixel images and issue actions through an emulated game controller."
+
+  - `post` <https://deepmind.com/blog/capture-the-flag-science>
+  - `video` <https://youtube.com/watch?v=NXkD77ioGi0> (demo)
   - `video` <https://youtube.com/watch?v=dltN4MxV1RI> (demo)
   - `video` <https://youtube.com/watch?v=MvFABFWPBrw>
+  - `paper` <https://science.sciencemag.org/content/364/6443/859> (Science)
 
 
 #### ["Mastering the Game of Go without Human Knowledge"](https://deepmind.com/documents/119/agz_unformatted_nature.pdf) Silver et al.

@@ -527,6 +527,7 @@
   [overview](https://youtube.com/watch?v=08jorbiyLwY) by Chris Re `video`  
   [overview](https://youtube.com/watch?v=HmocI2b5YfA) by Chris Re `video`  
   [overview](https://youtube.com/watch?v=pXoiYSQHf2I) by Stephen Bach `video`  
+  [overview](https://youtube.com/watch?v=G88jJquj6Wo) by Alex Ratner `audio`  
 
 ----
 

@@ -1,5 +1,4 @@
   Probabilistic programming is a mechanism for compactly and compositionally representing a large set of richly expressive generative models as well as performing general-purpose automatic algorithms to do inference over variables in such models.  
-  Higher-order probabilistic programming languages open up possibility of doing inference over generative models themselves. The goal is to find an efficient robust way to automatically produce and tune models based on training data and knowledge.  
 
 
   * [**introduction**](#introduction)
@@ -111,12 +110,12 @@
 
 ----
 
-  - [TensorFlow](https://www.tensorflow.org)
+  - [*TensorFlow*](https://www.tensorflow.org)
 
 	[TensorFlow Distributions](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/distributions) ([paper](https://arxiv.org/abs/1711.10604) by Dillon et al.)  
 	[BayesFlow](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/bayesflow)  
 
-  - [Edward](http://github.com/blei-lab/edward)
+  - [*Edward*](http://github.com/blei-lab/edward)
 
 	["Edward, and some motivations"](http://dustintran.com/blog/a-quick-update-edward-and-some-motivations/) by Dustin Tran  
 	["Deep Probabilistic Programming"](#deep-probabilistic-programming-tran-hoffman-saurous-brevdo-murphy-blei) by Tran et al. `paper` `summary`  
@@ -125,39 +124,39 @@
 
 	[sample models](http://edwardlib.org/iclr2017)
 
-  - [Stan](https://github.com/stan-dev)
+  - [*Stan*](https://github.com/stan-dev)
 
 	[overview](https://youtube.com/watch?v=6NXRCtWQNMg) by Bob Carpenter `video`  
 	[overview](https://vimeo.com/132156595) by Bob Carpenter `video`  
 
 	[Prophet](https://facebookincubator.github.io/prophet/) from Facebook
 
-  - [PyMC](https://github.com/pymc-devs)
+  - [*PyMC*](https://github.com/pymc-devs)
 
 	["Probabilistic Programming and Bayesian Methods for Hackers"](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/) by Cam Davidson-Pilon `book`
 
-  - [Pyro](https://github.com/uber/pyro)
+  - [*Pyro*](https://github.com/uber/pyro)
 
 	["Pyro: Deep Universal Probabilistic Programming"](https://arxiv.org/abs/1810.09538) by Bingham et al. `paper`
 
-  - [ProbTorch](https://github.com/probtorch/probtorch)
+  - [*ProbTorch*](https://github.com/probtorch/probtorch)
 
-  - [Infer.NET](https://github.com/dotnet/infer)
+  - [*Infer.NET*](https://github.com/dotnet/infer)
 
 	["Model-Based Machine Learning"](http://mbmlbook.com) by John Winn et al. `book`
 
-  - [WebPPL](https://github.com/probmods/webppl)
+  - [*WebPPL*](https://github.com/probmods/webppl)
 
-  - [BLOG](https://github.com/BayesianLogic)
+  - [*BLOG*](https://github.com/BayesianLogic)
 
 	[overview](https://youtube.com/watch?v=rdsPMCYMcZA) by Stuart Russell `video`
 
-  - [Venture](https://github.com/venture)
+  - [*Venture*](https://github.com/venture)
 
 	[overview](https://youtu.be/-8QMqSWU76Q?t=35m30s) by Vikash Mansinghka `video`  
 	[overview](https://youtu.be/Rte-y6ThwAQ?t=35m59s) by Vikash Mansinghka `video`  
 
-  - [BayesDB](http://probcomp.org/bayesdb)
+  - [*BayesDB*](http://probcomp.org/bayesdb)
 
 	[**BayesDB**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#probabilistic-database---bayesdb) project `summary`
 

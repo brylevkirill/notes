@@ -46,10 +46,11 @@ interesting older papers:
 
 ----
 #### ["Approximating CNNs with Bag-of-local-Features Models Works Surprisingly Well on ImageNet"](https://arxiv.org/abs/1904.00760) Brendel, Bethge
-  `generalization` `BagNet` `ICLR 2019`
+  `BagNet` `generalization` `ICLR 2018`
 >	"We introduce a high-performance DNN architecture on ImageNet whose decisions are considerably easier to explain. Our model, a simple variant of the ResNet-50 architecture called BagNet, classifies an image based on the occurrences of small local image features without taking into account their spatial ordering. This strategy is closely related to the bag-of-feature (BoF) models popular before the onset of deep learning and reaches a surprisingly high accuracy on ImageNet (87.6% top-5 for 32 x 32 px features and Alexnet performance for 16 x16 px features). The constraint on local features makes it straight-forward to analyse how exactly each part of the image influences the classification. Furthermore, the BagNets behave similar to state-of-the art deep neural networks such as VGG-16, ResNet-152 or DenseNet-169 in terms of feature sensitivity, error distribution and interactions between image parts. This suggests that the improvements of DNNs over previous bag-of-feature classifiers in the last few years is mostly achieved by better fine-tuning rather than by qualitatively different decision strategies."  
   - `post` <https://medium.com/bethgelab/neural-networks-seem-to-follow-a-puzzlingly-simple-strategy-to-classify-images-f4229317261f>
   - `post` <https://blog.evjang.com/2019/02/bagnet.html>
+  - `post` <https://habr.com/company/ods/blog/453788> `in russian`
 
 #### ["Excessive Invariance Causes Adversarial Vulnerability"](https://arxiv.org/abs/1811.00401) Jacobsen, Behrmann, Zemel, Bethge
   `generalization` `ICLR 2019`
@@ -140,7 +141,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `notes` <https://twitter.com/arimorcos/status/1001856542268952576>
 
 #### ["Self-Normalizing Neural Networks"](https://arxiv.org/abs/1706.02515) Klambauer, Unterthiner, Mayr, Hochreiter
-  `optimization` `SELU`
+  `SELU` `optimization`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#self-normalizing-neural-networks-klambauer-unterthiner-mayr-hochreiter>
 
 #### ["The Shattered Gradients Problem: If resnets are the answer, then what is the question?"](https://arxiv.org/abs/1702.08591) Balduzzi, Frean, Leary, Lewis, Ma, McWilliams
@@ -329,7 +330,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/Jh3D8Gi4N0I?t=1h9m52s> (Nekludov) `in russian`
 
 #### ["Operator Variational Inference"](https://arxiv.org/abs/1610.09033) Ranganath, Altosaar, Tran, Blei
-  `variational inference` `posterior approximation` `OPVI`
+  `variational inference` `posterior approximation`
 >	"Classically, variational inference uses the Kullback-Leibler divergence to define the optimization. Though this divergence has been widely used, the resultant posterior approximation can suffer from undesirable statistical properties. To address this, we reexamine variational inference from its roots as an optimization problem. We use operators, or functions of functions, to design variational objectives. As one example, we design a variational objective with a Langevin-Stein operator. We develop a black box algorithm, operator variational inference (OPVI), for optimizing any operator objective. Importantly, operators enable us to make explicit the statistical and computational tradeoffs for variational inference. We can characterize different properties of variational objectives, such as objectives that admit data subsampling - allowing inference to scale to massive data - as well as objectives that admit variational programs - a rich class of posterior approximations that does not require a tractable density."  
 >	"Operator objectives are built from an operator, a family of test functions, and a distance function. We outline the connection between operator objectives and existing divergences such as the KL divergence, and develop a new variational objective using the Langevin-Stein operator. In general, operator objectives produce new ways of posing variational inference. Given an operator objective, we develop a black box algorithm for optimizing it and show which operators allow scalable optimization through data subsampling. Further, unlike the popular evidence lower bound, not all operators explicitly depend on the approximating density. This permits flexible approximating families, called variational programs, where the distributional form is not tractable."  
   - `video` <https://youtu.be/mrj_hyH974o?t=46m37s> (Struminsky) `in russian`
@@ -362,7 +363,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <https://github.com/AMLab-Amsterdam/MNF_VBNN>
 
 #### ["Improving Variational Inference with Inverse Autoregressive Flow"](http://arxiv.org/abs/1606.04934) Kingma, Salimans, Jozefowicz, Chen, Sutskever, Welling
-  `variational inference` `posterior approximation` `normalizing flows` `IAF`
+  `IAF` `variational inference` `posterior approximation` `normalizing flows`
 >	"Most VAEs have so far been trained using crude approximate posteriors, where every latent variable is independent. Normalizing Flows have addressed this problem by conditioning each latent variable on the others before it in a chain, but this is computationally inefficient due to the introduced sequential dependencies. Inverse autoregressive flow, unlike previous work, allows us to parallelize the computation of rich approximate posteriors, and make them almost arbitrarily flexible."  
   - `post` <http://bjlkeng.github.io/posts/variational-autoencoders-with-inverse-autoregressive-flows>
   - `post` <http://akosiorek.github.io/ml/2018/04/03/norm_flows.html>
@@ -426,11 +427,11 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <https://github.com/tensorflow/probability/blob/master/tensorflow_probability/examples/latent_dirichlet_allocation.py>
 
 #### ["Backpropagation through the Void: Optimizing Control Variates for Black-box Gradient Estimation"](https://arxiv.org/abs/1711.00123) Grathwohl, Choi, Wu, Roeder, Duvenaud
-  `variables with discrete distributions` `non-differentiable loss` `RELAX`
+  `RELAX` `variables with discrete distributions` `non-differentiable loss`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#backpropagation-through-the-void-optimizing-control-variates-for-black-box-gradient-estimation-grathwohl-choi-wu-roeder-duvenaud>
 
 #### ["REBAR: Low-variance, unbiased gradient estimates for discrete latent variable models"](http://arxiv.org/abs/1703.07370) Tucker, Mnih, Maddison, Lawson, Sohl-Dickstein
-  `variables with discrete distributions` `REBAR`
+  `REBAR` `variables with discrete distributions`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#rebar-low-variance-unbiased-gradient-estimates-for-discrete-latent-variable-models-tucker-mnih-maddison-lawson-sohl-dickstein>
 
 #### ["The Concrete Distribution: A Continuous Relaxation of Discrete Random Variables"](http://arxiv.org/abs/1611.00712) Maddison, Mnih, Teh
@@ -451,7 +452,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1710.09508>
 
 #### ["Reparameterization Gradients through Acceptance-Rejection Sampling Algorithms"](http://arxiv.org/abs/1610.05683) Naesseth, Ruiz, Linderman, Blei
-  `variables with complex distributions` `RSVI`
+  `variables with complex distributions`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#reparameterization-gradients-through-acceptance-rejection-sampling-algorithms-naesseth-ruiz-linderman-blei>
 
 #### ["The Generalized Reparameterization Gradient"](http://arxiv.org/abs/1610.02287) Ruiz, Titsias, Blei
@@ -484,7 +485,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <https://github.com/andrewgordonwilson/bayesgan/>
 
 #### ["Bayesian Recurrent Neural Networks"](https://arxiv.org/abs/1704.02798) Fortunato, Blundell, Vinyals
-  `bayesian model` `uncertainty estimation` `Bayes by Backprop`
+  `Bayes by Backprop` `bayesian model` `uncertainty estimation`
   - `video` <https://vimeo.com/249562717> (Fortunato)
   - `code` <https://github.com/DeNeutoy/bayesian-rnn>
   - `code` <https://github.com/mirceamironenco/BayesianRecurrentNN>
@@ -539,11 +540,11 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 ----
 #### ["Hybrid Computing using a Neural Network with Dynamic External Memory"](http://rdcu.be/kXhV) Graves et al.
-  `compute and memory` `Differentiable Neural Computer`
+  `DNC` `compute and memory`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#hybrid-computing-using-a-neural-network-with-dynamic-external-memory-graves-et-al>
 
 #### ["Scaling Memory-Augmented Neural Networks with Sparse Reads and Writes"](http://arxiv.org/abs/1610.09027) Rae, Hunt, Harley, Danihelka, Senior, Wayne, Graves, Lillicrap
-  `compute and memory` `Differentiable Neural Computer`
+  `DNC` `compute and memory`
   - `video` <https://facebook.com/iclr.cc/videos/1713144705381255?t=1727> (Graves)
 
 #### ["Using Fast Weights to Attend to the Recent Past"](http://arxiv.org/abs/1610.06258) Ba, Hinton, Mnih, Leibo, Ionescu
@@ -632,7 +633,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `notes` <https://github.com/dennybritz/deeplearning-papernotes/blob/3718d181a0fed5ed806582822ed0dbde530122bf/notes/mixture-experts.md>
 
 #### ["Overcoming Catastrophic Forgetting in Neural Networks"](http://arxiv.org/abs/1612.00796) Kirkpatrick et al.
-  `continual learning` `catastrophic forgetting` `Elastic Weight Consolidation` `EWC`
+  `EWC` `continual learning` `catastrophic forgetting` `Elastic Weight Consolidation`
 >	"EWC adds regularization term to the loss which reflects a Gaussian prior for each parameter of neural network whose means are the old parameters. It uses the approximate Fisher information as a way of estimating the Hessian to assess importance, which implicitly sets the variance of each parameter prior."  
 >	"The quadratic penalty/penalties prevent the network from forgetting what it has learnt from previous data - you can think of the quadratic penalty as a summary of the information from the data it has seen so far."  
 >	"You can apply EWC at the level of learning tasks sequentially, or you can even apply it to on-line learning in a single task (in case you can't loop over the same minibatches several time like you do in SGD)."  
@@ -676,7 +677,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 ----
 #### ["Dynamic Routing Between Capsules"](https://arxiv.org/abs/1710.09829) Sabour, Frosst, Hinton
-  `information routing` `CapsNet`
+  `CapsNet` `information routing`
 >	"A capsule is a group of neurons whose activity vector represents the instantiation parameters of a specific type of entity such as an object or object part. We use the length of the activity vector to represent the probability that the entity exists and its orientation to represent the instantiation paramters. Active capsules at one level make predictions, via transformation matrices, for the instantiation parameters of higher-level capsules. When multiple predictions agree, a higher level capsule becomes active. We show that a discrimininatively trained, multi-layer capsule system achieves state-of-the-art performance on MNIST and is considerably better than a convolutional net at recognizing highly overlapping digits. To achieve these results we use an iterative routing-by-agreement mechanism: A lower-level capsule prefers to send its output to higher level capsules whose activity vectors have a big scalar product with the prediction coming from the lower-level capsule."  
 >	"Dynamic routing can be viewed as a parallel attention mechanism that allows each capsule at one level to attend to some active capsules at the level below and to ignore others. This should allow the model to recognize multiple objects in the image even if objects overlap. The routing-by-agreement should make it possible to use a prior about shape of objects to help segmentation and it should obviate the need to make higher-level segmentation decisions in the domain of pixels."  
 >	"For thirty years, the state-of-the-art in speech recognition used hidden Markov models with Gaussian mixtures as output distributions. These models were easy to learn on small computers, but they had a representational limitation that was ultimately fatal: The one-of-n representations they use are exponentially inefficient compared with, say, a recurrent neural network that uses distributed representations. To double the amount of information that an HMM can remember about the string it has generated so far, we need to square the number of hidden nodes. For a recurrent net we only need to double the number of hidden neurons.  
@@ -722,7 +723,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `paper` ["Optimizing Neural Networks that Generate Images"](http://www.cs.toronto.edu/~tijmen/tijmen_thesis.pdf) by Tieleman ([code](https://github.com/mrkulk/Unsupervised-Capsule-Network))
 
 #### ["Matrix Capsules with EM Routing"](https://openreview.net/forum?id=HJWLfGWRb) Hinton, Sabour, Frosst
-  `information routing` `CapsNet`
+  `CapsNet` `information routing`
   - `video` <https://youtu.be/hYt3FcJUf6w?t=50m38s> (Uziela)
   - `video` <https://youtube.com/watch?v=akq6PNnkKY8> (Ou)
   - `post` <https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/>
@@ -747,25 +748,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Understanding Synthetic Gradients and Decoupled Neural Interfaces"](http://arxiv.org/abs/1703.00522) Czarnecki, Swirszcz, Jaderberg, Osindero, Vinyals, Kavukcuoglu
   `information routing`
   - `video` <https://vimeo.com/238275152> (Swirszcz)
-
-----
-#### ["SMASH: One-Shot Model Architecture Search through HyperNetworks"](https://arxiv.org/abs/1708.05344) Brock, Lim, Ritchie, Weston
-  `architecture search` `SMASH`
->	"The architecture: at each training step, generate the schematics of a random NN architecture; feed the skeleton into the hypernetwork, which will directly spit out numbers for each neuron (as a convolutional hypernetwork it can handle big and small NNs the same way); with the fleshed out NN, train 1 minibatch on the image classification task as usual, and update its parameters; use that update as the error for the hypernetwork to train it to spit out weights for that skeleton which are slightly closer to what it was after 1 minibatch. After training the hypernetwork many times on many random NN architectures, its generated weights will be close to what training each random NN architecture from scratch would have been. Now you can simply generate lots of random NN architectures, fill them in, run them on a small validation set, and see their final performance without ever actually training them fully (which would be like 10,000x more expensive). So this runs on 1 GPU in a day or two versus papers like Zoph which used 800 GPUs for a few weeks. It’s amazing this works, and like synthetic gradients it troubles me a little because it implies that even complex highly sophisticated NNs are in some sense simple & predictable as their weights/error-gradients can be predicted by other NNs which are as small as linear layers or don’t even see the data, and thus are incredibly wasteful in both training & parameter size, implying a large hardware overhang."  
-  - `video` <https://youtube.com/watch?v=79tmPL9AL48>
-  - `code` <https://github.com/ajbrock/SMASH>
-
-#### ["Learning Transferable Architectures for Scalable Image Recognition"](https://arxiv.org/abs/1707.07012) Zoph, Vasudevan, Shlens, Le
-  `architecture search` `NASNet`
-  - `video` <https://vimeo.com/250399509> (Le)
-  - `post` <https://research.googleblog.com/2017/11/automl-for-large-scale-image.html>
-
-#### ["Neural Architecture Search with Reinforcement Learning"](http://arxiv.org/abs/1611.01578) Zoph, Le
-  `architecture search`
-  - `post` <https://research.googleblog.com/2017/05/using-machine-learning-to-explore.html>
-  - `video` <https://youtube.com/watch?v=XDtFXBYpl1w> (Le)
-  - `video` <https://facebook.com/iclr.cc/videos/1713144705381255?t=4111> (Zoph)
-  - `notes` <https://blog.acolyer.org/2017/05/10/neural-architecture-search-with-reinforcement-learning/>
 
 
 
@@ -1010,7 +992,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <https://github.com/google-research/disentanglement_lib>
 
 #### ["Neural Scene Representation and Rendering"](https://deepmind.com/documents/211/Neural_Scene_Representation_and_Rendering_preprint.pdf) Eslami et al.
-  `concept learning` `GQN`
+  `GQN` `concept learning`
 >	"Generative Query Network, a framework within which machines learn to represent scenes using only their own sensors. The GQN takes as input images of a scene taken from different viewpoints, constructs an internal representation, and uses this representation to predict the appearance of that scene from previously unobserved viewpoints. The GQN demonstrates representation learning without human labels or domain knowledge, paving the way toward machines that autonomously learn to understand the world around them."  
 >	"Classical neural approaches to this learning problem - e.g., autoencoding and density models - are required to capture only the distribution of observed images, and there is no explicit mechanism to encourage learning of how different views of the same 3D scene relate to one another. The expectation is that statistical compression principles will be sufficient to enable networks to discover the 3D structure of the environment; however, in practice, they fall short of achieving this kind of meaningful representation and instead focus on regularities of colors and patches in the image space."  
   - `video` <https://youtube.com/watch?v=G-kWNQJ4idw> (demo)
@@ -1083,7 +1065,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 ----
 #### ["Synthesizing Programs for Images using Reinforced Adversarial Learning"](https://arxiv.org/abs/1804.01118) Ganin, Kulkarni, Babuschkin, Eslami, Vinyals
-  `learning disentangled representation` `SPIRAL`
+  `SPIRAL` `learning disentangled representation`
 >	"Adversarially trained agent that generates a program which is executed by a graphics engine to interpret and sample images. The goal of this agent is to fool a discriminator network that distinguishes between real and rendered data, trained with a distributed reinforcement learning setup without any supervision. To the best of our knowledge, this is the first demonstration of an end-to-end, unsupervised and adversarial inverse graphics agent on challenging real world and synthetic 3D datasets."  
 >	"Trust discriminator to guide learning by using its score as reward for IMPALA agent instead of propagating gradients as in typical GAN."  
 >	"Goal is to achieve better generalisation through use of tools in grounded environment."  
@@ -1216,7 +1198,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 ----
 #### ["Autoregressive Quantile Networks for Generative Modeling"](http://arxiv.org/abs/1806.05575) Ostrovski, Dabney, Munos
-  `alternative to KL divergence` `AIQN` `PixelIQN` `AIQN-VAE`
+  `AIQN` `PixelIQN` `AIQN-VAE` `alternative to KL divergence`
 >	"Most existing generative models for images belong to one of two classes. The first are likelihood-based models, trained with an element-wise KL reconstruction loss, which, while perceptually meaningless, provides robust optimization properties and high sample diversity. The second are GANs, trained based on a discriminator loss, typically better aligned with a perceptual metric and enabling the generator to produce realistic, globally consistent samples. Their advantages come at the cost of a harder optimization problem, high parameter sensitivity, and most importantly, a tendency to collapse modes of the data distribution."  
 >	"AIQNs are a new, fundamentally different, technique for generative modeling. By using a quantile regression loss instead of KL divergence, they combine some of the best properties of the two model classes. By their nature, they preserve modes of the learned distribution, while producing perceptually appealing high-quality samples. The inevitable approximation trade-offs a generative model makes when constrained by capacity or insufficient training can vary significantly depending on the loss used. We argue that the proposed quantile regression loss aligns more effectively with a given metric and therefore makes subjectively more advantageous trade-offs."  
 >	"IQN, computationally cheap and technically simple, can be readily applied to existing architectures, PixelCNN and VAE, improving robustness and sampling quality of the underlying model."  
@@ -1387,6 +1369,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"Two evaluation metrics were proposed to quantitatively assess the performance of GANs. Both assume access to a pre-trained classifier. Inception Score is based on the fact that a good model should generate samples for which, when evaluated by the classifier, the class distribution has low entropy. At the same time, it should produce diverse samples covering all classes. In contrast, Frechet Inception Distance is computed by considering the difference in embedding of true and fake data. Assuming that the coding layer follows a multivariate Gaussian distribution, the distance between the distributions is reduced to the Frechet distance between the corresponding Gaussians."  
 >	"FID cannot detect overfitting to the training data set, and an algorithm that just remembers all the training examples would perform very well. Finally, FID can probably be “fooled” by artifacts that are not detected by the embedding network."  
 >	"We introduce a series of tasks of increasing difficulty for which undisputed measures, such as precision and recall, can be approximately computed."  
+  - `code` <https://github.com/google/compare_gan>
 
 ----
 #### ["Theoretical Limitations of Encoder-Decoder GAN Architectures"](https://arxiv.org/abs/1711.02651) Arora, Risteski, Zhang
@@ -1463,11 +1446,11 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=wPKGIIy4rtU> (Bousquet)
 
 #### ["Improved Training of Wasserstein GANs"](https://arxiv.org/abs/1704.00028) Gulrajani, Ahmed, Arjovsky, Dumoulin, Courville
-  `GAN objective` `WGAN-GP`
+  `WGAN-GP` `GAN objective`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#improved-training-of-wasserstein-gans-gulrajani-ahmed-arjovsky-dumoulin-courville>
 
 #### ["Wasserstein GAN"](https://arxiv.org/abs/1701.07875) Arjovsky, Chintala, Bottou
-  `GAN objective` `WGAN`
+  `WGAN` `GAN objective`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#wasserstein-gan-arjovsky-chintala-bottou>
 
 #### ["f-GAN: Training Generative Neural Samplers using Variational Divergence Minimization"](http://arxiv.org/abs/1606.00709) Nowozin, Cseke, Tomioka
@@ -1539,22 +1522,27 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/xfyK03MEZ9Q?t=5h21m15s> (Bagnell)
 
 ----
+#### ["Training Language GANs from Scratch"](https://arxiv.org/abs/1905.09922) dAutume, Rosca, Rae, Mohamed
+  `GAN applications` `text generation`
+>	"GANs enjoy great success at image generation have proven difficult to train in the domain of natural language. Challenges with gradient estimation, optimization instability, and mode collapse have lead practitioners to resort to maximum likelihood pre-training, followed by small amounts of adversarial fine-tuning. The benefits of GAN fine-tuning for language generation are unclear, as the resulting models produce comparable or worse samples than traditional language models. We show it is in fact possible to train a language GAN from scratch - without maximum likelihood pre-training. We combine existing techniques such as large batch sizes, dense rewards and discriminator regularization to stabilize and improve language GANs."  
+
 #### ["A Style-Based Generator Architecture for Generative Adversarial Networks"](https://arxiv.org/abs/1812.04948) Karras, Laine, Aila
-  `GAN applications` `image synthesis` `StyleGAN`
+  `StyleGAN` `GAN applications` `image generation`
 >	"We propose an alternative generator architecture for generative adversarial networks, borrowing from style transfer literature. The new architecture leads to an automatically learned, unsupervised separation of high-level attributes (e.g., pose and identity when trained on human faces) and stochastic variation in the generated images (e.g., freckles, hair), and it enables intuitive, scale-specific control of the synthesis."  
+  - `video` <https://youtube.com/watch?v=4WL5EmYi_rA>
   - `post` <https://www.gwern.net/Faces>
 
 #### ["Self-Attention Generative Adversarial Networks"](https://arxiv.org/abs/1805.08318) Zhang, Goodfellow, Metaxas, Odena
-  `GAN applications` `image synthesis` `SAGAN`
+  `SAGAN` `GAN applications` `image generation`
 >	"SAGAN allows attention-driven, long-range dependency modeling for image generation tasks. Traditional convolutional GANs generate high-resolution details as a function of only spatially local points in lower-resolution feature maps. In SAGAN, details can be generated using cues from all feature locations. Moreover, the discriminator can check that highly detailed features in distant portions of the image are consistent with each other."  
   - `video` <https://youtube.com/watch?v=FdeHlC4QiqA> (Chen)
 
 #### ["Synthesizing Programs for Images using Reinforced Adversarial Learning"](https://arxiv.org/abs/1804.01118) Ganin, Kulkarni, Babuschkin, Eslami, Vinyals
-  `GAN applications` `image synthesis` `SPIRAL`
+  `SPIRAL` `GAN applications` `image generation`
   - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#synthesizing-programs-for-images-using-reinforced-adversarial-learning-ganin-kulkarni-babuschkin-eslami-vinyals>
 
 #### ["High-Resolution Image Synthesis and Semantic Manipulation with Conditional GANs"](https://arxiv.org/abs/1711.11585) Wang, Liu, Zhu, Tao, Kautz, Catanzaro
-  `GAN applications` `image synthesis`
+  `GAN applications` `image generation`
   - <https://tcwang0509.github.io/pix2pixHD/> (demo)
   - `code` <https://github.com/NVIDIA/pix2pixHD>
 
@@ -1581,7 +1569,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <https://github.com/wiseodd/generative-models/tree/master/GAN/dual_gan>
 
 #### ["Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks"](https://arxiv.org/abs/1703.10593) Zhu, Park, Isola, Efros
-  `GAN applications` `domain translation` `CycleGAN`
+  `CycleGAN` `GAN applications` `domain translation`
   - <https://junyanz.github.io/CycleGAN/> (demo)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1703.10593>
   - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/research/cycle_gan.py>
@@ -1786,6 +1774,11 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	Value prediction. The findings presented identify two key issues. First, while the value network successfully solves the supervised learning task it is trained on, it does not accurately model the “true” value function. Second, employing the value network as a baseline does decrease the gradient variance (compared to the trivial (“zero”) baseline). However, this decrease is rather marginal compared to the variance reduction offered by the “true” value function, but employing a value network dramatically increases agent’s performance. These phenomena motivate us to ask: is this failure in modeling the true value function inevitable? And what is the real role of the value network in policy gradient methods?  
 >	Optimization landscape. The optimization landscape induced by modern policy gradient algorithms is often not reflective of the underlying true reward landscape. In fact, in the sample-regime where policy gradient methods operate, the true reward landscape is noisy and the surrogate reward is often misleading. We thus need a better understanding of why the current methods succeed despite these issues, and, more broadly, how to navigate the true reward landscape more accurately.  
 >	Trust region approximation. Our findings indicate that there may be a number of reasons why policies need to be locally similar. These include noisy gradient estimates, poor baseline functions and misalignment of the surrogate landscape. Not only is our theory surrounding trust region optimization oblivious to these factors, it is also notoriously difficult to translate this theory into efficient algorithms. Deep policy gradient methods thus resort to relaxations of trust region constraints, which makes their performance difficult to properly understand and analyze. Therefore, we need either techniques that enforce trust regions more strictly, or a rigorous theory of trust region relaxations."  
+
+#### ["Playing Atari with Six Neurons"](https://arxiv.org/abs/1806.01363) Cuccu, Togelius, Cudre-Mauroux
+>	"We propose a new method for learning policies and compact state representations separately but simultaneously for policy approximation in reinforcement learning. State representations are generated by an encoder based on two novel algorithms: Increasing Dictionary Vector Quantization makes the encoder capable of growing its dictionary size over time, to address new observations as they appear in an open-ended online-learning context; Direct Residuals Sparse Coding encodes observations by disregarding reconstruction error minimization, and aiming instead for highest information inclusion. The encoder autonomously selects observations online to train on, in order to maximize code sparsity. As the dictionary size increases, the encoder produces increasingly larger inputs for the neural network: this is addressed by a variation of the Exponential Natural Evolution Strategies algorithm which adapts its probability distribution dimensionality along the run. We test our system on a selection of Atari games using tiny neural networks of only 6 to 18 neurons (depending on the game’s controls). These are still capable of achieving results comparable—and occasionally superior—to state-of-the-art techniques which use two orders of magnitude more neurons."  
+  - `notes` <https://towardsdatascience.com/playing-atari-with-6-neurons-open-source-code-b94c764452ac>
+  - `code` <https://github.com/giuse/DNE/tree/six_neurons>
 
 #### ["Simple Random Search Provides a Competitive Approach to Reinforcement Learning"](https://arxiv.org/abs/1803.07055) Mania, Guy, Recht
 >	"We attempted to find the simplest algorithm for model-free RL that performs well on the continuous control benchmarks used in the RL literature. We demonstrated that with a few algorithmic augmentations, basic random search could be used to train linear policies that achieve state-of-theart sample efficiency on the MuJoCo locomotion tasks. We showed that linear policies match the performance of complex neural network policies and can be found through a simple algorithm."  
@@ -2162,7 +2155,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h22m44s> (Sigaud)
 
 #### ["IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures"](https://arxiv.org/abs/1802.01561) Espeholt, Soyer, Munos, Simonyan, Mnih, Ward, Doron, Firoiu, Harley, Dunning, Legg, Kavukcuoglu
-  `IMPALA` `V-Trace` `policy gradient` `on-policy + off-policy` `multi-task`
+  `IMPALA` `policy gradient` `on-policy + off-policy` `multi-task`
 >	"Authors achieve stable learning at high throughput by combining decoupled acting and learning with a novel off-policy correction method called V-trace, which was critical for achieving learning stability."  
 >	"Synchronous batch learning is more robust to hyperparameters than asynchronous SGD."  
 >	"Deep ResNets finally outperform 3 layer ConvNets on DMLab-30 - Atari was too simple."  
@@ -2255,23 +2248,9 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 [**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---model-based-methods)
 
 ----
-#### ["Unsupervised Predictive Memory in Goal-Directed Agent"](https://arxiv.org/abs/1803.10760) Wayne et al.
-  `partial observability` `MERLIN`
->	"We demonstrate that contemporary RL algorithms struggle to solve simple tasks when enough information is concealed from the sensors of the agent, a property called "partial observability". An obvious requirement for handling partially observed tasks is access to extensive memory, but we show memory is not enough; it is critical that the right information be stored in the right format. We develop a model, the Memory, RL, and Inference Network, in which memory formation is guided by a process of predictive modeling."  
-  - `video` <https://youtu.be/9z3_tJAu7MQ?t=22m45s> (Wayne)
-  - `video` <https://slideslive.com/38915863/learning-models-for-representations-and-planning> (7:00) (Lillicrap)
-  - `video` <https://youtu.be/aV4wz7FAXmo?t=1h18m26s> (Shvechikov)
-
-#### ["Neural Map: Structured Memory for Deep Reinforcement Learning"](https://arxiv.org/abs/1702.08360) Parisotto, Salakhutdinov
-  `partial observability`
->	"Spatially structured 2D memory to learn to store arbitrary information about the environment over long time lags."  
->	"Memory was given a 2D structure in order to resemble a spatial map to address specific problems such as 2D or 3D navigation."  
->	"Size and computational cost doesn't grow with time horizon of environment."  
-  - `video` <https://youtube.com/watch?v=cUW99V5x7fE> (Salakhutdinov)
-  - `video` <https://vimeo.com/252185932> (Salakhutdinov)
-  - `video` <https://youtu.be/x_kK4Pc4qow?t=18m3s> (Salakhutdinov)
-  - `video` <https://youtu.be/bTWlFiF4Kns?t=6m55s> (Salakhutdinov)
-  - `video` <https://yadi.sk/i/pMdw-_uI3Gke7Z> (Shvechikov) `in russian`
+#### ["Woulda, Coulda, Shoulda: Counterfactually-Guided Policy Search"](https://arxiv.org/abs/1811.06272) Buesing, Weber, Zwols, Racaniere, Guez, Lespiau, Heess
+  `CF-GPS` `partial observability` `counterfactual inference` `ICLR 2019`
+  - <https://github.com/brylevkirill/notes/blob/master/Causal%20Inference.md#woulda-coulda-shoulda-counterfactually-guided-policy-search-buesing-weber-zwols-racaniere-guez-lespiau-heess>
 
 ----
 #### ["Composable Planning with Attributes"](https://arxiv.org/abs/1803.00512) Zhang, Lerer, Sukhbaatar, Fergus, Szlam
@@ -2320,11 +2299,11 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"We also develop a special instance of this framework which reduces the update of non-reactive policies to model-based optimal control using learned local models, and provides a theoretically sound way of unifying model-free and model-based RL approaches with unknown dynamics. We demonstrate the efficacy of our approach on various continuous control Markov Decision Processes."  
 
 #### ["ExpIt-OOS: Towards Learning from Planning in Imperfect Information Games"](https://arxiv.org/abs/1808.10120) Kitchen, Benedetti
-  `learning from planning` `using available environment model` `expert iteration` `ExpIt-OOS`
+  `ExpIt-OOS` `learning from planning` `using available environment model` `expert iteration`
 >	"A novel approach to playing imperfect information games within the Expert Iteration framework and inspired by AlphaZero. We use Online Outcome Sampling, an online search algorithm for imperfect information games in place of MCTS. While training online, our neural strategy is used to improve the accuracy of playouts in OOS, allowing a learning and planning feedback loop for imperfect information games."  
 
 #### ["Thinking Fast and Slow with Deep Learning and Tree Search"](https://arxiv.org/abs/1705.08439) Anthony, Tian, Barber
-  `learning from planning` `using available environment model` `expert iteration` `ExIt`
+  `ExIt` `learning from planning` `using available environment model` `expert iteration`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#thinking-fast-and-slow-with-deep-learning-and-tree-search-anthony-tian-barber>
 
 #### ["Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm"](https://arxiv.org/abs/1712.01815) Silver et al.
@@ -2360,14 +2339,14 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://facebook.com/icml.imls/videos/429607650887089?t=1421> (Weber)
 
 #### ["Learning and Querying Fast Generative Models for Reinforcement Learning"](https://arxiv.org/abs/1802.03006) Buesing, Weber, Racaniere, Eslami, Rezende, Reichert, Viola, Besse, Gregor, Hassabis, Wierstra
-  `learning to plan` `using available environment model` `I2A`
+  `I2A` `learning to plan` `using available environment model`
 >	"We have shown that state-space models directly learned from raw pixel observations are good candidates for model-based RL: 1) they are powerful enough to capture complex environment dynamics, exhibiting similar accuracy to frame-auto-regressive models; 2) they allow for computationally efficient Monte-Carlo rollouts; 3) their learned dynamic state-representations are excellent features for evaluating and anticipating future outcomes compared to raw pixels. This enabled Imagination Augemented Agents to outperform strong model-free baselines on MS PACMAN."  
 >	"On a conceptual level, we present (to the best of our knowledge) the first results on what we termed learning-to-query. We show learning a rollout policy by backpropagating policy gradients leads to consistent (if modest) improvements."  
 >	"We address, the Imagination-Augmented Agent framework, the main challenge posed by model-based RL: training accurate, computationally efficient models on more complex domains and using them with agents. First, we consider computationally efficient state-space environment models that make predictions at a higher level of abstraction, both spatially and temporally, than at the level of raw pixel observations. Such models substantially reduce the amount of computation required to perform rollouts, as future states can be represented much more compactly. Second, in order to increase model accuracy, we examine the benefits of explicitly modeling uncertainty in the transitions between these abstract states. Finally, we explore different strategies of learning rollout policies that define the interface between agent and environment model: We consider the possibility of learning to query the internal model, for guiding the Monte-Carlo rollouts of the model towards informative outcomes."  
 >	"Here, we adopted the I2A assumption of having access to a pre-trained envronment model. In future work, we plan to drop this assumption and jointly learn the model and the agent."  
 
 #### ["Imagination-Augmented Agents for Deep Reinforcement Learning"](https://arxiv.org/abs/1707.06203) Weber et al.
-  `learning to plan` `using available environment model` `I2A`
+  `I2A` `learning to plan` `using available environment model`
 >	"In contrast to most existing model-based reinforcement learning and planning methods, which prescribe how a model should be used to arrive at a policy, I2As learn to interpret predictions from an imperfect learned environment model to construct implicit plans in arbitrary ways, by using predictions as additional context in deep policy networks."  
 >	"I2A's policy and value functions are informed by the outputs of two separate pathways: 1) a model-free path, that tries to estimate the value and which action to take directly from the latest observation ot using a CNN; and 2) a model-based path, designed in the following way. The I2A is endowed with a pretrained, fixed environment model. At every time, conditioned on past observations and actions, it uses the model to simulate possible futures (Monte-Carlo rollouts) represented by imagnations over some horizon, under a rollout policy. It then extracts informative features from the rollout imaginations, and uses these, together with the results from the model-free path, to compute policy and value functions. It has been shown that I2As are robust to model imperfections: they learn to interpret imaginations produced from the internal models in order to inform decision making as part of standard return maximization."  
   - `post` <https://deepmind.com/blog/agents-imagine-and-plan/>
@@ -2384,7 +2363,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"learns an adaptive optimization policy for one-shot decision-making in contextual bandit problems"  
 
 #### ["Self-Correcting Models for Model-Based Reinforcement Learning"](https://arxiv.org/abs/1612.06018) Talvitie
-  `learning to plan` `using available environment model` `Hallucinated DAgger-MC`
+  `Hallucinated DAgger-MC` `learning to plan` `using available environment model`
 >	"When an agent cannot represent a perfectly accurate model of its environment’s dynamics, model-based reinforcement learning can fail catastrophically. Planning involves composing the predictions of the model; when flawed predictions are composed, even minor errors can compound and render the model useless for planning. Hallucinated Replay trains the model to “correct” itself when it produces errors, substantially improving MBRL with flawed models. This paper theoretically analyzes this approach, illuminates settings in which it is likely to be effective or ineffective, and presents a novel error bound, showing that a model’s ability to self-correct is more tightly related to MBRL performance than one-step prediction error."  
 >	"Model-free methods are generally robust to representational limitations that prevent convergence to optimal behavior. In contrast, when the model representation is insufficient to perfectly capture the environment’s dynamics (even in seemingly innocuous ways), or when the planner produces suboptimal plans, MBRL methods can fail catastrophically."  
 >	"This paper presents novel error bounds that reveal the theoretical principles that underlie the empirical success of Hallucinated Replay. It presents negative results that identify settings where hallucinated training would be ineffective and identifies a case where it yields a tighter performance bound than standard training. This result allows the derivation of a novel MBRL algorithm with theoretical performance guarantees that are robust to model class limitations."  
@@ -2392,7 +2371,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 ----
 #### ["Temporal Difference Models: Model-Free Deep RL for Model-Based Control"](https://arxiv.org/abs/1802.09081) Pong, Gu, Dalal, Levine
-  `learning to plan` `learning abstract environment model` `TDM`
+  `TDM` `learning to plan` `learning abstract environment model`
 >	"A family of goal-conditioned value functions that can be trained with model-free learning and used for model-based control. TDMs combine the benefits of model-free and model-based RL: they leverage the rich information in state transitions to learn very efficiently, while still attaining asymptotic performance that exceeds that of direct model-based RL methods."  
   - `post` <https://bair.berkeley.edu/blog/2018/04/26/tdm>
   - `video` <https://youtube.com/watch?v=j-3nUkzMFA8> (Gu)
@@ -2405,7 +2384,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <http://github.com/gkahn13/gcg>
 
 #### ["Learning Model-based Planning from Scratch"](https://arxiv.org/abs/1707.06170) Pascanu, Li, Vinyals, Heess, Buesing, Racaniere, Reichert, Weber, Wierstra, Battaglia
-  `learning to plan` `learning abstract environment model` `IBP`
+  `IBP` `learning to plan` `learning abstract environment model`
 >	"- A fully learnable model-based planning agent for continuous control.  
 >	- An agent that learns to construct a plan via model-based imagination.  
 >	- An agent which uses its model of the environment in two ways: for imagination-based planning and gradient-based policy optimization.  
@@ -2418,7 +2397,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `paper` ["Interaction Networks for Learning about Objects, Relations and Physics"](http://arxiv.org/abs/1612.00222) by Battaglia et al.
 
 #### ["Value Prediction Network"](https://arxiv.org/abs/1707.03497) Oh, Singh, Lee
-  `learning to plan` `learning abstract environment model` `VPN`
+  `VPN` `learning to plan` `learning abstract environment model`
 >	"VPN combines model-based RL (i.e., learning the dynamics of an abstract state space sufficient for computing future rewards and values) and model-free RL (i.e., mapping the learned abstract states to rewards and values) in a unified framework. In order to train a VPN, we propose a combination of temporal-difference search (TD search) and n-step Q-learning. In brief, VPNs learn to predict values via Q-learning and rewards via supervised learning. At the same time, VPNs perform lookahead planning to choose actions and compute bootstrapped target Q-values."  
 >	"Extends the Predictron model from policy evaluation to optimal control."  
 >	"Uses the model to construct a look-ahead tree only when constructing bootstrap targets and selecting actions, similarly to TD-search. Crucially, the model is not embedded in a planning algorithm during optimisation."  
@@ -2478,7 +2457,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 ----
 #### ["Model Based Reinforcement Learning for Atari"](https://arxiv.org/abs/1903.00374) Kaiser et al.
-  `learning to simulate` `learning environment model` `video prediction` `SimPLe`
+  `SimPLe` `learning to simulate` `learning environment model` `video prediction`
 >	"Simulated Policy Learning, a complete model-based deep RL algorithm based on video prediction models."  
 >	"SimPLe consists of alternating between learning a model, and then using this model to optimize a policy by using model-free reinforcement learning within the model. Variants of this basic algorithm have been proposed in a number of prior works, starting from Dyna."  
 >	"SimPLe can learn to play many of the games with just 100K transitions, corresponding to 2 hours of play time. In many cases, the number of samples required for prior methods to learn to reach the same reward value is several times larger."  
@@ -2488,13 +2467,51 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `notes` <https://medium.com/arxiv-bytes/summary-simple-ae74ae934c4a>
 
 #### ["Learning Latent Dynamics for Planning from Pixels"](https://arxiv.org/abs/1811.04551) Hafner et al.
-  `learning to simulate` `learning environment model` `video prediction` `PlaNet`
+  `PlaNet` `learning to simulate` `learning environment model` `video prediction`
 >	"Deep Planning Network is a purely model-based agent that learns the environment dynamics from images and chooses actions through fast online planning in latent space. To achieve high performance, the dynamics model must accurately predict the rewards ahead for multiple time steps. We approach this using a latent dynamics model with both deterministic and stochastic transition components. Moreover, we  propose  a multi-step variational inference objective that we name latent overshooting. Using only pixel observations, our agent solves continuous control tasks with contact dynamics, partial observability, and sparse rewards, which exceed the difficulty of tasks that were previously solved by planning with learned models. PlaNet uses substantially fewer episodes and reaches final performance close to and sometimes higher than strong model-free algorithms."  
   - <https://planetrl.github.io>
   - `post` <https://ai.googleblog.com/2019/02/introducing-planet-deep-planning.html>
   - `video` <https://youtube.com/watch?v=C7Dmu0GtrSw>
   - `video` <https://slideslive.com/38915863/learning-models-for-representations-and-planning> (14:20) (Lillicrap)
   - `code` <https://github.com/google-research/planet>
+
+#### ["Temporal Difference Variational Auto-Encoder"](https://arxiv.org/abs/1806.03107) Gregor, Papamakarios, Besse, Buesing, Weber
+  `TD-VAE` `partial observability` `learning to simulate` `learning environment model` `video prediction` `no explicit planning`
+>	"To act and plan in complex environments, we posit that agents should have a mental simulator of the world with three characteristics: (a) it should build an abstract state representing the condition of the world; (b) it should form a belief which represents uncertainty on the world; (c) it should go beyond simple step-by-step simulation, and exhibit temporal abstraction. Motivated by the absence of a model satisfying all these requirements, we propose TD-VAE, a generative sequence model that learns representations containing explicit beliefs about states several steps into the future, and that can be rolled out directly without single-step transitions. TD-VAE is trained on pairs of temporally separated time points, using an analogue of temporal difference learning used in reinforcement learning."  
+>	"The model should learn an abstract state representation of the data and be capable of making predictions at the state level, not just the observation level."  
+>	"The model should learn a belief state, i.e. a deterministic, coded representation of the filtering posterior of the state given all the observations up to a given time. A belief state contains all the information an agent has about the state of the world and thus about how to act optimally."  
+>	"The model should exhibit temporal abstraction, both by making ‘jumpy’ predictions (predictions several time steps into the future), and by being able to learn from temporally separated time points without backpropagating through the entire time interval."  
+>	"We first develop TD-VAE in the sequential, non-jumpy case, by using a modified evidence lower bound (ELBO) for stochastic state space models (Krishnan et al., 2015; Fraccaro et al., 2016; Buesing et al., 2018) which relies on jointly training a filtering posterior and a local smoothing posterior."  
+>	"Beyond planning, there are several other reasons that motivate modeling the future directly. First, training signal coming from the future can be stronger than small changes happening between time steps. Second, the behavior of the model should ideally be independent from the underlying temporal sub-sampling of the data, if the latter is an arbitrary choice. Third, jumpy predictions can be computationally efficient; when predicting several steps into the future, there may be some intervals where the prediction is either easy (e.g. a ball moving straight), or the prediction is complex but does not affect later time steps — which Neitz et al. (2018) call inconsequential chaos."  
+>	"In reinforcement learnin, to estimate Vt1 at time t1, one does not usually wait to get all the rewards to compute Rt1. Instead, one uses an estimate at some future time t2 as a bootstrap to estimate Vt1 (temporal difference). In our case, the model expresses a belief pB(zt|bt) about possible future states instead of the sum of discounted rewards. The model trains the belief pB(zt1|bt1) at time t1 using belief pB(zt2|bt2) at some time t2 in the future. It accomplishes this by (variationally) auto-encoding a sample zt2 of the future state into a sample zt1, using the approximate posterior distribution q(zt1|zt2,bt1,bt2) and the decoding distribution p(zt2|zt1). This auto-encoding mapping translates between states at t1 and t2, forcing beliefs at the two time steps to be consistent. Sample zt1 forms the target for training the belief pB(zt1|bt1), which appears as a prior distribution over zt1."  
+  - `notes` <https://www.shortscience.org/paper?bibtexKey=journals/corr/abs-1806-03107>
+  - `code` <https://github.com/xqding/TD-VAE>
+
+#### ["Deep Reinforcement Learning in a Handful of Trials using Probabilistic Dynamics Models"](https://arxiv.org/abs/1805.12114) Chua, Calandra, McAllister, Levine
+  `PETS` `learning to simulate` `learning environment model` `NIPS 2018`
+>	"Model-based reinforcement learning algorithms can attain excellent sample efficiency, but often lag behind the best model-free algorithms in terms of asymptotic performance. This is especially true with high-capacity parametric function approximators, such as deep networks. In this paper, we study how to bridge this gap, by employing uncertainty-aware dynamics models."  
+>	"Probabilistic ensembles with trajectory sampling algorithm combines uncertainty-aware deep network dynamics models with sampling-based uncertainty propagation. Our comparison to state-of-the-art model-based and model-free deep RL algorithms shows that our approach matches the asymptotic performance of model-free algorithms on several challenging benchmark tasks, while requiring significantly fewer samples (e.g., 8 and 125 times fewer samples than Soft Actor Critic and Proximal Policy Optimization respectively on the half-cheetah task)."  
+>	"dynamics model + trajectory propagation + planning via Model Predictive Control"  
+  - `video` <https://sites.google.com/view/drl-in-a-handful-of-trials>
+  - `video` <https://slideslive.com/38915863/learning-models-for-representations-and-planning> (12:17) (Lillicrap)
+
+#### ["Unsupervised Predictive Memory in Goal-Directed Agent"](https://arxiv.org/abs/1803.10760) Wayne et al.
+  `MERLIN` `partial observability` `learning environment model` `no explicit planning`
+>	"We demonstrate that contemporary RL algorithms struggle to solve simple tasks when enough information is concealed from the sensors of the agent, a property called "partial observability". An obvious requirement for handling partially observed tasks is access to extensive memory, but we show memory is not enough; it is critical that the right information be stored in the right format. We develop a model, the Memory, RL, and Inference Network, in which memory formation is guided by a process of predictive modeling."  
+>	"Perception and memory formation are guided by a process of predictive modeling and compression, less by trial and error task success. 200 dimensional z captures relevant features from approximately 10^4 sensory dimensions."  
+>	"Lessens the need for end-to-end gradient computation. A temporal credit assignment windows of 1.3 seconds is used to solve memory tasks of 6 minutes."  
+>	"Can make use of information acquired without associated reward, exhibiting properties of latent learning."  
+>	"Provides a conceptual but functional model of the interaction of multiple neural systems in a complete, goal-directed cognitive architecture."  
+  - `video` <https://youtube.com/watch?v=9z3_tJAu7MQ> (Wayne)
+  - `video` <https://slideslive.com/38915863/learning-models-for-representations-and-planning> (7:00) (Lillicrap)
+  - `video` <https://youtu.be/aV4wz7FAXmo?t=1h18m26s> (Shvechikov)
+  - `paper` ["Hybrid Computing using a Neural Network with Dynamic External Memory"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#hybrid-computing-using-a-neural-network-with-dynamic-external-memory-graves-et-al) by Graves et al. `summary`
+
+#### ["Model-Ensemble Trust-Region Policy Optimization"](https://arxiv.org/abs/1802.10592) Kurutach, Clavera, Duan, Tamar, Abbeel
+  `ME-TRPO` `learning to simulate` `learning environment model` `ICLR 2018`
+>	"We analyze the behavior of vanilla model-based reinforcement learning methods when deep neural networks are used to learn both the model and the policy, and show that the learned policy tends to exploit regions where insufficient data is available for the model to be learned, causing instability in training. To overcome this issue, we propose to use an ensemble of models to maintain the model uncertainty and regularize the learning process. We further show that the use of likelihood ratio derivatives yields much more stable learning than backpropagation through time. Altogether, our approach Model-Ensemble Trust-Region Policy Optimization significantly reduces the sample complexity compared to model-free deep RL methods on challenging continuous control benchmark tasks."  
+>	"The dynamics model maintains uncertainty due to limited data through an ensemble of models. The algorithm alternates among adding transitions to a replay buffer, optimizing the dynamics models given the buffer, and optimizing the policy given the dynamics models in Dyna's style. This algorithm significantly helps alleviating the model bias problem in model-based RL, when the policy exploits the error in the dynamics model. In many Mujoco domains, we show that it can achieve the same final performance as model-free approaches while using 100x less data."  
+  - `code` <https://github.com/thanard/me-trpo>
 
 #### ["Stochastic Variational Video Prediction"](https://arxiv.org/abs/1710.11252) Babaeizadeh, Finn, Erhan, Campbell, Levine
   `learning to simulate` `learning environment model` `video prediction`
@@ -2509,6 +2526,13 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/UDLI9K6b9G8?t=1h14m56s> (Ebert)
   - `code` <https://github.com/febert/visual_mpc>
 
+#### ["Learning Multimodal Transition Dynamics for Model-Based Reinforcement Learning"](https://arxiv.org/abs/1705.00470) Moerland, Broekens, Jonker
+  `learning to simulate` `learning environment model`
+>	"So why is model-based RL not the standard approach? Model-based RL consists of two steps: 1) transition function estimation through supervised learning, and 2) (sample-based) planning over the learned model. Each step has a particular challenging aspect. For this work we focus on a key challenge of the first step: stochasticity in the transition dynamics. Stochasticity is an inherent property of many environments, and increases in real-world settings due to sensor noise. Transition dynamics usually combine both deterministic aspects (such as the falling trajectory of an object due to gravity) and stochastic elements (such as the behaviour of another car on the road). Our goal is to learn to jointly predict these. Note that stochasticity has many forms, both homoscedastic versus heteroscedastic, and unimodal versus multimodal. In this work we specifically focus on multimodal stochasticity, as this should theoretically pose the largest challenge."  
+>	"We focus on deep generative models as they can approximate complex distributions and scale to high-dimensional domains. For model-based RL we have additional requirements, as we are ultimately interested in using the model for sample-based planning. This usually requires sampling a lot of traces, so we require models that are 1) easy to sample from, 2) ideally allow planning at an abstract level. Implicit density models, like Generative Adverserial Networks lack a clear probabilistic objective function, which was the focus of this work. Among the explicit density models, there are two categories. Change of variable formula models, like Real NVP, have the drawback that the latent space dimension must equal the observation space. Fully visible belief nets like pixelCNN, which factorize the likelihood in an auto-regressive fashion, hold state-of-the-art likelihood results. However, they have the drawback that sampling is a sequential operation (e.g. pixel-by-pixel, which is computationally expensive), and they do not allow for latent level planning either. Therefore, most suitable for model-based RL seem approximate density models, most noteworthy the Variational Auto-Encoder framework. These models can estimate stochasticity at a latent level, allow for latent planning, are easy to sample from, and have a clear probabilistic interpretation."  
+>	"An important challenge is planning under uncertainty. RL initially provides correlated data from a limited part of state-space. When planning over this model, we should not extrapolate too much, nor trust our model to early with limited data. Note that ‘uncertainty’ (due to limited data) is fundamentally different from the ‘stochasticity’ (true probabilistic nature of the domain) discussed in this paper."  
+  - `code` <http://github.com/tmoer/multimodal_varinf>
+
 #### ["Recurrent Environment Simulators"](https://arxiv.org/abs/1704.02254) Chiappa, Racaniere, Wierstra, Mohamed
   `learning to simulate` `learning environment model` `video prediction`
 >	"We improve on previous environment simulators from high-dimensional pixel observations by introducing recurrent neural networks that are able to make temporally and spatially coherent predictions for hundreds of time-steps into the future."  
@@ -2517,32 +2541,21 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://sites.google.com/site/resvideos1729> (demo)
   - `code` <https://github.com/KokoMind/Recurrent-Environment-Simulators>
 
-----
-#### ["Deep Reinforcement Learning in a Handful of Trials using Probabilistic Dynamics Models"](https://arxiv.org/abs/1805.12114) Chua, Calandra, McAllister, Levine
-  `learning to simulate` `learning environment model` `PETS` `NIPS 2018`
->	"Model-based reinforcement learning algorithms can attain excellent sample efficiency, but often lag behind the best model-free algorithms in terms of asymptotic performance. This is especially true with high-capacity parametric function approximators, such as deep networks. In this paper, we study how to bridge this gap, by employing uncertainty-aware dynamics models."  
->	"Probabilistic ensembles with trajectory sampling algorithm combines uncertainty-aware deep network dynamics models with sampling-based uncertainty propagation. Our comparison to state-of-the-art model-based and model-free deep RL algorithms shows that our approach matches the asymptotic performance of model-free algorithms on several challenging benchmark tasks, while requiring significantly fewer samples (e.g., 8 and 125 times fewer samples than Soft Actor Critic and Proximal Policy Optimization respectively on the half-cheetah task)."  
->	"dynamics model + trajectory propagation + planning via Model Predictive Control"  
-  - `video` <https://sites.google.com/view/drl-in-a-handful-of-trials>
-  - `video` <https://slideslive.com/38915863/learning-models-for-representations-and-planning> (12:17) (Lillicrap)
-
-#### ["Model-Ensemble Trust-Region Policy Optimization"](https://arxiv.org/abs/1802.10592) Kurutach, Clavera, Duan, Tamar, Abbeel
-  `learning to simulate` `learning environment model` `ME-TRPO` `ICLR 2018`
->	"We analyze the behavior of vanilla model-based reinforcement learning methods when deep neural networks are used to learn both the model and the policy, and show that the learned policy tends to exploit regions where insufficient data is available for the model to be learned, causing instability in training. To overcome this issue, we propose to use an ensemble of models to maintain the model uncertainty and regularize the learning process. We further show that the use of likelihood ratio derivatives yields much more stable learning than backpropagation through time. Altogether, our approach Model-Ensemble Trust-Region Policy Optimization significantly reduces the sample complexity compared to model-free deep RL methods on challenging continuous control benchmark tasks."  
->	"The dynamics model maintains uncertainty due to limited data through an ensemble of models. The algorithm alternates among adding transitions to a replay buffer, optimizing the dynamics models given the buffer, and optimizing the policy given the dynamics models in Dyna's style. This algorithm significantly helps alleviating the model bias problem in model-based RL, when the policy exploits the error in the dynamics model. In many Mujoco domains, we show that it can achieve the same final performance as model-free approaches while using 100x less data."  
-  - `code` <https://github.com/thanard/me-trpo>
-
-#### ["Learning Multimodal Transition Dynamics for Model-Based Reinforcement Learning"](https://arxiv.org/abs/1705.00470) Moerland, Broekens, Jonker
-  `learning to simulate` `learning environment model`
->	"So why is model-based RL not the standard approach? Model-based RL consists of two steps: 1) transition function estimation through supervised learning, and 2) (sample-based) planning over the learned model. Each step has a particular challenging aspect. For this work we focus on a key challenge of the first step: stochasticity in the transition dynamics. Stochasticity is an inherent property of many environments, and increases in real-world settings due to sensor noise. Transition dynamics usually combine both deterministic aspects (such as the falling trajectory of an object due to gravity) and stochastic elements (such as the behaviour of another car on the road). Our goal is to learn to jointly predict these. Note that stochasticity has many forms, both homoscedastic versus heteroscedastic, and unimodal versus multimodal. In this work we specifically focus on multimodal stochasticity, as this should theoretically pose the largest challenge."  
->	"We focus on deep generative models as they can approximate complex distributions and scale to high-dimensional domains. For model-based RL we have additional requirements, as we are ultimately interested in using the model for sample-based planning. This usually requires sampling a lot of traces, so we require models that are 1) easy to sample from, 2) ideally allow planning at an abstract level. Implicit density models, like Generative Adverserial Networks lack a clear probabilistic objective function, which was the focus of this work. Among the explicit density models, there are two categories. Change of variable formula models, like Real NVP, have the drawback that the latent space dimension must equal the observation space. Fully visible belief nets like pixelCNN, which factorize the likelihood in an auto-regressive fashion, hold state-of-the-art likelihood results. However, they have the drawback that sampling is a sequential operation (e.g. pixel-by-pixel, which is computationally expensive), and they do not allow for latent level planning either. Therefore, most suitable for model-based RL seem approximate density models, most noteworthy the Variational Auto-Encoder framework. These models can estimate stochasticity at a latent level, allow for latent planning, are easy to sample from, and have a clear probabilistic interpretation."  
->	"An important challenge is planning under uncertainty. RL initially provides correlated data from a limited part of state-space. When planning over this model, we should not extrapolate too much, nor trust our model to early with limited data. Note that ‘uncertainty’ (due to limited data) is fundamentally different from the ‘stochasticity’ (true probabilistic nature of the domain) discussed in this paper."  
-  - `code` <http://github.com/tmoer/multimodal_varinf>
-
 #### ["Prediction and Control with Temporal Segment Models"](https://arxiv.org/abs/1703.04070) Mishra, Abbeel, Mordatch
   `learning to simulate` `learning environment model`
 >	"We learn the distribution over future state trajectories conditioned on past state, past action, and planned future action trajectories, as well as a latent prior over action trajectories. Our approach is based on convolutional autoregressive models and variational autoencoders. It makes stable and accurate predictions over long horizons for complex, stochastic systems, effectively expressing uncertainty and modeling the effects of collisions, sensory noise, and action delays."  
   - `video` <https://vimeo.com/237267784> (Mishra)
+
+#### ["Neural Map: Structured Memory for Deep Reinforcement Learning"](https://arxiv.org/abs/1702.08360) Parisotto, Salakhutdinov
+  `partial observability` `learning environment model` `no explicit planning`
+>	"Spatially structured 2D memory to learn to store arbitrary information about the environment over long time lags."  
+>	"Memory was given a 2D structure in order to resemble a spatial map to address specific problems such as 2D or 3D navigation."  
+>	"Size and computational cost doesn't grow with time horizon of environment."  
+  - `video` <https://youtube.com/watch?v=cUW99V5x7fE> (Salakhutdinov)
+  - `video` <https://vimeo.com/252185932> (Salakhutdinov)
+  - `video` <https://youtu.be/x_kK4Pc4qow?t=18m3s> (Salakhutdinov)
+  - `video` <https://youtu.be/bTWlFiF4Kns?t=6m55s> (Salakhutdinov)
+  - `video` <https://yadi.sk/i/pMdw-_uI3Gke7Z> (Shvechikov) `in russian`
 
 #### ["Learning and Policy Search in Stochastic Dynamic Systems with Bayesian Neural Networks"](https://arxiv.org/abs/1605.07127) Depeweg, Hernandez-Lobato, Doshi-Velez, Udluft
   `learning to simulate` `learning environment model`
@@ -2587,7 +2600,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 ----
 #### ["Unsupervised Control through Non-Parametric Discriminative Rewards"](https://arxiv.org/abs/1811.11359) Warde-Farley, Wiele, Kulkarni, Ionescu, Hansen, Mnih
-  `learning reward function` `intrinsic motivation` `DISCERN`
+  `DISCERN` `learning reward function` `intrinsic motivation`
 >	"Learning to control an environment without hand-crafted rewards or expert data remains challenging and is at the frontier of reinforcement learning research. We present an unsupervised learning algorithm to train agents to achieve perceptually specified goals using only a stream of observations and actions. Our agent simultaneously learns a goal-conditioned policy and a goal achievement reward function that measures how similar a state is to the goal state. This dual optimization leads to a co-operative game, giving rise to a learned reward function that reflects similarity in controllable aspects of the environment instead of distance in the space of observations. We demonstrate the efficacy of our agent to learn, in an unsupervised manner, to reach a diverse set of goals on three domains – Atari, the DeepMind Control Suite and DeepMind Lab."  
 
 #### ["On Learning Intrinsic Rewards for Policy Gradient Methods"](https://arxiv.org/abs/1804.06459) Zheng, Oh, Singh
@@ -2605,7 +2618,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `paper` ["Where Do Rewards Come From?"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.151.8250) by Singh, Lewis, Barto
 
 #### ["Evolved Policy Gradients"](https://arxiv.org/abs/1802.04821) Houthooft, Chen, Isola, Stadie, Wolski, Ho, Abbeel
-  `learning loss function` `intrinsic motivation` `EPG`
+  `EPG` `learning loss function` `intrinsic motivation`
 >	"Method evolves a differentiable loss function, such that an agent, which optimizes its policy to minimize this loss, will achieve high rewards. The loss is parametrized via temporal convolutions over the agent’s experience. Because this loss is highly flexible in its ability to take into account the agent’s history, it enables fast task learning and eliminates the need for reward shaping at test time. At test time, the learner optimizes only its learned loss function, and requires no explicit reward signal."  
 >	"Method is capable of learning a loss function over thousands of sequential environmental actions. Crucially, this learned loss is both highly adaptive (allowing for quicker learning of new tasks) and highly instructive (sometimes eliminating the need for environmental rewards at test time)."  
 >	"Our loss’ instructive nature – which allows it to operate at test time without environmental rewards – is interesting and desirable. This instructive nature can be understood as the loss function’s internalization of the reward structures it has previously encountered under the training task distribution. We see this internalization as a step toward learning intrinsic motivation. A good intrinsically motivated agent would successfully infer useful actions in new situations by using heuristics it developed over its entire lifetime. This ability is likely required to achieve truly intelligent agents."  
@@ -2617,7 +2630,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 ----
 #### ["Meta-Reinforcement Learning of Structured Exploration Strategies"](https://arxiv.org/abs/1802.07245) Gupta, Mendonca, Liu, Abbeel, Levine
-  `learning to explore` `MAESN`
+  `MAESN` `learning to explore`
 >	"Many of the current exploration methods for deep RL use task-agnostic objectives, such as information gain or bonuses based on state visitation. However, many practical applications of RL involve learning more than a single task, and prior tasks can be used to inform how exploration should be performed in new tasks. In this work, we explore how prior tasks can inform an agent about how to explore effectively in new situations. We introduce a novel gradient-based fast adaptation algorithm -- model agnostic exploration with structured noise -- to learn exploration strategies from prior experience. The prior experience is used both to initialize a policy and to acquire a latent exploration space that can inject structured stochasticity into a policy, producing exploration strategies that are informed by prior knowledge and are more effective than random action-space noise."  
   - `video` <https://youtube.com/watch?v=Tge7LPT9vGA> (Gupta)
 
@@ -2644,7 +2657,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://facebook.com/icml.imls/videos/432572773923910?t=7326> (O'Donoghue)
 
 #### ["Noisy Networks for Exploration"](https://arxiv.org/abs/1706.10295) Fortunato, Azar, Piot, Menick, Osband, Graves, Mnih, Munos, Hassabis, Pietquin, Blundell, Legg
-  `approximate bayesian exploration` `approximate posterior sampling` `NoisyNet`
+  `NoisyNet` `approximate bayesian exploration` `approximate posterior sampling`
 >	"scale of perturbation to parameters is learned along with original objective function"  
   - `video` <https://youtu.be/fevMOp5TDQs?t=1h27s> (Mnih)
   - `video` <https://youtu.be/fnwo3GCmyEo?t=49m46s> (Fritzler) `in russian`
@@ -2691,7 +2704,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/Tge7LPT9vGA?t=9m36s> (Machado)
 
 #### ["Count-Based Exploration with Neural Density Models"](http://arxiv.org/abs/1703.01310) Ostrovski, Bellemare, Oord, Munos
-  `exploration guided by observation novelty` `Reactor-PixelCNN`
+  `Reactor-PixelCNN` `exploration guided by observation novelty`
 >	"PixelCNN for exploration, neural alternative to Context Tree Switching"  
   - `video` <http://youtube.com/watch?v=qSfd27AgcEk> (Bellemare)
   - `video` <https://vimeo.com/238243932> (Bellemare)
@@ -2706,7 +2719,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <https://github.com/justinjfu/exemplar_models>
 
 #### ["#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning"](http://arxiv.org/abs/1611.04717) Tang, Houthooft, Foote, Stooke, Chen, Duan, Schulman, Turck, Abbeel
-  `exploration guided by observation novelty` `SimHash`
+  `SimHash` `exploration guided by observation novelty`
 >	"The authors encourage exploration by adding a pseudo-reward of the form beta/sqrt(count(state)) for infrequently visited states. State visits are counted using Locality Sensitive Hashing (LSH) based on an environment-specific feature representation like raw pixels or autoencoder representations. The authors show that this simple technique achieves gains in various classic RL control tasks and several games in the ATARI domain. While the algorithm itself is simple there are now several more hyperaprameters to tune: The bonus coefficient beta, the LSH hashing granularity (how many bits to use for hashing) as well as the type of feature representation based on which the hash is computed, which itself may have more parameters. The experiments don't paint a consistent picture and different environments seem to need vastly different hyperparameter settings, which in my opinion will make this technique difficult to use in practice."  
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1611.04717>
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/%23Exploration:_A_Study_of_Count-Based_Exploration_for_Deep_Reinforcement_Learning.md>
@@ -2725,10 +2738,11 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `exploration guided by empowerment`
 >	"The second scenario is that in which the long-term goal of the agent is to get to a state with a maximal set of available intrinsic options – the objective of empowerment (Salge et al., 2014). This set of options consists of those that the agent knows how to use. Note that this is not the theoretical set of all options: it is of no use to the agent that it is possible to do something if it is unable to learn how  to do it. Thus, to maximize empowerment, the agent needs to simultaneously learn how to control the environment as well – it needs to discover the options available to it. The agent should in fact not aim for states where it has the most control according to its current abilities, but for states where it expects it will achieve the most control after learning. Being able to learn available options is thus fundamental to  becoming empowered."  
 >	"Let us compare this to the commonly used intrinsic motivation objective of maximizing the amount of model-learning progress, measured as the difference in compression of its experience before and after learning (Schmidhuber, 1991; 2010; Bellemare et al., 2016; Houthooft et al., 2016). The empowerment objective differs from this in a fundamental manner: the primary goal is not to understand or predict the observations but to control the environment. This is an important point – agents can often control an environment perfectly well without much understanding, as exemplified by canonical model-free reinforcement learning algorithms (Sutton & Barto, 1998), where agents only model action-conditioned expected returns. Focusing on such understanding might significantly distract and impair the agent, as such reducing the control it achieves."  
+  - `code` <https://github.com/sygi/vic-tensorflow>
 
 ----
 #### ["Exploration by Random Network Distillation"](https://arxiv.org/abs/1810.12894) Burda, Edwards, Storkey, Klimov
-  `exploration guided by prediction error` `RND`
+  `RND` `exploration guided by prediction error` `RND`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#exploration-by-random-network-distillation-burda-edwards-storkey-klimov>
 
 #### ["Large-Scale Study of Curiosity-Driven Learning"](https://arxiv.org/abs/1808.04355) Burda, Edwards, Pathak, Storkey, Darrell, Efros
@@ -2805,7 +2819,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 ----
 #### ["Overcoming Exploration in Reinforcement Learning with Demonstrations"](https://arxiv.org/abs/1709.10089) Nair, McGrew, Andrychowicz, Zaremba, Abbeel
-  `exploration guided by learning progress and demonstrations` `Q-filter`
+  `Q-filter` `exploration guided by learning progress and demonstrations` `Q-filter`
 >	"We use demonstrations to overcome the exploration problem and successfully learn to perform long-horizon, multi-step robotics tasks with continuous control such as stacking blocks with a robot arm."  
 >	"Our method, which builds on top of Deep Deterministic Policy Gradients and Hindsight Experience Replay, provides an order of magnitude of speedup over RL on simulated robotics tasks."  
 >	"Our method is able to solve tasks not solvable by either RL or behavior cloning alone, and often ends up outperforming the demonstrator policy."  
@@ -2813,7 +2827,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://vimeo.com/252186855> (Nair)
 
 #### ["Hindsight Experience Replay"](https://arxiv.org/abs/1707.01495) Andrychowicz, Wolski, Ray, Schneider, Fong, Welinder, McGrew, Tobin, Abbeel, Zaremba
-  `exploration guided by learning progress` `HER`
+  `HER` `exploration guided by learning progress`
 >	"Get reward signal from any experience by simply assuming the goal equals whatever happened."  
 >	"HER may be seen as a form of implicit curriculum as the goals used for replay naturally shift from ones which are simple to achieve even by a random agent to more difficult ones. However, in contrast to explicit curriculum, HER does not require having any control over the distribution of initial environment states."  
 >	"Not only does HER learn with extremely sparse rewards, in our experiments it also performs better with sparse rewards than with shaped ones. These results are indicative of the practical challenges with reward shaping, and that shaped rewards would often constitute a compromise on the metric we truly care about (such as binary success/failure)."  
@@ -2974,7 +2988,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://vimeo.com/237274347> (Machado)
 
 #### ["Variational Intrinsic Control"](http://arxiv.org/abs/1611.07507) Gregor, Rezende, Wierstra
-  - `code` <https://github.com/sygi/vic-tensorflow>
+  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#variational-intrinsic-control-gregor-rezende-wierstra>
 
 #### ["Modular Multitask Reinforcement Learning with Policy Sketches"](http://arxiv.org/abs/1611.01796) Andreas, Klein, Levine
   - `video` <https://vimeo.com/237274402> (Andreas)
@@ -3151,27 +3165,28 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=WGJwLfeVN9w> + <https://youtube.com/watch?v=Vno6FGqhvDc> (demo)
 
 #### ["Time-Contrastive Networks: Self-Supervised Learning from Video"](https://arxiv.org/abs/1704.06888) Sermanet, Lynch, Chebotar, Hsu, Jang, Schaal, Levine
-  `reinforcement learning from demonstrations` `TCN`
+  `TCN` `reinforcement learning from demonstrations`
 >	"Learn a self-supervised understanding of the world and use it to quickly learn real-world tasks, entirely from 3rd person videos of humans (addressing correspondence problem, no labels, no reward function design, providing sample-efficiency of RL, quickly learning tasks, no kinesthetic demonstrations)."  
   - `video` <https://youtube.com/watch?v=b1UTUQpxPSY>
   - `video` <https://vimeo.com/252185872> (Lynch)
   - `code` <https://github.com/tensorflow/models/tree/master/research/tcn>
 
 #### ["Learning from Demonstrations for Real World Reinforcement Learning"](https://arxiv.org/abs/1704.03732) Hester et al.
-  `reinforcement learning from demonstrations` `DQfD`
+  `DQfD` `reinforcement learning from demonstrations`
 >	"DQfD leverages small sets of demonstration data to massively accelerate the learning process even from relatively small amounts of demonstration data and is able to automatically assess the necessary ratio of demonstration data while learning thanks to a prioritized replay mechanism. DQfD works by combining temporal difference updates with supervised classification of the demonstrator's actions."  
   - `video` <https://youtube.com/playlist?list=PLdjpGm3xcO-0aqVf--sBZHxCKg-RZfa5T> (demo)
+  - `post` <https://danieltakeshi.github.io/2019/04/30/il-and-rl>
   - `code` <https://github.com/reinforceio/tensorforce/blob/master/tensorforce/models/dqfd_model.py>
   - `code` <https://github.com/go2sea/DQfD>
 
 #### ["Deeply AggreVaTeD: Differentiable Imitation Learning for Sequential Prediction"](https://arxiv.org/abs/1703.01030) Sun, Venkatraman, Gordon, Boots, Bagnell
-  `reinforcement learning from demonstrations` `AggreVaTeD`
+  `AggreVaTeD` `reinforcement learning from demonstrations`
 >	"policy gradient extension of DAgger"  
   - `video` <https://vimeo.com/238243230> (Sun)
   - `paper` ["Convergence of Value Aggregation for Imitation Learning"](https://arxiv.org/abs/1801.07292) by Cheng and Boots
 
 #### ["Query-Efficient Imitation Learning for End-to-End Autonomous Driving"](https://arxiv.org/abs/1605.06450) Zhang, Cho
-  `reinforcement learning from demonstrations` `SafeDAgger`
+  `SafeDAgger` `reinforcement learning from demonstrations`
   - `video` <https://youtu.be/soZXAH3leeQ?t=15m51s> (Cho)
 
 ----
@@ -3211,6 +3226,8 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 ----
 #### ["Learning Robust Rewards with Adversarial Inverse Reinforcement Learning"](https://arxiv.org/abs/1710.11248) Fu, Luo, Levine
   `adversarial imitation learning`
+>	"A practical and scalable inverse reinforcement learning algorithm based on an adversarial reward learning formulation. AIRL is able to recover reward functions that are robust to changes in dynamics, enabling us to learn policies even under significant variation in the environment seen during training."  
+  - `notes` <https://www.shortscience.org/paper?bibtexKey=journals/corr/abs-1710-11248>
 
 #### ["Multi-Modal Imitation Learning from Unstructured Demonstrations using Generative Adversarial Nets"](https://arxiv.org/abs/1705.10479) Hausman, Chebotar, Schaal, Sukhatme, Lim
   `adversarial imitation learning`
@@ -3221,7 +3238,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/xfyK03MEZ9Q?t=7h43m18s> (Hausman)
 
 #### ["Inferring the Latent Structure of Human Decision-Making from Raw Visual Inputs"](https://arxiv.org/abs/1703.08840) Li, Song, Ermon
-  `adversarial imitation learning` `InfoGAIL`
+  `InfoGAIL` `adversarial imitation learning`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#inferring-the-latent-structure-of-human-decision-making-from-raw-visual-inputs-li-song-ermon>
 
 #### ["Robust Imitation of Diverse Behaviors"](https://arxiv.org/abs/1707.02747) Wang, Merel, Reed, Wayne, Freitas, Heess
@@ -3234,7 +3251,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Robust_Imitation_of_Diverse_Behaviors.md>
 
 #### ["Generative Adversarial Imitation Learning"](http://arxiv.org/abs/1606.03476) Ho, Ermon
-  `adversarial imitation learning` `GAIL`
+  `GAIL` `adversarial imitation learning`
 >	"Uses a GAN framework to discriminate between teacher and student experience and force the student to behave close to the teacher."  
   - `video` <https://youtube.com/watch?v=bcnCo9RxhB8> (Ermon)
   - `video` <https://youtu.be/d9DlQSJQAoI?t=22m12s> (Finn)
@@ -3365,6 +3382,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <https://github.com/carpedm20/karel>
 
 #### ["Learning Explanatory Rules from Noisy Data"](https://arxiv.org/abs/1711.04574) Evans, Grefenstette
+  `∂ILP`
 >	"We demonstrate it is possible for systems to combine intuitive perceptual with conceptual interpretable reasoning. The system we describe, ∂ILP, is robust to noise, data-efficient, and produces interpretable rules."  
 >	"∂ILP differs from standard neural nets because it is able to generalise symbolically, and it differs from standard symbolic programs because it is able to generalise visually. It learns explicit programs from examples that are readable, interpretable, and verifiable. ∂ILP is given a partial set of examples (the desired results) and produces a program that satisfies them. It searches through the space of programs using gradient descent. If the outputs of the program conflict with the desired outputs from the reference data, the system revises the program to better match the data."  
   - `post` <https://deepmind.com/blog/learning-explanatory-rules-noisy-data/>
@@ -3431,22 +3449,22 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 ----
 #### ["Towards Neural Theorem Proving at Scale"](https://arxiv.org/abs/1807.08204) Minervini, Bosnjak, Rocktaschel, Riedel
-  `learning logic` `NTP`
+  `NTP` `learning logic`
   - `video` <https://youtu.be/LsLPp7gqwA4?t=43m46s> (Minervini)
 
 #### ["End-to-end Differentiable Proving"](https://arxiv.org/abs/1705.11040) Rocktaschel, Riedel
-  `learning logic` `NTP`
+  `NTP` `learning logic`
   - `video` <https://youtu.be/LsLPp7gqwA4?t=32m45s> (Minervini)
   - <https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#end-to-end-differentiable-proving-rocktaschel-riedel>
 
 #### ["Differentiable Learning of Logical Rules for Knowledge Base Reasoning"](https://arxiv.org/abs/1702.08367) Yang, Yang, Cohen
-  `learning logic` `TensorLog`
+  `TensorLog` `learning logic`
 >	"We study the problem of learning probabilistic first-order logical rules for knowledge base reasoning. This learning problem is difficult because it requires learning the parameters in a continuous space as well as the structure in a discrete space. We propose a framework, Neural Logic Programming, that combines the parameter and structure learning of first-order logical rules in an end-to-end differentiable model. This approach is inspired by a recently-developed differentiable logic called TensorLog, where inference tasks can be compiled into sequences of differentiable operations. We design a neural controller system that learns to compose these operations."  
   - `video` <https://youtu.be/bVWDxyydyEM?t=43m31s> (Neubig)
   - `code` <https://github.com/fanyangxyz/Neural-LP>
 
 #### ["TensorLog: A Differentiable Deductive Database"](http://arxiv.org/abs/1605.06523) Cohen
-  `learning logic` `TensorLog`
+  `TensorLog` `learning logic`
   - `slides` <http://starai.org/2016/slides/william-cohen.pptx>
   - `code` <https://github.com/TeamCohen/TensorLog>
 
@@ -3464,7 +3482,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"This work shares a similar spirit with AlphaZero in that it also uses MCTS and policy network to iteratively improve each other. However, the method in AlphaZero improves the policy network from the MCTS probabilities of move, while this method improves the policy from the trajectories generated by MCTS. Note that the MCTS probabilities of move in AlphaZero is constructed from the visit counts of all the edges connected to the MCTS root node, meaning that it only uses information near the root node to improve the policy network. While this work improves the policy network by learning from the trajectories generated by MCTS. Therefore, the information over the entire MCTS search tree is used."  
 
 #### ["Go for a Walk and Arrive at the Answer: Reasoning Over Paths in Knowledge Bases using Reinforcement Learning"](https://arxiv.org/abs/1711.05851) Das, Dhuliawala, Zaheer, Vilnis, Durugkar, Krishnamurthy, Smola, McCallum
-  `question answering over knowledge bases` `MINERVA`
+  `MINERVA` `question answering over knowledge bases`
 >	"RL agent which answers queries in a knowledge graph of entities and relations. Starting from an entity node, MINERVA learns to navigate the graph conditioned on the input query till it reaches the answer entity."  
   - `code` <https://github.com/shehzaadzd/MINERVA>
 
@@ -3500,7 +3518,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `post` <https://ibm.com/blogs/research/2018/02/open-domain-qa/>
 
 #### ["Reading Wikipedia to Answer Open-Domain Questions"](https://arxiv.org/abs/1704.00051) Chen, Fisch, Weston, Bordes
-  `question answering over texts` `documents collection` `DrQA`
+  `DrQA` `question answering over texts` `documents collection`
   - `code` <https://github.com/facebookresearch/ParlAI/tree/master/parlai/agents/drqa>
   - `code` <https://github.com/hitvoice/DrQA>
 
@@ -3590,13 +3608,13 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `post` ["Situated Language Learning"](http://foldl.me/2016/situated-language-learning/) (Gauthier)
 
 #### ["From Language to Goals: Inverse Reinforcement Learning for Vision-Based Instruction Following"](https://arxiv.org/abs/1902.07742) Fu, Korattikara, Levine, Guadarrama
-  `goal-driven language learning` `LC-RL` `ICLR 2019`
+  `LC-RL` `goal-driven language learning` `ICLR 2019`
   - <https://sites.google.com/view/language-irl>
 >	"We investigate the problem of grounding language commands as reward functions using inverse reinforcement learning, and argue that language-conditioned rewards are more transferable than language-conditioned policies to new environments. We propose language-conditioned reward learning, which grounds language commands as a reward function represented by a deep neural network. We demonstrate that our model learns rewards that transfer to novel tasks and environments on realistic, high-dimensional visual environments with natural language commands, whereas directly learning a language-conditioned policy leads to poor performance."  
 >	 "Reward-learning enables an agent to learn and interact within the test environment rather than relying on zero-shot policy transfer."  
 
 #### ["Learning to Follow Language Instructions with Adversarial Reward Induction"](https://arxiv.org/abs/1806.01946) Bahdanau, Hill, Leike, Hughes, Kohli, Grefenstette
-  `goal-driven language learning` `AGILE`
+  `AGILE` `goal-driven language learning`
 >	"AGILE, an approach to training instruction-following agents from examples of corresponding goal-states rather than explicit reward functions. This opens up new possibilities for training language-aware agents, because in the real world, and even in rich simulated environments, acquiring such data via human annotation would often be much more viable than defining and implementing reward functions programmatically. Indeed, programming rewards to teach robust and general instruction-following may ultimately be as challenging as writing a program to interpret language directly, an endeavour that is notoriously laborious, and some say, ultimately futile. As well as a means to learn from a potentially more prevalent form of data, our experiments demonstrate that AGILE performs comparably with and can learn as fast as RL with an auxiliary task."  
 >	"An attractive aspect of AGILE is that learning “what should be done” and “how it should be done” is performed by two different model components. Our experiments confirm that the “what” kind of knowledge generalizes better to different environments. When the dynamics of the environment changed at test time, fine-tuning against a frozen discriminator allowed to the policy recover some of its original capability in the new setting."  
 >	"AGILE is strongly inspired by Inverse Reinforcement Learning methods in general, and Generative Adversarial Imitation Learning in particular. However, it develops these methods to enable language learning; the policy and the discriminator are conditioned on an instruction, and that the training data contains goal-states - rather than complete trajectories. An appealing advantage of AGILE is the fact that the discriminator Dφ and the policy πθ learn two related but distinct aspects of an instruction: the discriminator focuses on recognizing the goal-states (what should be done), whereas the policy learns what to do in order to get to a goal-state (how it should be done). The intuition motivating this design is that the knowledge about how instructions define goals should generalize more strongly than the knowledge about which behavior is needed to execute instructions. Following this intuition, we propose to reuse a trained AGILE’s discriminator as a reward function for training or fine-tuning policies."  
@@ -3698,11 +3716,11 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 ----
 #### ["Language Models are Unsupervised Multitask Learners"](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf) Radford, Wu, Child, Luan, Amodei, Sutskever
-  `language modeling` `GPT-2`
+  `GPT-2` `language modeling`
   - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#language-models-are-unsupervised-multitask-learners-radford-wu-child-luan-amodei-sutskever>
 
 #### ["BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"](https://arxiv.org/abs/1810.04805) Devlin, Chang, Lee, Toutanova
-  `language modeling` `BERT`
+  `BERT` `language modeling`
   - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-devlin-chang-lee-toutanova>
 
 ----
@@ -3712,17 +3730,17 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 ----
 #### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin
-  `sequence transduction` `Transformer`
+  `Transformer` `sequence transduction`
   - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#attention-is-all-you-need-vaswani-shazeer-parmar-uszkoreit-jones-gomez-kaiser-polosukhin>
 
 #### ["Non-Autoregressive Neural Machine Translation"](https://arxiv.org/abs/1711.02281) Gu, Bradbury, Xiong, Li, Socher
-  `sequence transduction` `Transformer`
+  `Transformer` `sequence transduction`
 >	"Existing approaches to neural machine translation condition each output word on previously generated outputs. We introduce a model that avoids this autoregressive property and produces its outputs in parallel, allowing an order of magnitude lower latency during inference. Through knowledge distillation, the use of input token fertilities as a latent variable, and policy gradient fine-tuning, we achieve this at a cost of as little as 2.0 BLEU points relative to the autoregressive Transformer network used as a teacher."  
 >	"parallel decoder in addition to parallel encoder - up to 8x speed-up"  
   - `post` <https://einstein.ai/research/non-autoregressive-neural-machine-translation>
 
 #### ["Generating Wikipedia by Summarizing Long Sequences"](https://arxiv.org/abs/1801.10198) Liu, Saleh, Pot, Goodrich, Sepassi, Kaiser, Shazeer
-  `sequence transduction` `Transformer`
+  `Transformer` `sequence transduction`
 >	"Extractive summarization to coarsely identify salient information and a neural abstractive model to generate the article. For the abstractive model, decoder-only Transformer architecture that can scalably attend to very long sequences, much longer than typical encoder-decoder architectures used in sequence transduction."  
 
 ---
@@ -3748,7 +3766,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 ----
 #### ["Bag of Tricks for Efficient Text Classification"](http://arxiv.org/abs/1607.01759) Joulin, Grave, Bojanowski, Mikolov
-  `classification` `fastText`
+  `fastText` `classification` 
 >	"At par with deep learning models in terms of accuracy though an order of magnitude faster in performance."  
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1607.01759>
   - `notes` <https://medium.com/paper-club/bag-of-tricks-for-efficient-text-classification-818bc47e90f>
@@ -3760,23 +3778,3 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `topic modeling`
 >	"Traditional inference methods have sought closed-form derivations for updating the models, however as the expressiveness of these models grows, so does the difficulty of performing fast and accurate inference over their parameters. This paper presents alternative neural approaches to topic modelling by providing parameterisable distributions over topics which permit training by backpropagation in the framework of neural variational inference. In addition, with the help of a stick-breaking construction, we propose a recurrent network that is able to discover a notionally unbounded number of topics, analogous to Bayesian non-parametric topic models."  
   - `video` <https://vimeo.com/238222598> (Miao)
-
-----
-#### ["Learning a Neural Semantic Parser from User Feedback"](https://arxiv.org/abs/1704.08760) Iyer, Konstas, Cheung, Krishnamurthy, Zettlemoyer
-  `semantic parsing`
->	"We learn a semantic parser for an academic domain from scratch by deploying an online system using our interactive learning algorithm. After three train-deploy cycles, the system correctly answered 63.51% of user’s questions. To our knowledge, this is the first effort to learn a semantic parser using a live system, and is enabled by our models that can directly parse language to SQL without manual intervention."  
-#### ["Semantic Parsing with Semi-Supervised Sequential Autoencoders"](http://arxiv.org/abs/1609.09315) Kocisky, Melis, Grefenstette, Dyer, Ling, Blunsom, Hermann
-  `semantic parsing`
-
-#### ["Open-Vocabulary Semantic Parsing with both Distributional Statistics and Formal Knowledge"](http://arxiv.org/abs/1607.03542) Gardner, Krishnamurthy
-  `semantic parsing`
-
-#### ["Language to Logical Form with Neural Attention"](http://arxiv.org/abs/1601.01280) Dong, Lapata
-  `semantic parsing`
-
-----
-#### ["Globally Normalized Transition-Based Neural Networks"](http://arxiv.org/abs/1603.06042) Andor, Alberti, Weiss, Severyn, Presta, Ganchev, Petrov, Collins
-  `dependency parsing` `SyntaxNet` `Parsey McParseface`
->	"The parser uses a feed forward NN, which is much faster than the RNN usually used for parsing. Also the paper is using a global method to solve the label bias problem. This method can be used for many tasks and indeed in the paper it is used also to shorten sentences by throwing unnecessary words. The label bias problem arises when predicting each label in a sequence using a softmax over all possible label values in each step. This is a local approach but what we are really interested in is a global approach in which the sequence of all labels that appeared in a training example are normalized by all possible sequences. This is intractable so instead a beam search is performed to generate alternative sequences to the training sequence. The search is stopped when the training sequence drops from the beam or ends. The different beams with the training sequence are then used to compute the global loss."  
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1603.06042>
-  - `code` <https://github.com/tensorflow/models/tree/master/research/syntaxnet>

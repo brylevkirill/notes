@@ -4,8 +4,8 @@
   * [**overview**](#overview)
   * [**problems**](#problems)
   * [**knowledge representation**](#knowledge-representation)
-  * [**inference / reasoning**](#inference--reasoning)
-  * [**decisions / actions**](#decisions--actions)
+  * [**inference and reasoning**](#inference-and-reasoning)
+  * [**decisions and actions**](#decisions-and-actions)
     - [**reinforcement learning**](#reinforcement-learning)
     - [**meta-learning**](#meta-learning)
     - [**artificial curiosity and creativity**](#artificial-curiosity-and-creativity)
@@ -49,10 +49,10 @@
   - [**knowledge representation**](#knowledge-representation)  
 	What is space of possible beliefs? How do beliefs interact?  
 
-  - [**inference / reasoning**](#inference--reasoning)  
+  - [**inference and reasoning**](#inference-and-reasoning)  
 	How can inference and reasoning be performed over beliefs?  
 
-  - [**decisions / actions**](#decisions--actions)  
+  - [**decisions and actions**](#decisions-and-actions)  
 	How can beliefs conspire to produce decisions and actions?  
 
 
@@ -94,7 +94,7 @@
 
 
 ---
-### inference / reasoning
+### inference and reasoning
 
   How can inference and reasoning be performed over beliefs?
 
@@ -118,15 +118,15 @@
 ----
 
   approaches:
-  - [**logical**](#inference--reasoning---logical-vs-statistical) / [**symbolic**](#inference--reasoning---symbolic-vs-non-symbolic) / computationalism / causational / theory-driven / relational  
+  - [**logical**](#inference-and-reasoning---logical-vs-statistical) / [**symbolic**](#inference-and-reasoning---symbolic-vs-non-symbolic) / computationalism / causational / theory-driven / relational  
 	vs  
-	[**statistical**](#inference--reasoning---logical-vs-statistical) / [**non-symbolic**](#inference--reasoning---symbolic-vs-non-symbolic) / connectionism / correlational / data-driven / numerical
-  - [**deductive vs inductive**](#inference--reasoning---deductive-vs-inductive)
+	[**statistical**](#inference-and-reasoning---logical-vs-statistical) / [**non-symbolic**](#inference-and-reasoning---symbolic-vs-non-symbolic) / connectionism / correlational / data-driven / numerical
+  - [**deductive vs inductive**](#inference-and-reasoning---deductive-vs-inductive)
 
 
 
 ---
-### inference / reasoning - logical vs statistical
+### inference and reasoning - logical vs statistical
 
   - *knowledge representation*:  
 	logical - first-order logic  
@@ -163,7 +163,7 @@
 
 
 ---
-### inference / reasoning - symbolic vs non-symbolic
+### inference and reasoning - symbolic vs non-symbolic
 
   - [**natural logic**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---natural-logic)  (symbolic + non-symbolic)
   - [**formal logic**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---formal-logic)  (symbolic)
@@ -180,7 +180,7 @@
 
 
 --- 
-### inference / reasoning - deductive vs inductive
+### inference and reasoning - deductive vs inductive
 
   "Reasoning is deductive when enough information is at hand to permit it and inductive/plausible when necessary information is not available.
 
@@ -237,7 +237,7 @@
 
 
 ---
-### decisions / actions
+### decisions and actions
 
   How can beliefs conspire to produce decisions and actions?
 
