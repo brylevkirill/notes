@@ -892,6 +892,7 @@
 ---
 ### architectures - attention
 
+  [overview](https://facebook.com/icml.imls/videos/382464939283864) by Alex Smola and Aston Zhang `video`  
   [overview](https://youtu.be/9U0drwafE78?t=36m22s) by Oriol Vinyals `video`  
   [overview](https://youtube.com/watch?v=Q57rzaHHO0k) by Alex Graves `video`  
   [overview](https://youtube.com/watch?v=_XRBlhzb31U) by Mikhail Figurnov `video` `in russian`  
@@ -2103,38 +2104,39 @@ Yoshua Bengio:
   - `post` <http://inference.vc/variational-inference-using-implicit-models-part-iii-joint-contrastive-inference-ali-and-bigan/>
 
 
-#### ["Adversarial Variational Bayes: Unifying Variational Autoencoders and Generative Adversarial Networks"](https://arxiv.org/abs/1701.04722) Mescheder, Nowozin, Geiger
->	"Variational Autoencoders are expressive latent variable models that can be used to learn complex probability distributions from training data. However, the quality of the resulting model crucially relies on the expressiveness of the inference model used during training. We introduce Adversarial Variational Bayes, a technique for training Variational Autoencoders with arbitrarily expressive inference models. We achieve this by introducing an auxiliary discriminative network that allows to rephrase the maximum-likelihood-problem as a two-player game, hence establishing a principled connection between VAEs and Generative Adversarial Networks. We show that in the nonparametric limit our method yields an exact maximumlikelihood assignment for the parameters of the generative model, as well as the exact posterior distribution over the latent variables given an observation. Contrary to competing approaches which combine VAEs with GANs, our approach has a clear theoretical justification, retains most advantages of standard Variational Autoencoders and is easy to implement."
+#### ["Neural Discrete Representation Learning"](https://arxiv.org/abs/1711.00937) Oord, Vinyals, Kavukcuoglu
+  `VQ-VAE`
+>	"Language is inherently discrete, similarly speech is typically represented as a sequence of symbols. Images can often be described concisely by language. Furthermore, discrete representations are a natural fit for complex reasoning, planning and predictive learning."  
+>	"We introduce a new family of generative models succesfully combining the VAE framework with discrete latent representations through a novel parameterisation of the posterior distribution of (discrete) latents given an observation. Our model, which relies on vector quantization, is simple to train, does not suffer from large variance, and avoids the “posterior collapse” issue which has been problematic with many VAE models that have a powerful decoder, often caused by latents being ignored. Additionally, it is the first discrete latent VAE model that get similar performance as its continuous counterparts, while offering the flexibility of discrete distributions."  
+>	"Since VQ-VAE can make effective use of the latent space, it can successfully model important features that usually span many dimensions in data space (for example objects span many pixels in images, phonemes in speech, the message in a text fragment, etc.) as opposed to focusing or spending capacity on noise and imperceptible details which are often local."  
+>	"When paired with a powerful prior, our samples are coherent and high quality on a wide variety of applications such as speech and video generation. We use a PixelCNN over the discrete latents for images, and a WaveNet for raw audio. Training the prior and the VQ-VAE jointly, which could strengthen our results, is left as future research."  
+>	"The discrete latent space captures the important aspects of the audio, such as the content of the speech, in a very compressed symbolic representation. Because of this we can now train another WaveNet on top of these latents which can focus on modeling the long-range temporal dependencies without having to spend too much capacity on imperceptible details. With enough data one could even learn a language model directly from raw audio."  
+>	"When we condition the decoder in the VQ-VAE on the speaker-id, we can extract latent codes from a speech fragment and reconstruct with a different speaker-id. The VQ-VAE never saw any aligned data during training and was always optimizing the reconstruction of the orginal waveform. These experiments suggest that the encoder has factored out speaker-specific information in the encoded representations, as they have same meaning across different voice characteristics. This behaviour arises naturally because the decoder gets the speaker-id for free so the limited bandwith of latent codes gets used for other speaker-independent, phonetic information. In the paper we show that the latent codes discovered by the VQ-VAE are actually very closely related to the human-designed alphabet of phonemes."  
+>	"We show promising results on learning long term structure of environments for reinforcement learning."  
+>	"VQ-VAE models only what we can perceive - doesn't predict the noise or high frequency signals we can't see"  
+>	"Why discrete?  
+>	- Many important real-world things are discrete  
+>	- Arguably easier to model for the prior (e.g. softmax vs RNADE)  
+>	- Continuous representations are often inherently discretized by encoder/decoder"  
+  - `post` <https://avdnoord.github.io/homepage/vqvae/> (demo)
+  - `video` <https://youtu.be/QoCyQBzi7us?t=19m10s> (Oord)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1711.00937>
+  - `slides` <https://avdnoord.github.io/homepage/slides/SANE2017.pdf>
+  - `code` <https://github.com/deepmind/sonnet/blob/master/sonnet/examples/vqvae_example.ipynb>
 
->	"We presented a new training procedure for Variational Autoencoders based on adversarial training. This allows us to make the inference model much more flexible, effectively allowing it to represent almost any family of conditional distributions over the latent variables."
 
->	"Adversarial Variational Bayes strives to optimize the same objective as a standard Variational Autoencoder, but approximates the Kullback-Leibler divergence using an adversary instead of relying on a closed-form formula."
-
->	"However, no other approach we are aware of allows to use black-box inference models parameterized by a general neural network that takes as input a data point and a noise vector and produces a sample from the approximate posterior."
-
->	"Interestingly, the approach of Adversarial Autoencoders can be regarded as an approximation to our approach, where T(x,z) is restricted to the class of functions that do not depend on
-x."
-
->	"BiGANs are a recent extension of generative adversarial networks with the goal to add an inference network to the generative model. Similarly to our approach, the authors introduce an adversary that acts on pairs (x,z) of data points and latent codes. However, whereas in BiGANs the adversary is used to optimize the generative and inference networks separately, our approach optimizes the generative and inference model jointly. As a result, our approach obtains good reconstructions of the input data, whereas for BiGANs we obtain these reconstruction only indirectly."
-
-----
->	"We often want to work with some Bayesian model but find its posterior distribution intractable. Variational inference is a way of coping with this problem. We learn an approximate posterior distribution, call it q(z|x), (along with the original model) by optimizing the following lowerbound:
->
->	log p(x|θ) ≥ ∫ q(z) log [p(x,z|θ) / q(z)] dz = E[log p(x|z,θ)] - E[log q(z|x)/p(z)]
->
->	where the expectations are taken with respect to the approximate posterior q. Usually we pick some known, common distribution q and optimize our hearts out. However, picking an appropriate q can be a challenge since we don't know what the true posterior really looks like and if we did, there'd be no need for variational inference. The clever trick with AVB is that the authors noticed that if the log [q(z|x)/p(z)] term can be replaced by something that doesn't require q(z|x) to be evaluated (i.e. to compute the actual probability), then the variational inference objective only requires that q(z|x) be sampled from, which can be done by a GAN-like generator network z = f(y) where y ~ N(0,1) and f is the neural network. They get around evaluating q by using a discriminator network to model the ratio directly."
-
-----
->	"Real NVP can be used as an encoder in order to measure the gap between the unbiased KL estimate log q(z|x) - log p(z) and its approximation from GAN. We show that Adversarial Variational Bayes underestimates the KL divergence."
-
-  - `video` <https://youtu.be/y7pUN2t5LrA?t=14m19s> (Nowozin)
-  - `video` <https://youtu.be/xFCuXE1Nb8w?t=26m55s> (Nowozin)
-  - `video` <https://youtu.be/m80Vp-jz-Io?t=1h28m34s> (Tolstikhin)
-  - `post` <http://inference.vc/variational-inference-with-implicit-models-part-ii-amortised-inference-2/>
-  - `post` <https://chrisorm.github.io/AVB-pyt.html>
-  - `notes` <https://casmls.github.io/general/2017/02/23/modified-gans.html>
-  - `code` <https://github.com/wiseodd/generative-models/tree/master/VAE/adversarial_vb>
-  - `code` <https://gist.github.com/poolio/b71eb943d6537d01f46e7b20e9225149>
+#### ["Generating Diverse High-Fidelity Images with VQ-VAE-2"](https://arxiv.org/abs/1906.00446) Razavi, Oord, Vinyals
+  `VQ-VAE`
+>	"VQ-VAE for large scale image generation"  
+>	"We scale and enhance the autoregressive priors used in VQ-VAE."  
+>	"We use simple feed-forward encoder and decoder networks, making our model an attractive candidate for applications where the encoding and/or decoding speed is critical."  
+>	"VQ-VAE requires sampling an autoregressive model only in the compressed latent space, which is an order of magnitude faster than sampling in the pixel space, especially for large images."  
+>	"A multi-scale hierarchical organization of VQ-VAE, augmented with powerful priors over the latent codes, is able to generate samples with quality that rivals that of state of the art GANs on multifaceted datasets such as ImageNet, while not suffering from GAN's known shortcomings such as mode collapse and lack of diversity."  
+>	"- Mean Squared Error loss on pixels  
+>	- non-autoregressive image decoder  
+>	- discrete latents w/ straight through estimator"  
+  - `video` <https://youtu.be/QoCyQBzi7us?t=57m37s> (Oord)
+  - `code` <https://github.com/deepmind/sonnet/blob/master/sonnet/examples/vqvae_example.ipynb>
 
 
 

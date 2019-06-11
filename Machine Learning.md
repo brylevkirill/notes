@@ -138,6 +138,7 @@
 
 #### conferences
 
+  - ICML 2019 [[videos](https://facebook.com/pg/icml.imls/videos)]
   - ICLR 2019 [[videos](https://facebook.com/pg/iclr.cc/videos)] [[videos](https://slideslive.com/iclr)] [[notes](https://david-abel.github.io/notes/iclr_2019.pdf)]
   - NeurIPS 2018 [[videos](https://neurips.cc/Conferences/2018/Videos)] [[videos](https://facebook.com/pg/nipsfoundation/videos)]
   - ICML 2018 [[videos](https://vimeo.com/channels/1408270/videos)] [[videos](https://facebook.com/icml.imls/videos)] [[notes](https://david-abel.github.io/blog/posts/misc/icml_2018.pdf)]
@@ -359,6 +360,7 @@
 ---
 ### meta-learning
 
+  [overview](https://facebook.com/icml.imls/videos/400619163874853?t=500) by Chelsea Finn and Sergey Levine `video`  
   [overview](https://facebook.com/nipsfoundation/videos/1554594181298482?t=277) by Pieter Abbeel `video`  
   [overview](https://vimeo.com/250423463) by Oriol Vinyals `video`  
   [overview](https://slideslive.com/38915714/metalearning-challenges-and-frontiers) by Chelsea Finn `video`  
@@ -456,6 +458,8 @@
   - [overview](https://youtu.be/H7AMB0oo__4?t=53m20s) by Zoubin Ghahramani `video`  
   - [overview](https://youtube.com/watch?v=WW2eunuApAU) by Zoubin Ghahramani `video`  
   - [overview](https://www.snn.ru.nl/v2/img/ml2015/slides/Ghahramani_nijmegen15part2.pdf) by Zoubin Ghahramani `slides`  
+
+  [AlphaD3M](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#alphad3m-machine-learning-pipeline-synthesis-drori-et-al) project  
 
 ----
 
@@ -623,8 +627,9 @@
 ### interesting papers - automated machine learning
 
 
-#### ["Design of the 2015 ChaLearn AutoML Challenge"](http://www.causality.inf.ethz.ch/AutoML/automl_ijcnn15.pdf) Guyon et al.
->	"ChaLearn is organizing for IJCNN 2015 an Automatic Machine Learning challenge (AutoML) to solve classification and regression problems from given feature representations, without any human intervention. This is a challenge with code submission: the code submitted can be executed automatically on the challenge servers to train and test learning machines on new datasets. However, there is no obligation to submit code. Half of the prizes can be won by just submitting prediction results. There are six rounds (Prep, Novice, Intermediate, Advanced, Expert, and Master) in which datasets of progressive difficulty are introduced (5 per round). There is no requirement to participate in previous rounds to enter a new round. The rounds alternate AutoML phases in which submitted code is “blind tested” on datasets the participants have never seen before, and Tweakathon phases giving time (~1 month) to the participants to improve their methods by tweaking their code on those datasets. This challenge will push the state-of-the-art in fully automatic machine learning on a wide range of problems taken from real world applications."
+#### ["AlphaD3M: Machine Learning Pipeline Synthesis"](https://www.cs.columbia.edu/~idrori/AlphaD3M.pdf) Drori et al.
+  `AlphaD3M` `meta-learning` `ICML 2018`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#alphad3m-machine-learning-pipeline-synthesis-drori-et-al>
 
 
 #### ["Population Based Training of Neural Networks"](https://arxiv.org/abs/1711.09846) Jaderberg et al.

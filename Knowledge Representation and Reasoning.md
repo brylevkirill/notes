@@ -220,6 +220,8 @@
 ---
 ### knowledge graph - information extraction and integration
 
+  [overview](https://soundcloud.com/nlp-highlights/83-knowledge-base-construction-with-sebastian-riedel) by Sebastian Riedel `audio`
+
   ["Data Integration and Machine Learning: A Natural Synergy"](https://youtube.com/watch?v=8RMSaFVPT1Q) tutorial by Luna Dong and Theo Rekatsinas `video`  
   ["Ceres: Harvesting Knowledge from Semi-Structured Web"](https://slideslive.com/38915799/ceres-harvesting-knowledge-from-semistructured-web) by Luna Dong `video`  
   ["Constructing and Mining Web-Scale Knowledge Graphs"](http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs) tutorial by Evgeniy Gabrilovich and Antoine Bordes `video`  
@@ -1054,7 +1056,8 @@
   [Never-Ending Language Learning](http://rtw.ml.cmu.edu/rtw) project
 
 ----
- 
+
+  overview by Tom Mitchell and Partha Talukdar ([[1]](https://facebook.com/icml.imls/videos/350412952342021), [[2]](https://facebook.com/icml.imls/videos/1083330081864839)) `video`  
   [overview](http://youtube.com/watch?v=psFnHkIjHA0) by Tom Mitchell `video`  
   [overview](http://videolectures.net/akbcwekex2012_mitchell_language_learning/) by Tom Mitchell `video`  
   [overview](http://youtube.com/watch?v=51q2IajH94A) by Tom Mitchell `video`  
@@ -1629,7 +1632,9 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 
 >	"Why not traditional QA? Information Retrieval systems work by querying some large knowledge base for terms similar to those in the query. But what if the query lacks informative terms? In such cases, we have to model the compositionality of the query. A dependency-tree recursive neural network model, QANTA, that computes distributed question representations to predict answers. QANTA outperforms multiple strong baselines and defeats human quiz bowl players when combined with IR methods."
 
+  - <http://qanta.org>
   - <http://umiacs.umd.edu/~jbg/projects/IIS-1320538.html>
+  - `video` <http://youtube.com/watch?v=vH8cUGFOwPk> (exhibition match against team of Jeopardy champions)
   - `video` <http://youtube.com/watch?v=LqsUaprYMOw> + <http://youtube.com/watch?v=-jbqiXvmY9w> (exhibition match against team of Jeopardy champions)
   - `video` <http://youtube.com/watch?v=kTXJCEvCDYk> (exhibition match against Ken Jennings)
   - `video` <http://youtube.com/watch?v=c2kGD1EdfFw> (exhibition match against Quiz Bowl champions)

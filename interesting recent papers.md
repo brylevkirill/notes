@@ -1261,7 +1261,16 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 #### ["Adversarial Variational Bayes: Unifying Variational Autoencoders and Generative Adversarial Networks"](http://arxiv.org/abs/1701.04722) Mescheder, Nowozin, Geiger
   `unifying GANs and VAEs`
->	"Real NVP can be used as an encoder in order to measure the gap between the unbiased KL estimate log q(z|x) - log p(z) and its approximation from GAN. We show that Adversarial Variational Bayes underestimates the KL divergence."  
+>	"We presented a new training procedure for Variational Autoencoders based on adversarial training. This allows us to make the inference model much more flexible, effectively allowing it to represent almost any family of conditional distributions over the latent variables."  
+>	"Adversarial Variational Bayes strives to optimize the same objective as a standard Variational Autoencoder, but approximates the Kullback-Leibler divergence using an adversary instead of relying on a closed-form formula."  
+>	"However, no other approach we are aware of allows to use black-box inference models parameterized by a general neural network that takes as input a data point and a noise vector and produces a sample from the approximate posterior."  
+>	"Interestingly, the approach of Adversarial Autoencoders can be regarded as an approximation to our approach, where T(x,z) is restricted to the class of functions that do not depend on x."  
+>	"Real NVP can be used as an encoder in order to measure the gap between the unbiased KL estimate log q(z|x) - log p(z) and its approximation from GAN."  
+>	"We show that Adversarial Variational Bayes underestimates the KL divergence."  
+>	"BiGANs are a recent extension of generative adversarial networks with the goal to add an inference network to the generative model. Similarly to our approach, the authors introduce an adversary that acts on pairs (x,z) of data points and latent codes. However, whereas in BiGANs the adversary is used to optimize the generative and inference networks separately, our approach optimizes the generative and inference model jointly. As a result, our approach obtains good reconstructions of the input data, whereas for BiGANs we obtain these reconstruction only indirectly."  
+>	"We often want to work with some Bayesian model but find its posterior distribution intractable. Variational inference is a way of coping with this problem. We learn an approximate posterior distribution, call it q(z|x), (along with the original model) by optimizing the following lowerbound:  
+>	log p(x|θ) ≥ ∫ q(z) log [p(x,z|θ) / q(z)] dz = E[log p(x|z,θ)] - E[log q(z|x)/p(z)]  
+>	where the expectations are taken with respect to the approximate posterior q. Usually we pick some known, common distribution q and optimize our hearts out. However, picking an appropriate q can be a challenge since we don't know what the true posterior really looks like and if we did, there'd be no need for variational inference. The clever trick with AVB is that the authors noticed that if the log [q(z|x)/p(z)] term can be replaced by something that doesn't require q(z|x) to be evaluated (i.e. to compute the actual probability), then the variational inference objective only requires that q(z|x) be sampled from, which can be done by a GAN-like generator network z = f(y) where y ~ N(0,1) and f is the neural network. They get around evaluating q by using a discriminator network to model the ratio directly."  
   - `video` <https://youtu.be/y7pUN2t5LrA?t=14m19s> (Nowozin)
   - `video` <https://youtu.be/xFCuXE1Nb8w?t=26m55s> (Nowozin)
   - `video` <https://youtu.be/m80Vp-jz-Io?t=1h28m34s> (Tolstikhin)
@@ -1529,6 +1538,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["A Style-Based Generator Architecture for Generative Adversarial Networks"](https://arxiv.org/abs/1812.04948) Karras, Laine, Aila
   `StyleGAN` `GAN applications` `image generation`
 >	"We propose an alternative generator architecture for generative adversarial networks, borrowing from style transfer literature. The new architecture leads to an automatically learned, unsupervised separation of high-level attributes (e.g., pose and identity when trained on human faces) and stochastic variation in the generated images (e.g., freckles, hair), and it enables intuitive, scale-specific control of the synthesis."  
+  - `video` <https://youtube.com/watch?v=kSLJriaOumA> (demo)
   - `video` <https://youtube.com/watch?v=4WL5EmYi_rA>
   - `post` <https://www.gwern.net/Faces>
 
@@ -1571,6 +1581,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks"](https://arxiv.org/abs/1703.10593) Zhu, Park, Isola, Efros
   `CycleGAN` `GAN applications` `domain translation`
   - <https://junyanz.github.io/CycleGAN/> (demo)
+  - `video` <https://youtube.com/watch?v=0AxgLbQfyjQ> (Chen)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1703.10593>
   - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/research/cycle_gan.py>
 
@@ -1614,26 +1625,16 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `paper` ["Adversarial Autoencoders"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#adversarial-autoencoders-makhzani-shlens-jaitly-goodfellow) by Makhzani et al. `summary`
 
 ----
+#### ["Generating Diverse High-Fidelity Images with VQ-VAE-2"](https://arxiv.org/abs/1906.00446) Razavi, Oord, Vinyals
+  `VQ-VAE`
+  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generating-diverse-high-fidelity-images-with-vq-vae-2-razavi-oord-vinyals>
+
 #### ["Neural Discrete Representation Learning"](https://arxiv.org/abs/1711.00937) Oord, Vinyals, Kavukcuoglu
   `VQ-VAE`
->	"Language is inherently discrete, similarly speech is typically represented as a sequence of symbols. Images can often be described concisely by language. Furthermore, discrete representations are a natural fit for complex reasoning, planning and predictive learning."  
->	"We introduce a new family of generative models succesfully combining the VAE framework with discrete latent representations through a novel parameterisation of the posterior distribution of (discrete) latents given an observation. Our model, which relies on vector quantization, is simple to train, does not suffer from large variance, and avoids the “posterior collapse” issue which has been problematic with many VAE models that have a powerful decoder, often caused by latents being ignored. Additionally, it is the first discrete latent VAE model that get similar performance as its continuous counterparts, while offering the flexibility of discrete distributions."  
->	"Since VQ-VAE can make effective use of the latent space, it can successfully model important features that usually span many dimensions in data space (for example objects span many pixels in images, phonemes in speech, the message in a text fragment, etc.) as opposed to focusing or spending capacity on noise and imperceptible details which are often local."  
->	"When paired with a powerful prior, our samples are coherent and high quality on a wide variety of applications such as speech and video generation. We use a PixelCNN over the discrete latents for images, and a WaveNet for raw audio. Training the prior and the VQ-VAE jointly, which could strengthen our results, is left as future research."  
->	"The discrete latent space captures the important aspects of the audio, such as the content of the speech, in a very compressed symbolic representation. Because of this we can now train another WaveNet on top of these latents which can focus on modeling the long-range temporal dependencies without having to spend too much capacity on imperceptible details. With enough data one could even learn a language model directly from raw audio."  
->	"When we condition the decoder in the VQ-VAE on the speaker-id, we can extract latent codes from a speech fragment and reconstruct with a different speaker-id. The VQ-VAE never saw any aligned data during training and was always optimizing the reconstruction of the orginal waveform. These experiments suggest that the encoder has factored out speaker-specific information in the encoded representations, as they have same meaning across different voice characteristics. This behaviour arises naturally because the decoder gets the speaker-id for free so the limited bandwith of latent codes gets used for other speaker-independent, phonetic information. In the paper we show that the latent codes discovered by the VQ-VAE are actually very closely related to the human-designed alphabet of phonemes."  
->	"We show promising results on learning long term structure of environments for reinforcement learning."  
-  - `post` <https://avdnoord.github.io/homepage/vqvae/> (demo)
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1711.00937>
-  - `slides` <https://avdnoord.github.io/homepage/slides/SANE2017.pdf>
-  - `code` <https://github.com/deepmind/sonnet/blob/master/sonnet/examples/vqvae_example.ipynb>
+  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#neural-discrete-representation-learning-oord-vinyals-kavukcuoglu>
 
 #### ["Variational Lossy Autoencoder"](http://arxiv.org/abs/1611.02731) Chen, Kingma, Salimans, Duan, Dhariwal, Schulman, Sutskever, Abbeel
->	"Information that can be modeled locally by decoding distribution p(x|z) without access to z will be encoded locally and only the remainder will be encoded in z.  
->	There are two ways to utilize this information:  
->	- Use explicit information placement to restrict the reception of the autoregressive model, thereby forcing the model to use the latent code z which is globally provided.  
->	- Parametrize the prior distribution with a autoregressive model showing that a type of autoregressive latent code can reduce inefficiency in Bits-Back coding."  
-  - `post` <http://tsong.me/blog/lossy-vae/>
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#variational-lossy-autoencoder-chen-kingma-salimans-duan-dhariwal-schulman-sutskever-abbeel>
 
 ----
 #### ["Grammar Variational Autoencoder"](http://arxiv.org/abs/1703.01925) Kusner, Paige, Hernandez-Lobato
@@ -2775,6 +2776,13 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/SAcHyzMdbXc?t=16m6s> (de Freitas)
 
 ----
+#### ["Skew-Fit: State-Covering Self-Supervised Reinforcement Learning"](https://arxiv.org/abs/1903.03698) Pong et al.
+  `Skew-Fit` `exploration guided by additional tasks`
+>	"In standard reinforcement learning, each new skill requires a manually-designed reward function, which takes considerable manual effort and engineering. Self-supervised goal setting has the potential to automate this process, enabling an agent to propose its own goals and acquire skills that achieve these goals. However, such methods typically rely on manually-designed goal distributions, or heuristics to force the agent to explore a wide range of states. We propose a formal exploration objective for goal-reaching policies that maximizes state coverage. We show that this objective is equivalent to maximizing the entropy of the goal distribution together with goal reaching performance, where goals correspond to entire states."  
+>	"Skew-Fit trains a generative model to closely approximate a uniform distribution over valid states, using data obtained via goal-conditioned reinforcement learning. Our method iteratively re-weights the samples for training the generative model, such that its entropy increases over the set of possible states, and our theoretical analysis gives conditions under which Skew-Fit converges to the uniform distribution. When such a model is used to choose goals for exploration and to relabeling goals for training, the resulting method results in much better coverage of the state space, enabling our method to explore effectively. Our experiments show that it produces quantifiable improvements when used along with goal-conditioned reinforcement learning on simulated robotic manipulation tasks, and can be used to learn a complex door opening skill to reach a 100% success rate directly on a real robot, without any human-provided reward supervision."  
+  - <https://sites.google.com/view/skew-fit>
+  - `video` <https://youtu.be/jAPJeJK18mw?t=10m28s> (Levine)
+
 #### ["Diversity is All You Need: Learning Skills without a Reward Function"](https://arxiv.org/abs/1802.06070) Eysenbach, Gupta, Ibarz, Levine
   `DIAYN` `exploration guided by additional tasks`
 >	"Intelligent creatures can explore their environments and learn useful skills without supervision. In this paper, we propose DIAYN ('Diversity is All You Need'), a method for learning useful skills without a reward function. Our proposed method learns skills by maximizing an information theoretic objective using a maximum entropy policy. On a variety of simulated robotic tasks, we show that this simple objective results in the unsupervised emergence of diverse skills, such as walking and jumping. In a number of reinforcement learning benchmark environments, our method is able to learn a skill that solves the benchmark task despite never receiving the true task reward. We show how pretrained skills can provide a good parameter initialization for downstream tasks, and can be composed hierarchically to solve complex, sparse reward tasks. Our results suggest that unsupervised discovery of skills can serve as an effective pretraining mechanism for overcoming challenges of exploration and data efficiency in reinforcement learning."  
@@ -3167,8 +3175,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Time-Contrastive Networks: Self-Supervised Learning from Video"](https://arxiv.org/abs/1704.06888) Sermanet, Lynch, Chebotar, Hsu, Jang, Schaal, Levine
   `TCN` `reinforcement learning from demonstrations`
 >	"Learn a self-supervised understanding of the world and use it to quickly learn real-world tasks, entirely from 3rd person videos of humans (addressing correspondence problem, no labels, no reward function design, providing sample-efficiency of RL, quickly learning tasks, no kinesthetic demonstrations)."  
+  - <https://sermanet.github.io/imitate>
   - `video` <https://youtube.com/watch?v=b1UTUQpxPSY>
   - `video` <https://vimeo.com/252185872> (Lynch)
+  - `video` <https://youtu.be/WRsxoVB8Yng?t=2h13m26s> (Sermanet)
   - `code` <https://github.com/tensorflow/models/tree/master/research/tcn>
 
 #### ["Learning from Demonstrations for Real World Reinforcement Learning"](https://arxiv.org/abs/1704.03732) Hester et al.
