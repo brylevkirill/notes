@@ -368,6 +368,7 @@
   `language modeling` `BERT`
 >	"Unlike recent language representation models (Peters et al., 2018; Radford et al., 2018), BERT is designed to pre-train deep bidirectional representations by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT representations can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications."  
   - `post` <https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html>
+  - `video` <https://youtu.be/AC4l_MY2Dhc?t=1h51m52s> (Srinivas)
   - `video` <https://youtu.be/BaPM47hO8p8> + <https://youtu.be/yqwnehmB9uQ> + <https://youtu.be/IF6xV0RI91s> + <https://youtu.be/4qDJwq42q-k> (Tatman)
   - `video` <https://youtube.com/watch?v=9-Om2YcHhIA> (Li)
   - `video` <https://youtube.com/watch?v=BhlOGGzC0Q0> + <https://youtube.com/watch?v=rMQMHA-uv_E> (Gharbieh)

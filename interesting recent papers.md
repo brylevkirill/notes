@@ -7,10 +7,10 @@ interesting recent papers:
   * [**few-shot learning**](#few-shot-learning)
   * [**unsupervised learning**](#unsupervised-learning)
   * [**generative models**](#generative-models)
-    - [**flow models**](#generative-models---flow-models)
     - [**generative adversarial networks**](#generative-models---generative-adversarial-networks)
     - [**variational autoencoders**](#generative-models---variational-autoencoders)
     - [**autoregressive models**](#generative-models---autoregressive-models)
+    - [**flow models**](#generative-models---flow-models)
   * [**reinforcement learning**](#reinforcement-learning---model-free-methods)
     - [**model-free methods**](#reinforcement-learning---model-free-methods)
     - [**model-based methods**](#reinforcement-learning---model-based-methods)
@@ -403,6 +403,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Importance Weighted Autoencoders"](http://arxiv.org/abs/1509.00519) Burda, Grosse, Salakhutdinov
   `variational inference` `posterior approximation`
 >	"As we show empirically, the VAE objective can lead to overly simplified representations which fail to use the network's entire modeling capacity. We present the importance weighted autoencoder, a generative model with the same architecture as the VAE, but which uses a strictly tighter log-likelihood lower bound derived from importance weighting. In the IWAE, the recognition network uses multiple samples to approximate the posterior, giving it increased flexibility to model complex posteriors which do not fit the VAE modeling assumptions."  
+  - `video` <https://youtu.be/0IoLKnAg6-s?t=14m41s> (Chen)
   - `video` <https://facebook.com/nipsfoundation/videos/1555493854541848?t=1771> (Teh)
   - `post` <http://dustintran.com/blog/importance-weighted-autoencoders/>
   - `post` <https://casmls.github.io/general/2017/04/24/iwae-aae.html>
@@ -944,12 +945,111 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 ### unsupervised learning
 
 ----
-#### ["Causal Reasoning from Meta-reinforcement Learning"](https://arxiv.org/abs/1901.08162) Dasgupta et al.
-  `causal learning`
-  - <https://github.com/brylevkirill/notes/blob/master/Causal%20Inference.md#causal-reasoning-from-meta-reinforcement-learning-dasgupta-et-al>
+#### ["Neural Scene Representation and Rendering"](https://deepmind.com/documents/211/Neural_Scene_Representation_and_Rendering_preprint.pdf) Eslami et al.
+  `GQN` `concept learning`
+>	"Generative Query Network is composed of two parts: a representation network and a generation network. The representation network takes the agent's observations as its input and produces a representation (a vector) which describes the underlying scene. The generation network then predicts (‘imagines’) the scene from a previously unobserved viewpoint. The representation network does not know which viewpoints the generation network will be asked to predict, so it must find an efficient way of describing the true layout of the scene as accurately as possible. It does this by capturing the most important elements, such as object positions, colours and the room layout, in a concise distributed representation. During training, the generator learns about typical objects, features, relationships and regularities in the environment. This shared set of ‘concepts’ enables the representation network to describe the scene in a highly compressed, abstract manner, leaving it to the generation network to fill in the details where necessary. For instance, the representation network will succinctly represent ‘blue cube’ as a small set of numbers and the generation network will know how that manifests itself as pixels from a particular viewpoint."  
+>	"The GQN’s generation network can ‘imagine’ previously unobserved scenes from new viewpoints with remarkable precision. When given a scene representation and new camera viewpoints, it generates sharp images without any prior specification of the laws of perspective, occlusion, or lighting. The generation network is therefore an approximate renderer that is learned from data."  
+>	"The GQN’s representation network can learn to count, localise and classify objects without any object-level labels. Even though its representation can be very small, the GQN’s predictions at query viewpoints are highly accurate and almost indistinguishable from ground-truth."  
+>	"The GQN can represent, measure and reduce uncertainty. It is capable of accounting for uncertainty in its beliefs about a scene even when its contents are not fully visible, and it can combine multiple partial views of a scene to form a coherent whole."  
+>	"Classical neural approaches to this learning problem - e.g., autoencoding and density models - are required to capture only the distribution of observed images, and there is no explicit mechanism to encourage learning of how different views of the same 3D scene relate to one another. The expectation is that statistical compression principles will be sufficient to enable networks to discover the 3D structure of the environment; however, in practice, they fall short of achieving this kind of meaningful representation and instead focus on regularities of colors and patches in the image space."  
+>	"Analysis of the trained GQN highlights several desirable properties of its scene representation network. Two-dimensional t-distributed stochastic neighbour embedding (t-SNE) visualisation of GQN scene representation vectors shows clear clustering of images of the same scene despite marked changes in viewpoint. In contrast, representations produced by auto-encoding density models such as variational auto-encoders (VAE) apparently fail to capture the contents of the underlying scenes; they appear to be representations of the observed images instead. Furthermore, when prompted to reconstruct a target image, GQN exhibits compositional behaviour as it is capable of both representing and rendering combinations of scene elements it has never encountered during training despite learning that these compositions are unlikely."  
+>	"To test whether the GQN learns a factorized representation, we investigated whether changing a single scene property (e.g., object colour) whilst keeping others fixed (e.g., object shape and position), leads to similar changes in the scene representation (as defined by mean cosine-similarity across scenes). We found that object colour, shape, and size; light position; and, to a lesser extent, object positions are indeed factorized. We also found that the GQN is able to carry out ‘scene algebra’ [akin to word embedding algebra]. By adding and subtracting representations of related scenes, we found that object and scene properties can be controlled, even across object positions. Finally, because it is a probabilistic model, GQN also learns to integrate information from different viewpoints in an efficient and consistent manner, as demonstrated by a reduction in its Bayesian ‘surprise’ at observing a heldout image of a scene as the number of views increases."  
+  - `video` <https://youtube.com/watch?v=G-kWNQJ4idw> (demo)
+  - `video` <https://youtube.com/watch?v=IVSZnTknyqw> (demo)
+  - `video` <https://youtube.com/watch?v=XJnuEO59XfQ> (Chen)
+  - `post` <https://deepmind.com/blog/neural-scene-representation-and-rendering>
+  - `code` <https://github.com/wohlert/generative-query-network-pytorch>
+  - `code` <https://github.com/ogroth/tf-gqn>
+  - `paper` <http://science.sciencemag.org/content/sci/360/6394/1204.full.pdf>
+
+#### ["Synthesizing Programs for Images using Reinforced Adversarial Learning"](https://arxiv.org/abs/1804.01118) Ganin, Kulkarni, Babuschkin, Eslami, Vinyals
+  `SPIRAL` `concept learning` `program synthesis`
+>	"Adversarially trained agent that generates a program which is executed by a graphics engine to interpret and sample images. The goal of this agent is to fool a discriminator network that distinguishes between real and rendered data, trained with a distributed reinforcement learning setup without any supervision. To the best of our knowledge, this is the first demonstration of an end-to-end, unsupervised and adversarial inverse graphics agent on challenging real world and synthetic 3D datasets."  
+>	"Trust discriminator to guide learning by using its score as reward for IMPALA agent instead of propagating gradients as in typical GAN."  
+>	"Goal is to achieve better generalisation through use of tools in grounded environment."  
+>	"Unsupervised learning is not only about predicting inputs - SPIRAL learns the rewards through which learning happens and learns the policy to generate a program that generates inputs."  
+  - `post` <https://deepmind.com/blog/learning-to-generate-images>
+  - `video` <https://youtu.be/iSyvwAwa7vk> (demo)
+  - `video` <https://youtube.com/watch?v=kkihoMMpBb0> (Vinyals)
+  - `video` <https://facebook.com/iclr.cc/videos/2125495797479475?t=2069> (Kavukcuoglu)
+
+#### ["Relational Neural Expectation Maximization: Unsupervised Discovery of Objects and their Interactions"](https://arxiv.org/abs/1802.10353) Steenkiste, Chang, Greff, Schmidhuber
+  `concept learning` `clustering`
+>	"A novel method that learns to discover objects and model their physical interactions from raw visual images in a purely unsupervised fashion. It incorporates prior knowledge about the compositional nature of human perception to factor interactions between object-pairs and learn efficiently."  
+>	"We have argued that in order to solve this problem we need to exploit the compositional structure of a visual scene. Conventional unsupervised representation learning approaches (e.g. VAEs ang GANs) learn a single distributed representation that superimposes information about the input, without imposing any structure regarding objects or other low-level primitives. These monolithic representations can not factorize physical interactions between pairs of objects and therefore lack an essential inductive bias to learn these efficiently. Hence, we require an alternative approach that can discover objects representations as primitives of a visual scene in an unsupervised fashion. One such approach is Neural Expectation Maximization, which learns a separate distributed representation for each object described in terms of the same features through an iterative process of perceptual grouping and representation learning. The compositional nature of these representations enable us to formulate Relational N-EM: a novel unsupervised approach to common-sense physical reasoning that combines N-EM with an interaction function that models relations between objects efficiently."  
+  - <https://sites.google.com/view/r-nem-gifs>
+  - `video` <https://youtu.be/IjkNnu8CCnY?t=30m55s> (Chang)
+  - `paper` ["Neural Expectation Maximization"](https://arxiv.org/abs/1708.03498) by Greff, Steenkiste, Schmidhuber
+
+#### ["SCAN: Learning Abstract Hierarchical Compositional Visual Concepts"](https://arxiv.org/abs/1707.03389) Higgins, Sonnerat, Matthey, Pal, Burgess, Botvinick, Hassabis, Lerchner
+  `concept learning` `β-VAE` `VAE`
+>	"We first use the previously published beta-VAE architecture to learn a disentangled representation of the latent structure of the visual world, before training SCAN to extract abstract concepts grounded in such disentangled visual primitives through fast symbol association."  
+  - `post` <https://deepmind.com/blog/imagine-creating-new-visual-concepts-recombining-familiar-ones/>
+  - `video` <https://youtu.be/XNGo9xqpgMo?t=18m43s> (Higgins)
+
+#### ["Generative Models of Visually Grounded Imagination"](https://arxiv.org/abs/1705.10762) Vedantam, Fischer, Huang, Murphy
+  `concept learning` `VAE`
+>	"Consider how easy it is for people to imagine what a "purple hippo" would look like, even though they do not exist. If we instead said "purple hippo with wings", they could just as easily create a different internal mental representation, to represent this more specific concept. To assess whether the person has correctly understood the concept, we can ask them to draw a few sketches, to illustrate their thoughts. We call the ability to map text descriptions of concepts to latent representations and then to images (or vice versa) visually grounded semantic imagination. We propose a latent variable model for images and attributes, based on variational auto-encoders, which can perform this task. Our method uses a novel training objective, and a novel product-of-experts inference network, which can handle partially specified (abstract) concepts in a principled and efficient way."  
+  - `video` <https://youtu.be/CoXE5DhTX-A?t=35m46s> (Murphy)
+  - `video` <https://youtu.be/IyP1pxgM_eE?t=1h5m14s> (Murphy)
+  - `code` <https://github.com/google/joint_vae>
+
+#### ["Generative Temporal Models with Memory"](http://arxiv.org/abs/1702.04649) Gemici, Hung, Santoro, Wayne, Mohamed, Rezende, Amos, Lillicrap
+  `concept learning` `VAE`
+>	"A sufficiently powerful temporal model should separate predictable elements of the sequence from unpredictable elements, express uncertainty about those unpredictable elements, and rapidly identify novel elements that may help to predict the future. To create such models, we introduce Generative Temporal Models augmented with external memory systems."  
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1702.04649>
+
+#### ["Towards Conceptual Compression"](http://arxiv.org/abs/1604.08772) Gregor, Besse, Rezende, Danihelka, Wierstra
+  `concept learning` `VAE`
+  - `video` <https://cds.cern.ch/record/2302480> (49:02) (55:12) (Rezende)
+  - `poster` <https://pbs.twimg.com/media/Cy3pYfWWIAA_C9h.jpg:large>
+
+#### ["Attend, Infer, Repeat: Fast Scene Understanding with Generative Models"](http://arxiv.org/abs/1603.08575) Eslami, Heess, Weber, Tassa, Szepesvari, Kavukcuoglu, Hinton
+  `concept learning` `VAE`
+>	"Learning to perform inference in partially specified 2D models (variable-sized variational auto-encoders) and fully specified 3D models (probabilistic renderers)."  
+>	"Models learn to identify multiple objects - counting, locating and classifying the elements of a scene - without any supervision, e.g., decomposing 3D images with various numbers of objects in a single forward pass of a neural network."  
+  - `video` <https://youtube.com/watch?v=4tc84kKdpY4> (demo)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/EslamiHWTKH16>
+  - `post` <http://akosiorek.github.io/ml/2017/09/03/implementing-air.html>
+  - `post` <http://pyro.ai/examples/air.html>
+  - `notes` <http://tuananhle.co.uk/notes/air.html>
+  - `code` <https://github.com/akosiorek/attend_infer_repeat>
+  - `code` <https://github.com/uber/pyro/tree/dev/examples/air>
+
+----
+#### ["Towards a Definition of Disentangled Representations"](https://arxiv.org/abs/1812.02230) Higgins, Amos, Pfau, Racaniere, Matthey, Rezende, Lerchner
+  `disentangled representations`
+>	"How can intelligent agents solve a diverse set of tasks in a data-efficient manner? The disentangled representation learning approach posits that such an agent would benefit from separating out (disentangling) the underlying structure of the world into disjoint parts of its representation. However, there is no generally agreed-upon definition of disentangling, not least because it is unclear how to formalise the notion of world structure beyond toy datasets with a known ground truth generative process. Here we propose that a principled solution to characterising disentangled representations can be found by focusing on the transformation properties of the world. In particular, we suggest that those transformations that change only some properties of the underlying world state, while leaving all other properties invariant, are what gives exploitable structure to any kind of data. Similar ideas have already been successfully applied in physics, where the study of symmetry transformations has revolutionised the understanding of the world structure. By connecting symmetry transformations to vector representations using the formalism of group and representation theory we arrive at the first formal definition of disentangled representations. Our new definition is in agreement with many of the current intuitions about disentangling, while also providing principled resolutions to a number of previous points of contention. While this work focuses on formally defining disentangling – as opposed to solving the learning problem – we believe that the shift in perspective to studying data transformations can stimulate the development of better representation learning algorithms."  
+
+#### ["Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations"](https://arxiv.org/abs/1811.12359) Locatello, Bauer, Lucic, Gelly, Scholkopf, Bachem
+  `disentangled representations` `VAE` `ICML 2019`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#challenging-common-assumptions-in-the-unsupervised-learning-of-disentangled-representations-locatello-bauer-lucic-gelly-scholkopf-bachem>
+
+#### ["Understanding Disentangling in β-VAE"](https://arxiv.org/abs/1804.03599) Burgess et al.
+  `β-VAE` `disentangled representations` `VAE`
+>	"We present new intuitions and theoretical assessments of the emergence of disentangled representation in variational autoencoders. Taking a rate-distortion theory perspective, we show the circumstances under which representations aligned with the underlying generative factors of variation of data emerge when optimising the modified ELBO bound in β-VAE, as training progresses. From these insights, we propose a modification to the training regime of β-VAE, that progressively increases the information capacity of the latent code during training. This modification facilitates the robust learning of disentangled representations in β-VAE, without the previous trade-off in reconstruction accuracy."  
+  - `post` <https://towardsdatascience.com/what-a-disentangled-net-we-weave-representation-learning-in-vaes-pt-1-9e5dbc205bd1>
+
+#### ["beta-VAE: Learning Basic Visual Concepts with a Constrained Variational Framework"](http://openreview.net/forum?id=Sy2fzU9gl) Higgins, Matthey, Pal, Burgess, Glorot, Botvinick, Mohamed, Lerchner
+  `β-VAE` `disentangled representations` `VAE`
+>	"This paper proposes a modification of the variational ELBO in encourage 'disentangled' representations, and proposes a measure of disentanglement."  
+>	"Beta-VAE is a VAE with beta coefficient in KL divergence term where beta=1 is exactly same formulation of vanilla VAE. By increasing beta, the weighted factor forces model to learn more disentangled representation than VAE. The authors also proposed disentanglement metric by training a simple classifier with low capacity and use it’s prediction accuracy. But the metric can be only calculated in simulator (ground truth generator) setting where we can control independent factors to generate different samples with controlled property."  
+  - <http://tinyurl.com/jgbyzke> (demo)
+  - `video` <https://youtu.be/XNGo9xqpgMo?t=10m8s> (Higgins)
+  - `video` <https://youtu.be/Wgvcxd98tvU?t=27m17s> (Achille)
+  - `post` <https://lilianweng.github.io/lil-log/2018/08/12/from-autoencoder-to-beta-vae.html#beta-vae>
+
+#### ["Early Visual Concept Learning with Unsupervised Deep Learning"](http://arxiv.org/abs/1606.05579) Higgins, Matthey, Glorot, Pal, Uria, Blundell, Mohamed, Lerchner
+  `β-VAE` `disentangled representations` `VAE`
+  - `video` <https://cds.cern.ch/record/2302480> (52:29) (Rezende)
+  - `code` <https://github.com/loliverhennigh/Early-Visual-Concept-Learning-Recreation-of-Some-Results>
+
+#### ["Learning Disentangled Representations with Semi-Supervised Deep Generative Models"](http://arxiv.org/abs/1706.00400) Siddharth, Paige, Meent, Desmaison, Goodman, Kohli, Wood, Torr
+  `disentangled representations` `VAE`
+>	"Variational autoencoders learn representations of data by jointly training a probabilistic encoder and decoder network. Typically these models encode all features of the data into a single variable. Here we are interested in learning disentangled representations that encode distinct aspects of the data into separate variables. We propose to learn such representations using model architectures that generalize from standard VAEs, employing a general graphical model structure in the encoder and decoder. This allows us to train partially-specified models that make relatively strong assumptions about a subset of interpretable variables and rely on the flexibility of neural networks to learn representations for the remaining variables."  
 
 #### ["Independently Controllable Features"](https://arxiv.org/abs/1708.01289) Thomas, Pondard, Bengio, Sarfati, Beaudoin, Meurs, Pineau, Precup, Bengio
-  `causal learning`
+  `disentangled representations` `controlling environment`
 >	"It has been postulated that a good representation is one that disentangles the underlying explanatory factors of variation. However, it remains an open question what kind of training framework could potentially achieve that. Whereas most previous work focuses on the static setting (e.g. with images), we postulate that some of the causal factors could be discovered if the learner is allowed to interact with its environment. The agent can experiment with different actions and observe their effects. We hypothesize that some of these factors correspond to aspects of the environment which are independently controllable, i.e., that there exists a policy and a learnable feature for each such aspect of the environment, such that this policy can yield changes in that feature with minimal changes to other features that explain the statistical variations in the observed data."  
 >	"In interactive environments, the temporal dependency between successive observations creates a new opportunity to notice causal structure in data which may not be apparent using only observational studies. In reinforcement learning, several approaches explore mechanisms that push the internal representations of learned models to be “good” in the sense that they provide better control, and control is a particularly important causal relationship between an agent and elements of its environment."  
 >	"We propose and explore a more direct mechanism for representation learning, which explicitly links an agent’s control over its environment with its internal feature representations. Specifically, we hypothesize that some of the factors explaining variations in the data correspond to aspects of the world that can be controlled by the agent. For example, an object that could be pushed around or picked up independently of others is an independently controllable aspect of the environment. Our approach therefore aims to jointly discover a set of features (functions of the environment state) and policies (which change the state) such that each policy controls the associated feature while leaving the other features unchanged as much as possible."  
@@ -964,151 +1064,14 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/Yr1mOzC93xs?t=23m13s> (Bengio)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/BengioTPPB17>
 
-#### ["Discovering Causal Signals in Images"](https://arxiv.org/abs/1605.08179) Lopez-Paz, Nishihara, Chintala, Scholkopf, Bottou
-  `causal learning`
->	"First, we take a learning approach to observational causal inference, and build a classifier that achieves state-of-the-art performance on finding the causal direction between pairs of random variables, when given samples from their joint distribution. Second, we use our causal direction finder to effectively distinguish between features of objects and features of their contexts in collections of static images. Our experiments demonstrate the existence of (1) a relation between the direction of causality and the difference between objects and their contexts, and (2) observable causal signals in collections of static images."  
->	"Causal features are those that cause the presence of the object of interest in the image (that is, those features that cause the object’s class label), while anticausal features are those caused by the presence of the object in the image (that is, those features caused by the class label)."  
->	"Paper aims to verify experimentally that the higher-order statistics of image datasets can inform about causal relations. Authors conjecture that object features and anticausal features are closely related and vice-versa context features and causal features are not necessarily related. Context features give the background while object features are what it would be usually inside bounding boxes in an image dataset."  
->	"Better algorithms for causal direction should, in principle, help learning features that generalize better when the data distribution changes. Causality should help with building more robust features by awareness of the generating process of the data."  
-  - `video` <https://youtube.com/watch?v=DfJeaa--xO0> (Bottou)
-  - `post` <http://giorgiopatrini.org/posts/2017/09/06/in-search-of-the-missing-signals/>
-
-----
-#### ["Towards a Definition of Disentangled Representations"](https://arxiv.org/abs/1812.02230) Higgins, Amos, Pfau, Racaniere, Matthey, Rezende, Lerchner
-  `concept learning`
->	"How can intelligent agents solve a diverse set of tasks in a data-efficient manner? The disentangled representation learning approach posits that such an agent would benefit from separating out (disentangling) the underlying structure of the world into disjoint parts of its representation. However, there is no generally agreed-upon definition of disentangling, not least because it is unclear how to formalise the notion of world structure beyond toy datasets with a known ground truth generative process. Here we propose that a principled solution to characterising disentangled representations can be found by focusing on the transformation properties of the world. In particular, we suggest that those transformations that change only some properties of the underlying world state, while leaving all other properties invariant, are what gives exploitable structure to any kind of data. Similar ideas have already been successfully applied in physics, where the study of symmetry transformations has revolutionised the understanding of the world structure. By connecting symmetry transformations to vector representations using the formalism of group and representation theory we arrive at the first formal definition of disentangled representations. Our new definition is in agreement with many of the current intuitions about disentangling, while also providing principled resolutions to a number of previous points of contention. While this work focuses on formally defining disentangling – as opposed to solving the learning problem – we believe that the shift in perspective to studying data transformations can stimulate the development of better representation learning algorithms."  
-
-#### ["Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations"](https://arxiv.org/abs/1811.12359) Locatello, Bauer, Lucic, Gelly, Scholkopf, Bachem
-  `concept learning`
->	"The key assumption is that real-world data is generated by a few explanatory factors of variation and that these factors can be recovered by unsupervised learning algorithms. A large number of unsupervised learning approaches based on auto-encoding and quantitative evaluation metrics of disentanglement have been proposed; yet, the efficacy of the proposed approaches and utility of proposed notions of disentanglement has not been challenged in prior work. In this paper, we provide a sober look on recent progress in the field and challenge some common assumptions."  
->	"We first theoretically show that the unsupervised learning of disentangled representations is fundamentally impossible without inductive biases on both the models and the data. Then, we train more than 12 000 models covering the six most prominent methods, and evaluate them across six disentanglement metrics in a reproducible large-scale experimental study on seven different data sets. On the positive side, we observe that different methods successfully enforce properties “encouraged” by the corresponding losses. On the negative side, we observe that in our study (1) “good” hyperparameters seemingly cannot be identified without access to ground-truth labels, (2) good hyperparameters neither transfer across data sets nor across disentanglement metrics, and (3) that increased disentanglement does not seem to lead to a decreased sample complexity of learning for downstream tasks."  
->	"We theoretically prove that (perhaps unsurprisingly) the unsupervised learning of disentangled representations is fundamentally impossible without inductive biases both on the considered learning approaches and the data sets."  
->	"We investigate current approaches and their inductive biases in a reproducible large-scale experimental study with a sound experimental protocol for unsupervised disentanglement learning. We implement from scratch six recent unsupervised disentanglement learning methods as well as six disentanglement measures and train more than 12 000 models on seven data sets."  
->	"We evaluate our experimental results and challenge many common assumptions in unsupervised disentanglement learning: (i) While all considered methods prove effective at ensuring that the individual dimensions of the aggregated posterior (which is sampled) are not correlated, only one method also consistently ensures that the individual dimensions of the representation (which is taken to be the mean) are not correlated. (ii) We do not find any evidence that they can be used to reliably learn disentangled representations in an unsupervised manner as hyper parameters seem to matter more than the model and “good” hyperparameters seemingly cannot be identified without access to ground-truth labels. Similarly, we observe that good hyperparameters neither transfer across data sets nor across disentanglement metrics. (iii) For the considered models and data sets, we cannot validate the assumption that disentanglement is useful for downstream tasks, for example through a decreased sample complexity of learning."  
->	"Based on these empirical evidence, we suggest three critical areas of further research: (i) The role of inductive biases and implicit and explicit supervision should be made explicit: unsupervised model selection persists as a key question. (ii) The concrete practical benefits of enforcing a specific notion of disentanglement of the learned representations should be demonstrated. (iii) Experiments should be conducted in a reproducible experimental setup on data sets of varying degrees of difficulty."  
-  - `post` <https://ai.googleblog.com/2019/04/evaluating-unsupervised-learning-of.html>
-  - `video` <https://slideslive.com/38915874/challenging-common-assumptions-in-the-unsupervised-learning-of-disentangled-representations> (Locatello)
-  - `video` <https://youtube.com/watch?v=WYrvh50yu6s> (Kilcher)
-  - `code` <https://github.com/google-research/disentanglement_lib>
-
-#### ["Neural Scene Representation and Rendering"](https://deepmind.com/documents/211/Neural_Scene_Representation_and_Rendering_preprint.pdf) Eslami et al.
-  `GQN` `concept learning`
->	"Generative Query Network, a framework within which machines learn to represent scenes using only their own sensors. The GQN takes as input images of a scene taken from different viewpoints, constructs an internal representation, and uses this representation to predict the appearance of that scene from previously unobserved viewpoints. The GQN demonstrates representation learning without human labels or domain knowledge, paving the way toward machines that autonomously learn to understand the world around them."  
->	"Classical neural approaches to this learning problem - e.g., autoencoding and density models - are required to capture only the distribution of observed images, and there is no explicit mechanism to encourage learning of how different views of the same 3D scene relate to one another. The expectation is that statistical compression principles will be sufficient to enable networks to discover the 3D structure of the environment; however, in practice, they fall short of achieving this kind of meaningful representation and instead focus on regularities of colors and patches in the image space."  
-  - `video` <https://youtube.com/watch?v=G-kWNQJ4idw> (demo)
-  - `video` <https://youtube.com/watch?v=IVSZnTknyqw> (demo)
-  - `video` <https://youtube.com/watch?v=XJnuEO59XfQ> (Chen)
-  - `post` <https://deepmind.com/blog/neural-scene-representation-and-rendering>
-  - `code` <https://github.com/wohlert/generative-query-network-pytorch>
-  - `code` <https://github.com/ogroth/tf-gqn>
-  - `paper` <http://science.sciencemag.org/content/sci/360/6394/1204.full.pdf>
-
-#### ["Relational Neural Expectation Maximization: Unsupervised Discovery of Objects and their Interactions"](https://arxiv.org/abs/1802.10353) Steenkiste, Chang, Greff, Schmidhuber
-  `concept learning`
->	"A novel method that learns to discover objects and model their physical interactions from raw visual images in a purely unsupervised fashion. It incorporates prior knowledge about the compositional nature of human perception to factor interactions between object-pairs and learn efficiently."  
-  - <https://sites.google.com/view/r-nem-gifs>
-  - `video` <https://youtu.be/IjkNnu8CCnY?t=30m55s> (Chang)
-
-#### ["Neural Expectation Maximization"](https://arxiv.org/abs/1708.03498) Greff, Steenkiste, Schmidhuber
-  `concept learning`
->	"differentiable clustering method that simultaneously learns how to group and represent individual entities"  
-  - `code` <https://github.com/sjoerdvansteenkiste/Neural-EM>
-
-#### ["Generative Models of Visually Grounded Imagination"](https://arxiv.org/abs/1705.10762) Vedantam, Fischer, Huang, Murphy
-  `concept learning`
->	"Consider how easy it is for people to imagine what a "purple hippo" would look like, even though they do not exist. If we instead said "purple hippo with wings", they could just as easily create a different internal mental representation, to represent this more specific concept. To assess whether the person has correctly understood the concept, we can ask them to draw a few sketches, to illustrate their thoughts. We call the ability to map text descriptions of concepts to latent representations and then to images (or vice versa) visually grounded semantic imagination. We propose a latent variable model for images and attributes, based on variational auto-encoders, which can perform this task. Our method uses a novel training objective, and a novel product-of-experts inference network, which can handle partially specified (abstract) concepts in a principled and efficient way."  
-  - `video` <https://youtu.be/CoXE5DhTX-A?t=35m46s> (Murphy)
-  - `video` <https://youtu.be/IyP1pxgM_eE?t=1h5m14s> (Murphy)
-  - `code` <https://github.com/google/joint_vae>
-
-#### ["Understanding Disentangling in β-VAE"](https://arxiv.org/abs/1804.03599) Burgess et al.
-  `concept learning` `β-VAE`
->	"We present new intuitions and theoretical assessments of the emergence of disentangled representation in variational autoencoders. Taking a rate-distortion theory perspective, we show the circumstances under which representations aligned with the underlying generative factors of variation of data emerge when optimising the modified ELBO bound in β-VAE, as training progresses. From these insights, we propose a modification to the training regime of β-VAE, that progressively increases the information capacity of the latent code during training. This modification facilitates the robust learning of disentangled representations in β-VAE, without the previous trade-off in reconstruction accuracy."  
-  - `post` <https://towardsdatascience.com/what-a-disentangled-net-we-weave-representation-learning-in-vaes-pt-1-9e5dbc205bd1>
-
-#### ["SCAN: Learning Abstract Hierarchical Compositional Visual Concepts"](https://arxiv.org/abs/1707.03389) Higgins, Sonnerat, Matthey, Pal, Burgess, Botvinick, Hassabis, Lerchner
-  `concept learning` `β-VAE`
->	"We first use the previously published beta-VAE (Higgins et al., 2017a) architecture to learn a disentangled representation of the latent structure of the visual world, before training SCAN to extract abstract concepts grounded in such disentangled visual primitives through fast symbol association."  
-  - `post` <https://deepmind.com/blog/imagine-creating-new-visual-concepts-recombining-familiar-ones/>
-  - `video` <https://youtu.be/XNGo9xqpgMo?t=18m43s> (Higgins)
-
-#### ["beta-VAE: Learning Basic Visual Concepts with a Constrained Variational Framework"](http://openreview.net/forum?id=Sy2fzU9gl) Higgins, Matthey, Pal, Burgess, Glorot, Botvinick, Mohamed, Lerchner
-  `concept learning` `β-VAE`
->	"This paper proposes a modification of the variational ELBO in encourage 'disentangled' representations, and proposes a measure of disentanglement."  
->	"Beta-VAE is a VAE with beta coefficient in KL divergence term where beta=1 is exactly same formulation of vanilla VAE. By increasing beta, the weighted factor forces model to learn more disentangled representation than VAE. The authors also proposed disentanglement metric by training a simple classifier with low capacity and use it’s prediction accuracy. But the metric can be only calculated in simulator (ground truth generator) setting where we can control independent factors to generate different samples with controlled property."  
-  - <http://tinyurl.com/jgbyzke> (demo)
-  - `video` <https://youtu.be/XNGo9xqpgMo?t=10m8s> (Higgins)
-  - `video` <https://youtu.be/Wgvcxd98tvU?t=27m17s> (Achille)
-  - `post` <https://lilianweng.github.io/lil-log/2018/08/12/from-autoencoder-to-beta-vae.html#beta-vae>
-
-#### ["Early Visual Concept Learning with Unsupervised Deep Learning"](http://arxiv.org/abs/1606.05579) Higgins, Matthey, Glorot, Pal, Uria, Blundell, Mohamed, Lerchner
-  `concept learning` `β-VAE`
-  - `video` <https://cds.cern.ch/record/2302480> (52:29) (Rezende)
-  - `code` <https://github.com/loliverhennigh/Early-Visual-Concept-Learning-Recreation-of-Some-Results>
-
-#### ["Towards Conceptual Compression"](http://arxiv.org/abs/1604.08772) Gregor, Besse, Rezende, Danihelka, Wierstra
-  `concept learning`
-  - `video` <https://cds.cern.ch/record/2302480> (49:02) (55:12) (Rezende)
-  - `poster` <https://pbs.twimg.com/media/Cy3pYfWWIAA_C9h.jpg:large>
-
-#### ["Attend, Infer, Repeat: Fast Scene Understanding with Generative Models"](http://arxiv.org/abs/1603.08575) Eslami, Heess, Weber, Tassa, Szepesvari, Kavukcuoglu, Hinton
-  `concept learning`
->	"Learning to perform inference in partially specified 2D models (variable-sized variational auto-encoders) and fully specified 3D models (probabilistic renderers)."  
->	"Models learn to identify multiple objects - counting, locating and classifying the elements of a scene - without any supervision, e.g., decomposing 3D images with various numbers of objects in a single forward pass of a neural network."  
-  - `video` <https://youtube.com/watch?v=4tc84kKdpY4> (demo)
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/EslamiHWTKH16>
-  - `post` <http://akosiorek.github.io/ml/2017/09/03/implementing-air.html>
-  - `post` <http://pyro.ai/examples/air.html>
-  - `notes` <http://tuananhle.co.uk/notes/air.html>
-  - `code` <https://github.com/akosiorek/attend_infer_repeat>
-  - `code` <https://github.com/uber/pyro/tree/dev/examples/air>
-
-----
-#### ["Synthesizing Programs for Images using Reinforced Adversarial Learning"](https://arxiv.org/abs/1804.01118) Ganin, Kulkarni, Babuschkin, Eslami, Vinyals
-  `SPIRAL` `learning disentangled representation`
->	"Adversarially trained agent that generates a program which is executed by a graphics engine to interpret and sample images. The goal of this agent is to fool a discriminator network that distinguishes between real and rendered data, trained with a distributed reinforcement learning setup without any supervision. To the best of our knowledge, this is the first demonstration of an end-to-end, unsupervised and adversarial inverse graphics agent on challenging real world and synthetic 3D datasets."  
->	"Trust discriminator to guide learning by using its score as reward for IMPALA agent instead of propagating gradients as in typical GAN."  
->	"Goal is to achieve better generalisation through use of tools in grounded environment."  
->	"Unsupervised learning is not only about predicting inputs - SPIRAL learns the rewards through which learning happens and learns the policy to generate a program that generates inputs."  
-  - `post` <https://deepmind.com/blog/learning-to-generate-images>
-  - `video` <https://youtu.be/iSyvwAwa7vk> (demo)
-  - `video` <https://youtube.com/watch?v=kkihoMMpBb0> (Vinyals)
-  - `video` <https://facebook.com/iclr.cc/videos/2125495797479475?t=2069> (Kavukcuoglu)
-
-#### ["Generative Temporal Models with Memory"](http://arxiv.org/abs/1702.04649) Gemici, Hung, Santoro, Wayne, Mohamed, Rezende, Amos, Lillicrap
-  `learning disentangled representation`
->	"A sufficiently powerful temporal model should separate predictable elements of the sequence from unpredictable elements, express uncertainty about those unpredictable elements, and rapidly identify novel elements that may help to predict the future. To create such models, we introduce Generative Temporal Models augmented with external memory systems."  
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1702.04649>
-
-#### ["Learning Disentangled Representations with Semi-Supervised Deep Generative Models"](http://arxiv.org/abs/1706.00400) Siddharth, Paige, Meent, Desmaison, Goodman, Kohli, Wood, Torr
-  `learning disentangled representation`
->	"Variational autoencoders learn representations of data by jointly training a probabilistic encoder and decoder network. Typically these models encode all features of the data into a single variable. Here we are interested in learning disentangled representations that encode distinct aspects of the data into separate variables. We propose to learn such representations using model architectures that generalize from standard VAEs, employing a general graphical model structure in the encoder and decoder. This allows us to train partially-specified models that make relatively strong assumptions about a subset of interpretable variables and rely on the flexibility of neural networks to learn representations for the remaining variables."  
-
-#### ["Disentangling Factors of Variation in Deep Representations using Adversarial Training"](http://arxiv.org/abs/1611.03383) Mathieu, Zhao, Sprechmann, Ramesh, LeCun
-  `learning disentangled representation`
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=conf%2Fnips%2FMathieuZZRSL16>
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1611.03383>
-
-#### ["Deep Unsupervised Clustering with Gaussian Mixture Variational Autoencoders"](http://arxiv.org/abs/1611.02648) Dilokthanakul, Mediano, Garnelo, Lee, Salimbeni, Arulkumaran, Shanahan
-  `learning disentangled representation`
-  - `post` <http://ruishu.io/2016/12/25/gmvae/>
-
-#### ["Inducing Interpretable Representations with Variational Autoencoders"](http://arxiv.org/abs/1611.07492) Siddharth, Paige, Desmaison, Meent, Wood, Goodman, Kohli, Torr
-  `learning disentangled representation`
-
-#### ["The Variational Fair Autoencoder"](http://arxiv.org/abs/1511.00830) Louizos, Swersky, Li, Welling, Zemel
-  `learning disentangled representation`
->	"We investigate the problem of learning representations that are invariant to certain nuisance or sensitive factors of variation in the data while retaining as much of the remaining information as possible."  
-  - `video` <http://videolectures.net/iclr2016_louizos_fair_autoencoder/> (Louizos)
-
 ----
 #### ["Unsupervised Learning by Predicting Noise"](https://arxiv.org/abs/1704.05310) Bojanowski, Joulin
-  `learning embedding`
+  `learning embeddings`
 >	"The authors give a nice analogy: it's a SOM, but instead of mapping a latent vector to each input vector, the convolutional filters are learned in order to map each input vector to a fixed latent vector. In more words: each image is assigned a unique random latent vector as the label, and the mapping from image to label is taught in a supervised manner. Every few epochs, the label assignments are adjusted (but only within batches due to computational cost), so that an image might be assigned a different latent vector label which it is already close to in 'feature space'."
   - `post` <http://inference.vc/unsupervised-learning-by-predicting-noise-an-information-maximization-view-2/>
 
 #### ["Poincare Embeddings for Learning Hierarchical Representations"](https://arxiv.org/abs/1705.08039) Nickel, Kiela
-  `learning embedding`
+  `learning embeddings`
   - `video` <https://cds.cern.ch/record/2306315> (Nickel)
   - `video` <https://facebook.com/nipsfoundation/videos/1553634558061111?t=3781> (Nickel)
   - `notes` <https://medium.com/towards-data-science/facebook-research-just-published-an-awesome-paper-on-learning-hierarchical-representations-34e3d829ede7>
@@ -1123,10 +1086,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 ---
 ### generative models
 
-  - [flow models](#generative-models---flow-models)
   - [generative adversarial networks](#generative-models---generative-adversarial-networks)
   - [variational autoencoders](#generative-models---variational-autoencoders)
   - [autoregressive models](#generative-models---autoregressive-models)
+  - [flow models](#generative-models---flow-models)
 
 ----
 #### ["Do Deep Generative Models Know What They Don't Know?"](https://arxiv.org/abs/1810.09136) Nalisnick, Matsukawa, Teh, Gorur, Lakshminarayanan
@@ -1279,85 +1242,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `notes` <https://casmls.github.io/general/2017/02/23/modified-gans.html>
   - `code` <https://github.com/wiseodd/generative-models/tree/master/VAE/adversarial_vb>
   - `code` <https://gist.github.com/poolio/b71eb943d6537d01f46e7b20e9225149>
-
-
-
----
-### generative models - flow models
-
-[**interesting recent papers - generative models**](#generative-models)
-
-----
-#### ["Glow: Generative Flow with Invertible 1x1 Convolutions"](https://arxiv.org/abs/1807.03039) Kingma, Dhariwal
-  `Glow`
->	"We demonstrate that a generative model optimized towards the plain log-likelihood objective is capable of efficient realistic-looking synthesis and manipulation of large images."  
-  - `post` <https://blog.openai.com/glow>
-  - `video` <https://youtube.com/watch?v=exJZOC3ZceA> (demo)
-  - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#glow>
-  - `code` <https://github.com/openai/glow>
-  - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/research/glow_ops.py>
-  - `code` <https://github.com/ikostrikov/pytorch-flows>
-
-#### ["Neural Autoregressive Flows"](https://arxiv.org/abs/1804.00779) Huang, Krueger, Lacoste, Courville
-  `NAF`
->	"NAF unifies and generalizes MAF and IAF, replacing the (conditionally) affine univariate transformations of MAF/IAF with a more general class of invertible univariate transformations expressed as monotonic neural networks. We demonstrate that NAFs are universal approximators for continuous probability distributions, and their greater expressivity allows them to better capture multimodal target distributions."  
-  - `post` <https://medium.com/element-ai-research-lab/neural-autoregressive-flows-f164d6b8e462>
-  - `post` <https://habr.com/company/yandex/blog/418421> `in russian`
-  - `code` <https://github.com/CW-Huang/NAF>
-
-#### ["Parallel WaveNet: Fast High-Fidelity Speech Synthesis"](https://arxiv.org/abs/1711.10433) Oord et al.
-  `Parallel WaveNet`
->	"Inverse autoregressive flows represent a kind of dual formulation of deep autoregressive modelling, in which sampling can be performed in parallel, while the inference procedure required for likelihood estimation is sequential and slow. The goal of this paper is to marry the best features of both models: the efficient training of WaveNet and the efficient sampling of IAF networks. The bridge between them is a new form of neural network distillation, which we refer to as Probability Density Distillation, where a trained WaveNet model is used as a teacher for training feedforward IAF model with no significant difference in quality."  
->	"WaveNet: efficient training, slow sampling"  
->	"IAF: efficient sampling, slow inference"  
->	"Distribution Distillation combines the advantages of both types of flows. It trains one model, which closely resembles MAF, for density estimation. Its role is just to evaluate probability of a data point, given that data point. Once this model is trained, the authors instantiate a second model parametrised by IAF. Now, we can draw samples from IAF and evaluate their probability under the MAF. This allows us to compute Monte-Carlo approximation of the KL-divergence between the two probability distributions, which we can use as a training objective for IAF. This way, MAF acts as a teacher and IAF as a student. This clever application of both types of flows allowed to improve efficiency of the original WaveNet by the factor of 300."
-  - <https://deepmind.com/blog/wavenet-launches-google-assistant/> (demo)
-  - `post` <https://deepmind.com/blog/high-fidelity-speech-synthesis-wavenet/>
-  - `video` <https://vimeo.com/287766925> (Oord)
-  - `video` <https://facebook.com/iclr.cc/videos/2125495797479475?t=493> (Kavukcuoglu)
-  - `video` <https://youtu.be/YyUXG-BfDbE?t=26m19s> (Andrews)
-
-#### ["Masked Autoregressive Flow for Density Estimation"](https://arxiv.org/abs/1705.07057) Papamakarios, Pavlakou, Murray
-  `MAF`
->	"We describe an approach for increasing the flexibility of an autoregressive model, based on modelling the random numbers that the model uses internally when generating data. By constructing a stack of autoregressive models, each modelling the random numbers of the next model in the stack, we obtain a type of normalizing flow suitable for density estimation. This type of flow is closely related to Inverse Autoregressive Flow and is a generalization of Real NVP."  
->	"MAF:  
->	- fast to calculate p(x)  
->	- slow to sample from  
->
->	Inverse Autoregressive Flow:  
->	- slow to calculate p(x)  
->	- fast to sample from  
->
->	Real NVP:  
->	- fast to calculate p(x)  
->	- fast to sample from  
->	- limited capacity vs MAF"  
-  - `video` <https://vimeo.com/252105837> (Papamakarios)
-  - `audio` <https://youtube.com/watch?v=315xKcYX-1w> (Papamakarios)
-  - `post` <http://blog.evjang.com/2018/01/nf2.html>
-  - `post` <http://akosiorek.github.io/ml/2018/04/03/norm_flows.html>
-  - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#masked-autoregressive-flow>
-  - `code` <https://github.com/ikostrikov/pytorch-flows>
-  - `code` <https://github.com/gpapamak/maf>
-
-#### ["Density Estimation using Real NVP"](http://arxiv.org/abs/1605.08803) Dinh, Sohl-Dickstein, Bengio
-  `Real NVP` `RNVP`
->	"Real-valued Non Volume Preserving transform:  
->	- one-pass and exact inference and sampling  
->	- explicit learning of a latent representation  
->	- tractable log-likelihood  
->	- coherent and sharp samples"  
-  - <https://laurent-dinh.github.io/2016/07/12/real-nvp-visualization.html> (demo)
-  - `video` <https://channel9.msdn.com/events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-1> (08:19) (Dinh)
-  - `video` <https://periscope.tv/hugo_larochelle/1ypKdAVmbEpGW> (Dinh)
-  - `video` <https://cds.cern.ch/record/2302480> (43:54) (Rezende)
-  - `post` <http://blog.evjang.com/2018/01/nf2.html>
-  - `post` <http://akosiorek.github.io/ml/2018/04/03/norm_flows.html>
-  - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#realnvp>
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.08803>
-  - `code` <https://github.com/tensorflow/models/tree/master/research/real_nvp>
-  - `code` <https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/distributions/python/ops/bijectors/real_nvp.py>
-  - `code` <https://github.com/ikostrikov/pytorch-flows>
 
 
 
@@ -1596,9 +1480,9 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 [**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---variational-autoencoder)
 
+[**interesting recent papers - unsupervised learning**](#unsupervised-learning)  
 [**interesting recent papers - generative models**](#generative-models)  
 [**interesting recent papers - bayesian deep learning**](#bayesian-deep-learning)  
-[**interesting recent papers - unsupervised learning**](#unsupervised-learning)  
 
 ----
 #### ["Tighter Variational Bounds are Not Necessarily Better"](https://arxiv.org/abs/1802.04537) Rainforth, Kosiorek, Le, Maddison, Igl, Wood, Teh
@@ -1759,6 +1643,85 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `audio` <https://soundcloud.com/nlp-highlights/52-sequence-to-sequence-learning-as-beam-search-optimization-with-sam-wiseman> (Rush)
   - `notes` <http://shortscience.org/paper?bibtexKey=journals/corr/1606.02960>
   - `notes` <https://medium.com/@sharaf/a-paper-a-day-2-sequence-to-sequence-learning-as-beam-search-optimization-92424b490350>
+
+
+
+---
+### generative models - flow models
+
+[**interesting recent papers - generative models**](#generative-models)
+
+----
+#### ["Glow: Generative Flow with Invertible 1x1 Convolutions"](https://arxiv.org/abs/1807.03039) Kingma, Dhariwal
+  `Glow`
+>	"We demonstrate that a generative model optimized towards the plain log-likelihood objective is capable of efficient realistic-looking synthesis and manipulation of large images."  
+  - `post` <https://blog.openai.com/glow>
+  - `video` <https://youtube.com/watch?v=exJZOC3ZceA> (demo)
+  - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#glow>
+  - `code` <https://github.com/openai/glow>
+  - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/research/glow_ops.py>
+  - `code` <https://github.com/ikostrikov/pytorch-flows>
+
+#### ["Neural Autoregressive Flows"](https://arxiv.org/abs/1804.00779) Huang, Krueger, Lacoste, Courville
+  `NAF`
+>	"NAF unifies and generalizes MAF and IAF, replacing the (conditionally) affine univariate transformations of MAF/IAF with a more general class of invertible univariate transformations expressed as monotonic neural networks. We demonstrate that NAFs are universal approximators for continuous probability distributions, and their greater expressivity allows them to better capture multimodal target distributions."  
+  - `post` <https://medium.com/element-ai-research-lab/neural-autoregressive-flows-f164d6b8e462>
+  - `post` <https://habr.com/company/yandex/blog/418421> `in russian`
+  - `code` <https://github.com/CW-Huang/NAF>
+
+#### ["Parallel WaveNet: Fast High-Fidelity Speech Synthesis"](https://arxiv.org/abs/1711.10433) Oord et al.
+  `Parallel WaveNet`
+>	"Inverse autoregressive flows represent a kind of dual formulation of deep autoregressive modelling, in which sampling can be performed in parallel, while the inference procedure required for likelihood estimation is sequential and slow. The goal of this paper is to marry the best features of both models: the efficient training of WaveNet and the efficient sampling of IAF networks. The bridge between them is a new form of neural network distillation, which we refer to as Probability Density Distillation, where a trained WaveNet model is used as a teacher for training feedforward IAF model with no significant difference in quality."  
+>	"WaveNet: efficient training, slow sampling"  
+>	"IAF: efficient sampling, slow inference"  
+>	"Distribution Distillation combines the advantages of both types of flows. It trains one model, which closely resembles MAF, for density estimation. Its role is just to evaluate probability of a data point, given that data point. Once this model is trained, the authors instantiate a second model parametrised by IAF. Now, we can draw samples from IAF and evaluate their probability under the MAF. This allows us to compute Monte-Carlo approximation of the KL-divergence between the two probability distributions, which we can use as a training objective for IAF. This way, MAF acts as a teacher and IAF as a student. This clever application of both types of flows allowed to improve efficiency of the original WaveNet by the factor of 300."
+  - <https://deepmind.com/blog/wavenet-launches-google-assistant/> (demo)
+  - `post` <https://deepmind.com/blog/high-fidelity-speech-synthesis-wavenet/>
+  - `video` <https://vimeo.com/287766925> (Oord)
+  - `video` <https://facebook.com/iclr.cc/videos/2125495797479475?t=493> (Kavukcuoglu)
+  - `video` <https://youtu.be/YyUXG-BfDbE?t=26m19s> (Andrews)
+
+#### ["Masked Autoregressive Flow for Density Estimation"](https://arxiv.org/abs/1705.07057) Papamakarios, Pavlakou, Murray
+  `MAF`
+>	"We describe an approach for increasing the flexibility of an autoregressive model, based on modelling the random numbers that the model uses internally when generating data. By constructing a stack of autoregressive models, each modelling the random numbers of the next model in the stack, we obtain a type of normalizing flow suitable for density estimation. This type of flow is closely related to Inverse Autoregressive Flow and is a generalization of Real NVP."  
+>	"MAF:  
+>	- fast to calculate p(x)  
+>	- slow to sample from  
+>
+>	Inverse Autoregressive Flow:  
+>	- slow to calculate p(x)  
+>	- fast to sample from  
+>
+>	Real NVP:  
+>	- fast to calculate p(x)  
+>	- fast to sample from  
+>	- limited capacity vs MAF"  
+  - `video` <https://vimeo.com/252105837> (Papamakarios)
+  - `audio` <https://youtube.com/watch?v=315xKcYX-1w> (Papamakarios)
+  - `post` <http://blog.evjang.com/2018/01/nf2.html>
+  - `post` <http://akosiorek.github.io/ml/2018/04/03/norm_flows.html>
+  - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#masked-autoregressive-flow>
+  - `code` <https://github.com/ikostrikov/pytorch-flows>
+  - `code` <https://github.com/gpapamak/maf>
+
+#### ["Density Estimation using Real NVP"](http://arxiv.org/abs/1605.08803) Dinh, Sohl-Dickstein, Bengio
+  `Real NVP` `RNVP`
+>	"Real-valued Non Volume Preserving transform:  
+>	- one-pass and exact inference and sampling  
+>	- explicit learning of a latent representation  
+>	- tractable log-likelihood  
+>	- coherent and sharp samples"  
+  - <https://laurent-dinh.github.io/2016/07/12/real-nvp-visualization.html> (demo)
+  - `video` <https://channel9.msdn.com/events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-1> (08:19) (Dinh)
+  - `video` <https://periscope.tv/hugo_larochelle/1ypKdAVmbEpGW> (Dinh)
+  - `video` <https://cds.cern.ch/record/2302480> (43:54) (Rezende)
+  - `post` <http://blog.evjang.com/2018/01/nf2.html>
+  - `post` <http://akosiorek.github.io/ml/2018/04/03/norm_flows.html>
+  - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#realnvp>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.08803>
+  - `code` <https://github.com/tensorflow/models/tree/master/research/real_nvp>
+  - `code` <https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/distributions/python/ops/bijectors/real_nvp.py>
+  - `code` <https://github.com/ikostrikov/pytorch-flows>
 
 
 
@@ -3377,6 +3340,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 [overview](https://alexpolozov.com/blog/program-synthesis-2018) of recent papers by Oleksandr Polozov
 
 ----
+#### ["AlphaD3M: Machine Learning Pipeline Synthesis"](https://www.cs.columbia.edu/~idrori/AlphaD3M.pdf) Drori et al.
+  `AlphaD3M` `meta-learning` `ICML 2018`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#alphad3m-machine-learning-pipeline-synthesis-drori-et-al>
+
 #### ["Evolving Simple Programs for Playing Atari Game"](https://arxiv.org/abs/1806.05695) Wilson, Cussat-Blanc, Luga, Miller
 >	"Programs are evolved using mixed type Cartesian Genetic Programming with a function set suited for matrix operations, including image processing, but allowing for controller behavior to emerge."  
 >	"While the programs are relatively small, many controllers are competitive with state of the art methods for the Atari benchmark set and require less training time."  
