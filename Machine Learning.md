@@ -138,7 +138,7 @@
 
 #### conferences
 
-  - ICML 2019 [[videos](https://facebook.com/pg/icml.imls/videos)]
+  - ICML 2019 [[videos](https://facebook.com/pg/icml.imls/videos)] [[videos](https://slideslive.com/icml)]
   - ICLR 2019 [[videos](https://facebook.com/pg/iclr.cc/videos)] [[videos](https://slideslive.com/iclr)] [[notes](https://david-abel.github.io/notes/iclr_2019.pdf)]
   - NeurIPS 2018 [[videos](https://neurips.cc/Conferences/2018/Videos)] [[videos](https://facebook.com/pg/nipsfoundation/videos)]
   - ICML 2018 [[videos](https://vimeo.com/channels/1408270/videos)] [[videos](https://facebook.com/icml.imls/videos)] [[notes](https://david-abel.github.io/blog/posts/misc/icml_2018.pdf)]

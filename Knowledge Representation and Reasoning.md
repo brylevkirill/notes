@@ -452,6 +452,7 @@
 ### probabilistic database - Epistemological Database
 
   overview by Andrew McCallum:  
+  - ["AI for Representation and Reasoning in Knowledge Bases of Science"](https://youtube.com/watch?v=gIvqWSA1Opc) `video`  
   - ["Universal Schema for Representation and Reasoning from Natural Language"](http://www.fields.utoronto.ca/video-archive/2016/11/2267-16181) `video`  
   - ["Construction of Probabilistic Databases for Large-scale Knowledge Bases"](http://yahoolabs.tumblr.com/post/113969611311/big-thinker-andrew-mccallum-discusses-the) `video`  
   - ["Representation and Reasoning with Universal Schema Embeddings"](http://videolectures.net/iswc2015_mccallum_universal_schema/) `video`  

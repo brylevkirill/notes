@@ -26,6 +26,7 @@
     - [**variational autoencoder**](#interesting-papers---variational-autoencoder)
     - [**autoregressive models**](#interesting-papers---autoregressive-models)
     - [**flow models**](#interesting-papers---flow-models)
+    - [**unsupervised learning**](#interesting-papers---unsupervised-learning)
     - [**architectures**](#interesting-papers---architectures)
     - [**connections to neuroscience**](#connections-to-neuroscience)
     - [**applications**](#interesting-papers---applications)
@@ -1010,6 +1011,7 @@
   - [**variational autoencoder**](#interesting-papers---variational-autoencoder)  
   - [**autoregressive models**](#interesting-papers---autoregressive-models)  
   - [**flow models**](#interesting-papers---flow-models)  
+  - [**unsupervised learning**](#interesting-papers---unsupervised-learning)  
   - [**architectures**](#interesting-papers---architectures)  
   - [**connections to neuroscience**](#connections-to-neuroscience)  
   - [**applications**](#interesting-papers---applications)  
@@ -2197,6 +2199,13 @@ Yoshua Bengio:
 ### interesting papers - flow models
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models---flow-models)
+
+
+
+---
+### interesting papers - unsupervised learning
+
+[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#unsupervised-learning)
 
 
 

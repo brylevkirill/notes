@@ -632,6 +632,10 @@
 ----
 #### multi-agent reinforcement learning
 
+  - compete, cooperate, communicate  
+  - louse individual reward in order to get a high joint reward  
+  - achieve global goals from local actions  
+
   [overview](http://videolectures.net/DLRLsummerschool2018_bowling_multi_agent_RL) by Michael Bowling `video`  
   [overview](http://youtube.com/watch?v=hGEz4Aumd1U) by Arsenii Ashukha `video`  
 
@@ -662,6 +666,7 @@
   [overview](http://youtube.com/watch?v=eM6IBYVqXEA) by Hado van Hasselt `video`  
   [overview](http://youtube.com/watch?v=SfCa1HQMkuw) by John Schulman `video`  
   [overview](http://youtu.be/fIKkhoI1kF4?t=19m23s) by Emma Brunskill `video`  
+  [overview](https://facebook.com/icml.imls/videos/2265408103721327?t=4118) by Pieter Abbeel `video`  
   [overview](http://youtube.com/watch?v=WCE9hhPbCmc) by Maxim Kretov `video` `in russian`  
 
 ----
@@ -716,7 +721,7 @@
   ["Randomized Prior Functions for Deep Reinforcement Learning"](https://arxiv.org/abs/1806.03335) by Osband et al. `paper`  
   ["Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#dropout-as-a-bayesian-approximation-representing-model-uncertainty-in-deep-learning-gal-ghahramani) by Gal et al. `paper` `summary`  
   ["Weight Uncertainty in Neural Networks"](#weight-uncertainty-in-neural-networks-blundell-cornebise-kavukcuoglu-wierstra) by Blundell et al. `paper` `summary`  
-  ["BBQ-Networks: Efficient Exploration in Deep Reinforcement Learning for Task-Oriented Dialogue Systems"](https://arxiv.org/abs/1608.05081) by Lipton et al. `paper`  
+  ["BBQ-Networks: Efficient Exploration in Deep Reinforcement Learning for Task-Oriented Dialogue Systems"](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#bbq-networks-efficient-exploration-in-deep-reinforcement-learning-for-task-oriented-dialogue-systems-lipton-li-gao-li-ahmed-deng) by Lipton et al. `paper`  
   ["Noisy Networks for Exploration"](#noisy-networks-for-exploration-fortunato-et-al) by Fortunato et al. `paper` `summary`  
   ["The Uncertainty Bellman Equation and Exploration"](https://arxiv.org/abs/1709.05380) by O'Donoghue et al. `paper`  
 
@@ -739,7 +744,8 @@
 	["\#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning"](#exploration-a-study-of-count-based-exploration-for-deep-reinforcement-learning-tang-et-al) by Tang et al. `paper` `summary`  
 	["EX2: Exploration with Exemplar Models for Deep Reinforcement Learning"](#ex2-exploration-with-exemplar-models-for-deep-reinforcement-learning-fu-co-reyes-levine) by Fu et al. `paper` `summary`  
 
-	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---uncertainty-motivation)
+	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---uncertainty-motivation)  
+	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
 
 
   - *information gain motivation*  
@@ -751,7 +757,8 @@
 	["Exploration Potential"](#exploration-potential-leike) by Leike `paper` `summary`  
 	["Towards Information-Seeking Agents"](#towards-information-seeking-agents-bachman-sordoni-trischler) by Bachman et al. `paper` `summary`  
 
-	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---information-gain-motivation)
+	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---information-gain-motivation)  
+	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
 
 
   - *empowerment*  
@@ -762,7 +769,8 @@
 	["Variational Information Maximisation for Intrinsically Motivated Reinforcement Learning"](#variational-information-maximisation-for-intrinsically-motivated-reinforcement-learning-mohamed-rezende) by Mohamed and Rezende `paper` `summary`  
 	["Variational Intrinsic Control"](#variational-intrinsic-control-gregor-rezende-wierstra) by Gregor et al. `paper` `summary`  
 
-	[**interesting-papers**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---empowerment)
+	[**interesting-papers**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---empowerment)  
+	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
 
 
 ----
@@ -782,7 +790,8 @@
 	["Feature Control as Intrinsic Motivation for Hierarchical Reinforcement Learning"](https://arxiv.org/abs/1705.06769) by Dilokthanakul et al. `paper`  
 	["Improving Policy Gradient by Exploring Under-appreciated Rewards"](#improving-policy-gradient-by-exploring-under-appreciated-rewards-nachum-norouzi-schuurmans) by Nachum et al. `paper` `summary`  
 
-	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---predictive-novelty-motivation)
+	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---predictive-novelty-motivation)  
+	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
 
 
   - *learning progress motivation*  
@@ -793,7 +802,8 @@
 	["Automated Curriculum Learning for Neural Networks"](#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper` `summary`  
 	["Exploration in Model-based Reinforcement Learning by Empirically Estimating Learning Progress"](https://papers.nips.cc/paper/4642-exploration-in-model-based-reinforcement-learning-by-empirically-estimating-learning-progress) by Lopes et al. `paper`  
 
-	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---learning-progress-motivation)
+	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---learning-progress-motivation)  
+	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
 
 
   - *predictive familiarity motivation*  
@@ -814,7 +824,8 @@
 	["Intrinsic Motivation and Automatic Curricula via Asymmetric Self-Play"](#intrinsic-motivation-and-automatic-curricula-via-asymmetric-self-play-sukhbaatar-lin-kostrikov-synnaeve-szlam) by Sukhbaatar et al. `paper` `summary`  
 	["Automatic Goal Generation for Reinforcement Learning Agents"](#automatic-goal-generation-for-reinforcement-learning-agents-held-geng-florensa-abbeel) by Held et al. `paper` `summary`  
 
-	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---competence-based-models---maximizing-incompetence-motivation)
+	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---competence-based-models---maximizing-incompetence-motivation)  
+	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
 
 
   - *maximizing competence progress*  
@@ -1041,6 +1052,18 @@
   - *(minus)* modeling bias: complex dynamics and costs can cause learning to fail  
 
 
+  failure modes of model-based RL ([overview](https://facebook.com/icml.imls/videos/2366831430268790?t=601) by David Silver `video`):  
+  - *observation model*: predict/simulate all observations  
+    * model focuses on irrelevant details  
+    * planning is intractable (too many pixels)  
+  - *environment model*: predict/simulate true state  
+    * true state is unknown, unknowable  
+    * planning is intractable (agent is smaller than world)  
+  - *one-step model*: focus on predictions over a single step  
+    * model errors compound over many steps  
+    * planning is intractable (world has long horizon)  
+
+
   planning methods:  
   - forward methods  
 	* lookahead tree building  
@@ -1055,10 +1078,10 @@
   ["The Next Big Step in AI: Planning with a Learned Model"](https://youtube.com/watch?v=6-Uiq8-wKrg) by Richard Sutton `video`  
   ["The Grand Challenge of Knowledge"](http://www.fields.utoronto.ca/video-archive/2016/10/2267-16158) (41:35) by Richard Sutton `video`  
   ["Open Questions in Model-based RL"](https://youtube.com/watch?v=OeIVfQz3FUc) by by Richard Sutton `video`  
-  ["Learning World Models: The Next Step Towards AI"](https://youtube.com/watch?v=Wb3cnG0o7b8&t=33m50s) by Yann LeCun `video`  
 
   ["Planning and Models"](https://youtube.com/watch?v=Xrxrd8nl4YI) by Hado van Hasselt `video`  
   ["Integrating Learning and Planning"](https://youtube.com/watch?v=ItMutbeOHtc) by David Silver `video`  
+  ["Value Focused Models"](https://facebook.com/icml.imls/videos/2366831430268790?t=410) by David Silver `video`  
 
   ["Structure and Priors in RL"](https://slideslive.com/38915870/panel-questions) discussion `video`
 
@@ -1143,8 +1166,7 @@
 
 ----
 
-  [overview](https://slideslive.com/38915863/learning-models-for-representations-and-planning) by Timothy Lillicrap `video`  
-  [overview](https://youtu.be/bsuvM1jO-4w?t=35m2s) by Vlad Mnih `video`  
+  [overview](https://slideslive.com/38915863/learning-models-for-representations-and-planning) by Timothy Lillicrap `video`
 
   ["Model-based Deep Reinforcement Learning"](https://youtube.com/watch?v=iC2a7M9voYU) by Chelsea Finn `video`  
   ["Learning Dynamical System Models from Data"](https://youtube.com/watch?v=qVsLk5CVy_c) by Sergey Levine `video`  
@@ -1235,6 +1257,20 @@
 
 ---
 ### value-based methods
+
+  value-focused model focuses exclusively on value function(s) ([overview](https://facebook.com/icml.imls/videos/2366831430268790?t=764) by David Silver `video`):  
+  - sufficient for optimal planning => ignores irrelevant details  
+  - trained end-to-end over multiple steps => avoids compounding errors  
+
+  many-valued focused model:  
+  - predicts many different value functions  
+    * e.g different policies, discounts, rewards  
+  - prodives data efficiency  
+    * similar to observation models  
+  - solution is a consistent model for all value functions  
+    * if model is consistent with "core" value functions  
+
+----
 
   ["Temporal-Difference Learning"](http://videolectures.net/deeplearning2017_sutton_td_learning/) by Richard Sutton `video`
 
@@ -2161,6 +2197,7 @@ interesting recent papers:
 
   - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482?t=451> (Abbeel)
   - `video` <http://www.fields.utoronto.ca/video-archive/2017/02/2267-16530> (19:00) (Abbeel)
+  - `video` <https://facebook.com/icml.imls/videos/2265408103721327?t=5121> (Abbeel)
   - `video` <https://youtu.be/SfCa1HQMkuw?t=1h16m56s> (Schulman)
   - `video` <https://youtu.be/BskhUBPRrqE?t=6m37s> (Sutskever)
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/RL2-Fast_Reinforcement_Learning_via_Slow_Reinforcement_Learning.md>
@@ -2228,12 +2265,13 @@ interesting recent papers:
 
 
 #### ["\#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning"](http://arxiv.org/abs/1611.04717) Tang et al.
-  `SimHash`
 >	"Count-based exploration algorithms are known to perform near-optimally when used in conjunction with tabular reinforcement learning methods for solving small discrete Markov decision processes (MDPs). It is generally thought that count-based methods cannot be applied in high-dimensional state spaces, since most states will only occur once. Recent deep RL exploration strategies are able to deal with high-dimensional continuous state spaces through complex heuristics, often relying on optimism in the face of uncertainty or intrinsic motivation. In this work, we describe a surprising finding: a simple generalization of the classic count-based approach can reach near state-of-the-art performance on various highdimensional and/or continuous deep RL benchmarks. States are mapped to hash codes, which allows to count their occurrences with a hash table. These counts are then used to compute a reward bonus according to the classic count-based exploration theory. We find that simple hash functions can achieve surprisingly good results on many challenging tasks. Furthermore, we show that a domain-dependent learned hash code may further improve these results. Detailed analysis reveals important aspects of a good hash function: 1) having appropriate granularity and 2) encoding information relevant to solving the MDP. This exploration strategy achieves near state-of-the-art performance on both continuous control tasks and Atari 2600 games, hence providing a simple yet powerful baseline for solving MDPs that require considerable exploration."
 
->	"The authors encourage exploration by adding a pseudo-reward of the form beta/sqrt(count(state)) for infrequently visited states. State visits are counted using Locality Sensitive Hashing (LSH) based on an environment-specific feature representation like raw pixels or autoencoder representations."
+>	"The authors encourage exploration by adding a pseudo-reward of the form beta/sqrt(count(state)) for infrequently visited states. State visits are counted using Locality Sensitive Hashing (LSH) based on an environment-specific feature representation like raw pixels or autoencoder representations. The authors show that this simple technique achieves gains in various classic RL control tasks and several games in the ATARI domain. While the algorithm itself is simple there are now several more hyperaprameters to tune: The bonus coefficient beta, the LSH hashing granularity (how many bits to use for hashing) as well as the type of feature representation based on which the hash is computed, which itself may have more parameters. The experiments don't paint a consistent picture and different environments seem to need vastly different hyperparameter settings, which in my opinion will make this technique difficult to use in practice."
 
+  - `videos` <https://facebook.com/icml.imls/videos/2265408103721327?t=4692> (Abbeel)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1611.04717>
+  - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/%23Exploration:_A_Study_of_Count-Based_Exploration_for_Deep_Reinforcement_Learning.md>
 
 
 #### ["EX2: Exploration with Exemplar Models for Deep Reinforcement Learning"](https://arxiv.org/abs/1703.01260) Fu, Co-Reyes, Levine
@@ -2268,6 +2306,7 @@ interesting recent papers:
   - <https://goo.gl/fyxLvI> (demo)
   - `video` <https://youtube.com/watch?v=nbbMSMv3v5k>
   - `video` <https://youtu.be/WRFqzYWHsZA?t=18m38s> (Abbeel)
+  - `video` <https://facebook.com/icml.imls/videos/2265408103721327?t=4996> (Abbeel)
   - `video` <https://youtube.com/watch?v=sRIjxxjVrnY> (Panin)
   - `video` <https://yadi.sk/i/_2_0yqeW3HDbcn> (32:16) (Panin) `in russian` ([slides](https://yadi.sk/i/8sx42nau3HEYKg) `in english`)
   - `notes` <http://pemami4911.github.io/paper-summaries/2016/09/04/VIME.html>
@@ -2360,6 +2399,8 @@ interesting recent papers:
 
 >	"Let us compare this to the commonly used intrinsic motivation objective of maximizing the amount of model-learning progress, measured as the difference in compression of its experience before and after learning (Schmidhuber, 1991; 2010; Bellemare et al., 2016; Houthooft et al., 2016). The empowerment objective differs from this in a fundamental manner: the primary goal is not to understand or predict the observations but to control the environment. This is an important point – agents can often control an environment perfectly well without much understanding, as exemplified by canonical model-free reinforcement learning algorithms, where agents only model action-conditioned expected returns. Focusing on such understanding might significantly distract and impair the agent, as such reducing the control it achieves."
 
+  - `video` <https://facebook.com/icml.imls/videos/2265408103721327?t=5749> (Abbeel)
+
 
 
 ---
@@ -2408,6 +2449,7 @@ interesting recent papers:
 
   - `post` <https://pathak22.github.io/noreward-rl/index.html> (demo)
   - `video` <https://vimeo.com/237270588> (Pathak)
+  - `video` <https://facebook.com/icml.imls/videos/2265408103721327?t=4865> (Abbeel)
   - `video` <https://youtube.com/watch?v=_Z9ZP1eiKsI> (Kilcher)
   - `video` <https://youtu.be/RwLTrQUyDvA?t=18m2s> (Diaz Rodriguez)
   - `video` <https://youtu.be/0Ey02HT_1Ho?t=5m37s> (Steenbrugge)
@@ -2615,6 +2657,7 @@ interesting recent papers:
   - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Value-Iteration-Networks> (Tamar)
   - `video` <http://www.fields.utoronto.ca/video-archive/2017/02/2267-16530> (31:50) (Abbeel)
   - `video` <https://youtu.be/bsuvM1jO-4w?t=38m6s> (Mnih)
+  - `video` <https://facebook.com/icml.imls/videos/2366831430268790?t=2099> (Silver)
   - `notes` <https://github.com/karpathy/paper-notes/blob/master/vin.md>
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Value_Iteration_Networks.md>
   - `notes` <https://blog.acolyer.org/2017/02/09/value-iteration-networks/>
