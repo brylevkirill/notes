@@ -1996,10 +1996,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `SIL` `lower-bound soft Q-learning`
 >	"A simple off-policy actor-critic algorithm that learns to reproduce the agent’s past good decisions."  
 >	"SIL stores experiences in a replay buffer and learns to imitate state-action pairs in the replay buffer only when the return in the past episode is greater than the agent’s value estimate."  
->	"A theoretical justification of the SIL objective is given by showing that the SIL objective is derived from the lower bound of the optimal Q-function."  
->	"SIL combined with advantage actor-critic is competitive to the state-of-the-art count-based exploration actor-critic methods on several hard exploration Atari games."  
->	"SIL improves the performance of PPO on MuJoCo continuous control tasks, demonstrating that SIL may be generally applicable to any actor-critic architecture."  
+>	"A theoretical justification of the SIL objective is given by showing that the SIL is equivalent to lower bound soft Q-learning under entropy-regularized RL."  
 >	"Intuitively, A2C updates the policy in the direction of increasing the expected return of the learner policy and enforces consistency between the value and the policy from on-policy trajectories. On the other hand, SIL updates each of them directly towards optimal policies and values respectively from off-policy trajectories."  
+>	"SIL outperforms existing count-based exploration methods on several Atari games. Random exploration is enough to gather useful experiences on many hard exploration games but it is important to exploit them to learn a good policy. Advanced exploration method is still necessary in extremely sparse reward environments."  
+>	"SIL improves the performance of PPO on MuJoCo continuous control tasks, demonstrating that SIL may be generally applicable to any actor-critic architecture."  
   - `video` <https://facebook.com/icml.imls/videos/432572773923910?t=3600> (Oh)
   - `notes` <https://medium.com/intelligentunit/paper-notes-2-self-imitation-learning-b3a0fbdee351>
   - `code` <https://github.com/junhyukoh/self-imitation-learning>
@@ -2568,6 +2568,11 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 [papers](https://sites.google.com/view/erl-2018/accepted-papers) from ICML 2018 workshop
 
 ----
+#### ["Self-Imitation Learning"](https://arxiv.org/abs/1806.05635) Oh, Guo, Singh, Lee
+  `SIL` `random exploration`
+  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#self-imitation-learning-oh-guo-singh-lee>
+
+----
 #### ["Contextual Decision Processes with Low Bellman Rank are PAC-Learnable"](https://arxiv.org/abs/1610.09512) Jiang, Krishnamurthy, Agarwal, Langford, Schapire
   `provably correct and sample efficient exploration`
 >	"This paper studies systematic exploration for reinforcement learning with rich observations and function approximation. We introduce a new model called contextual decision processes, that unifies and generalizes most prior settings. Our first contribution is a complexity measure, the Bellman rank, that we show enables tractable learning of near-optimal behavior in these processes and is naturally small for many well-studied reinforcement learning settings. Our second contribution is a new reinforcement learning algorithm that engages in systematic exploration to learn contextual decision processes with low Bellman rank. Our algorithm provably learns near-optimal behavior with a number of samples that is polynomial in all relevant parameters but independent of the number of unique observations. The approach uses Bellman error minimization with optimistic exploration and provides new insights into efficient exploration for reinforcement learning with function approximation."  
@@ -2580,6 +2585,12 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=VBkUmD5Em2k> (Agarwal)
   - `video` <https://youtube.com/watch?v=L5Q4Y3omnrY> (Agarwal)
   - `video` <https://vimeo.com/235929810> (Schapire)
+
+----
+#### ["Benchmarking Bonus-Based Exploration Methods on the Arcade Learning Environment"](https://drive.google.com/file/d/1I05c4-d9OsNwGZnLx85fR8dnX-yVoTWe) Taiga, Fedus, Machado, Courville, Bellemare
+>	"This paper provides an empirical evaluation of recently developed exploration algorithms within the ALE. We study the use of different reward bonuses that incentives exploration in reinforcement learning. We do so by fixing the learning algorithm used and focusing only on the impact of the different exploration bonuses in the agent’s performance."  
+>	"We find that, in our setting, recently developed bonuses do not provide significantly improved performance on MONTEZUMA’S REVENGE or hard exploration games. We also find that existing bonus-based methods may negatively impact performance on games in which exploration is not an issue and may even perform worse than Epsilon-greedy exploration."  
+  - `video` <https://facebook.com/icml.imls/videos/2265408103721327?t=2654> (Taiga)
 
 ----
 #### ["A Contextual Bandit Bake-off"](https://arxiv.org/abs/1802.04064) Bietti, Agarwal, Langford
@@ -2759,7 +2770,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1801.07440>
 
 #### ["Curiosity-driven Exploration by Self-supervised Prediction"](https://arxiv.org/abs/1705.05363) Pathak, Agrawal, Efros, Darrell
-  `exploration guided by prediction error`
+  `ICM` `exploration guided by prediction error`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#curiosity-driven-exploration-by-self-supervised-prediction-pathak-agrawal-efros-darrell>
 
 #### ["Surprise-Based Intrinsic Motivation for Deep Reinforcement Learning"](http://arxiv.org/abs/1703.01732) Achiam, Sastry
@@ -2781,6 +2792,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"In standard reinforcement learning, each new skill requires a manually-designed reward function, which takes considerable manual effort and engineering. Self-supervised goal setting has the potential to automate this process, enabling an agent to propose its own goals and acquire skills that achieve these goals. However, such methods typically rely on manually-designed goal distributions, or heuristics to force the agent to explore a wide range of states. We propose a formal exploration objective for goal-reaching policies that maximizes state coverage. We show that this objective is equivalent to maximizing the entropy of the goal distribution together with goal reaching performance, where goals correspond to entire states."  
 >	"Skew-Fit trains a generative model to closely approximate a uniform distribution over valid states, using data obtained via goal-conditioned reinforcement learning. Our method iteratively re-weights the samples for training the generative model, such that its entropy increases over the set of possible states, and our theoretical analysis gives conditions under which Skew-Fit converges to the uniform distribution. When such a model is used to choose goals for exploration and to relabeling goals for training, the resulting method results in much better coverage of the state space, enabling our method to explore effectively. Our experiments show that it produces quantifiable improvements when used along with goal-conditioned reinforcement learning on simulated robotic manipulation tasks, and can be used to learn a complex door opening skill to reach a 100% success rate directly on a real robot, without any human-provided reward supervision."  
   - <https://sites.google.com/view/skew-fit>
+  - `video` <https://youtube.com/watch?v=DWSZHEvZO4o>
   - `video` <https://youtu.be/jAPJeJK18mw?t=10m28s> (Levine)
 
 #### ["Diversity is All You Need: Learning Skills without a Reward Function"](https://arxiv.org/abs/1802.06070) Eysenbach, Gupta, Ibarz, Levine
@@ -3042,6 +3054,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=sZqrWFl0wQ4> (demo)
   - `video` <https://vimeo.com/237274156> (Higgins)
   - `video` <https://youtu.be/XNGo9xqpgMo?t=16m46s> (Higgins)
+  - `video` <https://youtu.be/Yvll3P1UW5k?t=1h7m18s> (Abbeel)
 
 #### ["Robust and Efficient Transfer Learning with Hidden Parameter Markov Decision Processes"](https://arxiv.org/abs/1706.06544) Killian, Daulton, Konidaris, Doshi-Velez
   `semantic representation`

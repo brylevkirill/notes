@@ -73,6 +73,8 @@
 
   ["Reinforcement Learning in Industry"](http://videolectures.net/deeplearning2017_le_roux_recommendation_system/) by Nicolas Le Roux `video`
 
+  ["Why Tool AIs Want to Be Agent AIs"](http://gwern.net/Tool%20AI) by Gwern Branwen
+
 ----
 
   [personalized web services](http://thenewstack.io/reinforcement-learning-ready-real-world/) at Microsoft (Custom Decision Service [paper](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) `summary`)  
@@ -84,14 +86,11 @@
 
   [artwork personalization](https://medium.com/netflix-techblog/artwork-personalization-c589f074ad76) at Netflix
 
+----
+
   ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1810.06339) by Yuxi Li `book`
 
   [**other applications**](https://yadi.sk/d/tiaE7sdi3WEhDS)
-
-----
-
-  ["Why Tool AIs Want to Be Agent AIs"](http://gwern.net/Tool%20AI) by Gwern Branwen:  
->	"The logical extension of these neural networks all the way down papers is that an actor like Google / Baidu / Facebook / MS could effectively turn neural networks into a black box: a user/developer uploads through an API a dataset of input/output pairs of a specified type and a monetary loss function, and a top-level neural network running on a large GPU cluster starts autonomously optimizing over architectures & hyperparameters for the neural network design which balances GPU cost and the monetary loss, interleaved with further optimization over the thousands of previous submitted tasks, sharing its learning across all of the datasets / loss functions / architectures / hyperparameters, and the original user simply submits future data through the API for processing by the best neural network so far."
 
 
 
@@ -127,6 +126,7 @@
 
 	[AlphaStar](https://deepmind.com/blog/alphastar-mastering-real-time-strategy-game-starcraft-ii)
 
+	[overview](https://slideslive.com/38916905/alphastar-mastering-the-game-of-starcraft-ii) by David Silver `video`  
 	[overview](https://youtu.be/3N9phq_yZP0?t=32m52s) by Demis Hassabis `video`  
 	[overview](https://youtu.be/Kedt2or9xlo) by Oriol Vinyals `video`  
 
@@ -295,11 +295,25 @@
   [overview](https://facebook.com/nipsfoundation/videos/1554594181298482) by Pieter Abbeel `video`  
   [overview](https://youtube.com/watch?v=TERCdog1ddE) by Pieter Abbeel `video`  
 
-  [overview](https://youtu.be/WRsxoVB8Yng?t=57m55s) by Wojciech Zaremba `video`  
-  [overview](https://youtu.be/w3ues-NayAs?t=16m26s) by Ilya Sutskever `video`  
-
   ["Is (Deep) Reinforcement Learning Barking Up The Wrong Tree?"](https://youtube.com/watch?v=2GW7ozcUCFE) by Chris Atkeson `video`  
   ["What Should Be Learned?"](https://youtu.be/WRsxoVB8Yng?t=7h7m15s) by Chris Atkeson `video`  
+
+  ["Sampling and Exploration for Control of Physical Systems"](https://facebook.com/icml.imls/videos/2265408103721327?t=591) by Emo Todorov `video` *(critique of MDP framework)*
+
+----
+  - *in-hand manipulation*
+
+	[OpenAI Dactyl](https://openai.com/blog/learning-dexterity)
+
+	["Learning Dexterous In-Hand Manipulation"](#learning-dexterous-in-hand-manipulation-openai-et-al) by OpenAI et al. `paper` `summary`
+
+	[OpenAI Dactyl overview](https://youtu.be/WRsxoVB8Yng?t=57m55s) by Wojciech Zaremba `video`  
+	[OpenAI Dactyl overview](https://youtu.be/w3ues-NayAs?t=16m26s) by Ilya Sutskever `video`  
+
+	[discussion](https://facebook.com/icml.imls/videos/2265408103721327?t=1200) with Emo Todorov `video`
+
+	[demo](https://youtube.com/watch?v=jwSbzNHGflM) `video`  
+	[demo](https://youtube.com/watch?v=DKe8FumoD4E) `video`  
 
 
 
@@ -468,11 +482,6 @@
   - on-policy vs off-policy  
   - bootstrapping vs Monte Carlo  
 
-----
-
-  ["The Bitter Lesson"](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) by Rich Sutton ([talk](http://www.fields.utoronto.ca/video-archive/2016/10/2267-16158) `video`)  
-  ["Do we still need models or just more data and compute?"](https://staff.fnwi.uva.nl/m.welling/wp-content/uploads/Model-versus-Data-AI-1.pdf) by Max Welling  
-
 
 ----
 #### reinforcement learning vs supervised learning
@@ -520,7 +529,6 @@
   - easier generalization to continuous action spaces  
 
   [overview](http://youtube.com/watch?v=P_agNaSrVhc) by Michael Littman `video`  
-  [overview](http://argmin.net/2018/02/01/control-tour/) by Benjamin Recht  
 
 
 ----
@@ -682,20 +690,18 @@
 
 ----
 
+  ["Comparing Intrinsic Motivations in a Unified Framework"](https://agi2018imtutorial.wordpress.com) tutorial by Martin Biehl
+	([video](https://slideslive.com/38909803/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework),
+	[slides](https://slides.com/slides_martin/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework))
+
+----
+
   ["How Can We Define Intrinsic Motivation"](http://pyoudeyer.com/epirob08OudeyerKaplan.pdf) by Oudeyer and Kaplan `paper`
 
   [**information theoretic and distributional models**](#exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models)  
   [**predictive models**](#exploration-and-intrinsic-motivation---predictive-models)  
   [**competence-based models**](#exploration-and-intrinsic-motivation---competence-based-models)  
   [**morphological models**](#exploration-and-intrinsic-motivation---morphological-models)  
-
-  ["Computational Theories of Curiosity-Driven Learning"](https://arxiv.org/abs/1802.10546) by Oudeyer `paper`
-
-----
-
-  ["Comparing Intrinsic Motivations in a Unified Framework"](https://agi2018imtutorial.wordpress.com) tutorial by Martin Biehl
-	([video](https://slideslive.com/38909803/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework),
-	[slides](https://slides.com/slides_martin/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework))
 
 
 ----
@@ -721,7 +727,7 @@
   ["Randomized Prior Functions for Deep Reinforcement Learning"](https://arxiv.org/abs/1806.03335) by Osband et al. `paper`  
   ["Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#dropout-as-a-bayesian-approximation-representing-model-uncertainty-in-deep-learning-gal-ghahramani) by Gal et al. `paper` `summary`  
   ["Weight Uncertainty in Neural Networks"](#weight-uncertainty-in-neural-networks-blundell-cornebise-kavukcuoglu-wierstra) by Blundell et al. `paper` `summary`  
-  ["BBQ-Networks: Efficient Exploration in Deep Reinforcement Learning for Task-Oriented Dialogue Systems"](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#bbq-networks-efficient-exploration-in-deep-reinforcement-learning-for-task-oriented-dialogue-systems-lipton-li-gao-li-ahmed-deng) by Lipton et al. `paper`  
+  ["BBQ-Networks: Efficient Exploration in Deep Reinforcement Learning for Task-Oriented Dialogue Systems"](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#bbq-networks-efficient-exploration-in-deep-reinforcement-learning-for-task-oriented-dialogue-systems-lipton-li-gao-li-ahmed-deng) by Lipton et al. `paper` `summary`  
   ["Noisy Networks for Exploration"](#noisy-networks-for-exploration-fortunato-et-al) by Fortunato et al. `paper` `summary`  
   ["The Uncertainty Bellman Equation and Exploration"](https://arxiv.org/abs/1709.05380) by O'Donoghue et al. `paper`  
 
@@ -926,9 +932,9 @@
 ----
 
   [overview](https://youtu.be/sGuiWX07sKw?t=1h29m7s) by David Silver `video`  
-  [overview](https://youtu.be/zr6H4kR8vTg) by John Langford `video`  
   [overview](https://vimeo.com/240429210) by John Langford and Alekh Agarwal `video`  
-  [overview](https://youtu.be/3q4OvzIyPug?t=6m12s) by Alekh Agarwal `audio`  
+  [overview](https://youtu.be/zr6H4kR8vTg) by John Langford `video`  
+  [overview](https://youtube.com/watch?v=IWuMb0A09po) by Dale Schuurmans `video`  
 
   [overview](http://youtube.com/watch?v=N5x48g2sp8M) of theory by Robert Schapire `video`  
 
@@ -1087,15 +1093,45 @@
 
 ----
 
+  ["The Bitter Lesson"](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) by Rich Sutton ([talk](http://www.fields.utoronto.ca/video-archive/2016/10/2267-16158) `video`)  
+  ["Do we still need models or just more data and compute?"](https://staff.fnwi.uva.nl/m.welling/wp-content/uploads/Model-versus-Data-AI-1.pdf) by Max Welling  
+
+----
+
   [**interesting papers**](#interesting-papers---model-based-methods)  
   [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-based-methods)  
 
 ----
 
+  - [**optimal control**](#optimal-control)  
   - [**Monte Carlo Tree Search**](#monte-carlo-tree-search)  
   - [**Guided Policy Search**](#guided-policy-search)  
   - [**deep model-based learning**](#deep-model-based-learning)  
   - [**bayesian reinforcement learning**](#bayesian-reinforcement-learning)  
+
+
+
+----
+#### optimal control
+
+  ["The Shades of Reinforcement Learning"](https://youtube.com/watch?v=OmpzeWym7HQ) by John Tsitsiklis `video`
+
+----
+
+  [overview](http://argmin.net/2018/02/01/control-tour) by Benjamin Recht
+
+  ["An Outsider's Tour of Reinforcement Learning"](http://argmin.net/2018/06/25/outsider-rl) by Benjamin Recht  
+  ["A Tour of Reinforcement Learning: The View from Continuous Control"](https://arxiv.org/abs/1806.09460) by Benjamin Recht `paper`  
+
+  ["Optimization Perspectives on Learning to Control"](https://youtube.com/watch?v=nF2-39a29Pw) tutorial by Benjamin Recht `video`  
+
+  ["Learning for Dynamics and Control"](https://l4dc.mit.edu) workshop ([videos](https://youtube.com/playlist?list=PLYx2nCJDi_QFrGOmIM0ale8T_1Fqu8OIF))
+
+----
+
+  ["Sampling and Exploration for Control of Physical Systems"](https://facebook.com/icml.imls/videos/2265408103721327?t=591) by Emo Todorov `video` *(critique of MDP framework)*  
+  ["Is (Deep) Reinforcement Learning Barking Up The Wrong Tree?"](https://youtube.com/watch?v=2GW7ozcUCFE) by Chris Atkeson `video`  
+  ["What Should Be Learned?"](https://youtu.be/WRsxoVB8Yng?t=7h7m15s) by Chris Atkeson `video`  
 
 
 
@@ -1978,6 +2014,18 @@ interesting recent papers:
   - `video` <http://www.fields.utoronto.ca/video-archive/2019/02/2509-19619> (41:12) (Boutilier)
 
 
+#### ["Learning Dexterous In-Hand Manipulation"](https://arxiv.org/abs/1808.00177) OpenAI et al.
+  `Dactyl`
+>	"We use reinforcement learning to learn dexterous in-hand manipulation policies which can perform vision-based object reorientation on a physical Shadow Dexterous Hand. The training is performed in a simulated environment in which we randomize many of the physical properties of the system like friction coefficients and an object's appearance. Our policies transfer to the physical robot despite being trained entirely in simulation. Our method does not rely on any human demonstrations, but many behaviors found in human manipulation emerge naturally, including finger gaiting, multi-finger coordination, and the controlled use of gravity. Our results were obtained using the same distributed RL system that was used to train OpenAI Five."
+
+  - `post` <https://blog.openai.com/learning-dexterity>
+  - `video` <https://youtube.com/watch?v=jwSbzNHGflM> (demo)
+  - `video` <https://youtube.com/watch?v=DKe8FumoD4E> (demo)
+  - `video` <https://youtu.be/WRsxoVB8Yng?t=57m55s> (Zaremba)
+  - `video` <https://youtu.be/w3ues-NayAs?t=16m26s> (Sutskever)
+  - `video` <https://facebook.com/icml.imls/videos/2265408103721327?t=1200> (Todorov)
+
+
 
 ---
 ### interesting papers - exploration and intrinsic motivation
@@ -2439,6 +2487,7 @@ interesting recent papers:
 
 
 #### ["Curiosity-driven Exploration by Self-supervised Prediction"](https://arxiv.org/abs/1705.05363) Pathak, Agrawal, Efros, Darrell
+  `ICM`
 >	"In many real-world scenarios, rewards extrinsic to the agent are extremely sparse, or absent altogether. In such cases, curiosity can serve as an intrinsic reward signal to enable the agent to explore its environment and learn skills that might be useful later in its life. We formulate curiosity as the error in an agent's ability to predict the consequence of its own actions in a visual feature space learned by a self-supervised inverse dynamics model. Our formulation scales to high-dimensional continuous state spaces like images, bypasses the difficulties of directly predicting pixels, and, critically, ignores the aspects of the environment that cannot affect the agent. The proposed approach is evaluated in two environments: VizDoom and Super Mario Bros. Three broad settings are investigated: 1) sparse extrinsic reward, where curiosity allows for far fewer interactions with the environment to reach the goal; 2) exploration with no extrinsic reward, where curiosity pushes the agent to explore more efficiently; and 3) generalization to unseen scenarios (e.g. new levels of the same game) where the knowledge gained from earlier experience helps the agent explore new places much faster than starting from scratch."
 
 >	"Our main contribution is in designing an intrinsic reward signal based on prediction error of the agent’s knowledge about its environment that scales to high-dimensional continuous state spaces like images, bypasses the hard problem of predicting pixels and is unaffected by the unpredictable aspects of the environment that do not affect the agent."
@@ -2459,6 +2508,7 @@ interesting recent papers:
 
 
 #### ["Reinforcement Learning with Unsupervised Auxiliary Tasks"](http://arxiv.org/abs/1611.05397) Jaderberg, Mnih, Czarnecki, Schaul, Leibo, Silver, Kavukcuoglu
+  `UNREAL`
 >	"Deep reinforcement learning agents have achieved state-of-the-art results by directly maximising cumulative reward. However, environments contain a much wider variety of possible training signals. In this paper, we introduce an agent that also maximises many other pseudo-reward functions simultaneously by reinforcement learning. All of these tasks share a common representation that, like unsupervised learning, continues to develop in the absence of extrinsic rewards. We also introduce a novel mechanism for focusing this representation upon extrinsic rewards, so that learning can rapidly adapt to the most relevant aspects of the actual task. Our agent significantly outperforms the previous state-of-theart on Atari, averaging 880% expert human performance, and a challenging suite of first-person, three-dimensional Labyrinth tasks leading to a mean speedup in learning of 10× and averaging 87% expert human performance on Labyrinth."
 
 >	"Auxiliary tasks:
@@ -2476,6 +2526,7 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=VVLYTqZJrXY> (Jaderberg)
   - `video` <https://facebook.com/iclr.cc/videos/1712224178806641?t=4545> (Jaderberg)
   - `video` <https://youtu.be/bsuvM1jO-4w?t=20m7s> (Mnih)
+  - `video` <https://youtu.be/Yvll3P1UW5k?t=8m42s> (Abbeel)
   - `video` <https://youtube.com/watch?v=-YiMVR3HEuY> (Kilcher)
   - `video` <https://youtu.be/0Ey02HT_1Ho?t=1m18s> (Steenbrugge)
   - `video` <https://yadi.sk/i/_2_0yqeW3HDbcn> (18:25) (Panin) `in russian`
