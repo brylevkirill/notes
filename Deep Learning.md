@@ -1,4 +1,4 @@
-  Deep Learning is learning to represent knowledge with composition of continuous functions.
+  Deep Learning is learning a composition of differentiable functions as a knowledge representation.
 
 
   * [**overview**](#overview)
@@ -62,15 +62,14 @@
 
 #### courses
 
-  ["Deep Learning"](https://coursera.org/specializations/deep-learning) by Andrew Ng ([videos](https://youtube.com/channel/UCcIXc5mJsHVYTZR1maL5l9w))  
-  ["Neural Networks"](http://info.usherbrooke.ca/hlarochelle/neural_networks/content.html) by Hugo Larochelle ([videos](http://youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH))  
-  ["Deep Learning"](https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/) by Nando de Freitas ([videos](http://youtube.com/playlist?list=PLE6Wd9FR--EfW8dtjAuPoTuPcqmOV53Fu))  
-  ["Neural Networks for Machine Learning"](https://coursera.org/course/neuralnets) by Geoffrey Hinton ([videos](http://youtube.com/user/aicourses/playlists?shelf_id=2&view=50))  
-  ["Convolutional Neural Networks for Visual Recognition"](http://cs231n.stanford.edu) by Andrej Karpathy ([videos](https://youtube.com/channel/UC2__PIf36huAgKFumlOIs6A))  
-  ["Topics in Deep Learning"](https://cs.cmu.edu/~rsalakhu/10707/) by Ruslan Salakhutdinov ([videos](https://youtube.com/playlist?list=PLpIxOj-HnDsOSL__Buy7_UEVQkyfhHapa))  
+  [course](https://course.fast.ai) by Jeremy Howard `video`  
+  [course](http://info.usherbrooke.ca/hlarochelle/neural_networks/content.html) by Hugo Larochelle ([videos](http://youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH))  
+  [course](https://coursera.org/course/neuralnets) by Geoffrey Hinton ([videos](http://youtube.com/user/aicourses/playlists?shelf_id=2&view=50))  
+  [course](http://cs231n.stanford.edu) by Andrej Karpathy ([videos](https://youtube.com/channel/UC2__PIf36huAgKFumlOIs6A))  
 
-  ["Neural Networks in Machine Learning"](https://sphere.mail.ru/curriculum/program/discipline/120/) by Daniil Polykovsky and Kuzma Hrabrov `in russian` ([videos](https://youtube.com/playlist?list=PLrCZzMib1e9oOGNLh6_d65HyfdqlJwTQP))  
-  ["Deep Learning"](https://github.com/aosokin/DL_CSHSE_spring2018) by Anton Osokin `in russian` ([videos](https://youtube.com/playlist?list=PLzY5g-rVmFayEkCcgO3_-it6HZwPZL3ld))  
+  [course](https://sphere.mail.ru/curriculum/program/discipline/120/) by Daniil Polykovsky and Kuzma Hrabrov `in russian` ([videos](https://youtube.com/playlist?list=PLrCZzMib1e9oOGNLh6_d65HyfdqlJwTQP))  
+  [course](https://github.com/aosokin/DL_CSHSE_spring2018) by Anton Osokin `in russian` ([videos](https://youtube.com/playlist?list=PLzY5g-rVmFayEkCcgO3_-it6HZwPZL3ld))  
+  [course](https://dlcourse.ai) by Simon Kozlov et al. `video` `in russian`  
 
 
 #### books
@@ -274,7 +273,7 @@
 
   ["Graphical Models"](http://www.deeplearningbook.org/contents/graphical_models.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
 
-  ["A Neural Network is a Monference, Not a Model"](http://blog.jacobandreas.net/monference.html) by Jacob Andreas  
+  ["A Neural Network is a Monference, Not a Model"](http://blog.jacobandreas.net/monference.html) by Jacob Andreas
 
 ----
 
@@ -845,13 +844,7 @@
   [overview](http://distill.pub/2016/augmented-rnns/) by Chris Olah and Shan Carter  
   [overview](http://thespermwhale.com/jaseweston/ram/slides/session2/Smooth%20Operators-NIPS2015.pptx) by Alex Graves  
 
-  ["Attention Is All You Need"](#attention-is-all-you-need-vaswani-shazeer-parmar-uszkoreit-jones-gomez-kaiser-polosukhin) by Vaswani et al. `paper` `summary`
-
-----
-
-  "Models that can do even more sequential computation should be more successful because they are able to express more intricate algorithms. It’s like allowing your parallel computer to run for more steps. We already see the beginning of this, in the form of attention models. In current approach, you take your input vector and give it to the neural network. The neural network runs it, applies several processing stages to it, and then gets an output. In an attention model, you have a neural network, but you run the neural network for much longer. There is a mechanism in the neural network, which decides which part of the input it wants to “look” at. Normally, if the input is very large, you need a large neural network to process it. But if you have an attention model, you can decide on the best size of the neural network, independent of the size of the input. Say you have a sentence, a sequence of, say, 100 words. The attention model will issue a query on the input sentence and create a distribution over the input words, such that a word that is more similar to the query will have higher probability, and words that are less similar to the query will have lower probability. Then you take the weighted average of them. Since every step is differentiable, we can train the attention model where to look with backpropagation, which is the reason for its appeal and success. Differentiable attention is computationally expensive because it requires accessing your entire input at each step of the model’s operation. And this is fine when the input is a sentence that’s only, say, 100 words, but it’s not practical when the input is a 10,000-word document. So, one of the main issues is speed. Attention should be fast, but differentiable attention is not fast. Reinforcement learning of attention is potentially faster, but training attentional control using reinforcement learning over thousands of objects would be non-trivial."
-
-  *(Ilya Sutskever)*
+  ["Attention Is All You Need"](#attention-is-all-you-need-vaswani-et-al) by Vaswani et al. `paper` `summary` *(Transformer)*
 
 ----
 
@@ -1049,10 +1042,10 @@
   - `video` <https://facebook.com/iclr.cc/videos/1710657292296663?t=1105> (Recht)
   - `video` <https://facebook.com/iclr.cc/videos/1710657292296663?t=3220> (Zhang)
   - `video` <https://youtu.be/mEYerIMYb5Q?t=18m2s> (Goncalves)
+  - `post` <https://danieltakeshi.github.io/2017/05/19/understanding-deep-learning-requires-rethinking-generalization-my-thoughts-and-notes>
   - `notes` <https://theneuralperspective.com/2017/01/24/understanding-deep-learning-requires-rethinking-generalization/>
   - `notes` <https://blog.acolyer.org/2017/05/11/understanding-deep-learning-requires-re-thinking-generalization/>
   - `notes` <https://reddit.com/r/MachineLearning/comments/6ailoh/r_understanding_deep_learning_requires_rethinking/dhis1hz/>
-  - `post` <http://www.offconvex.org/2017/12/08/generalization1/> (Arora)
 
 
 #### ["Sharp Minima Can Generalize For Deep Nets"](https://arxiv.org/abs/1703.04933) Dinh, Pascanu, Bengio, Bengio
@@ -1198,7 +1191,7 @@
 
   - <http://deeplearning.twbbs.org> (demo)
   - `video` <http://youtube.com/watch?v=pdODJ7JQfjo> (Zaremba)
-  - `post` <http://i-programmer.info/news/105-artificial-intelligence/7352-the-flaw-lurking-in-every-deep-neural-net.html>
+  - `post` <https://danieltakeshi.github.io/2019/04/27/adversarial-stuff>
   - `code` <https://github.com/tensorflow/cleverhans>
   - `code` <https://github.com/bethgelab/foolbox>
 
@@ -1234,9 +1227,10 @@ Yoshua Bengio:
   - `video` <http://youtube.com/watch?v=Pq4A2mPCB0Y> (Goodfellow)
   - `video` <http://youtube.com/watch?v=hDlHpBBGaKs> (Goodfellow)
   - `video` <http://videolectures.net/deeplearning2015_goodfellow_adversarial_examples/> (Goodfellow)
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1412.6572>
-  - `post` <https://karpathy.github.io/2015/03/30/breaking-convnets/>
   - `post` <http://kdnuggets.com/2015/07/deep-learning-adversarial-examples-misconceptions.html>
+  - `post` <https://danieltakeshi.github.io/2019/04/27/adversarial-stuff/>
+  - `post` <https://karpathy.github.io/2015/03/30/breaking-convnets/>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1412.6572>
   - `code` <https://github.com/tensorflow/cleverhans>
   - `code` <https://github.com/bethgelab/foolbox>
 
@@ -1390,6 +1384,11 @@ Yoshua Bengio:
 
 ---
 ### interesting papers - gradient estimation
+
+
+#### ["Monte Carlo Gradient Estimation in Machine Learning"](https://arxiv.org/abs/1906.10652) Mohamed, Rosca, Figurnov, Mnih
+  `gradient estimation`
+>	"This paper is a broad and accessible survey of the methods we have at our disposal for Monte Carlo gradient estimation in machine learning and across the statistical sciences: the problem of computing the gradient of an expectation of a function with respect to parameters defining the distribution that is integrated; the problem of sensitivity analysis. In machine learning research, this gradient problem lies at the core of many learning problems, in supervised, unsupervised and reinforcement learning. We will generally seek to rewrite such gradients in a form that allows for Monte Carlo estimation, allowing them to be easily and efficiently used and analysed. We explore three strategies--the pathwise, score function, and measure-valued gradient estimators--exploring their historical developments, derivation, and underlying assumptions. We describe their use in other fields, show how they are related and can be combined, and expand on their possible generalisations."
 
 
 #### ["Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation"](https://arxiv.org/abs/1308.3432) Bengio, Leonard, Courville
@@ -2074,7 +2073,7 @@ Yoshua Bengio:
 
 
 #### ["Generating Diverse High-Fidelity Images with VQ-VAE-2"](https://arxiv.org/abs/1906.00446) Razavi, Oord, Vinyals
-  `VQ-VAE`
+  `VQ-VAE-2` `VQ-VAE`
 >	"VQ-VAE for large scale image generation"  
 >	"We scale and enhance the autoregressive priors used in VQ-VAE."  
 >	"We use simple feed-forward encoder and decoder networks, making our model an attractive candidate for applications where the encoding and/or decoding speed is critical."  
@@ -2084,6 +2083,7 @@ Yoshua Bengio:
 >	- non-autoregressive image decoder  
 >	- discrete latents w/ straight through estimator"  
   - `video` <https://youtu.be/QoCyQBzi7us?t=57m37s> (Oord)
+  - `post` <https://machinethoughts.wordpress.com/2019/06/25/the-inevitability-of-vector-quantization-in-deep-architectures>
   - `code` <https://github.com/deepmind/sonnet/blob/master/sonnet/examples/vqvae_example.ipynb>
 
 
@@ -2278,11 +2278,21 @@ Yoshua Bengio:
 #### ["Matrix Capsules with EM Routing"](https://openreview.net/forum?id=HJWLfGWRb) Hinton, Sabour, Frosst
   `CapsNet`
 >	"A capsule is a group of neurons whose outputs represent different properties of the same entity. Each layer in a capsule network contains many capsules [a group of capsules forms a capsule layer and can be used in place of a traditional layer in a neural net]. We describe a version of capsules in which each capsule has a logistic unit to represent the presence of an entity and a 4x4 matrix which could learn to represent the relationship between that entity and the viewer (the pose). A capsule in one layer votes for the pose matrix of many different capsules in the layer above by multiplying its own pose matrix by trainable viewpoint-invariant transformation matrices that could learn to represent part-whole relationships. Each of these votes is weighted by an assignment coefficient. These coefficients are iteratively updated for each image using the Expectation-Maximization algorithm such that the output of each capsule is routed to a capsule in the layer above that receives a cluster of similar votes. The transformation matrices are trained discriminatively by backpropagating through the unrolled iterations of EM between each pair of adjacent capsule layers. On the smallNORB benchmark, capsules reduce the number of test errors by 45\% compared to the state-of-the-art. Capsules also show far more resistance to white box adversarial attack than our baseline convolutional neural network."
+
   - `video` <https://youtu.be/hYt3FcJUf6w?t=50m38s> (Uziela)
+  - `video` <https://youtube.com/watch?v=akq6PNnkKY8> (Ou)
   - `post` <https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/>
   - `post` <https://towardsdatascience.com/demystifying-matrix-capsules-with-em-routing-part-1-overview-2126133a8457>
+  - `post` <https://staff.fnwi.uva.nl/s.abnar/?p=108>
   - `notes` <https://blog.acolyer.org/2017/11/14/matrix-capsules-with-em-routing/>
   - `code` <https://github.com/loretoparisi/CapsNet>
+
+
+#### ["Stacked Capsule Autoencoders"](https://arxiv.org/abs/1906.06818) Kosiorek, Sabour, Teh, Hinton
+  `CapsNet` `information routing`
+>	"An object can be seen as a geometrically organized set of interrelated parts. A system that makes explicit use of these geometric relationships to recognize objects should be naturally robust to changes in viewpoint, because the intrinsic geometric relationships are viewpoint-invariant. We describe an unsupervised version of capsule networks, in which a neural encoder, which looks at all of the parts, is used to infer the presence and poses of object capsules. The encoder is trained by backpropagating through a decoder, which predicts the pose of each already discovered part using a mixture of pose predictions. The parts are discovered directly from an image, in a similar manner, by using a neural encoder, which infers parts and their affine transformations. The corresponding decoder models each image pixel as a mixture of predictions made by affine-transformed parts. We learn object- and their part-capsules on unlabeled data, and then cluster the vectors of presences of object capsules. When told the names of these clusters, we achieve state-of-the-art results for unsupervised classification on SVHN (55%) and near state-of-the-art on MNIST (98.5%)."
+
+  - `notes` <https://medium.com/syncedreview/geoffrey-hintons-unsupervised-capsule-networks-achieve-sota-results-on-svhn-ffe05e871249>
 
 
 #### ["Highway Networks"](http://arxiv.org/abs/1505.00387) Srivastava, Greff, Schmidhuber
@@ -2366,6 +2376,7 @@ Yoshua Bengio:
   - `video` <http://youtube.com/watch?v=UdSK7nnJKHU> (Sutskever)
   - `video` <http://youtube.com/watch?v=9U0drwafE78> (Vinyals)
   - `video` <http://youtube.com/watch?v=i2gzr1kXTxM> (Vinyals)
+  - `post` <http://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/nips/SutskeverVL14>
   - <https://google.github.io/seq2seq>
 
@@ -2444,6 +2455,7 @@ Yoshua Bengio:
   - `video` <https://youtu.be/LhH6wMvntSM?t=54m56s> (Suleymanov) `in russian`
   - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani, Uszkoreit)
   - `post` <https://jalammar.github.io/illustrated-transformer/>
+  - `post` <https://danieltakeshi.github.io/2019/03/30/transformers/>
   - `post` <http://nlp.seas.harvard.edu/2018/04/03/attention.html>
   - `post` <https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/>
   - `post` <https://medium.com/@adityathiruvengadam/transformer-architecture-attention-is-all-you-need-aeccd9f50d09>
@@ -2847,6 +2859,7 @@ Yoshua Bengio:
 ----
 >	"Hinton starts with a discussion on how the brain probably implements something equivalent to backpropagation, despite several huge objections from neuroscience. He reviews how unsupervised learning techniques can help augment/expand the training signal. Next he discusses the brain's immense size (10^14 parameters) relative to supervision bits/training data indicates the brain is operating with a high model/data complexity ratio. He discusses how this is actually ideal in the bayesian sense - more data is always good, and a larger model is always good - provided your model is properly regularized. The best (bayesian) regularization amounts to ensembling over the entire model space. Dropout is an effective trick to approximate that, and dropout is just a particular type of multiplicative noise. He then shows how neural Poisson spiking can implement multiplicative noise - and thus dropout style ensembling. Rest of the talk focuses on how spiking nets can implement backpropagation equivalent credit assignment (error derivatives as temporal derivatives). Autoencoders that learn asymmetric but matched weights, and the 'miracle' in 2014 when Lillicrap et al showed that backpropagation can even work (almost as well) using random, fixed, untrained asymmetric back connections. Conclusion: the brain really is a deep neural network, spikes are just a form of dropout regularization, error derivatives can be represented as temporal derivatives (backpropagation with spike timing dependent plasticity), connections symmetry doesn't matter."
 
+  - `video` <http://youtube.com/watch?v=qIEfJ6OBGj8> (Hinton)
   - `video` <http://youtube.com/watch?v=VIRCybGgHts> (Hinton)
   - `video` <http://youtube.com/watch?v=cBLk5baHbZ8> (Hinton)
   - `video` <http://sms.cam.ac.uk/media/2017973> (38:00) (Hinton)

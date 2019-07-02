@@ -363,6 +363,7 @@
   - `video` <https://youtu.be/oaQSQsjhcwQ> + <https://youtu.be/9dSQmXDH--I> + <https://youtu.be/Rbs55YaK7EU> (Tatman)
   - `video` <https://youtube.com/watch?v=u1_qMdb0kYU> (Kilcher)
   - `video` <https://youtube.com/watch?v=n_UlVuFAzbU> (Amjadian)
+  - `video` <https://youtu.be/qIEfJ6OBGj8?t=14m25s> (Hinton)
 
 #### ["BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"](https://arxiv.org/abs/1810.04805) Devlin, Chang, Lee, Toutanova
   `language modeling` `BERT`
@@ -541,6 +542,7 @@
   - `video` <https://youtube.com/watch?v=fwcJpSYNsNs> (Mikolov)
   - `video` <https://youtube.com/watch?v=c3yRH0XZN2g> (Boyd-Graber)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=mikolov2013efficient>
+  - `post` <http://jalammar.github.io/illustrated-word2vec>
   - `post` <http://alexminnaar.com/word2vec-tutorial-part-i-the-skip-gram-model.html>
   - `post` <http://alexminnaar.com/word2vec-tutorial-part-ii-the-continuous-bag-of-words-model.html>
   - `paper` ["word2vec Parameter Learning Explained"](http://www-personal.umich.edu/~ronxin/pdf/w2vexp.pdf) by Rong
@@ -555,6 +557,7 @@
 >	Second, they show that their model works with phrases, too, though they just do this by replacing the individual tokens in a multiword expression with a single symbol representing the phrase - pretty simple, but it works.  
 >	Third, they show what to me was a very surprising additional feature of the learned vector spaces: some relationships are encoded compositionally in the vector space, meaning that you can just add the vectors for two words like "Russian" and "capital" to get a vector that is very close to "Moscow". They didn't do any kind of thorough evaluation of this, but the fact the it works at all was very surprising to me. They did give a reasonable explanation, however, and I've put it into math below. The probability of two words i and j appearing in the same context in this model is proportional to exp(vi⋅vj). Now, if we have a third word, k, and its probability of appearing with both word i and word j is proportional to exp(vk⋅vi)*exp(vk⋅vj)=exp(vk⋅(vi+vj)). So what you get when you add the vectors for two words is something that is likely to show up in the contexts of both of them. Thus if you pick word i to be "Russian" and word j to be "capital", a word k that has high probability might very well be "Moscow", because it tends to show up in the context of both of those words. So we can see that this method does have some reasonable explanation for why it works."
 
+  - `post` <http://jalammar.github.io/illustrated-word2vec>
   - `paper` ["word2vec Explained: Deriving Mikolov et al.’s Negative-Sampling Word-Embedding Method"](http://arxiv.org/abs/1402.3722) by Goldberg and Levy
 
 

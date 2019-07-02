@@ -110,21 +110,17 @@
 
 #### blogs
 
-  <http://inference.vc>  
   <http://offconvex.org>  
   <http://argmin.net>  
+  <http://inference.vc>  
   <http://blog.shakirm.com>  
+  <http://machinethoughts.wordpress.com>  
   <http://hunch.net>  
   <http://machinedlearnings.com>  
   <http://nlpers.blogspot.com>  
+  <http://timvieira.github.io>  
   <http://ruder.io>  
-  <http://fastml.com>  
-  <http://wildml.com>  
-  <http://blogs.princeton.edu/imabandit>  
-  <http://timvieira.github.io/blog>  
-  <http://r2rt.com>  
   <http://danieltakeshi.github.io>  
-  <http://theneuralperspective.com>  
 
 
 #### news and discussions
@@ -372,6 +368,8 @@
   [Metalearning symposium](https://vimeo.com/250399623) panel `video`  
   [RNN symposium](https://youtube.com/watch?v=zSNkbhgMkzQ) panel `video`  
 
+  [meta reinforcement learning](https://lilianweng.github.io/lil-log/2019/06/23/meta-reinforcement-learning.html) overview by Lilian Weng
+
   [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#meta-learning)
 
 ----
@@ -443,24 +441,23 @@
 
 ----
 
-  [auto-sklearn](https://github.com/automl/auto-sklearn) project  
+  [*auto-sklearn*](https://github.com/automl/auto-sklearn) project  
   - [overview](https://automl.org/book) by Feurer et al.  
 
-  [TPOT](https://github.com/EpistasisLab/tpot) project  
+  [*TPOT*](https://github.com/EpistasisLab/tpot) project  
   - [overview](https://automl.org/book) by Olson and Moore  
 
-  [auto_ml](http://auto-ml.readthedocs.io) project  
+  [*auto_ml*](http://auto-ml.readthedocs.io) project  
 
-  [H2O AutoML](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html) project  
+  [*H2O AutoML*](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html) project  
 
-  [The Automatic Statistician](https://automaticstatistician.com) project  
+  [*The Automatic Statistician*](https://automaticstatistician.com) project  
   - [overview](https://automl.org/book) by Steinruecken et al.  
   - [overview](https://youtube.com/watch?v=aPDOZfu_Fyk) by Zoubin Ghahramani `video`  
   - [overview](https://youtu.be/H7AMB0oo__4?t=53m20s) by Zoubin Ghahramani `video`  
   - [overview](https://youtube.com/watch?v=WW2eunuApAU) by Zoubin Ghahramani `video`  
-  - [overview](https://www.snn.ru.nl/v2/img/ml2015/slides/Ghahramani_nijmegen15part2.pdf) by Zoubin Ghahramani `slides`  
 
-  [AlphaD3M](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#alphad3m-machine-learning-pipeline-synthesis-drori-et-al) project  
+  [*AlphaD3M*](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#alphad3m-machine-learning-pipeline-synthesis-drori-et-al) project  
 
 ----
 
@@ -532,6 +529,7 @@
   [overview](https://youtube.com/watch?v=08jorbiyLwY) by Chris Re `video`  
   [overview](https://youtube.com/watch?v=HmocI2b5YfA) by Chris Re `video`  
   [overview](https://youtube.com/watch?v=pXoiYSQHf2I) by Stephen Bach `video`  
+  [overview](https://slideslive.com/38916920/building-and-structuring-training-sets-for-multitask-learning) by Alex Ratner `video`  
   [overview](https://youtube.com/watch?v=G88jJquj6Wo) by Alex Ratner `audio`  
 
 ----

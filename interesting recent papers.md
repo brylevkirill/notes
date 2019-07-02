@@ -685,59 +685,15 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 ----
 #### ["Dynamic Routing Between Capsules"](https://arxiv.org/abs/1710.09829) Sabour, Frosst, Hinton
   `CapsNet` `information routing`
->	"A capsule is a group of neurons whose activity vector represents the instantiation parameters of a specific type of entity such as an object or object part. We use the length of the activity vector to represent the probability that the entity exists and its orientation to represent the instantiation paramters. Active capsules at one level make predictions, via transformation matrices, for the instantiation parameters of higher-level capsules. When multiple predictions agree, a higher level capsule becomes active. We show that a discrimininatively trained, multi-layer capsule system achieves state-of-the-art performance on MNIST and is considerably better than a convolutional net at recognizing highly overlapping digits. To achieve these results we use an iterative routing-by-agreement mechanism: A lower-level capsule prefers to send its output to higher level capsules whose activity vectors have a big scalar product with the prediction coming from the lower-level capsule."  
->	"Dynamic routing can be viewed as a parallel attention mechanism that allows each capsule at one level to attend to some active capsules at the level below and to ignore others. This should allow the model to recognize multiple objects in the image even if objects overlap. The routing-by-agreement should make it possible to use a prior about shape of objects to help segmentation and it should obviate the need to make higher-level segmentation decisions in the domain of pixels."  
->	"For thirty years, the state-of-the-art in speech recognition used hidden Markov models with Gaussian mixtures as output distributions. These models were easy to learn on small computers, but they had a representational limitation that was ultimately fatal: The one-of-n representations they use are exponentially inefficient compared with, say, a recurrent neural network that uses distributed representations. To double the amount of information that an HMM can remember about the string it has generated so far, we need to square the number of hidden nodes. For a recurrent net we only need to double the number of hidden neurons.  
->	Now that convolutional neural networks have become the dominant approach to object recognition, it makes sense to ask whether there are any exponential inefficiencies that may lead to their demise. A good candidate is the difficulty that convolutional nets have in generalizing to novel viewpoints. The ability to deal with translation is built in, but for the other dimensions of an affine transformation we have to chose between replicating feature detectors on a grid that grows exponentially with the number of dimensions, or increasing the size of the labelled training set in a similarly exponential way. Capsules avoid these exponential inefficiencies by converting pixel intensities into vectors of instantiation parameters of recognized fragments and then applying transformation matrices to the fragments to predict the instantiation parameters of larger fragments. Transformation matrices that learn to encode the intrinsic spatial relationship between a part and a whole constitute viewpoint invariant knowledge that automatically generalizes to novel viewpoints.  
->	Capsules make a very strong representational assumption: At each location in the image, there is at most one instance of the type of entity that a capsule represents. This assumption eliminates the binding problem and allows a capsule to use a distributed representation (its activity vector) to encode the instantiation parameters of the entity of that type at a given location. This distributed representation is exponentially more efficient than encoding the instantiation parameters by activating a point on a high-dimensional grid and with the right distributed representation, capsules can then take full advantage of the fact that spatial relationships can be modelled by matrix multiplies.  
->	Capsules use neural activities that vary as viewpoint varies rather than trying to eliminate viewpoint variation from the activities. This gives them an advantage over "normalization" methods like spatial transformer networks: They can deal with multiple different affine transformations of different objects or object parts at the same time.  
->	Research on capsules is now at a similar stage to research on recurrent neural networks for speech recognition at the beginning of this century. There are fundamental representational reasons for believing that it is a better approach but it probably requires a lot more small insights before it can out-perform a highly developed technology. The fact that a simple capsules system already gives unparalleled performance at segmenting overlapping digits is an early indication that capsules are a direction worth exploring."  
->
->	"The core idea of capsules is that low level features predict the existence and pose of higher level features; collisions are non-coincidental. E.g. paw HERE predicts tiger THERE, nose HERE predicts tiger THERE, stripe HERE predicts tiger THERE - paw and nose and stripe predict tiger in the SAME PLACE! That's unlikely to be a coincidence, there's probably a tiger.  
->	The core idea of pooling is that high level features are correlated with the existence of low-level features across sub-regions. E.g. I see a paw and a nose and a stripe - I guess we've got some tigers up in this. Even if the paw predicts a Tiger Rampant and the nose predicts a Tiger Face-On and the stripe predicts a Tiger Sideways. Hence CNN's disastrous vulnerability to adversarial stimuli."  
->
->	"A fully connected layer would route the features based on their agreement with a learned weight vector. This defeats the intent of dynamic routing, the whole purpose of which is to route activations to capsules where they agree with other activations. It does the routing based on a fast iterative process in the forward pass, not a slow learning process like gradient descent."  
->
->	"- requires less training data  
->	- position and pose information are preserved (equivarience)  
->	- promising for image segmentation and object detection  
->	- routing by agreement is great for overlapping objects (explaining away)  
->	- capsule activations nicely map the hierarchy of parts  
->	- offers robustness to affine transformations  
->	- activation vectors are easier to interpret (rotation, thickness, skew)"  
-  - `video` <https://youtube.com/watch?v=gq-7HgzfDBM>
-  - `video` <https://facebook.com/nipsfoundation/videos/1553634558061111?t=5824> (Frosst)
-  - `video` ["What is wrong with convolutional neural nets?"](https://youtube.com/watch?v=Mqt8fs6ZbHk) (Hinton)
-  - `video` ["What's wrong with convolutional nets?"](http://techtv.mit.edu/collections/bcs/videos/30698-what-s-wrong-with-convolutional-nets) (Hinton) ([transcription](https://github.com/WalnutiQ/walnut/issues/157))
-  - `video` ["Does the Brain do Inverse Graphics?"](https://youtube.com/watch?v=TFIMqt0yT2I) (Hinton)
-  - `video` <https://youtube.com/watch?v=pPN8d0E3900> (Geron)
-  - `video` <https://youtube.com/watch?v=EATWLTyLfmc> (Canziani)
-  - `video` <https://youtube.com/watch?v=hYt3FcJUf6w> (Uziela)
-  - `video` <https://youtube.com/watch?v=VKoLGnq15RM> (Raval)
-  - `video` <https://youtube.com/watch?v=UZ9BgrofhKk> (Kozlov) `in russian`
-  - `video` <https://youtube.com/watch?v=8R3gXmh1F0c> (Lykov) `in russian`
-  - `post` <https://oreilly.com/ideas/introducing-capsule-networks>
-  - `post` <https://medium.com/@pechyonkin/understanding-hintons-capsule-networks-part-i-intuition-b4b559d1159b>
-  - `post` <https://hackernoon.com/uncovering-the-intuition-behind-capsule-networks-and-inverse-graphics-part-i-7412d121798d>
-  - `post` <https://jhui.github.io/2017/11/03/Dynamic-Routing-Between-Capsules/>
-  - `post` <https://hackernoon.com/what-is-a-capsnet-or-capsule-network-2bfbe48769cc>
-  - `post` <https://medium.com/@mike_ross/a-visual-representation-of-capsule-network-computations-83767d79e737>
-  - `notes` <https://blog.acolyer.org/2017/11/13/dynamic-routing-between-capsules/>
-  - `code` <https://github.com/ageron/handson-ml/blob/master/extra_capsnets.ipynb>
-  - `code` <https://github.com/Sarasra/models/tree/master/research/capsules>
-  - `code` <https://github.com/loretoparisi/CapsNet>
-  - `paper` ["Transforming Auto-encoders"](http://www.cs.toronto.edu/~fritz/absps/transauto6.pdf) by Hinton, Krizhevsky, Wang
-  - `paper` ["Optimizing Neural Networks that Generate Images"](http://www.cs.toronto.edu/~tijmen/tijmen_thesis.pdf) by Tieleman ([code](https://github.com/mrkulk/Unsupervised-Capsule-Network))
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#dynamic-routing-between-capsules-sabour-frosst-hinton>
 
 #### ["Matrix Capsules with EM Routing"](https://openreview.net/forum?id=HJWLfGWRb) Hinton, Sabour, Frosst
   `CapsNet` `information routing`
-  - `video` <https://youtu.be/hYt3FcJUf6w?t=50m38s> (Uziela)
-  - `video` <https://youtube.com/watch?v=akq6PNnkKY8> (Ou)
-  - `post` <https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/>
-  - `post` <https://towardsdatascience.com/demystifying-matrix-capsules-with-em-routing-part-1-overview-2126133a8457>
-  - `post` <https://staff.fnwi.uva.nl/s.abnar/?p=108>
-  - `notes` <https://blog.acolyer.org/2017/11/14/matrix-capsules-with-em-routing/>
-  - `code` <https://github.com/loretoparisi/CapsNet>
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#matrix-capsules-with-em-routing-hinton-sabour-frosst>
+
+#### ["Stacked Capsule Autoencoders"](https://arxiv.org/abs/1906.06818) Kosiorek, Sabour, Teh, Hinton
+  `CapsNet` `information routing`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#stacked-capsule-autoencoders-kosiorek-sabour-teh-hinton>
 
 #### ["Decoupled Neural Interfaces using Synthetic Gradients"](http://arxiv.org/abs/1608.05343) Jaderberg, Czarnecki, Osindero, Vinyals, Graves, Silver, Kavukcuoglu
   `information routing`
@@ -760,6 +716,8 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 ---
 ### meta-learning
+
+[recent papers - meta reinforcement learning](https://lilianweng.github.io/lil-log/2019/06/23/meta-reinforcement-learning.html)
 
 ----
 #### ["On First-Order Meta-Learning Algorithms"](https://arxiv.org/abs/1803.02999) Nichol, Achiam, Schulman
@@ -800,6 +758,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=ID150Tl-MMw&t=1h1m22s> + <https://youtube.com/watch?v=ID150Tl-MMw&t=1h9m10s> (Abbeel)
   - `video` <https://youtu.be/16UUb4HF0fo?t=7m34s> (Golikov) `in russian`
   - `post` <http://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/> (Finn)
+  - `post` <https://danieltakeshi.github.io/2018/04/01/maml>
   - `post` <https://blog.evjang.com/2019/02/maml-jax.html>
   - `post` <http://noahgolmant.com/maml.html>
   - `code` <https://github.com/tristandeleu/pytorch-maml-rl>
@@ -945,6 +904,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `post` <https://medium.com/syncedreview/new-deepmind-unsupervised-image-model-challenges-alexnet-d658ef92ab1e>
   - `video` <https://youtu.be/QoCyQBzi7us?t=1h9m51s> (Oord)
   - `video` <https://youtu.be/AC4l_MY2Dhc?t=1h6m33s> (Srinivas)
+  - `post` <https://machinethoughts.wordpress.com/2018/08/15/predictive-coding-and-mutual-information>
   - `paper` ["Data-Efficient Image Recognition with Contrastive Predictive Coding"](https://arxiv.org/abs/1905.09272) by Henaff et al. ([talk](https://facebook.com/icml.imls/videos/378993762742156?t=3335) by Henaff `video`)
 
 #### ["Revisiting Self-Supervised Visual Representation Learning"](https://arxiv.org/abs/1901.09005) Kolesnikov, Zhai, Beyer
@@ -1008,6 +968,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/iSyvwAwa7vk> (demo)
   - `video` <https://youtube.com/watch?v=kkihoMMpBb0> (Vinyals)
   - `video` <https://facebook.com/iclr.cc/videos/2125495797479475?t=2069> (Kavukcuoglu)
+
+#### ["Stacked Capsule Autoencoders"](https://arxiv.org/abs/1906.06818) Kosiorek, Sabour, Teh, Hinton
+  `CapsNet` `concept learning` `clustering`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#stacked-capsule-autoencoders-kosiorek-sabour-teh-hinton>
 
 #### ["Relational Neural Expectation Maximization: Unsupervised Discovery of Objects and their Interactions"](https://arxiv.org/abs/1802.10353) Steenkiste, Chang, Greff, Schmidhuber
   `concept learning` `clustering`
@@ -2461,6 +2425,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=C7Dmu0GtrSw>
   - `video` <https://slideslive.com/38915863/learning-models-for-representations-and-planning> (14:20) (Lillicrap)
   - `code` <https://github.com/google-research/planet>
+  - `code` <https://github.com/Kaixhin/PlaNet>
 
 #### ["Temporal Difference Variational Auto-Encoder"](https://arxiv.org/abs/1806.03107) Gregor, Papamakarios, Besse, Buesing, Weber
   `TD-VAE` `partial observability` `learning to simulate` `learning environment model` `video prediction` `no explicit planning`
@@ -2846,6 +2811,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"Our method is able to solve tasks not solvable by either RL or behavior cloning alone, and often ends up outperforming the demonstrator policy."  
   - <http://ashvin.me/demoddpg-website/> (demo)
   - `video` <https://vimeo.com/252186855> (Nair)
+  - `post` <https://danieltakeshi.github.io/2018/02/28/sample-efficient-rl>
 
 #### ["Hindsight Experience Replay"](https://arxiv.org/abs/1707.01495) Andrychowicz, Wolski, Ray, Schneider, Fong, Welinder, McGrew, Tobin, Abbeel, Zaremba
   `HER` `exploration guided by learning progress`
@@ -2861,6 +2827,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/RvEwFvl-TrY?t=19m18s> (Sutskever)
   - `video` <https://youtu.be/BXe2A5i4ESw?t=10m42s> (Fournier)
   - `video` <https://youtu.be/0Ey02HT_1Ho?t=10m57s> (Steenbrugge)
+  - `post` <https://danieltakeshi.github.io/2018/02/28/sample-efficient-rl>
   - `notes` <https://yobibyte.github.io/files/paper_notes/her.pdf>
   - `post` <https://jangirrishabh.github.io/2018/03/25/Overcoming-exploration-demos.html>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/her>
@@ -3088,6 +3055,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"The main idea is to employ an auxiliary loss function which encourages the student policy to be close to the teacher policy on the trajectories sampled by the student. Importantly, the weight of this loss in the overall learning objective is allowed to change over time, so that the student can gradually focus more on maximising rewards it receives from the environment, potentially surpassing the teacher (which might indeed have an architecture with less learning capacity). In multi-task problems, it is also straightforward to extend this approach to the case of multiple teachers, each of which is an expert on a particular task: in this case the student will learn from an appropriate teacher on each task using an analogous formulation."  
 >	"Our auxiliary loss can also be seen from the perspective of entropy regularisation. In the A3C method one adds the negated entropy H(πS(a|xt,ω)) as an auxiliary loss to encourage exploration. But minimisation of negated entropy is equivalent to minimising the KL divergence DKL(πS(a|xt,ω),U), where U is a uniform distribution over actions. Similarly the kickstarter loss is equivalent to the KL divergence between the teacher and the student policies. In this sense, the kickstarter loss can be seen as encouraging behaviour similar to the teacher, but just as entropy regularisation is not supposed to lead to convergence to a uniform policy, the goal of kickstarting is not to converge to the teacher’s policy. The aim of both is to provide a helpful auxiliary loss, based on what is a sensible behaviour – for the case of entropy regularization it is just sampling a random action, while for kickstarting it is following the teacher."  
   - `notes` <https://yobibyte.github.io/files/paper_notes/Kickstarting_Deep_Reinforcement_Learning_Simon_Schmitt__Jonathan_J__Hudson__Augustin_Zidek_et_al___2018.pdf>
+  - `notes` <https://danieltakeshi.github.io/2019/05/11/dqfd-followups>
 
 #### ["Distral: Robust Multitask Reinforcement Learning"](https://arxiv.org/abs/1707.04175) Teh, Bapst, Czarnecki, Quan, Kirkpatrick, Hadsell, Heess, Pascanu
   `policy distillation`
@@ -3222,6 +3190,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `imitation learning from visual observations` `meta-learning`
   - `video` <https://vimeo.com/252186304> (Finn, Yu)
   - `video` <https://youtu.be/lYU5nq0dAQQ?t=51m> (Levine)
+  - `post` <https://danieltakeshi.github.io/2018/04/04/one-shot-vi-meta-learning>
   - `code` <https://github.com/tianheyu927/mil>
 
 #### ["One-Shot Imitation Learning"](http://arxiv.org/abs/1703.07326) Duan, Andrychowicz, Stadie, Ho, Schneider, Sutskever, Abbeel, Zaremba

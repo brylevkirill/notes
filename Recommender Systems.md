@@ -30,6 +30,8 @@
   ["Deep Learning for Recommender Systems"](https://youtube.com/watch?v=KZ7bcfYGuxw) by Alexandros Karatzoglou `video`  
   ["Deep Learning for Personalized Search and Recommender Systems"](https://youtube.com/watch?v=0DYQzZp68ok) by Zhang, Le, Fawaz, Venkataraman `video`  
 
+  ["Billion-scale Recommender System"](https://youtube.com/watch?v=-lNF8QRtEL4) by Ivan Lobov `video`
+
   [ACM RecSys](https://youtube.com/channel/UC2nEn-yNA1BtdDNWziphPGA) conference `video`
 
 ----
@@ -145,7 +147,7 @@
 
 
 #### ["Variational Autoencoders for Collaborative Filtering"](https://arxiv.org/abs/1802.05814) Liang, Krishnan, Hoffman, Jebara
-  `Netflix`
+  `VAE-CF` `Netflix`
 >	"We extend variational autoencoders to collaborative filtering for implicit feedback. This non-linear probabilistic model enables us to go beyond the limited modeling capacity of linear factor models which still largely dominate collaborative filtering research. We introduce a generative model with multinomial likelihood and use Bayesian inference for parameter estimation. Despite widespread use in language modeling and economics, the multinomial likelihood receives less attention in the recommender systems literature. We introduce a different regularization parameter for the learning objective, which proves to be crucial for achieving competitive performance. Remarkably, there is an efficient way to tune the parameter using annealing. The resulting model and learning algorithm has information-theoretic connections to maximum entropy discrimination and the information bottleneck principle. Empirically, we show that the proposed approach significantly outperforms several state-of-the-art baselines, including two recently-proposed neural network approaches, on several real-world datasets. We also provide extended experiments comparing the multinomial likelihood with other commonly used likelihood functions in the latent factor collaborative filtering literature and show favorable results. Finally, we identify the pros and cons of employing a principled Bayesian inference approach and characterize settings where it provides the most significant improvements."
 
 >	"Recommender systems is more of a "small data" than a "big data" problem."  
@@ -154,6 +156,7 @@
 
   - `video` <https://youtube.com/watch?v=gRvxr47Gj3k> (Liang)
   - `code` <https://github.com/dawenl/vae_cf>
+  - `code` <https://github.com/belepi93/vae-cf-pytorch>
 
 
 #### ["Content-based Recommendations with Poisson Factorization"](http://www.cs.toronto.edu/~lcharlin/papers/GopalanCharlinBlei_nips14.pdf) Gopalan, Charlin, Blei

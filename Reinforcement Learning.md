@@ -71,16 +71,10 @@
 ---
 ### applications - industry
 
-  ["Reinforcement Learning in Industry"](http://videolectures.net/deeplearning2017_le_roux_recommendation_system/) by Nicolas Le Roux `video`
-
-  ["Why Tool AIs Want to Be Agent AIs"](http://gwern.net/Tool%20AI) by Gwern Branwen
-
-----
-
   [personalized web services](http://thenewstack.io/reinforcement-learning-ready-real-world/) at Microsoft (Custom Decision Service [paper](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) `summary`)  
   ["Personalized Web Services"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto  
 
-  [recommender systems](http://www.fields.utoronto.ca/video-archive/2019/02/2509-19619) at Google `video` ([paper](https://arxiv.org/abs/1905.12767) by Ie et al.)
+  [recommender systems](http://www.fields.utoronto.ca/video-archive/2019/02/2509-19619) at Google `video` ([paper](https://arxiv.org/abs/1905.12767) by Ie et al., [press](https://nytimes.com/interactive/2019/06/08/technology/youtube-radical.html))
 
   [datacenter cooling](https://deepmind.com/blog/safety-first-ai-autonomous-data-centre-cooling-and-industrial-control/) at Google ([paper](https://papers.nips.cc/paper/7638-data-center-cooling-using-model-predictive-control.pdf) by Lazic et al., [patent](http://freepatentsonline.com/y2018/0204116.html))
 
@@ -91,6 +85,12 @@
   ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1810.06339) by Yuxi Li `book`
 
   [**other applications**](https://yadi.sk/d/tiaE7sdi3WEhDS)
+
+----
+
+  ["Reinforcement Learning in Industry"](http://videolectures.net/deeplearning2017_le_roux_recommendation_system/) by Nicolas Le Roux `video`
+
+  ["Why Tool AIs Want to Be Agent AIs"](http://gwern.net/Tool%20AI) by Gwern Branwen
 
 
 
@@ -934,9 +934,9 @@
   [overview](https://youtu.be/sGuiWX07sKw?t=1h29m7s) by David Silver `video`  
   [overview](https://vimeo.com/240429210) by John Langford and Alekh Agarwal `video`  
   [overview](https://youtu.be/zr6H4kR8vTg) by John Langford `video`  
-  [overview](https://youtube.com/watch?v=IWuMb0A09po) by Dale Schuurmans `video`  
+  [overview](https://youtu.be/IWuMb0A09po) by Dale Schuurmans `video`  
 
-  [overview](http://youtube.com/watch?v=N5x48g2sp8M) of theory by Robert Schapire `video`  
+  [overview](http://youtu.be/N5x48g2sp8M) of theory by Robert Schapire `video`
 
 ----
 
@@ -1395,7 +1395,7 @@
 ---
 ### policy-based methods
 
-  introduction by Andrej Karpathy ([post](http://karpathy.github.io/2016/05/31/rl), [talk](https://youtube.com/watch?v=tqrcjHuNdmQ) `video`)
+  [introduction](https://danieltakeshi.github.io/2017/03/28/going-deeper-into-reinforcement-learning-fundamentals-of-policy-gradients) by Daniel Takeshi
 
   [introduction](http://youtube.com/watch?v=S_gwYj1Q-44) by Pieter Abbeel `video`  
   [introduction](http://youtube.com/watch?v=KHZVXao4qXs) by David Silver `video`  
@@ -2878,9 +2878,9 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=buUF5F8UCH8> (Lamb, Ozair)
   - `video` <https://youtube.com/watch?v=Q0ldKJbAwR8> (Dosovitskiy) `in russian`
   - `video` <https://yadi.sk/i/pMdw-_uI3Gke7Z> (1:02:03) (Shvechikov) `in russian`
+  - `post` <https://danieltakeshi.github.io/2017/10/10/learning-to-act-by-predicting-the-future>
   - `post` <https://oreilly.com/ideas/reinforcement-learning-for-complex-goals-using-tensorflow>
   - `post` <https://flyyufelix.github.io/2017/11/17/direct-future-prediction.html>
-  - `notes` <https://danieltakeshi.github.io/2017/10/10/learning-to-act-by-predicting-the-future/>
   - `notes` <https://blog.acolyer.org/2017/05/12/learning-to-act-by-predicting-the-future/>
   - `code` <https://github.com/IntelVCL/DirectFuturePrediction>
   - `code` <https://github.com/NervanaSystems/coach/blob/master/agents/dfp_agent.py>
@@ -3003,6 +3003,7 @@ interesting recent papers:
 
 
 #### ["Asynchronous Methods for Deep Reinforcement Learning"](https://arxiv.org/abs/1602.01783) Mnih, Badia, Mirza, Graves, Lillicrap, Harley, Silver, Kavukcuoglu
+  `A2C` `A3C`
 >	"We propose a conceptually simple and lightweight framework for deep reinforcement learning that uses asynchronous gradient descent for optimization of deep neural network controllers. We present asynchronous variants of four standard reinforcement learning algorithms and show that parallel actor-learners have a stabilizing effect on training allowing all four methods to successfully train neural network controllers. The best performing method, an asynchronous variant of actor-critic, surpasses the current state-of-the-art on the Atari domain while training for half the time on a single multi-core CPU instead of a GPU. Furthermore, we show that asynchronous actor-critic succeeds on a wide variety of continuous motor control problems as well as on a new task of navigating random 3D mazes using a visual input."
 
 >	"We have presented asynchronous versions of four standard reinforcement learning algorithms and showed that they are able to train neural network controllers on a variety of domains in a stable manner. Our results show that in our proposed framework stable training of neural networks through reinforcement learning is possible with both valuebased and policy-based methods, off-policy as well as onpolicy methods, and in discrete as well as continuous domains. When trained on the Atari domain using 16 CPU cores, the proposed asynchronous algorithms train faster than DQN trained on an Nvidia K40 GPU, with A3C surpassing the current state-of-the-art in half the training time. One of our main findings is that using parallel actorlearners to update a shared model had a stabilizing effect on the learning process of the three value-based methods we considered. While this shows that stable online Q-learning is possible without experience replay, which was used for this purpose in DQN, it does not mean that experience replay is not useful. Incorporating experience replay into the asynchronous reinforcement learning framework could substantially improve the data efficiency of these methods by reusing old data. This could in turn lead to much faster training times in domains like TORCS where interacting with the environment is more expensive than updating the model for the architecture we used."
@@ -3013,6 +3014,7 @@ interesting recent papers:
   - `video` <http://youtube.com/watch?v=9sx1_u2qVhQ> (Mnih)
   - `video` <http://techtalks.tv/talks/asynchronous-methods-for-deep-reinforcement-learning/62475/> (Mnih)
   - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h49m19s> (Sigaud)
+  - `post` <https://danieltakeshi.github.io/2018/06/28/a2c-a3c>
   - `post` <https://medium.com/@awjuliani/simple-reinforcement-learning-with-tensorflow-part-8-asynchronous-actor-critic-agents-a3c-c88f72a5e9f2>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FMnihBMGLHSK16>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/a2c>
@@ -3062,7 +3064,7 @@ interesting recent papers:
   - `video` <https://youtu.be/gb5Q2XL5c8A?t=21m2s> + <https://youtube.com/watch?v=ATvp0Hp7RUI> + <https://youtube.com/watch?v=Pvw28wPEWEo> (demo)
   - `video` <https://youtu.be/xe-z4i3l-iQ?t=30m35s> (Abbeel)
   - `video` <https://youtu.be/rO7Dx8pSJQw?t=40m20s> (Schulman)
-  - `notes` <https://danieltakeshi.github.io/2017/04/02/notes-on-the-generalized-advantage-estimation-paper/>
+  - `post` <https://danieltakeshi.github.io/2017/04/02/notes-on-the-generalized-advantage-estimation-paper/>
   - `code` <https://github.com/joschu/modular_rl>
   - `code` <https://github.com/rll/deeprlhw2/blob/master/ppo.py>
   - `code` <https://github.com/higgsfield/RL-Adventure-2>
