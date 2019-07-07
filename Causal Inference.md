@@ -88,6 +88,8 @@
 
   What if some railways are closed, what will passengers do? What if we incentivize members of a social network to propagate an idea, how influential can they be? What if some genes in a cell are knocked-out, which phenotypes can we expect? Such questions need to be addressed via a combination of experimental and observational data, and require a careful approach to modelling heterogeneous datasets and structural assumptions concerning the causal relations among components of the system.
 
+  Causal model is a set of assumptions about the data generating process, which cannot be expressed as properties of the joint distribution of observed variables.
+
 ----
 
   "In retrospect, my greatest challenge was to break away from probabilistic thinking and accept, first, that people are not probability thinkers but cause-effect thinkers and, second, that causal thinking cannot be captured in the language of probability; it requires a formal language of its own."

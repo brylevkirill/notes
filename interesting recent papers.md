@@ -926,14 +926,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 #### ["Poincare Embeddings for Learning Hierarchical Representations"](https://arxiv.org/abs/1705.08039) Nickel, Kiela
   `representation learning` `self-supervised learning`
-  - `video` <https://cds.cern.ch/record/2306315> (Nickel)
-  - `video` <https://facebook.com/nipsfoundation/videos/1553634558061111?t=3781> (Nickel)
-  - `notes` <https://medium.com/towards-data-science/facebook-research-just-published-an-awesome-paper-on-learning-hierarchical-representations-34e3d829ede7>
-  - `notes` <https://medium.com/@hol_io/word-embeddings-exploration-explanation-and-exploitation-with-code-in-python-5dac99d5d795>
-  - `post` <https://rare-technologies.com/implementing-poincare-embeddings/>
-  - `code` <https://github.com/facebookresearch/poincare-embeddings>
-  - `code` <https://github.com/TatsuyaShirakawa/poincare-embedding>
-  - `code` <https://github.com/lateral/poincare-embeddings>
+  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#poincare-embeddings-for-learning-hierarchical-representations-nickel-kiela>
 
 #### ["Unsupervised Learning by Predicting Noise"](https://arxiv.org/abs/1704.05310) Bojanowski, Joulin
   `representation learning`
@@ -1635,6 +1628,11 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 [**interesting recent papers - generative models**](#generative-models)
 
 ----
+#### ["Invertible Residual Networks"](https://arxiv.org/abs/1811.00995) Behrmann, Grathwohl, Chen, Duvenaud, Jacobsen
+  `i-ResNets` `ICML 2019`
+>	"We show that standard ResNet architectures can be made invertible, allowing the same model to be used for classification, density estimation, and generation. Typically, enforcing invertibility requires partitioning dimensions or restricting network architectures. In contrast, our approach only requires adding a simple normalization step during training, already available in standard frameworks. Invertible ResNets define a generative model which can be trained by maximum likelihood on unlabeled data. To compute likelihoods, we introduce a tractable approximation to the Jacobian log-determinant of a residual block. Our empirical evaluation shows that invertible ResNets perform competitively with both state-of-the-art image classifiers and flow-based generative models, something that has not been previously achieved with a single architecture."  
+  - `video` <https://facebook.com/icml.imls/videos/welcome-back-to-icml-2019-presentations-this-session-on-deep-learning-architectu/552835701913736?t=555> (Behrmann)
+
 #### ["Glow: Generative Flow with Invertible 1x1 Convolutions"](https://arxiv.org/abs/1807.03039) Kingma, Dhariwal
   `Glow`
 >	"We demonstrate that a generative model optimized towards the plain log-likelihood objective is capable of efficient realistic-looking synthesis and manipulation of large images."  
@@ -3084,6 +3082,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 ----
 #### ["Fast Task Inference with Variational Intrinsic Successor Features"](https://arxiv.org/abs/1906.05030) Hansen, Dabney, Barreto, Wiele, Warde-Farley, Mnih
   `successor features`
+>	"Imagine that unsupervised interaction is free/cheap, but evaluating the reward function isn't. We formalize this as a 2 phase training regime: 1) unlimited unsupervised interaction; 2) few-shot rewarded interactions (standard RL setup). We apply this regime to all 57 Atari games. The successor features framework decouples state and reward dynamics. This allows you to infer the solution to a new task by solving a linear regression problem mapping features to rewards. But where do the features come from? Learning options with predictable behavior is an unsupervised objective that can be seen as implicitly learning controllable features. Plug these features into SF and you're good to go! After unsupervised learning of controllable successor features, we can now learn about a task very efficiently by solving a 5 parameter linear regression problem instead of a non-linear RL problem. Human-level performance on 14 Atari games."  
 
 #### ["Transfer in Deep Reinforcement Learning Using Successor Features and Generalised Policy Improvement"](http://proceedings.mlr.press/v80/barreto18a) Barreto et al.
   `successor features`
@@ -3130,6 +3129,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/xfyK03MEZ9Q?t=5h47m16s> (Hadsell)
   - `video` <https://youtu.be/x1kf4Zojtb0?t=41m4s> (de Freitas)
   - `notes` <https://blog.acolyer.org/2016/10/11/progressive-neural-networks/>
+  - `notes` <https://www.shortscience.org/paper?bibtexKey=journals/corr/1606.04671>
   - `code` <https://github.com/synpon/prog_nn>
 
 
@@ -3726,6 +3726,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-devlin-chang-lee-toutanova>
 
 ----
+#### ["No Training Required: Exploring Random Encoders for Sentence Classification"](https://arxiv.org/abs/1901.10444) Wieting, Kiela
+  `text embedding`
+  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#no-training-required-exploring-random-encoders-for-sentence-classification-wieting-kiela>
+
 #### ["A Simple but Tough-to-Beat Baseline for Sentence Embeddings"](https://openreview.net/pdf?id=SyK00v5xx) Arora, Liang, Ma
   `text embedding`
   - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#a-simple-but-tough-to-beat-baseline-for-sentence-embeddings-arora-liang-ma>

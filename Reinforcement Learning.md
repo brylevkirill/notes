@@ -74,7 +74,7 @@
   [personalized web services](http://thenewstack.io/reinforcement-learning-ready-real-world/) at Microsoft (Custom Decision Service [paper](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) `summary`)  
   ["Personalized Web Services"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto  
 
-  [recommender systems](http://www.fields.utoronto.ca/video-archive/2019/02/2509-19619) at Google `video` ([paper](https://arxiv.org/abs/1905.12767) by Ie et al., [press](https://nytimes.com/interactive/2019/06/08/technology/youtube-radical.html))
+  [recommender systems](http://www.fields.utoronto.ca/video-archive/2019/02/2509-19619) at Google `video` ([paper](#reinforcement-learning-for-slate-based-recommender-systems-a-tractable-decomposition-and-practical-methodology-ie-et-al) by Ie et al. `summary`, [press](https://nytimes.com/interactive/2019/06/08/technology/youtube-radical.html))
 
   [datacenter cooling](https://deepmind.com/blog/safety-first-ai-autonomous-data-centre-cooling-and-industrial-control/) at Google ([paper](https://papers.nips.cc/paper/7638-data-center-cooling-using-model-predictive-control.pdf) by Lazic et al., [patent](http://freepatentsonline.com/y2018/0204116.html))
 
@@ -228,7 +228,9 @@
 	[AlphaZero overview](https://youtu.be/3N9phq_yZP0?t=12m43s) by Demis Hassabis `video`  
 	[AlphaZero overview](https://youtu.be/DXNqYSNvnjA?t=21m24s) by Demis Hassabis `video`  
 
-	[AlphaZero vs Stockfish games highlights](https://youtube.com/watch?v=6z1o48Sgrck) `video`
+	[AlphaZero vs Stockfish games](https://youtube.com/playlist?list=PLDnx7w_xuguFDbrYDxxvPH-aoQkEX0rHv) `video`  
+	[AlphaZero vs Stockfish games](https://youtube.com/playlist?list=PLDnx7w_xuguHIxbL7akaYgEvV4spwYkmn) `video`  
+	[AlphaZero vs Stockfish games](https://youtube.com/playlist?list=PL-qLOQ-OEls607FPLAsPZ6De4f1W3ZF-I) `video`  
 
 ----
   - *Quake III Arena*
@@ -314,6 +316,16 @@
 
 	[demo](https://youtube.com/watch?v=jwSbzNHGflM) `video`  
 	[demo](https://youtube.com/watch?v=DKe8FumoD4E) `video`  
+
+----
+  - *legged robots*
+
+	[ANYmal](https://anybotics.com/anymal-legged-robot)
+
+	["Learning Agile and Dynamic Motor Skills for Legged Robots"](https://arxiv.org/abs/1901.08652) by Hwangbo et al. `paper`
+
+	[demos](https://youtube.com/playlist?list=UUHjP785620I8LFjSxf_CJCw) `video`  
+	[demos](https://youtube.com/playlist?list=PL22adRtGDGxeGQ5RVGS5Knh4Le5NsHEby) `video`  
 
 
 
@@ -2008,7 +2020,7 @@ interesting recent papers:
 
 
 #### ["Reinforcement Learning for Slate-based Recommender Systems: A Tractable Decomposition and Practical Methodology"](https://arxiv.org/abs/1905.12767) Ie et al.
-  `IJCAI-2019`
+  `SLATEQ` `IJCAI-2019`
 >	"Most practical recommender systems focus on estimating immediate user engagement without considering the long-term effects of recommendations on user behavior. Reinforcement learning (RL) methods offer the potential to optimize recommendations for long-term user engagement. However, since users are often presented with slates of multiple items - which may have interacting effects on user choice - methods are required to deal with the combinatorics of the RL action space. In this work, we address the challenge of making slate-based recommendations to optimize long-term value using RL. Our contributions are three-fold. (i) We develop SLATEQ, a decomposition of value-based temporal-difference and Q-learning that renders RL tractable with slates. Under mild assumptions on user choice behavior, we show that the long-term value (LTV) of a slate can be decomposed into a tractable function of its component item-wise LTVs. (ii) We outline a methodology that leverages existing myopic learning-based recommenders to quickly develop a recommender that handles LTV. (iii) We demonstrate our methods in simulation, and validate the scalability of decomposed TD-learning using SLATEQ in live experiments on YouTube."
 
   - `video` <http://www.fields.utoronto.ca/video-archive/2019/02/2509-19619> (41:12) (Boutilier)

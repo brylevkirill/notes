@@ -325,7 +325,9 @@
 
 ----
 
-  [inductive programming](https://en.wikipedia.org/wiki/Inductive_programming)
+  ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34) `video`)
+
+----
 
   ["Program Synthesis Explained"](http://homes.cs.washington.edu/~bornholt/post/synthesis-for-architects.html) by James Bornholt
 
@@ -347,10 +349,6 @@
   ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi) workshop
 	(NIPS 2016 [videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt),
 	ICML 2018 [videos](https://youtube.com/playlist?list=PLC79LIGCBo81_H_wIBBIOu2GfF3OIixdN))  
-
-----
-
-  ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34) `video`)
 
 
 
@@ -467,43 +465,6 @@
 
   ["Benchmarking Automatic Machine Learning Frameworks"](https://arxiv.org/abs/1808.06492) by Balaji and Allen `paper`
 
-----
-
-  ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34?t=11m43s) `video`)
-
-----
-
-  ["Why Tool AIs Want to Be Agent AIs"](http://www.gwern.net/Tool%20AI) by Gwern Branwen:  
-
-  "Roughly, we can try to categorize the different kinds of agentiness by level of neural network they work on. There are:  
-
-  - actions internal to a computation
-    * inputs
-    * intermediate states
-    * accessing the external environment
-    * amount of computation
-    * enforcing constraints/finetuning quality of output
-    * changing the loss function applied to output
-  - actions internal to training the neural network
-    * the gradient itself
-    * size & direction of gradient descent steps on each parameter
-    * overall gradient descent learning rate and learning rate schedule
-    * choice of data samples to train on
-  - internal to the neural network design step
-    * hyperparameter optimization
-    * neural network architecture
-  - internal to the dataset
-    * active learning
-    * optimal experiment design
-  - internal to interaction with environment
-    * adaptive experiment
-    * multi-armed bandit
-    * exploration for reinforcement learning"
-
-  "The logical extension of these neural networks all the way down papers is that an actor like Google / Baidu / Facebook / MS could effectively turn neural networks into a black box: a user/developer uploads through an API a dataset of input/output pairs of a specified type and a monetary loss function, and a top-level neural network running on a large GPU cluster starts autonomously optimizing over architectures & hyperparameters for the neural network design which balances GPU cost and the monetary loss, interleaved with further optimization over the thousands of previous submitted tasks, sharing its learning across all of the datasets / loss functions / architectures / hyperparameters, and the original user simply submits future data through the API for processing by the best neural network so far."
-
-  *(Gwern Branwen)*
-
 
 
 ---
@@ -526,6 +487,7 @@
 ----
 
   [overview](https://youtu.be/Tkl6ERLWAbA?t=27m10s) by Chris Re `video`  
+  [overview](http://videolectures.net/kdd2018_re_hand_labeled_data) by Chris Re `video`  
   [overview](https://youtube.com/watch?v=08jorbiyLwY) by Chris Re `video`  
   [overview](https://youtube.com/watch?v=HmocI2b5YfA) by Chris Re `video`  
   [overview](https://youtube.com/watch?v=pXoiYSQHf2I) by Stephen Bach `video`  

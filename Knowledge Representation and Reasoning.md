@@ -224,6 +224,7 @@
 
   ["Data Integration and Machine Learning: A Natural Synergy"](https://youtube.com/watch?v=8RMSaFVPT1Q) tutorial by Luna Dong and Theo Rekatsinas `video`  
   ["Ceres: Harvesting Knowledge from Semi-Structured Web"](https://slideslive.com/38915799/ceres-harvesting-knowledge-from-semistructured-web) by Luna Dong `video`  
+  ["Challenges and Innovations in Building a Product Knowledge Graph"](http://videolectures.net/kdd2018_dong_knowledge_graph) by Luna Dong `video`  
   ["Constructing and Mining Web-Scale Knowledge Graphs"](http://videolectures.net/kdd2014_gabrilovich_bordes_knowledge_graphs) tutorial by Evgeniy Gabrilovich and Antoine Bordes `video`  
 
   ["Knowledge Graph Construction From Text"](https://kgtutorial.github.io/?hootPostID=a5af9fab7ef1fb922ef7135a2e6d4f14) tutorial by Jay Pujara, Sameer Singh, Bhavana Dalvi `slides`  
@@ -1611,6 +1612,10 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 ### interesting papers - question answering over texts
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)
+
+
+#### ["Neural Machine Reading Comprehension: Methods and Trends"](https://arxiv.org/abs/1907.01118) Liu et al.
+>	"Machine Reading Comprehension, which requires the machine to answer questions based on the given context, has gained increasingly wide attention with the appearance of deep learning over the past few years. Although the research of MRC based on deep learning is flourishing, there is a lack of a comprehensive survey article to summarize the proposed approaches and the recent trends. As a result, we conduct a thorough overview of recent research efforts on this promising field. To be concrete, we compare MRC tasks in different dimensions and introduce the general architecture. We further provide a taxonomy of state-of-the-art approaches utilized in prevalent models. Finally, we discuss some new trends and conclude by describing some open issues in the field."
 
 
 #### ["Learning and Evaluating General Linguistic Intelligence"](https://arxiv.org/abs/1901.11373) Yogatama et al.

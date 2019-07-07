@@ -86,6 +86,26 @@
 >	learning item-to-item similarity on offline data (e.g. item2 often bought with item1)
 
 
+#### ["Real-time Personalization using Embeddings for Search Ranking at Airbnb"](https://kdd.org/kdd2018/accepted-papers/view/real-time-personalization-using-embeddings-for-search-ranking-at-airbnb) Grbovic, Cheng
+  `Airbnb` `KDD 2018`
+>	"Search Ranking and Recommendations are fundamental problems of crucial interest to major Internet companies, including web search engines, content publishing websites and marketplaces. However, despite sharing some common characteristics a one-size-fits-all solution does not exist in this space. Given a large difference in content that needs to be ranked, personalized and recommended, each marketplace has a somewhat unique challenge. Correspondingly, at Airbnb, a short-term rental marketplace, search and recommendation problems are quite unique, being a two-sided marketplace in which one needs to optimize for host and guest preferences, in a world where a user rarely consumes the same item twice and one listing can accept only one guest for a certain set of dates. In this paper we describe Listing and User Embedding techniques we developed and deployed for purposes of Real-time Personalization in Search Ranking and Similar Listing Recommendations, two channels that drive 99% of conversions. The embedding models were specifically tailored for Airbnb marketplace, and are able to capture guest’s short-term and long-term interests, delivering effective home listing recommendations. We conducted rigorous offline testing of the embedding models, followed by successful online tests before fully deploying them into production."
+
+  - `post` <https://medium.com/airbnb-engineering/listing-embeddings-for-similar-listing-recommendations-and-real-time-personalization-in-search-601172f7603e>
+  - `video` <https://youtube.com/watch?v=aWjsUEX7B1I>
+  - `video` <http://videolectures.net/kdd2018_grbovic_search_ranking_at_airbnb> (Grbovic)
+  - `video` <https://infoq.com/presentations/nlp-word-embedding> (31:33) (Alammar)
+  - `slides` <https://astro.temple.edu/~tua95067/Mihajlo_KDD2018_slides.pptx> (Grbovic)
+  - `post` <https://mccormickml.com/2018/06/15/applying-word2vec-to-recommenders-and-advertising>
+
+
+#### ["Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba"](https://arxiv.org/abs/1803.02349) Wang et al.
+  `Alibaba` `KDD 2018`
+>	"Recommender systems have been the most important technology for increasing the business in Taobao, the largest online consumer-to-consumer platform in China. There are three major challenges facing RS in Taobao: scalability, sparsity and cold start. In this paper, we present our technical solutions to address these three challenges. The methods are based on a well- known graph embedding framework. We first construct an item graph from users’ behavior history, and learn the embeddings of all items in the graph. The item embeddings are employed to compute pairwise similarities between all items, which are then used in the recommendation process. To alleviate the sparsity and cold start problems, side information is incorporated into the graph embedding framework. We propose two aggregation methods to integrate the embeddings of items and the corresponding side information. Experimental results from offline experiments show that methods incorporating side information are superior to those that do not. Further, we describe the platform upon which the embedding methods are deployed and the workflow to process the billion-scale data in Taobao. Using A/B test, we show that the online Click-Through-Rates are improved comparing to the previous collaborative filtering based methods widely used in Taobao, further demonstrating the effectiveness and feasibility of our proposed methods in Taobao’s live production environment."
+
+  - `video` <https://youtube.com/watch?v=TLD_bSiHZdE>
+  - `video` <https://infoq.com/presentations/nlp-word-embedding> (36:56) (Alammar)
+
+
 #### ["Exponential Family Embeddings"](https://arxiv.org/abs/1608.00778) Rudolph, Ruiz, Mandt, Blei
 >	"Word embeddings are a powerful approach for capturing semantic similarity among terms in a vocabulary. In this paper, we develop exponential family embeddings, a class of methods that extends the idea of word embeddings to other types of high-dimensional data. As examples, we studied neural data with real-valued observations, count data from a market basket analysis, and ratings data from a movie recommendation system. The main idea is to model each observation conditioned on a set of other observations. This set is called the context, and the way the context is defined is a modeling choice that depends on the problem. In language the context is the surrounding words; in neuroscience the context is close-by neurons; in market basket data the context is other items in the shopping cart. Each type of embedding model defines the context, the exponential family of conditional distributions, and how the latent embedding vectors are shared across data. We infer the embeddings with a scalable algorithm based on stochastic gradient descent. On all three applications - neural activity of zebrafish, users' shopping behavior, and movie ratings - we found exponential family embedding models to be more effective than other types of dimension reduction. They better reconstruct held-out data and find interesting qualitative structure."
 
@@ -209,6 +229,14 @@
 #### ["Deep Learning based Recommender System: A Survey and New Perspectives"](https://arxiv.org/abs/1707.07435) Zhang, Yao, Sun, Tay
 
 
+#### ["Deep Learning Recommendation Model for Personalization and Recommendation Systems"](https://arxiv.org/abs/1906.00091) Naumov et al.
+  `DLRM` `Facebook`
+>	"With the advent of deep learning, neural network-based recommendation models have emerged as an important tool for tackling personalization and recommendation tasks. These networks differ significantly from other deep learning networks due to their need to handle categorical features and are not well studied or understood. In this paper, we develop a state-of-the-art deep learning recommendation model and provide its implementation in both PyTorch and Caffe2 frameworks. In addition, we design a specialized parallelization scheme utilizing model parallelism on the embedding tables to mitigate memory constraints while exploiting data parallelism to scale-out compute from the fully-connected layers. We compare DLRM against existing recommendation models and characterize its performance on the Big Basin AI platform, demonstrating its usefulness as a benchmark for future algorithmic experimentation and system co-design."
+
+  - `post` <https://ai.facebook.com/blog/dlrm-an-advanced-open-source-deep-learning-recommendation-model>
+  - `paper` ["The Architectural Implications of Facebook's DNN-based Personalized Recommendation"](https://arxiv.org/abs/1906.03109) by Gupta et al.
+
+
 #### ["Wide & Deep Learning"](https://arxiv.org/abs/1606.07792) Cheng et al.
   `Google`
 >	"Generalized linear models with nonlinear feature transformations are widely used for large-scale regression and classification problems with sparse inputs. Memorization of feature interactions through a wide set of cross-product feature transformations are effective and interpretable, while generalization requires more feature engineering effort. With less feature engineering, deep neural networks can generalize better to unseen feature combinations through low-dimensional dense embeddings learned for the sparse features. However, deep neural networks with embeddings can over-generalize and recommend less relevant items when the user-item interactions are sparse and high-rank. In this paper, we present Wide & Deep learning---jointly trained wide linear models and deep neural networks---to combine the benefits of memorization and generalization for recommender systems. We productionized and evaluated the system on Google Play, a commercial mobile app store with over one billion active users and over one million apps. Online experiment results show that Wide & Deep significantly increased app acquisitions compared with wide-only and deep-only models. We have also open-sourced our implementation in TensorFlow."
@@ -255,8 +283,23 @@
   - ["Making Contextual Decisions with Low Technical Debt"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) by Agarwal et al. `summary`
 
 
+#### ["Q&R: A Two-Stage Approach toward Interactive Recommendation"](http://alexbeutel.com/papers/q-and-r-kdd2018.pdf) Christakopoulou, Beutel, Li, Jain, Chi
+  `YouTube`
+>	"Recommendation systems, prevalent in many applications, aim to surface to users the right content at the right time. Recently, researchers have aspired to develop conversational systems that offer seamless interactions with users, more effectively eliciting user preferences and offering better recommendations. Taking a step towards this goal, this paper explores the two stages of a single round of conversation with a user: which question to ask the user, and how to use their feedback to respond with a more accurate recommendation. Following these two stages, first, we detail an RNN-based model for generating topics a user might be interested in, and then extend a state-of-the-art RNN-based video recommender to incorporate the user’s selected topic. We describe our proposed system Q&R, i.e., Question & Recommendation, and the surrogate tasks we utilize to bootstrap data for training our models. We evaluate different components of Q&R on live traffic in various applications within YouTube: User Onboarding, Home-page Recommendation, and Notifications. Our results demonstrate that our approach improves upon state-of-the-art recommendation models, including RNNs, and makes these applications more useful, such as a >1% increase in video notifications opened. Further, our design choices can be useful to practitioners wanting to transition to more conversational recommendation systems."
+
+>	"To the best of our knowledge, this is the first work on learned interactive recommendation (i.e., asking questions and giving recommendations) demonstrated in a large-scale industrial setting. In building Q&R, we set out to improve the user experience of casual users in YouTube. Users become 18% more likely to complete the User Onboarding experience, and when they do, the numbers of topics they select goes up by 77.7%."
+
+>	"We provide a novel neural-based recommendation approach, which factorizes video recommendation to a two-fold problem: user history-to-topic, and topic& user history-to-video."
+
+>	"Having shed light on a single round of conversation, the area of research in industrial conversational recommendation systems seems to be wide-open for exploration, with incorporating multi-turn conversations and multiple types of data sources, as well as developing models for deciding when to trigger a conversational experience, being exciting topics to be explored in the future."
+
+  - `video` <https://youtube.com/watch?v=-02mJfFoLQo>
+  - `video` <http://videolectures.net/kdd2018_beutel_interactive_recommendation> (Beutel)
+
+
 #### ["Towards Conversational Recommender Systems"](https://chara.cs.illinois.edu/sites/fa16-cs591txt/pdf/Christakopoulou-2016-KDD.pdf) Christakopoulou, Radlinski, Hofmann
 >	"People often ask others for restaurant recommendations as a way to discover new dining experiences. This makes restaurant recommendation an exciting scenario for recommender systems and has led to substantial research in this area. However, most such systems behave very di↵erently from a human when asked for a recommendation. The goal of this paper is to begin to reduce this gap. In particular, humans can quickly establish preferences when asked to make a recommendation for someone they do not know. We address this cold-start recommendation problem in an online learning setting. We develop a preference elicitation framework to identify which questions to ask a new user to quickly learn their preferences. Taking advantage of latent structure in the recommendation space using a probabilistic latent factor model, our experiments with both synthetic and real world data compare di↵erent types of feedback and question selection strategies. We find that our framework can make very e↵ective use of online user feedback, improving personalized recommendations over a static model by 25% after asking only 2 questions. Our results demonstrate dramatic benefits of starting from offline embeddings, and highlight the benefit of bandit-based explore-exploit strategies in this setting."
 
+  - `video` <https://youtube.com/watch?v=Wz4vogHwHzY>
   - `video` <https://youtube.com/watch?v=udrkPBIb8D4> (Christakopoulou)
   - `video` <https://youtube.com/watch?v=nLUfAJqXFUI> (Christakopoulou)
