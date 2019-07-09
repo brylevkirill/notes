@@ -417,8 +417,11 @@
 #### ["Self-critical Sequence Training for Image Captioning"](https://arxiv.org/abs/1612.00563) Rennie, Marcheret, Mroueh, Ross, Goel
 >	"Recently it has been shown that policy-gradient methods for reinforcement learning can be utilized to train deep end-to-end systems directly on non-differentiable metrics for the task at hand. In this paper we consider the problem of optimizing image captioning systems using reinforcement learning, and show that by carefully optimizing our systems using the test metrics of the MSCOCO task, significant gains in performance can be realized. Our systems are built using a new optimization approach that we call self-critical sequence training. SCST is a form of the popular REINFORCE algorithm that, rather than estimating a “baseline” to normalize the rewards and reduce variance, utilizes the output of its own test-time inference algorithm to normalize the rewards it experiences. Using this approach, estimating the reward signal (as actor-critic methods must do) and estimating normalization (as REINFORCE algorithms typically do) is avoided, while at the same time harmonizing the model with respect to its test-time inference procedure. Empirically we find that directly optimizing the CIDEr metric with SCST and greedy decoding at test-time is highly effective. Our results on the MSCOCO evaluation sever establish a new state-of-the-art on the task, improving the best result in terms of CIDEr from 104.9 to 112.3."
 
+>	"REINFORCE with reward normalization but without baseline estimation"  
+
   - `video` <https://youtube.com/watch?v=UnT5wTe13yc> (Rennie)
   - `video` <https://yadi.sk/i/-U5w4NpJ3H5TWD> (Ratnikov) `in russian`
+  - `post` <http://artem.sobolev.name/posts/2017-11-12-stochastic-computation-graphs-fixing-reinforce.html>
 
 
 #### ["Segmental Recurrent Neural Networks"](http://arxiv.org/abs/1511.06018) Kong, Dyer, Smith

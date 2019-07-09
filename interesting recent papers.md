@@ -396,6 +396,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `variational inference` `posterior approximation` `discrete latent variables`
   - `video` <http://techtalks.tv/talks/variational-inference-for-monte-carlo-objectives/62507/>
   - `video` <https://youtu.be/_XRBlhzb31U?t=27m16s> (Figurnov) `in russian`
+  - `post` <http://artem.sobolev.name/posts/2017-11-12-stochastic-computation-graphs-fixing-reinforce.html>
   - `notes` <http://artem.sobolev.name/posts/2016-07-14-neural-variational-importance-weighted-autoencoders.html>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/MnihR16>
   - `notes` <http://tuananhle.co.uk/notes/vimco.html>
@@ -1588,10 +1589,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Learning to Decode for Future Success"](http://arxiv.org/abs/1701.06549) Li, Monroe, Jurafsky
 
 #### ["Self-critical Sequence Training for Image Captioning"](http://arxiv.org/abs/1612.00563) Rennie, Marcheret, Mroueh, Ross, Goel
->	"REINFORCE with reward normalization but without baseline estimation"  
-  - `video` <https://youtube.com/watch?v=UnT5wTe13yc> (Rennie)
-  - `video` <https://yadi.sk/i/-U5w4NpJ3H5TWD> (Ratnikov) `in russian`
-  - `code` <https://github.com/ruotianluo/self-critical.pytorch>
+  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#self-critical-sequence-training-for-image-captioning-rennie-marcheret-mroueh-ross-goel>
 
 #### ["Sequence Tutor: Conservative Fine-tuning of Sequence Generation Models with KL-control"](https://arxiv.org/abs/1611.02796) Jaques, Gu, Bahdanau, Hernandez-Lobato, Turner, Eck
 >	"In contrast to relying solely on possibly biased data, our approach allows for encoding high-level domain knowledge into the RNN, providing a general, alternative tool for training sequence models."  
@@ -1713,13 +1711,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 [**interesting older papers - policy-based methods**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---policy-based-methods)  
 
 ----
-#### ["Are Deep Policy Gradient Algorithms Truly Policy Gradient Algorithms?"](https://arxiv.org/abs/1811.02553) Ilyas et al.
->	"Deep reinforcement learning algorithms are rooted in a well-grounded framework of classical RL. However, as our investigations uncover, this framework fails to explain much of the behavior of these algorithms. This disconnect impedes our understanding of why these algorithms succeed (or fail). It also poses a major barrier to addressing key challenges facing deep RL, such as widespread brittleness and poor reproducibility. To close this gap, we need to either develop methods that adhere more closely to theory, or build theory that can capture what makes existing policy gradient methods successful. In both cases, the first step is to precisely pinpoint where theory and practice diverge.  
->	"Gradient estimation. Our analysis shows that the quality of gradient estimates that policy gradient algorithms use is rather poor. Indeed, even when agents are still improving, such gradient estimates are often virtually uncorrelated with the true gradient and with each other. Our results thus indicate that adhering to existing theory would require algorithms that obtain better estimates of the gradient. Alternatively, one might aim to broaden the theory to explain why modern policy gradient algorithms are successful despite relying on such poor gradient estimates.  
->	Value prediction. The findings presented identify two key issues. First, while the value network successfully solves the supervised learning task it is trained on, it does not accurately model the “true” value function. Second, employing the value network as a baseline does decrease the gradient variance (compared to the trivial (“zero”) baseline). However, this decrease is rather marginal compared to the variance reduction offered by the “true” value function, but employing a value network dramatically increases agent’s performance. These phenomena motivate us to ask: is this failure in modeling the true value function inevitable? And what is the real role of the value network in policy gradient methods?  
->	Optimization landscape. The optimization landscape induced by modern policy gradient algorithms is often not reflective of the underlying true reward landscape. In fact, in the sample-regime where policy gradient methods operate, the true reward landscape is noisy and the surrogate reward is often misleading. We thus need a better understanding of why the current methods succeed despite these issues, and, more broadly, how to navigate the true reward landscape more accurately.  
->	Trust region approximation. Our findings indicate that there may be a number of reasons why policies need to be locally similar. These include noisy gradient estimates, poor baseline functions and misalignment of the surrogate landscape. Not only is our theory surrounding trust region optimization oblivious to these factors, it is also notoriously difficult to translate this theory into efficient algorithms. Deep policy gradient methods thus resort to relaxations of trust region constraints, which makes their performance difficult to properly understand and analyze. Therefore, we need either techniques that enforce trust regions more strictly, or a rigorous theory of trust region relaxations."  
-
 #### ["Playing Atari with Six Neurons"](https://arxiv.org/abs/1806.01363) Cuccu, Togelius, Cudre-Mauroux
 >	"We propose a new method for learning policies and compact state representations separately but simultaneously for policy approximation in reinforcement learning. State representations are generated by an encoder based on two novel algorithms: Increasing Dictionary Vector Quantization makes the encoder capable of growing its dictionary size over time, to address new observations as they appear in an open-ended online-learning context; Direct Residuals Sparse Coding encodes observations by disregarding reconstruction error minimization, and aiming instead for highest information inclusion. The encoder autonomously selects observations online to train on, in order to maximize code sparsity. As the dictionary size increases, the encoder produces increasingly larger inputs for the neural network: this is addressed by a variation of the Exponential Natural Evolution Strategies algorithm which adapts its probability distribution dimensionality along the run. We test our system on a selection of Atari games using tiny neural networks of only 6 to 18 neurons (depending on the game’s controls). These are still capable of achieving results comparable—and occasionally superior—to state-of-the-art techniques which use two orders of magnitude more neurons."  
   - `notes` <https://towardsdatascience.com/playing-atari-with-6-neurons-open-source-code-b94c764452ac>
@@ -1778,6 +1769,62 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"Our findings in modern deep RL settings both support and contradict past results on the merits of TD. On the one hand, value-based infinite-horizon methods perform best with a mixture of TD and MC; this is consistent with the TD(λ) results of Sutton (1988). On the other hand, in sharp contrast to prior beliefs, we observe that Monte Carlo algorithms can perform very well on challenging RL tasks. This is made possible by simply limiting the prediction to a finite horizon. Surprisingly, finite-horizon Monte Carlo training is successful in dealing with sparse and delayed rewards, which are generally assumed to impair this class of methods. Monte Carlo training is also more stable to noisy rewards and is particularly robust to perceptual complexity and variability."  
 >	"While TD is at an advantage in tasks with simple perception, long planning horizons, or terminal rewards, MC training is more robust to noisy rewards, effective for training perception systems from raw sensory inputs, and surprisingly successful in dealing with sparse and delayed rewards."  
 >	"What is the reason for this contrast between classic findings and our results? We believe that the key difference is in the complexity of perception in immersive three-dimensional environments, which was not present in gridworlds and other classic problems, and is only partially present in Atari games. In immersive simulation, the agent’s observation is a high-dimensional image that represents a partial view of a large (mostly hidden) three-dimensional environment. The dimensionality of the state space is essentially infinite: the underlying environment is specified by continuous surfaces in three-dimensional space. Memorizing all possible states is easy and routine in gridworlds and is also possible in some Atari games, but is not feasible in immersive three-dimensional simulations. Therefore, in order to successfully operate in such simulations, the agent has to learn to extract useful representations from the observations it receives. Encoding a meaningful representation from rich perceptual input is where Monte Carlo methods are at an advantage due to the reliability of their training signals. Monte Carlo methods train on ground-truth targets, not “guess from a guess”, as TD methods do."  
+
+----
+#### ["Natural Value Approximators: Learning when to Trust Past Estimates"](http://papers.nips.cc/paper/6807-natural-value-approximators-learning-when-to-trust-past-estimates) Xu, Modayil, Hasselt, Barreto, Silver, Schaul
+  `NVA` `value-based`
+>	"Neural networks are most effective for value function approximation when the desired target function is smooth. However, value functions are, by their very nature, discontinuous functions with sharp variations over time. We introduce a representation of value that matches the natural temporal structure of value functions."  
+>	"A value function represents the expected sum of future discounted rewards. If non-zero rewards occur infrequently but reliably, then an accurate prediction of the cumulative discounted reward rises as such rewarding moments approach and drops immediately after. This is a pervasive scenario because many domains associate positive or negative reinforcements to salient events (like picking up an object, hitting a wall, or reaching a goal position). The problem is that the agent’s observations tend to be smooth in time, so learning an accurate value estimate near those sharp drops puts strain on the function approximator - especially when employing differentiable function approximators such as neural networks that naturally make smooth maps from observations to outputs."  
+>	"We incorporate the temporal structure of cumulative discounted rewards into the value function itself. The main idea is that, by default, the value function can respect the reward sequence. If no reward is observed, then the next value smoothly matches the previous value, but becomes a little larger due to the discount. If a reward is observed, it should be subtracted out from the previous value: in other words a reward that was expected has now been consumed. The natural value approximator combines the previous value with the observed rewards and discounts, which makes this sequence of values easy to represent by a smooth function approximator such as a neural network."  
+  - `video` <https://facebook.com/nipsfoundation/videos/1554741347950432?t=4212> (Xu)
+
+#### ["Regret Minimization for Partially Observable Deep Reinforcement Learning"](https://arxiv.org/abs/1710.11424) Jin, Levine, Keutzer
+  `ARM` `value-based`
+>	"Algorithm based on counterfactual regret minimization that iteratively updates an approximation to a cumulative clipped advantage function."  
+>	"In contrast to prior methods, advantage-based regret minimization is well suited to partially observed or non-Markovian environments."  
+  - `video` <https://vimeo.com/287803161> (Jin)
+
+#### ["Multi-step Reinforcement Learning: A Unifying Algorithm"](https://arxiv.org/abs/1703.01327) De Asis, Hernandez-Garcia, Holland, Sutton
+  `Q(σ)` `value-based`
+>	"Currently, there are a multitude of algorithms that can be used to perform TD control, including Sarsa, Q-learning, and Expected Sarsa. These methods are often studied in the one-step case, but they can be extended across multiple time steps to achieve better performance. Each of these algorithms is seemingly distinct, and no one dominates the others for all problems. In this paper, we study a new multi-step action-value algorithm called Q(σ) which unifies and generalizes these existing algorithms, while subsuming them as special cases. A new parameter, σ, is introduced to allow the degree of sampling performed by the algorithm at each step during its backup to be continuously varied, with Sarsa existing at one extreme (full sampling), and Expected Sarsa existing at the other (pure expectation)."  
+>	"With a constant value of sampling parameter σ, Q(σ) is a weighted average between tree backups and regular SARSA: σ varies the breadth of the tree backup, contrasted with TD(λ) where λ varies the depth. Q(σ) allows for interpolation in bias-variance tradeoff: if σ is dynamically adjusted, can enforce a desirable tradeoff."  
+  - `video` <https://youtube.com/watch?v=MidZJ-oCpRk> (De Asis)
+  - `video` <https://youtube.com/watch?v=_OP5g1gRP5s> (Hernandez-Garcia)
+  - `video` <https://youtu.be/dZmCOIJ7Cyc?t=7m3s> (Bobyrev) `in russian`
+
+#### ["Convergent Tree-Backup and Retrace with Function Approximation"](https://arxiv.org/abs/1705.09322) Touati, Bacon, Precup, Vincent
+  `Retrace` `value-based` `off-policy evaluation`
+>	"We show that Tree Backup and Retrace algorithms are unstable with linear function approximation, both in theory and with specific examples. We addressed these issues by formulating gradient-based versions of these algorithms which minimize the mean-square projected Bellman error. Using a saddle-point formulation, we were also able to provide convergence guarantees and characterize the convergence rate of our algorithms."  
+>	"The design and analysis of off-policy algorithms using all the features of reinforcement learning, e.g. bootstrapping, multi-step updates (eligibility traces), and function approximation has been explored extensively over three decades. While off-policy learning and function approximation have been understood in isolation, their combination with multi-steps bootstrapping produces a so-called deadly triad, i.e., many algorithms in this category are unstable. A convergent approach to this triad is provided by importance sampling, which bends the behavior policy distribution onto the target one. However, as the length of the trajectories increases, the variance of importance sampling corrections tends to become very large. An alternative approach which was developed for tabular representations of the value function is the tree backup algorithm which, remarkably, does not rely on importance sampling directly. Tree Backup has recently been revisited by authors of Retrace(λ) algorithm. Both Tree Backup and Retrace(λ) were only shown to converge with a tabular value function representation, and whether they would also converge with function approximation was an open question, which we tackle in this paper."  
+  - `video` <https://facebook.com/icml.imls/videos/430846900763164?t=303> (Touati)
+
+#### ["Safe and Efficient Off-Policy Reinforcement Learning"](http://arxiv.org/abs/1606.02647) Munos, Stepleton, Harutyunyan, Bellemare
+  `Retrace` `value-based` `off-policy evaluation`
+>	"Retrace(λ) is a new strategy to weight a sample for off-policy learning, it provides low-variance, safe and efficient updates."  
+>	"Our goal is to design a RL algorithm with two desired properties. Firstly, to use off-policy data, which is important for exploration, when we use memory replay, or observe log-data. Secondly, to use multi-steps returns in order to propagate rewards faster and avoid accumulation of approximation/estimation errors. Both properties are crucial in deep RL. We introduce the “Retrace” algorithm, which uses multi-steps returns and can safely and efficiently utilize any off-policy data."  
+>	"open issue: off policy unbiased, low variance estimators for long horizon delayed reward problems"  
+>	"As a corollary, we prove the convergence of Watkins’ Q(λ), which was an open problem since 1989."  
+  - `video` <https://youtu.be/WuFMrk3ZbkE?t=35m30s> (Bellemare)
+  - `video` <https://youtube.com/watch?v=8hK0NnG_DhY&t=25m27s> (Brunskill)
+  - `video` <https://youtu.be/ggPGtMSoVN8?t=51m10s> (Petrenko) `in russian`
+
+#### ["Q(λ) with Off-Policy Corrections"](http://arxiv.org/abs/1602.04951) Harutyunyan, Bellemare, Stepleton, Munos
+  `Q(λ)` `value-based` `off-policy evaluation`
+>	"We propose and analyze an alternate approach to off-policy multi-step temporal difference learning, in which off-policy returns are corrected with the current Q-function in terms of rewards, rather than with the target policy in terms of transition probabilities. We prove that such approximate corrections are sufficient for off-policy convergence both in policy evaluation and control, provided certain conditions. These conditions relate the distance between the target and behavior policies, the eligibility trace parameter and the discount factor, and formalize an underlying tradeoff in off-policy TD(λ)."  
+>	"Unlike traditional off-policy learning algorithms Q(λ) methods do not involve weighting returns by their policy probabilities, yet under the right conditions converge to the correct TD fixed points."  
+>	"The value function assesses actions in terms of the following expected cumulative reward, and thus provides a way to directly correct immediate rewards, rather than transitions. We show in this paper that such approximate corrections can be sufficient for off-policy convergence, subject to a tradeoff condition between the eligibility trace parameter and the distance between the target and behavior policies. The two extremes of this tradeoff are one-step Q-learning, and on-policy learning. Formalizing the continuum of the tradeoff is one of the main insights of this paper."  
+>	"In control, Q*(λ) is in fact identical to Watkins’s Q(λ), except it does not cut the eligiblity trace at off-policy actions."  
+  - `video` <https://youtube.com/watch?v=8hK0NnG_DhY&t=25m27s> (Brunskill)
+
+#### ["Data-Efficient Off-Policy Policy Evaluation for Reinforcement Learning"](http://arxiv.org/abs/1604.00923) Thomas, Brunskill
+  `value-based` `off-policy evaluation`
+  - `video` <https://youtube.com/watch?v=8hK0NnG_DhY&t=15m44s> (Brunskill)
+
+#### ["Taming the Noise in Reinforcement Learning via Soft Updates"](https://arxiv.org/abs/1512.08562) Fox, Pakman, Tishby
+  `G-learning` `value-based`
+>	"Model-free reinforcement learning algorithms, such as Q-learning, perform poorly in the early stages of learning in noisy environments, because much effort is spent unlearning biased estimates of the state-action value function. The bias results from selecting, among several noisy estimates, the apparent optimum, which may actually be suboptimal. We propose G-learning, a new off-policy learning algorithm that regularizes the value estimates by penalizing deterministic policies in the beginning of the learning process. We show that this method reduces the bias of the value-function estimation, leading to faster convergence to the optimal value and the optimal policy. The stochastic nature of G-learning also makes it avoid some exploration costs, a property usually attributed only to on-policy algorithms."  
+  - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Taming_the_Noise_in_Reinforcement_Learning_via_Soft_Updates.md>
+  - `code` <https://github.com/noahgolmant/simpledgn>
 
 ----
 #### ["Diagnosing Bottlenecks in Deep Q-learning Algorithms"](https://arxiv.org/abs/1902.10250) Fu, Kumar, Soh, Levine
@@ -1898,62 +1945,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <https://github.com/sudeepraja/Model-Free-Episodic-Control>
 
 ----
-#### ["Natural Value Approximators: Learning when to Trust Past Estimates"](http://papers.nips.cc/paper/6807-natural-value-approximators-learning-when-to-trust-past-estimates) Xu, Modayil, Hasselt, Barreto, Silver, Schaul
-  `NVA` `value-based`
->	"Neural networks are most effective for value function approximation when the desired target function is smooth. However, value functions are, by their very nature, discontinuous functions with sharp variations over time. We introduce a representation of value that matches the natural temporal structure of value functions."  
->	"A value function represents the expected sum of future discounted rewards. If non-zero rewards occur infrequently but reliably, then an accurate prediction of the cumulative discounted reward rises as such rewarding moments approach and drops immediately after. This is a pervasive scenario because many domains associate positive or negative reinforcements to salient events (like picking up an object, hitting a wall, or reaching a goal position). The problem is that the agent’s observations tend to be smooth in time, so learning an accurate value estimate near those sharp drops puts strain on the function approximator - especially when employing differentiable function approximators such as neural networks that naturally make smooth maps from observations to outputs."  
->	"We incorporate the temporal structure of cumulative discounted rewards into the value function itself. The main idea is that, by default, the value function can respect the reward sequence. If no reward is observed, then the next value smoothly matches the previous value, but becomes a little larger due to the discount. If a reward is observed, it should be subtracted out from the previous value: in other words a reward that was expected has now been consumed. The natural value approximator combines the previous value with the observed rewards and discounts, which makes this sequence of values easy to represent by a smooth function approximator such as a neural network."  
-  - `video` <https://facebook.com/nipsfoundation/videos/1554741347950432?t=4212> (Xu)
-
-#### ["Regret Minimization for Partially Observable Deep Reinforcement Learning"](https://arxiv.org/abs/1710.11424) Jin, Levine, Keutzer
-  `ARM` `value-based`
->	"Algorithm based on counterfactual regret minimization that iteratively updates an approximation to a cumulative clipped advantage function."  
->	"In contrast to prior methods, advantage-based regret minimization is well suited to partially observed or non-Markovian environments."  
-  - `video` <https://vimeo.com/287803161> (Jin)
-
-#### ["Multi-step Reinforcement Learning: A Unifying Algorithm"](https://arxiv.org/abs/1703.01327) De Asis, Hernandez-Garcia, Holland, Sutton
-  `Q(σ)` `value-based`
->	"Currently, there are a multitude of algorithms that can be used to perform TD control, including Sarsa, Q-learning, and Expected Sarsa. These methods are often studied in the one-step case, but they can be extended across multiple time steps to achieve better performance. Each of these algorithms is seemingly distinct, and no one dominates the others for all problems. In this paper, we study a new multi-step action-value algorithm called Q(σ) which unifies and generalizes these existing algorithms, while subsuming them as special cases. A new parameter, σ, is introduced to allow the degree of sampling performed by the algorithm at each step during its backup to be continuously varied, with Sarsa existing at one extreme (full sampling), and Expected Sarsa existing at the other (pure expectation)."  
->	"With a constant value of sampling parameter σ, Q(σ) is a weighted average between tree backups and regular SARSA: σ varies the breadth of the tree backup, contrasted with TD(λ) where λ varies the depth. Q(σ) allows for interpolation in bias-variance tradeoff: if σ is dynamically adjusted, can enforce a desirable tradeoff."  
-  - `video` <https://youtube.com/watch?v=MidZJ-oCpRk> (De Asis)
-  - `video` <https://youtube.com/watch?v=_OP5g1gRP5s> (Hernandez-Garcia)
-  - `video` <https://youtu.be/dZmCOIJ7Cyc?t=7m3s> (Bobyrev) `in russian`
-
-#### ["Convergent Tree-Backup and Retrace with Function Approximation"](https://arxiv.org/abs/1705.09322) Touati, Bacon, Precup, Vincent
-  `Retrace` `value-based` `off-policy evaluation`
->	"We show that Tree Backup and Retrace algorithms are unstable with linear function approximation, both in theory and with specific examples. We addressed these issues by formulating gradient-based versions of these algorithms which minimize the mean-square projected Bellman error. Using a saddle-point formulation, we were also able to provide convergence guarantees and characterize the convergence rate of our algorithms."  
->	"The design and analysis of off-policy algorithms using all the features of reinforcement learning, e.g. bootstrapping, multi-step updates (eligibility traces), and function approximation has been explored extensively over three decades. While off-policy learning and function approximation have been understood in isolation, their combination with multi-steps bootstrapping produces a so-called deadly triad, i.e., many algorithms in this category are unstable. A convergent approach to this triad is provided by importance sampling, which bends the behavior policy distribution onto the target one. However, as the length of the trajectories increases, the variance of importance sampling corrections tends to become very large. An alternative approach which was developed for tabular representations of the value function is the tree backup algorithm which, remarkably, does not rely on importance sampling directly. Tree Backup has recently been revisited by authors of Retrace(λ) algorithm. Both Tree Backup and Retrace(λ) were only shown to converge with a tabular value function representation, and whether they would also converge with function approximation was an open question, which we tackle in this paper."  
-  - `video` <https://facebook.com/icml.imls/videos/430846900763164?t=303> (Touati)
-
-#### ["Safe and Efficient Off-Policy Reinforcement Learning"](http://arxiv.org/abs/1606.02647) Munos, Stepleton, Harutyunyan, Bellemare
-  `Retrace` `value-based` `off-policy evaluation`
->	"Retrace(λ) is a new strategy to weight a sample for off-policy learning, it provides low-variance, safe and efficient updates."  
->	"Our goal is to design a RL algorithm with two desired properties. Firstly, to use off-policy data, which is important for exploration, when we use memory replay, or observe log-data. Secondly, to use multi-steps returns in order to propagate rewards faster and avoid accumulation of approximation/estimation errors. Both properties are crucial in deep RL. We introduce the “Retrace” algorithm, which uses multi-steps returns and can safely and efficiently utilize any off-policy data."  
->	"open issue: off policy unbiased, low variance estimators for long horizon delayed reward problems"  
->	"As a corollary, we prove the convergence of Watkins’ Q(λ), which was an open problem since 1989."  
-  - `video` <https://youtu.be/WuFMrk3ZbkE?t=35m30s> (Bellemare)
-  - `video` <https://youtube.com/watch?v=8hK0NnG_DhY&t=25m27s> (Brunskill)
-  - `video` <https://youtu.be/ggPGtMSoVN8?t=51m10s> (Petrenko) `in russian`
-
-#### ["Q(λ) with Off-Policy Corrections"](http://arxiv.org/abs/1602.04951) Harutyunyan, Bellemare, Stepleton, Munos
-  `Q(λ)` `value-based` `off-policy evaluation`
->	"We propose and analyze an alternate approach to off-policy multi-step temporal difference learning, in which off-policy returns are corrected with the current Q-function in terms of rewards, rather than with the target policy in terms of transition probabilities. We prove that such approximate corrections are sufficient for off-policy convergence both in policy evaluation and control, provided certain conditions. These conditions relate the distance between the target and behavior policies, the eligibility trace parameter and the discount factor, and formalize an underlying tradeoff in off-policy TD(λ)."  
->	"Unlike traditional off-policy learning algorithms Q(λ) methods do not involve weighting returns by their policy probabilities, yet under the right conditions converge to the correct TD fixed points."  
->	"The value function assesses actions in terms of the following expected cumulative reward, and thus provides a way to directly correct immediate rewards, rather than transitions. We show in this paper that such approximate corrections can be sufficient for off-policy convergence, subject to a tradeoff condition between the eligibility trace parameter and the distance between the target and behavior policies. The two extremes of this tradeoff are one-step Q-learning, and on-policy learning. Formalizing the continuum of the tradeoff is one of the main insights of this paper."  
->	"In control, Q*(λ) is in fact identical to Watkins’s Q(λ), except it does not cut the eligiblity trace at off-policy actions."  
-  - `video` <https://youtube.com/watch?v=8hK0NnG_DhY&t=25m27s> (Brunskill)
-
-#### ["Data-Efficient Off-Policy Policy Evaluation for Reinforcement Learning"](http://arxiv.org/abs/1604.00923) Thomas, Brunskill
-  `value-based` `off-policy evaluation`
-  - `video` <https://youtube.com/watch?v=8hK0NnG_DhY&t=15m44s> (Brunskill)
-
-#### ["Taming the Noise in Reinforcement Learning via Soft Updates"](https://arxiv.org/abs/1512.08562) Fox, Pakman, Tishby
-  `G-learning` `value-based`
->	"Model-free reinforcement learning algorithms, such as Q-learning, perform poorly in the early stages of learning in noisy environments, because much effort is spent unlearning biased estimates of the state-action value function. The bias results from selecting, among several noisy estimates, the apparent optimum, which may actually be suboptimal. We propose G-learning, a new off-policy learning algorithm that regularizes the value estimates by penalizing deterministic policies in the beginning of the learning process. We show that this method reduces the bias of the value-function estimation, leading to faster convergence to the optimal value and the optimal policy. The stochastic nature of G-learning also makes it avoid some exploration costs, a property usually attributed only to on-policy algorithms."  
-  - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Taming_the_Noise_in_Reinforcement_Learning_via_Soft_Updates.md>
-  - `code` <https://github.com/noahgolmant/simpledgn>
-
-----
 #### ["Self-Imitation Learning"](https://arxiv.org/abs/1806.05635) Oh, Guo, Singh, Lee
   `SIL` `lower-bound soft Q-learning`
 >	"A simple off-policy actor-critic algorithm that learns to reproduce the agent’s past good decisions."  
@@ -2017,6 +2008,14 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <https://github.com/abhishm/PGQ>
 
 ----
+#### ["Are Deep Policy Gradient Algorithms Truly Policy Gradient Algorithms?"](https://arxiv.org/abs/1811.02553) Ilyas et al.
+  `policy gradient`
+>	"Deep reinforcement learning algorithms are rooted in a well-grounded framework of classical RL. However, as our investigations uncover, this framework fails to explain much of the behavior of these algorithms. This disconnect impedes our understanding of why these algorithms succeed (or fail). It also poses a major barrier to addressing key challenges facing deep RL, such as widespread brittleness and poor reproducibility. To close this gap, we need to either develop methods that adhere more closely to theory, or build theory that can capture what makes existing policy gradient methods successful. In both cases, the first step is to precisely pinpoint where theory and practice diverge.  
+>	"Gradient estimation. Our analysis shows that the quality of gradient estimates that policy gradient algorithms use is rather poor. Indeed, even when agents are still improving, such gradient estimates are often virtually uncorrelated with the true gradient and with each other. Our results thus indicate that adhering to existing theory would require algorithms that obtain better estimates of the gradient. Alternatively, one might aim to broaden the theory to explain why modern policy gradient algorithms are successful despite relying on such poor gradient estimates.  
+>	Value prediction. The findings presented identify two key issues. First, while the value network successfully solves the supervised learning task it is trained on, it does not accurately model the “true” value function. Second, employing the value network as a baseline does decrease the gradient variance (compared to the trivial (“zero”) baseline). However, this decrease is rather marginal compared to the variance reduction offered by the “true” value function, but employing a value network dramatically increases agent’s performance. These phenomena motivate us to ask: is this failure in modeling the true value function inevitable? And what is the real role of the value network in policy gradient methods?  
+>	Optimization landscape. The optimization landscape induced by modern policy gradient algorithms is often not reflective of the underlying true reward landscape. In fact, in the sample-regime where policy gradient methods operate, the true reward landscape is noisy and the surrogate reward is often misleading. We thus need a better understanding of why the current methods succeed despite these issues, and, more broadly, how to navigate the true reward landscape more accurately.  
+>	Trust region approximation. Our findings indicate that there may be a number of reasons why policies need to be locally similar. These include noisy gradient estimates, poor baseline functions and misalignment of the surrogate landscape. Not only is our theory surrounding trust region optimization oblivious to these factors, it is also notoriously difficult to translate this theory into efficient algorithms. Deep policy gradient methods thus resort to relaxations of trust region constraints, which makes their performance difficult to properly understand and analyze. Therefore, we need either techniques that enforce trust regions more strictly, or a rigorous theory of trust region relaxations."  
+
 #### ["Scalable Trust-region Method for Deep Reinforcement Learning using Kronecker-Factored Approximation"](https://arxiv.org/abs/1708.05144) Wu, Mansimov, Liao, Grosse, Ba
   `ACKTR` `policy gradient` `on-policy`
 >	"A2C + K-FAC (Kronecker-Factored Approximate Curvature)"  
@@ -2193,37 +2192,36 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 [**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---model-based-methods)
 
 ----
+#### ["Benchmarking Model-Based Reinforcement Learning"](https://arxiv.org/abs/1907.02057) Wang et al.
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#benchmarking-model-based-reinforcement-learning-wang-et-al>
+
+----
 #### ["Woulda, Coulda, Shoulda: Counterfactually-Guided Policy Search"](https://arxiv.org/abs/1811.06272) Buesing, Weber, Zwols, Racaniere, Guez, Lespiau, Heess
   `CF-GPS` `partial observability` `counterfactual inference` `ICLR 2019`
   - <https://github.com/brylevkirill/notes/blob/master/Causal%20Inference.md#woulda-coulda-shoulda-counterfactually-guided-policy-search-buesing-weber-zwols-racaniere-guez-lespiau-heess>
 
 ----
-#### ["Composable Planning with Attributes"](https://arxiv.org/abs/1803.00512) Zhang, Lerer, Sukhbaatar, Fergus, Szlam
-  `planning` `using available environment model`
->	"The tasks that an agent will need to solve often are not known during training. However, if the agent knows which properties of the environment are important then, after learning how its actions affect those properties, it may be able to use this knowledge to solve complex tasks without training specifically for them. Towards this end, we consider a setup in which an environment is augmented with a set of user defined attributes that parameterize the features of interest. We propose a method that learns a policy for transitioning between “nearby” sets of attributes, and maintains a graph of possible transitions. Given a task at test time that can be expressed in terms of a target set of attributes, and a current state, our model infers the attributes of the current state and searches over paths through attribute space to get a high level plan, and then uses its low level policy to execute the plan. We show in 3D block stacking, gridworld games, and StarCraft that our model is able to generalize to longer, more complex tasks at test time by composing simpler learned policies."  
-  - `video` <https://youtube.com/watch?v=r7oSmy_AtZY> (Szlam)
-  - `video` <https://vimeo.com/287812698> (Zhang, Lerer)
+#### ["Deep Reinforcement Learning in a Handful of Trials using Probabilistic Dynamics Models"](https://arxiv.org/abs/1805.12114) Chua, Calandra, McAllister, Levine
+  `PETS` `planning` `using available environment model` `NIPS 2018`
+>	"Model-based reinforcement learning algorithms can attain excellent sample efficiency, but often lag behind the best model-free algorithms in terms of asymptotic performance. This is especially true with high-capacity parametric function approximators, such as deep networks. In this paper, we study how to bridge this gap, by employing uncertainty-aware dynamics models."  
+>	"Probabilistic ensembles with trajectory sampling algorithm combines uncertainty-aware deep network dynamics models with sampling-based uncertainty propagation. Our comparison to state-of-the-art model-based and model-free deep RL algorithms shows that our approach matches the asymptotic performance of model-free algorithms on several challenging benchmark tasks, while requiring significantly fewer samples (e.g., 8 and 125 times fewer samples than Soft Actor Critic and Proximal Policy Optimization respectively on the half-cheetah task)."  
+>	"The dynamics are modelled by an ensemble of probabilistic neural networks models, which captures both epistemic uncertainty from limited data and network capacity, and aleatoric uncertainty from the stochasticity of the ground-truth dynamics. Except for the difference in modeling the dynamics, PETS-RS is the same as RS. Instead, in PETS-CEM, the online optimization problem is solved using cross-entropy method to obtain a better solution."  
+  - `video` <https://sites.google.com/view/drl-in-a-handful-of-trials>
+  - `video` <https://slideslive.com/38915863/learning-models-for-representations-and-planning> (12:17) (Lillicrap)
 
 #### ["Neural Network Dynamics for Model-Based Deep Reinforcement Learning with Model-Free Fine-Tuning"](https://arxiv.org/abs/1708.02596) Nagabandi, Kahn, Fearing, Levine
-  `planning` `using available environment model`
+  `MB-MF` `planning` `using available environment model`
 >	"Calculating optimal plan is difficult due to the dynamics and reward functions being nonlinear, but many techniques exist for obtaining approximate solutions to finite-horizon control problems that are sufficient for succeeding at the desired task. We use a simple random-sampling shooting method in which K candidate action sequences are randomly generated, the corresponding state sequences are predicted using the learned dynamics model, the rewards for all sequences are calculated, and the candidate action sequence with the highest expected cumulative reward is chosen. Rather than have the policy execute this action sequence in open-loop, we use model predictive control: the policy executes only the first action, receives updated state information, and recalculates the optimal action sequence at the next time step. This combination of predictive dynamics model plus controller is beneficial in that the model is trained only once, but by simply changing the reward function, we can accomplish a variety of goals at run-time, without a need for live task-specific retraining."  
+>	"Generally, random shooting has worse asymptotic performance when compared with model-free algorithms. In MB-MF, the authors first train a RS controller πRS, and then distill the controller into a neural network policy πθ using DAgger, which minimizes DKL(πθ(st),πRS). After the policy distillation step, the policy is fine-tuned using standard model-free algorithms."  
   - <https://sites.google.com/view/mbmf> (demo)
   - `post` <http://bair.berkeley.edu/blog/2017/11/30/model-based-rl/>
   - `video` <https://youtube.com/watch?v=G7lXiuEC8x0>
   - `video` <https://vimeo.com/252186751> (Nagabandi)
   - `code` <https://github.com/nagaban2/nn_dynamics>
 
-#### ["Model-Based Planning in Discrete Action Spaces"](https://arxiv.org/abs/1705.07177) Henaff, Whitney, LeCun
-  `planning` `using available environment model`
->	"We show that by using a simple paramaterization of actions on the simplex combined with input noise during planning, we are able to effectively perform gradient-based planning in discrete action spaces."  
-#### ["Counterfactual Control for Free from Generative Models"](https://arxiv.org/abs/1702.06676) Guttenberg, Yu, Kanai
-  `planning` `using available environment model`
->	"generative model learning the joint distribution between actions and future states can be used to automatically infer a control scheme for any desired reward function, which may be altered on the fly without retraining the model"  
->	"problem of action selection is reduced to one of gradient descent on the latent space of the generative model, with the model itself providing the means of evaluating outcomes and finding the gradient, much like how the reward network in Deep Q-Networks provides gradient information for the action generator"  
-
 #### ["Blazing the Trails before Beating the Path: Sample-efficient Monte-Carlo Planning"](https://papers.nips.cc/paper/6253-blazing-the-trails-before-beating-the-path-sample-efficient-monte-carlo-planning.pdf) Grill, Valko, Munos
   `planning` `using available environment model`
->	"We study the sampling-based planning problem in Markov decision processes (MDPs) that we can access only through a generative model, usually referred to as Monte-Carlo planning."  
+>	"We study the sampling-based planning problem in Markov decision processes that we can access only through a generative model, usually referred to as Monte-Carlo planning."  
 >	"Our objective is to return a good estimate of the optimal value function at any state while minimizing the number of calls to the generative model, i.e. the sample complexity."  
 >	"TrailBlazer is an adaptive algorithm that exploits possible structures of the MDP by exploring only a subset of states reachable by following near-optimal policies."  
   - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Blazing-the-trails-before-beating-the-path-Sample-efficient-Monte-Carlo-planning> (Grill)
@@ -2436,14 +2434,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"In reinforcement learnin, to estimate Vt1 at time t1, one does not usually wait to get all the rewards to compute Rt1. Instead, one uses an estimate at some future time t2 as a bootstrap to estimate Vt1 (temporal difference). In our case, the model expresses a belief pB(zt|bt) about possible future states instead of the sum of discounted rewards. The model trains the belief pB(zt1|bt1) at time t1 using belief pB(zt2|bt2) at some time t2 in the future. It accomplishes this by (variationally) auto-encoding a sample zt2 of the future state into a sample zt1, using the approximate posterior distribution q(zt1|zt2,bt1,bt2) and the decoding distribution p(zt2|zt1). This auto-encoding mapping translates between states at t1 and t2, forcing beliefs at the two time steps to be consistent. Sample zt1 forms the target for training the belief pB(zt1|bt1), which appears as a prior distribution over zt1."  
   - `notes` <https://www.shortscience.org/paper?bibtexKey=journals/corr/abs-1806-03107>
   - `code` <https://github.com/xqding/TD-VAE>
-
-#### ["Deep Reinforcement Learning in a Handful of Trials using Probabilistic Dynamics Models"](https://arxiv.org/abs/1805.12114) Chua, Calandra, McAllister, Levine
-  `PETS` `learning to simulate` `learning environment model` `NIPS 2018`
->	"Model-based reinforcement learning algorithms can attain excellent sample efficiency, but often lag behind the best model-free algorithms in terms of asymptotic performance. This is especially true with high-capacity parametric function approximators, such as deep networks. In this paper, we study how to bridge this gap, by employing uncertainty-aware dynamics models."  
->	"Probabilistic ensembles with trajectory sampling algorithm combines uncertainty-aware deep network dynamics models with sampling-based uncertainty propagation. Our comparison to state-of-the-art model-based and model-free deep RL algorithms shows that our approach matches the asymptotic performance of model-free algorithms on several challenging benchmark tasks, while requiring significantly fewer samples (e.g., 8 and 125 times fewer samples than Soft Actor Critic and Proximal Policy Optimization respectively on the half-cheetah task)."  
->	"dynamics model + trajectory propagation + planning via Model Predictive Control"  
-  - `video` <https://sites.google.com/view/drl-in-a-handful-of-trials>
-  - `video` <https://slideslive.com/38915863/learning-models-for-representations-and-planning> (12:17) (Lillicrap)
 
 #### ["Unsupervised Predictive Memory in Goal-Directed Agent"](https://arxiv.org/abs/1803.10760) Wayne et al.
   `MERLIN` `partial observability` `learning environment model` `no explicit planning`
@@ -3371,6 +3361,15 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Evolving Simple Programs for Playing Atari Game"](https://arxiv.org/abs/1806.05695) Wilson, Cussat-Blanc, Luga, Miller
 >	"Programs are evolved using mixed type Cartesian Genetic Programming with a function set suited for matrix operations, including image processing, but allowing for controller behavior to emerge."  
 >	"While the programs are relatively small, many controllers are competitive with state of the art methods for the Atari benchmark set and require less training time."  
+
+#### ["Programmatically Interpretable Reinforcement Learning"](https://arxiv.org/abs/1804.02477) Verma, Murali, Singh, Kohli, Chaudhuri
+  `PIRL`
+>	"Unlike the popular Deep Reinforcement Learning paradigm, which represents policies by neural networks, PIRL represents policies using a high-level, domain-specific programming language. Such programmatic policies have the benefits of being more easily interpreted than neural networks, and being amenable to verification by symbolic methods."  
+>	"We propose a new method, called Neurally Directed Program Search, for solving the challenging non-smooth optimization problem of finding a programmatic policy with maximal reward. NDPS works by first learning a neural policy network using DRL, and then performing a local search over programmatic policies that seeks to minimize a distance from this neural “oracle”."  
+>	"The DAGGER (Dataset Aggregation) algorithm is an iterative algorithm for imitation learning that learns stationary deterministic policies, where in each iteration i it uses the current learnt policy πi to collect new trajectories and adds them to the dataset D of all previously found trajectories. The policy for the next iteration πi+1 is a policy that best mimics the expert policy π∗ on the whole dataset D. Our Neurally Directed Program Search is inspired by the DAGGER algorithm, where we use the trained DeepRL agent as the expert (oracle), and iteratively perform IO augmentation for unseen input states explored by our synthesized policy with the current best reward. However, one key difference is that NDPS uses the expert trajectories to only guide the local program search in our policy language grammar to find a policy with highest rewards, unlike the imitation learning setting where the goal is to match the expert demonstrations perfectly."  
+>	"We evaluate NDPS on the task of learning to drive a simulated car in the TORCS car-racing environment. We demonstrate that NDPS is able to discover human-readable policies that pass some significant performance bars. We also show that PIRL policies can have smoother trajectories, and can be more easily transferred to environments not encountered during training, than corresponding policies discovered by DRL."  
+>	"The experiments in this paper only considered environments with symbolic inputs. Handling perceptual inputs may raise additional algorithmic challenges, and is a natural next step. Also, in this paper, we only considered deterministic (if memoryful) policies."  
+  - `video` <https://vimeo.com/312267206> (Verma)
 
 #### ["Synthesizing Programs for Images using Reinforced Adversarial Learning"](https://arxiv.org/abs/1804.01118) Ganin, Kulkarni, Babuschkin, Eslami, Vinyals
   `SPIRAL`

@@ -5,7 +5,7 @@
     - [**item similarity**](#interesting-papers---item-similarity)
     - [**user preferences**](#interesting-papers---user-preferences)
     - [**deep learning**](#interesting-papers---deep-learning)
-    - [**active learning**](#interesting-papers---active-learning)
+    - [**interactive learning**](#interesting-papers---interactive-learning)
 
 
 
@@ -128,6 +128,23 @@
 ### interesting papers - user preferences
 
 
+#### ["Recurrent Recommender Networks"](https://dl.acm.org/citation.cfm?id=3018689) Wu, Ahmed, Beutel, Smola, Jing
+>	"Recommender systems traditionally assume that user profiles and movie attributes are static. Temporal dynamics are purely reactive, that is, they are inferred after they are observed, e.g. after a user’s taste has changed or based on hand-engineered temporal bias corrections for movies. We propose Recurrent Recommender Networks that are able to predict future behavioral trajectories. This is achieved by endowing both users and movies with a Long Short-Term Memory autoregressive model that captures dynamics, in addition to a more traditional low-rank factorization. On multiple real-world datasets, our model offers excellent prediction accuracy and it is very compact, since we need not learn latent state but rather just the state transition function."
+
+>	"A common approach to practical recommender systems is to study problems of the form introduced in the Netflix contest. That is, given a set of tuples consisting of users, movies, timestamps and ratings, the goal is to find ratings for alternative combinations of the first three attributes (user, movie, time). Performance is then measured by the deviation of the prediction from the actual rating. This formulation is easy to understand and it has led to numerous highly successful approaches, such as Probabilistic Matrix Factorization, nearest neighbor based approaches, and clustering. Moreover, it is easy to define appropriate performance measures (deviation between rating estimates and true ratings over the matrix), simply by selecting a random subset of the tuples for training and the rest for testing purposes. Unfortunately, these approaches are lacking when it comes to temporal and causal aspects inherent in the data. The following examples illustrate this in some more detail:  
+>	Change in Movie Perception. Plan 9 from Outer Space has achieved cult movie status by being arguably one of the world’s worst movies. As a result of the social notion of being a movie that is so bad that it is great to watch, the perception changed over time from a truly awful movie to a popular one. To capture this appropriately, the movie attribute parameters would have to change over time to track such a trend. While maybe not quite as pronounced, similar effects hold for movie awards such as the Oscars. After all, it is much more challenging to hold a contrarian view about a critically acclaimed movie than about, say, Star Wars 1, The Phantom Menace.  
+>	Seasonal Changes. While not quite so extreme, the relative appreciation of romantic comedies, Christmas movies and summer blockbusters is seasonal. Beyond the appreciation, users are unlikely to watch movies about overweight bearded old men wearing red robes in summer.  
+>	User Interest. User’s preferences change over time. This is well established in online communities and it arguably also applies to online consumption. A user might take a liking to a particular actor, might discover the intricacies of a specific genre, or her interest in a particular show might wane, due to maturity or a change in lifestyle. Any such aspects render existing profiles moot, yet it is difficult to model all such changes explicitly."
+
+>	"Beyond the mere need of modeling temporal evolution, evaluating ratings with the benefit of hindsight also violates basic requirements of causality. For instance, knowing that a user will have developed a liking for Pedro Almod ́ovar in one month in the future makes it much easier to estimate what his opinion about La Mala Educacion might be. In other words, we violate causality in our statistical analysis when we use future ratings for the benefit of estimating current reviews. It also makes it impossible to translate reported accuracies on benchmarks into meaningful assessments as to whether such a system would work well in practice. While the Netflix prize generated a flurry of research, evaluating different models’ success on future predictions is hindered by the mixed distribution of training and testing data. Rather, by having an explicit model of profile dynamics, we can predict future behavior based on current trends. A model capable of capturing the actual data distribution inherent in recommender systems needs to be able to model both the temporal dynamics within each user and movie, in addition to capturing the rating interaction between both sets. This suggests the use of latent variable models to infer the unobserved state governing their behavior."
+
+>	"Nonlinear nonparametric recommender systems have proven to be somewhat elusive. In particular, nonlinear substitutes of the inner product formulation showed only limited promise in our experiments. To the best of our knowledge this is the first paper addressing movie recommendation in a fully causal and integrated fashion. That is, we believe that this is the first model which attempts to capture the dynamics of both users and movies. Moreover, our model is nonparametric. This allows us to model the data rather than having to assume a specific form of a state space."
+
+>	"Recurrent Recommender Networks are very concise since we only learn the dynamics rather than the state. This is one of the key differences to typical latent variable models where considerable effort is spent on estimating the latent state."
+
+>	"Experiments show that our model outperforms all others in terms of forward prediction, i.e. in the realistic scenario where we attempt to estimate future ratings given data that occurred strictly prior to the to-be-predicted ratings. We show that our model is able to capture exogenous dynamics (e.g. an Oscar award) and endogenous dynamics (e.g. Christmas movies) quite accurately. Moreover, we demonstrate that the model is able to predict changes in future user preferences accurately."
+
+
 #### ["Latent LSTM Allocation: Joint Clustering and Non-Linear Dynamic Modeling of Sequential Data"](http://proceedings.mlr.press/v70/zaheer17a/zaheer17a.pdf) Zaheer, Ahmed, Smola
   `Google`
 >	"Recurrent neural networks, such as LSTM networks, are powerful tools for modeling sequential data like user browsing history or natural language text. However, to generalize across different user types, LSTMs require a large number of parameters, notwithstanding the simplicity of the underlying dynamics, rendering it uninterpretable, which is highly undesirable in user modeling. The increase in complexity and parameters arises due to a large action space in which many of the actions have similar intent or topic. In this paper, we introduce Latent LSTM Allocation for user modeling combining hierarchical Bayesian models with LSTMs. In LLA, each user is modeled as a sequence of actions, and the model jointly groups actions into topics and learns the temporal dynamics over the topic sequence, instead of action space directly. This leads to a model that is highly interpretable, concise, and can capture intricate dynamics. We present an efficient Stochastic EM inference algorithm for our model that scales to millions of users/documents. Our experimental evaluations show that the proposed model compares favorably with several state-of-the-art baselines."
@@ -248,7 +265,7 @@
 
 
 #### ["Deep Neural Networks for YouTube Recommendations"](http://research.google.com/pubs/pub45530.html) Covington, Adams, Sargin
-  `Google`
+  `YouTube`
 >	"YouTube represents one of the largest scale and most sophisticated industrial recommendation systems in existence. In this paper, we describe the system at a high level and focus on the dramatic performance improvements brought by deep learning. The paper is split according to the classic two-stage information retrieval dichotomy: first, we detail a deep candidate generation model and then describe a separate deep ranking model. We also provide practical lessons and insights derived from designing, iterating and maintaining a massive recommendation system with enormous userfacing impact."
 
 >	"We have described our deep neural network architecture for recommending YouTube videos, split into two distinct problems: candidate generation and ranking. Our deep collaborative filtering model is able to effectively assimilate many signals and model their interaction with layers of depth, outperforming previous matrix factorization approaches used at YouTube. There is more art than science in selecting the surrogate problem for recommendations and we found classifying a future watch to perform well on live metrics by capturing asymmetric co-watch behavior and preventing leakage of future information. Withholding discrimative signals from the classifier was also essential to achieving good results - otherwise the model would overfit the surrogate problem and not transfer well to the homepage. We demonstrated that using the age of the training example as an input feature removes an inherent bias towards the past and allows the model to represent the time-dependent behavior of popular of videos. This improved offline holdout precision results and increased the watch time dramatically on recently uploaded videos in A/B testing. Ranking is a more classical machine learning problem yet our deep learning approach outperformed previous linear and tree-based methods for watch time prediction. Recommendation systems in particular benefit from specialized features describing past user behavior with items. Deep neural networks require special representations of categorical and continuous features which we transform with embeddings and quantile normalization, respectively. Layers of depth were shown to effectively model non-linear interactions between hundreds of features. Logistic regression was modified by weighting training examples with watch time for positive examples and unity for negative examples, allowing us to learn odds that closely model expected watch time. This approach performed much better on watch-time weighted ranking evaluation metrics compared to predicting click-through rate directly."
@@ -260,27 +277,25 @@
   - `code` <https://github.com/ogerhsou/Youtube-Recommendation-Tensorflow/blob/master/youtube_recommendation.py>
 
 
-#### [Spotlight](https://maciejkula.github.io/spotlight) Kula
->	"Spotlight uses PyTorch to build both deep and shallow recommender models. By providing both a slew of building blocks for loss functions (various pointwise and pairwise ranking losses), representations (shallow factorization representations, deep sequence models), and utilities for fetching (or generating) recommendation datasets, it aims to be a tool for rapid exploration and prototyping of new recommender models."
-
->	"Recommendations can be seen as a sequence prediction task: given the items a user has interacted with in the past, what will be the next item they will interact with? Spotlight provides a range of models and utilities for fitting next item recommendation models, including:  
->	- pooling models, as in YouTube recommendations  
->	- LSTM models, as in Session-based recommendations  
->	- causal convolution models, as in WaveNet."  
-
-  - `video` <https://youtube.com/watch?v=ZkBQ6YA9E40> (Kula)
-  - `code` <https://github.com/maciejkula/spotlight>
+#### ["Latent Cross: Making Use of Context in Recurrent Recommender Systems"](https://dl.acm.org/citation.cfm?id=3159727) Beutel et al.
+  `YouTube`
+>	"The success of recommender systems often depends on their ability to understand and make use of the context of the recommendation request. Significant research has focused on how time, location, interfaces, and a plethora of other contextual features affect recommendations. However, in using deep neural networks for recommender systems, researchers often ignore these contexts or incorporate them as ordinary features in the model. In this paper, we study how to effectively treat contextual data in neural recommender systems. We begin with an empirical analysis of the conventional approach to context as features in feed-forward recommenders and demonstrate that this approach is inefficient in capturing common feature crosses. We apply this insight to design a state-of-the-art RNN recommender system. We first describe our RNN-based recommender system in use at YouTube. Next, we offer “Latent Cross,” an easy-to-use technique to incorporate contextual data in the RNN by embedding the context feature first and then performing an element-wise product of the context embedding with model’s hidden states. We demonstrate the improvement in performance by using this Latent Cross technique in multiple experimental settings."
 
 
 
 ---
-### interesting papers - active learning
+### interesting papers - interactive learning
 
 
 #### ["Making Contextual Decisions with Low Technical Debt"](http://arxiv.org/abs/1606.03966) Agarwal et al.
   `Microsoft Custom Decision Service`
 
   - ["Making Contextual Decisions with Low Technical Debt"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) by Agarwal et al. `summary`
+
+
+#### ["Top-K Off-Policy Correction for a REINFORCE Recommender System"](https://arxiv.org/abs/1812.02353) Chen, Beutel, Covington, Jain, Belletti, Chi
+  `YouTube`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#top-k-off-policy-correction-for-a-reinforce-recommender-system-chen-beutel-covington-jain-belletti-chi>
 
 
 #### ["Q&R: A Two-Stage Approach toward Interactive Recommendation"](http://alexbeutel.com/papers/q-and-r-kdd2018.pdf) Christakopoulou, Beutel, Li, Jain, Chi

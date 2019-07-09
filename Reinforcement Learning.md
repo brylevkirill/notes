@@ -71,10 +71,10 @@
 ---
 ### applications - industry
 
-  [personalized web services](http://thenewstack.io/reinforcement-learning-ready-real-world/) at Microsoft (Custom Decision Service [paper](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) `summary`)  
-  ["Personalized Web Services"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto  
+  [recommender system](https://nytimes.com/interactive/2019/06/08/technology/youtube-radical.html) at YouTube ([**paper**](#top-k-off-policy-correction-for-a-reinforce-recommender-system-chen-beutel-covington-jain-belletti-chi) by Chen et al. `summary`, [talk](https://youtube.com/watch?v=HEqQ2_1XRTs) by Chen `video`, [talk](http://www.fields.utoronto.ca/video-archive/2019/02/2509-19619) by Boutilier `video`)
 
-  [recommender systems](http://www.fields.utoronto.ca/video-archive/2019/02/2509-19619) at Google `video` ([paper](#reinforcement-learning-for-slate-based-recommender-systems-a-tractable-decomposition-and-practical-methodology-ie-et-al) by Ie et al. `summary`, [press](https://nytimes.com/interactive/2019/06/08/technology/youtube-radical.html))
+  [personalized web services](http://thenewstack.io/reinforcement-learning-ready-real-world/) at Microsoft (Custom Decision Service [**paper**](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) `summary`)  
+  ["Personalized Web Services"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto  
 
   [datacenter cooling](https://deepmind.com/blog/safety-first-ai-autonomous-data-centre-cooling-and-industrial-control/) at Google ([paper](https://papers.nips.cc/paper/7638-data-center-cooling-using-model-predictive-control.pdf) by Lazic et al., [patent](http://freepatentsonline.com/y2018/0204116.html))
 
@@ -118,8 +118,8 @@
 
 	[discussion](https://reddit.com/r/DotA2/comments/bf49yk/hello_were_the_dev_team_behind_openai_five_we) with OpenAI team
 
-	[OpenAI Five vs top players games](https://youtube.com/playlist?list=PLOXw6I10VTv-ZFZV4fMqKMfNQmwmkcr0w) `video`  
-	[OpenAI Five vs ainodehna team games](https://arena.openai.com/#/results) ([highlights](https://cybersport.ru/dota-2/interviews/glavnoe-protiv-botov-otdat-im-udobnykh-dlya-nas-geroev-komanda-kotoraya-trizhdy-pobedila-openai-raskryla-svoyu-taktiku) `in russian`)  
+	[OpenAI Five vs top players](https://youtube.com/playlist?list=PLOXw6I10VTv-ZFZV4fMqKMfNQmwmkcr0w) games `video`  
+	[OpenAI Five vs ainodehna team](https://arena.openai.com/#/results) games ([highlights](https://cybersport.ru/dota-2/interviews/glavnoe-protiv-botov-otdat-im-udobnykh-dlya-nas-geroev-komanda-kotoraya-trizhdy-pobedila-openai-raskryla-svoyu-taktiku) `in russian`)  
 
 ----
   - *StarCraft 2*
@@ -132,7 +132,7 @@
 
 	overview by Alex Irpan ([1](https://www.alexirpan.com/2019/02/22/alphastar.html), [2](https://www.alexirpan.com/2019/02/22/alphastar-part2.html))
 
-	[AlphaStar vs pro players games](https://youtube.com/watch?v=cUTMhmVh1qs) `video` ([highlights](https://youtube.com/watch?v=zgIFoepzhIo) by MaNa `video`, [highlights](https://youtube.com/watch?v=_YWmU-E2WFc) by Artosis `video`))
+	[AlphaStar vs pro players](https://youtube.com/watch?v=cUTMhmVh1qs) games `video` ([highlights](https://youtube.com/watch?v=zgIFoepzhIo) by MaNa `video`, [highlights](https://youtube.com/watch?v=_YWmU-E2WFc) by Artosis `video`))
 
 ----
   - *Go*  
@@ -159,8 +159,8 @@
 
 	[AlphaGo documentary](https://netflix.com/title/80190844) `video`
 
-	[AlphaGo vs Lee Sedol games](https://youtube.com/playlist?list=PLqYmG7hTraZDEaLdPx7GJ284kuE2xcFXu) `video`  
-	[AlphaGo vs Ke Jie games](https://youtube.com/playlist?list=PLqYmG7hTraZDEaLdPx7GJ284kuE2xcFXu) `video`  
+	[AlphaGo vs Lee Sedol](https://youtube.com/playlist?list=PLqYmG7hTraZDEaLdPx7GJ284kuE2xcFXu) games `video`  
+	[AlphaGo vs Ke Jie](https://youtube.com/playlist?list=PLqYmG7hTraZDEaLdPx7GJ284kuE2xcFXu) games `video`  
 
 ----
   - *Poker*  
@@ -214,7 +214,7 @@
 	[discussion](http://thinkingpoker.net/2017/04/episode-210-michael-johanson-and-dustin-morrill/) with Michael Johanson and Dustin Morrill  
 	[discussion](http://thinkingpoker.net/2017/08/episode-225-taking-the-variance-out-of-poker/) with Michael Bowling and Dustin Morrill  
 
-	[DeepStack vs pro players games](https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ) `video`
+	[DeepStack vs pro players](https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ) games `video`
 
 ----
   - *Chess*  
@@ -228,9 +228,9 @@
 	[AlphaZero overview](https://youtu.be/3N9phq_yZP0?t=12m43s) by Demis Hassabis `video`  
 	[AlphaZero overview](https://youtu.be/DXNqYSNvnjA?t=21m24s) by Demis Hassabis `video`  
 
-	[AlphaZero vs Stockfish games](https://youtube.com/playlist?list=PLDnx7w_xuguFDbrYDxxvPH-aoQkEX0rHv) `video`  
-	[AlphaZero vs Stockfish games](https://youtube.com/playlist?list=PLDnx7w_xuguHIxbL7akaYgEvV4spwYkmn) `video`  
-	[AlphaZero vs Stockfish games](https://youtube.com/playlist?list=PL-qLOQ-OEls607FPLAsPZ6De4f1W3ZF-I) `video`  
+	[AlphaZero vs Stockfish](https://youtube.com/playlist?list=PLDnx7w_xuguFDbrYDxxvPH-aoQkEX0rHv) games `video`  
+	[AlphaZero vs Stockfish](https://youtube.com/playlist?list=PLDnx7w_xuguHIxbL7akaYgEvV4spwYkmn) games `video`  
+	[AlphaZero vs Stockfish](https://youtube.com/playlist?list=PL-qLOQ-OEls607FPLAsPZ6De4f1W3ZF-I) games `video`  
 
 ----
   - *Quake III Arena*
@@ -239,8 +239,8 @@
 
 	["Human-level Performance in First-person Multiplayer Games with Population-based Deep Reinforcement Learning"](#human-level-performance-in-first-person-multiplayer-games-with-population-based-deep-reinforcement-learning-jaderberg-et-al) by Jaderberg et al. `paper` `summary`
 
-	[FTW agents vs FTW agents games](https://youtube.com/watch?v=NXkD77ioGi0) `video`  
-	[FTW agents vs human players games](https://youtube.com/watch?v=dltN4MxV1RI) `video`  
+	[FTW agents vs FTW agents](https://youtube.com/watch?v=NXkD77ioGi0) games `video`  
+	[FTW agents vs human players](https://youtube.com/watch?v=dltN4MxV1RI) games `video`  
 
 ----
   - *Doom*  
@@ -248,7 +248,7 @@
 	["Learning to Act by Predicting the Future"](#learning-to-act-by-predicting-the-future-dosovitskiy-koltun) by Dosovitskiy and Koltun `paper` `summary`
 
 	[IntelAct agent demo](https://youtube.com/watch?v=947bSUtuSQ0) `video`  
-	[ViZDoom competition games](https://youtube.com/channel/UC8UghzsxS5uEFUEbvcAWwlQ/videos) `video`  
+	[ViZDoom competition](https://youtube.com/channel/UC8UghzsxS5uEFUEbvcAWwlQ/videos) games `video`  
 
 ----
   - *Atari*  
@@ -441,6 +441,7 @@
 
 ----
 
+  ["Challenges of Real-World Reinforcement Learning"](https://arxiv.org/abs/1904.12901) by Dulac-Arnold et al.  
   ["A Real World Reinforcement Learning Research Program"](http://hunch.net/?p=9828091) by John Langford  
   ["Expressivity, Trainability, and Generalization in Machine Learning"](http://blog.evjang.com/2017/11/exp-train-gen.html) by Eric Jang  
   ["On “Solving” Montezuma’s Revenge"](https://medium.com/@awjuliani/on-solving-montezumas-revenge-2146d83f0bc3) by Arthur Juliani  
@@ -1193,7 +1194,10 @@
 
 ----
 
-  [**interesting papers - behavioral cloning**](#interesting-papers---behavioral-cloning)
+  ["Guided Policy Search"](#guided-policy-search-levine-koltun) by Levine et al. `paper` `summary`  
+  ["Learning Neural Network Policies with Guided Policy Search under Unknown Dynamics"](#learning-neural-network-policies-with-guided-policy-search-under-unknown-dynamics-levine-abbeel) by Levine et al. `paper` `summary`  
+  ["Learning Contact-Rich Manipulation Skills with Guided Policy Search"](#learning-contact-rich-manipulation-skills-with-guided-policy-search-levine-wagener-abbeel) by Levine et al. `paper` `summary`  
+  ["End-to-End Training of Deep Visuomotor Policies"](#end-to-end-training-of-deep-visuomotor-policies-levine-finn-darrell-abbeel) by Levine et al. `paper` `summary`  
 
 
 
@@ -1227,6 +1231,10 @@
 
 ----
 
+  ["Benchmarking Model-Based Reinforcement Learning"](#benchmarking-model-based-reinforcement-learning-wang-et-al) by Wang et al. `summary`
+
+----
+
   [**interesting papers**](#interesting-papers---model-based-methods)  
   [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-based-methods)  
 
@@ -1235,7 +1243,18 @@
 ----
 #### bayesian reinforcement learning
 
+  ["Bayesian Reinforcement Learning: A Survey"](https://arxiv.org/abs/1609.04436) by Ghavamzadeh et al. `paper`
+
+----
+
+  [**policy search in belief-augmented MDP**](#bayesian-reinforcement-learning---policy-search-in-belief-augmented-mdp)  
+  [**policy search in variational MDP**](##bayesian-reinforcement-learning---policy-search-in-variational-mdp)  
+  [**universal reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---aixi)  
+
+----
+
   [**bayesian inference and learning**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
+
 
 
 ----
@@ -1253,16 +1272,12 @@
 
   [overview](https://youtu.be/sGuiWX07sKw?t=1h8m44s) by David Silver `video`  
   ["Bandits, Active Learning, Bayesian RL and Global Optimization"](https://youtu.be/5rev-zVx1Ps?t=58m45s) by Marc Toussaint `video`  
-  ["Connections Between Inference and Control"](https://youtu.be/iOYiPhu5GEk?t=2m34s) by Sergey Levine `video` ([write-up](https://arxiv.org/abs/1805.00909))  
 
   ["Reinforcement Learning: Beyond Markov Decision Processes"](https://youtube.com/watch?v=_dkaynuKUFE) by Alexey Seleznev `video` `in russian`  
   ["Partially Observable Markov Decision Process in Reinforcement Learning"](https://yadi.sk/i/pMdw-_uI3Gke7Z) by Pavel Shvechikov `video` `in russian`  
   ["Planning in Partially Observable Markov Decision Process"](https://yadi.sk/i/lOAUu7o13JBHFz) (55:08) by Pavel Shvechikov `video` `in russian`  
 
 ----
-
-  ["Bayesian Reinforcement Learning: A Survey"](https://arxiv.org/abs/1609.04436) by Ghavamzadeh et al. `paper`  
-  ["Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review"](https://arxiv.org/abs/1805.00909) by Sergey Levine `paper` ([talk](https://youtu.be/iOYiPhu5GEk?t=2m34s) `video`)  
 
   ["Planning to Be Surprised: Optimal Bayesian Exploration in Dynamic Environments"](#planning-to-be-surprised-optimal-bayesian-exploration-in-dynamic-environments) by Sun et al. `paper` `summary`  
   ["Bayes-Adaptive POMDPs"](https://papers.nips.cc/paper/3333-bayes-adaptive-pomdps) by Ross et al. `paper`  
@@ -1273,8 +1288,9 @@
   ["Variational Inference for Data-Efficient Model Learning in POMDPs"](https://arxiv.org/abs/1805.09281) by Tschiatschek et al. `paper`  
 
 
+
 ----
-#### bayesian reinforcement learning - bayesian policy search in variational MDP
+#### bayesian reinforcement learning - policy search in variational MDP
 
   p(z) = N(z|0,I)  
   p(a1..T|z) = Un(a)  
@@ -1287,19 +1303,16 @@
 
   ["A Case Against Generative Models in RL?"](https://youtube.com/watch?v=EA2RtXsLSWU) by Shakir Mohamed `video`  
   ["Bayesian Policy Search"](https://youtu.be/AggqBRdz6CQ?t=9m53s) by Shakir Mohamed `video`  
+  ["Connections Between Inference and Control"](https://youtu.be/iOYiPhu5GEk?t=2m34s) by Sergey Levine `video` ([write-up](https://arxiv.org/abs/1805.00909))  
+
   ["Bayesian Inference for Reinforcement Learning"](https://youtube.com/watch?v=KZd-jkmeIcU) by Sergey Bartunov `video` `in russian`
 	([slides](https://drive.google.com/drive/folders/0B2zoFVYw1rN3N0RUNXE1WnNObTQ) `in english`)  
 
 ----
 
+  ["Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review"](https://arxiv.org/abs/1805.00909) by Sergey Levine `paper` ([talk](https://youtu.be/iOYiPhu5GEk?t=2m34s) `video`)  
   ["Reinforced Variational Inference"](#reinforced-variational-inference-weber-heess-eslami-schulman-wingate-silver) by Weber et al. `paper` `summary`  
   ["Reinforcement Learning as Variational Inference: Two Recent Approaches"](http://people.ee.duke.edu/~lcarin/Rohith8.11.2017.pdf) by Rohith Kuditipudi `slides`  
-
-
-----
-#### bayesian reinforcement learning - general reinforcement learning
-
-  [**AIXI**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---aixi)  *(bayesian optimal general reinforcement learning agent)*  
 
 
 
@@ -1674,15 +1687,13 @@
 
 ----
 
+  "SVG tackles the problem of compounding model errors by using observations from the real environment, instead of the imagined one. To accommodate mismatch between model predictions and real transitions, the dynamics models in SVG are probabilistic. The policy is improved by computing the analytic gradient of the real trajectories with respect to the policy. Re-parametrization trick is used to permit back-propagation through the stochastic sampling."
+
   - generalizes DPG to stochastic policies in a number of ways, giving spectrum from model-based to model-free algorithms  
   - while SVG(0) is direct stochastic generalization of DPG, SVG(1) combines actor, critic and environment dynamics model  
+  - SVG can be used both with (SVG(0) and SVG(1)) and without (SVG(∞)) value critics  
+  - SVG can be used both with (SVG(∞) and SVG(1)) and without (SVG(0)) environment dynamics models  
   - actor is trained through combination of gradients from critic, model and reward simultaneously  
-
-  "Calculating gradients to optimise stochastic policies by reparameterising the stochasticity away from the network, thereby allowing standard gradients to be used instead of the high-variance REINFORCE estimator."
-
-  reparametrization trick: E p(y|x)[g(y)]=∫g(f(x,ε))ρ(ε)dε where y=f(x,ε) and ε~ρ(.) a fixed noise distribution
-
-  "SVG methods are flexible and can be used both with (SVG(0) and SVG(1)) and without (SVG(∞)) value function critics, and with (SVG(∞) and SVG(1)) and without (SVG(0)) learned models."  
 
 
 
@@ -1714,6 +1725,20 @@ interesting recent papers:
 ### interesting papers - applications
 
 [**selected papers**](https://yadi.sk/d/tiaE7sdi3WEhDS)
+
+
+#### ["Challenges of Real-World Reinforcement Learning"](https://arxiv.org/abs/1904.12901) Dulac-Arnold, Mankowitz, Hester
+>	"Reinforcement learning has proven its worth in a series of artificial domains, and is beginning to show some successes in real-world scenarios. However, much of the research advances in RL are often hard to leverage in real-world systems due to a series of assumptions that are rarely satisfied in practice. We present a set of nine unique challenges that must be addressed to productionize RL to real world problems. For each of these challenges, we specify the exact meaning of the challenge, present some approaches from the literature, and specify some metrics for evaluating that challenge. An approach that addresses all nine challenges would be applicable to a large number of real world problems. We also present an example domain that has been modified to present these challenges as a testbed for practical RL research."
+
+>	"1. Training off-line from the fixed logs of an external behavior policy.  
+>	2. Learning on the real system from limited samples.  
+>	3. High-dimensional continuous state and action spaces.  
+>	4. Safety constraints that should never or at least rarely be violated.  
+>	5. Tasks that may be partially observable, alternatively viewed as non-stationary or stochastic.  
+>	6. Reward functions that are unspecified, multi-objective, or risk-sensitive.  
+>	7. System operators who desire explainable policies and actions.  
+>	8. Inference that must happen in real-time at the control frequency of the system.  
+>	9. Large and/or unknown delays in the system actuators, sensors, or rewards."
 
 
 #### ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1701.07274) Li
@@ -2019,8 +2044,16 @@ interesting recent papers:
   - `video` ["Counterfactual Evaluation and Learning for Search, Recommendation and Ad Placement"](http://www.cs.cornell.edu/~adith/CfactSIGIR2016/) tutorial by Adith Swaminathan and Thorsten Joachims
 
 
+#### ["Top-K Off-Policy Correction for a REINFORCE Recommender System"](https://arxiv.org/abs/1812.02353) Chen, Beutel, Covington, Jain, Belletti, Chi
+  `YouTube`
+>	"Industrial recommender systems deal with extremely large action spaces – many millions of items to recommend. Moreover, they need to serve billions of users, who are unique at any point in time, making a complex user state space. Luckily, huge quantities of logged implicit feedback (e.g., user clicks, dwell time) are available for learning. Learning from the logged feedback is however subject to biases caused by only observing feedback on recommendations selected by the previous versions of the recommender. In this work, we present a general recipe of addressing such biases in a production top-K recommender system at YouTube, built with a policy-gradient-based algorithm, i.e. REINFORCE. The contributions of the paper are: (1) scaling REINFORCE to a production recommender system with an action space on the orders of millions; (2) applying off-policy correction to address data biases in learning from logged feedback collected from multiple behavior policies; (3) proposing a novel top-K off-policy correction to account for our policy recommending multiple items at a time; (4) showcasing the value of exploration. We demonstrate the efficacy of our approaches through a series of simulations and multiple live experiments on YouTube."
+
+  - `video` <https://youtube.com/watch?v=HEqQ2_1XRTs> (Chen)
+  - `press` <https://nytimes.com/interactive/2019/06/08/technology/youtube-radical.html>
+
+
 #### ["Reinforcement Learning for Slate-based Recommender Systems: A Tractable Decomposition and Practical Methodology"](https://arxiv.org/abs/1905.12767) Ie et al.
-  `SLATEQ` `IJCAI-2019`
+  `SLATEQ` `YouTube` `IJCAI-2019`
 >	"Most practical recommender systems focus on estimating immediate user engagement without considering the long-term effects of recommendations on user behavior. Reinforcement learning (RL) methods offer the potential to optimize recommendations for long-term user engagement. However, since users are often presented with slates of multiple items - which may have interacting effects on user choice - methods are required to deal with the combinatorics of the RL action space. In this work, we address the challenge of making slate-based recommendations to optimize long-term value using RL. Our contributions are three-fold. (i) We develop SLATEQ, a decomposition of value-based temporal-difference and Q-learning that renders RL tractable with slates. Under mild assumptions on user choice behavior, we show that the long-term value (LTV) of a slate can be decomposed into a tractable function of its component item-wise LTVs. (ii) We outline a methodology that leverages existing myopic learning-based recommenders to quickly develop a recommender that handles LTV. (iii) We demonstrate our methods in simulation, and validate the scalability of decomposed TD-learning using SLATEQ in live experiments on YouTube."
 
   - `video` <http://www.fields.utoronto.ca/video-archive/2019/02/2509-19619> (41:12) (Boutilier)
@@ -2690,6 +2723,22 @@ interesting recent papers:
 ### interesting papers - model-based methods
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-based-methods)
+
+
+#### ["Benchmarking Model-Based Reinforcement Learning"](https://arxiv.org/abs/1907.02057) Wang et al.
+>	"Model-based reinforcement learning is widely seen as having the potential to be significantly more sample efficient than model-free RL. However, research in model-based RL has not been very standardized. It is fairly common for authors to experiment with self-designed environments, and there are several separate lines of research, which are sometimes closed-sourced or not reproducible. Accordingly, it is an open question how these various existing MBRL algorithms perform relative to each other. To facilitate research in MBRL, in this paper we gather a wide collection of MBRL algorithms and propose over 18 benchmarking environments specially designed for MBRL. We benchmark these algorithms with unified problem settings, including noisy environments. Beyond cataloguing performance, we explore and unify the underlying algorithmic differences across MBRL algorithms. We characterize three key research challenges for future MBRL research: the dynamics bottleneck, the planning horizon dilemma, and the early-termination dilemma."
+
+>	"We benchmark the performance of a wide collection of existing MBRL algorithms, evaluating their sample efficiency, asymptotic performance and robustness. Across this very substantial benchmarking, there is no clear consistent best MBRL algorithm, suggesting lots of opportunities for future work bringing together the strengths of different approaches."
+
+>	"Benchmarked MBRL algorithms are divided into: 1) Dyna-style Algorithms (Model-Ensemble Trust-Region Policy Optimization (ME-TRPO)), Stochastic Lower Bound Optimization (SLBO), Model-Based Meta-Policy-Optimization ((MB-MPO)), 2) Policy Search with Backpropagation through Time (Probabilistic Inference for Learning Control (PILCO), Iterative Linear Quadratic-Gaussian (iLQG), Guided Policy Search (GPS), Stochastic Value Gradients (SVG)), and 3) Shooting Algorithms (Random Shooting (RS), Mode-Free Model-Based (MB-MF), Probabilistic Ensembles with Trajectory Sampling (PETS))."
+
+>	"In the Dyna algorithm, training iterates between two steps. First, using the current policy, data is gathered from interaction with the environment and then used to learn the dynamics model. Second, the policy is improved with imagined data generated by the learned model. This class of algorithms learn policies using model-free algorithms with rich imaginary experience without interaction with the real environment."  
+>	"Contrary to Dyna-style algorithms, where the learned dynamics models are used to provide imagined data, policy search with backpropagation through time exploits the model derivatives. Consequently, these algorithms are able to compute the analytic gradient of the RL objective with respect to the policy, and improve the policy accordingly."  
+>	"Shooting Algorithms provide a way to approximately solve the receding horizon problem posed in model predictive control when dealing with non-linear dynamics and non-convex reward functions. Their popularity has increased with the use of neural networks for modelling dynamics."  
+
+>	"Based on the empirical evaluation, we propose three main causes that stagnate the performance of model-based methods: 1) Dynamics bottleneck: algorithms with learned dynamics are stuck at performance local minima significantly worse than using ground-truth dynamics, i.e. the performance does not increase when more data is collected. 2) Planning horizon dilemma: while increasing the planning horizon provides more accurate reward estimation, it can result in performance drops due to the curse of dimensionality and modelling errors. 3) Early termination dilemma: early termination is commonly used in MFRL for more directed exploration, to achieve faster learning. However, similar performance gain are not yet observed in MBRL algorithms, which limits their effectiveness in complex environments."
+
+  - <http://www.cs.toronto.edu/~tingwuwang/mbrl.html>
 
 
 #### ["On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models"](http://arxiv.org/abs/1511.09249) Schmidhuber
@@ -3367,23 +3416,6 @@ interesting recent papers:
   - `video` <https://video.seas.harvard.edu/media/ME+Sergey+Levine+2015+-04-01/1_gqqp9r3o/23375211> (Levine)
   - `video` <http://youtube.com/watch?v=xMHjkZBvnfU> (Abbeel)
   - `code` <http://rll.berkeley.edu/gps/>
-
-
-#### ["Learning Deep Neural Network Policies with Continuous Memory States"](http://arxiv.org/abs/1507.01273) Zhang, Levine, McCarthy, Finn, Abbeel
->	"Policy learning for partially observed control tasks requires policies that can remember salient information from past observations. In this paper, we present a method for learning policies with internal memory for high-dimensional, continuous systems, such as robotic manipulators. Our approach consists of augmenting the state and action space of the system with continuous-valued memory states that the policy can read from and write to. Learning general-purpose policies with this type of memory representation directly is difficult, because the policy must automatically figure out the most salient information to memorize at each time step. We show that, by decomposing this policy search problem into a trajectory optimization phase and a supervised learning phase through a method called guided policy search, we can acquire policies with effective memorization and recall strategies. Intuitively, the trajectory optimization phase chooses the values of the memory states that will make it easier for the policy to produce the right action in future states, while the supervised learning phase encourages the policy to use memorization actions to produce those memory states. We evaluate our method on tasks involving continuous control in manipulation and navigation settings, and show that our method can learn complex policies that successfully complete a range of tasks that require memory."
-
->	"Our experimental results show that our method can be used to learn a variety of tasks involving continuous control in manipulation and navigation settings. In direct comparisons, we find that our approach outperforms a method where the neural network in guided policy search is na¨ıvely replaced with a recurrent network using backpropagation through time, as well as a purely feedforward policy with no memory."
-
->	"While specialized RNN representations such as LSTMs or GRUs can mitigate these issues, our experiments show that our guided policy search algorithm with memory states can produce more effective policies than backpropagation through time with LSTMs."
-
->	"Previous work has only applied guided policy search to training reactive feedforward policies, since the algorithm assumes that the policy is Markovian. We modify the BADMM-based guided policy search method to handle continuous memory states. The memory states are added to the state of the system, and the policy is tasked both with choosing the action and modifying the memory states. Although the resulting policy can be viewed as an RNN, we do not need to perform backpropagation through time to train the recurrent connections inside the policy. Instead, the memory states are optimized by the trajectory optimization algorithm, which intuitively seeks to set the memory states to values that will allow the policy to take the appropriate action at each time step, and the policy then attempts to mimic this behavior in the supervised learning phase."
-
->	"We presented a method for training policies for continuous control tasks that require memory. Our method consists of augmenting the state space with memory states, which the policy can choose to read and write as necessary. The resulting augmented control problem is solved using guided policy search, which uses simple trajectory-centric reinforcement learning algorithms to optimize trajectories from several initial states, and then uses these trajectories to generate a training set that can be used to optimize the policy with supervised learning. In the augmented state space, the policy is purely reactive, which means that policy training does not require backpropagating the gradient through time. However, when viewed together with the memory states, the policy is endowed with memory, and can be regarded as a recurrent neural network. Our experimental results show that our method can be used to learn policies for a variety of simulated robotic tasks that require maintaining internal memory to succeed. Part of the motivation for our approach came from the observation that even fully feed-forward neural network policies could often complete tricky tasks that seemed to require memory by using the physical state of the robot to “store” information, similarly to how a person might “remember” a number while counting by using their fingers. In our approach, we exploit this capability of reactive feedforward policies by providing extra state variables that do not have a physical analog, and exist only for the sake of memory."
-
->	"One interesting direction for follow-up work is to apply our approach for training recurrent networks for general supervised learning tasks, rather than just robotic control. In this case, the memory state comprises the entire state of the system, and the cost function is simply the supervised learning loss. Since the hidden memory state activations are optimized separately from the network weights, such an approach could in principle be more effective at training networks that perform complex reasoning over temporally extended intervals. Furthermore, since our method trains stochastic policies, it would also be able to train stochastic recurrent neural networks, where the transition dynamics are non-deterministic. These types of networks are typically quite challenging to train, and exploring this further is an exciting direction for future work."
-
-  - <http://rll.berkeley.edu/gpsrnn/> (demo)
-  - `slides` <http://thespermwhale.com/jaseweston/ram/slides/session4/ram_talk_zhang_marvin.pdf>
 
 
 

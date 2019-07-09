@@ -397,11 +397,13 @@
   - ["Importance Weighted Autoencoders"](http://artem.sobolev.name/posts/2016-07-14-neural-variational-importance-weighted-autoencoders.html)  
 
   ["Variational Inference: A Review for Statisticians"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#variational-inference-a-review-for-statisticians-blei-kucukelbir-mcauliffe) by Blei et al. `paper` `summary`  
+  ["Advances in Variational Inference"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#advances-in-variational-inference-zhang-butepage-kjellstrom-mandt) by Zhang et al. `paper` `summary`  
   ["Variational Inference"](https://www.cs.princeton.edu/courses/archive/fall11/cos597C/lectures/variational-inference-i.pdf) by David Blei `paper`  
   ["An Introduction to Variational Methods for Graphical Model"](https://www.cs.berkeley.edu/~jordan/papers/variational-intro.pdf) by Jordan et al. `paper`  
 
 ----
 
+  "Variational Inference: Foundations and Innovations" by David Blei ([[1]](https://youtube.com/watch?v=DaqNNLidswA), [[2]](https://youtube.com/watch?v=Wd7R_YX4PcQ)) `video`  
   ["Variational Inference: Foundations and Innovations"](https://youtube.com/watch?v=Dv86zdWjJKQ) by David Blei `video`  
   ["Variational Inference: Foundations and Modern Methods"](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods)
 	tutorial by David Blei, Rajesh Ranganath, Shakir Mohamed `video` ([slides](http://www.cs.columbia.edu/~blei/talks/2016_NIPS_VI_tutorial.pdf))  
@@ -479,17 +481,6 @@
 #### likelihood ratio estimator for gradient of ELBO
 
   [log derivative trick](http://blog.shakirm.com/2015/11/machine-learning-trick-of-the-day-5-log-derivative-trick/)
-
-----
-#### stochastic computation graphs
-
-  ["Stochastic Computation Graphs"](https://youtube.com/watch?v=_JTu50iDhkA) by Artem Sobolev ([slides](http://slides.com/asobolev/stochastic-computation-graphs#/))  
-  ["Reparametrization Trick: Revolution in Stochastic Computational Graphs"](https://youtu.be/0q5p7xP4cdA?t=5h3m29s)
-	by Dmitry Vetrov `video` `in russian` ([slides](https://sdsj.ru/slides/Vetrov.pdf) `in english`)  
-
-  ["Stochastic Computation Graphs"](http://artem.sobolev.name/tags/stochastic%20computation%20graphs%20series.html) by Artem Sobolev:  
-  - ["Continuous Case"](http://artem.sobolev.name/posts/2017-09-10-stochastic-computation-graphs-continuous-case.html)  
-  - ["Discrete Relaxations"](http://artem.sobolev.name/posts/2017-10-28-stochastic-computation-graphs-discrete-relaxations.html)  
 
 
 
