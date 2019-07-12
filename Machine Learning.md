@@ -135,6 +135,7 @@
 
 #### conferences
 
+  - RLDM 2019 [[notes](https://david-abel.github.io/notes/rldm_2019.pdf)]
   - ICML 2019 [[videos](https://icml.cc/Conferences/2019/Videos)] [[videos](https://facebook.com/pg/icml.imls/videos)] [[videos](https://slideslive.com/icml)] [[notes](https://david-abel.github.io/notes/icml_2019.pdf)]
   - ICLR 2019 [[videos](https://facebook.com/pg/iclr.cc/videos)] [[videos](https://slideslive.com/iclr)] [[notes](https://david-abel.github.io/notes/iclr_2019.pdf)]
   - NeurIPS 2018 [[videos](https://neurips.cc/Conferences/2018/Videos)] [[videos](https://facebook.com/pg/nipsfoundation/videos)]

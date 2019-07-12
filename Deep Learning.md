@@ -469,7 +469,7 @@
 
   ["Deep Generative Models"](http://www.deeplearningbook.org/contents/generative_models.html) chapter (section 20.10.4) of "Deep Learning" book by Goodfellow, Bengio, Courville
 
-  ["The GAN Landscape: Losses, Architectures, Regularization, and Normalization"](https://arxiv.org/abs/1807.04720) by Kurach et al. `paper`  
+  ["The GAN Landscape: Losses, Architectures, Regularization, and Normalization"](https://arxiv.org/abs/1807.04720) by Kurach et al. `paper`
 
 ----
 
@@ -846,7 +846,7 @@
   [overview](http://distill.pub/2016/augmented-rnns/) by Chris Olah and Shan Carter  
   [overview](http://thespermwhale.com/jaseweston/ram/slides/session2/Smooth%20Operators-NIPS2015.pptx) by Alex Graves  
 
-  ["Attention Is All You Need"](#attention-is-all-you-need-vaswani-et-al) by Vaswani et al. `paper` `summary` *(Transformer)*
+  [**"Attention Is All You Need"**](#attention-is-all-you-need-vaswani-et-al) by Vaswani et al. `paper` `summary` *(Transformer)*
 
 ----
 
@@ -1847,6 +1847,8 @@ Yoshua Bengio:
   - `post` <http://blog.evjang.com/2016/06/generative-adversarial-nets-in.html>
   - `post` <https://oshearesearch.com/index.php/2016/07/01/mnist-generative-adversarial-model-in-keras/>
   - `code` <https://github.com/wiseodd/generative-models/tree/master/GAN>
+  - `paper` ["Unsupervised Minimax: Adversarial Curiosity, Generative Adversarial Networks, and Predictability Minimization"](https://arxiv.org/abs/1906.04493) by Schmidhuber
+  - `post` <https://web.archive.org/web/20120312111546/http://yehar.com:80/blog/?p=167>
 
 
 #### ["Adversarial Autoencoders"](https://arxiv.org/abs/1511.05644) Makhzani, Shlens, Jaitly, Goodfellow
@@ -2292,6 +2294,7 @@ Yoshua Bengio:
 
 >	"The other thing that motivated capsules was coordinate frames. So when humans do visual, they're always using coordinate frames. If they impose the wrong coordinate frame on an object, they don't even recognize the object. So I'll give you a little task: Imagine a tetrahedron; it’s got a triangular base and three triangular faces, all equilateral triangles. Easy to imagine, right? Now imagine slicing it with a plane, so you get a square cross section. That's not so easy, right? Every time you slice, you get a triangle. It’s not obvious how you get a square. It's not at all obvious. Okay, but I'll give you the same shape described differently. I need your pen. Imagine the shape you get if you take a pen like that, another pen at right angles like this, and you connect all points on this pen to all points on this pen. That's a solid tetrahedron. OK, you're seeing it relative to a different coordinate frame, where the edges of the tetrahedron, these two line up with the coordinate frame. And for this, if you think of the tetrahedron that way, it's pretty obvious that at the top you've got a long rectangle this way, at the bottom we got a long rectangle that way, and there’s a square in the middle. So now it's pretty obvious how you can slice it to get a square, but only if you think of it with that coordinate frame. So it's obvious that for humans, coordinate frames are very important for perception."
 
+  - <https://github.com/sekwiatkowski/awesome-capsule-networks>
   - `video` <https://youtube.com/watch?v=gq-7HgzfDBM>
   - `video` <https://facebook.com/nipsfoundation/videos/1553634558061111?t=5824> (Frosst)
   - `video` ["What is wrong with convolutional neural nets?"](https://youtube.com/watch?v=Mqt8fs6ZbHk) (Hinton)
@@ -2381,6 +2384,7 @@ Yoshua Bengio:
 
 
 #### ["Connectionist Temporal Classification: Labelling Unsegmented Sequence Data with Recurrent Neural Networks"](https://www.cs.toronto.edu/~graves/icml_2006.pdf) Graves, Fernandez, Gomez, Schmidhuber
+  `CTC`
 >	"Many real-world sequence learning tasks require the prediction of sequences of labels from noisy, unsegmented input data. In speech recognition, for example, an acoustic signal is transcribed into words or sub-word units. Recurrent neural networks are powerful sequence learners that would seem well suited to such tasks. However, because they require pre-segmented training data, and post-processing to transform their outputs into label sequences, their applicability has so far been limited. This paper presents a novel method for training RNNs to label unsegmented sequences directly, thereby solving both problems. An experiment on the TIMIT speech corpus demonstrates its advantages over both a baseline HMM and a hybrid HMM-RNN."
 
 ----
@@ -2391,6 +2395,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=UMxvZ9qHwJs> (Gharbieh)
   - `post` <https://distill.pub/2017/ctc/>
   - `post` <https://machinethoughts.wordpress.com/2017/11/02/ctc-training-latent-discrete-sequential-decisions-without-rl/>
+  - `paper` ["Supervised Sequence Labelling with Recurrent Neural Networks"](https://www.cs.toronto.edu/~graves/phd.pdf) by Graves
 
 
 #### ["Sequence to Sequence Learning with Neural Networks"](http://arxiv.org/abs/1409.3215) Sutskever, Vinyals, Le

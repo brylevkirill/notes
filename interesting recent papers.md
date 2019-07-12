@@ -696,6 +696,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `CapsNet` `information routing`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#stacked-capsule-autoencoders-kosiorek-sabour-teh-hinton>
 
+#### ["DARCCC: Detecting Adversaries by Reconstruction from Class Conditional Capsules"](https://arxiv.org/abs/1811.06969) Frosst, Sabour, Hinton
+  `CapsNet` `information routing`
+>	"We present a simple technique that allows capsule models to detect adversarial images. In addition to being trained to classify images, the capsule model is trained to reconstruct the images from the pose parameters and identity of the correct top-level capsule. Adversarial images do not look like a typical member of the predicted class and they have much larger reconstruction errors when the reconstruction is produced from the top-level capsule for that class. We show that setting a threshold on the l2 distance between the input image and its reconstruction from the winning capsule is very effective at detecting adversarial images for three different datasets. The same technique works quite well for CNNs that have been trained to reconstruct the image from all or part of the last hidden layer before the softmax. We then explore a stronger, white-box attack that takes the reconstruction error into account. This attack is able to fool our detection technique but in order to make the model change its prediction to another class, the attack must typically make the "adversarial" image resemble images of the other class."
+
 #### ["Decoupled Neural Interfaces using Synthetic Gradients"](http://arxiv.org/abs/1608.05343) Jaderberg, Czarnecki, Osindero, Vinyals, Graves, Silver, Kavukcuoglu
   `information routing`
 >	"We incorporate a learnt model of error gradients, which means we can update networks without full backpropagation. We show how this can be applied to feed-forward networks which allows every layer to be trained asynchronously, to RNNs which extends the time over which models can remember, and to multi-network systems to allow communication."  
@@ -1823,6 +1827,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Taming the Noise in Reinforcement Learning via Soft Updates"](https://arxiv.org/abs/1512.08562) Fox, Pakman, Tishby
   `G-learning` `value-based`
 >	"Model-free reinforcement learning algorithms, such as Q-learning, perform poorly in the early stages of learning in noisy environments, because much effort is spent unlearning biased estimates of the state-action value function. The bias results from selecting, among several noisy estimates, the apparent optimum, which may actually be suboptimal. We propose G-learning, a new off-policy learning algorithm that regularizes the value estimates by penalizing deterministic policies in the beginning of the learning process. We show that this method reduces the bias of the value-function estimation, leading to faster convergence to the optimal value and the optimal policy. The stochastic nature of G-learning also makes it avoid some exploration costs, a property usually attributed only to on-policy algorithms."  
+>	"G-learning penalizes KL-divergence from a simple uniform distribution in order to cope with overestimation of Q-values."  
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Taming_the_Noise_in_Reinforcement_Learning_via_Soft_Updates.md>
   - `code` <https://github.com/noahgolmant/simpledgn>
 
@@ -3426,6 +3431,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"These works raise questions of (a) whether new models can be designed specifically to synthesize interpretable source code that may contain looping and branching structures, and (b) whether searching over program space using techniques developed for training deep neural networks is a useful alternative to the combinatorial search methods used in traditional IPS. In this work, we make several contributions in both of these directions."  
 >	"Shows that differentiable interpreter-based program induction is inferior to discrete search-based techniques used by the programming languages community. We are then left with the question of how to make progress on program induction using machine learning techniques."  
   - `video` <https://youtu.be/vzDuVhFMB9Q?t=2m40s> (Gaunt)
+  - `post` <https://dselsam.github.io/the-terpret-problem>
   - `code` <https://github.com/51alg/TerpreT>
 
 #### ["Programming with a Differentiable Forth Interpreter"](http://arxiv.org/abs/1605.06640) Bošnjak, Rocktaschel, Naradowsky, Riedel

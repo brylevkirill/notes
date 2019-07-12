@@ -770,6 +770,7 @@
   - *information gain motivation*  
 	reward for decrease of uncertainty in knowledge that agent has of environment after event has happened  
 
+	["Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids"](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#curiosity-driven-reinforcement-learning-for-motion-planning-on-humanoids-frank-leitner-stollenga-forster-schmidhuber) by Frank et al. `paper` `summary`  
 	["An Information-theoretic Approach to Curiosity-driven Reinforcement Learning"](#an-information-theoretic-approach-to-curiosity-driven-reinforcement-learning-still-precup) by Still and Precup `paper` `summary`  
 	["VIME: Variational Information Maximizing Exploration"](#vime-variational-information-maximizing-exploration-houthooft-chen-duan-schulman-turck-abbeel) by Houthooft et al. `paper` `summary`  
 	["Automated Curriculum Learning for Neural Networks"](#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper` `summary`  
@@ -1942,7 +1943,7 @@ interesting recent papers:
 >	"It is clear that Giraffe’s evaluation function has at least comparable positional understanding compared to evaluation functions of top engines in the world, which is remarkable because their evaluation functions are all carefully hand-designed behemoths with hundreds of parameters that have been tuned both manually and automatically over several years, and many of them have been worked on by human grandmasters. The test suite likely under-estimates the positional understanding of Giraffe compared to other engines, because most of the themes tested by the test suite are generally well-understood concepts in computer chess that are implemented by many engines, and since the test suite is famous, it is likely that at least some of the engines have been tuned specifically against the test suite. Since Giraffe discovered all the evaluation features through self-play, it is likely that it knows about patterns that have not yet been studied by humans, and hence not included in the test suite. As far as we are aware, this is the first successful attempt at using machine learning to create a chess evaluation function from self-play, including automatic feature extraction (many previous attempts are weight-tuning for hand-designed features), starting from minimal hand-coded knowledge, and achieving comparable performance to state-of-the-art expert-designed evaluation functions."
 
   - `code` <https://bitbucket.org/waterreaction/giraffe>
-  - `paper` ["KnightCap: A Chess Program that Learns by Combining TD(lambda) with Game-tree Search"](https://arxiv.org/abs/cs/9901002) (TDLeaf(lambda)) by Baxter, Tridgell, Weaver
+  - `paper` ["KnightCap: A Chess Program that Learns by Combining TD(lambda) with Game-tree Search"](https://arxiv.org/abs/cs/9901002) by Baxter, Tridgell, Weaver *(TDLeaf(lambda))*
 
 
 #### ["Bootstrapping from Game Tree Search"](https://papers.nips.cc/paper/3722-bootstrapping-from-game-tree-search) Veness, Silver, Uther, Blair
