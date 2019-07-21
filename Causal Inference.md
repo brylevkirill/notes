@@ -62,14 +62,14 @@
   ["The New Science of Cause and Effect"](https://youtube.com/watch?v=ZaPV1OSEpHw) by Judea Pearl `video`  
   ["The Mathematics of Causal Inference, with Reflections on Machine Learning and the Logic of Science"](https://youtube.com/watch?v=zHjdd--W6o4) by Judea Pearl `video`  
 
+  ["Causal Data Science: A General Framework for Data Fusion and Causal Inference"](http://www.cs.columbia.edu/streaming/2019-Spr/elias_bareinboim.mp4) by Elias Bareinboim `video`  
+  ["Causal Reinforcement Learning"](https://youtube.com/watch?v=bwz3NpVfz6k) by Elias Bareinboim `video`  
+
   ["Learning Causal Mechanisms"](https://facebook.com/iclr.cc/videos/2123421684353553?t=294) by Bernhard Scholkopf `video`  
   ["The Role of Causality for Interpretability"](https://vimeo.com/252188186) by Bernhard Scholkopf `video`  
   ["Causal Learning"](https://vimeo.com/238274659#t=13m22s) by Bernhard Scholkopf `video`  
   ["Toward Causal Machine Learning"](https://youtube.com/watch?v=ooeRlw3U2zU) by Bernhard Scholkopf `video`  
   ["Statistical and Causal Approaches to Machine Learning"](https://youtu.be/ek9jwRA2Jio?t=26m) by Bernhard Scholkopf `video`  
-
-  ["Causal Data Science: A General Framework for Data Fusion and Causal Inference"](http://www.cs.columbia.edu/streaming/2019-Spr/elias_bareinboim.mp4) by Elias Bareinboim `video`  
-  ["Causal Reinforcement Learning"](https://youtube.com/watch?v=bwz3NpVfz6k) by Elias Bareinboim `video`  
 
   ["The Missing Signal"](https://youtube.com/watch?v=DfJeaa--xO0) by Leon Bottou `video`  
   ["Learning Representations Using Causal Invariance"](https://facebook.com/722677142/posts/10155953319752143?t=714) by Leon Bottou `video`  
@@ -136,9 +136,28 @@
 
 ----
 
-  "Link between causality and probability:  
-  1) if X and Y are statistically dependent, then there is a Z causally influencing both.  
-  2) Z screens X and Y from each other (given Z, the observables X and Y become independent)."  
+  tuple (d1, d2, d4, d4) - (population, observational/experimental, sampling, measure)  
+
+  (Los Angeles, experimental with randomized Z1, selection on Age, (X1, Z1, W, M, Y1))  
+  (New York, observational, selection on SES, (X1, X2, Z1, N, Y2))  
+  (Texas, experimental with randomized Z2, (X2, Z1, W, L, M, Y1))  
+
+  *statistics - descriptive*:  
+	(d1, samples(observations), d3, d4) -> (d1, distribution(observations), d3, d4)  *(Bernulli, Poisson, Kolmogorov)*  
+  *statistics - experimental*:  
+	(d1, samples(do(X)), d3, d4) -> (d1, distribution(do(X)), d3, d4)  *(Fisher, Cox, Goodman)*  
+  *causal inference from observational studies*:  
+	(d1, distribution(observations), d3, d4) -> (d1, distribution(do(X)), d3, d4)  *(Rubin, Robins, Dawid, Pearl)*  
+  *experimental inference (generalized instrumental variables)*:  
+	(d1, distribution(do(Z)), d3, d4) -> (d1, distribution(do(X)), d3, d4)  *(P. Wright, S. Wright)*  
+  *sampling selection bias*:  
+	(d1, d2, select(Age), d4) -> (d1, d2, {}, d4)  *(Heckman)*  
+  *transportability (external validity)*:  
+	(bonobos, d2, d3, d4) -> (humans, d2, d3, d4)  *(Shadish, Cook, Campbell)*  
+
+  [*(Elias Bareinboim)*](http://www.cs.columbia.edu/streaming/2019-Spr/elias_bareinboim.mp4)
+
+----
 
   "Under probabilistic interpretation of causation from Pearl, the causal structure underlying a set of random variables X=(X1, ..., Xd), with joint distribution P, is often described in terms of a Directed Acyclic Graph, denoted by G = (V, E). In this graph, each vertex Vi ∈ V is associated to the random variable Xi ∈ X, and an edge Eji ∈ E from Vj to Vi denotes the causal relationship “Xi ← Xj”. More specifically, these causal relationships are defined by a structural equation model: each Xi ← fi(Pa(Xi), Ni), where fi is a function, Pa(Xi) is the parental set of Vi ∈ V, and Ni is some independent noise variable. Then, causal inference is the task of recovering G from S ∼ P^n."
 

@@ -82,7 +82,7 @@
 
 ----
 
-  ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1810.06339) by Yuxi Li `book`
+  ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1810.06339) by Yuxi Li `book` ([post](https://medium.com/@yuxili/rl-applications-73ef685c07eb))
 
   [**other applications**](https://yadi.sk/d/tiaE7sdi3WEhDS)
 
@@ -186,12 +186,17 @@
 	["The State of Techniques for Solving Large Imperfect-Information Games"](https://youtube.com/watch?v=Gz026reyVwc) by Tuomas Sandholm `video`  
 	["The State of Techniques for Solving Large Imperfect-Information Games, Including Poker"](https://youtube.com/watch?v=QgCxCeoW5JI) by Tuomas Sandholm `video`  
 
-	[discussion](https://youtube.com/watch?v=b7bStIQovcY) with Tuomas Sandholm `video`  
-	[discussion](https://youtube.com/watch?v=ZlPPp_xokd4) with Tuomas Sandholm `audio`  
-	[discussion](https://youtube.com/watch?v=wKey6eKccYM) with Noam Brown `audio`  
-	[discussion](https://reddit.com/r/MachineLearning/comments/7jn12v/ama_we_are_noam_brown_and_professor_tuomas) with Noam Brown and Tuomas Sandholm  
+	[Libratus discussion](https://youtube.com/watch?v=b7bStIQovcY) with Tuomas Sandholm `video`  
+	[Libratus discussion](https://youtube.com/watch?v=ZlPPp_xokd4) with Tuomas Sandholm `audio`  
+	[Libratus discussion](https://youtube.com/watch?v=wKey6eKccYM) with Noam Brown `audio`  
+	[Libratus discussion](https://reddit.com/r/MachineLearning/comments/7jn12v/ama_we_are_noam_brown_and_professor_tuomas) with Noam Brown and Tuomas Sandholm  
 
 	[Libratus vs top players highlights](https://youtube.com/watch?v=crgmYTMfrSc) `video`
+
+	[Pluribus overview](https://ai.facebook.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker)  
+	[Pluribus "Science" magazine](https://science.sciencemag.org/content/early/2019/07/10/science.aay2400) `paper`  
+
+	[Pluribus discussion](https://reddit.com/r/MachineLearning/comments/ceece3/ama_we_are_noam_brown_and_tuomas_sandholm) with Noam Brown and Tuomas Sandholm
 
 ----
   - *Poker*  
@@ -659,6 +664,8 @@
 
   [overview](http://videolectures.net/DLRLsummerschool2018_bowling_multi_agent_RL) by Michael Bowling `video`  
   [overview](http://youtube.com/watch?v=hGEz4Aumd1U) by Arsenii Ashukha `video`  
+
+  [overview](http://mlanctot.info/files/papers/Lanctot_MARL_RLSS2019_Lille.pdf) by Marc Lanctot `slides`
 
   [**recent interesting papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---multi-agent)
 

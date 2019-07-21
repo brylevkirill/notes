@@ -30,6 +30,8 @@
   ["Deep Learning for Recommender Systems"](https://youtube.com/watch?v=KZ7bcfYGuxw) by Alexandros Karatzoglou `video`  
   ["Deep Learning for Personalized Search and Recommender Systems"](https://youtube.com/watch?v=0DYQzZp68ok) by Zhang, Le, Fawaz, Venkataraman `video`  
 
+  ["Recent Trends in Personalization: A Netflix Perspective"](https://slideslive.com/38917692/recent-trends-in-personalization-a-netflix-perspective) by Justin Basilico `video`
+
   ["Billion-scale Recommender System"](https://youtube.com/watch?v=-lNF8QRtEL4) by Ivan Lobov `video`
 
   [ACM RecSys](https://youtube.com/channel/UC2nEn-yNA1BtdDNWziphPGA) conference `video`

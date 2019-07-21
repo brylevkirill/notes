@@ -20,17 +20,15 @@
 ---
 ### overview
 
-  ["The Future of Artificial Intelligence Belongs to Search and Learning"](http://www.fields.utoronto.ca/video-archive/2016/10/2267-16158) by Richard Sutton `video`  
   ["Compression Progress: The Algorithmic Principle Behind Curiosity and Creativity"](https://youtube.com/watch?v=h7F5sCLIbKQ) by Juergen Schmidhuber `video`  
+  ["The Future of Artificial Intelligence Belongs to Search and Learning"](http://www.fields.utoronto.ca/video-archive/2016/10/2267-16158) by Richard Sutton `video`  
   ["Deep Learning and AI"](https://youtube.com/watch?v=izrG86jycck) by Geoffrey Hinton `video`  
   ["Building Machines That See, Learn and Think Like People"](https://youtube.com/watch?v=7ROelYvo8f0) by Joshua Tenenbaum `video`  
   ["AI: A Return To Meaning"](https://youtube.com/watch?v=1n-cwezu8j4) by David Ferucci `video`  
-  ["On Thermodynamics and the Future of Computing"](https://ieeetv.ieee.org/conference-highlights/on-thermodynamics-and-the-future-of-computing-ieee-rebooting-computing-2017) by Todd Hylton `video`  
 
 ----
 
-  ["Learning in Brains and Machines"](http://blog.shakirm.com/category/computational-and-biological-learning) by Shakir Mohamed  
-  ["The Bitter Lesson"](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) by Rich Sutton ([talk](http://www.fields.utoronto.ca/video-archive/2016/10/2267-16158) `video`)  
+  ["Learning in Brains and Machines"](http://blog.shakirm.com/category/computational-and-biological-learning) by Shakir Mohamed
 
 ----
 
@@ -303,30 +301,11 @@
 
 ----
 
-  "Intrinsic motivation objective for an artificially curious/creative agent is to maximize the amount of model-learning progress, measured as the difference in compression of agent's experience before and after learning."
-
-  "What experiments should an agent’s reinforcement learning controller, C, conduct to generate data that quickly improves agent's adaptive, predictive world model, M, which in turn can help to plan ahead? The theory says: use the learning progress of M (typically compression progress and speed-ups) as the intrinsic reward or fun for C. This motivates C to create action sequences (experiments) such that M can quickly discover new, previously unknown regularities."
-
-  "Humans, even as infants, invent their own tasks in a curious and creative fashion, continually increasing their problem solving repertoire even without an external reward or teacher. They seem to get intrinsic reward for creating experiments leading to observations that obey a previously unknown law that allows for better compression of the observations—corresponding to the discovery of a temporarily interesting, subjectively novel regularity. For example, a video of 100 falling apples can be greatly compressed via predictive coding once the law of gravity is discovered. Likewise, the video-like image sequence perceived while moving through an office can be greatly compressed by constructing an internal 3D model of the office space. The 3D model allows for re-computing the entire high-resolution video from a compact sequence of very low-dimensional eye coordinates and eye directions. The model itself can be specified by far fewer bits of information than needed to store the raw pixel data of a long video. Even if the 3D model is not precise, only relatively few extra bits will be required to encode the observed deviations from the predictions of the model. Even mirror neurons are easily explained as by-products of history compression. They fire both when an animal acts and when the animal observes the same action performed by another. Due to mutual algorithmic information shared by perceptions of similar actions performed by various animals, efficient predictive coding profits from using the same feature detectors (neurons) to encode the shared information, thus saving storage space."
-
-  "In the real world external rewards are rare. Agents using additional intrinsic rewards for model-learning progress will be motivated to learn many useful behaviors even in absence of external rewards, behaviors that lead to predictable or compressible results and thus reflect regularities in the environment, such as repeatable patterns in the world’s reactions to certain action sequences. Often a bias towards exploring previously unknown environmental regularities through artificial curiosity/creativity is a priori desirable because goal-directed learning may greatly profit from it, as behaviors leading to external reward may often be rather easy to compose from previously learnt curiosity-driven behaviors. It may be possible to formally quantify this bias towards novel patterns in form of a mixture-based prior, a weighted sum of probability distributions on sequences of actions and resulting inputs, and derive precise conditions for improved expected external reward intake. Intrinsic reward may be viewed as analogous to a regularizer in supervised learning, where the prior distribution on possible hypotheses greatly influences the most probable interpretation of the data in a Bayesian framework."
-
-  *(Juergen Schmidhuber)*
-
-----
-
-  "To learn as fast as possible about a piece of data, decrease as rapidly as possible the number of bits you need to compress that data. This is exactly how probabilistic models are trained: ∇-log Pr(x)  
-  But what if you can choose which data to observe or even create your own? You should create the data that maximises the decrease in bits - the compression progress - of everything else you and your peers have ever observed. In other words, create the thing that makes the most sense of the world: art, science, music, jokes... Happiness is the first derivative of life!"
-
-  *(Alex Graves)*
-
-----
-
   [overview](https://youtube.com/watch?v=h7F5sCLIbKQ&t=7m12s) by Juergen Schmidhuber `video`  
   [overview](http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/) by Juergen Schmidhuber `video`  
-  [overview](https://youtube.com/watch?v=3FIo6evmweo&t=26m6s) by Juergen Schmidhuber `video`  
   [overview](https://vimeo.com/28759091) by Juergen Schmidhuber `video`  
   [overview](https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber) by Juergen Schmidhuber `video`  
+  [overview](https://youtube.com/watch?v=3FIo6evmweo&t=26m6s) by Juergen Schmidhuber `video`  
 
   ["Toward Intelligent Humanoids"](https://vimeo.com/51011081) demo from Schmidhuber's group `video`
 
@@ -345,6 +324,24 @@
 ----
 
   [**exploration and intrinsic motivation**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#exploration-and-intrinsic-motivation)
+
+----
+
+  "Intrinsic motivation objective for an artificially curious/creative agent is to maximize the amount of model-learning progress, measured as the difference in compression of agent's experience before and after learning."
+
+  "What experiments should an agent’s reinforcement learning controller, C, conduct to generate data that quickly improves agent's adaptive, predictive world model, M, which in turn can help to plan ahead? The theory says: use the learning progress of M (typically compression progress and speed-ups) as the intrinsic reward or fun for C. This motivates C to create action sequences (experiments) such that M can quickly discover new, previously unknown regularities."
+
+  "Humans, even as infants, invent their own tasks in a curious and creative fashion, continually increasing their problem solving repertoire even without an external reward or teacher. They seem to get intrinsic reward for creating experiments leading to observations that obey a previously unknown law that allows for better compression of the observations—corresponding to the discovery of a temporarily interesting, subjectively novel regularity. For example, a video of 100 falling apples can be greatly compressed via predictive coding once the law of gravity is discovered. Likewise, the video-like image sequence perceived while moving through an office can be greatly compressed by constructing an internal 3D model of the office space. The 3D model allows for re-computing the entire high-resolution video from a compact sequence of very low-dimensional eye coordinates and eye directions. The model itself can be specified by far fewer bits of information than needed to store the raw pixel data of a long video. Even if the 3D model is not precise, only relatively few extra bits will be required to encode the observed deviations from the predictions of the model. Even mirror neurons are easily explained as by-products of history compression. They fire both when an animal acts and when the animal observes the same action performed by another. Due to mutual algorithmic information shared by perceptions of similar actions performed by various animals, efficient predictive coding profits from using the same feature detectors (neurons) to encode the shared information, thus saving storage space."
+
+  "In the real world external rewards are rare. Agents using additional intrinsic rewards for model-learning progress will be motivated to learn many useful behaviors even in absence of external rewards, behaviors that lead to predictable or compressible results and thus reflect regularities in the environment, such as repeatable patterns in the world’s reactions to certain action sequences. Often a bias towards exploring previously unknown environmental regularities through artificial curiosity/creativity is a priori desirable because goal-directed learning may greatly profit from it, as behaviors leading to external reward may often be rather easy to compose from previously learnt curiosity-driven behaviors. It may be possible to formally quantify this bias towards novel patterns in form of a mixture-based prior, a weighted sum of probability distributions on sequences of actions and resulting inputs, and derive precise conditions for improved expected external reward intake. Intrinsic reward may be viewed as analogous to a regularizer in supervised learning, where the prior distribution on possible hypotheses greatly influences the most probable interpretation of the data in a Bayesian framework."
+
+  *(Juergen Schmidhuber)*
+
+----
+
+  "To learn as fast as possible about a piece of data, decrease as rapidly as possible the number of bits you need to compress that data. This is exactly how probabilistic models are trained: ∇-log Pr(x). But what if you can choose which data to observe or even create your own? You should create the data that maximises the decrease in bits - the compression progress - of everything else you and your peers have ever observed. In other words, create the thing that makes the most sense of the world: art, science, music, jokes... Happiness is the first derivative of life!"
+
+  *(Alex Graves)*
 
 
 
@@ -386,10 +383,7 @@
 
   [introduction](http://jan.leike.name/AIXI.html) by Jan Leike
 
-  [overview](http://geektimes.ru/post/148002/) by Alexey Potapov `in russian`  
-  [overview](http://geektimes.ru/post/150056/) by Alexey Potapov `in russian`  
-  [overview](http://geektimes.ru/post/150902/) by Alexey Potapov `in russian`  
-  [overview](http://geektimes.ru/post/151838/) by Alexey Potapov `in russian`  
+  overview ([1](http://geektimes.ru/post/148002/), [2](http://geektimes.ru/post/150056/), [3](http://geektimes.ru/post/150902/), [4](http://geektimes.ru/post/151838/)) by Alexey Potapov `in russian`
 
   [book](http://hutter1.net/ai/uaibook.htm) by Marcus Hutter
 

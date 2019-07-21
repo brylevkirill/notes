@@ -161,6 +161,7 @@
   ["Theoretical Deep Learning"](https://github.com/deepmipt/tdl) course from MIPT ([videos](https://youtube.com/playlist?list=PLt1IfGj6-_-dMa3Ff8mwjq1yOGijJ89Wa)) `in russian`  
 
   ["Toward Theoretical Understanding of Deep Learning"](https://facebook.com/icml.imls/videos/428562880991566) by Sanjeev Arora `video`  
+  ["From Classical Statistics to Modern Machine Learning"](https://youtube.com/watch?v=OBCciGnOJVs) by Mikhail Belkin `video`  
   ["Interplay between Optimization and Generalization in Deep Neural Networks"](https://youtube.com/watch?v=cHjI37DsQCQ) by Keerthi Selvaraj `video`  
 
 ----
@@ -681,57 +682,35 @@
 ---
 ### architectures
 
-  ["Deep Architecture Genealogy"](https://github.com/hunkim/deep_architecture_genealogy)  
-  ["The Neural Network Zoo"](http://asimovinstitute.org/neural-network-zoo/)  
-
-----
-
-  "In classification task we want to model probability of a class label Y given some inputs or higher level features X=(X1...Xn).  
-
-  - *fully connected layers*  
-	We can't assume much about the features, and we want to model joint probability of all the features in a sample of X together.  
->	p(X1, X2, ... Xn)  
-
-  - *convolutional layers*  
-	There is locality (or grouping in some sense), so we can model them in "blocks" (sometimes overlapping blocks) independently.  
->	p(X1...Xm-1) * p(Xm-1...Xn) ...  
-
-  - *recurrent layers*  
-	Things are sequential, so we can model conditional on the things we have seen before but it can depend on everything that has come before.  
->	p(Xn | X1...Xn-1) * p(Xn-1 | X1...Xn-2) ...  
-
-  - *Markov assumption*  
-	Things are sequential but only depend on what happened just before. Note that this looks a lot like a certain kind of convolution.  
->	p(Xn | Xn-1) * p(Xn-1 | Xn-2) ...  
-
-  - *bidirectional recurrent layers*  
-	Look into the "past" and "future". This is good for some cases (text translation) but can be bad for others (one-pass generative modeling).  
->	product of p(Xn | X!=n) for all indices in n  
-
-  - *conditioning/attention/loss layers*  
-	There is information here which is important to my task/goal.  
->	p(Y|X) rather than just p(X)
-
-  "Bayes rule: p(Y | X) = p(X | Y) * p(Y) / p(X)  
-  In supervised classification, we basically only care about p(Y | X); p(X) and p(Y) are basically thrown away if we don't know anything about X or Y. Note that we could probably do better if we did assume something about p(X) or P(Y), and that assumption was accurate.  
-  In semi-supervised classification we generally care about both p(Y | X) and p(X) because we exploit p(X) on the way to p(Y | X) since we have way more X samples than known Y samples.  
-  For unsupervised learning p(X) is all we know and usually all we care about, so we can optimize it directly (in general, with certain assumptions).  
-  In many cases we assume no knowledge (aka uninformative priors) for X and Y, i.e. we don't know anything about p(X) and p(Y), so it just ends up approximated as p(Y | X) ~ p(X | Y).  
-  Then we can maximize p(Y | X) (the predictive power of the model) by also maximizing p(X | Y) (probability of the data under its known label). Which is also the same thing as minimizing -log p(X | Y) aka the loss (like binary and categorical cross-entropy for classification).  
-  For unsupervised models we would just minimize the negative log-probability (or just negative probability, though it is harder numerically) by having loss be -log p(X) (like mean squared error such as for autoencoders)."
-
-  *(Kyle Kastner)*
-
-  ["A Statistical View of Deep Learning"](http://blog.shakirm.com/2015/07/a-statistical-view-of-deep-learning-retrospective/) by Shakir Mohamed
-
-----
-
+  - [**stochastic computation graph**](#architectures---stochastic-computation-graph)
   - [**convolutional neural network**](#architectures---convolutional-neural-network)
+  - [**graph neural network**](#architectures---graph-neural-network)
   - [**recurrent neural network**](#architectures---recurrent-neural-network)
   - [**attention**](#architectures---attention)
   - [**compute and memory**](#architectures---compute-and-memory)
   - [**distributed representation**](#architectures---distributed-representation)
-  - [**stochastic computation graph**](#architectures---stochastic-computation-graph)
+
+
+
+---
+### architectures - stochastic computation graph
+
+  ["Monte Carlo Gradient Estimation in Machine Learning"](https://arxiv.org/abs/1906.10652) by Mohamed et al. `paper`
+
+  [**interesting papers - gradient estimation**](#interesting-papers---gradient-estimation)
+
+----
+
+  ["Stochastic Computation Graphs"](http://artem.sobolev.name/tags/stochastic%20computation%20graphs%20series.html) by Artem Sobolev:  
+  - ["Continuous Case"](http://artem.sobolev.name/posts/2017-09-10-stochastic-computation-graphs-continuous-case.html)  
+  - ["Discrete Relaxations"](http://artem.sobolev.name/posts/2017-10-28-stochastic-computation-graphs-discrete-relaxations.html)  
+  - ["Fixing REINFORCE"](http://artem.sobolev.name/posts/2017-11-12-stochastic-computation-graphs-fixing-reinforce.html)  
+
+----
+
+  ["Stochastic Computation Graphs"](https://youtube.com/watch?v=_JTu50iDhkA) by Artem Sobolev ([slides](http://slides.com/asobolev/stochastic-computation-graphs#/))  
+  ["Reparametrization Trick: Revolution in Stochastic Computational Graphs"](https://youtu.be/0q5p7xP4cdA?t=5h3m29s)
+	by Dmitry Vetrov `video` `in russian` ([slides](https://sdsj.ru/slides/Vetrov.pdf) `in english`)  
 
 
 
@@ -754,9 +733,10 @@
   ["CNN Architectures"](https://youtube.com/watch?v=DAOcjicFr1Y) by Serena Young `video`  
   [overview of architectures](https://medium.com/towards-data-science/neural-network-architectures-156e5bad51ba) by Eugenio Culurciello  
 
-----
 
-  **graph neural network**
+
+---
+### architectures - graph neural network
 
   ["Graph Neural Networks: Variations and Applications](https://youtube.com/watch?v=cWIeTMklzNg) by Alexander Gaunt `video`  
   ["Convolutional Neural Networks on Graphs"](https://youtube.com/watch?v=v3jZRkvIOIM) by Xavier Bresson `video`  
@@ -771,14 +751,6 @@
   ["Geometric Deep Learning"](https://youtube.com/watch?v=Qtgep2CEExY) by Joan Bruna and Michael Bronstein `audio`  
 
   ["Geometric Deep Learning: Going beyond Euclidean Data"](https://arxiv.org/abs/1611.08097) by Bronstein, Bruna, LeCun, Szlam, Vandergheynst `paper`
-
-----
-
-  "Compared to recurrent networks these models can have many, many layers which can make up for the lack of explicit state to some extent. Also the fact that they can be fully parallelised across time during training and don't require backpropagation through time is a considerable advantage. Not to mention that it's much easier to build models with large temporal receptive fields."
-
-  "Compared to recurrent networks using only the output as state is very limiting, and conversely, hidden states are extremely powerful. Most algorithms we design do not just use the outputs as variables, but there are rather hundreds or billions of states that determine the output. Recurrent networks are just notoriously hard to train, so it is a matter of finding the right regularization techniques."
-
-  "It is easy to imagine computations that would be vastly more efficient using hidden states. For example if you want to track a person hiding behind a wall. If you increase the time period the person spends hiding behind the wall, then at some point the advantages from cheap training of passive/hierarchical/diluted convolutional models will be outperformed by a NN with a state that is encoded at network level, protected by gates, or maintained by some recall mechanism."
 
 
 
@@ -810,22 +782,6 @@
 
 ----
 
-  "LSTM is the most sensible RNN architecture. It can be derived directly from vanilla RNN in 2 steps:  
-  - Don't multiply, use addition instead.  
-  - Gate all operations so that you don't cram everything."  
-
-  "First statement means instead of multiplying the previous hidden state by a matrix to get the new state, you add something to your old hidden state and get the new state (not called "hidden" but called "cell"). Why? Because multiplication ~ vanishing gradients. Now, we are capable of long term memory since we are not losing it by repeated multiplications. But is storing everything useful? Obviously no. Also, do we want to output everything we have stored at each instant? Again no."
-
-  "There are 3 projections in a vanilla RNN: input to hidden, hidden to hidden, hidden to output. LSTM regulates each one of them with input, forget and output gates respectively. Each of these gates are calculated as a function of what we already know, and current input i.e f(H_prev, X). Now our internal hidden state will become holy and the access to it becomes highly restricted. So it has a new name - the cell."
-
-  "Only certain information, iff it's deemed relavent considering the past can get in (use of "he" in a sentence means we now know the gender of the subject, we send it in - use of another "he" in same sentence is not useful, so throw it away). Some of it is forgotten with time or due to certain inputs (like forgetting the gender of the subject at the end of a sentence). And out of all the information we store, only some of it is sent out and this is regulated by the output gate (we don't want to keeping telling that the subject is male, we will only do so when we have to)."
-
-  "All in all, instead of multiplying with a fixed matrix, you instead calculate what should change in your cell and get the change as a result of an addition step. And, you send out only some your cell as the output."
-
-  *(Pranav Shyam)*
-
-----
-
   ["Limitations of RNNs: A Computational Perspective"](https://youtu.be/FIr_SaKT52U?t=30m27s) by Edward Grefenstette `video`  
   ["Beyond Seq2Seq with Augmented RNNs"](http://videolectures.net/deeplearning2016_grefenstette_augmented_rnn/) by Edward Grefenstette `video`  
 
@@ -844,7 +800,10 @@
 
   [overview](http://wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/) by Denny Britz  
   [overview](http://distill.pub/2016/augmented-rnns/) by Chris Olah and Shan Carter  
-  [overview](http://thespermwhale.com/jaseweston/ram/slides/session2/Smooth%20Operators-NIPS2015.pptx) by Alex Graves  
+
+----
+
+  ["Self-Attention: Language, Images and Music"](https://youtube.com/watch?v=bYmeuc5voUQ) by Ashish Vaswani `video` *(Transformer)*
 
   [**"Attention Is All You Need"**](#attention-is-all-you-need-vaswani-et-al) by Vaswani et al. `paper` `summary` *(Transformer)*
 
@@ -900,28 +859,6 @@
   - [**Neural Stacks/Queues**](#grefenstette-hermann-suleyman-blunsom---learning-to-transduce-with-unbounded-memory)  
   - [**Neural Turing Machine**](#graves-wayne-danihelka---neural-turing-machines)  
   - [**Differentiable Neural Computer**](#graves-et-al---hybrid-computing-using-a-neural-network-with-dynamic-external-memory)  
-
-----
-
-  "The main theoretical benefit of Neural Turing Machine and related architectures is that they decouple the number of model parameters from the memory size."
-
-  "In principle, this should allow the model to generalize over problem instance sizes different than those seen during training, something that humans can do but LSTMs (or other types of RNNs) can't do."
-
-  "For instance, if you show a human examples of string reversal up to length 5, they will infer the underlying algorithm and they will be able to reverse length 10 strings, or even much longer strings if they have access to paper and pencil (an external memory)."
-
-  "LSTMs can't do that: each model has a finite memory capacity fixed as a hyperparameter before training, and even if you give the model excess capacity, it still will not easily generalize over different instance sizes. Each element of the state vector has a finite number of bits and it is controlled by a set of parameters independent from those of any other element of the state vector, which means that if the model learns an algorithm that operates on a subset of bits of the state vectors, it will not generalize to a larger number of bits."
-
-  "Imagine coding in a programming language that has only fixed-size variables, with no pointers or any other form of indirect addressing and no recursion. Not only this language would be non-Turing-complete, but it would be also pretty inconvenient to code: if you write a program to reverse length 5 strings, it will not work on any other length. But that's what LSTMs are pretty much stuck with."
-
-  "In fact, it is even worse when you consider training sample complexity: the number of parameters of a LSTM grows quadratically with its state size, which means that even in a good training regime (sample complexity proportional to parameter number), the number of examples required to learn how to reverse a string will grow quadratically with the string length, even if it is essentially the same algorithm."
-
-  "In order to address this issue you need some kind of addressable memory (either location-based or content-based) or recursion or some way to build composable data structures such as linked lists. NTMs provide addressable memory in a very low-level way, while a hypothetical differentiable functional programming language would possibly provide recursion and/or composable data structures."
-
-  "Right now NTMs seem to learn with difficulty on toy algorithmic tasks, and have not been demonstrated on real-world tasks. I suppose that the main issue is optimization hardness, which might be addressed by better optimization algorithms and better hardware, as it has been the case with NNs in general."
-
-  "It could be also the case that many "real-world" experimental benchmarks that have been tried so far are not very "algorithmic", hence NTMs don't have an advantage over LSTMs, but experimental conditions where training and test examples are i.i.d. sampled from the same distribution are actually somewhat artificial, thus in more realistic applications the NTMs may benefit from an increased generalization ability. In any case, if the end goal is to reach at least human-level learning performance, being able to do this kind of generalization seems necessary."
-
-  *(Antonio Valerio Miceli-Barone)*
 
 
 
@@ -993,28 +930,6 @@
   - what type of inferences do embeddings support?  
   - what is a proof in embeddings?  
   - how can explicit background knowledge be injected into embeddings?  
-
-
-
----
-### architectures - stochastic computation graph
-
-  ["Monte Carlo Gradient Estimation in Machine Learning"](https://arxiv.org/abs/1906.10652) by Mohamed et al. `paper`
-
-  [**interesting papers - gradient estimation**](#interesting-papers---gradient-estimation)
-
-----
-
-  ["Stochastic Computation Graphs"](http://artem.sobolev.name/tags/stochastic%20computation%20graphs%20series.html) by Artem Sobolev:  
-  - ["Continuous Case"](http://artem.sobolev.name/posts/2017-09-10-stochastic-computation-graphs-continuous-case.html)  
-  - ["Discrete Relaxations"](http://artem.sobolev.name/posts/2017-10-28-stochastic-computation-graphs-discrete-relaxations.html)  
-  - ["Fixing REINFORCE"](http://artem.sobolev.name/posts/2017-11-12-stochastic-computation-graphs-fixing-reinforce.html)  
-
-----
-
-  ["Stochastic Computation Graphs"](https://youtube.com/watch?v=_JTu50iDhkA) by Artem Sobolev ([slides](http://slides.com/asobolev/stochastic-computation-graphs#/))  
-  ["Reparametrization Trick: Revolution in Stochastic Computational Graphs"](https://youtu.be/0q5p7xP4cdA?t=5h3m29s)
-	by Dmitry Vetrov `video` `in russian` ([slides](https://sdsj.ru/slides/Vetrov.pdf) `in english`)  
 
 
 

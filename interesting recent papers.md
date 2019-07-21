@@ -636,6 +636,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `continual learning` `catastrophic forgetting`
 >	"The Mixture of Experts Layer is trained using back-propagation. The Gating Network outputs an (artificially made) sparse vector that acts as a chooser of which experts to consult. More than one expert can be consulted at once (although the paper doesn’t give any precision on the optimal number of experts). The Gating Network also decides on output weights for each expert."  
 >	"The MoE with experts shows higher accuracy (or lower perplexity) than the state of the art using only 16% of the training time."  
+  - `video` <https://slideslive.com/38917526/an-overview-of-googles-work-on-automl-and-future-directions> (19:31) (Dean)
   - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (14:39) (Bengio)
   - `video` <https://youtube.com/watch?v=nNZceFX2tQU> (Zakirov) `in russian`
   - `notes` <https://github.com/dennybritz/deeplearning-papernotes/blob/3718d181a0fed5ed806582822ed0dbde530122bf/notes/mixture-experts.md>
@@ -2681,6 +2682,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <http://youtube.com/watch?v=qSfd27AgcEk> (Bellemare)
   - `video` <https://vimeo.com/238243932> (Bellemare)
   - `video` <http://videolectures.net/DLRLsummerschool2018_bellemare_deep_RL/#t=3474> (Bellemare)
+  - `paper` ["Benchmarking Bonus-Based Exploration Methods on the Arcade Learning Environment"](https://drive.google.com/file/d/1I05c4-d9OsNwGZnLx85fR8dnX-yVoTWe) by Taiga et al.
 
 #### ["EX2: Exploration with Exemplar Models for Deep Reinforcement Learning"](https://arxiv.org/abs/1703.01260) Fu, Co-Reyes, Levine
   `exploration guided by observation novelty`
@@ -3156,10 +3158,13 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Time-Contrastive Networks: Self-Supervised Learning from Video"](https://arxiv.org/abs/1704.06888) Sermanet, Lynch, Chebotar, Hsu, Jang, Schaal, Levine
   `TCN` `reinforcement learning from demonstrations`
 >	"Learn a self-supervised understanding of the world and use it to quickly learn real-world tasks, entirely from 3rd person videos of humans (addressing correspondence problem, no labels, no reward function design, providing sample-efficiency of RL, quickly learning tasks, no kinesthetic demonstrations)."  
-  - <https://sermanet.github.io/imitate>
+  - <https://sermanet.github.io/imitate> (demo)
   - `video` <https://youtube.com/watch?v=b1UTUQpxPSY>
   - `video` <https://vimeo.com/252185872> (Lynch)
   - `video` <https://youtu.be/WRsxoVB8Yng?t=2h13m26s> (Sermanet)
+  - `video` <https://youtube.com/watch?v=JG6gSoNWOoI> (Sermanet)
+  - `video` <https://youtu.be/BijK_US6A0w?t=57m35s> (Angelova)
+  - `video` <https://youtube.com/watch?v=Dpf9gTqP7xA> (Cimen)
   - `code` <https://github.com/tensorflow/models/tree/master/research/tcn>
 
 #### ["Learning from Demonstrations for Real World Reinforcement Learning"](https://arxiv.org/abs/1704.03732) Hester et al.

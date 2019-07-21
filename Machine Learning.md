@@ -432,11 +432,15 @@
 
   ["Automated Machine Learning: A Short History"](https://datarobot.com/blog/automated-machine-learning-short-history/) by Thomas Dinsmore
 
+  [**interesting papers**](#interesting-papers---automated-machine-learning)
+
+----
+
+  ["AutoML at Google and Future Directions"](https://slideslive.com/38917526/an-overview-of-googles-work-on-automl-and-future-directions) by Jeff Dean `video`
+
   [tutorial](https://facebook.com/nipsfoundation/videos/199543964204829) by Frank Hutter and Joaquin Vanschoren `video`  
   ["Automated Machine Learning"](https://youtube.com/watch?v=AFeozhAD9xE) by Andreas Mueller `video`  
   ["AutoML and How To Speed It Up"](https://vimeo.com/250399200) by Frank Hutter `video`  
-
-  [**interesting papers**](#interesting-papers---automated-machine-learning)
 
 ----
 
@@ -493,6 +497,7 @@
   [overview](https://youtube.com/watch?v=HmocI2b5YfA) by Chris Re `video`  
   [overview](https://youtube.com/watch?v=pXoiYSQHf2I) by Stephen Bach `video`  
   [overview](https://slideslive.com/38916920/building-and-structuring-training-sets-for-multitask-learning) by Alex Ratner `video`  
+  [overview](https://youtube.com/watch?v=MR_J7tFHevA) by Alex Ratner `video`  
   [overview](https://youtube.com/watch?v=G88jJquj6Wo) by Alex Ratner `audio`  
 
 ----
@@ -687,6 +692,7 @@
   - <https://catboost.yandex>
   - `video` <https://youtube.com/watch?v=jLU6kNRiZ5o>
   - `video` <https://youtube.com/watch?v=8o0e-r0B5xQ> (Dorogush)
+  - `video` <https://youtube.com/watch?v=usdEWSDisS0> (Dorogush)
   - `video` <https://youtube.com/watch?v=db-iLhQvcH8> (Prokhorenkova)
   - `video` <https://youtube.com/watch?v=ZAGXnXmDCT8> (Ershov)
   - `video` <https://youtube.com/watch?v=UYDwhuyWYSo> (Dorogush) `in russian`
