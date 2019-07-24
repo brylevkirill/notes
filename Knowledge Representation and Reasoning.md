@@ -1662,10 +1662,6 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
   - `code` <https://github.com/jcoreyes/NLQA/tree/master/qanta>
 
 
-#### ["End-To-End Memory Networks"](https://arxiv.org/abs/1503.08895) Sukhbaatar, Szlam, Weston, Fergus
-  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#end-to-end-memory-networks-sukhbaatar-szlam-weston-fergus>
-
-
 #### ["Key-Value Memory Networks for Directly Reading Documents"](https://arxiv.org/abs/1606.03126) Miller, Fisch, Dodge, Karimi, Bordes, Weston
 >	"Directly reading documents and being able to answer questions from them is a key problem. To avoid its inherent difficulty, question answering has been directed towards using Knowledge Bases instead, which has proven effective. Unfortunately KBs suffer from often being too restrictive, as the schema cannot support certain types of answers, and too sparse, e.g. Wikipedia contains much more information than Freebase. In this work we introduce a new method, Key-Value Memory Networks, that makes reading documents more viable by utilizing different encodings in the addressing and output stages of the memory read operation. To compare using KBs, information extraction or Wikipedia documents directly in a single framework we construct an analysis tool, MOVIEQA, a QA dataset in the domain of movies. Our method closes the gap between all three settings. It also achieves state-of-the-art results on the existing WIKIQA benchmark."
 
@@ -1674,6 +1670,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
   - `video` <http://techtalks.tv/talks/key-value-memory-networks-for-directly-reading-documents/63333/> (Miller)
   - `notes` <https://gist.github.com/shagunsodhani/a5e0baa075b4a917c0a69edc575772a8>
   - `code` <https://github.com/siyuanzhao/key-value-memory-networks>
+  - `paper` ["End-To-End Memory Networks"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#end-to-end-memory-networks-sukhbaatar-szlam-weston-fergus) by Sukhbaatar et al. `summary`
 
 
 #### ["Text Understanding with the Attention Sum Reader Network"](http://arxiv.org/abs/1603.01547) Kadlec, Schmid, Bajgar, Kleindienst
@@ -1710,6 +1707,16 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
   - `video` <https://youtu.be/fpycaHd1Z08?t=20m28s> (Neubig)
   - `video` <https://youtu.be/99CymZY-4Tc?t=1h26m40s> (Lyalin) `in russian`
   - `code` <https://github.com/allenai/allennlp/tree/master/allennlp/models/reading_comprehension>
+
+
+#### ["Language Models are Unsupervised Multitask Learners"](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf) Radford, Wu, Child, Luan, Amodei, Sutskever
+  `GPT-2`
+  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#language-models-are-unsupervised-multitask-learners-radford-wu-child-luan-amodei-sutskever>
+
+
+#### ["BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"](https://arxiv.org/abs/1810.04805) Devlin, Chang, Lee, Toutanova
+  `BERT`
+  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-devlin-chang-lee-toutanova>
 
 
 #### ["Coarse-to-Fine Question Answering for Long Documents"](https://arxiv.org/abs/1611.01839) Choi, Hewlett, Lacoste, Polosukhin, Uszkoreit, Berant

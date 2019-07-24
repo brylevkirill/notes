@@ -1,6 +1,4 @@
-  Statistical learning frames models as distributions over data and latent variables, allowing models to address a broad array of downstream tasks, and underlying methodology of latent variable models is typically Bayesian.  
-  A central problem involves modeling complex data sets using highly flexible families of probability distributions in which learning, sampling, inference, and evaluation are still analytically or computationally tractable.  
-
+  Bayesian inference is application of Bayes' theorem to update probability of hypothesis as more evidence becomes available.
 
   * [**introduction**](#introduction)
   * [**overview**](#overview)
@@ -24,79 +22,11 @@
 ---
 ### introduction
 
-  "Bayesian inference is application of Bayes' theorem to update probability of hypothesis as more evidence or information becomes available."
-
-  "Probability is the representation of uncertain or partial knowledge about the truth of statements."
-
-  "Logical inference is about what is certain to be true. Statistical inference is about what is likely to be true."
-
   "How do you extend classical logic to reason with uncertain propositions? Suppose we agree to represent degrees of plausibility with real numbers, larger numbers indicating greater plausibility. If we also agree to a few axioms to quantify what we mean by consistency and common sense, there is a unique and inevitable system for plausible reasoning that satisfies the axioms, which is probability theory. And this has been proven over 60 years ago. The important implication is that all other systems of plausible reasoning - fuzzy logic, neural networks, artificial intelligence, etc. - must either lead to the same conclusions as probability theory, or violate one of the axioms used to derive probability theory."
 
+  "Statistical learning frames models as distributions over data and latent variables, allowing models to address a broad array of downstream tasks, and underlying methodology of latent variable models is typically Bayesian. A central problem involves modeling complex data sets using highly flexible families of probability distributions in which learning, sampling, inference, and evaluation are still analytically or computationally tractable."
+
   "In Bayesian approach, probability is used not only to describe “physical” randomness, such as errors in labeling, but also uncertainty regarding the true values of the parameters. These prior and posterior probabilities represent degrees of belief, before and after seeing the data. The Bayesian approach takes modeling seriously. A Bayesian model includes a suitable prior distribution for model parameters. If the model/prior are chosen without regard for the actual situation, there is no justification for believing the results of Bayesian inference. The model and prior are chosen based on our knowledge of the problem. These choices are not, in theory, affected by the amount of data collected, or by the question we are interested in answering. We do not, for example, restrict the complexity of the model just because we have only a small amount of data. Pragmatic compromises are inevitable in practice - no model and prior perfectly express to our knowledge of the situation. The Bayesian approach relies on reducing such flaws to a level where we think they won’t seriously affect the results."
-
-----
-
-  [introduction](http://mlg.eng.cam.ac.uk/zoubin/bayesian.html) by Zoubin Ghahramani
-
-  ["Why probability models?"](http://johndcook.com/blog/probability-modeling/) by John Cook  
-  ["What is randomness? What is a random variable?"](http://johndcook.com/blog/2012/04/19/random-is-as-random-does/) by John Cook  
-  ["Plausible reasoning"](http://johndcook.com/blog/2008/03/19/plausible-reasoning/) by John Cook  
-
-  ["Embracing Uncertainty - The Role of Probabilities"](http://blogs.technet.com/b/machinelearning/archive/2014/10/22/embracing-uncertainty-the-role-of-probabilities.aspx) by Chris Bishop  
-  ["Embracing Uncertainty - Probabilistic Inference"](http://blogs.technet.com/b/machinelearning/archive/2014/10/30/embracing-uncertainty-probabilistic-inference.aspx) by Chris Bishop  
-
-  ["Where Priors Come From"](http://zinkov.com/posts/2015-06-09-where-priors-come-from/) by Rob Zinkov
-
-----
-
-  ["Probability as Extended Logic"](http://bjlkeng.github.io/posts/probability-the-logic-of-science/) by Brian Keng
-
-  [definitions](https://youtube.com/watch?v=Ihud7yG2iKs) of probability by Andrey Kolmogorov and E.T. Jaynes `video` `in russian`  
-  [definition](https://youtube.com/watch?v=X0Lo5IWLjko) of randomness in algorithmic information theory `video` `in russian`  
-
-
-
----
-### overview
-
-  ["The Three Faces of Bayes"](https://slackprop.wordpress.com/2016/08/28/the-three-faces-of-bayes/) by Burr Settles  
-  ["Bayesian Machine Learning"](http://fastml.com/bayesian-machine-learning/) by Zygmunt Zajac  
-
-  ["Bayesian Methods for Machine Learning"](http://www.cs.toronto.edu/~radford/ftp/bayes-tut.pdf) by Radford Neal  
-
-  [overview](http://metacademy.org/roadmaps/rgrosse/bayesian_machine_learning) by Roger Grosse  
-  [overview](http://frnsys.com/ai_notes/machine_learning/bayesian_learning.html) by Francis Tseng  
-
-  ["Probabilistic Learning and Reasoning"](https://www.cs.toronto.edu/~duvenaud/courses/csc412/index.html) course by David Duvenaud
-
-----
-
-  ["Probabilistic Machine Learning - Foundations and Frontiers"](https://youtube.com/watch?v=3foXO9noKj8) by Zoubin Ghahramani `video`  
-  ["Probabilistic Modelling and Bayesian Inference"](https://youtube.com/watch?v=kjo9Y_Vrgn4) by Zoubin Ghahramani `video`  
-  ["Introduction to Bayesian Inference"](http://videolectures.net/mlss09uk_bishop_ibi/) by Chris Bishop `video`  
-
-  [Coursera](https://coursera.org/learn/bayesian-methods-in-machine-learning) course by Daniil Polykovskiy and Alexander Novikov `video`
-
-  ["Information Theory, Pattern Recognition and Neural Networks"](http://videolectures.net/course_information_theory_pattern_recognition/) course by David MacKay `video`
-
-----
-
-  ["Latent Variable Models"](https://youtube.com/watch?v=7yLOF07Mv5I) by Dmitry Vetrov `video` `in russian`
-	([slides](https://drive.google.com/open?id=0BwU8otKU0BqQSVoyN295Y0doRTg) `in english`)  
-  ["Scalable Bayesian Methods"](https://youtube.com/watch?v=if9bTlZOiO8) by Dmitry Vetrov `video` `in russian`
-	([slides](https://drive.google.com/open?id=0BwU8otKU0BqQOGdzYTdMem1UTEk) `in english`)  
-
-  [course](https://youtube.com/playlist?list=PLEqoHzpnmTfCiJpMPccTWXD9DB4ERQkyw) by Dmitry Vetrov `video` `in russian`  
-  [course](https://lektorium.tv/lecture/30977) by Sergey Nikolenko `video` `in russian`  
-
-----
-
-  [**bayesian deep learning**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)
-
-  [**bayesian reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#bayesian-reinforcement-learning)
-
-  [**Solomonoff induction**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#solomonoff-induction)  *(bayesian optimal prediction)*  
-  [**AIXI**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---aixi)  *(bayesian optimal decision making)*  
 
 ----
 
@@ -144,6 +74,70 @@
   - rational allocation of computational resources  
   - efficient data compression  
   - automating model discovery and experimental design  
+
+
+
+---
+### overview
+
+  definitions of probability ([overview](https://facebook.com/uclcsml/videos/388925658416859?t=2300) by Shakir Mohamed `video`):  
+  - *statistical probability*:  frequency ratio of items  
+  - *logical probability*:  degree of confirmation of a hypothesis based on a logical analyses  
+  - *probability as propensity*:  probability used for predictions  
+  - *subjective probability*:  probability as a degree of belief  
+
+  ["Why Probability Models?"](http://johndcook.com/blog/probability-modeling/) by John Cook  
+  ["What is Randomness? What is a Random Variable?"](http://johndcook.com/blog/2012/04/19/random-is-as-random-does/) by John Cook  
+  ["Plausible Reasoning"](http://johndcook.com/blog/2008/03/19/plausible-reasoning/) by John Cook  
+
+  ["Embracing Uncertainty - The Role of Probabilities"](http://blogs.technet.com/b/machinelearning/archive/2014/10/22/embracing-uncertainty-the-role-of-probabilities.aspx) by Chris Bishop  
+  ["Embracing Uncertainty - Probabilistic Inference"](http://blogs.technet.com/b/machinelearning/archive/2014/10/30/embracing-uncertainty-probabilistic-inference.aspx) by Chris Bishop  
+
+  ["Probability as Extended Logic"](http://bjlkeng.github.io/posts/probability-the-logic-of-science/) by Brian Keng
+
+----
+
+  ["A Tiny Introduction"](http://mlg.eng.cam.ac.uk/zoubin/bayesian.html) by Zoubin Ghahramani  
+  ["The Three Faces of Bayes"](https://slackprop.wordpress.com/2016/08/28/the-three-faces-of-bayes/) by Burr Settles  
+  ["Bayesian Machine Learning"](http://fastml.com/bayesian-machine-learning/) by Zygmunt Zajac  
+  ["Where Priors Come From"](http://zinkov.com/posts/2015-06-09-where-priors-come-from/) by Rob Zinkov
+
+  ["Bayesian Methods for Machine Learning"](http://www.cs.toronto.edu/~radford/ftp/bayes-tut.pdf) by Radford Neal  
+
+  [overview](http://metacademy.org/roadmaps/rgrosse/bayesian_machine_learning) by Roger Grosse  
+  [overview](http://frnsys.com/ai_notes/machine_learning/bayesian_learning.html) by Francis Tseng  
+
+----
+
+  ["Probabilistic Machine Learning - Foundations and Frontiers"](https://youtube.com/watch?v=3foXO9noKj8) by Zoubin Ghahramani `video`  
+  ["Probabilistic Modelling and Bayesian Inference"](https://youtube.com/watch?v=kjo9Y_Vrgn4) by Zoubin Ghahramani `video`  
+  ["Introduction to Bayesian Inference"](http://videolectures.net/mlss09uk_bishop_ibi/) by Chris Bishop `video`  
+
+  ["Latent Variable Models"](https://youtube.com/watch?v=7yLOF07Mv5I) by Dmitry Vetrov `video` `in russian`
+	([slides](https://drive.google.com/open?id=0BwU8otKU0BqQSVoyN295Y0doRTg) `in english`)  
+  ["Scalable Bayesian Methods"](https://youtube.com/watch?v=if9bTlZOiO8) by Dmitry Vetrov `video` `in russian`
+	([slides](https://drive.google.com/open?id=0BwU8otKU0BqQOGdzYTdMem1UTEk) `in english`)  
+
+  [definitions](https://youtube.com/watch?v=Ihud7yG2iKs) of probability according to Kolmogorov and Jaynes by Mikhail Dektyarev `video` `in russian`  
+
+----
+
+  [course](https://coursera.org/learn/bayesian-methods-in-machine-learning) by Daniil Polykovskiy and Alexander Novikov `video`  
+  [course](http://videolectures.net/course_information_theory_pattern_recognition/) by David MacKay `video`  
+
+  [course](https://www.cs.toronto.edu/~duvenaud/courses/csc412/index.html) by David Duvenaud
+
+  [course](https://youtube.com/playlist?list=PLEqoHzpnmTfCiJpMPccTWXD9DB4ERQkyw) by Dmitry Vetrov `video` `in russian`  
+  [course](https://lektorium.tv/lecture/30977) by Sergey Nikolenko `video` `in russian`  
+
+----
+
+  [**bayesian deep learning**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)
+
+  [**bayesian reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#bayesian-reinforcement-learning)
+
+  [**Solomonoff induction**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#solomonoff-induction)  *(bayesian optimal prediction)*  
+  [**AIXI**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---aixi)  *(bayesian optimal decision making)*  
 
 
 

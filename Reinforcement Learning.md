@@ -104,6 +104,19 @@
   ["A 'Brief' History of Game AI Up To AlphaGo"](http://andreykurenkov.com/writing/a-brief-history-of-game-ai/) by Andrey Kurenkov
 
 ----
+  - *StarCraft 2*
+
+	[AlphaStar](https://deepmind.com/blog/alphastar-mastering-real-time-strategy-game-starcraft-ii)
+
+	[overview](https://slideslive.com/38916905/alphastar-mastering-the-game-of-starcraft-ii) by David Silver `video`  
+	[overview](https://youtu.be/3N9phq_yZP0?t=32m52s) by Demis Hassabis `video`  
+	[overview](https://youtu.be/Kedt2or9xlo) by Oriol Vinyals `video`  
+
+	overview by Alex Irpan ([1](https://www.alexirpan.com/2019/02/22/alphastar.html), [2](https://www.alexirpan.com/2019/02/22/alphastar-part2.html))
+
+	[AlphaStar vs pro players](https://youtube.com/watch?v=cUTMhmVh1qs) games `video` ([highlights](https://youtube.com/watch?v=zgIFoepzhIo) by MaNa `video`, [highlights](https://youtube.com/watch?v=_YWmU-E2WFc) by Artosis `video`))
+
+----
   - *Dota 2*  
 
 	[OpenAI Five](https://openai.com/five)
@@ -122,47 +135,6 @@
 	[OpenAI Five vs ainodehna team](https://arena.openai.com/#/results) games ([highlights](https://cybersport.ru/dota-2/interviews/glavnoe-protiv-botov-otdat-im-udobnykh-dlya-nas-geroev-komanda-kotoraya-trizhdy-pobedila-openai-raskryla-svoyu-taktiku) `in russian`)  
 
 ----
-  - *StarCraft 2*
-
-	[AlphaStar](https://deepmind.com/blog/alphastar-mastering-real-time-strategy-game-starcraft-ii)
-
-	[overview](https://slideslive.com/38916905/alphastar-mastering-the-game-of-starcraft-ii) by David Silver `video`  
-	[overview](https://youtu.be/3N9phq_yZP0?t=32m52s) by Demis Hassabis `video`  
-	[overview](https://youtu.be/Kedt2or9xlo) by Oriol Vinyals `video`  
-
-	overview by Alex Irpan ([1](https://www.alexirpan.com/2019/02/22/alphastar.html), [2](https://www.alexirpan.com/2019/02/22/alphastar-part2.html))
-
-	[AlphaStar vs pro players](https://youtube.com/watch?v=cUTMhmVh1qs) games `video` ([highlights](https://youtube.com/watch?v=zgIFoepzhIo) by MaNa `video`, [highlights](https://youtube.com/watch?v=_YWmU-E2WFc) by Artosis `video`))
-
-----
-  - *Go*  
-
-	["Mastering the Game of Go"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto
-
-	[AlphaGo Zero overview](http://www.depthfirstlearning.com/2018/AlphaGoZero)
-
-	["Mastering the Game of Go without Human Knowledge"](#mastering-the-game-of-go-without-human-knowledge-silver-et-al) by Silver et al. `paper` `summary`  
-	["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper` `summary`  
-	["Combining Online and Offline Knowledge in UCT"](http://machinelearning.org/proceedings/icml2007/papers/387.pdf) by Gelly and Silver `paper` ([talk](https://youtube.com/watch?v=Bm7zah_LrmE) `video`)  
-
-	[AlphaGo Zero overview](https://vimeo.com/252184928/#t=711) by David Silver `video`  
-	[AlphaGo Zero overview](https://youtu.be/DXNqYSNvnjA?t=16m41s) by Demis Hassabis `video`  
-
-	[AlphaGo overview](https://youtu.be/i3lEG6aRGm8?t=16m) by Demis Hassabis `video`  
-	[AlphaGo overview](https://youtu.be/4D5yGiYe8p4) by David Silver `video`  
-	[AlphaGo overview](https://youtu.be/LX8Knl0g0LE?t=4m41s) by Aja Huang `video`  
-
-	"Google AlphaGo is a historical tour of AI ideas: 70s (Alpha-Beta), 80s/90s (RL & self-play), 00's (Monte-Carlo), 10's (deep neural networks)."  
-	[history of ideas](http://youtube.com/watch?v=UMm0XaCFTJQ) by Richard Sutton, Czaba Szepesvari, Michael Bowling, Ryan Hayward, Martin Muller `video`  
-
-	["AlphaGo, In Context"](https://medium.com/@karpathy/alphago-in-context-c47718cb95a5) by Andrej Karpathy
-
-	[AlphaGo documentary](https://netflix.com/title/80190844) `video`
-
-	[AlphaGo vs Lee Sedol](https://youtube.com/playlist?list=PLqYmG7hTraZDEaLdPx7GJ284kuE2xcFXu) games `video`  
-	[AlphaGo vs Ke Jie](https://youtube.com/playlist?list=PLqYmG7hTraZDEaLdPx7GJ284kuE2xcFXu) games `video`  
-
-----
   - *Poker*  
 
 	[Libratus overview](https://int8.io/counterfactual-regret-minimization-for-poker-ai/#Libratus_8211_DeepStack8217s_main_rival_from_Carnegie_Mellon_University) by Kamil Czarnogorski  
@@ -171,7 +143,7 @@
 	[Libratus "Science" magazine](http://science.sciencemag.org/content/early/2017/12/15/science.aao1733.full) `paper`  
 	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://arxiv.org/abs/1705.02955) by Noam Brown and Tuomas Sandholm `paper` ([talk](https://vimeo.com/248533943#t=53s) `video`, [post](https://thegradient.pub/libratus-poker))  
 	["Depth-Limited Solving for Imperfect-Information Games"](https://arxiv.org/abs/1805.08195) by Brown, Sandholm, Amos `paper` ([overview](https://youtube.com/watch?v=S4-g3dPT2gY) `video`)  
-	["Deep Counterfactual Regret Minimization"](https://arxiv.org/abs/1811.00164) by Brown, Lerer, Gross, Sandholm `paper`  
+	["Deep Counterfactual Regret Minimization"](#deep-counterfactual-regret-minimization-brown-lerer-gross-sandholm) by Brown, Lerer, Gross, Sandholm `paper` `summary`  
 
 	[Libratus overview](https://youtube.com/watch?v=EhvH4jdF-ko) by Tuomas Sandholm `video`  
 	[Libratus overview](https://youtube.com/watch?v=xrWulRY_t1o) by Tuomas Sandholm `video`  
@@ -191,7 +163,7 @@
 	[Libratus discussion](https://youtube.com/watch?v=wKey6eKccYM) with Noam Brown `audio`  
 	[Libratus discussion](https://reddit.com/r/MachineLearning/comments/7jn12v/ama_we_are_noam_brown_and_professor_tuomas) with Noam Brown and Tuomas Sandholm  
 
-	[Libratus vs top players highlights](https://youtube.com/watch?v=crgmYTMfrSc) `video`
+	[Libratus vs top players](https://youtube.com/watch?v=crgmYTMfrSc) games highlights `video`
 
 	[Pluribus overview](https://ai.facebook.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker)  
 	[Pluribus "Science" magazine](https://science.sciencemag.org/content/early/2019/07/10/science.aay2400) `paper`  
@@ -220,6 +192,34 @@
 	[discussion](http://thinkingpoker.net/2017/08/episode-225-taking-the-variance-out-of-poker/) with Michael Bowling and Dustin Morrill  
 
 	[DeepStack vs pro players](https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ) games `video`
+
+----
+  - *Go*  
+
+	["Mastering the Game of Go"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto
+
+	[AlphaGo Zero overview](http://www.depthfirstlearning.com/2018/AlphaGoZero)
+
+	["Mastering the Game of Go without Human Knowledge"](#mastering-the-game-of-go-without-human-knowledge-silver-et-al) by Silver et al. `paper` `summary`  
+	["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper` `summary`  
+	["Combining Online and Offline Knowledge in UCT"](http://machinelearning.org/proceedings/icml2007/papers/387.pdf) by Gelly and Silver `paper` ([talk](https://youtube.com/watch?v=Bm7zah_LrmE) `video`)  
+
+	[AlphaGo Zero overview](https://vimeo.com/252184928/#t=711) by David Silver `video`  
+	[AlphaGo Zero overview](https://youtu.be/DXNqYSNvnjA?t=16m41s) by Demis Hassabis `video`  
+
+	[AlphaGo overview](https://youtu.be/i3lEG6aRGm8?t=16m) by Demis Hassabis `video`  
+	[AlphaGo overview](https://youtu.be/4D5yGiYe8p4) by David Silver `video`  
+	[AlphaGo overview](https://youtu.be/LX8Knl0g0LE?t=4m41s) by Aja Huang `video`  
+
+	"Google AlphaGo is a historical tour of AI ideas: 70s (Alpha-Beta), 80s/90s (RL & self-play), 00's (Monte-Carlo), 10's (deep neural networks)."  
+	[history of ideas](http://youtube.com/watch?v=UMm0XaCFTJQ) by Richard Sutton, Czaba Szepesvari, Michael Bowling, Ryan Hayward, Martin Muller `video`  
+
+	["AlphaGo, In Context"](https://medium.com/@karpathy/alphago-in-context-c47718cb95a5) by Andrej Karpathy
+
+	[AlphaGo documentary](https://netflix.com/title/80190844) `video`
+
+	[AlphaGo vs Lee Sedol](https://youtube.com/playlist?list=PLqYmG7hTraZDEaLdPx7GJ284kuE2xcFXu) games `video`  
+	[AlphaGo vs Ke Jie](https://youtube.com/playlist?list=PLqYmG7hTraZDEaLdPx7GJ284kuE2xcFXu) games `video`  
 
 ----
   - *Chess*  
@@ -1722,7 +1722,7 @@ interesting recent papers:
   - [**model-free methods**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-free-methods)  
   - [**model-based methods**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-based-methods)  
   - [**exploration and intrinsic motivation**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
-  - [**hierarchical reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---hierarchical)  
+  - [**hierarchical**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---hierarchical)  
   - [**transfer**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---transfer)  
   - [**imitation**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---imitation)  
   - [**multi-agent**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---multi-agent)  
@@ -1917,6 +1917,18 @@ interesting recent papers:
   - <http://deepstack.ai>
   - <http://twitter.com/DeepStackAI>
   - `code` <https://github.com/lifrordi/DeepStack-Leduc>
+
+
+#### ["Deep Counterfactual Regret Minimization"](https://arxiv.org/abs/1811.00164) Brown, Lerer, Gross, Sandholm
+  `Deep CFR`
+>	"Counterfactual Regret Minimization is the leading framework for solving large imperfect-information games. It converges to an equilibrium by iteratively traversing the game tree. In order to deal with extremely large games, abstraction is typically applied before running CFR. The abstracted game is solved with tabular CFR, and its solution is mapped back to the full game. This process can be problematic because aspects of abstraction are often manual and domain specific, abstraction algorithms may miss important strategic nuances of the game, and there is a chicken-and-egg problem because determining a good abstraction requires knowledge of the equilibrium of the game. This paper introduces Deep Counterfactual Regret Minimization, a form of CFR that obviates the need for abstraction by instead using deep neural networks to approximate the behavior of CFR in the full game. We show that Deep CFR is principled and achieves strong performance in large poker games. This is the first non-tabular variant of CFR to be successful in large games."
+
+>	"Most popular RL algorithms do not converge to good policies (equilibria) in imperfect-information games in theory or in practice. Rather than use tabular CFR with abstraction, this paper introduces a form of CFR, which we refer to as Deep Counterfactual Regret Minimization, that uses function approximation with deep neural networks to approximate the behavior of tabular CFR on the full, unabstracted game. We prove that Deep CFR converges to an Epsilon-Nash equilibrium in two-player zero-sum games and empirically evaluate performance in poker variants, including heads-up limit Texas hold’em. We show Deep CFR outperforms Neural Fictitious Self Play (NFSP) (Heinrich & Silver, 2016), which was the prior leading function approximation algorithm for imperfect-information games, and that Deep CFR is competitive with domain-specific tabular abstraction techniques."
+
+  - <https://reddit.com/r/MachineLearning/comments/ceece3/ama_we_are_noam_brown_and_tuomas_sandholm>
+  - <https://int8.io/counterfactual-regret-minimization-for-poker-ai>
+  - <http://modelai.gettysburg.edu/2013/cfr/index.html#description>
+  - `code` <https://github.com/EricSteinberger/Deep-CFR>
 
 
 #### ["Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm"](https://arxiv.org/abs/1712.01815) Silver et al.

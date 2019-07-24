@@ -343,6 +343,10 @@
 
   *(Alex Graves)*
 
+----
+
+  Intelligence can be seen as compression efficacy - the more one can compress data, the more one can understand it. Example of increase in compression efficacy: 1. raw observations of planetary orbits, 2. geocentric Ptolemaic epicycles, 3. heliocentric ellipses, 4. Newtonian mechanics, 5. general relativity, 6.? Under this view, compression of data is understanding, improvement of compressor is learning, progress of improvement is intrinsic reward. To learn as fast as possible about a piece of data, one should decrease as rapidly as possible the number of bits one need to compress that data. If one can choose which data to observe or create, one should interact with environment in a way to obtain data that maximizes the decrease in bits — the compression progress — of everything already known.
+
 
 
 ---

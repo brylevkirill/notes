@@ -377,6 +377,8 @@
   - `video` <https://youtu.be/99CymZY-4Tc?t=5m36s> (Lyalin) `in russian`
   - `post` <http://jalammar.github.io/illustrated-bert>
   - `post` <https://medium.com/dissecting-bert/dissecting-bert-part-1-d3c3d495cdb3> + <https://medium.com/dissecting-bert/dissecting-bert-part2-335ff2ed9c73> + <https://medium.com/dissecting-bert/dissecting-bert-appendix-the-decoder-3b86f66b0e5f>
+  - `paper` ["Right for the Wrong Reasons: Diagnosing Syntactic Heuristics in Natural Language Inference"](https://arxiv.org/abs/1902.01007) by McCoy et al.
+  - `paper` ["Probing Neural Network Comprehension of Natural Language Arguments"](https://arxiv.org/abs/1907.07355) by Niven et al.
   - `paper` ["BERT Rediscovers the Classical NLP Pipeline"](https://arxiv.org/abs/1905.05950) by Tenney et al.
   - `paper` ["XLNet: Generalized Autoregressive Pretraining for Language Understanding"](https://arxiv.org/abs/1906.08237) by Yang et al.
 

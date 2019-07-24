@@ -668,6 +668,8 @@
   [overview](https://youtu.be/7o9dT6puHHg?t=24m8s) by Aravind Srinivas `video`  
   overview ([1](https://youtu.be/mYCLVPRy2nc?t=1h46m30s), [2](https://youtu.be/NCRzGmM1ywE)) by Jonathan Ho `video`  
 
+  [overview](https://facebook.com/uclcsml/videos/3027632833943878?t=983) of probability flows by Shakir Mohamed `video`
+
 ----
 
   NICE, RealNVP, Autoregressive Flows, Inverse Autoregressive Flows, Glow, Flow++
@@ -1581,6 +1583,7 @@ Yoshua Bengio:
 
 >	"In this work we developed a simple approach for learning highly non-Gaussian posterior densities by learning transformations of simple densities to more complex ones through a normalizing flow. When combined with an amortized approach for variational inference using inference networks and efficient Monte Carlo gradient estimation, we are able to show clear improvements over simple approximations on different problems. Using this view of normalizing flows, we are able to provide a unified perspective of other closely related methods for flexible posterior estimation that points to a wide spectrum of approaches for designing more powerful posterior approximations with different statistical and computational tradeoffs. An important conclusion from the discussion in section 3 is that there exist classes of normalizing flows that allow us to create extremely rich posterior approximations for variational inference. With normalizing flows, we are able to show that in the asymptotic regime, the space of solutions is rich enough to contain the true posterior distribution. If we combine this with the local convergence and consistency results for maximum likelihood parameter estimation in certain classes of latent variables models, we see that we are now able overcome the objections to using variational inference as a competitive and default approach for statistical inference. Making such statements rigorous is an important line of future research. Normalizing flows allow us to control the complexity of the posterior at run-time by simply increasing the flow length of the sequence. The approach we presented considered normalizing flows based on simple transformations of the form (10) and (14). These are just two of the many maps that can be used, and alternative transforms can be designed for posterior approximations that may require other constraints, e.g., a restricted support. An important avenue of future research lies in describing the classes of transformations that allow for different characteristics of the posterior and that still allow for efficient, linear-time computation."
 
+  - `video` <https://facebook.com/uclcsml/videos/3027632833943878?t=983> (Mohamed)
   - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods> (1:05:06) (Mohamed)
   - `video` <https://youtu.be/JrO5fSskISY?t=1h2m19s> (Mohamed)
   - `video` <https://cds.cern.ch/record/2302480> (38:20) (Rezende)
@@ -2211,6 +2214,7 @@ Yoshua Bengio:
 
   - <https://github.com/sekwiatkowski/awesome-capsule-networks>
   - `video` <https://youtube.com/watch?v=gq-7HgzfDBM>
+  - `video` <https://youtube.com/watch?v=zRg3IuxaJ6I> (Sabour)
   - `video` <https://facebook.com/nipsfoundation/videos/1553634558061111?t=5824> (Frosst)
   - `video` ["What is wrong with convolutional neural nets?"](https://youtube.com/watch?v=Mqt8fs6ZbHk) (Hinton)
   - `video` ["What's wrong with convolutional nets?"](http://techtv.mit.edu/collections/bcs/videos/30698-what-s-wrong-with-convolutional-nets) (Hinton) ([transcription](https://github.com/WalnutiQ/walnut/issues/157))
@@ -2239,6 +2243,7 @@ Yoshua Bengio:
   `CapsNet`
 >	"A capsule is a group of neurons whose outputs represent different properties of the same entity. Each layer in a capsule network contains many capsules [a group of capsules forms a capsule layer and can be used in place of a traditional layer in a neural net]. We describe a version of capsules in which each capsule has a logistic unit to represent the presence of an entity and a 4x4 matrix which could learn to represent the relationship between that entity and the viewer (the pose). A capsule in one layer votes for the pose matrix of many different capsules in the layer above by multiplying its own pose matrix by trainable viewpoint-invariant transformation matrices that could learn to represent part-whole relationships. Each of these votes is weighted by an assignment coefficient. These coefficients are iteratively updated for each image using the Expectation-Maximization algorithm such that the output of each capsule is routed to a capsule in the layer above that receives a cluster of similar votes. The transformation matrices are trained discriminatively by backpropagating through the unrolled iterations of EM between each pair of adjacent capsule layers. On the smallNORB benchmark, capsules reduce the number of test errors by 45\% compared to the state-of-the-art. Capsules also show far more resistance to white box adversarial attack than our baseline convolutional neural network."
 
+  - `video` <https://youtu.be/zRg3IuxaJ6I?t=22m35s> (Sabour)
   - `video` <https://youtu.be/hYt3FcJUf6w?t=50m38s> (Uziela)
   - `video` <https://youtube.com/watch?v=akq6PNnkKY8> (Ou)
   - `post` <https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/>
@@ -2252,6 +2257,8 @@ Yoshua Bengio:
   `CapsNet` `information routing`
 >	"An object can be seen as a geometrically organized set of interrelated parts. A system that makes explicit use of these geometric relationships to recognize objects should be naturally robust to changes in viewpoint, because the intrinsic geometric relationships are viewpoint-invariant. We describe an unsupervised version of capsule networks, in which a neural encoder, which looks at all of the parts, is used to infer the presence and poses of object capsules. The encoder is trained by backpropagating through a decoder, which predicts the pose of each already discovered part using a mixture of pose predictions. The parts are discovered directly from an image, in a similar manner, by using a neural encoder, which infers parts and their affine transformations. The corresponding decoder models each image pixel as a mixture of predictions made by affine-transformed parts. We learn object- and their part-capsules on unlabeled data, and then cluster the vectors of presences of object capsules. When told the names of these clusters, we achieve state-of-the-art results for unsupervised classification on SVHN (55%) and near state-of-the-art on MNIST (98.5%)."
 
+  - `post` <http://akosiorek.github.io/ml/2019/06/23/stacked_capsule_autoencoders.html>
+  - `video` <https://youtu.be/zRg3IuxaJ6I?t=27m49s> (Sabour)
   - `notes` <https://medium.com/syncedreview/geoffrey-hintons-unsupervised-capsule-networks-achieve-sota-results-on-svhn-ffe05e871249>
 
 
@@ -2386,7 +2393,10 @@ Yoshua Bengio:
 >	- self-attention (restricted): O(n/r)"  
 
 ----
-  > "Capsules is the theory of how you do visual perception using reconstruction, and also how you route information to the right places. In standard neural nets, the information, the activity in the layer, just automatically goes somewhere; you don't decide where to send it. The idea of capsules was to make decisions about where to send information. Now, since I started working on capsules, some other very smart people at Google invented transformers, which are doing the same thing. They're deciding where to route information, and that's a big win."
+>	"Transformer models are seq2seq models that differ from classical seq2seq architectures in the sense that they are not auto-regressive and do not make use of single-dimensional convolutions. They have proven useful in several domains, mainly due to the absence of locality bias and to the O(1) path length between pairs of distinct sequence elements. As a side-note, the O(1) number of sequential operations between elements is not always guaranteed. Indeed, for computational performance purposes, a limit is imposed on the size of the self-attentional window, thus very long sequences break this assumption."
+
+----
+>	"Capsules is the theory of how you do visual perception using reconstruction, and also how you route information to the right places. In standard neural nets, the information, the activity in the layer, just automatically goes somewhere; you don't decide where to send it. The idea of capsules was to make decisions about where to send information. Now, since I started working on capsules, some other very smart people at Google invented transformers, which are doing the same thing. They're deciding where to route information, and that's a big win."
 
   - `post` <https://research.googleblog.com/2017/08/transformer-novel-neural-network.html>
   - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747?t=1107> (Vaswani, Shazeer)
