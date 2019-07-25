@@ -79,9 +79,10 @@
 
   "How can we build machines that learn the meanings of words more like the way that human children do? Children can learn words from minimal data, often just one or a few positive examples (one-shot learning). Children learn to learn: they acquire powerful inductive biases for new word meanings in the course of learning their first words. Children can learn words for abstract concepts or types of concepts that have little or no direct perceptual correlate. Children's language can be highly context-sensitive, with parameters of word meaning that must be computed anew for each context rather than simply stored. Children learn function words: words whose meanings are expressed purely in how they compose with the meanings of other words. Children learn whole systems of words together, in mutually constraining ways, such as color terms, number words, or spatial prepositions. Children learn word meanings that not only describe the world but can be used for reasoning, including causal and counterfactual reasoning. Bayesian learning defined over appropriately structured representations - hierarchical probabilistic models, generative process models, and compositional probabilistic languages - provides a basis for beginning to address these challenges."
 
-  "If our goal is to build knowledge representations sufficient for human-level AI, it is natural to draw inspiration from the content and form of knowledge representations in human minds. Cognitive science has made significant relevant progress in the last several decades, and I can talk about several lessons AI researchers might take from it. First, rather than beginning by trying to extract commonsense knowledge from language, we should begin (as humans do) by capturing in computational terms the core of common sense that exists in prelinguistic infants, roughly 12 months and younger. This is knowledge about physical objects, intentional agents, and their causal interactions -- an intuitive physics with concepts analogous to force, mass and the dynamics of motion, and an intuitive psychology with concepts analogous to beliefs, desires and intentions, or probabilistic expectations, utilities and plans -- which is grounded in perception but has at its heart powerful abstractions that can extend far beyond our direct perceptual experience. Second, we should explore approaches for linguistic meaning, language understanding and language-based common-sense reasoning that build naturally on top of this common-sense core. Both of these considerations strongly favor an approach to knowledge representation based on probabilistic programs, a framework that combines the assets of traditional probabilistic and symbolic approaches."
+  "If our goal is to build knowledge representations sufficient for human-level AI, it is natural to draw inspiration from the content and form of knowledge representations in human minds. First, rather than beginning by trying to extract commonsense knowledge from language, we should begin (as humans do) by capturing in computational terms the core of common sense that exists in prelinguistic infants, roughly 12 months and younger. This is knowledge about physical objects, intentional agents, and their causal interactions -- an intuitive physics with concepts analogous to force, mass and the dynamics of motion, and an intuitive psychology with concepts analogous to beliefs, desires and intentions, or probabilistic expectations, utilities and plans -- which is grounded in perception but has at its heart powerful abstractions that can extend far beyond our direct perceptual experience. Second, we should explore approaches for linguistic meaning, language understanding and language-based common-sense reasoning that build naturally on top of this common-sense core. Both of these considerations strongly favor an approach to knowledge representation based on probabilistic programs, a framework that combines the assets of traditional probabilistic and symbolic approaches."
 
   *(Josh Tenenbaum)*
+
 
 
 ----
@@ -101,6 +102,7 @@
   ["Epistemological Databases for Probabilistic Knowledge Base Construction"](http://scholarworks.umass.edu/cgi/viewcontent.cgi?article=1338&context=dissertations_2) thesis by Michael Wick `paper`  
   ["Managing Large-scale Probabilistic Databases"](http://pages.cs.wisc.edu/~chrisre/papers/re_thesis.pdf) thesis by Christopher Re `paper`  
   ["Effective Distant Supervision for End-To-End Knowledge Base Population Systems"](http://scidok.sulb.uni-saarland.de/volltexte/2015/5983/pdf/thesis_finale_fassung.pdf) thesis by Benjamin Roth `paper`  
+
 
 
 ----
@@ -600,8 +602,6 @@
 
   Tractable Markov Logic  
 
-  (Pedro Domingos) "I'm working on Markov logic networks, with an emphasis on scaling them up to big data. Our approach is to use tractable subsets of Markov logic, in the same way that SQL is a tractable subset of first-order logic. One of our current projects is to build something akin to Google's knowledge graph, but much richer, based on data from Freebase, DBpedia, etc. We call it a Tractable Probabilistic Knowledge Base - and it can answer questions about the entities and relations in Wikipedia, etc. We're planning to make a demo version available on the Web, and then we can learn from users' interactions with it."
-
   [overview](http://youtube.com/watch?v=6ZJzfRdCZjc) by Pedro Domingos `video`
 
   ["Tractable Probabilistic Knowledge Bases: Wikipedia and Beyond"](http://aaai.org/ocs/index.php/WS/AAAIW14/paper/download/8722/8239) by Niepert and Domingos `paper`  
@@ -695,6 +695,16 @@
 ### knowledge representation - probabilistic program
 
   [**probabilistic programming**](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)
+
+----
+
+  "Probabilistic graphical models provide a formal lingua franca for modeling and a common target for efficient inference algorithms. However, many of the most innovative and useful probabilistic models published by the AI, machine learning, and statistics community far outstrip the representational capacity of graphical models and associated inference techniques. Models are communicated using a mix of natural language, pseudo code, and mathematical formulae and solved using special purpose, one-off inference methods. Rather than precise specifications suitable for automatic inference, graphical models typically serve as coarse, high-level descriptions, eliding critical aspects such as fine-grained independence, abstraction and recursion. Probabilistic programming languages aim to close this representational gap, unifying general purpose programming with probabilistic modeling; literally, users specify a probabilistic model in its entirety (e.g., by writing code that generates a sample from the joint distribution) and inference follows automatically given the specification. These languages provide the full power of modern programming languages for describing complex distributions, and can enable reuse of libraries of models, support interactive modeling and formal verification, and provide a much-needed abstraction barrier to foster generic, efficient inference in universal model classes."
+
+  *(Pedro Domingos)*
+
+  "Probabilistic programs express generative models, i.e., formal descriptions of processes that generate data. To the extent that we can mirror mechanisms “out there in the world” in a formal language, we can pose queries within this language and expect the answer to line up with what happens in the real world. For example, if we can accurately describe how genes give rise to proteins, this helps us in predicting which genetic changes lead to desirable results and which lead to harm. Traditionally, Bayesian networks have been used to formalize and reason about such processes. While extremely useful, this formalism is limited in its expressive power compared to programming languages in general. Probabilistic programming languages provide a substrate for computational modeling that brings together Bayesian statistics and Turing-complete programming languages."
+
+  *(Andreas Stuhlmueller)*
 
 
 
@@ -800,6 +810,10 @@
   [**knowledge representation - probabilistic database**](#knowledge-representation---probabilistic-database)  
   [**knowledge representation - probabilistic program**](#knowledge-representation---probabilistic-program)  
 
+----
+
+  "What is the structure of thought? The language of thought hypothesis proposes that thoughts are expressions in a mental language, and that thinking consists of syntactic manipulation of these expressions. The probabilistic language of thought hypothesis suggests that these representations have probabilistic meaning. If we treat concepts as stochastic programs and thinking as approximate Bayesian inference, can we predict human behavior in experimental settings better than using other approaches?"
+
 
 
 ---
@@ -813,38 +827,46 @@
 
 ----
 
+  [**knowledge representation - probabilistic program**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-program)
+
+----
+
   ["What Are Probabilistic Models of Cognition?"](http://jhamrick.github.io/quals/responses/response1.pdf) by Jessica Hamrick `notes`
+
+  ["Towards More Human-like Concept Learning in Machines: Compositionality, Causality, and Learning-to-learn"](http://cims.nyu.edu/~brenden/LakePhDThesis.pdf) by Brenden Lake `paper`  
+  ["Concepts in a Probabilistic Language of Thought"](https://web.stanford.edu/~ngoodman/papers/ConceptsChapter-final.pdf) by Goodman, Tenenbaum, Gerstenberg `paper`  
+  ["Modeling Cognition with Probabilistic Programs: Representations and Algorithms"](https://stuhlmueller.org/papers/stuhlmueller-phdthesis.pdf) by Andreas Stuhlmueller `paper`  
 
   ["Probabilistic Models of Cognition"](http://probmods.org) by Noah Goodman and Josh Tenenbaum `book`  
   ["Modeling Agents with Probabilistic Programs"](http://agentmodels.org) by Owain Evans, Andreas Stuhlmuller, John Salvatier and Daniel Filan `book`  
 
-  ["Concepts in a Probabilistic Language of Thought"](https://web.stanford.edu/~ngoodman/papers/ConceptsChapter-final.pdf) by Goodman, Tenenbaum, Gerstenberg `paper`  
-  ["Modeling Cognition with Probabilistic Programs: Representations and Algorithms"](https://stuhlmueller.org/papers/stuhlmueller-phdthesis.pdf) by Andreas Stuhlmueller `paper`  
-  ["Towards More Human-like Concept Learning in Machines: Compositionality, Causality, and Learning-to-learn"](http://cims.nyu.edu/~brenden/LakePhDThesis.pdf) by Brenden Lake `paper`  
-
 ----
 
-  ["Engineering and Reverse Engineering Intelligence with Probabilistic Programs, Program Induction, and Deep Learning"](https://vimeo.com/248502450) by Josh Tenenbaum and Vikash Mansinghka `video`  
-  ["Towards More Human-like Intelligence in Machines"](https://youtube.com/watch?v=0Tj6CeYCmzw) by Josh Tenenbaum `video`  
-  ["Building Machines That See, Learn and Think Like People"](https://youtube.com/watch?v=7ROelYvo8f0) by Joshua Tenenbaum `video`  
-  ["Building Machines That Learn and Think Like People"](https://facebook.com/icml.imls/videos/432412777273243?t=4362) by Josh Tenenbaum `video`  
-  ["Engineering & Reverse-Engineering Human Common Sense"](https://youtube.com/watch?v=hfoeRiZU5YQ) by Josh Tenenbaum `video`  
-  ["Cognitive Foundations for Common-sense Knowledge Representation and Reasoning"](https://youtube.com/watch?v=oSAG57plHnI) by Josh Tenenbaum `video`  
-  ["Building Machines That Learn Like Humans"](https://youtube.com/watch?v=quPN7Hpk014) by Josh Tenenbaum `video`  
-  ["Towards More Human-like Machine Learning of Word Meanings"](http://techtalks.tv/talks/towards-more-human-like-machine-learning-of-word-meanings/54913/) by Josh Tenenbaum `video`  
-  ["How to Grow a Mind: Statistics, Structure, and Abstraction"](http://videolectures.net/aaai2012_tenenbaum_grow_mind/) by Josh Tenenbaum `video`  
-  ["Development of Intelligence: Bayesian Inference"](http://youtube.com/watch?v=icEdI0AIOlU) by Josh Tenenbaum `video`  
-  ["Machine vs Human Learning"](http://youtube.com/watch?v=UNYnpO1mkT4) by Josh Tenenbaum `video`  
+  overview by Josh Tenenbaum:  
+  - ["Towards More Human-like Intelligence in Machines"](https://youtube.com/watch?v=0Tj6CeYCmzw) `video`  
+  - ["Engineering and Reverse Engineering Intelligence with Probabilistic Programs, Program Induction, and Deep Learning"](https://vimeo.com/248502450) `video`  
+  - ["Building Machines That See, Learn and Think Like People"](https://youtube.com/watch?v=7ROelYvo8f0) `video`  
+  - ["Building Machines That Learn and Think Like People"](https://facebook.com/icml.imls/videos/432412777273243?t=4362) `video`  
+  - ["The Cognitive Science Perspective: Reverse-engineering the Mind"](https://youtube.com/watch?v=Z3mFBEOH2y4) `video`  
+  - ["Engineering & Reverse-Engineering Human Common Sense"](https://youtube.com/watch?v=hfoeRiZU5YQ) `video`  
+  - ["Cognitive Foundations for Common-sense Knowledge Representation and Reasoning"](https://youtube.com/watch?v=oSAG57plHnI) `video`  
+  - ["Building Machines That Learn Like Humans"](https://youtube.com/watch?v=quPN7Hpk014) `video`  
+  - ["Towards More Human-like Machine Learning of Word Meanings"](http://techtalks.tv/talks/towards-more-human-like-machine-learning-of-word-meanings/54913/) `video`  
+  - ["How to Grow a Mind: Statistics, Structure, and Abstraction"](http://videolectures.net/aaai2012_tenenbaum_grow_mind/) `video`  
+  - ["Development of Intelligence: Bayesian Inference"](http://youtube.com/watch?v=icEdI0AIOlU) `video`  
+  - ["Machine vs Human Learning"](http://youtube.com/watch?v=UNYnpO1mkT4) `video`  
 
-----
+  "Intelligence is not just about pattern recognition and prediction. It is about modeling the world. Explaining and understanding what we see. Imagining things we could see but haven't yet. Problem solving and planning actions to make these things real. Building new models as we learn more about the world. Sharing our models, communicating to others, understanding their models, and learning from them and with them."
 
-  [**knowledge representation - probabilistic program**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-program)
+  "Learning as theory building, not data analysis. Knowledge grows through hypothesis and explanation driven interpretations of sparse data. Human knowledge is more like a codebase than the weights of a neural network or bayesian network. What kinds of programs are in the codebase? Human learning is more like coding than stochastic gradient descent or sampling. Learning algorithms are programs that write code. What kinds of programs are these?"
+
+  *(Josh Tenenbaum)*
 
 ----
 
   "Humans have the capacity to draw commonsense inferences: things that are likely but not certain to hold based on established discourse and are rarely stated explicitly. A program has common sense if it automatically deduces for itself a sufficiently wide class of immediate consequences of anything it is told and what it already knows."
 
-  "Requirement of common-sense knowledge in language understanding has been long-cited. This knowledge is viewed as a key component in filling in the gaps between the telegraphic style of natural language statements: we are able to convey considerable information in a relatively sparse channel, presumably owing to a partially shared model at the start of any discourse. Common-sense inference - inferences based on common-sense knowledge - is possibilistic: things everyone more or less would expect to hold in a given context, but without always the strength of logical entailment."
+  "Requirement of commonsense knowledge in language understanding has been long-cited. This knowledge is viewed as a key component in filling in the gaps between the telegraphic style of natural language statements: we are able to convey considerable information in a relatively sparse channel, presumably owing to a partially shared model at the start of any discourse. Commonsense inference - inferences based on commonsense knowledge - is possibilistic: things everyone more or less would expect to hold in a given context, but without always the strength of logical entailment."
 
   "Deriving the knowledge needed to perform these inferences exclusively from corpora has led to results most accurately considered models of language, rather than of the world. Facts such that a person walking into a room is very likely to be regularly blinking and breathing are not often explicitly stated, so their real-world likelihoods do not align to language model probabilities. We would like a system capable of reading a sentence describing some situation, such as found in a newspaper, and be able to infer how likely other statements hold of that situation, in the real world. This as compared to, e.g., knowing the likelihood of the next observed sentence in that newspaper article."
 
@@ -1892,11 +1914,15 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 [papers](http://nlp.cs.rpi.edu/kbp/2017/elreading.html) on entity discovery and linking  
 
 
-#### ["Alexandria: Unsupervised High-Precision Knowledge Base Construction using a Probabilistic Program"](https://openreview.net/forum?id=rJgHCgc6pX) Winn et al.
+#### ["Alexandria: Unsupervised High-Precision Knowledge Base Construction using a Probabilistic Program"](https://microsoft.com/research/publication/alexandria-unsupervised-high-precision-knowledge-base-construction-using-a-probabilistic-program) Winn et al.
   `knowledge base population` `Microsoft Satori`
 >	"Creating a knowledge base that is accurate, up-to-date and complete remains a significant challenge despite substantial efforts in automated knowledge base construction.  In this paper, we present Alexandria -- a system for unsupervised, high-precision knowledge base construction. Alexandria uses a probabilistic program to define a process of converting knowledge base facts into unstructured text.  Using probabilistic inference, we can invert this program and so retrieve facts, schemas and entities from web text. The use of a probabilistic program allows uncertainty in the text to be propagated through to the retrieved facts, which increases accuracy and helps merge facts from multiple sources. Because Alexandria does not require labelled training data, knowledge bases can be constructed with the minimum of manual input. We demonstrate this by constructing a high precision (typically 97\%+) knowledge base for people from a single seed fact."
 
+>	"can discover facts, entities and type schema"
+
   - `post` <https://devblogs.microsoft.com/dotnet/announcing-ml-net-0-6-machine-learning-net>
+  - `video` <https://youtu.be/g_LSbqLBdM0?t=8m53s> (Zaykov)
+  - `paper` ["Belief Propagation with Strings"](https://microsoft.com/research/publication/belief-propagation-strings/) by Yangel, Minka, Winn
 
 
 #### ["From Data Fusion to Knowledge Fusion"](http://www.vldb.org/pvldb/vol7/p881-dong.pdf) Dong et al.

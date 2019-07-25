@@ -26,8 +26,6 @@
   - ["The Data Processing Inequality"](https://medium.com/@akelleh/the-data-processing-inequality-da242b40800b)
   - ["Causal Graph Inference"](https://medium.com/@akelleh/causal-graph-inference-b3e3afd47110)
 
-  ["Causal Inference and Counterfactual Reasoning"](https://causalinference.gitlab.io/icwsm-tutorial) tutorial by Emre Kiciman and Amit Sharma `slides`
-
   ["If Correlation Doesn’t Imply Causation, then What Does?"](http://michaelnielsen.org/ddi/if-correlation-doesnt-imply-causation-then-what-does) by Michael Nielsen  
   ["Causality in Machine Learning"](http://unofficialgoogledatascience.com/2017/01/causality-in-machine-learning.html) by Muralidharan et al.  
   ["Latent Variables and Model Mis-specification"](https://jsteinhardt.wordpress.com/2017/01/10/latent-variables-and-model-mis-specification/) by Jacob Steinhardt  

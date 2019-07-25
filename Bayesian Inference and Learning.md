@@ -1,5 +1,6 @@
   Bayesian inference is application of Bayes' theorem to update probability of hypothesis as more evidence becomes available.
 
+
   * [**introduction**](#introduction)
   * [**overview**](#overview)
     - [**bayesian deep learning**](#overview)
@@ -374,8 +375,6 @@
 
   Variational inference is an umbrella term for algorithms which cast Bayesian inference as optimization.
 
-  Variational inference approximates Bayesian posterior distribution over a set of latent variables W by optimising the evidence lower bound (ELBO) L(q) = Eq(W)[log p(Y|X,W)] − DKL(q(W)||p(W)) with respect to approximate posterior q(W).
-
 ----
 
   [overview](https://metacademy.org/roadmaps/rgrosse/bayesian_machine_learning#variational-inference) by Roger Grosse
@@ -464,17 +463,9 @@
 
 ----
 
-  ["Variational Inference: Tricks of the Trade"](http://blog.shakirm.com/2015/01/variational-inference-tricks-of-the-trade/) by Shakir Mohamed
-
-----
-#### pathwise derivative estimator for gradient of ELBO
-
-  [reparametrization trick](http://blog.shakirm.com/2015/10/machine-learning-trick-of-the-day-4-reparameterisation-tricks/)
-
-----
-#### likelihood ratio estimator for gradient of ELBO
-
-  [log derivative trick](http://blog.shakirm.com/2015/11/machine-learning-trick-of-the-day-5-log-derivative-trick/)
+  ["Variational Inference: Tricks of the Trade"](http://blog.shakirm.com/2015/01/variational-inference-tricks-of-the-trade/) by Shakir Mohamed  
+  - [reparametrization trick](http://blog.shakirm.com/2015/10/machine-learning-trick-of-the-day-4-reparameterisation-tricks/)  *(pathwise derivative estimator for gradient of ELBO)*  
+  - [log derivative trick](http://blog.shakirm.com/2015/11/machine-learning-trick-of-the-day-5-log-derivative-trick/)  *(likelihood ratio estimator for gradient of ELBO)*  
 
 
 
@@ -603,6 +594,7 @@
 [**interesting papers - probabilistic programming - applications**](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md#interesting-papers---applications)  
 
 
+----
 #### ["A Generative Vision Model that Trains with High Data Efficiency and Breaks Text-based CAPTCHAs"](http://science.sciencemag.org/content/early/2017/10/26/science.aag2612.full) George et al.
 >	"Learning from few examples and generalizing to dramatically different situations are capabilities of human visual intelligence that are yet to be matched by leading machine learning models. By drawing inspiration from systems neuroscience, we introduce a probabilistic generative model for vision in which message-passing based inference handles recognition, segmentation and reasoning in a unified way. The model demonstrates excellent generalization and occlusion-reasoning capabilities, and outperforms deep neural networks on a challenging scene text recognition benchmark while being 300-fold more data efficient. In addition, the model fundamentally breaks the defense of modern text-based CAPTCHAs by generatively segmenting characters without CAPTCHA-specific heuristics. Our model emphasizes aspects like data efficiency and compositionality that may be important in the path toward general artificial intelligence."
 
@@ -662,18 +654,29 @@
 >	"We present a new Bayesian skill rating system which can be viewed as a generalisation of the Elo system used in Chess. The new system tracks the uncertainty about player skills, explicitly models draws, can deal with any number of competing entities and can infer individual skills from team results. Inference is performed by approximate message passing on a factor graph representation of the model. We present experimental evidence on the increased accuracy and convergence speed of the system compared to Elo and report on our experience with the new rating system running in a large-scale commercial online gaming service under the name of TrueSkill."
 
   - <http://trueskill.org>
-  - `video` <https://youtube.com/watch?v=Y3obG7F1crw&t=32m28s> (Bishop)
+  - `video` <https://youtu.be/g_LSbqLBdM0?t=5m56s> (Zaykov)
+  - `video` <https://youtu.be/Y3obG7F1crw?t=32m28s> (Bishop)
   - `video` <http://videolectures.net/ecmlpkdd2010_graepel_mlm/> (Graepel)
+  - `video` <https://youtu.be/nZjkZR9FPxo?t=40m27s> (Guiver)
+  - `video` <https://youtu.be/ZHERrzVDTiU?t=27m57s> (Yangel) `in russian`
   - `post` <http://moserware.com/2010/03/computing-your-skill.html>
   - `paper` ["The Math Behind TrueSkill"](http://www.moserware.com/assets/computing-your-skill/The%20Math%20Behind%20TrueSkill.pdf) by Jeff Moser
-  - `paper` ["TrueSkill 2: An Improved Bayesian Skill Rating System"](https://microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system) by Minka, Cleven, Zaykov
+  - `paper` ["TrueSkill 2: An Improved Bayesian Skill Rating System"](#trueskill-2-an-improved-bayesian-skill-rating-system-minka-cleven-zaykov) by Minka, Cleven, Zaykov `summary`
 
 
-#### ["Matchbox: Large Scale Bayesian Recommendations"](http://research.microsoft.com/apps/pubs/default.aspx?id=79460) Stern, Herbrich, Graepel
+#### ["TrueSkill 2: An Improved Bayesian Skill Rating System"](https://microsoft.com/research/publication/trueskill-2-improved-bayesian-skill-rating-system) Minka, Cleven, Zaykov
+>	"Online multiplayer games, such as Gears of War and Halo, use skill-based matchmaking to give players fair and enjoyable matches. They depend on a skill rating system to infer accurate player skills from historical data. TrueSkill is a popular and effective skill rating system, working from only the winner and loser of each game. This paper presents an extension to TrueSkill that incorporates additional information that is readily available in online shooters, such as player experience, membership in a squad, the number of kills a player scored, tendency to quit, and skill in other game modes. This extension, which we call TrueSkill2, is shown to significantly improve the accuracy of skill ratings computed from Halo 5 matches. TrueSkill2 predicts historical match outcomes with 68% accuracy, compared to 52% accuracy for TrueSkill."
+
+  - `video` <https://youtu.be/g_LSbqLBdM0?t=5m56s> (Zaykov)
+  - `paper` ["TrueSkill(TM): A Bayesian Skill Rating System"](#trueskilltm-a-bayesian-skill-rating-system-herbrich-minka-graepel) by Herbrich, Minka, Graepel `summary`
+
+
+#### ["Matchbox: Large Scale Bayesian Recommendations"](https://microsoft.com/research/publication/matchbox-large-scale-bayesian-recommendations) Stern, Herbrich, Graepel
 >	"We present a probabilistic model for generating personalised recommendations of items to users of a web service. The Matchbox system makes use of content information in the form of user and item meta data in combination with collaborative filtering information from previous user behavior in order to predict the value of an item for a user. Users and items are represented by feature vectors which are mapped into a low-dimensional ‘trait space’ in which similarity is measured in terms of inner products. The model can be trained from different types of feedback in order to learn user-item preferences. Here we present three alternatives: direct observation of an absolute rating each user gives to some items, observation of a binary preference (like/don’t like) and observation of a set of ordinal ratings on a user-specific scale. Efficient inference is achieved by approximate message passing involving a combination of Expectation Propagation and Variational Message Passing. We also include a dynamics model which allows an item’s popularity, a user’s taste or a user’s personal rating scale to drift over time. By using Assumed-Density Filtering for training, the model requires only a single pass through the training data. This is an on-line learning algorithm capable of incrementally taking account of new data so the system can immediately reflect the latest user preferences. We evaluate the performance of the algorithm on the MovieLens and Netflix data sets consisting of approximately 1,000,000 and 100,000,000 ratings respectively. This demonstrates that training the model using the on-line ADF approach yields state-of-the-art performance with the option of improving performance further if computational resources are available by performing multiple EP passes over the training data."
 
-  - <https://dotnet.github.io/infer/userguide/Learners/Matchbox%20recommender.html>
+  - `post` <https://devblogs.microsoft.com/dotnet/dot-net-recommendation-system-for-net-applications-using-azure-machine-learning/>
   - `video` <http://videolectures.net/ecmlpkdd2010_graepel_mlm/#t=1265> (Graepel)
+  - `post` <https://dotnet.github.io/infer/userguide/Learners/Matchbox%20recommender.html>
 
 
 #### ["Bayesian Optimization in AlphaGo"](https://arxiv.org/abs/1812.06855) Chen, Huang, Wang, Antonoglou, Schrittwieser, Silver, Freitas

@@ -3018,6 +3018,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 ---
 ### reinforcement learning - transfer
 
+#### ["Credit Assignment as a Proxy for Transfer in Reinforcement Learning"](https://arxiv.org/abs/1907.08027) Ferret et al.
+  `credit assignment`
+  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#credit-assignment-as-a-proxy-for-transfer-in-reinforcement-learning-ferret-et-al>
+
 ----
 #### ["DARLA: Improving Zero-Shot Transfer in Reinforcement Learning"](https://arxiv.org/abs/1707.08475) Higgins et al.
   `semantic representation`
