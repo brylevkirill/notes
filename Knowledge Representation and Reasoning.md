@@ -172,8 +172,6 @@
   ["Natural Language Understanding: Foundations and State-of-the-Art"](http://youtube.com/watch?v=mhHfnhh-pB4) by Percy Liang `video`
 	([write-up](http://topbots.com/4-different-approaches-natural-language-processing-understanding/))
 
-  ["A Survey of the Current State of Reading Comprehension"](http://matt-gardner.github.io/paper-thoughts/2016/12/08/reading-comprehension-survey.html) by Matt Gardner
-
 
 
 ---
@@ -444,7 +442,7 @@
 ---
 ### probabilistic database - BayesDB
 
-  [BayesDB](http://probcomp.org/bayesdb/) project
+  [BayesDB](http://probcomp.csail.mit.edu/software/bayesdb/) project
 
   [overview](https://youtube.com/watch?v=-8QMqSWU76Q) by Vikash Mansinghka `video`  
   [overview](https://youtu.be/Rte-y6ThwAQ?t=17m33s) by Vikash Mansinghka `video`  
@@ -844,6 +842,7 @@
 
   overview by Josh Tenenbaum:  
   - ["Towards More Human-like Intelligence in Machines"](https://youtube.com/watch?v=0Tj6CeYCmzw) `video`  
+  - ["Building Machines That Learn and Think Like People"](https://youtube.com/watch?v=gjc5h-czorI) `video`  
   - ["Engineering and Reverse Engineering Intelligence with Probabilistic Programs, Program Induction, and Deep Learning"](https://vimeo.com/248502450) `video`  
   - ["Building Machines That See, Learn and Think Like People"](https://youtube.com/watch?v=7ROelYvo8f0) `video`  
   - ["Building Machines That Learn and Think Like People"](https://facebook.com/icml.imls/videos/432412777273243?t=4362) `video`  

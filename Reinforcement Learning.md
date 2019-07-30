@@ -114,7 +114,8 @@
 
 	overview by Alex Irpan ([1](https://www.alexirpan.com/2019/02/22/alphastar.html), [2](https://www.alexirpan.com/2019/02/22/alphastar-part2.html))
 
-	[AlphaStar vs pro players](https://youtube.com/watch?v=cUTMhmVh1qs) games `video` ([highlights](https://youtube.com/watch?v=zgIFoepzhIo) by MaNa `video`, [highlights](https://youtube.com/watch?v=_YWmU-E2WFc) by Artosis `video`))
+	[AlphaStar vs pro players](https://youtube.com/watch?v=cUTMhmVh1qs) games `video` ([highlights](https://youtube.com/watch?v=zgIFoepzhIo) by MaNa `video`, [highlights](https://youtube.com/watch?v=_YWmU-E2WFc) by Artosis `video`))  
+	[AlphaStar vs Battle.net players](https://youtube.com/playlist?list=UU_2FZDFti08MI5WRaZUZSIQ) games `video`  
 
 ----
   - *Dota 2*  
@@ -202,6 +203,7 @@
 
 	["Mastering the Game of Go without Human Knowledge"](#mastering-the-game-of-go-without-human-knowledge-silver-et-al) by Silver et al. `paper` `summary`  
 	["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper` `summary`  
+	["Sample-Based Learning and Search with Permanent and Transient Memories"](https://researchgate.net/publication/221346457_Sample-based_learning_and_search_with_permanent_and_transient_memories) by Silver et al. ([talk](http://videolectures.net/icml08_silver_sbl) `video`) *(Dyna-2)*  
 	["Combining Online and Offline Knowledge in UCT"](http://machinelearning.org/proceedings/icml2007/papers/387.pdf) by Gelly and Silver `paper` ([talk](https://youtube.com/watch?v=Bm7zah_LrmE) `video`)  
 
 	[AlphaGo Zero overview](https://vimeo.com/252184928/#t=711) by David Silver `video`  
@@ -1852,20 +1854,6 @@ interesting recent papers:
   - `paper` ["Approximate Modified Policy Iteration and its Application to the Game of Tetris"](http://jmlr.org/papers/v16/scherrer15a.html) by Scherrer et al.
 
 
-#### ["Thinking Fast and Slow with Deep Learning and Tree Search"](https://arxiv.org/abs/1705.08439) Anthony, Tian, Barber
-  `Expert Iteration` `ExIt`
->	"Sequential decision making problems, such as structured prediction, robotic control, and game playing, require a combination of planning policies and generalisation of those plans. In this paper, we present Expert Iteration (ExIt), a novel reinforcement learning algorithm which decomposes the problem into separate planning and generalisation tasks. Planning new policies is performed by tree search, while a deep neural network generalises those plans. Subsequently, tree search is improved by using the neural network policy to guide search, increasing the strength of new plans. In contrast, standard deep Reinforcement Learning algorithms rely on a neural network not only to generalise plans, but to discover them too. We show that ExIt outperforms REINFORCE for training a neural network to play the board game Hex, and our final tree search agent, trained tabula rasa, defeats MoHex 1.0, the most recent Olympiad Champion player to be publicly released."
-
->	"Planning new policies is performed by tree search, while a deep neural network generalises those plans."  
->	"Expert Iteration can be viewed as an extension of Imitation Learning methods to domains where the best known experts are unable to achieve satisfactory performance. In standard IL an apprentice is trained to imitate the behaviour of an expert. In ExIt, we extend this to an iterative learning process. Between each iteration, we perform an Expert Improvement step, where we bootstrap the (fast) apprentice policy to increase the performance of the (comparatively slow) expert."  
->	"Imitation Learning is generally appreciated to be easier than Reinforcement Learning, and this partly explains why ExIt is more successful than model-free methods like REINFORCE. Furthermore, for MCTS to recommend a move, it must be unable to find any weakness with its search. Effectively, therefore, a move played by MCTS is good against a large selection of possible opponents. In contrast, in regular self play (in which the opponent move is made by the network playing as the opposite colour), moves are recommended if they beat only this single opponent under consideration. This is, we believe, a key insight into why ExIt works well (when using MCTS as the expert) - the apprentice effectively learns to play well against many opponents."  
-
->	"ExIt is closely analogous to the Bellman update in Q-learning and can be viewed as analog of dynamic programming where neural networks replace lookup tables."
-
-  - `post` <https://davidbarber.github.io/blog/2017/11/07/Learning-From-Scratch-by-Thinking-Fast-and-Slow-with-Deep-Learning-and-Tree-Search/> (Barber)
-  - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
-
-
 #### ["Mastering the Game of Go with Deep Neural Networks and Tree Search"](https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf) Silver et al.
 >	"The game of Go has long been viewed as the most challenging of classic games for artificial intelligence due to its enormous search space and the difficulty of evaluating board positions and moves. We introduce a new approach to computer Go that uses value networks to evaluate board positions and policy networks to select moves. These deep neural networks are trained by a novel combination of supervised learning from human expert games, and reinforcement learning from games of self-play. Without any lookahead search, the neural networks play Go at the level of state-of-the-art Monte-Carlo tree search programs that simulate thousands of random games of self-play. We also introduce a new search algorithm that combines Monte-Carlo simulation with value and policy networks. Using this search algorithm, our program AlphaGo achieved a 99.8% winning rate against other Go programs, and defeated the European Go champion by 5 games to 0. This is the first time that a computer program has defeated a human professional player in the full-sized game of Go, a feat previously thought to be at least a decade away."
 
@@ -1882,6 +1870,44 @@ interesting recent papers:
   - `notes` <https://github.com/Rochester-NRT/RocAlphaGo/wiki>
   - `code` <https://github.com/brilee/MuGo>
   - `code` <https://github.com/maxpumperla/deep_learning_and_the_game_of_go>
+
+
+#### ["Thinking Fast and Slow with Deep Learning and Tree Search"](https://arxiv.org/abs/1705.08439) Anthony, Tian, Barber
+  `Expert Iteration` `ExIt`
+>	"Sequential decision making problems, such as structured prediction, robotic control, and game playing, require a combination of planning policies and generalisation of those plans. In this paper, we present Expert Iteration (ExIt), a novel reinforcement learning algorithm which decomposes the problem into separate planning and generalisation tasks. Planning new policies is performed by tree search, while a deep neural network generalises those plans. Subsequently, tree search is improved by using the neural network policy to guide search, increasing the strength of new plans. In contrast, standard deep Reinforcement Learning algorithms rely on a neural network not only to generalise plans, but to discover them too. We show that ExIt outperforms REINFORCE for training a neural network to play the board game Hex, and our final tree search agent, trained tabula rasa, defeats MoHex 1.0, the most recent Olympiad Champion player to be publicly released."
+
+>	"Planning new policies is performed by tree search, while a deep neural network generalises those plans."  
+>	"Expert Iteration can be viewed as an extension of Imitation Learning methods to domains where the best known experts are unable to achieve satisfactory performance. In standard IL an apprentice is trained to imitate the behaviour of an expert. In ExIt, we extend this to an iterative learning process. Between each iteration, we perform an Expert Improvement step, where we bootstrap the (fast) apprentice policy to increase the performance of the (comparatively slow) expert."  
+>	"Imitation Learning is generally appreciated to be easier than Reinforcement Learning, and this partly explains why ExIt is more successful than model-free methods like REINFORCE. Furthermore, for MCTS to recommend a move, it must be unable to find any weakness with its search. Effectively, therefore, a move played by MCTS is good against a large selection of possible opponents. In contrast, in regular self play (in which the opponent move is made by the network playing as the opposite colour), moves are recommended if they beat only this single opponent under consideration. This is, we believe, a key insight into why ExIt works well (when using MCTS as the expert) - the apprentice effectively learns to play well against many opponents."  
+
+>	"ExIt is closely analogous to the Bellman update in Q-learning and can be viewed as analog of dynamic programming where neural networks replace lookup tables."
+
+>	"ExIt is a version of Approximate Policy Iteration, where the policy improvement operator performs a multiple-step policy improvement, rather than a 1-step greedy improvement."
+
+  - `post` <https://davidbarber.github.io/blog/2017/11/07/Learning-From-Scratch-by-Thinking-Fast-and-Slow-with-Deep-Learning-and-Tree-Search/> (Barber)
+  - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
+  - `paper` ["Dual Policy Iteration"](https://arxiv.org/abs/1805.10755) by Sun et al.
+
+
+#### ["Policy Gradient Search: Online Planning and Expert Iteration without Search Trees"](https://arxiv.org/abs/1904.03646) Anthony, Nishihara, Moritz, Salimans, Schulman
+  `Expert Iteration` `PGS-ExIt`
+>	"Monte Carlo Tree Search algorithms perform simulation-based search to improve policies online. During search, the simulation policy is adapted to explore the most promising lines of play. MCTS has been used by state-of-the-art programs for many problems, however a disadvantage to MCTS is that it estimates the values of states with Monte Carlo averages, stored in a search tree; this does not scale to games with very high branching factors. We propose an alternative simulation-based search method which adapts a neural network simulation policy online via policy gradient updates, avoiding the need for a search tree. In Hex, PGS achieves comparable performance to MCTS, and an agent trained using Expert Iteration with PGS was able defeat MoHex 2.0, the strongest open-source Hex agent, in 9x9 Hex."
+
+>	"We test PGS on 9x9 and 13x13 Hex, a domain where MCTS has been used in all state-of-the-art players since 2009. We find that PGS is significantly stronger than MCS, and competitive with MCTS. Additionally, we show that Policy Gradient Search Expert Iteration is able to defeat MOHEX 2.0 in 9x9 Hex tabula rasa, the first agent to do so without using explicit search trees."
+
+>	"MCTS builds an explicit search tree, storing visit counts and value estimates at each node - in other words, creating a tabular value function.  To be effective, this requires that nodes in the search tree are visited multiple times. This is true in many classical board games, but many real world problems have large branching factors that make MCTS hard to use. Large branching factors can be caused by very large action spaces, or chance nodes. In the case of large action spaces, a prior policy can be used to discount weak actions, reducing the effective branching factor. Stochastic transitions are harder to deal with, as prior policies cannot be used to reduce the branching factor at chance nodes. In contrast, Monte Carlo Search algorithms have no such requirement. Whereas MCTS uses value estimates in each node to adapt the simulation policy, MCS algorithms have a fixed simulation policy throughout the search. However, because MCS does not improve the quality of simulations during search, it produces significantly weaker play than MCTS."
+
+>	"Policy Gradient Search trains its simulation policy during search using policy gradient RL. This gives the advantages of an adaptive simulation policy, without requiring an explicit search tree to be built. Simulation policy is represented by a neural network with identical architecture to the global policy network. At the start of each game, the parameters of the policy network are set to those of the global policy network. Once we reach a final state for the simulation sL after t steps, we estimate the value of this state using the global value network, and use this estimate to update the simulation policy parameters using REINFORCE. These updates can be seen as fine-tuning the global policy to the current sub-game."
+
+>	"PGS is more expensive than MCS because it must perform the policy gradient update to the neural network parameters. The backward pass through our network takes approximately twice as long as the forward pass, making PGS 3-4 times more expensive than MCS. In order to reduce the computational cost of the algorithm, during policy gradient search, we adapt the parameters of the policy head only. This reduces the flops used by the backward pass by a factor of over 100, making the difference in computational cost between MCS and PGS negligible."
+
+>	"PGS-ExIt decomposes the overall RL problem into many sub-problems, one per self-play game, and attempts to solve (or at least make progress on) each of the sub-problems with a model-free RL algorithm. The solutions to sub-problems are distilled back into a global network."
+
+>	"PGS is also effective during training when used within the Expert Iteration framework, resulting in the first competitive Hex agent trained tabula rasa without use of a search tree. In contrast, similar REINFORCE algorithm alone was previously been found to not be competitve with an ExIt algorithm that used MCTS experts. Ablations show that PGS-ExIt significantly outperforms MCS in the Expert Iteration framework, and also provide the first empirical data showing that MCTS-ExIt algorithms outperform traditional policy iteration approaches."
+
+>	"The results presented in this work are on the deterministic, discrete action space domain of Hex. This allowed for direct comparison to MCTS, but the most exciting potential applications of PGS are to problems where MCTS cannot be readily used, such as problems with stochastic state transitions or continuous action spaces."
+
+  - `paper` ["Sample-Based Learning and Search with Permanent and Transient Memories"](https://researchgate.net/publication/221346457_Sample-based_learning_and_search_with_permanent_and_transient_memories) by Silver et al. ([talk](http://videolectures.net/icml08_silver_sbl) `video`) *(Dyna-2)*
 
 
 #### ["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](http://arxiv.org/abs/1701.01724) Moravcik et al.

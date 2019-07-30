@@ -318,21 +318,35 @@
   bayesian deep learning - bayesian concepts applied to deep learning methods  
   deep bayesian learning - deep learning concepts applied to bayesian methods  
 
-  deep learning (framework for constructing flexible models):  
+  deep learning:  
   - *(plus)* rich non-linear models for classification and sequence prediction  
   - *(plus)* scalable learning using stochastic approximations and conceptually simple  
   - *(plus)* easily composable with other gradient-based methods  
-  - *(minus)* only point estimates  
-  - *(minus)* hard to score models and do model selection  
-  - *(minus)* hard to do complexity penalisation  
+  - *(minus)* poor at representing uncertainty
+  - *(minus)* non-trivial to incorporate prior knowledge and symbolic representations
+  - *(minus)* eaisly fooled by adversarial examples
+  - *(minus)* finicky to optimise due to non-convexity and architecture peculiarities
+  - *(minus)* uninterpretable black-boxes, lacking in transparency, difficult to trust
 
-  bayesian reasoning (framework for inference and decision making):  
+  bayesian reasoning:  
   - *(plus)* unified framework for model building, inference, prediction and decision making  
   - *(plus)* explicit accounting for uncertainty and variability of outcomes  
   - *(plus)* robust to overfitting  
   - *(plus)* tools for model selection and composition  
   - *(minus)* mainly conjugate and linear models  
   - *(minus)* potentially intractable inference leading to expensive computation or long simulation times  
+
+----
+
+  bayesian deep learning can be implemented in many ways:  
+  - Laplace approximations (MacKay, 1992)  
+  - variational approximations (Hinton and van Camp, 1993; Graves, 2011)  
+  - Markov Chain Monte Carlo (Neal, 1993)  
+  - Stochastic gradient Langevin dynamics (SGLD, Welling and Teh, 2011)  
+  - Probabilistic back-propagation (Hernandez-Lobato et al., 2015)  
+  - Dropout as Bayesian averaging (Gal and Ghahramani, 2015)  
+  - Deep kernel learning (Wilson et al., 2016)  
+  - Gaussian Process Deep Neural Networks (Bradshaw et al., 2017)
 
 
 
@@ -343,7 +357,7 @@
 
   [tutorial](https://facebook.com/nipsfoundation/videos/795861577420073) by Alex Graves and Marc Aurelio Ranzato `video`
 
-  ["Goals and Principles of Representation Learning"](https://youtube.com/watch?v=2vxZbZC21Gg) by Ferenc Huszar `video`
+  ["Goals and Principles of Representation Learning"](https://youtu.be/2vxZbZC21Gg?t=7m3s) by Ferenc Huszar `video`
 
 ----
 
@@ -530,8 +544,7 @@
 
   ["Deep Generative Models"](http://www.deeplearningbook.org/contents/generative_models.html) chapter (section 20.10.3) of "Deep Learning" book by Goodfellow, Bengio, Courville
 
-  [tutorial](http://arxiv.org/abs/1606.05908) by Carl Doersch `paper` ([code](https://github.com/cdoersch/vae_tutorial))  
-  ["Variational Inference & Deep Learning: A New Synthesis"](https://dropbox.com/s/v6ua3d9yt44vgb3/cover_and_thesis.pdf) by Diederik Kingma `paper`  
+  ["An Introduction to Variational Autoencoders"](https://arxiv.org/abs/1906.02691) by Diederik Kingma and Max Welling `paper`
 
   [overview](https://youtu.be/7o9dT6puHHg?t=31m48s) by Aravind Srinivas `video`  
   overview ([1](https://youtu.be/NCRzGmM1ywE?t=1h11m23s), [2](https://youtu.be/0IoLKnAg6-s?t=1m11s), [3](https://youtube.com/watch?v=grsO57XMJMk)) by Peter Chen and Jonathan Ho `video`  
@@ -1653,6 +1666,7 @@ Yoshua Bengio:
   - `paper` ["Dropout as a Bayesian Approximation: Appendix"](http://arxiv.org/abs/1506.02157) by Gal and Ghahramani
   - `video` <http://research.microsoft.com/apps/video/default.aspx?id=259218> (Gal)
   - `video` <http://techtalks.tv/talks/dropout-as-a-bayesian-approximation-representing-model-uncertainty-in-deep-learning/62508/> (Gal)
+  - `video` <https://youtube.com/watch?v=I09QVNrUS3Q> (Rowan)
   - `video` <https://youtu.be/tqGEX_Ucu04?t=12m43s> (Molchanov) `in russian`
   - `post` <http://mlg.eng.cam.ac.uk/yarin/blog_3d801aa532c1ce.html> (Gal)
   - `post` <http://mlg.eng.cam.ac.uk/yarin/blog_2248.html> (Gal)

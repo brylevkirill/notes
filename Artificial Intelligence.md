@@ -360,11 +360,11 @@
 ---
 ### universal artificial intelligence - Solomonoff induction
 
-  [Algorithmic Probability](http://scholarpedia.org/article/Algorithmic_probability)
-
   [introduction](https://wiki.lesswrong.com/wiki/Solomonoff_induction)  
   [intuitive explanation](http://lesswrong.com/lw/dhg/an_intuitive_explanation_of_solomonoff_induction/)  
   ["How Bayes theorem is consistent with Solomonoff induction"](http://lesswrong.com/r/discussion/lw/di3/how_bayes_theorem_is_consistent_with_solomonoff/)  
+
+  [algorithmic probability](http://scholarpedia.org/article/Algorithmic_probability)
 
   [**interesting papers**](#interesting-papers---universal-artificial-intelligence)
 
@@ -378,6 +378,7 @@
   [overview](http://youtube.com/watch?v=vUUeHZJFN2Q) by Marcus Hutter `video`  
   [overview](http://vimeo.com/14888930) by Marcus Hutter `video`  
   [overview](http://youtube.com/watch?v=gb4oXRsw3yA) by Marcus Hutter `video`  
+  [overview](http://youtube.com/watch?v=YMdFUay0k20) by Marcus Hutter `video`  
 
   [tutorial](http://videolectures.net/ssll09_hutter_uai/) by Marcus Hutter `video`  
   [tutorial](http://videolectures.net/mlss08au_hutter_fund/) by Marcus Hutter `video`  

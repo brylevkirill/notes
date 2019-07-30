@@ -527,6 +527,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 #### ["Deep Amortized Inference for Probabilistic Programs"](http://arxiv.org/abs/1610.05735) Ritchie, Horsfall, Goodman
   `bayesian model`
+  - `video` <https://youtube.com/watch?v=jp3noyIYAbA> (Wood)
 
 #### ["Inference Compilation and Universal Probabilistic Programming"](http://arxiv.org/abs/1610.09900) Le, Baydin, Wood
   `bayesian model`
@@ -2247,7 +2248,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Blazing-the-trails-before-beating-the-path-Sample-efficient-Monte-Carlo-planning> (Grill)
 
 ----
-#### ["Understanding and Generalizing AlphaGo Zero"](https://openreview.net/forum?id=rkxtl3C5YX)
+#### ["Understanding and Generalizing AlphaGo Zero"](https://openreview.net/forum?id=rkxtl3C5YX) Addanki et al.
   `learning from planning` `using available environment model` `expert iteration`
 >	"We provide a formal framework to study AGZ. We argue that the self-play in AGZ corresponds to learning a Nash equilibrium for the two-player game; and the supervised learning with MCTS is attempting to learn the policy corresponding to the Nash equilibrium, by establishing a novel bound on the difference between the expected return achieved by two policies in terms of the expected KL divergence (cross-entropy) of their induced distributions."  
 >	"To extend AGZ to generic sequential decision-making problems, we introduce a robust MDP framework, in which the agent and nature effectively play a zero-sum game: the agent aims to take actions to maximize reward while nature seeks state transitions, subject to the constraints of that environment, that minimize the agent’s reward. For a challenging network scheduling domain, we find that AGZ within the robust MDP framework provides near-optimal performance, matching one of the best known scheduling policies that has taken the networking community three decades of intensive research to develop."  
@@ -2255,6 +2256,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	Question 1. What is the optimal policy that AGZ is trying to learn? We would like a formal model to understand how learning via self-play impacts the policy to which AGZ converges.  
 >	Question 2. Why is minimizing cross-entropy (or KL divergence) the right objective? We seek to precisely characterize the distribution under which cross-entropy should be evaluated, and derive quantitative performance guarantees that explain what optimizing for this metric achieves.  
 >	Question 3. How does AGZ extend to generic sequential decision-making problems? In generic sequential decision-making, the agent chooses actions and earns rewards while the state evolves per the environment. This is different from two-player zero-sum games for which AGZ was designed."  
+>	"The main result of the paper is that the policy learned by AGZ corresponds to a Nash equilibrium, that and that the cross-entropy minimization in the supervised learning-inspired part of the algorithm converges to this Nash equillibrium, proves a bound on the expected returns of two policies under the and introduces a "robust MDP" view of a 2 player zero-sum game played between the agent and nature."
 
 #### ["Dual Policy Iteration"](https://arxiv.org/abs/1805.10755) Sun, Gordon, Boots, Bagnell
   `learning from planning` `using available environment model` `expert iteration`
@@ -2264,6 +2266,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["ExpIt-OOS: Towards Learning from Planning in Imperfect Information Games"](https://arxiv.org/abs/1808.10120) Kitchen, Benedetti
   `ExpIt-OOS` `learning from planning` `using available environment model` `expert iteration`
 >	"A novel approach to playing imperfect information games within the Expert Iteration framework and inspired by AlphaZero. We use Online Outcome Sampling, an online search algorithm for imperfect information games in place of MCTS. While training online, our neural strategy is used to improve the accuracy of playouts in OOS, allowing a learning and planning feedback loop for imperfect information games."  
+
+#### ["Policy Gradient Search: Online Planning and Expert Iteration without Search Trees"](https://arxiv.org/abs/1904.03646) Anthony, Nishihara, Moritz, Salimans, Schulman
+  `PGS-ExIt` `learning from planning` `learning to plan` `using available environment model` `expert iteration`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#policy-gradient-search-online-planning-and-expert-iteration-without-search-trees-anthony-nishihara-moritz-salimans-schulman>
 
 #### ["Thinking Fast and Slow with Deep Learning and Tree Search"](https://arxiv.org/abs/1705.08439) Anthony, Tian, Barber
   `ExIt` `learning from planning` `using available environment model` `expert iteration`
@@ -3752,30 +3758,15 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-devlin-chang-lee-toutanova>
 
 ----
-#### ["No Training Required: Exploring Random Encoders for Sentence Classification"](https://arxiv.org/abs/1901.10444) Wieting, Kiela
-  `text embedding`
-  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#no-training-required-exploring-random-encoders-for-sentence-classification-wieting-kiela>
-
-#### ["A Simple but Tough-to-Beat Baseline for Sentence Embeddings"](https://openreview.net/pdf?id=SyK00v5xx) Arora, Liang, Ma
-  `text embedding`
-  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#a-simple-but-tough-to-beat-baseline-for-sentence-embeddings-arora-liang-ma>
-
-----
-#### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin
-  `Transformer` `sequence transduction`
-  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#attention-is-all-you-need-vaswani-shazeer-parmar-uszkoreit-jones-gomez-kaiser-polosukhin>
-
-#### ["Non-Autoregressive Neural Machine Translation"](https://arxiv.org/abs/1711.02281) Gu, Bradbury, Xiong, Li, Socher
-  `Transformer` `sequence transduction`
->	"Existing approaches to neural machine translation condition each output word on previously generated outputs. We introduce a model that avoids this autoregressive property and produces its outputs in parallel, allowing an order of magnitude lower latency during inference. Through knowledge distillation, the use of input token fertilities as a latent variable, and policy gradient fine-tuning, we achieve this at a cost of as little as 2.0 BLEU points relative to the autoregressive Transformer network used as a teacher."  
->	"parallel decoder in addition to parallel encoder - up to 8x speed-up"  
-  - `post` <https://einstein.ai/research/non-autoregressive-neural-machine-translation>
+#### ["Unsupervised Question Answering by Cloze Translation"](https://arxiv.org/abs/1906.04980) Lewis, Denoyer, Riedel
+  `extractive question answering` `ACL 2019`
+>	"We explore to what extent high quality training data is actually required for Extractive QA, and investigate the possibility of unsupervised Extractive QA. We approach this problem by first learning to generate context, question and answer triples in an unsupervised manner, which we then use to synthesize Extractive QA training data automatically. To generate such triples, we first sample random context paragraphs from a large corpus of documents and then random noun phrases or named entity mentions from these paragraphs as answers. Next we convert answers in context to "fill-in-the-blank" cloze questions and finally translate them into natural questions. We propose and compare various unsupervised ways to perform cloze-to-natural question translation, including training an unsupervised NMT model using non-aligned corpora of natural questions and cloze questions as well as a rule-based approach. We find that modern QA models can learn to answer human questions surprisingly well using only synthetic training data."
 
 #### ["Generating Wikipedia by Summarizing Long Sequences"](https://arxiv.org/abs/1801.10198) Liu, Saleh, Pot, Goodrich, Sepassi, Kaiser, Shazeer
-  `Transformer` `sequence transduction`
+  `extractive summarization`
 >	"Extractive summarization to coarsely identify salient information and a neural abstractive model to generate the article. For the abstractive model, decoder-only Transformer architecture that can scalably attend to very long sequences, much longer than typical encoder-decoder architectures used in sequence transduction."  
 
----
+----
 #### ["Phrase-Based & Neural Unsupervised Machine Translation"](https://arxiv.org/abs/1804.07755) Lample, Ott, Conneau, Denoyer, Ranzato
   `translation`
   - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#word-translation-without-parallel-data-conneau-lample-ranzato-denoyer-jegou>
@@ -3795,18 +3786,3 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Style Transfer from Non-Parallel Text by Cross-Alignment"](https://arxiv.org/abs/1705.09655) Shen, Lei, Barzilay, Jaakkola
   `translation`
   - `video` <https://facebook.com/nipsfoundation/videos/1554741734617060?t=4850> (Shen)
-
-----
-#### ["Bag of Tricks for Efficient Text Classification"](http://arxiv.org/abs/1607.01759) Joulin, Grave, Bojanowski, Mikolov
-  `fastText` `classification` 
->	"At par with deep learning models in terms of accuracy though an order of magnitude faster in performance."  
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1607.01759>
-  - `notes` <https://medium.com/paper-club/bag-of-tricks-for-efficient-text-classification-818bc47e90f>
-  - `code` <https://fasttext.cc>
-  - `code` <https://github.com/fchollet/keras/blob/master/examples/imdb_fasttext.py>
-
-----
-#### ["Discovering Discrete Latent Topics with Neural Variational Inference"](https://arxiv.org/abs/1706.00359) Miao, Grefenstette, Blunsom
-  `topic modeling`
->	"Traditional inference methods have sought closed-form derivations for updating the models, however as the expressiveness of these models grows, so does the difficulty of performing fast and accurate inference over their parameters. This paper presents alternative neural approaches to topic modelling by providing parameterisable distributions over topics which permit training by backpropagation in the framework of neural variational inference. In addition, with the help of a stick-breaking construction, we propose a recurrent network that is able to discover a notionally unbounded number of topics, analogous to Bayesian non-parametric topic models."  
-  - `video` <https://vimeo.com/238222598> (Miao)

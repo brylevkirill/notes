@@ -1,4 +1,4 @@
-  Bayesian inference is application of Bayes' theorem to update probability of hypothesis as more evidence becomes available.
+  Bayesian inference is application of Bayes' theorem to update probability of hypothesis as more data becomes available.
 
 
   * [**introduction**](#introduction)

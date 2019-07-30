@@ -45,11 +45,12 @@
 
   [Microsoft Office 365 Clutter](https://microsoft.com/research/blog/probabilistic-programming-goes-large-scale-from-reducing-email-clutter-to-any-machine-learning-task) ([overview](https://youtu.be/g_LSbqLBdM0?t=4m44s) `video`)  *(uses Infer.NET)*  
   [Microsoft TrueSkill](http://trueskill.org) ([overview](https://youtu.be/g_LSbqLBdM0?t=5m56s) `video`, [paper](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#trueskilltm-a-bayesian-skill-rating-system-herbrich-minka-graepel) `summary`, [paper](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#trueskill-2-an-improved-bayesian-skill-rating-system-minka-cleven-zaykov) `summary`)  *(uses Infer.NET)*  
-  [Microsoft Azure ML Matchbox](https://devblogs.microsoft.com/dotnet/dot-net-recommendation-system-for-net-applications-using-azure-machine-learning) ([overview](https://youtu.be/g_LSbqLBdM0?t=7m48s) `video`) ([paper](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#matchbox-large-scale-bayesian-recommendations-stern-herbrich-graepel) `summary`) *(uses Infer.NET)*  
-  [Microsoft Satori Alexandria](https://devblogs.microsoft.com/dotnet/announcing-ml-net-0-6-machine-learning-net) ([overview](https://youtu.be/g_LSbqLBdM0?t=8m53s) `video`) ([paper](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#alexandria-unsupervised-high-precision-knowledge-base-construction-using-a-probabilistic-program-winn-et-al) `summary`)  *(uses Infer.NET)*  
+  [Microsoft Azure ML Matchbox](https://devblogs.microsoft.com/dotnet/dot-net-recommendation-system-for-net-applications-using-azure-machine-learning) ([overview](https://youtu.be/g_LSbqLBdM0?t=7m48s) `video`, [paper](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#matchbox-large-scale-bayesian-recommendations-stern-herbrich-graepel) `summary`) *(uses Infer.NET)*  
+  [Microsoft Satori Alexandria](https://devblogs.microsoft.com/dotnet/announcing-ml-net-0-6-machine-learning-net) ([overview](https://youtu.be/g_LSbqLBdM0?t=8m53s) `video`, [paper](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#alexandria-unsupervised-high-precision-knowledge-base-construction-using-a-probabilistic-program-winn-et-al) `summary`)  *(uses Infer.NET)*  
   [Microsoft Excel](http://research.microsoft.com/en-us/projects/tabular/) ([overview](https://youtube.com/watch?v=jsJZkSpLmq4) `video`)  *(uses Infer.NET)*  
 
-  [Facebook Prophet](https://facebook.github.io/prophet/) ([overview](https://youtube.com/watch?v=pOYAXv15r3A) `video`, [post](https://research.fb.com/blog/2017/02/prophet-forecasting-at-scale/), [paper](http://lethalletham.com/ForecastingAtScale.pdf))  *(uses Stan)*
+  [Facebook Hack](https://youtube.com/watch?v=gn6M8MX8jpI) `video`  
+  [Facebook Prophet](https://facebook.github.io/prophet/) ([overview](https://youtube.com/watch?v=pOYAXv15r3A) `video`, [post](https://research.fb.com/blog/2017/02/prophet-forecasting-at-scale/), [paper](http://lethalletham.com/ForecastingAtScale.pdf))  *(uses Stan)*  
 
   [machine teaching](http://blogs.microsoft.com/next/2015/07/10/the-next-evolution-of-machine-learning-machine-teaching/)
 
@@ -75,19 +76,7 @@
 	[overview](https://youtube.com/watch?v=g_LSbqLBdM0) by Yordan Zaykov `video`  
 	[overview](http://youtube.com/watch?v=ZHERrzVDTiU) by Boris Yangel `video` `in russian`  
 
-  - [*TensorFlow*](https://www.tensorflow.org)
-
-	[TensorFlow Distributions](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/distributions) ([paper](https://arxiv.org/abs/1711.10604) by Dillon et al.)  
-	[BayesFlow](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/bayesflow)  
-
-  - [*Edward*](http://github.com/blei-lab/edward)
-
-	["Edward, and some motivations"](http://dustintran.com/blog/a-quick-update-edward-and-some-motivations/) by Dustin Tran  
-	["Deep Probabilistic Programming"](#deep-probabilistic-programming-tran-hoffman-saurous-brevdo-murphy-blei) by Tran et al. `paper` `summary`  
-
-	[overview](https://youtube.com/watch?v=PvyVahNl8H8) by Dustin Tran `video` ([slides](http://dustintran.com/talks/Tran_Edward.pdf))
-
-	[sample models](http://edwardlib.org/iclr2017)
+	[applications](#applications)
 
   - [*Stan*](https://github.com/stan-dev)
 
@@ -96,21 +85,33 @@
 
 	[Prophet](https://facebookincubator.github.io/prophet/) from Facebook
 
-  - [*PyMC*](https://github.com/pymc-devs)
+  - [*TensorFlow Probability*](https://tensorflow.org/probability)
 
-	["Probabilistic Programming and Bayesian Methods for Hackers"](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/) by Cam Davidson-Pilon `book`
+	[overview](https://youtube.com/watch?v=BrwKURU-wpk) by Joshua Dilon `video`
+
+	[TensorFlow Distributions](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/distributions) ([paper](https://arxiv.org/abs/1711.10604) by Dillon et al.)
+
+	["Probabilistic Programming and Bayesian Methods for Hackers"](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/#tensorflow) by Cam Davidson-Pilon `book` *(examples in TensorFlow Probability)*
+
+	[Edward2](https://github.com/tensorflow/probability/tree/master/tensorflow_probability/python/edward2) language ([overview](https://youtube.com/watch?v=NLhVfI8jYdQ) by Dustin Tran and Chris Suter `video`)  
+	[Edward](https://github.com/blei-lab/edward) language ([paper](#deep-probabilistic-programming-tran-hoffman-saurous-brevdo-murphy-blei) by Tran et al. `summary`, [overview](https://youtube.com/watch?v=4XZkHtHtQsk) by Dustin Tran `video`, [overview](https://youtu.be/1zNNLHyeWok?t=5m) by Dustin Tran `video`, [overview](https://youtube.com/watch?v=PvyVahNl8H8) by Dustin Tran `video` ([slides](http://dustintran.com/talks/Tran_Edward.pdf)))  
 
   - [*Pyro*](https://github.com/uber/pyro)
 
 	["Pyro: Deep Universal Probabilistic Programming"](https://arxiv.org/abs/1810.09538) by Bingham et al. `paper`
 
-  - [*ProbTorch*](https://github.com/probtorch/probtorch)
+  - [*PyMC*](https://github.com/pymc-devs)
+
+	["Probabilistic Programming and Bayesian Methods for Hackers"](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/) by Cam Davidson-Pilon `book` *(examples in PyMC)*
+
+	[overview](https://youtube.com/watch?v=LlzVlqVzeD8) by Thomas Wiecki `video`
 
   - [*WebPPL*](https://github.com/probmods/webppl)
 
   - [*BLOG*](https://github.com/BayesianLogic)
 
-	[overview](https://youtube.com/watch?v=rdsPMCYMcZA) by Stuart Russell `video`
+	[overview](https://youtu.be/JzBrp5LnNCo?t=14m4s) by Stuart Russell `video`  
+	[overview](https://youtube.com/watch?v=rdsPMCYMcZA) by Stuart Russell `video`  
 
   - [*Venture*](https://github.com/venture)
 
@@ -167,6 +168,8 @@
 >	"Probabilistic programming languages are a powerful modeling tool, able to represent any computable probability distribution. Unfortunately, probabilistic program inference is often intractable, and existing PPLs mostly rely on expensive, approximate sampling-based methods. To alleviate this problem, one could try to learn from past inferences, so that future inferences run faster. This strategy is known as amortized inference; it has recently been applied to Bayesian networks and deep generative models. This paper proposes a system for amortized inference in PPLs. In our system, amortization comes in the form of a parameterized guide program. Guide programs have similar structure to the original program, but can have richer data flow, including neural network components. These networks can be optimized so that the guide approximately samples from the posterior distribution defined by the original program. We present a flexible interface for defining guide programs and a stochastic gradient-based scheme for optimizing guide parameters, as well as some preliminary results on automatically deriving guide programs. We explore in detail the common machine learning pattern in which a ‘local’ model is specified by ‘global’ random values and used to generate independent observed data points; this gives rise to amortized local inference supporting global model learning."
 
 >	"In this paper, we presented a system for amortized inference in probabilistic programs. Amortization is achieved through parameterized guide programs which mirror the structure of the original program but can be trained to approximately sample from the posterior. We introduced an interface for specifying guide programs which is flexible enough to reproduce state-of-the-art variational inference methods. We also demonstrated how this interface supports model learning in addition to amortized inference. We developed and proved the correctness of an optimization method for training guide programs, and we evaluated its ability to optimize guides for Bayesian networks, topic models, and deep generative models."
+
+  - `video` <https://youtube.com/watch?v=jp3noyIYAbA> (Wood)
 
 
 #### ["Nonstandard Interpretations of Probabilistic Programs for Efficient Inference"](https://web.stanford.edu/~ngoodman/papers/WGSS-NIPS11.pdf) Wingate, Goodman, Stuhlmuller, Siskind

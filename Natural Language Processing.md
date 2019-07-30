@@ -546,6 +546,7 @@
 
   - `video` <https://youtube.com/watch?v=fwcJpSYNsNs> (Mikolov)
   - `video` <https://youtube.com/watch?v=c3yRH0XZN2g> (Boyd-Graber)
+  - `video` <https://youtube.com/watch?v=Ab5cgv9w7ac> (Scarfe)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=mikolov2013efficient>
   - `post` <http://jalammar.github.io/illustrated-word2vec>
   - `post` <http://alexminnaar.com/word2vec-tutorial-part-i-the-skip-gram-model.html>
@@ -588,6 +589,7 @@
 
   - <http://nlp.stanford.edu/projects/glove/>
   - `video` <http://youtube.com/watch?v=RyTpzZQrHCs> (Pennington)
+  - `video` <https://youtu.be/Mk8xPTxZ1kQ?t=6m29s> (Ghosh)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/emnlp/PenningtonSM14#shagunsodhani>
   - `code` <https://github.com/GradySimon/tensorflow-glove>
 

@@ -169,10 +169,21 @@
 [recent papers](http://deeplearningpatterns.com/doku.php?id=causal_analysis)
 
 
+
+----
+#### ["On Causal and Anticausal Learning"](https://arxiv.org/abs/1206.6471) Schoelkopf et al.
+  `ICML 2012`
+>	"We consider the problem of function estimation in the case where an underlying causal model can be inferred. This has implications for popular scenarios such as covariate shift, concept drift, transfer learning and semi-supervised learning. We argue that causal knowledge may facilitate some approaches for a given problem, and rule out others. In particular, we formulate a hypothesis for when semi-supervised learning can help, and corroborate it with empirical results."
+
+  - `video` <https://youtu.be/zo4oRqfMrgo?t=15m58s> (Lipton)
+
+
 #### ["Counterfactual Reasoning and Learning Systems: The Example of Computational Advertising"](https://arxiv.org/abs/1209.2355) Bottou et al.
 >	"This work shows how to leverage causal inference to understand the behavior of complex learning systems interacting with their environment and predict the consequences of changes to the system. Such predictions allow both humans and algorithms to select the changes that would have improved the system performance. This work is illustrated by experiments on the ad placement system associated with the Bing search engine."
 
   - `video` <https://youtube.com/watch?v=qmQceWeYg04> (Bottou)
+  - `video` <https://youtube.com/watch?v=W8k5KqYqVBw> (Bottou)
+  - `video` <https://youtube.com/watch?v=isGAY9ELqyo> (Bottou)
   - `video` <https://youtu.be/_RtxTpOb8e4?t=52m6s> (Huszar)
 
 
@@ -209,21 +220,11 @@
   - `code` <https://github.com/AMLab-Amsterdam/CEVAE>
 
 
-#### ["CausalGAN: Learning Causal Implicit Generative Models with Adversarial Training"](https://arxiv.org/abs/1709.02023) Kocaoglu, Snyder, Dimakis, Vishwanath
->	"We propose an adversarial training procedure for learning a causal implicit generative model for a given causal graph. We show that adversarial training can be used to learn a generative model with true observational and interventional distributions if the generator architecture is consistent with the given causal graph. We consider the application of generating faces based on given binary labels where the dependency structure between the labels is preserved with a causal graph. This problem can be seen as learning a causal implicit generative model for the image and labels. We devise a two-stage procedure for this problem. First we train a causal implicit generative model over binary labels using a neural network consistent with a causal graph as the generator. We empirically show that Wasserstein GAN can be used to output discrete labels. Later we propose two new conditional GAN architectures, which we call CausalGAN and CausalBEGAN. We show that the optimal generator of the CausalGAN, given the labels, samples from the image distributions conditioned on these labels. The conditional GAN combined with a trained causal implicit generative model for the labels is then an implicit causal generative network over the labels and the generated image. We show that the proposed architectures can be used to sample from observational and interventional image distributions, even for interventions which do not naturally occur in the dataset."
-
-----
->	"We have a causal architecture between labels and the image: Male and Mustache causes the Image, Male causes Mustache etc. The causal architecture allows us to sample not only from the joint distribution, but also interventional distributions, which are different from conditionals: When you intervene on Mustache = 1, i.e., fix the mustache label, Male label is sampled independently; hence you expect to see females with mustaches in this new distribution."
-
->	"When you use a Bayesian network on the labels, you are giving up on the guarantee that you will sample from the true interventional distribution, when you intervene on a set of labels. Using the true causal graph among the labels, instead of just any Bayesian network allows you to sample from true interventional distributions also. If you keep a joint probability table on the labels, given the graph, you can write interventional distribution in closed form and you can sample from this. Then you still need a conditional GAN which can sample from the image distribution conditioned on the given labels. We are not aware of any conditional GAN architecture that can do this. We proposed a new conditional GAN and can show that there is an optimum generator that can do this conditional sampling. Also note that keeping a joint probability table quickly becomes intractable for large number of labels and if the graph degree is not constant. You can get around this by training a causal implicit generative model on the labels, which is our approach."
-
-  - `code` <https://github.com/mkocaoglu/CausalGAN>
-
-
 #### ["Implicit Causal Models for Genome-wide Association Studies"](https://arxiv.org/abs/1710.10742) Tran, Blei
 >	"Progress in probabilistic generative models has accelerated, developing richer models with neural architectures, implicit densities, and with scalable algorithms for their Bayesian inference. However, there has been limited progress in models that capture causal relationships, for example, how individual genetic factors cause major human diseases. In this work, we focus on two challenges in particular: How do we build richer causal models, which can capture highly nonlinear relationships and interactions between multiple causes? How do we adjust for latent confounders, which are variables influencing both cause and effect and which prevent learning of causal relationships? To address these challenges, we synthesize ideas from causality and modern probabilistic modeling. For the first, we describe implicit causal models, a class of causal models that leverages neural architectures with an implicit density. For the second, we describe an implicit causal model that adjusts for confounders by sharing strength across examples. In experiments, we scale Bayesian inference on up to a billion genetic measurements. We achieve state of the art accuracy for identifying causal factors: we significantly outperform existing genetics methods by an absolute difference of 15-45.3%."
 
   - `video` <https://vimeo.com/253922904> (Tran)
+  - `video` <https://youtube.com/watch?v=gi2jZ_bVJuA> (Tran)
   - `slides` <http://dustintran.com/talks/Tran_Genomics.pdf>
   - `post` <https://www.alexdamour.com/blog/public/2018/05/18/non-identification-in-latent-confounder-models>
 
@@ -271,3 +272,14 @@
 >	"We showed that agents learned to resolve unobserved confounders using interventions (which is impossible with only observational data). We saw that agents with access to interventional data performed better than agents with access to only observational data only in cases where the intervened node shared an unobserved parent (a confounder) with other variables in the graph."
 
 >	"We showed that agents learned to use counterfactuals. We saw that agents with additional access to the specific randomness in the test phase performed better than agents with access to only interventional data. We found that the increased performance was observed only in cases where the maximum mean value in the graph was degenerate, and optimal choice was affected by the latent randomness – i.e. where multiple nodes had the same value on average and the specific randomness could be used to distinguish their actual values in that specific case."
+
+
+#### ["General Identifiability with Arbitrary Surrogate Experiments"](http://auai.org/uai2019/proceedings/papers/144.pdf) Lee, Correa, Bareinboim
+  `UAI 2019`
+>	"We study the problem of causal identification from an arbitrary collection of observational and experimental distributions, and substantive knowledge about the phenomenon under investigation, which usually comes in the form of a causal graph. We call this problem g-identifiability, or gID for short. The gID setting encompasses two well-known problems in causal inference, namely, identifiability and z-identifiability — the former assumes that an observational distribution is necessarily available, and no experiments can be performed, conditions that are both relaxed in the gID setting; the latter assumes that all combinations of experiments are available, i.e., the power set of the experimental set Z, which gID does not require a priori. In this paper, we introduce a general strategy to prove non-gID based on hedgelets and thickets, which leads to a necessary and sufficient graphical condition for the corresponding decision problem. We further develop a procedure for systematically computing the target effect, and prove that it is sound and complete for gID instances. In other words, failure of the algorithm in returning an expression implies that the target effect is not computable from the available distributions. Finally, as a corollary of these results, we show that do-calculus is complete for the task of g-identifiability."
+
+>	"In one line of investigation, this task is formalized through the question of whether the effect that an intervention on a set of variables X will have on another set of outcome variables Y (denoted Px(y)) can be uniquely computed from the probability distribution P over the observed variables V and a causal diagram G. This is known as the problem of identification, and has received great attention in the literature, starting with a number of sufficient conditions, and culminating in a complete graphical and algorithmic characterization. Despite the generality of such results, it’s the case that in some real-world applications the quantity Px(y) is not identifiable (i.e., not uniquely computable) from the observational data and the causal diagram."
+
+>	"On an alternative thread in the literature, causal effects (Px(y)) are obtained directly through controlled experimentation. In the biomedical sciences, for instance, considerable resources are spent every year by the FDA, the NIH, and others, in supporting large-scale, systematic, and controlled experimentation, which comes under the rubric of Randomized Controlled Trials. The same method is also leveraged in the context of reinforcement learning, for example, when an autonomous agent is deployed in an environment and is given the capability of performing interventions and observing how they unfold in time. Through this process, experimental data is gathered, and used in the construction of a strategy, also known as policy, with the goal of optimizing the agent’s cumulative reward (e.g., survival, profitability, happiness). Despite all the inferential power entailed by this approach, there are real-world settings where controlling the variables in X is not feasible, possibly due to economical, technical, or ethical constraints."
+
+>	"In this paper, we note that these two approaches can be seen as extremes in a spectrum of possible research designs, which can be combined to solve very natural, albeit non-trivial, causal inference problems. In fact, this generalized setting has been investigated in the literature under the rubric of z-identifiability (zID, for short). Formally, zID asks whether Px(y) can be uniquely computed from the combination of the observational distribution P(V) and the experimental distributions Pz'(V), for all Z'⊆ Z for some Z ⊆ V."
