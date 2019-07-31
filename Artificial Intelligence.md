@@ -39,6 +39,10 @@
 
   [history](https://youtu.be/w3ues-NayAs?t=27m13s) of AI scepticism by Ilya Sutskever `video`
 
+----
+
+  [**interesting papers - definitions and measures of intelligence**](#interesting-papers---definitions-and-measures-of-intelligence)
+
 
 
 ---
@@ -269,7 +273,9 @@
   [Goedel Machine](http://people.idsia.ch/~juergen/goedelmachine.html) by Juergen Schmidhuber  
   [Goedel Machine vs AIXI](http://people.idsia.ch/~juergen/gmweb2/node21.html) by Juergen Schmidhuber  
 
-  [overview](https://youtu.be/nqiUFc52g78?t=21m13s) of Goedel Machine by Juergen Schmidhuber `video`  
+  [overview](https://youtu.be/nqiUFc52g78?t=21m13s) by Juergen Schmidhuber `video`
+
+  [discussion](https://youtu.be/YMdFUay0k20?t=1h30s) with Marcus Hutter `video`
 
   ["Towards An Actual Goedel Machine Implementation: A Lesson in Self-Reflective Systems"](http://people.idsia.ch/~juergen/selfreflection.pdf) by Steunebrink and Schmidhuber `paper`
 
@@ -352,8 +358,24 @@
 ---
 ### universal artificial intelligence
 
+  [overview](https://youtu.be/YMdFUay0k20) by Marcus Hutter `video` ([agent variations](https://youtu.be/YMdFUay0k20?t=36m41s))
+
+  [**"Universal Reinforcement Learning Algorithms: Survey and Experiments"**](#universal-reinforcement-learning-algorithms-survey-and-experiments-aslanides-leike-hutter) by Aslanides, Leike, Hutter `paper` `summary`
+
+  [General Reinforcement Learning Agent Zoo](http://aslanides.io/aixijs) by John Aslanides
+	([demo](http://aslanides.io/aixijs/demo.html), [code](https://github.com/aslanides/aixijs), [paper](https://arxiv.org/abs/1705.07615))
+
+----
+
+  [**interesting papers**](#interesting-papers---universal-artificial-intelligence)
+
+----
+
   [**Solomonoff induction**](#universal-artificial-intelligence---solomonoff-induction)  
   [**AIXI**](#universal-artificial-intelligence---aixi)  
+  [**Thompson Sampling**](#universal-artificial-intelligence---thompson-sampling)  
+  [**Knowledge-Seeking Agent**](#universal-artificial-intelligence---knowledge-seeking-agent)  
+  [**Artificial Curiosity and Creativity**](#universal-artificial-intelligence---artificial-curiosity-and-creativity)  
 
 
 
@@ -366,12 +388,27 @@
 
   [algorithmic probability](http://scholarpedia.org/article/Algorithmic_probability)
 
+----
+
+  [tutorial](http://videolectures.net/ssll09_hutter_uai/) by Marcus Hutter `video`  
+  [tutorial](http://videolectures.net/mlss08au_hutter_fund/) by Marcus Hutter `video`  
+
+----
+
   [**interesting papers**](#interesting-papers---universal-artificial-intelligence)
 
 
 
 ---
 ### universal artificial intelligence - AIXI
+
+  [introduction](http://jan.leike.name/AIXI.html) by Jan Leike
+
+  overview ([1](http://geektimes.ru/post/148002/), [2](http://geektimes.ru/post/150056/), [3](http://geektimes.ru/post/150902/), [4](http://geektimes.ru/post/151838/)) by Alexey Potapov `in russian`
+
+  [book](http://hutter1.net/ai/uaibook.htm) by Marcus Hutter
+
+----
 
   [introduction](http://youtube.com/watch?v=F2bQ5TSB-cE) by Marcus Hutter `video`
 
@@ -383,19 +420,6 @@
   [tutorial](http://videolectures.net/ssll09_hutter_uai/) by Marcus Hutter `video`  
   [tutorial](http://videolectures.net/mlss08au_hutter_fund/) by Marcus Hutter `video`  
   [tutorial](http://youtube.com/watch?v=BP7vhBaBDyk) by Tom Everitt `video`  
-
-----
-
-  [introduction](http://jan.leike.name/AIXI.html) by Jan Leike
-
-  overview ([1](http://geektimes.ru/post/148002/), [2](http://geektimes.ru/post/150056/), [3](http://geektimes.ru/post/150902/), [4](http://geektimes.ru/post/151838/)) by Alexey Potapov `in russian`
-
-  [book](http://hutter1.net/ai/uaibook.htm) by Marcus Hutter
-
-----
-
-  [General Reinforcement Learning Agent Zoo](http://aslanides.io/aixijs/) by John Aslanides
-	([demo](http://aslanides.io/aixijs/demo.html), [code](https://github.com/aslanides/aixijs), [paper](https://arxiv.org/abs/1705.07615))
 
 ----
 
@@ -455,22 +479,30 @@
 
 
 ----
-#### AIXI approximations
-
-  "Even without considering AIXI approximations, AIXI still is very important for AGI research because it unifies all important properties of cognition, like agency (interaction with an environment), knowledge representation and memory, understanding, reasoning, goals, problem solving, planning and action selection, abstraction, generalization without overfitting, multiple hypotheses, creativity, exploration and curiosity, optimization and utility maximization, prediction, uncertainty, with incremental, on-line, lifelong, continual learning in arbitrarily complex environments, without a restart state, no i.i.d. or stationarity assumption, etc. and does all this in a very simple, elegant and precise manner."
-
-  *(Laurent Orseau)*
-
-
-----
-#### AIXI approximations - Monte-Carlo approximation
+#### Monte-Carlo AIXI Approximation
 
   [**"A Monte Carlo AIXI Approximation"**](#a-monte-carlo-aixi-approximation-veness-ng-hutter-uther-silver) by Veness, Ng, Hutter, Uther, Silver `paper` `summary`  
   ["Approximate Universal Artificial Intelligence and Self-Play Learning for Games"](http://jveness.info/publications/veness_phd_thesis_final.pdf) by Joel Veness `paper`  
 
 
-----
-#### AIXI approximations - Artificial Curiosity and Creativity
+
+---
+### universal artificial intelligence - Thompson Sampling
+
+  [**"Nonparametric General Reinforcement Learning"**](#nonparametric-general-reinforcement-learning-leike) by Leike `paper` `summary`
+
+
+
+---
+### universal artificial intelligence - Knowledge-Seeking Agent
+
+  [**"Universal Knowledge-Seeking Agents"**](#universal-knowledge-seeking-agents-orseau) by Orseau `paper` `summary`  
+  [**"Theory of General Reinforcement Learning"**](#theory-of-general-reinforcement-learning-lattimore) by Lattimore `paper` `summary`  
+
+
+
+---
+### universal artificial intelligence - Artificial Curiosity and Creativity
 
   [**Artificial Curiosity and Creativity**](#artificial-curiosity-and-creativity) by Juergen Schmidhuber
 
@@ -514,12 +546,11 @@
 #### ["Universal Intelligence: A Definition of Machine Intelligence"](http://arxiv.org/abs/0712.3329) Legg, Hutter
 >	"A fundamental problem in artificial intelligence is that nobody really knows what intelligence is. The problem is especially acute when we need to consider artificial systems which are significantly different to humans. In this paper we approach this problem in the following way: We take a number of well known informal definitions of human intelligence that have been given by experts, and extract their essential features. These are then mathematically formalised to produce a general measure of intelligence for arbitrary machines. We believe that this equation formally captures the concept of machine intelligence in the broadest reasonable sense. We then show how this formal definition is related to the theory of universal optimal learning agents. Finally, we survey the many other tests and definitions of intelligence that have been proposed for machines."
 
+>	"Intelligence is the ability to achieve goals in a wide range of environments."
+
+  - `video` <https://youtube.com/watch?v=0ghzG14dT-w> (Legg)
+  - `paper` ["An Approximation of the Universal Intelligence Measure"](http://arxiv.org/abs/1109.5951) by Legg and Veness
   - `paper` ["Tests of Machine Intelligence"](http://arxiv.org/abs/0712.3825) by Legg and Hutter
-  - `paper` ["A Formal Measure of Machine Intelligence"](https://arxiv.org/abs/cs/0605024) by Legg and Hutter
-
-
-#### ["An Approximation of the Universal Intelligence Measure"](http://arxiv.org/abs/1109.5951) Legg, Veness
->	"The Universal Intelligence Measure is a recently proposed formal definition of intelligence. It is mathematically specified, extremely general, and captures the essence of many informal definitions of intelligence. It is based on Hutter's Universal Artificial Intelligence theory, an extension of Ray Solomonoff's pioneering work on universal induction. Since the Universal Intelligence Measure is only asymptotically computable, building a practical intelligence test from it is not straightforward. This paper studies the practical issues involved in developing a real-world UIM-based performance metric. Based on our investigation, we develop a prototype implementation which we use to evaluate a number of different artificial agents."
 
 
 #### ["Measuring Intelligence through Games"](http://arxiv.org/abs/1109.1314) Schaul, Togelius, Schmidhuber
@@ -622,70 +653,89 @@
 ### interesting papers - universal artificial intelligence
 
 
+#### ["On Universal Prediction and Bayesian Confirmation"](http://arxiv.org/abs/0709.1516) Hutter
+  `Solomonoff induction`
+>	"The Bayesian framework is a well-studied and successful framework for inductive reasoning, which includes hypothesis testing and confirmation, parameter estimation, sequence prediction, classification, and regression. But standard statistical guidelines for choosing the model class and prior are not always available or fail, in particular in complex situations. Solomonoff completed the Bayesian framework by providing a rigorous, unique, formal, and universal choice for the model class and the prior. We discuss in breadth how and in which sense universal (non-i.i.d.) sequence prediction solves various (philosophical) problems of traditional Bayesian sequence prediction. We show that Solomonoff's model possesses many desirable properties: Strong total and weak instantaneous bounds, and in contrast to most classical continuous prior densities has no zero p(oste)rior problem, i.e. can confirm universal hypotheses, is reparametrization and regrouping invariant, and avoids the old-evidence and updating problem. It even performs well (actually better) in non-computable environments."
+
+>	"The goal of the paper was to establish a single, universal theory for (sequence) prediction and (hypothesis) confirmation, applicable to all inductive inference problems. I started by showing that Bayesian prediction is consistent for any countable model class, provided it contains the true distribution. The major (agonizing) problem Bayesian statistics leaves open is how to choose the model class and the prior. Solomonoff’s theory fills this gap by choosing the class of all computable (stochastic) models, and a universal prior inspired by Ockham and Epicurus, and quantified by Kolmogorov complexity. I discussed in breadth how and in which sense this theory solves the inductive inference problem, by studying a plethora of problems other approaches suffer from. In one line: All you need for universal prediction is Ockham, Epicurus, Bayes, Solomonoff, Kolmogorov, and Turing. By including Bellman, one can extend this theory to universal decisions in reactive environments."
+
+  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---solomonoff-induction>
+
+
+#### ["Is there an Elegant Universal Theory of Prediction?"](http://arxiv.org/abs/cs/0606070) Legg
+  `Solomonoff induction`
+>	"Solomonoff induction is an elegant and extremely general model of inductive learning. It neatly brings together the philosophical principles of Occam’s razor, Epicurus’ principle of multiple explanations, Bayes theorem and Turing’s model of universal computation into a theoretical sequence predictor with astonishingly powerful properties. If theoretical models of prediction can have such elegance and power, one cannot help but wonder whether similarly beautiful and highly general computable theories of prediction are also possible.
+>	What we have shown here is that there does not exist an elegant constructive theory of prediction for computable sequences, even if we assume unbounded computational resources, unbounded data and learning time, and place moderate bounds on the Kolmogorov complexity of the sequences to be predicted. Very powerful computable predictors are therefore necessarily complex. We have further shown that the source of this problem is computable sequences which are extremely expensive to compute. While we have proven that very powerful prediction algorithms which can learn to predict these sequences exist, we have also proven that, unfortunately, mathematical analysis cannot be used to discover these algorithms due to problems of Goedel incompleteness.
+>	These results can be extended to more general settings, specifically to those problems which are equivalent to, or depend on, sequence prediction. Consider, for example, a reinforcement learning agent interacting with an environment. In each interaction cycle the agent must choose its actions so as to maximise the future rewards that it receives from the environment. Of course the agent cannot know for certain whether or not some action will lead to rewards in the future, thus it must predict these. Clearly, at the heart of reinforcement learning lies a prediction problem, and so the results for computable predictors presented in this paper also apply to computable reinforcement learners. More specifically, it follows that very powerful computable reinforcement learners are necessarily complex, and it follows that it is impossible to discover extremely powerful reinforcement learning algorithms mathematically."
+
+  - `post` <http://lo-tho.blogspot.ru/2012/08/truth-and-ai.html>
+  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---solomonoff-induction>
+
+
+#### ["On the Computability of Solomonoff Induction and Knowledge-Seeking"](http://arxiv.org/abs/1507.04124) Leike, Hutter
+  `Solomonoff induction`
+>	"Solomonoff induction is held as a gold standard for learning, but it is known to be incomputable. We quantify its incomputability by placing various flavors of Solomonoff's prior M in the arithmetical hierarchy. We also derive computability bounds for knowledge-seeking agents, and give a limit-computable weakly asymptotically optimal reinforcement learning agent."
+
+  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---solomonoff-induction>
+
+
 #### ["Universal Reinforcement Learning Algorithms: Survey and Experiments"](https://arxiv.org/abs/1705.10557) Aslanides, Leike, Hutter
 >	"Many state-of-the-art reinforcement learning algorithms typically assume that the environment is an ergodic Markov Decision Process. In contrast, the field of universal reinforcement learning is concerned with algorithms that make as few assumptions as possible about the environment. The universal Bayesian agent AIXI and a family of related URL algorithms have been developed in this setting. While numerous theoretical optimality results have been proven for these agents, there has been no empirical investigation of their behavior to date. We present a short and accessible survey of these URL algorithms under a unified notation and framework, along with results of some experiments that qualitatively illustrate some properties of the resulting policies, and their relative performance on partially-observable gridworld environments. We also present an opensource reference implementation of the algorithms which we hope will facilitate further understanding of, and experimentation with, these ideas."
 
   - <http://aslanides.io/aixijs/demo.html> (demo)
   - `post` <http://aslanides.io/aixijs>
+  - `video` <https://youtu.be/YMdFUay0k20?t=36m41s> (Hutter)
   - `code` <http://github.com/aslanides/aixijs>
   - `paper` ["AIXIjs: A Software Demo for General Reinforcement Learning"](https://arxiv.org/abs/1705.07615) by Aslanides
-
-
-#### ["On Universal Prediction and Bayesian Confirmation"](http://arxiv.org/abs/0709.1516) Hutter
->	"The Bayesian framework is a well-studied and successful framework for inductive reasoning, which includes hypothesis testing and confirmation, parameter estimation, sequence prediction, classification, and regression. But standard statistical guidelines for choosing the model class and prior are not always available or fail, in particular in complex situations. Solomonoff completed the Bayesian framework by providing a rigorous, unique, formal, and universal choice for the model class and the prior. We discuss in breadth how and in which sense universal (non-i.i.d.) sequence prediction solves various (philosophical) problems of traditional Bayesian sequence prediction. We show that Solomonoff's model possesses many desirable properties: Strong total and weak instantaneous bounds, and in contrast to most classical continuous prior densities has no zero p(oste)rior problem, i.e. can confirm universal hypotheses, is reparametrization and regrouping invariant, and avoids the old-evidence and updating problem. It even performs well (actually better) in non-computable environments."
-
->	"The goal of the paper was to establish a single, universal theory for (sequence) prediction and (hypothesis) confirmation, applicable to all inductive inference problems. I started by showing that Bayesian prediction is consistent for any countable model class, provided it contains the true distribution. The major (agonizing) problem Bayesian statistics leaves open is how to choose the model class and the prior. Solomonoff’s theory fills this gap by choosing the class of all computable (stochastic) models, and a universal prior inspired by Ockham and Epicurus, and quantified by Kolmogorov complexity. I discussed in breadth how and in which sense this theory solves the inductive inference problem, by studying a plethora of problems other approaches suffer from. In one line: All you need for universal prediction is Ockham, Epicurus, Bayes, Solomonoff, Kolmogorov, and Turing. By including Bellman, one can extend this theory to universal decisions in reactive environments."
 
 
 #### ["Universal Algorithmic Intelligence: A Mathematical Top-down Approach"](http://arxiv.org/abs/cs/0701125) Hutter
   `AIXI agent`
 >	"Sequential decision theory formally solves the problem of rational agents in uncertain worlds if the true environmental prior probability distribution is known. Solomonoff’s theory of universal induction formally solves the problem of sequence prediction for unknown prior distribution. We combine both ideas and get a parameter-free theory of universal Artificial Intelligence. We give strong arguments that the resulting AIXI model is the most intelligent unbiased agent possible. We outline how the AIXI model can formally solve a number of problem classes, including sequence prediction, strategic games, function minimization, reinforcement and supervised learning. The major drawback of the AIXI model is that it is uncomputable. To overcome this problem, we construct a modified algorithm AIXItl that is still effectively more intelligent than any other time t and length l bounded agent. The computation time of AIXItl is of the order t·2^l. The discussion includes formal definitions of intelligence order relations, the horizon problem and relations of the AIXI theory to other AI approaches."
 
-  - `paper` ["A Theory of Universal Artificial Intelligence based on Algorithmic Complexity"](https://arxiv.org/abs/cs/0004001) by Hutter
+  - `notes` <http://aslanides.io/aixijs/#aixi>
+  - `paper` ["A Theory of Universal Artificial Intelligence based on Algorithmic Complexity"](https://arxiv.org/abs/cs/0004001) by Hutter *(AIXI-tl agent)*
+  - `paper` ["Open Problems in Universal Induction & Intelligence"](http://arxiv.org/abs/0907.0746) by Hutter
+  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---aixi>
 
 
-#### ["Open Problems in Universal Induction & Intelligence"](http://arxiv.org/abs/0907.0746) Hutter
->	"Specialized intelligent systems can be found everywhere: finger print, hand-writing, speech, and face recognition, spam filtering, chess and other game programs, robots, et al. This decade the first presumably complete mathematical theory of artificial intelligence based on universal induction-prediction-decision-action has been proposed. This information-theoretic approach solidifies the foundations of inductive inference and artificial intelligence. Getting the foundations right usually marks a significant progress and maturing of a field. The theory provides a gold standard and guidance for researchers working on intelligent algorithms. The roots of universal induction have been laid exactly half-a-century ago and the roots of universal intelligence exactly one decade ago. So it is timely to take stock of what has been achieved and what remains to be done. Since there are already good recent surveys, I describe the state-of-the-art only in passing and refer the reader to the literature. This article concentrates on the open problems in universal induction and its extension to universal intelligence."
-
-
-#### ["A Monte-Carlo AIXI Approximation"](https://arxiv.org/abs/0909.0801) Veness, Ng, Hutter, Uther, Silver
+#### ["A Monte Carlo AIXI Approximation"](https://arxiv.org/abs/0909.0801) Veness, Ng, Hutter, Uther, Silver
   `MC-AIXI-CTW agent`
 >	"This paper introduces a principled approach for the design of a scalable general reinforcement learning agent. Our approach is based on a direct approximation of AIXI, a Bayesian optimality notion for general reinforcement learning agents. Previously, it has been unclear whether the theory of AIXI could motivate the design of practical algorithms. We answer this hitherto open question in the affirmative, by providing the first computationally feasible approximation to the AIXI agent. To develop our approximation, we introduce a new Monte-Carlo Tree Search algorithm along with an agent-specific extension to the Context Tree Weighting algorithm. Empirically, we present a set of encouraging results on a variety of stochastic and partially observable domains. We conclude by proposing a number of directions for future research."
 
 >	"This paper presents the first computationally feasible general reinforcement learning agent that directly and scalably approximates the AIXI ideal. Although well established theoretically, it has previously been unclear whether the AIXI theory could inspire the design of practical agent algorithms. Our work answers this question in the affirmative: empirically, our approximation achieves strong performance and theoretically, we can characterise the range of environments in which our agent is expected to perform well. To develop our approximation, we introduced two new algorithms: ρUCT, a Monte-Carlo expectimax approximation technique that can be used with any online Bayesian approach to the general reinforcement learning problem and FAC-CTW, a generalisation of the powerful CTW algorithm to the agent setting. In addition, we highlighted a number of interesting research directions that could improve the performance of our current agent; in particular, model class expansion and the online learning of heuristic rollout policies for ρUCT."
 
   - `video` <http://youtube.com/watch?v=yfsMHtmGDKE> (demo)
+  - `video` <https://youtu.be/YMdFUay0k20?t=49m41s> (Hutter)
   - <http://aslanides.io/aixijs/demo.html> (demo)
-  - `paper` ["Approximate Universal Artificial Intelligence and Self-Play Learning for Games"](http://jveness.info/publications/veness_phd_thesis_final.pdf) by Joel Veness `paper`
   - `code` <http://jveness.info/software/mcaixi_jair_2010.zip>
   - `code` <https://github.com/moridinamael/mc-aixi>
   - `code` <https://github.com/gkassel/pyaixi>
   - `code` <https://github.com/GoodAI/SummerCamp/tree/master/AIXIModule>
-
-
-#### ["Is there an Elegant Universal Theory of Prediction?"](http://arxiv.org/abs/cs/0606070) Legg
->	"Solomonoff induction is an elegant and extremely general model of inductive learning. It neatly brings together the philosophical principles of Occam’s razor, Epicurus’ principle of multiple explanations, Bayes theorem and Turing’s model of universal computation into a theoretical sequence predictor with astonishingly powerful properties. If theoretical models of prediction can have such elegance and power, one cannot help but wonder whether similarly beautiful and highly general computable theories of prediction are also possible.
->	What we have shown here is that there does not exist an elegant constructive theory of prediction for computable sequences, even if we assume unbounded computational resources, unbounded data and learning time, and place moderate bounds on the Kolmogorov complexity of the sequences to be predicted. Very powerful computable predictors are therefore necessarily complex. We have further shown that the source of this problem is computable sequences which are extremely expensive to compute. While we have proven that very powerful prediction algorithms which can learn to predict these sequences exist, we have also proven that, unfortunately, mathematical analysis cannot be used to discover these algorithms due to problems of Goedel incompleteness.
->	These results can be extended to more general settings, specifically to those problems which are equivalent to, or depend on, sequence prediction. Consider, for example, a reinforcement learning agent interacting with an environment. In each interaction cycle the agent must choose its actions so as to maximise the future rewards that it receives from the environment. Of course the agent cannot know for certain whether or not some action will lead to rewards in the future, thus it must predict these. Clearly, at the heart of reinforcement learning lies a prediction problem, and so the results for computable predictors presented in this paper also apply to computable reinforcement learners. More specifically, it follows that very powerful computable reinforcement learners are necessarily complex, and it follows that it is impossible to discover extremely powerful reinforcement learning algorithms mathematically."
-
-  - `post` <http://lo-tho.blogspot.ru/2012/08/truth-and-ai.html>
+  - `paper` ["Approximate Universal Artificial Intelligence and Self-Play Learning for Games"](http://jveness.info/publications/veness_phd_thesis_final.pdf) by Joel Veness `paper`
+  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---aixi>
 
 
 #### ["On the Computability of AIXI"](http://arxiv.org/abs/1510.05572) Leike, Hutter
+  `AIXI agent`
 >	"How could we solve the machine learning and the artificial intelligence problem if we had infinite computation? Solomonoff induction and the reinforcement learning agent AIXI are proposed answers to this question. Both are known to be incomputable. In this paper, we quantify this using the arithmetical hierarchy, and prove upper and corresponding lower bounds for incomputability. We show that AIXI is not limit computable, thus it cannot be approximated using finite computation. Our main result is a limit-computable ε-optimal version of AIXI with infinite horizon that maximizes expected rewards."
 
-  - `paper` ["On the Computability of Solomonoff Induction and Knowledge-Seeking"](http://arxiv.org/abs/1507.04124) by Leike and Hutter
+  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---aixi>
 
 
-#### ["Bad Universal Priors and Notions of Optimality"](http://jmlr.csail.mit.edu/proceedings/papers/v40/Leike15.pdf) Leike, Hutter
+#### ["Bad Universal Priors and Notions of Optimality"](https://arxiv.org/abs/1510.04931) Leike, Hutter
+  `AIXI agent`
 >	"A big open question of algorithmic information theory is the choice of the universal Turing machine. For Kolmogorov complexity and Solomonoff induction we have invariance theorems: the choice of the UTM changes bounds only by a constant. For the universally intelligent agent AIXI no invariance theorem is known. Our results are entirely negative: we discuss cases in which unlucky or adversarial choices of the UTM cause AIXI to misbehave drastically. We show that Legg-Hutter intelligence and thus balanced Pareto optimality is entirely subjective, and that every policy is Pareto optimal in the class of all computable environments. This undermines all existing optimality properties for AIXI. While it may still serve as a gold standard for AI, our results imply that AIXI is a relative theory, dependent on the choice of the UTM."
 
 >	"The choice of the universal Turing machine has been a big open question in algorithmic information theory for a long time. While attempts have been made no answer is in sight. The Kolmogorov complexity of a string, the length of the shortest program that prints this string, depends on this choice. However, there are invariance theorems which state that changing the UTM changes Kolmogorov complexity only by a constant. When using the universal prior M introduced by Solomonoff to predict any deterministic computable binary sequence, the number of wrong predictions is bounded by (a multiple of) the Kolmogorov complexity of the sequence. Due to the invariance theorem, changing the UTM changes the number of errors only by a constant. In this sense, compression and prediction work for any choice of UTM. Hutter defines the universally intelligent agent AIXI, which is targeted at the general reinforcement learning problem. It extends Solomonoff induction to the interactive setting. AIXI is a Bayesian agent, using a universal prior on the set of all computable environments; actions are taken according to the maximization of expected future discounted rewards. Closely related is the intelligence measure defined by Legg and Hutter, a mathematical performance measure for general reinforcement learning agents: defined as the discounted rewards achieved across all computable environments, weighted by the universal prior. There are several known positive results about AIXI. It has been proven to be Pareto optimal, balanced Pareto optimal, and has maximal Legg-Hutter intelligence. Furthermore, AIXI asymptotically learns to predict the environment perfectly and with a small total number of errors analogously to Solomonoff induction, but only on policy: AIXI learns to correctly predict the value (expected future rewards) of its own actions, but generally not the value of counterfactual actions that it does not take. Orseau showed that AIXI does not achieve asymptotic optimality in all computable environments. So instead, we may ask the following weaker questions. Does AIXI succeed in every partially observable Markov decision process/(ergodic) Markov decision process/bandit problem/sequence prediction task? In this paper we show that without further assumptions on the UTM, we cannot answer any of the preceding questions in the affirmative. More generally, there can be no invariance theorem for AIXI. As a reinforcement learning agent, AIXI has to balance between exploration and exploitation. Acting according to any (universal) prior does not lead to enough exploration, and the bias of AIXI’s prior is retained indefinitely. For bad priors this can cause serious malfunctions. However, this problem can be alleviated by adding an extra exploration component to AIXI, similar to knowledge-seeking agents, or by the use of optimism. We give two examples of universal priors that cause AIXI to misbehave drastically. In case of a finite lifetime, the indifference prior makes all actions equally preferable to AIXI. Furthermore, for any computable policy π the dogmatic prior makes AIXI stick to the policy π as long as expected future rewards do not fall too close to zero. This has profound implications. We show that if we measure Legg-Hutter intelligence with respect to a different universal prior, AIXI scores arbitrarily close to the minimal intelligence while any computable policy can score arbitrarily close to the maximal intelligence. This makes the Legg-Hutter intelligence score and thus balanced Pareto optimality relative to the choice of the UTM. Moreover, we show that in the class of all computable environments, every policy is Pareto optimal. This undermines all existing optimality results for AIXI. We discuss the implications of these results for the quest for a natural universal Turing machine and optimality notions of general reinforcement learners."
 
   - <http://aslanides.io/aixijs/demo.html> (demo)
+  - `video` <https://youtu.be/YMdFUay0k20?t=33m14s> (Hutter)
+  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---aixi>
 
 
-#### ["Nonparametric General Reinforcement Learning"](https://jan.leike.name/publications/Nonparametric%20General%20Reinforcement%20Learning%20-%20Leike%202016.pdf) Leike
+#### ["Nonparametric General Reinforcement Learning"](https://arxiv.org/abs/1611.08944) Leike
+  `AIXI agent`
 >	"Reinforcement learning problems are often phrased in terms of Markov decision processes. In this thesis we go beyond MDPs and consider reinforcement learning in environments that are non-Markovian, non-ergodic and only partially observable. Our focus is not on practical algorithms, but rather on the fundamental underlying problems: How do we balance exploration and exploitation? How do we explore optimally? When is an agent optimal? We follow the nonparametric realizable paradigm: we assume the data is drawn from an unknown source that belongs to a known countable class of candidates.  
 >	First, we consider the passive (sequence prediction) setting, learning from data that is not independent and identically distributed. We collect results from artificial intelligence, algorithmic information theory, and game theory and put them in a reinforcement learning context: they demonstrate how agent can learn the value of its own policy. Next, we establish negative results on Bayesian reinforcement learning agents, in particular AIXI. We show that unlucky or adversarial choices of the prior cause the agent to misbehave drastically. Therefore Legg-Hutter intelligence and balanced Pareto optimality, which depend crucially on the choice of the prior, are entirely subjective. Moreover, in the class of all computable environments every policy is Pareto optimal. This undermines all existing optimality properties for AIXI.  
 >	However, there are Bayesian approaches to general reinforcement learning that satisfy objective optimality guarantees: We prove that Thompson sampling is asymptotically optimal in stochastic environments in the sense that its value converges to the value of the optimal policy. We connect asymptotic optimality to regret given a recoverability assumption on the environment that allows the agent to recover from mistakes. Hence Thompson sampling achieves sublinear regret in these environments.  
@@ -697,10 +747,14 @@
 >	"The agent we consider is known as Thompson sampling or posterior sampling. It samples an environment ρ from the posterior, follows the ρ-optimal policy for one effective horizon (a lookahead long enough to encompass most of the discount function’s mass), and then repeats. We show that this agent’s policy is asymptotically optimal in mean (and, equivalently, in probability). Furthermore, using a recoverability assumption on the environment, and some (minor) assumptions on the discount function, we prove that the worst-case regret is sublinear. This is the first time convergence and regret bounds of Thompson sampling have been shown under such general conditions."  
 
   - `video` <https://youtube.com/watch?v=hSiuJuvTBoE> (Leike)
+  - `video` <https://youtu.be/YMdFUay0k20?t=42m31s> (Hutter)
+  - `notes` <http://aslanides.io/aixijs/#ts>
   - `paper` ["Thompson Sampling is Asymptotically Optimal in General Environments"](https://arxiv.org/abs/1602.07905) by Leike, Lattimore, Orseau, Hutter
+  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---aixi>
 
 
-#### ["Universal Knowledge-Seeking Agents"](https://www6.inra.fr/mia-paris/content/download/3756/36462/version/1/file/orseau-TCS-2014-uksa.pdf) Orseau
+#### ["Universal Knowledge-Seeking Agents"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.687.5725&rep=rep1) Orseau
+  `knowledge-seeking` `KSA agent`
 >	"Reinforcement learning agents like Hutter’s universal, Pareto optimal, incomputable AIXI heavily rely on the definition of the rewards, which are necessarily given by some “teacher” to define the tasks to solve. Therefore, as is, AIXI cannot be said to be a fully autonomous agent. From the point of view of artificial general intelligence, this can be argued to be an incomplete definition of a generally intelligent agent. Furthermore, it has recently been shown that AIXI can converge to a suboptimal behavior in certain situations, hence showing the intrinsic difficulty of RL, with its non-obvious pitfalls. We propose a new model of intelligence, the knowledge-seeking agent, halfway between Solomonoff induction and AIXI, that defines a completely autonomous agent that does not require a teacher. The goal of this agent is not to maximize arbitrary rewards, but to entirely explore its world in an optimal way. A proof of strong asymptotic optimality for a class of horizon functions shows that this agent behaves according to expectation. Some implications of such an unusual agent are proposed."
 
 >	"We defined a new kind of universal intelligent agents, named knowledge-seeking agents, which differ significantly from the traditional reinforcement learning framework and its associated universal optimal learner AIXI: Their purpose is not to solve particular, narrow tasks, given or defined by experts like humans, but to be fully autonomous and to depend on no external intelligent entity. Full autonomy is an important property if we are to create generally intelligent agents, that should match or surpass (collective) human intelligence. We believe such agents (or their computational variants) should turn out to be useful to humanity in a different way than RL agents, since they should constantly be creative and solve interesting problems that we may not yet know. It seems that this kind of agent can still be directed to some extent, either by using pieces of knowledge as rewards, or by controlling the parts of the environment the agent interacts with, or by giving it prior knowledge. But these are only temporary biases that decrease in strength as the agent acquires knowledge, in the convergence to optimality. In the real world, where all agents are mortal in some way, it is unlikely that a KSA would be too curious so as to threaten its own life, since a (predicted) death would prevent it from acquiring more knowledge. From a game theory perspective, knowledge-seeking is a positive-sum game, and all the players should cooperate to maximize their knowledge. This is an interesting property regarding the safety of other intelligent agents, as long as they are interested in knowledge (which humans seem to be, at least to some point). However, this alone cannot ensure complete safety because, as soon as several agents have limited resources, a conflict situation can occur, which is not good news for the less “powerful” of the agents."
@@ -711,9 +765,22 @@
 
 >	"As for AIXI, we hope that the various KSA properties to extend nicely to stochastic computable environments. We also expect Square-KSAρ or Shannon-KSAρ (or both) to be Pareto optimal, to converge quickly, in an optimal way to the true environment, i.e., no learning agent should acquire knowledge faster. We are currently trying to get rid of the horizon function in an optimal way. One possibility could be to choose an horizon function based on ρ(h), although having asymptotic optimality for a geometric discounting would also be a good property, as such discounting is time consistent and widely used in RL. Another important concern is how to optimally (for some definition of optimality) scale down SquareKSAρ to a computable agent."
 
+  - `video` <https://youtu.be/YMdFUay0k20?t=36m49s> (Hutter)
   - `notes` <http://aslanides.io/aixijs/#ksa>
+  - `post` <https://intelligence.org/2013/09/06/laurent-orseau-on-agi>
   - `paper` ["Universal Knowledge-Seeking Agents for Stochastic Environments"](https://openresearch-repository.anu.edu.au/handle/1885/14714) by Orseau, Lattimore, Hutter
   - `paper` ["On the Computability of Solomonoff Induction and Knowledge-Seeking"](http://arxiv.org/abs/1507.04124) by Leike and Hutter
+
+
+#### ["Theory of General Reinforcement Learning"](https://researchgate.net/publication/329143453_Theory_of_general_reinforcement_learning) Lattimore
+  `knowledge-seeking` `BayesExp agent`
+>	"Reinforcement learning is the task of learning to act well in a variety of unknown environments. The traditional approach is to study small classes and construct computationally and data efficient algorithms to minimise some form of loss function such as regret or sample-complexity. The grand dream, however, is to solve the problem where the class of possible environments is sufficiently large to include any challenge that might reasonably be faced by an agent living in this universe. Such a universal agent could learn to play chess, do the washing up, make money in finance, understand language, write beautiful poetry (if rewarding) and generally act with (super) human intelligence. The task is so difficult that in this thesis I decouple the problems of data and computation efficiency and focus only on the former. What is an upper bound on the rate of learning and what is the largest class of environments for which learning is possible? How can intelligence be measured? What ought the loss function be? Since these problems cannot (yet) be tackled experimentally, I take a theoretical approach, sometimes even constructing agents that provably cannot be computed. I consider both the prediction setting where actions/predictions do not affect the environment, as well as the full reinforcement learning case. In both cases I derive asymptotic results and finite sample-complexity bounds on the performance of some predictor or policy in very general settings where data is typically non-stationary and dependent (even non-Markov). In some extreme cases learning is impossible, so some results are unfortunately quite negative, especially in the reinforcement learning framework. Nevertheless, provided the environment class is not too large I show that some form of learning is usually possible."
+
+----
+>	"The idea behind the BayesExp agent is simple. Given that KL-KSA is effective at exploring, and AIXI is effective (by construction) at exploiting the agent’s beliefs as they stand: why not combine the two in some way? The algorithm for running BayesExp is simple: run AIXI by computing the ξ-optimal policy as normal, but at all times compute the value of the information-seeking policy πKSA. If the expected information gain (up to some horizon) exceeds some threshold, run the knowledge-seeking policy for an effective horizon. This combines the best of AIXI and KSA, by going on bursts of exploration when the agent’s beliefs suggest that the time is right to do so; thus, BayesExp breaks out of the sub-optimal exploration strategy of Bayes, but without resorting to ugly heuristics such as Epsilon-greedy. Crucially, it explores infinitely often, which is necessary for asymptotic optimality. Essentially, the BayesExp agent keeps track of two value functions: the Bayes-optimal value V∗ξ, and the ξ-expected information gain value V∗ξIG. It then checks whether V∗ξIG exceeds some threshold, εt. If it does, then it will explore for an effective horizon Ht(εt), and otherwise it will exploit using the Bayes-optimal policy π∗ξ."
+
+  - `video` <https://youtu.be/YMdFUay0k20?t=36m49s> (Hutter)
+  - `notes` <http://aslanides.io/aixijs/#bexp>
 
 
 #### ["Goedel Machines: Self-Referential Universal Problem Solvers Making Provably Optimal Self-Improvements"](http://arxiv.org/abs/cs/0309048) Schmidhuber
