@@ -925,6 +925,8 @@
 ---
 ### machine reading benchmarks
 
+  - [GLUE](https://gluebenchmark.com)
+
   - [Allen AI Science Challenge](https://kaggle.com/c/the-allen-ai-science-challenge)
 
 	["Moving Beyond the Turing Test with the Allen AI Science Challenge"](https://arxiv.org/abs/1604.04315) by Schoenick et al. `paper`
@@ -933,8 +935,6 @@
   - [AI2 Reasoning Challenge (ARC)](http://data.allenai.org/arc)
 
   - [Stanford Question Answering Dataset (SQuAD)](https://rajpurkar.github.io/SQuAD-explorer/)
-
-  - [WikiTableQuestions](http://nlp.stanford.edu/blog/wikitablequestions-a-complex-real-world-question-understanding-dataset/)
 
   - [TAC Knowledge Base Population](http://www.nist.gov/tac/2017/KBP/)
 

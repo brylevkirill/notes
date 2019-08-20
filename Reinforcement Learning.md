@@ -114,6 +114,8 @@
 
 	overview by Alex Irpan ([1](https://www.alexirpan.com/2019/02/22/alphastar.html), [2](https://www.alexirpan.com/2019/02/22/alphastar-part2.html))
 
+	[AlphaStar discussion](https://reddit.com/r/MachineLearning/comments/ajgzoc/we_are_oriol_vinyals_and_david_silver_from) with David Silver and Oriol Vinyals
+
 	[AlphaStar vs pro players](https://youtube.com/watch?v=cUTMhmVh1qs) games `video` ([highlights](https://youtube.com/watch?v=zgIFoepzhIo) by MaNa `video`, [highlights](https://youtube.com/watch?v=_YWmU-E2WFc) by Artosis `video`))  
 	[AlphaStar vs Battle.net players](https://youtube.com/playlist?list=UU_2FZDFti08MI5WRaZUZSIQ) games `video`  
 
@@ -169,7 +171,8 @@
 	[Pluribus overview](https://ai.facebook.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker)  
 	[Pluribus "Science" magazine](https://science.sciencemag.org/content/early/2019/07/10/science.aay2400) `paper`  
 
-	[Pluribus discussion](https://reddit.com/r/MachineLearning/comments/ceece3/ama_we_are_noam_brown_and_tuomas_sandholm) with Noam Brown and Tuomas Sandholm
+	[Pluribus discussion](https://reddit.com/r/MachineLearning/comments/ceece3/ama_we_are_noam_brown_and_tuomas_sandholm) with Noam Brown and Tuomas Sandholm  
+	[Pluribus discussion](https://news.ycombinator.com/item?id=20415379) with Noam Brown  
 
 ----
   - *Poker*  
@@ -779,6 +782,7 @@
   - *information gain motivation*  
 	reward for decrease of uncertainty in knowledge that agent has of environment after event has happened  
 
+	[Knowledge-Seeking Agent](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---knowledge-seeking-agent) by Hutter and Orseau  
 	["Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids"](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#curiosity-driven-reinforcement-learning-for-motion-planning-on-humanoids-frank-leitner-stollenga-forster-schmidhuber) by Frank et al. `paper` `summary`  
 	["An Information-theoretic Approach to Curiosity-driven Reinforcement Learning"](#an-information-theoretic-approach-to-curiosity-driven-reinforcement-learning-still-precup) by Still and Precup `paper` `summary`  
 	["VIME: Variational Information Maximizing Exploration"](#vime-variational-information-maximizing-exploration-houthooft-chen-duan-schulman-turck-abbeel) by Houthooft et al. `paper` `summary`  
@@ -957,9 +961,9 @@
   [overview](https://youtu.be/sGuiWX07sKw?t=1h29m7s) by David Silver `video`  
   [overview](https://vimeo.com/240429210) by John Langford and Alekh Agarwal `video`  
   [overview](https://youtu.be/zr6H4kR8vTg) by John Langford `video`  
+  [overview](https://youtu.be/GXjc-tomqpo) by Dale Schuurmans `video`  
   [overview](https://youtu.be/IWuMb0A09po) by Dale Schuurmans `video`  
-
-  [overview](http://youtu.be/N5x48g2sp8M) of theory by Robert Schapire `video`
+  [overview](https://youtu.be/N5x48g2sp8M) by Robert Schapire `video`  
 
 ----
 
@@ -1950,6 +1954,9 @@ interesting recent papers:
 >	"Counterfactual Regret Minimization is the leading framework for solving large imperfect-information games. It converges to an equilibrium by iteratively traversing the game tree. In order to deal with extremely large games, abstraction is typically applied before running CFR. The abstracted game is solved with tabular CFR, and its solution is mapped back to the full game. This process can be problematic because aspects of abstraction are often manual and domain specific, abstraction algorithms may miss important strategic nuances of the game, and there is a chicken-and-egg problem because determining a good abstraction requires knowledge of the equilibrium of the game. This paper introduces Deep Counterfactual Regret Minimization, a form of CFR that obviates the need for abstraction by instead using deep neural networks to approximate the behavior of CFR in the full game. We show that Deep CFR is principled and achieves strong performance in large poker games. This is the first non-tabular variant of CFR to be successful in large games."
 
 >	"Most popular RL algorithms do not converge to good policies (equilibria) in imperfect-information games in theory or in practice. Rather than use tabular CFR with abstraction, this paper introduces a form of CFR, which we refer to as Deep Counterfactual Regret Minimization, that uses function approximation with deep neural networks to approximate the behavior of tabular CFR on the full, unabstracted game. We prove that Deep CFR converges to an Epsilon-Nash equilibrium in two-player zero-sum games and empirically evaluate performance in poker variants, including heads-up limit Texas hold’em. We show Deep CFR outperforms Neural Fictitious Self Play (NFSP) (Heinrich & Silver, 2016), which was the prior leading function approximation algorithm for imperfect-information games, and that Deep CFR is competitive with domain-specific tabular abstraction techniques."
+
+----
+>	"The CFR algorithm is actually somewhat similar to Q-learning, but the connection is difficult to see because the algorithms came out of different communities, so the notation is all different."
 
   - <https://reddit.com/r/MachineLearning/comments/ceece3/ama_we_are_noam_brown_and_tuomas_sandholm>
   - <https://int8.io/counterfactual-regret-minimization-for-poker-ai>

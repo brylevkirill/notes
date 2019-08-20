@@ -609,6 +609,7 @@
 >	"Furthermore, unlike most other adaptation schemes, our method is capable of performing online adaptation of hyperparameters – which can be particularly important in problems with highly non-stationary learning dynamics, such as reinforcement learning settings, where the learning problem itself can be highly non-stationary (e.g. dependent on which parts of an environment an agent is currently able to explore). As a consequence, it might be the case that the ideal hyperparameters for such learning problems are themselves highly non-stationary, and should vary in a way that precludes setting their schedule in advance."
 
   - `post` <https://deepmind.com/blog/population-based-training-neural-networks/>
+  - `post` <https://deepmind.com/blog/article/how-evolutionary-selection-can-train-more-capable-self-driving-cars/>
   - `video` <https://vimeo.com/250399261> (Jaderberg)
   - `video` <https://youtube.com/watch?v=uuOoqAiB2g0> (Sazanovich) `in russian`
   - `paper` <https://arxiv.org/abs/1902.01894> by Li et al.

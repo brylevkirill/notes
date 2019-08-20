@@ -321,7 +321,7 @@
 
   [**"Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes"**](#driven-by-compression-progress-a-simple-principle-explains-essential-aspects-of-subjective-beauty-novelty-surprise-interestingness-attention-curiosity-creativity-art-science-music-jokes-schmidhuber) by Schmidhuber `paper` `summary`  
   [**"Formal Theory of Creativity, Fun, and Intrinsic Motivation"**](#formal-theory-of-creativity-fun-and-intrinsic-motivation-schmidhuber) by Schmidhuber `paper` `summary`  
-  [**"Curiosity Driven Reinforcement Learning Motion Planning on Humanoids"**](#curiosity-driven-reinforcement-learning-for-motion-planning-on-humanoids-frank-leitner-stollenga-forster-schmidhuber) by Frank, Schmidhuber et al. `paper` `summary`  
+  [**"Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids"**](#curiosity-driven-reinforcement-learning-for-motion-planning-on-humanoids-frank-leitner-stollenga-forster-schmidhuber) by Frank, Schmidhuber et al. `paper` `summary`  
   [**"What's Interesting?"**](#whats-interesting-schmidhuber) by Schmidhuber `paper` `summary`  
   [**"PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem"**](#powerplay-training-an-increasingly-general-problem-solver-by-continually-searching-for-the-simplest-still-unsolvable-problem-schmidhuber) by Schmidhuber `paper` `summary`  
 
@@ -382,8 +382,9 @@
 ---
 ### universal artificial intelligence - Solomonoff induction
 
-  [introduction](https://wiki.lesswrong.com/wiki/Solomonoff_induction)  
-  [intuitive explanation](http://lesswrong.com/lw/dhg/an_intuitive_explanation_of_solomonoff_induction/)  
+  [introduction](http://lesswrong.com/lw/dhg/an_intuitive_explanation_of_solomonoff_induction/) by Luke Muehlhauser and Alex Altair
+
+  [overview](https://wiki.lesswrong.com/wiki/Solomonoff_induction)  
   ["How Bayes theorem is consistent with Solomonoff induction"](http://lesswrong.com/r/discussion/lw/di3/how_bayes_theorem_is_consistent_with_solomonoff/)  
 
   [algorithmic probability](http://scholarpedia.org/article/Algorithmic_probability)
@@ -496,7 +497,7 @@
 ---
 ### universal artificial intelligence - Knowledge-Seeking Agent
 
-  [**"Universal Knowledge-Seeking Agents"**](#universal-knowledge-seeking-agents-orseau) by Orseau `paper` `summary`  
+  [**"Universal Knowledge-Seeking Agents for Stochastic Environments"**](#universal-knowledge-seeking-agents-for-stochastic-environments-orseau-lattimore-hutter) by Orseau, Lattimore, Hutter `paper` `summary`  
   [**"Theory of General Reinforcement Learning"**](#theory-of-general-reinforcement-learning-lattimore) by Lattimore `paper` `summary`  
 
 
@@ -553,12 +554,6 @@
   - `paper` ["Tests of Machine Intelligence"](http://arxiv.org/abs/0712.3825) by Legg and Hutter
 
 
-#### ["Measuring Intelligence through Games"](http://arxiv.org/abs/1109.1314) Schaul, Togelius, Schmidhuber
->	"Artificial general intelligence refers to research aimed at tackling the full problem of artificial intelligence, that is, create truly intelligent agents. This sets it apart from most AI research which aims at solving relatively narrow domains, such as character recognition, motion planning, or increasing player satisfaction in games. But how do we know when an agent is truly intelligent? A common point of reference in the AGI community is Legg and Hutter’s formal definition of universal intelligence, which has the appeal of simplicity and generality but is unfortunately incomputable. Games of various kinds are commonly used as benchmarks for “narrow” AI research, as they are considered to have many important properties. We argue that many of these properties carry over to the testing of general intelligence as well. We then sketch how such testing could practically be carried out. The central part of this sketch is an extension of universal intelligence to deal with finite time, and the use of sampling of the space of games expressed in a suitably biased game description language."
-
-  - `post` <http://togelius.blogspot.ru/2016/01/why-video-games-are-essential-for.html>
-
-
 #### ["Provably Bounded-Optimal Agents"](https://arxiv.org/abs/cs/9505103) Russell, Subramanian
 >	"Since its inception, artificial intelligence has relied upon a theoretical foundation centered around perfect rationality as the desired property of intelligent systems. We argue, as others have done, that this foundation is inadequate because it imposes fundamentally unsatisfiable requirements. As a result, there has arisen a wide gap between theory and practice in AI, hindering progress in the field. We propose instead a property called bounded optimality. Roughly speaking, an agent is bounded-optimal if its program is a solution to the constrained optimization problem presented by its architecture and the task environment. We show how to construct agents with this property for a simple class of machine architectures in a broad class of real-time environments. We illustrate these results using a simple model of an automated mail sorting facility. We also define a weaker property, asymptotic bounded optimality (ABO), that generalizes the notion of optimality in classical complexity theory. We then construct universal ABO programs, i.e., programs that are ABO no matter what real-time constraints are applied. Universal ABO programs can be used as building blocks for more complex systems. We conclude with a discussion of the prospects for bounded optimality as a theoretical basis for AI, and relate it to similar trends in philosophy, economics, and game theory."
 
@@ -567,14 +562,20 @@
 >	"This paper presents the first formal measure of intelligence for agents fully embedded within their environment. Whereas previous measures such as Legg’s universal intelligence measure and Russell’s bounded optimality provide theoretical insights into agents that interact with an external world, ours describes an intelligence that is computed by, can be modified by, and is subject to the time and space constraints of the environment with which it interacts. Our measure merges and goes beyond Legg’s and Russell’s, leading to a new, more realistic definition of artificial intelligence that we call Space-Time Embedded Intelligence."
 
 
+#### ["Measuring Intelligence through Games"](http://arxiv.org/abs/1109.1314) Schaul, Togelius, Schmidhuber
+>	"Artificial general intelligence refers to research aimed at tackling the full problem of artificial intelligence, that is, create truly intelligent agents. This sets it apart from most AI research which aims at solving relatively narrow domains, such as character recognition, motion planning, or increasing player satisfaction in games. But how do we know when an agent is truly intelligent? A common point of reference in the AGI community is Legg and Hutter’s formal definition of universal intelligence, which has the appeal of simplicity and generality but is unfortunately incomputable. Games of various kinds are commonly used as benchmarks for “narrow” AI research, as they are considered to have many important properties. We argue that many of these properties carry over to the testing of general intelligence as well. We then sketch how such testing could practically be carried out. The central part of this sketch is an extension of universal intelligence to deal with finite time, and the use of sampling of the space of games expressed in a suitably biased game description language."
+
+  - `post` <http://togelius.blogspot.ru/2016/01/why-video-games-are-essential-for.html>
+
+
 #### ["Building Machines That Learn and Think Like People"](http://arxiv.org/abs/1604.00289) Lake, Ullman, Tenenbaum, Gershman
 >	"Recent progress in artificial intelligence has renewed interest in building systems that learn and think like people. Many advances have come from using deep neural networks trained end-to-end in tasks such as object recognition, video games, and board games, achieving performance that equals or even beats humans in some respects. Despite their biological inspiration and performance achievements, these systems differ from human intelligence in crucial ways. We review progress in cognitive science suggesting that truly human-like learning and thinking machines will have to reach beyond current engineering trends in both what they learn, and how they learn it. Specifically, we argue that these machines should (a) build causal models of the world that support explanation and understanding, rather than merely solving pattern recognition problems; (b) ground learning in intuitive theories of physics and psychology, to support and enrich the knowledge that is learned; and (c) harness compositionality and learning-to-learn to rapidly acquire and generalize knowledge to new tasks and situations. We suggest concrete challenges and promising routes towards these goals that can combine the strengths of recent neural network advances with more structured cognitive models."
 
-  - `paper` <https://cims.nyu.edu/~brenden/LakeEtAl2017BBS.pdf> ("Behavioral and Brain Sciences")
   - `video` <https://www.technologyreview.com/video/610657/ingredients-of-intelligence/> (Lake)
   - `video` <https://youtube.com/watch?v=O0MF-r9PsvE> (Gershman)
   - `notes` <http://pemami4911.github.io/paper-summaries/2016/05/13/learning-to-think.html>
-  - `paper` ["Building Machines that Learn and Think for Themselves: Commentary on Lake et al., Behavioral and Brain Sciences, 2017"](https://arxiv.org/abs/1711.08378) by Botvinick et al.
+  - `paper` <https://cims.nyu.edu/~brenden/LakeEtAl2017BBS.pdf> ("Behavioral and Brain Sciences")
+  - <https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---commonsense-reasoning>
 
 
 #### ["Thinking Required"](http://arxiv.org/abs/1512.01926) Rocki
@@ -753,22 +754,23 @@
   - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---aixi>
 
 
-#### ["Universal Knowledge-Seeking Agents"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.687.5725&rep=rep1) Orseau
-  `knowledge-seeking` `KSA agent`
+#### ["Universal Knowledge-Seeking Agents for Stochastic Environments"](https://openresearch-repository.anu.edu.au/handle/1885/14714) by Orseau, Lattimore, Hutter
+  `knowledge-seeking` `KL-KSA agent`
+>	"We define an optimal Bayesian knowledge-seeking agent, KL-KSA, designed for countable hypothesis classes of stochastic environments and whose goal is to gather as much information about the unknown world as possible. Although this agent works for arbitrary countable classes and priors, we focus on the especially interesting case where all stochastic computable environments are considered and the prior is based on Solomonoff’s universal prior. Among other properties, we show that KL-KSA learns the true environment in the sense that it learns to predict the consequences of actions it does not take. We show that it does not consider noise to be information and avoids taking actions leading to inescapable traps. We also present a variety of toy experiments demonstrating that KL-KSA behaves according to expectation."
+
+----
 >	"Reinforcement learning agents like Hutter’s universal, Pareto optimal, incomputable AIXI heavily rely on the definition of the rewards, which are necessarily given by some “teacher” to define the tasks to solve. Therefore, as is, AIXI cannot be said to be a fully autonomous agent. From the point of view of artificial general intelligence, this can be argued to be an incomplete definition of a generally intelligent agent. Furthermore, it has recently been shown that AIXI can converge to a suboptimal behavior in certain situations, hence showing the intrinsic difficulty of RL, with its non-obvious pitfalls. We propose a new model of intelligence, the knowledge-seeking agent, halfway between Solomonoff induction and AIXI, that defines a completely autonomous agent that does not require a teacher. The goal of this agent is not to maximize arbitrary rewards, but to entirely explore its world in an optimal way. A proof of strong asymptotic optimality for a class of horizon functions shows that this agent behaves according to expectation. Some implications of such an unusual agent are proposed."
 
 >	"We defined a new kind of universal intelligent agents, named knowledge-seeking agents, which differ significantly from the traditional reinforcement learning framework and its associated universal optimal learner AIXI: Their purpose is not to solve particular, narrow tasks, given or defined by experts like humans, but to be fully autonomous and to depend on no external intelligent entity. Full autonomy is an important property if we are to create generally intelligent agents, that should match or surpass (collective) human intelligence. We believe such agents (or their computational variants) should turn out to be useful to humanity in a different way than RL agents, since they should constantly be creative and solve interesting problems that we may not yet know. It seems that this kind of agent can still be directed to some extent, either by using pieces of knowledge as rewards, or by controlling the parts of the environment the agent interacts with, or by giving it prior knowledge. But these are only temporary biases that decrease in strength as the agent acquires knowledge, in the convergence to optimality. In the real world, where all agents are mortal in some way, it is unlikely that a KSA would be too curious so as to threaten its own life, since a (predicted) death would prevent it from acquiring more knowledge. From a game theory perspective, knowledge-seeking is a positive-sum game, and all the players should cooperate to maximize their knowledge. This is an interesting property regarding the safety of other intelligent agents, as long as they are interested in knowledge (which humans seem to be, at least to some point). However, this alone cannot ensure complete safety because, as soon as several agents have limited resources, a conflict situation can occur, which is not good news for the less “powerful” of the agents."
 
->	"We proved convergence of Square-KSA to the optimal non-learning variant of this agent for a class of horizon functions, meaning that it behaves according to expectation, even in the limit, in all computable environments. If the horizon function grows incomputably fast, we also proved that any environment that is different from the true one sufficiently often is eventually discarded. If the horizon function grows only in a computable way, we showed that environments that may not be discarded tend to be indistinguishable from the true environment in the limit."
+>	"KL-KSA ~ AIXI with information gain as reward"
 
->	"The related agent, Shannon-KSA, based on Shannon entropy, has interesting properties and its value function can be interpreted in terms of how many bits of complexity (information) the agent can expect to gain by doing a particular string of actions. Its asymptotic optimality has been proven but with more restrictions than for Square-KSA, and it is not clear if it can be extended beyond the current limitations."
+>	"If you just use standard AIXI model it is not asymptotically optimal. But if you use information gain as reward it is asymptotically optimal for general reward signal, if you combine knowledge-seeking agent with AIXI by sometimes seeking knowledge and sometimes optimizing reward."
 
->	"As for AIXI, we hope that the various KSA properties to extend nicely to stochastic computable environments. We also expect Square-KSAρ or Shannon-KSAρ (or both) to be Pareto optimal, to converge quickly, in an optimal way to the true environment, i.e., no learning agent should acquire knowledge faster. We are currently trying to get rid of the horizon function in an optimal way. One possibility could be to choose an horizon function based on ρ(h), although having asymptotic optimality for a geometric discounting would also be a good property, as such discounting is time consistent and widely used in RL. Another important concern is how to optimally (for some definition of optimality) scale down SquareKSAρ to a computable agent."
-
-  - `video` <https://youtu.be/YMdFUay0k20?t=36m49s> (Hutter)
+  - `video` <https://youtu.be/YMdFUay0k20?t=36m49s> (Hutter) ([asymptotic optimality](https://youtu.be/YMdFUay0k20?t=1h24m57s), [comparison to Friston's and Schmidhuber's theories](https://youtu.be/YMdFUay0k20?t=1h26m40s))
   - `notes` <http://aslanides.io/aixijs/#ksa>
   - `post` <https://intelligence.org/2013/09/06/laurent-orseau-on-agi>
-  - `paper` ["Universal Knowledge-Seeking Agents for Stochastic Environments"](https://openresearch-repository.anu.edu.au/handle/1885/14714) by Orseau, Lattimore, Hutter
+  - `paper` ["Universal Knowledge-Seeking Agents"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.687.5725&rep=rep1) by Orseau
   - `paper` ["On the Computability of Solomonoff Induction and Knowledge-Seeking"](http://arxiv.org/abs/1507.04124) by Leike and Hutter
 
 

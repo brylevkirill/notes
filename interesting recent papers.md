@@ -968,6 +968,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/iSyvwAwa7vk> (demo)
   - `video` <https://youtube.com/watch?v=kkihoMMpBb0> (Vinyals)
   - `video` <https://facebook.com/iclr.cc/videos/2125495797479475?t=2069> (Kavukcuoglu)
+  - `code` <https://github.com/deepmind/spiral>
 
 #### ["Stacked Capsule Autoencoders"](https://arxiv.org/abs/1906.06818) Kosiorek, Sabour, Teh, Hinton
   `CapsNet` `concept learning` `clustering`
@@ -2029,6 +2030,11 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <https://github.com/abhishm/PGQ>
 
 ----
+#### ["Optimality and Approximation with Policy Gradient Methods in Markov Decision Processes"](https://arxiv.org/abs/1908.00261) Agarwal, Kakade, Lee, Mahajan
+  `policy gradient`
+>	"Policy gradient methods are among the most effective methods in challenging reinforcement learning problems with large state and/or action spaces. However, little is known about even their most basic theoretical convergence properties, including: if and how fast they converge to a globally optimal solution (say with a sufficiently rich policy class); how they cope with approximation error due to using a restricted class of parametric policies; or their finite sample behavior. Such characterizations are important not only to compare these methods to their approximate value function counterparts (where such issues are relatively well understood, at least in the worst case) but also to help with more principled approaches to algorithm design. This work provides provable characterizations of computational, approximation, and sample size issues with regards to policy gradient methods in the context of discounted Markov Decision Processes (MDPs). We focus on both: 1) "tabular" policy parameterizations, where the optimal policy is contained in the class and where we show global convergence to the optimal policy, and 2) restricted policy classes, which may not contain the optimal policy and where we provide agnostic learning results. One insight of this work is in formalizing the importance how a favorable initial state distribution provides a means to circumvent worst-case exploration issues. Overall, these results place policy gradient methods under a solid theoretical footing, analogous to the global convergence guarantees of iterative value function based algorithms."
+  - `video` <https://youtube.com/watch?v=_owDKi_r5OY> (Agarwal)
+
 #### ["Are Deep Policy Gradient Algorithms Truly Policy Gradient Algorithms?"](https://arxiv.org/abs/1811.02553) Ilyas et al.
   `policy gradient`
 >	"Deep reinforcement learning algorithms are rooted in a well-grounded framework of classical RL. However, as our investigations uncover, this framework fails to explain much of the behavior of these algorithms. This disconnect impedes our understanding of why these algorithms succeed (or fail). It also poses a major barrier to addressing key challenges facing deep RL, such as widespread brittleness and poor reproducibility. To close this gap, we need to either develop methods that adhere more closely to theory, or build theory that can capture what makes existing policy gradient methods successful. In both cases, the first step is to precisely pinpoint where theory and practice diverge.  
@@ -2564,7 +2570,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://vimeo.com/235929810> (Schapire)
 
 ----
-#### ["Benchmarking Bonus-Based Exploration Methods on the Arcade Learning Environment"](https://drive.google.com/file/d/1I05c4-d9OsNwGZnLx85fR8dnX-yVoTWe) Taiga, Fedus, Machado, Courville, Bellemare
+#### ["Benchmarking Bonus-Based Exploration Methods on the Arcade Learning Environment"](https://arxiv.org/abs/1908.02388) Taiga, Fedus, Machado, Courville, Bellemare
 >	"This paper provides an empirical evaluation of recently developed exploration algorithms within the ALE. We study the use of different reward bonuses that incentives exploration in reinforcement learning. We do so by fixing the learning algorithm used and focusing only on the impact of the different exploration bonuses in the agent’s performance."  
 >	"We find that, in our setting, recently developed bonuses do not provide significantly improved performance on MONTEZUMA’S REVENGE or hard exploration games. We also find that existing bonus-based methods may negatively impact performance on games in which exploration is not an issue and may even perform worse than Epsilon-greedy exploration."  
   - `video` <https://facebook.com/icml.imls/videos/2265408103721327?t=2654> (Taiga)
@@ -2681,7 +2687,8 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 #### ["BBQ-Networks: Efficient Exploration in Deep Reinforcement Learning for Task-Oriented Dialogue Systems"](https://arxiv.org/abs/1608.05081) Lipton, Li, Gao, Li, Ahmed, Deng
   `approximate bayesian exploration` `approximate posterior sampling`
-  - `video` <https://youtube.com/watch?v=DmasOMKbczg> (Lipton)
+  - `video` <https://youtu.be/DmasOMKbczg?t=4m31s> (Lipton)
+  - `video` <https://youtu.be/77FWffYuQu0?t=15m54s> (Lipton)
 
 #### ["Exploration Potential"](http://arxiv.org/abs/1609.04994) Leike
   `approximate bayesian exploration` `information gain`
@@ -3299,8 +3306,12 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 ### reinforcement learning - multi-agent
 
 ----
+#### ["Computing Approximate Equilibria in Sequential Adversarial Games by Exploitability Descent"](https://arxiv.org/abs/1903.05614) Lockhart et al.
+  `ED`
+>	"We present exploitability descent, a new algorithm to compute approximate equilibria in two-player zero-sum extensive-form games with imperfect information, by direct policy optimization against worst-case opponents. We prove that when following this optimization, the exploitability of a player’s strategy converges asymptotically to zero, and hence when both players employ this optimization, the joint policies converge to a Nash equilibrium. Unlike fictitious play (XFP) and counterfactual regret minimization (CFR), our convergence result pertains to the policies being optimized rather than the average policies. Our experiments demonstrate convergence rates comparable to XFP and CFR in four benchmark games in the tabular case. Using function approximation, we find that our algorithm outperforms the tabular version in two of the games, which, to the best of our knowledge, is the first such result in imperfect information games among this class of algorithms."
+
 #### ["Open-ended Learning in Symmetric Zero-sum Games"](https://arxiv.org/abs/1901.08106) Balduzzi, Garnelo, Bachrach, Czarnecki, Perolat, Jaderberg, Graepel
->	"PSROrn = Rectified Nash matchmaking, upper left"  
+  `PSRO`
 >	"Zero-sum games such as chess and poker are, abstractly, functions that evaluate pairs of agents, for example labeling them ‘winner’ and ‘loser’. If the game is approximately transitive, then selfplay generates sequences of agents of increasing strength. However, nontransitive games, such as rock-paper-scissors, can exhibit strategic cycles, and there is no longer a clear objective – we want agents to increase in strength, but against whom is unclear. In this paper, we introduce a geometric framework for formulating agent objectives in zero-sum games, in order to construct adaptive sequences of objectives that yield openended learning. The framework allows us to reason about population performance in nontransitive games, and enables the development of a new algorithm (rectified Nash response, PSROrN) that uses game-theoretic niching to construct diverse populations of effective agents, producing a stronger set of agents than existing algorithms."  
 >	"The paper is about formulating useful objectives in nontransitive games (e.g. poker or StarCraft), which turns out to be a surprisingly subtle problem. Usually, the learning objective is *given*: minimize a loss or maximize rewards. In nontransitive games, the objective is unclear. Yes, to win, but against whom? Beating paper and beating scissors in rock-paper-scissors are different objectives, that pull in different directions. Blizzard has painstakingly embedded many rock-paper-scissor cycles into SC2. For example, ground units, void rays and phoenixes have this kind of dynamic. These endless exploits are a large part of why humans find the game is so rich and interesting. Nontransitivity has also been linked to biodiversity. Which makes sense! If there are lots of ways of “winning” in an ecosystem, then there’ll be lots of niches for organisms to evolve into. The problem is that there’s no clear way to define the fitness of individuals in nontransitive games — which is better, rock or paper? And if you don’t have a clear objective, then all the compute in the world won’t save you. Our solution is to formulate population-level objectives, using tools like Nash equilibria. Rather than trying to find a single dominant agent, which may not exist, the goal is to find all the underlying strategic dimensions of the game, and the best ways of executing them. Doing this right requires some cool geometry: we extend the idea of a 1-dim fitness landscape to multi-dim gamescapes that represent the latent objectives in a game."  
 >	"In a game with finite sets of strategies, the right thing to do is to find mixed Nash. If strategies are parametrized by (say) neural nets, you've got no hope of computing Nash over all of them. So you have to find "the right" finite set of agents/strategies to work with. That's what we mean when we talk about growing the gamescape in useful directions: finding a good (finite) set of agents in this vast continuum of potential strategies. Once we've got them, Nash is a good way to go."  

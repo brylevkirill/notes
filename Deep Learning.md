@@ -2240,6 +2240,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=UZ9BgrofhKk> (Kozlov) `in russian`
   - `video` <https://youtube.com/watch?v=8R3gXmh1F0c> (Lykov) `in russian`
   - `post` <https://oreilly.com/ideas/introducing-capsule-networks>
+  - `post` <https://gebob19.github.io/capsule-networks>
   - `post` <https://medium.com/@pechyonkin/understanding-hintons-capsule-networks-part-i-intuition-b4b559d1159b>
   - `post` <https://hackernoon.com/uncovering-the-intuition-behind-capsule-networks-and-inverse-graphics-part-i-7412d121798d>
   - `post` <https://jhui.github.io/2017/11/03/Dynamic-Routing-Between-Capsules/>
@@ -2261,6 +2262,7 @@ Yoshua Bengio:
   - `video` <https://youtu.be/hYt3FcJUf6w?t=50m38s> (Uziela)
   - `video` <https://youtube.com/watch?v=akq6PNnkKY8> (Ou)
   - `post` <https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/>
+  - `post` <https://gebob19.github.io/capsule-networks>
   - `post` <https://towardsdatascience.com/demystifying-matrix-capsules-with-em-routing-part-1-overview-2126133a8457>
   - `post` <https://staff.fnwi.uva.nl/s.abnar/?p=108>
   - `notes` <https://blog.acolyer.org/2017/11/14/matrix-capsules-with-em-routing/>
@@ -2304,6 +2306,7 @@ Yoshua Bengio:
 
   - `video` <http://techtalks.tv/talks/deep-residual-networks-deep-learning-gets-way-deeper/62358/> (He)
   - `video` <http://youtube.com/watch?v=1PGLj-uKT1w> (He)
+  - `video` <https://youtube.com/watch?v=jio04YvgraU> (Hoveidar)
   - `post` <http://people.idsia.ch/~juergen/microsoft-wins-imagenet-through-feedforward-LSTM-without-gates.html> (Schmidhuber)
   - `post` <https://blog.init.ai/residual-neural-networks-are-an-exciting-area-of-deep-learning-research-acf14f4912e9>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/HeZRS15>
