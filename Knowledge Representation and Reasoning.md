@@ -86,22 +86,11 @@
 
 
 ----
-#### books and monographies
+#### books
 
   ["Knowledge Representation and Reasoning"](https://goo.gl/JV1JhZ) by Brachman and Levesque `book`  
   ["Handbook of Knowledge Representation"](http://dai.fmph.uniba.sk/~sefranek/kri/handbook/) by van Harmelen, Lifschitz, Porter `book`  
   ["Introduction to Statistical Relational Learning"](http://www.cs.umd.edu/srl-book/) by Getoor and Taskar `book`  
-
-  ["Towards More Human-Like Concept Learning in Machines: Compositionality, Causality and Learning-to-learn"](http://cims.nyu.edu/~brenden/LakePhDThesis.pdf) thesis by Brenden Lake `paper`  
-  ["Combining Representation Learning with Logic for Language Processing"](https://arxiv.org/abs/1712.09687) thesis by Tim Rocktaschel `paper`  
-  ["Knowledge Representation and Reasoning with Deep Neural Networks"](https://people.cs.umass.edu/~arvind/arvind_thesis.pdf) thesis by Arvind Neelakantan `paper`  
-  ["Modeling Natural Language Semantics in Learned Representations"](https://www.nyu.edu/projects/bowman/bowman2016phd.pdf) thesis by Samuel Bowman `paper`  
-  ["Reading and Reasoning with Knowledge Graphs"](http://www.cs.cmu.edu/~mg1/thesis.pdf) thesis by Matt Gardner `paper`  
-  ["Tensor Factorization for Relational Learning"](http://edoc.ub.uni-muenchen.de/16056/1/Nickel_Maximilian.pdf) thesis by Maximilian Nickel `paper`  
-  ["Open Question Answering"](https://digital.lib.washington.edu/researchworks/bitstream/handle/1773/26336/Fader_washington_0250E_13164.pdf) thesis by Anthony Fader `paper`  
-  ["Epistemological Databases for Probabilistic Knowledge Base Construction"](http://scholarworks.umass.edu/cgi/viewcontent.cgi?article=1338&context=dissertations_2) thesis by Michael Wick `paper`  
-  ["Managing Large-scale Probabilistic Databases"](http://pages.cs.wisc.edu/~chrisre/papers/re_thesis.pdf) thesis by Christopher Re `paper`  
-  ["Effective Distant Supervision for End-To-End Knowledge Base Population Systems"](http://scidok.sulb.uni-saarland.de/volltexte/2015/5983/pdf/thesis_finale_fassung.pdf) thesis by Benjamin Roth `paper`  
 
 
 
@@ -277,13 +266,13 @@
   - *embedding*: project multi-relational knowledge into low-dimensional representations of entities and relations via tensor/matrix factorization, Bayesian clustering or neural networks  
 
   history of approaches to relational learning:  
-  - [**tensor factorization**](#relational-learning---tensor-factorization) (Harshman'94)  
-  - [**probabilistic relational learning**](#relational-learning---bayesian-network) (Friedman'99)  
-  - [**Relational Markov Network**](#relational-learning---markov-network) (Taskar'02)  
-  - [**Markov Logic Network**](#relational-learning---markov-logic-network) (Kok'07)  
-  - [**ranking of random walks**](#relational-learning---random-walk-inference) (Lao'11)  
-  - [**embedding models**](#relational-learning---continuous-embeddings) (Bordes'11)  
-  - [**matrix factorization and universal schema**](#relational-learning---matrix-factorization-and-univeral-schema) (Riedel'13)  
+  - [**tensor factorization**](#relational-learning---tensor-factorization)  
+  - [**probabilistic relational learning**](#relational-learning---bayesian-network)  
+  - [**Relational Markov Network**](#relational-learning---markov-network)  
+  - [**Markov Logic Network**](#relational-learning---markov-logic-network)  
+  - [**ranking of random walks**](#relational-learning---random-walk-inference)  
+  - [**embedding models**](#relational-learning---continuous-embeddings)  
+  - [**matrix factorization and universal schema**](#relational-learning---matrix-factorization-and-univeral-schema)  
 
 
 ----

@@ -2435,6 +2435,7 @@ Yoshua Bengio:
   - `post` <https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/>
   - `post` <https://medium.com/@adityathiruvengadam/transformer-architecture-attention-is-all-you-need-aeccd9f50d09>
   - `post` <https://staff.fnwi.uva.nl/s.abnar/?p=108>
+  - `post` <http://peterbloem.nl/blog/transformers>
   - `notes` <https://ricardokleinklein.github.io/2017/11/16/Attention-is-all-you-need.html>
   - `notes` <https://blog.tomrochette.com/machine-learning/papers/ashish-vaswani-attention-is-all-you-need>
   - `notes` <https://medium.com/@sharaf/a-paper-a-day-24-attention-is-all-you-need-26eb2da90a91>

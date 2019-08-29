@@ -6,14 +6,12 @@
   * [**knowledge representation**](#knowledge-representation)
   * [**inference and reasoning**](#inference-and-reasoning)
   * [**decisions and actions**](#decisions-and-actions)
-    - [**reinforcement learning**](#reinforcement-learning)
-    - [**meta-learning**](#meta-learning)
-    - [**artificial curiosity and creativity**](#artificial-curiosity-and-creativity)
-    - [**universal artificial intelligence**](#universal-artificial-intelligence)
+  * [**universal artificial intelligence**](#universal-artificial-intelligence)
+  * [**artificial curiosity and creativity**](#artificial-curiosity-and-creativity)
   * [**interesting papers**](#interesting-papers)
     - [**definitions and measures of intelligence**](#interesting-papers---definitions-and-measures-of-intelligence)
-    - [**artificial curiosity and creativity**](#interesting-papers---artificial-curiosity-and-creativity)
     - [**universal artificial intelligence**](#interesting-papers---universal-artificial-intelligence)
+    - [**artificial curiosity and creativity**](#interesting-papers---artificial-curiosity-and-creativity)
 
 
 
@@ -247,8 +245,8 @@
 
   - [**reinforcement learning**](#reinforcement-learning)
   - [**meta-learning**](#meta-learning)
-  - [**artificial curiosity and creativity**](#artificial-curiosity-and-creativity)
   - [**universal artificial intelligence**](#universal-artificial-intelligence)
+  - [**artificial curiosity and creativity**](#artificial-curiosity-and-creativity)
 
 
 
@@ -296,62 +294,6 @@
   "It’s currently not sufficiently formalized, so it’s difficult to state if and how it really works. Searching for proofs is extremely complicated: Making a parallel with Levin search, where given a goal output string (an improvement in the Goedel Machine), you enumerate programs (propositions in the Goedel Machine) and run them to see if they output the goal string (search for a proof of improvement in Goedel Machine). This last part is the problem: in Levin Search, the programs are fast to run, whereas in Goedel Machine there is an additional search step for each proposition, so this looks very roughly like going from exponential (Levin Search) to double-exponential (Goedel Machine). And Levin Search is already not really practical. Theorem proving is even more complicated when you need to prove that there will be an improvement of the system at an unknown future step. Maybe it would work better if the kinds of proofs were limited to some class, for example use simulation of the future steps up to some horizon given a model of the world. These kinds of proofs are easier to check and have a guaranteed termination, e.g. if the model class for the environment is based on Schmidhuber’s Speed Prior. But this starts to look pretty much like an approximation of AIXI."
 
   *(Laurent Orseau)*
-
-
-
----
-### artificial curiosity and creativity
-
-  ["Formal Theory of Creativity and Fun and Intrinsic Motivation"](http://people.idsia.ch/~juergen/creativity.html) by Juergen Schmidhuber  
-  ["Active Exploration, Artificial Curiosity & What's Interesting"](http://people.idsia.ch/~juergen/interest.html) by Juergen Schmidhuber  
-
-----
-
-  [overview](https://youtube.com/watch?v=h7F5sCLIbKQ&t=7m12s) by Juergen Schmidhuber `video`  
-  [overview](http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/) by Juergen Schmidhuber `video`  
-  [overview](https://vimeo.com/28759091) by Juergen Schmidhuber `video`  
-  [overview](https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber) by Juergen Schmidhuber `video`  
-  [overview](https://youtube.com/watch?v=3FIo6evmweo&t=26m6s) by Juergen Schmidhuber `video`  
-
-  ["Toward Intelligent Humanoids"](https://vimeo.com/51011081) demo from Schmidhuber's group `video`
-
-----
-
-  ["Unsupervised Minimax: Adversarial Curiosity, Generative Adversarial Networks, and Predictability Minimization"](https://arxiv.org/abs/1906.04493) by Schmidhuber `paper` *(overview and history)*
-
-  [**"Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes"**](#driven-by-compression-progress-a-simple-principle-explains-essential-aspects-of-subjective-beauty-novelty-surprise-interestingness-attention-curiosity-creativity-art-science-music-jokes-schmidhuber) by Schmidhuber `paper` `summary`  
-  [**"Formal Theory of Creativity, Fun, and Intrinsic Motivation"**](#formal-theory-of-creativity-fun-and-intrinsic-motivation-schmidhuber) by Schmidhuber `paper` `summary`  
-  [**"Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids"**](#curiosity-driven-reinforcement-learning-for-motion-planning-on-humanoids-frank-leitner-stollenga-forster-schmidhuber) by Frank, Schmidhuber et al. `paper` `summary`  
-  [**"What's Interesting?"**](#whats-interesting-schmidhuber) by Schmidhuber `paper` `summary`  
-  [**"PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem"**](#powerplay-training-an-increasingly-general-problem-solver-by-continually-searching-for-the-simplest-still-unsolvable-problem-schmidhuber) by Schmidhuber `paper` `summary`  
-
-  [**interesting papers**](#interesting-papers---artificial-curiosity-and-creativity)
-
-----
-
-  [**exploration and intrinsic motivation**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#exploration-and-intrinsic-motivation)
-
-----
-
-  "Intrinsic motivation objective for an artificially curious/creative agent is to maximize the amount of model-learning progress, measured as the difference in compression of agent's experience before and after learning."
-
-  "What experiments should an agent’s reinforcement learning controller, C, conduct to generate data that quickly improves agent's adaptive, predictive world model, M, which in turn can help to plan ahead? The theory says: use the learning progress of M (typically compression progress and speed-ups) as the intrinsic reward or fun for C. This motivates C to create action sequences (experiments) such that M can quickly discover new, previously unknown regularities."
-
-  "Humans, even as infants, invent their own tasks in a curious and creative fashion, continually increasing their problem solving repertoire even without an external reward or teacher. They seem to get intrinsic reward for creating experiments leading to observations that obey a previously unknown law that allows for better compression of the observations—corresponding to the discovery of a temporarily interesting, subjectively novel regularity. For example, a video of 100 falling apples can be greatly compressed via predictive coding once the law of gravity is discovered. Likewise, the video-like image sequence perceived while moving through an office can be greatly compressed by constructing an internal 3D model of the office space. The 3D model allows for re-computing the entire high-resolution video from a compact sequence of very low-dimensional eye coordinates and eye directions. The model itself can be specified by far fewer bits of information than needed to store the raw pixel data of a long video. Even if the 3D model is not precise, only relatively few extra bits will be required to encode the observed deviations from the predictions of the model. Even mirror neurons are easily explained as by-products of history compression. They fire both when an animal acts and when the animal observes the same action performed by another. Due to mutual algorithmic information shared by perceptions of similar actions performed by various animals, efficient predictive coding profits from using the same feature detectors (neurons) to encode the shared information, thus saving storage space."
-
-  "In the real world external rewards are rare. Agents using additional intrinsic rewards for model-learning progress will be motivated to learn many useful behaviors even in absence of external rewards, behaviors that lead to predictable or compressible results and thus reflect regularities in the environment, such as repeatable patterns in the world’s reactions to certain action sequences. Often a bias towards exploring previously unknown environmental regularities through artificial curiosity/creativity is a priori desirable because goal-directed learning may greatly profit from it, as behaviors leading to external reward may often be rather easy to compose from previously learnt curiosity-driven behaviors. It may be possible to formally quantify this bias towards novel patterns in form of a mixture-based prior, a weighted sum of probability distributions on sequences of actions and resulting inputs, and derive precise conditions for improved expected external reward intake. Intrinsic reward may be viewed as analogous to a regularizer in supervised learning, where the prior distribution on possible hypotheses greatly influences the most probable interpretation of the data in a Bayesian framework."
-
-  *(Juergen Schmidhuber)*
-
-----
-
-  "To learn as fast as possible about a piece of data, decrease as rapidly as possible the number of bits you need to compress that data. This is exactly how probabilistic models are trained: ∇-log Pr(x). But what if you can choose which data to observe or even create your own? You should create the data that maximises the decrease in bits - the compression progress - of everything else you and your peers have ever observed. In other words, create the thing that makes the most sense of the world: art, science, music, jokes... Happiness is the first derivative of life!"
-
-  *(Alex Graves)*
-
-----
-
-  Intelligence can be seen as compression efficacy - the more one can compress data, the more one can understand it. Example of increase in compression efficacy: 1. raw observations of planetary orbits, 2. geocentric Ptolemaic epicycles, 3. heliocentric ellipses, 4. Newtonian mechanics, 5. general relativity, 6.? Under this view, compression of data is understanding, improvement of compressor is learning, progress of improvement is intrinsic reward. To learn as fast as possible about a piece of data, one should decrease as rapidly as possible the number of bits one need to compress that data. If one can choose which data to observe or create, one should interact with environment in a way to obtain data that maximizes the decrease in bits — the compression progress — of everything already known.
 
 
 
@@ -466,10 +408,21 @@
 
   "AIXI is an agent that interacts with an environment in cycles k=1,2,...,m. In cycle k, AIXI takes action ak (e.g. a limb movement) based on past perceptions o1 r1...ok-1 rk-1. Thereafter, the environment provides a (regular) observation ok (e.g. a camera image) to AIXI and a real-valued reward rk. The reward can be very scarce, e.g. just +1 (-1) for winning (losing) a chess game, and 0 at all other times. Then the next cycle k+1 starts. The expression shows that AIXI tries to maximize its total future reward rk+...+rm. If the environment is modeled by a deterministic program q, then the future perceptions ...okrk...omrm = U(q,a1..am) can be computed, where U is a universal (monotone Turing) machine executing q given a1..am. Since q is unknown, AIXI has to maximize its expected reward, i.e. average rk+...+rm over all possible future perceptions created by all possible environments q that are consistent with past perceptions. The simpler an environment, the higher is its a-priori contribution 2^-l(q), where simplicity is measured by the length l of program q. AIXI effectively learns by eliminating Turing machines q once they become inconsistent with the progressing history. Since noisy environments are just mixtures of deterministic environments, they are automatically included. The sums in the formula constitute the averaging process. Averaging and maximization have to be performed in chronological order, hence the interleaving of max and Σ (similarly to minimax for games). One can fix any finite action and perception space, any reasonable U, and any large finite lifetime m. This completely and uniquely defines AIXI's actions ak, which are limit-computable via the expression above (all quantities are known)."
 
+----
+
+  [**"A Monte Carlo AIXI Approximation"**](#a-monte-carlo-aixi-approximation-veness-ng-hutter-uther-silver) by Veness, Ng, Hutter, Uther, Silver `paper` `summary`  
+  ["Approximate Universal Artificial Intelligence and Self-Play Learning for Games"](http://jveness.info/publications/veness_phd_thesis_final.pdf) by Joel Veness `paper`  
 
 ----
-#### AIXI limitations
-  
+
+  "The ultimate optimal Bayesian approach to machine learning is embodied by the AIXI model. Any computational problem can be phrased as the maximization of a reward function. AIXI is based on Solomonoff's universal mixture M of all computable probability distributions. If the probabilities of the world's responses to some reinforcement learning agent's actions are computable (there is no physical evidence against that), then the agent may predict its future sensory inputs and rewards using M instead of the true but unknown distribution. The agent can indeed act optimally by choosing those action sequences that maximize M-predicted reward. This may be dubbed the unbeatable, ultimate statistical approach to AI - it demonstrates the mathematical limits of what's possible. However, AIXI’s notion of optimality ignores computation time, which is the reason why we are still in business with less universal but more practically feasible approaches such as deep learning based on more limited local search techniques such as gradient descent."
+
+  "Generally speaking, when it comes to Reinforcement Learning, it is indeed a good idea to train a recurrent neural network called M to become a predictive model of the world, and use M to train a separate controller network C which is supposed to generate reward-maximising action sequences. Marcus Hutter’s mathematically optimal universal AIXI also has a predictive world model M, and a controller C that uses M to maximise expected reward. Ignoring limited storage size, RNNs are general computers just like your laptop. That is, AIXI’s M is related to the RNN-based M above in the sense that both consider a very general space of predictive programs. AIXI’s M, however, really looks at all those programs simultaneously, while the RNN-based M uses a limited local search method such as gradient descent in program space (also known as backpropagation through time) to find a single reasonable predictive program (an RNN weight matrix). AIXI’s C always picks the action that starts the action sequence that yields maximal predicted reward, given the current M, which in a Bayes-optimal way reflects all the observations so far. The RNN-based C, however, uses a local search method (backpropagation through time) to optimise its program or weight matrix, using gradients derived from M. So in a way, my old RNN-based CM system of 1990 may be viewed as a limited, downscaled, sub-optimal, but at least computationally feasible approximation of AIXI."
+
+  *(Juergen Schmidhuber)*
+
+----
+
   "AIXI it is not a feasible AI, because Solomonoff induction is not computable."
 
   "AIXI only works over some finite time horizon, though any finite horizon can be chosen. But some environments may not interact over finite time horizons."
@@ -477,13 +430,6 @@
   "AIXI lacks a self-model. It extrapolates its own actions into the future indefinitely, on the assumption that it will keep working in the same way in the future. Though AIXI is an abstraction, any real AI would have a physical embodiment that could be damaged, and an implementation which could change its behavior due to bugs; and the AIXI formalism completely ignores these possibilities."
 
   "Solomonoff induction treats the world as a sort of qualia factory, a complicated mechanism that outputs experiences for the inductor. Its hypothesis space tacitly assumes a Cartesian barrier separating the inductor's cognition from the hypothesized programs generating the perceptions. Through that barrier, only sensory bits and action bits can pass. Real agents, on the other hand, will be in the world they're trying to learn about. A computable approximation of AIXI, like AIXI-tl, would be a physical object. Its environment would affect it in unseen and sometimes drastic ways; and it would have involuntary effects on its environment, and on itself. Solomonoff induction doesn't appear to be a viable conceptual foundation for artificial intelligence - not because it's an uncomputable idealization, but because it's Cartesian."
-
-
-----
-#### Monte-Carlo AIXI Approximation
-
-  [**"A Monte Carlo AIXI Approximation"**](#a-monte-carlo-aixi-approximation-veness-ng-hutter-uther-silver) by Veness, Ng, Hutter, Uther, Silver `paper` `summary`  
-  ["Approximate Universal Artificial Intelligence and Self-Play Learning for Games"](http://jveness.info/publications/veness_phd_thesis_final.pdf) by Joel Veness `paper`  
 
 
 
@@ -503,18 +449,63 @@
 
 
 ---
-### universal artificial intelligence - Artificial Curiosity and Creativity
+### artificial curiosity and creativity
 
-  [**Artificial Curiosity and Creativity**](#artificial-curiosity-and-creativity) by Juergen Schmidhuber
+  ["Formal Theory of Creativity and Fun and Intrinsic Motivation"](http://people.idsia.ch/~juergen/creativity.html) by Juergen Schmidhuber  
+  ["Active Exploration, Artificial Curiosity & What's Interesting"](http://people.idsia.ch/~juergen/interest.html) by Juergen Schmidhuber  
 
-  "The ultimate optimal Bayesian approach to machine learning is embodied by the AIXI model. Any computational problem can be phrased as the maximization of a reward function. AIXI is based on Solomonoff's universal mixture M of all computable probability distributions. If the probabilities of the world's responses to some reinforcement learning agent's actions are computable (there is no physical evidence against that), then the agent may predict its future sensory inputs and rewards using M instead of the true but unknown distribution. The agent can indeed act optimally by choosing those action sequences that maximize M-predicted reward. This may be dubbed the unbeatable, ultimate statistical approach to AI - it demonstrates the mathematical limits of what's possible. However, AIXI’s notion of optimality ignores computation time, which is the reason why we are still in business with less universal but more practically feasible approaches such as deep learning based on more limited local search techniques such as gradient descent."
+----
 
-  "Generally speaking, when it comes to Reinforcement Learning, it is indeed a good idea to train a recurrent neural network called M to become a predictive model of the world, and use M to train a separate controller network C which is supposed to generate reward-maximising action sequences. Marcus Hutter’s mathematically optimal universal AIXI also has a predictive world model M, and a controller C that uses M to maximise expected reward. Ignoring limited storage size, RNNs are general computers just like your laptop. That is, AIXI’s M is related to the RNN-based M above in the sense that both consider a very general space of predictive programs. AIXI’s M, however, really looks at all those programs simultaneously, while the RNN-based M uses a limited local search method such as gradient descent in program space (also known as backpropagation through time) to find a single reasonable predictive program (an RNN weight matrix). AIXI’s C always picks the action that starts the action sequence that yields maximal predicted reward, given the current M, which in a Bayes-optimal way reflects all the observations so far. The RNN-based C, however, uses a local search method (backpropagation through time) to optimise its program or weight matrix, using gradients derived from M. So in a way, my old RNN-based CM system of 1990 may be viewed as a limited, downscaled, sub-optimal, but at least computationally feasible approximation of AIXI."
+  [overview](https://youtube.com/watch?v=h7F5sCLIbKQ&t=7m12s) by Juergen Schmidhuber `video`  
+  [overview](http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/) by Juergen Schmidhuber `video`  
+  [overview](https://vimeo.com/28759091) by Juergen Schmidhuber `video`  
+  [overview](https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber) by Juergen Schmidhuber `video`  
+  [overview](https://youtube.com/watch?v=3FIo6evmweo&t=26m6s) by Juergen Schmidhuber `video`  
+
+  ["Toward Intelligent Humanoids"](https://vimeo.com/51011081) demo from Schmidhuber's group `video`
+
+----
+
+  ["Unsupervised Minimax: Adversarial Curiosity, Generative Adversarial Networks, and Predictability Minimization"](https://arxiv.org/abs/1906.04493) by Schmidhuber `paper` *(overview and history)*
+
+  [**"Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes"**](#driven-by-compression-progress-a-simple-principle-explains-essential-aspects-of-subjective-beauty-novelty-surprise-interestingness-attention-curiosity-creativity-art-science-music-jokes-schmidhuber) by Schmidhuber `paper` `summary`  
+  [**"Formal Theory of Creativity, Fun, and Intrinsic Motivation"**](#formal-theory-of-creativity-fun-and-intrinsic-motivation-schmidhuber) by Schmidhuber `paper` `summary`  
+  [**"Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids"**](#curiosity-driven-reinforcement-learning-for-motion-planning-on-humanoids-frank-leitner-stollenga-forster-schmidhuber) by Frank, Schmidhuber et al. `paper` `summary`  
+  [**"What's Interesting?"**](#whats-interesting-schmidhuber) by Schmidhuber `paper` `summary`  
+  [**"PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem"**](#powerplay-training-an-increasingly-general-problem-solver-by-continually-searching-for-the-simplest-still-unsolvable-problem-schmidhuber) by Schmidhuber `paper` `summary`  
+
+  [**interesting papers**](#interesting-papers---artificial-curiosity-and-creativity)
+
+----
+
+  [**exploration and intrinsic motivation**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#exploration-and-intrinsic-motivation)
+
+----
+
+  Intelligence can be seen as compression efficacy - the more one can compress data, the more one can understand it. Example of increase in compression efficacy: 1. raw observations of planetary orbits, 2. geocentric Ptolemaic epicycles, 3. heliocentric ellipses, 4. Newtonian mechanics, 5. general relativity, 6.? Under this view, compression of data is understanding, improvement of compressor is learning, progress of improvement is intrinsic reward. To learn as fast as possible about a piece of data, one should decrease as rapidly as possible the number of bits one need to compress that data. If one can choose which data to observe or create, one should interact with environment in a way to obtain data that maximizes the decrease in bits (the compression progress) of everything already known.
+
+----
+
+  "Intrinsic motivation objective for an artificially curious/creative agent is to maximize the amount of model-learning progress, measured as the difference in compression of agent's experience before and after learning."
+
+  "What experiments should an agent’s reinforcement learning controller, C, conduct to generate data that quickly improves agent's adaptive, predictive world model, M, which in turn can help to plan ahead? The theory says: use the learning progress of M (typically compression progress and speed-ups) as the intrinsic reward or fun for C. This motivates C to create action sequences (experiments) such that M can quickly discover new, previously unknown regularities."
+
+  "Humans, even as infants, invent their own tasks in a curious and creative fashion, continually increasing their problem solving repertoire even without an external reward or teacher. They seem to get intrinsic reward for creating experiments leading to observations that obey a previously unknown law that allows for better compression of the observations—corresponding to the discovery of a temporarily interesting, subjectively novel regularity. For example, a video of 100 falling apples can be greatly compressed via predictive coding once the law of gravity is discovered. Likewise, the video-like image sequence perceived while moving through an office can be greatly compressed by constructing an internal 3D model of the office space. The 3D model allows for re-computing the entire high-resolution video from a compact sequence of very low-dimensional eye coordinates and eye directions. The model itself can be specified by far fewer bits of information than needed to store the raw pixel data of a long video. Even if the 3D model is not precise, only relatively few extra bits will be required to encode the observed deviations from the predictions of the model. Even mirror neurons are easily explained as by-products of history compression. They fire both when an animal acts and when the animal observes the same action performed by another. Due to mutual algorithmic information shared by perceptions of similar actions performed by various animals, efficient predictive coding profits from using the same feature detectors (neurons) to encode the shared information, thus saving storage space."
+
+  "In the real world external rewards are rare. Agents using additional intrinsic rewards for model-learning progress will be motivated to learn many useful behaviors even in absence of external rewards, behaviors that lead to predictable or compressible results and thus reflect regularities in the environment, such as repeatable patterns in the world’s reactions to certain action sequences. Often a bias towards exploring previously unknown environmental regularities through artificial curiosity/creativity is a priori desirable because goal-directed learning may greatly profit from it, as behaviors leading to external reward may often be rather easy to compose from previously learnt curiosity-driven behaviors. It may be possible to formally quantify this bias towards novel patterns in form of a mixture-based prior, a weighted sum of probability distributions on sequences of actions and resulting inputs, and derive precise conditions for improved expected external reward intake. Intrinsic reward may be viewed as analogous to a regularizer in supervised learning, where the prior distribution on possible hypotheses greatly influences the most probable interpretation of the data in a Bayesian framework."
 
   *(Juergen Schmidhuber)*
 
+----
+
   [**"On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models"**](#on-learning-to-think-algorithmic-information-theory-for-novel-combinations-of-reinforcement-learning-controllers-and-recurrent-neural-world-models-schmidhuber) by Juergen Schmidhuber `paper` `summary`
 >	"We motivate controller network C to become an efficient explorer and an artificial scientist, by adding to its standard external reward (or fitness) for solving user-given tasks another intrinsic reward for generating novel action sequences (= experiments) that allow world model network M to improve its compression performance on the resulting data. At first glance, repeatedly evaluating M’s compression performance on the entire history seems impractical. A heuristic to overcome this is to focus on M’s improvements on the most recent trial, while regularly re-training M on randomly selected previous trials, to avoid catastrophic forgetting. A related problem is that C’s incremental program search may find it difficult to identify (and assign credit to) those parts of C responsible for improvements of a huge, black box-like, monolithic M. But we can implement M as a self-modularizing, computation cost-minimizing, winner-take-all RNN. Then it is possible to keep track of which parts of M are used to encode which parts of the history. That is, to evaluate weight changes of M, only the affected parts of the stored history have to be re-tested. Then C’s search can be facilitated by tracking which parts of C affected those parts of M. By penalizing C’s programs for the time consumed by such tests, the search for C is biased to prefer programs that conduct experiments causing data yielding quickly verifiable compression progress of M. That is, the program search will prefer to change weights of M that are not used to compress large parts of the history that are expensive to verify. The first implementations of this simple principle were described in our work on the POWERPLAY framework, which incrementally searches the space of possible pairs of new tasks and modifications of the current program, until it finds a more powerful program that, unlike the unmodified program, solves all previously learned tasks plus the new one, or simplifies/compresses/speeds up previous solutions, without forgetting any."
+
+----
+
+  "To learn as fast as possible about a piece of data, decrease as rapidly as possible the number of bits you need to compress that data. This is exactly how probabilistic models are trained: ∇-log Pr(x). But what if you can choose which data to observe or even create your own? You should create the data that maximises the decrease in bits - the compression progress - of everything else you and your peers have ever observed. In other words, create the thing that makes the most sense of the world: art, science, music, jokes... Happiness is the first derivative of life!"
+
+  *(Alex Graves)*
 
 
 
@@ -522,8 +513,8 @@
 ### interesting papers
 
   - [**definitions and measures of intelligence**](#interesting-papers---definitions-and-measures-of-intelligence)
-  - [**artificial curiosity and creativity**](#interesting-papers---artificial-curiosity-and-creativity)
   - [**universal artificial intelligence**](#interesting-papers---universal-artificial-intelligence)
+  - [**artificial curiosity and creativity**](#interesting-papers---artificial-curiosity-and-creativity)
 
 ----
 
@@ -580,73 +571,6 @@
 
 #### ["Thinking Required"](http://arxiv.org/abs/1512.01926) Rocki
 >	"There exists a theory of a single general-purpose learning algorithm which could explain the principles of its operation. It assumes the initial rough architecture, a small library of simple innate circuits which are prewired at birth and proposes that all significant mental algorithms are learned. Given current understanding and observations, this paper reviews and lists the ingredients of such an algorithm from architectural and functional perspectives."
-
-
-
----
-### interesting papers - artificial curiosity and creativity
-
-[**interesting papers**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---exploration-and-intrinsic-motivation) on exploration and intrinsic motivation
-
-
-#### ["Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes"](http://arxiv.org/abs/0812.4360) Schmidhuber
->	"I argue that data becomes temporarily interesting by itself to some self-improving, but computationally limited, subjective observer once he learns to predict or compress the data in a better way, thus making it subjectively simpler and more beautiful. Curiosity is the desire to create or discover more non-random, non-arbitrary, regular data that is novel and surprising not in the traditional sense of Boltzmann and Shannon but in the sense that it allows for compression progress because its regularity was not yet known. This drive maximizes interestingness, the first derivative of subjective beauty or compressibility, that is, the steepness of the learning curve. It motivates exploring infants, pure mathematicians, composers, artists, dancers, comedians, yourself, and artificial systems."
-
-  Alex Graves:
-> 	"To learn as fast as possible about a piece of data, decrease as rapidly as possible the number of bits you need to compress that data. This is exactly how probabilistic models are trained: ∇-log Pr(x)  
-  But what if you can choose which data to observe or even create your own? You should create the data that maximises the decrease in bits - the compression progress - of everything else you and your peers have ever observed. In other words, create the thing that makes the most sense of the world: art, science, music, jokes... Happiness is the first derivative of life!"
-
-  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity>
-
-
-#### ["Formal Theory of Creativity, Fun, and Intrinsic Motivation"](http://people.idsia.ch/~juergen/ieeecreative.pdf) Schmidhuber
->	"The simple but general formal theory of fun & intrinsic motivation & creativity is based on the concept of maximizing intrinsic reward for the active creation or discovery of novel, surprising patterns allowing for improved prediction or data compression. It generalizes the traditional field of active learning, and is related to old but less formal ideas in aesthetics theory and developmental psychology. It has been argued that the theory explains many essential aspects of intelligence including autonomous development, science, art, music, humor. This overview first describes theoretically optimal (but not necessarily practical) ways of implementing the basic computational principles on exploratory, intrinsically motivated agents or robots, encouraging them to provoke event sequences exhibiting previously unknown but learnable algorithmic regularities. Emphasis is put on the importance of limited computational resources for online prediction and compression. Discrete and continuous time formulations are given. Previous practical but non-optimal implementations (1991, 1995, 1997-2002) are reviewed, as well as several recent variants by others (2005-). A simplified typology addresses current confusion concerning the precise nature of intrinsic motivation."
-
->	"I have argued that a simple but general formal theory of creativity based on reward for creating or finding novel patterns allowing for data compression progress explains many essential aspects of intelligence including science, art, music, humor. Here I discuss what kind of general bias towards algorithmic regularities we insert into our robots by implementing the principle, why that bias is good, and how the approach greatly generalizes the field of active learning. I provide discrete and continuous time formulations for ongoing work on building an Artificial General Intelligence based on variants of the artificial creativity framework."
-
->	"In the real world external rewards are rare. But unsupervised AGIs using additional intrinsic rewards as described in this paper will be motivated to learn many useful behaviors even in absence of external rewards, behaviors that lead to predictable or compressible results and thus reflect regularities in the environment, such as repeatable patterns in the world’s reactions to certain action sequences. Often a bias towards exploring previously unknown environmental regularities through artificial curiosity / creativity is a priori desirable because goal-directed learning may greatly profit from it, as behaviors leading to external reward may often be rather easy to compose from previously learnt curiosity-driven behaviors. It may be possible to formally quantify this bias towards novel patterns in form of a mixture-based prior, a weighted sum of probability distributions on sequences of actions and resulting inputs, and derive precise conditions for improved expected external reward intake. Intrinsic reward may be viewed as analogous to a regularizer in supervised learning, where the prior distribution on possible hypotheses greatly influences the most probable interpretation of the data in a Bayesian framework (for example, the well-known weight decay term of neural networks is a consequence of a Gaussian prior with zero mean for each weight). Following the introductory discussion, some of the AGIs based on the creativity principle will become scientists, artists, or comedians."
-
-  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity>
-
-
-#### ["Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3881010/pdf/fnbot-07-00025.pdf) Frank, Leitner, Stollenga, Forster, Schmidhuber
->	"Most previous work on artificial curiosity and intrinsic motivation focuses on basic concepts and theory. Experimental results are generally limited to toy scenarios, such as navigation in a simulated maze, or control of a simple mechanical system with one or two degrees of freedom. To study AC in a more realistic setting, we embody a curious agent in the complex iCub humanoid robot. Our novel reinforcement learning framework consists of a state-of-the-art, low-level, reactive control layer, which controls the iCub while respecting constraints, and a high-level curious agent, which explores the iCub’s state-action space through information gain maximization, learning a world model from experience, controlling the actual iCub hardware in real-time. To the best of our knowledge, this is the first ever embodied, curious agent for real-time motion planning on a humanoid. We demonstrate that it can learn compact Markov models to represent large regions of the iCub’s configuration space, and that the iCub explores intelligently, showing interest in its physical constraints as well as in objects it finds in its environment."
-
-  - `video` <http://vimeo.com/51011081> (demo)
-  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity>
-
-
-#### ["What's Interesting?"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.45.6362) Schmidhuber
->	"Interestingness depends on the observer's current knowledge and computational abilities. Things are boring if either too much or too little is known about them --- if they appear either trivial or random. Interesting are unexpected regularities that seem easy to figure out. I attempt to implement these ideas in a "curious", "creative" explorer with two coevolving "brains". It executes a lifelong sequence of instructions whose modifiable probabilities are conditioned on both brains --- both must agree on each instruction. There are special instructions for comparing computational results. The brains can predict outcomes of such comparisons. If their opinions differ, then the winner will get rewarded, the loser punished. Hence each brain wants to lure the other into agreeing upon instruction subsequences involving comparisons that surprise it. The surprised brain adapts. In turn, the other loses a source of reward --- an incentive to shift the focus of interest. Both brains deal with the complex credit assignment problem using the recent Incremental Self-Improvement paradigm. Extensive simulations include an example where curiosity helps to speed up external reward."
-
-----
->	"A single agent has two dueling, reward-maximizing policies called the left brain and the right brain. Each policy is a modifiable probability distribution over programs running on a general purpose computer. Experiments are programs sampled in a collaborative way that is influenced by both brains. Each experiment specifies how to execute an instruction sequence (which may affect both the environment and the agent’s internal state), and how to compute the outcome of the experiment through instructions implementing a computable function (possibly resulting in an internal binary yes/no classification) of the observation sequence triggered by the experiment. The modifiable parameters of both brains are instruction probabilities. They can be accessed and manipulated through programs that include subsequences of special self-referential policy-modifying instructions.  
->	Both brains may also trigger the execution of certain bet instructions whose effect is to predict experimental outcomes before they are observed. If their predictions or hypotheses differ, they may agree to execute the experiment to determine which brain was right, and the surprised loser will pay an intrinsic reward (the real-valued bet, e.g., 1.0) to the winner in a zero sum game.  
->	That is, each brain is intrinsically motivated to outwit or surprise the other by proposing an experiment such that the other agrees on the experimental protocol but disagrees on the predicted outcome, which is typically an internal computable abstraction of complex spatio-temporal events generated through the execution the self-invented experiment.  
->	This motivates the unsupervised two brain system to focus on "interesting" computational questions, losing interest in "boring" computations (potentially involving the environment) whose outcomes are consistently predictable by both brains, as well as computations whose outcomes are currently still hard to predict by any brain. Again, in the absence of external reward, each brain maximizes the value function minimised by the other.  
->	Using the meta-learning Success-Story RL algorithm, agent learns when to learn and what to learn. Agent will also minimize the computational cost of learning new skills, provided both brains receive a small negative reward for each computational step, which introduces a bias towards simple still surprising experiments (reflecting simple still unsolved problems). This may facilitate hierarchical construction of more and more complex experiments, including those yielding external reward (if there is any). In fact, this artificial creativity may not only drive artificial scientists and artists but can also accelerate the intake of external reward, intuitively because a better understanding of the world can help to solve certain problems faster."
-
-  - `post` <http://people.idsia.ch/~juergen/unsupervised-neural-nets-fight-minimax-game.html>
-  - `post` <http://people.idsia.ch/~juergen/interest.html>
-  - `post` <http://people.idsia.ch/~juergen/ica.html>
-  - `video` <http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/#t=2540> (Schmidhuber)
-  - `slides` <http://people.idsia.ch/~juergen/minimax2018small.pdf> (Schmidhuber)
-  - `paper` ["Artificial Curiosity Based on Discovering Novel Algorithmic Predictability Through Coevolution"](ftp://ftp.idsia.ch/pub/juergen/cec99.ps.gz) by Schmidhuber
-  - `paper` ["Exploring the Predictable"](ftp://ftp.idsia.ch/pub/juergen/explorepredictable.pdf) by Schmidhuber
-  - `paper` ["Unsupervised Minimax: Adversarial Curiosity, Generative Adversarial Networks, and Predictability Minimization"](https://arxiv.org/abs/1906.04493) by Schmidhuber
-  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity>
-
-
-#### ["PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem"](http://arxiv.org/abs/1112.5309) Schmidhuber
->	"Most of computer science focuses on automatically solving given computational problems. I focus on automatically inventing or discovering problems in a way inspired by the playful behavior of animals and humans, to train a more and more general problem solver from scratch in an unsupervised fashion. Consider the infinite set of all computable descriptions of tasks with possibly computable solutions. Given a general problem solving architecture, at any given time, the novel algorithmic framework PowerPlay searches the space of possible pairs of new tasks and modifications of the current problem solver, until it finds a more powerful problem solver that provably solves all previously learned tasks plus the new one, while the unmodified predecessor does not. Newly invented tasks may require to achieve a wow-effect by making previously learned skills more efficient such that they require less time and space. New skills may (partially) re-use previously learned skills. The greedy search of typical PowerPlay variants uses time-optimal program search to order candidate pairs of tasks and solver modifications by their conditional computational (time & space) complexity, given the stored experience so far. The new task and its corresponding task-solving skill are those first found and validated. This biases the search towards pairs that can be described compactly and validated quickly. The computational costs of validating new tasks need not grow with task repertoire size. Standard problem solver architectures of personal computers or neural networks tend to generalize by solving numerous tasks outside the self-invented training set; PowerPlay’s ongoing search for novelty keeps breaking the generalization abilities of its present solver. This is related to Goedel’s sequence of increasingly powerful formal theories based on adding formerly unprovable statements to the axioms without affecting previously provable theorems. The continually increasing repertoire of problem solving procedures can be exploited by a parallel search for solutions to additional externally posed tasks. PowerPlay may be viewed as a greedy but practical implementation of basic principles of creativity."
-
-----
->	"Pure scientists do not only invent new methods to solve given problems. They also invent new problems. The recent PowerPlay framework formalizes this type of curiosity and creativity in a new, general, yet practical way. To acquire problem solving prowess through playing, PowerPlay-based artificial explorers by design continually come up with the fastest to find, initially novel, but eventually solvable problems. They also continually simplify or speed up solutions to previous problems. We report on results of first experiments with PowerPlay. A self-delimiting recurrent neural network (SLIM RNN) is used as a general computational architecture to implement the system’s solver. Its weights can encode arbitrary, self-delimiting, halting or non-halting programs affecting both environment (through effectors) and internal states encoding abstractions of event sequences. In open-ended fashion, our PowerPlay-driven RNNs learn to become increasingly general problem solvers, continually adding new problem solving procedures to the growing repertoire, exhibiting interesting developmental stages."
-
-  - `video` <https://youtu.be/SAcHyzMdbXc?t=16m6s> (de Freitas)
-  - `paper` ["First Experiments with PowerPlay"](https://arxiv.org/abs/1210.8385) by Srivastava, Steunebrink, Stollenga, Schmidhuber
-  - `paper` ["One Big Net For Everything"](https://arxiv.org/abs/1802.08864) by Schmidhuber
-  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity>
 
 
 
@@ -834,3 +758,70 @@
 >	"Generally speaking, when it comes to Reinforcement Learning, it is indeed a good idea to train a recurrent neural network called M to become a predictive model of the world, and use M to train a separate controller network C which is supposed to generate reward-maximising action sequences. Marcus Hutter’s mathematically optimal universal AIXI also has a predictive world model M, and a controller C that uses M to maximise expected reward. Ignoring limited storage size, RNNs are general computers just like your laptop. That is, AIXI’s M is related to the RNN-based M above in the sense that both consider a very general space of predictive programs. AIXI’s M, however, really looks at all those programs simultaneously, while the RNN-based M uses a limited local search method such as gradient descent in program space (also known as backpropagation through time) to find a single reasonable predictive program (an RNN weight matrix). AIXI’s C always picks the action that starts the action sequence that yields maximal predicted reward, given the current M, which in a Bayes-optimal way reflects all the observations so far. The RNN-based C, however, uses a local search method (backpropagation through time) to optimise its program or weight matrix, using gradients derived from M. So in a way, my old RNN-based CM system of 1990 may be viewed as a limited, downscaled, sub-optimal, but at least computationally feasible approximation of AIXI."
 
   - `paper` ["One Big Net For Everything"](https://arxiv.org/abs/1802.08864) by Schmidhuber
+
+
+
+---
+### interesting papers - artificial curiosity and creativity
+
+[**interesting papers**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---exploration-and-intrinsic-motivation) on exploration and intrinsic motivation
+
+
+#### ["Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes"](http://arxiv.org/abs/0812.4360) Schmidhuber
+>	"I argue that data becomes temporarily interesting by itself to some self-improving, but computationally limited, subjective observer once he learns to predict or compress the data in a better way, thus making it subjectively simpler and more beautiful. Curiosity is the desire to create or discover more non-random, non-arbitrary, regular data that is novel and surprising not in the traditional sense of Boltzmann and Shannon but in the sense that it allows for compression progress because its regularity was not yet known. This drive maximizes interestingness, the first derivative of subjective beauty or compressibility, that is, the steepness of the learning curve. It motivates exploring infants, pure mathematicians, composers, artists, dancers, comedians, yourself, and artificial systems."
+
+  Alex Graves:
+> 	"To learn as fast as possible about a piece of data, decrease as rapidly as possible the number of bits you need to compress that data. This is exactly how probabilistic models are trained: ∇-log Pr(x)  
+  But what if you can choose which data to observe or even create your own? You should create the data that maximises the decrease in bits - the compression progress - of everything else you and your peers have ever observed. In other words, create the thing that makes the most sense of the world: art, science, music, jokes... Happiness is the first derivative of life!"
+
+  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity>
+
+
+#### ["Formal Theory of Creativity, Fun, and Intrinsic Motivation"](http://people.idsia.ch/~juergen/ieeecreative.pdf) Schmidhuber
+>	"The simple but general formal theory of fun & intrinsic motivation & creativity is based on the concept of maximizing intrinsic reward for the active creation or discovery of novel, surprising patterns allowing for improved prediction or data compression. It generalizes the traditional field of active learning, and is related to old but less formal ideas in aesthetics theory and developmental psychology. It has been argued that the theory explains many essential aspects of intelligence including autonomous development, science, art, music, humor. This overview first describes theoretically optimal (but not necessarily practical) ways of implementing the basic computational principles on exploratory, intrinsically motivated agents or robots, encouraging them to provoke event sequences exhibiting previously unknown but learnable algorithmic regularities. Emphasis is put on the importance of limited computational resources for online prediction and compression. Discrete and continuous time formulations are given. Previous practical but non-optimal implementations (1991, 1995, 1997-2002) are reviewed, as well as several recent variants by others (2005-). A simplified typology addresses current confusion concerning the precise nature of intrinsic motivation."
+
+>	"I have argued that a simple but general formal theory of creativity based on reward for creating or finding novel patterns allowing for data compression progress explains many essential aspects of intelligence including science, art, music, humor. Here I discuss what kind of general bias towards algorithmic regularities we insert into our robots by implementing the principle, why that bias is good, and how the approach greatly generalizes the field of active learning. I provide discrete and continuous time formulations for ongoing work on building an Artificial General Intelligence based on variants of the artificial creativity framework."
+
+>	"In the real world external rewards are rare. But unsupervised AGIs using additional intrinsic rewards as described in this paper will be motivated to learn many useful behaviors even in absence of external rewards, behaviors that lead to predictable or compressible results and thus reflect regularities in the environment, such as repeatable patterns in the world’s reactions to certain action sequences. Often a bias towards exploring previously unknown environmental regularities through artificial curiosity / creativity is a priori desirable because goal-directed learning may greatly profit from it, as behaviors leading to external reward may often be rather easy to compose from previously learnt curiosity-driven behaviors. It may be possible to formally quantify this bias towards novel patterns in form of a mixture-based prior, a weighted sum of probability distributions on sequences of actions and resulting inputs, and derive precise conditions for improved expected external reward intake. Intrinsic reward may be viewed as analogous to a regularizer in supervised learning, where the prior distribution on possible hypotheses greatly influences the most probable interpretation of the data in a Bayesian framework (for example, the well-known weight decay term of neural networks is a consequence of a Gaussian prior with zero mean for each weight). Following the introductory discussion, some of the AGIs based on the creativity principle will become scientists, artists, or comedians."
+
+  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity>
+
+
+#### ["Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3881010/pdf/fnbot-07-00025.pdf) Frank, Leitner, Stollenga, Forster, Schmidhuber
+>	"Most previous work on artificial curiosity and intrinsic motivation focuses on basic concepts and theory. Experimental results are generally limited to toy scenarios, such as navigation in a simulated maze, or control of a simple mechanical system with one or two degrees of freedom. To study AC in a more realistic setting, we embody a curious agent in the complex iCub humanoid robot. Our novel reinforcement learning framework consists of a state-of-the-art, low-level, reactive control layer, which controls the iCub while respecting constraints, and a high-level curious agent, which explores the iCub’s state-action space through information gain maximization, learning a world model from experience, controlling the actual iCub hardware in real-time. To the best of our knowledge, this is the first ever embodied, curious agent for real-time motion planning on a humanoid. We demonstrate that it can learn compact Markov models to represent large regions of the iCub’s configuration space, and that the iCub explores intelligently, showing interest in its physical constraints as well as in objects it finds in its environment."
+
+  - `video` <http://vimeo.com/51011081> (demo)
+  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity>
+
+
+#### ["What's Interesting?"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.45.6362) Schmidhuber
+>	"Interestingness depends on the observer's current knowledge and computational abilities. Things are boring if either too much or too little is known about them --- if they appear either trivial or random. Interesting are unexpected regularities that seem easy to figure out. I attempt to implement these ideas in a "curious", "creative" explorer with two coevolving "brains". It executes a lifelong sequence of instructions whose modifiable probabilities are conditioned on both brains --- both must agree on each instruction. There are special instructions for comparing computational results. The brains can predict outcomes of such comparisons. If their opinions differ, then the winner will get rewarded, the loser punished. Hence each brain wants to lure the other into agreeing upon instruction subsequences involving comparisons that surprise it. The surprised brain adapts. In turn, the other loses a source of reward --- an incentive to shift the focus of interest. Both brains deal with the complex credit assignment problem using the recent Incremental Self-Improvement paradigm. Extensive simulations include an example where curiosity helps to speed up external reward."
+
+----
+>	"A single agent has two dueling, reward-maximizing policies called the left brain and the right brain. Each policy is a modifiable probability distribution over programs running on a general purpose computer. Experiments are programs sampled in a collaborative way that is influenced by both brains. Each experiment specifies how to execute an instruction sequence (which may affect both the environment and the agent’s internal state), and how to compute the outcome of the experiment through instructions implementing a computable function (possibly resulting in an internal binary yes/no classification) of the observation sequence triggered by the experiment. The modifiable parameters of both brains are instruction probabilities. They can be accessed and manipulated through programs that include subsequences of special self-referential policy-modifying instructions.  
+>	Both brains may also trigger the execution of certain bet instructions whose effect is to predict experimental outcomes before they are observed. If their predictions or hypotheses differ, they may agree to execute the experiment to determine which brain was right, and the surprised loser will pay an intrinsic reward (the real-valued bet, e.g., 1.0) to the winner in a zero sum game.  
+>	That is, each brain is intrinsically motivated to outwit or surprise the other by proposing an experiment such that the other agrees on the experimental protocol but disagrees on the predicted outcome, which is typically an internal computable abstraction of complex spatio-temporal events generated through the execution the self-invented experiment.  
+>	This motivates the unsupervised two brain system to focus on "interesting" computational questions, losing interest in "boring" computations (potentially involving the environment) whose outcomes are consistently predictable by both brains, as well as computations whose outcomes are currently still hard to predict by any brain. Again, in the absence of external reward, each brain maximizes the value function minimised by the other.  
+>	Using the meta-learning Success-Story RL algorithm, agent learns when to learn and what to learn. Agent will also minimize the computational cost of learning new skills, provided both brains receive a small negative reward for each computational step, which introduces a bias towards simple still surprising experiments (reflecting simple still unsolved problems). This may facilitate hierarchical construction of more and more complex experiments, including those yielding external reward (if there is any). In fact, this artificial creativity may not only drive artificial scientists and artists but can also accelerate the intake of external reward, intuitively because a better understanding of the world can help to solve certain problems faster."
+
+  - `post` <http://people.idsia.ch/~juergen/unsupervised-neural-nets-fight-minimax-game.html>
+  - `post` <http://people.idsia.ch/~juergen/interest.html>
+  - `post` <http://people.idsia.ch/~juergen/ica.html>
+  - `video` <http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/#t=2540> (Schmidhuber)
+  - `slides` <http://people.idsia.ch/~juergen/minimax2018small.pdf> (Schmidhuber)
+  - `paper` ["Artificial Curiosity Based on Discovering Novel Algorithmic Predictability Through Coevolution"](ftp://ftp.idsia.ch/pub/juergen/cec99.ps.gz) by Schmidhuber
+  - `paper` ["Exploring the Predictable"](ftp://ftp.idsia.ch/pub/juergen/explorepredictable.pdf) by Schmidhuber
+  - `paper` ["Unsupervised Minimax: Adversarial Curiosity, Generative Adversarial Networks, and Predictability Minimization"](https://arxiv.org/abs/1906.04493) by Schmidhuber
+  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity>
+
+
+#### ["PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem"](http://arxiv.org/abs/1112.5309) Schmidhuber
+>	"Most of computer science focuses on automatically solving given computational problems. I focus on automatically inventing or discovering problems in a way inspired by the playful behavior of animals and humans, to train a more and more general problem solver from scratch in an unsupervised fashion. Consider the infinite set of all computable descriptions of tasks with possibly computable solutions. Given a general problem solving architecture, at any given time, the novel algorithmic framework PowerPlay searches the space of possible pairs of new tasks and modifications of the current problem solver, until it finds a more powerful problem solver that provably solves all previously learned tasks plus the new one, while the unmodified predecessor does not. Newly invented tasks may require to achieve a wow-effect by making previously learned skills more efficient such that they require less time and space. New skills may (partially) re-use previously learned skills. The greedy search of typical PowerPlay variants uses time-optimal program search to order candidate pairs of tasks and solver modifications by their conditional computational (time & space) complexity, given the stored experience so far. The new task and its corresponding task-solving skill are those first found and validated. This biases the search towards pairs that can be described compactly and validated quickly. The computational costs of validating new tasks need not grow with task repertoire size. Standard problem solver architectures of personal computers or neural networks tend to generalize by solving numerous tasks outside the self-invented training set; PowerPlay’s ongoing search for novelty keeps breaking the generalization abilities of its present solver. This is related to Goedel’s sequence of increasingly powerful formal theories based on adding formerly unprovable statements to the axioms without affecting previously provable theorems. The continually increasing repertoire of problem solving procedures can be exploited by a parallel search for solutions to additional externally posed tasks. PowerPlay may be viewed as a greedy but practical implementation of basic principles of creativity."
+
+----
+>	"Pure scientists do not only invent new methods to solve given problems. They also invent new problems. The recent PowerPlay framework formalizes this type of curiosity and creativity in a new, general, yet practical way. To acquire problem solving prowess through playing, PowerPlay-based artificial explorers by design continually come up with the fastest to find, initially novel, but eventually solvable problems. They also continually simplify or speed up solutions to previous problems. We report on results of first experiments with PowerPlay. A self-delimiting recurrent neural network (SLIM RNN) is used as a general computational architecture to implement the system’s solver. Its weights can encode arbitrary, self-delimiting, halting or non-halting programs affecting both environment (through effectors) and internal states encoding abstractions of event sequences. In open-ended fashion, our PowerPlay-driven RNNs learn to become increasingly general problem solvers, continually adding new problem solving procedures to the growing repertoire, exhibiting interesting developmental stages."
+
+  - `video` <https://youtu.be/SAcHyzMdbXc?t=16m6s> (de Freitas)
+  - `paper` ["First Experiments with PowerPlay"](https://arxiv.org/abs/1210.8385) by Srivastava, Steunebrink, Stollenga, Schmidhuber
+  - `paper` ["One Big Net For Everything"](https://arxiv.org/abs/1802.08864) by Schmidhuber
+  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity>
