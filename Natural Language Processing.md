@@ -157,6 +157,11 @@
 ---
 ### grounding
 
+  Knowledge is in our minds and language is just orienting us within our shared experiences.  
+  Language is an index pointing to shared experiences of people on which meaning is grounded.  
+
+----
+
   ["A Paradigm for Situated and Goal-Driven Language Learning"](#a-paradigm-for-situated-and-goal-driven-language-learning-gauthier-mordatch) by Jon Gauthier and Igor Mordatch `paper` `summary`  
 >	"We outlined a paradigm for grounded and goal-driven language learning in artificial agents. The paradigm is centered around a utilitarian definition of language understanding, which equates language understanding with the ability to cooperate with other language users in real-world environments. This position demotes language from its position as a separate task to be solved to one of several communicative tools agents might use to accomplish their real-world goals."
 

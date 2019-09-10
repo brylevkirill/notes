@@ -1,4 +1,4 @@
-  Probabilistic models can be represented using programs that make stochastic choices. Operations on models such learning and inference can be represented as meta-programs that find probable executions of model programs given constraints on execution traces.
+  Probabilistic models can be represented using programs that make stochastic choices. Operations on models such as learning and inference can be represented as meta-programs that find probable executions of model programs given constraints on execution traces.
 
 
   * [**overview**](#overview)

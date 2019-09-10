@@ -97,7 +97,8 @@
 ----
 #### conferences
 
-  [Automated Knowledge Base Construction](http://akbc.ws) workshop  
+  [Automated Knowledge Base Construction](http://akbc.ws) conference/workshop  
+  - [AKBC 2019 (videos)](https://youtube.com/channel/UCzKZf82vIuI8uMazyL0LIvQ/videos)  
   - [AKBC 2017](http://akbc.ws/2017/)  
   - [AKBC 2016](http://akbc.ws/2016/)  
   - [AKBC 2014 (videos)](http://youtube.com/user/NeuralInformationPro/search?query=AKBC)  
@@ -1910,6 +1911,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 
   - `post` <https://devblogs.microsoft.com/dotnet/announcing-ml-net-0-6-machine-learning-net>
   - `video` <https://youtu.be/g_LSbqLBdM0?t=8m53s> (Zaykov)
+  - `video` <https://youtu.be/4oFbb-vrsjI?t=9m38s> (Guiver)
   - `paper` ["Belief Propagation with Strings"](https://microsoft.com/research/publication/belief-propagation-strings/) by Yangel, Minka, Winn
 
 

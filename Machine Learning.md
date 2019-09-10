@@ -320,12 +320,6 @@
 
 ----
 
-  "For me there are two types of generalisation, which I will refer to as Symbolic and Connectionist generalisation. If we teach a machine to sort sequences of numbers of up to length 10 or 100, we should expect them to sort sequences of length 1000 say. Obviously symbolic approaches have no problem with this form of generalisation, but neural nets do poorly. On the other hand, neural nets are very good at generalising from data (such as images), but symbolic approaches do poorly here. One of the holy grails is to build machines that are capable of both symbolic and connectionist generalisation."
-
-  *(Nando de Freitas)*
-
-----
-
   ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34) `video`)
 
 ----
@@ -373,23 +367,21 @@
 
 ----
 
-  [overview](https://youtu.be/3FIo6evmweo?t=4m6s) of difference between general meta-learning and transfer learning by Juergen Schmidhuber `video`  
-  ["On Learning How to Learn Learning Strategies"](https://vimeo.com/250399374) by Juergen Schmidhuber `video`  
-  ["Learning how to Learn Learning Algorithms: Recursive Self-Improvement"](https://youtube.com/watch?v=nqiUFc52g78) by Juergen Schmidhuber `video`  
+  [overview](https://youtu.be/3FIo6evmweo?t=4m6s) by Juergen Schmidhuber `video` *(meta-learning vs transfer learning)*  
+  [overview](https://vimeo.com/250399374) by Juergen Schmidhuber `video`  
+  [overview](https://youtube.com/watch?v=nqiUFc52g78) by Juergen Schmidhuber `video`  
 
   [overview](http://scholarpedia.org/article/Metalearning) by Tom Schaul and Juergen Schmidhuber
 
   [**Goedel Machine**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#meta-learning---goedel-machine)
 
-----
-
-  ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34?t=16m55s) `video`)
-
-----
-
   "Current commercial AI algorithms are still missing something fundamental. They are no self-referential general purpose learning algorithms. They improve some system’s performance in a given limited domain, but they are unable to inspect and improve their own learning algorithm. They do not learn the way they learn, and the way they learn the way they learn, and so on (limited only by the fundamental limits of computability)."
 
   *(Juergen Schmidhuber)*
+
+----
+
+  ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34?t=16m55s) `video`)
 
 
 

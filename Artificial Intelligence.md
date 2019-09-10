@@ -80,16 +80,9 @@
 	[[**deep learning**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representation)]
 
   *symbolic knowledge* -> *conceptual knowledge* (words should be grounded in real world) -
-	[[**language grounding**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#interesting-papers---language-grounding)]  
+	[[**language grounding**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#grounding)]  
   *perceptual knowledge* -> *conceptual knowledge* (reasoning over concepts may be needed) -
-	[[**concept learning**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#unsupervised-learning)]  
-
-----
-
-  "Knowledge is in our minds and language is just orienting us within our shared experiences."  
-  "Language is an index pointing to shared experiences of people on which meaning is grounded."  
-  "Communicating using language is possible only after lining up experiences."  
-  "Language is a very flexible thing and not a formal mathematical structure."  
+	[[**concept learning**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#unsupervised-learning)]  
 
 
 
@@ -148,17 +141,7 @@
 
   ["Unifying Logic and Probability"](https://www.cs.berkeley.edu/~russell/papers/ipmu14-oupm.pdf) by Stuart Russell `paper`
 	([talk](http://video.upmc.fr/differe.php?collec=S_C_colloquium_lip6_2012&video=3) `video`)
->	"Beginning with Leibniz, scholars have attempted to unify logic and probability. For “classical” AI, based largely on first-order logic, the purpose of such a unification is to handle uncertainty and facilitate learning from real data; for “modern” AI, based largely on probability theory, the purpose is to acquire formal languages with sufficient expressive power to handle complex domains and incorporate prior knowledge."
-
-  ["Unifying Logical and Statistical AI"](http://homes.cs.washington.edu/~pedrod/papers/aaai06c.pdf) by Pedro Domingos `paper`
-	([talk](http://youtube.com/watch?v=bW5DzNZgGxY) `video`)
->	"logic handles complexity and statistics handles uncertainty"
-
-----
-
-  "Beginning with Leibniz, scholars have attempted to unify logic and probability. For classical AI, based largely on first-order logic, the purpose of such a unification is to handle uncertainty and facilitate learning from real data; for modern AI, based largely on probability theory, the purpose is to acquire formal languages with sufficient expressive power to handle complex domains and incorporate prior knowledge. The world is uncertain and it has things in it. To deal with this, we have to unify logic and probability."
-
-  *(Stuart Russell)*
+>	"Beginning with Leibniz, scholars have attempted to unify logic and probability. For “classical” AI, based largely on first-order logic, the purpose of such a unification is to handle uncertainty and facilitate learning from real data; for “modern” AI, based largely on probability theory, the purpose is to acquire formal languages with sufficient expressive power to handle complex domains and incorporate prior knowledge. The world is uncertain and it has things in it. To deal with this, we have to unify logic and probability."
 
 
 
@@ -170,12 +153,6 @@
   - [**bayesian reasoning**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---bayesian-reasoning)  (symbolic)
   - [**commonsense reasoning**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---commonsense-reasoning)  (symbolic + non-symbolic)
   - [**neural reasoning**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---neural-reasoning)  (non-symbolic)
-
-----
-
-  "For me there are two types of generalisation, which I will refer to as Symbolic and Connectionist generalisation. If we teach a machine to sort sequences of numbers of up to length 10 or 100, we should expect them to sort sequences of length 1000 say. Obviously symbolic approaches have no problem with this form of generalisation, but neural nets do poorly. On the other hand, neural nets are very good at generalising from data (such as images), but symbolic approaches do poorly here. One of the holy grails is to build machines that are capable of both symbolic and connectionist generalisation."
-
-  *(Nando de Freitas)*
 
 
 
@@ -243,57 +220,10 @@
 
 ----
 
-  - [**reinforcement learning**](#reinforcement-learning)
-  - [**meta-learning**](#meta-learning)
   - [**universal artificial intelligence**](#universal-artificial-intelligence)
   - [**artificial curiosity and creativity**](#artificial-curiosity-and-creativity)
-
-
-
----
-### reinforcement learning
-
-  [**reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)
-
-
-
----
-### meta-learning
-
-  [**meta-learning**](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#meta-learning)
-
-
-
----
-### meta-learning - Goedel Machine
-
-  [Goedel Machine](https://en.wikipedia.org/wiki/G%C3%B6del_machine)  
-  [Goedel Machine](http://people.idsia.ch/~juergen/goedelmachine.html) by Juergen Schmidhuber  
-  [Goedel Machine vs AIXI](http://people.idsia.ch/~juergen/gmweb2/node21.html) by Juergen Schmidhuber  
-
-  [overview](https://youtu.be/nqiUFc52g78?t=21m13s) by Juergen Schmidhuber `video`
-
-  [discussion](https://youtu.be/YMdFUay0k20?t=1h30s) with Marcus Hutter `video`
-
-  ["Towards An Actual Goedel Machine Implementation: A Lesson in Self-Reflective Systems"](http://people.idsia.ch/~juergen/selfreflection.pdf) by Steunebrink and Schmidhuber `paper`
-
-----
-
-  "Self-improving universal methods have also been defined, including some that justify self-changes (including changes of the learning algorithm) through empirical evidence in a lifelong learning context and the Goedel Machine that self-improves via proving theorems about itself, and can improve any part of its software (including the learning algorithm itself) in a way that is provably time-optimal in a sense that takes constant overheads into account and goes beyond asymptotic optimality. At each step of the way, the Goedel Machine takes the action that it can prove, according to its axiom system and its perceptual data, will be the best way to achieve its goals. The current versions of the Goedel Machine are not computationally tractable in complex environments, however."
-
-  "Goedel machines are limited by the basic limits of math and computation identified by the founder of modern theoretical computer science himself, Kurt Goedel: some theorems are true but cannot be proven by any computational theorem proving procedure (unless the axiomatic system itself is flawed). That is, in some situations the GM may never find a proof of the benefits of some change to its own code."
-
-  "MC-AIXI is a probabilistic approximation of AIXI. What might be the equivalent for the self-referential proof searcher of a GM? One possibility comes to mind: Holographic proofs, where errors in the derivation of a theorem are 'apparent after checking just a negligible fraction of bits of the proof'."
-
-  "A Goedel Machine may indeed change its utility function and target theorem, but not in some arbitrary way. It can do so only if the change is provably useful according to its initial utility function. E.g., it may be useful to replace some complex-looking utility function by an equivalent simpler one. In certain environments, a Goedel Machine may even prove the usefulness of deleting its own proof searcher, and stop proving utility-related theorems, e.g., when the expected computational costs of proof search exceed the expected reward."
-
-  *(Juergen Schmidhuber)*
-
-----
-
-  "It’s currently not sufficiently formalized, so it’s difficult to state if and how it really works. Searching for proofs is extremely complicated: Making a parallel with Levin search, where given a goal output string (an improvement in the Goedel Machine), you enumerate programs (propositions in the Goedel Machine) and run them to see if they output the goal string (search for a proof of improvement in Goedel Machine). This last part is the problem: in Levin Search, the programs are fast to run, whereas in Goedel Machine there is an additional search step for each proposition, so this looks very roughly like going from exponential (Levin Search) to double-exponential (Goedel Machine). And Levin Search is already not really practical. Theorem proving is even more complicated when you need to prove that there will be an improvement of the system at an unknown future step. Maybe it would work better if the kinds of proofs were limited to some class, for example use simulation of the future steps up to some horizon given a model of the world. These kinds of proofs are easier to check and have a guaranteed termination, e.g. if the model class for the environment is based on Schmidhuber’s Speed Prior. But this starts to look pretty much like an approximation of AIXI."
-
-  *(Laurent Orseau)*
+  - [**reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)
+  - [**meta-learning**](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#meta-learning) [*(Goedel Machine)*](#meta-learning---goedel-machine)
 
 
 
@@ -506,6 +436,48 @@
   "To learn as fast as possible about a piece of data, decrease as rapidly as possible the number of bits you need to compress that data. This is exactly how probabilistic models are trained: ∇-log Pr(x). But what if you can choose which data to observe or even create your own? You should create the data that maximises the decrease in bits - the compression progress - of everything else you and your peers have ever observed. In other words, create the thing that makes the most sense of the world: art, science, music, jokes... Happiness is the first derivative of life!"
 
   *(Alex Graves)*
+
+
+
+---
+### meta-learning - Goedel Machine
+
+  [Goedel Machine](https://en.wikipedia.org/wiki/G%C3%B6del_machine)  
+  [Goedel Machine](http://people.idsia.ch/~juergen/goedelmachine.html) by Juergen Schmidhuber  
+  [Goedel Machine vs AIXI](http://people.idsia.ch/~juergen/gmweb2/node21.html) by Juergen Schmidhuber  
+
+----
+
+  [overview](https://youtu.be/nqiUFc52g78?t=21m13s) by Juergen Schmidhuber `video`
+
+  [discussion](https://youtu.be/YMdFUay0k20?t=1h30s) with Marcus Hutter `video`
+
+----
+
+  [**"Goedel Machines: Self-Referential Universal Problem Solvers Making Provably Optimal Self-Improvements"**](#goedel-machines-self-referential-universal-problem-solvers-making-provably-optimal-self-improvements-schmidhuber) by Schmidhuber `paper` `summary`  
+  ["Towards An Actual Goedel Machine Implementation: A Lesson in Self-Reflective Systems"](http://people.idsia.ch/~juergen/selfreflection.pdf) by Steunebrink and Schmidhuber `paper`  
+
+----
+
+  [**meta-learning**](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#meta-learning)
+
+----
+
+  "Self-improving universal methods have also been defined, including some that justify self-changes (including changes of the learning algorithm) through empirical evidence in a lifelong learning context and the Goedel Machine that self-improves via proving theorems about itself, and can improve any part of its software (including the learning algorithm itself) in a way that is provably time-optimal in a sense that takes constant overheads into account and goes beyond asymptotic optimality. At each step of the way, the Goedel Machine takes the action that it can prove, according to its axiom system and its perceptual data, will be the best way to achieve its goals. The current versions of the Goedel Machine are not computationally tractable in complex environments, however."
+
+  "Goedel machines are limited by the basic limits of math and computation identified by the founder of modern theoretical computer science himself, Kurt Goedel: some theorems are true but cannot be proven by any computational theorem proving procedure (unless the axiomatic system itself is flawed). That is, in some situations the GM may never find a proof of the benefits of some change to its own code."
+
+  "MC-AIXI is a probabilistic approximation of AIXI. What might be the equivalent for the self-referential proof searcher of a GM? One possibility comes to mind: Holographic proofs, where errors in the derivation of a theorem are 'apparent after checking just a negligible fraction of bits of the proof'."
+
+  "A Goedel Machine may indeed change its utility function and target theorem, but not in some arbitrary way. It can do so only if the change is provably useful according to its initial utility function. E.g., it may be useful to replace some complex-looking utility function by an equivalent simpler one. In certain environments, a Goedel Machine may even prove the usefulness of deleting its own proof searcher, and stop proving utility-related theorems, e.g., when the expected computational costs of proof search exceed the expected reward."
+
+  *(Juergen Schmidhuber)*
+
+----
+
+  "It’s currently not sufficiently formalized, so it’s difficult to state if and how it really works. Searching for proofs is extremely complicated: Making a parallel with Levin search, where given a goal output string (an improvement in the Goedel Machine), you enumerate programs (propositions in the Goedel Machine) and run them to see if they output the goal string (search for a proof of improvement in Goedel Machine). This last part is the problem: in Levin Search, the programs are fast to run, whereas in Goedel Machine there is an additional search step for each proposition, so this looks very roughly like going from exponential (Levin Search) to double-exponential (Goedel Machine). And Levin Search is already not really practical. Theorem proving is even more complicated when you need to prove that there will be an improvement of the system at an unknown future step. Maybe it would work better if the kinds of proofs were limited to some class, for example use simulation of the future steps up to some horizon given a model of the world. These kinds of proofs are easier to check and have a guaranteed termination, e.g. if the model class for the environment is based on Schmidhuber’s Speed Prior. But this starts to look pretty much like an approximation of AIXI."
+
+  *(Laurent Orseau)*
 
 
 
@@ -771,8 +743,7 @@
 >	"I argue that data becomes temporarily interesting by itself to some self-improving, but computationally limited, subjective observer once he learns to predict or compress the data in a better way, thus making it subjectively simpler and more beautiful. Curiosity is the desire to create or discover more non-random, non-arbitrary, regular data that is novel and surprising not in the traditional sense of Boltzmann and Shannon but in the sense that it allows for compression progress because its regularity was not yet known. This drive maximizes interestingness, the first derivative of subjective beauty or compressibility, that is, the steepness of the learning curve. It motivates exploring infants, pure mathematicians, composers, artists, dancers, comedians, yourself, and artificial systems."
 
   Alex Graves:
-> 	"To learn as fast as possible about a piece of data, decrease as rapidly as possible the number of bits you need to compress that data. This is exactly how probabilistic models are trained: ∇-log Pr(x)  
-  But what if you can choose which data to observe or even create your own? You should create the data that maximises the decrease in bits - the compression progress - of everything else you and your peers have ever observed. In other words, create the thing that makes the most sense of the world: art, science, music, jokes... Happiness is the first derivative of life!"
+> 	"To learn as fast as possible about a piece of data, decrease as rapidly as possible the number of bits you need to compress that data. This is exactly how probabilistic models are trained: ∇-log Pr(x). But what if you can choose which data to observe or even create your own? You should create the data that maximises the decrease in bits - the compression progress - of everything else you and your peers have ever observed. In other words, create the thing that makes the most sense of the world: art, science, music, jokes... Happiness is the first derivative of life!"
 
   - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity>
 

@@ -731,6 +731,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `Reptile` `learning initialization algorithm`
 >	"We analyze a family of algorithms for learning a parameter initialization that can be fine-tuned quickly on a new task, using only first-order derivatives for the meta-learning updates. This family includes and generalizes first-order MAML, an approximation to MAML obtained by ignoring second-order derivatives. It also includes Reptile which works by repeatedly sampling a task, training on it, and moving the initialization towards the trained weights on that task."  
   - `post` <https://blog.openai.com/reptile>
+  - `video` <https://youtu.be/sF-dbZ2BQrQ?t=23m10s> (Kelcey)
   - `notes` <https://yobibyte.github.io/files/paper_notes/Reptile___a_Scalable_Metalearning_Algorithm__Alex_Nichol_and_John_Schulman__2018.pdf>
   - `code` <https://github.com/openai/supervised-reptile>
 
@@ -763,6 +764,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/lYU5nq0dAQQ?t=44m57s> (Levine)
   - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482?t=1085> (Abbeel)
   - `video` <https://youtube.com/watch?v=ID150Tl-MMw&t=1h1m22s> + <https://youtube.com/watch?v=ID150Tl-MMw&t=1h9m10s> (Abbeel)
+  - `video` <https://youtube.com/watch?v=sF-dbZ2BQrQ> (Kelcey)
   - `video` <https://youtu.be/16UUb4HF0fo?t=7m34s> (Golikov) `in russian`
   - `post` <http://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/> (Finn)
   - `post` <https://danieltakeshi.github.io/2018/04/01/maml>
@@ -1278,11 +1280,14 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `GAN theory`
 >	"GAN training may not have good generalization properties; e.g., training may appear successful but the trained distribution may be far from target distribution in standard metrics. However, generalization does occur for a weaker metric called neural net distance. It is also shown that an approximate pure equilibrium exists in the discriminator/generator game for a special class of generators with natural training objectives when generator capacity and training set sizes are moderate."  
 >	"Authors prove that for the standard metrics (e.g. Shannon-Jensen divergence and Wasserstein-like integral probability metrics), the discriminator might stop discriminating before the estimated distribution converges to the density of the data. They also show a weaker result, in which convergence might happen, but the estimated density might be off, if the discriminator based on a deep neural network is not large enough (sufficient VC dimension)."  
+>	"When the number of parameters in the discriminator is polynomial in the number of dimensions, it cannot in general detect mode dropping/collapse, and so the generator at equilibrium could have finite support and drop an exponential number of modes, which is consistent with the empirical findings."  
+>	"Minimizing the Jensen-Shannon divergence or the Wasserstein distance between the empirical data distribution and the model distribution does not necessarily minimize the same between the true data distribution and the model distribution. Moreover, when the discriminator and generator have finite capacity, a global pure-strategy Nash equilibrium may not exist, in which case training may be unstable and fail to converge. Because a global pure-strategy Nash equilibrium is not guaranteed to exist in the parametric setting, finding it is NP-hard, even in the case of two-player zero-sum games, e.g. GANs. Therefore, it is necessary to settle for finding a local pure-strategy Nash equilibrium."  
   - `video` <https://youtube.com/watch?v=V7TliSCqOwI> (Arora)
   - `post` <http://www.offconvex.org/2017/03/30/GANs2/> (Arora)
 
 #### ["Towards Principled Methods for Training Generative Adversarial Networks"](https://arxiv.org/abs/1701.04862) Arjovsky, Bottou
   `GAN theory`
+>	"It has been shown that when given access to an infinitely powerful discriminator, the original GAN objective minimizes the Jensen-Shannon divergence, the -log D variant of the objective minimizes the reverse KL-divergence minus a bounded quantity, and later extensions minimize arbitrary f-divergences."  
 
 ----
 #### ["The Relativistic Discriminator: A Key Element Missing from Standard GAN"](https://arxiv.org/abs/1807.00734) Jolicoeur-Martineau

@@ -1,4 +1,3 @@
-  Reinforcement Learning is learning to maximize expected sum of future rewards for sequence of actions made by agent in environment with stochastic state unknown to agent and dependent on its actions.
 
 
   * [**introduction**](#introduction)
@@ -26,10 +25,6 @@
 
 ---
 ### introduction
-
-  Reinforcement Learning in general case is learning to act through trial and error with no provided models, labels, demonstrations or supervision signals other than delayed rewards for agent's actions.  
-
-  Reinforcement Learning poses significant challenges beyond pattern recognition, including exploration, credit assignment, stability, safety.
 
   [definition](https://youtube.com/watch?v=kl_G95uKTHw&t=1h9m30s) by Sergey Levine `video`
 
@@ -1531,7 +1526,8 @@
 
   [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement#t=784) by Pieter Abbeel `video`
 
-  ["A Visual Guide to Evolution Strategies"](http://blog.otoro.net/2017/10/29/visual-evolution-strategies/) by David Ha
+  [overview](https://lilianweng.github.io/lil-log/2019/09/05/evolution-strategies.html) by Lilian Weng  
+  ["A Visual Guide to Evolution Strategies"](http://blog.otoro.net/2017/10/29/visual-evolution-strategies/) by David Ha  
 
   <http://scholarpedia.org/article/Evolution_strategies>
 
@@ -1999,6 +1995,7 @@ interesting recent papers:
 
 
 #### ["Bootstrapping from Game Tree Search"](https://papers.nips.cc/paper/3722-bootstrapping-from-game-tree-search) Veness, Silver, Uther, Blair
+  `TreeStrap`
 >	"In this paper we introduce a new algorithm for updating the parameters of a heuristic evaluation function, by updating the heuristic towards the values computed by an alpha-beta search. Our algorithm differs from previous approaches to learning from search, such as Samuel’s checkers player and the TD-Leaf algorithm, in two key ways. First, we update all nodes in the search tree, rather than a single node. Second, we use the outcome of a deep search, instead of the outcome of a subsequent search, as the training signal for the evaluation function. We implemented our algorithm in a chess program Meep, using a linear heuristic function. After initialising its weight vector to small random values, Meep was able to learn high quality weights from self-play alone. When tested online against human opponents, Meep played at a master level, the best performance of any chess program with a heuristic learned entirely from self-play."
 
   - `video` <http://videolectures.net/nips09_veness_bfg/> (Veness)
