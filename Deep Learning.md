@@ -1270,6 +1270,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=-1yfr_YBzX4> (Lykov) `in russian`
   - `post` <https://kratzert.github.io/2016/02/12/understanding-the-gradient-flow-through-the-batch-normalization-layer.html>
   - `post` <https://kevinzakka.github.io/2016/09/14/batch_normalization/>
+  - `post` <https://twitter.com/dcpage3/status/1171867587417952260>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/icml/IoffeS15>
   - `paper` ["How Does Batch Normalization Help Optimization?"](https://arxiv.org/abs/1805.11604) by Santurkar et al.
 

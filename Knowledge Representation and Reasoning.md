@@ -37,7 +37,7 @@
 
   "If we can convert a sentence into a vector that captures the meaning of the sentence, then google can do much better searches, they can search based on what is being said in a document. Also, if you can convert each sentence in a document into a vector, you can then take that sequence of vectors and try and model why you get this vector after you get these vectors, that's called reasoning, that's natural reasoning, and that was kind of the core of good old fashioned AI and something they could never do because natural reasoning is a complicated business, and logic isn't a very good model of it, here we can say, well, look, if we can read every english document on the web, and turn each sentence into a thought vector, we've got plenty of data for training a system that can reason like people do. Now, you might not want to reason like people do on the web, but at least we can see what they would think."
 
-  "Most people fall for the traditional AI fallacy that thought in the brain must somehow resemble lisp expressions. You can tell someone what thought you are having by producing a string of words that would normally give rise to that thought but this doesn't mean the thought is a string of symbols in some unambiguous internal language. The new recurrent network translation models make it clear that you can get a very long way by treating a thought as a big state vector. Traditional AI researchers will be horrified by the view that thoughts are merely the hidden states of a recurrent net and even more horrified by the idea that reasoning is just sequences of such state vectors. That's why I think its currently very important to get our critics to state, in a clearly decideable way, what it is they think these nets won't be able to learn to do. Otherwise each advance of neural networks will be met by a new reason for why that advance does not really count. So far, I have got both Garry Marcus and Hector Levesque to agree that they will be impressed if neural nets can correctly answer questions about "Winograd" sentences such as "The city councilmen refused to give the demonstrators a licence because they feared violence." Who feared the violence?"
+  "Most people fall for the traditional AI fallacy that thought in the brain must somehow resemble lisp expressions. You can tell someone what thought you are having by producing a string of words that would normally give rise to that thought but this doesn't mean the thought is a string of symbols in some unambiguous internal language. The new recurrent network translation models make it clear that you can get a very long way by treating a thought as a big state vector. Traditional AI researchers will be horrified by the view that thoughts are merely the hidden states of a recurrent net and even more horrified by the idea that reasoning is just sequences of such state vectors."
 
   "There are no symbols inside the encoder and decoder neural nets for machine translation. The only symbols are at the input and output. Processing pixel arrays is not done by manipulating internal pixels. Maybe processing symbol strings is not done by manipulating internal symbol strings. It was obvious to physicists that light waves must have an aether to propagate from one place to the next. They thought there was no other possibility. It was obvious to AI researchers that people must use formal rules of inference to propagate implications from one proposition to the next. They thought there was no other possibility. What is inside the black box is not necessarily what goes in or what comes out. The physical symbol system hypothesis is probably false."
 
@@ -915,20 +915,18 @@
 ---
 ### machine reading benchmarks
 
-  - [GLUE](https://gluebenchmark.com)
+  - [*General Language Understanding Evaluation (GLUE)*](https://gluebenchmark.com)
 
-  - [Allen AI Science Challenge](https://kaggle.com/c/the-allen-ai-science-challenge)
+  - [*AI2 Reasoning Challenge (ARC)*](http://data.allenai.org/arc)
+
+  - [*Stanford Question Answering Dataset (SQuAD)*](https://rajpurkar.github.io/SQuAD-explorer/)
+
+  - [*Allen AI Science Challenge*](https://kaggle.com/c/the-allen-ai-science-challenge)
 
 	["Moving Beyond the Turing Test with the Allen AI Science Challenge"](https://arxiv.org/abs/1604.04315) by Schoenick et al. `paper`
 		([slides](http://akbc.ws/2016/slides/etzioni-akbc16.pptx))
 
-  - [AI2 Reasoning Challenge (ARC)](http://data.allenai.org/arc)
-
-  - [Stanford Question Answering Dataset (SQuAD)](https://rajpurkar.github.io/SQuAD-explorer/)
-
-  - [TAC Knowledge Base Population](http://www.nist.gov/tac/2017/KBP/)
-
-  - [Winograd Schema Challenge](http://commonsensereasoning.org/winograd.html)
+  - [*Winograd Schema Challenge*](http://commonsensereasoning.org/winograd.html)
 
 	[results in 2016](http://whatsnext.nuance.com/in-the-labs/winograd-schema-challenge-2016-results/)  
 
@@ -954,7 +952,7 @@
 	- vivid, in that it is obvious to non-experts that a program that fails to get right answers clearly has gaps
 	- difficult, in that it is far beyond the current state of the art
 
-  - [commonsense reasoning](http://commonsensereasoning.org/problem_page.html)
+  - [*commonsense reasoning*](http://commonsensereasoning.org/problem_page.html)
 
 
 

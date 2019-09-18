@@ -1,14 +1,11 @@
-  Knowledge is in our minds and language is just orienting us within our shared experiences.  
-  Language is an index pointing to shared experiences of people on which meaning is grounded.  
 
 
-  * [**overview**](#overview)
   * [**study**](#study)
-  * [**problems**](#problems)
   * [**grounding**](#grounding)
   * [**semantics**](#semantics)
   * [**compositionality**](#compositionality)
   * [**embeddings**](#embeddings)
+  * [**problems**](#problems)
   * [**interesting papers**](#interesting-papers)
     - [**language grounding**](#interesting-papers---language-grounding)
     - [**language modeling**](#interesting-papers---language-modeling)
@@ -26,35 +23,6 @@
 
 
 ---
-### overview
-
-  "All existing NLP is about mapping the internal statistical dependencies of language, missing the point that language is a communication protocol. You cannot study language without considering agents communicating about something. The only reason language even has any statistical dependencies to study is because it's imperfect. A maximally efficient communication protocol would look like random noise, out of context (besides error correction mechanisms). All culture is a form of communication, so "understanding" art requires grounding. Mimicking what humans do isn't enough. You can't understand language without considering it in context: agents communicating about something. An analogy could be trying to understand an economy by looking at statistical structure in stock prices only."
-
-  *(Francois Chollet)*
-
-  "No general solution to the problem of computer understanding of natural language is possible, i.e. language is understood only in contextual frameworks, that even these can be shared by people to only a limited extent, and that consequently even people are not embodiments of any such general solution."
-
-  *(Joseph Weizenbaum)*
-
-  "The ambiguous nature of natural language might seem like a flaw, but in fact, it is exactly this ambiguity that makes natural language so powerful. Think of language as a game between a speaker and a listener. Game play proceeds as follows: the speaker thinks of a concept, she chooses an utterance to convey that concept, and the listener interprets the utterance. Both players win if the listener’s interpretation matches the speaker’s intention. To play this game well, the speaker should thus choose the simplest utterance that conveys her intended concept - anything the listener can infer can be omitted. How can a computer fill in these gaps, which depend on the breadth of human experience involving perception of the world and social interactions?"
-
-  *(Percy Liang)*
-
-  "The language is meant to serve for communication between a builder A and an assistant B. A is building with building-stones: there are blocks, pillars, slabs and beams. B has to pass the stones, and that in the order in which A needs them. For this purpose they use a language consisting of the words “block”, “pillar”, “slab”, “beam”. A calls them out - B brings the stone which he has learnt to bring at such-and-such a call. Conceive this as a complete primitive language."
-
-  *(Ludwig Wittgenstein)*
-
-  "This game is not just a game of words but a game of words causing things and of other things causing words. We can’t fully define the meaning of a word like “slab” without referring to the physical actions of the builder A and the assistant B. In this way, linguistic meaning has to bottom out at some point in nonlinguistic facts."
-
-  *(Jon Gauthier)*
-
-  "We have a lot of language [data at Google] but it's not annotated with what it means, and we don't even know how we would annotate it. That's a big challenge now."
-
-  *(Ray Kurzweil)* ([talk](https://youtube.com/watch?v=w9sz7eW6MY8#t=4m27s) `video`)
-
-
-
----
 ### study
 
   **classic NLP**
@@ -66,7 +34,7 @@
 
 ----
 
-  **NLP with Deep Learning**
+  **Deep Learning NLP**
 
   [course](http://youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z) from Stanford `video` ([notes](https://github.com/stanfordnlp/cs224n-winter17-notes))  
   [course](http://github.com/oxford-cs-deepnlp-2017/lectures) from Oxford and DeepMind `video`  
@@ -96,71 +64,18 @@
 
 
 ---
-### problems
-
-  [state-of-the-art methods](https://github.com/sebastianruder/NLP-progress)
-
-  ["NLP’s generalization problem, and how researchers are tackling it"](https://thegradient.pub/frontiers-of-generalization-in-natural-language-processing) by Ana Marasovic
-
-----
-
-  - anaphora resolution
-  - answer sentence selection
-  - computational morphology
-  - connecting language and perception
-  - coreference resolution
-  - dialog system
-  - discourse analysis
-  - document classification
-  - entity extraction
-  - entity linking
-  - entity relation classification
-  - entity salience
-  - information extraction
-  - language generation
-  - language modeling
-  - lexicon acquisition
-  - machine comprehension
-  - machine translation
-  - morphological segmentation
-  - named entity recognition
-  - natural language inference
-  - natural language generation
-  - natural language understanding
-  - next utterance ranking
-  - optical character recognition
-  - paraphrase detection
-  - part-of-speech tagging
-  - question answering
-  - recognizing textual entailment
-  - semantic relation classification
-  - semantic role labeling
-  - semantic parsing
-  - semantic similarity
-  - sentence breaking
-  - sentiment analysis
-  - sentiment attribution
-  - slot-filling
-  - speech recognition
-  - statistical relational learning
-  - syntactic parsing
-  - text categorization / clustering
-  - text segmentation / chunking
-  - text summarization
-  - textual entailment
-  - topic modeling
-  - word segmentation
-  - word sense disambiguation
-
-
-
----
 ### grounding
 
   Knowledge is in our minds and language is just orienting us within our shared experiences.  
   Language is an index pointing to shared experiences of people on which meaning is grounded.  
 
+  "No general solution to the problem of computer understanding of natural language is possible, i.e. language is understood only in contextual frameworks, that even these can be shared by people to only a limited extent, and that consequently even people are not embodiments of any such general solution."
+
+  *(Joseph Weizenbaum)*
+
 ----
+
+  ["The Limits of Modern AI: A Story"](https://thebestschools.org/magazine/limits-of-modern-ai) by Erik Larson
 
   ["A Paradigm for Situated and Goal-Driven Language Learning"](#a-paradigm-for-situated-and-goal-driven-language-learning-gauthier-mordatch) by Jon Gauthier and Igor Mordatch `paper` `summary`  
 >	"We outlined a paradigm for grounded and goal-driven language learning in artificial agents. The paradigm is centered around a utilitarian definition of language understanding, which equates language understanding with the ability to cooperate with other language users in real-world environments. This position demotes language from its position as a separate task to be solved to one of several communicative tools agents might use to accomplish their real-world goals."
@@ -168,7 +83,7 @@
   ["On 'Solving Language'"](http://foldl.me/2016/solving-language/) by Jon Gauthier  
   ["Situated Language Learning"](http://foldl.me/2016/situated-language-learning/) by Jon Gauthier  
 
-  ["From Models of Language Understanding to Agents of Language Use"](http://research.microsoft.com/apps/video/default.aspx?id=266643) by Felix Hill `video`
+----
 
   [**interesting papers - language grounding**](#interesting-papers---language-grounding)
 
@@ -281,6 +196,65 @@
 ----
 
   [**distributed representation**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representation)
+
+
+
+---
+### problems
+
+  [state-of-the-art methods](https://github.com/sebastianruder/NLP-progress)
+
+  ["NLP’s generalization problem, and how researchers are tackling it"](https://thegradient.pub/frontiers-of-generalization-in-natural-language-processing) by Ana Marasovic
+
+----
+
+  - anaphora resolution
+  - answer sentence selection
+  - computational morphology
+  - connecting language and perception
+  - coreference resolution
+  - dialog system
+  - discourse analysis
+  - document classification
+  - entity extraction
+  - entity linking
+  - entity relation classification
+  - entity salience
+  - information extraction
+  - language generation
+  - language modeling
+  - lexicon acquisition
+  - machine comprehension
+  - machine translation
+  - morphological segmentation
+  - named entity recognition
+  - natural language inference
+  - natural language generation
+  - natural language understanding
+  - next utterance ranking
+  - optical character recognition
+  - paraphrase detection
+  - part-of-speech tagging
+  - question answering
+  - recognizing textual entailment
+  - semantic relation classification
+  - semantic role labeling
+  - semantic parsing
+  - semantic similarity
+  - sentence breaking
+  - sentiment analysis
+  - sentiment attribution
+  - slot-filling
+  - speech recognition
+  - statistical relational learning
+  - syntactic parsing
+  - text categorization / clustering
+  - text segmentation / chunking
+  - text summarization
+  - textual entailment
+  - topic modeling
+  - word segmentation
+  - word sense disambiguation
 
 
 
