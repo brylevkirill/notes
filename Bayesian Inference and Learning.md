@@ -224,6 +224,8 @@
   [notes](https://ermongroup.github.io/cs228-notes/) by Volodymyr Kuleshov et al.  
   ["Graphical Models"](http://www.deeplearningbook.org/contents/graphical_models.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville  
 
+  ["Handbook of Graphical Models"](https://stat.ethz.ch/~maathuis/papers/Handbook.pdf) by Maathuis, Drton, Lauritzen, Wainwright `book`
+
   [overview](http://youtube.com/watch?v=ju1Grt2hdko) by Chris Bishop `video`  
   [overview](http://youtube.com/watch?v=W6XyXeB3Cko) by Alex Smola `video`  
   [overview](http://youtube.com/watch?v=D_dNxrIazco) by Dmitry Vetrov `video` `in russian`  

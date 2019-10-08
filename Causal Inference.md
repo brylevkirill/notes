@@ -57,10 +57,11 @@
 
 ----
 
+  ["The Foundations of Causal Inference with Reflections on Machine Learning and Artificial Intelligence"](https://youtube.com/watch?v=nWaM6XmQEmU) by Judea Pearl `video`  
   ["The New Science of Cause and Effect"](https://youtube.com/watch?v=ZaPV1OSEpHw) by Judea Pearl `video`  
   ["The Mathematics of Causal Inference, with Reflections on Machine Learning and the Logic of Science"](https://youtube.com/watch?v=zHjdd--W6o4) by Judea Pearl `video`  
 
-  ["Causal Data Science: A General Framework for Data Fusion and Causal Inference"](http://www.cs.columbia.edu/streaming/2019-Spr/elias_bareinboim.mp4) by Elias Bareinboim `video`  
+  ["Causal Data Science: A General Framework for Data Fusion and Causal Inference"](https://youtube.com/watch?v=dUsokjG4DHc) by Elias Bareinboim `video`  
   ["Causal Reinforcement Learning"](https://youtube.com/watch?v=bwz3NpVfz6k) by Elias Bareinboim `video`  
 
   ["Learning Causal Mechanisms"](https://facebook.com/iclr.cc/videos/2123421684353553?t=294) by Bernhard Scholkopf `video`  
@@ -153,7 +154,7 @@
   *transportability (external validity)*:  
 	(bonobos, d2, d3, d4) -> (humans, d2, d3, d4)  *(Shadish, Cook, Campbell)*  
 
-  [*(Elias Bareinboim)*](http://www.cs.columbia.edu/streaming/2019-Spr/elias_bareinboim.mp4)
+  [*(Elias Bareinboim)*](https://youtu.be/dUsokjG4DHc?t=8m13s)
 
 ----
 

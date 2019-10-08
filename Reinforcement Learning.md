@@ -425,7 +425,8 @@
 
 ----
 
-  [course](https://youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs) from DeepMind  
+  [course](https://youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs) from DeepMind `video`  
+  [course](http://rail.eecs.berkeley.edu/deeprlcourse) by Sergey Levine ([videos](https://youtube.com/playlist?list=PLkFD6_40KJIwhWJpGazJ9VSj9CFMkb79A))  
   [course](http://rll.berkeley.edu/deeprlcourse) by Sergey Levine, John Schulman and Chelsea Finn ([videos](https://youtube.com/playlist?list=PLkFD6_40KJIznC9CDbVTjAF2oyt8_VAe3))  
   [course](http://katefvision.github.io) by Ruslan Salakhutdinov and Katerina Fragkiadaki ([videos](https://youtube.com/playlist?list=PLpIxOj-HnDsNPFdu2UqCu2McJKHs-eWXv))  
 
@@ -1363,6 +1364,10 @@
 
 ----
 
+  ["The Paths Perspective on Value Learning"](https://distill.pub/2019/paths-perspective-on-value-learning) by Greydanus and Olah
+
+----
+
   [**interesting papers**](#interesting-papers---value-based-methods)  
   [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-free-methods)  
 
@@ -1804,7 +1809,7 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=NXkD77ioGi0> (demo)
   - `video` <https://youtube.com/watch?v=dltN4MxV1RI> (demo)
   - `video` <https://youtube.com/watch?v=MvFABFWPBrw>
-  - `paper` <https://science.sciencemag.org/content/364/6443/859> (Science)
+  - `paper` <https://science.sciencemag.org/content/364/6443/859>
 
 
 #### ["Mastering the Game of Go without Human Knowledge"](https://deepmind.com/documents/119/agz_unformatted_nature.pdf) Silver et al.
@@ -1933,12 +1938,13 @@ interesting recent papers:
 >	"Part of DeepStack's development is also a technique designed to find flaws in poker strategies. Local Best Response (LBR) is one of the cool new algorithms in Science paper. LBR looks directly at the strategy, like what a human could get from playing millions of hands to know its range. Older programs get beat by LBR for 4x more than folding every hand! DeepStack has no holes exposed by the LBR algorithm."
 
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games> (demo)
-  - `paper` <http://science.sciencemag.org/content/early/2017/03/01/science.aam6960> ("Science")
+  - `paper` <http://science.sciencemag.org/content/early/2017/03/01/science.aam6960>
   - `video` <https://youtube.com/playlist?list=PLX7NnbJAq7PlA2XpynViLOigzWtmr6QVZ> (demo matches)
   - `video` <https://vimeo.com/248532904> (Bowling)
   - `video` <https://youtu.be/02xIkHowQOk?t=11m45s> (Bowling)
   - `video` <https://youtube.com/watch?v=qndXrHcV1sM> (Bowling)
   - `video` <http://videolectures.net/aaai2017_bowling_sandholm_poker/#t=177> (Bowling)
+  - `video` <https://youtube.com/watch?v=eFlgrFLJ9Vk> (Valenzano)
   - `post` <https://www.depthfirstlearning.com/2018/DeepStack>
   - <http://deepstack.ai>
   - <http://twitter.com/DeepStackAI>
@@ -2516,6 +2522,9 @@ interesting recent papers:
 >	"The different scenarios presented here, and in the literature on empowerment in general, are highlighting an important aspect of the empowerment flavour of intrinsic motivation algorithms, namely its universality. The same principle that organizes a swarm of agents into a pattern can also swing the pendulum into an upright position, seek out a central location in a maze, be driven towards a manipulable object, or drive the evolution of sensors. The task-independent nature reflected in this list can be both a blessing and a curse. In many cases the resulting solution, such as swinging the pendulum into the upright position, is the goal implied by default by a human observer. However, if indeed a goal is desired that differs from this default, then empowerment will not be the best solution. At present, the question of how to integrate explicit non-default goals into empowerment is fully open."
 
 >	"Let us conclude with a remark regarding the biological empowerment hypotheses in general: the fact that the default behaviours produced by empowerment seem often to match what intuitive expectations concerning default behaviour seem to imply, there is some relevance in investigating whether some of these behaviours are indeed approximating default behaviours observed in nature. A number of arguments in favour of why empowerment maximizing or similar behaviour could be relevant in biology have been made in (Klyubin et al. 2008), of which in this review we mainly highlighted its role as a measure of sensorimotor efficiency and the advantages that an evolutionary process would confer to more informationally efficient perception-action configurations."
+
+  - `paper` ["All Else Being Equal Be Empowered"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.9018&rep=rep1&type=pdf) by Klyubin, Polani, Nehaniv
+  - `paper` ["Empowerment: A Universal Agent-Centric Measure of Contro"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.297.8746&rep=rep1&type=pdf) by Klyubin, Polani, Nehaniv
 
 
 #### ["Variational Information Maximisation for Intrinsically Motivated Reinforcement Learning"](http://arxiv.org/abs/1509.08731) Mohamed, Rezende

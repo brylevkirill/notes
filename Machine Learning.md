@@ -127,8 +127,8 @@
 
   <https://jack-clark.net/import-ai>  
   <https://newsletter.ruder.io>  
-  <https://www.getrevue.co/profile/seungjaeryanlee>  
-  <https://www.getrevue.co/profile/wildml>  
+  <https://getrevue.co/profile/seungjaeryanlee>  
+  <https://getrevue.co/profile/wildml>  
 
   <https://reddit.com/r/MachineLearning>
 

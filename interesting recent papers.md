@@ -45,8 +45,16 @@ interesting older papers:
 [**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---theory)
 
 ----
+#### ["Reconciling Modern Machine Learning Practice and the Bias-variance Trade-off"](https://arxiv.org/abs/1812.11118) Belkin, Hsu, Ma, Mandal
+  `generalization`
+>	"One of the central tenets of the field, the bias-variance trade-off, appears to be at odds with the observed behavior of methods used in the modern machine learning practice. The bias-variance trade-off implies that a model should balance under-fitting and over-fitting: rich enough to express underlying structure in data, simple enough to avoid fitting spurious patterns. However, in the modern practice, very rich models such as neural networks are trained to exactly fit (i.e., interpolate) the data. Classically, such models would be considered over-fit, and yet they often obtain high accuracy on test data. This apparent contradiction has raised questions about the mathematical foundations of machine learning and their relevance to practitioners."  
+>	"We reconcile the classical understanding and the modern practice within a unified performance curve. This "double descent" curve subsumes the textbook U-shaped bias-variance trade-off curve by showing how increasing model capacity beyond the point of interpolation results in improved performance. We provide evidence for the existence and ubiquity of double descent for a wide spectrum of models and datasets, and we posit a mechanism for its emergence. This connection between the performance and the structure of machine learning models delineates the limits of classical analyses, and has implications for both the theory and practice of machine learning."  
+  - `video` <https://youtube.com/watch?v=OBCciGnOJVs> (Belkin)
+  - `video` <https://youtube.com/watch?v=LzL5naUS31s> (Belkin)
+  - `video` <https://youtube.com/watch?v=ZAW9EyNo2fw> (Kilcher)
+
 #### ["Approximating CNNs with Bag-of-local-Features Models Works Surprisingly Well on ImageNet"](https://arxiv.org/abs/1904.00760) Brendel, Bethge
-  `BagNet` `generalization` `ICLR 2018`
+  `BagNet` `generalization` `ICLR 2019`
 >	"We introduce a high-performance DNN architecture on ImageNet whose decisions are considerably easier to explain. Our model, a simple variant of the ResNet-50 architecture called BagNet, classifies an image based on the occurrences of small local image features without taking into account their spatial ordering. This strategy is closely related to the bag-of-feature (BoF) models popular before the onset of deep learning and reaches a surprisingly high accuracy on ImageNet (87.6% top-5 for 32 x 32 px features and Alexnet performance for 16 x16 px features). The constraint on local features makes it straight-forward to analyse how exactly each part of the image influences the classification. Furthermore, the BagNets behave similar to state-of-the art deep neural networks such as VGG-16, ResNet-152 or DenseNet-169 in terms of feature sensitivity, error distribution and interactions between image parts. This suggests that the improvements of DNNs over previous bag-of-feature classifiers in the last few years is mostly achieved by better fine-tuning rather than by qualitatively different decision strategies."  
   - `post` <https://medium.com/bethgelab/neural-networks-seem-to-follow-a-puzzlingly-simple-strategy-to-classify-images-f4229317261f>
   - `post` <https://blog.evjang.com/2019/02/bagnet.html>
@@ -727,6 +735,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 [recent papers - meta reinforcement learning](https://lilianweng.github.io/lil-log/2019/06/23/meta-reinforcement-learning.html)
 
 ----
+#### ["Rapid Learning or Feature Reuse? Towards Understanding the Effectiveness of MAML"](https://arxiv.org/abs/1909.09157) Raghu, Raghu, Bengio, Vinyals
+  `MAML`
+>	"MAML consists of two optimization loops, with the outer loop finding a meta-initialization, from which the inner loop can efficiently learn new tasks. A fundamental open question remains -- is the effectiveness of MAML due to the meta-initialization being primed for rapid learning (large, efficient changes in the representations) or due to feature reuse, with the meta initialization already containing high quality features? We investigate this question, via ablation studies and analysis of the latent representations, finding that feature reuse is the dominant factor. This leads to the ANIL (Almost No Inner Loop) algorithm, a simplification of MAML where we remove the inner loop for all but the (task-specific) head of a MAML-trained network. ANIL matches MAML's performance on benchmark few-shot image classification and RL and offers computational improvements over MAML. We further study the precise contributions of the head and body of the network, showing that performance on the test tasks is entirely determined by the quality of the learned features, and we can remove even the head of the network (the NIL algorithm)."  
+
 #### ["On First-Order Meta-Learning Algorithms"](https://arxiv.org/abs/1803.02999) Nichol, Achiam, Schulman
   `Reptile` `learning initialization algorithm`
 >	"We analyze a family of algorithms for learning a parameter initialization that can be fine-tuned quickly on a new task, using only first-order derivatives for the meta-learning updates. This family includes and generalizes first-order MAML, an approximation to MAML obtained by ignoring second-order derivatives. It also includes Reptile which works by repeatedly sampling a task, training on it, and moving the initialization towards the trained weights on that task."  
@@ -750,7 +762,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 #### ["Meta-Learning and Universality: Deep Representations and Gradient Descent can Approximate any Learning Algorithm"](https://arxiv.org/abs/1710.11622) Finn, Levine
   `MAML` `learning initialization algorithm`
->	"It is particularly important to develop meta-learning algorithms that can generalize well from a manageable number of training tasks, in the sense that it can perform well on new tasks sampled from the same distribution. One idea is to restrict the set of algorithms expressible by the parameterized model. At one extreme we have methods such as RL^2, SNAIL and one-shot imitation learning, which use generic recurrent architectures and are, in theory, capable of approximating any algorithm that can run on a Turing machine. At the other extreme, we have methods that merely tune hyperparameters over a set of training tasks. There are many possibilities between these two extremes. MAML restricts the underlying algorithm to be policy gradient and only meta-learn an initial set of parameters."  
+>	"A popular approach to meta-learning is to train a recurrent model to read in a training dataset as input and output the parameters of a learned model, or output predictions for new test inputs. Alternatively, a more recent approach to meta-learning aims to acquire deep representations that can be effectively fine-tuned, via standard gradient descent, to new tasks. In this paper, we consider the meta-learning problem from the perspective of universality, formalizing the notion of learning algorithm approximation and comparing the expressive power of the aforementioned recurrent models to the more recent approaches that embed gradient descent into the meta-learner. In particular, we seek to answer the following question: does deep representation combined with standard gradient descent have sufficient capacity to approximate any learning algorithm? We find that this is indeed true, and further find, in our experiments, that gradient-based meta-learning consistently leads to learning strategies that generalize more widely compared to those represented by recurrent models."
   - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482?t=1204> (Abbeel)
 
 #### ["Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks"](https://arxiv.org/abs/1703.03400) Finn, Abbeel, Levine
@@ -1874,6 +1886,9 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"New source of error in value-based RL with value approximation arises due to interaction of two factors:  
 >	- restrictions on realizable greedy policies due to approximator  
 >	- independent Bellman backups: oblivious to policy class"  
+>	"- Tabular Q-learning converges to optimal with infinite data.  
+>	- You might hope Q-learning + function approximation converges similarly to the best policy in that class.  
+>	- But actually that's not true... Basically because MDP with function approximation ~= POMDP."  
   - `video` <https://youtube.com/watch?v=PSfJ44C3-sU> (Lu)
   - `video` <http://www.fields.utoronto.ca/video-archive/2019/02/2509-19619> (Boutilier)
 
@@ -2125,6 +2140,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	- E-step: In the E-step we obtain an estimate of the distribution of return-weighted trajectories. We perform this step by re-weighting state action samples using a learned value function. This is akin to posterior inference step when estimating the parameters of a probabilistic models with latent variables.  
 >	- M-step: In the M-step we update the parametric policy in a supervised learning step using the reweighted state-action samples from the E-step as targets. This corresponds to the update of the model parameters given the complete data log-likelihood when performing EM for a probabilistic model."  
 >	"These choices lead to the following desirable properties: (a) low-variance estimates of the expected return via function approximation; (b) low-sample complexity of value function estimate via robust off-policy learning; (c) minimal parametric assumption about the form of the trajectory distribution in the E-step; (d) policy updates via supervised learning in the M step; (e) robust updates via hard trust-region constraints in both the E and the M step."  
+>	"A deep RL variant of REPS, which applies a partial EM algorithm for policy optimization. The method first fits a Q-function of the current policy via bootstrapping, and then performs a policy improvement step with respect to this Q-function under a trust region constraint that penalizes large policy changes. MPO uses off-policy data for training a Q-function critic via bootstrapping and employs Retrace(λ) for off-policy correction."  
   - `video` <https://youtube.com/watch?v=he_BPw32PwU>
   - `video` <http://dropbox.com/s/pgcmjst7t0zwm4y/MPO.mp4> + <https://vimeo.com/240200982> (demo)
   - `video` <https://youtu.be/ZX3l2whplz8?t=18m7s> (Riedmiller)
@@ -2654,6 +2670,8 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `approximate bayesian exploration` `approximate posterior sampling`
 >	"A simple modification where each member of the ensemble is initialized together with a random but fixed prior function. Predictions are then taken as the sum of the trainable neural network and the prior function. We show that this approach passes a sanity check by demonstrating an equivalence to Bayesian inference with linear models. We also present a series of simple experiments designed to extend this intuition to deep learning. We show that many of the most popular approaches for uncertainty estimation in deep RL do not pass these sanity checks, and crystallize these shortcomings in a series of lemmas and small examples. We demonstrate that our simple modification can facilitate aspiration in difficult tasks where previous approaches for deep RL fail. We believe that this work presents a simple and practical approach to encoding prior knowledge with deep reinforcement learning."  
   - <https://sites.google.com/view/randomized-prior-nips-2018> (demo)
+  - `poster` <http://iosband.github.io/docs/rpf_nips_poster.pdf>
+  - <https://twitter.com/riashatislam/status/1070428504615981056/photo/1>
 
 #### ["Deep Bayesian Bandits Showdown: An Empirical Comparison of Bayesian Deep Networks for Thompson Sampling"](https://arxiv.org/abs/1802.09127) Riquelme, Tucker, Snoek
   `approximate bayesian exploration` `posterior sampling`
@@ -3170,6 +3188,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <http://techtalks.tv/talks/progressive-nets-for-sim-to-real-transfer-learning/63043/> (Hadsell)
   - `video` <https://youtu.be/xfyK03MEZ9Q?t=5h47m16s> (Hadsell)
   - `video` <https://youtu.be/x1kf4Zojtb0?t=41m4s> (de Freitas)
+  - `video` <https://youtu.be/4nPmpXF2_sU?t=21m15s> (Tagirdzhanov) `in russian`
   - `notes` <https://blog.acolyer.org/2016/10/11/progressive-neural-networks/>
   - `notes` <https://www.shortscience.org/paper?bibtexKey=journals/corr/1606.04671>
   - `code` <https://github.com/synpon/prog_nn>
