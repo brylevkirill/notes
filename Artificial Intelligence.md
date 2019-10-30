@@ -1,4 +1,4 @@
-  Intelligence is the computational part of the ability to achieve goals in the world. The problem is that we cannot yet characterize in general what kinds of computational procedures we want to call intelligent.
+  "Intelligence is the computational part of the ability to achieve goals in the world. The problem is that we cannot yet characterize in general what kinds of computational procedures we want to call intelligent." *(John McCarthy)*
 
 
   * [**overview**](#overview)
@@ -20,7 +20,7 @@
 
   ["Compression Progress: The Algorithmic Principle Behind Curiosity and Creativity"](https://youtube.com/watch?v=h7F5sCLIbKQ) by Juergen Schmidhuber `video`  
   ["The Future of Artificial Intelligence Belongs to Search and Learning"](http://www.fields.utoronto.ca/video-archive/2016/10/2267-16158) by Richard Sutton `video`  
-  ["Deep Learning and AI"](https://youtube.com/watch?v=izrG86jycck) by Geoffrey Hinton `video`  
+  ["What's Next"](https://youtube.com/watch?v=U3veC3UEvJ0) by Yoshua Bengio `video`  
   ["Building Machines That See, Learn and Think Like People"](https://youtube.com/watch?v=7ROelYvo8f0) by Joshua Tenenbaum `video`  
   ["AI: A Return To Meaning"](https://youtube.com/watch?v=1n-cwezu8j4) by David Ferucci `video`  
   ["Steps Toward Super Intelligence and the Search for a New Path"](https://youtube.com/watch?v=CcxG0IFssGg) by Rodney Brooks `video`  

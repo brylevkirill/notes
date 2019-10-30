@@ -81,6 +81,7 @@ also been supported by the observation that deep networks strongly rely on spect
 We find that a standard pruning technique naturally uncovers subnetworks whose initializations made them capable of training effectively. Based on these results, we articulate the "lottery ticket hypothesis:" dense, randomly-initialized, feed-forward networks contain subnetworks ("winning tickets") that - when trained in isolation - reach test accuracy comparable to the original network in a similar number of iterations. The winning tickets we find have won the initialization lottery: their connections have initial weights that make training particularly effective."  
 >	"We present an algorithm to identify winning tickets and a series of experiments that support the lottery ticket hypothesis and the importance of these fortuitous initializations. We consistently find winning tickets that are less than 10-20% of the size of several fully-connected and convolutional feed-forward architectures for MNIST and CIFAR10. Above this size, the winning tickets that we find learn faster than the original network and reach higher test accuracy."  
   - `video` <https://youtube.com/watch?v=s7DqRZVvRiQ> (Frankle)
+  - `video` <https://youtube.com/watch?v=5PF-I1NKTmk> (LaLonde)
 
 #### ["Deconstructing Lottery Tickets: Zeros, Signs, and the Supermask"](https://arxiv.org/abs/1905.01067) Zhou, Lan, Liu, Yosinski
   `generalization`
@@ -717,7 +718,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/tA8nRlBEVr0?t=14m40s> + <https://youtube.com/watch?v=-u32TOPGIbQ> (Graves)
   - `video` <https://facebook.com/iclr.cc/videos/1713144705381255?t=1858> (Graves)
   - `video` <https://youtube.com/watch?v=1z_Gv98-mkQ> (Geron)
-  - `video` <https://youtube.com/watch?v=qirjknNY1zo> (Raval)
   - `post` <https://iamtrask.github.io/2017/03/21/synthetic-gradients/>
   - `notes` <http://cnichkawde.github.io/SyntheticGradients.html>
   - `code` <https://github.com/hannw/sgrnn>
@@ -2931,6 +2931,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 [**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---hierarchical-reinforcement-learning)
 
 ----
+#### ["Why Does Hierarchy (Sometimes) Work So Well in Reinforcement Learning?"](https://arxiv.org/abs/1909.10618) Nachum, Tang, Lu, Gu, Lee, Levine
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#why-does-hierarchy-sometimes-work-so-well-in-reinforcement-learning-nachum-tang-lu-gu-lee-levine>
+
+----
 #### ["The Termination Critic"](https://arxiv.org/abs/1902.09996) Harutyunyan, Dabney, Borsa, Heess, Munos, Precup
 >	"We consider the problem of autonomously discovering behavioral abstractions, or options, for reinforcement learning agents. We propose an algorithm that focuses on the termination condition, as opposed to -- as is common -- the policy. The termination condition is usually trained to optimize a control objective: an option ought to terminate if another has better value. We offer a different, information-theoretic perspective, and propose that terminations should focus instead on the compressibility of the option's encoding -- arguably a key reason for using abstractions. To achieve this algorithmically, we leverage the classical options framework, and learn the option transition model as a "critic" for the termination condition."  
   - `notes` <https://pbs.twimg.com/media/DtxEP5BUUAAVP4h.jpg>
@@ -3806,7 +3810,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 ----
 #### ["Unsupervised Question Answering by Cloze Translation"](https://arxiv.org/abs/1906.04980) Lewis, Denoyer, Riedel
   `extractive question answering` `ACL 2019`
->	"We explore to what extent high quality training data is actually required for Extractive QA, and investigate the possibility of unsupervised Extractive QA. We approach this problem by first learning to generate context, question and answer triples in an unsupervised manner, which we then use to synthesize Extractive QA training data automatically. To generate such triples, we first sample random context paragraphs from a large corpus of documents and then random noun phrases or named entity mentions from these paragraphs as answers. Next we convert answers in context to "fill-in-the-blank" cloze questions and finally translate them into natural questions. We propose and compare various unsupervised ways to perform cloze-to-natural question translation, including training an unsupervised NMT model using non-aligned corpora of natural questions and cloze questions as well as a rule-based approach. We find that modern QA models can learn to answer human questions surprisingly well using only synthetic training data."
+  - <https://github.com/brylevcyrill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#unsupervised-question-answering-by-cloze-translation-lewis-denoyer-riedel>
 
 #### ["Generating Wikipedia by Summarizing Long Sequences"](https://arxiv.org/abs/1801.10198) Liu, Saleh, Pot, Goodrich, Sepassi, Kaiser, Shazeer
   `extractive summarization`

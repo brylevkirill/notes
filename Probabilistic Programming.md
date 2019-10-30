@@ -49,7 +49,7 @@
   [Microsoft Satori Alexandria](https://devblogs.microsoft.com/dotnet/announcing-ml-net-0-6-machine-learning-net) ([overview](https://youtu.be/g_LSbqLBdM0?t=8m53s) `video`, [paper](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#alexandria-unsupervised-high-precision-knowledge-base-construction-using-a-probabilistic-program-winn-et-al) `summary`)  *(uses Infer.NET)*  
   [Microsoft Excel](http://research.microsoft.com/en-us/projects/tabular/) ([overview](https://youtube.com/watch?v=jsJZkSpLmq4) `video`)  *(uses Infer.NET)*  
 
-  [Facebook Hack](https://youtube.com/watch?v=gn6M8MX8jpI) `video`  
+  Facebook HackPPL ([overview](https://youtube.com/watch?v=gn6M8MX8jpI) `video`, [paper](https://research.fb.com/publications/hackppl-a-universal-probabilistic-programming-language))  
   [Facebook Prophet](https://facebook.github.io/prophet/) ([overview](https://youtube.com/watch?v=pOYAXv15r3A) `video`, [post](https://research.fb.com/blog/2017/02/prophet-forecasting-at-scale/), [paper](http://lethalletham.com/ForecastingAtScale.pdf))  *(uses Stan)*  
 
   [machine teaching](http://blogs.microsoft.com/next/2015/07/10/the-next-evolution-of-machine-learning-machine-teaching/)

@@ -58,6 +58,7 @@
 #### tutorials
 
   [Deep Learning: Practice and Trends](https://facebook.com/nipsfoundation/videos/1552060484885185/) by Oriol Vinyals and Scott Reed `video` ([slides](http://goo.gl/b6QBBh))  
+  [Deep Learning Summer School 2019](http://youtube.com/playlist?list=PLKlhhkvvU8-aXmPQZNYG_e-2nTd0tJE8v) `video`  
   [Deep Learning Summer School 2018](http://videolectures.net/DLRLsummerschool2018_toronto/) `video`  
   [Deep Learning Summer School 2017](http://videolectures.net/deeplearning2017_montreal/) `video`  
 
@@ -820,9 +821,17 @@
 
 ----
 
-  ["Self-Attention: Language, Images and Music"](https://youtube.com/watch?v=bYmeuc5voUQ) by Ashish Vaswani `video` *(Transformer)*
-
   [**"Attention Is All You Need"**](#attention-is-all-you-need-vaswani-et-al) by Vaswani et al. `paper` `summary` *(Transformer)*
+
+  [overview](https://youtube.com/watch?v=bYmeuc5voUQ) of Transformer by Ashish Vaswani `video`
+
+----
+
+  [**"Dynamic Routing Between Capsules"**](#dynamic-routing-between-capsules-sabour-frosst-hinton) by Hinton et al. `paper` `summary` *(Capsule Network)*  
+  [**"Matrix Capsules with EM Routing"**](#matrix-capsules-with-em-routing-hinton-sabour-frosst) by Hinton et al. `paper` `summary` *(Capsule Network)*  
+  [**"Stacked Capsule Autoencoders"**](#stacked-capsule-autoencoders-kosiorek-sabour-teh-hinton) by Kosiorek et al. `paper` `summary` *(Capsule Network)*  
+
+  [overview](https://youtube.com/watch?v=x5Vxk9twXlE) of Capsule Network by Geoffrey Hinton `video`
 
 ----
 
@@ -2197,7 +2206,7 @@ Yoshua Bengio:
 
 
 #### ["Dynamic Routing Between Capsules"](https://arxiv.org/abs/1710.09829) Sabour, Frosst, Hinton
-  `CapsNet`
+  `Capsule Network` `CapsNet`
 >	"A capsule is a group of neurons whose activity vector represents the instantiation parameters of a specific type of entity such as an object or object part. We use the length of the activity vector to represent the probability that the entity exists and its orientation to represent the instantiation paramters. Active capsules at one level make predictions, via transformation matrices, for the instantiation parameters of higher-level capsules. When multiple predictions agree, a higher level capsule becomes active. We show that a discrimininatively trained, multi-layer capsule system achieves state-of-the-art performance on MNIST and is considerably better than a convolutional net at recognizing highly overlapping digits. To achieve these results we use an iterative routing-by-agreement mechanism: A lower-level capsule prefers to send its output to higher level capsules whose activity vectors have a big scalar product with the prediction coming from the lower-level capsule."
 
 >	"Dynamic routing can be viewed as a parallel attention mechanism that allows each capsule at one level to attend to some active capsules at the level below and to ignore others. This should allow the model to recognize multiple objects in the image even if objects overlap. The routing-by-agreement should make it possible to use a prior about shape of objects to help segmentation and it should obviate the need to make higher-level segmentation decisions in the domain of pixels."
@@ -2232,16 +2241,17 @@ Yoshua Bengio:
 
   - <https://github.com/sekwiatkowski/awesome-capsule-networks>
   - `video` <https://youtube.com/watch?v=gq-7HgzfDBM>
+  - `video` <https://youtube.com/watch?v=x5Vxk9twXlE> (Hinton)
   - `video` <https://youtube.com/watch?v=zRg3IuxaJ6I> (Sabour)
   - `video` <https://facebook.com/nipsfoundation/videos/1553634558061111?t=5824> (Frosst)
-  - `video` ["What is wrong with convolutional neural nets?"](https://youtube.com/watch?v=Mqt8fs6ZbHk) (Hinton)
+  - `video` <https://youtu.be/re-SRA5UZQw?t=48m28s> (Hinton)
+  - `video` ["What is wrong with convolutional neural nets?"](https://youtube.com/watch?v=Jv1VDdI4vy4) (Hinton)
   - `video` ["What's wrong with convolutional nets?"](http://techtv.mit.edu/collections/bcs/videos/30698-what-s-wrong-with-convolutional-nets) (Hinton) ([transcription](https://github.com/WalnutiQ/walnut/issues/157))
   - `video` ["Does the Brain do Inverse Graphics?"](https://youtube.com/watch?v=TFIMqt0yT2I) (Hinton)
   - `video` <https://youtube.com/watch?v=nXGHJTtFYRU> (Kilcher)
   - `video` <https://youtube.com/watch?v=pPN8d0E3900> (Geron)
   - `video` <https://youtube.com/watch?v=EATWLTyLfmc> (Canziani)
   - `video` <https://youtube.com/watch?v=hYt3FcJUf6w> (Uziela)
-  - `video` <https://youtube.com/watch?v=VKoLGnq15RM> (Raval)
   - `video` <https://youtube.com/watch?v=UZ9BgrofhKk> (Kozlov) `in russian`
   - `video` <https://youtube.com/watch?v=8R3gXmh1F0c> (Lykov) `in russian`
   - `post` <https://oreilly.com/ideas/introducing-capsule-networks>
@@ -2260,9 +2270,10 @@ Yoshua Bengio:
 
 
 #### ["Matrix Capsules with EM Routing"](https://openreview.net/forum?id=HJWLfGWRb) Hinton, Sabour, Frosst
-  `CapsNet`
+  `Capsule Network` `CapsNet`
 >	"A capsule is a group of neurons whose outputs represent different properties of the same entity. Each layer in a capsule network contains many capsules [a group of capsules forms a capsule layer and can be used in place of a traditional layer in a neural net]. We describe a version of capsules in which each capsule has a logistic unit to represent the presence of an entity and a 4x4 matrix which could learn to represent the relationship between that entity and the viewer (the pose). A capsule in one layer votes for the pose matrix of many different capsules in the layer above by multiplying its own pose matrix by trainable viewpoint-invariant transformation matrices that could learn to represent part-whole relationships. Each of these votes is weighted by an assignment coefficient. These coefficients are iteratively updated for each image using the Expectation-Maximization algorithm such that the output of each capsule is routed to a capsule in the layer above that receives a cluster of similar votes. The transformation matrices are trained discriminatively by backpropagating through the unrolled iterations of EM between each pair of adjacent capsule layers. On the smallNORB benchmark, capsules reduce the number of test errors by 45\% compared to the state-of-the-art. Capsules also show far more resistance to white box adversarial attack than our baseline convolutional neural network."
 
+  - `video` <https://youtu.be/x5Vxk9twXlE?t=30m46s> (Hinton)
   - `video` <https://youtu.be/zRg3IuxaJ6I?t=22m35s> (Sabour)
   - `video` <https://youtu.be/hYt3FcJUf6w?t=50m38s> (Uziela)
   - `video` <https://youtube.com/watch?v=akq6PNnkKY8> (Ou)
@@ -2275,7 +2286,7 @@ Yoshua Bengio:
 
 
 #### ["Stacked Capsule Autoencoders"](https://arxiv.org/abs/1906.06818) Kosiorek, Sabour, Teh, Hinton
-  `CapsNet` `information routing`
+  `Capsule Network` `CapsNet`
 >	"An object can be seen as a geometrically organized set of interrelated parts. A system that makes explicit use of these geometric relationships to recognize objects should be naturally robust to changes in viewpoint, because the intrinsic geometric relationships are viewpoint-invariant. We describe an unsupervised version of capsule networks, in which a neural encoder, which looks at all of the parts, is used to infer the presence and poses of object capsules. The encoder is trained by backpropagating through a decoder, which predicts the pose of each already discovered part using a mixture of pose predictions. The parts are discovered directly from an image, in a similar manner, by using a neural encoder, which infers parts and their affine transformations. The corresponding decoder models each image pixel as a mixture of predictions made by affine-transformed parts. We learn object- and their part-capsules on unlabeled data, and then cluster the vectors of presences of object capsules. When told the names of these clusters, we achieve state-of-the-art results for unsupervised classification on SVHN (55%) and near state-of-the-art on MNIST (98.5%)."
 
   - `post` <http://akosiorek.github.io/ml/2019/06/23/stacked_capsule_autoencoders.html>
@@ -2297,6 +2308,7 @@ Yoshua Bengio:
 
 
 #### ["Deep Residual Learning for Image Recognition"](http://arxiv.org/abs/1512.03385) He, Zhang, Ren, Sun
+  `ResNet`
 >	"Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers---8x deeper than VGG nets but still having lower complexity. An ensemble of these residual nets achieves 3.57% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28% relative improvement on the COCO object detection dataset. Deep residual nets are foundations of our submissions to ILSVRC & COCO 2015 competitions, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation."
 
 ----
@@ -2421,11 +2433,11 @@ Yoshua Bengio:
 >	"Capsules is the theory of how you do visual perception using reconstruction, and also how you route information to the right places. In standard neural nets, the information, the activity in the layer, just automatically goes somewhere; you don't decide where to send it. The idea of capsules was to make decisions about where to send information. Now, since I started working on capsules, some other very smart people at Google invented transformers, which are doing the same thing. They're deciding where to route information, and that's a big win."
 
   - `post` <https://research.googleblog.com/2017/08/transformer-novel-neural-network.html>
+  - `video` <https://youtube.com/watch?v=bYmeuc5voUQ> (Vaswani)
   - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747?t=1107> (Vaswani, Shazeer)
   - `video` <https://youtu.be/I0nX4HDmXKc?t=7m46s> (Polosukhin)
   - `video` <https://youtube.com/watch?v=rBCqOTEfxvg> (Kaiser)
   - `video` <https://youtube.com/watch?v=HsYPiKDTikg> (Li)
-  - `video` <https://youtu.be/54uLU7Nxyv8> + <https://youtu.be/VEcsf0OKhfw> + <https://youtu.be/9vUoBIeqrQg> (Tatman)
   - `video` <https://youtube.com/watch?v=S0KakHcj_rs> (Palermo)
   - `video` <https://youtube.com/watch?v=iDulhoQ2pro> (Kilcher)
   - `video` <https://youtube.com/watch?v=KMY2Knr4iAs> (Chen)
@@ -2551,7 +2563,6 @@ Yoshua Bengio:
   - `video` <https://youtu.be/9z3_tJAu7MQ?t=3m16s> (Wayne)
   - `video` <https://youtube.com/watch?v=PQrlOjj8gAc> (Wayne)
   - `video` <https://youtu.be/otRoAQtc5Dk?t=59m56s> (Polykovskiy)
-  - `video` <https://youtube.com/watch?v=r5XKzjTFCZQ> (Raval)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=10.1038/nature20101>
   - `code` <https://github.com/deepmind/dnc>
   - `code` <https://github.com/ixaxaar/pytorch-dnc>

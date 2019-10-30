@@ -616,6 +616,7 @@
 
   ["Introduction to Probabilistic Soft Logic"](https://github.com/linqs/psl/wiki/Introduction-to-probabilistic-soft-logic) `wiki`
 
+  [overivew](http://youtube.com/watch?v=Jk06ciaAoJg) by Lise Getoor `video`  
   [overview](http://facebook.com/nipsfoundation/videos/1554329184658315/) by Lise Getoor `video`  
   [overview](http://youtube.com/watch?v=7k-Ta024vQs) by Lise Getoor `video`  
   [overview](http://youtube.com/watch?v=1lwGKhFAXU0) by Lise Getoor `video`  
@@ -1642,6 +1643,12 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 
   - `video` <https://youtube.com/watch?v=IWGGwnRmYoA> (Jia)
   - `video` <https://vimeo.com/238231419> (Liang)
+
+
+#### ["Unsupervised Question Answering by Cloze Translation"](https://arxiv.org/abs/1906.04980) Lewis, Denoyer, Riedel
+>	"Obtaining training data for Question Answering (QA) is time-consuming and resource-intensive, and existing QA datasets are only available for limited domains and languages. In this work, we explore to what extent high quality training data is actually required for Extractive QA, and investigate the possibility of unsupervised Extractive QA. We approach this problem by first learning to generate context, question and answer triples in an unsupervised manner, which we then use to synthesize Extractive QA training data automatically. To generate such triples, we first sample random context paragraphs from a large corpus of documents and then random noun phrases or named entity mentions from these paragraphs as answers. Next we convert answers in context to "fill-in-the-blank" cloze questions and finally translate them into natural questions. We propose and compare various unsupervised ways to perform cloze-to-natural question translation, including training an unsupervised NMT model using non-aligned corpora of natural questions and cloze questions as well as a rule-based approach. We find that modern QA models can learn to answer human questions surprisingly well using only synthetic training data. We demonstrate that, without using the SQuAD training data at all, our approach achieves 56.4 F1 on SQuAD v1 (64.5 F1 when the answer is a Named entity mention), outperforming early supervised models."
+
+  - `post` <https://ai.facebook.com/blog/research-in-brief-unsupervised-question-answering-by-cloze-translation>
 
 
 #### ["A Neural Network for Factoid Question Answering over Paragraphs"](http://cs.umd.edu/~miyyer/qblearn/) Iyyer, Boyd-Graber, Claudino, Socher, Daume
