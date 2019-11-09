@@ -2161,6 +2161,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <http://fields.utoronto.ca/video-archive/2018/01/2509-18003> (Mnih)
   - `video` <https://facebook.com/icml.imls/videos/432150780632776?t=1458> (Espeholt)
   - `video` <https://facebook.com/iclr.cc/videos/2125495797479475?t=1265> (Kavukcuoglu)
+  - `video` <https://youtube.com/watch?v=kOy49NqZeqI> (Kilcher)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1802.01561>
   - `code` <https://github.com/deepmind/scalable_agent>
 
@@ -3810,7 +3811,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 ----
 #### ["Unsupervised Question Answering by Cloze Translation"](https://arxiv.org/abs/1906.04980) Lewis, Denoyer, Riedel
   `extractive question answering` `ACL 2019`
-  - <https://github.com/brylevcyrill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#unsupervised-question-answering-by-cloze-translation-lewis-denoyer-riedel>
+  - <https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#unsupervised-question-answering-by-cloze-translation-lewis-denoyer-riedel>
 
 #### ["Generating Wikipedia by Summarizing Long Sequences"](https://arxiv.org/abs/1801.10198) Liu, Saleh, Pot, Goodrich, Sepassi, Kaiser, Shazeer
   `extractive summarization`

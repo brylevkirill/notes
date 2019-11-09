@@ -213,10 +213,9 @@
   ["Crash Course on Learning Theory"](https://blogs.princeton.edu/imabandit/2015/10/13/crash-course-on-learning-theory-part-1/) by Sebastien Bubeck  
   ["Statistical Learning Theory"](https://web.stanford.edu/class/cs229t/Lectures/percy-notes.pdf) by Percy Liang  
 
-  [course](http://www.mit.edu/~9.520/fall17/) by Tomaso Poggio, Lorenzo Rosasco, Georgios Evangelopoulos `video`  
+  [course](https://www.mit.edu/~9.520/fall19/) by Tomaso Poggio and others ([videos](http://youtube.com/playlist?list=PLyGKBDfnk-iB4Xz_EAJNEgGF5I-6OzRNI), [videos](http://youtube.com/playlist?list=PLyGKBDfnk-iAtLO6oLW4swMiQGz4f2OPY), [videos](https://www.youtube.com/playlist?list=PLyGKBDfnk-iCXhuP9W-BQ9q2RkEIA5I5f))  
   [course](http://work.caltech.edu/telecourse.html) by Yaser Abu-Mostafa `video`  
   [course](http://youtube.com/watch?v=jX7Ky76eI7E) by Sebastien Bubeck `video`  
-  [course](http://youtube.com/playlist?list=PLyGKBDfnk-iAtLO6oLW4swMiQGz4f2OPY) by Tomaso Poggio and Lorenzo Rosasco `video`  
 
 
 ----
@@ -236,7 +235,7 @@
 
   [**deep learning**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#theory)
 
-  [**reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#problems)
+  [**reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#theory)
 
 
 

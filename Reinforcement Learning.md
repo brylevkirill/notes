@@ -92,9 +92,11 @@
 ---
 ### applications - games
 
+  ["Success Stories of Deep RL"](https://youtube.com/watch?v=N8_gVrIPLQM) by David Silver `video`  
   ["Classic Games Case Study"](https://youtube.com/watch?v=ld28AU7DDB4) by David Silver `video`  
   ["AI for Classic Games"](http://youtube.com/watch?v=kZ_AUmFcZtk) by David Silver `video`  
   ["From TD(λ) to AlphaGo: Games, Neural Nets, Reinforcement Learning and Rollouts"](http://techtalks.tv/talks/on-td-learning-and-links-with-deeprl-in-atari-and-alphago/63031/) by Gerry Tesauro `video`  
+  ["Fifty Years of RL in Games"](http://videolectures.net/icml09_tesauro_itfyrlg) by Gerry Tesauro `video`  
 
   ["A 'Brief' History of Game AI Up To AlphaGo"](http://andreykurenkov.com/writing/a-brief-history-of-game-ai/) by Andrey Kurenkov
 
@@ -103,18 +105,19 @@
 
 	[AlphaStar overview](https://deepmind.com/blog/article/AlphaStar-Grandmaster-level-in-StarCraft-II-using-multi-agent-reinforcement-learning)
 
-	[AlphaStar "Nature" magazine](https://storage.googleapis.com/deepmind-media/research/alphastar/AlphaStar_unformatted.pdf) `paper`
+	["Grandmaster Level in StarCraft II using Multi-agent Reinforcement Learning"](#grandmaster-level-in-starcraft-ii-using-multi-agent-reinforcement-learning-vinyals-et-al) by Vinyals et al. `paper` `summary`
 
 	[overview](https://slideslive.com/38916905/alphastar-mastering-the-game-of-starcraft-ii) by David Silver `video`  
-	[overview](https://youtu.be/3N9phq_yZP0?t=32m52s) by Demis Hassabis `video`  
+	[overview](https://youtu.be/mzjGNo9Tz4g?t=10m53s) by David Silver `video`  
+	[overview](https://youtu.be/3UdH3lPF7nE) by Oriol Vinyals `video`  
 	[overview](https://youtu.be/Kedt2or9xlo) by Oriol Vinyals `video`  
-
-	overview by Alex Irpan ([1](https://www.alexirpan.com/2019/02/22/alphastar.html), [2](https://www.alexirpan.com/2019/02/22/alphastar-part2.html))
+	[overview](https://youtu.be/3N9phq_yZP0?t=32m52s) by Demis Hassabis `video`  
 
 	[AlphaStar discussion](https://reddit.com/r/MachineLearning/comments/ajgzoc/we_are_oriol_vinyals_and_david_silver_from) with David Silver and Oriol Vinyals
 
-	[AlphaStar vs pro players](https://youtube.com/watch?v=cUTMhmVh1qs) games `video` ([highlights](https://youtube.com/watch?v=zgIFoepzhIo) by MaNa `video`, [highlights](https://youtube.com/watch?v=_YWmU-E2WFc) by Artosis `video`))  
-	[AlphaStar vs Battle.net players](https://youtube.com/playlist?list=UU_2FZDFti08MI5WRaZUZSIQ) games `video`  
+	[AlphaStar vs Serral](https://youtube.com/playlist?list=PLXJHKGgWSul4OKsIBXfa2-wHpBfiMBLJr) `video`  
+	[AlphaStar vs Battle.net players](https://deepmind.com/research/open-source/alphastar-resources) games ([overviews](https://youtube.com/playlist?list=PLtFBLTxDxWOSrWZ8krQt6eDNXTpG67Xpf) `video`)  
+	[AlphaStar vs pro players](https://youtube.com/watch?v=cUTMhmVh1qs) games `video` ([highlights](https://youtube.com/watch?v=zgIFoepzhIo) by MaNa `video`, [highlights](https://youtube.com/watch?v=_YWmU-E2WFc) by Artosis `video`)  
 
 ----
   - *Dota 2*  
@@ -127,6 +130,7 @@
 	[OpenAI Five reward function](https://gist.github.com/dfarhi/66ec9d760ae0c49a5c492c9fae93984a)  
 
 	[OpenAI Five overview](https://youtu.be/w3ues-NayAs?t=2m26s) by Ilya Sutskever `video`  
+	[OpenAI Five overview](https://youtu.be/N8_gVrIPLQM?t=1h3m41s) by David Silver `video`  
 	[OpenAI Five discussion](https://twitch.tv/videos/293517383?t=4h41m56s) `video`  
 
 	[discussion](https://reddit.com/r/DotA2/comments/bf49yk/hello_were_the_dev_team_behind_openai_five_we) with OpenAI team
@@ -136,6 +140,8 @@
 
 ----
   - *Poker*  
+
+	[Libratus](https://en.wikipedia.org/wiki/Libratus)
 
 	[Libratus overview](https://int8.io/counterfactual-regret-minimization-for-poker-ai/#Libratus_8211_DeepStack8217s_main_rival_from_Carnegie_Mellon_University) by Kamil Czarnogorski  
 	[Libratus overview](https://thegradient.pub/libratus-poker) by Jiren Zhu  
@@ -174,8 +180,7 @@
 ----
   - *Poker*  
 
-	<http://deepstack.ai>  
-	<http://twitter.com/DeepStackAI>  
+	[DeepStack](http://deepstack.ai)
 
 	[DeepStack overview](https://int8.io/counterfactual-regret-minimization-for-poker-ai/#DeepStack_8211_Neural_Network_based_AI_playing_Heads_Up_No-Limit_Texas_Hold8217em) by Kamil Czarnogorski  
 	[DeepStack overview](https://www.depthfirstlearning.com/2018/DeepStack) by Cinjon Resnick  
@@ -196,6 +201,8 @@
 
 ----
   - *Go*  
+
+	[AlphaGo](https://en.wikipedia.org/wiki/AlphaGo)
 
 	["Mastering the Game of Go"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto
 
@@ -232,6 +239,8 @@
 	["KnightCap: A Chess Program that Learns by Combining TD(lambda) with Game-tree Search"](https://arxiv.org/abs/cs/9901002) by Baxter et al. `paper`  
 
 	[AlphaZero overview](https://vimeo.com/252184928#t=1468) by David Silver `video`  
+	[AlphaZero overview](https://youtu.be/N8_gVrIPLQM?t=47m9s) by David Silver `video`  
+	[AlphaZero overview](https://youtube.com/watch?v=mzjGNo9Tz4g) by David Silver `video`  
 	[AlphaZero overview](https://youtu.be/3N9phq_yZP0?t=12m43s) by Demis Hassabis `video`  
 	[AlphaZero overview](https://youtu.be/DXNqYSNvnjA?t=21m24s) by Demis Hassabis `video`  
 
@@ -245,6 +254,8 @@
 	[FTW agent overview](https://deepmind.com/blog/capture-the-flag-science)
 
 	["Human-level Performance in First-person Multiplayer Games with Population-based Deep Reinforcement Learning"](#human-level-performance-in-first-person-multiplayer-games-with-population-based-deep-reinforcement-learning-jaderberg-et-al) by Jaderberg et al. `paper` `summary`
+
+	[overview](https://youtu.be/N8_gVrIPLQM?t=1h10m) by David Silver `video`
 
 	[FTW agents vs FTW agents](https://youtube.com/watch?v=NXkD77ioGi0) games `video`  
 	[FTW agents vs human players](https://youtube.com/watch?v=dltN4MxV1RI) games `video`  
@@ -283,10 +294,17 @@
 ----
   - *TD-Gammon*  
 
+	[TD-Gammon](http://scholarpedia.org/article/User:Gerald_Tesauro/Proposed/Td-gammon)
+
 	["TD-Gammon"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto
 
+	["Temporal Difference Learning and TD-Gammon"](https://cling.csd.uwo.ca/cs346a/extra/tdgammon.pdf) by Tesauro et al. `paper`  
+	["On-line Policy Improvement using Monte-Carlo Search"](https://papers.nips.cc/paper/1302-on-line-policy-improvement-using-monte-carlo-search.pdf) by Tesauro et al. `paper`  
+
 	[overview](http://techtalks.tv/talks/on-td-learning-and-links-with-deeprl-in-atari-and-alphago/63031/) by Gerry Tesauro `video`  
+	[overview](http://videolectures.net/icml09_tesauro_itfyrlg/#t=784) by Gerry Tesauro `video`  
 	[overview](https://youtu.be/kZ_AUmFcZtk?t=42m29s) by David Silver `video`  
+	[overview](https://youtu.be/N8_gVrIPLQM?t=7m32s) by David Silver `video`  
 
 
 
@@ -386,8 +404,6 @@
   [tutorial](https://youtube.com/watch?v=Fsh1qMTg1xI) by Richard Sutton `video` ([write-up](https://goo.gl/PxHMLK))  
   [tutorial](https://youtube.com/watch?v=fIKkhoI1kF4) by Emma Brunskill `video`  
 
-  ["Theory of Reinforcement Learning"](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl/) by Csaba Szepesvari `video`
-
 ----
 
   ["Reinforcement Learning: An Introduction"](http://incompleteideas.net/book/the-book-2nd.html) book by Richard Sutton and Andrew Barto (second edition) ([code](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction))  
@@ -417,6 +433,10 @@
 
 ---
 ### deep reinforcement learning
+
+  ["Success Stories of Deep RL"](https://youtube.com/watch?v=N8_gVrIPLQM) by David Silver `video`
+
+----
 
   ["Spinning Up in Deep RL"](https://spinningup.openai.com) from OpenAI
 
@@ -503,6 +523,13 @@
   - model-based vs value-based vs policy-based  
   - on-policy vs off-policy  
   - bootstrapping vs Monte Carlo  
+
+
+----
+#### theory
+
+  ["Theory of Reinforcement Learning"](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl) by Csaba Szepesvari `video`  
+  ["Is a Good Representation Sufficient for Sample Efficient Reinforcement Learning"](https://youtu.be/b9I1VYEd82c?t=2h30m) by Sham Kakade `video`  
 
 
 ----
@@ -1791,6 +1818,7 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=NXkD77ioGi0> (demo)
   - `video` <https://youtube.com/watch?v=dltN4MxV1RI> (demo)
   - `video` <https://youtube.com/watch?v=MvFABFWPBrw>
+  - `video` <https://youtu.be/N8_gVrIPLQM?t=1h10m> (Silver)
   - `paper` <https://science.sciencemag.org/content/364/6443/859>
 
 
@@ -1799,6 +1827,8 @@ interesting recent papers:
 >	"Many real-world applications require artificial agents to compete and coordinate with other agents in complex environments. As a stepping stone to this goal, the domain of StarCraft has emerged as an important challenge for artificial intelligence research, owing to its iconic and enduring status among the most difficult professional esports, and its relevance to the real world in terms of its raw complexity and multi-agent challenges. Over the course of a decade and numerous competitions, the strongest agents have simplified important aspects of the game, utilised superhuman capabilities, or employed hand-crafted subsystems. Despite these advantages, no previous agent has come close to matching the overall skill of top StarCraft players. We chose to address the challenge of StarCraft using general-purpose learning methods that are in principle applicable to other complex domains: a multi-agent reinforcement learning algorithm that uses data from both human and agent games within a diverse league of continually adapting strategies and counter-strategies, each represented by deep neural networks. We evaluated our agent, AlphaStar, in the full game of StarCraft II, through a series of online games against human players. AlphaStar was rated at Grandmaster level for all three StarCraft races and above 99.8% of officially ranked human players."
 
   - `post` <https://deepmind.com/blog/article/AlphaStar-Grandmaster-level-in-StarCraft-II-using-multi-agent-reinforcement-learning>
+  - `video` <https://youtube.com/watch?v=6eiErYh_FeY>
+  - `video` <https://youtube.com/watch?v=BTLCdge7uSQ> (Kilcher)
 
 
 #### ["Mastering the Game of Go without Human Knowledge"](https://deepmind.com/documents/119/agz_unformatted_nature.pdf) Silver et al.
@@ -1956,6 +1986,7 @@ interesting recent papers:
 
 
 #### ["Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm"](https://arxiv.org/abs/1712.01815) Silver et al.
+  `AlphaZero`
 >	"The game of chess is the most widely-studied domain in the history of artificial intelligence. The strongest programs are based on a combination of sophisticated search techniques, domain-specific adaptations, and handcrafted evaluation functions that have been refined by human experts over several decades. In contrast, the AlphaGo Zero program recently achieved superhuman performance in the game of Go, by tabula rasa reinforcement learning from games of self-play. In this paper, we generalise this approach into a single AlphaZero algorithm that can achieve, tabula rasa, superhuman performance in many challenging domains. Starting from random play, and given no domain knowledge except the game rules, AlphaZero achieved within 24 hours a superhuman level of play in the games of chess and shogi (Japanese chess) as well as Go, and convincingly defeated a world-champion program in each case."
 
 ----
@@ -1968,6 +1999,8 @@ interesting recent papers:
 
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games> (demo)
   - `video` <https://vimeo.com/252184928#t=1468> (Silver)
+  - `video` <https://youtu.be/N8_gVrIPLQM?t=47m9s> (Silver)
+  - `video` <https://youtube.com/watch?v=mzjGNo9Tz4g> (Silver)
   - `video` <https://youtu.be/3N9phq_yZP0?t=12m43s> (Hassabis)
   - `video` <https://youtu.be/DXNqYSNvnjA?t=21m24s> (Hassabis)
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
@@ -1997,6 +2030,7 @@ interesting recent papers:
 
 
 #### ["Thinking Fast and Slow with Deep Learning and Tree Search"](https://arxiv.org/abs/1705.08439) Anthony, Tian, Barber
+  `Expert Iteration` `ExIt`
 >	"Sequential decision making problems, such as structured prediction, robotic control, and game playing, require a combination of planning policies and generalisation of those plans. In this paper, we present Expert Iteration, a novel reinforcement learning algorithm which decomposes the problem into separate planning and generalisation tasks. Planning new policies is performed by tree search, while a deep neural network generalises those plans. Subsequently, tree search is improved by using the neural network policy to guide search, increasing the strength of new plans. In contrast, standard deep Reinforcement Learning algorithms rely on a neural network not only to generalise plans, but to discover them too. We show that ExIt outperforms REINFORCE for training a neural network to play the board game Hex, and our final tree search agent, trained tabula rasa, defeats MOHEX, the previous state-of-the-art Hex player."
 
 >	"ExIt can be viewed as an extension of Imitation Learning methods to domains where the best known experts are unable to achieve satisfactory performance. In standard IL an apprentice is trained to imitate the behaviour of an expert. In ExIt, we extend this to an iterative learning process. Between each iteration, we perform an Expert Improvement step, where we bootstrap the (fast) apprentice policy to increase the performance of the (comparatively slow) expert."
@@ -2005,6 +2039,13 @@ interesting recent papers:
 
   - `post` <https://davidbarber.github.io/blog/2017/11/07/Learning-From-Scratch-by-Thinking-Fast-and-Slow-with-Deep-Learning-and-Tree-Search/> (Barber)
   - `post` <https://reddit.com/r/MachineLearning/comments/76xjb5/ama_we_are_david_silver_and_julian_schrittwieser/dolnq31/> (Anthony)
+
+
+#### ["Ranked Reward: Enabling Self-Play Reinforcement Learning for Combinatorial Optimization"](https://arxiv.org/abs/1807.01672) Laterre et al.
+>	"Adversarial self-play in two-player games has delivered impressive results when used with reinforcement learning algorithms that combine deep neural networks and tree search. Algorithms like AlphaZero and Expert Iteration learn tabula-rasa, producing highly informative training data on the fly. However, the self-play training strategy is not directly applicable to single-player games. Recently, several practically important combinatorial optimization problems, such as the traveling salesman problem and the bin packing problem, have been reformulated as reinforcement learning problems, increasing the importance of enabling the benefits of self-play beyond two-player games. We present the Ranked Reward (R2) algorithm which accomplishes this by ranking the rewards obtained by a single agent over multiple games to create a relative performance metric. Results from applying the R2 algorithm to instances of a two-dimensional and three-dimensional bin packing problems show that it outperforms generic Monte Carlo tree search, heuristic algorithms and integer programming solvers. We also present an analysis of the ranked reward mechanism, in particular, the effects of problem instances with varying difficulty and different ranking thresholds."
+
+  - `post` <https://builders.intel.com/ai/membership/instadeep>
+  - `audio` <https://twimlai.com/twiml-talk-302-deep-reinforcement-learning-for-logistics-at-instadeep-with-karim-beguir> (Beguir)
 
 
 #### ["Solving the Rubik’s Cube Without Human Knowledge"](https://arxiv.org/abs/1805.07470) McAleer, Agostinelli, Shmakov, Baldi
@@ -2037,6 +2078,12 @@ interesting recent papers:
   - `paper` ["Automatic Machine Learning by Pipeline Synthesis using Model-Based Reinforcement Learning and a Grammar"](https://arxiv.org/abs/1905.10345) by Drori et al.
 
 
+#### ["Towards AlphaChem: Chemical Synthesis Planning with Tree Search and Deep Neural Network Policies"](https://arxiv.org/abs/1702.00020) Segler, Preus, Waller
+>	"Retrosynthesis is a technique to plan the chemical synthesis of organic molecules, for example drugs, agro- and fine chemicals. In retrosynthes is, a search tree is built by analysing molecules recursively and dissecting them into simpler molecular building blocks until one obtains a set of known building blocks. The search space is intractably large, and it is difficult to determine the value of retrosynthetic positions. Here, we propose to model retrosynthesis as a Markov Decision Process. In combination with a Deep Neural Network policy learned from essentially the complete published knowledge of chemistry, Monte Carlo Tree Search (MCTS) can be used to evaluate positions. In exploratory studies, we demonstrate that MCTS with neural network policies outperforms the traditionally used best-first search with hand-coded heuristics."
+
+  - `video` <https://youtu.be/N8_gVrIPLQM?t=1h45s> (Silver)
+
+
 #### ["Terrain-Adaptive Locomotion Skills Using Deep Reinforcement Learning"](http://www.cs.ubc.ca/~van/papers/2016-TOG-deepRL/2016-TOG-deepRL.pdf) Peng, Berseth, van de Panne
 >	"Reinforcement learning offers a promising methodology for developing skills for simulated characters, but typically requires working with sparse hand-crafted features. Building on recent progress in deep reinforcement learning, we introduce a mixture of actor-critic experts approach that learns terrain-adaptive dynamic locomotion skills using high-dimensional state and terrain descriptions as input, and parameterized leaps or steps as output actions. MACE learns more quickly than a single actor-critic approach and results in actor-critic experts that exhibit specialization. Additional elements of our solution that contribute towards efficient learning include Boltzmann exploration and the use of initial actor biases to encourage specialization. Results are demonstrated for multiple planar characters and terrain classes."
 
@@ -2045,12 +2092,6 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=KPfzRSBzNX4> + <https://youtube.com/watch?v=A0BmHoujP9k> (demo)
   - `video` <https://youtube.com/watch?v=mazfn4dHPRM> + <https://youtube.com/watch?v=RTuSHI5FNzg> (overview)
   - `code` <https://github.com/xbpeng/DeepTerrainRL>
-
-
-#### ["Neural Combinatorial Optimization with Reinforcement Learning"](http://arxiv.org/abs/1611.09940) Bello, Pham, Le, Norouzi, Bengio
->	"This paper presents a framework to tackle combinatorial optimization problems using neural networks and reinforcement learning. We focus on the traveling salesman problem (TSP) and train a recurrent network that, given a set of city coordinates, predicts a distribution over different city permutations. Using negative tour length as the reward signal, we optimize the parameters of the recurrent network using a policy gradient method. We compare learning the network parameters on a set of training graphs against learning them on individual test graphs. Despite the computational expense, without much engineering and heuristic designing, Neural Combinatorial Optimization achieves close to optimal results on 2D Euclidean graphs with up to 100 nodes. Applied to the KnapSack, another NP-hard problem, the same method obtains optimal solutions for instances with up to 200 items."
-
-  - `video` <https://youtube.com/watch?v=mxCVgVrUw50> (Samy Bengio)
 
 
 #### ["Making Contextual Decisions with Low Technical Debt"](http://arxiv.org/abs/1606.03966) Agarwal et al.
