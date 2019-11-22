@@ -2403,41 +2403,34 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=56GW1IlWgMg> (Kilcher)
   - `paper` ["Interaction Networks for Learning about Objects, Relations and Physics"](http://arxiv.org/abs/1612.00222) by Battaglia et al.
 
+#### ["Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model"](https://arxiv.org/abs/1911.08265) Schrittwieser et al.
+  `MuZero` `learning to plan` `learning abstract environment model`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#mastering-atari-go-chess-and-shogi-by-planning-with-a-learned-model-schrittwieser-et-al>
+
 #### ["Value Prediction Network"](https://arxiv.org/abs/1707.03497) Oh, Singh, Lee
   `VPN` `learning to plan` `learning abstract environment model`
->	"VPN combines model-based RL (i.e., learning the dynamics of an abstract state space sufficient for computing future rewards and values) and model-free RL (i.e., mapping the learned abstract states to rewards and values) in a unified framework. In order to train a VPN, we propose a combination of temporal-difference search (TD search) and n-step Q-learning. In brief, VPNs learn to predict values via Q-learning and rewards via supervised learning. At the same time, VPNs perform lookahead planning to choose actions and compute bootstrapped target Q-values."  
->	"Extends the Predictron model from policy evaluation to optimal control."  
->	"Uses the model to construct a look-ahead tree only when constructing bootstrap targets and selecting actions, similarly to TD-search. Crucially, the model is not embedded in a planning algorithm during optimisation."  
-  - `video` <http://videolectures.net/deeplearning2017_singh_reinforcement_learning/#t=4366> (Singh)
-  - `video` <https://facebook.com/icml.imls/videos/2366831430268790?t=1814> (Silver)
-  - `video` <https://youtu.be/PRQ8-FwDPRE?t=16m> (Holland)
-  - `video` <https://youtu.be/RwLTrQUyDvA?t=14m58s> (Diaz Rodriguez)
-  - `notes` <https://medium.com/arxiv-bytes/summary-value-prediction-networks-vpn-474c0b080b2a>
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#value-prediction-network-oh-singh-lee>
+
+#### ["TreeQN and ATreeC: Differentiable Tree-Structured Models for Deep Reinforcement Learning"] Farquhar, Rocktaschel, Igl, Whiteson
+  `TreeQN` `ATreeC` `learning to plan` `learning abstract environment model`
+>	"TreeQN, a differentiable, recursive, tree-structured model that serves as a drop-in replacement for any value function network in deep RL with discrete actions. TreeQN dynamically constructs a tree by recursively applying a transition model in a learned abstract state space and then aggregating predicted rewards and state-values using a tree backup to estimate Q-values."  
+>	"ATreeC, an actor-critic variant that augments TreeQN with a softmax layer to form a stochastic policy network."  
+>	"TreeQN learns an abstract MDP model, such that a tree search over that model (represented by a tree-structured neural network) approximates the optimal value function."  
+  - `notes` <https://medium.com/arxiv-bytes/summary-treeqn-c033a9838319>
 
 #### ["The Predictron: End-to-End Learning and Planning"](https://arxiv.org/abs/1612.08810) Silver et al.
-  `learning to plan` `learning abstract environment model`
->	"The Predictron consists of a fully abstract model, represented by a Markov reward process, that can be rolled forward multiple “imagined" planning steps. Each forward pass of the predictron accumulates internal rewards and values over multiple planning depths. The predictron is trained end-to-end so as to make these accumulated values accurately approximate the true value function."  
->	"trains deep network to implicitly plan via iterative rollouts"  
->	"uses implicit environment model which does not capture dynamics"  
->	"only applied to learning Markov reward processes rather than solving Markov decision processes"  
-  - `video` <https://youtube.com/watch?v=BeaLdaN2C3Q> (demo)
-  - `video` <https://facebook.com/icml.imls/videos/2366831430268790?t=410> (Silver)
-  - `video` <https://vimeo.com/238243832> (Hasselt)
-  - `video` <https://youtube.com/watch?v=ID150Tl-MMw&t=55m9s> (Abbeel)
-  - `video` <https://youtu.be/bsuvM1jO-4w?t=38m6s> (Mnih)
-  - `video` <http://videolectures.net/deeplearning2017_singh_reinforcement_learning/#t=4366> (Singh)
-  - `code` <https://github.com/zhongwen/predictron>
-  - `code` <https://github.com/muupan/predictron>
+  `Predictron` `learning to plan` `learning abstract environment model`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#the-predictron-end-to-end-learning-and-planning-silver-et-al>
 
 #### ["Cognitive Mapping and Planning for Visual Navigation"](https://arxiv.org/abs/1702.03920) Gupta, Davidson, Levine, Sukthankar, Malik
-  `learning to plan` `learning abstract environment model`
+  `VIN` `learning to plan` `learning abstract environment model`
 >	"1st person mapping + navigation with VIN"  
   - <https://sites.google.com/view/cognitive-mapping-and-planning>
   - `video` <https://youtu.be/ID150Tl-MMw?t=54m24s> (demo)
   - `code` <https://github.com/tensorflow/models/tree/master/research/cognitive_mapping_and_planning>
 
 #### ["Value Iteration Networks"](http://arxiv.org/abs/1602.02867) Tamar, Wu, Thomas, Levine, Abbeel
-  `learning to plan` `learning abstract environment model`
+  `VIN` `learning to plan` `learning abstract environment model`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#value-iteration-networks-tamar-wu-thomas-levine-abbeel>
 
 ----
@@ -2478,7 +2471,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 #### ["Learning Latent Dynamics for Planning from Pixels"](https://arxiv.org/abs/1811.04551) Hafner et al.
   `PlaNet` `learning to simulate` `learning environment model` `video prediction`
->	"Deep Planning Network is a purely model-based agent that learns the environment dynamics from images and chooses actions through fast online planning in latent space. To achieve high performance, the dynamics model must accurately predict the rewards ahead for multiple time steps. We approach this using a latent dynamics model with both deterministic and stochastic transition components. Moreover, we  propose  a multi-step variational inference objective that we name latent overshooting. Using only pixel observations, our agent solves continuous control tasks with contact dynamics, partial observability, and sparse rewards, which exceed the difficulty of tasks that were previously solved by planning with learned models. PlaNet uses substantially fewer episodes and reaches final performance close to and sometimes higher than strong model-free algorithms."  
+>	"Deep Planning Network is a purely model-based agent that learns the environment dynamics from images and chooses actions through fast online planning in latent space. To achieve high performance, the dynamics model must accurately predict the rewards ahead for multiple time steps. We approach this using a latent dynamics model with both deterministic and stochastic transition components. Moreover, we propose a multi-step variational inference objective that we name latent overshooting. Using only pixel observations, our agent solves continuous control tasks with contact dynamics, partial observability, and sparse rewards, which exceed the difficulty of tasks that were previously solved by planning with learned models. PlaNet uses substantially fewer episodes and reaches final performance close to and sometimes higher than strong model-free algorithms."  
   - <https://planetrl.github.io>
   - `post` <https://ai.googleblog.com/2019/02/introducing-planet-deep-planning.html>
   - `video` <https://youtube.com/watch?v=C7Dmu0GtrSw>

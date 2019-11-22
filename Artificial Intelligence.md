@@ -35,6 +35,7 @@
   ["Steps Toward Super Intelligence"](https://rodneybrooks.com/forai-steps-toward-super-intelligence-i-how-we-got-here) by Rodney Brooks  
   ["Intelligence Confuses The Intelligent"](https://blog.piekniewski.info/2017/04/13/ai-confuses-intelligent) by Filip Piekniewski  
   ["Intelligence is not Artificial"](https://www.toddhylton.net/2016/04/intelligence-is-not-artificial.html) by Todd Hylton  
+  ["A Critique of Pure Learning and What ANNs Can Learn from Animal Brains"](https://nature.com/articles/s41467-019-11786-6) by Anthony Zador  
   ["The Limitations of Deep Learning"](https://blog.keras.io/the-limitations-of-deep-learning.html) by Francois Chollet  
 
 ----
