@@ -105,7 +105,7 @@
 
 	[AlphaStar overview](https://deepmind.com/blog/article/AlphaStar-Grandmaster-level-in-StarCraft-II-using-multi-agent-reinforcement-learning)
 
-	["Grandmaster Level in StarCraft II using Multi-agent Reinforcement Learning"](#grandmaster-level-in-starcraft-ii-using-multi-agent-reinforcement-learning-vinyals-et-al) by Vinyals et al. `paper` `summary`
+	["Grandmaster Level in StarCraft II using Multi-agent Reinforcement Learning"](#grandmaster-level-in-starcraft-ii-using-multi-agent-reinforcement-learning-vinyals-et-al) by Vinyals et al. `paper` `summary` *(AlphaStar)*
 
 	[overview](https://slideslive.com/38916905/alphastar-mastering-the-game-of-starcraft-ii) by David Silver `video`  
 	[overview](https://youtu.be/mzjGNo9Tz4g?t=10m53s) by David Silver `video`  
@@ -147,7 +147,7 @@
 	[Libratus overview](https://thegradient.pub/libratus-poker) by Jiren Zhu  
 
 	[Libratus "Science" magazine](http://science.sciencemag.org/content/early/2017/12/15/science.aao1733.full) `paper`  
-	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://arxiv.org/abs/1705.02955) by Noam Brown and Tuomas Sandholm `paper` ([talk](https://vimeo.com/248533943#t=53s) `video`, [post](https://thegradient.pub/libratus-poker))  
+	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://arxiv.org/abs/1705.02955) by Noam Brown and Tuomas Sandholm `paper` *(Libratus)* ([talk](https://vimeo.com/248533943#t=53s) `video`, [post](https://thegradient.pub/libratus-poker))  
 	["Depth-Limited Solving for Imperfect-Information Games"](https://arxiv.org/abs/1805.08195) by Brown, Sandholm, Amos `paper` ([overview](https://youtube.com/watch?v=S4-g3dPT2gY) `video`)  
 	["Deep Counterfactual Regret Minimization"](#deep-counterfactual-regret-minimization-brown-lerer-gross-sandholm) by Brown, Lerer, Gross, Sandholm `paper` `summary`  
 
@@ -186,7 +186,7 @@
 	[DeepStack overview](https://www.depthfirstlearning.com/2018/DeepStack) by Cinjon Resnick  
 
 	[DeepStack "Science" magazine](http://science.sciencemag.org/content/early/2017/03/01/science.aam6960) `paper`  
-	["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](#deepstack-expert-level-artificial-intelligence-in-no-limit-poker-moravcik-et-al) by Moravcik et al. `paper` `summary`  
+	["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](#deepstack-expert-level-artificial-intelligence-in-no-limit-poker-moravcik-et-al) by Moravcik et al. `paper` `summary` *(DeepStack)*  
 
 	[DeepStack overview](https://vimeo.com/248532904) by Michael Bowling `video`  
 	[DeepStack overview](https://youtu.be/02xIkHowQOk?t=11m45s) by Michael Bowling `video`  
@@ -209,10 +209,10 @@
 	[AlphaGo Zero overview](http://www.depthfirstlearning.com/2018/AlphaGoZero)
 
 	["Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model"](#mastering-atari-go-chess-and-shogi-by-planning-with-a-learned-model-schrittwieser-et-al) by Schrittwieser et al. `paper` `summary` *(MuZero)*  
-	["Mastering the Game of Go without Human Knowledge"](#mastering-the-game-of-go-without-human-knowledge-silver-et-al) by Silver et al. `paper` `summary`  
-	["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper` `summary`  
+	["Mastering the Game of Go without Human Knowledge"](#mastering-the-game-of-go-without-human-knowledge-silver-et-al) by Silver et al. `paper` `summary` *(AlphaGo Zero)*  
+	["Mastering the Game of Go with Deep Neural Networks and Tree Search"](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper` `summary` *(AlphaGo)*  
 	["Sample-Based Learning and Search with Permanent and Transient Memories"](https://researchgate.net/publication/221346457_Sample-based_learning_and_search_with_permanent_and_transient_memories) by Silver et al. ([talk](http://videolectures.net/icml08_silver_sbl) `video`) *(Dyna-2)*  
-	["Combining Online and Offline Knowledge in UCT"](http://machinelearning.org/proceedings/icml2007/papers/387.pdf) by Gelly and Silver `paper` ([talk](https://youtube.com/watch?v=Bm7zah_LrmE) `video`)  
+	["Combining Online and Offline Knowledge in UCT"](https://researchgate.net/publication/29651027_Combining_Online_and_Offline_Knowledge_in_UCT) by Gelly and Silver `paper` ([talk](https://youtube.com/watch?v=Bm7zah_LrmE) `video`) *(MoGo)*  
 
 	[AlphaGo Zero overview](https://vimeo.com/252184928/#t=711) by David Silver `video`  
 	[AlphaGo Zero overview](https://youtu.be/DXNqYSNvnjA?t=16m41s) by Demis Hassabis `video`  
@@ -235,10 +235,10 @@
   - *Chess*  
 
 	["Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model"](#mastering-atari-go-chess-and-shogi-by-planning-with-a-learned-model-schrittwieser-et-al) by Schrittwieser et al. `paper` `summary` *(MuZero)*  
-	["Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm"](#mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm-silver-et-al) by Silver et al. `paper` `summary`  
-	["Giraffe: Using Deep Reinforcement Learning to Play Chess"](#giraffe-using-deep-reinforcement-learning-to-play-chess-lai) by Lai `paper` `summary`  
-	["Bootstrapping from Game Tree Search"](#bootstrapping-from-game-tree-search-veness-silver-uther-blair) by Veness et al. `paper` `summary`  
-	["KnightCap: A Chess Program that Learns by Combining TD(lambda) with Game-tree Search"](https://arxiv.org/abs/cs/9901002) by Baxter et al. `paper`  
+	["Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm"](#mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm-silver-et-al) by Silver et al. `paper` `summary` *(AlphaZero)*  
+	["Giraffe: Using Deep Reinforcement Learning to Play Chess"](#giraffe-using-deep-reinforcement-learning-to-play-chess-lai) by Lai `paper` `summary` *(Giraffe)*  
+	["Bootstrapping from Game Tree Search"](#bootstrapping-from-game-tree-search-veness-silver-uther-blair) by Veness et al. `paper` `summary` *(TreeStrap)*  
+	["KnightCap: A Chess Program that Learns by Combining TD(lambda) with Game-tree Search"](https://arxiv.org/abs/cs/9901002) by Baxter et al. `paper` *(KnightCap)*  
 
 	[AlphaZero overview](https://vimeo.com/252184928#t=1468) by David Silver `video`  
 	[AlphaZero overview](https://youtu.be/N8_gVrIPLQM?t=47m9s) by David Silver `video`  
@@ -255,7 +255,7 @@
 
 	[FTW agent overview](https://deepmind.com/blog/capture-the-flag-science)
 
-	["Human-level Performance in First-person Multiplayer Games with Population-based Deep Reinforcement Learning"](#human-level-performance-in-first-person-multiplayer-games-with-population-based-deep-reinforcement-learning-jaderberg-et-al) by Jaderberg et al. `paper` `summary`
+	["Human-level Performance in First-person Multiplayer Games with Population-based Deep Reinforcement Learning"](#human-level-performance-in-first-person-multiplayer-games-with-population-based-deep-reinforcement-learning-jaderberg-et-al) by Jaderberg et al. `paper` `summary` *(FTW)*
 
 	[overview](https://youtu.be/N8_gVrIPLQM?t=1h10m) by David Silver `video`
 
@@ -265,7 +265,7 @@
 ----
   - *Doom*  
 
-	["Learning to Act by Predicting the Future"](#learning-to-act-by-predicting-the-future-dosovitskiy-koltun) by Dosovitskiy and Koltun `paper` `summary`
+	["Learning to Act by Predicting the Future"](#learning-to-act-by-predicting-the-future-dosovitskiy-koltun) by Dosovitskiy and Koltun `paper` `summary` *(IntelAct)*
 
 	[IntelAct agent demo](https://youtube.com/watch?v=947bSUtuSQ0) `video`  
 	[ViZDoom competition](https://youtube.com/channel/UC8UghzsxS5uEFUEbvcAWwlQ/videos) games `video`  
@@ -276,7 +276,7 @@
 	["Human-level Video Game Play"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto
 
 	["Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model"](#mastering-atari-go-chess-and-shogi-by-planning-with-a-learned-model-schrittwieser-et-al) by Schrittwieser et al. `paper` `summary` *(MuZero)*  
-	["Playing Atari with Deep Reinforcement Learning"](#playing-atari-with-deep-reinforcement-learning-mnih-kavukcuoglu-silver-graves-antonoglou-wierstra-riedmiller) by Mnih et al. `paper` `summary`  
+	["Playing Atari with Deep Reinforcement Learning"](#playing-atari-with-deep-reinforcement-learning-mnih-kavukcuoglu-silver-graves-antonoglou-wierstra-riedmiller) by Mnih et al. `paper` `summary` *(DQN)*  
 
 	[demo](http://youtube.com/watch?v=EfGD2qveGdQ) `video`
 
@@ -295,19 +295,19 @@
 	[IBM Watson vs top players](https://archive.org/details/Jeopardy.2011.02.The.IBM.Challenge) match `video`
 
 ----
-  - *TD-Gammon*  
+  - *Backgammon*  
 
 	[TD-Gammon](http://scholarpedia.org/article/User:Gerald_Tesauro/Proposed/Td-gammon)
 
 	["TD-Gammon"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto
 
-	["Temporal Difference Learning and TD-Gammon"](https://cling.csd.uwo.ca/cs346a/extra/tdgammon.pdf) by Tesauro et al. `paper`  
-	["On-line Policy Improvement using Monte-Carlo Search"](https://papers.nips.cc/paper/1302-on-line-policy-improvement-using-monte-carlo-search.pdf) by Tesauro et al. `paper`  
+	["Temporal Difference Learning and TD-Gammon"](https://cling.csd.uwo.ca/cs346a/extra/tdgammon.pdf) by Tesauro et al. `paper` *(TD-Gammon)*  
+	["On-line Policy Improvement using Monte-Carlo Search"](https://papers.nips.cc/paper/1302-on-line-policy-improvement-using-monte-carlo-search.pdf) by Tesauro et al. `paper` *(TD-Gammon)*  
 
-	[overview](http://techtalks.tv/talks/on-td-learning-and-links-with-deeprl-in-atari-and-alphago/63031/) by Gerry Tesauro `video`  
-	[overview](http://videolectures.net/icml09_tesauro_itfyrlg/#t=784) by Gerry Tesauro `video`  
-	[overview](https://youtu.be/kZ_AUmFcZtk?t=42m29s) by David Silver `video`  
-	[overview](https://youtu.be/N8_gVrIPLQM?t=7m32s) by David Silver `video`  
+	[TD-Gammon overview](http://techtalks.tv/talks/on-td-learning-and-links-with-deeprl-in-atari-and-alphago/63031/) by Gerry Tesauro `video`  
+	[TD-Gammon overview](http://videolectures.net/icml09_tesauro_itfyrlg/#t=784) by Gerry Tesauro `video`  
+	[TD-Gammon overview](https://youtu.be/kZ_AUmFcZtk?t=42m29s) by David Silver `video`  
+	[TD-Gammon overview](https://youtu.be/N8_gVrIPLQM?t=7m32s) by David Silver `video`  
 
 
 
@@ -665,10 +665,14 @@
   - louse individual reward in order to get a high joint reward  
   - achieve global goals from local actions  
 
+  [overview](http://youtube.com/watch?v=p_n5fF8apiE) by Michael Bowling `video`  
   [overview](http://videolectures.net/DLRLsummerschool2018_bowling_multi_agent_RL) by Michael Bowling `video`  
+  [overview](http://youtube.com/watch?v=9qPhrEYIRF4) by Jakob Foerster `video`  
   [overview](http://youtube.com/watch?v=hGEz4Aumd1U) by Arsenii Ashukha `video`  
 
   [overview](http://mlanctot.info/files/papers/Lanctot_MARL_RLSS2019_Lille.pdf) by Marc Lanctot `slides`
+
+  [overview](http://youtube.com/watch?v=MEUdtwQev9A) of multi-agent systems by James Wright `video`
 
   [**recent interesting papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---multi-agent)
 
@@ -1861,6 +1865,8 @@ interesting recent papers:
 
 >	"We tested our model-based learning algorithm against a comparable model-free learning algorithm. When evaluated on Ms. Pacman, our model-free algorithm achieved identical results to R2D2, but learned significantly slower than MuZero and converged to a much lower final score. We conjecture that the search-based policy improvement step of MuZero provides a stronger learning signal than the high bias, high variance targets used by Q-learning."
 
+  - `notes` <https://www.shortscience.org/paper?bibtexKey=journals/corr/1911.08265>
+
 
 #### ["Mastering the Game of Go without Human Knowledge"](https://deepmind.com/documents/119/agz_unformatted_nature.pdf) Silver et al.
   `AlphaGo Zero`
@@ -1966,9 +1972,14 @@ interesting recent papers:
 
 
 #### ["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](http://arxiv.org/abs/1701.01724) Moravcik et al.
+  `DeepStack`
 >	"Artificial intelligence has seen a number of breakthroughs in recent years, with games often serving as significant milestones. A common feature of games with these successes is that they involve information symmetry among the players, where all players have identical information. This property of perfect information, though, is far more common in games than in real-world problems. Poker is the quintessential game of imperfect information, and it has been a longstanding challenge problem in artificial intelligence. In this paper we introduce DeepStack, a new algorithm for imperfect information settings such as poker. It combines recursive reasoning to handle information asymmetry, decomposition to focus computation on the relevant decision, and a form of intuition about arbitrary poker situations that is automatically learned from selfplay games using deep learning. In a study involving dozens of participants and 44,000 hands of poker, DeepStack becomes the first computer program to beat professional poker players in heads-up no-limit Texas hold’em. Furthermore, we show this approach dramatically reduces worst-case exploitability compared to the abstraction paradigm that has been favored for over a decade."
 
->	"DeepStack is the first computer program to defeat professional poker players at heads-up nolimit Texas Hold’em, an imperfect information game with 10160 decision points. Notably it achieves this goal with almost no domain knowledge or training from expert human games. The implications go beyond just being a significant milestone for artificial intelligence. DeepStack is a paradigmatic shift in approximating solutions to large, sequential imperfect information games. Abstraction and offline computation of complete strategies has been the dominant approach for almost 20 years. DeepStack allows computation to be focused on specific situations that arise when making decisions and the use of automatically trained value functions. These are two of the core principles that have powered successes in perfect information games, albeit conceptually simpler to implement in those settings. As a result, for the first time the gap between the largest perfect and imperfect information games to have been mastered is mostly closed. As “real life consists of bluffing... deception... asking yourself what is the other man going to think”, DeepStack also has implications for seeing powerful AI applied more in settings that do not fit the perfect information assumption. The old paradigm for handling imperfect information has shown promise in applications like defending strategic resources and robust decision making as needed for medical treatment recommendations. The new paradigm will hopefully open up many more possibilities."
+>	"DeepStack is the first computer program to defeat professional poker players at heads-up nolimit Texas Hold’em, an imperfect information game with 10^160 decision points. Notably it achieves this goal with almost no domain knowledge or training from expert human games. The implications go beyond just being a significant milestone for artificial intelligence. DeepStack is a paradigmatic shift in approximating solutions to large, sequential imperfect information games. Abstraction and offline computation of complete strategies has been the dominant approach for almost 20 years. DeepStack allows computation to be focused on specific situations that arise when making decisions and the use of automatically trained value functions. These are two of the core principles that have powered successes in perfect information games, albeit conceptually simpler to implement in those settings. As a result, for the first time the gap between the largest perfect and imperfect information games to have been mastered is mostly closed. As “real life consists of bluffing, deception, asking yourself what is the other man going to think”, DeepStack also has implications for seeing powerful AI applied more in settings that do not fit the perfect information assumption. The old paradigm for handling imperfect information has shown promise in applications like defending strategic resources and robust decision making as needed for medical treatment recommendations. The new paradigm will hopefully open up many more possibilities."
+
+>	"Imperfect information games require more complex reasoning than similarly sized perfect information games. The correct decision at a particular moment depends upon the probability distribution over private information that the opponent holds, which is revealed through their past actions. However, how our opponent’s actions reveal that information depends upon their knowledge of our private information and how our actions reveal it. This kind of recursive reasoning is why one cannot easily reason about game situations in isolation, which is at the heart of heuristic search methods for perfect information games. Competitive AI approaches in imperfect information games typically reason about the entire game and produce a complete strategy prior to play. Counterfactual regret minimization is one such technique that uses self-play to do recursive reasoning through adapting its strategy against itself over successive iterations. If the game is too large to be solved directly, the common response is to solve a smaller, abstracted game. To play the original game, one translates situations and actions from the original game to the abstract game."
+
+>	"DeepStack takes a fundamentally different approach. It continues to use the recursive reasoning of CFR to handle information asymmetry. However, it does not compute and store a complete strategy prior to play and so has no need for explicit abstraction. Instead it considers each particular situation as it arises during play, but not in isolation. It avoids reasoning about the entire remainder of the game by substituting the computation beyond a certain depth with a fast approximate estimate. This estimate can be thought of as DeepStack’s intuition: a gut feeling of the value of holding any possible private cards in any possible poker situation. Finally, DeepStack’s intuition, much like human intuition, needs to be trained. We train it with deep learning using examples generated from random poker situations. We show that DeepStack is theoretically sound, produces strategies substantially more difficult to exploit than abstraction-based techniques, and defeats professional poker players at HUNL with statistical significance."
 
 ----
 >	"In the past, perfect information games (chess, checkers, go) have been easier algorithmically than imperfect information games like poker. Powerful techniques like Alpha-Beta search, heuristic functions, depth-limited lookahead & Monte Carlo Tree Search work with perfect information games. They allow an AI to ignore the past and focus its computation on the tiny, immediate subgame most relevant for choosing actions. Until now, these techniques didn't really work in imperfect info games like poker, due to uncertainty about what each player knows. There is no single state to search from, but a set of states for each player. Past actions reveal info about what cards they hold. In imperfect info games like poker, local search hasn’t performed well. Had to solve the whole game at once, not as small fragments. But poker games are huge, and except for smallest versions, can't be solved exactly. Dominant technique was to solve a simplified game. This was called Abstraction-Solving-Translation. Simplify a game, solve it, use the simplified strategy in the real game. That simplification introduces mistakes. In some games, this still worked well enough to beat pros. AST didn't work well in No-Limit poker. Humans exploited simplified betting, and in huge pots, fine details of cards matter. This is the DeepStack breakthrough: it reintroduces powerful local search techniques to the imperfect info setting. No abstraction! It only considers a small local subgame to pick actions, given the "public state" and summary info of earlier actions in the hand. Early in the game, Deep Learning supplies a heuristic function to avoid searching to the end of the game. On the turn & river, it solves from the current decision until the end of the game and re-solves after every opponent action. On the preflop & flop, it solves to the end of the round then consults a deep neural net for value estimate of playing the turn/river. This NN is trained from randomly-generated hands (no human data needed) and must return value of every hand for each player. Deep Stack doesn't abstract cards or have to translate opponents bets. It always gets these details exactly right. This means there are no easy exploits, & we developed a new exploitability measurement program, Local Best Response, to show this. Also lets DeepStack play with any stacks/blinds. Can play freezeouts, cash games, etc. Earlier programs were specific to 1 stack size!"
@@ -2890,6 +2901,7 @@ interesting recent papers:
   - `video` <https://facebook.com/icml.imls/videos/2366831430268790?t=1814> (Silver)
   - `video` <https://youtu.be/PRQ8-FwDPRE?t=16m> (Holland)
   - `video` <https://youtu.be/RwLTrQUyDvA?t=14m58s> (Diaz Rodriguez)
+  - `notes` <https://www.shortscience.org/paper?bibtexKey=journals/corr/OhSL17>
   - `notes` <https://medium.com/arxiv-bytes/summary-value-prediction-networks-vpn-474c0b080b2a>
 
 

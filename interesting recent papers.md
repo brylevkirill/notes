@@ -59,6 +59,7 @@ interesting older papers:
   - `post` <https://medium.com/bethgelab/neural-networks-seem-to-follow-a-puzzlingly-simple-strategy-to-classify-images-f4229317261f>
   - `post` <https://blog.evjang.com/2019/02/bagnet.html>
   - `post` <https://habr.com/company/ods/blog/453788> `in russian`
+  - `notes` <https://www.shortscience.org/paper?bibtexKey=journals/corr/abs-1904-00760>
 
 #### ["Excessive Invariance Causes Adversarial Vulnerability"](https://arxiv.org/abs/1811.00401) Jacobsen, Behrmann, Zemel, Bethge
   `generalization` `ICLR 2019`
@@ -241,6 +242,11 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <http://techtalks.tv/talks/a-variational-analysis-of-stochastic-gradient-algorithms/62505/> (Mandt)
 
 ----
+#### ["Can You Trust Your Model's Uncertainty? Evaluating Predictive Uncertainty Under Dataset Shift"] Ovadia et al.
+  `uncertainty estimation`
+>	"Quantifying uncertainty is especially critical in real-world settings, which often involve input distributions that are shifted from the training distribution due to a variety of factors including sample bias and non-stationarity. In such settings, well calibrated uncertainty estimates convey information about when a model's output should (or should not) be trusted. Many probabilistic deep learning methods, including Bayesian-and non-Bayesian methods, have been proposed in the literature for quantifying predictive uncertainty, but to our knowledge there has not previously been a rigorous large-scale empirical comparison of these methods under dataset shift. We present a large-scale benchmark of existing state-of-the-art methods on classification problems and investigate the effect of dataset shift on accuracy and calibration. We find that traditional post-hoc calibration does indeed fall short, as do several other previous methods. However, some methods that marginalize over models give surprisingly strong results across a broad spectrum of tasks."  
+  - `notes` <https://www.shortscience.org/paper?bibtexKey=journals/corr/abs-1906-02530>
+
 #### ["What Uncertainties Do We Need in Bayesian Deep Learning for Computer Vision?"](https://arxiv.org/abs/1703.04977) Kendall, Gal
   `uncertainty estimation`
 >	"We presented a novel Bayesian deep learning framework to learn a mapping to aleatoric uncertainty from the input data, which is composed on top of epistemic uncertainty models. We derived our framework for both regression and classification applications.  
@@ -1512,11 +1518,11 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 ----
 #### ["Generating Diverse High-Fidelity Images with VQ-VAE-2"](https://arxiv.org/abs/1906.00446) Razavi, Oord, Vinyals
   `VQ-VAE`
-  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generating-diverse-high-fidelity-images-with-vq-vae-2-razavi-oord-vinyals>
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#generating-diverse-high-fidelity-images-with-vq-vae-2-razavi-oord-vinyals>
 
 #### ["Neural Discrete Representation Learning"](https://arxiv.org/abs/1711.00937) Oord, Vinyals, Kavukcuoglu
   `VQ-VAE`
-  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#neural-discrete-representation-learning-oord-vinyals-kavukcuoglu>
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#neural-discrete-representation-learning-oord-vinyals-kavukcuoglu>
 
 #### ["Variational Lossy Autoencoder"](http://arxiv.org/abs/1611.02731) Chen, Kingma, Salimans, Duan, Dhariwal, Schulman, Sutskever, Abbeel
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#variational-lossy-autoencoder-chen-kingma-salimans-duan-dhariwal-schulman-sutskever-abbeel>
@@ -2287,6 +2293,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Blazing-the-trails-before-beating-the-path-Sample-efficient-Monte-Carlo-planning> (Grill)
 
 ----
+#### ["Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model"](https://arxiv.org/abs/1911.08265) Schrittwieser et al.
+  `MuZero` `learning from planning` `learning abstract environment model` `expert iteration`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#mastering-atari-go-chess-and-shogi-by-planning-with-a-learned-model-schrittwieser-et-al>
+
 #### ["Understanding and Generalizing AlphaGo Zero"](https://openreview.net/forum?id=rkxtl3C5YX) Addanki et al.
   `learning from planning` `using available environment model` `expert iteration`
 >	"We provide a formal framework to study AGZ. We argue that the self-play in AGZ corresponds to learning a Nash equilibrium for the two-player game; and the supervised learning with MCTS is attempting to learn the policy corresponding to the Nash equilibrium, by establishing a novel bound on the difference between the expected return achieved by two policies in terms of the expected KL divergence (cross-entropy) of their induced distributions."  
@@ -2315,15 +2325,15 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#thinking-fast-and-slow-with-deep-learning-and-tree-search-anthony-tian-barber>
 
 #### ["Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm"](https://arxiv.org/abs/1712.01815) Silver et al.
-  `learning from planning` `using available environment model` `expert iteration`
+  `AlphaZero` `learning from planning` `using available environment model` `expert iteration`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm-silver-et-al>
 
 #### ["Mastering the Game of Go without Human Knowledge"](https://deepmind.com/documents/119/agz_unformatted_nature.pdf) Silver et al.
-  `learning from planning` `using available environment model` `expert iteration`
+  `AlphaGo Zero` `learning from planning` `using available environment model` `expert iteration`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#mastering-the-game-of-go-without-human-knowledge-silver-et-al>
 
 #### ["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](http://arxiv.org/abs/1701.01724) Moravcik et al.
-  `learning from planning` `using available environment model`
+  `DeepStack` `learning from planning` `using available environment model`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#deepstack-expert-level-artificial-intelligence-in-no-limit-poker-moravcik-et-al>
 
 #### ["Learning Generalized Reactive Policies using Deep Neural Networks"](https://arxiv.org/abs/1708.07280) Groshev, Tamar, Srivastava, Abbeel
@@ -3358,6 +3368,11 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 ----
 #### ["Bayesian Action Decoder for Deep Multi-Agent Reinforcement Learning"](https://arxiv.org/abs/1811.01458) Foerster et al.
+  `BAD`
+>	"When observing the actions of others, humans make inferences about why they acted as they did, and what this implies about the world; humans also use the fact that their actions will be interpreted in this manner, allowing them to act informatively and thereby communicate efficiently with others."  
+>	"Bayesian action decoder uses an approximate Bayesian update to obtain a public belief that conditions on the actions taken by all agents in the environment. BAD introduces a new Markov decision process, the public belief MDP, in which the action space consists of all deterministic partial policies, and exploits the fact that an agent acting only on this public belief state can still learn to use its private information if the action space is augmented to be over all partial policies mapping private information into environment actions. The Bayesian update is closely related to the theory of mind reasoning that humans carry out when observing others’ actions."  
+>	"We first validate BAD on a proof-of-principle two-step matrix game, where it outperforms policy gradient methods; we then evaluate BAD on the challenging, cooperative partial-information card game Hanabi, where, in the two-player setting, it surpasses all previously published learning and hand-coded approaches, establishing a new state of the art."  
+  - `video` <https://youtu.be/9qPhrEYIRF4?t=20m41s> (Foerster)
 
 ----
 #### ["QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning"](https://arxiv.org/abs/1803.11485) Rashid, Samvelyan, Witt, Farquhar, Foerster, Whiteson
@@ -3399,6 +3414,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Learning with Opponent-Learning Awareness"](https://arxiv.org/abs/1709.04326) Foerster, Chen, Al-Shedivat, Whiteson, Abbeel, Mordatch
 >	"LOLA modifies the learning objective by predicting and differentiating through opponent learning steps. This is intuitively appealing and experimentally successful, encouraging cooperation in settings like the Iterated Prisoner’s Dilemma where more ‘stable’ algorithms like SGA defect. However, LOLA has no guarantees of converging or even preserving fixed points of the game."  
   - `post` <https://blog.openai.com/learning-to-model-other-minds/> (demo)
+  - `video` <https://youtube.com/watch?v=tB5pkVNF5-0> (Foerster)
   - `video` <https://facebook.com/icml.imls/videos/429607650887089?t=900> (Foerster)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1709.04326>
   - `code` <http://github.com/alshedivat/lola>
@@ -3406,9 +3422,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 ----
 #### ["Learning to Communicate with Deep Multi-Agent Reinforcement Learning"](http://arxiv.org/abs/1605.06676) Foerster, Assael, de Freitas, Whiteson
-  - `video` <https://youtu.be/SAcHyzMdbXc?t=19m> (de Freitas)
+  - `video` <https://youtu.be/9qPhrEYIRF4?t=13m52s> (Foerster)
   - `video` <https://youtube.com/watch?v=xL-GKD49FXs> (Foerster)
   - `video` <http://videolectures.net/deeplearning2016_foerster_learning_communicate/> (Foerster)
+  - `video` <https://youtu.be/SAcHyzMdbXc?t=19m> (de Freitas)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.07133>
   - `code` <https://github.com/iassael/learning-to-communicate>
 

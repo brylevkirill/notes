@@ -358,11 +358,14 @@
 
   [course](https://sites.google.com/view/berkeley-cs294-158-sp19) from UC Berkeley `video`
 
-  [tutorial](https://facebook.com/nipsfoundation/videos/795861577420073) by Alex Graves and Marc Aurelio Ranzato `video`
+  [tutorial](https://youtube.com/watch?v=DSYzHPW26Ig) by Alex Graves `video`  
+  [tutorial](https://facebook.com/nipsfoundation/videos/795861577420073) by Alex Graves and Marc Aurelio Ranzato `video`  
 
   ["Goals and Principles of Representation Learning"](https://youtu.be/2vxZbZC21Gg?t=7m3s) by Ferenc Huszar `video`
 
 ----
+
+  [overview](https://deepmind.com/blog/article/unsupervised-learning) by Alex Graves
 
   ["Unsupervised learning, one notion or many?"](http://www.offconvex.org/2017/06/27/unsupervised1/) by Sanjeev Arora and Andrej Risteski
 
@@ -1007,6 +1010,7 @@
   - `video` <https://facebook.com/iclr.cc/videos/1710657292296663?t=1105> (Recht)
   - `video` <https://facebook.com/iclr.cc/videos/1710657292296663?t=3220> (Zhang)
   - `video` <https://youtu.be/mEYerIMYb5Q?t=18m2s> (Goncalves)
+  - `video` <https://youtu.be/DSYzHPW26Ig?t=10m44s> (Graves)
   - `post` <https://danieltakeshi.github.io/2017/05/19/understanding-deep-learning-requires-rethinking-generalization-my-thoughts-and-notes>
   - `notes` <https://theneuralperspective.com/2017/01/24/understanding-deep-learning-requires-rethinking-generalization/>
   - `notes` <https://blog.acolyer.org/2017/05/11/understanding-deep-learning-requires-re-thinking-generalization/>
@@ -2072,6 +2076,7 @@ Yoshua Bengio:
 >	- non-autoregressive image decoder  
 >	- discrete latents w/ straight through estimator"  
   - `video` <https://youtu.be/QoCyQBzi7us?t=57m37s> (Oord)
+  - `video` <https://youtu.be/DSYzHPW26Ig?t=51m46s> (Graves)
   - `post` <https://machinethoughts.wordpress.com/2019/06/25/the-inevitability-of-vector-quantization-in-deep-architectures>
   - `code` <https://github.com/deepmind/sonnet/blob/master/sonnet/examples/vqvae_example.ipynb>
 
