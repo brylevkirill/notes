@@ -186,8 +186,6 @@
 
 [**interesting papers - bayesian inference and learning - applications**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#interesting-papers---applications)
 
-
-
 ----
 #### ["Human-level Concept Learning Through Probabilistic Program Induction"](http://web.mit.edu/cocosci/Papers/Science-2015-Lake-1332-8.pdf) Lake, Salakhutdinov, Tenenbaum
 >	"People learning new concepts can often generalize successfully from just a single example, yet machine learning algorithms typically require tens or hundreds of examples to perform with similar accuracy. People can also use learned concepts in richer ways than conventional algorithms - for action, imagination, and explanation. We present a computational model that captures these human learning abilities for a large class of simple visual concepts: handwritten characters from the world’s alphabets. The model represents concepts as simple programs that best explain observed examples under a Bayesian criterion. On a challenging one-shot classification task, the model achieves human-level performance while outperforming recent deep learning approaches. We also present several “visual Turing tests” probing the model’s creative generalization abilities, which in many cases are indistinguishable from human behavior."

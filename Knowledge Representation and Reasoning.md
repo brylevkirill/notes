@@ -1332,7 +1332,7 @@ noise, inferring missing information, and determining which candidate facts shou
 
 [papers](https://github.com/thunlp/KRLPapers)
 
-
+----
 #### ["An Overview of Embedding Models of Entities and Relationships for Knowledge Base Completion"](https://arxiv.org/abs/1703.08098) Nguyen
 >	"Knowledge bases of real-world facts about entities and their relationships are useful resources for a variety of natural language processing tasks. However, because knowledge bases are typically incomplete, it is useful to be able to perform knowledge base completion, i.e., predict whether a relationship not in the knowledge base is likely to be true. This article presents an overview of embedding models of entities and relationships for knowledge base completion, with up-to-date experimental results on two standard evaluation tasks of link prediction (i.e. entity prediction) and triple classification."
 
@@ -1486,7 +1486,7 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)  
 
-
+----
 #### ["Language Models as Knowledge Bases?"](https://arxiv.org/abs/1909.01066) Petroni, Rocktaschel, Lewis, Bakhtin, Wu, Miller, Riedel
 >	"Recent progress in pretraining language models on large textual corpora led to a surge of improvements for downstream NLP tasks. Whilst learning linguistic knowledge, these models may also be storing relational knowledge present in the training data, and may be able to answer queries structured as "fill-in-the-blank" cloze statements. Language models have many advantages over structured knowledge bases: they require no schema engineering, allow practitioners to query about an open class of relations, are easy to extend to more data, and require no human supervision to train. We present an in-depth analysis of the relational knowledge already present (without fine-tuning) in a wide range of state-of-the-art pretrained language models. We find that (i) without fine-tuning, BERT contains relational knowledge competitive with traditional NLP methods that have some access to oracle knowledge, (ii) BERT also does remarkably well on open-domain question answering against a supervised baseline, and (iii) certain types of factual knowledge are learned much more readily than others by standard language model pretraining approaches. The surprisingly strong ability of these models to recall factual knowledge without any fine-tuning demonstrates their potential as unsupervised open-domain QA systems."
 
@@ -1630,7 +1630,7 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)
 
-
+----
 #### ["Neural Machine Reading Comprehension: Methods and Trends"](https://arxiv.org/abs/1907.01118) Liu et al.
 >	"Machine Reading Comprehension, which requires the machine to answer questions based on the given context, has gained increasingly wide attention with the appearance of deep learning over the past few years. Although the research of MRC based on deep learning is flourishing, there is a lack of a comprehensive survey article to summarize the proposed approaches and the recent trends. As a result, we conduct a thorough overview of recent research efforts on this promising field. To be concrete, we compare MRC tasks in different dimensions and introduce the general architecture. We further provide a taxonomy of state-of-the-art approaches utilized in prevalent models. Finally, we discuss some new trends and conclude by describing some open issues in the field."
 
@@ -1789,7 +1789,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reasoning)  
 
-
+----
 #### ["End-to-end Differentiable Proving"](https://arxiv.org/abs/1705.11040) Rocktaschel, Riedel
   `neural reasoning over knowledge base`
 >	"We introduce neural networks for end-to-end differentiable theorem proving that operate on dense vector representations of symbols. These neural networks are constructed recursively by taking inspiration from the backward chaining algorithm as used in Prolog. Specifically, we replace symbolic unification with a differentiable computation on vector representations of symbols using a radial basis function kernel, thereby combining symbolic reasoning with learning subsymbolic vector representations. By using gradient descent, the resulting neural network can be trained to infer facts from a given incomplete knowledge base. It learns to (i) place representations of similar symbols in close proximity in a vector space, (ii) make use of such similarities to prove facts, (iii) induce logical rules, and (iv) use provided and induced logical rules for complex multi-hop reasoning. We demonstrate that this architecture outperforms ComplEx, a state-of-the-art neural link prediction model, on four benchmark knowledge bases while at the same time inducing interpretable function-free first-order logic rules."
@@ -1914,7 +1914,7 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 [**selected papers**](https://yadi.sk/d/5WLsH_nd3ZUJU4)  
 [papers](http://nlp.cs.rpi.edu/kbp/2017/elreading.html) on entity discovery and linking  
 
-
+----
 #### ["Alexandria: Unsupervised High-Precision Knowledge Base Construction using a Probabilistic Program"](https://microsoft.com/research/publication/alexandria-unsupervised-high-precision-knowledge-base-construction-using-a-probabilistic-program) Winn et al.
   `knowledge base population` `Microsoft Satori`
 >	"Creating a knowledge base that is accurate, up-to-date and complete remains a significant challenge despite substantial efforts in automated knowledge base construction.  In this paper, we present Alexandria -- a system for unsupervised, high-precision knowledge base construction. Alexandria uses a probabilistic program to define a process of converting knowledge base facts into unstructured text.  Using probabilistic inference, we can invert this program and so retrieve facts, schemas and entities from web text. The use of a probabilistic program allows uncertainty in the text to be propagated through to the retrieved facts, which increases accuracy and helps merge facts from multiple sources. Because Alexandria does not require labelled training data, knowledge bases can be constructed with the minimum of manual input. We demonstrate this by constructing a high precision (typically 97\%+) knowledge base for people from a single seed fact."

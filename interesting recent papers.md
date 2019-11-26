@@ -6,6 +6,7 @@ interesting recent papers:
   * [**meta-learning**](#meta-learning)
   * [**few-shot learning**](#few-shot-learning)
   * [**unsupervised learning**](#unsupervised-learning)
+  * [**self-supervised learning**](#self-supervised learning)
   * [**generative models**](#generative-models)
     - [**generative adversarial networks**](#generative-models---generative-adversarial-networks)
     - [**variational autoencoders**](#generative-models---variational-autoencoders)
@@ -924,41 +925,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 ---
 ### unsupervised learning
 
-----
-#### ["Representation Learning with Contrastive Predictive Coding"](https://arxiv.org/abs/1807.03748) Oord, Li, Vinyals
-  `CPC` `representation learning` `self-supervised learning`
->	"A universal unsupervised learning approach to extract useful representations from high-dimensional data. The key insight of our model is to learn such representations by predicting the future in latent space by using powerful autoregressive models. We use a probabilistic contrastive loss which induces the latent space to capture information that is maximally useful to predict future samples. It also makes the model tractable by using negative sampling. While most prior work has focused on evaluating representations for a particular modality, we demonstrate that our approach is able to learn useful representations achieving strong performance on four distinct domains: speech, images, text and reinforcement learning in 3D environments."  
-  - `post` <https://medium.com/syncedreview/new-deepmind-unsupervised-image-model-challenges-alexnet-d658ef92ab1e>
-  - `video` <https://youtu.be/QoCyQBzi7us?t=1h9m51s> (Oord)
-  - `video` <https://youtu.be/AC4l_MY2Dhc?t=1h6m33s> (Srinivas)
-  - `post` <https://machinethoughts.wordpress.com/2018/08/15/predictive-coding-and-mutual-information>
-  - `paper` ["Data-Efficient Image Recognition with Contrastive Predictive Coding"](https://arxiv.org/abs/1905.09272) by Henaff et al. ([talk](https://facebook.com/icml.imls/videos/378993762742156?t=3335) by Henaff `video`)
+[**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---unsupervised-learning)
 
-#### ["Revisiting Self-Supervised Visual Representation Learning"](https://arxiv.org/abs/1901.09005) Kolesnikov, Zhai, Beyer
-  `representation learning` `self-supervised learning`
->	"We revisit numerous previously proposed self-supervised models, conduct a thorough large-scale study and, as a result, uncover multiple crucial insights."  
->	"We drastically boost the performance of previously proposed techniques and outperform previously published state-of-the-art results by a large margin."  
->	"Specifically, we provide a re-implementation of the following self-supervised representation learning techniques:  
->	- Unsupervised Representation Learning by Predicting Image Rotations  
->	- Unsupervised Visual Representation Learning by Context Prediction  
->	- Unsupervised Learning of Visual Representations by Solving Jigsaw Puzzles  
->	- Discriminative Unsupervised Feature Learning with Exemplar Convolutional Neural Networks"  
-  - `video` <https://facebook.com/icml.imls/videos/378993762742156?t=2566> (Zhai)
-  - `notes` <https://blog.lunit.io/2019/03/14/revisiting-self-supervised-visual-representation-learning>
-  - `code` <https://github.com/google/revisiting-self-supervised>
-
-#### ["BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"](https://arxiv.org/abs/1810.04805) Devlin, Chang, Lee, Toutanova
-  `BERT` `representation learning` `self-supervised learning`
-  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-devlin-chang-lee-toutanova>
-
-#### ["Poincare Embeddings for Learning Hierarchical Representations"](https://arxiv.org/abs/1705.08039) Nickel, Kiela
-  `representation learning` `self-supervised learning`
-  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#poincare-embeddings-for-learning-hierarchical-representations-nickel-kiela>
-
-#### ["Unsupervised Learning by Predicting Noise"](https://arxiv.org/abs/1704.05310) Bojanowski, Joulin
-  `representation learning`
->	"The authors give a nice analogy: it's a SOM, but instead of mapping a latent vector to each input vector, the convolutional filters are learned in order to map each input vector to a fixed latent vector. In more words: each image is assigned a unique random latent vector as the label, and the mapping from image to label is taught in a supervised manner. Every few epochs, the label assignments are adjusted (but only within batches due to computational cost), so that an image might be assigned a different latent vector label which it is already close to in 'feature space'."
-  - `post` <http://inference.vc/unsupervised-learning-by-predicting-noise-an-information-maximization-view-2/>
+[**interesting recent papers - self-supervised learning**](#self-supervised-learning)
+[**interesting recent papers - generative models**](#generative-models)
 
 ----
 #### ["Neural Scene Representation and Rendering"](https://deepmind.com/documents/211/Neural_Scene_Representation_and_Rendering_preprint.pdf) Eslami et al.
@@ -1001,6 +971,13 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - <https://sites.google.com/view/r-nem-gifs>
   - `video` <https://youtu.be/IjkNnu8CCnY?t=30m55s> (Chang)
   - `paper` ["Neural Expectation Maximization"](https://arxiv.org/abs/1708.03498) by Greff, Steenkiste, Schmidhuber
+
+#### ["Large Scale Adversarial Representation Learning"](https://arxiv.org/abs/1907.02544) Donahue, Simonyan
+  `BigBiGAN` `concept learning` `GAN`
+>	"Despite early successes in using GANs for unsupervised representation learning, they have since been superseded by approaches based on self-supervision. In this work we show that progress in image generation quality translates to substantially improved representation learning performance. Our approach builds upon the state-of-the-art BigGAN model, extending it to representation learning by adding an encoder and modifying the discriminator. We extensively evaluate the representation learning and generation capabilities of these BigBiGAN models, demonstrating that these generation-based models achieve the state of the art in unsupervised representation learning on ImageNet, as well as in unconditional image generation."  
+>	"BigBiGAN = BigGAN + BiGAN"  
+  - `video` <https://youtu.be/DSYzHPW26Ig?t=1h39m52s> (Graves)
+  - `post` <https://stephanheijl.com/notes_on_large_scale_adversarial_learning.html>
 
 #### ["SCAN: Learning Abstract Hierarchical Compositional Visual Concepts"](https://arxiv.org/abs/1707.03389) Higgins, Sonnerat, Matthey, Pal, Burgess, Botvinick, Hassabis, Lerchner
   `concept learning` `β-VAE` `VAE`
@@ -1084,6 +1061,38 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	- Because the set of objects may be unbounded, we need to learn to represent policies themselves, and the definition of an object is bound to the policies associated with it (for using it and changing its attributes)"  
   - `video` <https://youtu.be/Yr1mOzC93xs?t=23m13s> (Bengio)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/BengioTPPB17>
+
+----
+#### ["Poincare Embeddings for Learning Hierarchical Representations"](https://arxiv.org/abs/1705.08039) Nickel, Kiela
+  `representation learning`
+  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#poincare-embeddings-for-learning-hierarchical-representations-nickel-kiela>
+
+#### ["Unsupervised Learning by Predicting Noise"](https://arxiv.org/abs/1704.05310) Bojanowski, Joulin
+  `representation learning`
+>	"The authors give a nice analogy: it's a SOM, but instead of mapping a latent vector to each input vector, the convolutional filters are learned in order to map each input vector to a fixed latent vector. In more words: each image is assigned a unique random latent vector as the label, and the mapping from image to label is taught in a supervised manner. Every few epochs, the label assignments are adjusted (but only within batches due to computational cost), so that an image might be assigned a different latent vector label which it is already close to in 'feature space'."
+  - `post` <http://inference.vc/unsupervised-learning-by-predicting-noise-an-information-maximization-view-2/>
+
+
+
+---
+### self-supervised learning
+
+[**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---self-supervised-learning)
+
+[**interesting recent papers - unsupervised learning**](#unsupervised-learning)
+
+----
+#### ["Revisiting Self-Supervised Visual Representation Learning"](https://arxiv.org/abs/1901.09005) Kolesnikov, Zhai, Beyer
+  `representation learning` `self-supervised learning`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#revisiting-self-supervised-visual-representation-learning-kolesnikov-zhai-beyer>
+
+#### ["BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"](https://arxiv.org/abs/1810.04805) Devlin, Chang, Lee, Toutanova
+  `BERT` `representation learning` `self-supervised learning`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-devlin-chang-lee-toutanova>
+
+#### ["Representation Learning with Contrastive Predictive Coding"](https://arxiv.org/abs/1807.03748) Oord, Li, Vinyals
+  `CPC` `representation learning` `self-supervised learning`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#representation-learning-with-contrastive-predictive-coding-oord-li-vinyals>
 
 
 
@@ -1425,6 +1434,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Training Language GANs from Scratch"](https://arxiv.org/abs/1905.09922) dAutume, Rosca, Rae, Mohamed
   `GAN applications` `text generation`
 >	"GANs enjoy great success at image generation have proven difficult to train in the domain of natural language. Challenges with gradient estimation, optimization instability, and mode collapse have lead practitioners to resort to maximum likelihood pre-training, followed by small amounts of adversarial fine-tuning. The benefits of GAN fine-tuning for language generation are unclear, as the resulting models produce comparable or worse samples than traditional language models. We show it is in fact possible to train a language GAN from scratch - without maximum likelihood pre-training. We combine existing techniques such as large batch sizes, dense rewards and discriminator regularization to stabilize and improve language GANs."  
+
+#### ["Large Scale Adversarial Representation Learning"](https://arxiv.org/abs/1907.02544) Donahue, Simonyan
+  `BigBiGAN` `GAN applications` `image generation`
+   - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#large-scale-adversarial-representation-learning-donahue-simonyan>
 
 #### ["A Style-Based Generator Architecture for Generative Adversarial Networks"](https://arxiv.org/abs/1812.04948) Karras, Laine, Aila
   `StyleGAN` `GAN applications` `image generation`
@@ -2539,14 +2552,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"An important challenge is planning under uncertainty. RL initially provides correlated data from a limited part of state-space. When planning over this model, we should not extrapolate too much, nor trust our model to early with limited data. Note that ‘uncertainty’ (due to limited data) is fundamentally different from the ‘stochasticity’ (true probabilistic nature of the domain) discussed in this paper."  
   - `code` <http://github.com/tmoer/multimodal_varinf>
 
-#### ["Recurrent Environment Simulators"](https://arxiv.org/abs/1704.02254) Chiappa, Racaniere, Wierstra, Mohamed
-  `learning to simulate` `learning environment model` `video prediction`
->	"We improve on previous environment simulators from high-dimensional pixel observations by introducing recurrent neural networks that are able to make temporally and spatially coherent predictions for hundreds of time-steps into the future."  
->	"We address the issue of computationally inefficiency with a model that does not need to generate a high-dimensional image at each time-step."  
->	"It is a deterministic model designed for deterministic environments. Clearly most real world environments involve noisy state transitions."  
-  - `video` <https://sites.google.com/site/resvideos1729> (demo)
-  - `code` <https://github.com/KokoMind/Recurrent-Environment-Simulators>
-
 #### ["Prediction and Control with Temporal Segment Models"](https://arxiv.org/abs/1703.04070) Mishra, Abbeel, Mordatch
   `learning to simulate` `learning environment model`
 >	"We learn the distribution over future state trajectories conditioned on past state, past action, and planned future action trajectories, as well as a latent prior over action trajectories. Our approach is based on convolutional autoregressive models and variational autoencoders. It makes stable and accurate predictions over long horizons for complex, stochastic systems, effectively expressing uncertainty and modeling the effects of collisions, sensory noise, and action delays."  
@@ -2766,14 +2771,12 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `post` <https://navneet-nmk.github.io/2018-08-26-empowerment>
   - `code` <https://github.com/navneet-nmk/pytorch-rl/blob/master/models/empowerment_models.py>
 
-#### ["Unsupervised Real-Time Control through Variational Empowerment"](https://arxiv.org/abs/1710.05101) Karl, Soelch, Becker-Ehmck, Benbouzid, Smagt, Bayer
+#### ["Unsupervised Real-Time Control through Variational Empowerment"](https://arxiv.org/abs/1710.05101) Karl et al.
   `exploration guided by empowerment`
 
 #### ["Variational Intrinsic Control"](http://arxiv.org/abs/1611.07507) Gregor, Rezende, Wierstra
   `exploration guided by empowerment`
->	"The second scenario is that in which the long-term goal of the agent is to get to a state with a maximal set of available intrinsic options – the objective of empowerment (Salge et al., 2014). This set of options consists of those that the agent knows how to use. Note that this is not the theoretical set of all options: it is of no use to the agent that it is possible to do something if it is unable to learn how  to do it. Thus, to maximize empowerment, the agent needs to simultaneously learn how to control the environment as well – it needs to discover the options available to it. The agent should in fact not aim for states where it has the most control according to its current abilities, but for states where it expects it will achieve the most control after learning. Being able to learn available options is thus fundamental to  becoming empowered."  
->	"Let us compare this to the commonly used intrinsic motivation objective of maximizing the amount of model-learning progress, measured as the difference in compression of its experience before and after learning (Schmidhuber, 1991; 2010; Bellemare et al., 2016; Houthooft et al., 2016). The empowerment objective differs from this in a fundamental manner: the primary goal is not to understand or predict the observations but to control the environment. This is an important point – agents can often control an environment perfectly well without much understanding, as exemplified by canonical model-free reinforcement learning algorithms (Sutton & Barto, 1998), where agents only model action-conditioned expected returns. Focusing on such understanding might significantly distract and impair the agent, as such reducing the control it achieves."  
-  - `code` <https://github.com/sygi/vic-tensorflow>
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#variational-intrinsic-control-gregor-rezende-wierstra>
 
 ----
 #### ["Exploration by Random Network Distillation"](https://arxiv.org/abs/1810.12894) Burda, Edwards, Storkey, Klimov
@@ -3164,6 +3167,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `successor features`
 >	"Our approach rests on two key ideas: "successor features", a value function representation that decouples the dynamics of the environment from the rewards, and "generalised policy improvement", a generalisation of dynamic programming’s policy improvement step that considers a set of policies rather than a single one. Put together, the two ideas lead to an approach that integrates seamlessly within the reinforcement learning framework and allows transfer to take place between tasks without any restriction."  
   - `video` <https://facebook.com/nipsfoundation/videos/1554741347950432?t=5074> (Barreto)
+  - `video` <https://youtu.be/Yvll3P1UW5k?t=1h24m59s> (Abbeel)
 
 #### ["Learning to Act by Predicting the Future"](https://arxiv.org/abs/1611.01779) Dosovitskiy, Koltun
   `successor features`
@@ -3816,7 +3820,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 #### ["BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"](https://arxiv.org/abs/1810.04805) Devlin, Chang, Lee, Toutanova
   `BERT` `language modeling`
-  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-devlin-chang-lee-toutanova>
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-devlin-chang-lee-toutanova>
 
 ----
 #### ["Unsupervised Question Answering by Cloze Translation"](https://arxiv.org/abs/1906.04980) Lewis, Denoyer, Riedel

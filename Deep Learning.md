@@ -7,6 +7,7 @@
   * [**theory**](#theory)
   * [**bayesian deep learning**](#bayesian-deep-learning)
   * [**unsupervised learning**](#unsupervised-learning)
+  * [**self-supervised learning**](#self-supervised-learning)
   * [**generative models**](#generative-models)
     - [**generative adversarial networks**](#generative-models---generative-adversarial-networks)
     - [**variational autoencoder**](#generative-models---variational-autoencoder)
@@ -24,11 +25,12 @@
     - [**theory**](#interesting-papers---theory)
     - [**gradient estimation**](#interesting-papers---gradient-estimation)
     - [**bayesian deep learning**](#interesting-papers---bayesian-deep-learning)
+    - [**unsupervised learning**](#interesting-papers---unsupervised-learning)
+    - [**self-supervised learning**](#interesting-papers---self-supervised-learning)
     - [**generative adversarial networks**](#interesting-papers---generative-adversarial-networks)
     - [**variational autoencoder**](#interesting-papers---variational-autoencoder)
     - [**autoregressive models**](#interesting-papers---autoregressive-models)
     - [**flow models**](#interesting-papers---flow-models)
-    - [**unsupervised learning**](#interesting-papers---unsupervised-learning)
     - [**architectures**](#interesting-papers---architectures)
     - [**connections to neuroscience**](#connections-to-neuroscience)
     - [**applications**](#interesting-papers---applications)
@@ -374,6 +376,11 @@
 
 ----
 
+  [**self-supervised learning**](#self-supervised-learning)  
+  [**generative models**](#generative-models)  
+
+----
+
   [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#unsupervised-learning)
 
 ----
@@ -395,6 +402,26 @@
   - learn a stochastic transformation so that if we were to apply it many times we would converge to something close to the data generating distribution (Generative Stochastic Networks, generative denoising autoencoders, diffusion inversion = nonequilibrium thermodynamics)  
   - learn to generate samples that cannot be distinguished by a classifier from the training samples (GAN)  
   - maximize the likelihood of the data under some probabilistic model  
+
+
+
+---
+### self-supervised learning
+
+  [overview](https://youtu.be/DSYzHPW26Ig?t=1h15m40s) by Alex Graves `video`  
+  [overview](https://youtu.be/Vv7rHgmiJWM?t=35m31s) by Yann LeCun `video`  
+  [overview](https://youtu.be/7I0Qt7GALVk?t=41m13s) by Yann LeCun `video`  
+  [overview](https://youtube.com/watch?v=0zCMiOQ8C1U) by Alexei Efros `video`  
+  [overview](https://youtube.com/watch?v=_V-WpE8cmpc) by Alexei Efros `video`  
+  [overview](https://youtube.com/watch?v=YhYsvD6IfKE) by Alexei Efros `video`  
+
+----
+
+  [**self-supervised learning**](#interesting-papers---self-supervised-learning)
+
+----
+
+  "Even if we don't have a specific task or reward, we can still choose which aspects of the data to learn and which to ignore. As long as we're predicting one aspect of the data from another else, we're learning about it. Examples: image colorization, missing words, missing patches, missing frames... Anything we remove can be used as a target." [*(Alex Graves)*](https://youtu.be/DSYzHPW26Ig?t=1h15m40s)
 
 
 
@@ -973,6 +1000,7 @@
   - [**autoregressive models**](#interesting-papers---autoregressive-models)  
   - [**flow models**](#interesting-papers---flow-models)  
   - [**unsupervised learning**](#interesting-papers---unsupervised-learning)  
+  - [**self-supervised learning**](#interesting-papers---self-supervised-learning)  
   - [**architectures**](#interesting-papers---architectures)  
   - [**connections to neuroscience**](#connections-to-neuroscience)  
   - [**applications**](#interesting-papers---applications)  
@@ -987,7 +1015,7 @@
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#deep-learning-theory)
 
-
+----
 #### ["Understanding Deep Learning Requires Rethinking Generalization"](http://arxiv.org/abs/1611.03530) Zhang, Bengio, Hardt, Recht, Vinyals
   `generalization`
 >	"Despite their massive size, successful deep artificial neural networks can exhibit a remarkably small difference between training and test performance. Conventional wisdom attributes small generalization error either to properties of the model family, or to the regularization techniques used during training. Through extensive systematic experiments, we show how these traditional approaches fail to explain why large neural networks generalize well in practice. Specifically, our experiments establish that state-of-the-art convolutional networks for image classification trained with stochastic gradient methods easily fit a random labeling of the training data. This phenomenon is qualitatively unaffected by explicit regularization, and occurs even if we replace the true images by completely unstructured random noise. We corroborate these experimental findings with a theoretical construction showing that simple depth two neural networks already have perfect finite sample expressivity as soon as the number of parameters exceeds the number of data points as it usually does in practice. We interpret our experimental findings by comparison with traditional models."
@@ -1114,7 +1142,7 @@
   - `notes` <https://blog.acolyer.org/2017/11/16/opening-the-black-box-of-deep-neural-networks-via-information-part-ii/>
   - `notes` <https://theneuralperspective.com/2017/03/24/opening-the-black-box-of-deep-neural-networks-via-information/>
   - `press` <https://quantamagazine.org/new-theory-cracks-open-the-black-box-of-deep-learning-20170921>
-  - `paper` ["Deep Learning and the Information Bottleneck Principle"](#tishby-zaslavsky---deep-learning-and-the-information-bottleneck-principle) by Tishby and Zaslavsky `summary`
+  - `paper` [**"Deep Learning and the Information Bottleneck Principle"**](#tishby-zaslavsky---deep-learning-and-the-information-bottleneck-principle) by Tishby and Zaslavsky `summary`
 
 
 #### ["On the Information Bottleneck Theory of Deep Learning"](https://openreview.net/forum?id=ry_WPG-A-) Saxe et al.
@@ -1536,7 +1564,7 @@ Yoshua Bengio:
 [**interesting recent papers - model-based reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-based-methods)  
 [**interesting recent papers - exploration and intrinsic motivation**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
 
-
+----
 #### ["Variational Inference: A Review for Statisticians"](http://arxiv.org/abs/1601.00670) Blei, Kucukelbir, McAuliffe
 >	"One of the core problems of modern statistics is to approximate difficult-to-compute probability distributions. This problem is especially important in Bayesian statistics, which frames all inference about unknown quantities as a calculation about the posterior. In this paper, we review variational inference (VI), a method from machine learning that approximates probability distributions through optimization. VI has been used in myriad applications and tends to be faster than classical methods, such as Markov chain Monte Carlo sampling. The idea behind VI is to first posit a family of distributions and then to find the member of that family which is close to the target. Closeness is measured by Kullback-Leibler divergence. We review the ideas behind mean-field variational inference, discuss the special case of VI applied to exponential family models, present a full example with a Bayesian mixture of Gaussians, and derive a variant that uses stochastic optimization to scale up to massive data. We discuss modern research in VI and highlight important open problems. VI is powerful, but it is not yet well understood. Our hope in writing this paper is to catalyze statistical research on this widely-used class of algorithms."
 
@@ -1680,7 +1708,6 @@ Yoshua Bengio:
 
 >	"Dropout can be interpreted as a variational Bayesian approximation, where the approximating distribution is a mixture of two Gaussians with small variances and the mean of one of the Gaussians fixed at zero. The uncertainty in the weights induces prediction uncertainty by marginalising over the approximate posterior using Monte Carlo integration. This amounts to the regular dropout procedure only with dropout also applied at test time, giving output uncertainty from our dynamics model."
 
-  - `paper` ["Dropout as a Bayesian Approximation: Appendix"](http://arxiv.org/abs/1506.02157) by Gal and Ghahramani
   - `video` <http://research.microsoft.com/apps/video/default.aspx?id=259218> (Gal)
   - `video` <http://techtalks.tv/talks/dropout-as-a-bayesian-approximation-representing-model-uncertainty-in-deep-learning/62508/> (Gal)
   - `video` <https://youtube.com/watch?v=I09QVNrUS3Q> (Rowan)
@@ -1694,7 +1721,8 @@ Yoshua Bengio:
   - `code` <https://github.com/yaringal/DropoutUncertaintyExps>
   - `code` <https://github.com/tabacof/bayesian-nn-uncertainty>
   - `code` <http://nbviewer.jupyter.org/github/napsternxg/pytorch-practice/blob/master/Pytorch%20Uncertainity-animated.ipynb>
-  - `paper` ["Uncertainty in Deep Learning"](http://mlg.eng.cam.ac.uk/yarin/thesis/thesis.pdf) thesis by Yarin Gal
+  - `paper` ["Dropout as a Bayesian Approximation: Appendix"](http://arxiv.org/abs/1506.02157) by Gal and Ghahramani
+  - `paper` ["Uncertainty in Deep Learning"](http://mlg.eng.cam.ac.uk/yarin/thesis/thesis.pdf) by Yarin Gal
 
 
 #### ["A Theoretically Grounded Application of Dropout in Recurrent Neural Networks"](http://arxiv.org/abs/1512.05287) Gal
@@ -1773,6 +1801,75 @@ Yoshua Bengio:
 
 
 ---
+### interesting papers - unsupervised learning
+
+[**interesting papers - self-supervised learning**](#interesting-papers---self-supervised-learning)
+[**interesting papers - generative adversarial networks**](#interesting-papers---generative-adversarial-networks)
+[**interesting papers - variational autoencoder**](#interesting-papers---variational-autoencoder)
+[**interesting papers - autoregressive models**](#interesting-papers---autoregressive-models)
+[**interesting papers - flow models**](#interesting-papers---flow-models)
+
+[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#unsupervised-learning)
+
+
+
+---
+### interesting papers - self-supervised learning
+
+[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#self-supervised-learning)
+
+----
+#### ["Revisiting Self-Supervised Visual Representation Learning"](https://arxiv.org/abs/1901.09005) Kolesnikov, Zhai, Beyer
+  `representation learning` `self-supervised learning`
+>	"Unsupervised visual representation learning remains a largely unsolved problem in computer vision research. Among a big body of recently proposed approaches for unsupervised learning of visual representations, a class of self-supervised techniques achieves superior performance on many challenging benchmarks. A large number of the pretext tasks for self-supervised learning have been studied, but other important aspects, such as the choice of convolutional neural networks, has not received equal attention. Therefore, we revisit numerous previously proposed self-supervised models, conduct a thorough large scale study and, as a result, uncover multiple crucial insights. We challenge a number of common practices in selfsupervised visual representation learning and observe that standard recipes for CNN design do not always translate to self-supervised representation learning. As part of our study, we drastically boost the performance of previously proposed techniques and outperform previously published state-of-the-art results by a large margin. "
+
+>	"Specifically, we provide a re-implementation of the following self-supervised representation learning techniques:  
+>	- Unsupervised Representation Learning by Predicting Image Rotations  
+>	- Unsupervised Visual Representation Learning by Context Prediction  
+>	- Unsupervised Learning of Visual Representations by Solving Jigsaw Puzzles  
+>	- Discriminative Unsupervised Feature Learning with Exemplar Convolutional Neural Networks"
+
+  - `video` <https://facebook.com/icml.imls/videos/378993762742156?t=2566> (Zhai)
+  - `notes` <https://blog.lunit.io/2019/03/14/revisiting-self-supervised-visual-representation-learning>
+  - `code` <https://github.com/google/revisiting-self-supervised>
+
+
+#### ["BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"](https://arxiv.org/abs/1810.04805) Devlin, Chang, Lee, Toutanova
+  `BERT` `representation learning` `self-supervised learning`
+>	"We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5% (7.7% point absolute improvement), MultiNLI accuracy to 86.7% (4.6% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement)."
+
+>	"Unlike recent language representation models (Peters et al., 2018; Radford et al., 2018), BERT is designed to pre-train deep bidirectional representations by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT representations can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications."
+
+  - `post` <https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html>
+  - `video` <https://youtu.be/DSYzHPW26Ig?t=1h15m40s> (Graves)
+  - `video` <https://youtu.be/AC4l_MY2Dhc?t=1h51m52s> (Srinivas)
+  - `video` <https://youtube.com/watch?v=9-Om2YcHhIA> (Li)
+  - `video` <https://youtube.com/watch?v=BhlOGGzC0Q0> + <https://youtube.com/watch?v=rMQMHA-uv_E> (Gharbieh)
+  - `video` <https://youtube.com/watch?v=BhlOGGzC0Q0> (Luo)
+  - `video` <https://youtu.be/99CymZY-4Tc?t=5m36s> (Lyalin) `in russian`
+  - `post` <http://jalammar.github.io/illustrated-bert>
+  - `post` <https://medium.com/dissecting-bert/dissecting-bert-part-1-d3c3d495cdb3> + <https://medium.com/dissecting-bert/dissecting-bert-part2-335ff2ed9c73> + <https://medium.com/dissecting-bert/dissecting-bert-appendix-the-decoder-3b86f66b0e5f>
+  - `paper` ["Right for the Wrong Reasons: Diagnosing Syntactic Heuristics in Natural Language Inference"](https://arxiv.org/abs/1902.01007) by McCoy et al.
+  - `paper` ["Probing Neural Network Comprehension of Natural Language Arguments"](https://arxiv.org/abs/1907.07355) by Niven et al.
+  - `paper` ["BERT Rediscovers the Classical NLP Pipeline"](https://arxiv.org/abs/1905.05950) by Tenney et al.
+  - `paper` ["XLNet: Generalized Autoregressive Pretraining for Language Understanding"](https://arxiv.org/abs/1906.08237) by Yang et al.
+
+
+#### ["Representation Learning with Contrastive Predictive Coding"](https://arxiv.org/abs/1807.03748) Oord, Li, Vinyals
+  `CPC` `representation learning` `self-supervised learning`
+>	"While supervised learning has enabled great progress in many applications, unsupervised learning has not seen such widespread adoption, and remains an important and challenging endeavor for artificial intelligence. In this work, we propose a universal unsupervised learning approach to extract useful representations from high-dimensional data, which we call Contrastive Predictive Coding. The key insight of our model is to learn such representations by predicting the future in latent space by using powerful autoregressive models. We use a probabilistic contrastive loss which induces the latent space to capture information that is maximally useful to predict future samples. It also makes the model tractable by using negative sampling. While most prior work has focused on evaluating representations for a particular modality, we demonstrate that our approach is able to learn useful representations achieving strong performance on four distinct domains: speech, images, text and reinforcement learning in 3D environments."
+
+  - `post` <https://medium.com/syncedreview/new-deepmind-unsupervised-image-model-challenges-alexnet-d658ef92ab1e>
+  - `video` <https://youtu.be/QoCyQBzi7us?t=1h9m51s> (Oord)
+  - `video` <https://youtu.be/AC4l_MY2Dhc?t=1h6m33s> (Srinivas)
+  - `video` <https://youtu.be/DSYzHPW26Ig?t=1h24m53s> (Graves)
+  - `post` <https://machinethoughts.wordpress.com/2018/08/15/predictive-coding-and-mutual-information>
+  - `paper` ["Data-Efficient Image Recognition with Contrastive Predictive Coding"](https://arxiv.org/abs/1905.09272) by Henaff et al. ([talk](https://facebook.com/icml.imls/videos/378993762742156?t=3335) by Henaff `video`)
+  - `paper` ["Noise-Contrastive Estimation of Unnormalized Statistical Models, with Applications to Natural Image Statistics"](http://www.jmlr.org/papers/volume13/gutmann12a/gutmann12a.pdf) by Gutmann and Hyvarinen
+
+
+
+---
 ### interesting papers - generative adversarial networks
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models---generative-adversarial-networks)  
@@ -1781,7 +1878,7 @@ Yoshua Bengio:
 <https://github.com/zhangqianhui/AdversarialNetsPapers>  
 <https://github.com/nightrome/really-awesome-gan/>  
 
-
+----
 #### ["Generative Adversarial Networks"](http://arxiv.org/abs/1406.2661) Goodfellow, Pouget-Abadie, Mirza, Xu, Warde-Farley, Ozair, Courville, Bengio
 >	"We propose a new framework for estimating generative models via an adversarial process, in which we simultaneously train two models: a generative model G that captures the data distribution, and a discriminative model D that estimates the probability that a sample came from the training data rather than G. The training procedure for G is to maximize the probability of D making a mistake. This framework corresponds to a minimax two-player game. In the space of arbitrary functions G and D, a unique solution exists, with G recovering the training data distribution and D equal to 1/2 everywhere. In the case where G and D are defined by multilayer perceptrons, the entire system can be trained with backpropagation. There is no need for any Markov chains or unrolled approximate inference networks during either training or generation of samples."
 
@@ -1921,7 +2018,7 @@ Yoshua Bengio:
 [**interesting recent papers - generative models**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models)  
 [**interesting recent papers - bayesian deep learning**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#bayesian-deep-learning)  
 
-
+----
 #### ["Auto-Encoding Variational Bayes"](http://arxiv.org/abs/1312.6114) Kingma, Welling
 >	"How can we perform efficient inference and learning in directed probabilistic models, in the presence of continuous latent variables with intractable posterior distributions, and large datasets? We introduce a stochastic variational inference and learning algorithm that scales to large datasets and, under some mild differentiability conditions, even works in the intractable case. Our contributions is two-fold. First, we show that a reparameterization of the variational lower bound yields a lower bound estimator that can be straightforwardly optimized using standard stochastic gradient methods. Second, we show that for i.i.d. datasets with continuous latent variables per datapoint, posterior inference can be made especially efficient by fitting an approximate inference model (also called a recognition model) to the intractable posterior using the proposed lower bound estimator. Theoretical advantages are reflected in experimental results."
 
@@ -2112,7 +2209,7 @@ Yoshua Bengio:
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models---autoregressive-models)  
 [**interesting recent papers - generative models**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models)  
 
-
+----
 #### ["Generating Sequences With Recurrent Neural Networks"](http://arxiv.org/abs/1308.0850) Graves
 >	"This paper shows how Long Short-term Memory recurrent neural networks can be used to generate complex sequences with long-range structure, simply by predicting one data point at a time. The approach is demonstrated for text (where the data are discrete) and online handwriting (where the data are real-valued). It is then extended to handwriting synthesis by allowing the network to condition its predictions on a text sequence. The resulting system is able to generate highly realistic cursive handwriting in a wide variety of styles."
 
@@ -2197,19 +2294,12 @@ Yoshua Bengio:
 
 
 ---
-### interesting papers - unsupervised learning
-
-[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#unsupervised-learning)
-
-
-
----
 ### interesting papers - architectures
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#compute-and-memory-architectures) on compute and memory architectures  
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#meta-learning) on meta-learning  
 
-
+----
 #### ["Dynamic Routing Between Capsules"](https://arxiv.org/abs/1710.09829) Sabour, Frosst, Hinton
   `Capsule Network` `CapsNet`
 >	"A capsule is a group of neurons whose activity vector represents the instantiation parameters of a specific type of entity such as an object or object part. We use the length of the activity vector to represent the probability that the entity exists and its orientation to represent the instantiation paramters. Active capsules at one level make predictions, via transformation matrices, for the instantiation parameters of higher-level capsules. When multiple predictions agree, a higher level capsule becomes active. We show that a discrimininatively trained, multi-layer capsule system achieves state-of-the-art performance on MNIST and is considerably better than a convolutional net at recognizing highly overlapping digits. To achieve these results we use an iterative routing-by-agreement mechanism: A lower-level capsule prefers to send its output to higher level capsules whose activity vectors have a big scalar product with the prediction coming from the lower-level capsule."
@@ -2833,7 +2923,7 @@ Yoshua Bengio:
 
 [**selected papers**](https://yadi.sk/d/mQnJYmxo3WZDvP)
 
-
+----
 #### ["Deep Nets: What have they ever done for Vision?"](https://arxiv.org/abs/1805.04025) Yuille, Liu
 >	"This is an opinion paper about the strengths and weaknesses of Deep Nets for vision. They are at the center of recent progress on artificial intelligence and are of growing importance in cognitive science and neuroscience. They have enormous successes but also clear limitations. There is also only partial understanding of their inner workings. It seems unlikely that Deep Nets in their current form will be the best long-term solution either for building general purpose intelligent machines or for understanding the mind/brain, but it is likely that many aspects of them will remain. At present Deep Nets do very well on specific types of visual tasks and on specific benchmarked datasets. But Deep Nets are much less general purpose, flexible, and adaptive than the human visual system. Moreover, methods like Deep Nets may run into fundamental difficulties when faced with the enormous complexity of natural images which can lead to a combinatorial explosion."
 

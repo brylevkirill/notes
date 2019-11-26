@@ -33,10 +33,11 @@
 
   ["The Limits of Modern AI: A Story"](https://thebestschools.org/magazine/limits-of-modern-ai) by Erik Larson  
   ["Steps Toward Super Intelligence"](https://rodneybrooks.com/forai-steps-toward-super-intelligence-i-how-we-got-here) by Rodney Brooks  
-  ["Intelligence Confuses The Intelligent"](https://blog.piekniewski.info/2017/04/13/ai-confuses-intelligent) by Filip Piekniewski  
+  ["Intelligence Confuses the Intelligent"](https://blog.piekniewski.info/2017/04/13/ai-confuses-intelligent) by Filip Piekniewski  
   ["Intelligence is not Artificial"](https://www.toddhylton.net/2016/04/intelligence-is-not-artificial.html) by Todd Hylton  
-  ["A Critique of Pure Learning and What ANNs Can Learn from Animal Brains"](https://nature.com/articles/s41467-019-11786-6) by Anthony Zador  
+  ["On the Measure of Intelligence"](https://arxiv.org/abs/1911.01547) by Francois Chollet  
   ["The Limitations of Deep Learning"](https://blog.keras.io/the-limitations-of-deep-learning.html) by Francois Chollet  
+  ["A Critique of Pure Learning and What ANNs Can Learn from Animal Brains"](https://nature.com/articles/s41467-019-11786-6) by Anthony Zador  
 
 ----
 
@@ -367,15 +368,15 @@
 ---
 ### universal artificial intelligence - Thompson Sampling
 
-  [**"Nonparametric General Reinforcement Learning"**](#nonparametric-general-reinforcement-learning-leike) by Leike `paper` `summary`
+  [**"Nonparametric General Reinforcement Learning"**](#nonparametric-general-reinforcement-learning-leike) by Leike `paper` `summary` *(Thompson Sampling AIXI agent)*
 
 
 
 ---
 ### universal artificial intelligence - Knowledge-Seeking Agent
 
-  [**"Universal Knowledge-Seeking Agents for Stochastic Environments"**](#universal-knowledge-seeking-agents-for-stochastic-environments-orseau-lattimore-hutter) by Orseau, Lattimore, Hutter `paper` `summary`  
-  [**"Theory of General Reinforcement Learning"**](#theory-of-general-reinforcement-learning-lattimore) by Lattimore `paper` `summary`  
+  [**"Universal Knowledge-Seeking Agents for Stochastic Environments"**](#universal-knowledge-seeking-agents-for-stochastic-environments-orseau-lattimore-hutter) by Orseau, Lattimore, Hutter `paper` `summary` *(KL-KSA agent)*  
+  [**"Theory of General Reinforcement Learning"**](#theory-of-general-reinforcement-learning-lattimore) by Lattimore `paper` `summary` *(BayesExp agent)*  
 
 
 
@@ -392,6 +393,7 @@
   [overview](https://vimeo.com/28759091) by Juergen Schmidhuber `video`  
   [overview](https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber) by Juergen Schmidhuber `video`  
   [overview](https://youtube.com/watch?v=3FIo6evmweo&t=26m6s) by Juergen Schmidhuber `video`  
+  [overview](https://youtu.be/DSYzHPW26Ig?t=2h7m22s) by Alex Graves `video`  
 
   ["Toward Intelligent Humanoids"](https://vimeo.com/51011081) demo from Schmidhuber's group `video`
 
@@ -534,6 +536,10 @@
   - `book` ["The Measure of All Minds: Evaluating Natural and Artificial Intelligence"](https://cambridge.org/core/books/measure-of-all-minds/DC3DFD0C1D5B3A3AD6F56CD6A397ABCA) by Hernandez-Orallo
 
 
+#### ["On the Measure of Intelligence"](https://arxiv.org/abs/1911.01547) Chollet
+>	"To make deliberate progress towards more intelligent and more human-like artificial systems, we need to be following an appropriate feedback signal: we need to be able to define and evaluate intelligence in a way that enables comparisons between two systems, as well as comparisons with humans. Over the past hundred years, there has been an abundance of attempts to define and measure intelligence, across both the fields of psychology and AI. We summarize and critically assess these definitions and evaluation approaches, while making apparent the two historical conceptions of intelligence that have implicitly guided them.  We note that in practice, the contemporary AI community still gravitates towards benchmarking intelligence by comparing the skill exhibited by AIs and humans at specific tasks, such as board games and video games. We argue that solely measuring skill at any given task falls short of measuring intelligence, because skill is heavily modulated by prior knowledge and experience: unlimited priors or unlimited training data allow experimenters to “buy” arbitrary levels of skills for a system, in a way that masks the system’s own generalization power. We then articulate a new formal definition of intelligence based on Algorithmic Information Theory, describing intelligence as skill-acquisition efficiency and highlighting the concepts of scope, generalization difficulty, priors, and experience, as critical pieces to be accounted for in characterizing intelligent systems. Using this definition, we propose a set of guidelines for what a general AI benchmark should look like. Finally, we present a new benchmark closely following these guidelines, the Abstraction and Reasoning Corpus (ARC), built upon an explicit set of priors designed to be as close as possible to innate human priors. We argue that ARC can be used to measure a human-like form of general fluid intelligence and that it enables fair general intelligence comparisons between AI systems and humans."
+
+
 #### ["Measuring Intelligence through Games"](http://arxiv.org/abs/1109.1314) Schaul, Togelius, Schmidhuber
 >	"Artificial general intelligence refers to research aimed at tackling the full problem of artificial intelligence, that is, create truly intelligent agents. This sets it apart from most AI research which aims at solving relatively narrow domains, such as character recognition, motion planning, or increasing player satisfaction in games. But how do we know when an agent is truly intelligent? A common point of reference in the AGI community is Legg and Hutter’s formal definition of universal intelligence, which has the appeal of simplicity and generality but is unfortunately incomputable. Games of various kinds are commonly used as benchmarks for “narrow” AI research, as they are considered to have many important properties. We argue that many of these properties carry over to the testing of general intelligence as well. We then sketch how such testing could practically be carried out. The central part of this sketch is an extension of universal intelligence to deal with finite time, and the use of sampling of the space of games expressed in a suitably biased game description language."
 
@@ -565,7 +571,7 @@
 
 >	"The goal of the paper was to establish a single, universal theory for (sequence) prediction and (hypothesis) confirmation, applicable to all inductive inference problems. I started by showing that Bayesian prediction is consistent for any countable model class, provided it contains the true distribution. The major (agonizing) problem Bayesian statistics leaves open is how to choose the model class and the prior. Solomonoff’s theory fills this gap by choosing the class of all computable (stochastic) models, and a universal prior inspired by Ockham and Epicurus, and quantified by Kolmogorov complexity. I discussed in breadth how and in which sense this theory solves the inductive inference problem, by studying a plethora of problems other approaches suffer from. In one line: All you need for universal prediction is Ockham, Epicurus, Bayes, Solomonoff, Kolmogorov, and Turing. By including Bellman, one can extend this theory to universal decisions in reactive environments."
 
-  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---solomonoff-induction>
+  - [**Solomonoff induction**](#universal-artificial-intelligence---solomonoff-induction) theory by Solomonoff
 
 
 #### ["Is there an Elegant Universal Theory of Prediction?"](http://arxiv.org/abs/cs/0606070) Legg
@@ -575,14 +581,14 @@
 >	These results can be extended to more general settings, specifically to those problems which are equivalent to, or depend on, sequence prediction. Consider, for example, a reinforcement learning agent interacting with an environment. In each interaction cycle the agent must choose its actions so as to maximise the future rewards that it receives from the environment. Of course the agent cannot know for certain whether or not some action will lead to rewards in the future, thus it must predict these. Clearly, at the heart of reinforcement learning lies a prediction problem, and so the results for computable predictors presented in this paper also apply to computable reinforcement learners. More specifically, it follows that very powerful computable reinforcement learners are necessarily complex, and it follows that it is impossible to discover extremely powerful reinforcement learning algorithms mathematically."
 
   - `post` <http://lo-tho.blogspot.ru/2012/08/truth-and-ai.html>
-  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---solomonoff-induction>
+  - [**Solomonoff induction**](#universal-artificial-intelligence---solomonoff-induction) theory by Solomonoff
 
 
 #### ["On the Computability of Solomonoff Induction and Knowledge-Seeking"](http://arxiv.org/abs/1507.04124) Leike, Hutter
   `Solomonoff induction`
 >	"Solomonoff induction is held as a gold standard for learning, but it is known to be incomputable. We quantify its incomputability by placing various flavors of Solomonoff's prior M in the arithmetical hierarchy. We also derive computability bounds for knowledge-seeking agents, and give a limit-computable weakly asymptotically optimal reinforcement learning agent."
 
-  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---solomonoff-induction>
+  - [**Solomonoff induction**](#universal-artificial-intelligence---solomonoff-induction) theory by Solomonoff
 
 
 #### ["Universal Reinforcement Learning Algorithms: Survey and Experiments"](https://arxiv.org/abs/1705.10557) Aslanides, Leike, Hutter
@@ -593,6 +599,7 @@
   - `video` <https://youtu.be/YMdFUay0k20?t=36m41s> (Hutter)
   - `code` <http://github.com/aslanides/aixijs>
   - `paper` ["AIXIjs: A Software Demo for General Reinforcement Learning"](https://arxiv.org/abs/1705.07615) by Aslanides
+  - [**universal artificial intelligence**](#universal-artificial-intelligence)
 
 
 #### ["Universal Algorithmic Intelligence: A Mathematical Top-down Approach"](http://arxiv.org/abs/cs/0701125) Hutter
@@ -602,7 +609,7 @@
   - `notes` <http://aslanides.io/aixijs/#aixi>
   - `paper` ["A Theory of Universal Artificial Intelligence based on Algorithmic Complexity"](https://arxiv.org/abs/cs/0004001) by Hutter *(AIXI-tl agent)*
   - `paper` ["Open Problems in Universal Induction & Intelligence"](http://arxiv.org/abs/0907.0746) by Hutter
-  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---aixi>
+  - [**AIXI**](#universal-artificial-intelligence---aixi) theory by Hutter
 
 
 #### ["A Monte Carlo AIXI Approximation"](https://arxiv.org/abs/0909.0801) Veness, Ng, Hutter, Uther, Silver
@@ -619,14 +626,14 @@
   - `code` <https://github.com/gkassel/pyaixi>
   - `code` <https://github.com/GoodAI/SummerCamp/tree/master/AIXIModule>
   - `paper` ["Approximate Universal Artificial Intelligence and Self-Play Learning for Games"](http://jveness.info/publications/veness_phd_thesis_final.pdf) by Joel Veness `paper`
-  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---aixi>
+  - [**AIXI**](#universal-artificial-intelligence---aixi) theory by Hutter
 
 
 #### ["On the Computability of AIXI"](http://arxiv.org/abs/1510.05572) Leike, Hutter
   `AIXI agent`
 >	"How could we solve the machine learning and the artificial intelligence problem if we had infinite computation? Solomonoff induction and the reinforcement learning agent AIXI are proposed answers to this question. Both are known to be incomputable. In this paper, we quantify this using the arithmetical hierarchy, and prove upper and corresponding lower bounds for incomputability. We show that AIXI is not limit computable, thus it cannot be approximated using finite computation. Our main result is a limit-computable ε-optimal version of AIXI with infinite horizon that maximizes expected rewards."
 
-  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---aixi>
+  - [**AIXI**](#universal-artificial-intelligence---aixi) theory by Hutter
 
 
 #### ["Bad Universal Priors and Notions of Optimality"](https://arxiv.org/abs/1510.04931) Leike, Hutter
@@ -637,11 +644,11 @@
 
   - <http://aslanides.io/aixijs/demo.html> (demo)
   - `video` <https://youtu.be/YMdFUay0k20?t=33m14s> (Hutter)
-  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---aixi>
+  - [**AIXI**](#universal-artificial-intelligence---aixi) theory by Hutter
 
 
 #### ["Nonparametric General Reinforcement Learning"](https://arxiv.org/abs/1611.08944) Leike
-  `AIXI agent`
+  `Thompson Sampling AIXI agent`
 >	"Reinforcement learning problems are often phrased in terms of Markov decision processes. In this thesis we go beyond MDPs and consider reinforcement learning in environments that are non-Markovian, non-ergodic and only partially observable. Our focus is not on practical algorithms, but rather on the fundamental underlying problems: How do we balance exploration and exploitation? How do we explore optimally? When is an agent optimal? We follow the nonparametric realizable paradigm: we assume the data is drawn from an unknown source that belongs to a known countable class of candidates.  
 >	First, we consider the passive (sequence prediction) setting, learning from data that is not independent and identically distributed. We collect results from artificial intelligence, algorithmic information theory, and game theory and put them in a reinforcement learning context: they demonstrate how agent can learn the value of its own policy. Next, we establish negative results on Bayesian reinforcement learning agents, in particular AIXI. We show that unlucky or adversarial choices of the prior cause the agent to misbehave drastically. Therefore Legg-Hutter intelligence and balanced Pareto optimality, which depend crucially on the choice of the prior, are entirely subjective. Moreover, in the class of all computable environments every policy is Pareto optimal. This undermines all existing optimality properties for AIXI.  
 >	However, there are Bayesian approaches to general reinforcement learning that satisfy objective optimality guarantees: We prove that Thompson sampling is asymptotically optimal in stochastic environments in the sense that its value converges to the value of the optimal policy. We connect asymptotic optimality to regret given a recoverability assumption on the environment that allows the agent to recover from mistakes. Hence Thompson sampling achieves sublinear regret in these environments.  
@@ -656,10 +663,10 @@
   - `video` <https://youtu.be/YMdFUay0k20?t=42m31s> (Hutter)
   - `notes` <http://aslanides.io/aixijs/#ts>
   - `paper` ["Thompson Sampling is Asymptotically Optimal in General Environments"](https://arxiv.org/abs/1602.07905) by Leike, Lattimore, Orseau, Hutter
-  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---aixi>
+  - [**AIXI**](#universal-artificial-intelligence---aixi) theory by Hutter
 
 
-#### ["Universal Knowledge-Seeking Agents for Stochastic Environments"](https://openresearch-repository.anu.edu.au/handle/1885/14714) by Orseau, Lattimore, Hutter
+#### ["Universal Knowledge-Seeking Agents for Stochastic Environments"](https://openresearch-repository.anu.edu.au/handle/1885/14714) Orseau, Lattimore, Hutter
   `knowledge-seeking` `KL-KSA agent`
 >	"We define an optimal Bayesian knowledge-seeking agent, KL-KSA, designed for countable hypothesis classes of stochastic environments and whose goal is to gather as much information about the unknown world as possible. Although this agent works for arbitrary countable classes and priors, we focus on the especially interesting case where all stochastic computable environments are considered and the prior is based on Solomonoff’s universal prior. Among other properties, we show that KL-KSA learns the true environment in the sense that it learns to predict the consequences of actions it does not take. We show that it does not consider noise to be information and avoids taking actions leading to inescapable traps. We also present a variety of toy experiments demonstrating that KL-KSA behaves according to expectation."
 
@@ -677,6 +684,7 @@
   - `post` <https://intelligence.org/2013/09/06/laurent-orseau-on-agi>
   - `paper` ["Universal Knowledge-Seeking Agents"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.687.5725&rep=rep1) by Orseau
   - `paper` ["On the Computability of Solomonoff Induction and Knowledge-Seeking"](http://arxiv.org/abs/1507.04124) by Leike and Hutter
+  - [**Knowledge-Seeking Agent**](#universal-artificial-intelligence---knowledge-seeking-agent) theory by Hutter and Orseau
 
 
 #### ["Theory of General Reinforcement Learning"](https://researchgate.net/publication/329143453_Theory_of_general_reinforcement_learning) Lattimore
@@ -688,6 +696,8 @@
 
   - `video` <https://youtu.be/YMdFUay0k20?t=36m49s> (Hutter)
   - `notes` <http://aslanides.io/aixijs/#bexp>
+  - [**AIXI**](#universal-artificial-intelligence---aixi) theory by Hutter
+  - [**Knowledge-Seeking Agent**](#universal-artificial-intelligence---knowledge-seeking-agent) theory by Hutter and Orseau
 
 
 #### ["Goedel Machines: Self-Referential Universal Problem Solvers Making Provably Optimal Self-Improvements"](http://arxiv.org/abs/cs/0309048) Schmidhuber
@@ -695,7 +705,7 @@
 
 >	"The initial software p(1) of our Goedel machine runs an initial, typically sub-optimal problem solver, e.g., one of Hutter’s approaches which have at least an optimal order of complexity, or some less general method. Simultaneously, it runs an O()-optimal initial proof searcher using an online variant of Universal Search to test proof techniques, which are programs able to compute proofs concerning the system’s own future performance, based on an axiomatic system A encoded in p(1), describing a formal utility function u, the hardware and p(1) itself. If there is no provably good, globally optimal way of rewriting p(1) at all, then humans will not find one either. But if there is one, then p(1) itself can find and exploit it. This approach yields the first class of theoretically sound, fully self-referential, optimally efficient, general problem solvers. After the theoretical discussion, one practical question remains: to build a particular, especially practical Goedel machine with small initial constant overhead, which generally useful theorems should one add as axioms to A (as initial bias) such that the initial searcher does not have to prove them from scratch?"
 
-  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#meta-learning---goedel-machine>
+  - [**Goedel Machine**](#meta-learning---goedel-machine) theory by Schmidhuber
 
 
 #### ["On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models"](http://arxiv.org/abs/1511.09249) Schmidhuber
@@ -739,6 +749,7 @@
 >	"Generally speaking, when it comes to Reinforcement Learning, it is indeed a good idea to train a recurrent neural network called M to become a predictive model of the world, and use M to train a separate controller network C which is supposed to generate reward-maximising action sequences. Marcus Hutter’s mathematically optimal universal AIXI also has a predictive world model M, and a controller C that uses M to maximise expected reward. Ignoring limited storage size, RNNs are general computers just like your laptop. That is, AIXI’s M is related to the RNN-based M above in the sense that both consider a very general space of predictive programs. AIXI’s M, however, really looks at all those programs simultaneously, while the RNN-based M uses a limited local search method such as gradient descent in program space (also known as backpropagation through time) to find a single reasonable predictive program (an RNN weight matrix). AIXI’s C always picks the action that starts the action sequence that yields maximal predicted reward, given the current M, which in a Bayes-optimal way reflects all the observations so far. The RNN-based C, however, uses a local search method (backpropagation through time) to optimise its program or weight matrix, using gradients derived from M. So in a way, my old RNN-based CM system of 1990 may be viewed as a limited, downscaled, sub-optimal, but at least computationally feasible approximation of AIXI."
 
   - `paper` ["One Big Net For Everything"](https://arxiv.org/abs/1802.08864) by Schmidhuber
+  - [**AIXI**](#universal-artificial-intelligence---aixi) theory by Hutter
 
 
 
@@ -747,14 +758,14 @@
 
 [**interesting papers**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---exploration-and-intrinsic-motivation) on exploration and intrinsic motivation
 
-
+----
 #### ["Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes"](http://arxiv.org/abs/0812.4360) Schmidhuber
 >	"I argue that data becomes temporarily interesting by itself to some self-improving, but computationally limited, subjective observer once he learns to predict or compress the data in a better way, thus making it subjectively simpler and more beautiful. Curiosity is the desire to create or discover more non-random, non-arbitrary, regular data that is novel and surprising not in the traditional sense of Boltzmann and Shannon but in the sense that it allows for compression progress because its regularity was not yet known. This drive maximizes interestingness, the first derivative of subjective beauty or compressibility, that is, the steepness of the learning curve. It motivates exploring infants, pure mathematicians, composers, artists, dancers, comedians, yourself, and artificial systems."
 
   Alex Graves:
 > 	"To learn as fast as possible about a piece of data, decrease as rapidly as possible the number of bits you need to compress that data. This is exactly how probabilistic models are trained: ∇-log Pr(x). But what if you can choose which data to observe or even create your own? You should create the data that maximises the decrease in bits - the compression progress - of everything else you and your peers have ever observed. In other words, create the thing that makes the most sense of the world: art, science, music, jokes... Happiness is the first derivative of life!"
 
-  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity>
+  - [**Artificial Curiosity and Creativity**](#artificial-curiosity-and-creativity) theory by Schmidhuber
 
 
 #### ["Formal Theory of Creativity, Fun, and Intrinsic Motivation"](http://people.idsia.ch/~juergen/ieeecreative.pdf) Schmidhuber
@@ -764,14 +775,14 @@
 
 >	"In the real world external rewards are rare. But unsupervised AGIs using additional intrinsic rewards as described in this paper will be motivated to learn many useful behaviors even in absence of external rewards, behaviors that lead to predictable or compressible results and thus reflect regularities in the environment, such as repeatable patterns in the world’s reactions to certain action sequences. Often a bias towards exploring previously unknown environmental regularities through artificial curiosity / creativity is a priori desirable because goal-directed learning may greatly profit from it, as behaviors leading to external reward may often be rather easy to compose from previously learnt curiosity-driven behaviors. It may be possible to formally quantify this bias towards novel patterns in form of a mixture-based prior, a weighted sum of probability distributions on sequences of actions and resulting inputs, and derive precise conditions for improved expected external reward intake. Intrinsic reward may be viewed as analogous to a regularizer in supervised learning, where the prior distribution on possible hypotheses greatly influences the most probable interpretation of the data in a Bayesian framework (for example, the well-known weight decay term of neural networks is a consequence of a Gaussian prior with zero mean for each weight). Following the introductory discussion, some of the AGIs based on the creativity principle will become scientists, artists, or comedians."
 
-  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity>
+  - [**Artificial Curiosity and Creativity**](#artificial-curiosity-and-creativity) theory by Schmidhuber
 
 
 #### ["Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3881010/pdf/fnbot-07-00025.pdf) Frank, Leitner, Stollenga, Forster, Schmidhuber
 >	"Most previous work on artificial curiosity and intrinsic motivation focuses on basic concepts and theory. Experimental results are generally limited to toy scenarios, such as navigation in a simulated maze, or control of a simple mechanical system with one or two degrees of freedom. To study AC in a more realistic setting, we embody a curious agent in the complex iCub humanoid robot. Our novel reinforcement learning framework consists of a state-of-the-art, low-level, reactive control layer, which controls the iCub while respecting constraints, and a high-level curious agent, which explores the iCub’s state-action space through information gain maximization, learning a world model from experience, controlling the actual iCub hardware in real-time. To the best of our knowledge, this is the first ever embodied, curious agent for real-time motion planning on a humanoid. We demonstrate that it can learn compact Markov models to represent large regions of the iCub’s configuration space, and that the iCub explores intelligently, showing interest in its physical constraints as well as in objects it finds in its environment."
 
   - `video` <http://vimeo.com/51011081> (demo)
-  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity>
+  - [**Artificial Curiosity and Creativity**](#artificial-curiosity-and-creativity) theory by Schmidhuber
 
 
 #### ["What's Interesting?"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.45.6362) Schmidhuber
@@ -789,10 +800,10 @@
   - `post` <http://people.idsia.ch/~juergen/ica.html>
   - `video` <http://videolectures.net/ecmlpkdd2010_schmidhuber_ftf/#t=2540> (Schmidhuber)
   - `slides` <http://people.idsia.ch/~juergen/minimax2018small.pdf> (Schmidhuber)
-  - `paper` ["Artificial Curiosity Based on Discovering Novel Algorithmic Predictability Through Coevolution"](ftp://ftp.idsia.ch/pub/juergen/cec99.ps.gz) by Schmidhuber
-  - `paper` ["Exploring the Predictable"](ftp://ftp.idsia.ch/pub/juergen/explorepredictable.pdf) by Schmidhuber
+  - `paper` ["Artificial Curiosity Based on Discovering Novel Algorithmic Predictability Through Coevolution"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.45.1136) by Schmidhuber
+  - `paper` ["Exploring the Predictable"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.6.7341) by Schmidhuber
   - `paper` ["Unsupervised Minimax: Adversarial Curiosity, Generative Adversarial Networks, and Predictability Minimization"](https://arxiv.org/abs/1906.04493) by Schmidhuber
-  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity>
+  - [**Artificial Curiosity and Creativity**](#artificial-curiosity-and-creativity) theory by Schmidhuber
 
 
 #### ["PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem"](http://arxiv.org/abs/1112.5309) Schmidhuber
@@ -804,4 +815,4 @@
   - `video` <https://youtu.be/SAcHyzMdbXc?t=16m6s> (de Freitas)
   - `paper` ["First Experiments with PowerPlay"](https://arxiv.org/abs/1210.8385) by Srivastava, Steunebrink, Stollenga, Schmidhuber
   - `paper` ["One Big Net For Everything"](https://arxiv.org/abs/1802.08864) by Schmidhuber
-  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity>
+  - [**Artificial Curiosity and Creativity**](#artificial-curiosity-and-creativity) theory by Schmidhuber
