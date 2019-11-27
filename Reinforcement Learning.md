@@ -744,6 +744,14 @@
 
 ----
 
+  [overview](https://youtu.be/DSYzHPW26Ig?t=1h58m29s) by Alex Graves `video`
+
+  ["Comparing Intrinsic Motivations in a Unified Framework"](https://agi2018imtutorial.wordpress.com) tutorial by Martin Biehl
+	([video](https://slideslive.com/38909803/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework),
+	[slides](https://slides.com/slides_martin/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework))
+
+----
+
   [**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation)  
   [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
 
@@ -752,23 +760,16 @@
   [**bandits**](#bandits)  
   [**contextual bandits**](#contextual-bandits)  
   [**bayesian exploration models**](#exploration-and-intrinsic-motivation---bayesian-exploration-models)  
+  [**auxiliary tasks**](#exploration-and-intrinsic-motivation---auxiliary-tasks)  
 
 ----
-
-  [overview](https://youtu.be/DSYzHPW26Ig?t=1h58m29s) of recent methods by Alex Graves `video`
-
-  ["Comparing Intrinsic Motivations in a Unified Framework"](https://agi2018imtutorial.wordpress.com) tutorial by Martin Biehl
-	([video](https://slideslive.com/38909803/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework),
-	[slides](https://slides.com/slides_martin/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework))
-
-----
-
-  ["How Can We Define Intrinsic Motivation"](http://pyoudeyer.com/epirob08OudeyerKaplan.pdf) by Oudeyer and Kaplan `paper`
 
   [**information theoretic and distributional models**](#exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models)  
   [**predictive models**](#exploration-and-intrinsic-motivation---predictive-models)  
   [**competence-based models**](#exploration-and-intrinsic-motivation---competence-based-models)  
   [**morphological models**](#exploration-and-intrinsic-motivation---morphological-models)  
+
+  ["How Can We Define Intrinsic Motivation"](http://pyoudeyer.com/epirob08OudeyerKaplan.pdf) by Oudeyer and Kaplan `paper`
 
 
 ----
@@ -806,7 +807,17 @@
 
 ----
 
-  [**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration-models)
+  [**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration-models)  
+  [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
+
+
+----
+#### exploration and intrinsic motivation - auxiliary tasks
+
+  [**"Reinforcement Learning with Unsupervised Auxiliary Tasks"**](#reinforcement-learning-with-unsupervised-auxiliary-tasks-jaderberg-mnih-czarnecki-schaul-leibo-silver-kavukcuoglu) by Jaderberg et al. `paper` `summary`
+
+  [**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---auxiliary-tasks)  
+  [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
 
 
 ----
@@ -815,7 +826,7 @@
 >	"This approach is based on the use of representations, built by an agent, that estimate the distributions of probabilities of observing certain events ek in particular contexts, defined as mathematical configurations in the sensorimotor flow. There are several types of such events, but the probabilities that are measured are typically either the probability of observing a certain state SMk in the sensorimotor flow, denoted P(SMk), or the probability of observing particular transitions between states, such as P(SMk(t), SMl(t+1)), or the probability of observing a particular state after having observed a given state P(SMk(t+1) | SMl(t)). Here, the states SMk can either be direct numerical prototypes or complete regions within the sensorimotor space (and it may involve a mechanism for discretizing the space). We will consider all these eventualities possible and just use the general notation P(ek). We will assume that the agent possesses a mechanism that allows it to build internally, and as it experiences the world, an estimation of the probability distribution of events across the whole space E of possible events (but the space of possible events is not predefined and should also be discovered by the agent, so typically this is an initially empty space that grows with experience)."
 
 
-  - *uncertainty motivation*  
+  - *uncertainty motivation* *(novelty)*  
 
 	> "The tendency to be intrinsically attracted by novelty has often been used as an example in the literature on intrinsic motivation. A straightforward manner to computationally implement it is to build a system that, for every event ek that is actually observed, will generate a reward r(ek) inversely proportional to its probability of observation: r(ek, t) = C·(1 − P(ek, t)), where C is a constant."
 
@@ -900,7 +911,7 @@
 	["Curious Model-building Control Systems"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.45.2597) by Schmidhuber `paper` ([**Artificial Curiosity and Creativity**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory by Schmidhuber)  
 	["A Possibility for Implementing Curiosity and Boredom in Model-Building Neural Controllers"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.45.957) by Schmidhuber `paper` ([**Artificial Curiosity and Creativity**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory by Schmidhuber)  
 	["Exploration in Model-based Reinforcement Learning by Empirically Estimating Learning Progress"](https://papers.nips.cc/paper/4642-exploration-in-model-based-reinforcement-learning-by-empirically-estimating-learning-progress) by Lopes et al. `paper`  
-	[**"Automated Curriculum Learning for Neural Networks"**](#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper` `summary`  
+	[**"Automated Curriculum Learning for Neural Networks"**](#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper` `summary` *(prediction gain, complexity gain)*  
 
 	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---learning-progress-motivation)  
 	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
@@ -923,20 +934,19 @@
 
 	> "A first competence-based approach to intrinsic motivation can be a system which pushes the robot to set challenges/goals for which its performance is lowest. This is a motivation for maximally difficult challenges. This can be implemented as: r(SM(→ t), gk, tg) = C·la(gk, tg). Note that here and everywhere in the competence based approaches, rewards are generated only at the end of episodes."
 
-	[**"Intrinsic Motivation and Automatic Curricula via Asymmetric Self-Play"**](#intrinsic-motivation-and-automatic-curricula-via-asymmetric-self-play-sukhbaatar-lin-kostrikov-synnaeve-szlam) by Sukhbaatar et al. `paper` `summary`  
-	[**"Automatic Goal Generation for Reinforcement Learning Agents"**](#automatic-goal-generation-for-reinforcement-learning-agents-held-geng-florensa-abbeel) by Held et al. `paper` `summary`  
 
-	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---competence-based-models---maximizing-incompetence-motivation)  
-	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
-
-
-  - *maximizing competence progress* *(flow motivation)*  
+  - *maximizing competence progress* *(flow motivation, automated curriculum learning)*  
 
 	> "Maximizing incompetence does not model very well the psychological models of optimal challenge and “flow” proposed by (Csikszentmihalyi, 1991). Flow refers to the state of pleasure related to activities for which difficulty is optimal: neither too easy nor too difficult. As difficulty of a goal can be modeled by the (mean) performance in achieving this goal, a possible manner to model flow would be to introduce two thresholds defining the zone of optimal difficulty. Yet, the use of thresholds can be rather fragile, require hand tuning and possibly complex adaptive mechanism to update these thresholds during the robot’s lifetime. Another approach can be taken, which avoids the use of thresholds. It consists in defining the interestingness of a challenge as the competence progress that is experienced as the robot repeatedly tries to achieve it. So, a challenge for which a robot is bad initially but for which it is rapidly becoming good will be highly rewarding. Thus, a first manner to implement flow motivation would be: r(SM(→ t), gk, tg) = C·(la(gk, tg−θ) − la(gk, tg)) corresponding to the difference between the current performance for task gk and the performance corresponding to the last time gk was tried, at a time denoted tg−θ."
 
 	*compression progress*: seek out data that maximize the decrease in bits of everything the agent has ever observed - find or create things that makes most sense of the agent's life so far: science, art, music, jokes, ... ([overview](https://youtu.be/DSYzHPW26Ig?t=2h7m22s) by Alex Graves `video`)
 
-	[**"Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes"**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#driven-by-compression-progress-a-simple-principle-explains-essential-aspects-of-subjective-beauty-novelty-surprise-interestingness-attention-curiosity-creativity-art-science-music-jokes-schmidhuber) by Schmidhuber `paper` `summary` ([**Artificial Curiosity and Creativity**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory by Schmidhuber)
+	[**"Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes"**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#driven-by-compression-progress-a-simple-principle-explains-essential-aspects-of-subjective-beauty-novelty-surprise-interestingness-attention-curiosity-creativity-art-science-music-jokes-schmidhuber) by Schmidhuber `paper` `summary` ([**Artificial Curiosity and Creativity**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory by Schmidhuber) *(compression gain)*  
+	[**"Automated Curriculum Learning for Neural Networks"**](#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper` `summary` *(prediction gain, complexity gain)*  
+	[**"Automatic Goal Generation for Reinforcement Learning Agents"**](#automatic-goal-generation-for-reinforcement-learning-agents-held-geng-florensa-abbeel) by Held et al. `paper` `summary`  
+
+	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---competence-based-models---maximizing-competence-motivation)  
+	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
 
 
 ----
@@ -2244,6 +2254,7 @@ interesting recent papers:
 ----
 
   * [**bayesian exploration models**](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration-models)
+  * [**auxiliary tasks**](#interesting-papers---exploration-and-intrinsic-motivation---auxiliary-tasks)
   * information theoretic and distributional models
     - [**uncertainty motivation**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---uncertainty-motivation)
     - [**information gain motivation**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---information-gain-motivation)
@@ -2252,7 +2263,7 @@ interesting recent papers:
     - [**predictive novelty motivation**](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---predictive-novelty-motivation)
     - [**learning progress motivation**](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---learning-progress-motivation)
   * competence-based models
-    - [**maximizing incompetence motivation**](#interesting-papers---exploration-and-intrinsic-motivation---competence-based-models---maximizing-incompetence-motivation)
+    - [**maximizing competence progress**](#interesting-papers---exploration-and-intrinsic-motivation---competence-based-models---maximizing-competence-progress)
 
 ----
 #### ["How Can We Define Intrinsic Motivation"](http://pyoudeyer.com/epirob08OudeyerKaplan.pdf) Oudeyer, Kaplan
@@ -2480,15 +2491,58 @@ interesting recent papers:
 
 
 ---
+### interesting papers - exploration and intrinsic motivation - auxiliary tasks
+
+[interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)
+
+----
+#### ["Reinforcement Learning with Unsupervised Auxiliary Tasks"](http://arxiv.org/abs/1611.05397) Jaderberg, Mnih, Czarnecki, Schaul, Leibo, Silver, Kavukcuoglu
+  `UNREAL`
+>	"Deep reinforcement learning agents have achieved state-of-the-art results by directly maximising cumulative reward. However, environments contain a much wider variety of possible training signals. In this paper, we introduce an agent that also maximises many other pseudo-reward functions simultaneously by reinforcement learning. All of these tasks share a common representation that, like unsupervised learning, continues to develop in the absence of extrinsic rewards. We also introduce a novel mechanism for focusing this representation upon extrinsic rewards, so that learning can rapidly adapt to the most relevant aspects of the actual task. Our agent significantly outperforms the previous state-of-theart on Atari, averaging 880% expert human performance, and a challenging suite of first-person, three-dimensional Labyrinth tasks leading to a mean speedup in learning of 10× and averaging 87% expert human performance on Labyrinth."
+
+>	"Auxiliary tasks:
+	- pixel changes: learn a policy for maximally changing the pixels in a grid of cells overlaid over the images
+	- network features: learn a policy for maximally activating units in a specific hidden layer
+	- reward prediction: predict the next reward given some historical context
+	- value function replay: value function regression for the base agent with varying window for n-step returns"
+
+>	"By using these tasks we force the agent to learn about the controllability of its environment and the sorts of sequences which lead to rewards, and all of this shapes the features of the agent."
+
+>	"This approach exploits the multithreading capabilities of standard CPUs. The idea is to execute many instances of our agent in parallel, but using a shared model. This provides a viable alternative to experience replay, since parallelisation also diversifies and decorrelates the data. Our asynchronous actor-critic algorithm, A3C, combines a deep Q-network with a deep policy network for selecting actions. It achieves state-of-the-art results, using a fraction of the training time of DQN and a fraction of the resource consumption of Gorila."
+
+  - `post` <https://deepmind.com/blog/reinforcement-learning-unsupervised-auxiliary-tasks/>
+  - `video` <https://youtube.com/watch?v=Uz-zGYrYEjA> (demo)
+  - `video` <https://youtube.com/watch?v=VVLYTqZJrXY> (Jaderberg)
+  - `video` <https://facebook.com/iclr.cc/videos/1712224178806641?t=4545> (Jaderberg)
+  - `video` <https://youtu.be/bsuvM1jO-4w?t=20m7s> (Mnih)
+  - `video` <https://youtu.be/Yvll3P1UW5k?t=8m42s> (Abbeel)
+  - `video` <https://youtube.com/watch?v=-YiMVR3HEuY> (Kilcher)
+  - `video` <https://youtu.be/0Ey02HT_1Ho?t=1m18s> (Steenbrugge)
+  - `video` <https://yadi.sk/i/_2_0yqeW3HDbcn> (18:25) (Panin) `in russian`
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1611.05397>
+  - `code` <https://github.com/miyosuda/unreal>
+
+
+
+---
 ### interesting papers - exploration and intrinsic motivation - information theoretic and distributional models - uncertainty motivation
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)
 
 ----
 #### ["Action-Conditional Video Prediction using Deep Networks in Atari Games"](https://arxiv.org/abs/1507.08750) Oh, Guo, Lee, Lewis, Singh
+>	"Motivated by vision-based reinforcement learning problems, in particular Atari games from the recent benchmark Aracade Learning Environment, we consider spatio-temporal prediction problems where future (image-)frames are dependent on control variables or actions as well as previous frames. While not composed of natural scenes, frames in Atari games are high-dimensional in size, can involve tens of objects with one or more objects being controlled by the actions directly and many other objects being influenced indirectly, can involve entry and departure of objects, and can involve deep partial observability. We propose and evaluate two deep neural network architectures that consist of encoding, action-conditional transformation, and decoding layers based on convolutional neural networks and recurrent neural networks. Experimental results show that the proposed architectures are able to generate visually-realistic frames that are also useful for control over approximately 100-step action-conditional futures in some games. To the best of our knowledge, this paper is the first to make and evaluate long-term predictions on high-dimensional video conditioned by control inputs."
+
+>	"Modeling videos (i.e., building a generative model) is still a very challenging problem because it usually involves high-dimensional natural-scene data with complex temporal dynamics. Thus, recent studies have mostly focused on modeling simple video data, such as bouncing balls or small video patches, where the next frame is highly predictable based on the previous frames. In many applications, however, future frames are not only dependent on previous frames but also on additional control or action variables. For example, the first-person-view in a vehicle is affected by wheel-steering and acceleration actions. The camera observation of a robot is similarly dependent on its movement and changes of its camera angle. More generally, in vision-based reinforcement learning problems, learning to predict future images conditioned on future actions amounts to learning a model of the dynamics of the agent-environment interaction; such transition-models are an essential component of model-based learning approaches to RL."
+
+>	"The encoding part computes high-level abstractions of input frames, the action-conditional transformation part predicts the abstraction of the next frame conditioned on the action, and finally the decoding part maps the predicted high-level abstraction to a detailed frame. The feedforward architecture takes the last 4 frames as input while the recurrent architecture takes just the last frame but has recurrent connections. Our experimental results on predicting images in Atari games show that our architectures are able to generate realistic frames over 100-step action-conditional future frames without diverging. We show that the representations learned by our architectures 1) approximately capture natural similarity among actions, and 2) discover which objects are directly controlled by the agent’s actions and which are only indirectly influenced or not controlled at all. We evaluated the usefulness of our architectures for control in two ways: 1) by replacing emulator frames with predicted frames in a previously-learned model-free controller (DQN; DeepMind’s state of the art Deep-Q-Network for Atari Games), and 2) by using the predicted frames to drive a more informed than random exploration strategy to improve a model-free controller (also DQN)."
+
 >	approximate visitation counting in a learned state embedding using Gaussian kernels
 
-  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#action-conditional-video-prediction-using-deep-networks-in-atari-games-oh-guo-lee-lewis-singh>
+  - <https://sites.google.com/a/umich.edu/junhyuk-oh/action-conditional-video-prediction> (demo)
+  - `video` <https://youtu.be/igm38BakyAg?t=15m26s> (Lee)
+  - `video` <http://research.microsoft.com/apps/video/default.aspx?id=259646> (17:30)
+  - `code` <https://github.com/junhyukoh/nips2015-action-conditional-video-prediction>
 
 
 #### ["Unifying Count-Based Exploration and Intrinsic Motivation"](http://arxiv.org/abs/1606.01868) Bellemare, Srinivasan, Ostrovski, Schaul, Saxton, Munos
@@ -2679,7 +2733,7 @@ interesting recent papers:
 
 ----
 #### ["Exploration by Random Network Distillation"](https://arxiv.org/abs/1810.12894) Burda, Edwards, Storkey, Klimov
-  `exploration guided by prediction error` `RND`
+  `RND` `prediction error`
 >	"In general, prediction errors can be attributed to a number of factors:  
 >	1. Amount of training data. Prediction error is high where few similar examples were seen by the predictor (epistemic uncertainty).  
 >	2. Stochasticity. Prediction error is high because the target function is stochastic (aleatoric uncertainty). Stochastic transitions are a source of such error for forward dynamics prediction.  
@@ -2694,7 +2748,7 @@ interesting recent papers:
   - `code` <https://github.com/openai/random-network-distillation>
 
 #### ["Large-Scale Study of Curiosity-Driven Learning"](https://arxiv.org/abs/1808.04355) Burda, Edwards, Pathak, Storkey, Darrell, Efros
-  `exploration guided by prediction error`
+  `prediction error`
 >	"Reinforcement learning algorithms rely on carefully engineering environment rewards that are extrinsic to the agent. However, annotating each environment with hand-designed, dense rewards is not scalable, motivating the need for developing reward functions that are intrinsic to the agent. Curiosity is a type of intrinsic reward function which uses prediction error as reward signal. In this paper: (a) We perform the first large-scale study of purely curiosity-driven learning, i.e. without any extrinsic rewards, across 54 standard benchmark environments, including the Atari game suite. Our results show surprisingly good performance, and a high degree of alignment between the intrinsic curiosity objective and the hand-designed extrinsic rewards of many game environments. (b) We investigate the effect of using different feature spaces for computing prediction error and show that random features are sufficient for many popular RL game benchmarks, but learned features appear to generalize better (e.g. to novel game levels in Super Mario Bros.). (c) We demonstrate limitations of the prediction-based rewards in stochastic setups."
 
 >	"Authors found that curiosity is correlated with the actual objectives of many environments, and report that using random features mitigates some of the non-stationarity implicit in methods based on curiosity."
@@ -2707,7 +2761,7 @@ interesting recent papers:
 
 
 #### ["Curiosity-driven Exploration by Self-supervised Prediction"](https://arxiv.org/abs/1705.05363) Pathak, Agrawal, Efros, Darrell
-  `ICM`
+  `ICM` `prediction error`
 >	"In many real-world scenarios, rewards extrinsic to the agent are extremely sparse, or absent altogether. In such cases, curiosity can serve as an intrinsic reward signal to enable the agent to explore its environment and learn skills that might be useful later in its life. We formulate curiosity as the error in an agent's ability to predict the consequence of its own actions in a visual feature space learned by a self-supervised inverse dynamics model. Our formulation scales to high-dimensional continuous state spaces like images, bypasses the difficulties of directly predicting pixels, and, critically, ignores the aspects of the environment that cannot affect the agent. The proposed approach is evaluated in two environments: VizDoom and Super Mario Bros. Three broad settings are investigated: 1) sparse extrinsic reward, where curiosity allows for far fewer interactions with the environment to reach the goal; 2) exploration with no extrinsic reward, where curiosity pushes the agent to explore more efficiently; and 3) generalization to unseen scenarios (e.g. new levels of the same game) where the knowledge gained from earlier experience helps the agent explore new places much faster than starting from scratch."
 
 >	"Our main contribution is in designing an intrinsic reward signal based on prediction error of the agent’s knowledge about its environment that scales to high-dimensional continuous state spaces like images, bypasses the hard problem of predicting pixels and is unaffected by the unpredictable aspects of the environment that do not affect the agent."
@@ -2725,33 +2779,6 @@ interesting recent papers:
   - `post` <https://navneet-nmk.github.io/2018-08-10-first-post>
   - `code` <https://github.com/pathak22/noreward-rl>
   - `code` <https://github.com/navneet-nmk/pytorch-rl/blob/master/models/CuriosityDrivenExploration.py>
-
-
-#### ["Reinforcement Learning with Unsupervised Auxiliary Tasks"](http://arxiv.org/abs/1611.05397) Jaderberg, Mnih, Czarnecki, Schaul, Leibo, Silver, Kavukcuoglu
-  `UNREAL`
->	"Deep reinforcement learning agents have achieved state-of-the-art results by directly maximising cumulative reward. However, environments contain a much wider variety of possible training signals. In this paper, we introduce an agent that also maximises many other pseudo-reward functions simultaneously by reinforcement learning. All of these tasks share a common representation that, like unsupervised learning, continues to develop in the absence of extrinsic rewards. We also introduce a novel mechanism for focusing this representation upon extrinsic rewards, so that learning can rapidly adapt to the most relevant aspects of the actual task. Our agent significantly outperforms the previous state-of-theart on Atari, averaging 880% expert human performance, and a challenging suite of first-person, three-dimensional Labyrinth tasks leading to a mean speedup in learning of 10× and averaging 87% expert human performance on Labyrinth."
-
->	"Auxiliary tasks:
-	- pixel changes: learn a policy for maximally changing the pixels in a grid of cells overlaid over the images
-	- network features: learn a policy for maximally activating units in a specific hidden layer
-	- reward prediction: predict the next reward given some historical context
-	- value function replay: value function regression for the base agent with varying window for n-step returns"
-
->	"By using these tasks we force the agent to learn about the controllability of its environment and the sorts of sequences which lead to rewards, and all of this shapes the features of the agent."
-
->	"This approach exploits the multithreading capabilities of standard CPUs. The idea is to execute many instances of our agent in parallel, but using a shared model. This provides a viable alternative to experience replay, since parallelisation also diversifies and decorrelates the data. Our asynchronous actor-critic algorithm, A3C, combines a deep Q-network with a deep policy network for selecting actions. It achieves state-of-the-art results, using a fraction of the training time of DQN and a fraction of the resource consumption of Gorila."
-
-  - `post` <https://deepmind.com/blog/reinforcement-learning-unsupervised-auxiliary-tasks/>
-  - `video` <https://youtube.com/watch?v=Uz-zGYrYEjA> (demo)
-  - `video` <https://youtube.com/watch?v=VVLYTqZJrXY> (Jaderberg)
-  - `video` <https://facebook.com/iclr.cc/videos/1712224178806641?t=4545> (Jaderberg)
-  - `video` <https://youtu.be/bsuvM1jO-4w?t=20m7s> (Mnih)
-  - `video` <https://youtu.be/Yvll3P1UW5k?t=8m42s> (Abbeel)
-  - `video` <https://youtube.com/watch?v=-YiMVR3HEuY> (Kilcher)
-  - `video` <https://youtu.be/0Ey02HT_1Ho?t=1m18s> (Steenbrugge)
-  - `video` <https://yadi.sk/i/_2_0yqeW3HDbcn> (18:25) (Panin) `in russian`
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1611.05397>
-  - `code` <https://github.com/miyosuda/unreal>
 
 
 #### ["Improving Policy Gradient by Exploring Under-appreciated Rewards"](https://arxiv.org/abs/1611.09321) Nachum, Norouzi, Schuurmans
@@ -2791,29 +2818,22 @@ interesting recent papers:
 
 
 ---
-### interesting papers - exploration and intrinsic motivation - competence-based models - maximizing incompetence motivation
+### interesting papers - exploration and intrinsic motivation - competence-based models - maximizing competence progress
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)
 
 ----
-#### ["Intrinsic Motivation and Automatic Curricula via Asymmetric Self-Play"](https://arxiv.org/abs/1703.05407) Sukhbaatar, Lin, Kostrikov, Synnaeve, Szlam
->	"We describe a simple scheme that allows an agent to learn about its environment in an unsupervised manner. Our scheme pits two versions of the same agent, Alice and Bob, against one another. Alice proposes a task for Bob to complete; and then Bob attempts to complete the task. In this work we will focus on two kinds of environments: (nearly) reversible environments and environments that can be reset. Alice will "propose" the task by doing a sequence of actions and then Bob must undo or repeat them, respectively. Via an appropriate reward structure, Alice and Bob automatically generate a curriculum of exploration, enabling unsupervised training of the agent. When Bob is deployed on an RL task within the environment, this unsupervised training reduces the number of supervised episodes needed to learn, and in some cases converges to a higher reward."
+#### ["Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes"](http://arxiv.org/abs/0812.4360) Schmidhuber
+  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#driven-by-compression-progress-a-simple-principle-explains-essential-aspects-of-subjective-beauty-novelty-surprise-interestingness-attention-curiosity-creativity-art-science-music-jokes-schmidhuber>
 
-  - `video` <https://youtube.com/watch?v=EHHiFwStqaA> (demo)
-  - `video` <https://youtube.com/watch?v=X1O21ziUqUY> (Fergus)
-  - `video` <https://youtube.com/watch?v=pSJC9hNt3Uw> (Szlam)
-
+#### ["Automated Curriculum Learning for Neural Networks"](https://arxiv.org/abs/1704.03003) Graves, Bellemare, Menick, Munos, Kavukcuoglu
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu>
 
 #### ["Automatic Goal Generation for Reinforcement Learning Agents"](https://arxiv.org/abs/1705.06366) Held, Geng, Florensa, Abbeel
 >	"Reinforcement learning is a powerful technique to train an agent to perform a task. However, an agent that is trained using reinforcement learning is only capable of achieving the single task that is specified via its reward function. Such an approach does not scale well to settings in which an agent needs to perform a diverse set of tasks, such as navigating to varying positions in a room or moving objects to varying locations. Instead, we propose a method that allows an agent to automatically discover the range of tasks that it is capable of performing in its environment. We use a generator network to propose tasks for the agent to try to achieve, each task being specified as reaching a certain parametrized sub-set of the state-space. The generator network is optimized using adversarial training to produce tasks that are always at the appropriate level of difficulty for the agent. Our method thus automatically produces a curriculum of tasks for the agent to learn. We show that, by using this framework, an agent can efficiently and automatically learn to perform a wide set of tasks without requiring any prior knowledge of its environment. Our method can also learn to achieve tasks with sparse rewards, which traditionally pose significant challenges."
 
   - <https://sites.google.com/view/goalgeneration4rl>
   - `video` <https://facebook.com/icml.imls/videos/429963197518201?t=2655> (Florensa)
-
-
-#### ["Automated Curriculum Learning for Neural Networks"](https://arxiv.org/abs/1704.03003) Graves, Bellemare, Menick, Munos, Kavukcuoglu
-
-  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu>
 
 
 
@@ -3013,16 +3033,7 @@ interesting recent papers:
 
 
 #### ["Action-Conditional Video Prediction using Deep Networks in Atari Games"](http://arxiv.org/abs/1507.08750) Oh, Guo, Lee, Lewis, Singh
->	"Motivated by vision-based reinforcement learning problems, in particular Atari games from the recent benchmark Aracade Learning Environment, we consider spatio-temporal prediction problems where future (image-)frames are dependent on control variables or actions as well as previous frames. While not composed of natural scenes, frames in Atari games are high-dimensional in size, can involve tens of objects with one or more objects being controlled by the actions directly and many other objects being influenced indirectly, can involve entry and departure of objects, and can involve deep partial observability. We propose and evaluate two deep neural network architectures that consist of encoding, action-conditional transformation, and decoding layers based on convolutional neural networks and recurrent neural networks. Experimental results show that the proposed architectures are able to generate visually-realistic frames that are also useful for control over approximately 100-step action-conditional futures in some games. To the best of our knowledge, this paper is the first to make and evaluate long-term predictions on high-dimensional video conditioned by control inputs."
-
->	"Modeling videos (i.e., building a generative model) is still a very challenging problem because it usually involves high-dimensional natural-scene data with complex temporal dynamics. Thus, recent studies have mostly focused on modeling simple video data, such as bouncing balls or small video patches, where the next frame is highly predictable based on the previous frames. In many applications, however, future frames are not only dependent on previous frames but also on additional control or action variables. For example, the first-person-view in a vehicle is affected by wheel-steering and acceleration actions. The camera observation of a robot is similarly dependent on its movement and changes of its camera angle. More generally, in vision-based reinforcement learning problems, learning to predict future images conditioned on future actions amounts to learning a model of the dynamics of the agent-environment interaction; such transition-models are an essential component of model-based learning approaches to RL."
-
->	"The encoding part computes high-level abstractions of input frames, the action-conditional transformation part predicts the abstraction of the next frame conditioned on the action, and finally the decoding part maps the predicted high-level abstraction to a detailed frame. The feedforward architecture takes the last 4 frames as input while the recurrent architecture takes just the last frame but has recurrent connections. Our experimental results on predicting images in Atari games show that our architectures are able to generate realistic frames over 100-step action-conditional future frames without diverging. We show that the representations learned by our architectures 1) approximately capture natural similarity among actions, and 2) discover which objects are directly controlled by the agent’s actions and which are only indirectly influenced or not controlled at all. We evaluated the usefulness of our architectures for control in two ways: 1) by replacing emulator frames with predicted frames in a previously-learned model-free controller (DQN; DeepMind’s state of the art Deep-Q-Network for Atari Games), and 2) by using the predicted frames to drive a more informed than random exploration strategy to improve a model-free controller (also DQN)."
-
-  - <https://sites.google.com/a/umich.edu/junhyuk-oh/action-conditional-video-prediction> (demo)
-  - `video` <https://youtu.be/igm38BakyAg?t=15m26s> (Lee)
-  - `video` <http://research.microsoft.com/apps/video/default.aspx?id=259646> (17:30)
-  - `code` <https://github.com/junhyukoh/nips2015-action-conditional-video-prediction>
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#action-conditional-video-prediction-using-deep-networks-in-atari-games-oh-guo-lee-lewis-singh>
 
 
 #### ["Deep Learning for Real-Time Atari Game Play Using Offline Monte-Carlo Tree Search Planning"](https://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning) Guo, Singh, Lee, Lewis, Wang

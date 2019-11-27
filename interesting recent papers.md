@@ -6,7 +6,7 @@ interesting recent papers:
   * [**meta-learning**](#meta-learning)
   * [**few-shot learning**](#few-shot-learning)
   * [**unsupervised learning**](#unsupervised-learning)
-  * [**self-supervised learning**](#self-supervised learning)
+  * [**self-supervised learning**](#self-supervised-learning)
   * [**generative models**](#generative-models)
     - [**generative adversarial networks**](#generative-models---generative-adversarial-networks)
     - [**variational autoencoders**](#generative-models---variational-autoencoders)
@@ -1798,6 +1798,8 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"RMA has a long term memory and chooses to save and load working memory represented by the LSTM's hidden state."  
 >	"They provide an agent with an external memory and the unsupervised task of reconstructing its inputs (both states and rewards). They use memory reads as a way to identify related elements in sequences, and use those to transfer the value of states providing delayed rewards to the bootstrapping target of contributing elements."  
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1810.06721>
+  - `paper` <https://nature.com/articles/s41467-019-13073-w>
+  - `code` <https://github.com/deepmind/tvt>
 
 #### ["RUDDER: Return Decomposition for Delayed Rewards"](https://arxiv.org/abs/1806.07857) Arjona-Medina, Gillhofer, Widrich, Unterthiner, Hochreiter
   `RUDDER` `credit assignment`
@@ -2733,19 +2735,15 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/DmasOMKbczg?t=4m31s> (Lipton)
   - `video` <https://youtu.be/77FWffYuQu0?t=15m54s> (Lipton)
 
-#### ["Exploration Potential"](http://arxiv.org/abs/1609.04994) Leike
-  `approximate bayesian exploration` `information gain`
->	"We introduce exploration potential, a quantity that measures how much a reinforcement learning agent has explored its environment class. In contrast to information gain, exploration potential takes the problem's reward structure into account. This leads to an exploration criterion that is both necessary and sufficient for asymptotic optimality (learning to act optimally across the entire environment class). Our experiments in multi-armed bandits use exploration potential to illustrate how different algorithms make the tradeoff between exploration and exploitation."  
-
 ----
 #### ["Count-Based Exploration with the Successor Representation"](https://arxiv.org/abs/1807.11622) Machado, Bellemare, Bowling
-  `exploration guided by observation novelty`
+  `uncertainty motivation` `novelty`
 >	"While the traditional successor representation is a representation that defines state generalization by the similarity of successor states, the substochastic successor representation is also able to implicitly count the number of times each state (or feature) has been observed. This extension connects two until now disjoint areas of research."  
   - `video` <https://youtube.com/watch?v=bp3l8BNrefk> (Machado)
   - `video` <https://youtu.be/Tge7LPT9vGA?t=9m36s> (Machado)
 
 #### ["Count-Based Exploration with Neural Density Models"](http://arxiv.org/abs/1703.01310) Ostrovski, Bellemare, Oord, Munos
-  `Reactor-PixelCNN` `exploration guided by observation novelty`
+  `Reactor-PixelCNN` `uncertainty motivation` `novelty`
 >	"PixelCNN for exploration, neural alternative to Context Tree Switching"  
   - `video` <http://youtube.com/watch?v=qSfd27AgcEk> (Bellemare)
   - `video` <https://vimeo.com/238243932> (Bellemare)
@@ -2753,7 +2751,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `paper` ["Benchmarking Bonus-Based Exploration Methods on the Arcade Learning Environment"](https://drive.google.com/file/d/1I05c4-d9OsNwGZnLx85fR8dnX-yVoTWe) by Taiga et al.
 
 #### ["EX2: Exploration with Exemplar Models for Deep Reinforcement Learning"](https://arxiv.org/abs/1703.01260) Fu, Co-Reyes, Levine
-  `exploration guided by observation novelty`
+  `uncertainty motivation` `novelty`
 >	"Many of the most effective exploration techniques rely on tabular representations, or on the ability to construct a generative model over states and actions. This paper introduces a novel approach, EX2, which approximates state visitation densities by training an ensemble of discriminators, and assigns reward bonuses to rarely visited states."  
   - <https://sites.google.com/view/ex2exploration> (demo)
   - `video` <https://facebook.com/nipsfoundation/videos/1554741347950432?t=4515> (Fu)
@@ -2761,72 +2759,85 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <https://github.com/justinjfu/exemplar_models>
 
 #### ["#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning"](http://arxiv.org/abs/1611.04717) Tang, Houthooft, Foote, Stooke, Chen, Duan, Schulman, Turck, Abbeel
-  `exploration guided by observation novelty`
+  `uncertainty motivation` `novelty`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#exploration-a-study-of-count-based-exploration-for-deep-reinforcement-learning-tang-et-al>
 
 ----
+#### ["Model-Based Active Exploration"](https://arxiv.org/abs/1810.12162) Shyam, Jaskowski, Gomez
+  `MAX` `information gain motivation` `planning to explore`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#model-based-active-exploration-shyam-jaskowski-gomez>
+
+#### ["Surprise-Based Intrinsic Motivation for Deep Reinforcement Learning"](http://arxiv.org/abs/1703.01732) Achiam, Sastry
+  `information gain motivation` `predictive novelty motivation` `prediction error`
+>	"Authors present two tractable approximations to their framework - one which ignores the stochasticity of the true environmental dynamics, and one which approximates the rate of information gain (somewhat similar to Schmidhuber's formal theory of creativity, fun and intrinsic motivation)."  
+>	"Stadie et al. learn deterministic dynamics models by minimizing Euclidean loss - whereas in our work, we learn stochastic dynamics with cross entropy loss - and use L2 prediction errors for intrinsic motivation."  
+>	"Our results suggest that surprisal is a viable alternative to VIME in terms of performance, and is highly favorable in terms of computational cost. In VIME, a backwards pass through the dynamics model must be computed for every transition tuple separately to compute the intrinsic rewards, whereas our surprisal bonus only requires forward passes through the dynamics model for intrinsic reward computation. Furthermore, our dynamics model is substantially simpler than the Bayesian neural network dynamics model of VIME. In our speed test, our bonus had a per-iteration speedup of a factor of 3 over VIME."  
+
+#### ["Exploration Potential"](http://arxiv.org/abs/1609.04994) Leike
+  `information gain motivation`
+>	"We introduce exploration potential, a quantity that measures how much a reinforcement learning agent has explored its environment class. In contrast to information gain, exploration potential takes the problem's reward structure into account. This leads to an exploration criterion that is both necessary and sufficient for asymptotic optimality (learning to act optimally across the entire environment class). Our experiments in multi-armed bandits use exploration potential to illustrate how different algorithms make the tradeoff between exploration and exploitation."  
+
+----
 #### ["Empowerment-driven Exploration using Mutual Information Estimation"](https://arxiv.org/abs/1810.05533) Kumar
-  `exploration guided by empowerment`
+  `empowerment`
 >	"using Mutual Information Neural Estimation to calculate empowerment"  
   - `post` <https://navneet-nmk.github.io/2018-08-26-empowerment>
   - `code` <https://github.com/navneet-nmk/pytorch-rl/blob/master/models/empowerment_models.py>
 
 #### ["Unsupervised Real-Time Control through Variational Empowerment"](https://arxiv.org/abs/1710.05101) Karl et al.
-  `exploration guided by empowerment`
+  `empowerment`
 
 #### ["Variational Intrinsic Control"](http://arxiv.org/abs/1611.07507) Gregor, Rezende, Wierstra
-  `exploration guided by empowerment`
+  `empowerment`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#variational-intrinsic-control-gregor-rezende-wierstra>
 
 ----
 #### ["Exploration by Random Network Distillation"](https://arxiv.org/abs/1810.12894) Burda, Edwards, Storkey, Klimov
-  `RND` `exploration guided by prediction error` `RND`
+  `RND` `predictive novelty motivation` `prediction error`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#exploration-by-random-network-distillation-burda-edwards-storkey-klimov>
 
 #### ["Large-Scale Study of Curiosity-Driven Learning"](https://arxiv.org/abs/1808.04355) Burda, Edwards, Pathak, Storkey, Darrell, Efros
-  `exploration guided by prediction error`
+  `predictive novelty motivation` `prediction error`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#large-scale-study-of-curiosity-driven-learning-burda-edwards-pathak-storkey-darrell-efros>
 
 #### ["Learning to Play with Intrinsically-Motivated Self-Aware Agents"](https://arxiv.org/abs/1802.07442) Haber, Mrowca, Fei-Fei, Yamins
-  `exploration guided by prediction error`
+  `predictive novelty motivation` `prediction error`
+>	"Infants are experts at playing, with an amazing ability to generate novel structured behaviors in unstructured environments that lack clear extrinsic reward signals. We seek to mathematically formalize these abilities using a neural network that implements curiosity-driven intrinsic motivation. Using a simple but ecologically naturalistic simulated environment in which an agent can move and interact with objects it sees, we propose a "world-model" network that learns to predict the dynamic consequences of the agent's actions. Simultaneously, we train a separate explicit "self-model" that allows the agent to track the error map of its own world-model, and then uses the self-model to adversarially challenge the developing world-model."  
+>	"We demonstrate that this policy causes the agent to explore novel and informative interactions with its environment, leading to the generation of a spectrum of complex behaviors, including ego-motion prediction, object attention, and object gathering. Moreover, the world-model that the agent learns supports improved performance on object dynamics prediction, detection, localization and recognition tasks."  
 
 #### ["Curiosity-driven Reinforcement Learning with Homeostatic Regulation"](https://arxiv.org/abs/1801.07440) Abril, Kanai
-  `exploration guided by prediction error`
+  `predictive novelty motivation` `prediction error`
 >	"Authors extend existing approach by compensating the heterostacity drive encouraged by the curiosity reward with an additional homeostatic drive. The first component implements the heterostatic motivation (same as in Pathak et al 17). It refers to the tendency to push away agent from its habitual state. The second component implements the homeostatic motivation. It encourages taking actions at that lead to future states st+1 where the corresponding future action at+1 gives additional information about st+1."  
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1801.07440>
 
 #### ["Curiosity-driven Exploration by Self-supervised Prediction"](https://arxiv.org/abs/1705.05363) Pathak, Agrawal, Efros, Darrell
-  `ICM` `exploration guided by prediction error`
+  `ICM` `predictive novelty motivation` `prediction error`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#curiosity-driven-exploration-by-self-supervised-prediction-pathak-agrawal-efros-darrell>
 
 #### ["Surprise-Based Intrinsic Motivation for Deep Reinforcement Learning"](http://arxiv.org/abs/1703.01732) Achiam, Sastry
-  `exploration guided by prediction error`
->	"Authors present two tractable approximations to their framework - one which ignores the stochasticity of the true environmental dynamics, and one which approximates the rate of information gain (somewhat similar to Schmidhuber's formal theory of creativity, fun and intrinsic motivation)."  
->	"Stadie et al. learn deterministic dynamics models by minimizing Euclidean loss - whereas in our work, we learn stochastic dynamics with cross entropy loss - and use L2 prediction errors for intrinsic motivation."  
->	"Our results suggest that surprisal is a viable alternative to VIME in terms of performance, and is highly favorable in terms of computational cost. In VIME, a backwards pass through the dynamics model must be computed for every transition tuple separately to compute the intrinsic rewards, whereas our surprisal bonus only requires forward passes through the dynamics model for intrinsic reward computation. Furthermore, our dynamics model is substantially simpler than the Bayesian neural network dynamics model of VIME. In our speed test, our bonus had a per-iteration speedup of a factor of 3 over VIME."  
+  `predictive novelty motivation` `prediction error` `information gain motivation`
+  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#surprise-based-intrinsic-motivation-for-deep-reinforcement-learning-achiam-sastry>
 
 #### ["Learning to Perform Physics Experiments via Deep Reinforcement Learning"](http://arxiv.org/abs/1611.01843) Denil, Agrawal, Kulkarni, Erez, Battaglia, de Freitas
-  `exploration guided by prediction error`
+  `predictive novelty motivation` `prediction error`
 >	"By letting our agents conduct physical experiments in an interactive simulated environment, they learn to manipulate objects and observe the consequences to infer hidden object properties."  
 >	"By systematically manipulating the problem difficulty and the cost incurred by the agent for performing experiments, we found that agents learn different strategies that balance the cost of gathering information against the cost of making mistakes in different situations."  
 >	"Exploration bonus can be defined as the prediction error for a problem related to the agent’s transitions. Non-generic prediction problems can be used if specialized information about the environment is available, like predicting physical properties of objects the agent interacts with."  
   - `video` <https://youtu.be/SAcHyzMdbXc?t=16m6s> (de Freitas)
 
 ----
-#### ["Skew-Fit: State-Covering Self-Supervised Reinforcement Learning"](https://arxiv.org/abs/1903.03698) Pong et al.
-  `Skew-Fit` `exploration guided by additional tasks`
->	"In standard reinforcement learning, each new skill requires a manually-designed reward function, which takes considerable manual effort and engineering. Self-supervised goal setting has the potential to automate this process, enabling an agent to propose its own goals and acquire skills that achieve these goals. However, such methods typically rely on manually-designed goal distributions, or heuristics to force the agent to explore a wide range of states. We propose a formal exploration objective for goal-reaching policies that maximizes state coverage. We show that this objective is equivalent to maximizing the entropy of the goal distribution together with goal reaching performance, where goals correspond to entire states."  
->	"Skew-Fit trains a generative model to closely approximate a uniform distribution over valid states, using data obtained via goal-conditioned reinforcement learning. Our method iteratively re-weights the samples for training the generative model, such that its entropy increases over the set of possible states, and our theoretical analysis gives conditions under which Skew-Fit converges to the uniform distribution. When such a model is used to choose goals for exploration and to relabeling goals for training, the resulting method results in much better coverage of the state space, enabling our method to explore effectively. Our experiments show that it produces quantifiable improvements when used along with goal-conditioned reinforcement learning on simulated robotic manipulation tasks, and can be used to learn a complex door opening skill to reach a 100% success rate directly on a real robot, without any human-provided reward supervision."  
-  - <https://sites.google.com/view/skew-fit>
-  - `video` <https://youtube.com/watch?v=DWSZHEvZO4o>
-  - `video` <https://youtu.be/jAPJeJK18mw?t=10m28s> (Levine)
+#### ["Automated Curriculum Learning for Neural Networks"](https://arxiv.org/abs/1704.03003) Graves, Bellemare, Menick, Munos, Kavukcuoglu
+  `learning progress motivation` `prediction gain` `complexity gain` `curriculum learning`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu>
 
+----
 #### ["Diversity is All You Need: Learning Skills without a Reward Function"](https://arxiv.org/abs/1802.06070) Eysenbach, Gupta, Ibarz, Levine
-  `DIAYN` `exploration guided by additional tasks`
+  `DIAYN` `skills discovery`
 >	"Intelligent creatures can explore their environments and learn useful skills without supervision. In this paper, we propose DIAYN ('Diversity is All You Need'), a method for learning useful skills without a reward function. Our proposed method learns skills by maximizing an information theoretic objective using a maximum entropy policy. On a variety of simulated robotic tasks, we show that this simple objective results in the unsupervised emergence of diverse skills, such as walking and jumping. In a number of reinforcement learning benchmark environments, our method is able to learn a skill that solves the benchmark task despite never receiving the true task reward. We show how pretrained skills can provide a good parameter initialization for downstream tasks, and can be composed hierarchically to solve complex, sparse reward tasks. Our results suggest that unsupervised discovery of skills can serve as an effective pretraining mechanism for overcoming challenges of exploration and data efficiency in reinforcement learning."  
 
+----
 #### ["Learning by Playing - Solving Sparse Reward Tasks from Scratch"](https://arxiv.org/abs/1802.10567) Riedmiller, Hafner, Lampe, Neunert, Degrave, Wiele, Mnih, Heess, Springenberg
-  `SAC-X` `exploration guided by additional tasks`
+  `SAC-X` `auxiliary tasks`
 >	"SAC-X simultaneously learns intention policies on a set of auxiliary tasks, and actively schedules and executes these to explore its observation space - in search for sparse rewards of externally defined target tasks. Utilizing simple auxiliary tasks enables SAC-X to learn complicated target tasks from rewards defined in a ’pure’, sparse, manner: only the end goal is specified, but not the solution path."  
 >	"It can be interpreted as a generalization of the IUA and UNREAL objectives to stochastic continuous controls – in combination with active execution of auxiliary tasks and (potentially learned) scheduling within an episode."  
 >	"It can also be understood as a hierarchical extension of Hindsight Experience Replay, where the agent behaves according to a fixed set of semantically grounded auxiliary tasks – instead of following random goals – and optimizes over the task selection."  
@@ -2837,15 +2848,15 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://facebook.com/icml.imls/videos/429963197518201?t=1401> (Hafner)
 
 #### ["The Intentional Unintentional Agent: Learning to Solve Many Continuous Control Tasks Simultaneously"](https://arxiv.org/abs/1707.03300) Cabi, Colmenarejo, Hoffman, Denil, Wang, de Freitas
-  `IUA` `exploration guided by additional tasks`
+  `IUA` `auxiliary tasks`
   - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#the-intentional-unintentional-agent-learning-to-solve-many-continuous-control-tasks-simultaneously-cabi-colmenarejo-hoffman-denil-wang-de-freitas>
 
 #### ["Reinforcement Learning with Unsupervised Auxiliary Tasks"](http://arxiv.org/abs/1611.05397) Jaderberg, Mnih, Czarnecki, Schaul, Leibo, Silver, Kavukcuoglu
-  `UNREAL` `exploration guided by additional tasks`
+  `UNREAL` `auxiliary tasks`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#reinforcement-learning-with-unsupervised-auxiliary-tasks-jaderberg-mnih-czarnecki-schaul-leibo-silver-kavukcuoglu>
 
 #### ["Learning to Navigate in Complex Environments"](http://arxiv.org/abs/1611.03673) Mirowski, Pascanu, Viola, Soyer, Ballard, Banino, Denil, Goroshin, Sifre, Kavukcuoglu, Kumaran, Hadsell
-  `exploration guided by additional tasks`
+  `auxiliary tasks`
 >	"Auxiliary tasks:  
 >	- depth predictor  
 >	- loop closure predictor  
@@ -2857,25 +2868,28 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <https://github.com/tgangwani/GA3C-DeepNavigation>
 
 #### ["Loss is Its Own Reward: Self-Supervision for Reinforcement Learning"](http://arxiv.org/abs/1612.07307) Shelhamer, Mahmoudieh, Argus, Darrell
-  `exploration guided by additional tasks`
+  `auxiliary tasks`
 
 #### ["Feature Control as Intrinsic Motivation for Hierarchical Reinforcement Learning"](https://arxiv.org/abs/1705.06769) Dilokthanakul, Kaplanis, Pawlowski, Shanahan
-  `exploration guided by additional tasks`
+  `auxiliary tasks`
 >	"Extracting reward from features makes sparse-reward environment into dense one. Authors incorporate this strategy to solve hierarchical RL."  
 >	"Authors solve Montezuma with Options framework (but without dynamic terminal condition). The agent is encouraged to change pixel or visual-feature given the option from meta-control and this dense feedback makes agent to learn basic skill under high sparsity."  
 
 ----
-#### ["Overcoming Exploration in Reinforcement Learning with Demonstrations"](https://arxiv.org/abs/1709.10089) Nair, McGrew, Andrychowicz, Zaremba, Abbeel
-  `Q-filter` `exploration guided by learning progress and demonstrations` `Q-filter`
->	"We use demonstrations to overcome the exploration problem and successfully learn to perform long-horizon, multi-step robotics tasks with continuous control such as stacking blocks with a robot arm."  
->	"Our method, which builds on top of Deep Deterministic Policy Gradients and Hindsight Experience Replay, provides an order of magnitude of speedup over RL on simulated robotics tasks."  
->	"Our method is able to solve tasks not solvable by either RL or behavior cloning alone, and often ends up outperforming the demonstrator policy."  
-  - <http://ashvin.me/demoddpg-website/> (demo)
-  - `video` <https://vimeo.com/252186855> (Nair)
-  - `post` <https://danieltakeshi.github.io/2018/02/28/sample-efficient-rl>
+#### ["Automated Curriculum Learning for Neural Networks"](https://arxiv.org/abs/1704.03003) Graves, Bellemare, Menick, Munos, Kavukcuoglu
+  `curriculum learning` `learning progress motivation` `prediction gain` `complexity gain`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu>
+
+#### ["Skew-Fit: State-Covering Self-Supervised Reinforcement Learning"](https://arxiv.org/abs/1903.03698) Pong et al.
+  `Skew-Fit` `curriculum learning`
+>	"In standard reinforcement learning, each new skill requires a manually-designed reward function, which takes considerable manual effort and engineering. Self-supervised goal setting has the potential to automate this process, enabling an agent to propose its own goals and acquire skills that achieve these goals. However, such methods typically rely on manually-designed goal distributions, or heuristics to force the agent to explore a wide range of states. We propose a formal exploration objective for goal-reaching policies that maximizes state coverage. We show that this objective is equivalent to maximizing the entropy of the goal distribution together with goal reaching performance, where goals correspond to entire states."  
+>	"Skew-Fit trains a generative model to closely approximate a uniform distribution over valid states, using data obtained via goal-conditioned reinforcement learning. Our method iteratively re-weights the samples for training the generative model, such that its entropy increases over the set of possible states, and our theoretical analysis gives conditions under which Skew-Fit converges to the uniform distribution. When such a model is used to choose goals for exploration and to relabeling goals for training, the resulting method results in much better coverage of the state space, enabling our method to explore effectively. Our experiments show that it produces quantifiable improvements when used along with goal-conditioned reinforcement learning on simulated robotic manipulation tasks, and can be used to learn a complex door opening skill to reach a 100% success rate directly on a real robot, without any human-provided reward supervision."  
+  - <https://sites.google.com/view/skew-fit>
+  - `video` <https://youtube.com/watch?v=DWSZHEvZO4o>
+  - `video` <https://youtu.be/jAPJeJK18mw?t=10m28s> (Levine)
 
 #### ["Hindsight Experience Replay"](https://arxiv.org/abs/1707.01495) Andrychowicz, Wolski, Ray, Schneider, Fong, Welinder, McGrew, Tobin, Abbeel, Zaremba
-  `HER` `exploration guided by learning progress`
+  `HER` `curriculum learning` `auxiliary tasks`
 >	"Get reward signal from any experience by simply assuming the goal equals whatever happened."  
 >	"HER may be seen as a form of implicit curriculum as the goals used for replay naturally shift from ones which are simple to achieve even by a random agent to more difficult ones. However, in contrast to explicit curriculum, HER does not require having any control over the distribution of initial environment states."  
 >	"Not only does HER learn with extremely sparse rewards, in our experiments it also performs better with sparse rewards than with shaped ones. These results are indicative of the practical challenges with reward shaping, and that shaped rewards would often constitute a compromise on the metric we truly care about (such as binary success/failure)."  
@@ -2897,7 +2911,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `paper` ["Universal Value Function Approximators"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#schaul-horgan-gregor-silver---universal-value-function-approximators) by Schaul et al. `summary`
 
 #### ["Reverse Curriculum Generation for Reinforcement Learning"](https://arxiv.org/abs/1707.05300) Florensa, Held, Wulfmeier, Zhang, Abbeel
-  `exploration guided by learning progress`
+  `curriculum learning`
 >	"Many tasks require to reach a desired configuration (goal) from everywhere."  
 >	"Challenging for current RL: inherently sparse rewards, most start positions get 0 reward."  
 >
@@ -2907,28 +2921,21 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/xfyK03MEZ9Q?t=7h32m35s> (Florensa)
 
 #### ["Teacher-Student Curriculum Learning"](https://arxiv.org/abs/1707.00183) Matiisen, Oliver, Cohen, Schulman
-  `exploration guided by learning progress`
-
-#### ["Automated Curriculum Learning for Neural Networks"](https://arxiv.org/abs/1704.03003) Graves, Bellemare, Menick, Munos, Kavukcuoglu
-  `exploration guided by learning progress`
-  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu>
+  `curriculum learning`
+>	"A framework for automatic curriculum learning, where the Student tries to learn a complex task and the Teacher automatically chooses subtasks from a given set for the Student to train on. We describe a family of Teacher algorithms that rely on the intuition that the Student should practice more those tasks on which it makes the fastest progress, i.e. where the slope of the learning curve is highest. In addition, the Teacher algorithms address the problem of forgetting by also choosing tasks where the Student's performance is getting worse. We demonstrate that TSCL matches or surpasses the results of carefully hand-crafted curricula in two tasks: addition of decimal numbers with LSTM and navigation in Minecraft."  
 
 #### ["Automatic Goal Generation for Reinforcement Learning Agents"](https://arxiv.org/abs/1705.06366) Held, Geng, Florensa, Abbeel
-  `exploration guided by learning progress`
+  `curriculum learning`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#automatic-goal-generation-for-reinforcement-learning-agents-held-geng-florensa-abbeel>
 
 #### ["Intrinsic Motivation and Automatic Curricula via Asymmetric Self-Play"](http://arxiv.org/abs/1703.05407) Sukhbaatar, Lin, Kostrikov, Synnaeve, Szlam, Fergus
-  `exploration guided by learning progress`
+  `curriculum learning`
 >	"self-play between the policy and a task-setter in order to automatically generate goal states which are on the border of what the current policy can achieve"  
 >	"A separate policy to find new slightly harder goals. A goal-generating policy may only generate goals in a small region of the goal-space, having difficulties to quickly cover the full set of goals. Inevitable differences in improvement rate of the goal-generating and the goal-learning agents leads to instabilities and local optima."  
   - `video` <https://youtube.com/watch?v=EHHiFwStqaA> (demo)
   - `video` <https://youtube.com/watch?v=X1O21ziUqUY> (Fergus)
   - `video` <https://youtube.com/watch?v=5dNAnCYBFN4> (Szlam)
   - `post` <http://giorgiopatrini.org/posts/2017/09/06/in-search-of-the-missing-signals/>
-
-#### ["Towards Information-Seeking Agents"](http://arxiv.org/abs/1612.02605) Bachman, Sordoni, Trischler
-  `exploration guided by learning progress`
-  - `video` <https://youtube.com/watch?v=3bSquT1zqj8> (demo)
 
 
 

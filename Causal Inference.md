@@ -9,10 +9,12 @@
 ---
 ### overview
 
-  ["Do we still need models or just more data and compute?"](https://staff.fnwi.uva.nl/m.welling/wp-content/uploads/Model-versus-Data-AI-1.pdf) by Max Welling
-
   ["The Seven Tools of Causal Inference with Reflections on Machine Learning"](https://dl.acm.org/citation.cfm?id=3241036) by Judea Pearl `paper`  
   ["Theoretical Impediments to Machine Learning"](http://web.cs.ucla.edu/~kaoru/theoretical-impediments.pdf) by Judea Pearl `paper`  
+
+  ["Causality for Machine Learning"](https://arxiv.org/abs/1911.10500) by Bernhard Scholkopf `paper`
+
+  ["Do we still need models or just more data and compute?"](https://staff.fnwi.uva.nl/m.welling/wp-content/uploads/Model-versus-Data-AI-1.pdf) by Max Welling
 
   ["ML beyond Curve Fitting: An Intro to Causal Inference and do-Calculus"](http://inference.vc/untitled) by Ferenc Huszar  
   ["Causal Inference 2: Illustrating Interventions via a Toy Example"](https://inference.vc/causal-inference-2-illustrating-interventions-in-a-toy-example) by Ferenc Huszar  
