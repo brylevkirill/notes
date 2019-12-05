@@ -66,9 +66,9 @@
 ---
 ### applications - industry
 
-  [recommender system](https://nytimes.com/interactive/2019/06/08/technology/youtube-radical.html) at YouTube ([**paper**](#top-k-off-policy-correction-for-a-reinforce-recommender-system-chen-beutel-covington-jain-belletti-chi) by Chen et al. `summary`, [talk](https://youtube.com/watch?v=HEqQ2_1XRTs) by Chen `video`, [talk](http://www.fields.utoronto.ca/video-archive/2019/02/2509-19619) by Boutilier `video`)
+  [recommender system](https://nytimes.com/interactive/2019/06/08/technology/youtube-radical.html) at YouTube ([**paper**](#top-k-off-policy-correction-for-a-reinforce-recommender-system-chen-beutel-covington-jain-belletti-chi) by Chen et al. `summary`)
 
-  [personalized web services](http://thenewstack.io/reinforcement-learning-ready-real-world/) at Microsoft (Custom Decision Service [**paper**](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) `summary`)  
+  [personalized web services](http://thenewstack.io/reinforcement-learning-ready-real-world/) at Microsoft ([Personalizer](https://azure.microsoft.com/en-us/services/cognitive-services/personalizer) service, Custom Decision Service [**paper**](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) `summary`)  
   ["Personalized Web Services"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto  
 
   [datacenter cooling](https://deepmind.com/blog/safety-first-ai-autonomous-data-centre-cooling-and-industrial-control/) at Google ([paper](https://papers.nips.cc/paper/7638-data-center-cooling-using-model-predictive-control.pdf) by Lazic et al., [patent](http://freepatentsonline.com/y2018/0204116.html))
@@ -77,7 +77,7 @@
 
 ----
 
-  ["Deep Reinforcement Learning: An Overview"](https://arxiv.org/abs/1810.06339) by Yuxi Li `book` ([post](https://medium.com/@yuxili/rl-applications-73ef685c07eb))
+  ["Reinforcement Learning Applications"](https://arxiv.org/abs/1908.06973) by Yuxi Li `paper` ([post](https://medium.com/@yuxili/rl-applications-73ef685c07eb))
 
   [**other applications**](https://yadi.sk/d/tiaE7sdi3WEhDS)
 
@@ -306,6 +306,7 @@
 
 	[TD-Gammon overview](http://techtalks.tv/talks/on-td-learning-and-links-with-deeprl-in-atari-and-alphago/63031/) by Gerry Tesauro `video`  
 	[TD-Gammon overview](http://videolectures.net/icml09_tesauro_itfyrlg/#t=784) by Gerry Tesauro `video`  
+	[TD-Gammon overview](https://youtu.be/ld28AU7DDB4?t=42m7s) by David Silver `video`  
 	[TD-Gammon overview](https://youtu.be/kZ_AUmFcZtk?t=42m29s) by David Silver `video`  
 	[TD-Gammon overview](https://youtu.be/N8_gVrIPLQM?t=7m32s) by David Silver `video`  
 
@@ -757,23 +758,34 @@
 
 ----
 
-  [**bandits**](#bandits)  
-  [**contextual bandits**](#contextual-bandits)  
-  [**bayesian exploration models**](#exploration-and-intrinsic-motivation---bayesian-exploration-models)  
-  [**auxiliary tasks**](#exploration-and-intrinsic-motivation---auxiliary-tasks)  
+  exploration:
+  - [**bandits**](#bandits)
+  - [**contextual bandits**](#contextual-bandits)
+  - [**bayesian exploration**](#exploration-and-intrinsic-motivation---bayesian-exploration)
+  - [**auxiliary tasks**](#exploration-and-intrinsic-motivation---auxiliary-tasks)
 
 ----
 
-  [**information theoretic and distributional models**](#exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models)  
-  [**predictive models**](#exploration-and-intrinsic-motivation---predictive-models)  
-  [**competence-based models**](#exploration-and-intrinsic-motivation---competence-based-models)  
-  [**morphological models**](#exploration-and-intrinsic-motivation---morphological-models)  
+  intrinsic motivation:
+  - [**information theoretic and distributional models**](#exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models)
+    - **uncertainty motivation (novelty)**
+    - **information gain motivation (bayesian surprise)**
+    - **empowerment**
+  - [**predictive models**](#exploration-and-intrinsic-motivation---predictive-models)
+    - **predictive novelty motivation (prediction error)**
+    - **learning progress motivation (prediction gain)**
+    - **predictive familiarity motivation**
+  - [**competence-based models**](#exploration-and-intrinsic-motivation---competence-based-models)
+    - **maximizing incompetence motivation**
+    - **maximizing competence progress (automated curriculum learning)**
+  - [**morphological models**](#exploration-and-intrinsic-motivation---morphological-models)
+    - **synchronicity motivation**
 
   ["How Can We Define Intrinsic Motivation"](http://pyoudeyer.com/epirob08OudeyerKaplan.pdf) by Oudeyer and Kaplan `paper`
 
 
 ----
-#### exploration and intrinsic motivation - bayesian exploration models
+#### exploration and intrinsic motivation - bayesian exploration
 
 >	"Bayesian reinforcement learning provides approach to optimal exploration during learning and beyond. Prior information about the problem is represented in parametric form, and Bayesian inference is used to incorporate any new information about the model. Thus the exploration-exploitation problem can be handled as an explicit sequential decision problem, where the agent seeks to maximize future expected return with respect to its current uncertainty on the model. The decision-making process is significantly more complex since it involves reasoning about all possible models and courses of action."
 
@@ -807,7 +819,7 @@
 
 ----
 
-  [**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration-models)  
+  [**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration)  
   [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
 
 
@@ -826,7 +838,7 @@
 >	"This approach is based on the use of representations, built by an agent, that estimate the distributions of probabilities of observing certain events ek in particular contexts, defined as mathematical configurations in the sensorimotor flow. There are several types of such events, but the probabilities that are measured are typically either the probability of observing a certain state SMk in the sensorimotor flow, denoted P(SMk), or the probability of observing particular transitions between states, such as P(SMk(t), SMl(t+1)), or the probability of observing a particular state after having observed a given state P(SMk(t+1) | SMl(t)). Here, the states SMk can either be direct numerical prototypes or complete regions within the sensorimotor space (and it may involve a mechanism for discretizing the space). We will consider all these eventualities possible and just use the general notation P(ek). We will assume that the agent possesses a mechanism that allows it to build internally, and as it experiences the world, an estimation of the probability distribution of events across the whole space E of possible events (but the space of possible events is not predefined and should also be discovered by the agent, so typically this is an initially empty space that grows with experience)."
 
 
-  - *uncertainty motivation* *(novelty)*  
+  - **uncertainty motivation (novelty)**
 
 	> "The tendency to be intrinsically attracted by novelty has often been used as an example in the literature on intrinsic motivation. A straightforward manner to computationally implement it is to build a system that, for every event ek that is actually observed, will generate a reward r(ek) inversely proportional to its probability of observation: r(ek, t) = C·(1 − P(ek, t)), where C is a constant."
 
@@ -840,7 +852,7 @@
 	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
 
 
-  - *information gain motivation* *(bayesian surprise)*  
+  - **information gain motivation (bayesian surprise)**
 
 	> "It has been proposed in psychology and education that humans have a natural propensity to learn and assimilate. In information theoretic terms, this notion of assimilation or of “pleasure of learning” can be modeled by the decrease of uncertainty in the knowledge about the world that the agent possesses after an event ek has happened: r(ek, t) = C·(H(E, t) − H(E, t+1)), where H is entropy."
 
@@ -859,7 +871,7 @@
 	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
 
 
-  - *empowerment*  
+  - **empowerment**
 
 	> "A reward measure that pushes an agent to produce sequences of actions that can transfer a maximal amount of information to its sensors through the environment. It is defined as the channel capacity from the sequence of actions At, At+1, ..., At+n−1 to the perceptions St+n after an arbitrary number of timesteps: r(At, At+1, ..., At+n−1 →  St+n) = max {p(a)} I(At, At+1, ..., At+n−1, St+n), where p(a) is the probability distribution function of the action sequences a=(at, at+1, ..., at+n−1) and I is mutual information."
 
@@ -881,7 +893,7 @@
 >	"Often, knowledge and expectations in agent are not represented by complete probability distributions, but rather based on the use of predictors such as neural networks that make direct predictions about future events. These predictors, denoted Π, are typically used to predict some properties Prk or sensorimotor states SMk that will happen in the future (close or far) given the current sensorimotor context SM(t) and possibly the past sensorimotor context. We will denote all properties and states under the generic notation ek. We will also use the notation SM(→ t) to denote a structure which encodes the current sensorimotor context and possibly the past contexts. Thus, a general prediction of a system will be denoted: Π(SM(→ t)) = ek^(t+1). We then define Er(t) as the error of this prediction, being the distance between the predicted event ek^(t+1) and the event that actually happens ek(t+1): Er(t) = ‖ ek^(t+1) − ek(t+1) ‖."
 
 
-  - *predictive novelty motivation* *(prediction error)*  
+  - **predictive novelty motivation (prediction error)**
 
 	> "Interesting situations are those for which the prediction errors are highest: r(SM(→ t)) = C·Er(t), where C is a constant."
 
@@ -900,7 +912,7 @@
 	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
 
 
-  - *learning progress motivation* *(prediction gain)*
+  - **learning progress motivation (prediction gain)**
 
 	> "Several researchers have proposed another manner to model optimal incongruity which avoids the problem of setting a threshold, and is related to the information gain measurement described in the information theoretic section above. It consists in modeling intrinsic motivation with a system that generates rewards when predictions improve over time. Thus, the system will try to maximize prediction progress, i.e. the decrease of prediction errors, i.e. effectively reward knowledge acquisition per se. This corresponds to the concept of epistemic curiosity proposed by (Berlyne, 1965). A first computational formalization was proposed by (Schmidhuber, 1991). It consists in measuring the difference in prediction error of the predictor Π, about the same sensorimotor context SM(→ t), between the first prediction and a second prediction made just after the predictor has been updated with a learning rule: r(SM→ t) = Er(t) − E'r(t), where E'r(t) = ‖ Π'(SM(→ t)) − ek(t+1) ‖ with Π' being the updated predictor after the learning update due to the prediction Π(SM(→ t)) and the perception of the actual consequence ek(t+1)."
 
@@ -911,13 +923,13 @@
 	["Curious Model-building Control Systems"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.45.2597) by Schmidhuber `paper` ([**Artificial Curiosity and Creativity**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory by Schmidhuber)  
 	["A Possibility for Implementing Curiosity and Boredom in Model-Building Neural Controllers"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.45.957) by Schmidhuber `paper` ([**Artificial Curiosity and Creativity**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory by Schmidhuber)  
 	["Exploration in Model-based Reinforcement Learning by Empirically Estimating Learning Progress"](https://papers.nips.cc/paper/4642-exploration-in-model-based-reinforcement-learning-by-empirically-estimating-learning-progress) by Lopes et al. `paper`  
-	[**"Automated Curriculum Learning for Neural Networks"**](#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper` `summary` *(prediction gain, complexity gain)*  
+	[**"Automated Curriculum Learning for Neural Networks"**](#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper` `summary`  
 
 	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---learning-progress-motivation)  
 	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
 
 
-  - *predictive familiarity motivation*  
+  - **predictive familiarity motivation**
 
 	> "In the psychology literature, intrinsic motivations refer generally to mechanisms that push organisms to explore their environment. Yet, there are direct variants of previous computational systems that are both simple and correspond intuitively to existing forms of human motivation. For example, a slight mathematical variation of predictive novelty motivation would model a motivation to search for situation which are very predictable, and thus familiar: r(SM(→ t)) = C/Er(t), where C is a constant. It would actually be sound to consider this kind of motivation as intrinsic, in spite of the fact that it will typically not push an organism to explore its environment."
 
@@ -930,20 +942,18 @@
 >	"A third major computational approach to intrinsic motivation is based on measures of competence that an agent has for achieving self-determined results or goals. Central here is the concept of “challenge”, with associated measures of difficulty as well as measures of actual performance. A “challenge” or “goal” here will be any sensorimotor configuration SMk, or any set {Pk} of properties of a sensorimotor configuration, that an agent sets by itself and that it tries to achieve through action. It is the properties of the achievement process, rather than the “meaning” of the particular goal being achieved, that will determine the level of interestingness of the associated activity. While prediction mechanisms or probability models, as used in previous sections, can be used in the goal-reaching architecture, they are not mandatory (for example, one can implement systems that try to achieve self-generated goals through Q-learning and never explicitly make predictions of future sensorimotor contexts). Furthermore, while in some cases, certain competence-based and knowledge-based models of intrinsic motivation might be somewhat similar, they may often produce very different behaviors. Indeed, the capacity to predict what happens in a situation can be sometimes only loosely coupled to the capacity to modify a situation in order to achieve a given self-determined goal. After a certain amount of time, bounded for example by a timeout Tg, a motivation module compares the goal that was initially set and the current situation to assess to what extent it was reached, i.e. measure the competence of the agent on goal gk at time tg: la(gk, tg) = ‖ gk^(tg) − gk(tg)) ‖. The “interestingness”, and thus reward value, of the goal gk is then derived from this competence measure."
 
 
-  - *maximizing incompetence motivation*  
+  - **maximizing incompetence motivation**
 
 	> "A first competence-based approach to intrinsic motivation can be a system which pushes the robot to set challenges/goals for which its performance is lowest. This is a motivation for maximally difficult challenges. This can be implemented as: r(SM(→ t), gk, tg) = C·la(gk, tg). Note that here and everywhere in the competence based approaches, rewards are generated only at the end of episodes."
 
 
-  - *maximizing competence progress* *(flow motivation, automated curriculum learning)*  
+  - **maximizing competence progress (automated curriculum learning)**
 
 	> "Maximizing incompetence does not model very well the psychological models of optimal challenge and “flow” proposed by (Csikszentmihalyi, 1991). Flow refers to the state of pleasure related to activities for which difficulty is optimal: neither too easy nor too difficult. As difficulty of a goal can be modeled by the (mean) performance in achieving this goal, a possible manner to model flow would be to introduce two thresholds defining the zone of optimal difficulty. Yet, the use of thresholds can be rather fragile, require hand tuning and possibly complex adaptive mechanism to update these thresholds during the robot’s lifetime. Another approach can be taken, which avoids the use of thresholds. It consists in defining the interestingness of a challenge as the competence progress that is experienced as the robot repeatedly tries to achieve it. So, a challenge for which a robot is bad initially but for which it is rapidly becoming good will be highly rewarding. Thus, a first manner to implement flow motivation would be: r(SM(→ t), gk, tg) = C·(la(gk, tg−θ) − la(gk, tg)) corresponding to the difference between the current performance for task gk and the performance corresponding to the last time gk was tried, at a time denoted tg−θ."
 
-	*compression progress*: seek out data that maximize the decrease in bits of everything the agent has ever observed - find or create things that makes most sense of the agent's life so far: science, art, music, jokes, ... ([overview](https://youtu.be/DSYzHPW26Ig?t=2h7m22s) by Alex Graves `video`)
-
-	[**"Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes"**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#driven-by-compression-progress-a-simple-principle-explains-essential-aspects-of-subjective-beauty-novelty-surprise-interestingness-attention-curiosity-creativity-art-science-music-jokes-schmidhuber) by Schmidhuber `paper` `summary` ([**Artificial Curiosity and Creativity**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory by Schmidhuber) *(compression gain)*  
-	[**"Automated Curriculum Learning for Neural Networks"**](#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper` `summary` *(prediction gain, complexity gain)*  
-	[**"Automatic Goal Generation for Reinforcement Learning Agents"**](#automatic-goal-generation-for-reinforcement-learning-agents-held-geng-florensa-abbeel) by Held et al. `paper` `summary`  
+	[**"Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes"**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#driven-by-compression-progress-a-simple-principle-explains-essential-aspects-of-subjective-beauty-novelty-surprise-interestingness-attention-curiosity-creativity-art-science-music-jokes-schmidhuber) by Schmidhuber `paper` `summary` ([**Artificial Curiosity and Creativity**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory by Schmidhuber) ([overview](https://youtu.be/DSYzHPW26Ig?t=2h7m22s) by Alex Graves `video`) *(maximizing compression progress)*  
+	[**"Automated Curriculum Learning for Neural Networks"**](#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper` `summary` *(maximizing prediction gain / complexity gain)*  
+	[**"Automatic Goal Generation for Reinforcement Learning Agents"**](#automatic-goal-generation-for-reinforcement-learning-agents-held-geng-florensa-abbeel) by Held et al. `paper` `summary` *(optimally difficult goals)*  
 
 	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---competence-based-models---maximizing-competence-motivation)  
 	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
@@ -955,9 +965,9 @@
 >	"The two previous computational approaches to motivation were based on measures comparing information characterizing a stimulus perceived in the present and information characterizing stimuli perceived in the past and represented in memory. A third approach that can be taken is based on the comparison of information characterizing several pieces of stimuli perceived at the same time in several parts of the perceptive field. Pragmatically, this approach consists in attributing interest depending on morphological mathematical properties of the current flow of sensorimotor values, irrespective of what the internal cognitive system might predict or master."
 
 
-  - *synchronicity motivation*  
+  - **synchronicity motivation**
 
-	> "One typical example of this type of intrinsic motivation mechanism is based on synchronicity. The synchronicity motivation is based on an information theoretic measure of shortterm correlation (or reduced information distance) between a number of sensorimotor channels. With such a motivation, situations for which there is a high short-term correlation between a maximally large number of sensorimotor channels are very interesting."
+	> "One typical example of this type of intrinsic motivation mechanism is based on synchronicity. The synchronicity motivation is based on an information theoretic measure of short-term correlation (or reduced information distance) between a number of sensorimotor channels. With such a motivation, situations for which there is a high short-term correlation between a maximally large number of sensorimotor channels are very interesting."
 
 
 
@@ -2253,7 +2263,7 @@ interesting recent papers:
 
 ----
 
-  * [**bayesian exploration models**](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration-models)
+  * [**bayesian exploration**](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration)
   * [**auxiliary tasks**](#interesting-papers---exploration-and-intrinsic-motivation---auxiliary-tasks)
   * information theoretic and distributional models
     - [**uncertainty motivation**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---uncertainty-motivation)
@@ -2277,7 +2287,7 @@ interesting recent papers:
 
 
 ---
-### interesting papers - exploration and intrinsic motivation - bayesian exploration models
+### interesting papers - exploration and intrinsic motivation - bayesian exploration
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)
 
@@ -2608,7 +2618,7 @@ interesting recent papers:
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#planning-to-be-surprised-optimal-bayesian-exploration-in-dynamic-environments-sun-gomez-schmidhuber>
 
 #### ["Model-Based Active Exploration"](https://arxiv.org/abs/1810.12162) Shyam, Jaskowski, Gomez
-  `MAX`
+  `MAX` `planning to explore`
 >	"Efficient exploration is an unsolved problem in Reinforcement Learning which is usually addressed by reactively rewarding the agent for fortuitously encountering novel situations. This paper introduces an efficient active exploration algorithm, Model-Based Active eXploration (MAX), which uses an ensemble of forward models to plan to observe novel events. This is carried out by optimizing agent behaviour with respect to a measure of novelty derived from the Bayesian perspective of exploration, which is estimated using the disagreement between the futures predicted by the ensemble members. We show empirically that in semi-random discrete environments where directed exploration is critical to make progress, MAX is at least an order of magnitude more efficient than strong baselines. MAX scales to high-dimensional continuous environments where it builds task-agnostic models that can be used for any downstream task."
 
 >	"While MAX can be used in conjunction with conventional policy learning to maximize external reward, this paper focuses on pure exploration: exploration disregarding or in the absence of external reward, followed by exploitation. This setup is more natural in situations where it is useful to do task-agnostic exploration and learn models that can later be exploited for multiple tasks, including those that are not known a priori."

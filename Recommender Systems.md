@@ -250,6 +250,9 @@
 #### ["Deep Learning based Recommender System: A Survey and New Perspectives"](https://arxiv.org/abs/1707.07435) Zhang, Yao, Sun, Tay
 
 
+#### ["Are We Really Making Much Progress? A Worrying Analysis of Recent Neural Recommendation Approaches"](https://arxiv.org/abs/1907.06902) Dacrema, Cremonesi, Jannach
+
+
 #### ["Deep Learning Recommendation Model for Personalization and Recommendation Systems"](https://arxiv.org/abs/1906.00091) Naumov et al.
   `DLRM` `Facebook`
 >	"With the advent of deep learning, neural network-based recommendation models have emerged as an important tool for tackling personalization and recommendation tasks. These networks differ significantly from other deep learning networks due to their need to handle categorical features and are not well studied or understood. In this paper, we develop a state-of-the-art deep learning recommendation model and provide its implementation in both PyTorch and Caffe2 frameworks. In addition, we design a specialized parallelization scheme utilizing model parallelism on the embedding tables to mitigate memory constraints while exploiting data parallelism to scale-out compute from the fully-connected layers. We compare DLRM against existing recommendation models and characterize its performance on the Big Basin AI platform, demonstrating its usefulness as a benchmark for future algorithmic experimentation and system co-design."

@@ -62,6 +62,13 @@ interesting older papers:
   - `post` <https://habr.com/company/ods/blog/453788> `in russian`
   - `notes` <https://www.shortscience.org/paper?bibtexKey=journals/corr/abs-1904-00760>
 
+#### ["Learning and Memorization"](http://proceedings.mlr.press/v80/chatterjee18a.html) Chatterjee
+  `generalization` `ICML 2018`
+>	"In the machine learning research community, it is generally believed that there is a tension between memorization and generalization. In this work we examine to what extent this tension exists by exploring if it is possible to generalize by memorizing alone. Although direct memorization with a lookup table obviously does not generalize, we find that introducing depth in the form of a network of support-limited lookup tables leads to generalization that is significantly above chance and closer to those obtained by standard learning algorithms on several tasks derived from MNIST and CIFAR-10. Furthermore, we demonstrate through a series of empirical results that our approach allows for a smooth tradeoff between memorization and generalization and exhibits some of the most salient characteristics of neural networks: depth improves performance; random data can be memorized and yet there is generalization on real data; and memorizing random data is harder in a certain sense than memorizing real data. The extreme simplicity of the algorithm and potential connections with generalization theory point to several interesting directions for future research."  
+>	"Can memorization alone lead to generalization?"  
+>	"The paper proposes an interesting way of building a hierarchy of features using memorization alone. Each feature is a lookup table that maps k-bit binary strings to {0, 1} corresponding to the two classes in a binary classification problem. The entry for a particular k-bit string is 0 or 1 depending on the majority class among data points that lead to that k-bit string as the input. The model consists of layers of such features where each feature looks at a random subset of k features from the preceding layer. This model is reminiscent of a cascade of random forests. It has the interesting property of being deep and non-linear and at the same time very easy to construct by memorization in a layer-by-layer manner. While the results are not great, given the simplicity of the model, they are promising enough to merit discussion and more investigation."  
+  - `video` <https://vimeo.com/287766500> (Chatterjee)
+
 #### ["Excessive Invariance Causes Adversarial Vulnerability"](https://arxiv.org/abs/1811.00401) Jacobsen, Behrmann, Zemel, Bethge
   `generalization` `ICLR 2019`
 >	"Deep neural networks exhibit striking failures on out-of-distribution inputs. One core idea of adversarial example research is to reveal neural network errors under such distribution shifts. We decompose these errors into two complementary sources: sensitivity and invariance. We show deep networks are not only too sensitive to task-irrelevant changes of their input, as is well-known from epsilon-adversarial examples, but are also too invariant to a wide range of task-relevant changes, thus making vast regions in input space vulnerable to adversarial attacks. We show such excessive invariance occurs across various tasks and architecture types. On MNIST and ImageNet one can manipulate the class-specific content of almost any image without changing the hidden activations. We identify an insufficiency of the standard cross-entropy loss as a reason for these failures. Further, we extend this objective based on an information-theoretic analysis so it encourages the model to consider all task-dependent features in its decision. This provides the first approach tailored explicitly to overcome excessive invariance and resulting vulnerabilities."  
@@ -739,7 +746,8 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 ---
 ### meta-learning
 
-[recent papers - meta reinforcement learning](https://lilianweng.github.io/lil-log/2019/06/23/meta-reinforcement-learning.html)
+[recent papers](https://docs.google.com/document/d/1TT-rTb6WWB0hN5coRnGFWvSytk3P912O6jJC5T0Mbn4)  
+[recent papers - meta reinforcement learning](https://lilianweng.github.io/lil-log/2019/06/23/meta-reinforcement-learning.html)  
 
 ----
 #### ["Rapid Learning or Feature Reuse? Towards Understanding the Effectiveness of MAML"](https://arxiv.org/abs/1909.09157) Raghu, Raghu, Bengio, Vinyals
@@ -2786,6 +2794,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 #### ["Unsupervised Real-Time Control through Variational Empowerment"](https://arxiv.org/abs/1710.05101) Karl et al.
   `empowerment`
+>	"Empowerment is prohibitively hard to compute, especially in nonlinear continuous spaces. We introduce an efficient, amortised method for learning empowerment-maximising policies. We demonstrate that our algorithm can reliably handle continuous dynamical systems using system dynamics learned from raw data."  
 
 #### ["Variational Intrinsic Control"](http://arxiv.org/abs/1611.07507) Gregor, Rezende, Wierstra
   `empowerment`
