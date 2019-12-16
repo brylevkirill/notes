@@ -711,6 +711,8 @@
 
   [**papers and resources**](#interesting-papers---flow-models)
 
+  ["Normalizing Flows for Probabilistic Modeling and Inference"](https://arxiv.org/abs/1912.02762) by Papamakarios et al. `paper`
+
   [overview](https://youtu.be/7o9dT6puHHg?t=24m8s) by Aravind Srinivas `video`  
   overview ([1](https://youtu.be/mYCLVPRy2nc?t=1h46m30s), [2](https://youtu.be/NCRzGmM1ywE)) by Jonathan Ho `video`  
 
@@ -827,6 +829,8 @@
   ["Understanding, Deriving and Extending the LSTM"](http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html)  
   ["Backpropogating an LSTM: A Numerical Example"](http://blog.aidangomez.ca/2016/04/17/Backpropogating-an-LSTM-A-Numerical-Example/) by Aidan Gomez  
   ["Why LSTMs Stop Your Gradients From Vanishing: A View from the Backwards Pass"](https://weberna.github.io/blog/2017/11/15/LSTM-Vanishing-Gradients.html) by Noah Weber  
+
+  ["LSTM: A Search Space Odyssey"](https://arxiv.org/abs/1503.04069) by Greff et al. `paper`
 
 ----
 
@@ -1856,8 +1860,10 @@ Yoshua Bengio:
 
 
 #### ["Representation Learning with Contrastive Predictive Coding"](https://arxiv.org/abs/1807.03748) Oord, Li, Vinyals
-  `CPC` `representation learning` `self-supervised learning`
+  `CPC` `InfoNCE` `representation learning` `self-supervised learning`
 >	"While supervised learning has enabled great progress in many applications, unsupervised learning has not seen such widespread adoption, and remains an important and challenging endeavor for artificial intelligence. In this work, we propose a universal unsupervised learning approach to extract useful representations from high-dimensional data, which we call Contrastive Predictive Coding. The key insight of our model is to learn such representations by predicting the future in latent space by using powerful autoregressive models. We use a probabilistic contrastive loss which induces the latent space to capture information that is maximally useful to predict future samples. It also makes the model tractable by using negative sampling. While most prior work has focused on evaluating representations for a particular modality, we demonstrate that our approach is able to learn useful representations achieving strong performance on four distinct domains: speech, images, text and reinforcement learning in 3D environments."
+
+>	"Using mutual information between the representation of the current input, and input close in space or time as a self-supervised criteria."
 
   - `post` <https://medium.com/syncedreview/new-deepmind-unsupervised-image-model-challenges-alexnet-d658ef92ab1e>
   - `video` <https://youtu.be/QoCyQBzi7us?t=1h9m51s> (Oord)
@@ -1866,6 +1872,7 @@ Yoshua Bengio:
   - `post` <https://machinethoughts.wordpress.com/2018/08/15/predictive-coding-and-mutual-information>
   - `paper` ["Data-Efficient Image Recognition with Contrastive Predictive Coding"](https://arxiv.org/abs/1905.09272) by Henaff et al. ([talk](https://facebook.com/icml.imls/videos/378993762742156?t=3335) by Henaff `video`)
   - `paper` ["Noise-Contrastive Estimation of Unnormalized Statistical Models, with Applications to Natural Image Statistics"](http://www.jmlr.org/papers/volume13/gutmann12a/gutmann12a.pdf) by Gutmann and Hyvarinen
+  - `paper` ["Putting An End to End-to-End: Gradient-Isolated Learning of Representations"](https://arxiv.org/abs/1905.11786) by Lowe et al.
 
 
 
@@ -2290,6 +2297,10 @@ Yoshua Bengio:
 ### interesting papers - flow models
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models---flow-models)
+
+----
+#### ["Normalizing Flows for Probabilistic Modeling and Inference"](https://arxiv.org/abs/1912.02762) Papamakarios, Nalisnick, Rezende, Mohamed, Lakshminarayanan
+>	"Normalizing flows provide a general mechanism for defining expressive probability distributions, only requiring the specification of a (usually simple) base distribution and a series of bijective transformations. There has been much recent work on normalizing flows, ranging from improving their expressive power to expanding their application. We believe the field has now matured and is in need of a unified perspective. In this review, we attempt to provide such a perspective by describing flows through the lens of probabilistic modeling and inference. We place special emphasis on the fundamental principles of flow design, and discuss foundational topics such as expressive power and computational trade-offs. We also broaden the conceptual framing of flows by relating them to more general probability transformations. Lastly, we summarize the use of flows for tasks such as generative modeling, approximate inference, and supervised learning."
 
 
 

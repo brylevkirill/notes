@@ -665,6 +665,7 @@
 
   - `video` <https://cds.cern.ch/record/2306315> (Nickel)
   - `video` <https://facebook.com/nipsfoundation/videos/1553634558061111?t=3781> (Nickel)
+  - `video` <https://youtube.com/watch?v=eOPWP-WtUoM> (Puzyrev) `in russian`
   - `notes` <https://medium.com/towards-data-science/facebook-research-just-published-an-awesome-paper-on-learning-hierarchical-representations-34e3d829ede7>
   - `notes` <https://medium.com/@hol_io/word-embeddings-exploration-explanation-and-exploitation-with-code-in-python-5dac99d5d795>
   - `post` <https://rare-technologies.com/implementing-poincare-embeddings/>

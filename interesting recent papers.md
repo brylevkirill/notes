@@ -53,6 +53,8 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=OBCciGnOJVs> (Belkin)
   - `video` <https://youtube.com/watch?v=LzL5naUS31s> (Belkin)
   - `video` <https://youtube.com/watch?v=ZAW9EyNo2fw> (Kilcher)
+  - `paper` ["Deep Double Descent: Where Bigger Models and More Data Hurt"](https://arxiv.org/abs/1912.02292) by Nakkiran et al. ([post](https://openai.com/blog/deep-double-descent))
+  - `paper` ["The Generalization Error of Random Features Regression: Precise Asymptotics and Double Descent Curve"](https://arxiv.org/abs/1908.05355) by Mei et al.
 
 #### ["Approximating CNNs with Bag-of-local-Features Models Works Surprisingly Well on ImageNet"](https://arxiv.org/abs/1904.00760) Brendel, Bethge
   `BagNet` `generalization` `ICLR 2019`
@@ -660,7 +662,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `continual learning` `catastrophic forgetting`
 >	"The Mixture of Experts Layer is trained using back-propagation. The Gating Network outputs an (artificially made) sparse vector that acts as a chooser of which experts to consult. More than one expert can be consulted at once (although the paper doesn’t give any precision on the optimal number of experts). The Gating Network also decides on output weights for each expert."  
 >	"The MoE with experts shows higher accuracy (or lower perplexity) than the state of the art using only 16% of the training time."  
-  - `video` <https://slideslive.com/38917526/an-overview-of-googles-work-on-automl-and-future-directions> (19:31) (Dean)
+  - `video` <https://slideslive.com/38917526/an-overview-of-googles-work-on-automl-and-future-directions?t=1171> (Dean)
   - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (14:39) (Bengio)
   - `video` <https://youtube.com/watch?v=nNZceFX2tQU> (Zakirov) `in russian`
   - `notes` <https://github.com/dennybritz/deeplearning-papernotes/blob/3718d181a0fed5ed806582822ed0dbde530122bf/notes/mixture-experts.md>
@@ -1680,6 +1682,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 [**interesting recent papers - generative models**](#generative-models)
 
 ----
+#### ["Normalizing Flows for Probabilistic Modeling and Inference"](https://arxiv.org/abs/1912.02762) Papamakarios, Nalisnick, Rezende, Mohamed, Lakshminarayanan
+>	"In this review, we attempt to describe flows through the lens of probabilistic modeling and inference. We place special emphasis on the fundamental principles of flow design, and discuss foundational topics such as expressive power and computational trade-offs. We also broaden the conceptual framing of flows by relating them to more general probability transformations. Lastly, we summarize the use of flows for tasks such as generative modeling, approximate inference, and supervised learning."  
+
+----
 #### ["Invertible Residual Networks"](https://arxiv.org/abs/1811.00995) Behrmann, Grathwohl, Chen, Duvenaud, Jacobsen
   `i-ResNets` `ICML 2019`
 >	"We show that standard ResNet architectures can be made invertible, allowing the same model to be used for classification, density estimation, and generation. Typically, enforcing invertibility requires partitioning dimensions or restricting network architectures. In contrast, our approach only requires adding a simple normalization step during training, already available in standard frameworks. Invertible ResNets define a generative model which can be trained by maximum likelihood on unlabeled data. To compute likelihoods, we introduce a tractable approximation to the Jacobian log-determinant of a residual block. Our empirical evaluation shows that invertible ResNets perform competitively with both state-of-the-art image classifiers and flow-based generative models, something that has not been previously achieved with a single architecture."  
@@ -2283,6 +2289,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"We examine the question of when and how parametric models are most useful in reinforcement learning. In particular, we look at commonalities and differences between parametric models and experience replay. Replay-based learning algorithms share important traits with model-based approaches, including the ability to plan: to use more computation without additional data to improve predictions and behaviour. We discuss when to expect benefits from either approach, and interpret prior work in this context. We hypothesise that, under suitable conditions, replay-based algorithms should be competitive to or better than model-based algorithms if the model is used only to generate fictional transitions from observed states for an update rule that is otherwise model-free. We validated this hypothesis on Atari 2600 video games. The replay-based algorithm attained state-of-the-art data efficiency, improving over prior results with parametric models."  
 >	"A model is a function r,s'=m(s,a). We can use models to plan: spend more compute to improve prediction and policies. We can also plan with experience replay: r_{n+1},s_{n+1}=replay(s_n,a_n). Experience replay is similar to a non-parametric model but we can only query it at observed state action pairs."  
   - `video` <https://youtube.com/watch?v=EtSTOPsHj3g> (Hasselt)
+  - `notes` <https://www.shortscience.org/paper?bibtexKey=journals/corr/abs-1906-05243>
 
 ----
 #### ["Woulda, Coulda, Shoulda: Counterfactually-Guided Policy Search"](https://arxiv.org/abs/1811.06272) Buesing, Weber, Zwols, Racaniere, Guez, Lespiau, Heess
@@ -2296,7 +2303,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"Probabilistic ensembles with trajectory sampling algorithm combines uncertainty-aware deep network dynamics models with sampling-based uncertainty propagation. Our comparison to state-of-the-art model-based and model-free deep RL algorithms shows that our approach matches the asymptotic performance of model-free algorithms on several challenging benchmark tasks, while requiring significantly fewer samples (e.g., 8 and 125 times fewer samples than Soft Actor Critic and Proximal Policy Optimization respectively on the half-cheetah task)."  
 >	"The dynamics are modelled by an ensemble of probabilistic neural networks models, which captures both epistemic uncertainty from limited data and network capacity, and aleatoric uncertainty from the stochasticity of the ground-truth dynamics. Except for the difference in modeling the dynamics, PETS-RS is the same as RS. Instead, in PETS-CEM, the online optimization problem is solved using cross-entropy method to obtain a better solution."  
   - `video` <https://sites.google.com/view/drl-in-a-handful-of-trials>
-  - `video` <https://slideslive.com/38915863/learning-models-for-representations-and-planning> (12:17) (Lillicrap)
+  - `video` <https://slideslive.com/38915863/learning-models-for-representations-and-planning?t=737> (Lillicrap)
 
 #### ["Neural Network Dynamics for Model-Based Deep Reinforcement Learning with Model-Free Fine-Tuning"](https://arxiv.org/abs/1708.02596) Nagabandi, Kahn, Fearing, Levine
   `MB-MF` `planning` `using available environment model`
@@ -2508,7 +2515,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - <https://planetrl.github.io>
   - `post` <https://ai.googleblog.com/2019/02/introducing-planet-deep-planning.html>
   - `video` <https://youtube.com/watch?v=C7Dmu0GtrSw>
-  - `video` <https://slideslive.com/38915863/learning-models-for-representations-and-planning> (14:20) (Lillicrap)
+  - `video` <https://slideslive.com/38915863/learning-models-for-representations-and-planning?t=860> (Lillicrap)
   - `code` <https://github.com/google-research/planet>
   - `code` <https://github.com/Kaixhin/PlaNet>
 
@@ -2532,7 +2539,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"Can make use of information acquired without associated reward, exhibiting properties of latent learning."  
 >	"Provides a conceptual but functional model of the interaction of multiple neural systems in a complete, goal-directed cognitive architecture."  
   - `video` <https://youtube.com/watch?v=9z3_tJAu7MQ> (Wayne)
-  - `video` <https://slideslive.com/38915863/learning-models-for-representations-and-planning> (7:00) (Lillicrap)
+  - `video` <https://slideslive.com/38915863/learning-models-for-representations-and-planning?t=420> (Lillicrap)
   - `video` <https://youtu.be/aV4wz7FAXmo?t=1h18m26s> (Shvechikov)
   - `paper` ["Hybrid Computing using a Neural Network with Dynamic External Memory"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#hybrid-computing-using-a-neural-network-with-dynamic-external-memory-graves-et-al) by Graves et al. `summary`
 

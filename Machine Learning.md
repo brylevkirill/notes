@@ -135,6 +135,7 @@
 
 #### conferences
 
+  - NeurIPS 2019 [[videos](https://slideslive.com/neurips)] [[videos](https://youtube.com/playlist?list=PLderfcX9H9MpK9LKziKu_gUsTL_O2pnLB)] [[notes](https://david-abel.github.io/notes/neurips_2019.pdf)]
   - RLDM 2019 [[notes](https://david-abel.github.io/notes/rldm_2019.pdf)]
   - ICML 2019 [[videos](https://icml.cc/Conferences/2019/Videos)] [[videos](https://facebook.com/pg/icml.imls/videos)] [[videos](https://slideslive.com/icml)] [[notes](https://david-abel.github.io/notes/icml_2019.pdf)]
   - ICLR 2019 [[videos](https://facebook.com/pg/iclr.cc/videos)] [[videos](https://slideslive.com/iclr)] [[notes](https://david-abel.github.io/notes/iclr_2019.pdf)]
@@ -487,6 +488,7 @@
   [overview](https://youtube.com/watch?v=08jorbiyLwY) by Chris Re `video`  
   [overview](https://youtube.com/watch?v=HmocI2b5YfA) by Chris Re `video`  
   [overview](https://youtube.com/watch?v=pXoiYSQHf2I) by Stephen Bach `video`  
+  [overview](https://youtube.com/watch?v=utuWKXL7SB8) by Alex Ratner `video`  
   [overview](https://slideslive.com/38916920/building-and-structuring-training-sets-for-multitask-learning) by Alex Ratner `video`  
   [overview](https://youtube.com/watch?v=MR_J7tFHevA) by Alex Ratner `video`  
   [overview](https://youtube.com/watch?v=G88jJquj6Wo) by Alex Ratner `audio`  
@@ -507,6 +509,8 @@
   ["Programming Training Data: The New Interface Layer for ML"](https://hazyresearch.github.io/snorkel/blog/snorkel_programming_training_data.html) `post`  
 
 ----
+
+  ["Accelerating Machine Learning with Training Data Management"](https://ajratner.github.io/assets/papers/thesis.pdf) `paper`
 
   ["Data Programming: Creating Large Training Sets, Quickly"](#data-programming-creating-large-training-sets-quickly-ratner-sa-wu-selsam-re) `paper` `summary` ([video](https://youtube.com/watch?v=iSQHelJ1xxU))  
   ["Socratic Learning: Empowering the Generative Model"](#socratic-learning-empowering-the-generative-model-varma-et-al) `paper` `summary` ([video](https://youtube.com/watch?v=0gRNochbK9c))  

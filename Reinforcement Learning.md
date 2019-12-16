@@ -68,7 +68,7 @@
 
   [recommender system](https://nytimes.com/interactive/2019/06/08/technology/youtube-radical.html) at YouTube ([**paper**](#top-k-off-policy-correction-for-a-reinforce-recommender-system-chen-beutel-covington-jain-belletti-chi) by Chen et al. `summary`)
 
-  [personalized web services](http://thenewstack.io/reinforcement-learning-ready-real-world/) at Microsoft ([Personalizer](https://azure.microsoft.com/en-us/services/cognitive-services/personalizer) service, Custom Decision Service [**paper**](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) `summary`)  
+  [personalized web services](http://thenewstack.io/reinforcement-learning-ready-real-world/) at Microsoft ([Personalizer](https://azure.microsoft.com/en-us/services/cognitive-services/personalizer) service [**paper**](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) `summary`)  
   ["Personalized Web Services"](http://incompleteideas.net/book/the-book-2nd.html) chapter of book by Richard Sutton and Andrew Barto  
 
   [datacenter cooling](https://deepmind.com/blog/safety-first-ai-autonomous-data-centre-cooling-and-industrial-control/) at Google ([paper](https://papers.nips.cc/paper/7638-data-center-cooling-using-model-predictive-control.pdf) by Lazic et al., [patent](http://freepatentsonline.com/y2018/0204116.html))
@@ -107,13 +107,13 @@
 
 	[**"Grandmaster Level in StarCraft II using Multi-agent Reinforcement Learning"**](#grandmaster-level-in-starcraft-ii-using-multi-agent-reinforcement-learning-vinyals-et-al) by Vinyals et al. `paper` `summary` *(AlphaStar)*
 
+	[overview](https://slideslive.com/38922025/deep-reinforcement-learning-1?t=318) by Oriol Vinyals `video`  
+	[overview](https://youtu.be/3UdH3lPF7nE) by Oriol Vinyals `video`  
 	[overview](https://slideslive.com/38916905/alphastar-mastering-the-game-of-starcraft-ii) by David Silver `video`  
 	[overview](https://youtu.be/mzjGNo9Tz4g?t=10m53s) by David Silver `video`  
-	[overview](https://youtu.be/3UdH3lPF7nE) by Oriol Vinyals `video`  
-	[overview](https://youtu.be/Kedt2or9xlo) by Oriol Vinyals `video`  
-	[overview](https://youtu.be/3N9phq_yZP0?t=32m52s) by Demis Hassabis `video`  
 
-	[AlphaStar discussion](https://reddit.com/r/MachineLearning/comments/ajgzoc/we_are_oriol_vinyals_and_david_silver_from) with David Silver and Oriol Vinyals
+	[AlphaStar discussion](https://youtu.be/Kedt2or9xlo) with Oriol Vinyals `video`  
+	[AlphaStar discussion](https://reddit.com/r/MachineLearning/comments/ajgzoc/we_are_oriol_vinyals_and_david_silver_from) with Oriol Vinyals and David Silver  
 
 	[AlphaStar vs Serral](https://youtube.com/playlist?list=PLXJHKGgWSul4OKsIBXfa2-wHpBfiMBLJr) games `video`  
 	[AlphaStar vs Battle.net players](https://deepmind.com/research/open-source/alphastar-resources) games ([overviews](https://youtube.com/playlist?list=PLtFBLTxDxWOSrWZ8krQt6eDNXTpG67Xpf) `video`)  
@@ -129,11 +129,14 @@
 	[OpenAI Five architecture](https://s3-us-west-2.amazonaws.com/openai-assets/dota_benchmark_results/network_diagram_08_06_2018.pdf)  
 	[OpenAI Five reward function](https://gist.github.com/dfarhi/66ec9d760ae0c49a5c492c9fae93984a)  
 
+	[**"Dota 2 with Large Scale Deep Reinforcement Learning"**](https://cdn.openai.com/dota-2.pdf) by Berner et al. `paper` *(OpenAI Five)*
+
+	[OpenAI File overview](https://slideslive.com/38922025/deep-reinforcement-learning-1?t=2175) by Jie Tang and Filip Wolski `video`  
 	[OpenAI Five overview](https://youtu.be/w3ues-NayAs?t=2m26s) by Ilya Sutskever `video`  
 	[OpenAI Five overview](https://youtu.be/N8_gVrIPLQM?t=1h3m41s) by David Silver `video`  
-	[OpenAI Five discussion](https://twitch.tv/videos/293517383?t=4h41m56s) `video`  
 
-	[discussion](https://reddit.com/r/DotA2/comments/bf49yk/hello_were_the_dev_team_behind_openai_five_we) with OpenAI team
+	[OpenAI Five discussion](https://twitch.tv/videos/293517383?t=4h41m56s) `video` with OpenAI team  
+	[OpenAI Five discussion](https://reddit.com/r/DotA2/comments/bf49yk/hello_were_the_dev_team_behind_openai_five_we) with OpenAI team  
 
 	[OpenAI Five vs top players](https://youtube.com/playlist?list=PLOXw6I10VTv-ZFZV4fMqKMfNQmwmkcr0w) games `video`  
 	[OpenAI Five vs ainodehna team](https://arena.openai.com/#/results) games ([highlights](https://cybersport.ru/dota-2/interviews/glavnoe-protiv-botov-otdat-im-udobnykh-dlya-nas-geroev-komanda-kotoraya-trizhdy-pobedila-openai-raskryla-svoyu-taktiku) `in russian`)  
@@ -146,10 +149,10 @@
 	[Libratus overview](https://int8.io/counterfactual-regret-minimization-for-poker-ai/#Libratus_8211_DeepStack8217s_main_rival_from_Carnegie_Mellon_University) by Kamil Czarnogorski  
 	[Libratus overview](https://thegradient.pub/libratus-poker) by Jiren Zhu  
 
-	[Libratus "Science" magazine](http://science.sciencemag.org/content/early/2017/12/15/science.aao1733.full) `paper`  
-	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://arxiv.org/abs/1705.02955) by Noam Brown and Tuomas Sandholm `paper` *(Libratus)* ([talk](https://vimeo.com/248533943#t=53s) `video`, [post](https://thegradient.pub/libratus-poker))  
-	["Depth-Limited Solving for Imperfect-Information Games"](https://arxiv.org/abs/1805.08195) by Brown, Sandholm, Amos `paper` ([overview](https://youtube.com/watch?v=S4-g3dPT2gY) `video`)  
-	[**"Deep Counterfactual Regret Minimization"**](#deep-counterfactual-regret-minimization-brown-lerer-gross-sandholm) by Brown, Lerer, Gross, Sandholm `paper` `summary`  
+	["Superhuman AI for Heads-up No-limit Poker: Libratus Beats Top Professionals"](http://science.sciencemag.org/content/early/2017/12/15/science.aao1733.full) by Brown and Sandholm `paper` *(Libratus)*  
+	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://arxiv.org/abs/1705.02955) by Brown and Sandholm `paper` *(Libratus)* ([talk](https://vimeo.com/248533943#t=53s) `video`, [post](https://thegradient.pub/libratus-poker))  
+	["Depth-Limited Solving for Imperfect-Information Games"](https://arxiv.org/abs/1805.08195) by Brown et al. `paper` ([overview](https://youtube.com/watch?v=S4-g3dPT2gY) `video`)  
+	[**"Deep Counterfactual Regret Minimization"**](#deep-counterfactual-regret-minimization-brown-lerer-gross-sandholm) by Brown et al. `paper` `summary`  
 
 	[Libratus overview](https://youtube.com/watch?v=EhvH4jdF-ko) by Tuomas Sandholm `video`  
 	[Libratus overview](https://youtube.com/watch?v=xrWulRY_t1o) by Tuomas Sandholm `video`  
@@ -426,14 +429,6 @@
   [exercises and solutions](https://github.com/dennybritz/reinforcement-learning) by Denny Britz  
   [exercises and solutions](https://github.com/yandexdataschool/Practical_RL/) from Yandex  
 
-  [implementations of algorithms](https://github.com/ShangtongZhang/DeepRL) from Shangtong Zhang  
-  [implementations of algorithms](https://github.com/higgsfield/RL-Adventure) from Dulat Yerzat  
-  [implementations of algorithms](https://github.com/higgsfield/RL-Adventure-2) from Dulat Yerzat  
-  [implementations of algorithms](https://github.com/NervanaSystems/coach) from Intel Nervana  
-  [implementations of algorithms](https://github.com/rlcode/reinforcement-learning) from RLCode team  
-  [implementations of algorithms](https://github.com/openai/rllab/tree/master/rllab/algos) from OpenAI  
-  [implementations of algorithms](https://github.com/navneet-nmk/pytorch-rl) from Navneet Kumar  
-
 
 
 ---
@@ -467,16 +462,9 @@
 
 ----
 
-  ["Deep Reinforcement Learning"](https://sites.google.com/site/deeprlnips2016/) workshop at NIPS 2016  
-  ["Abstraction in RL"](http://rlabstraction2016.wix.com/icml) workshop at ICML 2016  
-  ["Deep Reinforcement Learning: Frontiers and Challenges"](https://sites.google.com/site/deeprlijcai16/) workshop at IJCAI 2016  
-  ["Deep Reinforcement Learning"](http://rll.berkeley.edu/deeprlworkshop/) workshop at NIPS 2015  
-  ["Novel Trends and Applications in RL"](https://tcrl14.wordpress.com/videos/) workshop at NIPS 2014  
-
-----
-
   ["Challenges of Real-World Reinforcement Learning"](https://arxiv.org/abs/1904.12901) by Dulac-Arnold et al.  
   ["A Real World Reinforcement Learning Research Program"](http://hunch.net/?p=9828091) by John Langford  
+  ["Pervasive Simulator Misuse with Reinforcement Learning"](http://hunch.net/?p=8825714) by John Langford  
   ["Expressivity, Trainability, and Generalization in Machine Learning"](http://blog.evjang.com/2017/11/exp-train-gen.html) by Eric Jang  
   ["On “Solving” Montezuma’s Revenge"](https://medium.com/@awjuliani/on-solving-montezumas-revenge-2146d83f0bc3) by Arthur Juliani  
   ["Deep Reinforcement Learning Doesn't Work Yet"](https://www.alexirpan.com/2018/02/14/rl-hard.html) by Alex Irpan  
@@ -1049,7 +1037,7 @@
 ---
 ### contextual bandits
 
-  reinforcement learning problem with next state chosen at random independently of chosen action
+  reinforcement learning problem with next state not depending on earlier actions
 
 ----
 
@@ -1059,6 +1047,28 @@
   [overview](https://youtu.be/GXjc-tomqpo) by Dale Schuurmans `video`  
   [overview](https://youtu.be/IWuMb0A09po) by Dale Schuurmans `video`  
   [overview](https://youtu.be/N5x48g2sp8M) by Robert Schapire `video`  
+
+----
+
+  ["Contextual Bandits"](http://hunch.net/?p=298) by John Langford  
+  ["Counterfactual Reasoning and Learning from Logged Data"](http://timvieira.github.io/blog/post/2016/12/19/counterfactual-reasoning-and-learning-from-logged-data/) by Tim Vieira  
+
+----
+
+  ["A Contextual Bandit Bake-off"](https://arxiv.org/abs/1802.04064) by Bietti, Agarwal, Langford `paper` ([overview](https://youtu.be/zr6H4kR8vTg?t=50m36s) by John Langford `video`)  
+  ["Doubly Robust Policy Evaluation and Learning"](https://arxiv.org/abs/1103.4601) by Dudik, Langford, Li `paper` ([overview](https://youtu.be/gzxRDw3lXv8?t=35m45s) by Robert Schapire `video`) ([notes](https://medium.com/@sharaf/a-paper-a-day-12-doubly-robust-policy-evaluation-and-learning-7e6a09665d7f))  
+  ["Taming the Monster: A Fast and Simple Algorithm for Contextual Bandits"](https://arxiv.org/abs/1402.0555) by Agarwal et al. `paper` ([overview](https://youtube.com/watch?v=mi_G5tw7Etg) by Alekh Agarwal `video`) ([overview](https://youtu.be/gzxRDw3lXv8?t=37m8s) by Robert Schapire `video`)  
+  [**"Making Contextual Decisions with Low Technical Debt"**](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) by Agarwal et al. `paper` `summary`  
+
+----
+
+  ["Multi-armed Bandit Experiments in the Online Service Economy"](https://research.google.com/pubs/pub42550.html) by Steven Scott `paper`
+
+  ["Reinforcement Learning in Industry"](http://videolectures.net/deeplearning2017_le_roux_recommendation_system/) by Nicolas Le Roux `video`  
+  ["Counterfactual Evaluation and Learning for Search, Recommendation and Ad Placement"](http://www.cs.cornell.edu/~adith/CfactSIGIR2016/) by Thorsten Joachims and Adith Swaminathan `video`  
+  ["Deep Learning from Logged Interventions"](https://youtube.com/watch?v=lzA5K4im2no) by Thorsten Joachims `video`  
+
+  [**Microsoft Custom Decision Service**](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al)
 
 ----
 
@@ -1095,25 +1105,6 @@
 
 ----
 
-  Off-policy evaluation of expected value of new policy q(a|s) given current policy p(a|s):
-
-  G(q) = ∫s∫a p(s)q(a|s)r(a,s)dads = ∫s∫a p(s)(q(a|s)/p(a|s))p(a|s)r(a,s)dads ≈ 1/N ∑i q(ai|si)/p(ai|si)*ri
-
-
-  Given experience (xt,at,pt,rt)* generated using some policy, it is possible to evaluate another policy π: x -> a using *Inverse Propensity Score* estimator:
-
-  V(π) = 1/n * Σ(xt,at,pt,rt) I(π(x) = at)/pt*rt
-
-  variance of V(π) = variance of rewards + E r(π(x))^2 * (1 - p(π(x))) / p(π(x))
-
-
-  properties of IPS estimator:  
-  - *data-efficient*. Each interaction on which π matches the exploration data can be used in evaluating π, regardless of the policy collecting the data.  
-  - *statistically unbiased*. It converges to the true reward as n → ∞.  
-  - *incremental*. It can be calculated incrementally when new data arrives.  
-
-----
-
   "A/B testing only uses data collected using π to evaluate π."
 
   "Using a fixed exploration dataset, accurate counterfactual estimates of how arbitrary policies would have performed can be computed without actually running them in real time. This is precisely the question A/B testing attempts to answer, except A/B testing must run a live experiment to test each policy."
@@ -1121,33 +1112,6 @@
   "Lets compare the statistical efficiency of MWT to that of A/B testing. Suppose N data points are collected using an exploration policy which places probability at least on each action (for EpsilonGreedy, ε = ε0/#actions), and we wish to evaluate K different policies. Then the ips estimators for all K policies have confidence intervals whose width is (C/(εN)\*log(K/δ))^1/2, with probability at least 1−δ, where C is a small absolute constant and δ > 0 and N > 1/ε. This is an exponential (in K) improvement over A/B testing since an A/B test of K policies collecting N data points has confidence intervals of width C\*(K/N\*log(K/δ))^1/2. This also shows the necessity of exploration for policy learning. If ε = 0, we cannot correctly evaluate arbitrary policies."
 
   "Contextual bandits allow testing and optimization over exponentially more policies for a given number of events. In one realistic scenario, one can handle 1 billion policies for the data collection cost of 21 A/B tests. The essential reason for such an improvement is that each data point can be used to evaluate all the policies picking the same action for the same context (i.e., make the same decision for the same input features rather than just a single policy as in A/B testing). An important property is that policies being tested do not need to be approved, implemented in production, and run live for a period of time (thus saving much business and engineering effort). Furthermore, the policies do not even need to be known during data collection."
-
-----
-
-  ["Counterfactual Reasoning and Learning from Logged Data"](http://timvieira.github.io/blog/post/2016/12/19/counterfactual-reasoning-and-learning-from-logged-data/) by Tim Vieira
-
-  ["A Contextual Bandit Bake-off"](https://arxiv.org/abs/1802.04064) by Bietti, Agarwal, Langford `paper` ([overview](https://youtu.be/zr6H4kR8vTg?t=50m36s) by John Langford `video`)  
-  ["Doubly Robust Policy Evaluation and Learning"](https://arxiv.org/abs/1103.4601) by Dudik, Langford, Li `paper` ([overview](https://youtu.be/gzxRDw3lXv8?t=35m45s) by Robert Schapire `video`) ([notes](https://medium.com/@sharaf/a-paper-a-day-12-doubly-robust-policy-evaluation-and-learning-7e6a09665d7f))  
-  ["Taming the Monster: A Fast and Simple Algorithm for Contextual Bandits"](https://arxiv.org/abs/1402.0555) by Agarwal et al. `paper` ([overview](https://youtube.com/watch?v=mi_G5tw7Etg) by Alekh Agarwal `video`) ([overview](https://youtu.be/gzxRDw3lXv8?t=37m8s) by Robert Schapire `video`)  
-  [**"Making Contextual Decisions with Low Technical Debt"**](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) by Agarwal et al. `paper` `summary`  
-
-----
-
-  ["Multi-armed Bandit Experiments in the Online Service Economy"](https://research.google.com/pubs/pub42550.html) by Steven Scott `paper`
-
-  ["Reinforcement Learning in Industry"](http://videolectures.net/deeplearning2017_le_roux_recommendation_system/) by Nicolas Le Roux `video`  
-  ["Counterfactual Evaluation and Learning for Search, Recommendation and Ad Placement"](http://www.cs.cornell.edu/~adith/CfactSIGIR2016/) by Thorsten Joachims and Adith Swaminathan `video`  
-  ["Deep Learning from Logged Interventions"](https://youtube.com/watch?v=lzA5K4im2no) by Thorsten Joachims `video`  
-
-  [**Microsoft Custom Decision Service**](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al)
-
-----
-
-  "The Atari results are very fun but obviously unimpressive on about 1/4 of the games. My hypothesis for why is that the solution does only local (epsilon-greedy style) exploration rather than global exploration so they can only learn policies addressing either very short credit assignment problems or with greedily accessible polices. Global exploration strategies are known to result in exponentially more efficient strategies in general for [deterministic decision processes](http://idm-lab.org/bib/abstracts/papers/aaai93.pdf) (1993), [Markov Decision Processes](http://www.cis.upenn.edu/~mkearns/papers/KearnsSinghE3.pdf) (1998), and for [MDPs without modelling](http://research.microsoft.com/pubs/178886/published.pdf) (2006). The reason these strategies are not used is because they are based on tabular learning rather than function fitting. That’s why I shifted to Contextual Bandit research after the 2006 paper. We’ve learned quite a bit there, enough to start tackling a [Contextual Deterministic Decision Process](http://arxiv.org/abs/1602.02722) (2016), but that solution is still far from practical."
-
-  *(John Langford)*
-
-  [**global exploration strategies**](#exploration-and-intrinsic-motivation)
 
 
 
@@ -1868,6 +1832,12 @@ interesting recent papers:
 
   - `post` <https://deepmind.com/blog/article/AlphaStar-Grandmaster-level-in-StarCraft-II-using-multi-agent-reinforcement-learning>
   - `video` <https://youtube.com/watch?v=6eiErYh_FeY>
+  - `video` <https://slideslive.com/38922025/deep-reinforcement-learning-1?t=318) (Vinyals)
+  - `video` <https://youtu.be/3UdH3lPF7nE> (Vinyals)
+  - `video` <https://youtu.be/Kedt2or9xlo> (Vinyals)
+  - `video` <https://slideslive.com/38916905/alphastar-mastering-the-game-of-starcraft-ii> (Silver)
+  - `video` <https://youtu.be/mzjGNo9Tz4g?t=10m53s> (Silver)
+  - `video` <https://youtube.com/watch?v=eZCI7zu_DlM> (Gibson)
   - `video` <https://youtube.com/watch?v=BTLCdge7uSQ> (Kilcher)
 
 
@@ -1920,6 +1890,7 @@ interesting recent papers:
 
 >	"We tested our model-based learning algorithm against a comparable model-free learning algorithm. When evaluated on Ms. Pacman, our model-free algorithm achieved identical results to R2D2, but learned significantly slower than MuZero and converged to a much lower final score. We conjecture that the search-based policy improvement step of MuZero provides a stronger learning signal than the high bias, high variance targets used by Q-learning."
 
+  - `video` <https://youtube.com/watch?v=We20YSAJZSE> (Kilcher)
   - `notes` <https://www.shortscience.org/paper?bibtexKey=journals/corr/1911.08265>
 
 
@@ -2192,7 +2163,7 @@ interesting recent papers:
 
 
 #### ["Making Contextual Decisions with Low Technical Debt"](http://arxiv.org/abs/1606.03966) Agarwal et al.
-  `Microsoft Custom Decision Service`
+  `Project Custom Decision`
 >	"Applications and systems are constantly faced with decisions that require picking from a set of actions based on contextual information. Reinforcement-based learning algorithms such as contextual bandits can be very effective in these settings, but applying them in practice is fraught with technical debt, and no general system exists that supports them completely. We address this and create the first general system for contextual learning, called the Decision Service. Existing systems often suffer from technical debt that arises from issues like incorrect data collection and weak debuggability, issues we systematically address through our ML methodology and system abstractions. The Decision Service enables all aspects of contextual bandit learning using four system abstractions which connect together in a loop: explore (the decision space), log, learn, and deploy. Notably, our new explore and log abstractions ensure the system produces correct, unbiased data, which our learner uses for online learning and to enable real-time safeguards, all in a fully reproducible manner. The Decision Service has a simple user interface and works with a variety of applications: we present two live production deployments for content recommendation that achieved click-through improvements of 25-30%, another with 18% revenue lift in the landing page, and ongoing applications in tech support and machine failure handling. The service makes real-time decisions and learns continuously and scalably, while significantly lowering technical debt."
 
 >	"We have presented the Decision Service: a powerful tool to support the complete data lifecycle, which automates many of the burdensome tasks that data scientists face such as gathering the right data and deploying in an appropriate manner. Instead, a data scientist can focus on more core tasks such as finding the right features, representation, or signal to optimize against. The data lifecycle support also makes basic application of the Decision Service feasible without a data scientist. To assist in lowering the barrier to entry, we are exploring techniques based on expert learning and hyperparameter search that may further automate the process. Since the policy evaluation techniques can provide accurate predictions of online performance, such automations are guaranteed to be statistically sound. We are also focusing on making the decision service easy to deploy and use because we believe this is key to goal of democratizing machine learning for everyone. The Decision Service can also naturally be extended to a greater variety of problems, all of which can benefit from data lifecycle support. Plausible extensions might address advanced variants like reinforcement and active learning, and simpler ones like supervised learning."
@@ -2204,9 +2175,8 @@ interesting recent papers:
 
 >	"We need a system that explores over appropriate choices with logging of features, actions, probabilities of actions, and outcomes. These must then be fed into an appropriate learning algorithm which trains a policy and then deploys the policy at the point of decision. The system enables a fully automatic causally sound learning loop for contextual control of a small number of actions. It is strongly scalable, for example a version of this is in use for personalized news on MSN."
 
+  - <https://azure.microsoft.com/en-us/services/cognitive-services/personalizer/>
   - <https://azure.microsoft.com/en-us/services/cognitive-services/custom-decision-service/>
-  - <https://ds.microsoft.com>
-  - <https://mwtds.azurewebsites.net>
   - <http://research.microsoft.com/en-us/projects/mwt/>
   - `video` <https://youtube.com/watch?v=7ic_d5TeIUk> (Langford)
   - `video` <https://vimeo.com/240429210> (Langford, Agarwal)
@@ -2278,8 +2248,6 @@ interesting recent papers:
 ----
 #### ["How Can We Define Intrinsic Motivation"](http://pyoudeyer.com/epirob08OudeyerKaplan.pdf) Oudeyer, Kaplan
 >	"Intrinsic motivation is a crucial mechanism for open-ended cognitive development since it is the driver of spontaneous exploration and curiosity. Yet, it has so far only been conceptualized in ad hoc manners in the epigenetic robotics community. After reviewing different approaches to intrinsic motivation in psychology, this paper presents a unified definition of intrinsic motivation, based on the theory of Daniel Berlyne. Based on this definition, we propose a landscape of types of computational approaches, making it possible to position existing and future models relative to each other, and we show that important approaches are still to be explored."
-
-  - [**intrinsic motivation**](#exploration-and-intrinsic-motivation)
 
 
 #### ["Computational Theories of Curiosity-Driven Learning"](https://arxiv.org/abs/1802.10546) Oudeyer
