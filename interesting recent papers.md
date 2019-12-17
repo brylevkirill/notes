@@ -1115,6 +1115,13 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - [flow models](#generative-models---flow-models)
 
 ----
+#### ["Classification Accuracy Score for Conditional Generative Models"](https://arxiv.org/abs/1905.10887) Ravuri, Vinyals
+  `CAS` `evaluation`
+>	"Deep generative models of images are now sufficiently mature that they produce nearly photorealistic samples and obtain scores similar to the data distribution on heuristics such as Frechet Inception Distance. These results, especially on large-scale datasets such as ImageNet, suggest that DGMs are learning the data distribution in a perceptually meaningful space and can be used in downstream tasks. To test this latter hypothesis, we use class-conditional generative models from a number of model classes---variational autoencoders, autoregressive models, and generative adversarial networks---to infer the class labels of real data. We perform this inference by training an image classifier using only synthetic data and using the classifier to predict labels on real data. The performance on this task, which we call Classification Accuracy Score, reveals some surprising results not identified by traditional metrics and constitute our contributions."  
+>	"First, when using a state-of-the-art GAN (BigGAN-deep), Top-1 and Top-5 accuracy decrease by 27.9\% and 41.6\%, respectively, compared to the original data; and conditional generative models from other model classes, such as Vector-Quantized Variational Autoencoder-2 (VQ-VAE-2) and Hierarchical Autoregressive Models (HAMs), substantially outperform GANs on this benchmark."  
+>	"Second, CAS automatically surfaces particular classes for which generative models failed to capture the data distribution, and were previously unknown in the literature."  
+>	"Third, we find traditional GAN metrics such as Inception Score (IS) and FID neither predictive of CAS nor useful when evaluating non-GAN models."  
+
 #### ["Do Deep Generative Models Know What They Don't Know?"](https://arxiv.org/abs/1810.09136) Nalisnick, Matsukawa, Teh, Gorur, Lakshminarayanan
   `evaluation` `out-of-distribution`
 >	"We show that deep generative models can assign higher likelihood to out-of-distribution inputs than the training data."  
@@ -1744,23 +1751,8 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <https://github.com/gpapamak/maf>
 
 #### ["Density Estimation using Real NVP"](http://arxiv.org/abs/1605.08803) Dinh, Sohl-Dickstein, Bengio
-  `Real NVP` `RNVP`
->	"Real-valued Non Volume Preserving transform:  
->	- one-pass and exact inference and sampling  
->	- explicit learning of a latent representation  
->	- tractable log-likelihood  
->	- coherent and sharp samples"  
-  - <https://laurent-dinh.github.io/2016/07/12/real-nvp-visualization.html> (demo)
-  - `video` <https://channel9.msdn.com/events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-1> (08:19) (Dinh)
-  - `video` <https://periscope.tv/hugo_larochelle/1ypKdAVmbEpGW> (Dinh)
-  - `video` <https://cds.cern.ch/record/2302480> (43:54) (Rezende)
-  - `post` <http://blog.evjang.com/2018/01/nf2.html>
-  - `post` <http://akosiorek.github.io/ml/2018/04/03/norm_flows.html>
-  - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#realnvp>
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.08803>
-  - `code` <https://github.com/tensorflow/models/tree/master/research/real_nvp>
-  - `code` <https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/distributions/python/ops/bijectors/real_nvp.py>
-  - `code` <https://github.com/ikostrikov/pytorch-flows>
+  `Real NVP`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#density-estimation-using-real-nvp-dinh-sohl-dickstein-bengio>
 
 
 
@@ -1953,6 +1945,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	- We formally prove contraction mapping results for our overall algorithm, and use these results to conclude that our method performs distributional RL end-to-end under the Wasserstein metric, as desired"  
 >	"Authors proposed the use of quantile regression as a method for minimizing the 1-Wasserstein in the univariate case when approximating using a mixture of Dirac functions."  
 >	"The quantile regression loss for a quantile at τ∈ [0,1] and error u (positive for underestimation and negative for overestimation) is given by ρτ(u) = (τ − I{u ≤ 0})u. It is an asymmetric loss function penalizing underestimation by weight τ and overestimation by weight 1 − τ. For a given scalar distribution Z with c.d.f. Fz and a quantile τ, the inverse c.d.f. q = Fz−1(τ) minimizes the expected quantile regression loss E z∼ Z [ρτ(z − q)]. Using this loss allows one to train a neural network to approximate a scalar distribution represented by its inverse c.d.f. For this, the network can output a fixed grid of quantiles, with the respective quantile regression losses being applied to each output independently. A more effective approach is to provide the desired quantile τ as an additional input to the network, and train it to output the corresponding value of Fz−1(τ)."  
+  - `video` <https://youtu.be/LzIWBb2FhZU?t=36m46s> (Grishin)
   - `post` <https://mtomassoli.github.io/2017/12/08/distributional_rl/>
   - `code` <https://github.com/higgsfield/RL-Adventure>
   - `code` <https://github.com/NervanaSystems/coach/blob/master/agents/qr_dqn_agent.py>
@@ -1975,6 +1968,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://vimeo.com/237274251> (Bellemare)
   - `video` <https://videolectures.net/DLRLsummerschool2018_bellemare_deep_RL/#t=2010> (Bellemare)
   - `video` <https://youtu.be/bsuvM1jO-4w?t=4m45s> (Mnih)
+  - `video` <https://youtube.com/watch?v=LzIWBb2FhZU> (Grishin)
   - `video` <https://youtu.be/fnwo3GCmyEo?t=6m45s> (Fritzler) `in russian`
   - `video` <https://youtu.be/5REJGbNu-Kk?t=11m45s> (Grinchuk) `in russian`
   - `post` <https://mtomassoli.github.io/2017/12/08/distributional_rl/>
@@ -2498,6 +2492,21 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <https://github.com/higgsfield/interaction_network_pytorch>
 
 ----
+#### ["Dream to Control: Learning Behaviors by Latent Imagination"](https://arxiv.org/abs/1912.01603) Hafner, Lillicrap, Ba, Norouzi
+  `Dreamer`
+>	"PlaNet: online planning using cross entropy method"  
+>	"Dreamer: learn actor and value offline by backprop through dynamics"  
+>	"a scheme which does not consider rewards beyond the imagination horizon:  
+>	- use action model to imagine trajectories from each latent state  
+>	- actions maximize predicted rewards by propagating their analytic gradients  
+>	- reparametrization gradients for latent states and actions (straight-through estimator for discrete actions)"
+>	"a scheme in Dreamer:  
+>	- use action model to imagine trajectories from each latent state  
+>	- values optimize Bellman consistency for current policy  
+>	- actions maximize predicted values by backpropagating through transitions"  
+  - <https://dreamrl.github.io> (demo)
+  - `video` <https://slideslive.com/38922025/deep-reinforcement-learning-1?t=3449> (Hafner)
+
 #### ["Model Based Reinforcement Learning for Atari"](https://arxiv.org/abs/1903.00374) Kaiser et al.
   `SimPLe` `learning to simulate` `learning environment model` `video prediction`
 >	"Simulated Policy Learning, a complete model-based deep RL algorithm based on video prediction models."  
@@ -2751,6 +2760,15 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/77FWffYuQu0?t=15m54s> (Lipton)
 
 ----
+#### ["Self-Imitation Learning via Trajectory-Conditioned Policy for Hard-Exploration Tasks"](https://arxiv.org/abs/1907.10247) Guo et al.
+  `DTSIL` `uncertainty motivation` `novelty` `self-imitation`
+>	"learning a trajectory-conditioned policy that can imitate diverse demonstrations"  
+>	"imitation learning from agent's good trajectories could drive deeper exploration"  
+>	"with probability p, perform exploration to less frequently visited states; with probability 1 - p, exploitation to states with high reward - linearly anneal p during training"  
+>	"extension to Go-Explore but trajectory-conditioned policy instead of direct resetting to arbitrary state"  
+  - <https://sites.google.com/view/diverse-sil> (demo)
+  - `video` <https://slideslive.com/38922025/deep-reinforcement-learning-1?t=2860> (Guo)
+
 #### ["Count-Based Exploration with the Successor Representation"](https://arxiv.org/abs/1807.11622) Machado, Bellemare, Bowling
   `uncertainty motivation` `novelty`
 >	"While the traditional successor representation is a representation that defines state generalization by the similarity of successor states, the substochastic successor representation is also able to implicitly count the number of times each state (or feature) has been observed. This extension connects two until now disjoint areas of research."  

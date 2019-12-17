@@ -381,7 +381,7 @@
 
 
 ---
-### artificial curiosity and creativity
+### Artificial Curiosity and Creativity
 
   ["Formal Theory of Creativity and Fun and Intrinsic Motivation"](http://people.idsia.ch/~juergen/creativity.html) by Juergen Schmidhuber  
   ["Active Exploration, Artificial Curiosity & What's Interesting"](http://people.idsia.ch/~juergen/interest.html) by Juergen Schmidhuber  

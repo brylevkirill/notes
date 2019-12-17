@@ -711,6 +711,7 @@
 #### ["Breaking Sticks and Ambiguities with Adaptive Skip-gram"](http://arxiv.org/abs/1502.07257) Bartunov, Kondrashkin, Osokin, Vetrov
 >	"Recently proposed Skip-gram model is a powerful method for learning high-dimensional word representations that capture rich semantic relationships between words. However, Skip-gram as well as most prior work on learning word representations does not take into account word ambiguity and maintain only single representation per word. Although a number of Skip-gram modifications were proposed to overcome this limitation and learn multi-prototype word representations, they either require a known number of word meanings or learn them using greedy heuristic approaches. In this paper we propose the Adaptive Skip-gram model which is a nonparametric Bayesian extension of Skip-gram capable to automatically learn the required number of representations for all words at desired semantic resolution. We derive efficient online variational learning algorithm for the model and empirically demonstrate its efficiency on wordsense induction task."
 
+  - `video` <http://youtube.com/watch?v=CxdUIhzmy1A> (Bartunov)
   - `video` <http://youtube.com/watch?v=vYbee1InliU> (Vetrov)
   - `video` <http://postnauka.ru/video/49258> (Vetrov) `in russian`
   - `video` <http://youtu.be/uoRwjxaDgt0?t=33m58s> (Vetrov) `in russian`

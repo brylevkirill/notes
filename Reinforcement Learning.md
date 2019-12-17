@@ -775,24 +775,15 @@
 ----
 #### exploration and intrinsic motivation - bayesian exploration
 
->	"Bayesian reinforcement learning provides approach to optimal exploration during learning and beyond. Prior information about the problem is represented in parametric form, and Bayesian inference is used to incorporate any new information about the model. Thus the exploration-exploitation problem can be handled as an explicit sequential decision problem, where the agent seeks to maximize future expected return with respect to its current uncertainty on the model. The decision-making process is significantly more complex since it involves reasoning about all possible models and courses of action."
-
->	"The optimal Bayesian policy chooses actions based not only on how they will affect the next state of the system, but also based on how they will affect the next belief state; and, since a better knowledge of the MDP will typically lead to greater future reward, the Bayesian policy will very naturally trade off between exploring the system to gain more knowledge, and exploiting its current knowledge of the system. Unfortunately, while the Bayesian approach provides a very elegant solution to the exploration/exploitation problem, it is typically not possible to compute the Bayesian policy exactly."
-
->	"Since the dimension of the belief state grows polynomially in the number of states and actions, computing the Bayesian value function using value iteration or other methods is typically not tractable. One exception, where the Bayesian approach is tractable, is the domain of a k-armed bandit (i.e., an MDP with one state and k actions, where the rewards are unknown). In this case, the Bayesian approach leads to the well-known Gittins indices. However, the approach does not scale analytically to multi-state MDPs. This has lead to numerous methods that approximate the Bayesian exploration policy."
+  [overview](https://youtu.be/sGuiWX07sKw?t=57m28s) by David Silver `video`  
+  [overview](https://slideslive.com/38922025/deep-reinforcement-learning-1?t=3970) by Shimon Whiteson `video` *(lack of good methods for real exploration)*  
 
 ----
 
-  [**bayesian reinforcement learning**](#bayesian-reinforcement-learning)
+  [**bayesian reinforcement learning**](#bayesian-reinforcement-learning) *(papers)*
 
 ----
 
-  [overview](https://youtu.be/sGuiWX07sKw?t=57m28s) by David Silver `video`
-
-----
-
-  [**"Planning to Be Surprised: Optimal Bayesian Exploration in Dynamic Environments"**](#planning-to-be-surprised-optimal-bayesian-exploration-in-dynamic-environments-sun-gomez-schmidhuber) by Sun et al. `paper` `summary`  
-  [**"Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"**](#efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search-guez-silver-dayan) by Guez et al. `paper` `summary`  
   [**"Learning to Optimize via Posterior Sampling"**](#learning-to-optimize-via-posterior-sampling-russo-van-roy) by Russo and van Roy `paper` `summary`  
   [**"Why is Posterior Sampling Better than Optimism for Reinforcement Learning?"**](#why-is-posterior-sampling-better-than-optimism-for-reinforcement-learning-osband-van-roy) by Osband and van Roy `paper` `summary`  
   [**"A Tutorial on Thompson Sampling"**](#a-tutorial-on-thompson-sampling-russo-van-roy-kazerouni-osband-wen) by Russo et al. `paper` `summary`  
@@ -803,12 +794,19 @@
   [**"Weight Uncertainty in Neural Networks"**](#weight-uncertainty-in-neural-networks-blundell-cornebise-kavukcuoglu-wierstra) by Blundell et al. `paper` `summary`  
   [**"BBQ-Networks: Efficient Exploration in Deep Reinforcement Learning for Task-Oriented Dialogue Systems"**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#bbq-networks-efficient-exploration-in-deep-reinforcement-learning-for-task-oriented-dialogue-systems-lipton-li-gao-li-ahmed-deng) by Lipton et al. `paper` `summary`  
   [**"Noisy Networks for Exploration"**](#noisy-networks-for-exploration-fortunato-et-al) by Fortunato et al. `paper` `summary`  
-  ["The Uncertainty Bellman Equation and Exploration"](https://arxiv.org/abs/1709.05380) by O'Donoghue et al. `paper`  
 
 ----
 
   [**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration)  
   [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
+
+----
+
+>	"Bayesian reinforcement learning provides approach to optimal exploration during learning and beyond. Prior information about the problem is represented in parametric form, and Bayesian inference is used to incorporate any new information about the model. Thus the exploration-exploitation problem can be handled as an explicit sequential decision problem, where the agent seeks to maximize future expected return with respect to its current uncertainty on the model. The decision-making process is significantly more complex since it involves reasoning about all possible models and courses of action."
+
+>	"The optimal Bayesian policy chooses actions based not only on how they will affect the next state of the system, but also based on how they will affect the next belief state; and, since a better knowledge of the MDP will typically lead to greater future reward, the Bayesian policy will very naturally trade off between exploring the system to gain more knowledge, and exploiting its current knowledge of the system. Unfortunately, while the Bayesian approach provides a very elegant solution to the exploration/exploitation problem, it is typically not possible to compute the Bayesian policy exactly."
+
+>	"Since the dimension of the belief state grows polynomially in the number of states and actions, computing the Bayesian value function using value iteration or other methods is typically not tractable. One exception, where the Bayesian approach is tractable, is the domain of a k-armed bandit (i.e., an MDP with one state and k actions, where the rewards are unknown). In this case, the Bayesian approach leads to the well-known Gittins indices. However, the approach does not scale analytically to multi-state MDPs. This has lead to numerous methods that approximate the Bayesian exploration policy."
 
 
 ----
@@ -1321,31 +1319,21 @@
 
 ----
 
-  [**policy search in belief-augmented MDP**](#bayesian-reinforcement-learning---policy-search-in-belief-augmented-mdp)  
-  [**policy search in variational MDP**](##bayesian-reinforcement-learning---policy-search-in-variational-mdp)  
-  [**universal reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---aixi)  
+  [**policy search in Bayes-Adaptive MDP**](#bayesian-reinforcement-learning---policy-search-in-bayes-adapted-mdp)  
+  [**policy search in variational MDP**](#bayesian-reinforcement-learning---policy-search-in-variational-mdp)  
+  [**universal reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence)  
 
 ----
 
   [**bayesian inference and learning**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
 
 
-
 ----
-#### bayesian reinforcement learning - policy search in belief-augmented MDP
+#### bayesian reinforcement learning - policy search in Bayes-Adaptive MDP
 
-  BRL agent aims to maximise expected sum of future rewards obtained when interacting with unknown Markov Decision Process while using some prior knowledge.  
-  Belief-augmented Markov Decision Process is an MDP obtained when considering augmented states made of concatenation of actual state and posterior beliefs.  
-  BRL agent maintains distribution over worlds and either samples a world and acts as if it is real, or chooses action by reasoning about full distribution.  
-
-  Bayes-Adaptive Markov Decision Process forms natural framework to deal with sequential decision-making problems when state information is partially hidden.  
-  Under this framework actions that yield highest instant reward and actions that maximise gathering of knowledge about environment are often very different.  
-  BAMDP framework leads to rigorous definition of optimal solution based on finding policy that reaches optimal balance between exploration and exploitation.  
-
-----
-
-  [overview](https://youtu.be/sGuiWX07sKw?t=1h8m44s) by David Silver `video`  
-  ["Bandits, Active Learning, Bayesian RL and Global Optimization"](https://youtu.be/5rev-zVx1Ps?t=58m45s) by Marc Toussaint `video`  
+  [overview](https://youtu.be/5rev-zVx1Ps?t=58m45s) by Marc Toussaint `video`  
+  [overview](https://youtu.be/sGuiWX07sKw?t=1h9m2s) by David Silver `video`  
+  [overview](https://slideslive.com/38922025/deep-reinforcement-learning-1?t=3970) by Shimon Whiteson `video`  
 
   ["Reinforcement Learning: Beyond Markov Decision Processes"](https://youtube.com/watch?v=_dkaynuKUFE) by Alexey Seleznev `video` `in russian`  
   ["Partially Observable Markov Decision Process in Reinforcement Learning"](https://yadi.sk/i/pMdw-_uI3Gke7Z) by Pavel Shvechikov `video` `in russian`  
@@ -1353,18 +1341,42 @@
 
 ----
 
-  [**"Planning to Be Surprised: Optimal Bayesian Exploration in Dynamic Environments"**](#planning-to-be-surprised-optimal-bayesian-exploration-in-dynamic-environments-sun-gomez-schmidhuber) by Sun et al. `paper` `summary`  
+  ["Optimal Learning: Computational Procedures for Bayes-adaptive Markov Decision Processes"](https://researchgate.net/publication/34273562_Optimal_learning_microform_computational_procedures_for_Bayes-adaptive_Markov_decision_processes) by Duff and Barto `paper`  
   ["Bayes-Adaptive POMDPs"](https://papers.nips.cc/paper/3333-bayes-adaptive-pomdps) by Ross et al. `paper`  
-  [**"Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"**](#efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search-guez-silver-dayan) by Guez et al. `paper` `summary`  
   ["Monte-Carlo Planning in Large POMDPs"](https://papers.nips.cc/paper/4031-monte-carlo-planning-in-large-pomdps) by Silver et al. `paper`
 	([overview](https://yadi.sk/i/lOAUu7o13JBHFz) (1:39:35) by Pavel Shvechikov `video` `in russian`, [demo](https://youtube.com/watch?v=fXuOeNM_yEk) `video`)  
+  [**"Planning to Be Surprised: Optimal Bayesian Exploration in Dynamic Environments"**](#planning-to-be-surprised-optimal-bayesian-exploration-in-dynamic-environments-sun-gomez-schmidhuber) by Sun et al. `paper` `summary`  
+  [**"Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"**](#efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search-guez-silver-dayan) by Guez et al. `paper` `summary`  
   ["Learning in POMDPs with Monte Carlo Tree Search"](http://proceedings.mlr.press/v70/katt17a.html) by Katt et al. `paper`  
   ["Variational Inference for Data-Efficient Model Learning in POMDPs"](https://arxiv.org/abs/1805.09281) by Tschiatschek et al. `paper`  
+  ["VariBAD: A Very Good Method for Bayes-Adaptive Deep RL via Meta-Learning"](https://arxiv.org/abs/1910.08348) by Zintgraf et al. `paper` ([overview](https://slideslive.com/38922025/deep-reinforcement-learning-1?t=3970) by Shimon Whiteson `video`)  
 
+----
+
+  BRL agent aims to maximise expected sum of future rewards obtained when interacting with unknown Markov Decision Process while using some prior knowledge.  
+  BRL agent maintains distribution over worlds and either samples a world and acts as if it is real, or chooses action by reasoning about full distribution.  
+  Bayes-Adaptive Markov Decision Process is an MDP with a state being a concatenation of beliefs about actual state, transition function and reward function.  
+  Under this framework actions that yield highest instant reward and actions that maximise gathering of knowledge about environment are often very different.  
+  BAMDP framework leads to rigorous definition of optimal solution based on finding policy that reaches optimal balance between exploration and exploitation.  
 
 
 ----
 #### bayesian reinforcement learning - policy search in variational MDP
+
+  ["A Case Against Generative Models in RL?"](https://youtube.com/watch?v=EA2RtXsLSWU) by Shakir Mohamed `video`  
+  ["Bayesian Policy Search"](https://youtu.be/AggqBRdz6CQ?t=9m53s) by Shakir Mohamed `video`  
+  ["Connections Between Inference and Control"](https://youtu.be/iOYiPhu5GEk?t=2m34s) by Sergey Levine `video` ([write-up](https://arxiv.org/abs/1805.00909))  
+
+  ["Reinforcement Learning through the Lenses of Variational Inference"](https://youtube.com/watch?v=6v3RxQycT0E) by Sergey Bartunov `video`  
+  ["Bayesian Inference for Reinforcement Learning"](https://youtube.com/watch?v=KZd-jkmeIcU) by Sergey Bartunov `video` `in russian`
+	([slides](https://drive.google.com/drive/folders/0B2zoFVYw1rN3N0RUNXE1WnNObTQ) `in english`)  
+
+----
+
+  ["Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review"](https://arxiv.org/abs/1805.00909) by Levine `paper` ([talk](https://youtu.be/iOYiPhu5GEk?t=2m34s) `video`)  
+  [**"Reinforced Variational Inference"**](#reinforced-variational-inference-weber-heess-eslami-schulman-wingate-silver) by Weber et al. `paper` `summary`  
+
+----
 
   p(z) = N(z|0,I)  
   p(a1..T|z) = Un(a)  
@@ -1372,21 +1384,6 @@
   q(z|x) = N(z|μφ(x),Σφ(x))  
   q(a|z) = Cat(a|Πθ(z))  
   Fπ(θ) = E q(a,z|x) [R(a|x)] - α\*DKL[qθ(z|x)||p(z|x)] + α\*H[πθ(a|z)]  
-
-----
-
-  ["A Case Against Generative Models in RL?"](https://youtube.com/watch?v=EA2RtXsLSWU) by Shakir Mohamed `video`  
-  ["Bayesian Policy Search"](https://youtu.be/AggqBRdz6CQ?t=9m53s) by Shakir Mohamed `video`  
-  ["Connections Between Inference and Control"](https://youtu.be/iOYiPhu5GEk?t=2m34s) by Sergey Levine `video` ([write-up](https://arxiv.org/abs/1805.00909))  
-
-  ["Bayesian Inference for Reinforcement Learning"](https://youtube.com/watch?v=KZd-jkmeIcU) by Sergey Bartunov `video` `in russian`
-	([slides](https://drive.google.com/drive/folders/0B2zoFVYw1rN3N0RUNXE1WnNObTQ) `in english`)  
-
-----
-
-  ["Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review"](https://arxiv.org/abs/1805.00909) by Sergey Levine `paper` ([talk](https://youtu.be/iOYiPhu5GEk?t=2m34s) `video`)  
-  [**"Reinforced Variational Inference"**](#reinforced-variational-inference-weber-heess-eslami-schulman-wingate-silver) by Weber et al. `paper` `summary`  
-  ["Reinforcement Learning as Variational Inference: Two Recent Approaches"](http://people.ee.duke.edu/~lcarin/Rohith8.11.2017.pdf) by Rohith Kuditipudi `slides`  
 
 
 
@@ -1531,7 +1528,7 @@
     * [**REINFORCE**](#reinforce)  (policy gradient estimation using simple baseline for returns)  
     * [**Trust Region Policy Optimization**](#trust-region-policy-optimization-trpo)  (policy gradient estimation using natural gradient / trust region)  
     * [**Proximal Policy Optimization**](#proximal-policy-optimization-ppo)  (KL-constrained policy gradient estimation without using natural gradient)  
-    * [**Actor-Critic**](#actor-critic-ac), [**Advantage Actor-Critic**](#advantage-actor-critic-a2c), [**Generalized Advantage Estimation**](#generalized-advantage-estimation-gae)  (policy gradient estimation using critic as baseline for returns)  
+    * [**Actor-Critic**](#actor-critic-ac), [**Advantage Actor-Critic**](#advantage-actor-critic-a2c)  (policy gradient estimation using critic as baseline for returns)  
   - pathwise derivative policy gradient  
     * [**Deep Deterministic Policy Gradient**](#deep-deterministic-policy-gradient-ddpg)  (policy gradient estimation using gradient of critic as model of returns)  
     * [**Stochastic Value Gradient**](#stochastic-value-gradient-svg)  (policy gradient estimation using gradient of critic or gradient of environment model)  
@@ -1686,7 +1683,6 @@
 
 
   - [**Advantage Actor-Critic (A2C)**](#advantage-actor-critic-a2c)  
-  - [**Generalized Advantage Estimation (GAE)**](#generalized-advantage-estimation-gae)  
 
 
 ----
@@ -1703,15 +1699,6 @@
   - critic approximates action value with rewards from several steps of experience and passes TD error to actor  
   - exploiting multithreading capabilities and executing many instances of agent in parallel using shared model  
   - alternative to experience replay since parallelization also diversifies and decorrelates experience data  
-
-
-----
-#### Generalized Advantage Estimation (GAE)
-
-  [**"High-Dimensional Continuous Control Using Generalized Advantage Estimation"**](#high-dimensional-continuous-control-using-generalized-advantage-estimation-schulman-moritz-levine-jordan-abbeel) by Schulman et al. `paper` `summary`
-
-  [overview](https://youtu.be/xe-z4i3l-iQ?t=30m35s) by Pieter Abbeel `video`  
-  [overview](https://youtu.be/rO7Dx8pSJQw?t=40m20s) by John Schulman `video`  
 
 
 
@@ -2265,6 +2252,8 @@ interesting recent papers:
 
 >	"An optimal Bayesian framework for curiosity-driven exploration using learning progress. After proving that Information Gain is additive in expectation, a dynamic programming based algorithm was proposed to maximize Information Gain. Experiments however were limited to small tabular MDPs with a Dirichlet prior on transition probabilities."
 
+  - `video` <https://youtu.be/WYnLlk58EUE?t=12m22s>
+
 
 #### ["Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"](https://arxiv.org/abs/1205.3109) Guez, Silver, Dayan
 >	"Bayesian model-based reinforcement learning is a formally elegant approach to learning optimal behaviour under model uncertainty, trading off exploration and exploitation in an ideal way. Unfortunately, finding the resulting Bayes-optimal policies is notoriously taxing, since the search space becomes enormous. In this paper we introduce a tractable, sample-based method for approximate Bayes-optimal planning which exploits Monte-Carlo tree search. Our approach outperformed prior Bayesian model-based RL algorithms by a significant margin on several well-known benchmark problems – because it avoids expensive applications of Bayes rule within the search tree by lazily sampling models from the current beliefs. We illustrate the advantages of our approach by showing it working in an infinite state space domain which is qualitatively out of reach of almost all previous work in Bayesian exploration."
@@ -2538,6 +2527,8 @@ interesting recent papers:
 >	"Unlike many intrinsic motivation algorithms, pseudo-counts also do not rely on learning a forward (transition and/or reward) model. This point is especially important because a number of powerful density models for images exist (Van den Oord et al., 2016), and because optimality guarantees cannot in general exist for intrinsic motivation algorithms based on forward models."
 
 ----
+>	"Take maximum likelihood based tabular approach in RMAX and replace it with high-dimensional density estimator, and rather than estimating transition function just try to estimate unconditional probability of being in a state. Because it is a high-dimensional density estimator it won't be count-based the way tabular model of RMAX would be. But in a pseudo-count approach we ask ourselves, suppose this method was a count-based (which it is not), what counts need to be in order to explain the change in estimated probability that results from updating the model with a new data point. Then it can be used to drive systematic exploration similar to RMAX."
+
 >	"Authors derived pseudo-counts from Context Tree Switching density models over states and used those to form intrinsic rewards."
 
 >	"Bayesian surprise: maximize KL between posterior (after seeing observation) and prior (before seeing it).  
@@ -2548,6 +2539,7 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=0yI2wJ6F8r0> + <https://youtube.com/watch?v=qeeTok1qDZk> + <https://youtube.com/watch?v=EzQwCmGtEHs> (demo)
   - `video` <https://youtu.be/qSfd27AgcEk?t=29m5s> (Bellemare)
   - `video` <https://youtu.be/WuFMrk3ZbkE?t=1h27m37s> (Bellemare)
+  - `video` <https://slideslive.com/38922025/deep-reinforcement-learning-1?t=3970> (Whiteson)
   - `video` <https://youtu.be/qduxl-vKz1E?t=1h16m30s> (Seleznev) `in russian`
   - `video` <https://youtube.com/watch?v=qKyOLNVpknQ> (Pavlov) `in russian`
   - `notes` <http://pemami4911.github.io/paper-summaries/deep-rl/2016/10/08/unifying-count-based-exploration-and-intrinsic-motivation.html>

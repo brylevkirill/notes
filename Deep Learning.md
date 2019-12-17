@@ -1,5 +1,4 @@
-  Deep Learning is learning a composition of differentiable functions as a knowledge representation.  
-  Deep Learning is the concept of building a machine with parameterized functional blocks and training it with gradient-based optimization method.  
+  Deep Learning is learning a composition of differentiable functions as a knowledge representation through gradient-based optimization method.
 
 
   * [**overview**](#overview)
@@ -525,8 +524,9 @@
   overview ([[1]](https://youtu.be/grsO57XMJMk?t=1h1m41s), [[2]](https://youtu.be/5NMIUZ7_nrg)) by Aravind Srinivas `video`  
   [tutorial](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks) by Ian Goodfellow `video` ([paper](https://arxiv.org/abs/1701.00160))  
 
-  ["Implicit Generative Models: Dual and Primal Approaches"](https://youtube.com/watch?v=m80Vp-jz-Io) by Iliya Tolstikhin `video`  
-  ["Implicit Generative Models"](https://youtube.com/watch?v=jAI3rBI6poU) by Dmitry Ulyanov `video` `in russian`
+  [overview](https://youtube.com/watch?v=T4UuL7U5asA) by Egor Zakharov `video`  
+  [overview](https://youtube.com/watch?v=m80Vp-jz-Io) by Iliya Tolstikhin `video`  
+  [overview](https://youtube.com/watch?v=jAI3rBI6poU) by Dmitry Ulyanov `video` `in russian`
 	([slides](https://drive.google.com/open?id=0B_-hq6gL70bUQmhhQ3dwU2lPQXM) `in english`)  
 
 ----
@@ -713,8 +713,10 @@
 
   ["Normalizing Flows for Probabilistic Modeling and Inference"](https://arxiv.org/abs/1912.02762) by Papamakarios et al. `paper`
 
+  [overview](https://slideslive.com/38917907/tutorial-on-normalizing-flows) by Eric Jang `video`  
   [overview](https://youtu.be/7o9dT6puHHg?t=24m8s) by Aravind Srinivas `video`  
   overview ([1](https://youtu.be/mYCLVPRy2nc?t=1h46m30s), [2](https://youtu.be/NCRzGmM1ywE)) by Jonathan Ho `video`  
+  [overview](https://youtube.com/watch?v=v4gp1dMvWJo) by Arsenii Ashukha `video`  
 
   [overview](https://facebook.com/uclcsml/videos/3027632833943878?t=983) of probability flows by Shakir Mohamed `video`
 
@@ -1406,6 +1408,8 @@ Yoshua Bengio:
   `gradient estimation` `NVIL`
 >	"Highly expressive directed latent variable models, such as sigmoid belief networks, are difficult to train on large datasets because exact inference in them is intractable and none of the approximate inference methods that have been applied to them scale well. We propose a fast non-iterative approximate inference method that uses a feedforward network to implement efficient exact sampling from the variational posterior. The model and this inference network are trained jointly by maximizing a variational lower bound on the log-likelihood. Although the naive estimator of the inference model gradient is too high-variance to be useful, we make it practical by applying several straightforward model-independent variance reduction techniques. Applying our approach to training sigmoid belief networks and deep autoregressive networks, we show that it outperforms the wake-sleep algorithm on MNIST and achieves state-of-the-art results on the Reuters RCV1 document dataset."
 
+  - `video` <https://youtu.be/UF4gYuJWGko?t=38m11s> (Sobolev)
+  - `video` <https://youtu.be/UF4gYuJWGko?t=37m57s> (Sobolev)
   - `post` <http://artem.sobolev.name/posts/2017-11-12-stochastic-computation-graphs-fixing-reinforce.html>
 
 
@@ -1434,6 +1438,8 @@ Yoshua Bengio:
 
 >	"To that end, we derive MuProp, an unbiased gradient estimator for deep stochastic neural networks that is based on backpropagation. To the best of our knowledge, it is the first unbiased estimator that can handle both continuous and discrete stochastic variables while taking advantage of analytic gradient information. MuProp’s simple and general formulation allows a straightforward derivation of unbiased gradient estimators for arbitrary stochastic computational graphs – directed acyclic graph with a mix of stochastic and deterministic computational nodes. While the algorithm is applicable to both continuous and discrete distributions, we used only discrete models in our experiments, since the reparameterization trick already provides an effective method for handling continuous variables. We present experimental results for training neural networks with discrete Bernoulli and multinomial variables for both supervised and unsupervised learning tasks. With these models, which are notoriously difficult to train, biased methods often significantly outperform the unbiased ones, except in certain cases. Our results indicate that MuProp’s performance is more consistent and often superior to that of the competing estimators. It is the first time that a well-grounded, unbiased estimator consistently performs as well or better than the biased gradient estimators across a range of difficult tasks."
 
+  - `video` <https://youtu.be/UF4gYuJWGko?t=47m38s> (Sobolev)
+  - `video` <https://youtu.be/-KzvHc16HlM?t=47m44s> (Sobolev)
   - `video` <https://youtu.be/hkRBoiaplEE?t=27m53s> (Sobolev)
   - `video` <https://youtu.be/_XRBlhzb31U?t=25m19s> (Figurnov) `in russian`
   - `post` <http://artem.sobolev.name/posts/2017-11-12-stochastic-computation-graphs-fixing-reinforce.html>
@@ -1481,6 +1487,8 @@ Yoshua Bengio:
   - `video` <http://www.fields.utoronto.ca/video-archive/2018/03/2509-18229> (Maddison)
   - `video` <http://youtube.com/watch?v=JFgXEbgcT7g> (Jang)
   - `video` <https://facebook.com/nipsfoundation/videos/1555493854541848?t=1513> (Teh)
+  - `video` <https://youtu.be/UF4gYuJWGko?t=14m58s> (Sobolev)
+  - `video` <https://youtu.be/UF4gYuJWGko?t=16m40s> (Sobolev)
   - `video` <https://youtu.be/_JTu50iDhkA?t=55m53s> (Sobolev)
   - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (23:39) (Bengio)
   - `video` <https://youtu.be/_XRBlhzb31U?t=28m33s> (Figurnov) `in russian`
@@ -1509,6 +1517,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=QODYgBhv_no>
   - `video` <https://facebook.com/nipsfoundation/videos/1554402064651027?t=993> (Tucker)
   - `video` <http://www.fields.utoronto.ca/video-archive/2018/03/2509-18229> (24:02) (Maddison)
+  - `video` <https://youtu.be/-KzvHc16HlM?t=51m6s> (Sobolev)
   - `video` <https://youtu.be/hkRBoiaplEE?t=34m27s> (Sobolev)
   - `post` <http://artem.sobolev.name/posts/2017-11-12-stochastic-computation-graphs-fixing-reinforce.html>
   - `notes` <http://tuananhle.co.uk/notes/rebar-relax.html>
@@ -2301,6 +2310,30 @@ Yoshua Bengio:
 ----
 #### ["Normalizing Flows for Probabilistic Modeling and Inference"](https://arxiv.org/abs/1912.02762) Papamakarios, Nalisnick, Rezende, Mohamed, Lakshminarayanan
 >	"Normalizing flows provide a general mechanism for defining expressive probability distributions, only requiring the specification of a (usually simple) base distribution and a series of bijective transformations. There has been much recent work on normalizing flows, ranging from improving their expressive power to expanding their application. We believe the field has now matured and is in need of a unified perspective. In this review, we attempt to provide such a perspective by describing flows through the lens of probabilistic modeling and inference. We place special emphasis on the fundamental principles of flow design, and discuss foundational topics such as expressive power and computational trade-offs. We also broaden the conceptual framing of flows by relating them to more general probability transformations. Lastly, we summarize the use of flows for tasks such as generative modeling, approximate inference, and supervised learning."
+
+
+#### ["Density Estimation using Real NVP"](http://arxiv.org/abs/1605.08803) Dinh, Sohl-Dickstein, Bengio
+  `Real NVP`
+>	"Unsupervised learning of probabilistic models is a central yet challenging problem in machine learning. Specifically, designing models with tractable learning, sampling, inference and evaluation is crucial in solving this task. We extend the space of such models using real-valued non-volume preserving (real NVP) transformations, a set of powerful invertible and learnable transformations, resulting in an unsupervised learning algorithm with exact log-likelihood computation, exact sampling, exact inference of latent variables, and an interpretable latent space. We demonstrate its ability to model natural images on four datasets through sampling, log-likelihood evaluation and latent variable manipulations."
+
+>	"Real-valued Non Volume Preserving transform:  
+>	- one-pass and exact inference and sampling  
+>	- explicit learning of a latent representation  
+>	- tractable log-likelihood  
+>	- coherent and sharp samples"  
+
+  - <https://laurent-dinh.github.io/2016/07/12/real-nvp-visualization.html> (demo)
+  - `video` <https://channel9.msdn.com/events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-1> (08:19) (Dinh)
+  - `video` <https://periscope.tv/hugo_larochelle/1ypKdAVmbEpGW> (Dinh)
+  - `video` <https://cds.cern.ch/record/2302480> (43:54) (Rezende)
+  - `video` <https://youtu.be/v4gp1dMvWJo?t=43m20s> (Ashukha)
+  - `post` <http://blog.evjang.com/2018/01/nf2.html>
+  - `post` <http://akosiorek.github.io/ml/2018/04/03/norm_flows.html>
+  - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#realnvp>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.08803>
+  - `code` <https://github.com/tensorflow/models/tree/master/research/real_nvp>
+  - `code` <https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/distributions/python/ops/bijectors/real_nvp.py>
+  - `code` <https://github.com/ikostrikov/pytorch-flows>
 
 
 
