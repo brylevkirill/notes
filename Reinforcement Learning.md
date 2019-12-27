@@ -1,3 +1,4 @@
+  Reinforcement Learning is learning to control an unknown system.
 
 
   * [**introduction**](#introduction)
@@ -122,7 +123,7 @@
 ----
   - *Dota 2*  
 
-	[OpenAI Five](https://openai.com/five)
+	[OpenAI Five](https://openai.com/projects/five)
 
 	[OpenAI Five training](https://openai.com/blog/how-to-train-your-openai-five)  
 	[OpenAI Five overview](https://blog.openai.com/openai-five-benchmark-results)  
@@ -338,17 +339,21 @@
 ----
   - *in-hand manipulation*
 
-	[OpenAI Dactyl](https://openai.com/blog/learning-dexterity)
+	[OpenAI Rubik's Cube](https://openai.com/blog/solving-rubiks-cube)  
+	[OpenAI Dactyl](https://openai.com/blog/learning-dexterity)  
 
-	[**"Learning Dexterous In-Hand Manipulation"**](#learning-dexterous-in-hand-manipulation-openai-et-al) by OpenAI et al. `paper` `summary`
+	["Solving Rubik's Cube with a Robot Hand"](https://arxiv.org/abs/1910.07113) by OpenAI et al. `paper`  
+	[**"Learning Dexterous In-Hand Manipulation"**](#learning-dexterous-in-hand-manipulation-openai-et-al) by OpenAI et al. `paper` `summary` *(OpenAI Dactyl)*  
 
+	[OpenAI Rubik's Cube overview](https://slideslive.com/38922026/deep-reinforcement-learning-2?t=5081) by Jerry Tworek `video`  
 	[OpenAI Dactyl overview](https://youtu.be/WRsxoVB8Yng?t=57m55s) by Wojciech Zaremba `video`  
 	[OpenAI Dactyl overview](https://youtu.be/w3ues-NayAs?t=16m26s) by Ilya Sutskever `video`  
 
-	[discussion](https://facebook.com/icml.imls/videos/2265408103721327?t=1200) with Emo Todorov `video`
+	[OpenAI Dactyl discussion](https://facebook.com/icml.imls/videos/2265408103721327?t=1200) with Emo Todorov `video`
 
-	[demo](https://youtube.com/watch?v=jwSbzNHGflM) `video`  
-	[demo](https://youtube.com/watch?v=DKe8FumoD4E) `video`  
+	[OpenAI Rubik's Cube demo](https://youtube.com/playlist?list=PLOXw6I10VTv9HODt7TFEL72K3Q6C4itG6) `video`  
+	[OpenAI Dactyl demo](https://youtube.com/watch?v=jwSbzNHGflM) `video`  
+	[OpenAI Dactyl demo](https://youtube.com/watch?v=DKe8FumoD4E) `video`  
 
 ----
   - *legged robots*
@@ -776,7 +781,7 @@
 #### exploration and intrinsic motivation - bayesian exploration
 
   [overview](https://youtu.be/sGuiWX07sKw?t=57m28s) by David Silver `video`  
-  [overview](https://slideslive.com/38922025/deep-reinforcement-learning-1?t=3970) by Shimon Whiteson `video` *(lack of good methods for real exploration)*  
+  [overview](https://slideslive.com/38922025/deep-reinforcement-learning-1?t=3970) by Shimon Whiteson `video` *(lack of good methods for real exploration as opposed to simulated exploration)*  
 
 ----
 
@@ -1319,7 +1324,7 @@
 
 ----
 
-  [**policy search in Bayes-Adaptive MDP**](#bayesian-reinforcement-learning---policy-search-in-bayes-adapted-mdp)  
+  [**policy search in Bayes-Adaptive MDP**](#bayesian-reinforcement-learning---policy-search-in-bayes-adaptive-mdp)  
   [**policy search in variational MDP**](#bayesian-reinforcement-learning---policy-search-in-variational-mdp)  
   [**universal reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence)  
 
@@ -1877,6 +1882,7 @@ interesting recent papers:
 
 >	"We tested our model-based learning algorithm against a comparable model-free learning algorithm. When evaluated on Ms. Pacman, our model-free algorithm achieved identical results to R2D2, but learned significantly slower than MuZero and converged to a much lower final score. We conjecture that the search-based policy improvement step of MuZero provides a stronger learning signal than the high bias, high variance targets used by Q-learning."
 
+  - `video` <https://slideslive.com/38922026/deep-reinforcement-learning-2?t=3855> (Schrittwieser)
   - `video` <https://youtube.com/watch?v=We20YSAJZSE> (Kilcher)
   - `notes` <https://www.shortscience.org/paper?bibtexKey=journals/corr/1911.08265>
 
@@ -2815,7 +2821,17 @@ interesting recent papers:
 
 ----
 #### ["Why Does Hierarchy (Sometimes) Work So Well in Reinforcement Learning?"](https://arxiv.org/abs/1909.10618) Nachum, Tang, Lu, Gu, Lee, Levine
->	"Hierarchical reinforcement learning has demonstrated significant success at solving difficult reinforcement learning (RL) tasks. Previous works have motivated the use of hierarchy by appealing to a number of intuitive benefits, including learning over temporally extended transitions, exploring over temporally extended periods, and training and exploring in a more semantically meaningful action space, among others. However, in fully observed, Markovian settings, it is not immediately clear why hierarchical RL should provide benefits over standard "shallow" RL architectures. In this work, we isolate and evaluate the claimed benefits of hierarchical RL on a suite of tasks encompassing locomotion, navigation, and manipulation. Surprisingly, we find that most of the observed benefits of hierarchy can be attributed to improved exploration, as opposed to easier policy learning or imposed hierarchical structures. Given this insight, we present exploration techniques inspired by hierarchy that achieve performance competitive with hierarchical RL while at the same time being much simpler to use and implement."  
+>	"Hierarchical reinforcement learning has demonstrated significant success at solving difficult reinforcement learning (RL) tasks. Previous works have motivated the use of hierarchy by appealing to a number of intuitive benefits, including learning over temporally extended transitions, exploring over temporally extended periods, and training and exploring in a more semantically meaningful action space, among others. However, in fully observed, Markovian settings, it is not immediately clear why hierarchical RL should provide benefits over standard "shallow" RL architectures. In this work, we isolate and evaluate the claimed benefits of hierarchical RL on a suite of tasks encompassing locomotion, navigation, and manipulation. Surprisingly, we find that most of the observed benefits of hierarchy can be attributed to improved exploration, as opposed to easier policy learning or imposed hierarchical structures. Given this insight, we present exploration techniques inspired by hierarchy that achieve performance competitive with hierarchical RL while at the same time being much simpler to use and implement."
+
+>	"Makes sense, right?  
+>	- Hierarchy is natural decomposition of many real-world tasks  
+>	- Learning over longer temporal abstractions  
+>	- Higher-level actions are more semantically meaningful  
+>	Or does it?  
+>	- Do any of these hypotheses on the benefit of hierarchy actually matter in practice?  
+>	- Thought experiment: Almost all the practical successes of HRL are on Markovian environments. Theoretically, a shallow policy should be able to solve these without issue."  
+
+  - `video` <https://slideslive.com/38922026/deep-reinforcement-learning-2?t=3192> (Nachum)
 
 
 #### ["Human-level Performance in First-person Multiplayer Games with Population-based Deep Reinforcement Learning"](https://arxiv.org/abs/1807.01281) Jaderberg et al.
@@ -3359,10 +3375,7 @@ interesting recent papers:
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Proximal_Policy_Optimization_Algorithms.md>
   - `post` <https://towardsdatascience.com/the-pursuit-of-robotic-happiness-how-trpo-and-ppo-stabilize-policy-gradient-methods-545784094e3b>
   - `post` <http://blog.varunajayasiri.com/ml/ppo.html>
-  - `code` <https://github.com/openai/baselines/tree/master/baselines/ppo2>
-  - `code` <https://github.com/ikostrikov/pytorch-a2c-ppo-acktr>
-  - `code` <https://github.com/higgsfield/RL-Adventure-2>
-  - `code` <https://github.com/ShangtongZhang/DeepRL>
+  - `paper` ["Implementation Matters in Deep RL: A Case Study on PPO and TRPO"](https://openreview.net/forum?id=r1etN1rtPB) by Engstrom et al.
 
 
 #### ["Deterministic Policy Gradient Algorithms"](http://jmlr.org/proceedings/papers/v32/silver14.html) Silver, Lever, Heess, Degris, Wierstra, Riedmiller

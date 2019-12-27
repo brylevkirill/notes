@@ -71,6 +71,7 @@
   - [**knowledge graph**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---knowledge-graph)
   - [**probabilistic database**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-database)
   - [**probabilistic program**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-program)
+  - [**causal graph**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---causal-graph)
   - [**distributed representation**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---distributed-representation)
 
 ----
@@ -107,15 +108,15 @@
   - [**natural logic**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---natural-logic)
   - [**formal logic**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---formal-logic)
   - [**bayesian reasoning**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---bayesian-reasoning)
-  - [**commonsense reasoning**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---commonsense-reasoning)
+  - [**causal reasoning**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---causal-reasoning)
   - [**neural reasoning**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---neural-reasoning)
 
 ----
 
   approaches:
-  - [**logical**](#inference-and-reasoning---logical-vs-statistical) / [**symbolic**](#inference-and-reasoning---symbolic-vs-non-symbolic) / computationalism / causational / theory-driven / relational  
+  - [**logical**](#inference-and-reasoning---logical-vs-statistical) / symbolic / computationalism / causational / theory-driven / relational  
 	vs  
-	[**statistical**](#inference-and-reasoning---logical-vs-statistical) / [**non-symbolic**](#inference-and-reasoning---symbolic-vs-non-symbolic) / connectionism / correlational / data-driven / numerical
+	[**statistical**](#inference-and-reasoning---logical-vs-statistical) / non-symbolic / connectionism / correlational / data-driven / numerical
   - [**deductive vs inductive**](#inference-and-reasoning---deductive-vs-inductive)
 
 
@@ -124,14 +125,14 @@
 ### inference and reasoning - logical vs statistical
 
   - *knowledge representation*:  
-	logical - first-order logic  
-	statistical - [**probabilistic programs**](https://github.com/brylevkirill/notes/blob/master/Probabilistic%20Programming.md)  
+	logical - first-order logic, [**description logic**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-graph---ontology)  
+	statistical - [**probabilistic database**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-database), [**probabilistic program**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-program), [**distributed representation**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---distributed-representation), [**differentiable program**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md)  
   - *reasoning*:  
-	logical - satisfiability testing / proving  
-	statistical - [**bayesian inference**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)  
+	logical - theorem proving, satisfiability testing  
+	statistical - [**bayesian inference**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md), [**causal inference**](https://github.com/brylevkirill/notes/blob/master/Causal%20Inference.md)  
   - *learning*:  
-	logical - inductive logic programming  
-	statistical - [**bayesian deep learning**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)  
+	logical - [**inductive logic programming**](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#program-synthesis)  
+	statistical - [**machine learning**](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md)  
 
 ----
 
@@ -144,17 +145,6 @@
   ["Unifying Logic and Probability"](https://www.cs.berkeley.edu/~russell/papers/ipmu14-oupm.pdf) by Stuart Russell `paper`
 	([talk](http://video.upmc.fr/differe.php?collec=S_C_colloquium_lip6_2012&video=3) `video`)
 >	"Beginning with Leibniz, scholars have attempted to unify logic and probability. For “classical” AI, based largely on first-order logic, the purpose of such a unification is to handle uncertainty and facilitate learning from real data; for “modern” AI, based largely on probability theory, the purpose is to acquire formal languages with sufficient expressive power to handle complex domains and incorporate prior knowledge. The world is uncertain and it has things in it. To deal with this, we have to unify logic and probability."
-
-
-
----
-### inference and reasoning - symbolic vs non-symbolic
-
-  - [**natural logic**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---natural-logic)  (symbolic + non-symbolic)
-  - [**formal logic**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---formal-logic)  (symbolic)
-  - [**bayesian reasoning**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---bayesian-reasoning)  (symbolic)
-  - [**commonsense reasoning**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---commonsense-reasoning)  (symbolic + non-symbolic)
-  - [**neural reasoning**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---neural-reasoning)  (non-symbolic)
 
 
 
@@ -399,10 +389,9 @@
 
 ----
 
-  ["Unsupervised Minimax: Adversarial Curiosity, Generative Adversarial Networks, and Predictability Minimization"](https://arxiv.org/abs/1906.04493) by Schmidhuber `paper` *(overview and history)*
-
   [**"Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes"**](#driven-by-compression-progress-a-simple-principle-explains-essential-aspects-of-subjective-beauty-novelty-surprise-interestingness-attention-curiosity-creativity-art-science-music-jokes-schmidhuber) by Schmidhuber `paper` `summary`  
   [**"Formal Theory of Creativity, Fun, and Intrinsic Motivation"**](#formal-theory-of-creativity-fun-and-intrinsic-motivation-schmidhuber) by Schmidhuber `paper` `summary`  
+  [**"Unsupervised Minimax: Adversarial Curiosity, Generative Adversarial Networks, and Predictability Minimization"**](#unsupervised-minimax-adversarial-curiosity-generative-adversarial-networks-and-predictability-minimization-schmidhuber-paper) by Schmidhuber `paper` `summary` *(overview and history)*  
   [**"Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids"**](#curiosity-driven-reinforcement-learning-for-motion-planning-on-humanoids-frank-leitner-stollenga-forster-schmidhuber) by Frank, Schmidhuber et al. `paper` `summary`  
   [**"What's Interesting?"**](#whats-interesting-schmidhuber) by Schmidhuber `paper` `summary`  
   [**"PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem"**](#powerplay-training-an-increasingly-general-problem-solver-by-continually-searching-for-the-simplest-still-unsolvable-problem-schmidhuber) by Schmidhuber `paper` `summary`  
@@ -549,8 +538,9 @@
 #### ["Building Machines That Learn and Think Like People"](http://arxiv.org/abs/1604.00289) Lake, Ullman, Tenenbaum, Gershman
 >	"Recent progress in artificial intelligence has renewed interest in building systems that learn and think like people. Many advances have come from using deep neural networks trained end-to-end in tasks such as object recognition, video games, and board games, achieving performance that equals or even beats humans in some respects. Despite their biological inspiration and performance achievements, these systems differ from human intelligence in crucial ways. We review progress in cognitive science suggesting that truly human-like learning and thinking machines will have to reach beyond current engineering trends in both what they learn, and how they learn it. Specifically, we argue that these machines should (a) build causal models of the world that support explanation and understanding, rather than merely solving pattern recognition problems; (b) ground learning in intuitive theories of physics and psychology, to support and enrich the knowledge that is learned; and (c) harness compositionality and learning-to-learn to rapidly acquire and generalize knowledge to new tasks and situations. We suggest concrete challenges and promising routes towards these goals that can combine the strengths of recent neural network advances with more structured cognitive models."
 
-  - `video` <https://www.technologyreview.com/video/610657/ingredients-of-intelligence/> (Lake)
+  - `video` <https://youtube.com/watch?v=7ROelYvo8f0> (Tenenbaum)
   - `video` <https://youtube.com/watch?v=O0MF-r9PsvE> (Gershman)
+  - `video` <https://www.technologyreview.com/video/610657/ingredients-of-intelligence/> (Lake)
   - `notes` <http://pemami4911.github.io/paper-summaries/2016/05/13/learning-to-think.html>
   - `paper` <https://cims.nyu.edu/~brenden/LakeEtAl2017BBS.pdf> ("Behavioral and Brain Sciences")
   - <https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---commonsense-reasoning>
@@ -778,6 +768,14 @@
   - [**Artificial Curiosity and Creativity**](#artificial-curiosity-and-creativity) theory by Schmidhuber
 
 
+#### ["Unsupervised Minimax: Adversarial Curiosity, Generative Adversarial Networks, and Predictability Minimization"](https://arxiv.org/abs/1906.04493) Schmidhuber
+>	"I review unsupervised or self-supervised neural networks playing minimax games in game-theoretic settings. (i) Adversarial Curiosity (AC, 1990) is based on two such networks. One network learns to probabilistically generate outputs, the other learns to predict effects of the outputs. Each network minimizes the objective function maximized by the other. (ii) Generative Adversarial Networks (GANs, 2010-2014) are an application of AC where the effect of an output is 1 if the output is in a given set, and 0 otherwise. (iii) Predictability Minimization (PM, 1990s) models data distributions through a neural encoder that maximizes the objective function minimized by a neural predictor of the code components. We correct a previously published claim that PM is not based on a minimax game."
+
+>	"Adversarial Curiosity: A reward-maximising neural control network C learns to generate outputs or experiments. A separate world model network M sees C's outputs, and learns to predict the reactions of the environment. C maximises errors minimised by M. This motivates C to generate experiments yielding "novel" data that still surprises M. GANs are a simple application of AC where the environment returns whether C's output is in a given set."
+
+  - `video` <https://slideslive.com/38921895/retrospectives-a-venue-for-selfreflection-in-ml-research-2?t=94> (Schmidhuber)
+
+
 #### ["Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3881010/pdf/fnbot-07-00025.pdf) Frank, Leitner, Stollenga, Forster, Schmidhuber
 >	"Most previous work on artificial curiosity and intrinsic motivation focuses on basic concepts and theory. Experimental results are generally limited to toy scenarios, such as navigation in a simulated maze, or control of a simple mechanical system with one or two degrees of freedom. To study AC in a more realistic setting, we embody a curious agent in the complex iCub humanoid robot. Our novel reinforcement learning framework consists of a state-of-the-art, low-level, reactive control layer, which controls the iCub while respecting constraints, and a high-level curious agent, which explores the iCub’s state-action space through information gain maximization, learning a world model from experience, controlling the actual iCub hardware in real-time. To the best of our knowledge, this is the first ever embodied, curious agent for real-time motion planning on a humanoid. We demonstrate that it can learn compact Markov models to represent large regions of the iCub’s configuration space, and that the iCub explores intelligently, showing interest in its physical constraints as well as in objects it finds in its environment."
 
@@ -802,7 +800,6 @@
   - `slides` <http://people.idsia.ch/~juergen/minimax2018small.pdf> (Schmidhuber)
   - `paper` ["Artificial Curiosity Based on Discovering Novel Algorithmic Predictability Through Coevolution"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.45.1136) by Schmidhuber
   - `paper` ["Exploring the Predictable"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.6.7341) by Schmidhuber
-  - `paper` ["Unsupervised Minimax: Adversarial Curiosity, Generative Adversarial Networks, and Predictability Minimization"](https://arxiv.org/abs/1906.04493) by Schmidhuber
   - [**Artificial Curiosity and Creativity**](#artificial-curiosity-and-creativity) theory by Schmidhuber
 
 

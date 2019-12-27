@@ -340,6 +340,7 @@
 
   ["Deep Learning Trends: Program Induction"](https://facebook.com/nipsfoundation/videos/1552060484885185?t=5412) by Scott Reed `video`  
   ["Learning to Code: Machine Learning for Program Induction"](https://youtu.be/vzDuVhFMB9Q?t=2m40s) by Alex Gaunt `video`  
+  ["Neural Meta Program Synthesis"](https://youtube.com/watch?v=Fs7FquuLprM) by Rishabh Singh `video`  
 
   ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi) workshop
 	(NIPS 2016 [videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt),

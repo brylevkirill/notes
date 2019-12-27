@@ -10,12 +10,13 @@
     - [**knowledge graph**](#knowledge-representation---knowledge-graph)
     - [**probabilistic database**](#knowledge-representation---probabilistic-database)
     - [**probabilistic program**](#knowledge-representation---probabilistic-program)
+    - [**causal graph**](#knowledge-representation---causal-graph)
     - [**distributed representation**](#knowledge-representation---distributed-representation)
   * [**reasoning**](#reasoning)
     - [**natural logic**](#reasoning---natural-logic)
     - [**formal logic**](#reasoning---formal-logic)
     - [**bayesian reasoning**](#reasoning---bayesian-reasoning)
-    - [**commonsense reasoning**](#reasoning---commonsense-reasoning)
+    - [**causal reasoning**](#reasoning---causal-reasoning)
     - [**neural reasoning**](#reasoning---neural-reasoning)
   * [**machine reading benchmarks**](#machine-reading-benchmarks)
   * [**machine reading projects**](#machine-reading-projects)
@@ -31,89 +32,6 @@
 
 
 ---
-### overview
-
-  "The fathers of AI believed that formal logic provided insight into how human reasoning must work. For implications to travel from one sentence to the next, there had to be rules of inference containing variables that got bound to symbols in the first sentence and carried the implications to the second sentence. I shall demonstrate that this belief is as incorrect as the belief that a lightwave can only travel through space by causing disturbances in the luminiferous aether. In both cases, scientists were misled by compelling but incorrect analogies to the only systems they knew that had the required properties. Arguments have little impact on such strongly held beliefs. What is needed is a demonstration that it is possible to propagate implications in some quite different way that does not involve rules of inference and has no resemblance to formal logic. Recent results in machine translation using recurrent neural networks show that the meaning of a sentence can be captured by a "thought vector" which is simply the hidden state vector of a recurrent net that has read the sentence one word at a time. In future, it will be possible to predict thought vectors from the sequence of previous thought vectors and this will capture natural human reasoning. With sufficient effort, it may even be possible to train such a system to ignore nearly all of the contents of its thoughts and to make predictions based purely on those features of the thoughts that capture the logical form of the sentences used to express them."
-
-  "If we can convert a sentence into a vector that captures the meaning of the sentence, then google can do much better searches, they can search based on what is being said in a document. Also, if you can convert each sentence in a document into a vector, you can then take that sequence of vectors and try and model why you get this vector after you get these vectors, that's called reasoning, that's natural reasoning, and that was kind of the core of good old fashioned AI and something they could never do because natural reasoning is a complicated business, and logic isn't a very good model of it, here we can say, well, look, if we can read every english document on the web, and turn each sentence into a thought vector, we've got plenty of data for training a system that can reason like people do. Now, you might not want to reason like people do on the web, but at least we can see what they would think."
-
-  "Most people fall for the traditional AI fallacy that thought in the brain must somehow resemble lisp expressions. You can tell someone what thought you are having by producing a string of words that would normally give rise to that thought but this doesn't mean the thought is a string of symbols in some unambiguous internal language. The new recurrent network translation models make it clear that you can get a very long way by treating a thought as a big state vector. Traditional AI researchers will be horrified by the view that thoughts are merely the hidden states of a recurrent net and even more horrified by the idea that reasoning is just sequences of such state vectors."
-
-  "There are no symbols inside the encoder and decoder neural nets for machine translation. The only symbols are at the input and output. Processing pixel arrays is not done by manipulating internal pixels. Maybe processing symbol strings is not done by manipulating internal symbol strings. It was obvious to physicists that light waves must have an aether to propagate from one place to the next. They thought there was no other possibility. It was obvious to AI researchers that people must use formal rules of inference to propagate implications from one proposition to the next. They thought there was no other possibility. What is inside the black box is not necessarily what goes in or what comes out. The physical symbol system hypothesis is probably false."
-
-  "Most of our reasoning is by analogy; it's not logical reasoning. The early AI guys thought we had to use logic as a model and so they couldn't cope with reasoning by analogy. The honest ones, like Allen Newell, realized that reasoning by analogy was a huge problem for them, but they weren't willing to say that reasoning by analogy is the core kind of reasoning we do, and logic is just a sort of superficial thing on top of it that happens much later."
-
-  *(Geoff Hinton)*
-
-----
-
-  "Where do the symbols and self-symbols underlying consciousness and sentience come from? I think they come from data compression during problem solving. While a problem solver is interacting with the world, it should store the entire raw history of actions and sensory observations including reward signals. The data is ‘holy’ as it is the only basis of all that can be known about the world. If you can store the data, do not throw it away! Brains may have enough storage capacity to store 100 years of lifetime at reasonable resolution. As we interact with the world to achieve goals, we are constructing internal models of the world, predicting and thus partially compressing the data history we are observing. If the predictor/compressor is a biological or artificial recurrent neural network (RNN), it will automatically create feature hierarchies, lower level neurons corresponding to simple feature detectors similar to those found in human brains, higher layer neurons typically corresponding to more abstract features, but fine-grained where necessary. Like any good compressor, the RNN will learn to identify shared regularities among different already existing internal data structures, and generate prototype encodings (across neuron populations) or symbols for frequently occurring observation sub-sequences, to shrink the storage space needed for the whole (we see this in our artificial RNNs all the time). Self-symbols may be viewed as a by-product of this, since there is one thing that is involved in all actions and sensory inputs of the agent, namely, the agent itself. To efficiently encode the entire data history through predictive coding, it will profit from creating some sort of internal prototype symbol or code (e.g. a neural activity pattern) representing itself. Whenever this representation becomes activated above a certain threshold, say, by activating the corresponding neurons through new incoming sensory inputs or an internal ‘search light’ or otherwise, the agent could be called self-aware. No need to see this as a mysterious process - it is just a natural by-product of partially compressing the observation history by efficiently encoding frequent observations."
-
-  *(Juergen Schmidhuber)*
-
-----
-
-  "A plausible definition of "reasoning" could be "algebraically manipulating previously acquired knowledge in order to answer a new question". This definition covers first-order logical inference or probabilistic inference. It also includes much simpler manipulations commonly used to build large learning systems. For instance, we can build an optical character recognition system by first training a character segmenter, an isolated character recognizer, and a language model, using appropriate labelled training sets. Adequately concatenating these modules and fine tuning the resulting system can be viewed as an algebraic operation in a space of models. The resulting model answers a new question, that is, converting the image of a text page into a computer readable text. This observation suggests a conceptual continuity between algebraically rich inference systems, such as logical or probabilistic inference, and simple manipulations, such as the mere concatenation of trainable learning systems. Therefore, instead of trying to bridge the gap between machine learning systems and sophisticated "all-purpose" inference mechanisms, we can instead algebraically enrich the set of manipulations applicable to training systems, and build reasoning capabilities from the ground up."
-
-  *(Leon Bottou)*
-
-----
-
-  "Knowledge is essential for natural language understanding. The interesting question is what knowledge should we bother to put in versus what can we learn. Foundational science behind used to be knowledge representation, and then it went away and now it is machine learning. But the truth is you need both. The question is what of which should you combine. Learning is a "knowledge lever". Deductive inference is a "knowledge lever". Better then memorization where there is no lever. But deduction is not a sufficiently powerful lever for things like NLP, because there are things like open world and long tails - deduction is not enough. Induction is an amazing lever - you got a ton of leverage out of very litte knowledge, but you need some knowledge. You can have the greatest lever but without things to push on one side the other one doesn't go up. So if you think about knowledge as a lever the question becomes what knowledge do you want to use. We want to encode high-leverage knowledge. You don't want to waste efforts encoding knowlege you can get by annotating things or just by going to the web and reading documents - that's truly a waste of time. What is high-leverage knowledge - it's one with one or both following characterists. It's hard to learn - some things you have a tons of data for, some things you don't. Some things you can learn with a greedy learner and weight optimization, some things you can't. It's the letter you really want to put in because if you don't you really miss something. And the other side of this coin is you want to put knowledge that is helpful for learning - it's not a question of knowledge or learning. You know there is free-lunch theorem which says there is no such thing as learning without knowledge. So the question is which knowledge helps learning - that's what I want to put in. You want to put a narrower effort that adds job a thousand when I add that to learning. Next thing is knowledge should be stated declaratively. Philosophically it's probably not, but from engineering point of you it's more comprehensible than knowledge that's encoded procedurally or in deep neural network (as much as we like idea of training everything together). You want something you can get a handle to get lever - you don't want something opaque, you can't work with that. Knowledge stated declaratively is also more portable (take it from one task to another), is more extensible (compose pieces of knowledge got in different ways). And the most important, it supports refinement loop in learning. Learning is not a one-shot thing - you put in some knowledge that's very weak (from SVM or decision tree) and then you run it on the data, and then you look what happens - if you don't understand what learner is giving, you can't do refinement loop. If you understand knowledge that's going in and going out, you can figure out what to change. And doing this change and relearn, and figure out what went wrong - putting the knowledge that explains what went wrong. If this is in comprehensible language the end result would be much better than if you have something opaque. What language should be used to store knowledge. Obviously, it should be natural language - there is no better language, although it is hard to deal with."
-
-  *(Pedro Domingos)*
-
-----
-
-  "AI started with small data and rich semantic theories. The goal was to build systems that could reason over logical models of how the world worked; systems that could answer questions and provide intuitive, cognitively accessible explanations for their results. There was a tremendous focus on domain theory construction, formal deductive logics and efficient theorem proving. We had expert systems, rule-bases, forward chaining, backward chaining, modal logics, naïve physics, lisp, prolog, macro theories, micro theories, etc. The problem, of course, was the knowledge acquisition bottleneck; it was too difficult, slow and costly to render all common sense knowledge into an integrated, formal representation that automated reasoning engines could digest. In the meantime, huge volumes of unstructured data became available, compute power became ever cheaper and statistical methods flourished. AI evolved from being predominantly theory-driven to predominantly data-driven. Automated systems generated output using inductive techniques. Training over massive data produced flexible and capable control systems, powerful predictive engines in domains ranging from language translation to pattern recognition, from medicine to economics. Coming from a background in formal knowledge representation and automated reasoning, the writing was on the wall - big data and statistical machine learning was changing the face of AI and quickly."
-
-  "From the very inception of IBM Watson, I put a stake in the ground; we will not even attempt to build rich semantic models of the domain. I imagined it would take 3 years just to come to consensus on the common ontology to cover such a broad domain. Rather, we will use a diversity of shallow text analytics, leverage loose and fuzzy interpretations of unstructured information. We would allow many researchers to build largely independent NLP components and rely on machine learning techniques to balance and combine these loosely federated algorithms to evaluate answers in the context of passages. The approach, with a heck of a lot of good engineering, worked. Watson was arguably the best factoid question-answering system in the world, and Watson Paths, could connect questions to answers over multiple steps, offering passage-based "inference chains" from question to answer without a single "if-then rule". But could it explain why an answer is right or wrong? Could it reason over a logical understanding of the domain? Could it automatically learn from language and build the logical or cognitive structures that enable and precede language itself? Could it understand and learn the way we do? No. No. No. No. To advance AI to where we all know it must go, we need to discover how to efficiently combine human cognition, massive data and logical theory formation. We need to boot strap a fluent collaboration between human and machine that engages logic, language and learning to enable machines to learn how to learn."
-
-  *(David Ferucci)*
-
-----
-
-  "Knowledge organizes our understanding of the world, determining what we expect given what we have already seen. Our predictive representations have two key properties: they are productive, and they are graded. Productive generalization is possible because our knowledge decomposes into concepts - elements of knowledge that are combined and recombined to describe particular situations. Gradedness is the observable effect of accounting for uncertainty - our knowledge encodes degrees of belief that lead to graded probabilistic predictions. To put this a different way, concepts form a combinatorial system that enables description of many different situations; each such situation specifies a distribution over what we expect to see in the world, given what we have seen. We may think of this system as a probabilistic language of thought in which representations are built from language-like composition of concepts and the content of those representations is a probability distribution on world states. Probabilistic language of thought hypothesis (informal version): Concepts have a language-like compositionality and encode probabilistic knowledge. These features allow them to be extended productively to new situations and support flexible reasoning and learning by probabilistic inference."
-
-  "How do humans come to know so much about the world from so little data? Even young children can infer the meanings of words, the hidden properties of objects, or the existence of causal relations from just one or a few relevant observations far outstripping the capabilities of conventional learning machines. How do they do it and how can we bring machines closer to these human-like learning abilities? I argue that people's everyday inductive leaps can be understood in terms of (approximations to) probabilistic inference over generative models of the world. These models can have rich latent structure based on abstract knowledge representations, what cognitive psychologists have sometimes called "intuitive theories", "mental models", or "schemas". They also typically have a hierarchical structure supporting inference at multiple levels, or "learning to learn", where abstract knowledge may itself be learned from experience at the same time as it guides more specific generalizations from sparse data. I focus on models of learning and "learning to learn" about categories, word meanings and causal relations. I can show in each of these settings how human learners can balance the need for strongly constraining inductive biases necessary for rapid generalization with the flexibility to adapt to the structure of new environments, learning new inductive biases for which our minds could not have been pre-programmed."
-
-  "How can we build machines that learn the meanings of words more like the way that human children do? Children can learn words from minimal data, often just one or a few positive examples (one-shot learning). Children learn to learn: they acquire powerful inductive biases for new word meanings in the course of learning their first words. Children can learn words for abstract concepts or types of concepts that have little or no direct perceptual correlate. Children's language can be highly context-sensitive, with parameters of word meaning that must be computed anew for each context rather than simply stored. Children learn function words: words whose meanings are expressed purely in how they compose with the meanings of other words. Children learn whole systems of words together, in mutually constraining ways, such as color terms, number words, or spatial prepositions. Children learn word meanings that not only describe the world but can be used for reasoning, including causal and counterfactual reasoning. Bayesian learning defined over appropriately structured representations - hierarchical probabilistic models, generative process models, and compositional probabilistic languages - provides a basis for beginning to address these challenges."
-
-  "If our goal is to build knowledge representations sufficient for human-level AI, it is natural to draw inspiration from the content and form of knowledge representations in human minds. First, rather than beginning by trying to extract commonsense knowledge from language, we should begin (as humans do) by capturing in computational terms the core of common sense that exists in prelinguistic infants, roughly 12 months and younger. This is knowledge about physical objects, intentional agents, and their causal interactions -- an intuitive physics with concepts analogous to force, mass and the dynamics of motion, and an intuitive psychology with concepts analogous to beliefs, desires and intentions, or probabilistic expectations, utilities and plans -- which is grounded in perception but has at its heart powerful abstractions that can extend far beyond our direct perceptual experience. Second, we should explore approaches for linguistic meaning, language understanding and language-based common-sense reasoning that build naturally on top of this common-sense core. Both of these considerations strongly favor an approach to knowledge representation based on probabilistic programs, a framework that combines the assets of traditional probabilistic and symbolic approaches."
-
-  *(Josh Tenenbaum)*
-
-
-
-----
-#### books
-
-  ["Knowledge Representation and Reasoning"](https://goo.gl/JV1JhZ) by Brachman and Levesque `book`  
-  ["Handbook of Knowledge Representation"](http://dai.fmph.uniba.sk/~sefranek/kri/handbook/) by van Harmelen, Lifschitz, Porter `book`  
-  ["Introduction to Statistical Relational Learning"](http://www.cs.umd.edu/srl-book/) by Getoor and Taskar `book`  
-
-
-
-----
-#### conferences
-
-  [Automated Knowledge Base Construction](http://akbc.ws) conference/workshop  
-  - [AKBC 2019 (videos)](https://youtube.com/channel/UCzKZf82vIuI8uMazyL0LIvQ/videos)  
-  - [AKBC 2017](http://akbc.ws/2017/)  
-  - [AKBC 2016](http://akbc.ws/2016/)  
-  - [AKBC 2014 (videos)](http://youtube.com/user/NeuralInformationPro/search?query=AKBC)  
-  - [AKBC 2012 (videos)](http://videolectures.net/akbcwekex2012_montreal/)  
-  - [AKBC 2010 (videos)](http://videolectures.net/akbc2010_grenoble/)  
-
-  [Statistical Relational AI](http://starai.org) workshop  
-  [Knowledge Base Construction, Reasoning and Mining](http://kbcom.org) workshop  
-  [Machine Reading for Question Answering](https://mrqa2018.github.io) workshop  
-  [Neural Abstract Machines & Program Induction](https://uclmr.github.io/nampi/) workshop  
-  [Reasoning, Attention, Memory](http://thespermwhale.com/jaseweston/ram/) workshop  
-
-
-
----
 ### knowledge representation
 
   Knowledge representation captures information in some computable form in order to solve problems.
@@ -121,6 +39,11 @@
   ["What Is a Knowledge Representation"](https://aaai.org/ojs/index.php/aimagazine/article/view/1029) by Davis, Shrobe, Szolovits `paper`
 
   <https://en.wikipedia.org/wiki/Knowledge_representation_and_reasoning>
+
+----
+
+  ["Knowledge Representation and Reasoning"](https://goo.gl/JV1JhZ) by Brachman and Levesque `book`  
+  ["Handbook of Knowledge Representation"](http://dai.fmph.uniba.sk/~sefranek/kri/handbook/) by van Harmelen, Lifschitz, Porter `book`  
 
 ----
 
@@ -140,6 +63,7 @@
     * [**Probabilistic Soft Logic**](#probabilistic-database---probabilistic-soft-logic)
     * [**ProPPR**](#probabilistic-database---proppr)
   - [**probabilistic program**](#knowledge-representation---probabilistic-program)
+  - [**causal graph**](#knowledge-representation---causal-graph)
   - [**distributed representation**](#knowledge-representation---distributed-representation)
 
 ----
@@ -162,6 +86,10 @@
   ["Natural Language Understanding: Foundations and State-of-the-Art"](http://youtube.com/watch?v=mhHfnhh-pB4) by Percy Liang `video`
 	([write-up](http://topbots.com/4-different-approaches-natural-language-processing-understanding/))
 
+----
+
+  [**reasoning - natural logic**](#reasoning---natural-logic)
+
 
 
 ---
@@ -170,6 +98,10 @@
   - [**ontology**](#knowledge-graph---ontology)  
   - [**information extraction and integration**](#knowledge-graph---information-extraction-and-integration)  
   - [**relational learning**](#knowledge-graph---relational-learning)  
+
+----
+
+  [**reasoning - formal logic**](#reasoning---formal-logic)
 
 
 
@@ -222,6 +154,16 @@
 
 ----
 
+  [Automated Knowledge Base Construction](http://akbc.ws) conference/workshop  
+  - [AKBC 2019 (videos)](https://youtube.com/channel/UCzKZf82vIuI8uMazyL0LIvQ/videos)  
+  - [AKBC 2017](http://akbc.ws/2017/)  
+  - [AKBC 2016](http://akbc.ws/2016/)  
+  - [AKBC 2014 (videos)](http://youtube.com/user/NeuralInformationPro/search?query=AKBC)  
+  - [AKBC 2012 (videos)](http://videolectures.net/akbcwekex2012_montreal/)  
+  - [AKBC 2010 (videos)](http://videolectures.net/akbc2010_grenoble/)  
+
+----
+
   [**interesting papers**](#interesting-papers---information-extraction-and-integration)
 
 
@@ -258,6 +200,10 @@
   ["Relational Models"](https://arxiv.org/abs/1609.03145) by Tresp and Nickel `paper`  
   ["A Review of Relational Machine Learning for Knowledge Graphs: From Multi-Relational Link Prediction to Automated Knowledge Graph Construction"](#a-review-of-relational-machine-learning-for-knowledge-graphs-from-multi-relational-link-prediction-to-automated-knowledge-graph-construction-nickel-murphy-tresp-gabrilovich)
 	by Nickel, Murphy, Tresp, Gabrilovich `paper` `summary` ([talk](https://youtu.be/wJMNuNBrFlQ?t=8m25s) by Tresp `video`)  
+
+----
+
+  ["Introduction to Statistical Relational Learning"](http://www.cs.umd.edu/srl-book/) by Getoor and Taskar `book`
 
 ----
 
@@ -422,6 +368,10 @@
 
 ----
 
+  [**reasoning - bayesian reasoning**](#reasoning---bayesian-reasoning)
+
+----
+
   - [**BayesDB**](#probabilistic-database---bayesdb)
   - [**Epistemological Database**](#probabilistic-database---epistemological-database)
   - [**Markov Logic Network**](#probabilistic-database---markov-logic-network)
@@ -455,63 +405,24 @@
 
 ----
 
-  - information extraction with joint inference
-  - probabilistic databases to manage uncertainty at scale
-  - robust reasoning about human edits
-  - tight integration of probabilistic inference and parallel distributed processing
-  - probabilistic programming languages for easy specification of complex factor graphs
+  epistemological database:
+  - truth is inferred, not observed
+  - entities/relations never input, only "mentions"
+  - ability to change mind about previous decisions
+
+  human edits as evidence:
+  - traditional: change record of truth in database
+  - mini-document "Nov 15: Scott said this was true"
+  - sometimes humans are wrong, disagree, out-of-date -> jointly reason about truth & editors' reliability/reputation
+
+  never ending inference:
+  - traditional: database entries always locked in
+  - entries always reconsidered with more evidence
 
   problems:
-  - how to represent & inject uncertainty from IE into DB?
-  - want to use DB contents to aid IE
-  - IE isn't one-shot: add new data later - redo inference
-  - want DB infrastructure to manage IE
-
-  challenges:
-  - postpone decision making until all data is available
-  - inject knowledge into machine reading
-  - derive true facts from raw evidence data
-
-----
-
-  epistemological KB:  
-  - "truth is inferred, not observed"  
-  - entities/relations never input, only "mentions"  
-  - ability to change our mind about previously made (wrong) decisions  
-
-  human edits as evidence:  
-  - traditional: change db record of truth  
-  - mini-document "Nov 15: Scott said this was true"  
-  - sometimes humans are wrong, disagree, out-of-date -> jointly reason about truth & editors' reliability/reputation  
-
-  never ending inference (constantly bubbling in background):  
-  - traditional: KB entries locked in  
-  - KB entries always reconsidered with more evidence, time  
-
-----
-
-  entity resolution:  
-  - foundational, not just for coreference of entity-mentions  
-  - align values, ontologies, schemas, relations, events  
-  - joint entity linking (identifying group of mentions in document) and entity discovery (identifying cluster of mentions across documents)  
-
-  styles of relation extraction:  
-  - supervised  
-  - distantly supervised  
-  - unsupervised (no schema, OpenIE)  
-  - unsupervised (schema discovery)  
-  - universal schema  
-
-----
-
-  probabilistic db with universal schema:  
-  - schema = union of all inputs: natural langauge & databases  
-    * embrace diversity and ambiguity of original inputs  
-    * don't try to force semantics into pre-defined boxes  
-    * note: combining "structured" & "natural" schema  
-  - learn implicature among entity-relations  
-    * "fill in" unobserved relations  
-    * implicit alignment of "structured" & "natural"  
+  - how to represent and inject uncertainty from information extraction process into database?
+  - want to use contents in information extraction
+  - information extraction redone with added data
 
 
 ---
@@ -687,13 +598,14 @@
 
 ----
 
-  "Probabilistic graphical models provide a formal lingua franca for modeling and a common target for efficient inference algorithms. However, many of the most innovative and useful probabilistic models published by the AI, machine learning, and statistics community far outstrip the representational capacity of graphical models and associated inference techniques. Models are communicated using a mix of natural language, pseudo code, and mathematical formulae and solved using special purpose, one-off inference methods. Rather than precise specifications suitable for automatic inference, graphical models typically serve as coarse, high-level descriptions, eliding critical aspects such as fine-grained independence, abstraction and recursion. Probabilistic programming languages aim to close this representational gap, unifying general purpose programming with probabilistic modeling; literally, users specify a probabilistic model in its entirety (e.g., by writing code that generates a sample from the joint distribution) and inference follows automatically given the specification. These languages provide the full power of modern programming languages for describing complex distributions, and can enable reuse of libraries of models, support interactive modeling and formal verification, and provide a much-needed abstraction barrier to foster generic, efficient inference in universal model classes."
+  [**reasoning - bayesian reasoning**](#reasoning---bayesian-reasoning)
 
-  *(Pedro Domingos)*
 
-  "Probabilistic programs express generative models, i.e., formal descriptions of processes that generate data. To the extent that we can mirror mechanisms “out there in the world” in a formal language, we can pose queries within this language and expect the answer to line up with what happens in the real world. For example, if we can accurately describe how genes give rise to proteins, this helps us in predicting which genetic changes lead to desirable results and which lead to harm. Traditionally, Bayesian networks have been used to formalize and reason about such processes. While extremely useful, this formalism is limited in its expressive power compared to programming languages in general. Probabilistic programming languages provide a substrate for computational modeling that brings together Bayesian statistics and Turing-complete programming languages."
 
-  *(Andreas Stuhlmueller)*
+---
+### knowledge representation - causal graph
+
+  [**reasoning - causal reasoning**](#reasoning---causal-reasoning)
 
 
 
@@ -701,7 +613,11 @@
 ### knowledge representation - distributed representation
 
   [**distributed representation**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representation)  
-  [**distributed representation of natural language**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#embeddings)  
+  [**natural language embeddings**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#embeddings)  
+
+----
+
+  [**reasoning - neural reasoning**](#reasoning---neural-reasoning)
 
 
 
@@ -714,10 +630,15 @@
 
 ----
 
+  ["Knowledge Representation and Reasoning"](https://goo.gl/JV1JhZ) by Brachman and Levesque `book`  
+  ["Handbook of Knowledge Representation"](http://dai.fmph.uniba.sk/~sefranek/kri/handbook/) by van Harmelen, Lifschitz, Porter `book`  
+
+----
+
   - [**natural logic**](#reasoning---natural-logic)
   - [**formal logic**](#reasoning---formal-logic)
   - [**bayesian reasoning**](#reasoning---bayesian-reasoning)
-  - [**commonsense reasoning**](#reasoning---commonsense-reasoning)
+  - [**causal reasoning**](#reasoning---causal-reasoning)
   - [**neural reasoning**](#reasoning---neural-reasoning)
 
 ----
@@ -791,7 +712,6 @@
 ### reasoning - bayesian reasoning
 
   [**bayesian inference and learning**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)  
-  [**causal inference**](https://github.com/brylevkirill/notes/blob/master/Causal%20Inference.md)  
   [**Solomonoff induction**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---solomonoff-induction)  
 
 ----
@@ -801,33 +721,13 @@
 
 ----
 
-  "What is the structure of thought? The language of thought hypothesis proposes that thoughts are expressions in a mental language, and that thinking consists of syntactic manipulation of these expressions. The probabilistic language of thought hypothesis suggests that these representations have probabilistic meaning. If we treat concepts as stochastic programs and thinking as approximate Bayesian inference, can we predict human behavior in experimental settings better than using other approaches?"
-
-
-
----
-### reasoning - commonsense reasoning
-
-  ["Commonsense Reasoning and Commonsense Knowledge in Artificial Intelligence"](https://goo.gl/L5Cp6v) by Davis and Marcus `paper`  
+  [**"Building Machines That Learn and Think Like People"**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#building-machines-that-learn-and-think-like-people-lake-ullman-tenenbaum-gershman) by Lake, Ullman, Tenenbaum, Gershman `paper` `overview`  
   ["Simulation as an Engine of Physical Scene Understanding"](http://www.pnas.org/content/110/45/18327.short) by Battaglia, Hamrick, Tenenbaum `paper`  
   ["Computational Rationality: A Converging Paradigm for Intelligence in Brains, Minds and Machines"](https://goo.gl/jWaJVf) by Gershman, Horvitz, Tenenbaum `paper`  
-
-  [notes](http://jhamrick.github.io/quals/) by Jessica Hamrick
-
-----
-
-  [**knowledge representation - probabilistic program**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#knowledge-representation---probabilistic-program)
-
-----
-
-  ["What Are Probabilistic Models of Cognition?"](http://jhamrick.github.io/quals/responses/response1.pdf) by Jessica Hamrick `notes`
-
-  ["Towards More Human-like Concept Learning in Machines: Compositionality, Causality, and Learning-to-learn"](http://cims.nyu.edu/~brenden/LakePhDThesis.pdf) by Brenden Lake `paper`  
   ["Concepts in a Probabilistic Language of Thought"](https://web.stanford.edu/~ngoodman/papers/ConceptsChapter-final.pdf) by Goodman, Tenenbaum, Gerstenberg `paper`  
-  ["Modeling Cognition with Probabilistic Programs: Representations and Algorithms"](https://stuhlmueller.org/papers/stuhlmueller-phdthesis.pdf) by Andreas Stuhlmueller `paper`  
 
-  ["Probabilistic Models of Cognition"](http://probmods.org) by Noah Goodman and Josh Tenenbaum `book`  
-  ["Modeling Agents with Probabilistic Programs"](http://agentmodels.org) by Owain Evans, Andreas Stuhlmuller, John Salvatier and Daniel Filan `book`  
+  ["Probabilistic Models of Cognition"](http://probmods.org) by Goodman and Tenenbaum `book`  
+  ["Modeling Agents with Probabilistic Programs"](http://agentmodels.org) by Evans, Stuhlmuller, Salvatier, Filan `book`  
 
 ----
 
@@ -846,19 +746,24 @@
   - ["Development of Intelligence: Bayesian Inference"](http://youtube.com/watch?v=icEdI0AIOlU) `video`  
   - ["Machine vs Human Learning"](http://youtube.com/watch?v=UNYnpO1mkT4) `video`  
 
+----
+
   "Intelligence is not just about pattern recognition and prediction. It is about modeling the world. Explaining and understanding what we see. Imagining things we could see but haven't yet. Problem solving and planning actions to make these things real. Building new models as we learn more about the world. Sharing our models, communicating to others, understanding their models, and learning from them and with them."
 
   "Learning as theory building, not data analysis. Knowledge grows through hypothesis and explanation driven interpretations of sparse data. Human knowledge is more like a codebase than the weights of a neural network or bayesian network. What kinds of programs are in the codebase? Human learning is more like coding than stochastic gradient descent or sampling. Learning algorithms are programs that write code. What kinds of programs are these?"
 
   *(Josh Tenenbaum)*
 
+
+
+---
+### reasoning - causal reasoning
+
+  [**causal inference**](https://github.com/brylevkirill/notes/blob/master/Causal%20Inference.md)
+
 ----
 
-  "Humans have the capacity to draw commonsense inferences: things that are likely but not certain to hold based on established discourse and are rarely stated explicitly. A program has common sense if it automatically deduces for itself a sufficiently wide class of immediate consequences of anything it is told and what it already knows."
-
-  "Requirement of commonsense knowledge in language understanding has been long-cited. This knowledge is viewed as a key component in filling in the gaps between the telegraphic style of natural language statements: we are able to convey considerable information in a relatively sparse channel, presumably owing to a partially shared model at the start of any discourse. Commonsense inference - inferences based on commonsense knowledge - is possibilistic: things everyone more or less would expect to hold in a given context, but without always the strength of logical entailment."
-
-  "Deriving the knowledge needed to perform these inferences exclusively from corpora has led to results most accurately considered models of language, rather than of the world. Facts such that a person walking into a room is very likely to be regularly blinking and breathing are not often explicitly stated, so their real-world likelihoods do not align to language model probabilities. We would like a system capable of reading a sentence describing some situation, such as found in a newspaper, and be able to infer how likely other statements hold of that situation, in the real world. This as compared to, e.g., knowing the likelihood of the next observed sentence in that newspaper article."
+  [**knowledge representation - causal graph**](#knowledge-representation---causal-graph)
 
 
 
@@ -960,12 +865,59 @@
 ---
 ### machine reading projects
 
+  - [**IBM Watson**](#machine-reading-projects---ibm-watson)  
+  - [**AI2 Aristo**](#machine-reading-projects---ai2-aristo)  
   - [**Google Knowledge Vault**](#machine-reading-projects---google-knowledge-vault)  
   - [**Fonduer**](#machine-reading-projects---fonduer)  
   - [**DeepDive**](#machine-reading-projects---deepdive)  
   - [**NELL**](#machine-reading-projects---nell)  
-  - [**AI2 Aristo**](#machine-reading-projects---ai2-aristo)  
-  - [**IBM Watson**](#machine-reading-projects---ibm-watson)  
+
+
+
+---
+### machine reading projects - IBM Watson
+
+  ["The Science Behind an Answer"](http://youtube.com/watch?v=DywO4zksfXw) `video`  
+  [IBM Watson vs Ken Jennings vs Brad Rutter](https://archive.org/details/Jeopardy.2011.02.The.IBM.Challenge) match `video`  
+
+  ["Building Watson - A Brief Overview of the DeepQA Project"](http://youtube.com/watch?v=3G2H3DZ8rNc) by David Ferrucci `video`  
+  ["AI: A Return to Meaning"](https://youtube.com/watch?v=1n-cwezu8j4) by David Ferrucci `video`  
+  ["Inside the Mind of Watson"](http://youtube.com/watch?v=grDKpicM5y0) by Chris Welty `video`  
+  ["Building Watson - A Brief Overview of DeepQA"](http://youtube.com/watch?v=_dXNXCv5eo8) by Karthik Visweswariah `video`  
+  ["Going Beyond Fact-Based Question Answering"](https://youtube.com/watch?v=w87_VsP3zec) by Erik Mueller `video`  
+
+----
+
+  ["Building Watson: An Overview of the DeepQA Project"](https://aaai.org/ojs/index.php/aimagazine/article/view/2303) by Ferrucci et al. `paper`  
+  ["WatsonPaths: Scenario-Based Question Answering and Inference over Unstructured Information"](https://aaai.org/ojs/index.php/aimagazine/article/view/2715) by Lally et al. `paper` ([overview](https://youtu.be/1n-cwezu8j4?t=54m42s) by David Ferrucci `video`)  
+  [papers](https://dropbox.com/sh/udz1kpzzz95xfd6/AADgpBmFsTS1CtkbClfmbyyqa) from IBM Watson team  
+
+
+
+---
+### machine reading projects - AI2 Aristo
+
+  [AI2 Aristo](http://allenai.org/aristo) project  
+  [AI2 Aristo](https://aristo-quiz.allenai.org) live demo  
+
+----
+
+  [overview](https://youtube.com/watch?v=u7n7vKEmfb4) by Peter Clark `video`  
+  [overview](https://youtube.com/watch?v=eyjpLPjhSPU) by Peter Clark `video`  
+
+----
+
+  ["Markov Logic Networks for Natural Language Question Answering"](#markov-logic-networks-for-natural-language-question-answering-khot-balasubramanian-gribkoff-sabharwal-clark-etzioni) by Khot et al. `paper` `summary`  
+  ["Question Answering via Integer Programming over Semi-Structured Knowledge"](#question-answering-via-integer-programming-over-semi-structured-knowledge-khashabi-khot-sabharwal-clark-etzioni-roth) by Khashabi et al. `paper` `summary`  
+  ["Automatic Construction of Inference-Supporting Knowledge Bases"](#automatic-construction-of-inference-supporting-knowledge-bases-clark-et-al) by Clark et al. `paper` `summary`  
+
+----
+
+  "Unlike entity-centric factoid QA tasks, science questions typically involve general concepts, and answering them requires identifying implicit relationships in the question."
+
+  "Elementary grade science tests are challenging as they test a wide variety of commonsense knowledge that human beings largely take for granted, yet are very difficult for machines. For example, consider a question from a NY Regents 4th Grade science test. Question 1: “When a baby shakes a rattle, it makes a noise. Which form of energy was changed to sound energy?” [Answer: mechanical energy] Science questions are typically quite different from the entity-centric factoid questions extensively studied in the question answering community, e.g., “In which year was Bill Clinton born?” While factoid questions are usually answerable from text search or fact databases, science questions typically require deeper analysis. A full understanding of the above question involves not just parsing and semantic interpretation; it involves adding implicit information to create an overall picture of the “scene” that the text is intended to convey, including facts such as: noise is a kind of sound, the baby is holding the rattle, shaking involves movement, the rattle is making the noise, movement involves mechanical energy, etc. This mental ability to create a scene from partial information is at the heart of natural language understanding, which is essential for answering these kinds of question. It is also very difficult for a machine because it requires substantial world knowledge, and there are often many ways a scene can be elaborated."
+
+  "A first step towards a machine that contains large amounts of knowledge in machine-computable form that can answer questions, explain those answers, and discuss those answers with users. Central to the project is machine reading - semi-automated acquisition of knowledge from natural language texts. We are also integrating semi-formal methods for reasoning with knowledge, such as textual entailment and evidential reasoning, and a robust hybrid architecture that has multiple reasoning modules operating in tandem."
 
 
 
@@ -1097,53 +1049,6 @@
   - suggesting candidate beliefs (using multiple strategies)
   - promoting a set of beliefs consistent with the ontology and each other
   - distantly training the candidate generators from the promoted beliefs
-
-
-
----
-### machine reading projects - AI2 Aristo
-
-  [AI2 Aristo](http://allenai.org/aristo) project  
-  [AI2 Aristo](https://aristo-quiz.allenai.org) live demo  
-
-----
-
-  [overview](https://youtube.com/watch?v=u7n7vKEmfb4) by Peter Clark `video`  
-  [overview](https://youtube.com/watch?v=eyjpLPjhSPU) by Peter Clark `video`  
-
-----
-
-  ["Markov Logic Networks for Natural Language Question Answering"](#markov-logic-networks-for-natural-language-question-answering-khot-balasubramanian-gribkoff-sabharwal-clark-etzioni) by Khot et al. `paper` `summary`  
-  ["Question Answering via Integer Programming over Semi-Structured Knowledge"](#question-answering-via-integer-programming-over-semi-structured-knowledge-khashabi-khot-sabharwal-clark-etzioni-roth) by Khashabi et al. `paper` `summary`  
-  ["Automatic Construction of Inference-Supporting Knowledge Bases"](#automatic-construction-of-inference-supporting-knowledge-bases-clark-et-al) by Clark et al. `paper` `summary`  
-
-----
-
-  "Unlike entity-centric factoid QA tasks, science questions typically involve general concepts, and answering them requires identifying implicit relationships in the question."
-
-  "Elementary grade science tests are challenging as they test a wide variety of commonsense knowledge that human beings largely take for granted, yet are very difficult for machines. For example, consider a question from a NY Regents 4th Grade science test. Question 1: “When a baby shakes a rattle, it makes a noise. Which form of energy was changed to sound energy?” [Answer: mechanical energy] Science questions are typically quite different from the entity-centric factoid questions extensively studied in the question answering community, e.g., “In which year was Bill Clinton born?” While factoid questions are usually answerable from text search or fact databases, science questions typically require deeper analysis. A full understanding of the above question involves not just parsing and semantic interpretation; it involves adding implicit information to create an overall picture of the “scene” that the text is intended to convey, including facts such as: noise is a kind of sound, the baby is holding the rattle, shaking involves movement, the rattle is making the noise, movement involves mechanical energy, etc. This mental ability to create a scene from partial information is at the heart of natural language understanding, which is essential for answering these kinds of question. It is also very difficult for a machine because it requires substantial world knowledge, and there are often many ways a scene can be elaborated."
-
-  "A first step towards a machine that contains large amounts of knowledge in machine-computable form that can answer questions, explain those answers, and discuss those answers with users. Central to the project is machine reading - semi-automated acquisition of knowledge from natural language texts. We are also integrating semi-formal methods for reasoning with knowledge, such as textual entailment and evidential reasoning, and a robust hybrid architecture that has multiple reasoning modules operating in tandem."
-
-
-
----
-### machine reading projects - IBM Watson
-
-  ["The Science Behind an Answer"](http://youtube.com/watch?v=DywO4zksfXw) `video`  
-  [IBM Watson vs Ken Jennings vs Brad Rutter](https://archive.org/details/Jeopardy.2011.02.The.IBM.Challenge) match `video`  
-
-  ["Building Watson - A Brief Overview of the DeepQA Project"](http://youtube.com/watch?v=3G2H3DZ8rNc) by David Ferrucci `video`  
-  ["AI: A Return to Meaning"](https://youtube.com/watch?v=1n-cwezu8j4) by David Ferrucci `video`  
-  ["Inside the Mind of Watson"](http://youtube.com/watch?v=grDKpicM5y0) by Chris Welty `video`  
-  ["Building Watson - A Brief Overview of DeepQA"](http://youtube.com/watch?v=_dXNXCv5eo8) by Karthik Visweswariah `video`  
-  ["Going Beyond Fact-Based Question Answering"](https://youtube.com/watch?v=w87_VsP3zec) by Erik Mueller `video`  
-
-----
-
-  ["Building Watson: An Overview of the DeepQA Project"](https://aaai.org/ojs/index.php/aimagazine/article/view/2303) by Ferrucci et al. `paper`  
-  ["WatsonPaths: Scenario-Based Question Answering and Inference over Unstructured Information"](https://semanticscholar.org/paper/WatsonPaths%3A-Scenario-Based-Question-Answering-and-Lally-Bagchi/6c2ff8ee03978e710c67a8b0d086fc4115583c04) by Lally et al. `paper` ([overview](https://youtu.be/1n-cwezu8j4?t=54m42s) by David Ferrucci `video`)  
-  [papers](https://dropbox.com/sh/udz1kpzzz95xfd6/AADgpBmFsTS1CtkbClfmbyyqa) from IBM Watson team  
 
 
 

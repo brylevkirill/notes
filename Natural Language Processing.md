@@ -40,6 +40,7 @@
   [course](http://github.com/oxford-cs-deepnlp-2017/lectures) from Oxford and DeepMind `video`  
   [course](http://phontron.com/class/nn4nlp2019/schedule.html) from CMU ([videos](https://youtube.com/user/neubig/playlists))  
   [course](http://youtube.com/playlist?list=PLt1IfGj6-_-f55ULcae3v7YuG8p_eUjnk) from iPavlov and Yandex `video` `in russian`  
+  [course](https://my.compscicenter.ru/courses/introduction-nlp) by Anton Alexeev ([videos](https://youtube.com/playlist?list=PLlb7e2G7aSpRTcBciP6VBJJPvdH_DXRXQ)) `in russian`  
 
 ----
 

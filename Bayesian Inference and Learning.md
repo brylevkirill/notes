@@ -630,15 +630,19 @@
 >	"People learning new concepts can often generalize successfully from just a single example, yet machine learning algorithms typically require tens or hundreds of examples to perform with similar accuracy. People can also use learned concepts in richer ways than conventional algorithms - for action, imagination, and explanation. We present a computational model that captures these human learning abilities for a large class of simple visual concepts: handwritten characters from the world’s alphabets. The model represents concepts as simple programs that best explain observed examples under a Bayesian criterion. On a challenging one-shot classification task, the model achieves human-level performance while outperforming recent deep learning approaches. We also present several “visual Turing tests” probing the model’s creative generalization abilities, which in many cases are indistinguishable from human behavior."
 
 ----
->	"Vision program outperformed humans in identifying handwritten characters, given single training example"
+>	"The power of concept learning as program induction:  
+>	- Programs provide causal descriptions (explanations) of how the data was generated  
+>	- Programs support flexible generalization to new tasks  
+>	- Programs support compositional learning  
+>	- Probabilistic programs can handle noise and support creative tasks"  
 
->	"This work brings together three key ideas -- compositionality, causality, and learning-to-learn --- challenging (in a good way) the traditional deep learning approach"
-
+  - `video` <http://youtube.com/watch?v=Sz6VoPly45o> (Lake)
   - `video` <http://youtube.com/watch?v=kzl8Bn4VtR8> (Lake)
   - `video` <http://techtalks.tv/talks/one-shot-learning-of-simple-fractal-concepts/63049/> (Lake)
   - `video` <http://youtu.be/quPN7Hpk014?t=21m5s> (Tenenbaum)
   - `notes` <https://casmls.github.io/general/2017/02/08/oneshot.html>
   - `code` <https://github.com/brendenlake/BPL>
+  - `paper` ["Towards More Human-like Concept Learning in Machines: Compositionality, Causality, and Learning-to-learn"](http://cims.nyu.edu/~brenden/LakePhDThesis.pdf) by Lake
 
 
 #### ["Variational Autoencoders for Collaborative Filtering"](https://arxiv.org/abs/1802.05814) Liang, Krishnan, Hoffman, Jebara

@@ -522,12 +522,14 @@
 
   [overview](https://youtu.be/7o9dT6puHHg?t=37m39s) by Aravind Srinivas `video`  
   overview ([[1]](https://youtu.be/grsO57XMJMk?t=1h1m41s), [[2]](https://youtu.be/5NMIUZ7_nrg)) by Aravind Srinivas `video`  
-  [tutorial](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks) by Ian Goodfellow `video` ([paper](https://arxiv.org/abs/1701.00160))  
+
+  [tutorial](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks) by Ian Goodfellow `video` ([paper](https://arxiv.org/abs/1701.00160))
+
+  [course](https://lektorium.tv/node/36609) by Sergey Nikolenko `video` `in russian`
 
   [overview](https://youtube.com/watch?v=T4UuL7U5asA) by Egor Zakharov `video`  
   [overview](https://youtube.com/watch?v=m80Vp-jz-Io) by Iliya Tolstikhin `video`  
-  [overview](https://youtube.com/watch?v=jAI3rBI6poU) by Dmitry Ulyanov `video` `in russian`
-	([slides](https://drive.google.com/open?id=0B_-hq6gL70bUQmhhQ3dwU2lPQXM) `in english`)  
+  [overview](https://youtube.com/watch?v=jAI3rBI6poU) by Dmitry Ulyanov `video` `in russian`  
 
 ----
 
@@ -1860,6 +1862,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=BhlOGGzC0Q0> + <https://youtube.com/watch?v=rMQMHA-uv_E> (Gharbieh)
   - `video` <https://youtube.com/watch?v=BhlOGGzC0Q0> (Luo)
   - `video` <https://youtu.be/99CymZY-4Tc?t=5m36s> (Lyalin) `in russian`
+  - `video` <https://youtu.be/Q4HVS6c92qU?t=21m7s> (Alexeev) `in russian`
   - `post` <http://jalammar.github.io/illustrated-bert>
   - `post` <https://medium.com/dissecting-bert/dissecting-bert-part-1-d3c3d495cdb3> + <https://medium.com/dissecting-bert/dissecting-bert-part2-335ff2ed9c73> + <https://medium.com/dissecting-bert/dissecting-bert-appendix-the-decoder-3b86f66b0e5f>
   - `paper` ["Right for the Wrong Reasons: Diagnosing Syntactic Heuristics in Natural Language Inference"](https://arxiv.org/abs/1902.01007) by McCoy et al.
@@ -1909,8 +1912,8 @@ Yoshua Bengio:
   - `post` <http://blog.evjang.com/2016/06/generative-adversarial-nets-in.html>
   - `post` <https://oshearesearch.com/index.php/2016/07/01/mnist-generative-adversarial-model-in-keras/>
   - `code` <https://github.com/wiseodd/generative-models/tree/master/GAN>
-  - `paper` ["Unsupervised Minimax: Adversarial Curiosity, Generative Adversarial Networks, and Predictability Minimization"](https://arxiv.org/abs/1906.04493) by Schmidhuber
   - `post` <https://web.archive.org/web/20120312111546/http://yehar.com:80/blog/?p=167>
+  - `paper` [**"Unsupervised Minimax: Adversarial Curiosity, Generative Adversarial Networks, and Predictability Minimization"**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#unsupervised-minimax-adversarial-curiosity-generative-adversarial-networks-and-predictability-minimization-schmidhuber-paper) by Schmidhuber `summary`
 
 
 #### ["Adversarial Autoencoders"](https://arxiv.org/abs/1511.05644) Makhzani, Shlens, Jaitly, Goodfellow
@@ -2582,6 +2585,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=KMY2Knr4iAs> (Chen)
   - `video` <https://youtube.com/watch?v=YQZRsowJZA8> (Lyalin) `in russian`
   - `video` <https://youtube.com/watch?v=KMgJFptbNlM> (Lyalin) `in russian`
+  - `video` <https://youtube.com/watch?v=ONuRVpJSvfY> (Alexeev) `in russian`
   - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) `in russian`
   - `video` <https://youtu.be/LhH6wMvntSM?t=54m56s> (Suleymanov) `in russian`
   - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani, Uszkoreit)
@@ -2866,10 +2870,14 @@ Yoshua Bengio:
   - `code` <https://github.com/ikostrikov/pytorch-meta-optimizer>
 
 
-#### ["Deep Learning with Logged Bandit Feedback"](https://www.cs.cornell.edu/people/tj/publications/joachims_etal_18a.pdf)
+#### ["Deep Learning with Logged Bandit Feedback"](https://www.cs.cornell.edu/people/tj/publications/joachims_etal_18a.pdf) Joachims et al.
   `BanditNet` `ICLR 2018`
 >	"We propose a new output layer for deep neural networks that permits the use of logged contextual bandit feedback for training. Such contextual bandit feedback can be available in huge quantities (e.g., logs of search engines, recommender systems) at little cost, opening up a path for training deep networks on orders of magnitude more data. To this effect, we propose a counterfactual risk minimization approach for training deep networks using an equivariant empirical risk estimator with variance regularization, BanditNet, and show how the resulting objective can be decomposed in a way that allows stochastic gradient descent training. We empirically demonstrate the effectiveness of the method by showing how deep networks – ResNets in particular – can be trained for object recognition without conventionally labeled images."
   - `video` <https://youtube.com/watch?v=lzA5K4im2no> (Joachims)
+
+
+#### ["Self-training with Noisy Student improves ImageNet classification"](https://arxiv.org/abs/1911.04252) Xie et al.
+>	"We present a simple self-training method that achieves 87.4% top-1 accuracy on ImageNet, which is 1.0% better than the state-of-the-art model that requires 3.5B weakly labeled Instagram images. On robustness test sets, it improves ImageNet-A top-1 accuracy from 16.6% to 74.2%, reduces ImageNet-C mean corruption error from 45.7 to 31.2, and reduces ImageNet-P mean flip rate from 27.8 to 16.1. To achieve this result, we first train an EfficientNet model on labeled ImageNet images and use it as a teacher to generate pseudo labels on 300M unlabeled images. We then train a larger EfficientNet as a student model on the combination of labeled and pseudo labeled images. We iterate this process by putting back the student as the teacher. During the generation of the pseudo labels, the teacher is not noised so that the pseudo labels are as good as possible. But during the learning of the student, we inject noise such as data augmentation, dropout, stochastic depth to the student so that the noised student is forced to learn harder from the pseudo labels."
 
 
 

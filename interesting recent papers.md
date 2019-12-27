@@ -2701,6 +2701,11 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#rl2-fast-reinforcement-learning-via-slow-reinforcement-learning-duan-schulman-chen-bartlett-sutskever-abbeel) by Duan et al.
 
 ----
+#### ["VariBAD: A Very Good Method for Bayes-Adaptive Deep RL via Meta-Learning"](https://arxiv.org/abs/1910.08348) Zintgraf et al.
+  `variBAD` `approximate bayesian optimal exploration`
+>	"Trading off exploration and exploitation in an unknown environment is key to maximising expected return during learning. A Bayes-optimal policy, which does so optimally, conditions its actions not only on the environment state but on the agent's uncertainty about the environment. Computing a Bayes-optimal policy is however intractable for all but the smallest tasks. In this paper, we introduce a way to meta-learn to perform approximate inference in an unknown environment, and incorporate task uncertainty directly during action selection. In a grid-world domain, we illustrate how variBAD performs structured online exploration as a function of task uncertainty. We also evaluate variBAD on MuJoCo domains widely used in meta-RL and show that it achieves higher return during training than existing methods."  
+  - `video` <https://slideslive.com/38922025/deep-reinforcement-learning-1?t=3970> (Whiteson)
+
 #### ["Randomized Prior Functions for Deep Reinforcement Learning"](https://arxiv.org/abs/1806.03335) Osband, Aslanides, Cassirer
   `approximate bayesian exploration` `approximate posterior sampling`
 >	"A simple modification where each member of the ensemble is initialized together with a random but fixed prior function. Predictions are then taken as the sum of the trainable neural network and the prior function. We show that this approach passes a sanity check by demonstrating an equivalence to Bayesian inference with linear models. We also present a series of simple experiments designed to extend this intuition to deep learning. We show that many of the most popular approaches for uncertainty estimation in deep RL do not pass these sanity checks, and crystallize these shortcomings in a series of lemmas and small examples. We demonstrate that our simple modification can facilitate aspiration in difficult tasks where previous approaches for deep RL fail. We believe that this work presents a simple and practical approach to encoding prior knowledge with deep reinforcement learning."  
@@ -2751,7 +2756,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://vimeo.com/252186381> (van Roy)
 
 #### ["Why is Posterior Sampling Better than Optimism for Reinforcement Learning?"](http://arxiv.org/abs/1607.00215) Osband, van Roy
-  `approximate bayesian exploration`
+  `approximate bayesian exploration` `posterior sampling`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#why-is-posterior-sampling-better-than-optimism-for-reinforcement-learning-osband-van-roy>
 
 #### ["BBQ-Networks: Efficient Exploration in Deep Reinforcement Learning for Task-Oriented Dialogue Systems"](https://arxiv.org/abs/1608.05081) Lipton, Li, Gao, Li, Ahmed, Deng
@@ -3553,12 +3558,14 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 #### ["RobustFill: Neural Program Learning under Noisy I/O"](https://arxiv.org/abs/1703.07469) Devlin, Uesato, Bhupatiraju, Singh, Mohamed, Kohli
   - `video` <https://vimeo.com/238227939> (Uesato, Bhupatiraju)
+  - `video` <https://youtu.be/Fs7FquuLprM?t=16m35s> (Singh)
   - `video` <https://facebook.com/nipsfoundation/videos/1552060484885185?t=5885> (Reed)
 
 #### ["Differentiable Programs with Neural Libraries"](https://arxiv.org/abs/1611.02109) Gaunt, Brockschmidt, Kushman, Tarlow
   - `video` <https://vimeo.com/238227833> (Gaunt)
 
 #### ["Neuro-Symbolic Program Synthesis"](https://arxiv.org/abs/1611.01855) Parisotto, Mohamed, Singh, Li, Zhou, Kohli
+  - `video` <https://youtu.be/Fs7FquuLprM?t=8m39s> (Singh)
 
 #### ["TerpreT: A Probabilistic Programming Language for Program Induction"](http://arxiv.org/abs/1608.04428) Gaunt, Brockschmidt, Singh, Kushman, Kohli, Taylor, Tarlow
 >	"These works raise questions of (a) whether new models can be designed specifically to synthesize interpretable source code that may contain looping and branching structures, and (b) whether searching over program space using techniques developed for training deep neural networks is a useful alternative to the combinatorial search methods used in traditional IPS. In this work, we make several contributions in both of these directions."  
@@ -3696,14 +3703,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"We trained a RRN to solve Sudokus by considering each cell an object, which affects each other cell in the same row, column and box. We didn’t tell it about any strategy or gave it any other hints. The network learned a powerful strategy which solves 96.6% of even the hardest Sudoku’s with only 17 givens. For comparison the non-recurrent RN failed to solve any of these puzzles, despite having more parameters and being trained for longer."  
   - `post` <https://rasmusbergpalm.github.io/recurrent-relational-networks/>
   - `code` <https://github.com/rasmusbergpalm/recurrent-relational-networks>
-
-#### ["FiLM: Visual Reasoning with a General Conditioning Layer"](https://arxiv.org/abs/1709.07871) Perez, Strub, Vries, Dumoulin, Courville
-  `question answering over images`
->	"FiLM layer carries out a simple, feature-wise affine transformation on a neural network’s intermediate features, conditioned on an arbitrary input. In the case of visual reasoning, FiLM layers enable a RNN over an input question to influence CNN computation over an image. This process adaptively and radically alters the CNN’s behavior as a function of the input question, allowing the overall model to carry out a variety of reasoning tasks, ranging from counting to comparing. It also enables the CNN to properly localize question-referenced objects."  
->	"Ability to answer image-related questions requires learning a question-dependent, structured reasoning process over images from language. Standard deep learning approaches tend to exploit biases in the data rather than learn this underlying structure, while leading methods learn to visually reason successfully but are hand-crafted for reasoning."  
->	"The crazy thing is that the model does not include anything for reasoning and does not indicate anything about reasoning."  
-  - `video` <https://youtu.be/02xIkHowQOk?t=2h44m55s> (Perez)
-  - `video` <https://youtube.com/watch?v=BZKzHAOilNo> (Courville)
 
 #### ["A Simple Neural Network Module for Relational Reasoning"](https://arxiv.org/abs/1706.01427) Santoro, Raposo, Barrett, Malinowski, Pascanu, Battaglia, Lillicrap
   `question answering over images`
