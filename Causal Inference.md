@@ -9,7 +9,7 @@
 ---
 ### overview
 
-  ["The Seven Tools of Causal Inference with Reflections on Machine Learning"](https://dl.acm.org/citation.cfm?id=3241036) by Judea Pearl `paper`  
+  ["The Seven Tools of Causal Inference with Reflections on Machine Learning"](https://dl.acm.org/citation.cfm?id=3241036) by Judea Pearl `paper` ([talk](https://youtube.com/watch?v=nWaM6XmQEmU) `video`)  
   ["Theoretical Impediments to Machine Learning"](http://web.cs.ucla.edu/~kaoru/theoretical-impediments.pdf) by Judea Pearl `paper`  
 
   ["Causality for Machine Learning"](https://arxiv.org/abs/1911.10500) by Bernhard Scholkopf `paper`
@@ -61,6 +61,7 @@
 
   ["The Foundations of Causal Inference with Reflections on Machine Learning and Artificial Intelligence"](https://youtube.com/watch?v=nWaM6XmQEmU) by Judea Pearl `video`  
   ["The New Science of Cause and Effect"](https://youtube.com/watch?v=ZaPV1OSEpHw) by Judea Pearl `video`  
+  ["The Mathematics of Causal Inference with Reflections on Machine Learning"](https://youtube.com/watch?v=bcRl7sXR1hE) by Judea Pearl `video`  
   ["The Mathematics of Causal Inference, with Reflections on Machine Learning and the Logic of Science"](https://youtube.com/watch?v=zHjdd--W6o4) by Judea Pearl `video`  
 
   ["Causal Data Science: A General Framework for Data Fusion and Causal Inference"](https://youtube.com/watch?v=dUsokjG4DHc) by Elias Bareinboim `video`  
@@ -174,6 +175,23 @@
 
 
 ----
+#### ["The Seven Tools of Causal Inference with Reflections on Machine Learning"](https://dl.acm.org/citation.cfm?id=3241036) Pearl
+>	"The dramatic success in machine learning has led to an explosion of artificial intelligence applications and increasing expectations for autonomous systems that exhibit human-level intelligence. These expectations have, however, met with fundamental obstacles that cut across many application areas. One such obstacle is adaptability, or robustness. Machine learning researchers have noted current systems lack the ability to recognize or react to new circumstances they have not been specifically programmed or trained for."
+
+  - `video` <https://youtube.com/watch?v=nWaM6XmQEmU> (Pearl)
+
+
+#### ["Causality for Machine Learning"](https://arxiv.org/abs/1911.10500) Scholkopf
+>	"Graphical causal inference as pioneered by Judea Pearl arose from research on artificial intelligence, and for a long time had little connection to the field of machine learning. This article discusses where links have been and should be established, introducing key concepts along the way. It argues that the hard open problems of machine learning and AI are intrinsically related to causality, and explains how the field is beginning to understand them."
+
+
+#### ["Causal Inference and the Data-fusion Problem"](https://pnas.org/content/113/27/7345) Bareinboim, Pearl
+>	"We review concepts, principles, and tools that unify current approaches to causal analysis and attend to new challenges presented by big data. In particular, we address the problem of data fusion - piecing together multiple datasets collected under heterogeneous conditions (i.e., different populations, regimes, and sampling methods) to obtain valid answers to queries of interest. The availability of multiple heterogeneous datasets presents new opportunities to big data analysts, because the knowledge that can be acquired from combined data would not be possible from any individual source alone. However, the biases that emerge in heterogeneous environments require new analytical tools. Some of these biases, including confounding, sampling selection, and cross-population biases, have been addressed in isolation, largely in restricted parametric models. We here present a general, nonparametric framework for handling these biases and, ultimately, a theoretical solution to the problem of data fusion in causal inference tasks."
+
+  - `video` <https://youtube.com/watch?v=_cNbWuErsoI> (Bareinboim)
+  - `video` <https://youtube.com/watch?v=dUsokjG4DHc> (Bareinboim)
+
+
 #### ["On Causal and Anticausal Learning"](https://arxiv.org/abs/1206.6471) Schoelkopf et al.
   `ICML 2012`
 >	"We consider the problem of function estimation in the case where an underlying causal model can be inferred. This has implications for popular scenarios such as covariate shift, concept drift, transfer learning and semi-supervised learning. We argue that causal knowledge may facilitate some approaches for a given problem, and rule out others. In particular, we formulate a hypothesis for when semi-supervised learning can help, and corroborate it with empirical results."

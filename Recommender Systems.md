@@ -14,8 +14,8 @@
 
   ["Model-Based Machine Learning: Making Recommendations"](http://mbmlbook.com/Recommender.html) by John Winn, Christopher Bishop and Thomas Diethe
 
-  ["Recommender Systems: The Textbook"](http://charuaggarwal.net/Recommender-Systems.htm) by Charu Aggarwal ([book](https://yadi.sk/i/eMDtp31h3P8AxL))  
-  ["Recommender Systems Handbook"](http://www.cs.ubbcluj.ro/~gabis/DocDiplome/SistemeDeRecomandare/Recommender_systems_handbook.pdf) by Ricci, Rokach, Shapira, Kantor  
+  ["Recommender Systems: The Textbook"](http://charuaggarwal.net/Recommender-Systems.htm) by Charu Aggarwal `book`  
+  ["Recommender Systems Handbook"](http://www.cs.ubbcluj.ro/~gabis/DocDiplome/SistemeDeRecomandare/Recommender_systems_handbook.pdf) by Ricci, Rokach, Shapira, Kantor `book`  
 
 ----
 
@@ -76,6 +76,12 @@
 
 
 [**selected papers**](https://yadi.sk/d/RtAsSjLG3PhrT2)
+
+
+
+----
+#### ["On the Difficulty of Evaluating Baselines: A Study on Recommender Systems"](https://arxiv.org/abs/1905.01395) Rendle, Zhang, Koren
+>	"Numerical evaluations with comparisons to baselines play a central role when judging research in recommender systems. In this paper, we show that running baselines properly is difficult. We demonstrate this issue on two extensively studied datasets. First, we show that results for baselines that have been used in numerous publications over the past five years for the Movielens 10M benchmark are suboptimal. With a careful setup of a vanilla matrix factorization baseline, we are not only able to improve upon the reported results for this baseline but even outperform the reported results of any newly proposed method. Secondly, we recap the tremendous effort that was required by the community to obtain high quality results for simple methods on the Netflix Prize. Our results indicate that empirical findings in research papers are questionable unless they were obtained on standardized benchmarks where baselines have been tuned extensively by the research community."
 
 
 
@@ -201,7 +207,8 @@
 
 
 #### ["Content-based Recommendations with Poisson Factorization"](http://www.cs.toronto.edu/~lcharlin/papers/GopalanCharlinBlei_nips14.pdf) Gopalan, Charlin, Blei
->	"We develop collaborative topic Poisson factorization (CTPF), a generative model of articles and reader preferences. CTPF can be used to build recommender systems by learning from reader histories and content to recommend personalized articles of interest. In detail, CTPF models both reader behavior and article texts with Poisson distributions, connecting the latent topics that represent the texts with the latent preferences that represent the readers. This provides better recommendations than competing methods and gives an interpretable latent space for understanding patterns of readership. Further, we exploit stochastic variational inference to model massive real-world datasets. For example, we can fit CPTF to the full arXiv usage dataset, which contains over 43 million ratings and 42 million word counts, within a day. We demonstrate empirically that our model outperforms several baselines, including the previous state-of-the art approach."
+  `CTPF`
+>	"We develop collaborative topic Poisson factorization (CTPF), a generative model of articles and reader preferences. CTPF can be used to build recommender systems by learning from reader histories and content to recommend personalized articles of interest. In detail, CTPF models both reader behavior and article texts with Poisson distributions, connecting the latent topics that represent the texts with the latent preferences that represent the readers. This provides better recommendations than competing methods and gives an interpretable latent space for understanding patterns of readership. Further, we exploit stochastic variational inference to model massive real-world datasets. For example, we can fit CTPF to the full arXiv usage dataset, which contains over 43 million ratings and 42 million word counts, within a day. We demonstrate empirically that our model outperforms several baselines, including the previous state-of-the art approach."
 
 >	collaborative topic models:  
 >	- blending factorization-based and content-based recommendation  
@@ -212,7 +219,8 @@
 
 
 #### ["Scalable Recommendation with Hierarchical Poisson Factorization"](http://auai.org/uai2015/proceedings/papers/208.pdf) Gopalan, Hofman, Blei
->	"We develop hierarchical Poisson matrix factorization (HPF), a novel method for providing users with high quality recommendations based on implicit feedback, such as views, clicks, or purchases. In contrast to existing recommendation models, HPF has a number of desirable properties. First, we show that HPF more accurately captures the long-tailed user activity found in most consumption data by explicitly considering the fact that users have finite attention budgets. This leads to better estimates of users’ latent preferences, and therefore superior recommendations, compared to competing methods. Second, HPF learns these latent factors by only explicitly considering positive examples, eliminating the often costly step of generating artificial negative examples when fitting to implicit data. Third, HPF is more than just one method- it is the simplest in a class of probabilistic models with these properties, and can easily be extended to include more complex structure and assumptions. We develop a variational algorithm for approximate posterior inference for HPF that scales up to large data sets, and we demonstrate its performance on a wide variety of real-world recommendation problems - users rating movies, listening to songs, reading scientific papers, and reading news articles."
+  `HPF`
+>	"We develop hierarchical Poisson matrix factorization, a novel method for providing users with high quality recommendations based on implicit feedback, such as views, clicks, or purchases. In contrast to existing recommendation models, HPF has a number of desirable properties. First, we show that HPF more accurately captures the long-tailed user activity found in most consumption data by explicitly considering the fact that users have finite attention budgets. This leads to better estimates of users’ latent preferences, and therefore superior recommendations, compared to competing methods. Second, HPF learns these latent factors by only explicitly considering positive examples, eliminating the often costly step of generating artificial negative examples when fitting to implicit data. Third, HPF is more than just one method- it is the simplest in a class of probabilistic models with these properties, and can easily be extended to include more complex structure and assumptions. We develop a variational algorithm for approximate posterior inference for HPF that scales up to large data sets, and we demonstrate its performance on a wide variety of real-world recommendation problems - users rating movies, listening to songs, reading scientific papers, and reading news articles."
 
 >	discovering correlated preferences (devising new utility models and other factors such as time of day, date, in stock, customer demographic information)
 
@@ -247,10 +255,12 @@
 ### interesting papers - deep learning
 
 
-#### ["Deep Learning based Recommender System: A Survey and New Perspectives"](https://arxiv.org/abs/1707.07435) Zhang, Yao, Sun, Tay
+#### ["Deep Learning based Recommender System: A Survey and New Perspectives"](https://arxiv.org/abs/1707.07435) Zhang et al.
+>	"With the ever-growing volume of online information, recommender systems have been an effective strategy to overcome such information overload. The utility of recommender systems cannot be overstated, given its widespread adoption in many web applications, along with its potential impact to ameliorate many problems related to over-choice. In recent years, deep learning has garnered considerable interest in many research fields such as computer vision and natural language processing, owing not only to stellar performance but also the attractive property of learning feature representations from scratch. The influence of deep learning is also pervasive, recently demonstrating its effectiveness when applied to information retrieval and recommender systems research. Evidently, the field of deep learning in recommender system is flourishing. This article aims to provide a comprehensive review of recent research efforts on deep learning based recommender systems. More concretely, we provide and devise a taxonomy of deep learning based recommendation models, along with providing a comprehensive summary of the state-of-the-art. Finally, we expand on current trends and provide new perspectives pertaining to this new exciting development of the field."
 
 
 #### ["Are We Really Making Much Progress? A Worrying Analysis of Recent Neural Recommendation Approaches"](https://arxiv.org/abs/1907.06902) Dacrema, Cremonesi, Jannach
+>	"Deep learning techniques have become the method of choice for researchers working on algorithmic aspects of recommender systems. With the strongly increased interest in machine learning in general, it has, as a result, become difficult to keep track of what represents the state-of-the-art at the moment, e.g., for top-n recommendation tasks. At the same time, several recent publications point out problems in today's research practice in applied machine learning, e.g., in terms of the reproducibility of the results or the choice of the baselines when proposing new models. In this work, we report the results of a systematic analysis of algorithmic proposals for top-n recommendation tasks. Specifically, we considered 18 algorithms that were presented at top-level research conferences in the last years. Only 7 of them could be reproduced with reasonable effort. For these methods, it however turned out that 6 of them can often be outperformed with comparably simple heuristic methods, e.g., based on nearest-neighbor or graph-based techniques. The remaining one clearly outperformed the baselines but did not consistently outperform a well-tuned non-neural linear ranking method. Overall, our work sheds light on a number of potential problems in today's machine learning scholarship and calls for improved scientific practices in this area."
 
 
 #### ["Deep Learning Recommendation Model for Personalization and Recommendation Systems"](https://arxiv.org/abs/1906.00091) Naumov et al.

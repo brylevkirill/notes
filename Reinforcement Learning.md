@@ -116,7 +116,7 @@
 	[AlphaStar discussion](https://youtu.be/Kedt2or9xlo) with Oriol Vinyals `video`  
 	[AlphaStar discussion](https://reddit.com/r/MachineLearning/comments/ajgzoc/we_are_oriol_vinyals_and_david_silver_from) with Oriol Vinyals and David Silver  
 
-	[AlphaStar vs Serral](https://youtube.com/playlist?list=PLXJHKGgWSul4OKsIBXfa2-wHpBfiMBLJr) games `video`  
+	[AlphaStar vs Serral](https://youtube.com/playlist?list=PLojXIrB9Xau29fR-ZSdbFllI-ZCuH6urt) games `video`  
 	[AlphaStar vs Battle.net players](https://deepmind.com/research/open-source/alphastar-resources) games ([overviews](https://youtube.com/playlist?list=PLtFBLTxDxWOSrWZ8krQt6eDNXTpG67Xpf) `video`)  
 	[AlphaStar vs pro players](https://youtube.com/watch?v=cUTMhmVh1qs) games `video` ([highlights](https://youtube.com/watch?v=zgIFoepzhIo) by MaNa `video`, [highlights](https://youtube.com/watch?v=_YWmU-E2WFc) by Artosis `video`)  
 
@@ -978,6 +978,10 @@
 	[part 2](https://youtube.com/watch?v=cknukHreMdI),
 	[part 3](https://youtube.com/watch?v=ruIO79C2IQc)) `video`
 
+  tutorial by Nicolo Cesa-Bianci
+	([part 1](https://youtube.com/watch?v=zjLah88ukko),
+	[part 2](https://youtube.com/watch?v=YuuUvAJh40o)) `video`
+
 ----
 
   [overview](http://banditalgs.com/2016/09/04/bandits-a-new-beginning/) by Csaba Szepesvari
@@ -1379,16 +1383,8 @@
 ----
 
   ["Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review"](https://arxiv.org/abs/1805.00909) by Levine `paper` ([talk](https://youtu.be/iOYiPhu5GEk?t=2m34s) `video`)  
+  ["Making Sense of Reinforcement Learning and Probabilistic Inference"](https://openreview.net/forum?id=S1xitgHtvS) by O'Donoghue `paper` et al.  
   [**"Reinforced Variational Inference"**](#reinforced-variational-inference-weber-heess-eslami-schulman-wingate-silver) by Weber et al. `paper` `summary`  
-
-----
-
-  p(z) = N(z|0,I)  
-  p(a1..T|z) = Un(a)  
-  p(R|a1..T) ~ exp(v\*R(a,x))  
-  q(z|x) = N(z|μφ(x),Σφ(x))  
-  q(a|z) = Cat(a|Πθ(z))  
-  Fπ(θ) = E q(a,z|x) [R(a|x)] - α\*DKL[qθ(z|x)||p(z|x)] + α\*H[πθ(a|z)]  
 
 
 
@@ -1741,11 +1737,6 @@
   - policy determinism allows policy to be optimized more easily and more sample efficiently due to action no longer being a random variable which must be integrated over in expectation  
   - can be much more efficient in settings with very high-dimensional actions where sampling actions provides poor coverage of state-action space  
 
-  "Whilst stochastic policy gradients integrate over both state and action spaces, deterministic policy gradients only integrate over the state space, requiring fewer samples in problems with large action spaces."
-
-  in continuous action space ∇aQμ(s,a) tells how to improve action:  
-  ∇θJ(μθ) = ∫ ρμ(s)∇aQμ(s,a)|a=μθ(s)∇θμθ(s) ds = E s\~ρμ [∇aQμ(s,a)|a=μθ(s)∇θμθ(s)]  
-
 
 ----
 #### Stochastic Value Gradient (SVG)
@@ -1884,6 +1875,7 @@ interesting recent papers:
 
   - `video` <https://slideslive.com/38922026/deep-reinforcement-learning-2?t=3855> (Schrittwieser)
   - `video` <https://youtube.com/watch?v=We20YSAJZSE> (Kilcher)
+  - `video` <https://slideslive.com/38921974/perception-as-generative-reasoning-structure-causality-probability-3?t=3954> (Rezende)
   - `notes` <https://www.shortscience.org/paper?bibtexKey=journals/corr/1911.08265>
 
 
@@ -3568,8 +3560,11 @@ interesting recent papers:
 ----
 >	"non i.i.d. supervised learning from oracle demonstrations under own state distribution"
 
+  - `video` <http://videolectures.net/aistats2011_ross_reduction> (Ross)
+  - `video` <https://youtube.com/watch?v=ZMhO1FO_j0o> (Ross)
   - `video` <https://youtube.com/watch?v=kl_G95uKTHw&t=1h5m38s> (Levine)
   - `paper` <http://ciml.info/dl/v0_99/ciml-v0_99-ch18.pdf> (Daume)
+  - `paper` ["Deeply AggreVaTeD: Differentiable Imitation Learning for Sequential Prediction"](https://arxiv.org/abs/1703.01030) by Sun et al.
 
 
 #### ["Guided Policy Search"](http://vladlen.info/papers/guided-policy-search.pdf) Levine, Koltun

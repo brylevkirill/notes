@@ -4,7 +4,6 @@ interesting recent papers:
   * [**bayesian deep learning**](#bayesian-deep-learning)
   * [**compute and memory architectures**](#compute-and-memory-architectures)
   * [**meta-learning**](#meta-learning)
-  * [**few-shot learning**](#few-shot-learning)
   * [**unsupervised learning**](#unsupervised-learning)
   * [**self-supervised learning**](#self-supervised-learning)
   * [**generative models**](#generative-models)
@@ -780,6 +779,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Meta-Learning and Universality: Deep Representations and Gradient Descent can Approximate any Learning Algorithm"](https://arxiv.org/abs/1710.11622) Finn, Levine
   `MAML` `learning initialization algorithm`
 >	"A popular approach to meta-learning is to train a recurrent model to read in a training dataset as input and output the parameters of a learned model, or output predictions for new test inputs. Alternatively, a more recent approach to meta-learning aims to acquire deep representations that can be effectively fine-tuned, via standard gradient descent, to new tasks. In this paper, we consider the meta-learning problem from the perspective of universality, formalizing the notion of learning algorithm approximation and comparing the expressive power of the aforementioned recurrent models to the more recent approaches that embed gradient descent into the meta-learner. In particular, we seek to answer the following question: does deep representation combined with standard gradient descent have sufficient capacity to approximate any learning algorithm? We find that this is indeed true, and further find, in our experiments, that gradient-based meta-learning consistently leads to learning strategies that generalize more widely compared to those represented by recurrent models."
+  - `video` <https://youtu.be/5oGEZGxJAl4?t=14m17s> (Levine)
   - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482?t=1204> (Abbeel)
 
 #### ["Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks"](https://arxiv.org/abs/1703.03400) Finn, Abbeel, Levine
@@ -789,6 +789,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"Tasks are sampled and a policy gradient update is computed for each task with respect to a fixed initial set of parameters. Subsequently, a meta update is performed where a gradient step is taken that moves the initial parameter in a direction that would have maximally benefited the average return over all of the sub-updates."  
 >	"Unlike prior methods, the MAML learner’s weights are updated using the gradient, rather than a learned update rule. Our method does not introduce any additional parameters into the learning process and does not require a particular learner model architecture."  
   - <https://sites.google.com/view/maml> (demo)
+  - `video` <https://youtube.com/watch?v=5oGEZGxJAl4> (Levine)
   - `video` <https://youtu.be/Ko8IBbYjdq8?t=18m51s> (Finn)
   - `video` <https://youtu.be/lYU5nq0dAQQ?t=44m57s> (Levine)
   - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482?t=1085> (Abbeel)
@@ -858,58 +859,15 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <https://github.com/deepmind/learning-to-learn>
   - `code` <https://github.com/ikostrikov/pytorch-meta-optimizer>
 
-
-
----
-### few-shot learning
-
-----
-#### ["Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks"](https://arxiv.org/abs/1703.03400) Finn, Abbeel, Levine
-  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#model-agnostic-meta-learning-for-fast-adaptation-of-deep-networks-finn-abbeel-levine>
-
-#### ["Optimization as a Model for Few-Shot Learning"](https://openreview.net/forum?id=rJY0-Kcll) Ravi, Larochelle
-  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#optimization-as-a-model-for-few-shot-learning-ravi-larochelle>
-
-----
-#### ["Few-shot Autoregressive Density Estimation: Towards Learning to Learn Distributions"](https://arxiv.org/abs/1710.10304) Reed, Chen, Paine, Oord, Eslami, Rezende, Vinyals, de Freitas
-
-----
-#### ["Learning to Remember Rare Events"](http://arxiv.org/abs/1703.03129) Kaiser, Nachum, Roy, Bengio
-  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#learning-to-remember-rare-events-kaiser-nachum-roy-bengio>
-
-#### ["Prototypical Networks for Few-shot Learning"](https://arxiv.org/abs/1703.05175) Snell, Swersky, Zemel
->	"Extension to Matching Networks which uses euclidean distance instead of cosine and builds a prototype representation of each class for the few-shot learning scenario."  
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1703.05175>
-  - `code` <https://github.com/orobix/Prototypical-Networks-for-Few-shot-Learning-PyTorch>
-  - `code` <https://github.com/abdulfatir/prototypical-networks-tensorflow>
-
-#### ["Matching Networks for One Shot Learning"](http://arxiv.org/abs/1606.04080) Vinyals, Blundell, Lillicrap, Kavukcuoglu, Wierstra
->	"Given just a few, or even a single, examples of an unseen class, it is possible to attain high classification accuracy on ImageNet using Matching Networks. Matching Networks are trained in the same way as they are tested: by presenting a series of instantaneous one shot learning training tasks, where each instance of the training set is fed into the network in parallel. Matching Networks are then trained to classify correctly over many different input training sets. The effect is to train a network that can classify on a novel data set without the need for a single step of gradient descent."  
->	"End-to-end trainable K-nearest neighbors which accepts support sets of images as input and maps them to desired labels. Attention LSTM takes into account all samples of subset when computing the pair-wise cosine distance between samples."  
-  - `video` <https://youtu.be/QIcpGa-_bvA?t=31m41s> (Vinyals)
-  - `video` <https://youtube.com/watch?v=Q8AtnbHOQ-4> (Ghosh)
-  - `notes` <https://pbs.twimg.com/media/Cy7Eyh5WgAAZIw2.jpg:large>
-  - `notes` <https://theneuralperspective.com/2017/01/03/matching-networks-for-one-shot-learning/>
-  - `notes` <https://blog.acolyer.org/2017/01/03/matching-networks-for-one-shot-learning/>
-
-----
-#### ["Meta-Learning with Temporal Convolutions"](https://arxiv.org/abs/1707.03141) Mishra, Rohaninejad, Chen, Abbeel
-  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#meta-learning-with-temporal-convolutions-mishra-rohaninejad-chen-abbeel>
-
-#### ["One-shot Learning with Memory-Augmented Neural Networks"](http://arxiv.org/abs/1605.06065) Santoro, Bartunov, Botvinick, Wierstra, Lillicrap
-  - `video` <http://techtalks.tv/talks/meta-learning-with-memory-augmented-neural-networks/62523/> + <https://vk.com/wall-44016343_8782> (Santoro)
-  - `video` <https://youtube.com/watch?v=qos2CcviAuY> (Bartunov) `in russian`
-  - `notes` <http://rylanschaeffer.github.io/content/research/one_shot_learning_with_memory_augmented_nn/main.html>
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.06065>
-  - `code` <https://github.com/tristandeleu/ntm-one-shot>
-
 ----
 #### ["Variational Memory Addressing in Generative Models"](https://arxiv.org/abs/1709.07116) Bornschein, Mnih, Zoran, Rezende
+   `few-shot learning`
 >	"Attention based memory can be used to augment neural networks to support few-shot learning, rapid adaptability and more generally to support non-parametric extensions. Instead of using the popular differentiable soft-attention mechanism, we propose the use of stochastic hard-attention to retrieve memory content in generative models. This allows us to apply variational inference to memory addressing, which enables us to get significantly more precise memory lookups using target information, especially in models with large memory buffers and with many confounding entries in the memory."  
 >	"Aiming to augment generative models with external memory, we interpret the output of a memory module with stochastic addressing as a conditional mixture distribution, where a read operation corresponds to sampling a discrete memory address and retrieving the corresponding content from memory. This perspective allows us to apply variational inference to memory addressing, which enables effective training of the memory module by using the target information to guide memory lookups. Stochastic addressing is particularly well-suited for generative models as it naturally encourages multimodality which is a prominent aspect of most high-dimensional datasets. Treating the chosen address as a latent variable also allows us to quantify the amount of information gained with a memory lookup and measure the contribution of the memory module to the generative process."  
 >	"To illustrate the advantages of this approach we incorporate it into a variational autoencoder and apply the resulting model to the task of generative few-shot learning. The intuition behind this architecture is that the memory module can pick a relevant template from memory and the continuous part of the model can concentrate on modeling remaining variations. We demonstrate empirically that our model is able to identify and access the relevant memory contents even with hundreds of unseen Omniglot characters in memory."  
 
 #### ["Fast Adaptation in Generative Models with Generative Matching Networks"](http://arxiv.org/abs/1612.02192) Bartunov, Vetrov
+  `few-shot learning`
   - `video` <https://youtube.com/watch?v=2CHdHmhPq5E> (Bartunov)
   - `video` <https://youtube.com/watch?v=XpIDCzwNe78> (Bartunov) ([slides](https://bayesgroup.github.io/bmml_sem/2016/bartunov-oneshot.pdf))
   - `code` <http://github.com/sbos/gmn>
@@ -921,14 +879,36 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.02185>
 
 #### ["One-Shot Generalization in Deep Generative Models"](http://arxiv.org/abs/1603.05106) Rezende, Mohamed, Danihelka, Gregor, Wierstra
+  `few-shot learning`
   - `video` <http://youtube.com/watch?v=TpmoQ_j3Jv4> (demo)
   - `video` <http://techtalks.tv/talks/one-shot-generalization-in-deep-generative-models/62365/> (Rezende)
   - `video` <https://youtu.be/XpIDCzwNe78?t=43m> (Bartunov)
   - `notes` <https://casmls.github.io/general/2017/02/08/oneshot.html>
 
-----
-#### ["Active One-shot Learning"](https://cs.stanford.edu/~woodward/papers/active_one_shot_learning_2016.pdf) Woodward, Finn
-  - `video` <https://youtube.com/watch?v=CzQSQ_0Z-QU> (Woodward)
+#### ["Prototypical Networks for Few-shot Learning"](https://arxiv.org/abs/1703.05175) Snell, Swersky, Zemel
+  `few-shot learning`
+>	"Extension to Matching Networks which uses euclidean distance instead of cosine and builds a prototype representation of each class for the few-shot learning scenario."  
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1703.05175>
+  - `code` <https://github.com/orobix/Prototypical-Networks-for-Few-shot-Learning-PyTorch>
+  - `code` <https://github.com/abdulfatir/prototypical-networks-tensorflow>
+
+#### ["Matching Networks for One Shot Learning"](http://arxiv.org/abs/1606.04080) Vinyals, Blundell, Lillicrap, Kavukcuoglu, Wierstra
+  `few-shot learning`
+>	"Given just a few, or even a single, examples of an unseen class, it is possible to attain high classification accuracy on ImageNet using Matching Networks. Matching Networks are trained in the same way as they are tested: by presenting a series of instantaneous one shot learning training tasks, where each instance of the training set is fed into the network in parallel. Matching Networks are then trained to classify correctly over many different input training sets. The effect is to train a network that can classify on a novel data set without the need for a single step of gradient descent."  
+>	"End-to-end trainable K-nearest neighbors which accepts support sets of images as input and maps them to desired labels. Attention LSTM takes into account all samples of subset when computing the pair-wise cosine distance between samples."  
+  - `video` <https://youtu.be/QIcpGa-_bvA?t=31m41s> (Vinyals)
+  - `video` <https://youtube.com/watch?v=Q8AtnbHOQ-4> (Ghosh)
+  - `notes` <https://pbs.twimg.com/media/Cy7Eyh5WgAAZIw2.jpg:large>
+  - `notes` <https://theneuralperspective.com/2017/01/03/matching-networks-for-one-shot-learning/>
+  - `notes` <https://blog.acolyer.org/2017/01/03/matching-networks-for-one-shot-learning/>
+
+#### ["One-shot Learning with Memory-Augmented Neural Networks"](http://arxiv.org/abs/1605.06065) Santoro, Bartunov, Botvinick, Wierstra, Lillicrap
+  `few-shot learning`
+  - `video` <http://techtalks.tv/talks/meta-learning-with-memory-augmented-neural-networks/62523/> + <https://vk.com/wall-44016343_8782> (Santoro)
+  - `video` <https://youtube.com/watch?v=qos2CcviAuY> (Bartunov) `in russian`
+  - `notes` <http://rylanschaeffer.github.io/content/research/one_shot_learning_with_memory_augmented_nn/main.html>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.06065>
+  - `code` <https://github.com/tristandeleu/ntm-one-shot>
 
 
 
@@ -952,6 +932,8 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"To test whether the GQN learns a factorized representation, we investigated whether changing a single scene property (e.g., object colour) whilst keeping others fixed (e.g., object shape and position), leads to similar changes in the scene representation (as defined by mean cosine-similarity across scenes). We found that object colour, shape, and size; light position; and, to a lesser extent, object positions are indeed factorized. We also found that the GQN is able to carry out ‘scene algebra’ [akin to word embedding algebra]. By adding and subtracting representations of related scenes, we found that object and scene properties can be controlled, even across object positions. Finally, because it is a probabilistic model, GQN also learns to integrate information from different viewpoints in an efficient and consistent manner, as demonstrated by a reduction in its Bayesian ‘surprise’ at observing a heldout image of a scene as the number of views increases."  
   - `video` <https://youtube.com/watch?v=G-kWNQJ4idw> (demo)
   - `video` <https://youtube.com/watch?v=IVSZnTknyqw> (demo)
+  - `video` <https://slideslive.com/38921974/perception-as-generative-reasoning-structure-causality-probability-3?t=2889> (Rezende)
+  - `video` <https://youtu.be/bpsoGt-NYYk?t=2m34s> (Garnelo)
   - `video` <https://youtube.com/watch?v=XJnuEO59XfQ> (Chen)
   - `post` <https://deepmind.com/blog/neural-scene-representation-and-rendering>
   - `code` <https://github.com/wohlert/generative-query-network-pytorch>
@@ -2297,6 +2279,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"Probabilistic ensembles with trajectory sampling algorithm combines uncertainty-aware deep network dynamics models with sampling-based uncertainty propagation. Our comparison to state-of-the-art model-based and model-free deep RL algorithms shows that our approach matches the asymptotic performance of model-free algorithms on several challenging benchmark tasks, while requiring significantly fewer samples (e.g., 8 and 125 times fewer samples than Soft Actor Critic and Proximal Policy Optimization respectively on the half-cheetah task)."  
 >	"The dynamics are modelled by an ensemble of probabilistic neural networks models, which captures both epistemic uncertainty from limited data and network capacity, and aleatoric uncertainty from the stochasticity of the ground-truth dynamics. Except for the difference in modeling the dynamics, PETS-RS is the same as RS. Instead, in PETS-CEM, the online optimization problem is solved using cross-entropy method to obtain a better solution."  
   - `video` <https://sites.google.com/view/drl-in-a-handful-of-trials>
+  - `video` <https://youtube.com/watch?v=pq8xNCETPHU> (Chua)
   - `video` <https://slideslive.com/38915863/learning-models-for-representations-and-planning?t=737> (Lillicrap)
 
 #### ["Neural Network Dynamics for Model-Based Deep Reinforcement Learning with Model-Free Fine-Tuning"](https://arxiv.org/abs/1708.02596) Nagabandi, Kahn, Fearing, Levine
@@ -2494,6 +2477,8 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 ----
 #### ["Dream to Control: Learning Behaviors by Latent Imagination"](https://arxiv.org/abs/1912.01603) Hafner, Lillicrap, Ba, Norouzi
   `Dreamer`
+>	"a reinforcement learning agent that solves long-horizon tasks from images purely by latent imagination"  
+>	"We efficiently learn behaviors by propagating analytic gradients of learned state values back through trajectories imagined in the compact state space of a learned world model."  
 >	"PlaNet: online planning using cross entropy method"  
 >	"Dreamer: learn actor and value offline by backprop through dynamics"  
 >	"a scheme which does not consider rewards beyond the imagination horizon:  
@@ -3867,7 +3852,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `extractive question answering` `ACL 2019`
   - <https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#unsupervised-question-answering-by-cloze-translation-lewis-denoyer-riedel>
 
-#### ["Generating Wikipedia by Summarizing Long Sequences"](https://arxiv.org/abs/1801.10198) Liu, Saleh, Pot, Goodrich, Sepassi, Kaiser, Shazeer
+#### ["Generating Wikipedia by Summarizing Long Sequences"](https://arxiv.org/abs/1801.10198) Liu et al.
   `extractive summarization`
 >	"Extractive summarization to coarsely identify salient information and a neural abstractive model to generate the article. For the abstractive model, decoder-only Transformer architecture that can scalably attend to very long sequences, much longer than typical encoder-decoder architectures used in sequence transduction."  
 

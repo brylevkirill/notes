@@ -1,4 +1,4 @@
-  Deep Learning is learning a composition of differentiable functions as a knowledge representation through gradient-based optimization method.
+  Deep Learning is learning a composition of functions (differentiable or otherwise) as a knowledge representation (through gradient-based optimization methods or otherwise).
 
 
   * [**overview**](#overview)
@@ -41,7 +41,9 @@
 
 #### introduction
 
-  [overview](http://www.deeplearningbook.org/contents/intro.html) by Ian Goodfellow, Yoshua Bengio, Aaron Courville  
+  [overview](http://www.deeplearningbook.org/contents/intro.html) by Ian Goodfellow, Yoshua Bengio, Aaron Courville
+
+  ["What's Deep Learning?"](https://twitter.com/fchollet/status/1210031900695449600) by Francois Chollet
 
   ["Deep Learning And Shallow Data"](https://blog.piekniewski.info/2019/04/07/deep-learning-and-shallow-data) by Filip Piekniewski  
   ["The Limitations of Deep Learning for Vision and How We Might Fix Them"](https://thegradient.pub/the-limitations-of-visual-deep-learning-and-how-we-might-fix-them) by Alan Yuille and Chenxi Liu  
@@ -431,15 +433,10 @@
 
   ["Do we still need models or just more data and compute?"](https://staff.fnwi.uva.nl/m.welling/wp-content/uploads/Model-versus-Data-AI-1.pdf) by Max Welling
 
-  ["Round-up of Strenghts and Weaknesses"](https://youtube.com/watch?v=7o9dT6puHHg) by Aravind Srinivas `video`
+  [overview](https://youtube.com/watch?v=oRJ1hJTRs-0) by Danilo Rezende `video`
 
-  [overview](http://videolectures.net/deeplearning2017_goodfellow_generative_models/) by Ian Goodfellow `video`  
-  [overview](http://videolectures.net/deeplearning2017_courville_generative_models/) by Aaron Courville `video`  
-  [overview](https://youtube.com/watch?v=JrO5fSskISY) by Shakir Mohamed and Danilo Rezende `video`  
-
-  ["Building Machines that Imagine and Reason: Principles and Applications of Deep Generative Models"](http://videolectures.net/deeplearning2016_mohamed_generative_models/) by Shakir Mohamed `video`
-
-  ["Differentiable Inference and Generative Models"](http://www.cs.toronto.edu/~duvenaud/courses/csc2541/index.html) course by David Duvenaud
+  ["Round-up of Strenghts and Weaknesses"](https://youtube.com/watch?v=7o9dT6puHHg) by Aravind Srinivas `video`  
+  ["Building Machines that Imagine and Reason: Principles and Applications of Deep Generative Models"](http://videolectures.net/deeplearning2016_mohamed_generative_models/) by Shakir Mohamed `video`  
 
 ----
 

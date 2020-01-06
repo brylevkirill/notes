@@ -639,6 +639,7 @@
   - `video` <http://youtube.com/watch?v=Sz6VoPly45o> (Lake)
   - `video` <http://youtube.com/watch?v=kzl8Bn4VtR8> (Lake)
   - `video` <http://techtalks.tv/talks/one-shot-learning-of-simple-fractal-concepts/63049/> (Lake)
+  - `video` <http://youtube.com/watch?v=p1VpvOFJg6A> (Lake)
   - `video` <http://youtu.be/quPN7Hpk014?t=21m5s> (Tenenbaum)
   - `notes` <https://casmls.github.io/general/2017/02/08/oneshot.html>
   - `code` <https://github.com/brendenlake/BPL>

@@ -721,7 +721,7 @@
 
 ----
 
-  [**"Building Machines That Learn and Think Like People"**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#building-machines-that-learn-and-think-like-people-lake-ullman-tenenbaum-gershman) by Lake, Ullman, Tenenbaum, Gershman `paper` `overview`  
+  [**"Building Machines That Learn and Think Like People"**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#building-machines-that-learn-and-think-like-people-lake-ullman-tenenbaum-gershman) by Lake, Ullman, Tenenbaum, Gershman `paper` `summary`  
   ["Simulation as an Engine of Physical Scene Understanding"](http://www.pnas.org/content/110/45/18327.short) by Battaglia, Hamrick, Tenenbaum `paper`  
   ["Computational Rationality: A Converging Paradigm for Intelligence in Brains, Minds and Machines"](https://goo.gl/jWaJVf) by Gershman, Horvitz, Tenenbaum `paper`  
   ["Concepts in a Probabilistic Language of Thought"](https://web.stanford.edu/~ngoodman/papers/ConceptsChapter-final.pdf) by Goodman, Tenenbaum, Gerstenberg `paper`  
@@ -738,9 +738,10 @@
   - ["Building Machines That See, Learn and Think Like People"](https://youtube.com/watch?v=7ROelYvo8f0) `video`  
   - ["Building Machines That Learn and Think Like People"](https://facebook.com/icml.imls/videos/432412777273243?t=4362) `video`  
   - ["The Cognitive Science Perspective: Reverse-engineering the Mind"](https://youtube.com/watch?v=Z3mFBEOH2y4) `video`  
-  - ["Engineering & Reverse-Engineering Human Common Sense"](https://youtube.com/watch?v=hfoeRiZU5YQ) `video`  
-  - ["Cognitive Foundations for Common-sense Knowledge Representation and Reasoning"](https://youtube.com/watch?v=oSAG57plHnI) `video`  
+  - ["Modeling Human Intelligence with Probabilistic Programs and Program Induction"](https://youtube.com/watch?v=c_hUBLsicSY) `video`  
   - ["Building Machines That Learn Like Humans"](https://youtube.com/watch?v=quPN7Hpk014) `video`  
+  - ["Cognitive Foundations for Common-sense Knowledge Representation and Reasoning"](https://youtube.com/watch?v=oSAG57plHnI) `video`  
+  - ["Engineering & Reverse-Engineering Human Common Sense"](https://youtube.com/watch?v=hfoeRiZU5YQ) `video`  
   - ["Towards More Human-like Machine Learning of Word Meanings"](http://techtalks.tv/talks/towards-more-human-like-machine-learning-of-word-meanings/54913/) `video`  
   - ["How to Grow a Mind: Statistics, Structure, and Abstraction"](http://videolectures.net/aaai2012_tenenbaum_grow_mind/) `video`  
   - ["Development of Intelligence: Bayesian Inference"](http://youtube.com/watch?v=icEdI0AIOlU) `video`  
@@ -782,7 +783,7 @@
   ["The Future of Deep Learning"](http://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34?t=11m43s) `video`)  
 
   ["From Machine Learning to Machine Reasoning"](http://research.microsoft.com/pubs/192773/tr-2011-02-08.pdf) by Leon Bottou `paper`
-	([talk](http://youtube.com/watch?v=tzp_BikdgyM) `video`)
+	([talk](http://youtube.com/watch?v=tzp_BikdgyM) `video`, [talk](https://slideslive.com/38921894/retrospectives-a-venue-for-selfreflection-in-ml-research-1?t=524))
 
   ["Cognitive Architectures"](https://machinethoughts.wordpress.com/2016/06/20/cognitive-architectures/) by David McAllester
 

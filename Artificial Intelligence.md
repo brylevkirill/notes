@@ -538,12 +538,12 @@
 #### ["Building Machines That Learn and Think Like People"](http://arxiv.org/abs/1604.00289) Lake, Ullman, Tenenbaum, Gershman
 >	"Recent progress in artificial intelligence has renewed interest in building systems that learn and think like people. Many advances have come from using deep neural networks trained end-to-end in tasks such as object recognition, video games, and board games, achieving performance that equals or even beats humans in some respects. Despite their biological inspiration and performance achievements, these systems differ from human intelligence in crucial ways. We review progress in cognitive science suggesting that truly human-like learning and thinking machines will have to reach beyond current engineering trends in both what they learn, and how they learn it. Specifically, we argue that these machines should (a) build causal models of the world that support explanation and understanding, rather than merely solving pattern recognition problems; (b) ground learning in intuitive theories of physics and psychology, to support and enrich the knowledge that is learned; and (c) harness compositionality and learning-to-learn to rapidly acquire and generalize knowledge to new tasks and situations. We suggest concrete challenges and promising routes towards these goals that can combine the strengths of recent neural network advances with more structured cognitive models."
 
+  - `video` <https://youtube.com/watch?v=9PSQduoSNo0> (Lake)
   - `video` <https://youtube.com/watch?v=7ROelYvo8f0> (Tenenbaum)
   - `video` <https://youtube.com/watch?v=O0MF-r9PsvE> (Gershman)
-  - `video` <https://www.technologyreview.com/video/610657/ingredients-of-intelligence/> (Lake)
   - `notes` <http://pemami4911.github.io/paper-summaries/2016/05/13/learning-to-think.html>
   - `paper` <https://cims.nyu.edu/~brenden/LakeEtAl2017BBS.pdf> ("Behavioral and Brain Sciences")
-  - <https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---commonsense-reasoning>
+  - [**bayesian reasoning**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---bayesian-reasoning)
 
 
 #### ["Thinking Required"](http://arxiv.org/abs/1512.01926) Rocki
