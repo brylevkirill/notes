@@ -19,20 +19,14 @@
 
 ----
 
-  [overview](https://youtube.com/watch?v=gCaOa3W9kM0) by Alex Smola `video`  
-  [overview](https://youtube.com/watch?v=xMr7I-OypVY) by Alex Smola `video`  
+  [overview](https://youtube.com/watch?v=gCaOa3W9kM0) by Alex Smola `video` `2015`  
+  [overview](https://youtube.com/watch?v=xMr7I-OypVY) by Alex Smola `video` `2012`  
 
-  [tutorial](http://technocalifornia.blogspot.ru/2014/08/introduction-to-recommender-systems-4.html) by Xavier Amatriain `video`  
-  ["The Recommender Problem Revisited"](http://videolectures.net/kdd2014_amatriain_mobasher_recommender_problem) by Xavier Amatriain `video`  
-  ["Lessons Learned from Building Real-life Recommender Systems"](https://youtube.com/watch?v=VJOtr47V0eo) by Xavier Amatriain and Deepak Agarwal `video`  
+  [overview](https://youtube.com/watch?v=VJOtr47V0eo) by Xavier Amatriain and Deepak Agarwal `video` `RecSys 2016`  
+  [overview](http://videolectures.net/kdd2014_amatriain_mobasher_recommender_problem) by Xavier Amatriain `video` `KDD 2014`  
+  [overview](http://technocalifornia.blogspot.ru/2014/08/introduction-to-recommender-systems-4.html) by Xavier Amatriain `video` `MLSS 2014`  
 
-  ["Deep Learning for Recommender Systems"](https://slideshare.net/kerveros99/deep-learning-for-recommender-systems-recsys2017-tutorial) by Alexandros Karatzoglou and Balazs Hidasi `slides`  
-  ["Deep Learning for Recommender Systems"](https://youtube.com/watch?v=KZ7bcfYGuxw) by Alexandros Karatzoglou `video`  
-  ["Deep Learning for Personalized Search and Recommender Systems"](https://youtube.com/watch?v=0DYQzZp68ok) by Zhang, Le, Fawaz, Venkataraman `video`  
-
-  ["Recent Trends in Personalization: A Netflix Perspective"](https://slideslive.com/38917692/recent-trends-in-personalization-a-netflix-perspective) by Justin Basilico `video`
-
-  ["Billion-scale Recommender System"](https://youtube.com/watch?v=-lNF8QRtEL4) by Ivan Lobov `video`
+  ["Recent Trends in Personalization: A Netflix Perspective"](https://slideslive.com/38917692/recent-trends-in-personalization-a-netflix-perspective) by Justin Basilico `video` `ICML 2019`
 
   [ACM RecSys](https://youtube.com/channel/UC2nEn-yNA1BtdDNWziphPGA) conference `video`
 
@@ -41,13 +35,14 @@
   course by Sergey Nikolenko ([part 1](https://youtube.com/watch?v=mr8u54jsveA), [part 2](https://youtube.com/watch?v=cD47Ssp_Flk), [part 3](https://youtube.com/watch?v=OFyb8ukrRDo)) `video` `in russian`  
   [course](https://lektorium.tv/node/33563) by Evgeny Sokolov and Andrey Zimovnov `video` `in russian`  
 
+  [overview](https://youtube.com/watch?v=umyNVwePCtw) of recent research by Dmitry Bugaychenko `video` `in russian`  
+  [overview](https://youtube.com/watch?v=N0NUwz3xWX4) of recent research by Dmitry Ushanov `video` `in russian`  
+
   [overview](https://youtube.com/watch?v=Us4KJkJiYrM) by Michael Rozner `video` `in russian`  
   [overview](https://youtube.com/watch?v=kfhqzkcfMqI) by Konstantin Vorontsov `video` `in russian`  
   [overview](https://youtube.com/watch?v=Te_6TqEhyTI) by Victor Kantor `video` `in russian`  
   [overview](https://youtube.com/watch?v=5ir_fCgzfLM) by Vladimir Gulin `video` `in russian`  
   [overview](https://youtube.com/watch?v=MLljnzsz9Dk) by Alexey Dral `video` `in russian`  
-
-  [overview](https://youtube.com/watch?v=N0NUwz3xWX4) of deep learning for recommender systems by Dmitry Ushanov `video` `in russian`
 
   [overview](https://youtube.com/watch?v=iGAMPnv-0VY) of applications in Yandex by Igor Lifar and Dmitry Ushanov `video` `in russian`  
   [overview](https://youtube.com/watch?v=OJ0nJb3LfNo) of applications in Yandex by Andrey Zimovnov `video` `in russian`  
@@ -194,7 +189,7 @@
 
 
 #### ["Variational Autoencoders for Collaborative Filtering"](https://arxiv.org/abs/1802.05814) Liang, Krishnan, Hoffman, Jebara
-  `VAE-CF` `Netflix`
+  `Mult-VAE` ` VAE-CF` `Netflix`
 >	"We extend variational autoencoders to collaborative filtering for implicit feedback. This non-linear probabilistic model enables us to go beyond the limited modeling capacity of linear factor models which still largely dominate collaborative filtering research. We introduce a generative model with multinomial likelihood and use Bayesian inference for parameter estimation. Despite widespread use in language modeling and economics, the multinomial likelihood receives less attention in the recommender systems literature. We introduce a different regularization parameter for the learning objective, which proves to be crucial for achieving competitive performance. Remarkably, there is an efficient way to tune the parameter using annealing. The resulting model and learning algorithm has information-theoretic connections to maximum entropy discrimination and the information bottleneck principle. Empirically, we show that the proposed approach significantly outperforms several state-of-the-art baselines, including two recently-proposed neural network approaches, on several real-world datasets. We also provide extended experiments comparing the multinomial likelihood with other commonly used likelihood functions in the latent factor collaborative filtering literature and show favorable results. Finally, we identify the pros and cons of employing a principled Bayesian inference approach and characterize settings where it provides the most significant improvements."
 
 >	"Recommender systems is more of a "small data" than a "big data" problem."  
@@ -262,6 +257,9 @@
 #### ["Are We Really Making Much Progress? A Worrying Analysis of Recent Neural Recommendation Approaches"](https://arxiv.org/abs/1907.06902) Dacrema, Cremonesi, Jannach
 >	"Deep learning techniques have become the method of choice for researchers working on algorithmic aspects of recommender systems. With the strongly increased interest in machine learning in general, it has, as a result, become difficult to keep track of what represents the state-of-the-art at the moment, e.g., for top-n recommendation tasks. At the same time, several recent publications point out problems in today's research practice in applied machine learning, e.g., in terms of the reproducibility of the results or the choice of the baselines when proposing new models. In this work, we report the results of a systematic analysis of algorithmic proposals for top-n recommendation tasks. Specifically, we considered 18 algorithms that were presented at top-level research conferences in the last years. Only 7 of them could be reproduced with reasonable effort. For these methods, it however turned out that 6 of them can often be outperformed with comparably simple heuristic methods, e.g., based on nearest-neighbor or graph-based techniques. The remaining one clearly outperformed the baselines but did not consistently outperform a well-tuned non-neural linear ranking method. Overall, our work sheds light on a number of potential problems in today's machine learning scholarship and calls for improved scientific practices in this area."
 
+  - `video` <https://youtu.be/umyNVwePCtw?t=17m14s> (Bugaychenko) `in russian`
+  - `post` <https://habr.com/en/company/ods/blog/472672/#7-are-we-really-making-much-progress-a-worrying-analysis-of-recent-neural-recommendation-approaches> `in russian`
+
 
 #### ["Deep Learning Recommendation Model for Personalization and Recommendation Systems"](https://arxiv.org/abs/1906.00091) Naumov et al.
   `DLRM` `Facebook`
@@ -269,6 +267,15 @@
 
   - `post` <https://ai.facebook.com/blog/dlrm-an-advanced-open-source-deep-learning-recommendation-model>
   - `paper` ["The Architectural Implications of Facebook's DNN-based Personalized Recommendation"](https://arxiv.org/abs/1906.03109) by Gupta et al.
+
+
+#### ["Recommending What Video to Watch Next: A Multitask Ranking System"](https://daiwk.github.io/assets/youtube-multitask.pdf) Zhao et al.
+  `YouTube`
+>	"In this paper, we introduce a large scale multi-objective ranking system for recommending what video to watch next on an industrial video sharing platform. The system faces many real-world challenges, including the presence of multiple competing ranking objectives, as well as implicit selection biases in user feedback. To tackle these challenges, we explored a variety of soft-parameter sharing techniques such as Multi-gate Mixture-of-Experts so as to efficiently optimize for multiple ranking objectives. Additionally, we mitigated the selection biases by adopting a Wide & Deep framework. We demonstrated that our proposed techniques can lead to substantial improvements on recommendation quality on one of the world's largest video sharing platforms."
+
+  - `video` <https://youtu.be/umyNVwePCtw?t=19m35s> (Bugaychenko) `in russian`
+  - `notes` <https://medium.com/vantageai/how-youtube-is-recommending-your-next-video-7e5f1a6bd6d9>
+  - `paper` [**"Wide & Deep Learning"**](#wide--deep-learning-cheng-et-al) by Cheng et al. `summary`
 
 
 #### ["Wide & Deep Learning"](https://arxiv.org/abs/1606.07792) Cheng et al.
@@ -305,7 +312,7 @@
 
 
 #### ["Making Contextual Decisions with Low Technical Debt"](http://arxiv.org/abs/1606.03966) Agarwal et al.
-  `Microsoft Custom Decision Service`
+  `Microsoft Project Custom Decision`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#making-contextual-decisions-with-low-technical-debt-agarwal-et-al>
 
 

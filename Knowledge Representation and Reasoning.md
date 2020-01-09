@@ -286,6 +286,7 @@
   [**Epistemological Database with Universal Schema**](#probabilistic-database---epistemological-database)
 
   overview by Andrew McCallum:  
+  - ["AI for Representation and Reasoning in Knowledge Bases of Science"](https://youtube.com/watch?v=gIvqWSA1Opc) `video`  
   - ["Universal Schema for Representation and Reasoning from Natural Language"](http://www.fields.utoronto.ca/video-archive/2016/11/2267-16181) `video`  
   - ["Construction of Probabilistic Databases for Large-scale Knowledge Bases"](http://yahoolabs.tumblr.com/post/113969611311/big-thinker-andrew-mccallum-discusses-the) `video`  
   - ["Representation and Reasoning with Universal Schema Embeddings"](http://videolectures.net/iswc2015_mccallum_universal_schema/) `video`  
@@ -604,6 +605,10 @@
 
 ---
 ### knowledge representation - causal graph
+
+  [**causal inference**](https://github.com/brylevkirill/notes/blob/master/Causal%20Inference.md)
+
+----
 
   [**reasoning - causal reasoning**](#reasoning---causal-reasoning)
 
@@ -1258,6 +1263,13 @@ noise, inferring missing information, and determining which candidate facts shou
   - `code` <https://github.com/dirkweissenborn/genie-kb/blob/master/model/models.py>
 
 
+#### ["Knowledge Base Completion using Compositional Vector Space Models"](http://akbc.ws/2014/submissions/akbc2014_submission_10.pdf) Neelakantan, Roth, McCallum
+  `Universal Schema` `Google Knowledge Vault`
+>	"Traditional approaches to knowledge base completion have been based on symbolic representations. Low-dimensional vector embedding models proposed recently for this task are attractive since they generalize to possibly unlimited sets of relations. A significant drawback of previous embedding models for KB completion is that they merely support reasoning on individual relations (e.g., bornIn(X, Y) -> nationality(X, Y)). In this work, we develop models for KB completion that support chains of reasoning on paths of any length using compositional vector space models. We construct compositional vector representations for the paths in the KB graph from the semantic vector representations of the binary relations in that path and perform inference directly in the vector space. Unlike previous methods, our approach can generalize to paths that are unseen in training and, in a zero-shot setting, predict target relations without supervised training data for that relation."
+
+  - `video` <http://youtube.com/watch?v=mSrkzc0Nksg> (Neelakantan)
+
+
 #### ["Generalizing to Unseen Entities and Entity Pairs with Row-less Universal Schema"](https://arxiv.org/abs/1606.05804) Verga, Neelakantan, McCallum
   `Universal Schema`
 >	"Universal schema predicts the types of entities and relations in a knowledge base by jointly embedding the union of all available schema types---not only types from multiple structured databases (such as Freebase or Wikipedia infoboxes), but also types expressed as textual patterns from raw text. This prediction is typically modeled as a matrix completion problem, with one type per column, and either one or two entities per row (in the case of entity types or binary relation types, respectively). Factorizing this sparsely observed matrix yields a learned vector embedding for each row and each column. In this paper we explore the problem of making predictions for entities or entity-pairs unseen at training time (and hence without a pre-learned row embedding). We propose an approach having no per-row parameters at all; rather we produce a row vector on the fly using a learned aggregation function of the vectors of the observed columns for that row. We experiment with various aggregation functions, including neural network attention models. Our approach can be understood as a natural language database, in that questions about KB entities are answered by attending to textual or database evidence. In experiments predicting both relations and entity types, we demonstrate that despite having an order of magnitude fewer parameters than traditional universal schema, we can match the accuracy of the traditional model, and more importantly, we can now make predictions about unseen rows with nearly the same accuracy as rows available at training time."
@@ -1269,20 +1281,22 @@ noise, inferring missing information, and determining which candidate facts shou
   - `slides` <http://akbc.ws/2016/slides/verga-akbc16.pdf>
 
 
-#### ["Knowledge Base Completion using Compositional Vector Space Models"](http://akbc.ws/2014/submissions/akbc2014_submission_10.pdf) Neelakantan, Roth, McCallum
-  `Universal Schema` `Google Knowledge Vault`
->	"Traditional approaches to knowledge base completion have been based on symbolic representations. Low-dimensional vector embedding models proposed recently for this task are attractive since they generalize to possibly unlimited sets of relations. A significant drawback of previous embedding models for KB completion is that they merely support reasoning on individual relations (e.g., bornIn(X, Y) -> nationality(X, Y)). In this work, we develop models for KB completion that support chains of reasoning on paths of any length using compositional vector space models. We construct compositional vector representations for the paths in the KB graph from the semantic vector representations of the binary relations in that path and perform inference directly in the vector space. Unlike previous methods, our approach can generalize to paths that are unseen in training and, in a zero-shot setting, predict target relations without supervised training data for that relation."
-
-  - `video` <http://youtube.com/watch?v=mSrkzc0Nksg> (Neelakantan)
-
-
 #### ["Chains of Reasoning over Entities, Relations, and Text using Recurrent Neural Networks"](http://arxiv.org/abs/1607.01426) Das, Neelakantan, Belanger, McCallum
   `Universal Schema`
 >	Our goal is to combine the rich multistep inference of symbolic logical reasoning with the generalization capabilities of neural networks. We are particularly interested in complex reasoning about entities and relations in text and large-scale knowledge bases (KBs). Neelakantan et al. (2015) use RNNs to compose the distributed semantics of multi-hop paths in KBs; however for multiple reasons, the approach lacks accuracy and practicality. This paper proposes three significant modeling advances: (1) we learn to jointly reason about relations, entities, and entity-types; (2) we use neural attention modeling to incorporate multiple paths; (3) we learn to share strength in a single RNN that represents logical composition across all relations. On a largescale Freebase+ClueWeb prediction task, we achieve 25% error reduction, and a 53% error reduction on sparse relations due to shared strength. On chains of reasoning in WordNet we reduce error in mean quantile by 84% versus previous state-of-the-art."
 
   - `video` <http://videolectures.net/deeplearning2016_das_neural_networks/> (Das)
   - `video` <http://www.fields.utoronto.ca/video-archive/2016/11/2267-16181> (33:56) (McCallum)
+  - `video` <https://youtu.be/lc68_d_DnYs?t=7m28s> (Neelakantan)
   - `code` <https://github.com/rajarshd/ChainsofReasoning>
+
+
+#### ["Go for a Walk and Arrive at the Answer: Reasoning Over Paths in Knowledge Bases using Reinforcement Learning"](https://arxiv.org/abs/1711.05851) Das, Dhuliawala, Zaheer, Vilnis, Durugkar, Krishnamurthy, Smola, McCallum
+  `MINERVA` `Universal Schema`
+>	"Knowledge bases, both automatically and manually constructed, are often incomplete --- many valid facts can be inferred from the KB by synthesizing existing information. A popular approach to KB completion is to infer new relations by combinatory reasoning over the information found along other paths connecting a pair of entities. Given the enormous size of KBs and the exponential number of paths, previous path-based models have considered only the problem of predicting a missing relation given two entities or evaluating the truth of a proposed triple. Additionally, these methods have traditionally used random paths between fixed entity pairs or more recently learned to pick paths between them. We propose a new algorithm MINERVA, which addresses the much more difficult and practical task of answering questions where the relation is known, but only one entity. Since random walks are impractical in a setting with combinatorially many destinations from a start node, we present a neural reinforcement learning approach which learns how to navigate the graph conditioned on the input query to find predictive paths. Empirically, this approach obtains state-of-the-art results on several datasets, significantly outperforming prior methods."
+
+  - `video` <https://youtu.be/gIvqWSA1Opc?t=17m22s> (McCallum)
+  - `code` <https://github.com/shehzaadzd/MINERVA>
 
 
 #### ["Tensor Factorization for Multi-Relational Learning"](http://www.ecmlpkdd2013.org/wp-content/uploads/2013/07/673.pdf) Nickel, Tresp
@@ -1459,6 +1473,8 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 
 >	"In this work, we showed universal schema is a promising knowledge source for QA than using KB or text alone. Our results conclude though KB is preferred over text when the KB contains the fact of interest, a large portion of queries still attend to text indicating the amalgam of both text and KB is superior than KB alone."
 
+  - `video` <https://youtu.be/gIvqWSA1Opc?t=13m51s> (McCallum)
+
 
 #### ["Traversing Knowledge Graphs in Vector Space"](http://arxiv.org/abs/1506.01094) Guu, Miller, Liang
   `entity embedding`
@@ -1597,8 +1613,10 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 >	"We studied the problem of directly reading documents in order to answer questions, concentrating our analysis on the gap between such direct methods and using human-annotated or automatically constructed KBs. We presented a new model, Key-Value Memory Networks, which helps bridge this gap, outperforming several other methods across two datasets, MOVIEQA and WIKIQA. However, some gap in performance still remains. MOVIEQA serves as an analysis tool to shed some light on the causes. Future work should try to close this gap further. Key-Value Memory Networks are a versatile tool for reading documents or KBs and answering questions about them - allowing to encode prior knowledge about the task at hand in the key and value memories. These models could be applied to storing and reading memories for other tasks as well, and future work should try them in other domains, such as in a full dialog setting."
 
   - `video` <http://techtalks.tv/talks/key-value-memory-networks-for-directly-reading-documents/63333/> (Miller)
+  - `video` <http://videolectures.net/deeplearning2016_chopra_attention_memory/#t=4038>
+  - `video` <https://youtu.be/x1kf4Zojtb0?t=25m46s> (de Freitas)
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.03126>
   - `notes` <https://gist.github.com/shagunsodhani/a5e0baa075b4a917c0a69edc575772a8>
-  - `code` <https://github.com/siyuanzhao/key-value-memory-networks>
   - `paper` ["End-To-End Memory Networks"](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#end-to-end-memory-networks-sukhbaatar-szlam-weston-fergus) by Sukhbaatar et al. `summary`
 
 

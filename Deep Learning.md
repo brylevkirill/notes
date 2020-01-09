@@ -69,10 +69,11 @@
 #### courses
 
   [course](https://course.fast.ai) by Jeremy Howard `video`  
-  [course](http://info.usherbrooke.ca/hlarochelle/neural_networks/content.html) by Hugo Larochelle ([videos](http://youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH))  
-  [course](https://coursera.org/course/neuralnets) by Geoffrey Hinton ([videos](http://youtube.com/user/aicourses/playlists?shelf_id=2&view=50))  
-  [course](http://cs231n.stanford.edu) by Andrej Karpathy ([videos](https://youtube.com/channel/UC2__PIf36huAgKFumlOIs6A))  
-  [course](http://deeplearning.cs.cmu.edu) from CMU ([videos](https://youtube.com/playlist?list=PLp-0K3kfddPwz13VqV1PaMXF6V6dYdEsj))  
+  [course](https://youtube.com/playlist?list=PLLssT5z_DsK_gyrQ_biidwvPYCRNGI3iv) by Geoffrey Hinton `video`  
+  [course](https://youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH) by Hugo Larochelle `video`  
+  [course](https://youtube.com/playlist?list=PL16j5WbGpaM0_Tj8CRmurZ8Kk1gEBc7fg) by Andrej Karpathy `video`  
+  [course](https://youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs) from DeepMind `video`  
+  [course](https://youtube.com/channel/UC8hYZGEkI2dDO8scT8C5UQA/playlists) from CMU `video`  
 
   [course](https://sphere.mail.ru/curriculum/program/discipline/120/) by Daniil Polykovsky and Kuzma Hrabrov `in russian` ([videos](https://youtube.com/playlist?list=PLrCZzMib1e9oOGNLh6_d65HyfdqlJwTQP))  
   [course](https://github.com/aosokin/DL_CSHSE_spring2018) by Anton Osokin `in russian` ([videos](https://youtube.com/playlist?list=PLzY5g-rVmFayEkCcgO3_-it6HZwPZL3ld))  
@@ -846,9 +847,8 @@
 ---
 ### architectures - attention
 
-  [overview](https://facebook.com/icml.imls/videos/382464939283864) by Alex Smola and Aston Zhang `video`  
-  [overview](https://youtu.be/9U0drwafE78?t=36m22s) by Oriol Vinyals `video`  
   [overview](https://youtube.com/watch?v=Q57rzaHHO0k) by Alex Graves `video`  
+  [overview](https://facebook.com/icml.imls/videos/382464939283864?t=690) by Alex Smola and Aston Zhang `video`  
   [overview](https://youtube.com/watch?v=_XRBlhzb31U) by Mikhail Figurnov `video` `in russian`  
 
   [overview](http://wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/) by Denny Britz  
@@ -902,9 +902,8 @@
 
   [**papers and resources**](#interesting-papers---architectures)
 
-  ["Deep Learning and Reasoning, Memory-Augmented Networks"](http://videolectures.net/deeplearning2016_chopra_attention_memory/) by Rob Fergus `video`  
-  ["Reasoning, Attention and Memory"](http://videolectures.net/deeplearning2016_chopra_attention_memory/) by Sumit Chopra `video`  
-  ["Beyond Seq2Seq with Augmented RNNs"](http://videolectures.net/deeplearning2016_grefenstette_augmented_rnn/) by Edward Grefenstette `video`  
+  [overview](https://youtube.com/watch?v=Q57rzaHHO0k) by Alex Graves `video`  
+  [overview](http://videolectures.net/deeplearning2016_grefenstette_augmented_rnn/) by Edward Grefenstette `video`  
 
   ["Attention and Augmented Recurrent Neural Networks"](http://distill.pub/2016/augmented-rnns/) by Chris Olah and Shan Carter  
 
@@ -1842,6 +1841,7 @@ Yoshua Bengio:
 >	- Discriminative Unsupervised Feature Learning with Exemplar Convolutional Neural Networks"
 
   - `video` <https://facebook.com/icml.imls/videos/378993762742156?t=2566> (Zhai)
+  - `video` <https://youtube.com/watch?v=lbKg3OSTsgA>
   - `notes` <https://blog.lunit.io/2019/03/14/revisiting-self-supervised-visual-representation-learning>
   - `code` <https://github.com/google/revisiting-self-supervised>
 
@@ -2236,6 +2236,7 @@ Yoshua Bengio:
   - <http://distill.pub/2016/handwriting/> (demo)
   - <http://www.cs.toronto.edu/~graves/handwriting.html> (demo)
   - `video` <http://youtube.com/watch?v=-yX1SYeDHbg> (Graves)
+  - `video` <https://youtu.be/Q57rzaHHO0k?t=32m31s> (Graves)
   - `notes` <https://github.com/tensorflow/magenta/blob/master/magenta/reviews/summary_generation_sequences.md>
   - `post` <http://blog.otoro.net/2015/12/12/handwriting-generation-demo-in-tensorflow/>
   - `code` <https://github.com/hardmaru/write-rnn-tensorflow>
@@ -2292,6 +2293,7 @@ Yoshua Bengio:
   - `video` <http://youtube.com/watch?v=Zt-7MI9eKEo> (demo)
   - `video` <http://youtube.com/watch?v=P78QYjWh5sM&t=22m14s> (Gregor)
   - `video` <http://videolectures.net/deeplearning2015_courville_autoencoder_extension/#t=4380> (Courville)
+  - `video` <https://youtu.be/Q57rzaHHO0k?t=1h33m50s> (Graves)
   - `post` <http://kvfrans.com/what-is-draw-deep-recurrent-attentive-writer/>
   - `post` <http://blog.evjang.com/2016/06/understanding-and-implementing.html>
   - `notes` <http://github.com/tensorflow/magenta/blob/master/magenta/reviews/draw.md>
@@ -2463,6 +2465,7 @@ Yoshua Bengio:
   - `video` <http://techtalks.tv/talks/deep-residual-networks-deep-learning-gets-way-deeper/62358/> (He)
   - `video` <http://youtube.com/watch?v=1PGLj-uKT1w> (He)
   - `video` <https://youtube.com/watch?v=jio04YvgraU> (Hoveidar)
+  - `video` <https://youtube.com/watch?v=sAzL4XMke80>
   - `post` <http://people.idsia.ch/~juergen/microsoft-wins-imagenet-through-feedforward-LSTM-without-gates.html> (Schmidhuber)
   - `post` <https://blog.init.ai/residual-neural-networks-are-an-exciting-area-of-deep-learning-research-acf14f4912e9>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/HeZRS15>
@@ -2606,6 +2609,8 @@ Yoshua Bengio:
 
 >	"In this work we showed that a neural network with an explicit memory and a recurrent attention mechanism for reading the memory can be sucessfully trained via backpropagation on diverse tasks from question answering to language modeling. Compared to the Memory Network implementation there is no supervision of supporting facts and so our model can be used in more realistic QA settings. Our model approaches the same performance of that model, and is significantly better than other baselines with the same level of supervision. On language modeling tasks, it slightly outperforms tuned RNNs and LSTMs of comparable complexity. On both tasks we can see that increasing the number of memory hops improves performance. However, there is still much to do. Our model is still unable to exactly match the performance of the memory networks trained with strong supervision, and both fail on several of the QA tasks. Furthermore, smooth lookups may not scale well to the case where a larger memory is required. For these settings, we plan to explore multiscale notions of attention or hashing."
 
+  - `video` <http://videolectures.net/deeplearning2016_chopra_attention_memory> (Chopra)
+  - `video` <http://www.fields.utoronto.ca/video-archive/2017/01/2267-16463> (00:49) (Fergus)
   - `video` <http://research.microsoft.com/apps/video/default.aspx?id=259920> (Sukhbaatar)
   - `video` <http://youtube.com/watch?v=8keqd1ewsno> (Bordes)
   - `video` <http://youtube.com/watch?v=Xumy3Yjq4zk> (Weston)
@@ -2670,6 +2675,7 @@ Yoshua Bengio:
   Geoffrey Hinton:
 >	"Its very impressive that they can get an RNN to invent a sorting algorithm. Its the first time I've believed that deep learning would be able to do real reasoning in the not too distant future. There will be a lot of future work in making the NTM (or its descendants) learn much more complicated algorithms and it will probably have many applications."
 
+  - `video` <https://youtu.be/Q57rzaHHO0k?t=51m48s> (Graves)
   - `video` <http://research.microsoft.com/apps/video/default.aspx?id=260037> (Graves)
   - `video` <http://youtube.com/watch?v=otRoAQtc5Dk> (Polykovskiy)
   - `post` <https://distill.pub/2016/augmented-rnns/>
@@ -2700,6 +2706,7 @@ Yoshua Bengio:
   - `post` <https://deepmind.com/blog/differentiable-neural-computers/>
   - `video` <https://youtube.com/watch?v=steioHoiEms> (Graves)
   - `video` <https://facebook.com/iclr.cc/videos/1713144705381255?t=549> (Graves)
+  - `video` <https://youtu.be/Q57rzaHHO0k?t=1h18m51s> (Graves)
   - `video` <https://youtu.be/9z3_tJAu7MQ?t=3m16s> (Wayne)
   - `video` <https://youtube.com/watch?v=PQrlOjj8gAc> (Wayne)
   - `video` <https://youtu.be/otRoAQtc5Dk?t=59m56s> (Polykovskiy)
@@ -3060,6 +3067,7 @@ Yoshua Bengio:
 
   - `video` <http://youtube.com/watch?v=xzM7eI7caRk> (Mnih)
   - `video` <http://youtu.be/kUiR0RLmGCo?t=15m30s> (de Freitas)
+  - `video` <https://youtu.be/Q57rzaHHO0k?t=22m45s> (Graves)
 
 
 #### ["Deep Structured Output Learning For Unconstrained Text Recognition"](http://arxiv.org/abs/1412.5903) Jaderberg, Simonyan, Vedaldi, Zisserman
@@ -3090,6 +3098,7 @@ Yoshua Bengio:
   - `video` <http://videolectures.net/deeplearning2015_salakhutdinov_deep_learning_2/#t=739> (Salakhutdinov)
   - `video` <http://videolectures.net/icml2015_xu_visual_attention/> (Xu)
   - `video` <https://www.youtube.com/watch?v=ENVGHs3yw7k> + <https://youtube.com/watch?v=u_Mdp_3RVRA> (Gharbieh)
+  - `video` <https://youtube.com/watch?v=bBMxSg3c_6M>
   - `video` <https://youtu.be/_XRBlhzb31U?t=3m27s> (Figurnov) `in russian`
   - `code` <https://github.com/kelvinxu/arctic-captions>
 

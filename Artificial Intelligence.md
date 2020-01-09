@@ -31,11 +31,12 @@
 
 ----
 
-  ["The Limits of Modern AI: A Story"](https://thebestschools.org/magazine/limits-of-modern-ai) by Erik Larson  
-  ["Steps Toward Super Intelligence"](https://rodneybrooks.com/forai-steps-toward-super-intelligence-i-how-we-got-here) by Rodney Brooks  
+  ["Progress and Hype in AI Research"](https://github.com/brylevkirill/posts/blob/master/AI.md) by Kirill Brylev  
+  ["On the Measure of Intelligence"](https://arxiv.org/abs/1911.01547) by Francois Chollet  
   ["Intelligence Confuses the Intelligent"](https://blog.piekniewski.info/2017/04/13/ai-confuses-intelligent) by Filip Piekniewski  
   ["Intelligence is not Artificial"](https://www.toddhylton.net/2016/04/intelligence-is-not-artificial.html) by Todd Hylton  
-  ["On the Measure of Intelligence"](https://arxiv.org/abs/1911.01547) by Francois Chollet  
+  ["The Limits of Modern AI: A Story"](https://thebestschools.org/magazine/limits-of-modern-ai) by Erik Larson  
+  ["Steps Toward Super Intelligence"](https://rodneybrooks.com/forai-steps-toward-super-intelligence-i-how-we-got-here) by Rodney Brooks  
   ["The Limitations of Deep Learning"](https://blog.keras.io/the-limitations-of-deep-learning.html) by Francois Chollet  
   ["A Critique of Pure Learning and What ANNs Can Learn from Animal Brains"](https://nature.com/articles/s41467-019-11786-6) by Anthony Zador  
 
@@ -239,7 +240,6 @@
   [**AIXI**](#universal-artificial-intelligence---aixi)  
   [**Thompson Sampling**](#universal-artificial-intelligence---thompson-sampling)  
   [**Knowledge-Seeking Agent**](#universal-artificial-intelligence---knowledge-seeking-agent)  
-  [**Artificial Curiosity and Creativity**](#universal-artificial-intelligence---artificial-curiosity-and-creativity)  
 
 
 
@@ -371,7 +371,7 @@
 
 
 ---
-### Artificial Curiosity and Creativity
+### artificial curiosity and creativity
 
   ["Formal Theory of Creativity and Fun and Intrinsic Motivation"](http://people.idsia.ch/~juergen/creativity.html) by Juergen Schmidhuber  
   ["Active Exploration, Artificial Curiosity & What's Interesting"](http://people.idsia.ch/~juergen/interest.html) by Juergen Schmidhuber  

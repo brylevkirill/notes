@@ -161,9 +161,9 @@
 ---
 ### theory
 
-  [machine learning has become alchemy](https://youtube.com/watch?v=Qi1Yry33TQE&t=11m2s) by Ali Rahimi `video` ([post](http://argmin.net/2017/12/05/kitchen-sinks/))  
-  [statistics in machine learning](https://youtube.com/watch?v=uyZOcUDhIbY&t=17m27s) by Michael I. Jordan `video`  
-  [theory in machine learning](https://youtube.com/watch?v=uyZOcUDhIbY&t=23m1s) by Michael I. Jordan `video`  
+  [*machine learning has become alchemy*](https://youtube.com/watch?v=Qi1Yry33TQE&t=11m2s) by Ali Rahimi `video` ([post](http://argmin.net/2017/12/05/kitchen-sinks/))  
+  [*statistics in machine learning*](https://youtube.com/watch?v=uyZOcUDhIbY&t=17m27s) by Michael I. Jordan `video`  
+  [*theory in machine learning*](https://youtube.com/watch?v=uyZOcUDhIbY&t=23m1s) by Michael I. Jordan `video`  
 
   ["Learning Theory: Purely Theoretical?"](https://hips.seas.harvard.edu/blog/2013/02/15/learning-theory-purely-theoretical/) by Jonathan Huggins
 
@@ -204,9 +204,6 @@
 
   *Fundamental theorem of statistical learning theory*:  
   In binary classification, to match the loss of hypothesis in class H up to accuracy ε, one needs O(VC(H)/ε^2) observations.
-
-  *Theorem (computational complexity of learning linear classifiers)*:  
-  Unless NP=RP, linear classifiers (hyperplanes) cannot be learned in polynomial time.
 
 ----
 
@@ -607,6 +604,7 @@
   - `post` <https://deepmind.com/blog/population-based-training-neural-networks/>
   - `post` <https://deepmind.com/blog/article/how-evolutionary-selection-can-train-more-capable-self-driving-cars/>
   - `video` <https://vimeo.com/250399261> (Jaderberg)
+  - `video` <https://youtube.com/watch?v=pEANQ8uau88>
   - `video` <https://youtube.com/watch?v=uuOoqAiB2g0> (Sazanovich) `in russian`
   - `paper` <https://arxiv.org/abs/1902.01894> by Li et al.
 

@@ -130,13 +130,13 @@
 	[OpenAI Five architecture](https://s3-us-west-2.amazonaws.com/openai-assets/dota_benchmark_results/network_diagram_08_06_2018.pdf)  
 	[OpenAI Five reward function](https://gist.github.com/dfarhi/66ec9d760ae0c49a5c492c9fae93984a)  
 
-	[**"Dota 2 with Large Scale Deep Reinforcement Learning"**](https://cdn.openai.com/dota-2.pdf) by Berner et al. `paper` *(OpenAI Five)*
+	["Dota 2 with Large Scale Deep Reinforcement Learning"](https://cdn.openai.com/dota-2.pdf) by Berner et al. `paper` *(OpenAI Five)*
 
 	[OpenAI File overview](https://slideslive.com/38922025/deep-reinforcement-learning-1?t=2175) by Jie Tang and Filip Wolski `video`  
 	[OpenAI Five overview](https://youtu.be/w3ues-NayAs?t=2m26s) by Ilya Sutskever `video`  
 	[OpenAI Five overview](https://youtu.be/N8_gVrIPLQM?t=1h3m41s) by David Silver `video`  
 
-	[OpenAI Five discussion](https://twitch.tv/videos/293517383?t=4h41m56s) `video` with OpenAI team  
+	[OpenAI Five discussion](https://twitch.tv/videos/293517383?t=4h41m56s) with OpenAI team `video`  
 	[OpenAI Five discussion](https://reddit.com/r/DotA2/comments/bf49yk/hello_were_the_dev_team_behind_openai_five_we) with OpenAI team  
 
 	[OpenAI Five vs top players](https://youtube.com/playlist?list=PLOXw6I10VTv-ZFZV4fMqKMfNQmwmkcr0w) games `video`  
@@ -319,6 +319,7 @@
 ---
 ### applications - robotics
 
+  [overview](http://www.fields.utoronto.ca/video-archive/2019/10/2509-21418) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=jAPJeJK18mw) by Sergey Levine `video`  
   [overview](https://livestream.com/newyorkacademyofsciences/ml2018-2/videos/171320389) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=lYU5nq0dAQQ) by Sergey Levine `video`  
@@ -342,7 +343,7 @@
 	[OpenAI Rubik's Cube](https://openai.com/blog/solving-rubiks-cube)  
 	[OpenAI Dactyl](https://openai.com/blog/learning-dexterity)  
 
-	["Solving Rubik's Cube with a Robot Hand"](https://arxiv.org/abs/1910.07113) by OpenAI et al. `paper`  
+	["Solving Rubik's Cube with a Robot Hand"](https://arxiv.org/abs/1910.07113) by OpenAI et al. `paper` ([overview](https://youtube.com/watch?v=2AqGocPOOG4) `video`)  
 	[**"Learning Dexterous In-Hand Manipulation"**](#learning-dexterous-in-hand-manipulation-openai-et-al) by OpenAI et al. `paper` `summary` *(OpenAI Dactyl)*  
 
 	[OpenAI Rubik's Cube overview](https://slideslive.com/38922026/deep-reinforcement-learning-2?t=5081) by Jerry Tworek `video`  
@@ -1909,6 +1910,7 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=6fKG4wJ7uBk> (Baudis)
   - `video` <https://youtube.com/watch?v=XuzIqE2IshY> (Kington)
   - `video` <https://youtube.com/watch?v=_x9bXso3wo4> (Hinzman)
+  - `video` <https://youtube.com/watch?v=B1MUfP1qqLs>
   - `video` <https://youtu.be/V0HNXVSrvhg?t=1h20m45s> + <https://youtu.be/Lz5_xFGt2hA?t=3m11s> (Grinchuk) `in russian`
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
   - `video` <https://youtu.be/zHjE07NBA_o?t=1h10m24s> (Kozlov) `in russian`
@@ -1936,6 +1938,7 @@ interesting recent papers:
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games> (demo)
   - `video` <http://youtube.com/watch?v=4D5yGiYe8p4> (Silver)
   - `video` <http://youtube.com/watch?v=LX8Knl0g0LE> (Huang)
+  - `video` <https://youtube.com/watch?v=jgAj8CqcBBs>
   - `video` <http://youtube.com/watch?v=UMm0XaCFTJQ> (Sutton, Szepesvari, Bowling, Hayward, Muller)
   - `video` <https://youtu.be/WM4HC720Cms?t=1h18m21s> (Nikolenko) `in russian`
   - `video` <https://youtube.com/watch?v=zHjE07NBA_o> (Kozlov) `in russian`
@@ -2188,6 +2191,8 @@ interesting recent papers:
 
   - `video` <https://youtube.com/watch?v=HEqQ2_1XRTs> (Chen)
   - `video` <https://youtube.com/watch?v=Ys3YY7sSmIA> (Chang)
+  - `video` <https://youtu.be/umyNVwePCtw?t=6m42s> (Bugaychenko) `in russian`
+  - `post` <https://towardsdatascience.com/top-k-off-policy-correction-for-a-reinforce-recommender-system-e34381dceef8>
   - `press` <https://nytimes.com/interactive/2019/06/08/technology/youtube-radical.html>
 
 

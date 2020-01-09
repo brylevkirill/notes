@@ -431,6 +431,7 @@
 >	"Neural machine translation is a recently proposed approach to machine translation. Unlike the traditional statistical machine translation, the neural machine translation aims at building a single neural network that can be jointly tuned to maximize the translation performance. The models proposed recently for neural machine translation often belong to a family of encoder–decoders and encodes a source sentence into a fixed-length vector from which a decoder generates a translation. In this paper, we conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder–decoder architecture, and propose to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly. With this new approach, we achieve a translation performance comparable to the existing state-of-the-art phrase-based system on the task of English-to-French translation. Furthermore, qualitative analysis reveals that the (soft-)alignments found by the model agree well with our intuition."
 
   - `video` <http://slideshot.epfl.ch/play/khnnunGF0elc> (Cho)
+  - `video` <https://youtu.be/Q57rzaHHO0k?t=41m57s> (Graves)
   - `video` <https://youtube.com/watch?v=QuvRWevJMZ4> (Chevalier)
   - `video` <https://youtube.com/watch?v=wyQBfi6uOHk> (Chen)
   - `video` <https://youtu.be/_XRBlhzb31U?t=42m26s> (Figurnov) `in russian`
@@ -518,6 +519,7 @@
   - `video` <https://youtube.com/watch?v=fwcJpSYNsNs> (Mikolov)
   - `video` <https://youtube.com/watch?v=c3yRH0XZN2g> (Boyd-Graber)
   - `video` <https://youtube.com/watch?v=Ab5cgv9w7ac> (Scarfe)
+  - `video` <https://youtube.com/watch?v=cQFOxMkzwf4>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=mikolov2013efficient>
   - `post` <http://jalammar.github.io/illustrated-word2vec>
   - `post` <http://alexminnaar.com/word2vec-tutorial-part-i-the-skip-gram-model.html>

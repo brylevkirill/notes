@@ -52,7 +52,7 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=OBCciGnOJVs> (Belkin)
   - `video` <https://youtube.com/watch?v=LzL5naUS31s> (Belkin)
   - `video` <https://youtube.com/watch?v=ZAW9EyNo2fw> (Kilcher)
-  - `paper` ["Deep Double Descent: Where Bigger Models and More Data Hurt"](https://arxiv.org/abs/1912.02292) by Nakkiran et al. ([post](https://openai.com/blog/deep-double-descent))
+  - `paper` ["Deep Double Descent: Where Bigger Models and More Data Hurt"](https://arxiv.org/abs/1912.02292) by Nakkiran et al. ([post](https://openai.com/blog/deep-double-descent), [overview](https://youtube.com/watch?v=R29awq6jvUw) `video`)
   - `paper` ["The Generalization Error of Random Features Regression: Precise Asymptotics and Double Descent Curve"](https://arxiv.org/abs/1908.05355) by Mei et al.
 
 #### ["Approximating CNNs with Bag-of-local-Features Models Works Surprisingly Well on ImageNet"](https://arxiv.org/abs/1904.00760) Brendel, Bethge
@@ -84,19 +84,6 @@ also been supported by the observation that deep networks strongly rely on spect
 #### ["Measuring the Tendency of CNNs to Learn Surface Statistical Regularities"](https://arxiv.org/abs/1711.11561) Jo, Bengio
   `generalization`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#measuring-the-tendency-of-cnns-to-learn-surface-statistical-regularities-jo-bengio>
-
-#### ["The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks"](https://arxiv.org/abs/1803.03635) Frankle, Carbin
-  `generalization` `ICLR 2019`
->	"Neural network pruning techniques can reduce the parameter counts of trained networks by over 90%, decreasing storage requirements and improving computational performance of inference without compromising accuracy. However, contemporary experience is that the sparse architectures produced by pruning are difficult to train from the start, which would similarly improve training performance.
-We find that a standard pruning technique naturally uncovers subnetworks whose initializations made them capable of training effectively. Based on these results, we articulate the "lottery ticket hypothesis:" dense, randomly-initialized, feed-forward networks contain subnetworks ("winning tickets") that - when trained in isolation - reach test accuracy comparable to the original network in a similar number of iterations. The winning tickets we find have won the initialization lottery: their connections have initial weights that make training particularly effective."  
->	"We present an algorithm to identify winning tickets and a series of experiments that support the lottery ticket hypothesis and the importance of these fortuitous initializations. We consistently find winning tickets that are less than 10-20% of the size of several fully-connected and convolutional feed-forward architectures for MNIST and CIFAR10. Above this size, the winning tickets that we find learn faster than the original network and reach higher test accuracy."  
-  - `video` <https://youtube.com/watch?v=s7DqRZVvRiQ> (Frankle)
-  - `video` <https://youtube.com/watch?v=5PF-I1NKTmk> (LaLonde)
-
-#### ["Deconstructing Lottery Tickets: Zeros, Signs, and the Supermask"](https://arxiv.org/abs/1905.01067) Zhou, Lan, Liu, Yosinski
-  `generalization`
->	"The recent “Lottery Ticket Hypothesis” paper by Frankle & Carbin showed that a simple approach to creating sparse networks (keep the large weights) results in models that are trainable from scratch, but only when starting from the same initial weights.  The performance of these networks often exceeds the performance of the non-sparse base model, but for reasons that were not well understood. In this paper we study the three critical components of the Lottery Ticket algorithm, showing that each may be varied significantly without impacting the overall results. Ablating these factors leads to new insights for why LT networks perform as well as they do. We show why setting weights to zero is important, how signs are all you need to make the re-initialized network train, and why masking behaves like training. Finally, we discover the existence of Supermasks, or masks that can be applied to an untrained, randomly initialized network to produce a model with performance far better than chance (86% on MNIST, 41% on CIFAR-10)."
-  - `post` <https://www.shortscience.org/paper?bibtexKey=zhou2019deconstructing> (notes)
 
 #### ["Deep Image Prior"](https://arxiv.org/abs/1711.10925) Ulyanov, Vedaldi, Lempitsky
   `generalization`
@@ -154,6 +141,31 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `paper` ["Flat Minima"](http://www.bioinf.jku.at/publications/older/3304.pdf) by Hochreiter, Schmidhuber ([overview](https://youtu.be/NZEAqdepq0w?t=28m40s) by Sepp Hochreiter `video`)
 
 ----
+#### ["What's Hidden in a Randomly Weighted Neural Network?"](https://arxiv.org/abs/1911.13299) Ramanujan et al.
+  `optimization`
+>	"Training a neural network is synonymous with learning the values of the weights. In contrast, we demonstrate that randomly weighted neural networks contain subnetworks which achieve impressive performance without ever training the weight values. Hidden in a randomly weighted Wide ResNet-50 we show that there is a subnetwork (with random weights) that is smaller than, but matches the performance of a ResNet-34 trained on ImageNet. Not only do these "untrained subnetworks" exist, but we provide an algorithm to effectively find them. We empirically show that as randomly weighted neural networks with fixed weights grow wider and deeper, an "untrained subnetwork" approaches a network with learned weights in accuracy."  
+  - `video` <https://youtube.com/watch?v=C6Tj8anJO-Q>
+
+#### ["The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks"](https://arxiv.org/abs/1803.03635) Frankle, Carbin
+  `optimization` `ICLR 2019`
+>	"Neural network pruning techniques can reduce the parameter counts of trained networks by over 90%, decreasing storage requirements and improving computational performance of inference without compromising accuracy. However, contemporary experience is that the sparse architectures produced by pruning are difficult to train from the start, which would similarly improve training performance.
+We find that a standard pruning technique naturally uncovers subnetworks whose initializations made them capable of training effectively. Based on these results, we articulate the "lottery ticket hypothesis:" dense, randomly-initialized, feed-forward networks contain subnetworks ("winning tickets") that - when trained in isolation - reach test accuracy comparable to the original network in a similar number of iterations. The winning tickets we find have won the initialization lottery: their connections have initial weights that make training particularly effective."  
+>	"We present an algorithm to identify winning tickets and a series of experiments that support the lottery ticket hypothesis and the importance of these fortuitous initializations. We consistently find winning tickets that are less than 10-20% of the size of several fully-connected and convolutional feed-forward architectures for MNIST and CIFAR10. Above this size, the winning tickets that we find learn faster than the original network and reach higher test accuracy."  
+  - `video` <https://youtube.com/watch?v=s7DqRZVvRiQ> (Frankle)
+  - `video` <https://youtube.com/watch?v=5PF-I1NKTmk> (LaLonde)
+  - `video` <https://youtube.com/watch?v=LXm_6eq0Cs4>
+  - `paper` ["Deconstructing Lottery Tickets: Zeros, Signs, and the Supermask"](https://arxiv.org/abs/1905.01067) by Zhou et al. ([post](https://eng.uber.com/deconstructing-lottery-tickets), [notes](https://www.shortscience.org/paper?bibtexKey=zhou2019deconstructing))
+  - `paper` ["One Ticket to Win Them All: Generalizing Lottery Ticket Initializations Across Datasets and Optimizers"](https://arxiv.org/abs/1906.02773) by Morcos et al. ([post](https://ai.facebook.com/blog/understanding-the-generalization-of-lottery-tickets-in-neural-networks))
+
+#### ["Weight Agnostic Neural Networks"](https://arxiv.org/abs/1906.04358) Gaier, Ha
+  `optimization` `NeurIPS 2019`
+>	"Not all neural network architectures are created equal, some perform much better than others for certain tasks. But how important are the weight parameters of a neural network compared to its architecture? In this work, we question to what extent neural network architectures alone, without learning any weight parameters, can encode solutions for a given task. We propose a search method for neural network architectures that can already perform a task without any explicit weight training. To evaluate these networks, we populate the connections with a single shared weight parameter sampled from a uniform random distribution, and measure the expected performance. We demonstrate that our method can find minimal neural network architectures that can perform several reinforcement learning tasks without weight training. On a supervised learning domain, we find network architectures that achieve much higher than chance accuracy on MNIST using random weights."  
+  - <https://weightagnostic.github.io>
+  - `post` <https://ai.googleblog.com/2019/08/exploring-weight-agnostic-neural.html>
+  - `video` <https://youtube.com/watch?v=9jH_XCA00r0> (Ha)
+  - `video` <https://youtube.com/watch?v=QqoKl9N2oCw>
+  - `video` <https://youtube.com/watch?v=OmniHm9Fk-A> (Numenta)
+
 #### ["How Does Batch Normalization Help Optimization? (No, It Is Not About Internal Covariate Shift)"](https://arxiv.org/abs/1805.11604) Santurkar, Tsipras, Ilyas, Madry
   `optimization`
 >	"Batch Normalization (BatchNorm) is a widely adopted technique that enables faster and more stable training of deep neural networks (DNNs). Despite its pervasiveness, the exact reasons for BatchNorm's effectiveness are still poorly understood. The popular belief is that this effectiveness stems from controlling the change of the layers' input distributions during training to reduce the so-called "internal covariate shift". In this work, we demonstrate that such distributional stability of layer inputs has little to do with the success of BatchNorm. Instead, we uncover a more fundamental impact of BatchNorm on the training process: it makes the optimization landscape significantly smoother. This smoothness induces a more predictive and stable behavior of the gradients, allowing for faster training."  
@@ -969,6 +981,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"Despite early successes in using GANs for unsupervised representation learning, they have since been superseded by approaches based on self-supervision. In this work we show that progress in image generation quality translates to substantially improved representation learning performance. Our approach builds upon the state-of-the-art BigGAN model, extending it to representation learning by adding an encoder and modifying the discriminator. We extensively evaluate the representation learning and generation capabilities of these BigBiGAN models, demonstrating that these generation-based models achieve the state of the art in unsupervised representation learning on ImageNet, as well as in unconditional image generation."  
 >	"BigBiGAN = BigGAN + BiGAN"  
   - `video` <https://youtu.be/DSYzHPW26Ig?t=1h39m52s> (Graves)
+  - `video` <https://youtube.com/watch?v=Jo86d1jx960>
   - `post` <https://stephanheijl.com/notes_on_large_scale_adversarial_learning.html>
 
 #### ["SCAN: Learning Abstract Hierarchical Compositional Visual Concepts"](https://arxiv.org/abs/1707.03389) Higgins, Sonnerat, Matthey, Pal, Burgess, Botvinick, Hassabis, Lerchner
@@ -1442,6 +1455,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `StyleGAN` `GAN applications` `image generation`
 >	"We propose an alternative generator architecture for generative adversarial networks, borrowing from style transfer literature. The new architecture leads to an automatically learned, unsupervised separation of high-level attributes (e.g., pose and identity when trained on human faces) and stochastic variation in the generated images (e.g., freckles, hair), and it enables intuitive, scale-specific control of the synthesis."  
   - `video` <https://youtube.com/watch?v=kSLJriaOumA> (demo)
+  - `video` <https://youtube.com/watch?v=AQBti_wN414>
   - `video` <https://youtube.com/watch?v=4WL5EmYi_rA>
   - `post` <https://www.gwern.net/Faces>
 
@@ -1449,6 +1463,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `SAGAN` `GAN applications` `image generation`
 >	"SAGAN allows attention-driven, long-range dependency modeling for image generation tasks. Traditional convolutional GANs generate high-resolution details as a function of only spatially local points in lower-resolution feature maps. In SAGAN, details can be generated using cues from all feature locations. Moreover, the discriminator can check that highly detailed features in distant portions of the image are consistent with each other."  
   - `video` <https://youtube.com/watch?v=FdeHlC4QiqA> (Chen)
+  - `video` <https://youtube.com/watch?v=OVeGatovZ7Y>
 
 #### ["Synthesizing Programs for Images using Reinforced Adversarial Learning"](https://arxiv.org/abs/1804.01118) Ganin, Kulkarni, Babuschkin, Eslami, Vinyals
   `SPIRAL` `GAN applications` `image generation`
@@ -2858,6 +2873,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Diversity is All You Need: Learning Skills without a Reward Function"](https://arxiv.org/abs/1802.06070) Eysenbach, Gupta, Ibarz, Levine
   `DIAYN` `skills discovery`
 >	"Intelligent creatures can explore their environments and learn useful skills without supervision. In this paper, we propose DIAYN ('Diversity is All You Need'), a method for learning useful skills without a reward function. Our proposed method learns skills by maximizing an information theoretic objective using a maximum entropy policy. On a variety of simulated robotic tasks, we show that this simple objective results in the unsupervised emergence of diverse skills, such as walking and jumping. In a number of reinforcement learning benchmark environments, our method is able to learn a skill that solves the benchmark task despite never receiving the true task reward. We show how pretrained skills can provide a good parameter initialization for downstream tasks, and can be composed hierarchically to solve complex, sparse reward tasks. Our results suggest that unsupervised discovery of skills can serve as an effective pretraining mechanism for overcoming challenges of exploration and data efficiency in reinforcement learning."  
+  - `video` <https://youtu.be/5oGEZGxJAl4?t=29m35s> (Levine)
 
 ----
 #### ["Learning by Playing - Solving Sparse Reward Tasks from Scratch"](https://arxiv.org/abs/1802.10567) Riedmiller, Hafner, Lampe, Neunert, Degrave, Wiele, Mnih, Heess, Springenberg
@@ -2887,7 +2903,8 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	Additional inputs: reward, action, velocity"  
   - `video` <https://youtu.be/PS4iJ7Hk_BU> + <https://youtu.be/-HsjQoIou_c> + <https://youtu.be/kH1AvRAYkbI> + <https://youtu.be/5IBT2UADJY0> + <https://youtu.be/e10mXgBG9yo> (demo)
   - `video` <http://youtube.com/watch?v=5Rflbx8y7HY> (Mirowski)
-  - `video` <http://youtu.be/0e_uGa7ic74?t=8m53s> + <https://vimeo.com/238221551#t=22m37s> (Hadsell)
+  - `video` <http://youtu.be/0e_uGa7ic74?t=8m53s> (Hadsell)
+  - `video` <https://vimeo.com/238221551#t=22m37s> (Hadsell)
   - `notes` <http://pemami4911.github.io/paper-summaries/2016/12/20/learning-to-navigate-in-complex-envs.html>
   - `code` <https://github.com/tgangwani/GA3C-DeepNavigation>
 
@@ -3467,6 +3484,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Learning Multiagent Communication with Backpropagation"](http://arxiv.org/abs/1605.07736) Sukhbaatar, Szlam, Fergus
   - `video` <https://youtube.com/watch?v=9fZ8JiDZqCA> (Sukhbaatar)
   - `video` <https://youtu.be/_iVVXWkoEAs?t=30m6s> (Fergus)
+  - `video` <http://www.fields.utoronto.ca/video-archive/2017/01/2267-16463> (34:47) (Fergus)
   - `video` <https://youtu.be/SAcHyzMdbXc?t=19m> (de Freitas)
   - `slides` <https://uclmr.github.io/nampi/talk_slides/rob-nampi.pdf>
   - `code` <https://github.com/facebookresearch/CommNet>
@@ -3614,14 +3632,11 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 #### ["Go for a Walk and Arrive at the Answer: Reasoning Over Paths in Knowledge Bases using Reinforcement Learning"](https://arxiv.org/abs/1711.05851) Das, Dhuliawala, Zaheer, Vilnis, Durugkar, Krishnamurthy, Smola, McCallum
   `MINERVA` `question answering over knowledge bases`
->	"RL agent which answers queries in a knowledge graph of entities and relations. Starting from an entity node, MINERVA learns to navigate the graph conditioned on the input query till it reaches the answer entity."  
-  - `video` <https://youtu.be/gIvqWSA1Opc?t=17m22s> (McCallum)
-  - `code` <https://github.com/shehzaadzd/MINERVA>
+  - <https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#go-for-a-walk-and-arrive-at-the-answer-reasoning-over-paths-in-knowledge-bases-using-reinforcement-learning-das-dhuliawala-zaheer-vilnis-durugkar-krishnamurthy-smola-mccallum>
 
 #### ["Question Answering on Knowledge Bases and Text using Universal Schema and Memory Networks"](https://arxiv.org/abs/1704.08384) Das, Zaheer, Reddy, McCallum
   `question answering over knowledge bases`
-  - `video` <https://youtu.be/lc68_d_DnYs?t=7m28s> (Neelakantan)
-  - `code` <https://github.com/rajarshd/TextKBQA>
+  - <https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#question-answering-on-knowledge-bases-and-text-using-universal-schema-and-memory-networks-das-zaheer-reddy-mccallum>
 
 #### ["Neural Symbolic Machines: Learning Semantic Parsers on Freebase with Weak Supervision"](http://arxiv.org/abs/1611.00020) Liang, Berant, Le, Forbus, Lao
   `question answering over knowledge bases`
@@ -3663,9 +3678,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 #### ["Key-Value Memory Networks for Directly Reading Documents"](http://arxiv.org/abs/1606.03126) Miller, Fisch, Dodge, Amir-Hossein Karimi, Bordes, Weston
   `question answering over texts` `multi-paragraph document`
-  - `video` <https://youtu.be/x1kf4Zojtb0?t=25m46s> (de Freitas)
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1606.03126>
-  - `code` <https://github.com/facebook/MemNN/blob/master/KVmemnn>
+  - <https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#key-value-memory-networks-for-directly-reading-documents-miller-fisch-dodge-karimi-bordes-weston>
 
 #### ["QANet: Combining Local Convolution with Global Self-Attention for Reading Comprehension"](https://arxiv.org/abs/1804.09541) Yu, Dohan, Luong, Zhao, Chen, Norouzi, Le
   `question answering over texts` `single paragraph`
