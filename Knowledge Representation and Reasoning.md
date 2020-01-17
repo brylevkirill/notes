@@ -1078,6 +1078,19 @@
 ### interesting papers - knowledge bases
 
 
+#### ["Alexandria: Unsupervised High-Precision Knowledge Base Construction using a Probabilistic Program"](https://microsoft.com/research/publication/alexandria-unsupervised-high-precision-knowledge-base-construction-using-a-probabilistic-program) Winn et al.
+  ` `Microsoft Satori`
+>	"Creating a knowledge base that is accurate, up-to-date and complete remains a significant challenge despite substantial efforts in automated knowledge base construction.  In this paper, we present Alexandria -- a system for unsupervised, high-precision knowledge base construction. Alexandria uses a probabilistic program to define a process of converting knowledge base facts into unstructured text.  Using probabilistic inference, we can invert this program and so retrieve facts, schemas and entities from web text. The use of a probabilistic program allows uncertainty in the text to be propagated through to the retrieved facts, which increases accuracy and helps merge facts from multiple sources. Because Alexandria does not require labelled training data, knowledge bases can be constructed with the minimum of manual input. We demonstrate this by constructing a high precision (typically 97\%+) knowledge base for people from a single seed fact."
+
+>	"can discover facts, entities and type schema"
+
+  - `post` <https://devblogs.microsoft.com/dotnet/announcing-ml-net-0-6-machine-learning-net>
+  - `video` <https://youtu.be/i8oUXel06z0?t=2m31s> (Guiver)
+  - `video` <https://youtu.be/4oFbb-vrsjI?t=9m38s> (Guiver)
+  - `video` <https://youtu.be/g_LSbqLBdM0?t=8m53s> (Zaykov)
+  - `paper` ["Belief Propagation with Strings"](https://microsoft.com/research/publication/belief-propagation-strings/) by Yangel, Minka, Winn
+
+
 #### ["Knowledge Vault: A Web-Scale Approach to Probabilistic Knowledge Fusion"](https://research.google.com/pubs/pub45634.html) Dong et al.
   `Google Knowledge Vault`
 >	"Recent years have witnessed a proliferation of large-scale knowledge bases, including Wikipedia, Freebase, YAGO, Microsoft's Satori, and Google's Knowledge Graph. To increase the scale even further, we need to explore automatic methods for constructing knowledge bases. Previous approaches have primarily focused on text-based extraction, which can be very noisy. Here we introduce Knowledge Vault, a Web-scale probabilistic knowledge base that combines extractions from Web content (obtained via analysis of text, tabular data, page structure, and human annotations) with prior knowledge derived from existing knowledge repositories. We employ supervised machine learning methods for fusing these distinct information sources. The Knowledge Vault is substantially bigger than any previously published structured knowledge repository, and features a probabilistic inference system that computes calibrated probabilities of fact correctness. We report the results of multiple studies that explore the relative utility of the relative utility of the different information sources and extraction methods."
@@ -1432,6 +1445,13 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 #### ["Neural Programmer: Inducing Latent Programs with Gradient Descent"](http://arxiv.org/abs/1511.04834) Neelakantan, Le, Sutskever
   `program embedding`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#neural-programmer-inducing-latent-programs-with-gradient-descent-neelakantan-le-sutskever>
+
+
+#### ["Survey on Semantic Parsing"](https://arxiv.org/abs/1812.00978) Kamath, Das
+  `query semantic parsing`
+>	"A significant amount of information in today’s world is stored in structured and semistructured knowledge bases. Efficient and simple methods to query them are essential and must not be restricted to only those who have expertise in formal query languages. The field of semantic parsing deals with converting natural language utterances to logical forms that can be easily executed on a knowledge base. In this survey, we examine the various components of a semantic parsing system and discuss prominent work ranging from the initial rule based methods to the current neural approaches to program synthesis. We also discuss methods that operate using varying levels of supervision and highlight the key challenges involved in the learning of such systems."
+
+  - `video` <https://youtu.be/tAJSL643WSw?t=14m27s> (Kamath)
 
 
 #### ["Deep Compositional Question Answering with Neural Module Networks"](http://arxiv.org/abs/1511.02799) Andreas, Rohrbach, Darrell, Klein
@@ -1841,14 +1861,8 @@ Quiz bowl is a fun game with excellent opportunities for outreach, but it is als
 ----
 #### ["Alexandria: Unsupervised High-Precision Knowledge Base Construction using a Probabilistic Program"](https://microsoft.com/research/publication/alexandria-unsupervised-high-precision-knowledge-base-construction-using-a-probabilistic-program) Winn et al.
   `knowledge base population` `Microsoft Satori`
->	"Creating a knowledge base that is accurate, up-to-date and complete remains a significant challenge despite substantial efforts in automated knowledge base construction.  In this paper, we present Alexandria -- a system for unsupervised, high-precision knowledge base construction. Alexandria uses a probabilistic program to define a process of converting knowledge base facts into unstructured text.  Using probabilistic inference, we can invert this program and so retrieve facts, schemas and entities from web text. The use of a probabilistic program allows uncertainty in the text to be propagated through to the retrieved facts, which increases accuracy and helps merge facts from multiple sources. Because Alexandria does not require labelled training data, knowledge bases can be constructed with the minimum of manual input. We demonstrate this by constructing a high precision (typically 97\%+) knowledge base for people from a single seed fact."
+  - <https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#alexandria-unsupervised-high-precision-knowledge-base-construction-using-a-probabilistic-program-winn-et-al>
 
->	"can discover facts, entities and type schema"
-
-  - `post` <https://devblogs.microsoft.com/dotnet/announcing-ml-net-0-6-machine-learning-net>
-  - `video` <https://youtu.be/g_LSbqLBdM0?t=8m53s> (Zaykov)
-  - `video` <https://youtu.be/4oFbb-vrsjI?t=9m38s> (Guiver)
-  - `paper` ["Belief Propagation with Strings"](https://microsoft.com/research/publication/belief-propagation-strings/) by Yangel, Minka, Winn
 
 
 #### ["From Data Fusion to Knowledge Fusion"](http://www.vldb.org/pvldb/vol7/p881-dong.pdf) Dong et al.

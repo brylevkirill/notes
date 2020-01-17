@@ -1265,6 +1265,12 @@ Yoshua Bengio:
   `generalization`
 >	"Deep convolutional networks have become a popular tool for image generation and restoration. Generally, their excellent performance is imputed to their ability to learn realistic image priors from a large number of example images. In this paper, we show that, on the contrary, the structure of a generator network is sufficient to capture a great deal of low-level image statistics prior to any learning. In order to do so, we show that a randomly-initialized neural network can be used as a handcrafted prior with excellent results in standard inverse problems such as denoising, superresolution, and inpainting. Furthermore, the same prior can be used to invert deep neural representations to diagnose them, and to restore images based on flash-no flash input pairs."
 
+>	"We show that this very simple formulation is very competitive for standard image processing problems such as denoising, inpainting and super-resolution. This is particularly remarkable because no aspect of the network is learned from data; instead, the weights of the network are always randomly initialized, so that the only prior information is in the structure of the network itself."
+
+>	"One may wonder why a high-capacity network fθ can be used as a prior at all. In fact, one may expect to be able to find parameters θ recovering any possible image x, including random noise, so that the network should not impose any restriction on the generated image. We now show that, while indeed almost any image can be fitted, the choice of network architecture has a major effect on how the solution space is searched by methods such as gradient descent. In particular, we show that the network resists “bad” solutions and descends much more quickly towards naturally-looking images. The result is that minimizing (2) either results in a good-looking local optimum, or, at least, the optimization trajectory passes near one."
+
+>	"Thus, although in the limit the parametrization can fit unstructured noise, it does so very reluctantly. In other words, the parametrization offers high impedance to noise and low impedance to signal. Therefore for most applications, we restrict the number of iterations in the optimization process (2) to a certain number of iterations. The resulting prior then corresponds to projection onto a reduced set of images that can be produced from z by ConvNets with parameters θ that are not too far from the random initialization θ0."
+
   - <https://dmitryulyanov.github.io/deep_image_prior>
   - `video` <https://youtube.com/watch?v=fj0yLTa_bmA> (Ulyanov)
   - `post` <https://towardsdatascience.com/demystifying-deep-image-prior-7076e777e5ba>
@@ -1863,7 +1869,7 @@ Yoshua Bengio:
   - `post` <http://jalammar.github.io/illustrated-bert>
   - `post` <https://medium.com/dissecting-bert/dissecting-bert-part-1-d3c3d495cdb3> + <https://medium.com/dissecting-bert/dissecting-bert-part2-335ff2ed9c73> + <https://medium.com/dissecting-bert/dissecting-bert-appendix-the-decoder-3b86f66b0e5f>
   - `paper` ["Right for the Wrong Reasons: Diagnosing Syntactic Heuristics in Natural Language Inference"](https://arxiv.org/abs/1902.01007) by McCoy et al.
-  - `paper` ["Probing Neural Network Comprehension of Natural Language Arguments"](https://arxiv.org/abs/1907.07355) by Niven et al.
+  - `paper` ["Probing Neural Network Comprehension of Natural Language Arguments"](https://arxiv.org/abs/1907.07355) by Niven et al. ([post](https://thegradient.pub/nlps-clever-hans-moment-has-arrived) by Benjamin Heinzerling)
   - `paper` ["BERT Rediscovers the Classical NLP Pipeline"](https://arxiv.org/abs/1905.05950) by Tenney et al.
   - `paper` ["XLNet: Generalized Autoregressive Pretraining for Language Understanding"](https://arxiv.org/abs/1906.08237) by Yang et al.
 
@@ -1882,6 +1888,19 @@ Yoshua Bengio:
   - `paper` ["Data-Efficient Image Recognition with Contrastive Predictive Coding"](https://arxiv.org/abs/1905.09272) by Henaff et al. ([talk](https://facebook.com/icml.imls/videos/378993762742156?t=3335) by Henaff `video`)
   - `paper` ["Noise-Contrastive Estimation of Unnormalized Statistical Models, with Applications to Natural Image Statistics"](http://www.jmlr.org/papers/volume13/gutmann12a/gutmann12a.pdf) by Gutmann and Hyvarinen
   - `paper` ["Putting An End to End-to-End: Gradient-Isolated Learning of Representations"](https://arxiv.org/abs/1905.11786) by Lowe et al.
+
+
+#### ["Self-training with Noisy Student Improves ImageNet Classification"](https://arxiv.org/abs/1911.04252) Xie et al.
+>	"We present a simple self-training method that achieves 87.4% top-1 accuracy on ImageNet, which is 1.0% better than the state-of-the-art model that requires 3.5B weakly labeled Instagram images. On robustness test sets, it improves ImageNet-A top-1 accuracy from 16.6% to 74.2%, reduces ImageNet-C mean corruption error from 45.7 to 31.2, and reduces ImageNet-P mean flip rate from 27.8 to 16.1. To achieve this result, we first train an EfficientNet model on labeled ImageNet images and use it as a teacher to generate pseudo labels on 300M unlabeled images. We then train a larger EfficientNet as a student model on the combination of labeled and pseudo labeled images. We iterate this process by putting back the student as the teacher. During the generation of the pseudo labels, the teacher is not noised so that the pseudo labels are as good as possible. But during the learning of the student, we inject noise such as data augmentation, dropout, stochastic depth to the student so that the noised student is forced to learn harder from the pseudo labels."
+
+  - `video` <https://youtube.com/watch?v=Y8YaU9mv_us>
+  - `notes` <https://harangdev.github.io/papers/9/>
+
+
+#### ["Billion-scale Semi-supervised Learning for Image Classification"](https://arxiv.org/abs/1905.00546) Yalniz et al.
+>	"This paper presents a study of semi-supervised learning with large convolutional networks. We propose a pipeline, based on a teacher/student paradigm, that leverages a large collection of unlabelled images (up to 1 billion). Our main goal is to improve the performance for a given target architecture, like ResNet-50 or ResNext. We provide an extensive analysis of the success factors of our approach, which leads us to formulate some recommendations to produce high-accuracy models for image classification with semi-supervised learning. As a result, our approach brings important gains to standard architectures for image, video and fine-grained classification. For instance, by leveraging one billion unlabelled images, our learned vanilla ResNet-50 achieves 81.2% top-1 accuracy on the ImageNet benchmark."
+
+  - `post` <https://ai.facebook.com/blog/billion-scale-semi-supervised-learning>
 
 
 
@@ -2367,7 +2386,8 @@ Yoshua Bengio:
 >	"A fully connected layer would route the features based on their agreement with a learned weight vector. This defeats the intent of dynamic routing, the whole purpose of which is to route activations to capsules where they agree with other activations. It does the routing based on a fast iterative process in the forward pass, not a slow learning process like gradient descent."
 
 ----
->	"- requires less training data  
+>	"
+>	- requires less training data  
 >	- position and pose information are preserved (equivarience)  
 >	- promising for image segmentation and object detection  
 >	- routing by agreement is great for overlapping objects (explaining away)  
@@ -2878,10 +2898,6 @@ Yoshua Bengio:
   `BanditNet` `ICLR 2018`
 >	"We propose a new output layer for deep neural networks that permits the use of logged contextual bandit feedback for training. Such contextual bandit feedback can be available in huge quantities (e.g., logs of search engines, recommender systems) at little cost, opening up a path for training deep networks on orders of magnitude more data. To this effect, we propose a counterfactual risk minimization approach for training deep networks using an equivariant empirical risk estimator with variance regularization, BanditNet, and show how the resulting objective can be decomposed in a way that allows stochastic gradient descent training. We empirically demonstrate the effectiveness of the method by showing how deep networks – ResNets in particular – can be trained for object recognition without conventionally labeled images."
   - `video` <https://youtube.com/watch?v=lzA5K4im2no> (Joachims)
-
-
-#### ["Self-training with Noisy Student improves ImageNet classification"](https://arxiv.org/abs/1911.04252) Xie et al.
->	"We present a simple self-training method that achieves 87.4% top-1 accuracy on ImageNet, which is 1.0% better than the state-of-the-art model that requires 3.5B weakly labeled Instagram images. On robustness test sets, it improves ImageNet-A top-1 accuracy from 16.6% to 74.2%, reduces ImageNet-C mean corruption error from 45.7 to 31.2, and reduces ImageNet-P mean flip rate from 27.8 to 16.1. To achieve this result, we first train an EfficientNet model on labeled ImageNet images and use it as a teacher to generate pseudo labels on 300M unlabeled images. We then train a larger EfficientNet as a student model on the combination of labeled and pseudo labeled images. We iterate this process by putting back the student as the teacher. During the generation of the pseudo labels, the teacher is not noised so that the pseudo labels are as good as possible. But during the learning of the student, we inject noise such as data augmentation, dropout, stochastic depth to the student so that the noised student is forced to learn harder from the pseudo labels."
 
 
 

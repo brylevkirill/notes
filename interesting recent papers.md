@@ -151,11 +151,12 @@ also been supported by the observation that deep networks strongly rely on spect
 >	"Neural network pruning techniques can reduce the parameter counts of trained networks by over 90%, decreasing storage requirements and improving computational performance of inference without compromising accuracy. However, contemporary experience is that the sparse architectures produced by pruning are difficult to train from the start, which would similarly improve training performance.
 We find that a standard pruning technique naturally uncovers subnetworks whose initializations made them capable of training effectively. Based on these results, we articulate the "lottery ticket hypothesis:" dense, randomly-initialized, feed-forward networks contain subnetworks ("winning tickets") that - when trained in isolation - reach test accuracy comparable to the original network in a similar number of iterations. The winning tickets we find have won the initialization lottery: their connections have initial weights that make training particularly effective."  
 >	"We present an algorithm to identify winning tickets and a series of experiments that support the lottery ticket hypothesis and the importance of these fortuitous initializations. We consistently find winning tickets that are less than 10-20% of the size of several fully-connected and convolutional feed-forward architectures for MNIST and CIFAR10. Above this size, the winning tickets that we find learn faster than the original network and reach higher test accuracy."  
-  - `video` <https://youtube.com/watch?v=s7DqRZVvRiQ> (Frankle)
+  - `video` <https://youtu.be/8UxS4ls6g1g?t=1h25m> (Frankle)
   - `video` <https://youtube.com/watch?v=5PF-I1NKTmk> (LaLonde)
   - `video` <https://youtube.com/watch?v=LXm_6eq0Cs4>
+  - `video` <https://youtu.be/IRzaWXP3s3U?t=9m47s> (Sobolev) `in russian`
   - `paper` ["Deconstructing Lottery Tickets: Zeros, Signs, and the Supermask"](https://arxiv.org/abs/1905.01067) by Zhou et al. ([post](https://eng.uber.com/deconstructing-lottery-tickets), [notes](https://www.shortscience.org/paper?bibtexKey=zhou2019deconstructing))
-  - `paper` ["One Ticket to Win Them All: Generalizing Lottery Ticket Initializations Across Datasets and Optimizers"](https://arxiv.org/abs/1906.02773) by Morcos et al. ([post](https://ai.facebook.com/blog/understanding-the-generalization-of-lottery-tickets-in-neural-networks))
+  - `paper` ["One Ticket to Win Them All: Generalizing Lottery Ticket Initializations Across Datasets and Optimizers"](https://arxiv.org/abs/1906.02773) by Morcos et al. ([post](https://ai.facebook.com/blog/understanding-the-generalization-of-lottery-tickets-in-neural-networks), [talk](https://youtube.com/watch?v=oOgbHpjTwwA) `video`)
 
 #### ["Weight Agnostic Neural Networks"](https://arxiv.org/abs/1906.04358) Gaier, Ha
   `optimization` `NeurIPS 2019`
@@ -960,6 +961,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"Unsupervised learning is not only about predicting inputs - SPIRAL learns the rewards through which learning happens and learns the policy to generate a program that generates inputs."  
   - `post` <https://deepmind.com/blog/learning-to-generate-images>
   - `video` <https://youtu.be/iSyvwAwa7vk> (demo)
+  - `video` <https://youtu.be/BTXn90OJFXo?t=24m23s> (Eslami)
   - `video` <https://youtube.com/watch?v=kkihoMMpBb0> (Vinyals)
   - `video` <https://facebook.com/iclr.cc/videos/2125495797479475?t=2069> (Kavukcuoglu)
   - `code` <https://github.com/deepmind/spiral>
@@ -1096,7 +1098,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-devlin-chang-lee-toutanova>
 
 #### ["Representation Learning with Contrastive Predictive Coding"](https://arxiv.org/abs/1807.03748) Oord, Li, Vinyals
-  `CPC` `representation learning` `self-supervised learning`
+  `CPC` `InfoNCE` `representation learning` `self-supervised learning`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#representation-learning-with-contrastive-predictive-coding-oord-li-vinyals>
 
 
@@ -2409,6 +2411,23 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <http://github.com/etalvitie/hdaggermc>
 
 ----
+#### ["Dream to Control: Learning Behaviors by Latent Imagination"](https://arxiv.org/abs/1912.01603) Hafner, Lillicrap, Ba, Norouzi
+  `Dreamer` `learning to plan` `learning abstract environment model`
+>	"a reinforcement learning agent that solves long-horizon tasks from images purely by latent imagination"  
+>	"We efficiently learn behaviors by propagating analytic gradients of learned state values back through trajectories imagined in the compact state space of a learned world model."  
+>	"PlaNet: online planning using cross entropy method"  
+>	"Dreamer: learn actor and value offline by backprop through dynamics"  
+>	"a scheme which does not consider rewards beyond the imagination horizon:  
+>	- use action model to imagine trajectories from each latent state  
+>	- actions maximize predicted rewards by propagating their analytic gradients  
+>	- reparametrization gradients for latent states and actions (straight-through estimator for discrete actions)"
+>	"a scheme in Dreamer:  
+>	- use action model to imagine trajectories from each latent state  
+>	- values optimize Bellman consistency for current policy  
+>	- actions maximize predicted values by backpropagating through transitions"  
+  - <https://dreamrl.github.io> (demo)
+  - `video` <https://slideslive.com/38922025/deep-reinforcement-learning-1?t=3449> (Hafner)
+
 #### ["Temporal Difference Models: Model-Free Deep RL for Model-Based Control"](https://arxiv.org/abs/1802.09081) Pong, Gu, Dalal, Levine
   `TDM` `learning to plan` `learning abstract environment model`
 >	"A family of goal-conditioned value functions that can be trained with model-free learning and used for model-based control. TDMs combine the benefits of model-free and model-based RL: they leverage the rich information in state transitions to learn very efficiently, while still attaining asymptotic performance that exceeds that of direct model-based RL methods."  
@@ -2490,23 +2509,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <https://github.com/higgsfield/interaction_network_pytorch>
 
 ----
-#### ["Dream to Control: Learning Behaviors by Latent Imagination"](https://arxiv.org/abs/1912.01603) Hafner, Lillicrap, Ba, Norouzi
-  `Dreamer`
->	"a reinforcement learning agent that solves long-horizon tasks from images purely by latent imagination"  
->	"We efficiently learn behaviors by propagating analytic gradients of learned state values back through trajectories imagined in the compact state space of a learned world model."  
->	"PlaNet: online planning using cross entropy method"  
->	"Dreamer: learn actor and value offline by backprop through dynamics"  
->	"a scheme which does not consider rewards beyond the imagination horizon:  
->	- use action model to imagine trajectories from each latent state  
->	- actions maximize predicted rewards by propagating their analytic gradients  
->	- reparametrization gradients for latent states and actions (straight-through estimator for discrete actions)"
->	"a scheme in Dreamer:  
->	- use action model to imagine trajectories from each latent state  
->	- values optimize Bellman consistency for current policy  
->	- actions maximize predicted values by backpropagating through transitions"  
-  - <https://dreamrl.github.io> (demo)
-  - `video` <https://slideslive.com/38922025/deep-reinforcement-learning-1?t=3449> (Hafner)
-
 #### ["Model Based Reinforcement Learning for Atari"](https://arxiv.org/abs/1903.00374) Kaiser et al.
   `SimPLe` `learning to simulate` `learning environment model` `video prediction`
 >	"Simulated Policy Learning, a complete model-based deep RL algorithm based on video prediction models."  
@@ -2903,6 +2905,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	Additional inputs: reward, action, velocity"  
   - `video` <https://youtu.be/PS4iJ7Hk_BU> + <https://youtu.be/-HsjQoIou_c> + <https://youtu.be/kH1AvRAYkbI> + <https://youtu.be/5IBT2UADJY0> + <https://youtu.be/e10mXgBG9yo> (demo)
   - `video` <http://youtube.com/watch?v=5Rflbx8y7HY> (Mirowski)
+  - `video` <https://youtu.be/OfKnA91zs9I?t=1h28m10s> (Hadsell)
   - `video` <http://youtu.be/0e_uGa7ic74?t=8m53s> (Hadsell)
   - `video` <https://vimeo.com/238221551#t=22m37s> (Hadsell)
   - `notes` <http://pemami4911.github.io/paper-summaries/2016/12/20/learning-to-navigate-in-complex-envs.html>
@@ -2927,6 +2930,8 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"Skew-Fit trains a generative model to closely approximate a uniform distribution over valid states, using data obtained via goal-conditioned reinforcement learning. Our method iteratively re-weights the samples for training the generative model, such that its entropy increases over the set of possible states, and our theoretical analysis gives conditions under which Skew-Fit converges to the uniform distribution. When such a model is used to choose goals for exploration and to relabeling goals for training, the resulting method results in much better coverage of the state space, enabling our method to explore effectively. Our experiments show that it produces quantifiable improvements when used along with goal-conditioned reinforcement learning on simulated robotic manipulation tasks, and can be used to learn a complex door opening skill to reach a 100% success rate directly on a real robot, without any human-provided reward supervision."  
   - <https://sites.google.com/view/skew-fit>
   - `video` <https://youtube.com/watch?v=DWSZHEvZO4o>
+  - `video` <https://slideslive.com/38917959/skewfit-statecovering-selfsupervised-reinforcement-learning> (Pong)
+  - `video` <http://www.fields.utoronto.ca/video-archive/2019/10/2509-21418> (29:55) (Levine)
   - `video` <https://youtu.be/jAPJeJK18mw?t=10m28s> (Levine)
 
 #### ["Hindsight Experience Replay"](https://arxiv.org/abs/1707.01495) Andrychowicz, Wolski, Ray, Schneider, Fong, Welinder, McGrew, Tobin, Abbeel, Zaremba
@@ -3509,13 +3514,15 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"While the programs are relatively small, many controllers are competitive with state of the art methods for the Atari benchmark set and require less training time."  
 
 #### ["Programmatically Interpretable Reinforcement Learning"](https://arxiv.org/abs/1804.02477) Verma, Murali, Singh, Kohli, Chaudhuri
-  `PIRL`
+  `PIRL` `ICML 2018`
 >	"Unlike the popular Deep Reinforcement Learning paradigm, which represents policies by neural networks, PIRL represents policies using a high-level, domain-specific programming language. Such programmatic policies have the benefits of being more easily interpreted than neural networks, and being amenable to verification by symbolic methods."  
 >	"We propose a new method, called Neurally Directed Program Search, for solving the challenging non-smooth optimization problem of finding a programmatic policy with maximal reward. NDPS works by first learning a neural policy network using DRL, and then performing a local search over programmatic policies that seeks to minimize a distance from this neural “oracle”."  
 >	"The DAGGER (Dataset Aggregation) algorithm is an iterative algorithm for imitation learning that learns stationary deterministic policies, where in each iteration i it uses the current learnt policy πi to collect new trajectories and adds them to the dataset D of all previously found trajectories. The policy for the next iteration πi+1 is a policy that best mimics the expert policy π∗ on the whole dataset D. Our Neurally Directed Program Search is inspired by the DAGGER algorithm, where we use the trained DeepRL agent as the expert (oracle), and iteratively perform IO augmentation for unseen input states explored by our synthesized policy with the current best reward. However, one key difference is that NDPS uses the expert trajectories to only guide the local program search in our policy language grammar to find a policy with highest rewards, unlike the imitation learning setting where the goal is to match the expert demonstrations perfectly."  
 >	"We evaluate NDPS on the task of learning to drive a simulated car in the TORCS car-racing environment. We demonstrate that NDPS is able to discover human-readable policies that pass some significant performance bars. We also show that PIRL policies can have smoother trajectories, and can be more easily transferred to environments not encountered during training, than corresponding policies discovered by DRL."  
 >	"The experiments in this paper only considered environments with symbolic inputs. Handling perceptual inputs may raise additional algorithmic challenges, and is a natural next step. Also, in this paper, we only considered deterministic (if memoryful) policies."  
   - `video` <https://vimeo.com/312267206> (Verma)
+  - `notes` <https://blog.acolyer.org/2020/01/15/programmatically-interpretable-reinforcement-learning/>
+  - `paper` ["Imitation-Projected Programmatic Reinforcement Learning"](https://arxiv.org/abs/1907.05431) by Verma et al.
 
 #### ["Synthesizing Programs for Images using Reinforced Adversarial Learning"](https://arxiv.org/abs/1804.01118) Ganin, Kulkarni, Babuschkin, Eslami, Vinyals
   `SPIRAL`

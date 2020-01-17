@@ -31,7 +31,6 @@
 
 ----
 
-  ["Progress and Hype in AI Research"](https://github.com/brylevkirill/posts/blob/master/AI.md) by Kirill Brylev  
   ["On the Measure of Intelligence"](https://arxiv.org/abs/1911.01547) by Francois Chollet  
   ["Intelligence Confuses the Intelligent"](https://blog.piekniewski.info/2017/04/13/ai-confuses-intelligent) by Filip Piekniewski  
   ["Intelligence is not Artificial"](https://www.toddhylton.net/2016/04/intelligence-is-not-artificial.html) by Todd Hylton  
@@ -502,9 +501,10 @@
 #### ["Universal Intelligence: A Definition of Machine Intelligence"](http://arxiv.org/abs/0712.3329) Legg, Hutter
 >	"A fundamental problem in artificial intelligence is that nobody really knows what intelligence is. The problem is especially acute when we need to consider artificial systems which are significantly different to humans. In this paper we approach this problem in the following way: We take a number of well known informal definitions of human intelligence that have been given by experts, and extract their essential features. These are then mathematically formalised to produce a general measure of intelligence for arbitrary machines. We believe that this equation formally captures the concept of machine intelligence in the broadest reasonable sense. We then show how this formal definition is related to the theory of universal optimal learning agents. Finally, we survey the many other tests and definitions of intelligence that have been proposed for machines."
 
->	"Intelligence is the ability to achieve goals in a wide range of environments."
+>	"Intelligence measures an agent’s ability to achieve goals in a wide range of environments."
 
   - `video` <https://youtube.com/watch?v=0ghzG14dT-w> (Legg)
+  - `paper` ["A Collection of Definitions of Intelligence"](https://arxiv.org/abs/0706.3639) by Legg and Veness
   - `paper` ["An Approximation of the Universal Intelligence Measure"](http://arxiv.org/abs/1109.5951) by Legg and Veness
   - `paper` ["Tests of Machine Intelligence"](http://arxiv.org/abs/0712.3825) by Legg and Hutter
 
@@ -517,16 +517,19 @@
 >	"This paper presents the first formal measure of intelligence for agents fully embedded within their environment. Whereas previous measures such as Legg’s universal intelligence measure and Russell’s bounded optimality provide theoretical insights into agents that interact with an external world, ours describes an intelligence that is computed by, can be modified by, and is subject to the time and space constraints of the environment with which it interacts. Our measure merges and goes beyond Legg’s and Russell’s, leading to a new, more realistic definition of artificial intelligence that we call Space-Time Embedded Intelligence."
 
 
+#### ["On the Measure of Intelligence"](https://arxiv.org/abs/1911.01547) Chollet
+>	"To make deliberate progress towards more intelligent and more human-like artificial systems, we need to be following an appropriate feedback signal: we need to be able to define and evaluate intelligence in a way that enables comparisons between two systems, as well as comparisons with humans. Over the past hundred years, there has been an abundance of attempts to define and measure intelligence, across both the fields of psychology and AI. We summarize and critically assess these definitions and evaluation approaches, while making apparent the two historical conceptions of intelligence that have implicitly guided them.  We note that in practice, the contemporary AI community still gravitates towards benchmarking intelligence by comparing the skill exhibited by AIs and humans at specific tasks, such as board games and video games. We argue that solely measuring skill at any given task falls short of measuring intelligence, because skill is heavily modulated by prior knowledge and experience: unlimited priors or unlimited training data allow experimenters to “buy” arbitrary levels of skills for a system, in a way that masks the system’s own generalization power. We then articulate a new formal definition of intelligence based on Algorithmic Information Theory, describing intelligence as skill-acquisition efficiency and highlighting the concepts of scope, generalization difficulty, priors, and experience, as critical pieces to be accounted for in characterizing intelligent systems. Using this definition, we propose a set of guidelines for what a general AI benchmark should look like. Finally, we present a new benchmark closely following these guidelines, the Abstraction and Reasoning Corpus (ARC), built upon an explicit set of priors designed to be as close as possible to innate human priors. We argue that ARC can be used to measure a human-like form of general fluid intelligence and that it enables fair general intelligence comparisons between AI systems and humans."
+
+
 #### ["Evaluation in Artificial Intelligence: From Task-oriented to Ability-oriented Measurement"](https://riunet.upv.es/handle/10251/83598) Hernandez-Orallo
 >	"The evaluation of artificial intelligence systems and components is crucial for the progress of the discipline. In this paper we describe and critically assess the different ways AI systems are evaluated, and the role of components and techniques in these systems. We first focus on the traditional task-oriented evaluation approach. We identify three kinds of evaluation: human discrimination, problem benchmarks and peer confrontation. We describe some of the limitations of the many evaluation schemes and competitions in these three categories, and follow the progression of some of these tests. We then focus on a less customary (and challenging) ability-oriented evaluation approach, where a system is characterised by its (cognitive) abilities, rather than by the tasks it is designed to solve. We discuss several possibilities: the adaptation of cognitive tests used for humans and animals, the development of tests derived from algorithmic information theory or more integrated approaches under the perspective of universal psychometrics. We analyse some evaluation tests from AI that are better positioned for an ability-oriented evaluation and discuss how their problems and limitations can possibly be addressed with some of the tools and ideas that appear within the paper. Finally, we enumerate a series of lessons learnt and generic guidelines to be used when an AI evaluation scheme is under consideration."
 
 >	"AI is the science and engineering of making machines do tasks they have never seen and have not been prepared for beforehand."
 
+>	"The field of AI has been very successful in developing artificial systems that perform these tasks without featuring intelligence."
+
+  - `paper` ["IQ Tests Are Not for Machines, Yet"](http://dmip.webs.upv.es/papers/IQnotuniversal.pdf) by Dowe and Hernandez-Orallo
   - `book` ["The Measure of All Minds: Evaluating Natural and Artificial Intelligence"](https://cambridge.org/core/books/measure-of-all-minds/DC3DFD0C1D5B3A3AD6F56CD6A397ABCA) by Hernandez-Orallo
-
-
-#### ["On the Measure of Intelligence"](https://arxiv.org/abs/1911.01547) Chollet
->	"To make deliberate progress towards more intelligent and more human-like artificial systems, we need to be following an appropriate feedback signal: we need to be able to define and evaluate intelligence in a way that enables comparisons between two systems, as well as comparisons with humans. Over the past hundred years, there has been an abundance of attempts to define and measure intelligence, across both the fields of psychology and AI. We summarize and critically assess these definitions and evaluation approaches, while making apparent the two historical conceptions of intelligence that have implicitly guided them.  We note that in practice, the contemporary AI community still gravitates towards benchmarking intelligence by comparing the skill exhibited by AIs and humans at specific tasks, such as board games and video games. We argue that solely measuring skill at any given task falls short of measuring intelligence, because skill is heavily modulated by prior knowledge and experience: unlimited priors or unlimited training data allow experimenters to “buy” arbitrary levels of skills for a system, in a way that masks the system’s own generalization power. We then articulate a new formal definition of intelligence based on Algorithmic Information Theory, describing intelligence as skill-acquisition efficiency and highlighting the concepts of scope, generalization difficulty, priors, and experience, as critical pieces to be accounted for in characterizing intelligent systems. Using this definition, we propose a set of guidelines for what a general AI benchmark should look like. Finally, we present a new benchmark closely following these guidelines, the Abstraction and Reasoning Corpus (ARC), built upon an explicit set of priors designed to be as close as possible to innate human priors. We argue that ARC can be used to measure a human-like form of general fluid intelligence and that it enables fair general intelligence comparisons between AI systems and humans."
 
 
 #### ["Measuring Intelligence through Games"](http://arxiv.org/abs/1109.1314) Schaul, Togelius, Schmidhuber
@@ -544,10 +547,6 @@
   - `notes` <http://pemami4911.github.io/paper-summaries/2016/05/13/learning-to-think.html>
   - `paper` <https://cims.nyu.edu/~brenden/LakeEtAl2017BBS.pdf> ("Behavioral and Brain Sciences")
   - [**bayesian reasoning**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#reasoning---bayesian-reasoning)
-
-
-#### ["Thinking Required"](http://arxiv.org/abs/1512.01926) Rocki
->	"There exists a theory of a single general-purpose learning algorithm which could explain the principles of its operation. It assumes the initial rough architecture, a small library of simple innate circuits which are prewired at birth and proposes that all significant mental algorithms are learned. Given current understanding and observations, this paper reviews and lists the ingredients of such an algorithm from architectural and functional perspectives."
 
 
 

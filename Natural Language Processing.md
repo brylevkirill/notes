@@ -38,7 +38,7 @@
 
   [course](http://youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z) from Stanford `video` ([notes](https://github.com/stanfordnlp/cs224n-winter17-notes))  
   [course](http://github.com/oxford-cs-deepnlp-2017/lectures) from Oxford and DeepMind `video`  
-  [course](http://phontron.com/class/nn4nlp2019/schedule.html) from CMU ([videos](https://youtube.com/user/neubig/playlists))  
+  [course](http://phontron.com/class/nn4nlp2020) from CMU ([videos](https://youtube.com/user/neubig/playlists))  
   [course](http://youtube.com/playlist?list=PLt1IfGj6-_-f55ULcae3v7YuG8p_eUjnk) from iPavlov and Yandex `video` `in russian`  
   [course](https://my.compscicenter.ru/courses/introduction-nlp) by Anton Alexeev ([videos](https://youtube.com/playlist?list=PLlb7e2G7aSpRTcBciP6VBJJPvdH_DXRXQ)) `in russian`  
 
@@ -109,6 +109,10 @@
 
 ----
 
+  [**"Survey on Semantic Parsing"**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#survey-on-semantic-parsing-kamath-das) by Kamath and Das `paper` `overview`
+
+----
+
   - *formal semantics*  
 	* focusing on functional elements and composition while largely ignoring lexical aspects of meaning and lacking methods to learn the proposed structures from data  
 	* focusing on prepositions, articles, quantifiers, coordination, auxiliary verbs, propnouns, negation  
@@ -167,6 +171,10 @@
 
   - *CCG parsing*  
 	[overview](http://youtube.com/playlist?list=PLun-LUE1uLNvWi-qV-tRHohfHR90Y_cAk) by Yoav Artzi `video`
+
+----
+
+  ["NonCompositional"](https://fh295.github.io/noncompositional.html) by Felix Hill
 
 ----
 

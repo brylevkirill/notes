@@ -481,33 +481,17 @@
 ---
 ### problems
 
-  characteristics:  
-  - can learn any function  
-  - inherently handles uncertainty  
-    * uncertainty in actions
-    * uncertainty in observations
-  - directly maximizes criteria we care about  
-  - copes with delayed feedback  
-    * temporal credit assignment problem  
+  1. Training off-line from the fixed logs of an external behavior policy.  
+  2. Learning on the real system from limited samples.  
+  3. High-dimensional continuous state and action spaces.  
+  4. Safety constraints that should never or at least rarely be violated.  
+  5. Tasks that may be partially observable, non-stationary or stochastic.  
+  6. Reward functions that are unspecified, multi-objective, or risk-sensitive.  
+  7. System operators who desire explainable policies and actions.  
+  8. Inference that must happen in real-time at the control frequency of the system.  
+  9. Large and/or unknown delays in the system actuators, sensors, or rewards.  
 
-  challenges:  
-  - stability (non-stationary and online data)  
-  - credit assigment (delayed rewards and consequences)  
-  - exploration vs exploitation (need for trial and error)  
-  - using learned model of environment  
-
-  problems:  
-  - adaptive methods for large number of conditions  
-  - exploration problem in large MDPs  
-  - learning and acting under partial information  
-  - hierarchical learning over multiple time scales  
-  - sample efficiency  
-  - algorithms for large or continuous action spaces  
-  - transfer learning  
-  - lifelong learning  
-  - efficient sample-based planning  
-  - multiagent or distributed learning  
-  - learning from demonstrations  
+  ["Challenges of Real-World Reinforcement Learning"](https://arxiv.org/abs/1904.12901) by Dulac-Arnold et al.
 
 ----
 
@@ -768,7 +752,7 @@
   - [**predictive models**](#exploration-and-intrinsic-motivation---predictive-models)
     - **predictive novelty motivation (prediction error)**
     - **learning progress motivation (prediction gain)**
-    - **predictive familiarity motivation**
+    - **predictive familiarity motivation (homeostasis)**
   - [**competence-based models**](#exploration-and-intrinsic-motivation---competence-based-models)
     - **maximizing incompetence motivation**
     - **maximizing competence progress (automated curriculum learning)**
@@ -921,11 +905,12 @@
 	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
 
 
-  - **predictive familiarity motivation**
+  - **predictive familiarity motivation (homeostasis)**
 
 	> "In the psychology literature, intrinsic motivations refer generally to mechanisms that push organisms to explore their environment. Yet, there are direct variants of previous computational systems that are both simple and correspond intuitively to existing forms of human motivation. For example, a slight mathematical variation of predictive novelty motivation would model a motivation to search for situation which are very predictable, and thus familiar: r(SM(→ t)) = C/Er(t), where C is a constant. It would actually be sound to consider this kind of motivation as intrinsic, in spite of the fact that it will typically not push an organism to explore its environment."
 
-	["Information Theoretically Aided Reinforcement Learning for Embodied Agents"](https://arxiv.org/abs/1605.09735) by Montufar et al. `paper`
+	["Information Theoretically Aided Reinforcement Learning for Embodied Agents"](https://arxiv.org/abs/1605.09735) by Montufar et al. `paper`  
+	["SMiRL: Surprise Minimizing RL in Dynamic Environments"](https://arxiv.org/abs/1912.05510) by Berseth et al. `paper` ([overview](http://www.fields.utoronto.ca/video-archive/2019/10/2509-21418) (36:15) `video`)  
 
 
 ----
@@ -1877,6 +1862,7 @@ interesting recent papers:
   - `video` <https://slideslive.com/38922026/deep-reinforcement-learning-2?t=3855> (Schrittwieser)
   - `video` <https://youtube.com/watch?v=We20YSAJZSE> (Kilcher)
   - `video` <https://slideslive.com/38921974/perception-as-generative-reasoning-structure-causality-probability-3?t=3954> (Rezende)
+  - `video` <https://youtube.com/watch?v=szbvm8aNDxw>
   - `notes` <https://www.shortscience.org/paper?bibtexKey=journals/corr/1911.08265>
 
 
@@ -1929,6 +1915,7 @@ interesting recent papers:
 
 
 #### ["Mastering the Game of Go with Deep Neural Networks and Tree Search"](https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf) Silver et al.
+  `AlphaGo`
 >	"The game of Go has long been viewed as the most challenging of classic games for artificial intelligence due to its enormous search space and the difficulty of evaluating board positions and moves. We introduce a new approach to computer Go that uses value networks to evaluate board positions and policy networks to select moves. These deep neural networks are trained by a novel combination of supervised learning from human expert games, and reinforcement learning from games of self-play. Without any lookahead search, the neural networks play Go at the level of state-of-the-art Monte-Carlo tree search programs that simulate thousands of random games of self-play. We also introduce a new search algorithm that combines Monte-Carlo simulation with value and policy networks. Using this search algorithm, our program AlphaGo achieved a 99.8% winning rate against other Go programs, and defeated the European Go champion by 5 games to 0. This is the first time that a computer program has defeated a human professional player in the full-sized game of Go, a feat previously thought to be at least a decade away."
 
 ----
@@ -2054,11 +2041,13 @@ interesting recent papers:
 >	"AlphaGo Zero tuned the hyper-parameter of its search by Bayesian optimization. In AlphaZero they reuse the same hyper-parameters for all games without game-specific tuning. The sole exception is the noise that is added to the prior policy to ensure exploration; this is scaled in proportion to the typical number of legal moves for that game type. Like AlphaGo Zero, the board state is encoded by spatial planes based only on the basic rules for each game. The actions are encoded by either spatial planes or a flat vector, again based only on the basic rules for each game. They applied the AlphaZero algorithm to chess, shogi, and also Go. Unless otherwise specified, the same algorithm settings, network architecture, and hyper-parameters were used for all three games."
 
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games> (demo)
+  - `post` <https://deepmind.com/blog/article/alphazero-shedding-new-light-grand-games-chess-shogi-and-go>
   - `video` <https://vimeo.com/252184928#t=1468> (Silver)
   - `video` <https://youtu.be/N8_gVrIPLQM?t=47m9s> (Silver)
   - `video` <https://youtube.com/watch?v=mzjGNo9Tz4g> (Silver)
   - `video` <https://youtu.be/3N9phq_yZP0?t=12m43s> (Hassabis)
   - `video` <https://youtu.be/DXNqYSNvnjA?t=21m24s> (Hassabis)
+  - `video` <https://youtube.com/watch?v=4FdiTTZPkos>
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
   - `notes` <https://blog.acolyer.org/2018/01/10/mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm/>
   - `code` <https://github.com/glinscott/leela-chess>
@@ -3307,6 +3296,7 @@ interesting recent papers:
 
 
 #### ["Trust Region Policy Optimization"](http://arxiv.org/abs/1502.05477) Schulman, Levine, Moritz, Jordan, Abbeel
+  `TRPO`
 >	"In this article, we describe a method for optimizing control policies, with guaranteed monotonic improvement. By making several approximations to the theoretically-justified scheme, we develop a practical algorithm, called Trust Region Policy Optimization. This algorithm is effective for optimizing large nonlinear policies such as neural networks. Our experiments demonstrate its robust performance on a wide variety of tasks: learning simulated robotic swimming, hopping, and walking gaits; and playing Atari games using images of the screen as input. Despite its approximations that deviate from the theory, TRPO tends to give monotonic improvement, with little tuning of hyperparameters."
 
 >	"We proposed and analyzed trust region methods for optimizing stochastic control policies. We proved monotonic improvement for an algorithm that repeatedly optimizes a local approximation to the expected cost of the policy with a KL divergence penalty, and we showed that an approximation to this method that incorporates a KL divergence constraint achieves good empirical results on a range of challenging policy learning tasks, outperforming prior methods. Our analysis also provides a perspective that unifies policy gradient and policy iteration methods, and shows them to be special limiting cases of an algorithm that optimizes a certain objective subject to a trust region constraint. In the domain of robotic locomotion, we successfully learned controllers for swimming, walking and hopping in a physics simulator, using general purpose neural networks and minimally informative costs. To our knowledge, no prior work has learned controllers from scratch for all of these tasks, using a generic policy search method and non-engineered, general-purpose policy representations. In the game-playing domain, we learned convolutional neural network policies that used raw images as inputs. This requires optimizing extremely high-dimensional policies, and only two prior methods report successful results on this task. Since the method we proposed is scalable and has strong theoretical foundations, we hope that it will serve as a jumping-off point for future work on training large, rich function approximators for a range of challenging problems. At the intersection of the two experimental domains we explored, there is the possibility of learning robotic control policies that use vision and raw sensory data as input, providing a unified scheme for training robotic controllers that perform both perception and control. The use of more sophisticated policies, including recurrent policies with hidden state, could further make it possible to roll state estimation and control into the same policy in the partially-observed setting. By combining our method with model learning, it would also be possible to substantially reduce its sample complexity, making it applicable to real-world settings where samples are expensive."
@@ -3319,6 +3309,9 @@ interesting recent papers:
 ----
 >	"There's an identity that was first proven by Sham and Kakade in 2002 that lets you express a policy in terms of how good it is compared to another, different, policy. Furthermore, you can show that using this identity, it's possible to guarantee that the policy improves during an update. The goal of TRPO is to maximize the improvement of the "new" policy that you get after optimization compared to the previous "old" policy. To do this, you have to assume that the state visitation distributions of the two policies are similar (this comes from the identity), which they will be if you constrain the KL-divergence between them (i.e. this is like saying "if the new policy is better than the old policy in every state, the new policy is better than the old policy")."  
 >	"TRPO treats this as a constrained optimization problem; i.e. maximize the improvement of the new policy compared to the old policy such that the KL divergence is smaller than a given value. Since you need to take multiple update steps for non-convex constrained optimization (generally using the conjugate gradient method and line search) the advantage estimate is no longer on-policy during the optimization process because you're changing the weights of pi_new compared to pi_old, and then comparing using the rollout taken under pi_old. To correct for the now different policy distributions, importance sampling is used (and this actually falls out the aforementioned identity from Sham and Kakade)."  
+
+----
+>	"TRPO approximates Conservative Policy Iteration algorithm with trust region constraint"
 
   - `video` <https://youtube.com/watch?v=jeid0wIrSn4> + <https://vimeo.com/113957342> (demo)
   - `video` <https://youtube.com/watch?v=CKaN5PgkSBc>
@@ -3337,6 +3330,7 @@ interesting recent papers:
   - `code` <https://github.com/reinforceio/tensorforce/blob/master/tensorforce/models/trpo_model.py>
   - `code` <https://github.com/ikostrikov/pytorch-trpo>
   - `code` <https://github.com/kvfrans/parallel-trpo>
+  - `paper` ["Approximately Optimal Approximate Reinforcement Learning"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.7.7601) by Kakade, Langford
 
 
 #### ["High-Dimensional Continuous Control Using Generalized Advantage Estimation"](http://arxiv.org/abs/1506.02438) Schulman, Moritz, Levine, Jordan, Abbeel
@@ -3354,7 +3348,7 @@ interesting recent papers:
 
 
 #### ["Proximal Policy Optimization Algorithms"](https://arxiv.org/abs/1707.06347) Schulman, Wolski, Dhariwal, Radford, Klimov
-  `PPO` `policy gradient` `on-policy`
+  `PPO`
 >	"We propose a new family of policy gradient methods for reinforcement learning, which alternate between sampling data through interaction with the environment, and optimizing a "surrogate" objective function using stochastic gradient ascent. Whereas standard policy gradient methods perform one gradient update per data sample, we propose a novel objective function that enables multiple epochs of minibatch updates. The new methods, which we call proximal policy optimization, have some of the benefits of trust region policy optimization, but they are much simpler to implement, more general, and have better sample complexity (empirically). Our experiments test PPO on a collection of benchmark tasks, including simulated robotic locomotion and Atari game playing, and we show that PPO outperforms other online policy gradient methods, and overall strikes a favorable balance between sample complexity, simplicity, and wall-time."
 
 ----
