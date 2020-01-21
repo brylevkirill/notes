@@ -218,6 +218,8 @@
 	["Sample-Based Learning and Search with Permanent and Transient Memories"](https://researchgate.net/publication/221346457_Sample-based_learning_and_search_with_permanent_and_transient_memories) by Silver et al. ([talk](http://videolectures.net/icml08_silver_sbl) `video`) *(Dyna-2)*  
 	["Combining Online and Offline Knowledge in UCT"](https://researchgate.net/publication/29651027_Combining_Online_and_Offline_Knowledge_in_UCT) by Gelly and Silver `paper` ([talk](https://youtube.com/watch?v=Bm7zah_LrmE) `video`) *(MoGo)*  
 
+	[AlphaGo, AlphaGo Zero, MuZero overview](https://youtube.com/playlist?list=PLnn6VZp3hqNsrsp_Bg-bEfzzhJ3SuEZE9) `video`
+
 	[AlphaGo Zero overview](https://vimeo.com/252184928/#t=711) by David Silver `video`  
 	[AlphaGo Zero overview](https://youtu.be/DXNqYSNvnjA?t=16m41s) by Demis Hassabis `video`  
 
@@ -243,6 +245,8 @@
 	[**"Giraffe: Using Deep Reinforcement Learning to Play Chess"**](#giraffe-using-deep-reinforcement-learning-to-play-chess-lai) by Lai `paper` `summary` *(Giraffe)*  
 	[**"Bootstrapping from Game Tree Search"**](#bootstrapping-from-game-tree-search-veness-silver-uther-blair) by Veness et al. `paper` `summary` *(TreeStrap)*  
 	["KnightCap: A Chess Program that Learns by Combining TD(lambda) with Game-tree Search"](https://arxiv.org/abs/cs/9901002) by Baxter et al. `paper` *(KnightCap)*  
+
+	[AlphaZero, MuZero overview](https://youtube.com/playlist?list=PLnn6VZp3hqNsrsp_Bg-bEfzzhJ3SuEZE9) `video`
 
 	[AlphaZero overview](https://vimeo.com/252184928#t=1468) by David Silver `video`  
 	[AlphaZero overview](https://youtu.be/N8_gVrIPLQM?t=47m9s) by David Silver `video`  
@@ -1859,10 +1863,10 @@ interesting recent papers:
 
 >	"We tested our model-based learning algorithm against a comparable model-free learning algorithm. When evaluated on Ms. Pacman, our model-free algorithm achieved identical results to R2D2, but learned significantly slower than MuZero and converged to a much lower final score. We conjecture that the search-based policy improvement step of MuZero provides a stronger learning signal than the high bias, high variance targets used by Q-learning."
 
+  - `video` <https://youtube.com/playlist?list=PLnn6VZp3hqNsrsp_Bg-bEfzzhJ3SuEZE9>
   - `video` <https://slideslive.com/38922026/deep-reinforcement-learning-2?t=3855> (Schrittwieser)
   - `video` <https://youtube.com/watch?v=We20YSAJZSE> (Kilcher)
   - `video` <https://slideslive.com/38921974/perception-as-generative-reasoning-structure-causality-probability-3?t=3954> (Rezende)
-  - `video` <https://youtube.com/watch?v=szbvm8aNDxw>
   - `notes` <https://www.shortscience.org/paper?bibtexKey=journals/corr/1911.08265>
 
 
@@ -1891,12 +1895,12 @@ interesting recent papers:
 >	"There's a continuum between expert iteration and policy gradients. Let's say we have a two probability distributions, called policy and expert. We can write down a distance between them in two different ways. (1) KL[policy, expert] = policy * log(expert) - S[policy] (2) KL[expert, policy] = expert * log(policy) + constant. Policy gradients uses (1), and we set expert = exp(advantage estimate). AGZ uses (2) and defines expert using MCTS on the policy. The continuum between policy gradients and AGZ arises because we can vary the amount of work we put into computing the expert policy. On one extreme, policy gradient methods use a very cheap-to-compute expert: the advantage function estimate. On the other extreme, AGZ uses a very expensive-to-compute expert (via MCTS), which is much better than the current policy. Another dimension in this expert space is the bias-variance tradeoff: whether we use a Monte-Carlo estimate of returns or a learned value function. I'm curious to know under what conditions you benefit from using a more expensive expert. Anyway, I think there are a lot of interesting experiments left to do to analyze the space of algorithms between policy gradients and expert iteration."  
 
   - `post` <https://deepmind.com/blog/alphago-zero-learning-scratch/>
+  - `video` <https://youtube.com/playlist?list=PLnn6VZp3hqNsrsp_Bg-bEfzzhJ3SuEZE9>
   - `video` <https://vimeo.com/252184928/#t=711> (Silver)
   - `video` <https://youtu.be/DXNqYSNvnjA?t=16m41s> (Hassabis)
   - `video` <https://youtube.com/watch?v=6fKG4wJ7uBk> (Baudis)
   - `video` <https://youtube.com/watch?v=XuzIqE2IshY> (Kington)
   - `video` <https://youtube.com/watch?v=_x9bXso3wo4> (Hinzman)
-  - `video` <https://youtube.com/watch?v=B1MUfP1qqLs>
   - `video` <https://youtu.be/V0HNXVSrvhg?t=1h20m45s> + <https://youtu.be/Lz5_xFGt2hA?t=3m11s> (Grinchuk) `in russian`
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
   - `video` <https://youtu.be/zHjE07NBA_o?t=1h10m24s> (Kozlov) `in russian`
@@ -1923,9 +1927,9 @@ interesting recent papers:
 >	"The most important application of reinforcement learning here is to learn a value function which aims to predict with which probability a certain position will lead to winning the game. The learned expert moves are already good, but the network that produces them did not learn with the objective to win the game, but only to minimize the differences to the teacher values in the training data set."  
 
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games> (demo)
+  - `video` <https://youtube.com/playlist?list=PLnn6VZp3hqNsrsp_Bg-bEfzzhJ3SuEZE9>
   - `video` <http://youtube.com/watch?v=4D5yGiYe8p4> (Silver)
   - `video` <http://youtube.com/watch?v=LX8Knl0g0LE> (Huang)
-  - `video` <https://youtube.com/watch?v=jgAj8CqcBBs>
   - `video` <http://youtube.com/watch?v=UMm0XaCFTJQ> (Sutton, Szepesvari, Bowling, Hayward, Muller)
   - `video` <https://youtu.be/WM4HC720Cms?t=1h18m21s> (Nikolenko) `in russian`
   - `video` <https://youtube.com/watch?v=zHjE07NBA_o> (Kozlov) `in russian`
@@ -2042,12 +2046,12 @@ interesting recent papers:
 
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#games> (demo)
   - `post` <https://deepmind.com/blog/article/alphazero-shedding-new-light-grand-games-chess-shogi-and-go>
+  - `video` <https://youtube.com/playlist?list=PLnn6VZp3hqNsrsp_Bg-bEfzzhJ3SuEZE9>
   - `video` <https://vimeo.com/252184928#t=1468> (Silver)
   - `video` <https://youtu.be/N8_gVrIPLQM?t=47m9s> (Silver)
   - `video` <https://youtube.com/watch?v=mzjGNo9Tz4g> (Silver)
   - `video` <https://youtu.be/3N9phq_yZP0?t=12m43s> (Hassabis)
   - `video` <https://youtu.be/DXNqYSNvnjA?t=21m24s> (Hassabis)
-  - `video` <https://youtube.com/watch?v=4FdiTTZPkos>
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
   - `notes` <https://blog.acolyer.org/2018/01/10/mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm/>
   - `code` <https://github.com/glinscott/leela-chess>

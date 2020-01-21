@@ -2598,16 +2598,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 #### ["Learning and Policy Search in Stochastic Dynamic Systems with Bayesian Neural Networks"](https://arxiv.org/abs/1605.07127) Depeweg, Hernandez-Lobato, Doshi-Velez, Udluft
   `learning to simulate` `learning environment model`
->	"Monte-Carlo model-based policy gradient technique in continuous stochastic systems"  
->	"Proposed approach enables automatic identification of arbitrary stochastic patterns such as multimodality and heteroskedasticity, without having to manually incorporate these into the model."  
->	"We have extended Bayesian neural network with addition of a random input noise source z. This enables principled Bayesian inference over complex stochastic functions. We have also presented an algorithm that uses random roll-outs and stochastic optimization for learning a parameterized policy in a batch scenario. Our BNNs with random inputs have allowed us to solve a challenging benchmark problem where model-based approaches usually fail."  
->	"For safety, we believe having uncertainty over the underlying stochastic functions will allow us to optimize policies by focusing on worst case results instead of on average performance. For exploration, having uncertainty on the stochastic functions will be useful for efficient data collection."  
->	"The optimal policy can be significantly affected by the noise present in the state transitions. This is illustrated by the drunken spider story, in which a spider has two possible paths to go home: either by crossing the bridge or by walking around the lake. In the absence of noise, the bridge option is prefered since it is shorter. However, after heavily drinking alcohol, the spider’s movements may randomly deviate left or right. Since the bridge is narrow, and spiders do not like swimming, the prefered trajectory is now to walk around the lake. The previous example shows how noise can significantly affect optimal control. For example, the optimal policy may change depending on whether the level of noise is high or low. Therefore, we expect to obtain significant improvements in model-based reinforcement learning by capturing with high accuracy any noise patterns present in the state transition data."  
-  - `post` <https://medium.com/towards-data-science/bayesian-neural-networks-with-random-inputs-for-model-based-reinforcement-learning-36606a9399b4> (Hernandez-Lobato)
-  - `video` <https://youtube.com/watch?v=0H3EkUPENSY> (Hernandez-Lobato)
-  - `video` <https://youtube.com/watch?v=J4KLWjZ1QVM> (Hernandez-Lobato)
-  - `slides` <https://yadi.sk/i/NCrM4cEb3NhQux>
-  - `code` <https://github.com/siemens/policy_search_bb-alpha>
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#learning-and-policy-search-in-stochastic-dynamic-systems-with-bayesian-neural-networks-depeweg-hernandez-lobato-doshi-velez-udluft>
 
 
 

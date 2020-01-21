@@ -264,49 +264,25 @@
 
   [**papers and resources**](#interesting-papers---bayesian-inference-and-learning)
 
-  [**bayesian inference and learning**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
-
-----
-
-  ["Bayesian Reasoning and Deep Learning in Agent-based Systems"](https://youtube.com/watch?v=AggqBRdz6CQ) by Shakir Mohamed `video`  
-  ["Is Bayesian Deep Learning the Most Brilliant Thing Ever"](https://youtube.com/watch?v=HumFmLu3CJ8) panel discussion `video`  
-
-  ["Neurobayesian Approach for Machine Learning"](https://youtu.be/kFe5zSkro0E?t=17m16s) by Dmitry Vetrov `video` `in russian`
-	([write-up](https://habrahabr.ru/company/yandex/blog/321434/) `in russian`)  
-  ["Bayesian Methods in Deep Learning"](http://deepbayes.ru) school `in russian`
-	([videos](https://youtube.com/playlist?list=PLEqoHzpnmTfBSyGmE4nBlhxxi28dCZwWN) `in russian`)  
-
-----
-
-  ["Marrying Graphical Models & Deep Learning"](http://videolectures.net/deeplearning2017_welling_inference/) by Max Welling `video`
-
-  ["Graphical Models"](http://www.deeplearningbook.org/contents/graphical_models.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
-
-  ["A Neural Network is a Monference, Not a Model"](http://blog.jacobandreas.net/monference.html) by Jacob Andreas
-
-----
-
+  [**bayesian inference and learning**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)  
   [**variational inference**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#variational-inference)  
   [**variational autoencoder**](#generative-models---variational-autoencoder)  
 
 ----
 
-  ["Bayesian Neural Networks"](http://videolectures.net/DLRLsummerschool2018_wilson_bayesian_neural_nets) by Andrew Wilson `video`  
-  ["A History of Bayesian Neural Networks"](https://youtube.com/watch?v=FD8l2vPU5FY) by Zoubin Ghahramani `video`  
-  ["Bayesian Neural Networks"](https://youtube.com/watch?v=tqGEX_Ucu04) by Dmitry Molchanov `video` `in russian`
-	([slides](https://drive.google.com/file/d/0B1xR8nRvoZdNMGR0Y2JsdG9CSGs/) `in english`)  
+  ["Graphical Models"](http://www.deeplearningbook.org/contents/graphical_models.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
+
+  ["The Case for Bayesian Deep Learning"](https://cims.nyu.edu/~andrewgw/caseforbdl) by Andrew Wilson  
+  ["A Sober Look at Bayesian Neural Networks"](https://jacobbuckman.com/2020-01-17-a-sober-look-at-bayesian-neural-networks) by Carles Gelada and Jacob Buckman  
+  ["A Neural Network is a Monference, Not a Model"](http://blog.jacobandreas.net/monference.html) by Jacob Andreas  
 
 ----
 
   ["Deep Learning: Efficiency is the Driver of Uncertainty"](http://inverseprobability.com/2016/03/04/deep-learning-and-uncertainty) by Neil Lawrence  
   ["Deep Learning Is Not Good Enough, We Need Bayesian Deep Learning for Safe AI"](https://alexgkendall.com/computer_vision/bayesian_deep_learning_for_safe_ai/) by Alex Kendall  
 
-  ["Scalable and Flexible Models of Uncertainty"](https://csc2541-f17.github.io) course by Roger Grosse
-
   ["What My Deep Model Doesn't Know..."](http://mlg.eng.cam.ac.uk/yarin/blog_3d801aa532c1ce.html) by Yarin Gal  
   ["Uncertainty In Deep Learning"](http://mlg.eng.cam.ac.uk/yarin/blog_2248.html) by Yarin Gal  
-
-  ["Information Theory, Pattern Recognition and Neural Networks"](http://videolectures.net/course_information_theory_pattern_recognition/) course by David MacKay `video`
 
 ----
 
@@ -319,6 +295,22 @@
   - ["What is Deep?"](http://blog.shakirm.com/2015/06/a-statistical-view-of-deep-learning-vi-what-is-deep/)  
 
   ["Everything that Works Works Because it's Bayesian: Why Deep Nets Generalize?"](http://inference.vc/everything-that-works-works-because-its-bayesian-2/) by Ferenc Huszar
+
+----
+
+  ["Bayesian Reasoning and Deep Learning in Agent-based Systems"](https://youtube.com/watch?v=AggqBRdz6CQ) by Shakir Mohamed `video`  
+  ["Is Bayesian Deep Learning the Most Brilliant Thing Ever"](https://youtube.com/watch?v=HumFmLu3CJ8) panel discussion `video`  
+
+  ["Marrying Graphical Models & Deep Learning"](http://videolectures.net/deeplearning2017_welling_inference/) by Max Welling `video`  
+  ["Bayesian Neural Networks"](http://videolectures.net/DLRLsummerschool2018_wilson_bayesian_neural_nets) by Andrew Wilson `video`  
+  ["A History of Bayesian Neural Networks"](https://youtube.com/watch?v=FD8l2vPU5FY) by Zoubin Ghahramani `video`  
+  ["Bayesian Neural Networks"](https://youtube.com/watch?v=tqGEX_Ucu04) by Dmitry Molchanov `video` `in russian`
+	([slides](https://drive.google.com/file/d/0B1xR8nRvoZdNMGR0Y2JsdG9CSGs/) `in english`)  
+
+  ["Information Theory, Pattern Recognition and Neural Networks"](http://videolectures.net/course_information_theory_pattern_recognition/) course by David MacKay `video`
+
+  ["Bayesian Methods in Deep Learning"](http://deepbayes.ru) school `in russian`
+	([videos](https://youtube.com/channel/UC9KcwaZ9gSvcYNs7Jx3oNaQ/playlists) `in russian`)
 
 ----
 
@@ -2622,6 +2614,9 @@ Yoshua Bengio:
   - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/transformer.py>
   - `code` <https://colab.research.google.com/notebook#fileId=/v2/external/notebooks/t2t/hello_t2t.ipynb>
   - `code` <https://github.com/jadore801120/attention-is-all-you-need-pytorch>
+  - `paper` [**"Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#exploring-the-limits-of-transfer-learning-with-a-unified-text-to-text-transformer-raffel-et-al) by Raffel et al. `summary`
+  - `paper` [**"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"**](#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-devlin-chang-lee-toutanova) by Devlin et al. `summary`
+  - `paper` [**"Language Models are Unsupervised Multitask Learners"**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#language-models-are-unsupervised-multitask-learners-radford-wu-child-luan-amodei-sutskever) by Radford et al. `summary`
 
 
 #### ["End-To-End Memory Networks"](http://arxiv.org/abs/1503.08895) Sukhbaatar, Szlam, Weston, Fergus

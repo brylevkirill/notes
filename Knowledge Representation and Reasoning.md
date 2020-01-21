@@ -892,6 +892,8 @@
   ["Building Watson - A Brief Overview of DeepQA"](http://youtube.com/watch?v=_dXNXCv5eo8) by Karthik Visweswariah `video`  
   ["Going Beyond Fact-Based Question Answering"](https://youtube.com/watch?v=w87_VsP3zec) by Erik Mueller `video`  
 
+  ["Would a Computer beat the Jeopardy! GOAT?"](https://youtube.com/watch?v=D7i3jpBhBpw) by Jordan Boyd-Graber `video` [**(QANTA project)**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#a-neural-network-for-factoid-question-answering-over-paragraphs-iyyer-boyd-graber-claudino-socher-daume)
+
 ----
 
   ["Building Watson: An Overview of the DeepQA Project"](https://aaai.org/ojs/index.php/aimagazine/article/view/2303) by Ferrucci et al. `paper`  
@@ -1602,6 +1604,8 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 Quiz bowl is a fun game with excellent opportunities for outreach, but it is also related to core challenges in natural language processing: classification (sorting inputs and making predictions), discourse (using pragmatic clues to guess what will come next), and coreference resolution (knowing which entities are discussed from oblique mentions)."
 
 >	"Why not traditional QA? Information Retrieval systems work by querying some large knowledge base for terms similar to those in the query. But what if the query lacks informative terms? In such cases, we have to model the compositionality of the query. A dependency-tree recursive neural network model, QANTA, that computes distributed question representations to predict answers. QANTA outperforms multiple strong baselines and defeats human quiz bowl players when combined with IR methods."
+
+>	"Question Answering is Not a Trivial Activity"
 
   - <http://qanta.org>
   - <http://umiacs.umd.edu/~jbg/projects/IIS-1320538.html>
