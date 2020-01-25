@@ -439,6 +439,10 @@
   [exercises and solutions](https://github.com/dennybritz/reinforcement-learning) by Denny Britz  
   [exercises and solutions](https://github.com/yandexdataschool/Practical_RL/) from Yandex  
 
+----
+
+  [RL Weekly](https://endtoend.ai/rl-weekly) newsletter
+
 
 
 ---
@@ -655,7 +659,8 @@
 
   [overview](http://mlanctot.info/files/papers/Lanctot_MARL_RLSS2019_Lille.pdf) by Marc Lanctot `slides`
 
-  [overview](http://youtube.com/watch?v=MEUdtwQev9A) of multi-agent systems by James Wright `video`
+  [overview](http://youtube.com/watch?v=MEUdtwQev9A) of multi-agent systems by James Wright `video`  
+  [overview](http://youtube.com/watch?v=T8G5y_t9bME) of social dilemmas by Dmitry Ivanov `video` `in russian`  
 
   [**recent interesting papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---multi-agent)
 
@@ -716,18 +721,18 @@
 
 ----
 
-  [introduction](https://youtube.com/watch?v=GlTYGmVUTbM) by Ian Osband `video`
-
+  [overview](http://youtube.com/watch?v=aJI_9SoBDaQ) by Andrew Barto `video`  
+  [overview](http://youtu.be/DSYzHPW26Ig?t=1h58m29s) by Alex Graves `video`  
   [overview](http://youtube.com/watch?v=sGuiWX07sKw) by David Silver `video`  
-  [overview](http://youtube.com/watch?v=eM6IBYVqXEA) by Hado van Hasselt `video`  
   [overview](http://youtube.com/watch?v=SfCa1HQMkuw) by John Schulman `video`  
+  [overview](http://youtube.com/watch?v=eM6IBYVqXEA) by Hado van Hasselt `video`  
   [overview](http://youtu.be/fIKkhoI1kF4?t=19m23s) by Emma Brunskill `video`  
-  [overview](https://facebook.com/icml.imls/videos/2265408103721327?t=4118) by Pieter Abbeel `video`  
+  [overview](http://youtube.com/watch?v=GlTYGmVUTbM) by Ian Osband `video`  
+  [overview](http://facebook.com/icml.imls/videos/2265408103721327?t=4118) by Pieter Abbeel `video`  
+  [overview](http://youtube.com/watch?v=EMv1AVLOnto) by Oleg Svidchenko `video` `in russian`  
   [overview](http://youtube.com/watch?v=WCE9hhPbCmc) by Maxim Kretov `video` `in russian`  
 
 ----
-
-  [overview](https://youtu.be/DSYzHPW26Ig?t=1h58m29s) by Alex Graves `video`
 
   ["Comparing Intrinsic Motivations in a Unified Framework"](https://agi2018imtutorial.wordpress.com) tutorial by Martin Biehl
 	([video](https://slideslive.com/38909803/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework),
@@ -900,8 +905,10 @@
 
 	[overview](https://youtu.be/DSYzHPW26Ig?t=2h2m39s) by Alex Graves `video`
 
-	["Curious Model-building Control Systems"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.45.2597) by Schmidhuber `paper` ([**Artificial Curiosity and Creativity**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory by Schmidhuber)  
 	["A Possibility for Implementing Curiosity and Boredom in Model-Building Neural Controllers"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.45.957) by Schmidhuber `paper` ([**Artificial Curiosity and Creativity**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory by Schmidhuber)  
+	["Adaptive Confidence and Adaptive Curiosity"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.34.5686) by Schmidhuber `paper` ([**Artificial Curiosity and Creativity**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory by Schmidhuber)  
+	["Curious Model-building Control Systems"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.45.2597) by Schmidhuber `paper` ([**Artificial Curiosity and Creativity**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory by Schmidhuber)  
+	["What's Interesting?"](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#whats-interesting-schmidhuber) by Schmidhuber `paper` `summary` ([**Artificial Curiosity and Creativity**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory by Schmidhuber)  
 	["Exploration in Model-based Reinforcement Learning by Empirically Estimating Learning Progress"](https://papers.nips.cc/paper/4642-exploration-in-model-based-reinforcement-learning-by-empirically-estimating-learning-progress) by Lopes et al. `paper`  
 	[**"Automated Curriculum Learning for Neural Networks"**](#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper` `summary`  
 
@@ -2237,6 +2244,37 @@ interesting recent papers:
 >	"What are the functions of curiosity? What are the mechanisms of curiosity-driven learning? We approach these questions about the living using concepts and tools from machine learning and developmental robotics. We argue that curiosity-driven learning enables organisms to make discoveries to solve complex problems with rare or deceptive rewards. By fostering exploration and discovery of a diversity of behavioural skills, and ignoring these rewards, curiosity can be efficient to bootstrap learning when there is no information, or deceptive information, about local improvement towards these problems. We also explain the key role of curiosity for efficient learning of world models. We review both normative and heuristic computational frameworks used to understand the mechanisms of curiosity in humans, conceptualizing the child as a sense-making organism. These frameworks enable us to discuss the bi-directional causal links between curiosity and learning, and to provide new hypotheses about the fundamental role of curiosity in self-organizing developmental structures through curriculum learning. We present various developmental robotics experiments that study these mechanisms in action, both supporting these hypotheses to understand better curiosity in humans and opening new research avenues in machine learning and artificial intelligence. Finally, we discuss challenges for the design of experimental paradigms for studying curiosity in psychology and cognitive neuroscience."
 
 
+#### ["Where Do Rewards Come From?"](https://researchgate.net/publication/200744428_Where_Do_Rewards_Come_From) Singh, Lewis, Barto
+  `optimal reward framework`
+>	"Reinforcement learning has achieved broad and successful application in cognitive science in part because of its general formulation of the adaptive control problem as the maximization of a scalar reward function. The computational reinforcement learning framework is motivated by correspondences to animal reward processes, but it leaves the source and nature of the rewards unspecified. This paper advances a general computational framework for reward that places it in an evolutionary context, formulating a notion of an optimal reward function given a fitness function and some distribution of environments. Novel results from computational experiments show how traditional notions of extrinsically and intrinsically motivated behaviors may emerge from such optimal reward functions. In the experiments these rewards are discovered through automated search rather than crafted by hand. The precise form of the optimal reward functions need not bear a direct relationship to the fitness function, but may nonetheless confer significant advantages over rewards based only on fitness."
+
+----
+>	"Most often the starting point is an agent-designer that has an objective reward function that specifies preferences over agent behavior. What should the agent's reward function be? A single reward function confounds two roles simultaneously in RL agents:  
+>	1. (Preferences) It expresses the agent-designer's preferences over behaviors; used to evaluate agent behavior.  
+>	2. (Parameters) Through the reward hypothesis it expresses the RL agent's goals/purposes and becomes parameters of actual agent behaviour; used to guide agent behavior.  
+>	These roles are distinct; yet it seems to make sense to confound these two roles to align the interests of the agent with the designer.  
+>	The overall message: breaking this confound can help!"  
+
+>	"rewards vs reward signals:  
+>	Rewards are objects or events that make us come back for more. We need them for survival and use them for behavioral choices that maximize them.  
+>	Reward neurons produce reward signals and use them for influencing brain activity that controls our actions, decisions and choices."  
+
+  - `video` <http://videolectures.net/deeplearning2017_singh_reinforcement_learning/#t=1192> (Singh)
+  - `video` <https://youtube.com/watch?v=MhIP1SOqlS8> (Singh)
+  - `video` <https://youtu.be/_4oL3DDCwCw?t=11m47s> (Singh)
+  - `video` <https://youtu.be/DtUSF3QHWIM?t=7m33s> (Singh)
+  - `video` <https://coursera.org/lecture/prediction-control-function-approximation/satinder-singh-on-intrinsic-rewards-TKPHV> (Singh)
+  - `video` <https://youtu.be/aJI_9SoBDaQ?t=17m9s> + <https://youtu.be/aJI_9SoBDaQ?t=28m14s> (Barto)
+
+
+#### ["Intrinsically Motivated Reinforcement Learning: An Evolutionary Perspective"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.180.1045) Singh, Lewis, Barto, Sorg
+  `optimal reward framework`
+>	"There is great interest in building intrinsic motivation into artificial systems using the reinforcement learning framework. Yet, what intrinsic motivation may mean computationally, and how it may differ from extrinsic motivation, remains a murky and controversial subject. In this article, we adopt an evolutionary perspective and define a new optimal reward framework that captures the pressure to design good primary reward functions that lead to evolutionary success across environments. The results of two computational experiments show that optimal primary reward signals may yield both emergent intrinsic and extrinsic motivation. The evolutionary perspective and the associated optimal reward framework thus lead to the conclusion that there are no hard and fast features distinguishing intrinsic and extrinsic reward computationally. Rather, the directness of the relationship between rewarding behavior and evolutionary success varies along a continuum."
+
+  - `video` <https://youtu.be/aJI_9SoBDaQ?t=17m9s> + <https://youtu.be/aJI_9SoBDaQ?t=28m14s> (Barto)
+
+
+
 ---
 ### interesting papers - exploration and intrinsic motivation - bayesian exploration
 
@@ -2509,7 +2547,7 @@ interesting recent papers:
 
 
 #### ["Unifying Count-Based Exploration and Intrinsic Motivation"](http://arxiv.org/abs/1606.01868) Bellemare, Srinivasan, Ostrovski, Schaul, Saxton, Munos
-  `A3C-CTS`
+  `DQN-CTS` `NIPS 2016`
 >	"We consider an agent's uncertainty about its environment and the problem of generalizing this uncertainty across observations. Specifically, we focus on the problem of exploration in non-tabular reinforcement learning. Drawing inspiration from the intrinsic motivation literature, we use density models to measure uncertainty, and propose a novel algorithm for deriving a pseudo-count from an arbitrary density model. This technique enables us to generalize count-based exploration algorithms to the non-tabular case. We apply our ideas to Atari 2600 games, providing sensible pseudo-counts from raw pixels. We transform these pseudo-counts into intrinsic rewards and obtain significantly improved exploration in a number of hard games, including the infamously difficult Montezuma's Revenge."
 
 >	"Many of hard RL problems share one thing in common: rewards are few and far between. In reinforcement learning, exploration is the process by which an agent comes to understand its environment and discover where the reward is. Most practical RL applications still rely on crude algorithms, like epsilon-greedy (once in awhile, choose a random action), because more theoretically-motivated approaches don't scale. But epsilon-greedy is quite data inefficient, and often can't even get off the ground. In this paper we show that it's possible to use simple density models (assigning probabilities to states) to "count" the number of times we've visited a particular state. We call the output of our algorithm a pseudo-count. Pseudo-counts give us a handle on uncertainty: how confident are we that we've explored this part of the game?"
@@ -2543,18 +2581,26 @@ interesting recent papers:
 
 
 #### ["Count-Based Exploration with Neural Density Models"](http://arxiv.org/abs/1703.01310) Ostrovski, Bellemare, van den Oord, Munos
-  `Reactor-PixelCNN`
+  `DQN-PixelCNN` `ICML 2017`
 >	"Bellemare et al. (2016) introduced the notion of a pseudo-count to generalize count-based exploration to non-tabular reinforcement learning. This pseudo-count is derived from a density model which effectively replaces the count table used in the tabular setting. Using an exploration bonus based on this pseudo-count and a mixed Monte Carlo update applied to a DQN agent was sufficient to achieve state-of-the-art on the Atari 2600 game Montezuma's Revenge. In this paper we consider two questions left open by their work: First, how important is the quality of the density model for exploration? Second, what role does the Monte Carlo update play in exploration? We answer the first question by demonstrating the use of PixelCNN, an advanced neural density model for images, to supply a pseudo-count. In particular, we examine the intrinsic difficulties in adapting Bellemare et al's approach when assumptions about the model are violated. The result is a more practical and general algorithm requiring no special apparatus. We combine PixelCNN pseudo-counts with different agent architectures to dramatically improve the state of the art on several hard Atari games. One surprising finding is that the mixed Monte Carlo update is a powerful facilitator of exploration in the sparsest of settings, including Montezuma's Revenge."
 
+  - `video` <http://youtube.com/watch?v=qSfd27AgcEk> (Bellemare)
+  - `video` <https://vimeo.com/238243932> (Bellemare)
+  - `video` <http://videolectures.net/DLRLsummerschool2018_bellemare_deep_RL/#t=3474> (Bellemare)
+  - `video` <https://youtu.be/EMv1AVLOnto?t=1m49s> (Svidchenko) `in russian`
   - `paper` [**"Unifying Count-Based Exploration and Intrinsic Motivation"**](#unifying-count-based-exploration-and-intrinsic-motivation-bellemare-srinivasan-ostrovski-schaul-saxton-munos) by Bellemare et al. `summary`
+  - `paper` ["Benchmarking Bonus-Based Exploration Methods on the Arcade Learning Environment"](https://drive.google.com/file/d/1I05c4-d9OsNwGZnLx85fR8dnX-yVoTWe) by Taiga et al.
 
 
 #### ["\#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning"](http://arxiv.org/abs/1611.04717) Tang et al.
+  `NIPS 2017`
 >	"Count-based exploration algorithms are known to perform near-optimally when used in conjunction with tabular reinforcement learning methods for solving small discrete Markov decision processes (MDPs). It is generally thought that count-based methods cannot be applied in high-dimensional state spaces, since most states will only occur once. Recent deep RL exploration strategies are able to deal with high-dimensional continuous state spaces through complex heuristics, often relying on optimism in the face of uncertainty or intrinsic motivation. In this work, we describe a surprising finding: a simple generalization of the classic count-based approach can reach near state-of-the-art performance on various highdimensional and/or continuous deep RL benchmarks. States are mapped to hash codes, which allows to count their occurrences with a hash table. These counts are then used to compute a reward bonus according to the classic count-based exploration theory. We find that simple hash functions can achieve surprisingly good results on many challenging tasks. Furthermore, we show that a domain-dependent learned hash code may further improve these results. Detailed analysis reveals important aspects of a good hash function: 1) having appropriate granularity and 2) encoding information relevant to solving the MDP. This exploration strategy achieves near state-of-the-art performance on both continuous control tasks and Atari 2600 games, hence providing a simple yet powerful baseline for solving MDPs that require considerable exploration."
 
 >	"The authors encourage exploration by adding a pseudo-reward of the form beta/sqrt(count(state)) for infrequently visited states. State visits are counted using Locality Sensitive Hashing (LSH) based on an environment-specific feature representation like raw pixels or autoencoder representations. The authors show that this simple technique achieves gains in various classic RL control tasks and several games in the ATARI domain. While the algorithm itself is simple there are now several more hyperaprameters to tune: The bonus coefficient beta, the LSH hashing granularity (how many bits to use for hashing) as well as the type of feature representation based on which the hash is computed, which itself may have more parameters. The experiments don't paint a consistent picture and different environments seem to need vastly different hyperparameter settings, which in my opinion will make this technique difficult to use in practice."
 
   - `videos` <https://facebook.com/icml.imls/videos/2265408103721327?t=4692> (Abbeel)
+  - `videos` <https://youtu.be/EMv1AVLOnto?t=11m37s> (Svidchenko) `in russian`
+  - `slides` <https://phillipi.github.io/6.882/notes/Wk6/2-3_12_2019_Exploration.pdf> (Tang)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1611.04717>
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/%23Exploration:_A_Study_of_Count-Based_Exploration_for_Deep_Reinforcement_Learning.md>
 
@@ -2711,6 +2757,7 @@ interesting recent papers:
   - `post` <https://blog.openai.com/reinforcement-learning-with-prediction-based-rewards> (demo)
   - `video` <https://youtu.be/ElyFDUab30A?t=17m37s> (Sutskever)
   - `video` <https://youtu.be/X-B3nAN7YRM?t=7m8s> (Sutskever)
+  - `video` <https://youtu.be/EMv1AVLOnto?t=17m44s> (Svidchenko) `in russian`
   - `code` <https://github.com/openai/random-network-distillation>
 
 #### ["Large-Scale Study of Curiosity-Driven Learning"](https://arxiv.org/abs/1808.04355) Burda, Edwards, Pathak, Storkey, Darrell, Efros
@@ -2723,6 +2770,7 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=l1FqtAHfJLI>
   - `video` <https://vk.com/video-44016343_456240849> (Efros)
   - `video` <https://youtu.be/8NR6euSDfsM?t=9m4s> (Darrell)
+  - `video` <https://youtu.be/EMv1AVLOnto?t=19m42s> (Svidchenko) `in russian`
   - `code` <https://github.com/openai/large-scale-curiosity>
 
 

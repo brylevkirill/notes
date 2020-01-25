@@ -210,53 +210,6 @@
 
   *(Ian Goodfellow, Youshua Bengio, Aaron Courville)*
 
-----
-
-  "Learning algorithms that learn to represent functions with many levels of composition (more than 2 or 3) are said to have a deep architecture. Results in computational theory of circuits strongly suggest that, compared to their shallow counterparts, deep architectures are much more efficient in terms of representation, that is, can require a smaller number of computational elements or of parameters to approximate a target function. In spite of the fact that 2-level architectures (such as one-hidden layer neural network or kernel machine) are able to represent any function, they may need a huge number of elements and, consequently, of training examples."
-
-  "What is the architectural depth of decision trees and decision forests? It depends on what elementary units of computation are allowed on each level. By analogy with disjunctive normal form (which is usually assigned an architectural depth of two) one would assign an architectural depth of two to a decision tree, and of three to decision forests or boosted trees. The top-level disjunction computed by a decision tree is a sum over the terms associated with each leaf. A first-level conjunctive term is a product of the indicator functions associated with each internal node and with the predicted constant associated with the leaf. With this interpretation, a decision forest has an architectural depth of three. An extra summation layer is added. Note how this summation layer is very different from the top layer of the decision tree architecture. Although both perform a summation, the decision tree top layer sums over mutually exclusive terms, whereas the decision forest sums over terms which are generally nonzero, allowing an exponential number of combinations of leaves (one from each tree) to be added."
-
-  "Whereas other nonparametric learning algorithms also suffer from the curse of dimensionality, the way in which the problem appears in the case of decision trees is different and helps to focus on the fundamental difficulty. The general problem is not really dimensionality, nor is it about a predictor that is a sum of purely local terms (like kernel machines). The problem arises from dividing the input space in regions (in a hard way in the case of decision trees) and having separate parameters for each region. Unless the parameters are tied in some way or regularized using strong prior knowledge, the number of available examples thus limits the complexity one can capture, that is, the number of independent regions that can be distinguished."
-
-  "Non-local generalization refers to the ability to generalize to a huge space of possible configurations of the underlying causes of the data, potentially very far from observed training data, going beyond linear combinations of training examples that have been seen in the neighborhood of given input. Nearest-neighbor methods and related ones like kernel machines and decision trees can only generalize in some neighborhood around the training examples, in a way that is simple (like linear interpolation or extrapolation). Because the number of possible configurations of the underlying concepts that explain the data is exponentially large, this kind of generalization is good but not sufficient at all."
-
-  "Decision trees and many other machine learning algorithms are doomed to generalize poorly because they partition the input space and then allocate separate parameters to each region. Thus no generalization to new regions or across regions. No way you can learn a function which needs to vary across a number of distinguished regions that is greater than the number of training examples. Neural nets do not suffer from that and can generalize "non-locally" because each parameter is re-used over many regions (typically half of all the input space, in a regular neural net)."
-
-  "The basic reason we get potentially exponential gains in deep neural networks is that we have compositionality of the parameters, i.e., the same parameters can be re-used in many contexts, so O(N) parameters can allow to distinguish O(2^N) regions in input space, whereas with nearest-neighbor-like things, you need O(N) parameters (i.e. O(N) examples) to characterize a function that can distinguish betwen O(N) regions."
-
-  "This "gain" is only for some target functions, or more generally, we can think of it like a prior. If the prior is applicable to our target distribution, we can gain a lot. As usual in machine learning, there is no real free lunch. The good news is that this prior is very broad and seems to cover most of the things that humans learn about. What it basically says is that the data we observe are explained by a bunch of underlying factors, and that you can learn about each of these factors without requiring to see all of the configurations of the other factors. This is how you are able to generalize to new configurations and get this exponential statistical gain."
-
-  "Being a universal approximator does not tell you how many hidden units you will need. For arbitrary functions, depth does not buy you anything. However, if your function has structure that can be expressed as a composition, then depth could help you save big, both in a statistical sense (less parameters can express a function that has a lot of variations, and so need less examples to be learned) and in a computational sense (less parameters = less computation)."
-
-  "There are many kinds of intractabilities that show up in different places with various learning algorithms. The more tractable the easier to deal with in general, but it should not be at the price of losing crucial expressive power. All the interesting models suffer from intractability of minimizing the training criterion wrt the parameters (i.e. training is fundamentally hard, at least in theory). SVMs and other related kernel machines do not suffer from that problem, but they may suffer from poor generalization unless you provide them with the right feature space (which is precisely what is hard, and what deep learning is trying to do)."
-
-  *(Yoshua Bengio)*
-
-----
-
-  "Our understanding of deep learning is still far from complete. A satisfactory characterization of deep learning should cover the following parts:  
-  1) representation power — what types of functions could deep neural networks represent and what are the advantages over using shallow models?  
-  2) optimization of the empirical loss — can we characterize the convergence of stochastic gradient descent on the non-convex empirical loss encountered in deep learning?  
-  3) generalization — why do deep learning models, despite being highly over-parameterized, could still generalize well?"  
-
-  *(["Theory of Deep Learning III: Generalization Properties of SGD"](https://cbmm.mit.edu/publications/theory-deep-learning-iii-generalization-properties-sgd) by Zhang et al. `paper`)*
-
-----
-
-  "There are two main gaps in our understanding of neural networks: optimization hardness and generalization performance."
-
-  "Training a neural network requires solving a highly non-convex optimization problem in high dimensions. Current training algorithms are all based on gradient descent, which only guarantees convergence to a critical point (local minimum or saddle point). In fact, Anandkumar & Ge 2016 proved that finding even a local minimum is NP-hard, which means that (assuming P != NP) there exist "bad", hard to escape, saddle points in the error surface. Yet, these training algorithms are empirically effective for many practical problems, and we don't know why. There have been theoretical papers such as Choromanska et al. 2016 and Kawaguchi 2016 which prove that under certain assumptions the local minima are essentially as good as the global minima, but the assumptions they make are somewhat unrealistic and they don't address the issue of the bad saddle points."
-
-  "The other main gap in our understanding is generalization performance: how well does the model perform on novel examples not seen during training? It's easy to show that in the limit of an infinite number of training examples (sampled i.i.d. from a stationary distribution), the training error converges to the expected error on novel examples (provided that you could train to the global optimum). But since we don't have infinite training examples, we are interested in how many examples are needed to achieve a given difference between training and generalization error. Statistical learning theory studies these generalization bounds. Empirically, training a large modern neural network requires a large number of training examples, but not that monumentally large to be practically unfeasible. But if you apply the best known bounds from statistical learning theory (for instance Gao & Zhou 2014) you typically get these unfeasibly huge numbers. Therefore these bounds are very far from being tight, at least for practical problems."
-
-  "One of the reasons might be that these bounds tend to assume very little about the data generating distribution, hence they reflect the worst-case performance against adversarial environments, while "natural" environments tend to be more "learnable". It is possible to write distribution-dependent generalization bounds, but we don't know how to formally characterize a distribution over "natural" environments. Approaches such as algorithmic information theory are still unsatisfactory. Therefore we still don't know why neural networks can be trained without overfitting."
-
-  "Furthermore, it should be noted that these two main issues seem to be related in a still poorly understood way: the generalization bounds from statistical learning theory assume that the model is trained to the global optimum on the training set, but in a practical setting you would never train a neural network until convergence even to a saddle point, as to do so would typically cause overfitting. Instead you stop training when the error on a held-out validation set (which is a proxy for the generalization error) stops improving. This is known as "early stopping". So in a sense all this theoretical research on bounding the generalization error of the global optimum may be quite irrelevant: not only we can't efficiently find it, but even if we could, we would not want to, since it would perform worse on novel examples than many "sub-optimal" solutions. It may be the case that optimization hardness is not a flaw of neural network, on the contrary, maybe neural networks can work at all precisely because they are hard to optimize."
-
-  "All these observations are empirical and there is no good theory that explains them. There is also no theory that explains how to set the hyperparameters of neural networks (hidden layer width and depth, learning rates, architectural details, etc.). Practitioners use their intuition honed by experience and lots of trial and error to come up with effective values, while a theory could allow us to design neural networks in a more systematic way."
-
-  *(Antonio Valerio Miceli-Barone)*
-
 
 
 ---
@@ -304,13 +257,10 @@
   ["Marrying Graphical Models & Deep Learning"](http://videolectures.net/deeplearning2017_welling_inference/) by Max Welling `video`  
   ["Bayesian Neural Networks"](http://videolectures.net/DLRLsummerschool2018_wilson_bayesian_neural_nets) by Andrew Wilson `video`  
   ["A History of Bayesian Neural Networks"](https://youtube.com/watch?v=FD8l2vPU5FY) by Zoubin Ghahramani `video`  
-  ["Bayesian Neural Networks"](https://youtube.com/watch?v=tqGEX_Ucu04) by Dmitry Molchanov `video` `in russian`
-	([slides](https://drive.google.com/file/d/0B1xR8nRvoZdNMGR0Y2JsdG9CSGs/) `in english`)  
 
   ["Information Theory, Pattern Recognition and Neural Networks"](http://videolectures.net/course_information_theory_pattern_recognition/) course by David MacKay `video`
 
-  ["Bayesian Methods in Deep Learning"](http://deepbayes.ru) school `in russian`
-	([videos](https://youtube.com/channel/UC9KcwaZ9gSvcYNs7Jx3oNaQ/playlists) `in russian`)
+  ["Bayesian Methods in Deep Learning"](http://deepbayes.ru) school ([videos](https://youtube.com/channel/UC9KcwaZ9gSvcYNs7Jx3oNaQ/playlists))
 
 ----
 
@@ -483,7 +433,7 @@
 
   - *tractable explicit density*
 
-	[**autoregressive models**](#generative-models---autoregressive-models)  
+	[**autoregressive models**](#generative-models---autoregressive-models) *(a subclass of flow models)*  
 	A way to model p(x) is to break the model into a series of conditional distributions: p(x)=p(x1)p(x2|x1)p(x3|x2,x1)…p(x)=p(x1)p(x2|x1)p(x3|x2,x1)… This is the approach used, for example, by recurrent neural networks. These models are also realitvely easy to train, but the downside is that they don't support all of the same queries we can make of latent variable models.  
 
 	[**flow models**](#generative-models---flow-models)  
@@ -2597,6 +2547,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=KMY2Knr4iAs> (Chen)
   - `video` <https://youtube.com/watch?v=YQZRsowJZA8> (Lyalin) `in russian`
   - `video` <https://youtube.com/watch?v=KMgJFptbNlM> (Lyalin) `in russian`
+  - `video` <https://youtube.com/watch?v=Bg8Y5q1OiP0> + <https://youtube.com/watch?v=7I_D2EOxwwI> (Neychev) `in russian`
   - `video` <https://youtube.com/watch?v=ONuRVpJSvfY> (Alexeev) `in russian`
   - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) `in russian`
   - `video` <https://youtu.be/LhH6wMvntSM?t=54m56s> (Suleymanov) `in russian`
@@ -2959,14 +2910,23 @@ Yoshua Bengio:
 
   - `paper` <http://www.nature.com/articles/ncomms13276.epdf> ("Nature")
   - `video` <http://youtu.be/-kHLKLLxIF4?t=20m28s> (Lillicrap)
+  - `video` <https://youtube.com/watch?v=NnnuwdbomFc> (Filippov) `in russian`
 
 
 #### ["Direct Feedback Alignment Provides Learning in Deep Neural Networks"](https://arxiv.org/abs/1609.01596) Nøkland
 >	"Artificial neural networks are most commonly trained with the back-propagation algorithm, where the gradient for learning is provided by back-propagating the error, layer by layer, from the output layer to the hidden layers. A recently discovered method called feedback-alignment shows that the weights used for propagating the error backward don't have to be symmetric with the weights used for propagation the activation forward. In fact, random feedback weights work evenly well, because the network learns how to make the feedback useful. In this work, the feedback alignment principle is used for training hidden layers more independently from the rest of the network, and from a zero initial condition. The error is propagated through fixed random feedback connections directly from the output layer to each hidden layer. This simple method is able to achieve zero training error even in convolutional networks and very deep networks, completely without error back-propagation. The method is a step towards biologically plausible machine learning because the error signal is almost local, and no symmetric or reciprocal weights are required. Experiments show that the test performance on MNIST and CIFAR is almost as good as those obtained with back-propagation for fully connected networks. If combined with dropout, the method achieves 1.45% error on the permutation invariant MNIST task."
 
+  - `video` <https://youtube.com/watch?v=NnnuwdbomFc> (Filippov) `in russian`
+
+
+#### ["Deep Learning without Weight Transport"](https://arxiv.org/pdf/1904.05391) Akrout, Wilson, Humphreys, Lillicrap, Tweed
+>	"Current algorithms for deep learning probably cannot run in the brain becausethey rely onweight transport, where forward-path neurons transmit their synapticweights to a feedback path, in a way that is likely impossible biologically. An algo-rithm called feedback alignment achieves deep learning without weight transport byusing random feedback weights, but it performs poorly on hard visual-recognitiontasks. Here we describe two mechanisms — a neural circuit called aweight mirrorand a modification of an algorithm proposed by Kolen and Pollack in 1994 — bothof which let the feedback path learn appropriate synaptic weights quickly and accu-rately even in large networks, without weight transport or complex wiring. Testedon the ImageNet visual-recognition task, these mechanisms learn almost as well asbackprop (the standard algorithm of deep learning, which uses weight transport)and they outperform feedback alignment and another, more-recent transport-freealgorithm, the sign-symmetry method."
+
+  - `video` <https://slideslive.com/38922691/invited-talk-deep-learning-without-weight-transport> (Lillicrap)
+  - `video` <https://youtube.com/watch?v=NnnuwdbomFc> (Filippov) `in russian`
+
 
 #### ["Assessing the Scalability of Biologically-motivated Deep Learning Algorithms and Architectures"](https://arxiv.org/abs/1807.04587) Bartunov, Santoro, Richards, Hinton, Lillicrap
-  `Simplified Difference Target Propagation`
 >	"The backpropagation of error algorithm is often said to be impossible to implement in a real brain. The recent success of deep networks in machine learning and AI, however, has inspired a number of proposals for understanding how the brain might learn across multiple layers, and hence how it might implement or approximate BP. As of yet, none of these proposals have been rigorously evaluated on tasks where BP-guided deep learning has proved critical, or in architectures more structured than simple fully-connected networks. Here we present the first results on scaling up a biologically motivated model of deep learning to datasets which need deep networks with appropriate architectures to achieve good performance. We present results on CIFAR-10 and ImageNet. For CIFAR-10 we show that our algorithm, a straightforward, weight-transport-free variant of difference target-propagation modified to remove backpropagation from the penultimate layer, is competitive with BP in training deep networks with locally defined receptive fields that have untied weights. For ImageNet we find that both DTP and our algorithm perform significantly worse than BP, opening questions about whether different architectures or algorithms are required to scale these approaches. Our results and implementation details help establish baselines for biologically motivated deep learning schemes going forward."
 
 >	"- No weight transport (i.e. weight transposes)  
@@ -2980,6 +2940,7 @@ Yoshua Bengio:
   - `video` <http://youtu.be/-kHLKLLxIF4?t=32m37s> (Lillicrap)
   - `video` <http://youtube.com/watch?v=XzSRtu413CY> (Lillicrap)
   - `video` <https://youtu.be/4u2ZF37i4Hs?t=1h45m25s> (Bartunov) `in russian`
+  - `paper` ["Difference Target Propagation"](https://arxiv.org/abs/1412.7525) by Lee, Zhang, Fischer, Bengio
 
 
 

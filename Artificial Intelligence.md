@@ -383,6 +383,7 @@
   [overview](https://archive.org/details/Redwood_Center_2014_08_15_Jurgen_Schmidhuber) by Juergen Schmidhuber `video`  
   [overview](https://youtube.com/watch?v=3FIo6evmweo&t=26m6s) by Juergen Schmidhuber `video`  
   [overview](https://youtu.be/DSYzHPW26Ig?t=2h7m22s) by Alex Graves `video`  
+  [overview](https://youtu.be/aJI_9SoBDaQ?t=22m1s) by Andrew Barto `video`  
 
   ["Toward Intelligent Humanoids"](https://vimeo.com/51011081) demo from Schmidhuber's group `video`
 
@@ -394,6 +395,10 @@
   [**"Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids"**](#curiosity-driven-reinforcement-learning-for-motion-planning-on-humanoids-frank-leitner-stollenga-forster-schmidhuber) by Frank, Schmidhuber et al. `paper` `summary`  
   [**"What's Interesting?"**](#whats-interesting-schmidhuber) by Schmidhuber `paper` `summary`  
   [**"PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem"**](#powerplay-training-an-increasingly-general-problem-solver-by-continually-searching-for-the-simplest-still-unsolvable-problem-schmidhuber) by Schmidhuber `paper` `summary`  
+
+  ["A Possibility for Implementing Curiosity and Boredom in Model-Building Neural Controllers"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.45.957) by Schmidhuber `paper`  
+  ["Adaptive Confidence and Adaptive Curiosity"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.34.5686) by Schmidhuber `paper`  
+  ["Curious Model-building Control Systems"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.45.2597) by Schmidhuber `paper`  
 
   [**interesting papers**](#interesting-papers---artificial-curiosity-and-creativity)
 
