@@ -187,6 +187,7 @@
 
   [overview](http://blog.aylien.com/overview-word-embeddings-history-word2vec-cbow-glove/) of word embeddings by Sebastian Ruder  
   "On Word Embeddings" by Sebastian Ruder ([part 1](http://sebastianruder.com/word-embeddings-1/index.html), [part 2](http://sebastianruder.com/word-embeddings-softmax/index.html))  
+  [overview](https://lilianweng.github.io/lil-log/2017/10/15/learning-word-embedding.html) by Lilian Weng  
 
   ["Word Vector Representations: word2vec"](https://youtube.com/watch?v=ERibwqs9p38) by Richard Socher `video`  
   ["GloVe: Global Vectors for Word Representation"](https://youtube.com/watch?v=ASn7ExxLZws) by Richard Socher `video`  
@@ -555,6 +556,7 @@
 >	Third, they show what to me was a very surprising additional feature of the learned vector spaces: some relationships are encoded compositionally in the vector space, meaning that you can just add the vectors for two words like "Russian" and "capital" to get a vector that is very close to "Moscow". They didn't do any kind of thorough evaluation of this, but the fact the it works at all was very surprising to me. They did give a reasonable explanation, however, and I've put it into math below. The probability of two words i and j appearing in the same context in this model is proportional to exp(vi⋅vj). Now, if we have a third word, k, and its probability of appearing with both word i and word j is proportional to exp(vk⋅vi)*exp(vk⋅vj)=exp(vk⋅(vi+vj)). So what you get when you add the vectors for two words is something that is likely to show up in the contexts of both of them. Thus if you pick word i to be "Russian" and word j to be "capital", a word k that has high probability might very well be "Moscow", because it tends to show up in the context of both of those words. So we can see that this method does have some reasonable explanation for why it works."
 
   - `post` <http://jalammar.github.io/illustrated-word2vec>
+  - `post` <https://lilianweng.github.io/lil-log/2017/10/15/learning-word-embedding.html>
   - `paper` ["word2vec Explained: Deriving Mikolov et al.’s Negative-Sampling Word-Embedding Method"](http://arxiv.org/abs/1402.3722) by Goldberg and Levy
 
 
@@ -581,6 +583,7 @@
   - <http://nlp.stanford.edu/projects/glove/>
   - `video` <http://youtube.com/watch?v=RyTpzZQrHCs> (Pennington)
   - `video` <https://youtu.be/Mk8xPTxZ1kQ?t=6m29s> (Ghosh)
+  - `post` <https://lilianweng.github.io/lil-log/2017/10/15/learning-word-embedding.html>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/emnlp/PenningtonSM14#shagunsodhani>
   - `code` <https://github.com/GradySimon/tensorflow-glove>
 

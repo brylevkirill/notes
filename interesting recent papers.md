@@ -52,6 +52,7 @@ interesting older papers:
   - `video` <https://youtube.com/watch?v=OBCciGnOJVs> (Belkin)
   - `video` <https://youtube.com/watch?v=LzL5naUS31s> (Belkin)
   - `video` <https://youtube.com/watch?v=ZAW9EyNo2fw> (Kilcher)
+  - `post` <https://lilianweng.github.io/lil-log/2019/03/14/are-deep-neural-networks-dramatically-overfitted.html#the-lottery-ticket-hypothesis>
   - `paper` ["Deep Double Descent: Where Bigger Models and More Data Hurt"](https://arxiv.org/abs/1912.02292) by Nakkiran et al. ([post](https://openai.com/blog/deep-double-descent), [overview](https://youtube.com/watch?v=R29awq6jvUw) `video`)
   - `paper` ["The Generalization Error of Random Features Regression: Precise Asymptotics and Double Descent Curve"](https://arxiv.org/abs/1908.05355) by Mei et al.
 
@@ -2635,10 +2636,11 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://vimeo.com/235929810> (Schapire)
 
 ----
-#### ["Benchmarking Bonus-Based Exploration Methods on the Arcade Learning Environment"](https://arxiv.org/abs/1908.02388) Taiga, Fedus, Machado, Courville, Bellemare
->	"This paper provides an empirical evaluation of recently developed exploration algorithms within the ALE. We study the use of different reward bonuses that incentives exploration in reinforcement learning. We do so by fixing the learning algorithm used and focusing only on the impact of the different exploration bonuses in the agent’s performance."  
->	"We find that, in our setting, recently developed bonuses do not provide significantly improved performance on MONTEZUMA’S REVENGE or hard exploration games. We also find that existing bonus-based methods may negatively impact performance on games in which exploration is not an issue and may even perform worse than Epsilon-greedy exploration."  
+#### ["On Bonus Based Exploration Methods In The Arcade Learning Environment"](https://openreview.net/forum?id=BJewlyStDr) Taiga, Fedus, Machado, Courville, Bellemare
+>	"Research on exploration in reinforcement learning, as applied to Atari 2600 game-playing, has emphasized tackling difficult exploration problems such as Montezuma's Revenge (Bellemare et al., 2016). Recently, bonus-based exploration methods, which explore by augmenting the environment reward, have reached above-human average performance on such domains. In this paper we reassess popular bonus-based exploration methods within a common evaluation framework. We combine Rainbow (Hessel et al., 2018) with different exploration bonuses and evaluate its performance on Montezuma's Revenge, Bellemare et al.'s set of hard of exploration games with sparse rewards, and the whole Atari 2600 suite. We find that while exploration bonuses lead to higher score on Montezuma's Revenge they do not provide meaningful gains over the simpler epsilon-greedy scheme. In fact, we find that methods that perform best on that game often underperform epsilon-greedy on easy exploration Atari 2600 games. We find that our conclusions remain valid even when hyperparameters are tuned for these easy-exploration games. Finally, we find that none of the methods surveyed benefit from additional training samples (1 billion frames, versus Rainbow's 200 million) on Bellemare et al.'s hard exploration games. Our results suggest that recent gains in Montezuma's Revenge may be better attributed to architecture change, rather than better exploration schemes; and that the real pace of progress in exploration research for Atari 2600 games may have been obfuscated by good results on a single domain."
+
   - `video` <https://facebook.com/icml.imls/videos/2265408103721327?t=2654> (Taiga)
+  - `paper` ["Benchmarking Bonus-Based Exploration Methods on the Arcade Learning Environment"](https://arxiv.org/abs/1908.02388) by Taiga et al.
 
 ----
 #### ["A Contextual Bandit Bake-off"](https://arxiv.org/abs/1802.04064) Bietti, Agarwal, Langford
@@ -2859,6 +2861,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/SAcHyzMdbXc?t=16m6s> (de Freitas)
 
 ----
+#### ["Adapting Behaviour for Learning Progress"](https://arxiv.org/abs/1912.06910) Schaul et al.
+  `learning progress motivation`
+>	"We propose to dynamically adapt the data generation by using a non-stationary multi-armed bandit to optimize a proxy of the learning progress. The data distribution is controlled by modulating multiple parameters of the policy (such as stochasticity, consistency or optimism) without significant overhead. The adaptation speed ofthe bandit can be increased by exploiting the factored modulation structure."  
+
 #### ["Automated Curriculum Learning for Neural Networks"](https://arxiv.org/abs/1704.03003) Graves, Bellemare, Menick, Munos, Kavukcuoglu
   `learning progress motivation` `prediction gain` `complexity gain` `curriculum learning`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu>
@@ -2961,6 +2967,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Teacher-Student Curriculum Learning"](https://arxiv.org/abs/1707.00183) Matiisen, Oliver, Cohen, Schulman
   `curriculum learning`
 >	"A framework for automatic curriculum learning, where the Student tries to learn a complex task and the Teacher automatically chooses subtasks from a given set for the Student to train on. We describe a family of Teacher algorithms that rely on the intuition that the Student should practice more those tasks on which it makes the fastest progress, i.e. where the slope of the learning curve is highest. In addition, the Teacher algorithms address the problem of forgetting by also choosing tasks where the Student's performance is getting worse. We demonstrate that TSCL matches or surpasses the results of carefully hand-crafted curricula in two tasks: addition of decimal numbers with LSTM and navigation in Minecraft."  
+  - `post` <https://lilianweng.github.io/lil-log/2020/01/29/curriculum-for-reinforcement-learning.html>
 
 #### ["Automatic Goal Generation for Reinforcement Learning Agents"](https://arxiv.org/abs/1705.06366) Held, Geng, Florensa, Abbeel
   `curriculum learning`
@@ -2973,7 +2980,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=EHHiFwStqaA> (demo)
   - `video` <https://youtube.com/watch?v=X1O21ziUqUY> (Fergus)
   - `video` <https://youtube.com/watch?v=5dNAnCYBFN4> (Szlam)
-  - `post` <http://giorgiopatrini.org/posts/2017/09/06/in-search-of-the-missing-signals/>
+  - `post` <https://lilianweng.github.io/lil-log/2020/01/29/curriculum-for-reinforcement-learning.html>
 
 
 
@@ -3287,6 +3294,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=JG6gSoNWOoI> (Sermanet)
   - `video` <https://youtu.be/BijK_US6A0w?t=57m35s> (Angelova)
   - `video` <https://youtube.com/watch?v=Dpf9gTqP7xA> (Cimen)
+  - `post` <https://ankeshanand.com/blog/2020/01/26/contrative-self-supervised-learning.html>
   - `code` <https://github.com/tensorflow/models/tree/master/research/tcn>
 
 #### ["Learning from Demonstrations for Real World Reinforcement Learning"](https://arxiv.org/abs/1704.03732) Hester et al.

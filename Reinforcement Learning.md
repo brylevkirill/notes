@@ -1,4 +1,4 @@
-  Reinforcement Learning is learning to control an unknown system.
+  Reinforcement Learning combines a control problem with statistical estimation: the system dynamics are not known to the agent but can be learned through experience.
 
 
   * [**introduction**](#introduction)
@@ -21,37 +21,6 @@
     - [**policy-based methods**](#interesting-papers---policy-based-methods)
     - [**behavioral cloning**](#interesting-papers---behavioral-cloning)
     - [**inverse reinforcement learning**](#interesting-papers---inverse-reinforcement-learning)
-
-
-
----
-### introduction
-
-  [definition](https://youtube.com/watch?v=kl_G95uKTHw&t=1h9m30s) by Sergey Levine `video`
-
-  ![relations with other fields](https://goo.gl/XlgPJu)
-
-
-  "Reinforcement Learning is as hard as any problem in computer science, since any task with a computable description can be formulated in it."
-
-  "Reinforcement Learning is a general-purpose framework for decision-making:  
-   - Is for an agent with the capacity to act  
-   - Each action influences the agent's future state  
-   - Success is measured by a scalar reward signal  
-   - Goal: select actions to maximize future reward"  
-
-  "Deep Learning is a general-purpose framework for representation learning:  
-   - Given an objective  
-   - Learn representation that is required to achieve objective  
-   - Directly from raw inputs  
-   - Using minimal domain knowledge"  
-
-  "We seek a single agent which can solve any human-level task:  
-   - Reinforcement Learning defines the objective  
-   - Deep Learning gives the mechanism  
-   - Reinforcement Learning + Deep Learning = general intelligence"  
-
-  *(David Silver)*
 
 
 
@@ -375,6 +344,10 @@
 ---
 ### overview
 
+  [definition](https://youtube.com/watch?v=kl_G95uKTHw&t=1h9m30s) by Sergey Levine `video`
+
+----
+
   introduction by Kevin Frans:  
   - [basics](http://kvfrans.com/reinforcement-learning-basics/)  
   - [Markov processes](http://kvfrans.com/markov-processes-in-reinforcement-learning/)  
@@ -447,6 +420,23 @@
 
 ---
 ### deep reinforcement learning
+
+  "Reinforcement Learning is a general-purpose framework for decision-making:  
+   - Is for an agent with the capacity to act  
+   - Each action influences the agent's future state  
+   - Success is measured by a scalar reward signal  
+   - Goal: select actions to maximize future reward"  
+
+  "Deep Learning is a general-purpose framework for representation learning:  
+   - Given an objective  
+   - Learn representation that is required to achieve objective  
+   - Directly from raw inputs  
+   - Using minimal domain knowledge"  
+
+   Reinforcement Learning gives a learning objective  
+   Deep Learning gives a learning mechanism  
+
+  *(David Silver)*
 
   ["Success Stories of Deep RL"](https://youtube.com/watch?v=N8_gVrIPLQM) by David Silver `video`
 
@@ -707,17 +697,10 @@
 ---
 ### exploration and intrinsic motivation
 
-  exploration:  
-  - How to search through space of possible strategies for agent to avoid getting stuck in local optima of behavior?  
-  - Given a long-running learning agent, how to balance exploration and exploitation to maximize long-term rewards?  
+  "Reinforcement Learning is the problem of learning to control an unknown system. Like the control setting, an agent should take actions to maximize its cumulative rewards through time. Like the inference problem, the agent is initially uncertain of the system dynamics, but can learn through the transitions it observes. This leads to a fundamental trade-off: the agent may be able to improve its understanding through exploring poorly-understood states and actions, but it may be able to attain higher immediate reward through exploiting its existing knowledge."
 
-  exploration-exploitation tradeoff:  
-  - When should the agent try out perceived non-optimal actions in order to explore the environment and potentially improve the model, and when should it exploit the optimal action in order to make useful progress on the task?
-
-  intrinsic motivation:  
-  - avoid handcrafting special-purpose utility functions  
-  - faster training if external rewards are sparse  
-  - transferrable skills (discovering and combining skills)  
+  *exploration-exploitation tradeoff:*  
+  When should the agent try out perceived non-optimal actions in order to explore the environment and potentially improve the model, and when should it exploit the optimal action in order to make useful progress on the task?
 
 ----
 
@@ -731,8 +714,6 @@
   [overview](http://facebook.com/icml.imls/videos/2265408103721327?t=4118) by Pieter Abbeel `video`  
   [overview](http://youtube.com/watch?v=EMv1AVLOnto) by Oleg Svidchenko `video` `in russian`  
   [overview](http://youtube.com/watch?v=WCE9hhPbCmc) by Maxim Kretov `video` `in russian`  
-
-----
 
   ["Comparing Intrinsic Motivations in a Unified Framework"](https://agi2018imtutorial.wordpress.com) tutorial by Martin Biehl
 	([video](https://slideslive.com/38909803/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework),
@@ -911,6 +892,7 @@
 	["What's Interesting?"](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#whats-interesting-schmidhuber) by Schmidhuber `paper` `summary` ([**Artificial Curiosity and Creativity**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory by Schmidhuber)  
 	["Exploration in Model-based Reinforcement Learning by Empirically Estimating Learning Progress"](https://papers.nips.cc/paper/4642-exploration-in-model-based-reinforcement-learning-by-empirically-estimating-learning-progress) by Lopes et al. `paper`  
 	[**"Automated Curriculum Learning for Neural Networks"**](#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper` `summary`  
+	["Adapting Behaviour for Learning Progress"](https://arxiv.org/abs/1912.06910) by Schaul et al. `paper`  
 
 	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---learning-progress-motivation)  
 	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
@@ -1326,7 +1308,7 @@
 ----
 
   [**policy search in Bayes-Adaptive MDP**](#bayesian-reinforcement-learning---policy-search-in-bayes-adaptive-mdp)  
-  [**policy search in variational MDP**](#bayesian-reinforcement-learning---policy-search-in-variational-mdp)  
+  [**reinforcement learning as inference**](#bayesian-reinforcement-learning---policy-search-as-inference)  
   [**universal reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence)  
 
 ----
@@ -1367,7 +1349,7 @@
 
 
 ----
-#### bayesian reinforcement learning - policy search in variational MDP
+#### bayesian reinforcement learning - reinforcement learning as inference
 
   ["A Case Against Generative Models in RL?"](https://youtube.com/watch?v=EA2RtXsLSWU) by Shakir Mohamed `video`  
   ["Bayesian Policy Search"](https://youtu.be/AggqBRdz6CQ?t=9m53s) by Shakir Mohamed `video`  
@@ -1381,6 +1363,7 @@
 
   ["Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review"](https://arxiv.org/abs/1805.00909) by Levine `paper` ([talk](https://youtu.be/iOYiPhu5GEk?t=2m34s) `video`)  
   ["Making Sense of Reinforcement Learning and Probabilistic Inference"](https://openreview.net/forum?id=S1xitgHtvS) by O'Donoghue `paper` et al.  
+  ["VIREL: A Variational Inference Framework for Reinforcement Learning"](https://arxiv.org/abs/1811.01132) by Fellows et al.  
   [**"Reinforced Variational Inference"**](#reinforced-variational-inference-weber-heess-eslami-schulman-wingate-silver) by Weber et al. `paper` `summary`  
 
 
@@ -2265,6 +2248,7 @@ interesting recent papers:
   - `video` <https://youtu.be/DtUSF3QHWIM?t=7m33s> (Singh)
   - `video` <https://coursera.org/lecture/prediction-control-function-approximation/satinder-singh-on-intrinsic-rewards-TKPHV> (Singh)
   - `video` <https://youtu.be/aJI_9SoBDaQ?t=17m9s> + <https://youtu.be/aJI_9SoBDaQ?t=28m14s> (Barto)
+  - `paper` ["What Can Learned Intrinsic Rewards Capture?"](https://arxiv.org/abs/1912.05500) by Zheng et al.
 
 
 #### ["Intrinsically Motivated Reinforcement Learning: An Evolutionary Perspective"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.180.1045) Singh, Lewis, Barto, Sorg
@@ -2439,6 +2423,7 @@ interesting recent papers:
 
   - `code` <https://github.com/Kaixhin/NoisyNet-A3C>
   - `code` <https://github.com/andrewliao11/NoisyNet-DQN>
+  - `paper` [**"On Bonus Based Exploration Methods In The Arcade Learning Environment"**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#on-bonus-based-exploration-methods-in-the-arcade-learning-environment-taiga-fedus-machado-courville-bellemare) by Taiga et al. `summary`
 
 
 #### ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](http://arxiv.org/abs/1611.02779) Duan, Schulman, Chen, Bartlett, Sutskever, Abbeel
@@ -2577,7 +2562,7 @@ interesting recent papers:
   - `video` <https://youtu.be/qduxl-vKz1E?t=1h16m30s> (Seleznev) `in russian`
   - `video` <https://youtube.com/watch?v=qKyOLNVpknQ> (Pavlov) `in russian`
   - `notes` <http://pemami4911.github.io/paper-summaries/deep-rl/2016/10/08/unifying-count-based-exploration-and-intrinsic-motivation.html>
-  - `code` <https://github.com/brendanator/atari-rl>
+  - `paper` [**"On Bonus Based Exploration Methods In The Arcade Learning Environment"**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#on-bonus-based-exploration-methods-in-the-arcade-learning-environment-taiga-fedus-machado-courville-bellemare) by Taiga et al. `summary`
 
 
 #### ["Count-Based Exploration with Neural Density Models"](http://arxiv.org/abs/1703.01310) Ostrovski, Bellemare, van den Oord, Munos
@@ -2589,7 +2574,7 @@ interesting recent papers:
   - `video` <http://videolectures.net/DLRLsummerschool2018_bellemare_deep_RL/#t=3474> (Bellemare)
   - `video` <https://youtu.be/EMv1AVLOnto?t=1m49s> (Svidchenko) `in russian`
   - `paper` [**"Unifying Count-Based Exploration and Intrinsic Motivation"**](#unifying-count-based-exploration-and-intrinsic-motivation-bellemare-srinivasan-ostrovski-schaul-saxton-munos) by Bellemare et al. `summary`
-  - `paper` ["Benchmarking Bonus-Based Exploration Methods on the Arcade Learning Environment"](https://drive.google.com/file/d/1I05c4-d9OsNwGZnLx85fR8dnX-yVoTWe) by Taiga et al.
+  - `paper` [**"On Bonus Based Exploration Methods In The Arcade Learning Environment"**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#on-bonus-based-exploration-methods-in-the-arcade-learning-environment-taiga-fedus-machado-courville-bellemare) by Taiga et al. `summary`
 
 
 #### ["\#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning"](http://arxiv.org/abs/1611.04717) Tang et al.
@@ -2759,19 +2744,20 @@ interesting recent papers:
   - `video` <https://youtu.be/X-B3nAN7YRM?t=7m8s> (Sutskever)
   - `video` <https://youtu.be/EMv1AVLOnto?t=17m44s> (Svidchenko) `in russian`
   - `code` <https://github.com/openai/random-network-distillation>
+  - `paper` [**"On Bonus Based Exploration Methods In The Arcade Learning Environment"**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#on-bonus-based-exploration-methods-in-the-arcade-learning-environment-taiga-fedus-machado-courville-bellemare) by Taiga et al. `summary`
+
 
 #### ["Large-Scale Study of Curiosity-Driven Learning"](https://arxiv.org/abs/1808.04355) Burda, Edwards, Pathak, Storkey, Darrell, Efros
   `prediction error`
 >	"Reinforcement learning algorithms rely on carefully engineering environment rewards that are extrinsic to the agent. However, annotating each environment with hand-designed, dense rewards is not scalable, motivating the need for developing reward functions that are intrinsic to the agent. Curiosity is a type of intrinsic reward function which uses prediction error as reward signal. In this paper: (a) We perform the first large-scale study of purely curiosity-driven learning, i.e. without any extrinsic rewards, across 54 standard benchmark environments, including the Atari game suite. Our results show surprisingly good performance, and a high degree of alignment between the intrinsic curiosity objective and the hand-designed extrinsic rewards of many game environments. (b) We investigate the effect of using different feature spaces for computing prediction error and show that random features are sufficient for many popular RL game benchmarks, but learned features appear to generalize better (e.g. to novel game levels in Super Mario Bros.). (c) We demonstrate limitations of the prediction-based rewards in stochastic setups."
 
->	"Authors found that curiosity is correlated with the actual objectives of many environments, and report that using random features mitigates some of the non-stationarity implicit in methods based on curiosity."
-
   - <https://pathak22.github.io/large-scale-curiosity>
   - `video` <https://youtube.com/watch?v=l1FqtAHfJLI>
-  - `video` <https://vk.com/video-44016343_456240849> (Efros)
   - `video` <https://youtu.be/8NR6euSDfsM?t=9m4s> (Darrell)
+  - `video` <https://vk.com/video-44016343_456240849> (Efros)
   - `video` <https://youtu.be/EMv1AVLOnto?t=19m42s> (Svidchenko) `in russian`
   - `code` <https://github.com/openai/large-scale-curiosity>
+  - `paper` [**"On Bonus Based Exploration Methods In The Arcade Learning Environment"**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#on-bonus-based-exploration-methods-in-the-arcade-learning-environment-taiga-fedus-machado-courville-bellemare) by Taiga et al. `summary`
 
 
 #### ["Curiosity-driven Exploration by Self-supervised Prediction"](https://arxiv.org/abs/1705.05363) Pathak, Agrawal, Efros, Darrell
@@ -2793,6 +2779,7 @@ interesting recent papers:
   - `post` <https://navneet-nmk.github.io/2018-08-10-first-post>
   - `code` <https://github.com/pathak22/noreward-rl>
   - `code` <https://github.com/navneet-nmk/pytorch-rl/blob/master/models/CuriosityDrivenExploration.py>
+  - `paper` [**"On Bonus Based Exploration Methods In The Arcade Learning Environment"**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#on-bonus-based-exploration-methods-in-the-arcade-learning-environment-taiga-fedus-machado-courville-bellemare) by Taiga et al. `summary`
 
 
 #### ["Improving Policy Gradient by Exploring Under-appreciated Rewards"](https://arxiv.org/abs/1611.09321) Nachum, Norouzi, Schuurmans
@@ -2828,6 +2815,7 @@ interesting recent papers:
   - `video` <https://youtu.be/DSYzHPW26Ig?t=2h3m37s> (Graves)
   - `video` <https://vimeo.com/237275086> (Bellemare)
   - `notes` <https://blog.tomrochette.com/machine-learning/papers/alex-graves-automated-curriculum-learning-for-neural-networks>
+  - `post` <https://lilianweng.github.io/lil-log/2020/01/29/curriculum-for-reinforcement-learning.html>
 
 
 
@@ -2840,14 +2828,17 @@ interesting recent papers:
 #### ["Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes"](http://arxiv.org/abs/0812.4360) Schmidhuber
   - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#driven-by-compression-progress-a-simple-principle-explains-essential-aspects-of-subjective-beauty-novelty-surprise-interestingness-attention-curiosity-creativity-art-science-music-jokes-schmidhuber>
 
+
 #### ["Automated Curriculum Learning for Neural Networks"](https://arxiv.org/abs/1704.03003) Graves, Bellemare, Menick, Munos, Kavukcuoglu
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu>
+
 
 #### ["Automatic Goal Generation for Reinforcement Learning Agents"](https://arxiv.org/abs/1705.06366) Held, Geng, Florensa, Abbeel
 >	"Reinforcement learning is a powerful technique to train an agent to perform a task. However, an agent that is trained using reinforcement learning is only capable of achieving the single task that is specified via its reward function. Such an approach does not scale well to settings in which an agent needs to perform a diverse set of tasks, such as navigating to varying positions in a room or moving objects to varying locations. Instead, we propose a method that allows an agent to automatically discover the range of tasks that it is capable of performing in its environment. We use a generator network to propose tasks for the agent to try to achieve, each task being specified as reaching a certain parametrized sub-set of the state-space. The generator network is optimized using adversarial training to produce tasks that are always at the appropriate level of difficulty for the agent. Our method thus automatically produces a curriculum of tasks for the agent to learn. We show that, by using this framework, an agent can efficiently and automatically learn to perform a wide set of tasks without requiring any prior knowledge of its environment. Our method can also learn to achieve tasks with sparse rewards, which traditionally pose significant challenges."
 
   - <https://sites.google.com/view/goalgeneration4rl>
   - `video` <https://facebook.com/icml.imls/videos/429963197518201?t=2655> (Florensa)
+  - `post` <https://lilianweng.github.io/lil-log/2020/01/29/curriculum-for-reinforcement-learning.html>
 
 
 

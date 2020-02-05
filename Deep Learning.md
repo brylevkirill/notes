@@ -2,7 +2,6 @@
 
 
   * [**overview**](#overview)
-  * [**research**](#research)
   * [**theory**](#theory)
   * [**bayesian deep learning**](#bayesian-deep-learning)
   * [**unsupervised learning**](#unsupervised-learning)
@@ -87,13 +86,9 @@
   ["Deep Learning with Python"](https://manning.com/books/deep-learning-with-python) by Francois Chollet  
 
 
-
----
-### research
-
 #### applications
 
-  [**applications**](#interesting-papers---applications)
+  [**interesting papers**](#interesting-papers---applications)
 
   [**other applications**](https://yadi.sk/d/mQnJYmxo3WZDvP)
 
@@ -135,6 +130,7 @@
 ----
 
   ["Lessons from Optics, The Other Deep Learning"](http://argmin.net/2018/01/25/optics/) by Ali Rahimi  *(theory)*  
+  ["Are Deep Neural Networks Dramatically Overfitted?"](https://lilianweng.github.io/lil-log/2019/03/14/are-deep-neural-networks-dramatically-overfitted.html#the-lottery-ticket-hypothesis) by Lilian Weng  *(theory)*  
   ["The Linearization Principle"](http://argmin.net/2018/02/05/linearization/) by Benjamin Recht  *(theory)*  
   ["A Statistical View of Deep Learning: Retrospective"](http://blog.shakirm.com/2015/07/a-statistical-view-of-deep-learning-retrospective/) by Shakir Mohamed  *(theory)*  
 
@@ -352,6 +348,11 @@
 ---
 ### self-supervised learning
 
+  [overview](https://lilianweng.github.io/lil-log/2019/11/10/self-supervised-learning.html) by Lilian Weng  
+  [overview](https://ankeshanand.com/blog/2020/01/26/contrative-self-supervised-learning.html) by Ankesh Anand  
+
+----
+
   [overview](https://youtu.be/DSYzHPW26Ig?t=1h15m40s) by Alex Graves `video`  
   [overview](https://youtu.be/Vv7rHgmiJWM?t=35m31s) by Yann LeCun `video`  
   [overview](https://youtu.be/7I0Qt7GALVk?t=41m13s) by Yann LeCun `video`  
@@ -361,11 +362,13 @@
 
 ----
 
-  [**self-supervised learning**](#interesting-papers---self-supervised-learning)
+  [**interesting papers**](#interesting-papers---self-supervised-learning)
 
 ----
 
-  "Even if we don't have a specific task or reward, we can still choose which aspects of the data to learn and which to ignore. As long as we're predicting one aspect of the data from another else, we're learning about it. Examples: image colorization, missing words, missing patches, missing frames... Anything we remove can be used as a target." [*(Alex Graves)*](https://youtu.be/DSYzHPW26Ig?t=1h15m40s)
+  "Even if we don't have a specific task or reward, we can still choose which aspects of the data to learn and which to ignore. As long as we're predicting one aspect of the data from another else, we're learning about it. Examples: image colorization, missing words, missing patches, missing frames... Anything we remove can be used as a target."
+
+  [*(Alex Graves)*](https://youtu.be/DSYzHPW26Ig?t=1h15m40s)
 
 
 
@@ -1079,6 +1082,7 @@
   - `video` <https://youtu.be/RKvS958AqGY?t=12m7s> (Tishby)
   - `video` <https://youtu.be/cHjI37DsQCQ?t=41m40s> (Selvaraj)
   - `video` <https://youtube.com/watch?v=yoMC0P2x3Fg> + <https://youtube.com/watch?v=7OsyeNbKQjU> (Skorokodov) `in russian`
+  - `post` <https://lilianweng.github.io/lil-log/2017/09/28/anatomize-deep-learning-with-information-theory.html>
   - `post` <https://reddit.com/r/MachineLearning/comments/be8qie/discussion_what_is_the_status_of_the_information/el9eqwf>
   - `post` <https://lilianweng.github.io/lil-log/2017/09/28/anatomize-deep-learning-with-information-theory.html>
   - `post` <https://weberna.github.io/jekyll/update/2017/11/08/Information-Bottleneck-Part1.html>
@@ -1826,6 +1830,7 @@ Yoshua Bengio:
   - `video` <https://youtu.be/QoCyQBzi7us?t=1h9m51s> (Oord)
   - `video` <https://youtu.be/AC4l_MY2Dhc?t=1h6m33s> (Srinivas)
   - `video` <https://youtu.be/DSYzHPW26Ig?t=1h24m53s> (Graves)
+  - `post` <https://ankeshanand.com/blog/2020/01/26/contrative-self-supervised-learning.html>
   - `post` <https://machinethoughts.wordpress.com/2018/08/15/predictive-coding-and-mutual-information>
   - `paper` ["Data-Efficient Image Recognition with Contrastive Predictive Coding"](https://arxiv.org/abs/1905.09272) by Henaff et al. ([talk](https://facebook.com/icml.imls/videos/378993762742156?t=3335) by Henaff `video`)
   - `paper` ["Noise-Contrastive Estimation of Unnormalized Statistical Models, with Applications to Natural Image Statistics"](http://www.jmlr.org/papers/volume13/gutmann12a/gutmann12a.pdf) by Gutmann and Hyvarinen
@@ -3005,18 +3010,6 @@ Yoshua Bengio:
   - `code` <https://github.com/farizrahman4u/seq2seq>
   - `code` <https://github.com/nicolas-ivanov/lasagne_seq2seq>
   - `code` <https://github.com/pbhatia243/Neural_Conversation_Models>
-
-
-#### ["Learning to Discover Efficient Mathematical Identities"](http://arxiv.org/abs/1406.1584) Zaremba, Kurach, Fergus
->	"In this paper we explore how machine learning techniques can be applied to the discovery of efficient mathematical identities. We introduce an attribute grammar framework for representing symbolic expressions. Given a grammar of math operators, we build trees that combine them in different ways, looking for compositions that are analytically equivalent to a target expression but of lower computational complexity. However, as the space of trees grows exponentially with the complexity of the target expression, brute force search is impractical for all but the simplest of expressions. Consequently, we introduce two novel learning approaches that are able to learn from simpler expressions to guide the tree search. The first of these is a simple n-gram model, the other being a recursive neural network. We show how these approaches enable us to derive complex identities, beyond reach of brute-force search, or human derivation."
-
-  - `video` <http://youtube.com/watch?v=Hx20MUmWAfg> (Fergus)
-
-
-#### ["Convolutional Networks on Graphs for Learning Molecular Fingerprints"](http://arxiv.org/abs/1509.09292) Duvenaud, Maclaurin, Aguilera-Iparraguirre, Gomez-Bombarelli, Hirzel, Aspuru-Guzik, Adams
->	"We introduce a convolutional neural network that operates directly on graphs. These networks allow end-to-end learning of prediction pipelines whose inputs are graphs of arbitrary size and shape. The architecture we present generalizes standard molecular feature extraction methods based on circular fingerprints. We show that these data-driven features are more interpretable, and have better predictive performance on a variety of tasks."
-
->	"We generalized existing hand-crafted molecular features to allow their optimization for diverse tasks. By making each operation in the feature pipeline differentiable, we can use standard neural-network training methods to scalably optimize the parameters of these neural molecular fingerprints end-toend. We demonstrated the interpretability and predictive performance of these new fingerprints. Data-driven features have already replaced hand-crafted features in speech recognition, machine vision, and natural-language processing. Carrying out the same task for virtual screening, drug design, and materials design is a natural next step."
 
 
 #### ["Automatic Chemical Design using a Data-driven Continuous Representation of Molecules"](http://arxiv.org/abs/1610.02415) Gomez-Bombarelli, Duvenaud, Hernandez-Lobato, Aguilera-Iparraguirre, Hirzel, Adams, Aspuru-Guzik
