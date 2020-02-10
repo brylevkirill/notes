@@ -121,6 +121,7 @@
   <http://timvieira.github.io>  
   <http://ruder.io>  
   <http://danieltakeshi.github.io>  
+  <http://lilianweng.github.io>  
 
 
 #### news and discussions
@@ -317,31 +318,31 @@
 
 ----
 
+  ["Program Synthesis Explained"](https://www.cs.utexas.edu/~bornholt/post/synthesis-explained.html) by James Bornholt
+
+  ["Inductive Programming Meets the Real World"](https://microsoft.com/en-us/research/publication/inductive-programming-meets-real-world/) by Gulwani et al. `paper`  
+  ["Program Synthesis"](https://microsoft.com/en-us/research/wp-content/uploads/2017/10/program_synthesis_now.pdf) by Gulwani, Polozov, Singh `paper`  
+
+  ["Program Synthesis in 2017-18"](https://alexpolozov.com/blog/program-synthesis-2018) by Alex Polozov  
+  ["Recent Advances in Neural Program Synthesis"](https://arxiv.org/abs/1802.02353) by Neel Kant `paper`  
+
   ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34) `video`)
 
 ----
 
-  ["Program Synthesis Explained"](http://homes.cs.washington.edu/~bornholt/post/synthesis-for-architects.html) by James Bornholt
-
-  ["Inductive Programming Meets the Real World"](https://microsoft.com/en-us/research/publication/inductive-programming-meets-real-world/) by Gulwani et al. `paper`  
-  ["Program Synthesis"](https://microsoft.com/en-us/research/wp-content/uploads/2017/10/program_synthesis_now.pdf) by Gulwani, Polozov, Singh `paper`  
-  ["Approaches and Applications of Inductive Programming"](http://drops.dagstuhl.de/opus/volltexte/2018/8590/pdf/dagrep_v007_i009_p086_17382.pdf) by Schmid, Muggleton, Singh `paper`  
-
-  ["Program Synthesis in 2017-18"](https://alexpolozov.com/blog/program-synthesis-2018) by Oleksandr Polozov  
-  ["Recent Advances in Neural Program Synthesis"](https://arxiv.org/abs/1802.02353) by Neel Kant `paper`  
-
-  [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#program-induction)  
-  [**selected papers**](https://yadi.sk/d/LZYQN7Lu3WxVVb)  
-
-----
-
-  ["Deep Learning Trends: Program Induction"](https://facebook.com/nipsfoundation/videos/1552060484885185?t=5412) by Scott Reed `video`  
-  ["Learning to Code: Machine Learning for Program Induction"](https://youtu.be/vzDuVhFMB9Q?t=2m40s) by Alex Gaunt `video`  
-  ["Neural Meta Program Synthesis"](https://youtube.com/watch?v=Fs7FquuLprM) by Rishabh Singh `video`  
+  [overview](https://youtube.com/watch?v=nlgA2gnwscQ) by Alex Polozov `video`  
+  [overview](https://youtube.com/watch?v=Fs7FquuLprM) by Rishabh Singh `video`  
+  [overview](https://facebook.com/nipsfoundation/videos/1552060484885185?t=5412) by Scott Reed `video`  
+  [overview](https://youtu.be/vzDuVhFMB9Q?t=2m40s) by Alex Gaunt `video`  
 
   ["Neural Abstract Machines & Program Induction"](https://uclmr.github.io/nampi) workshop
 	(NIPS 2016 [videos](https://youtube.com/playlist?list=PLzTDea_cM27LVPSTdK9RypSyqBHZWPywt),
 	ICML 2018 [videos](https://youtube.com/playlist?list=PLC79LIGCBo81_H_wIBBIOu2GfF3OIixdN))  
+
+----
+
+  [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#program-induction)  
+  [**selected papers**](https://yadi.sk/d/LZYQN7Lu3WxVVb)  
 
 
 

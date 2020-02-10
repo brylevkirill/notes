@@ -433,10 +433,10 @@
    - Directly from raw inputs  
    - Using minimal domain knowledge"  
 
-   Reinforcement Learning gives a learning objective  
-   Deep Learning gives a learning mechanism  
-
   *(David Silver)*
+
+  - Reinforcement Learning gives a learning objective  
+  - Deep Learning gives a learning mechanism  
 
   ["Success Stories of Deep RL"](https://youtube.com/watch?v=N8_gVrIPLQM) by David Silver `video`
 

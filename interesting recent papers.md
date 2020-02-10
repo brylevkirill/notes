@@ -158,6 +158,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/IRzaWXP3s3U?t=9m47s> (Sobolev) `in russian`
   - `paper` ["Deconstructing Lottery Tickets: Zeros, Signs, and the Supermask"](https://arxiv.org/abs/1905.01067) by Zhou et al. ([post](https://eng.uber.com/deconstructing-lottery-tickets), [notes](https://www.shortscience.org/paper?bibtexKey=zhou2019deconstructing))
   - `paper` ["One Ticket to Win Them All: Generalizing Lottery Ticket Initializations Across Datasets and Optimizers"](https://arxiv.org/abs/1906.02773) by Morcos et al. ([post](https://ai.facebook.com/blog/understanding-the-generalization-of-lottery-tickets-in-neural-networks), [talk](https://youtube.com/watch?v=oOgbHpjTwwA) `video`)
+  - `paper` ["Proving the Lottery Ticket Hypothesis: Pruning is All You Need"](https://arxiv.org/abs/2002.00585) by Malach et al.
 
 #### ["Weight Agnostic Neural Networks"](https://arxiv.org/abs/1906.04358) Gaier, Ha
   `optimization` `NeurIPS 2019`
@@ -403,6 +404,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Improving Variational Inference with Inverse Autoregressive Flow"](http://arxiv.org/abs/1606.04934) Kingma, Salimans, Jozefowicz, Chen, Sutskever, Welling
   `IAF` `variational inference` `posterior approximation` `normalizing flows`
 >	"Most VAEs have so far been trained using crude approximate posteriors, where every latent variable is independent. Normalizing Flows have addressed this problem by conditioning each latent variable on the others before it in a chain, but this is computationally inefficient due to the introduced sequential dependencies. Inverse autoregressive flow, unlike previous work, allows us to parallelize the computation of rich approximate posteriors, and make them almost arbitrarily flexible."  
+  - `video` <https://slideslive.com/38917907/tutorial-on-normalizing-flows> (32:05) (Jang)
   - `post` <http://bjlkeng.github.io/posts/variational-autoencoders-with-inverse-autoregressive-flows>
   - `post` <http://akosiorek.github.io/ml/2018/04/03/norm_flows.html>
   - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#inverse-autoregressive-flow>
@@ -625,6 +627,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Neural Random-Access Machines"](http://arxiv.org/abs/1511.06392) Kurach, Andrychowicz, Sutskever
   `compute and memory`
 >	"It can manipulate and dereference pointers to an external variable-size random-access memory."  
+  - `video` <https://youtu.be/Fs7FquuLprM?t=5m37s> (Singh)
   - `post` <http://andrew.gibiansky.com/blog/machine-learning/nram-1/> + <http://andrew.gibiansky.com/blog/machine-learning/nram-2/>
   - `code` <https://github.com/gibiansky/experiments/tree/master/nram>
 
@@ -862,6 +865,8 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 #### ["Learning to Learn by Gradient Descent by Gradient Descent"](http://arxiv.org/abs/1606.04474) Andrychowicz, Denil, Gomez, Hoffman, Pfau, Schaul, Shillingford, de Freitas
   `learning optimization algorithm`
+>	"The move from hand-designed features to learned features in machine learning has been wildly successful. In spite of this, optimization algorithms are still designed by hand. In this paper we show how the design of an optimization algorithm can be cast as a learning problem, allowing the algorithm to learn to exploit structure in the problems of interest in an automatic way. Our learned algorithms, implemented by LSTMs, outperform generic, hand-designed competitors on the tasks for which they are trained, and also generalize well to new tasks with similar structure. We demonstrate this on a number of tasks, including simple convex problems, training neural networks, and styling images with neural art."  
+>	"We have shown how to cast the design of optimization algorithms as a learning problem, which enables us to train optimizers that are specialized to particular classes of functions. Our experiments have confirmed that learned neural optimizers compare favorably against state-of-the-art optimization methods used in deep learning. We witnessed a remarkable degree of transfer, with for example the LSTM optimizer trained on 12,288 parameter neural art tasks being able to generalize to tasks with 49,152 parameters, different styles, and different content images all at the same time. We observed similar impressive results when transferring to different architectures in the MNIST task. The results on the CIFAR image labeling task show that the LSTM optimizers outperform handengineered optimizers when transferring to datasets drawn from the same data distribution. In future work we plan to continue investigating the design of the NTM-BFGS optimizers. We observed that these outperformed the LSTM optimizers for quadratic functions, but we saw no benefit of using these methods in the other stochastic optimization tasks. Another important direction for future work is to develop optimizers that scale better in terms of memory usage."  
 >	"Take some computation where you usually wouldn’t keep around intermediate states, such as a planning computation (say value iteration, where you only keep your most recent estimate of the value function) or stochastic gradient descent (where you only keep around your current best estimate of the parameters). Now keep around those intermediate states as well, perhaps reifying the unrolled computation in a neural net, and take gradients to optimize the entire computation with respect to some loss function."  
   - `video` <https://youtu.be/SAcHyzMdbXc?t=10m24s> (de Freitas)
   - `video` <https://youtu.be/x1kf4Zojtb0?t=1h4m53s> (de Freitas)
@@ -949,6 +954,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://slideslive.com/38921974/perception-as-generative-reasoning-structure-causality-probability-3?t=2889> (Rezende)
   - `video` <https://youtu.be/bpsoGt-NYYk?t=2m34s> (Garnelo)
   - `video` <https://youtube.com/watch?v=XJnuEO59XfQ> (Chen)
+  - `video` <https://youtu.be/vZvFNOzDoos?t=42s> (Lapko) `in russian`
   - `post` <https://deepmind.com/blog/neural-scene-representation-and-rendering>
   - `code` <https://github.com/wohlert/generative-query-network-pytorch>
   - `code` <https://github.com/ogroth/tf-gqn>
@@ -1704,6 +1710,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `post` <https://blog.openai.com/glow>
   - `video` <https://youtube.com/watch?v=exJZOC3ZceA> (demo)
   - `video` <https://slideslive.com/38917897/glow-generative-flow-with-invertible-1x1-convolutions> (Kingma, Dhariwal)
+  - `video` <https://slideslive.com/38917907/tutorial-on-normalizing-flows> (29:52) (Jang)
   - `video` <https://youtu.be/79wiVbMkFTg?t=27m11s> (Kurbanov) `in russian`
   - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#glow>
   - `code` <https://github.com/openai/glow>
@@ -1745,6 +1752,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	- fast to sample from  
 >	- limited capacity vs MAF"  
   - `video` <https://vimeo.com/252105837> (Papamakarios)
+  - `video` <https://slideslive.com/38917907/tutorial-on-normalizing-flows> (33:19) (Jang)
   - `audio` <https://youtube.com/watch?v=315xKcYX-1w> (Papamakarios)
   - `post` <http://blog.evjang.com/2018/01/nf2.html>
   - `post` <http://akosiorek.github.io/ml/2018/04/03/norm_flows.html>
@@ -2967,6 +2975,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Teacher-Student Curriculum Learning"](https://arxiv.org/abs/1707.00183) Matiisen, Oliver, Cohen, Schulman
   `curriculum learning`
 >	"A framework for automatic curriculum learning, where the Student tries to learn a complex task and the Teacher automatically chooses subtasks from a given set for the Student to train on. We describe a family of Teacher algorithms that rely on the intuition that the Student should practice more those tasks on which it makes the fastest progress, i.e. where the slope of the learning curve is highest. In addition, the Teacher algorithms address the problem of forgetting by also choosing tasks where the Student's performance is getting worse. We demonstrate that TSCL matches or surpasses the results of carefully hand-crafted curricula in two tasks: addition of decimal numbers with LSTM and navigation in Minecraft."  
+  - `video` <https://youtube.com/watch?v=GFCujBpTf3k>
   - `post` <https://lilianweng.github.io/lil-log/2020/01/29/curriculum-for-reinforcement-learning.html>
 
 #### ["Automatic Goal Generation for Reinforcement Learning Agents"](https://arxiv.org/abs/1705.06366) Held, Geng, Florensa, Abbeel
@@ -3507,6 +3516,13 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 [overview](https://alexpolozov.com/blog/program-synthesis-2018) of recent papers by Oleksandr Polozov
 
 ----
+#### ["Learning Compositional Neural Programs with Recursive Tree Search and Planning"](https://arxiv.org/abs/1905.12941) Pierrot et al.
+  `AlphaNPI`
+>	"AlphaNPI incorporates the strengths of Neural Programmer-Interpreters (NPI) and AlphaZero. NPI contributes structural biases in the form of modularity, hierarchy and recursion, which are helpful to reduce sample complexity, improve generalization and increase interpretability. AlphaZero contributes powerful neural network guided search algorithms, which we augment with recursion. AlphaNPI only assumes a hierarchical program specification with sparse rewards: 1 when the program execution satisfies the specification, and 0 otherwise. Using this specification, AlphaNPI is able to train NPI models effectively with RL for the first time, completely eliminating the need for strong supervision in the form of execution traces. The experiments show that AlphaNPI can sort as well as previous strongly supervised NPI variants. The AlphaNPI agent is also trained on a Tower of Hanoi puzzle with two disks and is shown to generalize to puzzles with an arbitrary number of disks."  
+>	"This paper demonstrates how to train NPI models effectively with RL for the first time. We remove the need for execution traces in exchange for a specification of programs and associated correctness tests on whether each program has completed successfully. This allows us to train the agent by telling it what needs to be done, instead of how it should be done. In other words, we show it is possible to overcome the need for strong supervision by replacing execution traces with a library of programs we want to learn and corresponding tests that assess whether a program has executed correctly."  
+>	"We reformulate the original NPI as an actor-critic network and endow the search process of AlphaZero with the ability to handle hierarchy and recursion."  
+  - `paper` [**"Neural Programmer-Interpreters"**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#neural-programmer-interpreters-reed-de-freitas) by Reed et al. `summary`
+
 #### ["AlphaD3M: Machine Learning Pipeline Synthesis"](https://www.cs.columbia.edu/~idrori/AlphaD3M.pdf) Drori et al.
   `AlphaD3M` `meta-learning` `ICML 2018`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#alphad3m-machine-learning-pipeline-synthesis-drori-et-al>
