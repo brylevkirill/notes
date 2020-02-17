@@ -525,6 +525,8 @@
 #### ["On the Measure of Intelligence"](https://arxiv.org/abs/1911.01547) Chollet
 >	"To make deliberate progress towards more intelligent and more human-like artificial systems, we need to be following an appropriate feedback signal: we need to be able to define and evaluate intelligence in a way that enables comparisons between two systems, as well as comparisons with humans. Over the past hundred years, there has been an abundance of attempts to define and measure intelligence, across both the fields of psychology and AI. We summarize and critically assess these definitions and evaluation approaches, while making apparent the two historical conceptions of intelligence that have implicitly guided them.  We note that in practice, the contemporary AI community still gravitates towards benchmarking intelligence by comparing the skill exhibited by AIs and humans at specific tasks, such as board games and video games. We argue that solely measuring skill at any given task falls short of measuring intelligence, because skill is heavily modulated by prior knowledge and experience: unlimited priors or unlimited training data allow experimenters to “buy” arbitrary levels of skills for a system, in a way that masks the system’s own generalization power. We then articulate a new formal definition of intelligence based on Algorithmic Information Theory, describing intelligence as skill-acquisition efficiency and highlighting the concepts of scope, generalization difficulty, priors, and experience, as critical pieces to be accounted for in characterizing intelligent systems. Using this definition, we propose a set of guidelines for what a general AI benchmark should look like. Finally, we present a new benchmark closely following these guidelines, the Abstraction and Reasoning Corpus (ARC), built upon an explicit set of priors designed to be as close as possible to innate human priors. We argue that ARC can be used to measure a human-like form of general fluid intelligence and that it enables fair general intelligence comparisons between AI systems and humans."
 
+  - <https://kaggle.com/c/abstraction-and-reasoning-challenge>
+
 
 #### ["Evaluation in Artificial Intelligence: From Task-oriented to Ability-oriented Measurement"](https://riunet.upv.es/handle/10251/83598) Hernandez-Orallo
 >	"The evaluation of artificial intelligence systems and components is crucial for the progress of the discipline. In this paper we describe and critically assess the different ways AI systems are evaluated, and the role of components and techniques in these systems. We first focus on the traditional task-oriented evaluation approach. We identify three kinds of evaluation: human discrimination, problem benchmarks and peer confrontation. We describe some of the limitations of the many evaluation schemes and competitions in these three categories, and follow the progression of some of these tests. We then focus on a less customary (and challenging) ability-oriented evaluation approach, where a system is characterised by its (cognitive) abilities, rather than by the tasks it is designed to solve. We discuss several possibilities: the adaptation of cognitive tests used for humans and animals, the development of tests derived from algorithmic information theory or more integrated approaches under the perspective of universal psychometrics. We analyse some evaluation tests from AI that are better positioned for an ability-oriented evaluation and discuss how their problems and limitations can possibly be addressed with some of the tools and ideas that appear within the paper. Finally, we enumerate a series of lessons learnt and generic guidelines to be used when an AI evaluation scheme is under consideration."
@@ -587,6 +589,9 @@
 
 #### ["Universal Reinforcement Learning Algorithms: Survey and Experiments"](https://arxiv.org/abs/1705.10557) Aslanides, Leike, Hutter
 >	"Many state-of-the-art reinforcement learning algorithms typically assume that the environment is an ergodic Markov Decision Process. In contrast, the field of universal reinforcement learning is concerned with algorithms that make as few assumptions as possible about the environment. The universal Bayesian agent AIXI and a family of related URL algorithms have been developed in this setting. While numerous theoretical optimality results have been proven for these agents, there has been no empirical investigation of their behavior to date. We present a short and accessible survey of these URL algorithms under a unified notation and framework, along with results of some experiments that qualitatively illustrate some properties of the resulting policies, and their relative performance on partially-observable gridworld environments. We also present an opensource reference implementation of the algorithms which we hope will facilitate further understanding of, and experimentation with, these ideas."
+
+----
+>	"Authors used knowledge seeking, Shannon knowledge seeking and minimum description length to augment AIXI."
 
   - <http://aslanides.io/aixijs/demo.html> (demo)
   - `post` <http://aslanides.io/aixijs>
@@ -674,6 +679,7 @@
 >	"If you just use standard AIXI model it is not asymptotically optimal. But if you use information gain as reward it is asymptotically optimal for general reward signal, if you combine knowledge-seeking agent with AIXI by sometimes seeking knowledge and sometimes optimizing reward."
 
   - `video` <https://youtu.be/YMdFUay0k20?t=36m49s> (Hutter) ([asymptotic optimality](https://youtu.be/YMdFUay0k20?t=1h24m57s), [comparison to Friston's and Schmidhuber's theories](https://youtu.be/YMdFUay0k20?t=1h26m40s))
+  - `video` <https://slideslive.com/38909803/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework> (1:02:06) (Biehl)
   - `notes` <http://aslanides.io/aixijs/#ksa>
   - `post` <https://intelligence.org/2013/09/06/laurent-orseau-on-agi>
   - `paper` ["Universal Knowledge-Seeking Agents"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.687.5725&rep=rep1) by Orseau
@@ -777,7 +783,7 @@
 
 >	"Adversarial Curiosity: A reward-maximising neural control network C learns to generate outputs or experiments. A separate world model network M sees C's outputs, and learns to predict the reactions of the environment. C maximises errors minimised by M. This motivates C to generate experiments yielding "novel" data that still surprises M. GANs are a simple application of AC where the environment returns whether C's output is in a given set."
 
-  - `video` <https://slideslive.com/38921895/retrospectives-a-venue-for-selfreflection-in-ml-research-2?t=94> (Schmidhuber)
+  - `video` <https://slideslive.com/38923483/metaanalyses> (Schmidhuber)
 
 
 #### ["Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids"](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3881010/pdf/fnbot-07-00025.pdf) Frank, Leitner, Stollenga, Forster, Schmidhuber

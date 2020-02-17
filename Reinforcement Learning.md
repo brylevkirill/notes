@@ -305,6 +305,8 @@
   [overview](https://facebook.com/nipsfoundation/videos/1554594181298482) by Pieter Abbeel `video`  
   [overview](https://youtube.com/watch?v=TERCdog1ddE) by Pieter Abbeel `video`  
 
+  [course](https://people.eecs.berkeley.edu/~pabbeel/cs287-fa19) by Pieter Abbeel `video`
+
   ["Is (Deep) Reinforcement Learning Barking Up The Wrong Tree?"](https://youtube.com/watch?v=2GW7ozcUCFE) by Chris Atkeson `video`  
   ["What Should Be Learned?"](https://youtu.be/WRsxoVB8Yng?t=7h7m15s) by Chris Atkeson `video`  
 
@@ -356,12 +358,8 @@
   - [policy gradient methods](http://kvfrans.com/the-policy-gradient/)  
   - [model-based methods](http://kvfrans.com/making-use-of-the-model/)  
 
-  introduction by Massimiliano Patacchiola:  
-  - [Dynamic Programming](https://mpatacchiola.github.io/blog/2016/12/09/dissecting-reinforcement-learning.html)  
-  - [Monte Carlo](https://mpatacchiola.github.io/blog/2017/01/15/dissecting-reinforcement-learning-2.html)  
-  - [Temporal Difference](https://mpatacchiola.github.io/blog/2017/01/29/dissecting-reinforcement-learning-3.html)  
-  - [Actor-Critic](https://mpatacchiola.github.io/blog/2017/02/11/dissecting-reinforcement-learning-4.html)  
-  - [Genetic Algorithms](https://mpatacchiola.github.io/blog/2017/03/14/dissecting-reinforcement-learning-5.html)  
+  introduction by Lilian Weng:
+  - ["A Long Peak"](https://lilianweng.github.io/lil-log/2018/02/19/a-long-peek-into-reinforcement-learning.html)
 
   introduction by Benjamin Recht:  
   - ["Make It Happen"](http://argmin.net/2018/01/29/taxonomy/)  
@@ -715,9 +713,7 @@
   [overview](http://youtube.com/watch?v=EMv1AVLOnto) by Oleg Svidchenko `video` `in russian`  
   [overview](http://youtube.com/watch?v=WCE9hhPbCmc) by Maxim Kretov `video` `in russian`  
 
-  ["Comparing Intrinsic Motivations in a Unified Framework"](https://agi2018imtutorial.wordpress.com) tutorial by Martin Biehl
-	([video](https://slideslive.com/38909803/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework),
-	[slides](https://slides.com/slides_martin/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework))
+  ["Comparing Intrinsic Motivations in a Unified Framework"](https://slideslive.com/38909803/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework) by Martin Biehl `video`
 
 ----
 
@@ -738,16 +734,14 @@
   - [**information theoretic and distributional models**](#exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models)
     - **uncertainty motivation (novelty)**
     - **information gain motivation (bayesian surprise)**
-    - **empowerment**
+    - **empowerment motivation**
   - [**predictive models**](#exploration-and-intrinsic-motivation---predictive-models)
     - **predictive novelty motivation (prediction error)**
     - **learning progress motivation (prediction gain)**
     - **predictive familiarity motivation (homeostasis)**
   - [**competence-based models**](#exploration-and-intrinsic-motivation---competence-based-models)
-    - **maximizing incompetence motivation**
-    - **maximizing competence progress (automated curriculum learning)**
-  - [**morphological models**](#exploration-and-intrinsic-motivation---morphological-models)
-    - **synchronicity motivation**
+    - **incompetence motivation**
+    - **competence progress motivation (automated curriculum learning)**
 
   ["How Can We Define Intrinsic Motivation"](http://pyoudeyer.com/epirob08OudeyerKaplan.pdf) by Oudeyer and Kaplan `paper`
 
@@ -837,7 +831,7 @@
 	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
 
 
-  - **empowerment**
+  - **empowerment motivation**
 
 	> "A reward measure that pushes an agent to produce sequences of actions that can transfer a maximal amount of information to its sensors through the environment. It is defined as the channel capacity from the sequence of actions At, At+1, ..., At+n−1 to the perceptions St+n after an arbitrary number of timesteps: r(At, At+1, ..., At+n−1 →  St+n) = max {p(a)} I(At, At+1, ..., At+n−1, St+n), where p(a) is the probability distribution function of the action sequences a=(at, at+1, ..., at+n−1) and I is mutual information."
 
@@ -912,12 +906,12 @@
 >	"A third major computational approach to intrinsic motivation is based on measures of competence that an agent has for achieving self-determined results or goals. Central here is the concept of “challenge”, with associated measures of difficulty as well as measures of actual performance. A “challenge” or “goal” here will be any sensorimotor configuration SMk, or any set {Pk} of properties of a sensorimotor configuration, that an agent sets by itself and that it tries to achieve through action. It is the properties of the achievement process, rather than the “meaning” of the particular goal being achieved, that will determine the level of interestingness of the associated activity. While prediction mechanisms or probability models, as used in previous sections, can be used in the goal-reaching architecture, they are not mandatory (for example, one can implement systems that try to achieve self-generated goals through Q-learning and never explicitly make predictions of future sensorimotor contexts). Furthermore, while in some cases, certain competence-based and knowledge-based models of intrinsic motivation might be somewhat similar, they may often produce very different behaviors. Indeed, the capacity to predict what happens in a situation can be sometimes only loosely coupled to the capacity to modify a situation in order to achieve a given self-determined goal. After a certain amount of time, bounded for example by a timeout Tg, a motivation module compares the goal that was initially set and the current situation to assess to what extent it was reached, i.e. measure the competence of the agent on goal gk at time tg: la(gk, tg) = ‖ gk^(tg) − gk(tg)) ‖. The “interestingness”, and thus reward value, of the goal gk is then derived from this competence measure."
 
 
-  - **maximizing incompetence motivation**
+  - **incompetence motivation**
 
 	> "A first competence-based approach to intrinsic motivation can be a system which pushes the robot to set challenges/goals for which its performance is lowest. This is a motivation for maximally difficult challenges. This can be implemented as: r(SM(→ t), gk, tg) = C·la(gk, tg). Note that here and everywhere in the competence based approaches, rewards are generated only at the end of episodes."
 
 
-  - **maximizing competence progress (automated curriculum learning)**
+  - **competence progress motivation (automated curriculum learning)**
 
 	> "Maximizing incompetence does not model very well the psychological models of optimal challenge and “flow” proposed by (Csikszentmihalyi, 1991). Flow refers to the state of pleasure related to activities for which difficulty is optimal: neither too easy nor too difficult. As difficulty of a goal can be modeled by the (mean) performance in achieving this goal, a possible manner to model flow would be to introduce two thresholds defining the zone of optimal difficulty. Yet, the use of thresholds can be rather fragile, require hand tuning and possibly complex adaptive mechanism to update these thresholds during the robot’s lifetime. Another approach can be taken, which avoids the use of thresholds. It consists in defining the interestingness of a challenge as the competence progress that is experienced as the robot repeatedly tries to achieve it. So, a challenge for which a robot is bad initially but for which it is rapidly becoming good will be highly rewarding. Thus, a first manner to implement flow motivation would be: r(SM(→ t), gk, tg) = C·(la(gk, tg−θ) − la(gk, tg)) corresponding to the difference between the current performance for task gk and the performance corresponding to the last time gk was tried, at a time denoted tg−θ."
 
@@ -927,17 +921,6 @@
 
 	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---competence-based-models---maximizing-competence-motivation)  
 	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
-
-
-----
-#### exploration and intrinsic motivation - morphological models
-
->	"The two previous computational approaches to motivation were based on measures comparing information characterizing a stimulus perceived in the present and information characterizing stimuli perceived in the past and represented in memory. A third approach that can be taken is based on the comparison of information characterizing several pieces of stimuli perceived at the same time in several parts of the perceptive field. Pragmatically, this approach consists in attributing interest depending on morphological mathematical properties of the current flow of sensorimotor values, irrespective of what the internal cognitive system might predict or master."
-
-
-  - **synchronicity motivation**
-
-	> "One typical example of this type of intrinsic motivation mechanism is based on synchronicity. The synchronicity motivation is based on an information theoretic measure of short-term correlation (or reduced information distance) between a number of sensorimotor channels. With such a motivation, situations for which there is a high short-term correlation between a maximally large number of sensorimotor channels are very interesting."
 
 
 
@@ -1155,7 +1138,8 @@
 
   ["The Next Big Step in AI: Planning with a Learned Model"](https://youtube.com/watch?v=6-Uiq8-wKrg) by Richard Sutton `video`  
   ["The Grand Challenge of Knowledge"](http://www.fields.utoronto.ca/video-archive/2016/10/2267-16158) (41:35) by Richard Sutton `video`  
-  ["Open Questions in Model-based RL"](https://youtube.com/watch?v=OeIVfQz3FUc) by by Richard Sutton `video`  
+  ["Open Questions in Model-based RL"](https://youtube.com/watch?v=OeIVfQz3FUc) by Richard Sutton `video`  
+  ["Toward a General AI-Agent Architecture"](https://slideslive.com/38921889/biological-and-artificial-reinforcement-learning-4?t=980) by Richard Sutton `video` *(SuperDyna)*  
 
   ["Planning and Models"](https://youtube.com/watch?v=Xrxrd8nl4YI) by Hado van Hasselt `video`  
   ["Integrating Learning and Planning"](https://youtube.com/watch?v=ItMutbeOHtc) by David Silver `video`  
@@ -1166,7 +1150,7 @@
 
 ----
 
-  ["The Bitter Lesson"](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) by Rich Sutton ([talk](http://www.fields.utoronto.ca/video-archive/2016/10/2267-16158) `video`)  
+  ["The Bitter Lesson"](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) by Richard Sutton ([talk](http://www.fields.utoronto.ca/video-archive/2016/10/2267-16158) `video`)  
   ["Do we still need models or just more data and compute?"](https://staff.fnwi.uva.nl/m.welling/wp-content/uploads/Model-versus-Data-AI-1.pdf) by Max Welling  
 
 ----
@@ -1476,10 +1460,13 @@
 ---
 ### policy-based methods
 
-  [introduction](https://danieltakeshi.github.io/2017/03/28/going-deeper-into-reinforcement-learning-fundamentals-of-policy-gradients) by Daniel Takeshi
+  [overview](https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html) by Lilian Weng  
+  [overview](https://danieltakeshi.github.io/2017/03/28/going-deeper-into-reinforcement-learning-fundamentals-of-policy-gradients) by Daniel Takeshi  
 
-  [introduction](http://youtube.com/watch?v=S_gwYj1Q-44) by Pieter Abbeel `video`  
-  [introduction](http://youtube.com/watch?v=KHZVXao4qXs) by David Silver `video`  
+----
+
+  [overview](http://youtube.com/watch?v=KHZVXao4qXs) by David Silver `video`  
+  [overview](http://youtube.com/watch?v=S_gwYj1Q-44) by Pieter Abbeel `video`  
 
   [tutorial](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Reinforcement-Learning-Through-Policy-Optimization) by Pieter Abbeel and John Schulman `video`
 	([slides](http://people.eecs.berkeley.edu/~pabbeel/nips-tutorial-policy-optimization-Schulman-Abbeel.pdf))  
@@ -1571,12 +1558,12 @@
 
 ----
 
+  <http://scholarpedia.org/article/Evolution_strategies>
+
   [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement#t=784) by Pieter Abbeel `video`
 
   [overview](https://lilianweng.github.io/lil-log/2019/09/05/evolution-strategies.html) by Lilian Weng  
   ["A Visual Guide to Evolution Strategies"](http://blog.otoro.net/2017/10/29/visual-evolution-strategies/) by David Ha  
-
-  <http://scholarpedia.org/article/Evolution_strategies>
 
   ["Completely Derandomized Self-Adaptation in Evolution Strategies"](https://www.lri.fr/~hansen/cmaartic.pdf) (CMA-ES) by Hansen and Ostermeier `paper`  
   ["Natural Evolution Strategies"](http://jmlr.org/papers/volume15/wierstra14a/wierstra14a.pdf) by Wierstra et al. `paper`  
@@ -1610,29 +1597,6 @@
 
   [**"Trust Region Policy Optimization"**](#trust-region-policy-optimization-schulman-levine-moritz-jordan-abbeel) by Schulman et al. `paper` `summary`
 
-  [overview](https://youtu.be/xe-z4i3l-iQ?t=30m35s) by Pieter Abbeel `video`  
-  [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=1630) by Pieter Abbeel `video`  
-  [overview](https://youtube.com/watch?v=gb5Q2XL5c8A) by John Schulman `video`  
-  [overview](https://youtu.be/ycCtmp4hcUs?t=58m53s) by Joshua Achiam `video`  
-  [overview](https://yadi.sk/i/1oyihBnm3HiKHm) by Alexander Fritzler `video` `in russian`  
-
-  [explanation](http://kvfrans.com/what-is-the-natural-gradient-and-where-does-it-appear-in-trust-region-policy-optimization/) of natural gradient in TRPO by Kevin Frans  
-  [explanation](http://www.alexirpan.com/rl-derivations/#natural-policy-gradient) of natural gradient by Alex Irpan  
-
-----
-
-  "TRPO uses the notion of a trust region, which restricts optimization steps to within a region where the approximation of the true cost function still holds."
-
-  "As you iteratively improve your policy, it’s important to avoid parameter updates that change your policy too much, as enforced by constraining the KL divergence between the distributions predicted by the old and the new policy on a batch of data to be less than some constant δ. This δ (in the unit of nats) is better than a fixed step size, since the meaning of the step size changes depending on what the rewards and problem structure look like at different points in training. It matters more as we do more experience replay. Instead of conjugate gradients the simplest instantiation of this idea could be implemented by doing a line search and checking the KL along the way."
-
-  "To improve its policy, TRPO attempts to maximize the expectation of Q-values over the distribution of states and actions given by θnew:
-
-  maxθ [Σs pθ(s) * (Σa πθ(a|s) * Qθold(s,a))]  subject to  DKL(pθold, pθ) ≤ δ
-
-  This objective can be approximated by using an importance-sampled Monte Carlo estimate of Q-values, with a distribution of states sampled from policy θold. However, theres a constraint to updating θ: the average KL divergence between the new policy and old policy cannot be greater than a constant δ. This acts as a limiter on the step size we can take on each update, and can be compared to the natural gradient. The theory behind TRPO guarantees gradual improvement over the expected return of a policy."
-
-  "One downside to TRPO algorithm is its on-policy nature, requiring new Q-values after every policy update. We cannot use methods such as experience replay which reuse past information, so that we must acquire new Monte Carlo estimates of Q for every new policy. Furthermore, Monte Carlo estimates are known to have higher variance than methods such as one-step TD updates, since the return is affected by independent future decisions. Bringing this variance down requires many episodes of experience per policy update, making TRPO a data-heavy algorithm."
-
 
 
 ----
@@ -1640,46 +1604,22 @@
 
   [**"Proximal Policy Optimization Algorithms"**](#proximal-policy-optimization-algorithms-schulman-wolski-dhariwal-radford-klimov) by Schulman et al. `paper` `summary`
 
-  [overview](https://youtu.be/xvRrgxcpaHY?t=28m34s) by John Schulman `video`  
-  [overview](https://youtu.be/ycCtmp4hcUs?t=1h7m) by Joshua Achiam `video`  
-
 
 
 ----
 #### Actor-Critic (AC)
 
-  [introduction](http://incompleteideas.net/sutton/book/ebook/node66.html) by Sutton and Barto
-
-  [overview](http://videolectures.net/rldm2015_silver_reinforcement_learning#t=4043) by David Silver `video`  
-  [overivew](https://youtu.be/qLaDWKd61Ig?t=38m58s) by David Silver `video`  
-  [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement#t=2985) by Pieter Abbeel `video`  
-  [overview](https://youtu.be/rO7Dx8pSJQw?t=50m) by John Schulman `video`  
-  [overview](https://youtu.be/mrgJ53TIcQc?t=1h3m2s) by Alexey Seleznev `video` `in russian`  
+  [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement#t=2985) by Pieter Abbeel `video`
 
 ----
 
-  "In advantage learning one throws away information that is not needed for coming up with a good policy. The argument is that throwing away information allows you to focus your resources on learning what is important. As an example consider Tetris when you gain a unit reward for every time step you survive. Arguably the optimal value function takes on large values when the screen is near empty, while it takes on small values when the screen is near full. The range of differences can be enormous (from millions to zero). However, for optimal decision making how long you survive does not matter. What matters is the small differences in how the screen is filled up because this is what determines where to put the individual pieces. If you learn an action value function and your algorithm focuses on something like the mean square error, i.e., getting the magnitudes right, it is very plausible that most resources of the learning algorithm will be spent on capturing how big the values are, while little resource will be spent on capturing the value differences between the actions. This is what advantage learning can fix. The fix comes because advantage learning does not need to wait until the value magnitudes are properly captured before it can start learning the value differences. As can be seen from this example, advantage learning is expected to make a bigger difference where the span of optimal values is orders of magnitudes larger than action-value differences."
-
-  *(Csaba Szepesvari)*
-
-
-  - [**Advantage Actor-Critic (A2C)**](#advantage-actor-critic-a2c)  
+  - [**Advantage Actor-Critic (A2C)**](#advantage-actor-critic-a2c)
 
 
 ----
 #### Advantage Actor-Critic (A2C)
 
   [**"Asynchronous Methods for Deep Reinforcement Learning"**](#asynchronous-methods-for-deep-reinforcement-learning-mnih-badia-mirza-graves-lillicrap-harley-silver-kavukcuoglu) by Mnih et al. `paper` `summary`
-
-  [overview](https://youtube.com/watch?v=9sx1_u2qVhQ) by Andriy Mnih `video`  
-  [overview](http://techtalks.tv/talks/asynchronous-methods-for-deep-reinforcement-learning/62475/) by Andriy Mnih `video`  
-
-----
-
-  - critic learns only state value function V(s) rather than action value function Q(s,a) and thus cannot pass back to actor gradients of value function with respect to action  
-  - critic approximates action value with rewards from several steps of experience and passes TD error to actor  
-  - exploiting multithreading capabilities and executing many instances of agent in parallel using shared model  
-  - alternative to experience replay since parallelization also diversifies and decorrelates experience data  
 
 
 
@@ -1699,43 +1639,13 @@
 ----
 #### Deep Deterministic Policy Gradient (DDPG)
 
-  [**"Deterministic Policy Gradient Algorithms"**](#deterministic-policy-gradient-algorithms-silver-lever-heess-degris-wierstra-riedmiller) by Silver et al. `paper` `summary`  
-  [**"Continuous Control with Deep Reinforcement Learning"**](#continuous-control-with-deep-reinforcement-learning-lillicrap-hunt-pritzel-heess-erez-tassa-silver-wierstra) by Lillicrap et al. `paper` `summary`  
-
-  [overview](http://videolectures.net/rldm2015_silver_reinforcement_learning/#t=4043) by David Silver `video`  
-  [overview](http://youtu.be/qLaDWKd61Ig?t=39m) by David Silver `video`  
-  [overview](http://youtu.be/KHZVXao4qXs?t=52m58s) by David Silver `video`  
-  [overview](http://youtu.be/M6nfipCxQBc?t=7m45s) by Timothy Lillicrap `video`  
-  [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724) by Pieter Abbeel `video`  
-  [overview](https://youtu.be/rO7Dx8pSJQw?t=50m) by John Schulman `video`  
-  [overview](https://youtu.be/mrgJ53TIcQc?t=1h3m2s) by Alexey Seleznev `video` `in russian`  
-
-----
-
-  - continuous analogue to DQN which exploits differentiability of Q-network  
-  - instead of requiring samples from stochastic policy and encouraging samples with higher scores, use deterministic policy and get gradient information directly from second network that models score function  
-  - policy determinism allows policy to be optimized more easily and more sample efficiently due to action no longer being a random variable which must be integrated over in expectation  
-  - can be much more efficient in settings with very high-dimensional actions where sampling actions provides poor coverage of state-action space  
+  [**"Continuous Control with Deep Reinforcement Learning"**](#continuous-control-with-deep-reinforcement-learning-lillicrap-hunt-pritzel-heess-erez-tassa-silver-wierstra) by Lillicrap et al. `paper` `summary`
 
 
 ----
 #### Stochastic Value Gradient (SVG)
 
   [**"Learning Continuous Control Policies by Stochastic Value Gradients"**](#learning-continuous-control-policies-by-stochastic-value-gradients-heess-wayne-silver-lillicrap-tassa-erez) by Heess et al. `paper` `summary`
-
-  [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724) by Pieter Abbeel `video`  
-  [overview](https://youtu.be/rO7Dx8pSJQw?t=50m) by John Schulman `video`  
-  [overview](https://youtu.be/mrgJ53TIcQc?t=1h10m31s) by Alexey Seleznev `video` `in russian`  
-
-----
-
-  "SVG tackles the problem of compounding model errors by using observations from the real environment, instead of the imagined one. To accommodate mismatch between model predictions and real transitions, the dynamics models in SVG are probabilistic. The policy is improved by computing the analytic gradient of the real trajectories with respect to the policy. Re-parametrization trick is used to permit back-propagation through the stochastic sampling."
-
-  - generalizes DPG to stochastic policies in a number of ways, giving spectrum from model-based to model-free algorithms  
-  - while SVG(0) is direct stochastic generalization of DPG, SVG(1) combines actor, critic and environment dynamics model  
-  - SVG can be used both with (SVG(0) and SVG(1)) and without (SVG(∞)) value critics  
-  - SVG can be used both with (SVG(∞) and SVG(1)) and without (SVG(0)) environment dynamics models  
-  - actor is trained through combination of gradients from critic, model and reward simultaneously  
 
 
 
@@ -2211,12 +2121,12 @@ interesting recent papers:
   * information theoretic and distributional models
     - [**uncertainty motivation**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---uncertainty-motivation)
     - [**information gain motivation**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---information-gain-motivation)
-    - [**empowerment**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---empowerment)
+    - [**empowerment motivation**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---empowerment-motivation)
   * predictive models
     - [**predictive novelty motivation**](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---predictive-novelty-motivation)
     - [**learning progress motivation**](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---learning-progress-motivation)
   * competence-based models
-    - [**maximizing competence progress**](#interesting-papers---exploration-and-intrinsic-motivation---competence-based-models---maximizing-competence-progress)
+    - [**competence progress motivation**](#interesting-papers---exploration-and-intrinsic-motivation---competence-based-models---competence-progress-motivation)
 
 ----
 #### ["How Can We Define Intrinsic Motivation"](http://pyoudeyer.com/epirob08OudeyerKaplan.pdf) Oudeyer, Kaplan
@@ -2660,7 +2570,7 @@ interesting recent papers:
 
 
 ---
-### interesting papers - exploration and intrinsic motivation - information theoretic and distributional models - empowerment
+### interesting papers - exploration and intrinsic motivation - information theoretic and distributional models - empowerment motivation
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)
 
@@ -2685,6 +2595,7 @@ interesting recent papers:
 
 >	"Let us conclude with a remark regarding the biological empowerment hypotheses in general: the fact that the default behaviours produced by empowerment seem often to match what intuitive expectations concerning default behaviour seem to imply, there is some relevance in investigating whether some of these behaviours are indeed approximating default behaviours observed in nature. A number of arguments in favour of why empowerment maximizing or similar behaviour could be relevant in biology have been made in (Klyubin et al. 2008), of which in this review we mainly highlighted its role as a measure of sensorimotor efficiency and the advantages that an evolutionary process would confer to more informationally efficient perception-action configurations."
 
+  - `video` <https://slideslive.com/38909803/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework> (1:11:15) (Biehl)
   - `paper` ["All Else Being Equal Be Empowered"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.101.9018&rep=rep1&type=pdf) by Klyubin, Polani, Nehaniv
   - `paper` ["Empowerment: A Universal Agent-Centric Measure of Contro"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.297.8746&rep=rep1&type=pdf) by Klyubin, Polani, Nehaniv
 
@@ -2755,6 +2666,7 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=l1FqtAHfJLI>
   - `video` <https://youtu.be/8NR6euSDfsM?t=9m4s> (Darrell)
   - `video` <https://vk.com/video-44016343_456240849> (Efros)
+  - `video` <https://slideslive.com/38909803/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework> (1:29:06) (Biehl)
   - `video` <https://youtu.be/EMv1AVLOnto?t=19m42s> (Svidchenko) `in russian`
   - `code` <https://github.com/openai/large-scale-curiosity>
   - `paper` [**"On Bonus Based Exploration Methods In The Arcade Learning Environment"**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#on-bonus-based-exploration-methods-in-the-arcade-learning-environment-taiga-fedus-machado-courville-bellemare) by Taiga et al. `summary`
@@ -2820,7 +2732,7 @@ interesting recent papers:
 
 
 ---
-### interesting papers - exploration and intrinsic motivation - competence-based models - maximizing competence progress
+### interesting papers - exploration and intrinsic motivation - competence-based models - competence progress motivation
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)
 
@@ -3309,6 +3221,8 @@ interesting recent papers:
   - `post` <http://argmin.net/2017/04/03/evolution/> (Recht)
   - `post` <http://argmin.net/2018/03/20/mujocoloco/> (Recht)
   - `post` <http://blog.otoro.net/2017/10/29/visual-evolution-strategies/>
+  - `notes` <https://lilianweng.github.io/lil-log/2019/09/05/evolution-strategies.html#openai-es-for-rl>
+  - `notes` <https://lilianweng.github.io/lil-log/2018/02/19/a-long-peek-into-reinforcement-learning.html#evolution-strategies>
   - `code` <https://github.com/openai/evolution-strategies-starter>
   - `code` <https://github.com/atgambardella/pytorch-es>
   - `paper` ["Parameter-exploring Policy Gradients"](https://mediatum.ub.tum.de/doc/1287490/409330.pdf) by Sehnke et al.
@@ -3323,6 +3237,12 @@ interesting recent papers:
 
 >	"We have presented asynchronous versions of four standard reinforcement learning algorithms and showed that they are able to train neural network controllers on a variety of domains in a stable manner. Our results show that in our proposed framework stable training of neural networks through reinforcement learning is possible with both valuebased and policy-based methods, off-policy as well as onpolicy methods, and in discrete as well as continuous domains. When trained on the Atari domain using 16 CPU cores, the proposed asynchronous algorithms train faster than DQN trained on an Nvidia K40 GPU, with A3C surpassing the current state-of-the-art in half the training time. One of our main findings is that using parallel actorlearners to update a shared model had a stabilizing effect on the learning process of the three value-based methods we considered. While this shows that stable online Q-learning is possible without experience replay, which was used for this purpose in DQN, it does not mean that experience replay is not useful. Incorporating experience replay into the asynchronous reinforcement learning framework could substantially improve the data efficiency of these methods by reusing old data. This could in turn lead to much faster training times in domains like TORCS where interacting with the environment is more expensive than updating the model for the architecture we used."
 
+----
+>	- critic learns only state value function V(s) rather than action value function Q(s,a) and thus cannot pass back to actor gradients of value function with respect to action  
+>	- critic approximates action value with rewards from several steps of experience and passes TD error to actor  
+>	- exploiting multithreading capabilities and executing many instances of agent in parallel using shared model  
+>	- alternative to experience replay since parallelization also diversifies and decorrelates experience data  
+
   - `video` <http://youtube.com/watch?v=0xo1Ldx3L5Q> (demo)
   - `video` <http://youtube.com/watch?v=nMR5mjCFZCw> (demo)
   - `video` <http://youtube.com/watch?v=Ajjc08-iPx8> (demo)
@@ -3331,6 +3251,7 @@ interesting recent papers:
   - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h49m19s> (Sigaud)
   - `post` <https://danieltakeshi.github.io/2018/06/28/a2c-a3c>
   - `post` <https://medium.com/@awjuliani/simple-reinforcement-learning-with-tensorflow-part-8-asynchronous-actor-critic-agents-a3c-c88f72a5e9f2>
+  - `notes` <https://lilianweng.github.io/lil-log/2018/02/19/a-long-peek-into-reinforcement-learning.html#a3c>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FMnihBMGLHSK16>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/a2c>
   - `code` <https://github.com/ikostrikov/pytorch-a3c>
@@ -3345,7 +3266,9 @@ interesting recent papers:
 >	"We proposed and analyzed trust region methods for optimizing stochastic control policies. We proved monotonic improvement for an algorithm that repeatedly optimizes a local approximation to the expected cost of the policy with a KL divergence penalty, and we showed that an approximation to this method that incorporates a KL divergence constraint achieves good empirical results on a range of challenging policy learning tasks, outperforming prior methods. Our analysis also provides a perspective that unifies policy gradient and policy iteration methods, and shows them to be special limiting cases of an algorithm that optimizes a certain objective subject to a trust region constraint. In the domain of robotic locomotion, we successfully learned controllers for swimming, walking and hopping in a physics simulator, using general purpose neural networks and minimally informative costs. To our knowledge, no prior work has learned controllers from scratch for all of these tasks, using a generic policy search method and non-engineered, general-purpose policy representations. In the game-playing domain, we learned convolutional neural network policies that used raw images as inputs. This requires optimizing extremely high-dimensional policies, and only two prior methods report successful results on this task. Since the method we proposed is scalable and has strong theoretical foundations, we hope that it will serve as a jumping-off point for future work on training large, rich function approximators for a range of challenging problems. At the intersection of the two experimental domains we explored, there is the possibility of learning robotic control policies that use vision and raw sensory data as input, providing a unified scheme for training robotic controllers that perform both perception and control. The use of more sophisticated policies, including recurrent policies with hidden state, could further make it possible to roll state estimation and control into the same policy in the partially-observed setting. By combining our method with model learning, it would also be possible to substantially reduce its sample complexity, making it applicable to real-world settings where samples are expensive."
 
 ----
->	"Combines theoretical ideas from conservative policy gradient algorithm to prove that monotonic improvement can be guaranteed when one solves a series of subproblems of optimizing a bound on the policy performance. The conclusion is that one should use KL-divergence constraint."
+>	"TRPO approximates Conservative Policy Iteration algorithm with trust region constraint."
+
+>	"Combines theoretical ideas from Conservative Policy Gradient algorithm to prove that monotonic improvement can be guaranteed when one solves a series of subproblems of optimizing a bound on the policy performance. The conclusion is that one should use KL-divergence constraint."
 
 >	"As you iteratively improve your policy, it’s important to constrain the KL divergence between the old and new policy to be less than some constant δ. This δ (in the unit of nats) is better than a fixed step size, since the meaning of the step size changes depending on what the rewards and problem structure look like at different points in training. This is called Trust Region Policy Optimization (or, in a first-order variant, Proximal Policy Optimization) and it matters more as we do more experience replay."
 
@@ -3354,7 +3277,16 @@ interesting recent papers:
 >	"TRPO treats this as a constrained optimization problem; i.e. maximize the improvement of the new policy compared to the old policy such that the KL divergence is smaller than a given value. Since you need to take multiple update steps for non-convex constrained optimization (generally using the conjugate gradient method and line search) the advantage estimate is no longer on-policy during the optimization process because you're changing the weights of pi_new compared to pi_old, and then comparing using the rollout taken under pi_old. To correct for the now different policy distributions, importance sampling is used (and this actually falls out the aforementioned identity from Sham and Kakade)."  
 
 ----
->	"TRPO approximates Conservative Policy Iteration algorithm with trust region constraint"
+>	"TRPO uses the notion of a trust region, which restricts optimization steps to within a region where the approximation of the true cost function still holds."
+
+>	"As you iteratively improve your policy, it’s important to avoid parameter updates that change your policy too much, as enforced by constraining the KL divergence between the distributions predicted by the old and the new policy on a batch of data to be less than some constant δ. This δ (in the unit of nats) is better than a fixed step size, since the meaning of the step size changes depending on what the rewards and problem structure look like at different points in training. It matters more as we do more experience replay. Instead of conjugate gradients the simplest instantiation of this idea could be implemented by doing a line search and checking the KL along the way."
+
+>	"To improve its policy, TRPO attempts to maximize the expectation of Q-values over the distribution of states and actions given by θnew:  
+>	maxθ [Σs pθ(s) * (Σa πθ(a|s) * Qθold(s,a))]  subject to  DKL(pθold, pθ) ≤ δ
+
+>	"This objective can be approximated by using an importance-sampled Monte Carlo estimate of Q-values, with a distribution of states sampled from policy θold. However, theres a constraint to updating θ: the average KL divergence between the new policy and old policy cannot be greater than a constant δ. This acts as a limiter on the step size we can take on each update, and can be compared to the natural gradient. The theory behind TRPO guarantees gradual improvement over the expected return of a policy."
+
+>	"One downside to TRPO algorithm is its on-policy nature, requiring new Q-values after every policy update. We cannot use methods such as experience replay which reuse past information, so that we must acquire new Monte Carlo estimates of Q for every new policy. Furthermore, Monte Carlo estimates are known to have higher variance than methods such as one-step TD updates, since the return is affected by independent future decisions. Bringing this variance down requires many episodes of experience per policy update, making TRPO a data-heavy algorithm."
 
   - `video` <https://youtube.com/watch?v=jeid0wIrSn4> + <https://vimeo.com/113957342> (demo)
   - `video` <https://youtube.com/watch?v=CKaN5PgkSBc>
@@ -3367,6 +3299,8 @@ interesting recent papers:
   - `post` <http://depthfirstlearning.com/2018/TRPO>
   - `post` <https://towardsdatascience.com/the-pursuit-of-robotic-happiness-how-trpo-and-ppo-stabilize-policy-gradient-methods-545784094e3b>
   - `post` <http://kvfrans.com/what-is-the-natural-gradient-and-where-does-it-appear-in-trust-region-policy-optimization/>
+  - `post` <http://www.alexirpan.com/rl-derivations/#natural-policy-gradient>
+  - `notes` <https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#trpo>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/SchulmanLMJA15>
   - `notes` <https://towardsdatascience.com/introduction-to-various-reinforcement-learning-algorithms-part-ii-trpo-ppo-87f2c5919bb9>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/trpo_mpi>
@@ -3405,6 +3339,7 @@ interesting recent papers:
   - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h44m24s> (Sigaud)
   - `video` <https://youtube.com/watch?v=5P7I-xPq8u8> (Steenbrugge)
   - `post` <https://learningai.io/projects/2017/07/28/ai-gym-workout.html>
+  - `notes` <https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#ppo>
   - `notes` <https://towardsdatascience.com/introduction-to-various-reinforcement-learning-algorithms-part-ii-trpo-ppo-87f2c5919bb9>
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Proximal_Policy_Optimization_Algorithms.md>
   - `post` <https://towardsdatascience.com/the-pursuit-of-robotic-happiness-how-trpo-and-ppo-stabilize-policy-gradient-methods-545784094e3b>
@@ -3413,6 +3348,7 @@ interesting recent papers:
 
 
 #### ["Deterministic Policy Gradient Algorithms"](http://jmlr.org/proceedings/papers/v32/silver14.html) Silver, Lever, Heess, Degris, Wierstra, Riedmiller
+  `DPG`
 >	"In this paper we consider deterministic policy gradient algorithms for reinforcement learning with continuous actions. The deterministic policy gradient has a particularly appealing form: it is the expected gradient of the action-value function. This simple form means that the deterministic policy gradient can be estimated much more efficiently than the usual stochastic policy gradient. To ensure adequate exploration, we introduce an off-policy actor-critic algorithm that learns a deterministic target policy from an exploratory behaviour policy. We demonstrate that deterministic policy gradient algorithms can significantly outperform their stochastic counter-parts in high-dimensional action spaces."
 
 >	"Policy gradient algorithms are widely used in reinforcement learning problems with continuous action spaces. The basic idea is to represent the policy by a parametric probability distribution πθ(a|s) = P [a|s; θ] that stochastically selects action a in state s according to parameter vector θ. Policy gradient algorithms typically proceed by sampling this stochastic policy and adjusting the policy parameters in the direction of greater cumulative reward. In this paper we instead consider deterministic policies a=μθ(s). It is natural to wonder whether the same approach can be followed as for stochastic policies: adjusting the policy parameters in the direction of the policy gradient. It was previously believed that the deterministic policy gradient did not exist, or could only be obtained when using a model. However, we show that the deterministic policy gradient does indeed exist, and furthermore it has a simple model-free form that simply follows the gradient of the action-value function. In addition, we show that the deterministic policy gradient is the limiting case, as policy variance tends to zero, of the stochastic policy gradient."
@@ -3424,9 +3360,7 @@ interesting recent papers:
 ----
 >	"DPG provides a continuous analogue to DQN, exploiting the differentiability of the Q-network to solve a wide variety of continuous control tasks."
 
-  - `video` <http://videolectures.net/rldm2015_silver_reinforcement_learning/#t=4043> (Silver)
-  - `video` <http://youtube.com/watch?v=qLaDWKd61Ig&t=38m58s> (Silver)
-  - `video` <http://youtu.be/KHZVXao4qXs?t=52m58s> (Silver)
+  - `post` <https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#dpg>
 
 
 #### ["Continuous Control with Deep Reinforcement Learning"](http://arxiv.org/abs/1509.02971) Lillicrap, Hunt, Pritzel, Heess, Erez, Tassa, Silver, Wierstra
@@ -3441,10 +3375,11 @@ interesting recent papers:
 
 >	"A key feature of the approach is its simplicity: it requires only a straightforward actor-critic architecture and learning algorithm with very few “moving parts”, making it easy to implement and scale to more difficult problems and larger networks. For the physical control problems we compare our results to a baseline computed by a planner that has full access to the underlying simulated dynamics and its derivatives. Interestingly, DDPG can sometimes find policies that exceed the performance of the planner, in some cases even when learning from pixels (the planner always plans over the true, low-dimensional state space)."
 
->	"Surprisingly, in some simpler tasks, learning policies from pixels is just as fast as learning using the low-dimensional state descriptor. This may be due to the action repeats making the problem simpler. It may also be that the convolutional layers provide an easily separable representation of state space, which is straightforward for the higher layers to learn on quickly."
-
 ----
->	"Although DDPG performs experience replay without importance sampling, it is limited to continuous control."
+>	- continuous analogue to DQN which exploits differentiability of Q-network  
+>	- instead of requiring samples from stochastic policy and encouraging samples with higher scores, use deterministic policy and get gradient information directly from second network that models score function  
+>	- policy determinism allows policy to be optimized more easily and more sample efficiently due to action no longer being a random variable which must be integrated over in expectation  
+>	- can be much more efficient in settings with very high-dimensional actions where sampling actions provides poor coverage of state-action space  
 
   - `video` <http://youtube.com/watch?v=tJBIqkC1wWM> (demo)
   - `video` <http://youtube.com/watch?v=Tb5gASEJIRM> (demo)
@@ -3456,6 +3391,7 @@ interesting recent papers:
   - `video` <https://youtu.be/rO7Dx8pSJQw?t=50m> (Schulman)
   - `video` <https://youtu.be/eeJ1-bUnwRI?t=55m38s> (Sigaud)
   - `video` <https://youtu.be/mrgJ53TIcQc?t=1h3m2s> (Seleznev) `in russian`
+  - `post` <https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#ddpg>
   - `post` <https://yanpanlau.github.io/2016/10/11/Torcs-Keras.html>
   - `post` <http://pemami4911.github.io/blog_posts/2016/08/21/ddpg-rl.html>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/ddpg>
@@ -3477,6 +3413,15 @@ interesting recent papers:
 >	"In policy-based and actor-critic methods, stochastic policy is usually defined as a fixed distribution over action domain with parameters whose values are adapted when training. SVG suggests a synthesis of model-based with model-free approaches that allows optimizing the distribution as a function by means of the standard gradient descent."
 
 >	"Stochastic value gradients generalize DPG to stochastic policies in a number of ways, giving a spectrum from model-based to model-free algorithms. While SVG(0) is a direct stochastic generalization of DPG, SVG(1) combines an actor, critic and model f. The actor is trained through a combination of gradients from the critic, model and reward simultaneously."
+
+----
+>	"SVG tackles the problem of compounding model errors by using observations from the real environment, instead of the imagined one. To accommodate mismatch between model predictions and real transitions, the dynamics models in SVG are probabilistic. The policy is improved by computing the analytic gradient of the real trajectories with respect to the policy. Re-parametrization trick is used to permit back-propagation through the stochastic sampling."
+
+>	- generalizes DPG to stochastic policies in a number of ways, giving spectrum from model-based to model-free algorithms  
+>	- while SVG(0) is direct stochastic generalization of DPG, SVG(1) combines actor, critic and environment dynamics model  
+>	- SVG can be used both with (SVG(0) and SVG(1)) and without (SVG(∞)) value critics  
+>	- SVG can be used both with (SVG(∞) and SVG(1)) and without (SVG(0)) environment dynamics models  
+>	- actor is trained through combination of gradients from critic, model and reward simultaneously  
 
   - `video` <https://youtu.be/PYdL7bcn_cM> (demo)
   - `video` <https://youtu.be/rO7Dx8pSJQw?t=50m> (Schulman)
@@ -3577,13 +3522,14 @@ interesting recent papers:
   - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h51m28s> (Sigaud)
   - `video` <https://youtube.com/watch?v=NiTJOw1aST4> (Grinchuk) `in russian`
   - `post` <https://spinningup.openai.com/en/latest/algorithms/sac.html>
+  - `notes` <https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#sac>
   - `notes` <https://github.com/Scitator/papers/blob/master/papers/1801_soft_ac.md>
   - `code` <https://github.com/rail-berkeley/softlearning>
   - `code` <https://github.com/vitchyr/rlkit>
   - `code` <https://github.com/haarnoja/sac>
   - `code` <https://github.com/higgsfield/RL-Adventure-2>
   - `paper` ["Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review"](https://arxiv.org/abs/1805.00909) by Levine ([talk](https://youtu.be/iOYiPhu5GEk?t=2m34s) `video`)
-  - `paper` ["Soft Actor-Critic Algorithms and Applications"](https://arxiv.org/abs/1812.05905) by Haarnoja et al.
+  - `paper` ["Soft Actor-Critic Algorithms and Applications"](https://arxiv.org/abs/1812.05905) by Haarnoja et al. ([notes](https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#sac-with-automatically-adjusted-temperature))
   - `paper` ["Learning to Walk via Deep Reinforcement Learning"](https://arxiv.org/abs/1812.11103) by Haarnoja et al.
 
 

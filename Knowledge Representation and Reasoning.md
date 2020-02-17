@@ -1427,6 +1427,7 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
 
   - `video` <https://youtube.com/watch?v=ZVyTXuDNZCY> (Riedel)
   - `paper` ["Negated LAMA: Birds cannot fly"](https://arxiv.org/abs/1911.03343) by Kassner and Schutze
+  - `paper` ["How Much Knowledge Can You Pack Into the Parameters of a Language Model?"](https://craffel.github.io/publications/arxiv2020how.pdf) by Roberts, Raffel, Shazeer
 
 
 #### ["No Need to Pay Attention: Simple Recurrent Neural Networks Work! (for Answering 'Simple' Questions)"](http://arxiv.org/abs/1606.05029) Ture, Jojic

@@ -152,6 +152,7 @@ also been supported by the observation that deep networks strongly rely on spect
 >	"Neural network pruning techniques can reduce the parameter counts of trained networks by over 90%, decreasing storage requirements and improving computational performance of inference without compromising accuracy. However, contemporary experience is that the sparse architectures produced by pruning are difficult to train from the start, which would similarly improve training performance.
 We find that a standard pruning technique naturally uncovers subnetworks whose initializations made them capable of training effectively. Based on these results, we articulate the "lottery ticket hypothesis:" dense, randomly-initialized, feed-forward networks contain subnetworks ("winning tickets") that - when trained in isolation - reach test accuracy comparable to the original network in a similar number of iterations. The winning tickets we find have won the initialization lottery: their connections have initial weights that make training particularly effective."  
 >	"We present an algorithm to identify winning tickets and a series of experiments that support the lottery ticket hypothesis and the importance of these fortuitous initializations. We consistently find winning tickets that are less than 10-20% of the size of several fully-connected and convolutional feed-forward architectures for MNIST and CIFAR10. Above this size, the winning tickets that we find learn faster than the original network and reach higher test accuracy."  
+  - `video` <https://youtube.com/watch?v=CobEbJEYUnU> (Frankle)
   - `video` <https://youtu.be/8UxS4ls6g1g?t=1h25m> (Frankle)
   - `video` <https://youtube.com/watch?v=5PF-I1NKTmk> (LaLonde)
   - `video` <https://youtube.com/watch?v=LXm_6eq0Cs4>
@@ -2137,6 +2138,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` ["Optimizing NN using Kronecker-factored Approximate Curvature"](https://youtube.com/watch?v=FLV-MLPt3sU) (Kropotov)
   - `slides` <https://csc2541-f17.github.io/slides/lec10.pdf#page=55> (Grosse)
   - `post` <https://medium.com/@yaroslavvb/optimizing-deeper-networks-with-kfac-in-pytorch-4004adcba1b0>
+  - `notes` <https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#actkr>
   - `code` <https://github.com/ikostrikov/pytorch-a2c-ppo-acktr>
 
 #### ["Proximal Policy Optimization Algorithms"](https://arxiv.org/abs/1707.06347) Schulman, Wolski, Dhariwal, Radford, Klimov
@@ -2191,6 +2193,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"In Q-learning function approximation errors lead to overestimated value estimates and suboptimal policies. We show that this problem persists in an actor-critic setting and propose novel mechanisms to minimize its effects on both the actor and the critic. Our algorithm builds on Double Q-learning, by taking the minimum value between a pair of critics to limit overestimation. We draw the connection between target networks and overestimation bias, and suggest delaying policy updates to reduce per-update error and further improve performance."  
   - `video` <https://facebook.com/icml.imls/videos/430993334081854?t=7107> (Fujimoto)
   - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h22m44s> (Sigaud)
+  - `notes` <https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#td3>
 
 #### ["IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures"](https://arxiv.org/abs/1802.01561) Espeholt, Soyer, Munos, Simonyan, Mnih, Ward, Doron, Firoiu, Harley, Dunning, Legg, Kavukcuoglu
   `IMPALA` `policy gradient` `on-policy + off-policy` `multi-task`
@@ -2203,6 +2206,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://facebook.com/icml.imls/videos/432150780632776?t=1458> (Espeholt)
   - `video` <https://facebook.com/iclr.cc/videos/2125495797479475?t=1265> (Kavukcuoglu)
   - `video` <https://youtube.com/watch?v=kOy49NqZeqI> (Kilcher)
+  - `notes` <https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#impala>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1802.01561>
   - `code` <https://github.com/deepmind/scalable_agent>
 
@@ -2264,6 +2268,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"ACER capitalizes on recent advances in deep neural networks, variance reduction techniques, the off-policy Retrace algorithm and parallel training of RL agents. Yet, crucially, its success hinges on innovations advanced in this paper: truncated importance sampling with bias correction, stochastic dueling network architectures, and efficient trust region policy optimization."  
 >	"On the theoretical front, the paper proves that the Retrace operator can be rewritten from our proposed truncated importance sampling with bias correction technique."  
   - `video` <https://youtu.be/ggPGtMSoVN8?t=1h9m45s> (Petrenko) `in russian`
+  - `notes` <https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#acer>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FWangBHMMKF16>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/acer>
   - `code` <https://github.com/higgsfield/RL-Adventure-2>
@@ -3454,6 +3459,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"Uses learning rule from DDPG to learn a central off-policy critic based on Q-learning and uses certain on-policy policy gradient estimator to learn policies for each agent."  
   - `post` <https://blog.openai.com/learning-to-cooperate-compete-and-communicate/>
   - `video` <https://youtube.com/watch?v=QCmBo91Wy64> (demo)
+  - `notes` <https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#maddpg>
   - `code` <https://github.com/openai/maddpg>
   - `code` <https://github.com/openai/multiagent-particle-envs>
 
@@ -3893,6 +3899,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Generating Wikipedia by Summarizing Long Sequences"](https://arxiv.org/abs/1801.10198) Liu et al.
   `extractive summarization`
 >	"Extractive summarization to coarsely identify salient information and a neural abstractive model to generate the article. For the abstractive model, decoder-only Transformer architecture that can scalably attend to very long sequences, much longer than typical encoder-decoder architectures used in sequence transduction."  
+  - `video` <https://youtube.com/watch?v=__ALQCud-iA>
 
 ----
 #### ["Phrase-Based & Neural Unsupervised Machine Translation"](https://arxiv.org/abs/1804.07755) Lample, Ott, Conneau, Denoyer, Ranzato

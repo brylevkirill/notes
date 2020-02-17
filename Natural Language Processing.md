@@ -301,6 +301,7 @@
   - `audio` <https://podtail.com/podcast/data-skeptic/the-limits-of-nlp/> (Raffel)
   - `notes` <https://twitter.com/colinraffel/status/1187161460033458177>
   - `code` <https://github.com/google-research/text-to-text-transfer-transformer>
+  - `paper` ["How Much Knowledge Can You Pack Into the Parameters of a Language Model?"](https://craffel.github.io/publications/arxiv2020how.pdf) by Roberts, Raffel, Shazeer ([code](https://colab.research.google.com/github/google-research/text-to-text-transfer-transformer/blob/master/notebooks/t5-trivia.ipynb))
 
 
 #### ["BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"](https://arxiv.org/abs/1810.04805) Devlin, Chang, Lee, Toutanova
@@ -314,10 +315,11 @@
 
   - `demo` <https://talktotransformer.com>
   - `post` <https://openai.com/blog/better-language-models>
+  - `video` <https://youtube.com/watch?v=UULqu7LQoHs> + <https://youtube.com/watch?v=9ebPNEHRwXU>
+  - `video` <https://youtube.com/watch?v=u1_qMdb0kYU> (Kilcher)
   - `video` <https://youtu.be/w3ues-NayAs?t=23m15s> (Sutskever)
   - `video` <https://youtu.be/X-B3nAN7YRM?t=14m25s> (Sutskever)
   - `video` <https://youtu.be/T0I88NhR_9M?t=6m11s> (Sutskever)
-  - `video` <https://youtube.com/watch?v=u1_qMdb0kYU> (Kilcher)
   - `video` <https://youtube.com/watch?v=n_UlVuFAzbU> (Amjadian)
   - `video` <https://youtu.be/qIEfJ6OBGj8?t=14m25s> (Hinton)
   - `post` <https://jalammar.github.io/illustrated-gpt2>
