@@ -274,7 +274,8 @@
 
 ----
 
-  [introduction](http://youtube.com/watch?v=F2bQ5TSB-cE) by Marcus Hutter `video`
+  [introduction](http://youtu.be/E1AxVXt2Gv4?t=26m8s) by Marcus Hutter `video`  
+  [introduction](http://youtube.com/watch?v=F2bQ5TSB-cE) by Marcus Hutter `video`  
 
   [overview](http://youtube.com/watch?v=vUUeHZJFN2Q) by Marcus Hutter `video`  
   [overview](http://vimeo.com/14888930) by Marcus Hutter `video`  

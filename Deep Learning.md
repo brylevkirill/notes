@@ -68,11 +68,11 @@
 #### courses
 
   [course](https://course.fast.ai) by Jeremy Howard `video`  
+  [course](http://introtodeeplearning.com) from CMU ([videos](https://youtube.com/channel/UC8hYZGEkI2dDO8scT8C5UQA/playlists))  
   [course](https://youtube.com/playlist?list=PLLssT5z_DsK_gyrQ_biidwvPYCRNGI3iv) by Geoffrey Hinton `video`  
   [course](https://youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH) by Hugo Larochelle `video`  
   [course](https://youtube.com/playlist?list=PL16j5WbGpaM0_Tj8CRmurZ8Kk1gEBc7fg) by Andrej Karpathy `video`  
   [course](https://youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs) from DeepMind `video`  
-  [course](https://youtube.com/channel/UC8hYZGEkI2dDO8scT8C5UQA/playlists) from CMU `video`  
 
   [course](https://sphere.mail.ru/curriculum/program/discipline/120/) by Daniil Polykovsky and Kuzma Hrabrov `in russian` ([videos](https://youtube.com/playlist?list=PLrCZzMib1e9oOGNLh6_d65HyfdqlJwTQP))  
   [course](https://github.com/aosokin/DL_CSHSE_spring2018) by Anton Osokin `in russian` ([videos](https://youtube.com/playlist?list=PLzY5g-rVmFayEkCcgO3_-it6HZwPZL3ld))  
@@ -1089,6 +1089,7 @@
 >	Authors claim that SGD training compresses (reduces I(X;T)) in the diffusion phase."  
 
   - <https://en.wikipedia.org/wiki/Information_bottleneck_method>
+  - `video` <https://youtube.com/watch?v=TisObdHW8Wo> (Tishby)
   - `video` <https://youtube.com/watch?v=XL07WEc2TRI> (Tishby)
   - `video` <https://youtube.com/watch?v=EQTtBRM0sIs> (Tishby)
   - `video` <https://youtube.com/watch?v=bLqJHjXihK8> (Tishby)
@@ -1820,6 +1821,7 @@ Yoshua Bengio:
 
   - `post` <https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html>
   - `video` <https://youtube.com/watch?v=OR0wfP2FD3c>
+  - `video` <https://youtube.com/watch?v=-9evrZnBorM> (Kilcher)
   - `video` <https://youtu.be/DSYzHPW26Ig?t=1h15m40s> (Graves)
   - `video` <https://youtu.be/AC4l_MY2Dhc?t=1h51m52s> (Srinivas)
   - `video` <https://youtube.com/watch?v=9-Om2YcHhIA> (Li)
@@ -3015,9 +3017,10 @@ Yoshua Bengio:
 [**selected papers**](https://yadi.sk/d/mQnJYmxo3WZDvP)
 
 ----
-#### ["Deep Nets: What have they ever done for Vision?"](https://arxiv.org/abs/1805.04025) Yuille, Liu
+#### ["Deep Nets: What Have They Ever Done for Vision?"](https://arxiv.org/abs/1805.04025) Yuille, Liu
 >	"This is an opinion paper about the strengths and weaknesses of Deep Nets for vision. They are at the center of recent progress on artificial intelligence and are of growing importance in cognitive science and neuroscience. They have enormous successes but also clear limitations. There is also only partial understanding of their inner workings. It seems unlikely that Deep Nets in their current form will be the best long-term solution either for building general purpose intelligent machines or for understanding the mind/brain, but it is likely that many aspects of them will remain. At present Deep Nets do very well on specific types of visual tasks and on specific benchmarked datasets. But Deep Nets are much less general purpose, flexible, and adaptive than the human visual system. Moreover, methods like Deep Nets may run into fundamental difficulties when faced with the enormous complexity of natural images which can lead to a combinatorial explosion."
 
+  - `video` <https://youtube.com/watch?v=VxKezjy0myc> (Yuille)
   - `post` <https://thegradient.pub/the-limitations-of-visual-deep-learning-and-how-we-might-fix-them>
 
 

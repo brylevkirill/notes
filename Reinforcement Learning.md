@@ -223,9 +223,12 @@
 	[AlphaZero overview](https://youtu.be/3N9phq_yZP0?t=12m43s) by Demis Hassabis `video`  
 	[AlphaZero overview](https://youtu.be/DXNqYSNvnjA?t=21m24s) by Demis Hassabis `video`  
 
+	[AlphaZero vs Stockfish](https://youtube.com/playlist?list=UUkK8M0dMhAX8JinU-6aD7xA) games `video`  
 	[AlphaZero vs Stockfish](https://youtube.com/playlist?list=PLDnx7w_xuguFDbrYDxxvPH-aoQkEX0rHv) games `video`  
 	[AlphaZero vs Stockfish](https://youtube.com/playlist?list=PLDnx7w_xuguHIxbL7akaYgEvV4spwYkmn) games `video`  
 	[AlphaZero vs Stockfish](https://youtube.com/playlist?list=PL-qLOQ-OEls607FPLAsPZ6De4f1W3ZF-I) games `video`  
+
+	["Game Changer: AlphaZero's Groundbreaking Chess Strategies and the Promise of AI"](https://amazon.com/Game-Changer-AlphaZeros-Groundbreaking-Strategies/dp/9056918184) by Matthew Sadler and Natasha Regan `book` ([talk](https://youtube.com/watch?v=HgZYIDslnAI) `video`, [analysis](https://youtube.com/playlist?list=UUkK8M0dMhAX8JinU-6aD7xA) `video`)
 
 ----
   - *Quake III Arena*
@@ -649,6 +652,8 @@
 
   [overview](http://youtube.com/watch?v=MEUdtwQev9A) of multi-agent systems by James Wright `video`  
   [overview](http://youtube.com/watch?v=T8G5y_t9bME) of social dilemmas by Dmitry Ivanov `video` `in russian`  
+
+  ["Autocurricula and the Emergence of Innovation from Social Interaction: A Manifesto for Multi-Agent Intelligence Research"](https://arxiv.org/abs/1903.00742) by Leibo, Hughes, Lanctot, Graepel `paper`
 
   [**recent interesting papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---multi-agent)
 
@@ -1734,6 +1739,7 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=dltN4MxV1RI> (demo)
   - `video` <https://youtube.com/watch?v=MvFABFWPBrw>
   - `video` <https://youtu.be/N8_gVrIPLQM?t=1h10m> (Silver)
+  - `video` <https://youtube.com/watch?v=_bSmby9ohIc> (Egorov) `in russian`
   - `paper` <https://science.sciencemag.org/content/364/6443/859>
 
 
@@ -1812,7 +1818,7 @@ interesting recent papers:
   - `notes` <https://dropbox.com/s/fuwhivftv998f6q/AlphaGoZeroPseudoCode.pdf>
   - `code` <https://github.com/pytorch/ELF/tree/master/src_py/elfgames/go>
   - `code` <https://github.com/tensorflow/minigo>
-  - `code` <https://github.com/gcp/leela-zero>
+  - `code` <https://github.com/leela-zero/leela-zero>
   - `code` <https://github.com/maxpumperla/deep_learning_and_the_game_of_go>
   - `paper` ["Reinforcement Learning as Classification: Leveraging Modern Classifiers"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.7.474&rep=rep1&type=pdf) by Lagoudakis and Parr
   - `paper` ["Approximate Modified Policy Iteration and its Application to the Game of Tetris"](http://jmlr.org/papers/v16/scherrer15a.html) by Scherrer et al.
@@ -1926,6 +1932,7 @@ interesting recent papers:
 ----
 >	"The CFR algorithm is actually somewhat similar to Q-learning, but the connection is difficult to see because the algorithms came out of different communities, so the notation is all different."
 
+  - `video` <https://slideslive.com/38917930/learning-theory-games> (1:05:59) (Brown)
   - <https://reddit.com/r/MachineLearning/comments/ceece3/ama_we_are_noam_brown_and_tuomas_sandholm>
   - <https://int8.io/counterfactual-regret-minimization-for-poker-ai>
   - <http://modelai.gettysburg.edu/2013/cfr/index.html#description>
@@ -1954,10 +1961,7 @@ interesting recent papers:
   - `video` <https://youtu.be/DXNqYSNvnjA?t=21m24s> (Hassabis)
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
   - `notes` <https://blog.acolyer.org/2018/01/10/mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm/>
-  - `code` <https://github.com/glinscott/leela-chess>
-  - `code` <https://github.com/Zeta36/chess-alpha-zero>
-  - `code` <https://github.com/junxiaosong/AlphaZero_Gomoku>
-  - `code` <https://github.com/suragnair/alpha-zero-general>
+  - `code` <https://lczero.org>
 
 
 #### ["Giraffe: Using Deep Reinforcement Learning to Play Chess"](http://arxiv.org/abs/1509.01549) Lai

@@ -36,9 +36,9 @@
 
   **Deep Learning NLP**
 
-  [course](http://youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z) from Stanford `video` ([notes](https://github.com/stanfordnlp/cs224n-winter17-notes))  
-  [course](http://github.com/oxford-cs-deepnlp-2017/lectures) from Oxford and DeepMind `video`  
+  [course](http://web.stanford.edu/class/cs224n/index.html) from Stanford `video`  
   [course](http://phontron.com/class/nn4nlp2020) from CMU ([videos](https://youtube.com/user/neubig/playlists))  
+  [course](http://github.com/oxford-cs-deepnlp-2017/lectures) from Oxford and DeepMind `video`  
   [course](http://youtube.com/playlist?list=PLt1IfGj6-_-f55ULcae3v7YuG8p_eUjnk) from iPavlov and Yandex `video` `in russian`  
   [course](https://my.compscicenter.ru/courses/introduction-nlp) by Anton Alexeev ([videos](https://youtube.com/playlist?list=PLlb7e2G7aSpRTcBciP6VBJJPvdH_DXRXQ)) `in russian`  
 
@@ -297,6 +297,7 @@
   `T5`
 >	"Transfer learning, where a model is first pre-trained on a data-rich task before being fine-tuned on a downstream task, has emerged as a powerful technique in natural language processing. The effectiveness of transfer learning has given rise to a diversity of approaches, methodology, and practice. In this paper, we explore the landscape of transfer learning techniques for NLP by introducing a unified framework that converts every language problem into a text-to-text format. Our systematic study compares pre-training objectives, architectures, unlabeled datasets, transfer approaches, and other factors on dozens of language understanding tasks. By combining the insights from our exploration with scale and our new “Colossal Clean Crawled Corpus”, we achieve state-of-the-art results on many benchmarks covering summarization, question answering, text classification, and more. To facilitate future work on transfer learning for NLP, we release our dataset, pre-trained models, and code."
 
+  - `post` <https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html>
   - `video` <https://youtube.com/watch?v=eKqWC577WlI> (Raffel)
   - `audio` <https://podtail.com/podcast/data-skeptic/the-limits-of-nlp/> (Raffel)
   - `notes` <https://twitter.com/colinraffel/status/1187161460033458177>
@@ -322,6 +323,7 @@
   - `video` <https://youtu.be/T0I88NhR_9M?t=6m11s> (Sutskever)
   - `video` <https://youtube.com/watch?v=n_UlVuFAzbU> (Amjadian)
   - `video` <https://youtu.be/qIEfJ6OBGj8?t=14m25s> (Hinton)
+  - `post` <https://amaarora.github.io/2020/02/18/annotatedGPT2.html>
   - `post` <https://jalammar.github.io/illustrated-gpt2>
 
 
@@ -681,6 +683,7 @@
   - `notes` <https://medium.com/towards-data-science/facebook-research-just-published-an-awesome-paper-on-learning-hierarchical-representations-34e3d829ede7>
   - `notes` <https://medium.com/@hol_io/word-embeddings-exploration-explanation-and-exploitation-with-code-in-python-5dac99d5d795>
   - `post` <https://rare-technologies.com/implementing-poincare-embeddings/>
+  - `post` <https://ai.facebook.com/blog/poincare-maps-hyperbolic-embeddings-to-understand-how-cells-develop/>
   - `code` <https://github.com/facebookresearch/poincare-embeddings>
   - `code` <https://github.com/TatsuyaShirakawa/poincare-embedding>
   - `code` <https://github.com/lateral/poincare-embeddings>
