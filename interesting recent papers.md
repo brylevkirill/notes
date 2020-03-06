@@ -155,6 +155,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=CobEbJEYUnU> (Frankle)
   - `video` <https://youtu.be/8UxS4ls6g1g?t=1h25m> (Frankle)
   - `video` <https://youtube.com/watch?v=5PF-I1NKTmk> (LaLonde)
+  - `video` <https://youtube.com/watch?v=jOF5ytrhQEE> (Salvaris)
   - `video` <https://youtube.com/watch?v=LXm_6eq0Cs4>
   - `video` <https://youtu.be/IRzaWXP3s3U?t=9m47s> (Sobolev) `in russian`
   - `paper` ["Deconstructing Lottery Tickets: Zeros, Signs, and the Supermask"](https://arxiv.org/abs/1905.01067) by Zhou et al. ([post](https://eng.uber.com/deconstructing-lottery-tickets), [notes](https://www.shortscience.org/paper?bibtexKey=zhou2019deconstructing))
@@ -665,27 +666,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `continual learning` `catastrophic forgetting`
 >	"The regularization penalty is similar to EWC. However, our approach computes the per-synapse consolidation strength in an online fashion, whereas for EWC synaptic importance is computed offline after training on a designated task."  
   - `video` <https://vimeo.com/238242232> (Zenke)
-  - `code` <https://github.com/ganguli-lab/pathint>
-  - `code` <https://github.com/spiglerg/TF_ContinualLearningViaSynapticIntelligence>
-
-#### ["PathNet: Evolution Channels Gradient Descent in Super Neural Networks"](http://arxiv.org/abs/1701.08734) Fernando, Banarse, Blundell, Zwols, Ha, Rusu, Pritzel, Wierstra
-  `continual learning` `catastrophic forgetting`
-  - `video` <https://youtube.com/watch?v=Wkz4bG_JlcU>
-  - `video` <https://vimeo.com/250399122> (Fernando)
-  - `post` <https://medium.com/intuitionmachine/pathnet-a-modular-deep-learning-architecture-for-agi-5302fcf53273>
-  - `code` <https://github.com/jaesik817/pathnet>
-
-#### ["Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"](https://arxiv.org/abs/1701.06538) Shazeer, Mirhoseini, Maziarz, Davis, Le, Hinton, Dean
-  `continual learning` `catastrophic forgetting`
->	"The Mixture of Experts Layer is trained using back-propagation. The Gating Network outputs an (artificially made) sparse vector that acts as a chooser of which experts to consult. More than one expert can be consulted at once (although the paper doesn’t give any precision on the optimal number of experts). The Gating Network also decides on output weights for each expert."  
->	"The MoE with experts shows higher accuracy (or lower perplexity) than the state of the art using only 16% of the training time."  
-  - `video` <https://slideslive.com/38917526/an-overview-of-googles-work-on-automl-and-future-directions?t=1171> (Dean)
-  - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (14:39) (Bengio)
-  - `video` <https://youtube.com/watch?v=nNZceFX2tQU> (Zakirov) `in russian`
-  - `notes` <https://github.com/dennybritz/deeplearning-papernotes/blob/3718d181a0fed5ed806582822ed0dbde530122bf/notes/mixture-experts.md>
 
 #### ["Overcoming Catastrophic Forgetting in Neural Networks"](http://arxiv.org/abs/1612.00796) Kirkpatrick et al.
-  `EWC` `continual learning` `catastrophic forgetting` `Elastic Weight Consolidation`
+  `EWC` `continual learning` `catastrophic forgetting`
+>	"Elastic Weight Consolidation"  
 >	"EWC adds regularization term to the loss which reflects a Gaussian prior for each parameter of neural network whose means are the old parameters. It uses the approximate Fisher information as a way of estimating the Hessian to assess importance, which implicitly sets the variance of each parameter prior."  
 >	"The quadratic penalty/penalties prevent the network from forgetting what it has learnt from previous data - you can think of the quadratic penalty as a summary of the information from the data it has seen so far."  
 >	"You can apply EWC at the level of learning tasks sequentially, or you can even apply it to on-line learning in a single task (in case you can't loop over the same minibatches several time like you do in SGD)."  
@@ -698,26 +682,57 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `post` <http://inference.vc/comment-on-overcoming-catastrophic-forgetting-in-nns-are-multiple-penalties-needed-2/>
   - `notes` <https://theneuralperspective.com/2017/04/01/overcoming-catastrophic-forgetting-in-neural-networks/>
   - `notes` <http://shortscience.org/paper?bibtexKey=kirkpatrick2016overcoming>
-  - `code` <https://github.com/ariseff/overcoming-catastrophic>
+
+#### ["PathNet: Evolution Channels Gradient Descent in Super Neural Networks"](http://arxiv.org/abs/1701.08734) Fernando et al.
+  `continual learning` `catastrophic forgetting`
+  - `video` <https://youtube.com/watch?v=Wkz4bG_JlcU>
+  - `video` <https://vimeo.com/250399122> (Fernando)
+  - `video` <https://youtu.be/Hx4XpVdJOI0?t=1h3m22s> (Finn)
+  - `post` <https://medium.com/intuitionmachine/pathnet-a-modular-deep-learning-architecture-for-agi-5302fcf53273>
+
+#### ["Progressive Neural Networks"](http://arxiv.org/abs/1606.04671) Rusu et al.
+  `continual learning` `catastrophic forgetting`
+  - `video` <https://youtube.com/watch?v=aWAP_CWEtSI> (Hadsell)
+  - `video` <http://techtalks.tv/talks/progressive-nets-for-sim-to-real-transfer-learning/63043/> (Hadsell)
+  - `video` <https://youtu.be/xfyK03MEZ9Q?t=5h47m16s> (Hadsell)
+  - `video` <https://youtu.be/x1kf4Zojtb0?t=41m4s> (de Freitas)
+  - `video` <https://youtu.be/Hx4XpVdJOI0?t=56m5s> (Finn)
+  - `video` <https://youtu.be/4nPmpXF2_sU?t=21m15s> (Tagirdzhanov) `in russian`
+  - `notes` <https://blog.acolyer.org/2016/10/11/progressive-neural-networks/>
+  - `notes` <https://www.shortscience.org/paper?bibtexKey=journals/corr/1606.04671>
+
+#### ["Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"](https://arxiv.org/abs/1701.06538) Shazeer, Mirhoseini, Maziarz, Davis, Le, Hinton, Dean
+  `continual learning` `catastrophic forgetting`
+>	"The Mixture of Experts Layer is trained using back-propagation. The Gating Network outputs an (artificially made) sparse vector that acts as a chooser of which experts to consult. More than one expert can be consulted at once (although the paper doesn’t give any precision on the optimal number of experts). The Gating Network also decides on output weights for each expert."  
+>	"The MoE with experts shows higher accuracy (or lower perplexity) than the state of the art using only 16% of the training time."  
+  - `video` <https://slideslive.com/38917526/an-overview-of-googles-work-on-automl-and-future-directions?t=1171> (Dean)
+  - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (14:39) (Bengio)
+  - `video` <https://youtube.com/watch?v=nNZceFX2tQU> (Zakirov) `in russian`
+  - `notes` <https://github.com/dennybritz/deeplearning-papernotes/blob/3718d181a0fed5ed806582822ed0dbde530122bf/notes/mixture-experts.md>
+
+#### ["Learning and Transfer of Modulated Locomotor Controllers"](http://arxiv.org/abs/1610.05182) Heess, Wayne, Tassa, Lillicrap, Riedmiller, Silver
+  `continual learning` `catastrophic forgetting` `modular networks`
+  - `video` <https://youtube.com/watch?v=sboPYvhpraQ> (demo)
+  - `video` <https://youtu.be/0e_uGa7ic74?t=31m4s> (Hadsell)
+  - `video` <https://vimeo.com/238221551#t=42m48s> (Hadsell)
+
+#### ["Learning Modular Neural Network Policies for Multi-Task and Multi-Robot Transfer"](http://arxiv.org/abs/1609.07088) Devin, Gupta, Darrell, Abbeel, Levine
+  `continual learning` `catastrophic forgetting` `modular networks`
+  - `video` <https://youtube.com/watch?v=n4EgRwzJE1o>
+  - `video` <https://youtu.be/ID150Tl-MMw?t=56m20s> (Abbeel)
+  - `video` <https://youtu.be/Hx4XpVdJOI0?t=1h6m23s> (Finn)
 
 ----
 #### ["Hierarchical Multiscale Recurrent Neural Networks"](http://arxiv.org/abs/1609.01704) Chung, Ahn, Bengio
-  `compute and memory resources`
+  `continual learning` `compute and memory resources`
   - `notes` <https://github.com/dennybritz/deeplearning-papernotes/blob/master/notes/hm-rnn.md>
   - `notes` <https://medium.com/@jimfleming/notes-on-hierarchical-multiscale-recurrent-neural-networks-7362532f3b64>
-
-#### ["Phased LSTM: Accelerating Recurrent Network Training for Long or Event-based Sequences"](http://arxiv.org/abs/1610.09513) Neil, Pfeiffer, Liu
-  `compute and memory resources`
->	"If you take an LSTM and add a “time gate” that controls at what frequency to be open to new input and how long to be open each time, you can have different neurons that learn to look at a sequence with different frequencies, create a “wormhole” for gradients, save compute, and do better on long sequences and when you need to process inputs from multiple sensors that are sampled at different rates."  
-  - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Phased-LSTM-Accelerating-Recurrent-Network-Training-for-Long-or-Event-based-Sequences> (Neil)
-  - `code` <https://tensorflow.org/api_docs/python/tf/contrib/rnn/PhasedLSTMCell>
-  - `code` <https://github.com/dannyneil/public_plstm>
 
 #### ["Memory-Efficient Backpropagation Through Time"](http://arxiv.org/abs/1606.03401) Gruslys, Munos, Danihelka, Lanctot, Graves
   `compute and memory resources`
 
 #### ["Adaptive Computation Time for Recurrent Neural Networks"](http://arxiv.org/abs/1603.08983) Graves
-  `compute and memory resources`
+  `ACT` `compute and memory resources`
   - `video` <https://youtu.be/tA8nRlBEVr0?t=1m26s> (Graves)
   - `video` <https://youtu.be/nqiUFc52g78?t=58m45s> (Graves)
   - `video` <https://facebook.com/iclr.cc/videos/1713144705381255?t=2368> (Graves)
@@ -725,7 +740,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=xbWzoAbb8dM> (Laver)
   - `post` <http://distill.pub/2016/augmented-rnns/>
   - `post` <https://www.evernote.com/shard/s189/sh/fd165646-b630-48b7-844c-86ad2f07fcda/c9ab960af967ef847097f21d94b0bff7>
-  - `code` <https://github.com/DeNeutoy/act-tensorflow>
 
 ----
 #### ["Dynamic Routing Between Capsules"](https://arxiv.org/abs/1710.09829) Sabour, Frosst, Hinton
@@ -814,6 +828,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=ID150Tl-MMw&t=1h1m22s> + <https://youtube.com/watch?v=ID150Tl-MMw&t=1h9m10s> (Abbeel)
   - `video` <https://youtube.com/watch?v=sF-dbZ2BQrQ> (Kelcey)
   - `video` <https://youtu.be/16UUb4HF0fo?t=7m34s> (Golikov) `in russian`
+  - `video` <https://youtu.be/aR9dbSElcQg?t=5m30s> (Mosin) `in russian`
   - `post` <http://bair.berkeley.edu/blog/2017/07/18/learning-to-learn/> (Finn)
   - `post` <https://danieltakeshi.github.io/2018/04/01/maml>
   - `post` <https://blog.evjang.com/2019/02/maml-jax.html>
@@ -876,7 +891,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `notes` <https://theneuralperspective.com/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>
   - `notes` <https://blog.acolyer.org/2017/01/04/learning-to-learn-by-gradient-descent-by-gradient-descent/>
   - `post` <https://hackernoon.com/learning-to-learn-by-gradient-descent-by-gradient-descent-4da2273d64f2>
-  - `code` <https://github.com/deepmind/learning-to-learn>
   - `code` <https://github.com/ikostrikov/pytorch-meta-optimizer>
 
 ----
@@ -890,7 +904,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `few-shot learning`
   - `video` <https://youtube.com/watch?v=2CHdHmhPq5E> (Bartunov)
   - `video` <https://youtube.com/watch?v=XpIDCzwNe78> (Bartunov) ([slides](https://bayesgroup.github.io/bmml_sem/2016/bartunov-oneshot.pdf))
-  - `code` <http://github.com/sbos/gmn>
 
 #### ["Towards a Neural Statistician"](http://arxiv.org/abs/1606.02185) Edwards, Storkey
   - `video` <http://techtalks.tv/talks/neural-statistician/63048/> (Edwards)
@@ -909,8 +922,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `few-shot learning`
 >	"Extension to Matching Networks which uses euclidean distance instead of cosine and builds a prototype representation of each class for the few-shot learning scenario."  
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1703.05175>
-  - `code` <https://github.com/orobix/Prototypical-Networks-for-Few-shot-Learning-PyTorch>
-  - `code` <https://github.com/abdulfatir/prototypical-networks-tensorflow>
 
 #### ["Matching Networks for One Shot Learning"](http://arxiv.org/abs/1606.04080) Vinyals, Blundell, Lillicrap, Kavukcuoglu, Wierstra
   `few-shot learning`
@@ -928,7 +939,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=qos2CcviAuY> (Bartunov) `in russian`
   - `notes` <http://rylanschaeffer.github.io/content/research/one_shot_learning_with_memory_augmented_nn/main.html>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1605.06065>
-  - `code` <https://github.com/tristandeleu/ntm-one-shot>
 
 
 
@@ -960,6 +970,11 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <https://github.com/wohlert/generative-query-network-pytorch>
   - `code` <https://github.com/ogroth/tf-gqn>
   - `paper` <http://science.sciencemag.org/content/sci/360/6394/1204.full.pdf>
+
+#### ["Unsupervised Doodling and Painting with Improved SPIRAL"](https://arxiv.org/abs/1910.01007) Mellor et al.
+  `SPIRAL++` `concept learning` `program synthesis`
+>	"A generative agent controls a simulated painting environment, and is trained with rewards provided by a discriminator network simultaneously trained to assess the realism of the agent's samples, either unconditional or reconstructions."  
+>	"We find that when sufficiently constrained, generative agents can learn to produce images with a degree of visual abstraction, despite having only ever seen real photographs (no human brush strokes). And given enough time with the painting environment, they can produce images with considerable realism. These results show that, under the right circumstances, some aspects of human drawing can emerge from simulated embodiment, without the need for external supervision, imitation or social cues."  
 
 #### ["Synthesizing Programs for Images using Reinforced Adversarial Learning"](https://arxiv.org/abs/1804.01118) Ganin, Kulkarni, Babuschkin, Eslami, Vinyals
   `SPIRAL` `concept learning` `program synthesis`
@@ -2787,6 +2802,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - <https://sites.google.com/view/diverse-sil> (demo)
   - `video` <https://slideslive.com/38922025/deep-reinforcement-learning-1?t=2860> (Guo)
 
+#### ["Episodic Curiosity through Reachability"](https://arxiv.org/abs/1810.02274) Savinov et al.
+  `uncertainty motivation` `novelty`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#episodic-curiosity-through-reachability-savinov-et-al>
+
 #### ["Count-Based Exploration with the Successor Representation"](https://arxiv.org/abs/1807.11622) Machado, Bellemare, Bowling
   `uncertainty motivation` `novelty`
 >	"While the traditional successor representation is a representation that defines state generalization by the similarity of successor states, the substochastic successor representation is also able to implicitly count the number of times each state (or feature) has been observed. This extension connects two until now disjoint areas of research."  
@@ -2840,6 +2859,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#variational-intrinsic-control-gregor-rezende-wierstra>
 
 ----
+#### ["Learning to Play with Intrinsically-Motivated Self-Aware Agents"](https://arxiv.org/abs/1802.07442) Haber, Mrowca, Fei-Fei, Yamins
+  `predictive novelty motivation` `prediction error`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#learning-to-play-with-intrinsically-motivated-self-aware-agents-haber-et-al>
+
 #### ["Exploration by Random Network Distillation"](https://arxiv.org/abs/1810.12894) Burda, Edwards, Storkey, Klimov
   `RND` `predictive novelty motivation` `prediction error`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#exploration-by-random-network-distillation-burda-edwards-storkey-klimov>
@@ -2847,11 +2870,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Large-Scale Study of Curiosity-Driven Learning"](https://arxiv.org/abs/1808.04355) Burda, Edwards, Pathak, Storkey, Darrell, Efros
   `predictive novelty motivation` `prediction error`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#large-scale-study-of-curiosity-driven-learning-burda-edwards-pathak-storkey-darrell-efros>
-
-#### ["Learning to Play with Intrinsically-Motivated Self-Aware Agents"](https://arxiv.org/abs/1802.07442) Haber, Mrowca, Fei-Fei, Yamins
-  `predictive novelty motivation` `prediction error`
->	"Infants are experts at playing, with an amazing ability to generate novel structured behaviors in unstructured environments that lack clear extrinsic reward signals. We seek to mathematically formalize these abilities using a neural network that implements curiosity-driven intrinsic motivation. Using a simple but ecologically naturalistic simulated environment in which an agent can move and interact with objects it sees, we propose a "world-model" network that learns to predict the dynamic consequences of the agent's actions. Simultaneously, we train a separate explicit "self-model" that allows the agent to track the error map of its own world-model, and then uses the self-model to adversarially challenge the developing world-model."  
->	"We demonstrate that this policy causes the agent to explore novel and informative interactions with its environment, leading to the generation of a spectrum of complex behaviors, including ego-motion prediction, object attention, and object gathering. Moreover, the world-model that the agent learns supports improved performance on object dynamics prediction, detection, localization and recognition tasks."  
 
 #### ["Curiosity-driven Reinforcement Learning with Homeostatic Regulation"](https://arxiv.org/abs/1801.07440) Abril, Kanai
   `predictive novelty motivation` `prediction error`
@@ -2881,6 +2899,11 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Automated Curriculum Learning for Neural Networks"](https://arxiv.org/abs/1704.03003) Graves, Bellemare, Menick, Munos, Kavukcuoglu
   `learning progress motivation` `prediction gain` `complexity gain` `curriculum learning`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu>
+
+----
+#### ["SMiRL: Surprise Minimizing RL in Dynamic Environments"](https://arxiv.org/abs/1912.05510) Berseth et al.
+  `predictive familiarity motivation` `homeostasis`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#smirl-surprise-minimizing-rl-in-dynamic-environments-berseth>
 
 ----
 #### ["Diversity is All You Need: Learning Skills without a Reward Function"](https://arxiv.org/abs/1802.06070) Eysenbach, Gupta, Ibarz, Levine
@@ -2945,27 +2968,9 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <http://www.fields.utoronto.ca/video-archive/2019/10/2509-21418> (29:55) (Levine)
   - `video` <https://youtu.be/jAPJeJK18mw?t=10m28s> (Levine)
 
-#### ["Hindsight Experience Replay"](https://arxiv.org/abs/1707.01495) Andrychowicz, Wolski, Ray, Schneider, Fong, Welinder, McGrew, Tobin, Abbeel, Zaremba
+#### ["Hindsight Experience Replay"](https://arxiv.org/abs/1707.01495) Andrychowicz et al.
   `HER` `curriculum learning` `auxiliary tasks`
->	"Get reward signal from any experience by simply assuming the goal equals whatever happened."  
->	"HER may be seen as a form of implicit curriculum as the goals used for replay naturally shift from ones which are simple to achieve even by a random agent to more difficult ones. However, in contrast to explicit curriculum, HER does not require having any control over the distribution of initial environment states."  
->	"Not only does HER learn with extremely sparse rewards, in our experiments it also performs better with sparse rewards than with shaped ones. These results are indicative of the practical challenges with reward shaping, and that shaped rewards would often constitute a compromise on the metric we truly care about (such as binary success/failure)."  
-  - `post` <https://blog.openai.com/ingredients-for-robotics-research/>
-  - <https://sites.google.com/site/hindsightexperiencereplay/> (demo)
-  - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482?t=2280> (Abbeel)
-  - `video` <https://youtu.be/TERCdog1ddE?t=50m45s> (Abbeel)
-  - `video` <https://youtu.be/JX5E0Tt7K10?t=3m50s> (Sutskever)
-  - `video` <https://youtu.be/BCzFs9Xb9_o?t=21m2s> (Sutskever)
-  - `video` <https://youtu.be/RvEwFvl-TrY?t=19m18s> (Sutskever)
-  - `video` <https://youtu.be/BXe2A5i4ESw?t=10m42s> (Fournier)
-  - `video` <https://youtu.be/0Ey02HT_1Ho?t=10m57s> (Steenbrugge)
-  - `post` <https://danieltakeshi.github.io/2018/02/28/sample-efficient-rl>
-  - `notes` <https://yobibyte.github.io/files/paper_notes/her.pdf>
-  - `post` <https://jangirrishabh.github.io/2018/03/25/Overcoming-exploration-demos.html>
-  - `code` <https://github.com/openai/baselines/tree/master/baselines/her>
-  - `code` <https://github.com/vitchyr/rlkit>
-  - `code` <https://github.com/higgsfield/RL-Adventure-2>
-  - `paper` ["Universal Value Function Approximators"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#schaul-horgan-gregor-silver---universal-value-function-approximators) by Schaul et al. `summary`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#hindsight-experience-replay-andrychowicz-et-al>
 
 #### ["Reverse Curriculum Generation for Reinforcement Learning"](https://arxiv.org/abs/1707.05300) Florensa, Held, Wulfmeier, Zhang, Abbeel
   `curriculum learning`
@@ -3215,7 +3220,8 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Actor-Mimic: Deep Multitask and Transfer Reinforcement Learning"](http://arxiv.org/abs/1511.06342) Parisotto, Ba, Salakhutdinov
   `policy distillation`
 >	"single policy network learning to act in a set of distinct tasks through the guidance of an expert teacher for each task"  
-  - `code` <https://github.com/eparisotto/ActorMimic>
+>	"still need to train on each Atari game for same amount of time + performance drops slightly from multi-task training (no transfer)"  
+  - `video` <https://youtu.be/Hx4XpVdJOI0?t=21m46s> (Finn)
 
 ----
 #### ["Fast Task Inference with Variational Intrinsic Successor Features"](https://arxiv.org/abs/1906.05030) Hansen, Dabney, Barreto, Wiele, Warde-Farley, Mnih
@@ -3244,33 +3250,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `successor features`
   - `video` <https://youtube.com/watch?v=OCHwXxSW70o> (Kulkarni)
   - `video` <https://youtube.com/watch?v=kNqXCn7K-BM> (Garipov)
-  - `code` <https://github.com/Ardavans/DSR>
-
-----
-#### ["Learning and Transfer of Modulated Locomotor Controllers"](http://arxiv.org/abs/1610.05182) Heess, Wayne, Tassa, Lillicrap, Riedmiller, Silver
-  `modular networks`
-  - `video` <https://youtube.com/watch?v=sboPYvhpraQ> (demo)
-  - `video` <https://youtube.com/watch?v=0e_uGa7ic74&t=31m4s> (Hadsell)
-  - `video` <https://vimeo.com/238221551#t=42m48s> (Hadsell)
-
-#### ["Learning Modular Neural Network Policies for Multi-Task and Multi-Robot Transfer"](http://arxiv.org/abs/1609.07088) Devin, Gupta, Darrell, Abbeel, Levine
-  `modular networks`
-  - `video` <https://youtube.com/watch?v=n4EgRwzJE1o>
-  - `video` <https://youtube.com/watch?v=ID150Tl-MMw&t=56m20s> (Abbeel)
-
-#### ["Learning Invariant Feature Spaces to Transfer Skills with Reinforcement Learning"](https://arxiv.org/abs/1703.02949) Gupta, Devin, Liu, Abbeel, Levine
-  `modular networks`
-
-#### ["Progressive Neural Networks"](http://arxiv.org/abs/1606.04671) Rusu, Rabinowitz, Desjardins, Soyer, Kirkpatrick, Kavukcuoglu, Pascanu, Hadsell
-  `modular networks`
-  - `video` <https://youtube.com/watch?v=aWAP_CWEtSI> (Hadsell)
-  - `video` <http://techtalks.tv/talks/progressive-nets-for-sim-to-real-transfer-learning/63043/> (Hadsell)
-  - `video` <https://youtu.be/xfyK03MEZ9Q?t=5h47m16s> (Hadsell)
-  - `video` <https://youtu.be/x1kf4Zojtb0?t=41m4s> (de Freitas)
-  - `video` <https://youtu.be/4nPmpXF2_sU?t=21m15s> (Tagirdzhanov) `in russian`
-  - `notes` <https://blog.acolyer.org/2016/10/11/progressive-neural-networks/>
-  - `notes` <https://www.shortscience.org/paper?bibtexKey=journals/corr/1606.04671>
-  - `code` <https://github.com/synpon/prog_nn>
 
 
 
@@ -3643,6 +3622,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"We study the problem of learning probabilistic first-order logical rules for knowledge base reasoning. This learning problem is difficult because it requires learning the parameters in a continuous space as well as the structure in a discrete space. We propose a framework, Neural Logic Programming, that combines the parameter and structure learning of first-order logical rules in an end-to-end differentiable model. This approach is inspired by a recently-developed differentiable logic called TensorLog, where inference tasks can be compiled into sequences of differentiable operations. We design a neural controller system that learns to compose these operations."  
   - `video` <https://youtu.be/bVWDxyydyEM?t=43m31s> (Neubig)
   - `code` <https://github.com/fanyangxyz/Neural-LP>
+  - `paper` ["TensorLog: A Probabilistic Database Implemented Using Deep-Learning Infrastructure"](https://jair.org/index.php/jair/article/view/11944) by Cohen et al.
 
 #### ["TensorLog: A Differentiable Deductive Database"](http://arxiv.org/abs/1605.06523) Cohen
   `TensorLog` `learning logic`

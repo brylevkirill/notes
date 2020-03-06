@@ -385,11 +385,14 @@
 
 ----
 
-  [course](https://youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ) by David Silver `video`  
-  [course](https://udacity.com/course/reinforcement-learning--ud600) by Michael Littman `video`  
-  [course](https://youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u) by Emma Brunskill `video`  
-  [course](http://web.mit.edu/dimitrib/www/RLbook.html) by Dimitri Bertsekas `video`  
-  [course](https://github.com/yandexdataschool/Practical_RL/) from Yandex `video` `in russian`  
+  [course](https://youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ) by David Silver `video`  *(basic)*  
+  [course](https://udacity.com/course/reinforcement-learning--ud600) by Michael Littman `video`  *(basic)*  
+  [course](https://youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u) by Emma Brunskill `video`  *(basic)*  
+
+  [course](http://rail.eecs.berkeley.edu/deeprlcourse) from UC Berkeley ([videos](https://youtube.com/playlist?list=PLkFD6_40KJIwhWJpGazJ9VSj9CFMkb79A))  *(advanced)*  
+  [course](https://youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs) from DeepMind `video`  *(advanced)*  
+  [course](https://youtube.com/playlist?list=PLkFD6_40KJIznC9CDbVTjAF2oyt8_VAe3) by Sergey Levine, John Schulman and Chelsea Finn `video`  *(advanced)*  
+  [course](https://github.com/yandexdataschool/Practical_RL/) from Yandex and HSE `video` `in russian`  *(advanced)*  
 
 ----
 
@@ -411,7 +414,7 @@
 
   [exercises and solutions](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction) by Shangtong Zhang  
   [exercises and solutions](https://github.com/dennybritz/reinforcement-learning) by Denny Britz  
-  [exercises and solutions](https://github.com/yandexdataschool/Practical_RL/) from Yandex  
+  [exercises and solutions](https://github.com/yandexdataschool/Practical_RL/) from Yandex and HSE  
 
 ----
 
@@ -453,10 +456,12 @@
 
 ----
 
-  [course](https://youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs) from DeepMind `video`  
   [course](http://rail.eecs.berkeley.edu/deeprlcourse) by Sergey Levine ([videos](https://youtube.com/playlist?list=PLkFD6_40KJIwhWJpGazJ9VSj9CFMkb79A))  
-  [course](http://rll.berkeley.edu/deeprlcourse) by Sergey Levine, John Schulman and Chelsea Finn ([videos](https://youtube.com/playlist?list=PLkFD6_40KJIznC9CDbVTjAF2oyt8_VAe3))  
-  [course](http://katefvision.github.io) by Ruslan Salakhutdinov and Katerina Fragkiadaki ([videos](https://youtube.com/playlist?list=PLpIxOj-HnDsNPFdu2UqCu2McJKHs-eWXv))  
+  [course](https://youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs) from DeepMind `video`  
+  [course](https://youtube.com/playlist?list=PLkFD6_40KJIznC9CDbVTjAF2oyt8_VAe3) by Sergey Levine, John Schulman and Chelsea Finn `video`  
+  [course](https://github.com/yandexdataschool/Practical_RL/) from Yandex and HSE `video` `in russian`  
+
+----
 
   ["Spinning Up in Deep RL"](https://youtube.com/watch?v=fdY7dt3ijgY) workshop by OpenAI `video`  
   [Deep RL Bootcamp](https://sites.google.com/view/deep-rl-bootcamp/lectures) workshop at Berkeley `video`  
@@ -601,13 +606,13 @@
   - learn agent's behavior in environment with unknown cost function via imitation of another agent's behavior
   - use expert's demonstrations to alleviate difficulties with exploration, credit assignment and reward design
 
-  [overview](http://videolectures.net/DLRLsummerschool2018_daume_imitation_learning) by Hal Daume `video`  
-  [overview](https://facebook.com/icml.imls/videos/428362527678268) by Yisong Yue and Hoang Le `video`  
-  ["New Frontiers in Imitation Learning"](https://youtube.com/watch?v=teyGpr2Dgm4) by Yisong Yue `video`  
-
   ["Supervised Learning of Behaviors: Deep Learning, Dynamical Systems, and Behavior Cloning"](https://youtube.com/watch?v=kl_G95uKTHw) by Sergey Levine `video`  
   ["Learning Policies by Imitating Optimal Control"](https://youtube.com/watch?v=o0Ebur3aNMo) by Sergey Levine `video`  
   ["Advanced Topics in Imitation Learning and Safety"](https://youtube.com/watch?v=UClw47acYnw) by Chelsea Finn `video`  
+
+  [overview](https://facebook.com/icml.imls/videos/428362527678268) by Yisong Yue and Hoang Le `video`  
+  [overview](http://videolectures.net/DLRLsummerschool2018_daume_imitation_learning) by Hal Daume `video`  
+  [overview](https://youtube.com/watch?v=0DkPUecLLpI) by Fedor Ratnikov `video` `in russian`  
 
   ["An Invitation to Imitation"](http://ri.cmu.edu/pub_files/2015/3/InvitationToImitation_3_1415.pdf) by Andrew Bagnell  
   ["Imitation Learning"](http://ciml.info) chapter by Hal Daume  
@@ -624,7 +629,7 @@
   - infer underlying reward structure guiding agent’s behavior based on observations and model of environment  
   - learn reward structure for modelling purposes or for imitation of another agent's behavior (apprenticeship)  
 
-  [introduction](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/) (part 2, 20:40) by Pieter Abbeel `video`  
+  [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/) (part 2, 20:40) by Pieter Abbeel `video`  
   [overview](https://youtube.com/watch?v=d9DlQSJQAoI) by Chelsea Finn `video`  
   [overview](https://youtube.com/watch?v=J2blDuU3X1I) by Chelsea Finn `video`  
 
@@ -643,6 +648,7 @@
   - louse individual reward in order to get a high joint reward  
   - achieve global goals from local actions  
 
+  [overview](http://youtube.com/watch?v=CvL-KV3IBcM) by Thore Graepel `video`  
   [overview](http://youtube.com/watch?v=p_n5fF8apiE) by Michael Bowling `video`  
   [overview](http://videolectures.net/DLRLsummerschool2018_bowling_multi_agent_RL) by Michael Bowling `video`  
   [overview](http://youtube.com/watch?v=9qPhrEYIRF4) by Jakob Foerster `video`  
@@ -686,6 +692,8 @@
   Feudal framework:  
 	[overview](https://vimeo.com/249557775) by David Silver `video`  
 
+  [overview](https://youtube.com/watch?v=sdBE3P6xL7E) by Petr Kuderov `video` `in russian`
+
   [Hierarchical RL](http://sites.google.com/view/hrlnips2017) workshop `video`  
   [Abstraction in RL](http://rlabstraction2016.wixsite.com/icml) workshop `video`  
 
@@ -715,6 +723,7 @@
   [overview](http://youtu.be/fIKkhoI1kF4?t=19m23s) by Emma Brunskill `video`  
   [overview](http://youtube.com/watch?v=GlTYGmVUTbM) by Ian Osband `video`  
   [overview](http://facebook.com/icml.imls/videos/2265408103721327?t=4118) by Pieter Abbeel `video`  
+  [overview](http://youtube.com/watch?v=qvxgsxQFHgQ) by Sergey Ivanov `video` `in russian`  
   [overview](http://youtube.com/watch?v=EMv1AVLOnto) by Oleg Svidchenko `video` `in russian`  
   [overview](http://youtube.com/watch?v=WCE9hhPbCmc) by Maxim Kretov `video` `in russian`  
 
@@ -791,7 +800,10 @@
 ----
 #### exploration and intrinsic motivation - auxiliary tasks
 
-  [**"Reinforcement Learning with Unsupervised Auxiliary Tasks"**](#reinforcement-learning-with-unsupervised-auxiliary-tasks-jaderberg-mnih-czarnecki-schaul-leibo-silver-kavukcuoglu) by Jaderberg et al. `paper` `summary`
+  [**"Hindsight Experience Replay"**](#hindsight-experience-replay-andrychowicz-et-al) by Andrychowicz et al. `paper` `summary`  
+  [**"Reinforcement Learning with Unsupervised Auxiliary Tasks"**](#reinforcement-learning-with-unsupervised-auxiliary-tasks-jaderberg-mnih-czarnecki-schaul-leibo-silver-kavukcuoglu) by Jaderberg et al. `paper` `summary`  
+  ["Loss is Its Own Reward: Self-Supervision for Reinforcement Learning"](https://arxiv.org/abs/1612.07307) by Shelhamer et al. `paper`  
+  ["Feature Control as Intrinsic Motivation for Hierarchical Reinforcement Learning"](https://arxiv.org/abs/1705.06769) by Dilokthanakul et al. `paper`  
 
   [**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---auxiliary-tasks)  
   [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
@@ -812,6 +824,7 @@
 	[**"Count-Based Exploration with Neural Density Models"**](#count-based-exploration-with-neural-density-models-ostrovski-bellemare-van-den-oord-munos) by Ostrovski et al. `paper` `summary`  
 	[**"\#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning"**](#exploration-a-study-of-count-based-exploration-for-deep-reinforcement-learning-tang-et-al) by Tang et al. `paper` `summary`  
 	[**"EX2: Exploration with Exemplar Models for Deep Reinforcement Learning"**](#ex2-exploration-with-exemplar-models-for-deep-reinforcement-learning-fu-co-reyes-levine) by Fu et al. `paper` `summary`  
+	[**"Episodic Curiosity through Reachability"**](#episodic-curiosity-through-reachability-savinov-et-al) by Savinov et al. `paper` `summary`  
 
 	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---uncertainty-motivation)  
 	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
@@ -866,12 +879,10 @@
 
 	[overview](https://youtu.be/DSYzHPW26Ig?t=1h59m37s) by Alex Graves `video`
 
-	[**"Exploration by Random Network Distillation"**](#exploration-by-random-network-distillation-burda-edwards-storkey-klimov) by Burda et al. `paper` `summary`  
+	[**"Learning to Play with Intrinsically-Motivated Self-Aware Agents"**](#learning-to-play-with-intrinsically-motivated-self-aware-agents-haber-et-al) by Haber et al. `paper` `summary`  
 	[**"Large-Scale Study of Curiosity-Driven Learning"**](#large-scale-study-of-curiosity-driven-learning-burda-edwards-pathak-storkey-darrell-efros) by Burda et al. `paper` `summary`  
 	[**"Curiosity-driven Exploration by Self-supervised Prediction"**](#curiosity-driven-exploration-by-self-supervised-prediction-pathak-agrawal-efros-darrell) by Pathak et al. `paper` `summary`  
-	[**"Reinforcement Learning with Unsupervised Auxiliary Tasks"**](#reinforcement-learning-with-unsupervised-auxiliary-tasks-jaderberg-mnih-czarnecki-schaul-leibo-silver-kavukcuoglu) by Jaderberg et al. `paper` `summary`  
-	["Loss is Its Own Reward: Self-Supervision for Reinforcement Learning"](https://arxiv.org/abs/1612.07307) by Shelhamer et al. `paper`  
-	["Feature Control as Intrinsic Motivation for Hierarchical Reinforcement Learning"](https://arxiv.org/abs/1705.06769) by Dilokthanakul et al. `paper`  
+	[**"Exploration by Random Network Distillation"**](#exploration-by-random-network-distillation-burda-edwards-storkey-klimov) by Burda et al. `paper` `summary`  
 
 	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---predictive-novelty-motivation)  
 	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
@@ -901,8 +912,8 @@
 
 	> "In the psychology literature, intrinsic motivations refer generally to mechanisms that push organisms to explore their environment. Yet, there are direct variants of previous computational systems that are both simple and correspond intuitively to existing forms of human motivation. For example, a slight mathematical variation of predictive novelty motivation would model a motivation to search for situation which are very predictable, and thus familiar: r(SM(→ t)) = C/Er(t), where C is a constant. It would actually be sound to consider this kind of motivation as intrinsic, in spite of the fact that it will typically not push an organism to explore its environment."
 
+	[**"SMiRL: Surprise Minimizing RL in Dynamic Environments"**](#smirl-surprise-minimizing-rl-in-dynamic-environments-berseth) by Berseth et al. `paper` `summary`  
 	["Information Theoretically Aided Reinforcement Learning for Embodied Agents"](https://arxiv.org/abs/1605.09735) by Montufar et al. `paper`  
-	["SMiRL: Surprise Minimizing RL in Dynamic Environments"](https://arxiv.org/abs/1912.05510) by Berseth et al. `paper` ([overview](http://www.fields.utoronto.ca/video-archive/2019/10/2509-21418) (36:15) `video`)  
 
 
 ----
@@ -1836,6 +1847,7 @@ interesting recent papers:
   - `video` <https://youtube.com/playlist?list=PLnn6VZp3hqNsrsp_Bg-bEfzzhJ3SuEZE9>
   - `video` <http://youtube.com/watch?v=4D5yGiYe8p4> (Silver)
   - `video` <http://youtube.com/watch?v=LX8Knl0g0LE> (Huang)
+  - `video` <http://youtu.be/CvL-KV3IBcM?t=31m55s> (Graepel)
   - `video` <http://youtube.com/watch?v=UMm0XaCFTJQ> (Sutton, Szepesvari, Bowling, Hayward, Muller)
   - `video` <https://youtu.be/WM4HC720Cms?t=1h18m21s> (Nikolenko) `in russian`
   - `video` <https://youtube.com/watch?v=zHjE07NBA_o> (Kozlov) `in russian`
@@ -2123,14 +2135,15 @@ interesting recent papers:
   * [**bayesian exploration**](#interesting-papers---exploration-and-intrinsic-motivation---bayesian-exploration)
   * [**auxiliary tasks**](#interesting-papers---exploration-and-intrinsic-motivation---auxiliary-tasks)
   * information theoretic and distributional models
-    - [**uncertainty motivation**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---uncertainty-motivation)
-    - [**information gain motivation**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---information-gain-motivation)
+    - [**uncertainty motivation (novelty)**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---uncertainty-motivation)
+    - [**information gain motivation (bayesian surprise)**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---information-gain-motivation)
     - [**empowerment motivation**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---empowerment-motivation)
   * predictive models
-    - [**predictive novelty motivation**](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---predictive-novelty-motivation)
-    - [**learning progress motivation**](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---learning-progress-motivation)
+    - [**predictive novelty motivation (prediction error)**](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---predictive-novelty-motivation)
+    - [**learning progress motivation (prediction gain)**](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---learning-progress-motivation)
+    - [**predictive familiarity motivation (homeostasis)**](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---predictive-familiarity-motivation)
   * competence-based models
-    - [**competence progress motivation**](#interesting-papers---exploration-and-intrinsic-motivation---competence-based-models---competence-progress-motivation)
+    - [**competence progress motivation (automated curriculum learning)**](#interesting-papers---exploration-and-intrinsic-motivation---competence-based-models---competence-progress-motivation)
 
 ----
 #### ["How Can We Define Intrinsic Motivation"](http://pyoudeyer.com/epirob08OudeyerKaplan.pdf) Oudeyer, Kaplan
@@ -2396,6 +2409,31 @@ interesting recent papers:
 [interesting recent papers](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)
 
 ----
+#### ["Hindsight Experience Replay"](https://arxiv.org/abs/1707.01495) Andrychowicz et al.
+  `HER` `curriculum learning` `auxiliary tasks`
+>	Dealing with sparse rewards is one of the biggest challenges in Reinforcement Learning. We present a novel technique called Hindsight Experience Replay which allows sample-efficient learning from rewards which are sparse and binary and therefore avoid the need for complicated reward engineering. It can be combined with an arbitrary off-policy RL algorithm and may be seen as a form of implicit curriculum. We demonstrate our approach on the task of manipulating objects with a robotic arm. In particular, we run experiments on three different tasks: pushing, sliding, and pick-and-place, in each case using only binary rewards indicating whether or not the task is completed. Our ablation studies show that Hindsight Experience Replay is a crucial ingredient which makes training possible in these challenging environments. We show that our policies trained on a physics simulation can be deployed on a physical robot and successfully complete the task."
+
+>	"Get reward signal from any experience by simply assuming the goal equals whatever happened."  
+>	"HER may be seen as a form of implicit curriculum as the goals used for replay naturally shift from ones which are simple to achieve even by a random agent to more difficult ones. However, in contrast to explicit curriculum, HER does not require having any control over the distribution of initial environment states."  
+>	"Not only does HER learn with extremely sparse rewards, in our experiments it also performs better with sparse rewards than with shaped ones. These results are indicative of the practical challenges with reward shaping, and that shaped rewards would often constitute a compromise on the metric we truly care about (such as binary success/failure)."  
+
+  - `post` <https://blog.openai.com/ingredients-for-robotics-research/>
+  - <https://sites.google.com/site/hindsightexperiencereplay/> (demo)
+  - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482?t=2280> (Abbeel)
+  - `video` <https://youtu.be/TERCdog1ddE?t=50m45s> (Abbeel)
+  - `video` <https://youtu.be/JX5E0Tt7K10?t=3m50s> (Sutskever)
+  - `video` <https://youtu.be/BCzFs9Xb9_o?t=21m2s> (Sutskever)
+  - `video` <https://youtu.be/RvEwFvl-TrY?t=19m18s> (Sutskever)
+  - `video` <https://youtu.be/BXe2A5i4ESw?t=10m42s> (Fournier)
+  - `video` <https://youtu.be/0Ey02HT_1Ho?t=10m57s> (Steenbrugge)
+  - `video` <https://youtu.be/qvxgsxQFHgQ?t=5m20s> (Ivanov) `in russian`
+  - `post` <https://danieltakeshi.github.io/2018/02/28/sample-efficient-rl>
+  - `notes` <https://yobibyte.github.io/files/paper_notes/her.pdf>
+  - `post` <https://jangirrishabh.github.io/2018/03/25/Overcoming-exploration-demos.html>
+  - `code` <https://github.com/openai/baselines/tree/master/baselines/her>
+  - `paper` ["Universal Value Function Approximators"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#schaul-horgan-gregor-silver---universal-value-function-approximators) by Schaul et al. `summary`
+
+
 #### ["Reinforcement Learning with Unsupervised Auxiliary Tasks"](http://arxiv.org/abs/1611.05397) Jaderberg, Mnih, Czarnecki, Schaul, Leibo, Silver, Kavukcuoglu
   `UNREAL`
 >	"Deep reinforcement learning agents have achieved state-of-the-art results by directly maximising cumulative reward. However, environments contain a much wider variety of possible training signals. In this paper, we introduce an agent that also maximises many other pseudo-reward functions simultaneously by reinforcement learning. All of these tasks share a common representation that, like unsupervised learning, continues to develop in the absence of extrinsic rewards. We also introduce a novel mechanism for focusing this representation upon extrinsic rewards, so that learning can rapidly adapt to the most relevant aspects of the actual task. Our agent significantly outperforms the previous state-of-theart on Atari, averaging 880% expert human performance, and a challenging suite of first-person, three-dimensional Labyrinth tasks leading to a mean speedup in learning of 10× and averaging 87% expert human performance on Labyrinth."
@@ -2506,6 +2544,15 @@ interesting recent papers:
 
 #### ["EX2: Exploration with Exemplar Models for Deep Reinforcement Learning"](https://arxiv.org/abs/1703.01260) Fu, Co-Reyes, Levine
 >      "Deep reinforcement learning algorithms have been shown to learn complex tasks using highly general policy classes. However, sparse reward problems remain a significant challenge. Exploration methods based on novelty detection have been particularly successful in such settings but typically require generative or predictive models of the observations, which can be difficult to train when the observations are very high-dimensional and complex, as in the case of raw images. We propose a novelty detection algorithm for exploration that is based entirely on discriminatively trained exemplar models, where classifiers are trained to discriminate each visited state against all others. Intuitively, novel states are easier to distinguish against other states seen during training. We show that this kind of discriminative modeling corresponds to implicit density estimation, and that it can be combined with count-based exploration to produce competitive results on a range of popular benchmark tasks, including state-of-the-art results on challenging egocentric observations in the vizDoom benchmark."
+
+
+#### ["Episodic Curiosity through Reachability"](https://arxiv.org/abs/1810.02274) Savinov et al.
+  `EC` `uncertainty motivation` `novelty` `ICLR 2019`
+>	"Rewards are sparse in the real world and most of today’s reinforcement learning algorithms struggle with such sparsity. One solution to this problem is to allow the agent to create rewards for itself - thus making rewards dense and more suitable for learning. In particular, inspired by curious behaviour in animals, observing something novel could be rewarded with a bonus. Such bonus is summed up with the real task reward - making it possible for RL algorithms to learn from the combined reward. We propose a new curiosity method which uses episodic memory to form the novelty bonus. To determine the bonus, the current observation is compared with the observations in memory. Crucially, the comparison is done based on how many environment steps it takes to reach the current observation from those in memory - which incorporates rich information about environment dynamics. This allows us to overcome the known “couch-potato” issues of prior work - when the agent finds a way to instantly gratify itself by exploiting actions which lead to hardly predictable consequences. We test our approach in visually rich 3D environments in VizDoom, DMLab and MuJoCo. In navigational tasks from VizDoom and DMLab, our agent outperforms the state-of-the-art curiosity method ICM. In MuJoCo, an ant equipped with our curiosity module learns locomotion out of the first-person-view curiosity only."
+
+  - <https://sites.google.com/view/episodic-curiosity> (demo)
+  - `post` <https://ai.googleblog.com/2018/10/curiosity-and-procrastination-in.html>
+  - `video` <https://youtu.be/qvxgsxQFHgQ?t=1h14m21s> (Ivanov) `in russian`
 
 
 
@@ -2644,22 +2691,11 @@ interesting recent papers:
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)
 
 ----
-#### ["Exploration by Random Network Distillation"](https://arxiv.org/abs/1810.12894) Burda, Edwards, Storkey, Klimov
-  `RND` `prediction error`
->	"In general, prediction errors can be attributed to a number of factors:  
->	1. Amount of training data. Prediction error is high where few similar examples were seen by the predictor (epistemic uncertainty).  
->	2. Stochasticity. Prediction error is high because the target function is stochastic (aleatoric uncertainty). Stochastic transitions are a source of such error for forward dynamics prediction.  
->	3. Model misspecification. Prediction error is high because necessary information is missing, or the model class is too limited to fit the complexity of the target function.  
->	4. Learning dynamics. Prediction error is high because the optimization process fails to find a predictor in the model class that best approximates the target function.  
->	Factor 1 is what allows one to use prediction error as an exploration bonus. In practice the prediction error is caused by a combination of all of these factors, not all of them desirable. For instance if the prediction problem is forward dynamics, then factor 2 results in the ‘noisy-TV’ problem. This is the thought experiment where an agent that is rewarded for errors in the prediction of its forward dynamics model gets attracted to local sources of entropy in the environment. A TV showing white noise would be such an attractor, as would a coin flip.  
->	To avoid the undesirable factors 2 and 3, methods such as those by Schmidhuber (1991a); Oudeyer et al. (2007); Lopes et al. (2012); Achiam & Sastry (2017) instead use a measurement of how much the prediction model improves upon seeing a new datapoint. However these approaches tend to be computationally expensive and hence difficult to scale.  
->	RND obviates factors 2 and 3 since the target network can be chosen to be deterministic and inside the model-class of the predictor network."  
-  - `post` <https://blog.openai.com/reinforcement-learning-with-prediction-based-rewards> (demo)
-  - `video` <https://youtu.be/ElyFDUab30A?t=17m37s> (Sutskever)
-  - `video` <https://youtu.be/X-B3nAN7YRM?t=7m8s> (Sutskever)
-  - `video` <https://youtu.be/EMv1AVLOnto?t=17m44s> (Svidchenko) `in russian`
-  - `code` <https://github.com/openai/random-network-distillation>
-  - `paper` [**"On Bonus Based Exploration Methods In The Arcade Learning Environment"**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#on-bonus-based-exploration-methods-in-the-arcade-learning-environment-taiga-fedus-machado-courville-bellemare) by Taiga et al. `summary`
+#### ["Learning to Play with Intrinsically-Motivated Self-Aware Agents"](https://arxiv.org/abs/1802.07442) Haber, Mrowca, Fei-Fei, Yamins
+  `prediction error`
+>	"Infants are experts at playing, with an amazing ability to generate novel structured behaviors in unstructured environments that lack clear extrinsic reward signals. We seek to mathematically formalize these abilities using a neural network that implements curiosity-driven intrinsic motivation. Using a simple but ecologically naturalistic simulated environment in which an agent can move and interact with objects it sees, we propose a "world-model" network that learns to predict the dynamic consequences of the agent's actions. Simultaneously, we train a separate explicit "self-model" that allows the agent to track the error map of its own world-model, and then uses the self-model to adversarially challenge the developing world-model. We demonstrate that this policy causes the agent to explore novel and informative interactions with its environment, leading to the generation of a spectrum of complex behaviors, including ego-motion prediction, object attention, and object gathering. Moreover, the world-model that the agent learns supports improved performance on object dynamics prediction, detection, localization and recognition tasks."
+
+  - `video` <https://youtu.be/qvxgsxQFHgQ?t=47m46s> (Ivanov) `in russian`
 
 
 #### ["Large-Scale Study of Curiosity-Driven Learning"](https://arxiv.org/abs/1808.04355) Burda, Edwards, Pathak, Storkey, Darrell, Efros
@@ -2671,8 +2707,10 @@ interesting recent papers:
   - `video` <https://youtu.be/8NR6euSDfsM?t=9m4s> (Darrell)
   - `video` <https://vk.com/video-44016343_456240849> (Efros)
   - `video` <https://slideslive.com/38909803/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework> (1:29:06) (Biehl)
+  - `video` <https://youtu.be/qvxgsxQFHgQ?t=59m45s> (Ivanov) `in russian`
   - `video` <https://youtu.be/EMv1AVLOnto?t=19m42s> (Svidchenko) `in russian`
   - `code` <https://github.com/openai/large-scale-curiosity>
+  - `paper` ["Curiosity-driven Exploration by Self-supervised Prediction"](#large-scale-study-of-curiosity-driven-learning-burda-edwards-pathak-storkey-darrell-efros) by Burda et al. `paper` `summary`
   - `paper` [**"On Bonus Based Exploration Methods In The Arcade Learning Environment"**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#on-bonus-based-exploration-methods-in-the-arcade-learning-environment-taiga-fedus-machado-courville-bellemare) by Taiga et al. `summary`
 
 
@@ -2692,21 +2730,32 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=_Z9ZP1eiKsI> (Kilcher)
   - `video` <https://youtu.be/RwLTrQUyDvA?t=18m2s> (Diaz Rodriguez)
   - `video` <https://youtu.be/0Ey02HT_1Ho?t=5m37s> (Steenbrugge)
+  - `video` <https://youtu.be/qvxgsxQFHgQ?t=55m6s> (Ivanov) `in russian`
   - `post` <https://navneet-nmk.github.io/2018-08-10-first-post>
   - `code` <https://github.com/pathak22/noreward-rl>
   - `code` <https://github.com/navneet-nmk/pytorch-rl/blob/master/models/CuriosityDrivenExploration.py>
   - `paper` [**"On Bonus Based Exploration Methods In The Arcade Learning Environment"**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#on-bonus-based-exploration-methods-in-the-arcade-learning-environment-taiga-fedus-machado-courville-bellemare) by Taiga et al. `summary`
 
 
-#### ["Improving Policy Gradient by Exploring Under-appreciated Rewards"](https://arxiv.org/abs/1611.09321) Nachum, Norouzi, Schuurmans
->	"This paper presents a novel form of policy gradient for model-free reinforcement learning with improved exploration properties. Current policy-based methods use entropy regularization to encourage undirected exploration of the reward landscape, which is ineffective in high dimensional spaces with sparse rewards. We propose a more directed exploration strategy that promotes exploration of under-appreciated reward regions. An action sequence is considered under-appreciated if its log-probability under the current policy under-estimates its resulting reward. The proposed exploration strategy is easy to implement, requiring small modifications to an implementation of the REINFORCE algorithm. We evaluate the approach on a set of algorithmic tasks that have long challenged RL methods. Our approach reduces hyper-parameter sensitivity and demonstrates significant improvements over baseline methods. Our algorithm successfully solves a benchmark multi-digit addition task and generalizes to long sequences. This is, to our knowledge, the first time that a pure RL method has solved addition using only reward feedback."
+#### ["Exploration by Random Network Distillation"](https://arxiv.org/abs/1810.12894) Burda, Edwards, Storkey, Klimov
+  `RND` `prediction error`
+>	"We introduce an exploration bonus for deep reinforcement learning methods that is easy to implement and adds minimal overhead to the computation performed. The bonus is the error of a neural network predicting features of the observations given by a fixed randomly initialized neural network. We also introduce a method to flexibly combine intrinsic and extrinsic rewards. We find that the random network distillation bonus combined with this increased flexibility enables significant progress on several hard exploration Atari games. In particular we establish state of the art performance on Montezuma’s Revenge, a game famously difficult for deep reinforcement learning methods. To the best of our knowledge, this is the first method that achieves better than average human performance on this game without using demonstrations or having access to the underlying state of the game, and occasionally completes the first level."
 
->	"Prominent approaches to improving exploration beyond epsilon-greedy in value-based or model-based RL have focused on reducing uncertainty by prioritizing exploration toward states and actions where the agent knows the least. This basic intuition underlies work on counter and recency methods, exploration methods based on uncertainty estimates of values, methods that prioritize learning environment dynamics, and methods that provide an intrinsic motivation or curiosity bonus for exploring unknown states. We relate the concepts of value and policy in RL and propose an exploration strategy based on the discrepancy between the two."
-
->	"To confirm whether our method is able to find the correct algorithm for multi-digit addition, we investigate its generalization to longer input sequences than provided during training. We evaluate the trained models on inputs up to a length of 2000 digits, even though training sequences were at most 33 characters. For each length, we test the model on 100 randomly generated inputs, stopping when the accuracy falls below 100%. Out of the 60 models trained on addition with UREX, we find that 5 models generalize to numbers up to 2000 digits without any observed mistakes."
-
-  - `video` <https://youtu.be/fZNyHoXgV7M?t=55m45s> (Norouzi)
-  - `code` <https://github.com/tensorflow/models/tree/master/research/pcl_rl>
+>	"In general, prediction errors can be attributed to a number of factors:  
+>	1. Amount of training data. Prediction error is high where few similar examples were seen by the predictor (epistemic uncertainty).  
+>	2. Stochasticity. Prediction error is high because the target function is stochastic (aleatoric uncertainty). Stochastic transitions are a source of such error for forward dynamics prediction.  
+>	3. Model misspecification. Prediction error is high because necessary information is missing, or the model class is too limited to fit the complexity of the target function.  
+>	4. Learning dynamics. Prediction error is high because the optimization process fails to find a predictor in the model class that best approximates the target function.  
+>	Factor 1 is what allows one to use prediction error as an exploration bonus. In practice the prediction error is caused by a combination of all of these factors, not all of them desirable. For instance if the prediction problem is forward dynamics, then factor 2 results in the ‘noisy-TV’ problem. This is the thought experiment where an agent that is rewarded for errors in the prediction of its forward dynamics model gets attracted to local sources of entropy in the environment. A TV showing white noise would be such an attractor, as would a coin flip.  
+>	To avoid the undesirable factors 2 and 3, methods such as those by Schmidhuber (1991a); Oudeyer et al. (2007); Lopes et al. (2012); Achiam & Sastry (2017) instead use a measurement of how much the prediction model improves upon seeing a new datapoint. However these approaches tend to be computationally expensive and hence difficult to scale.  
+>	RND obviates factors 2 and 3 since the target network can be chosen to be deterministic and inside the model-class of the predictor network."  
+  - `post` <https://blog.openai.com/reinforcement-learning-with-prediction-based-rewards> (demo)
+  - `video` <https://youtu.be/ElyFDUab30A?t=17m37s> (Sutskever)
+  - `video` <https://youtu.be/X-B3nAN7YRM?t=7m8s> (Sutskever)
+  - `video` <https://youtu.be/qvxgsxQFHgQ?t=19m27s> (Ivanov) `in russian`
+  - `video` <https://youtu.be/EMv1AVLOnto?t=17m44s> (Svidchenko) `in russian`
+  - `code` <https://github.com/openai/random-network-distillation>
+  - `paper` [**"On Bonus Based Exploration Methods In The Arcade Learning Environment"**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#on-bonus-based-exploration-methods-in-the-arcade-learning-environment-taiga-fedus-machado-courville-bellemare) by Taiga et al. `summary`
 
 
 
@@ -2732,6 +2781,26 @@ interesting recent papers:
   - `video` <https://vimeo.com/237275086> (Bellemare)
   - `notes` <https://blog.tomrochette.com/machine-learning/papers/alex-graves-automated-curriculum-learning-for-neural-networks>
   - `post` <https://lilianweng.github.io/lil-log/2020/01/29/curriculum-for-reinforcement-learning.html>
+
+
+
+---
+### interesting papers - exploration and intrinsic motivation - predictive models - predictive familiarity motivation
+
+
+#### ["SMiRL: Surprise Minimizing RL in Dynamic Environments"](https://arxiv.org/abs/1912.05510) Berseth et al.
+  `SMiRL` `homeostasis`
+>	"All living organisms struggle against the forces of nature to carve out a maintainable niche. We propose that such a search for order amidst chaos might offer a unifying principle for the emergence of useful behaviors in artificial agents. We formalize this idea into an unsupervised reinforcement learning method called Surprise Minimizing RL. SmiRL alternates between learning a density model to evaluate the surprise of a stimulus, and improving the policy to seek more predictable stimuli. This process maximizes a lower-bound on the negative entropy of the states, which can be seen as maximizing the agent's ability to maintain order in the environment. The policy seeks out stable and repeatable situations that counteract the environment's prevailing sources of entropy. This might include avoiding other hostile agents, or finding a stable, balanced pose for a bipedal robot in the face of disturbance forces. We demonstrate that our surprise minimizing agents can successfully play Tetris, Doom, control a humanoid to avoid falls, and navigate to escape enemies in a maze without any task-specific reward supervision. We further show that SMiRL can be used together with a standard task rewards to accelerate reward-driven learning."
+
+----
+>	"The key insight utilized by our method is that, in contrast to simple simulated domains, realistic environments exhibit dynamic phenomena that gradually increase entropy over time. An agent that resists this growth in entropy must take active and coordinated actions, thus learning increasingly complex behaviors. This is different from commonly proposed intrinsic exploration methods based on novelty, which instead seek to visit novel states and increase entropy. SMiRL holds promise for a new kind of unsupervised RL method that produces behaviors that are closely tied to the prevailing disruptive forces, adversaries, and other sources of entropy in the environment."
+
+>	"While on the surface, SMiRL minimizes surprise and curiosity approaches like ICM maximize novelty, they are in fact not mutually incompatible. In particular, while ICM maximizes novelty with respect to a learned transition model, SMiRL minimizes surprise with respect to a learned state distribution. We can combine ICM and SMiRL to achieve even better results on the Treadmill environment."
+
+  - <https://sites.google.com/view/surpriseminimization> (demo)
+  - `post` <https://people.eecs.berkeley.edu/~gberseth/smirl-surprise-minimizing-rl-in-dynamic-environments.html>
+  - `video` <http://www.fields.utoronto.ca/video-archive/2019/10/2509-21418> (36:15) (Levine)
+  - `video` <https://youtu.be/qvxgsxQFHgQ?t=11m27s> (Ivanov) `in russian`
 
 
 
@@ -2840,6 +2909,18 @@ interesting recent papers:
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---model-based-methods)
 
 ----
+####  ["Making the World Differentiable: On Using Self-Supervised Fully Recurrent Neural Networks for Dynamic Reinforcement Learning and Planning in Non-Stationary Environments"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.45.5472) Schmidhuber
+  `1990`
+>	"First a brief introduction to reinforcement learning and to supervised learning with recurrent networks in non-stationary environments is given. The introduction also covers the basic principle of gradient descent through frozen model networks as employed by Werbos, Jordan, Munro, Robinson and Fallside, and Nguyen and Widrouw. This principle allows supervised learning techniques to be employed for reinforcement learning. Then a general algorithm for a reinforcement learning neural network with internal and external feedback in a non-stationary reactive environment is described. Internal feedback is given by connections that allow cyclic activation flow through the network. External feedback is given by output actions that may change the state of the environment thus influencing subsequent input activations. The network's main goal is to receive as much reinforcement (or as little 'pain') as possible. In theory, arbitrary time lags between actions and ulterior consequences are possible. The 'visible' environment may be 'non-Markovian'. Although the approach is based on 'supervised' learning algorithms for fully recurrent dynamic networks, no teacher is required. An adaptive model of the environmental dynamics is constructed which includes a model of future reinforcement to be received. This model is used for learning goal directed behavior. The algorithm may concurrently learn the model and learn to pursue the main goal. To attack certain problems with the parallel version of the algorithm, 'adaptive randomness' is introduced. The algorithm is applied to a reinforcement learning task in a non-Markovian environment. A connection to 'meta-learning' {learning how to learn} is noted. An extension of the algorithm is described which includes a vector-valued adaptive critic element (based on Sutton's TD-methods). The possibility of using the model for learning by planning (by 'mental simulation' of the environmental dynamics) is investigated. Finally it is described how the algorithm can be augmented by dynamic curiosity and boredom. This can be done by introducing (delayed) reinforcement for controller actions that increase the model network's knowledge about the world. This in turn requires the model network to model its own ignorance, thus showing a rudimentary form of introspective behavior."
+
+  - `paper` ["An On-Line Algorithm for Dynamic Reinforcement Learning and Planning in Reactive Environments"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.45.1868) by Schmidhuber
+  - `paper` ["Reinforcement Learning in Markovian and Non-Markovian Environments"](http://papers.nips.cc/paper/393-reinforcement-learning-in-markovian-and-non-markovian-environments) by Schmidhuber
+
+
+#### ["On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models"](http://arxiv.org/abs/1511.09249) Schmidhuber
+  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#on-learning-to-think-algorithmic-information-theory-for-novel-combinations-of-reinforcement-learning-controllers-and-recurrent-neural-world-models-schmidhuber>
+
+
 #### ["Benchmarking Model-Based Reinforcement Learning"](https://arxiv.org/abs/1907.02057) Wang et al.
 >	"Model-based reinforcement learning is widely seen as having the potential to be significantly more sample efficient than model-free RL. However, research in model-based RL has not been very standardized. It is fairly common for authors to experiment with self-designed environments, and there are several separate lines of research, which are sometimes closed-sourced or not reproducible. Accordingly, it is an open question how these various existing MBRL algorithms perform relative to each other. To facilitate research in MBRL, in this paper we gather a wide collection of MBRL algorithms and propose over 18 benchmarking environments specially designed for MBRL. We benchmark these algorithms with unified problem settings, including noisy environments. Beyond cataloguing performance, we explore and unify the underlying algorithmic differences across MBRL algorithms. We characterize three key research challenges for future MBRL research: the dynamics bottleneck, the planning horizon dilemma, and the early-termination dilemma."
 
@@ -2854,10 +2935,6 @@ interesting recent papers:
 >	"Based on the empirical evaluation, we propose three main causes that stagnate the performance of model-based methods: 1) Dynamics bottleneck: algorithms with learned dynamics are stuck at performance local minima significantly worse than using ground-truth dynamics, i.e. the performance does not increase when more data is collected. 2) Planning horizon dilemma: while increasing the planning horizon provides more accurate reward estimation, it can result in performance drops due to the curse of dimensionality and modelling errors. 3) Early termination dilemma: early termination is commonly used in MFRL for more directed exploration, to achieve faster learning. However, similar performance gain are not yet observed in MBRL algorithms, which limits their effectiveness in complex environments."
 
   - <http://www.cs.toronto.edu/~tingwuwang/mbrl.html>
-
-
-#### ["On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models"](http://arxiv.org/abs/1511.09249) Schmidhuber
-  - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#on-learning-to-think-algorithmic-information-theory-for-novel-combinations-of-reinforcement-learning-controllers-and-recurrent-neural-world-models-schmidhuber>
 
 
 #### ["Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model"](https://arxiv.org/abs/1911.08265) Schrittwieser et al.
@@ -3035,7 +3112,10 @@ interesting recent papers:
 
 >	"This paper has five contributions. First, we have shown why Q-learning can be overoptimistic in large-scale problems, even if these are deterministic, due to the inherent estimation errors of learning. Second, by analyzing the value estimates on Atari games we have shown that these overestimations are more common and severe in practice than previously acknowledged. Third, we have shown that Double Q-learning can be used at scale to successfully reduce this overoptimism, resulting in more stable and reliable learning. Fourth, we have proposed a specific implementation called Double DQN, that uses the existing architecture and deep neural network of the DQN algorithm without requiring additional networks or parameters. Finally, we have shown that Double DQN finds better policies, obtaining new state-of-the-art results on the Atari 2600 domain."
 
->	"Single estimator used in the Q-learning update rule over-estimates the expected return due to the use of the maximum action value as an approximation of the maximum expected action value."
+----
+>	"On each step of Q-learning, the agent updates its action value estimates towards the observed reward and the estimated value of the maximal action in the next state. This target represents the highest value the agent thinks it could obtain from the current state and action, given the observed reward. Unfortunately, this simple update rule has been shown to suffer from overestimation bias. The agent updates with the maximum over action values might be large because an action’s value actually is high, or it can be misleadingly high simply because of the stochasticity or errors in the estimator. With many actions, there is a higher probability that one of the estimates is large simply due to stochasticity and the agent will overestimate the value. This issue is particularly problematic under function approximation, and can significantly impede the quality of the learned policy or even lead to failures of Q-learning."
+
+>	"Double Q-learning is introduced to instead ensure underestimation bias. The idea of is to maintain two unbiased independent estimators of the action values. The expected action value of estimator one is selected for the maximal action from estimator two, which is guaranteed not to overestimate the true maximum action value. Double DQN has been shown to significantly improve performance over Q-learning. However, this is not a complete answer to this problem, because trading overestimation bias for underestimation bias is not always desirable."
 
   - `video` <https://youtu.be/qLaDWKd61Ig?t=32m52s> (Silver)
   - `video` <https://youtu.be/fevMOp5TDQs?t=53m42s> (Mnih)
@@ -3535,6 +3615,7 @@ interesting recent papers:
   - `paper` ["Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review"](https://arxiv.org/abs/1805.00909) by Levine ([talk](https://youtu.be/iOYiPhu5GEk?t=2m34s) `video`)
   - `paper` ["Soft Actor-Critic Algorithms and Applications"](https://arxiv.org/abs/1812.05905) by Haarnoja et al. ([notes](https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#sac-with-automatically-adjusted-temperature))
   - `paper` ["Learning to Walk via Deep Reinforcement Learning"](https://arxiv.org/abs/1812.11103) by Haarnoja et al.
+  - `paper` ["Learning to Walk in the Real World with Minimal Human Effort"](https://arxiv.org/abs/2002.08550) by Ha et al.
 
 
 
@@ -3552,6 +3633,7 @@ interesting recent papers:
 ----
 >	"non i.i.d. supervised learning from oracle demonstrations under own state distribution"
 
+  - `video` <https://youtu.be/TUBBIgtQL_k?t=17m26s> + <https://youtu.be/6PYJFUu3eLQ?t=45s >(Levine)
   - `video` <http://videolectures.net/aistats2011_ross_reduction> (Ross)
   - `video` <https://youtube.com/watch?v=ZMhO1FO_j0o> (Ross)
   - `video` <https://youtube.com/watch?v=kl_G95uKTHw&t=1h5m38s> (Levine)

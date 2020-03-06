@@ -299,6 +299,7 @@
 
   - `post` <https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html>
   - `video` <https://youtube.com/watch?v=eKqWC577WlI> (Raffel)
+  - `video` <https://youtube.com/watch?v=zG1MXITBge0> (Bataeva) `in russian`
   - `audio` <https://podtail.com/podcast/data-skeptic/the-limits-of-nlp/> (Raffel)
   - `notes` <https://twitter.com/colinraffel/status/1187161460033458177>
   - `code` <https://github.com/google-research/text-to-text-transfer-transformer>

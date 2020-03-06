@@ -69,19 +69,19 @@
 
 #### courses
 
-  [course](https://youtube.com/playlist?list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN) by Andrew Ng `video`  
+  [course](http://youtube.com/playlist?list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN) by Andrew Ng `video`  
   [course](http://youtube.com/playlist?list=PLE6Wd9FR--Ecf_5nCbnSQMHqORpiChfJf) by Nando de Freitas `video`  
   [course](http://youtube.com/playlist?list=PLE6Wd9FR--EdyJ5lbFl8UuGjecvVw66F6) by Nando de Freitas `video`  
   [course](http://youtube.com/playlist?list=PLTPQEx-31JXgtDaC6-3HxWcp7fq4N8YGr) by Pedro Domingos `video`  
   [course](http://youtube.com/playlist?list=PLZSO_6-bSqHTTV7w9u7grTXBHMH-mw3qn) by Alex Smola `video`  
   [course](http://dataschool.io/15-hours-of-expert-machine-learning-videos/) by Trevor Hastie and Rob Tibshirani `video`  
-  [course](https://youtube.com/playlist?list=PLD0F06AA0D2E8FFBA) by Jeff Miller `video`  
+  [course](http://youtube.com/playlist?list=PLD0F06AA0D2E8FFBA) by Jeff Miller `video`  
 
   [course](http://ciml.info) by Hal Daume
 
   [course](http://coursera.org/specializations/machine-learning-data-analysis) by Yandex `video` `in russian`  
-  [course](https://github.com/Yorko/mlcourse_open) by OpenDataScience `video` `in russian`  
-  [course](https://youtube.com/playlist?list=PLEqoHzpnmTfDwuwrFHWVHdr1-qJsfqCUX) by Evgeny Sokolov `video` `in russian`  
+  [course](http://github.com/Yorko/mlcourse_open) by OpenDataScience `video` `in russian`  
+  [course](http://youtube.com/playlist?list=PLEqoHzpnmTfDwuwrFHWVHdr1-qJsfqCUX) by Evgeny Sokolov `video` `in russian`  
   [course](http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC) by Konstantin Vorontsov `video` `in russian`  
   [course](http://youtube.com/playlist?list=PLlb7e2G7aSpTd91sd82VxWNdtTZ8QnFne) by Igor Kuralenok `video` `in russian`  
   [course](http://youtube.com/playlist?list=PLlb7e2G7aSpSWVExpq74FnwFnWgLby56L) by Igor Kuralenok `video` `in russian`  

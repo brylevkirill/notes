@@ -352,6 +352,9 @@
 
   [overview](https://lilianweng.github.io/lil-log/2019/11/10/self-supervised-learning.html) by Lilian Weng  
   [overview](https://ankeshanand.com/blog/2020/01/26/contrative-self-supervised-learning.html) by Ankesh Anand  
+  [overview](https://amitness.com/2020/02/illustrated-self-supervised-learning) by Amit Chaudhary  
+
+  ["Self-supervised Visual Feature Learning with Deep Neural Networks: A Survey"](https://arxiv.org/abs/1902.06162) by Jing and Tian `paper`
 
 ----
 
@@ -1797,6 +1800,11 @@ Yoshua Bengio:
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#self-supervised-learning)
 
 ----
+####  ["Making the World Differentiable: On Using Self-Supervised Fully Recurrent Neural Networks for Dynamic Reinforcement Learning and Planning in Non-Stationary Environments"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.45.5472) Schmidhuber
+  `1990`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#making-the-world-differentiable-on-using-self-supervised-fully-recurrent-neural-networks-for-dynamic-reinforcement-learning-and-planning-in-non-stationary-environments-schmidhuber>
+
+
 #### ["Revisiting Self-Supervised Visual Representation Learning"](https://arxiv.org/abs/1901.09005) Kolesnikov, Zhai, Beyer
   `representation learning` `self-supervised learning`
 >	"Unsupervised visual representation learning remains a largely unsolved problem in computer vision research. Among a big body of recently proposed approaches for unsupervised learning of visual representations, a class of self-supervised techniques achieves superior performance on many challenging benchmarks. A large number of the pretext tasks for self-supervised learning have been studied, but other important aspects, such as the choice of convolutional neural networks, has not received equal attention. Therefore, we revisit numerous previously proposed self-supervised models, conduct a thorough large scale study and, as a result, uncover multiple crucial insights. We challenge a number of common practices in selfsupervised visual representation learning and observe that standard recipes for CNN design do not always translate to self-supervised representation learning. As part of our study, we drastically boost the performance of previously proposed techniques and outperform previously published state-of-the-art results by a large margin. "
@@ -1835,6 +1843,7 @@ Yoshua Bengio:
   - `paper` ["Probing Neural Network Comprehension of Natural Language Arguments"](https://arxiv.org/abs/1907.07355) by Niven et al. ([post](https://thegradient.pub/nlps-clever-hans-moment-has-arrived) by Benjamin Heinzerling)
   - `paper` ["BERT Rediscovers the Classical NLP Pipeline"](https://arxiv.org/abs/1905.05950) by Tenney et al.
   - `paper` ["XLNet: Generalized Autoregressive Pretraining for Language Understanding"](https://arxiv.org/abs/1906.08237) by Yang et al.
+  - `paper` ["A Primer in BERTology: What We Know About How BERT Works"](https://arxiv.org/abs/2002.12327) by Rogers et al.
 
 
 #### ["Representation Learning with Contrastive Predictive Coding"](https://arxiv.org/abs/1807.03748) Oord, Li, Vinyals
