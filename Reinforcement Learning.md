@@ -601,7 +601,7 @@
 
 
 ----
-#### imitation learning / behavioral cloning
+#### imitation learning
 
   - learn agent's behavior in environment with unknown cost function via imitation of another agent's behavior
   - use expert's demonstrations to alleviate difficulties with exploration, credit assignment and reward design
@@ -620,11 +620,11 @@
   ["Global Overview of Imitation Learning"](https://arxiv.org/abs/1801.06503) by Attia and Dayan `paper`  
   ["Imitation Learning: A Survey of Learning Methods"](https://researchgate.net/publication/312591539_Imitation_Learning_A_Survey_of_Learning_Methods) by Hussein et al. `paper`  
 
-  [**interesting papers**](#interesting-papers---behavioral-cloning)
+  [**interesting papers**](#interesting-papers---imitation-learning)
 
 
 ----
-#### imitation learning / inverse reinforcement learning
+#### inverse reinforcement learning
 
   - infer underlying reward structure guiding agent’s behavior based on observations and model of environment  
   - learn reward structure for modelling purposes or for imitation of another agent's behavior (apprenticeship)  
@@ -632,6 +632,7 @@
   [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/) (part 2, 20:40) by Pieter Abbeel `video`  
   [overview](https://youtube.com/watch?v=d9DlQSJQAoI) by Chelsea Finn `video`  
   [overview](https://youtube.com/watch?v=J2blDuU3X1I) by Chelsea Finn `video`  
+  [overview](https://youtu.be/0DkPUecLLpI?t=17m32s) by Fedor Ratnikov `video` `in russian`  
 
   [tutorial](https://thinkingwires.com/posts/2018-02-13-irl-tutorial-1.html) by Johannes Heidecke
 
@@ -682,14 +683,14 @@
   ["The Promise of Hierarchical Reinforcement Learning"](https://thegradient.pub/the-promise-of-hierarchical-reinforcement-learning/) by Yannis Flet-Berliac  
   ["Learning in Brains and Machines: Synergistic and Modular Action"](http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/) by Shakir Mohamed  
 
-  Options framework:  
+  *Options framework:*  
 	[overview](http://videolectures.net/DLRLsummerschool2018_precup_temporal_abstraction) by Doina Precup `video`  
 	[overview](http://videolectures.net/deeplearning2016_precup_advanced_lr) by Doina Precup `video`  
 	["Temporal Abstraction in Reinforcement Learning"](https://youtube.com/watch?v=GntIVgNKkCI) by Doina Precup `video`  
 	["Advances in Option Construction: The Option-Critic Architecture"](https://youtube.com/watch?v=8r_EoYnPjGk) by Pierre-Luc Bacon `video`  
 	["Progress on Deep Reinforcement Learning with Temporal Abstraction"](https://vimeo.com/249559422) by Doina Precup `video`  
 
-  Feudal framework:  
+  *Feudal framework:*  
 	[overview](https://vimeo.com/249557775) by David Silver `video`  
 
   [overview](https://youtube.com/watch?v=sdBE3P6xL7E) by Petr Kuderov `video` `in russian`
@@ -912,7 +913,7 @@
 
 	> "In the psychology literature, intrinsic motivations refer generally to mechanisms that push organisms to explore their environment. Yet, there are direct variants of previous computational systems that are both simple and correspond intuitively to existing forms of human motivation. For example, a slight mathematical variation of predictive novelty motivation would model a motivation to search for situation which are very predictable, and thus familiar: r(SM(→ t)) = C/Er(t), where C is a constant. It would actually be sound to consider this kind of motivation as intrinsic, in spite of the fact that it will typically not push an organism to explore its environment."
 
-	[**"SMiRL: Surprise Minimizing RL in Dynamic Environments"**](#smirl-surprise-minimizing-rl-in-dynamic-environments-berseth) by Berseth et al. `paper` `summary`  
+	[**"SMiRL: Surprise Minimizing RL in Dynamic Environments"**](#smirl-surprise-minimizing-rl-in-dynamic-environments-berseth-et-al) by Berseth et al. `paper` `summary`  
 	["Information Theoretically Aided Reinforcement Learning for Embodied Agents"](https://arxiv.org/abs/1605.09735) by Montufar et al. `paper`  
 
 
@@ -2710,7 +2711,7 @@ interesting recent papers:
   - `video` <https://youtu.be/qvxgsxQFHgQ?t=59m45s> (Ivanov) `in russian`
   - `video` <https://youtu.be/EMv1AVLOnto?t=19m42s> (Svidchenko) `in russian`
   - `code` <https://github.com/openai/large-scale-curiosity>
-  - `paper` ["Curiosity-driven Exploration by Self-supervised Prediction"](#large-scale-study-of-curiosity-driven-learning-burda-edwards-pathak-storkey-darrell-efros) by Burda et al. `paper` `summary`
+  - `paper` ["Curiosity-driven Exploration by Self-supervised Prediction"](#large-scale-study-of-curiosity-driven-learning-burda-edwards-pathak-storkey-darrell-efros) by Burda et al. `summary`
   - `paper` [**"On Bonus Based Exploration Methods In The Arcade Learning Environment"**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#on-bonus-based-exploration-methods-in-the-arcade-learning-environment-taiga-fedus-machado-courville-bellemare) by Taiga et al. `summary`
 
 
@@ -2970,9 +2971,9 @@ interesting recent papers:
 
 >	"The Predictron is a quite different approach to model-based RL which focuses end-to-end on predicting the value function. The main idea of these methods is to construct an abstract MDP model such that planning in the abstract MDP is equivalent to planning in the real environment. This equivalence is achieved by ensuring value equivalence, i.e. that, starting from the same real state, the cumulative reward of a trajectory through the abstract MDP matches the cumulative reward of a trajectory in the real environment. The Predictron first introduced value equivalent models for predicting value (without actions). Although the underlying model still takes the form of an MDP, there is no requirement for its transition model to match real states in the environment. Instead the MDP model is viewed as a hidden layer of a deep neural network. The unrolled MDP is trained such that the expected cumulative sum of rewards matches the expected value with respect to the real environment, e.g. by temporal-difference learning."
 
->	"- trains deep network to implicitly plan via iterative rollouts"  
->	"- uses implicit environment model which does not capture dynamics"  
->	"- aims at learning Markov reward processes rather than solving Markov decision processes"  
+>	"Trains deep network to implicitly plan via iterative rollouts."  
+>	"Uses implicit environment model which does not capture dynamics."  
+>	"Aims at learning Markov reward process rather than solving MDP."  
 
   - `video` <https://youtube.com/watch?v=BeaLdaN2C3Q> (demo)
   - `video` <https://facebook.com/icml.imls/videos/2366831430268790?t=410> (Silver)
@@ -3001,8 +3002,8 @@ interesting recent papers:
 >	"The value function V_{n}(s') takes the place of the input to the layer, while P(s'|s,a) form the weights of |A| convolution channels. In many tasks of interest such as grid world navigation, P(s'|s,a) reflects the locality of the problem since transitions are only possible to nearby states. This is analogous to the locality of convolutional kernels in standard CNNs, which is useful due to the hierarchical structure in natural images. Due to this connection, value iteration can be performed by a differentiable Value Iteration block that is composed of recursively connecting K such convolutional blocks. One must then choose K in such a way as to ensure convergence while not incurring a high computational cost by setting it to be too large."
 
 ----
->	"trains deep network to implicitly plan via iterative rollouts"  
->	"uses implicit environment model which does not capture dynamics"  
+>	"Trains deep network to implicitly plan via iterative rollouts."  
+>	"Uses implicit environment model which does not capture dynamics."  
 
   - `video` <https://youtu.be/ID150Tl-MMw?t=54m24s> (demo)
   - `video` <https://youtube.com/watch?v=tXBHfbHHlKc> (Tamar) ([slides](http://technion.ac.il/~danielm/icml_slides/Talk7.pdf))
@@ -3013,12 +3014,6 @@ interesting recent papers:
   - `notes` <https://github.com/karpathy/paper-notes/blob/master/vin.md>
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Value_Iteration_Networks.md>
   - `notes` <https://blog.acolyer.org/2017/02/09/value-iteration-networks/>
-  - `code` <https://github.com/avivt/VIN>
-  - `code` <https://github.com/TheAbhiKumar/tensorflow-value-iteration-networks>
-  - `code` <https://github.com/zuoxingdong/VIN_TensorFlow>
-  - `code` <https://github.com/zuoxingdong/VIN_PyTorch_Visdom>
-  - `code` <https://github.com/kentsommer/pytorch-value-iteration-networks>
-  - `code` <https://github.com/onlytailei/Value-Iteration-Networks-PyTorch>
   - `paper` ["Cognitive Mapping and Planning for Visual Navigation"](https://arxiv.org/abs/1702.03920) by Gupta et al.
 
 
@@ -3036,7 +3031,7 @@ interesting recent papers:
   - `post` <https://medium.com/towards-data-science/bayesian-neural-networks-with-random-inputs-for-model-based-reinforcement-learning-36606a9399b4> (Hernandez-Lobato)
   - `video` <https://youtube.com/watch?v=0H3EkUPENSY> (Hernandez-Lobato)
   - `video` <https://youtube.com/watch?v=J4KLWjZ1QVM> (Hernandez-Lobato)
-  - `slides` <https://yadi.sk/i/NCrM4cEb3NhQux>
+  - `video` <https://youtu.be/AKcWQ_9aQSI?t=1h36m10s> (in russian)
   - `code` <https://github.com/siemens/policy_search_bb-alpha>
 
 
@@ -3339,8 +3334,6 @@ interesting recent papers:
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FMnihBMGLHSK16>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/a2c>
   - `code` <https://github.com/ikostrikov/pytorch-a3c>
-  - `code` <https://github.com/higgsfield/RL-Adventure-2>
-  - `code` <https://github.com/dgriff777/a3c_continuous>
 
 
 #### ["Trust Region Policy Optimization"](http://arxiv.org/abs/1502.05477) Schulman, Levine, Moritz, Jordan, Abbeel
@@ -3380,6 +3373,7 @@ interesting recent papers:
   - `video` <https://youtu.be/ycCtmp4hcUs?t=58m53s> (Achiam)
   - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h35m20s> (Sigaud)
   - `video` <https://yadi.sk/i/1oyihBnm3HiKHm> + <https://yadi.sk/i/b0ol2gUV3HiKKJ> (Fritzler and Ratnikov) `in russian` ([slides](https://yadi.sk/i/9j6S4WVp3HgEdn) `in english`)
+  - `video` <https://youtu.be/1slR-rGufmw?t=6m50s> (Grishin) `in russian`
   - `post` <http://depthfirstlearning.com/2018/TRPO>
   - `post` <https://towardsdatascience.com/the-pursuit-of-robotic-happiness-how-trpo-and-ppo-stabilize-policy-gradient-methods-545784094e3b>
   - `post` <http://kvfrans.com/what-is-the-natural-gradient-and-where-does-it-appear-in-trust-region-policy-optimization/>
@@ -3405,7 +3399,6 @@ interesting recent papers:
   - `post` <https://danieltakeshi.github.io/2017/04/02/notes-on-the-generalized-advantage-estimation-paper/>
   - `code` <https://github.com/joschu/modular_rl>
   - `code` <https://github.com/rll/deeprlhw2/blob/master/ppo.py>
-  - `code` <https://github.com/higgsfield/RL-Adventure-2>
 
 
 #### ["Proximal Policy Optimization Algorithms"](https://arxiv.org/abs/1707.06347) Schulman, Wolski, Dhariwal, Radford, Klimov
@@ -3422,6 +3415,7 @@ interesting recent papers:
   - `video` <https://youtu.be/ycCtmp4hcUs?t=1h7m> (Achiam)
   - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h44m24s> (Sigaud)
   - `video` <https://youtube.com/watch?v=5P7I-xPq8u8> (Steenbrugge)
+  - `video` <https://youtu.be/1slR-rGufmw?t=53m26s> (Grishin) `in russian`
   - `post` <https://learningai.io/projects/2017/07/28/ai-gym-workout.html>
   - `notes` <https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#ppo>
   - `notes` <https://towardsdatascience.com/introduction-to-various-reinforcement-learning-algorithms-part-ii-trpo-ppo-87f2c5919bb9>
@@ -3481,7 +3475,6 @@ interesting recent papers:
   - `code` <https://github.com/openai/baselines/tree/master/baselines/ddpg>
   - `code` <https://github.com/vitchyr/rlkit>
   - `code` <https://github.com/ikostrikov/pytorch-ddpg-naf>
-  - `code` <https://github.com/higgsfield/RL-Adventure-2>
   - `code` <https://github.com/Scitator/Run-Skeleton-Run> (demo)
   - `paper` [**"Deterministic Policy Gradient Algorithms"**](#deterministic-policy-gradient-algorithms-silver-lever-heess-degris-wierstra-riedmiller) by Silver et al. `summary`
 
@@ -3604,6 +3597,7 @@ interesting recent papers:
   - `video` <https://youtu.be/IAJ1LywY6Zg?t=21m4s> (Levine)
   - `video` <https://youtu.be/jAPJeJK18mw?t=24m45s> (Levine)
   - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h51m28s> (Sigaud)
+  - `video` <https://youtube.com/watch?v=IgNC1J25Ls8> (Grinchuk) `in russian`
   - `video` <https://youtube.com/watch?v=NiTJOw1aST4> (Grinchuk) `in russian`
   - `post` <https://spinningup.openai.com/en/latest/algorithms/sac.html>
   - `notes` <https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#sac>
@@ -3611,7 +3605,6 @@ interesting recent papers:
   - `code` <https://github.com/rail-berkeley/softlearning>
   - `code` <https://github.com/vitchyr/rlkit>
   - `code` <https://github.com/haarnoja/sac>
-  - `code` <https://github.com/higgsfield/RL-Adventure-2>
   - `paper` ["Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review"](https://arxiv.org/abs/1805.00909) by Levine ([talk](https://youtu.be/iOYiPhu5GEk?t=2m34s) `video`)
   - `paper` ["Soft Actor-Critic Algorithms and Applications"](https://arxiv.org/abs/1812.05905) by Haarnoja et al. ([notes](https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#sac-with-automatically-adjusted-temperature))
   - `paper` ["Learning to Walk via Deep Reinforcement Learning"](https://arxiv.org/abs/1812.11103) by Haarnoja et al.
@@ -3620,23 +3613,29 @@ interesting recent papers:
 
 
 ---
-### interesting papers - behavioral cloning
+### interesting papers - imitation learning
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---imitation) on imitation learning
 
+[papers](https://github.com/kristery/Awesome-Imitation-Learning)
+
 ----
 #### ["A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning"](https://arxiv.org/abs/1011.0686) Ross, Gordon, Bagnell
+  `DAGGER`
 >	"Sequential prediction problems such as imitation learning, where future observations depend on previous predictions (actions), violate the common i.i.d. assumptions made in statistical learning. This leads to poor performance in theory and often in practice. Some recent approaches (Daumé III et al., 2009; Ross and Bagnell, 2010) provide stronger guarantees in this setting, but remain somewhat unsatisfactory as they train either non-stationary or stochastic policies and require a large number of iterations. In this paper, we propose a new iterative algorithm, which trains a stationary deterministic policy, that can be seen as a no regret algorithm in an online learning setting. We show that any such no regret algorithm, combined with additional reduction assumptions, must find a policy with good performance under the distribution of observations it induces in such sequential settings. We demonstrate that this new approach outperforms previous approaches on two challenging imitation learning problems and a benchmark sequence labeling problem."
 
 >	"We show that by batching over iterations of interaction with a system, no-regret methods, including the presented DAGGER approach can provide a learning reduction with strong performance guarantees in both imitation learning and structured prediction. In future work, we will consider more sophisticated strategies than simple greedy forward decoding for structured prediction, as well as using base classifiers that rely on Inverse Optimal Control (Abbeel and Ng, 2004; Ratliff et al., 2006) techniques to learn a cost function for a planner to aid prediction in imitation learning. Further we believe techniques similar to those presented, by leveraging a cost-to-go estimate, may provide an understanding of the success of online methods for reinforcement learning and suggest a similar data-aggregation method that can guarantee performance in such settings."
 
 ----
+>	DAGGER = Dataset Aggregation
+
 >	"non i.i.d. supervised learning from oracle demonstrations under own state distribution"
 
-  - `video` <https://youtu.be/TUBBIgtQL_k?t=17m26s> + <https://youtu.be/6PYJFUu3eLQ?t=45s >(Levine)
+  - `video` <https://youtu.be/TUBBIgtQL_k?t=17m26s> + <https://youtu.be/6PYJFUu3eLQ?t=45s> (Levine)
+  - `video` <https://youtu.be/kl_G95uKTHw?t=1h5m38s> (Levine)
   - `video` <http://videolectures.net/aistats2011_ross_reduction> (Ross)
   - `video` <https://youtube.com/watch?v=ZMhO1FO_j0o> (Ross)
-  - `video` <https://youtube.com/watch?v=kl_G95uKTHw&t=1h5m38s> (Levine)
+  - `video` <https://youtu.be/0DkPUecLLpI?t=35s> (Ratnikov) `in russian`
   - `paper` <http://ciml.info/dl/v0_99/ciml-v0_99-ch18.pdf> (Daume)
   - `paper` ["Deeply AggreVaTeD: Differentiable Imitation Learning for Sequential Prediction"](https://arxiv.org/abs/1703.01030) by Sun et al.
 
@@ -3733,6 +3732,7 @@ interesting recent papers:
   - `video` <http://techtalks.tv/talks/guided-cost-learning-deep-inverse-optimal-control-via-policy-optimization/62472/> (Finn)
   - `video` <https://youtu.be/d9DlQSJQAoI?t=18m17s> (Finn)
   - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-3> (22:48) (Levine)
+  - `video` <https://youtu.be/0DkPUecLLpI?t=17m32s> (Ratnikov) `in russian`
 
 
 #### ["Model-Free Imitation Learning with Policy Optimization"](http://arxiv.org/abs/1605.08478) Ho, Gupta, Ermon
@@ -3757,8 +3757,6 @@ interesting recent papers:
   - `notes` <http://tsong.me/blog/gail/>
   - `notes` <https://yobibyte.github.io/files/paper_notes/Generative_Adversarial_Imitation_Learning__Ho_Ermon__2017.pdf>
   - `code` <https://github.com/openai/imitation>
-  - `code` <https://github.com/higgsfield/RL-Adventure-2>
-  - `code` <https://github.com/DanielTakeshi/rl_algorithms>
 
 
 #### ["Inferring The Latent Structure of Human Decision-Making from Raw Visual Inputs"](https://arxiv.org/abs/1703.08840) Li, Song, Ermon
@@ -3771,4 +3769,16 @@ interesting recent papers:
 
   - `video` <https://youtube.com/watch?v=YtNPBAW6h5k> (demo)
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Inferring_The_Latent_Structure_of_Human_Decision-Making_from_Raw_Visual_Inputs.md>
-  - `code` <https://github.com/YunzhuLi/InfoGAIL>
+
+
+#### ["Deep Reinforcement Learning from Human Preferences"](https://arxiv.org/abs/1706.03741) Christiano, Leike, Brown, Martic, Legg, Amodei
+>	"For sophisticated reinforcement learning systems to interact usefully with real-world environments, we need to communicate complex goals to these systems. In this work, we explore goals defined in terms of (non-expert) human preferences between pairs of trajectory segments. We show that this approach can effectively solve complex RL tasks without access to the reward function, including Atari games and simulated robot locomotion, while providing feedback on less than one percent of our agent's interactions with the environment. This reduces the cost of human oversight far enough that it can be practically applied to state-of-the-art RL systems. To demonstrate the flexibility of our approach, we show that we can successfully train complex novel behaviors with about an hour of human time. These behaviors and environments are considerably more complex than any that have been previously learned from human feedback."
+
+----
+>	"Algorithm provides two possible solutions for task to human who indicates which one is better. The process is repeated and the algorithm learns from 900 bits of feedback how to solve the problem."
+
+  - `post` <https://blog.openai.com/deep-reinforcement-learning-from-human-preferences/>
+  - `post` <https://deepmind.com/blog/learning-through-human-feedback/>
+  - `video` <https://youtu.be/0DkPUecLLpI?t=48m58s> (Ratnikov) `in russian`
+  - `video` <https://youtube.com/watch?v=DekQm9pBbOE> (Shavkunov) `in russian`
+  - `video` <https://youtube.com/watch?v=6h3_lTDFMb0> (Yagudin) `in russian`

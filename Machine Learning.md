@@ -124,6 +124,13 @@
   <http://lilianweng.github.io>  
 
 
+#### podcasts
+
+  <https://twimlai.com>
+  <https://thetalkingmachines.com>
+  <https://lexfridman.com/ai>
+
+
 #### news and discussions
 
   <https://jack-clark.net/import-ai>  

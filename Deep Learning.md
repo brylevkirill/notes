@@ -13,12 +13,12 @@
     - [**autoregressive models**](#generative-models---autoregressive-models)
     - [**flow models**](#generative-models---flow-models)
   * [**architectures**](#architectures)
+    - [**stochastic computation graph**](#architectures---stochastic-computation-graph)
     - [**convolutional neural network**](#architectures---convolutional-neural-network)
     - [**recurrent neural network**](#architectures---recurrent-neural-network)
     - [**attention**](#architectures---attention)
     - [**compute and memory**](#architectures---compute-and-memory)
     - [**distributed representation**](#architectures---distributed-representation)
-    - [**stochastic computation graph**](#architectures---stochastic-computation-graph)
   * [**interesting papers**](#interesting-papers)
     - [**theory**](#interesting-papers---theory)
     - [**gradient estimation**](#interesting-papers---gradient-estimation)
@@ -720,7 +720,8 @@
 
 ----
 
-  ["Stochastic Computation Graphs"](https://youtube.com/watch?v=_JTu50iDhkA) by Artem Sobolev ([slides](http://slides.com/asobolev/stochastic-computation-graphs#/))  
+  ["Stochastic Computation Graphs"](https://youtube.com/watch?v=_JTu50iDhkA) by Artem Sobolev `video` ([slides](http://slides.com/asobolev/stochastic-computation-graphs#/))  
+  ["Stochastic Computation Graphs"](https://youtu.be/RbLDBkcJcpA?t=54m20s) by Artem Sobolev `video` `in russian`  
   ["Reparametrization Trick: Revolution in Stochastic Computational Graphs"](https://youtu.be/0q5p7xP4cdA?t=5h3m29s)
 	by Dmitry Vetrov `video` `in russian` ([slides](https://sdsj.ru/slides/Vetrov.pdf) `in english`)  
 
@@ -750,19 +751,23 @@
 ---
 ### architectures - graph neural network
 
-  ["Graph Neural Networks: Variations and Applications](https://youtube.com/watch?v=cWIeTMklzNg) by Alexander Gaunt `video`  
-  ["Convolutional Neural Networks on Graphs"](https://youtube.com/watch?v=v3jZRkvIOIM) by Xavier Bresson `video`  
-  ["Large-scale Graph Representation Learning"](https://youtube.com/watch?v=oQL4E1gK3VU) by Jure Leskovec `video`  
-
   ["Graph Convolutional Networks"](https://tkipf.github.io/graph-convolutional-networks) by Thomas Kipf
+
+----
 
   <http://geometricdeeplearning.com>
 
-  ["Geometric Deep Learning"](https://vimeo.com/248497329) tutorial by Bronstein, Bruna, Szlam, Bresson, LeCun `video`  
+  ["Geometric Deep Learning: Going beyond Euclidean Data"](https://arxiv.org/abs/1611.08097) by Bronstein, Bruna, LeCun, Szlam, Vandergheynst `paper`
+
+  ["Geometric Deep Learning"](https://vimeo.com/248497329) by Bronstein, Bruna, Szlam, Bresson, LeCun `video`  
   ["Geometric Deep Learning"](https://youtube.com/watch?v=ptcBmEHDWds) by Michael Bronstein `video`  
   ["Geometric Deep Learning"](https://youtube.com/watch?v=Qtgep2CEExY) by Joan Bruna and Michael Bronstein `audio`  
 
-  ["Geometric Deep Learning: Going beyond Euclidean Data"](https://arxiv.org/abs/1611.08097) by Bronstein, Bruna, LeCun, Szlam, Vandergheynst `paper`
+----
+
+  ["Graph Neural Networks: Variations and Applications](https://youtube.com/watch?v=cWIeTMklzNg) by Alexander Gaunt `video`  
+  ["Convolutional Neural Networks on Graphs"](https://youtube.com/watch?v=v3jZRkvIOIM) by Xavier Bresson `video`  
+  ["Large-scale Graph Representation Learning"](https://youtube.com/watch?v=oQL4E1gK3VU) by Jure Leskovec `video`  
 
 
 
@@ -816,17 +821,21 @@
 
 ----
 
-  [**"Attention Is All You Need"**](#attention-is-all-you-need-vaswani-et-al) by Vaswani et al. `paper` `summary` *(Transformer)*
+  **Transformer**
 
-  [overview](https://youtube.com/watch?v=bYmeuc5voUQ) of Transformer by Ashish Vaswani `video`
+  [overview](https://youtube.com/watch?v=bYmeuc5voUQ) by Ashish Vaswani `video`
+
+  [**"Attention Is All You Need"**](#attention-is-all-you-need-vaswani-et-al) by Vaswani et al. `paper` `summary`
 
 ----
 
-  [**"Stacked Capsule Autoencoders"**](#stacked-capsule-autoencoders-kosiorek-sabour-teh-hinton) by Kosiorek et al. `paper` `summary` *(Capsule Network)*  
-  [**"Matrix Capsules with EM Routing"**](#matrix-capsules-with-em-routing-hinton-sabour-frosst) by Hinton et al. `paper` `summary` *(Capsule Network)*  
-  [**"Dynamic Routing Between Capsules"**](#dynamic-routing-between-capsules-sabour-frosst-hinton) by Hinton et al. `paper` `summary` *(Capsule Network)*  
+  **Capsule Network**
 
-  [overview](https://youtube.com/watch?v=x5Vxk9twXlE) of Capsule Network by Geoffrey Hinton `video`
+  [overview](https://youtube.com/watch?v=x5Vxk9twXlE) by Geoffrey Hinton `video`
+
+  [**"Stacked Capsule Autoencoders"**](#stacked-capsule-autoencoders-kosiorek-sabour-teh-hinton) by Kosiorek et al. `paper` `summary`  
+  [**"Matrix Capsules with EM Routing"**](#matrix-capsules-with-em-routing-hinton-sabour-frosst) by Hinton et al. `paper` `summary`  
+  [**"Dynamic Routing Between Capsules"**](#dynamic-routing-between-capsules-sabour-frosst-hinton) by Hinton et al. `paper` `summary`  
 
 ----
 
@@ -874,13 +883,12 @@
 
 ----
 
-  - [**Pointer Networks**](#vinyals-fortunato-jaitly---pointer-networks)  
-  - [**Grid LSTM**](#kalchbrenner-danihelka-graves---grid-long-short-term-memory)  
-  - [**Neural GPU**](#kaiser-sutskever---neural-gpus-learn-algorithms)  
-  - [**Memory Networks**](#sukhbaatar-szlam-weston-fergus---end-to-end-memory-networks)  
-  - [**Neural Stacks/Queues**](#grefenstette-hermann-suleyman-blunsom---learning-to-transduce-with-unbounded-memory)  
-  - [**Neural Turing Machine**](#graves-wayne-danihelka---neural-turing-machines)  
-  - [**Differentiable Neural Computer**](#graves-et-al---hybrid-computing-using-a-neural-network-with-dynamic-external-memory)  
+  - [**Pointer Networks**](#pointer-networks-vinyals-fortunato-jaitly)  
+  - [**Memory Networks**](#end-to-end-memory-networks-sukhbaatar-szlam-weston-fergus)  
+  - [**Neural Stacks/Queues**](#learning-to-transduce-with-unbounded-memory-grefenstette-hermann-suleyman-blunsom)  
+  - [**Neural GPU**](#neural-gpus-learn-algorithms-kaiser-sutskever)  
+  - [**Neural Turing Machine**](#neural-turing-machines-graves-wayne-danihelka)  
+  - [**Differentiable Neural Computer**](#hybrid-computing-using-a-neural-network-with-dynamic-external-memory-graves-et-al)  
 
 
 
@@ -904,12 +912,12 @@
 
 
   ["Aetherial Symbols"](https://drive.google.com/file/d/0B8i61jl8OE3XdHRCSkV1VFNqTWc) by Geoffrey Hinton `slides`  
-> - words are the symbolic indicators of thought vectors
-> - words carry with each a probabilistic stream of potential further thoughts and links to past symbols
-> - much like implicit CFD, they are backward convolved with prior words to determine most likely hidden thought, and then forward solved to determine next word
-> - further, these streams are described with formal logic relationships based on the identities of the included words which can have levels of "meta-identity" (ie: I can't know some pair are brother and sister without having having been given the idea of bros/sis pairs or seen others)
-> - knowledge of more or varied relationships (and more logic paths) provides more efficient/accurate ways to solve an optimized path through the higher dimensions of word/symbol space
-> - in a sense, one may never know the idea of "bros/sis" but it is probabilistically highly likely that given a male and female with the same parents that they are also brothers/sisters
+  > - words are the symbolic indicators of thought vectors  
+  > - words carry with each a probabilistic stream of potential further thoughts and links to past symbols  
+  > - much like implicit CFD, they are backward convolved with prior words to determine most likely hidden thought, and then forward solved to determine next word  
+  > - further, these streams are described with formal logic relationships based on the identities of the included words which can have levels of "meta-identity" (ie: I can't know some pair are brother and sister without having having been given the idea of bros/sis pairs or seen others)  
+  > - knowledge of more or varied relationships (and more logic paths) provides more efficient/accurate ways to solve an optimized path through the higher dimensions of word/symbol space  
+  > - in a sense, one may never know the idea of "bros/sis" but it is probabilistically highly likely that given a male and female with the same parents that they are also brothers/sisters  
 
   ["Deep Meaning Beyond Thought Vectors"](https://machinethoughts.wordpress.com/2017/09/01/deep-meaning-beyond-thought-vectors/) by David McAllester
 
@@ -1522,7 +1530,7 @@ Yoshua Bengio:
   - `notes` <http://tuananhle.co.uk/notes/rebar-relax.html>
   - `code` <https://github.com/duvenaud/relax>
   - `code` <https://github.com/Bonnevie/rebar>
-  - `paper` ["Action-depedent Control Variates for Policy Optimization via Stein's Identity"](https://arxiv.org/abs/1710.11198) by Liu et al. ([talk](https://vimeo.com/252186257) `video`)
+  - `paper` ["Action-depedent Control Variates for Policy Optimization via Stein's Identity"](https://arxiv.org/abs/1710.11198) by Liu et al. ([talk](https://vimeo.com/252186257) `video`, [overview](https://youtube.com/watch?v=XtSr_-eBXsY) `video` `in russian`)
 
 
 #### ["DiCE: The Infinitely Differentiable Monte Carlo Estimator"](https://arxiv.org/abs/1802.05098) Foerster, Farquhar, Al-Shedivat, Rocktaschel, Xing, Whiteson
@@ -2278,6 +2286,7 @@ Yoshua Bengio:
 
 >	"The core of the DRAW architecture is a pair of recurrent neural networks: an encoder network that compresses the real images presented during training, and a decoder that reconstitutes images after receiving codes. The combined system is trained end-to-end with stochastic gradient descent, where the loss function is a variational upper bound on the log-likelihood of the data. It therefore belongs to the family of variational auto-encoders, a recently emerged hybrid of deep learning and variational inference that has led to significant advances in generative modelling. Where DRAW differs from its siblings is that, rather than generating images in a single pass, it iteratively constructs scenes through an accumulation of modifications emitted by the decoder, each of which is observed by the encoder."
 
+----
 >	"An obvious correlate of generating images step by step is the ability to selectively attend to parts of the scene while ignoring others. A wealth of results in the past few years suggest that visual structure can be better captured by a sequence of partial glimpses, or foveations, than by a single sweep through the entire image. The main challenge faced by sequential attention models is learning where to look, which can be addressed with reinforcement learning techniques such as policy gradients. The attention model in DRAW, however, is fully differentiable, making it possible to train with standard backpropagation. In this sense it resembles the selective read and write operations developed for the Neural Turing Machine."
 
 >	"We also established that the two-dimensional differentiable attention mechanism embedded in DRAW is beneficial not only to image generation, but also to cluttered image classification."
@@ -2340,7 +2349,7 @@ Yoshua Bengio:
 
 ----
 #### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani et al.
-  `Transformer`
+  `Transformer` `NIPS 2017`
 >	"The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.0 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data."
 
 >	"- constant path length between any two input positions  
@@ -2407,7 +2416,6 @@ Yoshua Bengio:
   - `notes` <https://medium.com/@sharaf/a-paper-a-day-24-attention-is-all-you-need-26eb2da90a91>
   - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/transformer.py>
   - `code` <https://colab.research.google.com/notebook#fileId=/v2/external/notebooks/t2t/hello_t2t.ipynb>
-  - `code` <https://github.com/jadore801120/attention-is-all-you-need-pytorch>
   - `paper` [**"Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#exploring-the-limits-of-transfer-learning-with-a-unified-text-to-text-transformer-raffel-et-al) by Raffel et al. `summary`
   - `paper` [**"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"**](#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-devlin-chang-lee-toutanova) by Devlin et al. `summary`
   - `paper` [**"Language Models are Unsupervised Multitask Learners"**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#language-models-are-unsupervised-multitask-learners-radford-wu-child-luan-amodei-sutskever) by Radford et al. `summary`
@@ -2581,12 +2589,11 @@ Yoshua Bengio:
   - `post` <http://people.idsia.ch/~rupesh/very_deep_learning/>
   - `video` <http://research.microsoft.com/apps/video/default.aspx?id=259633> (9:00) (Srivastava)
   - `post` <https://medium.com/jim-fleming/highway-networks-with-tensorflow-1e6dfa667daa>
-  - `code` <https://theneuralperspective.com/2016/12/13/highway-networks/>
-  - `code` <https://github.com/LeavesBreathe/tensorflow_with_latest_papers/blob/master/highway_network_modern.py>
+  - `notes` <https://en.wikipedia.org/wiki/Highway_network>
 
 
 #### ["Deep Residual Learning for Image Recognition"](http://arxiv.org/abs/1512.03385) He, Zhang, Ren, Sun
-  `ResNet`
+  `ResNet` `CVPR 2016`
 >	"Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers---8x deeper than VGG nets but still having lower complexity. An ensemble of these residual nets achieves 3.57% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28% relative improvement on the COCO object detection dataset. Deep residual nets are foundations of our submissions to ILSVRC & COCO 2015 competitions, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation."
 
 ----

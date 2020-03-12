@@ -1996,7 +1996,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/bsuvM1jO-4w?t=4m45s> (Mnih)
   - `video` <https://youtube.com/watch?v=LzIWBb2FhZU> (Grishin)
   - `video` <https://youtu.be/fnwo3GCmyEo?t=6m45s> (Fritzler) `in russian`
-  - `video` <https://youtu.be/5REJGbNu-Kk?t=11m45s> (Grinchuk) `in russian`
+  - `video` <https://youtu.be/5REJGbNu-Kk?t=11m45s> + <https://youtube.com/watch?v=RbLDBkcJcpA> (Hrinchuk) `in russian`
   - `post` <https://mtomassoli.github.io/2017/12/08/distributional_rl/>
   - `post` <https://flyyufelix.github.io/2017/10/24/distributional-bellman.html>
   - `code` <https://github.com/higgsfield/RL-Adventure>
@@ -2056,6 +2056,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"SIL outperforms existing count-based exploration methods on several Atari games. Random exploration is enough to gather useful experiences on many hard exploration games but it is important to exploit them to learn a good policy. Advanced exploration method is still necessary in extremely sparse reward environments."  
 >	"SIL improves the performance of PPO on MuJoCo continuous control tasks, demonstrating that SIL may be generally applicable to any actor-critic architecture."  
   - `video` <https://facebook.com/icml.imls/videos/432572773923910?t=3600> (Oh)
+  - `video` <https://youtu.be/0DkPUecLLpI?t=56m37s> (Ratnikov) `in russian`
   - `notes` <https://medium.com/intelligentunit/paper-notes-2-self-imitation-learning-b3a0fbdee351>
   - `code` <https://github.com/junhyukoh/self-imitation-learning>
 
@@ -2224,6 +2225,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `notes` <https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#impala>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1802.01561>
   - `code` <https://github.com/deepmind/scalable_agent>
+  - `paper` ["Self-Tuning Deep Reinforcement Learning"](https://arxiv.org/abs/2002.12928) by Zahavy et al.
 
 #### ["The Intentional Unintentional Agent: Learning to Solve Many Continuous Control Tasks Simultaneously"](https://arxiv.org/abs/1707.03300) Cabi, Colmenarejo, Hoffman, Denil, Wang, de Freitas
   `IUA` `policy gradient` `on-policy + off-policy` `multi-task`
@@ -2286,8 +2288,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `notes` <https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#acer>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2FWangBHMMKF16>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/acer>
-  - `code` <https://github.com/higgsfield/RL-Adventure-2>
-  - `code` <https://github.com/hercky/ACER_tf>
   - `code` <https://github.com/Kaixhin/ACER>
 
 ----
@@ -2331,6 +2331,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://sites.google.com/view/drl-in-a-handful-of-trials>
   - `video` <https://youtube.com/watch?v=pq8xNCETPHU> (Chua)
   - `video` <https://slideslive.com/38915863/learning-models-for-representations-and-planning?t=737> (Lillicrap)
+  - `video` <https://youtube.com/watch?v=JU-6x_E__5I> (Temirchev) `in russian`
 
 #### ["Neural Network Dynamics for Model-Based Deep Reinforcement Learning with Model-Free Fine-Tuning"](https://arxiv.org/abs/1708.02596) Nagabandi, Kahn, Fearing, Levine
   `MB-MF` `planning` `using available environment model`
@@ -2342,27 +2343,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://vimeo.com/252186751> (Nagabandi)
   - `code` <https://github.com/nagaban2/nn_dynamics>
 
-#### ["Blazing the Trails before Beating the Path: Sample-efficient Monte-Carlo Planning"](https://papers.nips.cc/paper/6253-blazing-the-trails-before-beating-the-path-sample-efficient-monte-carlo-planning.pdf) Grill, Valko, Munos
-  `planning` `using available environment model`
->	"We study the sampling-based planning problem in Markov decision processes that we can access only through a generative model, usually referred to as Monte-Carlo planning."  
->	"Our objective is to return a good estimate of the optimal value function at any state while minimizing the number of calls to the generative model, i.e. the sample complexity."  
->	"TrailBlazer is an adaptive algorithm that exploits possible structures of the MDP by exploring only a subset of states reachable by following near-optimal policies."  
-  - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Blazing-the-trails-before-beating-the-path-Sample-efficient-Monte-Carlo-planning> (Grill)
-
 ----
 #### ["Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model"](https://arxiv.org/abs/1911.08265) Schrittwieser et al.
   `MuZero` `learning from planning` `learning abstract environment model` `expert iteration`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#mastering-atari-go-chess-and-shogi-by-planning-with-a-learned-model-schrittwieser-et-al>
-
-#### ["Understanding and Generalizing AlphaGo Zero"](https://openreview.net/forum?id=rkxtl3C5YX) Addanki et al.
-  `learning from planning` `using available environment model` `expert iteration`
->	"We provide a formal framework to study AGZ. We argue that the self-play in AGZ corresponds to learning a Nash equilibrium for the two-player game; and the supervised learning with MCTS is attempting to learn the policy corresponding to the Nash equilibrium, by establishing a novel bound on the difference between the expected return achieved by two policies in terms of the expected KL divergence (cross-entropy) of their induced distributions."  
->	"To extend AGZ to generic sequential decision-making problems, we introduce a robust MDP framework, in which the agent and nature effectively play a zero-sum game: the agent aims to take actions to maximize reward while nature seeks state transitions, subject to the constraints of that environment, that minimize the agent’s reward. For a challenging network scheduling domain, we find that AGZ within the robust MDP framework provides near-optimal performance, matching one of the best known scheduling policies that has taken the networking community three decades of intensive research to develop."  
->	"The questions. We are interested in three key unanswered questions about AGZ:  
->	Question 1. What is the optimal policy that AGZ is trying to learn? We would like a formal model to understand how learning via self-play impacts the policy to which AGZ converges.  
->	Question 2. Why is minimizing cross-entropy (or KL divergence) the right objective? We seek to precisely characterize the distribution under which cross-entropy should be evaluated, and derive quantitative performance guarantees that explain what optimizing for this metric achieves.  
->	Question 3. How does AGZ extend to generic sequential decision-making problems? In generic sequential decision-making, the agent chooses actions and earns rewards while the state evolves per the environment. This is different from two-player zero-sum games for which AGZ was designed."  
->	"The main result of the paper is that the policy learned by AGZ corresponds to a Nash equilibrium, that and that the cross-entropy minimization in the supervised learning-inspired part of the algorithm converges to this Nash equillibrium, proves a bound on the expected returns of two policies under the and introduces a "robust MDP" view of a 2 player zero-sum game played between the agent and nature."
 
 #### ["Dual Policy Iteration"](https://arxiv.org/abs/1805.10755) Sun, Gordon, Boots, Bagnell
   `learning from planning` `using available environment model` `expert iteration`
@@ -2428,6 +2412,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747?t=1107> (Weber)
   - `video` <https://youtu.be/bsuvM1jO-4w?t=39m27s> (Mnih)
   - `video` <https://youtube.com/watch?v=agXIYMCICcc> (Kilcher)
+  - `video` <https://youtu.be/aUs0YOQJjEM?t=3m38s> (Konobeev) `in russian`
   - `slides` <https://mltrain.cc/wp-content/uploads/2017/10/sebastien-racaniere.pdf>
   - `code` <https://github.com/vasiloglou/mltrain-nips-2017/blob/master/sebastien_racaniere/I2A%20-%20NIPS%20workshop.ipynb>
 
@@ -2543,7 +2528,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 ----
 #### ["Model Based Reinforcement Learning for Atari"](https://arxiv.org/abs/1903.00374) Kaiser et al.
-  `SimPLe` `learning to simulate` `learning environment model` `video prediction`
+  `SimPLe` `learning to simulate` `learning environment model` `video prediction` `ICLR 2020`
 >	"Simulated Policy Learning, a complete model-based deep RL algorithm based on video prediction models."  
 >	"SimPLe consists of alternating between learning a model, and then using this model to optimize a policy by using model-free reinforcement learning within the model. Variants of this basic algorithm have been proposed in a number of prior works, starting from Dyna."  
 >	"SimPLe can learn to play many of the games with just 100K transitions, corresponding to 2 hours of play time. In many cases, the number of samples required for prior methods to learn to reach the same reward value is several times larger."  
@@ -2551,6 +2536,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"The performance of our method generally varied substantially between different runs on the same game. The complex interactions between the model, policy, and data collection were likely responsible for this: at a fundamental level, the model makes guesses when it extrapolates the behavior of the game under a new policy. When these guesses are correct, the resulting policy performs well in the final game. In future work, models that capture uncertainty via Bayesian parameter posteriors or ensembles may further improve robustness."  
   - <https://sites.google.com/view/modelbasedrlatari>
   - `video` <https://facebook.com/icml.imls/videos/2366831430268790?t=2893> (Kaiser)
+  - `video` <https://youtube.com/watch?v=EQd_k8c4ucI> (Philippov) `in russian`
   - `notes` <https://medium.com/arxiv-bytes/summary-simple-ae74ae934c4a>
 
 #### ["Learning Latent Dynamics for Planning from Pixels"](https://arxiv.org/abs/1811.04551) Hafner et al.
@@ -2591,6 +2577,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `ME-TRPO` `learning to simulate` `learning environment model` `ICLR 2018`
 >	"We analyze the behavior of vanilla model-based reinforcement learning methods when deep neural networks are used to learn both the model and the policy, and show that the learned policy tends to exploit regions where insufficient data is available for the model to be learned, causing instability in training. To overcome this issue, we propose to use an ensemble of models to maintain the model uncertainty and regularize the learning process. We further show that the use of likelihood ratio derivatives yields much more stable learning than backpropagation through time. Altogether, our approach Model-Ensemble Trust-Region Policy Optimization significantly reduces the sample complexity compared to model-free deep RL methods on challenging continuous control benchmark tasks."  
 >	"The dynamics model maintains uncertainty due to limited data through an ensemble of models. The algorithm alternates among adding transitions to a replay buffer, optimizing the dynamics models given the buffer, and optimizing the policy given the dynamics models in Dyna's style. This algorithm significantly helps alleviating the model bias problem in model-based RL, when the policy exploits the error in the dynamics model. In many Mujoco domains, we show that it can achieve the same final performance as model-free approaches while using 100x less data."  
+  - `video` <https://youtube.com/watch?v=nDsDzADmSzk> (Temirchev) `in russian`
   - `code` <https://github.com/thanard/me-trpo>
 
 #### ["Stochastic Variational Video Prediction"](https://arxiv.org/abs/1710.11252) Babaeizadeh, Finn, Erhan, Campbell, Levine
@@ -3039,6 +3026,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://sites.google.com/view/latent-space-deep-rl> (demo)
   - `video` <https://facebook.com/icml.imls/videos/429761510871703?t=4970> (Haarnoja)
   - `video` <https://youtu.be/IAJ1LywY6Zg?t=25m55s> (Levine)
+  - `video` <https://youtu.be/IgNC1J25Ls8?t=56m39s> (Hrinchuk) `in russian`
   - `code` <https://github.com/haarnoja/sac/blob/master/sac/policies/latent_space_policy.py>
 
 #### ["Learning to Compose Skills"](https://arxiv.org/abs/1711.11289) Sahni, Kumar, Tejani, Isbell
@@ -3162,6 +3150,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://vimeo.com/237274156> (Higgins)
   - `video` <https://youtu.be/XNGo9xqpgMo?t=16m46s> (Higgins)
   - `video` <https://youtu.be/Yvll3P1UW5k?t=1h7m18s> (Abbeel)
+  - `video` <https://youtube.com/watch?v=FQSPkCMtDyY> (Grishin) `in russian`
 
 #### ["Robust and Efficient Transfer Learning with Hidden Parameter Markov Decision Processes"](https://arxiv.org/abs/1706.06544) Killian, Daulton, Konidaris, Doshi-Velez
   `semantic representation`
@@ -3256,19 +3245,13 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 ---
 ### reinforcement learning - imitation
 
-[**interesting older papers - behavioral cloning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---behavioral-cloning)  
+[**interesting older papers - behavioral cloning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---imitation-learning)  
 [**interesting older papers - inverse reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---inverse-reinforcement-learning)  
 
 ----
 #### ["Deep Reinforcement Learning from Human Preferences"](https://arxiv.org/abs/1706.03741) Christiano, Leike, Brown, Martic, Legg, Amodei
   `reinforcement learning from preferences`
->	"Algorithm provides two possible solutions for task to human who indicates which one is better. The process is repeated and the algorithm learns from 900 bits of feedback how to solve the problem."  
-  - `video` <https://drive.google.com/drive/folders/0BwcFziBYuA8RM2NTdllSNVNTWTg> (demo)
-  - `video` <https://youtube.com/watch?v=DekQm9pBbOE> (Shavkunov) `in russian`
-  - `video` <https://youtube.com/watch?v=6h3_lTDFMb0> (Yagudin) `in russian`
-  - `post` <https://deepmind.com/blog/learning-through-human-feedback/>
-  - `post` <https://blog.openai.com/deep-reinforcement-learning-from-human-preferences/>
-  - `code` <https://github.com/nottombrown/rl-teacher>
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#deep-reinforcement-learning-from-human-preferences-christiano-leike-brown-martic-legg-amodei>
 
 ----
 #### ["Leveraging Demonstrations for Deep Reinforcement Learning on Robotics Problems with Sparse Rewards"](https://arxiv.org/abs/1707.08817) Vecerik et al.
@@ -3379,8 +3362,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `notes` <http://tsong.me/blog/gail/>
   - `notes` <https://yobibyte.github.io/files/paper_notes/Generative_Adversarial_Imitation_Learning__Ho_Ermon__2017.pdf>
   - `code` <https://github.com/openai/imitation>
-  - `code` <https://github.com/higgsfield/RL-Adventure-2>
-  - `code` <https://github.com/DanielTakeshi/rl_algorithms>
 
 #### ["A Connection between Generative Adversarial Networks, Inverse Reinforcement Learning, and Energy-Based Models"](https://arxiv.org/abs/1611.03852) Finn, Christiano, Abbeel, Levine
   `adversarial imitation learning` `maximum entropy inverse reinforcement learning`
