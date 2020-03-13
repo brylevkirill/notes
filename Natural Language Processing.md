@@ -1,6 +1,6 @@
 
 
-  * [**study**](#study)
+  * [**overview**](#overview)
   * [**grounding**](#grounding)
   * [**semantics**](#semantics)
   * [**compositionality**](#compositionality)
@@ -23,7 +23,7 @@
 
 
 ---
-### study
+### overview
 
   **classic NLP**
 
@@ -524,17 +524,7 @@
 
 #### ["Efficient Estimation of Word Representations in Vector Space"](http://arxiv.org/abs/1301.3781) Mikolov, Chen, Corrado, Dean
   `word2vec` `Skip-gram`
->	"We propose two novel model architectures for computing continuous vector representations of words from very large data sets. The quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks. We observe large improvements in accuracy at much lower computational cost, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set. Furthermore, we show that these vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities."
-
-  - `video` <https://youtube.com/watch?v=fwcJpSYNsNs> (Mikolov)
-  - `video` <https://youtube.com/watch?v=c3yRH0XZN2g> (Boyd-Graber)
-  - `video` <https://youtube.com/watch?v=Ab5cgv9w7ac> (Scarfe)
-  - `video` <https://youtube.com/watch?v=cQFOxMkzwf4>
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=mikolov2013efficient>
-  - `post` <http://jalammar.github.io/illustrated-word2vec>
-  - `post` <http://alexminnaar.com/word2vec-tutorial-part-i-the-skip-gram-model.html>
-  - `post` <http://alexminnaar.com/word2vec-tutorial-part-ii-the-continuous-bag-of-words-model.html>
-  - `paper` ["word2vec Parameter Learning Explained"](http://www-personal.umich.edu/~ronxin/pdf/w2vexp.pdf) by Rong
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#efficient-estimation-of-word-representations-in-vector-space-mikolov-chen-corrado-dean>
 
 
 #### ["Distributed Representations of Words and Phrases and Their Compositionality"](http://arxiv.org/abs/1310.4546) Mikolov, Sutskever, Chen, Corrado, Dean

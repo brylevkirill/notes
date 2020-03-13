@@ -444,7 +444,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `notes` <http://tuananhle.co.uk/notes/vimco.html>
 
 #### ["Importance Weighted Autoencoders"](http://arxiv.org/abs/1509.00519) Burda, Grosse, Salakhutdinov
-  `variational inference` `posterior approximation`
+  `IWAE` `variational inference` `posterior approximation`
 >	"As we show empirically, the VAE objective can lead to overly simplified representations which fail to use the network's entire modeling capacity. We present the importance weighted autoencoder, a generative model with the same architecture as the VAE, but which uses a strictly tighter log-likelihood lower bound derived from importance weighting. In the IWAE, the recognition network uses multiple samples to approximate the posterior, giving it increased flexibility to model complex posteriors which do not fit the VAE modeling assumptions."  
   - `video` <https://youtu.be/0IoLKnAg6-s?t=14m41s> (Chen)
   - `video` <https://facebook.com/nipsfoundation/videos/1555493854541848?t=1771> (Teh)
@@ -1098,8 +1098,9 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#poincare-embeddings-for-learning-hierarchical-representations-nickel-kiela>
 
 #### ["Unsupervised Learning by Predicting Noise"](https://arxiv.org/abs/1704.05310) Bojanowski, Joulin
-  `representation learning`
->	"The authors give a nice analogy: it's a SOM, but instead of mapping a latent vector to each input vector, the convolutional filters are learned in order to map each input vector to a fixed latent vector. In more words: each image is assigned a unique random latent vector as the label, and the mapping from image to label is taught in a supervised manner. Every few epochs, the label assignments are adjusted (but only within batches due to computational cost), so that an image might be assigned a different latent vector label which it is already close to in 'feature space'."
+  `representation learning` `NAT`
+>	"We propose to fix a set of target representations, called Noise As Targets (NAT), and to constrain the deep features to align to them. This domain agnostic approach avoids the standard unsupervised learning issues of trivial solutions and collapsing of features. Thanks to a stochastic batch reassignment strategy and a separable square loss function, it scales to millions of images."  
+>	"The authors give a nice analogy: it's a SOM, but instead of mapping a latent vector to each input vector, the convolutional filters are learned in order to map each input vector to a fixed latent vector. In more words: each image is assigned a unique random latent vector as the label, and the mapping from image to label is taught in a supervised manner. Every few epochs, the label assignments are adjusted (but only within batches due to computational cost), so that an image might be assigned a different latent vector label which it is already close to in 'feature space'."  
   - `post` <http://inference.vc/unsupervised-learning-by-predicting-noise-an-information-maximization-view-2/>
 
 
@@ -1112,6 +1113,13 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 [**interesting recent papers - unsupervised learning**](#unsupervised-learning)
 
 ----
+#### ["A Simple Framework for Contrastive Learning of Visual Representations"](https://arxiv.org/abs/2002.05709) Chen, Kornblith, Norouzi, Hinton
+  `SimCLR` `representation learning` `self-supervised learning`
+>	"We simplify recently proposed contrastive self-supervised learning algorithms without requiringspecialized architectures or a memory bank."  
+>	"We show that (1) composition ofdata augmentations plays a critical role in definingeffective predictive tasks, (2) introducing a learn-able nonlinear transformation between the repre-sentation and the contrastive loss substantially im-proves the quality of the learned representations,and (3) contrastive learning benefits from largerbatch sizes and more training steps compared tosupervised learning."  
+>	"By combining these findings, we are able to considerably outperform previous methods for self-supervised and semi-supervised learning on ImageNet. A linear classifier trained on self-supervised representations learned by SimCLR achieves 76.5% top-1 accuracy, which is a 7% relative improvement over previous state-of-the-art, matching the performance of a supervised ResNet-50. When fine-tuned on only 1% of the labels, we achieve 85.8% top-5 accuracy, outperforming AlexNet with 100x fewer labels."  
+  - `video` <https://youtu.be/dMUes74-nYY?t=2h10m45s> (Srinivas) `video`
+
 #### ["Revisiting Self-Supervised Visual Representation Learning"](https://arxiv.org/abs/1901.09005) Kolesnikov, Zhai, Beyer
   `representation learning` `self-supervised learning`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#revisiting-self-supervised-visual-representation-learning-kolesnikov-zhai-beyer>
@@ -1208,6 +1216,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `evaluation`
 >	"Authors emphasize that an improvement of log-likelihood does not necessarily translate to higher perceptual quality, and that the KL loss is more likely to produce atypical samples than some other training criteria."  
   - `video` <http://videolectures.net/iclr2016_theis_generative_models/> (Theis)
+  - `video` <https://youtu.be/1CT-kxjYbFU?t=27m27s> (Abbeel)
 
 ----
 #### ["Autoregressive Quantile Networks for Generative Modeling"](http://arxiv.org/abs/1806.05575) Ostrovski, Dabney, Munos
@@ -1577,6 +1586,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#neural-discrete-representation-learning-oord-vinyals-kavukcuoglu>
 
 #### ["Variational Lossy Autoencoder"](http://arxiv.org/abs/1611.02731) Chen, Kingma, Salimans, Duan, Dhariwal, Schulman, Sutskever, Abbeel
+  `VLAE`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#variational-lossy-autoencoder-chen-kingma-salimans-duan-dhariwal-schulman-sutskever-abbeel>
 
 ----
@@ -1648,21 +1658,21 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `notes` <https://github.com/dennybritz/deeplearning-papernotes/blob/master/notes/nmt-linear-time.md>
   - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/bytenet.py>
 
-#### ["Parallel Multiscale Autoregressive Density Estimation"](http://arxiv.org/abs/1703.03664) Reed, Oord, Kalchbrenner, Colmenarejo, Wang, Belov, de Freitas
+#### ["Parallel Multiscale Autoregressive Density Estimation"](http://arxiv.org/abs/1703.03664) Reed et al.
   `PixelCNN`
 >	"O(log N) sampling instead of O(N)"  
 
 #### ["Conditional Image Generation with PixelCNN Decoders"](http://arxiv.org/abs/1606.05328) Oord, Kalchbrenner, Vinyals, Espeholt, Graves, Kavukcuoglu
   `PixelCNN`
   - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-1> (27:26) (Oord)
+  - `video` <https://youtube.com/watch?v=VzMFS1dcIDs>
   - `post` <http://sergeiturukin.com/2017/02/22/pixelcnn.html> + <http://sergeiturukin.com/2017/02/24/gated-pixelcnn.html>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1606.05328#shagunsodhani>
-  - `code` <https://github.com/openai/pixel-cnn>
-  - `code` <https://github.com/anantzoid/Conditional-PixelCNN-decoder>
 
 #### ["Pixel Recurrent Neural Networks"](http://arxiv.org/abs/1601.06759) Oord, Kalchbrenner, Kavukcuoglu
   `PixelRNN`
   - `video` <http://techtalks.tv/talks/pixel-recurrent-neural-networks/62375/> (Oord)
+  - `video` <https://youtube.com/watch?v=VzMFS1dcIDs>
   - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#pixelrnn>
   - `post` <https://github.com/tensorflow/magenta/blob/master/magenta/reviews/pixelrnn.md>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/OordKK16>
@@ -2577,8 +2587,8 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `ME-TRPO` `learning to simulate` `learning environment model` `ICLR 2018`
 >	"We analyze the behavior of vanilla model-based reinforcement learning methods when deep neural networks are used to learn both the model and the policy, and show that the learned policy tends to exploit regions where insufficient data is available for the model to be learned, causing instability in training. To overcome this issue, we propose to use an ensemble of models to maintain the model uncertainty and regularize the learning process. We further show that the use of likelihood ratio derivatives yields much more stable learning than backpropagation through time. Altogether, our approach Model-Ensemble Trust-Region Policy Optimization significantly reduces the sample complexity compared to model-free deep RL methods on challenging continuous control benchmark tasks."  
 >	"The dynamics model maintains uncertainty due to limited data through an ensemble of models. The algorithm alternates among adding transitions to a replay buffer, optimizing the dynamics models given the buffer, and optimizing the policy given the dynamics models in Dyna's style. This algorithm significantly helps alleviating the model bias problem in model-based RL, when the policy exploits the error in the dynamics model. In many Mujoco domains, we show that it can achieve the same final performance as model-free approaches while using 100x less data."  
+  - `video` <https://youtu.be/Y2XBiUtZo1k?t=1h3m32s> (Abbeel)
   - `video` <https://youtube.com/watch?v=nDsDzADmSzk> (Temirchev) `in russian`
-  - `code` <https://github.com/thanard/me-trpo>
 
 #### ["Stochastic Variational Video Prediction"](https://arxiv.org/abs/1710.11252) Babaeizadeh, Finn, Erhan, Campbell, Levine
   `learning to simulate` `learning environment model` `video prediction`
@@ -2633,8 +2643,23 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 ----
 #### ["Self-Imitation Learning"](https://arxiv.org/abs/1806.05635) Oh, Guo, Singh, Lee
-  `SIL` `random exploration`
+  `SIL` `self-imitation`
   - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#self-imitation-learning-oh-guo-singh-lee>
+
+#### ["Go-Explore: a New Approach for Hard-Exploration Problems"] Ecoffet, Huizinga, Lehman, Stanley, Clune
+  `Go-Explore` `self-imitation`
+>	"It exploits the following principles: (1) remember previously visited states, (2) first return to a promising state (without exploration), then explore from it, and (3) solve simulated environments through any available means (including by introducing determinism), then robustify via imitation learning."  
+>	"Because Go-Explore produces high-performing demonstrations automatically and cheaply, it also outperforms imitation learning work where humans provide solution demonstrations."  
+>	"First, how large is the class of problems for which Go-Explore’s assumptions are satisfied? Second, how large is the class of problems on which we should expect Go-Explore to perform well? Starting with the first question, Go-Explore has received a lot of criticism for exploiting the ability to reset to a previously visited state. I think this criticism is overblown. To see why, let’s consider the three types of models/simulators that might be available during training: 1. A full model is an oracle that tells you p(s’|s,a) for any (s,a). 2. A generative model is an oracle that gives you a sample s’~p(s’|s,a) for any (s,a). 3. A trajectory model is a generative model with the constraint that you can only request a sample for (s,a) if s=s’, where s’ was the last sample returned by the model. Full models are rarely available in the real-world but Go-Explore doesn’t require them so it’s no problem. It does require the ability to return to previously visited states and thus clearly a generative model suffices. If we only have a trajectory model and that model is stochastic, but we can control the random seed, then we can still use this same trick. What if we only have a trajectory model? If that model is deterministic, and we have sufficient computational resources, we can still return to a previously visited state by repeating the action sequence that got us there the first time. So my conclusion is that Go-Explore’s assumptions are satisfied unless we are stuck with a stochastic trajectory model whose random seed we cannot control, which strikes me as a rather minor restriction. Regarding the second question, how well Go-Explore would perform in other domains depends critically on the representation used in the archive of visited states. For Montezuma’s Revenge, a simple downsampling representation is used. Nonetheless, the simplistic representation is clearly a weak point in the method. To decide what’s worth exploring, we need some measure of how similar new states are to those we’ve already seen. This requires either prior knowledge or powerful unsupervised learning. Prior knowledge is great when you have it but I’m not optimistic that unsupervised learning is good enough yet to handle cases when you don’t. Furthermore, even if unsupervised learning can discover a good similarity metric eventually, I’m even less optimistic that it can do so on the fly, during training, as it would have to do to be a useful guide for exploration. So my conclusion is that the class of problems on which we should expect Go-Explore to perform well has significant limitations. This isn’t so much a criticism of Go-Explore as an acknowledgment that our ability to make progress in exploration, like many “downstream” ML tasks, is gated by limitations in the state of the art in fundamental “upstream tasks” like unsupervised learning."  
+>	"Unless you have strong prior knowledge, it will never be feasible to explore large state spaces in the real world. The sample complexity is simply intolerable. So the only potential application of these smart exploration methods is for sample-based planning, i.e., doing "RL" in a simulator. I don't think RL will ever be sample-efficient enough to make exploration practical without a simulator (in MDPs; bandits are a different story)."  
+>	"Go-Explore also seems to be a specific case of Bootstrapped-DQN, which is simpler, makes fewer assumptions, is shown to be scalable and has good theory underpinning it."  
+  - `post` <https://eng.uber.com/go-explore> (demo)
+  - `video` <https://youtube.com/watch?v=SWcuTgk2di8> (Clune)
+  - `video` <https://youtube.com/watch?v=EbFosdOi5SY> (Kilcher)
+  - `video` <https://youtube.com/watch?v=yoz3bBtkC4M> (Zhizhin) `in russian`
+  - `post` <http://hunch.net/?p=8825714>
+  - `post` <https://twitter.com/shimon8282/status/1136596644760342528>
+
 
 ----
 #### ["Contextual Decision Processes with Low Bellman Rank are PAC-Learnable"](https://arxiv.org/abs/1610.09512) Jiang, Krishnamurthy, Agarwal, Langford, Schapire
@@ -2953,6 +2978,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=DWSZHEvZO4o>
   - `video` <https://slideslive.com/38917959/skewfit-statecovering-selfsupervised-reinforcement-learning> (Pong)
   - `video` <http://www.fields.utoronto.ca/video-archive/2019/10/2509-21418> (29:55) (Levine)
+  - `video` <https://youtu.be/U1dD8UALTu0?t=24m28s> (Levine)
   - `video` <https://youtu.be/jAPJeJK18mw?t=10m28s> (Levine)
 
 #### ["Hindsight Experience Replay"](https://arxiv.org/abs/1707.01495) Andrychowicz et al.
@@ -3264,6 +3290,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `TCN` `reinforcement learning from demonstrations`
 >	"Learn a self-supervised understanding of the world and use it to quickly learn real-world tasks, entirely from 3rd person videos of humans (addressing correspondence problem, no labels, no reward function design, providing sample-efficiency of RL, quickly learning tasks, no kinesthetic demonstrations)."  
   - <https://sermanet.github.io/imitate> (demo)
+  - `post` <https://ai.googleblog.com/2017/07/teaching-robots-to-understand-semantic.html>
   - `video` <https://youtube.com/watch?v=b1UTUQpxPSY>
   - `video` <https://vimeo.com/252185872> (Lynch)
   - `video` <https://youtu.be/WRsxoVB8Yng?t=2h13m26s> (Sermanet)

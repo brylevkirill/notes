@@ -295,6 +295,7 @@
 ---
 ### applications - robotics
 
+  [overview](https://youtube.com/watch?v=U1dD8UALTu0) by Sergey Levine `video`  
   [overview](http://www.fields.utoronto.ca/video-archive/2019/10/2509-21418) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=jAPJeJK18mw) by Sergey Levine `video`  
   [overview](https://livestream.com/newyorkacademyofsciences/ml2018-2/videos/171320389) by Sergey Levine `video`  
@@ -314,6 +315,19 @@
   ["What Should Be Learned?"](https://youtu.be/WRsxoVB8Yng?t=7h7m15s) by Chris Atkeson `video`  
 
   ["Sampling and Exploration for Control of Physical Systems"](https://facebook.com/icml.imls/videos/2265408103721327?t=591) by Emo Todorov `video` *(critique of MDP framework)*
+
+----
+  - *grasping*
+
+	[QT-Opt](https://ai.googleblog.com/2018/06/scalable-deep-reinforcement-learning.html)
+
+	[**"QT-Opt: Scalable Deep Reinforcement Learning for Vision-Based Robotic Manipulation"**](#qt-opt-scalable-deep-reinforcement-learning-for-vision-based-robotic-manipulation-kalashnikov-et-al) by Kalashnikov et al. `paper` `summary`
+
+	[QT-Opt overview](http://www.fields.utoronto.ca/video-archive/2019/10/2509-21418) (19:54) by Sergey Levine `video`  
+	[QT-Opt overview](https://youtu.be/U1dD8UALTu0?t=16m25s) by Sergey Levine `video`  
+	[QT-Opt overview](https://video.ethz.ch/events/2018/corl/c7111aff-c968-43cd-ad0f-b42ddcccbf62.html) by Dmitry Kalashnikov `video`  
+
+	[QT-Opt demo](https://youtube.com/watch?v=z-2q1eMAwps)
 
 ----
   - *in-hand manipulation*
@@ -2113,6 +2127,15 @@ interesting recent papers:
   - `video` <http://www.fields.utoronto.ca/video-archive/2019/02/2509-19619> (41:12) (Boutilier)
 
 
+#### ["QT-Opt: Scalable Deep Reinforcement Learning for Vision-Based Robotic Manipulation"](https://arxiv.org/abs/1806.10293) Kalashnikov et al.
+  `QT-Opt`
+>	"In this paper, we study the problem of learning vision-based dynamic manipulation skills using a scalable reinforcement learning approach. We study this problem in the context of grasping, a longstanding challenge in robotic manipulation. In contrast to static learning behaviors that choose a grasp point and then execute the desired grasp, our method enables closed-loop vision-based control, whereby the robot continuously updates its grasp strategy based on the most recent observations to optimize long-horizon grasp success. To that end, we introduce QT-Opt, a scalable self-supervised vision-based reinforcement learning framework that can leverage over 580k real-world grasp attempts to train a deep neural network Q-function with over 1.2M parameters to perform closed-loop, real-world grasping that generalizes to 96% grasp success on unseen objects. Aside from attaining a very high success rate, our method exhibits behaviors that are quite distinct from more standard grasping systems: using only RGB vision-based perception from an over-the-shoulder camera, our method automatically learns regrasping strategies, probes objects to find the most effective grasps, learns to reposition objects and perform other non-prehensile pre-grasp manipulations, and responds dynamically to disturbances and perturbations."
+
+  - `video` <http://www.fields.utoronto.ca/video-archive/2019/10/2509-21418> (19:54) (Levine)
+  - `video` <https://youtu.be/U1dD8UALTu0?t=16m25s> (Levine)
+  - `video` <https://video.ethz.ch/events/2018/corl/c7111aff-c968-43cd-ad0f-b42ddcccbf62.html> (Kalashnikov)
+
+
 #### ["Learning Dexterous In-Hand Manipulation"](https://arxiv.org/abs/1808.00177) OpenAI et al.
   `Dactyl`
 >	"We use reinforcement learning to learn dexterous in-hand manipulation policies which can perform vision-based object reorientation on a physical Shadow Dexterous Hand. The training is performed in a simulated environment in which we randomize many of the physical properties of the system like friction coefficients and an object's appearance. Our policies transfer to the physical robot despite being trained entirely in simulation. Our method does not rely on any human demonstrations, but many behaviors found in human manipulation emerge naturally, including finger gaiting, multi-finger coordination, and the controlled use of gravity. Our results were obtained using the same distributed RL system that was used to train OpenAI Five."
@@ -2801,6 +2824,7 @@ interesting recent papers:
   - <https://sites.google.com/view/surpriseminimization> (demo)
   - `post` <https://people.eecs.berkeley.edu/~gberseth/smirl-surprise-minimizing-rl-in-dynamic-environments.html>
   - `video` <http://www.fields.utoronto.ca/video-archive/2019/10/2509-21418> (36:15) (Levine)
+  - `video` <https://youtu.be/U1dD8UALTu0?t=34m25s> (Levine)
   - `video` <https://youtu.be/qvxgsxQFHgQ?t=11m27s> (Ivanov) `in russian`
 
 
@@ -2920,6 +2944,21 @@ interesting recent papers:
 
 #### ["On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models"](http://arxiv.org/abs/1511.09249) Schmidhuber
   - <https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#on-learning-to-think-algorithmic-information-theory-for-novel-combinations-of-reinforcement-learning-controllers-and-recurrent-neural-world-models-schmidhuber>
+
+
+#### ["World Models"](https://arxiv.org/abs/1803.10122) Ha, Schmidhuber
+>	"We explore building generative neural network models of popular reinforcement learning environments. Our world model can be trained quickly in an unsupervised manner to learn a compressed spatial and temporal representation of the environment. By using features extracted from the world model as inputs to an agent, we can train a very compact and simple policy that can solve the required task. We can even train our agent entirely inside of its own hallucinated dream generated by its world model, and transfer this policy back into the actual environment."
+
+>	"Like early RNN-based C–M systems, ours simulates possible futures time step by time step, without profiting from human-like hierarchical planning or abstract reasoning, which often ignores irrelevant spatial-temporal details. However, the more general Learning To Think (Schmidhuber, 2015a) approach is not limited to this rather naive approach. Instead it allows a recurrent C to learn to address subroutines of the recurrent M, and reuse them for problem solving in arbitrary computable ways, e.g., through hierarchical planning or other kinds of exploiting parts of M’s program-like weight matrix. A recent One Big Net (Schmidhuber, 2018) extension of the C–M approach collapses C and M into a single network, and uses PowerPlay-like (Schmidhuber, 2013; Srivastava et al.,2012) behavioural replay (where the behaviour of a teacher net is compressed into a student net (Schmidhuber, 1992)) to avoid forgetting old prediction and control skills when learning new ones."
+
+  - <https://worldmodels.github.io>
+  - `video` <https://youtube.com/watch?v=HzA8LRqhujk> (Ha)
+  - `video` <https://youtu.be/Yvll3P1UW5k?t=34m20s> (Abbeel)
+  - `video` <https://youtu.be/HRp6DH5M7Co?t=18m24s> (Abbeel)
+  - `video` <https://youtube.com/watch?v=dPsXxLyqpfs> (Kilcher)
+  - `video` <https://youtu.be/qvxgsxQFHgQ?t=40m46s> (Ivanov) `in russian`
+  - `post` <https://coherencedrivers.wordpress.com/2018/04/04/comment-on-world-models>
+  - `paper` [**"Making the World Differentiable: On Using Self-Supervised Fully Recurrent Neural Networks for Dynamic Reinforcement Learning and Planning in Non-Stationary Environments**"](#making-the-world-differentiable-on-using-self-supervised-fully-recurrent-neural-networks-for-dynamic-reinforcement-learning-and-planning-in-non-stationary-environments-schmidhuber) by Schmidhuber `summary`
 
 
 #### ["Benchmarking Model-Based Reinforcement Learning"](https://arxiv.org/abs/1907.02057) Wang et al.
@@ -3459,12 +3498,10 @@ interesting recent papers:
 >	- policy determinism allows policy to be optimized more easily and more sample efficiently due to action no longer being a random variable which must be integrated over in expectation  
 >	- can be much more efficient in settings with very high-dimensional actions where sampling actions provides poor coverage of state-action space  
 
-  - `video` <http://youtube.com/watch?v=tJBIqkC1wWM> (demo)
-  - `video` <http://youtube.com/watch?v=Tb5gASEJIRM> (demo)
   - `video` <http://videolectures.net/rldm2015_silver_reinforcement_learning/#t=4043> (Silver)
   - `video` <http://youtu.be/qLaDWKd61Ig?t=39m> (Silver)
   - `video` <http://youtu.be/KHZVXao4qXs?t=52m58s> (Silver)
-  - `video` <http://youtu.be/M6nfipCxQBc?t=7m45s> (Lillicrap)
+  - `video` <https://youtu.be/Y2XBiUtZo1k?t=27m10s> (Abbeel)
   - `video` <http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement/#t=3724> (Abbeel)
   - `video` <https://youtu.be/rO7Dx8pSJQw?t=50m> (Schulman)
   - `video` <https://youtu.be/eeJ1-bUnwRI?t=55m38s> (Sigaud)
@@ -3473,9 +3510,6 @@ interesting recent papers:
   - `post` <https://yanpanlau.github.io/2016/10/11/Torcs-Keras.html>
   - `post` <http://pemami4911.github.io/blog_posts/2016/08/21/ddpg-rl.html>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/ddpg>
-  - `code` <https://github.com/vitchyr/rlkit>
-  - `code` <https://github.com/ikostrikov/pytorch-ddpg-naf>
-  - `code` <https://github.com/Scitator/Run-Skeleton-Run> (demo)
   - `paper` [**"Deterministic Policy Gradient Algorithms"**](#deterministic-policy-gradient-algorithms-silver-lever-heess-degris-wierstra-riedmiller) by Silver et al. `summary`
 
 
@@ -3554,10 +3588,10 @@ interesting recent papers:
 
   - <https://sites.google.com/view/softqlearning/home> (demo)
   - `post` <http://bair.berkeley.edu/blog/2017/10/06/soft-q-learning/>
+  - `video` <https://youtu.be/Y2XBiUtZo1k?t=12m38s> (Abbeel)
   - `video` <https://youtube.com/watch?v=IAJ1LywY6Zg> (Levine)
   - `video` <https://livestream.com/newyorkacademyofsciences/ml2018-2/videos/171320389> (14:47) (Levine)
   - `video` <https://vimeo.com/240428644#t=1h16m18s> (Levine)
-  - `code` <https://github.com/haarnoja/softqlearning>
   - `paper` ["Taming the Noise in Reinforcement Learning via Soft Updates"](https://arxiv.org/abs/1512.08562) by Fox, Pakman, Tishby
 
 
@@ -3568,6 +3602,7 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=IAJ1LywY6Zg> (Levine)
   - `video` <https://livestream.com/newyorkacademyofsciences/ml2018-2/videos/171320389> (14:47) (Levine)
   - `video` <https://vimeo.com/240428644#t=1h16m18s> (Levine)
+  - `video` <https://youtu.be/Y2XBiUtZo1k?t=1h47s> (Abbeel)
   - `video` <https://youtube.com/watch?v=gmWmQZvg6hA> + <https://youtube.com/watch?v=KMf6AANMMx0> (Konobeev) `in russian`
   - `post` <http://bair.berkeley.edu/blog/2017/10/06/soft-q-learning/>
 
@@ -3591,11 +3626,13 @@ interesting recent papers:
 >	"SAC implicitly acts as an empowerment-based directed exploration method (Mohamed & Rezende, 2015) due to its entropy bonus."  
 
   - `post` <http://bair.berkeley.edu/blog/2018/12/14/sac>
+  - `post` <https://ai.googleblog.com/2019/01/soft-actor-critic-deep-reinforcement.html>
   - `video` <https://vimeo.com/252185258>
   - `video` <https://facebook.com/icml.imls/videos/430993334081854?t=6485> (Haarnoja)
   - `video` <https://livestream.com/newyorkacademyofsciences/ml2018-2/videos/171320389> (14:47) (Levine)
   - `video` <https://youtu.be/IAJ1LywY6Zg?t=21m4s> (Levine)
   - `video` <https://youtu.be/jAPJeJK18mw?t=24m45s> (Levine)
+  - `video` <https://youtu.be/Y2XBiUtZo1k?t=41m37s> (Abbeel)
   - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h51m28s> (Sigaud)
   - `video` <https://youtube.com/watch?v=IgNC1J25Ls8> (Grinchuk) `in russian`
   - `video` <https://youtube.com/watch?v=NiTJOw1aST4> (Grinchuk) `in russian`
