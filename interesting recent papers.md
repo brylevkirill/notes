@@ -406,7 +406,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Improving Variational Inference with Inverse Autoregressive Flow"](http://arxiv.org/abs/1606.04934) Kingma, Salimans, Jozefowicz, Chen, Sutskever, Welling
   `IAF` `variational inference` `posterior approximation` `normalizing flows`
 >	"Most VAEs have so far been trained using crude approximate posteriors, where every latent variable is independent. Normalizing Flows have addressed this problem by conditioning each latent variable on the others before it in a chain, but this is computationally inefficient due to the introduced sequential dependencies. Inverse autoregressive flow, unlike previous work, allows us to parallelize the computation of rich approximate posteriors, and make them almost arbitrarily flexible."  
-  - `video` <https://slideslive.com/38917907/tutorial-on-normalizing-flows> (32:05) (Jang)
+  - `video` <https://slideslive.com/38917907/tutorial-on-normalizing-flows?t=1925> (Jang)
   - `post` <http://bjlkeng.github.io/posts/variational-autoencoders-with-inverse-autoregressive-flows>
   - `post` <http://akosiorek.github.io/ml/2018/04/03/norm_flows.html>
   - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#inverse-autoregressive-flow>
@@ -783,12 +783,20 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 [recent papers - meta reinforcement learning](https://lilianweng.github.io/lil-log/2019/06/23/meta-reinforcement-learning.html)  
 
 ----
-#### ["Rapid Learning or Feature Reuse? Towards Understanding the Effectiveness of MAML"](https://arxiv.org/abs/1909.09157) Raghu, Raghu, Bengio, Vinyals
-  `MAML`
->	"MAML consists of two optimization loops, with the outer loop finding a meta-initialization, from which the inner loop can efficiently learn new tasks. A fundamental open question remains -- is the effectiveness of MAML due to the meta-initialization being primed for rapid learning (large, efficient changes in the representations) or due to feature reuse, with the meta initialization already containing high quality features? We investigate this question, via ablation studies and analysis of the latent representations, finding that feature reuse is the dominant factor. This leads to the ANIL (Almost No Inner Loop) algorithm, a simplification of MAML where we remove the inner loop for all but the (task-specific) head of a MAML-trained network. ANIL matches MAML's performance on benchmark few-shot image classification and RL and offers computational improvements over MAML. We further study the precise contributions of the head and body of the network, showing that performance on the test tasks is entirely determined by the quality of the learned features, and we can remove even the head of the network (the NIL algorithm)."  
+#### ["Efficient Off-Policy Meta-Reinforcement Learning via Probabilistic Context Variables"](https://arxiv.org/abs/1903.08254) Rakelly, Zhou, Quillen, Finn, Levine
+  `PEARL` `ICML 2019`
+>	"Current meta-RL methods rely heavily on on-policy experience, limiting their sample efficiency. They also lack mechanisms to reason about task uncertainty when adapting to new tasks, limiting their effectiveness in sparse reward problems. In this paper, we address these challenges by developing an off-policy meta-RL algorithm that disentangles task inference and control. In our approach, we perform online probabilistic filtering of latent task variables to infer how to solve a new task from small amounts of experience. This probabilistic interpretation enables posterior sampling for structured and efficient exploration. We demonstrate how to integrate these task variables with off-policy RL algorithms to achieve both meta-training and adaptation efficiency. Our method outperforms prior algorithms in sample efficiency by 20-100X as well as in asymptotic performance on several meta-RL benchmarks."  
+  - `post` <https://bair.berkeley.edu/blog/2019/06/10/pearl>
+  - `video` <https://slideslive.com/38917936/unsupervised-reinforcement-learning-and-metalearning?t=728> (Levine)
+
+#### ["Unsupervised Meta-Learning for Reinforcement Learning"](https://arxiv.org/abs/1806.04640) Gupta, Eysenbach, Finn, Levine
+>	"The performance of meta-learning algorithms depends on the tasks available for meta-training: in the same way that supervised learning generalizes best to test points drawn from the same distribution as the training points, meta-learning methods generalize best to tasks from the same distribution as the meta-training tasks. In effect, meta-reinforcement learning offloads the design burden from algorithm design to task design. If we can automate the process of task design as well, we can devise a meta-learning algorithm that is truly automated."  
+>	"Our conceptual and theoretical contributions consist of formulating the unsupervised meta-reinforcement learning problem and describing how task proposals based on mutual information can be used to train optimal meta-learners."  
+  - `video` <https://slideslive.com/38917936/unsupervised-reinforcement-learning-and-metalearning?t=1205> (Levine)
+  - `video` <https://youtu.be/5oGEZGxJAl4?t=29m35s> (Levine)
 
 #### ["On First-Order Meta-Learning Algorithms"](https://arxiv.org/abs/1803.02999) Nichol, Achiam, Schulman
-  `Reptile` `learning initialization algorithm`
+  `Reptile`
 >	"We analyze a family of algorithms for learning a parameter initialization that can be fine-tuned quickly on a new task, using only first-order derivatives for the meta-learning updates. This family includes and generalizes first-order MAML, an approximation to MAML obtained by ignoring second-order derivatives. It also includes Reptile which works by repeatedly sampling a task, training on it, and moving the initialization towards the trained weights on that task."  
   - `post` <https://blog.openai.com/reptile>
   - `video` <https://youtu.be/sF-dbZ2BQrQ?t=23m10s> (Kelcey)
@@ -796,7 +804,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <https://github.com/openai/supervised-reptile>
 
 #### ["Continuous Adaptation via Meta-Learning in Nonstationary and Competitive Environments"](https://arxiv.org/abs/1710.03641) Al-Shedivat, Bansal, Burda, Sutskever, Mordatch, Abbeel
-  `learning initialization algorithm` `continual learning`
+  `MAML` `continual learning`
 >	"extending Model-Agnostic Meta-Learning to the case of dynamically changing tasks"  
   - <https://sites.google.com/view/adaptation-via-metalearning> (demo)
   - `post` <https://blog.openai.com/meta-learning-for-wrestling>
@@ -805,17 +813,18 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1710.03641>
   - `code` <https://github.com/openai/robosumo>
 
-#### ["Recasting Gradient-Based Meta-Learning as Hierarchical Bayes"](https://arxiv.org/abs/1801.08930) Grant, Finn, Levine, Darrell, Griffiths
-  `MAML` `learning initialization algorithm`
+#### ["Rapid Learning or Feature Reuse? Towards Understanding the Effectiveness of MAML"](https://arxiv.org/abs/1909.09157) Raghu, Raghu, Bengio, Vinyals
+  `ANIL` `MAML`
+>	"MAML consists of two optimization loops, with the outer loop finding a meta-initialization, from which the inner loop can efficiently learn new tasks. A fundamental open question remains -- is the effectiveness of MAML due to the meta-initialization being primed for rapid learning (large, efficient changes in the representations) or due to feature reuse, with the meta initialization already containing high quality features? We investigate this question, via ablation studies and analysis of the latent representations, finding that feature reuse is the dominant factor. This leads to the ANIL (Almost No Inner Loop) algorithm, a simplification of MAML where we remove the inner loop for all but the (task-specific) head of a MAML-trained network. ANIL matches MAML's performance on benchmark few-shot image classification and RL and offers computational improvements over MAML. We further study the precise contributions of the head and body of the network, showing that performance on the test tasks is entirely determined by the quality of the learned features, and we can remove even the head of the network (the NIL algorithm)."  
 
-#### ["Meta-Learning and Universality: Deep Representations and Gradient Descent can Approximate any Learning Algorithm"](https://arxiv.org/abs/1710.11622) Finn, Levine
-  `MAML` `learning initialization algorithm`
->	"A popular approach to meta-learning is to train a recurrent model to read in a training dataset as input and output the parameters of a learned model, or output predictions for new test inputs. Alternatively, a more recent approach to meta-learning aims to acquire deep representations that can be effectively fine-tuned, via standard gradient descent, to new tasks. In this paper, we consider the meta-learning problem from the perspective of universality, formalizing the notion of learning algorithm approximation and comparing the expressive power of the aforementioned recurrent models to the more recent approaches that embed gradient descent into the meta-learner. In particular, we seek to answer the following question: does deep representation combined with standard gradient descent have sufficient capacity to approximate any learning algorithm? We find that this is indeed true, and further find, in our experiments, that gradient-based meta-learning consistently leads to learning strategies that generalize more widely compared to those represented by recurrent models."
+#### ["Meta-Learning and Universality: Deep Representations and Gradient Descent Can Approximate Any Learning Algorithm"](https://arxiv.org/abs/1710.11622) Finn, Levine
+  `MAML`
+>	"A popular approach to meta-learning is to train a recurrent model to read in a training dataset as input and output the parameters of a learned model, or output predictions for new test inputs. Alternatively, a more recent approach to meta-learning aims to acquire deep representations that can be effectively fine-tuned, via standard gradient descent, to new tasks. In this paper, we consider the meta-learning problem from the perspective of universality, formalizing the notion of learning algorithm approximation and comparing the expressive power of the aforementioned recurrent models to the more recent approaches that embed gradient descent into the meta-learner. In particular, we seek to answer the following question: does deep representation combined with standard gradient descent have sufficient capacity to approximate any learning algorithm? We find that this is indeed true, and further find, in our experiments, that gradient-based meta-learning consistently leads to learning strategies that generalize more widely compared to those represented by recurrent models."  
   - `video` <https://youtu.be/5oGEZGxJAl4?t=14m17s> (Levine)
   - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482?t=1204> (Abbeel)
 
 #### ["Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks"](https://arxiv.org/abs/1703.03400) Finn, Abbeel, Levine
-  `MAML` `learning initialization algorithm`
+  `MAML`
 >	"End-to-end learning of parameter θ that is good init for fine-tuning for many tasks."  
 >	"MAML finds a shared parameter θ such that for a given task, one gradient step on θ using the training set will yield a model with good predictions on the test set. Then, a meta-gradient update is performed from the test error through the one gradient step in the training set, to update θ."  
 >	"Tasks are sampled and a policy gradient update is computed for each task with respect to a fixed initial set of parameters. Subsequently, a meta update is performed where a gradient step is taken that moves the initial parameter in a direction that would have maximally benefited the average return over all of the sub-updates."  
@@ -833,13 +842,12 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `post` <https://danieltakeshi.github.io/2018/04/01/maml>
   - `post` <https://blog.evjang.com/2019/02/maml-jax.html>
   - `post` <http://noahgolmant.com/maml.html>
-  - `code` <https://github.com/tristandeleu/pytorch-maml-rl>
-  - `code` <https://github.com/cbfinn/maml>
-  - `code` <https://github.com/cbfinn/maml_rl>
+  - `paper` ["Probabilistic Model-Agnostic Meta-Learning"](https://arxiv.org/abs/1806.02817) by Finn et al. ([overview](https://youtu.be/5oGEZGxJAl4?t=22m37s) by Levine `video`)
+  - `paper` ["Recasting Gradient-Based Meta-Learning as Hierarchical Bayes"](https://arxiv.org/abs/1801.08930) by Grant et al.
 
 ----
 #### ["Optimization as a Model for Few-Shot Learning"](https://openreview.net/forum?id=rJY0-Kcll) Ravi, Larochelle
-  `learning initialization algorithm` `learning optimization algorithm`
+  `learning learning algorithm`
 >	"Meta-learning algorithm is decomposed into two parts: the traditional learner’s initial parameters are trained to be suitable for fast gradient-based adaptation; the LSTM meta-learner is trained to be an optimization algorithm adapted for meta-learning tasks."  
 >	"Encoding network reads the training set and generate the parameters of a model, which is trained to perform well on the testing set."  
   - `video` <https://facebook.com/iclr.cc/videos/1713144705381255?t=5208> (Ravi)
@@ -848,7 +856,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <https://github.com/twitter/meta-learning-lstm>
   - `code` <https://github.com/gitabcworld/FewShotLearning>
 
-----
 #### ["A Simple Neural Attentive Meta-Learner"](https://arxiv.org/abs/1707.03141) Mishra, Rohaninejad, Chen, Abbeel
   `SNAIL` `learning learning algorithm`
 >	"Like RL^2 but with LSTM network replaced by dilated temporal convolutional network and attention."  
@@ -1736,7 +1743,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `post` <https://blog.openai.com/glow>
   - `video` <https://youtube.com/watch?v=exJZOC3ZceA> (demo)
   - `video` <https://slideslive.com/38917897/glow-generative-flow-with-invertible-1x1-convolutions> (Kingma, Dhariwal)
-  - `video` <https://slideslive.com/38917907/tutorial-on-normalizing-flows> (29:52) (Jang)
+  - `video` <https://slideslive.com/38917907/tutorial-on-normalizing-flows?t=1792> (Jang)
   - `video` <https://youtu.be/79wiVbMkFTg?t=27m11s> (Kurbanov) `in russian`
   - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#glow>
   - `code` <https://github.com/openai/glow>
@@ -1778,7 +1785,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	- fast to sample from  
 >	- limited capacity vs MAF"  
   - `video` <https://vimeo.com/252105837> (Papamakarios)
-  - `video` <https://slideslive.com/38917907/tutorial-on-normalizing-flows> (33:19) (Jang)
+  - `video` <https://slideslive.com/38917907/tutorial-on-normalizing-flows?t=1999> (Jang)
   - `audio` <https://youtube.com/watch?v=315xKcYX-1w> (Papamakarios)
   - `post` <http://blog.evjang.com/2018/01/nf2.html>
   - `post` <http://akosiorek.github.io/ml/2018/04/03/norm_flows.html>
@@ -2851,10 +2858,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"Stadie et al. learn deterministic dynamics models by minimizing Euclidean loss - whereas in our work, we learn stochastic dynamics with cross entropy loss - and use L2 prediction errors for intrinsic motivation."  
 >	"Our results suggest that surprisal is a viable alternative to VIME in terms of performance, and is highly favorable in terms of computational cost. In VIME, a backwards pass through the dynamics model must be computed for every transition tuple separately to compute the intrinsic rewards, whereas our surprisal bonus only requires forward passes through the dynamics model for intrinsic reward computation. Furthermore, our dynamics model is substantially simpler than the Bayesian neural network dynamics model of VIME. In our speed test, our bonus had a per-iteration speedup of a factor of 3 over VIME."  
 
-#### ["Exploration Potential"](http://arxiv.org/abs/1609.04994) Leike
-  `information gain motivation`
->	"We introduce exploration potential, a quantity that measures how much a reinforcement learning agent has explored its environment class. In contrast to information gain, exploration potential takes the problem's reward structure into account. This leads to an exploration criterion that is both necessary and sufficient for asymptotic optimality (learning to act optimally across the entire environment class). Our experiments in multi-armed bandits use exploration potential to illustrate how different algorithms make the tradeoff between exploration and exploitation."  
-
 ----
 #### ["Empowerment-driven Exploration using Mutual Information Estimation"](https://arxiv.org/abs/1810.05533) Kumar
   `empowerment`
@@ -2871,6 +2874,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#variational-intrinsic-control-gregor-rezende-wierstra>
 
 ----
+#### ["Self-Supervised Exploration via Disagreement"](https://arxiv.org/abs/1906.04161) Pathak, Gandhi, Gupta
+  `predictive novelty motivation` `prediction error variance`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#self-supervised-exploration-via-disagreement-pathak-et-al>
+
 #### ["Learning to Play with Intrinsically-Motivated Self-Aware Agents"](https://arxiv.org/abs/1802.07442) Haber, Mrowca, Fei-Fei, Yamins
   `predictive novelty motivation` `prediction error`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#learning-to-play-with-intrinsically-motivated-self-aware-agents-haber-et-al>
@@ -2920,11 +2927,21 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 ----
 #### ["Diversity is All You Need: Learning Skills without a Reward Function"](https://arxiv.org/abs/1802.06070) Eysenbach, Gupta, Ibarz, Levine
   `DIAYN` `skills discovery`
->	"Intelligent creatures can explore their environments and learn useful skills without supervision. In this paper, we propose DIAYN ('Diversity is All You Need'), a method for learning useful skills without a reward function. Our proposed method learns skills by maximizing an information theoretic objective using a maximum entropy policy. On a variety of simulated robotic tasks, we show that this simple objective results in the unsupervised emergence of diverse skills, such as walking and jumping. In a number of reinforcement learning benchmark environments, our method is able to learn a skill that solves the benchmark task despite never receiving the true task reward. We show how pretrained skills can provide a good parameter initialization for downstream tasks, and can be composed hierarchically to solve complex, sparse reward tasks. Our results suggest that unsupervised discovery of skills can serve as an effective pretraining mechanism for overcoming challenges of exploration and data efficiency in reinforcement learning."  
-  - `video` <https://youtu.be/5oGEZGxJAl4?t=29m35s> (Levine)
+>	"Our proposed method learns skills by maximizing an information theoretic objective using a maximum entropy policy. On a variety of simulated robotic tasks, we show that this simple objective results in the unsupervised emergence of diverse skills, such as walking and jumping. In a number of reinforcement learning benchmark environments, our method is able to learn a skill that solves the benchmark task despite never receiving the true task reward."  
+>	"We further proposed methods for using the learned skills (1) to quickly adapt to a new task, (2) to solve complex tasks via hierarchical RL, and (3) to imitate an expert."  
+>	"Why can't we just use MaxEnt RL or goal-reaching?  
+>	1. action entropy is not the same as state entropy - agent can take very different actions, but land in similar states  
+>	2. reaching diverse goals is not the same as performing diverse tasks - not all behaviors can be captured by goal-reaching  
+>	3. MaxEnt policies are stochastic but not always controllable"  
+>	"intuition: different skills should visit different state-space regions"  
+  - <https://sites.google.com/view/diayn>
+  - `video` <https://youtu.be/tzieElmtAjs?t=38m18s> (Levine)
+  - `video` <https://slideslive.com/38917936/unsupervised-reinforcement-learning-and-metalearning?t=1326> (Levine)
+  - `video` <https://youtu.be/5oGEZGxJAl4?t=31m52s> (Levine)
+  - `video` <https://youtube.com/watch?v=x6Kt7q6fylI> (Krayenhoff)
 
 ----
-#### ["Learning by Playing - Solving Sparse Reward Tasks from Scratch"](https://arxiv.org/abs/1802.10567) Riedmiller, Hafner, Lampe, Neunert, Degrave, Wiele, Mnih, Heess, Springenberg
+#### ["Learning by Playing - Solving Sparse Reward Tasks from Scratch"](https://arxiv.org/abs/1802.10567) Riedmiller et al.
   `SAC-X` `auxiliary tasks`
 >	"SAC-X simultaneously learns intention policies on a set of auxiliary tasks, and actively schedules and executes these to explore its observation space - in search for sparse rewards of externally defined target tasks. Utilizing simple auxiliary tasks enables SAC-X to learn complicated target tasks from rewards defined in a ’pure’, sparse, manner: only the end goal is specified, but not the solution path."  
 >	"It can be interpreted as a generalization of the IUA and UNREAL objectives to stochastic continuous controls – in combination with active execution of auxiliary tasks and (potentially learned) scheduling within an episode."  
@@ -2943,7 +2960,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `UNREAL` `auxiliary tasks`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#reinforcement-learning-with-unsupervised-auxiliary-tasks-jaderberg-mnih-czarnecki-schaul-leibo-silver-kavukcuoglu>
 
-#### ["Learning to Navigate in Complex Environments"](http://arxiv.org/abs/1611.03673) Mirowski, Pascanu, Viola, Soyer, Ballard, Banino, Denil, Goroshin, Sifre, Kavukcuoglu, Kumaran, Hadsell
+#### ["Learning to Navigate in Complex Environments"](http://arxiv.org/abs/1611.03673) Mirowski et al.
   `auxiliary tasks`
 >	"Auxiliary tasks:  
 >	- depth predictor  
@@ -2977,8 +2994,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - <https://sites.google.com/view/skew-fit>
   - `video` <https://youtube.com/watch?v=DWSZHEvZO4o>
   - `video` <https://slideslive.com/38917959/skewfit-statecovering-selfsupervised-reinforcement-learning> (Pong)
+  - `video` <https://youtu.be/tzieElmtAjs?t=5m6s> (Levine)
   - `video` <http://www.fields.utoronto.ca/video-archive/2019/10/2509-21418> (29:55) (Levine)
   - `video` <https://youtu.be/U1dD8UALTu0?t=24m28s> (Levine)
+  - `video` <https://slideslive.com/38917936/unsupervised-reinforcement-learning-and-metalearning> (Levine)
   - `video` <https://youtu.be/jAPJeJK18mw?t=10m28s> (Levine)
 
 #### ["Hindsight Experience Replay"](https://arxiv.org/abs/1707.01495) Andrychowicz et al.
@@ -3176,6 +3195,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://vimeo.com/237274156> (Higgins)
   - `video` <https://youtu.be/XNGo9xqpgMo?t=16m46s> (Higgins)
   - `video` <https://youtu.be/Yvll3P1UW5k?t=1h7m18s> (Abbeel)
+  - `video` <https://youtu.be/HRp6DH5M7Co?t=29m22s> (Abbeel)
   - `video` <https://youtube.com/watch?v=FQSPkCMtDyY> (Grishin) `in russian`
 
 #### ["Robust and Efficient Transfer Learning with Hidden Parameter Markov Decision Processes"](https://arxiv.org/abs/1706.06544) Killian, Daulton, Konidaris, Doshi-Velez
@@ -3417,7 +3437,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"Zero-sum games such as chess and poker are, abstractly, functions that evaluate pairs of agents, for example labeling them ‘winner’ and ‘loser’. If the game is approximately transitive, then selfplay generates sequences of agents of increasing strength. However, nontransitive games, such as rock-paper-scissors, can exhibit strategic cycles, and there is no longer a clear objective – we want agents to increase in strength, but against whom is unclear. In this paper, we introduce a geometric framework for formulating agent objectives in zero-sum games, in order to construct adaptive sequences of objectives that yield openended learning. The framework allows us to reason about population performance in nontransitive games, and enables the development of a new algorithm (rectified Nash response, PSROrN) that uses game-theoretic niching to construct diverse populations of effective agents, producing a stronger set of agents than existing algorithms."  
 >	"The paper is about formulating useful objectives in nontransitive games (e.g. poker or StarCraft), which turns out to be a surprisingly subtle problem. Usually, the learning objective is *given*: minimize a loss or maximize rewards. In nontransitive games, the objective is unclear. Yes, to win, but against whom? Beating paper and beating scissors in rock-paper-scissors are different objectives, that pull in different directions. Blizzard has painstakingly embedded many rock-paper-scissor cycles into SC2. For example, ground units, void rays and phoenixes have this kind of dynamic. These endless exploits are a large part of why humans find the game is so rich and interesting. Nontransitivity has also been linked to biodiversity. Which makes sense! If there are lots of ways of “winning” in an ecosystem, then there’ll be lots of niches for organisms to evolve into. The problem is that there’s no clear way to define the fitness of individuals in nontransitive games — which is better, rock or paper? And if you don’t have a clear objective, then all the compute in the world won’t save you. Our solution is to formulate population-level objectives, using tools like Nash equilibria. Rather than trying to find a single dominant agent, which may not exist, the goal is to find all the underlying strategic dimensions of the game, and the best ways of executing them. Doing this right requires some cool geometry: we extend the idea of a 1-dim fitness landscape to multi-dim gamescapes that represent the latent objectives in a game."  
 >	"In a game with finite sets of strategies, the right thing to do is to find mixed Nash. If strategies are parametrized by (say) neural nets, you've got no hope of computing Nash over all of them. So you have to find "the right" finite set of agents/strategies to work with. That's what we mean when we talk about growing the gamescape in useful directions: finding a good (finite) set of agents in this vast continuum of potential strategies. Once we've got them, Nash is a good way to go."  
-  - `video` <https://slideslive.com/38917930/learning-theory-games> (1:00:44) (Balduzzi)
+  - `video` <https://slideslive.com/38917930/learning-theory-games?t=3644> (Balduzzi)
 
 #### ["A Unified Game-Theoretic Approach to Multiagent Reinforcement Learning"](https://arxiv.org/abs/1711.00832) Lanctot, Zambaldi, Gruslys, Lazaridou, Tuyls, Perolat, Silver, Graepel
 >	"We first observe that independent reinforcement learners produce policies that can be jointly correlated, failing to generalize well during execution with other agents. We quantify this effect by proposing a new metric called joint policy correlation. We then propose an algorithm motivated by game-theoretic foundations, which generalises several previous approaches such as fictitious play, iterated best response, independent RL, and double oracle. We show that our algorithm can reduce joint policy correlation significantly in first-person coordination games, and finds robust counter-strategies in a common poker benchmark game."  

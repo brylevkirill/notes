@@ -1,7 +1,6 @@
   Reinforcement Learning combines a control problem with statistical estimation: the system dynamics are not known to the agent but can be learned through experience.
 
 
-  * [**introduction**](#introduction)
   * [**applications**](#applications)
   * [**overview**](#overview)
   * [**deep reinforcement learning**](#deep-reinforcement-learning)
@@ -199,9 +198,7 @@
 	"Google AlphaGo is a historical tour of AI ideas: 70s (Alpha-Beta), 80s/90s (RL & self-play), 00's (Monte-Carlo), 10's (deep neural networks)."  
 	[history of ideas](http://youtube.com/watch?v=UMm0XaCFTJQ) by Richard Sutton, Czaba Szepesvari, Michael Bowling, Ryan Hayward, Martin Muller `video`  
 
-	["AlphaGo, In Context"](https://medium.com/@karpathy/alphago-in-context-c47718cb95a5) by Andrej Karpathy
-
-	[AlphaGo documentary](https://netflix.com/title/80190844) `video`
+	[AlphaGo documentary](https://youtube.com/watch?v=WXuK6gekU1Y) `video`
 
 	[AlphaGo vs Lee Sedol](https://youtube.com/playlist?list=PLqYmG7hTraZDEaLdPx7GJ284kuE2xcFXu) games `video`  
 	[AlphaGo vs Ke Jie](https://youtube.com/playlist?list=PLqYmG7hTraZDEaLdPx7GJ284kuE2xcFXu) games `video`  
@@ -323,8 +320,8 @@
 
 	[**"QT-Opt: Scalable Deep Reinforcement Learning for Vision-Based Robotic Manipulation"**](#qt-opt-scalable-deep-reinforcement-learning-for-vision-based-robotic-manipulation-kalashnikov-et-al) by Kalashnikov et al. `paper` `summary`
 
-	[QT-Opt overview](http://www.fields.utoronto.ca/video-archive/2019/10/2509-21418) (19:54) by Sergey Levine `video`  
 	[QT-Opt overview](https://youtu.be/U1dD8UALTu0?t=16m25s) by Sergey Levine `video`  
+	[QT-Opt overview](http://www.fields.utoronto.ca/video-archive/2019/10/2509-21418) (19:54) by Sergey Levine `video`  
 	[QT-Opt overview](https://video.ethz.ch/events/2018/corl/c7111aff-c968-43cd-ad0f-b42ddcccbf62.html) by Dmitry Kalashnikov `video`  
 
 	[QT-Opt demo](https://youtube.com/watch?v=z-2q1eMAwps)
@@ -602,7 +599,7 @@
 ----
 #### batch reinforcement learning
 
-  ["The sub-basement of RL"](https://youtube.com/watch?v=373_zVWceqA) by Dale Schuurmans `video`
+  ["The Sub-basement of RL"](https://youtube.com/watch?v=373_zVWceqA) by Dale Schuurmans `video`
 
 
 ----
@@ -858,7 +855,6 @@
 	[**"VIME: Variational Information Maximizing Exploration"**](#vime-variational-information-maximizing-exploration-houthooft-chen-duan-schulman-turck-abbeel) by Houthooft et al. `paper` `summary`  
 	[**"Planning to Be Surprised: Optimal Bayesian Exploration in Dynamic Environments"**](#planning-to-be-surprised-optimal-bayesian-exploration-in-dynamic-environments-sun-gomez-schmidhuber) by Sun et al. `paper` `summary`  
 	[**"Model-Based Active Exploration"**](#model-based-active-exploration-shyam-jaskowski-gomez) by Shyam et al. `paper` `summary`  
-	[**"Exploration Potential"**](#exploration-potential-leike) by Leike `paper` `summary`  
 
 	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---information-theoretic-and-distributional-models---information-gain-motivation)  
 	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
@@ -898,6 +894,7 @@
 	[**"Large-Scale Study of Curiosity-Driven Learning"**](#large-scale-study-of-curiosity-driven-learning-burda-edwards-pathak-storkey-darrell-efros) by Burda et al. `paper` `summary`  
 	[**"Curiosity-driven Exploration by Self-supervised Prediction"**](#curiosity-driven-exploration-by-self-supervised-prediction-pathak-agrawal-efros-darrell) by Pathak et al. `paper` `summary`  
 	[**"Exploration by Random Network Distillation"**](#exploration-by-random-network-distillation-burda-edwards-storkey-klimov) by Burda et al. `paper` `summary`  
+	[**"Self-Supervised Exploration via Disagreement"**](#self-supervised-exploration-via-disagreement-pathak-et-al) by Pathak et al. `paper` `summary`  
 
 	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---predictive-models---predictive-novelty-motivation)  
 	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
@@ -1345,6 +1342,7 @@
 ----
 
   ["Optimal Learning: Computational Procedures for Bayes-adaptive Markov Decision Processes"](https://researchgate.net/publication/34273562_Optimal_learning_microform_computational_procedures_for_Bayes-adaptive_Markov_decision_processes) by Duff and Barto `paper`  
+  ["An Analytic Solution to Discrete Bayesian Reinforcement Learning"](https://researchgate.net/publication/221346184_An_analytic_solution_to_discrete_Bayesian_reinforcement_learning) by Poupart et al. `paper`  
   ["Bayes-Adaptive POMDPs"](https://papers.nips.cc/paper/3333-bayes-adaptive-pomdps) by Ross et al. `paper`  
   ["Monte-Carlo Planning in Large POMDPs"](https://papers.nips.cc/paper/4031-monte-carlo-planning-in-large-pomdps) by Silver et al. `paper`
 	([overview](https://yadi.sk/i/lOAUu7o13JBHFz) (1:39:35) by Pavel Shvechikov `video` `in russian`, [demo](https://youtube.com/watch?v=fXuOeNM_yEk) `video`)  
@@ -1959,7 +1957,7 @@ interesting recent papers:
 ----
 >	"The CFR algorithm is actually somewhat similar to Q-learning, but the connection is difficult to see because the algorithms came out of different communities, so the notation is all different."
 
-  - `video` <https://slideslive.com/38917930/learning-theory-games> (1:05:59) (Brown)
+  - `video` <https://slideslive.com/38917930/learning-theory-games?t=3959> (Brown)
   - <https://reddit.com/r/MachineLearning/comments/ceece3/ama_we_are_noam_brown_and_tuomas_sandholm>
   - <https://int8.io/counterfactual-regret-minimization-for-poker-ai>
   - <http://modelai.gettysburg.edu/2013/cfr/index.html#description>
@@ -2538,6 +2536,7 @@ interesting recent papers:
   - `video` <https://youtu.be/qduxl-vKz1E?t=1h16m30s> (Seleznev) `in russian`
   - `video` <https://youtube.com/watch?v=qKyOLNVpknQ> (Pavlov) `in russian`
   - `notes` <http://pemami4911.github.io/paper-summaries/deep-rl/2016/10/08/unifying-count-based-exploration-and-intrinsic-motivation.html>
+  - `paper` ["Approximate Exploration through State Abstraction"](https://arxiv.org/abs/1808.09819) by Taiga et al.
   - `paper` [**"On Bonus Based Exploration Methods In The Arcade Learning Environment"**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#on-bonus-based-exploration-methods-in-the-arcade-learning-environment-taiga-fedus-machado-courville-bellemare) by Taiga et al. `summary`
 
 
@@ -2589,9 +2588,10 @@ interesting recent papers:
 #### ["Planning to Be Surprised: Optimal Bayesian Exploration in Dynamic Environments"](https://arxiv.org/abs/1103.5708) Sun, Gomez, Schmidhuber
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#planning-to-be-surprised-optimal-bayesian-exploration-in-dynamic-environments-sun-gomez-schmidhuber>
 
+
 #### ["Model-Based Active Exploration"](https://arxiv.org/abs/1810.12162) Shyam, Jaskowski, Gomez
-  `MAX` `planning to explore`
->	"Efficient exploration is an unsolved problem in Reinforcement Learning which is usually addressed by reactively rewarding the agent for fortuitously encountering novel situations. This paper introduces an efficient active exploration algorithm, Model-Based Active eXploration (MAX), which uses an ensemble of forward models to plan to observe novel events. This is carried out by optimizing agent behaviour with respect to a measure of novelty derived from the Bayesian perspective of exploration, which is estimated using the disagreement between the futures predicted by the ensemble members. We show empirically that in semi-random discrete environments where directed exploration is critical to make progress, MAX is at least an order of magnitude more efficient than strong baselines. MAX scales to high-dimensional continuous environments where it builds task-agnostic models that can be used for any downstream task."
+  `MAX` `planning to explore` `pure exploration` `ICML 2019`
+>	"Efficient exploration is an unsolved problem in Reinforcement Learning which is usually addressed by reactively rewarding the agent for fortuitously encountering novel situations. This paper introduces an efficient active exploration algorithm, Model-Based Active eXploration, which uses an ensemble of forward models to plan to observe novel events. This is carried out by optimizing agent behaviour with respect to a measure of novelty derived from the Bayesian perspective of exploration, which is estimated using the disagreement between the futures predicted by the ensemble members. We show empirically that in semi-random discrete environments where directed exploration is critical to make progress, MAX is at least an order of magnitude more efficient than strong baselines. MAX scales to high-dimensional continuous environments where it builds task-agnostic models that can be used for any downstream task."
 
 >	"While MAX can be used in conjunction with conventional policy learning to maximize external reward, this paper focuses on pure exploration: exploration disregarding or in the absence of external reward, followed by exploitation. This setup is more natural in situations where it is useful to do task-agnostic exploration and learn models that can later be exploited for multiple tasks, including those that are not known a priori."
 
@@ -2629,18 +2629,6 @@ interesting recent papers:
   - `notes` <http://pemami4911.github.io/paper-summaries/2016/09/04/VIME.html>
   - `code` <https://github.com/openai/vime>
   - [**Artificial Curiosity and Creativity**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory of Juergen Schmidhuber
-
-
-#### ["Exploration Potential"](http://arxiv.org/abs/1609.04994) Leike
->	"We introduce exploration potential, a quantity that measures how much a reinforcement learning agent has explored its environment class. In contrast to information gain, exploration potential takes the problem’s reward structure into account. This leads to an exploration criterion that is both necessary and sufficient for asymptotic optimality (learning to act optimally across the entire environment class). Our experiments in multi-armed bandits use exploration potential to illustrate how different algorithms make the tradeoff between exploration and exploitation."
-
->	"In this paper, we propose exploration potential, a quantity that measures reward-directed exploration. We consider model-based reinforcement learning in partially or fully observable domains. Informally, exploration potential is the Bayes-expected absolute deviation of the value of optimal policies. Exploration potential is similar to information gain about the environment, but explicitly takes the problem’s reward structure into account. We show that this leads to a exploration criterion that is both necessary and sufficient for asymptotic optimality (learning to act optimally across an environment class): a reinforcement learning agent learns to act optimal in the limit if and only if the exploration potential converges to 0. As such, exploration potential captures the essence of what it means to ‘explore the right amount’."
-
->	"Another exploration quantity that is both necessary and sufficient for asymptotic optimality is information gain about the optimal policy (Russo and Van Roy, 2014; Reddy et al., 2016). In contrast to exploration potential, it is not measured on the scale of rewards, making an explicit value-of-information tradeoff more difficult. For example, consider a 3-armed Gaussian bandit problem with means 0.6, 0.5, and −1. The information content is identical in every arm. Hence an exploration strategy based on maximizing information gain about the environment would query the third arm, which is easily identifiable as suboptimal, too frequently (linearly versus logarithmically). This arm provides information, but this information is not very useful for solving the reinforcement learning task. In contrast, an exploration potential based exploration strategy concentrates its exploration on the first two arms."
-
->	"Based on the recent successes in approximating information gain (Houthooft et al., 2016), we are hopeful that exploration potential can also be approximated in practice. Since computing the posterior is too costly for complex reinforcement learning problems, we could (randomly) generate a few environments and estimate the sum in Definition 1 with them."
-
->	"In this paper we only scratch the surface on exploration potential and leave many open questions. Is this the correct definition? What are good rates at which EP should converge to 0? Is minimizing EP the most efficient exploration strategy? Can we compute EP more efficiently than information gain?"
 
 
 
@@ -2715,29 +2703,6 @@ interesting recent papers:
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)
 
 ----
-#### ["Learning to Play with Intrinsically-Motivated Self-Aware Agents"](https://arxiv.org/abs/1802.07442) Haber, Mrowca, Fei-Fei, Yamins
-  `prediction error`
->	"Infants are experts at playing, with an amazing ability to generate novel structured behaviors in unstructured environments that lack clear extrinsic reward signals. We seek to mathematically formalize these abilities using a neural network that implements curiosity-driven intrinsic motivation. Using a simple but ecologically naturalistic simulated environment in which an agent can move and interact with objects it sees, we propose a "world-model" network that learns to predict the dynamic consequences of the agent's actions. Simultaneously, we train a separate explicit "self-model" that allows the agent to track the error map of its own world-model, and then uses the self-model to adversarially challenge the developing world-model. We demonstrate that this policy causes the agent to explore novel and informative interactions with its environment, leading to the generation of a spectrum of complex behaviors, including ego-motion prediction, object attention, and object gathering. Moreover, the world-model that the agent learns supports improved performance on object dynamics prediction, detection, localization and recognition tasks."
-
-  - `video` <https://youtu.be/qvxgsxQFHgQ?t=47m46s> (Ivanov) `in russian`
-
-
-#### ["Large-Scale Study of Curiosity-Driven Learning"](https://arxiv.org/abs/1808.04355) Burda, Edwards, Pathak, Storkey, Darrell, Efros
-  `prediction error`
->	"Reinforcement learning algorithms rely on carefully engineering environment rewards that are extrinsic to the agent. However, annotating each environment with hand-designed, dense rewards is not scalable, motivating the need for developing reward functions that are intrinsic to the agent. Curiosity is a type of intrinsic reward function which uses prediction error as reward signal. In this paper: (a) We perform the first large-scale study of purely curiosity-driven learning, i.e. without any extrinsic rewards, across 54 standard benchmark environments, including the Atari game suite. Our results show surprisingly good performance, and a high degree of alignment between the intrinsic curiosity objective and the hand-designed extrinsic rewards of many game environments. (b) We investigate the effect of using different feature spaces for computing prediction error and show that random features are sufficient for many popular RL game benchmarks, but learned features appear to generalize better (e.g. to novel game levels in Super Mario Bros.). (c) We demonstrate limitations of the prediction-based rewards in stochastic setups."
-
-  - <https://pathak22.github.io/large-scale-curiosity>
-  - `video` <https://youtube.com/watch?v=l1FqtAHfJLI>
-  - `video` <https://youtu.be/8NR6euSDfsM?t=9m4s> (Darrell)
-  - `video` <https://vk.com/video-44016343_456240849> (Efros)
-  - `video` <https://slideslive.com/38909803/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework> (1:29:06) (Biehl)
-  - `video` <https://youtu.be/qvxgsxQFHgQ?t=59m45s> (Ivanov) `in russian`
-  - `video` <https://youtu.be/EMv1AVLOnto?t=19m42s> (Svidchenko) `in russian`
-  - `code` <https://github.com/openai/large-scale-curiosity>
-  - `paper` ["Curiosity-driven Exploration by Self-supervised Prediction"](#large-scale-study-of-curiosity-driven-learning-burda-edwards-pathak-storkey-darrell-efros) by Burda et al. `summary`
-  - `paper` [**"On Bonus Based Exploration Methods In The Arcade Learning Environment"**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#on-bonus-based-exploration-methods-in-the-arcade-learning-environment-taiga-fedus-machado-courville-bellemare) by Taiga et al. `summary`
-
-
 #### ["Curiosity-driven Exploration by Self-supervised Prediction"](https://arxiv.org/abs/1705.05363) Pathak, Agrawal, Efros, Darrell
   `ICM` `prediction error`
 >	"In many real-world scenarios, rewards extrinsic to the agent are extremely sparse, or absent altogether. In such cases, curiosity can serve as an intrinsic reward signal to enable the agent to explore its environment and learn skills that might be useful later in its life. We formulate curiosity as the error in an agent's ability to predict the consequence of its own actions in a visual feature space learned by a self-supervised inverse dynamics model. Our formulation scales to high-dimensional continuous state spaces like images, bypasses the difficulties of directly predicting pixels, and, critically, ignores the aspects of the environment that cannot affect the agent. The proposed approach is evaluated in two environments: VizDoom and Super Mario Bros. Three broad settings are investigated: 1) sparse extrinsic reward, where curiosity allows for far fewer interactions with the environment to reach the goal; 2) exploration with no extrinsic reward, where curiosity pushes the agent to explore more efficiently; and 3) generalization to unseen scenarios (e.g. new levels of the same game) where the knowledge gained from earlier experience helps the agent explore new places much faster than starting from scratch."
@@ -2761,6 +2726,29 @@ interesting recent papers:
   - `paper` [**"On Bonus Based Exploration Methods In The Arcade Learning Environment"**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#on-bonus-based-exploration-methods-in-the-arcade-learning-environment-taiga-fedus-machado-courville-bellemare) by Taiga et al. `summary`
 
 
+#### ["Learning to Play with Intrinsically-Motivated Self-Aware Agents"](https://arxiv.org/abs/1802.07442) Haber, Mrowca, Fei-Fei, Yamins
+  `prediction error`
+>	"Infants are experts at playing, with an amazing ability to generate novel structured behaviors in unstructured environments that lack clear extrinsic reward signals. We seek to mathematically formalize these abilities using a neural network that implements curiosity-driven intrinsic motivation. Using a simple but ecologically naturalistic simulated environment in which an agent can move and interact with objects it sees, we propose a "world-model" network that learns to predict the dynamic consequences of the agent's actions. Simultaneously, we train a separate explicit "self-model" that allows the agent to track the error map of its own world-model, and then uses the self-model to adversarially challenge the developing world-model. We demonstrate that this policy causes the agent to explore novel and informative interactions with its environment, leading to the generation of a spectrum of complex behaviors, including ego-motion prediction, object attention, and object gathering. Moreover, the world-model that the agent learns supports improved performance on object dynamics prediction, detection, localization and recognition tasks."
+
+  - `video` <https://youtu.be/qvxgsxQFHgQ?t=47m46s> (Ivanov) `in russian`
+
+
+#### ["Large-Scale Study of Curiosity-Driven Learning"](https://arxiv.org/abs/1808.04355) Burda, Edwards, Pathak, Storkey, Darrell, Efros
+  `prediction error`
+>	"Reinforcement learning algorithms rely on carefully engineering environment rewards that are extrinsic to the agent. However, annotating each environment with hand-designed, dense rewards is not scalable, motivating the need for developing reward functions that are intrinsic to the agent. Curiosity is a type of intrinsic reward function which uses prediction error as reward signal. In this paper: (a) We perform the first large-scale study of purely curiosity-driven learning, i.e. without any extrinsic rewards, across 54 standard benchmark environments, including the Atari game suite. Our results show surprisingly good performance, and a high degree of alignment between the intrinsic curiosity objective and the hand-designed extrinsic rewards of many game environments. (b) We investigate the effect of using different feature spaces for computing prediction error and show that random features are sufficient for many popular RL game benchmarks, but learned features appear to generalize better (e.g. to novel game levels in Super Mario Bros.). (c) We demonstrate limitations of the prediction-based rewards in stochastic setups."
+
+  - <https://pathak22.github.io/large-scale-curiosity>
+  - `video` <https://youtube.com/watch?v=l1FqtAHfJLI>
+  - `video` <https://youtu.be/8NR6euSDfsM?t=9m4s> (Darrell)
+  - `video` <https://vk.com/video-44016343_456240849> (Efros)
+  - `video` <https://slideslive.com/38909803/tutorial-on-comparing-intrinsic-motivations-in-a-unified-framework> (1:29:06) (Biehl)
+  - `video` <https://youtu.be/qvxgsxQFHgQ?t=59m45s> (Ivanov) `in russian`
+  - `video` <https://youtu.be/EMv1AVLOnto?t=19m42s> (Svidchenko) `in russian`
+  - `code` <https://github.com/openai/large-scale-curiosity>
+  - `paper` ["Curiosity-driven Exploration by Self-supervised Prediction"](#large-scale-study-of-curiosity-driven-learning-burda-edwards-pathak-storkey-darrell-efros) by Burda et al. `summary`
+  - `paper` [**"On Bonus Based Exploration Methods In The Arcade Learning Environment"**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#on-bonus-based-exploration-methods-in-the-arcade-learning-environment-taiga-fedus-machado-courville-bellemare) by Taiga et al. `summary`
+
+
 #### ["Exploration by Random Network Distillation"](https://arxiv.org/abs/1810.12894) Burda, Edwards, Storkey, Klimov
   `RND` `prediction error`
 >	"We introduce an exploration bonus for deep reinforcement learning methods that is easy to implement and adds minimal overhead to the computation performed. The bonus is the error of a neural network predicting features of the observations given by a fixed randomly initialized neural network. We also introduce a method to flexibly combine intrinsic and extrinsic rewards. We find that the random network distillation bonus combined with this increased flexibility enables significant progress on several hard exploration Atari games. In particular we establish state of the art performance on Montezuma’s Revenge, a game famously difficult for deep reinforcement learning methods. To the best of our knowledge, this is the first method that achieves better than average human performance on this game without using demonstrations or having access to the underlying state of the game, and occasionally completes the first level."
@@ -2780,6 +2768,18 @@ interesting recent papers:
   - `video` <https://youtu.be/EMv1AVLOnto?t=17m44s> (Svidchenko) `in russian`
   - `code` <https://github.com/openai/random-network-distillation>
   - `paper` [**"On Bonus Based Exploration Methods In The Arcade Learning Environment"**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#on-bonus-based-exploration-methods-in-the-arcade-learning-environment-taiga-fedus-machado-courville-bellemare) by Taiga et al. `summary`
+
+
+#### ["Self-Supervised Exploration via Disagreement"](https://arxiv.org/abs/1906.04161) Pathak, Gandhi, Gupta
+  `prediction error variance` `ICML 2019`
+>	"Efficient exploration is a long-standing problem in sensorimotor learning. Major advances have been demonstrated in noise-free, non-stochastic domains such as video games and simulation. However, most of these formulations either get stuck in environments with stochastic dynamics or are too inefficient to be scalable to real robotics setups. In this paper, we propose a formulation for exploration inspired by the work in active learning literature. Specifically, we train an ensemble of dynamics models and incentivize the agent to explore such that the disagreement of those ensembles is maximized. This allows the agentto learn skills by exploring in a self-supervised manner without any external reward. Notably, we further leverage the disagreement objective to optimize the agent’s policy in a differentiable manner, without using reinforcement learning, which results in a sample-efficient exploration. We demonstrate the efficacy of this formulation across a variety of benchmark environments including stochastic-Atari, Mujoco and Unity. Finally, we implement our differentiable exploration on a real robot which learns to interact with objects completely from scratch."
+
+----
+>	"similar to SOTA methods in determinstic environments but does not get stuck in stochastic scenarios (TV with remote)"
+
+  - <https://pathak22.github.io/exploration-by-disagreement>
+  - `video` <https://facebook.com/icml.imls/videos/355035025132741?t=4611> (Pathak)
+  - `code` <https://github.com/pathak22/exploration-by-disagreement>
 
 
 

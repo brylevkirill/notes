@@ -2346,7 +2346,7 @@ Yoshua Bengio:
 >	- coherent and sharp samples"  
 
   - <https://laurent-dinh.github.io/2016/07/12/real-nvp-visualization.html> (demo)
-  - `video` <https://slideslive.com/38917907/tutorial-on-normalizing-flows> (12:35) (Jang)
+  - `video` <https://slideslive.com/38917907/tutorial-on-normalizing-flows?t=755> (Jang)
   - `video` <https://channel9.msdn.com/events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-1> (08:19) (Dinh)
   - `video` <https://periscope.tv/hugo_larochelle/1ypKdAVmbEpGW> (Dinh)
   - `video` <https://cds.cern.ch/record/2302480> (43:54) (Rezende)
