@@ -201,7 +201,9 @@
 	[AlphaGo documentary](https://youtube.com/watch?v=WXuK6gekU1Y) `video`
 
 	[AlphaGo vs Lee Sedol](https://youtube.com/playlist?list=PLqYmG7hTraZDEaLdPx7GJ284kuE2xcFXu) games `video`  
-	[AlphaGo vs Ke Jie](https://youtube.com/playlist?list=PLqYmG7hTraZDEaLdPx7GJ284kuE2xcFXu) games `video`  
+	[AlphaGo Master vs pros](https://youtube.com/playlist?list=PLqpN3-2FP-kI21lBD8R7Q9mwXQG_2sYnD) games `video`  
+	[AlphaGo Master vs Ke Jie](https://youtube.com/playlist?list=PLqYmG7hTraZDEaLdPx7GJ284kuE2xcFXu) games `video`  
+	[AlphaGo Zero vs Master](https://youtube.com/playlist?list=PLqpN3-2FP-kLKm8sqTWUBShLEzJ9LeHok) games `video`  
 
 ----
   - *Chess*  
@@ -607,6 +609,7 @@
 
   Updates to a statistic of a dynamical process are said to be off-policy if their distribution does not match the dynamics of the process, particularly if the mismatch is due to the way actions are chosen. The prototypical example is learning of value function for one policy, the target policy, using data obtained while following another policy, the behavior policy.
 
+  [overview](https://youtube.com/watch?v=xuY1xIxFx5I) by Doina Precup `video`  
   [overview](http://videolectures.net/DLRLsummerschool2018_white_policy_learning) by Martha White `video`  
   [overview](http://videolectures.net/deeplearning2017_thomas_safe_rl/#t=1821) by Philip Thomas `video`  
 
@@ -694,17 +697,17 @@
   ["The Promise of Hierarchical Reinforcement Learning"](https://thegradient.pub/the-promise-of-hierarchical-reinforcement-learning/) by Yannis Flet-Berliac  
   ["Learning in Brains and Machines: Synergistic and Modular Action"](http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-3-synergistic-and-modular-action/) by Shakir Mohamed  
 
+  [overview](https://youtube.com/watch?v=vixOKrjmu6A) by Andre Barreto `video`  
+  [overview](https://youtube.com/watch?v=sdBE3P6xL7E) by Petr Kuderov `video` `in russian`  
+
   *Options framework:*  
+	[overview](https://youtube.com/watch?v=e8b0yC6COJ8) by Doina Precup `video`  
 	[overview](http://videolectures.net/DLRLsummerschool2018_precup_temporal_abstraction) by Doina Precup `video`  
+	[overview](https://youtube.com/watch?v=GntIVgNKkCI) by Doina Precup `video`  
 	[overview](http://videolectures.net/deeplearning2016_precup_advanced_lr) by Doina Precup `video`  
-	["Temporal Abstraction in Reinforcement Learning"](https://youtube.com/watch?v=GntIVgNKkCI) by Doina Precup `video`  
-	["Advances in Option Construction: The Option-Critic Architecture"](https://youtube.com/watch?v=8r_EoYnPjGk) by Pierre-Luc Bacon `video`  
-	["Progress on Deep Reinforcement Learning with Temporal Abstraction"](https://vimeo.com/249559422) by Doina Precup `video`  
 
   *Feudal framework:*  
 	[overview](https://vimeo.com/249557775) by David Silver `video`  
-
-  [overview](https://youtube.com/watch?v=sdBE3P6xL7E) by Petr Kuderov `video` `in russian`
 
   [Hierarchical RL](http://sites.google.com/view/hrlnips2017) workshop `video`  
   [Abstraction in RL](http://rlabstraction2016.wixsite.com/icml) workshop `video`  
@@ -960,6 +963,7 @@
 ----
 
   [overview](http://youtu.be/sGuiWX07sKw?t=11m46s) by David Silver `video`  
+  [overview](http://youtube.com/watch?v=eJ3wZ14RRBQ) by Csaba Szepesvari `video`  
   [overview](http://youtu.be/fIKkhoI1kF4?t=19m23s) by Emma Brunskill `video`  
   [overview](http://videolectures.net/DLRLsummerschool2018_lattimore_bandits) by Tor Lattimore `video`  
 
@@ -1589,10 +1593,11 @@
 
   <http://scholarpedia.org/article/Evolution_strategies>
 
-  [overview](http://videolectures.net/deeplearning2016_abbeel_deep_reinforcement#t=784) by Pieter Abbeel `video`
-
   [overview](https://lilianweng.github.io/lil-log/2019/09/05/evolution-strategies.html) by Lilian Weng  
-  ["A Visual Guide to Evolution Strategies"](http://blog.otoro.net/2017/10/29/visual-evolution-strategies/) by David Ha  
+  [overview](http://blog.otoro.net/2017/10/29/visual-evolution-strategies/) by David Ha  
+
+  [overview](https://youtube.com/watch?v=SQtOI9jsrJ0) by Xi Chen `video`  
+  [overview](https://youtube.com/watch?v=rHAasIIGIEc) by Evgenia Elistratova `video` `in russian`  
 
   ["Completely Derandomized Self-Adaptation in Evolution Strategies"](https://www.lri.fr/~hansen/cmaartic.pdf) (CMA-ES) by Hansen and Ostermeier `paper`  
   ["Natural Evolution Strategies"](http://jmlr.org/papers/volume15/wierstra14a/wierstra14a.pdf) by Wierstra et al. `paper`  
@@ -1609,6 +1614,7 @@
 
   likelihood ratio policy gradient estimation
 
+----
 
   introduction by Andrej Karpathy ([post](http://karpathy.github.io/2016/05/31/rl), [talk](https://youtube.com/watch?v=tqrcjHuNdmQ) `video`)   
   [introduction](http://kvfrans.com/simple-algoritms-for-solving-cartpole/) by Kevin Frans  
@@ -3331,6 +3337,7 @@ interesting recent papers:
 
   - `post` <https://blog.openai.com/evolution-strategies/>
   - `video` <https://youtube.com/watch?v=SQtOI9jsrJ0> (Chen) `video`
+  - `video` <http://youtube.com/watch?v=rHAasIIGIEc> (Elistratova) `in russian`
   - `video` <https://youtube.com/watch?v=Rd0UdJFYkqI> (Temirchev) `in russian`
   - `video` <https://youtube.com/watch?v=8jKC95KklT0> (Karazeev) `in russian`
   - `post` <http://inference.vc/evolutionary-strategies-embarrassingly-parallelizable-optimization/> (Huszar)

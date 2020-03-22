@@ -614,7 +614,7 @@
   - `post` <https://deepmind.com/blog/population-based-training-neural-networks/>
   - `post` <https://deepmind.com/blog/article/how-evolutionary-selection-can-train-more-capable-self-driving-cars/>
   - `video` <https://vimeo.com/250399261> (Jaderberg)
-  - `video` <https://youtube.com/watch?v=pEANQ8uau88>
+  - `video` <https://youtube.com/watch?v=pEANQ8uau88> (Shorten)
   - `video` <https://youtube.com/watch?v=uuOoqAiB2g0> (Sazanovich) `in russian`
   - `paper` <https://arxiv.org/abs/1902.01894> by Li et al.
 

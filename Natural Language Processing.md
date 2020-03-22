@@ -317,7 +317,9 @@
 
   - `demo` <https://talktotransformer.com>
   - `post` <https://openai.com/blog/better-language-models>
-  - `video` <https://youtube.com/watch?v=UULqu7LQoHs> + <https://youtube.com/watch?v=9ebPNEHRwXU>
+  - `post` <https://openai.com/blog/language-unsupervised> *(GPT-1)*
+  - `video` <https://youtube.com/watch?v=UULqu7LQoHs> (Shorten)
+  - `video` <https://youtube.com/watch?v=9ebPNEHRwXU> (Shorten) *(GPT-1)*
   - `video` <https://youtube.com/watch?v=u1_qMdb0kYU> (Kilcher)
   - `video` <https://youtu.be/w3ues-NayAs?t=23m15s> (Sutskever)
   - `video` <https://youtu.be/X-B3nAN7YRM?t=14m25s> (Sutskever)
@@ -326,6 +328,7 @@
   - `video` <https://youtu.be/qIEfJ6OBGj8?t=14m25s> (Hinton)
   - `post` <https://amaarora.github.io/2020/02/18/annotatedGPT2.html>
   - `post` <https://jalammar.github.io/illustrated-gpt2>
+
 
 
 
@@ -689,7 +692,7 @@
 >	"There is rising interest in vector-space word embeddings and their use in NLP, especially given recent methods for their fast estimation at very large scale. Nearly all this work, however, assumes a single vector per word type - ignoring polysemy and thus jeopardizing their usefulness for downstream tasks. We present an extension to the Skip-gram model that efficiently learns multiple embeddings per word type. It differs from recent related work by jointly performing word sense discrimination and embedding learning, by non-parametrically estimating the number of senses per word type, and by its efficiency and scalability. We present new state-of-the-art results in the word similarity in context task and demonstrate its scalability by training with one machine on a corpus of nearly 1 billion tokens in less than 6 hours."
 
   - <https://people.cs.umass.edu/~arvind/emnlp2014wordvectors/>
-  - `video` <http://youtube.com/watch?v=EeBj4TyW8B8>
+  - `video` <http://youtube.com/watch?v=EeBj4TyW8B8> (Neelakantan)
 
 
 #### ["Word Representations via Gaussian Embedding"](http://arxiv.org/abs/1412.6623) Vilnis, McCallum

@@ -44,9 +44,14 @@
   [overview](https://youtube.com/watch?v=5ir_fCgzfLM) by Vladimir Gulin `video` `in russian`  
   [overview](https://youtube.com/watch?v=MLljnzsz9Dk) by Alexey Dral `video` `in russian`  
 
+  [overview](https://youtube.com/watch?v=X1a5jNgqzGk) of applications in Yandex by Boris Sharchilev `video` `in russian`  
   [overview](https://youtube.com/watch?v=iGAMPnv-0VY) of applications in Yandex by Igor Lifar and Dmitry Ushanov `video` `in russian`  
   [overview](https://youtube.com/watch?v=OJ0nJb3LfNo) of applications in Yandex by Andrey Zimovnov `video` `in russian`  
   [overview](https://youtube.com/watch?v=JKTneRi2vn8) of applications in Yandex by Michael Rozner `video` `in russian`  
+
+  [overview](https://youtu.be/X1a5jNgqzGk?t=42m38s) of applications in VK by Danila Savenkov `video` `in russian`  
+  [overview](https://vk.com/video-187376020_456239020?list=a28424fc797e02beaf) of applications in VK by Semyon Polyakov `in russian`  
+  [overview](https://vk.com/video-187376020_456239022?list=5e2c11518f60c8d169) of applications in VK by Oleg Lashinin `in russian`  
 
 ----
 
@@ -257,6 +262,7 @@
 #### ["Are We Really Making Much Progress? A Worrying Analysis of Recent Neural Recommendation Approaches"](https://arxiv.org/abs/1907.06902) Dacrema, Cremonesi, Jannach
 >	"Deep learning techniques have become the method of choice for researchers working on algorithmic aspects of recommender systems. With the strongly increased interest in machine learning in general, it has, as a result, become difficult to keep track of what represents the state-of-the-art at the moment, e.g., for top-n recommendation tasks. At the same time, several recent publications point out problems in today's research practice in applied machine learning, e.g., in terms of the reproducibility of the results or the choice of the baselines when proposing new models. In this work, we report the results of a systematic analysis of algorithmic proposals for top-n recommendation tasks. Specifically, we considered 18 algorithms that were presented at top-level research conferences in the last years. Only 7 of them could be reproduced with reasonable effort. For these methods, it however turned out that 6 of them can often be outperformed with comparably simple heuristic methods, e.g., based on nearest-neighbor or graph-based techniques. The remaining one clearly outperformed the baselines but did not consistently outperform a well-tuned non-neural linear ranking method. Overall, our work sheds light on a number of potential problems in today's machine learning scholarship and calls for improved scientific practices in this area."
 
+  - `video` <https://vk.com/video-187376020_456239022?t=9m36s> (Lashinin) `in russian`
   - `video` <https://youtu.be/umyNVwePCtw?t=17m14s> (Bugaychenko) `in russian`
   - `post` <https://habr.com/en/company/ods/blog/472672/#7-are-we-really-making-much-progress-a-worrying-analysis-of-recent-neural-recommendation-approaches> `in russian`
 

@@ -124,9 +124,7 @@
 ----
 
   [course](https://coursera.org/learn/bayesian-methods-in-machine-learning) by Daniil Polykovskiy and Alexander Novikov `video`  
-  [course](http://videolectures.net/course_information_theory_pattern_recognition/) by David MacKay `video`  
-
-  [course](https://www.cs.toronto.edu/~duvenaud/courses/csc412/index.html) by David Duvenaud
+  ["Deep Learning and Bayesian Methods"](http://deepbayes.ru) school from HSE ([videos](https://youtube.com/channel/UC9KcwaZ9gSvcYNs7Jx3oNaQ/playlists))  
 
   [course](https://youtube.com/playlist?list=PLEqoHzpnmTfCiJpMPccTWXD9DB4ERQkyw) by Dmitry Vetrov `video` `in russian`  
   [course](https://lektorium.tv/lecture/30977) by Sergey Nikolenko `video` `in russian`  

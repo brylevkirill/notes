@@ -145,7 +145,7 @@ also been supported by the observation that deep networks strongly rely on spect
 #### ["What's Hidden in a Randomly Weighted Neural Network?"](https://arxiv.org/abs/1911.13299) Ramanujan et al.
   `optimization`
 >	"Training a neural network is synonymous with learning the values of the weights. In contrast, we demonstrate that randomly weighted neural networks contain subnetworks which achieve impressive performance without ever training the weight values. Hidden in a randomly weighted Wide ResNet-50 we show that there is a subnetwork (with random weights) that is smaller than, but matches the performance of a ResNet-34 trained on ImageNet. Not only do these "untrained subnetworks" exist, but we provide an algorithm to effectively find them. We empirically show that as randomly weighted neural networks with fixed weights grow wider and deeper, an "untrained subnetwork" approaches a network with learned weights in accuracy."  
-  - `video` <https://youtube.com/watch?v=C6Tj8anJO-Q>
+  - `video` <https://youtube.com/watch?v=C6Tj8anJO-Q> (Shorten)
 
 #### ["The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks"](https://arxiv.org/abs/1803.03635) Frankle, Carbin
   `optimization` `ICLR 2019`
@@ -154,9 +154,9 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"We present an algorithm to identify winning tickets and a series of experiments that support the lottery ticket hypothesis and the importance of these fortuitous initializations. We consistently find winning tickets that are less than 10-20% of the size of several fully-connected and convolutional feed-forward architectures for MNIST and CIFAR10. Above this size, the winning tickets that we find learn faster than the original network and reach higher test accuracy."  
   - `video` <https://youtube.com/watch?v=CobEbJEYUnU> (Frankle)
   - `video` <https://youtu.be/8UxS4ls6g1g?t=1h25m> (Frankle)
+  - `video` <https://youtube.com/watch?v=LXm_6eq0Cs4> (Shorten)
   - `video` <https://youtube.com/watch?v=5PF-I1NKTmk> (LaLonde)
   - `video` <https://youtube.com/watch?v=jOF5ytrhQEE> (Salvaris)
-  - `video` <https://youtube.com/watch?v=LXm_6eq0Cs4>
   - `video` <https://youtu.be/IRzaWXP3s3U?t=9m47s> (Sobolev) `in russian`
   - `paper` ["Deconstructing Lottery Tickets: Zeros, Signs, and the Supermask"](https://arxiv.org/abs/1905.01067) by Zhou et al. ([post](https://eng.uber.com/deconstructing-lottery-tickets), [notes](https://www.shortscience.org/paper?bibtexKey=zhou2019deconstructing))
   - `paper` ["One Ticket to Win Them All: Generalizing Lottery Ticket Initializations Across Datasets and Optimizers"](https://arxiv.org/abs/1906.02773) by Morcos et al. ([post](https://ai.facebook.com/blog/understanding-the-generalization-of-lottery-tickets-in-neural-networks), [talk](https://youtube.com/watch?v=oOgbHpjTwwA) `video`)
@@ -168,7 +168,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - <https://weightagnostic.github.io>
   - `post` <https://ai.googleblog.com/2019/08/exploring-weight-agnostic-neural.html>
   - `video` <https://youtube.com/watch?v=9jH_XCA00r0> (Ha)
-  - `video` <https://youtube.com/watch?v=QqoKl9N2oCw>
+  - `video` <https://youtube.com/watch?v=QqoKl9N2oCw> (Shorten)
   - `video` <https://youtube.com/watch?v=OmniHm9Fk-A> (Numenta)
 
 #### ["How Does Batch Normalization Help Optimization? (No, It Is Not About Internal Covariate Shift)"](https://arxiv.org/abs/1805.11604) Santurkar, Tsipras, Ilyas, Madry
@@ -448,6 +448,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"As we show empirically, the VAE objective can lead to overly simplified representations which fail to use the network's entire modeling capacity. We present the importance weighted autoencoder, a generative model with the same architecture as the VAE, but which uses a strictly tighter log-likelihood lower bound derived from importance weighting. In the IWAE, the recognition network uses multiple samples to approximate the posterior, giving it increased flexibility to model complex posteriors which do not fit the VAE modeling assumptions."  
   - `video` <https://youtu.be/0IoLKnAg6-s?t=14m41s> (Chen)
   - `video` <https://facebook.com/nipsfoundation/videos/1555493854541848?t=1771> (Teh)
+  - `video` <https://youtube.com/watch?v=rNmgOCWEGDg> (Struminsky) `in russian`
   - `post` <http://dustintran.com/blog/importance-weighted-autoencoders/>
   - `post` <https://casmls.github.io/general/2017/04/24/iwae-aae.html>
   - `notes` <http://artem.sobolev.name/posts/2016-07-14-neural-variational-importance-weighted-autoencoders.html>
@@ -1013,7 +1014,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"Despite early successes in using GANs for unsupervised representation learning, they have since been superseded by approaches based on self-supervision. In this work we show that progress in image generation quality translates to substantially improved representation learning performance. Our approach builds upon the state-of-the-art BigGAN model, extending it to representation learning by adding an encoder and modifying the discriminator. We extensively evaluate the representation learning and generation capabilities of these BigBiGAN models, demonstrating that these generation-based models achieve the state of the art in unsupervised representation learning on ImageNet, as well as in unconditional image generation."  
 >	"BigBiGAN = BigGAN + BiGAN"  
   - `video` <https://youtu.be/DSYzHPW26Ig?t=1h39m52s> (Graves)
-  - `video` <https://youtube.com/watch?v=Jo86d1jx960>
+  - `video` <https://youtube.com/watch?v=Jo86d1jx960> (Shorten)
   - `post` <https://stephanheijl.com/notes_on_large_scale_adversarial_learning.html>
 
 #### ["SCAN: Learning Abstract Hierarchical Compositional Visual Concepts"](https://arxiv.org/abs/1707.03389) Higgins, Sonnerat, Matthey, Pal, Burgess, Botvinick, Hassabis, Lerchner
@@ -1126,6 +1127,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"We show that (1) composition ofdata augmentations plays a critical role in definingeffective predictive tasks, (2) introducing a learn-able nonlinear transformation between the repre-sentation and the contrastive loss substantially im-proves the quality of the learned representations,and (3) contrastive learning benefits from largerbatch sizes and more training steps compared tosupervised learning."  
 >	"By combining these findings, we are able to considerably outperform previous methods for self-supervised and semi-supervised learning on ImageNet. A linear classifier trained on self-supervised representations learned by SimCLR achieves 76.5% top-1 accuracy, which is a 7% relative improvement over previous state-of-the-art, matching the performance of a supervised ResNet-50. When fine-tuned on only 1% of the labels, we achieve 85.8% top-5 accuracy, outperforming AlexNet with 100x fewer labels."  
   - `video` <https://youtu.be/dMUes74-nYY?t=2h10m45s> (Srinivas) `video`
+  - `notes` <https://habr.com/en/company/ods/blog/493016/#9-a-simple-framework-for-contrastive-learning-of-visual-representations> `in russian`
 
 #### ["Revisiting Self-Supervised Visual Representation Learning"](https://arxiv.org/abs/1901.09005) Kolesnikov, Zhai, Beyer
   `representation learning` `self-supervised learning`
@@ -1496,7 +1498,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `StyleGAN` `GAN applications` `image generation`
 >	"We propose an alternative generator architecture for generative adversarial networks, borrowing from style transfer literature. The new architecture leads to an automatically learned, unsupervised separation of high-level attributes (e.g., pose and identity when trained on human faces) and stochastic variation in the generated images (e.g., freckles, hair), and it enables intuitive, scale-specific control of the synthesis."  
   - `video` <https://youtube.com/watch?v=kSLJriaOumA> (demo)
-  - `video` <https://youtube.com/watch?v=AQBti_wN414>
+  - `video` <https://youtube.com/watch?v=AQBti_wN414> (Shorten)
   - `video` <https://youtube.com/watch?v=4WL5EmYi_rA>
   - `post` <https://www.gwern.net/Faces>
 
@@ -1504,7 +1506,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `SAGAN` `GAN applications` `image generation`
 >	"SAGAN allows attention-driven, long-range dependency modeling for image generation tasks. Traditional convolutional GANs generate high-resolution details as a function of only spatially local points in lower-resolution feature maps. In SAGAN, details can be generated using cues from all feature locations. Moreover, the discriminator can check that highly detailed features in distant portions of the image are consistent with each other."  
   - `video` <https://youtube.com/watch?v=FdeHlC4QiqA> (Chen)
-  - `video` <https://youtube.com/watch?v=OVeGatovZ7Y>
+  - `video` <https://youtube.com/watch?v=OVeGatovZ7Y> (Shorten)
 
 #### ["Synthesizing Programs for Images using Reinforced Adversarial Learning"](https://arxiv.org/abs/1804.01118) Ganin, Kulkarni, Babuschkin, Eslami, Vinyals
   `SPIRAL` `GAN applications` `image generation`
@@ -1674,7 +1676,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-Symposium-Session-1> (27:26) (Oord)
   - `video` <https://youtube.com/watch?v=VzMFS1dcIDs>
   - `post` <http://sergeiturukin.com/2017/02/22/pixelcnn.html> + <http://sergeiturukin.com/2017/02/24/gated-pixelcnn.html>
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1606.05328#shagunsodhani>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1606.05328>
 
 #### ["Pixel Recurrent Neural Networks"](http://arxiv.org/abs/1601.06759) Oord, Kalchbrenner, Kavukcuoglu
   `PixelRNN`
@@ -1683,7 +1685,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#pixelrnn>
   - `post` <https://github.com/tensorflow/magenta/blob/master/magenta/reviews/pixelrnn.md>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/OordKK16>
-  - `code` <https://github.com/carpedm20/pixel-rnn-tensorflow>
 
 ----
 #### ["Actively Learning What Makes a Discrete Sequence Valid"](https://arxiv.org/abs/1708.04465) Janz, Westhuizen, Hernandez-Lobato
@@ -2025,10 +2026,13 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `SDQN` `Q-learning`
 >	"We draw inspiration from the recent success of sequence-to-sequence models for structured prediction problems to develop policies over discretized spaces. Central to this method is the realization that complex functions over high dimensional spaces can be modeled by neural networks that use next step prediction. Specifically, we show how Q-values and policies over continuous spaces can be modeled using a next step prediction model over discretized dimensions. With this parameterization, it is possible to both leverage the compositional structure of action spaces during learning, as well as compute maxima over action spaces (approximately). On a simple example task we demonstrate empirically that our method can perform global search, which effectively gets around the local optimization issues that plague DDPG and NAF. We apply the technique to off-policy (Q-learning) methods and show that our method can achieve the state-of-the-art for off-policy methods on several continuous control tasks."  
 
+#### ["Sample-Efficient Deep Reinforcement Learning via Episodic Backward Update"](https://arxiv.org/abs/1805.12375) Lee et al.
+  `EBU` `NeurIPS 2019`
+
 #### ["Learning to Play in a Day: Faster Deep Reinforcement Learning by Optimality Tightening"](https://arxiv.org/abs/1611.01606) He et al.
   `Q-learning`
->	"We propose a novel training algorithm for reinforcement learning which combines the strength of deep Q-learning with a constrained optimization approach to tighten optimality and encourage faster reward propagation."  
->	"Optimality tightening introduces an objective based on the lower/upper bound of the optimal Q-function."  
+>	"Optimality Tightening applies constraints on the target using the values of several neighboring transitions. Simply by adding a few penalty terms to the loss, it efficiently propagates reliable values to achieve fast convergence."  
+>	"Optimality Tightening introduces an objective based on the lower/upper bound of the optimal Q-function."  
   - `video` <https://yadi.sk/i/yBO0q4mI3GAxYd> (1:10:20) (Fritzler) `in russian`
   - `video` <https://youtu.be/mrj_hyH974o?t=16m13s> (Podoprikhin) `in russian`
 
@@ -2341,11 +2345,11 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 ----
 #### ["Deep Reinforcement Learning in a Handful of Trials using Probabilistic Dynamics Models"](https://arxiv.org/abs/1805.12114) Chua, Calandra, McAllister, Levine
-  `PETS` `planning` `using available environment model` `NIPS 2018`
+  `PETS` `planning` `using available environment model` `NeurIPS 2018`
 >	"Model-based reinforcement learning algorithms can attain excellent sample efficiency, but often lag behind the best model-free algorithms in terms of asymptotic performance. This is especially true with high-capacity parametric function approximators, such as deep networks. In this paper, we study how to bridge this gap, by employing uncertainty-aware dynamics models."  
 >	"Probabilistic ensembles with trajectory sampling algorithm combines uncertainty-aware deep network dynamics models with sampling-based uncertainty propagation. Our comparison to state-of-the-art model-based and model-free deep RL algorithms shows that our approach matches the asymptotic performance of model-free algorithms on several challenging benchmark tasks, while requiring significantly fewer samples (e.g., 8 and 125 times fewer samples than Soft Actor Critic and Proximal Policy Optimization respectively on the half-cheetah task)."  
 >	"The dynamics are modelled by an ensemble of probabilistic neural networks models, which captures both epistemic uncertainty from limited data and network capacity, and aleatoric uncertainty from the stochasticity of the ground-truth dynamics. Except for the difference in modeling the dynamics, PETS-RS is the same as RS. Instead, in PETS-CEM, the online optimization problem is solved using cross-entropy method to obtain a better solution."  
-  - `video` <https://sites.google.com/view/drl-in-a-handful-of-trials>
+  - <https://sites.google.com/view/drl-in-a-handful-of-trials>
   - `video` <https://youtube.com/watch?v=pq8xNCETPHU> (Chua)
   - `video` <https://slideslive.com/38915863/learning-models-for-representations-and-planning?t=737> (Lillicrap)
   - `video` <https://youtube.com/watch?v=JU-6x_E__5I> (Temirchev) `in russian`
@@ -2461,6 +2465,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	- values optimize Bellman consistency for current policy  
 >	- actions maximize predicted values by backpropagating through transitions"  
   - <https://dreamrl.github.io> (demo)
+  - `post` <https://ai.googleblog.com/2020/03/introducing-dreamer-scalable.html>
   - `video` <https://slideslive.com/38922025/deep-reinforcement-learning-1?t=3449> (Hafner)
 
 #### ["Temporal Difference Models: Model-Free Deep RL for Model-Based Control"](https://arxiv.org/abs/1802.09081) Pong, Gu, Dalal, Levine
@@ -2561,8 +2566,8 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"Deep Planning Network is a purely model-based agent that learns the environment dynamics from images and chooses actions through fast online planning in latent space. To achieve high performance, the dynamics model must accurately predict the rewards ahead for multiple time steps. We approach this using a latent dynamics model with both deterministic and stochastic transition components. Moreover, we propose a multi-step variational inference objective that we name latent overshooting. Using only pixel observations, our agent solves continuous control tasks with contact dynamics, partial observability, and sparse rewards, which exceed the difficulty of tasks that were previously solved by planning with learned models. PlaNet uses substantially fewer episodes and reaches final performance close to and sometimes higher than strong model-free algorithms."  
   - <https://planetrl.github.io>
   - `post` <https://ai.googleblog.com/2019/02/introducing-planet-deep-planning.html>
-  - `video` <https://youtube.com/watch?v=C7Dmu0GtrSw>
   - `video` <https://slideslive.com/38915863/learning-models-for-representations-and-planning?t=860> (Lillicrap)
+  - `video` <https://youtube.com/watch?v=C7Dmu0GtrSw>
   - `code` <https://github.com/google-research/planet>
   - `code` <https://github.com/Kaixhin/PlaNet>
 
@@ -2606,7 +2611,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Self-Supervised Visual Planning with Temporal Skip Connections"](https://arxiv.org/abs/1710.05268) Ebert, Finn, Lee, Levine
   `learning to simulate` `learning environment model` `video prediction`
   - <https://sites.google.com/view/sna-visual-mpc> (demo)
-  - `video` <https://youtube.com/watch?v=6k7GHG4IUCY>
   - `video` <https://youtu.be/UDLI9K6b9G8?t=1h14m56s> (Ebert)
   - `code` <https://github.com/febert/visual_mpc>
 
@@ -3017,7 +3021,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Teacher-Student Curriculum Learning"](https://arxiv.org/abs/1707.00183) Matiisen, Oliver, Cohen, Schulman
   `curriculum learning`
 >	"A framework for automatic curriculum learning, where the Student tries to learn a complex task and the Teacher automatically chooses subtasks from a given set for the Student to train on. We describe a family of Teacher algorithms that rely on the intuition that the Student should practice more those tasks on which it makes the fastest progress, i.e. where the slope of the learning curve is highest. In addition, the Teacher algorithms address the problem of forgetting by also choosing tasks where the Student's performance is getting worse. We demonstrate that TSCL matches or surpasses the results of carefully hand-crafted curricula in two tasks: addition of decimal numbers with LSTM and navigation in Minecraft."  
-  - `video` <https://youtube.com/watch?v=GFCujBpTf3k>
+  - `video` <https://youtube.com/watch?v=GFCujBpTf3k> (Shorten)
   - `post` <https://lilianweng.github.io/lil-log/2020/01/29/curriculum-for-reinforcement-learning.html>
 
 #### ["Automatic Goal Generation for Reinforcement Learning Agents"](https://arxiv.org/abs/1705.06366) Held, Geng, Florensa, Abbeel
@@ -3054,6 +3058,8 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#human-level-performance-in-first-person-multiplayer-games-with-population-based-deep-reinforcement-learning-jaderberg-et-al>
 
 #### ["Data-Efficient Hierarchical Reinforcement Learning"](https://arxiv.org/abs/1805.08296) Nachum, Gu, Lee, Levine
+  `HIRO` `NeurIPS 2018`
+  - <https://sites.google.com/view/efficient-hrl>
 
 #### ["Self-Consistent Trajectory Autoencoder: Hierarchical Reinforcement Learning with Trajectory Embeddings"](https://arxiv.org/abs/1806.02813) Co-Reyes, Liu, Gupta, Eysenbach, Abbeel, Levine
   `SeCTAR`
@@ -3908,7 +3914,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Generating Wikipedia by Summarizing Long Sequences"](https://arxiv.org/abs/1801.10198) Liu et al.
   `extractive summarization`
 >	"Extractive summarization to coarsely identify salient information and a neural abstractive model to generate the article. For the abstractive model, decoder-only Transformer architecture that can scalably attend to very long sequences, much longer than typical encoder-decoder architectures used in sequence transduction."  
-  - `video` <https://youtube.com/watch?v=__ALQCud-iA>
+  - `video` <https://youtube.com/watch?v=__ALQCud-iA> (Shorten)
 
 ----
 #### ["Phrase-Based & Neural Unsupervised Machine Translation"](https://arxiv.org/abs/1804.07755) Lample, Ott, Conneau, Denoyer, Ranzato

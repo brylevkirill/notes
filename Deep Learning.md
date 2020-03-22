@@ -60,10 +60,11 @@
 
 #### tutorials
 
-  [Deep Learning: Practice and Trends](https://facebook.com/nipsfoundation/videos/1552060484885185/) by Oriol Vinyals and Scott Reed `video` ([slides](http://goo.gl/b6QBBh))  
   [Deep Learning Summer School 2019](http://youtube.com/playlist?list=PLKlhhkvvU8-aXmPQZNYG_e-2nTd0tJE8v) `video`  
   [Deep Learning Summer School 2018](http://videolectures.net/DLRLsummerschool2018_toronto/) `video`  
   [Deep Learning Summer School 2017](http://videolectures.net/deeplearning2017_montreal/) `video`  
+  [Deep Learning Summer School 2016](http://videolectures.net/deeplearning2016_montreal/) `video`  
+  [Deep Learning Summer School 2015](http://videolectures.net/deeplearning2015_montreal/) `video`  
 
 
 #### courses
@@ -251,15 +252,17 @@
 ----
 
   ["Bayesian Reasoning and Deep Learning in Agent-based Systems"](https://youtube.com/watch?v=AggqBRdz6CQ) by Shakir Mohamed `video`  
-  ["Is Bayesian Deep Learning the Most Brilliant Thing Ever"](https://youtube.com/watch?v=HumFmLu3CJ8) panel discussion `video`  
-
-  ["Marrying Graphical Models & Deep Learning"](http://videolectures.net/deeplearning2017_welling_inference/) by Max Welling `video`  
+  ["Marrying Graphical Models & Deep Learning"](http://videolectures.net/deeplearning2017_welling_inference) by Max Welling `video`  
   ["Bayesian Neural Networks"](http://videolectures.net/DLRLsummerschool2018_wilson_bayesian_neural_nets) by Andrew Wilson `video`  
-  ["A History of Bayesian Neural Networks"](https://youtube.com/watch?v=FD8l2vPU5FY) by Zoubin Ghahramani `video`  
 
-  ["Information Theory, Pattern Recognition and Neural Networks"](http://videolectures.net/course_information_theory_pattern_recognition/) course by David MacKay `video`
+  ["Deep Learning and Bayesian Methods"](http://deepbayes.ru) school from HSE ([videos](https://youtube.com/channel/UC9KcwaZ9gSvcYNs7Jx3oNaQ/playlists))  
+  ["Bayesian Methods in Deep Learning"](https://youtube.com/playlist?list=PLNO729xOopfFy1NeLkHPN5xnSqGkgcxJ3) course from MSU `video` `in russian`  
 
-  ["Bayesian Methods in Deep Learning"](http://deepbayes.ru) school ([videos](https://youtube.com/channel/UC9KcwaZ9gSvcYNs7Jx3oNaQ/playlists))
+----
+
+  ["A History of Bayesian Neural Networks"](https://youtube.com/watch?v=FD8l2vPU5FY) by Zoubin Ghahramani `video`
+
+  ["Information Theory, Pattern Recognition and Neural Networks"](http://videolectures.net/course_information_theory_pattern_recognition) course by David MacKay `video`
 
 ----
 
@@ -539,7 +542,11 @@
 
   [overview](https://youtu.be/7o9dT6puHHg?t=31m48s) by Aravind Srinivas `video`  
   overview ([1](https://youtu.be/NCRzGmM1ywE?t=1h11m23s), [2](https://youtu.be/0IoLKnAg6-s?t=1m11s), [3](https://youtube.com/watch?v=grsO57XMJMk)) by Peter Chen and Jonathan Ho `video`  
-  [overview](http://videolectures.net/deeplearning2015_courville_autoencoder_extension/) by Aaron Courville `video`  
+
+  [overview](https://youtu.be/tjT4Wf86FMM?t=21m55s) by Dmitry Vetrov `video`  
+  [overview](https://youtu.be/RdFqBHCizp8?t=21m6s) by Dmitry Vetrov `video`  
+  [overview](https://youtu.be/if9bTlZOiO8?t=26m35s) by Dmitry Vetrov `video` `in russian`  
+  [overview](https://youtube.com/watch?v=odNqVVyAqkE) by Dmitry Vetrov `video` `in russian`  
   [overview](https://youtu.be/_qrHcSdQ2J4?t=1h37m21s) by Dmitry Vetrov `video` `in russian`  
 
 ----
@@ -682,7 +689,8 @@
   [overview](https://slideslive.com/38917907/tutorial-on-normalizing-flows) by Eric Jang `video`  
   [overview](https://youtube.com/watch?v=v4gp1dMvWJo) by Arsenii Ashukha `video`  
 
-  [overview](https://facebook.com/uclcsml/videos/3027632833943878?t=983) of probability flows by Shakir Mohamed `video`
+  [overview](https://facebook.com/uclcsml/videos/3027632833943878?t=983) of probability flows by Shakir Mohamed `video`  
+  [overview](https://youtu.be/odNqVVyAqkE?t=1h19m8s) of probability flows by Dmitry Vetrov `video` `in russian`  
 
 ----
 
@@ -1472,6 +1480,7 @@ Yoshua Bengio:
   - `video` <https://youtu.be/_JTu50iDhkA?t=55m53s> (Sobolev)
   - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (23:39) (Bengio)
   - `video` <https://youtu.be/_XRBlhzb31U?t=28m33s> (Figurnov) `in russian`
+  - `video` <https://youtube.com/watch?v=4KuAzkFIvNA> (Vetrov) `in russian`
   - `post` <https://laurent-dinh.github.io/2016/11/21/gumbel-max.html>
   - `post` <https://casmls.github.io/general/2017/02/01/GumbelSoftmax.html>
   - `post` <http://timvieira.github.io/blog/post/2014/07/31/gumbel-max-trick/>
@@ -1499,6 +1508,7 @@ Yoshua Bengio:
   - `video` <http://www.fields.utoronto.ca/video-archive/2018/03/2509-18229> (24:02) (Maddison)
   - `video` <https://youtu.be/-KzvHc16HlM?t=51m6s> (Sobolev)
   - `video` <https://youtu.be/hkRBoiaplEE?t=34m27s> (Sobolev)
+  - `video` <https://youtu.be/8IerZhgoaJo?t=44m17s> (Gadetskii) `in russian`
   - `post` <http://artem.sobolev.name/posts/2017-11-12-stochastic-computation-graphs-fixing-reinforce.html>
   - `notes` <http://tuananhle.co.uk/notes/rebar-relax.html>
   - `code` <https://github.com/tensorflow/models/tree/master/research/rebar>
@@ -1530,6 +1540,7 @@ Yoshua Bengio:
   - `video` <http://www.fields.utoronto.ca/video-archive/2018/03/2509-18229> (30:37) (Maddison)
   - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (25:20) (Bengio)
   - `video` <https://youtu.be/hkRBoiaplEE?t=1h8m1s> (Sobolev)
+  - `video` <https://youtu.be/8IerZhgoaJo?t=1h7m29s> (Gadetskii) `in russian`
   - `post` <http://artem.sobolev.name/posts/2017-11-12-stochastic-computation-graphs-fixing-reinforce.html>
   - `notes` <http://tuananhle.co.uk/notes/rebar-relax.html>
   - `code` <https://github.com/duvenaud/relax>
@@ -1825,7 +1836,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=fwcJpSYNsNs> (Mikolov)
   - `video` <https://youtube.com/watch?v=c3yRH0XZN2g> (Boyd-Graber)
   - `video` <https://youtube.com/watch?v=Ab5cgv9w7ac> (Scarfe)
-  - `video` <https://youtube.com/watch?v=cQFOxMkzwf4>
+  - `video` <https://youtube.com/watch?v=cQFOxMkzwf4> (Shorten)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=mikolov2013efficient>
   - `post` <http://jalammar.github.io/illustrated-word2vec>
   - `post` <http://alexminnaar.com/word2vec-tutorial-part-i-the-skip-gram-model.html>
@@ -1840,7 +1851,7 @@ Yoshua Bengio:
 >	"Unlike recent language representation models (Peters et al., 2018; Radford et al., 2018), BERT is designed to pre-train deep bidirectional representations by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT representations can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications."
 
   - `post` <https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html>
-  - `video` <https://youtube.com/watch?v=OR0wfP2FD3c>
+  - `video` <https://youtube.com/watch?v=OR0wfP2FD3c> (Shorten)
   - `video` <https://youtube.com/watch?v=-9evrZnBorM> (Kilcher)
   - `video` <https://youtu.be/DSYzHPW26Ig?t=1h15m40s> (Graves)
   - `video` <https://youtu.be/AC4l_MY2Dhc?t=1h51m52s> (Srinivas)
@@ -1887,7 +1898,7 @@ Yoshua Bengio:
 >	- Discriminative Unsupervised Feature Learning with Exemplar Convolutional Neural Networks"
 
   - `video` <https://facebook.com/icml.imls/videos/378993762742156?t=2566> (Zhai)
-  - `video` <https://youtube.com/watch?v=lbKg3OSTsgA>
+  - `video` <https://youtube.com/watch?v=lbKg3OSTsgA> (Shorten)
   - `notes` <https://blog.lunit.io/2019/03/14/revisiting-self-supervised-visual-representation-learning>
   - `code` <https://github.com/google/revisiting-self-supervised>
 
@@ -1901,7 +1912,7 @@ Yoshua Bengio:
 #### ["Self-training with Noisy Student Improves ImageNet Classification"](https://arxiv.org/abs/1911.04252) Xie et al.
 >	"We present a simple self-training method that achieves 87.4% top-1 accuracy on ImageNet, which is 1.0% better than the state-of-the-art model that requires 3.5B weakly labeled Instagram images. On robustness test sets, it improves ImageNet-A top-1 accuracy from 16.6% to 74.2%, reduces ImageNet-C mean corruption error from 45.7 to 31.2, and reduces ImageNet-P mean flip rate from 27.8 to 16.1. To achieve this result, we first train an EfficientNet model on labeled ImageNet images and use it as a teacher to generate pseudo labels on 300M unlabeled images. We then train a larger EfficientNet as a student model on the combination of labeled and pseudo labeled images. We iterate this process by putting back the student as the teacher. During the generation of the pseudo labels, the teacher is not noised so that the pseudo labels are as good as possible. But during the learning of the student, we inject noise such as data augmentation, dropout, stochastic depth to the student so that the noised student is forced to learn harder from the pseudo labels."
 
-  - `video` <https://youtube.com/watch?v=Y8YaU9mv_us>
+  - `video` <https://youtube.com/watch?v=Y8YaU9mv_us> (Shorten)
   - `notes` <https://harangdev.github.io/papers/9/>
 
 
@@ -2061,8 +2072,12 @@ Yoshua Bengio:
 >	"Latent variable probabilistic models are ubiquitous, but often inference in such models is intractable. Variational inference methods based on approximation of the true posterior currently are most popular deterministic inference techniques. Recently one particularly interesting method for parametric variational approximation was proposed called Auto-encoding variational bayes. In this method, approximate posterior explicitly depends on data and may be almost arbitrary complex, e.g. a deep neural network. Thus, the problem of variational inference may be considered as a learning of auto-encoder where the code is represented by latent variables, encoder is the likelihood model and decoder is our variational approximation. Since neural networks can serve as universal function approximators, such inference method may allow to obtain better results than for "shallow" parametric approximations or free-form mean-field ones."
 
   - `video` <http://youtube.com/watch?v=rjZL7aguLAs> (Kingma)
+  - `video` <https://youtu.be/tjT4Wf86FMM?t=21m55s> (Vetrov)
+  - `video` <https://youtu.be/RdFqBHCizp8?t=21m6s> (Vetrov)
   - `video` <http://videolectures.net/deeplearning2015_courville_autoencoder_extension/> (Courville)
   - `video` <https://youtube.com/watch?v=Tc-XfiDPLf4> (Dolatabadi)
+  - `video` <https://youtu.be/if9bTlZOiO8?t=26m35s> (Vetrov) `in russian`
+  - `video` <https://youtube.com/watch?v=odNqVVyAqkE> (Vetrov) `in russian`
   - `video` <https://youtu.be/_qrHcSdQ2J4?t=1h37m21s> (Vetrov) `in russian`
   - `paper` <http://arxiv.org/abs/1606.05908> + <https://github.com/cdoersch/vae_tutorial> (tutorial)
   - `paper` <http://arxiv.org/abs/1610.09296> (explanation)
@@ -2629,7 +2644,7 @@ Yoshua Bengio:
   - `video` <http://techtalks.tv/talks/deep-residual-networks-deep-learning-gets-way-deeper/62358/> (He)
   - `video` <http://youtube.com/watch?v=1PGLj-uKT1w> (He)
   - `video` <https://youtube.com/watch?v=jio04YvgraU> (Hoveidar)
-  - `video` <https://youtube.com/watch?v=sAzL4XMke80>
+  - `video` <https://youtube.com/watch?v=sAzL4XMke80> (Shorten)
   - `post` <http://people.idsia.ch/~juergen/microsoft-wins-imagenet-through-feedforward-LSTM-without-gates.html> (Schmidhuber)
   - `post` <https://blog.init.ai/residual-neural-networks-are-an-exciting-area-of-deep-learning-research-acf14f4912e9>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/HeZRS15>
