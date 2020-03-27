@@ -2877,6 +2877,7 @@ interesting recent papers:
 >	- Thought experiment: Almost all the practical successes of HRL are on Markovian environments. Theoretically, a shallow policy should be able to solve these without issue."  
 
   - `video` <https://slideslive.com/38922026/deep-reinforcement-learning-2?t=3192> (Nachum)
+  - `video` <https://youtu.be/HZg4BgZGAi8?t=16m22s> (Sychev) `in russian`
 
 
 #### ["Human-level Performance in First-person Multiplayer Games with Population-based Deep Reinforcement Learning"](https://arxiv.org/abs/1807.01281) Jaderberg et al.
@@ -2962,6 +2963,7 @@ interesting recent papers:
   - `video` <https://youtu.be/Yvll3P1UW5k?t=34m20s> (Abbeel)
   - `video` <https://youtu.be/HRp6DH5M7Co?t=18m24s> (Abbeel)
   - `video` <https://youtube.com/watch?v=dPsXxLyqpfs> (Kilcher)
+  - `video` <https://youtube.com/watch?v=0JxOpJd3w8w> (Svidchenko) `in russian`
   - `video` <https://youtu.be/qvxgsxQFHgQ?t=40m46s> (Ivanov) `in russian`
   - `post` <https://coherencedrivers.wordpress.com/2018/04/04/comment-on-world-models>
   - `paper` [**"Making the World Differentiable: On Using Self-Supervised Fully Recurrent Neural Networks for Dynamic Reinforcement Learning and Planning in Non-Stationary Environments**"](#making-the-world-differentiable-on-using-self-supervised-fully-recurrent-neural-networks-for-dynamic-reinforcement-learning-and-planning-in-non-stationary-environments-schmidhuber) by Schmidhuber `summary`

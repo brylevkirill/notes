@@ -11,7 +11,7 @@
 ---
 ### overview
 
-  ["Foundations of Information Retrieval"](https://drive.google.com/file/d/0B-GJrccmbImkZ3pjNl9sczQxd3M) by Maarten de Rijke (SIGIR 2017) `slides`
+  ["Foundations of Information Retrieval"](https://drive.google.com/file/d/0B-GJrccmbImkZ3pjNl9sczQxd3M) by Maarten de Rijke `slides` `SIGIR 2017`
 
   ["What Every Software Engineer Should Know about Search"](https://medium.com/startup-grind/what-every-software-engineer-should-know-about-search-27d1df99f80d) by Max Grigorev
 
@@ -41,10 +41,10 @@
 
   ["An Introduction to Neural Information Retrieval"](https://www.microsoft.com/en-us/research/uploads/prod/2017/06/fntir2018-neuralir-mitra.pdf) by Bhaskar Mitra and Nick Craswell `paper`
 
-  ["Neural Networks for Information Retrieval"](http://nn4ir.com) tutorials (ECIR 2018, WSDM 2018, SIGIR 2017) `slides`  
+  ["Neural Networks for Information Retrieval"](http://nn4ir.com) tutorials `slides` `ECIR 2018` `WSDM 2018` `SIGIR 2017`  
   ["Neural Text Embeddings for Information Retrieval"](https://microsoft.com/en-us/research/event/wsdm-2017-tutorial-neural-text-embeddings-information-retrieval/)
-	tutorial by Bhaskar Mitra and Nick Craswell (WSDM 2017)
-	([slides](https://slideshare.net/BhaskarMitra3/neural-text-embeddings-for-information-retrieval-wsdm-2017), [paper](https://arxiv.org/abs/1705.01509))  
+	tutorial by Bhaskar Mitra and Nick Craswell
+	([slides](https://slideshare.net/BhaskarMitra3/neural-text-embeddings-for-information-retrieval-wsdm-2017), [paper](https://arxiv.org/abs/1705.01509)) `WSDM 2017`  
 
 ---
 

@@ -2,10 +2,10 @@
 
   * [**overview**](#overview)
   * [**interesting papers**](#interesting-papers)
-    - [**item similarity**](#interesting-papers---item-similarity)
-    - [**user preferences**](#interesting-papers---user-preferences)
+    - [**modeling items and users**](#interesting-papers---modeling-items-and-users)
     - [**deep learning**](#interesting-papers---deep-learning)
-    - [**interactive learning**](#interesting-papers---interactive-learning)
+    - [**modeling dynamics**](#interesting-papers---modeling-dynamics)
+    - [**active learning**](#interesting-papers---active-learning)
 
 
 
@@ -44,14 +44,14 @@
   [overview](https://youtube.com/watch?v=5ir_fCgzfLM) by Vladimir Gulin `video` `in russian`  
   [overview](https://youtube.com/watch?v=MLljnzsz9Dk) by Alexey Dral `video` `in russian`  
 
-  [overview](https://youtube.com/watch?v=X1a5jNgqzGk) of applications in Yandex by Boris Sharchilev `video` `in russian`  
+  [overview](https://youtube.com/watch?v=CQnCioCq4C0) of applications in Yandex by Boris Sharchilev `video` `in russian`  
   [overview](https://youtube.com/watch?v=iGAMPnv-0VY) of applications in Yandex by Igor Lifar and Dmitry Ushanov `video` `in russian`  
   [overview](https://youtube.com/watch?v=OJ0nJb3LfNo) of applications in Yandex by Andrey Zimovnov `video` `in russian`  
   [overview](https://youtube.com/watch?v=JKTneRi2vn8) of applications in Yandex by Michael Rozner `video` `in russian`  
 
-  [overview](https://youtu.be/X1a5jNgqzGk?t=42m38s) of applications in VK by Danila Savenkov `video` `in russian`  
-  [overview](https://vk.com/video-187376020_456239020?list=a28424fc797e02beaf) of applications in VK by Semyon Polyakov `in russian`  
-  [overview](https://vk.com/video-187376020_456239022?list=5e2c11518f60c8d169) of applications in VK by Oleg Lashinin `in russian`  
+  [overview](https://youtube.com/watch?v=TlBDO8UgMOE) of applications in VK by Danila Savenkov `video` `in russian`  
+  [overview](https://vk.com/video-187376020_456239022?list=5e2c11518f60c8d169) of applications in VK by Oleg Lashinin `video` `in russian`  
+  [overview](https://vk.com/video-187376020_456239020?list=a28424fc797e02beaf) of applications in VK by Semyon Polyakov `video` `in russian`  
 
 ----
 
@@ -69,9 +69,9 @@
 ---
 ### interesting papers
 
-  - [**item similarity**](#interesting-papers---item-similarity)
-  - [**user preferences**](#interesting-papers---user-preferences)
+  - [**modeling items and users**](#interesting-papers---modeling-items-and-users)
   - [**deep learning**](#interesting-papers---deep-learning)
+  - [**modeling dynamics**](#interesting-papers---modeling-dynamics)
   - [**active learning**](#interesting-papers---active-learning)
 
 
@@ -86,7 +86,7 @@
 
 
 ---
-### interesting papers - item similarity
+### interesting papers - modeling items and users
 
 
 #### ["Two Decades of Recommender Systems at Amazon.com"](https://www.computer.org/csdl/mags/ic/2017/03/mic2017030012.html) Smith, Linden
@@ -110,87 +110,10 @@
 
 #### ["Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba"](https://arxiv.org/abs/1803.02349) Wang et al.
   `Alibaba` `KDD 2018`
->	"Recommender systems have been the most important technology for increasing the business in Taobao, the largest online consumer-to-consumer platform in China. There are three major challenges facing RS in Taobao: scalability, sparsity and cold start. In this paper, we present our technical solutions to address these three challenges. The methods are based on a well- known graph embedding framework. We first construct an item graph from users’ behavior history, and learn the embeddings of all items in the graph. The item embeddings are employed to compute pairwise similarities between all items, which are then used in the recommendation process. To alleviate the sparsity and cold start problems, side information is incorporated into the graph embedding framework. We propose two aggregation methods to integrate the embeddings of items and the corresponding side information. Experimental results from offline experiments show that methods incorporating side information are superior to those that do not. Further, we describe the platform upon which the embedding methods are deployed and the workflow to process the billion-scale data in Taobao. Using A/B test, we show that the online Click-Through-Rates are improved comparing to the previous collaborative filtering based methods widely used in Taobao, further demonstrating the effectiveness and feasibility of our proposed methods in Taobao’s live production environment."
+>	"Recommender systems have been the most important technology for increasing the business in Taobao, the largest online consumer-to-consumer platform in China. There are three major challenges facing RS in Taobao: scalability, sparsity and cold start. In this paper, we present our technical solutions to address these three challenges. The methods are based on a well-known graph embedding framework. We first construct an item graph from users’ behavior history, and learn the embeddings of all items in the graph. The item embeddings are employed to compute pairwise similarities between all items, which are then used in the recommendation process. To alleviate the sparsity and cold start problems, side information is incorporated into the graph embedding framework. We propose two aggregation methods to integrate the embeddings of items and the corresponding side information. Experimental results from offline experiments show that methods incorporating side information are superior to those that do not. Further, we describe the platform upon which the embedding methods are deployed and the workflow to process the billion-scale data in Taobao. Using A/B test, we show that the online Click-Through-Rates are improved comparing to the previous collaborative filtering based methods widely used in Taobao, further demonstrating the effectiveness and feasibility of our proposed methods in Taobao’s live production environment."
 
   - `video` <https://youtube.com/watch?v=TLD_bSiHZdE>
   - `video` <https://infoq.com/presentations/nlp-word-embedding> (36:56) (Alammar)
-
-
-#### ["Exponential Family Embeddings"](https://arxiv.org/abs/1608.00778) Rudolph, Ruiz, Mandt, Blei
->	"Word embeddings are a powerful approach for capturing semantic similarity among terms in a vocabulary. In this paper, we develop exponential family embeddings, a class of methods that extends the idea of word embeddings to other types of high-dimensional data. As examples, we studied neural data with real-valued observations, count data from a market basket analysis, and ratings data from a movie recommendation system. The main idea is to model each observation conditioned on a set of other observations. This set is called the context, and the way the context is defined is a modeling choice that depends on the problem. In language the context is the surrounding words; in neuroscience the context is close-by neurons; in market basket data the context is other items in the shopping cart. Each type of embedding model defines the context, the exponential family of conditional distributions, and how the latent embedding vectors are shared across data. We infer the embeddings with a scalable algorithm based on stochastic gradient descent. On all three applications - neural activity of zebrafish, users' shopping behavior, and movie ratings - we found exponential family embedding models to be more effective than other types of dimension reduction. They better reconstruct held-out data and find interesting qualitative structure."
-
->	identifying substitutes and co-purchases in high-scale consumer data (basket analysis)
-
-  - `video` <https://youtu.be/zwcjJQoK8_Q?t=15m14s> (Blei)
-  - `code` <https://github.com/mariru/exponential_family_embeddings>
-  - `code` <https://github.com/franrruiz/p-emb>
-
-
-#### ["E-commerce in Your Inbox: Product Recommendations at Scale"](https://arxiv.org/abs/1606.07154) Grbovic et al.
-  `prod2vec` `Yahoo`
->	"In recent years online advertising has become increasingly ubiquitous and effective. Advertisements shown to visitors fund sites and apps that publish digital content, manage social networks, and operate e-mail services. Given such large variety of internet resources, determining an appropriate type of advertising for a given platform has become critical to financial success. Native advertisements, namely ads that are similar in look and feel to content, have had great success in news and social feeds. However, to date there has not been a winning formula for ads in e-mail clients. In this paper we describe a system that leverages user purchase history determined from e-mail receipts to deliver highly personalized product ads to Yahoo Mail users. We propose to use a novel neural language-based algorithm specifically tailored for delivering effective product recommendations, which was evaluated against baselines that included showing popular products and products predicted based on co-occurrence. We conducted rigorous offline testing using a large-scale product purchase data set, covering purchases of more than 29 million users from 172 e-commerce websites. Ads in the form of product recommendations were successfully tested on online traffic, where we observed a steady 9% lift in click-through rates over other ad formats in mail, as well as comparable lift in conversion rates. Following successful tests, the system was launched into production during the holiday season of 2014."
-
-  - `video` <https://youtube.com/watch?v=W56fZewflRw> (Djuric)
-
-
-
----
-### interesting papers - user preferences
-
-
-#### ["Recurrent Recommender Networks"](https://dl.acm.org/citation.cfm?id=3018689) Wu, Ahmed, Beutel, Smola, Jing
->	"Recommender systems traditionally assume that user profiles and movie attributes are static. Temporal dynamics are purely reactive, that is, they are inferred after they are observed, e.g. after a user’s taste has changed or based on hand-engineered temporal bias corrections for movies. We propose Recurrent Recommender Networks that are able to predict future behavioral trajectories. This is achieved by endowing both users and movies with a Long Short-Term Memory autoregressive model that captures dynamics, in addition to a more traditional low-rank factorization. On multiple real-world datasets, our model offers excellent prediction accuracy and it is very compact, since we need not learn latent state but rather just the state transition function."
-
->	"A common approach to practical recommender systems is to study problems of the form introduced in the Netflix contest. That is, given a set of tuples consisting of users, movies, timestamps and ratings, the goal is to find ratings for alternative combinations of the first three attributes (user, movie, time). Performance is then measured by the deviation of the prediction from the actual rating. This formulation is easy to understand and it has led to numerous highly successful approaches, such as Probabilistic Matrix Factorization, nearest neighbor based approaches, and clustering. Moreover, it is easy to define appropriate performance measures (deviation between rating estimates and true ratings over the matrix), simply by selecting a random subset of the tuples for training and the rest for testing purposes. Unfortunately, these approaches are lacking when it comes to temporal and causal aspects inherent in the data. The following examples illustrate this in some more detail:  
->	Change in Movie Perception. Plan 9 from Outer Space has achieved cult movie status by being arguably one of the world’s worst movies. As a result of the social notion of being a movie that is so bad that it is great to watch, the perception changed over time from a truly awful movie to a popular one. To capture this appropriately, the movie attribute parameters would have to change over time to track such a trend. While maybe not quite as pronounced, similar effects hold for movie awards such as the Oscars. After all, it is much more challenging to hold a contrarian view about a critically acclaimed movie than about, say, Star Wars 1, The Phantom Menace.  
->	Seasonal Changes. While not quite so extreme, the relative appreciation of romantic comedies, Christmas movies and summer blockbusters is seasonal. Beyond the appreciation, users are unlikely to watch movies about overweight bearded old men wearing red robes in summer.  
->	User Interest. User’s preferences change over time. This is well established in online communities and it arguably also applies to online consumption. A user might take a liking to a particular actor, might discover the intricacies of a specific genre, or her interest in a particular show might wane, due to maturity or a change in lifestyle. Any such aspects render existing profiles moot, yet it is difficult to model all such changes explicitly."
-
->	"Beyond the mere need of modeling temporal evolution, evaluating ratings with the benefit of hindsight also violates basic requirements of causality. For instance, knowing that a user will have developed a liking for Pedro Almod ́ovar in one month in the future makes it much easier to estimate what his opinion about La Mala Educacion might be. In other words, we violate causality in our statistical analysis when we use future ratings for the benefit of estimating current reviews. It also makes it impossible to translate reported accuracies on benchmarks into meaningful assessments as to whether such a system would work well in practice. While the Netflix prize generated a flurry of research, evaluating different models’ success on future predictions is hindered by the mixed distribution of training and testing data. Rather, by having an explicit model of profile dynamics, we can predict future behavior based on current trends. A model capable of capturing the actual data distribution inherent in recommender systems needs to be able to model both the temporal dynamics within each user and movie, in addition to capturing the rating interaction between both sets. This suggests the use of latent variable models to infer the unobserved state governing their behavior."
-
->	"Nonlinear nonparametric recommender systems have proven to be somewhat elusive. In particular, nonlinear substitutes of the inner product formulation showed only limited promise in our experiments. To the best of our knowledge this is the first paper addressing movie recommendation in a fully causal and integrated fashion. That is, we believe that this is the first model which attempts to capture the dynamics of both users and movies. Moreover, our model is nonparametric. This allows us to model the data rather than having to assume a specific form of a state space."
-
->	"Recurrent Recommender Networks are very concise since we only learn the dynamics rather than the state. This is one of the key differences to typical latent variable models where considerable effort is spent on estimating the latent state."
-
->	"Experiments show that our model outperforms all others in terms of forward prediction, i.e. in the realistic scenario where we attempt to estimate future ratings given data that occurred strictly prior to the to-be-predicted ratings. We show that our model is able to capture exogenous dynamics (e.g. an Oscar award) and endogenous dynamics (e.g. Christmas movies) quite accurately. Moreover, we demonstrate that the model is able to predict changes in future user preferences accurately."
-
-
-#### ["Latent LSTM Allocation: Joint Clustering and Non-Linear Dynamic Modeling of Sequential Data"](http://proceedings.mlr.press/v70/zaheer17a/zaheer17a.pdf) Zaheer, Ahmed, Smola
-  `Google`
->	"Recurrent neural networks, such as LSTM networks, are powerful tools for modeling sequential data like user browsing history or natural language text. However, to generalize across different user types, LSTMs require a large number of parameters, notwithstanding the simplicity of the underlying dynamics, rendering it uninterpretable, which is highly undesirable in user modeling. The increase in complexity and parameters arises due to a large action space in which many of the actions have similar intent or topic. In this paper, we introduce Latent LSTM Allocation for user modeling combining hierarchical Bayesian models with LSTMs. In LLA, each user is modeled as a sequence of actions, and the model jointly groups actions into topics and learns the temporal dynamics over the topic sequence, instead of action space directly. This leads to a model that is highly interpretable, concise, and can capture intricate dynamics. We present an efficient Stochastic EM inference algorithm for our model that scales to millions of users/documents. Our experimental evaluations show that the proposed model compares favorably with several state-of-the-art baselines."
-
-  - `video` <https://vimeo.com/240608072> (Zaheer)
-  - `video` <https://youtube.com/watch?v=ofaPq5aRKZ0> (Smola)
-  - `paper` ["State Space LSTM Models with Particle MCMC Inference"](https://arxiv.org/abs/1711.11179) by Zheng et al.
-
-
-#### ["State Space LSTM Models with Particle MCMC Inference"](https://arxiv.org/abs/1711.11179) Zheng, Zaheer, Ahmed, Wang, Xing, Smola
->	"LSTM is one of the most powerful sequence models. Despite the strong performance, however, it lacks the nice interpretability as in state space models. In this paper, we present a way to combine the best of both worlds by introducing State Space LSTM models that generalizes the earlier work of combining topic models with LSTM. However we do not make any factorization assumptions in our inference algorithm. We present an efficient sampler based on sequential Monte Carlo method that draws from the joint posterior directly. Experimental results confirms the superiority and stability of this SMC inference algorithm on a variety of domains."
-
-
-#### ["Session-based Recommendations with Recurrent Neural Networks"](http://arxiv.org/abs/1511.06939) Hidasi, Karatzoglou, Baltrunas, Tikk
->	"We apply recurrent neural networks on a new domain, namely recommendation system. Real-life recommender systems often face the problem of having to base recommendations only on short session-based data (e.g. a small sportsware website) instead of long user histories (as in the case of Netflix). In this situation the frequently praised matrix factorization approaches are not accurate. This problem is usually overcome in practice by resorting to item-to-item recommendations, i.e. recommending similar items. We argue that by modeling the whole session, more accurate recommendations can be provided. We therefore propose an RNN-based approach for session-based recommendations. Our approach also considers practical aspects of the task and introduces several modifications to classic RNNs such as a ranking loss function that make it more viable for this specific problem. Experimental results on two data-sets show marked improvements over widely used approaches."
-
->	"In this paper we applied a kind of modern recurrent neural network to new application domain: recommender systems. We chose task of session based recommendations, because it is a practically important area, but not well researched. We modified the basic GRU in order to fit the task better by introducing session-parallel mini-batches, mini-batch based output sampling and ranking loss function. We showed that our method can significantly outperform popular baselines that used for this task. We think that our work can be the basis of both deep learning applications in recommender systems and session based recommendations in general. We plan to train the network on automatically extracted item representation that is built on content of the item itself (e.g. thumbnail, video, text) instead of the current input."
-
-  - `video` <https://youtube.com/watch?v=M7FqgXySKYk> (Karatzoglou)
-  - `video` <https://youtube.com/watch?v=Mw2AV12WH4s> (Hidasi)
-  - `post` <http://blog.deepsystems.io/session-based-recommendations-rnn> `in russian`
-  - `code` <https://github.com/yhs-968/pyGRU4REC>
-
-
-#### ["DropoutNet: Addressing Cold Start in Recommender Systems"](https://papers.nips.cc/paper/7081-dropoutnet-addressing-cold-start-in-recommender-systems) Volkovs, Yu, Poutanen
-  `Layer6`
->	"Latent models have become the default choice for recommender systems due to their performance and scalability. However, research in this area has primarily focused on modeling user-item interactions, and few latent models have been developed for cold start. Deep learning has recently achieved remarkable success showing excellent results for diverse input types. Inspired by these results we propose a neural network based latent model called DropoutNet to address the cold start problem in recommender systems. Unlike existing approaches that incorporate additional content-based objective terms, we instead focus on the optimization and show that neural network models can be explicitly trained for cold start through dropout."
-
->	"Our approach is based on the observation that cold start is equivalent to the missing data problem where preference information is missing. Hence, instead of adding additional objective terms to model content, we modify the learning procedure to explicitly condition the model for the missing input. The key idea behind our approach is that by applying dropout to input mini-batches, we can train DNNs to generalize to missing input. By selecting an appropriate amount of dropout we show that it is possible to learn a DNN-based latent model that performs comparably to state-of-the-art on warm start while significantly outperforming it on cold start. The resulting model is simpler than most hybrid approaches and uses a single objective function, jointly optimizing all components to maximize recommendation accuracy."
-
->	"Training with dropout has a two-fold effect: pairs with dropout encourage the model to only use content information, while pairs without dropout encourage it to ignore content and simply reproduce preference input. The net effect is balanced between these two extremes. The model learns to reproduce the accuracy of the input latent model when preference data is available while also generalizing to cold start."
-
->	"An additional advantage of our approach is that it can be applied on top of any existing latent model to provide/enhance its cold start capability. This requires virtually no modification to the original model thus minimizing the implementation barrier for any production environment that’s already running latent models."
-
-  - `video` <https://youtu.be/N0NUwz3xWX4?t=10m44s> (Ushanov) `in russian`
-  - `code` <https://github.com/HongleiXie/DropoutNet>
 
 
 #### ["Variational Autoencoders for Collaborative Filtering"](https://arxiv.org/abs/1802.05814) Liang, Krishnan, Hoffman, Jebara
@@ -204,6 +127,19 @@
   - `video` <https://youtube.com/watch?v=gRvxr47Gj3k> (Liang)
   - `code` <https://github.com/dawenl/vae_cf>
   - `code` <https://github.com/belepi93/vae-cf-pytorch>
+
+
+#### ["DropoutNet: Addressing Cold Start in Recommender Systems"](https://papers.nips.cc/paper/7081-dropoutnet-addressing-cold-start-in-recommender-systems) Volkovs, Yu, Poutanen
+  `DropoutNet`
+>	"Latent models have become the default choice for recommender systems due to their performance and scalability. However, research in this area has primarily focused on modeling user-item interactions, and few latent models have been developed for cold start. Deep learning has recently achieved remarkable success showing excellent results for diverse input types. Inspired by these results we propose a neural network based latent model called DropoutNet to address the cold start problem in recommender systems. Unlike existing approaches that incorporate additional content-based objective terms, we instead focus on the optimization and show that neural network models can be explicitly trained for cold start through dropout."
+
+>	"Our approach is based on the observation that cold start is equivalent to the missing data problem where preference information is missing. Hence, instead of adding additional objective terms to model content, we modify the learning procedure to explicitly condition the model for the missing input. The key idea behind our approach is that by applying dropout to input mini-batches, we can train DNNs to generalize to missing input. By selecting an appropriate amount of dropout we show that it is possible to learn a DNN-based latent model that performs comparably to state-of-the-art on warm start while significantly outperforming it on cold start. The resulting model is simpler than most hybrid approaches and uses a single objective function, jointly optimizing all components to maximize recommendation accuracy."
+
+>	"Training with dropout has a two-fold effect: pairs with dropout encourage the model to only use content information, while pairs without dropout encourage it to ignore content and simply reproduce preference input. The net effect is balanced between these two extremes. The model learns to reproduce the accuracy of the input latent model when preference data is available while also generalizing to cold start."
+
+>	"An additional advantage of our approach is that it can be applied on top of any existing latent model to provide/enhance its cold start capability. This requires virtually no modification to the original model thus minimizing the implementation barrier for any production environment that’s already running latent models."
+
+  - `video` <https://youtu.be/N0NUwz3xWX4?t=10m44s> (Ushanov) `in russian`
 
 
 #### ["Content-based Recommendations with Poisson Factorization"](http://www.cs.toronto.edu/~lcharlin/papers/GopalanCharlinBlei_nips14.pdf) Gopalan, Charlin, Blei
@@ -228,8 +164,18 @@
   - `code` <https://github.com/premgopalan/hgaprec>
 
 
+#### ["Exponential Family Embeddings"](https://arxiv.org/abs/1608.00778) Rudolph, Ruiz, Mandt, Blei
+>	"Word embeddings are a powerful approach for capturing semantic similarity among terms in a vocabulary. In this paper, we develop exponential family embeddings, a class of methods that extends the idea of word embeddings to other types of high-dimensional data. As examples, we studied neural data with real-valued observations, count data from a market basket analysis, and ratings data from a movie recommendation system. The main idea is to model each observation conditioned on a set of other observations. This set is called the context, and the way the context is defined is a modeling choice that depends on the problem. In language the context is the surrounding words; in neuroscience the context is close-by neurons; in market basket data the context is other items in the shopping cart. Each type of embedding model defines the context, the exponential family of conditional distributions, and how the latent embedding vectors are shared across data. We infer the embeddings with a scalable algorithm based on stochastic gradient descent. On all three applications - neural activity of zebrafish, users' shopping behavior, and movie ratings - we found exponential family embedding models to be more effective than other types of dimension reduction. They better reconstruct held-out data and find interesting qualitative structure."
+
+>	identifying substitutes and co-purchases in high-scale consumer data (basket analysis)
+
+  - `video` <https://youtu.be/zwcjJQoK8_Q?t=15m14s> (Blei)
+  - `code` <https://github.com/mariru/exponential_family_embeddings>
+  - `code` <https://github.com/franrruiz/p-emb>
+
+
 #### ["E-commerce in Your Inbox: Product Recommendations at Scale"](https://arxiv.org/abs/1606.07154) Grbovic et al.
-  `user2vec` `Yahoo`
+  `user2vec` `prod2vec` `Yahoo`
 >	"In recent years online advertising has become increasingly ubiquitous and effective. Advertisements shown to visitors fund sites and apps that publish digital content, manage social networks, and operate e-mail services. Given such large variety of internet resources, determining an appropriate type of advertising for a given platform has become critical to financial success. Native advertisements, namely ads that are similar in look and feel to content, have had great success in news and social feeds. However, to date there has not been a winning formula for ads in e-mail clients. In this paper we describe a system that leverages user purchase history determined from e-mail receipts to deliver highly personalized product ads to Yahoo Mail users. We propose to use a novel neural language-based algorithm specifically tailored for delivering effective product recommendations, which was evaluated against baselines that included showing popular products and products predicted based on co-occurrence. We conducted rigorous offline testing using a large-scale product purchase data set, covering purchases of more than 29 million users from 172 e-commerce websites. Ads in the form of product recommendations were successfully tested on online traffic, where we observed a steady 9% lift in click-through rates over other ad formats in mail, as well as comparable lift in conversion rates. Following successful tests, the system was launched into production during the holiday season of 2014."
 
   - `video` <https://youtube.com/watch?v=W56fZewflRw> (Djuric)
@@ -310,6 +256,41 @@
 #### ["Latent Cross: Making Use of Context in Recurrent Recommender Systems"](https://dl.acm.org/citation.cfm?id=3159727) Beutel et al.
   `YouTube`
 >	"The success of recommender systems often depends on their ability to understand and make use of the context of the recommendation request. Significant research has focused on how time, location, interfaces, and a plethora of other contextual features affect recommendations. However, in using deep neural networks for recommender systems, researchers often ignore these contexts or incorporate them as ordinary features in the model. In this paper, we study how to effectively treat contextual data in neural recommender systems. We begin with an empirical analysis of the conventional approach to context as features in feed-forward recommenders and demonstrate that this approach is inefficient in capturing common feature crosses. We apply this insight to design a state-of-the-art RNN recommender system. We first describe our RNN-based recommender system in use at YouTube. Next, we offer “Latent Cross,” an easy-to-use technique to incorporate contextual data in the RNN by embedding the context feature first and then performing an element-wise product of the context embedding with model’s hidden states. We demonstrate the improvement in performance by using this Latent Cross technique in multiple experimental settings."
+
+
+
+---
+### interesting papers - modeling dynamics
+
+
+#### ["Recurrent Recommender Networks"](https://dl.acm.org/citation.cfm?id=3018689) Wu, Ahmed, Beutel, Smola, Jing
+>	"Recommender systems traditionally assume that user profiles and movie attributes are static. Temporal dynamics are purely reactive, that is, they are inferred after they are observed, e.g. after a user’s taste has changed or based on hand-engineered temporal bias corrections for movies. We propose Recurrent Recommender Networks that are able to predict future behavioral trajectories. This is achieved by endowing both users and movies with a Long Short-Term Memory autoregressive model that captures dynamics, in addition to a more traditional low-rank factorization. On multiple real-world datasets, our model offers excellent prediction accuracy and it is very compact, since we need not learn latent state but rather just the state transition function."
+
+>	"A common approach to practical recommender systems is to study problems of the form introduced in the Netflix contest. That is, given a set of tuples consisting of users, movies, timestamps and ratings, the goal is to find ratings for alternative combinations of the first three attributes (user, movie, time). Performance is then measured by the deviation of the prediction from the actual rating. This formulation is easy to understand and it has led to numerous highly successful approaches, such as Probabilistic Matrix Factorization, nearest neighbor based approaches, and clustering. Moreover, it is easy to define appropriate performance measures (deviation between rating estimates and true ratings over the matrix), simply by selecting a random subset of the tuples for training and the rest for testing purposes. Unfortunately, these approaches are lacking when it comes to temporal and causal aspects inherent in the data. The following examples illustrate this in some more detail:  
+>	Change in Movie Perception. Plan 9 from Outer Space has achieved cult movie status by being arguably one of the world’s worst movies. As a result of the social notion of being a movie that is so bad that it is great to watch, the perception changed over time from a truly awful movie to a popular one. To capture this appropriately, the movie attribute parameters would have to change over time to track such a trend. While maybe not quite as pronounced, similar effects hold for movie awards such as the Oscars. After all, it is much more challenging to hold a contrarian view about a critically acclaimed movie than about, say, Star Wars 1, The Phantom Menace.  
+>	Seasonal Changes. While not quite so extreme, the relative appreciation of romantic comedies, Christmas movies and summer blockbusters is seasonal. Beyond the appreciation, users are unlikely to watch movies about overweight bearded old men wearing red robes in summer.  
+>	User Interest. User’s preferences change over time. This is well established in online communities and it arguably also applies to online consumption. A user might take a liking to a particular actor, might discover the intricacies of a specific genre, or her interest in a particular show might wane, due to maturity or a change in lifestyle. Any such aspects render existing profiles moot, yet it is difficult to model all such changes explicitly."
+
+>	"Beyond the mere need of modeling temporal evolution, evaluating ratings with the benefit of hindsight also violates basic requirements of causality. For instance, knowing that a user will have developed a liking for Pedro Almod ́ovar in one month in the future makes it much easier to estimate what his opinion about La Mala Educacion might be. In other words, we violate causality in our statistical analysis when we use future ratings for the benefit of estimating current reviews. It also makes it impossible to translate reported accuracies on benchmarks into meaningful assessments as to whether such a system would work well in practice. While the Netflix prize generated a flurry of research, evaluating different models’ success on future predictions is hindered by the mixed distribution of training and testing data. Rather, by having an explicit model of profile dynamics, we can predict future behavior based on current trends. A model capable of capturing the actual data distribution inherent in recommender systems needs to be able to model both the temporal dynamics within each user and movie, in addition to capturing the rating interaction between both sets. This suggests the use of latent variable models to infer the unobserved state governing their behavior."
+
+>	"Nonlinear nonparametric recommender systems have proven to be somewhat elusive. In particular, nonlinear substitutes of the inner product formulation showed only limited promise in our experiments. To the best of our knowledge this is the first paper addressing movie recommendation in a fully causal and integrated fashion. That is, we believe that this is the first model which attempts to capture the dynamics of both users and movies. Moreover, our model is nonparametric. This allows us to model the data rather than having to assume a specific form of a state space."
+
+>	"Recurrent Recommender Networks are very concise since we only learn the dynamics rather than the state. This is one of the key differences to typical latent variable models where considerable effort is spent on estimating the latent state."
+
+>	"Experiments show that our model outperforms all others in terms of forward prediction, i.e. in the realistic scenario where we attempt to estimate future ratings given data that occurred strictly prior to the to-be-predicted ratings. We show that our model is able to capture exogenous dynamics (e.g. an Oscar award) and endogenous dynamics (e.g. Christmas movies) quite accurately. Moreover, we demonstrate that the model is able to predict changes in future user preferences accurately."
+
+
+#### ["Latent LSTM Allocation: Joint Clustering and Non-Linear Dynamic Modeling of Sequential Data"](http://proceedings.mlr.press/v70/zaheer17a/zaheer17a.pdf) Zaheer, Ahmed, Smola
+  `Google`
+>	"Recurrent neural networks, such as LSTM networks, are powerful tools for modeling sequential data like user browsing history or natural language text. However, to generalize across different user types, LSTMs require a large number of parameters, notwithstanding the simplicity of the underlying dynamics, rendering it uninterpretable, which is highly undesirable in user modeling. The increase in complexity and parameters arises due to a large action space in which many of the actions have similar intent or topic. In this paper, we introduce Latent LSTM Allocation for user modeling combining hierarchical Bayesian models with LSTMs. In LLA, each user is modeled as a sequence of actions, and the model jointly groups actions into topics and learns the temporal dynamics over the topic sequence, instead of action space directly. This leads to a model that is highly interpretable, concise, and can capture intricate dynamics. We present an efficient Stochastic EM inference algorithm for our model that scales to millions of users/documents. Our experimental evaluations show that the proposed model compares favorably with several state-of-the-art baselines."
+
+  - `video` <https://vimeo.com/240608072> (Zaheer)
+  - `video` <https://youtube.com/watch?v=ofaPq5aRKZ0> (Smola)
+  - `paper` ["State Space LSTM Models with Particle MCMC Inference"](https://arxiv.org/abs/1711.11179) by Zheng et al.
+
+
+#### ["State Space LSTM Models with Particle MCMC Inference"](https://arxiv.org/abs/1711.11179) Zheng, Zaheer, Ahmed, Wang, Xing, Smola
+>	"LSTM is one of the most powerful sequence models. Despite the strong performance, however, it lacks the nice interpretability as in state space models. In this paper, we present a way to combine the best of both worlds by introducing State Space LSTM models that generalizes the earlier work of combining topic models with LSTM. However we do not make any factorization assumptions in our inference algorithm. We present an efficient sampler based on sequential Monte Carlo method that draws from the joint posterior directly. Experimental results confirms the superiority and stability of this SMC inference algorithm on a variety of domains."
 
 
 

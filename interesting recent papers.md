@@ -784,6 +784,15 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 [recent papers - meta reinforcement learning](https://lilianweng.github.io/lil-log/2019/06/23/meta-reinforcement-learning.html)  
 
 ----
+#### ["Rethinking Few-Shot Image Classification: a Good Embedding Is All You Need?"](https://arxiv.org/abs/2003.11539) Tian et al.
+>	"We show that a simple baseline: learning a supervised or self-supervised representation on the meta-training set, followed by training a linear classifier on top of this representation, outperforms state-of-the-art few-shot learning methods. An additional boost can be achieved through the use of self-distillation. This demonstrates that using a good learned embedding model can be more effective than sophisticated meta-learning algorithms. We believe that our findings motivate a rethinking of few-shot image classification benchmarks and the associated role of meta-learning algorithms."  
+  - <https://people.csail.mit.edu/yuewang/projects/rfs>
+
+#### ["Rapid Learning or Feature Reuse? Towards Understanding the Effectiveness of MAML"](https://arxiv.org/abs/1909.09157) Raghu, Raghu, Bengio, Vinyals
+  `ANIL` `MAML`
+>	"MAML consists of two optimization loops, with the outer loop finding a meta-initialization, from which the inner loop can efficiently learn new tasks. A fundamental open question remains -- is the effectiveness of MAML due to the meta-initialization being primed for rapid learning (large, efficient changes in the representations) or due to feature reuse, with the meta initialization already containing high quality features? We investigate this question, via ablation studies and analysis of the latent representations, finding that feature reuse is the dominant factor. This leads to the ANIL (Almost No Inner Loop) algorithm, a simplification of MAML where we remove the inner loop for all but the (task-specific) head of a MAML-trained network. ANIL matches MAML's performance on benchmark few-shot image classification and RL and offers computational improvements over MAML. We further study the precise contributions of the head and body of the network, showing that performance on the test tasks is entirely determined by the quality of the learned features, and we can remove even the head of the network (the NIL algorithm)."  
+
+----
 #### ["Efficient Off-Policy Meta-Reinforcement Learning via Probabilistic Context Variables"](https://arxiv.org/abs/1903.08254) Rakelly, Zhou, Quillen, Finn, Levine
   `PEARL` `ICML 2019`
 >	"Current meta-RL methods rely heavily on on-policy experience, limiting their sample efficiency. They also lack mechanisms to reason about task uncertainty when adapting to new tasks, limiting their effectiveness in sparse reward problems. In this paper, we address these challenges by developing an off-policy meta-RL algorithm that disentangles task inference and control. In our approach, we perform online probabilistic filtering of latent task variables to infer how to solve a new task from small amounts of experience. This probabilistic interpretation enables posterior sampling for structured and efficient exploration. We demonstrate how to integrate these task variables with off-policy RL algorithms to achieve both meta-training and adaptation efficiency. Our method outperforms prior algorithms in sample efficiency by 20-100X as well as in asymptotic performance on several meta-RL benchmarks."  
@@ -813,10 +822,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482?t=1838> (Abbeel)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1710.03641>
   - `code` <https://github.com/openai/robosumo>
-
-#### ["Rapid Learning or Feature Reuse? Towards Understanding the Effectiveness of MAML"](https://arxiv.org/abs/1909.09157) Raghu, Raghu, Bengio, Vinyals
-  `ANIL` `MAML`
->	"MAML consists of two optimization loops, with the outer loop finding a meta-initialization, from which the inner loop can efficiently learn new tasks. A fundamental open question remains -- is the effectiveness of MAML due to the meta-initialization being primed for rapid learning (large, efficient changes in the representations) or due to feature reuse, with the meta initialization already containing high quality features? We investigate this question, via ablation studies and analysis of the latent representations, finding that feature reuse is the dominant factor. This leads to the ANIL (Almost No Inner Loop) algorithm, a simplification of MAML where we remove the inner loop for all but the (task-specific) head of a MAML-trained network. ANIL matches MAML's performance on benchmark few-shot image classification and RL and offers computational improvements over MAML. We further study the precise contributions of the head and body of the network, showing that performance on the test tasks is entirely determined by the quality of the learned features, and we can remove even the head of the network (the NIL algorithm)."  
 
 #### ["Meta-Learning and Universality: Deep Representations and Gradient Descent Can Approximate Any Learning Algorithm"](https://arxiv.org/abs/1710.11622) Finn, Levine
   `MAML`
@@ -1127,6 +1132,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"We show that (1) composition ofdata augmentations plays a critical role in definingeffective predictive tasks, (2) introducing a learn-able nonlinear transformation between the repre-sentation and the contrastive loss substantially im-proves the quality of the learned representations,and (3) contrastive learning benefits from largerbatch sizes and more training steps compared tosupervised learning."  
 >	"By combining these findings, we are able to considerably outperform previous methods for self-supervised and semi-supervised learning on ImageNet. A linear classifier trained on self-supervised representations learned by SimCLR achieves 76.5% top-1 accuracy, which is a 7% relative improvement over previous state-of-the-art, matching the performance of a supervised ResNet-50. When fine-tuned on only 1% of the labels, we achieve 85.8% top-5 accuracy, outperforming AlexNet with 100x fewer labels."  
   - `video` <https://youtu.be/dMUes74-nYY?t=2h10m45s> (Srinivas) `video`
+  - `video` <https://youtube.com/watch?v=APki8LmdJwY> (Shorten) `video`
   - `notes` <https://habr.com/en/company/ods/blog/493016/#9-a-simple-framework-for-contrastive-learning-of-visual-representations> `in russian`
 
 #### ["Revisiting Self-Supervised Visual Representation Learning"](https://arxiv.org/abs/1901.09005) Kolesnikov, Zhai, Beyer
@@ -1827,6 +1833,16 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <https://github.com/aravindr93/mjrl>
 
 ----
+#### ["Reinforcement Learning Upside Down: Don’t Predict Rewards - Just Map Them to Actions"](https://arxiv.org/abs/1912.02875) Schmidhuber
+  `UDRL` `credit assignment`
+>	"Standard RL predicts rewards, while UDRL instead uses rewards as task-defining inputs, together with representations of time horizons and other computable functions of historic and desired future data. UDRL learns to interpret these input observations as commands, mapping them to actions (or action probabilities) through SL on past (possibly accidental) experience. UDRL generalizes to achieve high rewards or other goals, through input commands such as: get lots of reward within at most so much time! A separate paper on first experiments with UDRL shows that even a pilot version of UDRL can outperform traditional baseline algorithms on certain challenging RL problems."  
+>	"We also introduce a related simple but general approach for teaching a robot to imitate humans. First videotape humans imitating the robot's current behaviors, then let the robot learn through SL to map the videos (as input commands) to these behaviors, then let it generalize and imitate videos of humans executing previously unknown behavior. This Imitate-Imitator concept may actually explain why biological evolution has resulted in parents who imitate the babbling of their babies."  
+  - `audio` <https://youtu.be/VAnsd_wfAmI?t=20m45s> (Schmidhuber)
+  - `video` <https://youtube.com/watch?v=RrvC8YW0pT0> (Kilcher)
+  - `video` <https://youtube.com/watch?v=ed7QQMG24MM> (Shorten)
+  - `video` <https://youtube.com/watch?v=yDqyFYDjLzQ> (Svidchenko) `in russian`
+  - `paper` ["Training Agents using Upside-Down Reinforcement Learning"](https://arxiv.org/abs/1912.02877) by Srivastava et al.
+
 #### ["Credit Assignment as a Proxy for Transfer in Reinforcement Learning"](https://arxiv.org/abs/1907.08027) Ferret et al.
   `credit assignment`
 >	"We suggest that credit assignment, regarded as a supervised learning task, could be used to accomplish transfer. Our contribution is twofold: we introduce a new credit assignment mechanism based on self-attention, and show that the learned credit can be transferred to in-domain and out-of-domain scenarios."  
@@ -2467,6 +2483,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - <https://dreamrl.github.io> (demo)
   - `post` <https://ai.googleblog.com/2020/03/introducing-dreamer-scalable.html>
   - `video` <https://slideslive.com/38922025/deep-reinforcement-learning-1?t=3449> (Hafner)
+  - `video` <https://youtu.be/0JxOpJd3w8w?t=21m52s> (Svidchenko) `in russian`
 
 #### ["Temporal Difference Models: Model-Free Deep RL for Model-Based Control"](https://arxiv.org/abs/1802.09081) Pong, Gu, Dalal, Levine
   `TDM` `learning to plan` `learning abstract environment model`
@@ -2564,10 +2581,12 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Learning Latent Dynamics for Planning from Pixels"](https://arxiv.org/abs/1811.04551) Hafner et al.
   `PlaNet` `learning to simulate` `learning environment model` `video prediction`
 >	"Deep Planning Network is a purely model-based agent that learns the environment dynamics from images and chooses actions through fast online planning in latent space. To achieve high performance, the dynamics model must accurately predict the rewards ahead for multiple time steps. We approach this using a latent dynamics model with both deterministic and stochastic transition components. Moreover, we propose a multi-step variational inference objective that we name latent overshooting. Using only pixel observations, our agent solves continuous control tasks with contact dynamics, partial observability, and sparse rewards, which exceed the difficulty of tasks that were previously solved by planning with learned models. PlaNet uses substantially fewer episodes and reaches final performance close to and sometimes higher than strong model-free algorithms."  
+>	"Equation (6) is a bound on the multi-step predictive distribution p_d(o_1:T | a_1:T) rather than the prior predictive distribution p(o_1:T | a_1:T). The first line that you said might be wrong is actually just the definition of p_d(o_1:T | a_1:T). This is of course a data likelihood, just not the one that you might be used to. One way to think of this is to consider your graphical model to be p_d(o_1:T, s_1:T | a_1:T) = \prod_t p(o_t | s_t) q(s_t | o_≤t-d, a_<t), from which the bound follows naturally. Note that this is the predictive distribution used during planning, so it seems reasonable to train the model on this directly. Since we reuse the encoder here as part of the graphical model, there are a few design choices that could be explored in future work, for example whether to stop the gradient around the q(s_t-d | o_≤t-d, a_<t-d) inside the q(s_t | o_≤t-d, a_<t) terms. Latent overshooting can be seen either as a new objective or as a new graphical model p_d(o_1:T, s_1:T | a_1:T). In the second case, you can derive latent overshooting as the standard variational bound. The multi-step predictive distribution p_d is the distribution that is used during planning, where past observations up to step t-d are available and incorporated into the belief using the encoder q and we make a prediction about step t. It seems reasonable to me to train on the objective that the model is later evaluated on."  
   - <https://planetrl.github.io>
   - `post` <https://ai.googleblog.com/2019/02/introducing-planet-deep-planning.html>
   - `video` <https://slideslive.com/38915863/learning-models-for-representations-and-planning?t=860> (Lillicrap)
   - `video` <https://youtube.com/watch?v=C7Dmu0GtrSw>
+  - `video` <https://youtu.be/0JxOpJd3w8w?t=4m30s> (Svidchenko) `in russian`
   - `code` <https://github.com/google-research/planet>
   - `code` <https://github.com/Kaixhin/PlaNet>
 

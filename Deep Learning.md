@@ -255,6 +255,8 @@
   ["Marrying Graphical Models & Deep Learning"](http://videolectures.net/deeplearning2017_welling_inference) by Max Welling `video`  
   ["Bayesian Neural Networks"](http://videolectures.net/DLRLsummerschool2018_wilson_bayesian_neural_nets) by Andrew Wilson `video`  
 
+  ["Is Bayesian Deep Learning the Most Brilliant Thing Ever"](https://youtube.com/watch?v=HumFmLu3CJ8) panel discussion `video`
+
   ["Deep Learning and Bayesian Methods"](http://deepbayes.ru) school from HSE ([videos](https://youtube.com/channel/UC9KcwaZ9gSvcYNs7Jx3oNaQ/playlists))  
   ["Bayesian Methods in Deep Learning"](https://youtube.com/playlist?list=PLNO729xOopfFy1NeLkHPN5xnSqGkgcxJ3) course from MSU `video` `in russian`  
 
