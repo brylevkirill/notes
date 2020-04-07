@@ -5,7 +5,7 @@
     - [**modeling items and users**](#interesting-papers---modeling-items-and-users)
     - [**deep learning**](#interesting-papers---deep-learning)
     - [**modeling dynamics**](#interesting-papers---modeling-dynamics)
-    - [**active learning**](#interesting-papers---active-learning)
+    - [**interactive learning**](#interesting-papers---interactive-learning)
 
 
 
@@ -44,14 +44,14 @@
   [overview](https://youtube.com/watch?v=5ir_fCgzfLM) by Vladimir Gulin `video` `in russian`  
   [overview](https://youtube.com/watch?v=MLljnzsz9Dk) by Alexey Dral `video` `in russian`  
 
-  [overview](https://youtube.com/watch?v=CQnCioCq4C0) of applications in Yandex by Boris Sharchilev `video` `in russian`  
-  [overview](https://youtube.com/watch?v=iGAMPnv-0VY) of applications in Yandex by Igor Lifar and Dmitry Ushanov `video` `in russian`  
-  [overview](https://youtube.com/watch?v=OJ0nJb3LfNo) of applications in Yandex by Andrey Zimovnov `video` `in russian`  
-  [overview](https://youtube.com/watch?v=JKTneRi2vn8) of applications in Yandex by Michael Rozner `video` `in russian`  
+  [overview](https://youtube.com/watch?v=CQnCioCq4C0) of applications at Yandex by Boris Sharchilev `video` `in russian`  
+  [overview](https://youtube.com/watch?v=iGAMPnv-0VY) of applications at Yandex by Igor Lifar and Dmitry Ushanov `video` `in russian`  
+  [overview](https://youtube.com/watch?v=OJ0nJb3LfNo) of applications at Yandex by Andrey Zimovnov `video` `in russian`  
+  [overview](https://youtube.com/watch?v=JKTneRi2vn8) of applications at Yandex by Michael Rozner `video` `in russian`  
 
-  [overview](https://youtube.com/watch?v=TlBDO8UgMOE) of applications in VK by Danila Savenkov `video` `in russian`  
-  [overview](https://vk.com/video-187376020_456239022?list=5e2c11518f60c8d169) of applications in VK by Oleg Lashinin `video` `in russian`  
-  [overview](https://vk.com/video-187376020_456239020?list=a28424fc797e02beaf) of applications in VK by Semyon Polyakov `video` `in russian`  
+  [overview](https://youtube.com/watch?v=TlBDO8UgMOE) of applications at VK by Danila Savenkov `video` `in russian`  
+  [overview](https://vk.com/video-187376020_456239022?list=5e2c11518f60c8d169) of applications at VK by Oleg Lashinin `video` `in russian`  
+  [overview](https://vk.com/video-187376020_456239020?list=a28424fc797e02beaf) of applications at VK by Semyon Polyakov `video` `in russian`  
 
 ----
 
@@ -72,7 +72,7 @@
   - [**modeling items and users**](#interesting-papers---modeling-items-and-users)
   - [**deep learning**](#interesting-papers---deep-learning)
   - [**modeling dynamics**](#interesting-papers---modeling-dynamics)
-  - [**active learning**](#interesting-papers---active-learning)
+  - [**interactive learning**](#interesting-papers---interactive-learning)
 
 
 [**selected papers**](https://yadi.sk/d/RtAsSjLG3PhrT2)

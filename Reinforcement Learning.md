@@ -601,7 +601,11 @@
 ----
 #### batch reinforcement learning
 
+  Batch reinforcement learning offers a mechanism for learning from a fixed dataset without restrictions on the quality of the data.
+
   ["The Sub-basement of RL"](https://youtube.com/watch?v=373_zVWceqA) by Dale Schuurmans `video`
+
+  ["Batch Reinforcement Learning"](http://tgabel.de/cms/fileadmin/user_upload/documents/Lange_Gabel_EtAl_RL-Book-12.pdf) by Lange et al. `paper`
 
 
 ----
@@ -915,6 +919,7 @@
 	["Adaptive Confidence and Adaptive Curiosity"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.34.5686) by Schmidhuber `paper` ([**Artificial Curiosity and Creativity**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory by Schmidhuber)  
 	["Curious Model-building Control Systems"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.45.2597) by Schmidhuber `paper` ([**Artificial Curiosity and Creativity**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory by Schmidhuber)  
 	["What's Interesting?"](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#whats-interesting-schmidhuber) by Schmidhuber `paper` `summary` ([**Artificial Curiosity and Creativity**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory by Schmidhuber)  
+	["Intrinsic Motivation Systems for Autonomous Mental Development"](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.107.666) by Oudeyer et al. `paper`  
 	["Exploration in Model-based Reinforcement Learning by Empirically Estimating Learning Progress"](https://papers.nips.cc/paper/4642-exploration-in-model-based-reinforcement-learning-by-empirically-estimating-learning-progress) by Lopes et al. `paper`  
 	[**"Automated Curriculum Learning for Neural Networks"**](#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper` `summary`  
 	["Adapting Behaviour for Learning Progress"](https://arxiv.org/abs/1912.06910) by Schaul et al. `paper`  
@@ -1968,6 +1973,7 @@ interesting recent papers:
   - <https://int8.io/counterfactual-regret-minimization-for-poker-ai>
   - <http://modelai.gettysburg.edu/2013/cfr/index.html#description>
   - `code` <https://github.com/EricSteinberger/Deep-CFR>
+  - `paper` ["Single Deep Counterfactual Regret Minimization"](https://arxiv.org/abs/1901.07621) by Steinberger
 
 
 #### ["Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm"](https://arxiv.org/abs/1712.01815) Silver et al.

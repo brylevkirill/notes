@@ -379,7 +379,8 @@
   [overview](https://vimeo.com/250399374) by Juergen Schmidhuber `video`  
   [overview](https://youtube.com/watch?v=nqiUFc52g78) by Juergen Schmidhuber `video`  
 
-  [overview](http://scholarpedia.org/article/Metalearning) by Tom Schaul and Juergen Schmidhuber
+  [overview](http://scholarpedia.org/article/Metalearning) by Tom Schaul and Juergen Schmidhuber  
+  [overview](http://people.idsia.ch/~juergen/metalearner.html) by Juergen Schmidhuber  
 
   [**Goedel Machine**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#meta-learning---goedel-machine)
 

@@ -804,6 +804,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"Our conceptual and theoretical contributions consist of formulating the unsupervised meta-reinforcement learning problem and describing how task proposals based on mutual information can be used to train optimal meta-learners."  
   - `video` <https://slideslive.com/38917936/unsupervised-reinforcement-learning-and-metalearning?t=1205> (Levine)
   - `video` <https://youtu.be/5oGEZGxJAl4?t=29m35s> (Levine)
+  - `video` <https://youtu.be/i05Fk4ebMY0?t=35m21s> (Finn)
 
 #### ["On First-Order Meta-Learning Algorithms"](https://arxiv.org/abs/1803.02999) Nichol, Achiam, Schulman
   `Reptile`
@@ -837,8 +838,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"Unlike prior methods, the MAML learner’s weights are updated using the gradient, rather than a learned update rule. Our method does not introduce any additional parameters into the learning process and does not require a particular learner model architecture."  
   - <https://sites.google.com/view/maml> (demo)
   - `video` <https://youtube.com/watch?v=5oGEZGxJAl4> (Levine)
-  - `video` <https://youtu.be/Ko8IBbYjdq8?t=18m51s> (Finn)
+  - `video` <https://youtube.com/watch?v=kmbPnsgHxz4> (Finn)
+  - `video` <https://youtube.com/watch?v=i05Fk4ebMY0> (Finn)
   - `video` <https://youtu.be/lYU5nq0dAQQ?t=44m57s> (Levine)
+  - `video` <https://youtu.be/Ko8IBbYjdq8?t=18m51s> (Finn)
   - `video` <https://facebook.com/nipsfoundation/videos/1554594181298482?t=1085> (Abbeel)
   - `video` <https://youtube.com/watch?v=ID150Tl-MMw&t=1h1m22s> + <https://youtube.com/watch?v=ID150Tl-MMw&t=1h9m10s> (Abbeel)
   - `video` <https://youtube.com/watch?v=sF-dbZ2BQrQ> (Kelcey)
@@ -1431,6 +1434,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=kQ1eEXgGsCU> (Nowozin)
   - `video` <https://youtube.com/watch?v=y7pUN2t5LrA> (Nowozin)
   - `video` <https://youtu.be/jAI3rBI6poU?t=14m31s> (Ulyanov) `in russian`
+  - `video` <https://youtube.com/watch?v=7WTy_WwS_f0> (Alanov) `in russian`
   - `post` <https://colinraffel.com/blog/gans-and-divergence-minimization.html#citation-nowozin2016>
   - `code` <https://github.com/wiseodd/generative-models/tree/master/GAN/f_gan>
 
@@ -1834,7 +1838,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 ----
 #### ["Reinforcement Learning Upside Down: Don’t Predict Rewards - Just Map Them to Actions"](https://arxiv.org/abs/1912.02875) Schmidhuber
-  `UDRL` `credit assignment`
+  `⅂ꓤ` `UDRL` `credit assignment`
 >	"Standard RL predicts rewards, while UDRL instead uses rewards as task-defining inputs, together with representations of time horizons and other computable functions of historic and desired future data. UDRL learns to interpret these input observations as commands, mapping them to actions (or action probabilities) through SL on past (possibly accidental) experience. UDRL generalizes to achieve high rewards or other goals, through input commands such as: get lots of reward within at most so much time! A separate paper on first experiments with UDRL shows that even a pilot version of UDRL can outperform traditional baseline algorithms on certain challenging RL problems."  
 >	"We also introduce a related simple but general approach for teaching a robot to imitate humans. First videotape humans imitating the robot's current behaviors, then let the robot learn through SL to map the videos (as input commands) to these behaviors, then let it generalize and imitate videos of humans executing previously unknown behavior. This Imitate-Imitator concept may actually explain why biological evolution has resulted in parents who imitate the babbling of their babies."  
   - `audio` <https://youtu.be/VAnsd_wfAmI?t=20m45s> (Schmidhuber)
@@ -1885,8 +1889,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"  
   - `video` <https://youtube.com/playlist?list=PLDfrC-Vpg-CzVTqSjxVeLQZy3f7iv9vyY> (demo)
   - `video` <https://youtu.be/NZEAqdepq0w?t=56m34s> (Hochreiter)
+  - `audio` <https://www.talkrl.com/episodes/neurips-2019-deep-rl-workshop> (Hochreiter, Arjona-Medina)
   - `post` <https://widmi.github.io>
   - `code` <https://github.com/ml-jku/baselines-rudder>
+  - `paper` ["On the Convergence of Episodic Reinforcement Learning Algorithms at the Example of RUDDER"](https://drive.google.com/file/d/1P7BQqOTPGzPf_RPfxirMFGmnyaIVqkrf) by Holzleitner
 
 #### ["TD or not TD: Analyzing the Role of Temporal Differencing in Deep Reinforcement Learning"](https://arxiv.org/abs/1806.01175) Amiranashvili, Dosovitskiy, Koltun, Brox
   `credit assignment`
@@ -1898,28 +1904,37 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"While TD is at an advantage in tasks with simple perception, long planning horizons, or terminal rewards, MC training is more robust to noisy rewards, effective for training perception systems from raw sensory inputs, and surprisingly successful in dealing with sparse and delayed rewards."  
 >	"What is the reason for this contrast between classic findings and our results? We believe that the key difference is in the complexity of perception in immersive three-dimensional environments, which was not present in gridworlds and other classic problems, and is only partially present in Atari games. In immersive simulation, the agent’s observation is a high-dimensional image that represents a partial view of a large (mostly hidden) three-dimensional environment. The dimensionality of the state space is essentially infinite: the underlying environment is specified by continuous surfaces in three-dimensional space. Memorizing all possible states is easy and routine in gridworlds and is also possible in some Atari games, but is not feasible in immersive three-dimensional simulations. Therefore, in order to successfully operate in such simulations, the agent has to learn to extract useful representations from the observations it receives. Encoding a meaningful representation from rich perceptual input is where Monte Carlo methods are at an advantage due to the reliability of their training signals. Monte Carlo methods train on ground-truth targets, not “guess from a guess”, as TD methods do."  
 
+#### ["Hindsight Experience Replay"](https://arxiv.org/abs/1707.01495) Andrychowicz et al.
+  `HER` `credit assignment`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#hindsight-experience-replay-andrychowicz-et-al>
+
 ----
-#### ["Natural Value Approximators: Learning when to Trust Past Estimates"](http://papers.nips.cc/paper/6807-natural-value-approximators-learning-when-to-trust-past-estimates) Xu, Modayil, Hasselt, Barreto, Silver, Schaul
-  `NVA` `value-based`
->	"Neural networks are most effective for value function approximation when the desired target function is smooth. However, value functions are, by their very nature, discontinuous functions with sharp variations over time. We introduce a representation of value that matches the natural temporal structure of value functions."  
->	"A value function represents the expected sum of future discounted rewards. If non-zero rewards occur infrequently but reliably, then an accurate prediction of the cumulative discounted reward rises as such rewarding moments approach and drops immediately after. This is a pervasive scenario because many domains associate positive or negative reinforcements to salient events (like picking up an object, hitting a wall, or reaching a goal position). The problem is that the agent’s observations tend to be smooth in time, so learning an accurate value estimate near those sharp drops puts strain on the function approximator - especially when employing differentiable function approximators such as neural networks that naturally make smooth maps from observations to outputs."  
->	"We incorporate the temporal structure of cumulative discounted rewards into the value function itself. The main idea is that, by default, the value function can respect the reward sequence. If no reward is observed, then the next value smoothly matches the previous value, but becomes a little larger due to the discount. If a reward is observed, it should be subtracted out from the previous value: in other words a reward that was expected has now been consumed. The natural value approximator combines the previous value with the observed rewards and discounts, which makes this sequence of values easy to represent by a smooth function approximator such as a neural network."  
-  - `video` <https://facebook.com/nipsfoundation/videos/1554741347950432?t=4212> (Xu)
+#### ["An Optimistic Perspective on Offline Reinforcement Learning"](https://arxiv.org/abs/1907.04543) Agarwal, Schuurmans, Norouzi
+  `REM` `value-based` `off-policy learning` `batch learning`
+>	"This paper studies offline RL using the DQN replay dataset comprising the entire replay experience of a DQN agent on 60 Atari 2600 games. We demonstrate that recent off-policy deep RL algorithms, even when trained solely on this replay dataset, outperform the fully trained DQN agent."  
+>	"Random Ensemble Mixture is a robust Q-learning algorithm that enforces optimal Bellman consistency on randomly sampled convex combination of multiple Q-value estimates. Offline REM trained on the DQN replay dataset surpasses strong RL baselines."  
+>	"The results here present an optimistic view that robust RL algorithms trained on sufficiently large and diverse offline datasets can lead to high quality policies."  
+>	"Fujimoto et al. [2019] present a pessimistic view that standard off-policy methods don't work in the offline setting even with large diverse datasets."  
+  - <https://offline-rl.github.io>
+  - `video` <https://slideslive.com/38922701/contributed-talk-striving-for-simplicity-in-offpolicy-deep-reinforcement-learning> (Agarwal)
+  - `audio` <https://www.talkrl.com/episodes/scott-fujimoto> (31:43) (Fujimoto)
+  - `paper` [**"Off-Policy Deep Reinforcement Learning without Exploration"**](#off-policy-deep-reinforcement-learning-without-exploration-fujimoto-meger-precup) by Fujimoto et al. `summary`
 
-#### ["Regret Minimization for Partially Observable Deep Reinforcement Learning"](https://arxiv.org/abs/1710.11424) Jin, Levine, Keutzer
-  `ARM` `value-based`
->	"Algorithm based on counterfactual regret minimization that iteratively updates an approximation to a cumulative clipped advantage function."  
->	"In contrast to prior methods, advantage-based regret minimization is well suited to partially observed or non-Markovian environments."  
-  - `video` <https://vimeo.com/287803161> (Jin)
+#### ["Benchmarking Batch Deep Reinforcement Learning Algorithms"](https://arxiv.org/abs/1910.01708) Fujimoto, Conti, Ghavamzadeh, Pineau
+  `BCQ` `value-based` `off-policy learning` `batch learning`
+>	"Widely-used deep reinforcement learning algorithms have been shown to fail in the batch setting - learning from a fixed data set without interaction with the environment. Following this result, there have been several papers showing reasonable performances under a variety of environments and batch settings. In this paper, we benchmark the performance of recent off-policy and batch reinforcement learning algorithms under unified settings on the Atari domain, with data generated by a single partially-trained behavioral policy. We find that under these conditions, many of these algorithms underperform DQN trained online with the same amount of data, as well as the partially-trained behavioral policy. To introduce a strong baseline, we adapt the Batch-Constrained Q-learning algorithm to a discrete-action setting, and show it outperforms all existing algorithms at this task."  
+  - `audio` <https://www.talkrl.com/episodes/scott-fujimoto> (31:43) (Fujimoto)
 
-#### ["Multi-step Reinforcement Learning: A Unifying Algorithm"](https://arxiv.org/abs/1703.01327) De Asis, Hernandez-Garcia, Holland, Sutton
-  `Q(σ)` `value-based`
->	"Currently, there are a multitude of algorithms that can be used to perform TD control, including Sarsa, Q-learning, and Expected Sarsa. These methods are often studied in the one-step case, but they can be extended across multiple time steps to achieve better performance. Each of these algorithms is seemingly distinct, and no one dominates the others for all problems. In this paper, we study a new multi-step action-value algorithm called Q(σ) which unifies and generalizes these existing algorithms, while subsuming them as special cases. A new parameter, σ, is introduced to allow the degree of sampling performed by the algorithm at each step during its backup to be continuously varied, with Sarsa existing at one extreme (full sampling), and Expected Sarsa existing at the other (pure expectation)."  
->	"With a constant value of sampling parameter σ, Q(σ) is a weighted average between tree backups and regular SARSA: σ varies the breadth of the tree backup, contrasted with TD(λ) where λ varies the depth. Q(σ) allows for interpolation in bias-variance tradeoff: if σ is dynamically adjusted, can enforce a desirable tradeoff."  
-  - `video` <https://youtube.com/watch?v=MidZJ-oCpRk> (De Asis)
-  - `video` <https://youtube.com/watch?v=_OP5g1gRP5s> (Hernandez-Garcia)
-  - `video` <https://youtu.be/dZmCOIJ7Cyc?t=7m3s> (Bobyrev) `in russian`
+#### ["Off-Policy Deep Reinforcement Learning without Exploration"](https://arxiv.org/abs/1812.02900) Fujimoto, Meger, Precup
+  `BCQ` `value-based` `off-policy learning` `batch learning`
+>	"We demonstrate that due to errors introduced by extrapolation, standard off-policy deep reinforcement learning algorithms, such as DQN and DDPG, are incapable of learning without data correlated to the distribution under the current policy, making them ineffective for fixed batch setting."  
+>	"We introduce a novel class of off-policy algorithms, batch-constrained reinforcement learning, which restricts the action space in order to force the agent towards behaving close to on-policy with respect to a subset of the given data."  
+>	"We present the first continuous control deep reinforcement learning algorithm which can learn effectively from arbitrary, fixed batch data, and empirically demonstrate the quality of its behavior in several tasks."  
+>	"We demonstrate a critical problem in off-policy reinforcement learning with finite data, where the value target introduces error by including an estimate of unseen state-action pairs. This phenomenon, which we denote extrapolation error, has important implications for off-policy and batch reinforcement learning, as it is generally implausible to have complete state-action coverage in any practical setting. We present batch-constrained reinforcement learning - acting close to on-policy with respect to the available data, as an answer to extrapolation error. When extended to a deep reinforcement learning setting, our algorithm, Batch-Constrained deep Q-learning, is the first continuous control algorithm capable of learning from arbitrary batch data, without exploration. Due to the importance of batch reinforcement learning for practical applications, we believe BCQ will be a strong foothold for future algorithms to build on, while furthering our understanding of the systematic risks in Q-learning."  
+  - `audio` <https://www.talkrl.com/episodes/scott-fujimoto> (13:30) (Fujimoto)
+  - `post` <https://danieltakeshi.github.io/2019/02/09/batch-constrained-deep-rl>
 
+----
 #### ["Convergent Tree-Backup and Retrace with Function Approximation"](https://arxiv.org/abs/1705.09322) Touati, Bacon, Precup, Vincent
   `Retrace` `value-based` `off-policy evaluation`
 >	"We show that Tree Backup and Retrace algorithms are unstable with linear function approximation, both in theory and with specific examples. We addressed these issues by formulating gradient-based versions of these algorithms which minimize the mean-square projected Bellman error. Using a saddle-point formulation, we were also able to provide convergence guarantees and characterize the convergence rate of our algorithms."  
@@ -1944,16 +1959,13 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"In control, Q*(λ) is in fact identical to Watkins’s Q(λ), except it does not cut the eligiblity trace at off-policy actions."  
   - `video` <https://youtube.com/watch?v=8hK0NnG_DhY&t=25m27s> (Brunskill)
 
-#### ["Data-Efficient Off-Policy Policy Evaluation for Reinforcement Learning"](http://arxiv.org/abs/1604.00923) Thomas, Brunskill
-  `value-based` `off-policy evaluation`
-  - `video` <https://youtube.com/watch?v=8hK0NnG_DhY&t=15m44s> (Brunskill)
-
-#### ["Taming the Noise in Reinforcement Learning via Soft Updates"](https://arxiv.org/abs/1512.08562) Fox, Pakman, Tishby
-  `G-learning` `value-based`
->	"Model-free reinforcement learning algorithms, such as Q-learning, perform poorly in the early stages of learning in noisy environments, because much effort is spent unlearning biased estimates of the state-action value function. The bias results from selecting, among several noisy estimates, the apparent optimum, which may actually be suboptimal. We propose G-learning, a new off-policy learning algorithm that regularizes the value estimates by penalizing deterministic policies in the beginning of the learning process. We show that this method reduces the bias of the value-function estimation, leading to faster convergence to the optimal value and the optimal policy. The stochastic nature of G-learning also makes it avoid some exploration costs, a property usually attributed only to on-policy algorithms."  
->	"G-learning penalizes KL-divergence from a simple uniform distribution in order to cope with overestimation of Q-values."  
-  - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Taming_the_Noise_in_Reinforcement_Learning_via_Soft_Updates.md>
-  - `code` <https://github.com/noahgolmant/simpledgn>
+#### ["Multi-step Reinforcement Learning: A Unifying Algorithm"](https://arxiv.org/abs/1703.01327) Asis, Hernandez-Garcia, Holland, Sutton
+  `Q(σ)` `value-based`
+>	"Currently, there are a multitude of algorithms that can be used to perform TD control, including Sarsa, Q-learning, and Expected Sarsa. These methods are often studied in the one-step case, but they can be extended across multiple time steps to achieve better performance. Each of these algorithms is seemingly distinct, and no one dominates the others for all problems. In this paper, we study a new multi-step action-value algorithm called Q(σ) which unifies and generalizes these existing algorithms, while subsuming them as special cases. A new parameter, σ, is introduced to allow the degree of sampling performed by the algorithm at each step during its backup to be continuously varied, with Sarsa existing at one extreme (full sampling), and Expected Sarsa existing at the other (pure expectation)."  
+>	"With a constant value of sampling parameter σ, Q(σ) is a weighted average between tree backups and regular SARSA: σ varies the breadth of the tree backup, contrasted with TD(λ) where λ varies the depth. Q(σ) allows for interpolation in bias-variance tradeoff: if σ is dynamically adjusted, can enforce a desirable tradeoff."  
+  - `video` <https://youtube.com/watch?v=MidZJ-oCpRk> (De Asis)
+  - `video` <https://youtube.com/watch?v=_OP5g1gRP5s> (Hernandez-Garcia)
+  - `video` <https://youtu.be/dZmCOIJ7Cyc?t=7m3s> (Bobyrev) `in russian`
 
 ----
 #### ["Diagnosing Bottlenecks in Deep Q-learning Algorithms"](https://arxiv.org/abs/1902.10250) Fu, Kumar, Soh, Levine
@@ -2246,6 +2258,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"In Q-learning function approximation errors lead to overestimated value estimates and suboptimal policies. We show that this problem persists in an actor-critic setting and propose novel mechanisms to minimize its effects on both the actor and the critic. Our algorithm builds on Double Q-learning, by taking the minimum value between a pair of critics to limit overestimation. We draw the connection between target networks and overestimation bias, and suggest delaying policy updates to reduce per-update error and further improve performance."  
   - `video` <https://facebook.com/icml.imls/videos/430993334081854?t=7107> (Fujimoto)
   - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h22m44s> (Sigaud)
+  - `audio` <https://www.talkrl.com/episodes/scott-fujimoto> (Fujimoto)
   - `notes` <https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#td3>
 
 #### ["IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures"](https://arxiv.org/abs/1802.01561) Espeholt, Soyer, Munos, Simonyan, Mnih, Ward, Doron, Firoiu, Harley, Dunning, Legg, Kavukcuoglu
@@ -2483,6 +2496,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - <https://dreamrl.github.io> (demo)
   - `post` <https://ai.googleblog.com/2020/03/introducing-dreamer-scalable.html>
   - `video` <https://slideslive.com/38922025/deep-reinforcement-learning-1?t=3449> (Hafner)
+  - `video` <https://youtube.com/watch?v=awyuuJoHawo> (Kilcher)
   - `video` <https://youtu.be/0JxOpJd3w8w?t=21m52s> (Svidchenko) `in russian`
 
 #### ["Temporal Difference Models: Model-Free Deep RL for Model-Based Control"](https://arxiv.org/abs/1802.09081) Pong, Gu, Dalal, Levine
@@ -2948,22 +2962,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#smirl-surprise-minimizing-rl-in-dynamic-environments-berseth>
 
 ----
-#### ["Diversity is All You Need: Learning Skills without a Reward Function"](https://arxiv.org/abs/1802.06070) Eysenbach, Gupta, Ibarz, Levine
-  `DIAYN` `skills discovery`
->	"Our proposed method learns skills by maximizing an information theoretic objective using a maximum entropy policy. On a variety of simulated robotic tasks, we show that this simple objective results in the unsupervised emergence of diverse skills, such as walking and jumping. In a number of reinforcement learning benchmark environments, our method is able to learn a skill that solves the benchmark task despite never receiving the true task reward."  
->	"We further proposed methods for using the learned skills (1) to quickly adapt to a new task, (2) to solve complex tasks via hierarchical RL, and (3) to imitate an expert."  
->	"Why can't we just use MaxEnt RL or goal-reaching?  
->	1. action entropy is not the same as state entropy - agent can take very different actions, but land in similar states  
->	2. reaching diverse goals is not the same as performing diverse tasks - not all behaviors can be captured by goal-reaching  
->	3. MaxEnt policies are stochastic but not always controllable"  
->	"intuition: different skills should visit different state-space regions"  
-  - <https://sites.google.com/view/diayn>
-  - `video` <https://youtu.be/tzieElmtAjs?t=38m18s> (Levine)
-  - `video` <https://slideslive.com/38917936/unsupervised-reinforcement-learning-and-metalearning?t=1326> (Levine)
-  - `video` <https://youtu.be/5oGEZGxJAl4?t=31m52s> (Levine)
-  - `video` <https://youtube.com/watch?v=x6Kt7q6fylI> (Krayenhoff)
-
-----
 #### ["Learning by Playing - Solving Sparse Reward Tasks from Scratch"](https://arxiv.org/abs/1802.10567) Riedmiller et al.
   `SAC-X` `auxiliary tasks`
 >	"SAC-X simultaneously learns intention policies on a set of auxiliary tasks, and actively schedules and executes these to explore its observation space - in search for sparse rewards of externally defined target tasks. Utilizing simple auxiliary tasks enables SAC-X to learn complicated target tasks from rewards defined in a ’pure’, sparse, manner: only the end goal is specified, but not the solution path."  
@@ -3170,13 +3168,35 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://vimeo.com/220484541> (Machado)
   - `video` <https://vimeo.com/237274347> (Machado)
 
+#### ["Variational Option Discovery Algorithms"](https://arxiv.org/abs/1807.10299) Achiam, Edwards, Amodei, Abbeel
+  `VALOR`
+>	"We highlight a tight connection between variational option discovery methods and variational autoencoder. In VALOR, the policy encodes contexts from a noise distribution into trajectories, and the decoder recovers the contexts from the complete trajectories."  
+>	"We propose a curriculum learning approach where the number of contexts seen by the agent increases whenever the agent’s performance is strong enough (as measured by the decoder) on the current set of contexts. We show that this simple trick stabilizes training for VALOR and prior variational option discovery methods, allowing a single agent to learn many more modes of behavior than it could with a fixed context distribution."  
+
+#### ["Diversity is All You Need: Learning Skills without a Reward Function"](https://arxiv.org/abs/1802.06070) Eysenbach, Gupta, Ibarz, Levine
+  `DIAYN`
+>	"Our proposed method learns skills by maximizing an information theoretic objective using a maximum entropy policy. On a variety of simulated robotic tasks, we show that this simple objective results in the unsupervised emergence of diverse skills, such as walking and jumping. In a number of reinforcement learning benchmark environments, our method is able to learn a skill that solves the benchmark task despite never receiving the true task reward."  
+>	"We further proposed methods for using the learned skills (1) to quickly adapt to a new task, (2) to solve complex tasks via hierarchical RL, and (3) to imitate an expert."  
+>	"Why can't we just use MaxEnt RL or goal-reaching?  
+>	1. action entropy is not the same as state entropy - agent can take very different actions, but land in similar states  
+>	2. reaching diverse goals is not the same as performing diverse tasks - not all behaviors can be captured by goal-reaching  
+>	3. MaxEnt policies are stochastic but not always controllable"  
+>	"intuition: different skills should visit different state-space regions"  
+>	"policy -> visit states which are discriminable  
+>	discriminator -> predict skill from state"  
+  - <https://sites.google.com/view/diayn>
+  - `video` <https://youtu.be/tzieElmtAjs?t=38m18s> (Levine)
+  - `video` <https://slideslive.com/38917936/unsupervised-reinforcement-learning-and-metalearning?t=1326> (Levine)
+  - `video` <https://youtu.be/5oGEZGxJAl4?t=31m52s> (Levine)
+  - `video` <https://youtu.be/i05Fk4ebMY0?t=37m26s> (Finn)
+  - `video` <https://youtube.com/watch?v=x6Kt7q6fylI> (Krayenhoff)
+
 #### ["Variational Intrinsic Control"](http://arxiv.org/abs/1611.07507) Gregor, Rezende, Wierstra
   - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#variational-intrinsic-control-gregor-rezende-wierstra>
 
 #### ["Modular Multitask Reinforcement Learning with Policy Sketches"](http://arxiv.org/abs/1611.01796) Andreas, Klein, Levine
   - `video` <https://vimeo.com/237274402> (Andreas)
   - `video` <https://youtube.com/watch?v=NRIcDEB64x8> (Andreas)
-  - `code` <https://github.com/jacobandreas/psketch>
 
 #### ["Principled Option Learning in Markov Decision Processes"](https://arxiv.org/abs/1609.05524) Fox, Moshkovitz, Tishby
 >	"We suggest a mathematical characterization of good sets of options using tools from information theory. This characterization enables us to find conditions for a set of options to be optimal and an algorithm that outputs a useful set of options and illustrate the proposed algorithm in simulation."  
