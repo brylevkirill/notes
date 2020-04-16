@@ -76,7 +76,7 @@
 
 	[**"Grandmaster Level in StarCraft II using Multi-agent Reinforcement Learning"**](#grandmaster-level-in-starcraft-ii-using-multi-agent-reinforcement-learning-vinyals-et-al) by Vinyals et al. `paper` `summary` *(AlphaStar)*
 
-	[overview](https://slideslive.com/38922025/deep-reinforcement-learning-1?t=318) by Oriol Vinyals `video`  
+	[overview](https://slideslive.com/38922724/grandmaster-level-in-starcraft-ii-using-multiagent-reinforcement-learning) by Oriol Vinyals `video`  
 	[overview](https://youtu.be/3UdH3lPF7nE) by Oriol Vinyals `video`  
 	[overview](https://slideslive.com/38916905/alphastar-mastering-the-game-of-starcraft-ii) by David Silver `video`  
 	[overview](https://youtu.be/mzjGNo9Tz4g?t=10m53s) by David Silver `video`  
@@ -100,7 +100,7 @@
 
 	["Dota 2 with Large Scale Deep Reinforcement Learning"](https://cdn.openai.com/dota-2.pdf) by Berner et al. `paper` *(OpenAI Five)*
 
-	[OpenAI File overview](https://slideslive.com/38922025/deep-reinforcement-learning-1?t=2175) by Jie Tang and Filip Wolski `video`  
+	[OpenAI Five overview](https://slideslive.com/38922722/contributed-talk-playing-dota-2-with-large-scale-deep-reinforcement-learning) by Jie Tang and Filip Wolski `video`  
 	[OpenAI Five overview](https://youtu.be/w3ues-NayAs?t=2m26s) by Ilya Sutskever `video`  
 	[OpenAI Five overview](https://youtu.be/N8_gVrIPLQM?t=1h3m41s) by David Silver `video`  
 
@@ -227,7 +227,9 @@
 	[AlphaZero vs Stockfish](https://youtube.com/playlist?list=PLDnx7w_xuguHIxbL7akaYgEvV4spwYkmn) games `video`  
 	[AlphaZero vs Stockfish](https://youtube.com/playlist?list=PL-qLOQ-OEls607FPLAsPZ6De4f1W3ZF-I) games `video`  
 
-	["Game Changer: AlphaZero's Groundbreaking Chess Strategies and the Promise of AI"](https://amazon.com/Game-Changer-AlphaZeros-Groundbreaking-Strategies/dp/9056918184) by Matthew Sadler and Natasha Regan `book` ([talk](https://youtube.com/watch?v=HgZYIDslnAI) `video`, [analysis](https://youtube.com/playlist?list=UUkK8M0dMhAX8JinU-6aD7xA) `video`)
+	["Game Changer: AlphaZero's Groundbreaking Chess Strategies and the Promise of AI"](https://amazon.com/Game-Changer-AlphaZeros-Groundbreaking-Strategies/dp/9056918184) by Matthew Sadler and Natasha Regan `book` ([talk](https://youtube.com/watch?v=HgZYIDslnAI) `video`, [games](https://youtube.com/playlist?list=UUkK8M0dMhAX8JinU-6aD7xA) `video`)
+
+	[Leela Chess Zero](https://youtube.com/playlist?list=PLDnx7w_xuguH7UO4bNGo56w94NXAef6YH) games `video` ([overview](https://en.wikipedia.org/wiki/Leela_Chess_Zero))
 
 ----
   - *Quake III Arena*
@@ -672,6 +674,7 @@
   [overview](http://videolectures.net/DLRLsummerschool2018_bowling_multi_agent_RL) by Michael Bowling `video`  
   [overview](http://youtube.com/watch?v=9qPhrEYIRF4) by Jakob Foerster `video`  
   [overview](http://youtube.com/watch?v=hGEz4Aumd1U) by Arsenii Ashukha `video`  
+  [overview](http://youtube.com/watch?v=0OSvoYbWs9o) by Sergei Sviridov `video` `in russian`  
 
   [overview](http://mlanctot.info/files/papers/Lanctot_MARL_RLSS2019_Lille.pdf) by Marc Lanctot `slides`
 
@@ -783,7 +786,7 @@
 #### exploration and intrinsic motivation - bayesian exploration
 
   [overview](https://youtu.be/sGuiWX07sKw?t=57m28s) by David Silver `video`  
-  [overview](https://slideslive.com/38922025/deep-reinforcement-learning-1?t=3970) by Shimon Whiteson `video` *(lack of good methods for real exploration as opposed to simulated exploration)*  
+  [overview](https://slideslive.com/38922727/bayesadaptive-deep-reinforcement-learning-via-metalearning) by Shimon Whiteson `video` *(lack of good methods for real exploration as opposed to simulated exploration)*  
 
 ----
 
@@ -952,8 +955,10 @@
 	> "Maximizing incompetence does not model very well the psychological models of optimal challenge and “flow” proposed by (Csikszentmihalyi, 1991). Flow refers to the state of pleasure related to activities for which difficulty is optimal: neither too easy nor too difficult. As difficulty of a goal can be modeled by the (mean) performance in achieving this goal, a possible manner to model flow would be to introduce two thresholds defining the zone of optimal difficulty. Yet, the use of thresholds can be rather fragile, require hand tuning and possibly complex adaptive mechanism to update these thresholds during the robot’s lifetime. Another approach can be taken, which avoids the use of thresholds. It consists in defining the interestingness of a challenge as the competence progress that is experienced as the robot repeatedly tries to achieve it. So, a challenge for which a robot is bad initially but for which it is rapidly becoming good will be highly rewarding. Thus, a first manner to implement flow motivation would be: r(SM(→ t), gk, tg) = C·(la(gk, tg−θ) − la(gk, tg)) corresponding to the difference between the current performance for task gk and the performance corresponding to the last time gk was tried, at a time denoted tg−θ."
 
 	[**"Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes"**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#driven-by-compression-progress-a-simple-principle-explains-essential-aspects-of-subjective-beauty-novelty-surprise-interestingness-attention-curiosity-creativity-art-science-music-jokes-schmidhuber) by Schmidhuber `paper` `summary` ([**Artificial Curiosity and Creativity**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#artificial-curiosity-and-creativity) theory by Schmidhuber) ([overview](https://youtu.be/DSYzHPW26Ig?t=2h7m22s) by Alex Graves `video`) *(maximizing compression progress)*  
+	[**"PowerPlay: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem"**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#powerplay-training-an-increasingly-general-problem-solver-by-continually-searching-for-the-simplest-still-unsolvable-problem-schmidhuber) by Schmidhuber `paper` `summary`  
 	[**"Automated Curriculum Learning for Neural Networks"**](#automated-curriculum-learning-for-neural-networks-graves-bellemare-menick-munos-kavukcuoglu) by Graves et al. `paper` `summary` *(maximizing prediction gain / complexity gain)*  
 	[**"Automatic Goal Generation for Reinforcement Learning Agents"**](#automatic-goal-generation-for-reinforcement-learning-agents-held-geng-florensa-abbeel) by Held et al. `paper` `summary` *(optimally difficult goals)*  
+	["Automatic Curriculum Learning For Deep RL: A Short Survey"](https://arxiv.org/abs/2003.04664) by Portelas et al. `paper`  
 
 	[**interesting papers**](#interesting-papers---exploration-and-intrinsic-motivation---competence-based-models---maximizing-competence-motivation)  
 	[**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---exploration-and-intrinsic-motivation)  
@@ -1176,7 +1181,7 @@
   ["The Next Big Step in AI: Planning with a Learned Model"](https://youtube.com/watch?v=6-Uiq8-wKrg) by Richard Sutton `video`  
   ["The Grand Challenge of Knowledge"](http://www.fields.utoronto.ca/video-archive/2016/10/2267-16158) (41:35) by Richard Sutton `video`  
   ["Open Questions in Model-based RL"](https://youtube.com/watch?v=OeIVfQz3FUc) by Richard Sutton `video`  
-  ["Toward a General AI-Agent Architecture"](https://slideslive.com/38921889/biological-and-artificial-reinforcement-learning-4?t=980) by Richard Sutton `video` *(SuperDyna)*  
+  ["Toward a General AI-Agent Architecture"](https://slideslive.com/38924024/toward-a-general-aiagent-architecture) by Richard Sutton `video` *(SuperDyna)*  
 
   ["Planning and Models"](https://youtube.com/watch?v=Xrxrd8nl4YI) by Hado van Hasselt `video`  
   ["Integrating Learning and Planning"](https://youtube.com/watch?v=ItMutbeOHtc) by David Silver `video`  
@@ -1342,7 +1347,7 @@
 
   [overview](https://youtu.be/5rev-zVx1Ps?t=58m45s) by Marc Toussaint `video`  
   [overview](https://youtu.be/sGuiWX07sKw?t=1h9m2s) by David Silver `video`  
-  [overview](https://slideslive.com/38922025/deep-reinforcement-learning-1?t=3970) by Shimon Whiteson `video`  
+  [overview](https://slideslive.com/38922727/bayesadaptive-deep-reinforcement-learning-via-metalearning) by Shimon Whiteson `video`  
 
   ["Reinforcement Learning: Beyond Markov Decision Processes"](https://youtube.com/watch?v=_dkaynuKUFE) by Alexey Seleznev `video` `in russian`  
   ["Partially Observable Markov Decision Process in Reinforcement Learning"](https://yadi.sk/i/pMdw-_uI3Gke7Z) by Pavel Shvechikov `video` `in russian`  
@@ -1359,7 +1364,7 @@
   [**"Efficient Bayes-Adaptive Reinforcement Learning using Sample-Based Search"**](#efficient-bayes-adaptive-reinforcement-learning-using-sample-based-search-guez-silver-dayan) by Guez et al. `paper` `summary`  
   ["Learning in POMDPs with Monte Carlo Tree Search"](http://proceedings.mlr.press/v70/katt17a.html) by Katt et al. `paper`  
   ["Variational Inference for Data-Efficient Model Learning in POMDPs"](https://arxiv.org/abs/1805.09281) by Tschiatschek et al. `paper`  
-  ["VariBAD: A Very Good Method for Bayes-Adaptive Deep RL via Meta-Learning"](https://arxiv.org/abs/1910.08348) by Zintgraf et al. `paper` ([overview](https://slideslive.com/38922025/deep-reinforcement-learning-1?t=3970) by Shimon Whiteson `video`)  
+  ["VariBAD: A Very Good Method for Bayes-Adaptive Deep RL via Meta-Learning"](https://arxiv.org/abs/1910.08348) by Zintgraf et al. `paper` ([overview](https://slideslive.com/38922727/bayesadaptive-deep-reinforcement-learning-via-metalearning) by Shimon Whiteson `video`)  
 
 ----
 
@@ -1377,9 +1382,10 @@
   ["Bayesian Policy Search"](https://youtu.be/AggqBRdz6CQ?t=9m53s) by Shakir Mohamed `video`  
   ["Connections Between Inference and Control"](https://youtu.be/iOYiPhu5GEk?t=2m34s) by Sergey Levine `video` ([write-up](https://arxiv.org/abs/1805.00909))  
 
+  ["Reinforcement Learning as Probabilistic Inference"](https://youtube.com/watch?v=j8T8Xt8TM8Q) by Pavel Temirchev `video` `in russian`  
+  ["Reinforcement Learning as Probabilistic Inference"](https://youtube.com/watch?v=pYsXIPEkSxs) by Pavel Temirchev `video` `in russian`  
   ["Reinforcement Learning through the Lenses of Variational Inference"](https://youtube.com/watch?v=6v3RxQycT0E) by Sergey Bartunov `video`  
-  ["Bayesian Inference for Reinforcement Learning"](https://youtube.com/watch?v=KZd-jkmeIcU) by Sergey Bartunov `video` `in russian`
-	([slides](https://drive.google.com/drive/folders/0B2zoFVYw1rN3N0RUNXE1WnNObTQ) `in english`)  
+  ["Bayesian Inference for Reinforcement Learning"](https://youtube.com/watch?v=KZd-jkmeIcU) by Sergey Bartunov `video` `in russian`  
 
 ----
 
@@ -1610,7 +1616,8 @@
   ["Improving Exploration in Evolution Strategies for Deep Reinforcement Learning via a Population of Novelty-Seeking Agents"](https://arxiv.org/abs/1712.06560) by Conti et al. `paper`  
   ["Playing Atari with Six Neurons"](https://arxiv.org/abs/1806.01363) by Cuccu et al. `paper`  
 
-  ["Evolutionary Computation for Reinforcement Learning"](http://cs.ox.ac.uk/publications/publication10159-abstract.html) by Shimon Whiteson `paper`
+  ["Evolutionary Computation for Reinforcement Learning"](http://cs.ox.ac.uk/publications/publication10159-abstract.html) by Shimon Whiteson `paper`  
+  ["Evolutionary Algorithms for Reinforcement Learning"](https://arxiv.org/abs/1106.0221) by Moriarty, Schultz, Grefenstette `paper`  
 
 
 
@@ -1745,7 +1752,7 @@ interesting recent papers:
 
   - `post` <https://deepmind.com/blog/article/AlphaStar-Grandmaster-level-in-StarCraft-II-using-multi-agent-reinforcement-learning>
   - `video` <https://youtube.com/watch?v=6eiErYh_FeY>
-  - `video` <https://slideslive.com/38922025/deep-reinforcement-learning-1?t=318) (Vinyals)
+  - `video` <https://slideslive.com/38922724/grandmaster-level-in-starcraft-ii-using-multiagent-reinforcement-learning) (Vinyals)
   - `video` <https://youtu.be/3UdH3lPF7nE> (Vinyals)
   - `video` <https://youtu.be/Kedt2or9xlo> (Vinyals)
   - `video` <https://slideslive.com/38916905/alphastar-mastering-the-game-of-starcraft-ii> (Silver)
@@ -1807,7 +1814,8 @@ interesting recent papers:
   - `video` <https://youtube.com/playlist?list=PLnn6VZp3hqNsrsp_Bg-bEfzzhJ3SuEZE9>
   - `video` <https://slideslive.com/38922026/deep-reinforcement-learning-2?t=3855> (Schrittwieser)
   - `video` <https://youtube.com/watch?v=We20YSAJZSE> (Kilcher)
-  - `video` <https://slideslive.com/38921974/perception-as-generative-reasoning-structure-causality-probability-3?t=3954> (Rezende)
+  - `video` <https://slideslive.com/38923124/nonsupervised-learning-and-decision-making?t=1832> (Rezende)
+  - `video` <https://youtu.be/BGyRM5vCkfw?t=26m54s> (Engalych) `in russian`
   - `notes` <https://www.shortscience.org/paper?bibtexKey=journals/corr/1911.08265>
 
 
@@ -1843,6 +1851,7 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=XuzIqE2IshY> (Kington)
   - `video` <https://youtube.com/watch?v=_x9bXso3wo4> (Hinzman)
   - `video` <https://youtu.be/V0HNXVSrvhg?t=1h20m45s> + <https://youtu.be/Lz5_xFGt2hA?t=3m11s> (Grinchuk) `in russian`
+  - `video` <https://youtu.be/BGyRM5vCkfw?t=16m30s> (Engalych) `in russian`
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
   - `video` <https://youtu.be/zHjE07NBA_o?t=1h10m24s> (Kozlov) `in russian`
   - `post` <http://depthfirstlearning.com/2018/AlphaGoZero>
@@ -1873,6 +1882,7 @@ interesting recent papers:
   - `video` <http://youtube.com/watch?v=LX8Knl0g0LE> (Huang)
   - `video` <http://youtu.be/CvL-KV3IBcM?t=31m55s> (Graepel)
   - `video` <http://youtube.com/watch?v=UMm0XaCFTJQ> (Sutton, Szepesvari, Bowling, Hayward, Muller)
+  - `video` <https://youtube.com/watch?v=BGyRM5vCkfw> (Engalych) `in russian`
   - `video` <https://youtu.be/WM4HC720Cms?t=1h18m21s> (Nikolenko) `in russian`
   - `video` <https://youtube.com/watch?v=zHjE07NBA_o> (Kozlov) `in russian`
   - `notes` <https://github.com/Rochester-NRT/RocAlphaGo/wiki>
@@ -1996,6 +2006,7 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=mzjGNo9Tz4g> (Silver)
   - `video` <https://youtu.be/3N9phq_yZP0?t=12m43s> (Hassabis)
   - `video` <https://youtu.be/DXNqYSNvnjA?t=21m24s> (Hassabis)
+  - `video` <https://youtu.be/BGyRM5vCkfw?t=22m2s> (Engalych) `in russian`
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
   - `notes` <https://blog.acolyer.org/2018/01/10/mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm/>
   - `code` <https://lczero.org>
@@ -2466,6 +2477,7 @@ interesting recent papers:
   - `post` <https://jangirrishabh.github.io/2018/03/25/Overcoming-exploration-demos.html>
   - `code` <https://github.com/openai/baselines/tree/master/baselines/her>
   - `paper` ["Universal Value Function Approximators"](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#schaul-horgan-gregor-silver---universal-value-function-approximators) by Schaul et al. `summary`
+  - `paper` ["Hindsight Policy Gradients"](https://arxiv.org/abs/1711.06006) by Rauber et al.
 
 
 #### ["Reinforcement Learning with Unsupervised Auxiliary Tasks"](http://arxiv.org/abs/1611.05397) Jaderberg, Mnih, Czarnecki, Schaul, Leibo, Silver, Kavukcuoglu
@@ -2544,7 +2556,7 @@ interesting recent papers:
   - `video` <https://youtube.com/watch?v=0yI2wJ6F8r0> + <https://youtube.com/watch?v=qeeTok1qDZk> + <https://youtube.com/watch?v=EzQwCmGtEHs> (demo)
   - `video` <https://youtu.be/qSfd27AgcEk?t=29m5s> (Bellemare)
   - `video` <https://youtu.be/WuFMrk3ZbkE?t=1h27m37s> (Bellemare)
-  - `video` <https://slideslive.com/38922025/deep-reinforcement-learning-1?t=3970> (Whiteson)
+  - `video` <https://slideslive.com/38922727/bayesadaptive-deep-reinforcement-learning-via-metalearning> (Whiteson)
   - `video` <https://youtu.be/qduxl-vKz1E?t=1h16m30s> (Seleznev) `in russian`
   - `video` <https://youtube.com/watch?v=qKyOLNVpknQ> (Pavlov) `in russian`
   - `notes` <http://pemami4911.github.io/paper-summaries/deep-rl/2016/10/08/unifying-count-based-exploration-and-intrinsic-motivation.html>
@@ -3219,6 +3231,8 @@ interesting recent papers:
 >	"We present an approach to sensorimotor control in immersive environments. Our approach utilizes a high-dimensional sensory stream and a lower-dimensional measurement stream. The cotemporal structure of these streams provides a rich supervisory signal, which enables training a sensorimotor control model by interacting with the environment. The model is trained using supervised learning techniques, but without extraneous supervision. It learns to act based on raw sensory input from a complex three-dimensional environment. The presented formulation enables learning without a fixed goal at training time, and pursuing dynamically changing goals at test time. We conduct extensive experiments in three-dimensional simulations based on the classical first-person game Doom. The results demonstrate that the presented approach outperforms sophisticated prior formulations, particularly on challenging tasks. The results also show that trained models successfully generalize across environments and goals. A model trained using the presented approach won the Full Deathmatch track of the Visual Doom AI Competition, which was held in previously unseen environments."
 
 >	"application of deep successor reinforcement learning"
+
+>	"uses supervised learning to predict future values of measurements (possibly rewards) given actions, which sidesteps traditional reinforcement learning algorithms"
 
   - `video` <https://youtube.com/watch?v=947bSUtuSQ0> + <https://youtube.com/watch?v=947bSUtuSQ0> (demo)
   - `video` <https://facebook.com/iclr.cc/videos/1712224178806641?t=3252> (Dosovitskiy)

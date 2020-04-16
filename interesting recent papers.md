@@ -154,6 +154,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"We present an algorithm to identify winning tickets and a series of experiments that support the lottery ticket hypothesis and the importance of these fortuitous initializations. We consistently find winning tickets that are less than 10-20% of the size of several fully-connected and convolutional feed-forward architectures for MNIST and CIFAR10. Above this size, the winning tickets that we find learn faster than the original network and reach higher test accuracy."  
   - `video` <https://youtube.com/watch?v=CobEbJEYUnU> (Frankle)
   - `video` <https://youtu.be/8UxS4ls6g1g?t=1h25m> (Frankle)
+  - `video` <https://youtube.com/watch?v=ZVVnvZdUMUk> (Kilcher)
   - `video` <https://youtube.com/watch?v=LXm_6eq0Cs4> (Shorten)
   - `video` <https://youtube.com/watch?v=5PF-I1NKTmk> (LaLonde)
   - `video` <https://youtube.com/watch?v=jOF5ytrhQEE> (Salvaris)
@@ -978,7 +979,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"To test whether the GQN learns a factorized representation, we investigated whether changing a single scene property (e.g., object colour) whilst keeping others fixed (e.g., object shape and position), leads to similar changes in the scene representation (as defined by mean cosine-similarity across scenes). We found that object colour, shape, and size; light position; and, to a lesser extent, object positions are indeed factorized. We also found that the GQN is able to carry out ‘scene algebra’ [akin to word embedding algebra]. By adding and subtracting representations of related scenes, we found that object and scene properties can be controlled, even across object positions. Finally, because it is a probabilistic model, GQN also learns to integrate information from different viewpoints in an efficient and consistent manner, as demonstrated by a reduction in its Bayesian ‘surprise’ at observing a heldout image of a scene as the number of views increases."  
   - `video` <https://youtube.com/watch?v=G-kWNQJ4idw> (demo)
   - `video` <https://youtube.com/watch?v=IVSZnTknyqw> (demo)
-  - `video` <https://slideslive.com/38921974/perception-as-generative-reasoning-structure-causality-probability-3?t=2889> (Rezende)
+  - `video` <https://slideslive.com/38923124/nonsupervised-learning-and-decision-making?t=796> (Rezende)
   - `video` <https://youtu.be/bpsoGt-NYYk?t=2m34s> (Garnelo)
   - `video` <https://youtube.com/watch?v=XJnuEO59XfQ> (Chen)
   - `video` <https://youtu.be/vZvFNOzDoos?t=42s> (Lapko) `in russian`
@@ -1134,6 +1135,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"We simplify recently proposed contrastive self-supervised learning algorithms without requiringspecialized architectures or a memory bank."  
 >	"We show that (1) composition ofdata augmentations plays a critical role in definingeffective predictive tasks, (2) introducing a learn-able nonlinear transformation between the repre-sentation and the contrastive loss substantially im-proves the quality of the learned representations,and (3) contrastive learning benefits from largerbatch sizes and more training steps compared tosupervised learning."  
 >	"By combining these findings, we are able to considerably outperform previous methods for self-supervised and semi-supervised learning on ImageNet. A linear classifier trained on self-supervised representations learned by SimCLR achieves 76.5% top-1 accuracy, which is a 7% relative improvement over previous state-of-the-art, matching the performance of a supervised ResNet-50. When fine-tuned on only 1% of the labels, we achieve 85.8% top-5 accuracy, outperforming AlexNet with 100x fewer labels."  
+  - `post` <https://ai.googleblog.com/2020/04/advancing-self-supervised-and-semi.html>
   - `video` <https://youtu.be/dMUes74-nYY?t=2h10m45s> (Srinivas) `video`
   - `video` <https://youtube.com/watch?v=APki8LmdJwY> (Shorten) `video`
   - `notes` <https://habr.com/en/company/ods/blog/493016/#9-a-simple-framework-for-contrastive-learning-of-visual-representations> `in russian`
@@ -1839,8 +1841,14 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 ----
 #### ["Reinforcement Learning Upside Down: Don’t Predict Rewards - Just Map Them to Actions"](https://arxiv.org/abs/1912.02875) Schmidhuber
   `⅂ꓤ` `UDRL` `credit assignment`
+>	"While there is a rich history of techniques that incorporate supervised learning into reinforcement learning algorithms, it is believed that fully solving RL problems using SL is not possible, because feedback from the environment provides error signals in SL but evaluation signals in RL. Put simply, an agent gets feedback abouthow useful its actions are, but not about which actions are the best to take in any situation. On the possibility of turning an RL problem into an SL problem, Barto and Dietterich surmised: 'In general, there is no way to do this.' Schmidhuber proposes to bridge this gap between SL and RL through Upside-Down Reinforcement Learning, where environmental feedback – such as the reward – is an input rather than the learning target as in traditional RL algorithms based on reward prediction."  
+>	"Traditional model-free RL algorithms can be broadly classied as being value-based or policy-based. The core principle of value-based algorithms is reward prediction: agents are trained to predict the expected discounted future return for taking any action in any state, commonly using TD learning. Policy-based algorithms are instead based on directly searching for policies that maximize returns. The basic principle of ⅂ꓤ are different from both of these categories: given a particular denition of commands, it defines a behavior function that encapsulates knowledge about the behaviors observed so far compatible with known commands."  
 >	"Standard RL predicts rewards, while UDRL instead uses rewards as task-defining inputs, together with representations of time horizons and other computable functions of historic and desired future data. UDRL learns to interpret these input observations as commands, mapping them to actions (or action probabilities) through SL on past (possibly accidental) experience. UDRL generalizes to achieve high rewards or other goals, through input commands such as: get lots of reward within at most so much time! A separate paper on first experiments with UDRL shows that even a pilot version of UDRL can outperform traditional baseline algorithms on certain challenging RL problems."  
+>	"Traditional RL predicts rewards, and uses a myriad of methods for translating those predictions into good actions. ⅂ꓤ shortcuts this process, creating a direct mapping from rewards, time horizons and other inputs to actions. Without depending on reward predictions, and without explicitly maximizing expected rewards, ⅂ꓤ simply learns by gradient descent to map task specifications or commands (such as get lots of reward within little time) to action probabilities. Its success depends on the generalization abilities of deep / recurrent neural nets."  
+>	"Many TD-based RL algorithms use discount factors that distort true environmental returns. TD learning is also very sensitive to the frequency of taking actions, which can limit its applicability to robot control. In contrast, ⅂ꓤ explicitly takes into account observed rewards and time horizons in a precise and natural way, does not assume infite horizons, and does not suffer from distortions of the basic RL problem. Well-known issues arise when off-policy TD learning is combined with high-dimensional function approximation. These issues - referred to as the deadly triad - can severely destabilize learning and are usually addressed by adding a variety of ingredients, though complete remedies remain elusive. ⅂ꓤ uses pure SL to train an agent on all past experiences, and sidesteps the issues arising from the combination of function approximation, bootstrapping and off-policy training. ⅂ꓤ, on the other hand, works fundamentally in concert with high-capacity function approximators, does not require learning from non-stationary targets and does not distinguish between on-policy and off-policy training. Instead, it brings fundamental questions related to catastrophic forgetting, continual learning, and generalization from past experience to the forefront."  
+>	"For every time step, C learns to obey many commands of the type: get so much future reward within so much time. That is, from a single trial of only 1000 time steps, it derives roughly half a million training examples conveying a lot of fine-grained knowledge about time and rewards. For example, C may learn that small increments of time often correspond to small increments of costs and rewards, except at certain crucial moments in time, e.g., at the end of a board game when the winner is determined. A single behavioral trace may thus inject an enormous amount of knowledge into C, which can learn to explicitly represent all kinds of long-term and short-term causal relationships between actions and consequences, given the initially unknown environment. For example, in typical physical environments, C could automatically learn detailed maps of space / time/ energy / other costs associated with moving from many locations (at different altitudes) to many target locations."  
 >	"We also introduce a related simple but general approach for teaching a robot to imitate humans. First videotape humans imitating the robot's current behaviors, then let the robot learn through SL to map the videos (as input commands) to these behaviors, then let it generalize and imitate videos of humans executing previously unknown behavior. This Imitate-Imitator concept may actually explain why biological evolution has resulted in parents who imitate the babbling of their babies."  
+>	"While the behavior function in RL does bear a high-level similarity to goal-conditioned policies, the differences motivating its name are: (a) it takes time-varying desired returns and time horizons as inputs, as opposed to fixed goal states, (b) it does not predict rewards at all, (c) it is trained using SL (not policy gradients) on all past behavior, eliminating distinctions between on-policy and off-policy training."  
   - `audio` <https://youtu.be/VAnsd_wfAmI?t=20m45s> (Schmidhuber)
   - `video` <https://youtube.com/watch?v=RrvC8YW0pT0> (Kilcher)
   - `video` <https://youtube.com/watch?v=ed7QQMG24MM> (Shorten)
@@ -2041,6 +2049,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://videolectures.net/DLRLsummerschool2018_bellemare_deep_RL/#t=2010> (Bellemare)
   - `video` <https://youtu.be/bsuvM1jO-4w?t=4m45s> (Mnih)
   - `video` <https://youtube.com/watch?v=LzIWBb2FhZU> (Grishin)
+  - `video` <https://youtube.com/watch?v=uOFfeSdApN8> (Shvechikov) `in russian`
   - `video` <https://youtu.be/fnwo3GCmyEo?t=6m45s> (Fritzler) `in russian`
   - `video` <https://youtu.be/5REJGbNu-Kk?t=11m45s> + <https://youtube.com/watch?v=RbLDBkcJcpA> (Hrinchuk) `in russian`
   - `post` <https://mtomassoli.github.io/2017/12/08/distributional_rl/>
@@ -2495,7 +2504,8 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	- actions maximize predicted values by backpropagating through transitions"  
   - <https://dreamrl.github.io> (demo)
   - `post` <https://ai.googleblog.com/2020/03/introducing-dreamer-scalable.html>
-  - `video` <https://slideslive.com/38922025/deep-reinforcement-learning-1?t=3449> (Hafner)
+  - `video` <https://youtube.com/watch?v=BDxRNnhPTlU> (Hafner)
+  - `video` <https://slideslive.com/38922725/contributed-talk-efficient-visual-control-by-latent-imagination> (Hafner)
   - `video` <https://youtube.com/watch?v=awyuuJoHawo> (Kilcher)
   - `video` <https://youtu.be/0JxOpJd3w8w?t=21m52s> (Svidchenko) `in russian`
 
@@ -2587,6 +2597,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"SimPLe can learn to play many of the games with just 100K transitions, corresponding to 2 hours of play time. In many cases, the number of samples required for prior methods to learn to reach the same reward value is several times larger."  
 >	"The final scores are on the whole substantially lower than the best state-of-the-art model-free methods. This is generally common with model-based RL algorithms, which excel more in learning efficiency rather than final performance."  
 >	"The performance of our method generally varied substantially between different runs on the same game. The complex interactions between the model, policy, and data collection were likely responsible for this: at a fundamental level, the model makes guesses when it extrapolates the behavior of the game under a new policy. When these guesses are correct, the resulting policy performs well in the final game. In future work, models that capture uncertainty via Bayesian parameter posteriors or ensembles may further improve robustness."  
+>	"SimPLe implements Dyna with expressive deep neural networks for the world model."  
   - <https://sites.google.com/view/modelbasedrlatari>
   - `video` <https://facebook.com/icml.imls/videos/2366831430268790?t=2893> (Kaiser)
   - `video` <https://youtube.com/watch?v=EQd_k8c4ucI> (Philippov) `in russian`
@@ -2598,11 +2609,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"Equation (6) is a bound on the multi-step predictive distribution p_d(o_1:T | a_1:T) rather than the prior predictive distribution p(o_1:T | a_1:T). The first line that you said might be wrong is actually just the definition of p_d(o_1:T | a_1:T). This is of course a data likelihood, just not the one that you might be used to. One way to think of this is to consider your graphical model to be p_d(o_1:T, s_1:T | a_1:T) = \prod_t p(o_t | s_t) q(s_t | o_≤t-d, a_<t), from which the bound follows naturally. Note that this is the predictive distribution used during planning, so it seems reasonable to train the model on this directly. Since we reuse the encoder here as part of the graphical model, there are a few design choices that could be explored in future work, for example whether to stop the gradient around the q(s_t-d | o_≤t-d, a_<t-d) inside the q(s_t | o_≤t-d, a_<t) terms. Latent overshooting can be seen either as a new objective or as a new graphical model p_d(o_1:T, s_1:T | a_1:T). In the second case, you can derive latent overshooting as the standard variational bound. The multi-step predictive distribution p_d is the distribution that is used during planning, where past observations up to step t-d are available and incorporated into the belief using the encoder q and we make a prediction about step t. It seems reasonable to me to train on the objective that the model is later evaluated on."  
   - <https://planetrl.github.io>
   - `post` <https://ai.googleblog.com/2019/02/introducing-planet-deep-planning.html>
+  - `video` <https://youtube.com/watch?v=novKgDBa_2Y> (Haffner)
   - `video` <https://slideslive.com/38915863/learning-models-for-representations-and-planning?t=860> (Lillicrap)
-  - `video` <https://youtube.com/watch?v=C7Dmu0GtrSw>
   - `video` <https://youtu.be/0JxOpJd3w8w?t=4m30s> (Svidchenko) `in russian`
   - `code` <https://github.com/google-research/planet>
-  - `code` <https://github.com/Kaixhin/PlaNet>
 
 #### ["Temporal Difference Variational Auto-Encoder"](https://arxiv.org/abs/1806.03107) Gregor, Papamakarios, Besse, Buesing, Weber
   `TD-VAE` `partial observability` `learning to simulate` `learning environment model` `video prediction` `no explicit planning`
@@ -2788,7 +2798,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["VariBAD: A Very Good Method for Bayes-Adaptive Deep RL via Meta-Learning"](https://arxiv.org/abs/1910.08348) Zintgraf et al.
   `variBAD` `approximate bayesian optimal exploration`
 >	"Trading off exploration and exploitation in an unknown environment is key to maximising expected return during learning. A Bayes-optimal policy, which does so optimally, conditions its actions not only on the environment state but on the agent's uncertainty about the environment. Computing a Bayes-optimal policy is however intractable for all but the smallest tasks. In this paper, we introduce a way to meta-learn to perform approximate inference in an unknown environment, and incorporate task uncertainty directly during action selection. In a grid-world domain, we illustrate how variBAD performs structured online exploration as a function of task uncertainty. We also evaluate variBAD on MuJoCo domains widely used in meta-RL and show that it achieves higher return during training than existing methods."  
-  - `video` <https://slideslive.com/38922025/deep-reinforcement-learning-1?t=3970> (Whiteson)
+  - `video` <https://slideslive.com/38922727/bayesadaptive-deep-reinforcement-learning-via-metalearning> (Whiteson)
 
 #### ["Randomized Prior Functions for Deep Reinforcement Learning"](https://arxiv.org/abs/1806.03335) Osband, Aslanides, Cassirer
   `approximate bayesian exploration` `approximate posterior sampling`
@@ -2856,7 +2866,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"with probability p, perform exploration to less frequently visited states; with probability 1 - p, exploitation to states with high reward - linearly anneal p during training"  
 >	"extension to Go-Explore but trajectory-conditioned policy instead of direct resetting to arbitrary state"  
   - <https://sites.google.com/view/diverse-sil> (demo)
-  - `video` <https://slideslive.com/38922025/deep-reinforcement-learning-1?t=2860> (Guo)
+  - `video` <https://slideslive.com/38922723/contributed-talk-selfimitation-learning-via-trajectoryconditioned-policy-for-hardexploration-tasks> (Guo)
 
 #### ["Episodic Curiosity through Reachability"](https://arxiv.org/abs/1810.02274) Savinov et al.
   `uncertainty motivation` `novelty`
@@ -3190,6 +3200,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/5oGEZGxJAl4?t=31m52s> (Levine)
   - `video` <https://youtu.be/i05Fk4ebMY0?t=37m26s> (Finn)
   - `video` <https://youtube.com/watch?v=x6Kt7q6fylI> (Krayenhoff)
+  - `audio` <https://www.talkrl.com/episodes/ben-eysenbach> (20:39)
 
 #### ["Variational Intrinsic Control"](http://arxiv.org/abs/1611.07507) Gregor, Rezende, Wierstra
   - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#variational-intrinsic-control-gregor-rezende-wierstra>
