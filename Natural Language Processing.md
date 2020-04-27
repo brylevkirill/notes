@@ -40,6 +40,7 @@
   [course](http://phontron.com/class/nn4nlp2020) from CMU ([videos](https://youtube.com/user/neubig/playlists))  
   [course](http://github.com/oxford-cs-deepnlp-2017/lectures) from Oxford and DeepMind `video`  
   [course](http://youtube.com/playlist?list=PLt1IfGj6-_-f55ULcae3v7YuG8p_eUjnk) from iPavlov and Yandex `video` `in russian`  
+  [course](http://youtube.com/playlist?list=PLHvlTBWld13NDsJpNQU095K81vw5bH7X3) from Huawei Russia `video` `in russian`  
   [course](https://my.compscicenter.ru/courses/introduction-nlp) by Anton Alexeev ([videos](https://youtube.com/playlist?list=PLlb7e2G7aSpRTcBciP6VBJJPvdH_DXRXQ)) `in russian`  
 
 ----
@@ -299,6 +300,8 @@
 
   - `post` <https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html>
   - `video` <https://youtube.com/watch?v=eKqWC577WlI> (Raffel)
+  - `video` <https://youtube.com/watch?v=N-7rdJK4xlE> (Kilcher, Shorten, Scarfe)
+  - `video` <https://youtube.com/watch?v=Axo0EtMUK90> (Shorten)
   - `video` <https://youtube.com/watch?v=zG1MXITBge0> (Bataeva) `in russian`
   - `audio` <https://podtail.com/podcast/data-skeptic/the-limits-of-nlp/> (Raffel)
   - `notes` <https://twitter.com/colinraffel/status/1187161460033458177>
@@ -673,6 +676,7 @@
 
   - `video` <https://cds.cern.ch/record/2306315> (Nickel)
   - `video` <https://facebook.com/nipsfoundation/videos/1553634558061111?t=3781> (Nickel)
+  - `video` <https://youtube.com/watch?v=AoD_DUlMlAQ> (Kochurov) `in russian`
   - `video` <https://youtube.com/watch?v=eOPWP-WtUoM> (Puzyrev) `in russian`
   - `notes` <https://medium.com/towards-data-science/facebook-research-just-published-an-awesome-paper-on-learning-hierarchical-representations-34e3d829ede7>
   - `notes` <https://medium.com/@hol_io/word-embeddings-exploration-explanation-and-exploitation-with-code-in-python-5dac99d5d795>

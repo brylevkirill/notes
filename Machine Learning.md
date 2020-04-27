@@ -492,6 +492,7 @@
 
 ----
 
+  [overview](https://youtube.com/watch?v=M7r5SGIxxpI) by Chris Re `video`  
   [overview](https://youtu.be/Tkl6ERLWAbA?t=27m10s) by Chris Re `video`  
   [overview](http://videolectures.net/kdd2018_re_hand_labeled_data) by Chris Re `video`  
   [overview](https://youtube.com/watch?v=08jorbiyLwY) by Chris Re `video`  

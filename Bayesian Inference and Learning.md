@@ -1,4 +1,4 @@
-  Bayesian inference is application of Bayes' theorem to update probability of hypothesis as more data becomes available.
+  Bayesian inference is an application of Bayes' theorem to update probability of hypothesis as more data becomes available.
 
 
   * [**introduction**](#introduction)
@@ -96,6 +96,8 @@
 
   ["Probability as Extended Logic"](http://bjlkeng.github.io/posts/probability-the-logic-of-science/) by Brian Keng
 
+  [definitions](https://youtube.com/watch?v=Ihud7yG2iKs) of probability according to Kolmogorov and Jaynes by Mikhail Dektyarev `video` `in russian`
+
 ----
 
   ["A Tiny Introduction"](http://mlg.eng.cam.ac.uk/zoubin/bayesian.html) by Zoubin Ghahramani  
@@ -118,8 +120,6 @@
 	([slides](https://drive.google.com/open?id=0BwU8otKU0BqQSVoyN295Y0doRTg) `in english`)  
   ["Scalable Bayesian Methods"](https://youtube.com/watch?v=if9bTlZOiO8) by Dmitry Vetrov `video` `in russian`
 	([slides](https://drive.google.com/open?id=0BwU8otKU0BqQOGdzYTdMem1UTEk) `in english`)  
-
-  [definitions](https://youtube.com/watch?v=Ihud7yG2iKs) of probability according to Kolmogorov and Jaynes by Mikhail Dektyarev `video` `in russian`  
 
 ----
 

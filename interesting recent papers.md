@@ -1135,6 +1135,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"We simplify recently proposed contrastive self-supervised learning algorithms without requiringspecialized architectures or a memory bank."  
 >	"We show that (1) composition ofdata augmentations plays a critical role in definingeffective predictive tasks, (2) introducing a learn-able nonlinear transformation between the repre-sentation and the contrastive loss substantially im-proves the quality of the learned representations,and (3) contrastive learning benefits from largerbatch sizes and more training steps compared tosupervised learning."  
 >	"By combining these findings, we are able to considerably outperform previous methods for self-supervised and semi-supervised learning on ImageNet. A linear classifier trained on self-supervised representations learned by SimCLR achieves 76.5% top-1 accuracy, which is a 7% relative improvement over previous state-of-the-art, matching the performance of a supervised ResNet-50. When fine-tuned on only 1% of the labels, we achieve 85.8% top-5 accuracy, outperforming AlexNet with 100x fewer labels."  
+>	"Contrastive Predictive Coding (CPC) based pipelines use groups of image patches separated by a carefully chosen spatial offset for anchors and positives while the negatives come from other patches within the image and from other images. While patches are a powerful way to incorporate spatial and instance discrimination together, they introduce extra hyperparameters and architectural design choices which may be hard to adapt for a new problem. SimCLR and MoCo opt for a simpler design where there is no patch extraction. Discriminating transformed image instances as opposed to image-patches within the same image optimizes a simpler instance discrimination objective with the InfoNCE loss and requires minimal architectural adjustments. One could view contrastive instance discrimination setups like SimCLR and MoCo as maximizing mutual information between an image and its augmented version."  
   - `post` <https://ai.googleblog.com/2020/04/advancing-self-supervised-and-semi.html>
   - `video` <https://youtu.be/dMUes74-nYY?t=2h10m45s> (Srinivas) `video`
   - `video` <https://youtube.com/watch?v=APki8LmdJwY> (Shorten) `video`
@@ -1819,6 +1820,28 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 [**interesting older papers - policy-based methods**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---policy-based-methods)  
 
 ----
+#### ["CURL: Contrastive Unsupervised Representations for Reinforcement Learning"](https://arxiv.org/abs/2004.04136)
+  `CURL` `unsupervised representation learning`
+>	"CURL is the first model-free RL pipeline accelerated by contrastive learning with minimal architectural changes to demonstrate state-of-the-art performance on complex tasks so far dominated by approaches that have relied on learning world models and (or) decoder-based objectives."  
+>	"CURL extracts high-level features from raw pixels using contrastive learning and performs off-policy control on top of the extracted features. CURL outperforms prior pixel-based methods, both model-based and model-free, on complex tasks in the DeepMind Control Suite and Atari Games showing 2.8x and 1.6x performance gains respectively at the 100K interaction steps benchmark. On the DeepMind Control Suite, CURL is the first image-based algorithm to nearly match the sample-efficiency and performance of methods that use state-based features."  
+>	"DMControl results:  
+>	(1) CURL is the state-of-the-art image-based RL algorithm on every single DMControl environment that we benchmark on for sample-efficiency against existing pixel-based baselines. On DMControl100k, CURL achieves 2.8x higher performance than Dreamer, a leading model-based method, and is 9.9x more data-efficient.  
+>	(2) CURL operating purely from pixels nearly matches (and sometimes surpasses) the sample efficiency of SAC operating from state on the majority of 16 DMControl environments tested. This is a first for any image-based RL algorithm, be it model-based, model-free, with or without auxiliary tasks.  
+>	(3) CURL solves (converges close to optimal score of 1000) on the majority of 16 DMControl experiments within 500k steps. It is also competitive to state-of-the-art asymptotic performance within just 100k steps, and significantly outperforms other methods in this regime."  
+>	"Atari results:  
+>	(1) CURL is the state-of-the-art pixel-based RL algorithm in terms of data-efficiency on the majority of twenty-six Atari100k experiments. On average, CURL outperforms SimPLe by 1.6x and Efficient Rainbow DQN by 2.5x on Atari100k.  
+>	(2) CURL achieves a median human-normalized score (HNS) of 24% while SimPLe and Efficient Rainbow DQN achieve 13.5% and 14.7% respectively. The mean HNS is 37.3%, 39%, and 23.8% for CURL, SimPLe, and Efficient Rainbow DQN respectively."  
+>	"(1) Does CURL learn only visual features or does it also capture temporal dynamics of the environment?  
+>	(2) How well does the RL policy perform if CURL representations are learned solely with the contrastive objective and no signal from RL?  
+>	(3) Why does CURL match state-based RL performance on some DMControl environments but not on others?"  
+  - <https://mishalaskin.github.io/curl> (demo)
+  - `video` <https://youtube.com/watch?v=1MprzvYNpY8> (Srinivas, Kilcher, Shorten, Scarfe)
+  - `video` <https://youtube.com/watch?v=-Drowt9r4zY> (Shorten)
+  - `video` <https://youtube.com/watch?v=hg2Q_O5b9w4> (Kilcher)
+  - `post` <https://twitter.com/Aravind7694/status/1248050400789295104>
+  - `post` <https://masterscrat.github.io/rl-insights/curl>
+
+----
 #### ["Playing Atari with Six Neurons"](https://arxiv.org/abs/1806.01363) Cuccu, Togelius, Cudre-Mauroux
 >	"We propose a new method for learning policies and compact state representations separately but simultaneously for policy approximation in reinforcement learning. State representations are generated by an encoder based on two novel algorithms: Increasing Dictionary Vector Quantization makes the encoder capable of growing its dictionary size over time, to address new observations as they appear in an open-ended online-learning context; Direct Residuals Sparse Coding encodes observations by disregarding reconstruction error minimization, and aiming instead for highest information inclusion. The encoder autonomously selects observations online to train on, in order to maximize code sparsity. As the dictionary size increases, the encoder produces increasingly larger inputs for the neural network: this is addressed by a variation of the Exponential Natural Evolution Strategies algorithm which adapts its probability distribution dimensionality along the run. We test our system on a selection of Atari games using tiny neural networks of only 6 to 18 neurons (depending on the game’s controls). These are still capable of achieving results comparable—and occasionally superior—to state-of-the-art techniques which use two orders of magnitude more neurons."  
   - `notes` <https://towardsdatascience.com/playing-atari-with-6-neurons-open-source-code-b94c764452ac>
@@ -1925,6 +1948,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"Fujimoto et al. [2019] present a pessimistic view that standard off-policy methods don't work in the offline setting even with large diverse datasets."  
   - <https://offline-rl.github.io>
   - `video` <https://slideslive.com/38922701/contributed-talk-striving-for-simplicity-in-offpolicy-deep-reinforcement-learning> (Agarwal)
+  - `video` <https://youtube.com/watch?v=mcfivkwM4p8> (Shorten)
   - `audio` <https://www.talkrl.com/episodes/scott-fujimoto> (31:43) (Fujimoto)
   - `paper` [**"Off-Policy Deep Reinforcement Learning without Exploration"**](#off-policy-deep-reinforcement-learning-without-exploration-fujimoto-meger-precup) by Fujimoto et al. `summary`
 
@@ -2058,10 +2082,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <https://github.com/floringogianu/categorical-dqn>
   - `code` <https://github.com/flyyufelix/C51-DDQN-Keras>
   - `code` <https://github.com/reinforceio/tensorforce/blob/master/tensorforce/models/categorical_dqn_model.py>
-
-#### ["Discrete Sequential Prediction of Continuous Actions for Deep RL"](https://arxiv.org/abs/1705.05035) Metz, Ibarz, Jaitly, Davidson
-  `SDQN` `Q-learning`
->	"We draw inspiration from the recent success of sequence-to-sequence models for structured prediction problems to develop policies over discretized spaces. Central to this method is the realization that complex functions over high dimensional spaces can be modeled by neural networks that use next step prediction. Specifically, we show how Q-values and policies over continuous spaces can be modeled using a next step prediction model over discretized dimensions. With this parameterization, it is possible to both leverage the compositional structure of action spaces during learning, as well as compute maxima over action spaces (approximately). On a simple example task we demonstrate empirically that our method can perform global search, which effectively gets around the local optimization issues that plague DDPG and NAF. We apply the technique to off-policy (Q-learning) methods and show that our method can achieve the state-of-the-art for off-policy methods on several continuous control tasks."  
 
 #### ["Sample-Efficient Deep Reinforcement Learning via Episodic Backward Update"](https://arxiv.org/abs/1805.12375) Lee et al.
   `EBU` `NeurIPS 2019`

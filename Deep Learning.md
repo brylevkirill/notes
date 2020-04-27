@@ -54,6 +54,7 @@
 #### history
 
   <http://scholarpedia.org/article/Deep_Learning>  
+  ["Brief History of Deep Learning from 1943-2019 (Timeline)"](https://machinelearningknowledge.ai/brief-history-of-deep-learning)  
   ["A 'Brief' History of Neural Nets and Deep Learning"](http://andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning/) by Andrey Kurenkov  
   ["On the Origin of Deep Learning"](https://arxiv.org/abs/1702.07800) by Wand and Raj `paper`  
 
@@ -1860,6 +1861,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=9-Om2YcHhIA> (Li)
   - `video` <https://youtube.com/watch?v=BhlOGGzC0Q0> + <https://youtube.com/watch?v=rMQMHA-uv_E> (Gharbieh)
   - `video` <https://youtube.com/watch?v=BhlOGGzC0Q0> (Luo)
+  - `video` <https://youtu.be/JO-RJRCkLvM?t=23m12s> (Lobacheva) `in russian`
   - `video` <https://youtu.be/99CymZY-4Tc?t=5m36s> (Lyalin) `in russian`
   - `video` <https://youtu.be/Q4HVS6c92qU?t=21m7s> (Alexeev) `in russian`
   - `post` <http://jalammar.github.io/illustrated-bert>
@@ -2438,6 +2440,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=KMgJFptbNlM> (Lyalin) `in russian`
   - `video` <https://youtube.com/watch?v=Bg8Y5q1OiP0> + <https://youtube.com/watch?v=7I_D2EOxwwI> (Neychev) `in russian`
   - `video` <https://youtube.com/watch?v=ONuRVpJSvfY> (Alexeev) `in russian`
+  - `video` <https://youtu.be/JO-RJRCkLvM?t=1m16s> (Lobacheva) `in russian`
   - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) `in russian`
   - `video` <https://youtu.be/LhH6wMvntSM?t=54m56s> (Suleymanov) `in russian`
   - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani, Uszkoreit)
