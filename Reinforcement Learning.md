@@ -296,6 +296,7 @@
 ---
 ### applications - robotics
 
+  [overview](https://youtube.com/watch?v=sXQlQg7Hax8) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=U1dD8UALTu0) by Sergey Levine `video`  
   [overview](http://www.fields.utoronto.ca/video-archive/2019/10/2509-21418) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=jAPJeJK18mw) by Sergey Levine `video`  
@@ -607,7 +608,8 @@
 
   ["The Sub-basement of RL"](https://youtube.com/watch?v=373_zVWceqA) by Dale Schuurmans `video`
 
-  ["Batch Reinforcement Learning"](http://tgabel.de/cms/fileadmin/user_upload/documents/Lange_Gabel_EtAl_RL-Book-12.pdf) by Lange et al. `paper`
+  ["Offline Reinforcement Learning: Tutorial, Review,and Perspectives on Open Problems"](https://arxiv.org/abs/2005.01643) by Levine et al. `paper`  
+  ["Batch Reinforcement Learning"](http://tgabel.de/cms/fileadmin/user_upload/documents/Lange_Gabel_EtAl_RL-Book-12.pdf) by Lange et al. `paper`  
 
 
 ----

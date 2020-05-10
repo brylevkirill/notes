@@ -154,14 +154,15 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"We present an algorithm to identify winning tickets and a series of experiments that support the lottery ticket hypothesis and the importance of these fortuitous initializations. We consistently find winning tickets that are less than 10-20% of the size of several fully-connected and convolutional feed-forward architectures for MNIST and CIFAR10. Above this size, the winning tickets that we find learn faster than the original network and reach higher test accuracy."  
   - `video` <https://youtube.com/watch?v=CobEbJEYUnU> (Frankle)
   - `video` <https://youtu.be/8UxS4ls6g1g?t=1h25m> (Frankle)
+  - `video` <https://youtube.com/watch?v=SfjJoevBbjU> (Frankle, Kilcher, Shorten, Scarfe, Salvaris)
   - `video` <https://youtube.com/watch?v=ZVVnvZdUMUk> (Kilcher)
   - `video` <https://youtube.com/watch?v=LXm_6eq0Cs4> (Shorten)
   - `video` <https://youtube.com/watch?v=5PF-I1NKTmk> (LaLonde)
   - `video` <https://youtube.com/watch?v=jOF5ytrhQEE> (Salvaris)
   - `video` <https://youtu.be/IRzaWXP3s3U?t=9m47s> (Sobolev) `in russian`
-  - `paper` ["Deconstructing Lottery Tickets: Zeros, Signs, and the Supermask"](https://arxiv.org/abs/1905.01067) by Zhou et al. ([post](https://eng.uber.com/deconstructing-lottery-tickets), [notes](https://www.shortscience.org/paper?bibtexKey=zhou2019deconstructing))
+  - `paper` ["Deconstructing Lottery Tickets: Zeros, Signs, and the Supermask"](https://arxiv.org/abs/1905.01067) by Zhou et al. ([post](https://eng.uber.com/deconstructing-lottery-tickets), [video](https://youtube.com/watch?v=jhCInVFE2sc) (Kilcher), [notes](https://www.shortscience.org/paper?bibtexKey=zhou2019deconstructing))
   - `paper` ["One Ticket to Win Them All: Generalizing Lottery Ticket Initializations Across Datasets and Optimizers"](https://arxiv.org/abs/1906.02773) by Morcos et al. ([post](https://ai.facebook.com/blog/understanding-the-generalization-of-lottery-tickets-in-neural-networks), [talk](https://youtube.com/watch?v=oOgbHpjTwwA) `video`)
-  - `paper` ["Proving the Lottery Ticket Hypothesis: Pruning is All You Need"](https://arxiv.org/abs/2002.00585) by Malach et al.
+  - `paper` ["Proving the Lottery Ticket Hypothesis: Pruning is All You Need"](https://arxiv.org/abs/2002.00585) by Malach et al. ([overview](https://youtube.com/watch?v=JbyEleBP6BI) `video`)
 
 #### ["Weight Agnostic Neural Networks"](https://arxiv.org/abs/1906.04358) Gaier, Ha
   `optimization` `NeurIPS 2019`
@@ -803,6 +804,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["Unsupervised Meta-Learning for Reinforcement Learning"](https://arxiv.org/abs/1806.04640) Gupta, Eysenbach, Finn, Levine
 >	"The performance of meta-learning algorithms depends on the tasks available for meta-training: in the same way that supervised learning generalizes best to test points drawn from the same distribution as the training points, meta-learning methods generalize best to tasks from the same distribution as the meta-training tasks. In effect, meta-reinforcement learning offloads the design burden from algorithm design to task design. If we can automate the process of task design as well, we can devise a meta-learning algorithm that is truly automated."  
 >	"Our conceptual and theoretical contributions consist of formulating the unsupervised meta-reinforcement learning problem and describing how task proposals based on mutual information can be used to train optimal meta-learners."  
+  - `post` <https://bair.berkeley.edu/blog/2020/05/01/umrl>
   - `video` <https://slideslive.com/38917936/unsupervised-reinforcement-learning-and-metalearning?t=1205> (Levine)
   - `video` <https://youtu.be/5oGEZGxJAl4?t=29m35s> (Levine)
   - `video` <https://youtu.be/i05Fk4ebMY0?t=35m21s> (Finn)
@@ -1137,8 +1139,9 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"By combining these findings, we are able to considerably outperform previous methods for self-supervised and semi-supervised learning on ImageNet. A linear classifier trained on self-supervised representations learned by SimCLR achieves 76.5% top-1 accuracy, which is a 7% relative improvement over previous state-of-the-art, matching the performance of a supervised ResNet-50. When fine-tuned on only 1% of the labels, we achieve 85.8% top-5 accuracy, outperforming AlexNet with 100x fewer labels."  
 >	"Contrastive Predictive Coding (CPC) based pipelines use groups of image patches separated by a carefully chosen spatial offset for anchors and positives while the negatives come from other patches within the image and from other images. While patches are a powerful way to incorporate spatial and instance discrimination together, they introduce extra hyperparameters and architectural design choices which may be hard to adapt for a new problem. SimCLR and MoCo opt for a simpler design where there is no patch extraction. Discriminating transformed image instances as opposed to image-patches within the same image optimizes a simpler instance discrimination objective with the InfoNCE loss and requires minimal architectural adjustments. One could view contrastive instance discrimination setups like SimCLR and MoCo as maximizing mutual information between an image and its augmented version."  
   - `post` <https://ai.googleblog.com/2020/04/advancing-self-supervised-and-semi.html>
-  - `video` <https://youtu.be/dMUes74-nYY?t=2h10m45s> (Srinivas) `video`
-  - `video` <https://youtube.com/watch?v=APki8LmdJwY> (Shorten) `video`
+  - `video` <https://youtu.be/dMUes74-nYY?t=2h10m45s> (Srinivas)
+  - `video` <https://youtube.com/watch?v=APki8LmdJwY> (Shorten)
+  - `video` <https://youtube.com/watch?v=5lsmGWtxnKA>
   - `notes` <https://habr.com/en/company/ods/blog/493016/#9-a-simple-framework-for-contrastive-learning-of-visual-representations> `in russian`
 
 #### ["Revisiting Self-Supervised Visual Representation Learning"](https://arxiv.org/abs/1901.09005) Kolesnikov, Zhai, Beyer
@@ -2254,7 +2257,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	(Karpathy) "ES is much simpler than RL, and there's no need for backprop, it's highly parallelizable, has fewer hyperparams, needs no value functions."  
 >	"In our preliminary experiments we found that using ES to estimate the gradient on the MNIST digit recognition task can be as much as 1,000 times slower than using backpropagation. It is only in RL settings, where one has to estimate the gradient of the expected reward by sampling, where ES becomes competitive."  
   - `post` <https://blog.openai.com/evolution-strategies/>
-  - `video` <https://youtube.com/watch?v=SQtOI9jsrJ0> (Chen) `video`
+  - `video` <https://youtube.com/watch?v=SQtOI9jsrJ0> (Chen)
   - `video` <https://youtube.com/watch?v=Rd0UdJFYkqI> (Temirchev) `in russian`
   - `video` <https://youtube.com/watch?v=8jKC95KklT0> (Karazeev) `in russian`
   - `post` <http://inference.vc/evolutionary-strategies-embarrassingly-parallelizable-optimization/> (Huszar)
@@ -2720,7 +2723,14 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `SIL` `self-imitation`
   - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#self-imitation-learning-oh-guo-singh-lee>
 
-#### ["Go-Explore: a New Approach for Hard-Exploration Problems"] Ecoffet, Huizinga, Lehman, Stanley, Clune
+#### ["First Return Then Explore"](https://arxiv.org/abs/2004.12919) Ecoffet, Huizinga, Lehman, Stanley, Clune
+  `Go-Explore` `self-imitation`
+>	"We hypothesize that the main impediment to effective exploration originates from algorithms forgetting how to reach previously visited states ('detachment') and from failing to first return to a state before exploring from it ('derailment'). Go-Explore addresses these two challenges directly through the simple principles of explicitly remembering promising states and first returning to such states before exploring. Go-Explore solves all heretofore unsolved Atari games and surpasses the state of the art on all hard-exploration games, with orders of magnitude improvements on the grand challenges Montezuma's Revenge and Pitfall. We also demonstrate the practical potential of Go-Explore on a challenging and extremely sparse-reward robotics task. Additionally, we show that adding a goal-conditioned policy can further improve Go-Explore's exploration efficiency and enable it to handle stochasticity throughout training."  
+  - `video` <https://youtube.com/watch?v=-MlYrPONqss> + <https://youtube.com/watch?v=e_aqRq59-Ns> (demo)
+  - `video` <https://youtube.com/watch?v=0hgarA3EvqA> (Shorten)
+  - `paper` [**"Go-Explore: a New Approach for Hard-Exploration Problems"**](#go-explore-a-new-approach-for-hard-exploration-problems-ecoffet-huizinga-lehman-stanley-clune) by Ecoffet et al. `summary`
+
+#### ["Go-Explore: a New Approach for Hard-Exploration Problems"](https://arxiv.org/abs/1901.10995) Ecoffet, Huizinga, Lehman, Stanley, Clune
   `Go-Explore` `self-imitation`
 >	"It exploits the following principles: (1) remember previously visited states, (2) first return to a promising state (without exploration), then explore from it, and (3) solve simulated environments through any available means (including by introducing determinism), then robustify via imitation learning."  
 >	"Because Go-Explore produces high-performing demonstrations automatically and cheaply, it also outperforms imitation learning work where humans provide solution demonstrations."  
@@ -2733,7 +2743,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=yoz3bBtkC4M> (Zhizhin) `in russian`
   - `post` <http://hunch.net/?p=8825714>
   - `post` <https://twitter.com/shimon8282/status/1136596644760342528>
-
+  - `paper` [**"First Return Then Explore"**](#first-return-then-explore-ecoffet-huizinga-lehman-stanley-clune) by Ecoffet et al. `summary`
 
 ----
 #### ["Contextual Decision Processes with Low Bellman Rank are PAC-Learnable"](https://arxiv.org/abs/1610.09512) Jiang, Krishnamurthy, Agarwal, Langford, Schapire

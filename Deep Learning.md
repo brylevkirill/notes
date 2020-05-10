@@ -258,6 +258,8 @@
 
   ["Is Bayesian Deep Learning the Most Brilliant Thing Ever"](https://youtube.com/watch?v=HumFmLu3CJ8) panel discussion `video`
 
+  ["Open Problems in Deep Learning: A Bayesian Solution"](https://youtube.com/watch?v=kdVYAWep9jU) by Dmitry Vetrov `video` `in russian`
+
   ["Deep Learning and Bayesian Methods"](http://deepbayes.ru) school from HSE ([videos](https://youtube.com/channel/UC9KcwaZ9gSvcYNs7Jx3oNaQ/playlists))  
   ["Bayesian Methods in Deep Learning"](https://youtube.com/playlist?list=PLNO729xOopfFy1NeLkHPN5xnSqGkgcxJ3) course from MSU `video` `in russian`  
 
@@ -367,7 +369,7 @@
 
   [overview](https://youtu.be/DSYzHPW26Ig?t=1h15m40s) by Alex Graves `video`  
   [overview](https://youtube.com/watch?v=dMUes74-nYY) by Aravind Srinivas `video`  
-  [overview](https://youtu.be/Vv7rHgmiJWM?t=35m31s) by Yann LeCun `video`  
+  [overview](https://youtu.be/SaJL4SLfrcY?t=39m4s) by Yann LeCun `video`  
   [overview](https://youtu.be/7I0Qt7GALVk?t=41m13s) by Yann LeCun `video`  
 
 ----
@@ -1861,8 +1863,9 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=9-Om2YcHhIA> (Li)
   - `video` <https://youtube.com/watch?v=BhlOGGzC0Q0> + <https://youtube.com/watch?v=rMQMHA-uv_E> (Gharbieh)
   - `video` <https://youtube.com/watch?v=BhlOGGzC0Q0> (Luo)
-  - `video` <https://youtu.be/JO-RJRCkLvM?t=23m12s> (Lobacheva) `in russian`
+  - `video` <https://youtu.be/JO-RJRCkLvM?t=23m12s> + <https://youtube.com/watch?v=5o8gTP-7xwg> (Lobacheva) `in russian`
   - `video` <https://youtu.be/99CymZY-4Tc?t=5m36s> (Lyalin) `in russian`
+  - `video` <https://youtu.be/atSqU9HfJq0?t=1h9m13s> (Malykh) `in russian`
   - `video` <https://youtu.be/Q4HVS6c92qU?t=21m7s> (Alexeev) `in russian`
   - `post` <http://jalammar.github.io/illustrated-bert>
   - `post` <https://medium.com/dissecting-bert/dissecting-bert-part-1-d3c3d495cdb3> + <https://medium.com/dissecting-bert/dissecting-bert-part2-335ff2ed9c73> + <https://medium.com/dissecting-bert/dissecting-bert-appendix-the-decoder-3b86f66b0e5f>
@@ -2230,6 +2233,7 @@ Yoshua Bengio:
   - `video` <https://youtu.be/QoCyQBzi7us?t=57m37s> (Oord)
   - `video` <https://youtu.be/DSYzHPW26Ig?t=51m46s> (Graves)
   - `post` <https://machinethoughts.wordpress.com/2019/06/25/the-inevitability-of-vector-quantization-in-deep-architectures>
+  - `post` <https://openai.com/blog/jukebox>
   - `code` <https://github.com/deepmind/sonnet/blob/master/sonnet/examples/vqvae_example.ipynb>
 
 
@@ -2438,6 +2442,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=KMY2Knr4iAs> (Chen)
   - `video` <https://youtube.com/watch?v=YQZRsowJZA8> (Lyalin) `in russian`
   - `video` <https://youtube.com/watch?v=KMgJFptbNlM> (Lyalin) `in russian`
+  - `video` <https://youtube.com/watch?v=atSqU9HfJq0> (Malykh) `in russian`
   - `video` <https://youtube.com/watch?v=Bg8Y5q1OiP0> + <https://youtube.com/watch?v=7I_D2EOxwwI> (Neychev) `in russian`
   - `video` <https://youtube.com/watch?v=ONuRVpJSvfY> (Alexeev) `in russian`
   - `video` <https://youtu.be/JO-RJRCkLvM?t=1m16s> (Lobacheva) `in russian`

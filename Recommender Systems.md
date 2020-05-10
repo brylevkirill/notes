@@ -33,7 +33,7 @@
 ----
 
   course by Sergey Nikolenko ([part 1](https://youtube.com/watch?v=mr8u54jsveA), [part 2](https://youtube.com/watch?v=cD47Ssp_Flk), [part 3](https://youtube.com/watch?v=OFyb8ukrRDo)) `video` `in russian`  
-  [course](https://lektorium.tv/node/33563) by Evgeny Sokolov and Andrey Zimovnov `video` `in russian`  
+  [course](https://youtube.com/playlist?list=PL-_cKNuVAYAWkYunGd6zKk7UxmExS-GHl) by Evgeny Sokolov `video` `in russian`  
 
   [overview](https://youtube.com/watch?v=umyNVwePCtw) of recent research by Dmitry Bugaychenko `video` `in russian`  
   [overview](https://youtube.com/watch?v=N0NUwz3xWX4) of recent research by Dmitry Ushanov `video` `in russian`  
