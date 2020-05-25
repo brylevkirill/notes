@@ -808,6 +808,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://slideslive.com/38917936/unsupervised-reinforcement-learning-and-metalearning?t=1205> (Levine)
   - `video` <https://youtu.be/5oGEZGxJAl4?t=29m35s> (Levine)
   - `video` <https://youtu.be/i05Fk4ebMY0?t=35m21s> (Finn)
+  - `paper` ["Unsupervised Curriculafor Visual Meta-Reinforcement Learning"](https://arxiv.org/abs/1912.04226) by Jabri et al.
 
 #### ["On First-Order Meta-Learning Algorithms"](https://arxiv.org/abs/1803.02999) Nichol, Achiam, Schulman
   `Reptile`
@@ -1843,6 +1844,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=hg2Q_O5b9w4> (Kilcher)
   - `post` <https://twitter.com/Aravind7694/status/1248050400789295104>
   - `post` <https://masterscrat.github.io/rl-insights/curl>
+  - `post` <https://www.alexirpan.com/2020/05/07/rl-potpourri.html>
 
 ----
 #### ["Playing Atari with Six Neurons"](https://arxiv.org/abs/1806.01363) Cuccu, Togelius, Cudre-Mauroux
@@ -2412,6 +2414,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"The dynamics are modelled by an ensemble of probabilistic neural networks models, which captures both epistemic uncertainty from limited data and network capacity, and aleatoric uncertainty from the stochasticity of the ground-truth dynamics. Except for the difference in modeling the dynamics, PETS-RS is the same as RS. Instead, in PETS-CEM, the online optimization problem is solved using cross-entropy method to obtain a better solution."  
   - <https://sites.google.com/view/drl-in-a-handful-of-trials>
   - `video` <https://youtube.com/watch?v=pq8xNCETPHU> (Chua)
+  - `video` <https://youtube.com/watch?v=AXXhVcRp_AU> (Chua)
   - `video` <https://slideslive.com/38915863/learning-models-for-representations-and-planning?t=737> (Lillicrap)
   - `video` <https://youtube.com/watch?v=JU-6x_E__5I> (Temirchev) `in russian`
 
@@ -2728,6 +2731,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"We hypothesize that the main impediment to effective exploration originates from algorithms forgetting how to reach previously visited states ('detachment') and from failing to first return to a state before exploring from it ('derailment'). Go-Explore addresses these two challenges directly through the simple principles of explicitly remembering promising states and first returning to such states before exploring. Go-Explore solves all heretofore unsolved Atari games and surpasses the state of the art on all hard-exploration games, with orders of magnitude improvements on the grand challenges Montezuma's Revenge and Pitfall. We also demonstrate the practical potential of Go-Explore on a challenging and extremely sparse-reward robotics task. Additionally, we show that adding a goal-conditioned policy can further improve Go-Explore's exploration efficiency and enable it to handle stochasticity throughout training."  
   - `video` <https://youtube.com/watch?v=-MlYrPONqss> + <https://youtube.com/watch?v=e_aqRq59-Ns> (demo)
   - `video` <https://youtube.com/watch?v=0hgarA3EvqA> (Shorten)
+  - `post` <https://www.alexirpan.com/2020/05/07/rl-potpourri.html>
   - `paper` [**"Go-Explore: a New Approach for Hard-Exploration Problems"**](#go-explore-a-new-approach-for-hard-exploration-problems-ecoffet-huizinga-lehman-stanley-clune) by Ecoffet et al. `summary`
 
 #### ["Go-Explore: a New Approach for Hard-Exploration Problems"](https://arxiv.org/abs/1901.10995) Ecoffet, Huizinga, Lehman, Stanley, Clune
@@ -2743,6 +2747,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=yoz3bBtkC4M> (Zhizhin) `in russian`
   - `post` <http://hunch.net/?p=8825714>
   - `post` <https://twitter.com/shimon8282/status/1136596644760342528>
+  - `post` <https://www.alexirpan.com/2018/11/27/go-explore.html>
   - `paper` [**"First Return Then Explore"**](#first-return-then-explore-ecoffet-huizinga-lehman-stanley-clune) by Ecoffet et al. `summary`
 
 ----
@@ -3513,6 +3518,8 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 ---
 ### reinforcement learning - multi-agent
 
+[papers](https://github.com/LantaoYu/MARL-Papers)
+
 ----
 #### ["Computing Approximate Equilibria in Sequential Adversarial Games by Exploitability Descent"](https://arxiv.org/abs/1903.05614) Lockhart et al.
   `ED`
@@ -3789,11 +3796,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `question answering over texts` `documents collection`
 >	"First, we propose a new pipeline for open-domain QA with a Ranker component, which learns to rank retrieved passages in terms of likelihood of extracting the ground-truth answer to a given question. Second, we propose a novel method that jointly trains the Ranker along with an answer-extraction Reader model, based on reinforcement learning."  
   - `post` <https://ibm.com/blogs/research/2018/02/open-domain-qa/>
-
-#### ["Reading Wikipedia to Answer Open-Domain Questions"](https://arxiv.org/abs/1704.00051) Chen, Fisch, Weston, Bordes
-  `DrQA` `question answering over texts` `documents collection`
-  - `code` <https://github.com/facebookresearch/ParlAI/tree/master/parlai/agents/drqa>
-  - `code` <https://github.com/hitvoice/DrQA>
 
 #### ["Simple and Effective Multi-Paragraph Reading Comprehension"](https://arxiv.org/abs/1710.10723) Clark, Gardner
   `question answering over texts` `multi-paragraph document`

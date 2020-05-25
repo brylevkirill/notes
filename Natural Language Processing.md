@@ -198,11 +198,9 @@
   "Word Embeddings: Explaining their properties" by Sanjeev Arora
 	([part 1](http://www.offconvex.org/2015/12/12/word-embeddings-1/), [part 2](http://www.offconvex.org/2016/02/14/word-embeddings-2/))  
 
-  ["Are Distributional Representations Ready for the Real World? Evaluating Word Vectors for Grounded Perceptual Meaning"](#are-distributional-representations-ready-for-the-real-world-evaluating-word-vectors-for-grounded-perceptual-meaning-lucy-gauthier) by Lucy and Gauthier `paper` `summary`
-
 ----
 
-  ["Deep Learning for Semantic Composition"](https://vimeo.com/234950059) tutorial by Xiaodan Zhu and Edward Grefenstette `video`
+  ["Learning From Text: Language Models and More"](https://youtube.com/watch?v=BnpB3GrpsfM) by Alec Radford `video`
 
 ----
 
@@ -302,6 +300,7 @@
   - `video` <https://youtube.com/watch?v=eKqWC577WlI> (Raffel)
   - `video` <https://youtube.com/watch?v=N-7rdJK4xlE> (Kilcher, Shorten, Scarfe)
   - `video` <https://youtube.com/watch?v=Axo0EtMUK90> (Shorten)
+  - `video` <https://youtu.be/BnpB3GrpsfM?t=1h50m53s> (Radford)
   - `video` <https://youtube.com/watch?v=zG1MXITBge0> (Bataeva) `in russian`
   - `audio` <https://podtail.com/podcast/data-skeptic/the-limits-of-nlp/> (Raffel)
   - `notes` <https://twitter.com/colinraffel/status/1187161460033458177>
@@ -321,6 +320,8 @@
   - `demo` <https://talktotransformer.com>
   - `post` <https://openai.com/blog/better-language-models>
   - `post` <https://openai.com/blog/language-unsupervised> *(GPT-1)*
+  - `video` <https://youtu.be/BnpB3GrpsfM?t=1h55m8s> (Radford)
+  - `video` <https://youtu.be/BnpB3GrpsfM?t=1h26m40s> (Radford) *(GPT-1)*
   - `video` <https://youtube.com/watch?v=UULqu7LQoHs> (Shorten)
   - `video` <https://youtube.com/watch?v=9ebPNEHRwXU> (Shorten) *(GPT-1)*
   - `video` <https://youtube.com/watch?v=u1_qMdb0kYU> (Kilcher)
@@ -773,25 +774,6 @@
   - `post` <https://habrahabr.ru/company/yandex/blog/314222/> `in russian`
   - `code` <https://github.com/faneshion/MatchZoo>
   - `code` <https://github.com/airalcorn2/Deep-Semantic-Similarity-Model>
-
-
-#### ["Skip-Thought Vectors"](http://arxiv.org/abs/1506.06726) Kiros, Zhu, Salakhutdinov, Zemel, Torralba, Urtasun, Fidler
->	"We describe an approach for unsupervised learning of a generic, distributed sentence encoder. Using the continuity of text from books, we train an encoder-decoder model that tries to reconstruct the surrounding sentences of an encoded passage. Sentences that share semantic and syntactic properties are thus mapped to similar vector representations. We next introduce a simple vocabulary expansion method to encode words that were not seen as part of training, allowing us to expand our vocabulary to a million words. After training our model, we extract and evaluate our vectors with linear models on 8 tasks: semantic relatedness, paraphrase detection, image-sentence ranking, question-type classification and 4 benchmark sentiment and subjectivity datasets. The end result is an off-the-shelf encoder that can produce highly generic sentence representations that are robust and perform well in practice."
-
->	"We evaluated the effectiveness of skip-thought vectors as an off-the-shelf sentence representation with linear classifiers across 8 tasks. Many of the methods we compare against were only evaluated on 1 task. The fact that skip-thought vectors perform well on all tasks considered highlight the robustness of our representations. We believe our model for learning skip-thought vectors only scratches the surface of possible objectives. Many variations have yet to be explored, including (a) deep encoders and decoders, (b) larger context windows, (c) encoding and decoding paragraphs, (d) other encoders, such as convnets. It is likely the case that more exploration of this space will result in even higher quality representations."
-
->	"Developing learning algorithms for distributed compositional semantics of words has been a long-standing open problem at the intersection of language understanding and machine learning. In recent years, several approaches have been developed for learning composition operators that map word vectors to sentence vectors including recursive networks, recurrent networks, convolutional networks and recursive-convolutional methods. All of these methods produce sentence representations that are passed to a supervised task and depend on a class label in order to backpropagate through the composition weights. Consequently, these methods learn high-quality sentence representations but are tuned only for their respective task. The paragraph vector is an alternative to the above models in that it can learn unsupervised sentence representations by introducing a distributed sentence indicator as part of a neural language model. The downside is at test time, inference needs to be performed to compute a new vector. In this paper we abstract away from the composition methods themselves and consider an alternative loss function that can be applied with any composition operator. We consider the following question: is there a task and a corresponding loss that will allow us to learn highly generic sentence representations? We give evidence for this by proposing a model for learning high-quality sentence vectors without a particular supervised task in mind. Using word vector learning as inspiration, we propose an objective function that abstracts the skip-gram model to the sentence level. That is, instead of using a word to predict its surrounding context, we instead encode a sentence to predict the sentences around it. Thus, any composition operator can be substituted as a sentence encoder and only the objective function becomes modified. We call our model skip-thoughts and vectors induced by our model are called skip-thought vectors. Our model depends on having a training corpus of contiguous text."
-
->	"One difficulty that arises with such an experimental setup is being able to construct a large enough word vocabulary to encode arbitrary sentences. For example, a sentence from a Wikipedia article might contain nouns that are highly unlikely to appear in our book vocabulary. We solve this problem by learning a mapping that transfers word representations from one model to another. Using pretrained word2vec representations learned with a continuous bag-of-words model, we learn a linear mapping from a word in word2vec space to a word in the encoder’s vocabulary space. The mapping is learned using all words that are shared between vocabularies. After training, any word that appears in word2vec can then get a vector in the encoder word embedding space."
-
-----
->	"It turns out that skip-thought vectors have some intriguing properties that allow us to construct F in a really simple way. Suppose we have 3 vectors: an image caption x, a "caption style" vector c and a "book style" vector b. Then we define F as F(x) = x - c + b which intuitively means: keep the "thought" of the caption, but replace the image caption style with that of a story. Then, we simply feed F(x) to the decoder."
-
-  - `video` <http://videolectures.net/deeplearning2015_salakhutdinov_deep_learning_2/#t=3776> (Salakhutdinov)
-  - `post` <https://medium.com/@samim/generating-stories-about-images-d163ba41e4ed> (demo)
-  - `post` <http://sanyam5.github.io/my-thoughts-on-skip-thoughts/>
-  - `code` <https://github.com/tensorflow/models/tree/master/research/skip_thoughts>
-  - `code` <https://github.com/sanyam5/skip-thoughts>
 
 
 #### ["Towards Universal Paraphrastic Sentence Embeddings"](https://arxiv.org/abs/1511.08198) Wieting, Bansal, Gimpel, Livescu

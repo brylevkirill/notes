@@ -683,7 +683,8 @@
   [overview](http://youtube.com/watch?v=MEUdtwQev9A) of multi-agent systems by James Wright `video`  
   [overview](http://youtube.com/watch?v=T8G5y_t9bME) of social dilemmas by Dmitry Ivanov `video` `in russian`  
 
-  ["Autocurricula and the Emergence of Innovation from Social Interaction: A Manifesto for Multi-Agent Intelligence Research"](https://arxiv.org/abs/1903.00742) by Leibo, Hughes, Lanctot, Graepel `paper`
+  ["Autocurricula and the Emergence of Innovation from Social Interaction: A Manifesto for Multi-Agent Intelligence Research"](https://arxiv.org/abs/1903.00742) by Leibo, Hughes, Lanctot, Graepel `paper`  
+  ["A Survey and Critique of Multiagent Deep Reinforcement Learning"](https://arxiv.org/abs/1810.05587) by Hernandez-Leal, Kartal, Taylor `paper`  
 
   [**recent interesting papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#reinforcement-learning---multi-agent)
 
@@ -2057,6 +2058,7 @@ interesting recent papers:
 >	"Autodidactic Iteration trains the value function through an iterative supervised learning process. In each iteration, the inputs to the neural network are created by starting from the goal state and randomly taking actions. The targets seek to estimate the optimal value function by performing a breadth-first search from each input state and using the current network to estimate the value of each of the leaves in the tree. Updated value estimates for the root nodes are obtained by recursively backing up the values for each node using a max operator. The policy network is similarly trained by constructing targets from the move that maximizes the value. After the network is trained, it is combined with MCTS to efficiently solve the Rubik’s Cube."
 
   - `video` <https://youtube.com/watch?v=DYKS0rC98ME> (Lapan) `in russian`
+  - `post` <https://www.alexirpan.com/2019/10/29/openai-rubiks.html>
 
 
 #### ["AlphaD3M: Machine Learning Pipeline Synthesis"](https://www.cs.columbia.edu/~idrori/AlphaD3M.pdf) Drori et al.

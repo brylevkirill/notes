@@ -314,6 +314,8 @@
   [tutorial](https://youtube.com/watch?v=DSYzHPW26Ig) by Alex Graves `video`  
   [tutorial](https://facebook.com/nipsfoundation/videos/795861577420073) by Alex Graves and Marc Aurelio Ranzato `video`  
 
+  [overview](https://youtube.com/watch?v=4vK6X9Jrncs) of unsupervised reinforcement learning by Sergey Levine `video`
+
   ["Goals and Principles of Representation Learning"](https://youtu.be/2vxZbZC21Gg?t=7m3s) by Ferenc Huszar `video`
 
 ----
@@ -362,6 +364,7 @@
   [overview](https://lilianweng.github.io/lil-log/2019/11/10/self-supervised-learning.html) by Lilian Weng  
   [overview](https://ankeshanand.com/blog/2020/01/26/contrative-self-supervised-learning.html) by Ankesh Anand  
   [overview](https://amitness.com/2020/02/illustrated-self-supervised-learning) by Amit Chaudhary  
+  [overview](https://amitness.com/2020/05/self-supervised-learning-nlp) by Amit Chaudhary  
 
   ["Self-supervised Visual Feature Learning with Deep Neural Networks: A Survey"](https://arxiv.org/abs/1902.06162) by Jing and Tian `paper`
 
@@ -369,6 +372,7 @@
 
   [overview](https://youtu.be/DSYzHPW26Ig?t=1h15m40s) by Alex Graves `video`  
   [overview](https://youtube.com/watch?v=dMUes74-nYY) by Aravind Srinivas `video`  
+  [overview](https://iclr.cc/virtual_2020/speaker_7.html) by Yann LeCun `video`  
   [overview](https://youtu.be/SaJL4SLfrcY?t=39m4s) by Yann LeCun `video`  
   [overview](https://youtu.be/7I0Qt7GALVk?t=41m13s) by Yann LeCun `video`  
 
@@ -768,6 +772,8 @@
 ---
 ### architectures - graph neural network
 
+  ["Deep Learning with Graph-structured Representations"](https://dare.uva.nl/search?identifier=1b63b965-24c4-4bcd-aabb-b849056fa76d) by Thomas Kipf `paper`
+
   ["Graph Convolutional Networks"](https://tkipf.github.io/graph-convolutional-networks) by Thomas Kipf
 
 ----
@@ -785,6 +791,10 @@
   ["Graph Neural Networks: Variations and Applications](https://youtube.com/watch?v=cWIeTMklzNg) by Alexander Gaunt `video`  
   ["Convolutional Neural Networks on Graphs"](https://youtube.com/watch?v=v3jZRkvIOIM) by Xavier Bresson `video`  
   ["Large-scale Graph Representation Learning"](https://youtube.com/watch?v=oQL4E1gK3VU) by Jure Leskovec `video`  
+
+----
+
+  [papers](https://github.com/naganandy/graph-based-deep-learning-literature)
 
 
 
@@ -1860,6 +1870,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=-9evrZnBorM> (Kilcher)
   - `video` <https://youtu.be/DSYzHPW26Ig?t=1h15m40s> (Graves)
   - `video` <https://youtu.be/AC4l_MY2Dhc?t=1h51m52s> (Srinivas)
+  - `video` <https://youtu.be/BnpB3GrpsfM?t=1h32m23s> (Radford)
   - `video` <https://youtube.com/watch?v=9-Om2YcHhIA> (Li)
   - `video` <https://youtube.com/watch?v=BhlOGGzC0Q0> + <https://youtube.com/watch?v=rMQMHA-uv_E> (Gharbieh)
   - `video` <https://youtube.com/watch?v=BhlOGGzC0Q0> (Luo)
@@ -2457,6 +2468,7 @@ Yoshua Bengio:
   - `post` <https://medium.com/@adityathiruvengadam/transformer-architecture-attention-is-all-you-need-aeccd9f50d09>
   - `post` <https://staff.fnwi.uva.nl/s.abnar/?p=108>
   - `post` <http://peterbloem.nl/blog/transformers>
+  - `post` <https://towardsdatascience.com/transformers-are-graph-neural-networks-bca9f75412aa>
   - `notes` <https://ricardokleinklein.github.io/2017/11/16/Attention-is-all-you-need.html>
   - `notes` <https://blog.tomrochette.com/machine-learning/papers/ashish-vaswani-attention-is-all-you-need>
   - `notes` <https://medium.com/@sharaf/a-paper-a-day-24-attention-is-all-you-need-26eb2da90a91>
