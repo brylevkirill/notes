@@ -309,12 +309,10 @@
 ---
 ### unsupervised learning
 
-  [course](https://sites.google.com/view/berkeley-cs294-158-sp19) from UC Berkeley ([videos](https://youtube.com/playlist?list=PLwRJQ4m4UJjPiJP3691u-qWwPGVKzSlNP), [videos](https://youtube.com/playlist?list=UUf4SX8kAZM_oGcZjMREsU9w))
+  [course](https://sites.google.com/view/berkeley-cs294-158-sp20) from UC Berkeley ([videos](https://youtube.com/playlist?list=PLwRJQ4m4UJjPiJP3691u-qWwPGVKzSlNP) `2020`, [videos](https://youtube.com/playlist?list=UUf4SX8kAZM_oGcZjMREsU9w) `2019`)
 
-  [tutorial](https://youtube.com/watch?v=DSYzHPW26Ig) by Alex Graves `video`  
-  [tutorial](https://facebook.com/nipsfoundation/videos/795861577420073) by Alex Graves and Marc Aurelio Ranzato `video`  
-
-  [overview](https://youtube.com/watch?v=4vK6X9Jrncs) of unsupervised reinforcement learning by Sergey Levine `video`
+  [overview](https://youtube.com/watch?v=DSYzHPW26Ig) by Alex Graves `video`  
+  [overview](https://facebook.com/nipsfoundation/videos/795861577420073) by Alex Graves and Marc Aurelio Ranzato `video`  
 
   ["Goals and Principles of Representation Learning"](https://youtu.be/2vxZbZC21Gg?t=7m3s) by Ferenc Huszar `video`
 
@@ -370,8 +368,9 @@
 
 ----
 
-  [overview](https://youtu.be/DSYzHPW26Ig?t=1h15m40s) by Alex Graves `video`  
+  [overview](https://youtu.be/1sJuWg5dULg?t=31m38s) by Aravind Srinivas `video`  
   [overview](https://youtube.com/watch?v=dMUes74-nYY) by Aravind Srinivas `video`  
+  [overview](https://youtu.be/DSYzHPW26Ig?t=1h15m40s) by Alex Graves `video`  
   [overview](https://iclr.cc/virtual_2020/speaker_7.html) by Yann LeCun `video`  
   [overview](https://youtu.be/SaJL4SLfrcY?t=39m4s) by Yann LeCun `video`  
   [overview](https://youtu.be/7I0Qt7GALVk?t=41m13s) by Yann LeCun `video`  
@@ -395,10 +394,14 @@
 
   ["Do we still need models or just more data and compute?"](https://staff.fnwi.uva.nl/m.welling/wp-content/uploads/Model-versus-Data-AI-1.pdf) by Max Welling
 
-  [overview](https://youtube.com/watch?v=oRJ1hJTRs-0) by Danilo Rezende `video`
+----
 
-  ["Round-up of Strenghts and Weaknesses"](https://youtube.com/watch?v=7o9dT6puHHg) by Aravind Srinivas `video`  
-  ["Building Machines that Imagine and Reason: Principles and Applications of Deep Generative Models"](http://videolectures.net/deeplearning2016_mohamed_generative_models/) by Shakir Mohamed `video`  
+  [course](https://sites.google.com/view/berkeley-cs294-158-sp20) from UC Berkeley ([videos](https://youtube.com/playlist?list=PLwRJQ4m4UJjPiJP3691u-qWwPGVKzSlNP) `2020`, [videos](https://youtube.com/playlist?list=UUf4SX8kAZM_oGcZjMREsU9w) `2019`)
+
+  [overview](https://youtube.com/watch?v=1sJuWg5dULg) by Aravind Srinivas `video` `2020`  *(strengths and weaknesses of models)*  
+  [overview](https://youtube.com/watch?v=7o9dT6puHHg) by Aravind Srinivas `video` `2019`  *(strengths and weaknesses of models)*  
+  [overview](https://youtube.com/watch?v=oRJ1hJTRs-0) by Danilo Rezende `video`  
+  [overview](http://videolectures.net/deeplearning2016_mohamed_generative_models) by Shakir Mohamed `video`  
 
 ----
 
@@ -481,9 +484,10 @@
 
 ----
 
-  [overview](https://youtu.be/7o9dT6puHHg?t=37m39s) by Aravind Srinivas `video`  
-  overview ([[1]](https://youtube.com/watch?v=1CT-kxjYbFU), [[2]](https://youtube.com/watch?v=0W1dixJfKL4)) by Pieter Abbeel and Aravind Srinivas `video`  
-  overview ([[1]](https://youtu.be/grsO57XMJMk?t=1h1m41s), [[2]](https://youtu.be/5NMIUZ7_nrg)) by Aravind Srinivas and Xi Chen `video`  
+  [overview](https://youtu.be/1sJuWg5dULg?t=21m24s) by Aravind Srinivas `video` `2020`  
+  [overview](https://youtu.be/7o9dT6puHHg?t=37m39s) by Aravind Srinivas `video` `2019`  
+  overview ([[1]](https://youtube.com/watch?v=1CT-kxjYbFU), [[2]](https://youtube.com/watch?v=0W1dixJfKL4)) by Pieter Abbeel and Aravind Srinivas `video` `2020`  
+  overview ([[1]](https://youtu.be/grsO57XMJMk?t=1h1m41s), [[2]](https://youtu.be/5NMIUZ7_nrg)) by Aravind Srinivas and Xi Chen `video` `2019`  
 
   [tutorial](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks) by Ian Goodfellow `video` ([paper](https://arxiv.org/abs/1701.00160))
 
@@ -549,8 +553,10 @@
 
   ["An Introduction to Variational Autoencoders"](https://arxiv.org/abs/1906.02691) by Diederik Kingma and Max Welling `paper`
 
-  [overview](https://youtu.be/7o9dT6puHHg?t=31m48s) by Aravind Srinivas `video`  
-  overview ([1](https://youtu.be/NCRzGmM1ywE?t=1h11m23s), [2](https://youtu.be/0IoLKnAg6-s?t=1m11s), [3](https://youtube.com/watch?v=grsO57XMJMk)) by Peter Chen and Jonathan Ho `video`  
+  [overview](https://youtu.be/1sJuWg5dULg?t=16m49s) by Aravind Srinivas `video` `2020`  
+  [overview](https://youtu.be/7o9dT6puHHg?t=31m48s) by Aravind Srinivas `video` `2019`  
+  [overview](https://youtube.com/watch?v=FMuvUZXMzKM) by Pieter Abbeel `video` `2020`  
+  overview ([1](https://youtu.be/NCRzGmM1ywE?t=1h11m23s), [2](https://youtu.be/0IoLKnAg6-s?t=1m11s), [3](https://youtube.com/watch?v=grsO57XMJMk)) by Peter Chen and Jonathan Ho `video` `2019`  
 
   [overview](https://youtu.be/tjT4Wf86FMM?t=21m55s) by Dmitry Vetrov `video`  
   [overview](https://youtu.be/RdFqBHCizp8?t=21m6s) by Dmitry Vetrov `video`  
@@ -632,9 +638,10 @@
 
   ["Deep Generative Models"](http://www.deeplearningbook.org/contents/generative_models.html) chapter (sections 20.10.7-20.10.10) of "Deep Learning" book by Goodfellow, Bengio, Courville
 
-  [overview](https://youtube.com/watch?v=iyEOk8KCRUw) by Pieter Abbeel `video`  
-  [overview](https://youtu.be/7o9dT6puHHg?t=3m50s) by Aravind Srinivas `video`  
-  [overview](https://youtu.be/zNmvH6OXDpk?t=28m51s) by Jonathan Ho `video`  
+  [overview](https://youtu.be/1sJuWg5dULg?t=2m22s) by Aravind Srinivas `video` `2020`  
+  [overview](https://youtu.be/7o9dT6puHHg?t=3m50s) by Aravind Srinivas `video` `2019`  
+  [overview](https://youtube.com/watch?v=iyEOk8KCRUw) by Pieter Abbeel `video` `2020`  
+  [overview](https://youtu.be/zNmvH6OXDpk?t=28m51s) by Jonathan Ho `video` `2019`  
 
   ["Sequence-To-Sequence Modeling with Neural Networks"](https://vimeo.com/240428387) by Oriol Vinyals and Navdeep Jaitly `video`  
   ["Generative Modelling as Sequence Learning"](https://youtube.com/watch?v=leu286ciQcE) by Nal Kalchbrenner `video`  
@@ -692,9 +699,10 @@
 
   ["Normalizing Flows for Probabilistic Modeling and Inference"](https://arxiv.org/abs/1912.02762) by Papamakarios et al. `paper`
 
-  [overview](https://youtube.com/watch?v=JBb5sSC0JoY) by Pieter Abbeel `video`  
-  [overview](https://youtu.be/7o9dT6puHHg?t=24m8s) by Aravind Srinivas `video`  
-  overview ([1](https://youtu.be/mYCLVPRy2nc?t=1h46m30s), [2](https://youtu.be/NCRzGmM1ywE)) by Jonathan Ho `video`  
+  [overview](https://youtu.be/1sJuWg5dULg?t=13m12s) by Aravind Srinivas `video` `2020`  
+  [overview](https://youtu.be/7o9dT6puHHg?t=24m8s) by Aravind Srinivas `video` `2019`  
+  [overview](https://youtube.com/watch?v=JBb5sSC0JoY) by Pieter Abbeel `video` `2020`  
+  overview ([1](https://youtu.be/mYCLVPRy2nc?t=1h46m30s), [2](https://youtu.be/NCRzGmM1ywE)) by Jonathan Ho `video` `2019`  
   [overview](https://slideslive.com/38917907/tutorial-on-normalizing-flows) by Eric Jang `video`  
   [overview](https://youtube.com/watch?v=v4gp1dMvWJo) by Arsenii Ashukha `video`  
 
@@ -1040,6 +1048,7 @@
   - `video` <https://facebook.com/iclr.cc/videos/1710657292296663?t=3220> (Zhang)
   - `video` <https://youtu.be/mEYerIMYb5Q?t=18m2s> (Goncalves)
   - `video` <https://youtu.be/DSYzHPW26Ig?t=10m44s> (Graves)
+  - `video` <https://youtu.be/pFWiauHOFpY?t=1m41s> (Steenbrugge)
   - `post` <https://danieltakeshi.github.io/2017/05/19/understanding-deep-learning-requires-rethinking-generalization-my-thoughts-and-notes>
   - `notes` <https://theneuralperspective.com/2017/01/24/understanding-deep-learning-requires-rethinking-generalization/>
   - `notes` <https://blog.acolyer.org/2017/05/11/understanding-deep-learning-requires-re-thinking-generalization/>
@@ -1059,6 +1068,7 @@
 
   - `video` <https://vimeo.com/238241921> (Krueger)
   - `video` <http://videocrm.ca/Machine18/Machine18-20180423-5-YoshuaBengio.mp4> (42:27) (Bengio)
+  - `video` <https://youtube.com/watch?v=pFWiauHOFpY> (Steenbrugge)
 
 
 #### ["Deep Learning and the Information Bottleneck Principle"](https://arxiv.org/abs/1503.02406) Tishby, Zaslavsky
@@ -1134,6 +1144,7 @@
   - `video` <https://youtube.com/watch?v=ekUWO_pI2M8> (Tishby)
   - `video` <https://youtu.be/RKvS958AqGY?t=12m7s> (Tishby)
   - `video` <https://youtu.be/cHjI37DsQCQ?t=41m40s> (Selvaraj)
+  - `video` <https://youtu.be/pFWiauHOFpY?t=8m15s> (Steenbrugge)
   - `video` <https://youtube.com/watch?v=yoMC0P2x3Fg> + <https://youtube.com/watch?v=7OsyeNbKQjU> (Skorokodov) `in russian`
   - `post` <https://lilianweng.github.io/lil-log/2017/09/28/anatomize-deep-learning-with-information-theory.html>
   - `post` <https://reddit.com/r/MachineLearning/comments/be8qie/discussion_what_is_the_status_of_the_information/el9eqwf>
@@ -1847,11 +1858,12 @@ Yoshua Bengio:
   `word2vec` `Skip-gram`
 >	"We propose two novel model architectures for computing continuous vector representations of words from very large data sets. The quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks. We observe large improvements in accuracy at much lower computational cost, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set. Furthermore, we show that these vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities."
 
+  - `video` <https://youtube.com/watch?v=BnpB3GrpsfM> (Radford)
   - `video` <https://youtu.be/dMUes74-nYY?t=1h3m> (Srinivas)
-  - `video` <https://youtube.com/watch?v=fwcJpSYNsNs> (Mikolov)
-  - `video` <https://youtube.com/watch?v=c3yRH0XZN2g> (Boyd-Graber)
   - `video` <https://youtube.com/watch?v=Ab5cgv9w7ac> (Scarfe)
   - `video` <https://youtube.com/watch?v=cQFOxMkzwf4> (Shorten)
+  - `video` <https://youtube.com/watch?v=c3yRH0XZN2g> (Boyd-Graber)
+  - `video` <https://youtube.com/watch?v=fwcJpSYNsNs> (Mikolov)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=mikolov2013efficient>
   - `post` <http://jalammar.github.io/illustrated-word2vec>
   - `post` <http://alexminnaar.com/word2vec-tutorial-part-i-the-skip-gram-model.html>
@@ -1897,7 +1909,9 @@ Yoshua Bengio:
   - `video` <https://youtu.be/QoCyQBzi7us?t=1h9m51s> (Oord)
   - `video` <https://youtu.be/dMUes74-nYY?t=1h19m29s> (Srinivas)
   - `video` <https://youtu.be/AC4l_MY2Dhc?t=1h6m33s> (Srinivas)
+  - `video` <https://youtu.be/1sJuWg5dULg?t=33m12s> (Srinivas)
   - `video` <https://youtu.be/DSYzHPW26Ig?t=1h24m53s> (Graves)
+  - `video` <https://youtu.be/QE36xa8NqPA?t=31m15s> (Sobolev)
   - `post` <https://ankeshanand.com/blog/2020/01/26/contrative-self-supervised-learning.html>
   - `post` <https://machinethoughts.wordpress.com/2018/08/15/predictive-coding-and-mutual-information>
   - `paper` ["Data-Efficient Image Recognition with Contrastive Predictive Coding"](https://arxiv.org/abs/1905.09272) by Henaff et al. ([overview](https://facebook.com/icml.imls/videos/378993762742156?t=3335) by Henaff `video`, [overview](https://youtu.be/dMUes74-nYY?t=1h42m8s) by Srinivas `video`)  *(CPC v2)*
@@ -2089,6 +2103,8 @@ Yoshua Bengio:
 ----
 >	"Latent variable probabilistic models are ubiquitous, but often inference in such models is intractable. Variational inference methods based on approximation of the true posterior currently are most popular deterministic inference techniques. Recently one particularly interesting method for parametric variational approximation was proposed called Auto-encoding variational bayes. In this method, approximate posterior explicitly depends on data and may be almost arbitrary complex, e.g. a deep neural network. Thus, the problem of variational inference may be considered as a learning of auto-encoder where the code is represented by latent variables, encoder is the likelihood model and decoder is our variational approximation. Since neural networks can serve as universal function approximators, such inference method may allow to obtain better results than for "shallow" parametric approximations or free-form mean-field ones."
 
+  - `video` <https://youtube.com/watch?v=FMuvUZXMzKM> (Abbeel)
+  - `video` <https://youtube.com/watch?v=h0UE8FzdE8U> (Lamb)
   - `video` <http://youtube.com/watch?v=rjZL7aguLAs> (Kingma)
   - `video` <https://youtu.be/tjT4Wf86FMM?t=21m55s> (Vetrov)
   - `video` <https://youtu.be/RdFqBHCizp8?t=21m6s> (Vetrov)
@@ -2116,6 +2132,23 @@ Yoshua Bengio:
 
   - `video` <http://techtalks.tv/talks/stochastic-backpropagation-and-approximate-inference-in-deep-generative-models/60885/>
   - `video` <http://vk.com/video-44016343_456239093> (Stepochkin) `in russian`
+
+
+#### ["Importance Weighted Autoencoders"](http://arxiv.org/abs/1509.00519) Burda, Grosse, Salakhutdinov
+  `IWAE`
+>	"The variational autoencoder (VAE; Kingma, Welling (2014)) is a recently proposed generative model pairing a top-down generative network with a bottom-up recognition network which approximates posterior inference. It typically makes strong assumptions about posterior inference, for instance that the posterior distribution is approximately factorial, and that its parameters can be approximated with nonlinear regression from the observations. As we show empirically, the VAE objective can lead to overly simplified representations which fail to use the network's entire modeling capacity. We present the importance weighted autoencoder (IWAE), a generative model with the same architecture as the VAE, but which uses a strictly tighter log-likelihood lower bound derived from importance weighting. In the IWAE, the recognition network uses multiple samples to approximate the posterior, giving it increased flexibility to model complex posteriors which do not fit the VAE modeling assumptions. We show empirically that IWAEs learn richer latent space representations than VAEs, leading to improved test log-likelihood on density estimation benchmarks."
+
+  - `video` <https://youtube.com/watch?v=FMuvUZXMzKM> (Abbeel)
+  - `video` <https://youtu.be/0IoLKnAg6-s?t=14m41s> (Chen)
+  - `video` <https://facebook.com/nipsfoundation/videos/1555493854541848?t=1771> (Teh)
+  - `video` <https://youtube.com/watch?v=rNmgOCWEGDg> (Struminsky) `in russian`
+  - `post` <http://dustintran.com/blog/importance-weighted-autoencoders/>
+  - `post` <https://casmls.github.io/general/2017/04/24/iwae-aae.html>
+  - `notes` <http://artem.sobolev.name/posts/2016-07-14-neural-variational-importance-weighted-autoencoders.html>
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/BurdaGS15>
+  - `code` <https://github.com/yburda/iwae>
+  - `code` <https://github.com/arahuja/generative-tf>
+  - `code` <https://github.com/blei-lab/edward/blob/master/examples/iwvi.py>
 
 
 #### ["Semi-supervised Learning with Deep Generative Models"](http://arxiv.org/abs/1406.5298) Kingma, Rezende, Mohamed, Welling
@@ -2146,8 +2179,7 @@ Yoshua Bengio:
 
 >	"There have been many attempts at performing this kind of reasoning, dating back to the earliest years of the field. Despite this, progress has been slow for several reasons: First, the task is inherently ill-posed. Objects always appear under self-occlusion, and there are an infinite number of 3D structures that could give rise to a particular 2D observation. The natural way to address this problem is by learning statistical models that recognize which 3D structures are likely and which are not. Second, even when endowed with such a statistical model, inference is intractable. This includes the sub-tasks of mapping image pixels to 3D representations, detecting and establishing correspondences between different images of the same structures, and that of handling the multi-modality of the representations in this 3D space. Third, it is unclear how 3D structures are best represented, e.g., via dense volumes of voxels, via a collection of vertices, edges and faces that define a polyhedral mesh, or some other kind of representation. Finally, ground-truth 3D data is difficult and expensive to collect and therefore datasets have so far been relatively limited in size and scope."
 
->"
->	We design a strong generative model of 3D structures, defined over the space of volumes and meshes, using ideas from state-of-the-art generative models of images.  
+>	"We design a strong generative model of 3D structures, defined over the space of volumes and meshes, using ideas from state-of-the-art generative models of images.  
 >	We show that our models produce high-quality samples, can effectively capture uncertainty and are amenable to probabilistic inference, allowing for applications in 3D generation and simulation. We report log-likelihoods on a dataset of shape primitives, a 3D version of MNIST, and on ShapeNet, which to the best of our knowledge, constitutes the first quantitative benchmark for 3D density modeling.  
 >	We show how complex inference tasks, e.g., that of inferring plausible 3D structures given a 2D image, can be achieved using conditional training of the models. We demonstrate that such models recover 3D representations in one forward pass of a neural network and they accurately capture the multi-modality of the posterior.  
 >	We explore both volumetric and mesh-based representations of 3D structure. The latter is achieved by flexible inclusion of off-the-shelf renders such as OpenGL. This allows us to build in further knowledge of the rendering process, e.g., how light bounces of surfaces and interacts with its material’s attributes.  
@@ -2173,7 +2205,27 @@ Yoshua Bengio:
 >	- Use explicit information placement to restrict the reception of the autoregressive model, thereby forcing the model to use the latent code z which is globally provided.  
 >	- Parametrize the prior distribution with a autoregressive model showing that a type of autoregressive latent code can reduce inefficiency in Bits-Back coding."  
 
+  - `video` <https://youtu.be/FMuvUZXMzKM?t=2h2m12s> (Abbeel)
   - `post` <http://tsong.me/blog/lossy-vae/>
+
+
+#### ["beta-VAE: Learning Basic Visual Concepts with a Constrained Variational Framework"](http://openreview.net/forum?id=Sy2fzU9gl) Higgins et al.
+  `β-VAE` `disentangled representations`
+>	"Learning an interpretable factorised representation of the independent data generative factors of the world without supervision is an important precursor for the development of artificial intelligence that is able to learn and reason in the same way that humans do. We introduce beta-VAE, a new state-of-the-art framework for automated discovery of interpretable factorised latent representations from raw image data in a completely unsupervised manner. Our approach is a modification of the variational autoencoder (VAE) framework. We introduce an adjustable hyperparameter beta that balances latent channel capacity and independence constraints with reconstruction accuracy. We demonstrate that beta-VAE with appropriately tuned beta > 1 qualitatively outperforms VAE (beta = 1), as well as state of the art unsupervised (InfoGAN) and semi-supervised (DC-IGN) approaches to disentangled factor learning on a variety of datasets (celebA, faces and chairs). Furthermore, we devise a protocol to quantitatively compare the degree of disentanglement learnt by different models, and show that our approach also significantly outperforms all baselines quantitatively. Unlike InfoGAN, beta-VAE is stable to train, makes few assumptions about the data and relies on tuning a single hyperparameter, which can be directly optimised through a hyper parameter search using weakly labelled data or through heuristic visual inspection for purely unsupervised data."
+
+----
+>	"This paper proposes a modification of the variational ELBO to encourage disentangled representations and proposes a measure of disentanglement."
+
+>	"Beta-VAE is a VAE with beta coefficient in KL divergence term where beta=1 is exactly same formulation of vanilla VAE. By increasing beta, the weighted factor forces model to learn more disentangled representation than VAE. The authors also proposed disentanglement metric by training a simple classifier with low capacity and use it’s prediction accuracy. But the metric can be only calculated in simulator (ground truth generator) setting where we can control independent factors to generate different samples with controlled property."
+
+  - `video` <https://youtu.be/XNGo9xqpgMo?t=10m8s> (Higgins)
+  - `video` <https://youtu.be/FMuvUZXMzKM?t=2h6m37s> (Abbeel)
+  - `video` <https://youtu.be/Wgvcxd98tvU?t=27m17s> (Achille)
+  - `video` <https://cds.cern.ch/record/2302480> (52:29) (Rezende)
+  - `post` <https://lilianweng.github.io/lil-log/2018/08/12/from-autoencoder-to-beta-vae.html#beta-vae>
+  - `post` <https://towardsdatascience.com/what-a-disentangled-net-we-weave-representation-learning-in-vaes-pt-1-9e5dbc205bd1>
+  - `paper` ["Early Visual Concept Learning with Unsupervised Deep Learning"](http://arxiv.org/abs/1606.05579) by Higgins et al.
+  - `paper` ["Understanding Disentangling in β-VAE"](https://arxiv.org/abs/1804.03599) by Burgess et al.
 
 
 #### ["Adversarially Learned Inference"](http://arxiv.org/abs/1606.00704) Dumoulin, Belghazi, Poole, Lamb, Arjovsky, Mastropietro, Courville
@@ -2211,41 +2263,54 @@ Yoshua Bengio:
 
 #### ["Neural Discrete Representation Learning"](https://arxiv.org/abs/1711.00937) Oord, Vinyals, Kavukcuoglu
   `VQ-VAE`
->	"Language is inherently discrete, similarly speech is typically represented as a sequence of symbols. Images can often be described concisely by language. Furthermore, discrete representations are a natural fit for complex reasoning, planning and predictive learning."  
->	"We introduce a new family of generative models succesfully combining the VAE framework with discrete latent representations through a novel parameterisation of the posterior distribution of (discrete) latents given an observation. Our model, which relies on vector quantization, is simple to train, does not suffer from large variance, and avoids the “posterior collapse” issue which has been problematic with many VAE models that have a powerful decoder, often caused by latents being ignored. Additionally, it is the first discrete latent VAE model that get similar performance as its continuous counterparts, while offering the flexibility of discrete distributions."  
->	"Since VQ-VAE can make effective use of the latent space, it can successfully model important features that usually span many dimensions in data space (for example objects span many pixels in images, phonemes in speech, the message in a text fragment, etc.) as opposed to focusing or spending capacity on noise and imperceptible details which are often local."  
->	"When paired with a powerful prior, our samples are coherent and high quality on a wide variety of applications such as speech and video generation. We use a PixelCNN over the discrete latents for images, and a WaveNet for raw audio. Training the prior and the VQ-VAE jointly, which could strengthen our results, is left as future research."  
->	"The discrete latent space captures the important aspects of the audio, such as the content of the speech, in a very compressed symbolic representation. Because of this we can now train another WaveNet on top of these latents which can focus on modeling the long-range temporal dependencies without having to spend too much capacity on imperceptible details. With enough data one could even learn a language model directly from raw audio."  
->	"When we condition the decoder in the VQ-VAE on the speaker-id, we can extract latent codes from a speech fragment and reconstruct with a different speaker-id. The VQ-VAE never saw any aligned data during training and was always optimizing the reconstruction of the orginal waveform. These experiments suggest that the encoder has factored out speaker-specific information in the encoded representations, as they have same meaning across different voice characteristics. This behaviour arises naturally because the decoder gets the speaker-id for free so the limited bandwith of latent codes gets used for other speaker-independent, phonetic information. In the paper we show that the latent codes discovered by the VQ-VAE are actually very closely related to the human-designed alphabet of phonemes."  
->	"We show promising results on learning long term structure of environments for reinforcement learning."  
->	"VQ-VAE models only what we can perceive - doesn't predict the noise or high frequency signals we can't see."  
+>	"Learning useful representations without supervision remains a key challenge in machine learning. In this paper, we propose a simple yet powerful generative model that learns such discrete representations. Our model, the Vector Quantised-Variational AutoEncoder (VQ-VAE), differs from VAEs in two key ways: the encoder network outputs discrete, rather than continuous, codes; and the prior is learnt rather than static. In order to learn a discrete latent representation, we incorporate ideas from vector quantisation (VQ). Using the VQ method allows the model to circumvent issues of "posterior collapse" -- where the latents are ignored when they are paired with a powerful autoregressive decoder -- typically observed in the VAE framework. Pairing these representations with an autoregressive prior, the model can generate high quality images, videos, and speech as well as doing high quality speaker conversion and unsupervised learning of phonemes, providing further evidence of the utility of the learnt representations."
+
+>	"Language is inherently discrete, similarly speech is typically represented as a sequence of symbols. Images can often be described concisely by language. Furthermore, discrete representations are a natural fit for complex reasoning, planning and predictive learning."
+
 >	"Why discrete representation?  
 >	- Many important real-world things are discrete  
 >	- Easier modelling of the prior (e.g. softmax vs RNADE)  
->	- Preventing posterior collapse
+>	- Preventing posterior collapse  
 >	- Using PixelCNN-like decoders"  
+
+>	"We introduce a new family of generative models succesfully combining the VAE framework with discrete latent representations through a novel parameterisation of the posterior distribution of (discrete) latents given an observation. Our model, which relies on vector quantization, is simple to train, does not suffer from large variance, and avoids the “posterior collapse” issue which has been problematic with many VAE models that have a powerful decoder, often caused by latents being ignored. Additionally, it is the first discrete latent VAE model that get similar performance as its continuous counterparts, while offering the flexibility of discrete distributions."
+
+>	"Since VQ-VAE can make effective use of the latent space, it can successfully model important features that usually span many dimensions in data space (for example objects span many pixels in images, phonemes in speech, the message in a text fragment, etc.) as opposed to focusing or spending capacity on noise and imperceptible details which are often local."
+
+>	"When paired with a powerful prior, our samples are coherent and high quality on a wide variety of applications such as speech and video generation. We use a PixelCNN over the discrete latents for images, and a WaveNet for raw audio. Training the prior and the VQ-VAE jointly, which could strengthen our results, is left as future research."  
+>	"The discrete latent space captures the important aspects of the audio, such as the content of the speech, in a very compressed symbolic representation. Because of this we can now train another WaveNet on top of these latents which can focus on modeling the long-range temporal dependencies without having to spend too much capacity on imperceptible details. With enough data one could even learn a language model directly from raw audio."  
+>	"When we condition the decoder in the VQ-VAE on the speaker-id, we can extract latent codes from a speech fragment and reconstruct with a different speaker-id. The VQ-VAE never saw any aligned data during training and was always optimizing the reconstruction of the orginal waveform. These experiments suggest that the encoder has factored out speaker-specific information in the encoded representations, as they have same meaning across different voice characteristics. This behaviour arises naturally because the decoder gets the speaker-id for free so the limited bandwith of latent codes gets used for other speaker-independent, phonetic information. In the paper we show that the latent codes discovered by the VQ-VAE are actually very closely related to the human-designed alphabet of phonemes."  
+
+>	"We show promising results on learning long term structure of environments for reinforcement learning."
+
   - `post` <https://avdnoord.github.io/homepage/vqvae/> (demo)
   - `video` <https://youtu.be/QoCyQBzi7us?t=19m10s> (Oord)
+  - `video` <https://youtu.be/FMuvUZXMzKM?t=1h46m19s> (Abbeel)
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1711.00937>
   - `slides` <https://avdnoord.github.io/homepage/slides/SANE2017.pdf>
-  - `code` <https://github.com/deepmind/sonnet/blob/master/sonnet/examples/vqvae_example.ipynb>
 
 
 #### ["Generating Diverse High-Fidelity Images with VQ-VAE-2"](https://arxiv.org/abs/1906.00446) Razavi, Oord, Vinyals
   `VQ-VAE-2` `VQ-VAE`
->	"VQ-VAE for large scale image generation"  
->	"We scale and enhance the autoregressive priors used in VQ-VAE."  
->	"We use simple feed-forward encoder and decoder networks, making our model an attractive candidate for applications where the encoding and/or decoding speed is critical."  
->	"VQ-VAE requires sampling an autoregressive model only in the compressed latent space, which is an order of magnitude faster than sampling in the pixel space, especially for large images."  
->	"A multi-scale hierarchical organization of VQ-VAE, augmented with powerful priors over the latent codes, is able to generate samples with quality that rivals that of state of the art GANs on multifaceted datasets such as ImageNet, while not suffering from GAN's known shortcomings such as mode collapse and lack of diversity."  
+>	"We explore the use of Vector Quantized Variational AutoEncoder (VQ-VAE) models for large scale image generation. To this end, we scale and enhance the autoregressive priors used in VQ-VAE to generate synthetic samples of much higher coherence and fidelity than possible before. We use simple feed-forward encoder and decoder networks, making our model an attractive candidate for applications where the encoding and/or decoding speed is critical. Additionally, VQ-VAE requires sampling an autoregressive model only in the compressed latent space, which is an order of magnitude faster than sampling in the pixel space, especially for large images. We demonstrate that a multi-scale hierarchical organization of VQ-VAE, augmented with powerful priors over the latent codes, is able to generate samples with quality that rivals that of state of the art Generative Adversarial Networks on multifaceted datasets such as ImageNet, while not suffering from GAN's known shortcomings such as mode collapse and lack of diversity."
+
+>	"We scale and enhance the autoregressive priors used in VQ-VAE."
+
+>	"We use simple feed-forward encoder and decoder networks, making our model an attractive candidate for applications where the encoding and/or decoding speed is critical."
+
+>	"VQ-VAE requires sampling an autoregressive model only in the compressed latent space, which is an order of magnitude faster than sampling in the pixel space, especially for large images."
+
+>	"A multi-scale hierarchical organization of VQ-VAE, augmented with powerful priors over the latent codes, is able to generate samples with quality that rivals that of state of the art GANs on multifaceted datasets such as ImageNet, while not suffering from GAN's known shortcomings such as mode collapse and lack of diversity."
+
 >	"- Mean Squared Error loss on pixels  
 >	- non-autoregressive image decoder  
 >	- discrete latents w/ straight through estimator"  
+
   - `video` <https://youtu.be/QoCyQBzi7us?t=57m37s> (Oord)
   - `video` <https://youtu.be/DSYzHPW26Ig?t=51m46s> (Graves)
+  - `video` <https://youtu.be/FMuvUZXMzKM?t=1h56m24s> (Abbeel)
   - `post` <https://machinethoughts.wordpress.com/2019/06/25/the-inevitability-of-vector-quantization-in-deep-architectures>
   - `post` <https://openai.com/blog/jukebox>
-  - `code` <https://github.com/deepmind/sonnet/blob/master/sonnet/examples/vqvae_example.ipynb>
 
 
 #### ["Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations"](https://arxiv.org/abs/1811.12359) Locatello, Bauer, Lucic, Gelly, Scholkopf, Bachem

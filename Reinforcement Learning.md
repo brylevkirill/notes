@@ -26,9 +26,9 @@
 ---
 ### applications
 
-  - [industry](#applications---industry)
-  - [games](#applications---games)
-  - [robotics](#applications---robotics)
+  - [**industry**](#applications---industry)
+  - [**games**](#applications---games)
+  - [**robotics**](#applications---robotics)
 
 
 
@@ -103,6 +103,7 @@
 	[OpenAI Five overview](https://slideslive.com/38922722/contributed-talk-playing-dota-2-with-large-scale-deep-reinforcement-learning) by Jie Tang and Filip Wolski `video`  
 	[OpenAI Five overview](https://youtu.be/w3ues-NayAs?t=2m26s) by Ilya Sutskever `video`  
 	[OpenAI Five overview](https://youtu.be/N8_gVrIPLQM?t=1h3m41s) by David Silver `video`  
+	[OpenAI Five overview](https://youtube.com/watch?v=0eO2TSVVP1Y) by Xander Steenbrugge `video`  
 
 	[OpenAI Five discussion](https://twitch.tv/videos/293517383?t=4h41m56s) with OpenAI team `video`  
 	[OpenAI Five discussion](https://reddit.com/r/DotA2/comments/bf49yk/hello_were_the_dev_team_behind_openai_five_we) with OpenAI team  
@@ -296,8 +297,11 @@
 ---
 ### applications - robotics
 
+  [course](https://people.eecs.berkeley.edu/~pabbeel/cs287-fa19) by Pieter Abbeel `video`
+
   [overview](https://youtube.com/watch?v=sXQlQg7Hax8) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=U1dD8UALTu0) by Sergey Levine `video`  
+  [overview](https://youtube.com/watch?v=b97H5uz8xkI) by Sergey Levine `video`  
   [overview](http://www.fields.utoronto.ca/video-archive/2019/10/2509-21418) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=jAPJeJK18mw) by Sergey Levine `video`  
   [overview](https://livestream.com/newyorkacademyofsciences/ml2018-2/videos/171320389) by Sergey Levine `video`  
@@ -310,8 +314,6 @@
   [overview](https://slideslive.com/38915873/deep-learning-for-robotics) by Pieter Abbeel `video`  
   [overview](https://facebook.com/nipsfoundation/videos/1554594181298482) by Pieter Abbeel `video`  
   [overview](https://youtube.com/watch?v=TERCdog1ddE) by Pieter Abbeel `video`  
-
-  [course](https://people.eecs.berkeley.edu/~pabbeel/cs287-fa19) by Pieter Abbeel `video`
 
   ["Is (Deep) Reinforcement Learning Barking Up The Wrong Tree?"](https://youtube.com/watch?v=2GW7ozcUCFE) by Chris Atkeson `video`  
   ["What Should Be Learned?"](https://youtu.be/WRsxoVB8Yng?t=7h7m15s) by Chris Atkeson `video`  
@@ -586,14 +588,10 @@
 ----
 #### forms of supervision
 
-  - scalar rewards  
-  - demonstrated behavior (imitation, inferring reward)  
-  - self-supervision, prediction (model-based control)  
-  - auxiliary objectives  
-    * additional sensing modalities  
-    * learning related tasks  
-    * task-relevant properties of environment  
-    * exploration and intrinsic motivation  
+  - scalar rewards (online vs [**batch/offline learning**](#batch-reinforcement-learning), on-policy vs [**off-policy learning**](#off-policy-reinforcement-learning))
+  - demonstrated behavior ([**imitation learning**](#imitation-learning), [**inverse reinforcement learning**](#inverse-reinforcement-learning))
+  - self-supervision ([**unsupervised learning**](#unsupervised-reinforcement-learning))
+  - auxiliary objectives ([**exploration and intrinsic motivation**](#exploration-and-intrinsic-motivation), learning task-relevant problems)
 
   [overview](https://youtu.be/hKeSPnvNNJ8?t=4m2s) by Sergey Levine `video`
 
@@ -604,7 +602,7 @@
 ----
 #### batch reinforcement learning
 
-  Batch reinforcement learning offers a mechanism for learning from a fixed dataset without restrictions on the quality of the data.
+  Batch reinforcement learning offers a mechanism for learning offline from a fixed dataset without restrictions on the quality of the data.
 
   ["The Sub-basement of RL"](https://youtube.com/watch?v=373_zVWceqA) by Dale Schuurmans `video`
 
@@ -662,6 +660,17 @@
   ["Maximum Entropy Inverse Reinforcement Learning"](https://aaai.org/Papers/AAAI/2008/AAAI08-227.pdf) by Ziebart et al. `paper`  
 
   [**interesting papers**](#interesting-papers---inverse-reinforcement-learning)
+
+
+----
+#### unsupervised reinforcement learning
+
+  ["Unsupervised Reinforcement Learning"](https://youtube.com/watch?v=4vK6X9Jrncs) by Sergey Levine `video`  
+  ["Representation Learning for Reinforcement Learning"](https://youtube.com/watch?v=YqvhDPd1UEw) by Pieter Abbeel `video`  
+
+
+----
+  [**exploration and intrinsic motivation**](#exploration-and-intrinsic-motivation)
 
 
 ----
@@ -723,10 +732,6 @@
   [Abstraction in RL](http://rlabstraction2016.wixsite.com/icml) workshop `video`  
 
   [**interesting papers**](#interesting-papers---hierarchical-reinforcement-learning)
-
-
-----
-  [**exploration and intrinsic motivation**](#exploration-and-intrinsic-motivation)
 
 
 
@@ -946,11 +951,6 @@
 #### exploration and intrinsic motivation - competence-based models
 
 >	"A third major computational approach to intrinsic motivation is based on measures of competence that an agent has for achieving self-determined results or goals. Central here is the concept of “challenge”, with associated measures of difficulty as well as measures of actual performance. A “challenge” or “goal” here will be any sensorimotor configuration SMk, or any set {Pk} of properties of a sensorimotor configuration, that an agent sets by itself and that it tries to achieve through action. It is the properties of the achievement process, rather than the “meaning” of the particular goal being achieved, that will determine the level of interestingness of the associated activity. While prediction mechanisms or probability models, as used in previous sections, can be used in the goal-reaching architecture, they are not mandatory (for example, one can implement systems that try to achieve self-generated goals through Q-learning and never explicitly make predictions of future sensorimotor contexts). Furthermore, while in some cases, certain competence-based and knowledge-based models of intrinsic motivation might be somewhat similar, they may often produce very different behaviors. Indeed, the capacity to predict what happens in a situation can be sometimes only loosely coupled to the capacity to modify a situation in order to achieve a given self-determined goal. After a certain amount of time, bounded for example by a timeout Tg, a motivation module compares the goal that was initially set and the current situation to assess to what extent it was reached, i.e. measure the competence of the agent on goal gk at time tg: la(gk, tg) = ‖ gk^(tg) − gk(tg)) ‖. The “interestingness”, and thus reward value, of the goal gk is then derived from this competence measure."
-
-
-  - **incompetence motivation**
-
-	> "A first competence-based approach to intrinsic motivation can be a system which pushes the robot to set challenges/goals for which its performance is lowest. This is a motivation for maximally difficult challenges. This can be implemented as: r(SM(→ t), gk, tg) = C·la(gk, tg). Note that here and everywhere in the competence based approaches, rewards are generated only at the end of episodes."
 
 
   - **competence progress motivation (automated curriculum learning)**
@@ -2474,7 +2474,6 @@ interesting recent papers:
   - `video` <https://youtu.be/BCzFs9Xb9_o?t=21m2s> (Sutskever)
   - `video` <https://youtu.be/RvEwFvl-TrY?t=19m18s> (Sutskever)
   - `video` <https://youtu.be/BXe2A5i4ESw?t=10m42s> (Fournier)
-  - `video` <https://youtu.be/0Ey02HT_1Ho?t=10m57s> (Steenbrugge)
   - `video` <https://youtu.be/qvxgsxQFHgQ?t=5m20s> (Ivanov) `in russian`
   - `post` <https://danieltakeshi.github.io/2018/02/28/sample-efficient-rl>
   - `notes` <https://yobibyte.github.io/files/paper_notes/her.pdf>
@@ -2505,7 +2504,6 @@ interesting recent papers:
   - `video` <https://youtu.be/bsuvM1jO-4w?t=20m7s> (Mnih)
   - `video` <https://youtu.be/Yvll3P1UW5k?t=8m42s> (Abbeel)
   - `video` <https://youtube.com/watch?v=-YiMVR3HEuY> (Kilcher)
-  - `video` <https://youtu.be/0Ey02HT_1Ho?t=1m18s> (Steenbrugge)
   - `video` <https://yadi.sk/i/_2_0yqeW3HDbcn> (18:25) (Panin) `in russian`
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1611.05397>
   - `code` <https://github.com/miyosuda/unreal>
@@ -2594,7 +2592,7 @@ interesting recent papers:
 
 
 #### ["EX2: Exploration with Exemplar Models for Deep Reinforcement Learning"](https://arxiv.org/abs/1703.01260) Fu, Co-Reyes, Levine
->      "Deep reinforcement learning algorithms have been shown to learn complex tasks using highly general policy classes. However, sparse reward problems remain a significant challenge. Exploration methods based on novelty detection have been particularly successful in such settings but typically require generative or predictive models of the observations, which can be difficult to train when the observations are very high-dimensional and complex, as in the case of raw images. We propose a novelty detection algorithm for exploration that is based entirely on discriminatively trained exemplar models, where classifiers are trained to discriminate each visited state against all others. Intuitively, novel states are easier to distinguish against other states seen during training. We show that this kind of discriminative modeling corresponds to implicit density estimation, and that it can be combined with count-based exploration to produce competitive results on a range of popular benchmark tasks, including state-of-the-art results on challenging egocentric observations in the vizDoom benchmark."
+>	"Deep reinforcement learning algorithms have been shown to learn complex tasks using highly general policy classes. However, sparse reward problems remain a significant challenge. Exploration methods based on novelty detection have been particularly successful in such settings but typically require generative or predictive models of the observations, which can be difficult to train when the observations are very high-dimensional and complex, as in the case of raw images. We propose a novelty detection algorithm for exploration that is based entirely on discriminatively trained exemplar models, where classifiers are trained to discriminate each visited state against all others. Intuitively, novel states are easier to distinguish against other states seen during training. We show that this kind of discriminative modeling corresponds to implicit density estimation, and that it can be combined with count-based exploration to produce competitive results on a range of popular benchmark tasks, including state-of-the-art results on challenging egocentric observations in the vizDoom benchmark."
 
 
 #### ["Episodic Curiosity through Reachability"](https://arxiv.org/abs/1810.02274) Savinov et al.
@@ -2746,7 +2744,6 @@ interesting recent papers:
   - `video` <https://facebook.com/icml.imls/videos/2265408103721327?t=4865> (Abbeel)
   - `video` <https://youtube.com/watch?v=_Z9ZP1eiKsI> (Kilcher)
   - `video` <https://youtu.be/RwLTrQUyDvA?t=18m2s> (Diaz Rodriguez)
-  - `video` <https://youtu.be/0Ey02HT_1Ho?t=5m37s> (Steenbrugge)
   - `video` <https://youtu.be/qvxgsxQFHgQ?t=55m6s> (Ivanov) `in russian`
   - `post` <https://navneet-nmk.github.io/2018-08-10-first-post>
   - `code` <https://github.com/pathak22/noreward-rl>

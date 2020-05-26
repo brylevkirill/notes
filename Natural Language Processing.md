@@ -186,6 +186,10 @@
 ---
 ### embeddings
 
+  ["Learning From Text: Language Models and More"](https://youtube.com/watch?v=BnpB3GrpsfM) by Alec Radford `video`
+
+----
+
   [overview](http://blog.aylien.com/overview-word-embeddings-history-word2vec-cbow-glove/) of word embeddings by Sebastian Ruder  
   "On Word Embeddings" by Sebastian Ruder ([part 1](http://sebastianruder.com/word-embeddings-1/index.html), [part 2](http://sebastianruder.com/word-embeddings-softmax/index.html))  
   [overview](https://lilianweng.github.io/lil-log/2017/10/15/learning-word-embedding.html) by Lilian Weng  
@@ -197,10 +201,6 @@
   ["A Theoretical Approach to Semantic Representations"](https://youtube.com/watch?v=KR46z_V0BVw) by Sanjeev Arora `video`  
   "Word Embeddings: Explaining their properties" by Sanjeev Arora
 	([part 1](http://www.offconvex.org/2015/12/12/word-embeddings-1/), [part 2](http://www.offconvex.org/2016/02/14/word-embeddings-2/))  
-
-----
-
-  ["Learning From Text: Language Models and More"](https://youtube.com/watch?v=BnpB3GrpsfM) by Alec Radford `video`
 
 ----
 
@@ -569,6 +569,7 @@
 >	"In some sense step back: word2vec counts co-occurrences and does dimensionality reduction together, GloVe is two-pass algorithm."
 
   - <http://nlp.stanford.edu/projects/glove/>
+  - `video` <https://youtube.com/watch?v=BnpB3GrpsfM> (Radford)
   - `video` <http://youtube.com/watch?v=RyTpzZQrHCs> (Pennington)
   - `video` <https://youtu.be/Mk8xPTxZ1kQ?t=6m29s> (Ghosh)
   - `post` <https://lilianweng.github.io/lil-log/2017/10/15/learning-word-embedding.html>

@@ -445,20 +445,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/MnihR16>
   - `notes` <http://tuananhle.co.uk/notes/vimco.html>
 
-#### ["Importance Weighted Autoencoders"](http://arxiv.org/abs/1509.00519) Burda, Grosse, Salakhutdinov
-  `IWAE` `variational inference` `posterior approximation`
->	"As we show empirically, the VAE objective can lead to overly simplified representations which fail to use the network's entire modeling capacity. We present the importance weighted autoencoder, a generative model with the same architecture as the VAE, but which uses a strictly tighter log-likelihood lower bound derived from importance weighting. In the IWAE, the recognition network uses multiple samples to approximate the posterior, giving it increased flexibility to model complex posteriors which do not fit the VAE modeling assumptions."  
-  - `video` <https://youtu.be/0IoLKnAg6-s?t=14m41s> (Chen)
-  - `video` <https://facebook.com/nipsfoundation/videos/1555493854541848?t=1771> (Teh)
-  - `video` <https://youtube.com/watch?v=rNmgOCWEGDg> (Struminsky) `in russian`
-  - `post` <http://dustintran.com/blog/importance-weighted-autoencoders/>
-  - `post` <https://casmls.github.io/general/2017/04/24/iwae-aae.html>
-  - `notes` <http://artem.sobolev.name/posts/2016-07-14-neural-variational-importance-weighted-autoencoders.html>
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/BurdaGS15>
-  - `code` <https://github.com/yburda/iwae>
-  - `code` <https://github.com/arahuja/generative-tf>
-  - `code` <https://github.com/blei-lab/edward/blob/master/examples/iwvi.py>
-
 ----
 #### ["Implicit Reparameterization Gradients"](https://arxiv.org/abs/1805.08498) Figurnov, Mohamed, Mnih
   `variables with complex distributions`
@@ -1073,24 +1059,9 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `disentangled representations` `VAE` `ICML 2019`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#challenging-common-assumptions-in-the-unsupervised-learning-of-disentangled-representations-locatello-bauer-lucic-gelly-scholkopf-bachem>
 
-#### ["Understanding Disentangling in β-VAE"](https://arxiv.org/abs/1804.03599) Burgess et al.
+#### ["beta-VAE: Learning Basic Visual Concepts with a Constrained Variational Framework"](http://openreview.net/forum?id=Sy2fzU9gl) Higgins et al.
   `β-VAE` `disentangled representations` `VAE`
->	"We present new intuitions and theoretical assessments of the emergence of disentangled representation in variational autoencoders. Taking a rate-distortion theory perspective, we show the circumstances under which representations aligned with the underlying generative factors of variation of data emerge when optimising the modified ELBO bound in β-VAE, as training progresses. From these insights, we propose a modification to the training regime of β-VAE, that progressively increases the information capacity of the latent code during training. This modification facilitates the robust learning of disentangled representations in β-VAE, without the previous trade-off in reconstruction accuracy."  
-  - `post` <https://towardsdatascience.com/what-a-disentangled-net-we-weave-representation-learning-in-vaes-pt-1-9e5dbc205bd1>
-
-#### ["beta-VAE: Learning Basic Visual Concepts with a Constrained Variational Framework"](http://openreview.net/forum?id=Sy2fzU9gl) Higgins, Matthey, Pal, Burgess, Glorot, Botvinick, Mohamed, Lerchner
-  `β-VAE` `disentangled representations` `VAE`
->	"This paper proposes a modification of the variational ELBO in encourage 'disentangled' representations, and proposes a measure of disentanglement."  
->	"Beta-VAE is a VAE with beta coefficient in KL divergence term where beta=1 is exactly same formulation of vanilla VAE. By increasing beta, the weighted factor forces model to learn more disentangled representation than VAE. The authors also proposed disentanglement metric by training a simple classifier with low capacity and use it’s prediction accuracy. But the metric can be only calculated in simulator (ground truth generator) setting where we can control independent factors to generate different samples with controlled property."  
-  - <http://tinyurl.com/jgbyzke> (demo)
-  - `video` <https://youtu.be/XNGo9xqpgMo?t=10m8s> (Higgins)
-  - `video` <https://youtu.be/Wgvcxd98tvU?t=27m17s> (Achille)
-  - `post` <https://lilianweng.github.io/lil-log/2018/08/12/from-autoencoder-to-beta-vae.html#beta-vae>
-
-#### ["Early Visual Concept Learning with Unsupervised Deep Learning"](http://arxiv.org/abs/1606.05579) Higgins, Matthey, Glorot, Pal, Uria, Blundell, Mohamed, Lerchner
-  `β-VAE` `disentangled representations` `VAE`
-  - `video` <https://cds.cern.ch/record/2302480> (52:29) (Rezende)
-  - `code` <https://github.com/loliverhennigh/Early-Visual-Concept-Learning-Recreation-of-Some-Results>
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#beta-vae-learning-basic-visual-concepts-with-a-constrained-variational-framework-higgins-et-al>
 
 #### ["Learning Disentangled Representations with Semi-Supervised Deep Generative Models"](http://arxiv.org/abs/1706.00400) Siddharth, Paige, Meent, Desmaison, Goodman, Kohli, Wood, Torr
   `disentangled representations` `VAE`
@@ -1139,11 +1110,23 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"We show that (1) composition ofdata augmentations plays a critical role in definingeffective predictive tasks, (2) introducing a learn-able nonlinear transformation between the repre-sentation and the contrastive loss substantially im-proves the quality of the learned representations,and (3) contrastive learning benefits from largerbatch sizes and more training steps compared tosupervised learning."  
 >	"By combining these findings, we are able to considerably outperform previous methods for self-supervised and semi-supervised learning on ImageNet. A linear classifier trained on self-supervised representations learned by SimCLR achieves 76.5% top-1 accuracy, which is a 7% relative improvement over previous state-of-the-art, matching the performance of a supervised ResNet-50. When fine-tuned on only 1% of the labels, we achieve 85.8% top-5 accuracy, outperforming AlexNet with 100x fewer labels."  
 >	"Contrastive Predictive Coding (CPC) based pipelines use groups of image patches separated by a carefully chosen spatial offset for anchors and positives while the negatives come from other patches within the image and from other images. While patches are a powerful way to incorporate spatial and instance discrimination together, they introduce extra hyperparameters and architectural design choices which may be hard to adapt for a new problem. SimCLR and MoCo opt for a simpler design where there is no patch extraction. Discriminating transformed image instances as opposed to image-patches within the same image optimizes a simpler instance discrimination objective with the InfoNCE loss and requires minimal architectural adjustments. One could view contrastive instance discrimination setups like SimCLR and MoCo as maximizing mutual information between an image and its augmented version."  
+>	"can be considered as an end-to-end version of MoCo where one just uses all negatives from the batch and no momentum encoder"  
   - `post` <https://ai.googleblog.com/2020/04/advancing-self-supervised-and-semi.html>
   - `video` <https://youtu.be/dMUes74-nYY?t=2h10m45s> (Srinivas)
+  - `video` <https://youtu.be/1sJuWg5dULg?t=36m16s> (Srinivas)
   - `video` <https://youtube.com/watch?v=APki8LmdJwY> (Shorten)
   - `video` <https://youtube.com/watch?v=5lsmGWtxnKA>
   - `notes` <https://habr.com/en/company/ods/blog/493016/#9-a-simple-framework-for-contrastive-learning-of-visual-representations> `in russian`
+
+#### ["Momentum Contrast for Unsupervised Visual Representation Learning"](https://arxiv.org/abs/1911.05722) He et al.
+  `MoCo` `representation learning` `self-supervised learning`
+>	"From a perspective on contrastive learning as dictionary look-up, we build a dynamic dictionary with a queue and a moving-averaged encoder. This enables building a large and consistent dictionary on-the-fly that facilitates contrastive unsupervised learning."  
+  - `video` <https://youtu.be/1sJuWg5dULg?t=35m9s> (Srinivas)
+  - `paper` ["Improved Baselines with Momentum Contrastive Learning"](https://arxiv.org/abs/2003.04297) by Chen et al. *(MoCo v2)*
+
+#### ["Representation Learning with Contrastive Predictive Coding"](https://arxiv.org/abs/1807.03748) Oord, Li, Vinyals
+  `CPC` `InfoNCE` `representation learning` `self-supervised learning`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#representation-learning-with-contrastive-predictive-coding-oord-li-vinyals>
 
 #### ["Revisiting Self-Supervised Visual Representation Learning"](https://arxiv.org/abs/1901.09005) Kolesnikov, Zhai, Beyer
   `representation learning` `self-supervised learning`
@@ -1152,10 +1135,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"](https://arxiv.org/abs/1810.04805) Devlin, Chang, Lee, Toutanova
   `BERT` `representation learning` `self-supervised learning`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-devlin-chang-lee-toutanova>
-
-#### ["Representation Learning with Contrastive Predictive Coding"](https://arxiv.org/abs/1807.03748) Oord, Li, Vinyals
-  `CPC` `InfoNCE` `representation learning` `self-supervised learning`
-  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#representation-learning-with-contrastive-predictive-coding-oord-li-vinyals>
 
 
 
@@ -1952,6 +1931,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"The results here present an optimistic view that robust RL algorithms trained on sufficiently large and diverse offline datasets can lead to high quality policies."  
 >	"Fujimoto et al. [2019] present a pessimistic view that standard off-policy methods don't work in the offline setting even with large diverse datasets."  
   - <https://offline-rl.github.io>
+  - `post` <https://ai.googleblog.com/2020/04/an-optimistic-perspective-on-offline.html>
   - `video` <https://slideslive.com/38922701/contributed-talk-striving-for-simplicity-in-offpolicy-deep-reinforcement-learning> (Agarwal)
   - `video` <https://youtube.com/watch?v=mcfivkwM4p8> (Shorten)
   - `audio` <https://www.talkrl.com/episodes/scott-fujimoto> (31:43) (Fujimoto)
