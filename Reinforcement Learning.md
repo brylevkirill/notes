@@ -399,7 +399,7 @@
 
   [Reinforcement Learning Summer School 2019](http://youtube.com/playlist?list=PLKlhhkvvU8-aXmPQZNYG_e-2nTd0tJE8v) `video`  
   [Reinforcement Learning Summer School 2018](http://videolectures.net/DLRLsummerschool2018_toronto/) `video`  
-  [Reinforcement Learning Summer School 2017](http://videolectures.net/deeplearning2017_montreal/) `video` ([overview](https://yobibyte.github.io/rlss17.html))  
+  [Reinforcement Learning Summer School 2017](http://videolectures.net/deeplearning2017_montreal/) `video`  
 
 ----
 

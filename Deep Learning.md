@@ -71,15 +71,16 @@
 #### courses
 
   [course](https://course.fast.ai) by Jeremy Howard `video`  
-  [course](http://introtodeeplearning.com) from CMU ([videos](https://youtube.com/channel/UC8hYZGEkI2dDO8scT8C5UQA/playlists))  
-  [course](https://youtube.com/playlist?list=PLLssT5z_DsK_gyrQ_biidwvPYCRNGI3iv) by Geoffrey Hinton `video`  
-  [course](https://youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH) by Hugo Larochelle `video`  
-  [course](https://youtube.com/playlist?list=PL16j5WbGpaM0_Tj8CRmurZ8Kk1gEBc7fg) by Andrej Karpathy `video`  
-  [course](https://youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs) from DeepMind `video`  
+  [course](https://youtube.com/playlist?list=PLqYmG7hTraZCDxZ44o4p3N5Anz3lLRVZF) from DeepMind `video` `2020`  
+  [course](https://youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs) from DeepMind `video` `2018`  
+  [course](http://introtodeeplearning.com) from CMU ([videos](https://youtube.com/channel/UC8hYZGEkI2dDO8scT8C5UQA/playlists)) `2020`  
+  [course](https://youtube.com/playlist?list=PLLssT5z_DsK_gyrQ_biidwvPYCRNGI3iv) by Geoffrey Hinton `video` `2012`  
+  [course](https://youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH) by Hugo Larochelle `video` `2013`  
+  [course](https://youtube.com/playlist?list=PL16j5WbGpaM0_Tj8CRmurZ8Kk1gEBc7fg) by Andrej Karpathy `video` `2016`  
 
-  [course](https://sphere.mail.ru/curriculum/program/discipline/120/) by Daniil Polykovsky and Kuzma Hrabrov `in russian` ([videos](https://youtube.com/playlist?list=PLrCZzMib1e9oOGNLh6_d65HyfdqlJwTQP))  
-  [course](https://github.com/aosokin/DL_CSHSE_spring2018) by Anton Osokin `in russian` ([videos](https://youtube.com/playlist?list=PLzY5g-rVmFayEkCcgO3_-it6HZwPZL3ld))  
-  [course](https://dlcourse.ai) by Simon Kozlov et al. `video` `in russian`  
+  [course](https://dlcourse.ai) by Simon Kozlov et al. `video` `in russian` `2020`  
+  [course](https://sphere.mail.ru/curriculum/program/discipline/120/) by Daniil Polykovsky and Kuzma Hrabrov `in russian` ([videos](https://youtube.com/playlist?list=PLrCZzMib1e9oOGNLh6_d65HyfdqlJwTQP) `2017`)  
+  [course](https://github.com/aosokin/DL_CSHSE_spring2018) by Anton Osokin `in russian` ([videos](https://youtube.com/playlist?list=PLzY5g-rVmFayEkCcgO3_-it6HZwPZL3ld) `2018`)  
 
 
 #### books
@@ -372,7 +373,8 @@
   [overview](https://youtube.com/watch?v=dMUes74-nYY) by Aravind Srinivas `video`  
   [overview](https://youtu.be/DSYzHPW26Ig?t=1h15m40s) by Alex Graves `video`  
   [overview](https://iclr.cc/virtual_2020/speaker_7.html) by Yann LeCun `video`  
-  [overview](https://youtu.be/SaJL4SLfrcY?t=39m4s) by Yann LeCun `video`  
+  [overview](https://vimeo.com/390347111#t=36m15s) by Yann LeCun `video`  
+  [overview](https://youtu.be/UX8OubxsY8w?t=36m15s) by Yann LeCun `video`  
   [overview](https://youtu.be/7I0Qt7GALVk?t=41m13s) by Yann LeCun `video`  
 
 ----
@@ -518,11 +520,11 @@
 
 ----
 
-  GANs vs density models:
-  - mode collapse vs blurry/improbably samples - sample quality at the cost of missing modes vs compression at the cost of sample quality
-  - GANs work well with few couple hours of training
-  - density models are huge
-  - GANs allow interpolations and conditional generation
+  implicit (GANs) vs explicit density models:
+  - mode collapse in implicit models vs blurry/improbable samples in explicit models - sample quality at the cost of missing modes vs compression at the cost of sample quality
+  - implicit models work well with few couple hours of training
+  - explicit models are huge
+  - implicit models allow interpolations and conditional generation
 
   Compared to the PixelRNN, the runtime to generate a sample is smaller. GANs produce a sample in one shot, while PixelRNNs need to produce a sample one pixel at a time.  
   Compared to the VAE, there is no variational lower bound. If the discriminator net fits perfectly, then the generator net recovers the training distribution perfectly. In other words, GANs are asymptotically consistent, while VAE has some bias.  
@@ -532,9 +534,17 @@
 
   disadvantages:
   - plenty of varying engineering tricks and details
-  - hard to know which piece is significantly helping push the cutting edge results
+  - hard to know which piece is significantly helping to push the cutting edge results
   - sample diversity and mode dropping behavior in unconditional generation
   - evaluation metrics to account for generalization
+
+  future:
+  - Lipschitzness constraints
+  - conditioning tricks (noise at different levels, batch/instance normalization)
+  - architecture design (upsampling/downsampling, deep vs wide tradeoff)
+  - objective functions (Hinge loss, ...)
+  - stability and scalability (deeper models with fewer parameters + larger batch sizes)
+  - perturbations at different levels + coarse/fine interpolations
 
 ----
 
@@ -578,22 +588,24 @@
   examples: VAE, IWAE, VQ-VAE, VLAE, PixelVAE
 
   advantages:
-  - notion of "compressed" representation learning
-  - also gives you approximate log-likelihood
-  - interpolations, retrospective analysis of what the model learns
-  - disentangled representations
-  - generative model + density model + latent variable model + dimensionality reduction in single model
+  - generative model + density model + latent variables + dimensionality reduction
+  - compressed representation learning
+  - approximate log-likelihood estimate
+  - interpolations, analysis of learning
+  - disentangled representation learning
 
   disadvantages:
-  - encouraging disentaglement with the KL term still only shown on relatively toy domains
-  - there may be other ways to learn better representations or to get better samples or get better density estimates (not the best at any one thing but gives you all together)
+  - not the best way to learn representations, to get samples and densities
+  - blurry samples
+  - success on large scale is ongoing
+  - factorized gaussian posterior or decoder assumptions maybe too limiting
+  - disentaglement with KL term still only shown on relatively toy domains
 
-  comparison with [**generative adversarial networks**](#generative-models---generative-adversarial-networks):  
-  - easier to train and get working  
-  - relatively easy to implement and robust to hyperparameter choices  
-  - tractable likelihood  
-  - has an explicit inference network so it lets one do reconstruction  
-  - if p(x|z) makes conditional independence assumptions then it might make blurring effect  
+  future:
+  - modern decoder choices (cross-entropy based, weakly autoregressive)
+  - powerful posterior choices
+  - hierarchical latent variable models to learn coarse and fine features and interpolations
+  - discrete latent variable models to prevent posterior collapse and use PixelCNN decoders
 
 
 
@@ -665,8 +677,15 @@
   - no single layer of learned representation
   - currently, sampling time is slow for practical deployment
   - not directly usable for downstream tasks
-  - no natural latent representation
   - no interpolations
+
+  future:
+  - advances with model-parallelism to come
+  - trillion parameter language models trained on all the Internet's text
+  - trillion parameter models for both text and images/videos trained on Wikipedia and Instagram/Youtube
+  - fast sampling with better low-level core engineering - new kernels with sparsity and efficiency
+  - models with weaker autoregressive structure and more independence assumptions trained on large scale
+  - design choices such as self-attention introducing inductive biases with lots of compute per parameter
 
 ----
 
@@ -717,6 +736,15 @@
   - z is as big as x - models end up becoming big
   - as of now, no notion of lower dimensional embedding
   - careful initializaton
+
+  future:
+  - learning the mask for coupling
+  - close the gap with autoregressive models
+  - fewer expressive flows vs several shallow flows
+  - usage of multiscale loss - bits/dim vs sample quality tradeoffs
+  - representation learning with flows
+  - dimension reduction
+  - conditional flow models
 
 
 
@@ -1025,6 +1053,19 @@
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#deep-learning-theory)
 
 ----
+#### ["Reconciling Modern Machine Learning Practice and the Bias-variance Trade-off"](https://arxiv.org/abs/1812.11118) Belkin, Hsu, Ma, Mandal
+  `generalization`
+>	"Breakthroughs in machine learning are rapidly changing science and society, yet our fundamental understanding of this technology has lagged far behind. Indeed, one of the central tenets of the field, the bias-variance trade-off, appears to be at odds with the observed behavior of methods used in the modern machine learning practice. The bias-variance trade-off implies that a model should balance under-fitting and over-fitting: rich enough to express underlying structure in data, simple enough to avoid fitting spurious patterns. However, in the modern practice, very rich models such as neural networks are trained to exactly fit (i.e., interpolate) the data. Classically, such models would be considered over-fit, and yet they often obtain high accuracy on test data. This apparent contradiction has raised questions about the mathematical foundations of machine learning and their relevance to practitioners. In this paper, we reconcile the classical understanding and the modern practice within a unified performance curve. This "double descent" curve subsumes the textbook U-shaped bias-variance trade-off curve by showing how increasing model capacity beyond the point of interpolation results in improved performance. We provide evidence for the existence and ubiquity of double descent for a wide spectrum of models and datasets, and we posit a mechanism for its emergence. This connection between the performance and the structure of machine learning models delineates the limits of classical analyses, and has implications for both the theory and practice of machine learning."
+
+  - `video` <https://youtube.com/watch?v=OBCciGnOJVs> (Belkin)
+  - `video` <https://youtube.com/watch?v=LzL5naUS31s> (Belkin)
+  - `video` <https://youtube.com/watch?v=ZAW9EyNo2fw> (Kilcher)
+  - `video` <https://youtu.be/FBggC-XVF4M?t=1h10m52s> (Czarnecki)
+  - `post` <https://lilianweng.github.io/lil-log/2019/03/14/are-deep-neural-networks-dramatically-overfitted.html#the-lottery-ticket-hypothesis>
+  - `paper` ["Deep Double Descent: Where Bigger Models and More Data Hurt"](https://arxiv.org/abs/1912.02292) by Nakkiran et al. ([post](https://openai.com/blog/deep-double-descent), [overview](https://youtube.com/watch?v=R29awq6jvUw) `video`)
+  - `paper` ["The Generalization Error of Random Features Regression: Precise Asymptotics and Double Descent Curve"](https://arxiv.org/abs/1908.05355) by Mei et al.
+
+
 #### ["Understanding Deep Learning Requires Rethinking Generalization"](http://arxiv.org/abs/1611.03530) Zhang, Bengio, Hardt, Recht, Vinyals
   `generalization`
 >	"Despite their massive size, successful deep artificial neural networks can exhibit a remarkably small difference between training and test performance. Conventional wisdom attributes small generalization error either to properties of the model family, or to the regularization techniques used during training. Through extensive systematic experiments, we show how these traditional approaches fail to explain why large neural networks generalize well in practice. Specifically, our experiments establish that state-of-the-art convolutional networks for image classification trained with stochastic gradient methods easily fit a random labeling of the training data. This phenomenon is qualitatively unaffected by explicit regularization, and occurs even if we replace the true images by completely unstructured random noise. We corroborate these experimental findings with a theoretical construction showing that simple depth two neural networks already have perfect finite sample expressivity as soon as the number of parameters exceeds the number of data points as it usually does in practice. We interpret our experimental findings by comparison with traditional models."
@@ -1912,6 +1953,7 @@ Yoshua Bengio:
   - `video` <https://youtu.be/1sJuWg5dULg?t=33m12s> (Srinivas)
   - `video` <https://youtu.be/DSYzHPW26Ig?t=1h24m53s> (Graves)
   - `video` <https://youtu.be/QE36xa8NqPA?t=31m15s> (Sobolev)
+  - `video` <https://youtube.com/watch?v=y8pgdXdYPwU> (Atanov) `in russian`
   - `post` <https://ankeshanand.com/blog/2020/01/26/contrative-self-supervised-learning.html>
   - `post` <https://machinethoughts.wordpress.com/2018/08/15/predictive-coding-and-mutual-information>
   - `paper` ["Data-Efficient Image Recognition with Contrastive Predictive Coding"](https://arxiv.org/abs/1905.09272) by Henaff et al. ([overview](https://facebook.com/icml.imls/videos/378993762742156?t=3335) by Henaff `video`, [overview](https://youtu.be/dMUes74-nYY?t=1h42m8s) by Srinivas `video`)  *(CPC v2)*

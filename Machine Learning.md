@@ -69,7 +69,6 @@
 
 #### courses
 
-  [course](http://youtube.com/playlist?list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN) by Andrew Ng `video`  
   [course](http://youtube.com/playlist?list=PLE6Wd9FR--Ecf_5nCbnSQMHqORpiChfJf) by Nando de Freitas `video`  
   [course](http://youtube.com/playlist?list=PLE6Wd9FR--EdyJ5lbFl8UuGjecvVw66F6) by Nando de Freitas `video`  
   [course](http://youtube.com/playlist?list=PLTPQEx-31JXgtDaC6-3HxWcp7fq4N8YGr) by Pedro Domingos `video`  
@@ -81,15 +80,20 @@
 
   [course](http://youtube.com/playlist?list=PLJOzdkh8T5krxc4HsHbB8g8f0hu7973fK) by Konstantin Vorontsov `video` `in russian` `2019`  
   [course](http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC) by Konstantin Vorontsov `video` `in russian` `2014`  
+  [course](http://youtube.com/playlist?list=PLwdBkWbW0oHFDCTvO6R8l3V3Pe2ophxpD) by Sergey Nikolenko `video` `in russian` `2020`  
+  [course](http://youtube.com/playlist?list=PL-_cKNuVAYAWXoVzVEDCT-usTEBHUf4AF) by Sergey Nikolenko `video` `in russian` `2018`  
   [course](http://youtube.com/playlist?list=PLlb7e2G7aSpSSsCeUMLN-RxYOLAI9l2ld) by Igor Kuralenok `video` `in russian` `2017`  
   [course](http://youtube.com/playlist?list=PLlb7e2G7aSpSWVExpq74FnwFnWgLby56L) by Igor Kuralenok `video` `in russian` `2016`  
   [course](http://youtube.com/playlist?list=PLlb7e2G7aSpTd91sd82VxWNdtTZ8QnFne) by Igor Kuralenok `video` `in russian` `2015`  
   [course](http://youtube.com/playlist?list=PL-_cKNuVAYAWeMHuPI9A8Gjk3h62b7K7l) by Igor Kuralenok `video` `in russian` `2013/2014`  
-  course ([part 1](http://youtube.com/playlist?list=PL-_cKNuVAYAV8HV5N2sbZ72KFoOaMXhxc), [part 2](https://youtube.com/playlist?list=PL-_cKNuVAYAXCbK6tV2Rc7293CxIMOlxO)) by Igor Kuralenok `video` `in russian` `2012/2013`  
+  course ([1](http://youtube.com/playlist?list=PL-_cKNuVAYAV8HV5N2sbZ72KFoOaMXhxc), [2](https://youtube.com/playlist?list=PL-_cKNuVAYAXCbK6tV2Rc7293CxIMOlxO)) by Igor Kuralenok `video` `in russian` `2012/2013`  
   [course](http://youtube.com/playlist?list=PLEqoHzpnmTfDwuwrFHWVHdr1-qJsfqCUX) by Evgeny Sokolov `video` `in russian` `2019`  
-  [course](http://youtube.com/playlist?list=PL-_cKNuVAYAWXoVzVEDCT-usTEBHUf4AF) by Sergey Nikolenko `video` `in russian` `2018`  
-  [course](http://coursera.org/specializations/machine-learning-data-analysis) by Yandex `video` `in russian`  
-  [course](http://github.com/Yorko/mlcourse_open) by OpenDataScience `video` `in russian`  
+  [course](http://coursera.org/specializations/machine-learning-data-analysis) from Yandex `video` `in russian`  
+  [course](http://github.com/Yorko/mlcourse_open) from OpenDataScience `video` `in russian`  
+
+  [**deep learning courses**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#courses)  
+  [**reinforcement learning courses**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#overview)  
+  [**bayesian inference and learning courses**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md#overview)  
 
 
 #### books

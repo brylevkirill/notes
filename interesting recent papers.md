@@ -47,14 +47,7 @@ interesting older papers:
 ----
 #### ["Reconciling Modern Machine Learning Practice and the Bias-variance Trade-off"](https://arxiv.org/abs/1812.11118) Belkin, Hsu, Ma, Mandal
   `generalization`
->	"One of the central tenets of the field, the bias-variance trade-off, appears to be at odds with the observed behavior of methods used in the modern machine learning practice. The bias-variance trade-off implies that a model should balance under-fitting and over-fitting: rich enough to express underlying structure in data, simple enough to avoid fitting spurious patterns. However, in the modern practice, very rich models such as neural networks are trained to exactly fit (i.e., interpolate) the data. Classically, such models would be considered over-fit, and yet they often obtain high accuracy on test data. This apparent contradiction has raised questions about the mathematical foundations of machine learning and their relevance to practitioners."  
->	"We reconcile the classical understanding and the modern practice within a unified performance curve. This "double descent" curve subsumes the textbook U-shaped bias-variance trade-off curve by showing how increasing model capacity beyond the point of interpolation results in improved performance. We provide evidence for the existence and ubiquity of double descent for a wide spectrum of models and datasets, and we posit a mechanism for its emergence. This connection between the performance and the structure of machine learning models delineates the limits of classical analyses, and has implications for both the theory and practice of machine learning."  
-  - `video` <https://youtube.com/watch?v=OBCciGnOJVs> (Belkin)
-  - `video` <https://youtube.com/watch?v=LzL5naUS31s> (Belkin)
-  - `video` <https://youtube.com/watch?v=ZAW9EyNo2fw> (Kilcher)
-  - `post` <https://lilianweng.github.io/lil-log/2019/03/14/are-deep-neural-networks-dramatically-overfitted.html#the-lottery-ticket-hypothesis>
-  - `paper` ["Deep Double Descent: Where Bigger Models and More Data Hurt"](https://arxiv.org/abs/1912.02292) by Nakkiran et al. ([post](https://openai.com/blog/deep-double-descent), [overview](https://youtube.com/watch?v=R29awq6jvUw) `video`)
-  - `paper` ["The Generalization Error of Random Features Regression: Precise Asymptotics and Double Descent Curve"](https://arxiv.org/abs/1908.05355) by Mei et al.
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#reconciling-modern-machine-learning-practice-and-the-bias-variance-trade-off-belkin-hsu-ma-mandal>
 
 #### ["Approximating CNNs with Bag-of-local-Features Models Works Surprisingly Well on ImageNet"](https://arxiv.org/abs/1904.00760) Brendel, Bethge
   `BagNet` `generalization` `ICLR 2019`
@@ -1106,7 +1099,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 ----
 #### ["A Simple Framework for Contrastive Learning of Visual Representations"](https://arxiv.org/abs/2002.05709) Chen, Kornblith, Norouzi, Hinton
   `SimCLR` `representation learning` `self-supervised learning`
->	"We simplify recently proposed contrastive self-supervised learning algorithms without requiringspecialized architectures or a memory bank."  
+>	"We simplify recently proposed contrastive self-supervised learning algorithms without requiring specialized architectures or a memory bank."  
 >	"We show that (1) composition ofdata augmentations plays a critical role in definingeffective predictive tasks, (2) introducing a learn-able nonlinear transformation between the repre-sentation and the contrastive loss substantially im-proves the quality of the learned representations,and (3) contrastive learning benefits from largerbatch sizes and more training steps compared tosupervised learning."  
 >	"By combining these findings, we are able to considerably outperform previous methods for self-supervised and semi-supervised learning on ImageNet. A linear classifier trained on self-supervised representations learned by SimCLR achieves 76.5% top-1 accuracy, which is a 7% relative improvement over previous state-of-the-art, matching the performance of a supervised ResNet-50. When fine-tuned on only 1% of the labels, we achieve 85.8% top-5 accuracy, outperforming AlexNet with 100x fewer labels."  
 >	"Contrastive Predictive Coding (CPC) based pipelines use groups of image patches separated by a carefully chosen spatial offset for anchors and positives while the negatives come from other patches within the image and from other images. While patches are a powerful way to incorporate spatial and instance discrimination together, they introduce extra hyperparameters and architectural design choices which may be hard to adapt for a new problem. SimCLR and MoCo opt for a simpler design where there is no patch extraction. Discriminating transformed image instances as opposed to image-patches within the same image optimizes a simpler instance discrimination objective with the InfoNCE loss and requires minimal architectural adjustments. One could view contrastive instance discrimination setups like SimCLR and MoCo as maximizing mutual information between an image and its augmented version."  
@@ -1116,6 +1109,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/1sJuWg5dULg?t=36m16s> (Srinivas)
   - `video` <https://youtube.com/watch?v=APki8LmdJwY> (Shorten)
   - `video` <https://youtube.com/watch?v=5lsmGWtxnKA>
+  - `video` <https://youtu.be/y8pgdXdYPwU?t=30m56s> (Atanov) `in russian`
   - `notes` <https://habr.com/en/company/ods/blog/493016/#9-a-simple-framework-for-contrastive-learning-of-visual-representations> `in russian`
 
 #### ["Momentum Contrast for Unsupervised Visual Representation Learning"](https://arxiv.org/abs/1911.05722) He et al.
