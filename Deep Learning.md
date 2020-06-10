@@ -764,9 +764,9 @@
 ---
 ### architectures - stochastic computation graph
 
-  ["Monte Carlo Gradient Estimation in Machine Learning"](https://arxiv.org/abs/1906.10652) by Mohamed et al. `paper`
+  ["Back-Propagation and Other Differentiation Algorithms"](https://www.deeplearningbook.org/contents/mlp.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
 
-  [**interesting papers - gradient estimation**](#interesting-papers---gradient-estimation)
+  [overview](https://youtube.com/watch?v=FBggC-XVF4M) by Wojciech Czarnecki `video`
 
 ----
 
@@ -781,6 +781,10 @@
   ["Stochastic Computation Graphs"](https://youtu.be/RbLDBkcJcpA?t=54m20s) by Artem Sobolev `video` `in russian`  
   ["Reparametrization Trick: Revolution in Stochastic Computational Graphs"](https://youtu.be/0q5p7xP4cdA?t=5h3m29s)
 	by Dmitry Vetrov `video` `in russian` ([slides](https://sdsj.ru/slides/Vetrov.pdf) `in english`)  
+
+----
+
+  [**interesting papers - gradient estimation**](#interesting-papers---gradient-estimation)
 
 
 

@@ -1797,7 +1797,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 [**interesting older papers - policy-based methods**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#interesting-papers---policy-based-methods)  
 
 ----
-#### ["CURL: Contrastive Unsupervised Representations for Reinforcement Learning"](https://arxiv.org/abs/2004.04136)
+#### ["CURL: Contrastive Unsupervised Representations for Reinforcement Learning"](https://arxiv.org/abs/2004.04136) Srinivas, Laskin, Abbeel
   `CURL` `unsupervised representation learning`
 >	"CURL is the first model-free RL pipeline accelerated by contrastive learning with minimal architectural changes to demonstrate state-of-the-art performance on complex tasks so far dominated by approaches that have relied on learning world models and (or) decoder-based objectives."  
 >	"CURL extracts high-level features from raw pixels using contrastive learning and performs off-policy control on top of the extracted features. CURL outperforms prior pixel-based methods, both model-based and model-free, on complex tasks in the DeepMind Control Suite and Atari Games showing 2.8x and 1.6x performance gains respectively at the 100K interaction steps benchmark. On the DeepMind Control Suite, CURL is the first image-based algorithm to nearly match the sample-efficiency and performance of methods that use state-based features."  
@@ -1818,6 +1818,13 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `post` <https://twitter.com/Aravind7694/status/1248050400789295104>
   - `post` <https://masterscrat.github.io/rl-insights/curl>
   - `post` <https://www.alexirpan.com/2020/05/07/rl-potpourri.html>
+
+#### ["Reinforcement Learning with Augmented Data"](https://arxiv.org/abs/2004.14990) Laskin et al.
+  `RAD`
+>	"We show that data augmentations such as random crop, color jitter, patch cutout, and random convolutions can enable simple RL algorithms to match and even outperform complex state-of-the-art methods across common benchmarks in terms of data-efficiency, generalization, and wall-clock speed. We find that data diversity alone can make agents focus on meaningful information from high-dimensional observations without any changes to the reinforcement learning method."  
+
+#### ["Image Augmentation Is All You Need: Regularizing Deep Reinforcement Learning from Pixels"](https://arxiv.org/abs/2004.13649) Kostrikov, Yarats, Fergus
+>	"We propose a simple data augmentation technique that can be applied to standard model-free reinforcement learning algorithms, enabling robust learning directly from pixels without the need for auxiliary losses or pre-training. The approach leverages input perturbations commonly used in computer vision tasks to regularize the value function. Existing model-free approaches, such as Soft Actor-Critic (SAC), are not able to train deep networks effectively from image pixels. However, the addition of our augmentation method dramatically improves SAC's performance, enabling it to reach state-of-the-art performance on the DeepMind control suite, surpassing model-based (Dreamer, PlaNet, and SLAC) methods and recently proposed contrastive learning (CURL)."  
 
 ----
 #### ["Playing Atari with Six Neurons"](https://arxiv.org/abs/1806.01363) Cuccu, Togelius, Cudre-Mauroux
@@ -2087,11 +2094,9 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://vimeo.com/238243674> (Pritzel)
   - `video` <https://youtu.be/bsuvM1jO-4w?t=42m10s> (Mnih)
   - `video` <https://youtu.be/YCkby65GvfI?t=7m24s> (Kuznetsov) `in russian`
-  - `notes` <http://rylanschaeffer.github.io/content/research/neural_episodic_control/main.html>
+  - `post` <https://lilianweng.github.io/lil-log/2019/06/23/meta-reinforcement-learning.html#episodic-control>
+  - `post` <http://rylanschaeffer.github.io/content/research/neural_episodic_control/main.html>
   - `post` <http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-4-episodic-and-interactive-memory/>
-  - `code` <https://github.com/mjacar/pytorch-nec>
-  - `code` <https://github.com/EndingCredits/Neural-Episodic-Control>
-  - `code` <https://github.com/NervanaSystems/coach/blob/master/agents/nec_agent.py>
 
 #### ["Model-Free Episodic Control"](http://arxiv.org/abs/1606.04460) Blundell et al.
   `Q-learning` `episodic memory`
@@ -2099,9 +2104,8 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - <https://sites.google.com/site/episodiccontrol/> (demo)
   - `video` <https://youtu.be/bsuvM1jO-4w?t=42m10s> (Mnih)
   - `video` <https://youtube.com/watch?v=YCkby65GvfI> (Kuznetsov) `in russian`
+  - `post` <https://lilianweng.github.io/lil-log/2019/06/23/meta-reinforcement-learning.html#episodic-control>
   - `post` <http://blog.shakirm.com/2016/07/learning-in-brains-and-machines-4-episodic-and-interactive-memory/>
-  - `code` <https://github.com/ShibiHe/Model-Free-Episodic-Control>
-  - `code` <https://github.com/sudeepraja/Model-Free-Episodic-Control>
 
 ----
 #### ["Self-Imitation Learning"](https://arxiv.org/abs/1806.05635) Oh, Guo, Singh, Lee
@@ -2308,6 +2312,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"EPG also enables a practical contribution. Under certain conditions, we get an analytical expression for the covariance of the Gaussian that leads to a principled directed exploration strategy for continuous problems. We show that it is optimal in a certain sense to explore with a Gaussian policy such that the covariance is proportional to exp(H), where H is the scaled Hessian of the critic with respect to the actions. We present empirical results confirming that this new approach to exploration substantially outperforms DPG with Ornstein-Uhlenbeck exploration in four challenging MuJoCo domains."  
 >	"EPG learns a stochastic policy but for a Gaussian policy is equivalent to DPG with a specific form of exploration, implying that it'd be fine to use it deterministically once trained."  
   - `video` <https://youtube.com/watch?v=x2NFiP6cuXI> (Ciosek)
+  - `post` <https://lilianweng.github.io/lil-log/2019/06/23/meta-reinforcement-learning.html#meta-learning-the-loss-function>
 
 #### ["Q-Prop: Sample-Efficient Policy Gradient with An Off-Policy Critic"](http://arxiv.org/abs/1611.02247) Gu, Lillicrap, Ghahramani, Turner, Levine
   `Q-Prop` `policy gradient` `on-policy + off-policy`
@@ -2696,10 +2701,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 [papers](https://sites.google.com/view/erl-2018/accepted-papers) from ICML 2018 workshop
 
 ----
-#### ["Self-Imitation Learning"](https://arxiv.org/abs/1806.05635) Oh, Guo, Singh, Lee
-  `SIL` `self-imitation`
-  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#self-imitation-learning-oh-guo-singh-lee>
-
 #### ["First Return Then Explore"](https://arxiv.org/abs/2004.12919) Ecoffet, Huizinga, Lehman, Stanley, Clune
   `Go-Explore` `self-imitation`
 >	"We hypothesize that the main impediment to effective exploration originates from algorithms forgetting how to reach previously visited states ('detachment') and from failing to first return to a state before exploring from it ('derailment'). Go-Explore addresses these two challenges directly through the simple principles of explicitly remembering promising states and first returning to such states before exploring. Go-Explore solves all heretofore unsolved Atari games and surpasses the state of the art on all hard-exploration games, with orders of magnitude improvements on the grand challenges Montezuma's Revenge and Pitfall. We also demonstrate the practical potential of Go-Explore on a challenging and extremely sparse-reward robotics task. Additionally, we show that adding a goal-conditioned policy can further improve Go-Explore's exploration efficiency and enable it to handle stochasticity throughout training."  
@@ -2724,6 +2725,12 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `post` <https://www.alexirpan.com/2018/11/27/go-explore.html>
   - `paper` [**"First Return Then Explore"**](#first-return-then-explore-ecoffet-huizinga-lehman-stanley-clune) by Ecoffet et al. `summary`
 
+#### ["Never Give Up: Learning Directed Exploration Strategies"](https://arxiv.org/abs/2002.06038) Badia et al.
+
+#### ["Self-Imitation Learning"](https://arxiv.org/abs/1806.05635) Oh, Guo, Singh, Lee
+  `SIL` `self-imitation`
+  - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#self-imitation-learning-oh-guo-singh-lee>
+
 ----
 #### ["Contextual Decision Processes with Low Bellman Rank are PAC-Learnable"](https://arxiv.org/abs/1610.09512) Jiang, Krishnamurthy, Agarwal, Langford, Schapire
   `provably correct and sample efficient exploration`
@@ -2738,14 +2745,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=L5Q4Y3omnrY> (Agarwal)
   - `video` <https://vimeo.com/235929810> (Schapire)
 
-----
-#### ["On Bonus Based Exploration Methods In The Arcade Learning Environment"](https://openreview.net/forum?id=BJewlyStDr) Taiga, Fedus, Machado, Courville, Bellemare
->	"Research on exploration in reinforcement learning, as applied to Atari 2600 game-playing, has emphasized tackling difficult exploration problems such as Montezuma's Revenge (Bellemare et al., 2016). Recently, bonus-based exploration methods, which explore by augmenting the environment reward, have reached above-human average performance on such domains. In this paper we reassess popular bonus-based exploration methods within a common evaluation framework. We combine Rainbow (Hessel et al., 2018) with different exploration bonuses and evaluate its performance on Montezuma's Revenge, Bellemare et al.'s set of hard of exploration games with sparse rewards, and the whole Atari 2600 suite. We find that while exploration bonuses lead to higher score on Montezuma's Revenge they do not provide meaningful gains over the simpler epsilon-greedy scheme. In fact, we find that methods that perform best on that game often underperform epsilon-greedy on easy exploration Atari 2600 games. We find that our conclusions remain valid even when hyperparameters are tuned for these easy-exploration games. Finally, we find that none of the methods surveyed benefit from additional training samples (1 billion frames, versus Rainbow's 200 million) on Bellemare et al.'s hard exploration games. Our results suggest that recent gains in Montezuma's Revenge may be better attributed to architecture change, rather than better exploration schemes; and that the real pace of progress in exploration research for Atari 2600 games may have been obfuscated by good results on a single domain."
-
-  - `video` <https://facebook.com/icml.imls/videos/2265408103721327?t=2654> (Taiga)
-  - `paper` ["Benchmarking Bonus-Based Exploration Methods on the Arcade Learning Environment"](https://arxiv.org/abs/1908.02388) by Taiga et al.
-
-----
 #### ["A Contextual Bandit Bake-off"](https://arxiv.org/abs/1802.04064) Bietti, Agarwal, Langford
   `bandits`
 >	"We leverage the availability of large numbers of supervised learning datasets to compare and empirically optimize contextual bandit algorithms, focusing on practical methods that learn by relying on optimization oracles from supervised learning. We find that a recent method (Foster et al., 2018) using optimism under uncertainty works the best overall. A surprisingly close second is a simple greedy baseline that only explores implicitly through the diversity of contexts, followed by a variant of Online Cover (Agarwal et al., 2014) which tends to be more conservative but robust to problem specification by design."  
@@ -2755,6 +2754,13 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `bandits`
 >	"We show how an ensemble of Q*-functions can be leveraged for more effective exploration in deep reinforcement learning. We build on well established algorithms from the bandit setting, and adapt them to the Q-learning setting. We propose an exploration strategy based on upper-confidence bounds."  
   - `video` <https://facebook.com/icml.imls/videos/2265408103721327?t=4544> (Abbeel)
+
+----
+#### ["On Bonus Based Exploration Methods In The Arcade Learning Environment"](https://openreview.net/forum?id=BJewlyStDr) Taiga, Fedus, Machado, Courville, Bellemare
+>	"Research on exploration in reinforcement learning, as applied to Atari 2600 game-playing, has emphasized tackling difficult exploration problems such as Montezuma's Revenge (Bellemare et al., 2016). Recently, bonus-based exploration methods, which explore by augmenting the environment reward, have reached above-human average performance on such domains. In this paper we reassess popular bonus-based exploration methods within a common evaluation framework. We combine Rainbow (Hessel et al., 2018) with different exploration bonuses and evaluate its performance on Montezuma's Revenge, Bellemare et al.'s set of hard of exploration games with sparse rewards, and the whole Atari 2600 suite. We find that while exploration bonuses lead to higher score on Montezuma's Revenge they do not provide meaningful gains over the simpler epsilon-greedy scheme. In fact, we find that methods that perform best on that game often underperform epsilon-greedy on easy exploration Atari 2600 games. We find that our conclusions remain valid even when hyperparameters are tuned for these easy-exploration games. Finally, we find that none of the methods surveyed benefit from additional training samples (1 billion frames, versus Rainbow's 200 million) on Bellemare et al.'s hard exploration games. Our results suggest that recent gains in Montezuma's Revenge may be better attributed to architecture change, rather than better exploration schemes; and that the real pace of progress in exploration research for Atari 2600 games may have been obfuscated by good results on a single domain."
+
+  - `video` <https://facebook.com/icml.imls/videos/2265408103721327?t=2654> (Taiga)
+  - `paper` ["Benchmarking Bonus-Based Exploration Methods on the Arcade Learning Environment"](https://arxiv.org/abs/1908.02388) by Taiga et al.
 
 ----
 #### ["Unsupervised Control through Non-Parametric Discriminative Rewards"](https://arxiv.org/abs/1811.11359) Warde-Farley, Wiele, Kulkarni, Ionescu, Hansen, Mnih
@@ -2792,6 +2798,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"Many of the current exploration methods for deep RL use task-agnostic objectives, such as information gain or bonuses based on state visitation. However, many practical applications of RL involve learning more than a single task, and prior tasks can be used to inform how exploration should be performed in new tasks. In this work, we explore how prior tasks can inform an agent about how to explore effectively in new situations. We introduce a novel gradient-based fast adaptation algorithm -- model agnostic exploration with structured noise -- to learn exploration strategies from prior experience. The prior experience is used both to initialize a policy and to acquire a latent exploration space that can inject structured stochasticity into a policy, producing exploration strategies that are informed by prior knowledge and are more effective than random action-space noise."  
   - `video` <https://youtube.com/watch?v=Tge7LPT9vGA> (Gupta)
   - `video` <https://facebook.com/icml.imls/videos/2265408103721327?t=5383> (Abbeel)
+  - `post` <https://lilianweng.github.io/lil-log/2019/06/23/meta-reinforcement-learning.html#meta-learning-the-exploration-strategies>
 
 #### ["Some Considerations on Learning to Explore via Meta-Reinforcement Learning"](https://arxiv.org/abs/1803.01118) Stadie, Yang, Houthooft, Chen, Duan, Wu, Abbeel, Sutskever
   `E-MAML` `E-RL^2` `learning to explore`
@@ -3210,6 +3217,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/i05Fk4ebMY0?t=37m26s> (Finn)
   - `video` <https://youtube.com/watch?v=x6Kt7q6fylI> (Krayenhoff)
   - `audio` <https://www.talkrl.com/episodes/ben-eysenbach> (20:39)
+  - `post` <https://lilianweng.github.io/lil-log/2019/06/23/meta-reinforcement-learning.html#learning-with-random-rewards>
 
 #### ["Variational Intrinsic Control"](http://arxiv.org/abs/1611.07507) Gregor, Rezende, Wierstra
   - <https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#variational-intrinsic-control-gregor-rezende-wierstra>

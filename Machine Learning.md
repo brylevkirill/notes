@@ -376,7 +376,8 @@
   [Metalearning symposium](https://vimeo.com/250399623) panel `video`  
   [RNN symposium](https://youtube.com/watch?v=zSNkbhgMkzQ) panel `video`  
 
-  [meta reinforcement learning](https://lilianweng.github.io/lil-log/2019/06/23/meta-reinforcement-learning.html) overview by Lilian Weng
+  [meta-learning](https://lilianweng.github.io/lil-log/2018/11/30/meta-learning.html) overview by Lilian Weng  
+  [meta reinforcement learning](https://lilianweng.github.io/lil-log/2019/06/23/meta-reinforcement-learning.html) overview by Lilian Weng  
 
   [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#meta-learning)
 

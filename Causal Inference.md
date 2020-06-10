@@ -38,7 +38,8 @@
 
 ----
 
-  ["The Book of Why: The New Science of Cause and Effect"](https://amazon.com/Book-Why-Science-Cause-Effect/dp/046509760X) by Judea Pearl `book` ([overview](http://bayes.cs.ucla.edu/WHY/why-intro.pdf))  
+  ["The Book of Why: The New Science of Cause and Effect"](https://amazon.com/Book-Why-Science-Cause-Effect/dp/046509760X) by Judea Pearl and Dana Mackenzie `book` ([overview](http://bayes.cs.ucla.edu/WHY/why-intro.pdf))  
+  ["Causal Inference in Statistics: A Primer"](https://books.google.co.uk/books/about/Causal_Inference_in_Statistics.html?id=IqCECwAAQBAJ) by Judea Pearl, Madelyn Glymour, Nicholas Jewell `book`  
   ["Causality: Models, Reasoning, and Inference"](https://dropbox.com/s/m2m1935e6tohii9/Pearl%20-%20Causality%3A%20Models%2C%20Reasoning%2C%20and%20Inference.pdf) by Judea Pearl `book` ([epilogue](http://bayes.cs.ucla.edu/BOOK-2K/causality2-epilogue.pdf))  
   ["Elements of Causal Inference"](https://mitpress.mit.edu/books/elements-causal-inference) by Jonas Peters, Dominik Janzing, Bernhard Scholkopf `book`  
   ["Causal Inference Book"](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/) by Miguel Hernan and James Robins `book`  
