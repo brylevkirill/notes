@@ -100,6 +100,7 @@ also been supported by the observation that deep networks strongly rely on spect
 >	"mixup trains a neural network on convex combinations of pairs of examples and their labels. By doing so, mixup regularizes the neural network to favor simple linear behavior in-between training examples."  
 >	"Empirical Risk Minimization allows large neural networks to memorize (instead of generalize from) the training data even in the presence of strong regularization, or in classification problems where the labels are assigned at random. On the other hand, neural networks trained with ERM change their predictions drastically when evaluated on examples just outside the training distribution, also known as adversarial examples. This evidence suggests that ERM is unable to explain or provide generalization on testing distributions that differ only slightly from the training data."  
 >	"In Vicinal Risk Minimization, human knowledge is required to describe a vicinity or neighborhood around each example in the training data. Then, additional virtual examples can be drawn from the vicinity distribution of the training examples to enlarge the support of the training distribution. For instance, when performing image classification, it is common to define the vicinity of one image as the set of its horizontal reflections, slight rotations, and mild scalings. mixup extends the training distribution by incorporating the prior knowledge that linear interpolations of feature vectors should lead to linear interpolations of the associated targets."  
+  - `video` <https://youtube.com/watch?v=a-VQfQqIMrE> (Kilcher)
   - `post` <http://inference.vc/mixup-data-dependent-data-augmentation/>
   - `code` <https://github.com/leehomyc/mixup_pytorch>
   - `paper` ["MixMatch: A Holistic Approach to Semi-Supervised Learning"](https://arxiv.org/abs/1905.02249) by Berthelot et al.
@@ -1110,6 +1111,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=APki8LmdJwY> (Shorten)
   - `video` <https://youtube.com/watch?v=5lsmGWtxnKA>
   - `video` <https://youtu.be/y8pgdXdYPwU?t=30m56s> (Atanov) `in russian`
+  - `video` <https://youtu.be/OSzynwC1gow?t=4m59s> (Mosin) `in russian`
   - `notes` <https://habr.com/en/company/ods/blog/493016/#9-a-simple-framework-for-contrastive-learning-of-visual-representations> `in russian`
 
 #### ["Momentum Contrast for Unsupervised Visual Representation Learning"](https://arxiv.org/abs/1911.05722) He et al.
@@ -1815,6 +1817,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=1MprzvYNpY8> (Srinivas, Kilcher, Shorten, Scarfe)
   - `video` <https://youtube.com/watch?v=-Drowt9r4zY> (Shorten)
   - `video` <https://youtube.com/watch?v=hg2Q_O5b9w4> (Kilcher)
+  - `video` <https://youtu.be/OSzynwC1gow?t=19m14s> (Mosin) `in russian`
   - `post` <https://twitter.com/Aravind7694/status/1248050400789295104>
   - `post` <https://masterscrat.github.io/rl-insights/curl>
   - `post` <https://www.alexirpan.com/2020/05/07/rl-potpourri.html>
@@ -2284,6 +2287,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://facebook.com/icml.imls/videos/432150780632776?t=1458> (Espeholt)
   - `video` <https://facebook.com/iclr.cc/videos/2125495797479475?t=1265> (Kavukcuoglu)
   - `video` <https://youtube.com/watch?v=kOy49NqZeqI> (Kilcher)
+  - `video` <https://youtube.com/watch?v=XISsbfuUr30> (Pleshkova) `in russian`
   - `notes` <https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#impala>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1802.01561>
   - `code` <https://github.com/deepmind/scalable_agent>
@@ -2606,6 +2610,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - <https://sites.google.com/view/modelbasedrlatari>
   - `video` <https://facebook.com/icml.imls/videos/2366831430268790?t=2893> (Kaiser)
   - `video` <https://youtube.com/watch?v=EQd_k8c4ucI> (Philippov) `in russian`
+  - `video` <https://youtu.be/OSzynwC1gow?t=11m47s> (Mosin) `in russian`
   - `notes` <https://medium.com/arxiv-bytes/summary-simple-ae74ae934c4a>
 
 #### ["Learning Latent Dynamics for Planning from Pixels"](https://arxiv.org/abs/1811.04551) Hafner et al.
@@ -3962,6 +3967,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 [**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#interesting-papers)
 
 ----
+#### ["Language Models are Few-Shot Learners"](https://arxiv.org/abs/2005.14165) Brown et al.
+  `GPT-3` `language modeling`
+  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#language-models-are-few-shot-learners-brown-et-al>
+
 #### ["Language Models are Unsupervised Multitask Learners"](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf) Radford, Wu, Child, Luan, Amodei, Sutskever
   `GPT-2` `language modeling`
   - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#language-models-are-unsupervised-multitask-learners-radford-wu-child-luan-amodei-sutskever>

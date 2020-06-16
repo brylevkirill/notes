@@ -2431,6 +2431,7 @@ interesting recent papers:
   - `video` <https://facebook.com/icml.imls/videos/2265408103721327?t=5121> (Abbeel)
   - `video` <https://youtu.be/SfCa1HQMkuw?t=1h16m56s> (Schulman)
   - `video` <https://youtu.be/BskhUBPRrqE?t=6m37s> (Sutskever)
+  - `post` <https://lilianweng.github.io/lil-log/2019/06/23/meta-reinforcement-learning.html#on-the-origin-of-meta-rl>
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/RL2-Fast_Reinforcement_Learning_via_Slow_Reinforcement_Learning.md>
   - `paper` [**"Learning to Reinforcement Learn"**](#learning-to-reinforcement-learn-wang-et-al) by Wang et al. `summary`
 
@@ -2445,8 +2446,8 @@ interesting recent papers:
   - `video` <https://vimeo.com/250399556> (Wang)
   - `video` <https://youtu.be/Y85Zn50Eczs?t=20m18s> (Botvinick)
   - `video` <https://youtu.be/LnXgs73OUjE?t=29m20s> (Botvinick)
+  - `post` <https://lilianweng.github.io/lil-log/2019/06/23/meta-reinforcement-learning.html#on-the-origin-of-meta-rl>
   - `post` <https://hackernoon.com/learning-policies-for-learning-policies-meta-reinforcement-learning-rl²-in-tensorflow-b15b592a2ddf>
-  - `code` <https://github.com/awjuliani/Meta-RL>
   - `paper` ["Reinforcement Learning, Fast and Slow"](https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(19)30061-0) by Botvinick et al. ([talk](https://slideslive.com/38915872/metareinforcement-learning-an-appreciation) by Botvinick `video`) ([talk](https://youtube.com/watch?v=b0LddBiF5jM) by Botvinick `video`) ([overview](https://youtube.com/watch?v=_N_nFzMtWkA) by Kilcher `video`)
   - `paper` ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](#rl2-fast-reinforcement-learning-via-slow-reinforcement-learning-duan-schulman-chen-bartlett-sutskever-abbeel) by Duan et al. `summary`
 
@@ -3666,6 +3667,7 @@ interesting recent papers:
   - `video` <https://youtu.be/eeJ1-bUnwRI?t=1h51m28s> (Sigaud)
   - `video` <https://youtube.com/watch?v=IgNC1J25Ls8> (Grinchuk) `in russian`
   - `video` <https://youtube.com/watch?v=NiTJOw1aST4> (Grinchuk) `in russian`
+  - `video` <https://youtu.be/OSzynwC1gow?t=14m58s> (Mosin) `in russian`
   - `post` <https://spinningup.openai.com/en/latest/algorithms/sac.html>
   - `notes` <https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#sac>
   - `notes` <https://github.com/Scitator/papers/blob/master/papers/1801_soft_ac.md>

@@ -1940,7 +1940,6 @@ Yoshua Bengio:
   - `paper` ["Right for the Wrong Reasons: Diagnosing Syntactic Heuristics in Natural Language Inference"](https://arxiv.org/abs/1902.01007) by McCoy et al.
   - `paper` ["Probing Neural Network Comprehension of Natural Language Arguments"](https://arxiv.org/abs/1907.07355) by Niven et al. ([post](https://thegradient.pub/nlps-clever-hans-moment-has-arrived) by Benjamin Heinzerling)
   - `paper` ["BERT Rediscovers the Classical NLP Pipeline"](https://arxiv.org/abs/1905.05950) by Tenney et al.
-  - `paper` ["XLNet: Generalized Autoregressive Pretraining for Language Understanding"](https://arxiv.org/abs/1906.08237) by Yang et al.
   - `paper` ["A Primer in BERTology: What We Know About How BERT Works"](https://arxiv.org/abs/2002.12327) by Rogers et al.
 
 
@@ -3120,6 +3119,12 @@ Yoshua Bengio:
   - `video` <http://youtube.com/watch?v=VIRCybGgHts> (Hinton)
   - `video` <http://youtube.com/watch?v=cBLk5baHbZ8> (Hinton)
   - `video` <http://sms.cam.ac.uk/media/2017973> (38:00) (Hinton)
+
+
+#### ["Backpropagation and the Brain"](https://www.nature.com/articles/s41583-020-0277-3) Lillicrap, Santoro, Marris, Akerman, Hinton
+>	"During learning, the brain modifies synapses to improve behaviour. In the cortex, synapses are embedded within multilayered networks, making it difficult to determine the effect of an individual synaptic modification on the behaviour of the system. The backpropagation algorithm solves this problem in deep artificial neural networks, but historically it has been viewed as biologically problematic. Nonetheless, recent developments in neuroscience and the successes of artificial neural networks have reinvigorated interest in whether backpropagation offers insights for understanding learning in the cortex. The backpropagation algorithm learns quickly by computing synaptic updates using feedback connections to deliver error signals. Although feedback connections are ubiquitous in the cortex, it is difficult to see how they could deliver the error signals required by strict formulations of backpropagation. Here we build on past and recent developments to argue that feedback connections may instead induce neural activities whose differences can be used to locally approximate these signals and hence drive effective learning in deep networks in the brain."
+
+  - `video` <https://youtube.com/watch?v=a0f07M2uj_A> (Kilcher)
 
 
 #### ["Towards Biologically Plausible Deep Learning"](http://arxiv.org/abs/1502.04156) Bengio, Lee, Bornschein, Lin

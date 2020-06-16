@@ -713,6 +713,7 @@
   - `video` <https://youtube.com/watch?v=UYDwhuyWYSo> (Dorogush) `in russian`
   - `video` <https://youtube.com/watch?v=9ZrfErvm97M> (Dorogush) `in russian`
   - `video` <https://youtube.com/watch?v=Q_xa4RvnDcY> (Dorogush) `in russian`
+  - `video` <https://youtube.com/watch?v=ZaP5qFSIcIw> (Dmitriev, Lyzhin, Peshaya) `in russian`
   - `code` <https://github.com/catboost/catboost>
   - `paper` ["CatBoost: Unbiased Boosting with Categorical Features"](https://arxiv.org/abs/1706.09516) by Prokhorenkova, Gusev, Vorobev, Dorogush, Gulin
 
