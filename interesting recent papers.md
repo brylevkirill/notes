@@ -766,6 +766,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 [recent papers - meta reinforcement learning](https://lilianweng.github.io/lil-log/2019/06/23/meta-reinforcement-learning.html)  
 
 ----
+#### ["Language Models are Few-Shot Learners"](https://arxiv.org/abs/2005.14165) Brown et al.
+  `GPT-3`
+  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#language-models-are-few-shot-learners-brown-et-al>
+
 #### ["Rethinking Few-Shot Image Classification: a Good Embedding Is All You Need?"](https://arxiv.org/abs/2003.11539) Tian et al.
 >	"We show that a simple baseline: learning a supervised or self-supervised representation on the meta-training set, followed by training a linear classifier on top of this representation, outperforms state-of-the-art few-shot learning methods. An additional boost can be achieved through the use of self-distillation. This demonstrates that using a good learned embedding model can be more effective than sophisticated meta-learning algorithms. We believe that our findings motivate a rethinking of few-shot image classification benchmarks and the associated role of meta-learning algorithms."  
   - <https://people.csail.mit.edu/yuewang/projects/rfs>
@@ -3968,7 +3972,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 
 ----
 #### ["Language Models are Few-Shot Learners"](https://arxiv.org/abs/2005.14165) Brown et al.
-  `GPT-3` `language modeling`
+  `GPT-3` `language modeling` `meta-learning`
   - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#language-models-are-few-shot-learners-brown-et-al>
 
 #### ["Language Models are Unsupervised Multitask Learners"](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf) Radford, Wu, Child, Luan, Amodei, Sutskever

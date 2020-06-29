@@ -9,15 +9,14 @@
   * [**interesting papers**](#interesting-papers)
     - [**language modeling**](#interesting-papers---language-modeling)
     - [**language grounding**](#interesting-papers---language-grounding)
-    - [**sequence transduction**](#interesting-papers---sequence-transduction)
-    - [**machine translation**](#interesting-papers---machine-translation)
     - [**word embeddings**](#interesting-papers---word-embeddings)
     - [**word sense disambiguation**](#interesting-papers---word-sense-disambiguation)
     - [**text embeddings**](#interesting-papers---text-embeddings)
-    - [**syntactic parsing**](#interesting-papers---syntactic-parsing)
-    - [**text classification**](#interesting-papers---text-classification)
-    - [**topic modeling**](#interesting-papers---topic-modeling)
+    - [**sequence transduction**](#interesting-papers---sequence-transduction)
+    - [**machine translation**](#interesting-papers---machine-translation)
     - [**text summarization**](#interesting-papers---text-summarization)
+    - [**topic modeling**](#interesting-papers---topic-modeling)
+    - [**syntactic parsing**](#interesting-papers---syntactic-parsing)
     - [**coreference resolution**](#interesting-papers---coreference-resolution)
 
 
@@ -77,6 +76,10 @@
 
 ----
 
+  ["Deep Learning for Language Understanding"](https://youtube.com/watch?v=8zAP2qWAsKg) by Felix Hill `video`  
+
+----
+
   ["The Limits of Modern AI: A Story"](https://thebestschools.org/magazine/limits-of-modern-ai) by Erik Larson
 
   ["A Paradigm for Situated and Goal-Driven Language Learning"](#a-paradigm-for-situated-and-goal-driven-language-learning-gauthier-mordatch) by Jon Gauthier and Igor Mordatch `paper` `summary`  
@@ -87,12 +90,22 @@
 
 ----
 
-  [**interesting papers - language grounding**](#interesting-papers---language-grounding)
+  [**interesting papers - language grounding**](#interesting-papers---language-grounding)  
+  [**interesting papers - language modeling**](#interesting-papers---language-modeling)  
 
 
 
 ---
 ### semantics
+
+  ["Deep Learning for Language Understanding"](https://youtube.com/watch?v=8zAP2qWAsKg) by Felix Hill `video`
+
+  ["Natural Language Understanding: Foundations and State-of-the-Art"](https://youtube.com/watch?v=mhHfnhh-pB4) by Percy Liang `video`
+	([write-up](http://topbots.com/4-different-approaches-natural-language-processing-understanding))
+
+>	"Building systems that can understand human language - being able to answer questions, follow instructions, carry on dialogues - has been a long-standing challenge since the early days of AI. Due to recent advances in machine learning, there is again renewed interest in taking on this formidable task. A major question is how one represents and learns the semantics (meaning) of natural language, to which there are only partial answers. The goal of this tutorial is (i) to describe the linguistic and statistical challenges that any system must address; and (ii) to describe the types of cutting edge approaches and the remaining open problems. Topics include distributional semantics (e.g., word vectors), frame semantics (e.g., semantic role labeling), model-theoretic semantics (e.g., semantic parsing), the role of context, grounding, neural networks, latent variables, and inference. The hope is that this unified presentation will clarify the landscape, and show that this is an exciting time for the machine learning community to engage in the problems in natural language understanding."
+
+----
 
   "Semantics encompasses extracting structured data from text (knowledge base extraction, logical form extraction, information extraction), linguistic approaches to extract and compose representation of meaning, inference and reasoning over meaning representation based on logic or algebra. It also includes approaches that aims at grounding language by learning relations between language and visual observations, linking language to the physical world."
 
@@ -100,17 +113,6 @@
   - semantic representation (formulas, programs, vector space elements)
   - logical form (first-order or higher-order logic)
   - denotation (result of interpretation) (symbolic expression, changes in world state, changes in logical form)
-
-----
-
-  ["Natural Language Understanding: Foundations and State-of-the-Art"](https://youtube.com/watch?v=mhHfnhh-pB4) by Percy Liang `video`
-	([write-up](http://topbots.com/4-different-approaches-natural-language-processing-understanding/))
-
->	"Building systems that can understand human language - being able to answer questions, follow instructions, carry on dialogues - has been a long-standing challenge since the early days of AI. Due to recent advances in machine learning, there is again renewed interest in taking on this formidable task. A major question is how one represents and learns the semantics (meaning) of natural language, to which there are only partial answers. The goal of this tutorial is (i) to describe the linguistic and statistical challenges that any system must address; and (ii) to describe the types of cutting edge approaches and the remaining open problems. Topics include distributional semantics (e.g., word vectors), frame semantics (e.g., semantic role labeling), model-theoretic semantics (e.g., semantic parsing), the role of context, grounding, neural networks, latent variables, and inference. The hope is that this unified presentation will clarify the landscape, and show that this is an exciting time for the machine learning community to engage in the problems in natural language understanding."
-
-----
-
-  [**"Survey on Semantic Parsing"**](https://github.com/brylevkirill/notes/blob/master/Knowledge%20Representation%20and%20Reasoning.md#survey-on-semantic-parsing-kamath-das) by Kamath and Das `paper` `overview`
 
 ----
 
@@ -131,6 +133,10 @@
 
 ---
 ### compositionality
+
+  ["Deep Learning for Language Understanding"](https://youtube.com/watch?v=8zAP2qWAsKg) by Felix Hill `video`
+
+----
 
   "The principle of compositionality states that the meaning of a complex syntactic phrase is a function of the meanings of its parts and their mode of combination."
 
@@ -181,30 +187,36 @@
 
   [English grammar explained](http://chompchomp.com/terms/)
 
+----
+
+  [**interesting papers - syntactic parsing**](#interesting-papers---syntactic-parsing)
+
 
 
 ---
 ### embeddings
 
-  ["Learning From Text: Language Models and More"](https://youtube.com/watch?v=BnpB3GrpsfM) by Alec Radford `video`
+  ["Deep Learning for Language Understanding"](https://youtube.com/watch?v=8zAP2qWAsKg) by Felix Hill `video`  
+  ["Learning From Text: Language Models and More"](https://youtube.com/watch?v=BnpB3GrpsfM) by Alec Radford `video`  
+  ["Vector Representations of Words and Documents"](https://youtube.com/watch?v=KEXWC-ICH_Y) by Anna Potapenko `video` `in russian`  
 
 ----
 
-  [overview](http://blog.aylien.com/overview-word-embeddings-history-word2vec-cbow-glove/) of word embeddings by Sebastian Ruder  
-  "On Word Embeddings" by Sebastian Ruder ([part 1](http://sebastianruder.com/word-embeddings-1/index.html), [part 2](http://sebastianruder.com/word-embeddings-softmax/index.html))  
+  [overview](http://blog.aylien.com/overview-word-embeddings-history-word2vec-cbow-glove/) by Sebastian Ruder  
+  overview ([1](http://sebastianruder.com/word-embeddings-1/index.html), [2](http://sebastianruder.com/word-embeddings-softmax/index.html)) by Sebastian Ruder  
   [overview](https://lilianweng.github.io/lil-log/2017/10/15/learning-word-embedding.html) by Lilian Weng  
 
-  ["Word Vector Representations: word2vec"](https://youtube.com/watch?v=ERibwqs9p38) by Richard Socher `video`  
-  ["GloVe: Global Vectors for Word Representation"](https://youtube.com/watch?v=ASn7ExxLZws) by Richard Socher `video`  
-  ["Vector Representations of Words and Documents"](https://youtube.com/watch?v=KEXWC-ICH_Y) by Anna Potapenko `video` `in russian`  
-
-  ["A Theoretical Approach to Semantic Representations"](https://youtube.com/watch?v=KR46z_V0BVw) by Sanjeev Arora `video`  
   "Word Embeddings: Explaining their properties" by Sanjeev Arora
-	([part 1](http://www.offconvex.org/2015/12/12/word-embeddings-1/), [part 2](http://www.offconvex.org/2016/02/14/word-embeddings-2/))  
+	([part 1](http://www.offconvex.org/2015/12/12/word-embeddings-1/), [part 2](http://www.offconvex.org/2016/02/14/word-embeddings-2/)) ([talk](https://youtube.com/watch?v=KR46z_V0BVw))
 
 ----
 
   [**distributed representation**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#architectures---distributed-representation)
+
+----
+
+  [**interesting papers - word embeddings**](#interesting-papers---word-embeddings)  
+  [**interesting papers - text embeddings**](#interesting-papers---text-embeddings)  
 
 
 
@@ -272,15 +284,14 @@
 
   - [**language modeling**](#interesting-papers---language-modeling)
   - [**language grounding**](#interesting-papers---language-grounding)
-  - [**sequence transduction**](#interesting-papers---sequence-transduction)
-  - [**machine translation**](#interesting-papers---machine-translation)
   - [**word embeddings**](#interesting-papers---word-embeddings)
   - [**word sense disambiguation**](#interesting-papers---word-sense-disambiguation)
   - [**text embeddings**](#interesting-papers---text-embeddings)
-  - [**syntactic parsing**](#interesting-papers---syntactic-parsing)
-  - [**text classification**](#interesting-papers---text-classification)
-  - [**topic modeling**](#interesting-papers---topic-modeling)
+  - [**sequence transduction**](#interesting-papers---sequence-transduction)
+  - [**machine translation**](#interesting-papers---machine-translation)
   - [**text summarization**](#interesting-papers---text-summarization)
+  - [**topic modeling**](#interesting-papers---topic-modeling)
+  - [**syntactic parsing**](#interesting-papers---syntactic-parsing)
   - [**coreference resolution**](#interesting-papers---coreference-resolution)
 
 
@@ -335,8 +346,15 @@
 
 
 #### ["Language Models are Few-Shot Learners"](https://arxiv.org/abs/2005.14165) Brown et al.
-  `language modeling` `GPT-3`
+  `language modeling` `GPT-3` `meta-learning`
 >	"Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task. While typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or tens of thousands of examples. By contrast, humans can generally perform a new language task from only a few examples or from simple instructions - something which current NLP systems still largely struggle to do. Here we show that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even reaching competitiveness with prior state-of-the-art fine-tuning approaches. Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting. For all tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks and few-shot demonstrations specified purely via text interaction with the model. GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tasks that require on-the-fly reasoning or domain adaptation, such as unscrambling words, using a novel word in a sentence, or performing 3-digit arithmetic. At the same time, we also identify some datasets where GPT-3's few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora. Finally, we find that GPT-3 can generate samples of news articles which human evaluators have difficulty distinguishing from articles written by humans. We discuss broader societal impacts of this finding and of GPT-3 in general."
+
+----
+>	"We find that larger models can often (but not always) perform NLP tasks given only natural language prompt and a few examples in the context. No fine-tuning. This in-context learning happens entirely within the forward-pass on a single sequence. We study this in the zero-, one- and few-shot settings. One way to think about this: In-context learning is the inner loop of meta-learning, and unsupervised pre-training is the outer loop. To do well at pre-training, a language model needs to learn to quickly recognize patterns within the context of a given sequence."
+
+>	"GPT-3 seems to be quite strong at question answering and trivia. We find that it can be competitive with the fine-tuned SOTA despite being shown only a few examples of the task and performing no gradient updates after pre-training."
+
+>	"For SuperGLUE, we find that GPT-3 with 32 examples per task performs slightly better than a fine-tuned BERT-large (which is far smaller than GPT-3). So in this case, massively scaling up the model massively reduced the data requirements."
 
 >	"GPT-3 is hamstrung by its training & data, but just simply training a big model on a lot of data induces meta-learning without even the slightest bit of meta-learning architecture being built in; and in general, training on more and harder tasks creates ever more human-like performance, generalization, and robustness."
 
@@ -346,6 +364,7 @@
   - `video` <https://youtube.com/watch?v=Mq97CF02sRY> (Heo)
   - `post` <https://gwern.net/newsletter/2020/05>
   - `post` <https://slatestarcodex.com/2020/06/10/the-obligatory-gpt-3-post>
+  - `notes` <https://blog.inten.to/gpt-3-language-models-are-few-shot-learners-a13d1ae8b1f9>
   - `notes` <https://lambdalabs.com/blog/demystifying-gpt-3>
 
 
@@ -380,162 +399,10 @@
   - `paper` ["A Paradigm for Situated and Goal-Driven Language Learning"](#a-paradigm-for-situated-and-goal-driven-language-learning-gauthier-mordatch) by Gauthier and Mordatch `summary`
 
 
-#### ["Learning Language Games through Interaction"](https://arxiv.org/abs/1606.02447) Wang, Liang, Manning
->	"We introduce a new language learning setting relevant to building adaptive natural language interfaces. It is inspired by Wittgenstein’s language games: a human wishes to accomplish some task (e.g., achieving a certain configuration of blocks), but can only communicate with a computer, who performs the actual actions (e.g., removing all red blocks). The computer initially knows nothing about language and therefore must learn it from scratch through interaction, while the human adapts to the computer’s capabilities. We created a game called SHRDLURN in a blocks world and collected interactions from 100 people playing it. First, we analyze the humans’ strategies, showing that using compositionality and avoiding synonyms correlates positively with task performance. Second, we compare computer strategies, showing that modeling pragmatics on a semantic parsing model accelerates learning for more strategic players."
+#### ["Probing Emergent Semantics in Predictive Agents via Question Answering"](https://arxiv.org/abs/2006.01016) Das et al.
+>	"Recent work has shown how predictive modeling can endow agents with rich knowledge of their surroundings, improving their ability to act in complex environments. We propose question-answering as a general paradigm to decode and understand the representations that such agents develop, applying our method to two recent approaches to predictive modeling – action-conditional CPC (Guo et al., 2018) and Sim-Core (Gregor et al., 2019). After training agents with these predictive objectives in a visually-rich, 3D environment with an assortment of objects, colors, shapes, and spatial configurations, we probe their internal state representations with synthetic (English) questions, without backpropagating gradients from the question-answering decoder into the agent. The performance of different agents when probed this way reveals that they learn to encode factual, and seemingly compositional, information about objects, properties and spatial relations from their physical environment. Our approach is intuitive, i.e. humans can easily interpret responses of the model as opposed to inspecting continuous vectors, and model-agnostic, i.e. applicable to any modeling approach. By revealing the implicit knowledge of objects, quantities, properties and relations acquired by agents as they learn, question-conditional agent probing can stimulate the design and development of stronger predictive learning objectives."
 
->	"Today, natural language interfaces on computers or phones are often trained once and deployed, and users must just live with their limitations. Allowing users to demonstrate or teach the computer appears to be a central component to enable more natural and usable NLIs. Examining language acquisition research, there is considerable evidence suggesting that human children require interactions to learn language, as opposed to passively absorbing language, such as when watching TV. Research suggests that when learning a language, rather than consciously analyzing increasingly complex linguistic structures (e.g. sentence forms, word conjugations), humans advance their linguistic ability through meaningful interactions. In contrast, the standard machine learning dataset setting has no interaction. The feedback stays the same and does not depend on the state of the system or the actions taken. We think that interactivity is important, and that an interactive language learning setting will enable adaptive and customizable systems, especially for resource-poor languages and new domains where starting from close to scratch is unavoidable. We describe two attempts towards interactive language learning — an agent for manipulating blocks, and a calendar scheduler."
-
->	"Inspired by the human language acquisition process, we investigated a simple setting where language learning starts from scratch. We explored the idea of language games, where the computer and the human user need to collaboratively accomplish a goal even though they do not initially speak a common language. Specifically, in our pilot we created a game called SHRDLURN, in homage to the seminal work of Terry Winograd. As shown in Figure 1a, the objective is to transform a start state into a goal state, but the only action the human can take is entering an utterance. The computer parses the utterance and produces a ranked list of possible interpretations according to its current model. The human scrolls through the list and chooses the intended one, simultaneously advancing the state of the blocks and providing feedback to the computer. Both the human and the computer wish to reach the goal state (only known to the human) with as little scrolling as possible. For the computer to be successful, it has to learn the human’s language quickly over the course of the game, so that the human can accomplish the goal more efficiently. Conversely, the human can also speed up progress by accommodating to the computer, by at least partially understanding what it can and cannot currently do."
-
->	"We model the computer as a semantic parser, which maps natural language utterances (e.g., ‘remove red’) into logical forms (e.g., remove(with(red))). The semantic parser has no seed lexicon and no annotated logical forms, so it just generates many candidate logical forms. From the human’s feedback, it learn by adjusting the parameters corresponding to simple and generic lexical features. It is crucial that the computer learns quickly, or users are frustrated and the system is less usable. In addition to feature engineering and tuning online learning algorithms, we achieved higher learning speed by incorporating pragmatics. However, what is special here is the real-time nature of learning, in which the human also learns and adapts to the computer, thus making it easier to achieve good task performance. While the human can teach the computer any language - in our pilot, Mechanical Turk users tried English, Arabic, Polish, and a custom programming language - a good human player will choose to use utterances so that the computer is more likely to learn quickly."
-
->	"Looking forward, we believe that the ILLG setting is worth studying and has important implications for natural language interfaces. Today, these systems are trained once and deployed. If these systems could quickly adapt to user feedback in real-time as in this work, then we might be able to more readily create systems for resource-poor languages and new domains, that are customizable and improve through use."
-
-  - `post` <http://nlp.stanford.edu/blog/interactive-language-learning/>
-  - `video` <http://youtube.com/watch?v=PfW4_3tCiw0> (demo, calendar)
-  - <http://shrdlurn.sidaw.xyz> (demo, blocks world)
-  - `video` <https://youtube.com/watch?v=iuazFltYgCE> (Wang)
-  - `video` <https://youtu.be/mhHfnhh-pB4?t=1h5m45s> (Liang)
-  - `video` <https://youtu.be/6O5sttckalE?t=40m45s> (Liang)
-
-
-
----
-### interesting papers - sequence transduction
-
-
-#### ["Sequence to Sequence Learning with Neural Networks"](http://arxiv.org/abs/1409.3215) Sutskever, Vinyals, Le
-  `seq2seq`
-  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#sequence-to-sequence-learning-with-neural-networks-sutskever-vinyals-le>
-
-
-#### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin
-  `Transformer`
-  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#attention-is-all-you-need-vaswani-shazeer-parmar-uszkoreit-jones-gomez-kaiser-polosukhin>
-
-
-#### ["Sequence Level Training with Recurrent Neural Networks"](http://arxiv.org/abs/1511.06732) Ranzato, Chopra, Auli, Zaremba
-  `MIXER`
->	"Many natural language processing applications use language models to generate text. These models are typically trained to predict the next word in a sequence, given the previous words and some context such as an image. However, at test time the model is expected to generate the entire sequence from scratch. This discrepancy makes generation brittle, as errors may accumulate along the way. We address this issue by proposing a novel sequence level training algorithm that directly optimizes the metric used at test time, such as BLEU or ROUGE. On three different tasks, our approach outperforms several strong baselines for greedy generation. The method is also competitive when these baselines employ beam search, while being several times faster."
-
->	"A wide variety of applications rely on text generation, including machine translation, video/text summarization, question answering, among others. From a machine learning perspective, text generation is the problem of predicting a syntactically and semantically correct sequence of consecutive words given some context. For instance, given an image, generate an appropriate caption or given a sentence in English language, translate it into French. Popular choices for text generation models are language models based on n-grams, feed-forward neural networks and recurrent neural networks. These models when used as is to generate text suffer from two major drawbacks. First, they are trained to predict the next word given the previous ground truth words as input. However, at test time, the resulting models are used to generate an entire sequence by predicting one word at a time, and by feeding the generated word back as input at the next time step. This process is very brittle because the model was trained on a different distribution of inputs, namely, words drawn from the data distribution, as opposed to words drawn from the model distribution. As a result the errors made along the way will quickly accumulate. We refer to this discrepancy as exposure bias which occurs when a model is only exposed to the training data distribution, instead of its own predictions. Second, the loss function used to train these models is at the word level. A popular choice is the cross-entropy loss used to maximize the probability of the next correct word. However, the performance of these models is typically evaluated using discrete metrics. One such metric is called BLEU for instance, which measures the n-gram overlap between the model generation and the reference text. Training these models to directly optimize metrics like BLEU is hard because a) these are not differentiable, and b) combinatorial optimization is required to determine which sub-string maximizes them given some context."
-
->	"This paper proposes a novel training algorithm which results in improved text generation compared to standard models. The algorithm addresses the two issues discussed above as follows. First, while training the generative model we avoid the exposure bias by using model predictions at training time. Second, we directly optimize for our final evaluation metric. We build on the REINFORCE algorithm to achieve the above two objectives. While sampling from the model during training is quite a natural step for the REINFORCE algorithm, optimizing directly for any test metric can also be achieved by it. REINFORCE side steps the issues associated with the discrete nature of the optimization by not requiring rewards (or losses) to be differentiable. While REINFORCE appears to be well suited to tackle the text generation problem, it suffers from a significant issue. The problem setting of text generation has a very large action space which makes it extremely difficult to learn with an initial random policy. Specifically, the search space for text generation is of size O(WT), where W is the number of words in the vocabulary (typically around 10^4 or more) and T is the length of the sentence (typically around 10-30). Towards that end, we introduce Mixed Incremental Cross-Entropy Reinforce. MIXER is an easy-to-implement recipe to make REINFORCE work well for text generation applications. It is based on two key ideas: incremental learning and the use of a hybrid loss function which combines both REINFORCE and cross-entropy. Both ingredients are essential to training with large action spaces. In MIXER, the model starts from the optimal policy given by cross-entropy training (as opposed to a random one), from which it then slowly deviates, in order to make use of its own predictions, as is done at test time."
-
->	"Our results show that MIXER with a simple greedy search achieves much better accuracy compared to the baselines on Text Summarization, Machine Translation and Image Captioning tasks. In addition we show that MIXER with greedy search is even more accurate than the cross entropy model augmented with beam search at inference time as a post-processing step. This is particularly remarkable because MIXER with greedy search is at least 10 times faster than the cross entropy model with a beam of size 10. Lastly, we note that MIXER and beam search are complementary to each other and can be combined to further improve performance, although the extent of the improvement is task dependent."
-
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/RanzatoCAZ15>
-  - `code` <https://github.com/facebookresearch/MIXER>
-
-
-#### ["Reward Augmented Maximum Likelihood for Neural Structured Prediction"](https://arxiv.org/abs/1609.00150) Norouzi, Bengio, Chen, Jaitly, Schuster, Wu, Schuurmans
-  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#reward-augmented-maximum-likelihood-for-neural-structured-prediction-norouzi-bengio-chen-jaitly-schuster-wu-schuurmans>
-
-
-#### ["Self-critical Sequence Training for Image Captioning"](https://arxiv.org/abs/1612.00563) Rennie, Marcheret, Mroueh, Ross, Goel
->	"Recently it has been shown that policy-gradient methods for reinforcement learning can be utilized to train deep end-to-end systems directly on non-differentiable metrics for the task at hand. In this paper we consider the problem of optimizing image captioning systems using reinforcement learning, and show that by carefully optimizing our systems using the test metrics of the MSCOCO task, significant gains in performance can be realized. Our systems are built using a new optimization approach that we call self-critical sequence training. SCST is a form of the popular REINFORCE algorithm that, rather than estimating a “baseline” to normalize the rewards and reduce variance, utilizes the output of its own test-time inference algorithm to normalize the rewards it experiences. Using this approach, estimating the reward signal (as actor-critic methods must do) and estimating normalization (as REINFORCE algorithms typically do) is avoided, while at the same time harmonizing the model with respect to its test-time inference procedure. Empirically we find that directly optimizing the CIDEr metric with SCST and greedy decoding at test-time is highly effective. Our results on the MSCOCO evaluation sever establish a new state-of-the-art on the task, improving the best result in terms of CIDEr from 104.9 to 112.3."
-
->	"REINFORCE with reward normalization but without baseline estimation"  
-
-  - `video` <https://youtube.com/watch?v=UnT5wTe13yc> (Rennie)
-  - `video` <https://yadi.sk/i/-U5w4NpJ3H5TWD> (Ratnikov) `in russian`
-  - `post` <http://artem.sobolev.name/posts/2017-11-12-stochastic-computation-graphs-fixing-reinforce.html>
-
-
-#### ["Encode, Tag, Realize: High-Precision Text Editing"](https://arxiv.org/abs/1909.01187) Malmi et al.
->	"We propose LaserTagger - a sequence tagging approach that casts text generation as a text editing task. Target texts are reconstructed from the inputs using three main edit operations: keeping a token, deleting it, and adding a phrase before the token. To predict the edit operations, we propose a novel model, which combines a BERT encoder with an autoregressive Transformer decoder. This approach is evaluated on English text on four tasks: sentence fusion, sentence splitting, abstractive summarization, and grammar correction. LaserTagger achieves new state-of-the-art results on three of these tasks, performs comparably to a set of strong seq2seq baselines with a large number of training examples, and outperforms them when the number of examples is limited. Furthermore, we show that at inference time tagging can be more than two orders of magnitude faster than comparable seq2seq models, making it more attractive for running in a live environment."
-
-  - `post` <https://ai.googleblog.com/2020/01/encode-tag-and-realize-controllable-and.html>
-
-
-
----
-### interesting papers - machine translation
-
-
-#### ["Sequence to Sequence Learning with Neural Networks"](http://arxiv.org/abs/1409.3215) Sutskever, Vinyals, Le
-  `seq2seq`
-  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#sequence-to-sequence-learning-with-neural-networks-sutskever-vinyals-le>
-
-
-#### ["Neural Machine Translation by Jointly Learning to Align and Translate"](http://arxiv.org/abs/1409.0473) Bahdanau, Cho, Bengio
->	"Neural machine translation is a recently proposed approach to machine translation. Unlike the traditional statistical machine translation, the neural machine translation aims at building a single neural network that can be jointly tuned to maximize the translation performance. The models proposed recently for neural machine translation often belong to a family of encoder–decoders and encodes a source sentence into a fixed-length vector from which a decoder generates a translation. In this paper, we conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder–decoder architecture, and propose to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly. With this new approach, we achieve a translation performance comparable to the existing state-of-the-art phrase-based system on the task of English-to-French translation. Furthermore, qualitative analysis reveals that the (soft-)alignments found by the model agree well with our intuition."
-
-  - `video` <http://slideshot.epfl.ch/play/khnnunGF0elc> (Cho)
-  - `video` <https://youtu.be/Q57rzaHHO0k?t=41m57s> (Graves)
-  - `video` <https://youtube.com/watch?v=QuvRWevJMZ4> (Chevalier)
-  - `video` <https://youtube.com/watch?v=wyQBfi6uOHk> (Chen)
-  - `video` <https://youtu.be/_XRBlhzb31U?t=42m26s> (Figurnov) `in russian`
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/BahdanauCB14>
-  - `post` <http://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-with-gpus/>
-  - `post` <http://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-gpus-part-2/>
-  - `post` <http://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-gpus-part-3/>
-
-
-#### ["Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation"](https://arxiv.org/abs/1609.08144) Wu et al.
->	"Neural Machine Translation is an end-to-end learning approach for automated translation, with the potential to overcome many of the weaknesses of conventional phrase-based translation systems. Unfortunately, NMT systems are known to be computationally expensive both in training and in translation inference. Also, most NMT systems have difficulty with rare words. These issues have hindered NMT's use in practical deployments and services, where both accuracy and speed are essential. In this work, we present GNMT, Google's Neural Machine Translation system, which attempts to address many of these issues. Our model consists of a deep LSTM network with 8 encoder and 8 decoder layers using attention and residual connections. To improve parallelism and therefore decrease training time, our attention mechanism connects the bottom layer of the decoder to the top layer of the encoder. To accelerate the final translation speed, we employ low-precision arithmetic during inference computations. To improve handling of rare words, we divide words into a limited set of common sub-word units ("wordpieces") for both input and output. This method provides a good balance between the flexibility of "character"-delimited models and the efficiency of "word"-delimited models, naturally handles translation of rare words, and ultimately improves the overall accuracy of the system. Our beam search technique employs a length-normalization procedure and uses a coverage penalty, which encourages generation of an output sentence that is most likely to cover all the words in the source sentence. On the WMT'14 English-to-French and English-to-German benchmarks, GNMT achieves competitive results to state-of-the-art. Using a human side-by-side evaluation on a set of isolated simple sentences, it reduces translation errors by an average of 60% compared to Google's phrase-based production system."
-
-  - <http://translate.google.com> (demo)
-  - `notes` <http://smerity.com/articles/2016/google_nmt_arch.html>
-  - `code` <https://github.com/google/seq2seq>
-
-
-#### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin
-  `Transformer`
-  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#attention-is-all-you-need-vaswani-shazeer-parmar-uszkoreit-jones-gomez-kaiser-polosukhin>
-
-
-#### ["Word Translation Without Parallel Data"](https://arxiv.org/abs/1710.04087) Conneau, Lample, Ranzato, Denoyer, Jegou
->	"State-of-the-art methods for learning cross-lingual word embeddings have relied on bilingual dictionaries or parallel corpora. Recent works showed that the need for parallel data supervision can be alleviated with character-level information. While these methods showed encouraging results, they are not on par with their supervised counterparts and are limited to pairs of languages sharing a common alphabet. In this work, we show that we can build a bilingual dictionary between two languages without using any parallel corpora, by aligning monolingual word embedding spaces in an unsupervised way. Without using any character information, our model even outperforms existing supervised methods on cross-lingual tasks for some language pairs. Our experiments demonstrate that our method works very well also for distant language pairs, like English-Russian or EnglishChinese. We finally show that our method is a first step towards fully unsupervised machine translation and describe experiments on the English-Esperanto language pair, on which there only exists a limited amount of parallel data."
-
->	"Our method leverages adversarial training to learn a linear mapping from a source to a target space and operates in two steps. First, in a two-player game, a discriminator is trained to distinguish between the mapped source embeddings and the target embeddings, while the mapping (which can be seen as a generator) is jointly trained to fool the discriminator. Second, we extract a synthetic dictionary from the resulting shared embedding space and fine-tune the mapping with the closed-form Procrustes solution."
-
->	"(A) There are two distributions of word embeddings, English words in red denoted by X and Italian words in blue denoted by Y, which we want to align/translate. Each dot represents a word in that space. The size of the dot is proportional to the frequency of the words in the training corpus of that language.  
->	(B) Using adversarial learning, we learn a rotation matrix W which roughly aligns the two distributions. The green stars are randomly selected words that are fed to the discriminator to determine whether the two word embeddings come from the same distribution.  
->	(C) The mapping W is further refined via Procrustes. This method uses frequent words aligned by the previous step as anchor points, and minimizes an energy function that corresponds to a spring system between anchor points. The refined mapping is then used to map all words in the dictionary.  
->	(D) Finally, we translate by using the mapping W and a distance metric, dubbed CSLS, that expands the space where there is high density of points (like the area around the word “cat”), so that “hubs” (like the word “cat”) become less close to other word vectors than they would otherwise (compare to the same region in panel (A))."  
-
-  - `video` <https://youtu.be/Chj8yTm5eGk?t=2m58s> (Lyalin) `in russian`
-  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1710.04087>
-  - `code` <https://github.com/facebookresearch/MUSE>
-
-
-#### ["Unsupervised Neural Machine Translation"](https://arxiv.org/abs/1710.11041) Artetxe, Labaka, Agirre, Cho
->	"In spite of the recent success of neural machine translation in standard benchmarks, the lack of large parallel corpora poses a major practical problem for many language pairs. There have been several proposals to alleviate this issue with, for instance, triangulation and semi-supervised learning techniques, but they still require a strong cross-lingual signal. In this work, we completely remove the need of parallel data and propose a novel method to train an NMT system in a completely unsupervised manner, relying on nothing but monolingual corpora. Our model builds upon the recent work on unsupervised embedding mappings, and consists of a slightly modified attentional encoder-decoder model that can be trained on monolingual corpora alone using a combination of denoising and backtranslation. Despite the simplicity of the approach, our system obtains 15.56 and 10.21 BLEU points in WMT 2014 French → English and German → English translation. The model can also profit from small parallel corpora, and attains 21.81 and 15.24 points when combined with 100,000 parallel sentences, respectively. Our approach is a breakthrough in unsupervised NMT, and opens exciting opportunities for future research."
-
-  - `video` <https://youtu.be/_tQVfq2IOHA?t=25m30s> (Cho)
-  - `notes` <http://ankitg.me/blog/2017/11/05/unsupervised-machine-translation.html>
-  - `code` <https://github.com/artetxem/undreamt>
-
-
-#### ["Unsupervised Machine Translation Using Monolingual Corpora Only"](https://arxiv.org/abs/1711.00043) Lample, Denoyer, Ranzato
->	"Machine translation has recently achieved impressive performance thanks to recent advances in deep learning and the availability of large-scale parallel corpora. There have been numerous attempts to extend these successes to low-resource language pairs, yet requiring tens of thousands of parallel sentences. In this work, we take this research direction to the extreme and investigate whether it is possible to learn to translate even without any parallel data. We propose a model that takes sentences from monolingual corpora in two different languages and maps them into the same latent space. By learning to reconstruct in both languages from this shared feature space, the model effectively learns to translate without using any labeled data. We demonstrate our model on two widely used datasets and two language pairs, reporting BLEU scores up to 32.8, without using even a single parallel sentence at training time."
-
-  - `video` <https://youtube.com/watch?v=yRlINjCQnc8> (Lample)
-  - `video` <https://youtu.be/Chj8yTm5eGk?t=15m17s> (Lyalin) `in russian`
-  - `video` <https://youtu.be/nIw-hNAjTwE?t=10m57s> (Moiseev) `in russian`
-  - `notes` <http://ankitg.me/blog/2017/11/05/unsupervised-machine-translation.html>
-
-
-#### ["Adversarial Deep Averaging Networks for Cross-Lingual Sentiment Classification"](http://arxiv.org/abs/1606.01614) Chen, Athiwaratkun, Sun, Weinberger, Cardie
->	"In recent years deep neural networks have achieved great success in sentiment classification for English, thanks in part to the availability of copious annotated resources. Unfortunately, most other languages do not enjoy such an abundance of annotated data for sentiment analysis. To combat this problem, we propose the Adversarial Deep Averaging Network to transfer sentiment knowledge learned from labeled English data to low-resource languages where only unlabeled data exists. ADAN is a "Y-shaped" network with two discriminative branches: a sentiment classifier and an adversarial language predictor. Both branches take input from a feature extractor that aims to learn hidden representations that capture the underlying sentiment of the text and are invariant across languages. Experiments on Chinese sentiment classification demonstrate that ADAN significantly outperforms several baselines, including a strong pipeline approach that relies on Google Translate, the state-of-the-art commercial machine translation system."
-
->	"In this work, we propose an end-to-end neural network model that only requires labeled English data and unlabeled Chinese text as input, and explicitly transfers the knowledge learned on English sentiment analysis to Chinese. Our trained system directly operates on Chinese sentences to predict their sentiment (e.g. positive or negative). We hypothesize that an ideal model for cross-lingual sentiment analysis should learn features that both perform well on the English sentiment classification task, and are invariant with respect to the shift in language. Therefore, ADAN simultaneously optimizes two components: i) a sentiment classifier P for English; and ii) an adversarial language predictor Q that tries to predict whether a sentence x is from English or Chinese. The two classifiers take input from the jointly learned feature extractor F, which is trained to maximize accuracy on English sentiment analysis and simultaneously to minimize the language predictor’s chance of correctly predicting the language of the text. This is why the language predictor Q is called “adversarial”. The model is exposed to both English and Chinese sentences during training, but only the labeled English sentences pass through the sentiment classifier. The feature extractor and the sentiment classifier are then used for Chinese sentences at test time. In this manner, we can train the system with massive amounts of unlabeled text in Chinese. Upon convergence, the joint features (output of F) are thus encouraged to be both discriminative for sentiment analysis and invariant across languages."
-
-
-#### ["Style Transfer from Non-Parallel Text by Cross-Alignment"](https://arxiv.org/abs/1705.09655) Shen, Lei, Barzilay, Jaakkola
->	"This paper focuses on style transfer on the basis of non-parallel text. This is an instance of a broader family of problems including machine translation, decipherment, and sentiment modification. The key technical challenge is to separate the content from desired text characteristics such as sentiment. We leverage refined alignment of latent representations across mono-lingual text corpora with different characteristics. We deliberately modify encoded examples according to their characteristics, requiring the reproduced instances to match available examples with the altered characteristics as a population. We demonstrate the effectiveness of this cross-alignment method on three tasks: sentiment modification, decipherment of word substitution ciphers, and recovery of word order."
-
-  - `video` <https://facebook.com/nipsfoundation/videos/1554741734617060?t=4850> (Shen)
-
-
-
-#### ["Bandit Structured Prediction for Neural Sequence-to-Sequence Learning"](https://arxiv.org/abs/1704.06497) Kreutzer, Sokolov, Riezler
->	"Bandit structured prediction describes a stochastic optimization framework where learning is performed from partial feedback. This feedback is received in the form of a task loss evaluation to a predicted output structure, without having access to gold standard structures. We advance this framework by lifting linear bandit learning to neural sequence-to-sequence learning problems using attention-based recurrent neural networks. Furthermore, we show how to incorporate control variates into our learning algorithms for variance reduction and improved generalization. We present an evaluation on a neural machine translation task that shows improvements of up to 5.89 BLEU points for domain adaptation from simulated bandit feedback."
-
-
-#### ["Reinforcement Learning for Bandit Neural Machine Translation with Simulated Human Feedback"](https://arxiv.org/abs/1707.07402) Nguyen, Daume, Boyd-Graber
->	"Machine translation is a natural candidate problem for reinforcement learning from human feedback: users provide quick, dirty ratings on candidate translations to guide a system to improve. Yet, current neural machine translation training focuses on expensive human-generated reference translations. We describe a reinforcement learning algorithm that improves neural machine translation systems from simulated human feedback. Our algorithm combines the advantage actor-critic algorithm (Mnih et al., 2016) with the attention-based neural encoder-decoder architecture (Luong et al., 2015). This algorithm (a) is well-designed for problems with a large action space and delayed rewards, (b) effectively optimizes traditional corpus-level machine translation metrics, and (c) is robust to skewed, high-variance, granular feedback modeled after actual human behaviors."
+  - `video` <https://youtu.be/8zAP2qWAsKg?t=1h15m8s> (Hill)
 
 
 
@@ -796,6 +663,7 @@
 
   - `video` <http://youtube.com/watch?v=fC0j6mEFdZE> (Gimpel)
   - `video` <http://videolectures.net/iclr2016_wieting_universal_paraphrastic/> (Wieting)
+  - `video` <https://youtube.com/watch?v=KHkH3KT2YQg> (Wieting)
   - `code` <https://github.com/jwieting/iclr2016>
 
 
@@ -813,6 +681,177 @@
 >	"We explore various methods for computing sentence representations from pre-trained word embeddings without any training, i.e., using nothing but random parameterizations. Our aim is to put sentence embeddings on more solid footing by 1) looking at how much modern sentence embeddings gain over random methods---as it turns out, surprisingly little; and by 2) providing the field with more appropriate baselines going forward---which are, as it turns out, quite strong. We also make important observations about proper experimental protocol for sentence classification evaluation, together with recommendations for future research."
 
 >	"In this work we have sought to put sentence embeddings on more solid footing by examining how much trained sentence encoders improve over random sentence encoders. As it turns out, differences exist, but are smaller than we would have hoped: in comparison to sentence encoders such as SkipThought (which was trained for a very long time) and InferSent (which requires large amounts of annotated data), performance improvements are less than 2 points on average over the 10 SentEval tasks. Therefore one may wonder to what extent sentence encoders are worth the attention they’re receiving. Hope remains, however, if we as a community start focusing on more sophisticated tasks that require more sophisticated learned representations that cannot merely rely on having good pre-trained word embeddings."
+
+
+
+---
+### interesting papers - sequence transduction
+
+
+#### ["Sequence to Sequence Learning with Neural Networks"](http://arxiv.org/abs/1409.3215) Sutskever, Vinyals, Le
+  `seq2seq`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#sequence-to-sequence-learning-with-neural-networks-sutskever-vinyals-le>
+
+
+#### ["Self-critical Sequence Training for Image Captioning"](https://arxiv.org/abs/1612.00563) Rennie, Marcheret, Mroueh, Ross, Goel
+>	"Recently it has been shown that policy-gradient methods for reinforcement learning can be utilized to train deep end-to-end systems directly on non-differentiable metrics for the task at hand. In this paper we consider the problem of optimizing image captioning systems using reinforcement learning, and show that by carefully optimizing our systems using the test metrics of the MSCOCO task, significant gains in performance can be realized. Our systems are built using a new optimization approach that we call self-critical sequence training. SCST is a form of the popular REINFORCE algorithm that, rather than estimating a “baseline” to normalize the rewards and reduce variance, utilizes the output of its own test-time inference algorithm to normalize the rewards it experiences. Using this approach, estimating the reward signal (as actor-critic methods must do) and estimating normalization (as REINFORCE algorithms typically do) is avoided, while at the same time harmonizing the model with respect to its test-time inference procedure. Empirically we find that directly optimizing the CIDEr metric with SCST and greedy decoding at test-time is highly effective. Our results on the MSCOCO evaluation sever establish a new state-of-the-art on the task, improving the best result in terms of CIDEr from 104.9 to 112.3."
+
+>	"REINFORCE with reward normalization but without baseline estimation"  
+
+  - `video` <https://youtube.com/watch?v=UnT5wTe13yc> (Rennie)
+  - `video` <https://yadi.sk/i/-U5w4NpJ3H5TWD> (Ratnikov) `in russian`
+  - `post` <http://artem.sobolev.name/posts/2017-11-12-stochastic-computation-graphs-fixing-reinforce.html>
+
+
+#### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin
+  `Transformer`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#attention-is-all-you-need-vaswani-shazeer-parmar-uszkoreit-jones-gomez-kaiser-polosukhin>
+
+
+#### ["Encode, Tag, Realize: High-Precision Text Editing"](https://arxiv.org/abs/1909.01187) Malmi et al.
+  `LaserTagger`
+>	"We propose LaserTagger - a sequence tagging approach that casts text generation as a text editing task. Target texts are reconstructed from the inputs using three main edit operations: keeping a token, deleting it, and adding a phrase before the token. To predict the edit operations, we propose a novel model, which combines a BERT encoder with an autoregressive Transformer decoder. This approach is evaluated on English text on four tasks: sentence fusion, sentence splitting, abstractive summarization, and grammar correction. LaserTagger achieves new state-of-the-art results on three of these tasks, performs comparably to a set of strong seq2seq baselines with a large number of training examples, and outperforms them when the number of examples is limited. Furthermore, we show that at inference time tagging can be more than two orders of magnitude faster than comparable seq2seq models, making it more attractive for running in a live environment."
+
+  - `post` <https://ai.googleblog.com/2020/01/encode-tag-and-realize-controllable-and.html>
+
+
+
+---
+### interesting papers - machine translation
+
+
+#### ["Sequence to Sequence Learning with Neural Networks"](http://arxiv.org/abs/1409.3215) Sutskever, Vinyals, Le
+  `seq2seq`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#sequence-to-sequence-learning-with-neural-networks-sutskever-vinyals-le>
+
+
+#### ["Neural Machine Translation by Jointly Learning to Align and Translate"](http://arxiv.org/abs/1409.0473) Bahdanau, Cho, Bengio
+>	"Neural machine translation is a recently proposed approach to machine translation. Unlike the traditional statistical machine translation, the neural machine translation aims at building a single neural network that can be jointly tuned to maximize the translation performance. The models proposed recently for neural machine translation often belong to a family of encoder–decoders and encodes a source sentence into a fixed-length vector from which a decoder generates a translation. In this paper, we conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder–decoder architecture, and propose to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly. With this new approach, we achieve a translation performance comparable to the existing state-of-the-art phrase-based system on the task of English-to-French translation. Furthermore, qualitative analysis reveals that the (soft-)alignments found by the model agree well with our intuition."
+
+  - `video` <http://slideshot.epfl.ch/play/khnnunGF0elc> (Cho)
+  - `video` <https://youtu.be/Q57rzaHHO0k?t=41m57s> (Graves)
+  - `video` <https://youtube.com/watch?v=QuvRWevJMZ4> (Chevalier)
+  - `video` <https://youtube.com/watch?v=wyQBfi6uOHk> (Chen)
+  - `video` <https://youtu.be/_XRBlhzb31U?t=42m26s> (Figurnov) `in russian`
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/BahdanauCB14>
+  - `post` <http://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-with-gpus/>
+  - `post` <http://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-gpus-part-2/>
+  - `post` <http://devblogs.nvidia.com/parallelforall/introduction-neural-machine-translation-gpus-part-3/>
+
+
+#### ["Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation"](https://arxiv.org/abs/1609.08144) Wu et al.
+>	"Neural Machine Translation is an end-to-end learning approach for automated translation, with the potential to overcome many of the weaknesses of conventional phrase-based translation systems. Unfortunately, NMT systems are known to be computationally expensive both in training and in translation inference. Also, most NMT systems have difficulty with rare words. These issues have hindered NMT's use in practical deployments and services, where both accuracy and speed are essential. In this work, we present GNMT, Google's Neural Machine Translation system, which attempts to address many of these issues. Our model consists of a deep LSTM network with 8 encoder and 8 decoder layers using attention and residual connections. To improve parallelism and therefore decrease training time, our attention mechanism connects the bottom layer of the decoder to the top layer of the encoder. To accelerate the final translation speed, we employ low-precision arithmetic during inference computations. To improve handling of rare words, we divide words into a limited set of common sub-word units ("wordpieces") for both input and output. This method provides a good balance between the flexibility of "character"-delimited models and the efficiency of "word"-delimited models, naturally handles translation of rare words, and ultimately improves the overall accuracy of the system. Our beam search technique employs a length-normalization procedure and uses a coverage penalty, which encourages generation of an output sentence that is most likely to cover all the words in the source sentence. On the WMT'14 English-to-French and English-to-German benchmarks, GNMT achieves competitive results to state-of-the-art. Using a human side-by-side evaluation on a set of isolated simple sentences, it reduces translation errors by an average of 60% compared to Google's phrase-based production system."
+
+  - <http://translate.google.com> (demo)
+  - `notes` <http://smerity.com/articles/2016/google_nmt_arch.html>
+  - `code` <https://github.com/google/seq2seq>
+
+
+#### ["Word Translation Without Parallel Data"](https://arxiv.org/abs/1710.04087) Conneau, Lample, Ranzato, Denoyer, Jegou
+>	"State-of-the-art methods for learning cross-lingual word embeddings have relied on bilingual dictionaries or parallel corpora. Recent works showed that the need for parallel data supervision can be alleviated with character-level information. While these methods showed encouraging results, they are not on par with their supervised counterparts and are limited to pairs of languages sharing a common alphabet. In this work, we show that we can build a bilingual dictionary between two languages without using any parallel corpora, by aligning monolingual word embedding spaces in an unsupervised way. Without using any character information, our model even outperforms existing supervised methods on cross-lingual tasks for some language pairs. Our experiments demonstrate that our method works very well also for distant language pairs, like English-Russian or EnglishChinese. We finally show that our method is a first step towards fully unsupervised machine translation and describe experiments on the English-Esperanto language pair, on which there only exists a limited amount of parallel data."
+
+>	"Our method leverages adversarial training to learn a linear mapping from a source to a target space and operates in two steps. First, in a two-player game, a discriminator is trained to distinguish between the mapped source embeddings and the target embeddings, while the mapping (which can be seen as a generator) is jointly trained to fool the discriminator. Second, we extract a synthetic dictionary from the resulting shared embedding space and fine-tune the mapping with the closed-form Procrustes solution."
+
+>	"(A) There are two distributions of word embeddings, English words in red denoted by X and Italian words in blue denoted by Y, which we want to align/translate. Each dot represents a word in that space. The size of the dot is proportional to the frequency of the words in the training corpus of that language.  
+>	(B) Using adversarial learning, we learn a rotation matrix W which roughly aligns the two distributions. The green stars are randomly selected words that are fed to the discriminator to determine whether the two word embeddings come from the same distribution.  
+>	(C) The mapping W is further refined via Procrustes. This method uses frequent words aligned by the previous step as anchor points, and minimizes an energy function that corresponds to a spring system between anchor points. The refined mapping is then used to map all words in the dictionary.  
+>	(D) Finally, we translate by using the mapping W and a distance metric, dubbed CSLS, that expands the space where there is high density of points (like the area around the word “cat”), so that “hubs” (like the word “cat”) become less close to other word vectors than they would otherwise (compare to the same region in panel (A))."  
+
+  - `video` <https://youtu.be/Chj8yTm5eGk?t=2m58s> (Lyalin) `in russian`
+  - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/1710.04087>
+  - `code` <https://github.com/facebookresearch/MUSE>
+
+
+#### ["Unsupervised Neural Machine Translation"](https://arxiv.org/abs/1710.11041) Artetxe, Labaka, Agirre, Cho
+>	"In spite of the recent success of neural machine translation in standard benchmarks, the lack of large parallel corpora poses a major practical problem for many language pairs. There have been several proposals to alleviate this issue with, for instance, triangulation and semi-supervised learning techniques, but they still require a strong cross-lingual signal. In this work, we completely remove the need of parallel data and propose a novel method to train an NMT system in a completely unsupervised manner, relying on nothing but monolingual corpora. Our model builds upon the recent work on unsupervised embedding mappings, and consists of a slightly modified attentional encoder-decoder model that can be trained on monolingual corpora alone using a combination of denoising and backtranslation. Despite the simplicity of the approach, our system obtains 15.56 and 10.21 BLEU points in WMT 2014 French → English and German → English translation. The model can also profit from small parallel corpora, and attains 21.81 and 15.24 points when combined with 100,000 parallel sentences, respectively. Our approach is a breakthrough in unsupervised NMT, and opens exciting opportunities for future research."
+
+  - `video` <https://youtu.be/_tQVfq2IOHA?t=25m30s> (Cho)
+  - `notes` <http://ankitg.me/blog/2017/11/05/unsupervised-machine-translation.html>
+  - `code` <https://github.com/artetxem/undreamt>
+
+
+#### ["Unsupervised Machine Translation Using Monolingual Corpora Only"](https://arxiv.org/abs/1711.00043) Lample, Denoyer, Ranzato
+>	"Machine translation has recently achieved impressive performance thanks to recent advances in deep learning and the availability of large-scale parallel corpora. There have been numerous attempts to extend these successes to low-resource language pairs, yet requiring tens of thousands of parallel sentences. In this work, we take this research direction to the extreme and investigate whether it is possible to learn to translate even without any parallel data. We propose a model that takes sentences from monolingual corpora in two different languages and maps them into the same latent space. By learning to reconstruct in both languages from this shared feature space, the model effectively learns to translate without using any labeled data. We demonstrate our model on two widely used datasets and two language pairs, reporting BLEU scores up to 32.8, without using even a single parallel sentence at training time."
+
+  - `video` <https://youtube.com/watch?v=yRlINjCQnc8> (Lample)
+  - `video` <https://youtu.be/Chj8yTm5eGk?t=15m17s> (Lyalin) `in russian`
+  - `video` <https://youtu.be/nIw-hNAjTwE?t=10m57s> (Moiseev) `in russian`
+  - `notes` <http://ankitg.me/blog/2017/11/05/unsupervised-machine-translation.html>
+
+
+#### ["Adversarial Deep Averaging Networks for Cross-Lingual Sentiment Classification"](http://arxiv.org/abs/1606.01614) Chen, Athiwaratkun, Sun, Weinberger, Cardie
+>	"In recent years deep neural networks have achieved great success in sentiment classification for English, thanks in part to the availability of copious annotated resources. Unfortunately, most other languages do not enjoy such an abundance of annotated data for sentiment analysis. To combat this problem, we propose the Adversarial Deep Averaging Network to transfer sentiment knowledge learned from labeled English data to low-resource languages where only unlabeled data exists. ADAN is a "Y-shaped" network with two discriminative branches: a sentiment classifier and an adversarial language predictor. Both branches take input from a feature extractor that aims to learn hidden representations that capture the underlying sentiment of the text and are invariant across languages. Experiments on Chinese sentiment classification demonstrate that ADAN significantly outperforms several baselines, including a strong pipeline approach that relies on Google Translate, the state-of-the-art commercial machine translation system."
+
+>	"In this work, we propose an end-to-end neural network model that only requires labeled English data and unlabeled Chinese text as input, and explicitly transfers the knowledge learned on English sentiment analysis to Chinese. Our trained system directly operates on Chinese sentences to predict their sentiment (e.g. positive or negative). We hypothesize that an ideal model for cross-lingual sentiment analysis should learn features that both perform well on the English sentiment classification task, and are invariant with respect to the shift in language. Therefore, ADAN simultaneously optimizes two components: i) a sentiment classifier P for English; and ii) an adversarial language predictor Q that tries to predict whether a sentence x is from English or Chinese. The two classifiers take input from the jointly learned feature extractor F, which is trained to maximize accuracy on English sentiment analysis and simultaneously to minimize the language predictor’s chance of correctly predicting the language of the text. This is why the language predictor Q is called “adversarial”. The model is exposed to both English and Chinese sentences during training, but only the labeled English sentences pass through the sentiment classifier. The feature extractor and the sentiment classifier are then used for Chinese sentences at test time. In this manner, we can train the system with massive amounts of unlabeled text in Chinese. Upon convergence, the joint features (output of F) are thus encouraged to be both discriminative for sentiment analysis and invariant across languages."
+
+
+#### ["Style Transfer from Non-Parallel Text by Cross-Alignment"](https://arxiv.org/abs/1705.09655) Shen, Lei, Barzilay, Jaakkola
+>	"This paper focuses on style transfer on the basis of non-parallel text. This is an instance of a broader family of problems including machine translation, decipherment, and sentiment modification. The key technical challenge is to separate the content from desired text characteristics such as sentiment. We leverage refined alignment of latent representations across mono-lingual text corpora with different characteristics. We deliberately modify encoded examples according to their characteristics, requiring the reproduced instances to match available examples with the altered characteristics as a population. We demonstrate the effectiveness of this cross-alignment method on three tasks: sentiment modification, decipherment of word substitution ciphers, and recovery of word order."
+
+  - `video` <https://facebook.com/nipsfoundation/videos/1554741734617060?t=4850> (Shen)
+
+
+#### ["Bandit Structured Prediction for Neural Sequence-to-Sequence Learning"](https://arxiv.org/abs/1704.06497) Kreutzer, Sokolov, Riezler
+>	"Bandit structured prediction describes a stochastic optimization framework where learning is performed from partial feedback. This feedback is received in the form of a task loss evaluation to a predicted output structure, without having access to gold standard structures. We advance this framework by lifting linear bandit learning to neural sequence-to-sequence learning problems using attention-based recurrent neural networks. Furthermore, we show how to incorporate control variates into our learning algorithms for variance reduction and improved generalization. We present an evaluation on a neural machine translation task that shows improvements of up to 5.89 BLEU points for domain adaptation from simulated bandit feedback."
+
+
+#### ["Reinforcement Learning for Bandit Neural Machine Translation with Simulated Human Feedback"](https://arxiv.org/abs/1707.07402) Nguyen, Daume, Boyd-Graber
+>	"Machine translation is a natural candidate problem for reinforcement learning from human feedback: users provide quick, dirty ratings on candidate translations to guide a system to improve. Yet, current neural machine translation training focuses on expensive human-generated reference translations. We describe a reinforcement learning algorithm that improves neural machine translation systems from simulated human feedback. Our algorithm combines the advantage actor-critic algorithm (Mnih et al., 2016) with the attention-based neural encoder-decoder architecture (Luong et al., 2015). This algorithm (a) is well-designed for problems with a large action space and delayed rewards, (b) effectively optimizes traditional corpus-level machine translation metrics, and (c) is robust to skewed, high-variance, granular feedback modeled after actual human behaviors."
+
+
+
+---
+### interesting papers - text summarization
+
+
+#### ["Sentence Compression by Deletion with LSTMs"](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43852.pdf) Filippova, Alfonseca, Colmenares, Kaiser, Vinyals
+>	"We present an LSTM approach to deletion-based sentence compression where the task is to translate a sentence into a sequence of zeros and ones, corresponding to token deletion decisions. We demonstrate that even the most basic version of the system, which is given no syntactic information (no PoS or NE tags, or dependencies) or desired compression length, performs surprisingly well: around 30% of the compressions from a large test set could be regenerated. We compare the LSTM system with a competitive baseline which is trained on the same amount of data but is additionally provided with all kinds of linguistic features. In an experiment with human raters the LSTM-based model outperforms the baseline achieving 4.5 in readability and 3.8 in informativeness."
+
+>	"We presented, to our knowledge, a first attempt at building a competitive compression system which is given no linguistic features from the input. The two important components of the system are (1) word embeddings, which can be obtained by anyone either pre-trained, or by running word2vec on a large corpus, and (2) an LSTM model which draws on the very recent advances in research on RNNs. The training data of about two million sentence-compression pairs was collected automatically from the Internet. Our results clearly indicate that a compression model which is not given syntactic information explicitly in the form of features may still achieve competitive performance. The high readability and informativeness scores assigned by human raters support this claim. In the future, we are planning to experiment with more “interesting” paraphrasing models which translate the input not into a zero-one sequence but into words."
+
+  - `video` <https://vimeo.com/159981337> (Alfonseca)
+
+
+#### ["A Neural Attention Model for Abstractive Sentence Summarization"](http://arxiv.org/abs/1509.00685) Rush, Chopra, Weston
+>	"Summarization based on text extraction is inherently limited, but generation-style abstractive methods have proven challenging to build. In this work, we propose a fully data-driven approach to abstractive sentence summarization. Our method utilizes a local attention-based model that generates each word of the summary conditioned on the input sentence. While the model is structurally simple, it can easily be trained end-to-end and scales to a large amount of training data. The model shows significant performance gains on the DUC-2004 shared task compared with several strong baselines."
+
+>	"We have presented a neural attention-based model for abstractive summarization, based on recent developments in neural machine translation. We combine this probabilistic model with a generation algorithm which produces accurate abstractive summaries. As a next step we would like to further improve the grammaticality of the summaries in a data-driven way, as well as scale this system to generate paragraph-level summaries. Both pose additional challenges in terms of efficient alignment and consistency in generation."
+
+  - `video` <https://vimeo.com/159993537> (Rush)
+
+
+#### ["PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization"](https://arxiv.org/abs/1912.08777) Zhang et al.
+  `PEGASUS`
+>	"Recent work pre-training Transformers with self-supervised objectives on large text corpora has shown great success when fine-tuned on downstream NLP tasks including text summarization. However, pre-training objectives tailored for abstractive text summarization have not been explored. Furthermore there is a lack of systematic evaluation across diverse domains. In this work, we propose pre-training large Transformer-based encoder-decoder models on massive text corpora with a new self-supervised objective. In PEGASUS, important sentences are removed/masked from an input document and are generated together as one output sequence from the remaining sentences, similar to an extractive summary. We evaluated our best PEGASUS model on 12 downstream summarization tasks spanning news, science, stories, instructions, emails, patents, and legislative bills. Experiments demonstrate it achieves state-of-the-art performance on all 12 downstream datasets measured by ROUGE scores. Our model also shows surprising performance on low-resource summarization, surpassing previous state-of-the-art results on 6 datasets with only 1000 examples. Finally we validated our results using human evaluation and show that our model summaries achieve human performance on multiple datasets."
+
+  - `post` <https://ai.googleblog.com/2020/06/pegasus-state-of-art-model-for.html>
+  - `video` <https://youtube.com/watch?v=GQs2AiohjpM> (Shorten)
+  - `video` <https://youtube.com/watch?v=8LrwNVzUOaE> (Pai, Sequiera)
+  - `video` <https://youtube.com/watch?v=9h1uFrZbZSk> (Nikolov)
+
+
+
+---
+### interesting papers - topic modeling
+
+
+#### ["Discovering Discrete Latent Topics with Neural Variational Inference"](https://arxiv.org/abs/1706.00359) Miao, Grefenstette, Blunsom
+>	"Topic models have been widely explored as probabilistic generative models of documents. Traditional inference methods have sought closed-form derivations for updating the models, however as the expressiveness of these models grows, so does the difficulty of performing fast and accurate inference over their parameters. This paper presents alternative neural approaches to topic modelling by providing parameterisable distributions over topics which permit training by backpropagation in the framework of neural variational inference. In addition, with the help of a stick-breaking construction, we propose a recurrent network that is able to discover a notionally unbounded number of topics, analogous to Bayesian non-parametric topic models. Experimental results on the MXM Song Lyrics, 20NewsGroups and Reuters News datasets demonstrate the effectiveness and efficiency of these neural topic models."
+
+  - `video` <https://vimeo.com/238222598> (Miao)
+
+
+#### ["Additive Regularization of Topic Models"](https://link.springer.com/article/10.1007/s10994-014-5476-6) Vorontsov, Potapenko
+  `ARTM`
+>	"Probabilistic topic modeling of text collections has been recently developed mainly within the framework of graphical models and Bayesian inference. In this paper we introduce an alternative semi-probabilistic approach, which we call additive regularization of topic models (ARTM). Instead of building a purely probabilistic generative model of text we regularize an ill-posed problem of stochastic matrix factorization by maximizing a weighted sum of the log-likelihood and additional criteria. This approach enables us to combine probabilistic assumptions with linguistic and problem-specific requirements in a single multi-objective topic model. In the theoretical part of the work we derive the regularized EM-algorithm and provide a pool of regularizers, which can be applied together in any combination. We show that many models previously developed within Bayesian framework can be inferred easier within ARTM and in some cases generalized. In the experimental part we show that a combination of sparsing, smoothing, and decorrelation improves several quality measures at once with almost no loss of the likelihood."
+
+  - `video` <https://youtube.com/watch?v=00qF2yMuRkQ> (Vorontsov)
+  - `video` <https://youtu.be/3Lxb-DqPtv4?t=1h45m9s> (Vorontsov) `in russian`
+  - `video` <https://youtube.com/watch?v=eJzNAhsbQNI> (Vorontsov) `in russian`
+  - `video` <https://youtube.com/watch?v=Y7lGYjJ7TR8> (Ianina) `in russian`
+  - `paper` ["Fast and Modular Regularized Topic Modelling"](https://fruct.org/publications/fruct21/files/Koc.pdf) by Kochedykov et al.
+  - `paper` <http://www.machinelearning.ru/wiki/images/d/d5/Voron17survey-artm.pdf> by Vorontsov `in russian`
+  - `code` <https://github.com/bigartm/bigartm>
 
 
 
@@ -863,102 +902,6 @@
 
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals%2Fcorr%2F1603.06042>
   - `code` <https://github.com/tensorflow/models/tree/master/research/syntaxnet>
-
-
-
----
-### interesting papers - text classification
-
-
-#### ["#TAGSPACE: Semantic Embeddings from Hashtags"](https://research.fb.com/publications/tagspace-semantic-embeddings-from-hashtags/) Weston, Chopra, Adams
->	"We describe a convolutional neural network that learns feature representations for short textual posts using hashtags as a supervised signal. The proposed approach is trained on up to 5.5 billion words predicting 100,000 possible hashtags. As well as strong performance on the hashtag prediction task itself, we show that its learned representation of text (ignoring the hashtag labels) is useful for other tasks as well. To that end, we present results on a document recommendation task, where it also outperforms a number of baselines."
-
-  - `video` <http://youtube.com/watch?v=K5C9TPaxuWM> (Weston)
-
-
-#### ["Character-level Convolutional Networks for Text Classification"](http://arxiv.org/abs/1509.01626) Zhang, Zhao, LeCun
->	"This article offers an empirical exploration on the use of character-level convolutional networks (ConvNets) for text classification. We constructed several large-scale datasets to show that character-level convolutional networks could achieve state-of-the-art or competitive results. Comparisons are offered against traditional models such as bag of words, n-grams and their TFIDF variants, and deep learning models such as word-based ConvNets and recurrent neural networks."
-
->	"In most neural net NLP systems, the first layer maps words to vectors through a (learned) lookup table. Our system just looks at individual characters. This makes it robust to misspelling and sensitive to morphology, i.e. an known word with an unknown prefix or suffix, or an unknown word with a similar morphology as a known one, or a word formed by concatenating several known words, will be handled properly. This allows the system to handle essentially unlimited vocabularies."
-
-  - `code` <https://github.com/mhjabreel/CharCNN>
-
-
-#### ["Bag of Tricks for Efficient Text Classification"](http://arxiv.org/abs/1607.01759) Joulin, Grave, Bojanowski, Mikolov
-  `fastText`
-  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#bag-of-tricks-for-efficient-text-classification-joulin-grave-bojanowski-mikolov>
-
-
-#### ["Deep Multi-Instance Transfer Learning"](http://arxiv.org/abs/1411.3128) Kotzias, Denil, Blunsom, Freitas
->	"We present a new approach for transferring knowledge from groups to individuals that comprise them. We evaluate our method in text, by inferring the ratings of individual sentences using full-review ratings. This approach combines ideas from transfer learning, deep learning and multi-instance learning, and reduces the need for laborious human labelling of fine-grained data when abundant labels are available at the group level."
-
->	"In this work, we present a novel objective function, for instance learning in an a multi-instance learning setting. A similarity measure between instances is required in order to optimise the objective function. Deep Neural Networks have been very successful in creating representations of data, that capture their underlying characteristics. This work capitalises on their success by using embeddings of data and their similarity, as produced by a deep network, as instances for experiments. In this paper we show that this idea can be used to infer ratings of sentences (individuals) from ratings of reviews (groups of sentences). This enables us to extract the most positive and negative sentences in a review. In applications where reviews are overwhelmingly positive, detecting negative comments is a key step toward improving costumer service."
-
-----
->	"sentence-level and entity-level sentiment classification learned from text-level classification"
-
-
-
----
-### interesting papers - topic modeling
-
-
-#### ["Discovering Discrete Latent Topics with Neural Variational Inference"](https://arxiv.org/abs/1706.00359) Miao, Grefenstette, Blunsom
->	"Topic models have been widely explored as probabilistic generative models of documents. Traditional inference methods have sought closed-form derivations for updating the models, however as the expressiveness of these models grows, so does the difficulty of performing fast and accurate inference over their parameters. This paper presents alternative neural approaches to topic modelling by providing parameterisable distributions over topics which permit training by backpropagation in the framework of neural variational inference. In addition, with the help of a stick-breaking construction, we propose a recurrent network that is able to discover a notionally unbounded number of topics, analogous to Bayesian non-parametric topic models. Experimental results on the MXM Song Lyrics, 20NewsGroups and Reuters News datasets demonstrate the effectiveness and efficiency of these neural topic models."
-
-  - `video` <https://vimeo.com/238222598> (Miao)
-
-
-#### ["Additive Regularization of Topic Models"](https://link.springer.com/article/10.1007/s10994-014-5476-6) Vorontsov, Potapenko
-  `ARTM`
->	"Probabilistic topic modeling of text collections has been recently developed mainly within the framework of graphical models and Bayesian inference. In this paper we introduce an alternative semi-probabilistic approach, which we call additive regularization of topic models (ARTM). Instead of building a purely probabilistic generative model of text we regularize an ill-posed problem of stochastic matrix factorization by maximizing a weighted sum of the log-likelihood and additional criteria. This approach enables us to combine probabilistic assumptions with linguistic and problem-specific requirements in a single multi-objective topic model. In the theoretical part of the work we derive the regularized EM-algorithm and provide a pool of regularizers, which can be applied together in any combination. We show that many models previously developed within Bayesian framework can be inferred easier within ARTM and in some cases generalized. In the experimental part we show that a combination of sparsing, smoothing, and decorrelation improves several quality measures at once with almost no loss of the likelihood."
-
-  - `video` <https://youtube.com/watch?v=00qF2yMuRkQ> (Vorontsov)
-  - `video` <https://youtu.be/3Lxb-DqPtv4?t=1h45m9s> (Vorontsov) `in russian`
-  - `video` <https://youtube.com/watch?v=eJzNAhsbQNI> (Vorontsov) `in russian`
-  - `video` <https://youtube.com/watch?v=Y7lGYjJ7TR8> (Ianina) `in russian`
-  - `paper` ["Fast and Modular Regularized Topic Modelling"](https://fruct.org/publications/fruct21/files/Koc.pdf) by Kochedykov et al.
-  - `paper` <http://www.machinelearning.ru/wiki/images/d/d5/Voron17survey-artm.pdf> by Vorontsov `in russian`
-  - `code` <https://github.com/bigartm/bigartm>
-
-
-
----
-### interesting papers - text summarization
-
-
-#### ["Modelling, Visualising and Summarising Documents with a Single Convolutional Neural Network"](http://arxiv.org/abs/1406.3830) Denil, Demiraj, Kalchbrenner, Blunsom, Freitas
->	"Capturing the compositional process which maps the meaning of words to that of documents is a central challenge for researchers in Natural Language Processing and Information Retrieval. We introduce a model that is able to represent the meaning of documents by embedding them in a low dimensional vector space, while preserving distinctions of word and sentence order crucial for capturing nuanced semantics. Our model is based on an extended Dynamic Convolution Neural Network, which learns convolution filters at both the sentence and document level, hierarchically learning to capture and compose low level lexical features into high level semantic concepts. We demonstrate the effectiveness of this model on a range of document modelling tasks, achieving strong results with no feature engineering and with a more compact model. Inspired by recent advances in visualising deep convolution networks for computer vision, we present a novel visualisation technique for our document networks which not only provides insight into their learning process, but also can be interpreted to produce a compelling automatic summarisation system for texts."
-
-  - `code` <https://github.com/mdenil/txtnets>
-
-
-#### ["Extraction of Salient Sentences from Labelled Documents"](http://arxiv.org/abs/1412.6815) Denil, Demiraj, de Freitas
->	"We present a hierarchical convolutional document model with an architecture designed to support introspection of the document structure. Using this model, we show how to use visualisation techniques from the computer vision literature to identify and extract topic-relevant sentences. We also introduce a new scalable evaluation technique for automatic sentence extraction systems that avoids the need for time consuming human annotation of validation data."
-
-  - `code` <https://github.com/mdenil/txtnets>
-
-
-#### ["Sentence Compression by Deletion with LSTMs"](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43852.pdf) Filippova, Alfonseca, Colmenares, Kaiser, Vinyals
->	"We present an LSTM approach to deletion-based sentence compression where the task is to translate a sentence into a sequence of zeros and ones, corresponding to token deletion decisions. We demonstrate that even the most basic version of the system, which is given no syntactic information (no PoS or NE tags, or dependencies) or desired compression length, performs surprisingly well: around 30% of the compressions from a large test set could be regenerated. We compare the LSTM system with a competitive baseline which is trained on the same amount of data but is additionally provided with all kinds of linguistic features. In an experiment with human raters the LSTM-based model outperforms the baseline achieving 4.5 in readability and 3.8 in informativeness."
-
->	"We presented, to our knowledge, a first attempt at building a competitive compression system which is given no linguistic features from the input. The two important components of the system are (1) word embeddings, which can be obtained by anyone either pre-trained, or by running word2vec on a large corpus, and (2) an LSTM model which draws on the very recent advances in research on RNNs. The training data of about two million sentence-compression pairs was collected automatically from the Internet. Our results clearly indicate that a compression model which is not given syntactic information explicitly in the form of features may still achieve competitive performance. The high readability and informativeness scores assigned by human raters support this claim. In the future, we are planning to experiment with more “interesting” paraphrasing models which translate the input not into a zero-one sequence but into words."
-
-  - `video` <https://vimeo.com/159981337> (Alfonseca)
-
-
-#### ["A Neural Attention Model for Abstractive Sentence Summarization"](http://arxiv.org/abs/1509.00685) Rush, Chopra, Weston
->	"Summarization based on text extraction is inherently limited, but generation-style abstractive methods have proven challenging to build. In this work, we propose a fully data-driven approach to abstractive sentence summarization. Our method utilizes a local attention-based model that generates each word of the summary conditioned on the input sentence. While the model is structurally simple, it can easily be trained end-to-end and scales to a large amount of training data. The model shows significant performance gains on the DUC-2004 shared task compared with several strong baselines."
-
->	"We have presented a neural attention-based model for abstractive summarization, based on recent developments in neural machine translation. We combine this probabilistic model with a generation algorithm which produces accurate abstractive summaries. As a next step we would like to further improve the grammaticality of the summaries in a data-driven way, as well as scale this system to generate paragraph-level summaries. Both pose additional challenges in terms of efficient alignment and consistency in generation."
-
-  - `video` <https://vimeo.com/159993537> (Rush)
-  - `code` <https://github.com/jaseweston/NAMAS>
-  - `code` <https://github.com/carpedm20/neural-summary-tensorflow>
-
-
-#### ["Sequence-to-Sequence RNNs for Text Summarization"](http://arxiv.org/abs/1602.06023) Nallapati, Xiang, Zhou
->	"In this work, we cast text summarization as a sequence-to-sequence problem and apply the attentional encoder-decoder RNN that has been shown to be successful for Machine Translation (Bahdanau et al. (2014)). Our experiments show that the proposed architecture significantly outperforms the state-of-the art model of Rush et al. (2015) on the Gigaword dataset without any additional tuning. We also propose additional extensions to the standard architecture, which we show contribute to further improvement in performance."
 
 
 

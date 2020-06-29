@@ -299,6 +299,8 @@
 
   [course](https://people.eecs.berkeley.edu/~pabbeel/cs287-fa19) by Pieter Abbeel `video`
 
+  [overview](https://youtube.com/watch?v=DoDUpLhvWQk) by Sergey Levine `video`  
+  [overview](https://youtube.com/watch?v=DoDUpLhvWQk) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=sXQlQg7Hax8) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=U1dD8UALTu0) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=b97H5uz8xkI) by Sergey Levine `video`  
@@ -687,7 +689,8 @@
   [overview](http://youtube.com/watch?v=hGEz4Aumd1U) by Arsenii Ashukha `video`  
   [overview](http://youtube.com/watch?v=0OSvoYbWs9o) by Sergei Sviridov `video` `in russian`  
 
-  [overview](http://mlanctot.info/files/papers/Lanctot_MARL_RLSS2019_Lille.pdf) by Marc Lanctot `slides`
+  [tutorial](http://karltuyls.net/wp-content/uploads/2020/06/MA-DM-ICML-ACAI.pdf) by Balduzzi, Graepel, Hughes, Jaderberg, Omidshafiei, Perolat, Tuyls `slides` `2019`  
+  [tutorial](http://mlanctot.info/files/papers/Lanctot_MARL_RLSS2019_Lille.pdf) by Marc Lanctot `slides` `2019`  
 
   [overview](http://youtube.com/watch?v=MEUdtwQev9A) of multi-agent systems by James Wright `video`  
   [overview](http://youtube.com/watch?v=T8G5y_t9bME) of social dilemmas by Dmitry Ivanov `video` `in russian`  
@@ -3492,7 +3495,8 @@ interesting recent papers:
   - `notes` <https://github.com/DanielTakeshi/Paper_Notes/blob/master/reinforcement_learning/Proximal_Policy_Optimization_Algorithms.md>
   - `post` <https://towardsdatascience.com/the-pursuit-of-robotic-happiness-how-trpo-and-ppo-stabilize-policy-gradient-methods-545784094e3b>
   - `post` <http://blog.varunajayasiri.com/ml/ppo.html>
-  - `paper` ["Implementation Matters in Deep RL: A Case Study on PPO and TRPO"](https://openreview.net/forum?id=r1etN1rtPB) by Engstrom et al.
+  - `post` <https://costa.sh/blog-the-32-implementation-details-of-ppo.html>
+  - `paper` ["Implementation Matters in Deep RL: A Case Study on PPO and TRPO"](https://arxiv.org/abs/2005.12729) by Engstrom et al.
 
 
 #### ["Deterministic Policy Gradient Algorithms"](http://jmlr.org/proceedings/papers/v32/silver14.html) Silver, Lever, Heess, Degris, Wierstra, Riedmiller

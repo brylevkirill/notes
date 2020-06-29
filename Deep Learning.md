@@ -314,6 +314,7 @@
 
   [overview](https://youtube.com/watch?v=DSYzHPW26Ig) by Alex Graves `video`  
   [overview](https://facebook.com/nipsfoundation/videos/795861577420073) by Alex Graves and Marc Aurelio Ranzato `video`  
+  [overview](https://youtube.com/watch?v=f0s-uvvXvWg) by Irina Higgins and Mihaela Rosca `video`  
 
   ["Goals and Principles of Representation Learning"](https://youtu.be/2vxZbZC21Gg?t=7m3s) by Ferenc Huszar `video`
 
@@ -377,6 +378,8 @@
   [overview](https://youtu.be/UX8OubxsY8w?t=36m15s) by Yann LeCun `video`  
   [overview](https://youtu.be/7I0Qt7GALVk?t=41m13s) by Yann LeCun `video`  
 
+  [overview](https://youtube.com/watch?v=GBgns_U9mmI) by Alexander Dyakonov `in russian` ([post](https://dyakonov.org/2020/06/03/%d1%81%d0%b0%d0%bc%d0%be%d0%be%d0%b1%d1%83%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-self-supervision))
+
 ----
 
   [**interesting papers**](#interesting-papers---self-supervised-learning)
@@ -404,6 +407,8 @@
   [overview](https://youtube.com/watch?v=7o9dT6puHHg) by Aravind Srinivas `video` `2019`  *(strengths and weaknesses of models)*  
   [overview](https://youtube.com/watch?v=oRJ1hJTRs-0) by Danilo Rezende `video`  
   [overview](http://videolectures.net/deeplearning2016_mohamed_generative_models) by Shakir Mohamed `video`  
+
+  ["Generative Models, Thermodynamics and Symmetries"](http://scgp.stonybrook.edu/video/video.php?id=4383) by Danilo Rezende `video`
 
 ----
 
@@ -793,12 +798,12 @@
 
   ["Convolutional Neural Network"](http://www.deeplearningbook.org/contents/convnets.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
 
-  [overview](https://youtube.com/watch?v=LxfUGhug-iQ) by Andrej Karpathy `video`  
-  [overview](https://youtube.com/watch?v=bNb2fEVKeEo) by Serena Young `video`  
-  [overview](https://youtube.com/watch?v=t_TY_5bG9J8) by Nando de Freitas `video`  
-  [overview](http://videolectures.net/deeplearning2016_fergus_neural_networks/) by Rob Fergus `video`  
-  [overview](https://youtu.be/Xogn6veSyxA?t=40m30s) by Ian Goodfellow `video`  
-  [overview](https://youtube.com/watch?v=6-yBs3XLM20) by Victor Lempitsky `video` `in russian`  
+  [overview](https://youtube.com/watch?v=shVKhOmT0HE) by Sander Dieleman `video` `2020`  
+  [overview](https://youtube.com/watch?v=t_TY_5bG9J8) by Nando de Freitas `video` `2017`  
+  [overview](https://youtube.com/watch?v=bNb2fEVKeEo) by Serena Young `video` `2017`  
+  [overview](https://youtube.com/watch?v=LxfUGhug-iQ) by Andrej Karpathy `video` `2016`  
+  [overview](http://videolectures.net/deeplearning2016_fergus_neural_networks/) by Rob Fergus `video` `2016`  
+  [overview](https://youtube.com/watch?v=6-yBs3XLM20) by Victor Lempitsky `video` `in russian` `2016`  
 
   [overview](http://cs231n.github.io/convolutional-networks/) by Andrej Karpathy  
   ["Conv Nets: A Modular Perspective"](http://colah.github.io/posts/2014-07-Conv-Nets-Modular/) by Chris Olah  
@@ -879,6 +884,7 @@
 ---
 ### architectures - attention
 
+  [overview](https://youtube.com/watch?v=AIiwuClvH6k) by Alex Graves `video`  
   [overview](https://youtube.com/watch?v=Q57rzaHHO0k) by Alex Graves `video`  
   [overview](https://facebook.com/icml.imls/videos/382464939283864?t=690) by Alex Smola and Aston Zhang `video`  
   [overview](https://youtube.com/watch?v=_XRBlhzb31U) by Mikhail Figurnov `video` `in russian`  
@@ -1923,11 +1929,13 @@ Yoshua Bengio:
 >	"Unlike recent language representation models (Peters et al., 2018; Radford et al., 2018), BERT is designed to pre-train deep bidirectional representations by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT representations can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications."
 
   - `post` <https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html>
+  - `video` <https://youtube.com/watch?v=BWP3DyJ6k3g> (Chang)
   - `video` <https://youtube.com/watch?v=OR0wfP2FD3c> (Shorten)
   - `video` <https://youtube.com/watch?v=-9evrZnBorM> (Kilcher)
   - `video` <https://youtu.be/DSYzHPW26Ig?t=1h15m40s> (Graves)
   - `video` <https://youtu.be/AC4l_MY2Dhc?t=1h51m52s> (Srinivas)
   - `video` <https://youtu.be/BnpB3GrpsfM?t=1h32m23s> (Radford)
+  - `video` <https://youtu.be/8zAP2qWAsKg?t=55m7s> (Hill)
   - `video` <https://youtube.com/watch?v=9-Om2YcHhIA> (Li)
   - `video` <https://youtube.com/watch?v=BhlOGGzC0Q0> + <https://youtube.com/watch?v=rMQMHA-uv_E> (Gharbieh)
   - `video` <https://youtube.com/watch?v=BhlOGGzC0Q0> (Luo)
@@ -2557,9 +2565,10 @@ Yoshua Bengio:
   - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747?t=1107> (Vaswani, Shazeer)
   - `video` <https://youtu.be/I0nX4HDmXKc?t=7m46s> (Polosukhin)
   - `video` <https://youtube.com/watch?v=rBCqOTEfxvg> (Kaiser)
+  - `video` <https://youtu.be/8zAP2qWAsKg?t=22m39s> (Hill)
+  - `video` <https://youtube.com/watch?v=iDulhoQ2pro> (Kilcher)
   - `video` <https://youtube.com/watch?v=HsYPiKDTikg> (Li)
   - `video` <https://youtube.com/watch?v=S0KakHcj_rs> (Palermo)
-  - `video` <https://youtube.com/watch?v=iDulhoQ2pro> (Kilcher)
   - `video` <https://youtube.com/watch?v=KMY2Knr4iAs> (Chen)
   - `video` <https://youtube.com/watch?v=YQZRsowJZA8> (Lyalin) `in russian`
   - `video` <https://youtube.com/watch?v=KMgJFptbNlM> (Lyalin) `in russian`
