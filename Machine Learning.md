@@ -365,6 +365,7 @@
 
   [course](http://cs330.stanford.edu) by Chelsea Finn ([videos](https://youtube.com/playlist?list=PLoROMvodv4rMC6zfYmnD7UG3LVvwaITY5))
 
+  [overview](https://youtube.com/watch?v=A0a1M61gjgI) by Yee Whye Teh `video`  
   [overview](https://facebook.com/icml.imls/videos/400619163874853?t=500) by Chelsea Finn and Sergey Levine `video`  
   [overview](https://facebook.com/nipsfoundation/videos/1554594181298482?t=277) by Pieter Abbeel `video`  
   [overview](https://vimeo.com/250423463) by Oriol Vinyals `video`  

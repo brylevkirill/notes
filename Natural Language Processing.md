@@ -303,22 +303,6 @@
 ### interesting papers - language modeling
 
 ----
-#### ["Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"](https://arxiv.org/abs/1910.10683) Raffel et al.
-  `T5`
->	"Transfer learning, where a model is first pre-trained on a data-rich task before being fine-tuned on a downstream task, has emerged as a powerful technique in natural language processing. The effectiveness of transfer learning has given rise to a diversity of approaches, methodology, and practice. In this paper, we explore the landscape of transfer learning techniques for NLP by introducing a unified framework that converts every language problem into a text-to-text format. Our systematic study compares pre-training objectives, architectures, unlabeled datasets, transfer approaches, and other factors on dozens of language understanding tasks. By combining the insights from our exploration with scale and our new “Colossal Clean Crawled Corpus”, we achieve state-of-the-art results on many benchmarks covering summarization, question answering, text classification, and more. To facilitate future work on transfer learning for NLP, we release our dataset, pre-trained models, and code."
-
-  - `post` <https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html>
-  - `video` <https://youtube.com/watch?v=eKqWC577WlI> (Raffel)
-  - `video` <https://youtube.com/watch?v=N-7rdJK4xlE> (Kilcher, Shorten, Scarfe)
-  - `video` <https://youtube.com/watch?v=Axo0EtMUK90> (Shorten)
-  - `video` <https://youtu.be/BnpB3GrpsfM?t=1h50m53s> (Radford)
-  - `video` <https://youtube.com/watch?v=zG1MXITBge0> (Bataeva) `in russian`
-  - `audio` <https://podtail.com/podcast/data-skeptic/the-limits-of-nlp/> (Raffel)
-  - `notes` <https://twitter.com/colinraffel/status/1187161460033458177>
-  - `code` <https://github.com/google-research/text-to-text-transfer-transformer>
-  - `paper` ["How Much Knowledge Can You Pack Into the Parameters of a Language Model?"](https://craffel.github.io/publications/arxiv2020how.pdf) by Roberts, Raffel, Shazeer ([code](https://colab.research.google.com/github/google-research/text-to-text-transfer-transformer/blob/master/notebooks/t5-trivia.ipynb))
-
-
 #### ["BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"](https://arxiv.org/abs/1810.04805) Devlin, Chang, Lee, Toutanova
   `language modeling` `BERT`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-devlin-chang-lee-toutanova>
@@ -362,6 +346,7 @@
   - `video` <https://youtube.com/watch?v=7qPDwsCLbZc> (Kilcher, Shorten, Scarfe)
   - `video` <https://youtube.com/watch?v=SY5PvZrJhLE> (Kilcher)
   - `video` <https://youtube.com/watch?v=Mq97CF02sRY> (Heo)
+  - `post` <https://gwern.net/GPT-3>
   - `post` <https://gwern.net/newsletter/2020/05>
   - `post` <https://slatestarcodex.com/2020/06/10/the-obligatory-gpt-3-post>
   - `notes` <https://blog.inten.to/gpt-3-language-models-are-few-shot-learners-a13d1ae8b1f9>
@@ -479,12 +464,6 @@
   - `notes` <https://medium.com/paper-club/bag-of-tricks-for-efficient-text-classification-818bc47e90f>
   - `code` <https://fasttext.cc>
   - `code` <https://github.com/fchollet/keras/blob/master/examples/imdb_fasttext.py>
-
-
-#### ["Learning to Compute Word Embeddings On the Fly"](https://arxiv.org/abs/1706.00286) Bahdanau, Bosc, Jastrzebski, Grefenstette, Vincent, Bengio
->	"Words in natural language follow a Zipfian distribution whereby some words are frequent but most are rare. Learning representations for words in the "long tail" of this distribution requires enormous amounts of data. Representations of rare words trained directly on end-tasks are usually poor, requiring us to pre-train embeddings on external data, or treat all rare words as out-of-vocabulary words with a unique representation. We provide a method for predicting embeddings of rare words on the fly from small amounts of auxiliary data with a network trained against the end task. We show that this improves results against baselines where embeddings are trained on the end task in a reading comprehension task, a recognizing textual entailment task, and in language modelling."
-
-  - `notes` <https://theneuralperspective.com/2017/06/05/more-on-embeddings-spring-2017/>
 
 
 #### ["Neural Word Embedding as Implicit Matrix Factorization"](http://papers.nips.cc/paper/5477-neural-word-embedding-as-implicit-matrix-factorization.pdf) Levy, Goldberg
@@ -706,6 +685,22 @@
 #### ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin
   `Transformer`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#attention-is-all-you-need-vaswani-shazeer-parmar-uszkoreit-jones-gomez-kaiser-polosukhin>
+
+
+#### ["Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"](https://arxiv.org/abs/1910.10683) Raffel et al.
+  `T5`
+>	"Transfer learning, where a model is first pre-trained on a data-rich task before being fine-tuned on a downstream task, has emerged as a powerful technique in natural language processing. The effectiveness of transfer learning has given rise to a diversity of approaches, methodology, and practice. In this paper, we explore the landscape of transfer learning techniques for NLP by introducing a unified framework that converts every language problem into a text-to-text format. Our systematic study compares pre-training objectives, architectures, unlabeled datasets, transfer approaches, and other factors on dozens of language understanding tasks. By combining the insights from our exploration with scale and our new “Colossal Clean Crawled Corpus”, we achieve state-of-the-art results on many benchmarks covering summarization, question answering, text classification, and more. To facilitate future work on transfer learning for NLP, we release our dataset, pre-trained models, and code."
+
+  - `post` <https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html>
+  - `video` <https://youtube.com/watch?v=eKqWC577WlI> (Raffel)
+  - `video` <https://youtube.com/watch?v=N-7rdJK4xlE> (Kilcher, Shorten, Scarfe)
+  - `video` <https://youtube.com/watch?v=Axo0EtMUK90> (Shorten)
+  - `video` <https://youtu.be/BnpB3GrpsfM?t=1h50m53s> (Radford)
+  - `video` <https://youtube.com/watch?v=zG1MXITBge0> (Bataeva) `in russian`
+  - `audio` <https://podtail.com/podcast/data-skeptic/the-limits-of-nlp/> (Raffel)
+  - `notes` <https://twitter.com/colinraffel/status/1187161460033458177>
+  - `code` <https://github.com/google-research/text-to-text-transfer-transformer>
+  - `paper` ["How Much Knowledge Can You Pack Into the Parameters of a Language Model?"](https://craffel.github.io/publications/arxiv2020how.pdf) by Roberts, Raffel, Shazeer ([code](https://colab.research.google.com/github/google-research/text-to-text-transfer-transformer/blob/master/notebooks/t5-trivia.ipynb))
 
 
 #### ["Encode, Tag, Realize: High-Precision Text Editing"](https://arxiv.org/abs/1909.01187) Malmi et al.

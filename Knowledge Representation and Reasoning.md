@@ -123,14 +123,16 @@
 >	"RDF on the web marked with schema.org types is the largest existing structured knowledge base."  
 >	"I don't think we even have the begginings of theory [entity resolution, graph reconciliation]."  
 
-----
-
   problems of RDF on the web:
   - strong assumptions (nothing is ever wrong, no contradictions)
   - outdated, incorrect or incomplete data
   - mistakes made by tools (noisy information extraction, entity linking/reconciliation)
   - limited or no reuse of identifiers
   - metadata not always representative of content
+
+----
+
+  [overview](https://youtu.be/FRrokFy02ZA?t=2m43s) by Mikhail Galkin 'video' `in russian`
 
 
 
@@ -209,11 +211,12 @@
 
   history of approaches to relational learning:  
   - [**tensor factorization**](#relational-learning---tensor-factorization)  
-  - [**probabilistic relational learning**](#relational-learning---bayesian-network)  
-  - [**Relational Markov Network**](#relational-learning---markov-network)  
+  - [**probabilistic relational learning**](#relational-learning---probabilistic-relational-learning)  
+  - [**Relational Markov Network**](#relational-learning---relational-markov-network)  
   - [**Markov Logic Network**](#relational-learning---markov-logic-network)  
-  - [**ranking of random walks**](#relational-learning---random-walk-inference)  
-  - [**embedding models**](#relational-learning---continuous-embeddings)  
+  - [**random walk inference**](#relational-learning---random-walk-inference)  
+  - [**embedding models**](#relational-learning---embedding-models)  
+  - [**latent factor models**](#relational-learning---latent-factor-models)  
   - [**matrix factorization and universal schema**](#relational-learning---matrix-factorization-and-univeral-schema)  
 
 
@@ -237,14 +240,15 @@
 
 
 ----
-#### relational learning - continuous embeddings
+#### relational learning - embedding models
 
   ["An Overview of Embedding Models of Entities and Relationships for Knowledge Base Completion"](http://arxiv.org/abs/1703.08098) by Nguyen `paper`
 
   ["Knowledge Graph Construction From Text: Embedding-Based Techniques"](https://kgtutorial.github.io/slides/Part3b_Embds.pdf) by Pujara, Singh, Dalvi `slides`
 
 
-  [overview](https://youtu.be/bVWDxyydyEM?t=9m20s) by Graham Neubig `video`
+  [overview](https://youtu.be/Lcb5YKE21P8?t=14m32s) by Graham Neubig `video`  
+  [overview](https://youtu.be/FRrokFy02ZA?t=1h17m39s) by Mikhail Galkin 'video' `in russian`  
 
 
   applications in [**Google Knowledge Vault**](#machine-reading-projects---google-knowledge-vault):  
@@ -304,6 +308,8 @@
   ["Machine Learning with Knowledge Graphs"](http://videolectures.net/eswc2014_tresp_machine_learning/) by Volker Tresp `video`
 	([slides](http://www.dbs.ifi.lmu.de/~tresp/papers/ESWC-Keynote.pdf))
 
+  [overview](https://youtu.be/FRrokFy02ZA?t=1h17m39s) by Mikhail Galkin 'video' `in russian`
+
   ["Machine Learning on Linked Data: Tensors and Their Applications In Graph-Structured Domains"](http://www.cip.ifi.lmu.de/~nickel/iswc2012-slides/#/) by Maximilian Nickel `slides`  
   ["Tensor Factorization for Relational Learning"](http://edoc.ub.uni-muenchen.de/16056/1/Nickel_Maximilian.pdf) thesis by Maximilian Nickel `paper`  
 
@@ -316,7 +322,7 @@
 
 
 ----
-#### relational learning - Bayesian network
+#### relational learning - probabilistic relational learning
 
   works well if there is a prior knowledge about possible candidates for relational dependencies
 
@@ -327,7 +333,7 @@
 
 
 ----
-#### relational learning - Markov network
+#### relational learning - Relational Markov Network
 
   typically better suited for modeling symmetric interactions (e.g. friendOf) - no concern about directed loops
 
@@ -1258,13 +1264,8 @@ noise, inferring missing information, and determining which candidate facts shou
 [papers](https://github.com/thunlp/KRLPapers)
 
 ----
-#### ["An Overview of Embedding Models of Entities and Relationships for Knowledge Base Completion"](https://arxiv.org/abs/1703.08098) Nguyen
->	"Knowledge bases of real-world facts about entities and their relationships are useful resources for a variety of natural language processing tasks. However, because knowledge bases are typically incomplete, it is useful to be able to perform knowledge base completion, i.e., predict whether a relationship not in the knowledge base is likely to be true. This article presents an overview of embedding models of entities and relationships for knowledge base completion, with up-to-date experimental results on two standard evaluation tasks of link prediction (i.e. entity prediction) and triple classification."
-
-
-#### ["Fast Linear Model for Knowledge Graph Embeddings"](https://arxiv.org/abs/1710.10881) Joulin, Grave, Bojanowski, Nickel, Mikolov
->	"This paper shows that a simple baseline based on a Bag-of-Words representation learns surprisingly good knowledge graph embeddings. By casting knowledge base completion and question answering as supervised classification problems, we observe that modeling co-occurences of entities and relations leads to state-of-the-art performance with a training time of a few minutes using the open sourced library fastText."
-  - `code` <https://github.com/facebookresearch/fastText>
+#### ["Bringing Light Into the Dark: A Large-scale Evaluation of Knowledge Graph Embedding Models Under a Unified Framework"](https://arxiv.org/abs/2006.13365) Ali et al.
+>	"The heterogeneity in recently published knowledge graph embedding models’ implementations, training, and evaluation has made fair and thorough comparisons difficult. In order to assess the reproducibility of previously published results, we reimplemented and evaluated 19 interaction models in the PyKEEN software package. Here, we outline which results could be reproduced with their reported hyper-parameters, which could only be reproduced with alternate hyper-parameters, and which could not be reproduced at all as well as provide insight as to why this might be the case. We then performed a large-scale benchmarking on four datasets with several thousands of experiments and 21,246 GPU hours of computation time. We present insights gained as to best practices, best configurations for each model, and where improvements could be made over previously published best configurations. Our results highlight that the combination of model architecture, training approach, loss function, and the explicit modeling of inverse relations is crucial for a model’s performances, and not only determined by the model architecture. We provide evidence that several architectures can obtain results competitive to the state-of-the-art when configured carefully."
 
 
 #### ["Relation Extraction with Matrix Factorization and Universal Schemas"](http://aclweb.org/anthology/N13-1008) Riedel, Yao, McCallum, Marlin

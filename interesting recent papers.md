@@ -154,6 +154,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=5PF-I1NKTmk> (LaLonde)
   - `video` <https://youtube.com/watch?v=jOF5ytrhQEE> (Salvaris)
   - `video` <https://youtu.be/IRzaWXP3s3U?t=9m47s> (Sobolev) `in russian`
+  - `post` <https://roberttlange.github.io/posts/2020/06/lottery-ticket-hypothesis>
   - `paper` ["Deconstructing Lottery Tickets: Zeros, Signs, and the Supermask"](https://arxiv.org/abs/1905.01067) by Zhou et al. ([post](https://eng.uber.com/deconstructing-lottery-tickets), [video](https://youtube.com/watch?v=jhCInVFE2sc) (Kilcher), [notes](https://www.shortscience.org/paper?bibtexKey=zhou2019deconstructing))
   - `paper` ["One Ticket to Win Them All: Generalizing Lottery Ticket Initializations Across Datasets and Optimizers"](https://arxiv.org/abs/1906.02773) by Morcos et al. ([post](https://ai.facebook.com/blog/understanding-the-generalization-of-lottery-tickets-in-neural-networks), [talk](https://youtube.com/watch?v=oOgbHpjTwwA) `video`)
   - `paper` ["Proving the Lottery Ticket Hypothesis: Pruning is All You Need"](https://arxiv.org/abs/2002.00585) by Malach et al. ([overview](https://youtube.com/watch?v=JbyEleBP6BI) `video`)
@@ -719,6 +720,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/tA8nRlBEVr0?t=1m26s> (Graves)
   - `video` <https://youtu.be/nqiUFc52g78?t=58m45s> (Graves)
   - `video` <https://facebook.com/iclr.cc/videos/1713144705381255?t=2368> (Graves)
+  - `video` <https://youtu.be/AIiwuClvH6k?t=1h24m6s> (Graves)
   - `video` <https://vimeo.com/240428387#t=1h28m28s> (Vinyals)
   - `video` <https://youtube.com/watch?v=xbWzoAbb8dM> (Laver)
   - `post` <http://distill.pub/2016/augmented-rnns/>

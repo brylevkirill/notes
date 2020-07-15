@@ -848,6 +848,7 @@
 
   ["Recurrent Neural Network"](http://www.deeplearningbook.org/contents/rnn.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
 
+  [overview](https://youtube.com/watch?v=87kLfzmYBy8) by Marta Garnelo `video`  
   [overview](https://youtube.com/watch?v=yCC09vCHzF8) by Andrej Karpathy `video`  
   [overview](https://youtube.com/watch?v=6niqTuYFZLQ) by Justin Johnson `video`  
   [overview](https://youtube.com/watch?v=ZVN14xYm7JA) by Ian Goodfellow `video`  
@@ -2555,6 +2556,9 @@ Yoshua Bengio:
 >	- self-attention (restricted): O(n/r)"  
 
 ----
+>	"Transformer networks take attention to its logical extreme: get rid of everything else (recurrent state, convolutions, external memory) and just use attention to repeatedly transform a complete sequence. Instead of a controller emitting a query, every vector in the input sequence is compared with every other: anarchist attention?"
+
+----
 >	"Transformer models are seq2seq models that differ from classical seq2seq architectures in the sense that they are not auto-regressive and do not make use of single-dimensional convolutions. They have proven useful in several domains, mainly due to the absence of locality bias and to the O(1) path length between pairs of distinct sequence elements. As a side-note, the O(1) number of sequential operations between elements is not always guaranteed. Indeed, for computational performance purposes, a limit is imposed on the size of the self-attentional window, thus very long sequences break this assumption."
 
 ----
@@ -2567,6 +2571,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=rBCqOTEfxvg> (Kaiser)
   - `video` <https://youtu.be/8zAP2qWAsKg?t=22m39s> (Hill)
   - `video` <https://youtube.com/watch?v=iDulhoQ2pro> (Kilcher)
+  - `video` <https://youtu.be/AIiwuClvH6k?t=1h14m> (Graves)
   - `video` <https://youtube.com/watch?v=HsYPiKDTikg> (Li)
   - `video` <https://youtube.com/watch?v=S0KakHcj_rs> (Palermo)
   - `video` <https://youtube.com/watch?v=KMY2Knr4iAs> (Chen)
@@ -2578,6 +2583,7 @@ Yoshua Bengio:
   - `video` <https://youtu.be/JO-RJRCkLvM?t=1m16s> (Lobacheva) `in russian`
   - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) `in russian`
   - `video` <https://youtu.be/LhH6wMvntSM?t=54m56s> (Suleymanov) `in russian`
+  - `video` <https://youtube.com/watch?v=znyvj3ijl7Q> (Sapunov) `in russian`
   - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani, Uszkoreit)
   - `post` <https://lilianweng.github.io/lil-log/2020/04/07/the-transformer-family.html>
   - `post` <https://jalammar.github.io/illustrated-transformer/>
@@ -2785,8 +2791,9 @@ Yoshua Bengio:
 
   - `video` <http://techtalks.tv/talks/deep-residual-networks-deep-learning-gets-way-deeper/62358/> (He)
   - `video` <http://youtube.com/watch?v=1PGLj-uKT1w> (He)
-  - `video` <https://youtube.com/watch?v=jio04YvgraU> (Hoveidar)
+  - `video` <https://youtube.com/watch?v=GWt6Fu05voI> (Kilcher)
   - `video` <https://youtube.com/watch?v=sAzL4XMke80> (Shorten)
+  - `video` <https://youtube.com/watch?v=jio04YvgraU> (Hoveidar)
   - `post` <http://people.idsia.ch/~juergen/microsoft-wins-imagenet-through-feedforward-LSTM-without-gates.html> (Schmidhuber)
   - `post` <https://blog.init.ai/residual-neural-networks-are-an-exciting-area-of-deep-learning-research-acf14f4912e9>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=journals/corr/HeZRS15>
@@ -2893,6 +2900,7 @@ Yoshua Bengio:
 
 
 #### ["Neural Turing Machines"](http://arxiv.org/abs/1410.5401) Graves, Wayne, Danihelka
+  `NTM`
 >	"We extend the capabilities of neural networks by coupling them to external memory resources, which they can interact with by attentional processes. The combined system is analogous to a Turing Machine or Von Neumann architecture but is differentiable end-to-end, allowing it to be efficiently trained with gradient descent. Preliminary results demonstrate that Neural Turing Machines can infer simple algorithms such as copying, sorting and associative recall from input and output examples."
 
 >	"The researchers hoped that the NTM would invent a binary heap sort, but in fact it seemed to have invented a hash table. The vectors were stored in memory locations controlled by the priority and then read out in priority order to give a sorted list."
@@ -2922,6 +2930,7 @@ Yoshua Bengio:
 
   - `video` <https://youtu.be/Q57rzaHHO0k?t=51m48s> (Graves)
   - `video` <http://research.microsoft.com/apps/video/default.aspx?id=260037> (Graves)
+  - `video` <https://youtu.be/AIiwuClvH6k?t=49m37s> (Graves)
   - `video` <http://youtube.com/watch?v=otRoAQtc5Dk> (Polykovskiy)
   - `post` <https://distill.pub/2016/augmented-rnns/>
   - `notes` <http://rylanschaeffer.github.io/content/research/neural_turing_machine/main.html>
