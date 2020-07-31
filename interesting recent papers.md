@@ -799,6 +799,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 #### ["On First-Order Meta-Learning Algorithms"](https://arxiv.org/abs/1803.02999) Nichol, Achiam, Schulman
   `Reptile`
 >	"We analyze a family of algorithms for learning a parameter initialization that can be fine-tuned quickly on a new task, using only first-order derivatives for the meta-learning updates. This family includes and generalizes first-order MAML, an approximation to MAML obtained by ignoring second-order derivatives. It also includes Reptile which works by repeatedly sampling a task, training on it, and moving the initialization towards the trained weights on that task."  
+>	"A first-order meta-learning approach which is closely related to first-order MAML but does not need a training-test split for each task."  
   - `post` <https://blog.openai.com/reptile>
   - `video` <https://youtu.be/sF-dbZ2BQrQ?t=23m10s> (Kelcey)
   - `notes` <https://yobibyte.github.io/files/paper_notes/Reptile___a_Scalable_Metalearning_Algorithm__Alex_Nichol_and_John_Schulman__2018.pdf>
@@ -2521,6 +2522,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `post` <https://ai.googleblog.com/2020/03/introducing-dreamer-scalable.html>
   - `video` <https://youtube.com/watch?v=BDxRNnhPTlU> (Hafner)
   - `video` <https://slideslive.com/38922725/contributed-talk-efficient-visual-control-by-latent-imagination> (Hafner)
+  - `video` <https://pscp.tv/w/1mnGelLjoBWKX> (54:15) (Lillicrap)
   - `video` <https://youtube.com/watch?v=awyuuJoHawo> (Kilcher)
   - `video` <https://youtu.be/0JxOpJd3w8w?t=21m52s> (Svidchenko) `in russian`
 
@@ -2922,6 +2924,10 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#exploration-a-study-of-count-based-exploration-for-deep-reinforcement-learning-tang-et-al>
 
 ----
+#### ["Planning to Explore via Self-Supervised World Models"](https://arxiv.org/abs/2005.05960) Sekar, Rybkin, Daniilidis, Abbeel, Hafner, Pathak
+  `Plan2Explore` `information gain motivation` `planning to explore`
+  - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#planning-to-explore-via-self-supervised-world-models-sekar-rybkin-daniilidis-abbeel-hafner-pathak>
+
 #### ["Model-Based Active Exploration"](https://arxiv.org/abs/1810.12162) Shyam, Jaskowski, Gomez
   `MAX` `information gain motivation` `planning to explore`
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#model-based-active-exploration-shyam-jaskowski-gomez>

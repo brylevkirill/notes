@@ -1912,6 +1912,7 @@ Yoshua Bengio:
 
   - `video` <https://youtube.com/watch?v=BnpB3GrpsfM> (Radford)
   - `video` <https://youtu.be/dMUes74-nYY?t=1h3m> (Srinivas)
+  - `video` <https://youtube.com/watch?v=yexR53My2O4> (Kilcher)
   - `video` <https://youtube.com/watch?v=Ab5cgv9w7ac> (Scarfe)
   - `video` <https://youtube.com/watch?v=cQFOxMkzwf4> (Shorten)
   - `video` <https://youtube.com/watch?v=c3yRH0XZN2g> (Boyd-Graber)
@@ -1998,6 +1999,7 @@ Yoshua Bengio:
 #### ["Self-training with Noisy Student Improves ImageNet Classification"](https://arxiv.org/abs/1911.04252) Xie et al.
 >	"We present a simple self-training method that achieves 87.4% top-1 accuracy on ImageNet, which is 1.0% better than the state-of-the-art model that requires 3.5B weakly labeled Instagram images. On robustness test sets, it improves ImageNet-A top-1 accuracy from 16.6% to 74.2%, reduces ImageNet-C mean corruption error from 45.7 to 31.2, and reduces ImageNet-P mean flip rate from 27.8 to 16.1. To achieve this result, we first train an EfficientNet model on labeled ImageNet images and use it as a teacher to generate pseudo labels on 300M unlabeled images. We then train a larger EfficientNet as a student model on the combination of labeled and pseudo labeled images. We iterate this process by putting back the student as the teacher. During the generation of the pseudo labels, the teacher is not noised so that the pseudo labels are as good as possible. But during the learning of the student, we inject noise such as data augmentation, dropout, stochastic depth to the student so that the noised student is forced to learn harder from the pseudo labels."
 
+  - `video` <https://youtube.com/watch?v=q7PjrmGNx5A> (Kilcher)
   - `video` <https://youtube.com/watch?v=Y8YaU9mv_us> (Shorten)
   - `notes` <https://harangdev.github.io/papers/9/>
 
@@ -2017,6 +2019,7 @@ Yoshua Bengio:
 >	"We propose a new framework for estimating generative models via an adversarial process, in which we simultaneously train two models: a generative model G that captures the data distribution, and a discriminative model D that estimates the probability that a sample came from the training data rather than G. The training procedure for G is to maximize the probability of D making a mistake. This framework corresponds to a minimax two-player game. In the space of arbitrary functions G and D, a unique solution exists, with G recovering the training data distribution and D equal to 1/2 everywhere. In the case where G and D are defined by multilayer perceptrons, the entire system can be trained with backpropagation. There is no need for any Markov chains or unrolled approximate inference networks during either training or generation of samples."
 
   - <http://cs.stanford.edu/people/karpathy/gan/> (demo)
+  - `video` <https://youtube.com/watch?v=eyxmSmjmNS0> (Kilcher)
   - `video` <https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks> (Goodfellow)
   - `video` <https://youtu.be/1CT-kxjYbFU?t=13m34s> (Abbeel)
   - `post` <http://www.offconvex.org/2017/03/15/GANs/> (Arora)
@@ -2554,6 +2557,11 @@ Yoshua Bengio:
 >	- recurrent: O(n)  
 >	- convolutional: O(logk(n))  
 >	- self-attention (restricted): O(n/r)"  
+
+----
+>	"The key innovation in Transformers is the introduction of a self-attention mechanism, which can be evaluated in parallel for each token of the input sequence, eliminating the sequential dependency in recurrent neural networks, like LSTM. This parallelism enables Transformers to leverage the full power of modern SIMD hardware accelerators like GPUs/TPUs, thereby facilitating training of NLP models on datasets of unprecedented size."
+
+>	"The self-attention mechanism overcomes constraints of RNNs (namely the sequential nature of RNN) by allowing each token in the input sequence to attend independently to every other token in the sequence. This design choice has several interesting repercussions. In particular, the full self-attention have computational and memory requirement that is quadratic in the sequence length. Using commonly available current hardware and model sizes, this requirement translates to roughly being able to handle input sequences of length 512 tokens. This reduces its direct applicability to tasks that require larger context, like question answering, document summarization, etc."
 
 ----
 >	"Transformer networks take attention to its logical extreme: get rid of everything else (recurrent state, convolutions, external memory) and just use attention to repeatedly transform a complete sequence. Instead of a controller emitting a query, every vector in the input sequence is compared with every other: anarchist attention?"

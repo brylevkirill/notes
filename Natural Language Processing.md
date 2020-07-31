@@ -327,6 +327,7 @@
   - `video` <https://youtu.be/qIEfJ6OBGj8?t=14m25s> (Hinton)
   - `post` <https://amaarora.github.io/2020/02/18/annotatedGPT2.html>
   - `post` <https://jalammar.github.io/illustrated-gpt2>
+  - `paper` ["Generative Pretraining from Pixels"](https://cdn.openai.com/papers/Generative_Pretraining_from_Pixels_V2.pdf) by Chen et al. `IMAGE GPT` ([post](https://openai.com/blog/image-gpt), [overview](https://youtube.com/watch?v=mtPmgsMtMQo) (Chen) `video`, [overview](https://youtube.com/watch?v=YBlNQK0Ao6g) (Kilcher) `video`, [overview](https://youtube.com/watch?v=7rFLnQdl22c) (Shorten) `video`)
 
 
 #### ["Language Models are Few-Shot Learners"](https://arxiv.org/abs/2005.14165) Brown et al.
@@ -388,6 +389,7 @@
 >	"Recent work has shown how predictive modeling can endow agents with rich knowledge of their surroundings, improving their ability to act in complex environments. We propose question-answering as a general paradigm to decode and understand the representations that such agents develop, applying our method to two recent approaches to predictive modeling – action-conditional CPC (Guo et al., 2018) and Sim-Core (Gregor et al., 2019). After training agents with these predictive objectives in a visually-rich, 3D environment with an assortment of objects, colors, shapes, and spatial configurations, we probe their internal state representations with synthetic (English) questions, without backpropagating gradients from the question-answering decoder into the agent. The performance of different agents when probed this way reveals that they learn to encode factual, and seemingly compositional, information about objects, properties and spatial relations from their physical environment. Our approach is intuitive, i.e. humans can easily interpret responses of the model as opposed to inspecting continuous vectors, and model-agnostic, i.e. applicable to any modeling approach. By revealing the implicit knowledge of objects, quantities, properties and relations acquired by agents as they learn, question-conditional agent probing can stimulate the design and development of stronger predictive learning objectives."
 
   - `video` <https://youtu.be/8zAP2qWAsKg?t=1h15m8s> (Hill)
+  - `video` <https://youtu.be/8YG4J_S1teU?t=20m22s> (Hill)
 
 
 

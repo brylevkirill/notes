@@ -181,6 +181,7 @@
 
 	[AlphaGo Zero overview](http://www.depthfirstlearning.com/2018/AlphaGoZero)
 
+	["Monte-Carlo Tree Search as Regularized Policy Optimization"](https://proceedings.icml.cc/static/paper_files/icml/2020/3655-Paper.pdf) by Grill et al. `paper`  
 	[**"Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model"**](#mastering-atari-go-chess-and-shogi-by-planning-with-a-learned-model-schrittwieser-et-al) by Schrittwieser et al. `paper` `summary` *(MuZero)*  
 	[**"Mastering the Game of Go without Human Knowledge"**](#mastering-the-game-of-go-without-human-knowledge-silver-et-al) by Silver et al. `paper` `summary` *(AlphaGo Zero)*  
 	[**"Mastering the Game of Go with Deep Neural Networks and Tree Search"**](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper` `summary` *(AlphaGo)*  
@@ -1819,6 +1820,7 @@ interesting recent papers:
 
   - `video` <https://youtube.com/playlist?list=PLnn6VZp3hqNsrsp_Bg-bEfzzhJ3SuEZE9>
   - `video` <https://slideslive.com/38922026/deep-reinforcement-learning-2?t=3855> (Schrittwieser)
+  - `video` <https://pscp.tv/w/1mnGelLjoBWKX> (44:00) (Lillicrap)
   - `video` <https://youtube.com/watch?v=We20YSAJZSE> (Kilcher)
   - `video` <https://slideslive.com/38923124/nonsupervised-learning-and-decision-making?t=1832> (Rezende)
   - `video` <https://youtu.be/BGyRM5vCkfw?t=26m54s> (Engalych) `in russian`
@@ -2619,6 +2621,17 @@ interesting recent papers:
   - <https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md#planning-to-be-surprised-optimal-bayesian-exploration-in-dynamic-environments-sun-gomez-schmidhuber>
 
 
+#### ["Planning to Explore via Self-Supervised World Models"](https://arxiv.org/abs/2005.05960) Sekar, Rybkin, Daniilidis, Abbeel, Hafner, Pathak
+  `Plan2Explore` `planning to explore` `ICML 2020`
+>	"Reinforcement learning allows solving complex tasks, however, the learning tends to be task-specific and the sample efficiency remains a challenge. We present Plan2Explore, a self-supervised reinforcement learning agent that tackles both these challenges through a new approach to self-supervised exploration and fast adaptation to new tasks, which need not be known during exploration. During exploration, unlikeprior methods which retrospectively compute the novelty of observations after the agent has already reached them, our agent acts efficiently by leveraging planning to seek out expected future novelty. After exploration, the agent quickly adapts to multiple downstream tasks in a zero or a few-shot manner. We evaluate on challenging control tasks from high-dimensional image inputs. Without any training supervision or task-specific interaction, Plan2Explore outperforms prior self-supervised exploration methods, and in fact, almost matches the performances oracle which has access to rewards."
+
+  - <https://ramanans1.github.io/plan2explore>
+  - `video` <https://youtube.com/watch?v=gan79mAVfq8> (Pathak)
+  - `video` <https://pscp.tv/w/1mnGelLjoBWKX> (1:03:12) (Lillicrap)
+  - `video` <https://youtube.com/watch?v=GyEzjW1m7kU> (Rybkin)
+  - `video` <https://youtube.com/watch?v=IiBFqnNu7A8> (Kilcher)
+
+
 #### ["Model-Based Active Exploration"](https://arxiv.org/abs/1810.12162) Shyam, Jaskowski, Gomez
   `MAX` `planning to explore` `pure exploration` `ICML 2019`
 >	"Efficient exploration is an unsolved problem in Reinforcement Learning which is usually addressed by reactively rewarding the agent for fortuitously encountering novel situations. This paper introduces an efficient active exploration algorithm, Model-Based Active eXploration, which uses an ensemble of forward models to plan to observe novel events. This is carried out by optimizing agent behaviour with respect to a measure of novelty derived from the Bayesian perspective of exploration, which is estimated using the disagreement between the futures predicted by the ensemble members. We show empirically that in semi-random discrete environments where directed exploration is critical to make progress, MAX is at least an order of magnitude more efficient than strong baselines. MAX scales to high-dimensional continuous environments where it builds task-agnostic models that can be used for any downstream task."
@@ -3139,6 +3152,7 @@ interesting recent papers:
   - `video` <http://youtube.com/watch?v=EfGD2qveGdQ> (demo)
   - `video` <http://youtube.com/user/eldubro/videos> (demo)
   - <http://cs.stanford.edu/people/karpathy/convnetjs/demo/rldemo.html> (demo)
+  - `video` <https://youtube.com/watch?v=rFwQDDbYTm4> (Kilcher)
   - `video` <http://youtube.com/watch?v=fevMOp5TDQs> (Mnih)
   - `video` <http://youtube.com/watch?v=dV80NAlEins> (de Freitas)
   - `video` [from value function approximation to Deep Q-Network](http://youtu.be/UoPei5o4fps?t=1h9m) (Silver)
