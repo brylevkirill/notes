@@ -707,6 +707,7 @@
 
   - <https://catboost.yandex>
   - `video` <https://youtube.com/watch?v=jLU6kNRiZ5o>
+  - `video` <https://youtube.com/watch?v=BgDmuvPaUBo> (Dorogush)
   - `video` <https://youtube.com/watch?v=8o0e-r0B5xQ> (Dorogush)
   - `video` <https://youtube.com/watch?v=usdEWSDisS0> (Dorogush)
   - `video` <https://youtube.com/watch?v=db-iLhQvcH8> (Prokhorenkova)

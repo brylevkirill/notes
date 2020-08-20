@@ -1431,6 +1431,8 @@ scalable. It further significantly outperforms RESCAL without type-constraints i
   `REALM`
 >	"Language model pre-training has been shown to capture a surprising amount of world knowledge, crucial for NLP tasks such as question answering. However, this knowledge is stored implicitly in the parameters of a neural network, requiring ever-larger networks to cover more facts. To capture knowledge in a more modular and interpretable way, we augment language model pre-training with a latent knowledge retriever, which allows the model to retrieve and attend over documents from a large corpus such as Wikipedia, used during pre-training, fine-tuning and inference. For the first time, we show how to pre-train such a knowledge retriever in an unsupervised manner, using masked language modeling as the learning signal and backpropagating through a retrieval step that considers millions of documents. We demonstrate the effectiveness of Retrieval-Augmented Language Model pre-training (REALM) by fine-tuning on the challenging task of Open-domain Question Answering (Open-QA). We compare against state-of-the-art models for both explicit and implicit knowledge storage on three popular Open-QA benchmarks, and find that we outperform all previous methods by a significant margin (4-16% absolute accuracy), while also providing qualitative benefits such as interpretability and modularity."
 
+  - `post` <https://ai.googleblog.com/2020/08/realm-integrating-retrieval-into.html>
+  - `video` <https://youtube.com/watch?v=lj-LGrnh1oU> (Kilcher)
   - `post` <https://joeddav.github.io/blog/2020/03/03/REALM.html>
 
 

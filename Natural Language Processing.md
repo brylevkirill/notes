@@ -327,6 +327,7 @@
   - `video` <https://youtu.be/qIEfJ6OBGj8?t=14m25s> (Hinton)
   - `post` <https://amaarora.github.io/2020/02/18/annotatedGPT2.html>
   - `post` <https://jalammar.github.io/illustrated-gpt2>
+  - `post` <https://gwern.net/GPT-2>
   - `paper` ["Generative Pretraining from Pixels"](https://cdn.openai.com/papers/Generative_Pretraining_from_Pixels_V2.pdf) by Chen et al. `IMAGE GPT` ([post](https://openai.com/blog/image-gpt), [overview](https://youtube.com/watch?v=mtPmgsMtMQo) (Chen) `video`, [overview](https://youtube.com/watch?v=YBlNQK0Ao6g) (Kilcher) `video`, [overview](https://youtube.com/watch?v=7rFLnQdl22c) (Shorten) `video`)
 
 
@@ -343,13 +344,18 @@
 
 >	"GPT-3 is hamstrung by its training & data, but just simply training a big model on a lot of data induces meta-learning without even the slightest bit of meta-learning architecture being built in; and in general, training on more and harder tasks creates ever more human-like performance, generalization, and robustness."
 
+  - <https://gpt3examples.com> (demo)
   - `video` <https://vimeo.com/427943407/98fe5258a7> (demo)
+  - <https://pscp.tv/Microsoft/1OyKAYWPRrWKb?t=29m19s> (demo)
+  - `video` <https://youtube.com/watch?v=ZyQkaml-5iE> (Ryder)
   - `video` <https://youtube.com/watch?v=7qPDwsCLbZc> (Kilcher, Shorten, Scarfe)
   - `video` <https://youtube.com/watch?v=SY5PvZrJhLE> (Kilcher)
   - `video` <https://youtube.com/watch?v=Mq97CF02sRY> (Heo)
+  - `post` <https://jalammar.github.io/how-gpt3-works-visualizations-animations>
   - `post` <https://gwern.net/GPT-3>
   - `post` <https://gwern.net/newsletter/2020/05>
   - `post` <https://slatestarcodex.com/2020/06/10/the-obligatory-gpt-3-post>
+  - `post` <https://leogao.dev/2020/08/17/Building-AGI-Using-Language-Models>
   - `notes` <https://blog.inten.to/gpt-3-language-models-are-few-shot-learners-a13d1ae8b1f9>
   - `notes` <https://lambdalabs.com/blog/demystifying-gpt-3>
 

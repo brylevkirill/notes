@@ -1190,6 +1190,8 @@
   ["Open Questions in Model-based RL"](https://youtube.com/watch?v=OeIVfQz3FUc) by Richard Sutton `video`  
   ["Toward a General AI-Agent Architecture"](https://slideslive.com/38924024/toward-a-general-aiagent-architecture) by Richard Sutton `video` *(SuperDyna)*  
 
+  ["Deep Networks for Model-based RL"](https://pscp.tv/w/1mnGelLjoBWKX) by Timothy Lillicrap `video`
+
   ["Planning and Models"](https://youtube.com/watch?v=Xrxrd8nl4YI) by Hado van Hasselt `video`  
   ["Integrating Learning and Planning"](https://youtube.com/watch?v=ItMutbeOHtc) by David Silver `video`  
   ["Value Focused Models"](https://facebook.com/icml.imls/videos/2366831430268790?t=410) by David Silver `video`  
@@ -2155,6 +2157,7 @@ interesting recent papers:
 >	"Most practical recommender systems focus on estimating immediate user engagement without considering the long-term effects of recommendations on user behavior. Reinforcement learning (RL) methods offer the potential to optimize recommendations for long-term user engagement. However, since users are often presented with slates of multiple items - which may have interacting effects on user choice - methods are required to deal with the combinatorics of the RL action space. In this work, we address the challenge of making slate-based recommendations to optimize long-term value using RL. Our contributions are three-fold. (i) We develop SLATEQ, a decomposition of value-based temporal-difference and Q-learning that renders RL tractable with slates. Under mild assumptions on user choice behavior, we show that the long-term value (LTV) of a slate can be decomposed into a tractable function of its component item-wise LTVs. (ii) We outline a methodology that leverages existing myopic learning-based recommenders to quickly develop a recommender that handles LTV. (iii) We demonstrate our methods in simulation, and validate the scalability of decomposed TD-learning using SLATEQ in live experiments on YouTube."
 
   - `video` <http://www.fields.utoronto.ca/video-archive/2019/02/2509-19619> (41:12) (Boutilier)
+  - `post` <https://medium.com/analytics-vidhya/slateq-a-scalable-algorithm-for-slate-recommendation-problems-735a1c24458c>
 
 
 #### ["QT-Opt: Scalable Deep Reinforcement Learning for Vision-Based Robotic Manipulation"](https://arxiv.org/abs/1806.10293) Kalashnikov et al.
@@ -2300,6 +2303,8 @@ interesting recent papers:
 
 #### ["A Tutorial on Thompson Sampling"](https://arxiv.org/abs/1707.02038) Russo, van Roy, Kazerouni, Osband, Wen
 >	"Thompson sampling is an algorithm for online decision problems where actions are taken sequentially in a manner that must balance between exploiting what is known to maximize immediate performance and investing to accumulate new information that may improve future performance. The algorithm addresses a broad range of problems in a computationally efficient manner and is therefore enjoying wide use. This tutorial covers the algorithm and its application, illustrating concepts through a range of examples, including Bernoulli bandit problems, shortest path problems, dynamic pricing, recommendation, active learning with neural networks, and reinforcement learning in Markov decision processes. Most of these problems involve complex information structures, where information revealed by taking an action informs beliefs about other actions. We will also discuss when and why Thompson sampling is or is not effective and relations to alternative algorithms."
+
+  - `code` <https://colab.research.google.com/github/iosband/ts_tutorial/blob/master/ts_tutorial_intro.ipynb>
 
 
 #### ["Nonparametric General Reinforcement Learning"](https://jan.leike.name/publications/Nonparametric%20General%20Reinforcement%20Learning%20-%20Leike%202016.pdf) Leike
@@ -2451,8 +2456,9 @@ interesting recent papers:
   - `video` <https://vimeo.com/250399556> (Wang)
   - `video` <https://youtu.be/Y85Zn50Eczs?t=20m18s> (Botvinick)
   - `video` <https://youtu.be/LnXgs73OUjE?t=29m20s> (Botvinick)
+  - `video` <https://youtu.be/3t06ajvBtl0?t=1h11s> (Botvinick)
   - `post` <https://lilianweng.github.io/lil-log/2019/06/23/meta-reinforcement-learning.html#on-the-origin-of-meta-rl>
-  - `post` <https://hackernoon.com/learning-policies-for-learning-policies-meta-reinforcement-learning-rl²-in-tensorflow-b15b592a2ddf>
+  - `post` <https://lesswrong.com/posts/Wnqua6eQkewL3bqsF/matt-botvinick-on-the-spontaneous-emergence-of-learning>
   - `paper` ["Reinforcement Learning, Fast and Slow"](https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(19)30061-0) by Botvinick et al. ([talk](https://slideslive.com/38915872/metareinforcement-learning-an-appreciation) by Botvinick `video`) ([talk](https://youtube.com/watch?v=b0LddBiF5jM) by Botvinick `video`) ([overview](https://youtube.com/watch?v=_N_nFzMtWkA) by Kilcher `video`)
   - `paper` ["RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning"](#rl2-fast-reinforcement-learning-via-slow-reinforcement-learning-duan-schulman-chen-bartlett-sutskever-abbeel) by Duan et al. `summary`
 

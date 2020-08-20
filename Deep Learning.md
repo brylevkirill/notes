@@ -899,7 +899,8 @@
 
   [overview](https://youtube.com/watch?v=bYmeuc5voUQ) by Ashish Vaswani `video`
 
-  [**"Attention Is All You Need"**](#attention-is-all-you-need-vaswani-et-al) by Vaswani et al. `paper` `summary`
+  [**"Attention Is All You Need"**](#attention-is-all-you-need-vaswani-et-al) by Vaswani et al. `paper` `summary`  
+  ["Hopfield Networks is All You Need"](https://arxiv.org/abs/2008.02217) by Ramsauer et al. ([post](https://jku.at/index.php?id=18677), [overview](https://youtube.com/watch?v=nv6oFDp6rNQ) (Kilcher) `video`)  
 
 ----
 
@@ -2001,6 +2002,7 @@ Yoshua Bengio:
 
   - `video` <https://youtube.com/watch?v=q7PjrmGNx5A> (Kilcher)
   - `video` <https://youtube.com/watch?v=Y8YaU9mv_us> (Shorten)
+  - `video` <https://youtube.com/watch?v=gVfnb4EOPZE> (Kaur, Fadel)
   - `notes` <https://harangdev.github.io/papers/9/>
 
 
@@ -2572,6 +2574,13 @@ Yoshua Bengio:
 ----
 >	"Capsules is the theory of how you do visual perception using reconstruction, and also how you route information to the right places. In standard neural nets, the information, the activity in the layer, just automatically goes somewhere; you don't decide where to send it. The idea of capsules was to make decisions about where to send information. Now, since I started working on capsules, some other very smart people at Google invented transformers, which are doing the same thing. They're deciding where to route information, and that's a big win."
 
+----
+>	"The associative memory mechanisms in transformers are energy-based models. Associate memory associates perturbed memories with attractor states corresponding to learned patterns. The original Hopfield Network attempts to imitate neural associative memory with Hebb's Rule and is limited to fixed-length binary inputs, accordingly. Modern approaches have generalized the energy minimization approach of Hopfield Nets to overcome those and other hurdles. Modern continuous Hopfield Network's' update rule aligns well with key-value attention mechanisms from Transformers."
+
+----
+>	"Hopfield construction would allow iterating the attention, which Transformer doesn't do as it does the attention in a single step, but the authors find that iterating the Hopfield attention doesn't seem to be useful as it converges in a single step. The Hopfield layer also has beta in place of Transformer's 1/sqrt(d_k) scaling factor, and the authors note that this factor has a significant effect on the Hopfield network attraction point types, so it might lead to future understanding about what is the optimal value for this. Regardless they use the scaling factor from Transformer, 1/sqrt(d_k) in all the experiments."
+
+
   - `post` <https://research.googleblog.com/2017/08/transformer-novel-neural-network.html>
   - `video` <https://youtube.com/watch?v=bYmeuc5voUQ> (Vaswani)
   - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747?t=1107> (Vaswani, Shazeer)
@@ -2607,6 +2616,7 @@ Yoshua Bengio:
   - `notes` <https://medium.com/@sharaf/a-paper-a-day-24-attention-is-all-you-need-26eb2da90a91>
   - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/transformer.py>
   - `code` <https://colab.research.google.com/notebook#fileId=/v2/external/notebooks/t2t/hello_t2t.ipynb>
+  - `paper` ["Hopfield Networks is All You Need"](https://arxiv.org/abs/2008.02217) by Ramsauer et al. ([post](https://jku.at/index.php?id=18677), [overview](https://youtube.com/watch?v=nv6oFDp6rNQ) (Kilcher) `video`)
   - `paper` [**"Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#exploring-the-limits-of-transfer-learning-with-a-unified-text-to-text-transformer-raffel-et-al) by Raffel et al. `summary`
   - `paper` [**"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"**](#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-devlin-chang-lee-toutanova) by Devlin et al. `summary`
   - `paper` [**"Language Models are Unsupervised Multitask Learners"**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#language-models-are-unsupervised-multitask-learners-radford-wu-child-luan-amodei-sutskever) by Radford et al. `summary`
@@ -3178,6 +3188,7 @@ Yoshua Bengio:
 >	- Backpropagation requires all nodes to be stored in memory.  
 >	- I think this is a less important limitation, but many neural architectures require parameter sharing, which isn't necessarily achievable in the brain."  
 
+  - `video` <https://youtube.com/watch?v=4-wmpOjn6iU> (Bengio)
   - `video` <https://youtube.com/watch?v=TvZLAyOByMQ> (Bengio)
   - `video` <https://youtube.com/watch?v=W86H4DpFnLY> (Bengio)
   - `video` <https://archive.org/details/Redwood_Center_2016_09_27_Yoshua_Bengio> (Bengio)

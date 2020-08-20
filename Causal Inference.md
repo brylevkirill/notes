@@ -68,6 +68,7 @@
 
 ----
 
+  ["Science vs Data: Contesting the Soul of Data Science"](https://youtube.com/watch?v=X_1MG4ViVGM) by Judea Pearl `video`  
   ["The Foundations of Causal Inference with Reflections on Machine Learning and Artificial Intelligence"](https://youtube.com/watch?v=nWaM6XmQEmU) by Judea Pearl `video`  
   ["The New Science of Cause and Effect"](https://youtube.com/watch?v=ZaPV1OSEpHw) by Judea Pearl `video`  
   ["The Mathematics of Causal Inference with Reflections on Machine Learning"](https://youtube.com/watch?v=bcRl7sXR1hE) by Judea Pearl `video`  
