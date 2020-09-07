@@ -1106,8 +1106,20 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 [**interesting recent papers - unsupervised learning**](#unsupervised-learning)
 
 ----
+#### ["Language Models are Few-Shot Learners"](https://arxiv.org/abs/2005.14165) Brown et al.
+  `GPT-3` `language modeling` `meta-learning`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#language-models-are-few-shot-learners-brown-et-al>
+
+#### ["BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"](https://arxiv.org/abs/1810.04805) Devlin, Chang, Lee, Toutanova
+  `BERT` `language representation learning`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-devlin-chang-lee-toutanova>
+
+#### ["Language Models are Unsupervised Multitask Learners"](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf) Radford, Wu, Child, Luan, Amodei, Sutskever
+  `GPT-2` `language modeling`
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#language-models-are-unsupervised-multitask-learners-radford-wu-child-luan-amodei-sutskever>
+
 #### ["A Simple Framework for Contrastive Learning of Visual Representations"](https://arxiv.org/abs/2002.05709) Chen, Kornblith, Norouzi, Hinton
-  `SimCLR` `representation learning` `self-supervised learning`
+  `SimCLR` `representation learning`
 >	"We simplify recently proposed contrastive self-supervised learning algorithms without requiring specialized architectures or a memory bank."  
 >	"We show that (1) composition ofdata augmentations plays a critical role in definingeffective predictive tasks, (2) introducing a learn-able nonlinear transformation between the repre-sentation and the contrastive loss substantially im-proves the quality of the learned representations,and (3) contrastive learning benefits from largerbatch sizes and more training steps compared tosupervised learning."  
 >	"By combining these findings, we are able to considerably outperform previous methods for self-supervised and semi-supervised learning on ImageNet. A linear classifier trained on self-supervised representations learned by SimCLR achieves 76.5% top-1 accuracy, which is a 7% relative improvement over previous state-of-the-art, matching the performance of a supervised ResNet-50. When fine-tuned on only 1% of the labels, we achieve 85.8% top-5 accuracy, outperforming AlexNet with 100x fewer labels."  
@@ -1123,22 +1135,18 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `notes` <https://habr.com/en/company/ods/blog/493016/#9-a-simple-framework-for-contrastive-learning-of-visual-representations> `in russian`
 
 #### ["Momentum Contrast for Unsupervised Visual Representation Learning"](https://arxiv.org/abs/1911.05722) He et al.
-  `MoCo` `representation learning` `self-supervised learning`
+  `MoCo` `representation learning`
 >	"From a perspective on contrastive learning as dictionary look-up, we build a dynamic dictionary with a queue and a moving-averaged encoder. This enables building a large and consistent dictionary on-the-fly that facilitates contrastive unsupervised learning."  
   - `video` <https://youtu.be/1sJuWg5dULg?t=35m9s> (Srinivas)
   - `paper` ["Improved Baselines with Momentum Contrastive Learning"](https://arxiv.org/abs/2003.04297) by Chen et al. *(MoCo v2)*
 
 #### ["Representation Learning with Contrastive Predictive Coding"](https://arxiv.org/abs/1807.03748) Oord, Li, Vinyals
-  `CPC` `InfoNCE` `representation learning` `self-supervised learning`
+  `CPC` `InfoNCE` `representation learning`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#representation-learning-with-contrastive-predictive-coding-oord-li-vinyals>
 
 #### ["Revisiting Self-Supervised Visual Representation Learning"](https://arxiv.org/abs/1901.09005) Kolesnikov, Zhai, Beyer
-  `representation learning` `self-supervised learning`
+  `representation learning`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#revisiting-self-supervised-visual-representation-learning-kolesnikov-zhai-beyer>
-
-#### ["BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"](https://arxiv.org/abs/1810.04805) Devlin, Chang, Lee, Toutanova
-  `BERT` `representation learning` `self-supervised learning`
-  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-devlin-chang-lee-toutanova>
 
 
 
@@ -3985,11 +3993,11 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 ----
 #### ["Language Models are Few-Shot Learners"](https://arxiv.org/abs/2005.14165) Brown et al.
   `GPT-3` `language modeling` `meta-learning`
-  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#language-models-are-few-shot-learners-brown-et-al>
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#language-models-are-few-shot-learners-brown-et-al>
 
 #### ["Language Models are Unsupervised Multitask Learners"](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf) Radford, Wu, Child, Luan, Amodei, Sutskever
   `GPT-2` `language modeling`
-  - <https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#language-models-are-unsupervised-multitask-learners-radford-wu-child-luan-amodei-sutskever>
+  - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#language-models-are-unsupervised-multitask-learners-radford-wu-child-luan-amodei-sutskever>
 
 #### ["BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"](https://arxiv.org/abs/1810.04805) Devlin, Chang, Lee, Toutanova
   `BERT` `language modeling`

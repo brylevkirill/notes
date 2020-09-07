@@ -539,6 +539,12 @@
   ["Theory of Reinforcement Learning"](http://videolectures.net/deeplearning2017_szepesvari_theory_of_rl) by Csaba Szepesvari `video`  
   ["Is a Good Representation Sufficient for Sample Efficient Reinforcement Learning"](https://youtu.be/b9I1VYEd82c?t=2h30m) by Sham Kakade `video`  
 
+  [course](http://nanjiang.cs.illinois.edu/cs598) by Nan Jiang
+
+----
+
+  ["Reinforcement Learning: Theory and Algorithms"](https://rltheorybook.github.io) by Agarwal, Jiang, Kakade `book`
+
 
 ----
 #### reinforcement learning vs supervised learning
@@ -607,7 +613,8 @@
 
   Batch reinforcement learning offers a mechanism for learning offline from a fixed dataset without restrictions on the quality of the data.
 
-  ["The Sub-basement of RL"](https://youtube.com/watch?v=373_zVWceqA) by Dale Schuurmans `video`
+  ["Offline RL: Challenges, Algorithms, and Benchmarks"](https://youtube.com/watch?v=IUAePhU0E7Y) by Sergey Levine `video`  
+  ["The Sub-basement of RL"](https://youtube.com/watch?v=373_zVWceqA) by Dale Schuurmans `video`  
 
   ["Offline Reinforcement Learning: Tutorial, Review,and Perspectives on Open Problems"](https://arxiv.org/abs/2005.01643) by Levine et al. `paper`  
   ["Batch Reinforcement Learning"](http://tgabel.de/cms/fileadmin/user_upload/documents/Lange_Gabel_EtAl_RL-Book-12.pdf) by Lange et al. `paper`  
@@ -2147,6 +2154,7 @@ interesting recent papers:
 
   - `video` <https://youtube.com/watch?v=HEqQ2_1XRTs> (Chen)
   - `video` <https://youtube.com/watch?v=Ys3YY7sSmIA> (Chang)
+  - `video` <https://youtu.be/FNmh-eGYAv0?t=23m12s> (Chi)
   - `video` <https://youtu.be/umyNVwePCtw?t=6m42s> (Bugaychenko) `in russian`
   - `post` <https://towardsdatascience.com/top-k-off-policy-correction-for-a-reinforce-recommender-system-e34381dceef8>
   - `press` <https://nytimes.com/interactive/2019/06/08/technology/youtube-radical.html>

@@ -399,6 +399,10 @@
 
 ----
 
+  ["On GPT-3: Meta-Learning, Scaling, Implications, And Deep Theory"](https://gwern.net/newsletter/2020/05#gpt-3) by Gwern Branwen
+
+----
+
   ["The Future of Deep Learning"](https://blog.keras.io/the-future-of-deep-learning.html) by Francois Chollet ([talk](https://youtu.be/MUF32XHqM34?t=16m55s) `video`)
 
 
@@ -496,6 +500,7 @@
 ---
 ### weak supervision - data programming
 
+  [Snorkel](http://snorkel.org) website  
   [Snorkel](http://github.com/HazyResearch/snorkel) project  
   [Snorkel](http://hazyresearch.github.io/snorkel) blog  
 

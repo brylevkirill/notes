@@ -396,11 +396,10 @@
 
 ----
 
+  ["Modern Latent Variable Models and Variational Inference"](https://youtube.com/watch?v=7Pcvdo4EJeo) by Andriy Mnih `video`  
   "Variational Inference: Foundations and Innovations" by David Blei ([1](https://youtube.com/watch?v=DaqNNLidswA), [2](https://youtube.com/watch?v=Wd7R_YX4PcQ)) `video`  
   ["Advanced Methods of Variational Inference"](https://youtube.com/watch?v=mCBnid-1slI) by Max Welling `video`  
   ["Variational Inference: Foundations and Innovations"](https://youtube.com/watch?v=Dv86zdWjJKQ) by David Blei `video`  
-  ["Variational Inference: Foundations and Modern Methods"](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Variational-Inference-Foundations-and-Modern-Methods)
-	tutorial by David Blei, Rajesh Ranganath, Shakir Mohamed `video` ([slides](http://www.cs.columbia.edu/~blei/talks/2016_NIPS_VI_tutorial.pdf))  
 
   [overview](https://youtube.com/watch?v=d0LZE6Drqyc) by Dmitry Kropotov `video`  
   [overview](https://youtu.be/tqGEX_Ucu04?t=48m42s) of alternatives to variational inference by Dmitry Molchanov `video` `in russian`  

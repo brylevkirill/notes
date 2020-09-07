@@ -26,7 +26,8 @@
   [overview](http://videolectures.net/kdd2014_amatriain_mobasher_recommender_problem) by Xavier Amatriain `video` `KDD 2014`  
   [overview](http://technocalifornia.blogspot.ru/2014/08/introduction-to-recommender-systems-4.html) by Xavier Amatriain `video` `MLSS 2014`  
 
-  ["Recent Trends in Personalization: A Netflix Perspective"](https://slideslive.com/38917692/recent-trends-in-personalization-a-netflix-perspective) by Justin Basilico `video` `ICML 2019`
+  ["Recent Trends in Personalization: A Netflix Perspective"](https://slideslive.com/38917692/recent-trends-in-personalization-a-netflix-perspective) by Justin Basilico `video` `ICML 2019`  
+  ["Beyond Being Accurate: Solving Real-World Recommendation Problems with Neural Modeling"](https://youtube.com/watch?v=FNmh-eGYAv0) by Ed Chi from Google `video` `2020`  
 
   [ACM RecSys](https://youtube.com/channel/UC2nEn-yNA1BtdDNWziphPGA) conference `video`
 
@@ -256,6 +257,8 @@
 #### ["Latent Cross: Making Use of Context in Recurrent Recommender Systems"](https://dl.acm.org/citation.cfm?id=3159727) Beutel et al.
   `YouTube`
 >	"The success of recommender systems often depends on their ability to understand and make use of the context of the recommendation request. Significant research has focused on how time, location, interfaces, and a plethora of other contextual features affect recommendations. However, in using deep neural networks for recommender systems, researchers often ignore these contexts or incorporate them as ordinary features in the model. In this paper, we study how to effectively treat contextual data in neural recommender systems. We begin with an empirical analysis of the conventional approach to context as features in feed-forward recommenders and demonstrate that this approach is inefficient in capturing common feature crosses. We apply this insight to design a state-of-the-art RNN recommender system. We first describe our RNN-based recommender system in use at YouTube. Next, we offer “Latent Cross,” an easy-to-use technique to incorporate contextual data in the RNN by embedding the context feature first and then performing an element-wise product of the context embedding with model’s hidden states. We demonstrate the improvement in performance by using this Latent Cross technique in multiple experimental settings."
+
+  - `video` <https://youtu.be/FNmh-eGYAv0?t=23m12s> (Chi)
 
 
 
