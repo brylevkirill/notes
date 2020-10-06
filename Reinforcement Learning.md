@@ -76,6 +76,7 @@
 
 	[**"Grandmaster Level in StarCraft II using Multi-agent Reinforcement Learning"**](#grandmaster-level-in-starcraft-ii-using-multi-agent-reinforcement-learning-vinyals-et-al) by Vinyals et al. `paper` `summary` *(AlphaStar)*
 
+	[overview](https://youtu.be/-fdexQBpRas?t=29m26s) by Oriol Vinyals `video`  
 	[overview](https://slideslive.com/38922724/grandmaster-level-in-starcraft-ii-using-multiagent-reinforcement-learning) by Oriol Vinyals `video`  
 	[overview](https://youtu.be/3UdH3lPF7nE) by Oriol Vinyals `video`  
 	[overview](https://slideslive.com/38916905/alphastar-mastering-the-game-of-starcraft-ii) by David Silver `video`  
@@ -123,6 +124,7 @@
 	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://arxiv.org/abs/1705.02955) by Brown and Sandholm `paper` *(Libratus)* ([talk](https://vimeo.com/248533943#t=53s) `video`, [post](https://thegradient.pub/libratus-poker))  
 	["Depth-Limited Solving for Imperfect-Information Games"](https://arxiv.org/abs/1805.08195) by Brown et al. `paper` ([overview](https://youtube.com/watch?v=S4-g3dPT2gY) `video`)  
 	[**"Deep Counterfactual Regret Minimization"**](#deep-counterfactual-regret-minimization-brown-lerer-gross-sandholm) by Brown et al. `paper` `summary`  
+	["Combining Deep Reinforcement Learning and Search for Imperfect-Information Games"](https://arxiv.org/abs/2007.13544) by Brown et al. `paper`  
 
 	[Libratus overview](https://youtube.com/watch?v=EhvH4jdF-ko) by Tuomas Sandholm `video`  
 	[Libratus overview](https://youtube.com/watch?v=xrWulRY_t1o) by Tuomas Sandholm `video`  
@@ -409,6 +411,7 @@
   [course](https://youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ) by David Silver `video`  *(basic)*  
   [course](https://udacity.com/course/reinforcement-learning--ud600) by Michael Littman `video`  *(basic)*  
   [course](https://youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u) by Emma Brunskill `video`  *(basic)*  
+  [course](https://youtube.com/playlist?list=PLnn6VZp3hqNvRrdnMOVtgV64F_O-61C1D) by Connor Shorten `video`  *(basic)*  
 
   [course](http://rail.eecs.berkeley.edu/deeprlcourse) from UC Berkeley ([videos](https://youtube.com/playlist?list=PLkFD6_40KJIwhWJpGazJ9VSj9CFMkb79A))  *(advanced)*  
   [course](https://youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs) from DeepMind `video`  *(advanced)*  
@@ -613,8 +616,11 @@
 
   Batch reinforcement learning offers a mechanism for learning offline from a fixed dataset without restrictions on the quality of the data.
 
+  ["Decisions from Data: How Offline Reinforcement Learning Will Change How We Use Machine Learning"](https://medium.com/@sergey.levine/decisions-from-data-how-offline-reinforcement-learning-will-change-how-we-use-ml-24d98cb069b0) by Sergey Levine
+
   ["Offline RL: Challenges, Algorithms, and Benchmarks"](https://youtube.com/watch?v=IUAePhU0E7Y) by Sergey Levine `video`  
   ["The Sub-basement of RL"](https://youtube.com/watch?v=373_zVWceqA) by Dale Schuurmans `video`  
+  ["Batch / Offline RL"](https://youtube.com/watch?v=MEK8lTaiUvQ) by Emma Brunskill `video`  
 
   ["Offline Reinforcement Learning: Tutorial, Review,and Perspectives on Open Problems"](https://arxiv.org/abs/2005.01643) by Levine et al. `paper`  
   ["Batch Reinforcement Learning"](http://tgabel.de/cms/fileadmin/user_upload/documents/Lange_Gabel_EtAl_RL-Book-12.pdf) by Lange et al. `paper`  

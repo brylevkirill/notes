@@ -58,6 +58,8 @@
   [tutorial](https://youtube.com/watch?v=zvrcyqcN9Wo) by Jonas Peters `video`  
   [tutorial](https://youtube.com/watch?v=_wFagI5Fn9I) by Jonas Peters `video`  
 
+  [course](https://youtube.com/channel/UCbOJ2eEdvf2wOPrAmA72Gzg) by Brady Neal `video`
+
   ["Causal Inference in Everyday Machine Learning"](https://youtube.com/watch?v=HOgx_SBBzn0) tutorial by Ferenc Huszar `video`  
   ["Causal Inference in Online Systems: Methods, Pitfalls and Best Practices"](https://mediasite.kellogg.northwestern.edu/Mediasite/Play/8e78dc83c6fb4d20abeeb18028a8f7071d?catalog=1533bdef-0c88-4513-ad97-5fce50c92e62) tutorial by Amit Sharma `video` ([slides](https://github.com/amit-sharma/causal-inference-tutorial))  
   ["Counterfactual Evaluation and Learning for Search, Recommendation and Ad Placement"](http://www.cs.cornell.edu/~adith/CfactSIGIR2016/) tutorial by Thorsten Joachims and Adith Swaminathan `video`  

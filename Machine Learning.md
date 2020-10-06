@@ -80,6 +80,7 @@
 
   [course](http://youtube.com/playlist?list=PLJOzdkh8T5krxc4HsHbB8g8f0hu7973fK) by Konstantin Vorontsov `video` `in russian` `2019`  
   [course](http://youtube.com/playlist?list=PLJOzdkh8T5kp99tGTEFjH_b9zqEQiiBtC) by Konstantin Vorontsov `video` `in russian` `2014`  
+  [course](http://youtube.com/c/SergeyNikolenko/playlists) by Sergey Nikolenko `video` `in russian` `2019-2020`  
   [course](http://youtube.com/playlist?list=PLwdBkWbW0oHFDCTvO6R8l3V3Pe2ophxpD) by Sergey Nikolenko `video` `in russian` `2020`  
   [course](http://youtube.com/playlist?list=PL-_cKNuVAYAWXoVzVEDCT-usTEBHUf4AF) by Sergey Nikolenko `video` `in russian` `2018`  
   [course](http://youtube.com/playlist?list=PLlb7e2G7aSpSSsCeUMLN-RxYOLAI9l2ld) by Igor Kuralenok `video` `in russian` `2017`  

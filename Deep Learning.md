@@ -71,10 +71,10 @@
 
 #### courses
 
-  [course](https://course.fast.ai) by Jeremy Howard `video`  
+  [course](https://course.fast.ai) from FastAI `video`  
   [course](https://youtube.com/playlist?list=PLqYmG7hTraZCDxZ44o4p3N5Anz3lLRVZF) from DeepMind `video` `2020`  
   [course](https://youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs) from DeepMind `video` `2018`  
-  [course](http://introtodeeplearning.com) from CMU ([videos](https://youtube.com/channel/UC8hYZGEkI2dDO8scT8C5UQA/playlists)) `2020`  
+  [course](https://youtube.com/channel/UC8hYZGEkI2dDO8scT8C5UQA/playlists) from CMU `2020`  
   [course](https://youtube.com/playlist?list=PLLssT5z_DsK_gyrQ_biidwvPYCRNGI3iv) by Geoffrey Hinton `video` `2012`  
   [course](https://youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH) by Hugo Larochelle `video` `2013`  
   [course](https://youtube.com/playlist?list=PL16j5WbGpaM0_Tj8CRmurZ8Kk1gEBc7fg) by Andrej Karpathy `video` `2016`  
@@ -406,10 +406,13 @@
 
   [overview](https://youtube.com/watch?v=1sJuWg5dULg) by Aravind Srinivas `video` `2020`  *(strengths and weaknesses of models)*  
   [overview](https://youtube.com/watch?v=7o9dT6puHHg) by Aravind Srinivas `video` `2019`  *(strengths and weaknesses of models)*  
-  [overview](https://youtube.com/watch?v=oRJ1hJTRs-0) by Danilo Rezende `video`  
-  [overview](http://videolectures.net/deeplearning2016_mohamed_generative_models) by Shakir Mohamed `video`  
+  [overview](https://youtube.com/watch?v=oRJ1hJTRs-0) by Danilo Rezende `video` `2019`  
+  [overview](http://videolectures.net/deeplearning2016_mohamed_generative_models) by Shakir Mohamed `video` `2016`  
 
-  ["Generative Models, Thermodynamics and Symmetries"](http://scgp.stonybrook.edu/video/video.php?id=4383) by Danilo Rezende `video`
+  ["Generative Models, Thermodynamics and Symmetries"](http://scgp.stonybrook.edu/video/video.php?id=4383) by Danilo Rezende `video` `2020`
+
+  [course](https://youtube.com/playlist?list=PLk4h7dmY2eYHjH6wjO1Wytb2ipXJX-aWj) from MIPT `video` `in russian` `2020`  
+  [course](https://youtube.com/playlist?list=PLk4h7dmY2eYH9RtoKGzxHKji0GLiBzSlZ) from MIPT `video` `in russian` `2019`  
 
 ----
 
@@ -818,25 +821,23 @@
 ---
 ### architectures - graph neural network
 
-  ["Deep Learning with Graph-structured Representations"](https://dare.uva.nl/search?identifier=1b63b965-24c4-4bcd-aabb-b849056fa76d) by Thomas Kipf `paper`
+  ["Relational Inductive Biases, Deep Learning, and Graph Networks"](https://arxiv.org/abs/1806.01261) by Battaglia et al.
 
-  ["Graph Convolutional Networks"](https://tkipf.github.io/graph-convolutional-networks) by Thomas Kipf
+  ["Graph Representation Learning"](https://morganclaypoolpublishers.com/catalog_Orig/product_info.php?products_id=1576) by William Hamilton `book`
+
+  ["Graph Neural Networks: Variations and Applications](https://youtube.com/watch?v=cWIeTMklzNg) by Alexander Gaunt `video`  
+  ["Convolutional Neural Networks on Graphs"](https://youtube.com/watch?v=v3jZRkvIOIM) by Xavier Bresson `video`  
+  ["Large-scale Graph Representation Learning"](https://youtube.com/watch?v=oQL4E1gK3VU) by Jure Leskovec `video`  
 
 ----
 
   <http://geometricdeeplearning.com>
 
-  ["Geometric Deep Learning: Going beyond Euclidean Data"](https://arxiv.org/abs/1611.08097) by Bronstein, Bruna, LeCun, Szlam, Vandergheynst `paper`
+  ["Geometric Deep Learning: Going beyond Euclidean Data"](https://arxiv.org/abs/1611.08097) by Bronstein et al. `paper`
 
-  ["Geometric Deep Learning"](https://vimeo.com/248497329) by Bronstein, Bruna, Szlam, Bresson, LeCun `video`  
+  ["Geometric Deep Learning"](https://vimeo.com/248497329) by Michael Bronstein, Joan Bruna, Arthur Szlam `video`  
   ["Geometric Deep Learning"](https://youtube.com/watch?v=ptcBmEHDWds) by Michael Bronstein `video`  
   ["Geometric Deep Learning"](https://youtube.com/watch?v=Qtgep2CEExY) by Joan Bruna and Michael Bronstein `audio`  
-
-----
-
-  ["Graph Neural Networks: Variations and Applications](https://youtube.com/watch?v=cWIeTMklzNg) by Alexander Gaunt `video`  
-  ["Convolutional Neural Networks on Graphs"](https://youtube.com/watch?v=v3jZRkvIOIM) by Xavier Bresson `video`  
-  ["Large-scale Graph Representation Learning"](https://youtube.com/watch?v=oQL4E1gK3VU) by Jure Leskovec `video`  
 
 ----
 
@@ -886,6 +887,7 @@
 ---
 ### architectures - attention
 
+  [overview](https://youtu.be/-fdexQBpRas?t=13m46s) by Oriol Vinyals `video`  
   [overview](https://youtube.com/watch?v=AIiwuClvH6k) by Alex Graves `video`  
   [overview](https://youtube.com/watch?v=Q57rzaHHO0k) by Alex Graves `video`  
   [overview](https://facebook.com/icml.imls/videos/382464939283864?t=690) by Alex Smola and Aston Zhang `video`  
@@ -901,7 +903,7 @@
   [overview](https://youtube.com/watch?v=bYmeuc5voUQ) by Ashish Vaswani `video`
 
   [**"Attention Is All You Need"**](#attention-is-all-you-need-vaswani-et-al) by Vaswani et al. `paper` `summary`  
-  ["Hopfield Networks is All You Need"](https://arxiv.org/abs/2008.02217) by Ramsauer et al. ([post](https://jku.at/index.php?id=18677), [overview](https://youtube.com/watch?v=nv6oFDp6rNQ) (Kilcher) `video`)  
+  ["Hopfield Networks is All You Need"](https://arxiv.org/abs/2008.02217) by Ramsauer et al. ([post](https://jku.at/index.php?id=18677), [overview](https://youtube.com/watch?v=nv6oFDp6rNQ) by Kilcher `video`)  
 
 ----
 
@@ -1313,6 +1315,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=EK61htlw8hY> (Hinton)
   - `video` <http://videolectures.net/deeplearning2017_larochelle_neural_networks/> (part 2, 1:28:45) (Larochelle)
   - `video` <https://youtube.com/watch?v=-4PGNj1CqZc> (Truskovskyi) `in russian`
+  - `post` <https://wandb.ai/authors/knowledge-distillation/reports/Distilling-Knowledge-in-Neural-Networks--VmlldzoyMjkxODk>
   - `paper` ["Distilling a Neural Network Into a Soft Decision Tree"](https://arxiv.org/abs/1711.09784) by Frosst, Hinton
 
 
@@ -1993,17 +1996,20 @@ Yoshua Bengio:
 
   - <https://gpt3examples.com> (demo)
   - `video` <https://vimeo.com/427943407/98fe5258a7> (demo)
-  - <https://pscp.tv/Microsoft/1OyKAYWPRrWKb?t=29m19s> (demo)
+  - `video` <https://pscp.tv/Microsoft/1OyKAYWPRrWKb?t=29m19s> (demo)
   - <https://justpaste.it/7eovk> (demo)
   - `video` <https://youtube.com/watch?v=ZyQkaml-5iE> (Ryder)
   - `video` <https://youtube.com/watch?v=7qPDwsCLbZc> (Kilcher, Shorten, Scarfe)
   - `video` <https://youtube.com/watch?v=SY5PvZrJhLE> (Kilcher)
   - `video` <https://youtube.com/watch?v=Mq97CF02sRY> (Heo)
+  - `video` <https://youtu.be/PUAdj3w3wO4?t=42m24s> (Chollet)
   - `post` <https://jalammar.github.io/how-gpt3-works-visualizations-animations>
   - `post` <https://gwern.net/newsletter/2020/05#gpt-3>
   - `post` <https://gwern.net/GPT-3>
   - `post` <https://slatestarcodex.com/2020/06/10/the-obligatory-gpt-3-post>
   - `post` <https://leogao.dev/2020/08/17/Building-AGI-Using-Language-Models>
+  - `post` <https://medium.com/@ChrisGPotts/is-it-possible-for-language-models-to-achieve-language-understanding-81df45082ee2>
+  - `notes` <https://erogol.com/short-notes-on-gpt-3>
   - `notes` <https://blog.inten.to/gpt-3-language-models-are-few-shot-learners-a13d1ae8b1f9>
   - `notes` <https://lambdalabs.com/blog/demystifying-gpt-3>
 
@@ -2640,6 +2646,7 @@ Yoshua Bengio:
   - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747?t=1107> (Vaswani, Shazeer)
   - `video` <https://youtu.be/I0nX4HDmXKc?t=7m46s> (Polosukhin)
   - `video` <https://youtube.com/watch?v=rBCqOTEfxvg> (Kaiser)
+  - `video` <https://youtu.be/-fdexQBpRas?t=26m9s> (Vinyals)
   - `video` <https://youtu.be/8zAP2qWAsKg?t=22m39s> (Hill)
   - `video` <https://youtube.com/watch?v=iDulhoQ2pro> (Kilcher)
   - `video` <https://youtu.be/AIiwuClvH6k?t=1h14m> (Graves)
@@ -2665,6 +2672,7 @@ Yoshua Bengio:
   - `post` <https://staff.fnwi.uva.nl/s.abnar/?p=108>
   - `post` <http://peterbloem.nl/blog/transformers>
   - `post` <https://towardsdatascience.com/transformers-are-graph-neural-networks-bca9f75412aa>
+  - `post` <https://thegradient.pub/transformers-are-graph-neural-networks>
   - `notes` <https://ricardokleinklein.github.io/2017/11/16/Attention-is-all-you-need.html>
   - `notes` <https://blog.tomrochette.com/machine-learning/papers/ashish-vaswani-attention-is-all-you-need>
   - `notes` <https://medium.com/@sharaf/a-paper-a-day-24-attention-is-all-you-need-26eb2da90a91>
@@ -2674,6 +2682,7 @@ Yoshua Bengio:
   - `paper` [**"Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#exploring-the-limits-of-transfer-learning-with-a-unified-text-to-text-transformer-raffel-et-al) by Raffel et al. `summary`
   - `paper` [**"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"**](#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-devlin-chang-lee-toutanova) by Devlin et al. `summary`
   - `paper` [**"Language Models are Unsupervised Multitask Learners"**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#language-models-are-unsupervised-multitask-learners-radford-wu-child-luan-amodei-sutskever) by Radford et al. `summary`
+  - `paper` ["An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"](https://openreview.net/forum?id=YicbFdNTTy) `paper` ([overview](https://youtube.com/watch?v=TrdevFK_am4) by Kilcher `video`)
 
 
 #### ["Stacked Capsule Autoencoders"](https://arxiv.org/abs/1906.06818) Kosiorek, Sabour, Teh, Hinton
@@ -2921,6 +2930,7 @@ Yoshua Bengio:
 >	"In the pointer networks, the output space of the target sequence is constrained to be the observations in the input sequence (not the input space). And instead of having a fixed dimension softmax output layer, softmax outputs of varying dimension is dynamically computed for each input sequence in such a way to maximize the attention probability of the target input."
 
   - `video` <http://youtube.com/watch?v=yS7rHi_lUGU> (demo)
+  - `video` <http://youtu.be/-fdexQBpRas?t=21m21s> (Vinyals)
   - `video` <http://youtu.be/9U0drwafE78?t=44m30s> (Vinyals)
   - `post` <http://fastml.com/introduction-to-pointer-networks/>
   - `notes` <https://medium.com/@sharaf/a-paper-a-day-11-pointer-networks-59f7af1a611c>
