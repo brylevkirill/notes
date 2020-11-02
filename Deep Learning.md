@@ -75,12 +75,17 @@
   [course](https://youtube.com/playlist?list=PLqYmG7hTraZCDxZ44o4p3N5Anz3lLRVZF) from DeepMind `video` `2020`  
   [course](https://youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs) from DeepMind `video` `2018`  
   [course](https://youtube.com/channel/UC8hYZGEkI2dDO8scT8C5UQA/playlists) from CMU `2020`  
+  [course](https://atcold.github.io/pytorch-Deep-Learning) from NYU `2020`  
   [course](https://youtube.com/playlist?list=PLLssT5z_DsK_gyrQ_biidwvPYCRNGI3iv) by Geoffrey Hinton `video` `2012`  
   [course](https://youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH) by Hugo Larochelle `video` `2013`  
   [course](https://youtube.com/playlist?list=PL16j5WbGpaM0_Tj8CRmurZ8Kk1gEBc7fg) by Andrej Karpathy `video` `2016`  
 
+  [course](https://youtube.com/c/SergeyNikolenko/playlists) by Sergey Nikolenko `video` `in russian` `2020`  
+  [course](https://youtube.com/c/DeepLearningSchool/playlists) from MIPT `video` `in russian` `2020`  
+  [course](https://github.com/yandexdataschool/Practical_DL) by Yandex, HSE, Skoltech `video` `in russian` `2020`  
   [course](https://dlcourse.ai) by Simon Kozlov et al. `video` `in russian` `2020`  
   [course](https://sphere.mail.ru/curriculum/program/discipline/120/) by Daniil Polykovsky and Kuzma Hrabrov `in russian` ([videos](https://youtube.com/playlist?list=PLrCZzMib1e9oOGNLh6_d65HyfdqlJwTQP) `2017`)  
+
   [course](https://github.com/aosokin/DL_CSHSE_spring2018) by Anton Osokin `in russian` ([videos](https://youtube.com/playlist?list=PLzY5g-rVmFayEkCcgO3_-it6HZwPZL3ld) `2018`)  
 
 
@@ -806,7 +811,7 @@
   [overview](https://youtube.com/watch?v=t_TY_5bG9J8) by Nando de Freitas `video` `2017`  
   [overview](https://youtube.com/watch?v=bNb2fEVKeEo) by Serena Young `video` `2017`  
   [overview](https://youtube.com/watch?v=LxfUGhug-iQ) by Andrej Karpathy `video` `2016`  
-  [overview](http://videolectures.net/deeplearning2016_fergus_neural_networks/) by Rob Fergus `video` `2016`  
+  [overview](https://youtube.com/watch?v=inDswouzWtA) by Sergey Nikolenko `video` `in russian` `2020`  
   [overview](https://youtube.com/watch?v=6-yBs3XLM20) by Victor Lempitsky `video` `in russian` `2016`  
 
   [overview](http://cs231n.github.io/convolutional-networks/) by Andrej Karpathy  
@@ -1950,6 +1955,7 @@ Yoshua Bengio:
   - `video` <https://youtu.be/99CymZY-4Tc?t=5m36s> (Lyalin) `in russian`
   - `video` <https://youtu.be/atSqU9HfJq0?t=1h9m13s> (Malykh) `in russian`
   - `video` <https://youtu.be/Q4HVS6c92qU?t=21m7s> (Alexeev) `in russian`
+  - `video` <https://youtu.be/1DygevyV2eA?t=17m27s> (Neychev) `in russian`
   - `post` <http://jalammar.github.io/illustrated-bert>
   - `post` <https://medium.com/dissecting-bert/dissecting-bert-part-1-d3c3d495cdb3> + <https://medium.com/dissecting-bert/dissecting-bert-part2-335ff2ed9c73> + <https://medium.com/dissecting-bert/dissecting-bert-appendix-the-decoder-3b86f66b0e5f>
   - `paper` ["Right for the Wrong Reasons: Diagnosing Syntactic Heuristics in Natural Language Inference"](https://arxiv.org/abs/1902.01007) by McCoy et al.
@@ -1994,15 +2000,18 @@ Yoshua Bengio:
 
 >	"GPT-3 is hamstrung by its training & data, but just simply training a big model on a lot of data induces meta-learning without even the slightest bit of meta-learning architecture being built in; and in general, training on more and harder tasks creates ever more human-like performance, generalization, and robustness."
 
+  - <https://github.com/elyase/awesome-gpt3> (demo)
   - <https://gpt3examples.com> (demo)
   - `video` <https://vimeo.com/427943407/98fe5258a7> (demo)
   - `video` <https://pscp.tv/Microsoft/1OyKAYWPRrWKb?t=29m19s> (demo)
   - <https://justpaste.it/7eovk> (demo)
+  - <https://reddit.com/user/thegentlemetre/comments> (demo)
   - `video` <https://youtube.com/watch?v=ZyQkaml-5iE> (Ryder)
   - `video` <https://youtube.com/watch?v=7qPDwsCLbZc> (Kilcher, Shorten, Scarfe)
   - `video` <https://youtube.com/watch?v=SY5PvZrJhLE> (Kilcher)
   - `video` <https://youtube.com/watch?v=Mq97CF02sRY> (Heo)
   - `video` <https://youtu.be/PUAdj3w3wO4?t=42m24s> (Chollet)
+  - `video` <https://youtube.com/watch?v=GJkXBGRHZWQ> (Shamshiev) `in russian`
   - `post` <https://jalammar.github.io/how-gpt3-works-visualizations-animations>
   - `post` <https://gwern.net/newsletter/2020/05#gpt-3>
   - `post` <https://gwern.net/GPT-3>
@@ -2655,13 +2664,16 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=KMY2Knr4iAs> (Chen)
   - `video` <https://youtube.com/watch?v=YQZRsowJZA8> (Lyalin) `in russian`
   - `video` <https://youtube.com/watch?v=KMgJFptbNlM> (Lyalin) `in russian`
+  - `video` <https://youtube.com/watch?v=2YScoz4uBm8> (Astakhov) `in russian`
   - `video` <https://youtube.com/watch?v=atSqU9HfJq0> (Malykh) `in russian`
   - `video` <https://youtube.com/watch?v=Bg8Y5q1OiP0> + <https://youtube.com/watch?v=7I_D2EOxwwI> (Neychev) `in russian`
   - `video` <https://youtube.com/watch?v=ONuRVpJSvfY> (Alexeev) `in russian`
   - `video` <https://youtu.be/JO-RJRCkLvM?t=1m16s> (Lobacheva) `in russian`
   - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) `in russian`
   - `video` <https://youtu.be/LhH6wMvntSM?t=54m56s> (Suleymanov) `in russian`
+  - `video` <https://youtube.com/watch?v=7e4LxIVENZA> (Sapunov) `in russian`
   - `video` <https://youtube.com/watch?v=znyvj3ijl7Q> (Sapunov) `in russian`
+  - `video` <https://youtube.com/watch?v=UETKUIlYE6g> (Neychev) `in russian`
   - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani, Uszkoreit)
   - `post` <https://lilianweng.github.io/lil-log/2020/04/07/the-transformer-family.html>
   - `post` <https://jalammar.github.io/illustrated-transformer/>
@@ -2682,7 +2694,7 @@ Yoshua Bengio:
   - `paper` [**"Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#exploring-the-limits-of-transfer-learning-with-a-unified-text-to-text-transformer-raffel-et-al) by Raffel et al. `summary`
   - `paper` [**"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"**](#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-devlin-chang-lee-toutanova) by Devlin et al. `summary`
   - `paper` [**"Language Models are Unsupervised Multitask Learners"**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#language-models-are-unsupervised-multitask-learners-radford-wu-child-luan-amodei-sutskever) by Radford et al. `summary`
-  - `paper` ["An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"](https://openreview.net/forum?id=YicbFdNTTy) `paper` ([overview](https://youtube.com/watch?v=TrdevFK_am4) by Kilcher `video`)
+  - `paper` ["An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"](https://arxiv.org/abs/2010.11929) `paper` ([overview](https://youtube.com/watch?v=TrdevFK_am4) by Kilcher `video`)
 
 
 #### ["Stacked Capsule Autoencoders"](https://arxiv.org/abs/1906.06818) Kosiorek, Sabour, Teh, Hinton
@@ -2827,6 +2839,8 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=pPN8d0E3900> (Geron)
   - `video` <https://youtube.com/watch?v=EATWLTyLfmc> (Canziani)
   - `video` <https://youtube.com/watch?v=hYt3FcJUf6w> (Uziela)
+  - `video` <https://youtu.be/3GnElTAUyiE?t=38m45s> (Nikolenko) `in russian`
+  - `video` <https://youtu.be/7jxEn97hwlE?t=1h43m11s> (Nikolenko) `in russian`
   - `video` <https://youtube.com/watch?v=UZ9BgrofhKk> (Kozlov) `in russian`
   - `video` <https://youtube.com/watch?v=8R3gXmh1F0c> (Lykov) `in russian`
   - `post` <https://oreilly.com/ideas/introducing-capsule-networks>

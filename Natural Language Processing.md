@@ -39,6 +39,7 @@
   [course](http://phontron.com/class/nn4nlp2020) from CMU ([videos](https://youtube.com/user/neubig/playlists))  
   [course](http://github.com/oxford-cs-deepnlp-2017/lectures) from Oxford and DeepMind `video`  
   [course](http://youtube.com/playlist?list=PLt1IfGj6-_-f55ULcae3v7YuG8p_eUjnk) from iPavlov and Yandex `video` `in russian`  
+  [course](https://github.com/yandexdataschool/nlp_course) from Yandex `video` `in russian`  
   [course](http://youtube.com/playlist?list=PLHvlTBWld13NDsJpNQU095K81vw5bH7X3) from Huawei Russia `video` `in russian`  
   [course](https://my.compscicenter.ru/courses/introduction-nlp) by Anton Alexeev ([videos](https://youtube.com/playlist?list=PLlb7e2G7aSpRTcBciP6VBJJPvdH_DXRXQ)) `in russian`  
 

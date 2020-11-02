@@ -413,7 +413,8 @@
   [course](https://youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u) by Emma Brunskill `video`  *(basic)*  
   [course](https://youtube.com/playlist?list=PLnn6VZp3hqNvRrdnMOVtgV64F_O-61C1D) by Connor Shorten `video`  *(basic)*  
 
-  [course](http://rail.eecs.berkeley.edu/deeprlcourse) from UC Berkeley ([videos](https://youtube.com/playlist?list=PLkFD6_40KJIwhWJpGazJ9VSj9CFMkb79A))  *(advanced)*  
+  [course](http://rail.eecs.berkeley.edu/deeprlcourse) from UC Berkeley ([videos](https://youtube.com/playlist?list=PL_iWQOsE6TfURIIhCrlt-wj9ByIVpbfGc)) `2020`  *(advanced)*  
+  [course](http://rail.eecs.berkeley.edu/deeprlcourse/resources#prev-off) from UC Berkeley ([videos](https://youtube.com/playlist?list=PLkFD6_40KJIwhWJpGazJ9VSj9CFMkb79A)) `2019`  *(advanced)*  
   [course](https://youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs) from DeepMind `video`  *(advanced)*  
   [course](https://youtube.com/playlist?list=PLkFD6_40KJIznC9CDbVTjAF2oyt8_VAe3) by Sergey Levine, John Schulman and Chelsea Finn `video`  *(advanced)*  
   [course](https://github.com/yandexdataschool/Practical_RL/) from Yandex and HSE `video` `in russian`  *(advanced)*  
@@ -618,6 +619,7 @@
 
   ["Decisions from Data: How Offline Reinforcement Learning Will Change How We Use Machine Learning"](https://medium.com/@sergey.levine/decisions-from-data-how-offline-reinforcement-learning-will-change-how-we-use-ml-24d98cb069b0) by Sergey Levine
 
+  ["Offline Reinforcement Learning"](https://youtube.com/watch?v=qgZPZREor5I) by Sergey Levine `video`  
   ["Offline RL: Challenges, Algorithms, and Benchmarks"](https://youtube.com/watch?v=IUAePhU0E7Y) by Sergey Levine `video`  
   ["The Sub-basement of RL"](https://youtube.com/watch?v=373_zVWceqA) by Dale Schuurmans `video`  
   ["Batch / Offline RL"](https://youtube.com/watch?v=MEK8lTaiUvQ) by Emma Brunskill `video`  
@@ -885,6 +887,7 @@
 
 	[overview](https://youtu.be/DSYzHPW26Ig?t=2h1m40s) by Alex Graves `video`
 
+	["Reinforcement Driven Information Acquisition In Non-Deterministic Environments"](https://researchgate.net/publication/277286220_Reinforcement_Driven_Information_Acquisition_In_Non-Deterministic_Environments) by Storck, Hochreiter, Schmidhuber `paper`  
 	[**"Universal Knowledge-Seeking Agents for Stochastic Environments"**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-knowledge-seeking-agents-for-stochastic-environments-orseau-lattimore-hutter) by Orseau et al. `paper` `summary` ([**Knowledge-Seeking Agent**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---knowledge-seeking-agent) theory by Hutter and Orseau)  
 	[**"Curiosity Driven Reinforcement Learning for Motion Planning on Humanoids"**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#curiosity-driven-reinforcement-learning-for-motion-planning-on-humanoids-frank-leitner-stollenga-forster-schmidhuber) by Frank et al. `paper` `summary`  
 	[**"VIME: Variational Information Maximizing Exploration"**](#vime-variational-information-maximizing-exploration-houthooft-chen-duan-schulman-turck-abbeel) by Houthooft et al. `paper` `summary`  
@@ -2646,6 +2649,8 @@ interesting recent papers:
 >	"Reinforcement learning allows solving complex tasks, however, the learning tends to be task-specific and the sample efficiency remains a challenge. We present Plan2Explore, a self-supervised reinforcement learning agent that tackles both these challenges through a new approach to self-supervised exploration and fast adaptation to new tasks, which need not be known during exploration. During exploration, unlikeprior methods which retrospectively compute the novelty of observations after the agent has already reached them, our agent acts efficiently by leveraging planning to seek out expected future novelty. After exploration, the agent quickly adapts to multiple downstream tasks in a zero or a few-shot manner. We evaluate on challenging control tasks from high-dimensional image inputs. Without any training supervision or task-specific interaction, Plan2Explore outperforms prior self-supervised exploration methods, and in fact, almost matches the performances oracle which has access to rewards."
 
   - <https://ramanans1.github.io/plan2explore>
+  - `post` <https://bair.berkeley.edu/blog/2020/10/06/plan2explore/>
+  - `post` <https://blog.ml.cmu.edu/2020/10/06/plan2explore/>
   - `video` <https://youtube.com/watch?v=gan79mAVfq8> (Pathak)
   - `video` <https://pscp.tv/w/1mnGelLjoBWKX> (1:03:12) (Lillicrap)
   - `video` <https://youtube.com/watch?v=GyEzjW1m7kU> (Rybkin)

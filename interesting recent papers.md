@@ -149,6 +149,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=CobEbJEYUnU> (Frankle)
   - `video` <https://youtu.be/8UxS4ls6g1g?t=1h25m> (Frankle)
   - `video` <https://youtube.com/watch?v=SfjJoevBbjU> (Frankle, Kilcher, Shorten, Scarfe, Salvaris)
+  - `video` <https://youtube.com/watch?v=0cU8r6dgD_A> (Carbin)
   - `video` <https://youtube.com/watch?v=ZVVnvZdUMUk> (Kilcher)
   - `video` <https://youtube.com/watch?v=LXm_6eq0Cs4> (Shorten)
   - `video` <https://youtube.com/watch?v=5PF-I1NKTmk> (LaLonde)
@@ -1844,6 +1845,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"We show that data augmentations such as random crop, color jitter, patch cutout, and random convolutions can enable simple RL algorithms to match and even outperform complex state-of-the-art methods across common benchmarks in terms of data-efficiency, generalization, and wall-clock speed. We find that data diversity alone can make agents focus on meaningful information from high-dimensional observations without any changes to the reinforcement learning method."  
 
 #### ["Image Augmentation Is All You Need: Regularizing Deep Reinforcement Learning from Pixels"](https://arxiv.org/abs/2004.13649) Kostrikov, Yarats, Fergus
+  `DrQ`
 >	"We propose a simple data augmentation technique that can be applied to standard model-free reinforcement learning algorithms, enabling robust learning directly from pixels without the need for auxiliary losses or pre-training. The approach leverages input perturbations commonly used in computer vision tasks to regularize the value function. Existing model-free approaches, such as Soft Actor-Critic (SAC), are not able to train deep networks effectively from image pixels. However, the addition of our augmentation method dramatically improves SAC's performance, enabling it to reach state-of-the-art performance on the DeepMind control suite, surpassing model-based (Dreamer, PlaNet, and SLAC) methods and recently proposed contrastive learning (CURL)."  
 
 ----
