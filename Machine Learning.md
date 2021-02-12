@@ -377,6 +377,10 @@
   [Metalearning symposium](https://vimeo.com/250399623) panel `video`  
   [RNN symposium](https://youtube.com/watch?v=zSNkbhgMkzQ) panel `video`  
 
+----
+
+  ["Meta-learning in Natural and Artificial Intelligence"](https://sciencedirect.com/science/article/pii/S2352154621000024) by Jane Wang `paper`
+
   [meta-learning](https://lilianweng.github.io/lil-log/2018/11/30/meta-learning.html) overview by Lilian Weng  
   [meta reinforcement learning](https://lilianweng.github.io/lil-log/2019/06/23/meta-reinforcement-learning.html) overview by Lilian Weng  
 

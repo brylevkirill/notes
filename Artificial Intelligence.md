@@ -45,6 +45,10 @@
 
   [**interesting papers - definitions and measures of intelligence**](#interesting-papers---definitions-and-measures-of-intelligence)
 
+----
+
+  ["Progress and Hype in AI Research"](https://github.com/brylevkirill/posts/blob/master/AI.md)
+
 
 
 ---
@@ -263,6 +267,8 @@
   [tutorial](http://videolectures.net/ssll09_hutter_uai/) by Marcus Hutter `video`  
   [tutorial](http://videolectures.net/mlss08au_hutter_fund/) by Marcus Hutter `video`  
 
+  [overview](https://youtube.com/watch?v=V2KtvlJf6fI) by Juergen Schmidhuber `video`
+
 ----
 
   [**interesting papers**](#interesting-papers---universal-artificial-intelligence)
@@ -453,7 +459,8 @@
 
 ----
 
-  [overview](https://youtu.be/nqiUFc52g78?t=21m13s) by Juergen Schmidhuber `video`
+  [overview](https://youtube.com/watch?v=voczu4I3_xQ) by Juergen Schmidhuber `video`  
+  [overview](https://youtu.be/nqiUFc52g78?t=21m13s) by Juergen Schmidhuber `video`  
 
   [discussion](https://youtu.be/YMdFUay0k20?t=1h30s) with Marcus Hutter `video`
 

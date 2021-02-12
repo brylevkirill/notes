@@ -119,12 +119,14 @@
 
 	[Libratus overview](https://int8.io/counterfactual-regret-minimization-for-poker-ai/#Libratus_8211_DeepStack8217s_main_rival_from_Carnegie_Mellon_University) by Kamil Czarnogorski  
 	[Libratus overview](https://thegradient.pub/libratus-poker) by Jiren Zhu  
+	[Pluribus overview](https://ai.facebook.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker)  
 
 	["Superhuman AI for Heads-up No-limit Poker: Libratus Beats Top Professionals"](http://science.sciencemag.org/content/early/2017/12/15/science.aao1733.full) by Brown and Sandholm `paper` *(Libratus)*  
-	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://arxiv.org/abs/1705.02955) by Brown and Sandholm `paper` *(Libratus)* ([talk](https://vimeo.com/248533943#t=53s) `video`, [post](https://thegradient.pub/libratus-poker))  
+	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://arxiv.org/abs/1705.02955) by Brown and Sandholm `paper` *(Libratus)* ([talk](https://vimeo.com/248533943#t=53s) `video`)  
 	["Depth-Limited Solving for Imperfect-Information Games"](https://arxiv.org/abs/1805.08195) by Brown et al. `paper` ([overview](https://youtube.com/watch?v=S4-g3dPT2gY) `video`)  
-	[**"Deep Counterfactual Regret Minimization"**](#deep-counterfactual-regret-minimization-brown-lerer-gross-sandholm) by Brown et al. `paper` `summary`  
-	["Combining Deep Reinforcement Learning and Search for Imperfect-Information Games"](https://arxiv.org/abs/2007.13544) by Brown et al. `paper`  
+	["Superhuman AI for Multiplayer Poker"](https://science.sciencemag.org/content/365/6456/885) by Brown and Sandholm `paper` ([overview](https://youtube.com/watch?v=JuvN4mi861k) `video`) *(Pluribus)*  
+	[**"Deep Counterfactual Regret Minimization"**](#deep-counterfactual-regret-minimization-brown-lerer-gross-sandholm) by Brown et al. `paper` `summary` *(Deep CFR)*  
+	[**"Combining Deep Reinforcement Learning and Search for Imperfect-Information Games"**](#combining-deep-reinforcement-learning-and-search-for-imperfect-information-games-brown-et-al) Brown et al. `paper` `summary` *(ReBeL)*  
 
 	[Libratus overview](https://youtube.com/watch?v=EhvH4jdF-ko) by Tuomas Sandholm `video`  
 	[Libratus overview](https://youtube.com/watch?v=xrWulRY_t1o) by Tuomas Sandholm `video`  
@@ -132,6 +134,7 @@
 	[Libratus overview](https://youtube.com/watch?v=McV4a6umbAY) by Noam Brown `video`  
 	[Libratus overview](https://youtube.com/watch?v=2dX0lwaQRX0) by Noam Brown `video`  
 	[Libratus overview](https://youtube.com/watch?v=UTogLB99JKQ) by Noam Brown `video`  
+	[Pluribus overview](https://youtube.com/watch?v=JuvN4mi861k) by Noam Brown `video`  
 
 	["New Results for Solving Imperfect-Information Games"](https://vimeo.com/313942390) by Tuomas Sandholm `video`  
 	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://vimeo.com/248533943#t=53s) by Noam Brown `video`  
@@ -144,13 +147,11 @@
 	[Libratus discussion](https://youtube.com/watch?v=wKey6eKccYM) with Noam Brown `audio`  
 	[Libratus discussion](https://reddit.com/r/MachineLearning/comments/7jn12v/ama_we_are_noam_brown_and_professor_tuomas) with Noam Brown and Tuomas Sandholm  
 
-	[Libratus vs top players](https://youtube.com/watch?v=crgmYTMfrSc) games highlights `video`
-
-	[Pluribus overview](https://ai.facebook.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker)  
-	[Pluribus "Science" magazine](https://science.sciencemag.org/content/early/2019/07/10/science.aay2400) `paper`  
-
 	[Pluribus discussion](https://reddit.com/r/MachineLearning/comments/ceece3/ama_we_are_noam_brown_and_tuomas_sandholm) with Noam Brown and Tuomas Sandholm  
 	[Pluribus discussion](https://news.ycombinator.com/item?id=20415379) with Noam Brown  
+
+	[Libratus vs top players](https://youtube.com/watch?v=crgmYTMfrSc) games highlights `video`  
+	[Pluribus vs top players](https://youtube.com/playlist?list=PLm7RXNGNZs2V6en-KZx5dTV_BP-Ejem3q) games `video`  
 
 ----
   - *Poker*  
@@ -601,7 +602,7 @@
 ----
 #### forms of supervision
 
-  - scalar rewards (online vs [**batch/offline learning**](#batch-reinforcement-learning), on-policy vs [**off-policy learning**](#off-policy-reinforcement-learning))
+  - scalar rewards (online vs [**offline/batch learning**](#offline-reinforcement-learning), on-policy vs [**off-policy learning**](#off-policy-reinforcement-learning))
   - demonstrated behavior ([**imitation learning**](#imitation-learning), [**inverse reinforcement learning**](#inverse-reinforcement-learning))
   - self-supervision ([**unsupervised learning**](#unsupervised-reinforcement-learning))
   - auxiliary objectives ([**exploration and intrinsic motivation**](#exploration-and-intrinsic-motivation), learning task-relevant problems)
@@ -613,9 +614,9 @@
 
 
 ----
-#### batch reinforcement learning
+#### offline reinforcement learning
 
-  Batch reinforcement learning offers a mechanism for learning offline from a fixed dataset without restrictions on the quality of the data.
+  Offline/batch reinforcement learning offers a mechanism for learning offline from a fixed dataset without restrictions on the quality of the data.
 
   ["Decisions from Data: How Offline Reinforcement Learning Will Change How We Use Machine Learning"](https://medium.com/@sergey.levine/decisions-from-data-how-offline-reinforcement-learning-will-change-how-we-use-ml-24d98cb069b0) by Sergey Levine
 
@@ -625,6 +626,7 @@
   ["Batch / Offline RL"](https://youtube.com/watch?v=MEK8lTaiUvQ) by Emma Brunskill `video`  
 
   ["Offline Reinforcement Learning: Tutorial, Review,and Perspectives on Open Problems"](https://arxiv.org/abs/2005.01643) by Levine et al. `paper`  
+  ["RL Unplugged: Benchmarks for Offline Reinforcement Learning"](https://arxiv.org/abs/2006.13888) by Gulcehre et al. `paper`  
   ["Batch Reinforcement Learning"](http://tgabel.de/cms/fileadmin/user_upload/documents/Lange_Gabel_EtAl_RL-Book-12.pdf) by Lange et al. `paper`  
 
 
@@ -1836,13 +1838,18 @@ interesting recent papers:
 
 >	"We tested our model-based learning algorithm against a comparable model-free learning algorithm. When evaluated on Ms. Pacman, our model-free algorithm achieved identical results to R2D2, but learned significantly slower than MuZero and converged to a much lower final score. We conjecture that the search-based policy improvement step of MuZero provides a stronger learning signal than the high bias, high variance targets used by Q-learning."
 
+  - `post` <http://furidamu.org/blog/2020/12/22/muzero-intuition>
+  - `post` <https://deepmind.com/blog/article/muzero-mastering-go-chess-shogi-and-atari-without-rules>
   - `video` <https://youtube.com/playlist?list=PLnn6VZp3hqNsrsp_Bg-bEfzzhJ3SuEZE9>
-  - `video` <https://slideslive.com/38922026/deep-reinforcement-learning-2?t=3855> (Schrittwieser)
+  - `video` <https://youtube.com/watch?v=L0A86LmH7Yw> (Schrittwieser)
+  - `video` <https://slideslive.com/38922736/latebreaking-papers-mastering-atari-go-chess-and-shogi-by-planning-with-a-learned-model> (Schrittwieser)
+  - `video` <https://youtube.com/watch?v=vt5jOSy7cz8> (Schrittwieser)
   - `video` <https://pscp.tv/w/1mnGelLjoBWKX> (44:00) (Lillicrap)
   - `video` <https://youtube.com/watch?v=We20YSAJZSE> (Kilcher)
   - `video` <https://slideslive.com/38923124/nonsupervised-learning-and-decision-making?t=1832> (Rezende)
   - `video` <https://youtu.be/BGyRM5vCkfw?t=26m54s> (Engalych) `in russian`
   - `notes` <https://www.shortscience.org/paper?bibtexKey=journals/corr/1911.08265>
+  - `paper` <https://rdcu.be/ccErB> ("Nature" magazine)
 
 
 #### ["Mastering the Game of Go without Human Knowledge"](https://deepmind.com/documents/119/agz_unformatted_nature.pdf) Silver et al.
@@ -1952,6 +1959,15 @@ interesting recent papers:
 >	"The results presented in this work are on the deterministic, discrete action space domain of Hex. This allowed for direct comparison to MCTS, but the most exciting potential applications of PGS are to problems where MCTS cannot be readily used, such as problems with stochastic state transitions or continuous action spaces."
 
   - `paper` ["Sample-Based Learning and Search with Permanent and Transient Memories"](https://researchgate.net/publication/221346457_Sample-based_learning_and_search_with_permanent_and_transient_memories) by Silver et al. ([talk](http://videolectures.net/icml08_silver_sbl) `video`) *(Dyna-2)*
+
+
+#### ["Combining Deep Reinforcement Learning and Search for Imperfect-Information Games"](https://arxiv.org/abs/2007.13544) Brown et al.
+  `ReBeL`
+>	"The combination of deep reinforcement learning and search at both training and test time is a powerful paradigm that has led to a number of successes in single-agent settings and perfect-information games, best exemplified by AlphaZero. However, prior algorithms of this form cannot cope with imperfect-information games. This paper presents ReBeL, a general framework for self-play reinforcement learning and search that provably converges to a Nash equilibrium in any two-player zero-sum game. In the simpler setting of perfect-information games, ReBeL reduces to an algorithm similar to AlphaZero. Results in two different imperfect-information games show ReBeL converges to an approximate Nash equilibrium. We also show ReBeL achieves superhuman performance in heads-up no-limit Texas hold'em poker, while using far less domain knowledge than any prior poker AI."
+
+  - `post` <https://ai.facebook.com/blog/rebel-a-general-game-playing-ai-bot-that-excels-at-poker-and-more>
+  - `video` <https://youtube.com/watch?v=mCldyXOYNok> (Brown)
+  - `video` <https://youtube.com/watch?v=BhUWvQmLzSk> (Kilcher)
 
 
 #### ["DeepStack: Expert-Level Artificial Intelligence in No-Limit Poker"](http://arxiv.org/abs/1701.01724) Moravcik et al.

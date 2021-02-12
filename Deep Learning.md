@@ -505,9 +505,10 @@
   overview ([[1]](https://youtube.com/watch?v=1CT-kxjYbFU), [[2]](https://youtube.com/watch?v=0W1dixJfKL4)) by Pieter Abbeel and Aravind Srinivas `video` `2020`  
   overview ([[1]](https://youtu.be/grsO57XMJMk?t=1h1m41s), [[2]](https://youtu.be/5NMIUZ7_nrg)) by Aravind Srinivas and Xi Chen `video` `2019`  
 
-  [tutorial](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks) by Ian Goodfellow `video` ([paper](https://arxiv.org/abs/1701.00160))
+  [tutorial](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks) by Ian Goodfellow `video` ([paper](https://arxiv.org/abs/1701.00160)) `2016`
 
-  [course](https://lektorium.tv/node/36609) by Sergey Nikolenko `video` `in russian`
+  [overview](https://youtube.com/watch?v=BN4CXnd3NNY) by Sergey Nikolenko `video` `in russian` `2020`  
+  [course](https://lektorium.tv/node/36609) by Sergey Nikolenko `video` `in russian` `2019`  
 
   [overview](https://youtube.com/watch?v=T4UuL7U5asA) by Egor Zakharov `video`  
   [overview](https://youtube.com/watch?v=m80Vp-jz-Io) by Iliya Tolstikhin `video`  
@@ -859,7 +860,7 @@
   [overview](https://youtube.com/watch?v=yCC09vCHzF8) by Andrej Karpathy `video`  
   [overview](https://youtube.com/watch?v=6niqTuYFZLQ) by Justin Johnson `video`  
   [overview](https://youtube.com/watch?v=ZVN14xYm7JA) by Ian Goodfellow `video`  
-  [overview](http://videolectures.net/deeplearning2016_bengio_neural_networks/) by Yoshua Bengio `video`  
+  [overview](https://youtube.com/watch?v=ehTMJwMsl8g) by Sergey Nikolenko `video` `in russian`  
 
   ["When Recurrent Models Don't Need to be Recurrent"](http://offconvex.org/2018/07/27/approximating-recurrent/) by John Miller  
   ["The Unreasonable Effectiveness of Recurrent Neural Networks"](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) by Andrej Karpathy  
@@ -896,6 +897,7 @@
   [overview](https://youtube.com/watch?v=AIiwuClvH6k) by Alex Graves `video`  
   [overview](https://youtube.com/watch?v=Q57rzaHHO0k) by Alex Graves `video`  
   [overview](https://facebook.com/icml.imls/videos/382464939283864?t=690) by Alex Smola and Aston Zhang `video`  
+  [overview](https://youtube.com/watch?v=z15hfmcKPiE) by Sergey Nikolenko `video` `in russian`  
   [overview](https://youtube.com/watch?v=_XRBlhzb31U) by Mikhail Figurnov `video` `in russian`  
 
   [overview](http://wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/) by Denny Britz  
@@ -1320,6 +1322,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=EK61htlw8hY> (Hinton)
   - `video` <http://videolectures.net/deeplearning2017_larochelle_neural_networks/> (part 2, 1:28:45) (Larochelle)
   - `video` <https://youtube.com/watch?v=-4PGNj1CqZc> (Truskovskyi) `in russian`
+  - `video` <https://youtu.be/wfbe2yaXAkI?t=1h43m35s> (Vorontsov) `in russian`
   - `post` <https://wandb.ai/authors/knowledge-distillation/reports/Distilling-Knowledge-in-Neural-Networks--VmlldzoyMjkxODk>
   - `paper` ["Distilling a Neural Network Into a Soft Decision Tree"](https://arxiv.org/abs/1711.09784) by Frosst, Hinton
 
@@ -2006,7 +2009,9 @@ Yoshua Bengio:
   - `video` <https://pscp.tv/Microsoft/1OyKAYWPRrWKb?t=29m19s> (demo)
   - <https://justpaste.it/7eovk> (demo)
   - <https://reddit.com/user/thegentlemetre/comments> (demo)
-  - `video` <https://youtube.com/watch?v=ZyQkaml-5iE> (Ryder)
+  - `video` <https://youtube.com/watch?v=QMqPAM_knrE> (Kaplan)
+  - `video` <https://youtube.com/watch?v=iccd86vOz3w> (Scarfe, Kilcher, Leahy, Saba, Marcus)
+  - `video` <https://youtube.com/watch?v=fTvB5xMNfTY> (Kilcher, Scarfe, Duggar, Leahy)
   - `video` <https://youtube.com/watch?v=7qPDwsCLbZc> (Kilcher, Shorten, Scarfe)
   - `video` <https://youtube.com/watch?v=SY5PvZrJhLE> (Kilcher)
   - `video` <https://youtube.com/watch?v=Mq97CF02sRY> (Heo)
@@ -2662,18 +2667,20 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=HsYPiKDTikg> (Li)
   - `video` <https://youtube.com/watch?v=S0KakHcj_rs> (Palermo)
   - `video` <https://youtube.com/watch?v=KMY2Knr4iAs> (Chen)
+  - `video` <https://youtube.com/watch?v=pgBHnimRPzQ> (Nikolenko) `in russian`
   - `video` <https://youtube.com/watch?v=YQZRsowJZA8> (Lyalin) `in russian`
   - `video` <https://youtube.com/watch?v=KMgJFptbNlM> (Lyalin) `in russian`
   - `video` <https://youtube.com/watch?v=2YScoz4uBm8> (Astakhov) `in russian`
+  - `video` <https://youtube.com/watch?v=qfOk7IWDoDY> (Chumachenko) `in russian`
   - `video` <https://youtube.com/watch?v=atSqU9HfJq0> (Malykh) `in russian`
   - `video` <https://youtube.com/watch?v=Bg8Y5q1OiP0> + <https://youtube.com/watch?v=7I_D2EOxwwI> (Neychev) `in russian`
+  - `video` <https://youtube.com/watch?v=UETKUIlYE6g> (Neychev) `in russian`
   - `video` <https://youtube.com/watch?v=ONuRVpJSvfY> (Alexeev) `in russian`
   - `video` <https://youtu.be/JO-RJRCkLvM?t=1m16s> (Lobacheva) `in russian`
   - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) `in russian`
   - `video` <https://youtu.be/LhH6wMvntSM?t=54m56s> (Suleymanov) `in russian`
   - `video` <https://youtube.com/watch?v=7e4LxIVENZA> (Sapunov) `in russian`
   - `video` <https://youtube.com/watch?v=znyvj3ijl7Q> (Sapunov) `in russian`
-  - `video` <https://youtube.com/watch?v=UETKUIlYE6g> (Neychev) `in russian`
   - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani, Uszkoreit)
   - `post` <https://lilianweng.github.io/lil-log/2020/04/07/the-transformer-family.html>
   - `post` <https://jalammar.github.io/illustrated-transformer/>

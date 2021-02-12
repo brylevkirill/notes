@@ -45,6 +45,12 @@ interesting older papers:
 [**interesting older papers**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#interesting-papers---theory)
 
 ----
+#### ["Underspecification Presents Challenges for Credibility in Modern Machine Learning"](https://arxiv.org/abs/2011.03395) DAmour et al.
+  `generalization`
+>	"ML models often exhibit unexpectedly poor behavior when they are deployed in real-world domains. We identify underspecification as a key reason for these failures. An ML pipeline is underspecified when it can return many predictors with equivalently strong held-out performance in the training domain. Underspecification is common in modern ML pipelines, such as those based on deep learning. Predictors returned by underspecified pipelines are often treated as equivalent based on their training domain performance, but we show here that such predictors can behave very differently in deployment domains. This ambiguity can lead to instability and poor model behavior in practice, and is a distinct failure mode from previously identified issues arising from structural mismatch between training and deployment domains. We show that this problem appears in a wide variety of practical ML pipelines, using examples from computer vision, medical imaging, natural language processing, clinical risk prediction based on electronic health records, and medical genomics. Our results show the need to explicitly account for underspecification in modeling pipelines that are intended for real-world deployment in any domain."  
+  - `video` <https://youtube.com/watch?v=gch94ttuy5s> (Kilcher) `video`
+  - `post` <https://technologyreview.com/2020/11/18/1012234/training-machine-learning-broken-real-world-heath-nlp-computer-vision>
+
 #### ["Reconciling Modern Machine Learning Practice and the Bias-variance Trade-off"](https://arxiv.org/abs/1812.11118) Belkin, Hsu, Ma, Mandal
   `generalization`
   - <https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#reconciling-modern-machine-learning-practice-and-the-bias-variance-trade-off-belkin-hsu-ma-mandal>
@@ -1131,6 +1137,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/dMUes74-nYY?t=2h10m45s> (Srinivas)
   - `video` <https://youtu.be/1sJuWg5dULg?t=36m16s> (Srinivas)
   - `video` <https://youtube.com/watch?v=APki8LmdJwY> (Shorten)
+  - `video` <https://youtube.com/watch?v=aDHnSPYROCs> (Saroufim)
   - `video` <https://youtube.com/watch?v=5lsmGWtxnKA>
   - `video` <https://youtu.be/y8pgdXdYPwU?t=30m56s> (Atanov) `in russian`
   - `video` <https://youtu.be/OSzynwC1gow?t=4m59s> (Mosin) `in russian`
@@ -3304,7 +3311,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtube.com/watch?v=FQSPkCMtDyY> (Grishin) `in russian`
 
 #### ["Robust and Efficient Transfer Learning with Hidden Parameter Markov Decision Processes"](https://arxiv.org/abs/1706.06544) Killian, Daulton, Konidaris, Doshi-Velez
-  `semantic representation`
+  `HiP-MDP` `semantic representation`
 >	"A new framework for modeling families of related tasks using low-dimensional latent embeddings, which correctly models the joint uncertainty in the latent parameters and the state space."  
 >	"Define a new class of MDPs that includes a parameter θ which defines a parameterized transition function. Then, learning is done in the parameterized space; if the agent effectively learns the parameter, it can transfer knowledge to any MDP in the class."  
   - `video` <https://vimeo.com/248527846#t=14m49s> (Killian)
