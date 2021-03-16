@@ -367,6 +367,7 @@
 ---
 ### self-supervised learning
 
+  [overview](https://ai.facebook.com/blog/self-supervised-learning-the-dark-matter-of-intelligence) by Yann LeCun ([overview](https://youtube.com/watch?v=Ag1bw8MfHGQ) `video`)  
   [overview](https://lilianweng.github.io/lil-log/2019/11/10/self-supervised-learning.html) by Lilian Weng  
   [overview](https://ankeshanand.com/blog/2020/01/26/contrative-self-supervised-learning.html) by Ankesh Anand  
   [overview](https://amitness.com/2020/02/illustrated-self-supervised-learning) by Amit Chaudhary  
@@ -918,6 +919,7 @@
 
   [overview](https://youtube.com/watch?v=x5Vxk9twXlE) by Geoffrey Hinton `video`
 
+  ["How to Represent Part-whole Hierarchies in a Neural Network"](https://arxiv.org/abs/2102.12627) by Hinton `paper` ([overview](https://youtube.com/watch?v=cllFzkvrYmE) `video`)  
   [**"Stacked Capsule Autoencoders"**](#stacked-capsule-autoencoders-kosiorek-sabour-teh-hinton) by Kosiorek et al. `paper` `summary`  
   [**"Matrix Capsules with EM Routing"**](#matrix-capsules-with-em-routing-hinton-sabour-frosst) by Hinton et al. `paper` `summary`  
   [**"Dynamic Routing Between Capsules"**](#dynamic-routing-between-capsules-sabour-frosst-hinton) by Hinton et al. `paper` `summary`  
@@ -1954,6 +1956,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=9-Om2YcHhIA> (Li)
   - `video` <https://youtube.com/watch?v=BhlOGGzC0Q0> + <https://youtube.com/watch?v=rMQMHA-uv_E> (Gharbieh)
   - `video` <https://youtube.com/watch?v=BhlOGGzC0Q0> (Luo)
+  - `video` <https://youtu.be/0rZBf5Hrsz0?t=1h18m11s> + <https://youtu.be/0h5RlFQUwAY?t=50m> (Grabovoy) `in russian`
   - `video` <https://youtu.be/JO-RJRCkLvM?t=23m12s> + <https://youtube.com/watch?v=5o8gTP-7xwg> (Lobacheva) `in russian`
   - `video` <https://youtu.be/99CymZY-4Tc?t=5m36s> (Lyalin) `in russian`
   - `video` <https://youtu.be/atSqU9HfJq0?t=1h9m13s> (Malykh) `in russian`
@@ -2668,6 +2671,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=S0KakHcj_rs> (Palermo)
   - `video` <https://youtube.com/watch?v=KMY2Knr4iAs> (Chen)
   - `video` <https://youtube.com/watch?v=pgBHnimRPzQ> (Nikolenko) `in russian`
+  - `video` <https://youtu.be/IWHa_mIE8yA?t=1h56m29s> (Gorbachev) `in russian`
   - `video` <https://youtube.com/watch?v=YQZRsowJZA8> (Lyalin) `in russian`
   - `video` <https://youtube.com/watch?v=KMgJFptbNlM> (Lyalin) `in russian`
   - `video` <https://youtube.com/watch?v=2YScoz4uBm8> (Astakhov) `in russian`

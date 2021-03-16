@@ -8,6 +8,7 @@
   * [**decisions and actions**](#decisions-and-actions)
   * [**universal artificial intelligence**](#universal-artificial-intelligence)
   * [**artificial curiosity and creativity**](#artificial-curiosity-and-creativity)
+  * [**active inference**](#active-inference)
   * [**interesting papers**](#interesting-papers)
     - [**definitions and measures of intelligence**](#interesting-papers---definitions-and-measures-of-intelligence)
     - [**universal artificial intelligence**](#interesting-papers---universal-artificial-intelligence)
@@ -40,14 +41,11 @@
   ["The Limitations of Deep Learning"](https://blog.keras.io/the-limitations-of-deep-learning.html) by Francois Chollet  
   ["A Critique of Pure Learning and What ANNs Can Learn from Animal Brains"](https://nature.com/articles/s41467-019-11786-6) by Anthony Zador  
   ["On GPT-3: Meta-Learning, Scaling, Implications, And Deep Theory"](https://gwern.net/newsletter/2020/05#gpt-3) by Gwern Branwen  
+  ["Progress and Hype in AI Research"](https://github.com/brylevkirill/posts/blob/master/AI.md)  
 
 ----
 
   [**interesting papers - definitions and measures of intelligence**](#interesting-papers---definitions-and-measures-of-intelligence)
-
-----
-
-  ["Progress and Hype in AI Research"](https://github.com/brylevkirill/posts/blob/master/AI.md)
 
 
 
@@ -107,6 +105,7 @@
   - [**causal inference**](https://github.com/brylevkirill/notes/blob/master/Causal%20Inference.md)
   - [**bayesian inference**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)
   - [**Solomonoff induction**](#universal-artificial-intelligence---solomonoff-induction)
+  - [**active inference**](#active-inference)
 
 ----
 
@@ -222,6 +221,7 @@
   - [**artificial curiosity and creativity**](#artificial-curiosity-and-creativity)
   - [**reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Reinforcement%20Learning.md)
   - [**meta-learning**](https://github.com/brylevkirill/notes/blob/master/Machine%20Learning.md#meta-learning) [*(Goedel Machine)*](#meta-learning---goedel-machine)
+  - [**active inference**](#active-inference)
 
 
 
@@ -490,6 +490,74 @@
   "It’s currently not sufficiently formalized, so it’s difficult to state if and how it really works. Searching for proofs is extremely complicated: Making a parallel with Levin search, where given a goal output string (an improvement in the Goedel Machine), you enumerate programs (propositions in the Goedel Machine) and run them to see if they output the goal string (search for a proof of improvement in Goedel Machine). This last part is the problem: in Levin Search, the programs are fast to run, whereas in Goedel Machine there is an additional search step for each proposition, so this looks very roughly like going from exponential (Levin Search) to double-exponential (Goedel Machine). And Levin Search is already not really practical. Theorem proving is even more complicated when you need to prove that there will be an improvement of the system at an unknown future step. Maybe it would work better if the kinds of proofs were limited to some class, for example use simulation of the future steps up to some horizon given a model of the world. These kinds of proofs are easier to check and have a guaranteed termination, e.g. if the model class for the environment is based on Schmidhuber’s Speed Prior. But this starts to look pretty much like an approximation of AIXI."
 
   *(Laurent Orseau)*
+
+
+
+---
+### active inference
+
+  [Free energy principle](https://en.wikipedia.org/wiki/Free_energy_principle)
+
+  [introduction](http://slatestarcodex.com/2018/03/04/god-help-us-lets-try-to-understand-friston-on-free-energy) by Scott Alexander `post`  
+  [tutorial](https://medium.com/@solopchuk/tutorial-on-active-inference-30edcf50f5dc) on active inference by Oleg Solopchuk `post`  
+  [tutorial](https://medium.com/@solopchuk/free-energy-action-value-and-curiosity-514097bccc02) on free energy, action value, curiosity by Oleg Solopchuk `post`  
+  [implementation](https://kaiu.me/2017/07/11/introducing-the-deep-active-inference-agent) by Kai Ueltzhöffer `post`  
+
+----
+
+  ["The Mathematics of Mind-time"](https://aeon.co/essays/consciousness-is-not-a-thing-but-a-process-of-inference) by Karl Friston `post`  
+  ["Am I Self-Conscious? (Or Does Self-Organization Entail Self-Consciousness?)"](https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00579/full) by Karl Friston `post`  
+
+  ["The Free-Energy Principle: A Rough Guide to the Brain?"](https://www.fil.ion.ucl.ac.uk/~karl/The%20free-energy%20principle%20-%20a%20rough%20guide%20to%20the%20brain.pdf) `paper`  
+  ["The Free-Energy Principle: A Unified Brain Theory?"](https://researchgate.net/publication/41001209_Friston_KJ_The_free-energy_principle_a_unified_brain_theory_Nat_Rev_Neurosci_11_127-138) `paper`  
+  ["Exploration, Novelty, Surprise, and Free Energy Minimization"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3791848) `paper`  
+  ["Action and Behavior: a Free-energy Formulation"](https://www.fil.ion.ucl.ac.uk/~karl/Action%20and%20behavior%20A%20free-energy%20formulation.pdf) `paper`  
+  ["Computational Mechanisms of Curiosity and Goal-directed Exploration"](https://biorxiv.org/content/early/2018/09/07/411272) `paper`  
+  ["Expanding the Active Inference Landscape: More Intrinsic Motivations in the Perception-Action Loop"](https://arxiv.org/abs/1806.08083) `paper`  
+  ["Action and Perception as Divergence Minimization"](https://arxiv.org/abs/2009.01791) `paper` `Google` ([overview](https://youtube.com/watch?v=f8NpuOPfkDQ) `video`, [overview](https://youtube.com/watch?v=Iepi6w3f_so) `video`)  
+
+----
+
+  [introduction](https://youtube.com/watch?v=NIu_dJGyIQI) by Karl Friston `video`  
+  [introduction](https://youtube.com/watch?v=KkR24ieh5Ow) by Karl Friston `video`  
+  [introduction](https://youtube.com/watch?v=TcFLQvz5uEg) by Karl Friston `video`  
+
+  ["Me and My Markov Blanket"](https://youtube.com/watch?v=d4KrWxrP-T0) by Karl Friston `video` `2021`  
+  ["Me and My Markov Blanket"](https://youtube.com/watch?v=rmkjnfMvjv4) by Karl Friston `video` `2020`  
+  ["Neuroscience and the Free Energy Principle"](https://youtube.com/watch?v=NwzuibY5kUs) by Karl Friston `video` `2020`  
+  ["Markov Blankets and Bayesian Mechanics"](https://youtube.com/watch?v=j53lfLyFOPA) by Karl Friston `video` `2020`  
+  ["Free Energy Principle"](https://youtube.com/watch?v=YUOp-EbiuCk) by Karl Friston `video` `2019`  
+  ["Active Inference and Deep Generative Models"](https://youtube.com/watch?v=_DvJwUAjM1w) by Karl Friston `video` `2019`  
+  ["I Am Therefore I Think"](https://youtube.com/watch?v=G_sQZeFRjR8) by Karl Friston `video` `2019`  
+  ["Active Inference and Artificial Curiosity"](https://youtube.com/watch?v=Y1egnoCWgUg) by Karl Friston `video` `2017`  
+  ["Active Inference and Artificial Curiosity"](https://youtube.com/watch?v=VHJiTO5ZlYA) by Karl Friston `video` `2016`  
+  ["Action and Perception as Divergence Minimization"](https://youtube.com/watch?v=VHJiTO5ZlYA) by Karl Friston `video` `2016`  
+  ["Predictive Coding, Active Inference and Belief Propagation"](https://youtube.com/watch?v=b1hEc6vay_k) by Karl Friston `video` `2016`  
+  ["The Variational Foundations of Movement"](https://youtube.com/watch?v=zWFfZHqOnvM) by Karl Friston `video` `2015`  
+  ["Consciousness by Inference"](https://youtube.com/watch?v=HeQfO4byFhg) by Karl Friston `video` `2014`  
+
+  ["Uncertainty and Active Inference"](https://youtube.com/watch?v=pHOAg9FZYeA) by Thomas Parr `video` `2019`
+
+  [Active Inference Lab](https://youtube.com/c/ActiveInference) `video`
+
+----
+
+  "Adaptive agents must occupy a limited repertoire of states and therefore minimize the long-term average of surprise associated with sensory exchanges with the world. Minimizing surprise enables them to resist a natural tendency to disorder."  
+  "Surprise rests on predictions about sensations, which depend on an internal generative model of the world. Although surprise cannot be measured directly, a free-energy bound on surprise can be, suggesting that agents minimize free energy by changing their predictions (perception) or by changing the predicted sensory inputs (action)."  
+  "Perception optimizes predictions by minimizing free energy with respect to synaptic activity (perceptual inference), efficacy (learning and memory) and gain (attention and salience). This furnishes Bayes-optimal (probabilistic) representations of what caused sensations (providing a link to the Bayesian brain hypothesis)."  
+  "Bayes-optimal perception is mathematically equivalent to predictive coding and maximizing the mutual information between sensations and the representations of their causes. This is a probabilistic generalization of the principle of efficient coding (the infomax principle) or the minimum-redundancy principle."  
+  "Learning under the free-energy principle can be formulated in terms of optimizing the connection strengths in hierarchical models of the sensorium. This rests on associative plasticity to encode causal regularities and appeals to the same synaptic mechanisms as those underlying cell assembly formation."  
+  "Action under the free-energy principle reduces to suppressing sensory prediction errors that depend on predicted (expected or desired) movement trajectories. This provides a simple account of motor control, in which action is enslaved by perceptual (proprioceptive) predictions."  
+  "Perceptual predictions rest on prior expectations about the trajectory or movement through the agent's state space. These priors can be acquired (as empirical priors during hierarchical inference) or they can be innate (epigenetic) and therefore subject to selective pressure."  
+  "Predicted motion or state transitions realized by action correspond to policies in optimal control theory and reinforcement learning. In this context, value is inversely proportional to surprise (and implicitly free energy), and rewards correspond to innate priors that constrain policies."  
+
+----
+
+  "Active inference suggests that agents embody a generative model of their preferred environment and seek to maximise the evidence for this model. In this context, the concept of reward is replaced with prior probabilities over observations. This allows for greater flexibility when specifying an agent’s goals, provides a principled (i.e. Bayesian) method for learning preferences, and is consistent with neurophysiological data demonstrating the distributional nature of reward representations. Casting adaptive behavior in terms of model evidence naturally encompasses both exploration and exploitation under a single objective, obviating the need for adding ad-hoc exploratory terms."
+
+----
+
+  "The free energy principle seems like an attempt to unify perception, cognition, homeostasis, and action. Free energy is a mathematical concept that represents the failure of some things to match other things they’re supposed to be predicting. The brain tries to minimize its free energy with respect to the world, i.e. minimize the difference between its models and reality. Sometimes it does that by updating its models of the world. Other times it does that by changing the world to better match its models. Perception and cognition are both attempts to create accurate models that match the world, thus minimizing free energy. Homeostasis and action are both attempts to make reality match mental models. Action tries to get the organism’s external state to match a mental model. Homeostasis tries to get the organism’s internal state to match a mental model. Since even bacteria are doing something homeostasis-like, all life shares the principle of being free energy minimizers. So life isn’t doing four things – perceiving, thinking, acting, and maintaining homeostasis. It’s really just doing one thing – minimizing free energy – in four different ways – with the particular way it implements this in any given situation depending on which free energy minimization opportunities are most convenient."
 
 
 

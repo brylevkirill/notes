@@ -721,6 +721,7 @@
 
   [**bayesian inference and learning**](https://github.com/brylevkirill/notes/blob/master/Bayesian%20Inference%20and%20Learning.md)  
   [**Solomonoff induction**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence---solomonoff-induction)  
+  [**active inference**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#active-inference)  
 
 ----
 

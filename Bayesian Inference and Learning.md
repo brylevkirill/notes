@@ -410,6 +410,7 @@
   applications:
   - [**variational autoencoder**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#generative-models---variational-autoencoder)  *(approximating posterior over latent variables given a datapoint)*
   - [**bayesian neural network**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#bayesian-deep-learning)  *(approximating posterior over model parameters given a dataset)*
+  - [**active inference**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#active-inference)  *(approximating surprise by minimizing a free-energy bound on it)*
 
 ----
 
@@ -640,9 +641,12 @@
   - `video` <http://techtalks.tv/talks/one-shot-learning-of-simple-fractal-concepts/63049/> (Lake)
   - `video` <http://youtube.com/watch?v=p1VpvOFJg6A> (Lake)
   - `video` <http://youtu.be/quPN7Hpk014?t=21m5s> (Tenenbaum)
+  - `video` <http://youtube.com/watch?v=0h5RlFQUwAY> (Bachteev) `in russian`
   - `notes` <https://casmls.github.io/general/2017/02/08/oneshot.html>
   - `code` <https://github.com/brendenlake/BPL>
+  - `paper` [**"Building Machines That Learn and Think Like People"**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#building-machines-that-learn-and-think-like-people-lake-ullman-tenenbaum-gershman) by Lake et al. `paper` `summary`
   - `paper` ["Towards More Human-like Concept Learning in Machines: Compositionality, Causality, and Learning-to-learn"](http://cims.nyu.edu/~brenden/LakePhDThesis.pdf) by Lake
+  - `paper` ["One-shot Learning by Inverting a Compositional Causal Process"](https://papers.nips.cc/paper/2013/hash/52292e0c763fd027c6eba6b8f494d2eb-Abstract.html) by Lake et al.
 
 
 #### ["Variational Autoencoders for Collaborative Filtering"](https://arxiv.org/abs/1802.05814) Liang, Krishnan, Hoffman, Jebara

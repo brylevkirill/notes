@@ -411,6 +411,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   `IAF` `variational inference` `posterior approximation` `normalizing flows`
 >	"Most VAEs have so far been trained using crude approximate posteriors, where every latent variable is independent. Normalizing Flows have addressed this problem by conditioning each latent variable on the others before it in a chain, but this is computationally inefficient due to the introduced sequential dependencies. Inverse autoregressive flow, unlike previous work, allows us to parallelize the computation of rich approximate posteriors, and make them almost arbitrarily flexible."  
   - `video` <https://slideslive.com/38917907/tutorial-on-normalizing-flows?t=1925> (Jang)
+  - `video` <https://youtu.be/0h5RlFQUwAY?t=1h52m13s> (Pletnev) `in russian`
   - `post` <http://bjlkeng.github.io/posts/variational-autoencoders-with-inverse-autoregressive-flows>
   - `post` <http://akosiorek.github.io/ml/2018/04/03/norm_flows.html>
   - `post` <https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html#inverse-autoregressive-flow>
@@ -1889,6 +1890,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `audio` <https://youtu.be/VAnsd_wfAmI?t=20m45s> (Schmidhuber)
   - `video` <https://youtube.com/watch?v=RrvC8YW0pT0> (Kilcher)
   - `video` <https://youtube.com/watch?v=ed7QQMG24MM> (Shorten)
+  - `audio` <https://youtu.be/HswDdrDzZDg?t=32m2s> (Arulkumaran)
   - `video` <https://youtube.com/watch?v=yDqyFYDjLzQ> (Svidchenko) `in russian`
   - `paper` ["Training Agents using Upside-Down Reinforcement Learning"](https://arxiv.org/abs/1912.02877) by Srivastava et al.
 

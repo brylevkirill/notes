@@ -122,11 +122,11 @@
 	[Pluribus overview](https://ai.facebook.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker)  
 
 	["Superhuman AI for Heads-up No-limit Poker: Libratus Beats Top Professionals"](http://science.sciencemag.org/content/early/2017/12/15/science.aao1733.full) by Brown and Sandholm `paper` *(Libratus)*  
-	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://arxiv.org/abs/1705.02955) by Brown and Sandholm `paper` *(Libratus)* ([talk](https://vimeo.com/248533943#t=53s) `video`)  
+	["Safe and Nested Subgame Solving for Imperfect-Information Games"](https://arxiv.org/abs/1705.02955) by Brown and Sandholm `paper` *(Libratus)* ([overview](https://vimeo.com/248533943#t=53s) `video`)  
 	["Depth-Limited Solving for Imperfect-Information Games"](https://arxiv.org/abs/1805.08195) by Brown et al. `paper` ([overview](https://youtube.com/watch?v=S4-g3dPT2gY) `video`)  
 	["Superhuman AI for Multiplayer Poker"](https://science.sciencemag.org/content/365/6456/885) by Brown and Sandholm `paper` ([overview](https://youtube.com/watch?v=JuvN4mi861k) `video`) *(Pluribus)*  
 	[**"Deep Counterfactual Regret Minimization"**](#deep-counterfactual-regret-minimization-brown-lerer-gross-sandholm) by Brown et al. `paper` `summary` *(Deep CFR)*  
-	[**"Combining Deep Reinforcement Learning and Search for Imperfect-Information Games"**](#combining-deep-reinforcement-learning-and-search-for-imperfect-information-games-brown-et-al) Brown et al. `paper` `summary` *(ReBeL)*  
+	[**"Combining Deep Reinforcement Learning and Search for Imperfect-Information Games"**](#combining-deep-reinforcement-learning-and-search-for-imperfect-information-games-brown-et-al) by Brown et al. `paper` `summary` *(ReBeL)*  
 
 	[Libratus overview](https://youtube.com/watch?v=EhvH4jdF-ko) by Tuomas Sandholm `video`  
 	[Libratus overview](https://youtube.com/watch?v=xrWulRY_t1o) by Tuomas Sandholm `video`  
@@ -188,8 +188,8 @@
 	[**"Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model"**](#mastering-atari-go-chess-and-shogi-by-planning-with-a-learned-model-schrittwieser-et-al) by Schrittwieser et al. `paper` `summary` *(MuZero)*  
 	[**"Mastering the Game of Go without Human Knowledge"**](#mastering-the-game-of-go-without-human-knowledge-silver-et-al) by Silver et al. `paper` `summary` *(AlphaGo Zero)*  
 	[**"Mastering the Game of Go with Deep Neural Networks and Tree Search"**](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper` `summary` *(AlphaGo)*  
-	["Sample-Based Learning and Search with Permanent and Transient Memories"](https://researchgate.net/publication/221346457_Sample-based_learning_and_search_with_permanent_and_transient_memories) by Silver et al. ([talk](http://videolectures.net/icml08_silver_sbl) `video`) *(Dyna-2)*  
-	["Combining Online and Offline Knowledge in UCT"](https://researchgate.net/publication/29651027_Combining_Online_and_Offline_Knowledge_in_UCT) by Gelly and Silver `paper` ([talk](https://youtube.com/watch?v=Bm7zah_LrmE) `video`) *(MoGo)*  
+	["Sample-Based Learning and Search with Permanent and Transient Memories"](https://researchgate.net/publication/221346457_Sample-based_learning_and_search_with_permanent_and_transient_memories) by Silver et al. ([overview](http://videolectures.net/icml08_silver_sbl) `video`) *(Dyna-2)*  
+	["Combining Online and Offline Knowledge in UCT"](https://researchgate.net/publication/29651027_Combining_Online_and_Offline_Knowledge_in_UCT) by Gelly and Silver `paper` ([overview](https://youtube.com/watch?v=Bm7zah_LrmE) `video`) *(MoGo)*  
 
 	[AlphaGo, AlphaGo Zero, MuZero overview](https://youtube.com/playlist?list=PLnn6VZp3hqNsrsp_Bg-bEfzzhJ3SuEZE9) `video`
 
@@ -232,7 +232,7 @@
 	[AlphaZero vs Stockfish](https://youtube.com/playlist?list=PLDnx7w_xuguHIxbL7akaYgEvV4spwYkmn) games `video`  
 	[AlphaZero vs Stockfish](https://youtube.com/playlist?list=PL-qLOQ-OEls607FPLAsPZ6De4f1W3ZF-I) games `video`  
 
-	["Game Changer: AlphaZero's Groundbreaking Chess Strategies and the Promise of AI"](https://amazon.com/Game-Changer-AlphaZeros-Groundbreaking-Strategies/dp/9056918184) by Matthew Sadler and Natasha Regan `book` ([talk](https://youtube.com/watch?v=HgZYIDslnAI) `video`, [games](https://youtube.com/playlist?list=UUkK8M0dMhAX8JinU-6aD7xA) `video`)
+	["Game Changer: AlphaZero's Groundbreaking Chess Strategies and the Promise of AI"](https://amazon.com/Game-Changer-AlphaZeros-Groundbreaking-Strategies/dp/9056918184) by Matthew Sadler and Natasha Regan `book` ([overview](https://youtube.com/watch?v=HgZYIDslnAI) `video`, [games](https://youtube.com/playlist?list=UUkK8M0dMhAX8JinU-6aD7xA) `video`)
 
 	[Leela Chess Zero](https://youtube.com/playlist?list=PLDnx7w_xuguH7UO4bNGo56w94NXAef6YH) games `video` ([overview](https://en.wikipedia.org/wiki/Leela_Chess_Zero))
 
@@ -620,6 +620,7 @@
 
   ["Decisions from Data: How Offline Reinforcement Learning Will Change How We Use Machine Learning"](https://medium.com/@sergey.levine/decisions-from-data-how-offline-reinforcement-learning-will-change-how-we-use-ml-24d98cb069b0) by Sergey Levine
 
+  ["Offline Reinforcement Learning"](https://youtube.com/watch?v=tW-BNW1ApN8) by Sergey Levine `video`  
   ["Offline Reinforcement Learning"](https://youtube.com/watch?v=qgZPZREor5I) by Sergey Levine `video`  
   ["Offline RL: Challenges, Algorithms, and Benchmarks"](https://youtube.com/watch?v=IUAePhU0E7Y) by Sergey Levine `video`  
   ["The Sub-basement of RL"](https://youtube.com/watch?v=373_zVWceqA) by Dale Schuurmans `video`  
@@ -870,6 +871,8 @@
 
 	> "The tendency to be intrinsically attracted by novelty has often been used as an example in the literature on intrinsic motivation. A straightforward manner to computationally implement it is to build a system that, for every event ek that is actually observed, will generate a reward r(ek) inversely proportional to its probability of observation: r(ek, t) = C·(1 − P(ek, t)), where C is a constant."
 
+	find rare inputs under a density model
+
 	[**"Action-Conditional Video Prediction using Deep Networks in Atari Games"**](#action-conditional-video-prediction-using-deep-networks-in-atari-games-oh-guo-lee-lewis-singh) by Oh et al. `paper` `summary`  
 	[**"Unifying Count-Based Exploration and Intrinsic Motivation"**](#unifying-count-based-exploration-and-intrinsic-motivation-bellemare-srinivasan-ostrovski-schaul-saxton-munos) by Bellemare et al. `paper` `summary`  
 	[**"Count-Based Exploration with Neural Density Models"**](#count-based-exploration-with-neural-density-models-ostrovski-bellemare-van-den-oord-munos) by Ostrovski et al. `paper` `summary`  
@@ -885,7 +888,7 @@
 
 	> "It has been proposed in psychology and education that humans have a natural propensity to learn and assimilate. In information theoretic terms, this notion of assimilation or of “pleasure of learning” can be modeled by the decrease of uncertainty in the knowledge about the world that the agent possesses after an event ek has happened: r(ek, t) = C·(H(E, t) − H(E, t+1)), where H is entropy."
 
-	maximize KL divergence between posterior (after seeing observation) and prior (before seeing it)
+	minimize entropy of belief over environment dynamics ~ maximize KL divergence between posterior (after seeing observation) and prior (before seeing observation)
 
 	[overview](https://youtu.be/DSYzHPW26Ig?t=2h1m40s) by Alex Graves `video`
 
@@ -904,7 +907,7 @@
 
 	> "A reward measure that pushes an agent to produce sequences of actions that can transfer a maximal amount of information to its sensors through the environment. It is defined as the channel capacity from the sequence of actions At, At+1, ..., At+n−1 to the perceptions St+n after an arbitrary number of timesteps: r(At, At+1, ..., At+n−1 →  St+n) = max {p(a)} I(At, At+1, ..., At+n−1, St+n), where p(a) is the probability distribution function of the action sequences a=(at, at+1, ..., at+n−1) and I is mutual information."
 
-	maximize channel capacity or mutual information between actions and future states, i.e. information contained in a about s' or information that can be "injected" into s' by a, to encourage agent to occupy states from which it can reach most states within its planning horizon and to control its future as much as possible
+	maximally influence sensory inputs ~ maximize channel capacity or mutual information between actions and future states, i.e. information contained in a about s' or information that can be "injected" into s' by a, to encourage agent to occupy states from which it can reach most states within its planning horizon and to control its future as much as possible
 
 	[overview](https://youtu.be/DSYzHPW26Ig?t=2h9m23s) by Alex Graves `video`
 
@@ -1363,6 +1366,7 @@
   [**policy search in Bayes-Adaptive MDP**](#bayesian-reinforcement-learning---policy-search-in-bayes-adaptive-mdp)  
   [**reinforcement learning as inference**](#bayesian-reinforcement-learning---policy-search-as-inference)  
   [**universal reinforcement learning**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#universal-artificial-intelligence)  
+  [**active inference**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#active-inference)  
 
 ----
 
