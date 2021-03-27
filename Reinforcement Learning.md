@@ -620,11 +620,14 @@
 
   ["Decisions from Data: How Offline Reinforcement Learning Will Change How We Use Machine Learning"](https://medium.com/@sergey.levine/decisions-from-data-how-offline-reinforcement-learning-will-change-how-we-use-ml-24d98cb069b0) by Sergey Levine
 
-  ["Offline Reinforcement Learning"](https://youtube.com/watch?v=tW-BNW1ApN8) by Sergey Levine `video`  
+  [introduction](https://youtube.com/watch?v=tW-BNW1ApN8) by Sergey Levine `video`
+
+  tutorial by Sergey Levine and Aviral Kumar [1](https://youtube.com/watch?v=9tMLmjVq6bA), [2](https://youtube.com/watch?v=536a-CvHUZ8) `video`  
+  tutorial by Emma Brunskill [1](https://youtube.com/watch?v=MEK8lTaiUvQ), [2](https://youtube.com/watch?v=JZ2opp8Wy4A) `video`  
+
   ["Offline Reinforcement Learning"](https://youtube.com/watch?v=qgZPZREor5I) by Sergey Levine `video`  
   ["Offline RL: Challenges, Algorithms, and Benchmarks"](https://youtube.com/watch?v=IUAePhU0E7Y) by Sergey Levine `video`  
   ["The Sub-basement of RL"](https://youtube.com/watch?v=373_zVWceqA) by Dale Schuurmans `video`  
-  ["Batch / Offline RL"](https://youtube.com/watch?v=MEK8lTaiUvQ) by Emma Brunskill `video`  
 
   ["Offline Reinforcement Learning: Tutorial, Review,and Perspectives on Open Problems"](https://arxiv.org/abs/2005.01643) by Levine et al. `paper`  
   ["RL Unplugged: Benchmarks for Offline Reinforcement Learning"](https://arxiv.org/abs/2006.13888) by Gulcehre et al. `paper`  

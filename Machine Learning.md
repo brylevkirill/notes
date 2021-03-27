@@ -344,8 +344,9 @@
 
 ----
 
-  [overview](https://youtube.com/watch?v=nlgA2gnwscQ) by Alex Polozov `video`  
+  [overview](https://youtube.com/watch?v=2RvxsJYn2UI) by Rishabh Singh `video`  
   [overview](https://youtube.com/watch?v=Fs7FquuLprM) by Rishabh Singh `video`  
+  [overview](https://youtube.com/watch?v=nlgA2gnwscQ) by Alex Polozov `video`  
   [overview](https://facebook.com/nipsfoundation/videos/1552060484885185?t=5412) by Scott Reed `video`  
   [overview](https://youtu.be/vzDuVhFMB9Q?t=2m40s) by Alex Gaunt `video`  
 
@@ -388,12 +389,14 @@
 
 ----
 
+  [overview](http://people.idsia.ch/~juergen/metalearning.html) by Juergen Schmidhuber
+
   [overview](https://youtu.be/3FIo6evmweo?t=4m6s) by Juergen Schmidhuber `video` *(meta-learning vs transfer learning)*  
   [overview](https://vimeo.com/250399374) by Juergen Schmidhuber `video`  
   [overview](https://youtube.com/watch?v=nqiUFc52g78) by Juergen Schmidhuber `video`  
 
-  [overview](http://scholarpedia.org/article/Metalearning) by Tom Schaul and Juergen Schmidhuber  
   [overview](http://people.idsia.ch/~juergen/metalearner.html) by Juergen Schmidhuber  
+  [overview](http://scholarpedia.org/article/Metalearning) by Tom Schaul and Juergen Schmidhuber  
 
   [**Goedel Machine**](https://github.com/brylevkirill/notes/blob/master/Artificial%20Intelligence.md#meta-learning---goedel-machine)
 

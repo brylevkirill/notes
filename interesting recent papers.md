@@ -1143,6 +1143,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://youtu.be/y8pgdXdYPwU?t=30m56s> (Atanov) `in russian`
   - `video` <https://youtu.be/OSzynwC1gow?t=4m59s> (Mosin) `in russian`
   - `notes` <https://habr.com/en/company/ods/blog/493016/#9-a-simple-framework-for-contrastive-learning-of-visual-representations> `in russian`
+  - `paper` ["Self-organizing neural network that discovers surfaces in random-dot stereograms"](https://researchgate.net/publication/21425437_Self-organizing_neural_network_that_discovers_surfaces_in_random-dot_stereograms) by Becker and Hinton
 
 #### ["Momentum Contrast for Unsupervised Visual Representation Learning"](https://arxiv.org/abs/1911.05722) He et al.
   `MoCo` `representation learning`
@@ -3646,6 +3647,19 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 [overview](https://alexpolozov.com/blog/program-synthesis-2018) of recent papers by Oleksandr Polozov
 
 ----
+#### ["Neural Program Synthesis with a Differentiable Fixer"](https://arxiv.org/abs/2006.10924) Balog, Singh, Maniatis, Sutton
+>	"We present a new program synthesis approach that combines an encoder-decoder based synthesis architecture with a differentiable program fixer. Our approach is inspired from the fact that human developers seldom get their program correct on the first attempt, and perform iterative testing-based program fixing to get to the desired program functionality. Similarly, our approach first learns a distribution over programs conditioned on an encoding of a set of input-output examples, and then iteratively performs fix operations using the differentiable fixer. The fixer takes as input the original examples and the current program’s outputs on example inputs, and generates a new distribution over the programs with the goal of reducing the discrepancies between the current program outputs and the desired example outputs. We train our architecture end-to-end on the RobustFill domain, and show that the addition of the fixer module leads to a significant improvement on synthesis accuracy compared to using beam search."  
+>	"We showed that adding the differentiable fixer to a baseline seq2seq model is a more efficient way of increasing the model size, as it provides an inductive bias that leads to higher validation accuracies."  
+>	"We also analyzed the qualitative difference between fixing incorrect predictions and predicting multiple candidate programs from a beam search, demonstrating that the learned fixer is more effective."  
+>	"We have introduced a learned program encoder, which provides the fixer with a representation of the (failed) candidate program, in addition to that program’s outputs. Our RNN-based program encoder did not seem justified as using the same additional parameter budget on the fixer itself yielded better results. This variant could possibly be improved by using program encoders based on grammar or static-analysis graphs."  
+>	"We tried incorporating several types of auxiliary losses during training: predicting program length, program grammatical validity, per-concat expression validity, and per-example correctness, but none showed marked improvement."  
+>	"An exciting direction for future work is to combine our approach with execution-guided synthesis, where intermediate steps during the construction of a candidate program are informed by partial execution traces, especially for languages in which partial programs can be meaningfully executed, even beyond string processing."  
+  - `video` <https://youtu.be/2RvxsJYn2UI?t=20m24s> (Singh)
+
+#### ["Latent Programmer: Discrete Latent Codes for Program Synthesis"](https://arxiv.org/abs/2012.00377) Hong, Dohan, Singh, Sutton, Zaheer
+>	"In many sequence learning tasks, such as program synthesis and document summarization, a key problem is searching over a large space of possible output sequences. We propose to learn representations of the outputs that are specifically meant for search: rich enough to specify the desired output but compact enough to make search more efficient. Discrete latent codes are appealing for this purpose, as they naturally allow sophisticated combinatorial search strategies. The latent codes are learned using a self-supervised learning principle, in which first a discrete autoencoder is trained on the output sequences, and then the resulting latent codes are used as intermediate targets for the end-to-end sequence prediction task. Based on these insights, we introduce the Latent Programmer, a program synthesis method that first predicts a discrete latent code from input/output examples, and then generates the program in the target language."
+  - `video` <https://youtu.be/2RvxsJYn2UI?t=15m23s> (Singh)
+
 #### ["Learning Compositional Neural Programs with Recursive Tree Search and Planning"](https://arxiv.org/abs/1905.12941) Pierrot et al.
   `AlphaNPI`
 >	"AlphaNPI incorporates the strengths of Neural Programmer-Interpreters (NPI) and AlphaZero. NPI contributes structural biases in the form of modularity, hierarchy and recursion, which are helpful to reduce sample complexity, improve generalization and increase interpretability. AlphaZero contributes powerful neural network guided search algorithms, which we augment with recursion. AlphaNPI only assumes a hierarchical program specification with sparse rewards: 1 when the program execution satisfies the specification, and 0 otherwise. Using this specification, AlphaNPI is able to train NPI models effectively with RL for the first time, completely eliminating the need for strong supervision in the form of execution traces. The experiments show that AlphaNPI can sort as well as previous strongly supervised NPI variants. The AlphaNPI agent is also trained on a Tower of Hanoi puzzle with two disks and is shown to generalize to puzzles with an arbitrary number of disks."  
@@ -3715,6 +3729,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `notes` <https://theneuralperspective.com/2017/03/14/making-neural-programming-architecture-generalize-via-recursion/>
 
 #### ["RobustFill: Neural Program Learning under Noisy I/O"](https://arxiv.org/abs/1703.07469) Devlin, Uesato, Bhupatiraju, Singh, Mohamed, Kohli
+  `RobustFill`
   - `video` <https://vimeo.com/238227939> (Uesato, Bhupatiraju)
   - `video` <https://youtu.be/Fs7FquuLprM?t=16m35s> (Singh)
   - `video` <https://facebook.com/nipsfoundation/videos/1552060484885185?t=5885> (Reed)
@@ -3723,6 +3738,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://vimeo.com/238227833> (Gaunt)
 
 #### ["Neuro-Symbolic Program Synthesis"](https://arxiv.org/abs/1611.01855) Parisotto, Mohamed, Singh, Li, Zhou, Kohli
+  - `video` <https://youtu.be/2RvxsJYn2UI?t=6m55s> (Singh)
   - `video` <https://youtu.be/Fs7FquuLprM?t=8m39s> (Singh)
 
 #### ["TerpreT: A Probabilistic Programming Language for Program Induction"](http://arxiv.org/abs/1608.04428) Gaunt, Brockschmidt, Singh, Kushman, Kohli, Taylor, Tarlow

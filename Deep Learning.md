@@ -404,6 +404,8 @@
 
   ["Deep Generative Models"](http://www.deeplearningbook.org/contents/generative_models.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
 
+  ["Deep Generative Modelling: A Comparative Review of VAEs, GANs, Normalizing Flows, Energy-Based and Autoregressive Models"](https://arxiv.org/abs/2103.04922) by Bond-Taylor et al. `paper`
+
   ["Do we still need models or just more data and compute?"](https://staff.fnwi.uva.nl/m.welling/wp-content/uploads/Model-versus-Data-AI-1.pdf) by Max Welling
 
 ----
@@ -419,10 +421,6 @@
 
   [course](https://youtube.com/playlist?list=PLk4h7dmY2eYHjH6wjO1Wytb2ipXJX-aWj) from MIPT `video` `in russian` `2020`  
   [course](https://youtube.com/playlist?list=PLk4h7dmY2eYH9RtoKGzxHKji0GLiBzSlZ) from MIPT `video` `in russian` `2019`  
-
-----
-
-  [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#generative-models)
 
 ----
 
@@ -919,7 +917,9 @@
 
   [overview](https://youtube.com/watch?v=x5Vxk9twXlE) by Geoffrey Hinton `video`
 
-  ["How to Represent Part-whole Hierarchies in a Neural Network"](https://arxiv.org/abs/2102.12627) by Hinton `paper` ([overview](https://youtube.com/watch?v=cllFzkvrYmE) `video`)  
+  [**"How to Represent Part-whole Hierarchies in a Neural Network"**](#how-to-represent-part-whole-hierarchies-in-a-neural-network) by Hinton `paper` `summary` *(GLOM)*  
+  ["Canonical Capsules: Unsupervised Capsules in Canonical Pose"](https://arxiv.org/abs/2012.04718) by Sun et al. `paper`  
+  ["Unsupervised Part Representation by Flow Capsules"](https://arxiv.org/abs/2011.13920) by Sabour et al. `paper`  
   [**"Stacked Capsule Autoencoders"**](#stacked-capsule-autoencoders-kosiorek-sabour-teh-hinton) by Kosiorek et al. `paper` `summary`  
   [**"Matrix Capsules with EM Routing"**](#matrix-capsules-with-em-routing-hinton-sabour-frosst) by Hinton et al. `paper` `summary`  
   [**"Dynamic Routing Between Capsules"**](#dynamic-routing-between-capsules-sabour-frosst-hinton) by Hinton et al. `paper` `summary`  
@@ -1946,6 +1946,7 @@ Yoshua Bengio:
 >	"Unlike recent language representation models (Peters et al., 2018; Radford et al., 2018), BERT is designed to pre-train deep bidirectional representations by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT representations can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications."
 
   - `post` <https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html>
+  - `video` <https://youtube.com/watch?v=knTc-NQSjKA> (Devlin)
   - `video` <https://youtube.com/watch?v=BWP3DyJ6k3g> (Chang)
   - `video` <https://youtube.com/watch?v=OR0wfP2FD3c> (Shorten)
   - `video` <https://youtube.com/watch?v=-9evrZnBorM> (Kilcher)
@@ -2657,7 +2658,6 @@ Yoshua Bengio:
 ----
 >	"Hopfield construction would allow iterating the attention, which Transformer doesn't do as it does the attention in a single step, but the authors find that iterating the Hopfield attention doesn't seem to be useful as it converges in a single step. The Hopfield layer also has beta in place of Transformer's 1/sqrt(d_k) scaling factor, and the authors note that this factor has a significant effect on the Hopfield network attraction point types, so it might lead to future understanding about what is the optimal value for this. Regardless they use the scaling factor from Transformer, 1/sqrt(d_k) in all the experiments."
 
-
   - `post` <https://research.googleblog.com/2017/08/transformer-novel-neural-network.html>
   - `video` <https://youtube.com/watch?v=bYmeuc5voUQ> (Vaswani)
   - `video` <https://facebook.com/nipsfoundation/videos/1554654864625747?t=1107> (Vaswani, Shazeer)
@@ -2686,6 +2686,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=7e4LxIVENZA> (Sapunov) `in russian`
   - `video` <https://youtube.com/watch?v=znyvj3ijl7Q> (Sapunov) `in russian`
   - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani, Uszkoreit)
+  - `post` <https://people.idsia.ch/~juergen/fast-weight-programmer-1991-transformer.html>
   - `post` <https://lilianweng.github.io/lil-log/2020/04/07/the-transformer-family.html>
   - `post` <https://jalammar.github.io/illustrated-transformer/>
   - `post` <https://danieltakeshi.github.io/2019/03/30/transformers/>
@@ -2701,6 +2702,7 @@ Yoshua Bengio:
   - `notes` <https://medium.com/@sharaf/a-paper-a-day-24-attention-is-all-you-need-26eb2da90a91>
   - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/transformer.py>
   - `code` <https://colab.research.google.com/notebook#fileId=/v2/external/notebooks/t2t/hello_t2t.ipynb>
+  - `paper` ["Linear Transformers Are Secretly Fast Weight Memory Systems"](https://arxiv.org/abs/2102.11174) by Schlag, Irie, Schmidhuber ([post](https://people.idsia.ch/~juergen/fast-weight-programmer-1991-transformer.html))
   - `paper` ["Hopfield Networks is All You Need"](https://arxiv.org/abs/2008.02217) by Ramsauer et al. ([post](https://jku.at/index.php?id=18677), [overview](https://youtube.com/watch?v=nv6oFDp6rNQ) (Kilcher) `video`)
   - `paper` [**"Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#exploring-the-limits-of-transfer-learning-with-a-unified-text-to-text-transformer-raffel-et-al) by Raffel et al. `summary`
   - `paper` [**"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"**](#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-devlin-chang-lee-toutanova) by Devlin et al. `summary`
@@ -2708,8 +2710,18 @@ Yoshua Bengio:
   - `paper` ["An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"](https://arxiv.org/abs/2010.11929) `paper` ([overview](https://youtube.com/watch?v=TrdevFK_am4) by Kilcher `video`)
 
 
+#### ["How to Represent Part-whole Hierarchies in a Neural Network"](https://arxiv.org/abs/2102.12627) Hinton
+  `GLOM` `Capsule Networks`
+>	"This paper does not describe a working system. Instead, it presents a single idea about representation which allows advances made by several different groups to be combined into an imaginary system called GLOM. The advances include transformers, neural fields, contrastive representation learning, distillation and capsules. GLOM answers the question: How can a neural network with a fixed architecture parse an image into a part-whole hierarchy which has a different structure for each image? The idea is simply to use islands of identical vectors to represent the nodes in the parse tree. If GLOM can be made to work, it should significantly improve the interpretability of the representations produced by transformer-like systems when applied to vision or language."
+
+  - `video` <https://youtube.com/watch?v=ygInBb1fS9Y> (Hinton)
+  - `video` <https://youtube.com/watch?v=eEXnJOHQ_Xw> (Hinton)
+  - `video` <https://youtube.com/watch?v=cllFzkvrYmE> (Kilcher)
+  - `video` <https://youtube.com/watch?v=fkqiQuD6k8k> (Lewis)
+
+
 #### ["Stacked Capsule Autoencoders"](https://arxiv.org/abs/1906.06818) Kosiorek, Sabour, Teh, Hinton
-  `Capsule Network` `CapsNet` `NeurIPS 2019`
+  `Capsule Networks` `NeurIPS 2019`
 >	"An object can be seen as a geometrically organized set of interrelated parts. A system that makes explicit use of these geometric relationships to recognize objects should be naturally robust to changes in viewpoint, because the intrinsic geometric relationships are viewpoint-invariant. We describe an unsupervised version of capsule networks, in which a neural encoder, which looks at all of the parts, is used to infer the presence and poses of object capsules. The encoder is trained by backpropagating through a decoder, which predicts the pose of each already discovered part using a mixture of pose predictions. The parts are discovered directly from an image, in a similar manner, by using a neural encoder, which infers parts and their affine transformations. The corresponding decoder models each image pixel as a mixture of predictions made by affine-transformed parts. We learn object- and their part-capsules on unlabeled data, and then cluster the vectors of presences of object capsules. When told the names of these clusters, we achieve state-of-the-art results for unsupervised classification on SVHN (55%) and near state-of-the-art on MNIST (98.5%)."
 
 ----
@@ -2780,6 +2792,7 @@ Yoshua Bengio:
 >	Once the vectors have been suitably transformed, additional processing is used to predict the objects."  
 
   - `post` <http://akosiorek.github.io/ml/2019/06/23/stacked_capsule_autoencoders.html>
+  - `video` <https://youtu.be/N0ER1MC9cqM?t=2m22s> (Hinton)
   - `video` <https://youtu.be/UX8OubxsY8w?t=3m8s> (Hinton)
   - `video` <https://youtu.be/zRg3IuxaJ6I?t=27m49s> (Sabour)
   - `notes` <https://medium.com/syncedreview/geoffrey-hintons-unsupervised-capsule-networks-achieve-sota-results-on-svhn-ffe05e871249>
@@ -2787,7 +2800,7 @@ Yoshua Bengio:
 
 
 #### ["Matrix Capsules with EM Routing"](https://openreview.net/forum?id=HJWLfGWRb) Hinton, Sabour, Frosst
-  `Capsule Network` `CapsNet` `ICLR 2018`
+  `Capsule Networks` `ICLR 2018`
 >	"A capsule is a group of neurons whose outputs represent different properties of the same entity. Each layer in a capsule network contains many capsules [a group of capsules forms a capsule layer and can be used in place of a traditional layer in a neural net]. We describe a version of capsules in which each capsule has a logistic unit to represent the presence of an entity and a 4x4 matrix which could learn to represent the relationship between that entity and the viewer (the pose). A capsule in one layer votes for the pose matrix of many different capsules in the layer above by multiplying its own pose matrix by trainable viewpoint-invariant transformation matrices that could learn to represent part-whole relationships. Each of these votes is weighted by an assignment coefficient. These coefficients are iteratively updated for each image using the Expectation-Maximization algorithm such that the output of each capsule is routed to a capsule in the layer above that receives a cluster of similar votes. The transformation matrices are trained discriminatively by backpropagating through the unrolled iterations of EM between each pair of adjacent capsule layers. On the smallNORB benchmark, capsules reduce the number of test errors by 45\% compared to the state-of-the-art. Capsules also show far more resistance to white box adversarial attack than our baseline convolutional neural network."
 
   - `video` <https://youtu.be/x5Vxk9twXlE?t=30m46s> (Hinton)
@@ -2803,7 +2816,7 @@ Yoshua Bengio:
 
 
 #### ["Dynamic Routing Between Capsules"](https://arxiv.org/abs/1710.09829) Sabour, Frosst, Hinton
-  `Capsule Network` `CapsNet` `NIPS 2017`
+  `Capsule Networks` `NIPS 2017`
 >	"A capsule is a group of neurons whose activity vector represents the instantiation parameters of a specific type of entity such as an object or object part. We use the length of the activity vector to represent the probability that the entity exists and its orientation to represent the instantiation paramters. Active capsules at one level make predictions, via transformation matrices, for the instantiation parameters of higher-level capsules. When multiple predictions agree, a higher level capsule becomes active. We show that a discrimininatively trained, multi-layer capsule system achieves state-of-the-art performance on MNIST and is considerably better than a convolutional net at recognizing highly overlapping digits. To achieve these results we use an iterative routing-by-agreement mechanism: A lower-level capsule prefers to send its output to higher level capsules whose activity vectors have a big scalar product with the prediction coming from the lower-level capsule."
 
 >	"Dynamic routing can be viewed as a parallel attention mechanism that allows each capsule at one level to attend to some active capsules at the level below and to ignore others. This should allow the model to recognize multiple objects in the image even if objects overlap. The routing-by-agreement should make it possible to use a prior about shape of objects to help segmentation and it should obviate the need to make higher-level segmentation decisions in the domain of pixels."
@@ -2875,6 +2888,7 @@ Yoshua Bengio:
 ----
 >	"Highway Networks have a gated connection in the depth dimension analogous to the gated connection LSTMs have in the time dimension. There are also Grid LSTMs, which have these gated connections in both dimensions."
 
+  - `post` <https://people.idsia.ch/~juergen/highway-networks.html>
   - `post` <http://people.idsia.ch/~rupesh/very_deep_learning/>
   - `video` <http://research.microsoft.com/apps/video/default.aspx?id=259633> (9:00) (Srivastava)
   - `post` <https://medium.com/jim-fleming/highway-networks-with-tensorflow-1e6dfa667daa>
@@ -3247,6 +3261,7 @@ Yoshua Bengio:
 
 
 #### ["Backpropagation and the Brain"](https://www.nature.com/articles/s41583-020-0277-3) Lillicrap, Santoro, Marris, Akerman, Hinton
+  `NGRAD`
 >	"During learning, the brain modifies synapses to improve behaviour. In the cortex, synapses are embedded within multilayered networks, making it difficult to determine the effect of an individual synaptic modification on the behaviour of the system. The backpropagation algorithm solves this problem in deep artificial neural networks, but historically it has been viewed as biologically problematic. Nonetheless, recent developments in neuroscience and the successes of artificial neural networks have reinvigorated interest in whether backpropagation offers insights for understanding learning in the cortex. The backpropagation algorithm learns quickly by computing synaptic updates using feedback connections to deliver error signals. Although feedback connections are ubiquitous in the cortex, it is difficult to see how they could deliver the error signals required by strict formulations of backpropagation. Here we build on past and recent developments to argue that feedback connections may instead induce neural activities whose differences can be used to locally approximate these signals and hence drive effective learning in deep networks in the brain."
 
   - `video` <https://youtube.com/watch?v=a0f07M2uj_A> (Kilcher)
