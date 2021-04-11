@@ -42,6 +42,8 @@
 
   [datacenter cooling](https://deepmind.com/blog/safety-first-ai-autonomous-data-centre-cooling-and-industrial-control/) at Google ([paper](https://papers.nips.cc/paper/7638-data-center-cooling-using-model-predictive-control.pdf) by Lazic et al., [patent](http://freepatentsonline.com/y2018/0204116.html))
 
+  [stratospheric balloons](https://medium.com/loon-for-all/drifting-efficiently-through-the-stratosphere-using-deep-reinforcement-learning-c38723ee2e90) at Google ([paper](https://nature.com/articles/s41586-020-2939-8) by Bellemare et al., [overview](https://youtu.be/F-6sc88xPuA?t=25m55s) `video`)
+
   [artwork personalization](https://medium.com/netflix-techblog/artwork-personalization-c589f074ad76) at Netflix
 
 ----
@@ -1007,6 +1009,7 @@
   [overview](http://youtube.com/watch?v=eJ3wZ14RRBQ) by Csaba Szepesvari `video`  
   [overview](http://youtu.be/fIKkhoI1kF4?t=19m23s) by Emma Brunskill `video`  
   [overview](http://videolectures.net/DLRLsummerschool2018_lattimore_bandits) by Tor Lattimore `video`  
+  [overview](https://youtu.be/e1sAltJhG3k?t=40m52s) by Sergey Nikolenko `video` `in russian`  
 
   tutorial by Csaba Szepesvari
 	([part 1](https://youtube.com/watch?v=VVcLnAoU9Gw),
@@ -1147,11 +1150,7 @@
 
 ----
 
-  "A/B testing only uses data collected using π to evaluate π."
-
-  "Using a fixed exploration dataset, accurate counterfactual estimates of how arbitrary policies would have performed can be computed without actually running them in real time. This is precisely the question A/B testing attempts to answer, except A/B testing must run a live experiment to test each policy."
-
-  "Lets compare the statistical efficiency of MWT to that of A/B testing. Suppose N data points are collected using an exploration policy which places probability at least on each action (for EpsilonGreedy, ε = ε0/#actions), and we wish to evaluate K different policies. Then the ips estimators for all K policies have confidence intervals whose width is (C/(εN)\*log(K/δ))^1/2, with probability at least 1−δ, where C is a small absolute constant and δ > 0 and N > 1/ε. This is an exponential (in K) improvement over A/B testing since an A/B test of K policies collecting N data points has confidence intervals of width C\*(K/N\*log(K/δ))^1/2. This also shows the necessity of exploration for policy learning. If ε = 0, we cannot correctly evaluate arbitrary policies."
+  "A/B testing only uses data collected using a policy to evaluate this policy. Using a fixed exploration dataset, accurate counterfactual estimates of how arbitrary policies would have performed can be computed without actually running them in real time. This is precisely the question A/B testing attempts to answer, except A/B testing must run a live experiment to test each policy."
 
   "Contextual bandits allow testing and optimization over exponentially more policies for a given number of events. In one realistic scenario, one can handle 1 billion policies for the data collection cost of 21 A/B tests. The essential reason for such an improvement is that each data point can be used to evaluate all the policies picking the same action for the same context (i.e., make the same decision for the same input features rather than just a single policy as in A/B testing). An important property is that policies being tested do not need to be approved, implemented in production, and run live for a period of time (thus saving much business and engineering effort). Furthermore, the policies do not even need to be known during data collection."
 

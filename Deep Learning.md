@@ -871,6 +871,7 @@
   **Long Short Term Memory (LSTM)**
 
   [overview](https://youtu.be/yCC09vCHzF8?t=45m31s) by Andrej Karpathy `video`  
+  [overview](https://youtube.com/watch?v=k6fSgUaWUF8) by Sebastian Raschka `video`  
 
   ["Understanding LSTM Networks"](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) by Chris Olah  
   ["Understanding, Deriving and Extending the LSTM"](http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html)  
@@ -907,6 +908,8 @@
   **Transformer**
 
   [overview](https://youtube.com/watch?v=bYmeuc5voUQ) by Ashish Vaswani `video`
+
+  ["What is going on in a neural network?"](https://youtu.be/ehNGGYFO6ms?t=48m18s) by Christian Szegedy `video`
 
   [**"Attention Is All You Need"**](#attention-is-all-you-need-vaswani-et-al) by Vaswani et al. `paper` `summary`  
   ["Hopfield Networks is All You Need"](https://arxiv.org/abs/2008.02217) by Ramsauer et al. ([post](https://jku.at/index.php?id=18677), [overview](https://youtube.com/watch?v=nv6oFDp6rNQ) by Kilcher `video`)  
@@ -988,6 +991,8 @@
 
 
   ["Representation Learning"](http://www.deeplearningbook.org/contents/representation.html) chapter of "Deep Learning" book by Goodfellow, Bengio, Courville
+
+  ["Induction, Inductive Biases, and Infusing Knowledge into Learned Representations"](https://sgfin.github.io/2020/06/22/Induction-Intro) by Sam Finlayson
 
   ["Visualizing Representations"](http://colah.github.io/posts/2015-01-Visualizing-Representations/) by Chris Colah
 
@@ -1265,11 +1270,9 @@
   `generalization`
 >	"Deep neural networks are highly expressive models that have recently achieved state of the art performance on speech and visual recognition tasks. While their expressiveness is the reason they succeed, it also causes them to learn uninterpretable solutions that could have counter-intuitive properties. In this paper we report two such properties. First, we find that there is no distinction between individual high level units and random linear combinations of high level units, according to various methods of unit analysis. It suggests that it is the space, rather than the individual units, that contains the semantic information in the high layers of neural networks. Second, we find that deep neural networks learn input-output mappings that are fairly discontinuous to a significant extent. We can cause the network to misclassify an image by applying a certain hardly perceptible perturbation, which is found by maximizing the network’s prediction error. In addition, the specific nature of these perturbations is not a random artifact of learning: the same perturbation can cause a different network, that was trained on a different subset of the dataset, to misclassify the same input."
 
-  - <http://deeplearning.twbbs.org> (demo)
+  - `video` <https://youtu.be/iuhmBFbY4Xw?t=1h10m46s> (Szegedy)
   - `video` <http://youtube.com/watch?v=pdODJ7JQfjo> (Zaremba)
   - `post` <https://danieltakeshi.github.io/2019/04/27/adversarial-stuff>
-  - `code` <https://github.com/tensorflow/cleverhans>
-  - `code` <https://github.com/bethgelab/foolbox>
 
 
 #### ["Explaining and Harnessing Adversarial Examples"](http://arxiv.org/abs/1412.6572) Goodfellow, Shlens, Szegedy
@@ -1399,11 +1402,12 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=OioFONrSETc> (Kilcher)
   - `video` <https://youtube.com/watch?v=6b1JVBBX0dI> (Raj)
   - `video` <https://youtube.com/watch?v=-1yfr_YBzX4> (Lykov) `in russian`
+  - `post` <https://gradientscience.org/batchnorm>
   - `post` <https://kratzert.github.io/2016/02/12/understanding-the-gradient-flow-through-the-batch-normalization-layer.html>
   - `post` <https://kevinzakka.github.io/2016/09/14/batch_normalization/>
   - `post` <https://twitter.com/dcpage3/status/1171867587417952260>
   - `notes` <http://www.shortscience.org/paper?bibtexKey=conf/icml/IoffeS15>
-  - `paper` ["How Does Batch Normalization Help Optimization?"](https://arxiv.org/abs/1805.11604) by Santurkar et al.
+  - `paper` ["How Does Batch Normalization Help Optimization?"](https://arxiv.org/abs/1805.11604) by Santurkar et al. ([post](https://gradientscience.org/batchnorm))
 
 
 #### ["Self-Normalizing Neural Networks"](https://arxiv.org/abs/1706.02515) Klambauer, Unterthiner, Mayr, Hochreiter
@@ -2038,6 +2042,9 @@ Yoshua Bengio:
 
 >	"Using mutual information between the representation of the current input, and input close in space or time as a self-supervised criteria."
 
+----
+>	"Linsker [1988] developed the InfoMax principle in 1988. It theorizes that the brain learns to process its perceptions by maximally preserving the information of the input activities in each layer. On top of this, neuroscience suggests that the brain predicts its future inputs and learns by minimizing this prediction error [Friston, 2010]. Empirical evidence indicates, for example, that retinal cells carry significant mutual information between the current and the future state of their own activity [Palmer et al., 2015]."
+
   - `post` <https://medium.com/syncedreview/new-deepmind-unsupervised-image-model-challenges-alexnet-d658ef92ab1e>
   - `video` <https://youtu.be/QoCyQBzi7us?t=1h9m51s> (Oord)
   - `video` <https://youtu.be/dMUes74-nYY?t=1h19m29s> (Srinivas)
@@ -2049,8 +2056,12 @@ Yoshua Bengio:
   - `post` <https://ankeshanand.com/blog/2020/01/26/contrative-self-supervised-learning.html>
   - `post` <https://machinethoughts.wordpress.com/2018/08/15/predictive-coding-and-mutual-information>
   - `paper` ["Data-Efficient Image Recognition with Contrastive Predictive Coding"](https://arxiv.org/abs/1905.09272) by Henaff et al. ([overview](https://facebook.com/icml.imls/videos/378993762742156?t=3335) by Henaff `video`, [overview](https://youtu.be/dMUes74-nYY?t=1h42m8s) by Srinivas `video`)  *(CPC v2)*
+  - `paper` ["On Variational Bounds of Mutual Information"](https://arxiv.org/abs/1905.06922) by Poole et al.
+  - `paper` ["Learning Deep Representations by Mutual Information Estimation and Maximization"](https://arxiv.org/abs/1808.06670) by Hjelm et al.  *(Deep InfoMax)*
+  - `paper` ["Putting An End to End-to-End: Gradient-Isolated Learning of Representations"](https://arxiv.org/abs/1905.11786) by Lowe et al.  *(Greedy InfoMax)*
+  - `paper` ["Self-Organization in a Perceptual Network"](https://researchgate.net/publication/220478390_Self-Organization_in_a_Perceptual_Network) by Linsker  *(InfoMax)*
+  - `paper` ["The Free-Energy principle: a Unified Brain Theory?"](https://arxiv.org/abs/1905.11786) by Friston et al.
   - `paper` ["Noise-Contrastive Estimation of Unnormalized Statistical Models, with Applications to Natural Image Statistics"](http://www.jmlr.org/papers/volume13/gutmann12a/gutmann12a.pdf) by Gutmann and Hyvarinen
-  - `paper` ["Putting An End to End-to-End: Gradient-Isolated Learning of Representations"](https://arxiv.org/abs/1905.11786) by Lowe et al.
 
 
 #### ["Revisiting Self-Supervised Visual Representation Learning"](https://arxiv.org/abs/1901.09005) Kolesnikov, Zhai, Beyer
@@ -2670,6 +2681,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=HsYPiKDTikg> (Li)
   - `video` <https://youtube.com/watch?v=S0KakHcj_rs> (Palermo)
   - `video` <https://youtube.com/watch?v=KMY2Knr4iAs> (Chen)
+  - `video` <https://youtu.be/ehNGGYFO6ms?t=48m18s> (Szegedy)
   - `video` <https://youtube.com/watch?v=pgBHnimRPzQ> (Nikolenko) `in russian`
   - `video` <https://youtu.be/IWHa_mIE8yA?t=1h56m29s> (Gorbachev) `in russian`
   - `video` <https://youtube.com/watch?v=YQZRsowJZA8> (Lyalin) `in russian`
@@ -2685,6 +2697,7 @@ Yoshua Bengio:
   - `video` <https://youtu.be/LhH6wMvntSM?t=54m56s> (Suleymanov) `in russian`
   - `video` <https://youtube.com/watch?v=7e4LxIVENZA> (Sapunov) `in russian`
   - `video` <https://youtube.com/watch?v=znyvj3ijl7Q> (Sapunov) `in russian`
+  - `video` <https://youtube.com/watch?v=f544TipD2QY> + <https://youtube.com/watch?v=WL6UviEG3XA> (Astakhov) `in russian`
   - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani, Uszkoreit)
   - `post` <https://people.idsia.ch/~juergen/fast-weight-programmer-1991-transformer.html>
   - `post` <https://lilianweng.github.io/lil-log/2020/04/07/the-transformer-family.html>
@@ -2933,6 +2946,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=e0ia-mN-7Kk> (Ding, Brigden)
   - `video` <https://youtube.com/watch?v=GxtMbmv169o> (Brigden)
   - `video` <https://youtube.com/watch?v=UMxvZ9qHwJs> (Gharbieh)
+  - `video` <https://youtube.com/watch?v=RZVEV-1rTLQ> (Gupta)
   - `post` <https://distill.pub/2017/ctc/>
   - `post` <https://machinethoughts.wordpress.com/2017/11/02/ctc-training-latent-discrete-sequential-decisions-without-rl/>
   - `paper` ["Supervised Sequence Labelling with Recurrent Neural Networks"](https://www.cs.toronto.edu/~graves/phd.pdf) by Graves

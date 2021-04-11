@@ -2550,6 +2550,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://pscp.tv/w/1mnGelLjoBWKX> (54:15) (Lillicrap)
   - `video` <https://youtube.com/watch?v=awyuuJoHawo> (Kilcher)
   - `video` <https://youtu.be/0JxOpJd3w8w?t=21m52s> (Svidchenko) `in russian`
+  - `paper` ["Mastering Atari with Discrete World Models"](https://arxiv.org/abs/2010.02193) by Hafner et al. ([post](https://ai.googleblog.com/2021/02/mastering-atari-with-discrete-world.html), [overview](https://youtube.com/watch?v=o75ybZ-6Uu8) `video`)
 
 #### ["Temporal Difference Models: Model-Free Deep RL for Model-Based Control"](https://arxiv.org/abs/1802.09081) Pong, Gu, Dalal, Levine
   `TDM` `learning to plan` `learning abstract environment model`

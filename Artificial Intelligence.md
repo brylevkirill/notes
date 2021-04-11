@@ -156,6 +156,29 @@
 --- 
 ### inference and reasoning - deductive vs inductive
 
+  reasoning primitives according to Charles Peirce (1898):
+
+  *deduction*: (rule, case) -> result  
+  rule: "All beans in this bag are white"  
+  case: "These beans are from this bag"  
+  result: "These beans are white"  
+
+  *induction*: (case, result) -> rule  
+  case: "These beans are from this bag"  
+  result: "These beans are white"  
+  rule: "All beans in this bag are white"  
+
+  *abduction*: (rule, result) -> case  
+  rule: "All beans in this bag are white"  
+  result: "These beans are white"  
+  case: "These beans are from this bag"  
+
+  *deduction* (example, what?) -> *induction* (rule, how?) -> *abduction* (explanation, why?)
+
+  [overview](https://whimsical.com/mar-26th-christian-szegedy-CpgGhnEYDBrDMFoATU6XYC)
+
+----
+
   "Reasoning is deductive when enough information is at hand to permit it and inductive/plausible when necessary information is not available.
 
   Rules for deductive reasoning:  
@@ -511,6 +534,7 @@
   ["Am I Self-Conscious? (Or Does Self-Organization Entail Self-Consciousness?)"](https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00579/full) by Karl Friston `post`  
 
   ["The Free-Energy Principle: A Rough Guide to the Brain?"](https://www.fil.ion.ucl.ac.uk/~karl/The%20free-energy%20principle%20-%20a%20rough%20guide%20to%20the%20brain.pdf) by Friston `paper`  
+  ["Reinforcement Learning or Active Inference?"](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0006421) by Friston et al. `paper`  
   ["The Free-Energy Principle: A Unified Brain Theory?"](https://researchgate.net/publication/41001209_Friston_KJ_The_free-energy_principle_a_unified_brain_theory_Nat_Rev_Neurosci_11_127-138) by Friston `paper`  
   ["Exploration, Novelty, Surprise, and Free Energy Minimization"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3791848) by Schwartenbeck et al. `paper`  
   ["Action and Behavior: a Free-energy Formulation"](https://www.fil.ion.ucl.ac.uk/~karl/Action%20and%20behavior%20A%20free-energy%20formulation.pdf) by Friston et al. `paper`  

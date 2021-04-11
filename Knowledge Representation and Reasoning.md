@@ -1,8 +1,6 @@
   Knowledge representation captures information in some computable form in order to solve problems.  
   Reasoning is algebraic manipulation of previously acquired knowledge in order to solve problems.  
 
-  How knowledge can be represented? How knowledge can be used? How knowledge can be acquired?
-
 
   * [**overview**](#overview)
   * [**knowledge representation**](#knowledge-representation)
@@ -35,6 +33,8 @@
 ### knowledge representation
 
   Knowledge representation captures information in some computable form in order to solve problems.
+
+  How knowledge can be represented? How knowledge can be used? How knowledge can be acquired?
 
   ["What Is a Knowledge Representation"](https://aaai.org/ojs/index.php/aimagazine/article/view/1029) by Davis, Shrobe, Szolovits `paper`
 
@@ -247,6 +247,7 @@
   ["Knowledge Graph Construction From Text: Embedding-Based Techniques"](https://kgtutorial.github.io/slides/Part3b_Embds.pdf) by Pujara, Singh, Dalvi `slides`
 
 
+  [overview](https://youtube.com/watch?v=1JGFTpm1rdQ) by Graham Neubig `video`  
   [overview](https://youtu.be/Lcb5YKE21P8?t=14m32s) by Graham Neubig `video`  
   [overview](https://youtu.be/FRrokFy02ZA?t=1h17m39s) by Mikhail Galkin 'video' `in russian`  
 
@@ -704,7 +705,8 @@
 
 ----
 
-  ["Computer Understandable Math and Science"](https://slideslive.com/38909911/no-one-shall-drive-us-from-the-semantic-ai-paradise-of-computerunderstandable-math-and-science) by Josef Urban `video`
+  ["AI and Theorem Proving"](https://youtube.com/watch?v=UnYrWuOzOlc) by Josef Urban `video`  
+  ["Computer Understandable Math and Science"](https://slideslive.com/38909911/no-one-shall-drive-us-from-the-semantic-ai-paradise-of-computerunderstandable-math-and-science) by Josef Urban `video`  
 
   "Quite reachable is deep automated semantic understanding of most of LaTeX-written mathematical textbooks. This has been blocked by three factors: (i) lack of annotated formal/informal corpora to train such semantic parsing on, (ii) lack of sufficiently large repository of background mathematical knowledge needed for “obvious-knowledge gap-filling”, and (iii) lack of sufficiently strong large-theory ATP that could fill the reasoning gaps using the large repository of background knowledge. One way to try to get them automatically is again through basic computer understanding of LaTeX-written mathematical texts, and learning what high-level concepts like “by analogy” and “using diagonalization” exactly semantically mean in various contexts. This is also related to the ability to reformulate problems and map them to a setting (for current ATPs, the best is purely equational) where the theorem proving becomes more easy. And another related work that needs to be done is “explaining back” the long ATP proofs using an understandable mathematical presentation."
 
@@ -712,7 +714,11 @@
 
 ----
 
-  ["A Promising Path Towards Autoformalization and General Artificial Intelligence"](https://link.springer.com/content/pdf/10.1007%2F978-3-030-53518-6_1.pdf) by Christian Szegedy `paper`
+  [overview](https://youtube.com/watch?v=ehNGGYFO6ms) of autoformalization by Christian Szegedy `video`  
+  [overview](https://youtu.be/p_UXra-_ORQ?t=14m48s) of autoformalization by Christian Szegedy `video`  
+  ["Language Modeling for Mathematical Reasoning"](https://youtube.com/watch?v=Y0hpHm74FYs) by Christian Szegedy `video`  
+
+  ["A Promising Path Towards Autoformalization and General Artificial Intelligence"](https://link.springer.com/chapter/10.1007/978-3-030-53518-6_1) by Christian Szegedy `paper`
 
 
 

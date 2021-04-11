@@ -669,6 +669,7 @@
   - `video` <http://videolectures.net/ecmlpkdd2010_graepel_mlm/> (Graepel)
   - `video` <https://youtu.be/nZjkZR9FPxo?t=40m27s> (Guiver)
   - `video` <https://youtu.be/ZHERrzVDTiU?t=27m57s> (Yangel) `in russian`
+  - `video` <https://youtu.be/Ahk6rjZ6Zfs?t=2h50m39s> (Nikolenko) `in russian`
   - `post` <http://moserware.com/2010/03/computing-your-skill.html>
   - `paper` ["The Math Behind TrueSkill"](http://www.moserware.com/assets/computing-your-skill/The%20Math%20Behind%20TrueSkill.pdf) by Jeff Moser
   - `paper` ["TrueSkill 2: An Improved Bayesian Skill Rating System"](#trueskill-2-an-improved-bayesian-skill-rating-system-minka-cleven-zaykov) by Minka, Cleven, Zaykov `summary`

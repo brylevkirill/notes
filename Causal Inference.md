@@ -36,7 +36,8 @@
   ["The Seven Tools of Causal Inference with Reflections on Machine Learning"](https://dl.acm.org/citation.cfm?id=3241036) by Judea Pearl `paper` ([talk](https://youtube.com/watch?v=nWaM6XmQEmU) `video`)  
   ["Theoretical Impediments to Machine Learning"](http://web.cs.ucla.edu/~kaoru/theoretical-impediments.pdf) by Judea Pearl `paper`  
 
-  ["Causality for Machine Learning"](https://arxiv.org/abs/1911.10500) by Bernhard Scholkopf `paper`
+  ["Causality for Machine Learning"](https://arxiv.org/abs/1911.10500) by Bernhard Scholkopf `paper`  
+  ["Towards Causal Representation Learning"](https://arxiv.org/abs/2102.11107) by Scholkopf et al. `paper`  
 
   ["On Pearl’s Hierarchy and the Foundations of Causal Inference"](https://causalai.net/r60.pdf) by Bareinboim, Correa, Ibeling, Icard `paper` ([talk](https://youtube.com/watch?v=fNuMHDrh6AY) `video`)
 

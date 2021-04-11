@@ -84,6 +84,8 @@
 #### ["On the Difficulty of Evaluating Baselines: A Study on Recommender Systems"](https://arxiv.org/abs/1905.01395) Rendle, Zhang, Koren
 >	"Numerical evaluations with comparisons to baselines play a central role when judging research in recommender systems. In this paper, we show that running baselines properly is difficult. We demonstrate this issue on two extensively studied datasets. First, we show that results for baselines that have been used in numerous publications over the past five years for the Movielens 10M benchmark are suboptimal. With a careful setup of a vanilla matrix factorization baseline, we are not only able to improve upon the reported results for this baseline but even outperform the reported results of any newly proposed method. Secondly, we recap the tremendous effort that was required by the community to obtain high quality results for simple methods on the Netflix Prize. Our results indicate that empirical findings in research papers are questionable unless they were obtained on standardized benchmarks where baselines have been tuned extensively by the research community."
 
+  - `video` <https://youtube.com/watch?v=fEVk2987Ik4> (Korepanov) `in russian`
+
 
 
 ---
