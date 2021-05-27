@@ -23,13 +23,10 @@
   ["Compression Progress: The Algorithmic Principle Behind Curiosity and Creativity"](https://youtube.com/watch?v=h7F5sCLIbKQ) by Juergen Schmidhuber `video`  
   ["The Future of Artificial Intelligence Belongs to Search and Learning"](http://www.fields.utoronto.ca/video-archive/2016/10/2267-16158) by Richard Sutton `video`  
   ["What's Next"](https://youtube.com/watch?v=U3veC3UEvJ0) by Yoshua Bengio `video`  
+  ["The Free Energy Principle"](https://youtube.com/watch?v=NIu_dJGyIQI) by Karl Friston `video`  
   ["Building Machines That See, Learn and Think Like People"](https://youtube.com/watch?v=7ROelYvo8f0) by Joshua Tenenbaum `video`  
   ["AI: A Return To Meaning"](https://youtube.com/watch?v=1n-cwezu8j4) by David Ferucci `video`  
   ["Steps Toward Super Intelligence and the Search for a New Path"](https://youtube.com/watch?v=CcxG0IFssGg) by Rodney Brooks `video`  
-
-----
-
-  ["Learning in Brains and Machines"](http://blog.shakirm.com/category/computational-and-biological-learning) by Shakir Mohamed
 
 ----
 
@@ -42,6 +39,10 @@
   ["A Critique of Pure Learning and What ANNs Can Learn from Animal Brains"](https://nature.com/articles/s41467-019-11786-6) by Anthony Zador  
   ["On GPT-3: Meta-Learning, Scaling, Implications, And Deep Theory"](https://gwern.net/newsletter/2020/05#gpt-3) by Gwern Branwen  
   ["Progress and Hype in AI Research"](https://github.com/brylevkirill/posts/blob/master/AI.md) by Kirill Brylev  
+
+----
+
+  ["Learning in Brains and Machines"](http://blog.shakirm.com/category/computational-and-biological-learning) by Shakir Mohamed
 
 ----
 
@@ -637,12 +638,15 @@
 #### ["On the Measure of Intelligence"](https://arxiv.org/abs/1911.01547) Chollet
 >	"To make deliberate progress towards more intelligent and more human-like artificial systems, we need to be following an appropriate feedback signal: we need to be able to define and evaluate intelligence in a way that enables comparisons between two systems, as well as comparisons with humans. Over the past hundred years, there has been an abundance of attempts to define and measure intelligence, across both the fields of psychology and AI. We summarize and critically assess these definitions and evaluation approaches, while making apparent the two historical conceptions of intelligence that have implicitly guided them.  We note that in practice, the contemporary AI community still gravitates towards benchmarking intelligence by comparing the skill exhibited by AIs and humans at specific tasks, such as board games and video games. We argue that solely measuring skill at any given task falls short of measuring intelligence, because skill is heavily modulated by prior knowledge and experience: unlimited priors or unlimited training data allow experimenters to “buy” arbitrary levels of skills for a system, in a way that masks the system’s own generalization power. We then articulate a new formal definition of intelligence based on Algorithmic Information Theory, describing intelligence as skill-acquisition efficiency and highlighting the concepts of scope, generalization difficulty, priors, and experience, as critical pieces to be accounted for in characterizing intelligent systems. Using this definition, we propose a set of guidelines for what a general AI benchmark should look like. Finally, we present a new benchmark closely following these guidelines, the Abstraction and Reasoning Corpus (ARC), built upon an explicit set of priors designed to be as close as possible to innate human priors. We argue that ARC can be used to measure a human-like form of general fluid intelligence and that it enables fair general intelligence comparisons between AI systems and humans."
 
+  - `video` <https://youtu.be/J0p_thJJnoo?t=59m9s> (Chollet)
   - `video` <https://youtube.com/watch?v=PUAdj3w3wO4> + <https://youtube.com/watch?v=oD54vJlG-S4> (Chollet)
   - `video` <https://youtube.com/watch?v=VvRz885Un1Q> (Scarfe)
   - `video` <https://youtube.com/watch?v=3_qGrmD6iQY> + <https://youtube.com/watch?v=THcuTJbeD34> + <https://youtube.com/watch?v=cuyM63ugsxI> + <https://youtube.com/watch?v=O9kFX33nUcU> (Kilcher)
   - `video` <https://youtube.com/watch?v=qWEOVWDsv-k> (Shorten)
   - `video` <https://youtube.com/watch?v=mEVnu-KZjq4> (Kilcher, Shorten, Scarfe)
   - `video` <https://youtube.com/watch?v=GpWLZUbPhr0> (Kilcher, Shorten, Scarfe)
+  - `video` <https://youtu.be/hfaZwgk_iS0?t=55m10s> (Zahavy, Scarfe, Kilcher, Lange)
+  - `notes` <https://whimsical.com/chollet-show-QQ2atZUoRR3yFDsxKVzCbj>
   - <https://kaggle.com/c/abstraction-and-reasoning-challenge>
 
 

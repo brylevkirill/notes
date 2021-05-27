@@ -98,6 +98,9 @@
 
 >	"problem with algorithms based on computing correlations between users and items: did you watch a movie because you liked it or because we showed it to you or both? requires computing causal interventions instead of correlations: p(Y|X) -> p(Y|X,do(R))"  
 
+  - `video` <https://youtube.com/watch?v=GSQj27ps854> (Wilke)
+  - `post` <https://amazon.science/the-history-of-amazons-recommendation-algorithm>
+
 
 #### ["Real-time Personalization using Embeddings for Search Ranking at Airbnb"](https://kdd.org/kdd2018/accepted-papers/view/real-time-personalization-using-embeddings-for-search-ranking-at-airbnb) Grbovic, Cheng
   `Airbnb` `KDD 2018`

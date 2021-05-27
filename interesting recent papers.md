@@ -2529,6 +2529,13 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `code` <http://github.com/etalvitie/hdaggermc>
 
 ----
+#### ["Mastering Atari with Discrete World Models"](https://arxiv.org/abs/2010.02193) Hafner, Lillicrap, Norouzi, Ba
+  `DreamerV2` `learning to plan` `learning abstract environment model`
+>	"While learning world models from image inputs has recently become feasible for some tasks, modeling Atari games accurately enough to derive successful behaviors has remained an open challenge for many years. We introduce DreamerV2, a reinforcement learning agent that learns behaviors purely from predictions in the compact latent space of a powerful world model. The world model uses discrete representations and is trained separately from the policy."
+  - `post` <https://ai.googleblog.com/2021/02/mastering-atari-with-discrete-world.html>
+  - `video` <https://youtube.com/watch?v=_e3BKzK6xD0> (Hafner)
+  - `video` <https://youtube.com/watch?v=o75ybZ-6Uu8> (Kilcher)
+
 #### ["Dream to Control: Learning Behaviors by Latent Imagination"](https://arxiv.org/abs/1912.01603) Hafner, Lillicrap, Ba, Norouzi
   `Dreamer` `learning to plan` `learning abstract environment model`
 >	"a reinforcement learning agent that solves long-horizon tasks from images purely by latent imagination"  
@@ -2550,7 +2557,6 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `video` <https://pscp.tv/w/1mnGelLjoBWKX> (54:15) (Lillicrap)
   - `video` <https://youtube.com/watch?v=awyuuJoHawo> (Kilcher)
   - `video` <https://youtu.be/0JxOpJd3w8w?t=21m52s> (Svidchenko) `in russian`
-  - `paper` ["Mastering Atari with Discrete World Models"](https://arxiv.org/abs/2010.02193) by Hafner et al. ([post](https://ai.googleblog.com/2021/02/mastering-atari-with-discrete-world.html), [overview](https://youtube.com/watch?v=o75ybZ-6Uu8) `video`)
 
 #### ["Temporal Difference Models: Model-Free Deep RL for Model-Based Control"](https://arxiv.org/abs/1802.09081) Pong, Gu, Dalal, Levine
   `TDM` `learning to plan` `learning abstract environment model`
@@ -3570,6 +3576,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"When observing the actions of others, humans make inferences about why they acted as they did, and what this implies about the world; humans also use the fact that their actions will be interpreted in this manner, allowing them to act informatively and thereby communicate efficiently with others."  
 >	"Bayesian action decoder uses an approximate Bayesian update to obtain a public belief that conditions on the actions taken by all agents in the environment. BAD introduces a new Markov decision process, the public belief MDP, in which the action space consists of all deterministic partial policies, and exploits the fact that an agent acting only on this public belief state can still learn to use its private information if the action space is augmented to be over all partial policies mapping private information into environment actions. The Bayesian update is closely related to the theory of mind reasoning that humans carry out when observing others’ actions."  
 >	"We first validate BAD on a proof-of-principle two-step matrix game, where it outperforms policy gradient methods; we then evaluate BAD on the challenging, cooperative partial-information card game Hanabi, where, in the two-player setting, it surpasses all previously published learning and hand-coded approaches, establishing a new state of the art."  
+  - `video` <https://youtu.be/ii_SwIsY8aU?t=11m50s> (Foerster)
   - `video` <https://youtu.be/9qPhrEYIRF4?t=20m41s> (Foerster)
 
 ----

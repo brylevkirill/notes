@@ -298,6 +298,8 @@
 
 [**interesting recent papers**](https://github.com/brylevkirill/notes/blob/master/interesting%20recent%20papers.md#natural-language-processing)
 
+[papers](https://github.com/dair-ai/nlp_paper_summaries)
+
 
 
 ---

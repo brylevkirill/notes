@@ -305,6 +305,7 @@
 
   [course](https://people.eecs.berkeley.edu/~pabbeel/cs287-fa19) by Pieter Abbeel `video`
 
+  [overview](https://youtube.com/watch?v=T57lx_adnH0) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=DoDUpLhvWQk) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=DoDUpLhvWQk) by Sergey Levine `video`  
   [overview](https://youtube.com/watch?v=sXQlQg7Hax8) by Sergey Levine `video`  
@@ -361,6 +362,12 @@
 	[OpenAI Dactyl demo](https://youtube.com/watch?v=DKe8FumoD4E) `video`  
 
 ----
+  - *bipedal robots*
+
+	["Reinforcement Learning for Robust Parameterized Locomotion Control of Bipedal Robots"](https://arxiv.org/abs/2103.14295) by Li et al. `paper`
+
+	[demo](https://youtube.com/watch?v=goxCjGPQH7U) `video`
+
   - *legged robots*
 
 	[ANYmal](https://anybotics.com/anymal-legged-robot)
@@ -421,6 +428,7 @@
   [course](https://youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs) from DeepMind `video`  *(advanced)*  
   [course](https://youtube.com/playlist?list=PLkFD6_40KJIznC9CDbVTjAF2oyt8_VAe3) by Sergey Levine, John Schulman and Chelsea Finn `video`  *(advanced)*  
   [course](https://github.com/yandexdataschool/Practical_RL/) from Yandex and HSE `video` `in russian`  *(advanced)*  
+  [course](https://youtube.com/playlist?list=PLwdBkWbW0oHEUmY07a0G5jabP_fWfGQet) by Sergey Nikolenko `video` `in russian`  *(advanced)*  
 
 ----
 
@@ -1009,6 +1017,7 @@
   [overview](http://youtube.com/watch?v=eJ3wZ14RRBQ) by Csaba Szepesvari `video`  
   [overview](http://youtu.be/fIKkhoI1kF4?t=19m23s) by Emma Brunskill `video`  
   [overview](http://videolectures.net/DLRLsummerschool2018_lattimore_bandits) by Tor Lattimore `video`  
+  [overview](https://youtube.com/watch?v=M6DNMESf5Xk) by Nicolo Cesa-Bianchi `video`  
   [overview](https://youtu.be/e1sAltJhG3k?t=40m52s) by Sergey Nikolenko `video` `in russian`  
 
   tutorial by Csaba Szepesvari
@@ -1100,10 +1109,11 @@
 
 ----
 
-  ["A Contextual Bandit Bake-off"](https://arxiv.org/abs/1802.04064) by Bietti, Agarwal, Langford `paper` ([overview](https://youtu.be/zr6H4kR8vTg?t=50m36s) by John Langford `video`)  
+  ["A Contextual-Bandit Approach to Personalized News Article Recommendation"](https://arxiv.org/abs/1003.0146) by Li, Chu, Langford, Schapire `paper` ([overview](https://coursera.org/lecture/fundamentals-of-reinforcement-learning/jonathan-langford-contextual-bandits-for-real-world-reinforcement-learning-GkDVA) by John Langford `video`, [overview](https://youtu.be/B4Fk2KNHzFY?t=1h12m58s) by Konstantin Vorontsov `video` `in russian`)  
   ["Doubly Robust Policy Evaluation and Learning"](https://arxiv.org/abs/1103.4601) by Dudik, Langford, Li `paper` ([overview](https://youtu.be/gzxRDw3lXv8?t=35m45s) by Robert Schapire `video`) ([notes](https://medium.com/@sharaf/a-paper-a-day-12-doubly-robust-policy-evaluation-and-learning-7e6a09665d7f))  
   ["Taming the Monster: A Fast and Simple Algorithm for Contextual Bandits"](https://arxiv.org/abs/1402.0555) by Agarwal et al. `paper` ([overview](https://youtube.com/watch?v=mi_G5tw7Etg) by Alekh Agarwal `video`) ([overview](https://youtu.be/gzxRDw3lXv8?t=37m8s) by Robert Schapire `video`)  
   [**"Making Contextual Decisions with Low Technical Debt"**](#making-contextual-decisions-with-low-technical-debt-agarwal-et-al) by Agarwal et al. `paper` `summary`  
+  ["A Contextual Bandit Bake-off"](https://arxiv.org/abs/1802.04064) by Bietti, Agarwal, Langford `paper` ([overview](https://youtu.be/zr6H4kR8vTg?t=50m36s) by John Langford `video`)  
 
 ----
 
@@ -1226,6 +1236,8 @@
 
   ["The Bitter Lesson"](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) by Richard Sutton ([talk](http://www.fields.utoronto.ca/video-archive/2016/10/2267-16158) `video`)  
   ["Do we still need models or just more data and compute?"](https://staff.fnwi.uva.nl/m.welling/wp-content/uploads/Model-versus-Data-AI-1.pdf) by Max Welling  
+
+  ["Model-based Reinforcement Learning: A Survey"](https://arxiv.org/abs/2006.16712) by Moerland et al. `paper`
 
 ----
 

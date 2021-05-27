@@ -71,14 +71,15 @@
 
 #### courses
 
-  [course](https://course.fast.ai) from FastAI `video`  
+  [course](https://course.fast.ai) from FastAI `video` `2021`  
   [course](https://youtube.com/playlist?list=PLqYmG7hTraZCDxZ44o4p3N5Anz3lLRVZF) from DeepMind `video` `2020`  
   [course](https://youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs) from DeepMind `video` `2018`  
-  [course](https://youtube.com/channel/UC8hYZGEkI2dDO8scT8C5UQA/playlists) from CMU `2020`  
-  [course](https://atcold.github.io/pytorch-Deep-Learning) from NYU `2020`  
+  [course](https://youtube.com/channel/UC8hYZGEkI2dDO8scT8C5UQA/playlists) from CMU `video` `2020`  
+  [course](https://atcold.github.io/pytorch-Deep-Learning) from NYU `video` `2020`  
   [course](https://youtube.com/playlist?list=PLLssT5z_DsK_gyrQ_biidwvPYCRNGI3iv) by Geoffrey Hinton `video` `2012`  
   [course](https://youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH) by Hugo Larochelle `video` `2013`  
   [course](https://youtube.com/playlist?list=PL16j5WbGpaM0_Tj8CRmurZ8Kk1gEBc7fg) by Andrej Karpathy `video` `2016`  
+  [course](https://youtube.com/playlist?list=PLTKMiZHVd_2KJtIXOW0zFhFfBaJJilH51) by Sebastian Raschka `video` `2021`  
 
   [course](https://youtube.com/c/SergeyNikolenko/playlists) by Sergey Nikolenko `video` `in russian` `2020`  
   [course](https://youtube.com/c/DeepLearningSchool/playlists) from MIPT `video` `in russian` `2020`  
@@ -509,6 +510,7 @@
   [overview](https://youtube.com/watch?v=BN4CXnd3NNY) by Sergey Nikolenko `video` `in russian` `2020`  
   [course](https://lektorium.tv/node/36609) by Sergey Nikolenko `video` `in russian` `2019`  
 
+  [overview](https://youtube.com/watch?v=3ktD752xq5k) by Denis Korzhenkov `video`  
   [overview](https://youtube.com/watch?v=T4UuL7U5asA) by Egor Zakharov `video`  
   [overview](https://youtube.com/watch?v=m80Vp-jz-Io) by Iliya Tolstikhin `video`  
   [overview](https://youtube.com/watch?v=jAI3rBI6poU) by Dmitry Ulyanov `video` `in russian`  
@@ -830,6 +832,10 @@
 
   ["Graph Representation Learning"](https://morganclaypoolpublishers.com/catalog_Orig/product_info.php?products_id=1576) by William Hamilton `book`
 
+----
+
+  [course](https://youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn) by Jure Leskovec `video`
+
   ["Graph Neural Networks: Variations and Applications](https://youtube.com/watch?v=cWIeTMklzNg) by Alexander Gaunt `video`  
   ["Convolutional Neural Networks on Graphs"](https://youtube.com/watch?v=v3jZRkvIOIM) by Xavier Bresson `video`  
   ["Large-scale Graph Representation Learning"](https://youtube.com/watch?v=oQL4E1gK3VU) by Jure Leskovec `video`  
@@ -840,6 +846,7 @@
 
   ["Geometric Deep Learning: Going beyond Euclidean Data"](https://arxiv.org/abs/1611.08097) by Bronstein et al. `paper`
 
+  ["Geometric Deep Learning"](https://youtube.com/watch?v=JCAVvTiKqZU) by Michael Bronstein `video`  
   ["Geometric Deep Learning"](https://vimeo.com/248497329) by Michael Bronstein, Joan Bruna, Arthur Szlam `video`  
   ["Geometric Deep Learning"](https://youtube.com/watch?v=ptcBmEHDWds) by Michael Bronstein `video`  
   ["Geometric Deep Learning"](https://youtube.com/watch?v=Qtgep2CEExY) by Joan Bruna and Michael Bronstein `audio`  
@@ -912,7 +919,7 @@
   ["What is going on in a neural network?"](https://youtu.be/ehNGGYFO6ms?t=48m18s) by Christian Szegedy `video`
 
   [**"Attention Is All You Need"**](#attention-is-all-you-need-vaswani-et-al) by Vaswani et al. `paper` `summary`  
-  ["Hopfield Networks is All You Need"](https://arxiv.org/abs/2008.02217) by Ramsauer et al. ([post](https://jku.at/index.php?id=18677), [overview](https://youtube.com/watch?v=nv6oFDp6rNQ) by Kilcher `video`)  
+  ["Hopfield Networks is All You Need"](https://arxiv.org/abs/2008.02217) by Ramsauer et al. `paper` ([post](https://jku.at/index.php?id=18677), [overview](https://youtube.com/watch?v=nv6oFDp6rNQ) by Kilcher `video`)  
 
 ----
 
@@ -920,7 +927,7 @@
 
   [overview](https://youtube.com/watch?v=x5Vxk9twXlE) by Geoffrey Hinton `video`
 
-  [**"How to Represent Part-whole Hierarchies in a Neural Network"**](#how-to-represent-part-whole-hierarchies-in-a-neural-network) by Hinton `paper` `summary` *(GLOM)*  
+  [**"How to Represent Part-whole Hierarchies in a Neural Network"**](#how-to-represent-part-whole-hierarchies-in-a-neural-network-hinton) by Hinton `paper` `summary` *(GLOM)*  
   ["Canonical Capsules: Unsupervised Capsules in Canonical Pose"](https://arxiv.org/abs/2012.04718) by Sun et al. `paper`  
   ["Unsupervised Part Representation by Flow Capsules"](https://arxiv.org/abs/2011.13920) by Sabour et al. `paper`  
   [**"Stacked Capsule Autoencoders"**](#stacked-capsule-autoencoders-kosiorek-sabour-teh-hinton) by Kosiorek et al. `paper` `summary`  
@@ -1090,8 +1097,9 @@
   - `video` <https://youtube.com/watch?v=LzL5naUS31s> (Belkin)
   - `video` <https://youtube.com/watch?v=ZAW9EyNo2fw> (Kilcher)
   - `video` <https://youtu.be/FBggC-XVF4M?t=1h10m52s> (Czarnecki)
+  - `video` <https://youtu.be/SKYXBPCJHCg?t=42m14s> (Vetrov) `in russian`
   - `post` <https://lilianweng.github.io/lil-log/2019/03/14/are-deep-neural-networks-dramatically-overfitted.html#the-lottery-ticket-hypothesis>
-  - `paper` ["Deep Double Descent: Where Bigger Models and More Data Hurt"](https://arxiv.org/abs/1912.02292) by Nakkiran et al. ([post](https://openai.com/blog/deep-double-descent), [overview](https://youtube.com/watch?v=R29awq6jvUw) `video`)
+  - `paper` ["Deep Double Descent: Where Bigger Models and More Data Hurt"](https://arxiv.org/abs/1912.02292) by Nakkiran et al. ([post](https://openai.com/blog/deep-double-descent), [overview](https://youtube.com/watch?v=R29awq6jvUw) `video`, [overview](https://youtu.be/SKYXBPCJHCg?t=42m14s) `video` `in russian`)
   - `paper` ["The Generalization Error of Random Features Regression: Precise Asymptotics and Double Descent Curve"](https://arxiv.org/abs/1908.05355) by Mei et al.
 
 
@@ -1958,6 +1966,7 @@ Yoshua Bengio:
   - `video` <https://youtu.be/AC4l_MY2Dhc?t=1h51m52s> (Srinivas)
   - `video` <https://youtu.be/BnpB3GrpsfM?t=1h32m23s> (Radford)
   - `video` <https://youtu.be/8zAP2qWAsKg?t=55m7s> (Hill)
+  - `video` <https://youtube.com/watch?v=_BFp4kjSB-I> (Raschka)
   - `video` <https://youtube.com/watch?v=9-Om2YcHhIA> (Li)
   - `video` <https://youtube.com/watch?v=BhlOGGzC0Q0> + <https://youtube.com/watch?v=rMQMHA-uv_E> (Gharbieh)
   - `video` <https://youtube.com/watch?v=BhlOGGzC0Q0> (Luo)
@@ -1967,6 +1976,7 @@ Yoshua Bengio:
   - `video` <https://youtu.be/atSqU9HfJq0?t=1h9m13s> (Malykh) `in russian`
   - `video` <https://youtu.be/Q4HVS6c92qU?t=21m7s> (Alexeev) `in russian`
   - `video` <https://youtu.be/1DygevyV2eA?t=17m27s> (Neychev) `in russian`
+  - `video` <https://youtu.be/zhsUpUFClEU?t=32m16s> (Astakhov) `in russian`
   - `post` <http://jalammar.github.io/illustrated-bert>
   - `post` <https://medium.com/dissecting-bert/dissecting-bert-part-1-d3c3d495cdb3> + <https://medium.com/dissecting-bert/dissecting-bert-part2-335ff2ed9c73> + <https://medium.com/dissecting-bert/dissecting-bert-appendix-the-decoder-3b86f66b0e5f>
   - `paper` ["Right for the Wrong Reasons: Diagnosing Syntactic Heuristics in Natural Language Inference"](https://arxiv.org/abs/1902.01007) by McCoy et al.
@@ -1990,6 +2000,7 @@ Yoshua Bengio:
   - `video` <https://youtu.be/w3ues-NayAs?t=23m15s> (Sutskever)
   - `video` <https://youtu.be/X-B3nAN7YRM?t=14m25s> (Sutskever)
   - `video` <https://youtu.be/T0I88NhR_9M?t=6m11s> (Sutskever)
+  - `video` <https://youtube.com/watch?v=BXv1m9Asl7I> (Raschka)
   - `video` <https://youtube.com/watch?v=n_UlVuFAzbU> (Amjadian)
   - `video` <https://youtu.be/qIEfJ6OBGj8?t=14m25s> (Hinton)
   - `post` <https://amaarora.github.io/2020/02/18/annotatedGPT2.html>
@@ -2013,6 +2024,8 @@ Yoshua Bengio:
 
   - <https://github.com/elyase/awesome-gpt3> (demo)
   - <https://gpt3examples.com> (demo)
+  - <https://aiwriter.email> (demo)
+  - <https://twitter.com/QasimMunye/status/1278750809094750211>
   - `video` <https://vimeo.com/427943407/98fe5258a7> (demo)
   - `video` <https://pscp.tv/Microsoft/1OyKAYWPRrWKb?t=29m19s> (demo)
   - <https://justpaste.it/7eovk> (demo)
@@ -2022,13 +2035,17 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=fTvB5xMNfTY> (Kilcher, Scarfe, Duggar, Leahy)
   - `video` <https://youtube.com/watch?v=7qPDwsCLbZc> (Kilcher, Shorten, Scarfe)
   - `video` <https://youtube.com/watch?v=SY5PvZrJhLE> (Kilcher)
+  - `video` <https://youtube.com/watch?v=wYdKn-X4MhY> (Raschka)
   - `video` <https://youtube.com/watch?v=Mq97CF02sRY> (Heo)
+  - `video` <https://youtu.be/J0p_thJJnoo?t=37m3s> (Chollet)
   - `video` <https://youtu.be/PUAdj3w3wO4?t=42m24s> (Chollet)
   - `video` <https://youtube.com/watch?v=GJkXBGRHZWQ> (Shamshiev) `in russian`
+  - `video` <https://youtu.be/zhsUpUFClEU?t=18m5s> (Astakhov) `in russian`
   - `post` <https://jalammar.github.io/how-gpt3-works-visualizations-animations>
   - `post` <https://gwern.net/newsletter/2020/05#gpt-3>
   - `post` <https://gwern.net/GPT-3>
   - `post` <https://slatestarcodex.com/2020/06/10/the-obligatory-gpt-3-post>
+  - `post` <https://bmk.sh/2020/05/29/GPT-3-A-Brief-Summary>
   - `post` <https://leogao.dev/2020/08/17/Building-AGI-Using-Language-Models>
   - `post` <https://medium.com/@ChrisGPotts/is-it-possible-for-language-models-to-achieve-language-understanding-81df45082ee2>
   - `notes` <https://erogol.com/short-notes-on-gpt-3>
@@ -2677,6 +2694,7 @@ Yoshua Bengio:
   - `video` <https://youtu.be/-fdexQBpRas?t=26m9s> (Vinyals)
   - `video` <https://youtu.be/8zAP2qWAsKg?t=22m39s> (Hill)
   - `video` <https://youtube.com/watch?v=iDulhoQ2pro> (Kilcher)
+  - `video` <https://youtube.com/watch?v=tstbZXNCfLY> (Raschka)
   - `video` <https://youtu.be/AIiwuClvH6k?t=1h14m> (Graves)
   - `video` <https://youtube.com/watch?v=HsYPiKDTikg> (Li)
   - `video` <https://youtube.com/watch?v=S0KakHcj_rs> (Palermo)
@@ -2686,7 +2704,6 @@ Yoshua Bengio:
   - `video` <https://youtu.be/IWHa_mIE8yA?t=1h56m29s> (Gorbachev) `in russian`
   - `video` <https://youtube.com/watch?v=YQZRsowJZA8> (Lyalin) `in russian`
   - `video` <https://youtube.com/watch?v=KMgJFptbNlM> (Lyalin) `in russian`
-  - `video` <https://youtube.com/watch?v=2YScoz4uBm8> (Astakhov) `in russian`
   - `video` <https://youtube.com/watch?v=qfOk7IWDoDY> (Chumachenko) `in russian`
   - `video` <https://youtube.com/watch?v=atSqU9HfJq0> (Malykh) `in russian`
   - `video` <https://youtube.com/watch?v=Bg8Y5q1OiP0> + <https://youtube.com/watch?v=7I_D2EOxwwI> (Neychev) `in russian`
@@ -2697,7 +2714,9 @@ Yoshua Bengio:
   - `video` <https://youtu.be/LhH6wMvntSM?t=54m56s> (Suleymanov) `in russian`
   - `video` <https://youtube.com/watch?v=7e4LxIVENZA> (Sapunov) `in russian`
   - `video` <https://youtube.com/watch?v=znyvj3ijl7Q> (Sapunov) `in russian`
-  - `video` <https://youtube.com/watch?v=f544TipD2QY> + <https://youtube.com/watch?v=WL6UviEG3XA> (Astakhov) `in russian`
+  - `video` <https://youtube.com/watch?v=KZ9NXYcXVBY> (Sapunov) `in russian`
+  - `video` <https://youtube.com/watch?v=f544TipD2QY> + <https://youtube.com/watch?v=WL6UviEG3XA> + <https://youtube.com/watch?v=zhsUpUFClEU> (Astakhov) `in russian`
+  - `video` <https://youtube.com/watch?v=2YScoz4uBm8> (Astakhov) `in russian`
   - `audio` <https://soundcloud.com/nlp-highlights/36-attention-is-all-you-need-with-ashish-vaswani-and-jakob-uszkoreit> (Vaswani, Uszkoreit)
   - `post` <https://people.idsia.ch/~juergen/fast-weight-programmer-1991-transformer.html>
   - `post` <https://lilianweng.github.io/lil-log/2020/04/07/the-transformer-family.html>

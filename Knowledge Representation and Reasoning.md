@@ -189,6 +189,11 @@
   Knowledge representation formalisms use (a subset of) first-order logic to describe relational properties of a domain in a general manner (universal quantification) and draw upon probabilistic graphical models (such as Bayesian networks or Markov networks) to model the uncertainty.  
   Not strictly limited to learning aspects - equally concerned with reasoning (specifically probabilistic inference) and knowledge representation.  
 
+
+----
+
+  [course](https://youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn) by Jure Leskovec *(lectures 10 and 11)* `video`
+
 ----
 
   ["Statistical Relational Artificial Intelligence: Logic, Probability and Computation"](https://facebook.com/nipsfoundation/videos/1552222671535633/) tutorial by Raedt, Poole, Kersting, Natarajan `video`  
@@ -432,6 +437,7 @@
 ### probabilistic database - Markov Logic Network
 
   overview by Pedro Domingos:  
+  - ["Unifying Logical and Statistical AI with Markov Logic"](https://youtube.com/watch?v=0TYS6mpcsG4) `video`  
   - ["Unifying Logical and Statistical AI"](http://youtube.com/watch?v=bW5DzNZgGxY) `video`  
   - ["Combining Logic and Probability: Languages, Algorithms and Applications"](http://videolectures.net/uai2011_domingos_kersting_combining/) `video`  
   - ["Incorporating Prior Knowledge into NLP with Markov Logic"](http://videolectures.net/icml08_domingos_ipk/) `video`  
