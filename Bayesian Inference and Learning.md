@@ -230,6 +230,8 @@
 
   ["Probabilistic Graphical Models"](https://coursera.org/course/pgm) course by Daphne Koller ([videos](https://youtube.com/playlist?list=PL50E6E80E8525B59C))
 
+  ["Probabilistic Graphical Models"](https://kayhan.dbmi.pitt.edu/node/38) course by Daphne Kayhan Batmanghelich ([videos](https://www.youtube.com/channel/UCBzyxSQ13mdS4vNCuYPuRWg/videos))
+
 ----
 
   [**variational autoencoder**](https://github.com/brylevkirill/notes/blob/master/Deep%20Learning.md#generative-models---variational-autoencoder)  
