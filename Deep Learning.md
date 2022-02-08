@@ -370,9 +370,11 @@
 
   [overview](https://ai.facebook.com/blog/self-supervised-learning-the-dark-matter-of-intelligence) by Yann LeCun ([overview](https://youtube.com/watch?v=Ag1bw8MfHGQ) `video`)  
   [overview](https://lilianweng.github.io/lil-log/2019/11/10/self-supervised-learning.html) by Lilian Weng  
-  [overview](https://ankeshanand.com/blog/2020/01/26/contrative-self-supervised-learning.html) by Ankesh Anand  
   [overview](https://amitness.com/2020/02/illustrated-self-supervised-learning) by Amit Chaudhary  
   [overview](https://amitness.com/2020/05/self-supervised-learning-nlp) by Amit Chaudhary  
+
+  [overview](https://lilianweng.github.io/lil-log/2021/05/31/contrastive-representation-learning.html) of contrastive learning by Lilian Weng  
+  [overview](https://ankeshanand.com/blog/2020/01/26/contrative-self-supervised-learning.html) of contrastive learning by Ankesh Anand  
 
   ["Self-supervised Visual Feature Learning with Deep Neural Networks: A Survey"](https://arxiv.org/abs/1902.06162) by Jing and Tian `paper`
 
@@ -504,8 +506,7 @@
   [overview](https://youtu.be/7o9dT6puHHg?t=37m39s) by Aravind Srinivas `video` `2019`  
   overview ([[1]](https://youtube.com/watch?v=1CT-kxjYbFU), [[2]](https://youtube.com/watch?v=0W1dixJfKL4)) by Pieter Abbeel and Aravind Srinivas `video` `2020`  
   overview ([[1]](https://youtu.be/grsO57XMJMk?t=1h1m41s), [[2]](https://youtu.be/5NMIUZ7_nrg)) by Aravind Srinivas and Xi Chen `video` `2019`  
-
-  [tutorial](https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Generative-Adversarial-Networks) by Ian Goodfellow `video` ([paper](https://arxiv.org/abs/1701.00160)) `2016`
+  [overview](https://youtube.com/watch?v=wFsI2WqUfdA) by Jeff Donahue and Mihaela Rosca `video` `2020`  
 
   [overview](https://youtube.com/watch?v=BN4CXnd3NNY) by Sergey Nikolenko `video` `in russian` `2020`  
   [course](https://lektorium.tv/node/36609) by Sergey Nikolenko `video` `in russian` `2019`  
@@ -828,11 +829,15 @@
 ---
 ### architectures - graph neural network
 
+  ["A Gentle Introduction to Graph Neural Networks"](https://distill.pub/2021/gnn-intro) by Sanchez-Lengeling et al.
+
   ["Relational Inductive Biases, Deep Learning, and Graph Networks"](https://arxiv.org/abs/1806.01261) by Battaglia et al.
 
   ["Graph Representation Learning"](https://morganclaypoolpublishers.com/catalog_Orig/product_info.php?products_id=1576) by William Hamilton `book`
 
 ----
+
+  ["Geometric Deep Learning Blueprint"](https://youtube.com/watch?v=bIZB1hIJ4u8) with Michael Bronstein, Petar Veličković, Taco Cohen, Joan Bruna `video`
 
   [course](https://youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn) by Jure Leskovec `video`
 
@@ -928,7 +933,7 @@
   [overview](https://youtube.com/watch?v=x5Vxk9twXlE) by Geoffrey Hinton `video`
 
   [**"How to Represent Part-whole Hierarchies in a Neural Network"**](#how-to-represent-part-whole-hierarchies-in-a-neural-network-hinton) by Hinton `paper` `summary` *(GLOM)*  
-  ["Canonical Capsules: Unsupervised Capsules in Canonical Pose"](https://arxiv.org/abs/2012.04718) by Sun et al. `paper`  
+  ["Canonical Capsules: Self-Supervised Capsules in Canonical Pose"](https://arxiv.org/abs/2012.04718) by Sun et al. `paper` ([overview](https://youtube.com/watch?v=tUQJV2W7Z8g) `video`)  
   ["Unsupervised Part Representation by Flow Capsules"](https://arxiv.org/abs/2011.13920) by Sabour et al. `paper`  
   [**"Stacked Capsule Autoencoders"**](#stacked-capsule-autoencoders-kosiorek-sabour-teh-hinton) by Kosiorek et al. `paper` `summary`  
   [**"Matrix Capsules with EM Routing"**](#matrix-capsules-with-em-routing-hinton-sabour-frosst) by Hinton et al. `paper` `summary`  
@@ -1099,6 +1104,7 @@
   - `video` <https://youtu.be/FBggC-XVF4M?t=1h10m52s> (Czarnecki)
   - `video` <https://youtu.be/SKYXBPCJHCg?t=42m14s> (Vetrov) `in russian`
   - `post` <https://lilianweng.github.io/lil-log/2019/03/14/are-deep-neural-networks-dramatically-overfitted.html#the-lottery-ticket-hypothesis>
+  - `paper` ["Fit without fear: remarkable mathematical phenomena of deep learning through the prism of interpolation"](https://arxiv.org/abs/2105.14368) by Belkin ([overview](https://youtube.com/watch?v=vEyeDMe50Io) `video` `in russian`)
   - `paper` ["Deep Double Descent: Where Bigger Models and More Data Hurt"](https://arxiv.org/abs/1912.02292) by Nakkiran et al. ([post](https://openai.com/blog/deep-double-descent), [overview](https://youtube.com/watch?v=R29awq6jvUw) `video`, [overview](https://youtu.be/SKYXBPCJHCg?t=42m14s) `video` `in russian`)
   - `paper` ["The Generalization Error of Random Features Regression: Precise Asymptotics and Double Descent Curve"](https://arxiv.org/abs/1908.05355) by Mei et al.
 
@@ -2032,7 +2038,7 @@ Yoshua Bengio:
   - <https://reddit.com/user/thegentlemetre/comments> (demo)
   - `video` <https://youtube.com/watch?v=QMqPAM_knrE> (Kaplan)
   - `video` <https://youtube.com/watch?v=iccd86vOz3w> (Scarfe, Kilcher, Leahy, Saba, Marcus)
-  - `video` <https://youtube.com/watch?v=fTvB5xMNfTY> (Kilcher, Scarfe, Duggar, Leahy)
+  - `video` <https://youtube.com/watch?v=fTvB5xMNfTY&t=39m20s> (Kilcher, Scarfe, Duggar, Leahy)
   - `video` <https://youtube.com/watch?v=7qPDwsCLbZc> (Kilcher, Shorten, Scarfe)
   - `video` <https://youtube.com/watch?v=SY5PvZrJhLE> (Kilcher)
   - `video` <https://youtube.com/watch?v=wYdKn-X4MhY> (Raschka)
@@ -2700,6 +2706,9 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=S0KakHcj_rs> (Palermo)
   - `video` <https://youtube.com/watch?v=KMY2Knr4iAs> (Chen)
   - `video` <https://youtu.be/ehNGGYFO6ms?t=48m18s> (Szegedy)
+  - `video` <https://youtube.com/watch?v=_soUrFPuyzc> (Sapunov)
+  - `video` <https://youtube.com/watch?v=Ydji_zg2gwU> (Lakhman) `in russian`
+  - `video` <https://youtube.com/watch?v=XLNZ0wG3fQw> (Burkov) `in russian`
   - `video` <https://youtube.com/watch?v=pgBHnimRPzQ> (Nikolenko) `in russian`
   - `video` <https://youtu.be/IWHa_mIE8yA?t=1h56m29s> (Gorbachev) `in russian`
   - `video` <https://youtube.com/watch?v=YQZRsowJZA8> (Lyalin) `in russian`
@@ -2712,6 +2721,7 @@ Yoshua Bengio:
   - `video` <https://youtu.be/JO-RJRCkLvM?t=1m16s> (Lobacheva) `in russian`
   - `video` <https://youtu.be/_XRBlhzb31U?t=48m35s> (Figurnov) `in russian`
   - `video` <https://youtu.be/LhH6wMvntSM?t=54m56s> (Suleymanov) `in russian`
+  - `video` <https://youtube.com/watch?v=8dN6ZVnDArk> (Sapunov) `in russian`
   - `video` <https://youtube.com/watch?v=7e4LxIVENZA> (Sapunov) `in russian`
   - `video` <https://youtube.com/watch?v=znyvj3ijl7Q> (Sapunov) `in russian`
   - `video` <https://youtube.com/watch?v=KZ9NXYcXVBY> (Sapunov) `in russian`
@@ -2734,7 +2744,7 @@ Yoshua Bengio:
   - `notes` <https://medium.com/@sharaf/a-paper-a-day-24-attention-is-all-you-need-26eb2da90a91>
   - `code` <https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/transformer.py>
   - `code` <https://colab.research.google.com/notebook#fileId=/v2/external/notebooks/t2t/hello_t2t.ipynb>
-  - `paper` ["Linear Transformers Are Secretly Fast Weight Memory Systems"](https://arxiv.org/abs/2102.11174) by Schlag, Irie, Schmidhuber ([post](https://people.idsia.ch/~juergen/fast-weight-programmer-1991-transformer.html))
+  - `paper` ["Linear Transformers Are Secretly Fast Weight Memory Systems"](https://arxiv.org/abs/2102.11174) by Schlag, Irie, Schmidhuber ([post](https://people.idsia.ch/~juergen/fast-weight-programmer-1991-transformer.html), [overview](https://youtube.com/watch?v=RSSVWpBak6s) `video`)
   - `paper` ["Hopfield Networks is All You Need"](https://arxiv.org/abs/2008.02217) by Ramsauer et al. ([post](https://jku.at/index.php?id=18677), [overview](https://youtube.com/watch?v=nv6oFDp6rNQ) (Kilcher) `video`)
   - `paper` [**"Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"**](https://github.com/brylevkirill/notes/blob/master/Natural%20Language%20Processing.md#exploring-the-limits-of-transfer-learning-with-a-unified-text-to-text-transformer-raffel-et-al) by Raffel et al. `summary`
   - `paper` [**"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"**](#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-devlin-chang-lee-toutanova) by Devlin et al. `summary`
@@ -2895,6 +2905,7 @@ Yoshua Bengio:
   - `video` <https://youtube.com/watch?v=pPN8d0E3900> (Geron)
   - `video` <https://youtube.com/watch?v=EATWLTyLfmc> (Canziani)
   - `video` <https://youtube.com/watch?v=hYt3FcJUf6w> (Uziela)
+  - `video` <https://youtube.com/watch?v=1KwH0Z_6AhA&t=30m28s> (Scarfe, Duggar, Stenlake)
   - `video` <https://youtu.be/3GnElTAUyiE?t=38m45s> (Nikolenko) `in russian`
   - `video` <https://youtu.be/7jxEn97hwlE?t=1h43m11s> (Nikolenko) `in russian`
   - `video` <https://youtube.com/watch?v=UZ9BgrofhKk> (Kozlov) `in russian`

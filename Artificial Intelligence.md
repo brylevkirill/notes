@@ -33,9 +33,9 @@
   ["On the Measure of Intelligence"](https://arxiv.org/abs/1911.01547) by Francois Chollet  
   ["Intelligence Confuses the Intelligent"](https://blog.piekniewski.info/2017/04/13/ai-confuses-intelligent) by Filip Piekniewski  
   ["Intelligence is not Artificial"](https://www.toddhylton.net/2016/04/intelligence-is-not-artificial.html) by Todd Hylton  
+  ["Why AI is Harder Than We Think"](https://arxiv.org/abs/2104.12871) by Melanie Mitchell  
   ["The Limits of Modern AI: A Story"](https://thebestschools.org/magazine/limits-of-modern-ai) by Erik Larson  
   ["Steps Toward Super Intelligence"](https://rodneybrooks.com/forai-steps-toward-super-intelligence-i-how-we-got-here) by Rodney Brooks  
-  ["The Limitations of Deep Learning"](https://blog.keras.io/the-limitations-of-deep-learning.html) by Francois Chollet  
   ["A Critique of Pure Learning and What ANNs Can Learn from Animal Brains"](https://nature.com/articles/s41467-019-11786-6) by Anthony Zador  
   ["On GPT-3: Meta-Learning, Scaling, Implications, And Deep Theory"](https://gwern.net/newsletter/2020/05#gpt-3) by Gwern Branwen  
   ["Progress and Hype in AI Research"](https://github.com/brylevkirill/posts/blob/master/AI.md) by Kirill Brylev  

@@ -1135,6 +1135,7 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
 >	"Contrastive Predictive Coding (CPC) based pipelines use groups of image patches separated by a carefully chosen spatial offset for anchors and positives while the negatives come from other patches within the image and from other images. While patches are a powerful way to incorporate spatial and instance discrimination together, they introduce extra hyperparameters and architectural design choices which may be hard to adapt for a new problem. SimCLR and MoCo opt for a simpler design where there is no patch extraction. Discriminating transformed image instances as opposed to image-patches within the same image optimizes a simpler instance discrimination objective with the InfoNCE loss and requires minimal architectural adjustments. One could view contrastive instance discrimination setups like SimCLR and MoCo as maximizing mutual information between an image and its augmented version."  
 >	"can be considered as an end-to-end version of MoCo where one just uses all negatives from the batch and no momentum encoder"  
   - `post` <https://ai.googleblog.com/2020/04/advancing-self-supervised-and-semi.html>
+  - `video` <https://youtube.com/watch?v=1EqJyMy0LnE&t=50m44s> (Kornblith)
   - `video` <https://youtu.be/dMUes74-nYY?t=2h10m45s> (Srinivas)
   - `video` <https://youtu.be/1sJuWg5dULg?t=36m16s> (Srinivas)
   - `video` <https://youtube.com/watch?v=APki8LmdJwY> (Shorten)
@@ -1894,6 +1895,9 @@ We find that a standard pruning technique naturally uncovers subnetworks whose i
   - `audio` <https://youtu.be/HswDdrDzZDg?t=32m2s> (Arulkumaran)
   - `video` <https://youtube.com/watch?v=yDqyFYDjLzQ> (Svidchenko) `in russian`
   - `paper` ["Training Agents using Upside-Down Reinforcement Learning"](https://arxiv.org/abs/1912.02877) by Srivastava et al.
+  - `paper` ["Reward-Conditioned Policies"](https://arxiv.org/abs/1912.13465) by Kumar et al.
+  - `paper` ["Learning to Reach Goals via Iterated Supervised Learning"](https://arxiv.org/abs/1912.06088) by Ghosh et al.
+  - `post` <https://ogma.ai/2019/08/acting-without-rewards>
 
 #### ["Credit Assignment as a Proxy for Transfer in Reinforcement Learning"](https://arxiv.org/abs/1907.08027) Ferret et al.
   `credit assignment`

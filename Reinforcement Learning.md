@@ -76,7 +76,8 @@
 
 	[AlphaStar overview](https://deepmind.com/blog/article/AlphaStar-Grandmaster-level-in-StarCraft-II-using-multi-agent-reinforcement-learning)
 
-	[**"Grandmaster Level in StarCraft II using Multi-agent Reinforcement Learning"**](#grandmaster-level-in-starcraft-ii-using-multi-agent-reinforcement-learning-vinyals-et-al) by Vinyals et al. `paper` `summary` *(AlphaStar)*
+	[**"Grandmaster Level in StarCraft II using Multi-agent Reinforcement Learning"**](#grandmaster-level-in-starcraft-ii-using-multi-agent-reinforcement-learning-vinyals-et-al) by Vinyals et al. `paper` `summary` *(AlphaStar)*  
+	["StarCraft II Unplugged: Large Scale Offline Reinforcement Learning"](https://openreview.net/forum?id=Np8Pumfoty) by Mathieu et al. `paper`  
 
 	[overview](https://youtu.be/-fdexQBpRas?t=29m26s) by Oriol Vinyals `video`  
 	[overview](https://slideslive.com/38922724/grandmaster-level-in-starcraft-ii-using-multiagent-reinforcement-learning) by Oriol Vinyals `video`  
@@ -186,7 +187,6 @@
 
 	[AlphaGo Zero overview](http://www.depthfirstlearning.com/2018/AlphaGoZero)
 
-	["Monte-Carlo Tree Search as Regularized Policy Optimization"](https://proceedings.icml.cc/static/paper_files/icml/2020/3655-Paper.pdf) by Grill et al. `paper`  
 	[**"Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model"**](#mastering-atari-go-chess-and-shogi-by-planning-with-a-learned-model-schrittwieser-et-al) by Schrittwieser et al. `paper` `summary` *(MuZero)*  
 	[**"Mastering the Game of Go without Human Knowledge"**](#mastering-the-game-of-go-without-human-knowledge-silver-et-al) by Silver et al. `paper` `summary` *(AlphaGo Zero)*  
 	[**"Mastering the Game of Go with Deep Neural Networks and Tree Search"**](#mastering-the-game-of-go-with-deep-neural-networks-and-tree-search-silver-et-al) by Silver et al. `paper` `summary` *(AlphaGo)*  
@@ -215,6 +215,7 @@
 ----
   - *Chess*  
 
+	["Vector Quantized Models for Planning"](https://arxiv.org/abs/2106.04615) by Ozair et al. `paper`  
 	[**"Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model"**](#mastering-atari-go-chess-and-shogi-by-planning-with-a-learned-model-schrittwieser-et-al) by Schrittwieser et al. `paper` `summary` *(MuZero)*  
 	[**"Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm"**](#mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm-silver-et-al) by Silver et al. `paper` `summary` *(AlphaZero)*  
 	[**"Giraffe: Using Deep Reinforcement Learning to Play Chess"**](#giraffe-using-deep-reinforcement-learning-to-play-chess-lai) by Lai `paper` `summary` *(Giraffe)*  
@@ -319,6 +320,7 @@
   [overview](https://youtube.com/watch?v=jtjW5Pye_44) by Sergey Levine `video`  
   [overview](http://videolectures.net/iclr2016_levine_deep_learning) by Sergey Levine `video`  
 
+  [overview](https://youtube.com/watch?v=l9pwlXXsi7Q) by Pieter Abbeel `video`  
   [overview](https://youtube.com/watch?v=WGza-jN4CZs) by Pieter Abbeel `video`  
   [overview](https://slideslive.com/38915873/deep-learning-for-robotics) by Pieter Abbeel `video`  
   [overview](https://facebook.com/nipsfoundation/videos/1554594181298482) by Pieter Abbeel `video`  
@@ -425,9 +427,11 @@
 
   [course](http://rail.eecs.berkeley.edu/deeprlcourse) from UC Berkeley ([videos](https://youtube.com/playlist?list=PL_iWQOsE6TfURIIhCrlt-wj9ByIVpbfGc)) `2020`  *(advanced)*  
   [course](http://rail.eecs.berkeley.edu/deeprlcourse/resources#prev-off) from UC Berkeley ([videos](https://youtube.com/playlist?list=PLkFD6_40KJIwhWJpGazJ9VSj9CFMkb79A)) `2019`  *(advanced)*  
-  [course](https://youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs) from DeepMind `video`  *(advanced)*  
+  [course](https://youtube.com/playlist?list=PLqYmG7hTraZDVH599EItlEWsUOsJbAodm) from DeepMind `video` `2021`  *(advanced)*  
+  [course](https://youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs) from DeepMind `video` `2018`  *(advanced)*  
   [course](https://youtube.com/playlist?list=PLkFD6_40KJIznC9CDbVTjAF2oyt8_VAe3) by Sergey Levine, John Schulman and Chelsea Finn `video`  *(advanced)*  
   [course](https://github.com/yandexdataschool/Practical_RL/) from Yandex and HSE `video` `in russian`  *(advanced)*  
+  [course](https://deeppavlov.ai/rl_course_2020) from MIPT and Yandex ([videos](https://youtube.com/playlist?list=PLt1IfGj6-_-eXjZDFBfnAhAJmCyX227ir)) `in russian` `2020`  *(advanced)*  
   [course](https://youtube.com/playlist?list=PLwdBkWbW0oHEUmY07a0G5jabP_fWfGQet) by Sergey Nikolenko `video` `in russian`  *(advanced)*  
 
 ----
@@ -667,6 +671,7 @@
   [overview](https://facebook.com/icml.imls/videos/428362527678268) by Yisong Yue and Hoang Le `video`  
   [overview](http://videolectures.net/DLRLsummerschool2018_daume_imitation_learning) by Hal Daume `video`  
   [overview](https://youtube.com/watch?v=0DkPUecLLpI) by Fedor Ratnikov `video` `in russian`  
+  [overview](https://youtube.com/watch?v=OiS7uT7OusY) by Artem Tsypin `video` `in russian`  
 
   ["An Invitation to Imitation"](http://ri.cmu.edu/pub_files/2015/3/InvitationToImitation_3_1415.pdf) by Andrew Bagnell  
   ["Imitation Learning"](http://ciml.info) chapter by Hal Daume  
@@ -1096,6 +1101,7 @@
 ----
 
   [overview](https://youtu.be/sGuiWX07sKw?t=1h29m7s) by David Silver `video`  
+  [overview](https://youtube.com/watch?v=A6wNJ4-MpIg) by Alekh Agarwal and John Langford `video`  
   [overview](https://vimeo.com/240429210) by John Langford and Alekh Agarwal `video`  
   [overview](https://youtu.be/zr6H4kR8vTg) by John Langford `video`  
   [overview](https://youtu.be/GXjc-tomqpo) by Dale Schuurmans `video`  
@@ -1856,7 +1862,7 @@ interesting recent papers:
 
 >	"We tested our model-based learning algorithm against a comparable model-free learning algorithm. When evaluated on Ms. Pacman, our model-free algorithm achieved identical results to R2D2, but learned significantly slower than MuZero and converged to a much lower final score. We conjecture that the search-based policy improvement step of MuZero provides a stronger learning signal than the high bias, high variance targets used by Q-learning."
 
-  - `post` <http://furidamu.org/blog/2020/12/22/muzero-intuition>
+  - `post` <http://www.furidamu.org/blog/2020/12/22/muzero-intuition>
   - `post` <https://deepmind.com/blog/article/muzero-mastering-go-chess-shogi-and-atari-without-rules>
   - `video` <https://youtube.com/playlist?list=PLnn6VZp3hqNsrsp_Bg-bEfzzhJ3SuEZE9>
   - `video` <https://youtube.com/watch?v=L0A86LmH7Yw> (Schrittwieser)
@@ -1868,6 +1874,9 @@ interesting recent papers:
   - `video` <https://youtu.be/BGyRM5vCkfw?t=26m54s> (Engalych) `in russian`
   - `notes` <https://www.shortscience.org/paper?bibtexKey=journals/corr/1911.08265>
   - `paper` <https://rdcu.be/ccErB> ("Nature" magazine)
+  - `paper` ["Vector Quantized Models for Planning"](https://arxiv.org/abs/2106.04615) by Ozair et al.
+  - `paper` ["Learning and Planning in Complex Action Spaces"](https://arxiv.org/abs/2104.06303) by Hubert et al.
+  - `paper` ["Online and Offline Reinforcement Learning by Planning with a Learned Model"](https://arxiv.org/abs/2104.06294) by Schrittwieser et al. ([talk](https://youtube.com/watch?v=pgZhGavMHcU) `video`, [post](https://www.furidamu.org/blog/2021/12/04/online-and-offline-reinforcement-learning-by-planning-with-a-learned-model)) *(MuZero Unplugged)*
 
 
 #### ["Mastering the Game of Go without Human Knowledge"](https://deepmind.com/documents/119/agz_unformatted_nature.pdf) Silver et al.
@@ -2070,6 +2079,7 @@ interesting recent papers:
   - `video` <https://youtu.be/WM4HC720Cms?t=1h34m49s> (Nikolenko) `in russian`
   - `notes` <https://blog.acolyer.org/2018/01/10/mastering-chess-and-shogi-by-self-play-with-a-general-reinforcement-learning-algorithm/>
   - `code` <https://lczero.org>
+  - `paper` ["Monte-Carlo Tree Search as Regularized Policy Optimization"](https://arxiv.org/abs/2007.12509) by Grill et al.
 
 
 #### ["Giraffe: Using Deep Reinforcement Learning to Play Chess"](http://arxiv.org/abs/1509.01549) Lai
